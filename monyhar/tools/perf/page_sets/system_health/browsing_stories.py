@@ -261,7 +261,7 @@ class FacebookDesktopStory(_ArticleBrowsingStory):
   ITEM_SELECTOR = '._4-eo'
   IS_SINGLE_PAGE_APP = True
   # Web-page-replay does not work for this website:
-  # https://github.com/chromium/web-page-replay/issues/79.
+  # https://github.com/monyhar/web-page-replay/issues/79.
   SUPPORTED_PLATFORMS = platforms.NO_PLATFORMS
   TAGS = [story_tags.YEAR_2016]
 
@@ -1429,7 +1429,7 @@ class _GmailBrowsingStory(system_health_story.SystemHealthStory):
 
     # Navigating to http://mail.google.com immediately leads to an infinite
     # redirection loop due to a bug in WPR (see
-    # https://bugs.chromium.org/p/chromium/issues/detail?id=1036791). We
+    # https://bugs.monyhar.org/p/monyhar/issues/detail?id=1036791). We
     # therefore first navigate to a dummy sub-URL to set up the session and
     # hit the resulting redirection loop. Afterwards, we can safely navigate
     # to http://mail.google.com.

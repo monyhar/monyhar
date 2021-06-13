@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.contextualsearch;
+package org.monyhar.chrome.browser.contextualsearch;
 
 import android.net.Uri;
 import android.text.TextUtils;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
 
 /**
  * Handles the management of the Related Searches processing "stamp" CGI parameter.

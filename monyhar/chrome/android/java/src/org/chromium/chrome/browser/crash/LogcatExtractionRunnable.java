@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.crash;
+package org.monyhar.chrome.browser.crash;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.PiiElider;
-import org.chromium.components.minidump_uploader.CrashFileManager;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.PiiElider;
+import org.monyhar.components.minidump_uploader.CrashFileManager;
 
 import java.io.BufferedReader;
 import java.io.File;

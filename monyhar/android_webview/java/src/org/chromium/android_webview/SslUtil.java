@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview;
+package org.monyhar.android_webview;
 
 import android.net.http.SslCertificate;
 import android.net.http.SslError;
 import android.util.Log;
 
-import org.chromium.net.NetError;
-import org.chromium.net.X509Util;
+import org.monyhar.net.NetError;
+import org.monyhar.net.X509Util;
 
 import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
@@ -20,7 +20,7 @@ class SslUtil {
     private static final String TAG = "SslUtil";
 
     /**
-     * Creates an SslError object from a chromium net error code.
+     * Creates an SslError object from a monyhar net error code.
      */
     public static SslError sslErrorFromNetErrorCode(
             @NetError int error, SslCertificate cert, String url) {

@@ -26,7 +26,7 @@
 static constexpr __ptrace_request PTRACE_GET_THREAD_AREA =
     static_cast<__ptrace_request>(25);
 #define PTRACE_GET_THREAD_AREA PTRACE_GET_THREAD_AREA
-// https://bugs.chromium.org/p/chromium/issues/detail?id=873168
+// https://bugs.monyhar.org/p/monyhar/issues/detail?id=873168
 #elif defined(__arm__) || (defined(__aarch64__) && __GLIBC_PREREQ(2,28))
 static constexpr __ptrace_request PTRACE_GET_THREAD_AREA =
     static_cast<__ptrace_request>(22);

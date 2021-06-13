@@ -19,7 +19,7 @@
 #include "base/memory/ref_counted.h"
 #include "base/time/time.h"
 #include "base/trace_event/trace_event.h"
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "gpu/command_buffer/client/gles2_interface.h"
 #include "third_party/abseil-cpp/absl/types/optional.h"
 #include "ui/gfx/geometry/rect.h"

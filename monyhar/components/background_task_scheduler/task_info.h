@@ -57,7 +57,7 @@ struct TaskInfo {
 
   // A Java counterpart will be generated for this enum.
   // GENERATED_JAVA_ENUM_PACKAGE: (
-  // org.chromium.components.background_task_scheduler)
+  // org.monyhar.components.background_task_scheduler)
   enum NetworkType {
     // This task has no requirements for network connectivity. Default.
     NONE = 0,

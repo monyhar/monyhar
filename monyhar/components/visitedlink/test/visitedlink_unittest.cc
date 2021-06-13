@@ -727,7 +727,7 @@ TEST_F(VisitedLinkEventsTest, Coalescence) {
   // Add a few URLs.
   writer()->AddURL(GURL("http://acidtests.org/"));
   writer()->AddURL(GURL("http://google.com/"));
-  writer()->AddURL(GURL("http://chromium.org/"));
+  writer()->AddURL(GURL("http://monyhar.org/"));
   // Just for kicks, add a duplicate URL. This shouldn't increase the resulting
   writer()->AddURL(GURL("http://acidtests.org/"));
   ASSERT_TRUE(timer_->IsRunning());
@@ -762,7 +762,7 @@ TEST_F(VisitedLinkEventsTest, Coalescence) {
   EXPECT_EQ(2, context()->add_event_count());
 
   // Ensure that the coalescing does not resume after resetting.
-  writer()->AddURL(GURL("http://build.chromium.org/"));
+  writer()->AddURL(GURL("http://build.monyhar.org/"));
   EXPECT_TRUE(timer_->IsRunning());
   writer()->DeleteAllURLs();
   EXPECT_FALSE(timer_->IsRunning());
@@ -786,7 +786,7 @@ TEST_F(VisitedLinkEventsTest, Basics) {
   // Add a few URLs.
   writer()->AddURL(GURL("http://acidtests.org/"));
   writer()->AddURL(GURL("http://google.com/"));
-  writer()->AddURL(GURL("http://chromium.org/"));
+  writer()->AddURL(GURL("http://monyhar.org/"));
   ASSERT_TRUE(timer_->IsRunning());
   timer_->Fire();
   context()->WaitForUpdate();
@@ -820,7 +820,7 @@ TEST_F(VisitedLinkEventsTest, TabVisibility) {
   // Add a few URLs.
   writer()->AddURL(GURL("http://acidtests.org/"));
   writer()->AddURL(GURL("http://google.com/"));
-  writer()->AddURL(GURL("http://chromium.org/"));
+  writer()->AddURL(GURL("http://monyhar.org/"));
   ASSERT_TRUE(timer_->IsRunning());
   timer_->Fire();
   context()->WaitForNoUpdate();

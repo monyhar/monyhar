@@ -33,4 +33,4 @@ Update recipe:
    autoninja -C out\x64-release third_party\iaccessible2
    Each of these build commands will output instructions for updating the compiled api (.tlb and .h) for that build, e.g.:
     To rebaseline:
-      copy /y c:\src\temp\[random folder name]\* c:\src\chromium\src\third_party\win_build_output\midl\third_party\iaccessible2\arm64
+      copy /y c:\src\temp\[random folder name]\* c:\src\monyhar\src\third_party\win_build_output\midl\third_party\iaccessible2\arm64

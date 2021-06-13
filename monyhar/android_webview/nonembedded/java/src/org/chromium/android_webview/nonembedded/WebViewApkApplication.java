@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.nonembedded;
+package org.monyhar.android_webview.nonembedded;
 
 import android.app.Application;
 import android.content.ComponentName;
@@ -10,27 +10,27 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Build;
 
-import com.android.webview.chromium.WebViewLibraryPreloader;
+import com.android.webview.monyhar.WebViewLibraryPreloader;
 
-import org.chromium.android_webview.AwLocaleConfig;
-import org.chromium.android_webview.ProductConfig;
-import org.chromium.android_webview.common.CommandLineUtil;
-import org.chromium.android_webview.devui.util.WebViewPackageHelper;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.PathUtils;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.library_loader.LibraryProcessType;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.UmaRecorderHolder;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.task.TaskTraits;
-import org.chromium.build.BuildConfig;
-import org.chromium.components.embedder_support.application.FontPreloadingWorkaround;
-import org.chromium.components.version_info.VersionConstants;
-import org.chromium.ui.base.ResourceBundle;
+import org.monyhar.android_webview.AwLocaleConfig;
+import org.monyhar.android_webview.ProductConfig;
+import org.monyhar.android_webview.common.CommandLineUtil;
+import org.monyhar.android_webview.devui.util.WebViewPackageHelper;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.PathUtils;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.library_loader.LibraryProcessType;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.UmaRecorderHolder;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.task.TaskTraits;
+import org.monyhar.build.BuildConfig;
+import org.monyhar.components.embedder_support.application.FontPreloadingWorkaround;
+import org.monyhar.components.version_info.VersionConstants;
+import org.monyhar.ui.base.ResourceBundle;
 
 /**
  * Application subclass for SystemWebView and Trichrome.
@@ -115,7 +115,7 @@ public class WebViewApkApplication extends Application {
             Context context = ContextUtils.getApplicationContext();
             try {
                 ComponentName devToolsLauncherActivity = new ComponentName(
-                        context, "org.chromium.android_webview.devui.MonochromeLauncherActivity");
+                        context, "org.monyhar.android_webview.devui.MonochromeLauncherActivity");
                 int oldIconState = context.getPackageManager().getComponentEnabledSetting(
                         devToolsLauncherActivity);
 

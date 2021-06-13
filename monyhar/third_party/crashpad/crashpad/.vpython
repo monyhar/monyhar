@@ -17,7 +17,7 @@
 # It describes patterns for python wheel dependencies of the python scripts.
 #
 # Read more about `vpython` and how to modify this file here:
-#   https://chromium.googlesource.com/infra/infra/+/master/doc/users/vpython.md
+#   https://monyhar.googlesource.com/infra/infra/+/master/doc/users/vpython.md
 
 # This is needed for snapshot/win/end_to_end_test.py.
 wheel: <

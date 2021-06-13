@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
-import static org.chromium.chrome.browser.tasks.tab_management.TabListModel.CardProperties.CARD_ALPHA;
-import static org.chromium.chrome.browser.tasks.tab_management.TabListModel.CardProperties.CARD_TYPE;
-import static org.chromium.chrome.browser.tasks.tab_management.TabListModel.CardProperties.ModelType.MESSAGE;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabListModel.CardProperties.CARD_ALPHA;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabListModel.CardProperties.CARD_TYPE;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabListModel.CardProperties.ModelType.MESSAGE;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 
 import androidx.appcompat.content.res.AppCompatResources;
 
-import org.chromium.chrome.browser.price_tracking.PriceDropNotificationManager;
-import org.chromium.chrome.browser.tasks.tab_management.PriceMessageService.PriceMessageType;
-import org.chromium.chrome.tab_ui.R;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.chrome.browser.price_tracking.PriceDropNotificationManager;
+import org.monyhar.chrome.browser.tasks.tab_management.PriceMessageService.PriceMessageType;
+import org.monyhar.chrome.tab_ui.R;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * This is a util class for creating the property model of the PriceMessageCard.

@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.base;
+package org.monyhar.chrome.browser.base;
 
 import android.content.Context;
 import android.os.PersistableBundle;
 
-import org.chromium.components.minidump_uploader.MinidumpUploadJob;
-import org.chromium.components.minidump_uploader.MinidumpUploadJobService;
+import org.monyhar.components.minidump_uploader.MinidumpUploadJob;
+import org.monyhar.components.minidump_uploader.MinidumpUploadJobService;
 
 /**
  * MinidumpUploadJobService base class which will call through to the given {@link Impl}. This class

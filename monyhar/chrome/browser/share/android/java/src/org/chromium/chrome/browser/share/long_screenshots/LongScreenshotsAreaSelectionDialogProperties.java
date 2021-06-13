@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.long_screenshots;
+package org.monyhar.chrome.browser.share.long_screenshots;
 
 import android.view.View.OnClickListener;
 
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModel.WritableObjectPropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModel.WritableObjectPropertyKey;
 
 /**
  * Data properties for the Long Screenshots area selection dialog.

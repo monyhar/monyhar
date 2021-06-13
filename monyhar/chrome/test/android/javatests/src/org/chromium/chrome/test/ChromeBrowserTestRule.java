@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test;
+package org.monyhar.chrome.test;
 
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.chrome.test.util.browser.signin.AccountManagerTestRule;
-import org.chromium.components.signin.base.CoreAccountInfo;
-import org.chromium.content_public.browser.test.NativeLibraryTestUtils;
+import org.monyhar.chrome.test.util.browser.signin.AccountManagerTestRule;
+import org.monyhar.components.signin.base.CoreAccountInfo;
+import org.monyhar.content_public.browser.test.NativeLibraryTestUtils;
 
 /**
  * JUnit test rule that takes care of important initialization for Chrome-specific tests, such as

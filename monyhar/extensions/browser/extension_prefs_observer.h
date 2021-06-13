@@ -44,7 +44,7 @@ class ExtensionPrefsObserver {
   // TODO(devlin): This is a bit out of place here, and may be better suited on
   // a general "extension permissions" observer, if/when we have one. See
   // discussion at
-  // https://chromium-review.googlesource.com/c/chromium/src/+/1196107/3/chrome/browser/extensions/runtime_permissions_observer.h#26.
+  // https://monyhar-review.googlesource.com/c/monyhar/src/+/1196107/3/chrome/browser/extensions/runtime_permissions_observer.h#26.
   virtual void OnExtensionRuntimePermissionsChanged(
       const std::string& extension_id) {}
 

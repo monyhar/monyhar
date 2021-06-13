@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.bookmarks;
+package org.monyhar.chrome.browser.bookmarks;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -31,19 +31,19 @@ import org.junit.Test;
 import org.junit.rules.RuleChain;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.signin.SyncConsentActivityLauncherImpl;
-import org.chromium.chrome.browser.signin.ui.SyncConsentActivityLauncher;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.batch.BlankCTATabInitialStateRule;
-import org.chromium.chrome.test.util.BookmarkTestRule;
-import org.chromium.chrome.test.util.browser.signin.AccountManagerTestRule;
-import org.chromium.components.signin.base.CoreAccountInfo;
-import org.chromium.components.signin.metrics.SigninAccessPoint;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.signin.SyncConsentActivityLauncherImpl;
+import org.monyhar.chrome.browser.signin.ui.SyncConsentActivityLauncher;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.batch.BlankCTATabInitialStateRule;
+import org.monyhar.chrome.test.util.BookmarkTestRule;
+import org.monyhar.chrome.test.util.browser.signin.AccountManagerTestRule;
+import org.monyhar.components.signin.base.CoreAccountInfo;
+import org.monyhar.components.signin.metrics.SigninAccessPoint;
 
 /**
  * Tests for the personalized signin promo on the Bookmarks page.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.search_engines;
+package org.monyhar.chrome.browser.search_engines;
 
 import android.net.Uri;
 
@@ -13,18 +13,18 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.Restriction;
-import org.chromium.chrome.browser.search_engines.settings.SearchEngineAdapter;
-import org.chromium.chrome.test.ChromeBrowserTestRule;
-import org.chromium.components.search_engines.TemplateUrl;
-import org.chromium.components.search_engines.TemplateUrlService;
-import org.chromium.components.search_engines.TemplateUrlService.LoadListener;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.ui.test.util.UiRestriction;
-import org.chromium.url.GURL;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.Restriction;
+import org.monyhar.chrome.browser.search_engines.settings.SearchEngineAdapter;
+import org.monyhar.chrome.test.ChromeBrowserTestRule;
+import org.monyhar.components.search_engines.TemplateUrl;
+import org.monyhar.components.search_engines.TemplateUrlService;
+import org.monyhar.components.search_engines.TemplateUrlService.LoadListener;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.ui.test.util.UiRestriction;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.Arrays;

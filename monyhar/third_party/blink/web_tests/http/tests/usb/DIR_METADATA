@@ -1,5 +1,5 @@
 monorail {
   component: "Blink>USB"
 }
-team_email: "webusb@chromium.org"
+team_email: "webusb@monyhar.org"
 

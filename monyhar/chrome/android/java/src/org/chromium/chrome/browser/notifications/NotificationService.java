@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.notifications;
+package org.monyhar.chrome.browser.notifications;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import org.chromium.chrome.browser.base.SplitCompatIntentService;
-import org.chromium.chrome.browser.base.SplitCompatUtils;
+import org.monyhar.chrome.browser.base.SplitCompatIntentService;
+import org.monyhar.chrome.browser.base.SplitCompatUtils;
 
 /** See {@link NotificationServiceImpl}. */
 public class NotificationService extends SplitCompatIntentService {
@@ -17,7 +17,7 @@ public class NotificationService extends SplitCompatIntentService {
 
     public NotificationService() {
         super(SplitCompatUtils.getIdentifierName(
-                      "org.chromium.chrome.browser.notifications.NotificationServiceImpl"),
+                      "org.monyhar.chrome.browser.notifications.NotificationServiceImpl"),
                 TAG);
     }
 
@@ -29,7 +29,7 @@ public class NotificationService extends SplitCompatIntentService {
         @Override
         public void onReceive(Context context, Intent intent) {
             BroadcastReceiver receiver = (BroadcastReceiver) SplitCompatUtils.newInstance(context,
-                    "org.chromium.chrome.browser.notifications.NotificationServiceImpl$Receiver");
+                    "org.monyhar.chrome.browser.notifications.NotificationServiceImpl$Receiver");
             receiver.onReceive(context, intent);
         }
     }

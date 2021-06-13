@@ -11,9 +11,9 @@ A gradle-specified repository for Androidx dependencies.
 
 Where the snapshots come from:
 * Snapshots originate from https://androidx.dev
-* They are made into CIPD packages by this bot: https://ci.chromium.org/p/chromium/builders/ci/android-androidx-packager
-* They are then rolled in by this autoroller: https://autoroll.skia.org/r/androidx-chromium
-* Googlers can trigger manual runs: https://luci-scheduler.appspot.com/jobs/chromium/android-androidx-packager
+* They are made into CIPD packages by this bot: https://ci.monyhar.org/p/monyhar/builders/ci/android-androidx-packager
+* They are then rolled in by this autoroller: https://autoroll.skia.org/r/androidx-monyhar
+* Googlers can trigger manual runs: https://luci-scheduler.appspot.com/jobs/monyhar/android-androidx-packager
 
 Mapping snapshot version to git revision:
 * The current version of the snapshot is written to VERSION.txt (sibling of this

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webview_shell;
+package org.monyhar.webview_shell;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -28,7 +28,7 @@ import java.util.concurrent.Executors;
  * starting tracing until completion when all traces are written to disk.
  *
  * Example usage:
- * $ adb shell am start -n org.chromium.webview_shell/.WebViewTracingActivity -a VIEW -d \
+ * $ adb shell am start -n org.monyhar.webview_shell/.WebViewTracingActivity -a VIEW -d \
  *   http://www.google.com --ez enableTracing true
  *
  */

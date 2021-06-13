@@ -14,7 +14,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "battor.steady_state",
@@ -76,7 +76,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "battor.trivial_pages",
@@ -138,7 +138,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.bindings",
@@ -200,7 +200,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.css",
@@ -262,7 +262,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.dom",
@@ -324,7 +324,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.events",
@@ -386,7 +386,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.layout",
@@ -448,7 +448,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.owp_storage",
@@ -510,7 +510,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.paint",
@@ -572,7 +572,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.parser",
@@ -634,7 +634,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.shadow_dom",
@@ -696,7 +696,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.svg",
@@ -779,7 +779,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dromaeo.domcoreattr",
@@ -841,7 +841,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dromaeo.domcoremodify",
@@ -903,7 +903,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dromaeo.domcorequery",
@@ -965,7 +965,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dromaeo.domcoretraverse",
@@ -1027,7 +1027,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dummy_benchmark.noisy_benchmark_1",
@@ -1089,7 +1089,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dummy_benchmark.stable_benchmark_1",
@@ -1172,7 +1172,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "image_decoding.image_decoding_measurement",
@@ -1234,7 +1234,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "jetstream",
@@ -1296,7 +1296,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "kraken",
@@ -1358,7 +1358,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "loading.mobile",
@@ -1420,7 +1420,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "media.android.tough_video_cases",
@@ -1482,7 +1482,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "media.android.tough_video_cases_tbmv2",
@@ -1544,7 +1544,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "media.mse_cases",
@@ -1606,7 +1606,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "memory.long_running_idle_gmail_background_tbmv2",
@@ -1668,7 +1668,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "memory.long_running_idle_gmail_tbmv2",
@@ -1730,7 +1730,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "memory.top_10_mobile",
@@ -1792,7 +1792,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "octane",
@@ -1854,7 +1854,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "oortonline_tbmv2",
@@ -1916,7 +1916,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "power.idle_platform",
@@ -1946,7 +1946,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "power.steady_state",
@@ -2008,7 +2008,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "power.trivial_pages",
@@ -2070,7 +2070,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "power.typical_10_mobile",
@@ -2132,7 +2132,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "rasterize_and_record_micro.partial_invalidation",
@@ -2194,7 +2194,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "rasterize_and_record_micro.top_25",
@@ -2256,7 +2256,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "scheduler.tough_scheduling_cases",
@@ -2318,7 +2318,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "service_worker.service_worker",
@@ -2380,7 +2380,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "service_worker.service_worker_micro_benchmark",
@@ -2442,7 +2442,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.desktop_tough_pinch_zoom_cases",
@@ -2504,7 +2504,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.top_25_smooth",
@@ -2566,7 +2566,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.tough_filters_cases",
@@ -2628,7 +2628,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.tough_path_rendering_cases",
@@ -2690,7 +2690,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.tough_pinch_zoom_cases",
@@ -2752,7 +2752,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.tough_scrolling_cases",
@@ -2814,7 +2814,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization_and_decoding.image_decoding_cases",
@@ -2876,7 +2876,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.image_decoding_cases",
@@ -2938,7 +2938,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.key_mobile_sites_smooth",
@@ -3000,7 +3000,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.key_silk_cases",
@@ -3062,7 +3062,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.maps",
@@ -3124,7 +3124,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.pathological_mobile_sites",
@@ -3186,7 +3186,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.simple_mobile_sites",
@@ -3248,7 +3248,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.sync_scroll.key_mobile_sites_smooth",
@@ -3310,7 +3310,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.top_25_smooth",
@@ -3372,7 +3372,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_ad_cases",
@@ -3434,7 +3434,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_animation_cases",
@@ -3496,7 +3496,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_canvas_cases",
@@ -3558,7 +3558,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_filters_cases",
@@ -3620,7 +3620,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_image_decode_cases",
@@ -3682,7 +3682,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_path_rendering_cases",
@@ -3744,7 +3744,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_pinch_zoom_cases",
@@ -3806,7 +3806,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_scrolling_cases",
@@ -3868,7 +3868,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_texture_upload_cases",
@@ -3930,7 +3930,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_webgl_ad_cases",
@@ -3992,7 +3992,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_webgl_cases",
@@ -4054,7 +4054,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "speedometer",
@@ -4116,7 +4116,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "speedometer2",
@@ -4178,7 +4178,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "start_with_url.cold.startup_pages",
@@ -4240,7 +4240,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "start_with_url.warm.startup_pages",
@@ -4302,7 +4302,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "storage.indexeddb_endure",
@@ -4364,7 +4364,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "storage.indexeddb_endure_tracing",
@@ -4426,7 +4426,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "system_health.common_mobile",
@@ -4488,7 +4488,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "system_health.memory_mobile",
@@ -4550,7 +4550,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "system_health.webview_startup",
@@ -4612,7 +4612,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.key_idle_power_cases",
@@ -4674,7 +4674,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.key_mobile_sites_smooth",
@@ -4736,7 +4736,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.key_noop_cases",
@@ -4798,7 +4798,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.key_silk_cases",
@@ -4860,7 +4860,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.simple_mobile_sites",
@@ -4922,7 +4922,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.tough_compositor_cases",
@@ -4984,7 +4984,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.tough_scrolling_cases",
@@ -5046,7 +5046,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "tracing.tracing_with_background_memory_infra",
@@ -5108,7 +5108,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "tracing.tracing_with_debug_overhead",
@@ -5191,7 +5191,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "v8.browsing_mobile",
@@ -5253,7 +5253,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "v8.detached_context_age_in_gc",
@@ -5315,7 +5315,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "v8.runtimestats.browsing_mobile",
@@ -5377,7 +5377,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "webrtc",
@@ -5443,7 +5443,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "battor.steady_state",
@@ -5505,7 +5505,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "battor.trivial_pages",
@@ -5567,7 +5567,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.bindings",
@@ -5629,7 +5629,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.css",
@@ -5691,7 +5691,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.dom",
@@ -5753,7 +5753,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.events",
@@ -5815,7 +5815,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.layout",
@@ -5877,7 +5877,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.owp_storage",
@@ -5939,7 +5939,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.paint",
@@ -6001,7 +6001,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.parser",
@@ -6063,7 +6063,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.svg",
@@ -6125,7 +6125,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dromaeo.domcoreattr",
@@ -6187,7 +6187,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dromaeo.domcoremodify",
@@ -6249,7 +6249,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dromaeo.domcorequery",
@@ -6311,7 +6311,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dromaeo.domcoretraverse",
@@ -6373,7 +6373,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dummy_benchmark.noisy_benchmark_1",
@@ -6435,7 +6435,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dummy_benchmark.stable_benchmark_1",
@@ -6518,7 +6518,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "image_decoding.image_decoding_measurement",
@@ -6580,7 +6580,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "jetstream",
@@ -6642,7 +6642,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "kraken",
@@ -6704,7 +6704,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "loading.mobile",
@@ -6766,7 +6766,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "media.android.tough_video_cases",
@@ -6828,7 +6828,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "media.android.tough_video_cases_tbmv2",
@@ -6890,7 +6890,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "media.mse_cases",
@@ -6952,7 +6952,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "memory.long_running_idle_gmail_background_tbmv2",
@@ -7014,7 +7014,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "memory.long_running_idle_gmail_tbmv2",
@@ -7076,7 +7076,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "memory.top_10_mobile",
@@ -7138,7 +7138,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "octane",
@@ -7200,7 +7200,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "oortonline_tbmv2",
@@ -7262,7 +7262,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "power.idle_platform",
@@ -7292,7 +7292,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "power.steady_state",
@@ -7354,7 +7354,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "power.trivial_pages",
@@ -7416,7 +7416,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "power.typical_10_mobile",
@@ -7478,7 +7478,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "rasterize_and_record_micro.partial_invalidation",
@@ -7540,7 +7540,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "rasterize_and_record_micro.top_25",
@@ -7602,7 +7602,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "scheduler.tough_scheduling_cases",
@@ -7664,7 +7664,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "service_worker.service_worker",
@@ -7726,7 +7726,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "service_worker.service_worker_micro_benchmark",
@@ -7788,7 +7788,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.desktop_tough_pinch_zoom_cases",
@@ -7850,7 +7850,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.top_25_smooth",
@@ -7912,7 +7912,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.tough_filters_cases",
@@ -7974,7 +7974,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.tough_path_rendering_cases",
@@ -8036,7 +8036,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.tough_pinch_zoom_cases",
@@ -8098,7 +8098,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.tough_scrolling_cases",
@@ -8160,7 +8160,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization_and_decoding.image_decoding_cases",
@@ -8222,7 +8222,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.image_decoding_cases",
@@ -8284,7 +8284,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.key_mobile_sites_smooth",
@@ -8346,7 +8346,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.key_silk_cases",
@@ -8408,7 +8408,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.maps",
@@ -8470,7 +8470,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.pathological_mobile_sites",
@@ -8532,7 +8532,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.simple_mobile_sites",
@@ -8594,7 +8594,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.sync_scroll.key_mobile_sites_smooth",
@@ -8656,7 +8656,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.top_25_smooth",
@@ -8718,7 +8718,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_ad_cases",
@@ -8780,7 +8780,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_animation_cases",
@@ -8842,7 +8842,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_canvas_cases",
@@ -8904,7 +8904,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_filters_cases",
@@ -8966,7 +8966,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_image_decode_cases",
@@ -9028,7 +9028,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_path_rendering_cases",
@@ -9090,7 +9090,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_pinch_zoom_cases",
@@ -9152,7 +9152,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_scrolling_cases",
@@ -9214,7 +9214,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_texture_upload_cases",
@@ -9276,7 +9276,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_webgl_ad_cases",
@@ -9338,7 +9338,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_webgl_cases",
@@ -9400,7 +9400,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "speedometer",
@@ -9462,7 +9462,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "speedometer2",
@@ -9524,7 +9524,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "start_with_url.cold.startup_pages",
@@ -9586,7 +9586,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "start_with_url.warm.startup_pages",
@@ -9648,7 +9648,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "storage.indexeddb_endure",
@@ -9710,7 +9710,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "storage.indexeddb_endure_tracing",
@@ -9772,7 +9772,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "system_health.common_mobile",
@@ -9834,7 +9834,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "system_health.memory_mobile",
@@ -9896,7 +9896,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "system_health.webview_startup",
@@ -9958,7 +9958,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.key_idle_power_cases",
@@ -10020,7 +10020,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.key_mobile_sites_smooth",
@@ -10082,7 +10082,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.key_noop_cases",
@@ -10144,7 +10144,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.key_silk_cases",
@@ -10206,7 +10206,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.simple_mobile_sites",
@@ -10268,7 +10268,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.tough_compositor_cases",
@@ -10330,7 +10330,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.tough_scrolling_cases",
@@ -10392,7 +10392,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "tracing.tracing_with_background_memory_infra",
@@ -10454,7 +10454,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "tracing.tracing_with_debug_overhead",
@@ -10537,7 +10537,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "v8.browsing_mobile",
@@ -10599,7 +10599,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "v8.detached_context_age_in_gc",
@@ -10661,7 +10661,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "v8.runtimestats.browsing_mobile",
@@ -10723,7 +10723,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "webrtc",
@@ -13397,7 +13397,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "battor.steady_state",
@@ -13459,7 +13459,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "battor.trivial_pages",
@@ -13521,7 +13521,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.bindings",
@@ -13583,7 +13583,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.css",
@@ -13645,7 +13645,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.dom",
@@ -13707,7 +13707,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.events",
@@ -13769,7 +13769,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.layout",
@@ -13831,7 +13831,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.owp_storage",
@@ -13893,7 +13893,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.paint",
@@ -13955,7 +13955,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.parser",
@@ -14017,7 +14017,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.shadow_dom",
@@ -14079,7 +14079,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.svg",
@@ -14162,7 +14162,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dromaeo.domcoreattr",
@@ -14224,7 +14224,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dromaeo.domcoremodify",
@@ -14286,7 +14286,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dromaeo.domcorequery",
@@ -14348,7 +14348,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dromaeo.domcoretraverse",
@@ -14410,7 +14410,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dummy_benchmark.noisy_benchmark_1",
@@ -14472,7 +14472,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dummy_benchmark.stable_benchmark_1",
@@ -14555,7 +14555,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "image_decoding.image_decoding_measurement",
@@ -14617,7 +14617,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "jetstream",
@@ -14679,7 +14679,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "kraken",
@@ -14741,7 +14741,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "loading.mobile",
@@ -14803,7 +14803,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "media.android.tough_video_cases",
@@ -14865,7 +14865,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "media.android.tough_video_cases_tbmv2",
@@ -14927,7 +14927,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "media.mse_cases",
@@ -14989,7 +14989,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "memory.long_running_idle_gmail_background_tbmv2",
@@ -15051,7 +15051,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "memory.long_running_idle_gmail_tbmv2",
@@ -15113,7 +15113,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "memory.top_10_mobile",
@@ -15175,7 +15175,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "octane",
@@ -15237,7 +15237,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "oortonline_tbmv2",
@@ -15299,7 +15299,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "power.idle_platform",
@@ -15329,7 +15329,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "power.steady_state",
@@ -15391,7 +15391,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "power.trivial_pages",
@@ -15453,7 +15453,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "power.typical_10_mobile",
@@ -15515,7 +15515,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "rasterize_and_record_micro.partial_invalidation",
@@ -15577,7 +15577,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "rasterize_and_record_micro.top_25",
@@ -15639,7 +15639,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "scheduler.tough_scheduling_cases",
@@ -15701,7 +15701,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "service_worker.service_worker",
@@ -15763,7 +15763,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "service_worker.service_worker_micro_benchmark",
@@ -15825,7 +15825,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.desktop_tough_pinch_zoom_cases",
@@ -15887,7 +15887,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.top_25_smooth",
@@ -15949,7 +15949,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.tough_filters_cases",
@@ -16011,7 +16011,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.tough_path_rendering_cases",
@@ -16073,7 +16073,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.tough_pinch_zoom_cases",
@@ -16135,7 +16135,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.tough_scrolling_cases",
@@ -16197,7 +16197,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization_and_decoding.image_decoding_cases",
@@ -16259,7 +16259,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.image_decoding_cases",
@@ -16321,7 +16321,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.key_mobile_sites_smooth",
@@ -16383,7 +16383,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.key_silk_cases",
@@ -16445,7 +16445,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.maps",
@@ -16507,7 +16507,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.pathological_mobile_sites",
@@ -16569,7 +16569,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.simple_mobile_sites",
@@ -16631,7 +16631,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.sync_scroll.key_mobile_sites_smooth",
@@ -16693,7 +16693,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.top_25_smooth",
@@ -16755,7 +16755,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_ad_cases",
@@ -16817,7 +16817,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_animation_cases",
@@ -16879,7 +16879,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_canvas_cases",
@@ -16941,7 +16941,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_filters_cases",
@@ -17003,7 +17003,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_image_decode_cases",
@@ -17065,7 +17065,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_path_rendering_cases",
@@ -17127,7 +17127,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_pinch_zoom_cases",
@@ -17189,7 +17189,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_scrolling_cases",
@@ -17251,7 +17251,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_texture_upload_cases",
@@ -17313,7 +17313,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_webgl_ad_cases",
@@ -17375,7 +17375,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_webgl_cases",
@@ -17437,7 +17437,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "speedometer",
@@ -17499,7 +17499,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "speedometer2",
@@ -17561,7 +17561,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "start_with_url.cold.startup_pages",
@@ -17623,7 +17623,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "start_with_url.warm.startup_pages",
@@ -17685,7 +17685,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "storage.indexeddb_endure",
@@ -17747,7 +17747,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "storage.indexeddb_endure_tracing",
@@ -17809,7 +17809,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "system_health.common_mobile",
@@ -17871,7 +17871,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "system_health.memory_mobile",
@@ -17933,7 +17933,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "system_health.webview_startup",
@@ -17995,7 +17995,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.key_idle_power_cases",
@@ -18057,7 +18057,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.key_mobile_sites_smooth",
@@ -18119,7 +18119,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.key_noop_cases",
@@ -18181,7 +18181,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.key_silk_cases",
@@ -18243,7 +18243,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.simple_mobile_sites",
@@ -18305,7 +18305,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.tough_compositor_cases",
@@ -18367,7 +18367,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.tough_scrolling_cases",
@@ -18429,7 +18429,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "tracing.tracing_with_background_memory_infra",
@@ -18491,7 +18491,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "tracing.tracing_with_debug_overhead",
@@ -18574,7 +18574,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "v8.browsing_mobile",
@@ -18636,7 +18636,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "v8.detached_context_age_in_gc",
@@ -18698,7 +18698,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "v8.runtimestats.browsing_mobile",
@@ -18760,7 +18760,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "webrtc",
@@ -21465,7 +21465,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "battor.steady_state",
@@ -21527,7 +21527,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "battor.trivial_pages",
@@ -21589,7 +21589,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.bindings",
@@ -21651,7 +21651,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.css",
@@ -21713,7 +21713,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.dom",
@@ -21775,7 +21775,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.events",
@@ -21837,7 +21837,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.layout",
@@ -21899,7 +21899,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.owp_storage",
@@ -21961,7 +21961,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.paint",
@@ -22023,7 +22023,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.parser",
@@ -22085,7 +22085,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.shadow_dom",
@@ -22147,7 +22147,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.svg",
@@ -22230,7 +22230,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dromaeo.domcoreattr",
@@ -22292,7 +22292,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dromaeo.domcoremodify",
@@ -22354,7 +22354,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dromaeo.domcorequery",
@@ -22416,7 +22416,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dromaeo.domcoretraverse",
@@ -22478,7 +22478,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dummy_benchmark.noisy_benchmark_1",
@@ -22540,7 +22540,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dummy_benchmark.stable_benchmark_1",
@@ -22623,7 +22623,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "image_decoding.image_decoding_measurement",
@@ -22685,7 +22685,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "jetstream",
@@ -22747,7 +22747,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "kraken",
@@ -22809,7 +22809,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "loading.mobile",
@@ -22871,7 +22871,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "media.android.tough_video_cases",
@@ -22933,7 +22933,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "media.android.tough_video_cases_tbmv2",
@@ -22995,7 +22995,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "media.mse_cases",
@@ -23057,7 +23057,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "memory.long_running_idle_gmail_background_tbmv2",
@@ -23119,7 +23119,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "memory.long_running_idle_gmail_tbmv2",
@@ -23181,7 +23181,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "memory.top_10_mobile",
@@ -23243,7 +23243,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "octane",
@@ -23305,7 +23305,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "oortonline_tbmv2",
@@ -23367,7 +23367,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "power.idle_platform",
@@ -23397,7 +23397,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "power.steady_state",
@@ -23459,7 +23459,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "power.trivial_pages",
@@ -23521,7 +23521,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "power.typical_10_mobile",
@@ -23583,7 +23583,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "rasterize_and_record_micro.partial_invalidation",
@@ -23645,7 +23645,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "rasterize_and_record_micro.top_25",
@@ -23707,7 +23707,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "scheduler.tough_scheduling_cases",
@@ -23769,7 +23769,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "service_worker.service_worker",
@@ -23831,7 +23831,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "service_worker.service_worker_micro_benchmark",
@@ -23893,7 +23893,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.desktop_tough_pinch_zoom_cases",
@@ -23955,7 +23955,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.top_25_smooth",
@@ -24017,7 +24017,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.tough_filters_cases",
@@ -24079,7 +24079,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.tough_path_rendering_cases",
@@ -24141,7 +24141,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.tough_pinch_zoom_cases",
@@ -24203,7 +24203,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.tough_scrolling_cases",
@@ -24265,7 +24265,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization_and_decoding.image_decoding_cases",
@@ -24327,7 +24327,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.image_decoding_cases",
@@ -24389,7 +24389,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.key_mobile_sites_smooth",
@@ -24451,7 +24451,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.key_silk_cases",
@@ -24513,7 +24513,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.maps",
@@ -24575,7 +24575,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.pathological_mobile_sites",
@@ -24637,7 +24637,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.simple_mobile_sites",
@@ -24699,7 +24699,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.sync_scroll.key_mobile_sites_smooth",
@@ -24761,7 +24761,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.top_25_smooth",
@@ -24823,7 +24823,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_ad_cases",
@@ -24885,7 +24885,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_animation_cases",
@@ -24947,7 +24947,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_canvas_cases",
@@ -25009,7 +25009,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_filters_cases",
@@ -25071,7 +25071,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_image_decode_cases",
@@ -25133,7 +25133,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_path_rendering_cases",
@@ -25195,7 +25195,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_pinch_zoom_cases",
@@ -25257,7 +25257,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_scrolling_cases",
@@ -25319,7 +25319,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_texture_upload_cases",
@@ -25381,7 +25381,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_webgl_ad_cases",
@@ -25443,7 +25443,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_webgl_cases",
@@ -25505,7 +25505,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "speedometer",
@@ -25567,7 +25567,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "speedometer2",
@@ -25629,7 +25629,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "start_with_url.cold.startup_pages",
@@ -25691,7 +25691,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "start_with_url.warm.startup_pages",
@@ -25753,7 +25753,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "storage.indexeddb_endure",
@@ -25815,7 +25815,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "storage.indexeddb_endure_tracing",
@@ -25877,7 +25877,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "system_health.common_mobile",
@@ -25939,7 +25939,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "system_health.memory_mobile",
@@ -26001,7 +26001,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "system_health.webview_startup",
@@ -26063,7 +26063,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.key_idle_power_cases",
@@ -26125,7 +26125,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.key_mobile_sites_smooth",
@@ -26187,7 +26187,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.key_noop_cases",
@@ -26249,7 +26249,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.key_silk_cases",
@@ -26311,7 +26311,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.simple_mobile_sites",
@@ -26373,7 +26373,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.tough_compositor_cases",
@@ -26435,7 +26435,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.tough_scrolling_cases",
@@ -26497,7 +26497,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "tracing.tracing_with_background_memory_infra",
@@ -26559,7 +26559,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "tracing.tracing_with_debug_overhead",
@@ -26642,7 +26642,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "v8.browsing_mobile",
@@ -26704,7 +26704,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "v8.detached_context_age_in_gc",
@@ -26766,7 +26766,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "v8.runtimestats.browsing_mobile",
@@ -26828,7 +26828,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "webrtc",
@@ -26894,7 +26894,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "battor.steady_state",
@@ -26956,7 +26956,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "battor.trivial_pages",
@@ -27018,7 +27018,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.bindings",
@@ -27080,7 +27080,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.css",
@@ -27142,7 +27142,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.dom",
@@ -27204,7 +27204,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.events",
@@ -27266,7 +27266,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.owp_storage",
@@ -27328,7 +27328,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.parser",
@@ -27390,7 +27390,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.shadow_dom",
@@ -27452,7 +27452,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "blink_perf.svg",
@@ -27514,7 +27514,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dromaeo.domcoreattr",
@@ -27576,7 +27576,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dromaeo.domcoremodify",
@@ -27638,7 +27638,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dromaeo.domcorequery",
@@ -27700,7 +27700,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dromaeo.domcoretraverse",
@@ -27762,7 +27762,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dummy_benchmark.noisy_benchmark_1",
@@ -27824,7 +27824,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "dummy_benchmark.stable_benchmark_1",
@@ -27907,7 +27907,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "image_decoding.image_decoding_measurement",
@@ -27969,7 +27969,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "jetstream",
@@ -28031,7 +28031,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "kraken",
@@ -28093,7 +28093,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "loading.mobile",
@@ -28155,7 +28155,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "media.android.tough_video_cases",
@@ -28217,7 +28217,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "media.android.tough_video_cases_tbmv2",
@@ -28279,7 +28279,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "media.mse_cases",
@@ -28341,7 +28341,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "memory.long_running_idle_gmail_background_tbmv2",
@@ -28403,7 +28403,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "memory.long_running_idle_gmail_tbmv2",
@@ -28465,7 +28465,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "memory.top_10_mobile",
@@ -28527,7 +28527,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "octane",
@@ -28589,7 +28589,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "oortonline_tbmv2",
@@ -28651,7 +28651,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "power.idle_platform",
@@ -28681,7 +28681,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "power.steady_state",
@@ -28743,7 +28743,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "power.trivial_pages",
@@ -28805,7 +28805,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "power.typical_10_mobile",
@@ -28867,7 +28867,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "rasterize_and_record_micro.partial_invalidation",
@@ -28929,7 +28929,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "rasterize_and_record_micro.top_25",
@@ -28991,7 +28991,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "scheduler.tough_scheduling_cases",
@@ -29053,7 +29053,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "service_worker.service_worker",
@@ -29115,7 +29115,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "service_worker.service_worker_micro_benchmark",
@@ -29177,7 +29177,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.desktop_tough_pinch_zoom_cases",
@@ -29239,7 +29239,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.top_25_smooth",
@@ -29301,7 +29301,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.tough_filters_cases",
@@ -29363,7 +29363,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.tough_path_rendering_cases",
@@ -29425,7 +29425,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.tough_pinch_zoom_cases",
@@ -29487,7 +29487,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization.tough_scrolling_cases",
@@ -29549,7 +29549,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.gpu_rasterization_and_decoding.image_decoding_cases",
@@ -29611,7 +29611,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.image_decoding_cases",
@@ -29673,7 +29673,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.key_mobile_sites_smooth",
@@ -29735,7 +29735,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.key_silk_cases",
@@ -29797,7 +29797,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.maps",
@@ -29859,7 +29859,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.pathological_mobile_sites",
@@ -29921,7 +29921,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.simple_mobile_sites",
@@ -29983,7 +29983,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.sync_scroll.key_mobile_sites_smooth",
@@ -30045,7 +30045,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.top_25_smooth",
@@ -30107,7 +30107,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_ad_cases",
@@ -30169,7 +30169,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_animation_cases",
@@ -30231,7 +30231,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_canvas_cases",
@@ -30293,7 +30293,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_filters_cases",
@@ -30355,7 +30355,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_image_decode_cases",
@@ -30417,7 +30417,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_path_rendering_cases",
@@ -30479,7 +30479,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_pinch_zoom_cases",
@@ -30541,7 +30541,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_scrolling_cases",
@@ -30603,7 +30603,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_texture_upload_cases",
@@ -30665,7 +30665,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_webgl_ad_cases",
@@ -30727,7 +30727,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "smoothness.tough_webgl_cases",
@@ -30789,7 +30789,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "speedometer",
@@ -30851,7 +30851,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "speedometer2",
@@ -30913,7 +30913,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "start_with_url.cold.startup_pages",
@@ -30975,7 +30975,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "start_with_url.warm.startup_pages",
@@ -31037,7 +31037,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "storage.indexeddb_endure",
@@ -31099,7 +31099,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "storage.indexeddb_endure_tracing",
@@ -31161,7 +31161,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "system_health.common_mobile",
@@ -31223,7 +31223,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "system_health.memory_mobile",
@@ -31285,7 +31285,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "system_health.webview_startup",
@@ -31347,7 +31347,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.key_idle_power_cases",
@@ -31409,7 +31409,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.key_mobile_sites_smooth",
@@ -31471,7 +31471,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.key_noop_cases",
@@ -31533,7 +31533,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.key_silk_cases",
@@ -31595,7 +31595,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.simple_mobile_sites",
@@ -31657,7 +31657,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.tough_compositor_cases",
@@ -31719,7 +31719,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "thread_times.tough_scrolling_cases",
@@ -31781,7 +31781,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "tracing.tracing_with_background_memory_infra",
@@ -31843,7 +31843,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "tracing.tracing_with_debug_overhead",
@@ -31926,7 +31926,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "v8.browsing_mobile",
@@ -31988,7 +31988,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "v8.detached_context_age_in_gc",
@@ -32050,7 +32050,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "v8.runtimestats.browsing_mobile",
@@ -32112,7 +32112,7 @@
           "-v",
           "--upload-results",
           "--output-format=chartjson",
-          "--browser=android-chromium"
+          "--browser=android-monyhar"
         ],
         "isolate_name": "telemetry_perf_tests",
         "name": "webrtc",

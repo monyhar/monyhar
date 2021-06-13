@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.multiwindow;
+package org.monyhar.chrome.browser.multiwindow;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -17,17 +17,17 @@ import androidx.annotation.Nullable;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.CriteriaNotSatisfiedException;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.ChromeTabbedActivity2;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.CriteriaNotSatisfiedException;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.ChromeTabbedActivity2;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.concurrent.atomic.AtomicReference;
 

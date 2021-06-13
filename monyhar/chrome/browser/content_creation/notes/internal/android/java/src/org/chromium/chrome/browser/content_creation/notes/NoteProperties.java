@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.content_creation.notes;
+package org.monyhar.chrome.browser.content_creation.notes;
 
 import android.graphics.Typeface;
 
-import org.chromium.components.content_creation.notes.models.NoteTemplate;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel.WritableObjectPropertyKey;
+import org.monyhar.components.content_creation.notes.models.NoteTemplate;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel.WritableObjectPropertyKey;
 
 class NoteProperties {
     /** The view type used by the recycler view to show the notes. */

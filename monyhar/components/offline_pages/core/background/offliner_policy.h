@@ -83,7 +83,7 @@ class OfflinerPolicy {
   }
 
   // The max number of times we will start a request.  Not all started attempts
-  // will complete.  This may be caused by background loader issues or chromium
+  // will complete.  This may be caused by background loader issues or monyhar
   // being swapped out of memory.
   int GetMaxStartedTries() const { return max_started_tries_; }
 

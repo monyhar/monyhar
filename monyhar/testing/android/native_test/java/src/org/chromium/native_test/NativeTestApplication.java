@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.native_test;
+package org.monyhar.native_test;
 
 import android.app.Application;
 import android.content.Context;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.multidex.ChromiumMultiDexInstaller;
-import org.chromium.build.BuildConfig;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.multidex.ChromiumMultiDexInstaller;
+import org.monyhar.build.BuildConfig;
 
 /**
  * Application class to be used by native_test apks.

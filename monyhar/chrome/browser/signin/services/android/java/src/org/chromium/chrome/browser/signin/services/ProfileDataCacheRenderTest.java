@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.signin.services;
+package org.monyhar.chrome.browser.signin.services;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
@@ -38,32 +38,32 @@ import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 import org.mockito.quality.Strictness;
 
-import org.chromium.base.test.params.ParameterAnnotations.ClassParameter;
-import org.chromium.base.test.params.ParameterAnnotations.UseRunnerDelegate;
-import org.chromium.base.test.params.ParameterSet;
-import org.chromium.base.test.params.ParameterizedRunner;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.test.ChromeJUnit4RunnerDelegate;
-import org.chromium.chrome.test.util.ChromeRenderTestRule;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.chrome.test.util.browser.Features.DisableFeatures;
-import org.chromium.chrome.test.util.browser.Features.EnableFeatures;
-import org.chromium.chrome.test.util.browser.signin.AccountManagerTestRule;
-import org.chromium.components.signin.ProfileDataSource;
-import org.chromium.components.signin.base.AccountInfo;
-import org.chromium.components.signin.base.CoreAccountId;
-import org.chromium.components.signin.identitymanager.AccountInfoServiceImpl;
-import org.chromium.components.signin.identitymanager.AccountTrackerService;
-import org.chromium.components.signin.identitymanager.IdentityManager;
-import org.chromium.components.signin.identitymanager.IdentityManagerJni;
-import org.chromium.components.signin.test.util.FakeProfileDataSource;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.ui.test.util.DummyUiActivityTestCase;
-import org.chromium.ui.widget.ChromeImageView;
+import org.monyhar.base.test.params.ParameterAnnotations.ClassParameter;
+import org.monyhar.base.test.params.ParameterAnnotations.UseRunnerDelegate;
+import org.monyhar.base.test.params.ParameterSet;
+import org.monyhar.base.test.params.ParameterizedRunner;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.test.ChromeJUnit4RunnerDelegate;
+import org.monyhar.chrome.test.util.ChromeRenderTestRule;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.chrome.test.util.browser.Features.DisableFeatures;
+import org.monyhar.chrome.test.util.browser.Features.EnableFeatures;
+import org.monyhar.chrome.test.util.browser.signin.AccountManagerTestRule;
+import org.monyhar.components.signin.ProfileDataSource;
+import org.monyhar.components.signin.base.AccountInfo;
+import org.monyhar.components.signin.base.CoreAccountId;
+import org.monyhar.components.signin.identitymanager.AccountInfoServiceImpl;
+import org.monyhar.components.signin.identitymanager.AccountTrackerService;
+import org.monyhar.components.signin.identitymanager.IdentityManager;
+import org.monyhar.components.signin.identitymanager.IdentityManagerJni;
+import org.monyhar.components.signin.test.util.FakeProfileDataSource;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.ui.test.util.DummyUiActivityTestCase;
+import org.monyhar.ui.widget.ChromeImageView;
 
 import java.io.IOException;
 import java.util.Arrays;

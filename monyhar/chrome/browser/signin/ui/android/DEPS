@@ -5,9 +5,9 @@ include_rules = [
 specific_include_rules = {
   "AccountPickerDelegateImpl.*\.java"
   : [
-  "+content/public/android/java/src/org/chromium/content_public/browser/LoadUrlParams.java"
+  "+content/public/android/java/src/org/monyhar/content_public/browser/LoadUrlParams.java"
   ],
   "SigninCheckerTest.java": [
-  "+components/externalauth/android/java/src/org/chromium/components/externalauth/ExternalAuthUtils.java"
+  "+components/externalauth/android/java/src/org/monyhar/components/externalauth/ExternalAuthUtils.java"
   ],
 }

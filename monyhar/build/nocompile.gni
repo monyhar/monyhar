@@ -7,7 +7,7 @@
 # a particular construct will not compile.
 #
 # Also see:
-#   http://dev.chromium.org/developers/testing/no-compile-tests
+#   http://dev.monyhar.org/developers/testing/no-compile-tests
 #
 # To use this, create a gyp target with the following form:
 #

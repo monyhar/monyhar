@@ -21,21 +21,21 @@ TEST(HttpsRecordRdataTest, ParsesAlias) {
   const char kRdata[] =
       // Priority: 0 for alias record
       "\000\000"
-      // Alias name: chromium.org
-      "\010chromium\003org\000";
+      // Alias name: monyhar.org
+      "\010monyhar\003org\000";
 
   std::unique_ptr<HttpsRecordRdata> rdata =
       HttpsRecordRdata::Parse(base::StringPiece(kRdata, sizeof(kRdata) - 1));
   ASSERT_TRUE(rdata);
   EXPECT_FALSE(rdata->IsMalformed());
 
-  AliasFormHttpsRecordRdata expected("chromium.org");
+  AliasFormHttpsRecordRdata expected("monyhar.org");
   EXPECT_TRUE(rdata->IsEqual(&expected));
 
   EXPECT_TRUE(rdata->IsAlias());
   AliasFormHttpsRecordRdata* alias_rdata = rdata->AsAliasForm();
   ASSERT_TRUE(alias_rdata);
-  EXPECT_EQ(alias_rdata->alias_name(), "chromium.org");
+  EXPECT_EQ(alias_rdata->alias_name(), "monyhar.org");
 }
 
 TEST(HttpsRecordRdataTest, ParseAliasWithEmptyName) {
@@ -62,8 +62,8 @@ TEST(HttpsRecordRdataTest, IgnoreAliasParams) {
   const char kRdata[] =
       // Priority: 0 for alias record
       "\000\000"
-      // Alias name: chromium.org
-      "\010chromium\003org\000"
+      // Alias name: monyhar.org
+      "\010monyhar\003org\000"
       // no-default-alpn
       "\000\002\000\000";
 
@@ -71,21 +71,21 @@ TEST(HttpsRecordRdataTest, IgnoreAliasParams) {
       HttpsRecordRdata::Parse(base::StringPiece(kRdata, sizeof(kRdata) - 1));
   ASSERT_TRUE(rdata);
 
-  AliasFormHttpsRecordRdata expected("chromium.org");
+  AliasFormHttpsRecordRdata expected("monyhar.org");
   EXPECT_TRUE(rdata->IsEqual(&expected));
 
   EXPECT_TRUE(rdata->IsAlias());
   AliasFormHttpsRecordRdata* alias_rdata = rdata->AsAliasForm();
   ASSERT_TRUE(alias_rdata);
-  EXPECT_EQ(alias_rdata->alias_name(), "chromium.org");
+  EXPECT_EQ(alias_rdata->alias_name(), "monyhar.org");
 }
 
 TEST(HttpsRecordRdataTest, ParsesService) {
   const char kRdata[] =
       // Priority: 1
       "\000\001"
-      // Service name: chromium.org
-      "\010chromium\003org\000"
+      // Service name: monyhar.org
+      "\010monyhar\003org\000"
       // mandatory=alpn,no-default-alpn,port,ipv4hint,echconfig,ipv6hint
       "\000\000\000\014\000\001\000\002\000\003\000\004\000\005\000\006"
       // alpn=foo,bar
@@ -112,7 +112,7 @@ TEST(HttpsRecordRdataTest, ParsesService) {
   IPAddress expected_ipv6;
   ASSERT_TRUE(expected_ipv6.AssignFromIPLiteral("2001:4860:4860::8888"));
   ServiceFormHttpsRecordRdata expected(
-      1 /* priority */, "chromium.org", std::set<uint16_t>({1, 2, 3, 4, 5, 6}),
+      1 /* priority */, "monyhar.org", std::set<uint16_t>({1, 2, 3, 4, 5, 6}),
       std::vector<std::string>({"foo", "bar"}) /* alpn_ids */,
       false /* default_alpn */, absl::optional<uint16_t>(46) /* port */,
       std::vector<IPAddress>({IPAddress(8, 8, 8, 8)}) /* ipv4_hint */,
@@ -125,7 +125,7 @@ TEST(HttpsRecordRdataTest, ParsesService) {
   ServiceFormHttpsRecordRdata* service_rdata = rdata->AsServiceForm();
   ASSERT_TRUE(service_rdata);
   EXPECT_EQ(service_rdata->priority(), 1);
-  EXPECT_EQ(service_rdata->service_name(), "chromium.org");
+  EXPECT_EQ(service_rdata->service_name(), "monyhar.org");
   EXPECT_THAT(service_rdata->mandatory_keys(),
               testing::ElementsAre(1, 2, 3, 4, 5, 6));
   EXPECT_THAT(service_rdata->alpn_ids(), testing::ElementsAre("foo", "bar"));
@@ -144,8 +144,8 @@ TEST(HttpsRecordRdataTest, RejectCorruptRdata) {
   const char kRdata[] =
       // Priority: 5
       "\000\005"
-      // Service name: chromium.org
-      "\010chromium\003org\000"
+      // Service name: monyhar.org
+      "\010monyhar\003org\000"
       // Malformed alpn
       "\000\001\000\005hi";
 

@@ -16,7 +16,7 @@
 #include "base/android/linker/linker_jni.h"
 #include "base/android/linker/modern_linker_jni.h"
 
-namespace chromium_android_linker {
+namespace monyhar_android_linker {
 namespace {
 
 bool LinkerJNIInit(JavaVM* vm, JNIEnv* env) {
@@ -49,8 +49,8 @@ jint JNI_OnLoad(JavaVM* vm, void* reserved) {
   return JNI_VERSION_1_4;
 }
 
-}  // namespace chromium_android_linker
+}  // namespace monyhar_android_linker
 
 jint JNI_OnLoad(JavaVM* vm, void* reserved) {
-  return chromium_android_linker::JNI_OnLoad(vm, reserved);
+  return monyhar_android_linker::JNI_OnLoad(vm, reserved);
 }

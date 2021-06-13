@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.modules.extra_icu;
+package org.monyhar.chrome.modules.extra_icu;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
 
 /** Java side of the extra ICU module installer. */
 @JNINamespace("extra_icu")

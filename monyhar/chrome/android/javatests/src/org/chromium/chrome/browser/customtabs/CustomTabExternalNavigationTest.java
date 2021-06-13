@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -17,23 +17,23 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.chrome.browser.browserservices.TrustedWebActivityTestUtil;
-import org.chromium.chrome.browser.browserservices.ui.controller.CurrentPageVerifier.VerificationStatus;
-import org.chromium.chrome.browser.customtabs.CustomTabDelegateFactory.CustomTabNavigationDelegate;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabDelegateFactory;
-import org.chromium.chrome.browser.tab.TabTestUtils;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.components.external_intents.ExternalNavigationHandler;
-import org.chromium.components.external_intents.ExternalNavigationHandler.OverrideUrlLoadingResult;
-import org.chromium.components.external_intents.ExternalNavigationHandler.OverrideUrlLoadingResultType;
-import org.chromium.components.external_intents.ExternalNavigationParams;
-import org.chromium.net.test.EmbeddedTestServer;
-import org.chromium.url.GURL;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.chrome.browser.browserservices.TrustedWebActivityTestUtil;
+import org.monyhar.chrome.browser.browserservices.ui.controller.CurrentPageVerifier.VerificationStatus;
+import org.monyhar.chrome.browser.customtabs.CustomTabDelegateFactory.CustomTabNavigationDelegate;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabDelegateFactory;
+import org.monyhar.chrome.browser.tab.TabTestUtils;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.components.external_intents.ExternalNavigationHandler;
+import org.monyhar.components.external_intents.ExternalNavigationHandler.OverrideUrlLoadingResult;
+import org.monyhar.components.external_intents.ExternalNavigationHandler.OverrideUrlLoadingResultType;
+import org.monyhar.components.external_intents.ExternalNavigationParams;
+import org.monyhar.net.test.EmbeddedTestServer;
+import org.monyhar.url.GURL;
 
 import java.util.concurrent.TimeoutException;
 

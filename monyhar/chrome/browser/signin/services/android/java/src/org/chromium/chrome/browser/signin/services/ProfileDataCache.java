@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.signin.services;
+package org.monyhar.chrome.browser.signin.services;
 
 import android.accounts.Account;
 import android.content.Context;
@@ -26,16 +26,16 @@ import androidx.annotation.Px;
 import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.content.res.AppCompatResources;
 
-import org.chromium.base.ObserverList;
-import org.chromium.base.ThreadUtils;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.components.browser_ui.util.AvatarGenerator;
-import org.chromium.components.signin.AccountManagerFacadeProvider;
-import org.chromium.components.signin.ProfileDataSource;
-import org.chromium.components.signin.ProfileDataSource.ProfileData;
-import org.chromium.components.signin.base.AccountInfo;
-import org.chromium.components.signin.identitymanager.AccountInfoService;
-import org.chromium.components.signin.identitymanager.AccountInfoServiceImpl;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.components.browser_ui.util.AvatarGenerator;
+import org.monyhar.components.signin.AccountManagerFacadeProvider;
+import org.monyhar.components.signin.ProfileDataSource;
+import org.monyhar.components.signin.ProfileDataSource.ProfileData;
+import org.monyhar.components.signin.base.AccountInfo;
+import org.monyhar.components.signin.identitymanager.AccountInfoService;
+import org.monyhar.components.signin.identitymanager.AccountInfoServiceImpl;
 
 import java.util.HashMap;
 import java.util.Map;

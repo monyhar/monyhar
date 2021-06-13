@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.thumbnail.generator;
+package org.monyhar.chrome.browser.thumbnail.generator;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -17,16 +17,16 @@ import androidx.core.util.Pair;
 
 import com.google.protobuf.ByteString;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.StreamUtil;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.base.task.BackgroundOnlyAsyncTask;
-import org.chromium.chrome.browser.thumbnail.generator.ThumbnailCacheEntry.ContentId;
-import org.chromium.chrome.browser.thumbnail.generator.ThumbnailCacheEntry.ThumbnailEntry;
-import org.chromium.components.browser_ui.util.ConversionUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.StreamUtil;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.base.task.BackgroundOnlyAsyncTask;
+import org.monyhar.chrome.browser.thumbnail.generator.ThumbnailCacheEntry.ContentId;
+import org.monyhar.chrome.browser.thumbnail.generator.ThumbnailCacheEntry.ThumbnailEntry;
+import org.monyhar.components.browser_ui.util.ConversionUtils;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

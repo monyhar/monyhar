@@ -62,7 +62,7 @@
 #include "chrome/browser/chromeos/policy/uploading/system_log_uploader.h"
 #include "chrome/browser/ui/webui/management/management_ui_handler_chromeos.h"
 #include "chrome/browser/ui/webui/webui_util.h"
-#include "chrome/grit/chromium_strings.h"
+#include "chrome/grit/monyhar_strings.h"
 #include "chromeos/network/network_state_handler.h"
 #include "chromeos/network/proxy/proxy_config_handler.h"
 #include "chromeos/network/proxy/ui_proxy_config_service.h"

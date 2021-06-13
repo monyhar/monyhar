@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.device_dialog;
+package org.monyhar.chrome.browser.device_dialog;
 
 import android.Manifest;
 import android.app.Activity;
@@ -24,22 +24,22 @@ import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.vectordrawable.graphics.drawable.VectorDrawableCompat;
 
-import org.chromium.base.BuildInfo;
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.omnibox.ChromeAutocompleteSchemeClassifier;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.location.LocationUtils;
-import org.chromium.components.omnibox.OmniboxUrlEmphasizer;
-import org.chromium.content_public.browser.bluetooth.BluetoothChooserEvent;
-import org.chromium.ui.base.PermissionCallback;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.text.NoUnderlineClickableSpan;
-import org.chromium.ui.text.SpanApplier;
-import org.chromium.ui.text.SpanApplier.SpanInfo;
-import org.chromium.ui.util.ColorUtils;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.omnibox.ChromeAutocompleteSchemeClassifier;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.location.LocationUtils;
+import org.monyhar.components.omnibox.OmniboxUrlEmphasizer;
+import org.monyhar.content_public.browser.bluetooth.BluetoothChooserEvent;
+import org.monyhar.ui.base.PermissionCallback;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.text.NoUnderlineClickableSpan;
+import org.monyhar.ui.text.SpanApplier;
+import org.monyhar.ui.text.SpanApplier.SpanInfo;
+import org.monyhar.ui.util.ColorUtils;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

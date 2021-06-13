@@ -28,7 +28,7 @@ enum class FeedEngagementType {
 // in sync with FeedUserActionType in enums.xml.
 // Note: Most of these have a corresponding UserMetricsAction reported here.
 // Exceptions are described below.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.feed.v2
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.feed.v2
 enum class FeedUserActionType {
   // User tapped on card, opening the article in the same tab.
   kTappedOnCard = 0,

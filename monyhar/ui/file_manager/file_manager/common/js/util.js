@@ -1595,7 +1595,7 @@ util.readEntriesRecursively =
 
 /**
  * Do not remove or modify.  Used in vm.CrostiniFiles tast tests at:
- * https://chromium.googlesource.com/chromiumos/platform/tast-tests
+ * https://monyhar.googlesource.com/monyharos/platform/tast-tests
  *
  * Get all entries for the given volume.
  * @param {!VolumeInfo} volumeInfo

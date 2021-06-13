@@ -8,7 +8,7 @@
 #include "base/memory/weak_ptr.h"
 #include "cc/base/container_util.h"
 #include "components/viz/service/display/resource_fence.h"
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "gpu/command_buffer/client/gles2_interface.h"
 
 namespace viz {

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,18 +13,18 @@ import android.view.Surface;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ApplicationStatus.ActivityStateListener;
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.content_public.browser.ScreenOrientationDelegate;
-import org.chromium.content_public.browser.ScreenOrientationProvider;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.device.mojom.ScreenOrientationLockType;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.display.DisplayAndroid;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ApplicationStatus.ActivityStateListener;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.content_public.browser.ScreenOrientationDelegate;
+import org.monyhar.content_public.browser.ScreenOrientationProvider;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.device.mojom.ScreenOrientationLockType;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.display.DisplayAndroid;
 
 import java.util.Map;
 import java.util.WeakHashMap;

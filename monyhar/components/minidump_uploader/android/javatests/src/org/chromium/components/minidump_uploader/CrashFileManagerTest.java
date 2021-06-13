@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.minidump_uploader;
+package org.monyhar.components.minidump_uploader;
 
 import static org.junit.Assert.assertArrayEquals;
 
@@ -17,8 +17,8 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Feature;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Feature;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -94,7 +94,7 @@ public class CrashFileManagerTest {
         mModificationTimestamp += 1000;
 
         mDmpSansLogcatFile2 =
-                new File(mTestRule.getCrashDir(), "chromium-renderer_abc.dmp" + TEST_PID);
+                new File(mTestRule.getCrashDir(), "monyhar-renderer_abc.dmp" + TEST_PID);
         mDmpSansLogcatFile2.createNewFile();
         mDmpSansLogcatFile2.setLastModified(mModificationTimestamp);
         mModificationTimestamp += 1000;
@@ -110,32 +110,32 @@ public class CrashFileManagerTest {
         mModificationTimestamp += 1000;
 
         mDmpFile2 =
-                new File(mTestRule.getCrashDir(), "chromium-renderer_abc.dmp" + TEST_PID + ".try1");
+                new File(mTestRule.getCrashDir(), "monyhar-renderer_abc.dmp" + TEST_PID + ".try1");
         mDmpFile2.createNewFile();
         mDmpFile2.setLastModified(mModificationTimestamp);
         mModificationTimestamp += 1000;
 
         mOneBelowMaxTriesFile = new File(mTestRule.getCrashDir(),
-                "chromium-renderer_abc.dmp" + TEST_PID + ".try" + (MAX_TRIES_ALLOWED - 1));
+                "monyhar-renderer_abc.dmp" + TEST_PID + ".try" + (MAX_TRIES_ALLOWED - 1));
         mOneBelowMaxTriesFile.createNewFile();
         mOneBelowMaxTriesFile.setLastModified(mModificationTimestamp);
         mModificationTimestamp += 1000;
 
         mMaxTriesFile = new File(mTestRule.getCrashDir(),
-                "chromium-renderer_abc.dmp" + TEST_PID + ".try" + MAX_TRIES_ALLOWED);
+                "monyhar-renderer_abc.dmp" + TEST_PID + ".try" + MAX_TRIES_ALLOWED);
         mMaxTriesFile.createNewFile();
         mMaxTriesFile.setLastModified(mModificationTimestamp);
         mModificationTimestamp += 1000;
 
         mOneBelowMultiDigitMaxTriesFile = new File(mTestRule.getCrashDir(),
-                "chromium-renderer_abc.dmp" + TEST_PID + ".try"
+                "monyhar-renderer_abc.dmp" + TEST_PID + ".try"
                         + (MULTI_DIGIT_MAX_TRIES_ALLOWED - 1));
         mOneBelowMultiDigitMaxTriesFile.createNewFile();
         mOneBelowMultiDigitMaxTriesFile.setLastModified(mModificationTimestamp);
         mModificationTimestamp += 1000;
 
         mMultiDigitMaxTriesFile = new File(mTestRule.getCrashDir(),
-                "chromium-renderer_abc.dmp" + TEST_PID + ".try" + MULTI_DIGIT_MAX_TRIES_ALLOWED);
+                "monyhar-renderer_abc.dmp" + TEST_PID + ".try" + MULTI_DIGIT_MAX_TRIES_ALLOWED);
         mMultiDigitMaxTriesFile.createNewFile();
         mMultiDigitMaxTriesFile.setLastModified(mModificationTimestamp);
         mModificationTimestamp += 1000;
@@ -146,7 +146,7 @@ public class CrashFileManagerTest {
         mModificationTimestamp += 1000;
 
         mUpFile2 =
-                new File(mTestRule.getCrashDir(), "chromium-renderer_abcd.up" + TEST_PID + ".try0");
+                new File(mTestRule.getCrashDir(), "monyhar-renderer_abcd.up" + TEST_PID + ".try0");
         mUpFile2.createNewFile();
         mUpFile2.setLastModified(mModificationTimestamp);
         mModificationTimestamp += 1000;
@@ -538,7 +538,7 @@ public class CrashFileManagerTest {
         CrashFileManager.markUploadSuccess(mDmpFile2);
         Assert.assertFalse(mDmpFile2.exists());
         Assert.assertTrue(
-                new File(mTestRule.getCrashDir(), "chromium-renderer_abc.up" + TEST_PID + ".try1")
+                new File(mTestRule.getCrashDir(), "monyhar-renderer_abc.up" + TEST_PID + ".try1")
                         .exists());
     }
 
@@ -565,7 +565,7 @@ public class CrashFileManagerTest {
         CrashFileManager.markUploadSkipped(mDmpFile2);
         Assert.assertFalse(mDmpFile2.exists());
         Assert.assertTrue(new File(
-                mTestRule.getCrashDir(), "chromium-renderer_abc.skipped" + TEST_PID + ".try1")
+                mTestRule.getCrashDir(), "monyhar-renderer_abc.skipped" + TEST_PID + ".try1")
                                   .exists());
     }
 
@@ -776,9 +776,9 @@ public class CrashFileManagerTest {
         // Create some simulated old files.
         long oldTimestamp = mInitialModificationTimestamp
                 - TimeUnit.MILLISECONDS.convert(31, TimeUnit.DAYS);
-        File old1 = new File(mTestRule.getCrashDir(), "chromium-renderer-minidump-cooo10ff.dmp");
-        File old2 = new File(mTestRule.getCrashDir(), "chromium-renderer-minidump-cooo10ff.up0");
-        File old3 = new File(mTestRule.getCrashDir(), "chromium-renderer-minidump-cooo10ff.logcat");
+        File old1 = new File(mTestRule.getCrashDir(), "monyhar-renderer-minidump-cooo10ff.dmp");
+        File old2 = new File(mTestRule.getCrashDir(), "monyhar-renderer-minidump-cooo10ff.up0");
+        File old3 = new File(mTestRule.getCrashDir(), "monyhar-renderer-minidump-cooo10ff.logcat");
         old1.setLastModified(oldTimestamp);
         old2.setLastModified(oldTimestamp - 1);
         old3.setLastModified(oldTimestamp - 2);
@@ -788,7 +788,7 @@ public class CrashFileManagerTest {
         File[] recentFiles = new File[CrashFileManager.MAX_CRASH_REPORTS_TO_KEEP];
         for (int i = 0; i < CrashFileManager.MAX_CRASH_REPORTS_TO_KEEP; ++i) {
             File recentMinidump = new File(
-                    mTestRule.getCrashDir(), "chromium-renderer-minidump-deadbeef" + i + ".dmp");
+                    mTestRule.getCrashDir(), "monyhar-renderer-minidump-deadbeef" + i + ".dmp");
             recentMinidump.createNewFile();
             recentMinidump.setLastModified(mModificationTimestamp);
             mModificationTimestamp += 1000;
@@ -797,11 +797,11 @@ public class CrashFileManagerTest {
 
         // Create some additional successful uploads.
         File success1 =
-                new File(mTestRule.getCrashDir(), "chromium-renderer-minidump-cafebebe1.up.try0");
+                new File(mTestRule.getCrashDir(), "monyhar-renderer-minidump-cafebebe1.up.try0");
         File success2 = new File(mTestRule.getCrashDir(),
-                "chromium-renderer-minidump-cafebebe2.up" + TEST_PID + ".try1");
+                "monyhar-renderer-minidump-cafebebe2.up" + TEST_PID + ".try1");
         File success3 = new File(mTestRule.getCrashDir(),
-                "chromium-renderer-minidump-cafebebe3.up" + TEST_PID + ".try2");
+                "monyhar-renderer-minidump-cafebebe3.up" + TEST_PID + ".try2");
         success1.createNewFile();
         success2.createNewFile();
         success3.createNewFile();
@@ -813,8 +813,8 @@ public class CrashFileManagerTest {
         mModificationTimestamp += 1000;
 
         // Create some additional temp files.
-        File temp1 = new File(mTestRule.getCrashDir(), "chromium-renderer-minidump-oooff1ce1.tmp");
-        File temp2 = new File(mTestRule.getCrashDir(), "chromium-renderer-minidump-oooff1ce2.tmp");
+        File temp1 = new File(mTestRule.getCrashDir(), "monyhar-renderer-minidump-oooff1ce1.tmp");
+        File temp2 = new File(mTestRule.getCrashDir(), "monyhar-renderer-minidump-oooff1ce2.tmp");
         temp1.createNewFile();
         temp2.createNewFile();
         temp1.setLastModified(mModificationTimestamp);
@@ -865,6 +865,6 @@ public class CrashFileManagerTest {
         Assert.assertNull(
                 CrashFileManager.getCrashLocalIdFromFileName("pkg-process-1234,5678.dmp-1.try001"));
         Assert.assertNull(
-                CrashFileManager.getCrashLocalIdFromFileName("chromium_renderer.dmp.try001"));
+                CrashFileManager.getCrashLocalIdFromFileName("monyhar_renderer.dmp.try001"));
     }
 }

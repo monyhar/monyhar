@@ -915,7 +915,7 @@ bool AVIFImageDecoder::RenderImage(const avifImage* image, ImageFrame* buffer) {
     // half-float and only has support for 4:4:4 and 12-bit by down-shifted
     // copies.
     //
-    // https://bugs.chromium.org/p/libyuv/issues/detail?id=845
+    // https://bugs.monyhar.org/p/libyuv/issues/detail?id=845
     media::PaintCanvasVideoRenderer::ConvertVideoFrameToRGBPixels(
         frame.get(), rgba_8888, frame->visible_rect().width() * 4,
         premultiply_alpha);

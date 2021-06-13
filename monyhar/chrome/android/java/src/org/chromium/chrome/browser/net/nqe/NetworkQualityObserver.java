@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.net.nqe;
+package org.monyhar.chrome.browser.net.nqe;
 
-import org.chromium.net.EffectiveConnectionType;
+import org.monyhar.net.EffectiveConnectionType;
 
 /**
  * Interface for observing changes to the current Network Quality Estimate.

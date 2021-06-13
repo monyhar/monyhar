@@ -55,7 +55,7 @@ def RunTestOnFuchsiaDevice(script_cmd):
       target.Start()
       fuchsia_device_address, fuchsia_ssh_port = target._GetEndpoint()
       script_cmd.extend(
-          ['--chromium-output-directory', runner_script_args.out_dir])
+          ['--monyhar-output-directory', runner_script_args.out_dir])
       script_cmd.extend(['--fuchsia-device-address', fuchsia_device_address])
       script_cmd.extend(['--fuchsia-ssh-config', target._GetSshConfigPath()])
       if fuchsia_ssh_port:

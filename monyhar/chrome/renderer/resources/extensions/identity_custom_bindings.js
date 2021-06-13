@@ -14,6 +14,6 @@ apiBridge.registerCustomHook(function(binding, id, contextType) {
       path = String(path);
     if (path[0] !== '/')
       path = '/' + path;
-    return 'https://' + id + '.chromiumapp.org' + path;
+    return 'https://' + id + '.monyharapp.org' + path;
   });
 });

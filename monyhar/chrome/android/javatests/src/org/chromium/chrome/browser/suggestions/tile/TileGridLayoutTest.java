@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.suggestions.tile;
+package org.monyhar.chrome.browser.suggestions.tile;
 
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotNull;
@@ -11,9 +11,9 @@ import static junit.framework.Assert.assertTrue;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.greaterThan;
 
-import static org.chromium.chrome.browser.ntp.NewTabPageLayout.getSiteSectionViewHolder;
-import static org.chromium.chrome.browser.ntp.NewTabPageLayout.inflateSiteSection;
-import static org.chromium.chrome.test.util.browser.suggestions.mostvisited.FakeMostVisitedSites.createSiteSuggestion;
+import static org.monyhar.chrome.browser.ntp.NewTabPageLayout.getSiteSectionViewHolder;
+import static org.monyhar.chrome.browser.ntp.NewTabPageLayout.inflateSiteSection;
+import static org.monyhar.chrome.test.util.browser.suggestions.mostvisited.FakeMostVisitedSites.createSiteSuggestion;
 
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
@@ -31,43 +31,43 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.test.params.ParameterAnnotations;
-import org.chromium.base.test.params.ParameterizedRunner;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.night_mode.ChromeNightModeTestUtils;
-import org.chromium.chrome.browser.ntp.NewTabPage;
-import org.chromium.chrome.browser.offlinepages.OfflinePageItem;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.suggestions.SiteSuggestion;
-import org.chromium.chrome.browser.suggestions.SuggestionsConfig;
-import org.chromium.chrome.browser.suggestions.SuggestionsUiDelegate;
-import org.chromium.chrome.browser.suggestions.SuggestionsUiDelegateImpl;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.test.ChromeJUnit4RunnerDelegate;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.ChromeRenderTestRule;
-import org.chromium.chrome.test.util.NewTabPageTestUtils;
-import org.chromium.chrome.test.util.browser.Features.DisableFeatures;
-import org.chromium.chrome.test.util.browser.offlinepages.FakeOfflinePageBridge;
-import org.chromium.chrome.test.util.browser.suggestions.SuggestionsDependenciesRule;
-import org.chromium.chrome.test.util.browser.suggestions.mostvisited.FakeMostVisitedSites;
-import org.chromium.components.browser_ui.widget.displaystyle.UiConfig;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.net.test.EmbeddedTestServerRule;
-import org.chromium.ui.base.ViewUtils;
-import org.chromium.ui.test.util.NightModeTestUtils;
-import org.chromium.url.GURL;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.test.params.ParameterAnnotations;
+import org.monyhar.base.test.params.ParameterizedRunner;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.night_mode.ChromeNightModeTestUtils;
+import org.monyhar.chrome.browser.ntp.NewTabPage;
+import org.monyhar.chrome.browser.offlinepages.OfflinePageItem;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.suggestions.SiteSuggestion;
+import org.monyhar.chrome.browser.suggestions.SuggestionsConfig;
+import org.monyhar.chrome.browser.suggestions.SuggestionsUiDelegate;
+import org.monyhar.chrome.browser.suggestions.SuggestionsUiDelegateImpl;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.test.ChromeJUnit4RunnerDelegate;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.ChromeRenderTestRule;
+import org.monyhar.chrome.test.util.NewTabPageTestUtils;
+import org.monyhar.chrome.test.util.browser.Features.DisableFeatures;
+import org.monyhar.chrome.test.util.browser.offlinepages.FakeOfflinePageBridge;
+import org.monyhar.chrome.test.util.browser.suggestions.SuggestionsDependenciesRule;
+import org.monyhar.chrome.test.util.browser.suggestions.mostvisited.FakeMostVisitedSites;
+import org.monyhar.components.browser_ui.widget.displaystyle.UiConfig;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.net.test.EmbeddedTestServerRule;
+import org.monyhar.ui.base.ViewUtils;
+import org.monyhar.ui.test.util.NightModeTestUtils;
+import org.monyhar.url.GURL;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -234,7 +234,7 @@ public class TileGridLayoutTest {
         assertTrue(mTab.getNativePage() instanceof NewTabPage);
         NewTabPage ntp = (NewTabPage) mTab.getNativePage();
 
-        org.chromium.chrome.test.util.ViewUtils.waitForView(
+        org.monyhar.chrome.test.util.ViewUtils.waitForView(
                 (ViewGroup) ntp.getView(), ViewMatchers.withId(R.id.tile_grid_layout));
 
         return ntp;

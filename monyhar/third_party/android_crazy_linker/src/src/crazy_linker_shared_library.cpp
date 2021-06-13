@@ -189,7 +189,7 @@ class SharedLibraryResolver : public ElfRelocations::SymbolResolver {
       // gcc compiler implements isnanf as a builtin, so the symbol
       // isnanf never need be resolved in gcc builds.
       //
-      // http://code.google.com/p/chromium/issues/detail?id=376828
+      // http://code.google.com/p/monyhar/issues/detail?id=376828
       if (!sym.IsValid() && !strcmp(symbol_name, "isnanf") &&
           !strcmp(lib->GetName(), "libm.so")) {
         sym = lib->LookupSymbol("__isnanf");

@@ -6,7 +6,7 @@
     "matches": [
       "*://example.com/*",
       "http://*.co.uk/*",
-      "http://build.chromium.org/*"
+      "http://build.monyhar.org/*"
     ]
   }
 }

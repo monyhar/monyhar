@@ -21,12 +21,12 @@ js_library("cr_radio_button") {
 js_library("cr_card_radio_button") {
   deps = [
     ":cr_radio_button_behavior",
-    "//third_party/polymer/v1_0/components-chromium/iron-icon:iron-icon-extracted",
+    "//third_party/polymer/v1_0/components-monyhar/iron-icon:iron-icon-extracted",
   ]
 }
 
 js_library("cr_radio_button_behavior") {
-  deps = [ "//third_party/polymer/v1_0/components-chromium/paper-behaviors:paper-ripple-behavior-extracted" ]
+  deps = [ "//third_party/polymer/v1_0/components-monyhar/paper-behaviors:paper-ripple-behavior-extracted" ]
 }
 
 # Targets for auto-generating and typechecking Polymer 3 JS modules
@@ -78,7 +78,7 @@ js_library("cr_radio_button.m") {
   sources = [ "$root_gen_dir/ui/webui/resources/cr_elements/cr_radio_button/cr_radio_button.m.js" ]
   deps = [
     ":cr_radio_button_behavior.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   extra_deps = [ ":cr_radio_button_module" ]
 }
@@ -87,14 +87,14 @@ js_library("cr_card_radio_button.m") {
   sources = [ "$root_gen_dir/ui/webui/resources/cr_elements/cr_radio_button/cr_card_radio_button.m.js" ]
   deps = [
     ":cr_radio_button_behavior.m",
-    "//third_party/polymer/v3_0/components-chromium/iron-icon",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-icon",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   extra_deps = [ ":cr_card_radio_button_module" ]
 }
 
 js_library("cr_radio_button_behavior.m") {
   sources = [ "$root_gen_dir/ui/webui/resources/cr_elements/cr_radio_button/cr_radio_button_behavior.m.js" ]
-  deps = [ "//third_party/polymer/v3_0/components-chromium/paper-behaviors:paper-ripple-behavior" ]
+  deps = [ "//third_party/polymer/v3_0/components-monyhar/paper-behaviors:paper-ripple-behavior" ]
   extra_deps = [ ":modulize" ]
 }

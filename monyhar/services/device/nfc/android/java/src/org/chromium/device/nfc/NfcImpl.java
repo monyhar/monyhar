@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.device.nfc;
+package org.monyhar.device.nfc;
 
 import android.Manifest;
 import android.app.Activity;
@@ -17,20 +17,20 @@ import android.nfc.TagLostException;
 import android.os.Process;
 import android.os.Vibrator;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.device.mojom.NdefError;
-import org.chromium.device.mojom.NdefErrorType;
-import org.chromium.device.mojom.NdefMessage;
-import org.chromium.device.mojom.NdefRecord;
-import org.chromium.device.mojom.NdefWriteOptions;
-import org.chromium.device.mojom.Nfc;
-import org.chromium.device.mojom.NfcClient;
-import org.chromium.mojo.bindings.Callbacks;
-import org.chromium.mojo.bindings.InterfaceRequest;
-import org.chromium.mojo.bindings.Router;
-import org.chromium.mojo.system.MojoException;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.device.mojom.NdefError;
+import org.monyhar.device.mojom.NdefErrorType;
+import org.monyhar.device.mojom.NdefMessage;
+import org.monyhar.device.mojom.NdefRecord;
+import org.monyhar.device.mojom.NdefWriteOptions;
+import org.monyhar.device.mojom.Nfc;
+import org.monyhar.device.mojom.NfcClient;
+import org.monyhar.mojo.bindings.Callbacks;
+import org.monyhar.mojo.bindings.InterfaceRequest;
+import org.monyhar.mojo.bindings.Router;
+import org.monyhar.mojo.system.MojoException;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;

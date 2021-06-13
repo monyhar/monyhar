@@ -463,19 +463,19 @@ if (is_android) {
   generate_jni("base_unittests_jni_headers") {
     testonly = true
     sources = [
-      "android/java/src/org/chromium/base/ContentUriTestUtils.java",
-      "android/java/src/org/chromium/base/JavaHandlerThreadHelpers.java",
+      "android/java/src/org/monyhar/base/ContentUriTestUtils.java",
+      "android/java/src/org/monyhar/base/JavaHandlerThreadHelpers.java",
     ]
   }
 
   generate_jni("test_support_jni_headers") {
     testonly = true
     sources = [
-      "android/java/src/org/chromium/base/MainReturnCodeResult.java",
-      "android/java/src/org/chromium/base/MultiprocessTestClientLauncher.java",
-      "android/javatests/src/org/chromium/base/test/ReachedCodeProfiler.java",
-      "android/javatests/src/org/chromium/base/test/task/ThreadPoolTestHelpers.java",
-      "android/javatests/src/org/chromium/base/test/util/UrlUtils.java",
+      "android/java/src/org/monyhar/base/MainReturnCodeResult.java",
+      "android/java/src/org/monyhar/base/MultiprocessTestClientLauncher.java",
+      "android/javatests/src/org/monyhar/base/test/ReachedCodeProfiler.java",
+      "android/javatests/src/org/monyhar/base/test/task/ThreadPoolTestHelpers.java",
+      "android/javatests/src/org/monyhar/base/test/util/UrlUtils.java",
     ]
   }
 
@@ -490,21 +490,21 @@ if (is_android) {
 
     srcjar_deps = [ ":test_support_java_aidl" ]
     sources = [
-      "android/java/src/org/chromium/base/GarbageCollectionTestUtils.java",
-      "android/java/src/org/chromium/base/MainReturnCodeResult.java",
-      "android/java/src/org/chromium/base/MultiprocessTestClientLauncher.java",
-      "android/java/src/org/chromium/base/MultiprocessTestClientService.java",
-      "android/java/src/org/chromium/base/MultiprocessTestClientService0.java",
-      "android/java/src/org/chromium/base/MultiprocessTestClientService1.java",
-      "android/java/src/org/chromium/base/MultiprocessTestClientService2.java",
-      "android/java/src/org/chromium/base/MultiprocessTestClientService3.java",
-      "android/java/src/org/chromium/base/MultiprocessTestClientService4.java",
-      "android/java/src/org/chromium/base/MultiprocessTestClientService5.java",
-      "android/java/src/org/chromium/base/MultiprocessTestClientService6.java",
-      "android/java/src/org/chromium/base/MultiprocessTestClientService7.java",
-      "android/java/src/org/chromium/base/MultiprocessTestClientService8.java",
-      "android/java/src/org/chromium/base/MultiprocessTestClientService9.java",
-      "android/java/src/org/chromium/base/MultiprocessTestClientServiceDelegate.java",
+      "android/java/src/org/monyhar/base/GarbageCollectionTestUtils.java",
+      "android/java/src/org/monyhar/base/MainReturnCodeResult.java",
+      "android/java/src/org/monyhar/base/MultiprocessTestClientLauncher.java",
+      "android/java/src/org/monyhar/base/MultiprocessTestClientService.java",
+      "android/java/src/org/monyhar/base/MultiprocessTestClientService0.java",
+      "android/java/src/org/monyhar/base/MultiprocessTestClientService1.java",
+      "android/java/src/org/monyhar/base/MultiprocessTestClientService2.java",
+      "android/java/src/org/monyhar/base/MultiprocessTestClientService3.java",
+      "android/java/src/org/monyhar/base/MultiprocessTestClientService4.java",
+      "android/java/src/org/monyhar/base/MultiprocessTestClientService5.java",
+      "android/java/src/org/monyhar/base/MultiprocessTestClientService6.java",
+      "android/java/src/org/monyhar/base/MultiprocessTestClientService7.java",
+      "android/java/src/org/monyhar/base/MultiprocessTestClientService8.java",
+      "android/java/src/org/monyhar/base/MultiprocessTestClientService9.java",
+      "android/java/src/org/monyhar/base/MultiprocessTestClientServiceDelegate.java",
     ]
   }
 
@@ -515,8 +515,8 @@ if (is_android) {
       "//base/android/java/src",
     ]
     sources = [
-      "android/java/src/org/chromium/base/ITestCallback.aidl",
-      "android/java/src/org/chromium/base/ITestController.aidl",
+      "android/java/src/org/monyhar/base/ITestCallback.aidl",
+      "android/java/src/org/monyhar/base/ITestController.aidl",
     ]
   }
 }

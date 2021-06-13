@@ -66,7 +66,7 @@ You can run any Telemetry benchmark with `--profiler=perf`, and it will:
 4.  Setup symlinks to work with the `--symfs` parameter
 
 You can also run "manual" tests with Telemetry, more information here:
-https://www.chromium.org/developers/telemetry/profiling#TOC-Manual-Profiling---Android
+https://www.monyhar.org/developers/telemetry/profiling#TOC-Manual-Profiling---Android
 
 The following steps describe building `perf`, which is no longer necessary if
 you use Telemetry.
@@ -108,7 +108,7 @@ If `content_shell` “stopped unexpectedly” use `adb logcat` to debug.
     adb logcat | grep libcontent_shell_content_view.so
 
 You should find a path that’s something like
-`/data/app-lib/org.chromium.content_shell-1/libcontent_shell_content_view.so`
+`/data/app-lib/org.monyhar.content_shell-1/libcontent_shell_content_view.so`
 
 1.  Make a symbols directory
     ```
@@ -119,9 +119,9 @@ You should find a path that’s something like
 
     ```
     # Use whatever path in app-lib you got above
-    mkdir -p symbols/data/app-lib/org.chromium.content_shell-1
+    mkdir -p symbols/data/app-lib/org.monyhar.content_shell-1
     ln -s `pwd`/src/out/Release/lib/libcontent_shell_content_view.so \
-        `pwd`/symbols/data/app-lib/org.chromium.content_shell-1
+        `pwd`/symbols/data/app-lib/org.monyhar.content_shell-1
     ```
 
 ## Install `perfhost_linux` locally (not needed for Telemetry)
@@ -151,7 +151,7 @@ Run the following:
     ./perfhost_linux report -g -i perf.data --symfs symbols/
     ```
 
-1.  If you don’t see chromium/webkit symbols, make sure that you built/pushed
+1.  If you don’t see monyhar/webkit symbols, make sure that you built/pushed
     Release, and that the symlink you created to the .so is valid!
 
 ## Add symbols for the kernel

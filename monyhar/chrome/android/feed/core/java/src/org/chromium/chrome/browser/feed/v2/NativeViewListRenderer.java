@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.v2;
+package org.monyhar.chrome.browser.feed.v2;
 
 import android.content.Context;
 import android.view.View;
@@ -14,10 +14,10 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.chrome.browser.xsurface.HybridListRenderer;
-import org.chromium.chrome.browser.xsurface.ListContentManager;
-import org.chromium.chrome.browser.xsurface.ListContentManagerObserver;
-import org.chromium.ui.base.ViewUtils;
+import org.monyhar.chrome.browser.xsurface.HybridListRenderer;
+import org.monyhar.chrome.browser.xsurface.ListContentManager;
+import org.monyhar.chrome.browser.xsurface.ListContentManagerObserver;
+import org.monyhar.ui.base.ViewUtils;
 
 /**
  * Implementation of {@link HybridListRenderer} for list consisting all native views.

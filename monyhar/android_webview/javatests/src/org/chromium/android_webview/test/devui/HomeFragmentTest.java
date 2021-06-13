@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test.devui;
+package org.monyhar.android_webview.test.devui;
 
 import static androidx.test.espresso.Espresso.onData;
 import static androidx.test.espresso.Espresso.onView;
@@ -22,8 +22,8 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.not;
 
-import static org.chromium.android_webview.test.devui.DeveloperUiTestUtils.getClipBoardTextOnUiThread;
-import static org.chromium.android_webview.test.devui.DeveloperUiTestUtils.withCount;
+import static org.monyhar.android_webview.test.devui.DeveloperUiTestUtils.getClipBoardTextOnUiThread;
+import static org.monyhar.android_webview.test.devui.DeveloperUiTestUtils.withCount;
 
 import android.app.Activity;
 import android.app.Instrumentation.ActivityResult;
@@ -44,13 +44,13 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.devui.MainActivity;
-import org.chromium.android_webview.devui.R;
-import org.chromium.android_webview.devui.WebViewPackageError;
-import org.chromium.android_webview.devui.util.WebViewPackageHelper;
-import org.chromium.android_webview.test.AwJUnit4ClassRunner;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.Feature;
+import org.monyhar.android_webview.devui.MainActivity;
+import org.monyhar.android_webview.devui.R;
+import org.monyhar.android_webview.devui.WebViewPackageError;
+import org.monyhar.android_webview.devui.util.WebViewPackageHelper;
+import org.monyhar.android_webview.test.AwJUnit4ClassRunner;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.Feature;
 
 import java.util.Locale;
 
@@ -62,7 +62,7 @@ import java.util.Locale;
 public class HomeFragmentTest {
     public static final PackageInfo FAKE_WEBVIEW_PACKAGE = new PackageInfo();
     static {
-        FAKE_WEBVIEW_PACKAGE.packageName = "org.chromium.fake_webview";
+        FAKE_WEBVIEW_PACKAGE.packageName = "org.monyhar.fake_webview";
         FAKE_WEBVIEW_PACKAGE.versionCode = 123456789;
         FAKE_WEBVIEW_PACKAGE.versionName = "999.888.777.666";
     }

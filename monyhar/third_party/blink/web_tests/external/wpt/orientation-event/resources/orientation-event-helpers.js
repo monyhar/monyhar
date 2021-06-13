@@ -9,7 +9,7 @@
 //
 //   --enable-blink-features=MojoJS,MojoJSTest
 async function loadChromiumResources() {
-  await import('/resources/chromium/generic_sensor_mocks.js');
+  await import('/resources/monyhar/generic_sensor_mocks.js');
 }
 
 async function initialize_generic_sensor_tests() {

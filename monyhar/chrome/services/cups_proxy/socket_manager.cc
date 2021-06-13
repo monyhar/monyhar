@@ -67,7 +67,7 @@ bool FinishedReadingResponse(const std::vector<uint8_t>& response_buffer) {
 
 // POD representation of an in-flight socket request.
 struct SocketRequest {
-  // Explicitly declared/defined defaults since [chromium-style] flagged this as
+  // Explicitly declared/defined defaults since [monyhar-style] flagged this as
   // a complex struct.
   SocketRequest();
   SocketRequest(SocketRequest&& other);

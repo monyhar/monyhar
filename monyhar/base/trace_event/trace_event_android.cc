@@ -82,7 +82,7 @@ void WriteEvent(char phase,
 // These functions support Android systrace.py when 'webview' category is
 // traced. With the new adb_profile_chrome, we may have two phases:
 // - before WebView is ready for combined tracing, we can use adb_profile_chrome
-//   to trace android categories other than 'webview' and chromium categories.
+//   to trace android categories other than 'webview' and monyhar categories.
 //   In this way we can avoid the conflict between StartATrace/StopATrace and
 //   the intents.
 // - TODO(wangxianzhu): after WebView is ready for combined tracing, remove

@@ -113,7 +113,7 @@ crashpad::ProcessID ProcessSnapshotFuchsia::ProcessID() const {
 
 crashpad::ProcessID ProcessSnapshotFuchsia::ParentProcessID() const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  NOTREACHED();  // TODO(scottmg): https://crashpad.chromium.org/bug/196
+  NOTREACHED();  // TODO(scottmg): https://crashpad.monyhar.org/bug/196
   return 0;
 }
 
@@ -124,14 +124,14 @@ void ProcessSnapshotFuchsia::SnapshotTime(timeval* snapshot_time) const {
 
 void ProcessSnapshotFuchsia::ProcessStartTime(timeval* start_time) const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  // TODO(scottmg): https://crashpad.chromium.org/bug/196. Nothing available.
+  // TODO(scottmg): https://crashpad.monyhar.org/bug/196. Nothing available.
   *start_time = timeval{};
 }
 
 void ProcessSnapshotFuchsia::ProcessCPUTimes(timeval* user_time,
                                              timeval* system_time) const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  // TODO(scottmg): https://crashpad.chromium.org/bug/196. Nothing available.
+  // TODO(scottmg): https://crashpad.monyhar.org/bug/196. Nothing available.
   *user_time = timeval{};
   *system_time = timeval{};
 }

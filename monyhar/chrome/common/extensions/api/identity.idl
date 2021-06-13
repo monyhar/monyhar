@@ -177,7 +177,7 @@ namespace identity {
     // providers by launching a web view and navigating it to the
     // first URL in the provider's auth flow. When the provider
     // redirects to a URL matching the pattern
-    // <code>https://&lt;app-id&gt;.chromiumapp.org/*</code>, the
+    // <code>https://&lt;app-id&gt;.monyharapp.org/*</code>, the
     // window will close, and the final redirect URL will be passed to
     // the <var>callback</var> function.
     //
@@ -195,7 +195,7 @@ namespace identity {
     // Generates a redirect URL to be used in |launchWebAuthFlow|.
     //
     // The generated URLs match the pattern
-    // <code>https://&lt;app-id&gt;.chromiumapp.org/*</code>.
+    // <code>https://&lt;app-id&gt;.monyharapp.org/*</code>.
     //
     // |path| : The path appended to the end of the generated URL.
     [nocompile] static DOMString getRedirectURL(optional DOMString path);

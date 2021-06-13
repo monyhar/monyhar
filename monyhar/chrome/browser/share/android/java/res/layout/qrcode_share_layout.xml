@@ -32,7 +32,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <org.chromium.ui.widget.ChromeImageView
+        <org.monyhar.ui.widget.ChromeImageView
             android:id="@+id/qrcode"
             android:layout_width="228dp"
             android:layout_height="228dp"
@@ -52,7 +52,7 @@
             android:visibility="visible"/>
     </FrameLayout>
 
-    <org.chromium.ui.widget.ButtonCompat
+    <org.monyhar.ui.widget.ButtonCompat
         android:id="@+id/download"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
         android:enabled="false"
         style="@style/TextButton"/>
 
-    <org.chromium.ui.widget.ButtonCompat
+    <org.monyhar.ui.widget.ButtonCompat
         android:id="@+id/settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

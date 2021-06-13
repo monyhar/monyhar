@@ -129,7 +129,7 @@ namespace base {
 // constexpr-compatible TaskTraits construction.
 struct BASE_EXPORT TaskTraitsExtensionStorage {
   // Size in bytes.
-  // Keep in sync with org.chromium.base.task.TaskTraits.EXTENSION_STORAGE_SIZE
+  // Keep in sync with org.monyhar.base.task.TaskTraits.EXTENSION_STORAGE_SIZE
   static constexpr size_t kStorageSize = 8;
 
   inline constexpr TaskTraitsExtensionStorage();
@@ -148,13 +148,13 @@ struct BASE_EXPORT TaskTraitsExtensionStorage {
   inline bool operator==(const TaskTraitsExtensionStorage& other) const;
 
   enum ExtensionId : uint8_t {
-    // Keep in sync with org.chromium.base.task.TaskTraits.INVALID_EXTENSION_ID
+    // Keep in sync with org.monyhar.base.task.TaskTraits.INVALID_EXTENSION_ID
     kInvalidExtensionId = 0,
     // The embedder is responsible for assigning the remaining values uniquely.
     kFirstEmbedderExtensionId = 1,
     // Maximum number of extension types is artificially limited to support
     // super efficient TaskExecutor lookup in post_task.cc.
-    // Keep in sync with org.chromium.base.TaskTraits.MAX_EXTENSION_ID
+    // Keep in sync with org.monyhar.base.TaskTraits.MAX_EXTENSION_ID
     kMaxExtensionId = 4
   };
 
@@ -166,7 +166,7 @@ struct BASE_EXPORT TaskTraitsExtensionStorage {
 };
 
 // TODO(https://crbug.com/874482): These constructors need to be "inline" but
-// defined outside the class above, because the chromium-style clang plugin
+// defined outside the class above, because the monyhar-style clang plugin
 // doesn't exempt constexpr constructors at the moment.
 inline constexpr TaskTraitsExtensionStorage::TaskTraitsExtensionStorage()
     : extension_id(kInvalidExtensionId), data{} {}

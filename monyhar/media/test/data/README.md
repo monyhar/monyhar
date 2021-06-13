@@ -677,7 +677,7 @@ video_decode_accelerator_tests. This includes the video codec, resolution and
 md5 checksums of individual video frames when converted to the I420 format.
 
 #### test-25fps.vp8
-ffmpeg git-2012-07-19-a8d8e86, libvpx ToT 7/19, chromium r147247,
+ffmpeg git-2012-07-19-a8d8e86, libvpx ToT 7/19, monyhar r147247,
 mkvextract v5.0.1
 ```
 ffmpeg -i test-25fps.h264 -vcodec libvpx -an test-25fps.webm && \
@@ -773,7 +773,7 @@ ffmpeg -i vp90_2_17_show_existing_frame.vp9 -vcodec copy -an -f ivf \
 
 #### bear.h264
 Using ffmpeg version 0.8.6-4:0.8.6-0ubuntu0.12.04.1, generated with
-bear.mp4 (https://chromiumcodereview.appspot.com/10805089):
+bear.mp4 (https://monyharcodereview.appspot.com/10805089):
 ```
 ffmpeg -i bear.mp4 -vcodec copy -vbsf h264_mp4toannexb -an bear.h264
 ```
@@ -782,7 +782,7 @@ ffmpeg -i bear.mp4 -vcodec copy -vbsf h264_mp4toannexb -an bear.h264
 
 #### npot-video.h264
 Using ffmpeg version 0.8.6-4:0.8.6-0ubuntu0.12.04.1, generated with
-npot-video.mp4 (https://codereview.chromium.org/8342021):
+npot-video.mp4 (https://codereview.monyhar.org/8342021):
 ```
 ffmpeg -i npot-video.mp4 -vcodec copy -vbsf h264_mp4toannexb -an npot-video.h264
 ```
@@ -791,7 +791,7 @@ ffmpeg -i npot-video.mp4 -vcodec copy -vbsf h264_mp4toannexb -an npot-video.h264
 
 #### red-green.h264
 Using ffmpeg version 0.8.6-4:0.8.6-0ubuntu0.12.04.1, generated with
-red-green.mp4 (https://codereview.chromium.org/8342021):
+red-green.mp4 (https://codereview.monyhar.org/8342021):
 ```
 ffmpeg -i red-green.mp4 -vcodec copy -vbsf h264_mp4toannexb -an red-green.h264
 ```
@@ -813,7 +813,7 @@ ffprobe -show_frames resolution_change_500frames.vp8
 #### switch_1080p_720p_240frames
 #### switch_1080p_720p_240frames.h264
 Extract 240 frames using ffmpeg from
-http://commondatastorage.googleapis.com/chromiumos-test-assets-public/MSE/switch_1080p_720p.mp4.
+http://commondatastorage.googleapis.com/monyharos-test-assets-public/MSE/switch_1080p_720p.mp4.
 
 The frame sizes change between 1080p and 720p every 24 frames.
 
@@ -1221,4 +1221,4 @@ https://people.xiph.org/~greg/opus_testvectors/
 * opus-trimming-test.webm
 
 [libaom test vectors]: https://aomedia.googlesource.com/aom/+/master/test/test_vectors.cc
-[libaom LICENSE]: https://source.chromium.org/chromium/chromium/src/+/main:media/test/data/licenses/AOM-LICENSE
+[libaom LICENSE]: https://source.monyhar.org/monyhar/monyhar/src/+/main:media/test/data/licenses/AOM-LICENSE

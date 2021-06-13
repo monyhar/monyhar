@@ -67,7 +67,7 @@ class ProfileObserver;
 
 // Instead of adding more members to Profile, consider creating a
 // KeyedService. See
-// http://dev.chromium.org/developers/design-documents/profile-architecture
+// http://dev.monyhar.org/developers/design-documents/profile-architecture
 class Profile : public content::BrowserContext {
  public:
   enum CreateStatus {

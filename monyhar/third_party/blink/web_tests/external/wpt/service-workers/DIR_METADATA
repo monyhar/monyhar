@@ -1,7 +1,7 @@
 monorail {
   component: "Blink>ServiceWorker"
 }
-team_email: "worker-dev@chromium.org"
+team_email: "worker-dev@monyhar.org"
 wpt {
   notify: YES
 }

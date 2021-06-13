@@ -130,11 +130,11 @@ NOT_USER_TRIGGERED_EXPECTED_XML = (
 BASIC_SUFFIX_EXPECTED_XML = (
     '<actions>\n\n'
     '<action name="action1">\n'
-    '  <owner>name1@chromium.org</owner>\n'
+    '  <owner>name1@monyhar.org</owner>\n'
     '  <description>Description.</description>\n'
     '</action>\n\n'
     '<action name="action1_suffix1">\n'
-    '  <owner>name1@chromium.org</owner>\n'
+    '  <owner>name1@monyhar.org</owner>\n'
     '  <description>Description. Suffix Description 1.</description>\n'
     '</action>\n\n'
     '</actions>\n'
@@ -143,25 +143,25 @@ BASIC_SUFFIX_EXPECTED_XML = (
 MULTI_ACTION_MULTI_SUFFIX_CHAIN = (
     '<actions>\n\n'
     '<action name="action1">\n'
-    '  <owner>name1@chromium.org</owner>\n'
+    '  <owner>name1@monyhar.org</owner>\n'
     '  <description>Description.</description>\n'
     '</action>\n\n'
     '<action name="action1_suffix1">\n'
-    '  <owner>name1@chromium.org</owner>\n'
+    '  <owner>name1@monyhar.org</owner>\n'
     '  <description>Description. Suffix Description 1.</description>\n'
     '</action>\n\n'
     '<action name="action1_suffix2">\n'
-    '  <owner>name1@chromium.org</owner>\n'
+    '  <owner>name1@monyhar.org</owner>\n'
     '  <description>Description. Suffix Description 2.</description>\n'
     '</action>\n\n'
     '<action name="action1_suffix2_suffix3">\n'
-    '  <owner>name1@chromium.org</owner>\n'
+    '  <owner>name1@monyhar.org</owner>\n'
     '  <description>\n'
     '    Description. Suffix Description 2. Suffix Description 3.\n'
     '  </description>\n'
     '</action>\n\n'
     '<action name="action1_suffix2_suffix3_suffix4">\n'
-    '  <owner>name1@chromium.org</owner>\n'
+    '  <owner>name1@monyhar.org</owner>\n'
     '  <description>\n'
     '    Description. Suffix Description 2. Suffix Description 3. '
     'Suffix Description\n'
@@ -169,15 +169,15 @@ MULTI_ACTION_MULTI_SUFFIX_CHAIN = (
     '  </description>\n'
     '</action>\n\n'
     '<action name="action2">\n'
-    '  <owner>name2@chromium.org</owner>\n'
+    '  <owner>name2@monyhar.org</owner>\n'
     '  <description>Description.</description>\n'
     '</action>\n\n'
     '<action name="action2_suffix1">\n'
-    '  <owner>name2@chromium.org</owner>\n'
+    '  <owner>name2@monyhar.org</owner>\n'
     '  <description>Description. Suffix Description 1.</description>\n'
     '</action>\n\n'
     '<action name="action2_suffix2">\n'
-    '  <owner>name2@chromium.org</owner>\n'
+    '  <owner>name2@monyhar.org</owner>\n'
     '  <description>Description. Suffix Description 2.</description>\n'
     '</action>\n\n'
     '</actions>\n'
@@ -186,11 +186,11 @@ MULTI_ACTION_MULTI_SUFFIX_CHAIN = (
 SUFFIX_CUSTOM_SEPARATOR = (
     '<actions>\n\n'
     '<action name="action1">\n'
-    '  <owner>name1@chromium.org</owner>\n'
+    '  <owner>name1@monyhar.org</owner>\n'
     '  <description>Description.</description>\n'
     '</action>\n\n'
     '<action name="action1.suffix1">\n'
-    '  <owner>name1@chromium.org</owner>\n'
+    '  <owner>name1@monyhar.org</owner>\n'
     '  <description>Description. Suffix Description 1.</description>\n'
     '</action>\n\n'
     '</actions>\n'
@@ -199,11 +199,11 @@ SUFFIX_CUSTOM_SEPARATOR = (
 SUFFIX_OREDERING_PREFIX = (
     '<actions>\n\n'
     '<action name="action1.prefix1_remainder">\n'
-    '  <owner>name1@chromium.org</owner>\n'
+    '  <owner>name1@monyhar.org</owner>\n'
     '  <description>Description. Prefix Description 1.</description>\n'
     '</action>\n\n'
     '<action name="action1.remainder">\n'
-    '  <owner>name1@chromium.org</owner>\n'
+    '  <owner>name1@monyhar.org</owner>\n'
     '  <description>Description.</description>\n'
     '</action>\n\n'
     '</actions>\n'
@@ -212,23 +212,23 @@ SUFFIX_OREDERING_PREFIX = (
 AFFECTED_ACTION_WITH_SUFFIX_TAG = (
     '<actions>\n\n'
     '<action name="action1">\n'
-    '  <owner>name1@chromium.org</owner>\n'
+    '  <owner>name1@monyhar.org</owner>\n'
     '  <description>Description.</description>\n'
     '</action>\n\n'
     '<action name="action1_suffix1">\n'
-    '  <owner>name1@chromium.org</owner>\n'
+    '  <owner>name1@monyhar.org</owner>\n'
     '  <description>Description. Suffix Description 1.</description>\n'
     '</action>\n\n'
     '<action name="action1_suffix2">\n'
-    '  <owner>name1@chromium.org</owner>\n'
+    '  <owner>name1@monyhar.org</owner>\n'
     '  <description>Description. Suffix Description 2.</description>\n'
     '</action>\n\n'
     '<action name="action2">\n'
-    '  <owner>name2@chromium.org</owner>\n'
+    '  <owner>name2@monyhar.org</owner>\n'
     '  <description>Description.</description>\n'
     '</action>\n\n'
     '<action name="action2_suffix2">\n'
-    '  <owner>name2@chromium.org</owner>\n'
+    '  <owner>name2@monyhar.org</owner>\n'
     '  <description>Description. Suffix Description 2.</description>\n'
     '</action>\n\n'
     '</actions>\n'
@@ -358,7 +358,7 @@ class ActionXmlTest(unittest.TestCase):
     original_xml = """
     <actions>
     <action name="action1">
-      <owner>name1@chromium.org</owner>
+      <owner>name1@monyhar.org</owner>
       <description>Description.</description>
     </action>
     <action-suffix separator="_">
@@ -375,11 +375,11 @@ class ActionXmlTest(unittest.TestCase):
     original_xml = """
     <actions>
     <action name="action1">
-      <owner>name1@chromium.org</owner>
+      <owner>name1@monyhar.org</owner>
       <description>Description.</description>
     </action>
     <action name="action2">
-      <owner>name1@chromium.org</owner>
+      <owner>name1@monyhar.org</owner>
       <description>Description.</description>
     </action>
     <action-suffix separator="_">
@@ -394,12 +394,12 @@ class ActionXmlTest(unittest.TestCase):
     expected_pretty_xml = """<actions>
 
 <action name="action1">
-  <owner>name1@chromium.org</owner>
+  <owner>name1@monyhar.org</owner>
   <description>Description.</description>
 </action>
 
 <action name="action2">
-  <owner>name1@chromium.org</owner>
+  <owner>name1@monyhar.org</owner>
   <description>Description.</description>
 </action>
 
@@ -418,11 +418,11 @@ class ActionXmlTest(unittest.TestCase):
     original_xml = """
     <actions>
     <action name="action1">
-      <owner>name1@chromium.org</owner>
+      <owner>name1@monyhar.org</owner>
       <description>Description.</description>
     </action>
       <action name="action2">
-      <owner>name2@chromium.org</owner>
+      <owner>name2@monyhar.org</owner>
       <description>Description.</description>
     </action>
     <action-suffix separator="_">
@@ -448,7 +448,7 @@ class ActionXmlTest(unittest.TestCase):
     original_xml = """
     <actions>
     <action name="action1">
-      <owner>name1@chromium.org</owner>
+      <owner>name1@monyhar.org</owner>
       <description>Description.</description>
     </action>
     <action-suffix separator=".">
@@ -464,7 +464,7 @@ class ActionXmlTest(unittest.TestCase):
     original_xml = """
     <actions>
     <action name="action1.remainder">
-      <owner>name1@chromium.org</owner>
+      <owner>name1@monyhar.org</owner>
       <description>Description.</description>
     </action>
     <action-suffix ordering="prefix" separator="_">
@@ -480,11 +480,11 @@ class ActionXmlTest(unittest.TestCase):
     original_xml = """
     <actions>
     <action name="action1">
-      <owner>name1@chromium.org</owner>
+      <owner>name1@monyhar.org</owner>
       <description>Description.</description>
     </action>
       <action name="action2">
-      <owner>name2@chromium.org</owner>
+      <owner>name2@monyhar.org</owner>
       <description>Description.</description>
     </action>
     <action-suffix separator="_">
@@ -504,7 +504,7 @@ class ActionXmlTest(unittest.TestCase):
     original_xml = """
     <actions>
     <action name="action1">
-      <owner>name1@chromium.org</owner>
+      <owner>name1@monyhar.org</owner>
       <description>Description.</description>
     </action>
     <action-suffix>
@@ -521,7 +521,7 @@ class ActionXmlTest(unittest.TestCase):
     original_xml = """
     <actions>
     <action name="action1">
-      <owner>name1@chromium.org</owner>
+      <owner>name1@monyhar.org</owner>
       <description>Description.</description>
     </action>
     <action-suffix>
@@ -537,7 +537,7 @@ class ActionXmlTest(unittest.TestCase):
     original_xml = """
     <actions>
     <action name="action1">
-      <owner>name1@chromium.org</owner>
+      <owner>name1@monyhar.org</owner>
       <description>Description.</description>
     </action>
     <action-suffix ordering="prefix">

@@ -34,7 +34,7 @@
 #include "chrome/browser/ui/webui/chromeos/login/l10n_util.h"
 #include "chrome/browser/ui/webui/chromeos/login/welcome_screen_handler.h"
 #include "chrome/common/pref_names.h"
-#include "chrome/grit/chromium_strings.h"
+#include "chrome/grit/monyhar_strings.h"
 #include "chrome/grit/generated_resources.h"
 #include "chromeos/components/chromebox_for_meetings/buildflags/buildflags.h"
 #include "chromeos/dbus/constants/dbus_switches.h"

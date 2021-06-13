@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui.messages.snackbar;
+package org.monyhar.chrome.browser.ui.messages.snackbar;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -18,8 +18,8 @@ import org.junit.runners.BlockJUnit4ClassRunner;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager.SnackbarController;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager.SnackbarController;
 
 /**
  * Tests for {@link SnackbarCollection}.

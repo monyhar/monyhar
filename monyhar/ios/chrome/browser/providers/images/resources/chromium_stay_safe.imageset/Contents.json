@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "chromium_stay_safe.png",
+      "filename" : "monyhar_stay_safe.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "chromium_stay_safe@2x.png",
+      "filename" : "monyhar_stay_safe@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "chromium_stay_safe@3x.png",
+      "filename" : "monyhar_stay_safe@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

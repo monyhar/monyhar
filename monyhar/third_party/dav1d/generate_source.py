@@ -5,7 +5,7 @@
 # found in the LICENSE file.
 """Creates a GN include file for building dav1d from source."""
 
-__author__ = "dalecurtis@chromium.org (Dale Curtis)"
+__author__ = "dalecurtis@monyhar.org (Dale Curtis)"
 
 import datetime
 import glob

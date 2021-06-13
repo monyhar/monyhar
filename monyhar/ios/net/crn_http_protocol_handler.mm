@@ -354,7 +354,7 @@ void HttpProtocolHandlerCore::OnReceivedRedirect(
       // specific to the POST and don't have meaning in GET. For example
       // the inclusion of a multipart Content-Type header in GET can cause
       // problems with some servers:
-      // http://code.google.com/p/chromium/issues/detail?id=843
+      // http://code.google.com/p/monyhar/issues/detail?id=843
       StripPostSpecificHeaders(request_);
     }
   }

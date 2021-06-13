@@ -2,7 +2,7 @@
 <!-- Copyright 2018 The Chromium Authors. All rights reserved.
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
-<org.chromium.chrome.browser.signin.ui.SigninView
+<org.monyhar.chrome.browser.signin.ui.SigninView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,7 +10,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <org.chromium.chrome.browser.signin.ui.SigninScrollView
+    <org.monyhar.chrome.browser.signin.ui.SigninScrollView
         android:id="@+id/signin_scroll_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -97,7 +97,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"/>
-            <org.chromium.ui.widget.TextViewWithClickableSpans
+            <org.monyhar.ui.widget.TextViewWithClickableSpans
                 android:id="@+id/signin_details_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -108,14 +108,14 @@
                 android:textAppearance="@style/TextAppearance.TextMedium.Secondary"
                 tools:text="@string/signin_details_description"/>
         </RelativeLayout>
-    </org.chromium.chrome.browser.signin.ui.SigninScrollView>
+    </org.monyhar.chrome.browser.signin.ui.SigninScrollView>
     <LinearLayout
         android:id="@+id/button_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="16dp">
-        <org.chromium.ui.widget.ButtonCompat
+        <org.monyhar.ui.widget.ButtonCompat
             android:id="@+id/negative_button"
             style="@style/TextButton"
             android:layout_width="wrap_content"
@@ -128,7 +128,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:visibility="invisible"/>
-        <org.chromium.ui.widget.ButtonCompat
+        <org.monyhar.ui.widget.ButtonCompat
             android:id="@+id/positive_button"
             style="@style/FilledButton.Flat"
             android:layout_width="wrap_content"
@@ -136,7 +136,7 @@
             android:paddingStart="@dimen/fre_button_padding"
             android:paddingEnd="@dimen/fre_button_padding"
             tools:text="@string/signin_accept_button"/>
-        <org.chromium.ui.widget.ButtonCompat
+        <org.monyhar.ui.widget.ButtonCompat
             android:id="@+id/more_button"
             style="@style/TextButton"
             android:layout_width="wrap_content"
@@ -152,4 +152,4 @@
             android:layout_weight="1"
             android:visibility="gone"/>
     </LinearLayout>
-</org.chromium.chrome.browser.signin.ui.SigninView>
+</org.monyhar.chrome.browser.signin.ui.SigninView>

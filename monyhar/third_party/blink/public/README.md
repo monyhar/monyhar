@@ -94,5 +94,5 @@ Contact Information
 The public API also contains an OWNERS file, which lists a number of people who
 are knowledgeable about the API. If you have questions or comments about the
 API that might be of general interest to the Blink community at large, please
-consider directing your inquiry to blink-dev@chromium.org rather than to the
+consider directing your inquiry to blink-dev@monyhar.org rather than to the
 OWNERS specifically.

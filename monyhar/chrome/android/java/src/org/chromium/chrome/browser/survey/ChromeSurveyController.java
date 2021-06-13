@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.survey;
+package org.monyhar.chrome.browser.survey;
 
 import android.content.Context;
 import android.os.Handler;
@@ -12,33 +12,33 @@ import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.infobar.InfoBarContainer;
-import org.chromium.chrome.browser.infobar.InfoBarIdentifier;
-import org.chromium.chrome.browser.infobar.SurveyInfoBar;
-import org.chromium.chrome.browser.infobar.SurveyInfoBarDelegate;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.privacy.settings.PrivacyPreferencesManagerImpl;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabHidingType;
-import org.chromium.chrome.browser.tab.TabObserver;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorObserver;
-import org.chromium.components.infobars.InfoBarAnimationListener;
-import org.chromium.components.infobars.InfoBarUiItem;
-import org.chromium.url.GURL;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.infobar.InfoBarContainer;
+import org.monyhar.chrome.browser.infobar.InfoBarIdentifier;
+import org.monyhar.chrome.browser.infobar.SurveyInfoBar;
+import org.monyhar.chrome.browser.infobar.SurveyInfoBarDelegate;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.privacy.settings.PrivacyPreferencesManagerImpl;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabHidingType;
+import org.monyhar.chrome.browser.tab.TabObserver;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorObserver;
+import org.monyhar.components.infobars.InfoBarAnimationListener;
+import org.monyhar.components.infobars.InfoBarUiItem;
+import org.monyhar.url.GURL;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

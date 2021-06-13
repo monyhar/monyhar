@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.verification;
+package org.monyhar.chrome.browser.browserservices.verification;
 
 import android.annotation.SuppressLint;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;

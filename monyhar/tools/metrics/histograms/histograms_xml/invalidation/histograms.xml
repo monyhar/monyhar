@@ -10,9 +10,9 @@ This file is used to generate a comprehensive list of invalidation
 each one.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -27,7 +27,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Expired in M75.
   </obsolete>
-  <owner>melandory@chromium.org</owner>
+  <owner>melandory@monyhar.org</owner>
   <summary>
     DeprecatedInvlalidatorRegistrar is crashing on the browser shut down. The
     reason for the crash is that not all invalidation handlers de-registister
@@ -41,8 +41,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="NetErrorCodes" expires_after="never">
 <!-- expires-never: For monitoring FCM based invalidations. -->
 
-  <owner>melandory@chromium.org</owner>
-  <owner>treib@chromium.org</owner>
+  <owner>melandory@monyhar.org</owner>
+  <owner>treib@monyhar.org</owner>
   <summary>Net error codes for failed subscription requests.</summary>
 </histogram>
 
@@ -52,8 +52,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <!-- Name completed by histogram_suffixes name="FCMInvalidationSenders" -->
 
-  <owner>melandory@chromium.org</owner>
-  <owner>treib@chromium.org</owner>
+  <owner>melandory@monyhar.org</owner>
+  <owner>treib@monyhar.org</owner>
   <summary>
     Status of the message from the FCM channel. Recorded upon receiving response
     from the FCM channel.
@@ -64,8 +64,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="InstanceIDResult" expires_after="never">
 <!-- expires-never: For monitoring FCM based invalidations. -->
 
-  <owner>melandory@chromium.org</owner>
-  <owner>treib@chromium.org</owner>
+  <owner>melandory@monyhar.org</owner>
+  <owner>treib@monyhar.org</owner>
   <summary>
     Status of the initial attempt to retrieve the instance id token.
   </summary>
@@ -76,8 +76,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2020-10.
   </obsolete>
-  <owner>tschumann@chromium.org</owner>
-  <owner>treib@chromium.org</owner>
+  <owner>tschumann@monyhar.org</owner>
+  <owner>treib@monyhar.org</owner>
   <summary>
     Status of resetting the client instance ID, which includes unregistering
     from FCM servers.
@@ -88,8 +88,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="FCMInvalidationSubscriptionStatus" expires_after="never">
 <!-- expires-never: For monitoring FCM based invalidations. -->
 
-  <owner>melandory@chromium.org</owner>
-  <owner>treib@chromium.org</owner>
+  <owner>melandory@monyhar.org</owner>
+  <owner>treib@monyhar.org</owner>
   <summary>
     Status of subscription request to the Per User Topic server. Recorded upon
     receiving response from server.
@@ -100,8 +100,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="HttpResponseCode" expires_after="never">
 <!-- expires-never: For monitoring FCM based invalidations. -->
 
-  <owner>melandory@chromium.org</owner>
-  <owner>treib@chromium.org</owner>
+  <owner>melandory@monyhar.org</owner>
+  <owner>treib@monyhar.org</owner>
   <summary>
     For each subcription request to the FCM Per-User-Topic server, log the
     response received from the server.
@@ -112,8 +112,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="HttpResponseCode" expires_after="never">
 <!-- expires-never: For monitoring FCM based invalidations. -->
 
-  <owner>melandory@chromium.org</owner>
-  <owner>treib@chromium.org</owner>
+  <owner>melandory@monyhar.org</owner>
+  <owner>treib@monyhar.org</owner>
   <summary>
     For each subcription request to the FCM Per-User-Topic server, log the
     response received from the server per topic. Note: This is only recorded
@@ -125,8 +125,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="TokenStateOnRegistrationRequest" expires_after="never">
 <!-- expires-never: For monitoring FCM based invalidations. -->
 
-  <owner>melandory@chromium.org</owner>
-  <owner>treib@chromium.org</owner>
+  <owner>melandory@monyhar.org</owner>
+  <owner>treib@monyhar.org</owner>
   <summary>
     Records the outcome of instance ID token requests (i.e. whether the token
     changed). Such requests are made when invalidations are first enabled (e.g.
@@ -138,8 +138,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="FCMInvalidationSubscriptionStatus" expires_after="never">
 <!-- expires-never: For monitoring FCM based invalidations. -->
 
-  <owner>melandory@chromium.org</owner>
-  <owner>treib@chromium.org</owner>
+  <owner>melandory@monyhar.org</owner>
+  <owner>treib@monyhar.org</owner>
   <summary>
     Status of unsubscription request to the Per User Topic server. Recorded upon
     receiving response from server.
@@ -151,7 +151,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Expired in M85.
   </obsolete>
-  <owner>melandory@chromium.org</owner>
+  <owner>melandory@monyhar.org</owner>
   <summary>
     Status of the invalidation component. The metric is recorded on startup
     unless invalidations are disabled, plus when the state changes.

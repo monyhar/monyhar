@@ -2674,7 +2674,7 @@ TEST(SequenceManagerTestWithMockTaskRunner,
   auto queue =
       fixture.sequence_manager()->CreateTaskQueue(TaskQueue::Spec("test"));
 
-  // NOTE because tasks posted to the chromiumrun loop are not cancellable, we
+  // NOTE because tasks posted to the monyharrun loop are not cancellable, we
   // will end up with a lot more tasks posted if the delayed tasks were posted
   // in the reverse order.
   // TODO(alexclarke): Consider talking to the message pump directly.

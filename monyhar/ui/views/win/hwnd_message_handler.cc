@@ -2164,7 +2164,7 @@ LRESULT HWNDMessageHandler::OnNCCalcSize(BOOL mode, LPARAM l_param) {
   // Let User32 handle the first nccalcsize for captioned windows
   // so it updates its internal structures (specifically caption-present)
   // Without this Tile & Cascade windows won't work.
-  // See http://code.google.com/p/chromium/issues/detail?id=900
+  // See http://code.google.com/p/monyhar/issues/detail?id=900
   if (is_first_nccalc_) {
     is_first_nccalc_ = false;
     if (GetWindowLong(hwnd(), GWL_STYLE) & WS_CAPTION) {

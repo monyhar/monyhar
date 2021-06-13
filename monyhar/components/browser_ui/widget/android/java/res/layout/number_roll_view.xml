@@ -3,7 +3,7 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
 
-<org.chromium.components.browser_ui.widget.NumberRollView
+<org.monyhar.components.browser_ui.widget.NumberRollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/selection_mode_number"
     android:layout_width="wrap_content"
@@ -27,4 +27,4 @@
         android:layout_gravity="center_vertical"
         android:singleLine="true"
         android:textAppearance="@style/TextAppearance.Headline.Primary.Inverse" />
-</org.chromium.components.browser_ui.widget.NumberRollView>
+</org.monyhar.components.browser_ui.widget.NumberRollView>

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.strictmode;
+package org.monyhar.components.strictmode;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -17,9 +17,9 @@ import androidx.test.filters.SmallTest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -39,7 +39,7 @@ public class ThreadStrictModeInterceptorTest {
         ThreadStrictModeInterceptor.Builder threadInterceptor =
                 new ThreadStrictModeInterceptor.Builder();
         threadInterceptor.addAllowedMethod(Violation.DETECT_DISK_IO,
-                "org.chromium.components.strictmode.ThreadStrictModeInterceptorTest#doDiskWrite");
+                "org.monyhar.components.strictmode.ThreadStrictModeInterceptorTest#doDiskWrite");
         TestThreadUtils.runOnUiThreadBlocking(() -> {
             installThreadInterceptor(threadInterceptor, strictModeDetector);
             doDiskWrite();

@@ -107,7 +107,7 @@ class FactoryTest(unittest.TestCase):
         files = files or {}
         for path, contents in files.items():
             host.filesystem.write_text_file(
-                finder.path_from_chromium_base(path), contents)
+                finder.path_from_monyhar_base(path), contents)
         options = optparse.Values({
             'target': target,
             'configuration': configuration

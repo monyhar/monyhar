@@ -41,7 +41,7 @@
  * __system_property_get function.
  *
  * For more technical details from an NDK maintainer, see:
- * https://bugs.chromium.org/p/chromium/issues/detail?id=392191#c17
+ * https://bugs.monyhar.org/p/monyhar/issues/detail?id=392191#c17
  */
 
 /* Weak symbol import */

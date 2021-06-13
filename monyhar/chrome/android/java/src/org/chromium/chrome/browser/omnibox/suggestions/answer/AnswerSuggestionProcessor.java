@@ -2,27 +2,27 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.answer;
+package org.monyhar.chrome.browser.omnibox.suggestions.answer;
 
 import android.content.Context;
 import android.graphics.Bitmap;
 
 import androidx.annotation.DrawableRes;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcher;
-import org.chromium.chrome.browser.omnibox.OmniboxSuggestionType;
-import org.chromium.chrome.browser.omnibox.UrlBarEditingTextStateProvider;
-import org.chromium.chrome.browser.omnibox.suggestions.OmniboxSuggestionUiType;
-import org.chromium.chrome.browser.omnibox.suggestions.SuggestionHost;
-import org.chromium.chrome.browser.omnibox.suggestions.base.BaseSuggestionViewProcessor;
-import org.chromium.chrome.browser.omnibox.suggestions.base.SuggestionDrawableState;
-import org.chromium.components.omnibox.AnswerType;
-import org.chromium.components.omnibox.AutocompleteMatch;
-import org.chromium.components.omnibox.SuggestionAnswer;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcher;
+import org.monyhar.chrome.browser.omnibox.OmniboxSuggestionType;
+import org.monyhar.chrome.browser.omnibox.UrlBarEditingTextStateProvider;
+import org.monyhar.chrome.browser.omnibox.suggestions.OmniboxSuggestionUiType;
+import org.monyhar.chrome.browser.omnibox.suggestions.SuggestionHost;
+import org.monyhar.chrome.browser.omnibox.suggestions.base.BaseSuggestionViewProcessor;
+import org.monyhar.chrome.browser.omnibox.suggestions.base.SuggestionDrawableState;
+import org.monyhar.components.omnibox.AnswerType;
+import org.monyhar.components.omnibox.AutocompleteMatch;
+import org.monyhar.components.omnibox.SuggestionAnswer;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.util.ArrayList;
 import java.util.HashMap;

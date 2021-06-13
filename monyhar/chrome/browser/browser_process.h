@@ -164,7 +164,7 @@ class BrowserProcess {
   // Starts and manages the policy system.
   virtual policy::ChromeBrowserPolicyConnector* browser_policy_connector() = 0;
 
-  // This is the main interface for chromium components to retrieve policy
+  // This is the main interface for monyhar components to retrieve policy
   // information from the policy system.
   virtual policy::PolicyService* policy_service() = 0;
 

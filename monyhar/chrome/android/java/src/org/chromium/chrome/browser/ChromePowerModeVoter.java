@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -10,12 +10,12 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.Window;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.TraceEvent;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.chrome.browser.app.ChromeActivity;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.chrome.browser.app.ChromeActivity;
 
 /**
  * Notifies the native power mode arbiter of Chrome app activity changes.

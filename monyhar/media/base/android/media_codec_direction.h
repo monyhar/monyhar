@@ -7,7 +7,7 @@
 
 namespace media {
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.media
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.media
 enum class MediaCodecDirection {
   DECODER,
   ENCODER,

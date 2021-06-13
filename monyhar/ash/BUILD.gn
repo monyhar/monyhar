@@ -2007,11 +2007,11 @@ component("ash") {
 
 action("dbus_service_files") {
   sources = [
-    "dbus/org.chromium.DisplayService.conf",
-    "dbus/org.chromium.GesturePropertiesService.conf",
-    "dbus/org.chromium.LivenessService.conf",
-    "dbus/org.chromium.UrlHandlerService.conf",
-    "dbus/org.chromium.UserAuthenticationService.conf",
+    "dbus/org.monyhar.DisplayService.conf",
+    "dbus/org.monyhar.GesturePropertiesService.conf",
+    "dbus/org.monyhar.LivenessService.conf",
+    "dbus/org.monyhar.UrlHandlerService.conf",
+    "dbus/org.monyhar.UserAuthenticationService.conf",
   ]
   output_conf_file = "$root_out_dir/dbus/ash_dbus_services.conf"
   outputs = [ output_conf_file ]

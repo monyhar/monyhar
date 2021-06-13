@@ -43,7 +43,7 @@ std::string NET_EXPORT_PRIVATE ParseDomainASCII(base::WStringPiece widestr);
 
 // Parses |value| as search list (comma-delimited list of domain names) from
 // a registry key and stores it in |out|. Returns empty vector on failure. Empty
-// entries (e.g., "chromium.org,,org") terminate the list. Non-ascii hostnames
+// entries (e.g., "monyhar.org,,org") terminate the list. Non-ascii hostnames
 // are converted to punycode.
 std::vector<std::string> NET_EXPORT_PRIVATE
 ParseSearchList(base::WStringPiece value);

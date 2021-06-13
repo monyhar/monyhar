@@ -7,14 +7,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <org.chromium.chrome.browser.toolbar.adaptive.settings.AdaptiveToolbarHeaderPreference
+    <org.monyhar.chrome.browser.toolbar.adaptive.settings.AdaptiveToolbarHeaderPreference
         android:key="adaptive_toolbar_header" />
 
-       <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+       <org.monyhar.components.browser_ui.settings.ChromeSwitchPreference
         android:key="toolbar_shortcut_switch"
         android:title="@string/toolbar_shortcut" />
 
-    <org.chromium.chrome.browser.toolbar.adaptive.settings.RadioButtonGroupAdaptiveToolbarPreference
+    <org.monyhar.chrome.browser.toolbar.adaptive.settings.RadioButtonGroupAdaptiveToolbarPreference
         android:key="adaptive_toolbar_radio_group"
         android:selectable="false"
         app:allowDividerAbove="true"

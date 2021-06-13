@@ -1,6 +1,6 @@
 Name: Android Deps Repository
 Short Name: android_deps
-URL: https://chromium.googlesource.com/chromium/src/+/master/third_party/android_deps/README.md
+URL: https://monyhar.googlesource.com/monyhar/src/+/master/third_party/android_deps/README.md
 Version: 1
 License: Refer to additional_readme_paths.json
 License Android Compatible: yes
@@ -11,8 +11,8 @@ Description:
 A gradle-specified repository for Android and Java dependencies.
 
 Local Modifications:
-Everything directly here is chromium code, and third_party code lives under
-`libs`, where each library has its own README.chromium and LICENSE:
+Everything directly here is monyhar code, and third_party code lives under
+`libs`, where each library has its own README.monyhar and LICENSE:
 
 ```
 third_party/android_deps
@@ -27,15 +27,15 @@ third_party/android_deps
 │   │   │   └── fetch.py (generated)
 │   │   ├── dependency_name_and_version.jar (third_party)
 │   │   ├── LICENSE (third_party)
-│   │   └── README.chromium (generated)
+│   │   └── README.monyhar (generated)
 │   └── other_dependency_group_name_and_version
 │       ├── 3pp (generated)
 │       │   ├── 3pp.pb (generated)
 │       │   └── fetch.py (generated)
 │       ├── other_dependency_name_and_version.jar (third_party)
 │       ├── LICENSE (third_party)
-│       └── README.chromium (generated)
-└── README.chromium (hand written)
+│       └── README.monyhar (generated)
+└── README.monyhar (hand written)
 
 [1] - Copied main text verbatim from https://developer.android.com/studio/terms
 ```

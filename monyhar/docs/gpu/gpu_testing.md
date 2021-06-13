@@ -32,20 +32,20 @@ tests verify just a few pixels, using handwritten code, in order to use the
 same validation for all brands of GPUs.
 
 The GPU bots use the Chrome infrastructure team's [recipe framework], and
-specifically the [`chromium`][recipes/chromium] and
-[`chromium_trybot`][recipes/chromium_trybot] recipes, to describe what tests to
+specifically the [`monyhar`][recipes/monyhar] and
+[`monyhar_trybot`][recipes/monyhar_trybot] recipes, to describe what tests to
 execute. Compared to the legacy master-side buildbot scripts, recipes make it
 easy to add new steps to the bots, change the bots' configuration, and run the
 tests locally in the same way that they are run on the bots. Additionally, the
-`chromium` and `chromium_trybot` recipes make it possible to send try jobs which
+`monyhar` and `monyhar_trybot` recipes make it possible to send try jobs which
 add new steps to the bots. This single capability is a huge step forward from
 the previous configuration where new steps were added blindly, and could cause
 failures on the tryservers. For more details about the configuration of the
 bots, see the [GPU bot details].
 
-[recipe framework]: https://chromium.googlesource.com/external/github.com/luci/recipes-py/+/main/doc/user_guide.md
-[recipes/chromium]:        https://chromium.googlesource.com/chromium/tools/build/+/main/scripts/slave/recipes/chromium.py
-[recipes/chromium_trybot]: https://chromium.googlesource.com/chromium/tools/build/+/main/scripts/slave/recipes/chromium_trybot.py
+[recipe framework]: https://monyhar.googlesource.com/external/github.com/luci/recipes-py/+/main/doc/user_guide.md
+[recipes/monyhar]:        https://monyhar.googlesource.com/monyhar/tools/build/+/main/scripts/slave/recipes/monyhar.py
+[recipes/monyhar_trybot]: https://monyhar.googlesource.com/monyhar/tools/build/+/main/scripts/slave/recipes/monyhar_trybot.py
 [GPU bot details]: gpu_testing_bot_details.md
 
 The physical hardware for the GPU bots lives in the Swarming pool\*. The
@@ -65,7 +65,7 @@ more complete docs][isolated-testing-infra]) provides many benefits:
 (\* All but a few one-off GPU bots are in the swarming pool. The exceptions to
 the rule are described in the [GPU bot details].)
 
-The bots on the [chromium.gpu.fyi] waterfall are configured to always test
+The bots on the [monyhar.gpu.fyi] waterfall are configured to always test
 top-of-tree ANGLE. This setup is done with a few lines of code in the
 [tools/build workspace]; search the code for "angle".
 
@@ -75,10 +75,10 @@ overview of this documentation and links back to various portions.
 
 <!-- XXX: broken link -->
 [new-testing-infra]: https://github.com/luci/luci-py/wiki
-[isolated-testing-infra]: https://www.chromium.org/developers/testing/isolated-testing/infrastructure
-[chromium.gpu]: https://ci.chromium.org/p/chromium/g/chromium.gpu/console
-[chromium.gpu.fyi]: https://ci.chromium.org/p/chromium/g/chromium.gpu.fyi/console
-[tools/build workspace]: https://source.chromium.org/chromium/chromium/tools/build/+/HEAD:recipes/recipe_modules/chromium_tests/builders/chromium_gpu_fyi.py
+[isolated-testing-infra]: https://www.monyhar.org/developers/testing/isolated-testing/infrastructure
+[monyhar.gpu]: https://ci.monyhar.org/p/monyhar/g/monyhar.gpu/console
+[monyhar.gpu.fyi]: https://ci.monyhar.org/p/monyhar/g/monyhar.gpu.fyi/console
+[tools/build workspace]: https://source.monyhar.org/monyhar/monyhar/tools/build/+/HEAD:recipes/recipe_modules/monyhar_tests/builders/monyhar_gpu_fyi.py
 [bots-presentation]: https://docs.google.com/presentation/d/1BC6T7pndSqPFnituR7ceG7fMY7WaGqYHhx5i9ECa8EI/edit?usp=sharing
 
 ## Fleet Status
@@ -95,7 +95,7 @@ Most Chromium developers interact with the GPU bots in two ways:
 1.  Observing the bots on the waterfalls.
 2.  Sending try jobs to them.
 
-The GPU bots are grouped on the [chromium.gpu] and [chromium.gpu.fyi]
+The GPU bots are grouped on the [monyhar.gpu] and [monyhar.gpu.fyi]
 waterfalls. Their current status can be easily observed there.
 
 To send try jobs, you must first upload your CL to the codereview server. Then,
@@ -110,13 +110,13 @@ Sends your job to the default set of try servers.
 The GPU tests are part of the default set for Chromium CLs, and are run as part
 of the following tryservers' jobs:
 
-*   [linux-rel], formerly on the `tryserver.chromium.linux` waterfall
-*   [mac-rel], formerly on the `tryserver.chromium.mac` waterfall
-*   [win10_chromium_x64_rel_ng], formerly on the `tryserver.chromium.win` waterfall
+*   [linux-rel], formerly on the `tryserver.monyhar.linux` waterfall
+*   [mac-rel], formerly on the `tryserver.monyhar.mac` waterfall
+*   [win10_monyhar_x64_rel_ng], formerly on the `tryserver.monyhar.win` waterfall
 
-[linux-rel]:                 https://ci.chromium.org/p/chromium/builders/luci.chromium.try/linux-rel?limit=100
-[mac-rel]:                   https://ci.chromium.org/p/chromium/builders/luci.chromium.try/mac-rel?limit=100
-[win10_chromium_x64_rel_ng]: https://ci.chromium.org/p/chromium/builders/luci.chromium.try/win10_chromium_x64_rel_ng?limit=100
+[linux-rel]:                 https://ci.monyhar.org/p/monyhar/builders/luci.monyhar.try/linux-rel?limit=100
+[mac-rel]:                   https://ci.monyhar.org/p/monyhar/builders/luci.monyhar.try/mac-rel?limit=100
+[win10_monyhar_x64_rel_ng]: https://ci.monyhar.org/p/monyhar/builders/luci.monyhar.try/win10_monyhar_x64_rel_ng?limit=100
 
 Scan down through the steps looking for the text "GPU"; that identifies those
 tests run on the GPU bots. For each test the "trigger" step can be ignored; the
@@ -140,27 +140,27 @@ this writing, they ran longer-running tests that can't run against all Chromium
 CLs due to lack of hardware capacity. They are added as part of the included
 tryservers for code changes to certain sub-directories.
 
-*   [linux_optional_gpu_tests_rel] on the [luci.chromium.try] waterfall
-*   [mac_optional_gpu_tests_rel]   on the [luci.chromium.try]   waterfall
-*   [win_optional_gpu_tests_rel]   on the [luci.chromium.try]   waterfall
+*   [linux_optional_gpu_tests_rel] on the [luci.monyhar.try] waterfall
+*   [mac_optional_gpu_tests_rel]   on the [luci.monyhar.try]   waterfall
+*   [win_optional_gpu_tests_rel]   on the [luci.monyhar.try]   waterfall
 
-[linux_optional_gpu_tests_rel]: https://ci.chromium.org/p/chromium/builders/luci.chromium.try/linux_optional_gpu_tests_rel
-[mac_optional_gpu_tests_rel]:   https://ci.chromium.org/p/chromium/builders/luci.chromium.try/mac_optional_gpu_tests_rel
-[win_optional_gpu_tests_rel]:   https://ci.chromium.org/p/chromium/builders/luci.chromium.try/win_optional_gpu_tests_rel
-[luci.chromium.try]:            https://ci.chromium.org/p/chromium/g/luci.chromium.try/builders
+[linux_optional_gpu_tests_rel]: https://ci.monyhar.org/p/monyhar/builders/luci.monyhar.try/linux_optional_gpu_tests_rel
+[mac_optional_gpu_tests_rel]:   https://ci.monyhar.org/p/monyhar/builders/luci.monyhar.try/mac_optional_gpu_tests_rel
+[win_optional_gpu_tests_rel]:   https://ci.monyhar.org/p/monyhar/builders/luci.monyhar.try/win_optional_gpu_tests_rel
+[luci.monyhar.try]:            https://ci.monyhar.org/p/monyhar/g/luci.monyhar.try/builders
 
 Tryservers for the [ANGLE project] are also present on the
-[tryserver.chromium.angle] waterfall. These are invoked from the Gerrit user
+[tryserver.monyhar.angle] waterfall. These are invoked from the Gerrit user
 interface. They are configured similarly to the tryservers for regular Chromium
-patches, and run the same tests that are run on the [chromium.gpu.fyi]
+patches, and run the same tests that are run on the [monyhar.gpu.fyi]
 waterfall, in the same way (e.g., against ToT ANGLE).
 
 If you find it necessary to try patches against other sub-repositories than
 Chromium (`src/`) and ANGLE (`src/third_party/angle/`), please
 [file a bug](http://crbug.com/new) with component Internals\>GPU\>Testing.
 
-[ANGLE project]: https://chromium.googlesource.com/angle/angle/+/main/README.md
-[tryserver.chromium.angle]: https://build.chromium.org/p/tryserver.chromium.angle/waterfall
+[ANGLE project]: https://monyhar.googlesource.com/angle/angle/+/main/README.md
+[tryserver.monyhar.angle]: https://build.monyhar.org/p/tryserver.monyhar.angle/waterfall
 [file a bug]: http://crbug.com/new
 
 ## Running the GPU Tests Locally
@@ -173,7 +173,7 @@ build. Many of the tests are simple executables:
 *   `gl_unittests`
 *   `tab_capture_end2end_tests`
 
-Some run only on the chromium.gpu.fyi waterfall, either because there isn't
+Some run only on the monyhar.gpu.fyi waterfall, either because there isn't
 enough machine capacity at the moment, or because they're closed-source tests
 which aren't allowed to run on the regular Chromium waterfalls:
 
@@ -199,7 +199,7 @@ The pixel tests are a bit special. See
 details.
 
 If you're testing on Android and have built and deployed
-`ChromePublic.apk` to the device, use `--browser=android-chromium` to
+`ChromePublic.apk` to the device, use `--browser=android-monyhar` to
 invoke it.
 
 **Note:** The tests require some third-party Python packages. Obtaining these
@@ -229,8 +229,8 @@ only necessary on swarming:
 * `--isolated-script-test-perf-output`
 
 
-[trigger_input]: https://logs.chromium.org/logs/chromium/buildbucket/cr-buildbucket.appspot.com/8849851608240828544/+/u/test_pre_run__14_/l_trigger__webgl2_conformance_d3d11_passthrough_tests_on_NVIDIA_GPU_on_Windows_on_Windows-10-18363/json.input
-[sample_swarming_task]: https://chromium-swarm.appspot.com/task?id=52f06058bfb31b10
+[trigger_input]: https://logs.monyhar.org/logs/monyhar/buildbucket/cr-buildbucket.appspot.com/8849851608240828544/+/u/test_pre_run__14_/l_trigger__webgl2_conformance_d3d11_passthrough_tests_on_NVIDIA_GPU_on_Windows_on_Windows-10-18363/json.input
+[sample_swarming_task]: https://monyhar-swarm.appspot.com/task?id=52f06058bfb31b10
 
 The Maps test requires you to authenticate to cloud storage in order to access
 the Web Page Reply archive containing the test. See [Cloud Storage Credentials]
@@ -368,20 +368,20 @@ machine loosely matches the architecture and OS of the bot.
 The easiest way to do this is to find the ID of the swarming task and use
 "swarming.py reproduce" to re-run it:
 
-*   `./src/tools/luci-go/swarming reproduce -S https://chromium-swarm.appspot.com [task ID]`
+*   `./src/tools/luci-go/swarming reproduce -S https://monyhar-swarm.appspot.com [task ID]`
 
 The task ID can be found in the stdio for the "trigger" step for the test. For
 example, look at a recent build from the [Mac Release (Intel)] bot, and
 look at the `gl_unittests` step. You will see something like:
 
-[Mac Release (Intel)]: https://ci.chromium.org/p/chromium/builders/luci.chromium.ci/Mac%20Release%20%28Intel%29/
+[Mac Release (Intel)]: https://ci.monyhar.org/p/monyhar/builders/luci.monyhar.ci/Mac%20Release%20%28Intel%29/
 
 ```
 Triggered task: gl_unittests on Intel GPU on Mac/Mac-10.12.6/[TRUNCATED_ISOLATE_HASH]/Mac Release (Intel)/83664
 To collect results, use:
-  swarming.py collect -S https://chromium-swarm.appspot.com --json /var/folders/[PATH_TO_TEMP_FILE].json
+  swarming.py collect -S https://monyhar-swarm.appspot.com --json /var/folders/[PATH_TO_TEMP_FILE].json
 Or visit:
-  https://chromium-swarm.appspot.com/user/task/[TASK_ID]
+  https://monyhar-swarm.appspot.com/user/task/[TASK_ID]
 ```
 
 There is a difference between the isolate's hash and Swarming's task ID. Make
@@ -408,7 +408,7 @@ here][isolate-server-credentials]. For most cases, you can simply run:
 *   `./src/tools/luci-go/isolate login`
 
 The above link requires that you log in with your @google.com credentials. It's
-not known at the present time whether this works with @chromium.org accounts.
+not known at the present time whether this works with @monyhar.org accounts.
 Email kbr@ if you try this and find it doesn't work.
 
 [isolate-server-credentials]: gpu_testing_bot_details.md#Isolate-server-credentials
@@ -417,11 +417,11 @@ Email kbr@ if you try this and find it doesn't work.
 
 See the [Swarming documentation] for instructions on how to upload your binaries to the isolate server and trigger execution on Swarming.
 
-Be sure to use the correct swarming dimensions for your desired GPU e.g. "1002:6613" instead of "AMD Radeon R7 240 (1002:6613)" which is how it appears on swarming task page.  You can query bots in the chromium.tests.gpu pool to find the correct dimensions:
+Be sure to use the correct swarming dimensions for your desired GPU e.g. "1002:6613" instead of "AMD Radeon R7 240 (1002:6613)" which is how it appears on swarming task page.  You can query bots in the monyhar.tests.gpu pool to find the correct dimensions:
 
-*   `tools\luci-go\swarming bots -S chromium-swarm.appspot.com -d pool=chromium.tests.gpu`
+*   `tools\luci-go\swarming bots -S monyhar-swarm.appspot.com -d pool=monyhar.tests.gpu`
 
-[Swarming documentation]: https://www.chromium.org/developers/testing/isolated-testing/for-swes#TOC-Run-a-test-built-locally-on-Swarming
+[Swarming documentation]: https://www.monyhar.org/developers/testing/isolated-testing/for-swes#TOC-Run-a-test-built-locally-on-Swarming
 
 ## Moving Test Binaries from Machine to Machine
 
@@ -500,16 +500,16 @@ based, and included in the `telemetry_gpu_test_run` isolate.
 The tests that are run by the GPU bots are described by a couple of JSON files
 in the Chromium workspace:
 
-*   [`chromium.gpu.json`](https://chromium.googlesource.com/chromium/src/+/main/testing/buildbot/chromium.gpu.json)
-*   [`chromium.gpu.fyi.json`](https://chromium.googlesource.com/chromium/src/+/main/testing/buildbot/chromium.gpu.fyi.json)
+*   [`monyhar.gpu.json`](https://monyhar.googlesource.com/monyhar/src/+/main/testing/buildbot/monyhar.gpu.json)
+*   [`monyhar.gpu.fyi.json`](https://monyhar.googlesource.com/monyhar/src/+/main/testing/buildbot/monyhar.gpu.fyi.json)
 
 These files are autogenerated by the following script:
 
-*   [`generate_buildbot_json.py`](https://chromium.googlesource.com/chromium/src/+/main/testing/buildbot/generate_buildbot_json.py)
+*   [`generate_buildbot_json.py`](https://monyhar.googlesource.com/monyhar/src/+/main/testing/buildbot/generate_buildbot_json.py)
 
 This script is documented in
-[`testing/buildbot/README.md`](https://chromium.googlesource.com/chromium/src/+/main/testing/buildbot/README.md). The
-JSON files are parsed by the chromium and chromium_trybot recipes, and describe
+[`testing/buildbot/README.md`](https://monyhar.googlesource.com/monyhar/src/+/main/testing/buildbot/README.md). The
+JSON files are parsed by the monyhar and monyhar_trybot recipes, and describe
 two basic types of tests:
 
 *   GTests: those which use the Googletest and Chromium's `base/test/launcher/`
@@ -527,17 +527,17 @@ isolates][new-isolates]. Once that is done, modify `test_suites.pyl` to add the
 test to the appropriate set of bots. Be careful when adding large new test steps
 to all of the bots, because the GPU bots are a limited resource and do not
 currently have the capacity to absorb large new test suites. It is safer to get
-new tests running on the chromium.gpu.fyi waterfall first, and expand from there
-to the chromium.gpu waterfall (which will also make them run against every
+new tests running on the monyhar.gpu.fyi waterfall first, and expand from there
+to the monyhar.gpu waterfall (which will also make them run against every
 Chromium CL by virtue of the `linux-rel`, `mac-rel`, `win7-rel` and
 `android-marshmallow-arm64-rel` tryservers' mirroring of the bots on this
 waterfall – so be careful!).
 
-Tryjobs which add new test steps to the chromium.gpu.json file will run those
+Tryjobs which add new test steps to the monyhar.gpu.json file will run those
 new steps during the tryjob, which helps ensure that the new test won't break
 once it starts running on the waterfall.
 
-Tryjobs which modify chromium.gpu.fyi.json can be sent to the
+Tryjobs which modify monyhar.gpu.fyi.json can be sent to the
 `win_optional_gpu_tests_rel`, `mac_optional_gpu_tests_rel` and
 `linux_optional_gpu_tests_rel` tryservers to help ensure that they won't
 break the FYI bots.
@@ -556,7 +556,7 @@ the image (tests with `expected_colors` fields in [pixel_test_pages]), there
 likely won't be a closest approved image since those tests only upload data to
 Gold in the event of a failure.
 
-[pixel_test_pages]: https://cs.chromium.org/chromium/src/content/test/gpu/gpu_tests/pixel_test_pages.py
+[pixel_test_pages]: https://cs.monyhar.org/monyhar/src/content/test/gpu/gpu_tests/pixel_test_pages.py
 
 ## Updating and Adding New Pixel Tests to the GPU Bots
 

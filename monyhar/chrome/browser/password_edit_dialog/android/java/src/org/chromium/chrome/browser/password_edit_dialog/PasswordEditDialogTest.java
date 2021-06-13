@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_edit_dialog;
+package org.monyhar.chrome.browser.password_edit_dialog;
 
 import static org.hamcrest.Matchers.contains;
 import static org.hamcrest.Matchers.containsString;
@@ -19,12 +19,12 @@ import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 import org.robolectric.RuntimeEnvironment;
 
-import org.chromium.base.Callback;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.ui.modaldialog.DialogDismissalCause;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.modaldialog.ModalDialogProperties;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.Callback;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.ui.modaldialog.DialogDismissalCause;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.modaldialog.ModalDialogProperties;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /** Tests for password edit dialog. */
 @RunWith(BaseRobolectricTestRunner.class)

@@ -522,8 +522,8 @@ void VpxVideoEncoder::ChangeOptions(const Options& options,
   // is created.
   // - |options_.frame_size| changes every time ChangeOptions() is called.
   // More info can be found here:
-  //   https://bugs.chromium.org/p/webm/issues/detail?id=1642
-  //   https://bugs.chromium.org/p/webm/issues/detail?id=912
+  //   https://bugs.monyhar.org/p/webm/issues/detail?id=1642
+  //   https://bugs.monyhar.org/p/webm/issues/detail?id=912
   if (profile_ == VP8PROFILE_ANY) {
     // VP8 resize restrictions
     auto old_area = originally_configured_size_.GetCheckedArea();

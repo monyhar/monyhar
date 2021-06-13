@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.payments;
+package org.monyhar.components.payments;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
-import org.chromium.payments.mojom.GooglePaymentMethodData;
-import org.chromium.payments.mojom.PaymentAddress;
-import org.chromium.payments.mojom.PaymentDetails;
-import org.chromium.payments.mojom.PaymentOptions;
-import org.chromium.payments.mojom.PaymentResponse;
+import org.monyhar.payments.mojom.GooglePaymentMethodData;
+import org.monyhar.payments.mojom.PaymentAddress;
+import org.monyhar.payments.mojom.PaymentDetails;
+import org.monyhar.payments.mojom.PaymentOptions;
+import org.monyhar.payments.mojom.PaymentResponse;
 
 /**
  * A helper to manage the request / response patching for the Skip-to-GPay experimental flow.

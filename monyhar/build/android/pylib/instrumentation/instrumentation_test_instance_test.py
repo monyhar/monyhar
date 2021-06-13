@@ -97,7 +97,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
     raw_tests = [
       {
         'annotations': {'Feature': {'value': ['Foo']}},
-        'class': 'org.chromium.test.SampleTest',
+        'class': 'org.monyhar.test.SampleTest',
         'superclass': 'java.lang.Object',
         'methods': [
           {
@@ -112,7 +112,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
       },
       {
         'annotations': {'Feature': {'value': ['Bar']}},
-        'class': 'org.chromium.test.SampleTest2',
+        'class': 'org.monyhar.test.SampleTest2',
         'superclass': 'java.lang.Object',
         'methods': [
           {
@@ -129,7 +129,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
           'Feature': {'value': ['Foo']},
           'SmallTest': None,
         },
-        'class': 'org.chromium.test.SampleTest',
+        'class': 'org.monyhar.test.SampleTest',
         'method': 'testMethod1',
         'is_junit4': True,
       },
@@ -138,7 +138,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
           'Feature': {'value': ['Foo']},
           'MediumTest': None,
         },
-        'class': 'org.chromium.test.SampleTest',
+        'class': 'org.monyhar.test.SampleTest',
         'method': 'testMethod2',
         'is_junit4': True,
       },
@@ -147,7 +147,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
           'Feature': {'value': ['Bar']},
           'SmallTest': None,
         },
-        'class': 'org.chromium.test.SampleTest2',
+        'class': 'org.monyhar.test.SampleTest2',
         'method': 'testMethod1',
         'is_junit4': True,
       },
@@ -164,7 +164,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
     raw_tests = [
       {
         'annotations': {'Feature': {'value': ['Foo']}},
-        'class': 'org.chromium.test.SampleTest',
+        'class': 'org.monyhar.test.SampleTest',
         'superclass': 'java.lang.Object',
         'methods': [
           {
@@ -185,13 +185,13 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
           'Feature': {'value': ['Foo']},
           'SmallTest': None,
         },
-        'class': 'org.chromium.test.SampleTest',
+        'class': 'org.monyhar.test.SampleTest',
         'is_junit4': True,
         'method': 'testMethod1',
       },
     ]
 
-    o._test_filter = 'org.chromium.test.SampleTest.testMethod1'
+    o._test_filter = 'org.monyhar.test.SampleTest.testMethod1'
     o._test_jar = 'path/to/test.jar'
     o._junit4_runner_class = 'J4Runner'
     actual_tests = o.ProcessRawTests(raw_tests)
@@ -203,7 +203,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
     raw_tests = [
       {
         'annotations': {'Feature': {'value': ['Foo']}},
-        'class': 'org.chromium.test.SampleTest',
+        'class': 'org.monyhar.test.SampleTest',
         'superclass': 'java.lang.Object',
         'methods': [
           {
@@ -224,7 +224,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
           'Feature': {'value': ['Foo']},
           'SmallTest': None,
         },
-        'class': 'org.chromium.test.SampleTest',
+        'class': 'org.monyhar.test.SampleTest',
         'is_junit4': True,
         'method': 'testMethod1',
       },
@@ -242,7 +242,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
     raw_tests = [
       {
         'annotations': {'Feature': {'value': ['Foo']}},
-        'class': 'org.chromium.test.SampleTest',
+        'class': 'org.monyhar.test.SampleTest',
         'superclass': 'java.lang.Object',
         'methods': [
           {
@@ -257,7 +257,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
       },
       {
         'annotations': {'Feature': {'value': ['Bar']}},
-        'class': 'org.chromium.test.SampleTest2',
+        'class': 'org.monyhar.test.SampleTest2',
         'superclass': 'java.lang.Object',
         'methods': [
           {
@@ -274,7 +274,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
           'Feature': {'value': ['Foo']},
           'SmallTest': None,
         },
-        'class': 'org.chromium.test.SampleTest',
+        'class': 'org.monyhar.test.SampleTest',
         'method': 'testMethod1',
         'is_junit4': True,
       },
@@ -283,7 +283,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
           'Feature': {'value': ['Foo']},
           'SmallTest': None,
         },
-        'class': 'org.chromium.test.SampleTest',
+        'class': 'org.monyhar.test.SampleTest',
         'method': 'testMethod1__sandboxed_mode',
         'is_junit4': True,
       },
@@ -291,7 +291,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
 
     o._test_jar = 'path/to/test.jar'
     o._junit4_runner_class = 'J4Runner'
-    o._test_filter = 'org.chromium.test.SampleTest.testMethod1'
+    o._test_filter = 'org.monyhar.test.SampleTest.testMethod1'
     actual_tests = o.ProcessRawTests(raw_tests)
 
     self.assertEquals(actual_tests, expected_tests)
@@ -301,7 +301,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
     raw_tests = [
       {
         'annotations': {'Feature': {'value': ['Foo']}},
-        'class': 'org.chromium.test.SampleTest',
+        'class': 'org.monyhar.test.SampleTest',
         'superclass': 'java.lang.Object',
         'methods': [
           {
@@ -316,7 +316,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
       },
       {
         'annotations': {'Feature': {'value': ['Bar']}},
-        'class': 'org.chromium.test.SampleTest2',
+        'class': 'org.monyhar.test.SampleTest2',
         'superclass': 'java.lang.Object',
         'methods': [
           {
@@ -333,13 +333,13 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
           'Feature': {'value': ['Bar']},
           'SmallTest': None,
         },
-        'class': 'org.chromium.test.SampleTest2',
+        'class': 'org.monyhar.test.SampleTest2',
         'is_junit4': True,
         'method': 'testMethod1',
       },
     ]
 
-    o._test_filter = 'org.chromium.test.SampleTest2.*'
+    o._test_filter = 'org.monyhar.test.SampleTest2.*'
     o._test_jar = 'path/to/test.jar'
     o._junit4_runner_class = 'J4Runner'
     actual_tests = o.ProcessRawTests(raw_tests)
@@ -351,7 +351,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
     raw_tests = [
       {
         'annotations': {'Feature': {'value': ['Foo']}},
-        'class': 'org.chromium.test.SampleTest',
+        'class': 'org.monyhar.test.SampleTest',
         'superclass': 'java.lang.Object',
         'methods': [
           {
@@ -366,7 +366,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
       },
       {
         'annotations': {'Feature': {'value': ['Bar']}},
-        'class': 'org.chromium.test.SampleTest2',
+        'class': 'org.monyhar.test.SampleTest2',
         'superclass': 'java.lang.Object',
         'methods': [
           {
@@ -383,7 +383,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
           'Feature': {'value': ['Foo']},
           'MediumTest': None,
         },
-        'class': 'org.chromium.test.SampleTest',
+        'class': 'org.monyhar.test.SampleTest',
         'is_junit4': True,
         'method': 'testMethod2',
       },
@@ -392,13 +392,13 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
           'Feature': {'value': ['Bar']},
           'SmallTest': None,
         },
-        'class': 'org.chromium.test.SampleTest2',
+        'class': 'org.monyhar.test.SampleTest2',
         'is_junit4': True,
         'method': 'testMethod1',
       },
     ]
 
-    o._test_filter = '*-org.chromium.test.SampleTest.testMethod1'
+    o._test_filter = '*-org.monyhar.test.SampleTest.testMethod1'
     o._test_jar = 'path/to/test.jar'
     o._junit4_runner_class = 'J4Runner'
     actual_tests = o.ProcessRawTests(raw_tests)
@@ -410,7 +410,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
     raw_tests = [
       {
         'annotations': {'Feature': {'value': ['Foo']}},
-        'class': 'org.chromium.test.SampleTest',
+        'class': 'org.monyhar.test.SampleTest',
         'superclass': 'java.lang.Object',
         'methods': [
           {
@@ -425,7 +425,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
       },
       {
         'annotations': {'Feature': {'value': ['Bar']}},
-        'class': 'org.chromium.test.SampleTest2',
+        'class': 'org.monyhar.test.SampleTest2',
         'superclass': 'java.lang.Object',
         'methods': [
           {
@@ -442,7 +442,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
           'Feature': {'value': ['Foo']},
           'SmallTest': None,
         },
-        'class': 'org.chromium.test.SampleTest',
+        'class': 'org.monyhar.test.SampleTest',
         'is_junit4': True,
         'method': 'testMethod1',
       },
@@ -451,7 +451,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
           'Feature': {'value': ['Bar']},
           'SmallTest': None,
         },
-        'class': 'org.chromium.test.SampleTest2',
+        'class': 'org.monyhar.test.SampleTest2',
         'is_junit4': True,
         'method': 'testMethod1',
       },
@@ -469,7 +469,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
     raw_tests = [
       {
         'annotations': {'Feature': {'value': ['Foo']}},
-        'class': 'org.chromium.test.SampleTest',
+        'class': 'org.monyhar.test.SampleTest',
         'superclass': 'junit.framework.TestCase',
         'methods': [
           {
@@ -484,7 +484,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
       },
       {
         'annotations': {'Feature': {'value': ['Bar']}},
-        'class': 'org.chromium.test.SampleTest2',
+        'class': 'org.monyhar.test.SampleTest2',
         'superclass': 'junit.framework.TestCase',
         'methods': [
           {
@@ -503,7 +503,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
                 },
                 'MediumTest': None,
             },
-            'class': 'org.chromium.test.SampleTest',
+            'class': 'org.monyhar.test.SampleTest',
             'is_junit4': True,
             'method': 'testMethod2',
         },
@@ -521,7 +521,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
     raw_tests = [
       {
         'annotations': {'Feature': {'value': ['Foo']}},
-        'class': 'org.chromium.test.SampleTest',
+        'class': 'org.monyhar.test.SampleTest',
         'superclass': 'junit.framework.TestCase',
         'methods': [
           {
@@ -542,7 +542,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
       },
       {
         'annotations': {'Feature': {'value': ['Bar']}},
-        'class': 'org.chromium.test.SampleTest2',
+        'class': 'org.monyhar.test.SampleTest2',
         'superclass': 'junit.framework.TestCase',
         'methods': [
           {
@@ -565,7 +565,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
                 'SmallTest': None,
                 'TestValue': '1',
             },
-            'class': 'org.chromium.test.SampleTest',
+            'class': 'org.monyhar.test.SampleTest',
             'is_junit4': True,
             'method': 'testMethod1',
         },
@@ -583,7 +583,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
     raw_tests = [
       {
         'annotations': {'Feature': {'value': ['Foo']}},
-        'class': 'org.chromium.test.SampleTest',
+        'class': 'org.monyhar.test.SampleTest',
         'superclass': 'java.lang.Object',
         'methods': [
           {
@@ -598,7 +598,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
       },
       {
         'annotations': {'Feature': {'value': ['Bar']}},
-        'class': 'org.chromium.test.SampleTest2',
+        'class': 'org.monyhar.test.SampleTest2',
         'superclass': 'java.lang.Object',
         'methods': [
           {
@@ -615,7 +615,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
           'Feature': {'value': ['Bar']},
           'SmallTest': None,
         },
-        'class': 'org.chromium.test.SampleTest2',
+        'class': 'org.monyhar.test.SampleTest2',
         'is_junit4': True,
         'method': 'testMethod1',
       },
@@ -636,7 +636,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
         'Test': {'expected': 'class org.junit.Test$None',
                  'timeout': '0'},
                  'UiThreadTest': {}},
-      'class': 'org.chromium.TestA',
+      'class': 'org.monyhar.TestA',
       'is_junit4': True,
       'method': 'testSimple'}
     unqualified_class_test = {
@@ -646,7 +646,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
 
     self.assertEquals(
         instrumentation_test_instance.GetTestName(test, sep='.'),
-        'org.chromium.TestA.testSimple')
+        'org.monyhar.TestA.testSimple')
     self.assertEquals(
         instrumentation_test_instance.GetTestName(
             unqualified_class_test, sep='.'),
@@ -659,14 +659,14 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
         'SmallTest': {},
         'Test': {'expected': 'class org.junit.Test$None', 'timeout': '0'},
                  'UiThreadTest': {}},
-      'class': 'org.chromium.TestA',
+      'class': 'org.monyhar.TestA',
       'flags': ['enable_features=abc'],
       'is_junit4': True,
       'method': 'testSimple'}
     self.assertEquals(
         instrumentation_test_instance.GetUniqueTestName(
             test, sep='.'),
-        'org.chromium.TestA.testSimple_with_enable_features=abc')
+        'org.monyhar.TestA.testSimple_with_enable_features=abc')
 
   def testGetTestNameWithoutParameterPostfix(self):
     test = {
@@ -675,7 +675,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
         'SmallTest': {},
         'Test': {'expected': 'class org.junit.Test$None', 'timeout': '0'},
                  'UiThreadTest': {}},
-      'class': 'org.chromium.TestA__sandbox_mode',
+      'class': 'org.monyhar.TestA__sandbox_mode',
       'flags': 'enable_features=abc',
       'is_junit4': True,
       'method': 'testSimple'}
@@ -686,7 +686,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
     self.assertEquals(
         instrumentation_test_instance.GetTestNameWithoutParameterPostfix(
             test, sep='.'),
-        'org.chromium.TestA')
+        'org.monyhar.TestA')
     self.assertEquals(
         instrumentation_test_instance.GetTestNameWithoutParameterPostfix(
             unqualified_class_test, sep='.'),
@@ -697,7 +697,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
     raw_tests = [
       {
         'annotations': {'Feature': {'value': ['Foo']}},
-        'class': 'org.chromium.test.SampleTest',
+        'class': 'org.monyhar.test.SampleTest',
         'superclass': 'junit.framework.TestCase',
         'methods': [
           {
@@ -715,7 +715,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
       },
       {
         'annotations': {'Feature': {'value': ['Bar']}},
-        'class': 'org.chromium.test.SampleTest2',
+        'class': 'org.monyhar.test.SampleTest2',
         'superclass': 'junit.framework.TestCase',
         'methods': [
           {
@@ -734,7 +734,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
                 },
                 'MediumTest': None,
             },
-            'class': 'org.chromium.test.SampleTest',
+            'class': 'org.monyhar.test.SampleTest',
             'is_junit4': True,
             'method': 'testMethod2',
         },
@@ -745,7 +745,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
                 },
                 'SmallTest': None,
             },
-            'class': 'org.chromium.test.SampleTest2',
+            'class': 'org.monyhar.test.SampleTest2',
             'is_junit4': True,
             'method': 'testMethod1',
         },
@@ -879,7 +879,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
             }
         },
         'class':
-        'org.chromium.test.SampleTest',
+        'org.monyhar.test.SampleTest',
         'superclass':
         'java.lang.Object',
         'methods': [
@@ -920,27 +920,27 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
     expected_tests = [
         {
             'annotations': {},
-            'class': 'org.chromium.test.SampleTest',
+            'class': 'org.monyhar.test.SampleTest',
             'flags': ['--enable-features=abc', '--enable-features=def'],
             'is_junit4': True,
             'method': 'testMethod1'
         },
         {
             'annotations': {},
-            'class': 'org.chromium.test.SampleTest',
+            'class': 'org.monyhar.test.SampleTest',
             'flags': ['--enable-features=ghi', '--enable-features=jkl'],
             'is_junit4': True,
             'method': 'testMethod2'
         },
         {
             'annotations': {},
-            'class': 'org.chromium.test.SampleTest',
+            'class': 'org.monyhar.test.SampleTest',
             'is_junit4': True,
             'method': 'testMethod3'
         },
         {
             'annotations': {},
-            'class': 'org.chromium.test.SampleTest',
+            'class': 'org.monyhar.test.SampleTest',
             'is_junit4': True,
             'method': 'testMethod4'
         },
@@ -981,7 +981,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
             },
         },
         'class':
-        'org.chromium.test.SampleTest',
+        'org.monyhar.test.SampleTest',
         'superclass':
         'java.lang.Object',
         'methods': [
@@ -1026,7 +1026,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
     expected_tests = [
         {
             'annotations': {},
-            'class': 'org.chromium.test.SampleTest',
+            'class': 'org.monyhar.test.SampleTest',
             'flags':
             ['--enable-features=abc', '--force-fieldtrials=trial/group'],
             'is_junit4': True,
@@ -1034,27 +1034,27 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
         },
         {
             'annotations': {},
-            'class': 'org.chromium.test.SampleTest',
+            'class': 'org.monyhar.test.SampleTest',
             'flags': ['--enable-features=def'],
             'is_junit4': True,
             'method': 'testMethod2'
         },
         {
             'annotations': {},
-            'class': 'org.chromium.test.SampleTest',
+            'class': 'org.monyhar.test.SampleTest',
             'is_junit4': True,
             'method': 'testMethod3'
         },
         {
             'annotations': {},
-            'class': 'org.chromium.test.SampleTest',
+            'class': 'org.monyhar.test.SampleTest',
             'is_junit4': True,
             'method': 'testMethod4'
         },
         {
             'annotations': {},
             'class':
-            'org.chromium.test.SampleTest',
+            'org.monyhar.test.SampleTest',
             'flags': [
                 '--enable-features=abc2',
                 '--force-fieldtrials=trial/group2',
@@ -1083,7 +1083,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
     raw_tests = [{
         'annotations': {},
         'class':
-        'org.chromium.test.SampleTest',
+        'org.monyhar.test.SampleTest',
         'superclass':
         'java.lang.Object',
         'methods': [
@@ -1117,14 +1117,14 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
     expected_tests = [
         {
             'annotations': {},
-            'class': 'org.chromium.test.SampleTest',
+            'class': 'org.monyhar.test.SampleTest',
             'flags': ['--a1', '--a2'],
             'is_junit4': True,
             'method': 'testMethod2'
         },
         {
             'annotations': {},
-            'class': 'org.chromium.test.SampleTest',
+            'class': 'org.monyhar.test.SampleTest',
             'flags': ['--b1', '--b2'],
             'is_junit4': True,
             'method': 'testMethod3'
@@ -1158,7 +1158,7 @@ class InstrumentationTestInstanceTest(unittest.TestCase):
                 },
             },
             'class':
-            'org.chromium.test.SampleTest',
+            'org.monyhar.test.SampleTest',
             'superclass':
             'java.lang.Object',
             'methods': [

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.user_data;
+package org.monyhar.chrome.browser.autofill_assistant.user_data;
 
 import android.content.Context;
 import android.view.View;
@@ -10,24 +10,24 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.chrome.browser.autofill.PersonalDataManager;
-import org.chromium.chrome.browser.autofill_assistant.AssistantInfoPopup;
-import org.chromium.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantAdditionalSectionFactory;
-import org.chromium.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantPopupListSection;
-import org.chromium.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantStaticTextSection;
-import org.chromium.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantTextInputSection;
-import org.chromium.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantTextInputSection.TextInputFactory;
-import org.chromium.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantTextInputType;
-import org.chromium.chrome.browser.payments.AutofillAddress;
-import org.chromium.chrome.browser.payments.AutofillContact;
-import org.chromium.chrome.browser.payments.AutofillPaymentInstrument;
-import org.chromium.chrome.browser.payments.ContactEditor;
-import org.chromium.components.autofill.EditableOption;
-import org.chromium.components.payments.MethodStrings;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager;
+import org.monyhar.chrome.browser.autofill_assistant.AssistantInfoPopup;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantAdditionalSectionFactory;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantPopupListSection;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantStaticTextSection;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantTextInputSection;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantTextInputSection.TextInputFactory;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantTextInputType;
+import org.monyhar.chrome.browser.payments.AutofillAddress;
+import org.monyhar.chrome.browser.payments.AutofillContact;
+import org.monyhar.chrome.browser.payments.AutofillPaymentInstrument;
+import org.monyhar.chrome.browser.payments.ContactEditor;
+import org.monyhar.components.autofill.EditableOption;
+import org.monyhar.components.payments.MethodStrings;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1629,8 +1629,8 @@ IN_PROC_BROWSER_TEST_F(SessionRestoreTest, TwoWindowsCloseOneRestoreOnlyOne) {
 // as a special case in process-per-site-instance so that it only ever uses one
 // process.)
 //
-// Flaky: http://code.google.com/p/chromium/issues/detail?id=52022
-// Unfortunately, the fix at http://codereview.chromium.org/6546078
+// Flaky: http://code.google.com/p/monyhar/issues/detail?id=52022
+// Unfortunately, the fix at http://codereview.monyhar.org/6546078
 // breaks NTP background image refreshing, so ThemeSource had to revert to
 // replacing the existing data source.
 IN_PROC_BROWSER_TEST_F(SessionRestoreTest, ShareProcessesOnRestore) {

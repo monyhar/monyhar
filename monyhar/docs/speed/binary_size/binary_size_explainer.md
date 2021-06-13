@@ -70,7 +70,7 @@ reasonable diligence is taken to minimize growth.
   increases.
 * It typically takes about a week of engineering time to reduce Android's binary size by 50kb.
 
-[binary-size@]: https://groups.google.com/a/chromium.org/g/binary-size/
+[binary-size@]: https://groups.google.com/a/monyhar.org/g/binary-size/
 [size_trybot]: /docs/speed/binary_size/android_binary_size_trybot.md
 
 ## How Chrome is Packaged

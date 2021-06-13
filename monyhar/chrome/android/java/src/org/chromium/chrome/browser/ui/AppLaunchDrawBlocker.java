@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui;
+package org.monyhar.chrome.browser.ui;
 
 import android.content.Intent;
 import android.os.SystemClock;
@@ -13,22 +13,22 @@ import androidx.annotation.IntDef;
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.homepage.HomepageManager;
-import org.chromium.chrome.browser.incognito.IncognitoTabLauncher;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.lifecycle.InflationObserver;
-import org.chromium.chrome.browser.lifecycle.StartStopWithNativeObserver;
-import org.chromium.chrome.browser.ntp.NewTabPage;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.search_engines.TemplateUrlServiceFactory;
-import org.chromium.chrome.browser.tabmodel.TabPersistentStore;
-import org.chromium.chrome.browser.tabmodel.TabPersistentStore.ActiveTabState;
-import org.chromium.chrome.features.start_surface.StartSurfaceConfiguration;
-import org.chromium.components.embedder_support.util.UrlUtilities;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.homepage.HomepageManager;
+import org.monyhar.chrome.browser.incognito.IncognitoTabLauncher;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.lifecycle.InflationObserver;
+import org.monyhar.chrome.browser.lifecycle.StartStopWithNativeObserver;
+import org.monyhar.chrome.browser.ntp.NewTabPage;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.search_engines.TemplateUrlServiceFactory;
+import org.monyhar.chrome.browser.tabmodel.TabPersistentStore;
+import org.monyhar.chrome.browser.tabmodel.TabPersistentStore.ActiveTabState;
+import org.monyhar.chrome.features.start_surface.StartSurfaceConfiguration;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

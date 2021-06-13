@@ -310,7 +310,7 @@ class _Metadata(object):
   #       "path": "path.jar",
   #       "tag": "{MD5 of entries}",
   #       "entries": [
-  #         { "path": "org/chromium/base/Foo.class", "tag": "{CRC32}" }, ...
+  #         { "path": "org/monyhar/base/Foo.class", "tag": "{CRC32}" }, ...
   #       ]
   #     }, {
   #       "path": "path.txt",

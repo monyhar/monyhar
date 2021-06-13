@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.video_tutorials;
+package org.monyhar.chrome.browser.video_tutorials;
 
 import static org.junit.Assert.assertEquals;
 
@@ -13,12 +13,12 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.metrics.test.ShadowRecordHistogram;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.video_tutorials.PlaybackStateObserver.WatchStateInfo;
-import org.chromium.chrome.browser.video_tutorials.PlaybackStateObserver.WatchStateInfo.State;
-import org.chromium.content_public.browser.MediaSession;
-import org.chromium.services.media_session.MediaPosition;
+import org.monyhar.base.metrics.test.ShadowRecordHistogram;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.video_tutorials.PlaybackStateObserver.WatchStateInfo;
+import org.monyhar.chrome.browser.video_tutorials.PlaybackStateObserver.WatchStateInfo.State;
+import org.monyhar.content_public.browser.MediaSession;
+import org.monyhar.services.media_session.MediaPosition;
 
 /**
  * Tests for {@link PlaybackStateObserver}.

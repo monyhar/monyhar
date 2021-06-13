@@ -5,7 +5,7 @@
 syntax = "proto2";
 
 option optimize_for = LITE_RUNTIME;
-option java_package = "org.chromium.components.metrics";
+option java_package = "org.monyhar.components.metrics";
 
 option java_outer_classname = "TranslateEventProtos";
 
@@ -19,7 +19,7 @@ package metrics;
 message TranslateEventProto {
   // Language strings are two or three letter codes, with sometimes an extra
   // suffix (for e.g. chinese zh-TW or zh-CN). See
-  // https://cs.chromium.org/chromium/src/components/translate/core/browser/translate_language_list.cc
+  // https://cs.monyhar.org/monyhar/src/components/translate/core/browser/translate_language_list.cc
   // for a list of supported languages.
   // Source language of the translation.
   optional string source_language = 1;

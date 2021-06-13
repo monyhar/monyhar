@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ntp.search;
+package org.monyhar.chrome.browser.ntp.search;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -12,12 +12,12 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.lens.LensEntryPoint;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.ui.base.DeviceFormFactor;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.lens.LensEntryPoint;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.ui.base.DeviceFormFactor;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * This class is responsible for reacting to events from the outside world, interacting with other

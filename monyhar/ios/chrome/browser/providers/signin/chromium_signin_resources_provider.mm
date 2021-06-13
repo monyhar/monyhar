@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#import "ios/chrome/browser/providers/signin/chromium_signin_resources_provider.h"
+#import "ios/chrome/browser/providers/signin/monyhar_signin_resources_provider.h"
 
 #import <UIKit/UIKit.h>
 

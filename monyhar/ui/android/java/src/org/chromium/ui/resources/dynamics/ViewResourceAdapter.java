@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.resources.dynamics;
+package org.monyhar.ui.resources.dynamics;
 
 import android.annotation.TargetApi;
 import android.graphics.Bitmap;
@@ -21,15 +21,15 @@ import android.view.View;
 import android.view.View.OnLayoutChangeListener;
 import android.view.ViewGroup;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.TraceEvent;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.task.SequencedTaskRunner;
-import org.chromium.base.task.TaskTraits;
-import org.chromium.ui.resources.Resource;
-import org.chromium.ui.resources.ResourceFactory;
-import org.chromium.ui.resources.statics.NinePatchData;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.task.SequencedTaskRunner;
+import org.monyhar.base.task.TaskTraits;
+import org.monyhar.ui.resources.Resource;
+import org.monyhar.ui.resources.ResourceFactory;
+import org.monyhar.ui.resources.statics.NinePatchData;
 
 import java.nio.ByteBuffer;
 import java.util.concurrent.atomic.AtomicInteger;

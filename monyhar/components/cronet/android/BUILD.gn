@@ -36,11 +36,11 @@ buildflag_header("buildflags") {
 
 generate_jni("cronet_jni_headers") {
   sources = [
-    "java/src/org/chromium/net/impl/CronetBidirectionalStream.java",
-    "java/src/org/chromium/net/impl/CronetLibraryLoader.java",
-    "java/src/org/chromium/net/impl/CronetUploadDataStream.java",
-    "java/src/org/chromium/net/impl/CronetUrlRequest.java",
-    "java/src/org/chromium/net/impl/CronetUrlRequestContext.java",
+    "java/src/org/monyhar/net/impl/CronetBidirectionalStream.java",
+    "java/src/org/monyhar/net/impl/CronetLibraryLoader.java",
+    "java/src/org/monyhar/net/impl/CronetUploadDataStream.java",
+    "java/src/org/monyhar/net/impl/CronetUrlRequest.java",
+    "java/src/org/monyhar/net/impl/CronetUrlRequestContext.java",
   ]
 }
 
@@ -48,10 +48,10 @@ generate_jni_registration("cronet_jni_registration") {
   targets = [ ":cronet_impl_native_base_java" ]
   header_output = _jni_registration_header
   sources_exclusions = [
-    "//base/android/java/src/org/chromium/base/library_loader/LibraryLoader.java",
-    "//base/android/java/src/org/chromium/base/library_loader/LibraryPrefetcher.java",
-    "//base/android/java/src/org/chromium/base/process_launcher/ChildProcessService.java",
-    "//base/android/java/src/org/chromium/base/SysUtils.java",
+    "//base/android/java/src/org/monyhar/base/library_loader/LibraryLoader.java",
+    "//base/android/java/src/org/monyhar/base/library_loader/LibraryPrefetcher.java",
+    "//base/android/java/src/org/monyhar/base/process_launcher/ChildProcessService.java",
+    "//base/android/java/src/org/monyhar/base/SysUtils.java",
   ]
 }
 
@@ -84,23 +84,23 @@ java_cpp_enum("http_cache_type_java") {
 }
 
 java_cpp_template("load_states_list") {
-  sources = [ "java/src/org/chromium/net/impl/LoadState.template" ]
+  sources = [ "java/src/org/monyhar/net/impl/LoadState.template" ]
   inputs = [ "//net/base/load_states_list.h" ]
 }
 
 java_cpp_template("integrated_mode_state") {
-  sources = [ "java/src/org/chromium/net/impl/IntegratedModeState.template" ]
+  sources = [ "java/src/org/monyhar/net/impl/IntegratedModeState.template" ]
   if (integrated_mode) {
     defines = [ "INTEGRATED_MODE" ]
   }
 }
 
-_generated_api_version_java = "$_templates_dir/org/chromium/net/ApiVersion.java"
+_generated_api_version_java = "$_templates_dir/org/monyhar/net/ApiVersion.java"
 _api_level = read_file("api_version.txt", "value")
 
 process_version("api_version") {
   process_only = true
-  template_file = "api/src/org/chromium/net/ApiVersion.template"
+  template_file = "api/src/org/monyhar/net/ApiVersion.template"
   sources = [
     "//chrome/VERSION",
     lastchange_file,
@@ -113,11 +113,11 @@ process_version("api_version") {
 }
 
 _generated_impl_version_java =
-    "$_templates_dir/org/chromium/net/impl/ImplVersion.java"
+    "$_templates_dir/org/monyhar/net/impl/ImplVersion.java"
 
 process_version("impl_version") {
   process_only = true
-  template_file = "java/src/org/chromium/net/impl/ImplVersion.template"
+  template_file = "java/src/org/monyhar/net/impl/ImplVersion.template"
   sources = [
     "//chrome/VERSION",
     lastchange_file,
@@ -224,26 +224,26 @@ sizes_test("cronet_sizes") {
 # cronet_api_java.jar defines Cronet API.
 android_library("cronet_api_java") {
   sources = [
-    "api/src/org/chromium/net/BidirectionalStream.java",
-    "api/src/org/chromium/net/CallbackException.java",
-    "api/src/org/chromium/net/CronetEngine.java",
-    "api/src/org/chromium/net/CronetException.java",
-    "api/src/org/chromium/net/CronetProvider.java",
-    "api/src/org/chromium/net/ExperimentalBidirectionalStream.java",
-    "api/src/org/chromium/net/ExperimentalCronetEngine.java",
-    "api/src/org/chromium/net/ExperimentalUrlRequest.java",
-    "api/src/org/chromium/net/ICronetEngineBuilder.java",
-    "api/src/org/chromium/net/InlineExecutionProhibitedException.java",
-    "api/src/org/chromium/net/NetworkException.java",
-    "api/src/org/chromium/net/NetworkQualityRttListener.java",
-    "api/src/org/chromium/net/NetworkQualityThroughputListener.java",
-    "api/src/org/chromium/net/QuicException.java",
-    "api/src/org/chromium/net/RequestFinishedInfo.java",
-    "api/src/org/chromium/net/UploadDataProvider.java",
-    "api/src/org/chromium/net/UploadDataProviders.java",
-    "api/src/org/chromium/net/UploadDataSink.java",
-    "api/src/org/chromium/net/UrlRequest.java",
-    "api/src/org/chromium/net/UrlResponseInfo.java",
+    "api/src/org/monyhar/net/BidirectionalStream.java",
+    "api/src/org/monyhar/net/CallbackException.java",
+    "api/src/org/monyhar/net/CronetEngine.java",
+    "api/src/org/monyhar/net/CronetException.java",
+    "api/src/org/monyhar/net/CronetProvider.java",
+    "api/src/org/monyhar/net/ExperimentalBidirectionalStream.java",
+    "api/src/org/monyhar/net/ExperimentalCronetEngine.java",
+    "api/src/org/monyhar/net/ExperimentalUrlRequest.java",
+    "api/src/org/monyhar/net/ICronetEngineBuilder.java",
+    "api/src/org/monyhar/net/InlineExecutionProhibitedException.java",
+    "api/src/org/monyhar/net/NetworkException.java",
+    "api/src/org/monyhar/net/NetworkQualityRttListener.java",
+    "api/src/org/monyhar/net/NetworkQualityThroughputListener.java",
+    "api/src/org/monyhar/net/QuicException.java",
+    "api/src/org/monyhar/net/RequestFinishedInfo.java",
+    "api/src/org/monyhar/net/UploadDataProvider.java",
+    "api/src/org/monyhar/net/UploadDataProviders.java",
+    "api/src/org/monyhar/net/UploadDataSink.java",
+    "api/src/org/monyhar/net/UrlRequest.java",
+    "api/src/org/monyhar/net/UrlResponseInfo.java",
     _generated_api_version_java,
   ]
 
@@ -268,19 +268,19 @@ cronet_impl_common_java_deps_to_package =
 # by all Cronet engine implementations.
 android_library("cronet_impl_common_base_java") {
   sources = [
-    "java/src/org/chromium/net/impl/CallbackExceptionImpl.java",
-    "java/src/org/chromium/net/impl/CronetEngineBase.java",
-    "java/src/org/chromium/net/impl/CronetEngineBuilderImpl.java",
-    "java/src/org/chromium/net/impl/CronetExceptionImpl.java",
-    "java/src/org/chromium/net/impl/NetworkExceptionImpl.java",
-    "java/src/org/chromium/net/impl/Preconditions.java",
-    "java/src/org/chromium/net/impl/QuicExceptionImpl.java",
-    "java/src/org/chromium/net/impl/RequestFinishedInfoImpl.java",
-    "java/src/org/chromium/net/impl/UrlRequestBase.java",
-    "java/src/org/chromium/net/impl/UrlRequestBuilderImpl.java",
-    "java/src/org/chromium/net/impl/UrlResponseInfoImpl.java",
-    "java/src/org/chromium/net/impl/UserAgent.java",
-    "java/src/org/chromium/net/impl/VersionSafeCallbacks.java",
+    "java/src/org/monyhar/net/impl/CallbackExceptionImpl.java",
+    "java/src/org/monyhar/net/impl/CronetEngineBase.java",
+    "java/src/org/monyhar/net/impl/CronetEngineBuilderImpl.java",
+    "java/src/org/monyhar/net/impl/CronetExceptionImpl.java",
+    "java/src/org/monyhar/net/impl/NetworkExceptionImpl.java",
+    "java/src/org/monyhar/net/impl/Preconditions.java",
+    "java/src/org/monyhar/net/impl/QuicExceptionImpl.java",
+    "java/src/org/monyhar/net/impl/RequestFinishedInfoImpl.java",
+    "java/src/org/monyhar/net/impl/UrlRequestBase.java",
+    "java/src/org/monyhar/net/impl/UrlRequestBuilderImpl.java",
+    "java/src/org/monyhar/net/impl/UrlResponseInfoImpl.java",
+    "java/src/org/monyhar/net/impl/UserAgent.java",
+    "java/src/org/monyhar/net/impl/VersionSafeCallbacks.java",
     _generated_impl_version_java,
   ]
 
@@ -299,8 +299,8 @@ android_library("cronet_impl_common_base_java") {
 # cronet_impl_java_util_java.jar - Classes shared between Java Cronet implementations.
 android_library("cronet_impl_java_util_java") {
   sources = [
-    "java/src/org/chromium/net/impl/JavaUploadDataSinkBase.java",
-    "java/src/org/chromium/net/impl/JavaUrlRequestUtils.java",
+    "java/src/org/monyhar/net/impl/JavaUploadDataSinkBase.java",
+    "java/src/org/monyhar/net/impl/JavaUrlRequestUtils.java",
   ]
 
   deps = [
@@ -312,11 +312,11 @@ android_library("cronet_impl_java_util_java") {
 # cronet_impl_platform_base_java.jar - Java platform based implementation of the Cronet engine.
 android_library("cronet_impl_platform_base_java") {
   sources = [
-    "java/src/org/chromium/net/impl/InputStreamChannel.java",
-    "java/src/org/chromium/net/impl/JavaCronetEngine.java",
-    "java/src/org/chromium/net/impl/JavaCronetEngineBuilderImpl.java",
-    "java/src/org/chromium/net/impl/JavaCronetProvider.java",
-    "java/src/org/chromium/net/impl/JavaUrlRequest.java",
+    "java/src/org/monyhar/net/impl/InputStreamChannel.java",
+    "java/src/org/monyhar/net/impl/JavaCronetEngine.java",
+    "java/src/org/monyhar/net/impl/JavaCronetEngineBuilderImpl.java",
+    "java/src/org/monyhar/net/impl/JavaCronetProvider.java",
+    "java/src/org/monyhar/net/impl/JavaUrlRequest.java",
   ]
 
   deps = [
@@ -332,13 +332,13 @@ android_library("cronet_impl_platform_base_java") {
 # cronet_impl_fake_base_java.jar - Fake implementation of Cronet.
 android_library("cronet_impl_fake_base_java") {
   sources = [
-    "fake/java/org/chromium/net/test/FakeCronetController.java",
-    "fake/java/org/chromium/net/test/FakeCronetEngine.java",
-    "fake/java/org/chromium/net/test/FakeCronetProvider.java",
-    "fake/java/org/chromium/net/test/FakeUrlRequest.java",
-    "fake/java/org/chromium/net/test/FakeUrlResponse.java",
-    "fake/java/org/chromium/net/test/ResponseMatcher.java",
-    "fake/java/org/chromium/net/test/UrlResponseMatcher.java",
+    "fake/java/org/monyhar/net/test/FakeCronetController.java",
+    "fake/java/org/monyhar/net/test/FakeCronetEngine.java",
+    "fake/java/org/monyhar/net/test/FakeCronetProvider.java",
+    "fake/java/org/monyhar/net/test/FakeUrlRequest.java",
+    "fake/java/org/monyhar/net/test/FakeUrlResponse.java",
+    "fake/java/org/monyhar/net/test/ResponseMatcher.java",
+    "fake/java/org/monyhar/net/test/UrlResponseMatcher.java",
   ]
 
   deps = [
@@ -367,15 +367,15 @@ cronet_impl_native_java_deps_to_package = [
 
 android_library("cronet_urlconnection_impl_java") {
   sources = [
-    "java/src/org/chromium/net/urlconnection/CronetBufferedOutputStream.java",
-    "java/src/org/chromium/net/urlconnection/CronetChunkedOutputStream.java",
-    "java/src/org/chromium/net/urlconnection/CronetFixedModeOutputStream.java",
-    "java/src/org/chromium/net/urlconnection/CronetHttpURLConnection.java",
-    "java/src/org/chromium/net/urlconnection/CronetHttpURLStreamHandler.java",
-    "java/src/org/chromium/net/urlconnection/CronetInputStream.java",
-    "java/src/org/chromium/net/urlconnection/CronetOutputStream.java",
-    "java/src/org/chromium/net/urlconnection/CronetURLStreamHandlerFactory.java",
-    "java/src/org/chromium/net/urlconnection/MessageLoop.java",
+    "java/src/org/monyhar/net/urlconnection/CronetBufferedOutputStream.java",
+    "java/src/org/monyhar/net/urlconnection/CronetChunkedOutputStream.java",
+    "java/src/org/monyhar/net/urlconnection/CronetFixedModeOutputStream.java",
+    "java/src/org/monyhar/net/urlconnection/CronetHttpURLConnection.java",
+    "java/src/org/monyhar/net/urlconnection/CronetHttpURLStreamHandler.java",
+    "java/src/org/monyhar/net/urlconnection/CronetInputStream.java",
+    "java/src/org/monyhar/net/urlconnection/CronetOutputStream.java",
+    "java/src/org/monyhar/net/urlconnection/CronetURLStreamHandlerFactory.java",
+    "java/src/org/monyhar/net/urlconnection/MessageLoop.java",
   ]
   deps = [
     ":cronet_api_java",
@@ -386,17 +386,17 @@ android_library("cronet_urlconnection_impl_java") {
 # cronet_impl_native_base_java.jar - native implementation of the Cronet engine.
 android_library("cronet_impl_native_base_java") {
   sources = [
-    "java/src/org/chromium/net/impl/BidirectionalStreamBuilderImpl.java",
-    "java/src/org/chromium/net/impl/BidirectionalStreamNetworkException.java",
-    "java/src/org/chromium/net/impl/CronetBidirectionalStream.java",
-    "java/src/org/chromium/net/impl/CronetLibraryLoader.java",
-    "java/src/org/chromium/net/impl/CronetMetrics.java",
-    "java/src/org/chromium/net/impl/CronetUploadDataStream.java",
-    "java/src/org/chromium/net/impl/CronetUrlRequest.java",
-    "java/src/org/chromium/net/impl/CronetUrlRequestContext.java",
-    "java/src/org/chromium/net/impl/NativeCronetEngineBuilderImpl.java",
-    "java/src/org/chromium/net/impl/NativeCronetEngineBuilderWithLibraryLoaderImpl.java",
-    "java/src/org/chromium/net/impl/NativeCronetProvider.java",
+    "java/src/org/monyhar/net/impl/BidirectionalStreamBuilderImpl.java",
+    "java/src/org/monyhar/net/impl/BidirectionalStreamNetworkException.java",
+    "java/src/org/monyhar/net/impl/CronetBidirectionalStream.java",
+    "java/src/org/monyhar/net/impl/CronetLibraryLoader.java",
+    "java/src/org/monyhar/net/impl/CronetMetrics.java",
+    "java/src/org/monyhar/net/impl/CronetUploadDataStream.java",
+    "java/src/org/monyhar/net/impl/CronetUrlRequest.java",
+    "java/src/org/monyhar/net/impl/CronetUrlRequestContext.java",
+    "java/src/org/monyhar/net/impl/NativeCronetEngineBuilderImpl.java",
+    "java/src/org/monyhar/net/impl/NativeCronetEngineBuilderWithLibraryLoaderImpl.java",
+    "java/src/org/monyhar/net/impl/NativeCronetProvider.java",
   ]
 
   # Adding deps here won't include those deps in the cronet_impl_native_java.jar.
@@ -437,11 +437,11 @@ android_resources("cronet_sample_apk_resources") {
 
 android_library("cronet_sample_apk_java") {
   sources = [
-    "sample/src/org/chromium/cronet_sample_apk/CronetSampleActivity.java",
-    "sample/src/org/chromium/cronet_sample_apk/CronetSampleApplication.java",
+    "sample/src/org/monyhar/cronet_sample_apk/CronetSampleActivity.java",
+    "sample/src/org/monyhar/cronet_sample_apk/CronetSampleApplication.java",
   ]
 
-  resources_package = "org.chromium.cronet_sample_apk"
+  resources_package = "org.monyhar.cronet_sample_apk"
   deps = [
     ":cronet_sample_apk_resources",
     ":package_api_java",
@@ -471,7 +471,7 @@ android_apk("cronet_sample_apk") {
     proguard_configs = [
       "$target_gen_dir/cronet_impl_native_proguard.cfg",
       "cronet_impl_common_proguard.cfg",
-      "//base/android/proguard/chromium_apk.flags",
+      "//base/android/proguard/monyhar_apk.flags",
     ]
   }
 }
@@ -484,7 +484,7 @@ android_resource_sizes_test("resource_sizes_cronet_sample_apk") {
 action("cronet_combine_proguard_flags") {
   script = "//components/cronet/tools/generate_proguard_file.py"
   sources = [
-    "//base/android/proguard/chromium_code.flags",
+    "//base/android/proguard/monyhar_code.flags",
 
     # Massage the proguard to avoid incompatibilities when building internally.
     "//components/cronet/android/cronet_impl_native_proguard.cfg",
@@ -673,9 +673,9 @@ _jar_excluded_patterns = [
   "*/multidex/*.class",
   "*/process_launcher/*.class",
   "*/SysUtils*.class",
-  "org/chromium/base/FeatureList*.class",
-  "org/chromium/base/jank_tracker/*.class",
-  "org/chromium/base/memory/MemoryPressureMonitor*.class",
+  "org/monyhar/base/FeatureList*.class",
+  "org/monyhar/base/jank_tracker/*.class",
+  "org/monyhar/base/memory/MemoryPressureMonitor*.class",
 ]
 
 template("repackage_jars") {
@@ -771,7 +771,7 @@ if (!is_component_build) {
     apk_name = "CronetSampleTest"
     apk_under_test = ":cronet_sample_apk"
     android_manifest = "sample/javatests/AndroidManifest.xml"
-    sources = [ "sample/javatests/src/org/chromium/cronet_sample_apk/CronetSampleTest.java" ]
+    sources = [ "sample/javatests/src/org/monyhar/cronet_sample_apk/CronetSampleTest.java" ]
     deps = [
       ":cronet_sample_apk_java",
       "//third_party/android_deps:espresso_java",
@@ -791,15 +791,15 @@ if (!is_component_build) {
   generate_jni("cronet_tests_jni_headers") {
     testonly = true
     sources = [
-      "test/javatests/src/org/chromium/net/CronetUrlRequestContextTest.java",
-      "test/javatests/src/org/chromium/net/CronetUrlRequestTest.java",
-      "test/javatests/src/org/chromium/net/ExperimentalOptionsTest.java",
-      "test/src/org/chromium/net/CronetTestUtil.java",
-      "test/src/org/chromium/net/MockCertVerifier.java",
-      "test/src/org/chromium/net/MockUrlRequestJobFactory.java",
-      "test/src/org/chromium/net/NativeTestServer.java",
-      "test/src/org/chromium/net/QuicTestServer.java",
-      "test/src/org/chromium/net/TestUploadDataStreamHandler.java",
+      "test/javatests/src/org/monyhar/net/CronetUrlRequestContextTest.java",
+      "test/javatests/src/org/monyhar/net/CronetUrlRequestTest.java",
+      "test/javatests/src/org/monyhar/net/ExperimentalOptionsTest.java",
+      "test/src/org/monyhar/net/CronetTestUtil.java",
+      "test/src/org/monyhar/net/MockCertVerifier.java",
+      "test/src/org/monyhar/net/MockUrlRequestJobFactory.java",
+      "test/src/org/monyhar/net/NativeTestServer.java",
+      "test/src/org/monyhar/net/QuicTestServer.java",
+      "test/src/org/monyhar/net/TestUploadDataStreamHandler.java",
     ]
   }
 
@@ -865,17 +865,17 @@ if (!is_component_build) {
     testonly = true
 
     sources = [
-      "test/src/org/chromium/net/CronetTestApplication.java",
-      "test/src/org/chromium/net/CronetTestUtil.java",
-      "test/src/org/chromium/net/Http2TestHandler.java",
-      "test/src/org/chromium/net/Http2TestServer.java",
-      "test/src/org/chromium/net/MockCertVerifier.java",
-      "test/src/org/chromium/net/MockUrlRequestJobFactory.java",
-      "test/src/org/chromium/net/NativeTestServer.java",
-      "test/src/org/chromium/net/QuicTestServer.java",
-      "test/src/org/chromium/net/ReportingCollector.java",
-      "test/src/org/chromium/net/TestFilesInstaller.java",
-      "test/src/org/chromium/net/TestUploadDataStreamHandler.java",
+      "test/src/org/monyhar/net/CronetTestApplication.java",
+      "test/src/org/monyhar/net/CronetTestUtil.java",
+      "test/src/org/monyhar/net/Http2TestHandler.java",
+      "test/src/org/monyhar/net/Http2TestServer.java",
+      "test/src/org/monyhar/net/MockCertVerifier.java",
+      "test/src/org/monyhar/net/MockUrlRequestJobFactory.java",
+      "test/src/org/monyhar/net/NativeTestServer.java",
+      "test/src/org/monyhar/net/QuicTestServer.java",
+      "test/src/org/monyhar/net/ReportingCollector.java",
+      "test/src/org/monyhar/net/TestFilesInstaller.java",
+      "test/src/org/monyhar/net/TestUploadDataStreamHandler.java",
     ]
 
     deps = [
@@ -891,25 +891,25 @@ if (!is_component_build) {
   }
 
   cronet_smoketests_platform_only_common_srcs = [
-    "test/smoketests/src/org/chromium/net/smoke/ChromiumPlatformOnlyTestSupport.java",
-    "test/smoketests/src/org/chromium/net/smoke/CronetSmokeTestRule.java",
-    "test/smoketests/src/org/chromium/net/smoke/HttpTestServer.java",
-    "test/smoketests/src/org/chromium/net/smoke/SmokeTestRequestCallback.java",
-    "test/smoketests/src/org/chromium/net/smoke/TestSupport.java",
+    "test/smoketests/src/org/monyhar/net/smoke/ChromiumPlatformOnlyTestSupport.java",
+    "test/smoketests/src/org/monyhar/net/smoke/CronetSmokeTestRule.java",
+    "test/smoketests/src/org/monyhar/net/smoke/HttpTestServer.java",
+    "test/smoketests/src/org/monyhar/net/smoke/SmokeTestRequestCallback.java",
+    "test/smoketests/src/org/monyhar/net/smoke/TestSupport.java",
   ]
 
   cronet_smoketests_native_common_srcs = cronet_smoketests_platform_only_common_srcs + [
-                                           "test/smoketests/src/org/chromium/net/smoke/ChromiumNativeTestSupport.java",
-                                           "test/smoketests/src/org/chromium/net/smoke/NativeCronetTestRule.java",
+                                           "test/smoketests/src/org/monyhar/net/smoke/ChromiumNativeTestSupport.java",
+                                           "test/smoketests/src/org/monyhar/net/smoke/NativeCronetTestRule.java",
                                          ]
 
   # cronet_common_javatests.jar - Cronet Java test common files.
   android_library("cronet_common_javatests") {
     testonly = true
     sources = [
-      "test/javatests/src/org/chromium/net/CronetTestRule.java",
-      "test/javatests/src/org/chromium/net/TestUploadDataProvider.java",
-      "test/javatests/src/org/chromium/net/TestUrlRequestCallback.java",
+      "test/javatests/src/org/monyhar/net/CronetTestRule.java",
+      "test/javatests/src/org/monyhar/net/TestUploadDataProvider.java",
+      "test/javatests/src/org/monyhar/net/TestUrlRequestCallback.java",
     ]
     deps = [
       ":cronet_api_java",
@@ -925,12 +925,12 @@ if (!is_component_build) {
   android_library("cronet_fake_javatests") {
     testonly = true
     sources = [
-      "fake/javatests/org/chromium/net/test/FakeCronetControllerTest.java",
-      "fake/javatests/org/chromium/net/test/FakeCronetEngineTest.java",
-      "fake/javatests/org/chromium/net/test/FakeCronetProviderTest.java",
-      "fake/javatests/org/chromium/net/test/FakeUrlRequestTest.java",
-      "fake/javatests/org/chromium/net/test/FakeUrlResponseTest.java",
-      "fake/javatests/org/chromium/net/test/UrlResponseMatcherTest.java",
+      "fake/javatests/org/monyhar/net/test/FakeCronetControllerTest.java",
+      "fake/javatests/org/monyhar/net/test/FakeCronetEngineTest.java",
+      "fake/javatests/org/monyhar/net/test/FakeCronetProviderTest.java",
+      "fake/javatests/org/monyhar/net/test/FakeUrlRequestTest.java",
+      "fake/javatests/org/monyhar/net/test/FakeUrlResponseTest.java",
+      "fake/javatests/org/monyhar/net/test/UrlResponseMatcherTest.java",
     ]
 
     deps = [
@@ -974,42 +974,42 @@ if (!is_component_build) {
     testonly = true
 
     sources = [
-      "test/javatests/src/org/chromium/net/BidirectionalStreamQuicTest.java",
-      "test/javatests/src/org/chromium/net/BidirectionalStreamTest.java",
-      "test/javatests/src/org/chromium/net/BrotliTest.java",
-      "test/javatests/src/org/chromium/net/Criteria.java",
-      "test/javatests/src/org/chromium/net/CronetEngineBuilderTest.java",
-      "test/javatests/src/org/chromium/net/CronetStressTest.java",
-      "test/javatests/src/org/chromium/net/CronetTestRuleTest.java",
-      "test/javatests/src/org/chromium/net/CronetUploadTest.java",
-      "test/javatests/src/org/chromium/net/CronetUrlRequestContextTest.java",
-      "test/javatests/src/org/chromium/net/CronetUrlRequestTest.java",
-      "test/javatests/src/org/chromium/net/DiskStorageTest.java",
-      "test/javatests/src/org/chromium/net/ExperimentalOptionsTest.java",
-      "test/javatests/src/org/chromium/net/GetStatusTest.java",
-      "test/javatests/src/org/chromium/net/MetricsTestUtil.java",
-      "test/javatests/src/org/chromium/net/NQETest.java",
-      "test/javatests/src/org/chromium/net/NetworkChangeNotifierTest.java",
-      "test/javatests/src/org/chromium/net/NetworkErrorLoggingTest.java",
-      "test/javatests/src/org/chromium/net/PkpTest.java",
-      "test/javatests/src/org/chromium/net/QuicTest.java",
-      "test/javatests/src/org/chromium/net/RequestFinishedInfoTest.java",
-      "test/javatests/src/org/chromium/net/TestBidirectionalStreamCallback.java",
-      "test/javatests/src/org/chromium/net/TestDrivenDataProvider.java",
-      "test/javatests/src/org/chromium/net/TestNetworkQualityRttListener.java",
-      "test/javatests/src/org/chromium/net/TestNetworkQualityThroughputListener.java",
-      "test/javatests/src/org/chromium/net/UploadDataProvidersTest.java",
-      "test/javatests/src/org/chromium/net/UrlResponseInfoTest.java",
-      "test/javatests/src/org/chromium/net/urlconnection/CronetBufferedOutputStreamTest.java",
-      "test/javatests/src/org/chromium/net/urlconnection/CronetChunkedOutputStreamTest.java",
-      "test/javatests/src/org/chromium/net/urlconnection/CronetFixedModeOutputStreamTest.java",
-      "test/javatests/src/org/chromium/net/urlconnection/CronetHttpURLConnectionTest.java",
-      "test/javatests/src/org/chromium/net/urlconnection/CronetHttpURLStreamHandlerTest.java",
-      "test/javatests/src/org/chromium/net/urlconnection/CronetInputStreamTest.java",
-      "test/javatests/src/org/chromium/net/urlconnection/CronetURLStreamHandlerFactoryTest.java",
-      "test/javatests/src/org/chromium/net/urlconnection/MessageLoopTest.java",
-      "test/javatests/src/org/chromium/net/urlconnection/QuicUploadTest.java",
-      "test/javatests/src/org/chromium/net/urlconnection/TestUtil.java",
+      "test/javatests/src/org/monyhar/net/BidirectionalStreamQuicTest.java",
+      "test/javatests/src/org/monyhar/net/BidirectionalStreamTest.java",
+      "test/javatests/src/org/monyhar/net/BrotliTest.java",
+      "test/javatests/src/org/monyhar/net/Criteria.java",
+      "test/javatests/src/org/monyhar/net/CronetEngineBuilderTest.java",
+      "test/javatests/src/org/monyhar/net/CronetStressTest.java",
+      "test/javatests/src/org/monyhar/net/CronetTestRuleTest.java",
+      "test/javatests/src/org/monyhar/net/CronetUploadTest.java",
+      "test/javatests/src/org/monyhar/net/CronetUrlRequestContextTest.java",
+      "test/javatests/src/org/monyhar/net/CronetUrlRequestTest.java",
+      "test/javatests/src/org/monyhar/net/DiskStorageTest.java",
+      "test/javatests/src/org/monyhar/net/ExperimentalOptionsTest.java",
+      "test/javatests/src/org/monyhar/net/GetStatusTest.java",
+      "test/javatests/src/org/monyhar/net/MetricsTestUtil.java",
+      "test/javatests/src/org/monyhar/net/NQETest.java",
+      "test/javatests/src/org/monyhar/net/NetworkChangeNotifierTest.java",
+      "test/javatests/src/org/monyhar/net/NetworkErrorLoggingTest.java",
+      "test/javatests/src/org/monyhar/net/PkpTest.java",
+      "test/javatests/src/org/monyhar/net/QuicTest.java",
+      "test/javatests/src/org/monyhar/net/RequestFinishedInfoTest.java",
+      "test/javatests/src/org/monyhar/net/TestBidirectionalStreamCallback.java",
+      "test/javatests/src/org/monyhar/net/TestDrivenDataProvider.java",
+      "test/javatests/src/org/monyhar/net/TestNetworkQualityRttListener.java",
+      "test/javatests/src/org/monyhar/net/TestNetworkQualityThroughputListener.java",
+      "test/javatests/src/org/monyhar/net/UploadDataProvidersTest.java",
+      "test/javatests/src/org/monyhar/net/UrlResponseInfoTest.java",
+      "test/javatests/src/org/monyhar/net/urlconnection/CronetBufferedOutputStreamTest.java",
+      "test/javatests/src/org/monyhar/net/urlconnection/CronetChunkedOutputStreamTest.java",
+      "test/javatests/src/org/monyhar/net/urlconnection/CronetFixedModeOutputStreamTest.java",
+      "test/javatests/src/org/monyhar/net/urlconnection/CronetHttpURLConnectionTest.java",
+      "test/javatests/src/org/monyhar/net/urlconnection/CronetHttpURLStreamHandlerTest.java",
+      "test/javatests/src/org/monyhar/net/urlconnection/CronetInputStreamTest.java",
+      "test/javatests/src/org/monyhar/net/urlconnection/CronetURLStreamHandlerFactoryTest.java",
+      "test/javatests/src/org/monyhar/net/urlconnection/MessageLoopTest.java",
+      "test/javatests/src/org/monyhar/net/urlconnection/QuicUploadTest.java",
+      "test/javatests/src/org/monyhar/net/urlconnection/TestUtil.java",
     ]
 
     # Adding deps here won't include those deps in the cronet_tests_java.jar.
@@ -1047,8 +1047,8 @@ if (!is_component_build) {
     loadable_modules = [ "$root_out_dir/libnetty-tcnative.so" ]
 
     sources = cronet_smoketests_native_common_srcs + [
-                "test/smoketests/src/org/chromium/net/smoke/Http2Test.java",
-                "test/smoketests/src/org/chromium/net/smoke/QuicTest.java",
+                "test/smoketests/src/org/monyhar/net/smoke/Http2Test.java",
+                "test/smoketests/src/org/monyhar/net/smoke/QuicTest.java",
               ]
 
     deps = [
@@ -1102,8 +1102,8 @@ if (!is_component_build) {
     android_manifest = "test/javatests/AndroidManifest.xml"
 
     sources = cronet_smoketests_platform_only_common_srcs + [
-                "test/src/org/chromium/net/CronetTestApplication.java",
-                "test/smoketests/src/org/chromium/net/smoke/PlatformOnlyEngineTest.java",
+                "test/src/org/monyhar/net/CronetTestApplication.java",
+                "test/smoketests/src/org/monyhar/net/smoke/PlatformOnlyEngineTest.java",
               ]
 
     deps = [
@@ -1136,7 +1136,7 @@ if (!is_component_build) {
     apk_name = "MissingNativeLibrarySmokeTestInstrumentation"
     android_manifest = "test/javatests/AndroidManifest.xml"
 
-    sources = cronet_smoketests_native_common_srcs + [ "test/smoketests/src/org/chromium/net/smoke/MissingNativeLibraryTest.java" ]
+    sources = cronet_smoketests_native_common_srcs + [ "test/smoketests/src/org/monyhar/net/smoke/MissingNativeLibraryTest.java" ]
     deps = [
       ":cronet_api_java",
       ":cronet_combine_proguard_flags",
@@ -1176,7 +1176,7 @@ if (!is_component_build) {
     ]
 
     sources = [
-      "test/javaperftests/src/org/chromium/net/CronetPerfTestActivity.java",
+      "test/javaperftests/src/org/monyhar/net/CronetPerfTestActivity.java",
     ]
 
     deps = [
@@ -1197,7 +1197,7 @@ if (!is_component_build) {
         "$target_gen_dir/cronet_impl_native_proguard.cfg",
         "cronet_impl_common_proguard.cfg",
         "test/proguard.cfg",
-        "//base/android/proguard/chromium_apk.flags",
+        "//base/android/proguard/monyhar_apk.flags",
         "//testing/android/proguard_for_test.flags",
       ]
       enable_proguard_checks = false
@@ -1271,14 +1271,14 @@ if (!is_component_build) {
       "sample/AndroidManifest.xml",
       "sample/javatests/AndroidManifest.xml",
       "sample/javatests/proguard.cfg",
-      "sample/javatests/src/org/chromium/cronet_sample_apk/CronetSampleTest.java",
+      "sample/javatests/src/org/monyhar/cronet_sample_apk/CronetSampleTest.java",
       "sample/README",
       "sample/res/layout/activity_main.xml",
       "sample/res/layout/dialog_url.xml",
       "sample/res/values/dimens.xml",
       "sample/res/values/strings.xml",
-      "sample/src/org/chromium/cronet_sample_apk/CronetSampleActivity.java",
-      "sample/src/org/chromium/cronet_sample_apk/CronetSampleApplication.java",
+      "sample/src/org/monyhar/cronet_sample_apk/CronetSampleActivity.java",
+      "sample/src/org/monyhar/cronet_sample_apk/CronetSampleApplication.java",
     ]
     output = "$_package_dir/cronet-sample-src.jar"
     base_dir = "sample"

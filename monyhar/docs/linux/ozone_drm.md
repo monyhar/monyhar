@@ -26,17 +26,17 @@ $ sudo apt-get install ./xserver-xorg-video-nouveau_1.0.15-2_amd64.deb
 At this point you *must  reboot.* If you run into issues to load video at boot then disable `load_video` and `gfx_mode` in `/boot/grub/grub.cfg`.
 
 ## Building Chrome
-Checkout chromium as per your usual workflow. See [Get the Code:
+Checkout monyhar as per your usual workflow. See [Get the Code:
 Checkout, Build, & Run
-Chromium](https://www.chromium.org/developers/how-tos/get-the-code).
-Googlers should checkout chromium source code as described here:
+Chromium](https://www.monyhar.org/developers/how-tos/get-the-code).
+Googlers should checkout monyhar source code as described here:
 [Building Chromium on a corporate Linux
 workstation](https://companydoc.corp.google.com/company/teams/chrome/build_instructions.md?cl=head)
 
 We want to build on linux on top of Ozone with the DRM 
 (Direct Render Manager) platform which is backed by GBM 
 (Generic Buffer Management). The following instructions builds 
-chromium targets along with minigbm  that lives in the chromium 
+monyhar targets along with minigbm  that lives in the monyhar 
 tree `src/third_party/minigbm`. Currently, there is no builder for
 this configuration so while this worked (mostly) when this document 
 was written, some experimentation may be necessary.

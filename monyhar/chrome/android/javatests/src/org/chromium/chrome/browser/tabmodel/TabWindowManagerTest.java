@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tabmodel;
+package org.monyhar.chrome.browser.tabmodel;
 
 import android.app.Activity;
 import android.util.Pair;
@@ -15,21 +15,21 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.test.UiThreadTest;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.app.tabmodel.AsyncTabParamsManagerSingleton;
-import org.chromium.chrome.browser.app.tabmodel.TabWindowManagerSingleton;
-import org.chromium.chrome.browser.customtabs.CustomTabActivity;
-import org.chromium.chrome.browser.tab.MockTab;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.NextTabPolicy.NextTabPolicySupplier;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.util.browser.tabmodel.MockTabModelSelector;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.test.UiThreadTest;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.app.tabmodel.AsyncTabParamsManagerSingleton;
+import org.monyhar.chrome.browser.app.tabmodel.TabWindowManagerSingleton;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivity;
+import org.monyhar.chrome.browser.tab.MockTab;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.NextTabPolicy.NextTabPolicySupplier;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.util.browser.tabmodel.MockTabModelSelector;
 
 /**
  * Test for {@link TabWindowManagerImpl} through {@link TabWindowManagerSingleton}.

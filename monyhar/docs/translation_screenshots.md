@@ -12,4 +12,4 @@ We’d all like to ensure that the user experience in Chrome is optimal, no matt
 Unfortunately, only contributors with @google.com accounts can upload images to the Cloud Storage bucket (Step 3). If you can’t upload images, please ask a Googler for help, then continue with Step 4.
 
 
-See [Instructions & FAQ](https://docs.google.com/document/d/1nwYWDny20icMSpLUuV_LgrlbWKrYpbXOERUIZNH636o/) for details. And here is the [original announcement](https://groups.google.com/a/chromium.org/forum/#!msg/chromium-dev/6kcVb-eFUg8/qHuUnbJ7BgAJ) of this feature.
+See [Instructions & FAQ](https://docs.google.com/document/d/1nwYWDny20icMSpLUuV_LgrlbWKrYpbXOERUIZNH636o/) for details. And here is the [original announcement](https://groups.google.com/a/monyhar.org/forum/#!msg/monyhar-dev/6kcVb-eFUg8/qHuUnbJ7BgAJ) of this feature.

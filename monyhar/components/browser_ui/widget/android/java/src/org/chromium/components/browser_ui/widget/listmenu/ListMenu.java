@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.listmenu;
+package org.monyhar.components.browser_ui.widget.listmenu;
 
 import android.view.View;
 
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * Representation of a list menu. Contains and manages a content view by {@link #getContentView()}.

@@ -196,7 +196,7 @@ are exported to translation interchange files (e.g. XMB files), etc.
         (env_name, env_value) = val.split('=', 1)
         os.environ[env_name] = env_value
       elif key == '-f':
-        # TODO(joi@chromium.org): Remove this override once change
+        # TODO(joi@monyhar.org): Remove this override once change
         # lands in WebKit.grd to specify the first_ids_file in the
         # .grd itself.
         first_ids_file = val

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.gfx;
+package org.monyhar.ui.gfx;
 
 import android.content.ComponentCallbacks;
 import android.content.res.Configuration;
@@ -10,12 +10,12 @@ import android.content.res.Resources;
 import android.util.TypedValue;
 import android.view.ViewConfiguration;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.ui.R;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.ui.R;
 
 /**
  * This class facilitates access to ViewConfiguration-related properties, also

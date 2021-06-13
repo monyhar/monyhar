@@ -9,7 +9,7 @@ if (is_android) {
 
 if (is_android) {
   android_library("factory_java") {
-    sources = [ "android/java/src/org/chromium/chrome/browser/segmentation_platform/SegmentationPlatformServiceFactory.java" ]
+    sources = [ "android/java/src/org/monyhar/chrome/browser/segmentation_platform/SegmentationPlatformServiceFactory.java" ]
 
     deps = [
       "//base:base_java",
@@ -22,6 +22,6 @@ if (is_android) {
   }
 
   generate_jni("jni_headers") {
-    sources = [ "android/java/src/org/chromium/chrome/browser/segmentation_platform/SegmentationPlatformServiceFactory.java" ]
+    sources = [ "android/java/src/org/monyhar/chrome/browser/segmentation_platform/SegmentationPlatformServiceFactory.java" ]
   }
 }

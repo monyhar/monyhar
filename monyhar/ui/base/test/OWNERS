@@ -1,14 +1,14 @@
-sadrul@chromium.org
-sky@chromium.org
+sadrul@monyhar.org
+sky@monyhar.org
 
 # Mac stuff
-avi@chromium.org
-tapted@chromium.org
-thakis@chromium.org
+avi@monyhar.org
+tapted@monyhar.org
+thakis@monyhar.org
 
 # Clipboard
-per-file test_clipboard*=dcheng@chromium.org
+per-file test_clipboard*=dcheng@monyhar.org
 
 # Skia Gold
-per-file skia_gold*=svenzheng@chromium.org
-per-file skia_gold*=bsheedy@chromium.org
+per-file skia_gold*=svenzheng@monyhar.org
+per-file skia_gold*=bsheedy@monyhar.org

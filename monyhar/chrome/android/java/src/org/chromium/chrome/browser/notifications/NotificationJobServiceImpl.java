@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.notifications;
+package org.monyhar.chrome.browser.notifications;
 
 import android.annotation.TargetApi;
 import android.app.job.JobParameters;
@@ -12,7 +12,7 @@ import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.os.SystemClock;
 
-import org.chromium.base.ThreadUtils;
+import org.monyhar.base.ThreadUtils;
 
 /**
  * Processes jobs scheduled when user actions are issued on web notifications.

@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.gcm_driver.instance_id;
+package org.monyhar.components.gcm_driver.instance_id;
 
 import android.os.Looper;
 import android.util.Pair;
 
 import com.google.android.gms.iid.InstanceID;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
 
 import java.io.IOException;
 import java.util.HashMap;

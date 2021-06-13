@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
-#include "third_party/leveldatabase/env_chromium.h"
+#include "third_party/leveldatabase/env_monyhar.h"
 
 #include <atomic>
 #include <limits>
@@ -35,7 +35,7 @@
 #include "build/chromeos_buildflags.h"
 #include "components/services/storage/public/cpp/filesystem/file_error_or.h"
 #include "components/services/storage/public/cpp/filesystem/filesystem_proxy.h"
-#include "third_party/leveldatabase/chromium_logger.h"
+#include "third_party/leveldatabase/monyhar_logger.h"
 #include "third_party/leveldatabase/leveldb_chrome.h"
 #include "third_party/leveldatabase/src/include/leveldb/options.h"
 #include "third_party/re2/src/re2/re2.h"
@@ -709,7 +709,7 @@ ChromiumEnv::ChromiumEnv(const std::string& name,
 }
 
 ChromiumEnv::~ChromiumEnv() {
-  // In chromium, ChromiumEnv is leaked. It'd be nice to add NOTREACHED here to
+  // In monyhar, ChromiumEnv is leaked. It'd be nice to add NOTREACHED here to
   // ensure that behavior isn't accidentally changed, but there's an instance in
   // a unit test that is deleted.
 }

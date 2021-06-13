@@ -4,8 +4,8 @@
 
 // This file is auto-generated from
 // gpu/ipc/common/generate_vulkan_types.py
-// It's formatted by clang-format using chromium coding style:
-//    clang-format -i -style=chromium filename
+// It's formatted by clang-format using monyhar coding style:
+//    clang-format -i -style=monyhar filename
 // DO NOT EDIT!
 
 #include "gpu/ipc/common/vulkan_info_mojom_traits.h"

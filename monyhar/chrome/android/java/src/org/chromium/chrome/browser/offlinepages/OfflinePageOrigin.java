@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.offlinepages;
+package org.monyhar.chrome.browser.offlinepages;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -18,8 +18,8 @@ import androidx.annotation.VisibleForTesting;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabAssociatedApp;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabAssociatedApp;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

@@ -37,20 +37,20 @@ Note that the runtime link failed because the superclass couldn't be resolved,
 and the test Service could not be instantiated as a result.
 
 ``` text
-Unable to resolve superclass of Lorg/chromium/chrome/browser/customtabs/TestPostMessageService; (184)
-Link of class 'Lorg/chromium/chrome/browser/customtabs/TestPostMessageService;' failed
+Unable to resolve superclass of Lorg/monyhar/chrome/browser/customtabs/TestPostMessageService; (184)
+Link of class 'Lorg/monyhar/chrome/browser/customtabs/TestPostMessageService;' failed
 ...
 FATAL EXCEPTION: main
-Process: org.chromium.chrome.tests, PID: 30023
+Process: org.monyhar.chrome.tests, PID: 30023
 java.lang.RuntimeException:
-    Unable to instantiate service org.chromium.chrome.browser.customtabs.TestPostMessageService:
+    Unable to instantiate service org.monyhar.chrome.browser.customtabs.TestPostMessageService:
         java.lang.ClassNotFoundException:
-        Didn't find class "org.chromium.chrome.browser.customtabs.TestPostMessageService" on path:
+        Didn't find class "org.monyhar.chrome.browser.customtabs.TestPostMessageService" on path:
         DexPathList[
             [zip file "/system/framework/android.test.runner.jar",
-             zip file "/data/app/org.chromium.chrome.tests-1.apk"],
+             zip file "/data/app/org.monyhar.chrome.tests-1.apk"],
             nativeLibraryDirectories=[
-                /data/app-lib/org.chromium.chrome.tests-1,
+                /data/app-lib/org.monyhar.chrome.tests-1,
                 /vendor/lib,
                 /system/lib]]
   at android.app.ActivityThread.handleCreateService(ActivityThread.java:2543)
@@ -65,12 +65,12 @@ java.lang.RuntimeException:
   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:601)
   at dalvik.system.NativeStart.main(Native Method)
 Caused by: java.lang.ClassNotFoundException:
-    Didn't find class "org.chromium.chrome.browser.customtabs.TestPostMessageService" on path:
+    Didn't find class "org.monyhar.chrome.browser.customtabs.TestPostMessageService" on path:
     DexPathList[
         [zip file "/system/framework/android.test.runner.jar",
-         zip file "/data/app/org.chromium.chrome.tests-1.apk"],
+         zip file "/data/app/org.monyhar.chrome.tests-1.apk"],
         nativeLibraryDirectories=[
-            /data/app-lib/org.chromium.chrome.tests-1,
+            /data/app-lib/org.monyhar.chrome.tests-1,
             /vendor/lib,
             /system/lib]]
   at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
@@ -101,9 +101,9 @@ in neither a directory containing app code nor a directory containing test
 code.
 
 ``` java
-package org.chromium.chrome.test;
+package org.monyhar.chrome.test;
 
-import org.chromium.chrome.MyAppService;
+import org.monyhar.chrome.MyAppService;
 
 public class MyTestService extends MyAppService {
     ...
@@ -117,7 +117,7 @@ target.
 
 ``` python
 android_library("my_test_service") {
-  sources = [ "src/org/chromium/chrome/test/MyTestService.java" ]
+  sources = [ "src/org/monyhar/chrome/test/MyTestService.java" ]
   deps = [ ... ]
 }
 ```
@@ -135,10 +135,10 @@ class directly, e.g., when binding a Service.
 
 ``` xml
 <manifest ...
-    package="org.chromium.chrome.tests.support" >
+    package="org.monyhar.chrome.tests.support" >
 
   <application>
-    <service android:name="org.chromium.chrome.test.MyTestService"
+    <service android:name="org.monyhar.chrome.test.MyTestService"
         android:exported="true"
         tools:ignore="ExportedService">
       ...

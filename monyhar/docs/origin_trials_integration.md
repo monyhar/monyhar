@@ -247,7 +247,7 @@ as tests for script-added tokens. For examples, refer to the existing tests in
 [update\_use\_counter\_feature\_enum.py]: /tools/metrics/histograms/update_use_counter_feature_enum.py
 [Measure]: /third_party/blink/renderer/bindings/IDLExtendedAttributes.md#Measure_i_m_a_c
 [css\_properties.json5]: /third_party/blink/renderer/core/css/css_properties.json5
-[origin-trial-test-property]: https://chromium.googlesource.com/chromium/src/+/ff2ab8b89745602c8300322c2a0158e210178c7e/third_party/blink/renderer/core/css/css_properties.json5#2635
+[origin-trial-test-property]: https://monyhar.googlesource.com/monyhar/src/+/ff2ab8b89745602c8300322c2a0158e210178c7e/third_party/blink/renderer/core/css/css_properties.json5#2635
 [CSSStyleDeclaration]: /third_party/blink/renderer/core/css/css_style_declaration.idl
-[Running an Origin Trial]: https://www.chromium.org/blink/origin-trials/running-an-origin-trial
+[Running an Origin Trial]: https://www.monyhar.org/blink/origin-trials/running-an-origin-trial
 [user subset exclusion]: https://docs.google.com/document/d/1xALH9W7rWmX0FpjudhDeS2TNTEOXuPn4Tlc9VmuPdHA/edit#heading=h.myaz1twlipw

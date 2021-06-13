@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base;
+package org.monyhar.base;
 
 import static android.content.Context.UI_MODE_SERVICE;
 
@@ -19,9 +19,9 @@ import android.text.TextUtils;
 import androidx.annotation.ChecksSdkIntAtLeast;
 import androidx.annotation.NonNull;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.compat.ApiHelperForP;
-import org.chromium.build.BuildConfig;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.compat.ApiHelperForP;
+import org.monyhar.build.BuildConfig;
 
 /**
  * BuildInfo is a utility class providing easy access to {@link PackageInfo} information. This is
@@ -34,7 +34,7 @@ public class BuildInfo {
     private static PackageInfo sBrowserPackageInfo;
     private static boolean sInitialized;
 
-    // TODO(crbug.com/1192402): Replace this with Build.VERSION_CODES.S in the code once chromium
+    // TODO(crbug.com/1192402): Replace this with Build.VERSION_CODES.S in the code once monyhar
     // import Android S SDK.
     public static final int ANDROID_S_API_SDK_INT = 31;
 

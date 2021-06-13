@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.merchant_viewer;
+package org.monyhar.chrome.browser.merchant_viewer;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -18,11 +18,11 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.content_public.browser.NavigationHandle;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.url.GURL;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.content_public.browser.NavigationHandle;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.url.GURL;
 
 /**
  * Tests for {@link MerchantTrustMessageContext}.

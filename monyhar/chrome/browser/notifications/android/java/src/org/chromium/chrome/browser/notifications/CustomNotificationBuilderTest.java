@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.notifications;
+package org.monyhar.chrome.browser.notifications;
 
 import android.annotation.SuppressLint;
 import android.app.Notification;
@@ -32,17 +32,17 @@ import org.junit.Test;
 import org.junit.rules.TestRule;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.notifications.channels.ChromeChannelDefinitions;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.chrome.test.util.browser.Features.EnableFeatures;
-import org.chromium.components.browser_ui.notifications.NotificationMetadata;
-import org.chromium.components.browser_ui.notifications.PendingIntentProvider;
-import org.chromium.content_public.browser.test.NativeLibraryTestUtils;
-import org.chromium.url.GURL;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.notifications.channels.ChromeChannelDefinitions;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.chrome.test.util.browser.Features.EnableFeatures;
+import org.monyhar.components.browser_ui.notifications.NotificationMetadata;
+import org.monyhar.components.browser_ui.notifications.PendingIntentProvider;
+import org.monyhar.content_public.browser.test.NativeLibraryTestUtils;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -354,14 +354,14 @@ public class CustomNotificationBuilderTest {
         Context context = InstrumentationRegistry.getTargetContext();
         NotificationBuilderBase notificationBuilder =
                 new CustomNotificationBuilder(context)
-                        .setOrigin("https://www.chromium.org")
+                        .setOrigin("https://www.monyhar.org")
                         .setChannelId(ChromeChannelDefinitions.ChannelId.SITES)
                         .setLargeIcon(null);
 
         Notification notification = buildNotification(notificationBuilder);
 
         Bitmap expectedIcon = NotificationBuilderBase.createIconGenerator(context.getResources())
-                                      .generateIconForUrl(new GURL("https://www.chromium.org"));
+                                      .generateIconForUrl(new GURL("https://www.monyhar.org"));
 
         assertLargeNotificationIconAsExpected(context, notification, expectedIcon);
     }

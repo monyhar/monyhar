@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.messages;
+package org.monyhar.chrome.browser.messages;
 
 import android.content.res.Resources;
 import android.view.View;
@@ -10,10 +10,10 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsStateProvider;
-import org.chromium.chrome.browser.fullscreen.BrowserControlsManager;
-import org.chromium.components.messages.MessageContainer;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsStateProvider;
+import org.monyhar.chrome.browser.fullscreen.BrowserControlsManager;
+import org.monyhar.components.messages.MessageContainer;
 
 /**
  * Coordinator of {@link MessageContainer}, which can adjust margins of the message container

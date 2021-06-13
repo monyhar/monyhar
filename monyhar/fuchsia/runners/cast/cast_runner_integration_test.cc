@@ -67,7 +67,7 @@ constexpr char kDummyAgentUrl[] =
 constexpr char kEnableFrameHostComponent[] = "enable-frame-host-component";
 
 class FakeCorsExemptHeaderProvider
-    : public chromium::cast::CorsExemptHeaderProvider {
+    : public monyhar::cast::CorsExemptHeaderProvider {
  public:
   FakeCorsExemptHeaderProvider() = default;
   ~FakeCorsExemptHeaderProvider() final = default;
@@ -84,7 +84,7 @@ class FakeCorsExemptHeaderProvider
 };
 
 class FakeUrlRequestRewriteRulesProvider
-    : public chromium::cast::UrlRequestRewriteRulesProvider {
+    : public monyhar::cast::UrlRequestRewriteRulesProvider {
  public:
   FakeUrlRequestRewriteRulesProvider() = default;
   ~FakeUrlRequestRewriteRulesProvider() final = default;
@@ -115,7 +115,7 @@ class FakeUrlRequestRewriteRulesProvider
   bool rules_sent_ = false;
 };
 
-class FakeApplicationContext : public chromium::cast::ApplicationContext {
+class FakeApplicationContext : public monyhar::cast::ApplicationContext {
  public:
   FakeApplicationContext() = default;
   ~FakeApplicationContext() final = default;
@@ -123,7 +123,7 @@ class FakeApplicationContext : public chromium::cast::ApplicationContext {
   FakeApplicationContext(const FakeApplicationContext&) = delete;
   FakeApplicationContext& operator=(const FakeApplicationContext&) = delete;
 
-  chromium::cast::ApplicationController* controller() {
+  monyhar::cast::ApplicationController* controller() {
     if (!controller_)
       return nullptr;
 
@@ -138,12 +138,12 @@ class FakeApplicationContext : public chromium::cast::ApplicationContext {
   }
 
  private:
-  // chromium::cast::ApplicationContext implementation.
+  // monyhar::cast::ApplicationContext implementation.
   void GetMediaSessionId(GetMediaSessionIdCallback callback) final {
     callback(0);
   }
   void SetApplicationController(
-      fidl::InterfaceHandle<chromium::cast::ApplicationController> controller)
+      fidl::InterfaceHandle<monyhar::cast::ApplicationController> controller)
       final {
     controller_ = controller.Bind();
   }
@@ -153,7 +153,7 @@ class FakeApplicationContext : public chromium::cast::ApplicationContext {
       std::move(on_application_terminated_).Run();
   }
 
-  chromium::cast::ApplicationControllerPtr controller_;
+  monyhar::cast::ApplicationControllerPtr controller_;
 
   absl::optional<int64_t> application_exit_code_;
   base::OnceClosure on_application_terminated_;
@@ -163,9 +163,9 @@ class FakeComponentState : public cr_fuchsia::AgentImpl::ComponentStateBase {
  public:
   FakeComponentState(
       base::StringPiece component_url,
-      chromium::cast::ApplicationConfigManager* app_config_manager,
-      chromium::cast::ApiBindings* bindings_manager,
-      chromium::cast::UrlRequestRewriteRulesProvider*
+      monyhar::cast::ApplicationConfigManager* app_config_manager,
+      monyhar::cast::ApiBindings* bindings_manager,
+      monyhar::cast::UrlRequestRewriteRulesProvider*
           url_request_rules_provider)
       : ComponentStateBase(component_url),
         app_config_binding_(outgoing_directory(), app_config_manager),
@@ -209,16 +209,16 @@ class FakeComponentState : public cr_fuchsia::AgentImpl::ComponentStateBase {
   }
 
  protected:
-  const base::ScopedServiceBinding<chromium::cast::ApplicationConfigManager>
+  const base::ScopedServiceBinding<monyhar::cast::ApplicationConfigManager>
       app_config_binding_;
-  const base::ScopedServiceBinding<chromium::cast::ApiBindings>
+  const base::ScopedServiceBinding<monyhar::cast::ApiBindings>
       bindings_manager_binding_;
   absl::optional<base::ScopedServiceBinding<
-      chromium::cast::UrlRequestRewriteRulesProvider>>
+      monyhar::cast::UrlRequestRewriteRulesProvider>>
       url_request_rules_provider_binding_;
 
   FakeApplicationContext application_context_;
-  const base::ScopedServiceBinding<chromium::cast::ApplicationContext>
+  const base::ScopedServiceBinding<monyhar::cast::ApplicationContext>
       context_binding_;
   base::OnceClosure on_delete_;
 };
@@ -425,8 +425,8 @@ class TestCastComponent {
   void InjectQueryApi() {
     // Inject an API which can be used to evaluate arbitrary Javascript and
     // return the results over a MessagePort.
-    std::vector<chromium::cast::ApiBinding> binding_list;
-    chromium::cast::ApiBinding eval_js_binding;
+    std::vector<monyhar::cast::ApiBinding> binding_list;
+    monyhar::cast::ApiBinding eval_js_binding;
     eval_js_binding.set_before_load_script(cr_fuchsia::MemBufferFromString(
         "function valueOrUndefinedString(value) {"
         "    return (typeof(value) == 'undefined') ? 'undefined' : value;"
@@ -480,12 +480,12 @@ class TestCastComponent {
       url_request_rewrite_rules_provider_;
 
   FakeCorsExemptHeaderProvider cors_exempt_header_provider_;
-  fidl::BindingSet<chromium::cast::CorsExemptHeaderProvider>
+  fidl::BindingSet<monyhar::cast::CorsExemptHeaderProvider>
       cors_exempt_header_provider_binding_;
 
   // Incoming service directory, ComponentContext and per-component state.
   sys::OutgoingDirectory component_services_;
-  base::ScopedServiceBinding<chromium::cast::ApplicationConfigManager>
+  base::ScopedServiceBinding<monyhar::cast::ApplicationConfigManager>
       app_config_manager_binding_;
   std::unique_ptr<cr_fuchsia::FakeComponentContext> component_context_;
   base::TestComponentController component_controller_;
@@ -814,8 +814,8 @@ TEST_F(CastRunnerIntegrationTest, ApplicationConfigAgentUrl) {
 
   // Instantiate the bindings that are returned in the multi-agent scenario. The
   // bindings returned for the single-agent scenario are not initialized.
-  std::vector<chromium::cast::ApiBinding> binding_list;
-  chromium::cast::ApiBinding echo_binding;
+  std::vector<monyhar::cast::ApiBinding> binding_list;
+  monyhar::cast::ApiBinding echo_binding;
   echo_binding.set_before_load_script(cr_fuchsia::MemBufferFromString(
       "window.echo = cast.__platform__.PortConnector.bind('dummyService');",
       "test"));
@@ -873,8 +873,8 @@ TEST_F(CastRunnerIntegrationTest, ApplicationConfigAgentUrlRewriteOptional) {
 
   // Instantiate the bindings that are returned in the multi-agent scenario. The
   // bindings returned for the single-agent scenario are not initialized.
-  std::vector<chromium::cast::ApiBinding> binding_list;
-  chromium::cast::ApiBinding echo_binding;
+  std::vector<monyhar::cast::ApiBinding> binding_list;
+  monyhar::cast::ApiBinding echo_binding;
   echo_binding.set_before_load_script(cr_fuchsia::MemBufferFromString(
       "window.echo = cast.__platform__.PortConnector.bind('dummyService');",
       "test"));
@@ -1279,18 +1279,18 @@ TEST_F(CastRunnerIntegrationTest, MissingCorsExemptHeaderProvider) {
   EXPECT_FALSE(component.component_state());
 }
 
-// Verifies that CastRunner offers a chromium.cast.DataReset service.
+// Verifies that CastRunner offers a monyhar.cast.DataReset service.
 // TODO(crbug.com/1146474): Expand the test to verify that the persisted data is
 // correctly cleared (e.g. using a custom test HTML app that uses persisted
 // data).
 TEST_F(CastRunnerIntegrationTest, DataReset) {
   TestCastComponent component(cast_runner_.get());
-  constexpr char kDataResetComponentName[] = "cast:chromium.cast.DataReset";
+  constexpr char kDataResetComponentName[] = "cast:monyhar.cast.DataReset";
   component.StartCastComponent(kDataResetComponentName);
 
   base::RunLoop loop;
   auto data_reset = component.component_services_client()
-                        ->Connect<chromium::cast::DataReset>();
+                        ->Connect<monyhar::cast::DataReset>();
   data_reset.set_error_handler([quit_loop = loop.QuitClosure()](zx_status_t) {
     quit_loop.Run();
     ADD_FAILURE();

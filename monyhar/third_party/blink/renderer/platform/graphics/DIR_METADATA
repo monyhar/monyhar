@@ -1,4 +1,4 @@
 monorail {
   component: "Blink>Paint"
 }
-team_email: "paint-dev@chromium.org"
+team_email: "paint-dev@monyhar.org"

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.privacy_sandbox;
+package org.monyhar.chrome.browser.privacy_sandbox;
 
 import android.content.Context;
 import android.content.Intent;
@@ -18,17 +18,17 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.vectordrawable.graphics.drawable.VectorDrawableCompat;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.settings.ChromeManagedPreferenceDelegate;
-import org.chromium.components.browser_ui.settings.ChromeSwitchPreference;
-import org.chromium.components.browser_ui.settings.SettingsUtils;
-import org.chromium.ui.text.NoUnderlineClickableSpan;
-import org.chromium.ui.text.SpanApplier;
-import org.chromium.ui.text.SpanApplier.SpanInfo;
-import org.chromium.ui.widget.ChromeBulletSpan;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.settings.ChromeManagedPreferenceDelegate;
+import org.monyhar.components.browser_ui.settings.ChromeSwitchPreference;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.ui.text.NoUnderlineClickableSpan;
+import org.monyhar.ui.text.SpanApplier;
+import org.monyhar.ui.text.SpanApplier.SpanInfo;
+import org.monyhar.ui.widget.ChromeBulletSpan;
 
 /**
  * Settings fragment for privacy sandbox settings. This class represents a View in the MVC paradigm.

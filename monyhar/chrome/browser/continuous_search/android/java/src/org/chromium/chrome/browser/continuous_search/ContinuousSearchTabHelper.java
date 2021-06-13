@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.continuous_search;
+package org.monyhar.chrome.browser.continuous_search;
 
-import org.chromium.base.FeatureList;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.tab.Tab;
+import org.monyhar.base.FeatureList;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.tab.Tab;
 
 /**
  * Bootstraps continuous search by creating appropriate observers and user data objects.

@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr;
+package org.monyhar.chrome.browser.vr;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.widget.PopupWindow;
 
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.widget.UiWidgetFactory;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.widget.UiWidgetFactory;
 
 /**
  * The factory that creates VR compatible UI widgets.

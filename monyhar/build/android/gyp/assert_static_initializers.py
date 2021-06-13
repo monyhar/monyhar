@@ -59,7 +59,7 @@ def _PrintDumpSIsCount(apk_so_name, unzipped_so, out_dir, tool_prefix):
     print(si)
 
 
-# Mostly copied from //infra/scripts/legacy/scripts/slave/chromium/sizes.py.
+# Mostly copied from //infra/scripts/legacy/scripts/slave/monyhar/sizes.py.
 def _ReadInitArray(so_path, tool_prefix, expect_no_initializers):
   stdout = _RunReadelf(so_path, ['-SW'], tool_prefix)
   # Matches: .init_array INIT_ARRAY 000000000516add0 5169dd0 000010 00 WA 0 0 8
@@ -98,7 +98,7 @@ def _CountStaticInitializers(so_path, tool_prefix, expect_no_initializers):
 def _AnalyzeStaticInitializers(apk_or_aab, tool_prefix, dump_sis, out_dir,
                                ignored_libs, no_initializers_libs):
   # Static initializer counting mostly copies logic in
-  # infra/scripts/legacy/scripts/slave/chromium/sizes.py.
+  # infra/scripts/legacy/scripts/slave/monyhar/sizes.py.
   with zipfile.ZipFile(apk_or_aab) as z:
     so_files = [
         f for f in z.infolist() if f.filename.endswith('.so')
@@ -150,9 +150,9 @@ def main():
       'libarcore_sdk_c.so', 'libcrashpad_handler_trampoline.so',
       'libsketchology_native.so'
   }
-  # The chromium linker doesn't have static initializers, which makes the
+  # The monyhar linker doesn't have static initializers, which makes the
   # regular check throw. It should not have any.
-  no_initializers_libs = ['libchromium_android_linker.so']
+  no_initializers_libs = ['libmonyhar_android_linker.so']
 
   si_count = _AnalyzeStaticInitializers(args.apk_or_aab, args.tool_prefix,
                                         False, '.', ignored_libs,
@@ -174,7 +174,7 @@ def main():
       print('    //tools/binary_size/diagnose_bloat.py')
       print()
       print('For more information:')
-      print('    https://chromium.googlesource.com/chromium/src/+/main/docs/'
+      print('    https://monyhar.googlesource.com/monyhar/src/+/main/docs/'
             'static_initializers.md')
     sys.exit(1)
 

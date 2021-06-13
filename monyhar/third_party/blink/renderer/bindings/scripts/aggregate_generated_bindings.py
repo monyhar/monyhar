@@ -43,7 +43,7 @@ Usage:
  IDL_FILES_LIST is a text file containing the IDL file paths
  OUTPUT_FILE is the filename of output file.
 
- Design doc: http://www.chromium.org/developers/design-documents/idl-build
+ Design doc: http://www.monyhar.org/developers/design-documents/idl-build
 """
 
 from __future__ import print_function

@@ -6,7 +6,7 @@ import("//build/config/android/rules.gni")
 import("//components/safe_browsing/buildflags.gni")
 
 generate_jni("jni_headers") {
-  sources = [ "java/src/org/chromium/chrome/browser/safe_browsing/SafeBrowsingBridge.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/safe_browsing/SafeBrowsingBridge.java" ]
 }
 
 source_set("android") {
@@ -27,13 +27,13 @@ source_set("android") {
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/safe_browsing/SafeBrowsingBridge.java",
-    "java/src/org/chromium/chrome/browser/safe_browsing/settings/EnhancedProtectionSettingsFragment.java",
-    "java/src/org/chromium/chrome/browser/safe_browsing/settings/NoProtectionConfirmationDialog.java",
-    "java/src/org/chromium/chrome/browser/safe_browsing/settings/RadioButtonGroupSafeBrowsingPreference.java",
-    "java/src/org/chromium/chrome/browser/safe_browsing/settings/SafeBrowsingSettingsFragment.java",
-    "java/src/org/chromium/chrome/browser/safe_browsing/settings/SafeBrowsingSettingsFragmentBase.java",
-    "java/src/org/chromium/chrome/browser/safe_browsing/settings/StandardProtectionSettingsFragment.java",
+    "java/src/org/monyhar/chrome/browser/safe_browsing/SafeBrowsingBridge.java",
+    "java/src/org/monyhar/chrome/browser/safe_browsing/settings/EnhancedProtectionSettingsFragment.java",
+    "java/src/org/monyhar/chrome/browser/safe_browsing/settings/NoProtectionConfirmationDialog.java",
+    "java/src/org/monyhar/chrome/browser/safe_browsing/settings/RadioButtonGroupSafeBrowsingPreference.java",
+    "java/src/org/monyhar/chrome/browser/safe_browsing/settings/SafeBrowsingSettingsFragment.java",
+    "java/src/org/monyhar/chrome/browser/safe_browsing/settings/SafeBrowsingSettingsFragmentBase.java",
+    "java/src/org/monyhar/chrome/browser/safe_browsing/settings/StandardProtectionSettingsFragment.java",
   ]
   deps = [
     ":java_resources",
@@ -58,14 +58,14 @@ android_library("java") {
   ]
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
   srcjar_deps = [ ":safe_browsing_enums" ]
-  resources_package = "org.chromium.chrome.browser.safe_browsing.settings"
+  resources_package = "org.monyhar.chrome.browser.safe_browsing.settings"
 }
 
 android_library("javatests") {
   testonly = true
   sources = [
-    "javatests/src/org/chromium/chrome/browser/safe_browsing/settings/SafeBrowsingSettingsFragmentTest.java",
-    "javatests/src/org/chromium/chrome/browser/safe_browsing/settings/StandardProtectionSettingsFragmentTest.java",
+    "javatests/src/org/monyhar/chrome/browser/safe_browsing/settings/SafeBrowsingSettingsFragmentTest.java",
+    "javatests/src/org/monyhar/chrome/browser/safe_browsing/settings/StandardProtectionSettingsFragmentTest.java",
   ]
   deps = [
     ":java",

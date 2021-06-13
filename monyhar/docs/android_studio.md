@@ -182,7 +182,7 @@ resources, native libraries, etc.
 * Emulators (more docs coming soon).
 * Separate Android SDK for Android Studio.
 
-### What doesn't work (yet) ([crbug](https://bugs.chromium.org/p/chromium/issues/detail?id=620034))
+### What doesn't work (yet) ([crbug](https://bugs.monyhar.org/p/monyhar/issues/detail?id=620034))
 
 * Gradle being aware of assets.
 * Having the "Make Project" button work correctly.

@@ -100,12 +100,12 @@ template("chrome_repack_locales") {
       ]
     } else {
       source_patterns += [
-        "${root_gen_dir}/chrome/chromium_strings_",
-        "${root_gen_dir}/components/strings/components_chromium_strings_",
+        "${root_gen_dir}/chrome/monyhar_strings_",
+        "${root_gen_dir}/components/strings/components_monyhar_strings_",
       ]
       deps += [
-        "//chrome/app:chromium_strings",
-        "//components/strings:components_chromium_strings",
+        "//chrome/app:monyhar_strings",
+        "//components/strings:components_monyhar_strings",
       ]
     }
 

@@ -2,24 +2,24 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.net.spdyproxy;
+package org.monyhar.chrome.browser.net.spdyproxy;
 
 import android.content.Context;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.datareduction.DataReductionPromoUtils;
-import org.chromium.chrome.browser.datareduction.settings.DataReductionDataUseItem;
-import org.chromium.chrome.browser.datareduction.settings.DataReductionStatsPreference;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.settings.datareduction.DataReductionProxySavingsClearedReason;
-import org.chromium.components.browser_ui.util.ConversionUtils;
-import org.chromium.components.embedder_support.util.UrlConstants;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.datareduction.DataReductionPromoUtils;
+import org.monyhar.chrome.browser.datareduction.settings.DataReductionDataUseItem;
+import org.monyhar.chrome.browser.datareduction.settings.DataReductionStatsPreference;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.settings.datareduction.DataReductionProxySavingsClearedReason;
+import org.monyhar.components.browser_ui.util.ConversionUtils;
+import org.monyhar.components.embedder_support.util.UrlConstants;
 
 import java.util.ArrayList;
 import java.util.HashMap;

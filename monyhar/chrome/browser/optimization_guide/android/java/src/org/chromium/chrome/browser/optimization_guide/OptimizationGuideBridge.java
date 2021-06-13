@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.optimization_guide;
+package org.monyhar.chrome.browser.optimization_guide;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.optimization_guide.OptimizationGuideDecision;
-import org.chromium.components.optimization_guide.proto.CommonTypesProto.Any;
-import org.chromium.components.optimization_guide.proto.HintsProto.OptimizationType;
-import org.chromium.components.optimization_guide.proto.PushNotificationProto.HintNotificationPayload;
-import org.chromium.content_public.browser.NavigationHandle;
-import org.chromium.url.GURL;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.optimization_guide.OptimizationGuideDecision;
+import org.monyhar.components.optimization_guide.proto.CommonTypesProto.Any;
+import org.monyhar.components.optimization_guide.proto.HintsProto.OptimizationType;
+import org.monyhar.components.optimization_guide.proto.PushNotificationProto.HintNotificationPayload;
+import org.monyhar.content_public.browser.NavigationHandle;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.List;

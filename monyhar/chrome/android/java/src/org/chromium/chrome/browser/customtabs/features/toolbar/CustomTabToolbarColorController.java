@@ -2,26 +2,26 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs.features.toolbar;
+package org.monyhar.chrome.browser.customtabs.features.toolbar;
 import android.app.Activity;
 
 import androidx.annotation.IntDef;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.browserservices.intents.WebDisplayMode;
-import org.chromium.chrome.browser.browserservices.intents.WebappExtras;
-import org.chromium.chrome.browser.customtabs.content.CustomTabActivityTabProvider;
-import org.chromium.chrome.browser.customtabs.content.TabObserverRegistrar;
-import org.chromium.chrome.browser.customtabs.content.TabObserverRegistrar.CustomTabTabObserver;
-import org.chromium.chrome.browser.dependency_injection.ActivityScope;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabSelectionType;
-import org.chromium.chrome.browser.theme.TopUiThemeColorProvider;
-import org.chromium.chrome.browser.toolbar.ToolbarManager;
-import org.chromium.components.browser_ui.styles.ChromeColors;
-import org.chromium.url.GURL;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.browserservices.intents.WebDisplayMode;
+import org.monyhar.chrome.browser.browserservices.intents.WebappExtras;
+import org.monyhar.chrome.browser.customtabs.content.CustomTabActivityTabProvider;
+import org.monyhar.chrome.browser.customtabs.content.TabObserverRegistrar;
+import org.monyhar.chrome.browser.customtabs.content.TabObserverRegistrar.CustomTabTabObserver;
+import org.monyhar.chrome.browser.dependency_injection.ActivityScope;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabSelectionType;
+import org.monyhar.chrome.browser.theme.TopUiThemeColorProvider;
+import org.monyhar.chrome.browser.toolbar.ToolbarManager;
+import org.monyhar.components.browser_ui.styles.ChromeColors;
+import org.monyhar.url.GURL;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

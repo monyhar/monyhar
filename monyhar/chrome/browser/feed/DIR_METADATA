@@ -1,5 +1,5 @@
 monorail {
   component: "UI>Browser>ContentSuggestions>Feed"
 }
-team_email: "feed@chromium.org"
+team_email: "feed@monyhar.org"
 os: ANDROID

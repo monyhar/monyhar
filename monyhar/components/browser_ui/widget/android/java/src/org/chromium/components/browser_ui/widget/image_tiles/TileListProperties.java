@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.image_tiles;
+package org.monyhar.components.browser_ui.widget.image_tiles;
 
-import org.chromium.base.Callback;
-import org.chromium.components.browser_ui.widget.image_tiles.ImageTileCoordinator.TileVisualsProvider;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel.WritableObjectPropertyKey;
+import org.monyhar.base.Callback;
+import org.monyhar.components.browser_ui.widget.image_tiles.ImageTileCoordinator.TileVisualsProvider;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel.WritableObjectPropertyKey;
 
 /**
  * The properties required to build a {@link ImageTile} which contain two types of properties:

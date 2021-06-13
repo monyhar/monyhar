@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.multiwindow;
+package org.monyhar.chrome.browser.multiwindow;
 
-import static org.chromium.chrome.browser.multiwindow.MultiWindowTestHelper.createSecondChromeTabbedActivity;
+import static org.monyhar.chrome.browser.multiwindow.MultiWindowTestHelper.createSecondChromeTabbedActivity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -20,23 +20,23 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.MinAndroidSdkLevel;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.ChromeTabbedActivity2;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.MinAndroidSdkLevel;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.ChromeTabbedActivity2;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.concurrent.TimeoutException;
 

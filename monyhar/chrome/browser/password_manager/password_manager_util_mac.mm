@@ -12,7 +12,7 @@
 #include "base/mac/foundation_util.h"
 #include "base/mac/scoped_authorizationref.h"
 #include "base/stl_util.h"
-#include "chrome/grit/chromium_strings.h"
+#include "chrome/grit/monyhar_strings.h"
 #include "ui/base/l10n/l10n_util.h"
 
 namespace password_manager_util_mac {

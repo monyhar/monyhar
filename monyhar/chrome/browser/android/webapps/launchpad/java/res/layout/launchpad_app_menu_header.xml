@@ -30,7 +30,7 @@
       android:layout_gravity="center_vertical"
       android:orientation="vertical">
 
-    <org.chromium.ui.widget.TextViewWithLeading
+    <org.monyhar.ui.widget.TextViewWithLeading
         android:id="@+id/menu_header_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
         android:textAppearance="@style/TextAppearance.TextSmall.Primary"
         app:leading="@dimen/text_size_small_leading" />
 
-    <org.chromium.ui.widget.TextViewWithLeading
+    <org.monyhar.ui.widget.TextViewWithLeading
         android:id="@+id/menu_header_url"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

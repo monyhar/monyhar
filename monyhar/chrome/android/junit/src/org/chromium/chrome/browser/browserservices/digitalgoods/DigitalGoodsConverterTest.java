@@ -2,22 +2,22 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.digitalgoods;
+package org.monyhar.chrome.browser.browserservices.digitalgoods;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 
-import static org.chromium.chrome.browser.browserservices.digitalgoods.AcknowledgeConverter.PARAM_ACKNOWLEDGE_MAKE_AVAILABLE_AGAIN;
-import static org.chromium.chrome.browser.browserservices.digitalgoods.AcknowledgeConverter.PARAM_ACKNOWLEDGE_PURCHASE_TOKEN;
-import static org.chromium.chrome.browser.browserservices.digitalgoods.AcknowledgeConverter.RESPONSE_ACKNOWLEDGE;
-import static org.chromium.chrome.browser.browserservices.digitalgoods.AcknowledgeConverter.RESPONSE_ACKNOWLEDGE_RESPONSE_CODE;
-import static org.chromium.chrome.browser.browserservices.digitalgoods.DigitalGoodsConverter.PLAY_BILLING_ITEM_ALREADY_OWNED;
-import static org.chromium.chrome.browser.browserservices.digitalgoods.DigitalGoodsConverter.PLAY_BILLING_ITEM_NOT_OWNED;
-import static org.chromium.chrome.browser.browserservices.digitalgoods.DigitalGoodsConverter.PLAY_BILLING_ITEM_UNAVAILABLE;
-import static org.chromium.chrome.browser.browserservices.digitalgoods.DigitalGoodsConverter.PLAY_BILLING_OK;
-import static org.chromium.chrome.browser.browserservices.digitalgoods.DigitalGoodsConverter.convertResponseCode;
+import static org.monyhar.chrome.browser.browserservices.digitalgoods.AcknowledgeConverter.PARAM_ACKNOWLEDGE_MAKE_AVAILABLE_AGAIN;
+import static org.monyhar.chrome.browser.browserservices.digitalgoods.AcknowledgeConverter.PARAM_ACKNOWLEDGE_PURCHASE_TOKEN;
+import static org.monyhar.chrome.browser.browserservices.digitalgoods.AcknowledgeConverter.RESPONSE_ACKNOWLEDGE;
+import static org.monyhar.chrome.browser.browserservices.digitalgoods.AcknowledgeConverter.RESPONSE_ACKNOWLEDGE_RESPONSE_CODE;
+import static org.monyhar.chrome.browser.browserservices.digitalgoods.DigitalGoodsConverter.PLAY_BILLING_ITEM_ALREADY_OWNED;
+import static org.monyhar.chrome.browser.browserservices.digitalgoods.DigitalGoodsConverter.PLAY_BILLING_ITEM_NOT_OWNED;
+import static org.monyhar.chrome.browser.browserservices.digitalgoods.DigitalGoodsConverter.PLAY_BILLING_ITEM_UNAVAILABLE;
+import static org.monyhar.chrome.browser.browserservices.digitalgoods.DigitalGoodsConverter.PLAY_BILLING_OK;
+import static org.monyhar.chrome.browser.browserservices.digitalgoods.DigitalGoodsConverter.convertResponseCode;
 
 import android.os.Bundle;
 
@@ -28,13 +28,13 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.payments.mojom.BillingResponseCode;
-import org.chromium.payments.mojom.DigitalGoods.AcknowledgeResponse;
-import org.chromium.payments.mojom.DigitalGoods.GetDetailsResponse;
-import org.chromium.payments.mojom.DigitalGoods.ListPurchasesResponse;
-import org.chromium.payments.mojom.ItemDetails;
-import org.chromium.payments.mojom.PurchaseDetails;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.payments.mojom.BillingResponseCode;
+import org.monyhar.payments.mojom.DigitalGoods.AcknowledgeResponse;
+import org.monyhar.payments.mojom.DigitalGoods.GetDetailsResponse;
+import org.monyhar.payments.mojom.DigitalGoods.ListPurchasesResponse;
+import org.monyhar.payments.mojom.ItemDetails;
+import org.monyhar.payments.mojom.PurchaseDetails;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

@@ -12,7 +12,7 @@
     android:paddingStart="16dp"
     android:paddingEnd="16dp"
     android:paddingTop="16dp"
-    tools:context="org.chromium.customtabs.test.MainActivity"
+    tools:context="org.monyhar.customtabs.test.MainActivity"
     android:orientation="vertical">
 
     <TextView

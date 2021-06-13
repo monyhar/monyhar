@@ -11,7 +11,7 @@
 # in components/subresource_filter/FILTER_LIST_GENERATION.md.
 
 # Example usage, from the directory that contains the gzip files:
-# bash filter_many.sh 8 . ~/chromium/src/out/Release/subresource_filter_tool \
+# bash filter_many.sh 8 . ~/monyhar/src/out/Release/subresource_filter_tool \
 #   easylist_indexed > sorted_list
 
 # The number of processes you want to run in parallel. 8 is reasonable for a

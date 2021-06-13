@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.installedapp;
+package org.monyhar.components.installedapp;
 
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
@@ -19,22 +19,22 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.task.TaskTraits;
-import org.chromium.components.embedder_support.browser_context.BrowserContextHandle;
-import org.chromium.components.webapk.lib.client.WebApkValidator;
-import org.chromium.content_public.browser.RenderFrameHost;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.installedapp.mojom.InstalledAppProvider;
-import org.chromium.installedapp.mojom.RelatedApplication;
-import org.chromium.mojo.system.MojoException;
-import org.chromium.url.GURL;
-import org.chromium.url.mojom.Url;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.task.TaskTraits;
+import org.monyhar.components.embedder_support.browser_context.BrowserContextHandle;
+import org.monyhar.components.webapk.lib.client.WebApkValidator;
+import org.monyhar.content_public.browser.RenderFrameHost;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.installedapp.mojom.InstalledAppProvider;
+import org.monyhar.installedapp.mojom.RelatedApplication;
+import org.monyhar.mojo.system.MojoException;
+import org.monyhar.url.GURL;
+import org.monyhar.url.mojom.Url;
 
 import java.util.ArrayList;
 import java.util.Collections;

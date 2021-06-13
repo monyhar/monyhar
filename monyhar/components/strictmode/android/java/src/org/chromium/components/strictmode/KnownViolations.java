@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.strictmode;
+package org.monyhar.components.strictmode;
 
-import static org.chromium.components.strictmode.Violation.DETECT_DISK_IO;
-import static org.chromium.components.strictmode.Violation.DETECT_DISK_READ;
-import static org.chromium.components.strictmode.Violation.DETECT_DISK_WRITE;
-import static org.chromium.components.strictmode.Violation.DETECT_RESOURCE_MISMATCH;
+import static org.monyhar.components.strictmode.Violation.DETECT_DISK_IO;
+import static org.monyhar.components.strictmode.Violation.DETECT_DISK_READ;
+import static org.monyhar.components.strictmode.Violation.DETECT_DISK_WRITE;
+import static org.monyhar.components.strictmode.Violation.DETECT_RESOURCE_MISMATCH;
 
 import android.os.Build;
 

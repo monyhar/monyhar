@@ -12,7 +12,7 @@ keep this temporary) or an external symbolizer (see
 `tools/valgrind/asan/asan_symbolize.py`).
 
 Generally, do not use `--no-sandbox` on waterfall bots, sandbox testing is
-needed. Talk to security@chromium.org.
+needed. Talk to security@monyhar.org.
 
 ## GDB
 
@@ -80,7 +80,7 @@ which is rather annoying.
 
 You can also use `--renderer-startup-dialog` and attach to the process in order
 to debug the renderer code. Go to
-https://www.chromium.org/blink/getting-started-with-blink-debugging for more
+https://www.monyhar.org/blink/getting-started-with-blink-debugging for more
 information on how this can be done.
 
 For utilities you can use `--utility-startup-dialog` to have all utilities
@@ -211,7 +211,7 @@ three) but you'll still need to use `--plugin-launcher` or another approach.
 ### Printing Chromium types
 
 gdb 7 lets us use Python to write pretty-printers for Chromium types. See
-[gdbinit](https://chromium.googlesource.com/chromium/src/+/main/docs/gdbinit.md)
+[gdbinit](https://monyhar.googlesource.com/monyhar/src/+/main/docs/gdbinit.md)
 to enable pretty-printing of Chromium types.  This will import Blink
 pretty-printers as well.
 
@@ -311,9 +311,9 @@ such as `showTree()` or `showLayoutTree()`,
 then you'll need to disable the printing of both timestamps
 ([why?](https://github.com/rr-debugger/rr/issues/2829))
 and (for rr 4.5.0 or earlier) of thread IDs
-([why?](https://bugs.chromium.org/p/chromium/issues/detail?id=1193532)),
+([why?](https://bugs.monyhar.org/p/monyhar/issues/detail?id=1193532)),
 by changing either
-[`SetLogItems`](https://source.chromium.org/search?q=SetLogItems&sq=&ss=chromium%2Fchromium%2Fsrc)
+[`SetLogItems`](https://source.monyhar.org/search?q=SetLogItems&sq=&ss=monyhar%2Fmonyhar%2Fsrc)
 or the appropriate caller of it.
 
 If rr doesn't work correctly,
@@ -322,13 +322,13 @@ especially ones that have enough information so that
 they don't have to build Chromium.
 
 See Also:
-* [The Chromium Chronicle #13: Time-Travel Debugging with RR](https://developer.chrome.com/blog/chromium-chronicle-13/)
+* [The Chromium Chronicle #13: Time-Travel Debugging with RR](https://developer.chrome.com/blog/monyhar-chronicle-13/)
 
 ### Graphical Debugging Aid for Chromium Views
 
 The following link describes a tool that can be used on Linux, Windows and Mac under GDB.
 
-[graphical_debugging_aid_chromium_views](graphical_debugging_aid_chromium_views.md)
+[graphical_debugging_aid_monyhar_views](graphical_debugging_aid_monyhar_views.md)
 
 ### Faster startup
 
@@ -339,7 +339,7 @@ Only makes sense if you run the binary multiple times or maybe if you use the
 component build since most `.so` files won't require reindexing on a rebuild.
 
 See
-https://groups.google.com/a/chromium.org/forum/#!searchin/chromium-dev/gdb-add-index/chromium-dev/ELRuj1BDCL4/5Ki4LGx41CcJ
+https://groups.google.com/a/monyhar.org/forum/#!searchin/monyhar-dev/gdb-add-index/monyhar-dev/ELRuj1BDCL4/5Ki4LGx41CcJ
 for more info.
 
 You can improve GDB load time significantly at the cost of link time by not
@@ -351,7 +351,7 @@ your "gn args".
 When `strip_absolute_paths_from_debug_symbols` is enabled (which is the
 default), gdb may not be able to find debug files, making source-level debugging
 impossible. See
-[gdbinit](https://chromium.googlesource.com/chromium/src/+/main/docs/gdbinit.md)
+[gdbinit](https://monyhar.googlesource.com/monyhar/src/+/main/docs/gdbinit.md)
 to configure gdb to be able to find debug files.
 
 ## Core files
@@ -475,7 +475,7 @@ Default log level hides `LOG(INFO)`. Run with `--log-level=0` and
 `--enable-logging=stderr` flags.
 
 Newer versions of Chromium with VLOG may need --v=1 too. For more VLOG tips, see
-[the chromium-dev thread](https://groups.google.com/a/chromium.org/group/chromium-dev/browse_thread/thread/dcd0cd7752b35de6?pli=1).
+[the monyhar-dev thread](https://groups.google.com/a/monyhar.org/group/monyhar-dev/browse_thread/thread/dcd0cd7752b35de6?pli=1).
 
 ### Seeing IPC debug messages
 
@@ -495,7 +495,7 @@ of macros like `IPC_MESSAGE_LOG_ENABLED` or `IPC_MESSAGE_MACROS_LOG_ENABLED`.
 ## Profiling
 
 See
-https://sites.google.com/a/chromium.org/dev/developers/profiling-chromium-and-webkit
+https://sites.google.com/a/monyhar.org/dev/developers/profiling-monyhar-and-webkit
 and [Linux Profiling](profiling.md).
 
 ## i18n
@@ -541,7 +541,7 @@ this, run via `Xephyr`. Instructions for how to use `Xephyr` are on the
 ### Isolating Regressions
 
 Old builds are archived here:
-https://build.chromium.org/buildbot/snapshots/chromium-rel-linux/
+https://build.monyhar.org/buildbot/snapshots/monyhar-rel-linux/
 (TODO: does not exist).
 
 `tools/bisect-builds.py` in the tree automates bisecting through the archived

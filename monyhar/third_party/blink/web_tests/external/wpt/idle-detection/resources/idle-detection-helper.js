@@ -10,5 +10,5 @@
 //   --enable-blink-features=MojoJS,MojoJSTest
 
 async function loadChromiumResources() {
-  await import('/resources/chromium/mock-idle-detection.js');
+  await import('/resources/monyhar/mock-idle-detection.js');
 }

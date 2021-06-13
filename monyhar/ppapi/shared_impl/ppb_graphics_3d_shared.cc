@@ -5,7 +5,7 @@
 #include "ppapi/shared_impl/ppb_graphics_3d_shared.h"
 
 #include "base/logging.h"
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "gpu/command_buffer/client/gles2_cmd_helper.h"
 #include "gpu/command_buffer/client/gles2_implementation.h"
 #include "gpu/command_buffer/client/shared_memory_limits.h"

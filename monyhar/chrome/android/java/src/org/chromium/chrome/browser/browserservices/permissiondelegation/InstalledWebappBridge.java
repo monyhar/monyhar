@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.permissiondelegation;
+package org.monyhar.chrome.browser.browserservices.permissiondelegation;
 
 import android.net.Uri;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.content_settings.ContentSettingValues;
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.components.embedder_support.util.Origin;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.content_settings.ContentSettingValues;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.components.embedder_support.util.Origin;
 
 /**
  * Provides Trusted Web Activity Client App permissions for native. The C++ counterpart is the

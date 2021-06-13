@@ -32,7 +32,7 @@
 #include "chrome/browser/ui/tabs/tab_strip_model.h"
 #include "chrome/browser/ui/toolbar/toolbar_actions_model.h"
 #include "chrome/common/extensions/api/context_menus.h"
-#include "chrome/grit/chromium_strings.h"
+#include "chrome/grit/monyhar_strings.h"
 #include "chrome/grit/generated_resources.h"
 #include "chrome/test/base/test_browser_window.h"
 #include "chrome/test/base/testing_profile.h"
@@ -1035,7 +1035,7 @@ TEST_F(ExtensionContextMenuModelTest, PageAccessMenuOptions) {
        kOnAllSites},
       {"https://*/maps",
        "https://*/maps",
-       GURL("https://chromium.org"),
+       GURL("https://monyhar.org"),
        {kOnClick, kOnSite, kOnAllSites},
        {kOnClick, kOnSite, kOnAllSites},
        kOnAllSites},
@@ -1056,7 +1056,7 @@ TEST_F(ExtensionContextMenuModelTest, PageAccessMenuOptions) {
       // option).
       {"https://*.com/*",
        "https://*.com/*",
-       GURL("https://chromium.org"),
+       GURL("https://monyhar.org"),
        {},
        {}},
       // No access controls should ever show for restricted pages, like
@@ -1257,7 +1257,7 @@ TEST_F(ExtensionContextMenuModelTest,
                     URLPatternSet({pattern}), URLPatternSet()));
 
   const GURL kActiveUrl("http://www.example.com/");
-  const GURL kOrgUrl("http://chromium.org/");
+  const GURL kOrgUrl("http://monyhar.org/");
   const GURL kOtherUrl("http://www.google.com/");
 
   // Also explicitly grant google.com.

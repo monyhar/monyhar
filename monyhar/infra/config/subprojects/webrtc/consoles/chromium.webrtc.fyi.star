@@ -5,7 +5,7 @@
 load("//console-header.star", "HEADER")
 
 luci.console_view(
-    name = "chromium.webrtc.fyi",
+    name = "monyhar.webrtc.fyi",
     header = HEADER,
     repo = "https://webrtc.googlesource.com/src",
     entries = [

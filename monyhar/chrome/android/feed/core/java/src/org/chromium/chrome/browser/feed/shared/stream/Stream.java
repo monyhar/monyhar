@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.shared.stream;
+package org.monyhar.chrome.browser.feed.shared.stream;
 
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.base.supplier.ObservableSupplierImpl;
-import org.chromium.chrome.browser.feed.FeedSurfaceMediator;
-import org.chromium.chrome.browser.feed.NtpListContentManager;
-import org.chromium.chrome.browser.feed.NtpListContentManager.FeedContent;
-import org.chromium.chrome.browser.ntp.snippets.SectionType;
-import org.chromium.chrome.browser.xsurface.FeedLaunchReliabilityLogger;
-import org.chromium.chrome.browser.xsurface.HybridListRenderer;
-import org.chromium.chrome.browser.xsurface.SurfaceScope;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.base.supplier.ObservableSupplierImpl;
+import org.monyhar.chrome.browser.feed.FeedSurfaceMediator;
+import org.monyhar.chrome.browser.feed.NtpListContentManager;
+import org.monyhar.chrome.browser.feed.NtpListContentManager.FeedContent;
+import org.monyhar.chrome.browser.ntp.snippets.SectionType;
+import org.monyhar.chrome.browser.xsurface.FeedLaunchReliabilityLogger;
+import org.monyhar.chrome.browser.xsurface.HybridListRenderer;
+import org.monyhar.chrome.browser.xsurface.SurfaceScope;
 
 import java.util.List;
 

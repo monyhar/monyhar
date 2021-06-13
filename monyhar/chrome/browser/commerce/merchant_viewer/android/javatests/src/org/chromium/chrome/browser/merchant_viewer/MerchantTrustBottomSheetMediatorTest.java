@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.merchant_viewer;
+package org.monyhar.chrome.browser.merchant_viewer;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
@@ -29,26 +29,26 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.tab_ui.R;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.embedder_support.delegate.WebContentsDelegateAndroid;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.components.embedder_support.util.UrlUtilitiesJni;
-import org.chromium.components.security_state.ConnectionSecurityLevel;
-import org.chromium.components.security_state.SecurityStateModel;
-import org.chromium.components.security_state.SecurityStateModelJni;
-import org.chromium.components.thinwebview.ThinWebView;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.NavigationController;
-import org.chromium.content_public.browser.NavigationHandle;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.WebContentsObserver;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.display.DisplayAndroid;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.url.GURL;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.tab_ui.R;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.embedder_support.delegate.WebContentsDelegateAndroid;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.components.embedder_support.util.UrlUtilitiesJni;
+import org.monyhar.components.security_state.ConnectionSecurityLevel;
+import org.monyhar.components.security_state.SecurityStateModel;
+import org.monyhar.components.security_state.SecurityStateModelJni;
+import org.monyhar.components.thinwebview.ThinWebView;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.NavigationController;
+import org.monyhar.content_public.browser.NavigationHandle;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.WebContentsObserver;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.display.DisplayAndroid;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.url.GURL;
 
 /**
  * Tests for {@link MerchantTrustBottomSheetMediator}.

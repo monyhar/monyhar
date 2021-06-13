@@ -11,7 +11,7 @@
 #include "base/memory/ptr_util.h"
 #include "base/memory/scoped_refptr.h"
 #include "components/viz/test/test_context_support.h"
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "gpu/command_buffer/common/mailbox.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
@@ -300,11 +300,11 @@ void* TestGLES2Interface::MapBufferCHROMIUM(GLuint target, GLenum access) {
   DCHECK_GT(bound_buffer_.count(target), 0u);
   DCHECK_GT(buffers_.count(bound_buffer_[target]), 0u);
   DCHECK_EQ(target, buffers_[bound_buffer_[target]]->target);
-  if (times_map_buffer_chromium_succeeds_ >= 0) {
-    if (!times_map_buffer_chromium_succeeds_) {
+  if (times_map_buffer_monyhar_succeeds_ >= 0) {
+    if (!times_map_buffer_monyhar_succeeds_) {
       return nullptr;
     }
-    --times_map_buffer_chromium_succeeds_;
+    --times_map_buffer_monyhar_succeeds_;
   }
 
   return buffers_[bound_buffer_[target]]->pixels.get();

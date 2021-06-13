@@ -27,7 +27,7 @@
             android:minHeight="48dp"
             android:paddingHorizontal="@dimen/page_info_popup_padding_sides">
 
-            <org.chromium.components.browser_ui.widget.text.TextViewWithCompoundDrawables
+            <org.monyhar.components.browser_ui.widget.text.TextViewWithCompoundDrawables
                 android:id="@+id/page_info_truncated_url"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
 
             <view
                 android:id="@+id/page_info_url"
-                class="org.chromium.components.page_info.ElidedUrlTextView"
+                class="org.monyhar.components.page_info.ElidedUrlTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
@@ -54,7 +54,7 @@
 
         </LinearLayout>
 
-        <org.chromium.ui.widget.ChromeImageButton
+        <org.monyhar.ui.widget.ChromeImageButton
             android:id="@+id/page_info_close"
             android:layout_width="48dp"
             android:layout_height="48dp"
@@ -79,7 +79,7 @@
             android:orientation="horizontal"
             android:paddingHorizontal="@dimen/page_info_popup_padding_sides">
 
-            <org.chromium.ui.widget.ChromeImageButton
+            <org.monyhar.ui.widget.ChromeImageButton
                 android:id="@+id/subpage_back_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

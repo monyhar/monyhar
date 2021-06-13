@@ -42,7 +42,7 @@ struct Int64List {
 //  - Updating platform2/ml/graph_executor_impl.cc to use a TensorView of the
 //    new type.
 //
-// TODO(chromium:836098): add new types (e.g. uint8, bool) as they become
+// TODO(monyhar:836098): add new types (e.g. uint8, bool) as they become
 //                        useful.
 [Stable]
 union ValueList {

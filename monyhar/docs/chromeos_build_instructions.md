@@ -18,7 +18,7 @@ build configurations:
 ## Common setup
 
 First, follow the [normal Linux build
-instructions](https://chromium.googlesource.com/chromium/src/+/main/docs/linux/build_instructions.md)
+instructions](https://monyhar.googlesource.com/monyhar/src/+/main/docs/linux/build_instructions.md)
 as usual to get a Chromium checkout.
 
 You'll also need to add `'chromeos'` to the `target_os` list in your `.gclient`
@@ -56,7 +56,7 @@ the [Login notes](#Login-notes) section.
 
 ### Building and running Chromium with Chromium OS UI on your local machine
 
-Run the following in your chromium checkout:
+Run the following in your monyhar checkout:
 
     $ gn gen out/Default --args='target_os="chromeos"'
     $ autoninja -C out/Default chrome
@@ -83,7 +83,7 @@ NOTE: You may wish to replace 'Default' with something like 'Cros' if
 you switch back and forth between Linux and Chromium OS builds, or 'Debug'
 if you want to differentiate between Debug and Release builds (see below).
 
-See [GN Build Configuration](https://www.chromium.org/developers/gn-build-configuration)
+See [GN Build Configuration](https://www.monyhar.org/developers/gn-build-configuration)
 for more information about configuring your build.
 
 You can also build and run test targets like `unit_tests`, `browser_tests`, etc.
@@ -98,8 +98,8 @@ Some useful flags:
      virtual screens, by display position and size.
 *    `--enable-features=Feature1,OtherFeature2`: Enable specified features.
      Features are often listed in chrome://flags, or in source files such as
-     [chrome_features.cc](https://source.chromium.org/chromium/chromium/src/+/main:chrome/common/chrome_features.cc)
-     or [ash_features.cc](https://source.chromium.org/chromium/chromium/src/+/main:ash/constants/ash_features.cc).
+     [chrome_features.cc](https://source.monyhar.org/monyhar/monyhar/src/+/main:chrome/common/chrome_features.cc)
+     or [ash_features.cc](https://source.monyhar.org/monyhar/monyhar/src/+/main:ash/constants/ash_features.cc).
      Note that changing values in chrome://flags does not work for
      linux-chromeos, and this flag must be used.
 *    `--enable-ui-devtools[=9223]`: Allow debugging of the system UI through
@@ -157,7 +157,7 @@ the `amd64-generic` board, your `.gclient` file would look like:
 ```
 solutions = [
   {
-    "url": "https://chromium.googlesource.com/chromium/src.git",
+    "url": "https://monyhar.googlesource.com/monyhar/src.git",
     "name": "src",
     "custom_deps": {},
     "custom_vars" : {
@@ -201,4 +201,4 @@ supplied in the imported .gni file after the `import()` line.
 
 For more information (like copying the locally-built Chrome to a device, or
 running Tast tests), consult Simple Chrome's
-[full documentation](https://chromium.googlesource.com/chromiumos/docs/+/main/simple_chrome_workflow.md).
+[full documentation](https://monyhar.googlesource.com/monyharos/docs/+/main/simple_chrome_workflow.md).

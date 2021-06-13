@@ -18,7 +18,7 @@ struct PhysicalSize;
 // LogicalOffset is the position of a rect (typically a fragment) relative to
 // its parent rect in the logical coordinate system.
 // For more information about physical and logical coordinate systems, see:
-// https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/renderer/core/layout/README.md#coordinate-spaces
+// https://monyhar.googlesource.com/monyhar/src/+/master/third_party/blink/renderer/core/layout/README.md#coordinate-spaces
 struct CORE_EXPORT LogicalOffset {
   constexpr LogicalOffset() = default;
   constexpr LogicalOffset(LayoutUnit inline_offset, LayoutUnit block_offset)

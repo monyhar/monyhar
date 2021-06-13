@@ -26,10 +26,10 @@ static_library("tensorflow-text") {
     "//third_party/re2",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
     ":tensorflow-text-flags",
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
   ]
 
   public_configs = [ ":tensorflow-text-config" ]

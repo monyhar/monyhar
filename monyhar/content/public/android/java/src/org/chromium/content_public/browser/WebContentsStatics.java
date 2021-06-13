@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.browser;
+package org.monyhar.content_public.browser;
 
-import org.chromium.content.browser.framehost.RenderFrameHostDelegate;
-import org.chromium.content.browser.framehost.RenderFrameHostImpl;
+import org.monyhar.content.browser.framehost.RenderFrameHostDelegate;
+import org.monyhar.content.browser.framehost.RenderFrameHostImpl;
 
 /**
  * Static public methods for WebContents.

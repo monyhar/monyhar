@@ -105,14 +105,14 @@ grit("google_chrome_strings") {
                 [ "google_chrome_strings_{{source_name_part}}.pak" ])
 }
 
-grit("chromium_strings") {
-  source = "chromium_strings.grd"
+grit("monyhar_strings") {
+  source = "monyhar_strings.grd"
   defines = chrome_grit_defines
   output_dir = "$root_gen_dir/chrome"
   outputs =
-      [ "grit/chromium_strings.h" ] +
+      [ "grit/monyhar_strings.h" ] +
       process_file_template(locales_with_pseudolocales,
-                            [ "chromium_strings_{{source_name_part}}.pak" ])
+                            [ "monyhar_strings_{{source_name_part}}.pak" ])
 }
 
 static_library("test_support") {

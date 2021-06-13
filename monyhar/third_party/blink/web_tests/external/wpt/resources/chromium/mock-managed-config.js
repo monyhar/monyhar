@@ -5,7 +5,7 @@ import{ManagedConfigurationObserverRemote, ManagedConfigurationService, ManagedC
 
 self.ManagedConfigTest = (() => {
   // Class that mocks ManagedConfigurationService interface defined in
-  // https://source.chromium.org/chromium/chromium/src/third_party/blink/public/mojom/device/device.mojom
+  // https://source.monyhar.org/monyhar/monyhar/src/third_party/blink/public/mojom/device/device.mojom
   class MockManagedConfig {
     constructor() {
       this.receiver_ = new ManagedConfigurationServiceReceiver(this);

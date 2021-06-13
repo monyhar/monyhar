@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sync.ui;
+package org.monyhar.chrome.browser.sync.ui;
 
 import android.accounts.Account;
 import android.app.Dialog;
@@ -14,14 +14,14 @@ import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.signin.services.IdentityServicesProvider;
-import org.chromium.chrome.browser.sync.SyncErrorNotifier;
-import org.chromium.chrome.browser.sync.SyncService;
-import org.chromium.components.signin.base.CoreAccountInfo;
-import org.chromium.components.signin.identitymanager.ConsentLevel;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.signin.services.IdentityServicesProvider;
+import org.monyhar.chrome.browser.sync.SyncErrorNotifier;
+import org.monyhar.chrome.browser.sync.SyncService;
+import org.monyhar.components.signin.base.CoreAccountInfo;
+import org.monyhar.components.signin.identitymanager.ConsentLevel;
 
 /**
  * This activity is used for requesting a sync passphrase from the user. Typically,

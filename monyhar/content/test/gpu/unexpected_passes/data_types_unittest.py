@@ -138,7 +138,7 @@ class BuildStatsUnittest(unittest.TestCase):
     self.assertEqual(s.total_builds, 1)
     self.assertEqual(s.failed_builds, 1)
     self.assertEqual(s.failure_links,
-                     frozenset(['http://ci.chromium.org/b/build_id']))
+                     frozenset(['http://ci.monyhar.org/b/build_id']))
 
 
 class MapTypeUnittest(unittest.TestCase):

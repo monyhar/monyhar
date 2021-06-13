@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.invalidation;
+package org.monyhar.chrome.test.invalidation;
 
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 
-import org.chromium.base.test.util.AdvancedMockContext;
+import org.monyhar.base.test.util.AdvancedMockContext;
 
 import java.util.ArrayList;
 import java.util.List;

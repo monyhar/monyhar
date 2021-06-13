@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices;
+package org.monyhar.chrome.browser.browserservices;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,26 +13,26 @@ import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 import androidx.browser.customtabs.CustomTabsSessionToken;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Promise;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.browserservices.ui.controller.Verifier;
-import org.chromium.chrome.browser.browserservices.ui.controller.trustedwebactivity.ClientPackageNameProvider;
-import org.chromium.chrome.browser.browserservices.verification.OriginVerifierStatics;
-import org.chromium.chrome.browser.customtabs.CustomTabsConnection;
-import org.chromium.chrome.browser.customtabs.content.TabObserverRegistrar;
-import org.chromium.chrome.browser.customtabs.content.TabObserverRegistrar.CustomTabTabObserver;
-import org.chromium.chrome.browser.dependency_injection.ActivityScope;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.content_public.browser.NavigationHandle;
-import org.chromium.content_public.browser.RenderFrameHost;
-import org.chromium.net.NetError;
-import org.chromium.ui.widget.Toast;
-import org.chromium.url.GURL;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Promise;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.browserservices.ui.controller.Verifier;
+import org.monyhar.chrome.browser.browserservices.ui.controller.trustedwebactivity.ClientPackageNameProvider;
+import org.monyhar.chrome.browser.browserservices.verification.OriginVerifierStatics;
+import org.monyhar.chrome.browser.customtabs.CustomTabsConnection;
+import org.monyhar.chrome.browser.customtabs.content.TabObserverRegistrar;
+import org.monyhar.chrome.browser.customtabs.content.TabObserverRegistrar.CustomTabTabObserver;
+import org.monyhar.chrome.browser.dependency_injection.ActivityScope;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.content_public.browser.NavigationHandle;
+import org.monyhar.content_public.browser.RenderFrameHost;
+import org.monyhar.net.NetError;
+import org.monyhar.ui.widget.Toast;
+import org.monyhar.url.GURL;
 
 import javax.inject.Inject;
 

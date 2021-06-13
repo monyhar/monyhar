@@ -116,7 +116,7 @@ def Run():
     print(builder['builder']['builder'], builder['status'])
     if builder['status'] == 'FAILURE':
       logdog_tokens = [
-          'chromium',
+          'monyhar',
           'buildbucket',
           'cr-buildbucket.appspot.com',
           builder['id'],

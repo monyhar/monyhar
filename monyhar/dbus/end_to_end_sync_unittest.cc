@@ -38,7 +38,7 @@ class EndToEndSyncTest : public testing::Test {
     client_bus_ = new Bus(client_bus_options);
     object_proxy_ = client_bus_->GetObjectProxy(
         test_service_->service_name(),
-        ObjectPath("/org/chromium/TestObject"));
+        ObjectPath("/org/monyhar/TestObject"));
     ASSERT_FALSE(client_bus_->HasDBusThread());
   }
 
@@ -60,7 +60,7 @@ TEST_F(EndToEndSyncTest, Echo) {
   const std::string kHello = "hello";
 
   // Create the method call.
-  MethodCall method_call("org.chromium.TestInterface", "Echo");
+  MethodCall method_call("org.monyhar.TestInterface", "Echo");
   MessageWriter writer(&method_call);
   writer.AppendString(kHello);
 
@@ -81,7 +81,7 @@ TEST_F(EndToEndSyncTest, Timeout) {
   const std::string kHello = "hello";
 
   // Create the method call.
-  MethodCall method_call("org.chromium.TestInterface", "DelayedEcho");
+  MethodCall method_call("org.monyhar.TestInterface", "DelayedEcho");
   MessageWriter writer(&method_call);
   writer.AppendString(kHello);
 
@@ -94,7 +94,7 @@ TEST_F(EndToEndSyncTest, Timeout) {
 }
 
 TEST_F(EndToEndSyncTest, NonexistentMethod) {
-  MethodCall method_call("org.chromium.TestInterface", "Nonexistent");
+  MethodCall method_call("org.monyhar.TestInterface", "Nonexistent");
 
   const int timeout_ms = ObjectProxy::TIMEOUT_USE_DEFAULT;
   std::unique_ptr<Response> response(
@@ -103,7 +103,7 @@ TEST_F(EndToEndSyncTest, NonexistentMethod) {
 }
 
 TEST_F(EndToEndSyncTest, BrokenMethod) {
-  MethodCall method_call("org.chromium.TestInterface", "BrokenMethod");
+  MethodCall method_call("org.monyhar.TestInterface", "BrokenMethod");
 
   const int timeout_ms = ObjectProxy::TIMEOUT_USE_DEFAULT;
   std::unique_ptr<Response> response(
@@ -117,9 +117,9 @@ TEST_F(EndToEndSyncTest, InvalidServiceName) {
 
   // Replace object proxy with new one.
   object_proxy_ = client_bus_->GetObjectProxy(
-      invalid_service_name, ObjectPath("/org/chromium/TestObject"));
+      invalid_service_name, ObjectPath("/org/monyhar/TestObject"));
 
-  MethodCall method_call("org.chromium.TestInterface", "Echo");
+  MethodCall method_call("org.monyhar.TestInterface", "Echo");
 
   const int timeout_ms = ObjectProxy::TIMEOUT_USE_DEFAULT;
   std::unique_ptr<Response> response(
@@ -132,7 +132,7 @@ TEST_F(EndToEndSyncTest, ConnectToSignalAndBlock) {
   base::RunLoop run_loop;
   std::string test_signal_string;
   EXPECT_TRUE(object_proxy_->ConnectToSignalAndBlock(
-      "org.chromium.TestInterface", "Test",
+      "org.monyhar.TestInterface", "Test",
       base::BindRepeating(
           [](base::OnceClosure quit_closure, std::string* return_string,
              Signal* signal) {

@@ -23,7 +23,7 @@
 // std::string.insert() typically grows the string's capacity by somewhere
 // between 50% to 100% when it needs more memory, depending on the
 // implementation.)  Other performance improvements made as outlined in this
-// bug: http://code.google.com/p/chromium/issues/detail?id=103947
+// bug: http://code.google.com/p/monyhar/issues/detail?id=103947
 //
 // EXAMPLE USAGE:
 // URLLoaderHandler* handler* = URLLoaderHandler::Create(instance,url);

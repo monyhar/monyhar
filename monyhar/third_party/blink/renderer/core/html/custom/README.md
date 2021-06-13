@@ -5,7 +5,7 @@ methods, behavior, and attribute handling. Custom elements shipped in
 M33. We colloquially refer to that version as "v0."
 
 Contact Dominic Cooney
-([dominicc@chromium.org](mailto:dominicc@chromium.org)) with
+([dominicc@monyhar.org](mailto:dominicc@monyhar.org)) with
 questions.
 
 ### Code Location

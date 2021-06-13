@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.findinpage;
+package org.monyhar.chrome.browser.findinpage;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -14,9 +14,9 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import org.chromium.chrome.R;
-import org.chromium.components.browser_ui.widget.animation.CancelAwareAnimatorListener;
-import org.chromium.components.browser_ui.widget.animation.Interpolators;
+import org.monyhar.chrome.R;
+import org.monyhar.components.browser_ui.widget.animation.CancelAwareAnimatorListener;
+import org.monyhar.components.browser_ui.widget.animation.Interpolators;
 
 /**
  * A tablet specific version of the {@link FindToolbar}.

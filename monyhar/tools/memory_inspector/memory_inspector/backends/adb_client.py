@@ -297,10 +297,10 @@ def _EndToEndTest():
   assert mode == 0100755, oct(mode)
   assert size > 1024
   print('Pulling a large file')
-  device.Pull('/system/lib/libwebviewchromium.so', local_test_file)
+  device.Pull('/system/lib/libwebviewmonyhar.so', local_test_file)
   print('Pushing a large file')
   device.Push(local_test_file, '/data/local/tmp/file name.so')
-  remote_md5 = device.Shell('md5 /system/lib/libwebviewchromium.so')[:32]
+  remote_md5 = device.Shell('md5 /system/lib/libwebviewmonyhar.so')[:32]
   remote_md5_copy = device.Shell(['md5', '/data/local/tmp/file name.so'])[:32]
   size = device.Stat('/data/local/tmp/file name.so')[1]
   assert size == os.path.getsize(local_test_file)

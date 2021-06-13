@@ -50,7 +50,7 @@ const base::FilePath::CharType kFilepathSinglePrefExtensions[] =
 #if BUILDFLAG(GOOGLE_CHROME_BRANDING)
     FILE_PATH_LITERAL("/usr/share/google-chrome/extensions");
 #else
-    FILE_PATH_LITERAL("/usr/share/chromium/extensions");
+    FILE_PATH_LITERAL("/usr/share/monyhar/extensions");
 #endif  // BUILDFLAG(GOOGLE_CHROME_BRANDING)
 
 #endif  // defined(OS_LINUX) || defined(OS_CHROMEOS)
@@ -417,7 +417,7 @@ bool PathProvider(int key, base::FilePath* result) {
 #if BUILDFLAG(GOOGLE_CHROME_BRANDING)
       cur = base::FilePath(FILE_PATH_LITERAL("/etc/opt/chrome/policies"));
 #else
-      cur = base::FilePath(FILE_PATH_LITERAL("/etc/chromium/policies"));
+      cur = base::FilePath(FILE_PATH_LITERAL("/etc/monyhar/policies"));
 #endif
       break;
     }
@@ -486,7 +486,7 @@ bool PathProvider(int key, base::FilePath* result) {
           "/etc/opt/chrome/native-messaging-hosts"));
 #else
       cur = base::FilePath(FILE_PATH_LITERAL(
-          "/etc/chromium/native-messaging-hosts"));
+          "/etc/monyhar/native-messaging-hosts"));
 #endif
 #endif  // !defined(OS_MAC)
       break;

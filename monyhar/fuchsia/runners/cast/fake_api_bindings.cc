@@ -35,9 +35,9 @@ FakeApiBindingsImpl::RunAndReturnConnectedPort(base::StringPiece name) {
 }
 
 void FakeApiBindingsImpl::GetAll(GetAllCallback callback) {
-  std::vector<chromium::cast::ApiBinding> bindings_clone;
+  std::vector<monyhar::cast::ApiBinding> bindings_clone;
   for (auto& binding : bindings_) {
-    chromium::cast::ApiBinding binding_clone;
+    monyhar::cast::ApiBinding binding_clone;
     zx_status_t status = binding.Clone(&binding_clone);
     ZX_CHECK(status == ZX_OK, status);
     bindings_clone.push_back(std::move(binding_clone));

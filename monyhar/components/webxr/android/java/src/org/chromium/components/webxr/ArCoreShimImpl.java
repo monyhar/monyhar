@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.webxr;
+package org.monyhar.components.webxr;
 
 import android.app.Activity;
 import android.content.Context;
 
 import com.google.ar.core.ArCoreApk;
 
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.annotations.UsedByReflection;
-import org.chromium.components.webxr.ArCoreShim.InstallStatus;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.annotations.UsedByReflection;
+import org.monyhar.components.webxr.ArCoreShim.InstallStatus;
 
 @UsedByReflection("ArCoreInstallUtils.java")
 class ArCoreShimImpl implements ArCoreShim {

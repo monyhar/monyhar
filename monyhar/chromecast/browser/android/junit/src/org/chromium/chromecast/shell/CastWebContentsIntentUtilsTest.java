@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.shell;
+package org.monyhar.chromecast.shell;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -19,8 +19,8 @@ import org.mockito.MockitoAnnotations;
 import org.robolectric.Robolectric;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * Tests for CastWebContentsComponent.

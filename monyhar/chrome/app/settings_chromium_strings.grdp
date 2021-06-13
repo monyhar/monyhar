@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Settings-specific Chromium strings (included from chromium_strings.grd). -->
+<!-- Settings-specific Chromium strings (included from monyhar_strings.grd). -->
 <grit-part>
   <!-- About Page -->
   <message name="IDS_SETTINGS_ABOUT_PROGRAM" desc="Menu title for the About Chromium page.">

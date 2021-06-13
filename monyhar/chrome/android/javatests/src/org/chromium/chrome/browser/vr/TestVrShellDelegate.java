@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr;
+package org.monyhar.chrome.browser.vr;
 
 import android.graphics.PointF;
 import android.os.Build;
 
 import org.junit.runner.Description;
 
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.vr.rules.VrModuleNotInstalled;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.vr.rules.VrModuleNotInstalled;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /**
  * Class for accessing VrShellDelegate internals for testing purposes.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -10,10 +10,10 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
-import static org.chromium.net.CronetEngine.Builder.HTTP_CACHE_IN_MEMORY;
-import static org.chromium.net.CronetTestRule.assertContains;
-import static org.chromium.net.CronetTestRule.getContext;
-import static org.chromium.net.CronetTestRule.getTestStorage;
+import static org.monyhar.net.CronetEngine.Builder.HTTP_CACHE_IN_MEMORY;
+import static org.monyhar.net.CronetTestRule.assertContains;
+import static org.monyhar.net.CronetTestRule.getContext;
+import static org.monyhar.net.CronetTestRule.getTestStorage;
 
 import android.content.Context;
 import android.content.ContextWrapper;
@@ -32,18 +32,18 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.FileUtils;
-import org.chromium.base.PathUtils;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.test.util.Feature;
-import org.chromium.net.CronetTestRule.CronetTestFramework;
-import org.chromium.net.CronetTestRule.OnlyRunNativeCronet;
-import org.chromium.net.CronetTestRule.RequiresMinApi;
-import org.chromium.net.TestUrlRequestCallback.ResponseStep;
-import org.chromium.net.impl.CronetEngineBuilderImpl;
-import org.chromium.net.impl.CronetUrlRequestContext;
-import org.chromium.net.impl.NativeCronetEngineBuilderImpl;
-import org.chromium.net.test.EmbeddedTestServer;
+import org.monyhar.base.FileUtils;
+import org.monyhar.base.PathUtils;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.net.CronetTestRule.CronetTestFramework;
+import org.monyhar.net.CronetTestRule.OnlyRunNativeCronet;
+import org.monyhar.net.CronetTestRule.RequiresMinApi;
+import org.monyhar.net.TestUrlRequestCallback.ResponseStep;
+import org.monyhar.net.impl.CronetEngineBuilderImpl;
+import org.monyhar.net.impl.CronetUrlRequestContext;
+import org.monyhar.net.impl.NativeCronetEngineBuilderImpl;
+import org.monyhar.net.test.EmbeddedTestServer;
 
 import java.io.BufferedReader;
 import java.io.File;

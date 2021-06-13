@@ -292,7 +292,7 @@ DiscardableSharedMemory::LockResult DiscardableSharedMemory::Lock(
   // is a no-op on macOS.
   //
   // For more information, see
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=823915.
+  // https://bugs.monyhar.org/p/monyhar/issues/detail?id=823915.
   madvise(static_cast<char*>(shared_memory_mapping_.memory()) +
               AlignToPageSize(sizeof(SharedState)),
           AlignToPageSize(mapped_size_), MADV_FREE_REUSE);

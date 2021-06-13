@@ -26,7 +26,7 @@ class WebFontTypefaceFactory {
   static bool CreateTypeface(const sk_sp<SkData>, sk_sp<SkTypeface>&);
 
   // TODO(drott): This should be going away in favor of a new API on SkTypeface:
-  // https://bugs.chromium.org/p/skia/issues/detail?id=7121
+  // https://bugs.monyhar.org/p/skia/issues/detail?id=7121
   static sk_sp<SkFontMgr> FontManagerForVariations();
   static sk_sp<SkFontMgr> FontManagerForSbix();
   static sk_sp<SkFontMgr> FreeTypeFontManager();

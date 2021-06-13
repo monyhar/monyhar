@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_check;
+package org.monyhar.chrome.browser.password_check;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
@@ -20,14 +20,14 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.settings.SettingsActivityTestRule;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.settings.SettingsActivityTestRule;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
 
 /**
  * Integration test for the Password Check component, testing the interaction between sub-components

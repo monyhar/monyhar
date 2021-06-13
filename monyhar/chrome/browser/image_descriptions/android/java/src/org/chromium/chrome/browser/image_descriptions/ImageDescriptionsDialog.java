@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.image_descriptions;
+package org.monyhar.chrome.browser.image_descriptions;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,21 +13,21 @@ import android.widget.RadioGroup;
 import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.device.DeviceConditions;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.browser_ui.widget.RadioButtonWithDescription;
-import org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionLayout;
-import org.chromium.content_public.browser.LoadCommittedDetails;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.WebContentsObserver;
-import org.chromium.net.ConnectionType;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.modaldialog.DialogDismissalCause;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.modaldialog.ModalDialogProperties;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.device.DeviceConditions;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.browser_ui.widget.RadioButtonWithDescription;
+import org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionLayout;
+import org.monyhar.content_public.browser.LoadCommittedDetails;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.WebContentsObserver;
+import org.monyhar.net.ConnectionType;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.modaldialog.DialogDismissalCause;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.modaldialog.ModalDialogProperties;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.widget.Toast;
 
 /**
  * Dialog for the "Get Image Descriptions" feature. If a user is a screen reader user, they will

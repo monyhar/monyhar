@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.browser.test.mock;
+package org.monyhar.content_public.browser.test.mock;
 
-import org.chromium.base.Callback;
-import org.chromium.content_public.browser.GlobalFrameRoutingId;
-import org.chromium.content_public.browser.PermissionsPolicyFeature;
-import org.chromium.content_public.browser.RenderFrameHost;
-import org.chromium.mojo.bindings.Interface;
-import org.chromium.url.GURL;
-import org.chromium.url.Origin;
+import org.monyhar.base.Callback;
+import org.monyhar.content_public.browser.GlobalFrameRoutingId;
+import org.monyhar.content_public.browser.PermissionsPolicyFeature;
+import org.monyhar.content_public.browser.RenderFrameHost;
+import org.monyhar.mojo.bindings.Interface;
+import org.monyhar.url.GURL;
+import org.monyhar.url.Origin;
 
 /**
  * Mock class for {@link RenderFrameHost}.

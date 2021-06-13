@@ -77,7 +77,7 @@ source_set("power_save_blocker") {
 }
 
 if (is_android) {
-  java_sources_needing_jni = [ "android/java/src/org/chromium/device/power_save_blocker/PowerSaveBlocker.java" ]
+  java_sources_needing_jni = [ "android/java/src/org/monyhar/device/power_save_blocker/PowerSaveBlocker.java" ]
 
   generate_jni("jni_headers") {
     visibility = [ ":power_save_blocker" ]

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.impl;
+package org.monyhar.net.impl;
 
 import android.annotation.TargetApi;
 import android.net.TrafficStats;
@@ -11,14 +11,14 @@ import android.util.Log;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.net.CronetException;
-import org.chromium.net.InlineExecutionProhibitedException;
-import org.chromium.net.ThreadStatsUid;
-import org.chromium.net.UploadDataProvider;
-import org.chromium.net.UrlResponseInfo;
-import org.chromium.net.impl.JavaUrlRequestUtils.CheckedRunnable;
-import org.chromium.net.impl.JavaUrlRequestUtils.DirectPreventingExecutor;
-import org.chromium.net.impl.JavaUrlRequestUtils.State;
+import org.monyhar.net.CronetException;
+import org.monyhar.net.InlineExecutionProhibitedException;
+import org.monyhar.net.ThreadStatsUid;
+import org.monyhar.net.UploadDataProvider;
+import org.monyhar.net.UrlResponseInfo;
+import org.monyhar.net.impl.JavaUrlRequestUtils.CheckedRunnable;
+import org.monyhar.net.impl.JavaUrlRequestUtils.DirectPreventingExecutor;
+import org.monyhar.net.impl.JavaUrlRequestUtils.State;
 
 import java.io.IOException;
 import java.io.InputStream;

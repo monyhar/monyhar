@@ -64,7 +64,7 @@ IN_PROC_BROWSER_TEST_F(ScriptingAPITest, MainFrameTests) {
   OpenURLInCurrentTab(
       embedded_test_server()->GetURL("example.com", "/simple.html"));
   OpenURLInNewTab(
-      embedded_test_server()->GetURL("chromium.org", "/title2.html"));
+      embedded_test_server()->GetURL("monyhar.org", "/title2.html"));
 
   ASSERT_TRUE(RunExtensionTest("scripting/main_frame", {},
                                {.ignore_manifest_warnings = true}))
@@ -88,7 +88,7 @@ IN_PROC_BROWSER_TEST_F(ScriptingAPITest, CSSInjection) {
   OpenURLInCurrentTab(
       embedded_test_server()->GetURL("example.com", "/simple.html"));
   OpenURLInNewTab(
-      embedded_test_server()->GetURL("chromium.org", "/title2.html"));
+      embedded_test_server()->GetURL("monyhar.org", "/title2.html"));
   OpenURLInNewTab(embedded_test_server()->GetURL("subframes.example",
                                                  "/iframe_cross_site.html"));
 

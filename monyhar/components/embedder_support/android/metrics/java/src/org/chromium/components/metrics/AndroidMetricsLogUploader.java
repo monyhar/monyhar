@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.metrics;
+package org.monyhar.components.metrics;
 
-import org.chromium.base.Consumer;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
+import org.monyhar.base.Consumer;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
 
 /**
  * Passes UMA logs from native to a java uploader.

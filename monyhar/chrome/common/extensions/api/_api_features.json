@@ -160,7 +160,7 @@
   },
   // This API is allowlisted on stable and should not be enabled for a wider
   // audience without resolving security issues raised in API proposal and
-  // review (https://codereview.chromium.org/25305002).
+  // review (https://codereview.monyhar.org/25305002).
   "browserAction.openPopup": [{
     "channel": "dev",
     "dependencies": ["manifest:browser_action"],

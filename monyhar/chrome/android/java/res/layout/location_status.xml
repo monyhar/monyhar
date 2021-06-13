@@ -6,7 +6,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <org.chromium.chrome.browser.omnibox.status.StatusView
+    <org.monyhar.chrome.browser.omnibox.status.StatusView
         android:id="@+id/location_bar_status"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -50,5 +50,5 @@
             android:layout_height="match_parent"
             android:visibility="gone" />
 
-    </org.chromium.chrome.browser.omnibox.status.StatusView>
+    </org.monyhar.chrome.browser.omnibox.status.StatusView>
 </merge>

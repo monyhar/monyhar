@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omaha.inline;
+package org.monyhar.chrome.browser.omaha.inline;
 
 import android.app.Activity;
 import android.os.Handler;
@@ -16,11 +16,11 @@ import com.google.android.play.core.appupdate.testing.FakeAppUpdateManager;
 import com.google.android.play.core.install.model.AppUpdateType;
 import com.google.android.play.core.tasks.Task;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.ui.widget.Toast;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

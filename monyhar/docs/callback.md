@@ -183,8 +183,8 @@ Note that the return value from |first| will be lost in the above example, and
 would be destroyed before |second| is run. If you want the return value from
 |first| to be preserved and ultimately returned after running both |first| and
 |second|, then you would need a primitive such as the  `base::PassThrough<T>()`
-helper in the [base::PassThrough CL](https://chromium-review.googlesource.com/c/chromium/src/+/2493243).
-If this would be helpful for you, please let danakj@chromium.org know or ping
+helper in the [base::PassThrough CL](https://monyhar-review.googlesource.com/c/monyhar/src/+/2493243).
+If this would be helpful for you, please let danakj@monyhar.org know or ping
 the CL.
 
 ### Chaining callbacks across different task runners

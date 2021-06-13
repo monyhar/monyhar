@@ -10,7 +10,7 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), os.pardir, os.pardir,
                                 'build', 'android'))
-import devil_chromium
+import devil_monyhar
 from devil.android import apk_helper
 from devil.android import device_utils
 
@@ -33,7 +33,7 @@ def main():
                            ' as --args="--myflag"')
   args = parser.parse_args()
 
-  devil_chromium.Initialize()
+  devil_monyhar.Initialize()
   devices = device_utils.DeviceUtils.HealthyDevices(device_arg=args.devices)
 
   def install(device):
@@ -72,7 +72,7 @@ def main():
       launch_cmd.extend(args.remaining_args)
       subprocess.call(launch_cmd)
     else:
-      device.adb.Shell('monkey -p org.chromium.weblayer.shell 1')
+      device.adb.Shell('monkey -p org.monyhar.weblayer.shell 1')
 
   device_utils.DeviceUtils.parallel(devices).pMap(install)
 

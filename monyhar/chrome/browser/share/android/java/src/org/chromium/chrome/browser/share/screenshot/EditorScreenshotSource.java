@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.screenshot;
+package org.monyhar.chrome.browser.share.screenshot;
 
 import android.graphics.Bitmap;
 
@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 /**
  * An interface for a class that can provide screenshots to a consumer.
  * TODO(crbug/1024586): Remove this temporary class and instead move
- * chrome/android/java/src/org/chromium/chrome/browser/feedback/ScreenshotSource.java.
+ * chrome/android/java/src/org/monyhar/chrome/browser/feedback/ScreenshotSource.java.
  */
 public interface EditorScreenshotSource {
     /**

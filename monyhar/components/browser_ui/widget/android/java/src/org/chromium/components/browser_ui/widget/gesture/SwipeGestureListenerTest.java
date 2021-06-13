@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.gesture;
+package org.monyhar.components.browser_ui.widget.gesture;
 
 import static org.mockito.ArgumentMatchers.anyInt;
 
@@ -20,9 +20,9 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.components.browser_ui.widget.gesture.SwipeGestureListener.ScrollDirection;
-import org.chromium.components.browser_ui.widget.gesture.SwipeGestureListener.SwipeHandler;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.components.browser_ui.widget.gesture.SwipeGestureListener.ScrollDirection;
+import org.monyhar.components.browser_ui.widget.gesture.SwipeGestureListener.SwipeHandler;
 
 import java.util.ArrayList;
 import java.util.List;

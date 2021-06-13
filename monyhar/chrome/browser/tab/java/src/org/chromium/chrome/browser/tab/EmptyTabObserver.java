@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab;
+package org.monyhar.chrome.browser.tab;
 
 import android.graphics.Bitmap;
 
-import org.chromium.components.find_in_page.FindMatchRectsDetails;
-import org.chromium.components.find_in_page.FindNotificationDetails;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.NavigationHandle;
-import org.chromium.net.NetError;
-import org.chromium.url.GURL;
+import org.monyhar.components.find_in_page.FindMatchRectsDetails;
+import org.monyhar.components.find_in_page.FindNotificationDetails;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.NavigationHandle;
+import org.monyhar.net.NetError;
+import org.monyhar.url.GURL;
 
 /**
  * An implementation of the {@link TabObserver} which has empty implementations of all methods.

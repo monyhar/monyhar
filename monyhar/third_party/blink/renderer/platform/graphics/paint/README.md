@@ -1,6 +1,6 @@
 <!---
   The live version of this document can be viewed at:
-  https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/renderer/platform/graphics/paint/README.md
+  https://monyhar.googlesource.com/monyhar/src/+/master/third_party/blink/renderer/platform/graphics/paint/README.md
 -->
 
 # Platform paint code
@@ -12,7 +12,7 @@ concepts, such as DOM elements and layout objects.
 For information about how the display list and paint property trees are
 generated, see [the core paint README file](../../../core/paint/README.md).
 
-This code is owned by the [rendering team](https://www.chromium.org/teams/rendering).
+This code is owned by the [rendering team](https://www.monyhar.org/teams/rendering).
 
 [TOC]
 

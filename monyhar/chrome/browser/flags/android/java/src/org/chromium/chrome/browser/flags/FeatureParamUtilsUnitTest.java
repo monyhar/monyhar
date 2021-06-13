@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.flags;
+package org.monyhar.chrome.browser.flags;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -11,7 +11,7 @@ import org.robolectric.annotation.Config;
 import org.robolectric.annotation.Implementation;
 import org.robolectric.annotation.Implements;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
 
 /** Tests the behavior of {@link FeatureParamUtils}. */
 @RunWith(BaseRobolectricTestRunner.class)

@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.test.params;
+package org.monyhar.base.test.params;
 
 import org.junit.runners.model.FrameworkMethod;
 
-import org.chromium.base.test.params.ParameterizedRunner.ParameterizedTestInstantiationException;
+import org.monyhar.base.test.params.ParameterizedRunner.ParameterizedTestInstantiationException;
 
 import java.util.List;
 
@@ -16,7 +16,7 @@ import java.util.List;
  *
  * To create a ParameterizedRunnerDelegate, extends from any BlockJUnit4Runner
  * children class. You can copy all the implementation from
- * org.chromium.base.test.params.BaseJUnit4RunnerDelegate.
+ * org.monyhar.base.test.params.BaseJUnit4RunnerDelegate.
  */
 public interface ParameterizedRunnerDelegate {
     /**

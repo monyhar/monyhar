@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.signin;
+package org.monyhar.chrome.browser.signin;
 
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -23,19 +23,19 @@ import org.robolectric.annotation.Config;
 import org.robolectric.annotation.Implementation;
 import org.robolectric.annotation.Implements;
 
-import org.chromium.base.metrics.UmaRecorder;
-import org.chromium.base.metrics.UmaRecorderHolder;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.signin.services.IdentityServicesProvider;
-import org.chromium.chrome.browser.signin.services.SigninManager;
-import org.chromium.chrome.browser.signin.services.SigninPreferencesManager;
-import org.chromium.chrome.test.util.browser.signin.AccountManagerTestRule;
-import org.chromium.components.signin.metrics.AccountConsistencyPromoAction;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.metrics.UmaRecorder;
+import org.monyhar.base.metrics.UmaRecorderHolder;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.signin.services.IdentityServicesProvider;
+import org.monyhar.chrome.browser.signin.services.SigninManager;
+import org.monyhar.chrome.browser.signin.services.SigninPreferencesManager;
+import org.monyhar.chrome.test.util.browser.signin.AccountManagerTestRule;
+import org.monyhar.components.signin.metrics.AccountConsistencyPromoAction;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * JUnit tests for the class {@link SigninBridge}.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.long_screenshots;
+package org.monyhar.chrome.browser.share.long_screenshots;
 
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
@@ -20,17 +20,17 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.image_editor.ImageEditorDialogCoordinator;
-import org.chromium.chrome.browser.share.long_screenshots.bitmap_generation.EntryManager;
-import org.chromium.chrome.browser.share.long_screenshots.bitmap_generation.LongScreenshotsEntry;
-import org.chromium.chrome.browser.share.screenshot.ScreenshotShareSheetDialog;
-import org.chromium.chrome.browser.share.share_sheet.ChromeOptionShareCallback;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.modules.image_editor.ImageEditorModuleProvider;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.image_editor.ImageEditorDialogCoordinator;
+import org.monyhar.chrome.browser.share.long_screenshots.bitmap_generation.EntryManager;
+import org.monyhar.chrome.browser.share.long_screenshots.bitmap_generation.LongScreenshotsEntry;
+import org.monyhar.chrome.browser.share.screenshot.ScreenshotShareSheetDialog;
+import org.monyhar.chrome.browser.share.share_sheet.ChromeOptionShareCallback;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.modules.image_editor.ImageEditorModuleProvider;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
 
 /** Tests for the LongScreenshotsCoordinator. */
 @RunWith(BaseRobolectricTestRunner.class)

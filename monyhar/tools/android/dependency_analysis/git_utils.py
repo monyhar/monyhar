@@ -31,7 +31,7 @@ def get_last_commit_cr_position() -> str:
     This is the number that follows "Cr-Commit-Position:". In the absence of
     this value, returns an empty string.
 
-    The cwd must be a chromium git repository.
+    The cwd must be a monyhar git repository.
     """
     description: str = _get_last_commit_with_format('%b')
     # Will capture from

@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo_base;
+package org.monyhar.mojo_base;
 
-import org.chromium.mojo.system.Core;
-import org.chromium.mojo.system.SharedBufferHandle;
-import org.chromium.mojo.system.impl.CoreImpl;
-import org.chromium.mojo_base.mojom.BigBuffer;
-import org.chromium.mojo_base.mojom.BigBufferSharedMemoryRegion;
+import org.monyhar.mojo.system.Core;
+import org.monyhar.mojo.system.SharedBufferHandle;
+import org.monyhar.mojo.system.impl.CoreImpl;
+import org.monyhar.mojo_base.mojom.BigBuffer;
+import org.monyhar.mojo_base.mojom.BigBufferSharedMemoryRegion;
 
 import java.nio.ByteBuffer;
 

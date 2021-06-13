@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.module_installer.engine;
+package org.monyhar.components.module_installer.engine;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -33,8 +33,8 @@ import org.mockito.InOrder;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.components.module_installer.logger.Logger;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.components.module_installer.logger.Logger;
 
 import java.util.Arrays;
 import java.util.Collections;

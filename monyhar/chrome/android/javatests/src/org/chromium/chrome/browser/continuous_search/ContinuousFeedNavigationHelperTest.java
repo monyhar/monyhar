@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.continuous_search;
+package org.monyhar.chrome.browser.continuous_search;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.doReturn;
@@ -23,17 +23,17 @@ import org.mockito.Captor;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.UserDataHost;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Batch;
-import org.chromium.chrome.browser.feed.NtpListContentManager.FeedContent;
-import org.chromium.chrome.browser.feed.NtpListContentManager.FeedContentMetadata;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.chrome.test.util.browser.Features.EnableFeatures;
-import org.chromium.url.GURL;
+import org.monyhar.base.UserDataHost;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.chrome.browser.feed.NtpListContentManager.FeedContent;
+import org.monyhar.chrome.browser.feed.NtpListContentManager.FeedContentMetadata;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.chrome.test.util.browser.Features.EnableFeatures;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.List;

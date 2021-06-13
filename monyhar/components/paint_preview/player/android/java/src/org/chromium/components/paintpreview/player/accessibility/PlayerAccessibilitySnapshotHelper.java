@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.paintpreview.player.accessibility;
+package org.monyhar.components.paintpreview.player.accessibility;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.content_public.browser.AccessibilitySnapshotNode;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.content_public.browser.AccessibilitySnapshotNode;
 
 /**
  * This class helps with populating {@link AccessibilitySnapshotNode} from native AXTreeUpdate.

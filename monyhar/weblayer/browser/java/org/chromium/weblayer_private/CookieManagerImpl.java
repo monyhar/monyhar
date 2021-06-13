@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.os.RemoteException;
 import android.webkit.ValueCallback;
 
-import org.chromium.base.Callback;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.weblayer_private.interfaces.CookieChangeCause;
-import org.chromium.weblayer_private.interfaces.ICookieChangedCallbackClient;
-import org.chromium.weblayer_private.interfaces.ICookieManager;
-import org.chromium.weblayer_private.interfaces.IObjectWrapper;
-import org.chromium.weblayer_private.interfaces.ObjectWrapper;
-import org.chromium.weblayer_private.interfaces.StrictModeWorkaround;
+import org.monyhar.base.Callback;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.weblayer_private.interfaces.CookieChangeCause;
+import org.monyhar.weblayer_private.interfaces.ICookieChangedCallbackClient;
+import org.monyhar.weblayer_private.interfaces.ICookieManager;
+import org.monyhar.weblayer_private.interfaces.IObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.ObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.StrictModeWorkaround;
 
 import java.lang.ref.WeakReference;
 
@@ -79,21 +79,21 @@ public final class CookieManagerImpl extends ICookieManager.Stub {
 
     @CookieChangeCause
     private static int mojoCauseToJavaType(int cause) {
-        assert org.chromium.network.mojom.CookieChangeCause.isKnownValue(cause);
+        assert org.monyhar.network.mojom.CookieChangeCause.isKnownValue(cause);
         switch (cause) {
-            case org.chromium.network.mojom.CookieChangeCause.INSERTED:
+            case org.monyhar.network.mojom.CookieChangeCause.INSERTED:
                 return CookieChangeCause.INSERTED;
-            case org.chromium.network.mojom.CookieChangeCause.EXPLICIT:
+            case org.monyhar.network.mojom.CookieChangeCause.EXPLICIT:
                 return CookieChangeCause.EXPLICIT;
-            case org.chromium.network.mojom.CookieChangeCause.UNKNOWN_DELETION:
+            case org.monyhar.network.mojom.CookieChangeCause.UNKNOWN_DELETION:
                 return CookieChangeCause.UNKNOWN_DELETION;
-            case org.chromium.network.mojom.CookieChangeCause.OVERWRITE:
+            case org.monyhar.network.mojom.CookieChangeCause.OVERWRITE:
                 return CookieChangeCause.OVERWRITE;
-            case org.chromium.network.mojom.CookieChangeCause.EXPIRED:
+            case org.monyhar.network.mojom.CookieChangeCause.EXPIRED:
                 return CookieChangeCause.EXPIRED;
-            case org.chromium.network.mojom.CookieChangeCause.EVICTED:
+            case org.monyhar.network.mojom.CookieChangeCause.EVICTED:
                 return CookieChangeCause.EVICTED;
-            case org.chromium.network.mojom.CookieChangeCause.EXPIRED_OVERWRITE:
+            case org.monyhar.network.mojom.CookieChangeCause.EXPIRED_OVERWRITE:
                 return CookieChangeCause.EXPIRED_OVERWRITE;
         }
         assert false;

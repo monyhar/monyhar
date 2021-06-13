@@ -73,7 +73,7 @@ there.)
 However, WebGL exposed high-resolution clocks that are useful for exploiting
 Spectre. It was possible to temporarily remove some of them, and to coarsen
 another, with minimal breakage of web compatibility, and so [that has been
-done](https://bugs.chromium.org/p/chromium/issues/detail?id=808744). However, we
+done](https://bugs.monyhar.org/p/monyhar/issues/detail?id=808744). However, we
 expect to reinstate the clocks on platforms where Site Isolation is on by
 default. (See [Attenuating Clocks, below](#attenuating-clocks).)
 
@@ -109,7 +109,7 @@ Isolation is currently the best and most direct solution.
 
 The first order solution is to simply get cross-origin data out of the Spectre
 attacker’s address space. [Site
-Isolation](https://www.chromium.org/Home/chromium-security/site-isolation) (SI)
+Isolation](https://www.monyhar.org/Home/monyhar-security/site-isolation) (SI)
 more closely aligns the web security model (the same-origin policy) with the
 underlying platform’s security model (separate address spaces and privilege
 reduction).
@@ -124,7 +124,7 @@ developing](https://webkit.org/blog/8048/what-spectre-and-meltdown-mean-for-webk
 
 All major browsers are working on some form of site isolation, and [we are
 collaborating publicly on a way for sites to opt in to
-isolation](https://groups.google.com/a/chromium.org/forum/#!forum/isolation-policy),
+isolation](https://groups.google.com/a/monyhar.org/forum/#!forum/isolation-policy),
 to potentially make implementing and deploying site isolation easier. (Chrome
 Desktop’s Site Isolation will be on by default, regardless, in the M67 – M68
 timeframe.)
@@ -134,7 +134,7 @@ timeframe.)
 ##### Incompleteness of CORB
 
 Site Isolation depends on [cross-origin read
-blocking](https://chromium.googlesource.com/chromium/src/+/main/content/browser/loader/cross_origin_read_blocking_explainer.md)
+blocking](https://monyhar.googlesource.com/monyhar/src/+/main/content/browser/loader/cross_origin_read_blocking_explainer.md)
 (CORB; formerly known as cross-site document blocking or XSDB) to prevent a
 malicious website from pulling in sensitive cross-origin data. Otherwise, an
 attacker could use markup like `<img src="http://example.com/secret.json">` to
@@ -145,7 +145,7 @@ As of M65, CORB protects:
 * HTML, JSON, and XML responses.
   Protection requires the resource to be served with the correct
   `Content-Type` header. [We recommend using `X-Content-Type-Options:
-  nosniff`](https://www.chromium.org/Home/chromium-security/ssca).
+  nosniff`](https://www.monyhar.org/Home/monyhar-security/ssca).
 * text/plain responses which sniff as HTML, XML, or JSON.
 
 Today, CORB doesn’t protect:
@@ -165,7 +165,7 @@ Site operators should read and follow, where applicable, [our guidance for
 maximizing CORB and other defensive
 features](https://developers.google.com/web/updates/2018/02/meltdown-spectre).
 (There is [an open bug to add a CORB evaluator to
-Lighthouse](https://bugs.chromium.org/p/chromium/issues/detail?id=806070).)
+Lighthouse](https://bugs.monyhar.org/p/monyhar/issues/detail?id=806070).)
 
 ##### Multiple Origins Within A `SiteInstance` {#multiple-origins-within-a-siteinstance}
 
@@ -203,7 +203,7 @@ Isolation.
 
 Chrome uses different PPAPI processes per origin, for secure origins. (We
 tracked this as [Issue
-809614](https://bugs.chromium.org/p/chromium/issues/detail?id=809614).)
+809614](https://bugs.monyhar.org/p/monyhar/issues/detail?id=809614).)
 
 ###### Flash
 
@@ -246,7 +246,7 @@ Before copying sensitive data into a renderer process, we should somehow get the
 person’s affirmative knowledge and consent. This has implications for all types
 of form auto-filling: normal form data, passwords, payment instruments, and any
 others. It seems like we are [currently in a pretty good place on that
-front](https://bugs.chromium.org/p/chromium/issues/detail?id=802993), with one
+front](https://bugs.monyhar.org/p/monyhar/issues/detail?id=802993), with one
 exception: usernames and passwords get auto-filled into the shadow DOM, and then
 revealed to the real DOM on a (potentially forged?) user gesture. These
 credentials are origin-bound, however.
@@ -276,7 +276,7 @@ of bounds when speculatively executed. By exerting more control over how we
 generate machine code from JavaScript, and over where we place objects in memory
 relative to each other, we can reduce the prevalence and utility of these
 gadgets. The V8 team has been [landing such code generation
-changes](https://bugs.chromium.org/p/chromium/issues/detail?id=798964)
+changes](https://bugs.monyhar.org/p/monyhar/issues/detail?id=798964)
 continually since January 2018.
 
 Of the known attacks, we believe it’s currently only feasible to try to mitigate
@@ -315,7 +315,7 @@ Exploiting Spectre requires a clock. We don’t believe it’s possible to
 eliminate, coarsen, or jitter all explicit and implicit clocks in the Open Web
 Platform (OWP) in a way that is sufficient to fully resolve Spectre. ([Merely
 enumerating all the
-clocks](https://bugs.chromium.org/p/chromium/issues/detail?id=798795) is
+clocks](https://bugs.monyhar.org/p/monyhar/issues/detail?id=798795) is
 difficult.) Surprisingly coarse clocks are still useful for exploitation.
 
 While it sometimes makes sense to deprecate, remove, coarsen, or jitter clocks,
@@ -355,7 +355,7 @@ exposed safely, as any attack they enable would only gain access to same-origin
 data, or data that explicitly asserted that it accepted the risk of exposure.
 
 Both COOP and COEP are enabled as of M83, and we [plan to require both before
-enabling APIs like `SharedArrayBuffer`](https://groups.google.com/a/chromium.org/d/msg/blink-dev/_0MEXs6TJhg/F0UduPfpAQAJ).
+enabling APIs like `SharedArrayBuffer`](https://groups.google.com/a/monyhar.org/d/msg/blink-dev/_0MEXs6TJhg/F0UduPfpAQAJ).
 Other browsers seem likely to do the same.
 
 #### Other Gating Mechanisms
@@ -374,7 +374,7 @@ content. (See e.g. [Feature Policy](https://wicg.github.io/feature-policy/).)
 *Engagement* could be defined in a variety of complementary ways:
 
 * High [site engagement
-  score](https://www.chromium.org/developers/design-documents/site-engagement)
+  score](https://www.monyhar.org/developers/design-documents/site-engagement)
 * High site popularity, search rank, or similar
 * Frequent gestures on/interactions with the document
 * Document is the top-level document

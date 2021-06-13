@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.test.util;
+package org.monyhar.base.test.util;
 
 import junit.framework.TestCase;
 
 import org.junit.runners.model.FrameworkMethod;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 import java.lang.reflect.Method;
 

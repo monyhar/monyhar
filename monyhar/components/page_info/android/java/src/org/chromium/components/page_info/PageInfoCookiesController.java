@@ -2,24 +2,24 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.page_info;
+package org.monyhar.components.page_info;
 
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.FragmentManager;
 
-import org.chromium.components.browser_ui.site_settings.SingleWebsiteSettings;
-import org.chromium.components.browser_ui.site_settings.SiteDataCleaner;
-import org.chromium.components.browser_ui.site_settings.SiteSettingsCategory;
-import org.chromium.components.browser_ui.site_settings.Website;
-import org.chromium.components.browser_ui.site_settings.WebsiteAddress;
-import org.chromium.components.browser_ui.site_settings.WebsitePermissionsFetcher;
-import org.chromium.components.browser_ui.site_settings.WebsitePreferenceBridge;
-import org.chromium.components.content_settings.CookieControlsBridge;
-import org.chromium.components.content_settings.CookieControlsEnforcement;
-import org.chromium.components.content_settings.CookieControlsObserver;
-import org.chromium.components.embedder_support.util.Origin;
+import org.monyhar.components.browser_ui.site_settings.SingleWebsiteSettings;
+import org.monyhar.components.browser_ui.site_settings.SiteDataCleaner;
+import org.monyhar.components.browser_ui.site_settings.SiteSettingsCategory;
+import org.monyhar.components.browser_ui.site_settings.Website;
+import org.monyhar.components.browser_ui.site_settings.WebsiteAddress;
+import org.monyhar.components.browser_ui.site_settings.WebsitePermissionsFetcher;
+import org.monyhar.components.browser_ui.site_settings.WebsitePreferenceBridge;
+import org.monyhar.components.content_settings.CookieControlsBridge;
+import org.monyhar.components.content_settings.CookieControlsEnforcement;
+import org.monyhar.components.content_settings.CookieControlsObserver;
+import org.monyhar.components.embedder_support.util.Origin;
 
 import java.util.Collection;
 

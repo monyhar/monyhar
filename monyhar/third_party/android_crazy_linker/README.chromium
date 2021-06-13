@@ -1,5 +1,5 @@
 Name: Android Crazy Linker
-URL: https://chromium.googlesource.com/chromium/src.git/+/master/third_party/android_crazy_linker/
+URL: https://monyhar.googlesource.com/monyhar/src.git/+/master/third_party/android_crazy_linker/
 Version: 0
 Revision: Forked from https://android.googlesource.com/platform/ndk/+/681f1b744aec1b0888f4c7a68165720db9670300/sources/android/crazy_linker/
 Security Critical: no
@@ -23,7 +23,7 @@ Local Modifications:
 - Fix for crbug/386594 (Crazy linker fails to load a browser on MIPS)
 
 - Add support for unpacking packed R_ARM_RELATIVE relocation data.
-  https://code.google.com/p/chromium/issues/detail?id=385553
+  https://code.google.com/p/monyhar/issues/detail?id=385553
 
 - Add support for opening library within a zipfile.
 

@@ -56,7 +56,7 @@ def print_landmines():
   print('Clobber to get rid of stale generated mojom.h files')
   print('Need to clobber everything due to build_nexe change in nacl r13424')
   print(
-      '[chromium-dev] PSA: clobber build needed for IDR_INSPECTOR_* compil...')
+      '[monyhar-dev] PSA: clobber build needed for IDR_INSPECTOR_* compil...')
   print('blink_resources.grd changed: crbug.com/400860')
   print('ninja dependency cycle: crbug.com/408192')
   print('Clobber to fix missing NaCl gyp dependencies (crbug.com/427427).')

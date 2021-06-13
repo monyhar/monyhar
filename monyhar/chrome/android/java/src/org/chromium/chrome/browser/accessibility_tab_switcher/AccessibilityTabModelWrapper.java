@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.accessibility_tab_switcher;
+package org.monyhar.chrome.browser.accessibility_tab_switcher;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -17,19 +17,19 @@ import androidx.appcompat.content.res.AppCompatResources;
 
 import com.google.android.material.tabs.TabLayout;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.accessibility_tab_switcher.AccessibilityTabModelAdapter.AccessibilityTabModelAdapterListener;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabCreationState;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorObserver;
-import org.chromium.ui.widget.ChromeImageView;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.accessibility_tab_switcher.AccessibilityTabModelAdapter.AccessibilityTabModelAdapterListener;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabCreationState;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorObserver;
+import org.monyhar.ui.widget.ChromeImageView;
 
 /**
  * A wrapper around the Android views in the Accessibility tab switcher. This
  * will show two {@link ListView}s, one for each
- * {@link org.chromium.chrome.browser.tabmodel.TabModel} to
+ * {@link org.monyhar.chrome.browser.tabmodel.TabModel} to
  * represent.
  */
 public class AccessibilityTabModelWrapper extends LinearLayout {

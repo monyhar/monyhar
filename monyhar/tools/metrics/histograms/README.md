@@ -53,16 +53,16 @@ It should be quite rare to introduce new top-level categories into the existing
 taxonomy. If you're tempted to do so, please look through the existing
 categories to see whether any matches the metric(s) that you are adding. To
 create a new category, the CL must be reviewed by
-chromium-metrics-reviews@google.com.
+monyhar-metrics-reviews@google.com.
 
 ## Coding (Emitting to Histograms)
 
 Prefer the helper functions defined in
-[histogram_functions.h](https://cs.chromium.org/chromium/src/base/metrics/histogram_functions.h).
+[histogram_functions.h](https://cs.monyhar.org/monyhar/src/base/metrics/histogram_functions.h).
 These functions take a lock and perform a map lookup, but the overhead is
 generally insignificant. However, when recording metrics on the critical path
 (e.g. called in a loop or logged multiple times per second), use the macros in
-[histogram_macros.h](https://cs.chromium.org/chromium/src/base/metrics/histogram_macros.h)
+[histogram_macros.h](https://cs.monyhar.org/monyhar/src/base/metrics/histogram_macros.h)
 instead. These macros cache a pointer to the histogram object for efficiency,
 though this comes at the cost of increased binary size: 130 bytes/macro usage
 sounds small but quickly adds up.
@@ -264,7 +264,7 @@ from previous Chrome versions.
 
 ### Count Histograms
 
-[histogram_macros.h](https://cs.chromium.org/chromium/src/base/metrics/histogram_macros.h)
+[histogram_macros.h](https://cs.monyhar.org/monyhar/src/base/metrics/histogram_macros.h)
 provides macros for some common count types such as memory or elapsed time, in
 addition to general count macros. These have reasonable default values; you
 seldom need to choose the number of buckets or histogram min. However, you still
@@ -309,13 +309,13 @@ friends, as well as helpers like SCOPED_UMA_HISTOGRAM_TIMER. Many timing
 histograms are used for performance monitoring; if this is the case for you,
 please read [this document about how to structure timing histograms to make
 them more useful and
-actionable](https://chromium.googlesource.com/chromium/src/+/lkgr/docs/speed/diagnostic_metrics.md).
+actionable](https://monyhar.googlesource.com/monyhar/src/+/lkgr/docs/speed/diagnostic_metrics.md).
 
 ### Percentage or Ratio Histograms
 
 You can easily emit a percentage histogram using the UMA_HISTOGRAM_PERCENTAGE
 macro provided in
-[histogram_macros.h](https://cs.chromium.org/chromium/src/base/metrics/histogram_macros.h).
+[histogram_macros.h](https://cs.monyhar.org/monyhar/src/base/metrics/histogram_macros.h).
 You can also easily emit any ratio as a linear histogram (for equally sized
 buckets).
 
@@ -349,7 +349,7 @@ regular interval avoids the issue. Each value represents the same amount of time
 
 ### Local Histograms
 
-Histograms can be added via [Local macros](https://codesearch.chromium.org/chromium/src/base/metrics/histogram_macros_local.h).
+Histograms can be added via [Local macros](https://codesearch.monyhar.org/monyhar/src/base/metrics/histogram_macros_local.h).
 These still record locally, but are not uploaded to UMA and are therefore not
 available for analysis. This can be useful for metrics only needed for local
 debugging. We don't recommend using local histograms outside of that scenario.
@@ -391,7 +391,7 @@ example, all metrics of the
 "[heartbeat](https://uma.googleplex.com/p/chrome/variations)" are set to never
 expire. All metrics that never expire must have an XML comment describing why so
 that it can be audited in the future. Setting an expiry to "never" must be
-reviewed by chromium-metrics-reviews@google.com.
+reviewed by monyhar-metrics-reviews@google.com.
 
 ```
 <!-- expires-never: "heartbeat" metric (internal: go/uma-heartbeats) -->
@@ -479,7 +479,7 @@ specifying a prefix. For example, `chrome://histograms/Extensions.Load` shows
 only histograms whose names match the pattern "Extensions.Load*".
 
 In addition to testing interactively, you can have unit tests examine the
-values emitted to histograms. See [histogram_tester.h](https://cs.chromium.org/chromium/src/base/test/metrics/histogram_tester.h)
+values emitted to histograms. See [histogram_tester.h](https://cs.monyhar.org/monyhar/src/base/test/metrics/histogram_tester.h)
 for details.
 
 ## Interpreting the Resulting Data
@@ -573,8 +573,8 @@ contact for any questions or maintenance tasks, such as extending a histogram's
 expiry or deprecating the metric.
 
 Histograms must have a primary owner and may have secondary owners. A primary
-owner is a Googler with an @google.com or @chromium.org email address, e.g.
-<owner>lucy@chromium.org</owner>, who is ultimately responsible for maintaining
+owner is a Googler with an @google.com or @monyhar.org email address, e.g.
+<owner>lucy@monyhar.org</owner>, who is ultimately responsible for maintaining
 the metric. Secondary owners may be other individuals, team mailing lists, e.g.
 <owner>my-team@google.com</owner>, or paths to OWNERS files, e.g.
 <owner>src/directory/OWNERS</owner>.
@@ -651,8 +651,8 @@ for these concisely using patterned histograms. For example:
 ```xml
 <histogram name="Pokemon.{Character}.EfficacyAgainst{OpponentType}"
     units="multiplier" expires_after="M95">
-  <owner>individual@chromium.org</owner>
-  <owner>team@chromium.org</owner>
+  <owner>individual@monyhar.org</owner>
+  <owner>team@monyhar.org</owner>
   <summary>
     The efficacy multiplier for {Character} against an opponent of
     {OpponentType} type.
@@ -676,8 +676,8 @@ This example defines metadata for 12 (= 3 x 4) concrete histograms, such as
 ```xml
 <histogram name="Pokemon.Charizard.EfficacyAgainstWater"
     units="multiplier" expires_after="M95">
-  <owner>individual@chromium.org</owner>
-  <owner>team@chromium.org</owner>
+  <owner>individual@monyhar.org</owner>
+  <owner>team@monyhar.org</owner>
   <summary>
     The efficacy multiplier for Charizard against an opponent of water type.
   </summary>
@@ -698,7 +698,7 @@ recording a "parent" histogram that aggregates across a set of breakdowns.
 You can use the `<variants>` tag to define a set of `<variant>`s out-of-line.
 This is useful for token substitutions that are shared among multiple families
 of histograms. See
-[histograms.xml](https://source.chromium.org/search?q=file:histograms.xml%20%3Cvariants)
+[histograms.xml](https://source.monyhar.org/search?q=file:histograms.xml%20%3Cvariants)
 for examples.
 
 By default, a `<variant>` inherits the owners declared for the patterned
@@ -706,8 +706,8 @@ histogram. Each variant can optionally override the inherited list with custom
 owners:
 ```xml
 <variant name="SubteamBreakdown" ...>
-  <owner>subteam-lead@chromium.org</owner>
-  <owner>subteam@chromium.org</owner>
+  <owner>subteam-lead@monyhar.org</owner>
+  <owner>subteam@monyhar.org</owner>
 </variant>
 ```
 
@@ -734,7 +734,7 @@ run (from the repo root) as:
 
 For documentation about the `<histogram_suffixes>` syntax, which is deprecated,
 see
-https://chromium.googlesource.com/chromium/src/+/refs/tags/87.0.4270.1/tools/metrics/histograms/one-pager.md#histogram-suffixes-deprecated-in-favor-of-pattern-histograms
+https://monyhar.googlesource.com/monyhar/src/+/refs/tags/87.0.4270.1/tools/metrics/histograms/one-pager.md#histogram-suffixes-deprecated-in-favor-of-pattern-histograms
 
 ## When To Use Sparse Histograms
 
@@ -752,7 +752,7 @@ compared to the range of their values.
 Please talk with the metrics team if there are more than a thousand possible
 different values that you could emit.
 
-For more information, see [sparse_histograms.h](https://cs.chromium.org/chromium/src/base/metrics/sparse_histogram.h).
+For more information, see [sparse_histograms.h](https://cs.monyhar.org/monyhar/src/base/metrics/sparse_histogram.h).
 
 
 # Becoming a Metrics Reviewer
@@ -769,7 +769,7 @@ considerations, we're currently only adding Googlers into this program.
 If you are a metric OWNER, you have the serious responsibility of ensuring
 Chrome's data collection is following best practices. If there's any concern
 about an incoming metrics changelist, please escalate by assigning to
-chromium-metrics-reviews@google.com.
+monyhar-metrics-reviews@google.com.
 
 When reviewing metrics CLs, look at the following, listed in approximate order
 of importance:
@@ -846,9 +846,9 @@ interpretable and what data will have hidden surprises/gotchas.
     multidimensional metrics can be recorded via UKM, and we are currently
     building support for structured metrics in UMA.
   * There's no hard rule, but anything above 20 separate histograms should be
-    escalated by being assigned to chromium-metrics-reviews@google.com.
+    escalated by being assigned to monyhar-metrics-reviews@google.com.
   * Similarly, any histogram with more than 100 possible buckets should be
-    escalated by being assigned to chromium-metrics-reviews@google.com.
+    escalated by being assigned to monyhar-metrics-reviews@google.com.
 
 * Are expiry dates being set
   [appropriately](#How-to-choose-expiry-for-histograms)?

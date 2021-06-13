@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.paintpreview.player.frame;
+package org.monyhar.components.paintpreview.player.frame;
 
 import android.graphics.Rect;
 
@@ -12,10 +12,10 @@ import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.robolectric.RuntimeEnvironment;
 
-import org.chromium.base.UnguessableToken;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.components.paintpreview.player.PlayerCompositorDelegate;
-import org.chromium.components.paintpreview.player.PlayerGestureListener;
+import org.monyhar.base.UnguessableToken;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.components.paintpreview.player.PlayerCompositorDelegate;
+import org.monyhar.components.paintpreview.player.PlayerGestureListener;
 
 /**
  * Tests for the {@link PlayerFrameCoordinator} class.

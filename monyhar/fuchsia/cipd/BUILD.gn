@@ -22,7 +22,7 @@ if (host_os == "mac") {
 if (is_chrome_branded) {
   package_base_path = "chrome_internal/fuchsia"
 } else {
-  package_base_path = "chromium/fuchsia"
+  package_base_path = "monyhar/fuchsia"
 }
 
 # Extracts the numeric Chrome build ID and writes it to a file in the output

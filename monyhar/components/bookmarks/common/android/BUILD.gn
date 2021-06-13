@@ -22,11 +22,11 @@ android_library("bookmarks_java") {
     "//third_party/androidx:androidx_annotation_annotation_java",
   ]
   srcjar_deps = [ ":bookmark_type_javagen" ]
-  sources = [ "java/src/org/chromium/components/bookmarks/BookmarkId.java" ]
+  sources = [ "java/src/org/monyhar/components/bookmarks/BookmarkId.java" ]
 }
 
 generate_jni("bookmarks_jni_headers") {
-  sources = [ "java/src/org/chromium/components/bookmarks/BookmarkId.java" ]
+  sources = [ "java/src/org/monyhar/components/bookmarks/BookmarkId.java" ]
 }
 
 java_cpp_enum("bookmark_type_javagen") {

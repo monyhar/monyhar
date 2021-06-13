@@ -84,7 +84,7 @@ int BackgroundTracingRule::GetTraceDelay() const {
 }
 
 std::string BackgroundTracingRule::GetDefaultRuleId() const {
-  return "org.chromium.background_tracing.trigger";
+  return "org.monyhar.background_tracing.trigger";
 }
 
 void BackgroundTracingRule::IntoDict(base::DictionaryValue* dict) const {
@@ -184,7 +184,7 @@ class NamedTriggerRule : public BackgroundTracingRule {
 
  protected:
   std::string GetDefaultRuleId() const override {
-    return base::StrCat({"org.chromium.background_tracing.", named_event_});
+    return base::StrCat({"org.monyhar.background_tracing.", named_event_});
   }
 
  private:
@@ -347,7 +347,7 @@ class HistogramRule : public BackgroundTracingRule,
 
  protected:
   std::string GetDefaultRuleId() const override {
-    return base::StrCat({"org.chromium.background_tracing.", histogram_name_});
+    return base::StrCat({"org.monyhar.background_tracing.", histogram_name_});
   }
 
  private:
@@ -400,7 +400,7 @@ class TraceForNSOrTriggerOrFullRule : public BackgroundTracingRule {
 
  protected:
   std::string GetDefaultRuleId() const override {
-    return base::StrCat({"org.chromium.background_tracing.", named_event_});
+    return base::StrCat({"org.monyhar.background_tracing.", named_event_});
   }
 
  private:

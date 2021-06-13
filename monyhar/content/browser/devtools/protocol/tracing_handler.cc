@@ -252,7 +252,7 @@ absl::optional<perfetto::BackendType> GetBackendTypeFromParameters(
     // sources specified in the config.
     for (auto& data_source : *(perfetto_config.mutable_data_sources())) {
       auto* source_config = data_source.mutable_config();
-      if (!base::StartsWith(source_config->name(), "org.chromium."))
+      if (!base::StartsWith(source_config->name(), "org.monyhar."))
         return perfetto::BackendType::kSystemBackend;
     }
     return perfetto::BackendType::kCustomBackend;

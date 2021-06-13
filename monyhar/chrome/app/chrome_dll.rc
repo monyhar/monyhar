@@ -170,7 +170,7 @@ IDR_SXS             ICON                        "theme\google_chrome\win\chrome_
 IDR_X004_DEV        ICON                        "theme\google_chrome\win\chrome_dev.ico"
 IDR_X005_BETA       ICON                        "theme\google_chrome\win\chrome_beta.ico"
 #else
-IDR_MAINFRAME       ICON                        "theme\chromium\win\chromium.ico"
+IDR_MAINFRAME       ICON                        "theme\monyhar\win\monyhar.ico"
 #endif
 
 // We include these resources because all ICON types need to be in the

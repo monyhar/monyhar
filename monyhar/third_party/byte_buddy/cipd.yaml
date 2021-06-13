@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:$(cat version.txt)
-package: chromium/third_party/byte_buddy
+package: monyhar/third_party/byte_buddy
 description: byte_buddy Java library
 data:
   - file: lib/byte-buddy-agent.jar

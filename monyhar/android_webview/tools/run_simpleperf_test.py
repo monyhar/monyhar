@@ -17,15 +17,15 @@ from run_simpleperf import StackAddressInterpreter
 _EXAMPLE_WEBVIEW_PACKAGE_NAME = "com.google.android.webview"
 
 _EXAMPLE_STACK_SCRIPT_INPUT = [
-    ("11-15 00:00:00.000 11111 11111 E chromium: #00 0x0000001111111111 "
+    ("11-15 00:00:00.000 11111 11111 E monyhar: #00 0x0000001111111111 "
      "/data/app/com.google.android.webview--8E2vMMZTpLVeEKY7ZgoHQ=="
-     "/lib/arm64/libwebviewchromium.so+0x00000000083a4db8"),
-    ("11-15 00:00:00.000 11111 11111 E chromium: #00 0x0000001111111111 "
+     "/lib/arm64/libwebviewmonyhar.so+0x00000000083a4db8"),
+    ("11-15 00:00:00.000 11111 11111 E monyhar: #00 0x0000001111111111 "
      "/data/app/com.google.android.webview--8E2vMMZTpLVeEKY7ZgoHQ=="
-     "/lib/arm64/libwebviewchromium.so+0x00000000083db114"),
-    ("11-15 00:00:00.000 11111 11111 E chromium: #00 0x0000001111111111 "
+     "/lib/arm64/libwebviewmonyhar.so+0x00000000083db114"),
+    ("11-15 00:00:00.000 11111 11111 E monyhar: #00 0x0000001111111111 "
      "/data/app/com.google.android.webview--8E2vMMZTpLVeEKY7ZgoHQ=="
-     "/lib/arm64/libwebviewchromium.so+0x000000000abcdef0")]
+     "/lib/arm64/libwebviewmonyhar.so+0x000000000abcdef0")]
 
 _EXAMPLE_STACK_SCRIPT_OUTPUT = [
     "Stack Trace:",
@@ -45,10 +45,10 @@ _EXAMPLE_STACK_SCRIPT_OUTPUT = [
     "-----------------------------------------------------"]
 
 _ADDRESSES = ['83a4db8', '83db114', 'abcdef0']  # 3rd one is ignored
-_WEBVIEW_LIB_NAME = 'libwebviewchromium.so'
+_WEBVIEW_LIB_NAME = 'libwebviewmonyhar.so'
 _WEBVIEW_LIB_PATH = (
     '/data/app/com.google.android.webview'
-    '--8E2vMMZTpLVeEKY7ZgoHQ==/lib/arm64/libwebviewchromium.so')
+    '--8E2vMMZTpLVeEKY7ZgoHQ==/lib/arm64/libwebviewmonyhar.so')
 
 _EXAMPLE_INTERPRETER_OUTPUT = [
     ('83a4db8',
@@ -69,9 +69,9 @@ _EXAMPLE_INTERPRETER_OUTPUT_WITH_FILE_NAME_LINE = [
       ' | ../../components/viz/service/display/gl_renderer.cc:3267:14'))]
 
 _MOCK_ORIGINAL_REPORT = [
-    '"442": {"l": 28, "f": "libwebviewchromium.so[+3db7d84]"},',
-    '"443": {"l": 28, "f": "libwebviewchromium.so[+3db7a5c]"},',
-    '"444": {"l": 28, "f": "libwebviewchromium.so[+aaaaaaa]"},'
+    '"442": {"l": 28, "f": "libwebviewmonyhar.so[+3db7d84]"},',
+    '"443": {"l": 28, "f": "libwebviewmonyhar.so[+3db7a5c]"},',
+    '"444": {"l": 28, "f": "libwebviewmonyhar.so[+aaaaaaa]"},'
 ]
 
 _MOCK_ADDRESSES = ['3db7d84', '3db7a5c', 'aaaaaaa']
@@ -81,11 +81,11 @@ _MOCK_ADDRESS_FUNCTION_NAME_PAIRS = [
     ('3db7a5c', 'MyClass::SecondMethod(int)')]
 
 _MOCK_FINAL_REPORT = [
-    ('"442": {"l": 28, "f": "libwebviewchromium.so[MyClass::'
+    ('"442": {"l": 28, "f": "libwebviewmonyhar.so[MyClass::'
      'FirstMethod(const char*)]"},'),
-    ('"443": {"l": 28, "f": "libwebviewchromium.so[MyClass::'
+    ('"443": {"l": 28, "f": "libwebviewmonyhar.so[MyClass::'
      'SecondMethod(int)]"},'),
-    ('"444": {"l": 28, "f": "libwebviewchromium.so[+aaaaaaa]"},')
+    ('"444": {"l": 28, "f": "libwebviewmonyhar.so[+aaaaaaa]"},')
 ]
 
 
@@ -133,14 +133,14 @@ class _RunSimpleperfTest(unittest.TestCase):
 
   def testSimplePerfRunner_CollectAddresses(self):
     addresses = self.simple_perf_runner.CollectAddresses(
-        _MOCK_ORIGINAL_REPORT, 'libwebviewchromium.so')
+        _MOCK_ORIGINAL_REPORT, 'libwebviewmonyhar.so')
     self.assertEquals(set(_MOCK_ADDRESSES), addresses)
 
   def testSimplePerfRunner_ReplaceAddresses(self):
     postprocessed_report = (
         self.simple_perf_runner.ReplaceAddressesWithFunctionInfos(
             _MOCK_ORIGINAL_REPORT, _MOCK_ADDRESS_FUNCTION_NAME_PAIRS,
-            'libwebviewchromium.so'))
+            'libwebviewmonyhar.so'))
     self.assertEquals(_MOCK_FINAL_REPORT, postprocessed_report)
 
   @mock.patch('run_simpleperf.open', new_callable=mock.mock_open)

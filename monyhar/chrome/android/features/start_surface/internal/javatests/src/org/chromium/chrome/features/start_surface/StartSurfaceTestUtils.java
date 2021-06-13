@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.features.start_surface;
+package org.monyhar.chrome.features.start_surface;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -16,8 +16,8 @@ import static org.hamcrest.CoreMatchers.allOf;
 import static org.hamcrest.CoreMatchers.not;
 import static org.junit.Assert.fail;
 
-import static org.chromium.chrome.browser.tabmodel.TestTabModelDirectory.M26_GOOGLE_COM;
-import static org.chromium.chrome.test.util.ViewUtils.onViewWaiting;
+import static org.monyhar.chrome.browser.tabmodel.TestTabModelDirectory.M26_GOOGLE_COM;
+import static org.monyhar.chrome.test.util.ViewUtils.onViewWaiting;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -36,32 +36,32 @@ import androidx.test.espresso.matcher.ViewMatchers;
 import org.hamcrest.Matcher;
 import org.junit.Assert;
 
-import org.chromium.base.StreamUtil;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.compositor.layouts.content.TabContentManager;
-import org.chromium.chrome.browser.layouts.LayoutType;
-import org.chromium.chrome.browser.suggestions.SiteSuggestion;
-import org.chromium.chrome.browser.suggestions.tile.TileSectionType;
-import org.chromium.chrome.browser.suggestions.tile.TileSource;
-import org.chromium.chrome.browser.suggestions.tile.TileTitleSource;
-import org.chromium.chrome.browser.tab.TabState;
-import org.chromium.chrome.browser.tab.TabStateFileManager;
-import org.chromium.chrome.browser.tabmodel.TabPersistentStore;
-import org.chromium.chrome.browser.tabmodel.TabbedModeTabPersistencePolicy;
-import org.chromium.chrome.browser.tabpersistence.TabStateDirectory;
-import org.chromium.chrome.browser.tasks.pseudotab.PseudoTab;
-import org.chromium.chrome.browser.tasks.tab_management.TabUiTestHelper;
-import org.chromium.chrome.browser.toolbar.top.ToolbarPhone;
-import org.chromium.chrome.start_surface.R;
-import org.chromium.chrome.test.ChromeActivityTestRule;
-import org.chromium.chrome.test.util.OverviewModeBehaviorWatcher;
-import org.chromium.chrome.test.util.browser.suggestions.SuggestionsDependenciesRule;
-import org.chromium.chrome.test.util.browser.suggestions.mostvisited.FakeMostVisitedSites;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.content_public.browser.test.util.TestTouchUtils;
-import org.chromium.url.GURL;
+import org.monyhar.base.StreamUtil;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.compositor.layouts.content.TabContentManager;
+import org.monyhar.chrome.browser.layouts.LayoutType;
+import org.monyhar.chrome.browser.suggestions.SiteSuggestion;
+import org.monyhar.chrome.browser.suggestions.tile.TileSectionType;
+import org.monyhar.chrome.browser.suggestions.tile.TileSource;
+import org.monyhar.chrome.browser.suggestions.tile.TileTitleSource;
+import org.monyhar.chrome.browser.tab.TabState;
+import org.monyhar.chrome.browser.tab.TabStateFileManager;
+import org.monyhar.chrome.browser.tabmodel.TabPersistentStore;
+import org.monyhar.chrome.browser.tabmodel.TabbedModeTabPersistencePolicy;
+import org.monyhar.chrome.browser.tabpersistence.TabStateDirectory;
+import org.monyhar.chrome.browser.tasks.pseudotab.PseudoTab;
+import org.monyhar.chrome.browser.tasks.tab_management.TabUiTestHelper;
+import org.monyhar.chrome.browser.toolbar.top.ToolbarPhone;
+import org.monyhar.chrome.start_surface.R;
+import org.monyhar.chrome.test.ChromeActivityTestRule;
+import org.monyhar.chrome.test.util.OverviewModeBehaviorWatcher;
+import org.monyhar.chrome.test.util.browser.suggestions.SuggestionsDependenciesRule;
+import org.monyhar.chrome.test.util.browser.suggestions.mostvisited.FakeMostVisitedSites;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.content_public.browser.test.util.TestTouchUtils;
+import org.monyhar.url.GURL;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -83,7 +83,7 @@ public class StartSurfaceTestUtils {
     /**
      * Only launch Chrome without waiting for a current tab.
      * This method could not use {@link ChromeActivityTestRule#startMainActivityFromLauncher()}
-     * because of its {@link org.chromium.chrome.browser.tab.Tab} dependency.
+     * because of its {@link org.monyhar.chrome.browser.tab.Tab} dependency.
      */
     public static void startMainActivityFromLauncher(ChromeActivityTestRule activityTestRule) {
         Intent intent = new Intent(Intent.ACTION_MAIN);
@@ -258,7 +258,7 @@ public class StartSurfaceTestUtils {
         onView(withId(R.id.tab_switcher_toolbar)).check(matches(not(isDisplayed())));
 
         // Check the toolbar's background color.
-        ToolbarPhone toolbar = cta.findViewById(org.chromium.chrome.R.id.toolbar);
+        ToolbarPhone toolbar = cta.findViewById(org.monyhar.chrome.R.id.toolbar);
         Assert.assertEquals(toolbar.getToolbarDataProvider().getPrimaryColor(),
                 toolbar.getBackgroundDrawable().getColor());
     }
@@ -281,7 +281,7 @@ public class StartSurfaceTestUtils {
     public static void launchFirstMVTile(ChromeTabbedActivity cta, int currentTabCount) {
         TabUiTestHelper.verifyTabModelTabCount(cta, currentTabCount, 0);
         OverviewModeBehaviorWatcher hideWatcher = TabUiTestHelper.createOverviewHideWatcher(cta);
-        onViewWaiting(withId(org.chromium.chrome.tab_ui.R.id.mv_tiles_layout))
+        onViewWaiting(withId(org.monyhar.chrome.tab_ui.R.id.mv_tiles_layout))
                 .perform(new ViewAction() {
                     @Override
                     public Matcher<View> getConstraints() {
@@ -319,8 +319,8 @@ public class StartSurfaceTestUtils {
     public static void clickTabInCarousel(int position) {
         onViewWaiting(
                 allOf(withParent(withId(
-                              org.chromium.chrome.tab_ui.R.id.carousel_tab_switcher_container)),
-                        withId(org.chromium.chrome.tab_ui.R.id.tab_list_view)))
+                              org.monyhar.chrome.tab_ui.R.id.carousel_tab_switcher_container)),
+                        withId(org.monyhar.chrome.tab_ui.R.id.tab_list_view)))
                 .perform(RecyclerViewActions.actionOnItemAtPosition(position, click()));
     }
 
@@ -336,7 +336,7 @@ public class StartSurfaceTestUtils {
         try {
             TestThreadUtils.runOnUiThreadBlocking(
                     ()
-                            -> cta.findViewById(org.chromium.chrome.tab_ui.R.id.more_tabs)
+                            -> cta.findViewById(org.monyhar.chrome.tab_ui.R.id.more_tabs)
                                        .performClick());
         } catch (ExecutionException e) {
             fail("Failed to tap 'more tabs' " + e.toString());

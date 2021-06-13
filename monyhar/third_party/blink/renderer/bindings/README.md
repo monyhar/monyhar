@@ -61,7 +61,7 @@ If you have any question about IDL files, see this document.
 * [IDLUnionTypes.md](IDLUnionTypes.md)
 explains how to use IDL union types.
 
-* [v8.h](https://cs.chromium.org/chromium/src/v8/include/v8.h?sq=package:chromium&dr=CSs)
+* [v8.h](https://cs.monyhar.org/monyhar/src/v8/include/v8.h?sq=package:monyhar&dr=CSs)
 defines V8 APIs with good documentation.
 
 ## When you use V8 APIs, ask blink-reviews-bindings@ for review!
@@ -70,8 +70,8 @@ V8 APIs are sometimes hard to use. It's easy to use a wrong v8::Context,
 it's easy to leak window objects, it's easy to ignore exceptions incorrectly
 etc. It is not disallowed to use bare V8 APIs in
 `Source/core/` and `Source/modules/` but when you use V8 APIs, please ask
-blink-reviews-bindings@chromium.org for review.
+blink-reviews-bindings@monyhar.org for review.
 
 ## Contact
 
-If you have any question, ask blink-reviews-bindings@chromium.org.
+If you have any question, ask blink-reviews-bindings@monyhar.org.

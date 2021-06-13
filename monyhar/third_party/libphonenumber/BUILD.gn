@@ -61,9 +61,9 @@ static_library("libphonenumber_without_metadata") {
   # libphonenumber's base/logging.h is a minimal implementation where DCHECKs
   # do not consume their arguments. This leads to unused variable warnings in
   # release builds.
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":libphonenumber_config_internal",
   ]
 

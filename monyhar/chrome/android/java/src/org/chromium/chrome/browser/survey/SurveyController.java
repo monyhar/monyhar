@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.survey;
+package org.monyhar.chrome.browser.survey;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,8 +10,8 @@ import android.content.Context;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.browser.AppHooks;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.AppHooks;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
 
 /**
  * Class that controls retrieving and displaying surveys. Clients should call #downloadSurvey() and

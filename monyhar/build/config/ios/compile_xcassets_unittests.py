@@ -9,9 +9,9 @@ import compile_xcassets
 class TestFilterCompilerOutput(unittest.TestCase):
 
   relative_paths = {
-    '/Users/janedoe/chromium/src/Chromium.xcassets':
+    '/Users/janedoe/monyhar/src/Chromium.xcassets':
         '../../Chromium.xcassets',
-    '/Users/janedoe/chromium/src/out/Default/Chromium.app/Assets.car':
+    '/Users/janedoe/monyhar/src/out/Default/Chromium.app/Assets.car':
         'Chromium.app/Assets.car',
   }
 
@@ -20,7 +20,7 @@ class TestFilterCompilerOutput(unittest.TestCase):
         '',
         compile_xcassets.FilterCompilerOutput(
             '/* com.apple.actool.compilation-results */\n'
-            '/Users/janedoe/chromium/src/out/Default/Chromium.app/Assets.car\n',
+            '/Users/janedoe/monyhar/src/out/Default/Chromium.app/Assets.car\n',
             self.relative_paths))
 
   def testNoErrorRandomMessages(self):
@@ -33,7 +33,7 @@ class TestFilterCompilerOutput(unittest.TestCase):
                 'yeDeVgWK) is from an older version and is being removed to pr'
                 'event problems.\n'
             '/* com.apple.actool.compilation-results */\n'
-            '/Users/janedoe/chromium/src/out/Default/Chromium.app/Assets.car\n',
+            '/Users/janedoe/monyhar/src/out/Default/Chromium.app/Assets.car\n',
             self.relative_paths))
 
   def testWarning(self):
@@ -44,22 +44,22 @@ class TestFilterCompilerOutput(unittest.TestCase):
             ' does not exist.\n',
         compile_xcassets.FilterCompilerOutput(
             '/* com.apple.actool.document.warnings */\n'
-            '/Users/janedoe/chromium/src/Chromium.xcassets:./image1.imageset/['
+            '/Users/janedoe/monyhar/src/Chromium.xcassets:./image1.imageset/['
                 'universal][][][1x][][][][][][]: warning: The file "image1.png'
                 '" for the image set "image1" does not exist.\n'
             '/* com.apple.actool.compilation-results */\n'
-            '/Users/janedoe/chromium/src/out/Default/Chromium.app/Assets.car\n',
+            '/Users/janedoe/monyhar/src/out/Default/Chromium.app/Assets.car\n',
             self.relative_paths))
 
   def testError(self):
     self.assertEquals(
         '/* com.apple.actool.errors */\n'
         '../../Chromium.xcassets: error: The output directory "/Users/janedoe/'
-            'chromium/src/out/Default/Chromium.app" does not exist.\n',
+            'monyhar/src/out/Default/Chromium.app" does not exist.\n',
         compile_xcassets.FilterCompilerOutput(
             '/* com.apple.actool.errors */\n'
-            '/Users/janedoe/chromium/src/Chromium.xcassets: error: The output '
-                'directory "/Users/janedoe/chromium/src/out/Default/Chromium.a'
+            '/Users/janedoe/monyhar/src/Chromium.xcassets: error: The output '
+                'directory "/Users/janedoe/monyhar/src/out/Default/Chromium.a'
                 'pp" does not exist.\n'
             '/* com.apple.actool.compilation-results */\n',
             self.relative_paths))
@@ -71,11 +71,11 @@ class TestFilterCompilerOutput(unittest.TestCase):
             'p store icon is required for iOS apps\n',
         compile_xcassets.FilterCompilerOutput(
             '/* com.apple.actool.document.warnings */\n'
-            '/Users/janedoe/chromium/src/Chromium.xcassets:./AppIcon.appiconse'
+            '/Users/janedoe/monyhar/src/Chromium.xcassets:./AppIcon.appiconse'
                 't: warning: A 1024x1024 app store icon is required for iOS ap'
                 'ps\n'
             '/* com.apple.actool.document.notices */\n'
-            '/Users/janedoe/chromium/src/Chromium.xcassets:./AppIcon.appiconse'
+            '/Users/janedoe/monyhar/src/Chromium.xcassets:./AppIcon.appiconse'
                 't/[][ipad][76x76][][][1x][][]: notice: (null)\n',
             self.relative_paths))
 

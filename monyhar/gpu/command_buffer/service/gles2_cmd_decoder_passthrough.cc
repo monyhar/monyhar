@@ -199,7 +199,7 @@ void ResizeRenderbuffer(gl::GLApi* api,
 
   api->glBindRenderbufferEXTFn(GL_RENDERBUFFER, renderbuffer);
   if (samples > 0) {
-    DCHECK(feature_info->feature_flags().chromium_framebuffer_multisample);
+    DCHECK(feature_info->feature_flags().monyhar_framebuffer_multisample);
     api->glRenderbufferStorageMultisampleFn(
         GL_RENDERBUFFER, samples, internal_format, size.width(), size.height());
   } else {
@@ -1053,9 +1053,9 @@ gpu::ContextResult GLES2DecoderPassthroughImpl::Initialize(
   FAIL_INIT_IF_NOT(feature_info_->feature_flags().angle_robust_client_memory,
                    "missing GL_ANGLE_robust_client_memory");
   FAIL_INIT_IF_NOT(
-      feature_info_->feature_flags().chromium_bind_generates_resource,
+      feature_info_->feature_flags().monyhar_bind_generates_resource,
       "missing GL_CHROMIUM_bind_generates_resource");
-  FAIL_INIT_IF_NOT(feature_info_->feature_flags().chromium_copy_texture,
+  FAIL_INIT_IF_NOT(feature_info_->feature_flags().monyhar_copy_texture,
                    "missing GL_CHROMIUM_copy_texture");
   FAIL_INIT_IF_NOT(feature_info_->feature_flags().angle_client_arrays,
                    "missing GL_ANGLE_client_arrays");
@@ -1117,7 +1117,7 @@ gpu::ContextResult GLES2DecoderPassthroughImpl::Initialize(
     bound_buffers_[GL_DISPATCH_INDIRECT_BUFFER] = 0;
   }
 
-  if (feature_info_->feature_flags().chromium_texture_filtering_hint) {
+  if (feature_info_->feature_flags().monyhar_texture_filtering_hint) {
     api()->glHintFn(GL_TEXTURE_FILTERING_HINT_CHROMIUM, GL_NICEST);
   }
 
@@ -1133,7 +1133,7 @@ gpu::ContextResult GLES2DecoderPassthroughImpl::Initialize(
     offscreen_single_buffer_ = attrib_helper.single_buffer;
     offscreen_target_buffer_preserved_ = attrib_helper.buffer_preserved;
     const bool multisampled_framebuffers_supported =
-        feature_info_->feature_flags().chromium_framebuffer_multisample;
+        feature_info_->feature_flags().monyhar_framebuffer_multisample;
     if (attrib_helper.samples > 0 && attrib_helper.sample_buffers > 0 &&
         multisampled_framebuffers_supported && !offscreen_single_buffer_) {
       GLint max_sample_count = 0;
@@ -1578,8 +1578,8 @@ gpu::Capabilities GLES2DecoderPassthroughImpl::GetCapabilities() {
   PopulateNumericCapabilities(&caps, feature_info_.get());
 
   api()->glGetIntegervFn(GL_BIND_GENERATES_RESOURCE_CHROMIUM,
-                         &caps.bind_generates_resource_chromium);
-  DCHECK_EQ(caps.bind_generates_resource_chromium != GL_FALSE,
+                         &caps.bind_generates_resource_monyhar);
+  DCHECK_EQ(caps.bind_generates_resource_monyhar != GL_FALSE,
             group_->bind_generates_resource());
 
   caps.egl_image_external =
@@ -1612,7 +1612,7 @@ gpu::Capabilities GLES2DecoderPassthroughImpl::GetCapabilities() {
   caps.texture_storage = feature_info_->feature_flags().ext_texture_storage;
   caps.discard_framebuffer =
       feature_info_->feature_flags().ext_discard_framebuffer;
-  caps.sync_query = feature_info_->feature_flags().chromium_sync_query;
+  caps.sync_query = feature_info_->feature_flags().monyhar_sync_query;
 #if defined(OS_MAC)
   // This is unconditionally true on mac, no need to test for it at runtime.
   caps.iosurface = true;
@@ -1629,18 +1629,18 @@ gpu::Capabilities GLES2DecoderPassthroughImpl::GetCapabilities() {
       feature_info_->ext_color_buffer_float_available() ||
       feature_info_->ext_color_buffer_half_float_available();
   caps.image_ycbcr_422 =
-      feature_info_->feature_flags().chromium_image_ycbcr_422;
+      feature_info_->feature_flags().monyhar_image_ycbcr_422;
   caps.image_ycbcr_420v =
-      feature_info_->feature_flags().chromium_image_ycbcr_420v;
+      feature_info_->feature_flags().monyhar_image_ycbcr_420v;
   caps.image_ycbcr_420v_disabled_for_video_frames =
       group_->gpu_preferences()
           .disable_biplanar_gpu_memory_buffers_for_video_frames;
-  caps.image_ar30 = feature_info_->feature_flags().chromium_image_ar30;
-  caps.image_ab30 = feature_info_->feature_flags().chromium_image_ab30;
+  caps.image_ar30 = feature_info_->feature_flags().monyhar_image_ar30;
+  caps.image_ab30 = feature_info_->feature_flags().monyhar_image_ab30;
   caps.image_ycbcr_p010 =
-      feature_info_->feature_flags().chromium_image_ycbcr_p010;
-  caps.max_copy_texture_chromium_size =
-      feature_info_->workarounds().max_copy_texture_chromium_size;
+      feature_info_->feature_flags().monyhar_image_ycbcr_p010;
+  caps.max_copy_texture_monyhar_size =
+      feature_info_->workarounds().max_copy_texture_monyhar_size;
   caps.render_buffer_format_bgra8888 =
       feature_info_->feature_flags().ext_render_buffer_format_bgra8888;
   caps.occlusion_query_boolean =
@@ -1671,9 +1671,9 @@ gpu::Capabilities GLES2DecoderPassthroughImpl::GetCapabilities() {
 #endif  // OS_WIN
   caps.texture_npot = feature_info_->feature_flags().npot_ok;
   caps.texture_storage_image =
-      feature_info_->feature_flags().chromium_texture_storage_image;
-  caps.chromium_gpu_fence = feature_info_->feature_flags().chromium_gpu_fence;
-  caps.chromium_nonblocking_readback = true;
+      feature_info_->feature_flags().monyhar_texture_storage_image;
+  caps.monyhar_gpu_fence = feature_info_->feature_flags().monyhar_gpu_fence;
+  caps.monyhar_nonblocking_readback = true;
   caps.num_surface_buffers = surface_->GetBufferCount();
   caps.gpu_memory_buffer_formats =
       feature_info_->feature_flags().gpu_memory_buffer_formats;

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.user_data;
+package org.monyhar.chrome.browser.autofill_assistant.user_data;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -14,11 +14,11 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.autofill_assistant.AssistantTagsForTesting;
-import org.chromium.chrome.browser.autofill_assistant.AssistantTextUtils;
-import org.chromium.chrome.browser.autofill_assistant.LayoutUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.autofill_assistant.AssistantTagsForTesting;
+import org.monyhar.chrome.browser.autofill_assistant.AssistantTextUtils;
+import org.monyhar.chrome.browser.autofill_assistant.LayoutUtils;
 
 /**
  * The third party terms and conditions section of the Autofill Assistant payment request.

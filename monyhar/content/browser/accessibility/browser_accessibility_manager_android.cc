@@ -483,7 +483,7 @@ gfx::Rect BrowserAccessibilityManagerAndroid::GetViewBoundsInScreenCoordinates()
   if (delegate) {
     gfx::Rect bounds = delegate->AccessibilityGetViewBounds();
 
-    // http://www.chromium.org/developers/design-documents/blink-coordinate-spaces
+    // http://www.monyhar.org/developers/design-documents/blink-coordinate-spaces
     // The bounds returned by the delegate are always in device-independent
     // pixels (DIPs), meaning physical pixels divided by device scale factor
     // (DSF). However, if UseZoomForDSF is enabled, then Blink does not apply

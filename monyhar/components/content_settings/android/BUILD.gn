@@ -5,13 +5,13 @@
 import("//build/config/android/rules.gni")
 
 generate_jni("content_settings_jni_headers") {
-  sources = [ "java/src/org/chromium/components/content_settings/CookieControlsBridge.java" ]
+  sources = [ "java/src/org/monyhar/components/content_settings/CookieControlsBridge.java" ]
 }
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/components/content_settings/CookieControlsBridge.java",
-    "java/src/org/chromium/components/content_settings/CookieControlsObserver.java",
+    "java/src/org/monyhar/components/content_settings/CookieControlsBridge.java",
+    "java/src/org/monyhar/components/content_settings/CookieControlsObserver.java",
   ]
   deps = [
     ":content_settings_enums_java",

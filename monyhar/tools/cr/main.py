@@ -13,7 +13,7 @@ import os
 import sys
 import cr
 
-_CONTACT = 'iancottrell@chromium.org'
+_CONTACT = 'iancottrell@monyhar.org'
 
 
 def Main():

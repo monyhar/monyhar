@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.media;
+package org.monyhar.components.browser_ui.media;
 
 import android.app.PendingIntent;
 import android.app.Service;
@@ -24,18 +24,18 @@ import androidx.annotation.VisibleForTesting;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
-import org.chromium.base.CollectionUtil;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.Log;
-import org.chromium.components.browser_ui.notifications.ForegroundServiceUtils;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxy;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxyImpl;
-import org.chromium.components.browser_ui.notifications.NotificationWrapper;
-import org.chromium.components.browser_ui.notifications.NotificationWrapperBuilder;
-import org.chromium.components.browser_ui.notifications.PendingIntentProvider;
-import org.chromium.media_session.mojom.MediaSessionAction;
-import org.chromium.services.media_session.MediaMetadata;
+import org.monyhar.base.CollectionUtil;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.Log;
+import org.monyhar.components.browser_ui.notifications.ForegroundServiceUtils;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxy;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxyImpl;
+import org.monyhar.components.browser_ui.notifications.NotificationWrapper;
+import org.monyhar.components.browser_ui.notifications.NotificationWrapperBuilder;
+import org.monyhar.components.browser_ui.notifications.PendingIntentProvider;
+import org.monyhar.media_session.mojom.MediaSessionAction;
+import org.monyhar.services.media_session.MediaMetadata;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -55,20 +55,20 @@ public class MediaNotificationController {
     // The maximum number of actions in BigView media notification.
     private static final int BIG_VIEW_ACTIONS_COUNT = 5;
 
-    public static final String ACTION_PLAY = "org.chromium.components.browser_ui.media.ACTION_PLAY";
+    public static final String ACTION_PLAY = "org.monyhar.components.browser_ui.media.ACTION_PLAY";
     public static final String ACTION_PAUSE =
-            "org.chromium.components.browser_ui.media.ACTION_PAUSE";
-    public static final String ACTION_STOP = "org.chromium.components.browser_ui.media.ACTION_STOP";
+            "org.monyhar.components.browser_ui.media.ACTION_PAUSE";
+    public static final String ACTION_STOP = "org.monyhar.components.browser_ui.media.ACTION_STOP";
     public static final String ACTION_SWIPE =
-            "org.chromium.components.browser_ui.media.ACTION_SWIPE";
+            "org.monyhar.components.browser_ui.media.ACTION_SWIPE";
     public static final String ACTION_CANCEL =
-            "org.chromium.components.browser_ui.media.ACTION_CANCEL";
+            "org.monyhar.components.browser_ui.media.ACTION_CANCEL";
     public static final String ACTION_PREVIOUS_TRACK =
-            "org.chromium.components.browser_ui.media.ACTION_PREVIOUS_TRACK";
+            "org.monyhar.components.browser_ui.media.ACTION_PREVIOUS_TRACK";
     public static final String ACTION_NEXT_TRACK =
-            "org.chromium.components.browser_ui.media.ACTION_NEXT_TRACK";
+            "org.monyhar.components.browser_ui.media.ACTION_NEXT_TRACK";
     public static final String ACTION_SEEK_FORWARD =
-            "org.chromium.components.browser_ui.media.ACTION_SEEK_FORWARD";
+            "org.monyhar.components.browser_ui.media.ACTION_SEEK_FORWARD";
     public static final String ACTION_SEEK_BACKWARD =
             "MediaNotificationmanager.ListenerService.SEEK_BACKWARD";
 

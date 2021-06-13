@@ -1,7 +1,7 @@
 // Copyright 2019 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.android_webview.devui;
+package org.monyhar.android_webview.devui;
 
 import android.app.Activity;
 import android.content.ClipData;
@@ -17,8 +17,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import org.chromium.android_webview.devui.util.WebViewPackageHelper;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.android_webview.devui.util.WebViewPackageHelper;
+import org.monyhar.ui.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;

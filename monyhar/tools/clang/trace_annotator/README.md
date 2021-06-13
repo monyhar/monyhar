@@ -32,8 +32,8 @@ This document is based on //docs/clang_tool_refactoring.md
 
 The following might take approx. 2 hours depending on your computer.
 
-*  Make a new checkout of chromium (suggested, but optional).
-*  From chromium/src:
+*  Make a new checkout of monyhar (suggested, but optional).
+*  From monyhar/src:
 *  ```shell cr build all``` To make sure all files have been generated.
 *  ```shell cp -R third_party/llvm-build ~```
 *  ```shell tools/clang/scripts/build.py --bootstrap --without-android

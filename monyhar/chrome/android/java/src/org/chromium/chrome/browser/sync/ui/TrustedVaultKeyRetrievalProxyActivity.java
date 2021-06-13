@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sync.ui;
+package org.monyhar.chrome.browser.sync.ui;
 
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.content.IntentSender;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.chrome.browser.init.AsyncInitializationActivity;
-import org.chromium.chrome.browser.sync.SyncService;
-import org.chromium.chrome.browser.sync.TrustedVaultClient;
-import org.chromium.components.sync.KeyRetrievalTriggerForUMA;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.browser.init.AsyncInitializationActivity;
+import org.monyhar.chrome.browser.sync.SyncService;
+import org.monyhar.chrome.browser.sync.TrustedVaultClient;
+import org.monyhar.components.sync.KeyRetrievalTriggerForUMA;
 
 /**
  * {@link TrustedVaultKeyRetrievalProxyActivity} has no own UI and just launches real key retrieval

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.infobars;
+package org.monyhar.components.infobars;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -12,12 +12,12 @@ import android.widget.TextView;
 import androidx.annotation.ColorRes;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.infobar.ActionType;
-import org.chromium.chrome.browser.infobar.InfoBarIdentifier;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.infobar.ActionType;
+import org.monyhar.chrome.browser.infobar.InfoBarIdentifier;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * The base class for all InfoBar classes.

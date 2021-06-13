@@ -13,21 +13,21 @@
         android:orientation="horizontal"
         android:layout_marginEnd="@dimen/location_bar_url_action_offset">
 
-        <org.chromium.ui.widget.ChromeImageButton
+        <org.monyhar.ui.widget.ChromeImageButton
             android:id="@+id/delete_button"
             style="@style/LocationBarActionButton"
             android:src="@drawable/btn_delete_24dp"
             android:visibility="invisible"
             android:contentDescription="@string/accessibility_toolbar_btn_delete_url" />
 
-        <org.chromium.ui.widget.ChromeImageButton
+        <org.monyhar.ui.widget.ChromeImageButton
             android:id="@+id/lens_camera_button_start"
             style="@style/LocationBarActionButton"
             android:src="@drawable/lens_camera_icon"
             android:visibility="gone"
             android:contentDescription="@string/accessibility_btn_lens_camera" />
 
-        <org.chromium.ui.widget.ChromeImageButton
+        <org.monyhar.ui.widget.ChromeImageButton
             android:id="@+id/mic_button"
             style="@style/LocationBarActionButton"
             android:src="@drawable/btn_mic"
@@ -37,20 +37,20 @@
     <!-- This is a short term solution to have 2 Lens buttons in this xml to
          support different position variants in experiment.
          TODO(b/182195615): only keep one Lens button after the experiment. -->
-        <org.chromium.ui.widget.ChromeImageButton
+        <org.monyhar.ui.widget.ChromeImageButton
             android:id="@+id/lens_camera_button_end"
             style="@style/LocationBarActionButton"
             android:src="@drawable/lens_camera_icon"
             android:visibility="gone"
             android:contentDescription="@string/accessibility_btn_lens_camera" />
 
-        <org.chromium.ui.widget.ChromeImageButton
+        <org.monyhar.ui.widget.ChromeImageButton
             android:id="@+id/bookmark_button"
             style="@style/LocationBarActionButton"
             android:visibility="gone"
             android:contentDescription="@string/accessibility_menu_bookmark" />
 
-       <org.chromium.ui.widget.ChromeImageButton
+       <org.monyhar.ui.widget.ChromeImageButton
             android:id="@+id/save_offline_button"
             style="@style/LocationBarActionButton"
             android:nextFocusForward="@+id/menu_button"

@@ -533,14 +533,14 @@ static_library("mocks") {
 
 if (is_android) {
   java_sources_needing_jni = [
-    "android/java/src/org/chromium/device/bluetooth/ChromeBluetoothAdapter.java",
-    "android/java/src/org/chromium/device/bluetooth/ChromeBluetoothDevice.java",
-    "android/java/src/org/chromium/device/bluetooth/ChromeBluetoothRemoteGattCharacteristic.java",
-    "android/java/src/org/chromium/device/bluetooth/ChromeBluetoothRemoteGattDescriptor.java",
-    "android/java/src/org/chromium/device/bluetooth/ChromeBluetoothRemoteGattService.java",
-    "android/java/src/org/chromium/device/bluetooth/ChromeBluetoothScanFilterBuilder.java",
-    "android/java/src/org/chromium/device/bluetooth/ChromeBluetoothScanFilterList.java",
-    "android/java/src/org/chromium/device/bluetooth/Wrappers.java",
+    "android/java/src/org/monyhar/device/bluetooth/ChromeBluetoothAdapter.java",
+    "android/java/src/org/monyhar/device/bluetooth/ChromeBluetoothDevice.java",
+    "android/java/src/org/monyhar/device/bluetooth/ChromeBluetoothRemoteGattCharacteristic.java",
+    "android/java/src/org/monyhar/device/bluetooth/ChromeBluetoothRemoteGattDescriptor.java",
+    "android/java/src/org/monyhar/device/bluetooth/ChromeBluetoothRemoteGattService.java",
+    "android/java/src/org/monyhar/device/bluetooth/ChromeBluetoothScanFilterBuilder.java",
+    "android/java/src/org/monyhar/device/bluetooth/ChromeBluetoothScanFilterList.java",
+    "android/java/src/org/monyhar/device/bluetooth/Wrappers.java",
   ]
 
   generate_jni("jni_headers") {

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar.top;
+package org.monyhar.chrome.browser.toolbar.top;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -24,34 +24,34 @@ import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.view.ViewCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.base.supplier.BooleanSupplier;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.NavigationPopup;
-import org.chromium.chrome.browser.download.DownloadUtils;
-import org.chromium.chrome.browser.omnibox.LocationBar;
-import org.chromium.chrome.browser.omnibox.LocationBarCoordinator;
-import org.chromium.chrome.browser.omnibox.NewTabPageDelegate;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.theme.ThemeUtils;
-import org.chromium.chrome.browser.toolbar.ButtonData;
-import org.chromium.chrome.browser.toolbar.ButtonData.ButtonSpec;
-import org.chromium.chrome.browser.toolbar.HomeButton;
-import org.chromium.chrome.browser.toolbar.KeyboardNavigationListener;
-import org.chromium.chrome.browser.toolbar.TabCountProvider;
-import org.chromium.chrome.browser.toolbar.TabCountProvider.TabCountObserver;
-import org.chromium.chrome.browser.toolbar.ToolbarDataProvider;
-import org.chromium.chrome.browser.toolbar.ToolbarTabController;
-import org.chromium.chrome.browser.toolbar.menu_button.MenuButtonCoordinator;
-import org.chromium.chrome.browser.util.ChromeAccessibilityUtil;
-import org.chromium.components.browser_ui.styles.ChromeColors;
-import org.chromium.ui.UiUtils;
-import org.chromium.ui.base.DeviceFormFactor;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.base.supplier.BooleanSupplier;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.NavigationPopup;
+import org.monyhar.chrome.browser.download.DownloadUtils;
+import org.monyhar.chrome.browser.omnibox.LocationBar;
+import org.monyhar.chrome.browser.omnibox.LocationBarCoordinator;
+import org.monyhar.chrome.browser.omnibox.NewTabPageDelegate;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.theme.ThemeUtils;
+import org.monyhar.chrome.browser.toolbar.ButtonData;
+import org.monyhar.chrome.browser.toolbar.ButtonData.ButtonSpec;
+import org.monyhar.chrome.browser.toolbar.HomeButton;
+import org.monyhar.chrome.browser.toolbar.KeyboardNavigationListener;
+import org.monyhar.chrome.browser.toolbar.TabCountProvider;
+import org.monyhar.chrome.browser.toolbar.TabCountProvider.TabCountObserver;
+import org.monyhar.chrome.browser.toolbar.ToolbarDataProvider;
+import org.monyhar.chrome.browser.toolbar.ToolbarTabController;
+import org.monyhar.chrome.browser.toolbar.menu_button.MenuButtonCoordinator;
+import org.monyhar.chrome.browser.util.ChromeAccessibilityUtil;
+import org.monyhar.components.browser_ui.styles.ChromeColors;
+import org.monyhar.ui.UiUtils;
+import org.monyhar.ui.base.DeviceFormFactor;
+import org.monyhar.ui.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Collection;

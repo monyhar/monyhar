@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.messages;
+package org.monyhar.components.messages;
 
 import android.animation.Animator;
 
-import org.chromium.base.Callback;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.Callback;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * This class implements public MessageDispatcher interface, delegating the actual work to

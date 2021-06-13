@@ -445,7 +445,7 @@ class RASTER_EXPORT RasterImplementation : public RasterInterface,
   ImageDecodeAcceleratorInterface* image_decode_accelerator_;
 
   // Tracing helpers.
-  int raster_chromium_id_ = 0;
+  int raster_monyhar_id_ = 0;
 
   DISALLOW_COPY_AND_ASSIGN(RasterImplementation);
 };

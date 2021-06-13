@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share;
+package org.monyhar.chrome.browser.share;
 
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.profiles.Profile;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.profiles.Profile;
 
 /**
  * This class is a shim that wraps the JNI interface to the C++-side

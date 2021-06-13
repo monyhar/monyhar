@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@1.2.0-alpha06.cr0
-package: chromium/third_party/android_deps/libs/com_google_android_material_material
+package: monyhar/third_party/android_deps/libs/com_google_android_material_material
 description: "Material Components for Android"
 data:
 - file: material-1.2.0-alpha06.aar

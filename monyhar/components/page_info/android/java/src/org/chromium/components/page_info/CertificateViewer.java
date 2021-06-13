@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.page_info;
+package org.monyhar.components.page_info;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -21,9 +21,9 @@ import android.widget.TextView;
 
 import androidx.core.view.ViewCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.Log;
-import org.chromium.base.annotations.NativeMethods;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.NativeMethods;
 
 import java.io.ByteArrayInputStream;
 import java.security.MessageDigest;

@@ -202,7 +202,7 @@ CommandHandler.onCommand = function(command) {
           QueueMode.FLUSH);
       return false;
     case 'reportIssue':
-      let url = 'https://code.google.com/p/chromium/issues/entry?' +
+      let url = 'https://code.google.com/p/monyhar/issues/entry?' +
           'labels=Type-Bug,Pri-2,OS-Chrome&' +
           'components=OS>Accessibility>ChromeVox&' +
           'description=';

@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.home.list;
+package org.monyhar.chrome.browser.download.home.list;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.chrome.browser.download.home.list.holder.ListItemViewHolder;
-import org.chromium.ui.modelutil.RecyclerViewAdapter;
+import org.monyhar.chrome.browser.download.home.list.holder.ListItemViewHolder;
+import org.monyhar.ui.modelutil.RecyclerViewAdapter;
 
 /**
  * A helper {@link RecyclerView.Adapter} implementation meant to glue a {@link ListItemModel}

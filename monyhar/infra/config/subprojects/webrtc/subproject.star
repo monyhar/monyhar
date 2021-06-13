@@ -5,5 +5,5 @@
 exec("./swarming.star")
 exec("./webrtc.star")
 exec("./webrtc.fyi.star")
-exec("./consoles/chromium.webrtc.star")
-exec("./consoles/chromium.webrtc.fyi.star")
+exec("./consoles/monyhar.webrtc.star")
+exec("./consoles/monyhar.webrtc.fyi.star")

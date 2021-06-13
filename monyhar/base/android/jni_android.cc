@@ -319,7 +319,7 @@ std::string GetJavaExceptionInfo(JNIEnv* env, jthrowable java_throwable) {
   CheckException(env);
 
   ScopedJavaLocalRef<jclass> piielider_clazz =
-      GetClass(env, "org/chromium/base/PiiElider");
+      GetClass(env, "org/monyhar/base/PiiElider");
   jmethodID piielider_sanitize_stacktrace =
       MethodID::Get<MethodID::TYPE_STATIC>(
           env, piielider_clazz.obj(), "sanitizeStacktrace",

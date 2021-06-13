@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.merchant_viewer;
+package org.monyhar.chrome.browser.merchant_viewer;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
@@ -23,18 +23,18 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.tab.TabImpl;
-import org.chromium.chrome.browser.tab.TabSelectionType;
-import org.chromium.chrome.browser.tabmodel.TabModelFilterProvider;
-import org.chromium.chrome.browser.tabmodel.TabModelObserver;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.content_public.browser.NavigationHandle;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.WebContentsObserver;
-import org.chromium.url.GURL;
-import org.chromium.url.JUnitTestGURLs;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.tab.TabImpl;
+import org.monyhar.chrome.browser.tab.TabSelectionType;
+import org.monyhar.chrome.browser.tabmodel.TabModelFilterProvider;
+import org.monyhar.chrome.browser.tabmodel.TabModelObserver;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.content_public.browser.NavigationHandle;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.WebContentsObserver;
+import org.monyhar.url.GURL;
+import org.monyhar.url.JUnitTestGURLs;
 
 /**
  * Tests for {@link MerchantTrustSignalsMediator}.

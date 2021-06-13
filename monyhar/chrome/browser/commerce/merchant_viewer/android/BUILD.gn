@@ -7,25 +7,25 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/merchant_viewer/BottomSheetToolbarProperties.java",
-    "java/src/org/chromium/chrome/browser/merchant_viewer/BottomSheetToolbarView.java",
-    "java/src/org/chromium/chrome/browser/merchant_viewer/BottomSheetToolbarViewBinder.java",
-    "java/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustBottomSheetContent.java",
-    "java/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustBottomSheetCoordinator.java",
-    "java/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustBottomSheetMediator.java",
-    "java/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustMessageContext.java",
-    "java/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustMessageScheduler.java",
-    "java/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustMessageViewModel.java",
-    "java/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustMetrics.java",
-    "java/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustSignalsCoordinator.java",
-    "java/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustSignalsDataProvider.java",
-    "java/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustSignalsEvent.java",
-    "java/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustSignalsEventStorage.java",
-    "java/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustSignalsMediator.java",
-    "java/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustSignalsStorageFactory.java",
-    "java/src/org/chromium/chrome/browser/merchant_viewer/MerchantViewerConfig.java",
-    "java/src/org/chromium/chrome/browser/merchant_viewer/RatingStarSpan.java",
-    "java/src/org/chromium/chrome/browser/merchant_viewer/WebContentsHelpers.java",
+    "java/src/org/monyhar/chrome/browser/merchant_viewer/BottomSheetToolbarProperties.java",
+    "java/src/org/monyhar/chrome/browser/merchant_viewer/BottomSheetToolbarView.java",
+    "java/src/org/monyhar/chrome/browser/merchant_viewer/BottomSheetToolbarViewBinder.java",
+    "java/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustBottomSheetContent.java",
+    "java/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustBottomSheetCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustBottomSheetMediator.java",
+    "java/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustMessageContext.java",
+    "java/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustMessageScheduler.java",
+    "java/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustMessageViewModel.java",
+    "java/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustMetrics.java",
+    "java/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustSignalsCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustSignalsDataProvider.java",
+    "java/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustSignalsEvent.java",
+    "java/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustSignalsEventStorage.java",
+    "java/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustSignalsMediator.java",
+    "java/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustSignalsStorageFactory.java",
+    "java/src/org/monyhar/chrome/browser/merchant_viewer/MerchantViewerConfig.java",
+    "java/src/org/monyhar/chrome/browser/merchant_viewer/RatingStarSpan.java",
+    "java/src/org/monyhar/chrome/browser/merchant_viewer/WebContentsHelpers.java",
   ]
 
   deps = [
@@ -62,7 +62,7 @@ android_library("java") {
     "//ui/android:ui_no_recycler_view_java",
     "//url:gurl_java",
   ]
-  resources_package = "org.chromium.chrome.tab_ui"
+  resources_package = "org.monyhar.chrome.tab_ui"
 
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
 }
@@ -74,13 +74,13 @@ java_library("junit") {
   testonly = true
 
   sources = [
-    "javatests/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustBottomSheetMediatorTest.java",
-    "javatests/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustMessageContextTest.java",
-    "javatests/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustMessageSchedulerTest.java",
-    "javatests/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustSignalsCallbackHelper.java",
-    "javatests/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustSignalsDataProviderTest.java",
-    "javatests/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustSignalsMediatorTest.java",
-    "javatests/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustSignalsStorageFactoryTest.java",
+    "javatests/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustBottomSheetMediatorTest.java",
+    "javatests/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustMessageContextTest.java",
+    "javatests/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustMessageSchedulerTest.java",
+    "javatests/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustSignalsCallbackHelper.java",
+    "javatests/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustSignalsDataProviderTest.java",
+    "javatests/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustSignalsMediatorTest.java",
+    "javatests/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustSignalsStorageFactoryTest.java",
   ]
 
   deps = [
@@ -122,19 +122,19 @@ java_library("junit") {
     "//url:gurl_java",
     "//url:gurl_junit_test_support",
   ]
-  resources_package = "org.chromium.chrome.tab_ui"
+  resources_package = "org.monyhar.chrome.tab_ui"
 }
 
 android_library("javatests") {
   testonly = true
 
   sources = [
-    "javatests/src/org/chromium/chrome/browser/merchant_viewer/BottomSheetToolbarViewBinderTest.java",
-    "javatests/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustBottomSheetCoordinatorTest.java",
-    "javatests/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustMessageViewTest.java",
-    "javatests/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustSignalsCoordinatorTest.java",
-    "javatests/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustSignalsEventLoadCallbackHelper.java",
-    "javatests/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustSignalsEventStorageTest.java",
+    "javatests/src/org/monyhar/chrome/browser/merchant_viewer/BottomSheetToolbarViewBinderTest.java",
+    "javatests/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustBottomSheetCoordinatorTest.java",
+    "javatests/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustMessageViewTest.java",
+    "javatests/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustSignalsCoordinatorTest.java",
+    "javatests/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustSignalsEventLoadCallbackHelper.java",
+    "javatests/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustSignalsEventStorageTest.java",
   ]
 
   deps = [
@@ -168,8 +168,8 @@ android_library("javatests") {
 
 generate_jni("jni_headers") {
   sources = [
-    "java/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustSignalsEvent.java",
-    "java/src/org/chromium/chrome/browser/merchant_viewer/MerchantTrustSignalsEventStorage.java",
-    "java/src/org/chromium/chrome/browser/merchant_viewer/WebContentsHelpers.java",
+    "java/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustSignalsEvent.java",
+    "java/src/org/monyhar/chrome/browser/merchant_viewer/MerchantTrustSignalsEventStorage.java",
+    "java/src/org/monyhar/chrome/browser/merchant_viewer/WebContentsHelpers.java",
   ]
 }

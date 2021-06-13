@@ -9,7 +9,7 @@
 # Note that all filter files (for a given test suite) are unconditionally listed
 # together, even if some filter files are applicable only to some platforms.
 # This should help avoid unpleasant surprises when a bot config is switched in
-# testing/buildbot/chromium.fyi.json without corresponding dependency changes
+# testing/buildbot/monyhar.fyi.json without corresponding dependency changes
 # here - see https://crbug.com/661447.
 
 # To refresh, a command similar to the one below might be run in bash:
@@ -117,7 +117,7 @@ source_set("content_browsertests_filters") {
     "//testing/buildbot/filters/android.marshmallow_tablet_tester.content_browsertests.filter",
     "//testing/buildbot/filters/android.lollipop_tablet_tester.content_browsertests.filter",
     "//testing/buildbot/filters/cast-linux.content_browsertests.filter",
-    "//testing/buildbot/filters/chromium.webrtc.fyi.android.tests.dbg.content_browsertests.filter",
+    "//testing/buildbot/filters/monyhar.webrtc.fyi.android.tests.dbg.content_browsertests.filter",
     "//testing/buildbot/filters/gpu.skiarenderer_vulkan_content_browsertests.filter",
     "//testing/buildbot/filters/linux-lacros.content_browsertests.filter",
     "//testing/buildbot/filters/site_isolation_android.content_browsertests.filter",

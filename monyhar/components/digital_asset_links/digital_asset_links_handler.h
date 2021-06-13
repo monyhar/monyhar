@@ -25,7 +25,7 @@ namespace digital_asset_links {
 
 extern const char kDigitalAssetLinksCheckResponseKeyLinked[];
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.digital_asset_links
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.digital_asset_links
 enum class RelationshipCheckResult {
   kSuccess = 0,
   kFailure,

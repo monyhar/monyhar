@@ -99,7 +99,7 @@ class TestToolbarMediatorChromeBrowserProvider
 namespace {
 
 static const int kNumberOfWebStates = 3;
-static const char kTestUrl[] = "http://www.chromium.org";
+static const char kTestUrl[] = "http://www.monyhar.org";
 static const char kTestUrl2[] = "http://www.notChromium.org";
 
 class ToolbarMediatorTest : public PlatformTest {

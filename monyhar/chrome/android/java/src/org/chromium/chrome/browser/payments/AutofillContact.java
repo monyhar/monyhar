@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments;
+package org.monyhar.chrome.browser.payments;
 
 import android.content.Context;
 import android.text.TextUtils;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.autofill.PersonalDataManager.AutofillProfile;
-import org.chromium.components.autofill.EditableOption;
-import org.chromium.payments.mojom.PayerDetail;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager.AutofillProfile;
+import org.monyhar.components.autofill.EditableOption;
+import org.monyhar.payments.mojom.PayerDetail;
 
 /**
  * The locally stored contact details.

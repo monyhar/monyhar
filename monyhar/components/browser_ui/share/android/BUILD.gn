@@ -6,10 +6,10 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/components/browser_ui/share/ShareDialogAdapter.java",
-    "java/src/org/chromium/components/browser_ui/share/ShareHelper.java",
-    "java/src/org/chromium/components/browser_ui/share/ShareImageFileUtils.java",
-    "java/src/org/chromium/components/browser_ui/share/ShareParams.java",
+    "java/src/org/monyhar/components/browser_ui/share/ShareDialogAdapter.java",
+    "java/src/org/monyhar/components/browser_ui/share/ShareHelper.java",
+    "java/src/org/monyhar/components/browser_ui/share/ShareImageFileUtils.java",
+    "java/src/org/monyhar/components/browser_ui/share/ShareParams.java",
   ]
   deps = [
     ":java_resources",
@@ -22,7 +22,7 @@ android_library("java") {
     "//third_party/androidx:androidx_core_core_java",
     "//ui/android:ui_java",
   ]
-  resources_package = "org.chromium.components.browser_ui.share"
+  resources_package = "org.monyhar.components.browser_ui.share"
 }
 
 android_resources("java_resources") {
@@ -36,7 +36,7 @@ android_resources("java_resources") {
 android_library("javatests") {
   testonly = true
 
-  sources = [ "java/src/org/chromium/components/browser_ui/share/ShareImageFileUtilsTest.java" ]
+  sources = [ "java/src/org/monyhar/components/browser_ui/share/ShareImageFileUtilsTest.java" ]
   deps = [
     ":java",
     "//base:base_java",

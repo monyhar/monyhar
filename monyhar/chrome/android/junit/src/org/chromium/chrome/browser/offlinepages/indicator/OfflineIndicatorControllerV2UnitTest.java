@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.offlinepages.indicator;
+package org.monyhar.chrome.browser.offlinepages.indicator;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyInt;
@@ -12,9 +12,9 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import static org.chromium.chrome.browser.offlinepages.indicator.OfflineIndicatorControllerV2.STATUS_INDICATOR_COOLDOWN_BEFORE_NEXT_ACTION_MS;
-import static org.chromium.chrome.browser.offlinepages.indicator.OfflineIndicatorControllerV2.STATUS_INDICATOR_WAIT_BEFORE_HIDE_DURATION_MS;
-import static org.chromium.chrome.browser.offlinepages.indicator.OfflineIndicatorControllerV2.setMockElapsedTimeSupplier;
+import static org.monyhar.chrome.browser.offlinepages.indicator.OfflineIndicatorControllerV2.STATUS_INDICATOR_COOLDOWN_BEFORE_NEXT_ACTION_MS;
+import static org.monyhar.chrome.browser.offlinepages.indicator.OfflineIndicatorControllerV2.STATUS_INDICATOR_WAIT_BEFORE_HIDE_DURATION_MS;
+import static org.monyhar.chrome.browser.offlinepages.indicator.OfflineIndicatorControllerV2.setMockElapsedTimeSupplier;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -29,15 +29,15 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.TimeUtils;
-import org.chromium.base.TimeUtilsJni;
-import org.chromium.base.supplier.ObservableSupplierImpl;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.net.connectivitydetector.ConnectivityDetector;
-import org.chromium.chrome.browser.net.connectivitydetector.ConnectivityDetector.ConnectionState;
-import org.chromium.chrome.browser.status_indicator.StatusIndicatorCoordinator;
+import org.monyhar.base.TimeUtils;
+import org.monyhar.base.TimeUtilsJni;
+import org.monyhar.base.supplier.ObservableSupplierImpl;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.net.connectivitydetector.ConnectivityDetector;
+import org.monyhar.chrome.browser.net.connectivitydetector.ConnectivityDetector.ConnectionState;
+import org.monyhar.chrome.browser.status_indicator.StatusIndicatorCoordinator;
 
 /**
  * Unit tests for {@link OfflineIndicatorControllerV2}.

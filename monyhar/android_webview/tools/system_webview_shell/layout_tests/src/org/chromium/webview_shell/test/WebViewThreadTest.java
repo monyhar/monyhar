@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webview_shell.test;
+package org.monyhar.webview_shell.test;
 
-import static org.chromium.base.test.util.ScalableTimeout.scaleTimeout;
+import static org.monyhar.base.test.util.ScalableTimeout.scaleTimeout;
 
 import android.webkit.CookieManager;
 import android.webkit.GeolocationPermissions;
@@ -19,9 +19,9 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseActivityTestRule;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.webview_shell.WebViewThreadTestActivity;
+import org.monyhar.base.test.BaseActivityTestRule;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.webview_shell.WebViewThreadTestActivity;
 
 /**
  * Tests running WebView on different threads.

@@ -104,7 +104,7 @@ the code is updated.
 
 ### OWNERS file details
 
-Refer to the [source code](https://chromium.googlesource.com/chromium/tools/depot_tools/+/main/owners.py)
+Refer to the [source code](https://monyhar.googlesource.com/monyhar/tools/depot_tools/+/main/owners.py)
 for all details on the file format.
 
 This example indicates that two people are owners, in addition to any owners
@@ -113,8 +113,8 @@ owner address, so this is a good place to include restrictions or special
 instructions.
 ```
 # You can include comments like this.
-a@chromium.org
-b@chromium.org  # Only for the frobinator.
+a@monyhar.org
+b@monyhar.org  # Only for the frobinator.
 ```
 
 A `*` indicates that all committers are owners:
@@ -145,15 +145,15 @@ matching a pattern. In this example, owners from the parent directory
 apply, plus one person for some classes of files, and all committers are
 owners for the readme:
 ```
-per-file foo_bar.cc=a@chromium.org
-per-file foo.*=a@chromium.org
+per-file foo_bar.cc=a@monyhar.org
+per-file foo.*=a@monyhar.org
 
 per-file readme.txt=*
 ```
 
 Note that `per-file` directives cannot directly specify subdirectories, e.g:
 ```
-per-file foo/bar.cc=a@chromium.org
+per-file foo/bar.cc=a@monyhar.org
 ```
 
 is not OK; instead, place a `per-file` directive in `foo/OWNERS`.

@@ -69,7 +69,7 @@ if (cros_sdk_version != "") {
       # VM-related tools.
       _symlinks += [
         rebase_path("${_cache_path_prefix}+sys-firmware/seabios"),
-        rebase_path("${_cache_path_prefix}+chromiumos_qemu_image.tar.xz"),
+        rebase_path("${_cache_path_prefix}+monyharos_qemu_image.tar.xz"),
         rebase_path("${_cache_path_prefix}+app-emulation/qemu"),
       ]
     }
@@ -124,7 +124,7 @@ if (cros_sdk_version != "") {
 #       (e.g. amd64-generic), but tests on a different board (e.g. eve).
 #   tast_vars: A list of "key=value" runtime variable pairs to pass to invoke
 #       the Tast tests. For more details, please see:
-#       https://chromium.googlesource.com/chromiumos/platform/tast/+/HEAD/docs/writing_tests.md#Runtime-variables
+#       https://monyhar.googlesource.com/monyharos/platform/tast/+/HEAD/docs/writing_tests.md#Runtime-variables
 template("generate_runner_script") {
   forward_variables_from(invoker,
                          [
@@ -365,7 +365,7 @@ template("tast_test") {
   if (!defined(tast_attr_expr) && !defined(tast_tests)) {
     # The following expression filters out all non-critical tests. See the link
     # below for more details:
-    # https://chromium.googlesource.com/chromiumos/platform/tast/+/main/docs/test_attributes.md
+    # https://monyhar.googlesource.com/monyharos/platform/tast/+/main/docs/test_attributes.md
     tast_attr_expr = "\"group:mainline\" && \"dep:chrome\""
 
     if (defined(enable_tast_informational_tests) &&
@@ -399,7 +399,7 @@ template("tast_test") {
     runtime_deps_file = "$root_out_dir/${target_name}.runtime_deps"
     deploy_chrome = true
     data_deps = [
-      "//:chromiumos_preflight",  # Builds the browser.
+      "//:monyharos_preflight",  # Builds the browser.
       "//chromeos:cros_chrome_deploy",  # Adds additional browser run-time deps.
 
       # Tools used to symbolize Chrome crash dumps.
@@ -451,7 +451,7 @@ template("lacros_tast_tests") {
     # use it for testing. To support running lacros tast tests from Chromium CI,
     # a Var is added to support pointing the tast tests to use a specified
     # pre-deployed lacros-chrome. The location is decided by:
-    # https://source.chromium.org/chromium/chromium/src/+/main:third_party/chromite/scripts/deploy_chrome.py;l=80;drc=86f1234a4be8e9574442e076cdc835897f7bea61
+    # https://source.monyhar.org/monyhar/monyhar/src/+/main:third_party/chromite/scripts/deploy_chrome.py;l=80;drc=86f1234a4be8e9574442e076cdc835897f7bea61
     tast_vars = [ "lacrosDeployedBinary=/usr/local/lacros-chrome" ]
 
     data_deps = [

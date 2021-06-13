@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget;
+package org.monyhar.components.browser_ui.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -15,7 +15,7 @@ import android.widget.LinearLayout;
  * A LinearLayout that can be constrained to a maximum size or percentage of the screen size.
  *
  * Example:
- *   <org.chromium.components.browser_ui.widget.BoundedLinearLayout
+ *   <org.monyhar.components.browser_ui.widget.BoundedLinearLayout
  *       xmlns:android="http://schemas.android.com/apk/res/android"
  *       xmlns:app="http://schemas.android.com/apk/res-auto"
  *       android:layout_width="match_parent"

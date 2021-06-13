@@ -34,9 +34,9 @@ if (!use_system_libsync) {
       "strlcpy.c",
     ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
     configs += [
-      "//build/config/compiler:no_chromium_code",
+      "//build/config/compiler:no_monyhar_code",
       ":libsync_private_config",
     ]
 

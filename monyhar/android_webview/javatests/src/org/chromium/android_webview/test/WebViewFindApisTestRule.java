@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
 import android.support.test.InstrumentationRegistry;
 
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.android_webview.AwContents;
+import org.monyhar.android_webview.AwContents;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;

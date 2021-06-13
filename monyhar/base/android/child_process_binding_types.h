@@ -10,7 +10,7 @@ namespace android {
 
 // Defines the state of bindgings with child process. See ChildProcessConnection
 // to see what the bindings are. Note these values are used as array indices.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.base
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.base
 enum class ChildBindingState {
   UNBOUND,
   WAIVED,

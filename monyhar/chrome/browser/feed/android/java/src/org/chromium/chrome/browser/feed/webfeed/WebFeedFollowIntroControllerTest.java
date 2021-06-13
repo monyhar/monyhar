@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.webfeed;
+package org.monyhar.chrome.browser.feed.webfeed;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -12,10 +12,10 @@ import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.doAnswer;
 import static org.mockito.Mockito.when;
 
-import static org.chromium.chrome.browser.feed.webfeed.WebFeedFollowIntroController.DEFAULT_DAILY_VISIT_MIN;
-import static org.chromium.chrome.browser.feed.webfeed.WebFeedFollowIntroController.DEFAULT_NUM_VISIT_MIN;
-import static org.chromium.chrome.browser.feed.webfeed.WebFeedFollowIntroController.PARAM_DAILY_VISIT_MIN;
-import static org.chromium.chrome.browser.feed.webfeed.WebFeedFollowIntroController.PARAM_NUM_VISIT_MIN;
+import static org.monyhar.chrome.browser.feed.webfeed.WebFeedFollowIntroController.DEFAULT_DAILY_VISIT_MIN;
+import static org.monyhar.chrome.browser.feed.webfeed.WebFeedFollowIntroController.DEFAULT_NUM_VISIT_MIN;
+import static org.monyhar.chrome.browser.feed.webfeed.WebFeedFollowIntroController.PARAM_DAILY_VISIT_MIN;
+import static org.monyhar.chrome.browser.feed.webfeed.WebFeedFollowIntroController.PARAM_NUM_VISIT_MIN;
 
 import android.util.Base64;
 
@@ -31,28 +31,28 @@ import org.mockito.Captor;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.Callback;
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.base.test.UiThreadTest;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.feature_engagement.TrackerFactory;
-import org.chromium.chrome.browser.feed.webfeed.WebFeedSnackbarController.FeedLauncher;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.ui.appmenu.AppMenuHandler;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.components.feature_engagement.FeatureConstants;
-import org.chromium.components.feature_engagement.Tracker;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.url.GURL;
+import org.monyhar.base.Callback;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.base.test.UiThreadTest;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.feature_engagement.TrackerFactory;
+import org.monyhar.chrome.browser.feed.webfeed.WebFeedSnackbarController.FeedLauncher;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.ui.appmenu.AppMenuHandler;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.components.feature_engagement.FeatureConstants;
+import org.monyhar.components.feature_engagement.Tracker;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.url.GURL;
 
 /**
  * Tests {@link WebFeedFollowIntroController}.

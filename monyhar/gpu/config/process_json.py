@@ -21,8 +21,8 @@ _LICENSE = """// Copyright (c) 2019 The Chromium Authors. All rights reserved.
 
 _DO_NOT_EDIT_WARNING = """// This file is auto-generated from
 //    gpu/config/process_json.py
-// It's formatted by clang-format using chromium coding style:
-//    clang-format -i -style=chromium filename
+// It's formatted by clang-format using monyhar coding style:
+//    clang-format -i -style=monyhar filename
 // DO NOT EDIT!
 
 """
@@ -813,7 +813,7 @@ def format_files(generated_files):
   if platform.system() == "Windows":
     formatter += ".bat"
   for filename in generated_files:
-    call([formatter, "-i", "-style=chromium", filename])
+    call([formatter, "-i", "-style=monyhar", filename])
 
 
 def write_header_file_guard(out_file, filename, path, begin):

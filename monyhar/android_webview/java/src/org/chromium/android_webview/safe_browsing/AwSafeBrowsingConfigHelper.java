@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.safe_browsing;
+package org.monyhar.android_webview.safe_browsing;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
@@ -11,15 +11,15 @@ import android.content.pm.PackageManager;
 import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 
-import org.chromium.android_webview.common.AwSwitches;
-import org.chromium.android_webview.common.PlatformServiceBridge;
-import org.chromium.base.Callback;
-import org.chromium.base.CommandLine;
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.ScopedSysTraceEvent;
+import org.monyhar.android_webview.common.AwSwitches;
+import org.monyhar.android_webview.common.PlatformServiceBridge;
+import org.monyhar.base.Callback;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.ScopedSysTraceEvent;
 
 /**
  * Helper class for getting the configuration settings related to safebrowsing in WebView.

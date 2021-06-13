@@ -93,7 +93,7 @@ class NavigatorTest : public RenderViewHostImplTestHarness {
 // Tests a complete browser-initiated navigation starting with a non-live
 // renderer.
 TEST_F(NavigatorTest, SimpleBrowserInitiatedNavigationFromNonLiveRenderer) {
-  const GURL kUrl("http://chromium.org/");
+  const GURL kUrl("http://monyhar.org/");
 
   EXPECT_FALSE(main_test_rfh()->IsRenderFrameLive());
 
@@ -144,8 +144,8 @@ TEST_F(NavigatorTest, SimpleBrowserInitiatedNavigationFromNonLiveRenderer) {
 
 // Tests a complete renderer-initiated same-site navigation.
 TEST_F(NavigatorTest, SimpleRendererInitiatedSameSiteNavigation) {
-  const GURL kUrl1("http://www.chromium.org/");
-  const GURL kUrl2("http://www.chromium.org/Home");
+  const GURL kUrl1("http://www.monyhar.org/");
+  const GURL kUrl2("http://www.monyhar.org/Home");
 
   contents()->NavigateAndCommit(kUrl1);
   EXPECT_TRUE(main_test_rfh()->IsRenderFrameLive());
@@ -206,7 +206,7 @@ TEST_F(NavigatorTest, SimpleRendererInitiatedSameSiteNavigation) {
 // cross-site but does not result in a SiteInstance swap because its
 // renderer-initiated.
 TEST_F(NavigatorTest, SimpleRendererInitiatedCrossSiteNavigation) {
-  const GURL kUrl1("http://www.chromium.org/");
+  const GURL kUrl1("http://www.monyhar.org/");
   const GURL kUrl2("http://www.google.com");
 
   contents()->NavigateAndCommit(kUrl1);
@@ -267,7 +267,7 @@ TEST_F(NavigatorTest, SimpleRendererInitiatedCrossSiteNavigation) {
 TEST_F(NavigatorTest, RendererAbortedAboutBlankNavigation) {
   const GURL kUrl0("http://www.google.com/");
   const GURL kUrl1("about:blank");
-  const GURL kUrl2("http://www.chromium.org/Home");
+  const GURL kUrl2("http://www.monyhar.org/Home");
 
   contents()->NavigateAndCommit(kUrl0);
   EXPECT_TRUE(main_test_rfh()->IsRenderFrameLive());
@@ -318,7 +318,7 @@ TEST_F(NavigatorTest,
   const GURL kUrl0("http://www.google.com/");
   const GURL kUrl0SameSiteVariation("http://www.google.com/home");
   const GURL kUrl1("about:blank");
-  const GURL kUrl2("http://www.chromium.org/Home");
+  const GURL kUrl2("http://www.monyhar.org/Home");
 
   contents()->NavigateAndCommit(kUrl0);
   EXPECT_TRUE(main_test_rfh()->IsRenderFrameLive());
@@ -392,7 +392,7 @@ TEST_F(NavigatorTest,
 // Tests that a beforeUnload denial cancels the navigation.
 TEST_F(NavigatorTest, BeforeUnloadDenialCancelNavigation) {
   const GURL kUrl1("http://www.google.com/");
-  const GURL kUrl2("http://www.chromium.org/");
+  const GURL kUrl2("http://www.monyhar.org/");
 
   contents()->NavigateAndCommit(kUrl1);
 
@@ -419,7 +419,7 @@ TEST_F(NavigatorTest, BeforeUnloadDenialCancelNavigation) {
 // Test that a proper NavigationRequest is created at navigation start.
 TEST_F(NavigatorTest, BeginNavigation) {
   const GURL kUrl1("http://www.google.com/");
-  const GURL kUrl2("http://www.chromium.org/");
+  const GURL kUrl2("http://www.monyhar.org/");
   const GURL kUrl3("http://www.gmail.com/");
 
   contents()->NavigateAndCommit(kUrl1);
@@ -521,7 +521,7 @@ TEST_F(NavigatorTest, BeginNavigation) {
 // Tests that committing an HTTP 204 or HTTP 205 response cancels
 // the navigation.
 TEST_F(NavigatorTest, NoContent) {
-  const GURL kUrl1("http://www.chromium.org/");
+  const GURL kUrl1("http://www.monyhar.org/");
   const GURL kUrl2("http://www.google.com/");
 
   // Load a URL.
@@ -581,7 +581,7 @@ TEST_F(NavigatorTest, NoContent) {
 // Test that a new RenderFrameHost is created when doing a cross site
 // navigation.
 TEST_F(NavigatorTest, CrossSiteNavigation) {
-  const GURL kUrl1("http://www.chromium.org/");
+  const GURL kUrl1("http://www.monyhar.org/");
   const GURL kUrl2("http://www.google.com/");
 
   contents()->NavigateAndCommit(kUrl1);
@@ -616,7 +616,7 @@ TEST_F(NavigatorTest, CrossSiteNavigation) {
 // Test that redirects are followed and the speculative RenderFrameHost logic
 // behaves as expected.
 TEST_F(NavigatorTest, RedirectCrossSite) {
-  const GURL kUrl1("http://www.chromium.org/");
+  const GURL kUrl1("http://www.monyhar.org/");
   const GURL kUrl2("http://www.google.com/");
 
   contents()->NavigateAndCommit(kUrl1);
@@ -660,7 +660,7 @@ TEST_F(NavigatorTest, RedirectCrossSite) {
 // RenderFrameHost is correctly updated in the process.
 TEST_F(NavigatorTest, BrowserInitiatedNavigationCancel) {
   const GURL kUrl0("http://www.wikipedia.org/");
-  const GURL kUrl1("http://www.chromium.org/");
+  const GURL kUrl1("http://www.monyhar.org/");
   const auto kUrl1SiteInfo = CreateExpectedSiteInfo(kUrl1);
   const GURL kUrl2("http://www.google.com/");
   const auto kUrl2SiteInfo = CreateExpectedSiteInfo(kUrl2);
@@ -741,7 +741,7 @@ TEST_F(NavigatorTest, BrowserInitiatedNavigationCancel) {
 // user-initiated request has been issued in the meantime.
 TEST_F(NavigatorTest, RendererUserInitiatedNavigationCancel) {
   const GURL kUrl0("http://www.wikipedia.org/");
-  const GURL kUrl1("http://www.chromium.org/");
+  const GURL kUrl1("http://www.monyhar.org/");
   const GURL kUrl2("http://www.google.com/");
 
   // Initialization.
@@ -805,7 +805,7 @@ TEST_F(NavigatorTest, RendererUserInitiatedNavigationCancel) {
 TEST_F(NavigatorTest,
        RendererNonUserInitiatedNavigationCancelsRendererUserInitiated) {
   const GURL kUrl0("http://www.wikipedia.org/");
-  const GURL kUrl1("http://www.chromium.org/");
+  const GURL kUrl1("http://www.monyhar.org/");
   const GURL kUrl2("http://www.google.com/");
 
   // Initialization.
@@ -862,7 +862,7 @@ TEST_F(NavigatorTest,
 TEST_F(NavigatorTest,
        RendererNonUserInitiatedNavigationDoesntCancelBrowserInitiated) {
   const GURL kUrl0("http://www.wikipedia.org/");
-  const GURL kUrl1("http://www.chromium.org/");
+  const GURL kUrl1("http://www.monyhar.org/");
   const GURL kUrl2("http://www.google.com/");
 
   // Initialization.
@@ -905,7 +905,7 @@ TEST_F(NavigatorTest,
 TEST_F(NavigatorTest,
        RendererNonUserInitiatedNavigationCancelSimilarNavigation) {
   const GURL kUrl0("http://www.wikipedia.org/");
-  const GURL kUrl1("http://www.chromium.org/");
+  const GURL kUrl1("http://www.monyhar.org/");
   const GURL kUrl2("http://www.google.com/");
 
   // Initialization.
@@ -1334,7 +1334,7 @@ TEST_F(NavigatorTest, SiteInstanceDescriptionConversion) {
 // DidCommitProvisionalLoadParams. Such case should be detected on the browser
 // side and the renderer process should be killed.
 TEST_F(NavigatorTest, CrossSiteClaimWithinPage) {
-  const GURL kUrl1("http://www.chromium.org/");
+  const GURL kUrl1("http://www.monyhar.org/");
   const GURL kUrl2("http://www.google.com/");
 
   NavigationSimulator::NavigateAndCommitFromBrowser(contents(), kUrl1);
@@ -1351,8 +1351,8 @@ TEST_F(NavigatorTest, CrossSiteClaimWithinPage) {
 // Tests that an ongoing NavigationRequest is deleted when a same-site
 // user-initiated navigation commits.
 TEST_F(NavigatorTest, NavigationRequestDeletedWhenUserInitiatedCommits) {
-  const GURL kUrl1("http://www.chromium.org/");
-  const GURL kUrl2("http://www.chromium.org/foo");
+  const GURL kUrl1("http://www.monyhar.org/");
+  const GURL kUrl2("http://www.monyhar.org/foo");
   const GURL kUrl3("http://www.google.com/");
 
   contents()->NavigateAndCommit(kUrl1);
@@ -1393,7 +1393,7 @@ TEST_F(NavigatorTest, NavigationRequestDeletedWhenUserInitiatedCommits) {
 // Tests that an ongoing NavigationRequest is deleted when a cross-site
 // navigation commits.
 TEST_F(NavigatorTest, NavigationRequestDeletedWhenCrossSiteCommits) {
-  const GURL kUrl1("http://www.chromium.org/");
+  const GURL kUrl1("http://www.monyhar.org/");
   const GURL kUrl2("http://www.google.com/");
   const GURL kUrl3("http://www.google.com/foo");
 
@@ -1433,8 +1433,8 @@ TEST_F(NavigatorTest, NavigationRequestDeletedWhenCrossSiteCommits) {
 // Permissions Policy: Test that the permissions policy is reset when navigating
 // pages within a site.
 TEST_F(NavigatorTest, PermissionsPolicySameSiteNavigation) {
-  const GURL kUrl1("http://www.chromium.org/");
-  const GURL kUrl2("http://www.chromium.org/Home");
+  const GURL kUrl1("http://www.monyhar.org/");
+  const GURL kUrl2("http://www.monyhar.org/Home");
 
   contents()->NavigateAndCommit(kUrl1);
 
@@ -1456,8 +1456,8 @@ TEST_F(NavigatorTest, PermissionsPolicySameSiteNavigation) {
 // Permissions Policy: Test that the permissions policy is not reset when
 // navigating within a page.
 TEST_F(NavigatorTest, PermissionsPolicyFragmentNavigation) {
-  const GURL kUrl1("http://www.chromium.org/");
-  const GURL kUrl2("http://www.chromium.org/#Home");
+  const GURL kUrl1("http://www.monyhar.org/");
+  const GURL kUrl2("http://www.monyhar.org/#Home");
 
   contents()->NavigateAndCommit(kUrl1);
 
@@ -1478,8 +1478,8 @@ TEST_F(NavigatorTest, PermissionsPolicyFragmentNavigation) {
 // Permissions Policy: Test that the permissions policy is set correctly when
 // inserting a new child frame.
 TEST_F(NavigatorTest, PermissionsPolicyNewChild) {
-  const GURL kUrl1("http://www.chromium.org/");
-  const GURL kUrl2("http://www.chromium.org/Home");
+  const GURL kUrl1("http://www.monyhar.org/");
+  const GURL kUrl2("http://www.monyhar.org/Home");
 
   contents()->NavigateAndCommit(kUrl1);
 
@@ -1495,8 +1495,8 @@ TEST_F(NavigatorTest, PermissionsPolicyNewChild) {
 }
 
 TEST_F(NavigatorTest, TwoNavigationsRacingCommit) {
-  const GURL kUrl1("http://www.chromium.org/");
-  const GURL kUrl2("http://www.chromium.org/Home");
+  const GURL kUrl1("http://www.monyhar.org/");
+  const GURL kUrl2("http://www.monyhar.org/Home");
 
   EXPECT_EQ(0u, contents()->GetMainFrame()->navigation_requests_.size());
 

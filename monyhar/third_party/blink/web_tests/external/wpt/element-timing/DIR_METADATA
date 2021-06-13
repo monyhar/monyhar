@@ -1,7 +1,7 @@
 monorail {
   component: "Blink>PerformanceAPIs"
 }
-team_email: "speed-metrics-dev@chromium.org"
+team_email: "speed-metrics-dev@monyhar.org"
 wpt {
   notify: YES
 }

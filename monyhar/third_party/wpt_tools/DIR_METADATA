@@ -1,4 +1,4 @@
 monorail: {
   component: "Blink>Infra>Ecosystem"
 }
-team_email: "ecosystem-infra@chromium.org"
+team_email: "ecosystem-infra@monyhar.org"

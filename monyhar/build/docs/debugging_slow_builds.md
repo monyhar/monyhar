@@ -8,7 +8,7 @@ Some tips for debugging slow build times:
 * Depot Tool's `autoninja` has logic for summarizing slow steps. Enable it via:
   * `NINJA_SUMMARIZE_BUILD=1 autoninja -C out/Debug my_target`
 * Many Android templates make use of
-  [`md5_check.py`](https://cs.chromium.org/chromium/src/build/android/gyp/util/md5_check.py)
+  [`md5_check.py`](https://cs.monyhar.org/monyhar/src/build/android/gyp/util/md5_check.py)
   to optimize incremental builds.
   * Set `PRINT_BUILD_EXPLANATIONS=1` to have these commands log which inputs
     changed.

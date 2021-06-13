@@ -7,7 +7,7 @@ and
 
 linearized.pdf test file was generated around January 2020 with the
 following cmdlines:
-    $ find chromium/src/third_party/pdfium/core -name '*.h' -or -name '*.cc'
+    $ find monyhar/src/third_party/pdfium/core -name '*.h' -or -name '*.cc'
         | sort | grep -v -i drm | grep -v -i priv \
         | xargs enscript -Ecpp -o - \
         | ps2pdf - tmp.pdf

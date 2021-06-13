@@ -46,7 +46,7 @@ To report a new issue:
 #. Go to the `Native Client issue tracker
    <https://code.google.com/p/nativeclient/issues>`_ for a Native Client
    bug, or the `Chromium issue tracker
-   <https://code.google.com/p/chromium/issues>`_ for a Chrome/Chromium bug.
+   <https://code.google.com/p/monyhar/issues>`_ for a Chrome/Chromium bug.
 #. Before you report an issue, search to see if your issue has already
    been reported. You can add a comment to an existing issue if you have
    additional information.
@@ -59,7 +59,7 @@ To report a new issue:
      <https://code.google.com/p/nativeclient/issues/entry?template=Security%20Bug>`_
      (only visible to the security team).
    * A `Native Client + Chrome integration issue
-     <https://code.google.com/p/chromium/issues/entry?template=NaCl%20Issue>`_.
+     <https://code.google.com/p/monyhar/issues/entry?template=NaCl%20Issue>`_.
    * A `Native Client + Chrome integration security issue
-     <https://code.google.com/p/chromium/issues/entry?template=Security%20Bug>`_
+     <https://code.google.com/p/monyhar/issues/entry?template=Security%20Bug>`_
      (only visible to the security team).

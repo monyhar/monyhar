@@ -335,7 +335,7 @@ class AppCacheRequestHandlerTest : public ::testing::Test {
     // headers that override the fallback behavior.
     const char kOverrideHeaders[] =
         "HTTP/1.1 404 BOO HOO\0"
-        "x-chromium-appcache-fallback-override: disallow-fallback\0"
+        "x-monyhar-appcache-fallback-override: disallow-fallback\0"
         "\0";
     net::HttpResponseInfo info;
     info.headers = base::MakeRefCounted<net::HttpResponseHeaders>(

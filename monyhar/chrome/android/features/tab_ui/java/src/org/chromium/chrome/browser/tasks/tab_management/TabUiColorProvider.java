@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -11,8 +11,8 @@ import android.graphics.drawable.Drawable;
 import androidx.annotation.ColorInt;
 import androidx.appcompat.content.res.AppCompatResources;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.tab_ui.R;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.tab_ui.R;
 
 /**
  * Color utility class for a Tab Grid card.

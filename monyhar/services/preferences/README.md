@@ -1,7 +1,7 @@
 # Preference Service User Guide
 
 The Preference Service is no longer an independent service. The implementation
-was deleted: https://chromium-review.googlesource.com/c/chromium/src/+/1928248
+was deleted: https://monyhar-review.googlesource.com/c/monyhar/src/+/1928248
 
 Some legacy implementation is still available here to support current usage. It
 has not been moved to be with the rest of the related preference code in

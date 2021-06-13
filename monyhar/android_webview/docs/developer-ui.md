@@ -79,7 +79,7 @@ provide more info about that crash.
 While the crash server has most of the information we need to solve issues, it
 is helpful if you can provide additional details in a bug report, such as steps
 to reproduce the crash. To do so press the "File bug report" button which will
-open [crbug.com](https://bugs.chromium.org/p/chromium/issues/entry?template=Webview+Bugs)
+open [crbug.com](https://bugs.monyhar.org/p/monyhar/issues/entry?template=Webview+Bugs)
 in the browser. You can use the bug report template to provide additional info
 about the crash for the WebView engineering team. Make sure to fill all the
 relevant fields in the bug report and leave the crash upload ID in the bug
@@ -114,7 +114,7 @@ restart WebView apps to go back to the default behavior.
 
 *** aside
 [Starting in
-M84](https://chromiumdash.appspot.com/commit/f5ee8b7f1d23d2a915ea234bdd4e49e4c908b267),
+M84](https://monyhardash.appspot.com/commit/f5ee8b7f1d23d2a915ea234bdd4e49e4c908b267),
 toggled flags will be restored after WebView updates or rebooting your device.
 This is convenient if you want to try out features for longer periods of time,
 such as for dogfooding or compatibility testing.
@@ -131,7 +131,7 @@ or "Disabled" in the UI; "Default" means WebView will pick up the random field
 trial experiment.
 
 If you find an experiment is the root cause for app breakage, please [file a
-bug](https://bugs.chromium.org/p/chromium/issues/entry?template=Webview+Bugs),
+bug](https://bugs.monyhar.org/p/monyhar/issues/entry?template=Webview+Bugs),
 mention which experiment, and link to your app's Play Store page for our team to
 investigate.
 
@@ -153,7 +153,7 @@ running with the latest WebView variations seed.
 
 If you're intending to launch a feature in WebView or start a field trial (AKA
 Finch experiment), we **highly encourage** you to [add to the
-list](/android_webview/java/src/org/chromium/android_webview/common/ProductionSupportedFlagList.java)
+list](/android_webview/java/src/org/monyhar/android_webview/common/ProductionSupportedFlagList.java)
 (ex. [CL](https://crrev.com/c/2008007), [CL](https://crrev.com/c/2066144)).
 After that, update `enums.xml` by running
 `android_webview/tools/generate_flag_labels.py` (see [this
@@ -193,13 +193,13 @@ You can file general bug reports for the WebView engineering team. Launch
 WebView DevTools, open the three-dotted menu, and select "Report WebView Bug."
 Similar to filing bug reports for crashes, this will open the system browser to
 [our bug
-tracker](https://bugs.chromium.org/p/chromium/issues/entry?template=Webview+Bugs&labels=Via-WebView-DevTools)
+tracker](https://bugs.monyhar.org/p/monyhar/issues/entry?template=Webview+Bugs&labels=Via-WebView-DevTools)
 (requires sign-in), where you can describe the issue.
 
 ### Check for WebView updates
 
 *** aside
-This was [added in M84](https://chromiumdash.appspot.com/commit/f23d4aa70857ce71a44a2341584461feae95b8a6).
+This was [added in M84](https://monyhardash.appspot.com/commit/f23d4aa70857ce71a44a2341584461feae95b8a6).
 ***
 
 You can check for WebView updates directly from WebView DevTools. This is handy

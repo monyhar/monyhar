@@ -19,7 +19,7 @@ namespace blink {
 // content/browser/font_unique_name_lookup/font_unique_name_lookup.cc as well
 // as the Mojo IPC connection to a java implementation that fetches fonts from
 // GMSCore, see
-// content/public/android/java/src/org/chromium/content/browser/font/AndroidFontLookupImpl.java
+// content/public/android/java/src/org/monyhar/content/browser/font/AndroidFontLookupImpl.java
 class FontUniqueNameLookupAndroid : public FontUniqueNameLookup {
  public:
   FontUniqueNameLookupAndroid() = default;

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.site_settings;
+package org.monyhar.components.browser_ui.site_settings;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -20,9 +20,9 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 import androidx.vectordrawable.graphics.drawable.VectorDrawableCompat;
 
-import org.chromium.base.annotations.RemovableInRelease;
-import org.chromium.components.browser_ui.settings.ChromeImageViewPreference;
-import org.chromium.components.browser_ui.settings.ManagedPreferencesUtils;
+import org.monyhar.base.annotations.RemovableInRelease;
+import org.monyhar.components.browser_ui.settings.ChromeImageViewPreference;
+import org.monyhar.components.browser_ui.settings.ManagedPreferencesUtils;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -33,10 +33,10 @@ import java.util.Locale;
  * granted access to it by the user.
  */
 public class ChosenObjectSettings extends SiteSettingsPreferenceFragment {
-    public static final String EXTRA_OBJECT_INFOS = "org.chromium.chrome.preferences.object_infos";
-    public static final String EXTRA_SITES = "org.chromium.chrome.preferences.site_set";
+    public static final String EXTRA_OBJECT_INFOS = "org.monyhar.chrome.preferences.object_infos";
+    public static final String EXTRA_SITES = "org.monyhar.chrome.preferences.site_set";
     public static final String EXTRA_CATEGORY =
-            "org.chromium.chrome.preferences.content_settings_type";
+            "org.monyhar.chrome.preferences.content_settings_type";
 
     // The site settings category we are showing.
     private SiteSettingsCategory mCategory;

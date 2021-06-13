@@ -164,7 +164,7 @@ class ReportingClient : public ReportQueueProvider {
 
   // The three member variables below are protected by
   // uploaders_queue_task_runner_.
-  // TODO(chromium:1078512) Passing around a raw pointer is unsafe. Wrap
+  // TODO(monyhar:1078512) Passing around a raw pointer is unsafe. Wrap
   // CloudPolicyClient and guard access.
   policy::CloudPolicyClient* cloud_policy_client_ = nullptr;
   std::unique_ptr<UploadClient> upload_client_;

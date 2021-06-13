@@ -8,13 +8,13 @@ create {
   }
 
   build {
-    dep: "chromium/third_party/jdk"
+    dep: "monyhar/third_party/jdk"
     # gradle cannot be executed correctly under docker env
     no_docker_env: true
   }
 }
 
 upload {
-  pkg_prefix: "chromium/third_party"
+  pkg_prefix: "monyhar/third_party"
   universal: true
 }

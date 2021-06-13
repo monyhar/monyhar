@@ -19,7 +19,7 @@ namespace password_manager {
 // passwords against the database of leaked credentials.
 class BulkLeakCheckServiceInterface : public KeyedService {
  public:
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.password_check
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.password_check
   // GENERATED_JAVA_CLASS_NAME_OVERRIDE: BulkLeakCheckServiceState
   enum class State {
     // The service is idle and there was no previous error.

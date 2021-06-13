@@ -9553,7 +9553,7 @@ TEST_F(HttpNetworkTransactionTest, LargeHeadersNoBody) {
 
 // Make sure that we don't try to reuse a TCPClientSocket when failing to
 // establish tunnel.
-// http://code.google.com/p/chromium/issues/detail?id=3772
+// http://code.google.com/p/monyhar/issues/detail?id=3772
 TEST_F(HttpNetworkTransactionTest, DontRecycleTransportSocketForSSLTunnel) {
   HttpRequestInfo request;
   request.method = "GET";

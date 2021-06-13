@@ -11,7 +11,7 @@ namespace password_manager {
 // used to display information in the password check header.
 //
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.password_check
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.password_check
 enum class PasswordCheckUIStatus {
   kIdle,
   kRunning,

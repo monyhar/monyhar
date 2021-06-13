@@ -2,25 +2,25 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.infobar;
+package org.monyhar.chrome.browser.infobar;
 
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.browser_ui.site_settings.SingleCategorySettings;
-import org.chromium.components.browser_ui.site_settings.SiteSettingsCategory;
-import org.chromium.components.infobars.ConfirmInfoBar;
-import org.chromium.components.infobars.InfoBarCompactLayout;
-import org.chromium.components.infobars.InfoBarLayout;
-import org.chromium.components.permissions.AndroidPermissionRequester;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.text.NoUnderlineClickableSpan;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.settings.SettingsLauncherImpl;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.browser_ui.site_settings.SingleCategorySettings;
+import org.monyhar.components.browser_ui.site_settings.SiteSettingsCategory;
+import org.monyhar.components.infobars.ConfirmInfoBar;
+import org.monyhar.components.infobars.InfoBarCompactLayout;
+import org.monyhar.components.infobars.InfoBarLayout;
+import org.monyhar.components.permissions.AndroidPermissionRequester;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.text.NoUnderlineClickableSpan;
 
 /**
  * An infobar used for prompting the user to grant a web API permission.

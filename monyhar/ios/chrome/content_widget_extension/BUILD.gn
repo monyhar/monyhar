@@ -39,15 +39,15 @@ ios_appex_bundle("content_widget_extension") {
 
   extra_substitutions = [
     "CHROME_CHANNEL_SCHEME=$url_channel_scheme",
-    "CHROMIUM_SHORT_NAME=$chromium_short_name",
-    "WIDGET_EXTENSION_BUNDLE_ID=$chromium_bundle_id.ContentTodayExtension",
+    "CHROMIUM_SHORT_NAME=$monyhar_short_name",
+    "WIDGET_EXTENSION_BUNDLE_ID=$monyhar_bundle_id.ContentTodayExtension",
   ]
 
   assert_no_deps = ios_extension_assert_no_deps
 
   entitlements_target = ":entitlements"
   info_plist_target = ":tweak_info_plist"
-  xcode_product_bundle_id = "$chromium_bundle_id.ContentTodayExtension"
+  xcode_product_bundle_id = "$monyhar_bundle_id.ContentTodayExtension"
 }
 
 source_set("content_widget") {
@@ -109,7 +109,7 @@ generate_localizable_strings("system_strings") {
   packed_locales = ios_packed_locales_as_mac_outputs
   output_filenames = [ "InfoPlist.strings" ]
   deps = [
-    "//ios/chrome/content_widget_extension/strings:ios_content_widget_extension_chromium_strings",
+    "//ios/chrome/content_widget_extension/strings:ios_content_widget_extension_monyhar_strings",
 
     # Depends on both branding strings target to ensure the proper .h exists
     # (the .plist configuration can only reference one of them, and their

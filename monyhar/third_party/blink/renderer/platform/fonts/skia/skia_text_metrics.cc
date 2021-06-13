@@ -87,7 +87,7 @@ void SkFontGetGlyphExtentsForHarfBuzz(const SkFont& font,
 
 #if defined(OS_MAC)
   // TODO(drott): Remove this once we have better metrics bounds
-  // on Mac, https://bugs.chromium.org/p/skia/issues/detail?id=5328
+  // on Mac, https://bugs.monyhar.org/p/skia/issues/detail?id=5328
   SkPath path;
   if (font.getPath(glyph, &path)) {
     sk_bounds = path.getBounds();
@@ -114,7 +114,7 @@ void SkFontGetGlyphExtentsForHarfBuzz(const SkFont& font,
 void SkFontGetBoundsForGlyph(const SkFont& font, Glyph glyph, SkRect* bounds) {
 #if defined(OS_MAC)
   // TODO(drott): Remove this once we have better metrics bounds
-  // on Mac, https://bugs.chromium.org/p/skia/issues/detail?id=5328
+  // on Mac, https://bugs.monyhar.org/p/skia/issues/detail?id=5328
   SkPath path;
   if (font.getPath(glyph, &path)) {
     *bounds = path.getBounds();

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant;
+package org.monyhar.chrome.browser.autofill_assistant;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -20,12 +20,12 @@ import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.not;
 
-import static org.chromium.base.test.util.CriteriaHelper.DEFAULT_MAX_TIME_TO_POLL;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.startAutofillAssistant;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntil;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilKeyboardMatchesCondition;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilViewAssertionTrue;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilViewMatchesCondition;
+import static org.monyhar.base.test.util.CriteriaHelper.DEFAULT_MAX_TIME_TO_POLL;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.startAutofillAssistant;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntil;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilKeyboardMatchesCondition;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilViewAssertionTrue;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilViewMatchesCondition;
 
 import android.support.test.InstrumentationRegistry;
 import android.view.KeyEvent;
@@ -40,32 +40,32 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.base.test.util.Restriction;
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.autofill_assistant.proto.ActionProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ChipProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ChipType;
-import org.chromium.chrome.browser.autofill_assistant.proto.ConfigureBottomSheetProto.PeekMode;
-import org.chromium.chrome.browser.autofill_assistant.proto.PromptProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.StopProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.SupportedScriptProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.SupportedScriptProto.PresentationProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.TellProto;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.omnibox.UrlBar;
-import org.chromium.chrome.browser.tabmodel.TabModelUtils;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.ChromeTabUtils;
-import org.chromium.chrome.test.util.OmniboxTestUtils;
-import org.chromium.chrome.test.util.WaitForFocusHelper;
-import org.chromium.components.browser_ui.widget.scrim.ScrimCoordinator;
-import org.chromium.content_public.browser.test.util.KeyUtils;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.net.test.EmbeddedTestServer;
-import org.chromium.ui.test.util.UiRestriction;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.base.test.util.Restriction;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ActionProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ChipProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ChipType;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ConfigureBottomSheetProto.PeekMode;
+import org.monyhar.chrome.browser.autofill_assistant.proto.PromptProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.StopProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.SupportedScriptProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.SupportedScriptProto.PresentationProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.TellProto;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.omnibox.UrlBar;
+import org.monyhar.chrome.browser.tabmodel.TabModelUtils;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.ChromeTabUtils;
+import org.monyhar.chrome.test.util.OmniboxTestUtils;
+import org.monyhar.chrome.test.util.WaitForFocusHelper;
+import org.monyhar.components.browser_ui.widget.scrim.ScrimCoordinator;
+import org.monyhar.content_public.browser.test.util.KeyUtils;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.net.test.EmbeddedTestServer;
+import org.monyhar.ui.test.util.UiRestriction;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -139,7 +139,7 @@ public class AutofillAssistantChromeTabIntegrationTest {
         onView(is(mScrimCoordinator.getViewForTesting()))
                 .check(matches(withEffectiveVisibility(Visibility.VISIBLE)));
 
-        onView(withId(org.chromium.chrome.R.id.tab_switcher_button)).perform(click());
+        onView(withId(org.monyhar.chrome.R.id.tab_switcher_button)).perform(click());
         waitUntilViewAssertionTrue(withText("Prompt"), doesNotExist(), DEFAULT_MAX_TIME_TO_POLL);
         onView(is(mScrimCoordinator.getViewForTesting())).check(doesNotExist());
 
@@ -272,7 +272,7 @@ public class AutofillAssistantChromeTabIntegrationTest {
         ArrayList<ActionProto> listA = new ArrayList<>();
         listA.add((ActionProto) ActionProto.newBuilder()
                           .setConfigureBottomSheet(
-                                  org.chromium.chrome.browser.autofill_assistant.proto
+                                  org.monyhar.chrome.browser.autofill_assistant.proto
                                           .ConfigureBottomSheetProto.newBuilder()
                                           .setPeekMode(PeekMode.HANDLE)
                                           .setExpand(false)
@@ -341,7 +341,7 @@ public class AutofillAssistantChromeTabIntegrationTest {
         ArrayList<ActionProto> listA = new ArrayList<>();
         listA.add((ActionProto) ActionProto.newBuilder()
                           .setConfigureBottomSheet(
-                                  org.chromium.chrome.browser.autofill_assistant.proto
+                                  org.monyhar.chrome.browser.autofill_assistant.proto
                                           .ConfigureBottomSheetProto.newBuilder()
                                           .setPeekMode(PeekMode.HANDLE_HEADER)
                                           .setExpand(false)
@@ -356,7 +356,7 @@ public class AutofillAssistantChromeTabIntegrationTest {
                                                      ChipProto.newBuilder()
                                                              .setText("Sticky")
                                                              .setSticky(true)
-                                                             .setType(org.chromium.chrome.browser
+                                                             .setType(org.monyhar.chrome.browser
                                                                               .autofill_assistant
                                                                               .proto.ChipType
                                                                               .HIGHLIGHTED_ACTION)))
@@ -554,7 +554,7 @@ public class AutofillAssistantChromeTabIntegrationTest {
                 not(withEffectiveVisibility(Visibility.VISIBLE)));
 
         // Clicking location bar hides UI and shows the keyboard.
-        onView(withId(org.chromium.chrome.R.id.url_bar)).perform(click());
+        onView(withId(org.monyhar.chrome.R.id.url_bar)).perform(click());
         waitUntilViewMatchesCondition(withText("Browse"), not(isDisplayed()));
         waitUntilKeyboardMatchesCondition(mTestRule, /* isShowing= */ true);
 
@@ -619,7 +619,7 @@ public class AutofillAssistantChromeTabIntegrationTest {
         waitUntilViewMatchesCondition(is(mScrimCoordinator.getViewForTesting()),
                 withEffectiveVisibility(Visibility.VISIBLE));
 
-        onView(withId(org.chromium.chrome.R.id.tab_switcher_button)).perform(click());
+        onView(withId(org.monyhar.chrome.R.id.tab_switcher_button)).perform(click());
         waitUntilViewMatchesCondition(withId(R.id.button_init_ok), not(isDisplayed()));
         onView(is(mScrimCoordinator.getViewForTesting())).check(doesNotExist());
 

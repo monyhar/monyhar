@@ -130,12 +130,12 @@ TEST_F(SharingUtilsTest, GetSharingDeviceNames_Linux_SigninOnly) {
 
 TEST_F(SharingUtilsTest, GetSharingDeviceNames_Linux_FullySynced) {
   std::unique_ptr<syncer::DeviceInfo> device = CreateFakeDeviceInfo(
-      "guid", "bob.chromium.org", sync_pb::SyncEnums_DeviceType_TYPE_LINUX,
+      "guid", "bob.monyhar.org", sync_pb::SyncEnums_DeviceType_TYPE_LINUX,
       "LENOVO", "30BDS0RA0G");
   SharingDeviceNames names = GetSharingDeviceNames(device.get());
 
-  EXPECT_EQ("bob.chromium.org", names.full_name);
-  EXPECT_EQ("bob.chromium.org", names.short_name);
+  EXPECT_EQ("bob.monyhar.org", names.full_name);
+  EXPECT_EQ("bob.monyhar.org", names.short_name);
 }
 
 TEST_F(SharingUtilsTest, CheckManufacturerNameCapitalization) {

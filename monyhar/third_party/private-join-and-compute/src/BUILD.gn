@@ -4,7 +4,7 @@ config("private_join_and_compute_config") {
 
 source_set("ec_commutative_cipher") {
   sources = [
-    "chromium_patch.h",
+    "monyhar_patch.h",
     "crypto/big_num.cc",
     "crypto/big_num.h",
     "crypto/context.cc",
@@ -30,6 +30,6 @@ source_set("ec_commutative_cipher") {
     "//third_party/boringssl",
   ]
 
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
   public_configs = [ ":private_join_and_compute_config" ]
 }

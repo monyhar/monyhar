@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.history;
+package org.monyhar.chrome.browser.history;
 
 import android.content.res.Resources;
 import android.text.SpannableString;
@@ -19,22 +19,22 @@ import androidx.annotation.VisibleForTesting;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.history.HistoryProvider.BrowsingHistoryObserver;
-import org.chromium.chrome.browser.preferences.Pref;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.ui.favicon.FaviconHelper.DefaultFaviconHelper;
-import org.chromium.components.browser_ui.widget.DateDividedAdapter;
-import org.chromium.components.browser_ui.widget.MoreProgressButton;
-import org.chromium.components.browser_ui.widget.MoreProgressButton.State;
-import org.chromium.components.browser_ui.widget.selectable_list.SelectableItemViewHolder;
-import org.chromium.components.browser_ui.widget.selectable_list.SelectionDelegate;
-import org.chromium.components.browser_ui.widget.selectable_list.SelectionDelegate.SelectionObserver;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.components.user_prefs.UserPrefs;
-import org.chromium.ui.text.NoUnderlineClickableSpan;
-import org.chromium.ui.text.SpanApplier;
-import org.chromium.url.GURL;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.history.HistoryProvider.BrowsingHistoryObserver;
+import org.monyhar.chrome.browser.preferences.Pref;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.ui.favicon.FaviconHelper.DefaultFaviconHelper;
+import org.monyhar.components.browser_ui.widget.DateDividedAdapter;
+import org.monyhar.components.browser_ui.widget.MoreProgressButton;
+import org.monyhar.components.browser_ui.widget.MoreProgressButton.State;
+import org.monyhar.components.browser_ui.widget.selectable_list.SelectableItemViewHolder;
+import org.monyhar.components.browser_ui.widget.selectable_list.SelectionDelegate;
+import org.monyhar.components.browser_ui.widget.selectable_list.SelectionDelegate.SelectionObserver;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.user_prefs.UserPrefs;
+import org.monyhar.ui.text.NoUnderlineClickableSpan;
+import org.monyhar.ui.text.SpanApplier;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.List;

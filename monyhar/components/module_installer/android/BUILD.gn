@@ -7,29 +7,29 @@ import("//chrome/android/modules/buildflags.gni")
 
 android_library("module_installer_java") {
   sources = [
-    "java/src/org/chromium/components/module_installer/builder/Module.java",
-    "java/src/org/chromium/components/module_installer/builder/ModuleDescriptor.java",
-    "java/src/org/chromium/components/module_installer/builder/ModuleEngine.java",
-    "java/src/org/chromium/components/module_installer/engine/ApkEngine.java",
-    "java/src/org/chromium/components/module_installer/engine/EngineFactory.java",
-    "java/src/org/chromium/components/module_installer/engine/FakeEngine.java",
-    "java/src/org/chromium/components/module_installer/engine/InstallEngine.java",
-    "java/src/org/chromium/components/module_installer/engine/InstallListener.java",
-    "java/src/org/chromium/components/module_installer/engine/SplitCompatEngine.java",
-    "java/src/org/chromium/components/module_installer/engine/SplitCompatEngineFacade.java",
-    "java/src/org/chromium/components/module_installer/logger/Logger.java",
-    "java/src/org/chromium/components/module_installer/logger/PlayCoreLogger.java",
-    "java/src/org/chromium/components/module_installer/logger/SplitAvailabilityLogger.java",
-    "java/src/org/chromium/components/module_installer/logger/SplitInstallFailureLogger.java",
-    "java/src/org/chromium/components/module_installer/logger/SplitInstallStatusLogger.java",
-    "java/src/org/chromium/components/module_installer/observer/ActivityObserver.java",
-    "java/src/org/chromium/components/module_installer/observer/ActivityObserverFacade.java",
-    "java/src/org/chromium/components/module_installer/observer/InstallerObserver.java",
-    "java/src/org/chromium/components/module_installer/util/ActivityObserverUtil.java",
-    "java/src/org/chromium/components/module_installer/util/CrashKeyRecorder.java",
-    "java/src/org/chromium/components/module_installer/util/ModuleUtil.java",
-    "java/src/org/chromium/components/module_installer/util/SplitCompatInitializer.java",
-    "java/src/org/chromium/components/module_installer/util/Timer.java",
+    "java/src/org/monyhar/components/module_installer/builder/Module.java",
+    "java/src/org/monyhar/components/module_installer/builder/ModuleDescriptor.java",
+    "java/src/org/monyhar/components/module_installer/builder/ModuleEngine.java",
+    "java/src/org/monyhar/components/module_installer/engine/ApkEngine.java",
+    "java/src/org/monyhar/components/module_installer/engine/EngineFactory.java",
+    "java/src/org/monyhar/components/module_installer/engine/FakeEngine.java",
+    "java/src/org/monyhar/components/module_installer/engine/InstallEngine.java",
+    "java/src/org/monyhar/components/module_installer/engine/InstallListener.java",
+    "java/src/org/monyhar/components/module_installer/engine/SplitCompatEngine.java",
+    "java/src/org/monyhar/components/module_installer/engine/SplitCompatEngineFacade.java",
+    "java/src/org/monyhar/components/module_installer/logger/Logger.java",
+    "java/src/org/monyhar/components/module_installer/logger/PlayCoreLogger.java",
+    "java/src/org/monyhar/components/module_installer/logger/SplitAvailabilityLogger.java",
+    "java/src/org/monyhar/components/module_installer/logger/SplitInstallFailureLogger.java",
+    "java/src/org/monyhar/components/module_installer/logger/SplitInstallStatusLogger.java",
+    "java/src/org/monyhar/components/module_installer/observer/ActivityObserver.java",
+    "java/src/org/monyhar/components/module_installer/observer/ActivityObserverFacade.java",
+    "java/src/org/monyhar/components/module_installer/observer/InstallerObserver.java",
+    "java/src/org/monyhar/components/module_installer/util/ActivityObserverUtil.java",
+    "java/src/org/monyhar/components/module_installer/util/CrashKeyRecorder.java",
+    "java/src/org/monyhar/components/module_installer/util/ModuleUtil.java",
+    "java/src/org/monyhar/components/module_installer/util/SplitCompatInitializer.java",
+    "java/src/org/monyhar/components/module_installer/util/Timer.java",
   ]
 
   deps = [
@@ -44,15 +44,15 @@ android_library("module_installer_java") {
 
 junit_binary("module_installer_junit_tests") {
   sources = [
-    "junit/src/org/chromium/components/module_installer/builder/ModuleEngineTest.java",
-    "junit/src/org/chromium/components/module_installer/builder/ModuleTest.java",
-    "junit/src/org/chromium/components/module_installer/engine/ApkEngineTest.java",
-    "junit/src/org/chromium/components/module_installer/engine/SplitCompatEngineTest.java",
-    "junit/src/org/chromium/components/module_installer/logger/LoggerTestUtil.java",
-    "junit/src/org/chromium/components/module_installer/logger/PlayCoreLoggerTest.java",
-    "junit/src/org/chromium/components/module_installer/logger/SplitInstallFailureLoggerTest.java",
-    "junit/src/org/chromium/components/module_installer/logger/SplitInstallStatusLoggerTest.java",
-    "junit/src/org/chromium/components/module_installer/observer/ActivityObserverTest.java",
+    "junit/src/org/monyhar/components/module_installer/builder/ModuleEngineTest.java",
+    "junit/src/org/monyhar/components/module_installer/builder/ModuleTest.java",
+    "junit/src/org/monyhar/components/module_installer/engine/ApkEngineTest.java",
+    "junit/src/org/monyhar/components/module_installer/engine/SplitCompatEngineTest.java",
+    "junit/src/org/monyhar/components/module_installer/logger/LoggerTestUtil.java",
+    "junit/src/org/monyhar/components/module_installer/logger/PlayCoreLoggerTest.java",
+    "junit/src/org/monyhar/components/module_installer/logger/SplitInstallFailureLoggerTest.java",
+    "junit/src/org/monyhar/components/module_installer/logger/SplitInstallStatusLoggerTest.java",
+    "junit/src/org/monyhar/components/module_installer/observer/ActivityObserverTest.java",
   ]
   deps = [
     ":module_installer_java",
@@ -66,12 +66,12 @@ junit_binary("module_installer_junit_tests") {
 
 java_library("module_interface_java") {
   supports_android = true
-  sources = [ "java/src/org/chromium/components/module_installer/builder/ModuleInterface.java" ]
+  sources = [ "java/src/org/monyhar/components/module_installer/builder/ModuleInterface.java" ]
 }
 
 java_annotation_processor("module_interface_processor") {
-  sources = [ "java/src/org/chromium/components/module_installer/builder/ModuleInterfaceProcessor.java" ]
-  main_class = "org.chromium.components.module_installer.builder.ModuleInterfaceProcessor"
+  sources = [ "java/src/org/monyhar/components/module_installer/builder/ModuleInterfaceProcessor.java" ]
+  main_class = "org.monyhar.components.module_installer.builder.ModuleInterfaceProcessor"
   annotation_processor_deps =
       [ "//third_party/android_deps:auto_service_processor" ]
   deps = [
@@ -100,6 +100,6 @@ source_set("native") {
 
 generate_jni("jni_headers") {
   sources = [
-    "java/src/org/chromium/components/module_installer/builder/Module.java",
+    "java/src/org/monyhar/components/module_installer/builder/Module.java",
   ]
 }

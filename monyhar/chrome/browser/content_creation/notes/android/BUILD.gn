@@ -6,7 +6,7 @@ import("//build/config/android/rules.gni")
 import("//chrome/android/features/android_library_factory_tmpl.gni")
 
 android_library("public_java") {
-  sources = [ "java/src/org/chromium/chrome/browser/content_creation/notes/NoteCreationCoordinator.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/content_creation/notes/NoteCreationCoordinator.java" ]
 }
 
 android_library_factory("factory_java") {
@@ -16,5 +16,5 @@ android_library_factory("factory_java") {
     "//chrome/browser/tab:java",
   ]
 
-  sources = [ "//chrome/browser/content_creation/notes/internal/android/java/src/org/chromium/chrome/browser/content_creation/notes/NoteCreationCoordinatorFactory.java" ]
+  sources = [ "//chrome/browser/content_creation/notes/internal/android/java/src/org/monyhar/chrome/browser/content_creation/notes/NoteCreationCoordinatorFactory.java" ]
 }

@@ -39,7 +39,7 @@ bool IsFormSubmit(const web::NavigationItem* item) {
 }
 
 // Generates a keyword from |item|. This code is based on:
-// https://cs.chromium.org/chromium/src/chrome/browser/ui/search_engines/search_engine_tab_helper.cc
+// https://cs.monyhar.org/monyhar/src/chrome/browser/ui/search_engines/search_engine_tab_helper.cc
 std::u16string GenerateKeywordFromNavigationItem(
     const web::NavigationItem* item) {
   // Don't autogenerate keywords for pages that are the result of form
@@ -155,7 +155,7 @@ void SearchEngineTabHelper::OnJsMessage(const base::Value& message,
 
 // Creates a new TemplateURL by OSDD. The TemplateURL will be added to
 // TemplateURLService by TemplateURLFecther. This code is based on:
-// https://cs.chromium.org/chromium/src/chrome/browser/ui/search_engines/search_engine_tab_helper.cc
+// https://cs.monyhar.org/monyhar/src/chrome/browser/ui/search_engines/search_engine_tab_helper.cc
 void SearchEngineTabHelper::AddTemplateURLByOSDD(const GURL& page_url,
                                                  const GURL& osdd_url) {
   // Checks to see if we should generate a keyword based on the OSDD, and if
@@ -198,7 +198,7 @@ void SearchEngineTabHelper::AddTemplateURLByOSDD(const GURL& page_url,
   // new keyword will be created when done. For |render_frame_id| arg, it's used
   // by network::ResourceRequest::render_frame_id, we don't use Blink so leave
   // it to be the default value defined here:
-  //   https://cs.chromium.org/chromium/src/services/network/public/cpp/resource_request.h?rcl=39c6fbea496641a6514e34c0ab689871d14e6d52&l=194;
+  //   https://cs.monyhar.org/monyhar/src/services/network/public/cpp/resource_request.h?rcl=39c6fbea496641a6514e34c0ab689871d14e6d52&l=194;
   ios::TemplateURLFetcherFactory::GetForBrowserState(browser_state)
       ->ScheduleDownload(keyword, osdd_url, item->GetFavicon().url,
                          url::Origin::Create(web_state_->GetLastCommittedURL()),
@@ -209,7 +209,7 @@ void SearchEngineTabHelper::AddTemplateURLByOSDD(const GURL& page_url,
 
 // Creates a TemplateURL by |searchable_url| and adds it to TemplateURLService.
 // This code is based on:
-// https://cs.chromium.org/chromium/src/chrome/browser/ui/search_engines/search_engine_tab_helper.cc
+// https://cs.monyhar.org/monyhar/src/chrome/browser/ui/search_engines/search_engine_tab_helper.cc
 void SearchEngineTabHelper::AddTemplateURLBySearchableURL(
     const GURL& searchable_url) {
   if (!searchable_url.is_valid()) {

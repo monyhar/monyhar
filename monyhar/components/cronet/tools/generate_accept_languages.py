@@ -3,7 +3,7 @@
 # found in the LICENSE file.
 
 # This script generates a header containing a dictionary from locales to
-# accept language strings from chromium's .xtb files.  It is not very
+# accept language strings from monyhar's .xtb files.  It is not very
 # robust at the moment, and makes some assumptions about the format of
 # the files, including at least the following:
 #   * assumes necessary data is contained only with files of the form

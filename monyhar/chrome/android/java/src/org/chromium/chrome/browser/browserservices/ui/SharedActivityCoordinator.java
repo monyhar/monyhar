@@ -2,25 +2,25 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.ui;
+package org.monyhar.chrome.browser.browserservices.ui;
 
 import androidx.annotation.Nullable;
 import androidx.browser.trusted.TrustedWebActivityDisplayMode;
 import androidx.browser.trusted.TrustedWebActivityDisplayMode.ImmersiveMode;
 
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.browserservices.trustedwebactivityui.controller.TrustedWebActivityBrowserControlsVisibilityManager;
-import org.chromium.chrome.browser.browserservices.ui.controller.CurrentPageVerifier;
-import org.chromium.chrome.browser.browserservices.ui.controller.CurrentPageVerifier.VerificationStatus;
-import org.chromium.chrome.browser.browserservices.ui.controller.Verifier;
-import org.chromium.chrome.browser.customtabs.CustomTabOrientationController;
-import org.chromium.chrome.browser.customtabs.CustomTabStatusBarColorProvider;
-import org.chromium.chrome.browser.customtabs.content.CustomTabActivityNavigationController;
-import org.chromium.chrome.browser.customtabs.features.ImmersiveModeController;
-import org.chromium.chrome.browser.customtabs.features.toolbar.CustomTabToolbarColorController;
-import org.chromium.chrome.browser.dependency_injection.ActivityScope;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.lifecycle.InflationObserver;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.browserservices.trustedwebactivityui.controller.TrustedWebActivityBrowserControlsVisibilityManager;
+import org.monyhar.chrome.browser.browserservices.ui.controller.CurrentPageVerifier;
+import org.monyhar.chrome.browser.browserservices.ui.controller.CurrentPageVerifier.VerificationStatus;
+import org.monyhar.chrome.browser.browserservices.ui.controller.Verifier;
+import org.monyhar.chrome.browser.customtabs.CustomTabOrientationController;
+import org.monyhar.chrome.browser.customtabs.CustomTabStatusBarColorProvider;
+import org.monyhar.chrome.browser.customtabs.content.CustomTabActivityNavigationController;
+import org.monyhar.chrome.browser.customtabs.features.ImmersiveModeController;
+import org.monyhar.chrome.browser.customtabs.features.toolbar.CustomTabToolbarColorController;
+import org.monyhar.chrome.browser.dependency_injection.ActivityScope;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.lifecycle.InflationObserver;
 
 import javax.inject.Inject;
 

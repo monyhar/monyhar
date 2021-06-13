@@ -140,7 +140,7 @@ enum class CoordinateSpaceConversion {
 // manner.
 //
 // There's also some documentation online:
-// https://www.chromium.org/developers/design-documents/multi-column-layout
+// https://www.monyhar.org/developers/design-documents/multi-column-layout
 class CORE_EXPORT LayoutMultiColumnFlowThread final
     : public LayoutFlowThread,
       public FragmentationContext {

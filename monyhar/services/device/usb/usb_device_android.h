@@ -57,7 +57,7 @@ class UsbDeviceAndroid : public UsbDevice {
   std::list<ResultCallback> request_permission_callbacks_;
   base::WeakPtr<UsbServiceAndroid> service_;
 
-  // Java object org.chromium.device.usb.ChromeUsbDevice.
+  // Java object org.monyhar.device.usb.ChromeUsbDevice.
   base::android::ScopedJavaGlobalRef<jobject> j_object_;
 };
 

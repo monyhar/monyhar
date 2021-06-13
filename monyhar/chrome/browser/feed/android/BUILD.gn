@@ -9,22 +9,22 @@ import("//chrome/browser/buildflags.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/feed/FeedImageFetchClient.java",
-    "java/src/org/chromium/chrome/browser/feed/FeedServiceBridge.java",
-    "java/src/org/chromium/chrome/browser/feed/FeedUma.java",
-    "java/src/org/chromium/chrome/browser/feed/VideoPreviewsType.java",
-    "java/src/org/chromium/chrome/browser/feed/settings/FeedAutoplaySettingsFragment.java",
-    "java/src/org/chromium/chrome/browser/feed/settings/RadioButtonGroupVideoPreviewsPreference.java",
-    "java/src/org/chromium/chrome/browser/feed/webfeed/WebFeedBridge.java",
-    "java/src/org/chromium/chrome/browser/feed/webfeed/WebFeedDialogContents.java",
-    "java/src/org/chromium/chrome/browser/feed/webfeed/WebFeedDialogCoordinator.java",
-    "java/src/org/chromium/chrome/browser/feed/webfeed/WebFeedDialogMediator.java",
-    "java/src/org/chromium/chrome/browser/feed/webfeed/WebFeedDialogProperties.java",
-    "java/src/org/chromium/chrome/browser/feed/webfeed/WebFeedDialogViewBinder.java",
-    "java/src/org/chromium/chrome/browser/feed/webfeed/WebFeedFollowIntroController.java",
-    "java/src/org/chromium/chrome/browser/feed/webfeed/WebFeedFollowIntroView.java",
-    "java/src/org/chromium/chrome/browser/feed/webfeed/WebFeedMainMenuItem.java",
-    "java/src/org/chromium/chrome/browser/feed/webfeed/WebFeedSnackbarController.java",
+    "java/src/org/monyhar/chrome/browser/feed/FeedImageFetchClient.java",
+    "java/src/org/monyhar/chrome/browser/feed/FeedServiceBridge.java",
+    "java/src/org/monyhar/chrome/browser/feed/FeedUma.java",
+    "java/src/org/monyhar/chrome/browser/feed/VideoPreviewsType.java",
+    "java/src/org/monyhar/chrome/browser/feed/settings/FeedAutoplaySettingsFragment.java",
+    "java/src/org/monyhar/chrome/browser/feed/settings/RadioButtonGroupVideoPreviewsPreference.java",
+    "java/src/org/monyhar/chrome/browser/feed/webfeed/WebFeedBridge.java",
+    "java/src/org/monyhar/chrome/browser/feed/webfeed/WebFeedDialogContents.java",
+    "java/src/org/monyhar/chrome/browser/feed/webfeed/WebFeedDialogCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/feed/webfeed/WebFeedDialogMediator.java",
+    "java/src/org/monyhar/chrome/browser/feed/webfeed/WebFeedDialogProperties.java",
+    "java/src/org/monyhar/chrome/browser/feed/webfeed/WebFeedDialogViewBinder.java",
+    "java/src/org/monyhar/chrome/browser/feed/webfeed/WebFeedFollowIntroController.java",
+    "java/src/org/monyhar/chrome/browser/feed/webfeed/WebFeedFollowIntroView.java",
+    "java/src/org/monyhar/chrome/browser/feed/webfeed/WebFeedMainMenuItem.java",
+    "java/src/org/monyhar/chrome/browser/feed/webfeed/WebFeedSnackbarController.java",
   ]
   deps = [
     ":web_feed_java_resources",
@@ -56,7 +56,7 @@ android_library("java") {
     "//url:gurl_java",
   ]
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
-  resources_package = "org.chromium.chrome.browser.feed.webfeed"
+  resources_package = "org.monyhar.chrome.browser.feed.webfeed"
 }
 
 android_resources("web_feed_java_resources") {
@@ -87,9 +87,9 @@ android_resources("web_feed_java_resources") {
 
 generate_jni("jni_headers") {
   sources = [
-    "java/src/org/chromium/chrome/browser/feed/FeedImageFetchClient.java",
-    "java/src/org/chromium/chrome/browser/feed/FeedServiceBridge.java",
-    "java/src/org/chromium/chrome/browser/feed/webfeed/WebFeedBridge.java",
+    "java/src/org/monyhar/chrome/browser/feed/FeedImageFetchClient.java",
+    "java/src/org/monyhar/chrome/browser/feed/FeedServiceBridge.java",
+    "java/src/org/monyhar/chrome/browser/feed/webfeed/WebFeedBridge.java",
   ]
 }
 
@@ -97,8 +97,8 @@ android_library("javatests") {
   testonly = true
 
   sources = [
-    "java/src/org/chromium/chrome/browser/feed/settings/FeedAutoplaySettingsFragmentTest.java",
-    "java/src/org/chromium/chrome/browser/feed/webfeed/WebFeedFollowIntroControllerTest.java",
+    "java/src/org/monyhar/chrome/browser/feed/settings/FeedAutoplaySettingsFragmentTest.java",
+    "java/src/org/monyhar/chrome/browser/feed/webfeed/WebFeedFollowIntroControllerTest.java",
   ]
 
   deps = [
@@ -143,8 +143,8 @@ android_library("junit") {
   bypass_platform_checks = true
 
   sources = [
-    "java/src/org/chromium/chrome/browser/feed/webfeed/WebFeedMainMenuItemTest.java",
-    "java/src/org/chromium/chrome/browser/feed/webfeed/WebFeedSnackbarControllerTest.java",
+    "java/src/org/monyhar/chrome/browser/feed/webfeed/WebFeedMainMenuItemTest.java",
+    "java/src/org/monyhar/chrome/browser/feed/webfeed/WebFeedSnackbarControllerTest.java",
   ]
 
   deps = [

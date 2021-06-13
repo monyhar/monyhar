@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.multiwindow;
+package org.monyhar.chrome.browser.multiwindow;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import org.chromium.base.ObserverList;
+import org.monyhar.base.ObserverList;
 
 /**
  * Implementation of {@link MultiWindowModeStateDispatcher}.

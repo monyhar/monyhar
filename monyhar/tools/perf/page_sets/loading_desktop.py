@@ -12,7 +12,7 @@ from telemetry import story
 Tag = collections.namedtuple('Tag', ['name', 'description'])
 
 # pylint: disable=line-too-long
-# Used https://cs.chromium.org/chromium/src/tools/perf/experimental/story_clustering/README.md
+# Used https://cs.monyhar.org/monyhar/src/tools/perf/experimental/story_clustering/README.md
 # to find representative stories.
 
 ABRIDGED = Tag('abridged', 'Story should be included in abridged runs')

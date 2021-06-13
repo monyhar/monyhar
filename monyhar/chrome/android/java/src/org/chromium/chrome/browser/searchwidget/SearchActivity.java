@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.searchwidget;
+package org.monyhar.chrome.browser.searchwidget;
 
 import android.app.Activity;
 import android.app.SearchManager;
@@ -18,62 +18,62 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.core.app.ActivityOptionsCompat;
 
-import org.chromium.base.Callback;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.Log;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.base.supplier.ObservableSupplierImpl;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.WebContentsFactory;
-import org.chromium.chrome.browser.app.tabmodel.TabWindowManagerSingleton;
-import org.chromium.chrome.browser.browserservices.intents.WebDisplayMode;
-import org.chromium.chrome.browser.contextmenu.ContextMenuPopulatorFactory;
-import org.chromium.chrome.browser.customtabs.CustomTabsConnection;
-import org.chromium.chrome.browser.document.ChromeLauncherActivity;
-import org.chromium.chrome.browser.init.AsyncInitializationActivity;
-import org.chromium.chrome.browser.init.SingleWindowKeyboardVisibilityDelegate;
-import org.chromium.chrome.browser.locale.LocaleManager;
-import org.chromium.chrome.browser.omnibox.BackKeyBehaviorDelegate;
-import org.chromium.chrome.browser.omnibox.LocationBarCoordinator;
-import org.chromium.chrome.browser.omnibox.OverrideUrlLoadingDelegate;
-import org.chromium.chrome.browser.omnibox.SearchEngineLogoUtils;
-import org.chromium.chrome.browser.omnibox.UrlFocusChangeListener;
-import org.chromium.chrome.browser.omnibox.voice.VoiceRecognitionHandler;
-import org.chromium.chrome.browser.privacy.settings.PrivacyPreferencesManagerImpl;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabBuilder;
-import org.chromium.chrome.browser.tab.TabDelegateFactory;
-import org.chromium.chrome.browser.tab.TabLaunchType;
-import org.chromium.chrome.browser.tab.TabWebContentsDelegateAndroid;
-import org.chromium.chrome.browser.toolbar.VoiceToolbarButtonController;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager.SnackbarManageable;
-import org.chromium.chrome.browser.ui.native_page.NativePage;
-import org.chromium.components.browser_ui.modaldialog.AppModalPresenter;
-import org.chromium.components.browser_ui.util.BrowserControlsVisibilityDelegate;
-import org.chromium.components.external_intents.ExternalNavigationHandler;
-import org.chromium.components.url_formatter.UrlFormatter;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.common.ContentUrlConstants;
-import org.chromium.ui.base.ActivityWindowAndroid;
-import org.chromium.ui.base.PageTransition;
-import org.chromium.ui.base.WindowDelegate;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.url.GURL;
+import org.monyhar.base.Callback;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.base.supplier.ObservableSupplierImpl;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.WebContentsFactory;
+import org.monyhar.chrome.browser.app.tabmodel.TabWindowManagerSingleton;
+import org.monyhar.chrome.browser.browserservices.intents.WebDisplayMode;
+import org.monyhar.chrome.browser.contextmenu.ContextMenuPopulatorFactory;
+import org.monyhar.chrome.browser.customtabs.CustomTabsConnection;
+import org.monyhar.chrome.browser.document.ChromeLauncherActivity;
+import org.monyhar.chrome.browser.init.AsyncInitializationActivity;
+import org.monyhar.chrome.browser.init.SingleWindowKeyboardVisibilityDelegate;
+import org.monyhar.chrome.browser.locale.LocaleManager;
+import org.monyhar.chrome.browser.omnibox.BackKeyBehaviorDelegate;
+import org.monyhar.chrome.browser.omnibox.LocationBarCoordinator;
+import org.monyhar.chrome.browser.omnibox.OverrideUrlLoadingDelegate;
+import org.monyhar.chrome.browser.omnibox.SearchEngineLogoUtils;
+import org.monyhar.chrome.browser.omnibox.UrlFocusChangeListener;
+import org.monyhar.chrome.browser.omnibox.voice.VoiceRecognitionHandler;
+import org.monyhar.chrome.browser.privacy.settings.PrivacyPreferencesManagerImpl;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabBuilder;
+import org.monyhar.chrome.browser.tab.TabDelegateFactory;
+import org.monyhar.chrome.browser.tab.TabLaunchType;
+import org.monyhar.chrome.browser.tab.TabWebContentsDelegateAndroid;
+import org.monyhar.chrome.browser.toolbar.VoiceToolbarButtonController;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager.SnackbarManageable;
+import org.monyhar.chrome.browser.ui.native_page.NativePage;
+import org.monyhar.components.browser_ui.modaldialog.AppModalPresenter;
+import org.monyhar.components.browser_ui.util.BrowserControlsVisibilityDelegate;
+import org.monyhar.components.external_intents.ExternalNavigationHandler;
+import org.monyhar.components.url_formatter.UrlFormatter;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.common.ContentUrlConstants;
+import org.monyhar.ui.base.ActivityWindowAndroid;
+import org.monyhar.ui.base.PageTransition;
+import org.monyhar.ui.base.WindowDelegate;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.url.GURL;
 
 import java.lang.ref.WeakReference;
 
 /** Queries the user's default search engine and shows autocomplete suggestions. */
 public class SearchActivity extends AsyncInitializationActivity
         implements SnackbarManageable, BackKeyBehaviorDelegate, UrlFocusChangeListener {
-    // Shared with other org.chromium.chrome.browser.searchwidget classes.
+    // Shared with other org.monyhar.chrome.browser.searchwidget classes.
     protected static final String TAG = "searchwidget";
 
     public static final String EXTRA_FROM_SEARCH_ACTIVITY =
-            "org.chromium.chrome.browser.searchwidget.FROM_SEARCH_ACTIVITY";
+            "org.monyhar.chrome.browser.searchwidget.FROM_SEARCH_ACTIVITY";
 
     /** Notified about events happening inside a SearchActivity. */
     public static class SearchActivityDelegate {

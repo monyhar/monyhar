@@ -85,9 +85,9 @@ namespace {
 // ArcIntentHelperBridge::AppendStringToIntentHelperPackageName.
 // Intent helper strings.
 constexpr char kIntentHelperClassName[] =
-    "org.chromium.arc.intent_helper.SettingsReceiver";
+    "org.monyhar.arc.intent_helper.SettingsReceiver";
 constexpr char kSetInTouchModeIntent[] =
-    "org.chromium.arc.intent_helper.SET_IN_TOUCH_MODE";
+    "org.monyhar.arc.intent_helper.SET_IN_TOUCH_MODE";
 
 constexpr char kActionMain[] = "android.intent.action.MAIN";
 
@@ -220,7 +220,7 @@ std::string ConstructArcAppShortcutUrl(const std::string& app_id,
 const char kInitialStartParam[] = "initialStart";
 const char kCategoryLauncher[] = "android.intent.category.LAUNCHER";
 const char kRequestStartTimeParamTemplate[] =
-    "S.org.chromium.arc.request.start=%" PRId64;
+    "S.org.monyhar.arc.request.start=%" PRId64;
 const char kPlayStoreActivity[] = "com.android.vending.AssetBrowserActivity";
 const char kPlayStorePackage[] = "com.android.vending";
 

@@ -3,7 +3,7 @@ This directory is used to store GN arg mapping for Chrome OS boards.
 Files in this directory are populated by running `gclient sync` with specific
 arguments set in the .gclient file. Specifically:
 * The file must have a top-level variable set: `target_os = ["chromeos"]`
-* The `"custom_vars"` parameter of the chromium/src.git solution must include
+* The `"custom_vars"` parameter of the monyhar/src.git solution must include
   the parameter: `"cros_boards": "{BOARD_NAMES}"` where `{BOARD_NAMES}` is a
   colon-separated list of boards you'd like to checkout.
 * If you'd like to a checkout a QEMU-bootable image for a given board, include
@@ -15,7 +15,7 @@ this:
 ```
 solutions = [
   {
-    "url": "https://chromium.googlesource.com/chromium/src.git",
+    "url": "https://monyhar.googlesource.com/monyhar/src.git",
     "managed": False,
     "name": "src",
     "custom_deps": {},

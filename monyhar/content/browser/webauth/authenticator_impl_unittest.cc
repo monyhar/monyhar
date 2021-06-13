@@ -1282,7 +1282,7 @@ TEST_F(AuthenticatorImplTest, AppIdExcludeExtension) {
 
   {
     // Using appidExclude with an empty exclude list previously caused a crash.
-    // See https://bugs.chromium.org/p/chromium/issues/detail?id=1054499.
+    // See https://bugs.monyhar.org/p/monyhar/issues/detail?id=1054499.
     virtual_device_factory_->SetSupportedProtocol(
         device::ProtocolVersion::kCtap2);
     PublicKeyCredentialCreationOptionsPtr options =

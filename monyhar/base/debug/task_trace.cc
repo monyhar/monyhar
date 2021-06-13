@@ -31,7 +31,7 @@ namespace {
 class AndroidErrBuffer : public std::stringbuf {
  protected:
   int sync() override {
-    __android_log_write(ANDROID_LOG_ERROR, "chromium", str().c_str());
+    __android_log_write(ANDROID_LOG_ERROR, "monyhar", str().c_str());
     return 0;
   }
 };

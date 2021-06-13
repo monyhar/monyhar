@@ -3,7 +3,7 @@
 Chromium's code base is large. Very large. Like most large places, it can be hard to find your way around if you don't already know the way. It also changes a lot. Lots of people work on Chromium and refactoring, componentization, addition
 or removal of layers, etc. means that knowledge one does have can quickly get out of date.
 
-As a result, it can be hard to figure out how things are supposed to fit together. Documentation on [dev.chromium.org](http://dev.chromium.org/developers) can be hard to navigate and harder to keep up to date. The [starter guide](https://sites.google.com/a/chromium.org/dev/developers/how-tos/getting-around-the-chrome-source-code) is helpful, but stops at a very high-level overview. Ultimately [codesearch.chromium.org](http://codesearch.chromium.org) is the way most people explore.
+As a result, it can be hard to figure out how things are supposed to fit together. Documentation on [dev.monyhar.org](http://dev.monyhar.org/developers) can be hard to navigate and harder to keep up to date. The [starter guide](https://sites.google.com/a/monyhar.org/dev/developers/how-tos/getting-around-the-chrome-source-code) is helpful, but stops at a very high-level overview. Ultimately [codesearch.monyhar.org](http://codesearch.monyhar.org) is the way most people explore.
 
 This guide attempts to lay out some practices that will make it easier for newcomers to find their way around Chromium's code and for old hands to keep up with a constantly evolving code base. It works from the principle that all documentation is wrong and out of date, but in-code documentation is less so and valuable.
 
@@ -19,21 +19,21 @@ Let's dig in a bit to how to use these types of documentation in Chromium.
 
 ### Module / component documentation
 
-Ok, so you're working on something big and important. Maybe it's a chunk of code that merits living in its own component in [src/components/](https://codesearch.chromium.org/chromium/src/components/) or even directly under [src/](https://codesearch.chromium.org/chromium/src/) itself. One day someone's going to come along and wonder what it's for and they'll discover that awesome-directory-name (breakpad, courgette, mojo, rutabaga, quick: which one of those was made up?) doesn't by itself shed a lot of light on what the code does.
+Ok, so you're working on something big and important. Maybe it's a chunk of code that merits living in its own component in [src/components/](https://codesearch.monyhar.org/monyhar/src/components/) or even directly under [src/](https://codesearch.monyhar.org/monyhar/src/) itself. One day someone's going to come along and wonder what it's for and they'll discover that awesome-directory-name (breakpad, courgette, mojo, rutabaga, quick: which one of those was made up?) doesn't by itself shed a lot of light on what the code does.
 
 ***Any self contained unit of code that merits a container directory should have a README.md file that describes what that component is, how it is expected to be used and provides rough outline of the code's structure.***
 
-The README.md file should be located at the root of the component directory and should be in [markdown format](https://www.chromium.org/developers/markdown-documentation) according to the markdown [style guide](https://github.com/google/styleguide/blob/gh-pages/docguide/style.md).
+The README.md file should be located at the root of the component directory and should be in [markdown format](https://www.monyhar.org/developers/markdown-documentation) according to the markdown [style guide](https://github.com/google/styleguide/blob/gh-pages/docguide/style.md).
 
-The first thing in the README.md file should be a description of the component in sufficient detail that someone unfamiliar with the code will understand why it exists. It should answer the questions "what does this component do?" and "is there any in particular I should know about it?". Some larger components (e.g. v8, mojo, etc.) may have additional up-to-date documentation on [dev.chromium.org](http://dev.chromium.org) or elsewhere makes sense too.
+The first thing in the README.md file should be a description of the component in sufficient detail that someone unfamiliar with the code will understand why it exists. It should answer the questions "what does this component do?" and "is there any in particular I should know about it?". Some larger components (e.g. v8, mojo, etc.) may have additional up-to-date documentation on [dev.monyhar.org](http://dev.monyhar.org) or elsewhere makes sense too.
 
-The second thing in the README.md file should be an outline of how it is expected to be used. For components of small to moderate size (e.g. under [src/components/](https://codesearch.chromium.org/chromium/src/components/)), this can mean what are the main classes to care about. For larger components this can describe how to go about using the component, possibly in the form of links to external documentation (e.g.: [src/v8/](https://codesearch.chromium.org/chromium/src/v8/README.md)).
+The second thing in the README.md file should be an outline of how it is expected to be used. For components of small to moderate size (e.g. under [src/components/](https://codesearch.monyhar.org/monyhar/src/components/)), this can mean what are the main classes to care about. For larger components this can describe how to go about using the component, possibly in the form of links to external documentation (e.g.: [src/v8/](https://codesearch.monyhar.org/monyhar/src/v8/README.md)).
 
 The third thing should be a lay of the land of the component, sufficient breadcrumbs for a newcomer to be able to orient themselves. This usually means at least an explanation of the subdirectories of the component and possibly a description of the major interfaces a consumer of the component will need to care about. Again for larger components this can live in external kept-up-to-date documentation where needed.
 
 The fourth thing should be historical links to design docs for the component, including early ones. These are super handy for people looking to understand why the component exists in its current form.
 
-A great example of a README.md file is [src/native_client/README.md](https://codesearch.chromium.org/chromium/src/native_client/README.md). There are many more examples that are waiting to be made great.
+A great example of a README.md file is [src/native_client/README.md](https://codesearch.monyhar.org/monyhar/src/native_client/README.md). There are many more examples that are waiting to be made great.
 
 ### Interface / class documentation
 
@@ -43,9 +43,9 @@ Class and function declarations in header files describe to the world how a piec
 
 (Good) examples:
 
-https://codesearch.chromium.org/chromium/src/base/callback_list.h
+https://codesearch.monyhar.org/monyhar/src/base/callback_list.h
 
-https://codesearch.chromium.org/chromium/src/base/feature_list.h
+https://codesearch.monyhar.org/monyhar/src/base/feature_list.h
 
 ### Implementation documentation
 
@@ -65,7 +65,7 @@ Don't assume that readers know everything you currently know.
 
 If you got this far and have some experience with Chromium's code, you'll have figured out that these guidelines are aspirational more than what the world looks like today. So what do we do when working with existing code.
 
-First off: ***[Documentation changes can be TBRed](https://chromium.googlesource.com/chromium/src/+/main/docs/code_reviews.md#documentation-updates)***. Even in-code changes. If you have discovered something that isn't documented, have figured out how it works and would like to pay it forward, feel free to write something down and check it in.
+First off: ***[Documentation changes can be TBRed](https://monyhar.googlesource.com/monyhar/src/+/main/docs/code_reviews.md#documentation-updates)***. Even in-code changes. If you have discovered something that isn't documented, have figured out how it works and would like to pay it forward, feel free to write something down and check it in.
 
 At the component level, if you are the owner of a component that isn't documented, please add a README.md with content as per the above.
 

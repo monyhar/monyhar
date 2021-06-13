@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions;
+package org.monyhar.chrome.browser.omnibox.suggestions;
 
 import android.util.ArraySet;
 import android.util.SparseArray;
@@ -14,19 +14,19 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.UiThreadTest;
-import org.chromium.base.test.util.Batch;
-import org.chromium.chrome.browser.omnibox.OmniboxSuggestionType;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.components.omnibox.AutocompleteMatch;
-import org.chromium.components.omnibox.AutocompleteMatchBuilder;
-import org.chromium.components.omnibox.AutocompleteResult;
-import org.chromium.components.omnibox.AutocompleteResult.GroupDetails;
-import org.chromium.content_public.browser.test.NativeLibraryTestUtils;
-import org.chromium.url.GURL;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.UiThreadTest;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.chrome.browser.omnibox.OmniboxSuggestionType;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.components.omnibox.AutocompleteMatch;
+import org.monyhar.components.omnibox.AutocompleteMatchBuilder;
+import org.monyhar.components.omnibox.AutocompleteResult;
+import org.monyhar.components.omnibox.AutocompleteResult.GroupDetails;
+import org.monyhar.content_public.browser.test.NativeLibraryTestUtils;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.Arrays;

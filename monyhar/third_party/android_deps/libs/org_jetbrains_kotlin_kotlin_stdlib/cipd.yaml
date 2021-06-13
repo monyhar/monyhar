@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@1.5.10.cr0
-package: chromium/third_party/android_deps/libs/org_jetbrains_kotlin_kotlin_stdlib
+package: monyhar/third_party/android_deps/libs/org_jetbrains_kotlin_kotlin_stdlib
 description: "Kotlin Stdlib"
 data:
 - file: kotlin-stdlib-1.5.10.jar

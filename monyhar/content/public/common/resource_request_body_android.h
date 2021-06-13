@@ -17,7 +17,7 @@ class ResourceRequestBody;
 
 namespace content {
 
-// Returns an instance of org.chromium.content_public.common.ResourceRequestBody
+// Returns an instance of org.monyhar.content_public.common.ResourceRequestBody
 // that contains serialized representation of the |native_object|.
 CONTENT_EXPORT base::android::ScopedJavaLocalRef<jobject>
 ConvertResourceRequestBodyToJavaObject(
@@ -25,7 +25,7 @@ ConvertResourceRequestBodyToJavaObject(
     const scoped_refptr<network::ResourceRequestBody>& native_object);
 
 // Reconstructs the native C++ network::ResourceRequestBody object based on
-// org.chromium.content_public.common.ResourceRequestBody (|java_object|) passed
+// org.monyhar.content_public.common.ResourceRequestBody (|java_object|) passed
 // in as an argument.
 CONTENT_EXPORT scoped_refptr<network::ResourceRequestBody>
 ExtractResourceRequestBodyFromJavaObject(

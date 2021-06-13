@@ -2,31 +2,31 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ntp.cards;
+package org.monyhar.chrome.browser.ntp.cards;
 
 import android.content.Context;
 import android.text.format.DateUtils;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.signin.SyncConsentActivityLauncherImpl;
-import org.chromium.chrome.browser.signin.services.IdentityServicesProvider;
-import org.chromium.chrome.browser.signin.services.ProfileDataCache;
-import org.chromium.chrome.browser.signin.services.SigninManager;
-import org.chromium.chrome.browser.signin.services.SigninManager.SignInAllowedObserver;
-import org.chromium.chrome.browser.signin.services.SigninManager.SignInStateObserver;
-import org.chromium.chrome.browser.signin.services.SigninPreferencesManager;
-import org.chromium.chrome.browser.signin.ui.SigninPromoController;
-import org.chromium.components.signin.AccountManagerFacade;
-import org.chromium.components.signin.AccountManagerFacadeProvider;
-import org.chromium.components.signin.AccountsChangeObserver;
-import org.chromium.components.signin.identitymanager.ConsentLevel;
-import org.chromium.components.signin.identitymanager.IdentityManager;
-import org.chromium.components.signin.metrics.SigninAccessPoint;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.signin.SyncConsentActivityLauncherImpl;
+import org.monyhar.chrome.browser.signin.services.IdentityServicesProvider;
+import org.monyhar.chrome.browser.signin.services.ProfileDataCache;
+import org.monyhar.chrome.browser.signin.services.SigninManager;
+import org.monyhar.chrome.browser.signin.services.SigninManager.SignInAllowedObserver;
+import org.monyhar.chrome.browser.signin.services.SigninManager.SignInStateObserver;
+import org.monyhar.chrome.browser.signin.services.SigninPreferencesManager;
+import org.monyhar.chrome.browser.signin.ui.SigninPromoController;
+import org.monyhar.components.signin.AccountManagerFacade;
+import org.monyhar.components.signin.AccountManagerFacadeProvider;
+import org.monyhar.components.signin.AccountsChangeObserver;
+import org.monyhar.components.signin.identitymanager.ConsentLevel;
+import org.monyhar.components.signin.identitymanager.IdentityManager;
+import org.monyhar.components.signin.metrics.SigninAccessPoint;
 
 /**
  * Superclass tracking whether a signin card could be shown.

@@ -7,7 +7,7 @@ This document is a subset of the [Mojo documentation](/mojo/README.md).
 
 Mojom is the IDL for Mojo interfaces. Given a `.mojom` file, the
 [bindings
-generator](https://cs.chromium.org/chromium/src/mojo/public/tools/bindings/) can
+generator](https://cs.monyhar.org/monyhar/src/mojo/public/tools/bindings/) can
 output bindings for any supported language: **C++**, **JavaScript**, or
 **Java**.
 
@@ -128,7 +128,7 @@ interface MoneyGenerator {
 
 Generated C++ bindings will define a class interface `MoneyGenerator` in the
 `business::stuff` namespace, while Java bindings will define an interface
-`MoneyGenerator` in the `org.chromium.business.stuff` package. JavaScript
+`MoneyGenerator` in the `org.monyhar.business.stuff` package. JavaScript
 bindings at this time are unaffected by module declarations.
 
 **NOTE:** By convention in the Chromium codebase, **all** Mojom files should
@@ -773,7 +773,7 @@ where you would use `component` for non-mojom files.
 **NOTE**: by default, components for both blink and non-blink bindings are generated.
 Use the `disable_variants` target parameter to generate only non-blink bindings.
 You can also generate a `source_set` for one of the variants by defining
-[export_*](https://source.chromium.org/chromium/chromium/src/+/main:mojo/public/tools/bindings/mojom.gni;drc=739b9fbce50310c1dd2b59c279cd90a9319cb6e8;l=318)
+[export_*](https://source.monyhar.org/monyhar/monyhar/src/+/main:mojo/public/tools/bindings/mojom.gni;drc=739b9fbce50310c1dd2b59c279cd90a9319cb6e8;l=318)
 parameters for the `mojom_component` target.
 ***
 

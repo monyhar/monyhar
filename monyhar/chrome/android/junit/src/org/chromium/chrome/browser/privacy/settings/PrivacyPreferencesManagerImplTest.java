@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.privacy.settings;
+package org.monyhar.chrome.browser.privacy.settings;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
@@ -16,7 +16,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
 
 /**
  * junit tests for {@link PrivacyPreferencesManagerImpl}'s handling of "Usage and Crash reporting"

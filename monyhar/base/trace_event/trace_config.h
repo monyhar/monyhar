@@ -27,7 +27,7 @@ class ConvertableToTraceFormat;
 
 // Options determines how the trace buffer stores data.
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.base
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.base
 enum TraceRecordMode {
   // Record until the trace buffer is full.
   RECORD_UNTIL_FULL,

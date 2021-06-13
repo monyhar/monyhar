@@ -268,8 +268,8 @@ TEST_F(TabManagerDelegateTest, SetOomScoreAdj) {
 }
 
 TEST_F(TabManagerDelegateTest, IsRecentlyKilledArcProcess) {
-  constexpr char kProcessName1[] = "org.chromium.arc.test1";
-  constexpr char kProcessName2[] = "org.chromium.arc.test2";
+  constexpr char kProcessName1[] = "org.monyhar.arc.test1";
+  constexpr char kProcessName2[] = "org.monyhar.arc.test2";
 
   // Not owned.
   MockMemoryStat* memory_stat = new MockMemoryStat();

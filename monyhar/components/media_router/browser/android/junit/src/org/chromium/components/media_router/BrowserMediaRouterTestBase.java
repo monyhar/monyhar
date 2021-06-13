@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.media_router;
+package org.monyhar.components.media_router;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -14,7 +14,7 @@ import static org.mockito.Mockito.spy;
 import org.junit.Before;
 import org.robolectric.shadows.ShadowLog;
 
-import org.chromium.base.CommandLine;
+import org.monyhar.base.CommandLine;
 
 /**
  * Robolectric test base class for BrowserMediaRouter.

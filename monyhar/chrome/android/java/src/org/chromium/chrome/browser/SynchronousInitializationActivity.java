@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.os.Bundle;
 
 import androidx.annotation.CallSuper;
 
-import org.chromium.chrome.browser.bookmarks.BookmarkActivity;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.chrome.browser.bookmarks.BookmarkActivity;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
 
 /**
  * Ensures that the native library is loaded by synchronously initializing it on creation.

@@ -21,7 +21,7 @@
 #import "ios/chrome/browser/ui/alert_coordinator/alert_coordinator.h"
 #import "ios/chrome/browser/ui/image_util/image_util.h"
 #import "ios/chrome/browser/web/image_fetch/image_fetch_tab_helper.h"
-#include "ios/chrome/grit/ios_chromium_strings.h"
+#include "ios/chrome/grit/ios_monyhar_strings.h"
 #include "ios/chrome/grit/ios_strings.h"
 #include "net/base/mime_util.h"
 #include "ui/base/l10n/l10n_util.h"

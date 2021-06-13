@@ -6,7 +6,7 @@
  * Content provider for testing content URLs.
  */
 
-package org.chromium.chrome.test;
+package org.monyhar.chrome.test;
 
 import android.content.ContentProvider;
 import android.content.ContentValues;
@@ -17,7 +17,7 @@ import android.net.Uri;
 import android.os.ParcelFileDescriptor;
 import android.util.Log;
 
-import org.chromium.base.annotations.MainDex;
+import org.monyhar.base.annotations.MainDex;
 
 import java.io.File;
 import java.io.IOException;
@@ -29,7 +29,7 @@ import java.util.Map;
  * Content provider for testing content:// urls.
  * Note: if you move this class, make sure you have also updated AndroidManifest.xml
  *
- * Important note about including chromium classes in this content provider:
+ * Important note about including monyhar classes in this content provider:
  * TestContentProvider is part of ChromePublicTest APK. However the instrumentation tests
  * run in the process of the package under test, which is Chrome apk. Normally this is not
  * a problem, however when debug is set to true, Chromium build files enable multidex. In
@@ -51,7 +51,7 @@ import java.util.Map;
 @MainDex
 public class TestContentProvider extends ContentProvider {
     private static final String ANDROID_DATA_FILE_PATH = "android/";
-    private static final String AUTHORITY = "org.chromium.chrome.test.TestContentProvider";
+    private static final String AUTHORITY = "org.monyhar.chrome.test.TestContentProvider";
     private static final String CONTENT_SCHEME = "content://";
     private static final String GET_RESOURCE_REQUEST_COUNT = "get_resource_request_count";
     private static final String RESET_RESOURCE_REQUEST_COUNTS = "reset_resource_request_counts";

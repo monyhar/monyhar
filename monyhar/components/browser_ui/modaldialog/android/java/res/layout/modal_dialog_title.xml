@@ -9,7 +9,7 @@
     android:orientation="horizontal"
     style="@style/AlertDialogContent">
 
-    <org.chromium.ui.widget.ChromeImageView
+    <org.monyhar.ui.widget.ChromeImageView
         android:id="@+id/title_icon"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"

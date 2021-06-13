@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.continuous_search;
+package org.monyhar.chrome.browser.continuous_search;
 
 import static junit.framework.Assert.assertEquals;
 
@@ -22,16 +22,16 @@ import org.mockito.MockitoAnnotations;
 import org.robolectric.ParameterizedRobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.metrics.test.ShadowRecordHistogram;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabHidingType;
-import org.chromium.content_public.browser.NavigationController;
-import org.chromium.content_public.browser.NavigationEntry;
-import org.chromium.content_public.browser.NavigationHistory;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.url.GURL;
-import org.chromium.url.JUnitTestGURLs;
+import org.monyhar.base.metrics.test.ShadowRecordHistogram;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabHidingType;
+import org.monyhar.content_public.browser.NavigationController;
+import org.monyhar.content_public.browser.NavigationEntry;
+import org.monyhar.content_public.browser.NavigationHistory;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.url.GURL;
+import org.monyhar.url.JUnitTestGURLs;
 
 import java.util.Arrays;
 import java.util.Collection;

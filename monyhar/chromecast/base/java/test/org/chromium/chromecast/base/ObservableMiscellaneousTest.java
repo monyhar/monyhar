@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.base;
+package org.monyhar.chromecast.base;
 
 import static org.hamcrest.Matchers.contains;
 import static org.junit.Assert.assertThat;
@@ -11,8 +11,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.BlockJUnit4ClassRunner;
 
-import org.chromium.chromecast.base.Inheritance.Base;
-import org.chromium.chromecast.base.Inheritance.Derived;
+import org.monyhar.chromecast.base.Inheritance.Base;
+import org.monyhar.chromecast.base.Inheritance.Derived;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.infobar;
+package org.monyhar.chrome.browser.infobar;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -17,15 +17,15 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.components.browser_ui.widget.RoundedCornerImageView;
-import org.chromium.components.infobars.ConfirmInfoBar;
-import org.chromium.components.infobars.InfoBarControlLayout;
-import org.chromium.components.infobars.InfoBarLayout;
-import org.chromium.ui.UiUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.components.browser_ui.widget.RoundedCornerImageView;
+import org.monyhar.components.infobars.ConfirmInfoBar;
+import org.monyhar.components.infobars.InfoBarControlLayout;
+import org.monyhar.components.infobars.InfoBarLayout;
+import org.monyhar.ui.UiUtils;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

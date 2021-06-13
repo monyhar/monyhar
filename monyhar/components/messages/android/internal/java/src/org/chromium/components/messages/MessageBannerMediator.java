@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.messages;
+package org.monyhar.components.messages;
 
-import static org.chromium.components.browser_ui.widget.gesture.SwipeGestureListener.ScrollDirection.DOWN;
-import static org.chromium.components.browser_ui.widget.gesture.SwipeGestureListener.ScrollDirection.UP;
-import static org.chromium.components.messages.MessageBannerProperties.ALPHA;
-import static org.chromium.components.messages.MessageBannerProperties.TRANSLATION_X;
-import static org.chromium.components.messages.MessageBannerProperties.TRANSLATION_Y;
+import static org.monyhar.components.browser_ui.widget.gesture.SwipeGestureListener.ScrollDirection.DOWN;
+import static org.monyhar.components.browser_ui.widget.gesture.SwipeGestureListener.ScrollDirection.UP;
+import static org.monyhar.components.messages.MessageBannerProperties.ALPHA;
+import static org.monyhar.components.messages.MessageBannerProperties.TRANSLATION_X;
+import static org.monyhar.components.messages.MessageBannerProperties.TRANSLATION_Y;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;
@@ -19,16 +19,16 @@ import android.view.MotionEvent;
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.MathUtils;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.components.browser_ui.widget.animation.CancelAwareAnimatorListener;
-import org.chromium.components.browser_ui.widget.animation.Interpolators;
-import org.chromium.components.browser_ui.widget.gesture.SwipeGestureListener.ScrollDirection;
-import org.chromium.components.browser_ui.widget.gesture.SwipeGestureListener.SwipeHandler;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModel.WritableFloatPropertyKey;
-import org.chromium.ui.modelutil.PropertyModelAnimatorFactory;
+import org.monyhar.base.Callback;
+import org.monyhar.base.MathUtils;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.components.browser_ui.widget.animation.CancelAwareAnimatorListener;
+import org.monyhar.components.browser_ui.widget.animation.Interpolators;
+import org.monyhar.components.browser_ui.widget.gesture.SwipeGestureListener.ScrollDirection;
+import org.monyhar.components.browser_ui.widget.gesture.SwipeGestureListener.SwipeHandler;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModel.WritableFloatPropertyKey;
+import org.monyhar.ui.modelutil.PropertyModelAnimatorFactory;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.overlays.strip;
+package org.monyhar.chrome.browser.compositor.overlays.strip;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -13,36 +13,36 @@ import android.os.SystemClock;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.compositor.LayerTitleCache;
-import org.chromium.chrome.browser.compositor.TitleCache;
-import org.chromium.chrome.browser.compositor.layouts.LayoutManagerImpl;
-import org.chromium.chrome.browser.compositor.layouts.LayoutRenderHost;
-import org.chromium.chrome.browser.compositor.layouts.LayoutUpdateHost;
-import org.chromium.chrome.browser.compositor.layouts.components.CompositorButton;
-import org.chromium.chrome.browser.compositor.layouts.components.CompositorButton.CompositorOnClickHandler;
-import org.chromium.chrome.browser.compositor.layouts.eventfilter.AreaGestureEventFilter;
-import org.chromium.chrome.browser.compositor.layouts.eventfilter.GestureHandler;
-import org.chromium.chrome.browser.compositor.scene_layer.TabStripSceneLayer;
-import org.chromium.chrome.browser.layouts.EventFilter;
-import org.chromium.chrome.browser.layouts.SceneOverlay;
-import org.chromium.chrome.browser.layouts.components.VirtualView;
-import org.chromium.chrome.browser.layouts.scene_layer.SceneOverlayLayer;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabCreationState;
-import org.chromium.chrome.browser.tab.TabLaunchType;
-import org.chromium.chrome.browser.tab.TabSelectionType;
-import org.chromium.chrome.browser.tabmodel.TabCreatorManager;
-import org.chromium.chrome.browser.tabmodel.TabModel;
-import org.chromium.chrome.browser.tabmodel.TabModelObserver;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorObserver;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorTabModelObserver;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorTabObserver;
-import org.chromium.ui.base.LocalizationUtils;
-import org.chromium.ui.resources.ResourceManager;
-import org.chromium.url.GURL;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.compositor.LayerTitleCache;
+import org.monyhar.chrome.browser.compositor.TitleCache;
+import org.monyhar.chrome.browser.compositor.layouts.LayoutManagerImpl;
+import org.monyhar.chrome.browser.compositor.layouts.LayoutRenderHost;
+import org.monyhar.chrome.browser.compositor.layouts.LayoutUpdateHost;
+import org.monyhar.chrome.browser.compositor.layouts.components.CompositorButton;
+import org.monyhar.chrome.browser.compositor.layouts.components.CompositorButton.CompositorOnClickHandler;
+import org.monyhar.chrome.browser.compositor.layouts.eventfilter.AreaGestureEventFilter;
+import org.monyhar.chrome.browser.compositor.layouts.eventfilter.GestureHandler;
+import org.monyhar.chrome.browser.compositor.scene_layer.TabStripSceneLayer;
+import org.monyhar.chrome.browser.layouts.EventFilter;
+import org.monyhar.chrome.browser.layouts.SceneOverlay;
+import org.monyhar.chrome.browser.layouts.components.VirtualView;
+import org.monyhar.chrome.browser.layouts.scene_layer.SceneOverlayLayer;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabCreationState;
+import org.monyhar.chrome.browser.tab.TabLaunchType;
+import org.monyhar.chrome.browser.tab.TabSelectionType;
+import org.monyhar.chrome.browser.tabmodel.TabCreatorManager;
+import org.monyhar.chrome.browser.tabmodel.TabModel;
+import org.monyhar.chrome.browser.tabmodel.TabModelObserver;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorObserver;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorTabModelObserver;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorTabObserver;
+import org.monyhar.ui.base.LocalizationUtils;
+import org.monyhar.ui.resources.ResourceManager;
+import org.monyhar.url.GURL;
 
 import java.util.List;
 

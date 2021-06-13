@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar;
+package org.monyhar.chrome.browser.toolbar;
 
 import android.content.Context;
 import android.content.res.Resources;
 import android.view.View;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.omnibox.LocationBarDataProvider;
-import org.chromium.chrome.browser.omnibox.UrlFocusChangeListener;
-import org.chromium.components.browser_ui.widget.scrim.ScrimCoordinator;
-import org.chromium.components.browser_ui.widget.scrim.ScrimProperties;
-import org.chromium.ui.base.DeviceFormFactor;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.util.ColorUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.omnibox.LocationBarDataProvider;
+import org.monyhar.chrome.browser.omnibox.UrlFocusChangeListener;
+import org.monyhar.components.browser_ui.widget.scrim.ScrimCoordinator;
+import org.monyhar.components.browser_ui.widget.scrim.ScrimProperties;
+import org.monyhar.ui.base.DeviceFormFactor;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.util.ColorUtils;
 
 /**
  * Handles showing and hiding a scrim when url bar focus changes.
@@ -56,9 +56,9 @@ public class LocationBarFocusScrimHandler implements UrlFocusChangeListener {
 
         Resources resources = context.getResources();
         int topMargin =
-                resources.getDimensionPixelSize(org.chromium.chrome.R.dimen.tab_strip_height);
+                resources.getDimensionPixelSize(org.monyhar.chrome.R.dimen.tab_strip_height);
         mLightScrimColor = ApiCompatibilityUtils.getColor(resources,
-                org.chromium.chrome.R.color.omnibox_focused_fading_background_color_light);
+                org.monyhar.chrome.R.color.omnibox_focused_fading_background_color_light);
         mScrimModel = new PropertyModel.Builder(ScrimProperties.ALL_KEYS)
                               .with(ScrimProperties.ANCHOR_VIEW, scrimTarget)
                               .with(ScrimProperties.SHOW_IN_FRONT_OF_ANCHOR_VIEW, true)

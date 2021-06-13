@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.v2;
+package org.monyhar.chrome.browser.feed.v2;
 
 import static com.google.common.truth.Truth.assertThat;
 
@@ -41,32 +41,32 @@ import org.robolectric.annotation.Config;
 import org.robolectric.annotation.LooperMode;
 import org.robolectric.shadows.ShadowLog;
 
-import org.chromium.base.Callback;
-import org.chromium.base.metrics.test.ShadowRecordHistogram;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.base.task.test.ShadowPostTask;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.base.test.util.MetricsUtils;
-import org.chromium.chrome.browser.feed.FeedServiceBridge;
-import org.chromium.chrome.browser.feed.NtpListContentManager;
-import org.chromium.chrome.browser.feedback.HelpAndFeedbackLauncherImpl;
-import org.chromium.chrome.browser.native_page.NativePageNavigationDelegate;
-import org.chromium.chrome.browser.ntp.NewTabPageUma;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.share.ShareDelegate;
-import org.chromium.chrome.browser.tab.MockTab;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
-import org.chromium.chrome.browser.xsurface.FeedActionsHandler;
-import org.chromium.chrome.browser.xsurface.FeedLaunchReliabilityLogger;
-import org.chromium.chrome.browser.xsurface.HybridListRenderer;
-import org.chromium.chrome.browser.xsurface.SurfaceActionsHandler;
-import org.chromium.chrome.browser.xsurface.SurfaceScope;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.components.feed.proto.FeedUiProto;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.url.JUnitTestGURLs;
+import org.monyhar.base.Callback;
+import org.monyhar.base.metrics.test.ShadowRecordHistogram;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.base.task.test.ShadowPostTask;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.base.test.util.MetricsUtils;
+import org.monyhar.chrome.browser.feed.FeedServiceBridge;
+import org.monyhar.chrome.browser.feed.NtpListContentManager;
+import org.monyhar.chrome.browser.feedback.HelpAndFeedbackLauncherImpl;
+import org.monyhar.chrome.browser.native_page.NativePageNavigationDelegate;
+import org.monyhar.chrome.browser.ntp.NewTabPageUma;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.share.ShareDelegate;
+import org.monyhar.chrome.browser.tab.MockTab;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.chrome.browser.xsurface.FeedActionsHandler;
+import org.monyhar.chrome.browser.xsurface.FeedLaunchReliabilityLogger;
+import org.monyhar.chrome.browser.xsurface.HybridListRenderer;
+import org.monyhar.chrome.browser.xsurface.SurfaceActionsHandler;
+import org.monyhar.chrome.browser.xsurface.SurfaceScope;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.components.feed.proto.FeedUiProto;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.url.JUnitTestGURLs;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -477,7 +477,7 @@ public class FeedStreamTest {
         handler.navigateTab(TEST_URL, null);
         verify(mPageNavigationDelegate)
                 .openUrl(ArgumentMatchers.eq(
-                                 org.chromium.ui.mojom.WindowOpenDisposition.CURRENT_TAB),
+                                 org.monyhar.ui.mojom.WindowOpenDisposition.CURRENT_TAB),
                         any());
 
         assertEquals(1, actionOpenedSnippetDelta.getDelta());
@@ -497,7 +497,7 @@ public class FeedStreamTest {
         handler.navigateNewTab(TEST_URL, null);
         verify(mPageNavigationDelegate)
                 .openUrl(ArgumentMatchers.eq(
-                                 org.chromium.ui.mojom.WindowOpenDisposition.NEW_BACKGROUND_TAB),
+                                 org.monyhar.ui.mojom.WindowOpenDisposition.NEW_BACKGROUND_TAB),
                         any());
         assertEquals(1, actionOpenedSnippetDelta.getDelta());
     }
@@ -515,7 +515,7 @@ public class FeedStreamTest {
         handler.navigateIncognitoTab(TEST_URL);
         verify(mPageNavigationDelegate)
                 .openUrl(ArgumentMatchers.eq(
-                                 org.chromium.ui.mojom.WindowOpenDisposition.OFF_THE_RECORD),
+                                 org.monyhar.ui.mojom.WindowOpenDisposition.OFF_THE_RECORD),
                         any());
         assertEquals(1, actionOpenedSnippetDelta.getDelta());
     }

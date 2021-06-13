@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
 import android.app.Activity;
 import android.view.Gravity;
@@ -12,8 +12,8 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 
-import org.chromium.android_webview.AwContentsClient;
-import org.chromium.base.test.util.CallbackHelper;
+import org.monyhar.android_webview.AwContentsClient;
+import org.monyhar.base.test.util.CallbackHelper;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;

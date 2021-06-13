@@ -9,7 +9,7 @@ For each dependency in `build.gradle`:
 
   - Download the library
   - Download the LICENSE
-  - Generate a README.chromium file
+  - Generate a README.monyhar file
   - Generate a GN target in BUILD.gn
   - Generate .info files for AAR libraries
   - Generate a 'deps' entry in DEPS.
@@ -440,7 +440,7 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument(
         '--android-deps-dir',
-        help='Path to directory containing build.gradle from chromium-dir.',
+        help='Path to directory containing build.gradle from monyhar-dir.',
         default=_PRIMARY_ANDROID_DEPS_DIR)
     parser.add_argument(
         '--build-dir',

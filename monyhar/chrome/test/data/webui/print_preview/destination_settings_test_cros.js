@@ -42,7 +42,7 @@ suite(destination_settings_test_cros.suiteName, function() {
   let isDriveMounted = true;
 
   /** @type {string} */
-  const defaultUser = 'foo@chromium.org';
+  const defaultUser = 'foo@monyhar.org';
 
   /** @override */
   suiteSetup(function() {

@@ -33,7 +33,7 @@ TEST_F(BorealisUtilTest, FeedbackFormUrlExcludesNonGames) {
   guest_os::GuestOsRegistryService registry(&profile);
 
   EXPECT_FALSE(FeedbackFormUrl(&registry,
-                               "borealisanon:org.chromium.borealis.xid.100",
+                               "borealisanon:org.monyhar.borealis.xid.100",
                                "CoolApp")
                    .is_valid());
 }
@@ -43,7 +43,7 @@ TEST_F(BorealisUtilTest, FeedbackFormUrlPrefillsWindowTitle) {
   guest_os::GuestOsRegistryService registry(&profile);
 
   EXPECT_THAT(
-      FeedbackFormUrl(&registry, "borealisanon:org.chromium.borealis.app",
+      FeedbackFormUrl(&registry, "borealisanon:org.monyhar.borealis.app",
                       "CoolApp")
           .spec(),
       testing::HasSubstr("=CoolApp"));
@@ -54,7 +54,7 @@ TEST_F(BorealisUtilTest, FeedbackFormUrlIsPrefilled) {
   guest_os::GuestOsRegistryService registry(&profile);
 
   GURL url = FeedbackFormUrl(
-      &registry, "borealisanon:org.chromium.borealis.app", "CoolApp");
+      &registry, "borealisanon:org.monyhar.borealis.app", "CoolApp");
 
   // Count the number of query parameters beginning with "entry"; these are
   // form fields that we're prefilling.

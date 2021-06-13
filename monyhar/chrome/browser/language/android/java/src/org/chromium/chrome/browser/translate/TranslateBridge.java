@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.translate;
+package org.monyhar.chrome.browser.translate;
 
-import org.chromium.base.LocaleUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.language.settings.LanguageItem;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.LocaleUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.language.settings.LanguageItem;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.content_public.browser.WebContents;
 
 import java.util.ArrayList;
 import java.util.Arrays;

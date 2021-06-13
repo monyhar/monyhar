@@ -208,7 +208,7 @@ def _install_xcode(mac_toolchain, xcode_build_version, xcode_path,
   Args:
     xcode_build_version: (string) Xcode build version to install.
     mac_toolchain: (string) Path to mac_toolchain command to install Xcode
-    See https://chromium.googlesource.com/infra/infra/+/main/go/src/infra/cmd/mac_toolchain/
+    See https://monyhar.googlesource.com/infra/infra/+/main/go/src/infra/cmd/mac_toolchain/
     xcode_path: (string) Path to install the contents of Xcode.app.
     using_new_mac_toolchain: (bool) Using new mac_toolchain.
 
@@ -254,7 +254,7 @@ def install(mac_toolchain, xcode_build_version, xcode_app_path, **runtime_args):
   Args:
     xcode_build_version: (string) Xcode build version to install.
     mac_toolchain: (string) Path to mac_toolchain command to install Xcode
-    See https://chromium.googlesource.com/infra/infra/+/main/go/src/infra/cmd/mac_toolchain/
+    See https://monyhar.googlesource.com/infra/infra/+/main/go/src/infra/cmd/mac_toolchain/
     xcode_app_path: (string) Path to install the contents of Xcode.app.
     runtime_args: Keyword arguments related with runtime installation. Can be
     empty when installing an Xcode w/o runtime (for real device tasks). Namely:

@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui.messages.snackbar;
+package org.monyhar.chrome.browser.ui.messages.snackbar;
 
-import org.chromium.base.UnownedUserDataKey;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.UnownedUserDataKey;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * A class responsible for binding and unbinding a {@link SnackbarManager} to a
  * {@link WindowAndroid}.
  */
 public class SnackbarManagerProvider {
-    /** The key for accessing this object on an {@link org.chromium.base.UnownedUserDataHost}. */
+    /** The key for accessing this object on an {@link org.monyhar.base.UnownedUserDataHost}. */
     private static final UnownedUserDataKey<SnackbarManager> KEY =
             new UnownedUserDataKey<>(SnackbarManager.class);
 

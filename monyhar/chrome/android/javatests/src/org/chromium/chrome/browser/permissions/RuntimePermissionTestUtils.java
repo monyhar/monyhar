@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.permissions;
+package org.monyhar.chrome.browser.permissions;
 
 import android.content.pm.PackageManager;
 import android.os.Handler;
@@ -14,22 +14,22 @@ import androidx.annotation.StringRes;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.permissions.PermissionTestRule.PermissionUpdateWaiter;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.test.util.browser.LocationSettingsTestUtil;
-import org.chromium.components.permissions.R;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.device.geolocation.LocationProviderOverrider;
-import org.chromium.device.geolocation.MockLocationProvider;
-import org.chromium.ui.base.AndroidPermissionDelegate;
-import org.chromium.ui.base.PermissionCallback;
-import org.chromium.ui.modaldialog.DialogDismissalCause;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.modaldialog.ModalDialogProperties;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.permissions.PermissionTestRule.PermissionUpdateWaiter;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.test.util.browser.LocationSettingsTestUtil;
+import org.monyhar.components.permissions.R;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.device.geolocation.LocationProviderOverrider;
+import org.monyhar.device.geolocation.MockLocationProvider;
+import org.monyhar.ui.base.AndroidPermissionDelegate;
+import org.monyhar.ui.base.PermissionCallback;
+import org.monyhar.ui.modaldialog.DialogDismissalCause;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.modaldialog.ModalDialogProperties;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.util.Arrays;
 import java.util.Set;

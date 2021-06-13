@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.features.start_surface;
+package org.monyhar.chrome.features.start_surface;
 
 import android.os.SystemClock;
 
 import com.google.android.material.appbar.AppBarLayout;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.ntp.NewTabPageLaunchOrigin;
-import org.chromium.chrome.browser.tasks.tab_management.TabSwitcher;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.ntp.NewTabPageLaunchOrigin;
+import org.monyhar.chrome.browser.tasks.tab_management.TabSwitcher;
 
 /** Interface to communicate with the start surface. */
 public interface StartSurface {

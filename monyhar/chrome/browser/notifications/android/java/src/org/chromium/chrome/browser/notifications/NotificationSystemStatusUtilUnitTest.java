@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.notifications;
+package org.monyhar.chrome.browser.notifications;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -17,7 +17,7 @@ import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowNotificationManager;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
 
 /**
  * JUnit tests for NotificationSystemStatusUtil which run against Robolectric so that we can

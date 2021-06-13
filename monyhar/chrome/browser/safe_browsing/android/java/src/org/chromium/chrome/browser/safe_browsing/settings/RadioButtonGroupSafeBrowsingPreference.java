@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.safe_browsing.settings;
+package org.monyhar.chrome.browser.safe_browsing.settings;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -15,13 +15,13 @@ import androidx.core.content.ContextCompat;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 
-import org.chromium.chrome.browser.safe_browsing.SafeBrowsingState;
-import org.chromium.chrome.browser.safe_browsing.metrics.SettingsAccessPoint;
-import org.chromium.components.browser_ui.settings.ManagedPreferenceDelegate;
-import org.chromium.components.browser_ui.settings.ManagedPreferencesUtils;
-import org.chromium.components.browser_ui.widget.RadioButtonWithDescription;
-import org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionAndAuxButton;
-import org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionLayout;
+import org.monyhar.chrome.browser.safe_browsing.SafeBrowsingState;
+import org.monyhar.chrome.browser.safe_browsing.metrics.SettingsAccessPoint;
+import org.monyhar.components.browser_ui.settings.ManagedPreferenceDelegate;
+import org.monyhar.components.browser_ui.settings.ManagedPreferencesUtils;
+import org.monyhar.components.browser_ui.widget.RadioButtonWithDescription;
+import org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionAndAuxButton;
+import org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionLayout;
 
 /**
  * <p>

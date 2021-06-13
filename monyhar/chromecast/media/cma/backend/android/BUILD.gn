@@ -44,18 +44,18 @@ cast_source_set("cast_media_android") {
 
 generate_jni("audio_track_jni_headers") {
   sources = [
-    "java/src/org/chromium/chromecast/cma/backend/android/AudioSinkAudioTrackImpl.java",
-    "java/src/org/chromium/chromecast/cma/backend/android/VolumeControl.java",
-    "java/src/org/chromium/chromecast/cma/backend/android/VolumeMap.java",
+    "java/src/org/monyhar/chromecast/cma/backend/android/AudioSinkAudioTrackImpl.java",
+    "java/src/org/monyhar/chromecast/cma/backend/android/VolumeControl.java",
+    "java/src/org/monyhar/chromecast/cma/backend/android/VolumeMap.java",
   ]
 }
 
 android_library("audio_track_java") {
   sources = [
-    "java/src/org/chromium/chromecast/cma/backend/android/AudioSinkAudioTrackImpl.java",
-    "java/src/org/chromium/chromecast/cma/backend/android/ThrottledLog.java",
-    "java/src/org/chromium/chromecast/cma/backend/android/VolumeControl.java",
-    "java/src/org/chromium/chromecast/cma/backend/android/VolumeMap.java",
+    "java/src/org/monyhar/chromecast/cma/backend/android/AudioSinkAudioTrackImpl.java",
+    "java/src/org/monyhar/chromecast/cma/backend/android/ThrottledLog.java",
+    "java/src/org/monyhar/chromecast/cma/backend/android/VolumeControl.java",
+    "java/src/org/monyhar/chromecast/cma/backend/android/VolumeMap.java",
   ]
 
   deps = [

@@ -1094,7 +1094,7 @@ class CheckNoDownstreamDepsTest(unittest.TestCase):
           ']'
         ]),
     ]
-    mock_input_api.change.RepositoryRoot = lambda: 'chromium/src'
+    mock_input_api.change.RepositoryRoot = lambda: 'monyhar/src'
     msgs = PRESUBMIT.CheckNoUpstreamDepsOnClank(
         mock_input_api, mock_output_api)
     self.assertEqual(1, len(msgs),
@@ -1121,7 +1121,7 @@ class CheckNoDownstreamDepsTest(unittest.TestCase):
           '# real implementation in //clank/target:test',
         ]),
     ]
-    mock_input_api.change.RepositoryRoot = lambda: 'chromium/src'
+    mock_input_api.change.RepositoryRoot = lambda: 'monyhar/src'
     msgs = PRESUBMIT.CheckNoUpstreamDepsOnClank(
         mock_input_api, mock_output_api)
     self.assertEqual(0, len(msgs),
@@ -1140,7 +1140,7 @@ class CheckNoDownstreamDepsTest(unittest.TestCase):
           '//clank/ only function'
         ]),
     ]
-    mock_input_api.change.RepositoryRoot = lambda: 'chromium/src'
+    mock_input_api.change.RepositoryRoot = lambda: 'monyhar/src'
     msgs = PRESUBMIT.CheckNoUpstreamDepsOnClank(
         mock_input_api, mock_output_api)
     self.assertEqual(0, len(msgs),
@@ -1161,7 +1161,7 @@ class CheckNoDownstreamDepsTest(unittest.TestCase):
           'DEPS = [ "//clank/target:test" ]'
         ]),
     ]
-    mock_input_api.change.RepositoryRoot = lambda: 'chromium/src/clank'
+    mock_input_api.change.RepositoryRoot = lambda: 'monyhar/src/clank'
     msgs = PRESUBMIT.CheckNoUpstreamDepsOnClank(
         mock_input_api, mock_output_api)
     self.assertEqual(0, len(msgs),
@@ -1270,7 +1270,7 @@ class AndroidDebuggableBuildTest(unittest.TestCase):
         'random stuff'
       ]),
       MockAffectedFile('CorrectUsage.java', [
-        'import org.chromium.base.BuildInfo;',
+        'import org.monyhar.base.BuildInfo;',
         'some random stuff',
         'boolean isOsDebuggable = BuildInfo.isDebugAndroid();',
       ]),
@@ -1331,84 +1331,84 @@ class LogUsageTest(unittest.TestCase):
         'android.util.Log.d("TAG", "foo");',
       ]),
       MockAffectedFile('IsInBasePackage.java', [
-        'package org.chromium.base;',
+        'package org.monyhar.base;',
         'private static final String TAG = "cr_Foo";',
         'Log.d(TAG, "foo");',
       ]),
       MockAffectedFile('IsInBasePackageButImportsLog.java', [
-        'package org.chromium.base;',
+        'package org.monyhar.base;',
         'import android.util.Log;',
         'private static final String TAG = "cr_Foo";',
         'Log.d(TAG, "foo");',
       ]),
       MockAffectedFile('HasBothLog.java', [
-        'import org.chromium.base.Log;',
+        'import org.monyhar.base.Log;',
         'some random stuff',
         'private static final String TAG = "cr_Foo";',
         'Log.d(TAG, "foo");',
         'android.util.Log.d("TAG", "foo");',
       ]),
       MockAffectedFile('HasCorrectTag.java', [
-        'import org.chromium.base.Log;',
+        'import org.monyhar.base.Log;',
         'some random stuff',
         'private static final String TAG = "cr_Foo";',
         'Log.d(TAG, "foo");',
       ]),
       MockAffectedFile('HasOldTag.java', [
-        'import org.chromium.base.Log;',
+        'import org.monyhar.base.Log;',
         'some random stuff',
         'private static final String TAG = "cr.Foo";',
         'Log.d(TAG, "foo");',
       ]),
       MockAffectedFile('HasDottedTag.java', [
-        'import org.chromium.base.Log;',
+        'import org.monyhar.base.Log;',
         'some random stuff',
         'private static final String TAG = "cr_foo.bar";',
         'Log.d(TAG, "foo");',
       ]),
       MockAffectedFile('HasDottedTagPublic.java', [
-        'import org.chromium.base.Log;',
+        'import org.monyhar.base.Log;',
         'some random stuff',
         'public static final String TAG = "cr_foo.bar";',
         'Log.d(TAG, "foo");',
       ]),
       MockAffectedFile('HasNoTagDecl.java', [
-        'import org.chromium.base.Log;',
+        'import org.monyhar.base.Log;',
         'some random stuff',
         'Log.d(TAG, "foo");',
       ]),
       MockAffectedFile('HasIncorrectTagDecl.java', [
-        'import org.chromium.base.Log;',
+        'import org.monyhar.base.Log;',
         'private static final String TAHG = "cr_Foo";',
         'some random stuff',
         'Log.d(TAG, "foo");',
       ]),
       MockAffectedFile('HasInlineTag.java', [
-        'import org.chromium.base.Log;',
+        'import org.monyhar.base.Log;',
         'some random stuff',
         'private static final String TAG = "cr_Foo";',
         'Log.d("TAG", "foo");',
       ]),
       MockAffectedFile('HasInlineTagWithSpace.java', [
-        'import org.chromium.base.Log;',
+        'import org.monyhar.base.Log;',
         'some random stuff',
         'private static final String TAG = "cr_Foo";',
         'Log.d("log message", "foo");',
       ]),
       MockAffectedFile('HasUnprefixedTag.java', [
-        'import org.chromium.base.Log;',
+        'import org.monyhar.base.Log;',
         'some random stuff',
         'private static final String TAG = "rubbish";',
         'Log.d(TAG, "foo");',
       ]),
       MockAffectedFile('HasTooLongTag.java', [
-        'import org.chromium.base.Log;',
+        'import org.monyhar.base.Log;',
         'some random stuff',
         'private static final String TAG = "21_charachers_long___";',
         'Log.d(TAG, "foo");',
       ]),
       MockAffectedFile('HasTooLongTagWithNoLogCallsInDiff.java', [
-        'import org.chromium.base.Log;',
+        'import org.monyhar.base.Log;',
         'some random stuff',
         'private static final String TAG = "21_charachers_long___";',
       ]),
@@ -1938,7 +1938,7 @@ class CorrectProductNameInMessagesTest(unittest.TestCase):
         '  Welcome to Chrome!',
         '</message>',
       ]),
-      MockAffectedFile('chrome/app/chromium_strings.grd', [
+      MockAffectedFile('chrome/app/monyhar_strings.grd', [
         '<message name="Bar" desc="Welcome to Chrome">',
         '  Welcome to Chromium!',
         '</message>',
@@ -1956,7 +1956,7 @@ class CorrectProductNameInMessagesTest(unittest.TestCase):
         '  Welcome to Chrome!',
         '</message>',
       ]),
-      MockAffectedFile('chrome/app/chromium_strings.grd', [
+      MockAffectedFile('chrome/app/monyhar_strings.grd', [
         '<message name="Bar" desc="Welcome to Chrome">',
         '  Welcome to Chrome!',
         '</message>',
@@ -1965,7 +1965,7 @@ class CorrectProductNameInMessagesTest(unittest.TestCase):
     warnings = PRESUBMIT.CheckCorrectProductNameInMessages(
         mock_input_api, MockOutputApi())
     self.assertEqual(1, len(warnings))
-    self.assertTrue('chrome/app/chromium_strings.grd' in warnings[0].items[0])
+    self.assertTrue('chrome/app/monyhar_strings.grd' in warnings[0].items[0])
 
   def testChromiumInChrome(self):
     mock_input_api = MockInputApi()
@@ -1975,7 +1975,7 @@ class CorrectProductNameInMessagesTest(unittest.TestCase):
         '  Welcome to Chromium!',
         '</message>',
       ]),
-      MockAffectedFile('chrome/app/chromium_strings.grd', [
+      MockAffectedFile('chrome/app/monyhar_strings.grd', [
         '<message name="Bar" desc="Welcome to Chrome">',
         '  Welcome to Chromium!',
         '</message>',
@@ -1990,7 +1990,7 @@ class CorrectProductNameInMessagesTest(unittest.TestCase):
   def testMultipleInstances(self):
     mock_input_api = MockInputApi()
     mock_input_api.files = [
-      MockAffectedFile('chrome/app/chromium_strings.grd', [
+      MockAffectedFile('chrome/app/monyhar_strings.grd', [
         '<message name="Bar" desc="Welcome to Chrome">',
         '  Welcome to Chrome!',
         '</message>',
@@ -2006,14 +2006,14 @@ class CorrectProductNameInMessagesTest(unittest.TestCase):
         mock_input_api, MockOutputApi())
     self.assertEqual(1, len(warnings))
     self.assertTrue(
-        'chrome/app/chromium_strings.grd:2' in warnings[0].items[0])
+        'chrome/app/monyhar_strings.grd:2' in warnings[0].items[0])
     self.assertTrue(
-        'chrome/app/chromium_strings.grd:8' in warnings[0].items[1])
+        'chrome/app/monyhar_strings.grd:8' in warnings[0].items[1])
 
   def testMultipleWarnings(self):
     mock_input_api = MockInputApi()
     mock_input_api.files = [
-      MockAffectedFile('chrome/app/chromium_strings.grd', [
+      MockAffectedFile('chrome/app/monyhar_strings.grd', [
         '<message name="Bar" desc="Welcome to Chrome">',
         '  Welcome to Chrome!',
         '</message>',
@@ -2043,9 +2043,9 @@ class CorrectProductNameInMessagesTest(unittest.TestCase):
         'components/components_google_chrome_strings.grd:5'
              in warnings[0].items[0])
     self.assertTrue(
-        'chrome/app/chromium_strings.grd:2' in warnings[1].items[0])
+        'chrome/app/monyhar_strings.grd:2' in warnings[1].items[0])
     self.assertTrue(
-        'chrome/app/chromium_strings.grd:8' in warnings[1].items[1])
+        'chrome/app/monyhar_strings.grd:8' in warnings[1].items[1])
 
 
 class ServiceManifestOwnerTest(unittest.TestCase):
@@ -2152,7 +2152,7 @@ class FuchsiaSecurityOwnerTest(unittest.TestCase):
 class SecurityChangeTest(unittest.TestCase):
   class _MockOwnersClient(object):
     def ListOwners(self, f):
-      return ['apple@chromium.org', 'orange@chromium.org']
+      return ['apple@monyhar.org', 'orange@monyhar.org']
 
   def _mockChangeOwnerAndReviewers(self, input_api, owner, reviewers):
     def __MockOwnerAndReviewers(input_api, email_regexp, approval_needed=False):
@@ -2216,7 +2216,7 @@ class SecurityChangeTest(unittest.TestCase):
     ]
     mock_output_api = MockOutputApi()
     self._mockChangeOwnerAndReviewers(
-        mock_input_api, 'owner@chromium.org', ['banana@chromium.org'])
+        mock_input_api, 'owner@monyhar.org', ['banana@monyhar.org'])
     result = PRESUBMIT.CheckSecurityChanges(mock_input_api, mock_output_api)
     self.assertEqual(1, len(result))
     self.assertEqual(result[0].type, 'notify')
@@ -2235,7 +2235,7 @@ class SecurityChangeTest(unittest.TestCase):
     ]
     mock_output_api = MockOutputApi()
     self._mockChangeOwnerAndReviewers(
-        mock_input_api, 'owner@chromium.org', ['banana@chromium.org'])
+        mock_input_api, 'owner@monyhar.org', ['banana@monyhar.org'])
     result = PRESUBMIT.CheckSecurityChanges(mock_input_api, mock_output_api)
     self.assertEqual(1, len(result))
     self.assertEqual(result[0].type, 'error')
@@ -2253,8 +2253,8 @@ class SecurityChangeTest(unittest.TestCase):
     ]
     mock_output_api = MockOutputApi()
     self._mockChangeOwnerAndReviewers(
-        mock_input_api, 'owner@chromium.org',
-        ['apple@chromium.org', 'banana@chromium.org'])
+        mock_input_api, 'owner@monyhar.org',
+        ['apple@monyhar.org', 'banana@monyhar.org'])
     result = PRESUBMIT.CheckSecurityChanges(mock_input_api, mock_output_api)
     self.assertEqual(0, len(result))
 
@@ -2266,7 +2266,7 @@ class SecurityChangeTest(unittest.TestCase):
     ]
     mock_output_api = MockOutputApi()
     self._mockChangeOwnerAndReviewers(
-        mock_input_api, 'orange@chromium.org', ['pear@chromium.org'])
+        mock_input_api, 'orange@monyhar.org', ['pear@monyhar.org'])
     result = PRESUBMIT.CheckSecurityChanges(mock_input_api, mock_output_api)
     self.assertEqual(1, len(result))
 
@@ -2854,7 +2854,7 @@ class StringTest(unittest.TestCase):
                                'files. Remove:')
   ICU_SYNTAX_ERROR_MESSAGE = ('ICU syntax errors were found in the following '
                               'strings (problems or feedback? Contact '
-                              'rainhard@chromium.org):')
+                              'rainhard@monyhar.org):')
 
   def makeInputApi(self, files):
     input_api = MockInputApi()
@@ -3461,7 +3461,7 @@ class SetNoParentTest(unittest.TestCase):
       MockAffectedFile('goat/OWNERS',
                        [
                          'set noparent',
-                         'jochen@chromium.org',
+                         'jochen@monyhar.org',
                        ])
     ]
     mock_output_api = MockOutputApi()
@@ -3474,9 +3474,9 @@ class SetNoParentTest(unittest.TestCase):
       MockAffectedFile('services/goat/OWNERS',
                        [
                          'set noparent',
-                         'jochen@chromium.org',
+                         'jochen@monyhar.org',
                          'per-file *.json=set noparent',
-                         'per-file *.json=jochen@chromium.org',
+                         'per-file *.json=jochen@monyhar.org',
                        ])
     ]
     mock_output_api = MockOutputApi()

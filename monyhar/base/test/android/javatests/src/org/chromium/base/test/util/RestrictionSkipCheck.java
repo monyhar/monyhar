@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.test.util;
+package org.monyhar.base.test.util;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -11,8 +11,8 @@ import android.text.TextUtils;
 
 import org.junit.runners.model.FrameworkMethod;
 
-import org.chromium.base.Log;
-import org.chromium.base.SysUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.SysUtils;
 
 /**
  * Checks if any restrictions exist and skip the test if it meets those restrictions.

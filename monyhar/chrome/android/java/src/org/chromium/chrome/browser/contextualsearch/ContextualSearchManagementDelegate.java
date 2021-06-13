@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.contextualsearch;
+package org.monyhar.chrome.browser.contextualsearch;
 
 import android.app.Activity;
 
-import org.chromium.chrome.browser.compositor.bottombar.OverlayContentDelegate;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanel.StateChangeReason;
-import org.chromium.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchPanel;
-import org.chromium.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchPanelInterface;
-import org.chromium.components.browser_ui.widget.scrim.ScrimCoordinator;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayContentDelegate;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanel.StateChangeReason;
+import org.monyhar.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchPanel;
+import org.monyhar.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchPanelInterface;
+import org.monyhar.components.browser_ui.widget.scrim.ScrimCoordinator;
 
 /**
  * Provides an interface to allow external objects like the {@link ContextualSearchPanel} to drive

@@ -129,7 +129,7 @@ if (is_android) {
   android_library("internal_java") {
     visibility = [ "//components/feature_engagement:feature_engagement_java" ]
 
-    sources = [ "android/java/src/org/chromium/components/feature_engagement/internal/TrackerImpl.java" ]
+    sources = [ "android/java/src/org/monyhar/components/feature_engagement/internal/TrackerImpl.java" ]
 
     deps = [
       "//base:base_java",
@@ -142,6 +142,6 @@ if (is_android) {
 
   generate_jni("jni_headers") {
     visibility = [ ":*" ]
-    sources = [ "android/java/src/org/chromium/components/feature_engagement/internal/TrackerImpl.java" ]
+    sources = [ "android/java/src/org/monyhar/components/feature_engagement/internal/TrackerImpl.java" ]
   }
 }

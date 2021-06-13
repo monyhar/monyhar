@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.webshare;
+package org.monyhar.components.browser_ui.webshare;
 
-import org.chromium.base.Callback;
-import org.chromium.base.Log;
-import org.chromium.base.StreamUtil;
-import org.chromium.blink.mojom.Blob;
-import org.chromium.blink.mojom.BlobReaderClient;
-import org.chromium.mojo.system.Core;
-import org.chromium.mojo.system.DataPipe;
-import org.chromium.mojo.system.MojoException;
-import org.chromium.mojo.system.MojoResult;
-import org.chromium.mojo.system.Pair;
-import org.chromium.mojo.system.ResultAnd;
-import org.chromium.mojo.system.Watcher;
-import org.chromium.mojo.system.impl.CoreImpl;
+import org.monyhar.base.Callback;
+import org.monyhar.base.Log;
+import org.monyhar.base.StreamUtil;
+import org.monyhar.blink.mojom.Blob;
+import org.monyhar.blink.mojom.BlobReaderClient;
+import org.monyhar.mojo.system.Core;
+import org.monyhar.mojo.system.DataPipe;
+import org.monyhar.mojo.system.MojoException;
+import org.monyhar.mojo.system.MojoResult;
+import org.monyhar.mojo.system.Pair;
+import org.monyhar.mojo.system.ResultAnd;
+import org.monyhar.mojo.system.Watcher;
+import org.monyhar.mojo.system.impl.CoreImpl;
 
 import java.io.IOException;
 import java.io.OutputStream;

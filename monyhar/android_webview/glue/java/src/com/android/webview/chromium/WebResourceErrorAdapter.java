@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package com.android.webview.chromium;
+package com.android.webview.monyhar;
 
 import android.annotation.TargetApi;
 import android.os.Build;
 import android.webkit.WebResourceError;
 
-import org.chromium.android_webview.AwContentsClient.AwWebResourceError;
+import org.monyhar.android_webview.AwContentsClient.AwWebResourceError;
 
 /**
  * Chromium implementation of {@link WebResourceError}.

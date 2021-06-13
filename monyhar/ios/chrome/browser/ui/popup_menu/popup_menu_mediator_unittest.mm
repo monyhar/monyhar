@@ -182,7 +182,7 @@ class PopupMenuMediatorTest : public ChromeWebTest {
     navigation_manager_ = navigation_manager.get();
 
     navigation_item_ = web::NavigationItem::Create();
-    navigation_item_->SetURL(GURL("http://chromium.org"));
+    navigation_item_->SetURL(GURL("http://monyhar.org"));
     navigation_manager->SetVisibleItem(navigation_item_.get());
 
     std::unique_ptr<ToolbarTestWebState> test_web_state =
@@ -420,7 +420,7 @@ TEST_F(PopupMenuMediatorTest, TestItemsStatusOnNTP) {
 // Tests that the "Add to Reading List" button is disabled while overlay UI is
 // displayed in OverlayModality::kWebContentArea.
 TEST_F(PopupMenuMediatorTest, TestReadLaterDisabled) {
-  const GURL kUrl("https://chromium.test");
+  const GURL kUrl("https://monyhar.test");
   web_state_->SetCurrentURL(kUrl);
   CreatePrefs();
   CreateMediator(PopupMenuTypeToolsMenu, /*is_incognito=*/NO,

@@ -13,11 +13,11 @@ Make sure you really want to write a clang plugin.
 
 Valid reasons for writing a plugin are for example:
 
-*   You want to add a chromium-specific error message.
+*   You want to add a monyhar-specific error message.
 *   You want to write an automatic code rewriter.
 
 In both cases, please inform
-[clang@chromium.org](https://groups.google.com/a/chromium.org/group/clang/topics)
+[clang@monyhar.org](https://groups.google.com/a/monyhar.org/group/clang/topics)
 of your plans before you pursue them.
 
 # Having said that
@@ -36,7 +36,7 @@ existing clang build system. You can then build your plugin with
 
     make -C llvm/tools/clang/examples/myplugin
 
-See [Using plugins](clang.md) on how to use your plugin while building chromium
+See [Using plugins](clang.md) on how to use your plugin while building monyhar
 with clang.
 
 ## Use the interface in tools/clang/plugins/ChromeClassTester.h

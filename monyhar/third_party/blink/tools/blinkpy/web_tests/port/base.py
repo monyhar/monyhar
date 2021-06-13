@@ -1161,8 +1161,8 @@ class Port(object):
         """
         self._filesystem.write_binary_file(baseline_path, data)
 
-    def _path_from_chromium_base(self, *comps):
-        return self._path_finder.path_from_chromium_base(*comps)
+    def _path_from_monyhar_base(self, *comps):
+        return self._path_finder.path_from_monyhar_base(*comps)
 
     def _perf_tests_dir(self):
         return self._path_finder.perf_tests_dir()
@@ -1750,8 +1750,8 @@ class Port(object):
                                      'WebDriverExpectations')
 
     def repository_path(self):
-        """Returns the repository path for the chromium code base."""
-        return self._path_from_chromium_base('build')
+        """Returns the repository path for the monyhar code base."""
+        return self._path_from_monyhar_base('build')
 
     def default_configuration(self):
         return 'Release'
@@ -1852,7 +1852,7 @@ class Port(object):
             # Running the symbolizer script can take a lot of memory, so we need to
             # serialize access to it across all the concurrently running drivers.
 
-            llvm_symbolizer_path = self._path_from_chromium_base(
+            llvm_symbolizer_path = self._path_from_monyhar_base(
                 'third_party', 'llvm-build', 'Release+Asserts', 'bin',
                 'llvm-symbolizer')
             if self._filesystem.exists(llvm_symbolizer_path):
@@ -1860,7 +1860,7 @@ class Port(object):
                 env['LLVM_SYMBOLIZER_PATH'] = llvm_symbolizer_path
             else:
                 env = None
-            sanitizer_filter_path = self._path_from_chromium_base(
+            sanitizer_filter_path = self._path_from_monyhar_base(
                 'tools', 'valgrind', 'asan', 'asan_symbolize.py')
             sanitizer_strip_path_prefix = 'Release/../../'
             if self._filesystem.exists(sanitizer_filter_path):
@@ -2163,7 +2163,7 @@ class Port(object):
     def _build_path_with_target(self, target, *comps):
         target = target or self.get_option('target')
         return self._filesystem.join(
-            self._path_from_chromium_base(),
+            self._path_from_monyhar_base(),
             self.get_option('build_directory') or 'out', target, *comps)
 
     def _check_driver_build_up_to_date(self, target):

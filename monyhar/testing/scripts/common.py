@@ -25,7 +25,7 @@ if sys.platform.startswith('linux'):
 # Importing it and using its get_sandbox_env breaks test runs on Linux
 # (it seems to unset DISPLAY).
 CHROME_SANDBOX_ENV = 'CHROME_DEVEL_SANDBOX'
-CHROME_SANDBOX_PATH = '/opt/chromium/chrome_sandbox'
+CHROME_SANDBOX_PATH = '/opt/monyhar/chrome_sandbox'
 
 
 SCRIPT_DIR = os.path.abspath(os.path.dirname(__file__))
@@ -205,7 +205,7 @@ def get_gtest_summary_passes(output):
 
   Only partially parses the format. This code is based on code in tools/build,
   specifically
-  https://chromium.googlesource.com/chromium/tools/build/+/17fef98756c5f250b20bf716829a0004857235ff/scripts/slave/recipe_modules/test_utils/util.py#189
+  https://monyhar.googlesource.com/monyhar/tools/build/+/17fef98756c5f250b20bf716829a0004857235ff/scripts/slave/recipe_modules/test_utils/util.py#189
   """
   if not output:
     return {}

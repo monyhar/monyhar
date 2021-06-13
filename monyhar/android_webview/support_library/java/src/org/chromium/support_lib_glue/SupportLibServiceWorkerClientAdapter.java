@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.support_lib_glue;
+package org.monyhar.support_lib_glue;
 
 import android.webkit.WebResourceResponse;
 
-import com.android.webview.chromium.ServiceWorkerClientAdapter;
-import com.android.webview.chromium.WebResourceRequestAdapter;
+import com.android.webview.monyhar.ServiceWorkerClientAdapter;
+import com.android.webview.monyhar.WebResourceRequestAdapter;
 
-import org.chromium.android_webview.AwContentsClient.AwWebResourceRequest;
-import org.chromium.android_webview.AwServiceWorkerClient;
-import org.chromium.components.embedder_support.util.WebResourceResponseInfo;
-import org.chromium.support_lib_boundary.ServiceWorkerClientBoundaryInterface;
-import org.chromium.support_lib_boundary.util.BoundaryInterfaceReflectionUtil;
-import org.chromium.support_lib_boundary.util.Features;
+import org.monyhar.android_webview.AwContentsClient.AwWebResourceRequest;
+import org.monyhar.android_webview.AwServiceWorkerClient;
+import org.monyhar.components.embedder_support.util.WebResourceResponseInfo;
+import org.monyhar.support_lib_boundary.ServiceWorkerClientBoundaryInterface;
+import org.monyhar.support_lib_boundary.util.BoundaryInterfaceReflectionUtil;
+import org.monyhar.support_lib_boundary.util.Features;
 
 /**
  * Adapter between ServiceWorkerClientBoundaryInterface and AwServiceWorkerClient.

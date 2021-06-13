@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.explore_sites;
+package org.monyhar.chrome.browser.explore_sites;
 
 import android.graphics.Bitmap;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.ui.display.DisplayAndroid;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.ui.display.DisplayAndroid;
 
 import java.util.ArrayList;
 import java.util.List;

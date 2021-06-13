@@ -12,7 +12,7 @@
 namespace media {
 
 // The encryption mode. The definitions are from ISO/IEC 23001-7:2016.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.media
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.media
 enum class EncryptionScheme {
   kUnencrypted = 0,
   kCenc,  // 'cenc' subsample encryption using AES-CTR mode.

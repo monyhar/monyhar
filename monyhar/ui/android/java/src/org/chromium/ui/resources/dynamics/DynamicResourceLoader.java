@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.resources.dynamics;
+package org.monyhar.ui.resources.dynamics;
 
 import android.util.SparseArray;
 
-import org.chromium.ui.resources.ResourceLoader;
+import org.monyhar.ui.resources.ResourceLoader;
 
 /**
  * Handles managing dynamic resources.  This is basically a list of dynamic resources that checks

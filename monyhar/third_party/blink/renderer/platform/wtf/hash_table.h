@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2005, 2006, 2007, 2008, 2011, 2012 Apple Inc. All rights
  * reserved.
- * Copyright (C) 2008 David Levin <levin@chromium.org>
+ * Copyright (C) 2008 David Levin <levin@monyhar.org>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public

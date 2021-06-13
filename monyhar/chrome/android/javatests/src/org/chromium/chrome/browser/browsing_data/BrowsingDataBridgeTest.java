@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browsing_data;
+package org.monyhar.chrome.browser.browsing_data;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -23,28 +23,28 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.UserActionTester;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabState;
-import org.chromium.chrome.browser.tab.TabStateExtractor;
-import org.chromium.chrome.browser.tab.WebContentsStateBridge;
-import org.chromium.chrome.browser.webapps.TestFetchStorageCallback;
-import org.chromium.chrome.browser.webapps.WebappDataStorage;
-import org.chromium.chrome.browser.webapps.WebappRegistry;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.batch.BlankCTATabInitialStateRule;
-import org.chromium.chrome.test.util.browser.webapps.WebappTestHelper;
-import org.chromium.content_public.browser.NavigationController;
-import org.chromium.content_public.browser.NavigationEntry;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.net.test.EmbeddedTestServer;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.UserActionTester;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabState;
+import org.monyhar.chrome.browser.tab.TabStateExtractor;
+import org.monyhar.chrome.browser.tab.WebContentsStateBridge;
+import org.monyhar.chrome.browser.webapps.TestFetchStorageCallback;
+import org.monyhar.chrome.browser.webapps.WebappDataStorage;
+import org.monyhar.chrome.browser.webapps.WebappRegistry;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.batch.BlankCTATabInitialStateRule;
+import org.monyhar.chrome.test.util.browser.webapps.WebappTestHelper;
+import org.monyhar.content_public.browser.NavigationController;
+import org.monyhar.content_public.browser.NavigationEntry;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.net.test.EmbeddedTestServer;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -335,7 +335,7 @@ public class BrowsingDataBridgeTest {
         TestThreadUtils.runOnUiThreadBlocking(() -> {
             BrowsingDataBridge.getInstance().clearBrowsingData(mListener,
                     new int[] {
-                            org.chromium.chrome.browser.browsing_data.BrowsingDataType.COOKIES,
+                            org.monyhar.chrome.browser.browsing_data.BrowsingDataType.COOKIES,
                     },
                     TimePeriod.LAST_WEEK);
         });
@@ -363,7 +363,7 @@ public class BrowsingDataBridgeTest {
         TestThreadUtils.runOnUiThreadBlocking(() -> {
             BrowsingDataBridge.getInstance().clearBrowsingData(mListener,
                     new int[] {
-                            org.chromium.chrome.browser.browsing_data.BrowsingDataType.HISTORY,
+                            org.monyhar.chrome.browser.browsing_data.BrowsingDataType.HISTORY,
                     },
                     TimePeriod.LAST_WEEK);
         });

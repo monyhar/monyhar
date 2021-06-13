@@ -27,7 +27,7 @@ import page_sets
 from benchmarks import press
 
 
-@benchmark.Info(emails=['hablich@chromium.org', 'tcwang@chromium.org'],
+@benchmark.Info(emails=['hablich@monyhar.org', 'tcwang@monyhar.org'],
                 component='Blink>JavaScript',
                 documentation_url='https://browserbench.org/JetStream/in-depth.html')
 

@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.header;
+package org.monyhar.chrome.browser.autofill_assistant.header;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
 import android.view.View;
 
-import org.chromium.components.browser_ui.widget.MaterialProgressBar;
-import org.chromium.components.browser_ui.widget.animation.Interpolators;
+import org.monyhar.components.browser_ui.widget.MaterialProgressBar;
+import org.monyhar.components.browser_ui.widget.animation.Interpolators;
 
 import java.util.ArrayDeque;
 import java.util.Queue;

@@ -169,7 +169,7 @@ class NaClBrowserTestGLibcExtension : public NaClBrowserTestGLibc {
 
 // PNaCl tests take a long time on windows debug builds
 // and sometimes time out.  Disable until it is made faster:
-// https://code.google.com/p/chromium/issues/detail?id=177555
+// https://code.google.com/p/monyhar/issues/detail?id=177555
 #if (defined(OS_WIN) && !defined(NDEBUG))
 #  define MAYBE_PNACL(test_name) DISABLED_##test_name
 #elif (defined(OS_LINUX) || defined(OS_CHROMEOS)) && defined(ADDRESS_SANITIZER)

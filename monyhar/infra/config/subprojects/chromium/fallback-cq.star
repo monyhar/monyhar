@@ -11,7 +11,7 @@ luci.cq_group(
     name = "fallback-empty-cq",
     retry_config = cq.RETRY_ALL_FAILURES,
     watch = cq.refset(
-        repo = "https://chromium.googlesource.com/chromium/src",
+        repo = "https://monyhar.googlesource.com/monyhar/src",
         refs = ["refs/branch-heads/.*"],
         refs_exclude = [
             details.ref
@@ -21,11 +21,11 @@ luci.cq_group(
     acls = [
         acl.entry(
             acl.CQ_COMMITTER,
-            groups = "project-chromium-committers",
+            groups = "project-monyhar-committers",
         ),
         acl.entry(
             acl.CQ_DRY_RUNNER,
-            groups = "project-chromium-tryjob-access",
+            groups = "project-monyhar-tryjob-access",
         ),
     ],
 )

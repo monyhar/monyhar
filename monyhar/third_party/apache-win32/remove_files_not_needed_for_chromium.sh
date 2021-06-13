@@ -46,9 +46,9 @@ find . \! \( \
     -path ./OPENSSL-README.txt -o \
     -path ./OWNERS -o \
     -path ./README-win32.txt -o \
-    -path ./README.chromium -o \
+    -path ./README.monyhar -o \
     -path ./README.txt -o \
     -path ./readme-redist-bins.txt -o \
     -path ./.gitignore -o \
-    -path ./remove_files_not_needed_for_chromium.sh \
+    -path ./remove_files_not_needed_for_monyhar.sh \
     \) | xargs rm -fr

@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.partnerbookmarks;
+package org.monyhar.chrome.browser.partnerbookmarks;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteException;
 import android.net.Uri;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.components.embedder_support.util.UrlConstants;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.components.embedder_support.util.UrlConstants;
 
 import java.util.NoSuchElementException;
 

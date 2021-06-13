@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@16.1.0.cr0
-package: chromium/third_party/android_deps/libs/com_google_firebase_firebase_encoders
+package: monyhar/third_party/android_deps/libs/com_google_firebase_firebase_encoders
 description: "firebase-encoders"
 data:
 - file: firebase-encoders-16.1.0.jar

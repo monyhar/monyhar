@@ -80,13 +80,13 @@ def main_mac(src_dir, allow_coverage_initializer = False):
     framework_bundle = framework_name + '.framework'
     framework_dsym_bundle = framework_bundle + '.dSYM'
     framework_unstripped_name = framework_name + '.unstripped'
-    chromium_executable = os.path.join(app_bundle, 'Contents', 'MacOS',
+    monyhar_executable = os.path.join(app_bundle, 'Contents', 'MacOS',
                                        base_name)
-    chromium_framework_executable = os.path.join(framework_bundle,
+    monyhar_framework_executable = os.path.join(framework_bundle,
                                                  framework_name)
-    chromium_framework_dsym = os.path.join(framework_dsym_bundle, 'Contents',
+    monyhar_framework_dsym = os.path.join(framework_dsym_bundle, 'Contents',
                                            'Resources', 'DWARF', framework_name)
-    if os.path.exists(chromium_executable):
+    if os.path.exists(monyhar_executable):
       # Count the number of files with at least one static initializer.
       si_count = 0
       # Find the __DATA,__mod_init_func section.
@@ -102,7 +102,7 @@ def main_mac(src_dir, allow_coverage_initializer = False):
       else:
         otool_path = 'otool'
 
-      stdout = run_process([otool_path, '-l', chromium_framework_executable])
+      stdout = run_process([otool_path, '-l', monyhar_framework_executable])
       section_index = stdout.find('sectname __mod_init_func')
       if section_index != -1:
         # If the section exists, the "size" line must follow it.
@@ -117,11 +117,11 @@ def main_mac(src_dir, allow_coverage_initializer = False):
         # one is not present, check if there is an unstripped copy of the build
         # output.
         mac_tools_path = os.path.join(src_dir, 'tools', 'mac')
-        if os.path.exists(chromium_framework_dsym):
+        if os.path.exists(monyhar_framework_dsym):
           dump_static_initializers = os.path.join(
               mac_tools_path, 'dump-static-initializers.py')
           stdout = run_process(
-              [dump_static_initializers, chromium_framework_dsym])
+              [dump_static_initializers, monyhar_framework_dsym])
           for line in stdout:
             if re.match('0x[0-9a-f]+', line) and not any(
                 f in line for f in _MAC_SI_FILE_ALLOWLIST):
@@ -134,7 +134,7 @@ def main_mac(src_dir, allow_coverage_initializer = False):
             allowed_si_count = COVERAGE_BUILD_FALLBACK_EXPECTED_MAC_SI_COUNT
           if si_count > allowed_si_count:
             print('Expected <= %d static initializers in %s, but found %d' %
-                (allowed_si_count, chromium_framework_executable,
+                (allowed_si_count, monyhar_framework_executable,
                 si_count))
             ret = 1
             show_mod_init_func = os.path.join(mac_tools_path,
@@ -144,7 +144,7 @@ def main_mac(src_dir, allow_coverage_initializer = False):
               args.append(framework_unstripped_name)
             else:
               print '# Warning: Falling back to potentially stripped output.'
-              args.append(chromium_framework_executable)
+              args.append(monyhar_framework_executable)
 
             if os.path.exists(hermetic_xcode_path):
               args.extend(['--xcode-path', hermetic_xcode_path])

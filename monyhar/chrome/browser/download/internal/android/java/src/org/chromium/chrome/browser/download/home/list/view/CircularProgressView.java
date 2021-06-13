@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.home.list.view;
+package org.monyhar.chrome.browser.download.home.list.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -15,12 +15,12 @@ import android.widget.ImageView;
 import androidx.annotation.IntDef;
 import androidx.annotation.StringRes;
 
-import org.chromium.base.MathUtils;
-import org.chromium.chrome.browser.download.internal.R;
-import org.chromium.components.browser_ui.widget.async_image.AutoAnimatorDrawable;
-import org.chromium.components.browser_ui.widget.async_image.ForegroundDrawableCompat;
-import org.chromium.ui.UiUtils;
-import org.chromium.ui.widget.ChromeImageButton;
+import org.monyhar.base.MathUtils;
+import org.monyhar.chrome.browser.download.internal.R;
+import org.monyhar.components.browser_ui.widget.async_image.AutoAnimatorDrawable;
+import org.monyhar.components.browser_ui.widget.async_image.ForegroundDrawableCompat;
+import org.monyhar.ui.UiUtils;
+import org.monyhar.ui.widget.ChromeImageButton;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

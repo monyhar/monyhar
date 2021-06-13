@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions;
+package org.monyhar.chrome.browser.omnibox.suggestions;
 
 import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.ui.base.WindowDelegate;
+import org.monyhar.ui.base.WindowDelegate;
 
 /** Provider of capabilities required to embed the omnibox suggestion list into the UI. */
 public interface OmniboxSuggestionsDropdownEmbedder {

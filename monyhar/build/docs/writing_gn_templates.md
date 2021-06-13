@@ -14,7 +14,7 @@ List all files read (or executed) by an action as `inputs`.
    use [`action_with_pydeps`] to ensure all dependent Python files are captured
    as inputs.
 
-[`action_with_pydeps`]: https://cs.chromium.org/chromium/src/build/config/python.gni?rcl=320ee4295eb7fabaa112f08d1aacc88efd1444e5&l=75
+[`action_with_pydeps`]: https://cs.monyhar.org/monyhar/src/build/config/python.gni?rcl=320ee4295eb7fabaa112f08d1aacc88efd1444e5&l=75
 
 To understand *why* actions must list all inputs directly, you need to
 understand ninja's "restat" directive, which is used for all GN `action()`s.
@@ -39,7 +39,7 @@ won't exist for the initial build.
      inputs, since removing them from GN does not immediately remove them from
      depfiles.
    * Stale paths in depfiles can cause ninja to complain of circular
-     dependencies [in some cases](https://bugs.chromium.org/p/chromium/issues/detail?id=639042).
+     dependencies [in some cases](https://bugs.monyhar.org/p/monyhar/issues/detail?id=639042).
 
 ### Ensuring "gn analyze" Knows About your Inputs
 "gn analyze" is used by bots to run only affected tests and build only affected
@@ -71,7 +71,7 @@ gn analyze //out/Debug <(echo '{
       them in.
       * `action_with_pydeps()` does this.
     * Continue using a depfile, but use an `exec_script()` to compute them when
-      [`compute_inputs_for_analyze`](https://cs.chromium.org/chromium/src/build/config/compute_inputs_for_analyze.gni)
+      [`compute_inputs_for_analyze`](https://cs.monyhar.org/monyhar/src/build/config/compute_inputs_for_analyze.gni)
       is set.
       * `grit()` does this.
 
@@ -136,7 +136,7 @@ Outputs should be atomic and take advantage of `restat=1`.
     short-circuits a build when output timestamps do not change. This feature is
     the reason that the total number of build steps sometimes decreases when
     building..
-* Use [`build_utils.AtomicOutput()`](https://cs.chromium.org/chromium/src/build/android/gyp/util/build_utils.py?rcl=7d6ba28e92bec865a7b7876c35b4621d56fb37d8&l=128)
+* Use [`build_utils.AtomicOutput()`](https://cs.monyhar.org/monyhar/src/build/android/gyp/util/build_utils.py?rcl=7d6ba28e92bec865a7b7876c35b4621d56fb37d8&l=128)
   to perform both of these techniques.
 
 Actions should be deterministic in order to avoid hard-to-reproduce bugs.
@@ -330,7 +330,7 @@ template("template_with_multiple_targets") {
 An alternative would be to explicitly set `visibility` on all inner targets,
 but doing so tends to be tedious and has little benefit.
 
-[this bug]: https://bugs.chromium.org/p/chromium/issues/detail?id=862232
+[this bug]: https://bugs.monyhar.org/p/monyhar/issues/detail?id=862232
 [forward_variables_from]: https://gn.googlesource.com/gn/+/master/docs/reference.md#func_forward_variables_from
 
 ## Useful Ninja Flags

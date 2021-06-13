@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_manager;
+package org.monyhar.chrome.browser.password_manager;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import org.chromium.chrome.R;
+import org.monyhar.chrome.R;
 
 /**
  * The adapter that populates the list popup for password generation with data. There is only

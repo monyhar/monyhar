@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.bookmarks;
+package org.monyhar.chrome.browser.bookmarks;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,15 +13,15 @@ import android.widget.TextView;
 import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.widget.Toolbar;
 
-import org.chromium.base.Log;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.SynchronousInitializationActivity;
-import org.chromium.chrome.browser.bookmarks.BookmarkBridge.BookmarkItem;
-import org.chromium.chrome.browser.bookmarks.BookmarkBridge.BookmarkModelObserver;
-import org.chromium.components.bookmarks.BookmarkId;
-import org.chromium.components.browser_ui.widget.TintedDrawable;
-import org.chromium.components.url_formatter.UrlFormatter;
-import org.chromium.url.GURL;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.SynchronousInitializationActivity;
+import org.monyhar.chrome.browser.bookmarks.BookmarkBridge.BookmarkItem;
+import org.monyhar.chrome.browser.bookmarks.BookmarkBridge.BookmarkModelObserver;
+import org.monyhar.components.bookmarks.BookmarkId;
+import org.monyhar.components.browser_ui.widget.TintedDrawable;
+import org.monyhar.components.url_formatter.UrlFormatter;
+import org.monyhar.url.GURL;
 
 /**
  * The activity that enables the user to modify the title, url and parent folder of a bookmark.

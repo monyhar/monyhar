@@ -64,7 +64,7 @@ class SharedImageRepresentationDawnD3D : public SharedImageRepresentationDawn {
   WGPUTexture texture_ = nullptr;
   dawn_native::d3d12::ExternalImageDXGI* external_image_ = nullptr;
 
-  // TODO(cwallez@chromium.org): Load procs only once when the factory is
+  // TODO(cwallez@monyhar.org): Load procs only once when the factory is
   // created and pass a pointer to them around?
   DawnProcTable dawn_procs_;
 };

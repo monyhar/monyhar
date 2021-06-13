@@ -26,17 +26,17 @@ source_set("android") {
 }
 
 android_library("java") {
-  resources_package = "org.chromium.chrome.browser.webapps"
+  resources_package = "org.monyhar.chrome.browser.webapps"
 
   sources = [
-    "java/src/org/chromium/chrome/browser/webapps/AddToHomescreenBottomSheetViewBinder.java",
-    "java/src/org/chromium/chrome/browser/webapps/AddToHomescreenIPHController.java",
-    "java/src/org/chromium/chrome/browser/webapps/ImageZoomView.java",
-    "java/src/org/chromium/chrome/browser/webapps/PwaBottomSheetController.java",
-    "java/src/org/chromium/chrome/browser/webapps/PwaBottomSheetControllerFactory.java",
-    "java/src/org/chromium/chrome/browser/webapps/PwaBottomSheetControllerProvider.java",
-    "java/src/org/chromium/chrome/browser/webapps/PwaInstallBottomSheetContent.java",
-    "java/src/org/chromium/chrome/browser/webapps/PwaInstallBottomSheetView.java",
+    "java/src/org/monyhar/chrome/browser/webapps/AddToHomescreenBottomSheetViewBinder.java",
+    "java/src/org/monyhar/chrome/browser/webapps/AddToHomescreenIPHController.java",
+    "java/src/org/monyhar/chrome/browser/webapps/ImageZoomView.java",
+    "java/src/org/monyhar/chrome/browser/webapps/PwaBottomSheetController.java",
+    "java/src/org/monyhar/chrome/browser/webapps/PwaBottomSheetControllerFactory.java",
+    "java/src/org/monyhar/chrome/browser/webapps/PwaBottomSheetControllerProvider.java",
+    "java/src/org/monyhar/chrome/browser/webapps/PwaInstallBottomSheetContent.java",
+    "java/src/org/monyhar/chrome/browser/webapps/PwaInstallBottomSheetView.java",
   ]
 
   deps = [
@@ -70,8 +70,8 @@ android_library("java") {
 
 generate_jni("jni_headers") {
   sources = [
-    "java/src/org/chromium/chrome/browser/webapps/PwaBottomSheetController.java",
-    "java/src/org/chromium/chrome/browser/webapps/PwaBottomSheetControllerProvider.java",
+    "java/src/org/monyhar/chrome/browser/webapps/PwaBottomSheetController.java",
+    "java/src/org/monyhar/chrome/browser/webapps/PwaBottomSheetControllerProvider.java",
   ]
 }
 

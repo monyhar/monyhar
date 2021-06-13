@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Assistant histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -35,8 +35,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Assistant.BetterOnboarding.Click"
     enum="AssistantBetterOnboardingType" expires_after="2021-11-21">
-  <owner>xiaohuic@chromium.org</owner>
-  <owner>croissant-eng@chromium.org</owner>
+  <owner>xiaohuic@monyhar.org</owner>
+  <owner>croissant-eng@monyhar.org</owner>
   <summary>
     The number of times Assistant better onboarding buttons are clicked.
   </summary>
@@ -44,8 +44,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Assistant.BetterOnboarding.Shown"
     enum="AssistantBetterOnboardingMode" expires_after="2021-10-17">
-  <owner>xiaohuic@chromium.org</owner>
-  <owner>croissant-eng@chromium.org</owner>
+  <owner>xiaohuic@monyhar.org</owner>
+  <owner>croissant-eng@monyhar.org</owner>
   <summary>
     The number of times Assistant better onboarding UI is shown. The UI has a
     few different modes recorded in the enum.
@@ -54,8 +54,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Assistant.ButtonClickCount" enum="AssistantButtonId"
     expires_after="2022-04-11">
-  <owner>xiaohuic@chromium.org</owner>
-  <owner>meilinw@chromium.org</owner>
+  <owner>xiaohuic@monyhar.org</owner>
+  <owner>meilinw@monyhar.org</owner>
   <summary>
     The number of times buttons on Assistant UI (e.g., minimize) are clicked.
   </summary>
@@ -63,8 +63,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Assistant.ContextEnabledUserCount" enum="BooleanEnabled"
     expires_after="2021-12-05">
-  <owner>updowndota@chromium.org</owner>
-  <owner>xiaohuic@chromium.org</owner>
+  <owner>updowndota@monyhar.org</owner>
+  <owner>xiaohuic@monyhar.org</owner>
   <summary>
     Among eligible users, whether the user has the Assistant context (related
     info) enabled. Recorded once for every UMA upload. The set of eligible users
@@ -75,8 +75,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Assistant.DspHotwordDetection"
     enum="DspHotwordDetectionStatus" expires_after="2021-12-05">
-  <owner>meilinw@chromium.org</owner>
-  <owner>xiaohuic@chromium.org</owner>
+  <owner>meilinw@monyhar.org</owner>
+  <owner>xiaohuic@monyhar.org</owner>
   <summary>
     Counts the number of times Dsp hotword gets detected in each status, to help
     capture the hotword false acceptance rate.
@@ -85,8 +85,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Assistant.EntryPoint" enum="AssistantEntryPoint"
     expires_after="2021-10-17">
-  <owner>xiaohuic@chromium.org</owner>
-  <owner>meilinw@chromium.org</owner>
+  <owner>xiaohuic@monyhar.org</owner>
+  <owner>meilinw@monyhar.org</owner>
   <summary>
     Record the Assistant entry point where Assistant UI becomes visible.
   </summary>
@@ -94,8 +94,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Assistant.ExitPoint" enum="AssistantExitPoint"
     expires_after="2021-08-22">
-  <owner>xiaohuic@chromium.org</owner>
-  <owner>meilinw@chromium.org</owner>
+  <owner>xiaohuic@monyhar.org</owner>
+  <owner>meilinw@monyhar.org</owner>
   <summary>
     Record the Assistant exit point where Assistant UI becomes invisible.
   </summary>
@@ -103,8 +103,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Assistant.HotwordEnableNotification" enum="BooleanHit"
     expires_after="2021-12-31">
-  <owner>updowndota@chromium.org</owner>
-  <owner>croissant-eng@chromium.org</owner>
+  <owner>updowndota@monyhar.org</owner>
+  <owner>croissant-eng@monyhar.org</owner>
   <summary>
     Counts the number of times user click the hotword enable notification to
     open Assistant settings.
@@ -113,8 +113,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Assistant.Interaction.Resolution"
     enum="AssistantInteractionResolution" expires_after="2021-07-22">
-  <owner>xiaohuic@chromium.org</owner>
-  <owner>croissant-eng@chromium.org</owner>
+  <owner>xiaohuic@monyhar.org</owner>
+  <owner>croissant-eng@monyhar.org</owner>
   <summary>
     Record the Assistant interaction resolution code. It indicates how the
     Assistant server interpreted a particular query and decision on the state,
@@ -124,8 +124,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Assistant.OptInFlow.GetSettingsRequestTime" units="ms"
     expires_after="2021-09-05">
-  <owner>updowndota@chromium.org</owner>
-  <owner>croissant-eng@chromium.org</owner>
+  <owner>updowndota@monyhar.org</owner>
+  <owner>croissant-eng@monyhar.org</owner>
   <summary>
     Amount of time between get settings request and response. The request will
     be sent for each time the Assistant OptIn Flow is triggered to get string
@@ -135,8 +135,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Assistant.OptInFlow.LoadingTimeoutCount" units="timeouts"
     expires_after="2021-10-04">
-  <owner>updowndota@chromium.org</owner>
-  <owner>croissant-eng@chromium.org</owner>
+  <owner>updowndota@monyhar.org</owner>
+  <owner>croissant-eng@monyhar.org</owner>
   <summary>
     Number of times that the loading timeout triggers. The loading timeout is
     set by the Assistant OptIn Flow loading screen, which shows up during the
@@ -146,29 +146,29 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Assistant.OptInFlowStatus" enum="AssistantOptInFlowStatus"
     expires_after="2021-12-05">
-  <owner>updowndota@chromium.org</owner>
-  <owner>croissant-eng@chromium.org</owner>
+  <owner>updowndota@monyhar.org</owner>
+  <owner>croissant-eng@monyhar.org</owner>
   <summary>Record the status of the Assistant opt-in flow.</summary>
 </histogram>
 
 <histogram name="Assistant.QueryCountPerEntryPoint" enum="AssistantEntryPoint"
     expires_after="2021-10-25">
-  <owner>xiaohuic@chromium.org</owner>
-  <owner>meilinw@chromium.org</owner>
+  <owner>xiaohuic@monyhar.org</owner>
+  <owner>meilinw@monyhar.org</owner>
   <summary>Number of queries fired for each entry point.</summary>
 </histogram>
 
 <histogram name="Assistant.QueryResponseType" enum="AssistantQueryResponseType"
     expires_after="2021-08-09">
-  <owner>xiaohuic@chromium.org</owner>
-  <owner>meilinw@chromium.org</owner>
+  <owner>xiaohuic@monyhar.org</owner>
+  <owner>meilinw@monyhar.org</owner>
   <summary>The Assistant query response type.</summary>
 </histogram>
 
 <histogram name="Assistant.QuerySource" enum="AssistantQuerySource"
     expires_after="2021-10-10">
-  <owner>xiaohuic@chromium.org</owner>
-  <owner>meilinw@chromium.org</owner>
+  <owner>xiaohuic@monyhar.org</owner>
+  <owner>meilinw@monyhar.org</owner>
   <summary>
     The source of Assistant query (e.g. dialog plate text field, voice input).
     Recorded when the query is committed.
@@ -177,8 +177,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Assistant.ServiceEnabledUserCount" enum="BooleanEnabled"
     expires_after="2021-11-21">
-  <owner>xiaohuic@chromium.org</owner>
-  <owner>meilinw@chromium.org</owner>
+  <owner>xiaohuic@monyhar.org</owner>
+  <owner>meilinw@monyhar.org</owner>
   <summary>
     Among eligible users, whether the user has the Assistant service enabled.
     Recorded once for every UMA upload. The set of eligible users includes all
@@ -189,7 +189,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Assistant.ServiceReadyTime" units="ms"
     expires_after="2021-08-29">
-  <owner>xiaohuic@chromium.org</owner>
+  <owner>xiaohuic@monyhar.org</owner>
   <owner>jeroendh@google.com</owner>
   <summary>
     Amount of time between when the Assistant service is launched, and when the
@@ -199,14 +199,14 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Assistant.ServiceStartTime" units="ms"
     expires_after="2021-08-29">
-  <owner>updowndota@chromium.org</owner>
+  <owner>updowndota@monyhar.org</owner>
   <summary>Amount of time spent in starting Assistant service.</summary>
 </histogram>
 
 <histogram name="Assistant.SetDspHotwordLocale" enum="BooleanSuccess"
     expires_after="2021-10-10">
-  <owner>meilinw@chromium.org</owner>
-  <owner>xiaohuic@chromium.org</owner>
+  <owner>meilinw@monyhar.org</owner>
+  <owner>xiaohuic@monyhar.org</owner>
   <summary>
     For each attempt to set the hotword locale for a DSP device, counts whether
     the attempt succeeded.
@@ -215,8 +215,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Assistant.VoiceSearch.AgsaVersion{Timing}" units="Version"
     expires_after="2021-08-29">
-  <owner>wylieb@chromium.org</owner>
-  <owner>fgorski@chromium.org</owner>
+  <owner>wylieb@monyhar.org</owner>
+  <owner>fgorski@monyhar.org</owner>
   <owner>jds@google.com</owner>
   <summary>
     (Android only) Reports the current Agsa version on the device. The version
@@ -229,8 +229,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Assistant.VoiceSearch.ConsentOutcome"
     enum="AssistantConsentOutcome" expires_after="2021-10-31">
-  <owner>wylieb@chromium.org</owner>
-  <owner>fgorski@chromium.org</owner>
+  <owner>wylieb@monyhar.org</owner>
+  <owner>fgorski@monyhar.org</owner>
   <summary>
     (Android only) Reports the outcome of the consent dialog shown for the
     assistant.
@@ -239,8 +239,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Assistant.VoiceSearch.UserEligibility.FailureReason{Timing}"
     enum="EligibilityFailureReason" expires_after="2021-08-22">
-  <owner>wylieb@chromium.org</owner>
-  <owner>fgorski@chromium.org</owner>
+  <owner>wylieb@monyhar.org</owner>
+  <owner>fgorski@monyhar.org</owner>
   <owner>jds@google.com</owner>
   <summary>
     (Android only) Reports why users failed the eligibility check for the
@@ -260,8 +260,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Assistant.VoiceSearch.UserEligibility{Timing}"
     enum="BooleanEligible" expires_after="2021-08-22">
-  <owner>wylieb@chromium.org</owner>
-  <owner>fgorski@chromium.org</owner>
+  <owner>wylieb@monyhar.org</owner>
+  <owner>fgorski@monyhar.org</owner>
   <owner>jds@google.com</owner>
   <summary>
     (Android only) Reports user eligibility for Assistant voice search. This is
@@ -275,7 +275,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="QuickAnswers.ActiveImpression" enum="QuickAnswersResultType"
     expires_after="2021-10-31">
   <owner>llin@google.com</owner>
-  <owner>croissant-eng@chromium.org</owner>
+  <owner>croissant-eng@monyhar.org</owner>
   <summary>
     For quick answer impression that fulfills a user's intent, records the
     result type. ChromeOS only.
@@ -285,7 +285,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="QuickAnswers.ActiveImpression.Duration" units="ms"
     expires_after="2021-11-14">
   <owner>llin@google.com</owner>
-  <owner>croissant-eng@chromium.org</owner>
+  <owner>croissant-eng@monyhar.org</owner>
   <summary>
     For quick answer impression that fulfills a user's intent, records the
     impression duration. ChromeOS only.
@@ -295,7 +295,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="QuickAnswers.Click" enum="QuickAnswersResultType"
     expires_after="2021-11-21">
   <owner>llin@google.com</owner>
-  <owner>croissant-eng@chromium.org</owner>
+  <owner>croissant-eng@monyhar.org</owner>
   <summary>
     For every quick answer click event, records the result type. ChromeOS only.
   </summary>
@@ -304,7 +304,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="QuickAnswers.Click.Duration" units="ms"
     expires_after="2021-11-21">
   <owner>llin@google.com</owner>
-  <owner>croissant-eng@chromium.org</owner>
+  <owner>croissant-eng@monyhar.org</owner>
   <summary>
     For every quick answer click event, records the duration between fetch
     finish and user clicks. ChromeOS only.
@@ -314,7 +314,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="QuickAnswers.Consent" units="impressions"
     expires_after="2021-10-31">
   <owner>llin@google.com</owner>
-  <owner>croissant-eng@chromium.org</owner>
+  <owner>croissant-eng@monyhar.org</owner>
   <summary>
     For every quick answers consent impression, records how many times the user
     has seen the consent. ChromeOS only.
@@ -324,7 +324,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram base="true" name="QuickAnswers.Consent.Duration" units="ms"
     expires_after="2021-08-09">
   <owner>llin@google.com</owner>
-  <owner>croissant-eng@chromium.org</owner>
+  <owner>croissant-eng@monyhar.org</owner>
   <summary>
     For every quick answers consent interaction event, records how long the user
     has seen the consent before. ChromeOS only.
@@ -334,7 +334,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram base="true" name="QuickAnswers.Consent.Impression"
     units="impressions" expires_after="2021-10-31">
   <owner>llin@google.com</owner>
-  <owner>croissant-eng@chromium.org</owner>
+  <owner>croissant-eng@monyhar.org</owner>
   <summary>
     For every quick answers consent interaction event, records how many times
     the user has seen the consent before. ChromeOS only.
@@ -344,7 +344,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="QuickAnswers.ContextMenu.Close" enum="BooleanClicked"
     expires_after="2021-11-07">
   <owner>updowndota@google.com</owner>
-  <owner>croissant-eng@chromium.org</owner>
+  <owner>croissant-eng@monyhar.org</owner>
   <summary>
     Records whether or not the user interacted (via clicking) with a context
     menu, whether or not that menu included any Quick Answers. Recorded when the
@@ -356,8 +356,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="QuickAnswers.ContextMenu.Close.Duration{InteractionType}"
     units="ms" expires_after="2021-12-31">
-  <owner>updowndota@chromium.org</owner>
-  <owner>croissant-eng@chromium.org</owner>
+  <owner>updowndota@monyhar.org</owner>
+  <owner>croissant-eng@monyhar.org</owner>
   <summary>
     Records the amount of time the context menu was shown before close if the
     user {InteractionType} (via clicking) with the context menu. Recorded on
@@ -372,7 +372,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="QuickAnswers.Intent" enum="QuickAnswersIntentType"
     expires_after="2021-10-31">
   <owner>llin@google.com</owner>
-  <owner>croissant-eng@chromium.org</owner>
+  <owner>croissant-eng@monyhar.org</owner>
   <summary>
     For quick answer fetch, records the intent generated on-device. ChromeOS
     only.
@@ -382,7 +382,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="QuickAnswers.Loading.Duration" units="ms"
     expires_after="2021-11-21">
   <owner>llin@google.com</owner>
-  <owner>croissant-eng@chromium.org</owner>
+  <owner>croissant-eng@monyhar.org</owner>
   <summary>
     For every quick answers fetch, records the duration between fetch start and
     fetch finish. ChromeOS only.
@@ -392,7 +392,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="QuickAnswers.Loading.Status" enum="QuickAnswersLoadStatus"
     expires_after="2021-10-31">
   <owner>llin@google.com</owner>
-  <owner>croissant-eng@chromium.org</owner>
+  <owner>croissant-eng@monyhar.org</owner>
   <summary>
     For every quick answers fetch, records the result status. ChromeOS only.
   </summary>
@@ -401,7 +401,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="QuickAnswers.NetworkError.IntentType"
     enum="QuickAnswersIntentType" expires_after="2021-10-31">
   <owner>updowndota@google.com</owner>
-  <owner>croissant-eng@chromium.org</owner>
+  <owner>croissant-eng@monyhar.org</owner>
   <summary>
     Records the intent type when network error occurs during the quick answers
     fetch. ChromeOS only.
@@ -411,7 +411,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="QuickAnswers.RequestTextLength.{IntentType}"
     units="characters" expires_after="2021-08-29">
   <owner>updowndota@google.com</owner>
-  <owner>croissant-eng@chromium.org</owner>
+  <owner>croissant-eng@monyhar.org</owner>
   <summary>
     For every quick answer request, records the length of the selected text that
     is being used for fetching {IntentType} results. ChromeOS only.
@@ -426,7 +426,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="QuickAnswers.Result" enum="QuickAnswersResultType"
     expires_after="2021-10-31">
   <owner>llin@google.com</owner>
-  <owner>croissant-eng@chromium.org</owner>
+  <owner>croissant-eng@monyhar.org</owner>
   <summary>
     For every quick answer result received event, records the result type.
     ChromeOS only.
@@ -436,7 +436,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="QuickAnswers.Result.Duration" units="ms"
     expires_after="2021-10-31">
   <owner>llin@google.com</owner>
-  <owner>croissant-eng@chromium.org</owner>
+  <owner>croissant-eng@monyhar.org</owner>
   <summary>
     For every quick answer result received event, records the duration between
     fetch start and fetch finish. ChromeOS only.
@@ -446,7 +446,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="QuickAnswers.SelectedContent.Length" units="characters"
     expires_after="2021-10-31">
   <owner>llin@google.com</owner>
-  <owner>croissant-eng@chromium.org</owner>
+  <owner>croissant-eng@monyhar.org</owner>
   <summary>
     For every quick answer request, records the length of the selected text that
     is being considered for fetching quick answers. ChromeOS only.

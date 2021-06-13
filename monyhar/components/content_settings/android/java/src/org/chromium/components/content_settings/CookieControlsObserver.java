@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.content_settings;
+package org.monyhar.components.content_settings;
 
 /**
  * Interface for a class that wants to receive cookie updates from CookieControlsBridge.

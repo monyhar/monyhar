@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.compat;
+package org.monyhar.base.compat;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -14,7 +14,7 @@ import android.view.Display;
 import android.view.InputEvent;
 import android.view.VerifiedInputEvent;
 
-import org.chromium.base.annotations.VerifiesOnR;
+import org.monyhar.base.annotations.VerifiesOnR;
 
 import java.io.File;
 

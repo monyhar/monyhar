@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.content.Context;
 import android.content.Intent;
@@ -17,24 +17,24 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.FragmentManager;
 
-import org.chromium.base.ObserverList;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.embedder_support.view.ContentView;
-import org.chromium.ui.base.DeviceFormFactor;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.weblayer_private.interfaces.APICallException;
-import org.chromium.weblayer_private.interfaces.BrowserEmbeddabilityMode;
-import org.chromium.weblayer_private.interfaces.DarkModeStrategy;
-import org.chromium.weblayer_private.interfaces.IBrowser;
-import org.chromium.weblayer_private.interfaces.IBrowserClient;
-import org.chromium.weblayer_private.interfaces.IObjectWrapper;
-import org.chromium.weblayer_private.interfaces.ITab;
-import org.chromium.weblayer_private.interfaces.IUrlBarController;
-import org.chromium.weblayer_private.interfaces.ObjectWrapper;
-import org.chromium.weblayer_private.interfaces.StrictModeWorkaround;
-import org.chromium.weblayer_private.media.MediaRouteDialogFragmentImpl;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.embedder_support.view.ContentView;
+import org.monyhar.ui.base.DeviceFormFactor;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.weblayer_private.interfaces.APICallException;
+import org.monyhar.weblayer_private.interfaces.BrowserEmbeddabilityMode;
+import org.monyhar.weblayer_private.interfaces.DarkModeStrategy;
+import org.monyhar.weblayer_private.interfaces.IBrowser;
+import org.monyhar.weblayer_private.interfaces.IBrowserClient;
+import org.monyhar.weblayer_private.interfaces.IObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.ITab;
+import org.monyhar.weblayer_private.interfaces.IUrlBarController;
+import org.monyhar.weblayer_private.interfaces.ObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.StrictModeWorkaround;
+import org.monyhar.weblayer_private.media.MediaRouteDialogFragmentImpl;
 
 import java.util.Arrays;
 import java.util.List;

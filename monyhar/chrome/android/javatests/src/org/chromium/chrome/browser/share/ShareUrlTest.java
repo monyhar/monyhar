@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share;
+package org.monyhar.chrome.browser.share;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -15,13 +15,13 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.task.PostTask;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeBrowserTestRule;
-import org.chromium.components.browser_ui.share.ShareParams;
-import org.chromium.components.dom_distiller.core.DomDistillerUrlUtils;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeBrowserTestRule;
+import org.monyhar.components.browser_ui.share.ShareParams;
+import org.monyhar.components.dom_distiller.core.DomDistillerUrlUtils;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.ui.base.WindowAndroid;
 
 import java.lang.ref.WeakReference;
 

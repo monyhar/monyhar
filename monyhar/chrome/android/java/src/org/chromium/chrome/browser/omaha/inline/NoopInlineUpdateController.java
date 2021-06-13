@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omaha.inline;
+package org.monyhar.chrome.browser.omaha.inline;
 
 import android.app.Activity;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.browser.omaha.UpdateStatusProvider;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.browser.omaha.UpdateStatusProvider;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 /**
  * An update controller that does nothing. This is used if the inline update experiment has

@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.policy.test;
+package org.monyhar.components.policy.test;
 
 import android.os.Bundle;
 
 import org.json.JSONArray;
 import org.junit.Assert;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 /**
  * Helper class to transform Java types to {@link Bundle}s usable by the Policy system.

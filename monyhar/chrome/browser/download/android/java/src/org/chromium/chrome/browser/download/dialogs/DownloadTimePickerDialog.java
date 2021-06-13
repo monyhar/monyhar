@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.dialogs;
+package org.monyhar.chrome.browser.download.dialogs;
 
 import android.app.TimePickerDialog;
 import android.content.Context;
@@ -12,7 +12,7 @@ import android.widget.TimePicker;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.chrome.browser.download.R;
+import org.monyhar.chrome.browser.download.R;
 
 /**
  * A {@link TimePickerDialog} subclass for download time selection. Works on all Android versions.

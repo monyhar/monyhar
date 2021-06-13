@@ -34,8 +34,8 @@ static_library("s2cellid") {
     "src/s2/s2latlng.h",
     "src/s2/s2point.h",
   ]
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
   public_configs = [ ":s2_config" ]
   deps = [ "//base" ]
 }

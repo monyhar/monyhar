@@ -3,7 +3,7 @@ projects. The actual binaries are pulled from Google Storage, normally as part
 of a gclient hook.
 
 This directory also exists as a stand-alone git mirror at
-https://chromium.googlesource.com/chromium/src/buildtools/.
+https://monyhar.googlesource.com/monyhar/src/buildtools/.
 That mirror exists so that the shared build tools can be shared between
 the various Chromium-related projects without each one needing to maintain
 their own versionining of each binary.

@@ -270,13 +270,13 @@ class CherryPicker(object):
         self._cherry_pick_git_commit(commit_id)
 
     def _generate_amalgamation(self):
-        for config_name in ['chromium', 'dev']:
+        for config_name in ['monyhar', 'dev']:
             generate_amalgamation.make_aggregate(config_name)
             generate_amalgamation.extract_sqlite_api(config_name)
 
     def _add_amalgamation(self):
         os.chdir(generate_amalgamation._SQLITE_SRC_DIR)
-        for config_name in ['chromium', 'dev']:
+        for config_name in ['monyhar', 'dev']:
             cmd = [
                 'git', 'add',
                 generate_amalgamation.get_amalgamation_dir(config_name)

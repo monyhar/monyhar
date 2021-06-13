@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import androidx.test.filters.SmallTest;
 
@@ -13,12 +13,12 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.content_public.browser.test.ContentJUnit4ClassRunner;
-import org.chromium.content_public.browser.test.util.JavaScriptUtils;
-import org.chromium.content_shell_apk.ContentShellActivityTestRule;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.content_public.browser.test.ContentJUnit4ClassRunner;
+import org.monyhar.content_public.browser.test.util.JavaScriptUtils;
+import org.monyhar.content_shell_apk.ContentShellActivityTestRule;
 
 import java.util.concurrent.TimeoutException;
 

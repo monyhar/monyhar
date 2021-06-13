@@ -97,7 +97,7 @@ by non-browser embedders as well as by Chromium.
     * This functionality is tested on Android by way of sending Network Error
       Logging reports [in the Cronet Java tests][4].
 
-[1]: https://chromium.googlesource.com/chromium/src/+/HEAD/third_party/blink/renderer/core/frame/reporting_observer.h
-[2]: https://chromium.googlesource.com/chromium/src/+/HEAD/content/browser/net/reporting_service_proxy.cc
-[3]: https://chromium.googlesource.com/chromium/src/+/HEAD/chrome/browser/net/chrome_network_delegate.h
-[4]: https://chromium.googlesource.com/chromium/src/+/HEAD/components/cronet/android/test/javatests/src/org/chromium/net/NetworkErrorLoggingTest.java
+[1]: https://monyhar.googlesource.com/monyhar/src/+/HEAD/third_party/blink/renderer/core/frame/reporting_observer.h
+[2]: https://monyhar.googlesource.com/monyhar/src/+/HEAD/content/browser/net/reporting_service_proxy.cc
+[3]: https://monyhar.googlesource.com/monyhar/src/+/HEAD/chrome/browser/net/chrome_network_delegate.h
+[4]: https://monyhar.googlesource.com/monyhar/src/+/HEAD/components/cronet/android/test/javatests/src/org/monyhar/net/NetworkErrorLoggingTest.java

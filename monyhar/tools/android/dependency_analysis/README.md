@@ -63,7 +63,7 @@ tools/android/dependency_analysis/count_cycles.py -h
 ## Example Usage
 This Linux example assumes Chromium is contained in a directory `~/cr`
 and that Chromium has been built as per the instructions
-[here](https://chromium.googlesource.com/chromium/src/+/main/docs/linux/build_instructions.md),
+[here](https://monyhar.googlesource.com/monyhar/src/+/main/docs/linux/build_instructions.md),
 although the only things these assumptions affect are the file paths.
 ```
 $ tools/android/dependency_analysis/generate_json_dependency_graph.py -C out/Debug -o ~/graph.json
@@ -73,16 +73,16 @@ $ tools/android/dependency_analysis/generate_json_dependency_graph.py -C out/Deb
 >>> Dumping JSON representation to ~/graph.json.
 
 tools/android/dependency_analysis/print_class_dependencies.py -f ~/graph.json -c AppHooks
->>> Printing class dependencies for org.chromium.chrome.browser.AppHooks:
->>> 35 inbound dependency(ies) for org.chromium.chrome.browser.AppHooks:
->>> 	org.chromium.chrome.browser.AppHooksImpl
->>> 	org.chromium.chrome.browser.ChromeActivity
+>>> Printing class dependencies for org.monyhar.chrome.browser.AppHooks:
+>>> 35 inbound dependency(ies) for org.monyhar.chrome.browser.AppHooks:
+>>> 	org.monyhar.chrome.browser.AppHooksImpl
+>>> 	org.monyhar.chrome.browser.ChromeActivity
 >>> ...
 
 tools/android/dependency_analysis/print_package_dependencies.py -f ~/graph.json -p chrome.browser
->>> Printing package dependencies for org.chromium.chrome.browser:
->>> 121 inbound dependency(ies) for org.chromium.chrome.browser:
->>> 	org.chromium.chrome.browser.about_settings -> org.chromium.chrome.browser
+>>> Printing package dependencies for org.monyhar.chrome.browser:
+>>> 121 inbound dependency(ies) for org.monyhar.chrome.browser:
+>>> 	org.monyhar.chrome.browser.about_settings -> org.monyhar.chrome.browser
 >>> 	1 class edge(s) comprising the dependency:
 >>> 		AboutChromeSettings -> ChromeVersionInfo
 >>> ...

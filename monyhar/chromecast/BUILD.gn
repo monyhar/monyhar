@@ -630,7 +630,7 @@ buildflag_header("chromecast_buildflags") {
     "IS_SINGLE_VOLUME=$is_single_volume",
     "USE_ANDROID_USER_AGENT=$use_android_user_agent",
     "USE_CHROMECAST_CDMS=$use_chromecast_cdms",
-    "ENABLE_CHROMIUM_RUNTIME_CAST_RENDERER=$enable_chromium_runtime_cast_renderer",
+    "ENABLE_CHROMIUM_RUNTIME_CAST_RENDERER=$enable_monyhar_runtime_cast_renderer",
   ]
 }
 
@@ -681,7 +681,7 @@ if (is_android) {
 
     shared_libraries = [ "//chromecast/android:libcast_shell_android" ]
 
-    product_config_java_packages = [ "org.chromium.chromecast.shell" ]
+    product_config_java_packages = [ "org.monyhar.chromecast.shell" ]
 
     deps = [
       ":cast_shell_apk_assets",

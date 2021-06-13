@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview;
+package org.monyhar.android_webview;
 
-import org.chromium.base.task.PostTask;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 class JsResultHandler implements JsResultReceiver, JsPromptResultReceiver {
     private AwContentsClientBridge mBridge;

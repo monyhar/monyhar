@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill.settings;
+package org.monyhar.chrome.browser.autofill.settings;
 
 import static com.google.common.truth.Truth.assertThat;
 
@@ -18,15 +18,15 @@ import org.junit.Test;
 import org.junit.rules.TestRule;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.FlakyTest;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.autofill.AutofillTestHelper;
-import org.chromium.chrome.browser.autofill.PersonalDataManager.CreditCard;
-import org.chromium.chrome.browser.settings.SettingsActivity;
-import org.chromium.chrome.browser.settings.SettingsActivityTestRule;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.test.util.FlakyTest;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.autofill.AutofillTestHelper;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager.CreditCard;
+import org.monyhar.chrome.browser.settings.SettingsActivity;
+import org.monyhar.chrome.browser.settings.SettingsActivityTestRule;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /**
  * Instrumentation tests for AutofillLocalCardEditor.

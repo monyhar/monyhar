@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.infobar;
+package org.monyhar.chrome.browser.infobar;
 
 import android.content.Context;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.browser_ui.site_settings.SingleWebsiteSettings;
-import org.chromium.components.infobars.InfoBar;
-import org.chromium.components.infobars.InfoBarLayout;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.settings.SettingsLauncherImpl;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.browser_ui.site_settings.SingleWebsiteSettings;
+import org.monyhar.components.infobars.InfoBar;
+import org.monyhar.components.infobars.InfoBarLayout;
 
 /**
  * An infobar to disclose to the user that the default search engine has geolocation access by

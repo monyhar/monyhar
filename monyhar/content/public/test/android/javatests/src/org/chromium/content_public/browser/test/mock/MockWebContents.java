@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.browser.test.mock;
+package org.monyhar.content_public.browser.test.mock;
 
 import android.annotation.SuppressLint;
 import android.graphics.Rect;
@@ -11,23 +11,23 @@ import android.os.Parcel;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.content_public.browser.AccessibilitySnapshotCallback;
-import org.chromium.content_public.browser.GlobalFrameRoutingId;
-import org.chromium.content_public.browser.ImageDownloadCallback;
-import org.chromium.content_public.browser.JavaScriptCallback;
-import org.chromium.content_public.browser.MessagePort;
-import org.chromium.content_public.browser.NavigationController;
-import org.chromium.content_public.browser.RenderFrameHost;
-import org.chromium.content_public.browser.RenderWidgetHostView;
-import org.chromium.content_public.browser.ViewEventSink;
-import org.chromium.content_public.browser.Visibility;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.WebContentsObserver;
-import org.chromium.ui.OverscrollRefreshHandler;
-import org.chromium.ui.base.EventForwarder;
-import org.chromium.ui.base.ViewAndroidDelegate;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.url.GURL;
+import org.monyhar.content_public.browser.AccessibilitySnapshotCallback;
+import org.monyhar.content_public.browser.GlobalFrameRoutingId;
+import org.monyhar.content_public.browser.ImageDownloadCallback;
+import org.monyhar.content_public.browser.JavaScriptCallback;
+import org.monyhar.content_public.browser.MessagePort;
+import org.monyhar.content_public.browser.NavigationController;
+import org.monyhar.content_public.browser.RenderFrameHost;
+import org.monyhar.content_public.browser.RenderWidgetHostView;
+import org.monyhar.content_public.browser.ViewEventSink;
+import org.monyhar.content_public.browser.Visibility;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.WebContentsObserver;
+import org.monyhar.ui.OverscrollRefreshHandler;
+import org.monyhar.ui.base.EventForwarder;
+import org.monyhar.ui.base.ViewAndroidDelegate;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.url.GURL;
 
 import java.util.Collections;
 import java.util.List;

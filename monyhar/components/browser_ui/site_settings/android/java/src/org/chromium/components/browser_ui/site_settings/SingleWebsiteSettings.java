@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.site_settings;
+package org.monyhar.components.browser_ui.site_settings;
 
-import static org.chromium.components.browser_ui.site_settings.WebsitePreferenceBridge.SITE_WILDCARD;
+import static org.monyhar.components.browser_ui.site_settings.WebsitePreferenceBridge.SITE_WILDCARD;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -28,17 +28,17 @@ import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
-import org.chromium.base.Callback;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.components.browser_ui.settings.ChromeImageViewPreference;
-import org.chromium.components.browser_ui.settings.ChromeSwitchPreference;
-import org.chromium.components.browser_ui.settings.ManagedPreferencesUtils;
-import org.chromium.components.browser_ui.settings.SettingsUtils;
-import org.chromium.components.content_settings.ContentSettingValues;
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.components.embedder_support.browser_context.BrowserContextHandle;
-import org.chromium.components.embedder_support.util.Origin;
-import org.chromium.content_public.browser.ContentFeatureList;
+import org.monyhar.base.Callback;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.components.browser_ui.settings.ChromeImageViewPreference;
+import org.monyhar.components.browser_ui.settings.ChromeSwitchPreference;
+import org.monyhar.components.browser_ui.settings.ManagedPreferencesUtils;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.components.content_settings.ContentSettingValues;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.components.embedder_support.browser_context.BrowserContextHandle;
+import org.monyhar.components.embedder_support.util.Origin;
+import org.monyhar.content_public.browser.ContentFeatureList;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -69,8 +69,8 @@ public class SingleWebsiteSettings extends SiteSettingsPreferenceFragment
     // EXTRA_SITE is present, the fragment will display the permissions in that
     // Website object. If EXTRA_SITE_ADDRESS is present, the fragment will find all
     // permissions for that website address and display those.
-    public static final String EXTRA_SITE = "org.chromium.chrome.preferences.site";
-    public static final String EXTRA_SITE_ADDRESS = "org.chromium.chrome.preferences.site_address";
+    public static final String EXTRA_SITE = "org.monyhar.chrome.preferences.site";
+    public static final String EXTRA_SITE_ADDRESS = "org.monyhar.chrome.preferences.site_address";
 
     // Used to store mPreviousNotificationPermission when the activity is paused.
     private static final String PREVIOUS_NOTIFICATION_PERMISSION_KEY =

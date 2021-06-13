@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments;
+package org.monyhar.chrome.browser.payments;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.browser.autofill.PersonalDataManager.CreditCard;
-import org.chromium.components.payments.PaymentApp;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager.CreditCard;
+import org.monyhar.components.payments.PaymentApp;
 
 /** The interface for creating payment apps from Autofill cards. */
 public interface AutofillPaymentAppCreator {

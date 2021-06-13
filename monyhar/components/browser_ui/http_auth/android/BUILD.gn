@@ -6,7 +6,7 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/components/browser_ui/http_auth/LoginPrompt.java",
+    "java/src/org/monyhar/components/browser_ui/http_auth/LoginPrompt.java",
   ]
 
   deps = [
@@ -19,7 +19,7 @@ android_library("java") {
     "//ui/android:ui_java",
     "//url:gurl_java",
   ]
-  resources_package = "org.chromium.components.browser_ui.http_auth"
+  resources_package = "org.monyhar.components.browser_ui.http_auth"
 }
 
 android_resources("java_resources") {

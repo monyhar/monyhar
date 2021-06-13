@@ -16,8 +16,8 @@ static_library("one_euro_filter") {
     "src/one_euro_filter.h",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 
   public_configs = [ ":one_euro_filter_config" ]
 }

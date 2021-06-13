@@ -14,7 +14,7 @@ namespace explore_sites {
 // in enums.xml.
 //
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.explore_sites
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.explore_sites
 enum class ExploreSitesCatalogUpdateRequestSource {
   kNewTabPage = 0,
   kExploreSitesPage = 1,

@@ -20,25 +20,25 @@
     {
       # To support Crashpad’s standalone build and its build depending on
       # external libraries, Crashpad code depending on base should do so through
-      # this shim, which will either get base from mini_chromium or an external
+      # this shim, which will either get base from mini_monyhar or an external
       # library depending on the build type.
       'target_name': 'base',
       'type': 'none',
       'conditions': [
         ['crashpad_dependencies=="standalone"', {
           'dependencies': [
-            'mini_chromium/base/base.gyp:base',
+            'mini_monyhar/base/base.gyp:base',
           ],
           'export_dependent_settings': [
-            'mini_chromium/base/base.gyp:base',
+            'mini_monyhar/base/base.gyp:base',
           ],
         }],
         ['crashpad_dependencies=="external"', {
           'dependencies': [
-            '../../../../mini_chromium/mini_chromium/base/base.gyp:base',
+            '../../../../mini_monyhar/mini_monyhar/base/base.gyp:base',
           ],
           'export_dependent_settings': [
-            '../../../../mini_chromium/mini_chromium/base/base.gyp:base',
+            '../../../../mini_monyhar/mini_monyhar/base/base.gyp:base',
           ],
         }],
       ],

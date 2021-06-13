@@ -62,7 +62,7 @@ namespace ime {
 // Callback upon async completion of DownloadToFile(), passing the originally
 // issued |request_id| (as returned by DownloadToFile()) and an |error_code| (as
 // defined at
-// https://cs.chromium.org/chromium/src/net/base/net_error_list.h?rcl=f9c935b73381772d508eebba1e216c437139d475).
+// https://cs.monyhar.org/monyhar/src/net/base/net_error_list.h?rcl=f9c935b73381772d508eebba1e216c437139d475).
 typedef void (*ImeCrosDownloadCallback)(int request_id, int status_code);
 
 // A simple downloading callback.
@@ -80,7 +80,7 @@ typedef void (*ImeSequencedTask)(int task_id);
 typedef void (*ChromeLoggerFunc)(int severity, const char* message);
 
 // Based on RequestPriority defined at
-// https://cs.chromium.org/chromium/src/net/base/request_priority.h?rcl=f9c935b73381772d508eebba1e216c437139d475
+// https://cs.monyhar.org/monyhar/src/net/base/request_priority.h?rcl=f9c935b73381772d508eebba1e216c437139d475
 enum DownloadPriority {
   THROTTLED = 0,
   MINIMUM_PRIORITY = THROTTLED,

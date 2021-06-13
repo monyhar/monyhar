@@ -20,7 +20,7 @@ class RankerExample;
 }  // namespace assist_ranker
 
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.contextualsearch
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.contextualsearch
 enum AssistRankerPrediction {
   ASSIST_RANKER_PREDICTION_UNDETERMINED,
   ASSIST_RANKER_PREDICTION_UNAVAILABLE,

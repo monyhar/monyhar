@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feedback;
+package org.monyhar.chrome.browser.feedback;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
@@ -11,19 +11,19 @@ import android.graphics.Rect;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.tab.SadTab;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tasks.tab_management.TabUiFeatureUtilities;
-import org.chromium.chrome.features.start_surface.StartSurfaceConfiguration;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetControllerProvider;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.ui.UiUtils;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.tab.SadTab;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tasks.tab_management.TabUiFeatureUtilities;
+import org.monyhar.chrome.features.start_surface.StartSurfaceConfiguration;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetControllerProvider;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.ui.UiUtils;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * A utility class to take a feedback-formatted screenshot of an {@link Activity}.

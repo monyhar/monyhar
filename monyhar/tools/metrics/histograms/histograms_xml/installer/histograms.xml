@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Installer histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -26,7 +26,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed long time ago. Replaced by UpdateEngine metrics.
   </obsolete>
-  <owner>zeuthen@chromium.org</owner>
+  <owner>zeuthen@monyhar.org</owner>
   <summary>
     The number of update attempts until the update has been applied. This is
     reported every time the device has completed an update.
@@ -35,7 +35,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Installer.DevModeErrorCodes" enum="UpdateEngineErrorCode"
     expires_after="M85">
-  <owner>zeuthen@chromium.org</owner>
+  <owner>zeuthen@monyhar.org</owner>
   <summary>Errors from update_engine process when running in dev mode.</summary>
 </histogram>
 
@@ -44,7 +44,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed long time ago. Replaced by UpdateEngine metrics.
   </obsolete>
-  <owner>zeuthen@chromium.org</owner>
+  <owner>zeuthen@monyhar.org</owner>
   <summary>
     The overhead in downloading extra bytes due to errors/interruptions.
     Expressed as a percentage of the bytes that are actually needed to be
@@ -57,7 +57,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed long time ago. Replaced by UpdateEngine metrics.
   </obsolete>
-  <owner>zeuthen@chromium.org</owner>
+  <owner>zeuthen@monyhar.org</owner>
   <summary>
     The combinations of protocol and source server that were used to complete a
     successful update.
@@ -69,7 +69,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed long time ago. Replaced by UpdateEngine metrics.
   </obsolete>
-  <owner>zeuthen@chromium.org</owner>
+  <owner>zeuthen@monyhar.org</owner>
   <summary>
     The number of update attempts with a full update payload until the update
     has been applied. This is reported on every update attempt.
@@ -81,7 +81,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed long time ago. Replaced by UpdateEngine metrics.
   </obsolete>
-  <owner>zeuthen@chromium.org</owner>
+  <owner>zeuthen@monyhar.org</owner>
   <summary>
     The source used to provision the install-date-days value sent to Omaha with
     every request. This is reported when OOBE completes (M34 or later) or when
@@ -94,7 +94,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed long time ago. Replaced by UpdateEngine metrics.
   </obsolete>
-  <owner>zeuthen@chromium.org</owner>
+  <owner>zeuthen@monyhar.org</owner>
   <summary>
     Errors from update_engine process when running in normal mode.
   </summary>
@@ -104,7 +104,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed long time ago. Replaced by UpdateEngine metrics.
   </obsolete>
-  <owner>zeuthen@chromium.org</owner>
+  <owner>zeuthen@monyhar.org</owner>
   <summary>
     The age of the OS, defined as the age of the /etc/lsb-release file. This is
     reported on every update check but at most once a day.
@@ -116,7 +116,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed long time ago. Replaced by UpdateEngine metrics.
   </obsolete>
-  <owner>zeuthen@chromium.org</owner>
+  <owner>zeuthen@monyhar.org</owner>
   <summary>
     The number of update attempts until the update has been applied. This is
     reported on every update attempt.
@@ -128,7 +128,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed long time ago. Replaced by UpdateEngine metrics.
   </obsolete>
-  <owner>zeuthen@chromium.org</owner>
+  <owner>zeuthen@monyhar.org</owner>
   <summary>
     The type of update payload used to update the device. The difference between
     &quot;Full&quot; and &quot;Forced Full&quot; is that in the latter, the
@@ -141,8 +141,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Installer.PowerwashCount" units="powerwashes"
     expires_after="2021-12-29">
-  <owner>kimjae@chromium.org</owner>
-  <owner>chromeos-core-services@chromium.org</owner>
+  <owner>kimjae@monyhar.org</owner>
+  <owner>chromeos-core-services@monyhar.org</owner>
   <summary>
     The number of times a Chrome OS device has been powerwashed (factory reset)
     without subsequently going through recovery and/or changing the dev mode
@@ -155,7 +155,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed long time ago. Replaced by UpdateEngine metrics.
   </obsolete>
-  <owner>zeuthen@chromium.org</owner>
+  <owner>zeuthen@monyhar.org</owner>
   <summary>
     The number of consecutive times a device has failed to boot an update that
     successfully applied. This metric is reported every time the firmware fails
@@ -166,7 +166,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Installer.Recovery.Reason" enum="ChromeOSRecoveryReason"
     expires_after="2021-12-29">
-  <owner>kimjae@chromium.org</owner>
+  <owner>kimjae@monyhar.org</owner>
   <owner>chromeos-core-services@google.com</owner>
   <summary>
     The reason for entering recovery mode immediately prior to a recovery.
@@ -182,7 +182,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed long time ago. Replaced by UpdateEngine metrics.
   </obsolete>
-  <owner>zeuthen@chromium.org</owner>
+  <owner>zeuthen@monyhar.org</owner>
   <summary>
     Number of MBs downloaded from during an update that completed successfully.
   </summary>
@@ -193,7 +193,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed long time ago. Replaced by UpdateEngine metrics.
   </obsolete>
-  <owner>zeuthen@chromium.org</owner>
+  <owner>zeuthen@monyhar.org</owner>
   <summary>
     Wall-clock duration between when an update has successfully completed (and
     the user is presented with the &quot;reboot arrow&quot;) and when the system
@@ -207,7 +207,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed long time ago. Replaced by UpdateEngine metrics.
   </obsolete>
-  <owner>zeuthen@chromium.org</owner>
+  <owner>zeuthen@monyhar.org</owner>
   <summary>
     Total number of MBs downloaded since the last successful update. This also
     includes all the bytes downloaded during any prior failed attempts.
@@ -219,7 +219,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed long time ago. Replaced by UpdateEngine metrics.
   </obsolete>
-  <owner>zeuthen@chromium.org</owner>
+  <owner>zeuthen@monyhar.org</owner>
   <summary>
     Absolute wall-clock time duration it took for the update to complete from
     the time an update first began. It includes not just the time the device was
@@ -232,7 +232,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed long time ago. Replaced by UpdateEngine metrics.
   </obsolete>
-  <owner>zeuthen@chromium.org</owner>
+  <owner>zeuthen@monyhar.org</owner>
   <summary>
     Uptime duration it took for the update to complete from the time an update
     first began. It does not include the time the device spent sleeping, but it
@@ -246,7 +246,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed long time ago. Replaced by UpdateEngine metrics.
   </obsolete>
-  <owner>zeuthen@chromium.org</owner>
+  <owner>zeuthen@monyhar.org</owner>
   <summary>
     Number of times the device was rebooted by the user since an update began
     and until it completed successfully.
@@ -258,7 +258,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed long time ago. Replaced by UpdateEngine metrics.
   </obsolete>
-  <owner>zeuthen@chromium.org</owner>
+  <owner>zeuthen@monyhar.org</owner>
   <summary>
     The number of update attempts that didn't complete because a newer update
     was detected during the update operation. This is reported every time the
@@ -271,7 +271,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed long time ago. Replaced by UpdateEngine metrics.
   </obsolete>
-  <owner>zeuthen@chromium.org</owner>
+  <owner>zeuthen@monyhar.org</owner>
   <summary>
     The number of consecutive different abandoned update payloads since the last
     successful update. This is reported every time an update payload is
@@ -284,7 +284,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed long time ago. Replaced by UpdateEngine metrics.
   </obsolete>
-  <owner>zeuthen@chromium.org</owner>
+  <owner>zeuthen@monyhar.org</owner>
   <summary>
     The time in seconds it took to update a Chrome OS system -- from completing
     an update check to reboot pending.
@@ -296,7 +296,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed long time ago. Replaced by UpdateEngine metrics.
   </obsolete>
-  <owner>zeuthen@chromium.org</owner>
+  <owner>zeuthen@monyhar.org</owner>
   <summary>
     Number of times the download URLs were switched due to failures.
   </summary>

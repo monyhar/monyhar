@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.selection;
+package org.monyhar.content.browser.selection;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -13,8 +13,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import org.chromium.content.R;
-import org.chromium.ui.base.DeviceFormFactor;
+import org.monyhar.content.R;
+import org.monyhar.ui.base.DeviceFormFactor;
 
 /**
  * Paste popup implementation based on floating ActionModes.

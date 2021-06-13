@@ -20,7 +20,7 @@ change the outages configuration you can modify the parameters to the call. The
 available parameters are:
 
 * `disable_cq_experiments`: (default: False) Disable experimental tryjobs on the
-  chromium CQ. This can be used to save both builder and test capacity when the
+  monyhar CQ. This can be used to save both builder and test capacity when the
   CQ is capacity-constrained. The exact amount and configurations of capacity
   that is freed up depends on the specifics of what builders have experimental
   tryjobs and what experiment percentage is used, but disabling all CQ

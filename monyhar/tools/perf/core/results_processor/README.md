@@ -15,14 +15,14 @@ contents:
 ## Test results file
 
 The `_test_results.jsonl` file tries to follow the
-[LUCI test results format](https://source.chromium.org/chromium/infra/infra/+/main:go/src/go.chromium.org/luci/resultdb/sink/proto/v1/test_result.proto).
+[LUCI test results format](https://source.monyhar.org/monyhar/infra/infra/+/main:go/src/go.monyhar.org/luci/resultdb/sink/proto/v1/test_result.proto).
 Its every line is a json message of the `testResult` type. There are following
 additional conventions:
 
 - The following keys are mandatory:
   - status
   - testPath
-- For [json3 output](https://chromium.googlesource.com/chromium/src/+/main/docs/testing/json_test_results_format.md), the following are also mandatory:
+- For [json3 output](https://monyhar.googlesource.com/monyhar/src/+/main/docs/testing/json_test_results_format.md), the following are also mandatory:
   - expected
   - runDuration
 - testPath is either in the form `{benchmark_name}/{story_name}` or in the form
@@ -34,7 +34,7 @@ with `trace/`. For details, see the [Traces subsection](#traces) below.
 - Device and benchmark diagnostics (also optional) are stored in a special
 artifact with the name `diagnostics.json` in the form of a json dict.
 Diagnostic names must be listed in the
-[reserved infos](https://cs.chromium.org/chromium/src/third_party/catapult/tracing/tracing/value/diagnostics/reserved_infos.py)
+[reserved infos](https://cs.monyhar.org/monyhar/src/third_party/catapult/tracing/tracing/value/diagnostics/reserved_infos.py)
 module.
 - All artifacts files for a single test result are in a separate subdirectory.
 
@@ -98,9 +98,9 @@ of reading):
 ## Two modes of operation
 
 Results Processor can be invoked as a standalone script
-[tools/perf/results_processor](https://cs.chromium.org/chromium/src/tools/perf/results_processor?q=tools/perf/results_processor)
+[tools/perf/results_processor](https://cs.monyhar.org/monyhar/src/tools/perf/results_processor?q=tools/perf/results_processor)
 or as a python module (see e.g.
-[benchmark_runner.py](https://cs.chromium.org/chromium/src/tools/perf/core/benchmark_runner.py)
+[benchmark_runner.py](https://cs.monyhar.org/monyhar/src/tools/perf/core/benchmark_runner.py)
 ).
 
 The standalone script has a mandatory argument `--intermediate-dir` that should

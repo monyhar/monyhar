@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test.services;
+package org.monyhar.android_webview.test.services;
 
 import android.content.ComponentName;
 import android.content.Intent;
@@ -13,8 +13,8 @@ import com.google.common.util.concurrent.SettableFuture;
 
 import org.junit.Assert;
 
-import org.chromium.android_webview.test.AwActivityTestRule;
-import org.chromium.base.ContextUtils;
+import org.monyhar.android_webview.test.AwActivityTestRule;
+import org.monyhar.base.ContextUtils;
 
 /**
  * An abstraction to manage Service connections with the "try-with-resources" pattern. Instantiate

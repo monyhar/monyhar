@@ -661,7 +661,7 @@ TEST_F(SmbFsMounterE2eTest, MountSuccess) {
         // Emulates cros-disks mount success.
         PostMountEvent(source_path, kMountPath);
 
-        // Emulates smbfs connecting to the org.chromium.SmbFs D-Bus service and
+        // Emulates smbfs connecting to the org.monyhar.SmbFs D-Bus service and
         // providing a Mojo connection endpoint.
         const std::string token =
             source_path.substr(sizeof(kMountUrlPrefix) - 1);

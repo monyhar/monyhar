@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.firstrun;
+package org.monyhar.chrome.browser.firstrun;
 
 import android.accounts.AuthenticatorDescription;
 import android.support.test.InstrumentationRegistry;
@@ -14,16 +14,16 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.test.util.AdvancedMockContext;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.components.signin.AccountManagerFacadeImpl;
-import org.chromium.components.signin.AccountManagerFacadeProvider;
-import org.chromium.components.signin.AccountUtils;
-import org.chromium.components.signin.test.util.AccountHolder;
-import org.chromium.components.signin.test.util.FakeAccountManagerDelegate;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.test.util.AdvancedMockContext;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.components.signin.AccountManagerFacadeImpl;
+import org.monyhar.components.signin.AccountManagerFacadeProvider;
+import org.monyhar.components.signin.AccountUtils;
+import org.monyhar.components.signin.test.util.AccountHolder;
+import org.monyhar.components.signin.test.util.FakeAccountManagerDelegate;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /**
  * Unit Test for {@link FirstRunUtils}.

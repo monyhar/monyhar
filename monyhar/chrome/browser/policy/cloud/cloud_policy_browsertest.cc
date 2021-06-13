@@ -139,7 +139,7 @@ std::string GetTestPolicy(const char* homepage, int key_version) {
       "    \"mandatory\": {"
       "      \"ShowHomeButton\": true,"
       "      \"RestoreOnStartup\": 4,"
-      "      \"URLBlocklist\": [ \"dev.chromium.org\", \"youtube.com\" ],"
+      "      \"URLBlocklist\": [ \"dev.monyhar.org\", \"youtube.com\" ],"
       "      \"MaxInvalidationFetchDelay\": 1000"
       "    },"
       "    \"recommended\": {"
@@ -166,7 +166,7 @@ void GetExpectedTestPolicy(PolicyMap* expected, const char* homepage) {
                 POLICY_SCOPE_USER, POLICY_SOURCE_CLOUD, base::Value(4),
                 nullptr);
   base::ListValue list;
-  list.AppendString("dev.chromium.org");
+  list.AppendString("dev.monyhar.org");
   list.AppendString("youtube.com");
   expected->Set(key::kURLBlocklist, POLICY_LEVEL_MANDATORY, POLICY_SCOPE_USER,
                 POLICY_SOURCE_CLOUD, list.Clone(), nullptr);
@@ -493,7 +493,7 @@ TEST(CloudPolicyProtoTest, VerifyProtobufEquivalence) {
   // Build a ChromeSettingsProto message with one policy of each supported type.
   em::ChromeSettingsProto chrome_settings;
   chrome_settings.mutable_homepagelocation()->set_homepagelocation(
-      "chromium.org");
+      "monyhar.org");
   chrome_settings.mutable_showhomebutton()->set_showhomebutton(true);
   chrome_settings.mutable_restoreonstartup()->set_restoreonstartup(4);
   em::StringList* list =
@@ -512,7 +512,7 @@ TEST(CloudPolicyProtoTest, VerifyProtobufEquivalence) {
 
   // Build an equivalent CloudPolicySettings message.
   em::CloudPolicySettings cloud_policy;
-  cloud_policy.mutable_homepagelocation()->set_value("chromium.org");
+  cloud_policy.mutable_homepagelocation()->set_value("monyhar.org");
   cloud_policy.mutable_showhomebutton()->set_value(true);
   cloud_policy.mutable_restoreonstartup()->set_value(4);
   list = cloud_policy.mutable_disabledschemes()->mutable_value();

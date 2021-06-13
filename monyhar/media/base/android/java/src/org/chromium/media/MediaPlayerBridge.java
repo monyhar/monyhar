@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.media;
+package org.monyhar.media;
 
 import android.annotation.SuppressLint;
 import android.media.MediaPlayer;
@@ -14,14 +14,14 @@ import android.util.Base64;
 import android.util.Base64InputStream;
 import android.view.Surface;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.StreamUtil;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.task.AsyncTask;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.StreamUtil;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.task.AsyncTask;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;

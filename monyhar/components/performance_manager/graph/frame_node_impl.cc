@@ -66,7 +66,7 @@ void FrameNodeImpl::Bind(
   // - Navigation from the initial empty document to the first real document.
   // - Navigation rejected by RenderFrameHostImpl::ValidateDidCommitParams().
   // See discussion:
-  // https://chromium-review.googlesource.com/c/chromium/src/+/1572459/6#message-bd31f3e73f96bd9f7721be81ba6ac0076d053147
+  // https://monyhar-review.googlesource.com/c/monyhar/src/+/1572459/6#message-bd31f3e73f96bd9f7721be81ba6ac0076d053147
   receiver_.reset();
   receiver_.Bind(std::move(receiver));
 }

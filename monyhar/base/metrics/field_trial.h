@@ -193,7 +193,7 @@ class BASE_EXPORT FieldTrial : public RefCounted<FieldTrial> {
   // at any time after initialization (should not be interleaved with
   // AppendGroup calls). Once disabled, there is no way to re-enable a
   // trial.
-  // TODO(mad): http://code.google.com/p/chromium/issues/detail?id=121446
+  // TODO(mad): http://code.google.com/p/monyhar/issues/detail?id=121446
   // This doesn't properly reset to Default when a group was forced.
   void Disable();
 

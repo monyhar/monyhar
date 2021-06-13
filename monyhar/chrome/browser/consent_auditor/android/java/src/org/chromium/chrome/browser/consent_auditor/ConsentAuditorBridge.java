@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.consent_auditor;
+package org.monyhar.chrome.browser.consent_auditor;
 
 import androidx.annotation.StringRes;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.signin.base.CoreAccountId;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.signin.base.CoreAccountId;
 
 import java.util.List;
 

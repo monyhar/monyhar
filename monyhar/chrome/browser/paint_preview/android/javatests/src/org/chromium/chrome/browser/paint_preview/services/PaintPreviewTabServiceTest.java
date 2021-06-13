@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.paint_preview.services;
+package org.monyhar.chrome.browser.paint_preview.services;
 
 import android.app.Activity;
 import android.support.test.InstrumentationRegistry;
@@ -16,18 +16,18 @@ import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.TabModel;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.net.test.EmbeddedTestServer;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.TabModel;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.net.test.EmbeddedTestServer;
 
 import java.util.HashSet;
 import java.util.concurrent.TimeUnit;

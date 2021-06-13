@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.contacts_picker;
+package org.monyhar.components.browser_ui.contacts_picker;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -19,8 +19,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.payments.mojom.PaymentAddress;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.payments.mojom.PaymentAddress;
 
 import java.util.Arrays;
 import java.util.List;

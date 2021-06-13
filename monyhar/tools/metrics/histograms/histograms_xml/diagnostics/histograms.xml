@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Diagnostics histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -124,7 +124,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Diagnostics.Recovery.SQLiteIntegrityCookie"
     enum="DiagnosticsResult" expires_after="M77">
-  <owner>shess@chromium.org</owner>
+  <owner>shess@monyhar.org</owner>
   <summary>
     Shows the success and failure rates of the SQLiteIntegrityCookie recovery
     step that runs on recovery startups. The recovery step attempts to guarantee
@@ -135,7 +135,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Diagnostics.Recovery.SQLiteIntegrityDatabaseTracker"
     enum="DiagnosticsResult" expires_after="M77">
-  <owner>shess@chromium.org</owner>
+  <owner>shess@monyhar.org</owner>
   <summary>
     Shows the success and failure rates of the SQLiteIntegrityDatabaseTracker
     recovery step that runs on recovery startups. The recovery step attempts to
@@ -146,7 +146,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Diagnostics.Recovery.SQLiteIntegrityFavicons"
     enum="DiagnosticsResult" expires_after="M77">
-  <owner>shess@chromium.org</owner>
+  <owner>shess@monyhar.org</owner>
   <summary>
     Shows the success and failure rates of the SQLiteIntegrityFavicons recovery
     step that runs on recovery startups. The recovery step attempts to guarantee
@@ -157,7 +157,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Diagnostics.Recovery.SQLiteIntegrityHistory"
     enum="DiagnosticsResult" expires_after="M77">
-  <owner>shess@chromium.org</owner>
+  <owner>shess@monyhar.org</owner>
   <summary>
     Shows the success and failure rates of the SQLiteIntegrityHistory recovery
     step that runs on recovery startups. The recovery step attempts to guarantee
@@ -190,7 +190,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Diagnostics.Recovery.SQLiteIntegrityTopSites"
     enum="DiagnosticsResult" expires_after="M77">
-  <owner>shess@chromium.org</owner>
+  <owner>shess@monyhar.org</owner>
   <summary>
     Shows the success and failure rates of the SQLiteIntegrityTopSites recovery
     step that runs on recovery startups. The recovery step attempts to guarantee
@@ -201,7 +201,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Diagnostics.Recovery.SQLiteIntegrityWebData"
     enum="DiagnosticsResult" expires_after="M85">
-  <owner>shess@chromium.org</owner>
+  <owner>shess@monyhar.org</owner>
   <summary>
     Shows the success and failure rates of the SQLiteIntegrityWebData recovery
     step that runs on recovery startups. The recovery step attempts to guarantee
@@ -326,7 +326,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Diagnostics.Test.SQLiteIntegrityCookie"
     enum="DiagnosticsResult" expires_after="M77">
-  <owner>shess@chromium.org</owner>
+  <owner>shess@monyhar.org</owner>
   <summary>
     Shows the success and failure rates of the SQLiteIntegrityCookie test that
     runs on recovery startups. The test checks the integrity of the Cookie
@@ -336,7 +336,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Diagnostics.Test.SQLiteIntegrityDatabaseTracker"
     enum="DiagnosticsResult" expires_after="M77">
-  <owner>shess@chromium.org</owner>
+  <owner>shess@monyhar.org</owner>
   <summary>
     Shows the success and failure rates of the SQLiteIntegrityDatabaseTracker
     test that runs on recovery startups. The test checks the integrity of the
@@ -346,7 +346,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Diagnostics.Test.SQLiteIntegrityFavicons"
     enum="DiagnosticsResult" expires_after="M77">
-  <owner>shess@chromium.org</owner>
+  <owner>shess@monyhar.org</owner>
   <summary>
     Shows the success and failure rates of the SQLiteIntegrityFavicons test that
     runs on recovery startups. The test checks the integrity of the Favicons
@@ -356,7 +356,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Diagnostics.Test.SQLiteIntegrityHistory"
     enum="DiagnosticsResult" expires_after="M77">
-  <owner>shess@chromium.org</owner>
+  <owner>shess@monyhar.org</owner>
   <summary>
     Shows the success and failure rates of the SQLiteIntegrityHistory test that
     runs on recovery startups. The test checks the integrity of the History
@@ -386,7 +386,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Diagnostics.Test.SQLiteIntegrityTopSites"
     enum="DiagnosticsResult" expires_after="M77">
-  <owner>shess@chromium.org</owner>
+  <owner>shess@monyhar.org</owner>
   <summary>
     Shows the success and failure rates of the SQLiteIntegrityTopSites test that
     runs on recovery startups. The test checks the integrity of the TopSites
@@ -396,7 +396,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Diagnostics.Test.SQLiteIntegrityWebData"
     enum="DiagnosticsResult" expires_after="M77">
-  <owner>shess@chromium.org</owner>
+  <owner>shess@monyhar.org</owner>
   <summary>
     Shows the success and failure rates of the SQLiteIntegrityWebData test that
     runs on recovery startups. The test checks the integrity of the Web Data
@@ -416,7 +416,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Diagnostics.TestFailures" enum="DiagnosticsTestName"
     expires_after="M77">
-  <owner>shess@chromium.org</owner>
+  <owner>shess@monyhar.org</owner>
   <summary>
     Histogram comparing the various types of diagnostic test failures when
     diagnostic tests are run. Note that some types of test failures cause the

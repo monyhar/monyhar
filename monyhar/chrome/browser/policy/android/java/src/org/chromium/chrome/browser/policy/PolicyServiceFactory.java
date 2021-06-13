@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.policy;
+package org.monyhar.chrome.browser.policy;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.policy.PolicyService;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.policy.PolicyService;
 
 /**
  * Get the PolicyService instance. Note that the associated C++ instance won't

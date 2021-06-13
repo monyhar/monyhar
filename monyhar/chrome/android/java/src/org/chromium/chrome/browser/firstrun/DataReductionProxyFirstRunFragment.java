@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.firstrun;
+package org.monyhar.chrome.browser.firstrun;
 
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -18,12 +18,12 @@ import android.widget.TextView;
 import androidx.appcompat.widget.SwitchCompat;
 import androidx.fragment.app.Fragment;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.datareduction.DataReductionPromoUtils;
-import org.chromium.chrome.browser.net.spdyproxy.DataReductionProxySettings;
-import org.chromium.ui.text.NoUnderlineClickableSpan;
-import org.chromium.ui.text.SpanApplier;
-import org.chromium.ui.text.SpanApplier.SpanInfo;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.datareduction.DataReductionPromoUtils;
+import org.monyhar.chrome.browser.net.spdyproxy.DataReductionProxySettings;
+import org.monyhar.ui.text.NoUnderlineClickableSpan;
+import org.monyhar.ui.text.SpanApplier;
+import org.monyhar.ui.text.SpanApplier.SpanInfo;
 
 /**
  * The First Run Experience fragment that allows the user to opt in to Data Saver.

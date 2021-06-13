@@ -10,6 +10,6 @@ create {
 }
 
 upload {
-  pkg_prefix: "chromium/third_party"
+  pkg_prefix: "monyhar/third_party"
   universal: true
 }

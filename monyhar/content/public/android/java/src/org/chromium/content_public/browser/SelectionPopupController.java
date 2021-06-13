@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.browser;
+package org.monyhar.content_public.browser;
 
 import android.content.Intent;
 import android.view.ActionMode;
 import android.view.textclassifier.TextClassifier;
 
-import org.chromium.content.browser.selection.SelectionPopupControllerImpl;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.content.browser.selection.SelectionPopupControllerImpl;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * An interface that handles input-related web content selection UI like action mode

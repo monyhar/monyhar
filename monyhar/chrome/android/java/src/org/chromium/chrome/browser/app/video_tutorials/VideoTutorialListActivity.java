@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.app.video_tutorials;
+package org.monyhar.chrome.browser.app.video_tutorials;
 
 import android.os.Bundle;
 
-import org.chromium.chrome.browser.SynchronousInitializationActivity;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcher;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcherConfig;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcherFactory;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.video_tutorials.R;
-import org.chromium.chrome.browser.video_tutorials.Tutorial;
-import org.chromium.chrome.browser.video_tutorials.VideoTutorialService;
-import org.chromium.chrome.browser.video_tutorials.VideoTutorialServiceFactory;
-import org.chromium.chrome.browser.video_tutorials.list.TutorialListCoordinator;
-import org.chromium.components.browser_ui.util.GlobalDiscardableReferencePool;
+import org.monyhar.chrome.browser.SynchronousInitializationActivity;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcher;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcherConfig;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcherFactory;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.video_tutorials.R;
+import org.monyhar.chrome.browser.video_tutorials.Tutorial;
+import org.monyhar.chrome.browser.video_tutorials.VideoTutorialService;
+import org.monyhar.chrome.browser.video_tutorials.VideoTutorialServiceFactory;
+import org.monyhar.chrome.browser.video_tutorials.list.TutorialListCoordinator;
+import org.monyhar.components.browser_ui.util.GlobalDiscardableReferencePool;
 
 /**
  * Activity for displaying a list of video tutorials available to watch.

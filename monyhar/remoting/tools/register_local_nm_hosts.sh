@@ -77,7 +77,7 @@ register_hosts_for_all_channels() {
     register_hosts "${build_dir}" \
         "${HOME}/.config/google-chrome-unstable/NativeMessagingHosts"
     register_hosts "${build_dir}" \
-        "${HOME}/.config/chromium/NativeMessagingHosts"
+        "${HOME}/.config/monyhar/NativeMessagingHosts"
   fi
 }
 
@@ -102,7 +102,7 @@ unregister_hosts_for_all_channels() {
     unregister_hosts "${HOME}/.config/google-chrome-beta/NativeMessagingHosts"
     unregister_hosts \
         "${HOME}/.config/google-chrome-unstable/NativeMessagingHosts"
-    unregister_hosts "${HOME}/.config/chromium/NativeMessagingHosts"
+    unregister_hosts "${HOME}/.config/monyhar/NativeMessagingHosts"
   fi
 }
 

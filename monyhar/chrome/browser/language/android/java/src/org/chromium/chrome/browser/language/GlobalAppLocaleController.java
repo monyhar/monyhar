@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.language;
+package org.monyhar.chrome.browser.language;
 
 import android.content.Context;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.text.TextUtils;
 
-import org.chromium.base.LocaleUtils;
-import org.chromium.components.language.AndroidLanguageMetricsBridge;
+import org.monyhar.base.LocaleUtils;
+import org.monyhar.components.language.AndroidLanguageMetricsBridge;
 
 import java.util.Locale;
 

@@ -8,7 +8,7 @@
 namespace cc {
 
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.cc.input
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.cc.input
 enum class BrowserControlsState {
   kShown = 1,
   kHidden = 2,

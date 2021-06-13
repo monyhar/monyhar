@@ -20,7 +20,7 @@ from telemetry import benchmark
 import page_sets
 from benchmarks import press
 
-@benchmark.Info(emails=['hablich@chromium.org'],
+@benchmark.Info(emails=['hablich@monyhar.org'],
                 component='Blink')
 class Speedometer(press._PressBenchmark): # pylint: disable=protected-access
   @classmethod
@@ -30,7 +30,7 @@ class Speedometer(press._PressBenchmark): # pylint: disable=protected-access
   def CreateStorySet(self, options):
     return page_sets.SpeedometerStorySet()
 
-@benchmark.Info(emails=['hablich@chromium.org'],
+@benchmark.Info(emails=['hablich@monyhar.org'],
                 component='Blink')
 class V8SpeedometerFuture(Speedometer):
   """Speedometer benchmark with the V8 flag --future.

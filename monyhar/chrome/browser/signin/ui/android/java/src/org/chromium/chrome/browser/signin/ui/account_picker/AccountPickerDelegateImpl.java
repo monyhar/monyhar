@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.signin.ui.account_picker;
+package org.monyhar.chrome.browser.signin.ui.account_picker;
 
 import android.accounts.AccountManager;
 import android.app.Activity;
@@ -11,23 +11,23 @@ import android.content.Intent;
 import androidx.annotation.MainThread;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ThreadUtils;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.signin.services.IdentityServicesProvider;
-import org.chromium.chrome.browser.signin.services.SigninManager;
-import org.chromium.chrome.browser.signin.services.WebSigninBridge;
-import org.chromium.chrome.browser.signin.ui.SigninUtils;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.signin.AccountManagerFacadeProvider;
-import org.chromium.components.signin.AccountUtils;
-import org.chromium.components.signin.base.CoreAccountInfo;
-import org.chromium.components.signin.base.GoogleServiceAuthError;
-import org.chromium.components.signin.identitymanager.ConsentLevel;
-import org.chromium.components.signin.identitymanager.IdentityManager;
-import org.chromium.components.signin.metrics.SignoutReason;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.signin.services.IdentityServicesProvider;
+import org.monyhar.chrome.browser.signin.services.SigninManager;
+import org.monyhar.chrome.browser.signin.services.WebSigninBridge;
+import org.monyhar.chrome.browser.signin.ui.SigninUtils;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.signin.AccountManagerFacadeProvider;
+import org.monyhar.components.signin.AccountUtils;
+import org.monyhar.components.signin.base.CoreAccountInfo;
+import org.monyhar.components.signin.base.GoogleServiceAuthError;
+import org.monyhar.components.signin.identitymanager.ConsentLevel;
+import org.monyhar.components.signin.identitymanager.IdentityManager;
+import org.monyhar.components.signin.metrics.SignoutReason;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * This class is used in web sign-in flow for the account picker bottom sheet.

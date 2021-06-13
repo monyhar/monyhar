@@ -17,7 +17,7 @@
 // @end
 // @implementation PageLoadTestCase
 // - (void)testPageload {
-//   [ShellEarlGrey loadURL:GURL("https://chromium.org")];
+//   [ShellEarlGrey loadURL:GURL("https://monyhar.org")];
 // }
 //
 // In this example ShellEarlGreyImpl must implement -loadURL:.

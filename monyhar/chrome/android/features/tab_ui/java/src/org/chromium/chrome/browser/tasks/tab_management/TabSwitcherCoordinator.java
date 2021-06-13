@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
 import android.app.Activity;
 import android.content.Context;
@@ -17,35 +17,35 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
-import org.chromium.base.Callback;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsStateProvider;
-import org.chromium.chrome.browser.compositor.layouts.content.TabContentManager;
-import org.chromium.chrome.browser.flags.CachedFeatureFlags;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.lifecycle.DestroyObserver;
-import org.chromium.chrome.browser.multiwindow.MultiWindowModeStateDispatcher;
-import org.chromium.chrome.browser.price_tracking.PriceDropNotificationManager;
-import org.chromium.chrome.browser.share.ShareDelegate;
-import org.chromium.chrome.browser.tabmodel.TabCreatorManager;
-import org.chromium.chrome.browser.tabmodel.TabList;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tasks.pseudotab.PseudoTab;
-import org.chromium.chrome.browser.tasks.pseudotab.TabAttributeCache;
-import org.chromium.chrome.browser.tasks.tab_management.PriceMessageService.PriceMessageType;
-import org.chromium.chrome.browser.tasks.tab_management.TabSelectionEditorCoordinator.TabSelectionEditorNavigationProvider;
-import org.chromium.chrome.browser.tasks.tab_management.suggestions.TabSuggestionsOrchestrator;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
-import org.chromium.chrome.tab_ui.R;
-import org.chromium.components.browser_ui.widget.MenuOrKeyboardActionController;
-import org.chromium.components.browser_ui.widget.scrim.ScrimCoordinator;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.modelutil.LayoutViewBuilder;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
-import org.chromium.ui.resources.dynamics.DynamicResourceLoader;
+import org.monyhar.base.Callback;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsStateProvider;
+import org.monyhar.chrome.browser.compositor.layouts.content.TabContentManager;
+import org.monyhar.chrome.browser.flags.CachedFeatureFlags;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.lifecycle.DestroyObserver;
+import org.monyhar.chrome.browser.multiwindow.MultiWindowModeStateDispatcher;
+import org.monyhar.chrome.browser.price_tracking.PriceDropNotificationManager;
+import org.monyhar.chrome.browser.share.ShareDelegate;
+import org.monyhar.chrome.browser.tabmodel.TabCreatorManager;
+import org.monyhar.chrome.browser.tabmodel.TabList;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tasks.pseudotab.PseudoTab;
+import org.monyhar.chrome.browser.tasks.pseudotab.TabAttributeCache;
+import org.monyhar.chrome.browser.tasks.tab_management.PriceMessageService.PriceMessageType;
+import org.monyhar.chrome.browser.tasks.tab_management.TabSelectionEditorCoordinator.TabSelectionEditorNavigationProvider;
+import org.monyhar.chrome.browser.tasks.tab_management.suggestions.TabSuggestionsOrchestrator;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.chrome.tab_ui.R;
+import org.monyhar.components.browser_ui.widget.MenuOrKeyboardActionController;
+import org.monyhar.components.browser_ui.widget.scrim.ScrimCoordinator;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.modelutil.LayoutViewBuilder;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.ui.resources.dynamics.DynamicResourceLoader;
 
 import java.util.List;
 

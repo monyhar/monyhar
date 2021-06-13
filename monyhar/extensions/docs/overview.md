@@ -85,9 +85,9 @@ TODO(ellyjones): Write some words!
 [permissions]: permissions.md
 [public extensions documentation]: https://developer.chrome.com/extensions
 
-[extensions::Extension::ManifestData]: https://cs.chromium.org/chromium/src/extensions/common/extension.h
-[extensions::ExtensionService]: https://cs.chromium.org/chromium/src/chrome/browser/extensions/extension_service.h
-[extensions::ExtensionSystem]: https://cs.chromium.org/chromium/src/extensions/browser/extension_system.h
-[extensions::Extension]: https://cs.chromium.org/chromium/src/extensions/common/extension.h
-[extensions::ManifestHandler]: https://cs.chromium.org/chromium/src/extensions/common/manifest_handler.h
-[extensions::Manifest]: https://cs.chromium.org/chromium/src/extensions/common/manifest.h
+[extensions::Extension::ManifestData]: https://cs.monyhar.org/monyhar/src/extensions/common/extension.h
+[extensions::ExtensionService]: https://cs.monyhar.org/monyhar/src/chrome/browser/extensions/extension_service.h
+[extensions::ExtensionSystem]: https://cs.monyhar.org/monyhar/src/extensions/browser/extension_system.h
+[extensions::Extension]: https://cs.monyhar.org/monyhar/src/extensions/common/extension.h
+[extensions::ManifestHandler]: https://cs.monyhar.org/monyhar/src/extensions/common/manifest_handler.h
+[extensions::Manifest]: https://cs.monyhar.org/monyhar/src/extensions/common/manifest.h

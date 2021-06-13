@@ -17,7 +17,7 @@ int JNI_PolicyAuditor_GetCertificateFailure(
   // This function is similar to
   // LocationBarModelImpl::GetSecurityLevelForWebContents, but has a custom
   // mapping for policy auditing.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.policy
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.policy
   // GENERATED_JAVA_PREFIX_TO_STRIP: CERTIFICATE_FAIL_
   enum CertificateFailure {
     NONE = 0,

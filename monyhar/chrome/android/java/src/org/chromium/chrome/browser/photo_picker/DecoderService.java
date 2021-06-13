@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.photo_picker;
+package org.monyhar.chrome.browser.photo_picker;
 
-import org.chromium.chrome.browser.base.SplitCompatService;
-import org.chromium.chrome.browser.base.SplitCompatUtils;
+import org.monyhar.chrome.browser.base.SplitCompatService;
+import org.monyhar.chrome.browser.base.SplitCompatUtils;
 
 /** See {@link DecoderServiceImpl}. */
 public class DecoderService extends SplitCompatService {
     public DecoderService() {
         super(SplitCompatUtils.getIdentifierName(
-                "org.chromium.chrome.browser.photo_picker.DecoderServiceImpl"));
+                "org.monyhar.chrome.browser.photo_picker.DecoderServiceImpl"));
     }
 }

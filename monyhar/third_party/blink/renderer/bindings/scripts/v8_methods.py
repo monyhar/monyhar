@@ -30,7 +30,7 @@
 Extends IdlArgument with property |default_cpp_value|.
 Extends IdlTypeBase and IdlUnionType with property |union_arguments|.
 
-Design doc: http://www.chromium.org/developers/design-documents/idl-compiler
+Design doc: http://www.monyhar.org/developers/design-documents/idl-compiler
 """
 
 import os

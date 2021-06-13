@@ -229,7 +229,7 @@ bool NetworkConfigWatcherMacThread::InitNotificationsHelper() {
     NULL,       // No description for this.
   };
   base::ScopedCFTypeRef<SCDynamicStoreRef> store(SCDynamicStoreCreate(
-      NULL, CFSTR("org.chromium"), DynamicStoreCallback, &context));
+      NULL, CFSTR("org.monyhar"), DynamicStoreCallback, &context));
   if (!store) {
     int error = SCError();
     LOG(ERROR) << "SCDynamicStoreCreate failed with Error: " << error << " - "

@@ -1,6 +1,6 @@
 # The Chromium Test Executable API
 
-[bit.ly/chromium-test-runner-api][1] (*)
+[bit.ly/monyhar-test-runner-api][1] (*)
 
 
 [TOC]
@@ -10,7 +10,7 @@
 This document defines the API that test executables must implement in order to
 be run on the Chromium continuous integration infrastructure (the
 [LUCI][2]
-system using the `chromium` and `chromium_trybot` recipes).
+system using the `monyhar` and `monyhar_trybot` recipes).
 
 *** note
 **NOTE:** This document specifies the existing `isolated_scripts` API in the
@@ -440,18 +440,18 @@ the test-executable-api. The author attempted to create a test-executable-api li
 but pointed it at the wrong document by accident. bit.ly URLs can't easily be
 updated :(.
 
-[1]: https://bit.ly/chromium-test-runner-api
-[2]: https://chromium.googlesource.com/infra/infra/+/main/doc/users/services/about_luci.md
+[1]: https://bit.ly/monyhar-test-runner-api
+[2]: https://monyhar.googlesource.com/infra/infra/+/main/doc/users/services/about_luci.md
 [3]: https://docs.google.com/document/d/1MwnIx8kavuLSpZo3JmL9T7nkjTz1rpaJA4Vdj_9cRYw/edit?usp=sharing
 [4]: ../../testing/buildbot/test_suites.pyl
 [5]: ../../testing/buildbot/gn_isolate_map.pyl
 [6]: ../../testing/buildbot/test_suite_exceptions.pyl
 [7]: ../../testing/buildbot/waterfalls.pyl
 [8]: ../../testing/buildbot/README.md
-[9]: https://bit.ly/chromium-test-list-format
+[9]: https://bit.ly/monyhar-test-list-format
 [10]: ../../tools/mb/docs/user_guide.md
 [11]: ../../tools/mb/docs/design_spec.md
 [12]: https://goto.google.com/chops-tada
-[13]: https://bit.ly/chromium-test-artifacts
-[14]: https://bit.ly/chromium-test-list-format
-[15]: https://bit.ly/chromium-build-naming
+[13]: https://bit.ly/monyhar-test-artifacts
+[14]: https://bit.ly/monyhar-test-list-format
+[15]: https://bit.ly/monyhar-build-naming

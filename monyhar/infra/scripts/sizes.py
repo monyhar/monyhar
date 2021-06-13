@@ -115,22 +115,22 @@ def main_mac(options, args, results_collector):
     framework_dsym_bundle = framework_name + '.dSYM'
     framework_unstripped_name = framework_name + '.unstripped'
 
-    chromium_app_dir = os.path.join(target_dir, app_bundle)
-    chromium_executable = os.path.join(chromium_app_dir,
+    monyhar_app_dir = os.path.join(target_dir, app_bundle)
+    monyhar_executable = os.path.join(monyhar_app_dir,
                                        'Contents', 'MacOS', base_name)
 
-    chromium_framework_dir = os.path.join(target_dir, framework_bundle)
-    chromium_framework_executable = os.path.join(chromium_framework_dir,
+    monyhar_framework_dir = os.path.join(target_dir, framework_bundle)
+    monyhar_framework_executable = os.path.join(monyhar_framework_dir,
                                                  framework_name)
 
-    chromium_framework_dsym_dir = os.path.join(target_dir,
+    monyhar_framework_dsym_dir = os.path.join(target_dir,
                                                framework_dsym_bundle)
-    chromium_framework_dsym = os.path.join(chromium_framework_dsym_dir,
+    monyhar_framework_dsym = os.path.join(monyhar_framework_dsym_dir,
                                            'Contents', 'Resources', 'DWARF',
                                            framework_name)
-    chromium_framework_unstripped = os.path.join(target_dir,
+    monyhar_framework_unstripped = os.path.join(target_dir,
                                                  framework_unstripped_name)
-    if os.path.exists(chromium_executable):
+    if os.path.exists(monyhar_executable):
       print_dict = {
         # Remove spaces in the names so any downstream processing is less
         # likely to choke.
@@ -138,26 +138,26 @@ def main_mac(options, args, results_collector):
         'app_bundle'       : re.sub(r'\s', '', app_bundle),
         'framework_name'   : re.sub(r'\s', '', framework_name),
         'framework_bundle' : re.sub(r'\s', '', framework_bundle),
-        'app_size'         : get_size(chromium_executable),
-        'framework_size'   : get_size(chromium_framework_executable),
+        'app_size'         : get_size(monyhar_executable),
+        'framework_size'   : get_size(monyhar_framework_executable),
         'framework_dsym_name' : re.sub(r'\s', '', framework_name) + 'Dsym',
-        'framework_dsym_size' : get_size(chromium_framework_dsym),
+        'framework_dsym_size' : get_size(monyhar_framework_dsym),
       }
 
       # Collect the segment info out of the App
-      result, stdout = run_process(result, [size_path, chromium_executable])
+      result, stdout = run_process(result, [size_path, monyhar_executable])
       print_dict['app_text'], print_dict['app_data'], print_dict['app_objc'] = \
           re.search(r'(\d+)\s+(\d+)\s+(\d+)', stdout).groups()
 
       # Collect the segment info out of the Framework
       result, stdout = run_process(result, [size_path,
-                                            chromium_framework_executable])
+                                            monyhar_framework_executable])
       print_dict['framework_text'], print_dict['framework_data'], \
         print_dict['framework_objc'] = \
           re.search(r'(\d+)\s+(\d+)\s+(\d+)', stdout).groups()
 
       # Collect the whole size of the App bundle on disk (include the framework)
-      result, stdout = run_process(result, ['du', '-s', '-k', chromium_app_dir])
+      result, stdout = run_process(result, ['du', '-s', '-k', monyhar_app_dir])
       du_s = re.search(r'(\d+)', stdout).group(1)
       print_dict['app_bundle_size'] = (int(du_s) * 1024)
 
@@ -361,8 +361,8 @@ def main_android_webview(options, args, results_collector):
   target_dir = os.path.join(build_directory.GetBuildOutputDirectory(SRC_DIR),
                             options.target)
 
-  binaries = ['lib/libwebviewchromium.so',
-              'libwebviewchromium.so']
+  binaries = ['lib/libwebviewmonyhar.so',
+              'libwebviewmonyhar.so']
 
   return check_android_binaries(binaries, target_dir, options,
                                 results_collector)

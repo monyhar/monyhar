@@ -18,13 +18,13 @@
 
   dom_distiller_js_path=$(dirname "${BASH_SOURCE[0]}")
   src_path=$dom_distiller_js_path/../..
-  readme_chromium=$dom_distiller_js_path/README.chromium
-  [ ! -f $readme_chromium ] && echo "$readme_chromium is not found" && exit 1
+  readme_monyhar=$dom_distiller_js_path/README.monyhar
+  [ ! -f $readme_monyhar ] && echo "$readme_monyhar is not found" && exit 1
   tmpdir=/tmp/domdistiller-$$
   changes=$tmpdir/domdistiller.changes
   bugs=$tmpdir/domdistiller.bugs
-  curr_gitsha=$(grep 'Version:' $readme_chromium | awk '{print $2}')
-  repo_host=https://chromium.googlesource.com/chromium
+  curr_gitsha=$(grep 'Version:' $readme_monyhar | awk '{print $2}')
+  repo_host=https://monyhar.googlesource.com/monyhar
 
   rm -rf $tmpdir
   mkdir $tmpdir
@@ -92,7 +92,7 @@
       echo "This is generated from:"
       echo "${repo_host}/dom-distiller/+/${new_gitsha}."
       echo
-      echo "To validate, run the following command in chromium/src:"
+      echo "To validate, run the following command in monyhar/src:"
       echo "third_party/dom_distiller_js/update_domdistiller_js.sh ${new_gitsha} <Gerrit-URL>"
     }
 
@@ -113,24 +113,24 @@
   popd # dom-distiller-dist
 
   popd # tmpdir
-  curr_dist_gitsha=$(grep -e "/chromium\/dom-distiller\/dist.git" $src_path/DEPS | sed -e "s/.*'\([A-Za-z0-9]\{40\}\)'.*/\1/g")
+  curr_dist_gitsha=$(grep -e "/monyhar\/dom-distiller\/dist.git" $src_path/DEPS | sed -e "s/.*'\([A-Za-z0-9]\{40\}\)'.*/\1/g")
   if [[ "${new_dist_gitsha}" == "${curr_dist_gitsha}" ]]; then
     echo "The roll does not include any changes to the dist package. Exiting."
     exit 1
   fi
 
   cp $tmpdir/dom-distiller/LICENSE $dom_distiller_js_path/
-  sed -i "s/Version: [0-9a-f]*/Version: ${new_gitsha}/" $readme_chromium
-  sed -i -e "s/\('\/chromium\/dom-distiller\/dist.git' + '@' + '\)\([0-9a-f]\+\)'/\1${new_dist_gitsha}'/" $src_path/DEPS
+  sed -i "s/Version: [0-9a-f]*/Version: ${new_gitsha}/" $readme_monyhar
+  sed -i -e "s/\('\/monyhar\/dom-distiller\/dist.git' + '@' + '\)\([0-9a-f]\+\)'/\1${new_dist_gitsha}'/" $src_path/DEPS
 
   gen_message () {
     echo "Roll DOM Distiller JavaScript distribution package"
     echo
     echo "Diff since last roll:"
-    echo "https://chromium.googlesource.com/chromium/dom-distiller/+/${curr_gitsha}..${new_gitsha}"
+    echo "https://monyhar.googlesource.com/monyhar/dom-distiller/+/${curr_gitsha}..${new_gitsha}"
     echo
     echo "Picked up changes:"
-    echo "https://chromium.googlesource.com/chromium/dom-distiller/+log/${curr_gitsha}..${new_gitsha}"
+    echo "https://monyhar.googlesource.com/monyhar/dom-distiller/+log/${curr_gitsha}..${new_gitsha}"
     cat $changes
     echo
     cat $bugs

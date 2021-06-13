@@ -17,7 +17,7 @@ namespace base {
 namespace android {
 
 // The process the shared library is loaded in.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.base.library_loader
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.base.library_loader
 enum LibraryProcessType {
   // The LibraryLoad has not been initialized.
   PROCESS_UNINITIALIZED = 0,
@@ -43,7 +43,7 @@ BASE_EXPORT LibraryProcessType GetLibraryProcessType();
 // Whether fewer code should be prefetched, and no-readahead should be set.
 // Returns true on low-end devices, where this speeds up startup, and false
 // elsewhere, where it slows it down. See
-// https://bugs.chromium.org/p/chromium/issues/detail?id=758566#c71 for details.
+// https://bugs.monyhar.org/p/monyhar/issues/detail?id=758566#c71 for details.
 BASE_EXPORT bool IsUsingOrderfileOptimization();
 
 typedef bool NativeInitializationHook(LibraryProcessType library_process_type);

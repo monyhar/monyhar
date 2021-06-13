@@ -369,7 +369,7 @@ def _CheckTextAppearance(input_api, output_api):
         ...
       </style>
 
-    Please contact arminaforoughi@chromium.org for UX approval, and
+    Please contact arminaforoughi@monyhar.org for UX approval, and
     src/chrome/android/java/res/OWNERS for questions.
     See https://crbug.com/775198 for more information.
   ''', errors)
@@ -394,7 +394,7 @@ def _CheckNewTextAppearance(input_api, output_api):
     If you are removing or editing an existing text appearance style, or your
     new text appearance style is approved by UX, please bypass this check.
 
-    Otherwise, please contact arminaforoughi@chromium.org for UX approval, and
+    Otherwise, please contact arminaforoughi@monyhar.org for UX approval, and
     src/chrome/android/java/res/OWNERS for questions.
     See https://crbug.com/775198 for more information.
   ''', errors)
@@ -424,7 +424,7 @@ def _CheckLineSpacingAttribute(input_api, output_api):
     Your new code is using android:lineSpacingExtra
     or android:lineSpacingMultiplier, listed below.
 
-    Use org.chromium.ui.widget.TextViewWithLeading instead of
+    Use org.monyhar.ui.widget.TextViewWithLeading instead of
     using android:lineSpacingExtra or android:lineSpacingMultiplier if possible;
     TextViewWithLeading is a TextView with the added leading property, which can
     perform the calculation to setup leading correctly.
@@ -456,7 +456,7 @@ def _CheckButtonCompatWidgetUsage(input_api, output_api):
   Android Widget Check warning:
     Your new code is using Button or AppCompatButton, listed below.
 
-    Use org.chromium.ui.widget.ButtonCompat instead of Button and
+    Use org.monyhar.ui.widget.ButtonCompat instead of Button and
     AppCompatButton if possible; ButtonCompat is a Material-styled button with a
     customizable background color. On L devices, this is a true Material button.
     On earlier devices, the button is similar but lacks ripples and a shadow.
@@ -520,7 +520,7 @@ def _CheckStringResourcePunctuations(input_api, output_api):
     Please reach out to the UX designer/writer in your team to double check
     which punctuation should be correctly used. Ignore this warning if UX has confirmed.
 
-    Reach out to writing-strings@chromium.org if you have any question about writing strings.
+    Reach out to writing-strings@monyhar.org if you have any question about writing strings.
   '''.encode('utf-8'), warnings)
     ]
   return result

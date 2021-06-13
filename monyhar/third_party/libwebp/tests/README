@@ -3,7 +3,7 @@ Description:
 
 This is a collection of tests for the libwebp libraries, currently covering
 fuzzing through the APIs. Additional test vector coverage can be found at:
-https://chromium.googlesource.com/webm/libwebp-test-data
+https://monyhar.googlesource.com/webm/libwebp-test-data
 
 Building:
 =========

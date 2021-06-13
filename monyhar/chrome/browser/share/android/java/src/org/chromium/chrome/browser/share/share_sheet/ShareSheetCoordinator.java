@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.share_sheet;
+package org.monyhar.chrome.browser.share.share_sheet;
 
 import android.app.Activity;
 import android.content.res.Configuration;
@@ -12,34 +12,34 @@ import android.view.View;
 import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.content.res.AppCompatResources;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.Callback;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.lifecycle.ConfigurationChangedObserver;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.share.ChromeShareExtras;
-import org.chromium.chrome.browser.share.ShareHelper;
-import org.chromium.chrome.browser.share.link_to_text.LinkToTextCoordinator;
-import org.chromium.chrome.browser.share.link_to_text.LinkToTextCoordinator.LinkGeneration;
-import org.chromium.chrome.browser.share.link_to_text.LinkToTextMetricsHelper;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.modules.image_editor.ImageEditorModuleProvider;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetContent;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetObserver;
-import org.chromium.components.browser_ui.bottomsheet.EmptyBottomSheetObserver;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.browser_ui.share.ShareParams;
-import org.chromium.components.favicon.LargeIconBridge;
-import org.chromium.components.feature_engagement.Tracker;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.base.WindowAndroid.ActivityStateObserver;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.lifecycle.ConfigurationChangedObserver;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.share.ChromeShareExtras;
+import org.monyhar.chrome.browser.share.ShareHelper;
+import org.monyhar.chrome.browser.share.link_to_text.LinkToTextCoordinator;
+import org.monyhar.chrome.browser.share.link_to_text.LinkToTextCoordinator.LinkGeneration;
+import org.monyhar.chrome.browser.share.link_to_text.LinkToTextMetricsHelper;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.modules.image_editor.ImageEditorModuleProvider;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetContent;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetObserver;
+import org.monyhar.components.browser_ui.bottomsheet.EmptyBottomSheetObserver;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.browser_ui.share.ShareParams;
+import org.monyhar.components.favicon.LargeIconBridge;
+import org.monyhar.components.feature_engagement.Tracker;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.base.WindowAndroid.ActivityStateObserver;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -16,7 +16,7 @@ class Bus;
 
 namespace chromeos {
 
-// DlpClient is used to communicate with the org.chromium.Dlp
+// DlpClient is used to communicate with the org.monyhar.Dlp
 // service. All method should be called from the origin thread (UI thread) which
 // initializes the DBusThreadManager instance.
 class COMPONENT_EXPORT(DLP) DlpClient {

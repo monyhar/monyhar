@@ -6,14 +6,14 @@ https://wayland-book.com/.
 Current clients of Exo include:
 
 * ARC++ (Android apps on Chrome OS)
-* [Chromecast](https://chromium.googlesource.com/chromium/src/+/main/chromecast/README.md)
+* [Chromecast](https://monyhar.googlesource.com/monyhar/src/+/main/chromecast/README.md)
 * Crostini (Linux apps on Chrome OS)
-* [Lacros](https://chromium.googlesource.com/chromium/src/+/main/docs/lacros.md)
+* [Lacros](https://monyhar.googlesource.com/monyhar/src/+/main/docs/lacros.md)
 * PluginVM
 
 In addition to the core Wayland protocol, Exo supports a number of protocol
 extensions. Some are third-party; see
-[//third_party/wayland-protocols/README.chromium](https://chromium.googlesource.com/chromium/src/+/main/third_party/wayland-protocols/README.chromium).
+[//third_party/wayland-protocols/README.monyhar](https://monyhar.googlesource.com/monyhar/src/+/main/third_party/wayland-protocols/README.monyhar).
 Others are Chromium-specific.
 
 A few noteworthy extensions (this list is not at all exhaustive):

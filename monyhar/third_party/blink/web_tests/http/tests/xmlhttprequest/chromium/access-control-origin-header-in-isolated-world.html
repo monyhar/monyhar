@@ -10,7 +10,7 @@ if (window.testRunner) {
 
 function runTest() {
   const xhr = new XMLHttpRequest();
-  xhr.open('GET', 'http://localhost:8000/xmlhttprequest/chromium/resources/access-control-origin-header-in-isolated-world.php');
+  xhr.open('GET', 'http://localhost:8000/xmlhttprequest/monyhar/resources/access-control-origin-header-in-isolated-world.php');
   xhr.setRequestHeader('X-Custom-Header', 'PASS');
   xhr.onerror = () => {
     postMessage('FAIL: XHR errored', '*');

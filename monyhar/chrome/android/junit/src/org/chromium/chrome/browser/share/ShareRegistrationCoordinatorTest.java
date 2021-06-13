@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share;
+package org.monyhar.chrome.browser.share;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
@@ -31,20 +31,20 @@ import org.mockito.junit.MockitoRule;
 import org.robolectric.Robolectric;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.share.ShareRegistrationCoordinator.ShareBroadcastReceiver;
-import org.chromium.chrome.browser.share.send_tab_to_self.SendTabToSelfAndroidBridge;
-import org.chromium.chrome.browser.share.send_tab_to_self.SendTabToSelfAndroidBridgeJni;
-import org.chromium.chrome.browser.sync.SyncService;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetContent;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.content_public.browser.NavigationEntry;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.url.JUnitTestGURLs;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.share.ShareRegistrationCoordinator.ShareBroadcastReceiver;
+import org.monyhar.chrome.browser.share.send_tab_to_self.SendTabToSelfAndroidBridge;
+import org.monyhar.chrome.browser.share.send_tab_to_self.SendTabToSelfAndroidBridgeJni;
+import org.monyhar.chrome.browser.sync.SyncService;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetContent;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.content_public.browser.NavigationEntry;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.url.JUnitTestGURLs;
 
 /** Tests for ShareRegistrationCoordinator. */
 @RunWith(BaseRobolectricTestRunner.class)

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
 import android.Manifest;
 import android.accounts.Account;
@@ -24,13 +24,13 @@ import android.os.Process;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
 
 import java.io.IOException;
 
@@ -38,7 +38,7 @@ import java.io.IOException;
  * Class to get Auth Tokens for HTTP Negotiate authentication (typically used for Kerberos) An
  * instance of this class is created for each separate negotiation.
  *
- * Please keep the documentation from the chromium.org page (https://goo.gl/46hmKx) in sync.
+ * Please keep the documentation from the monyhar.org page (https://goo.gl/46hmKx) in sync.
  * ================================================================================================
  * In addition to the error codes that can be forwarded from the authenticator app, the following
  * errors can be displayed when trying to authenticate a request:

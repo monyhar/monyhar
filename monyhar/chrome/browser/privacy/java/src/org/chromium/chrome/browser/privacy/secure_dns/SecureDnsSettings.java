@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.privacy.secure_dns;
+package org.monyhar.chrome.browser.privacy.secure_dns;
 
 import android.content.Context;
 import android.os.Bundle;
 
 import androidx.preference.PreferenceFragmentCompat;
 
-import org.chromium.chrome.browser.net.SecureDnsManagementMode;
-import org.chromium.chrome.browser.privacy.secure_dns.SecureDnsProviderPreference.State;
-import org.chromium.chrome.browser.settings.ChromeManagedPreferenceDelegate;
-import org.chromium.components.browser_ui.settings.ChromeSwitchPreference;
-import org.chromium.components.browser_ui.settings.SettingsUtils;
-import org.chromium.net.SecureDnsMode;
+import org.monyhar.chrome.browser.net.SecureDnsManagementMode;
+import org.monyhar.chrome.browser.privacy.secure_dns.SecureDnsProviderPreference.State;
+import org.monyhar.chrome.browser.settings.ChromeManagedPreferenceDelegate;
+import org.monyhar.components.browser_ui.settings.ChromeSwitchPreference;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.net.SecureDnsMode;
 
 import java.util.List;
 

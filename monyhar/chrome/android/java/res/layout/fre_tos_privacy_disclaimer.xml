@@ -3,7 +3,7 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file.
 -->
-<org.chromium.components.browser_ui.widget.text.TextViewWithCompoundDrawables
+<org.monyhar.components.browser_ui.widget.text.TextViewWithCompoundDrawables
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"

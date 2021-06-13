@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.bottombar.contextualsearch;
+package org.monyhar.chrome.browser.compositor.bottombar.contextualsearch;
 
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanel;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanelRepaddingTextView;
-import org.chromium.ui.resources.dynamics.DynamicResourceLoader;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanel;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanelRepaddingTextView;
+import org.monyhar.ui.resources.dynamics.DynamicResourceLoader;
 
 /**
  * Controls the Search Context View that shows the primary text at the top of the Bar using

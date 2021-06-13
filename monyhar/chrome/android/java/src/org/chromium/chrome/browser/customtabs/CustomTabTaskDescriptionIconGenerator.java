@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import android.content.Context;
 import android.graphics.Bitmap;
 
-import org.chromium.components.browser_ui.widget.RoundedIconGenerator;
-import org.chromium.url.GURL;
+import org.monyhar.components.browser_ui.widget.RoundedIconGenerator;
+import org.monyhar.url.GURL;
 
 /**
  * Generates icons suitable for Custom Tabs in the recent tasks list.

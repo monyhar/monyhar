@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.layouts;
+package org.monyhar.chrome.browser.compositor.layouts;
 
-import org.chromium.chrome.browser.compositor.layouts.components.LayoutTab;
-import org.chromium.chrome.browser.layouts.animation.CompositorAnimationHandler;
-import org.chromium.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.compositor.layouts.components.LayoutTab;
+import org.monyhar.chrome.browser.layouts.animation.CompositorAnimationHandler;
+import org.monyhar.chrome.browser.tab.Tab;
 
 /**
  * {@link LayoutRenderHost} is the minimal interface the layouts need to know about its host to
@@ -55,12 +55,12 @@ public interface LayoutUpdateHost {
     boolean isActiveLayout(Layout layout);
 
     /**
-     * Initializes {@link org.chromium.chrome.browser.compositor.layouts.components.LayoutTab} with
+     * Initializes {@link org.monyhar.chrome.browser.compositor.layouts.components.LayoutTab} with
      * data accessible only from the {@link LayoutUpdateHost} such as data extracted out of a
      * {@link Tab}.
      *
      * @param tabId The id of the
-     *              {@link org.chromium.chrome.browser.compositor.layouts.components.LayoutTab}
+     *              {@link org.monyhar.chrome.browser.compositor.layouts.components.LayoutTab}
      *              to be initialized from a {@link Tab}.
      */
     void initLayoutTabFromHost(final int tabId);
@@ -69,7 +69,7 @@ public interface LayoutUpdateHost {
      * Creates or recycles a {@Link LayoutTab}.
      *
      * @param id               The id of the reference tab in the
-     *                         {@link org.chromium.chrome.browser.tabmodel.TabModel}.
+     *                         {@link org.monyhar.chrome.browser.tabmodel.TabModel}.
      * @param incognito        Whether the new tab is incognito.
      * @param showCloseButton  True to show and activate a close button on the border.
      * @param isTitleNeeded    Whether a title will be shown.
@@ -86,7 +86,7 @@ public interface LayoutUpdateHost {
      * Notifies the host that the {@link LayoutTab} is no longer needed by the layout.
      *
      * @param id The id of the reference tab in the
-     *           {@link org.chromium.chrome.browser.tabmodel.TabModel}.
+     *           {@link org.monyhar.chrome.browser.tabmodel.TabModel}.
      */
     void releaseTabLayout(int id);
 
@@ -94,7 +94,7 @@ public interface LayoutUpdateHost {
      * Releases the cached title textures associated with the {@link LayoutTab}.
      *
      * @param tabId The id of the reference tab in the
-     *              {@link org.chromium.chrome.browser.tabmodel.TabModel}.
+     *              {@link org.monyhar.chrome.browser.tabmodel.TabModel}.
      */
     void releaseResourcesForTab(int tabId);
 

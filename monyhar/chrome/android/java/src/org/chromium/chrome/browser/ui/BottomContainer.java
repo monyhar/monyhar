@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui;
+package org.monyhar.chrome.browser.ui;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -10,11 +10,11 @@ import android.widget.FrameLayout;
 
 import androidx.annotation.CallSuper;
 
-import org.chromium.base.Callback;
-import org.chromium.base.lifetime.Destroyable;
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsStateProvider;
-import org.chromium.ui.base.ApplicationViewportInsetSupplier;
+import org.monyhar.base.Callback;
+import org.monyhar.base.lifetime.Destroyable;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsStateProvider;
+import org.monyhar.ui.base.ApplicationViewportInsetSupplier;
 
 /**
  * The container that holds both infobars and snackbars. It will be translated up and down when the

@@ -10,19 +10,19 @@
 
 set noparent
 cassew@google.com
-chcunningham@chromium.org
-dalecurtis@chromium.org
-eugene@chromium.org
-jrummell@chromium.org
-liberato@chromium.org
-sandersd@chromium.org
-tguilbert@chromium.org
-tmathmeyer@chromium.org
-wolenetz@chromium.org
-xhwang@chromium.org
+chcunningham@monyhar.org
+dalecurtis@monyhar.org
+eugene@monyhar.org
+jrummell@monyhar.org
+liberato@monyhar.org
+sandersd@monyhar.org
+tguilbert@monyhar.org
+tmathmeyer@monyhar.org
+wolenetz@monyhar.org
+xhwang@monyhar.org
 
 # For Fuchsia-specific changes:
 per-file *_fuchsia*=file://build/fuchsia/OWNERS
 
 # For GpuMemoryBuffer-related changes:
-per-file *gpu_memory_buffer*=dcastagna@chromium.org
+per-file *gpu_memory_buffer*=dcastagna@monyhar.org

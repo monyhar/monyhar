@@ -288,7 +288,7 @@ std::string SafeBrowsingService::GetProtocolConfigClientName() const {
 #if BUILDFLAG(GOOGLE_CHROME_BRANDING)
   client_name = "googlechrome";
 #else
-  client_name = "chromium";
+  client_name = "monyhar";
 #endif
 
   // Mark client string to allow server to differentiate mobile.

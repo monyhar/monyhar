@@ -4,7 +4,7 @@
      found in the LICENSE file.
 -->
 
-<org.chromium.chrome.browser.download.home.list.view.AspectRatioFrameLayout
+<org.monyhar.chrome.browser.download.home.list.view.AspectRatioFrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -14,7 +14,7 @@
     android:focusable="true"
     android:background="@color/default_bg_color_secondary" >
 
-    <org.chromium.components.browser_ui.widget.async_image.AsyncImageView
+    <org.monyhar.components.browser_ui.widget.async_image.AsyncImageView
         android:id="@+id/thumbnail"
         android:layout_width="match_parent"
         android:background="@color/modern_grey_300"
@@ -25,7 +25,7 @@
         tools:ignore="ContentDescription"
         app:layout_aspectRatio="100%" />
 
-    <org.chromium.chrome.browser.download.home.view.SelectionView
+    <org.monyhar.chrome.browser.download.home.view.SelectionView
         android:id="@+id/selection"
         style="@style/DownloadItemSelectionView"/>
-</org.chromium.chrome.browser.download.home.list.view.AspectRatioFrameLayout>
+</org.monyhar.chrome.browser.download.home.list.view.AspectRatioFrameLayout>

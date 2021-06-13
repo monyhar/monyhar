@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.net.nqe;
+package org.monyhar.chrome.browser.net.nqe;
 
 import static org.junit.Assert.assertEquals;
 
@@ -11,8 +11,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.net.EffectiveConnectionType;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.net.EffectiveConnectionType;
 
 /**
  * JUnit tests for NetworkQualityProvider which run against Robolectric.

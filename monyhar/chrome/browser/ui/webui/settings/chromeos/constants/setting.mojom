@@ -177,7 +177,7 @@ enum Setting {
   // Privacy section.
   kVerifiedAccess = 1101,
   // Note: Value 1102 was for deprecated "Keep wi-fi on during sleep" setting -
-  // see https://bugs.chromium.org/p/chromium/issues/detail?id=1077126.
+  // see https://bugs.monyhar.org/p/monyhar/issues/detail?id=1077126.
   // Do not reuse.
   kUsageStatsAndCrashReports = 1103,
   kGuestBrowsingV2 = 1104,

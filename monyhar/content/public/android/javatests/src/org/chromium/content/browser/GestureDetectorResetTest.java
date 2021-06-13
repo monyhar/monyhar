@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import android.support.test.InstrumentationRegistry;
 
@@ -13,18 +13,18 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.CriteriaNotSatisfiedException;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.UrlUtils;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.test.util.DOMUtils;
-import org.chromium.content_public.browser.test.util.TestCallbackHelperContainer;
-import org.chromium.content_public.browser.test.util.TestCallbackHelperContainer.OnPageFinishedHelper;
-import org.chromium.content_shell_apk.ContentShellActivityTestRule;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.CriteriaNotSatisfiedException;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.UrlUtils;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.test.util.DOMUtils;
+import org.monyhar.content_public.browser.test.util.TestCallbackHelperContainer;
+import org.monyhar.content_public.browser.test.util.TestCallbackHelperContainer.OnPageFinishedHelper;
+import org.monyhar.content_shell_apk.ContentShellActivityTestRule;
 
 import java.util.concurrent.TimeUnit;
 

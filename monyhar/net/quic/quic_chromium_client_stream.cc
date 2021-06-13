@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#include "net/quic/quic_chromium_client_stream.h"
+#include "net/quic/quic_monyhar_client_stream.h"
 
 #include <utility>
 
@@ -17,7 +17,7 @@
 #include "net/base/net_errors.h"
 #include "net/http/http_status_code.h"
 #include "net/log/net_log_event_type.h"
-#include "net/quic/quic_chromium_client_session.h"
+#include "net/quic/quic_monyhar_client_session.h"
 #include "net/quic/quic_http_utils.h"
 #include "net/spdy/spdy_log_util.h"
 #include "net/third_party/quiche/src/quic/core/http/quic_spdy_session.h"

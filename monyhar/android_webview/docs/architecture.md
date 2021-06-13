@@ -13,13 +13,13 @@ Android WebView exposes Java APIs in the
 [framework](https://developer.android.com/reference/android/webkit/package-summary)
 and
 [AndroidX](https://developer.android.com/reference/androidx/webkit/package-summary),
-which are responsible for loading chromium code from the WebView provider
+which are responsible for loading monyhar code from the WebView provider
 package. These APIs call into glue code
 ([`//android_webview/glue/`](/android_webview/glue/README.md) and
 [`//android_webview/support_library/`](/android_webview/support_library/README.md)
 respectively).
 
-The glue layers convert to chromium-defined types in [the "AW"
+The glue layers convert to monyhar-defined types in [the "AW"
 layer](/android_webview/java/README.md). The AW Java types typically call into
 [browser C++ code][browser] via Java Native Interface (JNI) or call into Java
 methods in other layers which eventually use JNI (ex. `//content/public/`).
@@ -55,7 +55,7 @@ WebView runs other services (ex. GPU service, Network Service) in-process on all
 OS versions. This saves memory (which is why Chrome for Android does the same
 thing on low-memory devices), although WebView is technically blocked because
 there's [no Android API to run a non-sandboxed process under another app's
-context](https://bugs.chromium.org/p/chromium/issues/detail?id=882650#c7).
+context](https://bugs.monyhar.org/p/monyhar/issues/detail?id=882650#c7).
 
 Although WebView is typically embedded in other apps, it runs some code as its
 own context. This includes a limited amount of UI code as well as a service. See
@@ -76,7 +76,7 @@ Variants](webview-packaging-variants.md) for details.
   deck](https://docs.google.com/presentation/d/1Nv0fsiU0xtPQPyAWb0FRsjzr9h2nh339-pq7ssWoNQg/edit?usp=sharing))
   for more architecture details, and an overview of use cases
 * [Reach out to the
-  team](https://groups.google.com/a/chromium.org/forum/#!forum/android-webview-dev)
+  team](https://groups.google.com/a/monyhar.org/forum/#!forum/android-webview-dev)
   if you have more questions
 
 [browser]: /android_webview/browser/README.md

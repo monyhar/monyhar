@@ -62,7 +62,7 @@
 #include "chrome/common/pref_names.h"
 #include "chrome/common/search/selected_colors_info.h"
 #include "chrome/common/url_constants.h"
-#include "chrome/grit/chromium_strings.h"
+#include "chrome/grit/monyhar_strings.h"
 #include "components/password_manager/core/browser/password_manager_metrics_util.h"
 #include "components/password_manager/core/browser/password_store.h"
 #include "components/prefs/pref_service.h"
@@ -499,7 +499,7 @@ InlineLoginHandlerImpl::~InlineLoginHandlerImpl() {}
 
 // static
 void InlineLoginHandlerImpl::SetExtraInitParams(base::DictionaryValue& params) {
-  params.SetString("service", "chromiumsync");
+  params.SetString("service", "monyharsync");
 
   // If this was called from the user manager to reauthenticate the profile,
   // make sure the webui is aware.

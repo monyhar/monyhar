@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.bottomsheet;
+package org.monyhar.components.browser_ui.bottomsheet;
 
 import android.content.Context;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
 
-import org.chromium.base.MathUtils;
-import org.chromium.base.ThreadUtils;
+import org.monyhar.base.MathUtils;
+import org.monyhar.base.ThreadUtils;
 
 /**
  * A class that determines whether a sequence of motion events is a valid swipe in the context of a

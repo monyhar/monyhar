@@ -633,7 +633,7 @@ class CleanerScanningModeTest
     command_line_.RemoveSwitch(chrome_cleaner::kNoReportUploadSwitch);
 
     // See SwReporterInvocationType at
-    // https://source.chromium.org/chromium/chromium/src/+/main:chrome/browser/safe_browsing/chrome_cleaner/sw_reporter_invocation_win.h;l=55;drc=4a5ef27e49b17f08b306284ad933d243a1d6b310
+    // https://source.monyhar.org/monyhar/monyhar/src/+/main:chrome/browser/safe_browsing/chrome_cleaner/sw_reporter_invocation_win.h;l=55;drc=4a5ef27e49b17f08b306284ad933d243a1d6b310
     // for a full description of when logs are sent. It boils down to two
     // scenarios:
     // - If the user initiated a scan from the Settings page and chose "report

@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer.test;
+package org.monyhar.weblayer.test;
 
-import static org.chromium.content_public.browser.test.util.TestThreadUtils.runOnUiThreadBlocking;
-import static org.chromium.weblayer.BrowsingDataType.CACHE;
-import static org.chromium.weblayer.BrowsingDataType.COOKIES_AND_SITE_DATA;
+import static org.monyhar.content_public.browser.test.util.TestThreadUtils.runOnUiThreadBlocking;
+import static org.monyhar.weblayer.BrowsingDataType.CACHE;
+import static org.monyhar.weblayer.BrowsingDataType.COOKIES_AND_SITE_DATA;
 
 import androidx.fragment.app.FragmentManager;
 import androidx.test.filters.SmallTest;
@@ -15,8 +15,8 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.weblayer.Profile;
-import org.chromium.weblayer.shell.InstrumentationActivity;
+import org.monyhar.weblayer.Profile;
+import org.monyhar.weblayer.shell.InstrumentationActivity;
 
 /**
  * Example test that just starts the weblayer shell.

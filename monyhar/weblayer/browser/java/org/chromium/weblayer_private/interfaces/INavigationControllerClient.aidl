@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private.interfaces;
+package org.monyhar.weblayer_private.interfaces;
 
-import org.chromium.weblayer_private.interfaces.IClientNavigation;
-import org.chromium.weblayer_private.interfaces.IClientPage;
-import org.chromium.weblayer_private.interfaces.INavigation;
-import org.chromium.weblayer_private.interfaces.IObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.IClientNavigation;
+import org.monyhar.weblayer_private.interfaces.IClientPage;
+import org.monyhar.weblayer_private.interfaces.INavigation;
+import org.monyhar.weblayer_private.interfaces.IObjectWrapper;
 
 /**
  * Interface used by NavigationController to inform the client of changes. This largely duplicates

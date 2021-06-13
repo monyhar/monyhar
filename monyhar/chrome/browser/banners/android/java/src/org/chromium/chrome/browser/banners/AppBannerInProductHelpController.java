@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.banners;
+package org.monyhar.chrome.browser.banners;
 
 import android.app.Activity;
 import android.os.Handler;
@@ -10,12 +10,12 @@ import android.view.View;
 
 import androidx.annotation.IdRes;
 
-import org.chromium.base.UnownedUserData;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.ui.appmenu.AppMenuHandler;
-import org.chromium.chrome.browser.user_education.IPHCommandBuilder;
-import org.chromium.chrome.browser.user_education.UserEducationHelper;
-import org.chromium.components.feature_engagement.FeatureConstants;
+import org.monyhar.base.UnownedUserData;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.ui.appmenu.AppMenuHandler;
+import org.monyhar.chrome.browser.user_education.IPHCommandBuilder;
+import org.monyhar.chrome.browser.user_education.UserEducationHelper;
+import org.monyhar.components.feature_engagement.FeatureConstants;
 
 /**
  * This class is responsible for managing the in-product help for the PWA app banners.

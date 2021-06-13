@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.incognito;
+package org.monyhar.chrome.browser.incognito;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -16,18 +16,18 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.browser.customtabs.CustomTabsSessionToken;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.task.TaskTraits;
-import org.chromium.chrome.browser.ChromeApplicationImpl;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.customtabs.CustomTabsConnection;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.version.ChromeVersionInfo;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.task.TaskTraits;
+import org.monyhar.chrome.browser.ChromeApplicationImpl;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.customtabs.CustomTabsConnection;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.version.ChromeVersionInfo;
 
 /**
  * An exposed Activity that allows launching an Incognito Tab.
@@ -39,14 +39,14 @@ public class IncognitoTabLauncher extends Activity {
     /** The Intent action used to launch the IncognitoTabLauncher. */
     @VisibleForTesting
     public static final String ACTION_LAUNCH_NEW_INCOGNITO_TAB =
-            "org.chromium.chrome.browser.incognito.OPEN_PRIVATE_TAB";
+            "org.monyhar.chrome.browser.incognito.OPEN_PRIVATE_TAB";
 
     /**
      * An Action that will disable this component on local builds only, to help development and
      * debugging.
      */
     private static final String ACTION_DEBUG =
-            "org.chromium.chrome.browser.incognito.IncognitoTabLauncher.DISABLE";
+            "org.monyhar.chrome.browser.incognito.IncognitoTabLauncher.DISABLE";
 
     /**
      * A string to indicate the package name of the original intent sender
@@ -54,7 +54,7 @@ public class IncognitoTabLauncher extends Activity {
      * 1P from 3P apps.
      */
     public static final String EXTRA_SENDERS_PACKAGE_NAME =
-            "org.chromium.chrome.browser.senders_package_name";
+            "org.monyhar.chrome.browser.senders_package_name";
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {

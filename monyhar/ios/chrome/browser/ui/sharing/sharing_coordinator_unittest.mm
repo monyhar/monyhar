@@ -291,7 +291,7 @@ TEST_F(SharingCoordinatorTest, AddBookmark_EditViaSnackbar) {
           return YES;
         }]];
 
-    GURL test_url("https://wwww.chromium.org");
+    GURL test_url("https://wwww.monyhar.org");
     NSString* test_title = @"Test Title";
     BookmarkPageCommand* command =
         [[BookmarkPageCommand alloc] initWithURL:test_url title:test_title];

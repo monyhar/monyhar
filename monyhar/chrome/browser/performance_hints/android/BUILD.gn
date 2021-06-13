@@ -5,11 +5,11 @@
 import("//build/config/android/rules.gni")
 
 generate_jni("jni_headers") {
-  sources = [ "java/src/org/chromium/chrome/browser/performance_hints/PerformanceHintsObserver.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/performance_hints/PerformanceHintsObserver.java" ]
 }
 
 android_library("java") {
-  sources = [ "java/src/org/chromium/chrome/browser/performance_hints/PerformanceHintsObserver.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/performance_hints/PerformanceHintsObserver.java" ]
 
   deps = [
     "//base:base_java",

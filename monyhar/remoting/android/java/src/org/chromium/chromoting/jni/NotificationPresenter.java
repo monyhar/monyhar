@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting.jni;
+package org.monyhar.chromoting.jni;
 
 import android.app.Activity;
 import android.content.Context;
@@ -16,11 +16,11 @@ import android.widget.CheckBox;
 import androidx.annotation.IntDef;
 import androidx.appcompat.app.AlertDialog;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chromoting.Preconditions;
-import org.chromium.chromoting.R;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chromoting.Preconditions;
+import org.monyhar.chromoting.R;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

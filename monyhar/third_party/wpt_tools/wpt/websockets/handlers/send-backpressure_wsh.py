@@ -26,7 +26,7 @@ def web_socket_transfer_data(request):
     # Send empty message to fill the ReadableStream queue
     request.ws_stream.send_message(b'', binary=True)
 
-    # TODO(ricea@chromium.org): Use time.perf_counter() when migration to python
+    # TODO(ricea@monyhar.org): Use time.perf_counter() when migration to python
     # 3 is complete. time.time() can go backwards.
     start_time = time.time()
 

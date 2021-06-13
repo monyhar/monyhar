@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps.launchpad;
+package org.monyhar.chrome.browser.webapps.launchpad;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,11 +13,11 @@ import android.content.pm.ResolveInfo;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
-import org.chromium.chrome.browser.webapps.WebApkIntentDataProviderFactory;
-import org.chromium.chrome.browser.webapps.WebappInfo;
-import org.chromium.components.webapk.lib.client.WebApkValidator;
-import org.chromium.components.webapps.ShortcutSource;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.browser.webapps.WebApkIntentDataProviderFactory;
+import org.monyhar.chrome.browser.webapps.WebappInfo;
+import org.monyhar.components.webapk.lib.client.WebApkValidator;
+import org.monyhar.components.webapps.ShortcutSource;
 
 import java.util.ArrayList;
 import java.util.Collections;

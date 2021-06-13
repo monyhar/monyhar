@@ -39,7 +39,7 @@ constexpr int kUmaPriAbiMigMaxFailedAttempts = 10;
 
 constexpr base::TimeDelta kRequestProcessListPeriod =
     base::TimeDelta::FromMinutes(5);
-constexpr char kArcProcessNamePrefix[] = "org.chromium.arc.";
+constexpr char kArcProcessNamePrefix[] = "org.monyhar.arc.";
 constexpr char kGmsProcessNamePrefix[] = "com.google.android.gms";
 constexpr char kBootProgressEnableScreen[] = "boot_progress_enable_screen";
 constexpr char kBootProgressArcUpgraded[] = "boot_progress_arc_upgraded";

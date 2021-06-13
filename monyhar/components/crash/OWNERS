@@ -1,7 +1,7 @@
-jochen@chromium.org
-mark@chromium.org
-rsesek@chromium.org
-thestig@chromium.org
+jochen@monyhar.org
+mark@monyhar.org
+rsesek@monyhar.org
+thestig@monyhar.org
 
 # For Android-specific changes:
 per-file *android*=file://components/crash/android/OWNERS

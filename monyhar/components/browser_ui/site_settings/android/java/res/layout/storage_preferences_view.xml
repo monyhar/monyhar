@@ -22,7 +22,7 @@
         android:background="@drawable/modern_toolbar_shadow"
         android:scaleY="-1" />
 
-    <org.chromium.ui.widget.ButtonCompat
+    <org.monyhar.ui.widget.ButtonCompat
         android:id="@+id/clear_button"
         style="@style/TextButton"
         android:layout_width="match_parent"

@@ -66,7 +66,7 @@ bool GetUserMediaDirectory(const std::string& xdg_name,
 //     otherwise $XDG_CONFIG_HOME if set
 //     otherwise ~/.config
 //   and <product> is:
-//     "chromium" for Chromium
+//     "monyhar" for Chromium
 //     "google-chrome" for stable channel official build
 //     "google-chrome-beta" for beta channel official build
 //     "google-chrome-unstable" for dev channel official build
@@ -76,7 +76,7 @@ bool GetUserMediaDirectory(const std::string& xdg_name,
 //
 // See http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
 // for a spec on where config files go.  Using ~/.config also helps us sidestep
-// issues with other apps grabbing ~/.chromium .
+// issues with other apps grabbing ~/.monyhar .
 bool GetDefaultUserDataDirectory(base::FilePath* result) {
   std::unique_ptr<base::Environment> env(base::Environment::Create());
   base::FilePath config_dir;
@@ -92,7 +92,7 @@ bool GetDefaultUserDataDirectory(base::FilePath* result) {
 #if BUILDFLAG(GOOGLE_CHROME_BRANDING)
   std::string data_dir_basename = "google-chrome";
 #else
-  std::string data_dir_basename = "chromium";
+  std::string data_dir_basename = "monyhar";
 #endif
   *result = config_dir.Append(data_dir_basename + GetChannelSuffixForDataDir());
   return true;
@@ -105,7 +105,7 @@ void GetUserCacheDirectory(const base::FilePath& profile_dir,
   // - if the user-data-dir in the standard place,
   //     use same subdirectory of the cache directory.
   //     (this maps ~/.config/google-chrome to ~/.cache/google-chrome as well
-  //      as the same thing for ~/.config/chromium)
+  //      as the same thing for ~/.config/monyhar)
   // - otherwise, use the profile dir directly.
 
   // Default value in cases where any of the following fails.

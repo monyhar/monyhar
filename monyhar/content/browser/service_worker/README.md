@@ -4,9 +4,9 @@
 [content/renderer/service_worker]: /content/renderer/service_worker
 [content/common/service_worker]: /content/common/service_worker
 [disk_cache]: /net/disk_cache/README.md
-[embedded_worker.mojom]: https://codesearch.chromium.org/chromium/src/third_party/blink/public/mojom/service_worker/embedded_worker.mojom
-[service_worker_container.mojom]: https://codesearch.chromium.org/chromium/src/third_party/blink/public/mojom/service_worker/service_worker_container.mojom
-[service_worker_database.h]: https://codesearch.chromium.org/chromium/src/components/services/storage/service_worker/service_worker_database.h
+[embedded_worker.mojom]: https://codesearch.monyhar.org/monyhar/src/third_party/blink/public/mojom/service_worker/embedded_worker.mojom
+[service_worker_container.mojom]: https://codesearch.monyhar.org/monyhar/src/third_party/blink/public/mojom/service_worker/service_worker_container.mojom
+[service_worker_database.h]: https://codesearch.monyhar.org/monyhar/src/components/services/storage/service_worker/service_worker_database.h
 [third_party/blink/common/service_worker]: /third_party/blink/common/service_worker
 [third_party/blink/public/common/service_worker]: /third_party/blink/public/common/service_worker
 [third_party/blink/public/mojom/service_worker]: /third_party/blink/public/mojom/service_worker
@@ -15,11 +15,11 @@
 [third_party/blink/renderer/modules/service_worker]: /third_party/blink/renderer/modules/service_worker
 [Blink Public API]: /third_party/blink/public/README.md
 [Cache Storage API]: /content/browser/cache_storage/README.md
-[LevelDB]: /third_party/leveldatabase/README.chromium
+[LevelDB]: /third_party/leveldatabase/README.monyhar
 [Onion Soup]: https://docs.google.com/document/d/1K1nO8G9dO9kNSmtVz2gJ2GG9gQOTgm65sJlV3Fga4jE/edit?usp=sharing
 [Quota Manager]: /storage/browser/quota
-[ServiceWorkerDatabase]: https://codesearch.chromium.org/chromium/src/components/services/storage/service_worker/service_worker_database.h
-[ServiceWorkerStorage]: https://codesearch.chromium.org/chromium/src/components/services/storage/service_worker/service_worker_storage.h
+[ServiceWorkerDatabase]: https://codesearch.monyhar.org/monyhar/src/components/services/storage/service_worker/service_worker_database.h
+[ServiceWorkerStorage]: https://codesearch.monyhar.org/monyhar/src/components/services/storage/service_worker/service_worker_storage.h
 [Service Worker specification]: https://w3c.github.io/ServiceWorker/
 [MDN documentation]: https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
 
@@ -255,7 +255,7 @@ remotes to `mojom.blink.ServiceWorkerRegistrationObject` and
 > ServiceWorkerRegistration and ServiceWorker, or maybe prohibiting destructions
 > initiated from the renderer may work.
 > In addition, we have a Mojo interface for in-process communication across threads like
-> [this](https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/public/mojom/service_worker/controller_service_worker.mojom;l=95;drc=6e8b402a6231405b753919029c9027404325ea00).
+> [this](https://source.monyhar.org/monyhar/monyhar/src/+/main:third_party/blink/public/mojom/service_worker/controller_service_worker.mojom;l=95;drc=6e8b402a6231405b753919029c9027404325ea00).
 > Mojo is now slightly overused for abstraction of layers for service workers.
 
 #### Browser <-> Renderer (shared worker)
@@ -404,7 +404,7 @@ currently controlled pages are counted as using the feature.
 
 For more details and rationale, see [Design of UseCounter for
 workers](https://docs.google.com/document/d/1VyYZnhjBdk-MzCRAcX37TM5-yjwTY40U_J9rWnEAo8c/edit?usp=sharing)
-and [crbug 376039](https://bugs.chromium.org/p/chromium/issues/detail?id=376039).
+and [crbug 376039](https://bugs.monyhar.org/p/monyhar/issues/detail?id=376039).
 
 Code pointers include:
 - (Browser -> Page) ServiceWorkerContainer.SetController and
@@ -469,9 +469,9 @@ Here's the explanation about the each section:
 ### Tests
 
 We run a limited number of
-[Telemetry](https://chromium.googlesource.com/catapult/+/HEAD/telemetry/README.md)
+[Telemetry](https://monyhar.googlesource.com/catapult/+/HEAD/telemetry/README.md)
 benchmark tests for service worker and a few microbenchmarks in
-[blink_perf](https://chromium.googlesource.com/chromium/src/+/main/docs/speed/benchmark/harnesses/blink_perf.md#service-worker-perf-tests)
+[blink_perf](https://monyhar.googlesource.com/monyhar/src/+/main/docs/speed/benchmark/harnesses/blink_perf.md#service-worker-perf-tests)
 ([crbug](https://crbug.com/1019097)).
 
 Telemetry tests are part of the [Loading
@@ -485,10 +485,10 @@ of these test results. You can also run the benchmarks locally:
 
 ```
 # Run benchmark on `FlipKart`
-$ tools/perf/run_benchmark --browser=android-chromium loading.mobile --story-filter='FlipKart'
+$ tools/perf/run_benchmark --browser=android-monyhar loading.mobile --story-filter='FlipKart'
 
 # Run benchmark on `FlipKart` with cache_temperature = cold
-$ tools/perf/run_benchmark --browser=android-chromium loading.mobile --story-filter='FlipKart_cold'
+$ tools/perf/run_benchmark --browser=android-monyhar loading.mobile --story-filter='FlipKart_cold'
 ```
 
 > TODO(falken): Merge this with loading.md and cache_temperature.py documentation.
@@ -512,8 +512,8 @@ startup as part of the performance test.
 Code links and resources:
 - PWA test suite: see 'pwa' in
   [loading_mobile.py](/tools/perf/page_sets/loading_mobile.py), as of March 2019
-  [here](https://cs.chromium.org/chromium/src/tools/perf/page_sets/loading_mobile.py?l=88&rcl=e590d4e0ae6d3cbdabee199ea6fabe152a3eea83).
-- [cache_temperature.py](https://chromium.googlesource.com/catapult/+/main/telemetry/telemetry/page/cache_temperature.py)
+  [here](https://cs.monyhar.org/monyhar/src/tools/perf/page_sets/loading_mobile.py?l=88&rcl=e590d4e0ae6d3cbdabee199ea6fabe152a3eea83).
+- [cache_temperature.py](https://monyhar.googlesource.com/catapult/+/main/telemetry/telemetry/page/cache_temperature.py)
 - "Perf benchmark for PWAs using the loading benchmark": [crbug](https://crbug.com/736697) and
   [design doc](https://docs.google.com/document/d/1Nf97CVp1X7aSqvAspyJ7yOCDyr1osUNrnfrGwZ_Yuuo/edit?usp=sharing).
 

@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
-import static org.chromium.chrome.browser.customtabs.CustomTabIntentDataProvider.BUNDLE_ENTER_ANIMATION_RESOURCE;
-import static org.chromium.chrome.browser.customtabs.CustomTabIntentDataProvider.BUNDLE_EXIT_ANIMATION_RESOURCE;
-import static org.chromium.chrome.browser.customtabs.CustomTabIntentDataProvider.BUNDLE_PACKAGE_NAME;
-import static org.chromium.chrome.browser.customtabs.CustomTabIntentDataProvider.EXTRA_UI_TYPE;
-import static org.chromium.chrome.browser.customtabs.CustomTabIntentDataProvider.isTrustedCustomTab;
+import static org.monyhar.chrome.browser.customtabs.CustomTabIntentDataProvider.BUNDLE_ENTER_ANIMATION_RESOURCE;
+import static org.monyhar.chrome.browser.customtabs.CustomTabIntentDataProvider.BUNDLE_EXIT_ANIMATION_RESOURCE;
+import static org.monyhar.chrome.browser.customtabs.CustomTabIntentDataProvider.BUNDLE_PACKAGE_NAME;
+import static org.monyhar.chrome.browser.customtabs.CustomTabIntentDataProvider.EXTRA_UI_TYPE;
+import static org.monyhar.chrome.browser.customtabs.CustomTabIntentDataProvider.isTrustedCustomTab;
 
 import android.app.PendingIntent;
 import android.content.Context;
@@ -22,16 +22,16 @@ import androidx.annotation.Nullable;
 import androidx.browser.customtabs.CustomTabsIntent;
 import androidx.browser.customtabs.CustomTabsSessionToken;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ChromeApplicationImpl;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.browserservices.intents.ColorProvider;
-import org.chromium.chrome.browser.flags.ActivityType;
-import org.chromium.chrome.browser.flags.CachedFeatureFlags;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.components.browser_ui.widget.TintedDrawable;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ChromeApplicationImpl;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.browserservices.intents.ColorProvider;
+import org.monyhar.chrome.browser.flags.ActivityType;
+import org.monyhar.chrome.browser.flags.CachedFeatureFlags;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.components.browser_ui.widget.TintedDrawable;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -60,7 +60,7 @@ def parse_options():
     parser.add_argument("--output", type=str, help="filepath of output file")
     parser.add_argument("--path", type=str, help="Additions to sys.path")
     parser.add_argument(
-        "--chromium_revision",
+        "--monyhar_revision",
         type=str,
         help="Chromium revision (git hash) for the source of Blink WebIDL DB")
     args = parser.parse_args()
@@ -84,7 +84,7 @@ def main():
     from web_feature import WebFeature
     w = WebFeature(args.web_feature_mojom)
     p = BlinkApiProto(args.web_idl_database, args.output,
-                      args.chromium_revision, w)
+                      args.monyhar_revision, w)
     p.Parse()
     p.WriteTo(args.output)
 

@@ -99,7 +99,7 @@
 
       Si definiu aquesta política, <ph name="PRODUCT_NAME" /> farà servir el directori proporcionat independentment de si l'usuari ha especificat la marca "--disk-cache-dir" o no. Per evitar la pèrdua de dades o altres errors inesperats, aquesta política no s'ha d'establir al directori arrel del volum ni en un directori utilitzat per a altres finalitats, ja que <ph name="PRODUCT_NAME" /> n'administra els continguts.
 
-      Aneu a https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables per veure una llista de les variables que es poden utilitzar.
+      Aneu a https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables per veure una llista de les variables que es poden utilitzar.
 
       Si no es defineix aquesta política, s'utilitzarà el directori de memòria cau predeterminat i l'usuari podrà substituir-lo per la marca de la línia d'ordres "--disk-cache-dir".</translation>
 <translation id="113521240853905588">Configura els idiomes que <ph name="PRODUCT_OS_NAME" /> pot utilitzar com a preferits.
@@ -433,7 +433,7 @@
 <translation id="1852294065645015766">Permet la reproducció automàtica de contingut multimèdia</translation>
 <translation id="1857152770025485173">Aquesta política impedeix que l'usuari carregui pàgines web d'URL inclosos a la llista negra. La llista negra facilita una llista de patrons d'URL que especifiquen quins URL s'hi afegiran.
 
-      Els patrons d'URL han de tenir el format que s'indica a la pàgina https://www.chromium.org/administrators/url-blacklist-filter-format.
+      Els patrons d'URL han de tenir el format que s'indica a la pàgina https://www.monyhar.org/administrators/url-blacklist-filter-format.
 
       Es poden definir excepcions des de la política de llista blanca d'URL. Aquestes polítiques es limiten a 1.000 entrades; les posteriors s'ignoren.
 
@@ -470,7 +470,7 @@
 
       Si no es configura, els informes de mètriques i de dades de diagnòstic es desactivaran als dispositius no gestionats i s'activaran als dispositius gestionats.</translation>
 <translation id="1907431809333268751">Configura la llista d'URL d'inici de sessió per a empreses (només esquemes HTTP i HTTPS). L'empremta digital de la contrasenya es capturarà en aquests URL i s'utilitzarà per detectar la reutilització de contrasenyes.
-      Perquè <ph name="PRODUCT_NAME" /> pugui capturar les empremtes digitals correctament, assegura't que les pàgines d'inici de sessió compleixin les directrius descrites a https://www.chromium.org/developers/design-documents/create-amazing-password-forms.
+      Perquè <ph name="PRODUCT_NAME" /> pugui capturar les empremtes digitals correctament, assegura't que les pàgines d'inici de sessió compleixin les directrius descrites a https://www.monyhar.org/developers/design-documents/create-amazing-password-forms.
 
       Si aquesta opció de configuració està activada, el servei de protecció de contrasenyes capturarà l'empremta digital de la contrasenya en aquests URL per detectar la reutilització de contrasenyes.
       Si aquesta opció de configuració està desactivada o no s'estableix, el servei de protecció de contrasenyes només capturarà l'empremta digital de la contrasenya a https://accounts.google.com.
@@ -731,7 +731,7 @@ Deixar aquesta política sense establir és igual que activar l'opció, amb el f
 
       Aquesta política permet que els certificats dels noms d'amfitrió dels URL que especifiquis no es divulguin mitjançant Transparència de certificats. Això permet que es puguin continuar utilitzant certificats que, en cas contrari, podrien no ser de confiança perquè no s'han divulgat públicament de la manera adequada, però fa que sigui més difícil detectar l'emissió inadequada de certificats per a aquests amfitrions.
 
-      Un patró d'URL ha de tenir el format que s'indica a la pàgina https://www.chromium.org/administrators/url-blacklist-filter-format. Tanmateix, atès que els certificats són vàlids per a un nom d'amfitrió determinat independent de l'esquema, el port o camí, només es té en compte la part de l'URL corresponent al nom d'amfitrió. No s'admeten amfitrions comodí.
+      Un patró d'URL ha de tenir el format que s'indica a la pàgina https://www.monyhar.org/administrators/url-blacklist-filter-format. Tanmateix, atès que els certificats són vàlids per a un nom d'amfitrió determinat independent de l'esquema, el port o camí, només es té en compte la part de l'URL corresponent al nom d'amfitrió. No s'admeten amfitrions comodí.
 
       Si no s'estableix aquesta política, qualsevol certificat que s'hagi de divulgar mitjançant la Transparència de certificats es considerarà que no és de confiança si no es divulga d'acord amb la política Transparència de certificats.</translation>
 <translation id="2488010520405124654">Activeu la sol·licitud de configuració de la xarxa quan estigueu fora de línia.
@@ -1361,7 +1361,7 @@ Si es desactiva aquest paràmetre, els usuaris no podran activar el servidor int
 
       Si definiu aquesta política, <ph name="PRODUCT_NAME" /> farà servir el directori proporcionat independentment de si l'usuari n'ha especificat cap o de si ha activat la marca perquè es demani la ubicació de baixada cada vegada.
 
-      Visiteu l'enllaç https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables per veure una llista de les variables que es poden utilitzar.
+      Visiteu l'enllaç https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables per veure una llista de les variables que es poden utilitzar.
 
       Si no es defineix aquesta política, s'utilitzarà el directori de baixada predeterminat i l'usuari podrà canviar-lo.</translation>
 <translation id="3805659594028420438">Activa l'extensió de certificats lligats al domini TLS (obsolet)</translation>
@@ -1447,7 +1447,7 @@ Si es desactiva aquest paràmetre, els usuaris no podran activar el servidor int
 
       Si no es defineix aquesta política, <ph name="PRODUCT_NAME" /> utilitzarà el directori predeterminat habitual (específic de la plataforma).
 
-      Consulta https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables per veure una llista de les variables que es poden fer servir.</translation>
+      Consulta https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables per veure una llista de les variables que es poden fer servir.</translation>
 <translation id="3911737181201537215">Aquesta política no té cap efecte als registres que fa Android.</translation>
 <translation id="391531815696899618">Quan aquesta política s'estableix en True, desactiva la sincronització de Google Drive a l'aplicació Fitxers de <ph name="PRODUCT_OS_NAME" />. En aquest cas, no es pengen dades a Google Drive.
 
@@ -1809,7 +1809,7 @@ Si es desactiva aquest paràmetre, els usuaris no podran activar el servidor int
 
           Si no es defineix aquesta política, s'utilitzarà el renderitzador predeterminat per a tots els llocs, tal com es descriu a la política "ChromeFrameRendererSettings".
 
-          Per veure patrons d'exemple, consulteu l'enllaç https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Per veure patrons d'exemple, consulteu l'enllaç https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="467449052039111439">Obre una llista d'URL</translation>
 <translation id="4674871290487541952">Permet els algoritmes insegurs en comprovar la integritat de les instal·lacions i actualitzacions d'extensions</translation>
 <translation id="4680936297850947973">Aquesta política es considera obsoleta a M68. Substitueix-la per DefaultPopupsSetting.
@@ -2347,7 +2347,7 @@ Si la política no es defineix, els usuaris podran triar si el prestatge s'ha d'
 
       Si definiu aquesta política, <ph name="PRODUCT_FRAME_NAME" /> farà servir el directori proporcionat.
 
-      Visiteu l'enllaç https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables per veure una llista de les variables que es poden utilitzar.
+      Visiteu l'enllaç https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables per veure una llista de les variables que es poden utilitzar.
 
       Si no es defineix aquesta opció, s'utilitzarà el directori de perfil predeterminat.</translation>
 <translation id="5826047473100157858">Especifica si l'usuari pot obrir les pàgines en mode d'incògnit a <ph name="PRODUCT_NAME" />. Si se selecciona l'opció "activat" o no es defineix la política, les pàgines es podran obrir en mode d'incògnit. Si se selecciona l'opció "desactivat", les pàgines no es podran obrir en mode d'incògnit. Si se selecciona l'opció "forçat", les pàgines NOMÉS es podran obrir en mode d'incògnit.</translation>
@@ -2885,7 +2885,7 @@ Si aquesta política no es defineix o no s'activa, les ordres d'impressió faran
 
       Si definiu aquesta política, <ph name="PRODUCT_NAME" /> farà servir el directori proporcionat independentment de si l'usuari ha especificat la marca "--user-data-dir" o no. Per evitar la pèrdua de dades o altres errors inesperats, aquesta política no s'ha d'establir al directori arrel del volum ni en un directori utilitzat per a altres finalitats, ja que <ph name="PRODUCT_NAME" /> n'administra els continguts.
 
-      Aneu a https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables per veure una llista de les variables que es poden utilitzar.
+      Aneu a https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables per veure una llista de les variables que es poden utilitzar.
 
       Si no es defineix aquesta política, s'utilitzarà el camí de perfil predeterminat i l'usuari podrà substituir-lo per la marca de la línia d'ordres "--user-data-dir".</translation>
 <translation id="7027785306666625591">Configureu la gestió de l'alimentació de <ph name="PRODUCT_OS_NAME" />.
@@ -3582,7 +3582,7 @@ La manera recomanada de configurar la política a Windows és amb GPO, tot i que
           Si no es defineix aquesta política, s'utilitzarà el renderitzador predeterminat per a tots els llocs, tal com es descriu a la política "ChromeFrameRendererSettings".
 
 
-          Per veure exemples de patrons, consulteu l'enllaç https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Per veure exemples de patrons, consulteu l'enllaç https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="8489964335640955763">PluginVm</translation>
 <translation id="8493645415242333585">Desactiva el desament de l'historial de navegació</translation>
 <translation id="8499172469244085141">Configuració predeterminada (els usuaris la poden sobreescriure)</translation>

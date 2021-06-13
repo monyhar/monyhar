@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.contextualsearch;
+package org.monyhar.chrome.browser.contextualsearch;
 
 import android.content.Context;
 import android.net.Uri;
@@ -14,21 +14,21 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchPanelInterface;
-import org.chromium.chrome.browser.contextualsearch.ContextualSearchFieldTrial.ContextualSearchSetting;
-import org.chromium.chrome.browser.contextualsearch.ContextualSearchFieldTrial.ContextualSearchSwitch;
-import org.chromium.chrome.browser.contextualsearch.ContextualSearchSelectionController.SelectionType;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.privacy.settings.PrivacyPreferencesManagerImpl;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.search_engines.TemplateUrlServiceFactory;
-import org.chromium.chrome.browser.signin.services.UnifiedConsentServiceBridge;
-import org.chromium.chrome.browser.version.ChromeVersionInfo;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.url.GURL;
+import org.monyhar.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchPanelInterface;
+import org.monyhar.chrome.browser.contextualsearch.ContextualSearchFieldTrial.ContextualSearchSetting;
+import org.monyhar.chrome.browser.contextualsearch.ContextualSearchFieldTrial.ContextualSearchSwitch;
+import org.monyhar.chrome.browser.contextualsearch.ContextualSearchSelectionController.SelectionType;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.privacy.settings.PrivacyPreferencesManagerImpl;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.search_engines.TemplateUrlServiceFactory;
+import org.monyhar.chrome.browser.signin.services.UnifiedConsentServiceBridge;
+import org.monyhar.chrome.browser.version.ChromeVersionInfo;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.url.GURL;
 
 import java.util.regex.Pattern;
 

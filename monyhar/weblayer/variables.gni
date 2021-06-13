@@ -12,4 +12,4 @@ declare_args() {
   weblayer_in_split = true
 }
 
-weblayer_product_config_java_package = "org.chromium.weblayer_private"
+weblayer_product_config_java_package = "org.monyhar.weblayer_private"

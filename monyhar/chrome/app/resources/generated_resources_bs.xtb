@@ -6268,7 +6268,7 @@ Domena <ph name="DOMAIN" /> zahtijeva da pametna kartica ostane umetnuta.</trans
     <ph name="BR" />
     <ph name="BR" />
     Za više informacija o funkcijama za otklanjanje grešaka pogledajte:<ph name="BR" />
-    https://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-features
+    https://www.monyhar.org/monyhar-os/how-tos-and-troubleshooting/debugging-features
     <ph name="BR" />
     <ph name="BR" />
     <ph name="BEGIN_BOLD" />Napomena:<ph name="END_BOLD" />  Sistem će se ponovo pokrenuti za vrijeme ovog postupka.</translation>

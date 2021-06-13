@@ -5,7 +5,7 @@
 	<key>Disabled</key>
 	<false/>
 	<key>Label</key>
-	<string>org.chromium.chromoting</string>
+	<string>org.monyhar.chromoting</string>
 	<key>LimitLoadToSessionType</key>
 	<array>
 		<string>Aqua</string>

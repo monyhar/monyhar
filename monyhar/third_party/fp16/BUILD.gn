@@ -9,8 +9,8 @@ config("fp16_config") {
 source_set("fp16") {
   public = [ "src/include/fp16.h" ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 
   public_configs = [ ":fp16_config" ]
 }

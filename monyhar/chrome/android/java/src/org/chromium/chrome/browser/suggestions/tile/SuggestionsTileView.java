@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.suggestions.tile;
+package org.monyhar.chrome.browser.suggestions.tile;
 
 import android.content.Context;
 import android.content.res.Resources;
 import android.util.AttributeSet;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ntp.TitleUtil;
-import org.chromium.chrome.browser.suggestions.SiteSuggestion;
-import org.chromium.components.browser_ui.widget.tile.TileView;
-import org.chromium.url.GURL;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ntp.TitleUtil;
+import org.monyhar.chrome.browser.suggestions.SiteSuggestion;
+import org.monyhar.components.browser_ui.widget.tile.TileView;
+import org.monyhar.url.GURL;
 /**
  * The view for a site suggestion tile. Displays the title of the site beneath a large icon. If a
  * large icon isn't available, displays a rounded rectangle with a single letter in its place.

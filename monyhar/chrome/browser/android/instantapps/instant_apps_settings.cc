@@ -23,7 +23,7 @@ namespace {
 
 // This histogram is used to record UMA, please do not rearrange,
 // append entries only before AIA_COUNT.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.instantapps
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.instantapps
 // GENERATED_JAVA_PREFIX_TO_STRIP: AIA_
 enum class AiaBannerReason {
   AIA_SHOULD_SHOW,

@@ -13,7 +13,7 @@
 #include "mojo/public/cpp/bindings/receiver_set.h"
 #include "mojo/public/cpp/bindings/remote.h"
 #include "mojo/public/cpp/bindings/tests/pickled_types_blink.h"
-#include "mojo/public/cpp/bindings/tests/pickled_types_chromium.h"
+#include "mojo/public/cpp/bindings/tests/pickled_types_monyhar.h"
 #include "mojo/public/cpp/bindings/tests/variant_test_util.h"
 #include "mojo/public/interfaces/bindings/tests/test_native_types.mojom-blink.h"
 #include "mojo/public/interfaces/bindings/tests/test_native_types.mojom.h"
@@ -156,7 +156,7 @@ class PickleTest : public testing::Test {
   template <typename ProxyType = PicklePasser>
   Remote<ProxyType> ConnectToChromiumService() {
     Remote<ProxyType> proxy;
-    chromium_receivers_.Add(&chromium_service_,
+    monyhar_receivers_.Add(&monyhar_service_,
                             ConvertPendingReceiver<PicklePasser>(
                                 proxy.BindNewPipeAndPassReceiver()));
     return proxy;
@@ -192,8 +192,8 @@ class PickleTest : public testing::Test {
 
  private:
   base::test::SingleThreadTaskEnvironment task_environment_;
-  ChromiumPicklePasserImpl chromium_service_;
-  ReceiverSet<PicklePasser> chromium_receivers_;
+  ChromiumPicklePasserImpl monyhar_service_;
+  ReceiverSet<PicklePasser> monyhar_receivers_;
   BlinkPicklePasserImpl blink_service_;
   ReceiverSet<blink::PicklePasser> blink_receivers_;
 };
@@ -201,17 +201,17 @@ class PickleTest : public testing::Test {
 }  // namespace
 
 TEST_F(PickleTest, ChromiumProxyToChromiumService) {
-  auto chromium_proxy = ConnectToChromiumService();
+  auto monyhar_proxy = ConnectToChromiumService();
   {
     base::RunLoop loop;
-    chromium_proxy->PassPickledStruct(
+    monyhar_proxy->PassPickledStruct(
         PickledStructChromium(1, 2),
         ExpectResult(PickledStructChromium(1, 2), loop.QuitClosure()));
     loop.Run();
   }
   {
     base::RunLoop loop;
-    chromium_proxy->PassPickledStruct(
+    monyhar_proxy->PassPickledStruct(
         PickledStructChromium(4, 5),
         ExpectResult(PickledStructChromium(4, 5), loop.QuitClosure()));
     loop.Run();
@@ -219,7 +219,7 @@ TEST_F(PickleTest, ChromiumProxyToChromiumService) {
 
   {
     base::RunLoop loop;
-    chromium_proxy->PassPickledEnum(
+    monyhar_proxy->PassPickledEnum(
         PickledEnumChromium::VALUE_1,
         ExpectEnumResult(PickledEnumChromium::VALUE_1, loop.QuitClosure()));
     loop.Run();
@@ -227,17 +227,17 @@ TEST_F(PickleTest, ChromiumProxyToChromiumService) {
 }
 
 TEST_F(PickleTest, ChromiumProxyToBlinkService) {
-  auto chromium_proxy = ConnectToBlinkService<PicklePasser>();
+  auto monyhar_proxy = ConnectToBlinkService<PicklePasser>();
   {
     base::RunLoop loop;
-    chromium_proxy->PassPickledStruct(
+    monyhar_proxy->PassPickledStruct(
         PickledStructChromium(1, 2),
         ExpectResult(PickledStructChromium(1, 2), loop.QuitClosure()));
     loop.Run();
   }
   {
     base::RunLoop loop;
-    chromium_proxy->PassPickledStruct(
+    monyhar_proxy->PassPickledStruct(
         PickledStructChromium(4, 5),
         ExpectResult(PickledStructChromium(4, 5), loop.QuitClosure()));
     loop.Run();
@@ -246,17 +246,17 @@ TEST_F(PickleTest, ChromiumProxyToBlinkService) {
   // PickledStructBlink ParamTraits deserializer rejects negative values.
   {
     base::RunLoop loop;
-    chromium_proxy->PassPickledStruct(
+    monyhar_proxy->PassPickledStruct(
         PickledStructChromium(-1, -1),
         Fail<PickledStructChromium>("Blink service should reject this."));
-    ExpectError(&chromium_proxy, loop.QuitClosure());
+    ExpectError(&monyhar_proxy, loop.QuitClosure());
     loop.Run();
   }
 
-  chromium_proxy = ConnectToBlinkService<PicklePasser>();
+  monyhar_proxy = ConnectToBlinkService<PicklePasser>();
   {
     base::RunLoop loop;
-    chromium_proxy->PassPickledEnum(
+    monyhar_proxy->PassPickledEnum(
         PickledEnumChromium::VALUE_0,
         ExpectEnumResult(PickledEnumChromium::VALUE_0, loop.QuitClosure()));
     loop.Run();
@@ -266,10 +266,10 @@ TEST_F(PickleTest, ChromiumProxyToBlinkService) {
   // PickledEnumBlink ParamTraits deserializer rejects this value.
   {
     base::RunLoop loop;
-    chromium_proxy->PassPickledEnum(
+    monyhar_proxy->PassPickledEnum(
         PickledEnumChromium::VALUE_2,
         EnumFail<PickledEnumChromium>("Blink service should reject this."));
-    ExpectError(&chromium_proxy, loop.QuitClosure());
+    ExpectError(&monyhar_proxy, loop.QuitClosure());
     loop.Run();
   }
 }

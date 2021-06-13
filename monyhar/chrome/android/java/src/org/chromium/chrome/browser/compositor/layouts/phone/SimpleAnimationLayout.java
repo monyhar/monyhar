@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.layouts.phone;
+package org.monyhar.chrome.browser.compositor.layouts.phone;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -10,25 +10,25 @@ import android.animation.AnimatorSet;
 import android.content.Context;
 import android.graphics.RectF;
 
-import org.chromium.base.MathUtils;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsStateProvider;
-import org.chromium.chrome.browser.compositor.LayerTitleCache;
-import org.chromium.chrome.browser.compositor.layouts.Layout;
-import org.chromium.chrome.browser.compositor.layouts.LayoutRenderHost;
-import org.chromium.chrome.browser.compositor.layouts.LayoutUpdateHost;
-import org.chromium.chrome.browser.compositor.layouts.components.LayoutTab;
-import org.chromium.chrome.browser.compositor.layouts.content.TabContentManager;
-import org.chromium.chrome.browser.compositor.layouts.eventfilter.BlackHoleEventFilter;
-import org.chromium.chrome.browser.compositor.scene_layer.TabListSceneLayer;
-import org.chromium.chrome.browser.layouts.EventFilter;
-import org.chromium.chrome.browser.layouts.LayoutType;
-import org.chromium.chrome.browser.layouts.animation.CompositorAnimationHandler;
-import org.chromium.chrome.browser.layouts.animation.CompositorAnimator;
-import org.chromium.chrome.browser.layouts.scene_layer.SceneLayer;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.TabModel;
-import org.chromium.ui.interpolators.BakedBezierInterpolator;
-import org.chromium.ui.resources.ResourceManager;
+import org.monyhar.base.MathUtils;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsStateProvider;
+import org.monyhar.chrome.browser.compositor.LayerTitleCache;
+import org.monyhar.chrome.browser.compositor.layouts.Layout;
+import org.monyhar.chrome.browser.compositor.layouts.LayoutRenderHost;
+import org.monyhar.chrome.browser.compositor.layouts.LayoutUpdateHost;
+import org.monyhar.chrome.browser.compositor.layouts.components.LayoutTab;
+import org.monyhar.chrome.browser.compositor.layouts.content.TabContentManager;
+import org.monyhar.chrome.browser.compositor.layouts.eventfilter.BlackHoleEventFilter;
+import org.monyhar.chrome.browser.compositor.scene_layer.TabListSceneLayer;
+import org.monyhar.chrome.browser.layouts.EventFilter;
+import org.monyhar.chrome.browser.layouts.LayoutType;
+import org.monyhar.chrome.browser.layouts.animation.CompositorAnimationHandler;
+import org.monyhar.chrome.browser.layouts.animation.CompositorAnimator;
+import org.monyhar.chrome.browser.layouts.scene_layer.SceneLayer;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.TabModel;
+import org.monyhar.ui.interpolators.BakedBezierInterpolator;
+import org.monyhar.ui.resources.ResourceManager;
 
 import java.util.ArrayList;
 import java.util.Arrays;

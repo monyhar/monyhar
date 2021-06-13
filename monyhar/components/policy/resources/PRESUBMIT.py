@@ -3,7 +3,7 @@
 # found in the LICENSE file.
 
 # If this presubmit check fails or misbehaves, please complain to
-# mnissler@chromium.org, bartfab@chromium.org or atwilson@chromium.org.
+# mnissler@monyhar.org, bartfab@monyhar.org or atwilson@monyhar.org.
 
 import sys
 from xml.dom import minidom

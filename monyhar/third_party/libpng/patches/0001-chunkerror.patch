@@ -19,13 +19,13 @@ Add a regression test. The image is supplied in the bug, and has approval
 to be checked in [3].
 
 [1] https://github.com/glennrp/libpng/commit/347538efbdc21b8df684ebd92d37400b3ce85d55
-[2] https://chromium.googlesource.com/chromium/src/+/f82653a473f8de5fc86d0f2ecc75f6237e61946b
-[3] https://bugs.chromium.org/p/chromium/issues/detail?id=827754#c15
+[2] https://monyhar.googlesource.com/monyhar/src/+/f82653a473f8de5fc86d0f2ecc75f6237e61946b
+[3] https://bugs.monyhar.org/p/monyhar/issues/detail?id=827754#c15
 
 Change-Id: Iaae884b42a94bdec6e1cfad97d46ef820a75a5f8
-Reviewed-on: https://chromium-review.googlesource.com/1014027
-Commit-Queue: Leon Scroggins <scroggo@chromium.org>
-Reviewed-by: Noel Gordon <noel@chromium.org>
+Reviewed-on: https://monyhar-review.googlesource.com/1014027
+Commit-Queue: Leon Scroggins <scroggo@monyhar.org>
+Reviewed-by: Noel Gordon <noel@monyhar.org>
 Cr-Commit-Position: refs/heads/master@{#551838}
 ---
 

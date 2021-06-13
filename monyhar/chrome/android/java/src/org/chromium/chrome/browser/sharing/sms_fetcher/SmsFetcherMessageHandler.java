@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sharing.sms_fetcher;
+package org.monyhar.chrome.browser.sharing.sms_fetcher;
 
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
@@ -10,16 +10,16 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.notifications.NotificationConstants;
-import org.chromium.chrome.browser.notifications.NotificationUmaTracker;
-import org.chromium.chrome.browser.sharing.SharingNotificationUtil;
-import org.chromium.components.browser_ui.notifications.PendingIntentProvider;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.notifications.NotificationConstants;
+import org.monyhar.chrome.browser.notifications.NotificationUmaTracker;
+import org.monyhar.chrome.browser.sharing.SharingNotificationUtil;
+import org.monyhar.components.browser_ui.notifications.PendingIntentProvider;
 
 /**
  * Handles Sms Fetcher messages and notifications for Android.

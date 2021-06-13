@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.query_tiles;
+package org.monyhar.components.query_tiles;
 
 import android.text.TextUtils;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.RecordUserAction;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordUserAction;
 
 import java.util.List;
 

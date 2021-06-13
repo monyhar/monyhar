@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.signin;
+package org.monyhar.chrome.browser.signin;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.junit.Assert.assertThat;
 
-import static org.chromium.chrome.browser.browserservices.TrustedWebActivityTestUtil.createSession;
-import static org.chromium.chrome.browser.browserservices.TrustedWebActivityTestUtil.createTrustedWebActivityIntent;
-import static org.chromium.chrome.browser.browserservices.TrustedWebActivityTestUtil.spoofVerification;
+import static org.monyhar.chrome.browser.browserservices.TrustedWebActivityTestUtil.createSession;
+import static org.monyhar.chrome.browser.browserservices.TrustedWebActivityTestUtil.createTrustedWebActivityIntent;
+import static org.monyhar.chrome.browser.browserservices.TrustedWebActivityTestUtil.spoofVerification;
 
 import android.content.Intent;
 
@@ -20,19 +20,19 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.chrome.browser.customtabs.CustomTabActivityTestRule;
-import org.chromium.chrome.browser.customtabs.CustomTabsTestUtils;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.browser.signin.AccountManagerTestRule;
-import org.chromium.content_public.browser.test.util.JavaScriptUtils;
-import org.chromium.net.test.EmbeddedTestServerRule;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivityTestRule;
+import org.monyhar.chrome.browser.customtabs.CustomTabsTestUtils;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.browser.signin.AccountManagerTestRule;
+import org.monyhar.content_public.browser.test.util.JavaScriptUtils;
+import org.monyhar.net.test.EmbeddedTestServerRule;
 
 import java.util.concurrent.TimeoutException;
 

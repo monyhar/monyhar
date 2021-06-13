@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.shell;
+package org.monyhar.chromecast.shell;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -11,8 +11,8 @@ import android.content.IntentFilter;
 
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.chromecast.base.Scope;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.chromecast.base.Scope;
 
 /**
  * Registers a BroadcastReceiver in the constructor, and unregisters it in the close() method.

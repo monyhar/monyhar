@@ -84,9 +84,9 @@ class MojomJSFile(Rule):
     description = "Don't check *.mojom.js files into WPT"
     to_fix = """
         Check if the file is already included in mojojs.zip:
-        https://source.chromium.org/chromium/chromium/src/+/master:chrome/tools/build/linux/FILES.cfg
+        https://source.monyhar.org/monyhar/monyhar/src/+/master:chrome/tools/build/linux/FILES.cfg
         If yes, use `loadMojoResources` from `resources/test-only-api.js` to load
-        it; if not, contact ecosystem-infra@chromium.org for adding new files
+        it; if not, contact ecosystem-infra@monyhar.org for adding new files
         to mojojs.zip.
     """
 

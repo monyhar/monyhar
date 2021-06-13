@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox;
+package org.monyhar.chrome.browser.omnibox;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -21,13 +21,13 @@ import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.Callback;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.components.omnibox.OmniboxUrlEmphasizer;
-import org.chromium.components.omnibox.OmniboxUrlEmphasizer.UrlEmphasisColorSpan;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyObservable.PropertyObserver;
+import org.monyhar.base.Callback;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.components.omnibox.OmniboxUrlEmphasizer;
+import org.monyhar.components.omnibox.OmniboxUrlEmphasizer.UrlEmphasisColorSpan;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyObservable.PropertyObserver;
 
 /**
  * Unit tests for {@link UrlBarMediator}.

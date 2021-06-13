@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sync;
+package org.monyhar.chrome.browser.sync;
 
 import android.app.PendingIntent;
 import android.content.Intent;
@@ -10,31 +10,31 @@ import android.content.Intent;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.notifications.NotificationConstants;
-import org.chromium.chrome.browser.notifications.NotificationUmaTracker;
-import org.chromium.chrome.browser.notifications.NotificationWrapperBuilderFactory;
-import org.chromium.chrome.browser.notifications.channels.ChromeChannelDefinitions;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
-import org.chromium.chrome.browser.signin.services.IdentityServicesProvider;
-import org.chromium.chrome.browser.sync.settings.ManageSyncSettings;
-import org.chromium.chrome.browser.sync.settings.SyncSettingsUtils;
-import org.chromium.chrome.browser.sync.ui.PassphraseActivity;
-import org.chromium.chrome.browser.sync.ui.TrustedVaultKeyRetrievalProxyActivity;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxy;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxyImpl;
-import org.chromium.components.browser_ui.notifications.NotificationMetadata;
-import org.chromium.components.browser_ui.notifications.NotificationWrapper;
-import org.chromium.components.browser_ui.notifications.PendingIntentProvider;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.signin.base.CoreAccountInfo;
-import org.chromium.components.signin.base.GoogleServiceAuthError.State;
-import org.chromium.components.signin.identitymanager.ConsentLevel;
-import org.chromium.components.sync.PassphraseType;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.notifications.NotificationConstants;
+import org.monyhar.chrome.browser.notifications.NotificationUmaTracker;
+import org.monyhar.chrome.browser.notifications.NotificationWrapperBuilderFactory;
+import org.monyhar.chrome.browser.notifications.channels.ChromeChannelDefinitions;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.settings.SettingsLauncherImpl;
+import org.monyhar.chrome.browser.signin.services.IdentityServicesProvider;
+import org.monyhar.chrome.browser.sync.settings.ManageSyncSettings;
+import org.monyhar.chrome.browser.sync.settings.SyncSettingsUtils;
+import org.monyhar.chrome.browser.sync.ui.PassphraseActivity;
+import org.monyhar.chrome.browser.sync.ui.TrustedVaultKeyRetrievalProxyActivity;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxy;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxyImpl;
+import org.monyhar.components.browser_ui.notifications.NotificationMetadata;
+import org.monyhar.components.browser_ui.notifications.NotificationWrapper;
+import org.monyhar.components.browser_ui.notifications.PendingIntentProvider;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.signin.base.CoreAccountInfo;
+import org.monyhar.components.signin.base.GoogleServiceAuthError.State;
+import org.monyhar.components.signin.identitymanager.ConsentLevel;
+import org.monyhar.components.sync.PassphraseType;
 
 /**
  * {@link SyncErrorNotifier} displays Android notifications regarding sync errors.

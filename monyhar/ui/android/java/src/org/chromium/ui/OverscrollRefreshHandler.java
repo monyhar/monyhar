@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui;
+package org.monyhar.ui;
 
-import org.chromium.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.CalledByNative;
 
 /**
  * Simple interface allowing customized response to an overscrolling pull input.

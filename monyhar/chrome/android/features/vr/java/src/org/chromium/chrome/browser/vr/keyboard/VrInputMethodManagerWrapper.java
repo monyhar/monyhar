@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr.keyboard;
+package org.monyhar.chrome.browser.vr.keyboard;
 
 import android.content.Context;
 import android.os.IBinder;
@@ -14,9 +14,9 @@ import android.view.inputmethod.InputMethodManager;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
-import org.chromium.content_public.browser.InputMethodManagerWrapper;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.Log;
+import org.monyhar.content_public.browser.InputMethodManagerWrapper;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * A fake wrapper around Android's InputMethodManager that doesn't really talk to the

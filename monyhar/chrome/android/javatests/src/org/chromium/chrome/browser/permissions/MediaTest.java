@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.permissions;
+package org.monyhar.chrome.browser.permissions;
 
 import androidx.test.filters.MediumTest;
 
@@ -11,13 +11,13 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.permissions.PermissionTestRule.PermissionUpdateWaiter;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.content_public.common.ContentSwitches;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.permissions.PermissionTestRule.PermissionUpdateWaiter;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.content_public.common.ContentSwitches;
 
 /**
  * Test suite for media permissions requests.

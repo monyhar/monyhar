@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.http_auth;
+package org.monyhar.components.browser_ui.http_auth;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -15,8 +15,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 
-import org.chromium.components.browser_ui.widget.text.AlertDialogEditText;
-import org.chromium.url.GURL;
+import org.monyhar.components.browser_ui.widget.text.AlertDialogEditText;
+import org.monyhar.url.GURL;
 
 /**
  * HTTP Authentication Dialog

@@ -620,7 +620,7 @@ bool VADisplayState::InitializeVaDriver_Locked() {
   // calling vaInitialize(). Since the libva is now ABI-compatible, relax the
   // version check which helps in upgrading the libva, without breaking any
   // existing functionality. Make sure the system version is not older than
-  // the version with which the chromium is built since libva is only
+  // the version with which the monyhar is built since libva is only
   // guaranteed to be backward (and not forward) compatible.
   if (VA_MAJOR_VERSION > major_version ||
       (VA_MAJOR_VERSION == major_version && VA_MINOR_VERSION > minor_version)) {

@@ -3,7 +3,7 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
-# See https://chromium.googlesource.com/infra/luci/luci-go/+/HEAD/lucicfg/doc/README.md
+# See https://monyhar.googlesource.com/infra/luci/luci-go/+/HEAD/lucicfg/doc/README.md
 # for information on starlark/lucicfg
 
 load("//lib/branches.star", "branches")
@@ -60,7 +60,7 @@ luci.project(
     milo = "luci-milo.appspot.com",
     notify = "luci-notify.appspot.com",
     scheduler = "luci-scheduler.appspot.com",
-    swarming = "chromium-swarm.appspot.com",
+    swarming = "monyhar-swarm.appspot.com",
     acls = [
         acl.entry(
             roles = [
@@ -72,11 +72,11 @@ luci.project(
         ),
         acl.entry(
             roles = acl.LOGDOG_WRITER,
-            groups = "luci-logdog-chromium-writers",
+            groups = "luci-logdog-monyhar-writers",
         ),
         acl.entry(
             roles = acl.SCHEDULER_OWNER,
-            groups = "project-chromium-admins",
+            groups = "project-monyhar-admins",
         ),
     ],
 )
@@ -84,15 +84,15 @@ luci.project(
 luci.cq(
     submit_max_burst = 2,
     submit_burst_delay = time.minute,
-    status_host = "chromium-cq-status.appspot.com",
+    status_host = "monyhar-cq-status.appspot.com",
 )
 
 luci.logdog(
-    gs_bucket = "chromium-luci-logdog",
+    gs_bucket = "monyhar-luci-logdog",
 )
 
 luci.milo(
-    logo = "https://storage.googleapis.com/chrome-infra-public/logo/chromium.svg",
+    logo = "https://storage.googleapis.com/chrome-infra-public/logo/monyhar.svg",
 )
 
 luci.notify(
@@ -109,7 +109,7 @@ luci.realm(
         ),
         luci.binding(
             roles = "role/resultdb.invocationCreator",
-            groups = "project-chromium-tryjob-access",
+            groups = "project-monyhar-tryjob-access",
         ),
         # Other roles are inherited from @root which grants them to group:all.
     ],
@@ -125,7 +125,7 @@ exec("//recipes.star")
 
 exec("//notifiers.star")
 
-exec("//subprojects/chromium/subproject.star")
+exec("//subprojects/monyhar/subproject.star")
 branches.exec("//subprojects/codesearch/subproject.star")
 branches.exec("//subprojects/findit/subproject.star")
 branches.exec("//subprojects/goma/subproject.star")

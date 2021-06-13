@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.generic_ui;
+package org.monyhar.chrome.browser.autofill_assistant.generic_ui;
 
-import static org.chromium.chrome.browser.autofill_assistant.generic_ui.AssistantViewFactory.setViewLayoutParams;
+import static org.monyhar.chrome.browser.autofill_assistant.generic_ui.AssistantViewFactory.setViewLayoutParams;
 
 import android.content.Context;
 import android.support.annotation.Nullable;
@@ -15,7 +15,7 @@ import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 
-import org.chromium.base.Callback;
+import org.monyhar.base.Callback;
 
 /**
  * Custom toggle button that supports arbitrary content views.

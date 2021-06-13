@@ -10,7 +10,7 @@ static_library("web_time_limit_error_page") {
 
   deps = [
     "//base",
-    "//chrome/app:chromium_strings",
+    "//chrome/app:monyhar_strings",
     "//chrome/app:generated_resources",
     "//chrome/browser:resources_grit",
     "//ui/base",

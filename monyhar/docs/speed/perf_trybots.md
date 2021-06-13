@@ -42,7 +42,7 @@ Story Tags | (optional) A list of story tags. All stories in the given benchmark
 Extra Test Arguments | (optional) Extra arguments for the test. E.g. `--extra-chrome-categories="foo,bar"`<br><br>To see all arguments, run `tools/perf/run_benchmark run --help`
 
 Note that you must provide either a Story or a Story Tag for Pinpoint to run.
-Per [this explanation](https://bugs.chromium.org/p/chromium/issues/detail?id=1017811#c6), running an entire benchmark on Pinpoint can cause significant problems if the benchmark is large. For this reason, some small benchmarks have an 'all' tag available that applies to all the stories in the benchmark, so please use that tag to run all the stories for a small benchmark. Please see [this bug](https://bugs.chromium.org/p/chromium/issues/detail?id=1023451) for details on work to add the 'all' tag to more benchmarks. If you want to run a large benchmark, consider choosing one of the tags that benchmark provides to select a subset of the available stories for that benchmark.
+Per [this explanation](https://bugs.monyhar.org/p/monyhar/issues/detail?id=1017811#c6), running an entire benchmark on Pinpoint can cause significant problems if the benchmark is large. For this reason, some small benchmarks have an 'all' tag available that applies to all the stories in the benchmark, so please use that tag to run all the stories for a small benchmark. Please see [this bug](https://bugs.monyhar.org/p/monyhar/issues/detail?id=1023451) for details on work to add the 'all' tag to more benchmarks. If you want to run a large benchmark, consider choosing one of the tags that benchmark provides to select a subset of the available stories for that benchmark.
 
 <br><br>
 

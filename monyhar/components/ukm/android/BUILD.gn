@@ -5,7 +5,7 @@
 import("//build/config/android/rules.gni")
 
 android_library("java") {
-  sources = [ "java/src/org/chromium/components/ukm/UkmRecorder.java" ]
+  sources = [ "java/src/org/monyhar/components/ukm/UkmRecorder.java" ]
 
   deps = [
     "//base:base_java",
@@ -16,7 +16,7 @@ android_library("java") {
 }
 
 generate_jni("jni_headers") {
-  sources = [ "java/src/org/chromium/components/ukm/UkmRecorder.java" ]
+  sources = [ "java/src/org/monyhar/components/ukm/UkmRecorder.java" ]
 }
 
 static_library("ukm_recorder") {

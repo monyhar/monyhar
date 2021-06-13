@@ -21,7 +21,7 @@ namespace chromeos {
 namespace {
 
 const char kDefaultCellularDevicePath[] = "stub_cellular_device";
-const char kTestEuiccBasePath[] = "/org/chromium/Hermes/Euicc/";
+const char kTestEuiccBasePath[] = "/org/monyhar/Hermes/Euicc/";
 const char kTestBaseEid[] = "12345678901234567890123456789012";
 const char kTestPSimIccid[] = "1234567890";
 const char kTestCellularServicePath[] = "/service/cellular";

@@ -11,5 +11,5 @@ include_rules = [
   "+components/feature_engagement",
   "+components/feed",
   "+components/browser_ui/settings",
-  "+content/public/android/java/src/org/chromium/content_public/browser",
+  "+content/public/android/java/src/org/monyhar/content_public/browser",
 ]

@@ -25,7 +25,7 @@ Chromium project, you should first obtain Chrome Eng Review approval.
 Googlers should see go/chrome-eng-review and review existing topics in
 g/chrome-eng-review. Please include information about the additional checkout
 size, build times, and binary size increase of
-[official](https://www.chromium.org/developers/gn-build-configuration) builds
+[official](https://www.monyhar.org/developers/gn-build-configuration) builds
 on Android and one desktop platform. Please also make sure that the motivation
 for your project is clear, e.g., a design doc has been circulated.
 
@@ -49,8 +49,8 @@ available during checkout.
 ### Pulling the code via DEPS
 
 If the code is in a Git repo that you want to mirror, please file an [infra git
-ticket](https://bugs.chromium.org/p/chromium/issues/entry?template=Infra-Git)
-to get the repo mirrored onto chromium.googlesource.com; we don't allow direct
+ticket](https://bugs.monyhar.org/p/monyhar/issues/entry?template=Infra-Git)
+to get the repo mirrored onto monyhar.googlesource.com; we don't allow direct
 dependencies on non-Google-hosted repositories, so that we can still build
 if an external repository goes down..
 
@@ -61,7 +61,7 @@ they don't need.
 
 As for specifying the path where the library is fetched, a path like
 `//third_party/<project_name>/src` is highly recommended so that you can put
-the file like OWNERS or README.chromium at `//third_party/<project_name>`. If
+the file like OWNERS or README.monyhar at `//third_party/<project_name>`. If
 you have a wrong path in DEPS and want to change the path of the existing
 library in DEPS, please ask the infrastructure team before committing the
 change.
@@ -73,11 +73,11 @@ repository.
 ### Checking in the code directly
 
 If you are checking in a snapshot, please describe the source in the
-README.chromium file, described below.  For security reasons, please retrieve
+README.monyhar file, described below.  For security reasons, please retrieve
 the code as securely as you can, using HTTPS and GPG signatures if available.
 If retrieving a tarball, please do not check the tarball itself into the tree,
 but do list the source and the SHA-512 hash (for verification) in the
-README.chromium and Change List. The SHA-512 hash can be computed via
+README.monyhar and Change List. The SHA-512 hash can be computed via
 `sha512sum` or `openssl dgst -sha512`.  If retrieving from a git
 repository, please list the revision that the code was pulled from.
 
@@ -110,15 +110,15 @@ As an OWNER, you're expected to:
   dependency in the best way, as the feature and the dependency change over
   time.
 
-### Add a README.chromium
+### Add a README.monyhar
 
-You need a README.chromium file with information about the project from which
+You need a README.monyhar file with information about the project from which
 you're re-using code. See
-[//third_party/README.chromium.template](../third_party/README.chromium.template)
+[//third_party/README.monyhar.template](../third_party/README.monyhar.template)
 for a list of fields to include. A presubmit check will check this has the right
 format.
 
-README.chromium files contain a field indicating whether the package is
+README.monyhar files contain a field indicating whether the package is
 security-critical or not. A package is security-critical if it is compiled
 into the product and does any of the following:
 
@@ -170,12 +170,12 @@ Non-Googlers can email one of the people in
 
 * Make sure you have the approval from Chrome Eng Review as mentioned
   [above](#before-you-start).
-* Get security@chromium.org approval. Email the list with relevant details and
+* Get security@monyhar.org approval. Email the list with relevant details and
   a link to the CL. Third party code is a hot spot for security vulnerabilities.
   When adding a new package that could potentially carry security risk, make
-  sure to highlight risk to security@chromium.org. You may be asked to add
+  sure to highlight risk to security@monyhar.org. You may be asked to add
   a README.security or, in dangerous cases, README.SECURITY.URGENTLY file.
-* Add chromium-third-party@google.com as a reviewer on your change. This
+* Add monyhar-third-party@google.com as a reviewer on your change. This
   will trigger an automatic round-robin assignment to a reviewer who will check
   licensing matters. These reviewers may not be able to +1 a change so look for
   verbal approval in the comments. (This list does not receive or deliver

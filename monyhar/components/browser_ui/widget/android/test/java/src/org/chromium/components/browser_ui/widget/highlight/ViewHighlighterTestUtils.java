@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.highlight;
+package org.monyhar.components.browser_ui.widget.highlight;
 
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
 import android.view.View;
 
-import org.chromium.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.CriteriaHelper;
 
 /**
  * Allows for testing of views which are highlightable via ViewHighlighter.

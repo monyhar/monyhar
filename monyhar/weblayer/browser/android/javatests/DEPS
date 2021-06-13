@@ -4,10 +4,10 @@ include_rules = [
 
   # WebLayerJUnit4ClassRunner should be used for all tests since it has logic to
   # make command line flags work in WebLayer.
-  "-base/test/android/javatests/src/org/chromium/base/test/BaseJUnit4ClassRunner.java",
+  "-base/test/android/javatests/src/org/monyhar/base/test/BaseJUnit4ClassRunner.java",
 ]
 specific_include_rules = {
   "WebLayerJUnit4ClassRunner.java": [
-    "+base/test/android/javatests/src/org/chromium/base/test/BaseJUnit4ClassRunner.java",
+    "+base/test/android/javatests/src/org/monyhar/base/test/BaseJUnit4ClassRunner.java",
   ]
 }

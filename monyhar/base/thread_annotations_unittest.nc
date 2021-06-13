@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 // This is a "No Compile Test" suite.
-// https://dev.chromium.org/developers/testing/no-compile-tests
+// https://dev.monyhar.org/developers/testing/no-compile-tests
 
 #include "base/thread_annotations.h"
 

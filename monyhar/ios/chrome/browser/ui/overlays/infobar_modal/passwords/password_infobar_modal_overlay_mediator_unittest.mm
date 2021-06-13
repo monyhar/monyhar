@@ -34,7 +34,7 @@ using password_infobar_modal_responses::PresentPasswordSettings;
 
 namespace {
 // Consts used in tests.
-const char kUrlSpec[] = "http://chromium.test";
+const char kUrlSpec[] = "http://monyhar.test";
 NSString* const kUsername = @"username";
 NSString* const kPassword = @"password";
 NSString* const kMaskedPassword = @"••••••••";

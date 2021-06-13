@@ -18,7 +18,7 @@ class Document;
 // This feature is still under development, and is not part of the HTML
 // standard. It can be enabled by passing
 // --enable-blink-features=HTMLSelectMenuElement. See
-// https://groups.google.com/u/1/a/chromium.org/g/blink-dev/c/9TcfjaOs5zg/m/WAiv6WpUAAAJ
+// https://groups.google.com/u/1/a/monyhar.org/g/blink-dev/c/9TcfjaOs5zg/m/WAiv6WpUAAAJ
 // for more details.
 class HTMLSelectMenuElement final : public HTMLElement {
   DEFINE_WRAPPERTYPEINFO();

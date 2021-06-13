@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.impl;
+package org.monyhar.net.impl;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.net.InlineExecutionProhibitedException;
+import org.monyhar.net.InlineExecutionProhibitedException;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

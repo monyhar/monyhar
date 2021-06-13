@@ -1,7 +1,7 @@
 // Copyright 2017 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.base;
+package org.monyhar.base;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,10 +10,10 @@ import android.os.IBinder;
 import android.os.RemoteException;
 import android.util.SparseArray;
 
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.library_loader.LibraryProcessType;
-import org.chromium.base.process_launcher.ChildProcessServiceDelegate;
-import org.chromium.native_test.MainRunner;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.library_loader.LibraryProcessType;
+import org.monyhar.base.process_launcher.ChildProcessServiceDelegate;
+import org.monyhar.native_test.MainRunner;
 
 import java.util.List;
 

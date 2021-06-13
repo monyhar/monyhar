@@ -10,4 +10,4 @@
 CHROMIUM_SRC=$(realpath $(dirname $(readlink -f $0))/../../../../..)
 
 python3 $CHROMIUM_SRC/components/feed/core/v2/tools/textpb_to_binarypb.py \
-  --chromium_path=$CHROMIUM_SRC --direction=forward
+  --monyhar_path=$CHROMIUM_SRC --direction=forward

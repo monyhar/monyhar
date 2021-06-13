@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.tools.spnegoauthenticator;
+package org.monyhar.tools.spnegoauthenticator;
 
 import android.annotation.SuppressLint;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 /** Service exposing the dummy {@link SpnegoAuthenticator}. */
 public class SpnegoAuthenticatorService extends Service {

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.modaldialog;
+package org.monyhar.components.browser_ui.modaldialog;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.assertion.ViewAssertions.doesNotExist;
@@ -10,11 +10,11 @@ import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 
-import static org.chromium.components.browser_ui.modaldialog.ModalDialogTestUtils.checkCurrentPresenter;
-import static org.chromium.components.browser_ui.modaldialog.ModalDialogTestUtils.checkDialogDismissalCause;
-import static org.chromium.components.browser_ui.modaldialog.ModalDialogTestUtils.checkPendingSize;
-import static org.chromium.components.browser_ui.modaldialog.ModalDialogTestUtils.createDialog;
-import static org.chromium.components.browser_ui.modaldialog.ModalDialogTestUtils.showDialog;
+import static org.monyhar.components.browser_ui.modaldialog.ModalDialogTestUtils.checkCurrentPresenter;
+import static org.monyhar.components.browser_ui.modaldialog.ModalDialogTestUtils.checkDialogDismissalCause;
+import static org.monyhar.components.browser_ui.modaldialog.ModalDialogTestUtils.checkPendingSize;
+import static org.monyhar.components.browser_ui.modaldialog.ModalDialogTestUtils.createDialog;
+import static org.monyhar.components.browser_ui.modaldialog.ModalDialogTestUtils.showDialog;
 
 import androidx.test.espresso.Espresso;
 import androidx.test.filters.SmallTest;
@@ -22,14 +22,14 @@ import androidx.test.filters.SmallTest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.ui.modaldialog.DialogDismissalCause;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.modaldialog.ModalDialogManager.ModalDialogType;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.test.util.DummyUiActivityTestCase;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.ui.modaldialog.DialogDismissalCause;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.modaldialog.ModalDialogManager.ModalDialogType;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.test.util.DummyUiActivityTestCase;
 
 /**
  * Tests for {@link AppModalPresenter}.

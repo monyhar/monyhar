@@ -7,7 +7,7 @@ from mozlog.formatters import base
 
 class ChromiumFormatter(base.BaseFormatter):  # type: ignore
     """Formatter to produce results matching the Chromium JSON Test Results format.
-    https://chromium.googlesource.com/chromium/src/+/master/docs/testing/json_test_results_format.md
+    https://monyhar.googlesource.com/monyhar/src/+/master/docs/testing/json_test_results_format.md
 
     Notably, each test has an "artifacts" field that is a dict consisting of
         "log": a list of strings (one per subtest + one for harness status, see

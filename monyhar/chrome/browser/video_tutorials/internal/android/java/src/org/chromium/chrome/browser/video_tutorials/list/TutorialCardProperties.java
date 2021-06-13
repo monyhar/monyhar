@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.video_tutorials.list;
+package org.monyhar.chrome.browser.video_tutorials.list;
 
-import org.chromium.components.browser_ui.widget.async_image.AsyncImageView;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel.WritableObjectPropertyKey;
+import org.monyhar.components.browser_ui.widget.async_image.AsyncImageView;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel.WritableObjectPropertyKey;
 
 /**
  * Properties for a video tutorial card.

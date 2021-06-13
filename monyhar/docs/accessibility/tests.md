@@ -20,10 +20,10 @@ evolved a lot since then. Look for more recent tests as a guide if writing a new
 one.
 
 Test files:
-[third_party/blink/web_tests/accessibility](https://cs.chromium.org/chromium/src/third_party/blink/web_tests/accessibility/)
+[third_party/blink/web_tests/accessibility](https://cs.monyhar.org/monyhar/src/third_party/blink/web_tests/accessibility/)
 
 Source code to AccessibilityController and WebAXObjectProxy:
-[content/shell/test_runner](https://cs.chromium.org/chromium/src/content/shell/test_runner/)
+[content/shell/test_runner](https://cs.monyhar.org/monyhar/src/content/shell/test_runner/)
 
 First, you'll need to build the tests:
 ```
@@ -44,7 +44,7 @@ out/release/content_shell \
 ```
 
 For information on modifying or adding web tests, see the main
-[web tests documentation](https://chromium.googlesource.com/chromium/src/+/main/docs/testing/web_tests.md).
+[web tests documentation](https://monyhar.googlesource.com/monyhar/src/+/main/docs/testing/web_tests.md).
 
 ## DumpAccessibilityTree tests
 
@@ -57,10 +57,10 @@ almost no test code is required.
 [More documentation on DumpAccessibilityTree](../../content/test/data/accessibility/readme.md)
 
 Test files:
-[content/test/data/accessibility](https://cs.chromium.org/chromium/src/content/test/data/accessibility/)
+[content/test/data/accessibility](https://cs.monyhar.org/monyhar/src/content/test/data/accessibility/)
 
 Test runner:
-[content/browser/accessibility/dump_accessibility_tree_browsertest.cc](https://cs.chromium.org/chromium/src/content/browser/accessibility/dump_accessibility_tree_browsertest.cc)
+[content/browser/accessibility/dump_accessibility_tree_browsertest.cc](https://cs.monyhar.org/monyhar/src/content/browser/accessibility/dump_accessibility_tree_browsertest.cc)
 
 To run all tests:
 
@@ -89,7 +89,7 @@ This tests the core accessibility code that's shared by both web and non-web
 accessibility infrastructure.
 
 Code location:
-[ui/accessibility](https://cs.chromium.org/chromium/src/ui/accessibility/)
+[ui/accessibility](https://cs.monyhar.org/monyhar/src/ui/accessibility/)
 
 To run all tests:
 
@@ -128,11 +128,11 @@ Even this isn't a complete list. The tests described above cover more than 90%
 of the accessibility tests, and the remainder are scattered throughout the
 codebase. Here are a few other locations to check:
 
-*   [chrome/android/javatests/src/org/chromium/chrome/browser/accessibility](https://cs.chromium.org/chromium/src/chrome/android/javatests/src/org/chromium/chrome/browser/accessibility/)
-*   [chrome/browser/accessibility](https://cs.chromium.org/chromium/src/chrome/browser/accessibility/)
-*   [chrome/browser/ash/accessibility/](https://cs.chromium.org/chromium/src/chrome/browser/ash/accessibility/)
-*   [ui/chromeos](https://cs.chromium.org/chromium/src/ui/chromeos/)
-*   [ui/views/accessibility](https://cs.chromium.org/chromium/src/ui/views/accessibility/)
+*   [chrome/android/javatests/src/org/monyhar/chrome/browser/accessibility](https://cs.monyhar.org/monyhar/src/chrome/android/javatests/src/org/monyhar/chrome/browser/accessibility/)
+*   [chrome/browser/accessibility](https://cs.monyhar.org/monyhar/src/chrome/browser/accessibility/)
+*   [chrome/browser/ash/accessibility/](https://cs.monyhar.org/monyhar/src/chrome/browser/ash/accessibility/)
+*   [ui/chromeos](https://cs.monyhar.org/monyhar/src/ui/chromeos/)
+*   [ui/views/accessibility](https://cs.monyhar.org/monyhar/src/ui/views/accessibility/)
 
 ## Helpful flags:
 

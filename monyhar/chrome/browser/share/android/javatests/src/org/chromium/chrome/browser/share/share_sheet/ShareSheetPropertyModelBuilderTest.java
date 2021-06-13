@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.share_sheet;
+package org.monyhar.chrome.browser.share.share_sheet;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.argThat;
@@ -30,19 +30,19 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.test.BaseActivityTestRule;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.share.ChromeShareExtras;
-import org.chromium.chrome.browser.share.link_to_text.LinkToTextCoordinator.LinkGeneration;
-import org.chromium.chrome.browser.share.share_sheet.ShareSheetPropertyModelBuilder.ContentType;
-import org.chromium.chrome.test.ChromeBrowserTestRule;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.browser_ui.share.ShareParams;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.test.util.DummyUiActivity;
+import org.monyhar.base.test.BaseActivityTestRule;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.share.ChromeShareExtras;
+import org.monyhar.chrome.browser.share.link_to_text.LinkToTextCoordinator.LinkGeneration;
+import org.monyhar.chrome.browser.share.share_sheet.ShareSheetPropertyModelBuilder.ContentType;
+import org.monyhar.chrome.test.ChromeBrowserTestRule;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.browser_ui.share.ShareParams;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.test.util.DummyUiActivity;
 
 import java.util.ArrayList;
 import java.util.List;

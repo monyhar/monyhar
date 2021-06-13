@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -15,11 +15,11 @@ import android.webkit.ValueCallback;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.components.browser_ui.contacts_picker.ContactDetails;
-import org.chromium.components.browser_ui.contacts_picker.PickerAdapter;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.weblayer_private.interfaces.IUserIdentityCallbackClient;
-import org.chromium.weblayer_private.interfaces.ObjectWrapper;
+import org.monyhar.components.browser_ui.contacts_picker.ContactDetails;
+import org.monyhar.components.browser_ui.contacts_picker.PickerAdapter;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.weblayer_private.interfaces.IUserIdentityCallbackClient;
+import org.monyhar.weblayer_private.interfaces.ObjectWrapper;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;

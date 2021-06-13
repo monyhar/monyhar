@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -14,13 +14,13 @@ import androidx.annotation.Nullable;
 import androidx.annotation.StyleRes;
 import androidx.appcompat.app.AppCompatActivity;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.base.SplitCompatUtils;
-import org.chromium.chrome.browser.language.GlobalAppLocaleController;
-import org.chromium.chrome.browser.night_mode.GlobalNightModeStateProviderHolder;
-import org.chromium.chrome.browser.night_mode.NightModeStateProvider;
-import org.chromium.chrome.browser.night_mode.NightModeUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.base.SplitCompatUtils;
+import org.monyhar.chrome.browser.language.GlobalAppLocaleController;
+import org.monyhar.chrome.browser.night_mode.GlobalNightModeStateProviderHolder;
+import org.monyhar.chrome.browser.night_mode.NightModeStateProvider;
+import org.monyhar.chrome.browser.night_mode.NightModeUtils;
 
 /**
  * A subclass of {@link AppCompatActivity} that maintains states applied to all activities in

@@ -55,7 +55,7 @@
       a:layout_weight="1"
       a:gravity="bottom|center">
 
-    <org.chromium.ui.widget.ButtonCompat
+    <org.monyhar.ui.widget.ButtonCompat
         a:id="@+id/error_close"
         style="@style/TextButton"
         a:layout_width="wrap_content"

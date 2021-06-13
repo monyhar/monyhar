@@ -88,7 +88,7 @@ class NGInlineNodeTest : public NGLayoutTest {
 
   void UseLayoutObjectAndAhem() {
     // Get Ahem from document. Loading "Ahem.woff" using |createTestFont| fails
-    // on linux_chromium_asan_rel_ng.
+    // on linux_monyhar_asan_rel_ng.
     LoadAhem();
     SetupHtml("t", "<div id=t style='font:10px Ahem'>test</div>");
   }

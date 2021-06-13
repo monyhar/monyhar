@@ -17,7 +17,7 @@
 namespace {
 
 const char* kUrlString1 = "http://www.google.com";
-const char* kUrlString2 = "http://www.chromium.org/path/q=3#r=4";
+const char* kUrlString2 = "http://www.monyhar.org/path/q=3#r=4";
 const char* kUrlString3 = "http://www.youtube.com:8080/hosps";
 
 // Mock helper to test internal::TranslateIconRestrictedUrl().

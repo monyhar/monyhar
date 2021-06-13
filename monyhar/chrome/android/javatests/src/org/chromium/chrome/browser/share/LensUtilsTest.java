@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share;
+package org.monyhar.chrome.browser.share;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -25,18 +25,18 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.lens.LensEntryPoint;
-import org.chromium.chrome.browser.lens.LensIntentParams;
-import org.chromium.chrome.test.ChromeBrowserTestRule;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.util.browser.Features.DisableFeatures;
-import org.chromium.chrome.test.util.browser.Features.EnableFeatures;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.url.GURL;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.lens.LensEntryPoint;
+import org.monyhar.chrome.browser.lens.LensIntentParams;
+import org.monyhar.chrome.test.ChromeBrowserTestRule;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.util.browser.Features.DisableFeatures;
+import org.monyhar.chrome.test.util.browser.Features.EnableFeatures;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.url.GURL;
 
 /**
  * Tests of {@link LensUtils}.

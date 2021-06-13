@@ -3,7 +3,7 @@
 # found in the LICENSE file.
 """Utility functions (file reading, simple IDL parsing by regexes) for IDL build.
 
-Design doc: http://www.chromium.org/developers/design-documents/idl-build
+Design doc: http://www.monyhar.org/developers/design-documents/idl-build
 """
 
 import os

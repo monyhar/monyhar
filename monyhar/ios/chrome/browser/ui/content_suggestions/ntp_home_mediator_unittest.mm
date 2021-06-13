@@ -180,7 +180,7 @@ TEST_F(NTPHomeMediatorTest, TestOpenReadingList) {
 TEST_F(NTPHomeMediatorTest, TestOpenPage) {
   // Setup.
   [mediator_ setUp];
-  GURL url = GURL("http://chromium.org");
+  GURL url = GURL("http://monyhar.org");
   NSIndexPath* indexPath = [NSIndexPath indexPathForItem:0 inSection:0];
   ContentSuggestionsItem* item =
       [[ContentSuggestionsItem alloc] initWithType:0
@@ -204,7 +204,7 @@ TEST_F(NTPHomeMediatorTest, TestOpenPage) {
 TEST_F(NTPHomeMediatorTest, TestOpenMostVisited) {
   // Setup.
   [mediator_ setUp];
-  GURL url = GURL("http://chromium.org");
+  GURL url = GURL("http://monyhar.org");
   ContentSuggestionsMostVisitedItem* item =
       [[ContentSuggestionsMostVisitedItem alloc] initWithType:0];
   item.URL = url;

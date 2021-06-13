@@ -87,7 +87,7 @@ See [this page](docs/differences.md).
 ## Testing Safe Browsing
 
 Automated tests live
-[here](/android_webview/javatests/src/org/chromium/android_webview/test/SafeBrowsingTest.java).
+[here](/android_webview/javatests/src/org/monyhar/android_webview/test/SafeBrowsingTest.java).
 
 You can manually test Safe Browsing with the [WebView
 Shell](/android_webview/docs/webview-shell.md). Navigate to one of the
@@ -107,21 +107,21 @@ opt-into Google Play Protect](#Google-Play-Services).
 As Chrome supports more threat types, so can WebView. The steps are:
 
 1. Create quiet interstitial resources for the new threat type ([example
-   CL](https://chromium-review.googlesource.com/c/chromium/src/+/1256021)).
+   CL](https://monyhar-review.googlesource.com/c/monyhar/src/+/1256021)).
 1. Add IDs to their respective allowlist files:
    [resources](/android_webview/ui/grit_resources_allowlist.txt) and
    [strings](/android_webview/ui/grit_strings_allowlist.txt) ([general
    docs](/android_webview/ui/README.md), [example
-   CL](https://chromium-review.googlesource.com/c/chromium/src/+/1270476/12/android_webview/ui/grit_strings_whitelist.txt)).
+   CL](https://monyhar-review.googlesource.com/c/monyhar/src/+/1270476/12/android_webview/ui/grit_strings_whitelist.txt)).
 1. Add the new threat type to our list of threats ([example
-   CL](https://chromium-review.googlesource.com/c/chromium/src/+/1270476/12/android_webview/browser/aw_url_checker_delegate_impl.cc)).
+   CL](https://monyhar-review.googlesource.com/c/monyhar/src/+/1270476/12/android_webview/browser/aw_url_checker_delegate_impl.cc)).
 1. Add a hard-coded URL ([example
-   CL](https://chromium-review.googlesource.com/c/chromium/src/+/1270476/12/components/safe_browsing/web_ui/constants.cc)).
+   CL](https://monyhar-review.googlesource.com/c/monyhar/src/+/1270476/12/components/safe_browsing/web_ui/constants.cc)).
 1. Write integration tests ([example
-   CL](https://chromium-review.googlesource.com/c/chromium/src/+/1270476/12/android_webview/javatests/src/org/chromium/android_webview/test/SafeBrowsingTest.java)).
+   CL](https://monyhar-review.googlesource.com/c/monyhar/src/+/1270476/12/android_webview/javatests/src/org/monyhar/android_webview/test/SafeBrowsingTest.java)).
 1. Add a new threat type constant to the Android SDK (constants are defined in
    `WebViewClient.java`, please [consult a WebView team
-   member](https://groups.google.com/a/chromium.org/forum/#!forum/android-webview-dev)
+   member](https://groups.google.com/a/monyhar.org/forum/#!forum/android-webview-dev)
    before this step). The new threat type constant should only be used when the
    application targets the new Android SDK: use
    [SAFE\_BROWSING\_THREAT\_UNKNOWN](https://developer.android.com/reference/android/webkit/WebViewClient.html#SAFE_BROWSING_THREAT_UNKNOWN)

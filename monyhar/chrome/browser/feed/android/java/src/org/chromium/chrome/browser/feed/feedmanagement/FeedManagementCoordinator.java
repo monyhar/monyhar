@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.feedmanagement;
+package org.monyhar.chrome.browser.feed.feedmanagement;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -10,14 +10,14 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
 
-import org.chromium.chrome.browser.feed.feedmanagement.FeedManagementMediator.FollowManagementLauncher;
-import org.chromium.chrome.browser.feed.webfeed.R;
-import org.chromium.ui.modelutil.LayoutViewBuilder;
-import org.chromium.ui.modelutil.MVCListAdapter.ModelList;
-import org.chromium.ui.modelutil.ModelListAdapter;
+import org.monyhar.chrome.browser.feed.feedmanagement.FeedManagementMediator.FollowManagementLauncher;
+import org.monyhar.chrome.browser.feed.webfeed.R;
+import org.monyhar.ui.modelutil.LayoutViewBuilder;
+import org.monyhar.ui.modelutil.MVCListAdapter.ModelList;
+import org.monyhar.ui.modelutil.ModelListAdapter;
 /**
  * Sets up the model, adapter, and mediator for FeedManagement surface.  It is based on the doc at
- * https://chromium.googlesource.com/chromium/src/+/HEAD/docs/ui/android/mvc_simple_list_tutorial.md
+ * https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/ui/android/mvc_simple_list_tutorial.md
  */
 public class FeedManagementCoordinator {
     private FeedManagementMediator mMediator;

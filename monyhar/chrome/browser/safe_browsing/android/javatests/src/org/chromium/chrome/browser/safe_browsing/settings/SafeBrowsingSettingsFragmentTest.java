@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.safe_browsing.settings;
+package org.monyhar.chrome.browser.safe_browsing.settings;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -23,20 +23,20 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.feedback.HelpAndFeedbackLauncher;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.safe_browsing.SafeBrowsingBridge;
-import org.chromium.chrome.browser.safe_browsing.SafeBrowsingState;
-import org.chromium.chrome.browser.settings.SettingsActivityTestRule;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.browser_ui.settings.TextMessagePreference;
-import org.chromium.components.browser_ui.widget.RadioButtonWithDescription;
-import org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionAndAuxButton;
-import org.chromium.components.policy.test.annotations.Policies;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.feedback.HelpAndFeedbackLauncher;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.safe_browsing.SafeBrowsingBridge;
+import org.monyhar.chrome.browser.safe_browsing.SafeBrowsingState;
+import org.monyhar.chrome.browser.settings.SettingsActivityTestRule;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.browser_ui.settings.TextMessagePreference;
+import org.monyhar.components.browser_ui.widget.RadioButtonWithDescription;
+import org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionAndAuxButton;
+import org.monyhar.components.policy.test.annotations.Policies;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /**
  * Tests for {@link SafeBrowsingSettingsFragment}.

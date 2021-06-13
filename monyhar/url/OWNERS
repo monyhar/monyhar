@@ -1,7 +1,7 @@
 set noparent
-# NOTE: keep this in sync with lsc-owners-override@chromium.org owners
-csharrison@chromium.org
-dcheng@chromium.org
-mkwst@chromium.org
-palmer@chromium.org
-# NOTE: keep this in sync with lsc-owners-override@chromium.org owners
+# NOTE: keep this in sync with lsc-owners-override@monyhar.org owners
+csharrison@monyhar.org
+dcheng@monyhar.org
+mkwst@monyhar.org
+palmer@monyhar.org
+# NOTE: keep this in sync with lsc-owners-override@monyhar.org owners

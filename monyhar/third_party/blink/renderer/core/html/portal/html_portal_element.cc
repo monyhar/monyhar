@@ -187,7 +187,7 @@ bool HTMLPortalElement::CheckPortalsEnabledOrWarn() const {
       mojom::blink::ConsoleMessageLevel::kWarning,
       "An operation was prevented because a <portal> was moved to a document "
       "where it is not enabled. See "
-      "https://www.chromium.org/blink/origin-trials/portals."));
+      "https://www.monyhar.org/blink/origin-trials/portals."));
   return false;
 }
 
@@ -200,7 +200,7 @@ bool HTMLPortalElement::CheckPortalsEnabledOrThrow(
       DOMExceptionCode::kNotSupportedError,
       "An operation was prevented because a <portal> was moved to a document "
       "where it is not enabled. See "
-      "https://www.chromium.org/blink/origin-trials/portals.");
+      "https://www.monyhar.org/blink/origin-trials/portals.");
   return false;
 }
 

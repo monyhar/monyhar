@@ -24,7 +24,7 @@ android_apk("webview_ui_test_app_apk") {
 
 android_library("webview_ui_test_app_java") {
   sources =
-      [ "java/src/org/chromium/webview_ui_test/WebViewUiTestActivity.java" ]
+      [ "java/src/org/monyhar/webview_ui_test/WebViewUiTestActivity.java" ]
   deps = [
     ":webview_ui_test_app_apk_resources",
     "//base:base_java",
@@ -44,14 +44,14 @@ instrumentation_test_apk("webview_ui_test_app_test_apk") {
   apk_under_test = ":webview_ui_test_app_apk"
   android_manifest = "javatests/AndroidManifest.xml"
   sources = [
-    "javatests/src/org/chromium/webview_ui_test/test/ActionModeTest.java",
-    "javatests/src/org/chromium/webview_ui_test/test/DropDownListTest.java",
-    "javatests/src/org/chromium/webview_ui_test/test/WebViewJSTest.java",
-    "javatests/src/org/chromium/webview_ui_test/test/util/Actions.java",
-    "javatests/src/org/chromium/webview_ui_test/test/util/Atoms.java",
-    "javatests/src/org/chromium/webview_ui_test/test/util/UseLayout.java",
-    "javatests/src/org/chromium/webview_ui_test/test/util/WebViewSyncWrapper.java",
-    "javatests/src/org/chromium/webview_ui_test/test/util/WebViewUiTestRule.java",
+    "javatests/src/org/monyhar/webview_ui_test/test/ActionModeTest.java",
+    "javatests/src/org/monyhar/webview_ui_test/test/DropDownListTest.java",
+    "javatests/src/org/monyhar/webview_ui_test/test/WebViewJSTest.java",
+    "javatests/src/org/monyhar/webview_ui_test/test/util/Actions.java",
+    "javatests/src/org/monyhar/webview_ui_test/test/util/Atoms.java",
+    "javatests/src/org/monyhar/webview_ui_test/test/util/UseLayout.java",
+    "javatests/src/org/monyhar/webview_ui_test/test/util/WebViewSyncWrapper.java",
+    "javatests/src/org/monyhar/webview_ui_test/test/util/WebViewUiTestRule.java",
   ]
   deps = [
     ":webview_ui_test_app_apk_resources",

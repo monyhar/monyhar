@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs.content;
+package org.monyhar.chrome.browser.customtabs.content;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -31,13 +31,13 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.embedder_support.util.ShadowUrlUtilities;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.embedder_support.util.ShadowUrlUtilities;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
 
 /**
  * Tests for {@link CustomTabActivityTabController}.

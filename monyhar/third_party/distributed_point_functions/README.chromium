@@ -19,5 +19,5 @@ src/dpf/distributed_point_function_test.cc are adapted for fuzzing in
 fuzz/dpf_fuzzer.cc.
 
 The source code pulled in depends on "glog/logging.h" which is not accessible
-from chromium. As a workaround, we create a simple glog/logging.h that defines
+from monyhar. As a workaround, we create a simple glog/logging.h that defines
 the macros needed.

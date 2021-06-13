@@ -16,7 +16,7 @@
     <include layout="@layout/device_item_list" />
 
     <!-- Button row. -->
-    <org.chromium.components.browser_ui.widget.DualControlLayout
+    <org.monyhar.components.browser_ui.widget.DualControlLayout
         android:id="@+id/button_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,20 +26,20 @@
         app:stackedMargin="@dimen/button_bar_stacked_margin"
         app:buttonAlignment="end">
 
-        <org.chromium.ui.widget.ButtonCompat
+        <org.monyhar.ui.widget.ButtonCompat
             android:id="@+id/allow"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:layout_gravity="end"
             style="@style/FilledButton" />
 
-        <org.chromium.ui.widget.ButtonCompat
+        <org.monyhar.ui.widget.ButtonCompat
             android:id="@+id/block"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:layout_gravity="end"
             style="@style/TextButton" />
 
-    </org.chromium.components.browser_ui.widget.DualControlLayout>
+    </org.monyhar.components.browser_ui.widget.DualControlLayout>
 
 </LinearLayout>

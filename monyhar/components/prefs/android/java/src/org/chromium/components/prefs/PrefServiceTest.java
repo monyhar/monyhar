@@ -4,7 +4,7 @@
 
 // generate_java_test.py
 
-package org.chromium.components.prefs;
+package org.monyhar.components.prefs;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.eq;
@@ -19,8 +19,8 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.JniMocker;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.JniMocker;
 
 /** Unit tests for {@link PrefService}. */
 @RunWith(BaseRobolectricTestRunner.class)

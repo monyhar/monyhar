@@ -14,7 +14,7 @@ Find [a domain reviewer](large_scale_changes.md#for-domain-reviewers) – someon
 
 ## 3 Wait for approval by lsc-review@ {#3-wait-for-approval-by-lsc-review@}
 
-Once the domain review is complete, you should email the doc to [lsc-review@chromium.org](https://groups.google.com/a/chromium.org/d/forum/lsc-review), who will review your LSC request. You should expect an initial response within two business days. How long it takes until the request is approved depends on how complex the change is and how much needs to be discussed; for simple changes, it should only take a few days. **Final approval will be indicated by a member of the LSC committee granting a reviewer Owners-Override approval power to land your LSC**. Put a link to the [chromium.org lsc-review Group thread](https://groups.google.com/a/chromium.org/g/lsc-review) in the table at the top of the doc.
+Once the domain review is complete, you should email the doc to [lsc-review@monyhar.org](https://groups.google.com/a/monyhar.org/d/forum/lsc-review), who will review your LSC request. You should expect an initial response within two business days. How long it takes until the request is approved depends on how complex the change is and how much needs to be discussed; for simple changes, it should only take a few days. **Final approval will be indicated by a member of the LSC committee granting a reviewer Owners-Override approval power to land your LSC**. Put a link to the [monyhar.org lsc-review Group thread](https://groups.google.com/a/monyhar.org/g/lsc-review) in the table at the top of the doc.
 
 ## 4 Start sending your CLs! {#4-start-sending-your-cls}
 
@@ -22,4 +22,4 @@ Once your LSC is approved (Owners-Override is granted) you may begin sending you
 
 ## Questions {#questions}
 
-If at any point you have questions about this workflow, please contact [lsc-policy@chromium.org](mailto:lsc-policy@chromium.org) and we'll be happy to help.
+If at any point you have questions about this workflow, please contact [lsc-policy@monyhar.org](mailto:lsc-policy@monyhar.org) and we'll be happy to help.

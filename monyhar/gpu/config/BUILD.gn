@@ -246,14 +246,14 @@ if (is_android) {
     # External code should depend on ":config_java" instead.
     visibility = [ ":*" ]
     sources = [ "gpu_switches.cc" ]
-    template = "android/java/src/org/chromium/gpu/config/GpuSwitches.java.tmpl"
+    template = "android/java/src/org/monyhar/gpu/config/GpuSwitches.java.tmpl"
   }
 
   java_cpp_features("java_features_srcjar") {
     # External code should depend on ":config_java" instead.
     visibility = [ ":*" ]
     sources = [ "gpu_finch_features.cc" ]
-    template = "android/java/src/org/chromium/gpu/config/GpuFeatures.java.tmpl"
+    template = "android/java/src/org/monyhar/gpu/config/GpuFeatures.java.tmpl"
   }
 
   android_library("config_java") {

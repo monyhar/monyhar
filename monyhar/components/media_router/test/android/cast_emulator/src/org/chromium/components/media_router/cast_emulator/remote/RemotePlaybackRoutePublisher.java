@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.media_router.cast_emulator.remote;
+package org.monyhar.components.media_router.cast_emulator.remote;
 
 import android.app.PendingIntent;
 import android.content.Context;
@@ -26,9 +26,9 @@ import androidx.mediarouter.media.MediaSessionStatus;
 
 import com.google.android.gms.cast.CastMediaControlIntent;
 
-import org.chromium.base.Log;
-import org.chromium.base.annotations.RemovableInRelease;
-import org.chromium.components.media_router.cast_emulator.RoutePublisher;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.RemovableInRelease;
+import org.monyhar.components.media_router.cast_emulator.RoutePublisher;
 
 import java.util.ArrayList;
 import java.util.List;

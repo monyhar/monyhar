@@ -70,7 +70,7 @@ TEST_F(TextDetectionImplMacTest, ScanOnce) {
   NSDictionary* attributes = @{(id)kCTFontAttributeName : helvetica};
 
   base::scoped_nsobject<NSAttributedString> info([[NSAttributedString alloc]
-      initWithString:@"https://www.chromium.org"
+      initWithString:@"https://www.monyhar.org"
           attributes:attributes]);
 
   base::ScopedCFTypeRef<CTLineRef> line(

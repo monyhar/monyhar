@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui.tablet.emptybackground.incognitotoggle;
+package org.monyhar.chrome.browser.ui.tablet.emptybackground.incognitotoggle;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -11,12 +11,12 @@ import android.view.View;
 import androidx.annotation.StringRes;
 import androidx.appcompat.content.res.AppCompatResources;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.tabmodel.TabModel;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorObserver;
-import org.chromium.ui.widget.ChromeImageButton;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.tabmodel.TabModel;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorObserver;
+import org.monyhar.ui.widget.ChromeImageButton;
 
 /**
  * A {@link View} that allows a user to toggle between incognito and normal {@link TabModel}s. This

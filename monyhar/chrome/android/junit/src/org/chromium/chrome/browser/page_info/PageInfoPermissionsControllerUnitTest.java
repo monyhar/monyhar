@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.page_info;
+package org.monyhar.chrome.browser.page_info;
 
 import static org.junit.Assert.assertEquals;
 
@@ -15,9 +15,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.ParameterizedRobolectricTestRunner;
 
-import org.chromium.chrome.R;
-import org.chromium.components.page_info.PageInfoPermissionsController;
-import org.chromium.components.page_info.PageInfoPermissionsController.PermissionObject;
+import org.monyhar.chrome.R;
+import org.monyhar.components.page_info.PageInfoPermissionsController;
+import org.monyhar.components.page_info.PageInfoPermissionsController.PermissionObject;
 
 import java.util.Arrays;
 import java.util.Collection;

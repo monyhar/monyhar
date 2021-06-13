@@ -2,27 +2,27 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.link_to_text;
+package org.monyhar.chrome.browser.share.link_to_text;
 
 import android.content.Context;
 import android.net.Uri;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.task.PostTask;
-import org.chromium.blink.mojom.TextFragmentReceiver;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.share.ChromeShareExtras;
-import org.chromium.chrome.browser.share.share_sheet.ChromeOptionShareCallback;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabHidingType;
-import org.chromium.components.browser_ui.share.ShareParams;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.ui.widget.Toast;
-import org.chromium.url.GURL;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.blink.mojom.TextFragmentReceiver;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.share.ChromeShareExtras;
+import org.monyhar.chrome.browser.share.share_sheet.ChromeOptionShareCallback;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabHidingType;
+import org.monyhar.components.browser_ui.share.ShareParams;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.ui.widget.Toast;
+import org.monyhar.url.GURL;
 
 /**
  * Handles the Link To Text action in the Sharing Hub.

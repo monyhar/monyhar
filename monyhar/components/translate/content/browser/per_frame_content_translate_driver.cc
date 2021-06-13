@@ -59,7 +59,7 @@ static const char kTranslateSubframeErrorType[] =
 
 // A helper function for CombineTextNodesAndMakeCallback() below.
 // This is a copy of logic from macos specific RenderWidgetHostViewMac
-// that was created in https://chromium-review.googlesource.com/956029
+// that was created in https://monyhar-review.googlesource.com/956029
 // TODO(dougarnett): Factor this out into a utility class that can be
 // shared here and with the original macos copy.
 void AddTextNodesToVector(const ui::AXNode* node,

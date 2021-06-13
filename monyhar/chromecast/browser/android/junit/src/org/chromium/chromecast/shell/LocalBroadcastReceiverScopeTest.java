@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.shell;
+package org.monyhar.chromecast.shell;
 
 import static org.hamcrest.Matchers.contains;
 import static org.hamcrest.Matchers.emptyIterable;
@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 
-import org.chromium.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,7 +31,7 @@ import java.util.List;
 public class LocalBroadcastReceiverScopeTest {
     @Test
     public void testConstructorRegistersReceiver() {
-        String action = "org.chromium.chromecast.test.ACTION_HELLO";
+        String action = "org.monyhar.chromecast.test.ACTION_HELLO";
         IntentFilter filter = new IntentFilter();
         filter.addAction(action);
         List<String> result = new ArrayList<>();
@@ -41,13 +41,13 @@ public class LocalBroadcastReceiverScopeTest {
                 (Intent intent) -> result.add("Intent received: " + intent.getAction()));
         Intent intent = new Intent().setAction(action);
         broadcastManager.sendBroadcast(intent);
-        assertThat(result, contains("Intent received: org.chromium.chromecast.test.ACTION_HELLO"));
+        assertThat(result, contains("Intent received: org.monyhar.chromecast.test.ACTION_HELLO"));
     }
 
     @Test
     public void testCallbackNotCalledIfBroadcastDoesNotMeetFilterSpec() {
-        String helloAction = "org.chromium.chromecast.test.ACTION_HELLO";
-        String goodbyeAction = "org.chromium.chromecast.test.ACTION_GOODBYE";
+        String helloAction = "org.monyhar.chromecast.test.ACTION_HELLO";
+        String goodbyeAction = "org.monyhar.chromecast.test.ACTION_GOODBYE";
         IntentFilter filter = new IntentFilter();
         filter.addAction(helloAction);
         List<String> result = new ArrayList<>();
@@ -62,7 +62,7 @@ public class LocalBroadcastReceiverScopeTest {
 
     @Test
     public void testCloseUnregistersReceiver() {
-        String action = "org.chromium.chromecast.test.ACTION_HELLO";
+        String action = "org.monyhar.chromecast.test.ACTION_HELLO";
         IntentFilter filter = new IntentFilter();
         filter.addAction(action);
         List<String> result = new ArrayList<>();

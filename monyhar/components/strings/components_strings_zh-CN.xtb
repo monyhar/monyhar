@@ -817,7 +817,7 @@
 <translation id="3986705137476756801">暂时关闭“实时字幕”功能</translation>
 <translation id="3987405730340719549">Chrome 已确定此网站可能是虚假网站或欺诈性网站。
 
-    如果您认为系统不该向您显示这条提示，请访问 https://bugs.chromium.org/p/chromium/issues/entry?template=Safety+Tips+Appeals。</translation>
+    如果您认为系统不该向您显示这条提示，请访问 https://bugs.monyhar.org/p/monyhar/issues/entry?template=Safety+Tips+Appeals。</translation>
 <translation id="3987940399970879459">小于 1 MB</translation>
 <translation id="3990250421422698716">撞页偏移</translation>
 <translation id="3996311196211510766">网站 <ph name="ORIGIN" /> 已要求收到的所有请求都应用一项来源政策，但此政策目前无法应用。</translation>
@@ -1326,7 +1326,7 @@
 <translation id="5851548754964597211">标签列表</translation>
 <translation id="5855253129151731373">此网站的主机名看起来和 <ph name="LOOKALIKE_DOMAIN" /> 很相似。攻击者有时会对域名做些令人难以发现的细微更改来仿冒网站。
 
-    如果您认为系统不该向您显示这条提示，请访问 https://bugs.chromium.org/p/chromium/issues/entry?template=Safety+Tips+Appeals。</translation>
+    如果您认为系统不该向您显示这条提示，请访问 https://bugs.monyhar.org/p/monyhar/issues/entry?template=Safety+Tips+Appeals。</translation>
 <translation id="5860033963881614850">关闭</translation>
 <translation id="5862579898803147654">堆叠出纸器 8</translation>
 <translation id="5863847714970149516">即将进入的页面可能会向您收取费用</translation>

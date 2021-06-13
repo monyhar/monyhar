@@ -2,22 +2,22 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.infobar;
+package org.monyhar.chrome.browser.infobar;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.provider.Settings;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ApplicationStatus.ActivityStateListener;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.PermissionCallback;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ApplicationStatus.ActivityStateListener;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.PermissionCallback;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Handles requesting the android runtime permissions for the permission update infobar.

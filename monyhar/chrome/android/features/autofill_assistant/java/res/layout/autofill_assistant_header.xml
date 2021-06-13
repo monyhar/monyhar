@@ -37,7 +37,7 @@
         android:ellipsize="end"
         android:textAppearance="@style/TextAppearance.AssistantBlackTitle"/>
 
-    <org.chromium.ui.widget.ChromeImageView
+    <org.monyhar.ui.widget.ChromeImageView
         android:id="@+id/profile_image"
         android:layout_width="@dimen/autofill_assistant_minimum_touch_target_size"
         android:layout_height="@dimen/autofill_assistant_minimum_touch_target_size"
@@ -46,7 +46,7 @@
         app:srcCompat="@drawable/logo_avatar_anonymous"/>
   </LinearLayout>
 
-  <org.chromium.components.browser_ui.widget.MaterialProgressBar
+  <org.monyhar.components.browser_ui.widget.MaterialProgressBar
       android:id="@+id/progress_bar"
       android:layout_width="match_parent"
       android:layout_height="2dp"

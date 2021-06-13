@@ -6,7 +6,7 @@
 
 # - Downloads all dependencies listed in package.json
 # - Makes Chromium specific modifications.
-# - Places the final output in components-chromium/
+# - Places the final output in components-monyhar/
 
 check_dep() {
   eval "$1" >/dev/null 2>&1
@@ -46,14 +46,14 @@ rsync -c --delete --delete-excluded -r -v --prune-empty-dirs \
     --include-from="rsync_include.txt" \
     --exclude-from="rsync_exclude.txt" \
     "node_modules/" \
-    "components-chromium/node_modules/"
+    "components-monyhar/node_modules/"
 
 # Rewrite imports to relative paths for rollup.
-find components-chromium/ \
+find components-monyhar/ \
    \( -name "*.js" -or -name "*.d.ts" \) \
    -exec node rewrite_imports.js {} +
 
-new=$(git status --porcelain components-chromium | grep '^??' | \
+new=$(git status --porcelain components-monyhar | grep '^??' | \
       cut -d' ' -f2 | egrep '\.(js|css)$' || true)
 
 if [[ ! -z "${new}" ]]; then
@@ -62,7 +62,7 @@ if [[ ! -z "${new}" ]]; then
   echo "${new}" | sed 's/^/  /'
 fi
 
-deleted=$(git status --porcelain components-chromium | grep '^.D' | \
+deleted=$(git status --porcelain components-monyhar | grep '^.D' | \
           sed 's/^.//' | cut -d' ' -f2 | egrep '\.(js|css)$' || true)
 
 if [[ ! -z "${deleted}" ]]; then

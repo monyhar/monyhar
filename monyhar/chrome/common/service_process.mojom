@@ -5,7 +5,7 @@
 module chrome.mojom;
 
 // A control interface for a service process
-// (https://www.chromium.org/developers/design-documents/service-processes).
+// (https://www.monyhar.org/developers/design-documents/service-processes).
 interface ServiceProcess {
   // A message for ensuring the connection is established.
   Hello() => ();

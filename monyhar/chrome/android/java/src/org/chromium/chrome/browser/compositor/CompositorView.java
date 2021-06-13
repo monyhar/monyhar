@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor;
+package org.monyhar.chrome.browser.compositor;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -17,25 +17,25 @@ import android.view.Surface;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.TraceEvent;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.compositor.layouts.Layout;
-import org.chromium.chrome.browser.compositor.layouts.LayoutProvider;
-import org.chromium.chrome.browser.compositor.layouts.LayoutRenderHost;
-import org.chromium.chrome.browser.compositor.layouts.content.TabContentManager;
-import org.chromium.chrome.browser.compositor.resources.StaticResourcePreloads;
-import org.chromium.chrome.browser.externalnav.IntentWithRequestMetadataHandler;
-import org.chromium.chrome.browser.layouts.scene_layer.SceneLayer;
-import org.chromium.chrome.browser.multiwindow.MultiWindowUtils;
-import org.chromium.chrome.browser.tabmodel.TabSwitchMetrics;
-import org.chromium.components.browser_ui.styles.ChromeColors;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.resources.AndroidResourceType;
-import org.chromium.ui.resources.ResourceManager;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.compositor.layouts.Layout;
+import org.monyhar.chrome.browser.compositor.layouts.LayoutProvider;
+import org.monyhar.chrome.browser.compositor.layouts.LayoutRenderHost;
+import org.monyhar.chrome.browser.compositor.layouts.content.TabContentManager;
+import org.monyhar.chrome.browser.compositor.resources.StaticResourcePreloads;
+import org.monyhar.chrome.browser.externalnav.IntentWithRequestMetadataHandler;
+import org.monyhar.chrome.browser.layouts.scene_layer.SceneLayer;
+import org.monyhar.chrome.browser.multiwindow.MultiWindowUtils;
+import org.monyhar.chrome.browser.tabmodel.TabSwitchMetrics;
+import org.monyhar.components.browser_ui.styles.ChromeColors;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.resources.AndroidResourceType;
+import org.monyhar.ui.resources.ResourceManager;
 
 import java.util.ArrayList;
 import java.util.List;

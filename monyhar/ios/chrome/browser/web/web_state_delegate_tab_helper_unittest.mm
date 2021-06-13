@@ -42,7 +42,7 @@ class WebStateDelegateTabHelperTest : public PlatformTest {
 // the WebState's OverlayRequestQueue at OverlayModality::kWebContentArea.
 TEST_F(WebStateDelegateTabHelperTest, OnAuthRequired) {
   NSURLProtectionSpace* protection_space =
-      [[NSURLProtectionSpace alloc] initWithProxyHost:@"http://chromium.test"
+      [[NSURLProtectionSpace alloc] initWithProxyHost:@"http://monyhar.test"
                                                  port:0
                                                  type:nil
                                                 realm:nil
@@ -75,7 +75,7 @@ TEST_F(WebStateDelegateTabHelperTest, GetJavaScriptDialogPresenter) {
   EXPECT_TRUE(presenter);
 
   // Present a JavaScript alert.
-  GURL kOriginUrl("http://chromium.test");
+  GURL kOriginUrl("http://monyhar.test");
   web::DialogClosedCallback callback =
       base::BindOnce(^(bool success, NSString* user_input){
       });

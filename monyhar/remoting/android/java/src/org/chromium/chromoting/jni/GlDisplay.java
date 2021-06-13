@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting.jni;
+package org.monyhar.chromoting.jni;
 
 import android.graphics.Matrix;
 import android.graphics.PointF;
 import android.view.Surface;
 import android.view.SurfaceHolder;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chromoting.DesktopView;
-import org.chromium.chromoting.Event;
-import org.chromium.chromoting.InputFeedbackRadiusMapper;
-import org.chromium.chromoting.RenderStub;
-import org.chromium.chromoting.SizeChangedEventParameter;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chromoting.DesktopView;
+import org.monyhar.chromoting.Event;
+import org.monyhar.chromoting.InputFeedbackRadiusMapper;
+import org.monyhar.chromoting.RenderStub;
+import org.monyhar.chromoting.SizeChangedEventParameter;
 
 /**
  * This class is a RenderStub implementation that uses the OpenGL renderer in native code to render

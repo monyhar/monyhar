@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import static androidx.browser.customtabs.CustomTabsIntent.COLOR_SCHEME_DARK;
 import static androidx.browser.customtabs.CustomTabsIntent.COLOR_SCHEME_LIGHT;
@@ -25,30 +25,30 @@ import androidx.annotation.VisibleForTesting;
 import androidx.browser.customtabs.CustomTabsIntent;
 import androidx.browser.customtabs.CustomTabsSessionToken;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.LaunchIntentDispatcher;
-import org.chromium.chrome.browser.app.metrics.LaunchCauseMetrics;
-import org.chromium.chrome.browser.autofill_assistant.AutofillAssistantFacade;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider.CustomTabsUiType;
-import org.chromium.chrome.browser.customtabs.content.CustomTabActivityTabProvider;
-import org.chromium.chrome.browser.customtabs.features.CustomTabNavigationBarController;
-import org.chromium.chrome.browser.firstrun.FirstRunSignInProcessor;
-import org.chromium.chrome.browser.flags.AllCachedFieldTrialParameters;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.fonts.FontPreloader;
-import org.chromium.chrome.browser.infobar.InfoBarContainer;
-import org.chromium.chrome.browser.night_mode.NightModeStateProvider;
-import org.chromium.chrome.browser.page_info.ChromePageInfo;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.page_info.PageInfoController;
-import org.chromium.components.page_info.PageInfoController.OpenedFromSource;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.util.ColorUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.LaunchIntentDispatcher;
+import org.monyhar.chrome.browser.app.metrics.LaunchCauseMetrics;
+import org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantFacade;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider.CustomTabsUiType;
+import org.monyhar.chrome.browser.customtabs.content.CustomTabActivityTabProvider;
+import org.monyhar.chrome.browser.customtabs.features.CustomTabNavigationBarController;
+import org.monyhar.chrome.browser.firstrun.FirstRunSignInProcessor;
+import org.monyhar.chrome.browser.flags.AllCachedFieldTrialParameters;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.fonts.FontPreloader;
+import org.monyhar.chrome.browser.infobar.InfoBarContainer;
+import org.monyhar.chrome.browser.night_mode.NightModeStateProvider;
+import org.monyhar.chrome.browser.page_info.ChromePageInfo;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.page_info.PageInfoController;
+import org.monyhar.components.page_info.PageInfoController.OpenedFromSource;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.util.ColorUtils;
 
 /**
  * The activity for custom tabs. It will be launched on top of a client's task.

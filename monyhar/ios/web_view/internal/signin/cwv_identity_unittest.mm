@@ -20,7 +20,7 @@ using CWVIdentityTest = PlatformTest;
 
 // Tests CWVIdentity initialization.
 TEST_F(CWVIdentityTest, Initialization) {
-  NSString* email = @"john.doe@chromium.org";
+  NSString* email = @"john.doe@monyhar.org";
   NSString* full_name = @"John Doe";
   NSString* gaia_id = @"123456789";
 

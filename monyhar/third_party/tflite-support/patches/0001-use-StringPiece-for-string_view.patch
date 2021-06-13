@@ -1,5 +1,5 @@
 From 81287a62d65139f29c512fed88ed734bef2c33f5 Mon Sep 17 00:00:00 2001
-From: Michael Crouse <mcrouse@chromium.org>
+From: Michael Crouse <mcrouse@monyhar.org>
 Date: Tue, 22 Dec 2020 14:25:39 -0800
 Subject: [PATCH] use StringPiece for string_view
 

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.notNullValue;
@@ -51,11 +51,11 @@ import org.robolectric.shadows.ShadowAccountManager;
 import org.robolectric.shadows.ShadowApplication;
 import org.robolectric.shadows.multidex.ShadowMultiDex;
 
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.net.HttpNegotiateAuthenticator.GetAccountsCallback;
-import org.chromium.net.HttpNegotiateAuthenticator.RequestData;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.net.HttpNegotiateAuthenticator.GetAccountsCallback;
+import org.monyhar.net.HttpNegotiateAuthenticator.RequestData;
 
 import java.io.IOException;
 import java.util.List;

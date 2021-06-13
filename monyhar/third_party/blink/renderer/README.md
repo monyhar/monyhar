@@ -90,7 +90,7 @@ The `extensions/` directory contains embedder-specific, not-web-exposed APIs (e.
 The directory is useful to implement embedder-specific, not-web-exposed APIs
 using Blink technologies for web-exposed APIs like WebIDL, V8 bindings and Oilpan.
 
-Remember that you should not implement web-exposed APIs in `extensions/`. Web-exposed APIs should go through the standardization process and be implemented in `core/` or `modules/`. Also, per [the Chromium contributor guideline](https://chromium.googlesource.com/chromium/src/+/main/docs/contributing.md#code-guidelines), code that is not used by Chromium should not be added to `extensions/`.
+Remember that you should not implement web-exposed APIs in `extensions/`. Web-exposed APIs should go through the standardization process and be implemented in `core/` or `modules/`. Also, per [the Chromium contributor guideline](https://monyhar.googlesource.com/monyhar/src/+/main/docs/contributing.md#code-guidelines), code that is not used by Chromium should not be added to `extensions/`.
 
 In terms of dependencies, `extensions/` can depend on `modules/`, `core/` and `platform/`, but not vice versa.
 
@@ -174,5 +174,5 @@ public APIs and abstraction layers and it is highly recommended.
 ## Contact
 
 If you have any questions about the directory architecture and dependencies,
-reach out to platform-architecture-dev@chromium.org!
+reach out to platform-architecture-dev@monyhar.org!
 

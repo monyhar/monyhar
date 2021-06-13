@@ -4,7 +4,7 @@
 
 package com.google.android.apps.chrome.appwidget.bookmarks;
 
-import org.chromium.chrome.browser.bookmarkswidget.BookmarkWidgetProvider;
+import org.monyhar.chrome.browser.bookmarkswidget.BookmarkWidgetProvider;
 
 /**
  * This class can't be renamed or moved since it's exported in the manifest and hence is part of

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.keyboard_accessory.sheet_tabs;
+package org.monyhar.chrome.browser.keyboard_accessory.sheet_tabs;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -13,8 +13,8 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.browser.keyboard_accessory.R;
-import org.chromium.ui.widget.ChipView;
+import org.monyhar.chrome.browser.keyboard_accessory.R;
+import org.monyhar.ui.widget.ChipView;
 
 /**
  * This view represents a section of user credentials in the password tab of the keyboard accessory.

@@ -9,7 +9,7 @@
 
 This directory contains benchmarks and infrastructure to test Chrome and
 Chromium and output performance measurements. These benchmarks are continuously
-run on the [perf waterfall](https://ci.chromium.org/p/chrome/g/chrome.perf/console). 
+run on the [perf waterfall](https://ci.monyhar.org/p/chrome/g/chrome.perf/console). 
 
 For more information on how Chrome measures performance, see
 [here](/docs/speed/how_does_chrome_measure_performance.md).
@@ -32,7 +32,7 @@ run_benchmark and Pinpoint.
 run_benchmark is useful for creating and debugging benchmarks using local
 devices. Run from the command line, it has a number of flags useful for
 determining the internal state of the benchmark. For more information, see
-[here](https://chromium.googlesource.com/catapult.git/+/HEAD/telemetry/docs/run_benchmarks_locally.md).
+[here](https://monyhar.googlesource.com/catapult.git/+/HEAD/telemetry/docs/run_benchmarks_locally.md).
 
 [Pinpoint](https://pinpoint-dot-chromeperf.appspot.com/) wraps run_benchmark and
 provides the ability to remotely run A/B benchmarks using any platform available
@@ -46,7 +46,7 @@ the easiest way is to set up the debugger in VSCode (guide
 
 ## Creating New Tests (stories)
 
-[This document](https://chromium.googlesource.com/catapult.git/+/HEAD/telemetry)
+[This document](https://monyhar.googlesource.com/catapult.git/+/HEAD/telemetry)
 provides an oveview of how tests are structured and some of the underlying
 technologies. After reading that doc, figure out if your story fits into an
 existing benchmark by checking
@@ -61,7 +61,7 @@ After figuring out where your story fits, create a new one. There is a
 considerable amount of variation between different benchmarks, so use a nearby
 story as a model. You may also need to introduce custom JavaScript to drive
 interactions on the page or to deal with nondeterminsim. For an example, search
-[this file](https://source.chromium.org/chromium/chromium/src/+/main:tools/perf/page_sets/system_health/browsing_stories.py?q=browsing_stories.py&ss=chromium)
+[this file](https://source.monyhar.org/monyhar/monyhar/src/+/main:tools/perf/page_sets/system_health/browsing_stories.py?q=browsing_stories.py&ss=monyhar)
 for browse:tools:sheets:2019.
 
 Next, we need to use WPR (WebPageReplay) to record all of the content requested by the test. By default,
@@ -83,7 +83,7 @@ After running this, you will need to verify the following:
 If any problems were encountered, review or add custom JavaScript as described in the previous section. Alternatively, ask for help.
 
 If everything looks good, upload your WPR archive by following the instructions
-in [Upload the recording to Cloud Storage](https://sites.google.com/a/chromium.org/dev/developers/telemetry/record_a_page_set)
+in [Upload the recording to Cloud Storage](https://sites.google.com/a/monyhar.org/dev/developers/telemetry/record_a_page_set)
 and create a CL.
 
 # Tools In This Directory
@@ -107,13 +107,13 @@ This may require you to set up your `gsutil config` first.
 
 ## run_benchmark
 
-This command allows running benchmarks defined in the chromium repository,
+This command allows running benchmarks defined in the monyhar repository,
 specifically in [tools/perf/benchmarks][benchmarks_dir]. If you need it,
 documentation is available on how to [run benchmarks locally][run_locally] and
 how to properly [set up your device][device_setup].
 
-[benchmarks_dir]: https://cs.chromium.org/chromium/src/tools/perf/benchmarks/
-[run_locally]: https://chromium.googlesource.com/catapult.git/+/HEAD/telemetry/docs/run_benchmarks_locally.md
+[benchmarks_dir]: https://cs.monyhar.org/monyhar/src/tools/perf/benchmarks/
+[run_locally]: https://monyhar.googlesource.com/catapult.git/+/HEAD/telemetry/docs/run_benchmarks_locally.md
 [device_setup]: /docs/speed/benchmark/telemetry_device_setup.md
 
 ## update_wpr
@@ -148,7 +148,7 @@ in tracking, and uploads them to cloud storage to visualize with the help of
 [health][health_dashboard] dashboards.
 
 [chromeperf]: https://chromeperf.appspot.com/
-[studies]: https://cs.chromium.org/chromium/src/tools/perf/cli_tools/soundwave/studies/
+[studies]: https://cs.monyhar.org/monyhar/src/tools/perf/cli_tools/soundwave/studies/
 [Data Studio]: https://datastudio.google.com/
 [v8_dashboard]: https://datastudio.google.com/s/iNcXppkP3DI
 [health_dashboard]: https://datastudio.google.com/s/jUXfKZXXfT8

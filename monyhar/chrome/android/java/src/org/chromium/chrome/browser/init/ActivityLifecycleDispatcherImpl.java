@@ -2,26 +2,26 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.init;
+package org.monyhar.chrome.browser.init;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 
-import org.chromium.base.ObserverList;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.lifecycle.ActivityResultWithNativeObserver;
-import org.chromium.chrome.browser.lifecycle.ConfigurationChangedObserver;
-import org.chromium.chrome.browser.lifecycle.DestroyObserver;
-import org.chromium.chrome.browser.lifecycle.InflationObserver;
-import org.chromium.chrome.browser.lifecycle.LifecycleObserver;
-import org.chromium.chrome.browser.lifecycle.NativeInitObserver;
-import org.chromium.chrome.browser.lifecycle.PauseResumeWithNativeObserver;
-import org.chromium.chrome.browser.lifecycle.RecreateObserver;
-import org.chromium.chrome.browser.lifecycle.SaveInstanceStateObserver;
-import org.chromium.chrome.browser.lifecycle.StartStopWithNativeObserver;
-import org.chromium.chrome.browser.lifecycle.WindowFocusChangedObserver;
+import org.monyhar.base.ObserverList;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.lifecycle.ActivityResultWithNativeObserver;
+import org.monyhar.chrome.browser.lifecycle.ConfigurationChangedObserver;
+import org.monyhar.chrome.browser.lifecycle.DestroyObserver;
+import org.monyhar.chrome.browser.lifecycle.InflationObserver;
+import org.monyhar.chrome.browser.lifecycle.LifecycleObserver;
+import org.monyhar.chrome.browser.lifecycle.NativeInitObserver;
+import org.monyhar.chrome.browser.lifecycle.PauseResumeWithNativeObserver;
+import org.monyhar.chrome.browser.lifecycle.RecreateObserver;
+import org.monyhar.chrome.browser.lifecycle.SaveInstanceStateObserver;
+import org.monyhar.chrome.browser.lifecycle.StartStopWithNativeObserver;
+import org.monyhar.chrome.browser.lifecycle.WindowFocusChangedObserver;
 
 /**
  * Dispatches lifecycle events of activities extending {@link AsyncInitializationActivity} to

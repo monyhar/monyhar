@@ -472,7 +472,7 @@ class _LoadGmailBaseStory(_LoadingStory):
 
     # Navigating to https://mail.google.com immediately leads to an infinite
     # redirection loop due to a bug in WPR (see
-    # https://github.com/chromium/web-page-replay/issues/70). We therefore first
+    # https://github.com/monyhar/web-page-replay/issues/70). We therefore first
     # navigate to a sub-URL to set up the session and hit the resulting
     # redirection loop. Afterwards, we can safely navigate to
     # https://mail.google.com.
@@ -494,7 +494,7 @@ class LoadGmailStory2019(_LoadingStory):
 
     # Navigating to http://mail.google.com immediately leads to an infinite
     # redirection loop due to a bug in WPR (see
-    # https://bugs.chromium.org/p/chromium/issues/detail?id=1036791). We
+    # https://bugs.monyhar.org/p/monyhar/issues/detail?id=1036791). We
     # therefore first navigate to a dummy sub-URL to set up the session and
     # hit the resulting redirection loop. Afterwards, we can safely navigate
     # to http://mail.google.com.

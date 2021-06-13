@@ -1,9 +1,9 @@
 // Copyright 2020 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.content_public.browser.trusttokens;
+package org.monyhar.content_public.browser.trusttokens;
 
-import org.chromium.content.mojom.LocalTrustTokenFulfiller;
+import org.monyhar.content.mojom.LocalTrustTokenFulfiller;
 
 /**
  * TrustTokenFulfillerManager is a static utility class that allows embedders to plug in

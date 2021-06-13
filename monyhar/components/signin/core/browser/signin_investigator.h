@@ -13,7 +13,7 @@
 // These values are persisted to logs. Entries should not be renumbered and
 // numeric values should never be reused.
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.signin
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.signin
 // Broad categorization of signin type from investigation.
 enum class InvestigatedScenario : int {
   // First signin and should not be warned. As little friction as possible

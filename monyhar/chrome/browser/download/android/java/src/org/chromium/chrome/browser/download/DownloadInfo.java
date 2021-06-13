@@ -2,23 +2,23 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download;
+package org.monyhar.chrome.browser.download;
 
 import android.graphics.Bitmap;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.chrome.browser.profiles.OTRProfileID;
-import org.chromium.components.download.DownloadState;
-import org.chromium.components.offline_items_collection.ContentId;
-import org.chromium.components.offline_items_collection.FailState;
-import org.chromium.components.offline_items_collection.LegacyHelpers;
-import org.chromium.components.offline_items_collection.OfflineItem;
-import org.chromium.components.offline_items_collection.OfflineItem.Progress;
-import org.chromium.components.offline_items_collection.OfflineItemProgressUnit;
-import org.chromium.components.offline_items_collection.OfflineItemSchedule;
-import org.chromium.components.offline_items_collection.OfflineItemState;
-import org.chromium.components.offline_items_collection.OfflineItemVisuals;
-import org.chromium.components.offline_items_collection.PendingState;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.chrome.browser.profiles.OTRProfileID;
+import org.monyhar.components.download.DownloadState;
+import org.monyhar.components.offline_items_collection.ContentId;
+import org.monyhar.components.offline_items_collection.FailState;
+import org.monyhar.components.offline_items_collection.LegacyHelpers;
+import org.monyhar.components.offline_items_collection.OfflineItem;
+import org.monyhar.components.offline_items_collection.OfflineItem.Progress;
+import org.monyhar.components.offline_items_collection.OfflineItemProgressUnit;
+import org.monyhar.components.offline_items_collection.OfflineItemSchedule;
+import org.monyhar.components.offline_items_collection.OfflineItemState;
+import org.monyhar.components.offline_items_collection.OfflineItemVisuals;
+import org.monyhar.components.offline_items_collection.PendingState;
 
 /**
  * Class representing the state of a single download.

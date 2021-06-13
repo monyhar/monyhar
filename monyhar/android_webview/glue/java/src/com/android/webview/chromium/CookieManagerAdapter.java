@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package com.android.webview.chromium;
+package com.android.webview.monyhar;
 
 import android.net.ParseException;
 import android.net.WebAddress;
@@ -10,12 +10,12 @@ import android.webkit.CookieManager;
 import android.webkit.ValueCallback;
 import android.webkit.WebView;
 
-import org.chromium.android_webview.AwCookieManager;
-import org.chromium.base.Log;
+import org.monyhar.android_webview.AwCookieManager;
+import org.monyhar.base.Log;
 
 /**
  * Chromium implementation of CookieManager -- forwards calls to the
- * chromium internal implementation.
+ * monyhar internal implementation.
  */
 @SuppressWarnings({"deprecation", "NoSynchronizedMethodCheck"})
 public class CookieManagerAdapter extends CookieManager {
@@ -156,7 +156,7 @@ public class CookieManagerAdapter extends CookieManager {
         // WebAddress is a private API in the android framework and a "quirk"
         // of the Classic WebView implementation that allowed embedders to
         // be relaxed about what URLs they passed into the CookieManager, so we
-        // do the same normalisation before entering the chromium stack.
+        // do the same normalisation before entering the monyhar stack.
         return new WebAddress(url).toString();
     }
 }

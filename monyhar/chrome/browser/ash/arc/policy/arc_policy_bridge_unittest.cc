@@ -428,7 +428,7 @@ TEST_F(ArcPolicyBridgeTest, HompageLocationTest) {
   policy_map().Set(policy::key::kHomepageLocation,
                    policy::POLICY_LEVEL_MANDATORY, policy::POLICY_SCOPE_USER,
                    policy::POLICY_SOURCE_CLOUD,
-                   base::Value("http://chromium.org"), nullptr);
+                   base::Value("http://monyhar.org"), nullptr);
   GetPoliciesAndVerifyResult("{\"apkCacheEnabled\":true,\"guid\":\"" +
                              instance_guid() + "\"}");
 }
@@ -603,7 +603,7 @@ TEST_F(ArcPolicyBridgeTest, MultiplePoliciesTest) {
   policy_map().Set(policy::key::kHomepageLocation,
                    policy::POLICY_LEVEL_MANDATORY, policy::POLICY_SCOPE_USER,
                    policy::POLICY_SOURCE_CLOUD,
-                   base::Value("http://chromium.org"), nullptr);
+                   base::Value("http://monyhar.org"), nullptr);
   policy_map().Set(policy::key::kVideoCaptureAllowed,
                    policy::POLICY_LEVEL_MANDATORY, policy::POLICY_SCOPE_USER,
                    policy::POLICY_SOURCE_CLOUD, base::Value(false), nullptr);

@@ -15,17 +15,17 @@
 import("../build/crashpad_buildconfig.gni")
 import("net/tls.gni")
 
-if (crashpad_is_in_chromium) {
+if (crashpad_is_in_monyhar) {
   import("//build/config/sanitizers/sanitizers.gni")
 }
 
 if (crashpad_is_mac || crashpad_is_ios) {
-  if (crashpad_is_in_chromium || crashpad_is_in_fuchsia) {
+  if (crashpad_is_in_monyhar || crashpad_is_in_fuchsia) {
     import("//build/config/sysroot.gni")
   } else if (crashpad_is_external) {
-    import("../../../mini_chromium/mini_chromium/build/sysroot.gni")
+    import("../../../mini_monyhar/mini_monyhar/build/sysroot.gni")
   } else {
-    import("//third_party/mini_chromium/mini_chromium/build/sysroot.gni")
+    import("//third_party/mini_monyhar/mini_monyhar/build/sysroot.gni")
   }
 
   action_foreach("mig") {
@@ -65,7 +65,7 @@ if (crashpad_is_mac || crashpad_is_ios) {
 
     args = [ "{{source}}" ]
     args += rebase_path(outputs, root_build_dir)
-    if (crashpad_is_in_chromium) {
+    if (crashpad_is_in_monyhar) {
       if (!use_system_xcode) {
         import("//build/config/clang/clang.gni")
         import("//build/config/mac/mac_sdk.gni")
@@ -96,7 +96,7 @@ if (crashpad_is_mac || crashpad_is_ios) {
       }
     }
     if (sysroot != "") {
-      if (crashpad_is_in_chromium) {
+      if (crashpad_is_in_monyhar) {
         # Chromium often brings along its own SDK and wants to keep paths
         # relative…
         args += [
@@ -160,10 +160,10 @@ if (crashpad_is_mac || crashpad_is_ios) {
   static_library("mig_output") {
     deps = [ ":mig" ]
     sources = get_target_outputs(":mig")
-    if (crashpad_is_in_chromium) {
+    if (crashpad_is_in_monyhar) {
       # mig output contains unreachable code, which irks -Wunreachable-code.
-      configs -= [ "//build/config/compiler:chromium_code" ]
-      configs += [ "//build/config/compiler:no_chromium_code" ]
+      configs -= [ "//build/config/compiler:monyhar_code" ]
+      configs += [ "//build/config/compiler:no_monyhar_code" ]
     }
     public_configs = [ "..:crashpad_config" ]
   }
@@ -406,7 +406,7 @@ crashpad_static_library("util") {
     if (crashpad_use_boringssl_for_http_transport_socket) {
       defines += [ "CRASHPAD_USE_BORINGSSL" ]
 
-      if (crashpad_is_in_chromium || crashpad_is_in_fuchsia) {
+      if (crashpad_is_in_monyhar || crashpad_is_in_fuchsia) {
         deps += [ "//third_party/boringssl" ]
       } else {
         libs = [
@@ -561,7 +561,7 @@ crashpad_static_library("util") {
         # assembly dialects, the same .asm file can't be used for each. As a
         # workaround, use a prebuilt .obj file when the Microsoft-dialect
         # assembler isn't available.
-        if (crashpad_is_in_chromium) {
+        if (crashpad_is_in_monyhar) {
           sources += [ "misc/capture_context_win_arm64.obj" ]
         } else {
           sources += [ "misc/capture_context_win_arm64.asm" ]
@@ -604,7 +604,7 @@ crashpad_static_library("util") {
     "../third_party/zlib",
   ]
 
-  deps += [ "../third_party/mini_chromium:base" ]
+  deps += [ "../third_party/mini_monyhar:base" ]
 
   if (crashpad_is_mac || crashpad_is_ios) {
     include_dirs += [ "$root_build_dir/gen" ]
@@ -656,15 +656,15 @@ if (!crashpad_is_android && !crashpad_is_ios) {
     deps = [
       ":util",
       "../third_party/cpp-httplib",
-      "../third_party/mini_chromium:base",
+      "../third_party/mini_monyhar:base",
       "../third_party/zlib",
       "../tools:tool_support",
     ]
 
     if (crashpad_is_standalone) {
-      remove_configs = [ "//third_party/mini_chromium/mini_chromium/build/config:Wexit_time_destructors" ]
+      remove_configs = [ "//third_party/mini_monyhar/mini_monyhar/build/config:Wexit_time_destructors" ]
     } else if (crashpad_is_external) {
-      remove_configs = [ "//../../mini_chromium/mini_chromium/build/config:Wexit_time_destructors" ]
+      remove_configs = [ "//../../mini_monyhar/mini_monyhar/build/config:Wexit_time_destructors" ]
     }
 
     if (crashpad_is_win) {
@@ -674,7 +674,7 @@ if (!crashpad_is_android && !crashpad_is_ios) {
     if (crashpad_use_boringssl_for_http_transport_socket) {
       defines = [ "CRASHPAD_USE_BORINGSSL" ]
 
-      if (crashpad_is_in_chromium || crashpad_is_in_fuchsia) {
+      if (crashpad_is_in_monyhar || crashpad_is_in_fuchsia) {
         deps += [ "//third_party/boringssl" ]
       } else {
         libs = [
@@ -691,7 +691,7 @@ if (!crashpad_is_android && !crashpad_is_ios) {
 source_set("no_cfi_icall") {
   sources = [ "misc/no_cfi_icall.h" ]
   public_configs = [ "..:crashpad_config" ]
-  public_deps = [ "../third_party/mini_chromium:build" ]
+  public_deps = [ "../third_party/mini_monyhar:build" ]
 }
 
 source_set("util_test") {
@@ -846,7 +846,7 @@ source_set("util_test") {
       "win/session_end_watcher_test.cc",
     ]
 
-    if (crashpad_is_in_chromium && is_asan && is_component_build) {
+    if (crashpad_is_in_monyhar && is_asan && is_component_build) {
       # TODO(crbug.com/856174): Re-enable these once Windows ASan is fixed.
       sources -= [ "stdlib/string_number_conversion_test.cc" ]
     }
@@ -866,7 +866,7 @@ source_set("util_test") {
     "../test",
     "../third_party/googletest:googlemock",
     "../third_party/googletest:googletest",
-    "../third_party/mini_chromium:base",
+    "../third_party/mini_monyhar:base",
     "../third_party/zlib",
   ]
 
@@ -890,7 +890,7 @@ source_set("util_test") {
     deps += [ "../third_party/lss" ]
   }
 
-  if (crashpad_is_in_chromium && (crashpad_is_linux || crashpad_is_android)) {
+  if (crashpad_is_in_monyhar && (crashpad_is_linux || crashpad_is_android)) {
     # TODO(crbug.com/1163794): Disabling MemoryMap tests if PartitionAlloc is
     # used for malloc.
     deps += [ "//base/allocator:buildflags" ]

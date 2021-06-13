@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.accounts.Account;
 import android.app.backup.BackupDataInput;
@@ -14,26 +14,26 @@ import android.os.ParcelFileDescriptor;
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.PathUtils;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.browser.base.SplitCompatApplication;
-import org.chromium.chrome.browser.firstrun.FirstRunStatus;
-import org.chromium.chrome.browser.init.AsyncInitTaskRunner;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.signin.services.IdentityServicesProvider;
-import org.chromium.components.signin.AccountManagerFacadeProvider;
-import org.chromium.components.signin.AccountUtils;
-import org.chromium.components.signin.base.CoreAccountInfo;
-import org.chromium.components.signin.identitymanager.ConsentLevel;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.content_public.common.ContentProcessInfo;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.PathUtils;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.browser.base.SplitCompatApplication;
+import org.monyhar.chrome.browser.firstrun.FirstRunStatus;
+import org.monyhar.chrome.browser.init.AsyncInitTaskRunner;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.signin.services.IdentityServicesProvider;
+import org.monyhar.components.signin.AccountManagerFacadeProvider;
+import org.monyhar.components.signin.AccountUtils;
+import org.monyhar.components.signin.base.CoreAccountInfo;
+import org.monyhar.components.signin.identitymanager.ConsentLevel;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.content_public.common.ContentProcessInfo;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.external_intents;
+package org.monyhar.components.external_intents;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.url.GURL;
-import org.chromium.url.Origin;
+import org.monyhar.url.GURL;
+import org.monyhar.url.Origin;
 
 /**
  * A container object for passing navigation parameters to {@link ExternalNavigationHandler}.

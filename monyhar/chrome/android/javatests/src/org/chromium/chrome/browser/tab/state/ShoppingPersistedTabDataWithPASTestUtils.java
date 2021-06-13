@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab.state;
+package org.monyhar.chrome.browser.tab.state;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.doAnswer;
@@ -14,12 +14,12 @@ import androidx.annotation.IntDef;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.page_annotations.BuyableProductPageAnnotation;
-import org.chromium.chrome.browser.page_annotations.PageAnnotation;
-import org.chromium.chrome.browser.page_annotations.PageAnnotationsService;
-import org.chromium.chrome.browser.page_annotations.ProductPriceUpdatePageAnnotation;
-import org.chromium.url.GURL;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.page_annotations.BuyableProductPageAnnotation;
+import org.monyhar.chrome.browser.page_annotations.PageAnnotation;
+import org.monyhar.chrome.browser.page_annotations.PageAnnotationsService;
+import org.monyhar.chrome.browser.page_annotations.ProductPriceUpdatePageAnnotation;
+import org.monyhar.url.GURL;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

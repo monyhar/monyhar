@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base;
+package org.monyhar.base;
 
 import android.os.Handler;
 import android.os.HandlerThread;
@@ -11,13 +11,13 @@ import android.os.ParcelFileDescriptor;
 import android.os.RemoteException;
 import android.util.SparseArray;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.process_launcher.ChildConnectionAllocator;
-import org.chromium.base.process_launcher.ChildProcessConnection;
-import org.chromium.base.process_launcher.ChildProcessLauncher;
-import org.chromium.base.process_launcher.FileDescriptorInfo;
-import org.chromium.base.process_launcher.IChildProcessService;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.process_launcher.ChildConnectionAllocator;
+import org.monyhar.base.process_launcher.ChildProcessConnection;
+import org.monyhar.base.process_launcher.ChildProcessLauncher;
+import org.monyhar.base.process_launcher.FileDescriptorInfo;
+import org.monyhar.base.process_launcher.IChildProcessService;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -138,8 +138,8 @@ public final class MultiprocessTestClientLauncher {
         if (sConnectionAllocator == null) {
             sConnectionAllocator = ChildConnectionAllocator.create(
                     ContextUtils.getApplicationContext(), sLauncherHandler, null,
-                    "org.chromium.native_test", "org.chromium.base.MultiprocessTestClientService",
-                    "org.chromium.native_test.NUM_TEST_CLIENT_SERVICES", false /* bindToCaller */,
+                    "org.monyhar.native_test", "org.monyhar.base.MultiprocessTestClientService",
+                    "org.monyhar.native_test.NUM_TEST_CLIENT_SERVICES", false /* bindToCaller */,
                     false /* bindAsExternalService */, false /* useStrongBinding */);
         }
         mLauncher = new ChildProcessLauncher(sLauncherHandler, mLauncherDelegate, commandLine,

@@ -29,7 +29,7 @@ constexpr char kTestAppUrl[] = "https://www.example.com/";
 constexpr char kTestAppActionUrl[] = "https://www.example.com/share";
 constexpr char kTestManifestUrl[] = "https://www.example.com/manifest.json";
 constexpr char kTestShareTextParam[] = "share_text";
-constexpr char kTestWebApkPackageName[] = "org.chromium.webapk.some_package";
+constexpr char kTestWebApkPackageName[] = "org.monyhar.webapk.some_package";
 const std::u16string kTestAppTitle = u"Test App";
 
 std::unique_ptr<WebApplicationInfo> BuildDefaultWebAppInfo() {
@@ -164,7 +164,7 @@ TEST_F(WebApkManagerTest, IgnoresAlreadyInstalledWebApkOnStartup) {
   auto app_id_2 =
       web_app::test::InstallWebApp(profile(), std::move(app_info_2));
   apps::webapk_prefs::AddWebApk(profile(), app_id_1,
-                                "org.chromium.webapk.some_package");
+                                "org.monyhar.webapk.some_package");
 
   StartWebApkManager();
 

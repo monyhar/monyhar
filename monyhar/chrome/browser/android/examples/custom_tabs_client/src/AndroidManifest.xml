@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.chromium.customtabsclient"
+    package="org.monyhar.customtabsclient"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -25,7 +25,7 @@
         android:theme="@style/Theme.MaterialComponents.Light" >
 
         <activity
-            android:name="org.chromium.customtabsclient.MainActivity"
+            android:name="org.monyhar.customtabsclient.MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

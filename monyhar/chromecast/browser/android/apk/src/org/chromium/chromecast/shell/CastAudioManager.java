@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.shell;
+package org.monyhar.chromecast.shell;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -15,9 +15,9 @@ import android.os.Build.VERSION_CODES;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
-import org.chromium.chromecast.base.Controller;
-import org.chromium.chromecast.base.Observable;
+import org.monyhar.base.Log;
+import org.monyhar.chromecast.base.Controller;
+import org.monyhar.chromecast.base.Observable;
 
 /**
  * Wrapper for Cast code to use a single AudioManager instance.

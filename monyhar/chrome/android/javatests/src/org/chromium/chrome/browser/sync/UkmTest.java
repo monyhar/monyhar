@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sync;
+package org.monyhar.chrome.browser.sync;
 
 import androidx.test.filters.SmallTest;
 
@@ -13,15 +13,15 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.metrics.UmaSessionStats;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.components.signin.base.CoreAccountInfo;
-import org.chromium.content_public.browser.test.util.JavaScriptUtils;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.ui.base.PageTransition;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.metrics.UmaSessionStats;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.components.signin.base.CoreAccountInfo;
+import org.monyhar.content_public.browser.test.util.JavaScriptUtils;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.ui.base.PageTransition;
 
 /**
  * Tests for UKM Sync integration.

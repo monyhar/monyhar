@@ -20,7 +20,7 @@ ScopedJavaLocalRef<jobjectArray> MediaImage::ToJavaArray(
     JNIEnv* env,
     const std::vector<MediaImage>& images) {
   ScopedJavaLocalRef<jclass> string_clazz = base::android::GetClass(
-      env, "org/chromium/services/media_session/MediaImage");
+      env, "org/monyhar/services/media_session/MediaImage");
   jobjectArray joa =
       env->NewObjectArray(images.size(), string_clazz.obj(), NULL);
   base::android::CheckException(env);

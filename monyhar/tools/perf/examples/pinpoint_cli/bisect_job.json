@@ -8,7 +8,7 @@
   "story": "browse:media:facebook_photos",
   "chart": "memory:webview:all_processes:reported_by_os:system_memory:private_dirty_size",
   "statistic": "avg",
-  "repository": "chromium",
+  "repository": "monyhar",
   "start_git_hash": "9bb441de89f7d031992ec67585ac0732ef622222",
   "end_git_hash": "f402331ff436d3ac12cacbd1c959641eb3524923"
 }

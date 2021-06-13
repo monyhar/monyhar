@@ -38,7 +38,7 @@ js_library("cr_dialog.m") {
   ]
   deps = [
     "..:cr_container_shadow_behavior.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
   ]
   extra_deps = [ ":cr_dialog_module" ]

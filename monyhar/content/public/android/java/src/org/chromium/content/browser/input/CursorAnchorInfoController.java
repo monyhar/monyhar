@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.input;
+package org.monyhar.content.browser.input;
 
 import android.graphics.Matrix;
 import android.view.View;
@@ -11,7 +11,7 @@ import android.view.inputmethod.CursorAnchorInfo;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.content_public.browser.InputMethodManagerWrapper;
+import org.monyhar.content_public.browser.InputMethodManagerWrapper;
 
 import java.util.Arrays;
 

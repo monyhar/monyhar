@@ -1,7 +1,7 @@
-chrisha@chromium.org
-fdoray@chromium.org
-siggi@chromium.org
-joenotcharles@chromium.org
+chrisha@monyhar.org
+fdoray@monyhar.org
+siggi@monyhar.org
+joenotcharles@monyhar.org
 
 # For IPC security review
 per-file *.mojom=set noparent

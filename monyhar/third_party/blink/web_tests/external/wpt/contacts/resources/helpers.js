@@ -9,7 +9,7 @@
 //
 //   --enable-blink-features=MojoJS,MojoJSTest
 async function loadChromiumResources() {
-  await import('/resources/chromium/contacts_manager_mock.js');
+  await import('/resources/monyhar/contacts_manager_mock.js');
 }
 
 // User Agents must provide their own implementation of `WebContacts`,

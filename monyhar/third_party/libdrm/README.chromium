@@ -1,6 +1,6 @@
 Name: libdrm
 Short Name: libdrm
-URL: https://chromium.googlesource.com/chromiumos/third_party/libdrm
+URL: https://monyhar.googlesource.com/monyharos/third_party/libdrm
 Version: 2.4.85
 License: MIT, GPL
 License File: NOT_SHIPPED

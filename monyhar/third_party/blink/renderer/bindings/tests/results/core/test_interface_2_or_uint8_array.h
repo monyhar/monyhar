@@ -95,7 +95,7 @@ struct V8TypeOf<TestInterface2OrUint8Array> {
 // We need to set canInitializeWithMemset=true because HeapVector supports
 // items that can initialize with memset or have a vtable. It is safe to
 // set canInitializeWithMemset=true for a union type object in practice.
-// See https://codereview.chromium.org/1118993002/#msg5 for more details.
+// See https://codereview.monyhar.org/1118993002/#msg5 for more details.
 WTF_ALLOW_MOVE_AND_INIT_WITH_MEM_FUNCTIONS(blink::TestInterface2OrUint8Array)
 
 #endif  // THIRD_PARTY_BLINK_RENDERER_BINDINGS_TESTS_RESULTS_CORE_TEST_INTERFACE_2_OR_UINT_8_ARRAY_H_

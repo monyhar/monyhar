@@ -183,4 +183,4 @@ developers at the address below.
 # Contact information
 
 Questions about media capture features, APIs, or user interfaces can be sent to
-[media-capture-dev@chromium.org](mailto:media-capture-dev@chromium.org).
+[media-capture-dev@monyhar.org](mailto:media-capture-dev@monyhar.org).

@@ -2,5 +2,5 @@
 
 This directory contains the code behind Chrome's networking stack.
 It is documented
-[here](https://www.chromium.org/developers/design-documents/network-stack).
+[here](https://www.monyhar.org/developers/design-documents/network-stack).
 

@@ -31,7 +31,7 @@ class VideoFrame;
 // Implements the VideoDecodeAccelerator backed by a VideoDecoder.
 // Currently GpuArcVideoDecodeAccelerator bridges the video codec from
 // ARC++ to a VDA instance. We plan to deprecate to VDA implementation at
-// chromium by new VD implementation. So we need the adapter between
+// monyhar by new VD implementation. So we need the adapter between
 // these two interface.
 //
 // Important note: This adaptor is only used temporary as an intermediate step

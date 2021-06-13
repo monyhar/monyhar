@@ -779,7 +779,7 @@ TEST_F(HistoryServiceTest, GetDomainDiversityShortBasetimeRange) {
 
   // Domains visited on the query day will not be included in the result.
   AddPageAtTime(history, "http://www.youtube.com/", query_time.LocalMidnight());
-  AddPageAtTime(history, "http://www.chromium.com/",
+  AddPageAtTime(history, "http://www.monyhar.com/",
                 query_time.LocalMidnight() + base::TimeDelta::FromMinutes(5));
   AddPageAtTime(history, "http://www.youtube.com/", query_time);
 
@@ -831,13 +831,13 @@ TEST_F(HistoryServiceTest, GetDomainDiversityLongBasetimeRange) {
                 GetTimeInThePast(query_time, 14, 5));
   AddPageAtTime(history, "http://www.gmail.com/",
                 GetTimeInThePast(query_time, 10, 13));
-  AddPageAtTime(history, "http://www.chromium.org/foo",
+  AddPageAtTime(history, "http://www.monyhar.org/foo",
                 GetTimeInThePast(query_time, 7, 14));
   AddPageAtTime(history, "https://www.youtube.com/",
                 GetTimeInThePast(query_time, 2, 12));
   AddPageAtTime(history, "https://www.youtube.com/foo",
                 GetTimeInThePast(query_time, 2, 12));
-  AddPageAtTime(history, "https://www.chromium.org/",
+  AddPageAtTime(history, "https://www.monyhar.org/",
                 GetTimeInThePast(query_time, 1, 13));
   AddPageAtTime(history, "https://www.google.com/",
                 GetTimeInThePast(query_time, 1, 13));
@@ -870,7 +870,7 @@ TEST_F(HistoryServiceTest, GetDomainDiversityBitmaskTest) {
                                  /*hours_since_midnight=*/6));
   AddPageAtTime(history, "http://www.youtube.com/",
                 GetTimeInThePast(query_time, 7, 6));
-  AddPageAtTime(history, "http://www.chromium.com/",
+  AddPageAtTime(history, "http://www.monyhar.com/",
                 GetTimeInThePast(query_time, 1, 4));
 
   DomainDiversityResults res = GetDomainDiversityHelper(

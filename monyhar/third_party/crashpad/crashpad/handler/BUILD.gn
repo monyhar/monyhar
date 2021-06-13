@@ -63,7 +63,7 @@ static_library("handler") {
   public_deps = [
     ":common",
     "../client",
-    "../third_party/mini_chromium:base",
+    "../third_party/mini_monyhar:base",
     "../util",
   ]
 
@@ -71,7 +71,7 @@ static_library("handler") {
     ":common",
     "../minidump",
     "../snapshot",
-    "../third_party/mini_chromium:chromeos_buildflags",
+    "../third_party/mini_monyhar:chromeos_buildflags",
     "../tools:tool_support",
   ]
 
@@ -105,7 +105,7 @@ static_library("common") {
   }
   public_configs = [ "..:crashpad_config" ]
   public_deps = [
-    "../third_party/mini_chromium:base",
+    "../third_party/mini_monyhar:base",
     "../util",
   ]
   deps = [
@@ -139,7 +139,7 @@ source_set("handler_test") {
     "../snapshot:test_support",
     "../test",
     "../third_party/googletest:googletest",
-    "../third_party/mini_chromium:base",
+    "../third_party/mini_monyhar:base",
     "../util",
   ]
 
@@ -161,20 +161,20 @@ if (!crashpad_is_ios) {
       ":handler",
       "../build:default_exe_manifest_win",
       "../compat",
-      "../third_party/mini_chromium:base",
+      "../third_party/mini_monyhar:base",
       "../tools:tool_support",
     ]
 
     if (crashpad_is_win) {
-      if (crashpad_is_in_chromium || crashpad_is_in_dart) {
+      if (crashpad_is_in_monyhar || crashpad_is_in_dart) {
         remove_configs = [ "//build/config/win:console" ]
         configs = [ "//build/config/win:windowed" ]
       } else {
         remove_configs = [
-          "//third_party/mini_chromium/mini_chromium/build/config:win_console",
+          "//third_party/mini_monyhar/mini_monyhar/build/config:win_console",
         ]
         configs = [
-          "//third_party/mini_chromium/mini_chromium/build/config:win_windowed",
+          "//third_party/mini_monyhar/mini_monyhar/build/config:win_windowed",
         ]
       }
     }
@@ -207,7 +207,7 @@ if (crashpad_is_android) {
 
     libs = [ "log" ]
 
-    if (crashpad_is_in_chromium) {
+    if (crashpad_is_in_monyhar) {
       no_default_deps = true
       remove_configs =
           [ "//build/config/android:default_orderfile_instrumentation" ]
@@ -226,7 +226,7 @@ if (!crashpad_is_ios) {
       "../build:default_exe_manifest_win",
       "../compat",
       "../minidump:test_support",
-      "../third_party/mini_chromium:base",
+      "../third_party/mini_monyhar:base",
       "../tools:tool_support",
     ]
   }
@@ -245,7 +245,7 @@ if (crashpad_is_win) {
       ":handler",
       "../build:default_exe_manifest_win",
       "../compat",
-      "../third_party/mini_chromium:base",
+      "../third_party/mini_monyhar:base",
       "../tools:tool_support",
     ]
   }
@@ -265,7 +265,7 @@ if (crashpad_is_win) {
       "../client",
       "../test",
       "../third_party/googletest:googletest",
-      "../third_party/mini_chromium:base",
+      "../third_party/mini_monyhar:base",
     ]
   }
 
@@ -276,7 +276,7 @@ if (crashpad_is_win) {
 
     deps = [
       "../client",
-      "../third_party/mini_chromium:base",
+      "../third_party/mini_monyhar:base",
     ]
   }
 
@@ -289,7 +289,7 @@ if (crashpad_is_win) {
 
     deps = [
       "../client",
-      "../third_party/mini_chromium:base",
+      "../third_party/mini_monyhar:base",
     ]
   }
 
@@ -306,7 +306,7 @@ if (crashpad_is_win) {
 
     deps = [
       "../client",
-      "../third_party/mini_chromium:base",
+      "../third_party/mini_monyhar:base",
     ]
   }
 
@@ -325,7 +325,7 @@ if (crashpad_is_win) {
       "../client",
       "../compat",
       "../snapshot",
-      "../third_party/mini_chromium:base",
+      "../third_party/mini_monyhar:base",
     ]
   }
 
@@ -339,7 +339,7 @@ if (crashpad_is_win) {
       deps = [
         "../client",
         "../test",
-        "../third_party/mini_chromium:base",
+        "../third_party/mini_monyhar:base",
       ]
     }
   }

@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.payments.test_support;
+package org.monyhar.components.payments.test_support;
 
 import org.robolectric.annotation.Implementation;
 import org.robolectric.annotation.Implements;
 import org.robolectric.annotation.Resetter;
 
-import org.chromium.components.payments.PaymentFeatureList;
+import org.monyhar.components.payments.PaymentFeatureList;
 
 import java.util.HashMap;
 import java.util.Map;

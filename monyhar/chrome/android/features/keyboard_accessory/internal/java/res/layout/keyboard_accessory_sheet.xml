@@ -3,7 +3,7 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
 
-<org.chromium.chrome.browser.keyboard_accessory.sheet_component.AccessorySheetView
+<org.monyhar.chrome.browser.keyboard_accessory.sheet_component.AccessorySheetView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:fillViewport="true"
     android:paddingTop="0dp"
@@ -12,7 +12,7 @@
     android:layout_height="@dimen/keyboard_accessory_sheet_height"
     android:visibility="gone">
 
-    <org.chromium.chrome.browser.keyboard_accessory.sheet_component.NoSwipeViewPager
+    <org.monyhar.chrome.browser.keyboard_accessory.sheet_component.NoSwipeViewPager
         android:id="@+id/keyboard_accessory_sheet"
         android:background="@color/default_bg_color"
         android:fillViewport="true"
@@ -27,4 +27,4 @@
         android:scaleType="fitXY"
         android:visibility="invisible"
         android:importantForAccessibility="no" />
-</org.chromium.chrome.browser.keyboard_accessory.sheet_component.AccessorySheetView>
+</org.monyhar.chrome.browser.keyboard_accessory.sheet_component.AccessorySheetView>

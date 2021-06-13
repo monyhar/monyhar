@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps.launchpad;
+package org.monyhar.chrome.browser.webapps.launchpad;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.components.browser_ui.widget.tile.TileView;
-import org.chromium.components.browser_ui.widget.tile.TileViewBinder;
-import org.chromium.ui.modelutil.MVCListAdapter.ModelList;
-import org.chromium.ui.modelutil.SimpleRecyclerViewAdapter;
+import org.monyhar.components.browser_ui.widget.tile.TileView;
+import org.monyhar.components.browser_ui.widget.tile.TileViewBinder;
+import org.monyhar.ui.modelutil.MVCListAdapter.ModelList;
+import org.monyhar.ui.modelutil.SimpleRecyclerViewAdapter;
 
 import java.util.List;
 

@@ -69,7 +69,7 @@ instance of `foo`/`Foo`/`FOO` with `your_feature_name`/`YourFeatureName`/
 ### Reference DFM
 
 In addition to this guide, the
-[Test Dummy](https://cs.chromium.org/chromium/src/chrome/android/modules/test_dummy/test_dummy_module.gni)
+[Test Dummy](https://cs.monyhar.org/monyhar/src/chrome/android/modules/test_dummy/test_dummy_module.gni)
 module serves as an actively-maintained reference DFM. Test Dummy is used in
 automated bundle testing, and covers both Java and native code and resource
 usage.
@@ -194,7 +194,7 @@ when there are default or conditionally installed modules (see
 You can then check that the install worked with:
 
 ```shell
-$ adb shell dumpsys package org.chromium.chrome | grep splits
+$ adb shell dumpsys package org.monyhar.chrome | grep splits
 >   splits=[base, config.en, foo]
 ```
 
@@ -203,7 +203,7 @@ installed modules:
 
 ```shell
 $ $OUTDIR/bin/monochrome_public_bundle install -m base
-$ adb shell dumpsys package org.chromium.chrome | grep splits
+$ adb shell dumpsys package org.monyhar.chrome | grep splits
 >   splits=[base, config.en]
 ```
 
@@ -217,15 +217,15 @@ First, define a module interface for Foo. This is accomplished by adding the
 `@ModuleInterface` annotation to the Foo interface. This annotation
 automatically creates a `FooModule` class that can be used later to install and
 access the module. To do this, add the following in the new file
-`//chrome/browser/foo/android/java/src/org/chromium/chrome/browser/foo/Foo.java`:
+`//chrome/browser/foo/android/java/src/org/monyhar/chrome/browser/foo/Foo.java`:
 
 ```java
-package org.chromium.chrome.browser.foo;
+package org.monyhar.chrome.browser.foo;
 
-import org.chromium.components.module_installer.builder.ModuleInterface;
+import org.monyhar.components.module_installer.builder.ModuleInterface;
 
 /** Interface to call into Foo feature. */
-@ModuleInterface(module = "foo", impl = "org.chromium.chrome.browser.FooImpl")
+@ModuleInterface(module = "foo", impl = "org.monyhar.chrome.browser.FooImpl")
 public interface Foo {
     /** Magical function. */
     void bar();
@@ -233,13 +233,13 @@ public interface Foo {
 ```
 
 Next, define an implementation that goes into the module in the new file
-`//chrome/browser/foo/internal/android/java/src/org/chromium/chrome/browser/foo/FooImpl.java`:
+`//chrome/browser/foo/internal/android/java/src/org/monyhar/chrome/browser/foo/FooImpl.java`:
 
 ```java
-package org.chromium.chrome.browser.foo;
+package org.monyhar.chrome.browser.foo;
 
-import org.chromium.base.Log;
-import org.chromium.base.annotations.UsedByReflection;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.UsedByReflection;
 
 @UsedByReflection("FooModule")
 public class FooImpl implements Foo {
@@ -270,7 +270,7 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "android/java/src/org/chromium/chrome/browser/foo/Foo.java",
+    "android/java/src/org/monyhar/chrome/browser/foo/Foo.java",
   ]
 }
 ```
@@ -300,7 +300,7 @@ import("//build/config/android/rules.gni")
 android_library("java") {
   # Define like ordinary Java Android library.
   sources = [
-    "android/java/src/org/chromium/chrome/browser/foo/FooImpl.java",
+    "android/java/src/org/monyhar/chrome/browser/foo/FooImpl.java",
     # Add other Java classes that should go into the Foo DFM here.
   ]
   deps = [
@@ -516,7 +516,7 @@ source_set("native") {
 
 generate_jni("jni_headers") {
   sources = [
-    "android/java/src/org/chromium/chrome/browser/foo/FooImpl.java",
+    "android/java/src/org/monyhar/chrome/browser/foo/FooImpl.java",
   ]
 }
 ```
@@ -588,7 +588,7 @@ Foo's `java` target in the same file:
 android_resources("java_resources") {
   # Define like ordinary Android resources target.
   ...
-  custom_package = "org.chromium.chrome.browser.foo"
+  custom_package = "org.monyhar.chrome.browser.foo"
 }
 ...
 android_library("java") {
@@ -600,7 +600,7 @@ android_library("java") {
 ```
 
 To add strings follow steps
-[here](http://dev.chromium.org/developers/design-documents/ui-localization) to
+[here](http://dev.monyhar.org/developers/design-documents/ui-localization) to
 add new Java GRD file. Then create
 `//chrome/browser/foo/internal/android/resources/strings/android_foo_strings.grd` as
 follows:
@@ -654,23 +654,23 @@ java_strings_grd("java_strings_grd") {
 android_resources("java_resources") {
   ...
   deps = [":java_strings_grd"]
-  custom_package = "org.chromium.chrome.browser.foo"
+  custom_package = "org.monyhar.chrome.browser.foo"
 }
 ...
 ```
 
 You can then access Foo's resources using the
-`org.chromium.chrome.browser.foo.R` class. To do this change
-`//chrome/browser/foo/internal/android/java/src/org/chromium/chrome/browser/foo/FooImpl.java`
+`org.monyhar.chrome.browser.foo.R` class. To do this change
+`//chrome/browser/foo/internal/android/java/src/org/monyhar/chrome/browser/foo/FooImpl.java`
 to:
 
 ```java
-package org.chromium.chrome.browser.foo;
+package org.monyhar.chrome.browser.foo;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.annotations.UsedByReflection;
-import org.chromium.chrome.browser.foo.R;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.UsedByReflection;
+import org.monyhar.chrome.browser.foo.R;
 
 @UsedByReflection("FooModule")
 public class FooImpl implements Foo {

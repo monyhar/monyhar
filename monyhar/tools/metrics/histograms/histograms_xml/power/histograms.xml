@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Power histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -29,13 +29,13 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
   <variant name="" summary="Any scenario."/>
   <variant name=".ZeroWindow"
-      summary="When chromium has no windows at all (ex: docked on macOS)"/>
+      summary="When monyhar has no windows at all (ex: docked on macOS)"/>
 </variants>
 
 <histogram name="Power.ApproxCpuTimeSecondsPerCoreTypeAndFrequency"
     units="50 MHz" expires_after="2021-10-17">
-  <owner>eseckler@chromium.org</owner>
-  <owner>skyostil@chromium.org</owner>
+  <owner>eseckler@monyhar.org</owner>
+  <owner>skyostil@monyhar.org</owner>
   <summary>
     Total seconds of CPU time consumed by Chrome, split by process type as well
     as core type and core frequency. Currently only implemented on Android. For
@@ -58,7 +58,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 </histogram>
 
 <histogram name="Power.BacklightLevelOnAC" units="%" expires_after="2021-10-31">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The level of the backlight as a percentage when the user is on AC. Sampled
     every 30 seconds.
@@ -67,7 +67,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.BacklightLevelOnBattery" units="%"
     expires_after="2021-11-07">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The level of the backlight as a percentage when the user is on battery.
     Sampled every 30 seconds.
@@ -76,7 +76,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.BatteryChargeHealth" units="%"
     expires_after="2021-10-10">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     Chrome OS battery charge health percentage. Sampled once when device starts
     charging.
@@ -85,8 +85,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.BatteryDischargeMode{UsageScenario}"
     enum="BatteryDischargeMode" expires_after="2021-07-18">
-  <owner>etiennep@chromium.org</owner>
-  <owner>olivierli@chromium.org</owner>
+  <owner>etiennep@monyhar.org</owner>
+  <owner>olivierli@monyhar.org</owner>
   <summary>
     Battery discharge mode describing whether BatteryDischargeRate2 could be
     reported or not, and why. Reported every time the battery charge level is
@@ -98,7 +98,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.BatteryDischargeRate" units="mW"
     expires_after="2021-12-05">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     Chrome OS battery discharge rate in mW sampled every 30 seconds while the
     device runs on battery.
@@ -107,9 +107,9 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.BatteryDischargeRate2{UsageScenario}"
     units="hundredth of percent" expires_after="2021-09-26">
-  <owner>etiennep@chromium.org</owner>
-  <owner>olivierli@chromium.org</owner>
-  <owner>lgrey@chromium.org</owner>
+  <owner>etiennep@monyhar.org</owner>
+  <owner>olivierli@monyhar.org</owner>
+  <owner>lgrey@monyhar.org</owner>
   <summary>
     Battery discharge rate per minute, with 1/10000 of full charge resolution,
     example: - Battery capacity = 4000 mAh; - Battery charge at the beginning of
@@ -123,7 +123,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.BatteryDischargeRateWhileSuspended" units="mW"
     expires_after="2021-10-10">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     Chrome OS battery discharge rate in mW while the system was suspended,
     sampled at resume. Only reported if the system was on battery power both
@@ -135,7 +135,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.BatteryInfoSample" enum="BatteryInfoSampleResult"
     expires_after="2020-11-29">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     Counts the number of times we have read the battery status from sysfs and if
     it gave us sensible values.
@@ -143,8 +143,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 </histogram>
 
 <histogram name="Power.BatteryPercentDrop" units="%" expires_after="2021-10-10">
-  <owner>ryansturm@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>ryansturm@monyhar.org</owner>
+  <owner>tbansal@monyhar.org</owner>
   <summary>
     The drop in battery since the last operating system battery update as a
     percent of total device battery. If the drop is not a round percentage
@@ -159,7 +159,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.BatteryRemainingAtEndOfSessionOnAC" units="%"
     expires_after="M85">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     Chrome OS remaining battery charge as percent of the maximum battery charge,
     sampled at the end of a user session when the device is on AC.
@@ -168,7 +168,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.BatteryRemainingAtEndOfSessionOnBattery" units="%"
     expires_after="2021-10-25">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     Chrome OS remaining battery charge as percent of the maximum battery charge,
     sampled at the end of a user session when the device is on battery.
@@ -177,7 +177,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.BatteryRemainingAtStartOfSessionOnAC" units="%"
     expires_after="2021-10-25">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     Chrome OS remaining battery charge as percent of the maximum battery charge,
     sampled at the start of a user session when the device is on AC.
@@ -186,7 +186,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.BatteryRemainingAtStartOfSessionOnBattery" units="%"
     expires_after="2021-03-15">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     Chrome OS remaining battery charge as percent of the maximum battery charge,
     sampled at the start of a user session when the device is on battery.
@@ -195,7 +195,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.BatteryRemainingWhenChargeStarts" units="%"
     expires_after="2021-10-10">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     Chrome OS remaining battery charge as percent of the maximum battery charge,
     sampled when charging starts.
@@ -204,9 +204,9 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.BatterySamplingDelay" units="microseconds"
     expires_after="2021-07-18">
-  <owner>etiennep@chromium.org</owner>
-  <owner>sebmarchand@chromium.org</owner>
-  <owner>fdoray@chromium.org</owner>
+  <owner>etiennep@monyhar.org</owner>
+  <owner>sebmarchand@monyhar.org</owner>
+  <owner>fdoray@monyhar.org</owner>
   <summary>
     The delay in microseconds between the time a battery charge level query was
     schedule and the time the state is made available, reported everytime the
@@ -215,7 +215,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 </histogram>
 
 <histogram name="Power.BitfixChunks" units="units" expires_after="M77">
-  <owner>dianders@chromium.org</owner>
+  <owner>dianders@monyhar.org</owner>
   <summary>
     Chrome OS (Snow RO firmware 2695.90.0 only) number of 8K chunks that were
     fixed (memory corruption corrected) for each suspend/resume cycle. Expect 0
@@ -224,7 +224,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 </histogram>
 
 <histogram name="Power.BitfixFixes" units="units" expires_after="M77">
-  <owner>dianders@chromium.org</owner>
+  <owner>dianders@monyhar.org</owner>
   <summary>
     Chrome OS (Snow RO firmware 2695.90.0 only) number of 4-byte words that were
     fixed (memory corruption corrected) for each suspend/resume cycle. Expect 0
@@ -236,8 +236,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.ConnectedChargingPorts"
     enum="PowerConnectedChargingPorts" expires_after="2021-10-25">
-  <owner>bleung@chromium.org</owner>
-  <owner>tbroch@chromium.org</owner>
+  <owner>bleung@monyhar.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     Connected charging ports on Chrome OS. A sample is reported every time that
     the power manager polls sysfs (typically every 30 seconds). Ordinals are
@@ -252,8 +252,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.CpuAffinityExperiments.ProcessAffinityMode"
     enum="CpuAffinityMode" expires_after="2021-10-04">
-  <owner>eseckler@chromium.org</owner>
-  <owner>skyostil@chromium.org</owner>
+  <owner>eseckler@monyhar.org</owner>
+  <owner>skyostil@monyhar.org</owner>
   <summary>
     For clients enrolled in CPU affinity restriction experiments (e.g.
     restricting execution to little cores only), records the new CPU affinity
@@ -263,8 +263,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.CpuAffinityExperiments.ProcessAffinityUpdateSuccess"
     enum="BooleanSuccess" expires_after="2021-10-04">
-  <owner>eseckler@chromium.org</owner>
-  <owner>skyostil@chromium.org</owner>
+  <owner>eseckler@monyhar.org</owner>
+  <owner>skyostil@monyhar.org</owner>
   <summary>
     For clients enrolled in CPU affinity restriction experiments (e.g.
     restricting execution to little cores only), records whether the CPU
@@ -274,8 +274,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.CpuTimeSecondsPerCoreTypeAndFrequency" units="50 MHz"
     expires_after="2021-10-31">
-  <owner>eseckler@chromium.org</owner>
-  <owner>skyostil@chromium.org</owner>
+  <owner>eseckler@monyhar.org</owner>
+  <owner>skyostil@monyhar.org</owner>
   <summary>
     Total seconds of CPU time consumed by Chrome, split by process type as well
     as core type and core frequency. Currently only implemented on Android. For
@@ -293,8 +293,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.CpuTimeSecondsPerPowerMode.{ProcessType}"
     enum="PowerMode" expires_after="2021-12-31">
-  <owner>eseckler@chromium.org</owner>
-  <owner>skyostil@chromium.org</owner>
+  <owner>eseckler@monyhar.org</owner>
+  <owner>skyostil@monyhar.org</owner>
   <summary>
     Total seconds of CPU time consumed by Chrome's {ProcessType} process, split
     by power mode. Currently only implemented on Android. For every second of
@@ -317,8 +317,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.CpuTimeSecondsPerProcessType" enum="ProcessType2"
     expires_after="2021-11-28">
-  <owner>eseckler@chromium.org</owner>
-  <owner>skyostil@chromium.org</owner>
+  <owner>eseckler@monyhar.org</owner>
+  <owner>skyostil@monyhar.org</owner>
   <summary>
     Total seconds of CPU time consumed by Chrome, split by process type.
     Currently only implemented on Android. For every second of CPU time consumed
@@ -334,8 +334,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.CpuTimeSecondsPerProcessType.{Visibility}"
     enum="ProcessType2" expires_after="2021-07-18">
-  <owner>eseckler@chromium.org</owner>
-  <owner>skyostil@chromium.org</owner>
+  <owner>eseckler@monyhar.org</owner>
+  <owner>skyostil@monyhar.org</owner>
   <summary>
     Total seconds of CPU time consumed by Chrome/WebView in the {Visibility}
     state, split by process type. Currently only implemented on Android. For
@@ -357,8 +357,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.CpuTimeSecondsPerThreadType.{ProcessType}"
     enum="CpuTimeMetricsThreadType" expires_after="2021-10-10">
-  <owner>eseckler@chromium.org</owner>
-  <owner>skyostil@chromium.org</owner>
+  <owner>eseckler@monyhar.org</owner>
+  <owner>skyostil@monyhar.org</owner>
   <summary>
     Total seconds of CPU time consumed by Chrome's {ProcessType} process, split
     by thread type. Currently only implemented on Android. For every second of
@@ -382,9 +382,9 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 </histogram>
 
 <histogram name="Power.DarkResumeWakeDurationMs" units="ms" expires_after="M85">
-  <owner>chirantan@chromium.org</owner>
-  <owner>abhishekbh@chromium.org</owner>
-  <owner>ravisadineni@chromium.org</owner>
+  <owner>chirantan@monyhar.org</owner>
+  <owner>abhishekbh@monyhar.org</owner>
+  <owner>ravisadineni@monyhar.org</owner>
   <summary>
     The amount of time a system spent awake every time it woke up in dark
     resume.
@@ -393,9 +393,9 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.DarkResumeWakeDurationMs.Other" units="ms"
     expires_after="2020-08-02">
-  <owner>chirantan@chromium.org</owner>
-  <owner>abhishekbh@chromium.org</owner>
-  <owner>ravisadineni@chromium.org</owner>
+  <owner>chirantan@monyhar.org</owner>
+  <owner>abhishekbh@monyhar.org</owner>
+  <owner>ravisadineni@monyhar.org</owner>
   <summary>
     The amount of time a system spent awake every time it woke up in dark resume
     triggered by an unknown or unsupported wake trigger.
@@ -404,9 +404,9 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.DarkResumeWakeDurationMs.WiFi.Disconnect" units="ms"
     expires_after="M85">
-  <owner>chirantan@chromium.org</owner>
-  <owner>abhishekbh@chromium.org</owner>
-  <owner>ravisadineni@chromium.org</owner>
+  <owner>chirantan@monyhar.org</owner>
+  <owner>abhishekbh@monyhar.org</owner>
+  <owner>ravisadineni@monyhar.org</owner>
   <summary>
     The amount of time a system spent awake every time it woke up in dark resume
     triggered by a WiFi disconnect.
@@ -415,9 +415,9 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.DarkResumeWakeDurationMs.WiFi.Pattern" units="ms"
     expires_after="M85">
-  <owner>chirantan@chromium.org</owner>
-  <owner>abhishekbh@chromium.org</owner>
-  <owner>ravisadineni@chromium.org</owner>
+  <owner>chirantan@monyhar.org</owner>
+  <owner>abhishekbh@monyhar.org</owner>
+  <owner>ravisadineni@monyhar.org</owner>
   <summary>
     The amount of time a system spent awake every time it woke up in dark resume
     triggered by a WiFi packet pattern match.
@@ -426,9 +426,9 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.DarkResumeWakeDurationMs.WiFi.SSID" units="ms"
     expires_after="M85">
-  <owner>chirantan@chromium.org</owner>
-  <owner>abhishekbh@chromium.org</owner>
-  <owner>ravisadineni@chromium.org</owner>
+  <owner>chirantan@monyhar.org</owner>
+  <owner>abhishekbh@monyhar.org</owner>
+  <owner>ravisadineni@monyhar.org</owner>
   <summary>
     The amount of time a system spent awake every time it woke up in dark resume
     triggered by a net detect SSID match.
@@ -437,7 +437,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.DarkResumeWakeupsPerHour" units="units"
     expires_after="2020-08-02">
-  <owner>chirantan@chromium.org</owner>
+  <owner>chirantan@monyhar.org</owner>
   <summary>
     The number of times a system woke up in dark resume in an hour. Note that
     this value is scaled up or down to an hour based on the amount of time the
@@ -448,7 +448,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.ExternalBrightnessReadResult"
     enum="ExternalDisplayReceiveResult" expires_after="M100">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The result of attempting to read an external display's brightness on Chrome
     OS. A read attempt is made after successfully requesting the brightness (see
@@ -458,7 +458,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.ExternalBrightnessRequestResult"
     enum="ExternalDisplaySendResult" expires_after="M100">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The result of requesting an external display's brightness on Chrome OS. A
     request is sent when the user presses a brightness key and the current
@@ -469,7 +469,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.ExternalBrightnessWriteResult"
     enum="ExternalDisplaySendResult" expires_after="M100">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The result of attempting to change an external display's brightness on
     Chrome OS. A request is sent when the user presses a brightness key and the
@@ -479,7 +479,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.ExternalDisplayOpenResult"
     enum="ExternalDisplayOpenResult" expires_after="2021-08-01">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The result of attempting to open an I2C device to control an external
     display's brightness on Chrome OS. An attempt is made when a display is
@@ -489,7 +489,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.FirmwareResumeTimeOnAC" units="ms"
     expires_after="2021-10-31">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The time that the firmware took to resume the Chrome OS device from
     suspend-to-RAM state when running on AC at pre-suspend time.
@@ -498,7 +498,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.FirmwareResumeTimeOnBattery" units="ms"
     expires_after="2021-08-29">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The time that the firmware took to resume the Chrome OS device from
     suspend-to-RAM state when running on battery at pre-suspend time.
@@ -507,8 +507,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.ForegroundBatteryDrain" units="0.1 mAh"
     expires_after="2021-11-07">
-  <owner>eseckler@chromium.org</owner>
-  <owner>skyostil@chromium.org</owner>
+  <owner>eseckler@monyhar.org</owner>
+  <owner>skyostil@monyhar.org</owner>
   <summary>
     Records a sample for every 0.1 milliampere-hours of battery capacity that
     are drained while Chrome is the foreground app and the device is on battery
@@ -522,8 +522,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.ForegroundBatteryDrain.30Seconds" units="uAh"
     expires_after="2021-11-07">
-  <owner>eseckler@chromium.org</owner>
-  <owner>skyostil@chromium.org</owner>
+  <owner>eseckler@monyhar.org</owner>
+  <owner>skyostil@monyhar.org</owner>
   <summary>
     Periodically samples the battery capacity drained while Chrome is the
     foreground app and the device is on battery power. Sampled every 30 seconds
@@ -541,8 +541,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.ForegroundBatteryDrain.30Seconds.Exclusive" units="uAh"
     expires_after="2021-11-07">
-  <owner>eseckler@chromium.org</owner>
-  <owner>skyostil@chromium.org</owner>
+  <owner>eseckler@monyhar.org</owner>
+  <owner>skyostil@monyhar.org</owner>
   <summary>
     Periodically samples the battery capacity drained while Chrome is the
     foreground app and the device is on battery power. Sampled every 30 seconds
@@ -562,8 +562,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 <histogram
     name="Power.ForegroundBatteryDrain.30SecondsAvg{Exclusive}{DarkeningType}"
     units="uAh" expires_after="2021-11-07">
-  <owner>eseckler@chromium.org</owner>
-  <owner>skyostil@chromium.org</owner>
+  <owner>eseckler@monyhar.org</owner>
+  <owner>skyostil@monyhar.org</owner>
   <summary>
     Periodically samples the battery capacity drained while Chrome is the
     foreground app and the device is on battery power {DarkeningType}. Sampled
@@ -603,8 +603,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.ForegroundBatteryDrain.Exclusive" units="0.1 mAh"
     expires_after="2021-11-07">
-  <owner>eseckler@chromium.org</owner>
-  <owner>skyostil@chromium.org</owner>
+  <owner>eseckler@monyhar.org</owner>
+  <owner>skyostil@monyhar.org</owner>
   <summary>
     Records a sample for every 0.1 milliampere-hours of battery capacity that
     are drained while Chrome is the foreground app and the device is on battery
@@ -619,8 +619,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.ForegroundBatteryDrain.TimeBetweenEvents" units="ms"
     expires_after="2021-07-03">
-  <owner>eseckler@chromium.org</owner>
-  <owner>skyostil@chromium.org</owner>
+  <owner>eseckler@monyhar.org</owner>
+  <owner>skyostil@monyhar.org</owner>
   <summary>
     A companion metric for Power.ForegroundBatteryDrain.30SecondsAvg which
     reports the time interval between successive capacity drops reported by the
@@ -632,9 +632,9 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.ForegroundRadio.SignalLevel.{NetworkType}"
     enum="RadioSignalLevel" expires_after="2022-07-03">
-  <owner>eseckler@chromium.org</owner>
+  <owner>eseckler@monyhar.org</owner>
   <owner>khokhlov@google.com</owner>
-  <owner>skyostil@chromium.org</owner>
+  <owner>skyostil@monyhar.org</owner>
   <summary>
     Periodically samples the radio (cellular/wifi) signal strength level while
     Chrome is the foreground app and the device is on battery power. Sampled
@@ -651,9 +651,9 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.ForegroundRadio.Wakeups.Cell.30Seconds"
     enum="RadioSignalLevel" expires_after="2022-07-03">
-  <owner>eseckler@chromium.org</owner>
+  <owner>eseckler@monyhar.org</owner>
   <owner>khokhlov@google.com</owner>
-  <owner>skyostil@chromium.org</owner>
+  <owner>skyostil@monyhar.org</owner>
   <summary>
     Counts the number of radio wakeups while Chrome is the foreground app, the
     device is on battery power and connection type is cellular. Values are
@@ -669,9 +669,9 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.ForegroundRadio.{Direction}KiB.{NetworkType}.30Seconds"
     enum="RadioSignalLevel" expires_after="2022-07-03">
-  <owner>eseckler@chromium.org</owner>
+  <owner>eseckler@monyhar.org</owner>
   <owner>khokhlov@google.com</owner>
-  <owner>skyostil@chromium.org</owner>
+  <owner>skyostil@monyhar.org</owner>
   <summary>
     Periodically samples the number of kibibytes received over network while
     Chrome is the foreground app and the device is on battery power. Sampled
@@ -696,8 +696,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.IdleScreenDimCountDaily" units="count"
     expires_after="M100">
-  <owner>tbroch@chromium.org</owner>
-  <owner>napper@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
+  <owner>napper@monyhar.org</owner>
   <summary>
     Number of times that that the screen has been dimmed in response to user
     inactivity, reported daily. The count is accumulated through the day,
@@ -711,8 +711,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.IdleScreenOffCountDaily" units="count"
     expires_after="M100">
-  <owner>tbroch@chromium.org</owner>
-  <owner>napper@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
+  <owner>napper@monyhar.org</owner>
   <summary>
     Number of times that that the screen has been turned off in response to user
     inactivity, reported daily. The count is accumulated through the day,
@@ -726,8 +726,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.IdleSuspendCountDaily" units="count"
     expires_after="2021-10-10">
-  <owner>tbroch@chromium.org</owner>
-  <owner>napper@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
+  <owner>napper@monyhar.org</owner>
   <summary>
     Number of times that that the system has suspended in response to user
     inactivity, reported daily. The count is accumulated through the day,
@@ -740,8 +740,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 </histogram>
 
 <histogram name="Power.IdleTimeAfterDimOnAC" units="ms" expires_after="M100">
-  <owner>tbroch@chromium.org</owner>
-  <owner>napper@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
+  <owner>napper@monyhar.org</owner>
   <summary>
     Chrome OS user idle time since the screen dimmed sampled when the user
     becomes active again if the device runs on AC.
@@ -750,8 +750,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.IdleTimeAfterDimOnBattery" units="ms"
     expires_after="M100">
-  <owner>tbroch@chromium.org</owner>
-  <owner>napper@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
+  <owner>napper@monyhar.org</owner>
   <summary>
     Chrome OS user idle time since the screen dimmed sampled when the user
     becomes active again if the device runs on battery.
@@ -760,8 +760,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.IdleTimeAfterScreenOffOnAC" units="ms"
     expires_after="M100">
-  <owner>tbroch@chromium.org</owner>
-  <owner>napper@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
+  <owner>napper@monyhar.org</owner>
   <summary>
     Chrome OS user idle time since the screen turned off sampled when the user
     becomes active again if the device runs on AC.
@@ -770,8 +770,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.IdleTimeAfterScreenOffOnBattery" units="ms"
     expires_after="M100">
-  <owner>tbroch@chromium.org</owner>
-  <owner>napper@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
+  <owner>napper@monyhar.org</owner>
   <summary>
     Chrome OS user idle time since the screen turned off sampled when the user
     becomes active again if the device runs on battery.
@@ -779,8 +779,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 </histogram>
 
 <histogram name="Power.IdleTimeOnAC" units="ms" expires_after="M100">
-  <owner>tbroch@chromium.org</owner>
-  <owner>napper@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
+  <owner>napper@monyhar.org</owner>
   <summary>
     Chrome OS user idle time sampled when the user becomes active again if the
     device runs on AC.
@@ -788,8 +788,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 </histogram>
 
 <histogram name="Power.IdleTimeOnBattery" units="ms" expires_after="2021-10-17">
-  <owner>tbroch@chromium.org</owner>
-  <owner>napper@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
+  <owner>napper@monyhar.org</owner>
   <summary>
     Chrome OS user idle time sampled when the user becomes active again if the
     device runs on battery.
@@ -798,7 +798,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.KernelResumeTimeOnAC" units="ms"
     expires_after="2021-10-17">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The time that the kernel took to resume the Chrome OS device from
     suspend-to-RAM state when running on AC at pre-suspend time.
@@ -807,7 +807,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.KernelResumeTimeOnBattery" units="ms"
     expires_after="M85">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The time that the kernel took to resume the Chrome OS device from
     suspend-to-RAM state when running on battery at pre-suspend time.
@@ -816,7 +816,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.KernelSuspendTimeOnAC" units="ms"
     expires_after="2020-01-26">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The time that the kernel took to suspend-to-RAM the Chrome OS device when
     running on AC.
@@ -825,7 +825,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.KernelSuspendTimeOnBattery" units="ms"
     expires_after="2021-10-25">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The time that the kernel took to suspend-to-RAM the Chrome OS device when
     running on battery.
@@ -834,7 +834,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.KeyboardBacklightLevel" units="%"
     expires_after="2020-06-21">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The level of the keyboard backlight as a percentage. Sampled every 30
     seconds.
@@ -843,7 +843,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.LengthOfSession" units="seconds"
     expires_after="2021-10-17">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The length of time, in seconds, that a user spent in a single session.
     Values for this metric are clamped to 12 hours, so the last bucket should be
@@ -853,7 +853,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.LidClosedSuspendCountDaily" units="count"
     expires_after="2021-10-10">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     Number of times that that the system has suspended in response to its lid
     being closed, reported daily. The count is accumulated through the day,
@@ -866,8 +866,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 </histogram>
 
 <histogram base="true" name="Power.Mac" units="mW" expires_after="2021-07-03">
-  <owner>lgrey@chromium.org</owner>
-  <owner>markchang@chromium.org</owner>
+  <owner>lgrey@monyhar.org</owner>
+  <owner>markchang@monyhar.org</owner>
   <summary>
     Instantaneous power consution in milliwatts, for the system as a whole and
     broken down by component. Only recorded on macOS. NB: The collection method
@@ -877,7 +877,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.Mac.AppleSMCOpened" enum="BooleanSuccess"
     expires_after="2021-10-24">
-  <owner>lgrey@chromium.org</owner>
+  <owner>lgrey@monyhar.org</owner>
   <summary>
     When metrics collection started, records true if a handle to the System
     Management Controller (SMC) was successfully opened to monitor power
@@ -892,8 +892,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
   <obsolete>
     Replaced with cross-platform Power.BatteryDischargeRate2 03/2021.
   </obsolete>
-  <owner>olivierli@chromium.org</owner>
-  <owner>lgrey@chromium.org</owner>
+  <owner>olivierli@monyhar.org</owner>
+  <owner>lgrey@monyhar.org</owner>
   <summary>
     Every minute after startup a measure of the remaining and maximum battery
     capacity is taken. Then a ratio of the remaining capacity over the maximum
@@ -910,7 +910,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
   <obsolete>
     Replaced with Power.Mac.IsOnBattery2 09/2020 as it was broken.
   </obsolete>
-  <owner>lgrey@chromium.org</owner>
+  <owner>lgrey@monyhar.org</owner>
   <summary>
     Whether the user's machine is on battery power. Sampled once per minute.
     Warning: This incorrectly logs desktop Macs as being on battery power.
@@ -920,8 +920,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.Mac.IsOnBattery2" enum="BooleanOnBattery"
     expires_after="2021-10-31">
-  <owner>avi@chromium.org</owner>
-  <owner>lgrey@chromium.org</owner>
+  <owner>avi@monyhar.org</owner>
+  <owner>lgrey@monyhar.org</owner>
   <summary>
     Whether the user's machine is on battery power. Sampled once per minute.
     Unlike Power.Mac.IsOnBattery, this correctly logs desktop Macs as not being
@@ -931,8 +931,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.Mac.ThermalState" enum="MacThermalState"
     expires_after="2022-05-13">
-  <owner>lgrey@chromium.org</owner>
-  <owner>olivierli@chromium.org</owner>
+  <owner>lgrey@monyhar.org</owner>
+  <owner>olivierli@monyhar.org</owner>
   <summary>
     Thermal state of the user's machine as reported by macOS's [NSProcessInfo
     thermalState]. Sampled once per minute.
@@ -941,7 +941,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.MetricsDailyEventInterval" enum="DailyEventIntervalType"
     expires_after="M100">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     Reasons why power-management-related daily metrics were reported. Chrome OS
     only.
@@ -950,8 +950,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.NumberOfAlsAdjustmentsPerSession" units="units"
     expires_after="M100">
-  <owner>tbroch@chromium.org</owner>
-  <owner>napper@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
+  <owner>napper@monyhar.org</owner>
   <summary>
     The number of times that the Automatic Light Sensor (ALS) adjusted the
     brightness during a session. Values for this metric are clamped to 10k
@@ -962,7 +962,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.NumberOfSessionsPerCharge" units="units"
     expires_after="2021-10-04">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The number of user sessions that occured since the last time that the device
     was charged. Values for this metric are clamped at 10k, so the last bucket
@@ -972,7 +972,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.PowerButtonAcknowledgmentDelay" units="ms"
     expires_after="M100">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The amount of time between the user pressing the power button and Chrome
     acknowledging the button-down event on Chrome OS. Values for this metric are
@@ -981,7 +981,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 </histogram>
 
 <histogram name="Power.PowerButtonDownTime" units="ms" expires_after="M100">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The amount of time between the user pressing the power button and releasing
     it on Chrome OS.
@@ -990,15 +990,15 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.PowerButtonMenuAction" enum="PowerButtonMenuActionType"
     expires_after="2021-12-05">
-  <owner>minch@chromium.org</owner>
-  <owner>xdai@chromium.org</owner>
+  <owner>minch@monyhar.org</owner>
+  <owner>xdai@monyhar.org</owner>
   <summary>Actions performed while the power button menu is open.</summary>
 </histogram>
 
 <histogram name="Power.PowerButtonPressInLaptopMode"
     enum="PowerButtonPressType" expires_after="2021-10-25">
-  <owner>minch@chromium.org</owner>
-  <owner>xdai@chromium.org</owner>
+  <owner>minch@monyhar.org</owner>
+  <owner>xdai@monyhar.org</owner>
   <summary>
     Press power button in laptop mode will result in different scenarios
     according to the power button up state. Counts the different power button
@@ -1008,8 +1008,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.PowerButtonPressInTabletMode"
     enum="PowerButtonPressType" expires_after="2021-10-10">
-  <owner>minch@chromium.org</owner>
-  <owner>xdai@chromium.org</owner>
+  <owner>minch@monyhar.org</owner>
+  <owner>xdai@monyhar.org</owner>
   <summary>
     Press power button in tablet mode will result in different scenarios
     according to the power button up state. Counts the different power button
@@ -1019,8 +1019,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.PowerScheduler.ProcessPowerModeChange.{ProcessType}"
     enum="PowerMode" expires_after="2021-10-04">
-  <owner>eseckler@chromium.org</owner>
-  <owner>skyostil@chromium.org</owner>
+  <owner>eseckler@monyhar.org</owner>
+  <owner>skyostil@monyhar.org</owner>
   <summary>
     Records the new value of the {ProcessType} process power mode every time a
     change is detected (happens on the order of once per second).
@@ -1035,8 +1035,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.PowerScheduler.ThrottlingDuration" units="ms"
     expires_after="2021-10-29">
-  <owner>eseckler@chromium.org</owner>
-  <owner>skyostil@chromium.org</owner>
+  <owner>eseckler@monyhar.org</owner>
+  <owner>skyostil@monyhar.org</owner>
   <summary>
     Duration during which CPU throttling was active. Only recorded when a CPU
     throttling policy is active (e.g. throttle while idle). A sample is recorded
@@ -1046,8 +1046,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.PowerScheduler.ThrottlingDurationPerCpuAffinityMode"
     enum="CpuAffinityMode" expires_after="2021-10-29">
-  <owner>eseckler@chromium.org</owner>
-  <owner>skyostil@chromium.org</owner>
+  <owner>eseckler@monyhar.org</owner>
+  <owner>skyostil@monyhar.org</owner>
   <summary>
     Duration in milliseconds during which CPU throttling was active, split by
     the CPU affinity for that duration. Only recorded when a CPU throttling
@@ -1059,8 +1059,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.PowerSupplyMaxPower" units="W"
     expires_after="2021-10-31">
-  <owner>bleung@chromium.org</owner>
-  <owner>tbroch@chromium.org</owner>
+  <owner>bleung@monyhar.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The maximum power supported by the connected power supply on Chrome OS. A
     sample is reported every time that the power manager polls sysfs (typically
@@ -1069,8 +1069,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 </histogram>
 
 <histogram name="Power.PowerSupplyMaxVoltage" units="V" expires_after="M100">
-  <owner>bleung@chromium.org</owner>
-  <owner>tbroch@chromium.org</owner>
+  <owner>bleung@monyhar.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The maximum voltage supported by the connected power supply on Chrome OS. A
     sample is reported every time that the power manager polls sysfs (typically
@@ -1080,8 +1080,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.PowerSupplyType" enum="PowerSupplyType"
     expires_after="2021-10-31">
-  <owner>bleung@chromium.org</owner>
-  <owner>tbroch@chromium.org</owner>
+  <owner>bleung@monyhar.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The type of the connected power supply on Chrome OS. A sample is reported
     every time that the power manager polls sysfs (typically every 30 seconds)
@@ -1091,7 +1091,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.ShutdownReason" enum="ShutdownReason"
     expires_after="M85">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The reason for the Chrome OS power manager shutting down or rebooting the
     system.
@@ -1100,14 +1100,14 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.SmartCharging.Messages" enum="SmartChargingMessages"
     expires_after="2021-11-15">
-  <owner>thanhdng@chromium.org</owner>
-  <owner>napper@chromium.org</owner>
+  <owner>thanhdng@monyhar.org</owner>
+  <owner>napper@monyhar.org</owner>
   <summary>Type of messages that are reported by smart charging.</summary>
 </histogram>
 
 <histogram name="Power.SuspendAttempt" enum="SuspendAttempt"
     expires_after="2021-10-10">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The number of suspend attempts on Chrome OS. Samples are reported before
     each attempt, so this histogram may include cases where the system crashed
@@ -1117,7 +1117,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.SuspendAttemptsBeforeCancel" units="units"
     expires_after="2021-10-10">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The number of suspend attempts performed for a single suspend request (e.g.
     triggered by the lid being closed) that was eventually canceled on Chrome
@@ -1128,7 +1128,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.SuspendAttemptsBeforeSuccess" units="units"
     expires_after="2021-10-10">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The number of suspend attempts performed for a single suspend request (e.g.
     triggered by the lid being closed) that eventually succeeded on Chrome OS.
@@ -1138,7 +1138,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.SuspendResult" enum="SuspendResult"
     expires_after="2021-10-10">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     The results of suspend attempts on Chrome OS. Samples are reported after
     each attempt.
@@ -1147,7 +1147,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.TimeInSuspendAtBoot" units="minutes"
     expires_after="2021-03-15">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     Chrome OS time in minutes spent in suspend-to-RAM mode sampled at boot
     (i.e., the device most likely ran out of battery while in suspend).
@@ -1156,7 +1156,7 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.TimeInSuspendAtResume" units="minutes"
     expires_after="2021-04-04">
-  <owner>tbroch@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
   <summary>
     Chrome OS time in minutes spent in suspend-to-RAM mode sampled at resume.
   </summary>
@@ -1164,8 +1164,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.UserBrightnessAdjustmentsPerSessionOnAC" units="units"
     expires_after="M100">
-  <owner>tbroch@chromium.org</owner>
-  <owner>napper@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
+  <owner>napper@monyhar.org</owner>
   <summary>
     The number of times that the user adjusted the brightness during a session
     when on AC. Values for this metric are clamped to 10k count, so the last
@@ -1175,8 +1175,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="Power.UserBrightnessAdjustmentsPerSessionOnBattery"
     units="units" expires_after="2021-10-25">
-  <owner>tbroch@chromium.org</owner>
-  <owner>napper@chromium.org</owner>
+  <owner>tbroch@monyhar.org</owner>
+  <owner>napper@monyhar.org</owner>
   <summary>
     The number of times that the user adjusted the brightness during a session
     when on battery. Values for this metric are clamped to 10k count, so the
@@ -1186,8 +1186,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="PowerML.DimImminent.Action" enum="PowerMLDimImminentAction"
     expires_after="2021-10-24">
-  <owner>napper@chromium.org</owner>
-  <owner>thanhdng@chromium.org</owner>
+  <owner>napper@monyhar.org</owner>
+  <owner>thanhdng@monyhar.org</owner>
   <summary>
     What happens when UserActivityManager receives a screen dim imminent
     notification. Only applicable to Chrome OS.
@@ -1196,8 +1196,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="PowerML.ModelDim.Result" enum="PowerMLFinalResult"
     expires_after="2021-10-24">
-  <owner>napper@chromium.org</owner>
-  <owner>thanhdng@chromium.org</owner>
+  <owner>napper@monyhar.org</owner>
+  <owner>thanhdng@monyhar.org</owner>
   <summary>
     What happens after screen is dimmed following model instruction. Only
     applicable to Chrome OS.
@@ -1206,8 +1206,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="PowerML.ModelNoDim.Result" enum="PowerMLFinalResult"
     expires_after="2021-10-25">
-  <owner>napper@chromium.org</owner>
-  <owner>thanhdng@chromium.org</owner>
+  <owner>napper@monyhar.org</owner>
+  <owner>thanhdng@monyhar.org</owner>
   <summary>
     What happens after screen dim is deferred following model instruction. Only
     applicable to Chrome OS.
@@ -1216,8 +1216,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="PowerML.NonModelDim.Result" enum="PowerMLFinalResult"
     expires_after="2021-11-21">
-  <owner>napper@chromium.org</owner>
-  <owner>thanhdng@chromium.org</owner>
+  <owner>napper@monyhar.org</owner>
+  <owner>thanhdng@monyhar.org</owner>
   <summary>
     What happens after screen is dimmed by powerd by ignoring the model
     instruction. Only applicable to Chrome OS.
@@ -1226,8 +1226,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="PowerML.PreviousEventLogging.Result"
     enum="PowerMLPreviousEventLoggingResult" expires_after="2020-12-13">
-  <owner>napper@chromium.org</owner>
-  <owner>thanhdng@chromium.org</owner>
+  <owner>napper@monyhar.org</owner>
+  <owner>thanhdng@monyhar.org</owner>
   <summary>
     Status of logging previous idle event after a screen dim imminent signal is
     received. Only applicable to Chrome OS.
@@ -1237,9 +1237,9 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 <histogram name="PowerML.SmartDimComponent.LoadComponentEvent"
     enum="PowerMLSmartDimComponentLoadComponentEvent"
     expires_after="2021-10-10">
-  <owner>alanlxl@chromium.org</owner>
-  <owner>amoylan@chromium.org</owner>
-  <owner>napper@chromium.org</owner>
+  <owner>alanlxl@monyhar.org</owner>
+  <owner>amoylan@monyhar.org</owner>
+  <owner>napper@monyhar.org</owner>
   <summary>
     Records the event (various failures or success) of loading smart dim
     component. Only applicable to Chrome OS.
@@ -1248,9 +1248,9 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="PowerML.SmartDimComponent.VersionType"
     enum="PowerMLSmartDimComponentVersionType" expires_after="2021-10-10">
-  <owner>alanlxl@chromium.org</owner>
-  <owner>amoylan@chromium.org</owner>
-  <owner>napper@chromium.org</owner>
+  <owner>alanlxl@monyhar.org</owner>
+  <owner>amoylan@monyhar.org</owner>
+  <owner>napper@monyhar.org</owner>
   <summary>
     Records the type of expected version (default, experimental or empty) used
     by smart dim component installer. Only applicable to Chrome OS.
@@ -1259,9 +1259,9 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="PowerML.SmartDimComponent.WorkerType"
     enum="PowerMLSmartDimComponentWorkerType" expires_after="2021-10-10">
-  <owner>alanlxl@chromium.org</owner>
-  <owner>amoylan@chromium.org</owner>
-  <owner>napper@chromium.org</owner>
+  <owner>alanlxl@monyhar.org</owner>
+  <owner>amoylan@monyhar.org</owner>
+  <owner>napper@monyhar.org</owner>
   <summary>
     Records the worker type that is used by smart dim ml agent to make a
     decision. Only applicable to Chrome OS.
@@ -1270,10 +1270,10 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="PowerML.SmartDimModel.RequestCanceledDuration" units="ms"
     expires_after="2021-10-24">
-  <owner>amoylan@chromium.org</owner>
-  <owner>napper@chromium.org</owner>
-  <owner>napper@chromium.org</owner>
-  <owner>pmalani@chromium.org</owner>
+  <owner>amoylan@monyhar.org</owner>
+  <owner>napper@monyhar.org</owner>
+  <owner>napper@monyhar.org</owner>
+  <owner>pmalani@monyhar.org</owner>
   <summary>
     The time elapsed between a Smart Dim Inference Request being sent to the ML
     model, and the request being canceled before the result is returned.
@@ -1282,10 +1282,10 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="PowerML.SmartDimModel.RequestCompleteDuration" units="ms"
     expires_after="2021-10-24">
-  <owner>amoylan@chromium.org</owner>
-  <owner>napper@chromium.org</owner>
-  <owner>napper@chromium.org</owner>
-  <owner>pmalani@chromium.org</owner>
+  <owner>amoylan@monyhar.org</owner>
+  <owner>napper@monyhar.org</owner>
+  <owner>napper@monyhar.org</owner>
+  <owner>pmalani@monyhar.org</owner>
   <summary>
     The time elapsed between a Smart Dim Inference Request being sent to the ML
     model and a result being returned.
@@ -1294,8 +1294,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="PowerML.SmartDimModel.Result"
     enum="PowerMLSmartDimModelResult" expires_after="2021-10-17">
-  <owner>napper@chromium.org</owner>
-  <owner>thanhdng@chromium.org</owner>
+  <owner>napper@monyhar.org</owner>
+  <owner>thanhdng@monyhar.org</owner>
   <summary>
     This is the status code returned by the model when calculating a user
     inactivity score. If it is any value other than 0 (success), then some issue
@@ -1307,8 +1307,8 @@ Also used in tools/metrics/histograms/histograms_xml/others/histograms.xml
 
 <histogram name="PowerML.SmartDimParameter.Result"
     enum="PowerMLSmartDimParameterResult" expires_after="2021-10-24">
-  <owner>napper@chromium.org</owner>
-  <owner>thanhdng@chromium.org</owner>
+  <owner>napper@monyhar.org</owner>
+  <owner>thanhdng@monyhar.org</owner>
   <summary>
     The result of parsing the dim threshold parameter value. Only applicable to
     Chrome OS.

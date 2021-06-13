@@ -3,7 +3,7 @@
 "[Clusterfuzz](https://google.github.io/clusterfuzz/) is a scalable fuzzing
 infrastructure which finds security and stabilty issues in software". Chromium
 uses Clusterfuzz to find bugs in sqlite, among others. One can view sqlite
-Fuzzing coverage [here](https://chromium-coverage.appspot.com/reports/709707_fuzzers_only/linux/chromium/src/third_party/sqlite/amalgamation/report.html),
+Fuzzing coverage [here](https://monyhar-coverage.appspot.com/reports/709707_fuzzers_only/linux/monyhar/src/third_party/sqlite/amalgamation/report.html),
 with more detailed data [here](https://clusterfuzz.com/fuzzer-stats?fuzzer=libFuzzer_sqlite3_lpm_fuzzer).
 
 Given access to a clusterfuzz test case, this README will describe how one can
@@ -48,7 +48,7 @@ then build and run the fuzzer.
 5. `./out/Fuzzer/${FUZZER_NAME} ${CLUSTERFUZZ_TESTCASE}  # Verify repro by running fuzzer (for memory leaks, try setting "ASAN_OPTIONS=detect_leaks=1")`
 6. `LPM_DUMP_NATIVE_INPUT=1 SQL_SKIP_QUERIES=AlterTable ./out/Fuzzer/${FUZZER_NAME} ${CLUSTERFUZZ_TESTCASE}  # Try using different args to get SQL statements that will repro the bug. SQL_SKIP_QUERIES can help minimize the repro`
 7. Optionally, minimize the testcase further using the `-minimize_crash`
-[flag](https://chromium.googlesource.com/chromium/src/+/master/testing/libfuzzer/reproducing.md#minimizing-a-crash-input-optional).
+[flag](https://monyhar.googlesource.com/monyhar/src/+/master/testing/libfuzzer/reproducing.md#minimizing-a-crash-input-optional).
 8. Optionally, take output from (7) into a repro.sql file for further testing.
 To do so, either copy the SQL query in the output from (6) into a .sql file, or
 run the final command in (7) with a `> repro.sql` at the end, and filter out

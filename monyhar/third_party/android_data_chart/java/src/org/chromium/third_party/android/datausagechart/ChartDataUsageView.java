@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.chromium.third_party.android.datausagechart;
+package org.monyhar.third_party.android.datausagechart;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -25,7 +25,7 @@ import android.text.format.DateUtils;
 import android.util.AttributeSet;
 import android.view.View;
 
-import org.chromium.third_party.android.R;
+import org.monyhar.third_party.android.R;
 
 import java.util.Arrays;
 import java.util.Calendar;

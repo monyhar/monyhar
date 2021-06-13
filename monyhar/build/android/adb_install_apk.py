@@ -12,7 +12,7 @@ import logging
 import os
 import sys
 
-import devil_chromium
+import devil_monyhar
 from devil.android import apk_helper
 from devil.android import device_denylist
 from devil.android import device_errors
@@ -73,7 +73,7 @@ def main():
   run_tests_helper.SetLogLevel(args.verbose)
   constants.SetBuildType(args.build_type)
 
-  devil_chromium.Initialize(
+  devil_monyhar.Initialize(
       output_directory=constants.GetOutDirectory(),
       adb_path=args.adb_path)
 

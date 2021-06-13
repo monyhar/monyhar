@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.policy;
+package org.monyhar.android_webview.policy;
 
 import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.components.policy.AppRestrictionsProvider;
+import org.monyhar.components.policy.AppRestrictionsProvider;
 
 /**
  * Does the plumbing between the policies collected via Android's App Restriction system and the

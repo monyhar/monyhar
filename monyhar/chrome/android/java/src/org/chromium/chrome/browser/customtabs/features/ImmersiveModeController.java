@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs.features;
+package org.monyhar.chrome.browser.customtabs.features;
 
 import static android.view.WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_DEFAULT;
 
@@ -19,12 +19,12 @@ import android.view.Window;
 import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
 
-import org.chromium.chrome.browser.dependency_injection.ActivityScope;
-import org.chromium.chrome.browser.display_cutout.ActivityDisplayCutoutModeSupplier;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.lifecycle.DestroyObserver;
-import org.chromium.chrome.browser.lifecycle.WindowFocusChangedObserver;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.chrome.browser.dependency_injection.ActivityScope;
+import org.monyhar.chrome.browser.display_cutout.ActivityDisplayCutoutModeSupplier;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.lifecycle.DestroyObserver;
+import org.monyhar.chrome.browser.lifecycle.WindowFocusChangedObserver;
+import org.monyhar.ui.base.WindowAndroid;
 
 import javax.inject.Inject;
 

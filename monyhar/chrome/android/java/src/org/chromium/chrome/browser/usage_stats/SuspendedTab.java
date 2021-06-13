@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.usage_stats;
+package org.monyhar.chrome.browser.usage_stats;
 
 import android.content.ActivityNotFoundException;
 import android.content.Context;
@@ -16,20 +16,20 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.UserData;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.compositor.layouts.content.TabContentManager;
-import org.chromium.chrome.browser.infobar.InfoBarContainer;
-import org.chromium.chrome.browser.media.MediaCaptureDevicesDispatcherAndroid;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabViewProvider;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.WebContentsAccessibility;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.UserData;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.compositor.layouts.content.TabContentManager;
+import org.monyhar.chrome.browser.infobar.InfoBarContainer;
+import org.monyhar.chrome.browser.media.MediaCaptureDevicesDispatcherAndroid;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabViewProvider;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.WebContentsAccessibility;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Represents the suspension page presented when a user tries to visit a site whose fully-qualified
@@ -37,9 +37,9 @@ import org.chromium.ui.base.WindowAndroid;
  */
 public class SuspendedTab extends EmptyTabObserver implements UserData, TabViewProvider {
     private static final String DIGITAL_WELLBEING_SITE_DETAILS_ACTION =
-            "org.chromium.chrome.browser.usage_stats.action.SHOW_WEBSITE_DETAILS";
+            "org.monyhar.chrome.browser.usage_stats.action.SHOW_WEBSITE_DETAILS";
     private static final String EXTRA_FQDN_NAME =
-            "org.chromium.chrome.browser.usage_stats.extra.FULLY_QUALIFIED_DOMAIN_NAME";
+            "org.monyhar.chrome.browser.usage_stats.extra.FULLY_QUALIFIED_DOMAIN_NAME";
     private static final String TAG = "SuspendedTab";
     private static final Class<SuspendedTab> USER_DATA_KEY = SuspendedTab.class;
 

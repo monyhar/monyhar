@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.qrcode.share_tab;
+package org.monyhar.chrome.browser.share.qrcode.share_tab;
 
 import android.Manifest.permission;
 import android.content.Context;
@@ -17,14 +17,14 @@ import android.text.TextUtils;
 import android.text.TextUtils.TruncateAt;
 import android.view.View;
 
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.download.DownloadController;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
-import org.chromium.chrome.browser.share.BitmapDownloadRequest;
-import org.chromium.chrome.browser.share.qrcode.QRCodeGenerationRequest;
-import org.chromium.ui.base.AndroidPermissionDelegate;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.download.DownloadController;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.chrome.browser.share.BitmapDownloadRequest;
+import org.monyhar.chrome.browser.share.qrcode.QRCodeGenerationRequest;
+import org.monyhar.ui.base.AndroidPermissionDelegate;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * QrCodeShareMediator is in charge of calculating and setting values for QrCodeShareViewProperties.

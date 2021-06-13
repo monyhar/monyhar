@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.resources.dynamics;
+package org.monyhar.ui.resources.dynamics;
 
 import android.graphics.Bitmap;
 
 import androidx.annotation.CallSuper;
 
-import org.chromium.ui.resources.Resource;
-import org.chromium.ui.resources.ResourceLoader.ResourceLoaderCallback;
+import org.monyhar.ui.resources.Resource;
+import org.monyhar.ui.resources.ResourceLoader.ResourceLoaderCallback;
 
 /**
  * A representation of a dynamic resource.  The contents of the resource might change from frame to

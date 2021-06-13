@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
-import static org.chromium.chrome.browser.dependency_injection.ChromeCommonQualifiers.APP_CONTEXT;
+import static org.monyhar.chrome.browser.dependency_injection.ChromeCommonQualifiers.APP_CONTEXT;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -16,19 +16,19 @@ import android.text.format.DateUtils;
 import androidx.annotation.IntDef;
 import androidx.browser.customtabs.CustomTabsSessionToken;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.dependency_injection.ActivityScope;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabHidingType;
-import org.chromium.chrome.browser.tab.TabObserver;
-import org.chromium.chrome.browser.tab.TabUtils;
-import org.chromium.components.browser_ui.share.ShareImageFileUtils;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.NavigationHandle;
-import org.chromium.url.GURL;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.dependency_injection.ActivityScope;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabHidingType;
+import org.monyhar.chrome.browser.tab.TabObserver;
+import org.monyhar.chrome.browser.tab.TabUtils;
+import org.monyhar.components.browser_ui.share.ShareImageFileUtils;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.NavigationHandle;
+import org.monyhar.url.GURL;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

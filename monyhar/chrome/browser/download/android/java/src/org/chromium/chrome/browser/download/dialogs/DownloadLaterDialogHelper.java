@@ -2,26 +2,26 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.dialogs;
+package org.monyhar.chrome.browser.download.dialogs;
 
 import android.content.Context;
 
 import androidx.annotation.IntDef;
 import androidx.annotation.NonNull;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.download.DownloadDialogBridge;
-import org.chromium.chrome.browser.download.DownloadLaterMetrics;
-import org.chromium.chrome.browser.download.DownloadLaterMetrics.DownloadLaterUiEvent;
-import org.chromium.components.offline_items_collection.OfflineItemSchedule;
-import org.chromium.components.prefs.PrefService;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.download.DownloadDialogBridge;
+import org.monyhar.chrome.browser.download.DownloadLaterMetrics;
+import org.monyhar.chrome.browser.download.DownloadLaterMetrics.DownloadLaterUiEvent;
+import org.monyhar.components.offline_items_collection.OfflineItemSchedule;
+import org.monyhar.components.prefs.PrefService;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * A wrapper of {@link DownloadLaterDialogCoordinator}, always use the same Android {@link Context}
  * and relevant dependencies, and supports to show dialog based on a {@link
- * org.chromium.components.offline_items_collection.OfflineItem}.
+ * org.monyhar.components.offline_items_collection.OfflineItem}.
  */
 public class DownloadLaterDialogHelper implements DownloadLaterDialogController {
     /**

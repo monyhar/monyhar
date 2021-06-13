@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.intents;
+package org.monyhar.chrome.browser.browserservices.intents;
 
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
@@ -11,8 +11,8 @@ import android.graphics.drawable.BitmapDrawable;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.ContextUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.ContextUtils;
 
 /** Represents bitmap icon. Lazily converts icon format. */
 public class WebappIcon {

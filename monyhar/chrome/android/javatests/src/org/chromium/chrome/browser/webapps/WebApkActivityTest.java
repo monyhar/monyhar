@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps;
+package org.monyhar.chrome.browser.webapps;
 
 import static org.junit.Assert.assertEquals;
 
@@ -19,29 +19,29 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.test.util.ApplicationTestUtils;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Feature;
-import org.chromium.cc.input.BrowserControlsState;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.tab.TabTestUtils;
-import org.chromium.chrome.browser.tab.TabWebContentsDelegateAndroid;
-import org.chromium.chrome.test.ChromeActivityTestRule;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.util.ChromeTabUtils;
-import org.chromium.chrome.test.util.browser.webapps.WebApkIntentDataProviderBuilder;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.webapk.lib.common.WebApkConstants;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.test.util.ApplicationTestUtils;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.cc.input.BrowserControlsState;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.tab.TabTestUtils;
+import org.monyhar.chrome.browser.tab.TabWebContentsDelegateAndroid;
+import org.monyhar.chrome.test.ChromeActivityTestRule;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.util.ChromeTabUtils;
+import org.monyhar.chrome.test.util.browser.webapps.WebApkIntentDataProviderBuilder;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.webapk.lib.common.WebApkConstants;
 
 /** Tests for WebAPK {@link WebappActivity}. */
 @RunWith(ChromeJUnit4ClassRunner.class)
 @CommandLineFlags.Add({ChromeSwitches.DISABLE_FIRST_RUN_EXPERIENCE})
 public final class WebApkActivityTest {
-    private static final String TEST_WEBAPK_PACKAGE_NAME = "org.chromium.webapk.for.testing";
+    private static final String TEST_WEBAPK_PACKAGE_NAME = "org.monyhar.webapk.for.testing";
     private static final String TEST_WEBAPK_ID =
             WebApkConstants.WEBAPK_ID_PREFIX + TEST_WEBAPK_PACKAGE_NAME;
 

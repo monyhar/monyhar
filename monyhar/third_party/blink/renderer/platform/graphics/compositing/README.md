@@ -3,7 +3,7 @@
 This directory contains the implementation of the "Blink compositing algorithm".
 
 This code is owned by the [paint team][paint-team-site].
-[paint-team-site]: https://www.chromium.org/teams/paint-team
+[paint-team-site]: https://www.monyhar.org/teams/paint-team
 
 This document explains the CAP world as it develops, not the SPv1 world it
 replaces.

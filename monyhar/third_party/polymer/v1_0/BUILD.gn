@@ -106,7 +106,7 @@ generate_grd("build_grdp") {
       "neon-animation/web-animations.html",
     ]
   }
-  input_files_base_dir = rebase_path("./components-chromium/", "//")
+  input_files_base_dir = rebase_path("./components-monyhar/", "//")
   resource_path_rewrites = [
     "polymer2/polymer-extracted.js|polymer/polymer-extracted.js",
     "polymer2/polymer.html|polymer/polymer.html",

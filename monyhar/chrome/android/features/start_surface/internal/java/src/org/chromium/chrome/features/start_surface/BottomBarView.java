@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.features.start_surface;
+package org.monyhar.chrome.features.start_surface;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -12,8 +12,8 @@ import android.widget.TextView;
 
 import com.google.android.material.tabs.TabLayout;
 
-import org.chromium.chrome.start_surface.R;
-import org.chromium.ui.widget.ChromeImageView;
+import org.monyhar.chrome.start_surface.R;
+import org.monyhar.ui.widget.ChromeImageView;
 
 /** The bottom bar view. */
 // TODO(crbug.com/982018): Support dark mode.

@@ -10,7 +10,7 @@ readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 readonly TEMP_DIR=$(mktemp -d)
 readonly EXTERNS_NPM_DIR="node_modules/google-closure-compiler/contrib/externs"
 readonly EXTERNS_DIR="${SCRIPT_DIR}/externs"
-readonly README="${SCRIPT_DIR}/README.chromium"
+readonly README="${SCRIPT_DIR}/README.monyhar"
 
 cleanup() {
   rm -rf "${TEMP_DIR}"
@@ -72,7 +72,7 @@ EOT
 
 # Apply local Chromium patch.
 cd "${SCRIPT_DIR}"
-git apply chromium_patch.diff
+git apply monyhar_patch.diff
 
 new_chrome_sha1=$(get_sha1 "${EXTERNS_DIR}/chrome.js")
 if [[ "${new_chrome_sha1}" != "${old_chrome_sha1}" ]]; then

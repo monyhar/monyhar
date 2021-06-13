@@ -18,7 +18,7 @@
 // @end
 // @implementation PageLoadTestCase
 // - (void)testPageload {
-//   [BookmarkEarlGreyUIImpl loadURL:GURL("https://chromium.org")];
+//   [BookmarkEarlGreyUIImpl loadURL:GURL("https://monyhar.org")];
 // }
 //
 // In this example BookmarkEarlGreyUIImpl must implement -loadURL:.

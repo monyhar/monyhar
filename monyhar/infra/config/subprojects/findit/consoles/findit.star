@@ -7,6 +7,6 @@ luci.list_view(
     entries = [
         "findit/findit-rerun",
         "findit/findit_variable",
-        "findit/linux_chromium_bot_db_exporter",
+        "findit/linux_monyhar_bot_db_exporter",
     ],
 )

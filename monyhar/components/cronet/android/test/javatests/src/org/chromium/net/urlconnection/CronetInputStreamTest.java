@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.urlconnection;
+package org.monyhar.net.urlconnection;
 
 import static com.google.common.truth.Truth.assertThat;
 
@@ -20,9 +20,9 @@ import org.mockito.Mockito;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
 
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.test.util.Feature;
-import org.chromium.net.CronetTestRule;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.net.CronetTestRule;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;

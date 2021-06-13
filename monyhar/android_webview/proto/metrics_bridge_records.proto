@@ -4,10 +4,10 @@
 
 syntax = "proto3";
 
-package org.chromium.android_webview.proto;
+package org.monyhar.android_webview.proto;
 
 option optimize_for = LITE_RUNTIME;  // TODO(crbug/800281): Remove this after proto 4.0
-option java_package = "org.chromium.android_webview.proto";
+option java_package = "org.monyhar.android_webview.proto";
 
 // WebView uses HistogramRecord to serialize a histogram record that
 // MetricsBridgeService receives to a file and retrieve it back. These
@@ -34,7 +34,7 @@ message HistogramRecord {
 
   // The following fields are only used by HISTOGRAM_EXPONENTIAL and
   // HISTOGRAM_LINEAR See the docs for
-  // org.chromium.base.metrics.UmaRecorder#recordExponentialHistogram
+  // org.monyhar.base.metrics.UmaRecorder#recordExponentialHistogram
   // and recordLinearHistogram for more info on these fields.
 
   // the smallest value recorded in the first bucket; should be greater than

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download;
+package org.monyhar.chrome.browser.download;
 
 import static junit.framework.Assert.assertEquals;
 
@@ -12,9 +12,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.metrics.test.ShadowRecordHistogram;
-import org.chromium.chrome.browser.download.DownloadLocationDialogMetrics.DownloadLocationSuggestionEvent;
-import org.chromium.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.base.metrics.test.ShadowRecordHistogram;
+import org.monyhar.chrome.browser.download.DownloadLocationDialogMetrics.DownloadLocationSuggestionEvent;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
 
 /**
  * Unit test for {@link DownloadLocationDialogMetrics}.

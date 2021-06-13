@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed;
+package org.monyhar.chrome.browser.feed;
 
-import org.chromium.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordHistogram;
 
 /**
  * Records UMA stats for the actions that the user takes on the feed in the NTP.

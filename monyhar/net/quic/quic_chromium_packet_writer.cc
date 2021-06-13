@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#include "net/quic/quic_chromium_packet_writer.h"
+#include "net/quic/quic_monyhar_packet_writer.h"
 
 #include <string>
 #include <utility>
@@ -14,7 +14,7 @@
 #include "base/metrics/sparse_histogram.h"
 #include "net/base/io_buffer.h"
 #include "net/base/net_errors.h"
-#include "net/quic/quic_chromium_client_session.h"
+#include "net/quic/quic_monyhar_client_session.h"
 #include "net/traffic_annotation/network_traffic_annotation.h"
 
 namespace net {
@@ -41,7 +41,7 @@ void RecordRetryCount(int count) {
 }
 
 const net::NetworkTrafficAnnotationTag kTrafficAnnotation =
-    net::DefineNetworkTrafficAnnotation("quic_chromium_packet_writer", R"(
+    net::DefineNetworkTrafficAnnotation("quic_monyhar_packet_writer", R"(
         semantics {
           sender: "QUIC Packet Writer"
           description:

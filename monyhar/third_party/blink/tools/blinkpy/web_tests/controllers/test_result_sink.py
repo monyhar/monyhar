@@ -6,7 +6,7 @@
 ResultSink is a micro service that simplifies integration between ResultDB
 and domain-specific test frameworks. It runs a given test framework and uploads
 all the generated test results and artifacts to ResultDB in a progressive way.
-- APIs: https://godoc.org/go.chromium.org/luci/resultdb/proto/sink/v1
+- APIs: https://godoc.org/go.monyhar.org/luci/resultdb/proto/sink/v1
 
 TestResultSink implements methods for uploading test results and artifacts
 via ResultSink, and is activated only if LUCI_CONTEXT is present with ResultSink
@@ -25,7 +25,7 @@ _log = logging.getLogger(__name__)
 
 # A map from the enum values of typ.ResultType to ResultSink.Status.
 # The enum values of ResultSink.Status can be found at
-# https://godoc.org/go.chromium.org/luci/resultdb/proto/sink/v1#pkg-variables.
+# https://godoc.org/go.monyhar.org/luci/resultdb/proto/sink/v1#pkg-variables.
 _result_type_to_sink_status = {
     ResultType.Pass:
     'PASS',
@@ -114,7 +114,7 @@ class TestResultSink(object):
             A list of {'key': 'tag-name', 'value': 'tag-value'} dicts.
         """
         # the message structure of the dict can be found at
-        # https://chromium.googlesource.com/infra/luci/luci-go/+/master/resultdb/proto/type/common.proto#56
+        # https://monyhar.googlesource.com/infra/luci/luci-go/+/master/resultdb/proto/type/common.proto#56
         pair = lambda k, v: {'key': k, 'value': v}
         return [
             pair('test_name', result.test_name),
@@ -212,7 +212,7 @@ class TestResultSink(object):
                 # the associated component/team/os information in flakiness
                 # and disabled-test dashboards.
                 'location': {
-                    'repo': 'https://chromium.googlesource.com/chromium/src',
+                    'repo': 'https://monyhar.googlesource.com/monyhar/src',
                     'fileName': loc_fn,
                     # skip: 'line'
                 },

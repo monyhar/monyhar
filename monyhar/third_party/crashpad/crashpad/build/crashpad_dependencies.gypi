@@ -17,10 +17,10 @@
   # by the crashpad_standalone GYP variable. It may have these values:
   #   standalone
   #     A “standalone” Crashpad build, where the dependencies are in the
-  #     Crashpad tree. third_party/mini_chromium and third_party/googletest
+  #     Crashpad tree. third_party/mini_monyhar and third_party/googletest
   #     provide the base and Google Test libraries.
   #   external
-  #     A build with external dependencies. mini_chromium provides the base
+  #     A build with external dependencies. mini_monyhar provides the base
   #     library, but it’s located outside of the Crashpad tree, as is Google
   #     Test.
   #

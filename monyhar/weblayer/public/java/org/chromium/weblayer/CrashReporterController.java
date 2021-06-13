@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer;
+package org.monyhar.weblayer;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,11 +11,11 @@ import android.os.RemoteException;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.weblayer_private.interfaces.APICallException;
-import org.chromium.weblayer_private.interfaces.ICrashReporterController;
-import org.chromium.weblayer_private.interfaces.ICrashReporterControllerClient;
-import org.chromium.weblayer_private.interfaces.ObjectWrapper;
-import org.chromium.weblayer_private.interfaces.StrictModeWorkaround;
+import org.monyhar.weblayer_private.interfaces.APICallException;
+import org.monyhar.weblayer_private.interfaces.ICrashReporterController;
+import org.monyhar.weblayer_private.interfaces.ICrashReporterControllerClient;
+import org.monyhar.weblayer_private.interfaces.ObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.StrictModeWorkaround;
 
 /**
  * Provides an API to allow WebLayer embedders to control the handling of crash reports.

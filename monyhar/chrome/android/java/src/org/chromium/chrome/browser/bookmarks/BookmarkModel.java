@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.bookmarks;
+package org.monyhar.chrome.browser.bookmarks;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ObserverList;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.bookmarks.BookmarkId;
-import org.chromium.components.bookmarks.BookmarkType;
+import org.monyhar.base.ObserverList;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.bookmarks.BookmarkId;
+import org.monyhar.components.bookmarks.BookmarkType;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -107,7 +107,7 @@ public class BookmarkModel extends BookmarkBridge {
     }
 
     /**
-     * @see org.chromium.chrome.browser.bookmarks.BookmarkBridge.BookmarkItem#getTitle()
+     * @see org.monyhar.chrome.browser.bookmarks.BookmarkBridge.BookmarkItem#getTitle()
      */
     String getBookmarkTitle(BookmarkId bookmarkId) {
         BookmarkItem bookmarkItem = getBookmarkById(bookmarkId);

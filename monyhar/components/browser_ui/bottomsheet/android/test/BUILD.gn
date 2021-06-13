@@ -8,8 +8,8 @@ android_library("java") {
   testonly = true
 
   sources = [
-    "java/src/org/chromium/components/browser_ui/bottomsheet/BottomSheetTestSupport.java",
-    "java/src/org/chromium/components/browser_ui/bottomsheet/TestBottomSheetContent.java",
+    "java/src/org/monyhar/components/browser_ui/bottomsheet/BottomSheetTestSupport.java",
+    "java/src/org/monyhar/components/browser_ui/bottomsheet/TestBottomSheetContent.java",
   ]
 
   deps = [

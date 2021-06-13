@@ -8,12 +8,12 @@
      need (alerts, confirms and prompts). After inflating this layout, we
      remove the widgets that aren't needed for the current dialog type.
 -->
-<org.chromium.components.javascript_dialogs.JavascriptDialogCustomView
+<org.monyhar.components.javascript_dialogs.JavascriptDialogCustomView
     xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/AlertDialogContent"
     android:orientation="vertical">
 
-    <org.chromium.components.browser_ui.widget.text.AlertDialogEditText
+    <org.monyhar.components.browser_ui.widget.text.AlertDialogEditText
         android:id="@+id/js_modal_dialog_prompt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,4 +30,4 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/suppress_js_modal_dialogs" />
 
-</org.chromium.components.javascript_dialogs.JavascriptDialogCustomView>
+</org.monyhar.components.javascript_dialogs.JavascriptDialogCustomView>

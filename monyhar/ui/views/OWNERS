@@ -1,28 +1,28 @@
 # Note: Unless you want a specific reviewer's expertise, please send CLs to
-# chromium-ui-views-reviews@google.com rather than to specific individuals.
+# monyhar-ui-views-reviews@google.com rather than to specific individuals.
 # These CLs will be automatically reassigned to a reviewer within about
 # 5 minutes. This approach helps our team to load-balance incoming reviews.
 # Googlers can read more about this at go/gwsq-gerrit.
 
-ellyjones@chromium.org
-kylixrd@chromium.org
-msw@chromium.org
-pbos@chromium.org
-pkasting@chromium.org
-robliao@chromium.org
-sky@chromium.org
-tapted@chromium.org
-tluk@chromium.org
-weili@chromium.org
+ellyjones@monyhar.org
+kylixrd@monyhar.org
+msw@monyhar.org
+pbos@monyhar.org
+pkasting@monyhar.org
+robliao@monyhar.org
+sky@monyhar.org
+tapted@monyhar.org
+tluk@monyhar.org
+weili@monyhar.org
 
 # Prefer avi@, ellyjones@, lgrey@, or tapted@ for mac specific changes.
-per-file *_mac.*=avi@chromium.org
-per-file *_cocoa.*=avi@chromium.org
-per-file *.mm=avi@chromium.org
+per-file *_mac.*=avi@monyhar.org
+per-file *_cocoa.*=avi@monyhar.org
+per-file *.mm=avi@monyhar.org
 
-per-file *_mac.*=lgrey@chromium.org
-per-file *_cocoa.*=lgrey@chromium.org
-per-file *.mm=lgrey@chromium.org
+per-file *_mac.*=lgrey@monyhar.org
+per-file *_cocoa.*=lgrey@monyhar.org
+per-file *.mm=lgrey@monyhar.org
 
 # If you're doing structural changes get a review from one of the OWNERS.
 per-file BUILD.gn=*

@@ -23,10 +23,10 @@ namespace bluez {
 
 // static
 const char BluetoothGattCharacteristicClient::kNoResponseError[] =
-    "org.chromium.Error.NoResponse";
+    "org.monyhar.Error.NoResponse";
 // static
 const char BluetoothGattCharacteristicClient::kUnknownCharacteristicError[] =
-    "org.chromium.Error.UnknownCharacteristic";
+    "org.monyhar.Error.UnknownCharacteristic";
 
 BluetoothGattCharacteristicClient::Properties::Properties(
     dbus::ObjectProxy* object_proxy,

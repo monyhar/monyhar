@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.media;
+package org.monyhar.media;
 
 import android.media.MediaFormat;
 import android.os.Build;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.media.MediaCodecUtil.MimeTypes;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.media.MediaCodecUtil.MimeTypes;
 
 import java.nio.ByteBuffer;
 

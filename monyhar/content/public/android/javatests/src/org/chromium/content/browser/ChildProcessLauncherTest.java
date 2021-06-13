@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -17,17 +17,17 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.process_launcher.ChildConnectionAllocator;
-import org.chromium.base.process_launcher.ChildProcessConnection;
-import org.chromium.base.process_launcher.ChildProcessLauncher;
-import org.chromium.base.process_launcher.FileDescriptorInfo;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.content_public.browser.test.ContentJUnit4ClassRunner;
-import org.chromium.content_shell_apk.ChildProcessLauncherTestUtils;
-import org.chromium.content_shell_apk.IChildProcessTest;
+import org.monyhar.base.process_launcher.ChildConnectionAllocator;
+import org.monyhar.base.process_launcher.ChildProcessConnection;
+import org.monyhar.base.process_launcher.ChildProcessLauncher;
+import org.monyhar.base.process_launcher.FileDescriptorInfo;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.content_public.browser.test.ContentJUnit4ClassRunner;
+import org.monyhar.content_shell_apk.ChildProcessLauncherTestUtils;
+import org.monyhar.content_shell_apk.IChildProcessTest;
 
 import java.util.Arrays;
 import java.util.concurrent.Callable;
@@ -40,17 +40,17 @@ import java.util.concurrent.TimeoutException;
 public class ChildProcessLauncherTest {
     private static final long CONDITION_WAIT_TIMEOUT_MS = 5000;
 
-    private static final String SERVICE_PACKAGE_NAME = "org.chromium.content_shell_apk.tests";
+    private static final String SERVICE_PACKAGE_NAME = "org.monyhar.content_shell_apk.tests";
     private static final String SERVICE_NAME =
-            "org.chromium.content_shell_apk.TestChildProcessService";
+            "org.monyhar.content_shell_apk.TestChildProcessService";
     private static final String SERVICE_COUNT_META_DATA_KEY =
-            "org.chromium.content.browser.NUM_TEST_SERVICES";
+            "org.monyhar.content.browser.NUM_TEST_SERVICES";
 
-    private static final String EXTRA_SERVICE_PARAM = "org.chromium.content.browser.SERVICE_EXTRA";
+    private static final String EXTRA_SERVICE_PARAM = "org.monyhar.content.browser.SERVICE_EXTRA";
     private static final String EXTRA_SERVICE_PARAM_VALUE = "SERVICE_EXTRA";
 
     private static final String EXTRA_CONNECTION_PARAM =
-            "org.chromium.content.browser.CONNECTION_EXTRA";
+            "org.monyhar.content.browser.CONNECTION_EXTRA";
     private static final String EXTRA_CONNECTION_PARAM_VALUE = "CONNECTION_EXTRA";
 
     private static final int CONNECTION_BLOCK_UNTIL_CONNECTED = 1;
@@ -349,7 +349,7 @@ public class ChildProcessLauncherTest {
                             @Override
                             public ChildConnectionAllocator call() {
                                 return ChildConnectionAllocator.createFixedForTesting(null,
-                                        "org.chromium.wrong_package", "WrongService",
+                                        "org.monyhar.wrong_package", "WrongService",
                                         2 /* serviceCount */, false /* bindToCaller */,
                                         false /* bindAsExternalService */,
                                         false /* useStrongBinding */);

@@ -51,7 +51,7 @@ suite('SettingsSubpage', function() {
     // Check that the help icon only shows up when a |learnMoreUrl| is
     // specified.
     assertFalse(!!subpage.$$('[iron-icon="cr:help-outline"]'));
-    subpage.learnMoreUrl = 'https://www.chromium.org';
+    subpage.learnMoreUrl = 'https://www.monyhar.org';
     flush();
     const icon = subpage.$$('[iron-icon="cr:help-outline"]');
     assertTrue(!!icon);

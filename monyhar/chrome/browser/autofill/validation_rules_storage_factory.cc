@@ -9,7 +9,7 @@
 #include "chrome/common/chrome_paths.h"
 #include "components/prefs/json_pref_store.h"
 #include "components/prefs/pref_filter.h"
-#include "third_party/libaddressinput/chromium/chrome_storage_impl.h"
+#include "third_party/libaddressinput/monyhar/chrome_storage_impl.h"
 
 namespace autofill {
 

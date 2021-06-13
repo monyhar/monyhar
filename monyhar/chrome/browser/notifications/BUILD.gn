@@ -44,21 +44,21 @@ group("unit_tests") {
 if (is_android) {
   android_library("java") {
     sources = [
-      "android/java/src/org/chromium/chrome/browser/notifications/ChromeNotificationWrapperCompatBuilder.java",
-      "android/java/src/org/chromium/chrome/browser/notifications/ChromeNotificationWrapperStandardBuilder.java",
-      "android/java/src/org/chromium/chrome/browser/notifications/CustomNotificationBuilder.java",
-      "android/java/src/org/chromium/chrome/browser/notifications/NotificationBuilderBase.java",
-      "android/java/src/org/chromium/chrome/browser/notifications/NotificationConstants.java",
-      "android/java/src/org/chromium/chrome/browser/notifications/NotificationIntentInterceptor.java",
-      "android/java/src/org/chromium/chrome/browser/notifications/NotificationSettingsBridge.java",
-      "android/java/src/org/chromium/chrome/browser/notifications/NotificationSystemStatusUtil.java",
-      "android/java/src/org/chromium/chrome/browser/notifications/NotificationUmaTracker.java",
-      "android/java/src/org/chromium/chrome/browser/notifications/NotificationWrapperBuilderFactory.java",
-      "android/java/src/org/chromium/chrome/browser/notifications/StandardNotificationBuilder.java",
-      "android/java/src/org/chromium/chrome/browser/notifications/channels/ChannelsUpdater.java",
-      "android/java/src/org/chromium/chrome/browser/notifications/channels/ChromeChannelDefinitions.java",
-      "android/java/src/org/chromium/chrome/browser/notifications/channels/LocaleChangedBroadcastReceiver.java",
-      "android/java/src/org/chromium/chrome/browser/notifications/channels/SiteChannelsManager.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/ChromeNotificationWrapperCompatBuilder.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/ChromeNotificationWrapperStandardBuilder.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/CustomNotificationBuilder.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/NotificationBuilderBase.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/NotificationConstants.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/NotificationIntentInterceptor.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/NotificationSettingsBridge.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/NotificationSystemStatusUtil.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/NotificationUmaTracker.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/NotificationWrapperBuilderFactory.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/StandardNotificationBuilder.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/channels/ChannelsUpdater.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/channels/ChromeChannelDefinitions.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/channels/LocaleChangedBroadcastReceiver.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/channels/SiteChannelsManager.java",
     ]
 
     deps = [
@@ -81,7 +81,7 @@ if (is_android) {
     ]
 
     srcjar_deps = [ ":notifications_java_enum_srcjar" ]
-    resources_package = "org.chromium.chrome.browser.notifications"
+    resources_package = "org.monyhar.chrome.browser.notifications"
     annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
   }
 
@@ -91,8 +91,8 @@ if (is_android) {
 
   generate_jni("jni_headers") {
     sources = [
-      "android/java/src/org/chromium/chrome/browser/notifications/NotificationSettingsBridge.java",
-      "android/java/src/org/chromium/chrome/browser/notifications/NotificationSystemStatusUtil.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/NotificationSettingsBridge.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/NotificationSystemStatusUtil.java",
     ]
   }
 
@@ -102,10 +102,10 @@ if (is_android) {
     testonly = true
 
     sources = [
-      "android/java/src/org/chromium/chrome/browser/notifications/NotificationIntentInterceptorTest.java",
-      "android/java/src/org/chromium/chrome/browser/notifications/NotificationSystemStatusUtilUnitTest.java",
-      "android/java/src/org/chromium/chrome/browser/notifications/PendingIntentProviderTest.java",
-      "android/java/src/org/chromium/chrome/browser/notifications/channels/ChromeChannelDefinitionsTest.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/NotificationIntentInterceptorTest.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/NotificationSystemStatusUtilUnitTest.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/PendingIntentProviderTest.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/channels/ChromeChannelDefinitionsTest.java",
     ]
 
     deps = [
@@ -128,13 +128,13 @@ if (is_android) {
     testonly = true
 
     sources = [
-      "android/java/src/org/chromium/chrome/browser/notifications/CustomNotificationBuilderTest.java",
-      "android/java/src/org/chromium/chrome/browser/notifications/NotificationBuilderBaseTest.java",
-      "android/java/src/org/chromium/chrome/browser/notifications/NotificationTestUtil.java",
-      "android/java/src/org/chromium/chrome/browser/notifications/NotificationWrapperBuilderFactoryTest.java",
-      "android/java/src/org/chromium/chrome/browser/notifications/StandardNotificationBuilderTest.java",
-      "android/java/src/org/chromium/chrome/browser/notifications/channels/ChannelsInitializerTest.java",
-      "android/java/src/org/chromium/chrome/browser/notifications/channels/ChannelsUpdaterTest.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/CustomNotificationBuilderTest.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/NotificationBuilderBaseTest.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/NotificationTestUtil.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/NotificationWrapperBuilderFactoryTest.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/StandardNotificationBuilderTest.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/channels/ChannelsInitializerTest.java",
+      "android/java/src/org/monyhar/chrome/browser/notifications/channels/ChannelsUpdaterTest.java",
     ]
 
     deps = [

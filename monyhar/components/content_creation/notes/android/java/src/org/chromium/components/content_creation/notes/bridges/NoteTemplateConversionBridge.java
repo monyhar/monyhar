@@ -2,22 +2,22 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.content_creation.notes.bridges;
+package org.monyhar.components.content_creation.notes.bridges;
 
 import androidx.annotation.ColorInt;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.components.content_creation.notes.models.Background;
-import org.chromium.components.content_creation.notes.models.FooterStyle;
-import org.chromium.components.content_creation.notes.models.HighlightStyle;
-import org.chromium.components.content_creation.notes.models.LinearGradientBackground;
-import org.chromium.components.content_creation.notes.models.LinearGradientDirection;
-import org.chromium.components.content_creation.notes.models.NoteTemplate;
-import org.chromium.components.content_creation.notes.models.SolidBackground;
-import org.chromium.components.content_creation.notes.models.TextAlignment;
-import org.chromium.components.content_creation.notes.models.TextStyle;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.components.content_creation.notes.models.Background;
+import org.monyhar.components.content_creation.notes.models.FooterStyle;
+import org.monyhar.components.content_creation.notes.models.HighlightStyle;
+import org.monyhar.components.content_creation.notes.models.LinearGradientBackground;
+import org.monyhar.components.content_creation.notes.models.LinearGradientDirection;
+import org.monyhar.components.content_creation.notes.models.NoteTemplate;
+import org.monyhar.components.content_creation.notes.models.SolidBackground;
+import org.monyhar.components.content_creation.notes.models.TextAlignment;
+import org.monyhar.components.content_creation.notes.models.TextStyle;
 
 import java.util.ArrayList;
 import java.util.List;

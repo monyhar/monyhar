@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar.adaptive;
+package org.monyhar.chrome.browser.toolbar.adaptive;
 
 import android.text.TextUtils;
 
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.browser.flags.CachedFeatureFlags;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.StringCachedFieldTrialParameter;
+import org.monyhar.chrome.browser.flags.CachedFeatureFlags;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.StringCachedFieldTrialParameter;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

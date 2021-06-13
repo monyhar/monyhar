@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tabmodel;
+package org.monyhar.chrome.browser.tabmodel;
 
 import android.app.Activity;
 import android.content.Intent;
 
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabLaunchType;
-import org.chromium.content_public.browser.LoadUrlParams;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabLaunchType;
+import org.monyhar.content_public.browser.LoadUrlParams;
 
 /**
  * Creates {@link Tab}s asynchronously.

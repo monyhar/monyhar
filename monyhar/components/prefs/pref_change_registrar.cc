@@ -15,11 +15,11 @@ PrefChangeRegistrar::~PrefChangeRegistrar() {
   // If you see an invalid memory access in this destructor, this
   // PrefChangeRegistrar might be subscribed to an OffTheRecordProfileImpl that
   // has been destroyed. This should not happen any more but be warned.
-  // Feel free to contact battre@chromium.org in case this happens.
+  // Feel free to contact battre@monyhar.org in case this happens.
   //
   // This can also happen for non-OTR profiles, when the
   // DestroyProfileOnBrowserClose flag is enabled. In that case, contact
-  // nicolaso@chromium.org.
+  // nicolaso@monyhar.org.
   RemoveAll();
 }
 

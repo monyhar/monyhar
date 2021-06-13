@@ -107,7 +107,7 @@
 
       Jeśli włączysz tę zasadę, przeglądarka <ph name="PRODUCT_NAME" /> będzie używać wybranego katalogu bez względu na to, czy użytkownik określi parametr „--disk-cache-dir”. Aby uniknąć utraty danych i innych nieoczekiwanych błędów, nie należy podawać w tej zasadzie głównego katalogu woluminu ani katalogu używanego do innych celów, ponieważ zawartością zarządza przeglądarka <ph name="PRODUCT_NAME" />.
 
-      Listę dostępnych zmiennych znajdziesz na stronie https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Listę dostępnych zmiennych znajdziesz na stronie https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       W przypadku nieskonfigurowania tej zasady będzie używany domyślny katalog pamięci podręcznej, a użytkownik będzie mógł zmienić to ustawienie za pomocą parametru wiersza polecenia „--disk-cache-dir”.</translation>
 <translation id="113521240853905588">Konfiguruje języki, których można używać jako preferowanych w <ph name="PRODUCT_OS_NAME" />.
@@ -489,7 +489,7 @@ Każdy element na liście tej zasady jest ciągiem zawierającym identyfikator r
 <translation id="1852294065645015766">Zezwalaj na automatyczne odtwarzanie multimediów</translation>
 <translation id="1857152770025485173">Ta zasada uniemożliwia użytkownikom otwieranie stron internetowych, których adresy URL znajdują się na czarnej liście. Czarna lista zawiera wykaz wzorców adresów URL określających, które adresy URL będą blokowane.
 
-      Wzorzec adresu URL musi być sformatowany zgodnie z wytycznymi podanymi na stronie https://www.chromium.org/administrators/url-blacklist-filter-format.
+      Wzorzec adresu URL musi być sformatowany zgodnie z wytycznymi podanymi na stronie https://www.monyhar.org/administrators/url-blacklist-filter-format.
 
       Wyjątki można definiować za pomocą białej listy adresów URL. Listy w tych zasadach mogą zawierać maksymalnie 1000 pozycji. Dalsze pozycje będą ignorowane.
 
@@ -525,7 +525,7 @@ Każdy element na liście tej zasady jest ciągiem zawierającym identyfikator r
       Jeśli jej nie włączysz, przesyłanie statystyk i danych diagnostycznych będzie wyłączone.
       Jeśli jej nie skonfigurujesz, przesyłanie statystyk użytkowania i danych diagnostycznych będzie wyłączone na urządzeniach niezarządzanych, ale włączone na zarządzanych.</translation>
 <translation id="1907431809333268751">Służy do konfigurowania listy adresów URL (tylko schematy HTTP i HTTPS) stron logowania aplikacji firmowych. Na tych stronach będzie rejestrowany odcisk cyfrowy hasła służący do wykrywania przypadków użycia tego samego hasła w różnych miejscach.
-      Jeśli <ph name="PRODUCT_NAME" /> ma prawidłowo rejestrować odciski cyfrowe haseł, strony logowania powinny być zgodne z wytycznymi podanymi na stronie https://www.chromium.org/developers/design-documents/create-amazing-password-forms
+      Jeśli <ph name="PRODUCT_NAME" /> ma prawidłowo rejestrować odciski cyfrowe haseł, strony logowania powinny być zgodne z wytycznymi podanymi na stronie https://www.monyhar.org/developers/design-documents/create-amazing-password-forms
 
       Jeśli to ustawienie jest włączone, usługa ochrony haseł będzie rejestrować na tych stronach odciski cyfrowe haseł służące do wykrywania przypadków użycia tego samego hasła w różnych miejscach.
       Jeśli to ustawienie jest wyłączone lub nieskonfigurowane, usługa ochrony haseł rejestruje odciski cyfrowe haseł tylko na stronie https://accounts.google.com.
@@ -822,7 +822,7 @@ Jeśli pozostanie ona nieskonfigurowana, użytkownik może sam zdecydować, czy 
 
       Ta zasada umożliwia pominięcie ujawniania przez protokół Certificate Transparency certyfikatów nazw hosta w określonych adresach URL. Dzięki temu certyfikaty, które zostałyby uznane za niezaufane z powodu nieujawnienia publicznego, mogą być nadal używane. Trudniej jest jednak wykryć certyfikaty, które zostały wydane nieprawidłowo.
 
-      Wzorzec adresu URL jest sformatowany zgodnie ze schematem na stronie: https://www.chromium.org/administrators/url-blacklist-filter-format. Ponieważ jednak certyfikaty są ważne dla określonej nazwy hosta niezależnej od schematu, portu czy ścieżki, pod uwagę brany jest tylko fragment adresu URL zawierający nazwę hosta. Hosty zawierające symbole wieloznaczne nie są obsługiwane.
+      Wzorzec adresu URL jest sformatowany zgodnie ze schematem na stronie: https://www.monyhar.org/administrators/url-blacklist-filter-format. Ponieważ jednak certyfikaty są ważne dla określonej nazwy hosta niezależnej od schematu, portu czy ścieżki, pod uwagę brany jest tylko fragment adresu URL zawierający nazwę hosta. Hosty zawierające symbole wieloznaczne nie są obsługiwane.
 
       Jeśli ta zasada nie jest skonfigurowana, każdy certyfikat, który musi zostać ujawniony przez protokół Certificate Transparency, będzie traktowany jako niezaufany, jeśli nie zostanie ujawniony zgodnie z zasadami tego protokołu.</translation>
 <translation id="2488010520405124654">Włącza pytanie o konfigurację sieci wyświetlane w trybie offline.
@@ -1499,7 +1499,7 @@ Jeśli nie skonfigurujesz tej zasady lub jej wartość będzie pustym ciągiem, 
 
       Jeśli ustawisz tę zasadę, <ph name="PRODUCT_NAME" /> używa wskazanego katalogu niezależnie od tego, czy użytkownik podał własny katalog czy włączył opcję pytania o lokalizację przy każdym pobieraniu.
 
-      Na https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables znajdziesz listę zmiennych, których możesz użyć.
+      Na https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables znajdziesz listę zmiennych, których możesz użyć.
 
       Gdy ta zasada nie jest ustawiona, obowiązuje domyślny katalog pobierania, a użytkownik może go zmienić.</translation>
 <translation id="3805659594028420438">Włącz rozszerzenie certyfikatów TLS powiązanych z domeną (wycofana)</translation>
@@ -1585,7 +1585,7 @@ Jeśli ta zasada jest wyłączona, informacje o sesji nie będą przesyłane. Je
 
       Jeśli zasada pozostanie nieustawiona, <ph name="PRODUCT_NAME" /> będzie używać katalogu domyślnego (zależnego od platformy).
 
-      Listę zmiennych, których można użyć, znajdziesz na https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables</translation>
+      Listę zmiennych, których można użyć, znajdziesz na https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables</translation>
 <translation id="3911737181201537215">Ta zasada nie ma żadnego wpływu na zapisywanie w dzienniku przez Androida.</translation>
 <translation id="391531815696899618">Po ustawieniu wartości prawda wyłącza synchronizację Dysku Google w aplikacji Pliki w <ph name="PRODUCT_OS_NAME" />. Żadne dane nie są przesyłane na Dysk Google.
 
@@ -1780,7 +1780,7 @@ Jeśli wartość |IdleAction| nie będzie określona, zostanie wykonane działan
 
       Jeśli skonfigurujesz tę zasadę i włączona jest też zasada <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" />, <ph name="PRODUCT_NAME" /> będzie zapisywać w podanym katalogu przenośne kopie profili. Jeśli zasada <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> jest wyłączona lub nieskonfigurowana, wartość podana w tym polu nie jest brana pod uwagę.
 
-      Listę dostępnych zmiennych znajdziesz na stronie https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables
+      Listę dostępnych zmiennych znajdziesz na stronie https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables
 
       Jeśli nie skonfigurujesz tej zasady, używana będzie domyślna ścieżka profili przenośnych.</translation>
 <translation id="4239720644496144453">Pamięć podręczna nie jest używana dla aplikacji na Androida. Gdy wielu użytkowników instaluje tę samą aplikację na Androida, jest ona pobierana oddzielnie dla każdego z nich.</translation>
@@ -1982,7 +1982,7 @@ W przypadku nieskonfigurowania tej zasady użytkownik będzie mógł wybrać, cz
 
           Jeśli nie ustawisz tej zasady, na wszystkich stronach działa domyślny mechanizm renderowania określony przez zasadę ChromeFrameRendererSettings.
 
-          Przykładowe wzorce znajdziesz na https://www.chromium.org/developers/how-tos/chrome-frame-getting-started</translation>
+          Przykładowe wzorce znajdziesz na https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started</translation>
 <translation id="467449052039111439">Otwórz adresy URL z listy</translation>
 <translation id="4674871290487541952">Zezwalaj na niezabezpieczone algorytmy podczas weryfikowania integralności aktualizowanych i instalowanych rozszerzeń</translation>
 <translation id="4680936297850947973">Wycofana w wersji M68. W zamian użyj DefaultPopupsSetting.
@@ -2597,7 +2597,7 @@ Do odwzorowania sekwencji dowolnych znaków można używać symboli wieloznaczny
 
       Jeśli ustawisz tę zasadę, <ph name="PRODUCT_FRAME_NAME" /> używa wskazanego katalogu.
 
-      Na https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables znajdziesz listę zmiennych, których możesz użyć.
+      Na https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables znajdziesz listę zmiennych, których możesz użyć.
 
       Gdy ta opcja nie jest ustawiona, obowiązuje domyślny katalog profilu.</translation>
 <translation id="5826047473100157858">Określa, czy użytkownik może otwierać strony w trybie incognito w <ph name="PRODUCT_NAME" />. W przypadku opcji „Włączone” lub nieskonfigurowania zasady strony mogą być otwierane w tym trybie. Opcja „Wyłączone” uniemożliwia otwieranie stron w tym trybie. Po wybraniu opcji „Wymuszone” strony można otwierać TYLKO w trybie incognito.</translation>
@@ -3150,7 +3150,7 @@ Do odwzorowania sekwencji dowolnych znaków można używać symboli wieloznaczny
 
       Jeśli włączysz tę zasadę, przeglądarka <ph name="PRODUCT_NAME" /> będzie używać wybranego katalogu bez względu na to, czy użytkownik określi parametr „--user-data-dir”. Aby uniknąć utraty danych i innych nieoczekiwanych błędów, nie należy podawać w tej zasadzie głównego katalogu woluminu ani katalogu używanego do innych celów, ponieważ zawartością zarządza przeglądarka <ph name="PRODUCT_NAME" />.
 
-      Listę dostępnych zmiennych znajdziesz na stronie https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Listę dostępnych zmiennych znajdziesz na stronie https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       W przypadku nieskonfigurowania tej zasady będzie używana domyślna ścieżka do profilu, a użytkownik będzie mógł ją zmienić za pomocą parametru wiersza polecenia „--user-data-dir”.</translation>
 <translation id="7027785306666625591">Konfiguruje zarządzanie energią w <ph name="PRODUCT_OS_NAME" />.
@@ -3926,7 +3926,7 @@ Zalecamy skonfigurowanie zasady w systemie Windows przy użyciu obiektu zasad gr
 
           Jeśli nie ustawisz tej zasady, na wszystkich stronach działa domyślny mechanizm renderowania określony przez zasadę ChromeFrameRendererSettings.
 
-          Przykładowe wzorce znajdziesz na https://www.chromium.org/developers/how-tos/chrome-frame-getting-started</translation>
+          Przykładowe wzorce znajdziesz na https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started</translation>
 <translation id="8489964335640955763">PluginVm</translation>
 <translation id="8493645415242333585">Wyłącz zapisywanie historii przeglądarki</translation>
 <translation id="8499172469244085141">Ustawienia domyślne (użytkownicy mogą zmienić)</translation>

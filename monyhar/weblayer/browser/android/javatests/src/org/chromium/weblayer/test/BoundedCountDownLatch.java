@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer.test;
+package org.monyhar.weblayer.test;
 
 import org.junit.Assert;
 
-import org.chromium.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.CallbackHelper;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;

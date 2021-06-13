@@ -4,8 +4,8 @@
 
 // This file is auto-generated from
 // gpu/command_buffer/build_gles2_cmd_buffer.py
-// It's formatted by clang-format using chromium coding style:
-//    clang-format -i -style=chromium filename
+// It's formatted by clang-format using monyhar coding style:
+//    clang-format -i -style=monyhar filename
 // DO NOT EDIT!
 
 // It is included by gles2_cmd_decoder.cc
@@ -2236,7 +2236,7 @@ error::Error GLES2DecoderImpl::HandleHint(uint32_t immediate_data_size,
     case GL_TEXTURE_FILTERING_HINT_CHROMIUM:
       if (state_.hint_texture_filtering != mode) {
         state_.hint_texture_filtering = mode;
-        if (feature_info_->feature_flags().chromium_texture_filtering_hint) {
+        if (feature_info_->feature_flags().monyhar_texture_filtering_hint) {
           api()->glHintFn(target, mode);
         }
       }
@@ -4271,7 +4271,7 @@ error::Error GLES2DecoderImpl::HandleBlitFramebufferCHROMIUM(
   const volatile gles2::cmds::BlitFramebufferCHROMIUM& c =
       *static_cast<const volatile gles2::cmds::BlitFramebufferCHROMIUM*>(
           cmd_data);
-  if (!features().chromium_framebuffer_multisample) {
+  if (!features().monyhar_framebuffer_multisample) {
     return error::kUnknownCommand;
   }
 
@@ -4309,7 +4309,7 @@ error::Error GLES2DecoderImpl::HandleRenderbufferStorageMultisampleCHROMIUM(
       *static_cast<
           const volatile gles2::cmds::RenderbufferStorageMultisampleCHROMIUM*>(
           cmd_data);
-  if (!features().chromium_framebuffer_multisample) {
+  if (!features().monyhar_framebuffer_multisample) {
     return error::kUnknownCommand;
   }
 
@@ -5317,7 +5317,7 @@ error::Error GLES2DecoderImpl::HandleCoverageModulationCHROMIUM(
   const volatile gles2::cmds::CoverageModulationCHROMIUM& c =
       *static_cast<const volatile gles2::cmds::CoverageModulationCHROMIUM*>(
           cmd_data);
-  if (!features().chromium_framebuffer_mixed_samples) {
+  if (!features().monyhar_framebuffer_mixed_samples) {
     return error::kUnknownCommand;
   }
 
@@ -5412,7 +5412,7 @@ error::Error GLES2DecoderImpl::HandleTexStorage2DImageCHROMIUM(
   const volatile gles2::cmds::TexStorage2DImageCHROMIUM& c =
       *static_cast<const volatile gles2::cmds::TexStorage2DImageCHROMIUM*>(
           cmd_data);
-  if (!features().chromium_texture_storage_image) {
+  if (!features().monyhar_texture_storage_image) {
     return error::kUnknownCommand;
   }
 

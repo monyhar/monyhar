@@ -3,7 +3,7 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
 
-<org.chromium.components.browser_ui.widget.ViewResourceFrameLayout
+<org.monyhar.components.browser_ui.widget.ViewResourceFrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/status_indicator"
@@ -11,7 +11,7 @@
     android:layout_height="wrap_content"
     android:background="@color/default_bg_color">
 
-    <org.chromium.components.browser_ui.widget.text.TextViewWithCompoundDrawables
+    <org.monyhar.components.browser_ui.widget.text.TextViewWithCompoundDrawables
         android:id="@+id/status_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,4 +22,4 @@
         android:textAppearance="@style/TextAppearance.TextSmall.Primary"
         app:drawableWidth="@dimen/status_indicator_icon_size"
         app:drawableHeight="@dimen/status_indicator_icon_size"/>
-</org.chromium.components.browser_ui.widget.ViewResourceFrameLayout>
+</org.monyhar.components.browser_ui.widget.ViewResourceFrameLayout>

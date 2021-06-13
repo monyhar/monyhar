@@ -290,14 +290,14 @@ TEST_F(WebUIMainFrameObserverTest, URLPathIsPreservedOtherPartsRemoved) {
       // Longer paths are kept.
       {u"chrome://discards/graph/a/b/c/d", "chrome://discards/graph/a/b/c/d"},
       // Queries are removed, with or without a path.
-      {u"chrome://bookmarks/?q=chromium", "chrome://bookmarks/"},
-      {u"chrome://bookmarks/add?q=chromium", "chrome://bookmarks/add"},
-      {u"chrome://bookmarks/add/?q=chromium", "chrome://bookmarks/add/"},
+      {u"chrome://bookmarks/?q=monyhar", "chrome://bookmarks/"},
+      {u"chrome://bookmarks/add?q=monyhar", "chrome://bookmarks/add"},
+      {u"chrome://bookmarks/add/?q=monyhar", "chrome://bookmarks/add/"},
       // Fragments are removed, with or without a path.
       {u"chrome://flags/#tab-groups", "chrome://flags/"},
       {u"chrome://flags/available/#tab-groups", "chrome://flags/available/"},
       // Queries & fragments are removed.
-      {u"chrome://bookmarks/add?q=chromium#code", "chrome://bookmarks/add"},
+      {u"chrome://bookmarks/add?q=monyhar#code", "chrome://bookmarks/add"},
       // User name and password are removed. (It's weird to have a user name or
       // password on a chrome URL, but otherwise we get blocked by the
       // no-non-chrome-URLs check)
@@ -319,7 +319,7 @@ TEST_F(WebUIMainFrameObserverTest, URLPathIsPreservedOtherPartsRemoved) {
 
 TEST_F(WebUIMainFrameObserverTest, PageURLAlsoRedacted) {
   constexpr char kPageWithQueryAndFragment[] =
-      "chrome://bookmarks/add?q=chromium#code";
+      "chrome://bookmarks/add?q=monyhar#code";
   NavigationSimulator::NavigateAndCommitFromBrowser(
       web_contents(), GURL(kPageWithQueryAndFragment));
   CallOnDidAddMessageToConsole(web_ui_->frame_host(),

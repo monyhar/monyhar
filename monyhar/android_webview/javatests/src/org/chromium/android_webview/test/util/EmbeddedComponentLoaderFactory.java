@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test.util;
+package org.monyhar.android_webview.test.util;
 
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.component_updater.ComponentLoaderPolicyBridge;
-import org.chromium.components.component_updater.EmbeddedComponentLoader;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.component_updater.ComponentLoaderPolicyBridge;
+import org.monyhar.components.component_updater.EmbeddedComponentLoader;
 
 import java.util.Arrays;
 

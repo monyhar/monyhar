@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs.features.toolbar;
+package org.monyhar.chrome.browser.customtabs.features.toolbar;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -14,9 +14,9 @@ import android.widget.TextView;
 
 import androidx.annotation.DimenRes;
 
-import org.chromium.chrome.R;
-import org.chromium.components.omnibox.SecurityButtonAnimationDelegate;
-import org.chromium.ui.interpolators.BakedBezierInterpolator;
+import org.monyhar.chrome.R;
+import org.monyhar.components.omnibox.SecurityButtonAnimationDelegate;
+import org.monyhar.ui.interpolators.BakedBezierInterpolator;
 
 /**
  * A delegate class to handle the title animation and security icon fading animation in

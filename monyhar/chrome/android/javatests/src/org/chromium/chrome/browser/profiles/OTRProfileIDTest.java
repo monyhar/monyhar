@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.profiles;
+package org.monyhar.chrome.browser.profiles;
 
 import androidx.test.filters.MediumTest;
 import androidx.test.filters.SmallTest;
@@ -13,11 +13,11 @@ import org.junit.ClassRule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /**
  * This test class checks if OTRProfileID works correctly for regular profile, primary

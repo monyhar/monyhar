@@ -273,13 +273,13 @@ CreateAndValidateSharedImageRepresentations::
       mailbox_, format, surface_handle, size_, color_space, surface_origin,
       alpha_type, usage, is_thread_safe);
 
-  // As long as either |chromium_image_ar30| or |chromium_image_ab30| is
+  // As long as either |monyhar_image_ar30| or |monyhar_image_ab30| is
   // enabled, we can create a non-scanout SharedImage with format
   // viz::ResourceFormat::{BGRA,RGBA}_1010102.
   const bool supports_ar30 =
-      context_state->feature_info()->feature_flags().chromium_image_ar30;
+      context_state->feature_info()->feature_flags().monyhar_image_ar30;
   const bool supports_ab30 =
-      context_state->feature_info()->feature_flags().chromium_image_ab30;
+      context_state->feature_info()->feature_flags().monyhar_image_ab30;
   if ((format == viz::ResourceFormat::BGRA_1010102 ||
        format == viz::ResourceFormat::RGBA_1010102) &&
       !supports_ar30 && !supports_ab30) {

@@ -91,7 +91,7 @@ suite('RuntimeHostsDialog', function() {
 
   test('editing current entry', function() {
     const oldPattern = 'http://example.com/*';
-    const newPattern = 'http://chromium.org/*';
+    const newPattern = 'http://monyhar.org/*';
 
     dialog.currentSite = oldPattern;
     const input = dialog.shadowRoot.querySelector('cr-input');

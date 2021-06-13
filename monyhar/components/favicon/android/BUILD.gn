@@ -5,7 +5,7 @@
 import("//build/config/android/rules.gni")
 
 android_library("java") {
-  sources = [ "java/src/org/chromium/components/favicon/LargeIconBridge.java" ]
+  sources = [ "java/src/org/monyhar/components/favicon/LargeIconBridge.java" ]
 
   deps = [
     "//base:base_java",
@@ -21,7 +21,7 @@ android_library("java") {
 }
 
 generate_jni("jni_headers") {
-  sources = [ "java/src/org/chromium/components/favicon/LargeIconBridge.java" ]
+  sources = [ "java/src/org/monyhar/components/favicon/LargeIconBridge.java" ]
 }
 
 source_set("android") {

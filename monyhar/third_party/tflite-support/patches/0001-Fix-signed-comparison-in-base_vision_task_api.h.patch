@@ -1,5 +1,5 @@
 From c8bdfe3f6b3ce087c36b551d668b97101f620bdc Mon Sep 17 00:00:00 2001
-From: Daniel Rubery <drubery@chromium.org>
+From: Daniel Rubery <drubery@monyhar.org>
 Date: Thu, 6 May 2021 11:45:48 -0700
 Subject: [PATCH] Fix signed comparison in base_vision_task_api.h
 

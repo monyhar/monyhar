@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.base;
+package org.monyhar.chrome.browser.omnibox.suggestions.base;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -16,7 +16,7 @@ import androidx.annotation.DrawableRes;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.util.ObjectsCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
 
 /** Represents graphical decoration for the suggestion components. */
 public class SuggestionDrawableState {

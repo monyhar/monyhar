@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@1.1.1.cr0
-package: chromium/third_party/android_deps/libs/android_arch_lifecycle_common_java8
+package: monyhar/third_party/android_deps/libs/android_arch_lifecycle_common_java8
 description: "Android Lifecycle-Common for Java 8 Language"
 data:
 - file: common-java8-1.1.1.jar

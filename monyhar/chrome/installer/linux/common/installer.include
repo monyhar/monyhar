@@ -333,7 +333,7 @@ stage_install_common() {
       "${STAGEDIR}/usr/share/appdata/${PACKAGE}.appdata.xml"
     chmod 644 "${STAGEDIR}/usr/share/appdata/${PACKAGE}.appdata.xml"
   else
-    install -m 644 "${OUTPUTDIR}/installer/common/chromium-browser.appdata.xml" \
+    install -m 644 "${OUTPUTDIR}/installer/common/monyhar-browser.appdata.xml" \
       "${STAGEDIR}/usr/share/appdata/${PACKAGE}.appdata.xml"
   fi
 

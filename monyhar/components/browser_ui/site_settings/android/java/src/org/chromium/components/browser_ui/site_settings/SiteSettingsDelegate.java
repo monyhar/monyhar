@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.site_settings;
+package org.monyhar.components.browser_ui.site_settings;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
-import org.chromium.components.browser_ui.settings.ManagedPreferenceDelegate;
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.components.embedder_support.browser_context.BrowserContextHandle;
-import org.chromium.components.embedder_support.util.Origin;
-import org.chromium.url.GURL;
+import org.monyhar.base.Callback;
+import org.monyhar.components.browser_ui.settings.ManagedPreferenceDelegate;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.components.embedder_support.browser_context.BrowserContextHandle;
+import org.monyhar.components.embedder_support.util.Origin;
+import org.monyhar.url.GURL;
 
 import java.util.Set;
 
@@ -88,14 +88,14 @@ public interface SiteSettingsDelegate {
     /**
      * Launches a support page relevant to settings UI pages.
      *
-     * @see org.chromium.chrome.browser.feedback.HelpAndFeedbackLauncher#show
+     * @see org.monyhar.chrome.browser.feedback.HelpAndFeedbackLauncher#show
      */
     void launchSettingsHelpAndFeedbackActivity(Activity currentActivity);
 
     /**
      * Launches a support page related to protected content.
      *
-     * @see org.chromium.chrome.browser.feedback.HelpAndFeedbackLauncher#show
+     * @see org.monyhar.chrome.browser.feedback.HelpAndFeedbackLauncher#show
      */
     void launchProtectedContentHelpAndFeedbackActivity(Activity currentActivity);
 

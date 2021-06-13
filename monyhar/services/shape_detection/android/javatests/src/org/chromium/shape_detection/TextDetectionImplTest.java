@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.shape_detection;
+package org.monyhar.shape_detection;
 
 import android.os.Build;
 
@@ -12,13 +12,13 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.base.test.util.Feature;
-import org.chromium.gfx.mojom.RectF;
-import org.chromium.shape_detection.mojom.TextDetection;
-import org.chromium.shape_detection.mojom.TextDetectionResult;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.gfx.mojom.RectF;
+import org.monyhar.shape_detection.mojom.TextDetection;
+import org.monyhar.shape_detection.mojom.TextDetectionResult;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.TimeUnit;
@@ -34,10 +34,10 @@ public class TextDetectionImplTest {
             "The quick brown fox jumped over the lazy dog.", "Helvetica Neue 36."};
     private static final float[][] TEXT_BOUNDING_BOX = {
             {0.0f, 71.0f, 753.0f, 36.0f}, {4.0f, 173.0f, 307.0f, 28.0f}};
-    private static final org.chromium.skia.mojom.BitmapN32 TEXT_DETECTION_BITMAP =
+    private static final org.monyhar.skia.mojom.BitmapN32 TEXT_DETECTION_BITMAP =
             TestUtils.mojoBitmapFromText(DETECTION_EXPECTED_TEXT);
 
-    private static TextDetectionResult[] detect(org.chromium.skia.mojom.BitmapN32 mojoBitmap) {
+    private static TextDetectionResult[] detect(org.monyhar.skia.mojom.BitmapN32 mojoBitmap) {
         TextDetection detector = new TextDetectionImpl();
 
         final ArrayBlockingQueue<TextDetectionResult[]> queue = new ArrayBlockingQueue<>(1);

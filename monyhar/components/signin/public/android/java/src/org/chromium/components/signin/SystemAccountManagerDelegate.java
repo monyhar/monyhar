@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.signin;
+package org.monyhar.components.signin;
 
 import android.Manifest;
 import android.accounts.Account;
@@ -29,14 +29,14 @@ import androidx.annotation.Nullable;
 import com.google.android.gms.auth.GoogleAuthException;
 import com.google.android.gms.auth.GoogleAuthUtil;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.components.externalauth.ExternalAuthUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.components.externalauth.ExternalAuthUtils;
 
 import java.io.IOException;
 

@@ -36,11 +36,11 @@ class DlpFilesPolicyServiceProvider
                   const std::string& method_name,
                   bool success);
 
-  // org.chromium.DlpFilesPolicyService.IsRestricted implementation.
+  // org.monyhar.DlpFilesPolicyService.IsRestricted implementation.
   void IsRestricted(dbus::MethodCall* method_call,
                     dbus::ExportedObject::ResponseSender response_sender);
 
-  // org.chromium.DlpFilesPolicyService.IsDlpPolicyMatched implementation.
+  // org.monyhar.DlpFilesPolicyService.IsDlpPolicyMatched implementation.
   void IsDlpPolicyMatched(dbus::MethodCall* method_call,
                           dbus::ExportedObject::ResponseSender response_sender);
 

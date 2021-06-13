@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.paint_preview;
+package org.monyhar.chrome.browser.paint_preview;
 
 import android.os.SystemClock;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.base.ObserverList;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.components.paintpreview.player.CompositorStatus;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.components.paintpreview.player.CompositorStatus;
 
 import java.util.HashMap;
 import java.util.Map;

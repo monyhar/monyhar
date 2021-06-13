@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 //
-// Tests for chromium style checks for virtual/override/final specifiers on
+// Tests for monyhar style checks for virtual/override/final specifiers on
 // virtual methods.
 
 // Note: This is not actual windows.h but the stub file in system/windows.h

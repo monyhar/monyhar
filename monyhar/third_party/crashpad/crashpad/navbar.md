@@ -18,8 +18,8 @@ limitations under the License.
 
  * [Home][home]
  * [Developing](/doc/developing.md)
- * [Interface Docs](https://crashpad.chromium.org/doxygen/)
+ * [Interface Docs](https://crashpad.monyhar.org/doxygen/)
  * [Man Pages](/doc/man.md)
- * [Source Code](https://chromium.googlesource.com/crashpad/crashpad/)
+ * [Source Code](https://monyhar.googlesource.com/crashpad/crashpad/)
 
 [home]: /README.md

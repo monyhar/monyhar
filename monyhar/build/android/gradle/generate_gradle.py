@@ -19,7 +19,7 @@ import sys
 
 _BUILD_ANDROID = os.path.join(os.path.dirname(__file__), os.pardir)
 sys.path.append(_BUILD_ANDROID)
-import devil_chromium
+import devil_monyhar
 from devil.utils import run_tests_helper
 from pylib import constants
 from pylib.constants import host_paths
@@ -791,7 +791,7 @@ def main():
     constants.SetOutputDirectory(args.output_directory)
   constants.CheckOutputDirectory()
   output_dir = constants.GetOutDirectory()
-  devil_chromium.Initialize(output_directory=output_dir)
+  devil_monyhar.Initialize(output_directory=output_dir)
   run_tests_helper.SetLogLevel(args.verbose_count)
 
   if args.use_gradle_process_resources:
@@ -924,7 +924,7 @@ def main():
 
   logging.warning('Generated files will only appear once you\'ve built them.')
   logging.warning('Generated projects for Android Studio %s', channel)
-  logging.warning('For more tips: https://chromium.googlesource.com/chromium'
+  logging.warning('For more tips: https://monyhar.googlesource.com/monyhar'
                   '/src.git/+/master/docs/android_studio.md')
 
 

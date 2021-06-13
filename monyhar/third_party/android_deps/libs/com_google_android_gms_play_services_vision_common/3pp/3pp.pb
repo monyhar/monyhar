@@ -12,6 +12,6 @@ create {
 }
 
 upload {
-  pkg_prefix: "chromium/third_party/android_deps/libs"
+  pkg_prefix: "monyhar/third_party/android_deps/libs"
   universal: true
 }

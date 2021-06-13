@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.nonembedded;
+package org.monyhar.android_webview.nonembedded;
 
 import android.annotation.TargetApi;
 import android.content.ContentProvider;
@@ -13,8 +13,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.ParcelFileDescriptor;
 
-import org.chromium.base.FileUtils;
-import org.chromium.components.aboutui.CreditUtilsJni;
+import org.monyhar.base.FileUtils;
+import org.monyhar.components.aboutui.CreditUtilsJni;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;

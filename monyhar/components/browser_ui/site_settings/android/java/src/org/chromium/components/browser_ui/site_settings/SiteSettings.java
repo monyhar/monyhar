@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.site_settings;
+package org.monyhar.components.browser_ui.site_settings;
 
-import static org.chromium.components.content_settings.PrefNames.COOKIE_CONTROLS_MODE;
+import static org.monyhar.components.content_settings.PrefNames.COOKIE_CONTROLS_MODE;
 
 import android.os.Bundle;
 
 import androidx.preference.Preference;
 
-import org.chromium.components.browser_ui.settings.SettingsUtils;
-import org.chromium.components.browser_ui.site_settings.SiteSettingsCategory.Type;
-import org.chromium.components.content_settings.ContentSettingValues;
-import org.chromium.components.content_settings.CookieControlsMode;
-import org.chromium.components.embedder_support.browser_context.BrowserContextHandle;
-import org.chromium.components.user_prefs.UserPrefs;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.components.browser_ui.site_settings.SiteSettingsCategory.Type;
+import org.monyhar.components.content_settings.ContentSettingValues;
+import org.monyhar.components.content_settings.CookieControlsMode;
+import org.monyhar.components.embedder_support.browser_context.BrowserContextHandle;
+import org.monyhar.components.user_prefs.UserPrefs;
 
 /**
  * The main Site Settings screen, which shows all the site settings categories: All sites, Location,

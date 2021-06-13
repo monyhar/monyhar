@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview;
+package org.monyhar.android_webview;
 
 import android.annotation.TargetApi;
 import android.graphics.Rect;
@@ -13,8 +13,8 @@ import android.view.WindowInsets;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
-import org.chromium.base.annotations.VerifiesOnP;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.VerifiesOnP;
 
 /**
  * Display cutout controller for WebView.

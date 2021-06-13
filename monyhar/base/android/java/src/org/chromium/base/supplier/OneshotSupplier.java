@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.supplier;
+package org.monyhar.base.supplier;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
+import org.monyhar.base.Callback;
 
 /**
  * OneshotSupplier wraps an asynchronously provided, non-null object {@code T}, notifying
@@ -34,7 +34,7 @@ import org.chromium.base.Callback;
  *    <li>The object held by this supplier will also be returned at the end of {@link
  *    #onAvailable(Callback)}.
  *    <li>The Callback will be called at most once. It's still
- * recommended to use {@link org.chromium.base.CallbackController} for safety.
+ * recommended to use {@link org.monyhar.base.CallbackController} for safety.
  * </ul>
  *
  * @param <T> The type of the wrapped object.

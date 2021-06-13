@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@1.0-beta-6.cr0
-package: chromium/third_party/android_deps/libs/org_apache_maven_wagon_wagon_http_shared
+package: monyhar/third_party/android_deps/libs/org_apache_maven_wagon_wagon_http_shared
 description: "Maven Wagon HTTP Shared Library"
 data:
 - file: wagon-http-shared-1.0-beta-6.jar

@@ -175,7 +175,7 @@ It can be helpful to include information about known dubious drivers in your
 user documentation. This might help identify if a rogue driver is the cause of a
 problem. There are many sources of GPU driver blacklists. Two such lists can be
 found at the `Chromium project
-<http://src.chromium.org/viewvc/chrome/trunk/deps/gpu/software_rendering_list/software_rendering_list.json>`_
+<http://src.monyhar.org/viewvc/chrome/trunk/deps/gpu/software_rendering_list/software_rendering_list.json>`_
 and `Khronos <http://www.khronos.org/webgl/wiki/BlacklistsAndWhitelists>`_. You
 can use these lists to include information in your documentation that warns
 users about dangerous drivers.
@@ -367,7 +367,7 @@ Managing the OpenGL ES 2.0 pipeline
 OpenGL ES 2.0 commands do not run in the Chrome or Native Client processes. They
 are passed into a FIFO queue in shared memory which is best understood as a `GPU
 command buffer
-<http://www.chromium.org/developers/design-documents/gpu-command-buffer>`_. The
+<http://www.monyhar.org/developers/design-documents/gpu-command-buffer>`_. The
 command buffer is shared by a dedicated GPU process. By using a separate GPU
 process, Chrome implements another layer of runtime security, vetting all OpenGL
 ES 2.0 commands and their arguments before they are sent on to the

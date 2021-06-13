@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.infobars;
+package org.monyhar.components.infobars;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -17,9 +17,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.UiThreadTest;
-import org.chromium.components.infobars.InfoBarControlLayout.ControlLayoutParams;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.UiThreadTest;
+import org.monyhar.components.infobars.InfoBarControlLayout.ControlLayoutParams;
 
 /**
  * Tests for InfoBarControlLayout.  This suite doesn't check for specific details, like margins

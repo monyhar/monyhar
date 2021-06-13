@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.suggestions;
+package org.monyhar.chrome.browser.suggestions;
 
 import android.text.TextUtils;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.ntp.NewTabPageUma;
-import org.chromium.chrome.browser.offlinepages.DeletedPageInfo;
-import org.chromium.chrome.browser.offlinepages.OfflinePageBridge;
-import org.chromium.chrome.browser.offlinepages.OfflinePageItem;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.ntp.NewTabPageUma;
+import org.monyhar.chrome.browser.offlinepages.DeletedPageInfo;
+import org.monyhar.chrome.browser.offlinepages.OfflinePageBridge;
+import org.monyhar.chrome.browser.offlinepages.OfflinePageItem;
 
 /**
  * Handles checking the offline state of suggestions and notifications about related changes.

@@ -15,8 +15,8 @@
 #include "dbus/object_proxy.h"
 #include "third_party/cros_system_api/dbus/service_constants.h"
 
-const char kNoResponseError[] = "org.chromium.Error.NoResponse";
-const char kUnknownAdminPolicyError[] = "org.chromium.Error.UnknownAdminPolicy";
+const char kNoResponseError[] = "org.monyhar.Error.NoResponse";
+const char kUnknownAdminPolicyError[] = "org.monyhar.Error.UnknownAdminPolicy";
 
 namespace bluez {
 

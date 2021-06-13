@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.datareduction;
+package org.monyhar.chrome.browser.datareduction;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -15,18 +15,18 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.FieldTrialList;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.UiThreadTest;
-import org.chromium.base.test.util.AdvancedMockContext;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.about_settings.AboutSettingsBridge;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.net.spdyproxy.DataReductionProxySettings;
-import org.chromium.chrome.test.ChromeBrowserTestRule;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.FieldTrialList;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.UiThreadTest;
+import org.monyhar.base.test.util.AdvancedMockContext;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.about_settings.AboutSettingsBridge;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.net.spdyproxy.DataReductionProxySettings;
+import org.monyhar.chrome.test.ChromeBrowserTestRule;
 
 /**
  * Unit test suite for DataReductionPromoUtils.

@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant;
+package org.monyhar.chrome.browser.autofill_assistant;
 
 import android.os.Bundle;
 import android.text.TextUtils;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 import java.net.URLDecoder;
 import java.util.HashMap;
@@ -82,7 +82,7 @@ public class TriggerContext {
      * the ones starting with {@code INTENT_SPECIAL_PREFIX}.
      */
     private static final String INTENT_EXTRA_PREFIX =
-            "org.chromium.chrome.browser.autofill_assistant.";
+            "org.monyhar.chrome.browser.autofill_assistant.";
 
     /** Prefix for intent extras which are not parameters. */
     private static final String INTENT_SPECIAL_PREFIX = INTENT_EXTRA_PREFIX + "special.";

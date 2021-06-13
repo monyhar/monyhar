@@ -1,8 +1,8 @@
 # Initially copied from
-# https://git.launchpad.net/~chromium-team/chromium-browser/+git/snap-from-source/tree/snapcraft.yaml?h=stable
+# https://git.launchpad.net/~monyhar-team/monyhar-browser/+git/snap-from-source/tree/snapcraft.yaml?h=stable
 
 name: @@SNAPNAME@@
-adopt-info: chromium
+adopt-info: monyhar
 summary: @@SHORTDESC@@
 description: @@FULLDESC@@
 confinement: strict
@@ -65,7 +65,7 @@ plugs:
     read: [$HOME/.config/@@SNAPNAME@@]
 
 parts:
-  chromium:
+  monyhar:
     plugin: nil
     source: .
     after: [desktop-gtk3, gtk-key-themes]
@@ -176,7 +176,7 @@ parts:
       - -var
 
   shared-mime-info:
-    after: [chromium]
+    after: [monyhar]
     plugin: nil
     override-pull: ""
     override-prime: |

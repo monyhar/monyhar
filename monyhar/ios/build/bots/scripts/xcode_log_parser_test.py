@@ -263,19 +263,19 @@ SINGLE_TEST_SUMMARY_REF = """
                             ]
                           },
                           "title" : {
-                            "_value" : "Wait for org.chromium.ios-web-shell-eg2tests to idle"
+                            "_value" : "Wait for org.monyhar.ios-web-shell-eg2tests to idle"
                           }
                         }
                       ]
                     },
                     "title" : {
-                      "_value" : "Activate org.chromium.ios-web-shell-eg2tests"
+                      "_value" : "Activate org.monyhar.ios-web-shell-eg2tests"
                     }
                   }
                 ]
               },
               "title" : {
-                "_value" : "Open org.chromium.ios-web-shell-eg2tests"
+                "_value" : "Open org.monyhar.ios-web-shell-eg2tests"
               }
             }
           ]
@@ -286,7 +286,7 @@ SINGLE_TEST_SUMMARY_REF = """
       },
       {
         "title" : {
-          "_value" : "Find the Target Application 'org.chromium.ios-web-shell-eg2tests'"
+          "_value" : "Find the Target Application 'org.monyhar.ios-web-shell-eg2tests'"
         }
       },
       {
@@ -601,13 +601,13 @@ class XCode11LogParserTest(test_runner_test.TestCase):
       )
     try:
       mock_copy.assert_any_call(
-          'test_data/attempt_0.xcresult_diagnostic/test_module-UUID/test_module-UUID2/StandardOutputAndStandardError-org.chromium.gtest.ios-chrome-eg2tests.txt',
-          'test_data/attempt_0/../attempt_0_simulator#1_StandardOutputAndStandardError-org.chromium.gtest.ios-chrome-eg2tests.txt'
+          'test_data/attempt_0.xcresult_diagnostic/test_module-UUID/test_module-UUID2/StandardOutputAndStandardError-org.monyhar.gtest.ios-chrome-eg2tests.txt',
+          'test_data/attempt_0/../attempt_0_simulator#1_StandardOutputAndStandardError-org.monyhar.gtest.ios-chrome-eg2tests.txt'
       )
     except AssertionError:
       mock_copy.assert_any_call(
-          'test_data/attempt_0.xcresult_diagnostic/test_module-UUID/test_module-UUID2/StandardOutputAndStandardError-org.chromium.gtest.ios-chrome-eg2tests.txt',
-          'test_data/attempt_0/../attempt_0_simulator#0_StandardOutputAndStandardError-org.chromium.gtest.ios-chrome-eg2tests.txt'
+          'test_data/attempt_0.xcresult_diagnostic/test_module-UUID/test_module-UUID2/StandardOutputAndStandardError-org.monyhar.gtest.ios-chrome-eg2tests.txt',
+          'test_data/attempt_0/../attempt_0_simulator#0_StandardOutputAndStandardError-org.monyhar.gtest.ios-chrome-eg2tests.txt'
       )
 
   @mock.patch('os.path.exists', autospec=True)

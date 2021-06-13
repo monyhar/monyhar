@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -11,21 +11,21 @@ import android.view.WindowManager;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.UnownedUserData;
-import org.chromium.base.UnownedUserDataKey;
-import org.chromium.base.annotations.CheckDiscard;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.customtabs.content.CustomTabActivityNavigationController;
-import org.chromium.chrome.browser.customtabs.content.CustomTabActivityTabProvider;
-import org.chromium.chrome.browser.dependency_injection.ActivityScope;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.lifecycle.DestroyObserver;
-import org.chromium.chrome.browser.lifecycle.NativeInitObserver;
-import org.chromium.chrome.browser.profiles.OTRProfileID;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.UnownedUserData;
+import org.monyhar.base.UnownedUserDataKey;
+import org.monyhar.base.annotations.CheckDiscard;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.customtabs.content.CustomTabActivityNavigationController;
+import org.monyhar.chrome.browser.customtabs.content.CustomTabActivityTabProvider;
+import org.monyhar.chrome.browser.dependency_injection.ActivityScope;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.lifecycle.DestroyObserver;
+import org.monyhar.chrome.browser.lifecycle.NativeInitObserver;
+import org.monyhar.chrome.browser.profiles.OTRProfileID;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.ui.base.WindowAndroid;
 
 import javax.inject.Inject;
 
@@ -41,7 +41,7 @@ public class CustomTabIncognitoManager
     private static CustomTabIncognitoManager sCustomTabIncognitoManagerUsedForTesting;
 
     private static final String TAG = "CctIncognito";
-    /** The key for accessing this object on an {@link org.chromium.base.UnownedUserDataHost}. */
+    /** The key for accessing this object on an {@link org.monyhar.base.UnownedUserDataHost}. */
     private static final UnownedUserDataKey<CustomTabIncognitoManager> KEY =
             new UnownedUserDataKey<>(CustomTabIncognitoManager.class);
 

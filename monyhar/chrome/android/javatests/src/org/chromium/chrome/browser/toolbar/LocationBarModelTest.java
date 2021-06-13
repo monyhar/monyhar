@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar;
+package org.monyhar.chrome.browser.toolbar;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.atLeast;
@@ -22,30 +22,30 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.test.params.ParameterAnnotations;
-import org.chromium.base.test.params.ParameterProvider;
-import org.chromium.base.test.params.ParameterSet;
-import org.chromium.base.test.params.ParameterizedRunner;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.UrlUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.dom_distiller.DomDistillerTabUtils;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.omnibox.LocationBarDataProvider;
-import org.chromium.chrome.browser.omnibox.NewTabPageDelegate;
-import org.chromium.chrome.browser.omnibox.SearchEngineLogoUtils;
-import org.chromium.chrome.browser.omnibox.UrlBarData;
-import org.chromium.chrome.browser.tab.MockTab;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabSelectionType;
-import org.chromium.chrome.browser.toolbar.top.ToolbarLayout;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.ChromeTabUtils;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.test.params.ParameterAnnotations;
+import org.monyhar.base.test.params.ParameterProvider;
+import org.monyhar.base.test.params.ParameterSet;
+import org.monyhar.base.test.params.ParameterizedRunner;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.UrlUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.dom_distiller.DomDistillerTabUtils;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.omnibox.LocationBarDataProvider;
+import org.monyhar.chrome.browser.omnibox.NewTabPageDelegate;
+import org.monyhar.chrome.browser.omnibox.SearchEngineLogoUtils;
+import org.monyhar.chrome.browser.omnibox.UrlBarData;
+import org.monyhar.chrome.browser.tab.MockTab;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabSelectionType;
+import org.monyhar.chrome.browser.toolbar.top.ToolbarLayout;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.ChromeTabUtils;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;

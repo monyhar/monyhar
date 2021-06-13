@@ -10,7 +10,7 @@
     android:orientation="vertical"
     style="@style/AlertDialogContent">
 
-  <org.chromium.ui.widget.TextViewWithClickableSpans
+  <org.monyhar.ui.widget.TextViewWithClickableSpans
       android:id="@+id/text"
       android:text="@string/clear_browsing_data_history_dialog_data_text"
       android:layout_width="match_parent"

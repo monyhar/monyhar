@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.notifications.channels;
+package org.monyhar.chrome.browser.notifications.channels;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.everyItem;
@@ -15,7 +15,7 @@ import org.junit.rules.TestRule;
 import org.junit.runner.RunWith;
 import org.junit.runners.BlockJUnit4ClassRunner;
 
-import org.chromium.chrome.test.util.browser.Features;
+import org.monyhar.chrome.test.util.browser.Features;
 
 /**
  * Java unit tests for ChannelDefinitions.

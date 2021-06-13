@@ -10,7 +10,7 @@
     "matches": [
       "http://example.com/",
       "*://*.google.com/*",
-      "http://build.chromium.org/*",
+      "http://build.monyhar.org/*",
       "http://appspot.com/*",
       "http://com/*",
       "http://go/*",

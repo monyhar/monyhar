@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.content_capture;
+package org.monyhar.components.content_capture;
 
 import android.graphics.Rect;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.CalledByNative;
 
 /**
  * The class is Java's representative of components/content_capture/browser/content_capture_frame.h

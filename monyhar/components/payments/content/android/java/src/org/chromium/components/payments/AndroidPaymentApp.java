@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.payments;
+package org.monyhar.components.payments;
 
 import android.content.Context;
 import android.content.DialogInterface.OnClickListener;
@@ -14,25 +14,25 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.app.AlertDialog;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.task.PostTask;
-import org.chromium.components.payments.intent.IsReadyToPayServiceHelper;
-import org.chromium.components.payments.intent.WebPaymentIntentHelper;
-import org.chromium.components.payments.intent.WebPaymentIntentHelperType;
-import org.chromium.components.payments.intent.WebPaymentIntentHelperTypeConverter;
-import org.chromium.components.url_formatter.SchemeDisplay;
-import org.chromium.components.url_formatter.UrlFormatter;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.payments.mojom.PaymentDetailsModifier;
-import org.chromium.payments.mojom.PaymentItem;
-import org.chromium.payments.mojom.PaymentMethodData;
-import org.chromium.payments.mojom.PaymentOptions;
-import org.chromium.payments.mojom.PaymentRequestDetailsUpdate;
-import org.chromium.payments.mojom.PaymentShippingOption;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.components.payments.intent.IsReadyToPayServiceHelper;
+import org.monyhar.components.payments.intent.WebPaymentIntentHelper;
+import org.monyhar.components.payments.intent.WebPaymentIntentHelperType;
+import org.monyhar.components.payments.intent.WebPaymentIntentHelperTypeConverter;
+import org.monyhar.components.url_formatter.SchemeDisplay;
+import org.monyhar.components.url_formatter.UrlFormatter;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.payments.mojom.PaymentDetailsModifier;
+import org.monyhar.payments.mojom.PaymentItem;
+import org.monyhar.payments.mojom.PaymentMethodData;
+import org.monyhar.payments.mojom.PaymentOptions;
+import org.monyhar.payments.mojom.PaymentRequestDetailsUpdate;
+import org.monyhar.payments.mojom.PaymentShippingOption;
+import org.monyhar.ui.base.WindowAndroid;
 
 import java.util.Collections;
 import java.util.HashSet;

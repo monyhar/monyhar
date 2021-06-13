@@ -13,8 +13,8 @@ if (is_android || is_chromeos) {
   import("//build_overrides/build.gni")
   import("abi.gni")
 
-  if (build_with_chromium) {
-    # Some non-chromium projects (e.g. WebRTC) use our build configs
+  if (build_with_monyhar) {
+    # Some non-monyhar projects (e.g. WebRTC) use our build configs
     # heavily but don't write gclient args files.
 
     import("//build/config/gclient_args.gni")
@@ -116,9 +116,9 @@ if (is_android || is_chromeos) {
   }
 
   if (!defined(default_android_keystore_path)) {
-    default_android_keystore_path = "//build/android/chromium-debug.keystore"
-    default_android_keystore_name = "chromiumdebugkey"
-    default_android_keystore_password = "chromium"
+    default_android_keystore_path = "//build/android/monyhar-debug.keystore"
+    default_android_keystore_name = "monyhardebugkey"
+    default_android_keystore_password = "monyhar"
   }
 
   # google_play_services_package contains the path where individual client

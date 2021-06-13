@@ -15,7 +15,7 @@ You can check which Android image you have on your device with the following:
 
 ```sh
 # If you don't have `adb` in your path, you can source this file to use
-# the copy from chromium's Android SDK.
+# the copy from monyhar's Android SDK.
 $ source build/android/envsetup.sh
 
 # If this outputs "userdebug" or "eng" then you can apply flags following this
@@ -114,7 +114,7 @@ the Feature is removed and the legacy code path is no longer supported and
 removed from the codebase. On the other hand, debugging flags don't "launch," as
 they're typically only helpful for debugging issues.
 
-WebView supports the same syntax for toggling Features as the rest of chromium:
+WebView supports the same syntax for toggling Features as the rest of monyhar:
 `--enable-features=feature1,feature2` and
 `--disable-features=feature3,feature4`. You can apply `--enable-features` and
 `--disable-features` like any other flags, per the steps above. Please consult
@@ -124,7 +124,7 @@ WebView supports the same syntax for toggling Features as the rest of chromium:
 
 WebView supports toggling any flags/Features supported in any layer we
 depend on (ex. content). For more details on Chromium's layer architecture, see
-[this diagram](https://www.chromium.org/developers/content-module) (replace
+[this diagram](https://www.monyhar.org/developers/content-module) (replace
 "chrome" with "android\_webview"). Although we support toggling these flags, not
 all flags will have an effect when toggled, nor do we guarantee WebView
 functions correctly when the flag is toggled.
@@ -145,13 +145,13 @@ WebView also defines its own flags and Features:
    [`aw_switches.cc`](/android_webview/common/aw_switches.cc). We use
    [`java_cpp_strings`](/docs/android_accessing_cpp_switches_in_java.md) to
    automatically generate Java switch constants from the C++ switches (see
-   [`AwSwitches.java`](https://source.chromium.org/chromium/chromium/src/+/main:out/android-Debug/gen/android_webview/common_java/generated_java/input_srcjars/org/chromium/android_webview/common/AwSwitches.java)).
+   [`AwSwitches.java`](https://source.monyhar.org/monyhar/monyhar/src/+/main:out/android-Debug/gen/android_webview/common_java/generated_java/input_srcjars/org/monyhar/android_webview/common/AwSwitches.java)).
  * C++ `base::Features` are defined in
    [`aw_features.cc`](/android_webview/common/aw_features.cc). We use
    [`java_cpp_features`](/docs/android_accessing_cpp_features_in_java.md) to
    automatically generate Java constants from the C++ Features (see
-   [`AwFeatures.java`](https://source.chromium.org/chromium/chromium/src/+/main:out/android-Debug/gen/android_webview/common_java/generated_java/input_srcjars/org/chromium/android_webview/common/AwFeatures.java)).
+   [`AwFeatures.java`](https://source.monyhar.org/monyhar/monyhar/src/+/main:out/android-Debug/gen/android_webview/common_java/generated_java/input_srcjars/org/monyhar/android_webview/common/AwFeatures.java)).
 
 ## Implementation
 
-See [CommandLineUtil.java](https://cs.chromium.org/chromium/src/android_webview/java/src/org/chromium/android_webview/common/CommandLineUtil.java).
+See [CommandLineUtil.java](https://cs.monyhar.org/monyhar/src/android_webview/java/src/org/monyhar/android_webview/common/CommandLineUtil.java).

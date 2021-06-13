@@ -6255,7 +6255,7 @@
     <ph name="BR" />
     <ph name="BR" />
     Дополнительную информацию о функциях отладки можно найти здесь:<ph name="BR" />
-    https://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-features
+    https://www.monyhar.org/monyhar-os/how-tos-and-troubleshooting/debugging-features
     <ph name="BR" />
     <ph name="BR" />
     <ph name="BEGIN_BOLD" />Примечание.<ph name="END_BOLD" /> Система перезагрузится во время этого процесса.</translation>

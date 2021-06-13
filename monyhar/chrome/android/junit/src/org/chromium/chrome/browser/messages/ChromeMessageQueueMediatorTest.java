@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.messages;
+package org.monyhar.chrome.browser.messages;
 
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.verify;
@@ -16,20 +16,20 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.supplier.ObservableSupplierImpl;
-import org.chromium.base.supplier.OneshotSupplierImpl;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.ActivityTabProvider;
-import org.chromium.chrome.browser.fullscreen.BrowserControlsManager;
-import org.chromium.chrome.browser.fullscreen.FullscreenManager;
-import org.chromium.chrome.browser.layouts.LayoutStateProvider;
-import org.chromium.chrome.browser.layouts.LayoutStateProvider.LayoutStateObserver;
-import org.chromium.chrome.browser.layouts.LayoutType;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.components.messages.ManagedMessageDispatcher;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.modaldialog.ModalDialogManager.ModalDialogManagerObserver;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.supplier.ObservableSupplierImpl;
+import org.monyhar.base.supplier.OneshotSupplierImpl;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.ActivityTabProvider;
+import org.monyhar.chrome.browser.fullscreen.BrowserControlsManager;
+import org.monyhar.chrome.browser.fullscreen.FullscreenManager;
+import org.monyhar.chrome.browser.layouts.LayoutStateProvider;
+import org.monyhar.chrome.browser.layouts.LayoutStateProvider.LayoutStateObserver;
+import org.monyhar.chrome.browser.layouts.LayoutType;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.components.messages.ManagedMessageDispatcher;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.modaldialog.ModalDialogManager.ModalDialogManagerObserver;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * Unit tests for {@link ChromeMessageQueueMediator}.

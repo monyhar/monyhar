@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.site_settings;
+package org.monyhar.components.browser_ui.site_settings;
 
-import org.chromium.base.Callback;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.components.embedder_support.browser_context.BrowserContextHandle;
-import org.chromium.components.location.LocationUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.components.embedder_support.browser_context.BrowserContextHandle;
+import org.monyhar.components.location.LocationUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;

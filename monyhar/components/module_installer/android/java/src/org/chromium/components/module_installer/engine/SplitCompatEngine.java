@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.module_installer.engine;
+package org.monyhar.components.module_installer.engine;
 
 import android.app.Activity;
 
@@ -13,7 +13,7 @@ import com.google.android.play.core.splitinstall.SplitInstallRequest;
 import com.google.android.play.core.splitinstall.SplitInstallStateUpdatedListener;
 import com.google.android.play.core.splitinstall.model.SplitInstallSessionStatus;
 
-import org.chromium.base.ThreadUtils;
+import org.monyhar.base.ThreadUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;

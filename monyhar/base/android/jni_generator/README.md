@@ -231,7 +231,7 @@ all the fields as "final".
  * `generate_jni_registration` - Generates a header file with functions to
    register native-side JNI methods (required only when using crazy linker).
 
-Refer to [//build/config/android/rules.gni](https://cs.chromium.org/chromium/src/build/config/android/rules.gni)
+Refer to [//build/config/android/rules.gni](https://cs.monyhar.org/monyhar/src/build/config/android/rules.gni)
 for more about the GN templates.
 
 ## Changing `jni_generator`

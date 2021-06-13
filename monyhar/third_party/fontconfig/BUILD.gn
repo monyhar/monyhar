@@ -71,7 +71,7 @@ if (use_bundled_fontconfig) {
     # especially for msan builds. Exporting the newer fontconfig symbols here
     # will ensure that cairo uses this fontconfig, and so avoids the caching
     # issue. In non-instrumented builds, it is ok that the real system
-    # fontconfig is used by cairo instead of chromium's because caches for that
+    # fontconfig is used by cairo instead of monyhar's because caches for that
     # are warm. We don't *always* export fontconfig because in a rare case, it's
     # possible for the system fontconfig to be newer and have some Foo() that's
     # not in ours. Then eg. cairo would call init functions from our fontconfig
@@ -90,8 +90,8 @@ if (use_bundled_fontconfig) {
       "//third_party/zlib",
     ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
 
     public_configs = [ ":fontconfig_config" ]
 

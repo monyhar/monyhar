@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.pagecontroller.controllers.tabswitcher;
+package org.monyhar.chrome.test.pagecontroller.controllers.tabswitcher;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.test.pagecontroller.controllers.PageController;
-import org.chromium.chrome.test.pagecontroller.controllers.ntp.NewTabPageController;
-import org.chromium.chrome.test.pagecontroller.utils.IUi2Locator;
-import org.chromium.chrome.test.pagecontroller.utils.Ui2Locators;
-import org.chromium.chrome.test.pagecontroller.utils.UiLocationException;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.test.pagecontroller.controllers.PageController;
+import org.monyhar.chrome.test.pagecontroller.controllers.ntp.NewTabPageController;
+import org.monyhar.chrome.test.pagecontroller.utils.IUi2Locator;
+import org.monyhar.chrome.test.pagecontroller.utils.Ui2Locators;
+import org.monyhar.chrome.test.pagecontroller.utils.UiLocationException;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

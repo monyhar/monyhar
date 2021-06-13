@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.offlinepages.indicator;
+package org.monyhar.chrome.browser.offlinepages.indicator;
 
 import android.app.Activity;
 import android.view.View.OnClickListener;
@@ -10,12 +10,12 @@ import android.view.ViewGroup;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.fullscreen.BrowserControlsManager;
-import org.chromium.chrome.browser.ui.messages.snackbar.Snackbar;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarView;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.fullscreen.BrowserControlsManager;
+import org.monyhar.chrome.browser.ui.messages.snackbar.Snackbar;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarView;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Visual representation of a snackbar positioned at the top.

@@ -12,7 +12,7 @@ namespace vr {
 
 // These are used to map user-friendly names, e.g. URL_BAR, to the underlying
 // element names for interaction during testing.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.vr
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.vr
 enum class UserFriendlyElementName : int {
   kNone = 0,         // A special "element" that causes the controller to point
                      // straight forward.
@@ -62,7 +62,7 @@ enum class UserFriendlyElementName : int {
 
 // These are the types of actions that Java can request callbacks for once
 // they are complete.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.vr
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.vr
 enum class UiTestOperationType : int {
   kUiActivityResult = 0,     // Result after being told to wait for quiescence
   kFrameBufferDumped,        // Signal that the frame buffer was dumped to disk
@@ -72,7 +72,7 @@ enum class UiTestOperationType : int {
 };
 
 // These are used to report the result of a UI test operation.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.vr
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.vr
 enum class UiTestOperationResult : int {
   kUnreported,      // The result has not yet been reported
   kQuiescent,       // The UI reached quiescence (kUiActivityResult)
@@ -86,7 +86,7 @@ enum class UiTestOperationResult : int {
 
 // These are used to specify what type of action should be performed on a UI
 // element using simulated controller input during testing.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.vr
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.vr
 enum class VrControllerTestAction : int {
   kHover,
   kEnableMockedInput,
@@ -102,7 +102,7 @@ enum class VrControllerTestAction : int {
 
 // These are used to specify what type of keyboard input should be performed
 // for a frame during testing.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.vr
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.vr
 enum class KeyboardTestAction : int {
   kInputText,
   kBackspace,

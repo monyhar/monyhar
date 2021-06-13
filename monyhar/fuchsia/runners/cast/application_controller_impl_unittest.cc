@@ -12,7 +12,7 @@
 #include "base/test/task_environment.h"
 #include "fuchsia/base/test/fit_adapter.h"
 #include "fuchsia/base/test/result_receiver.h"
-#include "fuchsia/fidl/chromium/cast/cpp/fidl.h"
+#include "fuchsia/fidl/monyhar/cast/cpp/fidl.h"
 #include "fuchsia/runners/cast/application_controller_impl.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"
@@ -37,7 +37,7 @@ class MockFrame : public fuchsia::web::testing::Frame_TestBase {
               (GetPrivateMemorySizeCallback callback));
 };
 
-class ApplicationControllerImplTest : public chromium::cast::ApplicationContext,
+class ApplicationControllerImplTest : public monyhar::cast::ApplicationContext,
                                       public testing::Test {
  public:
   ApplicationControllerImplTest()
@@ -52,12 +52,12 @@ class ApplicationControllerImplTest : public chromium::cast::ApplicationContext,
   ~ApplicationControllerImplTest() override = default;
 
  protected:
-  // chromium::cast::ApplicationContext implementation.
+  // monyhar::cast::ApplicationContext implementation.
   void GetMediaSessionId(GetMediaSessionIdCallback callback) final {
     NOTREACHED();
   }
   void SetApplicationController(
-      fidl::InterfaceHandle<chromium::cast::ApplicationController> application)
+      fidl::InterfaceHandle<monyhar::cast::ApplicationController> application)
       final {
     DCHECK(wait_for_controller_callback_);
 
@@ -69,12 +69,12 @@ class ApplicationControllerImplTest : public chromium::cast::ApplicationContext,
       base::test::SingleThreadTaskEnvironment::MainThreadType::IO};
 
   MockFrame frame_;
-  fidl::Binding<chromium::cast::ApplicationContext>
+  fidl::Binding<monyhar::cast::ApplicationContext>
       application_context_binding_;
-  chromium::cast::ApplicationContextPtr application_context_;
+  monyhar::cast::ApplicationContextPtr application_context_;
   ApplicationControllerImpl application_;
 
-  chromium::cast::ApplicationControllerPtr application_ptr_;
+  monyhar::cast::ApplicationControllerPtr application_ptr_;
   base::OnceClosure wait_for_controller_callback_;
 
  private:
@@ -108,7 +108,7 @@ TEST_F(ApplicationControllerImplTest, GetPrivateMemorySize) {
 
   EXPECT_CALL(frame_, GetPrivateMemorySize(testing::_))
       .WillOnce(
-          [](chromium::cast::ApplicationController::GetPrivateMemorySizeCallback
+          [](monyhar::cast::ApplicationController::GetPrivateMemorySizeCallback
                  callback) { callback(kMockSize); });
 
   base::RunLoop run_loop;

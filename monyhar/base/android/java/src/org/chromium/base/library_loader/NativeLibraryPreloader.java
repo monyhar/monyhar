@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.library_loader;
+package org.monyhar.base.library_loader;
 
 /**
  * This is interface to preload the native library before calling System.loadLibrary.

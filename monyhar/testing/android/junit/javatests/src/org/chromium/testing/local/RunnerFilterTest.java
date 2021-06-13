@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.testing.local;
+package org.monyhar.testing.local;
 
 import org.junit.Assert;
 import org.junit.Test;

@@ -61,7 +61,7 @@ TEST_F(WindowErrorJavaScriptFeatureTest, ReceiveErrorFromMainFramePageHead) {
   EXPECT_EQ(1, error_details()->line_number);
   EXPECT_NSEQ(@"ReferenceError: Can't find variable: nonexistentFunction",
               error_details()->message);
-  EXPECT_EQ("https://chromium.test/", error_details()->url.spec());
+  EXPECT_EQ("https://monyhar.test/", error_details()->url.spec());
   EXPECT_TRUE(error_details()->is_main_frame);
 }
 
@@ -82,7 +82,7 @@ TEST_F(WindowErrorJavaScriptFeatureTest, ReceiveErrorFromMainFramePageBody) {
   EXPECT_EQ(1, error_details()->line_number);
   EXPECT_NSEQ(@"ReferenceError: Can't find variable: nonexistentFunction",
               error_details()->message);
-  EXPECT_EQ("https://chromium.test/", error_details()->url.spec());
+  EXPECT_EQ("https://monyhar.test/", error_details()->url.spec());
   EXPECT_TRUE(error_details()->is_main_frame);
 }
 
@@ -148,7 +148,7 @@ TEST_F(WindowErrorJavaScriptFeatureTest, ReceiveErrorAfterDocumentRecreated) {
   EXPECT_EQ(1, error_details()->line_number);
   EXPECT_NSEQ(@"ReferenceError: Can't find variable: nonexistentFunction",
               error_details()->message);
-  EXPECT_EQ("https://chromium.test/", error_details()->url.spec());
+  EXPECT_EQ("https://monyhar.test/", error_details()->url.spec());
   EXPECT_TRUE(error_details()->is_main_frame);
 }
 

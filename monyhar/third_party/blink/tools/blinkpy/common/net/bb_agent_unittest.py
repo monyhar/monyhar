@@ -20,14 +20,14 @@ class BBAgentTest(unittest.TestCase):
         self._bb_agent.get_latest_finished_build('linux-blink-rel')
         self.assertEqual(self._host.executive.calls[-1],
                          [self._bb_agent.bb_bin_path, 'ls', '-1', '-json',
-                          '-status', 'ended', 'chromium/ci/linux-blink-rel'])
+                          '-status', 'ended', 'monyhar/ci/linux-blink-rel'])
 
     def test_get_latest_try_build(self):
         self._bb_agent.get_latest_finished_build('linux-blink-rel',
                                                  try_build=True)
         self.assertEqual(self._host.executive.calls[-1],
                          [self._bb_agent.bb_bin_path, 'ls', '-1', '-json',
-                          '-status', 'ended', 'chromium/try/linux-blink-rel'])
+                          '-status', 'ended', 'monyhar/try/linux-blink-rel'])
 
     def test_get_build_results(self):
         host = MockHost()

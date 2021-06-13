@@ -6245,7 +6245,7 @@
     <ph name="BR" />
     <ph name="BR" />
     如需详细了解调试功能，请访问：<ph name="BR" />
-    https://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-features
+    https://www.monyhar.org/monyhar-os/how-tos-and-troubleshooting/debugging-features
     <ph name="BR" />
     <ph name="BR" />
     <ph name="BEGIN_BOLD" />注意<ph name="END_BOLD" />：在恢复过程中，系统将会重新启动。</translation>

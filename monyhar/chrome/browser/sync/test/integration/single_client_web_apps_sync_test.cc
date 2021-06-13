@@ -211,8 +211,8 @@ IN_PROC_BROWSER_TEST_F(SingleClientWebAppsSyncTest,
   std::string name = "Test name";
   info.title = base::UTF8ToUTF16(name);
   info.description = u"Test description";
-  info.start_url = GURL("http://www.chromium.org/path");
-  info.scope = GURL("http://www.chromium.org/");
+  info.start_url = GURL("http://www.monyhar.org/path");
+  info.scope = GURL("http://www.monyhar.org/");
   web_app::AppId app_id = apps_helper::InstallWebApp(GetProfile(0), info);
   ASSERT_TRUE(SetupSync());
 

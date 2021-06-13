@@ -488,7 +488,7 @@ IN_PROC_BROWSER_TEST_F(
 // Covers detecting content script injection into an initial empty document.
 //
 // The code below exercises the test steps from "scenario #3" from the "Tracking
-// injections in an initial empty document" section of a @chromium.org document
+// injections in an initial empty document" section of a @monyhar.org document
 // here:
 // https://docs.google.com/document/d/1MFprp2ss2r9RNamJ7Jxva1bvRZvec3rzGceDGoJ6vW0/edit?usp=sharing
 IN_PROC_BROWSER_TEST_F(

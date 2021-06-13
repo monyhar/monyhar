@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.offlinepages;
+package org.monyhar.chrome.browser.offlinepages;
 
-import org.chromium.base.Callback;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.components.browser_ui.share.ShareParams;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.Callback;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.components.browser_ui.share.ShareParams;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * This callback will save the state we need when the JNI call is done, and start the next stage of

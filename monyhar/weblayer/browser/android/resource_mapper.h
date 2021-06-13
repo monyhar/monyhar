@@ -7,7 +7,7 @@
 
 namespace weblayer {
 
-// Converts the given chromium |resource_id| (e.g. IDR_INFOBAR_TRANSLATE) to
+// Converts the given monyhar |resource_id| (e.g. IDR_INFOBAR_TRANSLATE) to
 // an Android drawable resource ID. Returns 0 if a mapping wasn't found.
 int MapToJavaDrawableId(int resource_id);
 

@@ -1,9 +1,9 @@
 // Copyright 2020 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.chrome.browser.password_check;
+package org.monyhar.chrome.browser.password_check;
 
-import org.chromium.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordHistogram;
 
 /**
  * Helper class for recording password check metrics.

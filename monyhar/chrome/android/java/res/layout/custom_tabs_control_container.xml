@@ -2,7 +2,7 @@
 <!-- Copyright 2015 The Chromium Authors. All rights reserved.
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
-<org.chromium.chrome.browser.toolbar.top.ToolbarControlContainer
+<org.monyhar.chrome.browser.toolbar.top.ToolbarControlContainer
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/control_container"
@@ -10,7 +10,7 @@
     android:layout_height="wrap_content"
     android:minHeight="@dimen/custom_tabs_control_container_height" >
     <view
-        class="org.chromium.chrome.browser.toolbar.top.ToolbarControlContainer$ToolbarViewResourceFrameLayout"
+        class="org.monyhar.chrome.browser.toolbar.top.ToolbarControlContainer$ToolbarViewResourceFrameLayout"
         android:id="@+id/toolbar_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -50,4 +50,4 @@
             android:inflatedId="@+id/topbar"
             android:layout="@layout/custom_tabs_topbar" />
     </view>
-</org.chromium.chrome.browser.toolbar.top.ToolbarControlContainer>
+</org.monyhar.chrome.browser.toolbar.top.ToolbarControlContainer>

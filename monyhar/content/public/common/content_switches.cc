@@ -56,7 +56,7 @@ const char kConversionsDebugMode[] = "conversions-debug-mode";
 const char kDisable2dCanvasAntialiasing[]   = "disable-canvas-aa";
 
 // Disables Canvas2D rendering into a scanout buffer for overlay support.
-const char kDisable2dCanvasImageChromium[] = "disable-2d-canvas-image-chromium";
+const char kDisable2dCanvasImageChromium[] = "disable-2d-canvas-image-monyhar";
 
 // Disables client-visible 3D APIs, in particular WebGL and Pepper 3D.
 // This is controlled by policy and is kept separate from the other
@@ -204,7 +204,7 @@ const char kDisablePepper3d[]               = "disable-pepper-3d";
 const char kDisablePermissionsAPI[]         = "disable-permissions-api";
 
 // Disable Image Chromium for Pepper 3d.
-const char kDisablePepper3DImageChromium[] = "disable-pepper-3d-image-chromium";
+const char kDisablePepper3DImageChromium[] = "disable-pepper-3d-image-monyhar";
 
 // Disables compositor-accelerated touch-screen pinch gestures.
 const char kDisablePinch[]                  = "disable-pinch";
@@ -269,7 +269,7 @@ const char kDisableThreadedCompositing[]    = "disable-threaded-compositing";
 const char kDisableV8IdleTasks[]            = "disable-v8-idle-tasks";
 
 // Disables WebGL rendering into a scanout buffer for overlay support.
-const char kDisableWebGLImageChromium[]     = "disable-webgl-image-chromium";
+const char kDisableWebGLImageChromium[]     = "disable-webgl-image-monyhar";
 
 // Don't enforce the same-origin policy; meant for website testing only.
 // This switch has no effect unless --user-data-dir (as defined by the content
@@ -450,7 +450,7 @@ const char kEnableWebAuthDeprecatedMojoTestingApi[] =
 const char kEnableWebGLDraftExtensions[] = "enable-webgl-draft-extensions";
 
 // Enables WebGL rendering into a scanout buffer for overlay support.
-const char kEnableWebGLImageChromium[] = "enable-webgl-image-chromium";
+const char kEnableWebGLImageChromium[] = "enable-webgl-image-monyhar";
 
 // Handle to the shared memory segment containing field trial state that is to
 // be shared between processes. The argument to this switch is the handle id
@@ -467,7 +467,7 @@ const char kFileUrlPathAlias[] = "file-url-path-alias";
 const char kDisableOopRasterization[] = "disable-oop-rasterization";
 
 // Turns on out of process raster for the renderer whenever gpu raster
-// would have been used.  Enables the chromium_raster_transport extension.
+// would have been used.  Enables the monyhar_raster_transport extension.
 const char kEnableOopRasterization[] = "enable-oop-rasterization";
 
 // Forces use of hardware overlay for fullscreen video playback. Useful for
@@ -615,7 +615,7 @@ const char kPpapiStartupDialog[]            = "ppapi-startup-dialog";
 // consolidates same-site pages so that they share a single process.
 //
 // More details here:
-// - https://www.chromium.org/developers/design-documents/process-models
+// - https://www.monyhar.org/developers/design-documents/process-models
 // - The class comment in site_instance.h, listing the supported process models.
 //
 // IMPORTANT: This isn't to be confused with --site-per-process (which is about
@@ -724,8 +724,8 @@ const char kSingleProcess[]                 = "single-process";
 //  * <iframe>s are rendered out-of-process whenever the src= is cross-site.
 //
 // More details here:
-// - https://www.chromium.org/developers/design-documents/site-isolation
-// - https://www.chromium.org/developers/design-documents/process-models
+// - https://www.monyhar.org/developers/design-documents/site-isolation
+// - https://www.monyhar.org/developers/design-documents/process-models
 // - The class comment in site_instance.h, listing the supported process models.
 //
 // IMPORTANT: this isn't to be confused with --process-per-site (which is about

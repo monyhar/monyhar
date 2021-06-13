@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices;
+package org.monyhar.chrome.browser.browserservices;
 
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
@@ -11,12 +11,12 @@ import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.containsString;
 import static org.junit.Assert.assertTrue;
 
-import static org.chromium.chrome.browser.browserservices.TrustedWebActivityTestUtil.createSession;
-import static org.chromium.chrome.browser.browserservices.TrustedWebActivityTestUtil.createTrustedWebActivityIntent;
-import static org.chromium.chrome.browser.browserservices.TrustedWebActivityTestUtil.isTrustedWebActivity;
-import static org.chromium.chrome.browser.browserservices.TrustedWebActivityTestUtil.spoofVerification;
-import static org.chromium.chrome.browser.notifications.NotificationConstants.NOTIFICATION_ID_TWA_DISCLOSURE_INITIAL;
-import static org.chromium.chrome.browser.notifications.NotificationConstants.NOTIFICATION_ID_TWA_DISCLOSURE_SUBSEQUENT;
+import static org.monyhar.chrome.browser.browserservices.TrustedWebActivityTestUtil.createSession;
+import static org.monyhar.chrome.browser.browserservices.TrustedWebActivityTestUtil.createTrustedWebActivityIntent;
+import static org.monyhar.chrome.browser.browserservices.TrustedWebActivityTestUtil.isTrustedWebActivity;
+import static org.monyhar.chrome.browser.browserservices.TrustedWebActivityTestUtil.spoofVerification;
+import static org.monyhar.chrome.browser.notifications.NotificationConstants.NOTIFICATION_ID_TWA_DISCLOSURE_INITIAL;
+import static org.monyhar.chrome.browser.notifications.NotificationConstants.NOTIFICATION_ID_TWA_DISCLOSURE_SUBSEQUENT;
 
 import android.content.Intent;
 
@@ -30,27 +30,27 @@ import org.junit.rules.RuleChain;
 import org.junit.rules.TestRule;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.FlakyTest;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ChromeApplicationImpl;
-import org.chromium.chrome.browser.customtabs.CustomTabActivityTestRule;
-import org.chromium.chrome.browser.dependency_injection.ChromeActivityCommonsModule;
-import org.chromium.chrome.browser.dependency_injection.ModuleOverridesRule;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.ui.messages.snackbar.Snackbar;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.browser_ui.notifications.MockNotificationManagerProxy;
-import org.chromium.components.browser_ui.notifications.MockNotificationManagerProxy.NotificationEntry;
-import org.chromium.components.embedder_support.util.Origin;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.net.test.EmbeddedTestServerRule;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.FlakyTest;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ChromeApplicationImpl;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivityTestRule;
+import org.monyhar.chrome.browser.dependency_injection.ChromeActivityCommonsModule;
+import org.monyhar.chrome.browser.dependency_injection.ModuleOverridesRule;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.ui.messages.snackbar.Snackbar;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.browser_ui.notifications.MockNotificationManagerProxy;
+import org.monyhar.components.browser_ui.notifications.MockNotificationManagerProxy.NotificationEntry;
+import org.monyhar.components.embedder_support.util.Origin;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.net.test.EmbeddedTestServerRule;
 
 import java.util.Arrays;
 import java.util.HashSet;

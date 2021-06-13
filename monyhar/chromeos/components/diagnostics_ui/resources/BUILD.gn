@@ -54,7 +54,7 @@ js_library("battery_status_card") {
     ":mojo_utils",
     ":percent_bar_chart",
     ":routine_section",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
     "//ui/webui/resources/js:load_time_data.m",
   ]
@@ -63,7 +63,7 @@ js_library("battery_status_card") {
 js_library("cellular_info") {
   deps = [
     ":data_point",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -71,7 +71,7 @@ js_library("connectivity_card") {
   deps = [
     ":network_info",
     ":routine_section",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -79,7 +79,7 @@ js_library("cpu_card") {
   deps = [
     ":data_point",
     ":mojo_interface_provider",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
     "//ui/webui/resources/js:load_time_data.m",
   ]
@@ -87,7 +87,7 @@ js_library("cpu_card") {
 
 js_library("data_point") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -96,7 +96,7 @@ js_library("diagnostics_app") {
     ":network_list",
     ":system_page",
     "//ash/content/common/resources:navigation_view_panel",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
     "//ui/webui/resources/js:load_time_data.m",
   ]
@@ -108,7 +108,7 @@ js_library("diagnostics_browser_proxy") {
 
 js_library("diagnostics_card") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -124,7 +124,7 @@ js_library("diagnostics_utils") {
 js_library("ethernet_info") {
   deps = [
     ":data_point",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -163,13 +163,13 @@ js_library("fake_system_routine_controller") {
 
 js_library("icons") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
 js_library("input_list") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -178,7 +178,7 @@ js_library("memory_card") {
     ":data_point",
     ":diagnostics_utils",
     ":mojo_interface_provider",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
     "//ui/webui/resources/js:load_time_data.m",
   ]
@@ -204,7 +204,7 @@ js_library("network_card") {
     ":diagnostics_card",
     ":diagnostics_types",
     ":network_info",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -215,7 +215,7 @@ js_library("network_info") {
     ":ethernet_info",
     ":mojo_interface_provider",
     ":wifi_info",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -225,7 +225,7 @@ js_library("network_list") {
     ":diagnostics_types",
     ":mojo_interface_provider",
     ":network_card",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -233,20 +233,20 @@ js_library("overview_card") {
   deps = [
     ":diagnostics_card",
     ":mojo_interface_provider",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:load_time_data.m",
   ]
 }
 
 js_library("percent_bar_chart") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
 js_library("realtime_cpu_chart") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   externs_list = [ "../../../../third_party/d3/src/externs.js" ]
 }
@@ -257,8 +257,8 @@ js_library("routine_list_executor") {
 
 js_library("routine_result_entry") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/iron-a11y-announcer:iron-a11y-announcer",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-a11y-announcer:iron-a11y-announcer",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:load_time_data.m",
   ]
 }
@@ -266,7 +266,7 @@ js_library("routine_result_entry") {
 js_library("routine_result_list") {
   deps = [
     ":routine_list_executor",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -274,7 +274,7 @@ js_library("routine_section") {
   deps = [
     ":mojo_interface_provider",
     ":routine_result_list",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:load_time_data.m",
   ]
 }
@@ -290,7 +290,7 @@ js_library("system_page") {
     ":memory_card",
     ":mojo_interface_provider",
     ":overview_card",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_button:cr_button.m",
     "//ui/webui/resources/cr_elements/cr_toast:cr_toast.m",
     "//ui/webui/resources/js:i18n_behavior.m",
@@ -300,14 +300,14 @@ js_library("system_page") {
 
 js_library("text_badge") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
 js_library("wifi_info") {
   deps = [
     ":data_point",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 

@@ -16,7 +16,7 @@ luci.bucket(
         ),
         acl.entry(
             roles = acl.BUILDBUCKET_TRIGGERER,
-            groups = "project-chromium-ci-schedulers",
+            groups = "project-monyhar-ci-schedulers",
         ),
         acl.entry(
             roles = acl.BUILDBUCKET_OWNER,
@@ -28,34 +28,34 @@ luci.bucket(
 ci.defaults.set(
     bucket = "reclient",
     build_numbers = True,
-    builder_group = "chromium.reclient.fyi",
+    builder_group = "monyhar.reclient.fyi",
     configure_kitchen = True,
     cores = 8,
     cpu = cpu.X86_64,
-    executable = "recipe:chromium",
+    executable = "recipe:monyhar",
     execution_timeout = 3 * time.hour,
     goma_backend = None,
     kitchen_emulate_gce = True,
     os = os.LINUX_DEFAULT,
-    pool = "luci.chromium.ci",
+    pool = "luci.monyhar.ci",
     service_account = (
-        "chromium-ci-builder@chops-service-accounts.iam.gserviceaccount.com"
+        "monyhar-ci-builder@chops-service-accounts.iam.gserviceaccount.com"
     ),
     swarming_tags = ["vpython:native-python-wrapper"],
-    triggered_by = ["chromium-gitiles-trigger"],
+    triggered_by = ["monyhar-gitiles-trigger"],
 )
 
 consoles.console_view(
-    name = "chromium.reclient.fyi",
+    name = "monyhar.reclient.fyi",
     header = HEADER,
     include_experimental_builds = True,
-    repo = "https://chromium.googlesource.com/chromium/src",
+    repo = "https://monyhar.googlesource.com/monyhar/src",
 )
 
 def fyi_reclient_staging_builder(
         *,
         name,
-        reclient_instance = "rbe-chromium-trusted",
+        reclient_instance = "rbe-monyhar-trusted",
         **kwargs):
     return ci.builder(
         name = name,

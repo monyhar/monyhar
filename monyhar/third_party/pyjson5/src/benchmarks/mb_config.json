@@ -676,7 +676,7 @@
     "codesearch": [
       "error"
     ], 
-    "codesearch_gen_chromium_android_bot": [
+    "codesearch_gen_monyhar_android_bot": [
       "goma", 
       "clang", 
       "shared", 
@@ -685,7 +685,7 @@
       "arm", 
       "android_without_codecs"
     ], 
-    "codesearch_gen_chromium_chromiumos_bot": [
+    "codesearch_gen_monyhar_monyharos_bot": [
       "goma", 
       "clang", 
       "shared", 
@@ -694,7 +694,7 @@
       "x64", 
       "chromeos"
     ], 
-    "codesearch_gen_chromium_linux_bot": [
+    "codesearch_gen_monyhar_linux_bot": [
       "goma", 
       "clang", 
       "shared", 
@@ -872,7 +872,7 @@
     "ios": [
       "error"
     ], 
-    "linux_chromium_analysis": [
+    "linux_monyhar_analysis": [
       "analysis"
     ], 
     "mac_views_browser_release_bot": [
@@ -1161,13 +1161,13 @@
       "x86", 
       "win_analyze"
     ], 
-    "windows_chromium_analysis": [
+    "windows_monyhar_analysis": [
       "analysis"
     ]
   }, 
   "luci_tryservers": {
-    "chromium.try": [
-      "LUCI linux_chromium_rel_ng"
+    "monyhar.try": [
+      "LUCI linux_monyhar_rel_ng"
     ]
   }, 
   "masters": {
@@ -1176,14 +1176,14 @@
       "Linux ChromeOS Buildspec Tests": "chromeos_with_codecs_release_bot", 
       "chrome-tot-chromeos-amd64-generic": "cros_chrome_sdk"
     }, 
-    "chromium": {
+    "monyhar": {
       "Android": "android_without_codecs_release_bot_minimal_symbols", 
       "Linux x64": "release_bot", 
       "Mac": "release_bot_mac_strip", 
       "Win": "release_bot_x86_minimal_symbols", 
       "Win x64": "release_bot_minimal_symbols"
     }, 
-    "chromium.android": {
+    "monyhar.android": {
       "Android Cronet ARM64 Builder": "android_cronet_release_bot_minimal_symbols_arm64", 
       "Android Cronet ARM64 Builder (dbg)": "android_cronet_debug_static_bot_arm64", 
       "Android Cronet ARMv6 Builder": "android_cronet_release_bot_minimal_symbols_armv6", 
@@ -1205,7 +1205,7 @@
       "Android x64 Builder (dbg)": "android_debug_static_bot_x64", 
       "Android x86 Builder (dbg)": "android_debug_static_bot_x86"
     }, 
-    "chromium.android.fyi": {
+    "monyhar.android.fyi": {
       "Memory Infra Tester": "android_release_thumb_bot", 
       "NDK Next MIPS Builder": "android_ndk_next_release_bot_minimal_symbols_mipsel", 
       "NDK Next arm Builder": "android_ndk_next_release_bot_minimal_symbols", 
@@ -1216,19 +1216,19 @@
       "x86 Cloud Tester": "android_debug_static_bot_x86", 
       "x86 Emulator Tester": "android_debug_static_bot_x86"
     }, 
-    "chromium.chrome": {
+    "monyhar.chrome": {
       "Google Chrome ChromeOS": "official_goma_chromeos", 
       "Google Chrome Linux x64": "official_goma", 
       "Google Chrome Mac": "official_goma", 
       "Google Chrome Win": "official_goma_x86"
     }, 
-    "chromium.chromedriver": {
+    "monyhar.chromedriver": {
       "Linux": "release_bot", 
       "Linux32": "release_bot_x86", 
       "Mac 10.6": "release_bot", 
       "Win7": "release_bot_x86_minimal_symbols"
     }, 
-    "chromium.chromiumos": {
+    "monyhar.monyharos": {
       "ChromiumOS amd64-generic Compile": "cros_chrome_sdk", 
       "ChromiumOS daisy Compile": "cros_chrome_sdk", 
       "Linux ChromiumOS Builder": "chromeos_with_codecs_release_bot", 
@@ -1236,7 +1236,7 @@
       "Linux ChromiumOS Full": "chromeos_with_codecs_release_bot", 
       "Linux ChromiumOS Ozone Builder": "chromeos_with_codecs_release_bot"
     }, 
-    "chromium.fyi": {
+    "monyhar.fyi": {
       "Afl Upload Linux ASan": "release_afl_asan", 
       "Android Builder (dbg)": "android_debug_static_bot_vrdata", 
       "Android Builder Goma Canary (dbg)": "android_debug_bot", 
@@ -1328,7 +1328,7 @@
       "Linux ARM (dbg)": "debug_bot_arm", 
       "Linux ARM64": "release_bot_arm64", 
       "Linux ARM64 (dbg)": "debug_bot_arm64", 
-      "Linux Clang Analyzer": "linux_chromium_analysis", 
+      "Linux Clang Analyzer": "linux_monyhar_analysis", 
       "Linux deterministic": "release_bot", 
       "Linux deterministic (dbg)": "debug_bot", 
       "Linux remote_run Builder": "release_bot", 
@@ -1356,19 +1356,19 @@
       "WebKit Mac - RandomOrder": "release_trybot", 
       "WebKit Win - RandomOrder": "release_bot_x86_minimal_symbols", 
       "Win 10 Fast Ring": "release_trybot", 
-      "Windows Clang Analyzer": "windows_chromium_analysis", 
+      "Windows Clang Analyzer": "windows_monyhar_analysis", 
       "Windows Clang deterministic": "clang_release_bot_minimal_symbols_x86", 
       "Windows deterministic": "release_bot_x86_minimal_symbols", 
       "ios-simulator": "ios"
     }, 
-    "chromium.goma": {
+    "monyhar.goma": {
       "Chromium Linux Goma GCE Staging": "release_bot", 
       "Chromium Linux Goma Staging": "release_bot", 
       "Chromium Mac Goma GCE Staging": "release_bot", 
       "Chromium Mac Goma Staging": "release_bot", 
       "CrWinGomaStaging": "release_bot_x86_minimal_symbols"
     }, 
-    "chromium.gpu": {
+    "monyhar.gpu": {
       "GPU Linux Builder": "gpu_tests_release_trybot", 
       "GPU Linux Builder (dbg)": "gpu_tests_debug_trybot", 
       "GPU Mac Builder": "gpu_tests_release_trybot", 
@@ -1376,7 +1376,7 @@
       "GPU Win Builder": "gpu_tests_release_trybot_x86_minimal_symbols", 
       "GPU Win Builder (dbg)": "gpu_tests_debug_trybot_x86_minimal_symbols"
     }, 
-    "chromium.gpu.fyi": {
+    "monyhar.gpu.fyi": {
       "Android Release (NVIDIA Shield TV)": "android_release_trybot_arm64", 
       "Android Release (Nexus 5)": "android_release_trybot", 
       "Android Release (Nexus 5X)": "gpu_tests_deqp_android_release_trybot_arm64", 
@@ -1397,19 +1397,19 @@
       "Linux GPU TSAN Release": "gpu_fyi_tests_release_trybot_tsan", 
       "Mac GPU ASAN Release": "gpu_fyi_tests_release_trybot_asan"
     }, 
-    "chromium.infra.codesearch": {
-      "codesearch-gen-chromium-android": {
-        "android": "codesearch_gen_chromium_android_bot"
+    "monyhar.infra.codesearch": {
+      "codesearch-gen-monyhar-android": {
+        "android": "codesearch_gen_monyhar_android_bot"
       }, 
-      "codesearch-gen-chromium-chromiumos": {
-        "chromeos": "codesearch_gen_chromium_chromiumos_bot", 
-        "linux": "codesearch_gen_chromium_linux_bot"
+      "codesearch-gen-monyhar-monyharos": {
+        "chromeos": "codesearch_gen_monyhar_monyharos_bot", 
+        "linux": "codesearch_gen_monyhar_linux_bot"
       }, 
-      "codesearch-gen-chromium-linux": {
-        "linux": "codesearch_gen_chromium_linux_bot"
+      "codesearch-gen-monyhar-linux": {
+        "linux": "codesearch_gen_monyhar_linux_bot"
       }
     }, 
-    "chromium.linux": {
+    "monyhar.linux": {
       "Android Arm64 Builder (dbg)": "android_debug_static_bot_arm64", 
       "Android Builder": "android_release_bot_minimal_symbols", 
       "Android Builder (dbg)": "android_debug_static_bot", 
@@ -1424,7 +1424,7 @@
       "Linux Builder (dbg)": "debug_bot", 
       "Linux Builder (dbg)(32)": "debug_bot_x86"
     }, 
-    "chromium.lkgr": {
+    "monyhar.lkgr": {
       "ASAN Debug": "asan_lsan_edge_debug_bot", 
       "ASAN Release": "asan_lsan_edge_fuzzer_v8_heap_release_bot", 
       "ASAN Release Media": "asan_lsan_edge_fuzzer_v8_heap_chromeos_codecs_release_bot", 
@@ -1446,7 +1446,7 @@
       "Win ASan Release Media": "asan_fuzzer_v8_heap_chrome_with_codecs_release_bot_x86", 
       "Win SyzyASAN LKGR": "syzyasan_no_pch_release_x86"
     }, 
-    "chromium.mac": {
+    "monyhar.mac": {
       "Mac Builder": "gpu_tests_release_bot", 
       "Mac Builder (dbg)": "debug_bot", 
       "ios-device": "ios", 
@@ -1456,7 +1456,7 @@
       "ios-simulator-eg": "ios", 
       "ios-simulator-xcode-clang": "ios"
     }, 
-    "chromium.memory": {
+    "monyhar.memory": {
       "Linux ASan LSan Builder": "asan_lsan_release_trybot", 
       "Linux CFI": "cfi_full_cfi_diag_thin_lto_release_static_dcheck_always_on_goma", 
       "Linux Chromium OS ASan LSan Builder": "asan_lsan_chromeos_release_trybot", 
@@ -1465,7 +1465,7 @@
       "Linux TSan Builder": "tsan_disable_nacl_release_bot", 
       "Mac ASan 64 Builder": "asan_full_symbols_disable_nacl_release_bot_dcheck_always_on"
     }, 
-    "chromium.perf": {
+    "monyhar.perf": {
       "Android Builder": "official_goma_minimal_symbols_android", 
       "Android Compile": "official_goma_minimal_symbols_android", 
       "Android arm64 Builder": "official_goma_minimal_symbols_android_arm64", 
@@ -1475,7 +1475,7 @@
       "Win Builder": "official_goma_x86", 
       "Win x64 Builder": "official_goma"
     }, 
-    "chromium.perf.fyi": {
+    "monyhar.perf.fyi": {
       "Android Builder FYI": "official_goma_minimal_symbols_android", 
       "Android arm64 Builder FYI": "official_goma_minimal_symbols_android_arm64", 
       "Battor Agent Linux": "official_goma_minimal_symbols_clang", 
@@ -1484,14 +1484,14 @@
       "Win Builder FYI": "official_goma", 
       "Win Clang Builder": "official_goma_minimal_symbols_clang"
     }, 
-    "chromium.swarm": {
+    "monyhar.swarm": {
       "Android N5 Swarm": "android_release_bot_minimal_symbols", 
       "Android N5X Swarm": "android_release_bot_minimal_symbols_arm64", 
       "Linux Swarm": "release_bot", 
       "Mac Swarm": "release_bot_mac_strip", 
       "Windows Swarm": "release_bot_x86_minimal_symbols"
     }, 
-    "chromium.webkit": {
+    "monyhar.webkit": {
       "Android Builder": "android_release_bot_minimal_symbols", 
       "WebKit Linux Trusty": "release_bot", 
       "WebKit Linux Trusty (dbg)": "debug_bot", 
@@ -1508,12 +1508,12 @@
       "WebKit Win x64 Builder": "release_bot_minimal_symbols", 
       "WebKit Win x64 Builder (dbg)": "debug_bot_minimal_symbols"
     }, 
-    "chromium.webrtc": {
+    "monyhar.webrtc": {
       "Linux Builder": "release_bot_chrome_with_codecs", 
       "Mac Builder": "release_bot_chrome_with_codecs", 
       "Win Builder": "release_bot_x86_minimal_symbols"
     }, 
-    "chromium.webrtc.fyi": {
+    "monyhar.webrtc.fyi": {
       "Android Builder": "android_release_bot_minimal_symbols", 
       "Android Builder (dbg)": "android_debug_static_bot", 
       "Android Builder ARM64 (dbg)": "android_debug_static_bot_arm64", 
@@ -1524,7 +1524,7 @@
       "Win Builder": "release_bot_x86_minimal_symbols", 
       "Win Builder (dbg)": "debug_bot_x86_minimal_symbols"
     }, 
-    "chromium.win": {
+    "monyhar.win": {
       "Win Builder": "release_bot_x86_minimal_symbols", 
       "Win Builder (dbg)": "debug_bot_x86_minimal_symbols", 
       "Win x64 Builder": "release_bot_minimal_symbols", 
@@ -1540,7 +1540,7 @@
       "windows-sdk-multi": "release_bot_x86_minimal_symbols", 
       "windows-sdk-multirel": "release_bot_x86_minimal_symbols"
     }, 
-    "client.v8.chromium": {
+    "client.v8.monyhar": {
       "Linux - Future": "v8_future_release_bot", 
       "Linux - Future (dbg)": "v8_future_debug_bot", 
       "Linux V8 API Stability": "release_bot"
@@ -1588,7 +1588,7 @@
       "win7_blink_dbg": "debug_trybot_x86_minimal_symbols", 
       "win7_blink_rel": "release_bot_x86_minimal_symbols"
     }, 
-    "tryserver.chromium.android": {
+    "tryserver.monyhar.android": {
       "android_archive_rel_ng": "android_release_trybot", 
       "android_arm64_dbg_recipe": "android_debug_trybot_arm64", 
       "android_blink_rel": "android_release_trybot", 
@@ -1610,7 +1610,7 @@
       "linux_android_dbg_ng": "android_debug_trybot", 
       "linux_android_rel_ng": "android_release_trybot"
     }, 
-    "tryserver.chromium.angle": {
+    "tryserver.monyhar.angle": {
       "android_angle_rel_ng": "gpu_tests_deqp_android_release_trybot_arm64", 
       "linux_angle_chromeos_rel_ng": "gpu_fyi_tests_chromeos_cros_release_trybot", 
       "linux_angle_dbg_ng": "gpu_fyi_tests_debug_trybot", 
@@ -1622,14 +1622,14 @@
       "win_angle_x64_dbg_ng": "gpu_tests_deqp_gles_debug_trybot", 
       "win_angle_x64_rel_ng": "gpu_tests_deqp_gles_release_trybot"
     }, 
-    "tryserver.chromium.linux": {
+    "tryserver.monyhar.linux": {
       "Chromium Linux Codesearch Builder": "codesearch", 
       "ChromiumOS Codesearch Builder": "codesearch", 
       "cast_shell_audio_linux": "cast_audio_release_trybot", 
       "cast_shell_linux": "cast_release_trybot", 
-      "chromeos_amd64-generic_chromium_compile_only_ng": "cros_chrome_sdk", 
-      "chromeos_daisy_chromium_compile_only_ng": "cros_chrome_sdk", 
-      "chromium_presubmit": "presubmit", 
+      "chromeos_amd64-generic_monyhar_compile_only_ng": "cros_chrome_sdk", 
+      "chromeos_daisy_monyhar_compile_only_ng": "cros_chrome_sdk", 
+      "monyhar_presubmit": "presubmit", 
       "closure_compilation": "closure_compilation", 
       "fuchsia": "release_trybot_fuchsia", 
       "fuchsia_compile": "release_trybot_fuchsia", 
@@ -1638,32 +1638,32 @@
       "linux_arm64_rel": "release_trybot_arm64", 
       "linux_arm_dbg": "debug_trybot_arm", 
       "linux_arm_rel": "release_trybot_arm", 
-      "linux_chromium_archive_rel_ng": "release_bot", 
-      "linux_chromium_asan_rel_ng": "asan_lsan_release_trybot", 
-      "linux_chromium_browser_side_navigation_rel": "release_trybot", 
-      "linux_chromium_cfi_rel_ng": "cfi_full_cfi_diag_thin_lto_release_static_dcheck_always_on_goma", 
-      "linux_chromium_chromeos_asan_rel_ng": "asan_lsan_chromeos_release_trybot", 
-      "linux_chromium_chromeos_compile_dbg_ng": "chromeos_with_codecs_debug_trybot", 
-      "linux_chromium_chromeos_compile_rel_ng": "chromeos_with_codecs_release_trybot", 
-      "linux_chromium_chromeos_dbg_ng": "chromeos_with_codecs_debug_trybot", 
-      "linux_chromium_chromeos_msan_rel_ng": "chromeos_msan_release_bot", 
-      "linux_chromium_chromeos_ozone_rel_ng": "chromeos_with_codecs_release_trybot", 
-      "linux_chromium_chromeos_rel_ng": "chromeos_with_codecs_release_trybot", 
-      "linux_chromium_clobber_deterministic": "release_trybot", 
-      "linux_chromium_clobber_rel_ng": "release_trybot", 
-      "linux_chromium_compile_dbg_32_ng": "debug_trybot_x86", 
-      "linux_chromium_compile_dbg_ng": "debug_trybot", 
-      "linux_chromium_compile_rel_ng": "release_trybot", 
-      "linux_chromium_dbg_32_ng": "debug_trybot_x86", 
-      "linux_chromium_dbg_ng": "debug_trybot", 
-      "linux_chromium_gn_upload": "gn_linux_upload", 
-      "linux_chromium_headless_rel": "headless_linux_release_trybot", 
-      "linux_chromium_msan_rel_ng": "msan_release_bot", 
-      "linux_chromium_ozone_compile_only_ng": "ozone_linux_release_trybot", 
-      "linux_chromium_ozone_ng": "ozone_linux_release_trybot", 
-      "linux_chromium_rel_ng": "gpu_tests_release_trybot", 
-      "linux_chromium_tsan_rel_ng": "tsan_disable_nacl_release_trybot", 
-      "linux_chromium_ubsan_rel_ng": "ubsan_vptr_release_trybot", 
+      "linux_monyhar_archive_rel_ng": "release_bot", 
+      "linux_monyhar_asan_rel_ng": "asan_lsan_release_trybot", 
+      "linux_monyhar_browser_side_navigation_rel": "release_trybot", 
+      "linux_monyhar_cfi_rel_ng": "cfi_full_cfi_diag_thin_lto_release_static_dcheck_always_on_goma", 
+      "linux_monyhar_chromeos_asan_rel_ng": "asan_lsan_chromeos_release_trybot", 
+      "linux_monyhar_chromeos_compile_dbg_ng": "chromeos_with_codecs_debug_trybot", 
+      "linux_monyhar_chromeos_compile_rel_ng": "chromeos_with_codecs_release_trybot", 
+      "linux_monyhar_chromeos_dbg_ng": "chromeos_with_codecs_debug_trybot", 
+      "linux_monyhar_chromeos_msan_rel_ng": "chromeos_msan_release_bot", 
+      "linux_monyhar_chromeos_ozone_rel_ng": "chromeos_with_codecs_release_trybot", 
+      "linux_monyhar_chromeos_rel_ng": "chromeos_with_codecs_release_trybot", 
+      "linux_monyhar_clobber_deterministic": "release_trybot", 
+      "linux_monyhar_clobber_rel_ng": "release_trybot", 
+      "linux_monyhar_compile_dbg_32_ng": "debug_trybot_x86", 
+      "linux_monyhar_compile_dbg_ng": "debug_trybot", 
+      "linux_monyhar_compile_rel_ng": "release_trybot", 
+      "linux_monyhar_dbg_32_ng": "debug_trybot_x86", 
+      "linux_monyhar_dbg_ng": "debug_trybot", 
+      "linux_monyhar_gn_upload": "gn_linux_upload", 
+      "linux_monyhar_headless_rel": "headless_linux_release_trybot", 
+      "linux_monyhar_msan_rel_ng": "msan_release_bot", 
+      "linux_monyhar_ozone_compile_only_ng": "ozone_linux_release_trybot", 
+      "linux_monyhar_ozone_ng": "ozone_linux_release_trybot", 
+      "linux_monyhar_rel_ng": "gpu_tests_release_trybot", 
+      "linux_monyhar_tsan_rel_ng": "tsan_disable_nacl_release_trybot", 
+      "linux_monyhar_ubsan_rel_ng": "ubsan_vptr_release_trybot", 
       "linux_layout_tests_layout_ng": "release_bot", 
       "linux_layout_tests_slimming_paint_v2": "release_trybot", 
       "linux_mojo": "release_trybot", 
@@ -1674,28 +1674,28 @@
       "linux_site_isolation": "release_trybot", 
       "linux_upload_clang": "release_bot"
     }, 
-    "tryserver.chromium.mac": {
+    "tryserver.monyhar.mac": {
       "ios-device": "ios", 
       "ios-device-xcode-clang": "ios", 
       "ios-simulator": "ios", 
       "ios-simulator-cronet": "ios", 
       "ios-simulator-eg": "ios", 
       "ios-simulator-xcode-clang": "ios", 
-      "mac_chromium_10.10_macviews": "mac_views_browser_release_trybot", 
-      "mac_chromium_10.12_rel_ng": "gpu_tests_release_trybot", 
-      "mac_chromium_archive_rel_ng": "release_bot_mac_strip", 
-      "mac_chromium_asan_rel_ng": "asan_dcheck_disable_nacl_release_bot", 
-      "mac_chromium_compile_dbg_ng": "debug_trybot", 
-      "mac_chromium_compile_rel_ng": "gpu_tests_release_trybot", 
-      "mac_chromium_dbg_ng": "debug_trybot", 
-      "mac_chromium_gn_upload": "release_bot", 
-      "mac_chromium_rel_ng": "gpu_tests_release_trybot", 
+      "mac_monyhar_10.10_macviews": "mac_views_browser_release_trybot", 
+      "mac_monyhar_10.12_rel_ng": "gpu_tests_release_trybot", 
+      "mac_monyhar_archive_rel_ng": "release_bot_mac_strip", 
+      "mac_monyhar_asan_rel_ng": "asan_dcheck_disable_nacl_release_bot", 
+      "mac_monyhar_compile_dbg_ng": "debug_trybot", 
+      "mac_monyhar_compile_rel_ng": "gpu_tests_release_trybot", 
+      "mac_monyhar_dbg_ng": "debug_trybot", 
+      "mac_monyhar_gn_upload": "release_bot", 
+      "mac_monyhar_rel_ng": "gpu_tests_release_trybot", 
       "mac_nacl_sdk": "release_bot", 
       "mac_nacl_sdk_build": "release_bot", 
       "mac_optional_gpu_tests_rel": "gpu_fyi_tests_release_trybot", 
       "mac_upload_clang": "release_bot"
     }, 
-    "tryserver.chromium.perf": {
+    "tryserver.monyhar.perf": {
       "Mac Builder": "official_goma", 
       "android_arm64_perf_bisect_builder": "official_goma_minimal_symbols_android_arm64", 
       "android_fyi_perf_bisect": "official_goma_minimal_symbols_android", 
@@ -1732,19 +1732,19 @@
       "winx64intel_perf_bisect": "official_goma", 
       "winx64nvidia_perf_bisect": "official_goma"
     }, 
-    "tryserver.chromium.win": {
-      "win10_chromium_x64_rel_ng": "release_trybot", 
-      "win10_chromium_x64_rel_ng_exp": "release_trybot", 
+    "tryserver.monyhar.win": {
+      "win10_monyhar_x64_rel_ng": "release_trybot", 
+      "win10_monyhar_x64_rel_ng_exp": "release_trybot", 
       "win10_gce_x64_rel": "release_bot_minimal_symbols", 
-      "win8_chromium_gn_upload": "release_bot_x86_minimal_symbols", 
+      "win8_monyhar_gn_upload": "release_bot_x86_minimal_symbols", 
       "win_archive": "release_trybot_x86", 
       "win_chrome_official": "official_goma_x86", 
-      "win_chromium_compile_dbg_ng": "debug_trybot_x86_minimal_symbols", 
-      "win_chromium_compile_rel_ng": "gpu_tests_release_trybot_x86_minimal_symbols", 
-      "win_chromium_dbg_ng": "debug_trybot_x86_minimal_symbols", 
-      "win_chromium_rel_ng": "gpu_tests_release_trybot_x86_minimal_symbols", 
-      "win_chromium_syzyasan_rel": "syzyasan_no_pch_release_x86", 
-      "win_chromium_x64_rel_ng": "release_trybot_minimal_symbols", 
+      "win_monyhar_compile_dbg_ng": "debug_trybot_x86_minimal_symbols", 
+      "win_monyhar_compile_rel_ng": "gpu_tests_release_trybot_x86_minimal_symbols", 
+      "win_monyhar_dbg_ng": "debug_trybot_x86_minimal_symbols", 
+      "win_monyhar_rel_ng": "gpu_tests_release_trybot_x86_minimal_symbols", 
+      "win_monyhar_syzyasan_rel": "syzyasan_no_pch_release_x86", 
+      "win_monyhar_x64_rel_ng": "release_trybot_minimal_symbols", 
       "win_clang": "win_clang_release_bot", 
       "win_clang_dbg": "clang_debug_trybot_x86", 
       "win_clang_rel": "clang_official_release_trybot_x86", 
@@ -1766,9 +1766,9 @@
       "win_x64_archive": "release_trybot"
     }, 
     "tryserver.v8": {
-      "v8_android_chromium_gn_dbg": "android_debug_bot", 
+      "v8_android_monyhar_gn_dbg": "android_debug_bot", 
       "v8_linux_blink_rel": "release_trybot", 
-      "v8_linux_chromium_gn_rel": "release_trybot"
+      "v8_linux_monyhar_gn_rel": "release_trybot"
     }
   }, 
   "mixins": {
@@ -1966,7 +1966,7 @@
       "gn_args": "internal_gles2_conform_tests=true"
     }, 
     "java_coverage": {
-      "gn_args": "emma_coverage=true emma_filter=\"org.chromium.*\""
+      "gn_args": "emma_coverage=true emma_filter=\"org.monyhar.*\""
     }, 
     "libfuzzer": {
       "gn_args": "use_libfuzzer=true"

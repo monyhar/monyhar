@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.continuous_search;
+package org.monyhar.chrome.browser.continuous_search;
 
 import static org.hamcrest.Matchers.lessThan;
 import static org.mockito.ArgumentMatchers.any;
@@ -34,23 +34,23 @@ import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 import org.mockito.quality.Strictness;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.UserDataHost;
-import org.chromium.base.supplier.ObservableSupplierImpl;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsStateProvider;
-import org.chromium.chrome.browser.layouts.LayoutManager;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.theme.ThemeColorProvider;
-import org.chromium.components.url_formatter.UrlFormatter;
-import org.chromium.components.url_formatter.UrlFormatterJni;
-import org.chromium.ui.resources.ResourceManager;
-import org.chromium.ui.resources.dynamics.DynamicResourceLoader;
-import org.chromium.ui.resources.dynamics.ViewResourceAdapter;
-import org.chromium.url.GURL;
-import org.chromium.url.JUnitTestGURLs;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.UserDataHost;
+import org.monyhar.base.supplier.ObservableSupplierImpl;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsStateProvider;
+import org.monyhar.chrome.browser.layouts.LayoutManager;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.theme.ThemeColorProvider;
+import org.monyhar.components.url_formatter.UrlFormatter;
+import org.monyhar.components.url_formatter.UrlFormatterJni;
+import org.monyhar.ui.resources.ResourceManager;
+import org.monyhar.ui.resources.dynamics.DynamicResourceLoader;
+import org.monyhar.ui.resources.dynamics.ViewResourceAdapter;
+import org.monyhar.url.GURL;
+import org.monyhar.url.JUnitTestGURLs;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -129,7 +129,7 @@ public class ContinuousSearchContainerCoordinatorTest {
         viewStub.setId(STUB_ID);
         viewStub.setInflatedId(INFLATED_ID);
         viewStub.setLayoutResource(
-                org.chromium.chrome.browser.continuous_search.R.layout.continuous_search_container);
+                org.monyhar.chrome.browser.continuous_search.R.layout.continuous_search_container);
         mRoot.addView(viewStub);
         mAnimateNativeControls = () -> {
             return mAnimateNativeControlsValue;

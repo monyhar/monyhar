@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 //------------------------------------------------
-// Functions from libva-x11 used in chromium code.
+// Functions from libva-x11 used in monyhar code.
 //------------------------------------------------
 VADisplay vaGetDisplay(Display *dpy);
 VAStatus vaPutSurface(VADisplay dpy, VASurfaceID surface, Drawable draw, short srcx, short srcy, unsigned short srcw, unsigned short srch, short destx, short desty, unsigned short destw, unsigned short desth, VARectangle *cliprects, unsigned int number_cliprects, unsigned int flags);

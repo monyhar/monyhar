@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download;
+package org.monyhar.chrome.browser.download;
 
 import android.net.Uri;
 
-import org.chromium.components.browser_ui.util.DownloadUtils;
-import org.chromium.components.download.DownloadDelegate;
+import org.monyhar.components.browser_ui.util.DownloadUtils;
+import org.monyhar.components.download.DownloadDelegate;
 
 /**
  * Utility class that implements DownloadDelegate.

@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private.interfaces;
+package org.monyhar.weblayer_private.interfaces;
 
 import android.content.Intent;
-import org.chromium.weblayer_private.interfaces.IClientDownload;
-import org.chromium.weblayer_private.interfaces.IDownload;
-import org.chromium.weblayer_private.interfaces.IObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.IClientDownload;
+import org.monyhar.weblayer_private.interfaces.IDownload;
+import org.monyhar.weblayer_private.interfaces.IObjectWrapper;
 
 /**
  * Used to forward download requests to the client.

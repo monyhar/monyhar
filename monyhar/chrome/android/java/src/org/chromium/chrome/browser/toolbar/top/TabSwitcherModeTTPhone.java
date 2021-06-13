@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar.top;
+package org.monyhar.chrome.browser.toolbar.top;
 
 import android.animation.Animator;
 import android.animation.ObjectAnimator;
@@ -16,22 +16,22 @@ import android.view.ViewStub;
 import androidx.annotation.Nullable;
 import androidx.appcompat.content.res.AppCompatResources;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.device.DeviceClassManager;
-import org.chromium.chrome.browser.incognito.IncognitoUtils;
-import org.chromium.chrome.browser.tabmodel.IncognitoStateProvider;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.toolbar.IncognitoToggleTabLayout;
-import org.chromium.chrome.browser.toolbar.NewTabButton;
-import org.chromium.chrome.browser.toolbar.TabCountProvider;
-import org.chromium.components.browser_ui.styles.ChromeColors;
-import org.chromium.components.browser_ui.widget.animation.CancelAwareAnimatorListener;
-import org.chromium.components.browser_ui.widget.animation.Interpolators;
-import org.chromium.components.browser_ui.widget.highlight.ViewHighlighter;
-import org.chromium.components.browser_ui.widget.highlight.ViewHighlighter.HighlightParams;
-import org.chromium.components.browser_ui.widget.highlight.ViewHighlighter.HighlightShape;
-import org.chromium.ui.util.ColorUtils;
-import org.chromium.ui.widget.OptimizedFrameLayout;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.device.DeviceClassManager;
+import org.monyhar.chrome.browser.incognito.IncognitoUtils;
+import org.monyhar.chrome.browser.tabmodel.IncognitoStateProvider;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.toolbar.IncognitoToggleTabLayout;
+import org.monyhar.chrome.browser.toolbar.NewTabButton;
+import org.monyhar.chrome.browser.toolbar.TabCountProvider;
+import org.monyhar.components.browser_ui.styles.ChromeColors;
+import org.monyhar.components.browser_ui.widget.animation.CancelAwareAnimatorListener;
+import org.monyhar.components.browser_ui.widget.animation.Interpolators;
+import org.monyhar.components.browser_ui.widget.highlight.ViewHighlighter;
+import org.monyhar.components.browser_ui.widget.highlight.ViewHighlighter.HighlightParams;
+import org.monyhar.components.browser_ui.widget.highlight.ViewHighlighter.HighlightShape;
+import org.monyhar.ui.util.ColorUtils;
+import org.monyhar.ui.widget.OptimizedFrameLayout;
 
 /** The tab switcher mode top toolbar shown on phones. */
 public class TabSwitcherModeTTPhone extends OptimizedFrameLayout

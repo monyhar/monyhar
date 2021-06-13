@@ -35,7 +35,7 @@ namespace security_state {
 // LocationBarModelImpl::GetVectorIcon and GetIconForSecurityState.
 //
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.security_state
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.security_state
 // GENERATED_JAVA_CLASS_NAME_OVERRIDE: ConnectionSecurityLevel
 enum SecurityLevel {
   // Neutral; neither positively secure nor insecure. Used for e.g. some types
@@ -113,7 +113,7 @@ enum MaliciousContentStatus {
 //
 // Style note: this differs from other enums in this file to follow new
 // histogram enum naming conventions
-// (https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md#usage).
+// (https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md#usage).
 enum class SafetyTipStatus {
   // Safety tip status is not applicable, e.g. there is no current navigation.
   kUnknown = 0,

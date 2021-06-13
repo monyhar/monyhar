@@ -33,9 +33,9 @@ name                                         | input                       | out
 Note 1: While CityHash is not guaranteed unchanging forever, the version used in
 Chrome is pinned to version 1.0.3.
 
-[hash]: https://cs.chromium.org/chromium/src/base/hash/hash.h?l=26
-[persistenthash]: https://cs.chromium.org/chromium/src/base/hash/hash.h?l=36
-[cityhash64]: https://cs.chromium.org/chromium/src/base/hash/city_v103.h?l=19
-[cityhash64withseed]: https://cs.chromium.org/chromium/src/base/hash/city_v103.h?l=20
-[md5string]: https://cs.chromium.org/chromium/src/base/hash/md5.h?l=74
-[sha1string]: https://cs.chromium.org/chromium/src/base/hash/sha1.h?l=22
+[hash]: https://cs.monyhar.org/monyhar/src/base/hash/hash.h?l=26
+[persistenthash]: https://cs.monyhar.org/monyhar/src/base/hash/hash.h?l=36
+[cityhash64]: https://cs.monyhar.org/monyhar/src/base/hash/city_v103.h?l=19
+[cityhash64withseed]: https://cs.monyhar.org/monyhar/src/base/hash/city_v103.h?l=20
+[md5string]: https://cs.monyhar.org/monyhar/src/base/hash/md5.h?l=74
+[sha1string]: https://cs.monyhar.org/monyhar/src/base/hash/sha1.h?l=22

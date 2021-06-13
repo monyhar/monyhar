@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.signin.ui.account_picker;
+package org.monyhar.chrome.browser.signin.ui.account_picker;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -17,11 +17,11 @@ import androidx.annotation.StringRes;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.chrome.browser.signin.services.DisplayableProfileData;
-import org.chromium.chrome.browser.signin.ui.R;
-import org.chromium.chrome.browser.signin.ui.account_picker.AccountPickerBottomSheetProperties.ViewState;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetContent;
-import org.chromium.ui.widget.ButtonCompat;
+import org.monyhar.chrome.browser.signin.services.DisplayableProfileData;
+import org.monyhar.chrome.browser.signin.ui.R;
+import org.monyhar.chrome.browser.signin.ui.account_picker.AccountPickerBottomSheetProperties.ViewState;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetContent;
+import org.monyhar.ui.widget.ButtonCompat;
 
 /**
  * This class is the AccountPickerBottomsheet view for the web sign-in flow.

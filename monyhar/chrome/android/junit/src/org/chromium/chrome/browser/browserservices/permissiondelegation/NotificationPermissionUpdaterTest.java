@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.permissiondelegation;
+package org.monyhar.chrome.browser.browserservices.permissiondelegation;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyBoolean;
@@ -30,12 +30,12 @@ import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowPackageManager;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.browserservices.TrustedWebActivityClient;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.components.embedder_support.util.Origin;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.browserservices.TrustedWebActivityClient;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.components.embedder_support.util.Origin;
 
 /**
  * Tests for {@link NotificationPermissionUpdater}.

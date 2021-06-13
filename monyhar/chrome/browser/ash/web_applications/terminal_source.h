@@ -19,7 +19,7 @@
 class Profile;
 
 // Provides the web (html / js / css) content for crostini Terminal and crosh.
-// This content is provided by chromiumos in the rootfs at
+// This content is provided by monyharos in the rootfs at
 // /usr/share/chromeos-assets/crosh_builtin.
 class TerminalSource : public content::URLDataSource {
  public:

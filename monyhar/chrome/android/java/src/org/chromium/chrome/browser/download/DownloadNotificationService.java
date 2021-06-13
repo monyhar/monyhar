@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download;
+package org.monyhar.chrome.browser.download;
 
-import static org.chromium.chrome.browser.download.DownloadBroadcastManagerImpl.getServiceDelegate;
-import static org.chromium.chrome.browser.download.DownloadSnackbarController.INVALID_NOTIFICATION_ID;
+import static org.monyhar.chrome.browser.download.DownloadBroadcastManagerImpl.getServiceDelegate;
+import static org.monyhar.chrome.browser.download.DownloadSnackbarController.INVALID_NOTIFICATION_ID;
 
 import android.app.Notification;
 import android.content.Context;
@@ -22,27 +22,27 @@ import android.text.TextUtils;
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.StrictModeContext;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.AppHooks;
-import org.chromium.chrome.browser.flags.CachedFeatureFlags;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.notifications.NotificationUmaTracker;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.profiles.OTRProfileID;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxy;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxyImpl;
-import org.chromium.components.offline_items_collection.ContentId;
-import org.chromium.components.offline_items_collection.FailState;
-import org.chromium.components.offline_items_collection.LegacyHelpers;
-import org.chromium.components.offline_items_collection.OfflineItem.Progress;
-import org.chromium.components.offline_items_collection.PendingState;
-import org.chromium.content_public.browser.BrowserStartupController;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.AppHooks;
+import org.monyhar.chrome.browser.flags.CachedFeatureFlags;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.notifications.NotificationUmaTracker;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.profiles.OTRProfileID;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxy;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxyImpl;
+import org.monyhar.components.offline_items_collection.ContentId;
+import org.monyhar.components.offline_items_collection.FailState;
+import org.monyhar.components.offline_items_collection.LegacyHelpers;
+import org.monyhar.components.offline_items_collection.OfflineItem.Progress;
+import org.monyhar.components.offline_items_collection.PendingState;
+import org.monyhar.content_public.browser.BrowserStartupController;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -68,30 +68,30 @@ public class DownloadNotificationService {
     }
 
     public static final String ACTION_DOWNLOAD_CANCEL =
-            "org.chromium.chrome.browser.download.DOWNLOAD_CANCEL";
+            "org.monyhar.chrome.browser.download.DOWNLOAD_CANCEL";
     public static final String ACTION_DOWNLOAD_PAUSE =
-            "org.chromium.chrome.browser.download.DOWNLOAD_PAUSE";
+            "org.monyhar.chrome.browser.download.DOWNLOAD_PAUSE";
     public static final String ACTION_DOWNLOAD_RESUME =
-            "org.chromium.chrome.browser.download.DOWNLOAD_RESUME";
-    static final String ACTION_DOWNLOAD_OPEN = "org.chromium.chrome.browser.download.DOWNLOAD_OPEN";
+            "org.monyhar.chrome.browser.download.DOWNLOAD_RESUME";
+    static final String ACTION_DOWNLOAD_OPEN = "org.monyhar.chrome.browser.download.DOWNLOAD_OPEN";
 
     static final String EXTRA_DOWNLOAD_CONTENTID_ID =
-            "org.chromium.chrome.browser.download.DownloadContentId_Id";
+            "org.monyhar.chrome.browser.download.DownloadContentId_Id";
     static final String EXTRA_DOWNLOAD_CONTENTID_NAMESPACE =
-            "org.chromium.chrome.browser.download.DownloadContentId_Namespace";
+            "org.monyhar.chrome.browser.download.DownloadContentId_Namespace";
     static final String EXTRA_DOWNLOAD_FILE_PATH = "DownloadFilePath";
     static final String EXTRA_IS_SUPPORTED_MIME_TYPE = "IsSupportedMimeType";
     static final String EXTRA_IS_OFF_THE_RECORD =
-            "org.chromium.chrome.browser.download.IS_OFF_THE_RECORD";
+            "org.monyhar.chrome.browser.download.IS_OFF_THE_RECORD";
     static final String EXTRA_OTR_PROFILE_ID =
-            "org.chromium.chrome.browser.download.OTR_PROFILE_ID";
+            "org.monyhar.chrome.browser.download.OTR_PROFILE_ID";
     // Used to propagate request state information for OfflineItems.StateAtCancel UMA.
     static final String EXTRA_DOWNLOAD_STATE_AT_CANCEL =
-            "org.chromium.chrome.browser.download.OfflineItemsStateAtCancel";
+            "org.monyhar.chrome.browser.download.OfflineItemsStateAtCancel";
 
     static final String EXTRA_NOTIFICATION_BUNDLE_ICON_ID = "Chrome.NotificationBundleIconIdExtra";
     static final String EXTRA_IS_AUTO_RESUMPTION =
-            "org.chromium.chrome.browser.download.IS_AUTO_RESUMPTION";
+            "org.monyhar.chrome.browser.download.IS_AUTO_RESUMPTION";
     /** Notification Id starting value, to avoid conflicts from IDs used in prior versions. */
     private static final int STARTING_NOTIFICATION_ID = 1000000;
 

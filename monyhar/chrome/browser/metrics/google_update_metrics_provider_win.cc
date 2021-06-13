@@ -71,7 +71,7 @@ void GoogleUpdateMetricsProviderWin::AsyncInit(
 
 void GoogleUpdateMetricsProviderWin::ProvideSystemProfileMetrics(
     metrics::SystemProfileProto* system_profile_proto) {
-  // Do nothing for chromium builds.
+  // Do nothing for monyhar builds.
   if (!IsGoogleChromeBuild())
     return;
   // Convert wstring to string.

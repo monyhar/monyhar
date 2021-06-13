@@ -34,7 +34,7 @@ const char kAppPackageName[] = "com.app";
 const char kAppClassName[] = "Main";
 const char kAppEmail[] = "email@app.com";
 const char kAppName[] = "Name";
-const char kAppWindowAppId[] = "org.chromium.arc.0";
+const char kAppWindowAppId[] = "org.monyhar.arc.0";
 
 }  // namespace
 

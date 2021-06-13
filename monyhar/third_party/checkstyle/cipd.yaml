@@ -9,6 +9,6 @@
 #   cp <new checkstyle jar> .
 #   cipd create --pkg-def cipd.yaml # Make note of the instance ID
 #   Update //DEPS (instance ID output by cipd create)
-package: chromium/third_party/checkstyle
+package: monyhar/third_party/checkstyle
 data:
   - file: checkstyle-all.jar

@@ -19,7 +19,7 @@
 
     <!-- Setting listSelector to transparent prevents the list items that have
          selectableItemBackground from having a double highlight effect. -->
-    <org.chromium.chrome.browser.contextmenu.ContextMenuListView
+    <org.monyhar.chrome.browser.contextmenu.ContextMenuListView
         android:id="@+id/context_menu_list_view"
         android:layout_width="@dimen/context_menu_max_width"
         android:layout_height="wrap_content"

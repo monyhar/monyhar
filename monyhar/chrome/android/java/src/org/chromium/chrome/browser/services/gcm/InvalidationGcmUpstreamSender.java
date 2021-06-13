@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.services.gcm;
+package org.monyhar.chrome.browser.services.gcm;
 
 import android.app.IntentService;
 import android.content.Intent;

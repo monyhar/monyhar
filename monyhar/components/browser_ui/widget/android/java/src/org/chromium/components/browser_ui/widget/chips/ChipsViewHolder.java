@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.chips;
+package org.monyhar.components.browser_ui.widget.chips;
 
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,9 +10,9 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
-import org.chromium.components.browser_ui.widget.R;
-import org.chromium.ui.modelutil.RecyclerViewAdapter;
-import org.chromium.ui.widget.ChipView;
+import org.monyhar.components.browser_ui.widget.R;
+import org.monyhar.ui.modelutil.RecyclerViewAdapter;
+import org.monyhar.ui.widget.ChipView;
 
 /** The {@link ViewHolder} responsible for reflecting a {@link Chip} to a {@link View}. */
 public class ChipsViewHolder extends ViewHolder {

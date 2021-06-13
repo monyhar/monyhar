@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

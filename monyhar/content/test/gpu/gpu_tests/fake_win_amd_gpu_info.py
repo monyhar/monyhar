@@ -3,7 +3,7 @@
 # found in the LICENSE file.
 
 # This dictionary of GPU information was reformatted from the output
-# of the webgl_conformance tests run on the win_chromium_rel_ng trybot
+# of the webgl_conformance tests run on the win_monyhar_rel_ng trybot
 # (the step run on Windows with AMD GPU). It helps test
 # telemetry.internal.platform's GPUInfo class, and specifically the
 # attributes it expects to find in the dictionary; if the code changes

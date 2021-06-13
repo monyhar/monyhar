@@ -104,7 +104,7 @@ declare_args() {
   # this by default for all downstream projects, since these profiles are likely
   # nonsensical for said projects.
   clang_use_default_sample_profile =
-      chrome_pgo_phase == 0 && build_with_chromium && is_official_build &&
+      chrome_pgo_phase == 0 && build_with_monyhar && is_official_build &&
       (is_android || chromeos_is_browser_only || is_chromecast)
 
   # This configuration is used to select a default profile in Chrome OS based on
@@ -469,7 +469,7 @@ config("compiler") {
       ldflags += [
         # Experimentation found that using four linking threads
         # saved ~20% of link time.
-        # https://groups.google.com/a/chromium.org/group/chromium-dev/browse_thread/thread/281527606915bb36
+        # https://groups.google.com/a/monyhar.org/group/monyhar-dev/browse_thread/thread/281527606915bb36
         # Only apply this to the target linker, since the host
         # linker might not be gold, but isn't used much anyway.
         "-Wl,--threads",
@@ -1331,7 +1331,7 @@ config("runtime_library") {
 # default_warnings ------------------------------------------------------------
 #
 # Collects all warning flags that are used by default.  This is used as a
-# subconfig of both chromium_code and no_chromium_code.  This way these
+# subconfig of both monyhar_code and no_monyhar_code.  This way these
 # flags are guaranteed to appear on the compile command line after -Wall.
 config("default_warnings") {
   cflags = []
@@ -1578,7 +1578,7 @@ config("default_warnings") {
     ]
 
     # use_xcode_clang only refers to the iOS toolchain, host binaries use
-    # chromium's clang always.
+    # monyhar's clang always.
     if (!is_nacl) {
       cflags += [
         # TODO(thakis): https://crbug.com/604888
@@ -1601,7 +1601,7 @@ config("default_warnings") {
           "-Wno-psabi",
 
           # Ignore warnings about MSVC optimization pragmas.
-          # TODO(thakis): Only for no_chromium_code? http://crbug.com/912662
+          # TODO(thakis): Only for no_monyhar_code? http://crbug.com/912662
           "-Wno-ignored-pragma-optimize",
 
           # TODO(https://crbug.com/989932): Evaluate and possibly enable.
@@ -1637,12 +1637,12 @@ config("default_warnings") {
   }
 }
 
-# chromium_code ---------------------------------------------------------------
+# monyhar_code ---------------------------------------------------------------
 #
 # Toggles between higher and lower warnings for code that is (or isn't)
 # part of Chromium.
 
-config("chromium_code") {
+config("monyhar_code") {
   if (is_win) {
     cflags = [ "/W4" ]  # Warning level 4.
 
@@ -1661,7 +1661,7 @@ config("chromium_code") {
       ldflags = [ "-Werror" ]
     }
     if (is_clang) {
-      # Enable extra warnings for chromium_code when we control the compiler.
+      # Enable extra warnings for monyhar_code when we control the compiler.
       cflags += [ "-Wextra" ]
     }
 
@@ -1675,7 +1675,7 @@ config("chromium_code") {
     if (!is_debug && !using_sanitizer && current_cpu != "s390x" &&
         current_cpu != "s390" && current_cpu != "ppc64" &&
         current_cpu != "mips" && current_cpu != "mips64") {
-      # Non-chromium code is not guaranteed to compile cleanly with
+      # Non-monyhar code is not guaranteed to compile cleanly with
       # _FORTIFY_SOURCE. Also, fortified build may fail when optimizations are
       # disabled, so only do that for Release build.
       defines += [ "_FORTIFY_SOURCE=2" ]
@@ -1731,7 +1731,7 @@ config("chromium_code") {
   configs = [ ":default_warnings" ]
 }
 
-config("no_chromium_code") {
+config("no_monyhar_code") {
   cflags = []
   cflags_cc = []
   defines = []
@@ -1748,7 +1748,7 @@ config("no_chromium_code") {
       "_CRT_NONSTDC_NO_DEPRECATE",
     ]
   } else {
-    # GCC may emit unsuppressible warnings so don't add -Werror for no chromium
+    # GCC may emit unsuppressible warnings so don't add -Werror for no monyhar
     # code. crbug.com/589724
     if (treat_warnings_as_errors && is_clang) {
       cflags += [ "-Werror" ]
@@ -1756,7 +1756,7 @@ config("no_chromium_code") {
     }
     if (is_clang && !is_nacl) {
       # TODO(thakis): Remove !is_nacl once
-      # https://codereview.webrtc.org/1552863002/ made its way into chromium.
+      # https://codereview.webrtc.org/1552863002/ made its way into monyhar.
       cflags += [ "-Wall" ]
     }
   }
@@ -1891,7 +1891,7 @@ config("no_exceptions") {
 
 # Generate a warning for code that might emit a static initializer.
 # See: //docs/static_initializers.md
-# See: https://groups.google.com/a/chromium.org/d/topic/chromium-dev/B9Q5KTD7iCo/discussion
+# See: https://groups.google.com/a/monyhar.org/d/topic/monyhar-dev/B9Q5KTD7iCo/discussion
 config("wglobal_constructors") {
   if (is_clang) {
     cflags = [ "-Wglobal-constructors" ]
@@ -2247,7 +2247,7 @@ if (is_clang && is_a_target_toolchain) {
   if (clang_sample_profile_path != "") {
     _clang_sample_profile = clang_sample_profile_path
   } else if (clang_use_default_sample_profile) {
-    assert(build_with_chromium,
+    assert(build_with_monyhar,
            "Our default profiles currently only apply to Chromium")
     assert(is_android || is_chromeos_lacros || is_chromeos_ash || is_chromecast,
            "The current platform has no default profile")

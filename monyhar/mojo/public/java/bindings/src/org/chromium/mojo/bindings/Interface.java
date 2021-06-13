@@ -2,22 +2,22 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo.bindings;
+package org.monyhar.mojo.bindings;
 
-import org.chromium.mojo.bindings.Callbacks.Callback1;
-import org.chromium.mojo.bindings.Interface.AbstractProxy.HandlerImpl;
-import org.chromium.mojo.bindings.interfacecontrol.QueryVersion;
-import org.chromium.mojo.bindings.interfacecontrol.RequireVersion;
-import org.chromium.mojo.bindings.interfacecontrol.RunInput;
-import org.chromium.mojo.bindings.interfacecontrol.RunMessageParams;
-import org.chromium.mojo.bindings.interfacecontrol.RunOrClosePipeInput;
-import org.chromium.mojo.bindings.interfacecontrol.RunOrClosePipeMessageParams;
-import org.chromium.mojo.bindings.interfacecontrol.RunOutput;
-import org.chromium.mojo.bindings.interfacecontrol.RunResponseMessageParams;
-import org.chromium.mojo.system.Core;
-import org.chromium.mojo.system.MessagePipeHandle;
-import org.chromium.mojo.system.MojoException;
-import org.chromium.mojo.system.Pair;
+import org.monyhar.mojo.bindings.Callbacks.Callback1;
+import org.monyhar.mojo.bindings.Interface.AbstractProxy.HandlerImpl;
+import org.monyhar.mojo.bindings.interfacecontrol.QueryVersion;
+import org.monyhar.mojo.bindings.interfacecontrol.RequireVersion;
+import org.monyhar.mojo.bindings.interfacecontrol.RunInput;
+import org.monyhar.mojo.bindings.interfacecontrol.RunMessageParams;
+import org.monyhar.mojo.bindings.interfacecontrol.RunOrClosePipeInput;
+import org.monyhar.mojo.bindings.interfacecontrol.RunOrClosePipeMessageParams;
+import org.monyhar.mojo.bindings.interfacecontrol.RunOutput;
+import org.monyhar.mojo.bindings.interfacecontrol.RunResponseMessageParams;
+import org.monyhar.mojo.system.Core;
+import org.monyhar.mojo.system.MessagePipeHandle;
+import org.monyhar.mojo.system.MojoException;
+import org.monyhar.mojo.system.Pair;
 
 import java.io.Closeable;
 import java.util.concurrent.Executor;
@@ -190,7 +190,7 @@ public interface Interface extends ConnectionErrorHandler, Closeable {
             }
 
             /**
-             * @see Handler#queryVersion(org.chromium.mojo.bindings.Callbacks.Callback1)
+             * @see Handler#queryVersion(org.monyhar.mojo.bindings.Callbacks.Callback1)
              */
             @Override
             public void queryVersion(final Callback1<Integer> callback) {
@@ -256,7 +256,7 @@ public interface Interface extends ConnectionErrorHandler, Closeable {
         }
 
         /**
-         * @see ConnectionErrorHandler#onConnectionError(org.chromium.mojo.system.MojoException)
+         * @see ConnectionErrorHandler#onConnectionError(org.monyhar.mojo.system.MojoException)
          */
         @Override
         public void onConnectionError(MojoException e) {
@@ -309,7 +309,7 @@ public interface Interface extends ConnectionErrorHandler, Closeable {
         }
 
         /**
-         * @see org.chromium.mojo.bindings.MessageReceiver#close()
+         * @see org.monyhar.mojo.bindings.MessageReceiver#close()
          */
         @Override
         public void close() {
@@ -347,7 +347,7 @@ public interface Interface extends ConnectionErrorHandler, Closeable {
         }
 
         /**
-         * @see org.chromium.mojo.bindings.MessageReceiver#close()
+         * @see org.monyhar.mojo.bindings.MessageReceiver#close()
          */
         @Override
         public void close() {
@@ -357,7 +357,7 @@ public interface Interface extends ConnectionErrorHandler, Closeable {
         }
 
         /**
-         * @see org.chromium.mojo.bindings.MessageReceiver#accept()
+         * @see org.monyhar.mojo.bindings.MessageReceiver#accept()
          */
         @Override
         public boolean accept(Message message) {
@@ -368,7 +368,7 @@ public interface Interface extends ConnectionErrorHandler, Closeable {
         }
 
         /**
-         * @see org.chromium.mojo.bindings.MessageReceiverWithResponder#acceptWithResponder()
+         * @see org.monyhar.mojo.bindings.MessageReceiverWithResponder#acceptWithResponder()
          */
         @Override
         public boolean acceptWithResponder(Message message, MessageReceiver responder) {

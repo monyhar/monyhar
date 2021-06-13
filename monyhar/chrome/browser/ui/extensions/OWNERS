@@ -1,7 +1,7 @@
 # App-y stuff
-benwells@chromium.org
+benwells@monyhar.org
 per-file hosted_app_*=file://chrome/browser/web_applications/UI_OWNERS
 
 # Extension-y stuff
-finnur@chromium.org
-rdevlin.cronin@chromium.org
+finnur@monyhar.org
+rdevlin.cronin@monyhar.org

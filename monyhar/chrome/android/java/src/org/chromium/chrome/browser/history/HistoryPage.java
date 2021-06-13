@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.history;
+package org.monyhar.chrome.browser.history;
 
 import android.app.Activity;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.TabCreatorManager;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
-import org.chromium.chrome.browser.ui.native_page.BasicNativePage;
-import org.chromium.chrome.browser.ui.native_page.NativePageHost;
-import org.chromium.components.embedder_support.util.UrlConstants;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.TabCreatorManager;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.chrome.browser.ui.native_page.BasicNativePage;
+import org.monyhar.chrome.browser.ui.native_page.NativePageHost;
+import org.monyhar.components.embedder_support.util.UrlConstants;
 
 /**
  * Native page for managing browsing history.

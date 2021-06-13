@@ -8,8 +8,8 @@ android_library("test_support_java") {
   testonly = true
 
   sources = [
-    "java/src/org/chromium/chrome/browser/ui/appmenu/AppMenuTestSupport.java",
-    "java/src/org/chromium/chrome/browser/ui/appmenu/TestAppMenuObserver.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/AppMenuTestSupport.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/TestAppMenuObserver.java",
   ]
   deps = [
     "//base:base_java",

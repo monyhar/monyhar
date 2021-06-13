@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.translate;
+package org.monyhar.chrome.browser.translate;
 
 import android.content.pm.ActivityInfo;
 import android.support.test.InstrumentationRegistry;
@@ -16,22 +16,22 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.Restriction;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.infobar.InfoBarContainer;
-import org.chromium.chrome.browser.infobar.TranslateCompactInfoBar;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.InfoBarTestAnimationListener;
-import org.chromium.chrome.test.util.InfoBarUtil;
-import org.chromium.chrome.test.util.MenuUtils;
-import org.chromium.chrome.test.util.TranslateUtil;
-import org.chromium.components.infobars.InfoBar;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.Restriction;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.infobar.InfoBarContainer;
+import org.monyhar.chrome.browser.infobar.TranslateCompactInfoBar;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.InfoBarTestAnimationListener;
+import org.monyhar.chrome.test.util.InfoBarUtil;
+import org.monyhar.chrome.test.util.MenuUtils;
+import org.monyhar.chrome.test.util.TranslateUtil;
+import org.monyhar.components.infobars.InfoBar;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.concurrent.TimeoutException;
 

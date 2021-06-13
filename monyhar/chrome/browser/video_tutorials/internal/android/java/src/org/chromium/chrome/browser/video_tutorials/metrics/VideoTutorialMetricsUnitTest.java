@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.video_tutorials.metrics;
+package org.monyhar.chrome.browser.video_tutorials.metrics;
 
 import org.junit.After;
 import org.junit.Assert;
@@ -11,11 +11,11 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.metrics.test.ShadowRecordHistogram;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.video_tutorials.FeatureType;
-import org.chromium.chrome.browser.video_tutorials.metrics.VideoTutorialMetrics.UserAction;
-import org.chromium.chrome.browser.video_tutorials.metrics.VideoTutorialMetrics.WatchState;
+import org.monyhar.base.metrics.test.ShadowRecordHistogram;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.video_tutorials.FeatureType;
+import org.monyhar.chrome.browser.video_tutorials.metrics.VideoTutorialMetrics.UserAction;
+import org.monyhar.chrome.browser.video_tutorials.metrics.VideoTutorialMetrics.WatchState;
 
 /**
  * Tests for {@link VideoTutorialMetrics}.

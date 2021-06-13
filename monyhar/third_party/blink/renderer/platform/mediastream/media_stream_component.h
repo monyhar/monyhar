@@ -109,7 +109,7 @@ class PLATFORM_EXPORT MediaStreamComponent final
 
  private:
   // AudioSourceProviderImpl wraps a WebAudioSourceProvider::provideInput()
-  // calls into chromium to get a rendered audio stream.
+  // calls into monyhar to get a rendered audio stream.
 
   class PLATFORM_EXPORT AudioSourceProviderImpl final
       : public AudioSourceProvider {

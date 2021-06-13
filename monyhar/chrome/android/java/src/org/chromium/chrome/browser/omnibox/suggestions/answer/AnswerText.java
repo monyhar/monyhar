@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.answer;
+package org.monyhar.chrome.browser.omnibox.suggestions.answer;
 
 import android.content.Context;
 import android.text.Html;
@@ -11,8 +11,8 @@ import android.text.SpannableStringBuilder;
 import android.text.style.MetricAffectingSpan;
 import android.text.style.TextAppearanceSpan;
 
-import org.chromium.components.omnibox.AnswerTextType;
-import org.chromium.components.omnibox.SuggestionAnswer;
+import org.monyhar.components.omnibox.AnswerTextType;
+import org.monyhar.components.omnibox.SuggestionAnswer;
 
 import java.util.List;
 

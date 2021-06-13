@@ -23,7 +23,7 @@ from devil.utils import signal_handler
 from devil.utils import timeout_retry
 from py_utils import tempfile_ext
 
-PROJECT = 'chromium'
+PROJECT = 'monyhar'
 OUTPUT = 'logdog'
 COORDINATOR_HOST = 'luci-logdog.appspot.com'
 SERVICE_ACCOUNT_JSON = ('/creds/service_accounts'

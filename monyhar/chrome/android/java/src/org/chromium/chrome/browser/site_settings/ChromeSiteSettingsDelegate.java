@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.site_settings;
+package org.monyhar.chrome.browser.site_settings;
 
 import android.app.Activity;
 import android.content.Context;
@@ -12,32 +12,32 @@ import android.graphics.Bitmap;
 import androidx.annotation.Nullable;
 import androidx.preference.Preference;
 
-import org.chromium.base.Callback;
-import org.chromium.base.CommandLine;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.browserservices.permissiondelegation.TrustedWebActivityPermissionManager;
-import org.chromium.chrome.browser.feedback.HelpAndFeedbackLauncherImpl;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.notifications.channels.SiteChannelsManager;
-import org.chromium.chrome.browser.privacy_sandbox.PrivacySandboxBridge;
-import org.chromium.chrome.browser.privacy_sandbox.PrivacySandboxSnackbarController;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.settings.ChromeManagedPreferenceDelegate;
-import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
-import org.chromium.chrome.browser.ui.favicon.FaviconHelper;
-import org.chromium.chrome.browser.ui.favicon.FaviconHelper.FaviconImageCallback;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
-import org.chromium.chrome.browser.webapps.WebappRegistry;
-import org.chromium.components.browser_ui.settings.ManagedPreferenceDelegate;
-import org.chromium.components.browser_ui.site_settings.SiteSettingsCategory;
-import org.chromium.components.browser_ui.site_settings.SiteSettingsDelegate;
-import org.chromium.components.browser_ui.widget.RoundedIconGenerator;
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.components.embedder_support.browser_context.BrowserContextHandle;
-import org.chromium.components.embedder_support.util.Origin;
-import org.chromium.content_public.browser.ContentFeatureList;
-import org.chromium.content_public.common.ContentSwitches;
-import org.chromium.url.GURL;
+import org.monyhar.base.Callback;
+import org.monyhar.base.CommandLine;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.browserservices.permissiondelegation.TrustedWebActivityPermissionManager;
+import org.monyhar.chrome.browser.feedback.HelpAndFeedbackLauncherImpl;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.notifications.channels.SiteChannelsManager;
+import org.monyhar.chrome.browser.privacy_sandbox.PrivacySandboxBridge;
+import org.monyhar.chrome.browser.privacy_sandbox.PrivacySandboxSnackbarController;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.settings.ChromeManagedPreferenceDelegate;
+import org.monyhar.chrome.browser.settings.SettingsLauncherImpl;
+import org.monyhar.chrome.browser.ui.favicon.FaviconHelper;
+import org.monyhar.chrome.browser.ui.favicon.FaviconHelper.FaviconImageCallback;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.chrome.browser.webapps.WebappRegistry;
+import org.monyhar.components.browser_ui.settings.ManagedPreferenceDelegate;
+import org.monyhar.components.browser_ui.site_settings.SiteSettingsCategory;
+import org.monyhar.components.browser_ui.site_settings.SiteSettingsDelegate;
+import org.monyhar.components.browser_ui.widget.RoundedIconGenerator;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.components.embedder_support.browser_context.BrowserContextHandle;
+import org.monyhar.components.embedder_support.util.Origin;
+import org.monyhar.content_public.browser.ContentFeatureList;
+import org.monyhar.content_public.common.ContentSwitches;
+import org.monyhar.url.GURL;
 
 import java.util.Set;
 

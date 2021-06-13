@@ -6,7 +6,7 @@
 # cipd create --pkg-def cipd.yaml -tag version:3.0.0-cr1
 # (note: -cr1 is only because -cr0 had a bad directory structure; no actual
 # modifications performed.)
-package: chromium/third_party/protoc_javalite
+package: monyhar/third_party/protoc_javalite
 description: protoc plugin for java lite runtime
 data:
   - file: protoc-gen-javalite

@@ -13,7 +13,7 @@
 namespace content {
 
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.content_public.browser.bluetooth
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.content_public.browser.bluetooth
 enum class BluetoothChooserEvent {
   DENIED_PERMISSION,
   CANCELLED,

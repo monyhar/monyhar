@@ -7,7 +7,7 @@ import json
 import unittest
 
 from blinkpy.common.host_mock import MockHost
-from blinkpy.w3c.chromium_commit_mock import MockChromiumCommit
+from blinkpy.w3c.monyhar_commit_mock import MockChromiumCommit
 from blinkpy.w3c.common import EXPORT_PR_LABEL
 from blinkpy.w3c.wpt_github import MAX_PR_HISTORY_WINDOW, GitHubError, MergeError, PullRequest, WPTGitHub
 
@@ -58,7 +58,7 @@ class WPTGitHubTest(unittest.TestCase):
     def test_extract_link_next_not_found(self):
         self.assertIsNone(self.wpt_github.extract_link_next(''))
 
-    def test_recent_failing_chromium_exports_single_page(self):
+    def test_recent_failing_monyhar_exports_single_page(self):
         self.wpt_github = WPTGitHub(
             MockHost(), user='rutabaga', token='decafbad', pr_history_window=1)
         self.wpt_github.host.web.responses = [
@@ -77,9 +77,9 @@ class WPTGitHubTest(unittest.TestCase):
         ]
 
         self.assertEqual(
-            len(self.wpt_github.recent_failing_chromium_exports()), 1)
+            len(self.wpt_github.recent_failing_monyhar_exports()), 1)
 
-    def test_recent_failing_chromium_exports_all_pages(self):
+    def test_recent_failing_monyhar_exports_all_pages(self):
         self.wpt_github = WPTGitHub(MockHost(),
                                     user='rutabaga',
                                     token='decafbad',
@@ -112,16 +112,16 @@ class WPTGitHubTest(unittest.TestCase):
             },
         ]
         self.assertEqual(
-            len(self.wpt_github.recent_failing_chromium_exports()), 2)
+            len(self.wpt_github.recent_failing_monyhar_exports()), 2)
 
-    def test_recent_failing_chromium_exports_throws_github_error(self):
+    def test_recent_failing_monyhar_exports_throws_github_error(self):
         self.wpt_github.host.web.responses = [
             {
                 'status_code': 204
             },
         ]
         with self.assertRaises(GitHubError):
-            self.wpt_github.recent_failing_chromium_exports()
+            self.wpt_github.recent_failing_monyhar_exports()
 
     def test_all_pull_requests_single_page(self):
         self.wpt_github = WPTGitHub(
@@ -401,18 +401,18 @@ class WPTGitHubTest(unittest.TestCase):
         with self.assertRaises(GitHubError):
             self.wpt_github.add_comment(123, 'rutabaga')
 
-    def test_pr_for_chromium_commit_change_id_only(self):
+    def test_pr_for_monyhar_commit_change_id_only(self):
         self.wpt_github.all_pull_requests = lambda: [
             PullRequest('PR1', 1, 'body\nChange-Id: I00c0ffee', 'open', []),
             PullRequest('PR2', 2, 'body\nChange-Id: I00decade', 'open', []), ]
-        chromium_commit = MockChromiumCommit(
+        monyhar_commit = MockChromiumCommit(
             MockHost(),
             change_id='I00decade',
             position='refs/heads/master@{#10}')
-        pull_request = self.wpt_github.pr_for_chromium_commit(chromium_commit)
+        pull_request = self.wpt_github.pr_for_monyhar_commit(monyhar_commit)
         self.assertEqual(pull_request.number, 2)
 
-    def test_pr_for_chromium_commit_prefers_change_id(self):
+    def test_pr_for_monyhar_commit_prefers_change_id(self):
         self.wpt_github.all_pull_requests = lambda: [
             PullRequest(
                 'PR1', 1,
@@ -423,30 +423,30 @@ class WPTGitHubTest(unittest.TestCase):
                 'body\nChange-Id: I00decade\nCr-Commit-Position: refs/heads/master@{#33}',
                 'open', []),
         ]
-        chromium_commit = MockChromiumCommit(
+        monyhar_commit = MockChromiumCommit(
             MockHost(),
             change_id='I00decade',
             position='refs/heads/master@{#10}')
-        pull_request = self.wpt_github.pr_for_chromium_commit(chromium_commit)
+        pull_request = self.wpt_github.pr_for_monyhar_commit(monyhar_commit)
         self.assertEqual(pull_request.number, 2)
 
-    def test_pr_for_chromium_commit_multiple_change_ids(self):
+    def test_pr_for_monyhar_commit_multiple_change_ids(self):
         self.wpt_github.all_pull_requests = lambda: [
             PullRequest('PR1', 1,
                         'body\nChange-Id: I00c0ffee\nChange-Id: I00decade',
                         'open', []),
         ]
 
-        chromium_commit = MockChromiumCommit(
+        monyhar_commit = MockChromiumCommit(
             MockHost(),
             change_id='I00c0ffee',
             position='refs/heads/master@{#10}')
-        pull_request = self.wpt_github.pr_for_chromium_commit(chromium_commit)
+        pull_request = self.wpt_github.pr_for_monyhar_commit(monyhar_commit)
         self.assertEqual(pull_request.number, 1)
 
-        chromium_commit = MockChromiumCommit(
+        monyhar_commit = MockChromiumCommit(
             MockHost(),
             change_id='I00decade',
             position='refs/heads/master@{#33}')
-        pull_request = self.wpt_github.pr_for_chromium_commit(chromium_commit)
+        pull_request = self.wpt_github.pr_for_monyhar_commit(monyhar_commit)
         self.assertEqual(pull_request.number, 1)

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.externalnav;
+package org.monyhar.chrome.browser.externalnav;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,36 +13,36 @@ import android.net.Uri;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ApplicationState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Function;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.PackageManagerUtils;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.ChromeTabbedActivity2;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.LaunchIntentDispatcher;
-import org.chromium.chrome.browser.autofill_assistant.AutofillAssistantFacade;
-import org.chromium.chrome.browser.instantapps.AuthenticatedProxyActivity;
-import org.chromium.chrome.browser.instantapps.InstantAppsHandler;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.RedirectHandlerTabHelper;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabObserver;
-import org.chromium.chrome.browser.tab.TabUtils;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorSupplier;
-import org.chromium.components.external_intents.ExternalNavigationDelegate;
-import org.chromium.components.external_intents.ExternalNavigationDelegate.StartActivityIfNeededResult;
-import org.chromium.components.external_intents.ExternalNavigationHandler;
-import org.chromium.components.external_intents.ExternalNavigationParams;
-import org.chromium.components.external_intents.RedirectHandler;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.url.GURL;
-import org.chromium.url.Origin;
+import org.monyhar.base.ApplicationState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Function;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.PackageManagerUtils;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.ChromeTabbedActivity2;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.LaunchIntentDispatcher;
+import org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantFacade;
+import org.monyhar.chrome.browser.instantapps.AuthenticatedProxyActivity;
+import org.monyhar.chrome.browser.instantapps.InstantAppsHandler;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.RedirectHandlerTabHelper;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabObserver;
+import org.monyhar.chrome.browser.tab.TabUtils;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorSupplier;
+import org.monyhar.components.external_intents.ExternalNavigationDelegate;
+import org.monyhar.components.external_intents.ExternalNavigationDelegate.StartActivityIfNeededResult;
+import org.monyhar.components.external_intents.ExternalNavigationHandler;
+import org.monyhar.components.external_intents.ExternalNavigationParams;
+import org.monyhar.components.external_intents.RedirectHandler;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.url.GURL;
+import org.monyhar.url.Origin;
 
 import java.util.List;
 

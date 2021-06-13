@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.bottombar;
+package org.monyhar.chrome.browser.compositor.bottombar;
 
 import android.app.Activity;
 import android.text.TextUtils;
@@ -14,31 +14,31 @@ import android.view.ViewGroup.MarginLayoutParams;
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.WebContentsFactory;
-import org.chromium.chrome.browser.content.ContentUtils;
-import org.chromium.chrome.browser.contextualsearch.ContextualSearchManager;
-import org.chromium.chrome.browser.externalnav.ExternalNavigationDelegateImpl;
-import org.chromium.chrome.browser.incognito.IncognitoUtils;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.version.ChromeVersionInfo;
-import org.chromium.components.embedder_support.delegate.WebContentsDelegateAndroid;
-import org.chromium.components.embedder_support.view.ContentView;
-import org.chromium.components.external_intents.ExternalNavigationHandler;
-import org.chromium.components.navigation_interception.InterceptNavigationDelegate;
-import org.chromium.components.navigation_interception.NavigationParams;
-import org.chromium.content_public.browser.LoadCommittedDetails;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.NavigationHandle;
-import org.chromium.content_public.browser.RenderCoordinates;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.WebContentsObserver;
-import org.chromium.ui.base.ViewAndroidDelegate;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.url.GURL;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.WebContentsFactory;
+import org.monyhar.chrome.browser.content.ContentUtils;
+import org.monyhar.chrome.browser.contextualsearch.ContextualSearchManager;
+import org.monyhar.chrome.browser.externalnav.ExternalNavigationDelegateImpl;
+import org.monyhar.chrome.browser.incognito.IncognitoUtils;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.version.ChromeVersionInfo;
+import org.monyhar.components.embedder_support.delegate.WebContentsDelegateAndroid;
+import org.monyhar.components.embedder_support.view.ContentView;
+import org.monyhar.components.external_intents.ExternalNavigationHandler;
+import org.monyhar.components.navigation_interception.InterceptNavigationDelegate;
+import org.monyhar.components.navigation_interception.NavigationParams;
+import org.monyhar.content_public.browser.LoadCommittedDetails;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.NavigationHandle;
+import org.monyhar.content_public.browser.RenderCoordinates;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.WebContentsObserver;
+import org.monyhar.ui.base.ViewAndroidDelegate;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.url.GURL;
 
 /**
  * Content container for an OverlayPanel. This class is responsible for the management of the

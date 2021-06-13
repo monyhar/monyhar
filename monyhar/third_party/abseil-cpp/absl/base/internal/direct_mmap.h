@@ -70,7 +70,7 @@ ABSL_NAMESPACE_BEGIN
 namespace base_internal {
 
 // Platform specific logic extracted from
-// https://chromium.googlesource.com/linux-syscall-support/+/master/linux_syscall_support.h
+// https://monyhar.googlesource.com/linux-syscall-support/+/master/linux_syscall_support.h
 inline void* DirectMmap(void* start, size_t length, int prot, int flags, int fd,
                         off64_t offset) noexcept {
 #if defined(__i386__) || defined(__ARM_ARCH_3__) || defined(__ARM_EABI__) || \

@@ -16,7 +16,7 @@
 namespace device {
 
 // BluetoothRemoteGattDescriptorAndroid along with its owned Java class
-// org.chromium.device.bluetooth.ChromeBluetoothRemoteGattDescriptor
+// org.monyhar.device.bluetooth.ChromeBluetoothRemoteGattDescriptor
 // implement BluetootGattDescriptor.
 class DEVICE_BLUETOOTH_EXPORT BluetoothRemoteGattDescriptorAndroid
     : public BluetoothRemoteGattDescriptor {
@@ -67,7 +67,7 @@ class DEVICE_BLUETOOTH_EXPORT BluetoothRemoteGattDescriptorAndroid
   BluetoothRemoteGattDescriptorAndroid(const std::string& instanceId);
 
   // Java object
-  // org.chromium.device.bluetooth.ChromeBluetoothRemoteGattDescriptor.
+  // org.monyhar.device.bluetooth.ChromeBluetoothRemoteGattDescriptor.
   base::android::ScopedJavaGlobalRef<jobject> j_descriptor_;
 
   // Adapter unique instance ID.

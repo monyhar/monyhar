@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_manager.settings;
+package org.monyhar.chrome.browser.password_manager.settings;
 
 import android.content.Context;
 import android.view.View;
@@ -10,12 +10,12 @@ import android.view.View;
 import androidx.annotation.IntDef;
 import androidx.fragment.app.FragmentManager;
 
-import org.chromium.base.Callback;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.password_manager.R;
-import org.chromium.chrome.browser.password_manager.ReauthResult;
-import org.chromium.chrome.browser.password_manager.settings.ReauthenticationManager.ReauthScope;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.Callback;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.password_manager.R;
+import org.monyhar.chrome.browser.password_manager.ReauthResult;
+import org.monyhar.chrome.browser.password_manager.settings.ReauthenticationManager.ReauthScope;
+import org.monyhar.ui.widget.Toast;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

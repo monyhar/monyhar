@@ -7,13 +7,13 @@
 # Version = @@VERSION@@
 
 HELPERTOOLS=/Library/PrivilegedHelperTools
-SERVICE_NAME=org.chromium.chromoting
+SERVICE_NAME=org.monyhar.chromoting
 HOST_BUNDLE_NAME=@@HOST_BUNDLE_NAME@@
 CONFIG_FILE="$HELPERTOOLS/$SERVICE_NAME.json"
 OLD_SCRIPT_FILE="$HELPERTOOLS/$SERVICE_NAME.me2me.sh"
 HOST_SERVICE_BINARY="$HELPERTOOLS/$HOST_BUNDLE_NAME/Contents/MacOS/remoting_me2me_host_service"
 USERS_TMP_FILE="$HOST_SERVICE_BINARY.users"
-PLIST=/Library/LaunchAgents/org.chromium.chromoting.plist
+PLIST=/Library/LaunchAgents/org.monyhar.chromoting.plist
 ENABLED_FILE="$HELPERTOOLS/$SERVICE_NAME.me2me_enabled"
 ENABLED_FILE_BACKUP="$ENABLED_FILE.backup"
 PREF_PANE=/Library/PreferencePanes/ChromeRemoteDesktop.prefPane

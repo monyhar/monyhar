@@ -12,7 +12,7 @@ process' *net* category and look at *effective_size* or *size* column.
 ![net stack column][net-stack-column]
 
 [memory-infra]:     README.md
-[net-stack-column]: https://storage.googleapis.com/chromium-docs.appspot.com/net_category.png
+[net-stack-column]: https://storage.googleapis.com/monyhar-docs.appspot.com/net_category.png
 
 ## Detailed Information
 

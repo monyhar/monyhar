@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.keyboard_accessory;
+package org.monyhar.chrome.browser.keyboard_accessory;
 
-import static org.chromium.content_public.browser.test.util.TestThreadUtils.runOnUiThreadBlocking;
+import static org.monyhar.content_public.browser.test.util.TestThreadUtils.runOnUiThreadBlocking;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,18 +13,18 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.ChromeKeyboardVisibilityDelegate;
-import org.chromium.chrome.browser.ChromeWindow;
-import org.chromium.components.browser_ui.widget.InsetObserverView;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.ChromeKeyboardVisibilityDelegate;
+import org.monyhar.chrome.browser.ChromeWindow;
+import org.monyhar.components.browser_ui.widget.InsetObserverView;
 
 import java.lang.ref.WeakReference;
 
 /**
- * This class allows to mock the {@link org.chromium.ui.KeyboardVisibilityDelegate} in any given
- * {@link org.chromium.chrome.test.ChromeActivityTestRule} which allows to write tests relying on
+ * This class allows to mock the {@link org.monyhar.ui.KeyboardVisibilityDelegate} in any given
+ * {@link org.monyhar.chrome.test.ChromeActivityTestRule} which allows to write tests relying on
  * keyboard without having to deal with the soft keyboard. To use it, inject its constructor as
- * factory into the {@link org.chromium.chrome.browser.ChromeWindow} before launching an activity.
+ * factory into the {@link org.monyhar.chrome.browser.ChromeWindow} before launching an activity.
  * To reset, call {@link ChromeWindow#resetKeyboardVisibilityDelegateFactory()}.
  * <pre>E.g.{@code
  *    // To force a keyboard open.

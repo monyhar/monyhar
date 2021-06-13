@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -25,25 +25,25 @@ import android.widget.RelativeLayout;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.task.PostTask;
-import org.chromium.components.browser_ui.widget.InsetObserverView;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.display.DisplayAndroid;
-import org.chromium.ui.resources.ResourceManager;
-import org.chromium.weblayer_private.interfaces.BrowserEmbeddabilityMode;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.components.browser_ui.widget.InsetObserverView;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.display.DisplayAndroid;
+import org.monyhar.ui.resources.ResourceManager;
+import org.monyhar.weblayer_private.interfaces.BrowserEmbeddabilityMode;
 
 import java.util.ArrayList;
 
 /**
- * This class manages the chromium compositor and the Surface that is used by
- * the chromium compositor. Note it can be used to display only one WebContents.
+ * This class manages the monyhar compositor and the Surface that is used by
+ * the monyhar compositor. Note it can be used to display only one WebContents.
  * This allows switching between SurfaceView and TextureView as the source of
- * the Surface used by chromium compositor, and attempts to make the switch
+ * the Surface used by monyhar compositor, and attempts to make the switch
  * visually seamless.
  */
 @JNINamespace("weblayer")
@@ -218,13 +218,13 @@ public class ContentViewRenderView
         // avoid visual artifacts.
         // 1) Allocate new SurfaceData, and insert it into view hierarchy below the existing
         //    SurfaceData, so it is not yet showing.
-        // 2) When Surface is allocated by new View, swap chromium compositor to the
+        // 2) When Surface is allocated by new View, swap monyhar compositor to the
         //    new Surface. |markForDestroy| is called on the previous SurfaceData, and the two
         //    SurfaceDatas are linked through these two variables.
         //    Note at this point the existing view is still visible.
         // 3) Wait until new SurfaceData decides that it has content and is ready to be shown
         //    * For TextureView, wait until TextureView.invalidate is called
-        //    * For SurfaceView, wait for two swaps from the chromium compositor
+        //    * For SurfaceView, wait for two swaps from the monyhar compositor
         // 4) New SurfaceData calls |destroy| on previous SurfaceData.
         //    * For TextureView, it is simply detached immediately from the view tree
         //    * For SurfaceView, to avoid flicker, move it to the back first before and wait
@@ -446,7 +446,7 @@ public class ContentViewRenderView
             }
             if (mMode == BrowserEmbeddabilityMode.UNSUPPORTED) {
                 // We have no reliable signal for when to show a SurfaceView. This is a heuristic
-                // (used by chrome as well) is to wait for 2 swaps from the chromium comopsitor
+                // (used by chrome as well) is to wait for 2 swaps from the monyhar comopsitor
                 // as a signal that the SurfaceView has content and is ready to be displayed.
                 if (mNumSurfaceViewSwapsUntilVisible > 0) {
                     mNumSurfaceViewSwapsUntilVisible--;

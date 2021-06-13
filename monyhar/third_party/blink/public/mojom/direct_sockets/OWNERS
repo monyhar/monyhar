@@ -1,6 +1,6 @@
-ericwilligers@chromium.org
-glenrob@chromium.org
-mgiuca@chromium.org
+ericwilligers@monyhar.org
+glenrob@monyhar.org
+mgiuca@monyhar.org
 
 # Changes to Mojo interfaces require a security review to avoid
 # introducing new sandbox escapes.

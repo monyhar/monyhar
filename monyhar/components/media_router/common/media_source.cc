@@ -22,15 +22,15 @@ namespace {
 
 // Prefixes used to format and detect various protocols' media source URNs.
 // See: https://www.ietf.org/rfc/rfc3406.txt
-constexpr char kAnyTabMediaUrn[] = "urn:x-org.chromium.media:source:tab:*";
-constexpr char kTabMediaUrnFormat[] = "urn:x-org.chromium.media:source:tab:%d";
+constexpr char kAnyTabMediaUrn[] = "urn:x-org.monyhar.media:source:tab:*";
+constexpr char kTabMediaUrnFormat[] = "urn:x-org.monyhar.media:source:tab:%d";
 constexpr base::StringPiece kDesktopMediaUrnPrefix =
-    "urn:x-org.chromium.media:source:desktop:";
+    "urn:x-org.monyhar.media:source:desktop:";
 // WARNING: If more desktop URN parameters are added in the future, the parsing
 // code will have to be smarter!
 constexpr base::StringPiece kDesktopMediaUrnAudioParam = "?with_audio=true";
 constexpr base::StringPiece kUnchosenDesktopMediaUrn =
-    "urn:x-org.chromium.media:source:desktop";
+    "urn:x-org.monyhar.media:source:desktop";
 
 // List of non-http(s) schemes that are allowed in a Presentation URL.
 constexpr std::array<const char* const, 5> kAllowedSchemes{

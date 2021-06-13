@@ -16,12 +16,12 @@ import page_sets
 from benchmarks import press
 
 
-@benchmark.Info(emails=['hablich@chromium.org'],
+@benchmark.Info(emails=['hablich@monyhar.org'],
                 component='Blink>JavaScript')
 class Octane(press._PressBenchmark): # pylint: disable=protected-access
   """Google's Octane JavaScript benchmark.
 
-  http://chromium.github.io/octane/index.html?auto=1
+  http://monyhar.github.io/octane/index.html?auto=1
   """
   @classmethod
   def Name(cls):

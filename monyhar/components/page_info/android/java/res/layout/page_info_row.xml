@@ -18,7 +18,7 @@
     android:paddingHorizontal="@dimen/page_info_popup_padding_sides"
     android:paddingVertical="@dimen/page_info_popup_padding_vertical">
 
-    <org.chromium.ui.widget.ChromeImageView
+    <org.monyhar.ui.widget.ChromeImageView
         android:id="@+id/page_info_row_icon"
         android:layout_width="24dp"
         android:layout_height="24dp"
@@ -30,14 +30,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-    <org.chromium.ui.widget.TextViewWithLeading
+    <org.monyhar.ui.widget.TextViewWithLeading
         android:id="@+id/page_info_row_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:includeFontPadding="false"
         android:textAppearance="@style/TextAppearance.TextLarge.Primary" />
 
-    <org.chromium.ui.widget.TextViewWithLeading
+    <org.monyhar.ui.widget.TextViewWithLeading
         android:id="@+id/page_info_row_subtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

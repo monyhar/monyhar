@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.crash;
+package org.monyhar.chrome.browser.crash;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -23,12 +23,12 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.StreamUtil;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.AdvancedMockContext;
-import org.chromium.components.background_task_scheduler.TaskIds;
-import org.chromium.components.minidump_uploader.CrashFileManager;
-import org.chromium.components.minidump_uploader.CrashTestRule;
+import org.monyhar.base.StreamUtil;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.AdvancedMockContext;
+import org.monyhar.components.background_task_scheduler.TaskIds;
+import org.monyhar.components.minidump_uploader.CrashFileManager;
+import org.monyhar.components.minidump_uploader.CrashTestRule;
 
 import java.io.BufferedReader;
 import java.io.File;

@@ -2,7 +2,7 @@
 <!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.3//EN" "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
 
 <!--
-  See installation instructions: https://sites.google.com/a/chromium.org/dev/developers/checkstyle
+  See installation instructions: https://sites.google.com/a/monyhar.org/dev/developers/checkstyle
 -->
 <module name="Checker">
   <property name="severity" value="warning"/>
@@ -164,7 +164,7 @@
       <property name="severity" value="warning"/>
       <property name="format" value="extends\ Button|extends\ AppCompatButton"/>
       <property name="ignoreComments" value="true"/>
-      <property name="message" value="Use org.chromium.ui.widget.ButtonCompat instead of Button and AppCompatButton if possible; ButtonCompat is a Material-styled button with a customizable background color. On L devices, this is a true Material button. On earlier devices, the button is similar but lacks ripples and a shadow. (crbug.com/775198)"/>
+      <property name="message" value="Use org.monyhar.ui.widget.ButtonCompat instead of Button and AppCompatButton if possible; ButtonCompat is a Material-styled button with a customizable background color. On L devices, this is a true Material button. On earlier devices, the button is similar but lacks ripples and a shadow. (crbug.com/775198)"/>
     </module>
     <module name="RegexpSinglelineJava">
       <property name="id" value="SetTextColorAndSetTextSizeCheck"/>

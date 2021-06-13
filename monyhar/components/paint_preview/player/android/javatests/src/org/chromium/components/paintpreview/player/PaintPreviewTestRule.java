@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.paintpreview.player;
+package org.monyhar.components.paintpreview.player;
 
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.components.signin.AccountManagerFacadeProvider;
-import org.chromium.components.signin.test.util.FakeAccountManagerFacade;
-import org.chromium.content_public.browser.test.NativeLibraryTestUtils;
+import org.monyhar.components.signin.AccountManagerFacadeProvider;
+import org.monyhar.components.signin.test.util.FakeAccountManagerFacade;
+import org.monyhar.content_public.browser.test.NativeLibraryTestUtils;
 
 /**
  * Loads native and initializes the browser process for Paint Preview instrumentation tests.

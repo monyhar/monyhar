@@ -40,7 +40,7 @@ static_library("network") {
 
 if (is_android) {
   android_library("network_java") {
-    sources = [ "android/java/src/org/chromium/components/download/NetworkStatusListenerAndroid.java" ]
+    sources = [ "android/java/src/org/monyhar/components/download/NetworkStatusListenerAndroid.java" ]
 
     deps = [
       "//base:base_java",
@@ -52,6 +52,6 @@ if (is_android) {
 
   generate_jni("jni_headers") {
     visibility = [ ":*" ]
-    sources = [ "android/java/src/org/chromium/components/download/NetworkStatusListenerAndroid.java" ]
+    sources = [ "android/java/src/org/monyhar/components/download/NetworkStatusListenerAndroid.java" ]
   }
 }

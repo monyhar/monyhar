@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.usage_stats;
+package org.monyhar.chrome.browser.usage_stats;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Matchers.any;
@@ -20,9 +20,9 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.Callback;
-import org.chromium.base.Promise;
-import org.chromium.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.Callback;
+import org.monyhar.base.Promise;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -38,7 +38,7 @@ public class EventTrackerTest {
     private UsageStatsBridge mBridge;
     @Captor
     private ArgumentCaptor<
-            Callback<List<org.chromium.chrome.browser.usage_stats.WebsiteEventProtos.WebsiteEvent>>>
+            Callback<List<org.monyhar.chrome.browser.usage_stats.WebsiteEventProtos.WebsiteEvent>>>
             mLoadCallbackCaptor;
     @Captor
     private ArgumentCaptor<Callback<Boolean>> mWriteCallbackCaptor;

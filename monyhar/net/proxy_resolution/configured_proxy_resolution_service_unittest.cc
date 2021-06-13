@@ -2380,7 +2380,7 @@ TEST_F(ConfiguredProxyResolutionServiceTest, InitialPACScriptDownload) {
   EXPECT_EQ(OK, callback1.WaitForResult());
   // ProxyResolver::GetProxyForURL() to take a std::unique_ptr<Request>* rather
   // than a RequestHandle* (patchset #11 id:200001 of
-  // https://codereview.chromium.org/1439053002/ )
+  // https://codereview.monyhar.org/1439053002/ )
   EXPECT_EQ("request1:80", info1.proxy_server().ToURI());
   EXPECT_FALSE(info1.proxy_resolve_start_time().is_null());
   EXPECT_FALSE(info1.proxy_resolve_end_time().is_null());
@@ -2636,7 +2636,7 @@ TEST_F(ConfiguredProxyResolutionServiceTest,
   EXPECT_EQ(OK, callback1.WaitForResult());
   // ProxyResolver::GetProxyForURL() to take a std::unique_ptr<Request>* rather
   // than a RequestHandle* (patchset #11 id:200001 of
-  // https://codereview.chromium.org/1439053002/ )
+  // https://codereview.monyhar.org/1439053002/ )
   EXPECT_EQ("request1:80", info1.proxy_server().ToURI());
   EXPECT_FALSE(info1.proxy_resolve_start_time().is_null());
   EXPECT_FALSE(info1.proxy_resolve_end_time().is_null());
@@ -2725,7 +2725,7 @@ TEST_F(ConfiguredProxyResolutionServiceTest,
   EXPECT_EQ(OK, callback1.WaitForResult());
   // ProxyResolver::GetProxyForURL() to take a std::unique_ptr<Request>* rather
   // than a RequestHandle* (patchset #11 id:200001 of
-  // https://codereview.chromium.org/1439053002/ )
+  // https://codereview.monyhar.org/1439053002/ )
   EXPECT_EQ("request1:80", info1.proxy_server().ToURI());
 
   EXPECT_THAT(callback2.WaitForResult(), IsOk());

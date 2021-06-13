@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.gesturenav;
+package org.monyhar.chrome.browser.gesturenav;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 
-import org.chromium.chrome.R;
+import org.monyhar.chrome.R;
 
 /**
  * {@link View} class for navigation sheet. Provided as content view for

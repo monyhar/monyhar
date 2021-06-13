@@ -17,7 +17,7 @@ _QUIESCENCE_TIMEOUT = 30
 # Benchmark to measure various UMA histograms relevant to AdTagging as well as
 # CPU usage on page loads. These measurements will help to determine the
 # accuracy of AdTagging.
-@benchmark.Info(emails=['alexmt@chromium.org','johnidel@chromium.org'],
+@benchmark.Info(emails=['alexmt@monyhar.org','johnidel@monyhar.org'],
                 component='UI>Browser>AdFilter')
 class AdTaggingClusterTelemetry(perf_benchmark.PerfBenchmark):
 

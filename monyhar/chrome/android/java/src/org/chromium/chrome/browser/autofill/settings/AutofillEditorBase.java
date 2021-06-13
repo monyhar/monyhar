@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill.settings;
+package org.monyhar.chrome.browser.autofill.settings;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -26,11 +26,11 @@ import android.widget.Spinner;
 
 import androidx.fragment.app.Fragment;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.autofill.AutofillUiUtils;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.browser_ui.settings.SettingsUtils;
-import org.chromium.components.browser_ui.widget.FadingEdgeScrollView;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.autofill.AutofillUiUtils;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.components.browser_ui.widget.FadingEdgeScrollView;
 
 /** Base class for Autofill editors (e.g. credit cards and profiles). */
 public abstract class AutofillEditorBase

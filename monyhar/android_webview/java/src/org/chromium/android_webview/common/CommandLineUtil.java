@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.common;
+package org.monyhar.android_webview.common;
 
 import android.os.StrictMode;
 
-import org.chromium.base.BuildInfo;
-import org.chromium.base.CommandLine;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.CommandLine;
 
 /**
  * Utility class for WebView's CommandLine - this is compiled into a separate target that can be
@@ -19,7 +19,7 @@ public class CommandLineUtil {
     public static final String WEBVIEW_COMMAND_LINE_FILE = "/data/local/tmp/webview-command-line";
 
     private static final String COMMAND_LINE_UTIL_INTERNAL =
-            "org.chromium.android_webview.common.CommandLineUtilInternal";
+            "org.monyhar.android_webview.common.CommandLineUtilInternal";
 
     private static CommandLineUtil sInstance;
 

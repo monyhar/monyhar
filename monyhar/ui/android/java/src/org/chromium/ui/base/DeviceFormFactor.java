@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.base;
+package org.monyhar.ui.base;
 
 import android.content.Context;
 
 import androidx.annotation.UiThread;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.ui.R;
-import org.chromium.ui.display.DisplayAndroid;
-import org.chromium.ui.display.DisplayUtil;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.ui.R;
+import org.monyhar.ui.display.DisplayAndroid;
+import org.monyhar.ui.display.DisplayUtil;
 
 /**
  * UI utilities for accessing form factor information.

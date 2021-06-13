@@ -1,6 +1,6 @@
 
-droger@chromium.org
-rohitrao@chromium.org
+droger@monyhar.org
+rohitrao@monyhar.org
 
 per-file *.mojom=set noparent
 per-file *.mojom=file://ipc/SECURITY_OWNERS

@@ -60,7 +60,7 @@ a mostly-working Chromium.app, but there are open issues and missing features:
 - LLD's ARM support is fairly new
   - Chromium crashes very early during startup ([bug](https://llvm.org/PR50411))
   - likely other bugs for `target_cpu="arm64"`
-- Some tests fail, see mac-rel job on https://chromium-review.googlesource.com/c/chromium/src/+/2885356
+- Some tests fail, see mac-rel job on https://monyhar-review.googlesource.com/c/monyhar/src/+/2885356
   - Two crashpad_tests fail
     ([fixed upstream](https://reviews.llvm.org/rGb4ead2c37bcbb1f81919c68e2a2a227aac90f07c))
   - LLD-linked Chromium fails to run on macOS 10.14 or earlier

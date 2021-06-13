@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps;
+package org.monyhar.chrome.browser.webapps;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -21,13 +21,13 @@ import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.ui.modaldialog.DialogDismissalCause;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.modaldialog.ModalDialogProperties;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.ui.modaldialog.DialogDismissalCause;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.modaldialog.ModalDialogProperties;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * Test for the dialog warning that WebApks have an updated name/icon.

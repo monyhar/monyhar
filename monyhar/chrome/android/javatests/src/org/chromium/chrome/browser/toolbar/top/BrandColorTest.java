@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar.top;
+package org.monyhar.chrome.browser.toolbar.top;
 
 import android.graphics.Color;
 import android.os.Build;
@@ -16,28 +16,28 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.ObserverList.RewindableIterator;
-import org.chromium.base.SysUtils;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.Restriction;
-import org.chromium.base.test.util.UrlUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabObserver;
-import org.chromium.chrome.browser.tab.TabTestUtils;
-import org.chromium.chrome.browser.toolbar.ToolbarDataProvider;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.components.browser_ui.styles.ChromeColors;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.ui.test.util.UiRestriction;
-import org.chromium.ui.util.ColorUtils;
+import org.monyhar.base.ObserverList.RewindableIterator;
+import org.monyhar.base.SysUtils;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.Restriction;
+import org.monyhar.base.test.util.UrlUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabObserver;
+import org.monyhar.chrome.browser.tab.TabTestUtils;
+import org.monyhar.chrome.browser.toolbar.ToolbarDataProvider;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.components.browser_ui.styles.ChromeColors;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.ui.test.util.UiRestriction;
+import org.monyhar.ui.util.ColorUtils;
 
 /**
  * Contains tests for the brand color feature.

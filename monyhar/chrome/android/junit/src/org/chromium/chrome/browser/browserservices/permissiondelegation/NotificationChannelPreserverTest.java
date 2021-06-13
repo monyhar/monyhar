@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.permissiondelegation;
+package org.monyhar.chrome.browser.browserservices.permissiondelegation;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyBoolean;
@@ -21,11 +21,11 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.notifications.NotificationChannelStatus;
-import org.chromium.chrome.browser.notifications.channels.ChromeChannelDefinitions;
-import org.chromium.chrome.browser.notifications.channels.SiteChannelsManager;
-import org.chromium.components.embedder_support.util.Origin;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.notifications.NotificationChannelStatus;
+import org.monyhar.chrome.browser.notifications.channels.ChromeChannelDefinitions;
+import org.monyhar.chrome.browser.notifications.channels.SiteChannelsManager;
+import org.monyhar.components.embedder_support.util.Origin;
 
 /**
  * Tests for {@link NotificationChannelPreserverTest}.

@@ -27,8 +27,8 @@ const char kMimeTypeLinuxText[] = "TEXT";
 #endif  // defined(OS_LINUX) || defined(OS_CHROMEOS) || defined(OS_FUCHSIA)
 
 #if !defined(OS_APPLE)
-const char kMimeTypeWebCustomData[] = "chromium/x-web-custom-data";
-const char kMimeTypeWebkitSmartPaste[] = "chromium/x-webkit-paste";
+const char kMimeTypeWebCustomData[] = "monyhar/x-web-custom-data";
+const char kMimeTypeWebkitSmartPaste[] = "monyhar/x-webkit-paste";
 #endif  // defined(OS_APPLE)
 
 #if defined(OS_ANDROID)

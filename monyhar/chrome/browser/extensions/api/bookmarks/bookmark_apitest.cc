@@ -50,7 +50,7 @@ IN_PROC_BROWSER_TEST_P(BookmarksApiTest, Bookmarks) {
   base::ListValue list;
   std::unique_ptr<base::DictionaryValue> node(new base::DictionaryValue());
   node->SetString("name", "Managed Bookmark");
-  node->SetString("url", "http://www.chromium.org");
+  node->SetString("url", "http://www.monyhar.org");
   list.Append(std::move(node));
   node = std::make_unique<base::DictionaryValue>();
   node->SetString("name", "Managed Folder");

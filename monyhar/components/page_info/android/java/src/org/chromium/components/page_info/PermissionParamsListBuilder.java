@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.page_info;
+package org.monyhar.components.page_info;
 
 import android.content.Context;
 import android.text.Spannable;
@@ -10,13 +10,13 @@ import android.text.SpannableString;
 import android.text.SpannableStringBuilder;
 import android.text.style.TextAppearanceSpan;
 
-import org.chromium.components.content_settings.ContentSettingValues;
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.components.location.LocationUtils;
-import org.chromium.components.page_info.PageInfoPermissionsController.PermissionObject;
-import org.chromium.components.permissions.PermissionUtil;
-import org.chromium.components.permissions.nfc.NfcSystemLevelSetting;
-import org.chromium.ui.base.AndroidPermissionDelegate;
+import org.monyhar.components.content_settings.ContentSettingValues;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.components.location.LocationUtils;
+import org.monyhar.components.page_info.PageInfoPermissionsController.PermissionObject;
+import org.monyhar.components.permissions.PermissionUtil;
+import org.monyhar.components.permissions.nfc.NfcSystemLevelSetting;
+import org.monyhar.ui.base.AndroidPermissionDelegate;
 
 import java.util.ArrayList;
 import java.util.List;

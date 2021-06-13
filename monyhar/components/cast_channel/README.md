@@ -3,7 +3,7 @@
 Create an appropriate build config:
 
 ```shell
-% tools/mb/mb.py gen -m chromium.fuzz -b 'Libfuzzer Upload Linux ASan' out/libfuzzer
+% tools/mb/mb.py gen -m monyhar.fuzz -b 'Libfuzzer Upload Linux ASan' out/libfuzzer
 % gn gen out/libfuzzer
 ```
 
@@ -37,4 +37,4 @@ If the test has no seed corpus, omit the last parameter:
 % ./out/libfuzzer/$TEST_NAME ${TEST_NAME}_corpus
 ```
 
-For more details, refer to https://chromium.googlesource.com/chromium/src/testing/libfuzzer/+/refs/heads/main/getting_started.md
+For more details, refer to https://monyhar.googlesource.com/monyhar/src/testing/libfuzzer/+/refs/heads/main/getting_started.md

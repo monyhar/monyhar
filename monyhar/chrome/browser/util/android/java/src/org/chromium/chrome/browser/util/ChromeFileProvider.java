@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.util;
+package org.monyhar.chrome.browser.util;
 
 import android.database.Cursor;
 import android.database.MatrixCursor;
@@ -12,8 +12,8 @@ import android.provider.MediaStore;
 
 import androidx.core.content.FileProvider;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.components.embedder_support.util.UrlConstants;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.components.embedder_support.util.UrlConstants;
 
 import java.io.File;
 import java.io.FileNotFoundException;

@@ -42,9 +42,9 @@ if (is_chrome_branded) {
 } else {
   grit_defines += [
     "-D",
-    "_chromium",
+    "_monyhar",
     "-E",
-    "CHROMIUM_BUILD=chromium",
+    "CHROMIUM_BUILD=monyhar",
   ]
 }
 

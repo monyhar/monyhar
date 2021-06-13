@@ -20,7 +20,7 @@ class QRCodeGeneratorBubbleBrowserTest : public DialogBrowserTest {
 
   // DialogBrowserTest:
   void ShowUi(const std::string& name) override {
-    const GURL url("https://www.chromium.org");
+    const GURL url("https://www.monyhar.org");
     auto* web_contents = browser()->tab_strip_model()->GetActiveWebContents();
     auto* bubble_controller =
         qrcode_generator::QRCodeGeneratorBubbleController::Get(web_contents);

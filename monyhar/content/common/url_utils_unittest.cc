@@ -22,7 +22,7 @@ TEST(UrlUtilsTest, HasWebUIScheme) {
   EXPECT_TRUE(HasWebUIScheme(CreateValidURL("chrome-untrusted://test")));
   EXPECT_TRUE(HasWebUIScheme(CreateValidURL("devtools://test")));
 
-  // Other chromium schemes not considered WebUI schemes.
+  // Other monyhar schemes not considered WebUI schemes.
   EXPECT_FALSE(HasWebUIScheme(CreateValidURL("chrome-error://test")));
   EXPECT_FALSE(HasWebUIScheme(CreateValidURL("chrome-guest://test")));
   EXPECT_FALSE(HasWebUIScheme(CreateValidURL("googlechrome://test")));

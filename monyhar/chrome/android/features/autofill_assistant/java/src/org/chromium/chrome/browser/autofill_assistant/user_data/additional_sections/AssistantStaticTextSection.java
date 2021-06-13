@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.user_data.additional_sections;
+package org.monyhar.chrome.browser.autofill_assistant.user_data.additional_sections;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,9 +11,9 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.autofill_assistant.AssistantTextUtils;
-import org.chromium.chrome.browser.autofill_assistant.LayoutUtils;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.autofill_assistant.AssistantTextUtils;
+import org.monyhar.chrome.browser.autofill_assistant.LayoutUtils;
 
 /** A section which displays a simple static text message. */
 public class AssistantStaticTextSection implements AssistantAdditionalSection {

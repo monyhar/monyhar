@@ -4,8 +4,8 @@
 
 // This file is auto-generated from
 // gpu/command_buffer/build_raster_cmd_buffer.py
-// It's formatted by clang-format using chromium coding style:
-//    clang-format -i -style=chromium filename
+// It's formatted by clang-format using monyhar coding style:
+//    clang-format -i -style=monyhar filename
 // DO NOT EDIT!
 
 // It is included by raster_cmd_decoder.cc
@@ -138,7 +138,7 @@ error::Error RasterDecoderImpl::HandleRasterCHROMIUM(
     const volatile void* cmd_data) {
   const volatile raster::cmds::RasterCHROMIUM& c =
       *static_cast<const volatile raster::cmds::RasterCHROMIUM*>(cmd_data);
-  if (!features().chromium_raster_transport) {
+  if (!features().monyhar_raster_transport) {
     return error::kUnknownCommand;
   }
 

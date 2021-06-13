@@ -25,7 +25,7 @@ def _MatchPageSetName(story_set_name, story_set_base_dir):
   return None
 
 
-@benchmark.Info(emails=['rmistry@chromium.org'])
+@benchmark.Info(emails=['rmistry@monyhar.org'])
 class SkpicturePrinter(perf_benchmark.PerfBenchmark):
 
   @classmethod

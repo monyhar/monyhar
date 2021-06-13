@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.app.send_tab_to_self;
+package org.monyhar.chrome.browser.app.send_tab_to_self;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.chrome.browser.init.BrowserParts;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
-import org.chromium.chrome.browser.init.EmptyBrowserParts;
-import org.chromium.chrome.browser.share.send_tab_to_self.NotificationManager;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.chrome.browser.init.BrowserParts;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.chrome.browser.init.EmptyBrowserParts;
+import org.monyhar.chrome.browser.share.send_tab_to_self.NotificationManager;
 
 /** Handles changes to notifications based on user action or timeout. */
 public class SendTabToSelfNotificationReceiver extends BroadcastReceiver {

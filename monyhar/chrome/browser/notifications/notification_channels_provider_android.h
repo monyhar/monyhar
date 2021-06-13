@@ -25,7 +25,7 @@
 class TemplateURLService;
 
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.notifications
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.notifications
 enum NotificationChannelStatus { ENABLED, BLOCKED, UNAVAILABLE };
 
 struct NotificationChannel {

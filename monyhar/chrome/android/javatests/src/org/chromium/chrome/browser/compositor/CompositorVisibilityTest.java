@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor;
+package org.monyhar.chrome.browser.compositor;
 
 import android.content.res.Resources;
 import android.graphics.Rect;
@@ -17,15 +17,15 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.chrome.browser.compositor.layouts.LayoutRenderHost;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.ui.resources.ResourceManager;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.chrome.browser.compositor.layouts.LayoutRenderHost;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.ui.resources.ResourceManager;
 
 /**
- * Integration tests for {@link org.chromium.chrome.browser.compositor.CompositorView}.
+ * Integration tests for {@link org.monyhar.chrome.browser.compositor.CompositorView}.
  */
 @RunWith(ChromeJUnit4ClassRunner.class)
 @CommandLineFlags.Add({ChromeSwitches.DISABLE_FIRST_RUN_EXPERIENCE})

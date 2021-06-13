@@ -6,8 +6,8 @@ import("//build/config/android/rules.gni")
 
 generate_jni("jni_headers") {
   sources = [
-    "android/java/src/org/chromium/chrome/browser/continuous_search/SearchResultExtractorProducer.java",
-    "android/java/src/org/chromium/chrome/browser/continuous_search/SearchUrlHelper.java",
+    "android/java/src/org/monyhar/chrome/browser/continuous_search/SearchResultExtractorProducer.java",
+    "android/java/src/org/monyhar/chrome/browser/continuous_search/SearchUrlHelper.java",
   ]
 }
 
@@ -15,15 +15,15 @@ android_library("java") {
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
 
   sources = [
-    "android/java/src/org/chromium/chrome/browser/continuous_search/BackNavigationTabObserver.java",
-    "android/java/src/org/chromium/chrome/browser/continuous_search/ContinuousNavigationUserDataImpl.java",
-    "android/java/src/org/chromium/chrome/browser/continuous_search/ContinuousNavigationUserDataObserver.java",
-    "android/java/src/org/chromium/chrome/browser/continuous_search/ContinuousSearchTabObserver.java",
-    "android/java/src/org/chromium/chrome/browser/continuous_search/SearchResultExtractorProducer.java",
-    "android/java/src/org/chromium/chrome/browser/continuous_search/SearchResultListener.java",
-    "android/java/src/org/chromium/chrome/browser/continuous_search/SearchResultProducer.java",
-    "android/java/src/org/chromium/chrome/browser/continuous_search/SearchResultProducerFactory.java",
-    "android/java/src/org/chromium/chrome/browser/continuous_search/SearchUrlHelper.java",
+    "android/java/src/org/monyhar/chrome/browser/continuous_search/BackNavigationTabObserver.java",
+    "android/java/src/org/monyhar/chrome/browser/continuous_search/ContinuousNavigationUserDataImpl.java",
+    "android/java/src/org/monyhar/chrome/browser/continuous_search/ContinuousNavigationUserDataObserver.java",
+    "android/java/src/org/monyhar/chrome/browser/continuous_search/ContinuousSearchTabObserver.java",
+    "android/java/src/org/monyhar/chrome/browser/continuous_search/SearchResultExtractorProducer.java",
+    "android/java/src/org/monyhar/chrome/browser/continuous_search/SearchResultListener.java",
+    "android/java/src/org/monyhar/chrome/browser/continuous_search/SearchResultProducer.java",
+    "android/java/src/org/monyhar/chrome/browser/continuous_search/SearchResultProducerFactory.java",
+    "android/java/src/org/monyhar/chrome/browser/continuous_search/SearchUrlHelper.java",
   ]
 
   srcjar_deps = [ "//components/continuous_search/browser:search_result_extractor_client_status_generated_enum" ]
@@ -40,7 +40,7 @@ android_library("java") {
     "//ui/android:ui_no_recycler_view_java",
     "//url:gurl_java",
   ]
-  resources_package = "org.chromium.chrome.browser.continuous_search"
+  resources_package = "org.monyhar.chrome.browser.continuous_search"
 }
 
 android_library("junit") {
@@ -48,10 +48,10 @@ android_library("junit") {
   testonly = true
 
   sources = [
-    "android/junit/org/chromium/chrome/browser/continuous_search/BackNavigationTabObserverTest.java",
-    "android/junit/org/chromium/chrome/browser/continuous_search/ContinuousNavigationUserDataImplTest.java",
-    "android/junit/org/chromium/chrome/browser/continuous_search/ContinuousSearchTabObserverTest.java",
-    "android/junit/org/chromium/chrome/browser/continuous_search/SearchResultExtractorProducerTest.java",
+    "android/junit/org/monyhar/chrome/browser/continuous_search/BackNavigationTabObserverTest.java",
+    "android/junit/org/monyhar/chrome/browser/continuous_search/ContinuousNavigationUserDataImplTest.java",
+    "android/junit/org/monyhar/chrome/browser/continuous_search/ContinuousSearchTabObserverTest.java",
+    "android/junit/org/monyhar/chrome/browser/continuous_search/SearchResultExtractorProducerTest.java",
   ]
 
   deps = [

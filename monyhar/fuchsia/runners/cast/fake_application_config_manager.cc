@@ -14,10 +14,10 @@ constexpr char FakeApplicationConfigManager::kFakeAgentUrl[] =
     "fuchsia-pkg://fuchsia.com/fake_agent#meta/fake_agent.cmx";
 
 // static
-chromium::cast::ApplicationConfig FakeApplicationConfigManager::CreateConfig(
+monyhar::cast::ApplicationConfig FakeApplicationConfigManager::CreateConfig(
     const std::string& id,
     const GURL& url) {
-  chromium::cast::ApplicationConfig app_config;
+  monyhar::cast::ApplicationConfig app_config;
   app_config.set_id(id);
   app_config.set_display_name("Dummy test app");
   app_config.set_web_url(url.spec());
@@ -36,7 +36,7 @@ FakeApplicationConfigManager::FakeApplicationConfigManager() = default;
 FakeApplicationConfigManager::~FakeApplicationConfigManager() = default;
 
 void FakeApplicationConfigManager::AddAppConfig(
-    chromium::cast::ApplicationConfig app_config) {
+    monyhar::cast::ApplicationConfig app_config) {
   id_to_config_[app_config.id()] = std::move(app_config);
 }
 
@@ -49,7 +49,7 @@ void FakeApplicationConfigManager::GetConfig(std::string id,
                                              GetConfigCallback callback) {
   if (id_to_config_.find(id) == id_to_config_.end()) {
     LOG(ERROR) << "Unknown Cast App ID: " << id;
-    callback(chromium::cast::ApplicationConfig());
+    callback(monyhar::cast::ApplicationConfig());
     return;
   }
 

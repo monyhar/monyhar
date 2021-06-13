@@ -9,7 +9,7 @@
     android:layout_height="86dp"
     android:orientation="vertical">
 
-    <org.chromium.components.browser_ui.widget.RoundedCornerImageView
+    <org.monyhar.components.browser_ui.widget.RoundedCornerImageView
         android:id="@+id/thumbnail"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

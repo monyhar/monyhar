@@ -1,11 +1,11 @@
 set noparent
-marq@chromium.org
-noyau@chromium.org
-rohitrao@chromium.org
-sdefresne@chromium.org
+marq@monyhar.org
+noyau@monyhar.org
+rohitrao@monyhar.org
+sdefresne@monyhar.org
 
 # US-Pacific backup owner when no one on the above list is available
-sczs@chromium.org
+sczs@monyhar.org
 
 # per-file rules:
 # These are for the common case of adding or renaming files. If you're doing

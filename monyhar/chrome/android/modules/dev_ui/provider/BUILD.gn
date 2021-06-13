@@ -12,15 +12,15 @@ android_library("java") {
   ]
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
   sources = [
-    "java/src/org/chromium/chrome/modules/dev_ui/DevUiInstallListener.java",
-    "java/src/org/chromium/chrome/modules/dev_ui/DevUiModuleProvider.java",
+    "java/src/org/monyhar/chrome/modules/dev_ui/DevUiInstallListener.java",
+    "java/src/org/monyhar/chrome/modules/dev_ui/DevUiModuleProvider.java",
   ]
 }
 
 generate_jni("jni_headers") {
   sources = [
-    "java/src/org/chromium/chrome/modules/dev_ui/DevUiInstallListener.java",
-    "java/src/org/chromium/chrome/modules/dev_ui/DevUiModuleProvider.java",
+    "java/src/org/monyhar/chrome/modules/dev_ui/DevUiInstallListener.java",
+    "java/src/org/monyhar/chrome/modules/dev_ui/DevUiModuleProvider.java",
   ]
 }
 

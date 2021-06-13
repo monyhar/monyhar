@@ -1529,11 +1529,11 @@ TEST_F(DeveloperPrivateApiUnitTest,
   // the preference and keeping a stored set of any granted host permissions,
   // but this then results in a funny edge case:
   // - User has "on specific sites" set, with access to example.com and
-  //   chromium.org granted.
+  //   monyhar.org granted.
   // - User changes to "on click" -> no sites are granted.
   // - User visits google.com, and says "always run on this site." This changes
   //   the setting back to "on specific sites", and will implicitly re-grant
-  //   example.com and chromium.org permissions, without any additional
+  //   example.com and monyhar.org permissions, without any additional
   //   prompting.
   // To avoid this, we just clear any granted permissions when the user
   // transitions between states. Since this is definitely a power-user surface,
@@ -1575,7 +1575,7 @@ TEST_F(DeveloperPrivateApiUnitTest,
   modifier.SetWithholdHostPermissions(true);
 
   const GURL kGoogleCom("https://google.com/");
-  const GURL kChromiumCom("https://chromium.com");
+  const GURL kChromiumCom("https://monyhar.com");
 
   // Request <all_urls> and google.com so they are both in the runtime granted
   // list. We use the util function to specifically add the <all_urls> pattern
@@ -1623,38 +1623,38 @@ TEST_F(DeveloperPrivateApiUnitTest,
     scoped_refptr<ExtensionFunction> function =
         base::MakeRefCounted<api::DeveloperPrivateAddHostPermissionFunction>();
     std::string args = base::StringPrintf(
-        R"(["%s", "%s"])", extension->id().c_str(), "*://chromium.org/*");
+        R"(["%s", "%s"])", extension->id().c_str(), "*://monyhar.org/*");
     EXPECT_TRUE(api_test_utils::RunFunction(function.get(), args, profile()))
         << function->GetError();
   }
 
   // The active permissions (which are given to the extension process) should
   // only include the intersection of what was requested by the extension and
-  // the runtime granted permissions - which is http://chromium.org/*.
-  URLPattern http_chromium(Extension::kValidHostPermissionSchemes,
-                           "http://chromium.org/*");
-  const PermissionSet http_chromium_set(
+  // the runtime granted permissions - which is http://monyhar.org/*.
+  URLPattern http_monyhar(Extension::kValidHostPermissionSchemes,
+                           "http://monyhar.org/*");
+  const PermissionSet http_monyhar_set(
       APIPermissionSet(), ManifestPermissionSet(),
-      URLPatternSet({http_chromium}), URLPatternSet());
-  EXPECT_EQ(http_chromium_set,
+      URLPatternSet({http_monyhar}), URLPatternSet());
+  EXPECT_EQ(http_monyhar_set,
             extension->permissions_data()->active_permissions());
 
   // The runtime granted permissions should include all of what was approved by
-  // the user, which is *://chromium.org/*, and should be present in both the
+  // the user, which is *://monyhar.org/*, and should be present in both the
   // scriptable and explicit hosts.
-  URLPattern all_chromium(Extension::kValidHostPermissionSchemes,
-                          "*://chromium.org/*");
-  const PermissionSet all_chromium_set(
+  URLPattern all_monyhar(Extension::kValidHostPermissionSchemes,
+                          "*://monyhar.org/*");
+  const PermissionSet all_monyhar_set(
       APIPermissionSet(), ManifestPermissionSet(),
-      URLPatternSet({all_chromium}), URLPatternSet({all_chromium}));
-  EXPECT_EQ(all_chromium_set,
+      URLPatternSet({all_monyhar}), URLPatternSet({all_monyhar}));
+  EXPECT_EQ(all_monyhar_set,
             *extension_prefs->GetRuntimeGrantedPermissions(extension->id()));
 
   {
     scoped_refptr<ExtensionFunction> function = base::MakeRefCounted<
         api::DeveloperPrivateRemoveHostPermissionFunction>();
     std::string args = base::StringPrintf(
-        R"(["%s", "%s"])", extension->id().c_str(), "*://chromium.org/*");
+        R"(["%s", "%s"])", extension->id().c_str(), "*://monyhar.org/*");
     EXPECT_TRUE(api_test_utils::RunFunction(function.get(), args, profile()))
         << function->GetError();
   }

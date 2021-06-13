@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.history;
+package org.monyhar.chrome.browser.history;
 
 import android.text.TextUtils;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.chrome.R;
-import org.chromium.components.browser_ui.widget.DateDividedAdapter.TimedItem;
-import org.chromium.url.GURL;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.components.browser_ui.widget.DateDividedAdapter.TimedItem;
+import org.monyhar.url.GURL;
 
 import java.util.Arrays;
 

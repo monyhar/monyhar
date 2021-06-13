@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_manager.settings;
+package org.monyhar.chrome.browser.password_manager.settings;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
@@ -12,8 +12,8 @@ import android.view.View;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 
-import org.chromium.chrome.R;
-import org.chromium.components.browser_ui.widget.MaterialProgressBar;
+import org.monyhar.chrome.R;
+import org.monyhar.components.browser_ui.widget.MaterialProgressBar;
 
 /**
  * Shows the dialog that informs the user about the progress of preparing passwords for export and

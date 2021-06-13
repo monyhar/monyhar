@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.bytecode;
+package org.monyhar.bytecode;
 
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.MethodVisitor;
@@ -183,7 +183,7 @@ public class FragmentActivityReplacer extends ByteCodeRewriter {
                 baseVisitor.visitVarInsn(Opcodes.ALOAD, 0);
                 baseVisitor.visitMethodInsn(Opcodes.INVOKEVIRTUAL, "androidx/fragment/app/Fragment",
                         "getContext", "()Landroid/content/Context;", false);
-                baseVisitor.visitMethodInsn(Opcodes.INVOKESTATIC, "org/chromium/utils/ContextUtils",
+                baseVisitor.visitMethodInsn(Opcodes.INVOKESTATIC, "org/monyhar/utils/ContextUtils",
                         "activityFromContext", "(Landroid/content/Context;)Landroid/app/Activity;",
                         false);
                 baseVisitor.visitInsn(Opcodes.ARETURN);

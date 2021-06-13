@@ -68,7 +68,7 @@ if (is_android) {
     # External code should depend on ":cc_base_java" instead.
     visibility = [ ":*" ]
     sources = [ "switches.cc" ]
-    template = "android/java/src/org/chromium/cc/base/CcSwitches.java.tmpl"
+    template = "android/java/src/org/monyhar/cc/base/CcSwitches.java.tmpl"
   }
 
   android_library("cc_base_java") {

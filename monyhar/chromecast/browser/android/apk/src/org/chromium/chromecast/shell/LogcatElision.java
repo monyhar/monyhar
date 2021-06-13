@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.shell;
+package org.monyhar.chromecast.shell;
 
 import android.util.Patterns;
 
@@ -51,7 +51,7 @@ class LogcatElision {
             Pattern.compile("([0-9a-fA-F]{2}[-:]+){5}[0-9a-fA-F]{2}");
     private static final Pattern CONSOLE_MSG = Pattern.compile("\\[\\w*:CONSOLE.*\\].*");
 
-    private static final String[] CHROME_NAMESPACE = new String[] {"org.chromium.", "com.google."};
+    private static final String[] CHROME_NAMESPACE = new String[] {"org.monyhar.", "com.google."};
 
     private static final String[] CAST_NAMESPACE = new String[] {"Cast.", "CastV2."};
 

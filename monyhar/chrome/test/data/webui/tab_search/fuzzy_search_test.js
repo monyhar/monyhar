@@ -94,7 +94,7 @@ suite('FuzzySearchTest', () => {
         tab: {
           title: 'Code Search',
         },
-        hostname: 'search.chromium.search',
+        hostname: 'search.monyhar.search',
       },
       {tab: {title: 'Marching band'}, hostname: 'en.marching.band.com'},
       {
@@ -135,7 +135,7 @@ suite('FuzzySearchTest', () => {
       },
       {
         tab: {title: 'Code Search'},
-        hostname: 'search.chromium.search',
+        hostname: 'search.monyhar.search',
         titleHighlightRanges: [{start: 7, length: 4}],
         hostnameHighlightRanges:
             [{start: 2, length: 4}, {start: 18, length: 4}],
@@ -158,7 +158,7 @@ suite('FuzzySearchTest', () => {
     const searchMatchedRecords = [
       {
         tab: {title: 'Code Search'},
-        hostname: 'search.chromium.search',
+        hostname: 'search.monyhar.search',
         titleHighlightRanges: [{start: 5, length: 6}],
         hostnameHighlightRanges:
             [{start: 0, length: 6}, {start: 16, length: 6}],

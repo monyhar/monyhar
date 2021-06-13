@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.carousel;
+package org.monyhar.chrome.browser.autofill_assistant.carousel;
 
-import static org.chromium.chrome.browser.autofill_assistant.AssistantTagsForTesting.RECYCLER_VIEW_TAG;
+import static org.monyhar.chrome.browser.autofill_assistant.AssistantTagsForTesting.RECYCLER_VIEW_TAG;
 
 import android.content.Context;
 import android.view.View;
@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.OrientationHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.chrome.autofill_assistant.R;
+import org.monyhar.chrome.autofill_assistant.R;
 
 /**
  * A coordinator responsible for suggesting chips to the user. If there is one chip to display, it

@@ -28,7 +28,7 @@ import argparse
 import logging
 import sys
 
-import devil_chromium
+import devil_monyhar
 
 from devil.android import apk_helper
 from devil.android import device_denylist
@@ -88,7 +88,7 @@ def main():
   args = parser.parse_args()
   run_tests_helper.SetLogLevel(args.verbose)
 
-  devil_chromium.Initialize()
+  devil_monyhar.Initialize()
 
   denylist = (device_denylist.Denylist(args.denylist_file)
               if args.denylist_file else None)

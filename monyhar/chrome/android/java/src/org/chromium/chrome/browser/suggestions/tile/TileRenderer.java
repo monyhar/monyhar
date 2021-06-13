@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.suggestions.tile;
+package org.monyhar.chrome.browser.suggestions.tile;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -18,24 +18,24 @@ import androidx.annotation.VisibleForTesting;
 import androidx.core.graphics.drawable.RoundedBitmapDrawable;
 import androidx.vectordrawable.graphics.drawable.VectorDrawableCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.Log;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.explore_sites.ExploreSitesBridge;
-import org.chromium.chrome.browser.explore_sites.ExploreSitesIPH;
-import org.chromium.chrome.browser.feature_engagement.TrackerFactory;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.suggestions.ImageFetcher;
-import org.chromium.chrome.browser.suggestions.SiteSuggestion;
-import org.chromium.chrome.browser.suggestions.SuggestionsConfig.TileStyle;
-import org.chromium.components.browser_ui.widget.RoundedIconGenerator;
-import org.chromium.components.favicon.IconType;
-import org.chromium.components.favicon.LargeIconBridge;
-import org.chromium.components.feature_engagement.EventConstants;
-import org.chromium.components.feature_engagement.Tracker;
-import org.chromium.ui.base.ViewUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.explore_sites.ExploreSitesBridge;
+import org.monyhar.chrome.browser.explore_sites.ExploreSitesIPH;
+import org.monyhar.chrome.browser.feature_engagement.TrackerFactory;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.suggestions.ImageFetcher;
+import org.monyhar.chrome.browser.suggestions.SiteSuggestion;
+import org.monyhar.chrome.browser.suggestions.SuggestionsConfig.TileStyle;
+import org.monyhar.components.browser_ui.widget.RoundedIconGenerator;
+import org.monyhar.components.favicon.IconType;
+import org.monyhar.components.favicon.LargeIconBridge;
+import org.monyhar.components.feature_engagement.EventConstants;
+import org.monyhar.components.feature_engagement.Tracker;
+import org.monyhar.ui.base.ViewUtils;
 
 import java.util.HashMap;
 import java.util.List;

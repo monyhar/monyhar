@@ -34,7 +34,7 @@ _IGNORE_WARNINGS = (
     # TODO(wnwen): Remove this after R8 version 3.0.26-dev:
     r'Missing class sun.misc.Unsafe',
     # Caused when the test apk and the apk under test do not having native libs.
-    r'Missing class org.chromium.build.NativeLibraries',
+    r'Missing class org.monyhar.build.NativeLibraries',
     # Caused by internal annotation: https://crbug.com/1180222
     r'Missing class com.google.errorprone.annotations.RestrictedInheritance',
     # Caused by internal protobuf package: https://crbug.com/1183971
@@ -587,7 +587,7 @@ def main(args):
     dex_cmd += [
         '-cp',
         '{}:{}'.format(options.r8_jar_path, options.custom_d8_jar_path),
-        'org.chromium.build.CustomD8',
+        'org.monyhar.build.CustomD8',
     ]
   else:
     dex_cmd += [

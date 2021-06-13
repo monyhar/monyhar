@@ -65,7 +65,7 @@ TEST(SysinfoTest, GetTID) {
 #ifdef __native_client__
   // Native Client has a race condition bug that leads to memory
   // exaustion when repeatedly creating and joining threads.
-  // https://bugs.chromium.org/p/nativeclient/issues/detail?id=1027
+  // https://bugs.monyhar.org/p/nativeclient/issues/detail?id=1027
   return;
 #endif
   // Test that TIDs are unique to each thread.

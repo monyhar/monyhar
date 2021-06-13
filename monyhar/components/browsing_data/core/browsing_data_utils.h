@@ -17,7 +17,7 @@ namespace browsing_data {
 // Browsing data types as seen in the Android and Desktop UI.
 //
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.browsing_data
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.browsing_data
 enum class BrowsingDataType {
   HISTORY,
   CACHE,
@@ -36,7 +36,7 @@ enum class BrowsingDataType {
 // Time period ranges available when doing browsing data removals.
 //
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.browsing_data
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.browsing_data
 enum class TimePeriod {
   LAST_HOUR = 0,
   LAST_DAY,

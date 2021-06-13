@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#import "ios/chrome/browser/providers/chromium_text_zoom_provider.h"
+#import "ios/chrome/browser/providers/monyhar_text_zoom_provider.h"
 
 #include "ios/chrome/browser/web/features.h"
 #import "ios/public/provider/chrome/browser/font_size_java_script_feature.h"

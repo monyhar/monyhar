@@ -10,7 +10,7 @@ of rendering that content (_media sinks_). When a media source is linked with a
 _media sink_, a _media route_ is created that allows two-way messaging between
 the source and the sink. The media route allows the application to negotiate a
 peer-to-peer media streaming session with the media sink via messaging (e.g.,
-via [WebRTC](http://www.webrtc.org/) or [Cast Streaming](https://cs.chromium.org/chromium/src/components/mirroring/)),
+via [WebRTC](http://www.webrtc.org/) or [Cast Streaming](https://cs.monyhar.org/monyhar/src/components/mirroring/)),
 aka "mirroring." The media route can also be used to request the remote display
 to render a URL without an associated peer-to-peer media streaming session, aka
 "flinging". The media route can be terminated at user or browser request,
@@ -92,7 +92,7 @@ a Web application via the Presentation API.  It is implemented in Views.
 
 4.  The PresentationService mojo interface acts as a bridge between the Chrome
 Media Router and the Blink implementations of the Presentation API ([launch
-bug](https://code.google.com/p/chromium/issues/detail?id=412331)).
+bug](https://code.google.com/p/monyhar/issues/detail?id=412331)).
 
 ## Architecture
 
@@ -100,7 +100,7 @@ The following diagram illustrates the architecture of the components described a
 
 *TODO: update diagram*
 
-[![](https://www.chromium.org/_/rsrc/1423182643815/developers/design-documents/media-router/Chrome%20Media%20Router%20Architecture%20%281%29.png)](https://www.chromium.org/developers/design-documents/media-router/Chrome%20Media%20Router%20Architecture%20%281%29.png?attredirects=0)
+[![](https://www.monyhar.org/_/rsrc/1423182643815/developers/design-documents/media-router/Chrome%20Media%20Router%20Architecture%20%281%29.png)](https://www.monyhar.org/developers/design-documents/media-router/Chrome%20Media%20Router%20Architecture%20%281%29.png?attredirects=0)
 
 ### Chrome Media Router
 
@@ -370,7 +370,7 @@ there permanently.
 
 *TODO: Update screenshot*
 
-[![](https://www.chromium.org/_/rsrc/1418943120195/developers/design-documents/media-router/media_router_overflow.jpg)](https://www.chromium.org/developers/design-documents/media-router/media_router_overflow.jpg?attredirects=0)
+[![](https://www.monyhar.org/_/rsrc/1418943120195/developers/design-documents/media-router/media_router_overflow.jpg)](https://www.monyhar.org/developers/design-documents/media-router/media_router_overflow.jpg?attredirects=0)
 
 Clicking on the Cast icon brings up a menu of available media sinks that are
 compatible with the current content. For Web documents not using the
@@ -382,7 +382,7 @@ requested to be presented through the Presentation API.
 
 *TODO: Update screenshot*
 
-[![](https://www.chromium.org/_/rsrc/1418944081776/developers/design-documents/media-router/media_router_screen_selector.jpg)](https://www.chromium.org/developers/design-documents/media-router/media_router_screen_selector.jpg?attredirects=0)
+[![](https://www.monyhar.org/_/rsrc/1418944081776/developers/design-documents/media-router/media_router_screen_selector.jpg)](https://www.monyhar.org/developers/design-documents/media-router/media_router_screen_selector.jpg?attredirects=0)
 
 -----------------------------------------------
 
@@ -411,7 +411,7 @@ perspective. Specific security-related aspects:
 
 # Contact
 
-* [media-dev@chromium.org](mailto:media-dev@chromium.org)
+* [media-dev@monyhar.org](mailto:media-dev@monyhar.org)
 
 # Code location
 
@@ -428,5 +428,5 @@ perspective. Specific security-related aspects:
 
 | Date       | Author              | Description                                      |
 |------------|---------------------|--------------------------------------------------|
-| 6-Feb-2015 | mfoltz@chromium.org | Initial publication                              |
-| 8-Jul-2019 | mfoltz@chromium.org | Converted to markdown, obsolete material removed.|
+| 6-Feb-2015 | mfoltz@monyhar.org | Initial publication                              |
+| 8-Jul-2019 | mfoltz@monyhar.org | Converted to markdown, obsolete material removed.|

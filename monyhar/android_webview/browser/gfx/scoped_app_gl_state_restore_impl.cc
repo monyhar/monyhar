@@ -274,7 +274,7 @@ ScopedAppGLStateRestoreImpl::~ScopedAppGLStateRestoreImpl() {
   DCHECK(ClearGLErrors(false, NULL));
   RestoreHWUIState(save_restore_);
 
-  // Do not leak GLError out of chromium.
+  // Do not leak GLError out of monyhar.
   ClearGLErrors(true, "Chromium GLError");
 }
 

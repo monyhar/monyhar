@@ -520,7 +520,7 @@ class TestRunner {
 
   WorkQueue work_queue_;
 
-  // Bound variable to return the name of this platform (chromium).
+  // Bound variable to return the name of this platform (monyhar).
   std::string platform_name_;
 
   // Flags controlling what content gets dumped as a layout text result.

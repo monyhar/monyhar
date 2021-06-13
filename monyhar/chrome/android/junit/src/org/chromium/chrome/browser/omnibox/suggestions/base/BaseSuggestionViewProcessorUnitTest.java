@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.base;
+package org.monyhar.chrome.browser.omnibox.suggestions.base;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -26,8 +26,8 @@ import org.mockito.ArgumentMatcher;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.chrome.browser.omnibox.MatchClassificationStyle;
-import org.chromium.components.omnibox.AutocompleteMatch.MatchClassification;
+import org.monyhar.chrome.browser.omnibox.MatchClassificationStyle;
+import org.monyhar.components.omnibox.AutocompleteMatch.MatchClassification;
 
 import java.util.ArrayList;
 import java.util.List;

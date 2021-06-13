@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.optimization_guide;
+package org.monyhar.chrome.browser.optimization_guide;
 
 import static org.mockito.AdditionalMatchers.aryEq;
 import static org.mockito.ArgumentMatchers.any;
@@ -24,15 +24,15 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.UiThreadTest;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.components.optimization_guide.OptimizationGuideDecision;
-import org.chromium.components.optimization_guide.proto.HintsProto.OptimizationType;
-import org.chromium.content_public.browser.NavigationHandle;
-import org.chromium.url.GURL;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.UiThreadTest;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.components.optimization_guide.OptimizationGuideDecision;
+import org.monyhar.components.optimization_guide.proto.HintsProto.OptimizationType;
+import org.monyhar.content_public.browser.NavigationHandle;
+import org.monyhar.url.GURL;
 
 import java.util.Arrays;
 

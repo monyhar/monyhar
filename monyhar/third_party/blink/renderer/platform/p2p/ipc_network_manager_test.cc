@@ -71,7 +71,7 @@ class IpcNetworkManagerTest : public testing::Test {
 // single Network class. This also tests the logic inside
 // IpcNetworkManager in addition to MergeNetworkList.
 // TODO(guoweis): disable this test case for now until fix for webrtc
-// issue 19249005 integrated into chromium
+// issue 19249005 integrated into monyhar
 TEST_F(IpcNetworkManagerTest, TestMergeNetworkList) {
   net::NetworkInterfaceList list;
   net::IPAddress ip;

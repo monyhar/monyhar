@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.module_installer.logger;
+package org.monyhar.components.module_installer.logger;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.greaterThan;
 
-import org.chromium.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordHistogram;
 
 /**
  * Util class for supporting logger testing.
@@ -32,7 +32,7 @@ public class LoggerTestUtil {
             }
         }
         // There are samples only in the overflow bucket. More context:
-        // https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md#count-histograms_choosing-min-and-max
+        // https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md#count-histograms_choosing-min-and-max
         return Integer.MAX_VALUE;
     }
 }

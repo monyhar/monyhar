@@ -191,7 +191,7 @@ export function createDestinationWithCertificateStatus(id, name, invalid) {
   const tags = {
     certificateStatus: invalid ? DestinationCertificateStatus.NO :
                                  DestinationCertificateStatus.UNKNOWN,
-    account: 'foo@chromium.org',
+    account: 'foo@monyhar.org',
   };
   const dest = new Destination(
       id, DestinationType.GOOGLE, DestinationOrigin.COOKIES, name,

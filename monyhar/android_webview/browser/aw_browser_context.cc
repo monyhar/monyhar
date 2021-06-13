@@ -90,7 +90,7 @@ void MigrateProfileData(base::FilePath cache_path,
   FilePath old_cache_path;
   base::PathService::Get(base::DIR_CACHE, &old_cache_path);
   old_cache_path = old_cache_path.DirName().Append(
-      FILE_PATH_LITERAL("org.chromium.android_webview"));
+      FILE_PATH_LITERAL("org.monyhar.android_webview"));
 
   if (base::PathExists(old_cache_path)) {
     bool success = base::CreateDirectory(cache_path);

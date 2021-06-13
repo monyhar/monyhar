@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.task;
+package org.monyhar.base.task;
 
 import androidx.annotation.NonNull;
 import androidx.test.filters.SmallTest;
@@ -13,7 +13,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.Executor;
@@ -72,7 +72,7 @@ public class AsyncTaskTest {
         }
         thrown.expect(RejectedExecutionException.class);
         thrown.expectMessage(CoreMatchers.containsString(
-                "org.chromium.base.task.AsyncTaskTest$SpecialRunnable"));
+                "org.monyhar.base.task.AsyncTaskTest$SpecialRunnable"));
         thrown.expectMessage(
                 CoreMatchers.not(CoreMatchers.containsString("SpecialChromeAsyncTask")));
         new SpecialChromeAsyncTask().executeOnExecutor(executor);
@@ -97,7 +97,7 @@ public class AsyncTaskTest {
         }
         thrown.expect(RejectedExecutionException.class);
         thrown.expectMessage(CoreMatchers.containsString(
-                "org.chromium.base.task.AsyncTaskTest$SpecialChromeAsyncTask"));
+                "org.monyhar.base.task.AsyncTaskTest$SpecialChromeAsyncTask"));
         thrown.expectMessage(CoreMatchers.not(CoreMatchers.containsString("SpecialOsAsyncTask")));
         new SpecialOsAsyncTask().executeOnExecutor(executor);
     }
@@ -121,7 +121,7 @@ public class AsyncTaskTest {
         }
         thrown.expect(RejectedExecutionException.class);
         thrown.expectMessage(CoreMatchers.containsString(
-                "org.chromium.base.task.AsyncTaskTest$SpecialOsAsyncTask"));
+                "org.monyhar.base.task.AsyncTaskTest$SpecialOsAsyncTask"));
         thrown.expectMessage(
                 CoreMatchers.not(CoreMatchers.containsString("SpecialChromeAsyncTask")));
         new SpecialChromeAsyncTask().executeOnExecutor(executor);

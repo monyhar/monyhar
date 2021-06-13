@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps.launchpad;
+package org.monyhar.chrome.browser.webapps.launchpad;
 
 import android.os.Bundle;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.browser.SnackbarActivity;
-import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
-import org.chromium.components.browser_ui.modaldialog.AppModalPresenter;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.modaldialog.ModalDialogManagerHolder;
+import org.monyhar.chrome.browser.SnackbarActivity;
+import org.monyhar.chrome.browser.settings.SettingsLauncherImpl;
+import org.monyhar.components.browser_ui.modaldialog.AppModalPresenter;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.modaldialog.ModalDialogManagerHolder;
 
 /**
  * Activity for displaying the app launcher.

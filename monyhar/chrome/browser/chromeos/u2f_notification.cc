@@ -34,7 +34,7 @@ namespace {
 
 constexpr char kU2FNotificationId[] = "chrome://u2f_notification";
 constexpr char kU2FAdvisoryURL[] =
-    "https://sites.google.com/a/chromium.org/dev/chromium-os/"
+    "https://sites.google.com/a/monyhar.org/dev/monyhar-os/"
     "u2f-ecdsa-vulnerability";
 
 // Notification button identifiers.
@@ -135,7 +135,7 @@ void U2FNotification::OnNotificationClick(
 
   switch (static_cast<ButtonIndex>(*button_index)) {
     case ButtonIndex::kLearnMore: {
-      // Load the chromium.org advisory page in a new tab.
+      // Load the monyhar.org advisory page in a new tab.
       NavigateParams params(profile, GURL(kU2FAdvisoryURL),
                             ui::PAGE_TRANSITION_LINK);
       params.disposition = WindowOpenDisposition::NEW_FOREGROUND_TAB;

@@ -2,29 +2,29 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.base.supplier.OneShotCallback;
-import org.chromium.base.supplier.OneshotSupplierImpl;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.ActivityTabProvider;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.app.reengagement.ReengagementActivity;
-import org.chromium.chrome.browser.bookmarks.BookmarkBridge;
-import org.chromium.chrome.browser.contextualsearch.ContextualSearchManager;
-import org.chromium.chrome.browser.customtabs.content.CustomTabActivityNavigationController;
-import org.chromium.chrome.browser.customtabs.features.toolbar.CustomTabToolbarCoordinator;
-import org.chromium.chrome.browser.feature_engagement.TrackerFactory;
-import org.chromium.chrome.browser.flags.ActivityType;
-import org.chromium.chrome.browser.fullscreen.BrowserControlsManager;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.reengagement.ReengagementNotificationController;
-import org.chromium.chrome.browser.share.ShareDelegate;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.ui.RootUiCoordinator;
-import org.chromium.components.feature_engagement.Tracker;
-import org.chromium.ui.base.ActivityWindowAndroid;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.base.supplier.OneShotCallback;
+import org.monyhar.base.supplier.OneshotSupplierImpl;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.ActivityTabProvider;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.app.reengagement.ReengagementActivity;
+import org.monyhar.chrome.browser.bookmarks.BookmarkBridge;
+import org.monyhar.chrome.browser.contextualsearch.ContextualSearchManager;
+import org.monyhar.chrome.browser.customtabs.content.CustomTabActivityNavigationController;
+import org.monyhar.chrome.browser.customtabs.features.toolbar.CustomTabToolbarCoordinator;
+import org.monyhar.chrome.browser.feature_engagement.TrackerFactory;
+import org.monyhar.chrome.browser.flags.ActivityType;
+import org.monyhar.chrome.browser.fullscreen.BrowserControlsManager;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.reengagement.ReengagementNotificationController;
+import org.monyhar.chrome.browser.share.ShareDelegate;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.ui.RootUiCoordinator;
+import org.monyhar.components.feature_engagement.Tracker;
+import org.monyhar.ui.base.ActivityWindowAndroid;
 
 /**
  * A {@link RootUiCoordinator} variant that controls UI for {@link BaseCustomTabActivity}.

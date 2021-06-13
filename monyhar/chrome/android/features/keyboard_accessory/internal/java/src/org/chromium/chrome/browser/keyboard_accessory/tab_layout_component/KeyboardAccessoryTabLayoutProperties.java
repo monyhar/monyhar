@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.keyboard_accessory.tab_layout_component;
+package org.monyhar.chrome.browser.keyboard_accessory.tab_layout_component;
 
 import com.google.android.material.tabs.TabLayout;
 
-import org.chromium.chrome.browser.keyboard_accessory.data.KeyboardAccessoryData;
-import org.chromium.ui.modelutil.ListModel;
-import org.chromium.ui.modelutil.PropertyModel.ReadableObjectPropertyKey;
-import org.chromium.ui.modelutil.PropertyModel.WritableObjectPropertyKey;
+import org.monyhar.chrome.browser.keyboard_accessory.data.KeyboardAccessoryData;
+import org.monyhar.ui.modelutil.ListModel;
+import org.monyhar.ui.modelutil.PropertyModel.ReadableObjectPropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel.WritableObjectPropertyKey;
 
 /**
  * These properties are used to describe a model for the tab layout component as used in the

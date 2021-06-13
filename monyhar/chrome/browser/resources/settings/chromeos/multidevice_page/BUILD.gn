@@ -48,7 +48,7 @@ js_library("multidevice_feature_behavior.m") {
   sources = [ "$root_gen_dir/chrome/browser/resources/settings/chromeos/multidevice_page/multidevice_feature_behavior.m.js" ]
   deps = [
     ":multidevice_constants.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
   extra_deps = [ ":modulize" ]
@@ -63,7 +63,7 @@ js_library("multidevice_feature_item.m") {
     "..:route_origin_behavior.m",
     "../..:router",
     "../localized_link:localized_link",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
   ]
   extra_deps = [ ":multidevice_feature_item_module" ]
@@ -74,7 +74,7 @@ js_library("multidevice_feature_toggle.m") {
   deps = [
     ":multidevice_constants.m",
     ":multidevice_feature_behavior.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   extra_deps = [ ":multidevice_feature_toggle_module" ]
 }
@@ -93,7 +93,7 @@ js_library("multidevice_page.m") {
     "../../controls:password_prompt_dialog",
     "../../prefs:prefs_behavior",
     "../localized_link:localized_link",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
     "//ui/webui/resources/js:web_ui_listener_behavior.m",
   ]
@@ -113,7 +113,7 @@ js_library("multidevice_notification_access_setup_dialog.m") {
 js_library("multidevice_radio_button.m") {
   sources = [ "$root_gen_dir/chrome/browser/resources/settings/chromeos/multidevice_page/multidevice_radio_button.m.js" ]
   deps = [
-    "//third_party/polymer/v1_0/components-chromium/iron-a11y-keys-behavior:iron-a11y-keys-behavior-extracted",
+    "//third_party/polymer/v1_0/components-monyhar/iron-a11y-keys-behavior:iron-a11y-keys-behavior-extracted",
     "//ui/webui/resources/cr_elements/cr_radio_button:cr_radio_button_behavior.m",
     "//ui/webui/resources/cr_elements/policy:cr_policy_indicator.m",
   ]
@@ -131,7 +131,7 @@ js_library("multidevice_smartlock_subpage.m") {
     "..:os_settings_routes.m",
     "../..:router",
     "../../prefs:prefs_behavior",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_radio_button:cr_radio_button.m",
     "//ui/webui/resources/js:web_ui_listener_behavior.m",
   ]
@@ -150,7 +150,7 @@ js_library("multidevice_subpage.m") {
     "..:os_route.m",
     "..:os_settings_routes.m",
     "../..:router",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_components/chromeos/network:network_listener_behavior.m",
   ]
   extra_deps = [ ":multidevice_subpage_module" ]
@@ -162,7 +162,7 @@ js_library("multidevice_tether_item.m") {
     ":multidevice_feature_behavior.m",
     "..:os_route.m",
     "..:os_settings_routes.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_components/chromeos/network:mojo_interface_provider.m",
     "//ui/webui/resources/cr_components/chromeos/network:network_listener_behavior.m",
     "//ui/webui/resources/cr_components/chromeos/network:onc_mojo.m",
@@ -178,7 +178,7 @@ js_library("multidevice_task_continuation_item.m") {
     ":multidevice_feature_item.m",
     ":multidevice_task_continuation_disabled_link.m",
     "../../people_page:sync_browser_proxy",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:web_ui_listener_behavior.m",
   ]
   extra_deps = [ ":multidevice_task_continuation_item_module" ]
@@ -195,7 +195,7 @@ js_library("multidevice_wifi_sync_item.m") {
     "../..:router",
     "../../people_page:sync_browser_proxy",
     "../os_people_page:os_sync_browser_proxy.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
     "//ui/webui/resources/js:load_time_data.m",
     "//ui/webui/resources/js:web_ui_listener_behavior.m",
@@ -208,7 +208,7 @@ js_library("multidevice_task_continuation_disabled_link.m") {
   deps = [
     "..:os_route.m",
     "../..:router",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
     "//ui/webui/resources/js:load_time_data.m",
   ]
@@ -222,7 +222,7 @@ js_library("multidevice_wifi_sync_disabled_link.m") {
     "..:os_route.m",
     "..:route_origin_behavior.m",
     "../..:router",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
     "//ui/webui/resources/js:load_time_data.m",
   ]

@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.home.snackbars;
+package org.monyhar.chrome.browser.download.home.snackbars;
 
 import android.content.Context;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.chrome.browser.download.internal.R;
-import org.chromium.components.offline_items_collection.OfflineItem;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.chrome.browser.download.internal.R;
+import org.monyhar.components.offline_items_collection.OfflineItem;
 
 import java.util.Collection;
 import java.util.Locale;

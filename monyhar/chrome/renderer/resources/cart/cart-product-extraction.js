@@ -154,7 +154,7 @@ function extractImage(item) {
 }
 
 // Use self assigning trick to get absolute URL
-// https://github.com/chromium/dom-distiller/blob/ccfe233400cc214717ccc80973be431ab0e33cf7/java/org/chromium/distiller/DomUtil.java#L438
+// https://github.com/monyhar/dom-distiller/blob/ccfe233400cc214717ccc80973be431ab0e33cf7/java/org/monyhar/distiller/DomUtil.java#L438
 function getAbsoluteUrlOfSrcSet(image) {
   // preserve src
   const backup = image.src;

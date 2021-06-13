@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.firstrun;
+package org.monyhar.chrome.browser.firstrun;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
-import org.chromium.base.CallbackController;
-import org.chromium.base.supplier.OneshotSupplier;
-import org.chromium.base.supplier.OneshotSupplierImpl;
-import org.chromium.components.policy.PolicyService;
-import org.chromium.components.policy.PolicyService.Observer;
+import org.monyhar.base.Callback;
+import org.monyhar.base.CallbackController;
+import org.monyhar.base.supplier.OneshotSupplier;
+import org.monyhar.base.supplier.OneshotSupplierImpl;
+import org.monyhar.components.policy.PolicyService;
+import org.monyhar.components.policy.PolicyService.Observer;
 
 /**
  * Class that is responsible for listening to signals before policy service is fully initialized in

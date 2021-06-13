@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer;
+package org.monyhar.weblayer;
 
 import android.content.Intent;
 import android.os.RemoteException;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.weblayer_private.interfaces.ObjectWrapper;
-import org.chromium.weblayer_private.interfaces.RemoteMediaServiceConstants;
+import org.monyhar.weblayer_private.interfaces.ObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.RemoteMediaServiceConstants;
 
 /**
  * A foreground {@link Service} for Presentation API and Remote Playback API.
@@ -23,7 +23,7 @@ import org.chromium.weblayer_private.interfaces.RemoteMediaServiceConstants;
  * following to its manifest:
  *
  *    <meta-data
- *        android:name="org.chromium.content.browser.REMOTE_PLAYBACK_APP_ID"
+ *        android:name="org.monyhar.content.browser.REMOTE_PLAYBACK_APP_ID"
  *        android:value="$APP_ID"/>
  *
  * Where $APP_ID is the value assigned to your app by the Google Cast SDK Developer Console. If

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui.android.webid;
+package org.monyhar.chrome.browser.ui.android.webid;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
@@ -14,8 +14,8 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import static org.chromium.chrome.browser.ui.android.webid.AccountSelectionProperties.HeaderProperties.FORMATTED_URL;
-import static org.chromium.chrome.browser.ui.android.webid.AccountSelectionProperties.HeaderProperties.SINGLE_ACCOUNT;
+import static org.monyhar.chrome.browser.ui.android.webid.AccountSelectionProperties.HeaderProperties.FORMATTED_URL;
+import static org.monyhar.chrome.browser.ui.android.webid.AccountSelectionProperties.HeaderProperties.SINGLE_ACCOUNT;
 
 import org.junit.Before;
 import org.junit.Rule;
@@ -25,15 +25,15 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.browser.ui.android.webid.AccountSelectionProperties.ItemType;
-import org.chromium.chrome.browser.ui.android.webid.data.Account;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.components.url_formatter.SchemeDisplay;
-import org.chromium.components.url_formatter.UrlFormatter;
-import org.chromium.components.url_formatter.UrlFormatterJni;
-import org.chromium.ui.modelutil.MVCListAdapter.ModelList;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.browser.ui.android.webid.AccountSelectionProperties.ItemType;
+import org.monyhar.chrome.browser.ui.android.webid.data.Account;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.components.url_formatter.SchemeDisplay;
+import org.monyhar.components.url_formatter.UrlFormatter;
+import org.monyhar.components.url_formatter.UrlFormatterJni;
+import org.monyhar.ui.modelutil.MVCListAdapter.ModelList;
 
 import java.util.Arrays;
 

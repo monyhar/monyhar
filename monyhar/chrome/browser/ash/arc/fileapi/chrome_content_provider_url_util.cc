@@ -14,7 +14,7 @@ namespace arc {
 namespace {
 
 constexpr char kChromeContentProviderUrl[] =
-    "content://org.chromium.arc.chromecontentprovider/";
+    "content://org.monyhar.arc.chromecontentprovider/";
 
 }  // namespace
 

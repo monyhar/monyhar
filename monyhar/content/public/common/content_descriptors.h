@@ -11,7 +11,7 @@
 // base::GlobalDescriptors object (see base/posix/global_descriptors.h)
 enum {
   kCrashDumpSignal,
-  kSandboxIPCChannel,  // https://chromium.googlesource.com/chromium/src/+/main/docs/linux/sandbox_ipc.md
+  kSandboxIPCChannel,  // https://monyhar.googlesource.com/monyhar/src/+/main/docs/linux/sandbox_ipc.md
   kMojoIPCChannel,
   kFieldTrialDescriptor,
 

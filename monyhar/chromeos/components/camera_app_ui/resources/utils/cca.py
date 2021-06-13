@@ -16,7 +16,7 @@ import tempfile
 
 
 @functools.lru_cache(1)
-def get_chromium_root():
+def get_monyhar_root():
     path = os.path.realpath('../../../../')
     assert os.path.basename(path) == 'src'
     return path
@@ -32,7 +32,7 @@ def run(args, cwd=None):
 
 
 def run_node(args):
-    root = get_chromium_root()
+    root = get_monyhar_root()
     node = os.path.join(root, 'third_party/node/linux/node-linux-x64/bin/node')
     binary = os.path.join(root, 'third_party/node/node_modules', args[0])
     run([node, binary] + args[1:])
@@ -58,7 +58,7 @@ def build_preload_images_js(outdir):
 
 def deploy(args):
     cca_root = os.getcwd()
-    target_dir = os.path.join(get_chromium_root(), f'out_{args.board}/Release')
+    target_dir = os.path.join(get_monyhar_root(), f'out_{args.board}/Release')
 
     build_preload_images_js(
         os.path.join(target_dir,
@@ -79,17 +79,17 @@ def deploy(args):
         '-D',
         f'SHARED_INTERMEDIATE_DIR={os.path.join(target_dir, "gen")}',
         '-E',
-        f'root_src_dir={get_chromium_root()}',
+        f'root_src_dir={get_monyhar_root()}',
         '-E',
         f'root_gen_dir={os.path.join(target_dir, "gen")}',
     ]
     # Since there is a constraint in grit.py which will replace ${root_gen_dir}
     # in .grd file only if the script is executed in the parent directory of
     # ${root_gen_dir}, execute the script in Chromium root as a workaround.
-    run(build_pak_cmd, get_chromium_root())
+    run(build_pak_cmd, get_monyhar_root())
 
     with tempfile.TemporaryDirectory() as tmp_dir:
-        pak_util_script = os.path.join(get_chromium_root(),
+        pak_util_script = os.path.join(get_monyhar_root(),
                                        'tools/grit/pak_util.py')
         extract_resources_pak_cmd = [
             pak_util_script,

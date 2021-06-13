@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.photo_picker;
+package org.monyhar.components.browser_ui.photo_picker;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
@@ -30,9 +30,9 @@ import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.widget.ImageViewCompat;
 import androidx.vectordrawable.graphics.drawable.VectorDrawableCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.components.browser_ui.widget.selectable_list.SelectableItemViewBase;
-import org.chromium.components.browser_ui.widget.selectable_list.SelectionDelegate;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.components.browser_ui.widget.selectable_list.SelectableItemViewBase;
+import org.monyhar.components.browser_ui.widget.selectable_list.SelectionDelegate;
 
 import java.util.List;
 

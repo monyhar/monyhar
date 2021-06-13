@@ -282,7 +282,7 @@ def feedback_url(result_details_link):
     url_args.append(('comment', 'Please check out: %s' % result_details_link))
   url_args = urllib.urlencode(url_args)
   # pylint: enable=redefined-variable-type
-  return 'https://bugs.chromium.org/p/chromium/issues/entry?%s' % url_args
+  return 'https://bugs.monyhar.org/p/monyhar/issues/entry?%s' % url_args
 
 
 def results_to_html(results_dict, cs_base_url, bucket, test_name,
@@ -425,7 +425,7 @@ def main():
   parser = argparse.ArgumentParser()
   parser.add_argument('--json-file', help='Path of json file.')
   parser.add_argument('--cs-base-url', help='Base url for code search.',
-                      default='http://cs.chromium.org')
+                      default='http://cs.monyhar.org')
   parser.add_argument('--bucket', help='Google storage bucket.', required=True)
   parser.add_argument('--builder-name', help='Builder name.')
   parser.add_argument('--build-number', help='Build number.')

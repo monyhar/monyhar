@@ -35,7 +35,7 @@ class PLATFORM_EXPORT ParsedContentHeaderFieldParameters final {
 
   // When |Relaxed| is specified, the parser parses parameter values in a sloppy
   // manner, i.e., only ';' and '"' are treated as special characters.
-  // See https://chromiumcodereview.appspot.com/23043002.
+  // See https://monyharcodereview.appspot.com/23043002.
   enum class Mode {
     kNormal,
     kRelaxed,

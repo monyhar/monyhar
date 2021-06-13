@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.messages;
+package org.monyhar.components.messages;
 
 import static android.os.Looper.getMainLooper;
 
@@ -31,12 +31,12 @@ import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 import org.robolectric.annotation.LooperMode;
 
-import org.chromium.base.Callback;
-import org.chromium.base.MathUtils;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.components.browser_ui.widget.gesture.SwipeGestureListener.ScrollDirection;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.Callback;
+import org.monyhar.base.MathUtils;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.components.browser_ui.widget.gesture.SwipeGestureListener.ScrollDirection;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /** Unit tests for {@link MessageBannerMediator}. */
 @SmallTest

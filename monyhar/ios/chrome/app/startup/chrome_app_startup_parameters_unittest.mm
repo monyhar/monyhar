@@ -51,8 +51,8 @@ TEST_F(AppStartupParametersTest, ParseURLWithOneProtocol) {
 }
 
 TEST_F(AppStartupParametersTest, ParseURLWithEmptyParsedURL) {
-  // Test chromium://
-  NSURL* url = [NSURL URLWithString:@"chromium://"];
+  // Test monyhar://
+  NSURL* url = [NSURL URLWithString:@"monyhar://"];
   ChromeAppStartupParameters* params =
       [ChromeAppStartupParameters newChromeAppStartupParametersWithURL:url
                                                  fromSourceApplication:nil];
@@ -61,7 +61,7 @@ TEST_F(AppStartupParametersTest, ParseURLWithEmptyParsedURL) {
 }
 
 TEST_F(AppStartupParametersTest, ParseURLWithParsedURLDefaultToHttp) {
-  NSURL* url = [NSURL URLWithString:@"chromium://www.google.com"];
+  NSURL* url = [NSURL URLWithString:@"monyhar://www.google.com"];
   ChromeAppStartupParameters* params =
       [ChromeAppStartupParameters newChromeAppStartupParametersWithURL:url
                                                  fromSourceApplication:nil];
@@ -79,7 +79,7 @@ TEST_F(AppStartupParametersTest, ParseURLWithInvalidParsedURL) {
 }
 
 TEST_F(AppStartupParametersTest, ParseURLWithHttpsParsedURL) {
-  NSURL* url = [NSURL URLWithString:@"chromiums://www.google.com"];
+  NSURL* url = [NSURL URLWithString:@"monyhars://www.google.com"];
   ChromeAppStartupParameters* params =
       [ChromeAppStartupParameters newChromeAppStartupParametersWithURL:url
                                                  fromSourceApplication:nil];
@@ -109,7 +109,7 @@ TEST_F(AppStartupParametersTest, ParseURLWithHttpsURL) {
 
 TEST_F(AppStartupParametersTest, ParseURLWithXCallbackURL) {
   NSURL* url = [NSURL URLWithString:
-                          @"chromium-x-callback://x-callback-url/open?"
+                          @"monyhar-x-callback://x-callback-url/open?"
                            "url=https://www.google.com"];
   ChromeAppStartupParameters* params =
       [ChromeAppStartupParameters newChromeAppStartupParametersWithURL:url
@@ -119,7 +119,7 @@ TEST_F(AppStartupParametersTest, ParseURLWithXCallbackURL) {
 
 TEST_F(AppStartupParametersTest, ParseURLWithXCallbackURLAndExtraParams) {
   NSURL* url = [NSURL URLWithString:
-                          @"chromium-x-callback://x-callback-url/open?"
+                          @"monyhar-x-callback://x-callback-url/open?"
                            "url=https://www.google.com&"
                            "x-success=http://success"];
   ChromeAppStartupParameters* params =
@@ -131,7 +131,7 @@ TEST_F(AppStartupParametersTest, ParseURLWithXCallbackURLAndExtraParams) {
 TEST_F(AppStartupParametersTest, ParseURLWithMalformedXCallbackURL) {
   NSURL* url =
       [NSURL URLWithString:
-                 @"chromium-x-callback://x-callback-url/open?url=foobar&"
+                 @"monyhar-x-callback://x-callback-url/open?url=foobar&"
                   "x-source=myapp&x-success=http://success"];
   ChromeAppStartupParameters* params = [ChromeAppStartupParameters
       newChromeAppStartupParametersWithURL:url
@@ -142,7 +142,7 @@ TEST_F(AppStartupParametersTest, ParseURLWithMalformedXCallbackURL) {
 TEST_F(AppStartupParametersTest, ParseURLWithJavascriptURLInXCallbackURL) {
   NSURL* url = [NSURL
       URLWithString:
-          @"chromium-x-callback://x-callback-url/open?url="
+          @"monyhar-x-callback://x-callback-url/open?url="
            "javascript:window.open()&x-source=myapp&x-success=http://success"];
   ChromeAppStartupParameters* params = [ChromeAppStartupParameters
       newChromeAppStartupParametersWithURL:url
@@ -152,7 +152,7 @@ TEST_F(AppStartupParametersTest, ParseURLWithJavascriptURLInXCallbackURL) {
 
 TEST_F(AppStartupParametersTest, ParseURLWithChromeURLInXCallbackURL) {
   NSURL* url = [NSURL URLWithString:
-                          @"chromium-x-callback://x-callback-url/open?url="
+                          @"monyhar-x-callback://x-callback-url/open?url="
                            "chrome:passwords"];
   ChromeAppStartupParameters* params = [ChromeAppStartupParameters
       newChromeAppStartupParametersWithURL:url

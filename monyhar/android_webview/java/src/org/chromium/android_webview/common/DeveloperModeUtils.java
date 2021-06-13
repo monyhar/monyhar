@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.common;
+package org.monyhar.android_webview.common;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -14,9 +14,9 @@ import android.os.Build;
 
 import androidx.annotation.RequiresApi;
 
-import org.chromium.android_webview.common.services.ServiceNames;
-import org.chromium.base.BuildInfo;
-import org.chromium.base.ContextUtils;
+import org.monyhar.android_webview.common.services.ServiceNames;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.ContextUtils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -32,7 +32,7 @@ public final class DeveloperModeUtils {
     private DeveloperModeUtils() {}
 
     public static final String DEVELOPER_MODE_STATE_COMPONENT =
-            "org.chromium.android_webview.devui.DeveloperModeState";
+            "org.monyhar.android_webview.devui.DeveloperModeState";
     public static final String URI_AUTHORITY_SUFFIX = ".DeveloperModeContentProvider";
     public static final String FLAG_OVERRIDE_URI_PATH = "/flag-overrides";
     public static final String FLAG_OVERRIDE_NAME_COLUMN = "flagName";

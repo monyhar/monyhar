@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.base;
+package org.monyhar.chromecast.base;
 
 import android.graphics.Color;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.Log;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.Log;
 
 /**
  * Contains all of the command line switches that are specific to Chromecast on
@@ -16,7 +16,7 @@ import org.chromium.base.Log;
 public abstract class CastSwitches {
     private static final String TAG = "CastSwitches";
 
-    // Background color to use when chromium hasn't rendered anything yet. This will often be
+    // Background color to use when monyhar hasn't rendered anything yet. This will often be
     // displayed briefly when loading a Cast app. Format is a #ARGB in hex. (Black: #FF000000,
     // Green: #FF009000, and so on)
     public static final String CAST_APP_BACKGROUND_COLOR = "cast-app-background-color";

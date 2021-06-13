@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.shell;
+package org.monyhar.chromecast.shell;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -33,10 +33,10 @@ import org.robolectric.android.controller.ServiceController;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowService;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chromecast.base.ReactiveRecorder;
-import org.chromium.content.browser.MediaSessionImpl;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chromecast.base.ReactiveRecorder;
+import org.monyhar.content.browser.MediaSessionImpl;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * Tests for CastWebContentsService.
@@ -113,7 +113,7 @@ public class CastWebContentsServiceTest {
         Notification notification = mShadowService.getLastForegroundNotification();
         String notificationChannelId = notification.getChannelId();
         assertNotNull(notificationChannelId);
-        assertEquals("org.chromium.chromecast.shell.CastWebContentsService.channel",
+        assertEquals("org.monyhar.chromecast.shell.CastWebContentsService.channel",
                 notificationChannelId);
     }
 

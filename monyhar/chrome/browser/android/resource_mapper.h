@@ -13,7 +13,7 @@ class ResourceMapper {
   // Chromium resource.
   static const int kMissingId;
 
-  // Converts the given chromium |resource_id| (e.g. IDR_INFOBAR_TRANSLATE) to
+  // Converts the given monyhar |resource_id| (e.g. IDR_INFOBAR_TRANSLATE) to
   // an Android drawable resource ID. Returns |kMissingId| if a mapping wasn't
   // found.
   static int MapToJavaDrawableId(int resource_id);

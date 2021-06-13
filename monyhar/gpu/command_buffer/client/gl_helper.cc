@@ -22,7 +22,7 @@
 #include "base/strings/string_util.h"
 #include "base/time/time.h"
 #include "base/trace_event/trace_event.h"
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "gpu/command_buffer/client/context_support.h"
 #include "gpu/command_buffer/client/gl_helper_scaling.h"
 #include "ui/gfx/geometry/point.h"

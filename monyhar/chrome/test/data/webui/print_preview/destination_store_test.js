@@ -349,7 +349,7 @@ suite(destination_store_test.suiteName, function() {
           version: 2,
           recentDestinations: [recentDestination],
         });
-        userAccounts = ['foo@chromium.org'];
+        userAccounts = ['foo@monyhar.org'];
 
         return setInitialSettings(false).then(function(args) {
           assertEquals('FooDevice', args.destinationId);
@@ -394,8 +394,8 @@ suite(destination_store_test.suiteName, function() {
       assert(
           destination_store_test.TestNames.MultipleRecentDestinationsAccounts),
       function() {
-        const account1 = 'foo@chromium.org';
-        const account2 = 'bar@chromium.org';
+        const account1 = 'foo@monyhar.org';
+        const account2 = 'bar@monyhar.org';
         const driveUser1 = getGoogleDriveDestination(account1);
         const driveUser2 = getGoogleDriveDestination(account2);
         const cloudPrintFoo = new Destination(
@@ -539,8 +539,8 @@ suite(destination_store_test.suiteName, function() {
       assert(destination_store_test.TestNames
                  .MultipleRecentDestinationsAccountsCros),
       function() {
-        const account1 = 'foo@chromium.org';
-        const account2 = 'bar@chromium.org';
+        const account1 = 'foo@monyhar.org';
+        const account2 = 'bar@monyhar.org';
         const cloudPrintFoo = new Destination(
             'FooCloud', DestinationType.GOOGLE, DestinationOrigin.COOKIES,
             'FooCloudName', DestinationConnectionStatus.ONLINE,

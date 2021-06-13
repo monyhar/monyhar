@@ -1,12 +1,12 @@
 # Chromium Design Docs
 
-This directory contains chromium project documentation in
+This directory contains monyhar project documentation in
 [Gitiles-flavored Markdown](https://gerrit.googlesource.com/gitiles/+/master/Documentation/markdown.md).
 It is automatically
-[rendered by Gitiles](https://chromium.googlesource.com/chromium/src/+/main/docs/).
+[rendered by Gitiles](https://monyhar.googlesource.com/monyhar/src/+/main/docs/).
 
 Documents here have been imported
-from [the Project site](https://www.chromium.org/developers/design-documents).
+from [the Project site](https://www.monyhar.org/developers/design-documents).
 As of this writing, the vast majority of docs have not been imported yet.
 
 * [Sandboxing](sandbox.md) - The Sandboxing architecture, and Windows

@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.keyboard_accessory.tab_layout_component;
+package org.monyhar.chrome.browser.keyboard_accessory.tab_layout_component;
 
 import static androidx.test.espresso.matcher.ViewMatchers.assertThat;
 
 import static org.hamcrest.Matchers.is;
 
-import static org.chromium.chrome.browser.keyboard_accessory.tab_layout_component.KeyboardAccessoryTabLayoutProperties.ACTIVE_TAB;
-import static org.chromium.chrome.browser.keyboard_accessory.tab_layout_component.KeyboardAccessoryTabLayoutProperties.TABS;
-import static org.chromium.chrome.browser.keyboard_accessory.tab_layout_component.KeyboardAccessoryTabLayoutProperties.TAB_SELECTION_CALLBACKS;
-import static org.chromium.content_public.browser.test.util.TestThreadUtils.runOnUiThreadBlocking;
+import static org.monyhar.chrome.browser.keyboard_accessory.tab_layout_component.KeyboardAccessoryTabLayoutProperties.ACTIVE_TAB;
+import static org.monyhar.chrome.browser.keyboard_accessory.tab_layout_component.KeyboardAccessoryTabLayoutProperties.TABS;
+import static org.monyhar.chrome.browser.keyboard_accessory.tab_layout_component.KeyboardAccessoryTabLayoutProperties.TAB_SELECTION_CALLBACKS;
+import static org.monyhar.content_public.browser.test.util.TestThreadUtils.runOnUiThreadBlocking;
 
 import android.widget.FrameLayout;
 
@@ -23,17 +23,17 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.keyboard_accessory.AccessoryTabType;
-import org.chromium.chrome.browser.keyboard_accessory.R;
-import org.chromium.chrome.browser.keyboard_accessory.data.KeyboardAccessoryData;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.ui.modelutil.ListModel;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.test.util.DummyUiActivity;
-import org.chromium.ui.test.util.DummyUiActivityTestCase;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.keyboard_accessory.AccessoryTabType;
+import org.monyhar.chrome.browser.keyboard_accessory.R;
+import org.monyhar.chrome.browser.keyboard_accessory.data.KeyboardAccessoryData;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.ui.modelutil.ListModel;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.test.util.DummyUiActivity;
+import org.monyhar.ui.test.util.DummyUiActivityTestCase;
 
 /**
  * View tests for the keyboard accessory tab layout component.

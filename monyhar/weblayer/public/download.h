@@ -15,7 +15,7 @@ namespace weblayer {
 
 // These types are sent over IPC and across different versions. Never remove
 // or change the order.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.weblayer_private
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.weblayer_private
 // GENERATED_JAVA_CLASS_NAME_OVERRIDE: ImplDownloadState
 enum class DownloadState {
   // Download is actively progressing.
@@ -32,7 +32,7 @@ enum class DownloadState {
 
 // These types are sent over IPC and across different versions. Never remove
 // or change the order.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.weblayer_private
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.weblayer_private
 // GENERATED_JAVA_CLASS_NAME_OVERRIDE: ImplDownloadError
 enum class DownloadError {
   kNoError = 0,            // Download completed successfully.

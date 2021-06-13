@@ -1,13 +1,13 @@
 # Device Motion / Orientation API related
-per-file DeviceSensors.java=timvolodine@chromium.org
+per-file DeviceSensors.java=timvolodine@monyhar.org
 
 # Media Session API related
-per-file AudioFocus*.java=steimel@chromium.org
+per-file AudioFocus*.java=steimel@monyhar.org
 
 # Process management related
-per-file BindingManager*.java=jcivelli@chromium.org
-per-file ChildProcessConnection*.java=jcivelli@chromium.org
-per-file ChildProcessLauncher.java=jcivelli@chromium.org
+per-file BindingManager*.java=jcivelli@monyhar.org
+per-file ChildProcessConnection*.java=jcivelli@monyhar.org
+per-file ChildProcessLauncher.java=jcivelli@monyhar.org
 
 # BackgroundSync related
-per-file BackgroundSync*.java=jkarlin@chromium.org
+per-file BackgroundSync*.java=jkarlin@monyhar.org

@@ -6,15 +6,15 @@
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="org.chromium.android_webview.devui">
+          package="org.monyhar.android_webview.devui">
 
     <uses-sdk android:minSdkVersion="24" />
 
     <!-- This should only be merged to Monochrome manifest -->
     <!--suppress HardcodedText -->
     <application>
-        <activity-alias android:name="org.chromium.android_webview.devui.MonochromeLauncherActivity"
-                  android:targetActivity="org.chromium.android_webview.devui.MainActivity"
+        <activity-alias android:name="org.monyhar.android_webview.devui.MonochromeLauncherActivity"
+                  android:targetActivity="org.monyhar.android_webview.devui.MainActivity"
                   android:label="WebView DevTools"
                   android:exported="true"
                   android:enabled="false">

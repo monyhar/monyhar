@@ -23,9 +23,9 @@ from util import build_utils
 from util import manifest_utils
 from util import server_utils
 
-_LINT_MD_URL = 'https://chromium.googlesource.com/chromium/src/+/main/build/android/docs/lint.md'  # pylint: disable=line-too-long
+_LINT_MD_URL = 'https://monyhar.googlesource.com/monyhar/src/+/main/build/android/docs/lint.md'  # pylint: disable=line-too-long
 
-# These checks are not useful for chromium.
+# These checks are not useful for monyhar.
 _DISABLED_ALWAYS = [
     "AppCompatResource",  # Lint does not correctly detect our appcompat lib.
     "Assert",  # R8 --force-enable-assertions is used to enable java asserts.

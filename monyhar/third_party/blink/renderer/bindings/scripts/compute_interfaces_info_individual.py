@@ -37,7 +37,7 @@ This distinction is so that individual interface info can be computed
 separately for each component (avoiding duplicated reading of individual
 files), then consolidated using *only* the info visible to a given component.
 
-Design doc: http://www.chromium.org/developers/design-documents/idl-build
+Design doc: http://www.monyhar.org/developers/design-documents/idl-build
 """
 
 from collections import defaultdict

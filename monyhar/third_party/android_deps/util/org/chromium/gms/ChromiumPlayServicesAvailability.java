@@ -1,7 +1,7 @@
 // Copyright 2020 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.gms;
+package org.monyhar.gms;
 
 import android.content.Context;
 
@@ -16,7 +16,7 @@ public final class ChromiumPlayServicesAvailability {
      * if you need to check for a higher number, use
      * {@link GoogleApiAvailability#isGooglePlayServicesAvailable(Context, int))} instead.
      * To see how this number originated, see
-     * https://bugs.chromium.org/p/chromium/issues/detail?id=1145211#c3.
+     * https://bugs.monyhar.org/p/monyhar/issues/detail?id=1145211#c3.
      */
     public static final int GMS_VERSION_NUMBER = 20415000;
 

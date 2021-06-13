@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.content.Context;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.browser_ui.http_auth.LoginPrompt;
-import org.chromium.url.GURL;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.browser_ui.http_auth.LoginPrompt;
+import org.monyhar.url.GURL;
 
 /**
  * Handles showing http auth prompt.

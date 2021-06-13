@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
-import static org.chromium.components.content_settings.PrefNames.COOKIE_CONTROLS_MODE;
+import static org.monyhar.components.content_settings.PrefNames.COOKIE_CONTROLS_MODE;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -27,32 +27,32 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.task.PostTask;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.MetricsUtils.HistogramDelta;
-import org.chromium.chrome.browser.MockSafeBrowsingApiHandler;
-import org.chromium.chrome.browser.browserservices.verification.OriginVerifier;
-import org.chromium.chrome.browser.document.ChromeLauncherActivity;
-import org.chromium.chrome.browser.firstrun.FirstRunStatus;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.util.browser.Features.DisableFeatures;
-import org.chromium.chrome.test.util.browser.Features.EnableFeatures;
-import org.chromium.components.content_settings.CookieControlsMode;
-import org.chromium.components.embedder_support.util.Origin;
-import org.chromium.components.prefs.PrefService;
-import org.chromium.components.safe_browsing.SafeBrowsingApiBridge;
-import org.chromium.components.user_prefs.UserPrefs;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.test.util.JavaScriptUtils;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.net.NetError;
-import org.chromium.net.test.EmbeddedTestServer;
-import org.chromium.net.test.ServerCertificate;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.MetricsUtils.HistogramDelta;
+import org.monyhar.chrome.browser.MockSafeBrowsingApiHandler;
+import org.monyhar.chrome.browser.browserservices.verification.OriginVerifier;
+import org.monyhar.chrome.browser.document.ChromeLauncherActivity;
+import org.monyhar.chrome.browser.firstrun.FirstRunStatus;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.util.browser.Features.DisableFeatures;
+import org.monyhar.chrome.test.util.browser.Features.EnableFeatures;
+import org.monyhar.components.content_settings.CookieControlsMode;
+import org.monyhar.components.embedder_support.util.Origin;
+import org.monyhar.components.prefs.PrefService;
+import org.monyhar.components.safe_browsing.SafeBrowsingApiBridge;
+import org.monyhar.components.user_prefs.UserPrefs;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.test.util.JavaScriptUtils;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.net.NetError;
+import org.monyhar.net.test.EmbeddedTestServer;
+import org.monyhar.net.test.ServerCertificate;
 
 import java.util.ArrayList;
 import java.util.Arrays;

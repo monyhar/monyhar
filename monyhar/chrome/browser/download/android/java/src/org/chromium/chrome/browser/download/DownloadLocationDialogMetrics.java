@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download;
+package org.monyhar.chrome.browser.download;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordHistogram;
 
 /**
  * Class that contains helper functions for download location download feature metrics recording.

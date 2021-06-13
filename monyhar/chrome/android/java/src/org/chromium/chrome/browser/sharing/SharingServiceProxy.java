@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sharing;
+package org.monyhar.chrome.browser.sharing;
 
-import org.chromium.base.Callback;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.sync.protocol.SharingSpecificFields;
-import org.chromium.components.sync.protocol.SyncEnums;
+import org.monyhar.base.Callback;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.sync.protocol.SharingSpecificFields;
+import org.monyhar.components.sync.protocol.SyncEnums;
 
 import java.util.ArrayList;
 
@@ -58,7 +58,7 @@ public class SharingServiceProxy {
      * @param guid The guid of the receiver device.
      * @param text The text to send.
      * @param callback The result of the operation. Runs |callback| with a
-     *         org.chromium.chrome.browser.sharing.SharingSendMessageResult enum value.
+     *         org.monyhar.chrome.browser.sharing.SharingSendMessageResult enum value.
      */
     public void sendSharedClipboardMessage(String guid, String text, Callback<Integer> callback) {
         if (sNativeSharingServiceProxyAndroid == 0) {

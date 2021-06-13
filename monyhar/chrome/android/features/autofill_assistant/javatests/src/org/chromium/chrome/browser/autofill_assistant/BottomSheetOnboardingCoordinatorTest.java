@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant;
+package org.monyhar.chrome.browser.autofill_assistant;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -25,8 +25,8 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.verify;
 
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilViewAssertionTrue;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilViewMatchesCondition;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilViewAssertionTrue;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilViewMatchesCondition;
 
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.lifecycle.Stage;
@@ -46,26 +46,26 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 
-import org.chromium.base.Callback;
-import org.chromium.base.test.util.ApplicationTestUtils;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.autofill_assistant.onboarding.AssistantOnboardingResult;
-import org.chromium.chrome.browser.autofill_assistant.onboarding.BaseOnboardingCoordinator;
-import org.chromium.chrome.browser.autofill_assistant.onboarding.OnboardingCoordinatorFactory;
-import org.chromium.chrome.browser.autofill_assistant.overlay.AssistantOverlayCoordinator;
-import org.chromium.chrome.browser.autofill_assistant.overlay.AssistantOverlayModel;
-import org.chromium.chrome.browser.autofill_assistant.overlay.AssistantOverlayState;
-import org.chromium.chrome.browser.customtabs.CustomTabActivity;
-import org.chromium.chrome.browser.customtabs.CustomTabActivityTestRule;
-import org.chromium.chrome.browser.customtabs.CustomTabsTestUtils;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.components.browser_ui.widget.scrim.ScrimCoordinator;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.base.test.util.ApplicationTestUtils;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.autofill_assistant.onboarding.AssistantOnboardingResult;
+import org.monyhar.chrome.browser.autofill_assistant.onboarding.BaseOnboardingCoordinator;
+import org.monyhar.chrome.browser.autofill_assistant.onboarding.OnboardingCoordinatorFactory;
+import org.monyhar.chrome.browser.autofill_assistant.overlay.AssistantOverlayCoordinator;
+import org.monyhar.chrome.browser.autofill_assistant.overlay.AssistantOverlayModel;
+import org.monyhar.chrome.browser.autofill_assistant.overlay.AssistantOverlayState;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivity;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivityTestRule;
+import org.monyhar.chrome.browser.customtabs.CustomTabsTestUtils;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.components.browser_ui.widget.scrim.ScrimCoordinator;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;

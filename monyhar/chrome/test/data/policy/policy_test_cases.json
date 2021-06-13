@@ -78,7 +78,7 @@
     "can_be_recommended": true,
     "policy_pref_mapping_tests": [
       {
-        "policies": { "HomepageLocation": "http://chromium.org" },
+        "policies": { "HomepageLocation": "http://monyhar.org" },
         "prefs": { "homepage": {} }
       }
     ]
@@ -149,7 +149,7 @@
   },
 
   "DnsPrefetchingEnabled": {
-    "note": "This policy has been removed. See https://bugs.chromium.org/p/chromium/issues/detail?id=624095"
+    "note": "This policy has been removed. See https://bugs.monyhar.org/p/monyhar/issues/detail?id=624095"
   },
 
   "DnsOverHttpsMode": {
@@ -187,7 +187,7 @@
   },
 
   "DisableSpdy": {
-    "note": "This policy has been removed. See https://bugs.chromium.org/p/chromium/issues/detail?id=624095"
+    "note": "This policy has been removed. See https://bugs.monyhar.org/p/monyhar/issues/detail?id=624095"
   },
 
   "QuicAllowed": {
@@ -1161,7 +1161,7 @@
   },
 
   "DisableSSLRecordSplitting": {
-    "note": "This policy is retired, see https://bugs.chromium.org/p/chromium/issues/detail?id=485097#c17."
+    "note": "This policy is retired, see https://bugs.monyhar.org/p/monyhar/issues/detail?id=485097#c17."
   },
 
   "EnableOnlineRevocationChecks": {
@@ -1749,7 +1749,7 @@
     "can_be_recommended": true,
     "policy_pref_mapping_tests": [
       {
-        "policies": { "RestoreOnStartupURLs": ["chromium.org"]},
+        "policies": { "RestoreOnStartupURLs": ["monyhar.org"]},
         "prefs": { "session.startup_urls": {} }
       }
     ]
@@ -4928,11 +4928,11 @@
   },
 
   "ArcBackupRestoreEnabled": {
-    "note": "This policy has been removed. See https://bugs.chromium.org/p/chromium/issues/detail?id=845962"
+    "note": "This policy has been removed. See https://bugs.monyhar.org/p/monyhar/issues/detail?id=845962"
   },
 
   "ArcLocationServiceEnabled": {
-    "note": "This policy has been removed. See https://bugs.chromium.org/p/chromium/issues/detail?id=845962"
+    "note": "This policy has been removed. See https://bugs.monyhar.org/p/monyhar/issues/detail?id=845962"
   },
 
   "ReportArcStatusEnabled": {
@@ -7201,7 +7201,7 @@
   "ReportExtensionsAndPluginsData": {},
 
   "ReportSafeBrowsingData": {
-    "note": "This policy has been removed. See https://bugs.chromium.org/p/chromium/issues/detail?id=1083085"
+    "note": "This policy has been removed. See https://bugs.monyhar.org/p/monyhar/issues/detail?id=1083085"
   },
 
   "CloudExtensionRequestEnabled": {

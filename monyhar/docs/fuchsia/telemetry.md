@@ -10,10 +10,10 @@ device, along with `web_engine_shell`.
 ## Supported benchmarks
 
 The list of supported benchmarks can be found in the
-[bot_platforms.py](https://source.chromium.org/chromium/chromium/src/+/main:tools/perf/core/bot_platforms.py?q=_FUCHSIA_PERF_FYI_BENCHMARK_CONFIGS).
+[bot_platforms.py](https://source.monyhar.org/monyhar/monyhar/src/+/main:tools/perf/core/bot_platforms.py?q=_FUCHSIA_PERF_FYI_BENCHMARK_CONFIGS).
 
 The list of stories that are skipped can be found in
-[expectations.config](https://source.chromium.org/chromium/chromium/src/+/main:tools/perf/expectations.config),
+[expectations.config](https://source.monyhar.org/monyhar/monyhar/src/+/main:tools/perf/expectations.config),
 with the `fuchsia` tag.
 
 ## Run on a local device
@@ -25,8 +25,8 @@ remote work was the only available option.
 
 ---
 
-After building chromium, be sure to have a paved device that has gone through
-OOBEattached to the host. Run the following from the chromium build
+After building monyhar, be sure to have a paved device that has gone through
+OOBEattached to the host. Run the following from the monyhar build
 directory if you want to run a specific benchmark:
 
 ```shell

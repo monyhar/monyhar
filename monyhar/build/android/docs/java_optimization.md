@@ -84,13 +84,13 @@ intended only for debug builds, or generated JNI classes that are meant to be
 zero-overhead abstractions. Annotating a class with
 [@CheckDiscard][checkdiscard] will add a `-checkdiscard` rule automatically.
 
-[checkdiscard]: /base/android/java/src/org/chromium/base/annotations/CheckDiscard.java
+[checkdiscard]: /base/android/java/src/org/monyhar/base/annotations/CheckDiscard.java
 
 ```
-Item void org.chromium.base.library_loader.LibraryPrefetcherJni.<init>() was not discarded.
-void org.chromium.base.library_loader.LibraryPrefetcherJni.<init>()
+Item void org.monyhar.base.library_loader.LibraryPrefetcherJni.<init>() was not discarded.
+void org.monyhar.base.library_loader.LibraryPrefetcherJni.<init>()
 |- is invoked from:
-|  void org.chromium.base.library_loader.LibraryPrefetcher.asyncPrefetchLibrariesToMemory()
+|  void org.monyhar.base.library_loader.LibraryPrefetcher.asyncPrefetchLibrariesToMemory()
 ... more code path lines
 |- is referenced in keep rule:
 |  obj/chrome/android/chrome_public_apk/chrome_public_apk.resources.proguard.txt:104:1
@@ -118,9 +118,9 @@ the name of the offending class).
     * Caching the result of `ClassNameJni.get()` in a member variable.
     * Passing a native wrapper method reference instead of using a lambda (i.e.
       `Jni.get()::methodName` vs. `() -> Jni.get.methodName()`).
-  * For more debugging info, add to `base/android/proguard/chromium_code.flags`:
+  * For more debugging info, add to `base/android/proguard/monyhar_code.flags`:
       ```
-      -whyareyounotinlining class org.chromium.base.library_loader.LibraryPrefetcherJni {
+      -whyareyounotinlining class org.monyhar.base.library_loader.LibraryPrefetcherJni {
           <init>();
       }
       ```
@@ -144,6 +144,6 @@ Common causes:
     share generated code (ex. Trichrome or App Bundles):
     * Solution: Make sure the generated file is only added once.
 
-Debugging ProGuard failures isn't easy, so please message java@chromium.org
+Debugging ProGuard failures isn't easy, so please message java@monyhar.org
 or [file a bug](crbug.com/new) with `component=Build os=Android` for any
 issues related to Java code optimization.

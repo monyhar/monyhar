@@ -36,7 +36,7 @@
       value:        1
     # This relaxes modernize-use-emplace in some cases; we might want to make it
     # more aggressive in the future. See discussion on
-    # https://groups.google.com/a/chromium.org/g/cxx/c/noMMTNYiM0w .
+    # https://groups.google.com/a/monyhar.org/g/cxx/c/noMMTNYiM0w .
     - key:          modernize-use-emplace.IgnoreImplicitConstructors
       value:        1
 ...

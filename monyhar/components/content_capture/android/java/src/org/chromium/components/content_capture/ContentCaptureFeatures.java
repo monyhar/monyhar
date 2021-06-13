@@ -1,10 +1,10 @@
 // Copyright 2019 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.components.content_capture;
+package org.monyhar.components.content_capture;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.annotations.NativeMethods;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.annotations.NativeMethods;
 
 /**
  * The class to get if feature is enabled from native.

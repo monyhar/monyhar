@@ -284,7 +284,7 @@ os_settings_auto_imports = settings_auto_imports +
                              "chrome/browser/resources/settings/chromeos/device_page/drag_behavior.html|DragBehavior,DragPosition",
                              "chrome/browser/resources/settings/chromeos/device_page/layout_behavior.html|LayoutBehavior",
                              "chrome/browser/resources/settings/chromeos/pref_to_setting_metric_converter.html|PrefToSettingMetricConverter",
-                             "third_party/polymer/v1_0/components-chromium/iron-resizable-behavior/iron-resizable-behavior.html|IronResizableBehavior",
+                             "third_party/polymer/v1_0/components-monyhar/iron-resizable-behavior/iron-resizable-behavior.html|IronResizableBehavior",
                            ]
 
 os_settings_closure_flags = settings_closure_flags

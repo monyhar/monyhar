@@ -45,26 +45,26 @@ Chrome: see the section below for more details.
 **SecurityEmbargo**}: Labels that restrict access to the bug. Meaning and usage
 guidelines are as follows:
   * **Restrict-View-SecurityTeam**: Restricts access to members of
-    *security@chromium.org*. This is the default that should be used for general
+    *security@monyhar.org*. This is the default that should be used for general
     security bugs that aren't sensitive otherwise.
   * **Restrict-View-SecurityNotify**: Restricts access to members of
-    *security-notify@chromium.org*, which includes external parties who ship
+    *security-notify@monyhar.org*, which includes external parties who ship
     Chromium-based products and who need to know about available bug fixes.
-    *security@chromium.org* is a member of that group so the former is a
+    *security@monyhar.org* is a member of that group so the former is a
     superset of the latter. **Restrict-View-SecurityNotify** is not suitable for
     sensitive bugs.
   * **Restrict-View-SecurityNotifyWebRTC**: As above, but additionally
     gives access to *security-notify@webrtc.org*, a community of downstream
     WebRTC embedders.
   * **Restrict-View-Google**: Restricts access to users that are Google
-    employees (but also via their *chromium.org* accounts). This should be used
+    employees (but also via their *monyhar.org* accounts). This should be used
     for bugs that aren't OK for external contributors to see (even if we trust
     them with security work), for example due to:
       * legal reasons (bug affects a partner Google is under NDA and the
         information is subject to that)
       * the bug affecting more Google products than Chrome and Chrome OS
   * **Restrict-View-SecurityEmbargo**: Restricts access to
-    *security@chromium.org* and and stops Sheriffbot from publishing the bug
+    *security@monyhar.org* and and stops Sheriffbot from publishing the bug
     automatically. Use this if the bug in question is subject to disclosure
     decisions made externally, such as:
       * We receive advance notice of security bugs from an upstream open source
@@ -79,7 +79,7 @@ guidelines are as follows:
   restriction labels must be satisfied for a user to have access to a bug.
 * **reward-**{**topanel**, **unpaid**, **na**, **inprocess**, _#_}: Labels used
 in tracking bugs nominated for our [Vulnerability Reward
-Program](https://www.chromium.org/Home/chromium-security/vulnerability-rewards-program).
+Program](https://www.monyhar.org/Home/monyhar-security/vulnerability-rewards-program).
 * **reward_to-**. If a bug is filed by a Google or Chromium user on behalf of
 an external party, use **reward_to** to ensure the report is still properly credited
 to the external reporter in the release notes. Normally, the latter half of this
@@ -194,7 +194,7 @@ the fact that something may need doing.
 ## Sheriffbot automation
 
 Security labels guide the actions taken by
-[SheriffBot](https://www.chromium.org/issue-tracking/autotriage). The source of
+[SheriffBot](https://www.monyhar.org/issue-tracking/autotriage). The source of
 truth for the actual rule set is
 [go/sheriffbot-source](https://goto.google.com/sheriffbot-source) (sorry, Google
 employees only). The motivation behind these rules is to help automate the
@@ -262,7 +262,7 @@ is released.
 Replace **Restrict-View-SecurityTeam** with **Restrict-View-SecurityNotify** for
 fixed security bugs. Rationale is that while fixed bugs are generally not
 intended to become public immediately, we'd like to give access to external
-parties depending on Chromium via *security-notify@chromium.org*.
+parties depending on Chromium via *security-notify@monyhar.org*.
 (WebRTC bugs instead get set to **Restrict-View-SecurityNotifyWebRTC**).
 
 ### Set **Merge-Request-X** For Fixed Bugs

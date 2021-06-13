@@ -40,7 +40,7 @@ component("crdtp") {
 source_set("crdtp_platform") {
   visibility = [ ":crdtp" ]
   sources = [
-    "crdtp/chromium/json_platform_chromium.cc",
+    "crdtp/monyhar/json_platform_monyhar.cc",
     "crdtp/json_platform.h",
   ]
   deps = [ "//base" ]

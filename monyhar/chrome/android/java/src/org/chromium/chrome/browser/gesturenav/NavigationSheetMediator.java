@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.gesturenav;
+package org.monyhar.chrome.browser.gesturenav;
 
-import static org.chromium.chrome.browser.gesturenav.NavigationSheetCoordinator.NAVIGATION_LIST_ITEM_TYPE_ID;
+import static org.monyhar.chrome.browser.gesturenav.NavigationSheetCoordinator.NAVIGATION_LIST_ITEM_TYPE_ID;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -13,23 +13,23 @@ import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
 import android.view.View;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.ui.favicon.FaviconHelper;
-import org.chromium.chrome.browser.ui.favicon.FaviconUtils;
-import org.chromium.components.browser_ui.widget.RoundedIconGenerator;
-import org.chromium.components.browser_ui.widget.TintedDrawable;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.content_public.browser.NavigationEntry;
-import org.chromium.content_public.browser.NavigationHistory;
-import org.chromium.ui.modelutil.MVCListAdapter.ListItem;
-import org.chromium.ui.modelutil.MVCListAdapter.ModelList;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModel.WritableObjectPropertyKey;
-import org.chromium.url.GURL;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.ui.favicon.FaviconHelper;
+import org.monyhar.chrome.browser.ui.favicon.FaviconUtils;
+import org.monyhar.components.browser_ui.widget.RoundedIconGenerator;
+import org.monyhar.components.browser_ui.widget.TintedDrawable;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.content_public.browser.NavigationEntry;
+import org.monyhar.content_public.browser.NavigationHistory;
+import org.monyhar.ui.modelutil.MVCListAdapter.ListItem;
+import org.monyhar.ui.modelutil.MVCListAdapter.ModelList;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModel.WritableObjectPropertyKey;
+import org.monyhar.url.GURL;
 
 import java.util.Arrays;
 import java.util.HashSet;

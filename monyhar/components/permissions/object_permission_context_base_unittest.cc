@@ -82,7 +82,7 @@ class ObjectPermissionContextBaseTest : public testing::Test {
  public:
   ObjectPermissionContextBaseTest()
       : url1_("https://google.com"),
-        url2_("https://chromium.org"),
+        url2_("https://monyhar.org"),
         origin1_(url::Origin::Create(url1_)),
         origin2_(url::Origin::Create(url2_)),
         object1_(base::Value::Type::DICTIONARY),

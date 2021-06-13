@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.page_info;
+package org.monyhar.chrome.browser.page_info;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -12,7 +12,7 @@ import static androidx.test.espresso.matcher.ViewMatchers.isNotChecked;
 import static androidx.test.espresso.matcher.ViewMatchers.withEffectiveVisibility;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 
-import static org.chromium.components.content_settings.PrefNames.COOKIE_CONTROLS_MODE;
+import static org.monyhar.components.content_settings.PrefNames.COOKIE_CONTROLS_MODE;
 
 import android.support.test.InstrumentationRegistry;
 
@@ -27,21 +27,21 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.FlakyTest;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.components.content_settings.CookieControlsMode;
-import org.chromium.components.page_info.PageInfoAction;
-import org.chromium.components.page_info.R;
-import org.chromium.components.user_prefs.UserPrefs;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.content_public.common.ContentSwitches;
-import org.chromium.net.test.EmbeddedTestServer;
-import org.chromium.ui.test.util.DisableAnimationsTestRule;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.FlakyTest;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.components.content_settings.CookieControlsMode;
+import org.monyhar.components.page_info.PageInfoAction;
+import org.monyhar.components.page_info.R;
+import org.monyhar.components.user_prefs.UserPrefs;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.content_public.common.ContentSwitches;
+import org.monyhar.net.test.EmbeddedTestServer;
+import org.monyhar.ui.test.util.DisableAnimationsTestRule;
 
 /**
  * Tests for CookieControlsView.
@@ -61,7 +61,7 @@ public class CookieControlsViewTest {
 
     private void loadUrlAndOpenPageInfo(String url) {
         mActivityTestRule.loadUrlInNewTab(url);
-        onView(withId(org.chromium.chrome.R.id.location_bar_status_icon)).perform(click());
+        onView(withId(org.monyhar.chrome.R.id.location_bar_status_icon)).perform(click());
     }
 
     private void setThirdPartyCookieBlocking(@CookieControlsMode int value) {
@@ -98,7 +98,7 @@ public class CookieControlsViewTest {
     @FlakyTest(message = "https://crbug.com/1062645")
     public void testHiddenOnBlankPage() {
         setThirdPartyCookieBlocking(CookieControlsMode.BLOCK_THIRD_PARTY);
-        onView(withId(org.chromium.chrome.R.id.location_bar_status_icon)).perform(click());
+        onView(withId(org.monyhar.chrome.R.id.location_bar_status_icon)).perform(click());
         onView(withId(R.id.page_info_cookie_controls_view))
                 .check(matches(withEffectiveVisibility(ViewMatchers.Visibility.GONE)));
     }

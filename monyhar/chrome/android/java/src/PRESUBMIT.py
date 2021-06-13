@@ -4,7 +4,7 @@
 
 """Presubmit script for Android Java code.
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See http://dev.monyhar.org/developers/how-tos/depottools/presubmit-scripts
 for more details about the presubmit API built into depot_tools.
 
 This presubmit checks for the following:
@@ -33,9 +33,9 @@ SPLIT_COMPAT_UTILS_IMPL_NAME_RE = re.compile(
 
 COMMENT_RE = re.compile(r'^\s*(//|/\*|\*)')
 
-BROWSER_ROOT = 'chrome/android/java/src/org/chromium/chrome/browser/'
+BROWSER_ROOT = 'chrome/android/java/src/org/monyhar/chrome/browser/'
 SIGNIN_UI_BROWSER_ROOT = 'chrome/browser/signin/ui/android'
-'/java/src/org/chromium/chrome/browser/signin/ui/'
+'/java/src/org/monyhar/chrome/browser/signin/ui/'
 
 
 def CheckChangeOnUpload(input_api, output_api):
@@ -59,9 +59,9 @@ def _CommonChecks(input_api, output_api):
 
 def _CheckNotificationConstructors(input_api, output_api):
   files_to_skip = (
-      'chrome/android/java/src/org/chromium/chrome/browser/notifications/'
+      'chrome/android/java/src/org/monyhar/chrome/browser/notifications/'
       'ChromeNotificationWrapperBuilder.java',
-      'chrome/android/java/src/org/chromium/chrome/browser/notifications/'
+      'chrome/android/java/src/org/monyhar/chrome/browser/notifications/'
       'ChromeNotificationWrapperCompatBuilder.java'
   )
   error_msg = '''
@@ -120,7 +120,7 @@ def _CheckAlertDialogBuilder(input_api, output_api):
   that your new AlertDialog is not used in VR mode (e.g. pereference, FRE)
 
   If you are in doubt, contact
-  //src/chrome/android/java/src/org/chromium/chrome/browser/vr/VR_JAVA_OWNERS
+  //src/chrome/android/java/src/org/monyhar/chrome/browser/vr/VR_JAVA_OWNERS
   '''
   error_files = []
   result = _CheckReIgnoreComment(input_api, output_api, error_msg,
@@ -175,7 +175,7 @@ def _CheckCompatibleAlertDialogBuilder(input_api, output_api):
   that your new AlertDialog is not used in VR mode (e.g. pereference, FRE)
 
   If you are in doubt, contact
-  //src/chrome/android/java/src/org/chromium/chrome/browser/vr/VR_JAVA_OWNERS
+  //src/chrome/android/java/src/org/monyhar/chrome/browser/vr/VR_JAVA_OWNERS
   '''
   return _CheckReIgnoreComment(input_api, output_api, error_msg, files_to_skip,
                                NEW_COMPATIBLE_ALERTDIALOG_BUILDER_RE)

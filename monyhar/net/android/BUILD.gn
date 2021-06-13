@@ -7,27 +7,27 @@ import("//build/config/android/rules.gni")
 
 android_library("net_java") {
   sources = [
-    "java/src/org/chromium/net/AndroidCellularSignalStrength.java",
-    "java/src/org/chromium/net/AndroidCertVerifyResult.java",
-    "java/src/org/chromium/net/AndroidKeyStore.java",
-    "java/src/org/chromium/net/AndroidNetworkLibrary.java",
-    "java/src/org/chromium/net/AndroidTelephonyManagerBridge.java",
-    "java/src/org/chromium/net/AndroidTrafficStats.java",
-    "java/src/org/chromium/net/DnsStatus.java",
-    "java/src/org/chromium/net/GURLUtils.java",
-    "java/src/org/chromium/net/HttpNegotiateAuthenticator.java",
-    "java/src/org/chromium/net/HttpNegotiateConstants.java",
-    "java/src/org/chromium/net/HttpUtil.java",
-    "java/src/org/chromium/net/MimeTypeFilter.java",
-    "java/src/org/chromium/net/NetStringUtil.java",
-    "java/src/org/chromium/net/NetworkActivationRequest.java",
-    "java/src/org/chromium/net/NetworkChangeNotifier.java",
-    "java/src/org/chromium/net/NetworkChangeNotifierAutoDetect.java",
-    "java/src/org/chromium/net/ProxyBroadcastReceiver.java",
-    "java/src/org/chromium/net/ProxyChangeListener.java",
-    "java/src/org/chromium/net/RegistrationPolicyAlwaysRegister.java",
-    "java/src/org/chromium/net/RegistrationPolicyApplicationStatus.java",
-    "java/src/org/chromium/net/X509Util.java",
+    "java/src/org/monyhar/net/AndroidCellularSignalStrength.java",
+    "java/src/org/monyhar/net/AndroidCertVerifyResult.java",
+    "java/src/org/monyhar/net/AndroidKeyStore.java",
+    "java/src/org/monyhar/net/AndroidNetworkLibrary.java",
+    "java/src/org/monyhar/net/AndroidTelephonyManagerBridge.java",
+    "java/src/org/monyhar/net/AndroidTrafficStats.java",
+    "java/src/org/monyhar/net/DnsStatus.java",
+    "java/src/org/monyhar/net/GURLUtils.java",
+    "java/src/org/monyhar/net/HttpNegotiateAuthenticator.java",
+    "java/src/org/monyhar/net/HttpNegotiateConstants.java",
+    "java/src/org/monyhar/net/HttpUtil.java",
+    "java/src/org/monyhar/net/MimeTypeFilter.java",
+    "java/src/org/monyhar/net/NetStringUtil.java",
+    "java/src/org/monyhar/net/NetworkActivationRequest.java",
+    "java/src/org/monyhar/net/NetworkChangeNotifier.java",
+    "java/src/org/monyhar/net/NetworkChangeNotifierAutoDetect.java",
+    "java/src/org/monyhar/net/ProxyBroadcastReceiver.java",
+    "java/src/org/monyhar/net/ProxyChangeListener.java",
+    "java/src/org/monyhar/net/RegistrationPolicyAlwaysRegister.java",
+    "java/src/org/monyhar/net/RegistrationPolicyApplicationStatus.java",
+    "java/src/org/monyhar/net/X509Util.java",
   ]
   deps = [
     ":net_thread_stats_uid_java",
@@ -40,18 +40,18 @@ android_library("net_java") {
     ":net_android_java_enums_srcjar",
     ":net_errors_java",
   ]
-  resources_package = "org.chromium.native_test"
+  resources_package = "org.monyhar.native_test"
 }
 
 android_library("net_thread_stats_uid_java") {
-  sources = [ "java/src/org/chromium/net/ThreadStatsUid.java" ]
+  sources = [ "java/src/org/monyhar/net/ThreadStatsUid.java" ]
 }
 
 android_aidl("embedded_test_server_aidl") {
-  interface_file = "../test/android/javatests/src/org/chromium/net/test/IEmbeddedTestServerInterface.aidl"
+  interface_file = "../test/android/javatests/src/org/monyhar/net/test/IEmbeddedTestServerInterface.aidl"
   sources = [
-    "../test/android/javatests/src/org/chromium/net/test/IConnectionListener.aidl",
-    "../test/android/javatests/src/org/chromium/net/test/IEmbeddedTestServerImpl.aidl",
+    "../test/android/javatests/src/org/monyhar/net/test/IConnectionListener.aidl",
+    "../test/android/javatests/src/org/monyhar/net/test/IEmbeddedTestServerImpl.aidl",
   ]
 }
 
@@ -64,12 +64,12 @@ android_library("embedded_test_server_aidl_java") {
 android_library("net_java_test_support") {
   testonly = true
   sources = [
-    "../test/android/javatests/src/org/chromium/net/test/EmbeddedTestServer.java",
-    "../test/android/javatests/src/org/chromium/net/test/EmbeddedTestServerRule.java",
-    "../test/android/javatests/src/org/chromium/net/test/util/CertTestUtil.java",
-    "../test/android/javatests/src/org/chromium/net/test/util/NetworkChangeNotifierTestUtil.java",
-    "../test/android/javatests/src/org/chromium/net/test/util/TestWebServer.java",
-    "../test/android/javatests/src/org/chromium/net/test/util/WebServer.java",
+    "../test/android/javatests/src/org/monyhar/net/test/EmbeddedTestServer.java",
+    "../test/android/javatests/src/org/monyhar/net/test/EmbeddedTestServerRule.java",
+    "../test/android/javatests/src/org/monyhar/net/test/util/CertTestUtil.java",
+    "../test/android/javatests/src/org/monyhar/net/test/util/NetworkChangeNotifierTestUtil.java",
+    "../test/android/javatests/src/org/monyhar/net/test/util/TestWebServer.java",
+    "../test/android/javatests/src/org/monyhar/net/test/util/WebServer.java",
   ]
   deps = [
     ":embedded_test_server_aidl_java",
@@ -89,10 +89,10 @@ android_library("net_java_test_support") {
 android_library("net_java_test_support_provider") {
   testonly = true
   sources = [
-    "../test/android/javatests/src/org/chromium/net/test/DummySpnegoAuthenticator.java",
-    "../test/android/javatests/src/org/chromium/net/test/DummySpnegoAuthenticatorService.java",
-    "../test/android/javatests/src/org/chromium/net/test/EmbeddedTestServerImpl.java",
-    "../test/android/javatests/src/org/chromium/net/test/EmbeddedTestServerService.java",
+    "../test/android/javatests/src/org/monyhar/net/test/DummySpnegoAuthenticator.java",
+    "../test/android/javatests/src/org/monyhar/net/test/DummySpnegoAuthenticatorService.java",
+    "../test/android/javatests/src/org/monyhar/net/test/EmbeddedTestServerImpl.java",
+    "../test/android/javatests/src/org/monyhar/net/test/EmbeddedTestServerService.java",
   ]
 
   deps = [
@@ -168,19 +168,19 @@ android_resources("net_unittests_apk_resources") {
 android_library("net_javatests") {
   testonly = true
   sources = [
-    "javatests/src/org/chromium/net/AndroidKeyStoreTestUtil.java",
-    "javatests/src/org/chromium/net/AndroidNetworkLibraryTest.java",
-    "javatests/src/org/chromium/net/AndroidNetworkLibraryTestUtil.java",
-    "javatests/src/org/chromium/net/AndroidProxyConfigServiceTestUtil.java",
-    "javatests/src/org/chromium/net/AndroidProxySelectorTest.java",
-    "javatests/src/org/chromium/net/EmbeddedTestServerTest.java",
-    "javatests/src/org/chromium/net/HttpUtilTest.java",
-    "javatests/src/org/chromium/net/MimeTypeFilterTest.java",
-    "javatests/src/org/chromium/net/NetErrorsTest.java",
-    "javatests/src/org/chromium/net/NetworkChangeNotifierNoNativeTest.java",
-    "javatests/src/org/chromium/net/NetworkChangeNotifierTest.java",
-    "javatests/src/org/chromium/net/ProxyChangeListenerTest.java",
-    "javatests/src/org/chromium/net/X509UtilTest.java",
+    "javatests/src/org/monyhar/net/AndroidKeyStoreTestUtil.java",
+    "javatests/src/org/monyhar/net/AndroidNetworkLibraryTest.java",
+    "javatests/src/org/monyhar/net/AndroidNetworkLibraryTestUtil.java",
+    "javatests/src/org/monyhar/net/AndroidProxyConfigServiceTestUtil.java",
+    "javatests/src/org/monyhar/net/AndroidProxySelectorTest.java",
+    "javatests/src/org/monyhar/net/EmbeddedTestServerTest.java",
+    "javatests/src/org/monyhar/net/HttpUtilTest.java",
+    "javatests/src/org/monyhar/net/MimeTypeFilterTest.java",
+    "javatests/src/org/monyhar/net/NetErrorsTest.java",
+    "javatests/src/org/monyhar/net/NetworkChangeNotifierNoNativeTest.java",
+    "javatests/src/org/monyhar/net/NetworkChangeNotifierTest.java",
+    "javatests/src/org/monyhar/net/ProxyChangeListenerTest.java",
+    "javatests/src/org/monyhar/net/X509UtilTest.java",
   ]
   deps = [
     ":net_java",
@@ -221,7 +221,7 @@ java_cpp_enum("net_android_java_enums_srcjar") {
 }
 
 junit_binary("net_junit_tests") {
-  sources = [ "junit/src/org/chromium/net/HttpNegotiateAuthenticatorTest.java" ]
+  sources = [ "junit/src/org/monyhar/net/HttpNegotiateAuthenticatorTest.java" ]
   deps = [
     ":net_java",
     "//base:base_java",

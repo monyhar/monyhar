@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sync;
+package org.monyhar.chrome.browser.sync;
 
 import android.annotation.SuppressLint;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.sync.StopSource;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.sync.StopSource;
 
 /**
  * SyncController handles the coordination of sync state between the invalidation controller,

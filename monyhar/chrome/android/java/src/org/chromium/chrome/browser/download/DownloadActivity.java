@@ -2,26 +2,26 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download;
+package org.monyhar.chrome.browser.download;
 
 import android.app.Activity;
 import android.os.Bundle;
 
-import org.chromium.chrome.browser.SnackbarActivity;
-import org.chromium.chrome.browser.download.home.DownloadManagerCoordinator;
-import org.chromium.chrome.browser.download.home.DownloadManagerCoordinatorFactoryHelper;
-import org.chromium.chrome.browser.download.home.DownloadManagerUiConfig;
-import org.chromium.chrome.browser.download.home.DownloadManagerUiConfigHelper;
-import org.chromium.chrome.browser.download.items.OfflineContentAggregatorNotificationBridgeUiFactory;
-import org.chromium.chrome.browser.incognito.IncognitoUtils;
-import org.chromium.chrome.browser.profiles.OTRProfileID;
-import org.chromium.chrome.browser.profiles.ProfileKey;
-import org.chromium.components.browser_ui.modaldialog.AppModalPresenter;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.ui.base.ActivityAndroidPermissionDelegate;
-import org.chromium.ui.base.AndroidPermissionDelegate;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.modaldialog.ModalDialogManagerHolder;
+import org.monyhar.chrome.browser.SnackbarActivity;
+import org.monyhar.chrome.browser.download.home.DownloadManagerCoordinator;
+import org.monyhar.chrome.browser.download.home.DownloadManagerCoordinatorFactoryHelper;
+import org.monyhar.chrome.browser.download.home.DownloadManagerUiConfig;
+import org.monyhar.chrome.browser.download.home.DownloadManagerUiConfigHelper;
+import org.monyhar.chrome.browser.download.items.OfflineContentAggregatorNotificationBridgeUiFactory;
+import org.monyhar.chrome.browser.incognito.IncognitoUtils;
+import org.monyhar.chrome.browser.profiles.OTRProfileID;
+import org.monyhar.chrome.browser.profiles.ProfileKey;
+import org.monyhar.components.browser_ui.modaldialog.AppModalPresenter;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.ui.base.ActivityAndroidPermissionDelegate;
+import org.monyhar.ui.base.AndroidPermissionDelegate;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.modaldialog.ModalDialogManagerHolder;
 
 import java.lang.ref.WeakReference;
 

@@ -6,7 +6,7 @@ import("//build/config/android/rules.gni")
 import("//build/config/python.gni")
 
 # Writes an implementation of
-# |org.chromium.components.module_installer.builder.ModuleDescriptor| for a
+# |org.monyhar.components.module_installer.builder.ModuleDescriptor| for a
 # particular module to Java. The module loader backend expects such an
 # implementation for each module to automate module setup on first access.
 # Instantiations of this template can be depended on like |android_library|

@@ -535,10 +535,10 @@ TEST_F(SiteSettingsHelperTest, CreateChooserExceptionObject) {
   chooser_object->SetKey("name", base::Value(kObjectName));
 
   // Add a user permission for a requesting origin of |kGoogleUrl| and an
-  // embedding origin of chromium.org.
+  // embedding origin of monyhar.org.
   const GURL kGoogleUrl("https://google.com");
   exception_details[std::make_pair(kGoogleUrl.GetOrigin(), kPreferenceSource)]
-      .insert(std::make_pair(GURL("https://chromium.org").GetOrigin(),
+      .insert(std::make_pair(GURL("https://monyhar.org").GetOrigin(),
                              /*incognito=*/false));
 
   {
@@ -629,7 +629,7 @@ constexpr char kUsbPolicySetting[] = R"(
     [
       {
         "devices": [{ "vendor_id": 6353, "product_id": 5678 }],
-        "urls": ["https://chromium.org"]
+        "urls": ["https://monyhar.org"]
       }, {
         "devices": [{ "vendor_id": 6353 }],
         "urls": ["https://google.com,https://android.com"]
@@ -645,7 +645,7 @@ constexpr char kUsbPolicySetting[] = R"(
 class SiteSettingsHelperChooserExceptionTest : public testing::Test {
  protected:
   const GURL kGoogleUrl{"https://google.com"};
-  const GURL kChromiumUrl{"https://chromium.org"};
+  const GURL kChromiumUrl{"https://monyhar.org"};
   const GURL kAndroidUrl{"https://android.com"};
   const GURL kTestUrl{"https://test.com"};
 
@@ -785,11 +785,11 @@ TEST_F(SiteSettingsHelperChooserExceptionTest,
 
   // This exception should describe the permissions for the "Gizmo" device.
   // The user granted permissions are the following:
-  // * "https://chromium.org"
+  // * "https://monyhar.org"
   // * "https://test.org"
   // The policy granted permission is the following:
-  // * "https://chromium.org"
-  // The chromium granted permission should be coalesced into the policy
+  // * "https://monyhar.org"
+  // The monyhar granted permission should be coalesced into the policy
   // permissions. The test one does not overlap with any policy permission so
   // it will be a separate preference-sourced exception.
   {

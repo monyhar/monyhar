@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.payments;
+package org.monyhar.components.payments;
 
-import org.chromium.payments.mojom.PayerDetail;
-import org.chromium.payments.mojom.PaymentOptions;
-import org.chromium.payments.mojom.PaymentResponse;
+import org.monyhar.payments.mojom.PayerDetail;
+import org.monyhar.payments.mojom.PaymentOptions;
+import org.monyhar.payments.mojom.PaymentResponse;
 
 /**
  * The helper class that generates a {@link PaymentResponse} with the input of payment details.

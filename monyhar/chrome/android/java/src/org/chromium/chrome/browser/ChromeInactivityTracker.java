@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.lifecycle.DestroyObserver;
-import org.chromium.chrome.browser.lifecycle.PauseResumeWithNativeObserver;
-import org.chromium.chrome.browser.lifecycle.StartStopWithNativeObserver;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.lifecycle.DestroyObserver;
+import org.monyhar.chrome.browser.lifecycle.PauseResumeWithNativeObserver;
+import org.monyhar.chrome.browser.lifecycle.StartStopWithNativeObserver;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
 
 /**
  * Manages pref that can track the delay since the last stop of the tracked activity.

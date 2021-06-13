@@ -6,7 +6,7 @@
 // Manual edits:
 // - Copyright header added.
 // - Includes and inclusion guard added.
-// - Constructor and destructor added to satisfy chromium-style checker.
+// - Constructor and destructor added to satisfy monyhar-style checker.
 
 #ifndef COMPONENTS_COMPONENT_UPDATER_MOCK_COMPONENT_UPDATER_SERVICE_H_
 #define COMPONENTS_COMPONENT_UPDATER_MOCK_COMPONENT_UPDATER_SERVICE_H_

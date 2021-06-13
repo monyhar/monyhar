@@ -40,8 +40,8 @@ static_library("navigation_interception") {
 if (is_android) {
   generate_jni("jni_headers") {
     sources = [
-      "android/java/src/org/chromium/components/navigation_interception/InterceptNavigationDelegate.java",
-      "android/java/src/org/chromium/components/navigation_interception/NavigationParams.java",
+      "android/java/src/org/monyhar/components/navigation_interception/InterceptNavigationDelegate.java",
+      "android/java/src/org/monyhar/components/navigation_interception/NavigationParams.java",
     ]
   }
 }

@@ -110,7 +110,7 @@ class GitCL(object):
             command = ['try']
             # Buckets are required by `git cl try`. When no bucket is specified,
             # use the default bucket.
-            command.extend(['-B', bucket or 'luci.chromium.try'])
+            command.extend(['-B', bucket or 'luci.monyhar.try'])
             for builder in sorted(builders_by_bucket[bucket]):
                 command.extend(['-b', builder])
             self.run(command)
@@ -299,7 +299,7 @@ class GitCL(object):
         """Gets try job results for the specified CL from buildbucket.
 
         This uses the SearchBuilds rpc format specified in
-        https://cs.chromium.org/chromium/infra/go/src/go.chromium.org/luci/buildbucket/proto/rpc.proto
+        https://cs.monyhar.org/monyhar/infra/go/src/go.monyhar.org/luci/buildbucket/proto/rpc.proto
 
         The response is a list of dicts of the following form:
         {
@@ -335,8 +335,8 @@ class GitCL(object):
         data = {
             'predicate': {
                 'gerritChanges': [{
-                    'host': 'chromium-review.googlesource.com',
-                    'project': 'chromium/src',
+                    'host': 'monyhar-review.googlesource.com',
+                    'project': 'monyhar/src',
                     'change': issue_number,
                     'patchset': patchset
                 }]

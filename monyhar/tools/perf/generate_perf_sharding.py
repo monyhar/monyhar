@@ -172,7 +172,7 @@ def _PromptWarning():
              'always be reviewed by Benchmarking '
              'team members. Upon landing the CL to update the shard maps, '
              'please notify Chromium perf sheriffs in '
-             'perf-sheriffs@chromium.org and put a warning about expected '
+             'perf-sheriffs@monyhar.org and put a warning about expected '
              'false regressions in your CL '
              'description')
   print(textwrap.fill(message, 70), '\n')

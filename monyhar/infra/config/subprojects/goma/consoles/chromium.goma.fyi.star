@@ -5,10 +5,10 @@
 load("//console-header.star", "HEADER")
 
 luci.console_view(
-    name = "chromium.goma.fyi",
+    name = "monyhar.goma.fyi",
     header = HEADER,
     include_experimental_builds = True,
-    repo = "https://chromium.googlesource.com/chromium/src",
+    repo = "https://monyhar.googlesource.com/monyhar/src",
     entries = [
         luci.console_view_entry(
             builder = "goma/linux-archive-rel-goma-rbe-canary",

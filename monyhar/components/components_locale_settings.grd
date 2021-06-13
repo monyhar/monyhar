@@ -312,7 +312,7 @@
       </if>
 
       <if expr="not is_android and not is_ios and not _google_chrome">
-        <include name="IDS_TERMS_HTML" file="resources/terms/terms_chromium.html" type="BINDATA" />
+        <include name="IDS_TERMS_HTML" file="resources/terms/terms_monyhar.html" type="BINDATA" />
       </if>
     </includes>
     <messages fallback_to_english="true">

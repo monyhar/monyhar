@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.media;
+package org.monyhar.media;
 
 import android.content.Context;
 import android.hardware.display.DisplayManager;
@@ -13,9 +13,9 @@ import android.view.Display;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.media.MediaCodecUtil.MimeTypes;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.media.MediaCodecUtil.MimeTypes;
 
 /**
  * A utility class to make an estimate for the hints provided to MediaFormat as

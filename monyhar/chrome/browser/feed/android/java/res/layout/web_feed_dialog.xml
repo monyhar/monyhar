@@ -31,7 +31,7 @@
             android:scaleType="fitCenter"
             android:importantForAccessibility="no" />
 
-        <org.chromium.ui.widget.TextViewWithLeading
+        <org.monyhar.ui.widget.TextViewWithLeading
             android:id="@+id/web_feed_dialog_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
             app:leading="@dimen/headline_size_leading"
             android:textAppearance="@style/TextAppearance.Headline.Primary" />
 
-        <org.chromium.ui.widget.TextViewWithLeading
+        <org.monyhar.ui.widget.TextViewWithLeading
             android:id="@+id/web_feed_dialog_details"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

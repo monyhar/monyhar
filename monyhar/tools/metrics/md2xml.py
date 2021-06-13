@@ -12,7 +12,7 @@ The syntax for the markdown this script processes is as follows:
     metric, in a markdown list, in '[name]: [value]' format. For example:
 
     * units: pixels
-    * owners: first@chromium.org, second@example.com
+    * owners: first@monyhar.org, second@example.com
 
   . The description, and explanation, of the metric should be after an empty
     line after the list of attributes.
@@ -32,7 +32,7 @@ The purpose of this sample doc is to be a guide for writing such docs.
 ---
 ## ExampleMetric.First
 * units: smiles
-* owners: firstowner@chromium.org, second@example.org
+* owners: firstowner@monyhar.org, second@example.org
 * os: windows, mac
 * added: 2018-03-01
 * expires: 2023-01-01

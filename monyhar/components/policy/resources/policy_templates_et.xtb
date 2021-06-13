@@ -113,7 +113,7 @@
 
       Kui määrate reegli, kasutab <ph name="PRODUCT_NAME" /> sisestatud kataloogi sellest olenemata, kas kasutaja on määranud märgistuse „--disk-cache-dir”. Andmete kaotsimineku ja muude ootamatute vigade vältimiseks ei tohi reegli jaoks valida ketta juurkataloogi ega muudel eesmärkidel kasutatavat kataloogi, kuna <ph name="PRODUCT_NAME" /> haldab selle kataloogi sisu.
 
-      Vaadake kasutamiseks saadaolevate muutujate loendit aadressilt https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Vaadake kasutamiseks saadaolevate muutujate loendit aadressilt https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Kui jätate reegli määramata, kasutatakse vahemälu vaikekataloogi ja kasutaja saab selle alistada käsurea märgistusega „--disk-cache-dir”.</translation>
 <translation id="113521240853905588">Seadistab keeled, mida <ph name="PRODUCT_OS_NAME" /> saab eelistatud keeltena kasutada.
@@ -501,7 +501,7 @@ loendist, desinstallib rakendus <ph name="PRODUCT_NAME" /> selle automaatselt.
 <translation id="1852294065645015766">Meedia automaatesituse lubamine</translation>
 <translation id="1857152770025485173">See reegel keelab kasutajal laadida keelatud URL-ide loendis olevaid veebilehti. Keelatute loend hõlmab URL-i mustreid, mis määravad, millised URL-id keelatute loendisse lisatakse.
 
-      URL-i muster tuleb vormindada aadressil https://www.chromium.org/administrators/url-blacklist-filter-format olevate juhiste järgi.
+      URL-i muster tuleb vormindada aadressil https://www.monyhar.org/administrators/url-blacklist-filter-format olevate juhiste järgi.
 
       Erandid saab määrata lubatud URL-ide loendi reegliga. Need reeglid kehtivad vaid 1000 kirje puhul, järgnevaid kirjeid eiratakse.
 
@@ -544,7 +544,7 @@ loendist, desinstallib rakendus <ph name="PRODUCT_NAME" /> selle automaatselt.
 
       Kui reegel on seadistamata, siis on mõõdikute teabe ja diagnostikaandmete edastamine haldamata seadmetes keelatud ja hallatud seadmetes lubatud.</translation>
 <translation id="1907431809333268751">Seadistage ettevõtte sisselogimis-URL-ide loend (ainult HTTP- ja HTTPS-skeemid). Parooli sõrmejälg jäädvustatakse nendel URL-idel ja seda kasutatakse parooli uuesti kasutamise tuvastamiseks.
-      Selleks et <ph name="PRODUCT_NAME" /> jäädvustaks paroolide sõrmejäljed õigesti, veenduge, et teie sisselogimislehed järgiksid aadressil https://www.chromium.org/developers/design-documents/create-amazing-password-forms olevaid juhiseid.
+      Selleks et <ph name="PRODUCT_NAME" /> jäädvustaks paroolide sõrmejäljed õigesti, veenduge, et teie sisselogimislehed järgiksid aadressil https://www.monyhar.org/developers/design-documents/create-amazing-password-forms olevaid juhiseid.
 
       Kui see seade on lubatud, jäädvustab paroolikaitseteenus nendel URL-idel parooli sõrmejälje, et tuvastada parooli uuesti kasutamine.
       Kui seade on keelatud või määramata, jäädvustab paroolikaitseteenus parooli sõrmejälje ainult saidil https://accounts.google.com.
@@ -846,7 +846,7 @@ loendist, desinstallib rakendus <ph name="PRODUCT_NAME" /> selle automaatselt.
 
       Reegel lubab määratud URL-ide hostinimede sertifikaadid, mis ei ole sertifikaadi läbipaistvuse reegli kaudu avalikustatud. See lubab ka edaspidi kasutada sertifikaate, mida peetaks muidu ebausaldusväärseks, kuna need ei ole sobival moel avalikustatud, ent muudab hostide valesti väljastatud sertifikaatide tuvastamise keerulisemaks.
 
-      URL-i muster vormindatakse aadressil https://www.chromium.org/administrators/url-blacklist-filter-format kirjeldatud moel. Kuna aga sertifikaadid kehtivad konkreetse hostinime puhul olenemata skeemist, pordist või teest, võetakse arvesse ainult URL-i hostinime osa. Metamärkidega hoste ei toetata.
+      URL-i muster vormindatakse aadressil https://www.monyhar.org/administrators/url-blacklist-filter-format kirjeldatud moel. Kuna aga sertifikaadid kehtivad konkreetse hostinime puhul olenemata skeemist, pordist või teest, võetakse arvesse ainult URL-i hostinime osa. Metamärkidega hoste ei toetata.
 
       Kui jätate reegli määramata, peetakse ebausaldusväärseks kõiki sertifikaate, mis ei ole sertifikaadi läbipaistvuse reegli kaudu avalikustatud, ent mille puhul see on kohustuslik.</translation>
 <translation id="2488010520405124654">Võrguseadistuse viiba lubamine, kui seade on võrguühenduseta.
@@ -1539,7 +1539,7 @@ loendist, desinstallib rakendus <ph name="PRODUCT_NAME" /> selle automaatselt.
 
       Kui määrate selle reegli, kasutab <ph name="PRODUCT_NAME" /> kataloogi olenemata sellest, kas kasutaja on selle määranud või on lubanud märgistuse, mis küsib iga kord allalaadimise asukohta.
 
-      Saidilt http://www.chromium.org/administrators/policy-list-3/user-data-directory-variables leiate muutujate loendi, mida saate kasutada.
+      Saidilt http://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables leiate muutujate loendi, mida saate kasutada.
 
       Kui seda reeglit ei määrata, kasutatakse allalaadimise vaikekataloogi ja kasutaja saab seda muuta.</translation>
 <translation id="3805659594028420438">Luba TLS-i domeenisuunaliste sertifikaatide laiendus (pakkumine on peatatud)</translation>
@@ -1630,7 +1630,7 @@ loendist, desinstallib rakendus <ph name="PRODUCT_NAME" /> selle automaatselt.
 
       Kui te seda reeglit ei määra, kasutab brauser <ph name="PRODUCT_NAME" /> oma tavapärast kataloogi (platvormipõhine).
 
-      Saidil https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables näete loendit kasutatavatest muutujatest.</translation>
+      Saidil https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables näete loendit kasutatavatest muutujatest.</translation>
 <translation id="3911737181201537215">See reegel ei mõjuta Androidi logimist.</translation>
 <translation id="391531815696899618">Keelab Google Drive'i sünkroonimise operatsioonisüsteemi <ph name="PRODUCT_OS_NAME" /> rakenduses Failid, kui väärtuse olekuks on määratud Tõene. Sellisel juhul ei laadita Google Drive'i üles mingeid andmeid.
 
@@ -1832,7 +1832,7 @@ loendist, desinstallib rakendus <ph name="PRODUCT_NAME" /> selle automaatselt.
 
       Selle reegli määramisel kasutab <ph name="PRODUCT_NAME" /> profiilide rändluskoopiate salvestamiseks määratud kataloogi, kui reegel <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> on lubatud. Kui reegel <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> on keelatud või määramata, ei kasutata selles reeglis salvestatud väärtust.
 
-      Kasutatavate muutujate loendi leiate aadressilt https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Kasutatavate muutujate loendi leiate aadressilt https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Kui see reegel jäetakse määramata, kasutatakse rändlusprofiili vaiketeed.</translation>
 <translation id="4239720644496144453">Androidi rakenduste jaoks vahemälu ei kasutata. Kui mitu kasutajat installivad sama Androidi rakenduse, laaditakse see iga kasutaja puhul uuena alla.</translation>
@@ -2033,7 +2033,7 @@ loendist, desinstallib rakendus <ph name="PRODUCT_NAME" /> selle automaatselt.
 
           Kui jätate selle reegli määramata, kasutatakse kõikide saitide puhul vaikerenderdajat, mis on määratud reegliga „ChromeFrameRendererSettings”.
 
-          Vaadake näidismustreid aadressilt http://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Vaadake näidismustreid aadressilt http://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="467449052039111439">Ava URL-ide loend</translation>
 <translation id="4674871290487541952">Ebaturvaliste algoritmide lubamine laienduse värskendamise ja installimise terviklikkuse kontrollis</translation>
 <translation id="4680936297850947973">Versioonis M68 on tugi katkestatud. Kasutage selle asemel reeglit DefaultPopupsSetting.
@@ -2681,7 +2681,7 @@ loendist, desinstallib rakendus <ph name="PRODUCT_NAME" /> selle automaatselt.
 
       Kui selle reegli määrate, kasutab teenus <ph name="PRODUCT_FRAME_NAME" /> antud kataloogi.
 
-      Saidilt http://www.chromium.org/administrators/policy-list-3/user-data-directory-variables leiate loendi muutujatest, mida saate kasutada.
+      Saidilt http://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables leiate loendi muutujatest, mida saate kasutada.
 
       Kui seda seadet ei määrata, kasutatakse profiili vaikekataloogi.</translation>
 <translation id="5826047473100157858">Määrab, kas kasutaja saab rakenduses <ph name="PRODUCT_NAME" /> avada lehti inkognito režiimis.
@@ -3262,7 +3262,7 @@ loendist, desinstallib rakendus <ph name="PRODUCT_NAME" /> selle automaatselt.
       Kui määrate reegli, kasutab <ph name="PRODUCT_NAME" /> sisestatud kataloogi sellest olenemata, kas kasutaja on määranud märgistuse „--user-data-dir”. Andmekao ja muude ootamatute vigade vältimiseks ei tohi reegli jaoks valida ketta juurkataloogi ega muudel eesmärkidel kasutatavat kataloogi, kuna <ph name="PRODUCT_NAME" /> haldab selle kataloogi sisu.
 
 
-      Vaadake kasutamiseks saadaolevate muutujate loendit aadressilt https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Vaadake kasutamiseks saadaolevate muutujate loendit aadressilt https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Kui jätate reegli määramata, kasutatakse profiili vaiketeed ja kasutaja saab selle alistada käsurea märgistusega „--user-data-dir”.</translation>
 <translation id="7027785306666625591">Operatsioonisüsteemi <ph name="PRODUCT_OS_NAME" /> toitehalduse seadistamine.
@@ -4058,7 +4058,7 @@ Soovituslik viis selle reegli seadistamiseks Windowsis on GPO kaudu, kuigi reegl
 
           Kui seda reeglit ei määrata, kasutatakse kõikide saitide puhul vaikerenderdajat, mis on määratud reegliga „ChromeFrameRendererSettings”.
 
-          Vaadake näidismustreid aadressilt http://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Vaadake näidismustreid aadressilt http://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="8489964335640955763">PluginVm</translation>
 <translation id="8493645415242333585">Keela brauseri ajaloo salvestamine</translation>
 <translation id="8499172469244085141">Vaikeseaded (kasutajad saavad alistada)</translation>

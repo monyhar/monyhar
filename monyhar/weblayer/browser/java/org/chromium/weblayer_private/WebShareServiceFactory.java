@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
-import org.chromium.components.browser_ui.share.ShareHelper;
-import org.chromium.components.browser_ui.share.ShareParams;
-import org.chromium.components.browser_ui.webshare.ShareServiceImpl;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.services.service_manager.InterfaceFactory;
-import org.chromium.webshare.mojom.ShareService;
+import org.monyhar.components.browser_ui.share.ShareHelper;
+import org.monyhar.components.browser_ui.share.ShareParams;
+import org.monyhar.components.browser_ui.webshare.ShareServiceImpl;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.services.service_manager.InterfaceFactory;
+import org.monyhar.webshare.mojom.ShareService;
 
 /**
  * Factory that creates instances of ShareService.

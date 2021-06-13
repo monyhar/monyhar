@@ -22,8 +22,8 @@ if (is_chrome_branded) {
   browser_product_name = "Chromium"
   updater_copyright =
       "Copyright 2020 The Chromium Authors. All rights reserved."
-  mac_updater_bundle_identifier = "org.chromium.ChromiumUpdater"
-  mac_browser_bundle_identifier = "org.chromium.Chromium"
+  mac_updater_bundle_identifier = "org.monyhar.ChromiumUpdater"
+  mac_browser_bundle_identifier = "org.monyhar.Chromium"
 }
 
 # Chrome and Chromium share the same endpoints for now.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.shell;
+package org.monyhar.chromecast.shell;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -19,10 +19,10 @@ import org.robolectric.Shadows;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowAudioManager;
 
-import org.chromium.chromecast.base.Controller;
-import org.chromium.chromecast.base.Observable;
-import org.chromium.chromecast.base.ReactiveRecorder;
-import org.chromium.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.chromecast.base.Controller;
+import org.monyhar.chromecast.base.Observable;
+import org.monyhar.chromecast.base.ReactiveRecorder;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
 
 /**
  * Tests for CastAudioManager.

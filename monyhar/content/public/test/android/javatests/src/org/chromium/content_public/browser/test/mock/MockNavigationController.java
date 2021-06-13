@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.browser.test.mock;
+package org.monyhar.content_public.browser.test.mock;
 
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.NavigationController;
-import org.chromium.content_public.browser.NavigationEntry;
-import org.chromium.content_public.browser.NavigationHistory;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.NavigationController;
+import org.monyhar.content_public.browser.NavigationEntry;
+import org.monyhar.content_public.browser.NavigationHistory;
 
 /**
  * Mock NavigationController implementation for Test.

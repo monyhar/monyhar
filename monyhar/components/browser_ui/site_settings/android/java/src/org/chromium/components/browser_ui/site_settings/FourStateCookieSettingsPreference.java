@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.site_settings;
+package org.monyhar.components.browser_ui.site_settings;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -14,11 +14,11 @@ import androidx.annotation.VisibleForTesting;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.components.browser_ui.settings.ManagedPreferencesUtils;
-import org.chromium.components.browser_ui.widget.RadioButtonWithDescription;
-import org.chromium.components.browser_ui.widget.text.TextViewWithCompoundDrawables;
-import org.chromium.components.content_settings.CookieControlsMode;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.components.browser_ui.settings.ManagedPreferencesUtils;
+import org.monyhar.components.browser_ui.widget.RadioButtonWithDescription;
+import org.monyhar.components.browser_ui.widget.text.TextViewWithCompoundDrawables;
+import org.monyhar.components.content_settings.CookieControlsMode;
 
 /**
  * A 4-state radio group Preference used for the Cookies subpage of SiteSettings.

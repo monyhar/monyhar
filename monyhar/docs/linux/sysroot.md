@@ -1,6 +1,6 @@
 # Linux sysroot images
 
-The chromium build system for Linux will (by default) use a sysroot image
+The monyhar build system for Linux will (by default) use a sysroot image
 rather than building against the libraries installed on the host system.
 This serves several purposes.  Firstly, it ensures that binaries will run on all
 supported linux systems independent of the packages installed on the build
@@ -23,7 +23,7 @@ hooks. When run from hooks this script in a no-op on non-linux platforms.
 
 The pre-built sysroot images occasionally needs to be rebuilt.  For example,
 when security updates to Debian are released, or when a new package is needed by
-the chromium build.  If you just want to update the sysroots without adding any
+the monyhar build.  If you just want to update the sysroots without adding any
 new packages, skip to `Using build_and_upload.py`.
 
 ### Adding new packages
@@ -59,7 +59,7 @@ created.
 Uploading new images to Google Clound Storage requires write permission on the
 `chrome-linux-sysroot` bucket.
 
-### Rolling the sysroot version used by chromium
+### Rolling the sysroot version used by monyhar
 
 Once new images have been uploaded, the `sysroots.json` file needs to be updated
 to reference the new versions.  This process is manual and involves updating the

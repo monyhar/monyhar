@@ -18,7 +18,7 @@ ZIP_FILE="${APP_DIR}.zip"
 NACL_PREBUILTS_BASE_URL="https://gsdview.appspot.com/naclports/builds/pepper_40/trunk-154-geacd680/publish/python/pnacl"
 
 # Memory Inspector prebuilts bucket and destination folder.
-MEMORY_INSPECTOR_PREBUILTS_BUCKET="chromium-telemetry"
+MEMORY_INSPECTOR_PREBUILTS_BUCKET="monyhar-telemetry"
 MEMORY_INSPECTOR_PREBUILTS_DIR="${MEMORY_INSPECTOR_DIR}/prebuilts"
 
 # Memory Inspector dependencies and destination folder in the sandbox

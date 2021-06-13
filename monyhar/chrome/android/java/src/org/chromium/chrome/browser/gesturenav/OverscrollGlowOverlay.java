@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.gesturenav;
+package org.monyhar.chrome.browser.gesturenav;
 
 import android.graphics.RectF;
 import android.view.ViewGroup;
 
-import org.chromium.chrome.browser.layouts.EventFilter;
-import org.chromium.chrome.browser.layouts.SceneOverlay;
-import org.chromium.chrome.browser.layouts.components.VirtualView;
-import org.chromium.chrome.browser.layouts.scene_layer.SceneOverlayLayer;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.resources.ResourceManager;
+import org.monyhar.chrome.browser.layouts.EventFilter;
+import org.monyhar.chrome.browser.layouts.SceneOverlay;
+import org.monyhar.chrome.browser.layouts.components.VirtualView;
+import org.monyhar.chrome.browser.layouts.scene_layer.SceneOverlayLayer;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.resources.ResourceManager;
 
 import java.util.List;
 

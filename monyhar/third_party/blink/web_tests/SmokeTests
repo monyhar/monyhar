@@ -4,7 +4,7 @@
 # platforms that run web tests).
 #
 # Further documentation:
-# https://chromium.googlesource.com/chromium/src/+/master/docs/testing/web_test_expectations.md
+# https://monyhar.googlesource.com/monyhar/src/+/master/docs/testing/web_test_expectations.md
 
 accessibility/aria-labelledby-on-input.html
 accessibility/aria-link-supports-press.html
@@ -790,7 +790,7 @@ http/tests/eventsource/eventsource-bad-mime-type.html
 http/tests/eventsource/eventsource-csp-redirect.html
 http/tests/eventsource/existent-eventsource-status-error-iframe-crash.html
 http/tests/eventsource/workers/eventsource-simple.html
-http/tests/fetch/chromium/discarded-window.html
+http/tests/fetch/monyhar/discarded-window.html
 http/tests/history/cross-origin-replace-history-object.html
 http/tests/linkHeader/link-header-no-crash-space-invalid.php
 http/tests/loading/remove-child-triggers-parser.html

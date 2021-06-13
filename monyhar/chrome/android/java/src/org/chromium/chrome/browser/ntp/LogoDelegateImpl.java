@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ntp;
+package org.monyhar.chrome.browser.ntp;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcher;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcherConfig;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcherFactory;
-import org.chromium.chrome.browser.ntp.LogoBridge.Logo;
-import org.chromium.chrome.browser.ntp.LogoBridge.LogoObserver;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.suggestions.SuggestionsNavigationDelegate;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.ui.base.PageTransition;
-import org.chromium.ui.mojom.WindowOpenDisposition;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcher;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcherConfig;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcherFactory;
+import org.monyhar.chrome.browser.ntp.LogoBridge.Logo;
+import org.monyhar.chrome.browser.ntp.LogoBridge.LogoObserver;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.suggestions.SuggestionsNavigationDelegate;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.ui.base.PageTransition;
+import org.monyhar.ui.mojom.WindowOpenDisposition;
 
 import jp.tomorrowkey.android.gifplayer.BaseGifImage;
 

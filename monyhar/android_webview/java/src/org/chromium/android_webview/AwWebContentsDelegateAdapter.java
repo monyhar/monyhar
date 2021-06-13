@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview;
+package org.monyhar.android_webview;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -17,14 +17,14 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.webkit.URLUtil;
 import android.widget.FrameLayout;
-import org.chromium.base.Callback;
-import org.chromium.base.ContentUriUtils;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.content_public.browser.InvalidateTypes;
-import org.chromium.content_public.common.ContentUrlConstants;
-import org.chromium.content_public.common.ResourceRequestBody;
-import org.chromium.url.GURL;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContentUriUtils;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.content_public.browser.InvalidateTypes;
+import org.monyhar.content_public.common.ContentUrlConstants;
+import org.monyhar.content_public.common.ResourceRequestBody;
+import org.monyhar.url.GURL;
 
 /**
  * Adapts the AwWebContentsDelegate interface to the AwContentsClient interface.

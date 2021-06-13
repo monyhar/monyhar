@@ -41,8 +41,8 @@ provide concrete recommendations for web developers responsible for protecting
 users' data.
 
 [spectre]: https://spectreattack.com/
-[post-spectre-rethink]: https://chromium.googlesource.com/chromium/src/+/main/docs/security/side-channel-threat-model.md
-[site-isolation]: https://www.chromium.org/Home/chromium-security/site-isolation
+[post-spectre-rethink]: https://monyhar.googlesource.com/monyhar/src/+/main/docs/security/side-channel-threat-model.md
+[site-isolation]: https://www.monyhar.org/Home/monyhar-security/site-isolation
 [project-fission]: https://wiki.mozilla.org/Project_Fission
 
 
@@ -93,7 +93,7 @@ This model is spelled out in more detail in both Chromium's
 [Post-Spectre Threat Model Rethink][post-spectre-rethink], and in Artur Janc's
 [Notes on the threat model of cross-origin isolation][coi-threat-model].
 
-[oopif]: https://www.chromium.org/developers/design-documents/oop-iframes
+[oopif]: https://www.monyhar.org/developers/design-documents/oop-iframes
 [coi-threat-model]: https://arturjanc.com/coi-threat-model.pdf
 
 
@@ -126,7 +126,7 @@ This model is spelled out in more detail in both Chromium's
 [fetch-metadata]: https://web.dev/fetch-metadata/
 [corp]: https://resourcepolicy.fyi/
 [coop]: https://docs.google.com/document/d/1Ey3MXcLzwR1T7aarkpBXEwP7jKdd2NvQdgYvF8_8scI/edit
-[corb]: https://chromium.googlesource.com/chromium/src/+/main/services/network/cross_origin_read_blocking_explainer.md
+[corb]: https://monyhar.googlesource.com/monyhar/src/+/main/services/network/cross_origin_read_blocking_explainer.md
 [orb]: https://github.com/annevk/orb
 
 

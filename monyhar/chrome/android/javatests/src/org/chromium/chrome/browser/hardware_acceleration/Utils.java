@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.hardware_acceleration;
+package org.monyhar.chrome.browser.hardware_acceleration;
 
 import android.app.Dialog;
 import android.view.View;
@@ -10,12 +10,12 @@ import android.view.ViewTreeObserver.OnPreDrawListener;
 
 import org.junit.Assert;
 
-import org.chromium.base.SysUtils;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.SysUtils;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.HashSet;
 import java.util.Set;

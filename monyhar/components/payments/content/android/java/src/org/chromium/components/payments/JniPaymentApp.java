@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.payments;
+package org.monyhar.components.payments;
 
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
@@ -10,15 +10,15 @@ import android.os.Handler;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.payments.mojom.PaymentDetailsModifier;
-import org.chromium.payments.mojom.PaymentItem;
-import org.chromium.payments.mojom.PaymentMethodData;
-import org.chromium.payments.mojom.PaymentOptions;
-import org.chromium.payments.mojom.PaymentRequestDetailsUpdate;
-import org.chromium.payments.mojom.PaymentShippingOption;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.payments.mojom.PaymentDetailsModifier;
+import org.monyhar.payments.mojom.PaymentItem;
+import org.monyhar.payments.mojom.PaymentMethodData;
+import org.monyhar.payments.mojom.PaymentOptions;
+import org.monyhar.payments.mojom.PaymentRequestDetailsUpdate;
+import org.monyhar.payments.mojom.PaymentShippingOption;
 
 import java.nio.ByteBuffer;
 import java.util.Arrays;

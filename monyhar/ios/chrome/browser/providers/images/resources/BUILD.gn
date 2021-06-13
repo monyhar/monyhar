@@ -4,42 +4,42 @@
 
 import("//build/config/ios/asset_catalog.gni")
 
-imageset("chromium_stay_safe") {
+imageset("monyhar_stay_safe") {
   sources = [
-    "chromium_stay_safe.imageset/Contents.json",
-    "chromium_stay_safe.imageset/chromium_stay_safe.png",
-    "chromium_stay_safe.imageset/chromium_stay_safe@2x.png",
-    "chromium_stay_safe.imageset/chromium_stay_safe@3x.png",
+    "monyhar_stay_safe.imageset/Contents.json",
+    "monyhar_stay_safe.imageset/monyhar_stay_safe.png",
+    "monyhar_stay_safe.imageset/monyhar_stay_safe@2x.png",
+    "monyhar_stay_safe.imageset/monyhar_stay_safe@3x.png",
   ]
 }
 
-imageset("chromium_ios_made") {
+imageset("monyhar_ios_made") {
   sources = [
-    "chromium_ios_made.imageset/Contents.json",
-    "chromium_ios_made.imageset/chromium_ios_made.png",
-    "chromium_ios_made.imageset/chromium_ios_made@2x.png",
-    "chromium_ios_made.imageset/chromium_ios_made@3x.png",
-    "chromium_ios_made.imageset/chromium_ios_made_dark.png",
-    "chromium_ios_made.imageset/chromium_ios_made_dark@2x.png",
-    "chromium_ios_made.imageset/chromium_ios_made_dark@3x.png",
+    "monyhar_ios_made.imageset/Contents.json",
+    "monyhar_ios_made.imageset/monyhar_ios_made.png",
+    "monyhar_ios_made.imageset/monyhar_ios_made@2x.png",
+    "monyhar_ios_made.imageset/monyhar_ios_made@3x.png",
+    "monyhar_ios_made.imageset/monyhar_ios_made_dark.png",
+    "monyhar_ios_made.imageset/monyhar_ios_made_dark@2x.png",
+    "monyhar_ios_made.imageset/monyhar_ios_made_dark@3x.png",
   ]
 }
 
-imageset("chromium_ipados_made") {
+imageset("monyhar_ipados_made") {
   sources = [
-    "chromium_ipados_made.imageset/Contents.json",
-    "chromium_ipados_made.imageset/chromium_ipados_made@2x.png",
-    "chromium_ipados_made.imageset/chromium_ipados_made@3x.png",
-    "chromium_ipados_made.imageset/chromium_ipados_made_dark@2x.png",
-    "chromium_ipados_made.imageset/chromium_ipados_made_dark@3x.png",
+    "monyhar_ipados_made.imageset/Contents.json",
+    "monyhar_ipados_made.imageset/monyhar_ipados_made@2x.png",
+    "monyhar_ipados_made.imageset/monyhar_ipados_made@3x.png",
+    "monyhar_ipados_made.imageset/monyhar_ipados_made_dark@2x.png",
+    "monyhar_ipados_made.imageset/monyhar_ipados_made_dark@3x.png",
   ]
 }
 
-imageset("chromium_non_default_promo") {
+imageset("monyhar_non_default_promo") {
   sources = [
-    "chromium_non_default_promo.imageset/Contents.json",
-    "chromium_non_default_promo.imageset/chromium_non_default_promo@2x.png",
-    "chromium_non_default_promo.imageset/chromium_non_default_promo@3x.png",
+    "monyhar_non_default_promo.imageset/Contents.json",
+    "monyhar_non_default_promo.imageset/monyhar_non_default_promo@2x.png",
+    "monyhar_non_default_promo.imageset/monyhar_non_default_promo@3x.png",
   ]
 }
 

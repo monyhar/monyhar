@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.test_dummy;
+package org.monyhar.chrome.browser.test_dummy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import org.chromium.base.CommandLine;
-import org.chromium.chrome.modules.test_dummy.TestDummyModuleProvider;
+import org.monyhar.base.CommandLine;
+import org.monyhar.chrome.modules.test_dummy.TestDummyModuleProvider;
 
 /** Helper activity to launch test dummy module.  */
 public class TestDummyActivity extends AppCompatActivity {

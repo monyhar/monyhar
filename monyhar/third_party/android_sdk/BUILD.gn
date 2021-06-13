@@ -59,8 +59,8 @@ if (enable_java_templates) {
     jar_name = "android.test.runner.jar"
   }
 
-  android_library("android_support_chromium_java") {
+  android_library("android_support_monyhar_java") {
     testonly = true
-    sources = [ "//third_party/android_sdk/public/extras/chromium/support/src/org/chromium/android/support/PackageManagerWrapper.java" ]
+    sources = [ "//third_party/android_sdk/public/extras/monyhar/support/src/org/monyhar/android/support/PackageManagerWrapper.java" ]
   }
 }

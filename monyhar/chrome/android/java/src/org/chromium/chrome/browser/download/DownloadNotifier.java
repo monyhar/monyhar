@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download;
+package org.monyhar.chrome.browser.download;
 
-import org.chromium.components.offline_items_collection.ContentId;
-import org.chromium.components.offline_items_collection.PendingState;
+import org.monyhar.components.offline_items_collection.ContentId;
+import org.monyhar.components.offline_items_collection.PendingState;
 
 /**
  * Class for reporting the status of a download.

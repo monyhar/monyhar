@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import android.content.res.Configuration;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ObserverList;
-import org.chromium.base.UserData;
-import org.chromium.content.browser.webcontents.WebContentsImpl;
-import org.chromium.content.browser.webcontents.WebContentsImpl.UserDataFactory;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.display.DisplayAndroid;
-import org.chromium.ui.display.DisplayAndroid.DisplayAndroidObserver;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.UserData;
+import org.monyhar.content.browser.webcontents.WebContentsImpl;
+import org.monyhar.content.browser.webcontents.WebContentsImpl.UserDataFactory;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.display.DisplayAndroid;
+import org.monyhar.ui.display.DisplayAndroid.DisplayAndroidObserver;
 
 /**
  * Manages {@link WindowEventObserver} instances used for WebContents.

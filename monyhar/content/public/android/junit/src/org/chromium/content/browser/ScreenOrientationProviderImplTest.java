@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
@@ -14,9 +14,9 @@ import org.mockito.Mockito;
 import org.robolectric.Robolectric;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.device.mojom.ScreenOrientationLockType;
-import org.chromium.ui.base.ActivityWindowAndroid;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.device.mojom.ScreenOrientationLockType;
+import org.monyhar.ui.base.ActivityWindowAndroid;
 
 import java.lang.ref.WeakReference;
 

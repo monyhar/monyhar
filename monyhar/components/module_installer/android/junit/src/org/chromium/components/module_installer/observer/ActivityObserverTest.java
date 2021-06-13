@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.module_installer.observer;
+package org.monyhar.components.module_installer.observer;
 
 import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.doReturn;
@@ -19,9 +19,9 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.components.module_installer.engine.InstallEngine;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.components.module_installer.engine.InstallEngine;
 
 import java.util.ArrayList;
 import java.util.List;

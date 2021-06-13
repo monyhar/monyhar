@@ -217,7 +217,7 @@ void ContentSettingsAgentImpl::DidCommitProvisionalLoad(
 #if DCHECK_IS_ON()
   GURL url = frame->GetDocument().Url();
   // If we start failing this DCHECK, please makes sure we don't regress
-  // this bug: http://code.google.com/p/chromium/issues/detail?id=79304
+  // this bug: http://code.google.com/p/monyhar/issues/detail?id=79304
   DCHECK(frame->GetDocument().GetSecurityOrigin().ToString() == "null" ||
          !url.SchemeIs(url::kDataScheme));
 #endif

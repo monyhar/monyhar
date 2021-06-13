@@ -11,7 +11,7 @@
     android:paddingStart="@dimen/promo_compact_padding"
     android:paddingEnd="@dimen/promo_compact_padding" >
 
-    <org.chromium.components.browser_ui.widget.RadioButtonWithDescription
+    <org.monyhar.components.browser_ui.widget.RadioButtonWithDescription
         android:id="@+id/language_radio_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

@@ -31,7 +31,7 @@ TtsExtension.prototype = {
    * @private
    */
   SPEECH_SERVER_URL_: 'https://www.google.com/speech-api/v2/synthesize?' +
-      'enc=mpeg&client=chromium',
+      'enc=mpeg&client=monyhar',
 
   /**
    * A mapping from language and gender to voice name, hardcoded for now

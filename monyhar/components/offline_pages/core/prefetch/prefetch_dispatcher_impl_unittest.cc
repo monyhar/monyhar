@@ -553,7 +553,7 @@ TEST_F(PrefetchDispatcherTest,
 }
 
 TEST_F(PrefetchDispatcherTest, DispatcherReleasesBackgroundTask) {
-  PrefetchURL prefetch_url(kTestID, GURL("https://www.chromium.org"),
+  PrefetchURL prefetch_url(kTestID, GURL("https://www.monyhar.org"),
                            std::u16string());
   prefetch_dispatcher()->AddCandidatePrefetchURLs(
       kSuggestedArticlesNamespace, std::vector<PrefetchURL>(1, prefetch_url));
@@ -601,7 +601,7 @@ TEST_F(PrefetchDispatcherTest, DispatcherReleasesBackgroundTask) {
 }
 
 TEST_F(PrefetchDispatcherTest, RetryWithBackoffAfterFailedNetworkRequest) {
-  PrefetchURL prefetch_url(kTestID, GURL("https://www.chromium.org"),
+  PrefetchURL prefetch_url(kTestID, GURL("https://www.monyhar.org"),
                            std::u16string());
   prefetch_dispatcher()->AddCandidatePrefetchURLs(
       kSuggestedArticlesNamespace, std::vector<PrefetchURL>(1, prefetch_url));
@@ -611,7 +611,7 @@ TEST_F(PrefetchDispatcherTest, RetryWithBackoffAfterFailedNetworkRequest) {
   RunUntilIdle();
 
   // Trigger another request to make sure we have more work to do.
-  PrefetchURL prefetch_url2(kTestID, GURL("https://www.chromium.org/2"),
+  PrefetchURL prefetch_url2(kTestID, GURL("https://www.monyhar.org/2"),
                             std::u16string());
   prefetch_dispatcher()->AddCandidatePrefetchURLs(
       kSuggestedArticlesNamespace, std::vector<PrefetchURL>(1, prefetch_url2));
@@ -635,7 +635,7 @@ TEST_F(PrefetchDispatcherTest, RetryWithBackoffAfterFailedNetworkRequest) {
 }
 
 TEST_F(PrefetchDispatcherTest, RetryWithoutBackoffAfterFailedNetworkRequest) {
-  PrefetchURL prefetch_url(kTestID, GURL("https://www.chromium.org"),
+  PrefetchURL prefetch_url(kTestID, GURL("https://www.monyhar.org"),
                            std::u16string());
   prefetch_dispatcher()->AddCandidatePrefetchURLs(
       kSuggestedArticlesNamespace, std::vector<PrefetchURL>(1, prefetch_url));
@@ -645,7 +645,7 @@ TEST_F(PrefetchDispatcherTest, RetryWithoutBackoffAfterFailedNetworkRequest) {
   RunUntilIdle();
 
   // Trigger another request to make sure we have more work to do.
-  PrefetchURL prefetch_url2(kTestID, GURL("https://www.chromium.org/2"),
+  PrefetchURL prefetch_url2(kTestID, GURL("https://www.monyhar.org/2"),
                             std::u16string());
   prefetch_dispatcher()->AddCandidatePrefetchURLs(
       kSuggestedArticlesNamespace, std::vector<PrefetchURL>(1, prefetch_url2));
@@ -668,7 +668,7 @@ TEST_F(PrefetchDispatcherTest, RetryWithoutBackoffAfterFailedNetworkRequest) {
 }
 
 TEST_F(PrefetchDispatcherTest, SuspendAfterFailedNetworkRequest) {
-  PrefetchURL prefetch_url(kTestID, GURL("https://www.chromium.org"),
+  PrefetchURL prefetch_url(kTestID, GURL("https://www.monyhar.org"),
                            std::u16string());
   prefetch_dispatcher()->AddCandidatePrefetchURLs(
       kSuggestedArticlesNamespace, std::vector<PrefetchURL>(1, prefetch_url));
@@ -678,7 +678,7 @@ TEST_F(PrefetchDispatcherTest, SuspendAfterFailedNetworkRequest) {
   RunUntilIdle();
 
   // Trigger another request to make sure we have more work to do.
-  PrefetchURL prefetch_url2(kTestID, GURL("https://www.chromium.org/2"),
+  PrefetchURL prefetch_url2(kTestID, GURL("https://www.monyhar.org/2"),
                             std::u16string());
   prefetch_dispatcher()->AddCandidatePrefetchURLs(
       kSuggestedArticlesNamespace, std::vector<PrefetchURL>(1, prefetch_url2));
@@ -716,7 +716,7 @@ TEST_F(PrefetchDispatcherTest, SuspendAfterFailedNetworkRequest) {
 }
 
 TEST_F(PrefetchDispatcherTest, SuspendRemovedAfterNewBackgroundTask) {
-  PrefetchURL prefetch_url(kTestID, GURL("https://www.chromium.org"),
+  PrefetchURL prefetch_url(kTestID, GURL("https://www.monyhar.org"),
                            std::u16string());
   prefetch_dispatcher()->AddCandidatePrefetchURLs(
       kSuggestedArticlesNamespace, std::vector<PrefetchURL>(1, prefetch_url));
@@ -743,7 +743,7 @@ TEST_F(PrefetchDispatcherTest, SuspendRemovedAfterNewBackgroundTask) {
   EXPECT_EQ(nullptr, GetBackgroundTask());
 
   // Trigger another request to make sure we have more work to do.
-  PrefetchURL prefetch_url2(kTestID, GURL("https://www.chromium.org/2"),
+  PrefetchURL prefetch_url2(kTestID, GURL("https://www.monyhar.org/2"),
                             std::u16string());
   prefetch_dispatcher()->AddCandidatePrefetchURLs(
       kSuggestedArticlesNamespace, std::vector<PrefetchURL>(1, prefetch_url2));
@@ -825,7 +825,7 @@ TEST_F(PrefetchDispatcherTest, ThumbnailImageFetch_SeveralThumbnailDownloads) {
 }
 
 TEST_F(PrefetchDispatcherTest, FeedNoNetworkRequestsAfterNewURLs) {
-  const GURL kUrl("https://www.chromium.org");
+  const GURL kUrl("https://www.monyhar.org");
   suggestions_provider_->SetSuggestions({TestSuggestion1(kUrl)});
 
   PrefetchURL prefetch_url(kTestID, kUrl, std::u16string());

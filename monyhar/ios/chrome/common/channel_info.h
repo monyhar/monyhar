@@ -11,7 +11,7 @@ namespace version_info {
 enum class Channel;
 }
 
-// Returns a version string to be displayed in "About chromium" dialog.
+// Returns a version string to be displayed in "About monyhar" dialog.
 std::string GetVersionString();
 
 // Returns a human-readable modifier for the version string. For a branded

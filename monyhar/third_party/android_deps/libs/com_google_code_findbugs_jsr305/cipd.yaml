@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@3.0.2.cr0
-package: chromium/third_party/android_deps/libs/com_google_code_findbugs_jsr305
+package: monyhar/third_party/android_deps/libs/com_google_code_findbugs_jsr305
 description: "FindBugs-jsr305"
 data:
 - file: jsr305-3.0.2.jar

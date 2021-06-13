@@ -80,7 +80,7 @@ is a tool for understanding a test’s behavior over time.
 Originally designed for managing flaky tests, the dashboard shows a timeline
 view of the test’s behavior over time. The tool may be overwhelming at first,
 but
-[the documentation](https://dev.chromium.org/developers/testing/flakiness-dashboard)
+[the documentation](https://dev.monyhar.org/developers/testing/flakiness-dashboard)
 should help. Once you decide that a test is truly flaky, you can suppress it
 using the TestExpectations file, as described below.
 
@@ -102,9 +102,9 @@ results from try jobs, by using the command-tool
 1. First, upload a CL.
 2. Trigger try jobs by running `blink_tool.py rebaseline-cl`. This should
    trigger jobs on
-   [tryserver.blink](https://ci.chromium.org/p/chromium/g/tryserver.blink/builders).
+   [tryserver.blink](https://ci.monyhar.org/p/monyhar/g/tryserver.blink/builders).
    In addition, this will also trigger the CQ try builders that run blink web tests.
-   linux-rel, mac-rel and win10_chromium_x64_rel_ng.
+   linux-rel, mac-rel and win10_monyhar_x64_rel_ng.
    * Optionally one can choose to trigger only blink try bots alone.
    Run the tool with the option -
    `blink_tool.py rebaseline-cl --use-blink-try-bots-only`

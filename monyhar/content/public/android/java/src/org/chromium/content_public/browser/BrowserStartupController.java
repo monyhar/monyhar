@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.browser;
+package org.monyhar.content_public.browser;
 
-import org.chromium.base.library_loader.LibraryProcessType;
-import org.chromium.content.browser.BrowserStartupControllerImpl;
+import org.monyhar.base.library_loader.LibraryProcessType;
+import org.monyhar.content.browser.BrowserStartupControllerImpl;
 
 /**
  * This class controls how C++ browser main loop is started and ensures it happens only once.
@@ -107,7 +107,7 @@ public interface BrowserStartupController {
     /**
      * @return how Chrome is launched, either in minimal mode or as full browser, as
      * well as either cold start or warm start.
-     * See {@link org.chromium.content.browser.ServicificationStartupUma} for more details.
+     * See {@link org.monyhar.content.browser.ServicificationStartupUma} for more details.
      */
     int getStartupMode(boolean startMinimalBrowser);
 }

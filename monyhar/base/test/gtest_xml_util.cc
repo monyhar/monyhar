@@ -13,8 +13,8 @@
 #include "base/strings/stringprintf.h"
 #include "base/test/gtest_util.h"
 #include "base/test/launcher/test_launcher.h"
-#include "third_party/libxml/chromium/libxml_utils.h"
-#include "third_party/libxml/chromium/xml_reader.h"
+#include "third_party/libxml/monyhar/libxml_utils.h"
+#include "third_party/libxml/monyhar/xml_reader.h"
 
 namespace base {
 

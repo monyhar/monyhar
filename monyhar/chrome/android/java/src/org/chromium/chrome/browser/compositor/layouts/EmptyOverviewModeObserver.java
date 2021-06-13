@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.layouts;
+package org.monyhar.chrome.browser.compositor.layouts;
 
-import org.chromium.chrome.browser.compositor.layouts.OverviewModeBehavior.OverviewModeObserver;
+import org.monyhar.chrome.browser.compositor.layouts.OverviewModeBehavior.OverviewModeObserver;
 
 /**
  * An empty implementation of {@link OverviewModeObserver}.
  * DEPRECATED, please use {@link
- * org.chromium.chrome.browser.layouts.LayoutStateProvider.LayoutStateObserver} instead.
+ * org.monyhar.chrome.browser.layouts.LayoutStateProvider.LayoutStateObserver} instead.
  */
 @Deprecated
 public class EmptyOverviewModeObserver implements OverviewModeObserver {

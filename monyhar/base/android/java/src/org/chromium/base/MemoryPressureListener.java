@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base;
+package org.monyhar.base;
 
 import android.app.Activity;
 import android.content.ComponentCallbacks2;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.MainDex;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.memory.MemoryPressureCallback;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.MainDex;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.memory.MemoryPressureCallback;
 
 /**
  * This class is Java equivalent of base::MemoryPressureListener: it distributes pressure
@@ -31,27 +31,27 @@ public class MemoryPressureListener {
      * Sending an intent with this action to Chrome will cause it to issue a call to onLowMemory
      * thus simulating a low memory situations.
      */
-    private static final String ACTION_LOW_MEMORY = "org.chromium.base.ACTION_LOW_MEMORY";
+    private static final String ACTION_LOW_MEMORY = "org.monyhar.base.ACTION_LOW_MEMORY";
 
     /**
      * Sending an intent with this action to Chrome will cause it to issue a call to onTrimMemory
      * thus simulating a low memory situations.
      */
-    private static final String ACTION_TRIM_MEMORY = "org.chromium.base.ACTION_TRIM_MEMORY";
+    private static final String ACTION_TRIM_MEMORY = "org.monyhar.base.ACTION_TRIM_MEMORY";
 
     /**
      * Sending an intent with this action to Chrome will cause it to issue a call to onTrimMemory
      * with notification level TRIM_MEMORY_RUNNING_CRITICAL thus simulating a low memory situation
      */
     private static final String ACTION_TRIM_MEMORY_RUNNING_CRITICAL =
-            "org.chromium.base.ACTION_TRIM_MEMORY_RUNNING_CRITICAL";
+            "org.monyhar.base.ACTION_TRIM_MEMORY_RUNNING_CRITICAL";
 
     /**
      * Sending an intent with this action to Chrome will cause it to issue a call to onTrimMemory
      * with notification level TRIM_MEMORY_MODERATE thus simulating a low memory situation
      */
     private static final String ACTION_TRIM_MEMORY_MODERATE =
-            "org.chromium.base.ACTION_TRIM_MEMORY_MODERATE";
+            "org.monyhar.base.ACTION_TRIM_MEMORY_MODERATE";
 
     private static final ObserverList<MemoryPressureCallback> sCallbacks = new ObserverList<>();
 

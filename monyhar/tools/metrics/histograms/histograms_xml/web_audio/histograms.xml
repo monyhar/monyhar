@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of WebAudio histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -23,8 +23,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="WebAudio.AudioBuffer.Length" units="frames"
     expires_after="2021-08-22">
-  <owner>rtoy@chromium.org</owner>
-  <owner>hongchan@chromium.org</owner>
+  <owner>rtoy@monyhar.org</owner>
+  <owner>hongchan@monyhar.org</owner>
   <summary>
     The length (in frames) requested by createBuffer(). Recorded for every call
     to createBuffer(). Probably many (tens or hundreds) per page.
@@ -33,8 +33,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="WebAudio.AudioBuffer.NumberOfChannels" units="units"
     expires_after="2021-11-14">
-  <owner>rtoy@chromium.org</owner>
-  <owner>hongchan@chromium.org</owner>
+  <owner>rtoy@monyhar.org</owner>
+  <owner>hongchan@monyhar.org</owner>
   <summary>
     The number of channels requested by createBuffer(). Recorded for every call
     to createBuffer(). Probably many (tens or hundreds) per page.
@@ -43,8 +43,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="WebAudio.AudioBuffer.SampleRate384kHz" units="Hz"
     expires_after="2021-10-25">
-  <owner>rtoy@chromium.org</owner>
-  <owner>hongchan@chromium.org</owner>
+  <owner>rtoy@monyhar.org</owner>
+  <owner>hongchan@monyhar.org</owner>
   <summary>
     The sample rate (in Hz) requested by createBuffer(). Recorded for every call
     to createBuffer(). Probably many (tens or hundreds) per page.
@@ -53,8 +53,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="WebAudio.AudioBuffer.SampleRateRatio384kHz" units="units"
     expires_after="2021-07-06">
-  <owner>rtoy@chromium.org</owner>
-  <owner>hongchan@chromium.org</owner>
+  <owner>rtoy@monyhar.org</owner>
+  <owner>hongchan@monyhar.org</owner>
   <summary>
     The ratio of the buffer sample rate from createBuffer() to the context
     sample rate. This indicates if the buffer needs to be resampled. Recorded
@@ -64,8 +64,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="WebAudio.AudioContext.HardwareSampleRate" units="Hz"
     expires_after="2021-09-05">
-  <owner>rtoy@chromium.org</owner>
-  <owner>hongchan@chromium.org</owner>
+  <owner>rtoy@monyhar.org</owner>
+  <owner>hongchan@monyhar.org</owner>
   <summary>
     The hardware sample rate (in Hz) used by an AudioContext. Recorded for every
     WebAudio AudioContext that is created; probably only one or two per page.
@@ -74,8 +74,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="WebAudio.AudioContext.latencyHintCategory" units="units"
     expires_after="2021-10-31">
-  <owner>rtoy@chromium.org</owner>
-  <owner>hongchan@chromium.org</owner>
+  <owner>rtoy@monyhar.org</owner>
+  <owner>hongchan@monyhar.org</owner>
   <summary>
     If provided, the latencyHint option category of &quot;interactive&quot;,
     &quot;balanced&quot;, &quot;playback&quot;, or &quot;exact&quot;, in that
@@ -87,8 +87,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="WebAudio.AudioContext.latencyHintMilliSeconds" units="ms"
     expires_after="2021-10-31">
-  <owner>rtoy@chromium.org</owner>
-  <owner>hongchan@chromium.org</owner>
+  <owner>rtoy@monyhar.org</owner>
+  <owner>hongchan@monyhar.org</owner>
   <summary>
     If the latencyHint is provided and is a floating-point number, the value in
     milliseconds is recorded. This is recorded for every AudioContext that is
@@ -98,8 +98,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="WebAudio.AudioContext.MaxChannelsAvailable" units="units"
     expires_after="2022-01-06">
-  <owner>rtoy@chromium.org</owner>
-  <owner>hongchan@chromium.org</owner>
+  <owner>rtoy@monyhar.org</owner>
+  <owner>hongchan@monyhar.org</owner>
   <summary>
     The maximum number of (hardware) channels available in an AudioContext.
     Recorded for every WebAudio AudioContext that is created; probably only one
@@ -109,8 +109,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="WebAudio.AudioContextOptions.sampleRate" units="Hz"
     expires_after="2021-08-09">
-  <owner>rtoy@chromium.org</owner>
-  <owner>hongchan@chromium.org</owner>
+  <owner>rtoy@monyhar.org</owner>
+  <owner>hongchan@monyhar.org</owner>
   <summary>
     The sample rate requested by developer to be used as the sample rate when
     constructing an AudioContext with an AudioContextOptions dictionary. This is
@@ -120,8 +120,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="WebAudio.AudioContextOptions.sampleRateRatio" units="units"
     expires_after="2021-08-09">
-  <owner>rtoy@chromium.org</owner>
-  <owner>hongchan@chromium.org</owner>
+  <owner>rtoy@monyhar.org</owner>
+  <owner>hongchan@monyhar.org</owner>
   <summary>
     The ratio of the user-selected sample rate to the hardware sample rate of an
     AudioContext. The ratio is represented as a percentage. This is recorded for
@@ -131,8 +131,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="WebAudio.AudioDestination.CallbackBufferSize" units="units"
     expires_after="2021-09-05">
-  <owner>rtoy@chromium.org</owner>
-  <owner>hongchan@chromium.org</owner>
+  <owner>rtoy@monyhar.org</owner>
+  <owner>hongchan@monyhar.org</owner>
   <summary>
     The callback buffer size (in audio frames) for WebAudio rendering between
     the WebAudio graph and the audio device thread. This can differ from the
@@ -143,8 +143,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="WebAudio.AudioDestination.HardwareBufferSize" units="units"
     expires_after="2021-10-10">
-  <owner>rtoy@chromium.org</owner>
-  <owner>hongchan@chromium.org</owner>
+  <owner>rtoy@monyhar.org</owner>
+  <owner>hongchan@monyhar.org</owner>
   <summary>
     The buffer size (in audio frames) for WebAudio rendering recommended by the
     audio hardware. Recorded for every WebAudio AudioContext that is created.
@@ -153,9 +153,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="WebAudio.Autoplay" enum="WebAudioAutoplayStatus"
     expires_after="2021-08-09">
-  <owner>hongchan@chromium.org</owner>
-  <owner>media-dev@chromium.org</owner>
-  <owner>rtoy@chromium.org</owner>
+  <owner>hongchan@monyhar.org</owner>
+  <owner>media-dev@monyhar.org</owner>
+  <owner>rtoy@monyhar.org</owner>
   <summary>
     The autoplay status of an AudioContext when destroyed. This include all
     types of frames. In order to know the value only for main frames, the
@@ -165,9 +165,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="WebAudio.Autoplay.CrossOrigin" enum="WebAudioAutoplayStatus"
     expires_after="2021-10-04">
-  <owner>hongchan@chromium.org</owner>
-  <owner>media-dev@chromium.org</owner>
-  <owner>rtoy@chromium.org</owner>
+  <owner>hongchan@monyhar.org</owner>
+  <owner>media-dev@monyhar.org</owner>
+  <owner>rtoy@monyhar.org</owner>
   <summary>
     The autoplay status of an AudioContext when destroyed in a cross-origin
     frame.
@@ -176,9 +176,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="WebAudio.Autoplay.UnlockType"
     enum="WebAudioAutoplayUnlockType" expires_after="2021-06-01">
-  <owner>hongchan@chromium.org</owner>
-  <owner>media-dev@chromium.org</owner>
-  <owner>rtoy@chromium.org</owner>
+  <owner>hongchan@monyhar.org</owner>
+  <owner>media-dev@monyhar.org</owner>
+  <owner>rtoy@monyhar.org</owner>
   <summary>
     Records how an AudioContext was unlocked (if it was). This is recorded when
     the AudioContext is destroyed.
@@ -187,8 +187,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="WebAudio.BiquadFilter.Type" enum="BiquadFilterType"
     expires_after="2022-01-06">
-  <owner>rtoy@chromium.org</owner>
-  <owner>hongchan@chromium.org</owner>
+  <owner>rtoy@monyhar.org</owner>
+  <owner>hongchan@monyhar.org</owner>
   <summary>
     The type of the BiquadFilterNode. Recorded each time the type is set. This
     recorded once (to lowpass) when a biquad filter is created and also recorded
@@ -199,8 +199,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="WebAudio.ConvolverNode.ImpulseResponseLength" units="ms"
     expires_after="2021-10-17">
-  <owner>rtoy@chromium.org</owner>
-  <owner>hongchan@chromium.org</owner>
+  <owner>rtoy@monyhar.org</owner>
+  <owner>hongchan@monyhar.org</owner>
   <summary>
     The duration in millisec of impulse responses for a ConvolverNode. Recorded
     each time the impulse response is set for a ConvolverNode.
@@ -209,8 +209,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="WebAudio.IIRFilterNode.Order" units="units"
     expires_after="2022-01-06">
-  <owner>rtoy@chromium.org</owner>
-  <owner>hongchan@chromium.org</owner>
+  <owner>rtoy@monyhar.org</owner>
+  <owner>hongchan@monyhar.org</owner>
   <summary>
     The order of the WebAudio IIRFilterNode. The order is one less than the
     number of feedback coefficients used in the denominator of the IIRFilter
@@ -223,8 +223,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2021-01-12. See crbug.com/1165240.
   </obsolete>
-  <owner>rtoy@chromium.org</owner>
-  <owner>hongchan@chromium.org</owner>
+  <owner>rtoy@monyhar.org</owner>
+  <owner>hongchan@monyhar.org</owner>
   <summary>
     The number of channels specified for the offline audio context. Recorded for
     every offline context created. Probably only a few per page, but could be
@@ -237,8 +237,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2021-01-12. See crbug.com/1165240.
   </obsolete>
-  <owner>rtoy@chromium.org</owner>
-  <owner>hongchan@chromium.org</owner>
+  <owner>rtoy@monyhar.org</owner>
+  <owner>hongchan@monyhar.org</owner>
   <summary>
     The length (in frames) specified for the offline audio context. Recorded for
     every offline context created. Probably only a few per page, but could be
@@ -251,8 +251,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2021-01-12. See crbug.com/1165240.
   </obsolete>
-  <owner>rtoy@chromium.org</owner>
-  <owner>hongchan@chromium.org</owner>
+  <owner>rtoy@monyhar.org</owner>
+  <owner>hongchan@monyhar.org</owner>
   <summary>
     The sample rate (in Hz) specified for the offline audio context. Recorded
     for every offline context created. Probably only a few per page, but could
@@ -262,8 +262,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="WebAudio.PannerNode.PanningModel" enum="PanningModelType"
     expires_after="2022-01-06">
-  <owner>rtoy@chromium.org</owner>
-  <owner>hongchan@chromium.org</owner>
+  <owner>rtoy@monyhar.org</owner>
+  <owner>hongchan@monyhar.org</owner>
   <summary>
     The panning model for the PannerNode. Recorded once with the default value
     at creation and once again whenver it is changed. Once changed, it is
@@ -275,8 +275,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="WebAudio.PushPullFIFO.UnderflowGlitches" enum="Boolean"
     expires_after="2022-01-06">
-  <owner>rtoy@chromium.org</owner>
-  <owner>hongchan@chromium.org</owner>
+  <owner>rtoy@monyhar.org</owner>
+  <owner>hongchan@monyhar.org</owner>
   <summary>
     Captures if WebAudio caused glitches or not due to the FIFO underflow. It is
     recorded when PushPullFIFO is destroyed. (e.g. navigating away from the
@@ -286,8 +286,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="WebAudio.PushPullFIFO.UnderflowPercentage" units="%"
     expires_after="2022-01-06">
-  <owner>rtoy@chromium.org</owner>
-  <owner>hongchan@chromium.org</owner>
+  <owner>rtoy@monyhar.org</owner>
+  <owner>hongchan@monyhar.org</owner>
   <summary>
     Percentage of FIFO underflow happened due to the the missed deadline of
     WebAudio rendering engine. It is recorded when PushPullFIFO is destroyed.

@@ -30,7 +30,7 @@ namespace chrome {
 namespace android {
 
 namespace {
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.feedback
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.feedback
 // GENERATED_JAVA_PREFIX_TO_STRIP: CONNECTIVITY_CHECK_RESULT_
 enum ConnectivityCheckResult {
   CONNECTIVITY_CHECK_RESULT_UNKNOWN = 0,

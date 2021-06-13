@@ -18,4 +18,4 @@ NOTES:
   - The output JSON data will be printed out stdout.  It is likely that you
     will want to pipe the output of this program into a file.
 
-Dean McNamee <deanm@chromium.org>
+Dean McNamee <deanm@monyhar.org>

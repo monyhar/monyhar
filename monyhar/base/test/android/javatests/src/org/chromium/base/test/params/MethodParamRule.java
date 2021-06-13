@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.test.params;
+package org.monyhar.base.test.params;
 
 import org.junit.rules.MethodRule;
 import org.junit.runners.model.FrameworkMethod;
 import org.junit.runners.model.Statement;
 
-import org.chromium.base.test.params.ParameterAnnotations.UseMethodParameter;
+import org.monyhar.base.test.params.ParameterAnnotations.UseMethodParameter;
 
 import java.util.List;
 
 /**
  * Abstract base class for rules that are applied to test methods using
- * {@link org.chromium.base.test.params.ParameterAnnotations.UseMethodParameter method parameters}.
+ * {@link org.monyhar.base.test.params.ParameterAnnotations.UseMethodParameter method parameters}.
  */
 public abstract class MethodParamRule implements MethodRule {
     @Override

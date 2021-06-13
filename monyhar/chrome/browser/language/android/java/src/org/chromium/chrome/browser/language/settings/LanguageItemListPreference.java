@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.language.settings;
+package org.monyhar.chrome.browser.language.settings;
 
 import android.content.Context;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 
-import org.chromium.chrome.browser.preferences.PrefChangeRegistrar;
-import org.chromium.components.browser_ui.settings.ChromeBasePreference;
+import org.monyhar.chrome.browser.preferences.PrefChangeRegistrar;
+import org.monyhar.components.browser_ui.settings.ChromeBasePreference;
 
 import java.util.ArrayList;
 

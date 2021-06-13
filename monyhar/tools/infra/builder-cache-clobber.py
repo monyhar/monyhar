@@ -20,7 +20,7 @@ def main(raw_args):
   clobber_cache_utils.add_common_args(parser)
   parser.add_argument('--builder', required=True)
   parser.add_argument('--bucket', required=True)
-  parser.add_argument('--project', default='chromium')
+  parser.add_argument('--project', default='monyhar')
   parser.add_argument('--pool', default=None)
   parser.add_argument('--bot-id', default=None)
   args = parser.parse_args(raw_args)

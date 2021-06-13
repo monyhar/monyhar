@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@1.1-alpha-2.cr0
-package: chromium/third_party/android_deps/libs/classworlds_classworlds
+package: monyhar/third_party/android_deps/libs/classworlds_classworlds
 description: "classworlds"
 data:
 - file: classworlds-1.1-alpha-2.jar

@@ -17,7 +17,7 @@ class PhotoCapabilities {
   // Metering modes from Java side, equivalent to media.mojom::MeteringMode,
   // except NOT_SET, which is used to signify absence of setting configuration.
   // A Java counterpart will be generated for this enum.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.media
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.media
   enum class AndroidMeteringMode {
     NOT_SET,  // Update Java code if this value is not equal 0.
     NONE,
@@ -29,7 +29,7 @@ class PhotoCapabilities {
   };
 
   // A Java counterpart will be generated for this enum.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.media
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.media
   enum class MeteringModeType {
     FOCUS,
     EXPOSURE,
@@ -41,7 +41,7 @@ class PhotoCapabilities {
   // Fill light modes from Java side, equivalent to media.mojom::FillLightMode,
   // except NOT_SET, which is used to signify absence of setting configuration.
   // A Java counterpart will be generated for this enum.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.media
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.media
   enum class AndroidFillLightMode {
     NOT_SET,  // Update Java code when this value is not equal 0.
     OFF,
@@ -52,7 +52,7 @@ class PhotoCapabilities {
   };
 
   // A Java counterpart will be generated for this enum.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.media
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.media
   enum class PhotoCapabilityBool {
     SUPPORTS_TORCH,
     TORCH,
@@ -62,7 +62,7 @@ class PhotoCapabilities {
   };
 
   // A Java counterpart will be generated for this enum.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.media
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.media
   enum class PhotoCapabilityDouble {
     MIN_ZOOM,
     MAX_ZOOM,
@@ -88,7 +88,7 @@ class PhotoCapabilities {
   };
 
   // A Java counterpart will be generated for this enum.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.media
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.media
   enum class PhotoCapabilityInt {
     MIN_ISO,
     MAX_ISO,

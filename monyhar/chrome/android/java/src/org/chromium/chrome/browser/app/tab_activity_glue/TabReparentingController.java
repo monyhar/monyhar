@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.app.tab_activity_glue;
+package org.monyhar.chrome.browser.app.tab_activity_glue;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.AsyncTabParamsManager;
-import org.chromium.chrome.browser.tabmodel.TabList;
-import org.chromium.chrome.browser.tabmodel.TabModel;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabReparentingParams;
-import org.chromium.url.GURL;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.AsyncTabParamsManager;
+import org.monyhar.chrome.browser.tabmodel.TabList;
+import org.monyhar.chrome.browser.tabmodel.TabModel;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabReparentingParams;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.List;

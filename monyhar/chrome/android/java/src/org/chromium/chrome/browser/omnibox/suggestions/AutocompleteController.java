@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions;
+package org.monyhar.chrome.browser.omnibox.suggestions;
 
 import android.text.TextUtils;
 
@@ -10,15 +10,15 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.omnibox.voice.VoiceRecognitionHandler.VoiceResult;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.omnibox.AutocompleteMatch;
-import org.chromium.components.omnibox.AutocompleteResult;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.url.GURL;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.omnibox.voice.VoiceRecognitionHandler.VoiceResult;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.omnibox.AutocompleteMatch;
+import org.monyhar.components.omnibox.AutocompleteResult;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.url.GURL;
 
 import java.util.HashSet;
 import java.util.List;

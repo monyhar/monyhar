@@ -114,8 +114,8 @@ source_set("internal") {
 if (is_android) {
   android_library("internal_java") {
     sources = [
-      "android/java/src/org/chromium/components/download/DownloadCollectionBridge.java",
-      "android/java/src/org/chromium/components/download/DownloadDelegate.java",
+      "android/java/src/org/monyhar/components/download/DownloadCollectionBridge.java",
+      "android/java/src/org/monyhar/components/download/DownloadDelegate.java",
     ]
 
     deps = [
@@ -128,7 +128,7 @@ if (is_android) {
 
   generate_jni("jni_headers") {
     visibility = [ ":*" ]
-    sources = [ "android/java/src/org/chromium/components/download/DownloadCollectionBridge.java" ]
+    sources = [ "android/java/src/org/monyhar/components/download/DownloadCollectionBridge.java" ]
   }
 }
 

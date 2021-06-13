@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.sms;
+package org.monyhar.content.browser.sms;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -18,11 +18,11 @@ import com.google.android.gms.common.api.Status;
 import com.google.android.gms.tasks.Task;
 import com.google.android.gms.tasks.Tasks;
 
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNIAdditionalImport;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNIAdditionalImport;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.ui.base.WindowAndroid;
 
 @JNINamespace("content")
 @JNIAdditionalImport(Wrappers.class)

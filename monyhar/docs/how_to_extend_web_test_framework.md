@@ -129,9 +129,9 @@ Here are some of the functions that most likely need to be overridden.
     *   This tells the port where to look for all the and everything associated
         with them such as resources files.
     *   By default it returns the absolute path to the web tests directory.
-    *   If you are planning on running something in the chromium src/ directory,
+    *   If you are planning on running something in the monyhar src/ directory,
         there are helper functions to allow you to return a path relative to the
-        base of the chromium src directory.
+        base of the monyhar src directory.
 
 The rest of the functions can definitely be overridden for your projects
 specific needs, however these are the bare minimum needed to get it running.

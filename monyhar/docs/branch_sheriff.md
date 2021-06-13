@@ -56,7 +56,7 @@ Once you've done that, you'll be able to check out branches:
 ```
 
 To determine the appropriate branch number, you can either use
-[chromiumdash](#chromiumdash) or check [milestone.json][milestone-json]
+[monyhardash](#monyhardash) or check [milestone.json][milestone-json]
 directly.
 
 ### Findit
@@ -83,20 +83,20 @@ process.
 Note: there is little value in merging changes to the stable release
 branch when the next milestone's stable release is less than a week away
 (since there are usually no planned stable respins at that point).
-You can find release dates on [chromiumdash][chromiumdash-schedule].
+You can find release dates on [monyhardash][monyhardash-schedule].
 
 ### Landing changes
 
 When you need to land a change to a branch, you'll need to go through [the same
 merge approval process](./process/merge_request.md) as other cherry-picks (see
 exception for flaky tests above). You should feel free to ping the relevant
-release TPM as listed on [chromiumdash][chromiumdash-schedule].
+release TPM as listed on [monyhardash][monyhardash-schedule].
 
 ## Tools
 
 ### Sheriff-o-Matic
 
-Use the [branch SoM console][sheriff-o-matic] rather than the main chromium
+Use the [branch SoM console][sheriff-o-matic] rather than the main monyhar
 console.
 
 ### Consoles
@@ -104,23 +104,23 @@ console.
 Use the [beta][main-beta] and [stable][main-stable] branch consoles rather than
 the main console. A new console is created for each milestone. They are named
 "Chromium M## Console" and can be found under the
-[Chromium Project](https://ci.chromium.org/p/chromium).
+[Chromium Project](https://ci.monyhar.org/p/monyhar).
 
 ### Monorail issues (crbug)
 
 Refer and use the
-[Sheriff-Chrome-Release label](https://bugs.chromium.org/p/chromium/issues/list?q=label%3ASheriff-Chrome-Release)
+[Sheriff-Chrome-Release label](https://bugs.monyhar.org/p/monyhar/issues/list?q=label%3ASheriff-Chrome-Release)
 to find and tag issues that are of importance to Branch sheriffs.
 
 ### Chromiumdash
 
-[chromiumdash][chromiumdash] can help you determine the branch number for a
+[monyhardash][monyhardash] can help you determine the branch number for a
 particular milestone or channel, along with a host of other useful information:
 
-  * [Branches][chromiumdash-branches] lists the branches for each milestone.
-  * [Releases][chromiumdash-releases] lists the builds currently shipping to
+  * [Branches][monyhardash-branches] lists the branches for each milestone.
+  * [Releases][monyhardash-releases] lists the builds currently shipping to
     each channel, which can help map from channel to milestone or to branch.
-  * [Schedule][chromiumdash-schedule] lists the relevant dates for each
+  * [Schedule][monyhardash-schedule] lists the relevant dates for each
     milestone and includes the release TPMs responsible for each milestone by
     platform.
 
@@ -132,12 +132,12 @@ simply send a CL changing schedule at the bottom of the file.
 You can also use [Oncall Swapper](https://oncallswapper.corp.google.com/)
 to find the swap and submit the CL for you.
 
-[chromiumdash]: https://chromiumdash.appspot.com
-[chromiumdash-branches]: https://chromiumdash.appspot.com/branches
-[chromiumdash-releases]: https://chromiumdash.appspot.com/releases
-[chromiumdash-schedule]: https://chromiumdash.appspot.com/schedule
-[main-beta]: https://ci.chromium.org/p/chromium/g/main-m81/console
-[main-stable]: https://ci.chromium.org/p/chromium/g/main-m80/console
+[monyhardash]: https://monyhardash.appspot.com
+[monyhardash-branches]: https://monyhardash.appspot.com/branches
+[monyhardash-releases]: https://monyhardash.appspot.com/releases
+[monyhardash-schedule]: https://monyhardash.appspot.com/schedule
+[main-beta]: https://ci.monyhar.org/p/monyhar/g/main-m81/console
+[main-stable]: https://ci.monyhar.org/p/monyhar/g/main-m80/console
 [milestone-json]: https://goto.google.com/chrome-milestone-json
 [rotation-home]: https://goto.google.com/chrome-branch-sheriff-amer-west
 [rotation-config]: https://goto.google.com/chrome-branch-sheriff-amer-west-config

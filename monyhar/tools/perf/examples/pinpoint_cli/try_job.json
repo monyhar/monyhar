@@ -4,8 +4,8 @@
   "configuration": "android-go-perf",
   "benchmark": "system_health.memory_mobile",
   "extra_test_args": "--story-tag-filter emerging_market",
-  "patch": "https://chromium-review.googlesource.com/c/v8/v8/+/1278496",
-  "repository": "chromium",
+  "patch": "https://monyhar-review.googlesource.com/c/v8/v8/+/1278496",
+  "repository": "monyhar",
   "start_git_hash": "HEAD",
   "end_git_hash": "HEAD"
 }

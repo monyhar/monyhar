@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.screenshot;
+package org.monyhar.chrome.browser.share.screenshot;
 
 import static org.mockito.AdditionalAnswers.answerVoid;
 import static org.mockito.ArgumentMatchers.any;
@@ -26,15 +26,15 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.image_editor.ImageEditorDialogCoordinator;
-import org.chromium.chrome.browser.share.share_sheet.ChromeOptionShareCallback;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.modules.image_editor.ImageEditorModuleProvider;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.components.module_installer.engine.InstallListener;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.image_editor.ImageEditorDialogCoordinator;
+import org.monyhar.chrome.browser.share.share_sheet.ChromeOptionShareCallback;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.modules.image_editor.ImageEditorModuleProvider;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.components.module_installer.engine.InstallListener;
 
 // clang-format off
 /**

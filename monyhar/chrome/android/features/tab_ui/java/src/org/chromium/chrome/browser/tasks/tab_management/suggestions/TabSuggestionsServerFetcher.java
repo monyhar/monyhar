@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management.suggestions;
+package org.monyhar.chrome.browser.tasks.tab_management.suggestions;
 
 import androidx.annotation.VisibleForTesting;
 
@@ -10,14 +10,14 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import org.chromium.base.Callback;
-import org.chromium.base.Log;
-import org.chromium.chrome.browser.endpoint_fetcher.EndpointFetcher;
-import org.chromium.chrome.browser.endpoint_fetcher.EndpointResponse;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.signin.services.IdentityServicesProvider;
-import org.chromium.chrome.browser.tasks.tab_management.TabUiFeatureUtilities;
+import org.monyhar.base.Callback;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.browser.endpoint_fetcher.EndpointFetcher;
+import org.monyhar.chrome.browser.endpoint_fetcher.EndpointResponse;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.signin.services.IdentityServicesProvider;
+import org.monyhar.chrome.browser.tasks.tab_management.TabUiFeatureUtilities;
 
 import java.util.Collections;
 import java.util.LinkedList;

@@ -8,21 +8,21 @@ import("//build/config/locales.gni")
 import("//tools/grit/grit_rule.gni")
 
 android_library("java") {
-  resources_package = "org.chromium.components.webapps"
+  resources_package = "org.monyhar.components.webapps"
   sources = [
-    "java/src/org/chromium/components/webapps/AddToHomescreenCoordinator.java",
-    "java/src/org/chromium/components/webapps/AddToHomescreenDialogView.java",
-    "java/src/org/chromium/components/webapps/AddToHomescreenInstaller.java",
-    "java/src/org/chromium/components/webapps/AddToHomescreenMediator.java",
-    "java/src/org/chromium/components/webapps/AddToHomescreenProperties.java",
-    "java/src/org/chromium/components/webapps/AddToHomescreenViewBinder.java",
-    "java/src/org/chromium/components/webapps/AddToHomescreenViewDelegate.java",
-    "java/src/org/chromium/components/webapps/AppBannerManager.java",
-    "java/src/org/chromium/components/webapps/AppData.java",
-    "java/src/org/chromium/components/webapps/AppDetailsDelegate.java",
-    "java/src/org/chromium/components/webapps/WebappsIconUtils.java",
-    "java/src/org/chromium/components/webapps/WebappsUtils.java",
-    "java/src/org/chromium/components/webapps/installable/InstallableAmbientBadgeInfoBar.java",
+    "java/src/org/monyhar/components/webapps/AddToHomescreenCoordinator.java",
+    "java/src/org/monyhar/components/webapps/AddToHomescreenDialogView.java",
+    "java/src/org/monyhar/components/webapps/AddToHomescreenInstaller.java",
+    "java/src/org/monyhar/components/webapps/AddToHomescreenMediator.java",
+    "java/src/org/monyhar/components/webapps/AddToHomescreenProperties.java",
+    "java/src/org/monyhar/components/webapps/AddToHomescreenViewBinder.java",
+    "java/src/org/monyhar/components/webapps/AddToHomescreenViewDelegate.java",
+    "java/src/org/monyhar/components/webapps/AppBannerManager.java",
+    "java/src/org/monyhar/components/webapps/AppData.java",
+    "java/src/org/monyhar/components/webapps/AppDetailsDelegate.java",
+    "java/src/org/monyhar/components/webapps/WebappsIconUtils.java",
+    "java/src/org/monyhar/components/webapps/WebappsUtils.java",
+    "java/src/org/monyhar/components/webapps/installable/InstallableAmbientBadgeInfoBar.java",
   ]
   deps = [
     ":java_resources",
@@ -41,13 +41,13 @@ android_library("java") {
 
 generate_jni("webapps_jni_headers") {
   sources = [
-    "java/src/org/chromium/components/webapps/AddToHomescreenCoordinator.java",
-    "java/src/org/chromium/components/webapps/AddToHomescreenInstaller.java",
-    "java/src/org/chromium/components/webapps/AddToHomescreenMediator.java",
-    "java/src/org/chromium/components/webapps/AppBannerManager.java",
-    "java/src/org/chromium/components/webapps/WebappsIconUtils.java",
-    "java/src/org/chromium/components/webapps/WebappsUtils.java",
-    "java/src/org/chromium/components/webapps/installable/InstallableAmbientBadgeInfoBar.java",
+    "java/src/org/monyhar/components/webapps/AddToHomescreenCoordinator.java",
+    "java/src/org/monyhar/components/webapps/AddToHomescreenInstaller.java",
+    "java/src/org/monyhar/components/webapps/AddToHomescreenMediator.java",
+    "java/src/org/monyhar/components/webapps/AppBannerManager.java",
+    "java/src/org/monyhar/components/webapps/WebappsIconUtils.java",
+    "java/src/org/monyhar/components/webapps/WebappsUtils.java",
+    "java/src/org/monyhar/components/webapps/installable/InstallableAmbientBadgeInfoBar.java",
   ]
 }
 
@@ -130,9 +130,9 @@ java_library("junit") {
   bypass_platform_checks = true
   testonly = true
   sources = [
-    "java/src/org/chromium/components/webapps/AddToHomescreenDialogViewTest.java",
-    "java/src/org/chromium/components/webapps/AddToHomescreenMediatorTest.java",
-    "java/src/org/chromium/components/webapps/AddToHomescreenViewBinderTest.java",
+    "java/src/org/monyhar/components/webapps/AddToHomescreenDialogViewTest.java",
+    "java/src/org/monyhar/components/webapps/AddToHomescreenMediatorTest.java",
+    "java/src/org/monyhar/components/webapps/AddToHomescreenViewBinderTest.java",
   ]
   deps = [
     ":java",

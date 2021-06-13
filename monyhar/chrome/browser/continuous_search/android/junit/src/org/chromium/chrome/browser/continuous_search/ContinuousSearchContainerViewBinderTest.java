@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.continuous_search;
+package org.monyhar.chrome.browser.continuous_search;
 
 import static org.mockito.Mockito.inOrder;
 import static org.mockito.Mockito.mock;
@@ -14,9 +14,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InOrder;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
 
 /**
  * Test of {@link ContinuousSearchContainerViewBinder}.

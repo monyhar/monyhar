@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.jni_generator;
+package org.monyhar.jni_generator;
 
 import com.google.auto.service.AutoService;
 import com.google.common.collect.ImmutableSet;
@@ -19,11 +19,11 @@ import com.squareup.javapoet.ParameterizedTypeName;
 import com.squareup.javapoet.TypeName;
 import com.squareup.javapoet.TypeSpec;
 
-import org.chromium.base.JniStaticTestMocker;
-import org.chromium.base.NativeLibraryLoadedStatus;
-import org.chromium.base.annotations.CheckDiscard;
-import org.chromium.base.annotations.MainDex;
-import org.chromium.base.annotations.NativeMethods;
+import org.monyhar.base.JniStaticTestMocker;
+import org.monyhar.base.NativeLibraryLoadedStatus;
+import org.monyhar.base.annotations.CheckDiscard;
+import org.monyhar.base.annotations.MainDex;
+import org.monyhar.base.annotations.NativeMethods;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,7 +60,7 @@ import javax.tools.Diagnostic;
 @SupportedOptions({JniProcessor.SKIP_GEN_JNI_ARG})
 @AutoService(Processor.class)
 public class JniProcessor extends AbstractProcessor {
-    static final String SKIP_GEN_JNI_ARG = "org.chromium.chrome.skipGenJni";
+    static final String SKIP_GEN_JNI_ARG = "org.monyhar.chrome.skipGenJni";
     private static final Class<NativeMethods> JNI_STATIC_NATIVES_CLASS = NativeMethods.class;
     private static final Class<MainDex> MAIN_DEX_CLASS = MainDex.class;
     private static final Class<CheckDiscard> CHECK_DISCARD_CLASS = CheckDiscard.class;
@@ -69,7 +69,7 @@ public class JniProcessor extends AbstractProcessor {
     private static final String NATIVE_WRAPPER_CLASS_POSTFIX = "Jni";
 
     private static final ClassName GEN_JNI_CLASS_NAME =
-            ClassName.get("org.chromium.base.natives", "GEN_JNI");
+            ClassName.get("org.monyhar.base.natives", "GEN_JNI");
     private static final ClassName JNI_STATUS_CLASS_NAME =
             ClassName.get(NativeLibraryLoadedStatus.class);
 
@@ -223,8 +223,8 @@ public class JniProcessor extends AbstractProcessor {
      * Gets method name for methods inside of NativeClass
      */
     String getNativeMethodName(String packageName, String className, String oldMethodName) {
-        // e.g. org.chromium.base.Foo_Class.bar
-        // => org_chromium_base_Foo_1Class_bar()
+        // e.g. org.monyhar.base.Foo_Class.bar
+        // => org_monyhar_base_Foo_1Class_bar()
         return String.format("%s.%s.%s", packageName, className, oldMethodName)
                 .replaceAll("_", "_1")
                 .replaceAll("\\.", "_");

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omaha;
+package org.monyhar.chrome.browser.omaha;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -17,12 +17,12 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.test.util.AdvancedMockContext;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.omaha.MockRequestGenerator;
-import org.chromium.chrome.test.omaha.MockRequestGenerator.DeviceType;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.test.util.AdvancedMockContext;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.omaha.MockRequestGenerator;
+import org.monyhar.chrome.test.omaha.MockRequestGenerator.DeviceType;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

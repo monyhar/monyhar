@@ -5,7 +5,7 @@
 #ifndef FUCHSIA_RUNNERS_CAST_CAST_RUNNER_H_
 #define FUCHSIA_RUNNERS_CAST_CAST_RUNNER_H_
 
-#include <chromium/cast/cpp/fidl.h>
+#include <monyhar/cast/cpp/fidl.h>
 #include <fuchsia/camera3/cpp/fidl.h>
 #include <fuchsia/legacymetrics/cpp/fidl.h>
 #include <fuchsia/media/cpp/fidl.h>
@@ -87,7 +87,7 @@ class CastRunner : public fuchsia::sys::Runner,
   // Returns CreateContextParams for |app_config|. Returns nullopt if there is
   // no need to create an isolated context.
   absl::optional<fuchsia::web::CreateContextParams>
-  GetContextParamsForAppConfig(chromium::cast::ApplicationConfig* app_config);
+  GetContextParamsForAppConfig(monyhar::cast::ApplicationConfig* app_config);
 
   // Launches an isolated Context with the given |create_context_params| and
   // returns the newly created WebContentRunner.
@@ -159,7 +159,7 @@ class CastRunner : public fuchsia::sys::Runner,
   // Used to fetch & cache the list of CORS exempt HTTP headers to configure
   // each web.Context with.
   absl::optional<std::vector<std::vector<uint8_t>>> cors_exempt_headers_;
-  chromium::cast::CorsExemptHeaderProviderPtr cors_exempt_headers_provider_;
+  monyhar::cast::CorsExemptHeaderProviderPtr cors_exempt_headers_provider_;
   std::vector<base::OnceClosure> on_have_cors_exempt_headers_;
 
   // Reference to the service directory of the most recent FrameHost component.

@@ -3159,7 +3159,7 @@ void LayoutBlockFlow::MoveAllChildrenIncludingFloatsTo(
   // The float's metrics will likely all be wrong, but since toBlockFlow is
   // already marked for layout, this will get fixed before anything gets
   // displayed.
-  // See bug https://code.google.com/p/chromium/issues/detail?id=230907
+  // See bug https://code.google.com/p/monyhar/issues/detail?id=230907
   if (floating_objects_) {
     if (!to_block_flow->floating_objects_)
       to_block_flow->CreateFloatingObjects();

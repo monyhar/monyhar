@@ -14,7 +14,7 @@
 #include "net/log/test_net_log.h"
 #include "net/log/test_net_log_util.h"
 #include "net/proxy_resolution/configured_proxy_resolution_service.h"
-#include "net/quic/crypto/proof_source_chromium.h"
+#include "net/quic/crypto/proof_source_monyhar.h"
 #include "net/test/test_data_directory.h"
 #include "net/test/test_with_task_environment.h"
 #include "net/third_party/quiche/src/quic/test_tools/crypto_test_utils.h"

@@ -4,6 +4,6 @@
 # compatibility issues is required and review is restricted to the list of
 # people below.
 # The rules are documented at:
-# https://sites.google.com/a/chromium.org/dev/developers/how-tos/enterprise/adding-new-policies
+# https://sites.google.com/a/monyhar.org/dev/developers/how-tos/enterprise/adding-new-policies
 per-file policy_templates.json=set noparent
 per-file policy_templates.json=file://components/policy/resources/ENTERPRISE_POLICY_OWNERS

@@ -125,7 +125,7 @@ if (is_chromecast || is_nacl) {
 } else {
   # Other Chromium flavors get a custom implementation.
   # See the default value of "rtc_exclude_field_trial_default"
-  # in https://cs.chromium.org/chromium/src/third_party/webrtc/webrtc.gni
+  # in https://cs.monyhar.org/monyhar/src/third_party/webrtc/webrtc.gni
   # for how that is done.
   webrtc_public_deps += [ ":field_trial" ]
 }

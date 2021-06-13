@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.notifications;
+package org.monyhar.components.browser_ui.notifications;
 
 import android.annotation.TargetApi;
 import android.app.Notification;
@@ -13,7 +13,7 @@ import android.os.Build;
 
 import androidx.core.app.NotificationManagerCompat;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 import java.util.List;
 

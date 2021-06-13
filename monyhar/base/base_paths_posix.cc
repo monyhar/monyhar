@@ -100,7 +100,7 @@ bool PathProviderPosix(int key, FilePath* result) {
       }
 
       DLOG(ERROR) << "Couldn't find your source root.  "
-                  << "Try running from your chromium/src directory.";
+                  << "Try running from your monyhar/src directory.";
       return false;
     }
     case DIR_USER_DESKTOP:

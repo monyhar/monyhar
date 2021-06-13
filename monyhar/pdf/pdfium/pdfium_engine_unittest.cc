@@ -375,7 +375,7 @@ TEST_F(PDFiumEngineTest, GetDocumentMetadata) {
   EXPECT_EQ("Sample PDF Document Info", doc_metadata.title);
   EXPECT_EQ("Chromium Authors", doc_metadata.author);
   EXPECT_EQ("Testing", doc_metadata.subject);
-  EXPECT_EQ("testing,chromium,pdfium,document,info", doc_metadata.keywords);
+  EXPECT_EQ("testing,monyhar,pdfium,document,info", doc_metadata.keywords);
   EXPECT_EQ("Your Preferred Text Editor", doc_metadata.creator);
   EXPECT_EQ("fixup_pdf_template.py", doc_metadata.producer);
 

@@ -10,7 +10,7 @@ protect Chrome users against attackers, even when such attackers are able to
 bypass security logic in the renderer process.
 For other arguments for the "defense in depth" approach and why our
 threat model covers compromised renderers, please see
-[the Site Isolation motivation](https://www.chromium.org/Home/chromium-security/site-isolation#TOC-Motivation).
+[the Site Isolation motivation](https://www.monyhar.org/Home/monyhar-security/site-isolation#TOC-Motivation).
 
 In a compromised renderer, an attacker is able to execute
 arbitrary native (i.e. non-JavaScript) code within the renderer
@@ -33,7 +33,7 @@ Most of the other protections listed in this document implicitly assume that
 attacker-controlled execution contexts (e.g. HTML documents or service workers)
 are hosted in a separate renderer process from other, victim contexts.
 This separation is called
-[Site Isolation](https://www.chromium.org/Home/chromium-security/site-isolation)
+[Site Isolation](https://www.monyhar.org/Home/monyhar-security/site-isolation)
 and allows the privileged browser
 process to restrict what origins a renderer process is authorized to read or
 control.
@@ -80,7 +80,7 @@ CORS.
 Protection techniques:
 - Enforcing
   [Cross-Origin Read Blocking
-  (CORB)](https://www.chromium.org/Home/chromium-security/corb-for-developers)
+  (CORB)](https://www.monyhar.org/Home/monyhar-security/corb-for-developers)
   in the NetworkService process
   (i.e. before the HTTP response is handed out to the renderer process).
 - Only allowing the privileged browser process to create
@@ -223,7 +223,7 @@ Compromised renderers shouldn’t be able to:
 - Send or receive `BroadcastChannel` messages for another origin.
 - Spoof the `MessageSender.origin` seen by a recipient of a
   `chrome.runtime.sendMessage`
-  (see also [MessageSender documentation](https://developers.chrome.com/extensions/runtime#type-MessageSender) and [content script security guidance](https://groups.google.com/a/chromium.org/forum/#!topic/chromium-extensions/0ei-UCHNm34)).
+  (see also [MessageSender documentation](https://developers.chrome.com/extensions/runtime#type-MessageSender) and [content script security guidance](https://groups.google.com/a/monyhar.org/forum/#!topic/monyhar-extensions/0ei-UCHNm34)).
 
 Protection techniques:
 - Using `CanAccessDataForOrigin` to verify IPCs sent by a renderer process

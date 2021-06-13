@@ -43,13 +43,13 @@ class LongScreenshotsTabService
   // generation of the bitmap.
   //
   // When updating this, also update LongScreenshotsMetrics in
-  // /chrome/browser/share/android/java/src/org/chromium/chrome/browser/share/long_screenshots/LongScreenshotsMetrics.java
+  // /chrome/browser/share/android/java/src/org/monyhar/chrome/browser/share/long_screenshots/LongScreenshotsMetrics.java
   // and SharingLongScreenshotsEvent in enums.xml
   // and logCaptureResultStatus() in ./bitmap_generation/BitmapGenerator.java
   //
   // A Java counterpart will be generated for this enum.
   // GENERATED_JAVA_ENUM_PACKAGE: (
-  // org.chromium.chrome.browser.share.long_screenshots.bitmap_generation)
+  // org.monyhar.chrome.browser.share.long_screenshots.bitmap_generation)
   enum Status {
     kUnknown = 0,
     kOk = 1,

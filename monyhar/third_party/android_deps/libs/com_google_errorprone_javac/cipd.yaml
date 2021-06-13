@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@9+181-r4173-1.cr0
-package: chromium/third_party/android_deps/libs/com_google_errorprone_javac
+package: monyhar/third_party/android_deps/libs/com_google_errorprone_javac
 description: "Error Prone javac"
 data:
 - file: javac-9+181-r4173-1.jar

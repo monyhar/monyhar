@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar;
+package org.monyhar.chrome.browser.toolbar;
 
 import android.content.Context;
 
-import org.chromium.chrome.browser.layouts.LayoutStateProvider;
-import org.chromium.chrome.browser.layouts.LayoutType;
-import org.chromium.chrome.browser.tabmodel.IncognitoStateProvider;
-import org.chromium.chrome.browser.tabmodel.IncognitoStateProvider.IncognitoStateObserver;
-import org.chromium.chrome.browser.theme.ThemeColorProvider;
-import org.chromium.components.browser_ui.styles.ChromeColors;
+import org.monyhar.chrome.browser.layouts.LayoutStateProvider;
+import org.monyhar.chrome.browser.layouts.LayoutType;
+import org.monyhar.chrome.browser.tabmodel.IncognitoStateProvider;
+import org.monyhar.chrome.browser.tabmodel.IncognitoStateProvider.IncognitoStateObserver;
+import org.monyhar.chrome.browser.theme.ThemeColorProvider;
+import org.monyhar.components.browser_ui.styles.ChromeColors;
 
 /** A ThemeColorProvider for the app theme (incognito or standard theming). */
 public class AppThemeColorProvider extends ThemeColorProvider implements IncognitoStateObserver {

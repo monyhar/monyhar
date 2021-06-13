@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.test;
+package org.monyhar.base.test;
 
 import android.content.ComponentName;
 import android.content.Intent;
@@ -13,8 +13,8 @@ import android.support.test.uiautomator.UiDevice;
 
 import org.junit.runners.model.Statement;
 
-import org.chromium.base.Log;
-import org.chromium.base.StrictModeContext;
+import org.monyhar.base.Log;
+import org.monyhar.base.StrictModeContext;
 
 import java.io.File;
 
@@ -28,7 +28,7 @@ public class ScreenshotOnFailureStatement extends Statement {
     private static final String TAG = "ScreenshotOnFail";
 
     private static final String EXTRA_SCREENSHOT_FILE =
-            "org.chromium.base.test.ScreenshotOnFailureStatement.ScreenshotFile";
+            "org.monyhar.base.test.ScreenshotOnFailureStatement.ScreenshotFile";
 
     private final Statement mBase;
 

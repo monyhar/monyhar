@@ -12,7 +12,7 @@
 
 #include "base/macros.h"
 #include "base/memory/ref_counted.h"
-#include "components/update_client/net/network_chromium.h"
+#include "components/update_client/net/network_monyhar.h"
 #include "components/update_client/network.h"
 #include "services/network/public/mojom/url_response_head.mojom-forward.h"
 

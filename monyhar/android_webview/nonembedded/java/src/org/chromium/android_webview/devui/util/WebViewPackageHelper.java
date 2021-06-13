@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.devui.util;
+package org.monyhar.android_webview.devui.util;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

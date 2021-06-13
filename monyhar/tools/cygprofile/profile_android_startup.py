@@ -30,7 +30,7 @@ from devil.android import forwarder
 from devil.android.sdk import intent
 
 sys.path.append(os.path.join(_SRC_PATH, 'build', 'android'))
-import devil_chromium
+import devil_monyhar
 from pylib import constants
 
 sys.path.append(os.path.join(_SRC_PATH, 'tools', 'perf'))
@@ -524,7 +524,7 @@ def main():
   parser = CreateArgumentParser()
   args = parser.parse_args()
 
-  devil_chromium.Initialize(
+  devil_monyhar.Initialize(
       output_directory=args.output_directory, adb_path=args.adb_path)
 
   apk = apk_helper.ApkHelper(args.apk_path)

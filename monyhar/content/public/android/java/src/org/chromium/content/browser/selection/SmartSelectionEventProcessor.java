@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.selection;
+package org.monyhar.content.browser.selection;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -14,14 +14,14 @@ import android.view.textclassifier.TextClassifier;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Log;
-import org.chromium.base.annotations.VerifiesOnP;
-import org.chromium.content.browser.WindowEventObserver;
-import org.chromium.content.browser.WindowEventObserverManager;
-import org.chromium.content_public.browser.SelectionClient;
-import org.chromium.content_public.browser.SelectionEventProcessor;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.VerifiesOnP;
+import org.monyhar.content.browser.WindowEventObserver;
+import org.monyhar.content.browser.WindowEventObserverManager;
+import org.monyhar.content_public.browser.SelectionClient;
+import org.monyhar.content_public.browser.SelectionEventProcessor;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Logs various selection events and manages the lifecycle of a text classifier session.

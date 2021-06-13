@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
-import static org.chromium.chrome.browser.tasks.tab_management.MessageCardViewProperties.MESSAGE_TYPE;
-import static org.chromium.chrome.browser.tasks.tab_management.TabListModel.CardProperties.CARD_ALPHA;
-import static org.chromium.chrome.browser.tasks.tab_management.TabListModel.CardProperties.CARD_TYPE;
-import static org.chromium.chrome.browser.tasks.tab_management.TabListModel.CardProperties.ModelType.TAB;
-import static org.chromium.chrome.browser.tasks.tab_management.TabProperties.CLOSE_BUTTON_DESCRIPTION_STRING;
+import static org.monyhar.chrome.browser.tasks.tab_management.MessageCardViewProperties.MESSAGE_TYPE;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabListModel.CardProperties.CARD_ALPHA;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabListModel.CardProperties.CARD_TYPE;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabListModel.CardProperties.ModelType.TAB;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabProperties.CLOSE_BUTTON_DESCRIPTION_STRING;
 
 import android.app.Activity;
 import android.content.ComponentCallbacks;
@@ -33,55 +33,55 @@ import androidx.appcompat.content.res.AppCompatResources;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.ItemTouchHelper;
 
-import org.chromium.base.Callback;
-import org.chromium.base.Log;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.browser.compositor.layouts.content.TabContentManager;
-import org.chromium.chrome.browser.multiwindow.MultiWindowUtils;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.search_engines.TemplateUrlServiceFactory;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabCreationState;
-import org.chromium.chrome.browser.tab.TabLaunchType;
-import org.chromium.chrome.browser.tab.TabObserver;
-import org.chromium.chrome.browser.tab.TabSelectionType;
-import org.chromium.chrome.browser.tab.state.ShoppingPersistedTabData;
-import org.chromium.chrome.browser.tab.state.StorePersistedTabData;
-import org.chromium.chrome.browser.tabmodel.EmptyTabModelFilter;
-import org.chromium.chrome.browser.tabmodel.TabList;
-import org.chromium.chrome.browser.tabmodel.TabModel;
-import org.chromium.chrome.browser.tabmodel.TabModelFilter;
-import org.chromium.chrome.browser.tabmodel.TabModelObserver;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabModelUtils;
-import org.chromium.chrome.browser.tasks.pseudotab.PseudoTab;
-import org.chromium.chrome.browser.tasks.pseudotab.TabAttributeCache;
-import org.chromium.chrome.browser.tasks.tab_groups.EmptyTabGroupModelFilterObserver;
-import org.chromium.chrome.browser.tasks.tab_groups.TabGroupModelFilter;
-import org.chromium.chrome.browser.tasks.tab_groups.TabGroupUtils;
-import org.chromium.chrome.browser.tasks.tab_management.PriceMessageService.PriceTabData;
-import org.chromium.chrome.browser.tasks.tab_management.TabListCoordinator.TabListMode;
-import org.chromium.chrome.browser.tasks.tab_management.TabProperties.UiType;
-import org.chromium.chrome.browser.tasks.tab_management.TabSwitcherMediator.PriceWelcomeMessageController;
-import org.chromium.chrome.tab_ui.R;
-import org.chromium.components.browser_ui.widget.selectable_list.SelectionDelegate;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.components.feature_engagement.FeatureConstants;
-import org.chromium.components.search_engines.TemplateUrlService;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.NavigationController;
-import org.chromium.content_public.browser.NavigationHandle;
-import org.chromium.content_public.browser.NavigationHistory;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.ui.base.PageTransition;
-import org.chromium.ui.modelutil.ListObservable;
-import org.chromium.ui.modelutil.ListObservable.ListObserver;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.SimpleRecyclerViewAdapter;
-import org.chromium.url.GURL;
+import org.monyhar.base.Callback;
+import org.monyhar.base.Log;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.browser.compositor.layouts.content.TabContentManager;
+import org.monyhar.chrome.browser.multiwindow.MultiWindowUtils;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.search_engines.TemplateUrlServiceFactory;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabCreationState;
+import org.monyhar.chrome.browser.tab.TabLaunchType;
+import org.monyhar.chrome.browser.tab.TabObserver;
+import org.monyhar.chrome.browser.tab.TabSelectionType;
+import org.monyhar.chrome.browser.tab.state.ShoppingPersistedTabData;
+import org.monyhar.chrome.browser.tab.state.StorePersistedTabData;
+import org.monyhar.chrome.browser.tabmodel.EmptyTabModelFilter;
+import org.monyhar.chrome.browser.tabmodel.TabList;
+import org.monyhar.chrome.browser.tabmodel.TabModel;
+import org.monyhar.chrome.browser.tabmodel.TabModelFilter;
+import org.monyhar.chrome.browser.tabmodel.TabModelObserver;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabModelUtils;
+import org.monyhar.chrome.browser.tasks.pseudotab.PseudoTab;
+import org.monyhar.chrome.browser.tasks.pseudotab.TabAttributeCache;
+import org.monyhar.chrome.browser.tasks.tab_groups.EmptyTabGroupModelFilterObserver;
+import org.monyhar.chrome.browser.tasks.tab_groups.TabGroupModelFilter;
+import org.monyhar.chrome.browser.tasks.tab_groups.TabGroupUtils;
+import org.monyhar.chrome.browser.tasks.tab_management.PriceMessageService.PriceTabData;
+import org.monyhar.chrome.browser.tasks.tab_management.TabListCoordinator.TabListMode;
+import org.monyhar.chrome.browser.tasks.tab_management.TabProperties.UiType;
+import org.monyhar.chrome.browser.tasks.tab_management.TabSwitcherMediator.PriceWelcomeMessageController;
+import org.monyhar.chrome.tab_ui.R;
+import org.monyhar.components.browser_ui.widget.selectable_list.SelectionDelegate;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.components.feature_engagement.FeatureConstants;
+import org.monyhar.components.search_engines.TemplateUrlService;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.NavigationController;
+import org.monyhar.content_public.browser.NavigationHandle;
+import org.monyhar.content_public.browser.NavigationHistory;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.ui.base.PageTransition;
+import org.monyhar.ui.modelutil.ListObservable;
+import org.monyhar.ui.modelutil.ListObservable.ListObserver;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.SimpleRecyclerViewAdapter;
+import org.monyhar.url.GURL;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -1644,10 +1644,10 @@ class TabListMediator {
     }
 
     /**
-     * Inserts a special {@link org.chromium.ui.modelutil.MVCListAdapter.ListItem} at given index of
+     * Inserts a special {@link org.monyhar.ui.modelutil.MVCListAdapter.ListItem} at given index of
      * the current {@link TabListModel}.
      *
-     * @param index The index of the {@link org.chromium.ui.modelutil.MVCListAdapter.ListItem} to be
+     * @param index The index of the {@link org.monyhar.ui.modelutil.MVCListAdapter.ListItem} to be
      *              inserted.
      * @param uiType The view type the model will bind to.
      * @param model The model that will be bound to a view.
@@ -1657,13 +1657,13 @@ class TabListMediator {
     }
 
     /**
-     * Removes a special {@link @link org.chromium.ui.modelutil.MVCListAdapter.ListItem} that
+     * Removes a special {@link @link org.monyhar.ui.modelutil.MVCListAdapter.ListItem} that
      * has the given {@code uiType} and/or its {@link PropertyModel} has the given
      * {@code itemIdentifier} from the current {@link TabListModel}.
      *
      * @param uiType The uiType to match.
      * @param itemIdentifier The itemIdentifier to match. This can be obsoleted if the {@link @link
-     *         org.chromium.ui.modelutil.MVCListAdapter.ListItem} does not need additional
+     *         org.monyhar.ui.modelutil.MVCListAdapter.ListItem} does not need additional
      *         identifier.
      */
     void removeSpecialItemFromModel(@UiType int uiType, int itemIdentifier) {

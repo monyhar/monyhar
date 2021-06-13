@@ -552,7 +552,7 @@ class ProfileManager : public Profile::Delegate {
   // should likely be turned into DCHECK_CURRENTLY_ON(BrowserThread::UI) for
   // consistency with surrounding code in the same file but that wasn't trivial
   // enough to do as part of the mass refactor CL which introduced
-  // |thread_checker_|, ref. https://codereview.chromium.org/2907253003/#msg37.
+  // |thread_checker_|, ref. https://codereview.monyhar.org/2907253003/#msg37.
   THREAD_CHECKER(thread_checker_);
 };
 

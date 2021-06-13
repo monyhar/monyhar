@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_manager;
+package org.monyhar.chrome.browser.password_manager;
 
 import android.content.Context;
 import android.text.InputType;
@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.R;
+import org.monyhar.chrome.R;
 
 /**
  * The dialog content view for password generation dialog.

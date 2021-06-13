@@ -750,7 +750,7 @@ void ExtractUnderlines(NSAttributedString* string,
   // TODO(suzhe): We should send mouse events to the input method first if it
   // wants to handle them. But it won't work without implementing method
   // - (NSUInteger)characterIndexForPoint:.
-  // See: http://code.google.com/p/chromium/issues/detail?id=47141
+  // See: http://code.google.com/p/monyhar/issues/detail?id=47141
   // Instead of sending mouse events to the input method first, we now just
   // simply confirm all ongoing composition here.
   if (type == NSLeftMouseDown || type == NSRightMouseDown ||

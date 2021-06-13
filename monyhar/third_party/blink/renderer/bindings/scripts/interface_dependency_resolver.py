@@ -32,7 +32,7 @@ includes), reads the dependency files, and merges them to the IdlDefinitions
 for the main IDL file, producing an IdlDefinitions object representing the
 entire interface.
 
-Design doc: http://www.chromium.org/developers/design-documents/idl-compiler#TOC-Dependency-resolution
+Design doc: http://www.monyhar.org/developers/design-documents/idl-compiler#TOC-Dependency-resolution
 """
 
 import os.path

@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.app.tabmodel;
+package org.monyhar.chrome.browser.app.tabmodel;
 
-import org.chromium.chrome.browser.dependency_injection.ActivityScope;
-import org.chromium.chrome.browser.tabmodel.EmptyTabModelFilter;
-import org.chromium.chrome.browser.tabmodel.TabModel;
-import org.chromium.chrome.browser.tabmodel.TabModelFilter;
-import org.chromium.chrome.browser.tabmodel.TabModelFilterFactory;
-import org.chromium.chrome.browser.tasks.tab_management.TabManagementDelegate;
-import org.chromium.chrome.browser.tasks.tab_management.TabManagementModuleProvider;
-import org.chromium.chrome.browser.tasks.tab_management.TabUiFeatureUtilities;
+import org.monyhar.chrome.browser.dependency_injection.ActivityScope;
+import org.monyhar.chrome.browser.tabmodel.EmptyTabModelFilter;
+import org.monyhar.chrome.browser.tabmodel.TabModel;
+import org.monyhar.chrome.browser.tabmodel.TabModelFilter;
+import org.monyhar.chrome.browser.tabmodel.TabModelFilterFactory;
+import org.monyhar.chrome.browser.tasks.tab_management.TabManagementDelegate;
+import org.monyhar.chrome.browser.tasks.tab_management.TabManagementModuleProvider;
+import org.monyhar.chrome.browser.tasks.tab_management.TabUiFeatureUtilities;
 
 import javax.inject.Inject;
 

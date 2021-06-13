@@ -2,20 +2,20 @@
 # Copyright 2020 The Chromium Authors. All rights reserved.
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
-"""Script for updating the active milestones for the chromium project.
+"""Script for updating the active milestones for the monyhar project.
 
-To activate a new chromium branch, run the following from the root of
+To activate a new monyhar branch, run the following from the root of
 the repo (where MM is the milestone number and BBBB is the branch
 number):
 ```
-scripts/chromium/milestones.py activate --milestone MM --branch BBBB
+scripts/monyhar/milestones.py activate --milestone MM --branch BBBB
 ./main.star
 ```
 
-To deactivate a chromium branch, run the following from the root of the
+To deactivate a monyhar branch, run the following from the root of the
 repo (where MM is the milestone number):
 ```
-scripts/chromium/milestones.py deactivate --milestone MM
+scripts/monyhar/milestones.py deactivate --milestone MM
 ./main.star
 ```
 
@@ -36,7 +36,7 @@ INFRA_CONFIG_DIR = os.path.abspath(os.path.join(__file__, '..', '..'))
 def parse_args(args=None, *, parser_type=None):
   parser_type = parser_type or argparse.ArgumentParser
   parser = parser_type(
-      description='Update the active milestones for the chromium project')
+      description='Update the active milestones for the monyhar project')
   parser.set_defaults(func=None)
   parser.add_argument('--milestones-json',
                       help='Path to the milestones.json file',
@@ -96,7 +96,7 @@ def add_milestone(milestones, milestone, branch):
 
   milestones[milestone] = {
       'name': f'm{milestone}',
-      'project': f'chromium-m{milestone}',
+      'project': f'monyhar-m{milestone}',
       'ref': f'refs/branch-heads/{branch}',
   }
 

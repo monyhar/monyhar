@@ -6,7 +6,7 @@ import("//build/config/android/rules.gni")
 
 generate_jni("jni_headers") {
   sources = [
-    "java/src/org/chromium/chrome/browser/subscriptions/CommerceSubscription.java",
-    "java/src/org/chromium/chrome/browser/subscriptions/CommerceSubscriptionsStorage.java",
+    "java/src/org/monyhar/chrome/browser/subscriptions/CommerceSubscription.java",
+    "java/src/org/monyhar/chrome/browser/subscriptions/CommerceSubscriptionsStorage.java",
   ]
 }

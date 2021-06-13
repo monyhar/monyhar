@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.messages;
+package org.monyhar.components.messages;
 
 import android.animation.Animator;
 import android.annotation.SuppressLint;
@@ -12,9 +12,9 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.Callback;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * Coordinator to show / hide a banner message on given container and delegate events.

@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test.common.variations;
+package org.monyhar.android_webview.test.common.variations;
 
-import static org.chromium.android_webview.test.OnlyRunIn.ProcessMode.SINGLE_PROCESS;
+import static org.monyhar.android_webview.test.OnlyRunIn.ProcessMode.SINGLE_PROCESS;
 
 import androidx.test.filters.MediumTest;
 
@@ -14,13 +14,13 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.common.variations.VariationsUtils;
-import org.chromium.android_webview.proto.AwVariationsSeedOuterClass.AwVariationsSeed;
-import org.chromium.android_webview.test.AwJUnit4ClassRunner;
-import org.chromium.android_webview.test.OnlyRunIn;
-import org.chromium.android_webview.test.util.VariationsTestUtils;
-import org.chromium.base.test.util.Batch;
-import org.chromium.components.variations.firstrun.VariationsSeedFetcher.SeedInfo;
+import org.monyhar.android_webview.common.variations.VariationsUtils;
+import org.monyhar.android_webview.proto.AwVariationsSeedOuterClass.AwVariationsSeed;
+import org.monyhar.android_webview.test.AwJUnit4ClassRunner;
+import org.monyhar.android_webview.test.OnlyRunIn;
+import org.monyhar.android_webview.test.util.VariationsTestUtils;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.components.variations.firstrun.VariationsSeedFetcher.SeedInfo;
 
 import java.io.File;
 import java.io.FileOutputStream;

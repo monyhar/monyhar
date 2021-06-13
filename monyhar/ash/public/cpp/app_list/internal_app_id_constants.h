@@ -9,15 +9,15 @@ namespace ash {
 
 // App ids for internal apps, also used to identify the shelf item.
 // Generated as
-// crx_file::id_util::GenerateId("org.chromium.keyboardshortcuthelper").
+// crx_file::id_util::GenerateId("org.monyhar.keyboardshortcuthelper").
 constexpr char kInternalAppIdKeyboardShortcutViewer[] =
     "bhbpmkoclkgbgaefijcdgkfjghcmiijm";
 
-// Generated as crx_file::id_util::GenerateId("org.chromium.settings_ui").
+// Generated as crx_file::id_util::GenerateId("org.monyhar.settings_ui").
 constexpr char kInternalAppIdSettings[] = "dhnmfjegnohoakobpikffnelcemaplkm";
 
 // Generated as
-// crx_file::id_util::GenerateId("org.chromium.continuous_reading"). This is an
+// crx_file::id_util::GenerateId("org.monyhar.continuous_reading"). This is an
 // app placehoder for continuous reading in Chrome.
 constexpr char kInternalAppIdContinueReading[] =
     "fbokpncipdhffndmljhhidahghagaonp";

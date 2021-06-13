@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.dom_distiller;
+package org.monyhar.chrome.browser.dom_distiller;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.actionWithAssertions;
@@ -23,7 +23,7 @@ import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-import static org.chromium.chrome.browser.dom_distiller.ReaderModeManager.DOM_DISTILLER_SCHEME;
+import static org.monyhar.chrome.browser.dom_distiller.ReaderModeManager.DOM_DISTILLER_SCHEME;
 
 import android.app.Activity;
 import android.os.Build.VERSION_CODES;
@@ -45,40 +45,40 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.CriteriaNotSatisfiedException;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.base.test.util.Restriction;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.customtabs.CustomTabActivity;
-import org.chromium.chrome.browser.download.DownloadTestRule;
-import org.chromium.chrome.browser.download.DownloadTestRule.CustomMainActivityStart;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.infobar.ReaderModeInfoBar;
-import org.chromium.chrome.browser.offlinepages.OfflinePageUtils;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.util.ChromeTabUtils;
-import org.chromium.chrome.test.util.MenuUtils;
-import org.chromium.chrome.test.util.ViewUtils;
-import org.chromium.chrome.test.util.browser.Features.DisableFeatures;
-import org.chromium.chrome.test.util.browser.Features.EnableFeatures;
-import org.chromium.components.dom_distiller.core.DistilledPagePrefs;
-import org.chromium.components.dom_distiller.core.DomDistillerService;
-import org.chromium.components.dom_distiller.core.DomDistillerUrlUtils;
-import org.chromium.components.infobars.InfoBar;
-import org.chromium.content_public.browser.test.util.TestCallbackHelperContainer;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.net.NetworkChangeNotifier;
-import org.chromium.net.test.EmbeddedTestServer;
-import org.chromium.ui.test.util.UiRestriction;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.CriteriaNotSatisfiedException;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.base.test.util.Restriction;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivity;
+import org.monyhar.chrome.browser.download.DownloadTestRule;
+import org.monyhar.chrome.browser.download.DownloadTestRule.CustomMainActivityStart;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.infobar.ReaderModeInfoBar;
+import org.monyhar.chrome.browser.offlinepages.OfflinePageUtils;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.util.ChromeTabUtils;
+import org.monyhar.chrome.test.util.MenuUtils;
+import org.monyhar.chrome.test.util.ViewUtils;
+import org.monyhar.chrome.test.util.browser.Features.DisableFeatures;
+import org.monyhar.chrome.test.util.browser.Features.EnableFeatures;
+import org.monyhar.components.dom_distiller.core.DistilledPagePrefs;
+import org.monyhar.components.dom_distiller.core.DomDistillerService;
+import org.monyhar.components.dom_distiller.core.DomDistillerUrlUtils;
+import org.monyhar.components.infobars.InfoBar;
+import org.monyhar.content_public.browser.test.util.TestCallbackHelperContainer;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.net.NetworkChangeNotifier;
+import org.monyhar.net.test.EmbeddedTestServer;
+import org.monyhar.ui.test.util.UiRestriction;
 
 import java.util.Objects;
 import java.util.concurrent.TimeoutException;
@@ -198,7 +198,7 @@ public class ReaderModeTest implements CustomMainActivityStart {
     private void downloadAndOpenOfflinePage() {
         int callCount = mDownloadTestRule.getChromeDownloadCallCount();
         MenuUtils.invokeCustomMenuActionSync(InstrumentationRegistry.getInstrumentation(),
-                mDownloadTestRule.getActivity(), org.chromium.chrome.R.id.offline_page_id);
+                mDownloadTestRule.getActivity(), org.monyhar.chrome.R.id.offline_page_id);
         Assert.assertTrue(mDownloadTestRule.waitForChromeDownloadToFinish(callCount));
 
         // Stop the server and also disconnect the network.
@@ -303,21 +303,21 @@ public class ReaderModeTest implements CustomMainActivityStart {
         waitForBackgroundColor(tab, "\"rgb(255, 255, 255)\"");
 
         MenuUtils.invokeCustomMenuActionSync(InstrumentationRegistry.getInstrumentation(), activity,
-                org.chromium.chrome.R.id.reader_mode_prefs_id);
+                org.monyhar.chrome.R.id.reader_mode_prefs_id);
         onView(isRoot()).check(ViewUtils.waitForView(allOf(withText("Dark"), isDisplayed())));
         onView(withText("Dark")).perform(click());
         Espresso.pressBack();
         waitForBackgroundColor(tab, "\"rgb(32, 33, 36)\"");
 
         MenuUtils.invokeCustomMenuActionSync(InstrumentationRegistry.getInstrumentation(), activity,
-                org.chromium.chrome.R.id.reader_mode_prefs_id);
+                org.monyhar.chrome.R.id.reader_mode_prefs_id);
         onView(isRoot()).check(ViewUtils.waitForView(allOf(withText("Sepia"), isDisplayed())));
         onView(withText("Sepia")).perform(click());
         Espresso.pressBack();
         waitForBackgroundColor(tab, "\"rgb(254, 247, 224)\"");
 
         MenuUtils.invokeCustomMenuActionSync(InstrumentationRegistry.getInstrumentation(), activity,
-                org.chromium.chrome.R.id.reader_mode_prefs_id);
+                org.monyhar.chrome.R.id.reader_mode_prefs_id);
         onView(isRoot()).check(ViewUtils.waitForView(allOf(withText("Light"), isDisplayed())));
         onView(withText("Light")).perform(click());
         Espresso.pressBack();
@@ -330,7 +330,7 @@ public class ReaderModeTest implements CustomMainActivityStart {
         waitForFontSize(tab, "\"14px\"");
 
         MenuUtils.invokeCustomMenuActionSync(InstrumentationRegistry.getInstrumentation(), activity,
-                org.chromium.chrome.R.id.reader_mode_prefs_id);
+                org.monyhar.chrome.R.id.reader_mode_prefs_id);
         onView(isRoot()).check(ViewUtils.waitForView(allOf(withId(R.id.font_size), isDisplayed())));
         // Max is 200% font size.
         onView(withId(R.id.font_size))
@@ -340,7 +340,7 @@ public class ReaderModeTest implements CustomMainActivityStart {
         waitForFontSize(tab, "\"28px\"");
 
         MenuUtils.invokeCustomMenuActionSync(InstrumentationRegistry.getInstrumentation(), activity,
-                org.chromium.chrome.R.id.reader_mode_prefs_id);
+                org.monyhar.chrome.R.id.reader_mode_prefs_id);
         onView(isRoot()).check(ViewUtils.waitForView(allOf(withId(R.id.font_size), isDisplayed())));
         // Min is 50% font size.
         onView(withId(R.id.font_size))

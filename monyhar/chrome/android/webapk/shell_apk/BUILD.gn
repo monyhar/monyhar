@@ -18,8 +18,8 @@ h2o_junit_manifest_target_name = "h2o_j_unit_manifest_target"
 # Stamped out copy of the runtime-library, used for fail-safe code in when using an
 # old copy of the runtime library.
 android_library("compiled_in_runtime_library_java") {
-  chromium_code = false
-  sources = [ "src/org/chromium/webapk/lib/runtime_library/IWebApkApi.java" ]
+  monyhar_code = false
+  sources = [ "src/org/monyhar/webapk/lib/runtime_library/IWebApkApi.java" ]
 }
 
 mustache_pass("generate_old_style_manifest_for_upload") {
@@ -52,27 +52,27 @@ template("webapk_java") {
                            ])
 
     sources = [
-      "src/org/chromium/webapk/shell_apk/ChooseHostBrowserDialog.java",
-      "src/org/chromium/webapk/shell_apk/DexLoader.java",
-      "src/org/chromium/webapk/shell_apk/HostBrowserClassLoader.java",
-      "src/org/chromium/webapk/shell_apk/HostBrowserLauncher.java",
-      "src/org/chromium/webapk/shell_apk/HostBrowserLauncherParams.java",
-      "src/org/chromium/webapk/shell_apk/HostBrowserUtils.java",
-      "src/org/chromium/webapk/shell_apk/IdentityService.java",
-      "src/org/chromium/webapk/shell_apk/InstallHostBrowserDialog.java",
-      "src/org/chromium/webapk/shell_apk/LaunchHostBrowserSelector.java",
-      "src/org/chromium/webapk/shell_apk/ManageDataLauncherActivity.java",
-      "src/org/chromium/webapk/shell_apk/TransparentLauncherActivity.java",
-      "src/org/chromium/webapk/shell_apk/WebApkSharedPreferences.java",
-      "src/org/chromium/webapk/shell_apk/WebApkUtils.java",
-      "src/org/chromium/webapk/shell_apk/h2o/H2OLauncher.java",
-      "src/org/chromium/webapk/shell_apk/h2o/H2OMainActivity.java",
-      "src/org/chromium/webapk/shell_apk/h2o/H2OOpaqueMainActivity.java",
-      "src/org/chromium/webapk/shell_apk/h2o/H2OTransparentLauncherActivity.java",
-      "src/org/chromium/webapk/shell_apk/h2o/LaunchTrigger.java",
-      "src/org/chromium/webapk/shell_apk/h2o/SplashActivity.java",
-      "src/org/chromium/webapk/shell_apk/h2o/SplashContentProvider.java",
-      "src/org/chromium/webapk/shell_apk/h2o/SplashUtils.java",
+      "src/org/monyhar/webapk/shell_apk/ChooseHostBrowserDialog.java",
+      "src/org/monyhar/webapk/shell_apk/DexLoader.java",
+      "src/org/monyhar/webapk/shell_apk/HostBrowserClassLoader.java",
+      "src/org/monyhar/webapk/shell_apk/HostBrowserLauncher.java",
+      "src/org/monyhar/webapk/shell_apk/HostBrowserLauncherParams.java",
+      "src/org/monyhar/webapk/shell_apk/HostBrowserUtils.java",
+      "src/org/monyhar/webapk/shell_apk/IdentityService.java",
+      "src/org/monyhar/webapk/shell_apk/InstallHostBrowserDialog.java",
+      "src/org/monyhar/webapk/shell_apk/LaunchHostBrowserSelector.java",
+      "src/org/monyhar/webapk/shell_apk/ManageDataLauncherActivity.java",
+      "src/org/monyhar/webapk/shell_apk/TransparentLauncherActivity.java",
+      "src/org/monyhar/webapk/shell_apk/WebApkSharedPreferences.java",
+      "src/org/monyhar/webapk/shell_apk/WebApkUtils.java",
+      "src/org/monyhar/webapk/shell_apk/h2o/H2OLauncher.java",
+      "src/org/monyhar/webapk/shell_apk/h2o/H2OMainActivity.java",
+      "src/org/monyhar/webapk/shell_apk/h2o/H2OOpaqueMainActivity.java",
+      "src/org/monyhar/webapk/shell_apk/h2o/H2OTransparentLauncherActivity.java",
+      "src/org/monyhar/webapk/shell_apk/h2o/LaunchTrigger.java",
+      "src/org/monyhar/webapk/shell_apk/h2o/SplashActivity.java",
+      "src/org/monyhar/webapk/shell_apk/h2o/SplashContentProvider.java",
+      "src/org/monyhar/webapk/shell_apk/h2o/SplashUtils.java",
     ]
     deps += [
       "//chrome/android/webapk/libs/common:common_java",
@@ -88,8 +88,8 @@ template("webapk_with_service_java") {
     forward_variables_from(invoker, [ "deps" ])
 
     sources = [
-      "src/org/chromium/webapk/shell_apk/WebApkServiceFactory.java",
-      "src/org/chromium/webapk/shell_apk/WebApkServiceImplWrapper.java",
+      "src/org/monyhar/webapk/shell_apk/WebApkServiceFactory.java",
+      "src/org/monyhar/webapk/shell_apk/WebApkServiceImplWrapper.java",
     ]
     deps += [ ":compiled_in_runtime_library_java" ]
   }
@@ -237,7 +237,7 @@ template("webapk_tmpl") {
   }
 
   webapk_java(_java_without_services_target_name) {
-    resources_package = "org.chromium.webapk.shell_apk"
+    resources_package = "org.monyhar.webapk.shell_apk"
     deps = [
       ":$_manifest_target_name",
       ":$_resources_target_name",
@@ -275,8 +275,8 @@ template("webapk_tmpl") {
       proguard_configs = [
         "//chrome/android/webapk/shell_apk/proguard.flags",
         "//chrome/android/proguard/main.flags",
-        "//base/android/proguard/chromium_apk.flags",
-        "//base/android/proguard/chromium_code.flags",
+        "//base/android/proguard/monyhar_apk.flags",
+        "//base/android/proguard/monyhar_code.flags",
       ]
     }
   }
@@ -298,14 +298,14 @@ webapk_tmpl("webapk") {
   config_file = "manifest/bound_manifest_config.json"
   manifest_to_upload_dep = ":generate_old_style_manifest_for_upload"
   apk_name = "WebApk"
-  apk_package_name = "org.chromium.webapk"
+  apk_package_name = "org.monyhar.webapk"
 }
 
 webapk_tmpl("maps_go_webapk") {
   config_file = "manifest/maps_go_manifest_config.json"
   manifest_to_upload_dep = ":generate_old_style_manifest_for_upload"
   apk_name = "MapsWebApk"
-  apk_package_name = "org.chromium.maps_go_webapk"
+  apk_package_name = "org.monyhar.maps_go_webapk"
 }
 
 webapk_tmpl("uiautomator_maps_go_webapk") {
@@ -314,21 +314,21 @@ webapk_tmpl("uiautomator_maps_go_webapk") {
   manifest_to_upload_dep = ":generate_old_style_manifest_for_upload"
   apk_name = "JavatestsMapsWebApk"
   delta_config_file = "manifest/javatest_maps_go_manifest_config_delta.json"
-  apk_package_name = "org.chromium.test.maps_go_webapk"
+  apk_package_name = "org.monyhar.test.maps_go_webapk"
 }
 
 webapk_tmpl("unbound_webapk") {
   config_file = "manifest/unbound_manifest_config.json"
   manifest_to_upload_dep = ":generate_old_style_manifest_for_upload"
   apk_name = "UnboundWebApk"
-  apk_package_name = "org.chromium.arbitrarypackage"
+  apk_package_name = "org.monyhar.arbitrarypackage"
 }
 
 webapk_tmpl("new_splash_webapk") {
   config_file = "manifest/bound_manifest_config.json"
   manifest_to_upload_dep = ":generate_new_style_manifest_for_upload"
   apk_name = "NewSplashWebApk"
-  apk_package_name = "org.chromium.webapk.new_splash"
+  apk_package_name = "org.monyhar.webapk.new_splash"
 }
 
 # Used by javatests
@@ -338,7 +338,7 @@ webapk_tmpl("javatests_webapk") {
   manifest_to_upload_dep = ":generate_new_style_manifest_for_upload"
   delta_config_file = "manifest/javatest_manifest_config_delta.json"
   apk_name = "JavatestsWebApk"
-  apk_package_name = "org.chromium.webapk.test"
+  apk_package_name = "org.monyhar.webapk.test"
 }
 
 # Used by webapk_shell_apk_h2o_junit_tests
@@ -346,7 +346,7 @@ webapk_tmpl("h2o_j_unit_webapk") {
   config_file = "manifest/bound_manifest_config.json"
   manifest_to_upload_dep = ":generate_new_style_manifest_for_upload"
   apk_name = "H2OJUnitWebApk"
-  apk_package_name = "org.chromium.webapk.h2o.junit_webapk"
+  apk_package_name = "org.monyhar.webapk.h2o.junit_webapk"
   manifest_output = h2o_junit_manifest_output
   manifest_target_name = h2o_junit_manifest_target_name
 }
@@ -354,8 +354,8 @@ webapk_tmpl("h2o_j_unit_webapk") {
 android_library("shell_apk_javatests") {
   testonly = true
   sources = [
-    "javatests/src/org/chromium/webapk/shell_apk/DexLoaderTest.java",
-    "javatests/src/org/chromium/webapk/shell_apk/h2o/SplashUtilsTest.java",
+    "javatests/src/org/monyhar/webapk/shell_apk/DexLoaderTest.java",
+    "javatests/src/org/monyhar/webapk/shell_apk/h2o/SplashUtilsTest.java",
   ]
   deps = [
     ":new_splash_webapk_generated_webapk_java",
@@ -372,13 +372,13 @@ android_library("shell_apk_javatests") {
 
 junit_binary("webapk_shell_apk_junit_tests") {
   sources = [
-    "junit/src/org/chromium/webapk/shell_apk/HostBrowserClassLoaderTest.java",
-    "junit/src/org/chromium/webapk/shell_apk/HostBrowserLauncherParamsTest.java",
-    "junit/src/org/chromium/webapk/shell_apk/HostBrowserUtilsTest.java",
-    "junit/src/org/chromium/webapk/shell_apk/MainActivityTest.java",
-    "junit/src/org/chromium/webapk/shell_apk/TestBrowserInstaller.java",
-    "junit/src/org/chromium/webapk/shell_apk/WebApkServiceImplWrapperTest.java",
-    "junit/src/org/chromium/webapk/shell_apk/WebApkUtilsTest.java",
+    "junit/src/org/monyhar/webapk/shell_apk/HostBrowserClassLoaderTest.java",
+    "junit/src/org/monyhar/webapk/shell_apk/HostBrowserLauncherParamsTest.java",
+    "junit/src/org/monyhar/webapk/shell_apk/HostBrowserUtilsTest.java",
+    "junit/src/org/monyhar/webapk/shell_apk/MainActivityTest.java",
+    "junit/src/org/monyhar/webapk/shell_apk/TestBrowserInstaller.java",
+    "junit/src/org/monyhar/webapk/shell_apk/WebApkServiceImplWrapperTest.java",
+    "junit/src/org/monyhar/webapk/shell_apk/WebApkUtilsTest.java",
   ]
   deps = [
     ":compiled_in_runtime_library_java",
@@ -394,10 +394,10 @@ junit_binary("webapk_shell_apk_junit_tests") {
 
 junit_binary("webapk_shell_apk_h2o_junit_tests") {
   sources = [
-    "junit/src/org/chromium/webapk/shell_apk/CustomAndroidOsShadowAsyncTask.java",
-    "junit/src/org/chromium/webapk/shell_apk/TestBrowserInstaller.java",
-    "junit/src/org/chromium/webapk/shell_apk/h2o/LaunchTest.java",
-    "junit/src/org/chromium/webapk/shell_apk/h2o/SplashActivityTest.java",
+    "junit/src/org/monyhar/webapk/shell_apk/CustomAndroidOsShadowAsyncTask.java",
+    "junit/src/org/monyhar/webapk/shell_apk/TestBrowserInstaller.java",
+    "junit/src/org/monyhar/webapk/shell_apk/h2o/LaunchTest.java",
+    "junit/src/org/monyhar/webapk/shell_apk/h2o/SplashActivityTest.java",
   ]
   deps = [
     ":${h2o_junit_manifest_target_name}",

@@ -723,7 +723,7 @@ void PCScanTask::ScanPartitions() {
                         (scan_area.end - scan_area.begin) * sizeof(uintptr_t));
     // The bitmap is (a) always guaranteed to exist and (b) the same for all
     // objects in a given slot span.
-    // TODO(chromium:1129751): Check mutator bitmap as well if performance
+    // TODO(monyhar:1129751): Check mutator bitmap as well if performance
     // allows.
     auto* bitmap = QuarantineBitmapFromPointer(
         QuarantineBitmapType::kScanner, pcscan_epoch_,

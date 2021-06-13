@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Image histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -32,8 +32,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="ImageAnnotationService.AccessibilityV1.CacheHit"
     enum="BooleanCacheHit" expires_after="2020-03-31">
-  <owner>amoylan@chromium.org</owner>
-  <owner>martis@chromium.org</owner>
+  <owner>amoylan@monyhar.org</owner>
+  <owner>martis@monyhar.org</owner>
   <summary>
     For each image processed by the image annotation service, records whether or
     not results for the image already existed in the client-side cache. A hit
@@ -43,9 +43,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="ImageAnnotationService.AccessibilityV1.ClientResult"
     enum="ImageAnnotationServiceClientResult" expires_after="2021-10-10">
-  <owner>dmazzoni@chromium.org</owner>
-  <owner>amoylan@chromium.org</owner>
-  <owner>martis@chromium.org</owner>
+  <owner>dmazzoni@monyhar.org</owner>
+  <owner>amoylan@monyhar.org</owner>
+  <owner>martis@monyhar.org</owner>
   <summary>
     For each request made by a client feature to the image annotation service,
     reports the final status of the service response.
@@ -56,8 +56,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     units="%" expires_after="2020-03-31">
 <!-- Name completed by histogram_suffixes name="ImageAnnotationServiceAnnotationType" -->
 
-  <owner>amoylan@chromium.org</owner>
-  <owner>martis@chromium.org</owner>
+  <owner>amoylan@monyhar.org</owner>
+  <owner>martis@monyhar.org</owner>
   <summary>
     For each annotation of the given type returned by the image annotation
     server, records the confidence (as a percentage) produced by the ML model
@@ -67,8 +67,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="ImageAnnotationService.AccessibilityV1.DescType"
     enum="ImageAnnotationServiceDescType" expires_after="2020-03-31">
-  <owner>amoylan@chromium.org</owner>
-  <owner>martis@chromium.org</owner>
+  <owner>amoylan@monyhar.org</owner>
+  <owner>martis@monyhar.org</owner>
   <summary>
     For each annotation backend run by the image annotation server, records the
     gRPC status reported.
@@ -79,8 +79,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="BooleanEmpty" expires_after="2020-03-31">
 <!-- Name completed by histogram_suffixes name="ImageAnnotationServiceAnnotationType" -->
 
-  <owner>amoylan@chromium.org</owner>
-  <owner>martis@chromium.org</owner>
+  <owner>amoylan@monyhar.org</owner>
+  <owner>martis@monyhar.org</owner>
   <summary>
     For each annotation of the given type returned by the image annotation
     server, records whether or not the text of the annotation was empty. This is
@@ -91,8 +91,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="ImageAnnotationService.AccessibilityV1.EncodedJpegSizeKB"
     units="KB" expires_after="2020-03-31">
-  <owner>amoylan@chromium.org</owner>
-  <owner>martis@chromium.org</owner>
+  <owner>amoylan@monyhar.org</owner>
+  <owner>martis@monyhar.org</owner>
   <summary>
     For each image sent from a client feature to the image annotation service,
     reports the image's final size (in kilobytes) after resizing and reencoding.
@@ -101,8 +101,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="ImageAnnotationService.AccessibilityV1.EngineKnown"
     enum="BooleanKnown" expires_after="2020-03-31">
-  <owner>amoylan@chromium.org</owner>
-  <owner>martis@chromium.org</owner>
+  <owner>amoylan@monyhar.org</owner>
+  <owner>martis@monyhar.org</owner>
   <summary>
     For each annotation backend run by the image annotation server, records
     whether or not the backend is recognised by this version of Chrome.
@@ -112,8 +112,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="ImageAnnotationService.AccessibilityV1.ImageRequestIncludesDesc"
     enum="BooleanIncluded" expires_after="2020-03-31">
-  <owner>amoylan@chromium.org</owner>
-  <owner>martis@chromium.org</owner>
+  <owner>amoylan@monyhar.org</owner>
+  <owner>martis@monyhar.org</owner>
   <summary>
     For each image request sent to the image annotation server, records whether
     or not the description backend is included among the requested backends.
@@ -126,9 +126,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="ImageAnnotationService.AccessibilityV1.JsonParseSuccess"
     enum="BooleanSuccess" expires_after="2020-10-31">
-  <owner>dmazzoni@chromium.org</owner>
-  <owner>amoylan@chromium.org</owner>
-  <owner>martis@chromium.org</owner>
+  <owner>dmazzoni@monyhar.org</owner>
+  <owner>amoylan@monyhar.org</owner>
+  <owner>martis@monyhar.org</owner>
   <summary>
     For each non-empty response sent from the image annotation server, records
     whether or not JSON data were successfully parsed from the response body.
@@ -137,8 +137,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="ImageAnnotationService.AccessibilityV1.PixelFetchSuccess"
     enum="BooleanSuccess" expires_after="2020-03-31">
-  <owner>amoylan@chromium.org</owner>
-  <owner>martis@chromium.org</owner>
+  <owner>amoylan@monyhar.org</owner>
+  <owner>martis@monyhar.org</owner>
   <summary>
     For each pixel fetch request sent from the image annotation service to a
     client feature, records whether or not encoded pixel data were successfully
@@ -148,8 +148,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="ImageAnnotationService.AccessibilityV1.ServerHttpResponseCode"
     enum="HttpResponseCode" expires_after="2020-03-31">
-  <owner>amoylan@chromium.org</owner>
-  <owner>martis@chromium.org</owner>
+  <owner>amoylan@monyhar.org</owner>
+  <owner>martis@monyhar.org</owner>
   <summary>
     For each HTTP response from the image annotation server, reports the
     associated HTTP code.
@@ -158,8 +158,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="ImageAnnotationService.AccessibilityV1.ServerLatencyMs"
     units="ms" expires_after="2020-03-31">
-  <owner>amoylan@chromium.org</owner>
-  <owner>martis@chromium.org</owner>
+  <owner>amoylan@monyhar.org</owner>
+  <owner>martis@monyhar.org</owner>
   <summary>
     For each HTTP response from the image annotation server, reports the time
     elapsed (in milliseconds) since the corresponding request was sent.
@@ -168,8 +168,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="ImageAnnotationService.AccessibilityV1.ServerNetError"
     enum="NetErrorCodes" expires_after="2020-03-31">
-  <owner>amoylan@chromium.org</owner>
-  <owner>martis@chromium.org</owner>
+  <owner>amoylan@monyhar.org</owner>
+  <owner>martis@monyhar.org</owner>
   <summary>
     For each HTTP request sent to the image annotation server, reports the net
     error (or OK status) of the request.
@@ -178,8 +178,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="ImageAnnotationService.AccessibilityV1.ServerRequestSizeKB"
     units="KB" expires_after="2020-03-31">
-  <owner>amoylan@chromium.org</owner>
-  <owner>martis@chromium.org</owner>
+  <owner>amoylan@monyhar.org</owner>
+  <owner>martis@monyhar.org</owner>
   <summary>
     For each HTTP request sent to the image annotation server, reports the size
     of the request. Measured in kilobytes, since a request can contain the pixel
@@ -190,8 +190,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="ImageAnnotationService.AccessibilityV1.ServerResponseSizeBytes"
     units="bytes" expires_after="2020-03-31">
-  <owner>amoylan@chromium.org</owner>
-  <owner>martis@chromium.org</owner>
+  <owner>amoylan@monyhar.org</owner>
+  <owner>martis@monyhar.org</owner>
   <summary>
     For each HTTP response from the image annotation server, reports the
     response size in bytes.
@@ -200,8 +200,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="ImageAnnotationService.AccessibilityV1.SourcePixelCount"
     units="pixels" expires_after="2020-03-31">
-  <owner>amoylan@chromium.org</owner>
-  <owner>martis@chromium.org</owner>
+  <owner>amoylan@monyhar.org</owner>
+  <owner>martis@monyhar.org</owner>
   <summary>
     For each image sent from a client feature to the image annotation service,
     reports the image's original (i.e. pre-scaling) area in pixels. Images with
@@ -213,8 +213,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="GoogleRpcCode" expires_after="2020-03-31">
 <!-- Name completed by histogram_suffixes name="ImageAnnotationServiceAnnotationType" -->
 
-  <owner>amoylan@chromium.org</owner>
-  <owner>martis@chromium.org</owner>
+  <owner>amoylan@monyhar.org</owner>
+  <owner>martis@monyhar.org</owner>
   <summary>
     For each annotation backend run by the image annotation server, records the
     gRPC status reported.
@@ -225,9 +225,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="2022-06-01">
 <!-- Name completed by histogram_suffixes name="ImageFetcherCacheStrategy" -->
 
-  <owner>fgorski@chromium.org</owner>
-  <owner>wylieb@chromium.org</owner>
-  <owner>xingliu@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
+  <owner>wylieb@monyhar.org</owner>
+  <owner>xingliu@monyhar.org</owner>
   <summary>
     The total number of metadata entries in the image fetcher cache metadata
     database for a given cache strategy. Recorded during cache eviction process.
@@ -238,9 +238,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="2022-06-01">
 <!-- Name completed by histogram_suffixes name="ImageFetcherCacheStrategy" -->
 
-  <owner>fgorski@chromium.org</owner>
-  <owner>wylieb@chromium.org</owner>
-  <owner>xingliu@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
+  <owner>wylieb@monyhar.org</owner>
+  <owner>xingliu@monyhar.org</owner>
   <summary>
     The total size of the cache for a given cache strategy. Recorded during
     cache eviction process.
@@ -249,8 +249,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="ImageFetcher.Events" enum="ImageFetcherEvent"
     expires_after="2022-06-01">
-  <owner>fgorski@chromium.org</owner>
-  <owner>wylieb@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
+  <owner>wylieb@monyhar.org</owner>
   <summary>
     Events that track the lifecycle and performance of the cached_image_fetcher.
     The events reported include: success/failure conditions, various recoverable
@@ -260,8 +260,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="ImageFetcher.ImageLoadFromCacheTime" units="ms"
     expires_after="2022-06-01">
-  <owner>fgorski@chromium.org</owner>
-  <owner>wylieb@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
+  <owner>wylieb@monyhar.org</owner>
   <summary>
     The time it takes for cached_image_fetcher to load an image from the cache
     in native.
@@ -270,8 +270,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="ImageFetcher.ImageLoadFromCacheTimeJava" units="ms"
     expires_after="2022-06-01">
-  <owner>fgorski@chromium.org</owner>
-  <owner>wylieb@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
+  <owner>wylieb@monyhar.org</owner>
   <summary>
     The time it takes for cached_image_fetcher to load an image from the cache
     in Java.
@@ -280,8 +280,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="ImageFetcher.ImageLoadFromNativeTimeJava" units="ms"
     expires_after="2022-06-01">
-  <owner>fgorski@chromium.org</owner>
-  <owner>wylieb@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
+  <owner>wylieb@monyhar.org</owner>
   <summary>
     The time it takes for cached_image_fetcher to load an image from native
     code. Only recorded on successful loads.
@@ -290,8 +290,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="ImageFetcher.ImageLoadFromNetworkAfterCacheHit" units="ms"
     expires_after="2022-06-01">
-  <owner>fgorski@chromium.org</owner>
-  <owner>wylieb@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
+  <owner>wylieb@monyhar.org</owner>
   <summary>
     The time it takes for cached_image_fetcher to load an image from the network
     after a cache hit.
@@ -300,8 +300,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="ImageFetcher.ImageLoadFromNetworkTime" units="ms"
     expires_after="2022-06-01">
-  <owner>fgorski@chromium.org</owner>
-  <owner>wylieb@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
+  <owner>wylieb@monyhar.org</owner>
   <summary>
     The time it takes for cached_image_fetcher to load an image from the
     network.
@@ -310,8 +310,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="ImageFetcher.LoadImageMetadata" units="ms"
     expires_after="2022-06-01">
-  <owner>fgorski@chromium.org</owner>
-  <owner>wylieb@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
+  <owner>wylieb@monyhar.org</owner>
   <summary>
     The time it takes to load an image's metadata from the metadata store.
   </summary>
@@ -319,8 +319,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="ImageFetcher.RequestStatusCode"
     enum="CombinedHttpResponseAndNetErrorCode" expires_after="2022-06-01">
-  <owner>fgorski@chromium.org</owner>
-  <owner>wylieb@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
+  <owner>wylieb@monyhar.org</owner>
   <summary>
     Android: The integer status code of network requests made by the image data
     fetcher. This code includes both protocol(1xx-5xx) and non-protocol(-xxx)
@@ -330,8 +330,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="ImageFetcher.TimeSinceLastCacheLRUEviction" units="ms"
     expires_after="2022-06-01">
-  <owner>fgorski@chromium.org</owner>
-  <owner>wylieb@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
+  <owner>wylieb@monyhar.org</owner>
   <summary>
     The time since the last LRU eviction from the image cache. Recorded when two
     LRU evictions occur within closure proximity to one another. Will be used to
@@ -341,7 +341,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="ImageLoader.Client.Cache.HitMiss" enum="BooleanCacheHit"
     expires_after="2019-01-01">
-  <owner>tapted@chromium.org</owner>
+  <owner>tapted@monyhar.org</owner>
   <owner>chromeos-files-app@google.com</owner>
   <summary>
     For each image load request that requested caching, records whether or not
@@ -352,7 +352,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="ImageLoader.Client.Cache.Usage" units="%"
     expires_after="2019-01-01">
-  <owner>tapted@chromium.org</owner>
+  <owner>tapted@monyhar.org</owner>
   <owner>chromeos-files-app@google.com</owner>
   <summary>
     Returns the percentage of the client-side cache that is used for loading
@@ -363,7 +363,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="ImageLoader.Client.Cached" enum="BooleanRequested"
     expires_after="2019-01-01">
-  <owner>tapted@chromium.org</owner>
+  <owner>tapted@monyhar.org</owner>
   <owner>chromeos-files-app@google.com</owner>
   <summary>
     For each image load request records whether or not it requested caching.

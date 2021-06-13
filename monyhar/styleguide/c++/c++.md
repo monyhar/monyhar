@@ -1,19 +1,19 @@
 # Chromium C++ style guide
 
 _For other languages, please see the
-[Chromium style guides](https://chromium.googlesource.com/chromium/src/+/main/styleguide/styleguide.md)._
+[Chromium style guides](https://monyhar.googlesource.com/monyhar/src/+/main/styleguide/styleguide.md)._
 
 Chromium follows the [Google C++ Style
 Guide](https://google.github.io/styleguide/cppguide.html) unless an exception
 is listed below.
 
 A checkout should give you
-[clang-format](https://chromium.googlesource.com/chromium/src/+/main/docs/clang_format.md)
+[clang-format](https://monyhar.googlesource.com/monyhar/src/+/main/docs/clang_format.md)
 to automatically format C++ code. By policy, Clang's formatting of code should
 always be accepted in code reviews.
 
 You can propose changes to this style guide by sending an email to
-`cxx@chromium.org`. Ideally, the list will arrive at some consensus and you can
+`cxx@monyhar.org`. Ideally, the list will arrive at some consensus and you can
 request review for a change to this file. If there's no consensus,
 `src/styleguide/c++/OWNERS` get to decide.
 
@@ -25,10 +25,10 @@ Google style
 [targets C++17](https://google.github.io/styleguide/cppguide.html#C++_Version).
 Chromium targets C++14; [C++17 support](https://crbug.com/752720) is not
 expected before
-[mid-2021](https://blog.chromium.org/2020/01/moving-forward-from-chrome-apps.html).
+[mid-2021](https://blog.monyhar.org/2020/01/moving-forward-from-chrome-apps.html).
 Additionally, some features of supported C++ versions remain forbidden. The
 status of Chromium's C++ support is covered in more detail in
-[Modern C++ use in Chromium](https://chromium-cpp.appspot.com/).
+[Modern C++ use in Chromium](https://monyhar-cpp.appspot.com/).
 
 ## Naming
 
@@ -39,7 +39,7 @@ status of Chromium's C++ support is covered in more detail in
 
   * Functions used only for testing should be restricted to test-only usages
     with the testing suffixes supported by
-    [PRESUMBIT.py](https://chromium.googlesource.com/chromium/src/+/main/PRESUBMIT.py).
+    [PRESUMBIT.py](https://monyhar.googlesource.com/monyhar/src/+/main/PRESUBMIT.py).
     `ForTesting` is the conventional suffix although similar patterns, such as
     `ForTest`, are also accepted. These suffixes are checked at presubmit time
     to ensure the functions are called only by test files.

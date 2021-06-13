@@ -2,7 +2,7 @@ This component provides a unified model of user language which will serve as the
 single source of truth for other components.
 
 Language is implemented as a layered component
-(https://sites.google.com/a/chromium.org/dev/developers/design-documents/layered-components-design)
+(https://sites.google.com/a/monyhar.org/dev/developers/design-documents/layered-components-design)
 to enable it to be shared cleanly on iOS.
 
 This component has the following structure:

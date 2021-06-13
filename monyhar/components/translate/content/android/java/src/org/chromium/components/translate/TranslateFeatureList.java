@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.translate;
+package org.monyhar.components.translate;
 
-import org.chromium.base.FeatureList;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
+import org.monyhar.base.FeatureList;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
 
 /**
- * Exposes translate-specific features to Java since files in org.chromium.components.translate
- * package cannot depend on org.chromium.chrome.browser.flags.ChromeFeatureList.
+ * Exposes translate-specific features to Java since files in org.monyhar.components.translate
+ * package cannot depend on org.monyhar.chrome.browser.flags.ChromeFeatureList.
  */
 // TODO(crbug.com/1060097): Remove/update this once a generalized FeatureList exists.
 @JNINamespace("translate::android")

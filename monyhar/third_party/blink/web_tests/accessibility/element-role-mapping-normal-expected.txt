@@ -35,7 +35,7 @@ Section
 Footer in section
 
 Written by Julie
-Visit us at:www.chromium.org
+Visit us at:www.monyhar.org
 
 
 January
@@ -164,8 +164,8 @@ element
 "
             AXRole: AXInlineTextBox "
 "
-        AXRole: AXStaticText "Visit us at:www.chromium.org"
-            AXRole: AXInlineTextBox "Visit us at:www.chromium.org"
+        AXRole: AXStaticText "Visit us at:www.monyhar.org"
+            AXRole: AXInlineTextBox "Visit us at:www.monyhar.org"
         AXRole: AXLineBreak "
 "
             AXRole: AXInlineTextBox "

@@ -54,7 +54,7 @@ class MergeXmlTest(unittest.TestCase):
 
 <histogram name="Foo.Bar" units="xxxxxxxxxxxxxxxxxxyyyyyyyyyyyyyyyyyyyyyyzzzz"
     expires_after="M85">
-  <owner>person@chromium.org</owner>
+  <owner>person@monyhar.org</owner>
   <component>Component</component>
   <summary>Foo</summary>
 </histogram>
@@ -63,7 +63,7 @@ class MergeXmlTest(unittest.TestCase):
   <obsolete>
     Obsolete message
   </obsolete>
-  <owner>uma@chromium.org</owner>
+  <owner>uma@monyhar.org</owner>
   <summary>A enum histogram.</summary>
 </histogram>
 
@@ -71,7 +71,7 @@ class MergeXmlTest(unittest.TestCase):
   <obsolete>
     Removed 6/2020.
   </obsolete>
-  <owner>person@chromium.org</owner>
+  <owner>person@monyhar.org</owner>
   <summary>Summary 2</summary>
 </histogram>
 
@@ -80,7 +80,7 @@ class MergeXmlTest(unittest.TestCase):
   <obsolete>
     Removed 6/2020.
   </obsolete>
-  <owner>person@chromium.org</owner>
+  <owner>person@monyhar.org</owner>
   <summary>Summary 2</summary>
   <token key="TestToken" variants="TestToken"/>
 </histogram>
@@ -154,7 +154,7 @@ class MergeXmlTest(unittest.TestCase):
 
 <histogram name="Foo.Bar" units="xxxxxxxxxxxxxxxxxxyyyyyyyyyyyyyyyyyyyyyyzzzz"
     expires_after="M85">
-  <owner>person@chromium.org</owner>
+  <owner>person@monyhar.org</owner>
   <component>Component</component>
   <summary>Foo</summary>
 </histogram>
@@ -163,7 +163,7 @@ class MergeXmlTest(unittest.TestCase):
   <obsolete>
     Obsolete message
   </obsolete>
-  <owner>uma@chromium.org</owner>
+  <owner>uma@monyhar.org</owner>
   <summary>A enum histogram.</summary>
 </histogram>
 
@@ -171,7 +171,7 @@ class MergeXmlTest(unittest.TestCase):
   <obsolete>
     Removed 6/2020.
   </obsolete>
-  <owner>person@chromium.org</owner>
+  <owner>person@monyhar.org</owner>
   <summary>Summary 2</summary>
 </histogram>
 
@@ -180,7 +180,7 @@ class MergeXmlTest(unittest.TestCase):
   <obsolete>
     Removed 6/2020.
   </obsolete>
-  <owner>person@chromium.org</owner>
+  <owner>person@monyhar.org</owner>
   <summary>Summary 2</summary>
   <token key="TestToken" variants="TestToken"/>
 </histogram>
@@ -225,7 +225,7 @@ class MergeXmlTest(unittest.TestCase):
     with self.assertRaisesRegexp(
         expand_owners.Error,
         'The histogram Caffeination must have a valid primary owner, i.e. a '
-        'Googler with an @google.com or @chromium.org email address. Please '
+        'Googler with an @google.com or @monyhar.org email address. Please '
         'manually update the histogram with a valid primary owner.'):
       merge_xml.MergeTrees([histograms_without_valid_first_owner],
                            should_expand_owners=True)

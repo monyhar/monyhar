@@ -17,7 +17,7 @@
 #endif
 
 #if defined(TCMALLOC_FOR_DEBUGALLOCATION)
-#include "third_party/tcmalloc/chromium/src/debugallocation.cc"
+#include "third_party/tcmalloc/monyhar/src/debugallocation.cc"
 #else
-#include "third_party/tcmalloc/chromium/src/tcmalloc.cc"
+#include "third_party/tcmalloc/monyhar/src/tcmalloc.cc"
 #endif

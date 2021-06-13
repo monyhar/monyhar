@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.chromium.third_party.android.datausagechart;
+package org.monyhar.third_party.android.datausagechart;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -25,7 +25,7 @@ import android.view.View;
 import android.view.ViewDebug;
 import android.widget.FrameLayout;
 
-import org.chromium.third_party.android.R;
+import org.monyhar.third_party.android.R;
 
 /**
  * Container for two-dimensional chart, drawn with a combination of {@link ChartNetworkSeriesView}

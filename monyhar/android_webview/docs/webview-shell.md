@@ -7,7 +7,7 @@
 WebView team maintains a "shell"&mdash;a thin interface over the WebView
 APIs&mdash;to exercise WebView functionality. The System WebView Shell (AKA
 "shell browser," "WebView shell") is a standalone app implemented [in
-chromium](/android_webview/tools/system_webview_shell/). While often used for
+monyhar](/android_webview/tools/system_webview_shell/). While often used for
 manual testing, we also use the shell for automated tests (see our [layout and
 page cycler tests](./test-instructions.md#layout-tests-and-page-cycler-tests)).
 
@@ -18,8 +18,8 @@ must **install WebView first.**
 ***
 
 *** promo
-**Tip:** the shell displays the WebView version (the corresponding [chromium version
-number](https://www.chromium.org/developers/version-numbers)) in the title bar
+**Tip:** the shell displays the WebView version (the corresponding [monyhar version
+number](https://www.monyhar.org/developers/version-numbers)) in the title bar
 at the top. This can be helpful for checking which WebView version is installed
 & selected on the device.
 ***
@@ -41,11 +41,11 @@ or Chrome for Android.
 different signing key, so installation will fail with
 `INSTALL_FAILED_UPDATE_INCOMPATIBLE: Package ... signatures do not match
 previously installed version`. You can workaround this in your GN args with
-`system_webview_shell_package_name = "org.chromium.my_webview_shell"`.
+`system_webview_shell_package_name = "org.monyhar.my_webview_shell"`.
 
 Your local build will install alongside the preinstalled WebView shell. You may
 hide the preinstalled shell by running `adb root` followed by `adb shell pm
-disable org.chromium.webview_shell` in your terminal (copy-paste the command
+disable org.monyhar.webview_shell` in your terminal (copy-paste the command
 as-written, **don't** use the package name from the GN arg above).
 ***
 
@@ -81,9 +81,9 @@ following [commandline-flags.md](./commandline-flags.md).
 ## Prebuilt APKs
 
 We maintain a **public** archive of prebuilt WebView shell APKs. This saves you
-the effort of setting up a chromium checkout just for the sake of compiling this
+the effort of setting up a monyhar checkout just for the sake of compiling this
 test app. You can download a prebuilt APK from this cloud storage bucket:
-https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html?prefix=Android/
+https://commondatastorage.googleapis.com/monyhar-browser-snapshots/index.html?prefix=Android/
 
 1. The builds are sorted from oldest to newest. You should scroll to the
    **bottom of the page** to get the latest revision. Note that the page can
@@ -117,4 +117,4 @@ is the case on all emulators). **The easiest way** to workaround this is to
 If you don't want to (or can't) change the package name, then you may be able to
 modify your device's system image. See the [manual steps for removing system
 apps](removing-system-apps.md) and replace **com.google.android.webview** with
-**org.chromium.webview_shell**.
+**org.monyhar.webview_shell**.

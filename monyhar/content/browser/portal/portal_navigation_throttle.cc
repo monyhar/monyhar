@@ -23,7 +23,7 @@ namespace {
 // A URL where developers can learn more about why this navigation throttle may
 // have cancelled their request.
 const char* GetBlockedInfoURL() {
-  return "https://www.chromium.org/blink/origin-trials/portals";
+  return "https://www.monyhar.org/blink/origin-trials/portals";
 }
 
 }  // namespace

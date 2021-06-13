@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo.bindings;
+package org.monyhar.mojo.bindings;
 
 import android.annotation.SuppressLint;
 
@@ -13,15 +13,15 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.UrlUtils;
-import org.chromium.mojo.HandleMock;
-import org.chromium.mojo.MojoTestRule;
-import org.chromium.mojo.bindings.test.mojom.mojo.ConformanceTestInterface;
-import org.chromium.mojo.bindings.test.mojom.mojo.IntegrationTestInterface;
-import org.chromium.mojo.bindings.test.mojom.mojo.IntegrationTestInterfaceTestHelper;
-import org.chromium.mojo.system.Handle;
-import org.chromium.mojo.system.impl.CoreImpl;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.UrlUtils;
+import org.monyhar.mojo.HandleMock;
+import org.monyhar.mojo.MojoTestRule;
+import org.monyhar.mojo.bindings.test.mojom.mojo.ConformanceTestInterface;
+import org.monyhar.mojo.bindings.test.mojom.mojo.IntegrationTestInterface;
+import org.monyhar.mojo.bindings.test.mojom.mojo.IntegrationTestInterfaceTestHelper;
+import org.monyhar.mojo.system.Handle;
+import org.monyhar.mojo.system.impl.CoreImpl;
 
 import java.io.File;
 import java.io.FileFilter;

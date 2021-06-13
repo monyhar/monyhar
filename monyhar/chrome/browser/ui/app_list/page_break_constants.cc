@@ -10,7 +10,7 @@
 namespace app_list {
 
 // Generated as:
-// crx_file::id_util::GenerateId("org.chromium.default_page_break_1").
+// crx_file::id_util::GenerateId("org.monyhar.default_page_break_1").
 const char kDefaultPageBreak1[] = "fdipebbchlhkdibfjgbfalhceahammim";
 
 const char* const kDefaultPageBreakAppIds[] = {

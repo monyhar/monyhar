@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.paintpreview.player;
+package org.monyhar.components.paintpreview.player;
 
 import android.graphics.Rect;
 import android.os.Parcel;
@@ -11,8 +11,8 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.UnguessableToken;
-import org.chromium.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.UnguessableToken;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
 
 /**
  * Tests for the {@link PaintPreviewFrame} class.

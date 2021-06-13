@@ -28,9 +28,9 @@ namespace ash {
 //
 // OpenUrl:
 // % dbus-send --system --type=method_call --print-reply
-//     --dest=org.chromium.UrlHandlerService
-//     /org/chromium/UrlHandlerService
-//     org.chromium.UrlHandlerServiceInterface.OpenUrl
+//     --dest=org.monyhar.UrlHandlerService
+//     /org/monyhar/UrlHandlerService
+//     org.monyhar.UrlHandlerServiceInterface.OpenUrl
 //     "string:|url|"
 //
 // % (returns true on success, otherwise returns false)

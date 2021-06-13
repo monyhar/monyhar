@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.status_indicator;
+package org.monyhar.chrome.browser.status_indicator;
 
 import android.graphics.drawable.Drawable;
 
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 class StatusIndicatorProperties {
     /** The text that describes status. */

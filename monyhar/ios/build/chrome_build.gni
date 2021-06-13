@@ -92,22 +92,22 @@ if (breakpad_enabled) {
   is_official_release = false
 }
 
-chromium_bundle_id = "chrome.ios.dev"
-chromium_handoff_id = "$ios_app_bundle_id_prefix.chrome.handoff"
+monyhar_bundle_id = "chrome.ios.dev"
+monyhar_handoff_id = "$ios_app_bundle_id_prefix.chrome.handoff"
 ios_move_tab_activity_type = "$ios_app_bundle_id_prefix.chrome.move-tab"
 
 if (is_chrome_branded) {
-  chromium_short_name = "Chrome"
+  monyhar_short_name = "Chrome"
   url_channel_scheme = "googlechrome-dev"
   url_secure_scheme = "googlechromes"
   url_ssoauth_scheme = "$ios_app_bundle_id_prefix.sso.chrome.stable"
   url_unsecure_scheme = "googlechrome"
   url_x_callback_scheme = "googlechrome-x-callback"
 } else {
-  chromium_short_name = "Chromium"
-  url_channel_scheme = "chromium-dev"
-  url_secure_scheme = "chromiums"
-  url_ssoauth_scheme = "$ios_app_bundle_id_prefix.sso.chromium"
-  url_unsecure_scheme = "chromium"
-  url_x_callback_scheme = "chromium-x-callback"
+  monyhar_short_name = "Chromium"
+  url_channel_scheme = "monyhar-dev"
+  url_secure_scheme = "monyhars"
+  url_ssoauth_scheme = "$ios_app_bundle_id_prefix.sso.monyhar"
+  url_unsecure_scheme = "monyhar"
+  url_x_callback_scheme = "monyhar-x-callback"
 }

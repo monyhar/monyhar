@@ -28,7 +28,7 @@ class
 1. Add directives to your C++ enum
 
     ```cpp
-    // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome
+    // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome
     // GENERATED_JAVA_CLASS_NAME_OVERRIDE: FooBar
     // GENERATED_JAVA_PREFIX_TO_STRIP: BAR_
     enum SomeEnum {
@@ -60,10 +60,10 @@ class
     }
     ```
 
-4. The generated file `org/chromium/chrome/FooBar.java` would contain:
+4. The generated file `org/monyhar/chrome/FooBar.java` would contain:
 
     ```java
-    package org.chromium.chrome;
+    package org.monyhar.chrome;
 
     import android.support.annotation.IntDef;
 
@@ -87,7 +87,7 @@ class
 
     ```cpp
     // GENERATED_JAVA_ENUM_PACKAGE: (
-    //   org.chromium.chrome.this.package.is.too.long.to.fit.on.a.single.line)
+    //   org.monyhar.chrome.this.package.is.too.long.to.fit.on.a.single.line)
     ```
 
 * Enum entries
@@ -124,7 +124,7 @@ class
 * Preserving comments
 
     ```cpp
-    // GENERATED_JAVA_ENUM_PACKAGE: org.chromium
+    // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar
     enum CommentEnum {
       // This comment will be preserved.
       ONE,
@@ -152,8 +152,8 @@ class
 
 ## Code
 * [Generator
-code](https://cs.chromium.org/chromium/src/build/android/gyp/java_cpp_enum.py?dr=C&sq=package:chromium)
+code](https://cs.monyhar.org/monyhar/src/build/android/gyp/java_cpp_enum.py?dr=C&sq=package:monyhar)
 and
-[Tests](https://cs.chromium.org/chromium/src/build/android/gyp/java_cpp_enum_tests.py?dr=C&q=java_cpp_enum_tests&sq=package:chromium&l=1)
+[Tests](https://cs.monyhar.org/monyhar/src/build/android/gyp/java_cpp_enum_tests.py?dr=C&q=java_cpp_enum_tests&sq=package:monyhar&l=1)
 * [GN
-template](https://cs.chromium.org/chromium/src/build/config/android/rules.gni?q=java_cpp_enum.py&sq=package:chromium&dr=C&l=458)
+template](https://cs.monyhar.org/monyhar/src/build/config/android/rules.gni?q=java_cpp_enum.py&sq=package:monyhar&dr=C&l=458)

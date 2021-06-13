@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab;
+package org.monyhar.chrome.browser.tab;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.verify;
@@ -18,11 +18,11 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.supplier.ObservableSupplierImpl;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.ApplicationViewportInsetSupplier;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.supplier.ObservableSupplierImpl;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.ApplicationViewportInsetSupplier;
+import org.monyhar.ui.base.WindowAndroid;
 
 /** Unit tests for the TabViewAndroidDelegate. */
 @RunWith(BaseRobolectricTestRunner.class)

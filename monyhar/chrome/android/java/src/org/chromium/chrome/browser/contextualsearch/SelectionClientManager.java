@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.contextualsearch;
+package org.monyhar.chrome.browser.contextualsearch;
 
 import android.os.Build;
 import android.view.textclassifier.TextClassifier;
@@ -10,11 +10,11 @@ import android.view.textclassifier.TextClassifier;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.content_public.browser.SelectionClient;
-import org.chromium.content_public.browser.SelectionEventProcessor;
-import org.chromium.content_public.browser.SelectionPopupController;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.touch_selection.SelectionEventType;
+import org.monyhar.content_public.browser.SelectionClient;
+import org.monyhar.content_public.browser.SelectionEventProcessor;
+import org.monyhar.content_public.browser.SelectionPopupController;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.touch_selection.SelectionEventType;
 
 /**
  * Manages the current {@link SelectionClient} instances, with support for 0-2 instances.

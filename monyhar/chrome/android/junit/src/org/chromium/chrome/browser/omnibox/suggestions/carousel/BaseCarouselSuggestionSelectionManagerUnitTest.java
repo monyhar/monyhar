@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.carousel;
+package org.monyhar.chrome.browser.omnibox.suggestions.carousel;
 
 import static org.mockito.Mockito.anyBoolean;
 import static org.mockito.Mockito.reset;
@@ -24,7 +24,7 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
 
 /**
  * Tests for {@link BaseCarouselSuggestionRecyclerViewAdapter}.

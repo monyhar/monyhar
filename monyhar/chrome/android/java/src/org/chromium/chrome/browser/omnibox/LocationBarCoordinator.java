@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox;
+package org.monyhar.chrome.browser.omnibox;
 
 import android.animation.Animator;
 import android.animation.ObjectAnimator;
@@ -14,41 +14,41 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.view.ViewCompat;
 
-import org.chromium.base.Callback;
-import org.chromium.base.CallbackController;
-import org.chromium.base.supplier.BooleanSupplier;
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.base.supplier.OneshotSupplierImpl;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.lens.LensController;
-import org.chromium.chrome.browser.lens.LensFeature;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.lifecycle.NativeInitObserver;
-import org.chromium.chrome.browser.locale.LocaleManager;
-import org.chromium.chrome.browser.omnibox.LocationBarMediator.OmniboxUma;
-import org.chromium.chrome.browser.omnibox.LocationBarMediator.SaveOfflineButtonState;
-import org.chromium.chrome.browser.omnibox.status.StatusCoordinator;
-import org.chromium.chrome.browser.omnibox.status.StatusCoordinator.PageInfoAction;
-import org.chromium.chrome.browser.omnibox.status.StatusView;
-import org.chromium.chrome.browser.omnibox.suggestions.AutocompleteCoordinator;
-import org.chromium.chrome.browser.omnibox.suggestions.AutocompleteDelegate;
-import org.chromium.chrome.browser.omnibox.suggestions.OmniboxSuggestionsDropdownEmbedder;
-import org.chromium.chrome.browser.omnibox.suggestions.basic.BasicSuggestionProcessor.BookmarkState;
-import org.chromium.chrome.browser.omnibox.voice.VoiceRecognitionHandler;
-import org.chromium.chrome.browser.privacy.settings.PrivacyPreferencesManager;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.search_engines.TemplateUrlServiceFactory;
-import org.chromium.chrome.browser.share.ShareDelegate;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.IncognitoStateProvider;
-import org.chromium.chrome.browser.tabmodel.TabWindowManager;
-import org.chromium.components.search_engines.TemplateUrlService;
-import org.chromium.ui.KeyboardVisibilityDelegate;
-import org.chromium.ui.base.DeviceFormFactor;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.base.WindowDelegate;
-import org.chromium.ui.modaldialog.ModalDialogManager;
+import org.monyhar.base.Callback;
+import org.monyhar.base.CallbackController;
+import org.monyhar.base.supplier.BooleanSupplier;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.base.supplier.OneshotSupplierImpl;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.lens.LensController;
+import org.monyhar.chrome.browser.lens.LensFeature;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.lifecycle.NativeInitObserver;
+import org.monyhar.chrome.browser.locale.LocaleManager;
+import org.monyhar.chrome.browser.omnibox.LocationBarMediator.OmniboxUma;
+import org.monyhar.chrome.browser.omnibox.LocationBarMediator.SaveOfflineButtonState;
+import org.monyhar.chrome.browser.omnibox.status.StatusCoordinator;
+import org.monyhar.chrome.browser.omnibox.status.StatusCoordinator.PageInfoAction;
+import org.monyhar.chrome.browser.omnibox.status.StatusView;
+import org.monyhar.chrome.browser.omnibox.suggestions.AutocompleteCoordinator;
+import org.monyhar.chrome.browser.omnibox.suggestions.AutocompleteDelegate;
+import org.monyhar.chrome.browser.omnibox.suggestions.OmniboxSuggestionsDropdownEmbedder;
+import org.monyhar.chrome.browser.omnibox.suggestions.basic.BasicSuggestionProcessor.BookmarkState;
+import org.monyhar.chrome.browser.omnibox.voice.VoiceRecognitionHandler;
+import org.monyhar.chrome.browser.privacy.settings.PrivacyPreferencesManager;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.search_engines.TemplateUrlServiceFactory;
+import org.monyhar.chrome.browser.share.ShareDelegate;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.IncognitoStateProvider;
+import org.monyhar.chrome.browser.tabmodel.TabWindowManager;
+import org.monyhar.components.search_engines.TemplateUrlService;
+import org.monyhar.ui.KeyboardVisibilityDelegate;
+import org.monyhar.ui.base.DeviceFormFactor;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.base.WindowDelegate;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
 
 import java.util.List;
 

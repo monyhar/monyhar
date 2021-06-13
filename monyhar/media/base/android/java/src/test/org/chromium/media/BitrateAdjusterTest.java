@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.media;
+package org.monyhar.media;
 
 import static org.junit.Assert.assertEquals;
 
@@ -12,7 +12,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.BlockJUnit4ClassRunner;
 
-import org.chromium.media.BitrateAdjuster.Type;
+import org.monyhar.media.BitrateAdjuster.Type;
 
 /**
  * Tests for BitrateAdjuster, a class used to adjust the target bitrate and framerate for certain

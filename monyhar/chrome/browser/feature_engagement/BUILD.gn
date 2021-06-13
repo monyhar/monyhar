@@ -7,10 +7,10 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/feature_engagement/ScreenshotMonitor.java",
-    "java/src/org/chromium/chrome/browser/feature_engagement/ScreenshotMonitorDelegate.java",
-    "java/src/org/chromium/chrome/browser/feature_engagement/ScreenshotTabObserver.java",
-    "java/src/org/chromium/chrome/browser/feature_engagement/TrackerFactory.java",
+    "java/src/org/monyhar/chrome/browser/feature_engagement/ScreenshotMonitor.java",
+    "java/src/org/monyhar/chrome/browser/feature_engagement/ScreenshotMonitorDelegate.java",
+    "java/src/org/monyhar/chrome/browser/feature_engagement/ScreenshotTabObserver.java",
+    "java/src/org/monyhar/chrome/browser/feature_engagement/TrackerFactory.java",
   ]
 
   deps = [
@@ -28,5 +28,5 @@ android_library("java") {
 }
 
 generate_jni("jni_headers") {
-  sources = [ "java/src/org/chromium/chrome/browser/feature_engagement/TrackerFactory.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/feature_engagement/TrackerFactory.java" ]
 }

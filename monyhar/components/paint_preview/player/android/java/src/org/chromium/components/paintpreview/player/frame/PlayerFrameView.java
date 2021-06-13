@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.paintpreview.player.frame;
+package org.monyhar.components.paintpreview.player.frame;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -20,7 +20,7 @@ import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.content_public.browser.WebContentsAccessibility;
+import org.monyhar.content_public.browser.WebContentsAccessibility;
 
 import java.util.List;
 

@@ -58,10 +58,10 @@ class TryFlagTest(unittest.TestCase):
             'git', 'cl', 'upload', '--bypass-hooks', '-f', '-m',
             'Flag try job for --foo.'
         ], [
-            'git', 'cl', 'try', '-B', 'luci.chromium.try', '-b', 'linux-rel'
+            'git', 'cl', 'try', '-B', 'luci.monyhar.try', '-b', 'linux-rel'
         ], [
-            'git', 'cl', 'try', '-B', 'luci.chromium.try', '-b', 'mac-rel'
-        ], ['git', 'cl', 'try', '-B', 'luci.chromium.try', '-b', 'win7-rel']])
+            'git', 'cl', 'try', '-B', 'luci.monyhar.try', '-b', 'mac-rel'
+        ], ['git', 'cl', 'try', '-B', 'luci.monyhar.try', '-b', 'win7-rel']])
 
     def test_trigger(self):
         self._run_trigger_test(regenerate=False)

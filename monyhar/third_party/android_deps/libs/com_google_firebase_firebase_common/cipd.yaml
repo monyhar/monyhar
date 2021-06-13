@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@19.5.0.cr0
-package: chromium/third_party/android_deps/libs/com_google_firebase_firebase_common
+package: monyhar/third_party/android_deps/libs/com_google_firebase_firebase_common
 description: "firebase-common"
 data:
 - file: firebase-common-19.5.0.aar

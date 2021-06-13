@@ -35,7 +35,7 @@ that offers little in the way of surprises.
 It is structured as a single binary that supports a list of subcommands:
 
 * `mb gen -c linux_rel_bot //out/Release`
-* `mb analyze -m tryserver.chromium.linux -b linux_rel /tmp/input.json /tmp/output.json`
+* `mb analyze -m tryserver.monyhar.linux -b linux_rel /tmp/input.json /tmp/output.json`
 
 ### Configurations
 
@@ -355,11 +355,11 @@ suggests a few things:
     product-independent services (i.e., not have to do one thing for
     Chromium, another for NaCl, a third for V8, etc.).
   * we found that during the SVN->GIT migration the ability to flip bot
-    configurations between the two via changes to a file in chromium
+    configurations between the two via changes to a file in monyhar
     was very useful.
 
 All of this suggests that the interface between bots and Chromium should
-be a simple one, hiding as much of the chromium logic as possible.
+be a simple one, hiding as much of the monyhar logic as possible.
 
 ### Why not have MB be smarter about de-duping flags?
 
@@ -400,5 +400,5 @@ config file change, however.
   eventually.
 
 * MB is not intended to replace the
-  [CR tool](https://code.google.com/p/chromium/wiki/CRUserManual), and
+  [CR tool](https://code.google.com/p/monyhar/wiki/CRUserManual), and
   it is not really meant as a developer-facing tool.

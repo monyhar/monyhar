@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.video_tutorials.languages;
+package org.monyhar.chrome.browser.video_tutorials.languages;
 
 import android.view.View;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.chrome.browser.video_tutorials.R;
-import org.chromium.ui.modelutil.MVCListAdapter;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
-import org.chromium.ui.modelutil.SimpleRecyclerViewAdapter;
+import org.monyhar.chrome.browser.video_tutorials.R;
+import org.monyhar.ui.modelutil.MVCListAdapter;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.ui.modelutil.SimpleRecyclerViewAdapter;
 
 /**
  * The View component of the language picker UI which contains the recycler view and the outer

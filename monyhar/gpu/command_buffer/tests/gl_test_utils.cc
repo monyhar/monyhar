@@ -4,7 +4,7 @@
 
 #include "gpu/command_buffer/tests/gl_test_utils.h"
 
-#include <GLES2/gl2extchromium.h>
+#include <GLES2/gl2extmonyhar.h>
 #include <stdint.h>
 #include <stdio.h>
 

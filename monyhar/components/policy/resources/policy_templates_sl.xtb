@@ -111,7 +111,7 @@
 
       Če ta pravilnik nastavite, bo <ph name="PRODUCT_NAME" /> uporabljal navedeni imenik ne glede na to, ali je uporabnik določil zastavico »--disk-cache-dir« ali ne. Če se želite izogniti izgubi podatkov ali drugim nepričakovanim napakam, tega pravilnika ne nastavite na korenski imenik pogona ali imenik, ki ga uporabljate za druge namene, ker <ph name="PRODUCT_NAME" /> upravlja njegovo vsebino.
 
-      Seznam spremenljivk, ki jih je mogoče uporabiti, si lahko ogledate na https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Seznam spremenljivk, ki jih je mogoče uporabiti, si lahko ogledate na https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Če tega pravilnika ne nastavite, bo uporabljen privzeti imenik za shranjevanje predpomnjenih datotek in uporabnik ga bo lahko preglasil z zastavico »--disk-cache-dir« v ukazni vrstici.</translation>
 <translation id="113521240853905588">Konfigurira jezike, ki jih je mogoče uporabiti kot prednostne jezike sistema <ph name="PRODUCT_OS_NAME" />.
@@ -498,7 +498,7 @@
 <translation id="1852294065645015766">Dovoli samodejno predvajanje predstavnosti</translation>
 <translation id="1857152770025485173">Ta pravilnik uporabniku preprečuje nalaganje spletnih strani URL-jev s seznama blokiranih. Seznam blokiranih posreduje seznam vzorcev URL-jev, ki določajo, kateri URL-ji bodo uvrščeni na seznam blokiranih.
 
-      Vzorec URL-ja mora biti oblikovan glede na to: https://www.chromium.org/administrators/url-blacklist-filter-format.
+      Vzorec URL-ja mora biti oblikovan glede na to: https://www.monyhar.org/administrators/url-blacklist-filter-format.
 
       Izjeme je mogoče opredeliti s pravilnikom o seznamu dovoljenih URL-jev. Ti pravilniki so omejeni na 1000 vnosov; nadaljnji vnosi bodo prezrti.
 
@@ -541,7 +541,7 @@
 
       Če ni nastavljen, je pošiljanje podatkov meritev in diagnostičnih podatkov onemogočeno v neupravljanih napravah in omogočeno v upravljanih.</translation>
 <translation id="1907431809333268751">Konfiguriranje seznama URL-jev za prijavo za poslovna okolja (samo sheme HTTP in HTTPS). Na teh URL-jih bo zajet prstni odtis gesla in uporabljen za odkrivanje vnovične uporabe enakega gesla.
-      Če želite, da bo <ph name="PRODUCT_NAME" />pravilno zajel prstne odtise gesel, poskrbite, da so strani za prijavo skladne s smernicami na naslovu https://www.chromium.org/developers/design-documents/create-amazing-password-forms.
+      Če želite, da bo <ph name="PRODUCT_NAME" />pravilno zajel prstne odtise gesel, poskrbite, da so strani za prijavo skladne s smernicami na naslovu https://www.monyhar.org/developers/design-documents/create-amazing-password-forms.
 
       Če je ta nastavitev omogočena, bo storitev za zaščito gesel na teh URL-jih zajela prstni odtis gesla in ga uporabila za odkrivanje vnovične uporabe enakega gesla.
       Če je ta nastavitev onemogočena ali ni nastavljena, bo storitev za zaščito gesel prstni odtis gesla zajela samo na naslovu https://accounts.google.com.
@@ -843,7 +843,7 @@
 
       Ta pravilnik omogoča, da potrdila za imena gostiteljev v navedenih URL-jih niso razkrita na podlagi pravilnika o preglednosti potrdila. To omogoča nadaljnjo uporabo potrdil, ki bi bila sicer obravnavana, kot da niso zaupanja vredna, ker niso bila ustrezno javno razkrita, vendar otežuje odkrivanje neustrezno izdanih potrdil za te gostitelje.
 
-      Vzorec URL-ja je oblikovan v skladu s tem: https://www.chromium.org/administrators/url-blacklist-filter-format. Glede na to, da so potrdila za dano ime gostitelja veljavna neodvisno od sheme, vrat ali poti, se upošteva samo del URL-ja z imenom gostitelja. Gostitelji z nadomestnimi znaki niso podprti.
+      Vzorec URL-ja je oblikovan v skladu s tem: https://www.monyhar.org/administrators/url-blacklist-filter-format. Glede na to, da so potrdila za dano ime gostitelja veljavna neodvisno od sheme, vrat ali poti, se upošteva samo del URL-ja z imenom gostitelja. Gostitelji z nadomestnimi znaki niso podprti.
 
       Če ta pravilnik ni nastavljen, bo vsako potrdilo, ki mora biti razkrito na podlagi pravilnika o preglednosti potrdila, obravnavano, kot da ni zaupanja vredno, če ne bo razkrito skladno s pravilnikom o preglednosti potrdila.</translation>
 <translation id="2488010520405124654">Omogočanje poziva za konfiguracijo omrežja v stanju brez povezave.
@@ -1540,7 +1540,7 @@ napravi konfiguriran tako, da pri samodejni prijavi ni zakasnitve, naprava pa ni
 
       Če ta pravilnik nastavite, bo <ph name="PRODUCT_NAME" /> uporabljal navedeni imenik ne glede na to, ali ga je uporabnik določil ali omogočil zastavico za vsakokraten poziv za mesto prenosa.
 
-      Seznam spremenljivk, ki jih je mogoče uporabiti, si lahko ogledate na https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Seznam spremenljivk, ki jih je mogoče uporabiti, si lahko ogledate na https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Če tega pravilnika ne nastavite, bo uporabljen privzeti imenik za prenose in uporabnik ga bo lahko spremenil.</translation>
 <translation id="3805659594028420438">Omogoči razširitev za potrdila, domensko vezana na TLS (zastarelo)</translation>
@@ -1631,7 +1631,7 @@ napravi konfiguriran tako, da pri samodejni prijavi ni zakasnitve, naprava pa ni
 
       Če tega pravilnika ne nastavite, <ph name="PRODUCT_NAME" /> uporabi običajni privzeti imenik (odvisno od posameznega okolja).
 
-      Na https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables si lahko ogledate seznam spremenljivk, ki jih je mogoče uporabiti.</translation>
+      Na https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables si lahko ogledate seznam spremenljivk, ki jih je mogoče uporabiti.</translation>
 <translation id="3911737181201537215">Ta pravilnik ne vpliva na zapisovanje dnevnik sistema Android.</translation>
 <translation id="391531815696899618">Če je ta možnost nastavljena na »True«, onemogoči sinhroniziranje Googla Drive v aplikaciji Datoteke za <ph name="PRODUCT_OS_NAME" />. V tem primeru se v Google Drive ne naložijo nobeni podatki.
 
@@ -1834,7 +1834,7 @@ Vrednost pravilnika mora vedno biti navedena v sekundah. Vrednosti so navzdol om
 
       Če nastavite ta pravilnik, bo izdelek <ph name="PRODUCT_NAME" /> uporabljal naveden imenik za shranjevanje kopije profilov za gostovanje, kadar je pravilnik <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> omogočen. Če je pravilnik <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> onemogočen ali ni nastavljen, se vrednost, shranjena v tem pravilniku, ne uporabi.
 
-      Na https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables si lahko ogledate seznam spremenljivk, ki jih je mogoče uporabiti.
+      Na https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables si lahko ogledate seznam spremenljivk, ki jih je mogoče uporabiti.
 
       Če ta pravilnik ni nastavljen, se uporabi privzeta pot za profile za gostovanje.</translation>
 <translation id="4239720644496144453">Predpomnilnik se ne uporablja za aplikacije za Android. Če več uporabnikov namesti enako aplikacijo za Android, bo za vsakega uporabnika znova prenesena.</translation>
@@ -2036,7 +2036,7 @@ Vrednost pravilnika mora vedno biti navedena v sekundah. Vrednosti so navzdol om
 
           Če ta pravilnik ni nastavljen, bo za vsa spletna mesta uporabljen privzeti upodabljalnik, kot ga določa pravilnik »ChromeFrameRendererSettings«.
 
-          Primere vzorcev si lahko ogledate na https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Primere vzorcev si lahko ogledate na https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="467449052039111439">Odpri seznam URL-jev</translation>
 <translation id="4674871290487541952">Omogočanje algoritmov, ki niso varni, pri preverjanju celovitosti posodobitev in namestitev razširitev</translation>
 <translation id="4680936297850947973">Zastarelo v M68. Uporabite pravilnik DefaultPopupsSetting.
@@ -2686,7 +2686,7 @@ Vrednost pravilnika mora vedno biti navedena v sekundah. Vrednosti so navzdol om
 
       Če ta pravilnik nastavite, bo <ph name="PRODUCT_FRAME_NAME" /> uporabil navedeni imenik.
 
-      Seznam spremenljivk, ki jih je mogoče uporabiti, si lahko ogledate na http://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Seznam spremenljivk, ki jih je mogoče uporabiti, si lahko ogledate na http://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Če te nastavitve ne določite, bo uporabljen privzeti imenik profila.</translation>
 <translation id="5826047473100157858">Določa, ali lahko uporabnik v brskalniku <ph name="PRODUCT_NAME" /> odpre strani v načinu brez beleženja zgodovine.
@@ -3268,7 +3268,7 @@ URL-ji, ki uporabljajo sheme s tega seznama, se ne bodo naložili in dostop do n
 
       Če ta pravilnik nastavite, bo <ph name="PRODUCT_NAME" /> uporabljal navedeni imenik ne glede na to, ali je uporabnik določil zastavico »--user-data-dir«. Če se želite izogniti izgubi podatkov ali drugim nepričakovanim napakam, tega pravilnika ne nastavite na korenski imenik pogona ali imenik, ki ga uporabljate za druge namene, ker <ph name="PRODUCT_NAME" /> upravlja njegovo vsebino.
 
-      Seznam spremenljivk, ki jih je mogoče uporabiti, si lahko ogledate na https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Seznam spremenljivk, ki jih je mogoče uporabiti, si lahko ogledate na https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Če tega pravilnika ne nastavite, bo uporabljena privzeta pot profila in uporabnik jo bo lahko preglasil z zastavico »--user-data-dir« v ukazni vrstici.</translation>
 <translation id="7027785306666625591">Konfigurira upravljanje porabe za <ph name="PRODUCT_OS_NAME" />.
@@ -4064,7 +4064,7 @@ Teh nastavitev ni treba konfigurirati ročno. Za sisteme Windows, macOS in Linux
 
           Če ta pravilnik ni nastavljen, bo za vsa spletna mesta, določena s pravilnikom »ChromeFrameRendererSettings«, uporabljen privzeti upodabljalnik.
 
-          Primere vzorcev si lahko ogledate na https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Primere vzorcev si lahko ogledate na https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="8489964335640955763">PluginVm</translation>
 <translation id="8493645415242333585">Onemogoči shranjevanje zgodovine brskalnika</translation>
 <translation id="8499172469244085141">Privzete nastavitve (uporabniki jih lahko preglasijo)</translation>

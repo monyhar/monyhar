@@ -41,7 +41,7 @@ _log = logging.getLogger(__name__)
 
 TEST_RESULTS_SERVER = 'https://test-results.appspot.com'
 RESULTS_URL_BASE = '%s/data/layout_results' % TEST_RESULTS_SERVER
-RESULTS_SUMMARY_URL_BASE = 'https://storage.googleapis.com/chromium-layout-test-archives'
+RESULTS_SUMMARY_URL_BASE = 'https://storage.googleapis.com/monyhar-layout-test-archives'
 
 
 class Build(collections.namedtuple('Build', ('builder_name', 'build_number',
@@ -62,7 +62,7 @@ class TestResultsFetcher(object):
 
     This includes fetching web test results from Google Storage;
     for more information about the web test result format, see:
-        https://www.chromium.org/developers/the-json-test-results-format
+        https://www.monyhar.org/developers/the-json-test-results-format
     """
 
     def __init__(self):

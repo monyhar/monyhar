@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.crash.browser;
+package org.monyhar.components.crash.browser;
 
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CalledByNative;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
 
 /**
  * A Java-side bridge for notifying an observer when a child process has crashed.

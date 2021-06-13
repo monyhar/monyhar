@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ntp.snippets;
+package org.monyhar.chrome.browser.ntp.snippets;
 
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * Represents the data for a header of a group of snippets.

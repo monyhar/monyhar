@@ -43,7 +43,7 @@ to dig into this is to [examine the compiled functions](../disassemble_code.md)
 before and after the no-op change, to see if inlining has changed.
 
 If you have a function that you believe should always be inlined in production
-builds, please contact gbiv@chromium.org for advice.
+builds, please contact gbiv@monyhar.org for advice.
 
 ### Toolchain rolls
 
@@ -51,7 +51,7 @@ Our toolchain team regularly rolls in new versions of clang, the compiler for
 all of Chromium. Though it's rare, these rolls may cause unintended performance
 changes. These rolls are represented as regular CLs/commits to Chromium's
 repository (e.g.
-https://chromium-review.googlesource.com/c/chromium/src/+/1436036), so
+https://monyhar-review.googlesource.com/c/monyhar/src/+/1436036), so
 it's often pretty simple to attribute a performance change to a compiler
 roll. If you believe a compiler roll has slowed down your microbenchmark, please
 reach out to whoever landed the roll for guidance. It may be difficult, but if

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.settings;
+package org.monyhar.chrome.browser.download.settings;
 
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +10,7 @@ import android.widget.ListView;
 
 import androidx.preference.PreferenceDialogFragmentCompat;
 
-import org.chromium.chrome.browser.download.R;
+import org.monyhar.chrome.browser.download.R;
 
 /**
  * The dialog used to display the download directory preference choices.

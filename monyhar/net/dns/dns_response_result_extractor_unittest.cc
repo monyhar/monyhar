@@ -455,7 +455,7 @@ TEST(DnsResponseResultExtractorTest, ExtractsSrvResponses) {
   const TestServiceRecord kRecord1 = {2, 3, 1223, "foo.com"};
   const TestServiceRecord kRecord2 = {5, 10, 80, "bar.com"};
   const TestServiceRecord kRecord3 = {5, 1, 5, "google.com"};
-  const TestServiceRecord kRecord4 = {2, 100, 12345, "chromium.org"};
+  const TestServiceRecord kRecord4 = {2, 100, 12345, "monyhar.org"};
 
   DnsResponse response = BuildTestDnsServiceResponse(
       "name.test", {kRecord1, kRecord2, kRecord3, kRecord4});
@@ -473,12 +473,12 @@ TEST(DnsResponseResultExtractorTest, ExtractsSrvResponses) {
       result_hosts,
       testing::Optional(testing::UnorderedElementsAre(
           HostPortPair("foo.com", 1223), HostPortPair("bar.com", 80),
-          HostPortPair("google.com", 5), HostPortPair("chromium.org", 12345))));
+          HostPortPair("google.com", 5), HostPortPair("monyhar.org", 12345))));
   auto priority2 = std::vector<HostPortPair>(result_hosts.value().begin(),
                                              result_hosts.value().begin() + 2);
   EXPECT_THAT(priority2, testing::UnorderedElementsAre(
                              HostPortPair("foo.com", 1223),
-                             HostPortPair("chromium.org", 12345)));
+                             HostPortPair("monyhar.org", 12345)));
   auto priority5 = std::vector<HostPortPair>(result_hosts.value().begin() + 2,
                                              result_hosts.value().end());
   EXPECT_THAT(priority5,

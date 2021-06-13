@@ -34,8 +34,8 @@
 #include "ui/resources/grit/webui_resources.h"
 
 // These data types must be in all lowercase.
-const char kWebUITabIdDataType[] = "application/vnd.chromium.tab";
-const char kWebUITabGroupIdDataType[] = "application/vnd.chromium.tabgroup";
+const char kWebUITabIdDataType[] = "application/vnd.monyhar.tab";
+const char kWebUITabGroupIdDataType[] = "application/vnd.monyhar.tabgroup";
 
 TabStripUI::TabStripUI(content::WebUI* web_ui)
     : content::WebUIController(web_ui),

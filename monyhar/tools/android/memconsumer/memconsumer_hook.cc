@@ -10,7 +10,7 @@
 
 extern "C" {
 JNIEXPORT void JNICALL
-    Java_org_chromium_memconsumer_ResidentService_nativeUseMemory(JNIEnv* env,
+    Java_org_monyhar_memconsumer_ResidentService_nativeUseMemory(JNIEnv* env,
                                                                   jobject clazz,
                                                                   jlong memory);
 }
@@ -28,7 +28,7 @@ uint32_t get_random() {
 }  // namespace
 
 JNIEXPORT void JNICALL
-    Java_org_chromium_memconsumer_ResidentService_nativeUseMemory(
+    Java_org_monyhar_memconsumer_ResidentService_nativeUseMemory(
         JNIEnv* env,
         jobject clazz,
         jlong memory) {

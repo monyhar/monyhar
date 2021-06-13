@@ -54,14 +54,14 @@ class CanonicalURLRetrieverTest : public web::WebTestWithWebState {
 // Validates that if the canonical URL is different from the visible URL, it is
 // found and given to the completion block.
 TEST_F(CanonicalURLRetrieverTest, TestCanonicalURLDifferentFromVisible) {
-  LoadHtml(@"<link rel=\"canonical\" href=\"https://chromium.test\">",
-           GURL("https://m.chromium.test/"));
+  LoadHtml(@"<link rel=\"canonical\" href=\"https://monyhar.test\">",
+           GURL("https://m.monyhar.test/"));
 
   GURL url = GURL("garbage");
   bool success = RetrieveCanonicalUrl(&url);
 
   ASSERT_TRUE(success);
-  EXPECT_EQ("https://chromium.test/", url);
+  EXPECT_EQ("https://monyhar.test/", url);
   histogram_tester_.ExpectUniqueSample(
       ui_metrics::kCanonicalURLResultHistogram,
       ui_metrics::SUCCESS_CANONICAL_URL_DIFFERENT_FROM_VISIBLE, 1);
@@ -70,14 +70,14 @@ TEST_F(CanonicalURLRetrieverTest, TestCanonicalURLDifferentFromVisible) {
 // Validates that if the canonical URL is the same as the visible URL, it is
 // found and given to the completion block.
 TEST_F(CanonicalURLRetrieverTest, TestCanonicalURLSameAsVisible) {
-  LoadHtml(@"<link rel=\"canonical\" href=\"https://chromium.test\">",
-           GURL("https://chromium.test/"));
+  LoadHtml(@"<link rel=\"canonical\" href=\"https://monyhar.test\">",
+           GURL("https://monyhar.test/"));
 
   GURL url = GURL("garbage");
   bool success = RetrieveCanonicalUrl(&url);
 
   ASSERT_TRUE(success);
-  EXPECT_EQ("https://chromium.test/", url);
+  EXPECT_EQ("https://monyhar.test/", url);
   histogram_tester_.ExpectUniqueSample(
       ui_metrics::kCanonicalURLResultHistogram,
       ui_metrics::SUCCESS_CANONICAL_URL_SAME_AS_VISIBLE, 1);
@@ -87,7 +87,7 @@ TEST_F(CanonicalURLRetrieverTest, TestCanonicalURLSameAsVisible) {
 // completion block.
 TEST_F(CanonicalURLRetrieverTest, TestNoCanonicalURLFound) {
   LoadHtml(@"No canonical link on this page.",
-           GURL("https://m.chromium.test/"));
+           GURL("https://m.monyhar.test/"));
 
   GURL url = GURL("garbage");
   bool success = RetrieveCanonicalUrl(&url);
@@ -102,8 +102,8 @@ TEST_F(CanonicalURLRetrieverTest, TestNoCanonicalURLFound) {
 // Validates that if the found canonical URL is invalid, an empty GURL is
 // given to the completion block.
 TEST_F(CanonicalURLRetrieverTest, TestInvalidCanonicalFound) {
-  LoadHtml(@"<link rel=\"canonical\" href=\"chromium\">",
-           GURL("https://m.chromium.test/"));
+  LoadHtml(@"<link rel=\"canonical\" href=\"monyhar\">",
+           GURL("https://m.monyhar.test/"));
 
   GURL url = GURL("garbage");
   bool success = RetrieveCanonicalUrl(&url);
@@ -119,15 +119,15 @@ TEST_F(CanonicalURLRetrieverTest, TestInvalidCanonicalFound) {
 // to the completion block.
 TEST_F(CanonicalURLRetrieverTest, TestMultipleCanonicalURLsFound) {
   LoadHtml(
-      @"<link rel=\"canonical\" href=\"https://chromium.test\">"
-      @"<link rel=\"canonical\" href=\"https://chromium1.test\">",
-      GURL("https://m.chromium.test/"));
+      @"<link rel=\"canonical\" href=\"https://monyhar.test\">"
+      @"<link rel=\"canonical\" href=\"https://monyhar1.test\">",
+      GURL("https://m.monyhar.test/"));
 
   GURL url = GURL("garbage");
   bool success = RetrieveCanonicalUrl(&url);
 
   ASSERT_TRUE(success);
-  EXPECT_EQ("https://chromium.test/", url);
+  EXPECT_EQ("https://monyhar.test/", url);
   histogram_tester_.ExpectUniqueSample(
       ui_metrics::kCanonicalURLResultHistogram,
       ui_metrics::SUCCESS_CANONICAL_URL_DIFFERENT_FROM_VISIBLE, 1);
@@ -136,8 +136,8 @@ TEST_F(CanonicalURLRetrieverTest, TestMultipleCanonicalURLsFound) {
 // Validates that if the visible and canonical URLs are http, an empty GURL is
 // given to the completion block.
 TEST_F(CanonicalURLRetrieverTest, TestCanonicalURLHTTP) {
-  LoadHtml(@"<link rel=\"canonical\" href=\"http://chromium.test\">",
-           GURL("http://m.chromium.test/"));
+  LoadHtml(@"<link rel=\"canonical\" href=\"http://monyhar.test\">",
+           GURL("http://m.monyhar.test/"));
 
   GURL url = GURL("garbage");
   bool success = RetrieveCanonicalUrl(&url);
@@ -152,8 +152,8 @@ TEST_F(CanonicalURLRetrieverTest, TestCanonicalURLHTTP) {
 // Validates that if the visible URL is HTTP but the canonical URL is HTTPS, an
 // empty GURL is given to the completion block.
 TEST_F(CanonicalURLRetrieverTest, TestCanonicalURLHTTPSUpgrade) {
-  LoadHtml(@"<link rel=\"canonical\" href=\"https://chromium.test\">",
-           GURL("http://m.chromium.test/"));
+  LoadHtml(@"<link rel=\"canonical\" href=\"https://monyhar.test\">",
+           GURL("http://m.monyhar.test/"));
 
   GURL url = GURL("garbage");
   bool success = RetrieveCanonicalUrl(&url);
@@ -168,14 +168,14 @@ TEST_F(CanonicalURLRetrieverTest, TestCanonicalURLHTTPSUpgrade) {
 // Validates that if the visible URL is HTTPS but the canonical URL is HTTP, it
 // is found and given to the completion block.
 TEST_F(CanonicalURLRetrieverTest, TestCanonicalLinkHTTPSDowngrade) {
-  LoadHtml(@"<link rel=\"canonical\" href=\"http://chromium.test\">",
-           GURL("https://m.chromium.test/"));
+  LoadHtml(@"<link rel=\"canonical\" href=\"http://monyhar.test\">",
+           GURL("https://m.monyhar.test/"));
 
   GURL url = GURL("garbage");
   bool success = RetrieveCanonicalUrl(&url);
 
   ASSERT_TRUE(success);
-  EXPECT_EQ("http://chromium.test/", url);
+  EXPECT_EQ("http://monyhar.test/", url);
   histogram_tester_.ExpectUniqueSample(
       ui_metrics::kCanonicalURLResultHistogram,
       ui_metrics::SUCCESS_CANONICAL_URL_NOT_HTTPS, 1);

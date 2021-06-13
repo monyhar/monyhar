@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs.content;
+package org.monyhar.chrome.browser.customtabs.content;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyBoolean;
@@ -24,46 +24,46 @@ import org.mockito.Captor;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.Callback;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.UserDataHost;
-import org.chromium.chrome.browser.ActivityTabProvider;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.WarmupManager;
-import org.chromium.chrome.browser.WebContentsFactory;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.app.tab_activity_glue.ReparentingTask;
-import org.chromium.chrome.browser.app.tabmodel.CustomTabsTabModelOrchestrator;
-import org.chromium.chrome.browser.browserservices.intents.ColorProvider;
-import org.chromium.chrome.browser.compositor.CompositorViewHolder;
-import org.chromium.chrome.browser.customtabs.CloseButtonNavigator;
-import org.chromium.chrome.browser.customtabs.CustomTabDelegateFactory;
-import org.chromium.chrome.browser.customtabs.CustomTabIncognitoManager;
-import org.chromium.chrome.browser.customtabs.CustomTabIntentDataProvider;
-import org.chromium.chrome.browser.customtabs.CustomTabNavigationEventObserver;
-import org.chromium.chrome.browser.customtabs.CustomTabObserver;
-import org.chromium.chrome.browser.customtabs.CustomTabTabPersistencePolicy;
-import org.chromium.chrome.browser.customtabs.CustomTabsConnection;
-import org.chromium.chrome.browser.customtabs.ReparentingTaskProvider;
-import org.chromium.chrome.browser.customtabs.shadows.ShadowExternalNavigationDelegateImpl;
-import org.chromium.chrome.browser.flags.ActivityType;
-import org.chromium.chrome.browser.fullscreen.FullscreenManager;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
-import org.chromium.chrome.browser.init.StartupTabPreloader;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabImpl;
-import org.chromium.chrome.browser.tabmodel.AsyncTabCreationParams;
-import org.chromium.chrome.browser.tabmodel.AsyncTabParamsManager;
-import org.chromium.chrome.browser.tabmodel.AsyncTabParamsManagerFactory;
-import org.chromium.chrome.browser.tabmodel.TabModel;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorImpl;
-import org.chromium.chrome.browser.toolbar.ToolbarManager;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.NavigationController;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.url.GURL;
-import org.chromium.url.JUnitTestGURLs;
+import org.monyhar.base.Callback;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.UserDataHost;
+import org.monyhar.chrome.browser.ActivityTabProvider;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.WarmupManager;
+import org.monyhar.chrome.browser.WebContentsFactory;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.app.tab_activity_glue.ReparentingTask;
+import org.monyhar.chrome.browser.app.tabmodel.CustomTabsTabModelOrchestrator;
+import org.monyhar.chrome.browser.browserservices.intents.ColorProvider;
+import org.monyhar.chrome.browser.compositor.CompositorViewHolder;
+import org.monyhar.chrome.browser.customtabs.CloseButtonNavigator;
+import org.monyhar.chrome.browser.customtabs.CustomTabDelegateFactory;
+import org.monyhar.chrome.browser.customtabs.CustomTabIncognitoManager;
+import org.monyhar.chrome.browser.customtabs.CustomTabIntentDataProvider;
+import org.monyhar.chrome.browser.customtabs.CustomTabNavigationEventObserver;
+import org.monyhar.chrome.browser.customtabs.CustomTabObserver;
+import org.monyhar.chrome.browser.customtabs.CustomTabTabPersistencePolicy;
+import org.monyhar.chrome.browser.customtabs.CustomTabsConnection;
+import org.monyhar.chrome.browser.customtabs.ReparentingTaskProvider;
+import org.monyhar.chrome.browser.customtabs.shadows.ShadowExternalNavigationDelegateImpl;
+import org.monyhar.chrome.browser.flags.ActivityType;
+import org.monyhar.chrome.browser.fullscreen.FullscreenManager;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.chrome.browser.init.StartupTabPreloader;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabImpl;
+import org.monyhar.chrome.browser.tabmodel.AsyncTabCreationParams;
+import org.monyhar.chrome.browser.tabmodel.AsyncTabParamsManager;
+import org.monyhar.chrome.browser.tabmodel.AsyncTabParamsManagerFactory;
+import org.monyhar.chrome.browser.tabmodel.TabModel;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorImpl;
+import org.monyhar.chrome.browser.toolbar.ToolbarManager;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.NavigationController;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.url.GURL;
+import org.monyhar.url.JUnitTestGURLs;
 
 /**
  * A TestRule that sets up the mocks and contains helper methods for JUnit/Robolectric tests scoped

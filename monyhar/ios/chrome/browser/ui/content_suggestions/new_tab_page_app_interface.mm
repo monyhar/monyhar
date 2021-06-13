@@ -106,8 +106,8 @@ ContentSuggestion CreateSuggestion(Category category,
   for (NSInteger i = 1; i <= numberOfSuggestions; i++) {
     std::string index = base::SysNSStringToUTF8(@(i).stringValue);
     suggestions.push_back(
-        CreateSuggestion([self category], "chromium" + index,
-                         GURL("http://chromium.org/" + index)));
+        CreateSuggestion([self category], "monyhar" + index,
+                         GURL("http://monyhar.org/" + index)));
   }
   [self provider]->FireSuggestionsChanged([self category],
                                           std::move(suggestions));
@@ -127,8 +127,8 @@ ContentSuggestion CreateSuggestion(Category category,
 + (void)addSuggestionNumber:(NSInteger)suggestionNumber {
   std::string index = base::NumberToString(suggestionNumber);
   std::vector<ContentSuggestion> suggestions;
-  suggestions.push_back(CreateSuggestion([self category], "chromium" + index,
-                                         GURL("http://chromium.org/" + index)));
+  suggestions.push_back(CreateSuggestion([self category], "monyhar" + index,
+                                         GURL("http://monyhar.org/" + index)));
   [self provider]->FireSuggestionsChanged([self category],
                                           std::move(suggestions));
 }

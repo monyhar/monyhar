@@ -5,12 +5,12 @@
 # Proguard flags for what should be kept in the main dex. Only used
 # during main dex list determination, not during actual proguarding.
 
--keep @org.chromium.base.annotations.MainDex class * {
+-keep @org.monyhar.base.annotations.MainDex class * {
   *;
 }
 
 -keepclasseswithmembers class * {
-  @org.chromium.base.annotations.MainDex <methods>;
+  @org.monyhar.base.annotations.MainDex <methods>;
 }
 
 # Assume all IDL-generated classes should be kept. They can't reference other
@@ -25,7 +25,7 @@
 }
 
 # Renderers / GPU process don't load secondary dex.
--keep public class * extends org.chromium.base.process_launcher.ChildProcessService {
+-keep public class * extends org.monyhar.base.process_launcher.ChildProcessService {
   *;
 }
 

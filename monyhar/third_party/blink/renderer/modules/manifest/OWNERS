@@ -1,8 +1,8 @@
-cmp@chromium.org
-dmurph@chromium.org
-dominickn@chromium.org
-mgiuca@chromium.org
-msw@chromium.org
+cmp@monyhar.org
+dmurph@monyhar.org
+dominickn@monyhar.org
+mgiuca@monyhar.org
+msw@monyhar.org
 
 per-file *_type_converter*.*=set noparent
 per-file *_type_converter*.*=file://ipc/SECURITY_OWNERS

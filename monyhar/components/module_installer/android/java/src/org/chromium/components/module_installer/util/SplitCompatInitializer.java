@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.module_installer.util;
+package org.monyhar.components.module_installer.util;
 
 import com.google.android.play.core.splitcompat.SplitCompat;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.ThreadUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.ThreadUtils;
 
 /**
  * PlayCore SplitCompat initializer for installing modules in the application context.

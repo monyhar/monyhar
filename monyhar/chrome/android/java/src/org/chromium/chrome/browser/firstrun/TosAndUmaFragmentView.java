@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.firstrun;
+package org.monyhar.chrome.browser.firstrun;
 
 import android.content.Context;
 import android.os.Build;
@@ -13,7 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 
-import org.chromium.chrome.R;
+import org.monyhar.chrome.R;
 
 /**
  * Base view for fre_tosanduma.xml. This view may change child view placement when changing screen

@@ -355,7 +355,7 @@ class CHROMECAST_EXPORT Gatt {
   };
 };
 
-// Work around '[chromium-style] Complex class/struct needs an explicit
+// Work around '[monyhar-style] Complex class/struct needs an explicit
 // out-of-line constructor.'
 inline Gatt::Characteristic::Characteristic() = default;
 inline Gatt::Characteristic::Characteristic(const Characteristic& other) =

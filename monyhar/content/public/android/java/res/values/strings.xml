@@ -10,7 +10,7 @@
     Android content strings now live in
     content/public/android/java/strings/android_content_strings.grd
 
-    See http://www.chromium.org/developers/design-documents/ui-localization
+    See http://www.monyhar.org/developers/design-documents/ui-localization
 -->
 
 <resources/>

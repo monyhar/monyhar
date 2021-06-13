@@ -32,7 +32,7 @@
 #include "ui/gfx/image/image_skia.h"
 
 #if !defined(OS_ANDROID)
-#include "chrome/grit/chromium_strings.h"
+#include "chrome/grit/monyhar_strings.h"
 #include "components/vector_icons/vector_icons.h"
 #include "ui/base/l10n/l10n_util.h"
 #include "ui/gfx/color_palette.h"

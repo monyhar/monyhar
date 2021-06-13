@@ -19,7 +19,7 @@ class JniOAuthTokenGetter : public OAuthTokenGetter {
  public:
   // This is for generating the Java enum counterpart. Please keep this in sync
   // with OAuthTokenGetter::Status.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chromoting.jni
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chromoting.jni
   // GENERATED_JAVA_CLASS_NAME_OVERRIDE: OAuthTokenStatus
   enum JniStatus {
     JNI_STATUS_SUCCESS,

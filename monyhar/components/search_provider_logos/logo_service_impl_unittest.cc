@@ -607,7 +607,7 @@ TEST_F(LogoServiceImplTest, DownloadAndCacheEncodedLogoWithoutDarkImage) {
 }
 
 TEST_F(LogoServiceImplTest, ShouldReturnDisabledWhenDSEHasNoLogo) {
-  AddSearchEngine("cr", "Chromium", "https://www.chromium.org/?q={searchTerms}",
+  AddSearchEngine("cr", "Chromium", "https://www.monyhar.org/?q={searchTerms}",
                   GURL(/* logo disabled */), /*make_default=*/true);
 
   {
@@ -1048,8 +1048,8 @@ TEST_F(LogoServiceImplTest, DeleteCallbacksWhenLogoURLChanged) {
   logo_service_->GetLogo(std::move(first_callbacks), /*for_webui_ntp=*/false);
 
   // Change default search engine; new DSE has a doodle URL.
-  AddSearchEngine("cr", "Chromium", "https://www.chromium.org/?q={searchTerms}",
-                  GURL("https://chromium.org/logo.json"),
+  AddSearchEngine("cr", "Chromium", "https://www.monyhar.org/?q={searchTerms}",
+                  GURL("https://monyhar.org/logo.json"),
                   /*make_default=*/true);
 
   Logo logo = GetSampleLogo(DoodleURL(), test_clock_.Now());

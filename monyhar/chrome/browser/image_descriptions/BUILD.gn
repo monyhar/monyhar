@@ -6,11 +6,11 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "android/java/src/org/chromium/chrome/browser/image_descriptions/ImageDescriptionsController.java",
-    "android/java/src/org/chromium/chrome/browser/image_descriptions/ImageDescriptionsControllerDelegate.java",
-    "android/java/src/org/chromium/chrome/browser/image_descriptions/ImageDescriptionsDialog.java",
-    "android/java/src/org/chromium/chrome/browser/image_descriptions/ImageDescriptionsSettings.java",
-    "android/java/src/org/chromium/chrome/browser/image_descriptions/RadioButtonGroupAccessibilityPreference.java",
+    "android/java/src/org/monyhar/chrome/browser/image_descriptions/ImageDescriptionsController.java",
+    "android/java/src/org/monyhar/chrome/browser/image_descriptions/ImageDescriptionsControllerDelegate.java",
+    "android/java/src/org/monyhar/chrome/browser/image_descriptions/ImageDescriptionsDialog.java",
+    "android/java/src/org/monyhar/chrome/browser/image_descriptions/ImageDescriptionsSettings.java",
+    "android/java/src/org/monyhar/chrome/browser/image_descriptions/RadioButtonGroupAccessibilityPreference.java",
   ]
 
   deps = [
@@ -33,11 +33,11 @@ android_library("java") {
 
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
 
-  resources_package = "org.chromium.chrome.browser.image_descriptions"
+  resources_package = "org.monyhar.chrome.browser.image_descriptions"
 }
 
 generate_jni("jni_headers") {
-  sources = [ "android/java/src/org/chromium/chrome/browser/image_descriptions/ImageDescriptionsController.java" ]
+  sources = [ "android/java/src/org/monyhar/chrome/browser/image_descriptions/ImageDescriptionsController.java" ]
 }
 
 android_resources("java_resources") {
@@ -58,9 +58,9 @@ android_library("javatests") {
   testonly = true
 
   sources = [
-    "android/java/src/org/chromium/chrome/browser/image_descriptions/ImageDescriptionsControllerTest.java",
-    "android/java/src/org/chromium/chrome/browser/image_descriptions/ImageDescriptionsDialogTest.java",
-    "android/java/src/org/chromium/chrome/browser/image_descriptions/ImageDescriptionsSettingsTest.java",
+    "android/java/src/org/monyhar/chrome/browser/image_descriptions/ImageDescriptionsControllerTest.java",
+    "android/java/src/org/monyhar/chrome/browser/image_descriptions/ImageDescriptionsDialogTest.java",
+    "android/java/src/org/monyhar/chrome/browser/image_descriptions/ImageDescriptionsSettingsTest.java",
   ]
 
   deps = [

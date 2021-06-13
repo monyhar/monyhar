@@ -614,7 +614,7 @@ void IncidentReportingServiceTest::ExpectTestIncidentUploadWithBothDownloads(
 
 const char IncidentReportingServiceTest::kFakeOsName[] = "fakedows";
 const char IncidentReportingServiceTest::kFakeDownloadToken[] = "fakedlt";
-const char IncidentReportingServiceTest::kFakeDownloadHost[] = "chromium.org";
+const char IncidentReportingServiceTest::kFakeDownloadHost[] = "monyhar.org";
 const char IncidentReportingServiceTest::kTestTrackedPrefPath[] = "some_pref";
 const char IncidentReportingServiceTest::kFakeExtensionId[] = "fakeExtensionId";
 

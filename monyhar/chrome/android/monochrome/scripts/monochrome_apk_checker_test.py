@@ -19,7 +19,7 @@ def BuildFileMatchRegex(*file_matchers):
 CHROME_SPECIFIC = BuildFileMatchRegex(
     r'lib/.*/libchrome\.so',
     r'lib/.*/libchrome\.\d{4}\.\d{2,3}\.so', # libchrome placeholders
-    r'lib/.*/libchromium_android_linker\.so',
+    r'lib/.*/libmonyhar_android_linker\.so',
     r'lib/.*/libchromeview\.so', # placeholder library
     r'lib/.*/libchrome_crashpad_handler\.so',
     r'lib/.*/crazy\.libchrome\.so',
@@ -37,8 +37,8 @@ CHROME_SPECIFIC = BuildFileMatchRegex(
 
 # WebView specific files which are not in Monochrome.apk
 WEBVIEW_SPECIFIC = BuildFileMatchRegex(
-    r'lib/.*/libwebviewchromium\.so',
-    r'lib/.*/libchromium_android_linker\.so',
+    r'lib/.*/libwebviewmonyhar\.so',
+    r'lib/.*/libmonyhar_android_linker\.so',
     r'assets/webview_licenses.notice',
     r'res/.*/accent_font.xml',
     r'res/.*/icon_webview(.webp)?',

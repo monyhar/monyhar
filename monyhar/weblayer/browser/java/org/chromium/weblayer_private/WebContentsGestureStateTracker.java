@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.view.MotionEvent;
 import android.view.View;
 
-import org.chromium.content_public.browser.GestureListenerManager;
-import org.chromium.content_public.browser.GestureStateListener;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.GestureListenerManager;
+import org.monyhar.content_public.browser.GestureStateListener;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * WebContentsGestureStateTracker is responsible for tracking when a scroll/gesture is in progress

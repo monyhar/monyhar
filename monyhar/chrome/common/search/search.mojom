@@ -35,7 +35,7 @@ interface EmbeddedSearchConnector {
 
 // Browser interface to support embedded search. Render frames connect to this
 // interface to query browser data, such as the most visited pages.
-// See http://dev.chromium.org/embeddedsearch
+// See http://dev.monyhar.org/embeddedsearch
 interface EmbeddedSearch {
   // Tells InstantExtended to set the omnibox focus state.
   FocusOmnibox(int32 page_seq_no, bool focus);

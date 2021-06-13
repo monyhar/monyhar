@@ -36,7 +36,7 @@ TEST(JSONWebTokenUtilTest, VerifiesCreateJSONWebToken) {
 
   // Create JWS.
   base::Value claims(base::Value::Type::DICTIONARY);
-  claims.SetKey("aud", base::Value("https://chromium.org"));
+  claims.SetKey("aud", base::Value("https://monyhar.org"));
   absl::optional<std::string> jwt =
       CreateJSONWebToken(claims, private_key.get());
   ASSERT_TRUE(jwt);

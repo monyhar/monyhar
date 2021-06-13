@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.attribution_reporting;
+package org.monyhar.chrome.browser.attribution_reporting;
 
 import android.content.Context;
 import android.hardware.input.InputManager;
@@ -15,9 +15,9 @@ import android.view.VerifiedInputEvent;
 import android.view.VerifiedKeyEvent;
 import android.view.VerifiedMotionEvent;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Predicate;
-import org.chromium.base.compat.ApiHelperForR;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Predicate;
+import org.monyhar.base.compat.ApiHelperForR;
 
 /**
  * Validates input events for Attribution Reporting, using InputManager#verifyInputEvent

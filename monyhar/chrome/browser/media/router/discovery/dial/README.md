@@ -6,8 +6,8 @@ Consoles, etc.).
 
 ## Design Docs
 
-* [Dial Discovery design doc](https://docs.google.com/a/chromium.org/document/d/1vLpUgp5mJi6KFaCV3HEMQEZYDKtbcGdwcKNADuzuLzw/edit?usp=sharing)
-* [Media Router design doc](https://www.chromium.org/developers/design-documents/media-router)
+* [Dial Discovery design doc](https://docs.google.com/a/monyhar.org/document/d/1vLpUgp5mJi6KFaCV3HEMQEZYDKtbcGdwcKNADuzuLzw/edit?usp=sharing)
+* [Media Router design doc](https://www.monyhar.org/developers/design-documents/media-router)
 
 ## DIAL specification
 

@@ -276,7 +276,7 @@ void ProcessSnapshotWin::InitializeUnloadedModules() {
   // retrieve the location for our unload events, and use that address in the
   // target process. Unfortunately, this of course only works for 64-reading-64
   // and 32-reading-32, so at the moment, we simply do not retrieve unloaded
-  // modules for 64-reading-32. See https://crashpad.chromium.org/bug/89.
+  // modules for 64-reading-32. See https://crashpad.monyhar.org/bug/89.
 
 #if defined(ARCH_CPU_X86_64) || defined(ARCH_CPU_ARM64)
   if (!process_reader_.Is64Bit()) {
@@ -472,7 +472,7 @@ void ProcessSnapshotWin::AddMemorySnapshot(
   // useful for the LDR module lists which are a set of doubly-linked lists, all
   // pointing to the same module name strings.
   // TODO(scottmg): A more general version of this, handling overlapping,
-  // contained, etc. https://crashpad.chromium.org/bug/61.
+  // contained, etc. https://crashpad.monyhar.org/bug/61.
   for (const auto& memory_snapshot : *into) {
     if (memory_snapshot->Address() == address &&
         memory_snapshot->Size() == size) {

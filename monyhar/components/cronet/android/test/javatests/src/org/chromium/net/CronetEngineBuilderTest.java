@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
-import static org.chromium.net.CronetProvider.PROVIDER_NAME_APP_PACKAGED;
-import static org.chromium.net.CronetProvider.PROVIDER_NAME_FALLBACK;
-import static org.chromium.net.CronetTestRule.getContext;
+import static org.monyhar.net.CronetProvider.PROVIDER_NAME_APP_PACKAGED;
+import static org.monyhar.net.CronetProvider.PROVIDER_NAME_FALLBACK;
+import static org.monyhar.net.CronetTestRule.getContext;
 
 import android.content.Context;
 import android.support.test.runner.AndroidJUnit4;
@@ -20,7 +20,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.Feature;
+import org.monyhar.base.test.util.Feature;
 
 import java.util.ArrayList;
 import java.util.Arrays;

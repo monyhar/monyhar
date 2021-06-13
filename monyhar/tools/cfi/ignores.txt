@@ -212,7 +212,7 @@ src:*/third_party/skia/src/gpu/vk/*
 src:*/third_party/skia/third_party/vulkanmemoryallocator/*
 
 # The follow entries are speculatively disabled. They're included in the
-# chromium build and include calls to dynamically resolved symbols; however,
+# monyhar build and include calls to dynamically resolved symbols; however,
 # they do not trigger cfi-icall failures in unit tests or normal chrome usage.
 # They're disabled to avoid failing in uncommon code paths. Be careful removing.
 src:*net/http/http_auth_gssapi_posix.cc
@@ -223,7 +223,7 @@ src:*third_party/skia/src/ports/SkFontHost_FreeType.cpp
 ######### Function pointers cast to incorrect type signatures
 
 # libicu is currently compiled such that in libicu the 'UChar' type is a
-# defined as a char16_t internally, but for the rest of chromium it's an
+# defined as a char16_t internally, but for the rest of monyhar it's an
 # unsigned short, causing mismatched type signatures for icalls to/from icu
 # https://crbug.com/732026
 src:*third_party/icu/source/common/*

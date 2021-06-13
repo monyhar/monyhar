@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml
-package: chromium/third_party/android_build_tools/aapt2
+package: monyhar/third_party/android_build_tools/aapt2
 description: Android SDK tool to build App Bundles
 # TODO(https://crbug.com/977242): Remove this and go back to symlinks once
 # swarming isolation works properly with symlinks.

@@ -35,7 +35,7 @@ static constexpr char kAppIdKey[] = "entry.2112096055";
 
 // App IDs containing this are unidentified and probably aren't games.
 // Don't prompt for feedback for them.
-static constexpr char kNonGameWindowPrefix[] = "org.chromium.borealis.xid.";
+static constexpr char kNonGameWindowPrefix[] = "org.monyhar.borealis.xid.";
 
 // Windows with these app IDs are not games. Don't prompt for feedback for them.
 // Hashed by crx_file::id_util::GenerateId().

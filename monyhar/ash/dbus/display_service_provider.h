@@ -15,7 +15,7 @@
 
 namespace ash {
 
-// This class implements org.chromium.DisplayService for chrome.
+// This class implements org.monyhar.DisplayService for chrome.
 class DisplayServiceProvider
     : public chromeos::CrosDBusService::ServiceProviderInterface {
  public:

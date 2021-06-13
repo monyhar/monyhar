@@ -14,7 +14,7 @@
 #   and images, but in the future, this may grow in scope.
 #
 # Third_party/foobar dependencies need to be reviewed before they are added:
-# https://chromium.googlesource.com/chromium/src.git/+/master/docs/adding_to_third_party.md#Get-a-review
+# https://monyhar.googlesource.com/monyhar/src.git/+/master/docs/adding_to_third_party.md#Get-a-review
 #
 # Normally, this review is a one-off process: once third_party/foobar is
 # accepted, it doesn't need additional review for e.g. version upgrades.

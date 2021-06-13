@@ -4,7 +4,7 @@
 
 #include "components/exo/shared_memory.h"
 
-#include <GLES2/gl2extchromium.h>
+#include <GLES2/gl2extmonyhar.h>
 #include <stddef.h>
 
 #include <utility>

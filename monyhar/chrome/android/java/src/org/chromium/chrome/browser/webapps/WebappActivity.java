@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps;
+package org.monyhar.chrome.browser.webapps;
 
-import static org.chromium.components.webapk.lib.common.WebApkConstants.WEBAPK_PACKAGE_PREFIX;
-import static org.chromium.webapk.lib.common.WebApkConstants.EXTRA_WEBAPK_PACKAGE_NAME;
+import static org.monyhar.components.webapk.lib.common.WebApkConstants.WEBAPK_PACKAGE_PREFIX;
+import static org.monyhar.webapk.lib.common.WebApkConstants.EXTRA_WEBAPK_PACKAGE_NAME;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -14,12 +14,12 @@ import android.text.TextUtils;
 import androidx.annotation.VisibleForTesting;
 import androidx.browser.customtabs.CustomTabsIntent;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.app.metrics.LaunchCauseMetrics;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.customtabs.BaseCustomTabActivity;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.app.metrics.LaunchCauseMetrics;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.customtabs.BaseCustomTabActivity;
 
 /**
  * Displays a webapp in a nearly UI-less Chrome (InfoBars still appear).

@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.app.tab_activity_glue;
+package org.monyhar.chrome.browser.app.tab_activity_glue;
 
-import org.chromium.chrome.browser.compositor.CompositorViewHolder;
-import org.chromium.chrome.browser.tab.TabDelegateFactory;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.url.GURL;
+import org.monyhar.chrome.browser.compositor.CompositorViewHolder;
+import org.monyhar.chrome.browser.tab.TabDelegateFactory;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.url.GURL;
 
 /** Constructs delegates needed for reparenting tabs. */
 public class ReparentingDelegateFactory {

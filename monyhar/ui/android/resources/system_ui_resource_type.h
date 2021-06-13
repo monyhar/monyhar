@@ -8,7 +8,7 @@
 namespace ui {
 
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.ui.resources
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.ui.resources
 enum SystemUIResourceType {
   OVERSCROLL_GLOW,
 };

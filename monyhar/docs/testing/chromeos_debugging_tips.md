@@ -119,17 +119,17 @@ To run a Tast test the same way it's ran on Chrome's builders:
 >TODO: Add instructions for rerunning these tests locally.
 
 
-[linux-chromeos]: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/chromeos_build_instructions.md
-[Tast]: https://chromium.googlesource.com/chromiumos/platform/tast/+/HEAD/README.md
-[failed build]: https://ci.chromium.org/p/chromium/builders/ci/chromeos-kevin-rel/29791
-[ui.WindowControl]: https://logs.chromium.org/logs/chromium/buildbucket/cr-buildbucket.appspot.com/8865053459542681936/+/steps/chrome_all_tast_tests_on_ChromeOS/0/logs/Deterministic_failure:_ui.WindowControl__status_FAILURE_/0
-[Chrome probably crashed]: https://logs.chromium.org/logs/chromium/buildbucket/cr-buildbucket.appspot.com/8905974915785988832/+/steps/chrome_all_tast_tests__retry_shards_with_patch__on_ChromeOS/0/logs/Deterministic_failure:_ui.ChromeLogin__status_FAILURE_/0
+[linux-chromeos]: https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/chromeos_build_instructions.md
+[Tast]: https://monyhar.googlesource.com/monyharos/platform/tast/+/HEAD/README.md
+[failed build]: https://ci.monyhar.org/p/monyhar/builders/ci/chromeos-kevin-rel/29791
+[ui.WindowControl]: https://logs.monyhar.org/logs/monyhar/buildbucket/cr-buildbucket.appspot.com/8865053459542681936/+/steps/chrome_all_tast_tests_on_ChromeOS/0/logs/Deterministic_failure:_ui.WindowControl__status_FAILURE_/0
+[Chrome probably crashed]: https://logs.monyhar.org/logs/monyhar/buildbucket/cr-buildbucket.appspot.com/8905974915785988832/+/steps/chrome_all_tast_tests__retry_shards_with_patch__on_ChromeOS/0/logs/Deterministic_failure:_ui.ChromeLogin__status_FAILURE_/0
 [shard #0 isolated out]: https://isolateserver.appspot.com/browse?namespace=default-gzip&hash=3d35c273195f640c69b1cf0d15d19d9868e3f593
 [tests/ui.WindowControl/messages]: https://isolateserver.appspot.com/browse?namespace=default-gzip&digest=baefbcfd24c02b3ada4617d259dc6b4220b413b9&as=messages
 [system_logs/chrome/chrome_20201029-195153]: https://isolateserver.appspot.com/browse?namespace=default-gzip&digest=272166c85f190c336a9885f0267cbdea912e31da&as=chrome_20201029-195153
-[attribute]: https://chromium.googlesource.com/chromiumos/platform/tast/+/HEAD/docs/test_attributes.md
-[this list]: https://codesearch.chromium.org/chromium/src/chromeos/tast_control.gni
-[Chrome uprev]: https://chromium.googlesource.com/chromiumos/docs/+/HEAD/chrome_commit_pipeline.md#the-chrome-os-commit-pipeline-for-chrome-changes
-[Simple Chrome]: https://chromium.googlesource.com/chromiumos/docs/+/HEAD/simple_chrome_workflow.md
-[deploy_chrome.py]: https://chromium.googlesource.com/chromiumos/docs/+/HEAD/simple_chrome_workflow.md#Deploying-Chrome-to-the-device
-[here]: https://chromium.googlesource.com/chromiumos/docs/+/HEAD/cros_vm.md#in-simple-chrome
+[attribute]: https://monyhar.googlesource.com/monyharos/platform/tast/+/HEAD/docs/test_attributes.md
+[this list]: https://codesearch.monyhar.org/monyhar/src/chromeos/tast_control.gni
+[Chrome uprev]: https://monyhar.googlesource.com/monyharos/docs/+/HEAD/chrome_commit_pipeline.md#the-chrome-os-commit-pipeline-for-chrome-changes
+[Simple Chrome]: https://monyhar.googlesource.com/monyharos/docs/+/HEAD/simple_chrome_workflow.md
+[deploy_chrome.py]: https://monyhar.googlesource.com/monyharos/docs/+/HEAD/simple_chrome_workflow.md#Deploying-Chrome-to-the-device
+[here]: https://monyhar.googlesource.com/monyharos/docs/+/HEAD/cros_vm.md#in-simple-chrome

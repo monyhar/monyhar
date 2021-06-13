@@ -99,12 +99,12 @@ if (is_android) {
       "//third_party/androidx:androidx_annotation_annotation_java",
       "//third_party/blink/public/mojom:android_mojo_bindings_java",
     ]
-    sources = [ "android/test_support/src/org/chromium/chrome/test_support/PaymentRequestTestBridge.java" ]
+    sources = [ "android/test_support/src/org/monyhar/chrome/test_support/PaymentRequestTestBridge.java" ]
   }
 
   generate_jni("test_support_jni_headers") {
     testonly = true
-    sources = [ "android/test_support/src/org/chromium/chrome/test_support/PaymentRequestTestBridge.java" ]
+    sources = [ "android/test_support/src/org/monyhar/chrome/test_support/PaymentRequestTestBridge.java" ]
   }
 }
 
@@ -892,9 +892,9 @@ if (is_android) {
       "//ui/android:ui_full_java",
     ]
     sources = [
-      "android/browsertests_apk/src/org/chromium/android_browsertests_apk/ChromeBrowserTestsActivity.java",
-      "android/browsertests_apk/src/org/chromium/android_browsertests_apk/ChromeBrowserTestsApplication.java",
-      "android/browsertests_apk/src/org/chromium/android_browsertests_apk/ChromeBrowserTestsInstrumentationTestRunner.java",
+      "android/browsertests_apk/src/org/monyhar/android_browsertests_apk/ChromeBrowserTestsActivity.java",
+      "android/browsertests_apk/src/org/monyhar/android_browsertests_apk/ChromeBrowserTestsApplication.java",
+      "android/browsertests_apk/src/org/monyhar/android_browsertests_apk/ChromeBrowserTestsInstrumentationTestRunner.java",
     ]
   }
 
@@ -1292,7 +1292,7 @@ if (!is_android) {
       "//ppapi/tests/test_page.css",
       "//ppapi/tests/test_page.css.mock-http-headers",
       "//third_party/mocha/mocha.js",
-      "//third_party/polymer/v1_0/components-chromium/iron-test-helpers/mock-interactions.js",
+      "//third_party/polymer/v1_0/components-monyhar/iron-test-helpers/mock-interactions.js",
       "//third_party/pywebsocket3/src/mod_pywebsocket/",
       "//third_party/simplejson/",
       "//third_party/tlslite/",
@@ -2115,7 +2115,7 @@ if (!is_android) {
         "//ui/file_manager/image_loader/",
         "//ui/file_manager/integration_tests/",
         "//ui/file_manager/video_player",
-        "//third_party/polymer/v1_0/components-chromium/",
+        "//third_party/polymer/v1_0/components-monyhar/",
         "$root_gen_dir/ui/file_manager/file_manager/",
         "$root_out_dir/chromevox_test_data/",
         "$root_out_dir/content_shell.pak",
@@ -5572,7 +5572,7 @@ test("unit_tests") {
         "../utility/importer/safari_importer_unittest.mm",
       ]
 
-      if (enable_chromium_updater) {
+      if (enable_monyhar_updater) {
         sources +=
             [ "../browser/updater/browser_updater_client_mac_unittest.mm" ]
       }
@@ -7470,7 +7470,7 @@ if (!is_android) {
       "//ppapi/tests/test_page.css",
       "//ppapi/tests/test_page.css.mock-http-headers",
       "//third_party/mocha/mocha.js",
-      "//third_party/polymer/v1_0/components-chromium/iron-test-helpers/mock-interactions.js",
+      "//third_party/polymer/v1_0/components-monyhar/iron-test-helpers/mock-interactions.js",
       "//third_party/pywebsocket3/src/mod_pywebsocket/",
       "//third_party/tlslite/",
       "//tools/metrics/histograms/enums.xml",
@@ -7947,17 +7947,17 @@ if (is_android) {
       "//third_party/junit",
     ]
     sources = [
-      "../android/javatests/src/org/chromium/chrome/browser/sync/AndroidSyncSettingsTestUtils.java",
-      "../android/javatests/src/org/chromium/chrome/browser/sync/MockSyncContentResolverDelegate.java",
-      "../android/javatests/src/org/chromium/chrome/browser/sync/SyncTestSigninUtils.java",
+      "../android/javatests/src/org/monyhar/chrome/browser/sync/AndroidSyncSettingsTestUtils.java",
+      "../android/javatests/src/org/monyhar/chrome/browser/sync/MockSyncContentResolverDelegate.java",
+      "../android/javatests/src/org/monyhar/chrome/browser/sync/SyncTestSigninUtils.java",
     ]
   }
 
   generate_jni("sync_integration_test_support_jni_headers") {
     testonly = true
     sources = [
-      "../android/javatests/src/org/chromium/chrome/browser/sync/AndroidSyncSettingsTestUtils.java",
-      "../android/javatests/src/org/chromium/chrome/browser/sync/SyncTestSigninUtils.java",
+      "../android/javatests/src/org/monyhar/chrome/browser/sync/AndroidSyncSettingsTestUtils.java",
+      "../android/javatests/src/org/monyhar/chrome/browser/sync/SyncTestSigninUtils.java",
     ]
   }
 }
@@ -8428,7 +8428,7 @@ if (!is_fuchsia && !is_android) {
       "//testing/gmock",
       "//testing/gtest",
 
-      # TODO(uwyiming@chromium.org) create a gn target for Web Page Replay Go (WPR Go) and only WPR Go.
+      # TODO(uwyiming@monyhar.org) create a gn target for Web Page Replay Go (WPR Go) and only WPR Go.
       # So that test targets requiring WPR Go does not pull down the whole telemetry tool chain.
       "//third_party/catapult:telemetry_chrome_test_support",
       "//third_party/hunspell",

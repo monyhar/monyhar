@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.util.browser.webapps;
+package org.monyhar.chrome.test.util.browser.webapps;
 
 import android.net.Uri;
 
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.test.util.browser.TabLoadObserver;
-import org.chromium.net.test.EmbeddedTestServer;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.test.util.browser.TabLoadObserver;
+import org.monyhar.net.test.EmbeddedTestServer;
 
 /**
  * Computes URL of webapp test pages with the passed in Web Manifest URL.

@@ -77,9 +77,9 @@ js_library("personalization_reducers") {
 
 js_library("personalization_router_element") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/iron-location:iron-location",
-    "//third_party/polymer/v3_0/components-chromium/iron-location:iron-query-params",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-location:iron-location",
+    "//third_party/polymer/v3_0/components-monyhar/iron-location:iron-query-params",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -87,7 +87,7 @@ js_library("personalization_store") {
   deps = [
     ":personalization_actions",
     ":personalization_reducers",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js/cr/ui:store.m",
     "//ui/webui/resources/js/cr/ui:store_client.m",
   ]
@@ -95,7 +95,7 @@ js_library("personalization_store") {
 
 js_library("styles") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -104,8 +104,8 @@ js_library("wallpaper_collections_element") {
     ":personalization_controller",
     ":styles",
     "../common:constants",
-    "//third_party/polymer/v3_0/components-chromium/paper-spinner:paper-spinner-lite",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/paper-spinner:paper-spinner-lite",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -114,8 +114,8 @@ js_library("wallpaper_images_element") {
     ":personalization_controller",
     ":styles",
     "../common:constants",
-    "//third_party/polymer/v3_0/components-chromium/paper-spinner:paper-spinner-lite",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/paper-spinner:paper-spinner-lite",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -124,8 +124,8 @@ js_library("wallpaper_selected_element") {
     ":personalization_controller",
     ":personalization_store",
     ":styles",
-    "//third_party/polymer/v3_0/components-chromium/paper-spinner:paper-spinner-lite",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/paper-spinner:paper-spinner-lite",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 

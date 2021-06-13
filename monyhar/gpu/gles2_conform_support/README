@@ -2,7 +2,7 @@ To run OpenGL ES 2.0 conformance tests, do the following:
 (These require access to Google-internal sources.)
 1. Generate build files:
    [GYP]
-     "python build/gyp_chromium gpu/gles2_conform_support/gles2_conform_test.gyp"
+     "python build/gyp_monyhar gpu/gles2_conform_support/gles2_conform_test.gyp"
      or set "GYP_DEFINES=internal_gles2_conform_tests=1" and rebuild your
      projects using your standard method. Example:
      "GYP_DEFINES=internal_gles2_conform_tests=1 gclient runhooks"

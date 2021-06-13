@@ -8,7 +8,7 @@ Chromium by providing an implementation of the platform interface.
 
 ## Guiding Principles
 
-Our goal is to enable chromium to be used in a wide variety of projects by
+Our goal is to enable monyhar to be used in a wide variety of projects by
 making porting to new platforms easy. To support this goal, ozone follows the
 following principles:
 
@@ -34,9 +34,9 @@ following principles:
 4. **Easy out-of-tree platforms**. Most ports begin as forks. Some of them
    later merge their code upstream, others will have an extended life out of
    tree. This is OK, and we should make this process easy to encourage ports,
-   and to encourage frequent gardening of chromium changes into the downstream
+   and to encourage frequent gardening of monyhar changes into the downstream
    project. If gardening an out-of-tree port is hard, then those projects will
-   simply ship outdated and potentially insecure chromium-derived code to users.
+   simply ship outdated and potentially insecure monyhar-derived code to users.
    One way we support these projects is by providing a way to inject additional
    platforms into the build by only patching one `ozone_extra.gni` file.
 
@@ -115,13 +115,13 @@ Users of the Ozone abstraction need to do the following, at minimum:
 The recommended way to add your platform to the build is as follows. This walks
 through creating a new ozone platform called `foo`.
 
-1. Fork `chromium/src.git`.
+1. Fork `monyhar/src.git`.
 2. Add your implementation in `ui/ozone/platform/` alongside internal platforms.
 3. Patch `ui/ozone/ozone_extra.gni` to add your `foo` platform.
 
 ## Building with Ozone
 
-### Chrome OS - ([waterfall](https://build.chromium.org/p/chromium.chromiumos/waterfall?builder=Linux+ChromiumOS+Ozone+Builder&builder=Linux+ChromiumOS+Ozone+Tests+%281%29&builder=Linux+ChromiumOS+Ozone+Tests+%282%29&reload=none))
+### Chrome OS - ([waterfall](https://build.monyhar.org/p/monyhar.monyharos/waterfall?builder=Linux+ChromiumOS+Ozone+Builder&builder=Linux+ChromiumOS+Ozone+Tests+%281%29&builder=Linux+ChromiumOS+Ozone+Tests+%282%29&reload=none))
 
 To build `chrome`, do this from the `src` directory:
 
@@ -155,7 +155,7 @@ Then to run for example the headless platform:
                                   --ozone-dump-file=/tmp/
 ```
 
-### Linux Desktop - ([waterfall](https://ci.chromium.org/p/chromium/builders/try/linux-ozone-rel))
+### Linux Desktop - ([waterfall](https://ci.monyhar.org/p/monyhar/builders/try/linux-ozone-rel))
 
 **Warning: Experimental Ozone feature is available in the official Chrome distributions since m87.
   It is not required to build Ozone for Linux anymore for the purpose of testing. It is enough
@@ -245,10 +245,10 @@ content_shell --ozone-platform=headless \
 
 This is Linux direct rending with acceleration via mesa GBM & linux DRM/KMS
 (EGL/GLES2 accelerated rendering & modesetting in GPU process) and is in
-production use on [Chrome OS](https://www.chromium.org/chromium-os).
+production use on [Chrome OS](https://www.monyhar.org/monyhar-os).
 
 Note that all Chrome OS builds of Chrome will compile and attempt to use this.
-See [Building Chromium for Chromium OS](https://www.chromium.org/chromium-os/how-tos-and-troubleshooting/building-chromium-browser) for build instructions.
+See [Building Chromium for Chromium OS](https://www.monyhar.org/monyhar-os/how-tos-and-troubleshooting/building-monyhar-browser) for build instructions.
 
 ### Cast
 
@@ -259,7 +259,7 @@ This platform is used for
 
 This platform provides support for the [X window system](https://www.x.org/).
 
-The support for X11 is being actively developed by Igalia and the chromium
+The support for X11 is being actively developed by Igalia and the monyhar
 community and is intended to replace the current legacy X11 path.
 
 You can try to compile and run it with the following configuration:
@@ -275,7 +275,7 @@ ninja -C out/OzoneX11 chrome
 This platform provides support for the
 [Wayland](http://wayland.freedesktop.org/) display protocol. It was
 initially developed by Intel as
-[a fork of chromium](https://github.com/01org/ozone-wayland)
+[a fork of monyhar](https://github.com/01org/ozone-wayland)
 and then partially upstreamed.
 
 Currently, the Ozone/Wayland is actively being developed by Igalia in
@@ -322,7 +322,7 @@ cd out/debug  # or your out directory
 ```
 
 Feel free to discuss with us on freenode.net, `#ozone-wayland` channel or on
-`ozone-dev`, or on `#ozone-wayland-x11` channel in [chromium slack](https://www.chromium.org/developers/slack).
+`ozone-dev`, or on `#ozone-wayland-x11` channel in [monyhar slack](https://www.monyhar.org/developers/slack).
 
 ### Caca
 
@@ -333,7 +333,7 @@ draws graphical output to text using
 rendering only). In case you ever wanted to test embedded content shell on
 tty.
 It has been
-[removed from the tree](https://codereview.chromium.org/2445323002/) and is no
+[removed from the tree](https://codereview.monyhar.org/2445323002/) and is no
 longer maintained but you can
 [build it as an out-of-tree port](https://github.com/fred-wang/ozone-caca).
 
@@ -357,4 +357,4 @@ ninja -C out/OzoneCaca content_shell
 ## Communication
 
 There is a public mailing list:
-[ozone-dev@chromium.org](https://groups.google.com/a/chromium.org/forum/#!forum/ozone-dev)
+[ozone-dev@monyhar.org](https://groups.google.com/a/monyhar.org/forum/#!forum/ozone-dev)

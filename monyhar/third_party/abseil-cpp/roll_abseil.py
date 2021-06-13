@@ -2,7 +2,7 @@
 
 # NOTE: This script requires python 3.
 
-"""Script to do the first step of Abseil roll into chromium.
+"""Script to do the first step of Abseil roll into monyhar.
 """
 
 import logging
@@ -19,11 +19,11 @@ def _PullAbseil(abseil_dir):
   subprocess.check_call(['git', 'clone', ABSL_URI],
                         cwd=abseil_dir)
 
-def _SyncChromium(chromium_dir):
-  logging.info('Updating chromium...')
-  subprocess.check_call(['git', 'checkout', 'main'], cwd=chromium_dir)
-  subprocess.check_call(['git', 'pull', '--rebase'], cwd=chromium_dir)
-  subprocess.check_call(['gclient', 'sync'], cwd=chromium_dir)
+def _SyncChromium(monyhar_dir):
+  logging.info('Updating monyhar...')
+  subprocess.check_call(['git', 'checkout', 'main'], cwd=monyhar_dir)
+  subprocess.check_call(['git', 'pull', '--rebase'], cwd=monyhar_dir)
+  subprocess.check_call(['gclient', 'sync'], cwd=monyhar_dir)
 
 
 def _UpdateChromiumReadme(readme_filename, abseil_dir):
@@ -48,12 +48,12 @@ def _UpdateChromiumReadme(readme_filename, abseil_dir):
   return old_revision[0:10] + '..' + new_revision[0:10]
 
 
-def _UpdateAbseilInChromium(abseil_dir, chromium_dir):
- logging.info('Syncing abseil in chromium/src/third_party...')
+def _UpdateAbseilInChromium(abseil_dir, monyhar_dir):
+ logging.info('Syncing abseil in monyhar/src/third_party...')
  exclude = [
    '*BUILD.gn',
    'DIR_METADATA',
-   'README.chromium',
+   'README.monyhar',
    'OWNERS',
    '.gitignore',
    '.git',
@@ -66,56 +66,56 @@ def _UpdateAbseilInChromium(abseil_dir, chromium_dir):
    'generate_def_files.py',
    '*.def',
  ]
- params = ['rsync', '-aP', abseil_dir, os.path.join(chromium_dir, 'third_party'), '--delete']
+ params = ['rsync', '-aP', abseil_dir, os.path.join(monyhar_dir, 'third_party'), '--delete']
  for e in exclude:
    params.append('--exclude={}'.format(e))
- subprocess.check_call(params, cwd=chromium_dir)
+ subprocess.check_call(params, cwd=monyhar_dir)
 
 
-def _PatchAbseil(abseil_in_chromium_dir):
+def _PatchAbseil(abseil_in_monyhar_dir):
   logging.info('Patching abseil...')
-  for patch in os.listdir(os.path.join(abseil_in_chromium_dir, 'patches')):
-    subprocess.check_call(['patch', '--strip', '1', '-i', os.path.join(abseil_in_chromium_dir, 'patches', patch)])
+  for patch in os.listdir(os.path.join(abseil_in_monyhar_dir, 'patches')):
+    subprocess.check_call(['patch', '--strip', '1', '-i', os.path.join(abseil_in_monyhar_dir, 'patches', patch)])
 
-  os.remove(os.path.join(abseil_in_chromium_dir, 'absl', 'base', 'internal', 'thread_annotations.h'))
-  os.remove(os.path.join(abseil_in_chromium_dir, 'absl', 'base', 'internal', 'dynamic_annotations.h'))
+  os.remove(os.path.join(abseil_in_monyhar_dir, 'absl', 'base', 'internal', 'thread_annotations.h'))
+  os.remove(os.path.join(abseil_in_monyhar_dir, 'absl', 'base', 'internal', 'dynamic_annotations.h'))
 
 
-def _Commit(chromium_dir, hash_diff):
+def _Commit(monyhar_dir, hash_diff):
   logging.info('Commit...')
   desc="""Roll abseil_revision {0}
 
 Change Log:
-https://chromium.googlesource.com/external/github.com/abseil/abseil-cpp/+log/{0}
+https://monyhar.googlesource.com/external/github.com/abseil/abseil-cpp/+log/{0}
 Full diff:
-https://chromium.googlesource.com/external/github.com/abseil/abseil-cpp/+/{0}
+https://monyhar.googlesource.com/external/github.com/abseil/abseil-cpp/+/{0}
 Bug: None""".format(hash_diff)
 
-  subprocess.check_call(['git', 'add', 'third_party/abseil-cpp'], cwd=chromium_dir)
-  subprocess.check_call(['git', 'commit', '-m', desc], cwd=chromium_dir)
+  subprocess.check_call(['git', 'add', 'third_party/abseil-cpp'], cwd=monyhar_dir)
+  subprocess.check_call(['git', 'commit', '-m', desc], cwd=monyhar_dir)
 
   logging.info('Upload...')
-  subprocess.check_call(['git', 'cl', 'upload', '-m', desc, '--bypass-hooks'], cwd=chromium_dir)
+  subprocess.check_call(['git', 'cl', 'upload', '-m', desc, '--bypass-hooks'], cwd=monyhar_dir)
 
 
 def _Roll():
-  chromium_dir = os.getcwd()
-  abseil_in_chromium_dir = os.path.join(chromium_dir, 'third_party', 'abseil-cpp')
-  _SyncChromium(chromium_dir)
+  monyhar_dir = os.getcwd()
+  abseil_in_monyhar_dir = os.path.join(monyhar_dir, 'third_party', 'abseil-cpp')
+  _SyncChromium(monyhar_dir)
 
   branch_name = datetime.today().strftime('rolling-absl-%Y%m%d')
   logging.info('Creating branch ' + branch_name + ' for the roll...')
-  subprocess.check_call(['git', 'checkout', '-b', branch_name], cwd=chromium_dir)
+  subprocess.check_call(['git', 'checkout', '-b', branch_name], cwd=monyhar_dir)
 
   with tempfile.TemporaryDirectory() as abseil_root:
     _PullAbseil(abseil_root)
     abseil_dir = os.path.join(abseil_root, 'abseil-cpp')
-    _UpdateAbseilInChromium(abseil_dir, chromium_dir)
-    hash_diff = _UpdateChromiumReadme(os.path.join(abseil_in_chromium_dir, 'README.chromium'),
+    _UpdateAbseilInChromium(abseil_dir, monyhar_dir)
+    hash_diff = _UpdateChromiumReadme(os.path.join(abseil_in_monyhar_dir, 'README.monyhar'),
                                       abseil_dir)
 
-  _PatchAbseil(abseil_in_chromium_dir)
-  _Commit(chromium_dir, hash_diff)
+  _PatchAbseil(abseil_in_monyhar_dir)
+  _Commit(monyhar_dir, hash_diff)
 
 
 if __name__ == '__main__':
@@ -127,6 +127,6 @@ if __name__ == '__main__':
     logging.info("Next step is manual: Fix BUILD.gn files to match BUILD.bazel changes.")
     logging.info("After that run generate_def_files.py. ")
   else:
-    logging.error('Run this script from a chromium/src/ directory.')
+    logging.error('Run this script from a monyhar/src/ directory.')
 
 

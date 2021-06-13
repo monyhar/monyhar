@@ -13,14 +13,14 @@ from core.external_modules import pandas
 class TestAnalysis(unittest.TestCase):
   def testFilterBy(self):
     builders = frames.pandas.DataFrame.from_records([
-      ['chromium.perf', 'my-mac-bot', 'common_tests'],
-      ['chromium.perf', 'my-linux-bot', 'common_tests'],
-      ['chromium.perf', 'my-android-bot', 'common_tests'],
-      ['chromium.perf', 'my-mac-bot', 'desktop_tests'],
-      ['chromium.perf', 'my-linux-bot', 'desktop_tests'],
-      ['chromium.perf', 'my-android-bot', 'mobile_tests'],
-      ['chromium.perf.fyi', 'my-new-android-bot', 'common_tests'],
-      ['chromium.perf.fyi', 'my-new-android-bot', 'mobile_tests'],
+      ['monyhar.perf', 'my-mac-bot', 'common_tests'],
+      ['monyhar.perf', 'my-linux-bot', 'common_tests'],
+      ['monyhar.perf', 'my-android-bot', 'common_tests'],
+      ['monyhar.perf', 'my-mac-bot', 'desktop_tests'],
+      ['monyhar.perf', 'my-linux-bot', 'desktop_tests'],
+      ['monyhar.perf', 'my-android-bot', 'mobile_tests'],
+      ['monyhar.perf.fyi', 'my-new-android-bot', 'common_tests'],
+      ['monyhar.perf.fyi', 'my-new-android-bot', 'mobile_tests'],
     ], columns=('master', 'builder', 'test_type'))
 
     # Let's find where desktop_tests are running.
@@ -33,13 +33,13 @@ class TestAnalysis(unittest.TestCase):
     self.assertItemsEqual(df['builder'].unique(),
                           ['my-android-bot', 'my-new-android-bot'])
     self.assertItemsEqual(df['master'].unique(),
-                          ['chromium.perf', 'chromium.perf.fyi'])
+                          ['monyhar.perf', 'monyhar.perf.fyi'])
     self.assertItemsEqual(df['test_type'].unique(),
                           ['common_tests', 'mobile_tests'])
 
     # Let's find all bots running common_tests on the main waterfall.
     df = analysis.FilterBy(
-        builders, master='chromium.perf', test_type='common_tests')
+        builders, master='monyhar.perf', test_type='common_tests')
     self.assertItemsEqual(df['builder'],
                           ['my-mac-bot', 'my-linux-bot', 'my-android-bot'])
 

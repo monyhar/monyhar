@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.signin;
+package org.monyhar.chrome.browser.signin;
 
 import android.accounts.Account;
 import android.app.Activity;
@@ -11,19 +11,19 @@ import android.os.Bundle;
 import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.SyncFirstSetupCompleteSource;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
-import org.chromium.chrome.browser.signin.services.IdentityServicesProvider;
-import org.chromium.chrome.browser.signin.services.SigninManager;
-import org.chromium.chrome.browser.signin.services.UnifiedConsentServiceBridge;
-import org.chromium.chrome.browser.sync.SyncService;
-import org.chromium.chrome.browser.sync.settings.ManageSyncSettings;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.signin.AccountManagerFacadeProvider;
-import org.chromium.components.signin.AccountUtils;
-import org.chromium.components.signin.metrics.SigninAccessPoint;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.SyncFirstSetupCompleteSource;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.settings.SettingsLauncherImpl;
+import org.monyhar.chrome.browser.signin.services.IdentityServicesProvider;
+import org.monyhar.chrome.browser.signin.services.SigninManager;
+import org.monyhar.chrome.browser.signin.services.UnifiedConsentServiceBridge;
+import org.monyhar.chrome.browser.sync.SyncService;
+import org.monyhar.chrome.browser.sync.settings.ManageSyncSettings;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.signin.AccountManagerFacadeProvider;
+import org.monyhar.components.signin.AccountUtils;
+import org.monyhar.components.signin.metrics.SigninAccessPoint;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

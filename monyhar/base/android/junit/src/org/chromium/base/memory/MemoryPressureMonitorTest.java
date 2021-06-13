@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.memory;
+package org.monyhar.base.memory;
 
 import android.content.ComponentCallbacks2;
 import android.os.Looper;
@@ -16,10 +16,10 @@ import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowLooper;
 
-import org.chromium.base.MemoryPressureLevel;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.MemoryPressureLevel;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
 
 import java.util.concurrent.TimeUnit;
 

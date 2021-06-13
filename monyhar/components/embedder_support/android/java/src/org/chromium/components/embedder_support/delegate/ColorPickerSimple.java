@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.embedder_support.delegate;
+package org.monyhar.components.embedder_support.delegate;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.ListView;
 
-import org.chromium.components.embedder_support.delegate.ColorSuggestionListAdapter.OnColorSuggestionClickListener;
+import org.monyhar.components.embedder_support.delegate.ColorSuggestionListAdapter.OnColorSuggestionClickListener;
 
 /**
  * Draws a grid of (predefined) colors and allows the user to choose one of

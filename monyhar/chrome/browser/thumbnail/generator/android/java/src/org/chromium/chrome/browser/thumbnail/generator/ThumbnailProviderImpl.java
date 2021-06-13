@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.thumbnail.generator;
+package org.monyhar.chrome.browser.thumbnail.generator;
 
 import android.graphics.Bitmap;
 import android.text.TextUtils;
@@ -12,13 +12,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.collection.LruCache;
 
-import org.chromium.base.DiscardableReferencePool;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.task.PostTask;
-import org.chromium.components.browser_ui.util.BitmapCache;
-import org.chromium.components.browser_ui.util.ConversionUtils;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.base.DiscardableReferencePool;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.components.browser_ui.util.BitmapCache;
+import org.monyhar.components.browser_ui.util.ConversionUtils;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.content_creation.notes.ui;
+package org.monyhar.components.content_creation.notes.ui;
 
 import android.graphics.Canvas;
 import android.graphics.Paint;
@@ -10,8 +10,8 @@ import android.text.style.LineBackgroundSpan;
 
 import androidx.annotation.ColorInt;
 
-import org.chromium.components.content_creation.notes.models.HighlightStyle;
-import org.chromium.components.content_creation.notes.models.TextAlignment;
+import org.monyhar.components.content_creation.notes.models.HighlightStyle;
+import org.monyhar.components.content_creation.notes.models.TextAlignment;
 
 /**
  * Class used to draw colored highlight behind text.

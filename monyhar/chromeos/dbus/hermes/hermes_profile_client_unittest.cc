@@ -18,7 +18,7 @@ namespace chromeos {
 
 namespace {
 
-const char* kTestProfilePath = "/org/chromium/hermes/Profile/1";
+const char* kTestProfilePath = "/org/monyhar/hermes/Profile/1";
 
 }  // namespace
 

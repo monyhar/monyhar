@@ -51,7 +51,7 @@ std::u16string ElideHost(const GURL& host_url,
                          float available_pixel_width);
 #endif  // !defined(OS_ANDROID)
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.url_formatter
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.url_formatter
 enum class SchemeDisplay {
   SHOW,
   OMIT_HTTP_AND_HTTPS,
@@ -67,7 +67,7 @@ enum class SchemeDisplay {
 // Internationalized domain names (IDN) will be presented in Unicode if
 // they're regarded safe except that domain names with RTL characters
 // will still be in ACE/punycode for now (http://crbug.com/650760).
-// See http://dev.chromium.org/developers/design-documents/idn-in-google-chrome
+// See http://dev.monyhar.org/developers/design-documents/idn-in-google-chrome
 // for details on the algorithm.
 //
 // - Omits the path for standard schemes, excepting file and filesystem.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.os.Looper;
 import android.os.MessageQueue.IdleHandler;
@@ -14,8 +14,8 @@ import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadow.api.Shadow;
 
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
 
 /**
  * Unit tests for DeferredStartupHandler.

@@ -18,7 +18,7 @@ class Bus;
 
 namespace chromeos {
 
-// UserDataAuthClient is used to communicate with the org.chromium.UserDataAuth
+// UserDataAuthClient is used to communicate with the org.monyhar.UserDataAuth
 // service exposed by cryptohomed. All method should be called from the origin
 // thread (UI thread) which initializes the DBusThreadManager instance.
 class COMPONENT_EXPORT(USERDATAAUTH_CLIENT) UserDataAuthClient {

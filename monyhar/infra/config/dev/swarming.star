@@ -10,7 +10,7 @@ swarming.root_permissions()
 
 swarming.task_accounts(
     realm = "@root",
-    groups = ["project-chromium-test-dev-task-accounts"],
+    groups = ["project-monyhar-test-dev-task-accounts"],
 )
 
 swarming.pool_realm(
@@ -27,8 +27,8 @@ swarming.pool_realm(name = "pools/try")
 swarming.pool_realm(
     name = "pools/tests",
     groups = [
-        "project-chromium-ci-dev-task-accounts",
-        "project-chromium-try-dev-task-accounts",
+        "project-monyhar-ci-dev-task-accounts",
+        "project-monyhar-try-dev-task-accounts",
     ],
 )
 

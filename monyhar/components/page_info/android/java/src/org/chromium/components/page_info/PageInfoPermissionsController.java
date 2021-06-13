@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.page_info;
+package org.monyhar.components.page_info;
 
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -15,14 +15,14 @@ import androidx.annotation.VisibleForTesting;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
-import org.chromium.components.browser_ui.site_settings.SingleWebsiteSettings;
-import org.chromium.components.browser_ui.site_settings.SiteDataCleaner;
-import org.chromium.components.browser_ui.site_settings.Website;
-import org.chromium.components.browser_ui.site_settings.WebsiteAddress;
-import org.chromium.components.browser_ui.site_settings.WebsitePermissionsFetcher;
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.components.embedder_support.util.Origin;
-import org.chromium.components.page_info.PageInfoDiscoverabilityMetrics.DiscoverabilityAction;
+import org.monyhar.components.browser_ui.site_settings.SingleWebsiteSettings;
+import org.monyhar.components.browser_ui.site_settings.SiteDataCleaner;
+import org.monyhar.components.browser_ui.site_settings.Website;
+import org.monyhar.components.browser_ui.site_settings.WebsiteAddress;
+import org.monyhar.components.browser_ui.site_settings.WebsitePermissionsFetcher;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.components.embedder_support.util.Origin;
+import org.monyhar.components.page_info.PageInfoDiscoverabilityMetrics.DiscoverabilityAction;
 
 import java.util.Collection;
 import java.util.List;

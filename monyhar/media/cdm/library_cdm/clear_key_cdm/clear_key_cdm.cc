@@ -46,27 +46,27 @@ static base::AtExitManager g_at_exit_manager;
 #endif  // CLEAR_KEY_CDM_USE_FFMPEG_DECODER
 
 const char kClearKeyCdmVersion[] = "0.1.0.1";
-const char kExternalClearKeyKeySystem[] = "org.chromium.externalclearkey";
+const char kExternalClearKeyKeySystem[] = "org.monyhar.externalclearkey";
 
 // Variants of External Clear Key key system to test different scenarios.
 const char kExternalClearKeyDecryptOnlyKeySystem[] =
-    "org.chromium.externalclearkey.decryptonly";
+    "org.monyhar.externalclearkey.decryptonly";
 const char kExternalClearKeyMessageTypeTestKeySystem[] =
-    "org.chromium.externalclearkey.messagetypetest";
+    "org.monyhar.externalclearkey.messagetypetest";
 const char kExternalClearKeyFileIOTestKeySystem[] =
-    "org.chromium.externalclearkey.fileiotest";
+    "org.monyhar.externalclearkey.fileiotest";
 const char kExternalClearKeyOutputProtectionTestKeySystem[] =
-    "org.chromium.externalclearkey.outputprotectiontest";
+    "org.monyhar.externalclearkey.outputprotectiontest";
 const char kExternalClearKeyPlatformVerificationTestKeySystem[] =
-    "org.chromium.externalclearkey.platformverificationtest";
+    "org.monyhar.externalclearkey.platformverificationtest";
 const char kExternalClearKeyCrashKeySystem[] =
-    "org.chromium.externalclearkey.crash";
+    "org.monyhar.externalclearkey.crash";
 const char kExternalClearKeyVerifyCdmHostTestKeySystem[] =
-    "org.chromium.externalclearkey.verifycdmhosttest";
+    "org.monyhar.externalclearkey.verifycdmhosttest";
 const char kExternalClearKeyStorageIdTestKeySystem[] =
-    "org.chromium.externalclearkey.storageidtest";
+    "org.monyhar.externalclearkey.storageidtest";
 const char kExternalClearKeyDifferentGuidTestKeySystem[] =
-    "org.chromium.externalclearkey.differentguid";
+    "org.monyhar.externalclearkey.differentguid";
 
 const int64_t kMsPerSecond = 1000;
 const int64_t kMaxTimerDelayMs = 5 * kMsPerSecond;

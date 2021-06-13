@@ -6,7 +6,7 @@ import("//build/config/android/rules.gni")
 
 generate_jni("jni_headers") {
   sources = [
-    "java/src/org/chromium/chrome/browser/safety_check/SafetyCheckBridge.java",
+    "java/src/org/monyhar/chrome/browser/safety_check/SafetyCheckBridge.java",
   ]
 }
 
@@ -26,14 +26,14 @@ source_set("android") {
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/safety_check/SafetyCheckBridge.java",
-    "java/src/org/chromium/chrome/browser/safety_check/SafetyCheckCoordinator.java",
-    "java/src/org/chromium/chrome/browser/safety_check/SafetyCheckElementPreference.java",
-    "java/src/org/chromium/chrome/browser/safety_check/SafetyCheckMediator.java",
-    "java/src/org/chromium/chrome/browser/safety_check/SafetyCheckProperties.java",
-    "java/src/org/chromium/chrome/browser/safety_check/SafetyCheckSettingsFragment.java",
-    "java/src/org/chromium/chrome/browser/safety_check/SafetyCheckUpdatesDelegate.java",
-    "java/src/org/chromium/chrome/browser/safety_check/SafetyCheckViewBinder.java",
+    "java/src/org/monyhar/chrome/browser/safety_check/SafetyCheckBridge.java",
+    "java/src/org/monyhar/chrome/browser/safety_check/SafetyCheckCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/safety_check/SafetyCheckElementPreference.java",
+    "java/src/org/monyhar/chrome/browser/safety_check/SafetyCheckMediator.java",
+    "java/src/org/monyhar/chrome/browser/safety_check/SafetyCheckProperties.java",
+    "java/src/org/monyhar/chrome/browser/safety_check/SafetyCheckSettingsFragment.java",
+    "java/src/org/monyhar/chrome/browser/safety_check/SafetyCheckUpdatesDelegate.java",
+    "java/src/org/monyhar/chrome/browser/safety_check/SafetyCheckViewBinder.java",
   ]
   deps = [
     ":java_resources",
@@ -66,12 +66,12 @@ android_library("java") {
     ":bulk_leak_check_service_enums",
     ":safety_check_enums",
   ]
-  resources_package = "org.chromium.chrome.browser.safety_check"
+  resources_package = "org.monyhar.chrome.browser.safety_check"
 }
 
 android_library("javatests") {
   testonly = true
-  sources = [ "javatests/src/org/chromium/chrome/browser/safety_check/SafetyCheckSettingsFragmentTest.java" ]
+  sources = [ "javatests/src/org/monyhar/chrome/browser/safety_check/SafetyCheckSettingsFragmentTest.java" ]
   deps = [
     ":java",
     "//base:base_java",
@@ -95,7 +95,7 @@ android_library("junit") {
   # Skip platform checks since Robolectric depends on requires_android targets.
   bypass_platform_checks = true
   testonly = true
-  sources = [ "javatests/src/org/chromium/chrome/browser/safety_check/SafetyCheckMediatorTest.java" ]
+  sources = [ "javatests/src/org/monyhar/chrome/browser/safety_check/SafetyCheckMediatorTest.java" ]
   deps = [
     ":java",
     "//base:base_java",

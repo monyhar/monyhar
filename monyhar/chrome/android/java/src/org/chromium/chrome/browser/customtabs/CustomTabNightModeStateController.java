@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import android.content.Intent;
 
@@ -11,14 +11,14 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.browser.customtabs.CustomTabsIntent;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.base.ObserverList;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.lifecycle.DestroyObserver;
-import org.chromium.chrome.browser.night_mode.NightModeStateProvider;
-import org.chromium.chrome.browser.night_mode.NightModeUtils;
-import org.chromium.chrome.browser.night_mode.PowerSavingModeMonitor;
-import org.chromium.chrome.browser.night_mode.SystemNightModeMonitor;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.ObserverList;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.lifecycle.DestroyObserver;
+import org.monyhar.chrome.browser.night_mode.NightModeStateProvider;
+import org.monyhar.chrome.browser.night_mode.NightModeUtils;
+import org.monyhar.chrome.browser.night_mode.PowerSavingModeMonitor;
+import org.monyhar.chrome.browser.night_mode.SystemNightModeMonitor;
 
 /**
  * Maintains and provides the night mode state for {@link CustomTabActivity}.

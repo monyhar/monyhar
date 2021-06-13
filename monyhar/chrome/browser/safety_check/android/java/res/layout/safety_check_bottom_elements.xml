@@ -17,7 +17,7 @@
           android:layout_height="wrap_content"
           android:layout_gravity="end" />
      <!-- Button for starting Safety check. -->
-     <org.chromium.ui.widget.ButtonCompat
+     <org.monyhar.ui.widget.ButtonCompat
           android:id="@+id/safety_check_button"
           style="@style/FilledButton.Flat"
           android:layout_width="wrap_content"

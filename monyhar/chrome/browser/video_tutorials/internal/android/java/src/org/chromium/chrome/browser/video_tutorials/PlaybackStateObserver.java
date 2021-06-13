@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.video_tutorials;
+package org.monyhar.chrome.browser.video_tutorials;
 
 import android.os.SystemClock;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.video_tutorials.PlaybackStateObserver.WatchStateInfo.State;
-import org.chromium.content_public.browser.MediaSession;
-import org.chromium.content_public.browser.MediaSessionObserver;
-import org.chromium.services.media_session.MediaPosition;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.video_tutorials.PlaybackStateObserver.WatchStateInfo.State;
+import org.monyhar.content_public.browser.MediaSession;
+import org.monyhar.content_public.browser.MediaSessionObserver;
+import org.monyhar.services.media_session.MediaPosition;
 
 /**
  * Responsible for observing a media session and notifying the observer about play/pause/end media

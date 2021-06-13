@@ -12,10 +12,10 @@ Start Chrome as follows:
              --trace-startup-duration=7
 
 On Android, first ensure that Chrome can write output files to storage. Replace
-"org.chromium.chrome" with the Chrome package you are tracing:
+"org.monyhar.chrome" with the Chrome package you are tracing:
 
-    $ adb shell pm grant org.chromium.chrome android.permission.READ_EXTERNAL_STORAGE
-    $ adb shell pm grant org.chromium.chrome android.permission.WRITE_EXTERNAL_STORAGE
+    $ adb shell pm grant org.monyhar.chrome android.permission.READ_EXTERNAL_STORAGE
+    $ adb shell pm grant org.monyhar.chrome android.permission.WRITE_EXTERNAL_STORAGE
 
 Then enable startup tracing and start Chrome as follows:
 
@@ -70,11 +70,11 @@ On Android, the config file has to be pushed to a fixed file location:
 
 Make sure that the "result_file" location is writable by the Chrome process on
 Android (e.g. "/sdcard/Download/trace.json"). To ensure Chrome has permissions
-to write to /sdcard, run the following, replacing "org.chromium.chrome" with
+to write to /sdcard, run the following, replacing "org.monyhar.chrome" with
 the Chrome package you are tracing:
 
-    $ adb shell pm grant org.chromium.chrome android.permission.READ_EXTERNAL_STORAGE
-    $ adb shell pm grant org.chromium.chrome android.permission.WRITE_EXTERNAL_STORAGE
+    $ adb shell pm grant org.monyhar.chrome android.permission.READ_EXTERNAL_STORAGE
+    $ adb shell pm grant org.monyhar.chrome android.permission.WRITE_EXTERNAL_STORAGE
 
 Note that startup tracing will be enabled upon every Chrome launch until you
 delete the config file:
@@ -83,5 +83,5 @@ delete the config file:
 
 ## Related Pages
 
- * [General information about startup tracing](https://sites.google.com/a/chromium.org/dev/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs)
+ * [General information about startup tracing](https://sites.google.com/a/monyhar.org/dev/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs)
  * [Memory tracing with MemoryInfra](README.md)

@@ -185,7 +185,7 @@ def DumpNetLog(netlog):
 # Try to discover the real IP address of this machine.  If we can't figure it
 # out, fall back to localhost.
 # A windows bug makes using the loopback interface flaky in rare cases.
-# http://code.google.com/p/chromium/issues/detail?id=114369
+# http://code.google.com/p/monyhar/issues/detail?id=114369
 def GetHostName():
   host = 'localhost'
   try:
@@ -202,7 +202,7 @@ def RunTestsOnce(url, options):
   # Tests, such as run_inbrowser_trusted_crash_in_startup_test, may not use the
   # RunFromCommand line entry point - and otherwise get stuck in an infinite
   # loop when something goes wrong and the hard timeout is not set.
-  # http://code.google.com/p/chromium/issues/detail?id=105406
+  # http://code.google.com/p/monyhar/issues/detail?id=105406
   if options.hard_timeout is None:
     options.hard_timeout = options.timeout * 4
 

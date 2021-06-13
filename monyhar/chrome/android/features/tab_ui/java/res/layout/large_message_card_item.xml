@@ -2,7 +2,7 @@
 <!-- Copyright 2020 The Chromium Authors. All rights reserved.
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
-<org.chromium.chrome.browser.tasks.tab_management.LargeMessageCardView
+<org.monyhar.chrome.browser.tasks.tab_management.LargeMessageCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/large_message_card_item"
     android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <org.chromium.chrome.browser.tasks.tab_management.PriceCardView
+            <org.monyhar.chrome.browser.tasks.tab_management.PriceCardView
                 android:id="@+id/price_info_box"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
                 android:layout_gravity="center"
                 android:gravity="center_horizontal"
                 android:visibility="gone" />
-            <org.chromium.ui.widget.ChromeImageView
+            <org.monyhar.ui.widget.ChromeImageView
                 android:id="@+id/icon"
                 android:layout_width="26dp"
                 android:layout_height="26dp"
@@ -55,7 +55,7 @@
                 android:layout_gravity="center_horizontal"
                 android:gravity="center_horizontal"
                 android:textAppearance="@style/TextAppearance.TextMedium.Secondary" />
-            <org.chromium.ui.widget.ButtonCompat
+            <org.monyhar.ui.widget.ButtonCompat
                 android:id="@+id/action_button"
                 style="@style/FilledButton.Flat"
                 android:layout_width="match_parent"
@@ -68,7 +68,7 @@
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp" />
         </LinearLayout>
-        <org.chromium.ui.widget.ChromeImageView
+        <org.monyhar.ui.widget.ChromeImageView
             android:id="@+id/close_button"
             android:layout_width="24dp"
             android:layout_height="24dp"
@@ -78,4 +78,4 @@
             android:contentDescription="@string/close"
             android:tint="@color/default_icon_color" />
     </FrameLayout>
-</org.chromium.chrome.browser.tasks.tab_management.LargeMessageCardView>
+</org.monyhar.chrome.browser.tasks.tab_management.LargeMessageCardView>

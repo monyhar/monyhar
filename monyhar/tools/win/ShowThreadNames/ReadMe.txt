@@ -7,7 +7,7 @@ platform_thread_win.cc to set thread names. Despite this, we need a tool to demo
 the SetThreadDescription API works, even without the debugger to be present.
 
 The problem setting can be referred to
-https://bugs.chromium.org/p/chromium/issues/detail?id=684203
+https://bugs.monyhar.org/p/monyhar/issues/detail?id=684203
 
 This tool incorporates the GetThreadDescription API trying to get names of all
 threads in a process specified by its ID. If the thread names have been set by

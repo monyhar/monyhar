@@ -7,7 +7,7 @@
 // when location permissions are granted.
 //
 // TODO(lbargu): Move over to standard Geo header once it is defined, and remove
-// this proto structure from chromium code base.
+// this proto structure from monyhar code base.
 //
 // NOTE: This is currently using a Google-defined structure. This explains the
 // jumps in values. New fields cannot be added to this proto directly. See
@@ -15,10 +15,10 @@
 
 syntax = "proto2";
 
-package org.chromium.chrome.browser.omnibox.geo;
+package org.monyhar.chrome.browser.omnibox.geo;
 
 option java_outer_classname = "PartnerLocationDescriptor";
-option java_package = "org.chromium.chrome.browser.omnibox.geo";
+option java_package = "org.monyhar.chrome.browser.omnibox.geo";
 
 // TODO(jkrcal): Remove when protobuf 4.0 is out, https://crbug.com/800281.
 option optimize_for = LITE_RUNTIME;

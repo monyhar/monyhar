@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.notifications;
+package org.monyhar.chrome.browser.notifications;
 
 import android.app.PendingIntent;
 import android.content.Context;
 
 import androidx.core.app.NotificationCompat;
 
-import org.chromium.components.browser_ui.notifications.NotificationMetadata;
-import org.chromium.components.browser_ui.notifications.NotificationWrapperBuilder;
-import org.chromium.components.browser_ui.notifications.NotificationWrapperCompatBuilder;
-import org.chromium.components.browser_ui.notifications.PendingIntentProvider;
-import org.chromium.components.browser_ui.notifications.channels.ChannelsInitializer;
+import org.monyhar.components.browser_ui.notifications.NotificationMetadata;
+import org.monyhar.components.browser_ui.notifications.NotificationWrapperBuilder;
+import org.monyhar.components.browser_ui.notifications.NotificationWrapperCompatBuilder;
+import org.monyhar.components.browser_ui.notifications.PendingIntentProvider;
+import org.monyhar.components.browser_ui.notifications.channels.ChannelsInitializer;
 
 /**
  * Extends the base NotificationWrapperCompatBuilder to add UMA by way of

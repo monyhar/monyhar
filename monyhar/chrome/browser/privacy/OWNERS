@@ -2,4 +2,4 @@ per-file BUILD.gn=*
 
 # For changes to Secure DNS
 file://net/dns/OWNERS
-bemasc@chromium.org
+bemasc@monyhar.org

@@ -105,7 +105,7 @@ class SafeBrowsingTabHelperTest
   // Helper function that simulates a main frame load to a safe URL, returning
   // the NavigationItem that was committed.  Used for sub frame tests.
   web::NavigationItem* SimulateSafeMainFrameLoad() {
-    GURL safe_url("http://chromium.test");
+    GURL safe_url("http://monyhar.test");
     navigation_manager_->AddItem(safe_url, ui::PAGE_TRANSITION_LINK);
     web::NavigationItem* item = navigation_manager_->GetItemAtIndex(
         navigation_manager_->GetItemCount() - 1);
@@ -159,7 +159,7 @@ class SafeBrowsingTabHelperTest
 // Tests the case of a single navigation request and response, for a URL that is
 // safe.
 TEST_P(SafeBrowsingTabHelperTest, SingleSafeRequestAndResponse) {
-  GURL url("http://chromium.test");
+  GURL url("http://monyhar.test");
   EXPECT_TRUE(ShouldAllowRequestUrl(url).ShouldAllowNavigation());
 
   if (SafeBrowsingDecisionArrivesBeforeResponse())
@@ -188,8 +188,8 @@ TEST_P(SafeBrowsingTabHelperTest, SingleUnsafeRequestAndResponse) {
 // Tests the case of a single safe navigation where the response URL has a
 // different ref than the request URL.
 TEST_P(SafeBrowsingTabHelperTest, SafeRequestAndResponseWithDifferingRef) {
-  GURL request_url("http://chromium.test");
-  GURL response_url("http://chromium.test#ref");
+  GURL request_url("http://monyhar.test");
+  GURL response_url("http://monyhar.test#ref");
   EXPECT_TRUE(ShouldAllowRequestUrl(request_url).ShouldAllowNavigation());
 
   if (SafeBrowsingDecisionArrivesBeforeResponse())
@@ -219,7 +219,7 @@ TEST_P(SafeBrowsingTabHelperTest, UnsafeRequestAndResponseWithDifferingRef) {
 // Tests the case of a single navigation request followed by multiple responses
 // for the same URL.
 TEST_P(SafeBrowsingTabHelperTest, RepeatedResponse) {
-  GURL url("http://chromium.test");
+  GURL url("http://monyhar.test");
   EXPECT_TRUE(ShouldAllowRequestUrl(url).ShouldAllowNavigation());
 
   if (SafeBrowsingDecisionArrivesBeforeResponse())
@@ -237,8 +237,8 @@ TEST_P(SafeBrowsingTabHelperTest, RepeatedResponse) {
 // Tests the case of multiple requests, followed by a single response skipping
 // some of the request URLs.
 TEST_P(SafeBrowsingTabHelperTest, MultipleRequestsSingleResponse) {
-  GURL url1("http://chromium.test");
-  GURL url2("http://chromium3.test");
+  GURL url1("http://monyhar.test");
+  GURL url2("http://monyhar3.test");
   GURL url3("http://" + FakeSafeBrowsingService::kUnsafeHost);
   EXPECT_TRUE(ShouldAllowRequestUrl(url1).ShouldAllowNavigation());
   EXPECT_TRUE(ShouldAllowRequestUrl(url2).ShouldAllowNavigation());
@@ -283,13 +283,13 @@ TEST_P(SafeBrowsingTabHelperTest, RepeatedRequestsGetDistinctResponse) {
 // Tests the case of a request and response with URLs that have an unsupported
 // scheme.
 TEST_P(SafeBrowsingTabHelperTest, RequestAndResponseWithUnsupportedScheme) {
-  GURL request_url("blob:http://chromium.test/123");
+  GURL request_url("blob:http://monyhar.test/123");
   EXPECT_TRUE(ShouldAllowRequestUrl(request_url).ShouldAllowNavigation());
 
   if (SafeBrowsingDecisionArrivesBeforeResponse())
     base::RunLoop().RunUntilIdle();
 
-  GURL response_url("blob:http://chromium.test/456");
+  GURL response_url("blob:http://monyhar.test/456");
   web::WebStatePolicyDecider::PolicyDecision response_decision =
       ShouldAllowResponseUrl(response_url);
   EXPECT_TRUE(response_decision.ShouldAllowNavigation());
@@ -298,8 +298,8 @@ TEST_P(SafeBrowsingTabHelperTest, RequestAndResponseWithUnsupportedScheme) {
 // Tests the case of a request and response that are not identical, but have
 // the same host.
 TEST_P(SafeBrowsingTabHelperTest, RequestAndResponseWithOnlyMatchingHost) {
-  GURL request_url("http://chromium.test/page1.html");
-  GURL response_url("http://chromium.test/page2.html");
+  GURL request_url("http://monyhar.test/page1.html");
+  GURL response_url("http://monyhar.test/page2.html");
 
   EXPECT_TRUE(ShouldAllowRequestUrl(request_url).ShouldAllowNavigation());
 
@@ -314,7 +314,7 @@ TEST_P(SafeBrowsingTabHelperTest, RequestAndResponseWithOnlyMatchingHost) {
 // Tests the case of a single sub frame navigation request and response, for a
 // URL that is safe.
 TEST_P(SafeBrowsingTabHelperTest, SafeSubFrameRequestAndResponse) {
-  GURL url("http://chromium_sub_frame.test");
+  GURL url("http://monyhar_sub_frame.test");
   SimulateSafeMainFrameLoad();
 
   // Execute ShouldAllowRequest() for a safe subframe navigation.
@@ -335,8 +335,8 @@ TEST_P(SafeBrowsingTabHelperTest, SafeSubFrameRequestAndResponse) {
 // where the response URL has a different hash fragment than the request.
 TEST_P(SafeBrowsingTabHelperTest,
        SafeSubFrameRequestAndResponseWithDifferingRef) {
-  GURL request_url("http://chromium_sub_frame.test");
-  GURL response_url("http://chromium_sub_frame.test#different_hash");
+  GURL request_url("http://monyhar_sub_frame.test");
+  GURL response_url("http://monyhar_sub_frame.test#different_hash");
   SimulateSafeMainFrameLoad();
 
   // Execute ShouldAllowRequest() for a safe subframe navigation.
@@ -356,7 +356,7 @@ TEST_P(SafeBrowsingTabHelperTest,
 // Tests the case where multiple sub frames navigating to safe URLs are all
 // allowed.
 TEST_P(SafeBrowsingTabHelperTest, RepeatedSafeSubFrameResponses) {
-  GURL url("http://chromium_sub_frame.test");
+  GURL url("http://monyhar_sub_frame.test");
   SimulateSafeMainFrameLoad();
 
   // Execute ShouldAllowRequest() for a safe subframe navigation.
@@ -383,7 +383,7 @@ TEST_P(SafeBrowsingTabHelperTest, RepeatedSafeSubFrameResponses) {
 // allowed after a same-document navigation.
 TEST_P(SafeBrowsingTabHelperTest,
        RepeatedSafeSubFrameResponseAfterSafeDocumentNavigation) {
-  GURL url("http://chromium_sub_frame.test");
+  GURL url("http://monyhar_sub_frame.test");
   SimulateSafeMainFrameLoad();
 
   // Execute ShouldAllowRequest() for a safe subframe navigation.
@@ -415,7 +415,7 @@ TEST_P(SafeBrowsingTabHelperTest,
 // navigation to restore session URL doesn't crash
 TEST_P(SafeBrowsingTabHelperTest,
        SubframeRequestAfterRestoreSessionNavigation) {
-  GURL url("http://chromium_sub_frame.test");
+  GURL url("http://monyhar_sub_frame.test");
   SimulateSafeMainFrameLoad();
 
   // Simulate loading a restore session URL, which will cause the navigation
@@ -436,7 +436,7 @@ TEST_P(SafeBrowsingTabHelperTest,
 // main-frame navigation to a restore session URL and whose Safe Browsing
 // decision arrives just after this navigation doesn't crash.
 TEST_P(SafeBrowsingTabHelperTest, SubframeResultAfterRestoreSessionNavigation) {
-  GURL url("http://chromium_sub_frame.test");
+  GURL url("http://monyhar_sub_frame.test");
   SimulateSafeMainFrameLoad();
 
   web::WebStatePolicyDecider::PolicyDecision sub_frame_response_decision =
@@ -571,7 +571,7 @@ TEST_P(SafeBrowsingTabHelperTest, StaleIframeReload) {
     base::RunLoop().RunUntilIdle();
 
   // Ensure that a subsequent main frame request is handled correctly.
-  GURL safe_url("http://chromium.test");
+  GURL safe_url("http://monyhar.test");
   EXPECT_TRUE(ShouldAllowRequestUrl(safe_url).ShouldAllowNavigation());
   if (SafeBrowsingDecisionArrivesBeforeResponse())
     base::RunLoop().RunUntilIdle();
@@ -582,7 +582,7 @@ TEST_P(SafeBrowsingTabHelperTest, StaleIframeReload) {
 // Tests the case of a main frame reload request that arrives when both the last
 // committed item and pending items are null.
 TEST_P(SafeBrowsingTabHelperTest, MainFrameReload) {
-  GURL url("http://chromium.test");
+  GURL url("http://monyhar.test");
   ASSERT_FALSE(navigation_manager_->GetLastCommittedItem());
   ASSERT_FALSE(navigation_manager_->GetPendingItem());
 
@@ -600,9 +600,9 @@ TEST_P(SafeBrowsingTabHelperTest, MainFrameReload) {
 
 // Tests the case of a redirection chain, where all URLs in the chain are safe.
 TEST_P(SafeBrowsingTabHelperTest, SafeRedirectChain) {
-  GURL url1("http://chromium1.test");
-  GURL url2("http://chromium2.test");
-  GURL url3("http://chromium3.test");
+  GURL url1("http://monyhar1.test");
+  GURL url2("http://monyhar2.test");
+  GURL url3("http://monyhar3.test");
   EXPECT_TRUE(ShouldAllowRequestUrl(url1).ShouldAllowNavigation());
   if (SafeBrowsingDecisionArrivesBeforeResponse())
     base::RunLoop().RunUntilIdle();
@@ -626,8 +626,8 @@ TEST_P(SafeBrowsingTabHelperTest, SafeRedirectChain) {
 // unsafe and the rest are safe.
 TEST_P(SafeBrowsingTabHelperTest, RedirectChainFirstRequestUnsafe) {
   GURL url1("http://" + FakeSafeBrowsingService::kUnsafeHost);
-  GURL url2("http://chromium2.test");
-  GURL url3("http://chromium3.test");
+  GURL url2("http://monyhar2.test");
+  GURL url3("http://monyhar3.test");
   EXPECT_TRUE(ShouldAllowRequestUrl(url1).ShouldAllowNavigation());
   StoreUnsafeResource(url1);
   if (SafeBrowsingDecisionArrivesBeforeResponse())
@@ -651,9 +651,9 @@ TEST_P(SafeBrowsingTabHelperTest, RedirectChainFirstRequestUnsafe) {
 // Tests the case of a redirection chain, where the middle URL in the chain is
 // unsafe and the rest are safe.
 TEST_P(SafeBrowsingTabHelperTest, RedirectChainMiddleRequestUnsafe) {
-  GURL url1("http://chromium1.test");
+  GURL url1("http://monyhar1.test");
   GURL url2("http://" + FakeSafeBrowsingService::kUnsafeHost);
-  GURL url3("http://chromium3.test");
+  GURL url3("http://monyhar3.test");
   EXPECT_TRUE(ShouldAllowRequestUrl(url1).ShouldAllowNavigation());
   if (SafeBrowsingDecisionArrivesBeforeResponse())
     base::RunLoop().RunUntilIdle();
@@ -677,8 +677,8 @@ TEST_P(SafeBrowsingTabHelperTest, RedirectChainMiddleRequestUnsafe) {
 // Tests the case of a redirection chain, where the final URL in the chain is
 // unsafe and the rest are safe.
 TEST_P(SafeBrowsingTabHelperTest, RedirectChainFinalRequestUnsafe) {
-  GURL url1("http://chromium1.test");
-  GURL url2("http://chromium3.test");
+  GURL url1("http://monyhar1.test");
+  GURL url2("http://monyhar3.test");
   GURL url3("http://" + FakeSafeBrowsingService::kUnsafeHost);
   EXPECT_TRUE(ShouldAllowRequestUrl(url1).ShouldAllowNavigation());
   if (SafeBrowsingDecisionArrivesBeforeResponse())
@@ -734,7 +734,7 @@ TEST_P(SafeBrowsingTabHelperTest, RedirectChainAllRequestsUnsafe) {
 TEST_P(SafeBrowsingTabHelperTest, ConsecutiveRequestsWithoutRedirect) {
   GURL url1("http://" + FakeSafeBrowsingService::kUnsafeHost + "/1");
   GURL url2("http://" + FakeSafeBrowsingService::kUnsafeHost + "/2");
-  GURL url3("http://chromium.test");
+  GURL url3("http://monyhar.test");
   EXPECT_TRUE(ShouldAllowRequestUrl(url1).ShouldAllowNavigation());
   StoreUnsafeResource(url1);
   if (SafeBrowsingDecisionArrivesBeforeResponse())
@@ -760,7 +760,7 @@ TEST_P(SafeBrowsingTabHelperTest, ConsecutiveRequestsWithoutRedirect) {
 TEST_P(SafeBrowsingTabHelperTest, InterruptedUnsafeRedirectChain) {
   GURL url1("http://" + FakeSafeBrowsingService::kUnsafeHost + "/1");
   GURL url2("http://" + FakeSafeBrowsingService::kUnsafeHost + "/2");
-  GURL url3("http://chromium3.test");
+  GURL url3("http://monyhar3.test");
   EXPECT_TRUE(ShouldAllowRequestUrl(url1).ShouldAllowNavigation());
   StoreUnsafeResource(url1);
   if (SafeBrowsingDecisionArrivesBeforeResponse())
@@ -785,7 +785,7 @@ TEST_P(SafeBrowsingTabHelperTest, InterruptedUnsafeRedirectChain) {
 
 // Tests the case of a redirection chain where a safe URL redirects to itself.
 TEST_P(SafeBrowsingTabHelperTest, RedirectToSameSafeURL) {
-  GURL url("http://chromium.test");
+  GURL url("http://monyhar.test");
   EXPECT_TRUE(ShouldAllowRequestUrl(url).ShouldAllowNavigation());
   if (SafeBrowsingDecisionArrivesBeforeResponse())
     base::RunLoop().RunUntilIdle();
@@ -824,9 +824,9 @@ TEST_P(SafeBrowsingTabHelperTest, RedirectToSameUnsafeURL) {
 // Tests the case of a redirection chain where all URLs in the chain are safe,
 // and one URL appears multiple times.
 TEST_P(SafeBrowsingTabHelperTest, SafeRedirectChainWithRepeatedURL) {
-  GURL url1("http://chromium1.test");
-  GURL url2("http://chromium2.test");
-  GURL url3("http://chromium3.test");
+  GURL url1("http://monyhar1.test");
+  GURL url2("http://monyhar2.test");
+  GURL url3("http://monyhar3.test");
   EXPECT_TRUE(ShouldAllowRequestUrl(url1).ShouldAllowNavigation());
   if (SafeBrowsingDecisionArrivesBeforeResponse())
     base::RunLoop().RunUntilIdle();
@@ -859,9 +859,9 @@ TEST_P(SafeBrowsingTabHelperTest, SafeRedirectChainWithRepeatedURL) {
 // Tests the case of a redirection chain where an unsafe URL appears multiple
 // times.
 TEST_P(SafeBrowsingTabHelperTest, UnsafeRedirectChainWithRepeatedURL) {
-  GURL url1("http://chromium1.test");
+  GURL url1("http://monyhar1.test");
   GURL url2("http://" + FakeSafeBrowsingService::kUnsafeHost);
-  GURL url3("http://chromium3.test");
+  GURL url3("http://monyhar3.test");
   EXPECT_TRUE(ShouldAllowRequestUrl(url1).ShouldAllowNavigation());
   if (SafeBrowsingDecisionArrivesBeforeResponse())
     base::RunLoop().RunUntilIdle();
@@ -890,8 +890,8 @@ TEST_P(SafeBrowsingTabHelperTest, UnsafeRedirectChainWithRepeatedURL) {
 // Tests the case of a redirection where ShouldAllowRequest is not called on
 // the target of the redirection but instead called a second time on the source.
 TEST_P(SafeBrowsingTabHelperTest, RedirectWithMissingShouldAllowRequest) {
-  GURL url1("http://chromium1.test/page1.html");
-  GURL url2("http://chromium2.test/page2.html");
+  GURL url1("http://monyhar1.test/page1.html");
+  GURL url2("http://monyhar2.test/page2.html");
   EXPECT_TRUE(ShouldAllowRequestUrl(url1).ShouldAllowNavigation());
   if (SafeBrowsingDecisionArrivesBeforeResponse())
     base::RunLoop().RunUntilIdle();
@@ -976,7 +976,7 @@ TEST_P(SafeBrowsingTabHelperTest, UnsafeSubframeRequestCancelsPrerendering) {
 TEST_P(SafeBrowsingTabHelperTest,
        SafeMainFrameRequestDoesNotCancelPrerendering) {
   is_web_state_for_prerender_ = true;
-  GURL safe_url("http://chromium.test");
+  GURL safe_url("http://monyhar.test");
 
   PrerenderService* prerender_service =
       PrerenderServiceFactory::GetForBrowserState(
@@ -1002,7 +1002,7 @@ TEST_P(SafeBrowsingTabHelperTest,
 TEST_P(SafeBrowsingTabHelperTest,
        SafeSubframeRequestDoesNotCancelPrerendering) {
   is_web_state_for_prerender_ = true;
-  GURL safe_url("http://chromium.test");
+  GURL safe_url("http://monyhar.test");
   web::NavigationItem* main_frame_item = SimulateSafeMainFrameLoad();
 
   PrerenderService* prerender_service =

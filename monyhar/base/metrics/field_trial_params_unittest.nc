@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 // This is a "No Compile Test" suite.
-// http://dev.chromium.org/developers/testing/no-compile-tests
+// http://dev.monyhar.org/developers/testing/no-compile-tests
 
 #include "base/feature_list.h"
 #include "base/metrics/field_trial_params.h"

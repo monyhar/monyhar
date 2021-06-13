@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.user_data;
+package org.monyhar.chrome.browser.autofill_assistant.user_data;
 
 import android.app.Activity;
 import android.os.Build;
@@ -12,11 +12,11 @@ import android.widget.LinearLayout;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.autofill_assistant.AssistantTagsForTesting;
-import org.chromium.chrome.browser.autofill_assistant.LayoutUtils;
-import org.chromium.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantAdditionalSectionContainer;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.autofill_assistant.AssistantTagsForTesting;
+import org.monyhar.chrome.browser.autofill_assistant.LayoutUtils;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantAdditionalSectionContainer;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
 
 import java.text.DateFormat;
 import java.util.Locale;

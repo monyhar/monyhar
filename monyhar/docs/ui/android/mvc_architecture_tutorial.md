@@ -6,12 +6,12 @@ A full explanation of the MVC framework can be found [here](https://docs.google.
 For this example, we’ll be implementing a simple progress bar; a rectangle that changes length based on the loading state of the underlying webpage.
 
 #### Additional Resources
-[Simple MVC lists](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/ui/android/mvc_simple_list_tutorial.md)
+[Simple MVC lists](https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/ui/android/mvc_simple_list_tutorial.md)
 [Testing MVC primer doc](https://docs.google.com/document/d/1Mel7f4lE_osFjnttkxu1wcUf_k9CmIzPv6oxwCw9tx4/edit#)
 
 #### File Structure
 The file structure of our component will be the following:
-* ./org/chromium/chrome/browser/simple_progress/
+* ./org/monyhar/chrome/browser/simple_progress/
   * [`SimpleProgressCoordinator.java`](#SimpleProgressCoordinator)
   * [`SimpleProgressMediator.java`](#SimpleProgressMediator)
   * [`SimpleProgressViewBinder.java`](#SimpleProgressViewBinder)

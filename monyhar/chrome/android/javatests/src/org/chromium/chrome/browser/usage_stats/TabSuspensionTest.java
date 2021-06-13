@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.usage_stats;
+package org.monyhar.chrome.browser.usage_stats;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -24,35 +24,35 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.base.test.util.MinAndroidSdkLevel;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.ChromeTabbedActivity2;
-import org.chromium.chrome.browser.MockSafeBrowsingApiHandler;
-import org.chromium.chrome.browser.customtabs.CustomTabActivityTestRule;
-import org.chromium.chrome.browser.customtabs.CustomTabsTestUtils;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.multiwindow.MultiWindowTestHelper;
-import org.chromium.chrome.browser.multiwindow.MultiWindowUtils;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabLaunchType;
-import org.chromium.chrome.browser.tab.TabSelectionType;
-import org.chromium.chrome.browser.tab.TabTestUtils;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.ChromeTabUtils;
-import org.chromium.chrome.test.util.MenuUtils;
-import org.chromium.components.safe_browsing.SafeBrowsingApiBridge;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.test.util.DOMUtils;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.content_public.common.ContentSwitches;
-import org.chromium.media.MediaSwitches;
-import org.chromium.net.test.EmbeddedTestServer;
-import org.chromium.ui.base.PageTransition;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.base.test.util.MinAndroidSdkLevel;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.ChromeTabbedActivity2;
+import org.monyhar.chrome.browser.MockSafeBrowsingApiHandler;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivityTestRule;
+import org.monyhar.chrome.browser.customtabs.CustomTabsTestUtils;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.multiwindow.MultiWindowTestHelper;
+import org.monyhar.chrome.browser.multiwindow.MultiWindowUtils;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabLaunchType;
+import org.monyhar.chrome.browser.tab.TabSelectionType;
+import org.monyhar.chrome.browser.tab.TabTestUtils;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.ChromeTabUtils;
+import org.monyhar.chrome.test.util.MenuUtils;
+import org.monyhar.components.safe_browsing.SafeBrowsingApiBridge;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.test.util.DOMUtils;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.content_public.common.ContentSwitches;
+import org.monyhar.media.MediaSwitches;
+import org.monyhar.net.test.EmbeddedTestServer;
+import org.monyhar.ui.base.PageTransition;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;

@@ -106,8 +106,8 @@ void WriteLinkMapField(link_map_t** link_pointer, link_map_t* entry) {
   // the system linker to crash. Clearly that is undesirable. From
   // observations this occurs most frequently on the gpu process.
   //
-  // https://code.google.com/p/chromium/issues/detail?id=450659
-  // https://code.google.com/p/chromium/issues/detail?id=458346
+  // https://code.google.com/p/monyhar/issues/detail?id=450659
+  // https://code.google.com/p/monyhar/issues/detail?id=458346
   const uintptr_t kPageSize = PAGE_SIZE;
   const uintptr_t ptr_address = reinterpret_cast<uintptr_t>(link_pointer);
   void* page = reinterpret_cast<void*>(ptr_address & ~(kPageSize - 1U));

@@ -25,7 +25,7 @@ namespace {
 
 const char* kDefaultMccMnc = "310999";
 const char* kFakeActivationCodePrefix = "1$SMDP.GSMA.COM$00000-00000-00000-000";
-const char* kFakeProfilePathPrefix = "/org/chromium/Hermes/Profile/";
+const char* kFakeProfilePathPrefix = "/org/monyhar/Hermes/Profile/";
 const char* kFakeIccidPrefix = "10000000000000000";
 const char* kFakeProfileNamePrefix = "FakeCellularNetwork_";
 const char* kFakeServiceProvider = "Fake Wireless";

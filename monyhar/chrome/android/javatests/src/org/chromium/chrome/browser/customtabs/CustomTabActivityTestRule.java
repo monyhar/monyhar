@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import android.content.Intent;
 
@@ -10,10 +10,10 @@ import androidx.annotation.NonNull;
 
 import org.junit.Assert;
 
-import org.chromium.base.test.util.ScalableTimeout;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabTestUtils;
-import org.chromium.chrome.test.ChromeActivityTestRule;
+import org.monyhar.base.test.util.ScalableTimeout;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabTestUtils;
+import org.monyhar.chrome.test.ChromeActivityTestRule;
 
 /**
  * Custom ActivityTestRule for all instrumentation tests that require a {@link CustomTabActivity}.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.embedder_support.application;
+package org.monyhar.components.embedder_support.application;
 
 import android.content.ComponentCallbacks;
 import android.content.Context;
@@ -13,14 +13,14 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.view.LayoutInflater;
 
-import org.chromium.base.ContextUtils;
+import org.monyhar.base.ContextUtils;
 
 import java.lang.ref.WeakReference;
 import java.util.WeakHashMap;
 
 /**
  * This class allows us to wrap the application context so that a Chromium implementation loaded
- * from a separate APK can correctly reference both org.chromium.* and application classes which is
+ * from a separate APK can correctly reference both org.monyhar.* and application classes which is
  * necessary to properly inflate UI.
  */
 public class ClassLoaderContextWrapperFactory {
@@ -75,13 +75,13 @@ public class ClassLoaderContextWrapperFactory {
         @Override
         public ClassLoader getClassLoader() {
             final ClassLoader appCl = getBaseContext().getClassLoader();
-            final ClassLoader chromiumCl = ClassLoaderContextWrapper.class.getClassLoader();
+            final ClassLoader monyharCl = ClassLoaderContextWrapper.class.getClassLoader();
             return new ClassLoader() {
                 @Override
                 protected Class<?> findClass(String name) throws ClassNotFoundException {
                     // First look in the Chromium class loader.
                     try {
-                        return chromiumCl.loadClass(name);
+                        return monyharCl.loadClass(name);
                     } catch (ClassNotFoundException e) {
                         // Look in the app class loader; allowing it to throw
                         // ClassNotFoundException.

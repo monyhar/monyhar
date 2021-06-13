@@ -23,8 +23,8 @@ namespace chromeos {
 //
 // GetLicenseData:
 // % dbus-send --system --type=method_call --print-reply
-// --dest=org.chromium.PluginVmService /org/chromium/PluginVmService
-// org.chromium.PluginVmServiceInterface.GetLicenseData
+// --dest=org.monyhar.PluginVmService /org/monyhar/PluginVmService
+// org.monyhar.PluginVmServiceInterface.GetLicenseData
 //
 // % (returns message GetLicenseDataResponse {
 //  string license_key = 1; // If available, this contains the PluginVm
@@ -37,15 +37,15 @@ namespace chromeos {
 //
 // ShowSettingsPage:
 // % dbus-send --system --type=method_call --print-reply
-// --dest=org.chromium.PluginVmService /org/chromium/PluginVmService
-// org.chromium.PluginVmServiceInterface.ShowSettingsPage
+// --dest=org.monyhar.PluginVmService /org/monyhar/PluginVmService
+// org.monyhar.PluginVmServiceInterface.ShowSettingsPage
 // array:byte:0x0a,0x10,0x70,0x6c,0x75,0x67,0x69,0x6e,0x56,0x6d,0x2f,0x64,0x65,
 // 0x74,0x61,0x69,0x6c,0x73
 //
 // GetPermissions:
 // % dbus-send --system --type=method_call --print-reply
-// --dest=org.chromium.PluginVmService /org/chromium/PluginVmService
-// org.chromium.PluginVmServiceInterface.GetPermissions
+// --dest=org.monyhar.PluginVmService /org/monyhar/PluginVmService
+// org.monyhar.PluginVmServiceInterface.GetPermissions
 //
 // % (returns message GetPermissionsResponse {
 //  bool data_collection_enabled = 1; // Data collection enablement status.
@@ -53,8 +53,8 @@ namespace chromeos {
 //
 // GetUserId:
 // % dbus-send --system --type=method_call --print-reply
-// --dest=org.chromium.PluginVmService /org/chromium/PluginVmService
-// org.chromium.PluginVmServiceInterface.GetUserId
+// --dest=org.monyhar.PluginVmService /org/monyhar/PluginVmService
+// org.monyhar.PluginVmServiceInterface.GetUserId
 //
 // % (returns message GetLicenseDataResponse {
 //  string plugin_vm_user_id = 1; // If available, this contains the PluginVm

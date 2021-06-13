@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ntp;
+package org.monyhar.chrome.browser.ntp;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ExpandableListView;
 
-import org.chromium.ui.base.DeviceFormFactor;
+import org.monyhar.ui.base.DeviceFormFactor;
 
 /**
  * Customized ExpandableListView for the recent tabs page. This class handles tablet-specific

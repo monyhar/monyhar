@@ -5,7 +5,7 @@
 syntax = "proto2";
 
 option optimize_for = LITE_RUNTIME;
-option java_package = "org.chromium.components.metrics";
+option java_package = "org.monyhar.components.metrics";
 
 option java_outer_classname = "OmniboxEventProtos";
 
@@ -165,7 +165,7 @@ message OmniboxEventProto {
     ANDROID_SEARCH_WIDGET = 16;
 
     // When adding new classifications, please consider adding them in
-    // chromium's chrome/browser/resources/omnibox/omnibox.html
+    // monyhar's chrome/browser/resources/omnibox/omnibox.html
     // so that these new options are displayed on about:omnibox.
   }
   optional PageClassification current_page_classification = 10;
@@ -246,7 +246,7 @@ message OmniboxEventProto {
                                   // that not all NAVSUUGGEST suggestions come
                                   // from the experimental service).
                                   // For subtype definitions, please contact
-                                  // gcomanici@chromium.org.
+                                  // gcomanici@monyhar.org.
       SEARCH_WHAT_YOU_TYPED = 7;  // The input as a search query (with the
                                   // default engine)
       SEARCH_HISTORY = 8;         // A past search (with the default engine)

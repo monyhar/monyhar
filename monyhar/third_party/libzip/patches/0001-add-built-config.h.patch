@@ -1,5 +1,5 @@
 From 346351bec3c6a50994568576b8bc6c8ff770a0dc Mon Sep 17 00:00:00 2001
-From: Michael Crouse <mcrouse@chromium.org>
+From: Michael Crouse <mcrouse@monyhar.org>
 Date: Tue, 5 Jan 2021 09:08:54 -0800
 Subject: [PATCH] add built config.h
 

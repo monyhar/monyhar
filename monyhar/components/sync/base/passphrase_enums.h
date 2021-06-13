@@ -14,7 +14,7 @@ namespace syncer {
 // the user should be prompted for a decryption passphrase.
 // Do not re-order or delete these entries; they are used in a UMA histogram.
 // Please edit SyncPassphraseType in enums.xml if a value is added.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.sync
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.sync
 enum class PassphraseType {
   // GAIA-based passphrase (deprecated).
   // TODO(crbug.com/1201684): Some codepaths use this value as a synonym for

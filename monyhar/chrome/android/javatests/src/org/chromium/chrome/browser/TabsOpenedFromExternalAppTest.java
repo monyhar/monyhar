@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.content.Context;
 import android.content.Intent;
@@ -22,31 +22,31 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.BaseSwitches;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.CriteriaNotSatisfiedException;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.FlakyTest;
-import org.chromium.base.test.util.UrlUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.init.AsyncInitializationActivity;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.TabModelUtils;
-import org.chromium.chrome.test.ChromeActivityTestRule;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.ChromeApplicationTestUtils;
-import org.chromium.chrome.test.util.ChromeTabUtils;
-import org.chromium.chrome.test.util.browser.contextmenu.ContextMenuUtils;
-import org.chromium.content_public.browser.test.util.DOMUtils;
-import org.chromium.content_public.browser.test.util.JavaScriptUtils;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.content_public.common.Referrer;
-import org.chromium.net.test.EmbeddedTestServer;
-import org.chromium.network.mojom.ReferrerPolicy;
+import org.monyhar.base.BaseSwitches;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.CriteriaNotSatisfiedException;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.FlakyTest;
+import org.monyhar.base.test.util.UrlUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.init.AsyncInitializationActivity;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.TabModelUtils;
+import org.monyhar.chrome.test.ChromeActivityTestRule;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.ChromeApplicationTestUtils;
+import org.monyhar.chrome.test.util.ChromeTabUtils;
+import org.monyhar.chrome.test.util.browser.contextmenu.ContextMenuUtils;
+import org.monyhar.content_public.browser.test.util.DOMUtils;
+import org.monyhar.content_public.browser.test.util.JavaScriptUtils;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.content_public.common.Referrer;
+import org.monyhar.net.test.EmbeddedTestServer;
+import org.monyhar.network.mojom.ReferrerPolicy;
 
 import java.util.concurrent.TimeoutException;
 
@@ -59,13 +59,13 @@ public class TabsOpenedFromExternalAppTest {
     @Rule
     public ChromeTabbedActivityTestRule mActivityTestRule = new ChromeTabbedActivityTestRule();
 
-    static final String HTTP_REFERRER = "http://chromium.org/";
+    static final String HTTP_REFERRER = "http://monyhar.org/";
 
     private static final String EXTERNAL_APP_1_ID = "app1";
     private static final String EXTERNAL_APP_2_ID = "app2";
     private static final String ANDROID_APP_REFERRER = "android-app://com.my.great.great.app/";
-    private static final String HTTPS_REFERRER = "https://chromium.org/";
-    private static final String HTTPS_REFERRER_WITH_PATH = "https://chromium.org/path1/path2";
+    private static final String HTTPS_REFERRER = "https://monyhar.org/";
+    private static final String HTTPS_REFERRER_WITH_PATH = "https://monyhar.org/path1/path2";
 
     static class ElementFocusedCriteria implements Runnable {
         private final Tab mTab;

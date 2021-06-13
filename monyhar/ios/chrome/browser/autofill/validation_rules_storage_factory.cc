@@ -8,7 +8,7 @@
 #include "base/path_service.h"
 #include "components/prefs/json_pref_store.h"
 #include "ios/chrome/browser/chrome_paths.h"
-#include "third_party/libaddressinput/chromium/chrome_storage_impl.h"
+#include "third_party/libaddressinput/monyhar/chrome_storage_impl.h"
 
 namespace autofill {
 

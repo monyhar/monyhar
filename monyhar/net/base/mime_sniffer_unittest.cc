@@ -362,7 +362,7 @@ TEST(MimeSnifferTest, XMLTest) {
 }
 
 // Test content which is >= 1024 bytes, and includes no open angle bracket.
-// http://code.google.com/p/chromium/issues/detail?id=3521
+// http://code.google.com/p/monyhar/issues/detail?id=3521
 TEST(MimeSnifferTest, XMLTestLargeNoAngledBracket) {
   // Make a large input, with 1024 bytes of "x".
   std::string content;
@@ -377,7 +377,7 @@ TEST(MimeSnifferTest, XMLTestLargeNoAngledBracket) {
 }
 
 // Test content which is >= 1024 bytes, and includes a binary looking byte.
-// http://code.google.com/p/chromium/issues/detail?id=15314
+// http://code.google.com/p/monyhar/issues/detail?id=15314
 TEST(MimeSnifferTest, LooksBinary) {
   // Make a large input, with 1024 bytes of "x" and 1 byte of 0x01.
   std::string content;

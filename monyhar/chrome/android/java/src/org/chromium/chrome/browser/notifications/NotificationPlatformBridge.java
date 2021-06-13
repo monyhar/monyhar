@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.notifications;
+package org.monyhar.chrome.browser.notifications;
 
-import static org.chromium.components.content_settings.PrefNames.NOTIFICATIONS_VIBRATE_ENABLED;
+import static org.monyhar.components.content_settings.PrefNames.NOTIFICATIONS_VIBRATE_ENABLED;
 
 import android.app.Notification;
 import android.app.PendingIntent;
@@ -25,39 +25,39 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.preference.PreferenceFragmentCompat;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.Promise;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ChromeApplicationImpl;
-import org.chromium.chrome.browser.browserservices.TrustedWebActivityClient;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
-import org.chromium.chrome.browser.notifications.channels.SiteChannelsManager;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
-import org.chromium.chrome.browser.usage_stats.NotificationSuspender;
-import org.chromium.chrome.browser.webapps.ChromeWebApkHost;
-import org.chromium.chrome.browser.webapps.WebApkServiceClient;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxy;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxyImpl;
-import org.chromium.components.browser_ui.notifications.NotificationMetadata;
-import org.chromium.components.browser_ui.notifications.NotificationWrapper;
-import org.chromium.components.browser_ui.notifications.PendingIntentProvider;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.browser_ui.site_settings.SingleCategorySettings;
-import org.chromium.components.browser_ui.site_settings.SingleWebsiteSettings;
-import org.chromium.components.browser_ui.site_settings.SiteSettingsCategory;
-import org.chromium.components.url_formatter.SchemeDisplay;
-import org.chromium.components.url_formatter.UrlFormatter;
-import org.chromium.components.user_prefs.UserPrefs;
-import org.chromium.components.webapk.lib.client.WebApkValidator;
-import org.chromium.url.URI;
-import org.chromium.webapk.lib.client.WebApkIdentityServiceClient;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.Promise;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ChromeApplicationImpl;
+import org.monyhar.chrome.browser.browserservices.TrustedWebActivityClient;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.chrome.browser.notifications.channels.SiteChannelsManager;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.settings.SettingsLauncherImpl;
+import org.monyhar.chrome.browser.usage_stats.NotificationSuspender;
+import org.monyhar.chrome.browser.webapps.ChromeWebApkHost;
+import org.monyhar.chrome.browser.webapps.WebApkServiceClient;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxy;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxyImpl;
+import org.monyhar.components.browser_ui.notifications.NotificationMetadata;
+import org.monyhar.components.browser_ui.notifications.NotificationWrapper;
+import org.monyhar.components.browser_ui.notifications.PendingIntentProvider;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.browser_ui.site_settings.SingleCategorySettings;
+import org.monyhar.components.browser_ui.site_settings.SingleWebsiteSettings;
+import org.monyhar.components.browser_ui.site_settings.SiteSettingsCategory;
+import org.monyhar.components.url_formatter.SchemeDisplay;
+import org.monyhar.components.url_formatter.UrlFormatter;
+import org.monyhar.components.user_prefs.UserPrefs;
+import org.monyhar.components.webapk.lib.client.WebApkValidator;
+import org.monyhar.url.URI;
+import org.monyhar.webapk.lib.client.WebApkIdentityServiceClient;
 
 import java.net.URISyntaxException;
 

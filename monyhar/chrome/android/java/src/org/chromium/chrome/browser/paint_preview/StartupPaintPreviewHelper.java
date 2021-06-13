@@ -2,32 +2,32 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.paint_preview;
+package org.monyhar.chrome.browser.paint_preview;
 
 import android.content.Context;
 import android.os.SystemClock;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ObserverList;
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.flags.BooleanCachedFieldTrialParameter;
-import org.chromium.chrome.browser.flags.CachedFeatureFlags;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.fullscreen.BrowserControlsManager;
-import org.chromium.chrome.browser.metrics.PageLoadMetrics;
-import org.chromium.chrome.browser.metrics.UmaUtils;
-import org.chromium.chrome.browser.multiwindow.MultiWindowUtils;
-import org.chromium.chrome.browser.offlinepages.OfflinePageUtils;
-import org.chromium.chrome.browser.paint_preview.StartupPaintPreviewMetrics.PaintPreviewMetricsObserver;
-import org.chromium.chrome.browser.paint_preview.services.PaintPreviewTabServiceFactory;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorObserver;
-import org.chromium.chrome.browser.toolbar.load_progress.LoadProgressCoordinator;
-import org.chromium.chrome.browser.util.ChromeAccessibilityUtil;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.flags.BooleanCachedFieldTrialParameter;
+import org.monyhar.chrome.browser.flags.CachedFeatureFlags;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.fullscreen.BrowserControlsManager;
+import org.monyhar.chrome.browser.metrics.PageLoadMetrics;
+import org.monyhar.chrome.browser.metrics.UmaUtils;
+import org.monyhar.chrome.browser.multiwindow.MultiWindowUtils;
+import org.monyhar.chrome.browser.offlinepages.OfflinePageUtils;
+import org.monyhar.chrome.browser.paint_preview.StartupPaintPreviewMetrics.PaintPreviewMetricsObserver;
+import org.monyhar.chrome.browser.paint_preview.services.PaintPreviewTabServiceFactory;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorObserver;
+import org.monyhar.chrome.browser.toolbar.load_progress.LoadProgressCoordinator;
+import org.monyhar.chrome.browser.util.ChromeAccessibilityUtil;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Glue code for the Paint Preview show-on-startup feature.

@@ -27,7 +27,7 @@
       android:paddingEnd="16dp"
       android:paddingTop="24dp">
 
-      <org.chromium.components.browser_ui.widget.RoundedCornerImageView
+      <org.monyhar.components.browser_ui.widget.RoundedCornerImageView
           android:id="@+id/image_preview"
           android:layout_height="@dimen/sharing_hub_preview_icon_size"
           android:layout_width="@dimen/sharing_hub_preview_icon_size"
@@ -70,7 +70,7 @@
         android:textDirection="locale"
         android:textAppearance="@style/TextAppearance.TextMedium.Primary"/>
 
-      <org.chromium.ui.widget.ChromeImageView
+      <org.monyhar.ui.widget.ChromeImageView
           android:id="@+id/image_preview_link"
           android:layout_height="@dimen/sharing_hub_preview_icon_size"
           android:layout_width="@dimen/sharing_hub_preview_icon_size"

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
 import androidx.test.filters.MediumTest;
 import androidx.test.filters.SmallTest;
@@ -14,12 +14,12 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.AwContents;
-import org.chromium.android_webview.AwProxyController;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.net.test.util.TestWebServer;
+import org.monyhar.android_webview.AwContents;
+import org.monyhar.android_webview.AwProxyController;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.net.test.util.TestWebServer;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;

@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
 /**
  * Subclass of {@link NetworkException} which contains a detailed
- * <a href="https://www.chromium.org/quic">QUIC</a> error code from <a
- * href="https://cs.chromium.org/search/?q=symbol:%5CbQuicErrorCode%5Cb">
+ * <a href="https://www.monyhar.org/quic">QUIC</a> error code from <a
+ * href="https://cs.monyhar.org/search/?q=symbol:%5CbQuicErrorCode%5Cb">
  * QuicErrorCode</a>. An instance of {@code QuicException} is passed to {@code onFailed} callbacks
  * when the error code is {@link NetworkException#ERROR_QUIC_PROTOCOL_FAILED
  * NetworkException.ERROR_QUIC_PROTOCOL_FAILED}.
@@ -26,9 +26,9 @@ public abstract class QuicException extends NetworkException {
     }
 
     /**
-     * Returns the <a href="https://www.chromium.org/quic">QUIC</a> error code, which is a value
+     * Returns the <a href="https://www.monyhar.org/quic">QUIC</a> error code, which is a value
      * from <a
-     * href="https://cs.chromium.org/search/?q=symbol:%5CbQuicErrorCode%5Cb">
+     * href="https://cs.monyhar.org/search/?q=symbol:%5CbQuicErrorCode%5Cb">
      * QuicErrorCode</a>.
      */
     public abstract int getQuicDetailedErrorCode();

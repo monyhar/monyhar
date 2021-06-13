@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.base;
+package org.monyhar.chromecast.base;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.BlockJUnit4ClassRunner;
 
-import org.chromium.base.Function;
-import org.chromium.chromecast.base.Inheritance.Base;
-import org.chromium.chromecast.base.Inheritance.Derived;
+import org.monyhar.base.Function;
+import org.monyhar.chromecast.base.Inheritance.Base;
+import org.monyhar.chromecast.base.Inheritance.Derived;
 
 /**
  * Tests for Observable#map().

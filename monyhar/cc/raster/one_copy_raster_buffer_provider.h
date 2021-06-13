@@ -40,7 +40,7 @@ class CC_EXPORT OneCopyRasterBufferProvider : public RasterBufferProvider {
       viz::ContextProvider* compositor_context_provider,
       viz::RasterContextProvider* worker_context_provider,
       gpu::GpuMemoryBufferManager* gpu_memory_buffer_manager,
-      int max_copy_texture_chromium_size,
+      int max_copy_texture_monyhar_size,
       bool use_partial_raster,
       bool use_gpu_memory_buffer_resources,
       int max_staging_buffer_usage_in_bytes,

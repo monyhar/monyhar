@@ -5,7 +5,7 @@
 syntax = "proto2";
 
 option optimize_for = LITE_RUNTIME;
-option java_package = "org.chromium.components.metrics";
+option java_package = "org.monyhar.components.metrics";
 
 option java_outer_classname = "HistogramEventProtos";
 

@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.history;
+package org.monyhar.chrome.browser.history;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ObserverList;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
 
 /** The JNI bridge for Android to receive notifications about history deletions. */
 public class HistoryDeletionBridge {

@@ -98,7 +98,7 @@ const char kChromeSearchScheme[] = "chrome-search";
 const char kChromeUIUntrustedNewTabPageUrl[] =
     "chrome-untrusted://new-tab-page/";
 
-const char kChromiumProjectURL[] = "https://www.chromium.org/";
+const char kChromiumProjectURL[] = "https://www.monyhar.org/";
 
 const char kCloudPrintCertificateErrorLearnMoreURL[] =
 #if BUILDFLAG(IS_CHROMEOS_ASH)
@@ -152,7 +152,7 @@ const char kExtensionControlledSettingLearnMoreURL[] =
 const char kExtensionInvalidRequestURL[] = "chrome-extension://invalid/";
 
 const char kFlashDeprecationLearnMoreURL[] =
-    "https://blog.chromium.org/2017/07/so-long-and-thanks-for-all-flash.html";
+    "https://blog.monyhar.org/2017/07/so-long-and-thanks-for-all-flash.html";
 
 const char kGoogleAccountActivityControlsURL[] =
     "https://myaccount.google.com/activitycontrols/search";

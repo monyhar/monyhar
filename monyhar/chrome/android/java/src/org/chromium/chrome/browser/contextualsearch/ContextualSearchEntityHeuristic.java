@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.contextualsearch;
+package org.monyhar.chrome.browser.contextualsearch;
 
 import android.text.TextUtils;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.CollectionUtil;
-import org.chromium.chrome.browser.contextualsearch.ContextualSearchFieldTrial.ContextualSearchSwitch;
+import org.monyhar.base.CollectionUtil;
+import org.monyhar.chrome.browser.contextualsearch.ContextualSearchFieldTrial.ContextualSearchSwitch;
 
 import java.util.HashSet;
 import java.util.Locale;

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.bottombar.contextualsearch;
+package org.monyhar.chrome.browser.compositor.bottombar.contextualsearch;
 
 import android.content.Context;
 import android.view.View;
@@ -11,21 +11,21 @@ import android.view.ViewGroup;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.MathUtils;
-import org.chromium.base.ObserverList;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanel;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanelInflater;
-import org.chromium.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchPanel.RelatedSearchesSectionHost;
-import org.chromium.chrome.browser.contextualsearch.ContextualSearchUma;
-import org.chromium.chrome.browser.contextualsearch.RelatedSearchesUma;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.components.browser_ui.widget.chips.Chip;
-import org.chromium.components.browser_ui.widget.chips.ChipsCoordinator;
-import org.chromium.components.browser_ui.widget.chips.ChipsProvider;
-import org.chromium.ui.base.LocalizationUtils;
-import org.chromium.ui.resources.dynamics.DynamicResourceLoader;
-import org.chromium.ui.widget.ChipView;
+import org.monyhar.base.MathUtils;
+import org.monyhar.base.ObserverList;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanel;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanelInflater;
+import org.monyhar.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchPanel.RelatedSearchesSectionHost;
+import org.monyhar.chrome.browser.contextualsearch.ContextualSearchUma;
+import org.monyhar.chrome.browser.contextualsearch.RelatedSearchesUma;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.components.browser_ui.widget.chips.Chip;
+import org.monyhar.components.browser_ui.widget.chips.ChipsCoordinator;
+import org.monyhar.components.browser_ui.widget.chips.ChipsProvider;
+import org.monyhar.ui.base.LocalizationUtils;
+import org.monyhar.ui.resources.dynamics.DynamicResourceLoader;
+import org.monyhar.ui.widget.ChipView;
 
 import java.util.ArrayList;
 import java.util.List;

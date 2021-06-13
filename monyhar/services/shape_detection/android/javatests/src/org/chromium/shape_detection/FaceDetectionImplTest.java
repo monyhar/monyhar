@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.shape_detection;
+package org.monyhar.shape_detection;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -16,13 +16,13 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.base.test.util.Feature;
-import org.chromium.shape_detection.mojom.FaceDetection;
-import org.chromium.shape_detection.mojom.FaceDetectionResult;
-import org.chromium.shape_detection.mojom.FaceDetectorOptions;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.shape_detection.mojom.FaceDetection;
+import org.monyhar.shape_detection.mojom.FaceDetectionResult;
+import org.monyhar.shape_detection.mojom.FaceDetectorOptions;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.TimeUnit;
@@ -34,9 +34,9 @@ import java.util.concurrent.TimeUnit;
 @Batch(Batch.UNIT_TESTS)
 @DisableIf.Build(sdk_is_greater_than = Build.VERSION_CODES.N_MR1, message = "crbug.com/1153716")
 public class FaceDetectionImplTest {
-    private static final org.chromium.skia.mojom.BitmapN32 MONA_LISA_BITMAP =
+    private static final org.monyhar.skia.mojom.BitmapN32 MONA_LISA_BITMAP =
             TestUtils.mojoBitmapFromFile("mona_lisa.jpg");
-    private static final org.chromium.skia.mojom.BitmapN32 FACE_POSE_BITMAP =
+    private static final org.monyhar.skia.mojom.BitmapN32 FACE_POSE_BITMAP =
             TestUtils.mojoBitmapFromFile("face_pose.png");
     // Different versions of Android have different implementations of FaceDetector.findFaces(), so
     // we have to use a large error threshold.
@@ -47,7 +47,7 @@ public class FaceDetectionImplTest {
 
     public FaceDetectionImplTest() {}
 
-    private static FaceDetectionResult[] detect(org.chromium.skia.mojom.BitmapN32 mojoBitmap,
+    private static FaceDetectionResult[] detect(org.monyhar.skia.mojom.BitmapN32 mojoBitmap,
             boolean fastMode, DetectionProviderType api) {
         FaceDetectorOptions options = new FaceDetectorOptions();
         options.fastMode = fastMode;
@@ -115,7 +115,7 @@ public class FaceDetectionImplTest {
                 MONA_LISA_BITMAP.imageInfo.height, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(paddedBitmap);
         canvas.drawBitmap(BitmapUtils.convertToBitmap(MONA_LISA_BITMAP), 0, 0, null);
-        org.chromium.skia.mojom.BitmapN32 mojoBitmap = TestUtils.mojoBitmapFromBitmap(paddedBitmap);
+        org.monyhar.skia.mojom.BitmapN32 mojoBitmap = TestUtils.mojoBitmapFromBitmap(paddedBitmap);
         Assert.assertEquals(1, mojoBitmap.imageInfo.width % 2);
 
         FaceDetectionResult[] results = detect(mojoBitmap, true, DetectionProviderType.ANDROID);

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.geo;
+package org.monyhar.chrome.browser.omnibox.geo;
 
 import static org.junit.Assert.assertEquals;
 
@@ -20,13 +20,13 @@ import org.robolectric.annotation.Implements;
 import org.robolectric.shadows.ShadowLooper;
 import org.robolectric.shadows.ShadowSystemClock;
 
-import org.chromium.base.Callback;
-import org.chromium.base.task.test.CustomShadowAsyncTask;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.omnibox.geo.VisibleNetworks.VisibleCell;
-import org.chromium.chrome.browser.omnibox.geo.VisibleNetworks.VisibleWifi;
-import org.chromium.chrome.browser.omnibox.geo.VisibleNetworksTrackerTest.ShadowPlatformNetworksManager;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.base.task.test.CustomShadowAsyncTask;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.omnibox.geo.VisibleNetworks.VisibleCell;
+import org.monyhar.chrome.browser.omnibox.geo.VisibleNetworks.VisibleWifi;
+import org.monyhar.chrome.browser.omnibox.geo.VisibleNetworksTrackerTest.ShadowPlatformNetworksManager;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.Arrays;
 import java.util.HashSet;

@@ -10,7 +10,7 @@ start](quick-start.md) guide first.
 ## Overview
 
 This is meant to be a comprehensive guide for building WebView, within the
-limits of what is possible in a **public** chromium checkout. While this is
+limits of what is possible in a **public** monyhar checkout. While this is
 sufficient for most cases, Googlers may wish to consult [internal
 instructions][1] to get a checkout including closed-source code, which is
 necessary if:
@@ -130,7 +130,7 @@ to the [next section](#removing-preinstalled-webview). Otherwise, you can change
 the package name for either target by setting the `system_webview_package_name`
 GN arg (ex. `system_webview_package_name = "com.google.android.webview"`).
 
-`monochrome_public_apk`'s package name defaults to `org.chromium.chrome`.
+`monochrome_public_apk`'s package name defaults to `org.monyhar.chrome`.
 Because this not accepted by any build of the OS, you'll want to change this
 with the GN arg `chrome_public_manifest_package =
 "com.google.android.apps.chrome"`, or choose `system_webview_apk` instead.
@@ -230,4 +230,4 @@ _TODO(ntfschr): document cases here which could arise generally, but wouldn't
 for the quick start._
 
 [1]: http://go/clank-webview/build_instructions.md
-[2]: https://groups.google.com/a/chromium.org/forum/#!forum/android-webview-dev
+[2]: https://groups.google.com/a/monyhar.org/forum/#!forum/android-webview-dev

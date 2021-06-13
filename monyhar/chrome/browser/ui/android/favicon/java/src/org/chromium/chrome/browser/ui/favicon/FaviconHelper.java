@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui.favicon;
+package org.monyhar.chrome.browser.ui.favicon;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -17,12 +17,12 @@ import android.graphics.drawable.Drawable;
 import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.url.GURL;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.url.GURL;
 
 import java.util.List;
 

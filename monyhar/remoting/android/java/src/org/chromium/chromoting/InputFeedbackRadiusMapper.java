@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting;
+package org.monyhar.chromoting;
 
 import android.view.View;
 
-import org.chromium.chromoting.RenderStub.InputFeedbackType;
+import org.monyhar.chromoting.RenderStub.InputFeedbackType;
 
 /**
  * Helper class for mapping a feedback type to the max radius of the feedback animation circle.

@@ -7,8 +7,8 @@ static_library("murmurhash2") {
     "src/MurmurHash2.cpp",
     "src/MurmurHash2.h",
   ]
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 }
 
 static_library("murmurhash3") {
@@ -16,6 +16,6 @@ static_library("murmurhash3") {
     "src/MurmurHash3.cpp",
     "src/MurmurHash3.h",
   ]
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 }

@@ -18,7 +18,7 @@ namespace base {
 namespace {
 
 // Note: pointers are 32 bits on all architectures in NaCl. See
-// https://bugs.chromium.org/p/nativeclient/issues/detail?id=1162
+// https://bugs.monyhar.org/p/nativeclient/issues/detail?id=1162
 #if defined(ARCH_CPU_32_BITS) || defined(OS_NACL)
 // No effective limit on 32-bit, since there simply isn't enough address space
 // for ASLR to be particularly effective.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar;
+package org.monyhar.chrome.browser.toolbar;
 
 /** Simple collection of information about the original intent. */
 public class ToolbarIntentMetadata {

@@ -15,7 +15,7 @@ to test it on Linux, since all you need to test on your Linux box is a `git
 push` from Windows followed by building and testing under Linux.
 
 The disadvantage is that it adds an extra layer between the Chromium git repo
-and your Windows checkout.  In my experience (joi@chromium.org) this does not
+and your Windows checkout.  In my experience (joi@monyhar.org) this does not
 actually slow you down much, if at all.
 
 The most frequently used alternative to this workflow on Windows seems to be
@@ -66,7 +66,7 @@ switching between branches):
 *   To track which base branch topic branches are based off, you can use a
     naming convention; I use e.g. lk0426 for an LKGR branch created April 26th,
     then use e.g. lk0426-topic1, lk0426-topic2 for the topic branches that have
-    all changes merged from lk0426. I (joi@chromium.org) also have a script to
+    all changes merged from lk0426. I (joi@monyhar.org) also have a script to
     update the base branch for topic branches and rename them - let me know if
     interested.
 *   Now that all your branch names are prefixed with the base revision (whether
@@ -124,4 +124,4 @@ Gotchas:
 *   `git push` from Windows will fail if your Linux repo is checked out to the
     same branch. It is easy to switch back manually, but I also have a script I
     call `safepush` that switches the Linux-side branch for you before pushing;
-    let me (joi@chromium.org) know if interested.
+    let me (joi@monyhar.org) know if interested.

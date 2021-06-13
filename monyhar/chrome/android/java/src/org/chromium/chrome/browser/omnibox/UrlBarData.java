@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox;
+package org.monyhar.chrome.browser.omnibox;
 
 import android.net.Uri;
 import android.text.Spanned;
@@ -10,9 +10,9 @@ import android.text.TextUtils;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.CollectionUtil;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.content_public.common.ContentUrlConstants;
+import org.monyhar.base.CollectionUtil;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.content_public.common.ContentUrlConstants;
 
 import java.util.HashSet;
 

@@ -19,7 +19,7 @@ def root_permissions():
     luci.binding(
         realm = "@root",
         roles = "role/swarming.poolOwner",
-        groups = "project-chromium-admins",
+        groups = "project-monyhar-admins",
     )
 
     # Allow everyone to see all tasks and bots in Chromium pools.
@@ -80,7 +80,7 @@ def task_triggerers(*, builder_realm, pool_realm, users = None, groups = None):
     tests from their workstations.
 
     The given users will be allowed to submit tasks in the `builder_realm` realm
-    (e.g. tasks that pretend to be "chromium/try" tasks), running on a Swarming
+    (e.g. tasks that pretend to be "monyhar/try" tasks), running on a Swarming
     pool in some `pool_realm` (e.g. "pools/try" or "pools/tests").
 
     Pools are owned by the main Chromium project, thus `pool_realm` setting is

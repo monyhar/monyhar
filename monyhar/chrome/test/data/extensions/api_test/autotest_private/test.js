@@ -515,21 +515,21 @@ var defaultTests = [
   function getAllInstalledApps() {
     chrome.autotestPrivate.getAllInstalledApps(chrome.test.callbackPass(
       apps => {
-        // Limit apps to chromium to filter out default apps.
-        const chromium = apps.find(
+        // Limit apps to monyhar to filter out default apps.
+        const monyhar = apps.find(
           app => app.appId == 'mgndgikekgjfcpckkfioiadnlibdjbkf');
-        chrome.test.assertTrue(!!chromium);
+        chrome.test.assertTrue(!!monyhar);
         // Only check that name and shortName are set for Chromium because
         // their values change if chrome_branded is true.
-        chrome.test.assertTrue(!!chromium.name);
-        chrome.test.assertTrue(!!chromium.shortName);
-        chrome.test.assertEq(chromium.publisherId, "");
-        chrome.test.assertEq(chromium.additionalSearchTerms, []);
-        chrome.test.assertEq(chromium.readiness, 'Ready');
-        chrome.test.assertEq(chromium.showInLauncher, true);
-        chrome.test.assertEq(chromium.showInSearch, true);
-        chrome.test.assertEq(chromium.type, 'Extension');
-        chrome.test.assertEq(chromium.installSource, 'System');
+        chrome.test.assertTrue(!!monyhar.name);
+        chrome.test.assertTrue(!!monyhar.shortName);
+        chrome.test.assertEq(monyhar.publisherId, "");
+        chrome.test.assertEq(monyhar.additionalSearchTerms, []);
+        chrome.test.assertEq(monyhar.readiness, 'Ready');
+        chrome.test.assertEq(monyhar.showInLauncher, true);
+        chrome.test.assertEq(monyhar.showInSearch, true);
+        chrome.test.assertEq(monyhar.type, 'Extension');
+        chrome.test.assertEq(monyhar.installSource, 'System');
     }));
   },
   // This test verifies that only Chromium is available by default.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.content.Intent;
 import android.speech.RecognizerResultsIntent;
@@ -14,11 +14,11 @@ import org.junit.ClassRule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.UiThreadTest;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.test.ChromeBrowserTestRule;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.UiThreadTest;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.test.ChromeBrowserTestRule;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -5,10 +5,10 @@ from ..webdriver_server import EdgeChromiumDriverServer
 from ..executors import executor_kwargs as base_executor_kwargs
 from ..executors.executorwebdriver import (WebDriverTestharnessExecutor,  # noqa: F401
                                            WebDriverRefTestExecutor)  # noqa: F401
-from ..executors.executoredgechromium import EdgeChromiumDriverWdspecExecutor  # noqa: F401
+from ..executors.executoredgemonyhar import EdgeChromiumDriverWdspecExecutor  # noqa: F401
 
 
-__wptrunner__ = {"product": "edgechromium",
+__wptrunner__ = {"product": "edgemonyhar",
                  "check_args": "check_args",
                  "browser": {None: "EdgeChromiumBrowser",
                              "wdspec": "NullBrowser"},

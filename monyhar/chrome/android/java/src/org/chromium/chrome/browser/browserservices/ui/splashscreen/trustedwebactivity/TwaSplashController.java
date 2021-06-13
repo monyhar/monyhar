@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.ui.splashscreen.trustedwebactivity;
+package org.monyhar.chrome.browser.browserservices.ui.splashscreen.trustedwebactivity;
 
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
 
@@ -22,14 +22,14 @@ import androidx.browser.customtabs.TrustedWebUtils;
 import androidx.browser.trusted.TrustedWebActivityIntentBuilder;
 import androidx.browser.trusted.splashscreens.SplashScreenParamKey;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.browserservices.ui.splashscreen.SplashController;
-import org.chromium.chrome.browser.browserservices.ui.splashscreen.SplashDelegate;
-import org.chromium.chrome.browser.customtabs.TranslucentCustomTabActivity;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.ui.base.ActivityWindowAndroid;
-import org.chromium.ui.util.ColorUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.browserservices.ui.splashscreen.SplashController;
+import org.monyhar.chrome.browser.browserservices.ui.splashscreen.SplashDelegate;
+import org.monyhar.chrome.browser.customtabs.TranslucentCustomTabActivity;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.ui.base.ActivityWindowAndroid;
+import org.monyhar.ui.util.ColorUtils;
 
 import javax.inject.Inject;
 

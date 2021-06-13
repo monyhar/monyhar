@@ -5,12 +5,12 @@
 
 import sys
 
-from chrome_telemetry_build import chromium_config
+from chrome_telemetry_build import monyhar_config
 from core import benchmark_runner
 
 
 def main():
-  return benchmark_runner.main(chromium_config.GetDefaultChromiumConfig())
+  return benchmark_runner.main(monyhar_config.GetDefaultChromiumConfig())
 
 
 if __name__ == '__main__':

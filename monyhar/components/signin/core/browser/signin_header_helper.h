@@ -52,7 +52,7 @@ extern const char kAutoLoginHeader[];
 // response. This indicates the action Chrome is supposed to lead the user to
 // perform.
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.signin
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.signin
 // NOTE: This enum is persisted to histograms. Do not change or reorder
 // values.
 enum GAIAServiceType : int {

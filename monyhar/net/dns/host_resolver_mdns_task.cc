@@ -200,7 +200,7 @@ HostCache::Entry HostResolverMdnsTask::ParseResult(
       // Should create two separate transactions with specified type.
     case DnsQueryType::HTTPS:
       // Not supported.
-      // TODO(ericorth@chromium.org): Consider support for HTTPS in mDNS if it
+      // TODO(ericorth@monyhar.org): Consider support for HTTPS in mDNS if it
       // is ever decided to support HTTPS via non-DoH.
     case DnsQueryType::INTEGRITY:
       // INTEGRITY queries are not expected to be useful in mDNS, so they're not

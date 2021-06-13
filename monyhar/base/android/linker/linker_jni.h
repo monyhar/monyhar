@@ -70,7 +70,7 @@
 #error "Unsupported target abi"
 #endif
 
-namespace chromium_android_linker {
+namespace monyhar_android_linker {
 
 // Larger than the largest library we might attempt to load.
 static const size_t kAddressSpaceReservationSize = 192 * 1024 * 1024;
@@ -124,7 +124,7 @@ extern bool InitStaticFieldId(JNIEnv* env,
                               const char* field_sig,
                               jfieldID* field_id);
 
-// A class used to model the field IDs of the org.chromium.base.Linker
+// A class used to model the field IDs of the org.monyhar.base.Linker
 // LibInfo inner class, used to communicate data with the Java side
 // of the linker.
 struct LibInfo_class {
@@ -138,7 +138,7 @@ struct LibInfo_class {
   bool Init(JNIEnv* env) {
     jclass clazz;
     if (!InitClassReference(
-            env, "org/chromium/base/library_loader/Linker$LibInfo", &clazz)) {
+            env, "org/monyhar/base/library_loader/Linker$LibInfo", &clazz)) {
       return false;
     }
 
@@ -210,6 +210,6 @@ extern LibInfo_class s_lib_info_fields;
 
 extern jint JNI_OnLoad(JavaVM* vm, void* reserved);
 
-}  // namespace chromium_android_linker
+}  // namespace monyhar_android_linker
 
 #endif  // BASE_ANDROID_LINKER_LINKER_JNI_H_

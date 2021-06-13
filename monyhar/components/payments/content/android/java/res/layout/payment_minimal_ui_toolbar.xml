@@ -105,7 +105,7 @@
         android:layout_width="@dimen/payment_minimal_ui_toolbar_icon_size"/>
 
     <!-- "Pay" button. -->
-    <org.chromium.ui.widget.ButtonCompat
+    <org.monyhar.ui.widget.ButtonCompat
         android:id="@+id/pay_button"
         android:layout_alignParentEnd="true"
         android:layout_below="@id/drag_handle"

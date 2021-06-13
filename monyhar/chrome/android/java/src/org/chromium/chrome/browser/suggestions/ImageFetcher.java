@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.suggestions;
+package org.monyhar.chrome.browser.suggestions;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.favicon.LargeIconBridge;
-import org.chromium.url.GURL;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.favicon.LargeIconBridge;
+import org.monyhar.url.GURL;
 
 /**
  * Class responsible for fetching images for the views in the NewTabPage and Chrome Home.

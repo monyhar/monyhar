@@ -36,7 +36,7 @@ namespace {
 // Enumeration listing all possible outcomes for fetch attempts of favicons for
 // content suggestions. Used for UMA histograms, so do not change existing
 // values. Insert new values at the end, and update the histogram definition.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.ntp.snippets
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.ntp.snippets
 enum class FaviconFetchResult {
   SUCCESS_CACHED = 0,
   SUCCESS_FETCHED = 1,

@@ -268,7 +268,7 @@ TEST_F(PermissionsAPIUnitTest, ContainsAndGetAllWithRuntimeHostPermissions) {
   EXPECT_FALSE(contains_origin(kContentScriptCom));
   EXPECT_THAT(get_all(), testing::IsEmpty());
 
-  constexpr char kChromiumOrg[] = "https://chromium.org/";
+  constexpr char kChromiumOrg[] = "https://monyhar.org/";
   modifier.GrantHostPermission(GURL(kChromiumOrg));
 
   // The permissions API only reports active permissions, rather than granted
@@ -423,11 +423,11 @@ TEST_F(PermissionsAPIUnitTest, ReRequestingWithheldOptionalPermissions) {
   scoped_refptr<const Extension> extension =
       ExtensionBuilder("extension")
           .SetManifestKey("optional_permissions",
-                          StringVectorToValue({"https://chromium.org/*"}))
+                          StringVectorToValue({"https://monyhar.org/*"}))
           .Build();
   AddExtensionAndGrantPermissions(*extension);
 
-  const GURL kChromiumOrg("https://chromium.org");
+  const GURL kChromiumOrg("https://monyhar.org");
   const PermissionsData* permissions_data = extension->permissions_data();
   EXPECT_TRUE(
       permissions_data->active_permissions().effective_hosts().is_empty());
@@ -435,10 +435,10 @@ TEST_F(PermissionsAPIUnitTest, ReRequestingWithheldOptionalPermissions) {
     std::unique_ptr<const PermissionSet> prompted_permissions;
     EXPECT_TRUE(RunRequestFunction(
         *extension, browser(),
-        R"([{"origins": ["https://chromium.org/*"]}])", &prompted_permissions));
+        R"([{"origins": ["https://monyhar.org/*"]}])", &prompted_permissions));
     ASSERT_TRUE(prompted_permissions);
     EXPECT_THAT(GetPatternsAsStrings(prompted_permissions->effective_hosts()),
-                testing::UnorderedElementsAre("https://chromium.org/*"));
+                testing::UnorderedElementsAre("https://monyhar.org/*"));
   }
 
   EXPECT_TRUE(
@@ -446,10 +446,10 @@ TEST_F(PermissionsAPIUnitTest, ReRequestingWithheldOptionalPermissions) {
           kChromiumOrg));
 
   {
-    URLPattern chromium_org_pattern(Extension::kValidHostPermissionSchemes,
-                                    "https://chromium.org/*");
+    URLPattern monyhar_org_pattern(Extension::kValidHostPermissionSchemes,
+                                    "https://monyhar.org/*");
     PermissionSet permissions(APIPermissionSet(), ManifestPermissionSet(),
-                              URLPatternSet({chromium_org_pattern}),
+                              URLPatternSet({monyhar_org_pattern}),
                               URLPatternSet());
     permissions_test_util::RevokeRuntimePermissionsAndWaitForCompletion(
         profile(), *extension, permissions);
@@ -462,10 +462,10 @@ TEST_F(PermissionsAPIUnitTest, ReRequestingWithheldOptionalPermissions) {
     std::unique_ptr<const PermissionSet> prompted_permissions;
     EXPECT_FALSE(RunRequestFunction(
         *extension, browser(),
-        R"([{"origins": ["https://chromium.org/*"]}])", &prompted_permissions));
+        R"([{"origins": ["https://monyhar.org/*"]}])", &prompted_permissions));
     ASSERT_TRUE(prompted_permissions);
     EXPECT_THAT(GetPatternsAsStrings(prompted_permissions->effective_hosts()),
-                testing::UnorderedElementsAre("https://chromium.org/*"));
+                testing::UnorderedElementsAre("https://monyhar.org/*"));
   }
   EXPECT_TRUE(
       permissions_data->active_permissions().effective_hosts().is_empty());
@@ -480,7 +480,7 @@ TEST_F(PermissionsAPIUnitTest, RequestingWithheldAndOptionalPermissions) {
       ExtensionBuilder("extension")
           .AddPermissions({"https://example.com/*", "https://google.com/*"})
           .SetManifestKey("optional_permissions",
-                          StringVectorToValue({"https://chromium.org/*"}))
+                          StringVectorToValue({"https://monyhar.org/*"}))
           .Build();
   AddExtensionAndGrantPermissions(*extension);
   ScriptingPermissionsModifier(profile(), extension)
@@ -488,7 +488,7 @@ TEST_F(PermissionsAPIUnitTest, RequestingWithheldAndOptionalPermissions) {
 
   const GURL kExampleCom("https://example.com");
   const GURL kGoogleCom("https://google.com");
-  const GURL kChromiumOrg("https://chromium.org");
+  const GURL kChromiumOrg("https://monyhar.org");
   const PermissionsData* permissions_data = extension->permissions_data();
   EXPECT_TRUE(
       permissions_data->active_permissions().effective_hosts().is_empty());
@@ -498,11 +498,11 @@ TEST_F(PermissionsAPIUnitTest, RequestingWithheldAndOptionalPermissions) {
   std::unique_ptr<const PermissionSet> prompted_permissions;
   EXPECT_TRUE(RunRequestFunction(
       *extension, browser(),
-      R"([{"origins": ["https://example.com/*", "https://chromium.org/*"]}])",
+      R"([{"origins": ["https://example.com/*", "https://monyhar.org/*"]}])",
       &prompted_permissions));
   ASSERT_TRUE(prompted_permissions);
   EXPECT_THAT(GetPatternsAsStrings(prompted_permissions->effective_hosts()),
-              testing::UnorderedElementsAre("https://chromium.org/*",
+              testing::UnorderedElementsAre("https://monyhar.org/*",
                                             "https://example.com/*"));
 
   // The requested permissions should be added.
@@ -528,7 +528,7 @@ TEST_F(PermissionsAPIUnitTest, RequestingPermissionsNotSpecifiedInManifest) {
               "https://example.com/*",
           })
           .SetManifestKey("optional_permissions",
-                          StringVectorToValue({"https://chromium.org/*"}))
+                          StringVectorToValue({"https://monyhar.org/*"}))
           .Build();
   AddExtensionAndGrantPermissions(*extension);
   ScriptingPermissionsModifier(profile(), extension)
@@ -536,7 +536,7 @@ TEST_F(PermissionsAPIUnitTest, RequestingPermissionsNotSpecifiedInManifest) {
 
   const GURL kExampleCom("https://example.com");
   const GURL kGoogleCom("https://google.com");
-  const GURL kChromiumOrg("https://chromium.org");
+  const GURL kChromiumOrg("https://monyhar.org");
 
   // Request permission for an optional and required permission, as well as a
   // permission that wasn't specified in the manifest. The call should fail.
@@ -550,7 +550,7 @@ TEST_F(PermissionsAPIUnitTest, RequestingPermissionsNotSpecifiedInManifest) {
                 R"([{
                "origins": [
                  "https://example.com/*",
-                 "https://chromium.org/*",
+                 "https://monyhar.org/*",
                  "https://google.com/*"
                ]
              }])",

@@ -35,7 +35,7 @@ SysInternalsBrowserTest.prototype = {
     'page_unit_test.js',
     'test_util.js',
     '//third_party/mocha/mocha.js',
-    '//third_party/polymer/v1_0/components-chromium/' +
+    '//third_party/polymer/v1_0/components-monyhar/' +
         'iron-test-helpers/mock-interactions.js',
     '//chrome/test/data/webui/mocha_adapter.js',
   ],

@@ -22,7 +22,7 @@ import sys
 
 sys.path.append(os.path.join(
     os.path.dirname(__file__), os.pardir, os.pardir, 'build', 'android'))
-import devil_chromium
+import devil_monyhar
 from devil.android import apk_helper
 from devil.android import device_errors
 from devil.android.ndk import abis
@@ -70,7 +70,7 @@ class StackAddressInterpreter(object):
     # Note that the date, time, pid, tid, frame number, and frame address
     # are all fake and they are irrelevant.
     return ('11-15 00:00:00.000 11111 11111 '
-            'E chromium: #00 0x0000001111111111 %s+%s') % (
+            'E monyhar: #00 0x0000001111111111 %s+%s') % (
                 lib_path, formatted_address)
 
   def Interpret(self, addresses, lib_path):
@@ -190,7 +190,7 @@ class SimplePerfRunner(object):
       cmd.append('--system_wide')
     else:
       cmd.extend([
-          '--app', 'org.chromium.webview_shell', '--activity',
+          '--app', 'org.monyhar.webview_shell', '--activity',
           '.TelemetryActivity'
       ])
 
@@ -319,7 +319,7 @@ def main(raw_args):
 
   args = parser.parse_args(raw_args)
   logging_common.InitializeLogging(args)
-  devil_chromium.Initialize(adb_path=args.adb_path)
+  devil_monyhar.Initialize(adb_path=args.adb_path)
 
   devices = script_common.GetDevices(args.devices, args.denylist_file)
   device = devices[0]

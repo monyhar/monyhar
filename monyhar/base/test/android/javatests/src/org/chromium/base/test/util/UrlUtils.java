@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.test.util;
+package org.monyhar.base.test.util;
 
 import org.junit.Assert;
 
-import org.chromium.base.PathUtils;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.MainDex;
+import org.monyhar.base.PathUtils;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.MainDex;
 
 /**
  * Collection of URL utilities.
@@ -43,7 +43,7 @@ public class UrlUtils {
     @CalledByNative
     public static String getIsolatedTestRoot() {
         try (StrictModeContext ignored = StrictModeContext.allowDiskReads()) {
-            return PathUtils.getExternalStorageDirectory() + "/chromium_tests_root";
+            return PathUtils.getExternalStorageDirectory() + "/monyhar_tests_root";
         }
     }
 

@@ -153,19 +153,19 @@ subclassing [BubbleDialogDelegateView] and then calling
 drawn alongside the window controls as part of the Bubble's Widget's
 NonClientFrameView.
 
-[BoxLayout]: https://cs.chromium.org/chromium/src/ui/views/layout/box_layout.h
-[BubbleDialogDelegateView]: https://cs.chromium.org/chromium/src/ui/views/bubble/bubble_dialog_delegate.h
-[ClientView]: https://cs.chromium.org/chromium/src/ui/views/window/client_view.h
-[DialogDelegate]: https://cs.chromium.org/chromium/src/ui/views/window/dialog_delegate.h
-[DialogDelegateView]: https://cs.chromium.org/chromium/src/ui/views/window/dialog_delegate.h
-[FillLayout]: https://cs.chromium.org/chromium/src/ui/views/layout/fill_layout.h
-[FocusManager]: https://cs.chromium.org/chromium/src/ui/views/focus/focus_manager.h
-[GridLayout]: https://cs.chromium.org/chromium/src/ui/views/layout/grid_layout.h
+[BoxLayout]: https://cs.monyhar.org/monyhar/src/ui/views/layout/box_layout.h
+[BubbleDialogDelegateView]: https://cs.monyhar.org/monyhar/src/ui/views/bubble/bubble_dialog_delegate.h
+[ClientView]: https://cs.monyhar.org/monyhar/src/ui/views/window/client_view.h
+[DialogDelegate]: https://cs.monyhar.org/monyhar/src/ui/views/window/dialog_delegate.h
+[DialogDelegateView]: https://cs.monyhar.org/monyhar/src/ui/views/window/dialog_delegate.h
+[FillLayout]: https://cs.monyhar.org/monyhar/src/ui/views/layout/fill_layout.h
+[FocusManager]: https://cs.monyhar.org/monyhar/src/ui/views/focus/focus_manager.h
+[GridLayout]: https://cs.monyhar.org/monyhar/src/ui/views/layout/grid_layout.h
 
-[NonClientView]: https://cs.chromium.org/chromium/src/ui/views/window/non_client_view.h
-[NonClientFrameView]: https://cs.chromium.org/chromium/src/ui/views/window/non_client_view.h
-[background.h]: https://cs.chromium.org/chromium/src/ui/views/background.h
-[border.h]: https://cs.chromium.org/chromium/src/ui/views/border.h
-[canvas.h]: https://cs.chromium.org/chromium/src/ui/gfx/canvas.h
-[view.h]: https://cs.chromium.org/chromium/src/ui/views/view.h
-[widget.h]: https://cs.chromium.org/chromium/src/ui/views/widget/widget.h
+[NonClientView]: https://cs.monyhar.org/monyhar/src/ui/views/window/non_client_view.h
+[NonClientFrameView]: https://cs.monyhar.org/monyhar/src/ui/views/window/non_client_view.h
+[background.h]: https://cs.monyhar.org/monyhar/src/ui/views/background.h
+[border.h]: https://cs.monyhar.org/monyhar/src/ui/views/border.h
+[canvas.h]: https://cs.monyhar.org/monyhar/src/ui/gfx/canvas.h
+[view.h]: https://cs.monyhar.org/monyhar/src/ui/views/view.h
+[widget.h]: https://cs.monyhar.org/monyhar/src/ui/views/widget/widget.h

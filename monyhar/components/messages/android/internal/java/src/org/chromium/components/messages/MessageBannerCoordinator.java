@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.messages;
+package org.monyhar.components.messages;
 
 import android.animation.Animator;
 import android.content.res.Resources;
@@ -10,11 +10,11 @@ import android.content.res.Resources;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat.AccessibilityActionCompat;
 
-import org.chromium.base.Callback;
-import org.chromium.base.annotations.MockedInTests;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.base.Callback;
+import org.monyhar.base.annotations.MockedInTests;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
 
 /**
  * Coordinator responsible for creating a message banner.

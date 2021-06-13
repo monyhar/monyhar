@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.thumbnail.generator;
+package org.monyhar.chrome.browser.thumbnail.generator;
 
 import android.graphics.Bitmap;
 
@@ -18,19 +18,19 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.DiscardableReferencePool;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.UrlUtils;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.thumbnail.generator.ThumbnailProvider.ThumbnailRequest;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.batch.BlankCTATabInitialStateRule;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.base.DiscardableReferencePool;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.UrlUtils;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.thumbnail.generator.ThumbnailProvider.ThumbnailRequest;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.batch.BlankCTATabInitialStateRule;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 /**
  * Instrumentation test for {@link ThumbnailProviderImpl}.

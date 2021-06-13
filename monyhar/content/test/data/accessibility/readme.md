@@ -299,7 +299,7 @@ Note: For Android, generated expectations will replace the existing files on
 the test device. For example, if running on an emulator, for an ARIA test
 called `my-test.html`, the generated output can be found:
 ```
-  /storage/emulated/0/chromium_tests_root/content/test/
+  /storage/emulated/0/monyhar_tests_root/content/test/
      data/accessibility/aria/my-test-expected-android.txt
 ```
 

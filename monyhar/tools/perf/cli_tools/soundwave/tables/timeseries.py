@@ -19,8 +19,8 @@ COLUMN_TYPES = (
     # Other columns.
     ('value', 'float64'),  # value recorded for test_path at given point_id
     ('timestamp', 'datetime64[ns]'),  # when the value got stored on dashboard
-    ('commit_pos', 'int64'),  # chromium commit position
-    ('chromium_rev', str),  # git hash of chromium revision
+    ('commit_pos', 'int64'),  # monyhar commit position
+    ('monyhar_rev', str),  # git hash of monyhar revision
     ('clank_rev', str),  # git hash of clank revision
     ('trace_url', str),  # URL to a sample trace.
     ('units', str),  # unit of measurement (e.g. 'ms', 'bytes')
@@ -119,7 +119,7 @@ def _DataFrameFromJsonV2(ts_key, data):
         point['avg'],  # value
         point['timestamp'],  # timestamp
         _ParseIntValue(point['revisions']['r_commit_pos']),  # commit_pos
-        point['revisions'].get('r_chromium'),  # chromium_rev
+        point['revisions'].get('r_monyhar'),  # monyhar_rev
         point['revisions'].get('r_clank'),  # clank_rev
         point['annotations'].get('a_tracing_uri'),  # trace_url
         data['units'],  # units
@@ -148,7 +148,7 @@ def _DataFrameFromJsonV1(test_path, data):
     row.update(zip(header, values))
     row['point_id'] = row['revision']
     row['commit_pos'] = _ParseIntValue(row['r_commit_pos'])
-    row['chromium_rev'] = row.get('r_chromium')
+    row['monyhar_rev'] = row.get('r_monyhar')
     row['clank_rev'] = row.get('r_clank', None)
     rows.append(tuple(row.get(k) for k in COLUMNS))
 

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
 import android.support.test.runner.AndroidJUnit4;
 
@@ -12,8 +12,8 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.Feature;
-import org.chromium.net.impl.UrlResponseInfoImpl;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.net.impl.UrlResponseInfoImpl;
 
 import java.util.AbstractMap;
 import java.util.ArrayList;
@@ -33,7 +33,7 @@ public class UrlResponseInfoTest {
     @Feature({"Cronet"})
     public void testPublicAPI() throws Exception {
         final List<String> urlChain = new ArrayList<String>();
-        urlChain.add("chromium.org");
+        urlChain.add("monyhar.org");
         final int httpStatusCode = 200;
         final String httpStatusText = "OK";
         final List<Map.Entry<String, String>> allHeadersList =

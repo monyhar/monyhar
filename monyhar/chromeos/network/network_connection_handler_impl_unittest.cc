@@ -59,7 +59,7 @@ const char kTestCellularServicePath[] = "cellular_service_path";
 
 const char kTestCellularName[] = "cellular_name";
 const char kTestIccid[] = "1234567890123456789";
-const char kTestEuiccPath[] = "/org/chromium/Hermes/Euicc/1";
+const char kTestEuiccPath[] = "/org/monyhar/Hermes/Euicc/1";
 const char kTestEid[] = "123456789012345678901234567890123";
 
 const char kTestCellularServicePath2[] = "cellular_service_path_2";

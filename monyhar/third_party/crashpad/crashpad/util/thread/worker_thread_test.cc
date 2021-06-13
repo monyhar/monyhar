@@ -75,7 +75,7 @@ TEST(WorkerThread, DoWork) {
 // items complete in some particular amount of time is strictly incorrect, but
 // also somewhat useful. The expected time "should" be ~40-50ms with a work
 // interval of 0.05s, but on Fuchsia, 1200ms was observed. So, on Fuchsia, use a
-// much larger timeout. See https://crashpad.chromium.org/bug/231.
+// much larger timeout. See https://crashpad.monyhar.org/bug/231.
 #if defined(OS_FUCHSIA)
   constexpr uint64_t kUpperBoundTime = 10;
 #else

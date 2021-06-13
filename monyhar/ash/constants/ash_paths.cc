@@ -18,7 +18,7 @@ const base::FilePath::CharType kDefaultAppOrderFileName[] =
 #if BUILDFLAG(GOOGLE_CHROME_BRANDING)
     FILE_PATH_LITERAL("/usr/share/google-chrome/default_app_order.json");
 #else
-    FILE_PATH_LITERAL("/usr/share/chromium/default_app_order.json");
+    FILE_PATH_LITERAL("/usr/share/monyhar/default_app_order.json");
 #endif  // BUILDFLAG(GOOGLE_CHROME_BRANDING)
 
 const base::FilePath::CharType kMachineHardwareInfoFileName[] =

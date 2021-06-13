@@ -18,7 +18,7 @@ namespace notifications {
 // These values are persisted to logs. Entries should not be renumbered and
 // numeric values should never be reused.
 // GENERATED_JAVA_ENUM_PACKAGE: (
-//   org.chromium.chrome.browser.notifications.scheduler)
+//   org.monyhar.chrome.browser.notifications.scheduler)
 enum class SchedulerClientType {
   // Test only values.
   kTest1 = -1,
@@ -79,7 +79,7 @@ enum class ImpressionResult {
 // to sync with histogram enum NotificationSchedulerUserActionType in
 // enums.xml. A Java counterpart will be generated for this enum.
 // GENERATED_JAVA_ENUM_PACKAGE: (
-//   org.chromium.chrome.browser.notifications.scheduler)
+//   org.monyhar.chrome.browser.notifications.scheduler)
 enum class UserActionType {
   // The user clicks on the notification body.
   kClick = 0,
@@ -94,7 +94,7 @@ enum class UserActionType {
 // may result in change of notification shown frequency.
 // A Java counterpart will be generated for this enum.
 // GENERATED_JAVA_ENUM_PACKAGE: (
-//   org.chromium.chrome.browser.notifications.scheduler)
+//   org.monyhar.chrome.browser.notifications.scheduler)
 enum class ActionButtonType {
   // The action button is not categorized.
   kUnknownAction = 0,
@@ -143,7 +143,7 @@ struct UserActionData {
 // Categorizes type of notification icons.
 // A Java counterpart will be generated for this enum.
 // GENERATED_JAVA_ENUM_PACKAGE: (
-//   org.chromium.chrome.browser.notifications.scheduler)
+//   org.monyhar.chrome.browser.notifications.scheduler)
 enum class IconType {
   kUnknownType = 0,
   kSmallIcon = 1,

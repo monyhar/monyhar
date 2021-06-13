@@ -51,7 +51,7 @@ class MessageWrapper {
       const std::u16string& secondary_button_menu_text);
 
   // When setting a message icon use ResourceMapper::MapToJavaDrawableId to
-  // translate from chromium resource_id to Android drawable resource_id.
+  // translate from monyhar resource_id to Android drawable resource_id.
   int GetIconResourceId();
   void SetIconResourceId(int resource_id);
   // The icon is tinted to default_icon_color_blue by default.

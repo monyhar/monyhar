@@ -80,7 +80,7 @@ def GetGsutilPath():
   if depot_path is None:
     print ('depot_tools are not found in PATH. '
            'Follow the instructions in this document '
-           'http://dev.chromium.org/developers/how-tos/install-depot-tools'
+           'http://dev.monyhar.org/developers/how-tos/install-depot-tools'
            ' to install depot_tools and then try again.')
     sys.exit(1)
   gsutil_path = os.path.join(depot_path, 'gsutil.py')
@@ -94,7 +94,7 @@ def RunGsutil(args):
 def MaybeUpload(do_upload, filename, gcs_platform, extra_gsutil_args=[]):
   gsutil_args = ['cp'] + extra_gsutil_args + [
       '-a', 'public-read', filename,
-      'gs://chromium-browser-clang-staging/%s/%s' % (gcs_platform, filename)
+      'gs://monyhar-browser-clang-staging/%s/%s' % (gcs_platform, filename)
   ]
   if do_upload:
     print('Uploading %s to Google Cloud Storage...' % filename)
@@ -110,17 +110,17 @@ def MaybeUpload(do_upload, filename, gcs_platform, extra_gsutil_args=[]):
 def UploadPDBsToSymbolServer(binaries):
   assert sys.platform == 'win32'
   # Upload PDB and binary to the symbol server on Windows.  Put them into the
-  # chromium-browser-symsrv bucket, since chrome devs have that in their
+  # monyhar-browser-symsrv bucket, since chrome devs have that in their
   # _NT_SYMBOL_PATH already. Executable and PDB must be at paths following a
   # certain pattern for the Microsoft debuggers to be able to load them.
   # Executable:
-  #  chromium-browser-symsrv/clang-cl.exe/ABCDEFAB01234/clang-cl.ex_
+  #  monyhar-browser-symsrv/clang-cl.exe/ABCDEFAB01234/clang-cl.ex_
   #    ABCDEFAB is the executable's timestamp in %08X format, 01234 is the
   #    executable's image size in %x format. tools/symsrc/img_fingerprint.py
   #    can compute this ABCDEFAB01234 string for us, so use that.
   #    The .ex_ instead of .exe at the end means that the file is compressed.
   # PDB:
-  # gs://chromium-browser-symsrv/clang-cl.exe.pdb/AABBCCDD/clang-cl.exe.pd_
+  # gs://monyhar-browser-symsrv/clang-cl.exe.pdb/AABBCCDD/clang-cl.exe.pd_
   #   AABBCCDD here is computed from the output of
   #      dumpbin /all mybinary.exe | find "Format: RSDS"
   #   but tools/symsrc/pdb_fingerprint_from_img.py can compute it already, so
@@ -148,7 +148,7 @@ def UploadPDBsToSymbolServer(binaries):
       dest = '%s/%s/%s' % (os.path.basename(f), f_id, os.path.basename(f_cab))
       print('Uploading %s to Google Cloud Storage...' % dest)
       gsutil_args = ['cp', '-n', '-a', 'public-read', f_cab,
-                     'gs://chromium-browser-symsrv/' + dest]
+                     'gs://monyhar-browser-symsrv/' + dest]
       exit_code = RunGsutil(gsutil_args)
       if exit_code != 0:
         print("gsutil failed, exit_code: %s" % exit_code)

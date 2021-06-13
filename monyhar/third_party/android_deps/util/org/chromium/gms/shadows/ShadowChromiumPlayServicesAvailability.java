@@ -1,7 +1,7 @@
 // Copyright 2020 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.gms.shadows;
+package org.monyhar.gms.shadows;
 
 import android.content.Context;
 
@@ -10,7 +10,7 @@ import com.google.android.gms.common.GoogleApiAvailability;
 import org.robolectric.annotation.Implementation;
 import org.robolectric.annotation.Implements;
 
-import org.chromium.gms.ChromiumPlayServicesAvailability;
+import org.monyhar.gms.ChromiumPlayServicesAvailability;
 
 @Implements(ChromiumPlayServicesAvailability.class)
 public class ShadowChromiumPlayServicesAvailability {

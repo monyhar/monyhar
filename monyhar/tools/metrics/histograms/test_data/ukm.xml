@@ -1,7 +1,7 @@
 <ukm-configuration>
 
 <event name="AbusiveExperienceHeuristic.TestEvent1">
-  <owner>owner1@chromium.org</owner>
+  <owner>owner1@monyhar.org</owner>
   <metric name="Metric">
     <summary>
       A summary of AbusiveExperienceHeuristic.TestEvent1
@@ -10,7 +10,7 @@
 </event>
 
 <event name="AbusiveExperienceHeuristic.TestEvent2">
-  <owner>owner3@chromium.org</owner>
+  <owner>owner3@monyhar.org</owner>
   <obsolete>
     Deprecated 2/2019
   </obsolete>
@@ -22,7 +22,7 @@
 </event>
 
 <event name="Autofill.TestEvent3">
-  <owner>owner3@chromium.org</owner>
+  <owner>owner3@monyhar.org</owner>
   <summary>
     A summary of Autofill.TestEvent3.
   </summary>
@@ -42,7 +42,7 @@
 </event>
 
 <event name="FullyObsolete.TestEvent4">
-  <owner>owner4@chromium.org</owner>
+  <owner>owner4@monyhar.org</owner>
   <summary>
     All metrics of this event are marked as obsolete.
   </summary>

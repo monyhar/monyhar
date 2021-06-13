@@ -21,7 +21,7 @@ Are you a Google employee? See
 Clone the `depot_tools` repository:
 
 ```shell
-$ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+$ git clone https://monyhar.googlesource.com/monyhar/tools/depot_tools.git
 ```
 
 Add `depot_tools` to the end of your PATH (you will probably want to put this
@@ -34,12 +34,12 @@ $ export PATH="$PATH:/path/to/depot_tools"
 
 ## Get the code
 
-Create a `chromium` directory for the checkout and change to it (you can call
+Create a `monyhar` directory for the checkout and change to it (you can call
 this whatever you like and put it wherever you like, as
 long as the full path has no spaces):
 
 ```shell
-$ mkdir chromium && cd chromium
+$ mkdir monyhar && cd monyhar
 ```
 
 Run the `fetch` tool from `depot_tools` to check out the code and its
@@ -64,7 +64,7 @@ $ cd src
 ```
 
 *Optional*: You can also [install API
-keys](https://www.chromium.org/developers/how-tos/api-keys) if you want your
+keys](https://www.monyhar.org/developers/how-tos/api-keys) if you want your
 build to talk to some Google services, but this is not necessary for most
 development and testing purposes.
 
@@ -108,7 +108,7 @@ would look like this:
 solutions = [
   {
     "name"        : "src",
-    "url"         : "https://chromium.googlesource.com/chromium/src.git",
+    "url"         : "https://monyhar.googlesource.com/monyhar/src.git",
     "deps_file"   : "DEPS",
     "managed"     : False,
     "custom_deps" : {},
@@ -162,7 +162,7 @@ to control which one to use by setting it to the identity hash, e.g. to
 Once you have the code signing identity, you need to decide on a prefix
 for the application bundle identifier. This is controlled by the gn variable
 `ios_app_bundle_id_prefix` and usually corresponds to a reversed domain name
-(the default value is `"org.chromium"`).
+(the default value is `"org.monyhar"`).
 
 You then need to request provisioning profiles from Apple for your devices
 for the following bundle identifiers to build and run Chromium with these
@@ -227,7 +227,7 @@ $ autoninja -C out/Debug-iphoneos ios_web_shell
 ninja: Entering directory `out/Debug-iphoneos'
 FAILED: ios_web_shell.app/ios_web_shell ios_web_shell.app/_CodeSignature/CodeResources ios_web_shell.app/embedded.mobileprovision
 python ../../build/config/ios/codesign.py code-sign-bundle -t=iphoneos -i=0123456789ABCDEF0123456789ABCDEF01234567 -e=../../build/config/ios/entitlements.plist -b=obj/ios/web/shell/ios_web_shell ios_web_shell.app
-Error: no mobile provisioning profile found for "org.chromium.ios-web-shell".
+Error: no mobile provisioning profile found for "org.monyhar.ios-web-shell".
 ninja: build stopped: subcommand failed.
 ```
 
@@ -331,9 +331,9 @@ build artifact, generated from the `BUILD.gn` files. Do not use it to add new
 files; instead see the procedures for [working with
 files](working_with_files.md).
 
-If you have problems building, join us in `#chromium` on `irc.freenode.net` and
+If you have problems building, join us in `#monyhar` on `irc.freenode.net` and
 ask there. As mentioned above, be sure that the
-[waterfall](https://build.chromium.org/buildbot/waterfall/) is green and the tree
+[waterfall](https://build.monyhar.org/buildbot/waterfall/) is green and the tree
 is open before checking out. This will increase your chances of success.
 
 ### Debugging

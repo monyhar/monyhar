@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.home.filter;
+package org.monyhar.chrome.browser.download.home.filter;
 
 import android.content.Context;
 import android.os.Handler;
 
-import org.chromium.base.ObserverList;
-import org.chromium.chrome.browser.download.home.filter.Filters.FilterType;
-import org.chromium.chrome.browser.download.home.list.UiUtils;
-import org.chromium.chrome.browser.download.internal.R;
-import org.chromium.components.browser_ui.widget.chips.Chip;
-import org.chromium.components.browser_ui.widget.chips.ChipsProvider;
-import org.chromium.components.offline_items_collection.OfflineItem;
+import org.monyhar.base.ObserverList;
+import org.monyhar.chrome.browser.download.home.filter.Filters.FilterType;
+import org.monyhar.chrome.browser.download.home.list.UiUtils;
+import org.monyhar.chrome.browser.download.internal.R;
+import org.monyhar.components.browser_ui.widget.chips.Chip;
+import org.monyhar.components.browser_ui.widget.chips.ChipsProvider;
+import org.monyhar.components.offline_items_collection.OfflineItem;
 
 import java.util.ArrayList;
 import java.util.Collection;

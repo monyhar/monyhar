@@ -19,7 +19,7 @@ namespace internal {
 
 // RTT and throughput values are set to |INVALID_RTT_THROUGHPUT| if a valid
 // value is unavailable.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.net
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.net
 enum RttThroughputValues {
   // Invalid value.
   INVALID_RTT_THROUGHPUT = -1,

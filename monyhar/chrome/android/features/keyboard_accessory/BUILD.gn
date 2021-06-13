@@ -21,10 +21,10 @@ java_group("internal_java") {
 
 generate_jni("jni_headers") {
   sources = [
-    "internal/java/src/org/chromium/chrome/browser/keyboard_accessory/AutofillKeyboardAccessoryViewBridge.java",
-    "internal/java/src/org/chromium/chrome/browser/keyboard_accessory/ManualFillingComponentBridge.java",
-    "internal/java/src/org/chromium/chrome/browser/keyboard_accessory/all_passwords_bottom_sheet/AllPasswordsBottomSheetBridge.java",
-    "public/java/src/org/chromium/chrome/browser/keyboard_accessory/data/UserInfoField.java",
+    "internal/java/src/org/monyhar/chrome/browser/keyboard_accessory/AutofillKeyboardAccessoryViewBridge.java",
+    "internal/java/src/org/monyhar/chrome/browser/keyboard_accessory/ManualFillingComponentBridge.java",
+    "internal/java/src/org/monyhar/chrome/browser/keyboard_accessory/all_passwords_bottom_sheet/AllPasswordsBottomSheetBridge.java",
+    "public/java/src/org/monyhar/chrome/browser/keyboard_accessory/data/UserInfoField.java",
   ]
 }
 
@@ -32,28 +32,28 @@ android_library("test_java") {
   testonly = true
 
   sources = [
-    "javatests/src/org/chromium/chrome/browser/keyboard_accessory/AutofillKeyboardAccessoryIntegrationTest.java",
-    "javatests/src/org/chromium/chrome/browser/keyboard_accessory/FakeKeyboard.java",
-    "javatests/src/org/chromium/chrome/browser/keyboard_accessory/ManualFillingIntegrationTest.java",
-    "javatests/src/org/chromium/chrome/browser/keyboard_accessory/ManualFillingTestHelper.java",
-    "javatests/src/org/chromium/chrome/browser/keyboard_accessory/ManualFillingUiCaptureTest.java",
-    "javatests/src/org/chromium/chrome/browser/keyboard_accessory/PasswordGenerationIntegrationTest.java",
-    "javatests/src/org/chromium/chrome/browser/keyboard_accessory/all_passwords_bottom_sheet/AllPasswordsBottomSheetIntegrationTest.java",
-    "javatests/src/org/chromium/chrome/browser/keyboard_accessory/all_passwords_bottom_sheet/AllPasswordsBottomSheetViewTest.java",
-    "javatests/src/org/chromium/chrome/browser/keyboard_accessory/bar_component/KeyboardAccessoryModernViewTest.java",
-    "javatests/src/org/chromium/chrome/browser/keyboard_accessory/bar_component/KeyboardAccessoryViewTest.java",
-    "javatests/src/org/chromium/chrome/browser/keyboard_accessory/sheet_component/AccessorySheetRenderTest.java",
-    "javatests/src/org/chromium/chrome/browser/keyboard_accessory/sheet_component/AccessorySheetViewTest.java",
-    "javatests/src/org/chromium/chrome/browser/keyboard_accessory/sheet_tabs/AccessorySheetTabViewTest.java",
-    "javatests/src/org/chromium/chrome/browser/keyboard_accessory/sheet_tabs/AddressAccessoryIntegrationTest.java",
-    "javatests/src/org/chromium/chrome/browser/keyboard_accessory/sheet_tabs/AddressAccessorySheetViewTest.java",
-    "javatests/src/org/chromium/chrome/browser/keyboard_accessory/sheet_tabs/CreditCardAccessoryIntegrationTest.java",
-    "javatests/src/org/chromium/chrome/browser/keyboard_accessory/sheet_tabs/CreditCardAccessorySheetViewTest.java",
-    "javatests/src/org/chromium/chrome/browser/keyboard_accessory/sheet_tabs/PasswordAccessoryIntegrationTest.java",
-    "javatests/src/org/chromium/chrome/browser/keyboard_accessory/sheet_tabs/PasswordAccessorySheetModernViewTest.java",
-    "javatests/src/org/chromium/chrome/browser/keyboard_accessory/sheet_tabs/PasswordAccessorySheetViewTest.java",
-    "javatests/src/org/chromium/chrome/browser/keyboard_accessory/tab_layout_component/KeyboardAccessoryTabLayoutViewTest.java",
-    "javatests/src/org/chromium/chrome/browser/keyboard_accessory/tab_layout_component/KeyboardAccessoryTabTestHelper.java",
+    "javatests/src/org/monyhar/chrome/browser/keyboard_accessory/AutofillKeyboardAccessoryIntegrationTest.java",
+    "javatests/src/org/monyhar/chrome/browser/keyboard_accessory/FakeKeyboard.java",
+    "javatests/src/org/monyhar/chrome/browser/keyboard_accessory/ManualFillingIntegrationTest.java",
+    "javatests/src/org/monyhar/chrome/browser/keyboard_accessory/ManualFillingTestHelper.java",
+    "javatests/src/org/monyhar/chrome/browser/keyboard_accessory/ManualFillingUiCaptureTest.java",
+    "javatests/src/org/monyhar/chrome/browser/keyboard_accessory/PasswordGenerationIntegrationTest.java",
+    "javatests/src/org/monyhar/chrome/browser/keyboard_accessory/all_passwords_bottom_sheet/AllPasswordsBottomSheetIntegrationTest.java",
+    "javatests/src/org/monyhar/chrome/browser/keyboard_accessory/all_passwords_bottom_sheet/AllPasswordsBottomSheetViewTest.java",
+    "javatests/src/org/monyhar/chrome/browser/keyboard_accessory/bar_component/KeyboardAccessoryModernViewTest.java",
+    "javatests/src/org/monyhar/chrome/browser/keyboard_accessory/bar_component/KeyboardAccessoryViewTest.java",
+    "javatests/src/org/monyhar/chrome/browser/keyboard_accessory/sheet_component/AccessorySheetRenderTest.java",
+    "javatests/src/org/monyhar/chrome/browser/keyboard_accessory/sheet_component/AccessorySheetViewTest.java",
+    "javatests/src/org/monyhar/chrome/browser/keyboard_accessory/sheet_tabs/AccessorySheetTabViewTest.java",
+    "javatests/src/org/monyhar/chrome/browser/keyboard_accessory/sheet_tabs/AddressAccessoryIntegrationTest.java",
+    "javatests/src/org/monyhar/chrome/browser/keyboard_accessory/sheet_tabs/AddressAccessorySheetViewTest.java",
+    "javatests/src/org/monyhar/chrome/browser/keyboard_accessory/sheet_tabs/CreditCardAccessoryIntegrationTest.java",
+    "javatests/src/org/monyhar/chrome/browser/keyboard_accessory/sheet_tabs/CreditCardAccessorySheetViewTest.java",
+    "javatests/src/org/monyhar/chrome/browser/keyboard_accessory/sheet_tabs/PasswordAccessoryIntegrationTest.java",
+    "javatests/src/org/monyhar/chrome/browser/keyboard_accessory/sheet_tabs/PasswordAccessorySheetModernViewTest.java",
+    "javatests/src/org/monyhar/chrome/browser/keyboard_accessory/sheet_tabs/PasswordAccessorySheetViewTest.java",
+    "javatests/src/org/monyhar/chrome/browser/keyboard_accessory/tab_layout_component/KeyboardAccessoryTabLayoutViewTest.java",
+    "javatests/src/org/monyhar/chrome/browser/keyboard_accessory/tab_layout_component/KeyboardAccessoryTabTestHelper.java",
   ]
 
   deps = [
@@ -101,14 +101,14 @@ junit_binary("keyboard_accessory_junit_tests") {
   testonly = true
 
   sources = [
-    "junit/src/org/chromium/chrome/browser/keyboard_accessory/ManualFillingControllerTest.java",
-    "junit/src/org/chromium/chrome/browser/keyboard_accessory/all_passwords_bottom_sheet/AllPasswordsBottomSheetControllerTest.java",
-    "junit/src/org/chromium/chrome/browser/keyboard_accessory/bar_component/KeyboardAccessoryControllerTest.java",
-    "junit/src/org/chromium/chrome/browser/keyboard_accessory/sheet_component/AccessorySheetControllerTest.java",
-    "junit/src/org/chromium/chrome/browser/keyboard_accessory/sheet_tabs/AddressAccessorySheetControllerTest.java",
-    "junit/src/org/chromium/chrome/browser/keyboard_accessory/sheet_tabs/CreditCardAccessorySheetControllerTest.java",
-    "junit/src/org/chromium/chrome/browser/keyboard_accessory/sheet_tabs/PasswordAccessorySheetControllerTest.java",
-    "junit/src/org/chromium/chrome/browser/keyboard_accessory/tab_layout_component/KeyboardAccessoryTabLayoutControllerTest.java",
+    "junit/src/org/monyhar/chrome/browser/keyboard_accessory/ManualFillingControllerTest.java",
+    "junit/src/org/monyhar/chrome/browser/keyboard_accessory/all_passwords_bottom_sheet/AllPasswordsBottomSheetControllerTest.java",
+    "junit/src/org/monyhar/chrome/browser/keyboard_accessory/bar_component/KeyboardAccessoryControllerTest.java",
+    "junit/src/org/monyhar/chrome/browser/keyboard_accessory/sheet_component/AccessorySheetControllerTest.java",
+    "junit/src/org/monyhar/chrome/browser/keyboard_accessory/sheet_tabs/AddressAccessorySheetControllerTest.java",
+    "junit/src/org/monyhar/chrome/browser/keyboard_accessory/sheet_tabs/CreditCardAccessorySheetControllerTest.java",
+    "junit/src/org/monyhar/chrome/browser/keyboard_accessory/sheet_tabs/PasswordAccessorySheetControllerTest.java",
+    "junit/src/org/monyhar/chrome/browser/keyboard_accessory/tab_layout_component/KeyboardAccessoryTabLayoutControllerTest.java",
   ]
 
   deps = [

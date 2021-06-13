@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.crash;
+package org.monyhar.chrome.browser.crash;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.MainDex;
-import org.chromium.chrome.browser.base.SplitCompatUtils;
-import org.chromium.components.crash.CrashKeys;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.MainDex;
+import org.monyhar.chrome.browser.base.SplitCompatUtils;
+import org.monyhar.components.crash.CrashKeys;
 
 /**
  * This UncaughtExceptionHandler will upload the stacktrace when there is an uncaught exception.
@@ -63,7 +63,7 @@ public class PureJavaExceptionHandler implements Thread.UncaughtExceptionHandler
         // PureJavaExceptionReporter may be in the chrome module, so load by reflection from there.
         JavaExceptionReporter reporter = (JavaExceptionReporter) SplitCompatUtils.newInstance(
                 SplitCompatUtils.createChromeContext(ContextUtils.getApplicationContext()),
-                "org.chromium.chrome.browser.crash.PureJavaExceptionReporter");
+                "org.monyhar.chrome.browser.crash.PureJavaExceptionReporter");
         reporter.createAndUploadReport(e);
     }
 }

@@ -66,7 +66,7 @@ Output](https://webaudio.github.io/web-audio-api/#Convolution-channel-configurat
 ## FFTConvolver (short convolutions)
 
 The
-[`FFTConvolver`](https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/audio/fft_convolver.h)
+[`FFTConvolver`](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/platform/audio/fft_convolver.h)
 is able to do short convolutions with the FFT size N being at least twice as
 large as the length of the short impulse response.  It incurs a latency of N/2
 sample-frames.  Because of this latency and performance considerations, it is
@@ -78,7 +78,7 @@ can be used to perform extremely long convolutions.
 ## ReverbConvolver (long convolutions)
 
 The
-[`ReverbConvolver`](https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/audio/reverb_convolver.h)
+[`ReverbConvolver`](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/platform/audio/reverb_convolver.h)
 is able to perform extremely long real-time convolutions on a single audio
 channel.  It uses multiple `FFTConvolver` objects as well as an input buffer and
 an accumulation buffer.  Note that it's possible to get a multi-threaded

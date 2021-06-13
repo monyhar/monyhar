@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer.shell;
+package org.monyhar.weblayer.shell;
 
 import android.content.Context;
 import android.content.Intent;
@@ -24,21 +24,21 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Function;
-import org.chromium.components.strictmode.ThreadStrictModeInterceptor;
-import org.chromium.weblayer.Browser;
-import org.chromium.weblayer.BrowserFragmentCreateParams;
-import org.chromium.weblayer.FullscreenCallback;
-import org.chromium.weblayer.NewTabCallback;
-import org.chromium.weblayer.NewTabType;
-import org.chromium.weblayer.Profile;
-import org.chromium.weblayer.Tab;
-import org.chromium.weblayer.TabCallback;
-import org.chromium.weblayer.TabListCallback;
-import org.chromium.weblayer.UnsupportedVersionException;
-import org.chromium.weblayer.UrlBarOptions;
-import org.chromium.weblayer.WebLayer;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Function;
+import org.monyhar.components.strictmode.ThreadStrictModeInterceptor;
+import org.monyhar.weblayer.Browser;
+import org.monyhar.weblayer.BrowserFragmentCreateParams;
+import org.monyhar.weblayer.FullscreenCallback;
+import org.monyhar.weblayer.NewTabCallback;
+import org.monyhar.weblayer.NewTabType;
+import org.monyhar.weblayer.Profile;
+import org.monyhar.weblayer.Tab;
+import org.monyhar.weblayer.TabCallback;
+import org.monyhar.weblayer.TabListCallback;
+import org.monyhar.weblayer.UnsupportedVersionException;
+import org.monyhar.weblayer.UrlBarOptions;
+import org.monyhar.weblayer.WebLayer;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -55,7 +55,7 @@ js_library("main_page_behavior.m") {
   deps = [
     "../..:router",
     "../../settings_page:settings_section",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
     "//ui/webui/resources/js:util.m",
   ]
@@ -65,7 +65,7 @@ js_library("main_page_behavior.m") {
 js_library("settings_idle_load.m") {
   sources = [ "$root_gen_dir/chrome/browser/resources/settings/chromeos/os_settings_page/settings_idle_load.m.js" ]
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
   ]
   extra_deps = [ ":settings_idle_load_module" ]

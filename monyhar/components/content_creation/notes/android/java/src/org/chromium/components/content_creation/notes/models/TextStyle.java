@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.content_creation.notes.models;
+package org.monyhar.components.content_creation.notes.models;
 
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import androidx.annotation.ColorInt;
 
-import org.chromium.components.content_creation.notes.ui.TextHighlightSpan;
+import org.monyhar.components.content_creation.notes.ui.TextHighlightSpan;
 
 /**
  * Model class for a template's text style.

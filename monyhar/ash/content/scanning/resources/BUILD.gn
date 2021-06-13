@@ -34,14 +34,14 @@ js_library("color_mode_select") {
     ":scanning_app_util",
     ":select_behavior",
     "//ash/content/scanning/mojom:mojom_js_library_for_compile",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
 }
 
 js_library("loading_page") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
 }
@@ -49,7 +49,7 @@ js_library("loading_page") {
 js_library("file_type_select") {
   deps = [
     "//ash/content/scanning/mojom:mojom_js_library_for_compile",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
 }
@@ -59,7 +59,7 @@ js_library("page_size_select") {
     ":scanning_app_util",
     ":select_behavior",
     "//ash/content/scanning/mojom:mojom_js_library_for_compile",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
 }
@@ -68,7 +68,7 @@ js_library("resolution_select") {
   deps = [
     ":select_behavior",
     "//ash/content/scanning/mojom:mojom_js_library_for_compile",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
 }
@@ -76,7 +76,7 @@ js_library("resolution_select") {
 js_library("scan_done_section") {
   deps = [
     ":scanning_app_types",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
 }
@@ -86,7 +86,7 @@ js_library("scan_preview") {
     ":scanning_app_types",
     ":scanning_app_util",
     "//ash/content/scanning/mojom:mojom_js_library_for_compile",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
 }
@@ -94,7 +94,7 @@ js_library("scan_preview") {
 js_library("scan_to_select") {
   deps = [
     "//ash/content/scanning/mojom:mojom_js_library_for_compile",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
 }
@@ -104,7 +104,7 @@ js_library("scanner_select") {
     ":scanning_app_types",
     ":scanning_app_util",
     "//ash/content/scanning/mojom:mojom_js_library_for_compile",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
 }
@@ -124,7 +124,7 @@ js_library("scanning_app") {
     ":scanning_app_util",
     ":scanning_browser_proxy",
     ":source_select",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements:cr_container_shadow_behavior.m",
     "//ui/webui/resources/cr_elements/cr_toast:cr_toast.m",
     "//ui/webui/resources/js:i18n_behavior.m",
@@ -145,7 +145,7 @@ js_library("source_select") {
     ":scanning_app_util",
     ":select_behavior",
     "//ash/content/scanning/mojom:mojom_js_library_for_compile",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
 }

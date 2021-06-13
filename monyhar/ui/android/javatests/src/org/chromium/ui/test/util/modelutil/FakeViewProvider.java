@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.test.util.modelutil;
+package org.monyhar.ui.test.util.modelutil;
 
 import static org.junit.Assert.assertTrue;
 
 import android.view.View;
 
-import org.chromium.base.Callback;
-import org.chromium.base.Promise;
-import org.chromium.ui.ViewProvider;
+import org.monyhar.base.Callback;
+import org.monyhar.base.Promise;
+import org.monyhar.ui.ViewProvider;
 
 /**
  * Fake view provider for tests.

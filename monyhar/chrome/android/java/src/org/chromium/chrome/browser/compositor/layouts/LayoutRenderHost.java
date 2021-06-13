@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.layouts;
+package org.monyhar.chrome.browser.compositor.layouts;
 
 import android.content.res.Resources;
 import android.graphics.Rect;
 
-import org.chromium.ui.resources.ResourceManager;
+import org.monyhar.ui.resources.ResourceManager;
 
 /**
  * {@link LayoutRenderHost} is the minimal interface the layouts need to know about its host to

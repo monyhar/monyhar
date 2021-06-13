@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.infobar;
+package org.monyhar.chrome.browser.infobar;
 
 import android.support.test.InstrumentationRegistry;
 
@@ -15,22 +15,22 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.SearchGeolocationDisclosureTabHelper;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.InfoBarTestAnimationListener;
-import org.chromium.chrome.test.util.InfoBarUtil;
-import org.chromium.components.browser_ui.site_settings.PermissionInfo;
-import org.chromium.components.content_settings.ContentSettingValues;
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.net.test.EmbeddedTestServer;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.SearchGeolocationDisclosureTabHelper;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.InfoBarTestAnimationListener;
+import org.monyhar.chrome.test.util.InfoBarUtil;
+import org.monyhar.components.browser_ui.site_settings.PermissionInfo;
+import org.monyhar.components.content_settings.ContentSettingValues;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.net.test.EmbeddedTestServer;
 
 import java.util.concurrent.TimeoutException;
 

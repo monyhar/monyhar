@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.bookmarkswidget;
+package org.monyhar.chrome.browser.bookmarkswidget;
 
 import android.appwidget.AppWidgetManager;
 import android.content.Context;
@@ -21,27 +21,27 @@ import androidx.annotation.UiThread;
 
 import com.google.android.apps.chrome.appwidget.bookmarks.BookmarkThumbnailWidgetProvider;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.Log;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.bookmarks.BookmarkBridge.BookmarkItem;
-import org.chromium.chrome.browser.bookmarks.BookmarkBridge.BookmarkModelObserver;
-import org.chromium.chrome.browser.bookmarks.BookmarkModel;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
-import org.chromium.chrome.browser.night_mode.SystemNightModeMonitor;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.ui.favicon.FaviconUtils;
-import org.chromium.components.bookmarks.BookmarkId;
-import org.chromium.components.browser_ui.widget.RoundedIconGenerator;
-import org.chromium.components.favicon.IconType;
-import org.chromium.components.favicon.LargeIconBridge;
-import org.chromium.components.favicon.LargeIconBridge.LargeIconCallback;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.url.GURL;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.bookmarks.BookmarkBridge.BookmarkItem;
+import org.monyhar.chrome.browser.bookmarks.BookmarkBridge.BookmarkModelObserver;
+import org.monyhar.chrome.browser.bookmarks.BookmarkModel;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.chrome.browser.night_mode.SystemNightModeMonitor;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.ui.favicon.FaviconUtils;
+import org.monyhar.components.bookmarks.BookmarkId;
+import org.monyhar.components.browser_ui.widget.RoundedIconGenerator;
+import org.monyhar.components.favicon.IconType;
+import org.monyhar.components.favicon.LargeIconBridge;
+import org.monyhar.components.favicon.LargeIconBridge.LargeIconCallback;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.Collections;

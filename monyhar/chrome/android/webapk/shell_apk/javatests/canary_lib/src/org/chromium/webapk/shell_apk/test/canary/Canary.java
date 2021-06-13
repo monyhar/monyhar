@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webapk.shell_apk.test.canary;
+package org.monyhar.webapk.shell_apk.test.canary;
 
 /**
  * Class to put into DexOptimizer.apk's assets in order to test creating

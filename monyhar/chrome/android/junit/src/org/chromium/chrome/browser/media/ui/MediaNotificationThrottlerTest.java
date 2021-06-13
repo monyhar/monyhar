@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.media.ui;
+package org.monyhar.chrome.browser.media.ui;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
@@ -20,9 +20,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.components.browser_ui.media.MediaNotificationController;
-import org.chromium.components.browser_ui.media.MediaNotificationInfo;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.components.browser_ui.media.MediaNotificationController;
+import org.monyhar.components.browser_ui.media.MediaNotificationInfo;
 
 /**
  * JUnit tests for checking {@link MediaNotificationController} throttles notification updates

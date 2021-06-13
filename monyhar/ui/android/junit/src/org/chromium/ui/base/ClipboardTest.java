@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.base;
+package org.monyhar.ui.base;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -24,11 +24,11 @@ import org.mockito.ArgumentCaptor;
 import org.mockito.Mockito;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.ContentUriUtils;
-import org.chromium.base.StreamUtil;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.UrlUtils;
-import org.chromium.url.JUnitTestGURLs;
+import org.monyhar.base.ContentUriUtils;
+import org.monyhar.base.StreamUtil;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.UrlUtils;
+import org.monyhar.url.JUnitTestGURLs;
 
 import java.io.File;
 import java.io.FileOutputStream;

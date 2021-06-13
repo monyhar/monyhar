@@ -2,15 +2,15 @@
 # core files like metrics_web_contents_observer.cc and
 # page_load_tracker.cc to bmcquade or skobes.
 
-bmcquade@chromium.org
-skobes@chromium.org
-npm@chromium.org
-sullivan@chromium.org
-csharrison@chromium.org
-jkarlin@chromium.org
-ryansturm@chromium.org
-johnidel@chromium.org
+bmcquade@monyhar.org
+skobes@monyhar.org
+npm@monyhar.org
+sullivan@monyhar.org
+csharrison@monyhar.org
+jkarlin@monyhar.org
+ryansturm@monyhar.org
+johnidel@monyhar.org
 
 # For straightforward addition/removal to existing observers only (for
 # APAC).
-kinuko@chromium.org
+kinuko@monyhar.org

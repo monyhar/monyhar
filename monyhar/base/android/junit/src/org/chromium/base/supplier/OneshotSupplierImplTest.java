@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.supplier;
+package org.monyhar.base.supplier;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
@@ -16,8 +16,8 @@ import org.mockito.Spy;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowProcess;
 
-import org.chromium.base.Callback;
-import org.chromium.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.Callback;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
 
 /**
  * Unit tests for {@link OneshotSupplierImpl}.

@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps;
+package org.monyhar.chrome.browser.webapps;
 
 import android.graphics.Bitmap;
 import android.util.Pair;
 
-import org.chromium.components.webapps.AddToHomescreenProperties;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.components.webapps.AddToHomescreenProperties;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * Binds an add-to-homescreen {@link PropertyModel} with a {@link PwaInstallBottomSheetContent}.

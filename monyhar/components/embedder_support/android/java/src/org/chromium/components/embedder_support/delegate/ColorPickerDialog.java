@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.embedder_support.delegate;
+package org.monyhar.components.embedder_support.delegate;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.ui.LayoutInflaterUtils;
+import org.monyhar.ui.LayoutInflaterUtils;
 
 /**
  * UI for the color chooser that shows on the Android platform as a result of

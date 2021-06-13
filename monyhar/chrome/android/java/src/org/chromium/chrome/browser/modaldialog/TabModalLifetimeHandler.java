@@ -2,32 +2,32 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.modaldialog;
+package org.monyhar.chrome.browser.modaldialog;
 
 import android.app.Activity;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsVisibilityManager;
-import org.chromium.chrome.browser.contextualsearch.ContextualSearchManager;
-import org.chromium.chrome.browser.fullscreen.FullscreenManager;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.lifecycle.DestroyObserver;
-import org.chromium.chrome.browser.lifecycle.NativeInitObserver;
-import org.chromium.chrome.browser.modaldialog.ChromeTabModalPresenter.TabModalBrowserControlsVisibilityDelegate;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabObserver;
-import org.chromium.chrome.browser.tab.TabSelectionType;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorTabModelObserver;
-import org.chromium.chrome.browser.toolbar.ToolbarManager;
-import org.chromium.chrome.browser.ui.TabObscuringHandler;
-import org.chromium.components.browser_ui.util.ComposedBrowserControlsVisibilityDelegate;
-import org.chromium.ui.modaldialog.DialogDismissalCause;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.modaldialog.ModalDialogManager.ModalDialogType;
-import org.chromium.ui.util.TokenHolder;
-import org.chromium.url.GURL;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsVisibilityManager;
+import org.monyhar.chrome.browser.contextualsearch.ContextualSearchManager;
+import org.monyhar.chrome.browser.fullscreen.FullscreenManager;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.lifecycle.DestroyObserver;
+import org.monyhar.chrome.browser.lifecycle.NativeInitObserver;
+import org.monyhar.chrome.browser.modaldialog.ChromeTabModalPresenter.TabModalBrowserControlsVisibilityDelegate;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabObserver;
+import org.monyhar.chrome.browser.tab.TabSelectionType;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorTabModelObserver;
+import org.monyhar.chrome.browser.toolbar.ToolbarManager;
+import org.monyhar.chrome.browser.ui.TabObscuringHandler;
+import org.monyhar.components.browser_ui.util.ComposedBrowserControlsVisibilityDelegate;
+import org.monyhar.ui.modaldialog.DialogDismissalCause;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.modaldialog.ModalDialogManager.ModalDialogType;
+import org.monyhar.ui.util.TokenHolder;
+import org.monyhar.url.GURL;
 
 /**
  * Class responsible for handling dismissal of a tab modal dialog on user actions outside the tab

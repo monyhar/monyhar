@@ -21,7 +21,7 @@
 #include <string.h>
 #include <sys/mman.h>
 
-namespace chromium_android_linker {
+namespace monyhar_android_linker {
 
 // Variable containing LibInfo for the loaded library.
 LibInfo_class s_lib_info_fields;
@@ -118,7 +118,7 @@ void ReserveAddressWithHint(uintptr_t hint, uintptr_t* address, size_t* size) {
 
 // Performs as described in Linker.java.
 JNI_GENERATOR_EXPORT void
-Java_org_chromium_base_library_1loader_Linker_nativeFindMemoryRegionAtRandomAddress(
+Java_org_monyhar_base_library_1loader_Linker_nativeFindMemoryRegionAtRandomAddress(
     JNIEnv* env,
     jclass clazz,
     jobject lib_info_obj,
@@ -135,7 +135,7 @@ Java_org_chromium_base_library_1loader_Linker_nativeFindMemoryRegionAtRandomAddr
 
 // Performs as described in Linker.java.
 JNI_GENERATOR_EXPORT void
-Java_org_chromium_base_library_1loader_Linker_nativeReserveMemoryForLibrary(
+Java_org_monyhar_base_library_1loader_Linker_nativeReserveMemoryForLibrary(
     JNIEnv* env,
     jclass clazz,
     jobject lib_info_obj) {
@@ -147,4 +147,4 @@ Java_org_chromium_base_library_1loader_Linker_nativeReserveMemoryForLibrary(
   s_lib_info_fields.SetLoadInfo(env, lib_info_obj, address, size);
 }
 
-}  // namespace chromium_android_linker
+}  // namespace monyhar_android_linker

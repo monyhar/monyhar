@@ -68,7 +68,7 @@ class FakeWebState : public web::FakeWebState {
 // Test fixture for SafeBrowsingBlockingPage.
 class LookalikeUrlBlockingPageTest : public PlatformTest {
  public:
-  LookalikeUrlBlockingPageTest() : url_("https://www.chromium.test") {
+  LookalikeUrlBlockingPageTest() : url_("https://www.monyhar.test") {
     auto navigation_manager = std::make_unique<web::FakeNavigationManager>();
     navigation_manager_ = navigation_manager.get();
     web_state_.SetNavigationManager(std::move(navigation_manager));

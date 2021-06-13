@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr;
+package org.monyhar.chrome.browser.vr;
 
 /**
  * Interface that is needed to manage a VR toast.

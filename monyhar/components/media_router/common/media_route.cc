@@ -12,7 +12,7 @@
 
 namespace media_router {
 
-constexpr char kRouteIdPrefix[] = "urn:x-org.chromium:media:route:";
+constexpr char kRouteIdPrefix[] = "urn:x-org.monyhar:media:route:";
 
 namespace {
 

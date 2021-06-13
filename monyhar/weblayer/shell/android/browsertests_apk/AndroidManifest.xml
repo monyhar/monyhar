@@ -7,7 +7,7 @@
  -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.chromium.weblayer_browsertests_apk">
+    package="org.monyhar.weblayer_browsertests_apk">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -34,11 +34,11 @@
             </intent-filter>
         </activity>
 
-        <meta-data android:name="org.chromium.weblayer.WebLayerPackage"
-                   android:value="org.chromium.weblayer_browsertests_apk"/>
+        <meta-data android:name="org.monyhar.weblayer.WebLayerPackage"
+                   android:value="org.monyhar.weblayer_browsertests_apk"/>
     </application>
 
-    <instrumentation android:name="org.chromium.build.gtest_apk.NativeTestInstrumentationTestRunner"
+    <instrumentation android:name="org.monyhar.build.gtest_apk.NativeTestInstrumentationTestRunner"
             android:label="WebLayerBrowserTests"
-            android:targetPackage="org.chromium.weblayer_browsertests_apk"/>
+            android:targetPackage="org.monyhar.weblayer_browsertests_apk"/>
 </manifest>

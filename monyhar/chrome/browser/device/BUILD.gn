@@ -6,8 +6,8 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "android/java/src/org/chromium/chrome/browser/device/DeviceClassManager.java",
-    "android/java/src/org/chromium/chrome/browser/device/DeviceConditions.java",
+    "android/java/src/org/monyhar/chrome/browser/device/DeviceClassManager.java",
+    "android/java/src/org/monyhar/chrome/browser/device/DeviceConditions.java",
   ]
   deps = [
     "//base:base_java",
@@ -25,8 +25,8 @@ android_library("junit") {
   bypass_platform_checks = true
   testonly = true
   sources = [
-    "android/java/src/org/chromium/chrome/browser/device/DeviceConditionsTest.java",
-    "android/java/src/org/chromium/chrome/browser/device/ShadowDeviceConditions.java",
+    "android/java/src/org/monyhar/chrome/browser/device/DeviceConditionsTest.java",
+    "android/java/src/org/monyhar/chrome/browser/device/ShadowDeviceConditions.java",
   ]
   deps = [
     ":java",

@@ -12,7 +12,7 @@
       "use_goma": true
     }
   },
-  "android-angle-chromium-arm64-builder": {
+  "android-angle-monyhar-arm64-builder": {
     "gn_args": {
       "dcheck_always_on": true,
       "disable_android_lint": true,
@@ -73,7 +73,7 @@
       "use_goma": true
     }
   },
-  "linux-angle-chromium-builder": {
+  "linux-angle-monyhar-builder": {
     "gn_args": {
       "dcheck_always_on": true,
       "ffmpeg_branding": "Chrome",
@@ -97,7 +97,7 @@
       "use_goma": true
     }
   },
-  "mac-angle-chromium-builder": {
+  "mac-angle-monyhar-builder": {
     "gn_args": {
       "dcheck_always_on": true,
       "ffmpeg_branding": "Chrome",
@@ -108,7 +108,7 @@
       "use_goma": true
     }
   },
-  "win-angle-chromium-x64-builder": {
+  "win-angle-monyhar-x64-builder": {
     "gn_args": {
       "dcheck_always_on": true,
       "ffmpeg_branding": "Chrome",
@@ -119,7 +119,7 @@
       "use_goma": true
     }
   },
-  "win-angle-chromium-x86-builder": {
+  "win-angle-monyhar-x86-builder": {
     "gn_args": {
       "dcheck_always_on": true,
       "ffmpeg_branding": "Chrome",

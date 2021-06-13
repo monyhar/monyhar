@@ -6,7 +6,7 @@ but can also add significant complexity. Below are some recommendation from
 Mojo and IPC reviewers for best practices.
 
 For questions, concerns, or suggestions, reach out to
-[chromium-mojo@chromium.org](https://groups.google.com/a/chromium.org/forum/#!forum/chromium-mojo).
+[monyhar-mojo@monyhar.org](https://groups.google.com/a/monyhar.org/forum/#!forum/monyhar-mojo).
 
 > For legacy IPC, please see [security tips for IPC][security-tips-for-ipc].
 
@@ -873,7 +873,7 @@ avoid circumventing access checks.
 
 Sometimes, there will be powerful new features that are not yet turned on by
 default, such as behind a flag, Finch trial, or [origin
-trial](https://www.chromium.org/blink/origin-trials). It is not safe to check
+trial](https://www.monyhar.org/blink/origin-trials). It is not safe to check
 for the feature's availability on the renderer side (or in another low-privilege
 process type). Instead, ensure that the check is done in the process that has
 power to actually enact the feature. Otherwise, a compromised renderer could opt
@@ -881,7 +881,7 @@ itself in to the feature! If the feature might not yet be fully developed and
 safe, vulnerabilities could arise.
 
 
-[security-tips-for-ipc]: https://www.chromium.org/Home/chromium-security/education/security-tips-for-ipc
-[NfcTypeConverter.java]: https://chromium.googlesource.com/chromium/src/+/e97442ee6e8c4cf6bcf7f5623c6fb2cc8cce92ac/services/device/nfc/android/java/src/org/chromium/device/nfc/NfcTypeConverter.java
-[mojo-doc-process-crashes]: https://chromium.googlesource.com/chromium/src/+/main/mojo/public/cpp/bindings#Best-practices-for-dealing-with-process-crashes-and-callbacks
-[serialize-struct-tm-safely]: https://chromium-review.googlesource.com/c/chromium/src/+/679441
+[security-tips-for-ipc]: https://www.monyhar.org/Home/monyhar-security/education/security-tips-for-ipc
+[NfcTypeConverter.java]: https://monyhar.googlesource.com/monyhar/src/+/e97442ee6e8c4cf6bcf7f5623c6fb2cc8cce92ac/services/device/nfc/android/java/src/org/monyhar/device/nfc/NfcTypeConverter.java
+[mojo-doc-process-crashes]: https://monyhar.googlesource.com/monyhar/src/+/main/mojo/public/cpp/bindings#Best-practices-for-dealing-with-process-crashes-and-callbacks
+[serialize-struct-tm-safely]: https://monyhar-review.googlesource.com/c/monyhar/src/+/679441

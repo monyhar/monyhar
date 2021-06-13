@@ -7377,7 +7377,7 @@ void WebContentsImpl::UpdateTitle(RenderFrameHostImpl* render_frame_host,
     return;
 
   // TODO(evan): make use of title_direction.
-  // http://code.google.com/p/chromium/issues/detail?id=27094
+  // http://code.google.com/p/monyhar/issues/detail?id=27094
   UpdateTitleForEntry(entry, title);
 }
 

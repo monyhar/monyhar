@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.signin.ui;
+package org.monyhar.chrome.browser.signin.ui;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -16,9 +16,9 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.content.res.AppCompatResources;
 
-import org.chromium.ui.UiUtils;
-import org.chromium.ui.drawable.AnimationLooper;
-import org.chromium.ui.widget.ButtonCompat;
+import org.monyhar.ui.UiUtils;
+import org.monyhar.ui.drawable.AnimationLooper;
+import org.monyhar.ui.widget.ButtonCompat;
 
 /** View that wraps signin screen and caches references to UI elements. */
 public class SigninView extends LinearLayout {

@@ -246,9 +246,9 @@ template("write_build_config") {
       ]
     }
 
-    if (defined(invoker.chromium_code) && !invoker.chromium_code) {
-      # Default to chromium code if invoker did not pass anything.
-      args += [ "--non-chromium-code" ]
+    if (defined(invoker.monyhar_code) && !invoker.monyhar_code) {
+      # Default to monyhar code if invoker did not pass anything.
+      args += [ "--non-monyhar-code" ]
     }
 
     if (defined(invoker.device_jar_path)) {
@@ -1194,7 +1194,7 @@ if (enable_java_templates) {
       _args += [
         "--enable-obfuscation",
         "--sourcefile",
-        "chromium-${_mapping_id}${_proguard_sourcefile_suffix}",
+        "monyhar-${_mapping_id}${_proguard_sourcefile_suffix}",
       ]
     } else if (defined(invoker.proguard_sourcefile_suffix)) {
       not_needed(invoker, [ "proguard_sourcefile_suffix" ])
@@ -2975,14 +2975,14 @@ if (enable_java_templates) {
   #    javac:processor_classes
   #  javac_jar_path: Path to the final output .jar file.
   #  javac_args: Optional list of extra arguments to pass to javac.
-  #  chromium_code: Whether this corresponds to Chromium-specific sources.
+  #  monyhar_code: Whether this corresponds to Chromium-specific sources.
   #  requires_android: True if these sources can only run on Android.
   #  additional_jar_files: Optional list of files to copy into the resulting
   #    .jar file (by default, only .class files are put there). Each entry
   #    has the 'srcPath:dstPath' format.
   #  enable_errorprone: If True, use the errorprone compiler to check for
   #    error-prone constructs in the language. If not provided, whether this is
-  #    enabled depends on chromium_code and the global
+  #    enabled depends on monyhar_code and the global
   #    use_errorprone_java_compiler variable.
   #  use_turbine: If True, compile headers using turbine.py.
   #  apk_name: Optional APK name. If provided, will tell compile_java.py to also
@@ -2998,7 +2998,7 @@ if (enable_java_templates) {
     forward_variables_from(invoker, TESTONLY_AND_VISIBILITY)
 
     _build_config = invoker.build_config
-    _chromium_code = invoker.chromium_code
+    _monyhar_code = invoker.monyhar_code
 
     _processor_args = []
     if (defined(invoker.processor_args_javac)) {
@@ -3132,8 +3132,8 @@ if (enable_java_templates) {
       if (invoker.requires_android) {
         args += [ "--bootclasspath=@FileArg($_rebased_build_config:android:sdk_interface_jars)" ]
       }
-      if (_chromium_code) {
-        args += [ "--chromium-code=1" ]
+      if (_monyhar_code) {
+        args += [ "--monyhar-code=1" ]
         if (treat_warnings_as_errors) {
           args += [ "--warnings-as-errors" ]
         }
@@ -3283,10 +3283,10 @@ if (enable_java_templates) {
   #  public_deps: Dependencies that this target exposes as part of its public API.
   #    public_deps do not need to be listed in both the 'deps' and 'public_deps' lists.
   #  testonly: True iff target should only be used for tests.
-  #  chromium_code: Optional. Whether this is Chromium-specific code. If not
+  #  monyhar_code: Optional. Whether this is Chromium-specific code. If not
   #    provided, this is determined automatically, based on the location of
   #    the source files (i.e. anything under third_party/ is not
-  #    Chromium-specific unless it is in a 'chromium' sub-directory).
+  #    Chromium-specific unless it is in a 'monyhar' sub-directory).
   #  jacoco_never_instrument: Optional. If provided, whether to forbid
   #    instrumentation with the Jacoco coverage processor. If not provided,
   #    this is controlled by the global use_jacoco_coverage build arg variable
@@ -3433,17 +3433,17 @@ if (enable_java_templates) {
              "main_class cannot be used for target of type ${invoker.type}")
     }
 
-    if (defined(invoker.chromium_code)) {
-      _chromium_code = invoker.chromium_code
+    if (defined(invoker.monyhar_code)) {
+      _monyhar_code = invoker.monyhar_code
     } else {
       # Default based on whether target is in third_party.
-      _chromium_code =
+      _monyhar_code =
           filter_exclude([ get_label_info(":$_main_target_name", "dir") ],
                          [ "*\bthird_party\b*" ]) != []
-      if (!_chromium_code && !_is_prebuilt && _java_files != []) {
-        # Unless third_party code has an org.chromium file in it.
-        _chromium_code =
-            filter_exclude(_java_files, [ "*\bchromium\b*" ]) != _java_files
+      if (!_monyhar_code && !_is_prebuilt && _java_files != []) {
+        # Unless third_party code has an org.monyhar file in it.
+        _monyhar_code =
+            filter_exclude(_java_files, [ "*\bmonyhar\b*" ]) != _java_files
       }
     }
 
@@ -3548,7 +3548,7 @@ if (enable_java_templates) {
 
       _extra_java_deps = []
       _jacoco_instrument =
-          use_jacoco_coverage && _chromium_code && _java_files != [] &&
+          use_jacoco_coverage && _monyhar_code && _java_files != [] &&
           _build_device_jar && (!defined(invoker.testonly) || !invoker.testonly)
       if (defined(invoker.jacoco_never_instrument)) {
         _jacoco_instrument =
@@ -3653,7 +3653,7 @@ if (enable_java_templates) {
                                  "version_code",
                                ])
       }
-      chromium_code = _chromium_code
+      monyhar_code = _monyhar_code
       build_config = _build_config
       is_prebuilt = _is_prebuilt
 
@@ -3723,7 +3723,7 @@ if (enable_java_templates) {
         _enable_errorprone = invoker.enable_errorprone
       } else {
         _enable_errorprone =
-            _java_files != [] && _chromium_code && use_errorprone_java_compiler
+            _java_files != [] && _monyhar_code && use_errorprone_java_compiler
       }
 
       _type = invoker.type
@@ -3785,7 +3785,7 @@ if (enable_java_templates) {
             if (java_files != []) {
               java_sources_file = _java_sources_file
             }
-            chromium_code = _chromium_code
+            monyhar_code = _monyhar_code
             supports_android = _supports_android
             requires_android = _requires_android
             if (!defined(deps)) {

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.overlays.strip;
+package org.monyhar.chrome.browser.compositor.overlays.strip;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -11,24 +11,24 @@ import android.graphics.RectF;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.MathUtils;
-import org.chromium.base.ObserverList;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.compositor.layouts.LayoutRenderHost;
-import org.chromium.chrome.browser.compositor.layouts.LayoutUpdateHost;
-import org.chromium.chrome.browser.compositor.layouts.components.CompositorButton;
-import org.chromium.chrome.browser.compositor.layouts.components.CompositorButton.CompositorOnClickHandler;
-import org.chromium.chrome.browser.compositor.layouts.components.TintedCompositorButton;
-import org.chromium.chrome.browser.compositor.overlays.strip.TabLoadTracker.TabLoadTrackerCallback;
-import org.chromium.chrome.browser.layouts.animation.CompositorAnimator;
-import org.chromium.chrome.browser.layouts.animation.FloatProperty;
-import org.chromium.chrome.browser.layouts.components.VirtualView;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.ui.base.LocalizationUtils;
-import org.chromium.ui.resources.AndroidResourceType;
-import org.chromium.ui.resources.LayoutResource;
-import org.chromium.ui.resources.ResourceManager;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.MathUtils;
+import org.monyhar.base.ObserverList;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.compositor.layouts.LayoutRenderHost;
+import org.monyhar.chrome.browser.compositor.layouts.LayoutUpdateHost;
+import org.monyhar.chrome.browser.compositor.layouts.components.CompositorButton;
+import org.monyhar.chrome.browser.compositor.layouts.components.CompositorButton.CompositorOnClickHandler;
+import org.monyhar.chrome.browser.compositor.layouts.components.TintedCompositorButton;
+import org.monyhar.chrome.browser.compositor.overlays.strip.TabLoadTracker.TabLoadTrackerCallback;
+import org.monyhar.chrome.browser.layouts.animation.CompositorAnimator;
+import org.monyhar.chrome.browser.layouts.animation.FloatProperty;
+import org.monyhar.chrome.browser.layouts.components.VirtualView;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.ui.base.LocalizationUtils;
+import org.monyhar.ui.resources.AndroidResourceType;
+import org.monyhar.ui.resources.LayoutResource;
+import org.monyhar.ui.resources.ResourceManager;
 
 import java.util.List;
 

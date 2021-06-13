@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.modaldialog;
+package org.monyhar.ui.modaldialog;
 
 import android.util.SparseArray;
 
@@ -11,12 +11,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.CommandLine;
-import org.chromium.base.ObserverList;
-import org.chromium.ui.UiSwitches;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.util.TokenHolder;
+import org.monyhar.base.Callback;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.ObserverList;
+import org.monyhar.ui.UiSwitches;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.util.TokenHolder;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_manager;
+package org.monyhar.chrome.browser.password_manager;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.R;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.modaldialog.DialogDismissalCause;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.R;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.modaldialog.DialogDismissalCause;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * The coordinator for the password generation modal dialog. Manages the sub-component objects

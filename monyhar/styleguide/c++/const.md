@@ -90,9 +90,9 @@ actually logically const.  Hence the recommendations here.
 ## Classes of const (in)correctness
 
 In a
-[larger discussion of this issue](https://groups.google.com/a/chromium.org/d/topic/platform-architecture-dev/C2Szi07dyQo/discussion),
+[larger discussion of this issue](https://groups.google.com/a/monyhar.org/d/topic/platform-architecture-dev/C2Szi07dyQo/discussion),
 Matt Giuca
-[postulated three classes of const(in)correctness](https://groups.google.com/a/chromium.org/d/msg/platform-architecture-dev/C2Szi07dyQo/lbHMUQHMAgAJ):
+[postulated three classes of const(in)correctness](https://groups.google.com/a/monyhar.org/d/msg/platform-architecture-dev/C2Szi07dyQo/lbHMUQHMAgAJ):
 
 * **Const correct:** All code marked "const" is logically const; all code that
   is logically const is marked "const".

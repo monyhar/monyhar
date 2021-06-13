@@ -319,7 +319,7 @@ TEST_F(BrowsingHistoryHandlerTest, Reload) {
   // Simulate page refresh and results being returned asynchronously.
   handler.OnJavascriptDisallowed();
   history::BrowsingHistoryService::HistoryEntry url_entry;
-  url_entry.url = GURL("https://www.chromium.org");
+  url_entry.url = GURL("https://www.monyhar.org");
   handler.OnQueryComplete({url_entry},
                           history::BrowsingHistoryService::QueryResultsInfo(),
                           base::OnceClosure());

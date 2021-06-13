@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar;
+package org.monyhar.chrome.browser.toolbar;
 
 import android.animation.Animator;
 import android.animation.Animator.AnimatorListener;
@@ -16,8 +16,8 @@ import android.graphics.drawable.ColorDrawable;
 import android.widget.FrameLayout.LayoutParams;
 import android.widget.ImageView;
 
-import org.chromium.ui.base.LocalizationUtils;
-import org.chromium.ui.interpolators.BakedBezierInterpolator;
+import org.monyhar.ui.base.LocalizationUtils;
+import org.monyhar.ui.interpolators.BakedBezierInterpolator;
 
 /**
  * An animating ImageView that is drawn on top of the progress bar. This will animate over the

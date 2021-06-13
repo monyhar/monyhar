@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import android.app.Activity;
 import android.app.ActivityManager;
@@ -16,57 +16,57 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.browser.trusted.TrustedWebActivityDisplayMode.ImmersiveMode;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.PackageManagerUtils;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.cc.input.BrowserControlsState;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.app.tab_activity_glue.ActivityTabWebContentsDelegateAndroid;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsStateProvider;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.browserservices.intents.WebDisplayMode;
-import org.chromium.chrome.browser.browserservices.intents.WebappExtras;
-import org.chromium.chrome.browser.browserservices.permissiondelegation.TrustedWebActivityPermissionManager;
-import org.chromium.chrome.browser.browserservices.ui.controller.Verifier;
-import org.chromium.chrome.browser.compositor.CompositorViewHolder;
-import org.chromium.chrome.browser.compositor.bottombar.ephemeraltab.EphemeralTabCoordinator;
-import org.chromium.chrome.browser.contextmenu.ChromeContextMenuPopulator;
-import org.chromium.chrome.browser.contextmenu.ChromeContextMenuPopulatorFactory;
-import org.chromium.chrome.browser.contextmenu.ContextMenuPopulatorFactory;
-import org.chromium.chrome.browser.customtabs.features.toolbar.CustomTabBrowserControlsVisibilityDelegate;
-import org.chromium.chrome.browser.dependency_injection.ActivityScope;
-import org.chromium.chrome.browser.externalnav.ExternalNavigationDelegateImpl;
-import org.chromium.chrome.browser.flags.ActivityType;
-import org.chromium.chrome.browser.fullscreen.FullscreenManager;
-import org.chromium.chrome.browser.init.ChromeActivityNativeDelegate;
-import org.chromium.chrome.browser.multiwindow.MultiWindowUtils;
-import org.chromium.chrome.browser.share.ShareDelegate;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabAssociatedApp;
-import org.chromium.chrome.browser.tab.TabContextMenuItemDelegate;
-import org.chromium.chrome.browser.tab.TabDelegateFactory;
-import org.chromium.chrome.browser.tab.TabLaunchType;
-import org.chromium.chrome.browser.tab.TabStateBrowserControlsVisibilityDelegate;
-import org.chromium.chrome.browser.tab.TabWebContentsDelegateAndroid;
-import org.chromium.chrome.browser.tabmodel.AsyncTabCreationParams;
-import org.chromium.chrome.browser.tabmodel.TabCreatorManager;
-import org.chromium.chrome.browser.tabmodel.TabModel;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.document.TabDelegate;
-import org.chromium.chrome.browser.ui.native_page.NativePage;
-import org.chromium.components.browser_ui.util.BrowserControlsVisibilityDelegate;
-import org.chromium.components.browser_ui.util.ComposedBrowserControlsVisibilityDelegate;
-import org.chromium.components.embedder_support.delegate.WebContentsDelegateAndroid;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.components.external_intents.ExternalNavigationHandler;
-import org.chromium.components.externalauth.ExternalAuthUtils;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.common.ResourceRequestBody;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.mojom.WindowOpenDisposition;
-import org.chromium.url.GURL;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.PackageManagerUtils;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.cc.input.BrowserControlsState;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.app.tab_activity_glue.ActivityTabWebContentsDelegateAndroid;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsStateProvider;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.browserservices.intents.WebDisplayMode;
+import org.monyhar.chrome.browser.browserservices.intents.WebappExtras;
+import org.monyhar.chrome.browser.browserservices.permissiondelegation.TrustedWebActivityPermissionManager;
+import org.monyhar.chrome.browser.browserservices.ui.controller.Verifier;
+import org.monyhar.chrome.browser.compositor.CompositorViewHolder;
+import org.monyhar.chrome.browser.compositor.bottombar.ephemeraltab.EphemeralTabCoordinator;
+import org.monyhar.chrome.browser.contextmenu.ChromeContextMenuPopulator;
+import org.monyhar.chrome.browser.contextmenu.ChromeContextMenuPopulatorFactory;
+import org.monyhar.chrome.browser.contextmenu.ContextMenuPopulatorFactory;
+import org.monyhar.chrome.browser.customtabs.features.toolbar.CustomTabBrowserControlsVisibilityDelegate;
+import org.monyhar.chrome.browser.dependency_injection.ActivityScope;
+import org.monyhar.chrome.browser.externalnav.ExternalNavigationDelegateImpl;
+import org.monyhar.chrome.browser.flags.ActivityType;
+import org.monyhar.chrome.browser.fullscreen.FullscreenManager;
+import org.monyhar.chrome.browser.init.ChromeActivityNativeDelegate;
+import org.monyhar.chrome.browser.multiwindow.MultiWindowUtils;
+import org.monyhar.chrome.browser.share.ShareDelegate;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabAssociatedApp;
+import org.monyhar.chrome.browser.tab.TabContextMenuItemDelegate;
+import org.monyhar.chrome.browser.tab.TabDelegateFactory;
+import org.monyhar.chrome.browser.tab.TabLaunchType;
+import org.monyhar.chrome.browser.tab.TabStateBrowserControlsVisibilityDelegate;
+import org.monyhar.chrome.browser.tab.TabWebContentsDelegateAndroid;
+import org.monyhar.chrome.browser.tabmodel.AsyncTabCreationParams;
+import org.monyhar.chrome.browser.tabmodel.TabCreatorManager;
+import org.monyhar.chrome.browser.tabmodel.TabModel;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.document.TabDelegate;
+import org.monyhar.chrome.browser.ui.native_page.NativePage;
+import org.monyhar.components.browser_ui.util.BrowserControlsVisibilityDelegate;
+import org.monyhar.components.browser_ui.util.ComposedBrowserControlsVisibilityDelegate;
+import org.monyhar.components.embedder_support.delegate.WebContentsDelegateAndroid;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.components.external_intents.ExternalNavigationHandler;
+import org.monyhar.components.externalauth.ExternalAuthUtils;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.common.ResourceRequestBody;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.mojom.WindowOpenDisposition;
+import org.monyhar.url.GURL;
 
 import javax.inject.Inject;
 
@@ -80,7 +80,7 @@ import dagger.Lazy;
 public class CustomTabDelegateFactory implements TabDelegateFactory {
     /** Action for do-nothing activity for activating WebAPK. */
     private static final String ACTION_ACTIVATE_WEBAPK =
-            "org.chromium.chrome.browser.webapps.ActivateWebApkActivity.ACTIVATE";
+            "org.monyhar.chrome.browser.webapps.ActivateWebApkActivity.ACTIVATE";
 
     /**
      * A custom external navigation delegate that forbids the intent picker from showing up.

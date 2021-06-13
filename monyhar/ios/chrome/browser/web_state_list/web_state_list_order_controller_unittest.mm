@@ -20,7 +20,7 @@
 #endif
 
 namespace {
-const char kURL[] = "https://chromium.org/";
+const char kURL[] = "https://monyhar.org/";
 
 // A fake NavigationManager used to test opener-opened relationship in the
 // WebStateList.

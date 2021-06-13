@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments;
+package org.monyhar.chrome.browser.payments;
 
 import static com.google.common.truth.Truth.assertThat;
 
@@ -19,18 +19,18 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.components.payments.Address;
-import org.chromium.components.payments.ErrorStrings;
-import org.chromium.components.payments.PayerData;
-import org.chromium.components.payments.intent.WebPaymentIntentHelper;
-import org.chromium.components.payments.intent.WebPaymentIntentHelperType.PaymentCurrencyAmount;
-import org.chromium.components.payments.intent.WebPaymentIntentHelperType.PaymentDetailsModifier;
-import org.chromium.components.payments.intent.WebPaymentIntentHelperType.PaymentItem;
-import org.chromium.components.payments.intent.WebPaymentIntentHelperType.PaymentMethodData;
-import org.chromium.components.payments.intent.WebPaymentIntentHelperType.PaymentOptions;
-import org.chromium.components.payments.intent.WebPaymentIntentHelperType.PaymentShippingOption;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.components.payments.Address;
+import org.monyhar.components.payments.ErrorStrings;
+import org.monyhar.components.payments.PayerData;
+import org.monyhar.components.payments.intent.WebPaymentIntentHelper;
+import org.monyhar.components.payments.intent.WebPaymentIntentHelperType.PaymentCurrencyAmount;
+import org.monyhar.components.payments.intent.WebPaymentIntentHelperType.PaymentDetailsModifier;
+import org.monyhar.components.payments.intent.WebPaymentIntentHelperType.PaymentItem;
+import org.monyhar.components.payments.intent.WebPaymentIntentHelperType.PaymentMethodData;
+import org.monyhar.components.payments.intent.WebPaymentIntentHelperType.PaymentOptions;
+import org.monyhar.components.payments.intent.WebPaymentIntentHelperType.PaymentShippingOption;
 
 import java.util.ArrayList;
 import java.util.Arrays;

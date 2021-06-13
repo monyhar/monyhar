@@ -9,9 +9,9 @@ import("//chrome/android/features/android_library_factory_tmpl.gni")
 # the base module.
 android_library("file_provider_java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/download/DirectoryOption.java",
-    "java/src/org/chromium/chrome/browser/download/DownloadDirectoryProvider.java",
-    "java/src/org/chromium/chrome/browser/download/DownloadFileProvider.java",
+    "java/src/org/monyhar/chrome/browser/download/DirectoryOption.java",
+    "java/src/org/monyhar/chrome/browser/download/DownloadDirectoryProvider.java",
+    "java/src/org/monyhar/chrome/browser/download/DownloadFileProvider.java",
   ]
   deps = [
     "//base:base_java",
@@ -24,46 +24,46 @@ android_library("file_provider_java") {
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/download/DownloadConstants.java",
-    "java/src/org/chromium/chrome/browser/download/DownloadDelegateImpl.java",
-    "java/src/org/chromium/chrome/browser/download/DownloadDialogBridge.java",
-    "java/src/org/chromium/chrome/browser/download/DownloadFilter.java",
-    "java/src/org/chromium/chrome/browser/download/DownloadInfo.java",
-    "java/src/org/chromium/chrome/browser/download/DownloadLaterMetrics.java",
-    "java/src/org/chromium/chrome/browser/download/DownloadLocationDialogMetrics.java",
-    "java/src/org/chromium/chrome/browser/download/DownloadManagerBridge.java",
-    "java/src/org/chromium/chrome/browser/download/DownloadStartupUtils.java",
-    "java/src/org/chromium/chrome/browser/download/DownloadStatus.java",
-    "java/src/org/chromium/chrome/browser/download/MediaStoreHelper.java",
-    "java/src/org/chromium/chrome/browser/download/MimeUtils.java",
-    "java/src/org/chromium/chrome/browser/download/StringUtils.java",
-    "java/src/org/chromium/chrome/browser/download/dialogs/DownloadDateTimePickerDialog.java",
-    "java/src/org/chromium/chrome/browser/download/dialogs/DownloadDateTimePickerDialogImpl.java",
-    "java/src/org/chromium/chrome/browser/download/dialogs/DownloadDateTimePickerDialogProperties.java",
-    "java/src/org/chromium/chrome/browser/download/dialogs/DownloadDialogUtils.java",
-    "java/src/org/chromium/chrome/browser/download/dialogs/DownloadLaterDialogChoice.java",
-    "java/src/org/chromium/chrome/browser/download/dialogs/DownloadLaterDialogController.java",
-    "java/src/org/chromium/chrome/browser/download/dialogs/DownloadLaterDialogCoordinator.java",
-    "java/src/org/chromium/chrome/browser/download/dialogs/DownloadLaterDialogHelper.java",
-    "java/src/org/chromium/chrome/browser/download/dialogs/DownloadLaterDialogProperties.java",
-    "java/src/org/chromium/chrome/browser/download/dialogs/DownloadLaterDialogView.java",
-    "java/src/org/chromium/chrome/browser/download/dialogs/DownloadLocationCustomView.java",
-    "java/src/org/chromium/chrome/browser/download/dialogs/DownloadLocationDialogController.java",
-    "java/src/org/chromium/chrome/browser/download/dialogs/DownloadLocationDialogCoordinator.java",
-    "java/src/org/chromium/chrome/browser/download/dialogs/DownloadLocationDialogProperties.java",
-    "java/src/org/chromium/chrome/browser/download/dialogs/DownloadLocationDialogViewBinder.java",
-    "java/src/org/chromium/chrome/browser/download/dialogs/DownloadTimePickerDialog.java",
-    "java/src/org/chromium/chrome/browser/download/home/DownloadManagerCoordinator.java",
-    "java/src/org/chromium/chrome/browser/download/home/DownloadManagerUiConfig.java",
-    "java/src/org/chromium/chrome/browser/download/home/DownloadManagerUiConfigHelper.java",
-    "java/src/org/chromium/chrome/browser/download/home/FaviconProvider.java",
-    "java/src/org/chromium/chrome/browser/download/home/JustNowProvider.java",
-    "java/src/org/chromium/chrome/browser/download/home/LegacyDownloadProvider.java",
-    "java/src/org/chromium/chrome/browser/download/settings/DownloadDirectoryAdapter.java",
-    "java/src/org/chromium/chrome/browser/download/settings/DownloadLocationPreference.java",
-    "java/src/org/chromium/chrome/browser/download/settings/DownloadLocationPreferenceAdapter.java",
-    "java/src/org/chromium/chrome/browser/download/settings/DownloadLocationPreferenceDialog.java",
-    "java/src/org/chromium/chrome/browser/download/settings/DownloadSettings.java",
+    "java/src/org/monyhar/chrome/browser/download/DownloadConstants.java",
+    "java/src/org/monyhar/chrome/browser/download/DownloadDelegateImpl.java",
+    "java/src/org/monyhar/chrome/browser/download/DownloadDialogBridge.java",
+    "java/src/org/monyhar/chrome/browser/download/DownloadFilter.java",
+    "java/src/org/monyhar/chrome/browser/download/DownloadInfo.java",
+    "java/src/org/monyhar/chrome/browser/download/DownloadLaterMetrics.java",
+    "java/src/org/monyhar/chrome/browser/download/DownloadLocationDialogMetrics.java",
+    "java/src/org/monyhar/chrome/browser/download/DownloadManagerBridge.java",
+    "java/src/org/monyhar/chrome/browser/download/DownloadStartupUtils.java",
+    "java/src/org/monyhar/chrome/browser/download/DownloadStatus.java",
+    "java/src/org/monyhar/chrome/browser/download/MediaStoreHelper.java",
+    "java/src/org/monyhar/chrome/browser/download/MimeUtils.java",
+    "java/src/org/monyhar/chrome/browser/download/StringUtils.java",
+    "java/src/org/monyhar/chrome/browser/download/dialogs/DownloadDateTimePickerDialog.java",
+    "java/src/org/monyhar/chrome/browser/download/dialogs/DownloadDateTimePickerDialogImpl.java",
+    "java/src/org/monyhar/chrome/browser/download/dialogs/DownloadDateTimePickerDialogProperties.java",
+    "java/src/org/monyhar/chrome/browser/download/dialogs/DownloadDialogUtils.java",
+    "java/src/org/monyhar/chrome/browser/download/dialogs/DownloadLaterDialogChoice.java",
+    "java/src/org/monyhar/chrome/browser/download/dialogs/DownloadLaterDialogController.java",
+    "java/src/org/monyhar/chrome/browser/download/dialogs/DownloadLaterDialogCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/download/dialogs/DownloadLaterDialogHelper.java",
+    "java/src/org/monyhar/chrome/browser/download/dialogs/DownloadLaterDialogProperties.java",
+    "java/src/org/monyhar/chrome/browser/download/dialogs/DownloadLaterDialogView.java",
+    "java/src/org/monyhar/chrome/browser/download/dialogs/DownloadLocationCustomView.java",
+    "java/src/org/monyhar/chrome/browser/download/dialogs/DownloadLocationDialogController.java",
+    "java/src/org/monyhar/chrome/browser/download/dialogs/DownloadLocationDialogCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/download/dialogs/DownloadLocationDialogProperties.java",
+    "java/src/org/monyhar/chrome/browser/download/dialogs/DownloadLocationDialogViewBinder.java",
+    "java/src/org/monyhar/chrome/browser/download/dialogs/DownloadTimePickerDialog.java",
+    "java/src/org/monyhar/chrome/browser/download/home/DownloadManagerCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/download/home/DownloadManagerUiConfig.java",
+    "java/src/org/monyhar/chrome/browser/download/home/DownloadManagerUiConfigHelper.java",
+    "java/src/org/monyhar/chrome/browser/download/home/FaviconProvider.java",
+    "java/src/org/monyhar/chrome/browser/download/home/JustNowProvider.java",
+    "java/src/org/monyhar/chrome/browser/download/home/LegacyDownloadProvider.java",
+    "java/src/org/monyhar/chrome/browser/download/settings/DownloadDirectoryAdapter.java",
+    "java/src/org/monyhar/chrome/browser/download/settings/DownloadLocationPreference.java",
+    "java/src/org/monyhar/chrome/browser/download/settings/DownloadLocationPreferenceAdapter.java",
+    "java/src/org/monyhar/chrome/browser/download/settings/DownloadLocationPreferenceDialog.java",
+    "java/src/org/monyhar/chrome/browser/download/settings/DownloadSettings.java",
   ]
 
   deps = [
@@ -101,7 +101,7 @@ android_library("java") {
 
   srcjar_deps = [ "//chrome:download_enum_javagen" ]
 
-  resources_package = "org.chromium.chrome.browser.download"
+  resources_package = "org.monyhar.chrome.browser.download"
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
 }
 
@@ -119,17 +119,17 @@ android_library_factory("factory_java") {
 
   # This internal file will be replaced by a generated file so the resulting
   # android_library target does not actually depend on this internal file.
-  sources = [ "//chrome/browser/download/internal/android/java/src/org/chromium/chrome/browser/download/home/DownloadManagerCoordinatorFactory.java" ]
+  sources = [ "//chrome/browser/download/internal/android/java/src/org/monyhar/chrome/browser/download/home/DownloadManagerCoordinatorFactory.java" ]
 }
 
 generate_jni("jni_headers") {
   sources = [
-    "java/src/org/chromium/chrome/browser/download/DownloadDialogBridge.java",
-    "java/src/org/chromium/chrome/browser/download/DownloadInfo.java",
-    "java/src/org/chromium/chrome/browser/download/DownloadManagerBridge.java",
-    "java/src/org/chromium/chrome/browser/download/DownloadStartupUtils.java",
-    "java/src/org/chromium/chrome/browser/download/MimeUtils.java",
-    "java/src/org/chromium/chrome/browser/download/StringUtils.java",
+    "java/src/org/monyhar/chrome/browser/download/DownloadDialogBridge.java",
+    "java/src/org/monyhar/chrome/browser/download/DownloadInfo.java",
+    "java/src/org/monyhar/chrome/browser/download/DownloadManagerBridge.java",
+    "java/src/org/monyhar/chrome/browser/download/DownloadStartupUtils.java",
+    "java/src/org/monyhar/chrome/browser/download/MimeUtils.java",
+    "java/src/org/monyhar/chrome/browser/download/StringUtils.java",
   ]
 }
 
@@ -137,10 +137,10 @@ android_library("download_java_tests") {
   testonly = true
 
   sources = [
-    "java/src/org/chromium/chrome/browser/download/DownloadFileProviderTest.java",
-    "java/src/org/chromium/chrome/browser/download/MimeUtilsTest.java",
-    "java/src/org/chromium/chrome/browser/download/StringUtilsTest.java",
-    "java/src/org/chromium/chrome/browser/download/settings/DownloadSettingsTest.java",
+    "java/src/org/monyhar/chrome/browser/download/DownloadFileProviderTest.java",
+    "java/src/org/monyhar/chrome/browser/download/MimeUtilsTest.java",
+    "java/src/org/monyhar/chrome/browser/download/StringUtilsTest.java",
+    "java/src/org/monyhar/chrome/browser/download/settings/DownloadSettingsTest.java",
   ]
 
   deps = [
@@ -177,12 +177,12 @@ android_library("junit_tests") {
   testonly = true
 
   sources = [
-    "java/src/org/chromium/chrome/browser/download/DownloadDialogBridgeUnitTest.java",
-    "java/src/org/chromium/chrome/browser/download/DownloadDirectoryProviderUnitTest.java",
-    "java/src/org/chromium/chrome/browser/download/DownloadLaterMetricsUnitTest.java",
-    "java/src/org/chromium/chrome/browser/download/DownloadLocationDialogMetricsUnitTest.java",
-    "java/src/org/chromium/chrome/browser/download/dialogs/DownloadDialogUtilsUnitTest.java",
-    "java/src/org/chromium/chrome/browser/download/dialogs/DownloadLaterDialogHelperUnitTest.java",
+    "java/src/org/monyhar/chrome/browser/download/DownloadDialogBridgeUnitTest.java",
+    "java/src/org/monyhar/chrome/browser/download/DownloadDirectoryProviderUnitTest.java",
+    "java/src/org/monyhar/chrome/browser/download/DownloadLaterMetricsUnitTest.java",
+    "java/src/org/monyhar/chrome/browser/download/DownloadLocationDialogMetricsUnitTest.java",
+    "java/src/org/monyhar/chrome/browser/download/dialogs/DownloadDialogUtilsUnitTest.java",
+    "java/src/org/monyhar/chrome/browser/download/dialogs/DownloadLaterDialogHelperUnitTest.java",
   ]
 
   deps = [

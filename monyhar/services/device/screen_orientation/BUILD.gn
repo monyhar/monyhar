@@ -32,7 +32,7 @@ source_set("screen_orientation") {
 if (is_android) {
   generate_jni("screen_orientation_jni_headers") {
     visibility = [ ":screen_orientation" ]
-    sources = [ "android/java/src/org/chromium/device/screen_orientation/ScreenOrientationListener.java" ]
+    sources = [ "android/java/src/org/monyhar/device/screen_orientation/ScreenOrientationListener.java" ]
   }
 
   android_library("java") {
@@ -40,7 +40,7 @@ if (is_android) {
     # However, various generated targets also need to see this target as a
     # result of //services/device:java depending on it.
     visibility = [ "//services/device:*" ]
-    sources = [ "android/java/src/org/chromium/device/screen_orientation/ScreenOrientationListener.java" ]
+    sources = [ "android/java/src/org/monyhar/device/screen_orientation/ScreenOrientationListener.java" ]
     deps = [
       "//base:base_java",
       "//ui/android:ui_no_recycler_view_java",

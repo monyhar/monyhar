@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.services.media_session;
+package org.monyhar.services.media_session;
 
 import android.graphics.Rect;
 import android.text.TextUtils;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.url.GURL;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.Arrays;

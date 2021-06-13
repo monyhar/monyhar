@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.send_tab_to_self;
+package org.monyhar.chrome.browser.share.send_tab_to_self;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -15,9 +15,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.content.res.AppCompatResources;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.ui.widget.ChromeImageView;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.ui.widget.ChromeImageView;
 
 import java.util.Calendar;
 import java.util.List;

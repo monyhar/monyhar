@@ -1,7 +1,7 @@
 // Copyright 2019 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.chrome.browser.sync.settings;
+package org.monyhar.chrome.browser.sync.settings;
 
 import android.app.Activity;
 import android.app.PendingIntent;
@@ -20,26 +20,26 @@ import androidx.fragment.app.Fragment;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 
-import org.chromium.base.BuildInfo;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.Log;
-import org.chromium.base.Promise;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.LaunchIntentDispatcher;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider.CustomTabsUiType;
-import org.chromium.chrome.browser.customtabs.CustomTabIntentDataProvider;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.signin.services.IdentityServicesProvider;
-import org.chromium.chrome.browser.sync.SyncService;
-import org.chromium.chrome.browser.sync.TrustedVaultClient;
-import org.chromium.components.signin.base.CoreAccountInfo;
-import org.chromium.components.signin.base.GoogleServiceAuthError;
-import org.chromium.components.sync.KeyRetrievalTriggerForUMA;
-import org.chromium.components.sync.StopSource;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.Promise;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.LaunchIntentDispatcher;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider.CustomTabsUiType;
+import org.monyhar.chrome.browser.customtabs.CustomTabIntentDataProvider;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.signin.services.IdentityServicesProvider;
+import org.monyhar.chrome.browser.sync.SyncService;
+import org.monyhar.chrome.browser.sync.TrustedVaultClient;
+import org.monyhar.components.signin.base.CoreAccountInfo;
+import org.monyhar.components.signin.base.GoogleServiceAuthError;
+import org.monyhar.components.sync.KeyRetrievalTriggerForUMA;
+import org.monyhar.components.sync.StopSource;
+import org.monyhar.ui.widget.Toast;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

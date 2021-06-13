@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.tiles;
+package org.monyhar.chrome.browser.omnibox.suggestions.tiles;
 
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.times;
@@ -22,14 +22,14 @@ import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.Callback;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.UiThreadTest;
-import org.chromium.base.test.util.Batch;
-import org.chromium.components.omnibox.AutocompleteMatch;
-import org.chromium.components.query_tiles.QueryTile;
-import org.chromium.content_public.browser.test.NativeLibraryTestUtils;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.Callback;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.UiThreadTest;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.components.omnibox.AutocompleteMatch;
+import org.monyhar.components.query_tiles.QueryTile;
+import org.monyhar.content_public.browser.test.NativeLibraryTestUtils;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,9 +11,9 @@ import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.LinearLayout;
 
-import org.chromium.android_webview.AwBrowserProcess;
-import org.chromium.android_webview.shell.AwShellResourceProvider;
-import org.chromium.base.StrictModeContext;
+import org.monyhar.android_webview.AwBrowserProcess;
+import org.monyhar.android_webview.shell.AwShellResourceProvider;
+import org.monyhar.base.StrictModeContext;
 
 /**
  * This is a lightweight activity for tests that only require WebView functionality.

@@ -47,7 +47,7 @@ void ReadFile(const std::string& relative_path,
   }
 
   // Terminal gets files from /usr/share/chromeos-assets/crosh-builtin.
-  // In chromium tests, these files don't exist, so we serve dummy values.
+  // In monyhar tests, these files don't exist, so we serve dummy values.
   if (!result) {
     static const base::NoDestructor<base::flat_map<std::string, std::string>>
         kTestFiles({

@@ -1,5 +1,5 @@
-mkwst@chromium.org
-vasilii@chromium.org
+mkwst@monyhar.org
+vasilii@monyhar.org
 file://device/fido/OWNERS
 
 per-file *_type_converter*.*=set noparent

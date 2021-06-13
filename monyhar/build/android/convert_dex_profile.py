@@ -242,7 +242,7 @@ def _ToTypeDescriptor(dot_notation):
   """Parses a dot notation type and returns it in type descriptor format
 
   eg:
-  org.chromium.browser.ChromeActivity -> Lorg/chromium/browser/ChromeActivity;
+  org.monyhar.browser.ChromeActivity -> Lorg/monyhar/browser/ChromeActivity;
   boolean -> Z
   int[] -> [I
 
@@ -267,8 +267,8 @@ def _DotNotationListToTypeDescriptorList(dot_notation_list_string):
   descriptor format
 
   eg:
-  org.chromium.browser.ChromeActivity,boolean,int[] ->
-      Lorg/chromium/browser/ChromeActivity;Z[I
+  org.monyhar.browser.ChromeActivity,boolean,int[] ->
+      Lorg/monyhar/browser/ChromeActivity;Z[I
 
   Args:
     dot_notation_list_string: single string with multiple comma separated types

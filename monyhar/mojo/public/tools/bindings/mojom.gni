@@ -169,7 +169,7 @@ if (enable_scrambled_message_ids) {
 #       interfaces. Useful with targets outside //, e.g. in parent directories
 #       above "//". The default input root is //
 #       Example: Vivaldi's source root is "//vivaldi/",
-#       and "//vivaldi/chromium/" is "//"
+#       and "//vivaldi/monyhar/" is "//"
 #       In such cases, not using this argument lead to the output files being
 #       located in different directories than expected.
 #
@@ -336,7 +336,7 @@ if (enable_scrambled_message_ids) {
 #
 # The following parameters are used to support the component build. They are
 # needed so that bindings which are linked with a component can use the same
-# export settings for classes. The first three are for the chromium variant, and
+# export settings for classes. The first three are for the monyhar variant, and
 # the last three are for the blink variant. These parameters can also override
 # |component_macro_prefix| for a specific variant, allowing e.g. one variant
 # to be linked into a larger non-mojom component target, while all other
@@ -357,7 +357,7 @@ if (enable_scrambled_message_ids) {
 # The following parameters are used to correct component build dependencies.
 # They are needed so mojom-mojom dependencies follow the rule that dependencies
 # on a source set in another component are replaced by a dependency on the
-# containing component. The first two are for the chromium variant; the other
+# containing component. The first two are for the monyhar variant; the other
 # two are for the blink variant.
 #   overridden_deps (optional)
 #       The list of mojom deps to be overridden.
@@ -1649,7 +1649,7 @@ template("mojom") {
         ]
 
         # Disable warnings/checks on these generated files.
-        chromium_code = false
+        monyhar_code = false
 
         foreach(d, all_deps) {
           # Resolve the name, so that a target //mojo/something becomes

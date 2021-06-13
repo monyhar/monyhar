@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.util;
+package org.monyhar.chrome.browser.util;
 
 import androidx.test.filters.SmallTest;
 
@@ -10,8 +10,8 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
 
 @RunWith(ChromeJUnit4ClassRunner.class)
 public class HashUtilTest {

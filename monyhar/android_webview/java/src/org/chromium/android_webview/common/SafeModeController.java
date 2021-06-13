@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.common;
+package org.monyhar.android_webview.common;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -11,10 +11,10 @@ import android.content.pm.PackageManager;
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.StrictModeContext;
-import org.chromium.build.BuildConfig;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.build.BuildConfig;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -24,7 +24,7 @@ import java.util.Set;
  */
 public class SafeModeController {
     public static final String SAFE_MODE_STATE_COMPONENT =
-            "org.chromium.android_webview.SafeModeState";
+            "org.monyhar.android_webview.SafeModeState";
 
     private static final String TAG = "WebViewSafeMode";
 

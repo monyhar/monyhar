@@ -57,7 +57,7 @@ class PyWebSocket(server_base.ServerBase):
         self._error_log = self._filesystem.join(self._output_dir,
                                                 log_file_name + '-err.txt')
         pywebsocket_base = PathFinder(
-            self._filesystem).path_from_chromium_base('third_party',
+            self._filesystem).path_from_monyhar_base('third_party',
                                                       'pywebsocket3', 'src')
         pywebsocket_script = self._filesystem.join(
             pywebsocket_base, 'mod_pywebsocket', 'standalone.py')

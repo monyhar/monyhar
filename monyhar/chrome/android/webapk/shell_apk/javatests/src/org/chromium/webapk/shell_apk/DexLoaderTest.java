@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webapk.shell_apk;
+package org.monyhar.webapk.shell_apk;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -25,12 +25,12 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.FileUtils;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.webapk.shell_apk.test.dex_optimizer.IDexOptimizerService;
+import org.monyhar.base.FileUtils;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.webapk.shell_apk.test.dex_optimizer.IDexOptimizerService;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -45,13 +45,13 @@ public class DexLoaderTest {
      * Package of APK to load dex file from and package which provides DexOptimizerService.
      */
     private static final String DEX_OPTIMIZER_SERVICE_PACKAGE =
-            "org.chromium.webapk.shell_apk.test.dex_optimizer";
+            "org.monyhar.webapk.shell_apk.test.dex_optimizer";
 
     /**
      * Class which implements DexOptimizerService.
      */
     private static final String DEX_OPTIMIZER_SERVICE_CLASS_NAME =
-            "org.chromium.webapk.shell_apk.test.dex_optimizer.DexOptimizerServiceImpl";
+            "org.monyhar.webapk.shell_apk.test.dex_optimizer.DexOptimizerServiceImpl";
 
     /**
      * Name of dex files in DexOptimizer.apk.
@@ -63,9 +63,9 @@ public class DexLoaderTest {
      * Classes to load to check whether dex is valid.
      */
     private static final String CANARY_CLASS_NAME =
-            "org.chromium.webapk.shell_apk.test.canary.Canary";
+            "org.monyhar.webapk.shell_apk.test.canary.Canary";
     private static final String CANARY_CLASS_NAME2 =
-            "org.chromium.webapk.shell_apk.test.canary.Canary2";
+            "org.monyhar.webapk.shell_apk.test.canary.Canary2";
 
     private Context mContext;
     private Context mRemoteContext;

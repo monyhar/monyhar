@@ -251,7 +251,7 @@ it&#8217;s platform-independent, and we&#8217;d like it to stay that way.</p>
 <p>Right now only C and C++ are supported directly by the toolchain in the SDK. C#
 and other languages in the .NET family are supported via the <a class="reference external" href="https://github.com/elijahtaylor/mono">Mono port</a> for
 Native Client. Moreover, there are several ongoing projects to support
-additional language runtimes (e.g. <a class="reference external" href="https://chromium.googlesource.com/webports">webports includes Lua, Python and Ruby</a>)
+additional language runtimes (e.g. <a class="reference external" href="https://monyhar.googlesource.com/webports">webports includes Lua, Python and Ruby</a>)
 as well as to compile more languages to LLVM&#8217;s intermediate representation
 (e.g. support <a class="reference external" href="http://halide-lang.org/">Halide</a>, Haskell with <a class="reference external" href="http://www.haskell.org/ghc/docs/latest/html/users_guide/code-generators.html">GHC</a> or support Fortran with <a class="reference external" href="https://flang-gsoc.blogspot.ie/2013/09/end-of-gsoc-report.html">flang</a>), or
 transpile languages to C/C++ (source-to-source compilation). Even JavaScript is
@@ -277,7 +277,7 @@ various features that don&#8217;t have robust support in NPAPI, such as event
 handling, out-of-process plugins, and asynchronous interfaces. Native
 Client has transitioned from using NPAPI to using Pepper.</p>
 <h3 id="is-npapi-part-of-the-native-client-sdk">Is NPAPI part of the Native Client SDK?</h3>
-<p>NPAPI is not supported by the Native Client SDK, and is <a class="reference external" href="http://blog.chromium.org/2013/09/saying-goodbye-to-our-old-friend-npapi.html">deprecated in Chrome</a>.</p>
+<p>NPAPI is not supported by the Native Client SDK, and is <a class="reference external" href="http://blog.monyhar.org/2013/09/saying-goodbye-to-our-old-friend-npapi.html">deprecated in Chrome</a>.</p>
 <h3 id="does-native-client-support-simd-vector-instructions">Does Native Client support SIMD vector instructions?</h3>
 <p>Portable Native Client supports portable SIMD vectors, as detailed in
 <a class="reference internal" href="/native-client/reference/pnacl-c-cpp-language-support.html#portable-simd-vectors"><em>Portable SIMD Vectors</em></a>.</p>
@@ -288,7 +288,7 @@ and NEON on ARM.</p>
 <p>To alert the user regarding their hardware platform&#8217;s 3D feature set
 before loading a large NaCl application, see <a class="reference internal" href="/native-client/devguide/coding/3D-graphics.html"><em>Vetting the driver in
 Javascript</em></a>.</p>
-<p>Some GL extensions are exposed to Native Client applications, see the <a class="reference external" href="https://source.chromium.org/chromium/chromium/src/+/HEAD:ppapi/lib/gl/gles2/gles2.c">GLES2
+<p>Some GL extensions are exposed to Native Client applications, see the <a class="reference external" href="https://source.monyhar.org/monyhar/monyhar/src/+/HEAD:ppapi/lib/gl/gles2/gles2.c">GLES2
 file</a>.  This file is part of the GL wrapper supplied by the library
 <code>ppapi_gles2</code> which you&#8217;ll want to include in your project.  In most cases
 extensions map to extensions available on other platforms, or differ very
@@ -399,7 +399,7 @@ Native Client provides an <code>mmap()</code> system call that behaves much like
 the standard UNIX <code>mmap()</code> system call.</p>
 <h3 id="is-my-favorite-third-party-library-available-for-native-client">Is my favorite third-party library available for Native Client?</h3>
 <p>Google has ported several third-party libraries to Native Client; such libraries
-are available in the <a class="reference external" href="https://chromium.googlesource.com/webports">webports</a> project. We encourage you to contribute
+are available in the <a class="reference external" href="https://monyhar.googlesource.com/webports">webports</a> project. We encourage you to contribute
 libraries to webports, and/or to host your own ported libraries, and to let the
 team know about it on <a class="reference external" href="https://groups.google.com/group/native-client-discuss">native-client-discuss</a> when you do. You can also read
 through <a class="reference internal" href="/native-client/reference/ideas.html"><em>contributor ideas</em></a> to find ideas of new projects

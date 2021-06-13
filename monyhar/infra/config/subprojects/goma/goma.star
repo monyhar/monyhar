@@ -13,7 +13,7 @@ luci.bucket(
         ),
         acl.entry(
             roles = acl.BUILDBUCKET_TRIGGERER,
-            groups = "project-chromium-ci-schedulers",
+            groups = "project-monyhar-ci-schedulers",
         ),
         acl.entry(
             roles = acl.BUILDBUCKET_OWNER,
@@ -27,15 +27,15 @@ defaults.build_numbers.set(True)
 defaults.configure_kitchen.set(True)
 defaults.cores.set(8)
 defaults.cpu.set(cpu.X86_64)
-defaults.executable.set("recipe:chromium")
+defaults.executable.set("recipe:monyhar")
 defaults.execution_timeout.set(3 * time.hour)
 defaults.os.set(os.LINUX_DEFAULT)
-defaults.pool.set("luci.chromium.ci")
+defaults.pool.set("luci.monyhar.ci")
 defaults.service_account.set(
     "goma-release-testing@chops-service-accounts.iam.gserviceaccount.com",
 )
 defaults.swarming_tags.set(["vpython:native-python-wrapper"])
-defaults.triggered_by.set(["chromium-gitiles-trigger"])
+defaults.triggered_by.set(["monyhar-gitiles-trigger"])
 
 # Builders appear after the function used to define them, with all builders
 # defined using the same function ordered lexicographically by name
@@ -55,7 +55,7 @@ def fyi_goma_rbe_canary_builder(
         **kwargs):
     return builder(
         name = name,
-        builder_group = "chromium.goma.fyi",
+        builder_group = "monyhar.goma.fyi",
         execution_timeout = 10 * time.hour,
         goma_backend = goma_backend,
         os = os,
@@ -142,7 +142,7 @@ def fyi_goma_rbe_latest_client_builder(
         **kwargs):
     return builder(
         name = name,
-        builder_group = "chromium.goma.fyi",
+        builder_group = "monyhar.goma.fyi",
         execution_timeout = 10 * time.hour,
         goma_backend = goma_backend,
         os = os,
@@ -229,7 +229,7 @@ def goma_builder(
         **kwargs):
     return builder(
         name = name,
-        builder_group = "chromium.goma",
+        builder_group = "monyhar.goma",
         builderless = builderless,
         os = os,
         **kwargs

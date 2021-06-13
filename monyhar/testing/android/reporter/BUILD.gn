@@ -6,7 +6,7 @@ import("//build/config/android/rules.gni")
 
 android_library("reporter_java") {
   testonly = true
-  chromium_code = true
+  monyhar_code = true
 
   deps = [
     "//base:base_java",
@@ -14,5 +14,5 @@ android_library("reporter_java") {
     "//third_party/android_sdk:android_test_base_java",
   ]
 
-  sources = [ "java/src/org/chromium/test/reporter/TestStatusReporter.java" ]
+  sources = [ "java/src/org/monyhar/test/reporter/TestStatusReporter.java" ]
 }

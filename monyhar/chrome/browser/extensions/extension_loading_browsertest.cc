@@ -74,8 +74,8 @@ IN_PROC_BROWSER_TEST_F(ExtensionLoadingTest,
   // Navigate that tab to a non-extension URL to swap out the extension's
   // renderer.
   const GURL test_link_from_NTP =
-      embedded_test_server()->GetURL("/README.chromium");
-  EXPECT_THAT(test_link_from_NTP.spec(), testing::EndsWith("/README.chromium"))
+      embedded_test_server()->GetURL("/README.monyhar");
+  EXPECT_THAT(test_link_from_NTP.spec(), testing::EndsWith("/README.monyhar"))
       << "Check that the test server started.";
   NavigateInRenderer(browser()->tab_strip_model()->GetActiveWebContents(),
                      test_link_from_NTP);
@@ -129,8 +129,8 @@ IN_PROC_BROWSER_TEST_F(ExtensionLoadingTest,
   // Navigate that tab to a non-extension URL to swap out the extension's
   // renderer.
   const GURL test_link_from_ntp =
-      embedded_test_server()->GetURL("/README.chromium");
-  EXPECT_THAT(test_link_from_ntp.spec(), testing::EndsWith("/README.chromium"))
+      embedded_test_server()->GetURL("/README.monyhar");
+  EXPECT_THAT(test_link_from_ntp.spec(), testing::EndsWith("/README.monyhar"))
       << "Check that the test server started.";
   NavigateInRenderer(browser()->tab_strip_model()->GetActiveWebContents(),
                      test_link_from_ntp);

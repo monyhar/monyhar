@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr;
+package org.monyhar.chrome.browser.vr;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.components.webxr.ArCompositorDelegate;
-import org.chromium.components.webxr.ArCompositorDelegateProvider;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.components.webxr.ArCompositorDelegate;
+import org.monyhar.components.webxr.ArCompositorDelegateProvider;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * Concrete, Chrome-specific implementation of ArCompositorDelegateProvider interface.

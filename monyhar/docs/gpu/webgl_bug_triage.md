@@ -16,27 +16,27 @@ introduced. The specifics of the rotation follow:
     following query:
 
     * [Open bugs not needing feedback, and in the Unconfirmed or Unassigned
-      state](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=is%3Aopen+component%3ABlink%3EWebGL+status%3AUnconfirmed%2CUntriaged+-label%3ANeeds-Feedback%2CNeeds-Bisect%2CNeeds-TestConfirmation&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
+      state](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=is%3Aopen+component%3ABlink%3EWebGL+status%3AUnconfirmed%2CUntriaged+-label%3ANeeds-Feedback%2CNeeds-Bisect%2CNeeds-TestConfirmation&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
 
   * If the query above doesn't turn up anything, it's possible that the bug was
     already moved into a different state by the GPU triage rotation. In this
     case please look into the following queries. Please note that these will
     turn up much larger lists, so only focus on the new bugs.
 
-    * [Same query as above, but including Available and Assigned bugs](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=is%3Aopen+component%3ABlink%3EWebGL+status%3AUnconfirmed%2CUntriaged%2CAvailable%2CAssigned+-label%3ANeeds-Feedback%2CNeeds-Bisect%2CNeeds-TestConfirmation&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
+    * [Same query as above, but including Available and Assigned bugs](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=is%3Aopen+component%3ABlink%3EWebGL+status%3AUnconfirmed%2CUntriaged%2CAvailable%2CAssigned+-label%3ANeeds-Feedback%2CNeeds-Bisect%2CNeeds-TestConfirmation&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
 
     * [Open bugs which haven't been
-      started](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=is%3Aopen+component%3ABlink%3EWebGL+-status%3AStarted&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
+      started](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=is%3Aopen+component%3ABlink%3EWebGL+-status%3AStarted&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
 
     * [All open
-      bugs](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=is%3Aopen+component%3ABlink%3EWebGL&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
+      bugs](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=is%3Aopen+component%3ABlink%3EWebGL&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
 
   * Please also monitor these candidates for closing as WontFix:
 
-    * [Untriaged bugs labeled Hotlist-Recharge-Cold](https://bugs.chromium.org/p/chromium/issues/list?colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified&x=m&y=releaseblock&cells=ids&q=is%3Aopen%20component%3ABlink%3EWebGL%20status%3AUntriaged%20label%3Ahotlist-recharge-cold&can=2)
+    * [Untriaged bugs labeled Hotlist-Recharge-Cold](https://bugs.monyhar.org/p/monyhar/issues/list?colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified&x=m&y=releaseblock&cells=ids&q=is%3Aopen%20component%3ABlink%3EWebGL%20status%3AUntriaged%20label%3Ahotlist-recharge-cold&can=2)
 
     * [Open bugs needing feedback of some sort, not updated in the last 30
-      days](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=is%3Aopen+component%3ABlink%3EWebGL+label%3ANeeds+modified%3Ctoday-30&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
+      days](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=is%3Aopen+component%3ABlink%3EWebGL+label%3ANeeds+modified%3Ctoday-30&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
 
   * If an issue interacts with other components, add those components. (e.g. V8
     via Blink>JavaScript or sub-components, media usually via
@@ -53,7 +53,7 @@ introduced. The specifics of the rotation follow:
 
   * Figuring out whether the bug is a regression. If it's appropriate to ask the
     submitter to [run a
-    bisect](https://www.chromium.org/developers/bisect-builds-py), please do so;
+    bisect](https://www.monyhar.org/developers/bisect-builds-py), please do so;
     if it would be easy for Chrome's Test Engineering team to run it, add the
     Needs-Bisect label; or run a [per-revision
     bisect](https://sites.google.com/a/google.com/chrome-te/home/tools/bisect_builds?pli=1)

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_check;
+package org.monyhar.chrome.browser.password_check;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -27,9 +27,9 @@ import androidx.preference.PreferenceFragmentCompat;
 
 import com.google.android.material.textfield.TextInputLayout;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.password_manager.settings.ReauthenticationManager;
-import org.chromium.chrome.browser.password_manager.settings.ReauthenticationManager.ReauthScope;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.password_manager.settings.ReauthenticationManager;
+import org.monyhar.chrome.browser.password_manager.settings.ReauthenticationManager.ReauthScope;
 
 /**
  * This class is responsible for rendering the edit fragment where users can provide a new password

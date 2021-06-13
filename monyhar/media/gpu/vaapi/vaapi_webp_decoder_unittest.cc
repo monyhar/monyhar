@@ -208,7 +208,7 @@ TEST_P(VaapiWebPDecoderTest, DecodeAndExportAsNativePixmapDmaBuf) {
 
 // TODO(crbug.com/986073): expand test coverage. See
 // vaapi_jpeg_decoder_unittest.cc as reference:
-// cs.chromium.org/chromium/src/media/gpu/vaapi/vaapi_jpeg_decoder_unittest.cc
+// cs.monyhar.org/monyhar/src/media/gpu/vaapi/vaapi_jpeg_decoder_unittest.cc
 INSTANTIATE_TEST_SUITE_P(All,
                          VaapiWebPDecoderTest,
                          testing::ValuesIn(kTestCases),

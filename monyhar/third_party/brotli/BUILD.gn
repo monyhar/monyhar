@@ -130,8 +130,8 @@ static_library("dec") {
   public_deps = [ ":headers" ]
   deps = [ ":common" ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 
   # Since we never debug brotli, freeze the optimizations to -O2.
   configs -= [ "//build/config/compiler:default_optimization" ]
@@ -144,8 +144,8 @@ static_library("dec_no_dictionary_data") {
   public_deps = [ ":headers" ]
   deps = [ ":common_no_dictionary_data" ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 
   # Since we never debug brotli, freeze the optimizations to -O2.
   configs -= [ "//build/config/compiler:default_optimization" ]
@@ -159,8 +159,8 @@ static_library("enc") {
   public_deps = [ ":headers" ]
   deps = [ ":common" ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 
   # Since we never debug brotli, freeze the optimizations to -O2.
   configs -= [ "//build/config/compiler:default_optimization" ]

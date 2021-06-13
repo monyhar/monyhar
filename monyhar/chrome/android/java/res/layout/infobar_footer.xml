@@ -24,7 +24,7 @@
         android:paddingBottom="@dimen/infobar_small_icon_margin"
         android:paddingTop="@dimen/infobar_small_icon_margin"
         android:orientation="horizontal">
-        <org.chromium.components.browser_ui.widget.RoundedCornerImageView
+        <org.monyhar.components.browser_ui.widget.RoundedCornerImageView
             android:id="@+id/infobar_footer_profile_pic"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"/>

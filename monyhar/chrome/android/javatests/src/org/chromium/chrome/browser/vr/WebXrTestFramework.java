@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr;
+package org.monyhar.chrome.browser.vr;
 
 import android.os.SystemClock;
 
 import org.junit.Assert;
 
-import org.chromium.base.Log;
-import org.chromium.chrome.test.ChromeActivityTestRule;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.test.util.DOMUtils;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.test.ChromeActivityTestRule;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.test.util.DOMUtils;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.util.concurrent.TimeoutException;
 

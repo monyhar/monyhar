@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omaha.metrics;
+package org.monyhar.chrome.browser.omaha.metrics;
 
 import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.argThat;
@@ -29,20 +29,20 @@ import org.mockito.junit.MockitoRule;
 import org.robolectric.Shadows;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.Promise;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.test.ShadowRecordHistogram;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.omaha.UpdateStatusProvider.UpdateInteractionSource;
-import org.chromium.chrome.browser.omaha.UpdateStatusProvider.UpdateState;
-import org.chromium.chrome.browser.omaha.UpdateStatusProvider.UpdateStatus;
-import org.chromium.chrome.browser.omaha.metrics.UpdateProtos.Tracking;
-import org.chromium.chrome.browser.omaha.metrics.UpdateProtos.Tracking.Source;
-import org.chromium.chrome.browser.omaha.metrics.UpdateProtos.Tracking.Type;
-import org.chromium.chrome.browser.omaha.metrics.UpdateSuccessMetrics.UpdateType;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.version_info.VersionConstants;
+import org.monyhar.base.Promise;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.test.ShadowRecordHistogram;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.omaha.UpdateStatusProvider.UpdateInteractionSource;
+import org.monyhar.chrome.browser.omaha.UpdateStatusProvider.UpdateState;
+import org.monyhar.chrome.browser.omaha.UpdateStatusProvider.UpdateStatus;
+import org.monyhar.chrome.browser.omaha.metrics.UpdateProtos.Tracking;
+import org.monyhar.chrome.browser.omaha.metrics.UpdateProtos.Tracking.Source;
+import org.monyhar.chrome.browser.omaha.metrics.UpdateProtos.Tracking.Type;
+import org.monyhar.chrome.browser.omaha.metrics.UpdateSuccessMetrics.UpdateType;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.version_info.VersionConstants;
 
 /** Tests the API surface of UpdateSuccessMetrics. */
 @RunWith(BaseRobolectricTestRunner.class)

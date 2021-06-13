@@ -80,7 +80,7 @@
           android:textAppearance="@style/TextAppearance.TextLarge.Secondary"
           android:text="@string/sharing_no_devices_available_text"/>
 
-      <org.chromium.ui.widget.ButtonCompat
+      <org.monyhar.ui.widget.ButtonCompat
           android:id="@+id/chrome_settings"
           android:layout_height="wrap_content"
           android:layout_width="wrap_content"

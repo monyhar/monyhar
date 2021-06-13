@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.firstrun;
+package org.monyhar.chrome.browser.firstrun;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,16 +11,16 @@ import android.os.UserManager;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.CommandLine;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.base.task.TaskTraits;
-import org.chromium.components.policy.AppRestrictionsProvider;
-import org.chromium.components.policy.PolicySwitches;
+import org.monyhar.base.Callback;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.base.task.TaskTraits;
+import org.monyhar.components.policy.AppRestrictionsProvider;
+import org.monyhar.components.policy.PolicySwitches;
 
 import java.util.LinkedList;
 import java.util.Locale;

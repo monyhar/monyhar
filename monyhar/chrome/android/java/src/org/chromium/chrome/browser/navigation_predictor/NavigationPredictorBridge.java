@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.navigation_predictor;
+package org.monyhar.chrome.browser.navigation_predictor;
 
-import org.chromium.base.annotations.NativeMethods;
+import org.monyhar.base.annotations.NativeMethods;
 
 /**
  * Exposes methods to report tabs moving to foreground/background.

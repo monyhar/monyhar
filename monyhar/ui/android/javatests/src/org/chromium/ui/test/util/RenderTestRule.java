@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.test.util;
+package org.monyhar.ui.test.util;
 
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
@@ -22,10 +22,10 @@ import org.junit.Assert;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.test.util.Feature;
-import org.chromium.ui.UiUtils;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.ui.UiUtils;
 
 import java.io.File;
 import java.io.FileOutputStream;

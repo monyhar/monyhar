@@ -221,7 +221,7 @@ void TabModelJniBridge::BroadcastSessionRestoreComplete(
 
 // static
 jclass TabModelJniBridge::GetClazz(JNIEnv* env) {
-  return org_chromium_chrome_browser_tabmodel_TabModelJniBridge_clazz(env);
+  return org_monyhar_chrome_browser_tabmodel_TabModelJniBridge_clazz(env);
 }
 
 TabModelJniBridge::~TabModelJniBridge() {

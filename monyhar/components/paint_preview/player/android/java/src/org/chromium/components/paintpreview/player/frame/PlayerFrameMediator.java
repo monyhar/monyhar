@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.paintpreview.player.frame;
+package org.monyhar.components.paintpreview.player.frame;
 
 import android.graphics.Matrix;
 import android.graphics.Rect;
@@ -11,14 +11,14 @@ import android.view.View;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.UnguessableToken;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.task.SequencedTaskRunner;
-import org.chromium.base.task.TaskTraits;
-import org.chromium.components.paintpreview.player.PlayerCompositorDelegate;
-import org.chromium.components.paintpreview.player.PlayerGestureListener;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.url.GURL;
+import org.monyhar.base.UnguessableToken;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.task.SequencedTaskRunner;
+import org.monyhar.base.task.TaskTraits;
+import org.monyhar.components.paintpreview.player.PlayerCompositorDelegate;
+import org.monyhar.components.paintpreview.player.PlayerGestureListener;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.List;

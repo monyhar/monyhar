@@ -74,13 +74,13 @@ various important responsibilities:
 ### Marshal
 
 * Ensure that all incoming queries to the
-  [security@chromium.org](https://groups.google.com/a/chromium.org/forum/#!forum/security)
+  [security@monyhar.org](https://groups.google.com/a/monyhar.org/forum/#!forum/security)
   and
   [chrome-security@google.com](https://groups.google.com/a/google.com/forum/#!forum/chrome-security)
   lists get a reply (by someone; not necessarily the marshal themselves). See
   [go/chrome-security-emails](https://goto.google.com/chrome-security-emails)
   for a dashboard.
-  * Note: external emails will always come in on security@chromium.org as
+  * Note: external emails will always come in on security@monyhar.org as
     chrome-security@google.com is a Google-only list, but both need to be
     triaged.
   * When triaging an email to be handled off of the list, make sure to bcc: the
@@ -96,7 +96,7 @@ various important responsibilities:
   Make sure to read bug comments where developer might point out that it needs
   more CLs, et c. Wait 24 hours before closing ClusterFuzz bugs, to give
   ClusterFuzz a chance to close it automatically.
-  * [Starting point](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=Type%3D%22Bug-Security%22+%22Change-Id:%22)
+  * [Starting point](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=Type%3D%22Bug-Security%22+%22Change-Id:%22)
 * Look at the open security bug reports and check that progress is occurring.
   This does not apply to the **new bug reports** (these are handled by the
   sheriff), but does apply to the issues on the *Low Severity Bugs* page of the
@@ -159,7 +159,7 @@ i like that.")
 * **If the report doesn't have enough information**, ask the reporter for more
   information, add the **Needs-Feedback** label and wait for 24 hours for a
   response.
-* The [security bug template](https://bugs.chromium.org/p/chromium/issues/entry?template=Security+Bug)
+* The [security bug template](https://bugs.monyhar.org/p/monyhar/issues/entry?template=Security+Bug)
   asks reporters to **attach files directly**, not in zip or other archives, and
   not hosted at an external resource (e.g. Google Cloud Storage). If the report
   mentions an online demo hosted somewhere, make sure the reporters attach the
@@ -202,10 +202,10 @@ help.
 * **V8 non-ClusterFuzz bugs** shouldn't be assigned to the V8 ClusterFuzz sheriff.
   Instead, Googlers should refer to [the V8 security bug triage instructions](http://go/v8-security-issue-triage-how-to)
   for lists of component owners.
-* **Skia bugs** can be assigned to hcm@chromium.org. Be careful while triaging
+* **Skia bugs** can be assigned to hcm@monyhar.org. Be careful while triaging
   these! The place where we're crashing isn't necessarily the place where the
   bug was introduced, so blame may be misleading. Skia fuzzing bugs can be
-  assigned to kjlubick@chromium.org, as Skia is heavily fuzzed on OSS-Fuzz and
+  assigned to kjlubick@monyhar.org, as Skia is heavily fuzzed on OSS-Fuzz and
   some issues reported in Chromium are already known or even fixed upstream.
 * **URL spoofing issues**, especially related to RTL or IDNs? See
   [go/url-spoofs](http://go/url-spoofs) for a guide to triaging these.
@@ -224,17 +224,17 @@ Tips for reproducing bugs:
   inside Google, a good way to do this is using
   [Redshell](https://goto.google.com/redshell-for-chrome-sheriffs).
 * When you can't just build from a specific branch locally, check out
-  [https://dev.chromium.org/getting-involved/dev-channel](https://dev.chromium.org/getting-involved/dev-channel)
+  [https://dev.monyhar.org/getting-involved/dev-channel](https://dev.monyhar.org/getting-involved/dev-channel)
   or
-  [https://commondatastorage.googleapis.com/chromium-browser-asan/index.html](https://commondatastorage.googleapis.com/chromium-browser-asan/index.html)
+  [https://commondatastorage.googleapis.com/monyhar-browser-asan/index.html](https://commondatastorage.googleapis.com/monyhar-browser-asan/index.html)
   for the latest release of a specific version.
 * There are many tools available to help you reproduce various memory issues
   reliably. If you aren't already familiar with them, check out
-  [AddressSanitizer](https://www.chromium.org/developers/testing/addresssanitizer),
-  [MemorySanitizer](https://www.chromium.org/developers/testing/memorysanitizer),
-  [ThreadSanitizer](https://www.chromium.org/developers/testing/threadsanitizer-tsan-v2),
+  [AddressSanitizer](https://www.monyhar.org/developers/testing/addresssanitizer),
+  [MemorySanitizer](https://www.monyhar.org/developers/testing/memorysanitizer),
+  [ThreadSanitizer](https://www.monyhar.org/developers/testing/threadsanitizer-tsan-v2),
   and
-  [UndefinedBehaviorSanitizer](https://www.chromium.org/developers/testing/undefinedbehaviorsanitizer).
+  [UndefinedBehaviorSanitizer](https://www.monyhar.org/developers/testing/undefinedbehaviorsanitizer).
 * If you run into issues with a reproducible ClusterFuzz test case (like
   missing symbols, or if anything else seems off), try uploading the test case
   again using a different job type with a more mature tool (e.g. ASan on Linux).
@@ -276,7 +276,7 @@ milestone is 66 and you've confirmed it's reproducible on M66).
 If you reproduced the bug with ClusterFuzz, it should do this on your behalf.
 
 If in doubt about the currently active milestones, check
-[ChromiumDash](https://chromiumdash.appspot.com/releases?platform=Windows).
+[ChromiumDash](https://monyhardash.appspot.com/releases?platform=Windows).
 There's no need to check for reproducibility on milestones earlier than the
 current Stable milestone.
 
@@ -405,11 +405,11 @@ instructions](https://docs.google.com/document/d/17JeYt3c1GgghYoxy4NKJnlxrteAX8F
   security severity and risk associated with the bug fix; you can ask the patch
   author whether any risky code paths are affected. The actual merging and
   drafting of release notes is taken care of by the [security release management
-  role](https://www.chromium.org/Home/chromium-security/security-release-management).
+  role](https://www.monyhar.org/Home/monyhar-security/security-release-management).
 1. Chrome's [Vulnerability Rewards
   Program](https://www.google.com/about/appsecurity/chrome-rewards/index.html)
   TPM adds the **reward-topanel** label by mass modification, but **do** label
-  any bugs reported by a @chromium.org email that should be rewarded (e.g. "I'm
+  any bugs reported by a @monyhar.org email that should be rewarded (e.g. "I'm
   filing this on behalf of" or the like).
 
 ## End Of Rotation

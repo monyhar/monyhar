@@ -725,7 +725,7 @@ void AppCacheUpdateJob::HandleResourceFetchCompleted(URLFetcher* url_fetcher,
       duplicate_response_ids_.push_back(entry.response_id());
 
     // TODO(michaeln): Check for <html manifest=xxx>
-    // See http://code.google.com/p/chromium/issues/detail?id=97930
+    // See http://code.google.com/p/monyhar/issues/detail?id=97930
     // if (entry.IsMaster() && !(entry.IsExplicit() || fallback || intercept))
     //   if (!manifestAttribute) skip it
 

@@ -15,8 +15,8 @@ PASS http://a is a correct valid url.
 PASS http://www.google.com/search?rls=en&q=WebKit&ie=UTF-8&oe=UTF-8 is a correct valid url.
 PASS ftp://ftp.myhost.com is a correct valid url.
 PASS ssh://ssh.myhost.com is a correct valid url.
-PASS mailto:tkent@chromium.org is a correct valid url.
-PASS mailto:tkent@chromium.org?body=hello is a correct valid url.
+PASS mailto:tkent@monyhar.org is a correct valid url.
+PASS mailto:tkent@monyhar.org?body=hello is a correct valid url.
 PASS file:///Users/tkent/.zshrc is a correct valid url.
 PASS file:///C:/human.sys is a correct valid url.
 PASS tel:+1-800-12345;ext=9999 is a correct valid url.

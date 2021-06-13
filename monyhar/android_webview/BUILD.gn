@@ -270,7 +270,7 @@ if (android_64bit_target_cpu) {
 }
 
 # The shared library used by standalone WebView.
-template("libwebviewchromium_tmpl") {
+template("libwebviewmonyhar_tmpl") {
   shared_library(target_name) {
     forward_variables_from(invoker, "*")
     deps = [
@@ -287,7 +287,7 @@ template("libwebviewchromium_tmpl") {
   }
 }
 
-libwebviewchromium_tmpl("libwebviewchromium") {
+libwebviewmonyhar_tmpl("libwebviewmonyhar") {
 }
 
 # This template is used to define WebView's alternate-ABI libraries, which are
@@ -370,51 +370,51 @@ group("empty_group") {
 
 generate_jni("common_jni_headers") {
   sources = [
-    "java/src/org/chromium/android_webview/common/AwResource.java",
-    "java/src/org/chromium/android_webview/common/crash/AwCrashReporterClient.java",
+    "java/src/org/monyhar/android_webview/common/AwResource.java",
+    "java/src/org/monyhar/android_webview/common/crash/AwCrashReporterClient.java",
   ]
 }
 
 generate_jni("browser_jni_headers") {
   sources = [
-    "java/src/org/chromium/android_webview/AndroidProtocolHandler.java",
-    "java/src/org/chromium/android_webview/AwAutofillClient.java",
-    "java/src/org/chromium/android_webview/AwBrowserContext.java",
-    "java/src/org/chromium/android_webview/AwBrowserProcess.java",
-    "java/src/org/chromium/android_webview/AwContents.java",
-    "java/src/org/chromium/android_webview/AwContentsBackgroundThreadClient.java",
-    "java/src/org/chromium/android_webview/AwContentsClientBridge.java",
-    "java/src/org/chromium/android_webview/AwContentsIoThreadClient.java",
-    "java/src/org/chromium/android_webview/AwContentsLifecycleNotifier.java",
-    "java/src/org/chromium/android_webview/AwContentsStatics.java",
-    "java/src/org/chromium/android_webview/AwCookieManager.java",
-    "java/src/org/chromium/android_webview/AwDebug.java",
-    "java/src/org/chromium/android_webview/AwDevToolsServer.java",
-    "java/src/org/chromium/android_webview/AwFeatureList.java",
-    "java/src/org/chromium/android_webview/AwFormDatabase.java",
-    "java/src/org/chromium/android_webview/AwHttpAuthHandler.java",
-    "java/src/org/chromium/android_webview/AwPacProcessor.java",
-    "java/src/org/chromium/android_webview/AwPdfExporter.java",
-    "java/src/org/chromium/android_webview/AwProxyController.java",
-    "java/src/org/chromium/android_webview/AwQuotaManagerBridge.java",
-    "java/src/org/chromium/android_webview/AwRenderProcess.java",
-    "java/src/org/chromium/android_webview/AwSettings.java",
-    "java/src/org/chromium/android_webview/AwTracingController.java",
-    "java/src/org/chromium/android_webview/AwWebContentsDelegate.java",
-    "java/src/org/chromium/android_webview/AwWebResourceInterceptResponse.java",
-    "java/src/org/chromium/android_webview/JsReplyProxy.java",
-    "java/src/org/chromium/android_webview/PopupTouchHandleDrawable.java",
-    "java/src/org/chromium/android_webview/WebMessageListenerHolder.java",
-    "java/src/org/chromium/android_webview/WebMessageListenerInfo.java",
-    "java/src/org/chromium/android_webview/gfx/AwDrawFnImpl.java",
-    "java/src/org/chromium/android_webview/gfx/AwGLFunctor.java",
-    "java/src/org/chromium/android_webview/gfx/AwPicture.java",
-    "java/src/org/chromium/android_webview/gfx/JavaBrowserViewRendererHelper.java",
-    "java/src/org/chromium/android_webview/gfx/RootBeginFrameSourceWebView.java",
-    "java/src/org/chromium/android_webview/metrics/AwMetricsServiceClient.java",
-    "java/src/org/chromium/android_webview/permission/AwPermissionRequest.java",
-    "java/src/org/chromium/android_webview/safe_browsing/AwSafeBrowsingConfigHelper.java",
-    "java/src/org/chromium/android_webview/variations/VariationsSeedLoader.java",
+    "java/src/org/monyhar/android_webview/AndroidProtocolHandler.java",
+    "java/src/org/monyhar/android_webview/AwAutofillClient.java",
+    "java/src/org/monyhar/android_webview/AwBrowserContext.java",
+    "java/src/org/monyhar/android_webview/AwBrowserProcess.java",
+    "java/src/org/monyhar/android_webview/AwContents.java",
+    "java/src/org/monyhar/android_webview/AwContentsBackgroundThreadClient.java",
+    "java/src/org/monyhar/android_webview/AwContentsClientBridge.java",
+    "java/src/org/monyhar/android_webview/AwContentsIoThreadClient.java",
+    "java/src/org/monyhar/android_webview/AwContentsLifecycleNotifier.java",
+    "java/src/org/monyhar/android_webview/AwContentsStatics.java",
+    "java/src/org/monyhar/android_webview/AwCookieManager.java",
+    "java/src/org/monyhar/android_webview/AwDebug.java",
+    "java/src/org/monyhar/android_webview/AwDevToolsServer.java",
+    "java/src/org/monyhar/android_webview/AwFeatureList.java",
+    "java/src/org/monyhar/android_webview/AwFormDatabase.java",
+    "java/src/org/monyhar/android_webview/AwHttpAuthHandler.java",
+    "java/src/org/monyhar/android_webview/AwPacProcessor.java",
+    "java/src/org/monyhar/android_webview/AwPdfExporter.java",
+    "java/src/org/monyhar/android_webview/AwProxyController.java",
+    "java/src/org/monyhar/android_webview/AwQuotaManagerBridge.java",
+    "java/src/org/monyhar/android_webview/AwRenderProcess.java",
+    "java/src/org/monyhar/android_webview/AwSettings.java",
+    "java/src/org/monyhar/android_webview/AwTracingController.java",
+    "java/src/org/monyhar/android_webview/AwWebContentsDelegate.java",
+    "java/src/org/monyhar/android_webview/AwWebResourceInterceptResponse.java",
+    "java/src/org/monyhar/android_webview/JsReplyProxy.java",
+    "java/src/org/monyhar/android_webview/PopupTouchHandleDrawable.java",
+    "java/src/org/monyhar/android_webview/WebMessageListenerHolder.java",
+    "java/src/org/monyhar/android_webview/WebMessageListenerInfo.java",
+    "java/src/org/monyhar/android_webview/gfx/AwDrawFnImpl.java",
+    "java/src/org/monyhar/android_webview/gfx/AwGLFunctor.java",
+    "java/src/org/monyhar/android_webview/gfx/AwPicture.java",
+    "java/src/org/monyhar/android_webview/gfx/JavaBrowserViewRendererHelper.java",
+    "java/src/org/monyhar/android_webview/gfx/RootBeginFrameSourceWebView.java",
+    "java/src/org/monyhar/android_webview/metrics/AwMetricsServiceClient.java",
+    "java/src/org/monyhar/android_webview/permission/AwPermissionRequest.java",
+    "java/src/org/monyhar/android_webview/safe_browsing/AwSafeBrowsingConfigHelper.java",
+    "java/src/org/monyhar/android_webview/variations/VariationsSeedLoader.java",
   ]
 
   deps = [ ":cancellation_signal_android_jar_jni_headers" ]
@@ -426,96 +426,96 @@ generate_jar_jni("cancellation_signal_android_jar_jni_headers") {
 
 android_library("browser_java") {
   sources = [
-    "java/src/org/chromium/android_webview/AndroidProtocolHandler.java",
-    "java/src/org/chromium/android_webview/AwActionModeCallback.java",
-    "java/src/org/chromium/android_webview/AwAutofillClient.java",
-    "java/src/org/chromium/android_webview/AwBrowserContext.java",
-    "java/src/org/chromium/android_webview/AwBrowserProcess.java",
-    "java/src/org/chromium/android_webview/AwConsoleMessage.java",
-    "java/src/org/chromium/android_webview/AwContents.java",
-    "java/src/org/chromium/android_webview/AwContentsBackgroundThreadClient.java",
-    "java/src/org/chromium/android_webview/AwContentsClient.java",
-    "java/src/org/chromium/android_webview/AwContentsClientBridge.java",
-    "java/src/org/chromium/android_webview/AwContentsClientCallbackHelper.java",
-    "java/src/org/chromium/android_webview/AwContentsIoThreadClient.java",
-    "java/src/org/chromium/android_webview/AwContentsLifecycleNotifier.java",
-    "java/src/org/chromium/android_webview/AwContentsStatics.java",
-    "java/src/org/chromium/android_webview/AwCookieManager.java",
-    "java/src/org/chromium/android_webview/AwDataDirLock.java",
-    "java/src/org/chromium/android_webview/AwDebug.java",
-    "java/src/org/chromium/android_webview/AwDevToolsServer.java",
-    "java/src/org/chromium/android_webview/AwDisplayCutoutController.java",
-    "java/src/org/chromium/android_webview/AwDisplayModeController.java",
-    "java/src/org/chromium/android_webview/AwFeatureList.java",
-    "java/src/org/chromium/android_webview/AwFormDatabase.java",
-    "java/src/org/chromium/android_webview/AwGeolocationPermissions.java",
-    "java/src/org/chromium/android_webview/AwHistogramRecorder.java",
-    "java/src/org/chromium/android_webview/AwHttpAuthHandler.java",
-    "java/src/org/chromium/android_webview/AwLayoutSizer.java",
-    "java/src/org/chromium/android_webview/AwNetworkChangeNotifierRegistrationPolicy.java",
-    "java/src/org/chromium/android_webview/AwPacProcessor.java",
-    "java/src/org/chromium/android_webview/AwPdfExporter.java",
-    "java/src/org/chromium/android_webview/AwPrintDocumentAdapter.java",
-    "java/src/org/chromium/android_webview/AwProxyController.java",
-    "java/src/org/chromium/android_webview/AwQuotaManagerBridge.java",
-    "java/src/org/chromium/android_webview/AwRenderProcess.java",
-    "java/src/org/chromium/android_webview/AwRenderProcessGoneDetail.java",
-    "java/src/org/chromium/android_webview/AwScrollOffsetManager.java",
-    "java/src/org/chromium/android_webview/AwServiceWorkerClient.java",
-    "java/src/org/chromium/android_webview/AwServiceWorkerController.java",
-    "java/src/org/chromium/android_webview/AwServiceWorkerSettings.java",
-    "java/src/org/chromium/android_webview/AwSettings.java",
-    "java/src/org/chromium/android_webview/AwSupportLibIsomorphic.java",
-    "java/src/org/chromium/android_webview/AwThreadUtils.java",
-    "java/src/org/chromium/android_webview/AwTracingController.java",
-    "java/src/org/chromium/android_webview/AwViewAndroidDelegate.java",
-    "java/src/org/chromium/android_webview/AwViewMethods.java",
-    "java/src/org/chromium/android_webview/AwWebContentsDelegate.java",
-    "java/src/org/chromium/android_webview/AwWebContentsDelegateAdapter.java",
-    "java/src/org/chromium/android_webview/AwWebContentsObserver.java",
-    "java/src/org/chromium/android_webview/AwWebResourceInterceptResponse.java",
-    "java/src/org/chromium/android_webview/AwZoomControls.java",
-    "java/src/org/chromium/android_webview/BrowserSafeModeActionList.java",
-    "java/src/org/chromium/android_webview/CleanupReference.java",
-    "java/src/org/chromium/android_webview/ClientCertLookupTable.java",
-    "java/src/org/chromium/android_webview/DefaultVideoPosterRequestHandler.java",
-    "java/src/org/chromium/android_webview/ErrorCodeConversionHelper.java",
-    "java/src/org/chromium/android_webview/FindAddress.java",
-    "java/src/org/chromium/android_webview/FullScreenView.java",
-    "java/src/org/chromium/android_webview/HttpAuthDatabase.java",
-    "java/src/org/chromium/android_webview/JsPromptResultReceiver.java",
-    "java/src/org/chromium/android_webview/JsReplyProxy.java",
-    "java/src/org/chromium/android_webview/JsResultHandler.java",
-    "java/src/org/chromium/android_webview/JsResultReceiver.java",
-    "java/src/org/chromium/android_webview/NullAwViewMethods.java",
-    "java/src/org/chromium/android_webview/OverScrollGlow.java",
-    "java/src/org/chromium/android_webview/PopupTouchHandleDrawable.java",
-    "java/src/org/chromium/android_webview/ScriptHandler.java",
-    "java/src/org/chromium/android_webview/ScrollAccessibilityHelper.java",
-    "java/src/org/chromium/android_webview/SslUtil.java",
-    "java/src/org/chromium/android_webview/ViewPositionObserver.java",
-    "java/src/org/chromium/android_webview/WebMessageListener.java",
-    "java/src/org/chromium/android_webview/WebMessageListenerHolder.java",
-    "java/src/org/chromium/android_webview/WebMessageListenerInfo.java",
-    "java/src/org/chromium/android_webview/WebViewChromiumRunQueue.java",
-    "java/src/org/chromium/android_webview/WebviewErrorCode.java",
-    "java/src/org/chromium/android_webview/gfx/AwDrawFnImpl.java",
-    "java/src/org/chromium/android_webview/gfx/AwFunctor.java",
-    "java/src/org/chromium/android_webview/gfx/AwGLFunctor.java",
-    "java/src/org/chromium/android_webview/gfx/AwPicture.java",
-    "java/src/org/chromium/android_webview/gfx/JavaBrowserViewRendererHelper.java",
-    "java/src/org/chromium/android_webview/gfx/RectUtils.java",
-    "java/src/org/chromium/android_webview/gfx/RootBeginFrameSourceWebView.java",
-    "java/src/org/chromium/android_webview/metrics/AwMetricsServiceClient.java",
-    "java/src/org/chromium/android_webview/metrics/AwNonembeddedUmaReplayer.java",
-    "java/src/org/chromium/android_webview/permission/AwGeolocationCallback.java",
-    "java/src/org/chromium/android_webview/permission/AwPermissionRequest.java",
-    "java/src/org/chromium/android_webview/policy/AwPolicyProvider.java",
-    "java/src/org/chromium/android_webview/safe_browsing/AwSafeBrowsingConfigHelper.java",
-    "java/src/org/chromium/android_webview/safe_browsing/AwSafeBrowsingConversionHelper.java",
-    "java/src/org/chromium/android_webview/safe_browsing/AwSafeBrowsingResponse.java",
-    "java/src/org/chromium/android_webview/variations/VariationsSeedLoader.java",
-    "java/src/org/chromium/android_webview/variations/VariationsSeedSafeModeAction.java",
+    "java/src/org/monyhar/android_webview/AndroidProtocolHandler.java",
+    "java/src/org/monyhar/android_webview/AwActionModeCallback.java",
+    "java/src/org/monyhar/android_webview/AwAutofillClient.java",
+    "java/src/org/monyhar/android_webview/AwBrowserContext.java",
+    "java/src/org/monyhar/android_webview/AwBrowserProcess.java",
+    "java/src/org/monyhar/android_webview/AwConsoleMessage.java",
+    "java/src/org/monyhar/android_webview/AwContents.java",
+    "java/src/org/monyhar/android_webview/AwContentsBackgroundThreadClient.java",
+    "java/src/org/monyhar/android_webview/AwContentsClient.java",
+    "java/src/org/monyhar/android_webview/AwContentsClientBridge.java",
+    "java/src/org/monyhar/android_webview/AwContentsClientCallbackHelper.java",
+    "java/src/org/monyhar/android_webview/AwContentsIoThreadClient.java",
+    "java/src/org/monyhar/android_webview/AwContentsLifecycleNotifier.java",
+    "java/src/org/monyhar/android_webview/AwContentsStatics.java",
+    "java/src/org/monyhar/android_webview/AwCookieManager.java",
+    "java/src/org/monyhar/android_webview/AwDataDirLock.java",
+    "java/src/org/monyhar/android_webview/AwDebug.java",
+    "java/src/org/monyhar/android_webview/AwDevToolsServer.java",
+    "java/src/org/monyhar/android_webview/AwDisplayCutoutController.java",
+    "java/src/org/monyhar/android_webview/AwDisplayModeController.java",
+    "java/src/org/monyhar/android_webview/AwFeatureList.java",
+    "java/src/org/monyhar/android_webview/AwFormDatabase.java",
+    "java/src/org/monyhar/android_webview/AwGeolocationPermissions.java",
+    "java/src/org/monyhar/android_webview/AwHistogramRecorder.java",
+    "java/src/org/monyhar/android_webview/AwHttpAuthHandler.java",
+    "java/src/org/monyhar/android_webview/AwLayoutSizer.java",
+    "java/src/org/monyhar/android_webview/AwNetworkChangeNotifierRegistrationPolicy.java",
+    "java/src/org/monyhar/android_webview/AwPacProcessor.java",
+    "java/src/org/monyhar/android_webview/AwPdfExporter.java",
+    "java/src/org/monyhar/android_webview/AwPrintDocumentAdapter.java",
+    "java/src/org/monyhar/android_webview/AwProxyController.java",
+    "java/src/org/monyhar/android_webview/AwQuotaManagerBridge.java",
+    "java/src/org/monyhar/android_webview/AwRenderProcess.java",
+    "java/src/org/monyhar/android_webview/AwRenderProcessGoneDetail.java",
+    "java/src/org/monyhar/android_webview/AwScrollOffsetManager.java",
+    "java/src/org/monyhar/android_webview/AwServiceWorkerClient.java",
+    "java/src/org/monyhar/android_webview/AwServiceWorkerController.java",
+    "java/src/org/monyhar/android_webview/AwServiceWorkerSettings.java",
+    "java/src/org/monyhar/android_webview/AwSettings.java",
+    "java/src/org/monyhar/android_webview/AwSupportLibIsomorphic.java",
+    "java/src/org/monyhar/android_webview/AwThreadUtils.java",
+    "java/src/org/monyhar/android_webview/AwTracingController.java",
+    "java/src/org/monyhar/android_webview/AwViewAndroidDelegate.java",
+    "java/src/org/monyhar/android_webview/AwViewMethods.java",
+    "java/src/org/monyhar/android_webview/AwWebContentsDelegate.java",
+    "java/src/org/monyhar/android_webview/AwWebContentsDelegateAdapter.java",
+    "java/src/org/monyhar/android_webview/AwWebContentsObserver.java",
+    "java/src/org/monyhar/android_webview/AwWebResourceInterceptResponse.java",
+    "java/src/org/monyhar/android_webview/AwZoomControls.java",
+    "java/src/org/monyhar/android_webview/BrowserSafeModeActionList.java",
+    "java/src/org/monyhar/android_webview/CleanupReference.java",
+    "java/src/org/monyhar/android_webview/ClientCertLookupTable.java",
+    "java/src/org/monyhar/android_webview/DefaultVideoPosterRequestHandler.java",
+    "java/src/org/monyhar/android_webview/ErrorCodeConversionHelper.java",
+    "java/src/org/monyhar/android_webview/FindAddress.java",
+    "java/src/org/monyhar/android_webview/FullScreenView.java",
+    "java/src/org/monyhar/android_webview/HttpAuthDatabase.java",
+    "java/src/org/monyhar/android_webview/JsPromptResultReceiver.java",
+    "java/src/org/monyhar/android_webview/JsReplyProxy.java",
+    "java/src/org/monyhar/android_webview/JsResultHandler.java",
+    "java/src/org/monyhar/android_webview/JsResultReceiver.java",
+    "java/src/org/monyhar/android_webview/NullAwViewMethods.java",
+    "java/src/org/monyhar/android_webview/OverScrollGlow.java",
+    "java/src/org/monyhar/android_webview/PopupTouchHandleDrawable.java",
+    "java/src/org/monyhar/android_webview/ScriptHandler.java",
+    "java/src/org/monyhar/android_webview/ScrollAccessibilityHelper.java",
+    "java/src/org/monyhar/android_webview/SslUtil.java",
+    "java/src/org/monyhar/android_webview/ViewPositionObserver.java",
+    "java/src/org/monyhar/android_webview/WebMessageListener.java",
+    "java/src/org/monyhar/android_webview/WebMessageListenerHolder.java",
+    "java/src/org/monyhar/android_webview/WebMessageListenerInfo.java",
+    "java/src/org/monyhar/android_webview/WebViewChromiumRunQueue.java",
+    "java/src/org/monyhar/android_webview/WebviewErrorCode.java",
+    "java/src/org/monyhar/android_webview/gfx/AwDrawFnImpl.java",
+    "java/src/org/monyhar/android_webview/gfx/AwFunctor.java",
+    "java/src/org/monyhar/android_webview/gfx/AwGLFunctor.java",
+    "java/src/org/monyhar/android_webview/gfx/AwPicture.java",
+    "java/src/org/monyhar/android_webview/gfx/JavaBrowserViewRendererHelper.java",
+    "java/src/org/monyhar/android_webview/gfx/RectUtils.java",
+    "java/src/org/monyhar/android_webview/gfx/RootBeginFrameSourceWebView.java",
+    "java/src/org/monyhar/android_webview/metrics/AwMetricsServiceClient.java",
+    "java/src/org/monyhar/android_webview/metrics/AwNonembeddedUmaReplayer.java",
+    "java/src/org/monyhar/android_webview/permission/AwGeolocationCallback.java",
+    "java/src/org/monyhar/android_webview/permission/AwPermissionRequest.java",
+    "java/src/org/monyhar/android_webview/policy/AwPolicyProvider.java",
+    "java/src/org/monyhar/android_webview/safe_browsing/AwSafeBrowsingConfigHelper.java",
+    "java/src/org/monyhar/android_webview/safe_browsing/AwSafeBrowsingConversionHelper.java",
+    "java/src/org/monyhar/android_webview/safe_browsing/AwSafeBrowsingResponse.java",
+    "java/src/org/monyhar/android_webview/variations/VariationsSeedLoader.java",
+    "java/src/org/monyhar/android_webview/variations/VariationsSeedSafeModeAction.java",
   ]
   deps = [
     ":common_aidl_java",
@@ -573,13 +573,13 @@ android_library("browser_java") {
     "//components/safe_browsing/core/db:sb_threat_values",
   ]
 
-  resources_package = "org.chromium.android_webview"
+  resources_package = "org.monyhar.android_webview"
 }
 
 android_library("common_variations_java") {
   sources = [
-    "java/src/org/chromium/android_webview/common/variations/VariationsServiceMetricsHelper.java",
-    "java/src/org/chromium/android_webview/common/variations/VariationsUtils.java",
+    "java/src/org/monyhar/android_webview/common/variations/VariationsServiceMetricsHelper.java",
+    "java/src/org/monyhar/android_webview/common/variations/VariationsUtils.java",
   ]
   deps = [
     "//android_webview/proto:aw_variations_seed_proto_java",
@@ -595,8 +595,8 @@ android_library("common_variations_java") {
 # compiled separately.
 android_library("common_platform_services_java") {
   sources = [
-    "java/src/org/chromium/android_webview/common/PlatformServiceBridge.java",
-    "java/src/org/chromium/android_webview/common/PlatformServiceBridgeImpl.java",
+    "java/src/org/monyhar/android_webview/common/PlatformServiceBridge.java",
+    "java/src/org/monyhar/android_webview/common/PlatformServiceBridgeImpl.java",
   ]
 
   deps = [
@@ -614,16 +614,16 @@ android_library("common_platform_services_java") {
 
 # This target compiles the implementation of PlatformServiceBridge for AOSP targets.
 android_library("platform_service_bridge_upstream_implementation_java") {
-  sources = [ "java/src/org/chromium/android_webview/common/PlatformServiceBridgeImpl.java" ]
+  sources = [ "java/src/org/monyhar/android_webview/common/PlatformServiceBridgeImpl.java" ]
   deps = [ ":common_platform_services_java" ]
 }
 
 android_library("common_crash_java") {
   sources = [
-    "java/src/org/chromium/android_webview/common/crash/AwCrashReporterClient.java",
-    "java/src/org/chromium/android_webview/common/crash/CrashInfo.java",
-    "java/src/org/chromium/android_webview/common/crash/CrashUploadUtil.java",
-    "java/src/org/chromium/android_webview/common/crash/SystemWideCrashDirectories.java",
+    "java/src/org/monyhar/android_webview/common/crash/AwCrashReporterClient.java",
+    "java/src/org/monyhar/android_webview/common/crash/CrashInfo.java",
+    "java/src/org/monyhar/android_webview/common/crash/CrashUploadUtil.java",
+    "java/src/org/monyhar/android_webview/common/crash/SystemWideCrashDirectories.java",
   ]
 
   deps = [
@@ -640,27 +640,27 @@ java_cpp_strings("common_java_switches_srcjar") {
   # External code should depend on "common_java" instead.
   visibility = [ ":*" ]
   sources = [ "common/aw_switches.cc" ]
-  template = "java/src/org/chromium/android_webview/common/AwSwitches.java.tmpl"
+  template = "java/src/org/monyhar/android_webview/common/AwSwitches.java.tmpl"
 }
 
 java_cpp_features("common_java_features_srcjar") {
   # External code should depend on "common_java" instead.
   visibility = [ ":*" ]
   sources = [ "common/aw_features.cc" ]
-  template = "java/src/org/chromium/android_webview/common/AwFeatures.java.tmpl"
+  template = "java/src/org/monyhar/android_webview/common/AwFeatures.java.tmpl"
 }
 
 android_library("common_java") {
   sources = [
-    "java/src/org/chromium/android_webview/common/AwResource.java",
-    "java/src/org/chromium/android_webview/common/CommandLineUtil.java",
-    "java/src/org/chromium/android_webview/common/DeveloperModeUtils.java",
-    "java/src/org/chromium/android_webview/common/Flag.java",
-    "java/src/org/chromium/android_webview/common/FlagOverrideHelper.java",
-    "java/src/org/chromium/android_webview/common/ProductionSupportedFlagList.java",
-    "java/src/org/chromium/android_webview/common/SafeModeAction.java",
-    "java/src/org/chromium/android_webview/common/SafeModeController.java",
-    "java/src/org/chromium/android_webview/common/services/ServiceNames.java",
+    "java/src/org/monyhar/android_webview/common/AwResource.java",
+    "java/src/org/monyhar/android_webview/common/CommandLineUtil.java",
+    "java/src/org/monyhar/android_webview/common/DeveloperModeUtils.java",
+    "java/src/org/monyhar/android_webview/common/Flag.java",
+    "java/src/org/monyhar/android_webview/common/FlagOverrideHelper.java",
+    "java/src/org/monyhar/android_webview/common/ProductionSupportedFlagList.java",
+    "java/src/org/monyhar/android_webview/common/SafeModeAction.java",
+    "java/src/org/monyhar/android_webview/common/SafeModeController.java",
+    "java/src/org/monyhar/android_webview/common/services/ServiceNames.java",
   ]
   deps = [
     "//base:base_java",
@@ -682,12 +682,12 @@ android_library("common_java") {
 android_aidl("common_aidl") {
   import_include = [ "java/src" ]
   sources = [
-    "java/src/org/chromium/android_webview/common/services/ICrashReceiverService.aidl",
-    "java/src/org/chromium/android_webview/common/services/IDeveloperUiService.aidl",
-    "java/src/org/chromium/android_webview/common/services/IMetricsBridgeService.aidl",
-    "java/src/org/chromium/android_webview/common/services/ISafeModeService.aidl",
-    "java/src/org/chromium/android_webview/common/services/IVariationsSeedServer.aidl",
-    "java/src/org/chromium/android_webview/common/services/IVariationsSeedServerCallback.aidl",
+    "java/src/org/monyhar/android_webview/common/services/ICrashReceiverService.aidl",
+    "java/src/org/monyhar/android_webview/common/services/IDeveloperUiService.aidl",
+    "java/src/org/monyhar/android_webview/common/services/IMetricsBridgeService.aidl",
+    "java/src/org/monyhar/android_webview/common/services/ISafeModeService.aidl",
+    "java/src/org/monyhar/android_webview/common/services/IVariationsSeedServer.aidl",
+    "java/src/org/monyhar/android_webview/common/services/IVariationsSeedServerCallback.aidl",
   ]
 }
 
@@ -706,13 +706,13 @@ generate_product_config_srcjar("webview_product_config") {
 # level - with the list of pak locales populated by looking at the assets that
 # are listed in the final APK's .build_config.
 android_library("android_webview_product_config_java") {
-  sources = [ "java/src/org/chromium/android_webview/AwLocaleConfig.java" ]
+  sources = [ "java/src/org/monyhar/android_webview/AwLocaleConfig.java" ]
   srcjar_deps = [ ":webview_product_config" ]
   jar_excluded_patterns = [ "*/ProductConfig.class" ]
 }
 
 if (enable_resource_allowlist_generation) {
-  libwebviewchromium_tmpl("system_webview_pak_allowlist_inputs") {
+  libwebviewmonyhar_tmpl("system_webview_pak_allowlist_inputs") {
     ldflags = [ "--collect-inputs-only" ]
   }
   generate_resource_allowlist("system_webview_pak_allowlist") {

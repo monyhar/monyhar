@@ -24,7 +24,7 @@ js_library("prefs") {
   deps = [
     ":pref_util",
     ":prefs_types",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   externs_list = [ "$externs_path/settings_private.js" ]
   extra_sources = [ "$interfaces_path/settings_private_interface.js" ]

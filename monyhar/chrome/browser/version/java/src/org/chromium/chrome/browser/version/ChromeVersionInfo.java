@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.version;
+package org.monyhar.chrome.browser.version;
 
-import org.chromium.components.version_info.Channel;
+import org.monyhar.components.version_info.Channel;
 
 /**
  * A utility class for querying information about the current Chrome build.

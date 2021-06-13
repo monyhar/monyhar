@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.picker;
+package org.monyhar.content.browser.picker;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -25,7 +25,7 @@ import android.widget.TimePicker.OnTimeChangedListener;
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.content.R;
+import org.monyhar.content.R;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;

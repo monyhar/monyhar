@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
-import static org.chromium.chrome.test.util.ViewUtils.createMotionEvent;
+import static org.monyhar.chrome.test.util.ViewUtils.createMotionEvent;
 
 import android.support.test.InstrumentationRegistry;
 import android.view.View;
@@ -17,31 +17,31 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.task.PostTask;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.FlakyTest;
-import org.chromium.base.test.util.Restriction;
-import org.chromium.base.test.util.UrlUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.compositor.layouts.LayoutManagerImpl;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.ChromeTabUtils;
-import org.chromium.chrome.test.util.OverviewModeBehaviorWatcher;
-import org.chromium.components.browser_ui.widget.gesture.SwipeGestureListener.ScrollDirection;
-import org.chromium.components.browser_ui.widget.gesture.SwipeGestureListener.SwipeHandler;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.content_public.browser.ViewEventSink;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.WebContentsObserver;
-import org.chromium.content_public.browser.test.util.TestTouchUtils;
-import org.chromium.content_public.browser.test.util.TouchCommon;
-import org.chromium.content_public.browser.test.util.WebContentsUtils;
-import org.chromium.ui.test.util.UiRestriction;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.FlakyTest;
+import org.monyhar.base.test.util.Restriction;
+import org.monyhar.base.test.util.UrlUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.compositor.layouts.LayoutManagerImpl;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.ChromeTabUtils;
+import org.monyhar.chrome.test.util.OverviewModeBehaviorWatcher;
+import org.monyhar.components.browser_ui.widget.gesture.SwipeGestureListener.ScrollDirection;
+import org.monyhar.components.browser_ui.widget.gesture.SwipeGestureListener.SwipeHandler;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.content_public.browser.ViewEventSink;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.WebContentsObserver;
+import org.monyhar.content_public.browser.test.util.TestTouchUtils;
+import org.monyhar.content_public.browser.test.util.TouchCommon;
+import org.monyhar.content_public.browser.test.util.WebContentsUtils;
+import org.monyhar.ui.test.util.UiRestriction;
 
 import java.util.ArrayDeque;
 

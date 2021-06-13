@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget;
+package org.monyhar.components.browser_ui.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -44,7 +44,7 @@ import androidx.annotation.VisibleForTesting;
  * The primary of the text and an optional description to be contained in the group may be set in
  * XML. Sample declaration in XML:
  * <pre>{@code
- *  <org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionAndAuxButton
+ *  <org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionAndAuxButton
  *  *      android:id="@+id/system_default"
  *  *      android:layout_width="match_parent"
  *  *      android:layout_height="wrap_content"

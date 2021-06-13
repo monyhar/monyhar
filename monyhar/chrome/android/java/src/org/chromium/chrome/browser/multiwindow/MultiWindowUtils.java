@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.multiwindow;
+package org.monyhar.chrome.browser.multiwindow;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -21,20 +21,20 @@ import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ApplicationStatus.ActivityStateListener;
-import org.chromium.base.BuildInfo;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.ChromeTabbedActivity2;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.util.AndroidTaskUtils;
-import org.chromium.components.ukm.UkmRecorder;
-import org.chromium.ui.display.DisplayAndroidManager;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ApplicationStatus.ActivityStateListener;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.ChromeTabbedActivity2;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.util.AndroidTaskUtils;
+import org.monyhar.components.ukm.UkmRecorder;
+import org.monyhar.ui.display.DisplayAndroidManager;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr.rules;
+package org.monyhar.chrome.browser.vr.rules;
 
 import org.junit.Assume;
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.chrome.browser.vr.TestVrShellDelegate;
-import org.chromium.chrome.browser.vr.rules.XrActivityRestriction.SupportedActivity;
-import org.chromium.chrome.browser.vr.util.XrTestRuleUtils;
+import org.monyhar.chrome.browser.vr.TestVrShellDelegate;
+import org.monyhar.chrome.browser.vr.rules.XrActivityRestriction.SupportedActivity;
+import org.monyhar.chrome.browser.vr.util.XrTestRuleUtils;
 
 /**
  * Rule that conditionally skips a test if the current VrTestRule's Activity is not

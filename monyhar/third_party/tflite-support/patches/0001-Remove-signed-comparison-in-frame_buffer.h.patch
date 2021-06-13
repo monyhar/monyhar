@@ -1,5 +1,5 @@
 From 368b317061ba7deb1f42c52c5443c261bb6c03ea Mon Sep 17 00:00:00 2001
-From: Daniel Rubery <drubery@chromium.org>
+From: Daniel Rubery <drubery@monyhar.org>
 Date: Thu, 6 May 2021 11:40:37 -0700
 Subject: [PATCH] Remove signed comparison in frame_buffer.h
 

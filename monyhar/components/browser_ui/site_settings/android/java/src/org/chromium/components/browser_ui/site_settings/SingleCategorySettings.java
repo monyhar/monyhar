@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.site_settings;
+package org.monyhar.components.browser_ui.site_settings;
 
-import static org.chromium.components.browser_ui.settings.SearchUtils.handleSearchNavigation;
-import static org.chromium.components.browser_ui.site_settings.WebsitePreferenceBridge.SITE_WILDCARD;
-import static org.chromium.components.content_settings.PrefNames.COOKIE_CONTROLS_MODE;
-import static org.chromium.components.content_settings.PrefNames.ENABLE_QUIET_NOTIFICATION_PERMISSION_UI;
-import static org.chromium.components.content_settings.PrefNames.NOTIFICATIONS_VIBRATE_ENABLED;
+import static org.monyhar.components.browser_ui.settings.SearchUtils.handleSearchNavigation;
+import static org.monyhar.components.browser_ui.site_settings.WebsitePreferenceBridge.SITE_WILDCARD;
+import static org.monyhar.components.content_settings.PrefNames.COOKIE_CONTROLS_MODE;
+import static org.monyhar.components.content_settings.PrefNames.ENABLE_QUIET_NOTIFICATION_PERMISSION_UI;
+import static org.monyhar.components.content_settings.PrefNames.NOTIFICATIONS_VIBRATE_ENABLED;
 
 import android.content.Context;
 import android.os.Build;
@@ -33,26 +33,26 @@ import androidx.preference.PreferenceScreen;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.vectordrawable.graphics.drawable.VectorDrawableCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.annotations.UsedByReflection;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.components.browser_ui.settings.ChromeBaseCheckBoxPreference;
-import org.chromium.components.browser_ui.settings.ChromeBasePreference;
-import org.chromium.components.browser_ui.settings.ChromeSwitchPreference;
-import org.chromium.components.browser_ui.settings.ExpandablePreferenceGroup;
-import org.chromium.components.browser_ui.settings.ManagedPreferenceDelegate;
-import org.chromium.components.browser_ui.settings.ManagedPreferencesUtils;
-import org.chromium.components.browser_ui.settings.SearchUtils;
-import org.chromium.components.browser_ui.settings.SettingsUtils;
-import org.chromium.components.browser_ui.site_settings.FourStateCookieSettingsPreference.CookieSettingsState;
-import org.chromium.components.content_settings.ContentSettingValues;
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.components.content_settings.CookieControlsMode;
-import org.chromium.components.embedder_support.browser_context.BrowserContextHandle;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.components.prefs.PrefService;
-import org.chromium.components.user_prefs.UserPrefs;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.annotations.UsedByReflection;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.components.browser_ui.settings.ChromeBaseCheckBoxPreference;
+import org.monyhar.components.browser_ui.settings.ChromeBasePreference;
+import org.monyhar.components.browser_ui.settings.ChromeSwitchPreference;
+import org.monyhar.components.browser_ui.settings.ExpandablePreferenceGroup;
+import org.monyhar.components.browser_ui.settings.ManagedPreferenceDelegate;
+import org.monyhar.components.browser_ui.settings.ManagedPreferencesUtils;
+import org.monyhar.components.browser_ui.settings.SearchUtils;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.components.browser_ui.site_settings.FourStateCookieSettingsPreference.CookieSettingsState;
+import org.monyhar.components.content_settings.ContentSettingValues;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.components.content_settings.CookieControlsMode;
+import org.monyhar.components.embedder_support.browser_context.BrowserContextHandle;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.components.prefs.PrefService;
+import org.monyhar.components.user_prefs.UserPrefs;
+import org.monyhar.ui.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Collection;

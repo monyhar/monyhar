@@ -29,7 +29,7 @@ namespace crashpad {
 //! mix-up means that neither caller nor callee perform parameter clean-up from
 //! the stack, causing the stack pointer to have an unexpected value on return
 //! from the patched function. This typically results in a crash shortly
-//! thereafter. See <a href="https://crashpad.chromium.org/bug/179">Crashpad bug
+//! thereafter. See <a href="https://crashpad.monyhar.org/bug/179">Crashpad bug
 //! 179</a>.
 //!
 //! On 32-bit x86, this replacement function calls `TerminateProcess()` without

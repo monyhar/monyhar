@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments;
+package org.monyhar.chrome.browser.payments;
 
-import org.chromium.chrome.R;
-import org.chromium.payments.mojom.PaymentShippingType;
+import org.monyhar.chrome.R;
+import org.monyhar.payments.mojom.PaymentShippingType;
 
 /** Container for custom shipping strings. */
 public class ShippingStrings {

@@ -33,7 +33,7 @@ function serial_test(func, name, properties) {
     if (fakeSerialService === undefined) {
       // Try loading a polyfill for the fake serial service.
       if (isChromiumBased) {
-        const fakes = await import('/resources/chromium/fake-serial.js');
+        const fakes = await import('/resources/monyhar/fake-serial.js');
         fakeSerialService = fakes.fakeSerialService;
       }
     }

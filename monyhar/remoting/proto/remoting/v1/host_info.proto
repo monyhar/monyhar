@@ -45,8 +45,8 @@ message HostInfo {
   optional Status status = 7 [default = OFFLINE];
 
   // Host offline reason.  See also:
-  // - chromium/src/remoting/host/heartbeat_sender.h
-  // - kHostExitCodeStrings in chromium/src/remoting/host/host_exit_codes.cc
+  // - monyhar/src/remoting/host/heartbeat_sender.h
+  // - kHostExitCodeStrings in monyhar/src/remoting/host/host_exit_codes.cc
   optional string host_offline_reason = 8;
 
   // Time when the host was last online (milliseconds since 01/01/1970 GMT).

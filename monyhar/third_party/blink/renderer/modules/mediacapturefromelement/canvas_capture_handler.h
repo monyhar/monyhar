@@ -15,7 +15,7 @@
 #include "base/memory/weak_ptr.h"
 #include "base/single_thread_task_runner.h"
 #include "base/threading/thread_checker.h"
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "media/base/video_frame_pool.h"
 #include "media/capture/video_capturer_source.h"
 #include "third_party/abseil-cpp/absl/types/optional.h"

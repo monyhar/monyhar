@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.editurl;
+package org.monyhar.chrome.browser.omnibox.suggestions.editurl;
 
 import android.graphics.drawable.Drawable;
 import android.view.View;
 
-import org.chromium.chrome.browser.omnibox.styles.OmniboxResourceProvider;
-import org.chromium.chrome.browser.omnibox.suggestions.SuggestionCommonProperties;
-import org.chromium.chrome.browser.omnibox.suggestions.base.BaseSuggestionViewBinder;
-import org.chromium.chrome.browser.omnibox.suggestions.basic.SuggestionViewViewBinder;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor.ViewBinder;
+import org.monyhar.chrome.browser.omnibox.styles.OmniboxResourceProvider;
+import org.monyhar.chrome.browser.omnibox.suggestions.SuggestionCommonProperties;
+import org.monyhar.chrome.browser.omnibox.suggestions.base.BaseSuggestionViewBinder;
+import org.monyhar.chrome.browser.omnibox.suggestions.basic.SuggestionViewViewBinder;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor.ViewBinder;
 
 /** Binder proxy for EditURL Suggestions. */
 public class EditUrlSuggestionViewBinder

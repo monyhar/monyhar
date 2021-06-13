@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.privacy.settings;
+package org.monyhar.chrome.browser.privacy.settings;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -15,31 +15,31 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.vectordrawable.graphics.drawable.VectorDrawableCompat;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.feedback.HelpAndFeedbackLauncherImpl;
-import org.chromium.chrome.browser.preferences.Pref;
-import org.chromium.chrome.browser.privacy.secure_dns.SecureDnsSettings;
-import org.chromium.chrome.browser.privacy_sandbox.PrivacySandboxBridge;
-import org.chromium.chrome.browser.privacy_sandbox.PrivacySandboxReferrer;
-import org.chromium.chrome.browser.privacy_sandbox.PrivacySandboxSettingsFragment;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.safe_browsing.metrics.SettingsAccessPoint;
-import org.chromium.chrome.browser.safe_browsing.settings.SafeBrowsingSettingsFragment;
-import org.chromium.chrome.browser.settings.ChromeManagedPreferenceDelegate;
-import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
-import org.chromium.chrome.browser.signin.services.IdentityServicesProvider;
-import org.chromium.chrome.browser.sync.settings.GoogleServicesSettings;
-import org.chromium.chrome.browser.sync.settings.ManageSyncSettings;
-import org.chromium.chrome.browser.usage_stats.UsageStatsConsentDialog;
-import org.chromium.components.browser_ui.settings.ChromeSwitchPreference;
-import org.chromium.components.browser_ui.settings.ManagedPreferenceDelegate;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.browser_ui.settings.SettingsUtils;
-import org.chromium.components.prefs.PrefService;
-import org.chromium.components.signin.identitymanager.ConsentLevel;
-import org.chromium.components.user_prefs.UserPrefs;
-import org.chromium.ui.text.NoUnderlineClickableSpan;
-import org.chromium.ui.text.SpanApplier;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.feedback.HelpAndFeedbackLauncherImpl;
+import org.monyhar.chrome.browser.preferences.Pref;
+import org.monyhar.chrome.browser.privacy.secure_dns.SecureDnsSettings;
+import org.monyhar.chrome.browser.privacy_sandbox.PrivacySandboxBridge;
+import org.monyhar.chrome.browser.privacy_sandbox.PrivacySandboxReferrer;
+import org.monyhar.chrome.browser.privacy_sandbox.PrivacySandboxSettingsFragment;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.safe_browsing.metrics.SettingsAccessPoint;
+import org.monyhar.chrome.browser.safe_browsing.settings.SafeBrowsingSettingsFragment;
+import org.monyhar.chrome.browser.settings.ChromeManagedPreferenceDelegate;
+import org.monyhar.chrome.browser.settings.SettingsLauncherImpl;
+import org.monyhar.chrome.browser.signin.services.IdentityServicesProvider;
+import org.monyhar.chrome.browser.sync.settings.GoogleServicesSettings;
+import org.monyhar.chrome.browser.sync.settings.ManageSyncSettings;
+import org.monyhar.chrome.browser.usage_stats.UsageStatsConsentDialog;
+import org.monyhar.components.browser_ui.settings.ChromeSwitchPreference;
+import org.monyhar.components.browser_ui.settings.ManagedPreferenceDelegate;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.components.prefs.PrefService;
+import org.monyhar.components.signin.identitymanager.ConsentLevel;
+import org.monyhar.components.user_prefs.UserPrefs;
+import org.monyhar.ui.text.NoUnderlineClickableSpan;
+import org.monyhar.ui.text.SpanApplier;
 
 /**
  * Fragment to keep track of the all the privacy related preferences.

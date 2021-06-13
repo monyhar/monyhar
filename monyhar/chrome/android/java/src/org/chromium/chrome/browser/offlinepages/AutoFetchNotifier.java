@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.offlinepages;
+package org.monyhar.chrome.browser.offlinepages;
 
 import android.app.NotificationManager;
 import android.content.BroadcastReceiver;
@@ -15,31 +15,31 @@ import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 import androidx.core.app.NotificationCompat;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.IntentHandler.TabOpenType;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
-import org.chromium.chrome.browser.notifications.NotificationUmaTracker;
-import org.chromium.chrome.browser.notifications.NotificationWrapperBuilderFactory;
-import org.chromium.chrome.browser.notifications.channels.ChromeChannelDefinitions;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tab.TabLaunchType;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxy;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxyImpl;
-import org.chromium.components.browser_ui.notifications.NotificationMetadata;
-import org.chromium.components.browser_ui.notifications.NotificationWrapper;
-import org.chromium.components.browser_ui.notifications.NotificationWrapperBuilder;
-import org.chromium.components.browser_ui.notifications.PendingIntentProvider;
-import org.chromium.components.offline_items_collection.LaunchLocation;
-import org.chromium.content_public.browser.LoadUrlParams;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.IntentHandler.TabOpenType;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.chrome.browser.notifications.NotificationUmaTracker;
+import org.monyhar.chrome.browser.notifications.NotificationWrapperBuilderFactory;
+import org.monyhar.chrome.browser.notifications.channels.ChromeChannelDefinitions;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tab.TabLaunchType;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxy;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxyImpl;
+import org.monyhar.components.browser_ui.notifications.NotificationMetadata;
+import org.monyhar.components.browser_ui.notifications.NotificationWrapper;
+import org.monyhar.components.browser_ui.notifications.NotificationWrapperBuilder;
+import org.monyhar.components.browser_ui.notifications.PendingIntentProvider;
+import org.monyhar.components.offline_items_collection.LaunchLocation;
+import org.monyhar.content_public.browser.LoadUrlParams;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -53,7 +53,7 @@ public class AutoFetchNotifier {
     private static final String COMPLETE_NOTIFICATION_TAG = "OfflinePageAutoFetchNotification";
     private static final String IN_PROGRESS_NOTIFICATION_TAG =
             "OfflinePageAutoFetchInProgressNotification";
-    private static final String EXTRA_URL = "org.chromium.chrome.browser.offlinepages.URL";
+    private static final String EXTRA_URL = "org.monyhar.chrome.browser.offlinepages.URL";
     private static final String EXTRA_ACTION = "notification_action";
 
     @VisibleForTesting

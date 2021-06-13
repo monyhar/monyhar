@@ -117,7 +117,7 @@
 #include "components/viz/common/resources/platform_color.h"
 #include "components/viz/common/resources/resource_sizes.h"
 #include "components/viz/common/traced_value.h"
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "gpu/command_buffer/client/context_support.h"
 #include "gpu/command_buffer/client/gles2_interface.h"
 #include "gpu/command_buffer/client/raster_interface.h"
@@ -3552,12 +3552,12 @@ LayerTreeHostImpl::CreateRasterBufferProvider() {
         compositor_context_provider, tile_format);
   }
 
-  const int max_copy_texture_chromium_size =
-      caps.max_copy_texture_chromium_size;
+  const int max_copy_texture_monyhar_size =
+      caps.max_copy_texture_monyhar_size;
   return std::make_unique<OneCopyRasterBufferProvider>(
       GetTaskRunner(), compositor_context_provider, worker_context_provider,
       layer_tree_frame_sink_->gpu_memory_buffer_manager(),
-      max_copy_texture_chromium_size, settings_.use_partial_raster,
+      max_copy_texture_monyhar_size, settings_.use_partial_raster,
       settings_.resource_settings.use_gpu_memory_buffer_resources,
       settings_.max_staging_buffer_usage_in_bytes, tile_format);
 }
@@ -4063,7 +4063,7 @@ void LayerTreeHostImpl::SetFullViewportDamage() {
   // the internal viewport rect. In the case of Android WebView,
   // GetDeviceViewport returns the external viewport, but we still want to use
   // the internal viewport's origin for setting the damage.
-  // See https://chromium-review.googlesource.com/c/chromium/src/+/1257555.
+  // See https://monyhar-review.googlesource.com/c/monyhar/src/+/1257555.
   SetViewportDamage(gfx::Rect(active_tree_->internal_device_viewport().origin(),
                               active_tree_->GetDeviceViewport().size()));
 }

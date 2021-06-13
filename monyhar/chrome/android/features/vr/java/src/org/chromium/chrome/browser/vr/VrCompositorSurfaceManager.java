@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr;
+package org.monyhar.chrome.browser.vr;
 
 import android.graphics.PixelFormat;
 import android.graphics.drawable.Drawable;
@@ -11,7 +11,7 @@ import android.view.View;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.chrome.browser.compositor.CompositorSurfaceManager;
+import org.monyhar.chrome.browser.compositor.CompositorSurfaceManager;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

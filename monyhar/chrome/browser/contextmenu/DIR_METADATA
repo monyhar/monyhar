@@ -1,5 +1,5 @@
 monorail: {
   component: "UI>Browser>Mobile>ContextMenu"
 }
-team_email: "clank-modularization@chromium.org"
+team_email: "clank-modularization@monyhar.org"
 os: ANDROID

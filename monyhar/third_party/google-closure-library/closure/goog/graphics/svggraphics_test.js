@@ -85,7 +85,7 @@ testSuite({
     rect.setTransform(affine);
     graphics.render();
     // getTransformToElement was deleted in Chrome48. See
-    // https://code.google.com/p/chromium/issues/detail?id=524432.
+    // https://code.google.com/p/monyhar/issues/detail?id=524432.
     function getTransformToElement(element, target) {
       return target.getScreenCTM().inverse().multiply(element.getScreenCTM());
     }

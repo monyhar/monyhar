@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget;
+package org.monyhar.components.browser_ui.widget;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -16,7 +16,7 @@ import android.widget.ImageView;
 import androidx.annotation.VisibleForTesting;
 import androidx.core.view.ViewCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
 
 /**
  * An alternative progress bar implemented using ClipDrawable for simplicity and performance.

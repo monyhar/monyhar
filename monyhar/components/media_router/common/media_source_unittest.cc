@@ -56,7 +56,7 @@ TEST(MediaSourceTest, ConstructorWithURLString) {
 
 TEST(MediaSourceTest, ForAnyTab) {
   auto source = MediaSource::ForAnyTab();
-  EXPECT_EQ("urn:x-org.chromium.media:source:tab:*", source.id());
+  EXPECT_EQ("urn:x-org.monyhar.media:source:tab:*", source.id());
   EXPECT_EQ(-1, source.TabId());
   EXPECT_FALSE(source.IsDesktopMirroringSource());
   EXPECT_TRUE(source.IsTabMirroringSource());
@@ -67,7 +67,7 @@ TEST(MediaSourceTest, ForAnyTab) {
 
 TEST(MediaSourceTest, ForTab) {
   auto source = MediaSource::ForTab(123);
-  EXPECT_EQ("urn:x-org.chromium.media:source:tab:123", source.id());
+  EXPECT_EQ("urn:x-org.monyhar.media:source:tab:123", source.id());
   EXPECT_EQ(123, source.TabId());
   EXPECT_FALSE(source.IsDesktopMirroringSource());
   EXPECT_TRUE(source.IsTabMirroringSource());
@@ -78,7 +78,7 @@ TEST(MediaSourceTest, ForTab) {
 
 TEST(MediaSourceTest, ForLocalFile) {
   auto source = MediaSource::ForLocalFile();
-  EXPECT_EQ("urn:x-org.chromium.media:source:tab:0", source.id());
+  EXPECT_EQ("urn:x-org.monyhar.media:source:tab:0", source.id());
   EXPECT_FALSE(source.IsDesktopMirroringSource());
   EXPECT_FALSE(source.IsTabMirroringSource());
   EXPECT_TRUE(source.IsLocalFileSource());
@@ -89,7 +89,7 @@ TEST(MediaSourceTest, ForLocalFile) {
 TEST(MediaSourceTest, ForDesktopWithoutAudio) {
   std::string media_id = "fakeMediaId";
   auto source = MediaSource::ForDesktop(media_id, false);
-  EXPECT_EQ("urn:x-org.chromium.media:source:desktop:" + media_id, source.id());
+  EXPECT_EQ("urn:x-org.monyhar.media:source:desktop:" + media_id, source.id());
   EXPECT_TRUE(source.IsDesktopMirroringSource());
   EXPECT_EQ(media_id, source.DesktopStreamId());
   EXPECT_FALSE(source.IsDesktopSourceWithAudio());
@@ -102,7 +102,7 @@ TEST(MediaSourceTest, ForDesktopWithoutAudio) {
 TEST(MediaSourceTest, ForDesktopWithAudio) {
   std::string media_id = "fakeMediaId";
   auto source = MediaSource::ForDesktop(media_id, true);
-  EXPECT_EQ("urn:x-org.chromium.media:source:desktop:" + media_id +
+  EXPECT_EQ("urn:x-org.monyhar.media:source:desktop:" + media_id +
                 "?with_audio=true",
             source.id());
   EXPECT_TRUE(source.IsDesktopMirroringSource());

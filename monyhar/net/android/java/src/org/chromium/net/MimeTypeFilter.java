@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
 import android.net.Uri;
 import android.webkit.MimeTypeMap;
@@ -20,7 +20,7 @@ import java.util.Locale;
  *  Note that this class is used specifically to implement
  *  the mime type filtering for web share target spec:
  *  https://wicg.github.io/web-share-target/level-2/#determining-if-a-file-is-accepted
- *  It is also used inside chrome/android/java/src/org/chromium/chrome/browser/photo_picker.
+ *  It is also used inside chrome/android/java/src/org/monyhar/chrome/browser/photo_picker.
  */
 public class MimeTypeFilter implements FileFilter {
     private HashSet<String> mExtensions = new HashSet<>();

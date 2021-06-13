@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.signin.services;
+package org.monyhar.chrome.browser.signin.services;
 
 import android.accounts.Account;
 
 import androidx.annotation.MainThread;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
-import org.chromium.components.signin.base.CoreAccountInfo;
-import org.chromium.components.signin.identitymanager.IdentityManager;
-import org.chromium.components.signin.metrics.SigninAccessPoint;
-import org.chromium.components.signin.metrics.SignoutReason;
+import org.monyhar.base.Callback;
+import org.monyhar.components.signin.base.CoreAccountInfo;
+import org.monyhar.components.signin.identitymanager.IdentityManager;
+import org.monyhar.components.signin.metrics.SigninAccessPoint;
+import org.monyhar.components.signin.metrics.SignoutReason;
 
 /**
  * Android wrapper of the SigninManager which provides access from the Java layer.

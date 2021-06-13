@@ -57,7 +57,7 @@ bool SnapshotMinidumpMemoryWriter::WriteObject(
     // since it the range was captured), write an empty block of memory. It
     // would be nice to instead not include this memory, but at this point in
     // the writing process, it would be difficult to amend the minidump's
-    // structure. See https://crashpad.chromium.org/234 for background.
+    // structure. See https://crashpad.monyhar.org/234 for background.
     std::vector<uint8_t> empty(memory_snapshot_->Size(), 0xfe);
     MemorySnapshotDelegateRead(empty.data(), empty.size());
   }

@@ -135,7 +135,7 @@ std::string GetVersionNumberFromSpecifics(
 }
 
 // Returns true if |speifics| represents a client that is
-// chromium-based and hence exposed in DeviceInfoTracker.
+// monyhar-based and hence exposed in DeviceInfoTracker.
 bool IsChromeClient(const DeviceInfoSpecifics& specifics) {
   return specifics.has_chrome_version_info() || specifics.has_chrome_version();
 }

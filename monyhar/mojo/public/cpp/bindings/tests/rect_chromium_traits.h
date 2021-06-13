@@ -6,7 +6,7 @@
 #define MOJO_PUBLIC_CPP_BINDINGS_TESTS_RECT_CHROMIUM_TRAITS_H_
 
 #include "mojo/public/cpp/bindings/struct_traits.h"
-#include "mojo/public/cpp/bindings/tests/rect_chromium.h"
+#include "mojo/public/cpp/bindings/tests/rect_monyhar.h"
 
 namespace mojo {
 

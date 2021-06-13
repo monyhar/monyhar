@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_manager.settings;
+package org.monyhar.chrome.browser.password_manager.settings;
 
 /**
  * A class representing information about a saved password entry in Chrome's settngs.

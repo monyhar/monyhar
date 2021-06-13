@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.paintpreview.player;
+package org.monyhar.components.paintpreview.player;
 
 import android.graphics.Rect;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.UnguessableToken;
+import org.monyhar.base.UnguessableToken;
 
 import java.util.Arrays;
 

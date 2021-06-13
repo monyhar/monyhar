@@ -1,7 +1,7 @@
 # Manually updating Chromium to a new Fuchsia SDK
 
 Normally the Fuchsia SDK dependency is automatically updated to a recent build
-on a regular basis, by the [Fuchsia SDK AutoRoll Bot](https://fuchsia-sdk-chromium-roll.skia.org).
+on a regular basis, by the [Fuchsia SDK AutoRoll Bot](https://fuchsia-sdk-monyhar-roll.skia.org).
 
 Should you need to manually update the SDK dependency for some reason, then:
 

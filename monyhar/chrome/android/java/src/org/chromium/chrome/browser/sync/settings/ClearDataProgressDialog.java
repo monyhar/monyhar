@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sync.settings;
+package org.monyhar.chrome.browser.sync.settings;
 
 import android.app.Dialog;
 import android.app.ProgressDialog;
@@ -27,8 +27,8 @@ public class ClearDataProgressDialog extends DialogFragment {
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         setCancelable(false);
         ProgressDialog dialog = new ProgressDialog(getActivity());
-        dialog.setTitle(getString(org.chromium.chrome.R.string.wiping_profile_data_title));
-        dialog.setMessage(getString(org.chromium.chrome.R.string.wiping_profile_data_message));
+        dialog.setTitle(getString(org.monyhar.chrome.R.string.wiping_profile_data_title));
+        dialog.setMessage(getString(org.monyhar.chrome.R.string.wiping_profile_data_message));
         dialog.setIndeterminate(true);
         return dialog;
     }

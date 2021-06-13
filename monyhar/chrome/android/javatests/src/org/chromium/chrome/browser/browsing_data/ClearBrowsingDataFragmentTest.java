@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browsing_data;
+package org.monyhar.chrome.browser.browsing_data;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyInt;
@@ -42,23 +42,23 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.stubbing.Answer;
 
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.browsing_data.ClearBrowsingDataFragment.DialogOption;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.notifications.channels.SiteChannelsManager;
-import org.chromium.chrome.browser.settings.SettingsActivity;
-import org.chromium.chrome.browser.settings.SettingsActivityTestRule;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.browser.signin.AccountManagerTestRule;
-import org.chromium.components.browser_ui.settings.SpinnerPreference;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.browsing_data.ClearBrowsingDataFragment.DialogOption;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.notifications.channels.SiteChannelsManager;
+import org.monyhar.chrome.browser.settings.SettingsActivity;
+import org.monyhar.chrome.browser.settings.SettingsActivityTestRule;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.browser.signin.AccountManagerTestRule;
+import org.monyhar.components.browser_ui.settings.SpinnerPreference;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.Arrays;
 import java.util.Set;
@@ -136,7 +136,7 @@ public class ClearBrowsingDataFragmentTest {
 
     private static void clickClearButton(Fragment preferences) {
         Button clearButton =
-                preferences.getView().findViewById(org.chromium.chrome.R.id.clear_button);
+                preferences.getView().findViewById(org.monyhar.chrome.R.id.clear_button);
         Assert.assertNotNull(clearButton);
         Assert.assertTrue(clearButton.isEnabled());
         clearButton.callOnClick();

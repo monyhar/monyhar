@@ -359,7 +359,7 @@ void RLZTracker::DelayedInit() {
   bool schedule_ping = false;
 
   // For organic brandcodes do not use rlz at all. Empty brandcode usually
-  // means a chromium install. This is ok.
+  // means a monyhar install. This is ok.
   if (!delegate_->IsBrandOrganic(brand_)) {
     RecordProductEvents(first_run_, is_google_default_search_,
                         is_google_homepage_, is_google_in_startpages_,

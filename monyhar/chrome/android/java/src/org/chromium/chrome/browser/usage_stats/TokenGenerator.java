@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.usage_stats;
+package org.monyhar.chrome.browser.usage_stats;
 
 /**
  * Class that generates opaque names for use as tokens, which are themselves used as pseudonyms for

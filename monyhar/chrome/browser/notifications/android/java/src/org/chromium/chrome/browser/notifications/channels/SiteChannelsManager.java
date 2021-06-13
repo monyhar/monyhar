@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.notifications.channels;
+package org.monyhar.chrome.browser.notifications.channels;
 
 import android.annotation.TargetApi;
 import android.app.NotificationChannel;
@@ -13,13 +13,13 @@ import android.os.Build;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.notifications.NotificationChannelStatus;
-import org.chromium.chrome.browser.notifications.NotificationSettingsBridge.SiteChannel;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxy;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxyImpl;
-import org.chromium.components.browser_ui.site_settings.WebsiteAddress;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.notifications.NotificationChannelStatus;
+import org.monyhar.chrome.browser.notifications.NotificationSettingsBridge.SiteChannel;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxy;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxyImpl;
+import org.monyhar.components.browser_ui.site_settings.WebsiteAddress;
 
 import java.util.ArrayList;
 import java.util.List;

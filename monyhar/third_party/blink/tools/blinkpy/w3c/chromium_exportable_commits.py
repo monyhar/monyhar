@@ -4,8 +4,8 @@
 
 import logging
 
-from blinkpy.w3c.chromium_commit import ChromiumCommit
-from blinkpy.w3c.chromium_finder import absolute_chromium_dir
+from blinkpy.w3c.monyhar_commit import ChromiumCommit
+from blinkpy.w3c.monyhar_finder import absolute_monyhar_dir
 from blinkpy.w3c.common import CHROMIUM_WPT_DIR
 
 _log = logging.getLogger(__name__)
@@ -59,7 +59,7 @@ def exportable_commits_over_last_n_commits(
                                      require_clean, verify_merged_pr)
 
 
-def _exportable_commits_since(chromium_commit_hash,
+def _exportable_commits_since(monyhar_commit_hash,
                               host,
                               local_wpt,
                               wpt_github,
@@ -68,26 +68,26 @@ def _exportable_commits_since(chromium_commit_hash,
     """Lists exportable commits after the given commit.
 
     Args:
-        chromium_commit_hash: The SHA of the Chromium commit from which this
+        monyhar_commit_hash: The SHA of the Chromium commit from which this
             method will look. This commit is not included in the commits searched.
 
     Return values and remaining arguments are the same as exportable_commits_over_last_n_commits.
     """
-    chromium_repo_root = host.executive.run_command(
+    monyhar_repo_root = host.executive.run_command(
         ['git', 'rev-parse', '--show-toplevel'],
-        cwd=absolute_chromium_dir(host)).strip()
+        cwd=absolute_monyhar_dir(host)).strip()
 
-    wpt_path = chromium_repo_root + '/' + CHROMIUM_WPT_DIR
-    commit_range = '{}..HEAD'.format(chromium_commit_hash)
+    wpt_path = monyhar_repo_root + '/' + CHROMIUM_WPT_DIR
+    commit_range = '{}..HEAD'.format(monyhar_commit_hash)
     skipped_revs = ['^' + rev for rev in SKIPPED_REVISIONS]
     command = (['git', 'rev-list', commit_range] + skipped_revs +
                ['--reverse', '--', wpt_path])
     commit_hashes = host.executive.run_command(
-        command, cwd=absolute_chromium_dir(host)).splitlines()
-    chromium_commits = [ChromiumCommit(host, sha=sha) for sha in commit_hashes]
+        command, cwd=absolute_monyhar_dir(host)).splitlines()
+    monyhar_commits = [ChromiumCommit(host, sha=sha) for sha in commit_hashes]
     exportable_commits = []
     errors = []
-    for commit in chromium_commits:
+    for commit in monyhar_commits:
         state, error = get_commit_export_state(commit, local_wpt, wpt_github,
                                                verify_merged_pr)
         _log.info('Commit %s has export state: "%s"', commit.short_sha, state)
@@ -106,7 +106,7 @@ def _exportable_commits_since(chromium_commit_hash,
     return exportable_commits, errors
 
 
-def get_commit_export_state(chromium_commit,
+def get_commit_export_state(monyhar_commit,
                             local_wpt,
                             wpt_github,
                             verify_merged_pr=False):
@@ -125,15 +125,15 @@ def get_commit_export_state(chromium_commit,
         error is a string of error messages if an exportable patch fails to
         apply (i.e. state=CommitExportState.EXPORTABLE_DIRTY).
     """
-    msg_lowercase = chromium_commit.message().lower()
+    msg_lowercase = monyhar_commit.message().lower()
     if 'noexport=true' in msg_lowercase or 'no-export: true' in msg_lowercase:
         return CommitExportState.IGNORED, ''
 
-    patch = chromium_commit.format_patch()
+    patch = monyhar_commit.format_patch()
     if not patch:
         return CommitExportState.NO_PATCH, ''
 
-    if _is_commit_exported(chromium_commit, local_wpt, wpt_github,
+    if _is_commit_exported(monyhar_commit, local_wpt, wpt_github,
                            verify_merged_pr):
         return CommitExportState.EXPORTED, ''
 
@@ -142,20 +142,20 @@ def get_commit_export_state(chromium_commit,
             (CommitExportState.EXPORTABLE_DIRTY, error))
 
 
-def _is_commit_exported(chromium_commit, local_wpt, wpt_github,
+def _is_commit_exported(monyhar_commit, local_wpt, wpt_github,
                         verify_merged_pr):
-    pull_request = wpt_github.pr_for_chromium_commit(chromium_commit)
+    pull_request = wpt_github.pr_for_monyhar_commit(monyhar_commit)
     if not pull_request:
         _log.info(
             'Checking if commit is exported: no existing PR found. '
-            'Commit: %s', chromium_commit.short_sha)
+            'Commit: %s', monyhar_commit.short_sha)
         return False
 
     if pull_request.state != 'closed':
         _log.info(
             'Checking if commit is exported: pull request is not closed. '
             'Commit: %s, PR number: %s, PR state: %s',
-            chromium_commit.short_sha, pull_request.number, pull_request.state)
+            monyhar_commit.short_sha, pull_request.number, pull_request.state)
         return False
 
     # A closed PR can either be merged or abandoned:
@@ -173,12 +173,12 @@ def _is_commit_exported(chromium_commit, local_wpt, wpt_github,
         return True
 
     # PR is merged, and we need to verify that local WPT contains the commit.
-    change_id = chromium_commit.change_id()
+    change_id = monyhar_commit.change_id()
     found_in_upstream = bool(
         local_wpt.seek_change_id(change_id) if change_id else local_wpt.
-        seek_commit_position(chromium_commit.position))
+        seek_commit_position(monyhar_commit.position))
     if not found_in_upstream:
-        needle = change_id if change_id else chromium_commit.position
+        needle = change_id if change_id else monyhar_commit.position
         _log.info(
             'Checking if commit is exported: failed to find change in local '
             'WPT checkout. Searched for: %s', needle)

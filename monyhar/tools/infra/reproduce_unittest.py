@@ -96,8 +96,8 @@ class ReproduceTest(unittest.TestCase):
     guess_mock.side_effect = [{
         'os': 'Windows',
     }]
-    b = reproduce.Build('luci.chromium.ci/linux-rel/1')
-    b._mastername = 'chromium.linux'
+    b = reproduce.Build('luci.monyhar.ci/linux-rel/1')
+    b._mastername = 'monyhar.linux'
     b._test_results = {
         'gl_unittests': ['test.1', 'test.2']
     }
@@ -117,7 +117,7 @@ class ReproduceTest(unittest.TestCase):
 
       run_mock.assert_called_with([
           os.path.join(reproduce.CHROMIUM_ROOT, 'tools', 'mb', 'mb.py'),
-          'run', '-m', 'chromium.linux', '-b', 'linux-rel', '//out/Default',
+          'run', '-m', 'monyhar.linux', '-b', 'linux-rel', '//out/Default',
           'gl_unittests', '--', '--gtest_filter=test.1:test.2'
       ])
 
@@ -134,8 +134,8 @@ class ReproduceTest(unittest.TestCase):
     guess_mock.side_effect = [{
         'os': 'Windows',
     }]
-    b = reproduce.Build('luci.chromium.ci/linux-rel/1')
-    b._mastername = 'chromium.mac'
+    b = reproduce.Build('luci.monyhar.ci/linux-rel/1')
+    b._mastername = 'monyhar.mac'
     b._test_results = {
         'blink_web_tests': ['test.1', 'test.2']
     }
@@ -163,7 +163,7 @@ class ReproduceTest(unittest.TestCase):
         unlink_mock.assert_called_with(fake_tempfile_name)
         run_mock.assert_called_with([
             os.path.join(reproduce.CHROMIUM_ROOT, 'tools', 'mb', 'mb.py'),
-            'run', '-m', 'chromium.mac', '-b', 'linux-rel', '//out/Default',
+            'run', '-m', 'monyhar.mac', '-b', 'linux-rel', '//out/Default',
             'blink_web_tests', '--',
             '--isolated-script-test-filter=test.1::test.2',
             '--isolated-script-test-output', fake_tempfile_name,
@@ -179,7 +179,7 @@ class ReproduceTest(unittest.TestCase):
         'os': 'Windows',
     }]
 
-    b = reproduce.Build('luci.chromium.ci/linux-rel/1')
+    b = reproduce.Build('luci.monyhar.ci/linux-rel/1')
     input_mock.side_effect = ['n']
     with mock.patch.object(b, 'guess_swarming_dimensions') as dims_mock:
       dims_mock.side_effect = [{
@@ -214,8 +214,8 @@ class ReproduceTest(unittest.TestCase):
         'os': 'Windows',
     }]
 
-    b = reproduce.Build('luci.chromium.ci/linux-rel/1')
-    b._mastername = 'chromium.linux'
+    b = reproduce.Build('luci.monyhar.ci/linux-rel/1')
+    b._mastername = 'monyhar.linux'
     b._test_results = {
         'gl_unittests': ['test.1', 'test.2']
     }
@@ -236,7 +236,7 @@ class ReproduceTest(unittest.TestCase):
 
     run_mock.assert_called_with([
         os.path.join(reproduce.CHROMIUM_ROOT, 'tools', 'mb', 'mb.py'),
-        'run', '-m', 'chromium.linux', '-b', 'linux-rel', '//out/Default',
+        'run', '-m', 'monyhar.linux', '-b', 'linux-rel', '//out/Default',
         'gl_unittests', '--', '--gtest_filter=test.1:test.2'
     ])
 

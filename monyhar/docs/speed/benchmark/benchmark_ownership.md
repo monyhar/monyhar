@@ -12,7 +12,7 @@ There can be multiple owners of a benchmark, for example if there are multiple t
 ## How do I update the owner on a benchmark?
 
 ### Telemetry Benchmarks
-1. Open <benchmark_harness>.py under [`src/tools/perf/benchmarks/`](https://cs.chromium.org/chromium/src/tools/perf/benchmarks/). The <benchmark_harness> is the part of the benchmark name before the “.”. For example, when looking for 'blink_perf.paint', you need to open 'blink_perf.py'.
+1. Open <benchmark_harness>.py under [`src/tools/perf/benchmarks/`](https://cs.monyhar.org/monyhar/src/tools/perf/benchmarks/). The <benchmark_harness> is the part of the benchmark name before the “.”. For example, when looking for 'blink_perf.paint', you need to open 'blink_perf.py'.
 1. Find the class for the benchmark. It has a `Name` method that should match the full name of the benchmark.
 1. Add a `benchmark.Info` decorator above the class.
 
@@ -20,7 +20,7 @@ There can be multiple owners of a benchmark, for example if there are multiple t
 
   ```
   @benchmark.Info(
-      emails=['owner1@chromium.org', 'owner2@samsung.com'],
+      emails=['owner1@monyhar.org', 'owner2@samsung.com'],
       component=’GoatTeleporter>Performance’,
       documentation_url='http://link.to/your_benchmark_documentation')
   ```
@@ -33,7 +33,7 @@ There can be multiple owners of a benchmark, for example if there are multiple t
 1. Upload the benchmark python file and `benchmark.csv` to a CL for review. Please add any previous owners to the review.
 
 ### C++ Perf Benchmarks
-1. Open [`src/tools/perf/core/perf_data_generator.py`](https://cs.chromium.org/chromium/src/tools/perf/core/perf_data_generator.py).
+1. Open [`src/tools/perf/core/perf_data_generator.py`](https://cs.monyhar.org/monyhar/src/tools/perf/core/perf_data_generator.py).
 1. Find the BenchmarkMetadata for the benchmark. It will be in a dictionary named `GTEST_BENCHMARKS`.
 1. Update the email (first field of `BenchmarkMetadata`).
 1. Run `tools/perf/generate_perf_data` to update `tools/perf/benchmark.csv`.

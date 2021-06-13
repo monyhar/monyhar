@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.modaldialog;
+package org.monyhar.components.browser_ui.modaldialog;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -18,13 +18,13 @@ import android.widget.TextView;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.base.Callback;
-import org.chromium.base.Log;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.components.browser_ui.widget.BoundedLinearLayout;
-import org.chromium.components.browser_ui.widget.FadingEdgeScrollView;
-import org.chromium.ui.UiUtils;
-import org.chromium.ui.modaldialog.ModalDialogProperties;
+import org.monyhar.base.Callback;
+import org.monyhar.base.Log;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.components.browser_ui.widget.BoundedLinearLayout;
+import org.monyhar.components.browser_ui.widget.FadingEdgeScrollView;
+import org.monyhar.ui.UiUtils;
+import org.monyhar.ui.modaldialog.ModalDialogProperties;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -94,7 +94,7 @@ public class ModalDialogView extends BoundedLinearLayout implements View.OnClick
 
         // If the scroll view can not be scrolled, make the scroll view not focusable so that the
         // focusing behavior for hardware keyboard is less confusing.
-        // See https://codereview.chromium.org/2939883002.
+        // See https://codereview.monyhar.org/2939883002.
         mScrollView.addOnLayoutChangeListener(
                 (v, left, top, right, bottom, oldLeft, oldTop, oldRight, oldBottom) -> {
                     boolean isScrollable = v.canScrollVertically(-1) || v.canScrollVertically(1);

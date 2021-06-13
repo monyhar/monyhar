@@ -22,7 +22,7 @@ const NAME_ONLY_REGEX =
 /**
  * Regular expression for adding a user where the string provided is a full
  * email address.
- *     e.g. 'john@chromium.org'
+ *     e.g. 'john@monyhar.org'
  * @type {!RegExp}
  */
 const EMAIL_REGEX = new RegExp(

@@ -9,7 +9,7 @@
 #include "base/check.h"
 #include "chromeos/assistant/internal/internal_util.h"
 #include "chromeos/services/assistant/public/cpp/features.h"
-#include "chromeos/services/libassistant/chromium_api_delegate.h"
+#include "chromeos/services/libassistant/monyhar_api_delegate.h"
 #include "chromeos/services/libassistant/libassistant_factory.h"
 #include "chromeos/services/libassistant/settings_controller.h"
 #include "chromeos/services/libassistant/util.h"
@@ -203,7 +203,7 @@ void ServiceController::Stop() {
 
   assistant_manager_ = nullptr;
   assistant_manager_internal_ = nullptr;
-  chromium_api_delegate_ = nullptr;
+  monyhar_api_delegate_ = nullptr;
   device_state_listener_ = nullptr;
 
   for (auto& observer : assistant_manager_observers_)
@@ -327,15 +327,15 @@ void ServiceController::CreateAndRegisterChromiumApiDelegate(
 
   assistant_manager_internal()
       ->GetFuchsiaApiHelperOrDie()
-      ->SetChromeOSApiDelegate(chromium_api_delegate_.get());
+      ->SetChromeOSApiDelegate(monyhar_api_delegate_.get());
 }
 
 void ServiceController::CreateChromiumApiDelegate(
     mojo::PendingRemote<network::mojom::URLLoaderFactory>
         url_loader_factory_remote) {
-  DCHECK(!chromium_api_delegate_);
+  DCHECK(!monyhar_api_delegate_);
 
-  chromium_api_delegate_ = std::make_unique<ChromiumApiDelegate>(
+  monyhar_api_delegate_ = std::make_unique<ChromiumApiDelegate>(
       CreatePendingURLLoaderFactory(std::move(url_loader_factory_remote)));
 }
 

@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr;
+package org.monyhar.chrome.browser.vr;
 
 import android.os.Handler;
 import android.view.KeyEvent;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.vr.keyboard.TextEditAction;
-import org.chromium.content_public.browser.ImeAdapter;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.vr.keyboard.TextEditAction;
+import org.monyhar.content_public.browser.ImeAdapter;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * Helper class for interfacing with the active {@link InputConnection}.

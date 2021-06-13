@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar.load_progress;
+package org.monyhar.chrome.browser.toolbar.load_progress;
 
 import android.os.Handler;
 import android.os.Looper;
@@ -10,8 +10,8 @@ import android.os.Message;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.MathUtils;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.MathUtils;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * Simulator for  load progress changes when the page being rendered doesn't actually send load

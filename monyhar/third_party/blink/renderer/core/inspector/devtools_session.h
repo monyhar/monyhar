@@ -117,7 +117,7 @@ class CORE_EXPORT DevToolsSession : public GarbageCollected<DevToolsSession>,
   HeapVector<Member<InspectorAgent>> agents_;
   // Notifications are lazily serialized to shift the serialization overhead
   // from performance measurements. We may want to revisit this.
-  // See https://bugs.chromium.org/p/chromium/issues/detail?id=1044989#c8
+  // See https://bugs.monyhar.org/p/monyhar/issues/detail?id=1044989#c8
   Vector<base::OnceCallback<std::vector<uint8_t>()>> notification_queue_;
   const bool client_expects_binary_responses_;
   InspectorAgentState v8_session_state_;

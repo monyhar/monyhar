@@ -18,7 +18,7 @@ uint64_t kBindingsIdStart = 0xFF0000;
 }  // namespace
 
 ApiBindingsClient::ApiBindingsClient(
-    fidl::InterfaceHandle<chromium::cast::ApiBindings> bindings_service,
+    fidl::InterfaceHandle<monyhar::cast::ApiBindings> bindings_service,
     base::OnceClosure on_initialization_complete)
     : bindings_service_(bindings_service.Bind()),
       on_initialization_complete_(std::move(on_initialization_complete)) {
@@ -75,7 +75,7 @@ void ApiBindingsClient::AttachToFrame(
 
   // Enumerate and inject all scripts in |bindings|.
   uint64_t bindings_id = kBindingsIdStart;
-  for (chromium::cast::ApiBinding& entry : *bindings_) {
+  for (monyhar::cast::ApiBinding& entry : *bindings_) {
     frame_->AddBeforeLoadJavaScript(
         bindings_id++, {"*"}, std::move(*entry.mutable_before_load_script()),
         [](fuchsia::web::Frame_AddBeforeLoadJavaScript_Result result) {
@@ -109,7 +109,7 @@ bool ApiBindingsClient::OnPortConnected(
 }
 
 void ApiBindingsClient::OnBindingsReceived(
-    std::vector<chromium::cast::ApiBinding> bindings) {
+    std::vector<monyhar::cast::ApiBinding> bindings) {
   bindings_ = std::move(bindings);
   bindings_service_.set_error_handler(nullptr);
   std::move(on_initialization_complete_).Run();

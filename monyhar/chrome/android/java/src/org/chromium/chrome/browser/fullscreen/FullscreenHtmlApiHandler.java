@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.fullscreen;
+package org.monyhar.chrome.browser.fullscreen;
 
 import static android.view.View.SYSTEM_UI_FLAG_FULLSCREEN;
 import static android.view.View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN;
@@ -20,33 +20,33 @@ import android.view.WindowManager;
 import androidx.annotation.Nullable;
 import androidx.core.util.ObjectsCompat;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ApplicationStatus.ActivityStateListener;
-import org.chromium.base.ApplicationStatus.WindowFocusChangedListener;
-import org.chromium.base.ObserverList;
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.base.supplier.ObservableSupplierImpl;
-import org.chromium.cc.input.BrowserControlsState;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ActivityTabProvider;
-import org.chromium.chrome.browser.ActivityTabProvider.ActivityTabTabObserver;
-import org.chromium.chrome.browser.multiwindow.MultiWindowUtils;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabAttributeKeys;
-import org.chromium.chrome.browser.tab.TabAttributes;
-import org.chromium.chrome.browser.tab.TabBrowserControlsConstraintsHelper;
-import org.chromium.chrome.browser.tab.TabHidingType;
-import org.chromium.chrome.browser.tab.TabUtils;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorTabObserver;
-import org.chromium.chrome.browser.vr.VrModuleProvider;
-import org.chromium.components.embedder_support.view.ContentView;
-import org.chromium.content_public.browser.GestureListenerManager;
-import org.chromium.content_public.browser.NavigationHandle;
-import org.chromium.content_public.browser.SelectionPopupController;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ApplicationStatus.ActivityStateListener;
+import org.monyhar.base.ApplicationStatus.WindowFocusChangedListener;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.base.supplier.ObservableSupplierImpl;
+import org.monyhar.cc.input.BrowserControlsState;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ActivityTabProvider;
+import org.monyhar.chrome.browser.ActivityTabProvider.ActivityTabTabObserver;
+import org.monyhar.chrome.browser.multiwindow.MultiWindowUtils;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabAttributeKeys;
+import org.monyhar.chrome.browser.tab.TabAttributes;
+import org.monyhar.chrome.browser.tab.TabBrowserControlsConstraintsHelper;
+import org.monyhar.chrome.browser.tab.TabHidingType;
+import org.monyhar.chrome.browser.tab.TabUtils;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorTabObserver;
+import org.monyhar.chrome.browser.vr.VrModuleProvider;
+import org.monyhar.components.embedder_support.view.ContentView;
+import org.monyhar.content_public.browser.GestureListenerManager;
+import org.monyhar.content_public.browser.NavigationHandle;
+import org.monyhar.content_public.browser.SelectionPopupController;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.widget.Toast;
 
 import java.lang.ref.WeakReference;
 

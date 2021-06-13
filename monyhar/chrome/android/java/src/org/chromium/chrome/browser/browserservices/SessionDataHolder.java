@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices;
+package org.monyhar.chrome.browser.browserservices;
 
 import android.app.Activity;
 import android.content.Context;
@@ -14,8 +14,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.browser.customtabs.CustomTabsSessionToken;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.customtabs.CustomTabsConnection;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.customtabs.CustomTabsConnection;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;

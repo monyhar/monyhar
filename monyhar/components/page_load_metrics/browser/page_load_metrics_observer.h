@@ -371,7 +371,7 @@ class PageLoadMetricsObserver {
   // called multiple times over the course of the page load. This method is
   // currently only intended for use in testing. Most implementers should
   // implement one of the On* callbacks, such as OnFirstContentfulPaint or
-  // OnDomContentLoadedEventStart. Please email loading-dev@chromium.org if you
+  // OnDomContentLoadedEventStart. Please email loading-dev@monyhar.org if you
   // intend to override this method.
   //
   // If |subframe_rfh| is nullptr, the update took place in the main frame.

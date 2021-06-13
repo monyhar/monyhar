@@ -2,26 +2,26 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.util.browser.signin;
+package org.monyhar.chrome.test.util.browser.signin;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.WorkerThread;
 
 import org.junit.Assert;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.chrome.browser.SyncFirstSetupCompleteSource;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.signin.services.IdentityServicesProvider;
-import org.chromium.chrome.browser.signin.services.SigninManager;
-import org.chromium.chrome.browser.sync.SyncService;
-import org.chromium.components.signin.AccountUtils;
-import org.chromium.components.signin.base.CoreAccountInfo;
-import org.chromium.components.signin.identitymanager.ConsentLevel;
-import org.chromium.components.signin.metrics.SigninAccessPoint;
-import org.chromium.components.signin.metrics.SignoutReason;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.chrome.browser.SyncFirstSetupCompleteSource;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.signin.services.IdentityServicesProvider;
+import org.monyhar.chrome.browser.signin.services.SigninManager;
+import org.monyhar.chrome.browser.sync.SyncService;
+import org.monyhar.components.signin.AccountUtils;
+import org.monyhar.components.signin.base.CoreAccountInfo;
+import org.monyhar.components.signin.identitymanager.ConsentLevel;
+import org.monyhar.components.signin.metrics.SigninAccessPoint;
+import org.monyhar.components.signin.metrics.SignoutReason;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.concurrent.TimeoutException;
 

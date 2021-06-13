@@ -13,16 +13,16 @@ console-log-linkify-…ack-in-errors.js:34 Error: Failed to execute 'removeChild
 console-log-linkify-…ack-in-errors.js:45 Error: some error
     at logError (console-log-linkify-…ack-in-errors.js:43)
     at console-log-linkify-…ack-in-errors.js:49
-console-log-linkify-…ack-in-errors.js:51 Error message without stacks http://www.chromium.org/
+console-log-linkify-…ack-in-errors.js:51 Error message without stacks http://www.monyhar.org/
 console-log-linkify-…ack-in-errors.js:53 Error valid stack #2
-    at www.chromium.org/boo.js:40
-    at foo(www.chromium.org/foo.js:10)
+    at www.monyhar.org/boo.js:40
+    at foo(www.monyhar.org/foo.js:10)
 console-log-linkify-…ack-in-errors.js:54 Error valid stack #3
-    at www.chromium.org/foo.js:40
+    at www.monyhar.org/foo.js:40
 console-log-linkify-…ack-in-errors.js:55 Error: MyError
-    at throwError (www.chromium.org/foo.js:40)
-    at eval (eval at <anonymous> (www.chromium.org/foo.js:42), <anonymous>:1:1)
-    at www.chromium.org/foo.js:239
+    at throwError (www.monyhar.org/foo.js:40)
+    at eval (eval at <anonymous> (www.monyhar.org/foo.js:42), <anonymous>:1:1)
+    at www.monyhar.org/foo.js:239
 console-log-linkify-…ack-in-errors.js:24 ReferenceError: valid stack
     at stack2 (console-log-linkify-…ack-in-errors.js:24)
     at stack1 (console-log-linkify-…ack-in-errors.js:26)

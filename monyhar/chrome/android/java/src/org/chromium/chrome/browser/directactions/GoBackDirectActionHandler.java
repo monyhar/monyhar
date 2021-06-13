@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.directactions;
+package org.monyhar.chrome.browser.directactions;
 
 /**
  * Maps the direct action {@code go_back} to the same behavior as the one defined when pressing the

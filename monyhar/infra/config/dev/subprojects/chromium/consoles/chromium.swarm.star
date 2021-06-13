@@ -3,9 +3,9 @@
 # found in the LICENSE file.
 
 luci.console_view(
-    name = "chromium.dev",
-    header = "//dev/chromium-header.textpb",
-    repo = "https://chromium.googlesource.com/chromium/src",
+    name = "monyhar.dev",
+    header = "//dev/monyhar-header.textpb",
+    repo = "https://monyhar.googlesource.com/monyhar/src",
     entries = [
         luci.console_view_entry(builder = "ci/android-lollipop-arm-rel-swarming"),
         luci.console_view_entry(builder = "ci/android-marshmallow-arm64-rel-swarming"),
@@ -16,9 +16,9 @@ luci.console_view(
 )
 
 luci.console_view(
-    name = "chromium.staging",
-    header = "//dev/chromium-header.textpb",
-    repo = "https://chromium.googlesource.com/chromium/src",
+    name = "monyhar.staging",
+    header = "//dev/monyhar-header.textpb",
+    repo = "https://monyhar.googlesource.com/monyhar/src",
     entries = [
         luci.console_view_entry(builder = "ci/linux-rel-swarming-staging"),
         luci.console_view_entry(builder = "ci/win-rel-swarming-staging"),

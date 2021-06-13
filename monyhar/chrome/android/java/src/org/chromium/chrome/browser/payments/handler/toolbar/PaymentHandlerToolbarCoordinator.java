@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments.handler.toolbar;
+package org.monyhar.chrome.browser.payments.handler.toolbar;
 
 import android.app.Activity;
 import android.view.View;
@@ -11,20 +11,20 @@ import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.offlinepages.OfflinePageUtils;
-import org.chromium.chrome.browser.page_info.ChromePageInfoControllerDelegate;
-import org.chromium.chrome.browser.payments.handler.toolbar.PaymentHandlerToolbarMediator.PaymentHandlerToolbarMediatorDelegate;
-import org.chromium.components.omnibox.SecurityStatusIcon;
-import org.chromium.components.page_info.PageInfoController;
-import org.chromium.components.security_state.ConnectionSecurityLevel;
-import org.chromium.components.security_state.SecurityStateModel;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.DeviceFormFactor;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
-import org.chromium.url.GURL;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.offlinepages.OfflinePageUtils;
+import org.monyhar.chrome.browser.page_info.ChromePageInfoControllerDelegate;
+import org.monyhar.chrome.browser.payments.handler.toolbar.PaymentHandlerToolbarMediator.PaymentHandlerToolbarMediatorDelegate;
+import org.monyhar.components.omnibox.SecurityStatusIcon;
+import org.monyhar.components.page_info.PageInfoController;
+import org.monyhar.components.security_state.ConnectionSecurityLevel;
+import org.monyhar.components.security_state.SecurityStateModel;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.DeviceFormFactor;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.url.GURL;
 
 /**
  * PaymentHandlerToolbar coordinator, which owns the component overall, i.e., creates other objects

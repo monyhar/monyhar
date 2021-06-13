@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.dialogs;
+package org.monyhar.chrome.browser.download.dialogs;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
@@ -26,30 +26,30 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.browser.download.DirectoryOption;
-import org.chromium.chrome.browser.download.DownloadDialogBridge;
-import org.chromium.chrome.browser.download.DownloadDialogBridgeJni;
-import org.chromium.chrome.browser.download.DownloadDirectoryProvider;
-import org.chromium.chrome.browser.download.DownloadLocationDialogType;
-import org.chromium.chrome.browser.download.DownloadPromptStatus;
-import org.chromium.chrome.browser.download.R;
-import org.chromium.chrome.browser.download.TestDownloadDirectoryProvider;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.preferences.Pref;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.components.browser_ui.modaldialog.AppModalPresenter;
-import org.chromium.components.browser_ui.util.DownloadUtils;
-import org.chromium.components.prefs.PrefService;
-import org.chromium.components.user_prefs.UserPrefs;
-import org.chromium.components.user_prefs.UserPrefsJni;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.test.util.DummyUiActivityTestCase;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.browser.download.DirectoryOption;
+import org.monyhar.chrome.browser.download.DownloadDialogBridge;
+import org.monyhar.chrome.browser.download.DownloadDialogBridgeJni;
+import org.monyhar.chrome.browser.download.DownloadDirectoryProvider;
+import org.monyhar.chrome.browser.download.DownloadLocationDialogType;
+import org.monyhar.chrome.browser.download.DownloadPromptStatus;
+import org.monyhar.chrome.browser.download.R;
+import org.monyhar.chrome.browser.download.TestDownloadDirectoryProvider;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.preferences.Pref;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.components.browser_ui.modaldialog.AppModalPresenter;
+import org.monyhar.components.browser_ui.util.DownloadUtils;
+import org.monyhar.components.prefs.PrefService;
+import org.monyhar.components.user_prefs.UserPrefs;
+import org.monyhar.components.user_prefs.UserPrefsJni;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.test.util.DummyUiActivityTestCase;
 
 import java.util.ArrayList;
 import java.util.HashMap;

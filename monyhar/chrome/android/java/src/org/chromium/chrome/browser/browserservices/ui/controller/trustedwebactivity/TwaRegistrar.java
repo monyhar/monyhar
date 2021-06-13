@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.ui.controller.trustedwebactivity;
+package org.monyhar.chrome.browser.browserservices.ui.controller.trustedwebactivity;
 
-import static org.chromium.chrome.browser.dependency_injection.ChromeCommonQualifiers.APP_CONTEXT;
+import static org.monyhar.chrome.browser.dependency_injection.ChromeCommonQualifiers.APP_CONTEXT;
 
 import android.content.Context;
 
-import org.chromium.chrome.browser.browserservices.permissiondelegation.PermissionUpdater;
-import org.chromium.components.embedder_support.util.Origin;
+import org.monyhar.chrome.browser.browserservices.permissiondelegation.PermissionUpdater;
+import org.monyhar.components.embedder_support.util.Origin;
 
 import java.util.HashSet;
 import java.util.Set;

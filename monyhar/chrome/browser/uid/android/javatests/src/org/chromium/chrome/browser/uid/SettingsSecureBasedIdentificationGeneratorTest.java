@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.uid;
+package org.monyhar.chrome.browser.uid;
 
 import androidx.test.filters.SmallTest;
 
@@ -10,11 +10,11 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.AdvancedMockContext;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.util.HashUtil;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.base.test.util.AdvancedMockContext;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.util.HashUtil;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
 
 /** Unit tests for {@link SettingsSecureBasedIdentificationGenerator}. */
 @RunWith(ChromeJUnit4ClassRunner.class)

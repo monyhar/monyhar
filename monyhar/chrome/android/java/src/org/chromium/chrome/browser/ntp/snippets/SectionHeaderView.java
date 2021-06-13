@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ntp.snippets;
+package org.monyhar.chrome.browser.ntp.snippets;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -24,21 +24,21 @@ import androidx.annotation.Nullable;
 
 import com.google.android.material.tabs.TabLayout;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.feed.FeedUma;
-import org.chromium.chrome.browser.user_education.IPHCommandBuilder;
-import org.chromium.chrome.browser.user_education.UserEducationHelper;
-import org.chromium.components.browser_ui.widget.highlight.PulseDrawable;
-import org.chromium.components.browser_ui.widget.highlight.ViewHighlighter.HighlightParams;
-import org.chromium.components.browser_ui.widget.highlight.ViewHighlighter.HighlightShape;
-import org.chromium.components.browser_ui.widget.listmenu.BasicListMenu;
-import org.chromium.components.browser_ui.widget.listmenu.ListMenu;
-import org.chromium.components.browser_ui.widget.listmenu.ListMenuButton;
-import org.chromium.components.browser_ui.widget.listmenu.ListMenuButtonDelegate;
-import org.chromium.components.feature_engagement.FeatureConstants;
-import org.chromium.ui.modelutil.MVCListAdapter.ModelList;
-import org.chromium.ui.widget.RectProvider;
-import org.chromium.ui.widget.ViewRectProvider;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.feed.FeedUma;
+import org.monyhar.chrome.browser.user_education.IPHCommandBuilder;
+import org.monyhar.chrome.browser.user_education.UserEducationHelper;
+import org.monyhar.components.browser_ui.widget.highlight.PulseDrawable;
+import org.monyhar.components.browser_ui.widget.highlight.ViewHighlighter.HighlightParams;
+import org.monyhar.components.browser_ui.widget.highlight.ViewHighlighter.HighlightShape;
+import org.monyhar.components.browser_ui.widget.listmenu.BasicListMenu;
+import org.monyhar.components.browser_ui.widget.listmenu.ListMenu;
+import org.monyhar.components.browser_ui.widget.listmenu.ListMenuButton;
+import org.monyhar.components.browser_ui.widget.listmenu.ListMenuButtonDelegate;
+import org.monyhar.components.feature_engagement.FeatureConstants;
+import org.monyhar.ui.modelutil.MVCListAdapter.ModelList;
+import org.monyhar.ui.widget.RectProvider;
+import org.monyhar.ui.widget.ViewRectProvider;
 
 /**
  * View for the header of the personalized feed that has a context menu to

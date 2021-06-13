@@ -1,6 +1,6 @@
 <!---
   The live version of this document can be viewed at:
-  https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/renderer/core/layout/README.md
+  https://monyhar.googlesource.com/monyhar/src/+/master/third_party/blink/renderer/core/layout/README.md
 -->
 
 # Blink Layout
@@ -17,7 +17,7 @@ Note that a new Blink layout system is under development. See the
 [LayoutNG design document](https://docs.google.com/document/d/1uxbDh4uONFQOiGuiumlJBLGgO4KDWB8ZEkp7Rd47fw4/preview).
 
 The layout code is maintained by the
-[layout team](http://dev.chromium.org/teams/layout-team).
+[layout team](http://dev.monyhar.org/teams/layout-team).
 
 ## Box model
 

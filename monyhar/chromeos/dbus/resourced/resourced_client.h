@@ -15,7 +15,7 @@ class Bus;
 
 namespace chromeos {
 
-// ResourcedClient is used to communicate with the org.chromium.ResourceManager
+// ResourcedClient is used to communicate with the org.monyhar.ResourceManager
 // service. The browser uses the ResourceManager service to get resource usage
 // status.
 class COMPONENT_EXPORT(RESOURCED) ResourcedClient {

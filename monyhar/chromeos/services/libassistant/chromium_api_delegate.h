@@ -5,7 +5,7 @@
 #ifndef CHROMEOS_SERVICES_LIBASSISTANT_CHROMIUM_API_DELEGATE_H_
 #define CHROMEOS_SERVICES_LIBASSISTANT_CHROMIUM_API_DELEGATE_H_
 
-#include "chromeos/services/libassistant/chromium_http_connection.h"
+#include "chromeos/services/libassistant/monyhar_http_connection.h"
 
 #include <memory>
 

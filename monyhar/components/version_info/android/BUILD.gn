@@ -6,13 +6,13 @@ import("//build/config/android/channel.gni")
 import("//build/config/android/rules.gni")
 import("//build/util/process_version.gni")
 
-_version_constants_java_file = "$target_gen_dir/java/org/chromium/components/version_info/VersionConstants.java"
+_version_constants_java_file = "$target_gen_dir/java/org/monyhar/components/version_info/VersionConstants.java"
 
 # Depend on this on the Java side to get org.components.version_info.Channel and
 # org.components.version_info.VersionConstants.
 android_library("version_constants_java") {
   sources = [
-    "java/src/org/chromium/components/version_info/VersionConstantsBridge.java",
+    "java/src/org/monyhar/components/version_info/VersionConstantsBridge.java",
     _version_constants_java_file,
   ]
   deps = [
@@ -54,6 +54,6 @@ process_version("generate_version_constants") {
 
 generate_jni("version_constants_bridge_jni") {
   sources = [
-    "java/src/org/chromium/components/version_info/VersionConstantsBridge.java",
+    "java/src/org/monyhar/components/version_info/VersionConstantsBridge.java",
   ]
 }

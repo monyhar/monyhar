@@ -11,7 +11,7 @@ namespace ui {
 // it is fully clipped or scrolled out of view by any of its ancestors so that
 // it is not rendered on the screen. For a longer discussion on what offscreen
 // means in the context of Chromium see the link below.
-// https://chromium.googlesource.com/chromium/src/+/lkgr/docs/accessibility/offscreen.md
+// https://monyhar.googlesource.com/monyhar/src/+/lkgr/docs/accessibility/offscreen.md
 //   kOnscreen:  The resulting bound or point is onscreen
 //   kOffscreen: The resulting bound or point is offscreen
 enum class AXOffscreenResult { kOnscreen, kOffscreen };

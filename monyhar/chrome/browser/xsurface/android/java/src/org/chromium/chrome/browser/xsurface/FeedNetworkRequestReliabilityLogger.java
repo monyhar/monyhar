@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.xsurface;
+package org.monyhar.chrome.browser.xsurface;
 
 /**
  * Interface for logging latency and availability signals for feed network requests. All timestamps
@@ -35,7 +35,7 @@ public interface FeedNetworkRequestReliabilityLogger {
      * otherwise.
      * @param timestamp Event time.
      * @param cronetStatusCode Network error code from
-     *         components/cronet/android/api/src/org/chromium/net/NetworkException.java. Pass {@link
+     *         components/cronet/android/api/src/org/monyhar/net/NetworkException.java. Pass {@link
      *         #NO_STATUS} if there's no error.
      * @param httpStatusCode HTTP status code. If there is no HTTP status code because there was a
      *         network error, pass {@link #NO_STATUS}.

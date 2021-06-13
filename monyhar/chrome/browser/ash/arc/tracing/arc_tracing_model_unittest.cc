@@ -40,7 +40,7 @@ constexpr char kAttachSurfaceQueury[] =
 constexpr char kTestEvent[] =
     R"({"pid":4640,"tid":4641,"id":"1234","ts":14241877057,"ph":"X","cat":"exo",
         "name":"Surface::Attach",
-        "args":{"buffer_id":"0x7f9f5110690","app_id":"org.chromium.arc.6"},
+        "args":{"buffer_id":"0x7f9f5110690","app_id":"org.monyhar.arc.6"},
         "dur":10,"tdur":9,"tts":1216670360})";
 constexpr char kTestEvent2[] =
     R"({"args":{},"cat":"exo","id2":{"local":"0x2df1a3130a10"},
@@ -48,7 +48,7 @@ constexpr char kTestEvent2[] =
         "ts":7654346859.0,"tts":93686437})";
 
 constexpr char kAppId[] = "app_id";
-constexpr char kAppIdValue[] = "org.chromium.arc.6";
+constexpr char kAppIdValue[] = "org.monyhar.arc.6";
 constexpr char kBufferId[] = "buffer_id";
 constexpr char kBufferIdBad[] = "_buffer_id";
 constexpr char kBufferIdValue[] = "0x7f9f5110690";

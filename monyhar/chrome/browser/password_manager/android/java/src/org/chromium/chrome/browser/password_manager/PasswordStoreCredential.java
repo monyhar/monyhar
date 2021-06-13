@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_manager;
+package org.monyhar.chrome.browser.password_manager;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.url.GURL;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.url.GURL;
 
 /**
  * This class represents key elements of stored credential in the password store.

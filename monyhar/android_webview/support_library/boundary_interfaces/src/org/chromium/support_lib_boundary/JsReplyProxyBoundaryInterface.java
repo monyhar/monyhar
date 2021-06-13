@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.support_lib_boundary;
+package org.monyhar.support_lib_boundary;
 
 /**
- * Boundary interface for org.chromium.android_webview.WebMessageListener.
+ * Boundary interface for org.monyhar.android_webview.WebMessageListener.
  */
 public interface JsReplyProxyBoundaryInterface extends IsomorphicObjectBoundaryInterface {
     void postMessage(String message);

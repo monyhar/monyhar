@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.content_creation.notes.fonts;
+package org.monyhar.chrome.browser.content_creation.notes.fonts;
 
 import android.app.Activity;
 import android.graphics.Typeface;
@@ -13,7 +13,7 @@ import android.os.Looper;
 import androidx.core.provider.FontRequest;
 import androidx.core.provider.FontsContractCompat;
 
-import org.chromium.content.R;
+import org.monyhar.content.R;
 
 import java.util.HashMap;
 import java.util.Map;

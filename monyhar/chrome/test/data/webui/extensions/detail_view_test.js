@@ -224,7 +224,7 @@ suite(extension_detail_view_tests.suiteName, function() {
       simplePermissions: [],
       runtimeHostPermissions: {
         hosts: [
-          {granted: true, host: 'https://chromium.org/*'},
+          {granted: true, host: 'https://monyhar.org/*'},
           {granted: false, host: 'https://example.com/*'}
         ],
         hasAllHosts: false,

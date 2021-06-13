@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.accessibility;
+package org.monyhar.content.browser.accessibility;
 
 import static android.view.accessibility.AccessibilityNodeInfo.EXTRA_DATA_TEXT_CHARACTER_LOCATION_ARG_LENGTH;
 import static android.view.accessibility.AccessibilityNodeInfo.EXTRA_DATA_TEXT_CHARACTER_LOCATION_ARG_START_INDEX;
@@ -16,8 +16,8 @@ import android.os.Bundle;
 import android.view.ViewStructure;
 import android.view.accessibility.AccessibilityNodeInfo;
 
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.content_public.browser.AccessibilitySnapshotNode;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.content_public.browser.AccessibilitySnapshotNode;
 
 import java.util.Arrays;
 

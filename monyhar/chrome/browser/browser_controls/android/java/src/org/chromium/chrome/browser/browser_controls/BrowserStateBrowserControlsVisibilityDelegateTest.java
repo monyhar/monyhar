@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browser_controls;
+package org.monyhar.chrome.browser.browser_controls;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-import static org.chromium.chrome.browser.browser_controls.BrowserStateBrowserControlsVisibilityDelegate.MINIMUM_SHOW_DURATION_MS;
+import static org.monyhar.chrome.browser.browser_controls.BrowserStateBrowserControlsVisibilityDelegate.MINIMUM_SHOW_DURATION_MS;
 
 import android.os.SystemClock;
 
@@ -21,10 +21,10 @@ import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowLooper;
 
-import org.chromium.base.Callback;
-import org.chromium.base.supplier.ObservableSupplierImpl;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.cc.input.BrowserControlsState;
+import org.monyhar.base.Callback;
+import org.monyhar.base.supplier.ObservableSupplierImpl;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.cc.input.BrowserControlsState;
 
 /**
  * Unit tests for the BrowserStateBrowserControlsVisibilityDelegate.

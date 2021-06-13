@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.night_mode;
+package org.monyhar.chrome.browser.night_mode;
 
-import static org.chromium.chrome.browser.preferences.ChromePreferenceKeys.UI_THEME_DARKEN_WEBSITES_ENABLED;
+import static org.monyhar.chrome.browser.preferences.ChromePreferenceKeys.UI_THEME_DARKEN_WEBSITES_ENABLED;
 
 import android.text.TextUtils;
 
-import org.chromium.base.ApplicationState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ApplicationStatus.ApplicationStateListener;
-import org.chromium.chrome.browser.preferences.Pref;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.user_prefs.UserPrefs;
+import org.monyhar.base.ApplicationState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ApplicationStatus.ApplicationStateListener;
+import org.monyhar.chrome.browser.preferences.Pref;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.user_prefs.UserPrefs;
 
 /**
  * A controller class could enable or disable web content dark mode feature based on the night mode

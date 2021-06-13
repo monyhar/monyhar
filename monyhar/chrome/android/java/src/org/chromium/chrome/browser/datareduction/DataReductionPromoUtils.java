@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.datareduction;
+package org.monyhar.chrome.browser.datareduction;
 
-import org.chromium.chrome.browser.about_settings.AboutSettingsBridge;
-import org.chromium.chrome.browser.net.spdyproxy.DataReductionProxySettings;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.about_settings.AboutSettingsBridge;
+import org.monyhar.chrome.browser.net.spdyproxy.DataReductionProxySettings;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
 
 /**
  * Helper functions for displaying the various data reduction proxy promos. The promo screens

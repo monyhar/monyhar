@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.browser;
+package org.monyhar.content_public.browser;
 
 import android.content.Context;
 import android.os.ResultReceiver;
@@ -11,8 +11,8 @@ import android.view.inputmethod.InputConnection;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.content.browser.input.ImeAdapterImpl;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.content.browser.input.ImeAdapterImpl;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Adapts and plumbs android IME service onto the chrome text input API.

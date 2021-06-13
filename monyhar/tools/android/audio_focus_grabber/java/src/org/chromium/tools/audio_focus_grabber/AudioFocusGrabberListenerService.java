@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.tools.audio_focus_grabber;
+package org.monyhar.tools.audio_focus_grabber;
 
 import android.app.PendingIntent;
 import android.app.Service;
@@ -16,8 +16,8 @@ import android.widget.RemoteViews;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.base.Log;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.Log;
 
 /**
  * The listener service, which listens to intents and perform audio focus actions.

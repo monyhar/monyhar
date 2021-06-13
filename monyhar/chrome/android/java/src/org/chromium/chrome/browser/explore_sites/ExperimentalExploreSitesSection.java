@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.explore_sites;
+package org.monyhar.chrome.browser.explore_sites;
 
 import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.native_page.NativePageNavigationDelegate;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.ui.base.PageTransition;
-import org.chromium.ui.display.DisplayAndroid;
-import org.chromium.ui.mojom.WindowOpenDisposition;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.native_page.NativePageNavigationDelegate;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.ui.base.PageTransition;
+import org.monyhar.ui.display.DisplayAndroid;
+import org.monyhar.ui.mojom.WindowOpenDisposition;
 
 import java.util.List;
 

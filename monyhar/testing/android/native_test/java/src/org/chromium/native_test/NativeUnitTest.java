@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.native_test;
+package org.monyhar.native_test;
 
 import android.app.Activity;
 
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.PathUtils;
-import org.chromium.base.PowerMonitor;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.build.NativeLibraries;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.PathUtils;
+import org.monyhar.base.PowerMonitor;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.build.NativeLibraries;
 
 /**
  * A helper for running native unit tests (i.e., not browser tests)

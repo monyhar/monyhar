@@ -17,13 +17,13 @@ class MethodCall;
 
 namespace chromeos {
 
-// Provider for the org.chromium.CryptohomeKeyDelegateInterface service
+// Provider for the org.monyhar.CryptohomeKeyDelegateInterface service
 // implementation.
 //
 // This service is called by the cryptohomed daemon for operations related to
 // user protection keys. See the interface definition in the Chrome OS repo in
 // src/platform2/cryptohome/dbus_bindings/
-//   org.chromium.CryptohomeKeyDelegateInterface.xml .
+//   org.monyhar.CryptohomeKeyDelegateInterface.xml .
 class CryptohomeKeyDelegateServiceProvider final
     : public CrosDBusService::ServiceProviderInterface {
  public:

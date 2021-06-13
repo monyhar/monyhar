@@ -17,7 +17,7 @@
     app:columnCount="3"
     app:rowCount="2">
 
-    <org.chromium.components.browser_ui.widget.async_image.AsyncImageView
+    <org.monyhar.components.browser_ui.widget.async_image.AsyncImageView
         android:id="@+id/thumbnail"
         android:layout_width="36dp"
         android:layout_height="36dp"
@@ -29,7 +29,7 @@
         app:layout_rowSpan="2"
         app:layout_gravity="center_vertical" />
 
-    <org.chromium.chrome.browser.download.home.view.SelectionView
+    <org.monyhar.chrome.browser.download.home.view.SelectionView
         android:id="@+id/selection"
         android:layout_width="36dp"
         android:layout_height="36dp"

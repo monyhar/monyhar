@@ -5,7 +5,7 @@ The segmentation platform is a platform that uses intelligence and machine learn
 
 
 Segmentation Platform is a layered component
-(https://sites.google.com/a/chromium.org/dev/developers/design-documents/layered-components-design)
+(https://sites.google.com/a/monyhar.org/dev/developers/design-documents/layered-components-design)
 to enable it to be easily used on all platforms.
 
 ## Code structure

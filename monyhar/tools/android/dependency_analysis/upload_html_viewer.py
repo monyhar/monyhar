@@ -10,7 +10,7 @@ import tempfile
 
 from pathlib import Path
 
-FIREBASE_PROJECT = 'chromium-dependency-graph'
+FIREBASE_PROJECT = 'monyhar-dependency-graph'
 JS_DIR = Path(__file__).parent / 'js'
 
 

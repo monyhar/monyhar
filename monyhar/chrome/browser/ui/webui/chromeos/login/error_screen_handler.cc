@@ -6,7 +6,7 @@
 
 #include "base/time/time.h"
 #include "chrome/browser/ash/login/screens/error_screen.h"
-#include "chrome/grit/chromium_strings.h"
+#include "chrome/grit/monyhar_strings.h"
 #include "chrome/grit/generated_resources.h"
 #include "components/login/localized_values_builder.h"
 #include "ui/chromeos/devicetype_utils.h"

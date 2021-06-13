@@ -6,15 +6,15 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/browserservices/intents/BitmapHelper.java",
-    "java/src/org/chromium/chrome/browser/browserservices/intents/BrowserServicesIntentDataProvider.java",
-    "java/src/org/chromium/chrome/browser/browserservices/intents/ColorProvider.java",
-    "java/src/org/chromium/chrome/browser/browserservices/intents/CustomButtonParams.java",
-    "java/src/org/chromium/chrome/browser/browserservices/intents/WebApkExtras.java",
-    "java/src/org/chromium/chrome/browser/browserservices/intents/WebApkShareTarget.java",
-    "java/src/org/chromium/chrome/browser/browserservices/intents/WebDisplayMode.java",
-    "java/src/org/chromium/chrome/browser/browserservices/intents/WebappExtras.java",
-    "java/src/org/chromium/chrome/browser/browserservices/intents/WebappIcon.java",
+    "java/src/org/monyhar/chrome/browser/browserservices/intents/BitmapHelper.java",
+    "java/src/org/monyhar/chrome/browser/browserservices/intents/BrowserServicesIntentDataProvider.java",
+    "java/src/org/monyhar/chrome/browser/browserservices/intents/ColorProvider.java",
+    "java/src/org/monyhar/chrome/browser/browserservices/intents/CustomButtonParams.java",
+    "java/src/org/monyhar/chrome/browser/browserservices/intents/WebApkExtras.java",
+    "java/src/org/monyhar/chrome/browser/browserservices/intents/WebApkShareTarget.java",
+    "java/src/org/monyhar/chrome/browser/browserservices/intents/WebDisplayMode.java",
+    "java/src/org/monyhar/chrome/browser/browserservices/intents/WebappExtras.java",
+    "java/src/org/monyhar/chrome/browser/browserservices/intents/WebappIcon.java",
   ]
   deps = [
     "//base:base_java",

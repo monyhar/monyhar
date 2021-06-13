@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.test.broker;
+package org.monyhar.test.broker;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -17,15 +17,15 @@ import android.util.Log;
 public class OnDeviceInstrumentationBroker extends Activity {
 
     public static final String EXTRA_INSTRUMENTATION_PACKAGE =
-            "org.chromium.test.broker.OnDeviceInstrumentationBroker."
+            "org.monyhar.test.broker.OnDeviceInstrumentationBroker."
                     + "InstrumentationPackage";
     public static final String EXTRA_INSTRUMENTATION_CLASS =
-            "org.chromium.test.broker.OnDeviceInstrumentationBroker."
+            "org.monyhar.test.broker.OnDeviceInstrumentationBroker."
                     + "InstrumentationClass";
     public static final String EXTRA_TARGET_ARGS =
-            "org.chromium.test.broker.OnDeviceInstrumentationBroker.TargetArgs";
+            "org.monyhar.test.broker.OnDeviceInstrumentationBroker.TargetArgs";
     public static final String EXTRA_TEST =
-            "org.chromium.test.broker.OnDeviceInstrumentationBroker.Test";
+            "org.monyhar.test.broker.OnDeviceInstrumentationBroker.Test";
 
     private static final String TAG = "OnDeviceInstrumentationBroker";
 

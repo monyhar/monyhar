@@ -233,7 +233,7 @@ DeviceUserDomainJoinState AreDeviceAndUserJoinedToDomain() {
           [record valuesForAttribute:kODAttributeTypeMetaRecordName error:nil];
       for (id attribute in attributes) {
         NSString* attribute_value = mac::ObjCCastStrict<NSString>(attribute);
-        // Example: "uid=johnsmith,ou=People,dc=chromium,dc=org
+        // Example: "uid=johnsmith,ou=People,dc=monyhar,dc=org
         NSRange domain_controller =
             [attribute_value rangeOfString:@"(^|,)\\s*dc="
                                    options:NSRegularExpressionSearch];

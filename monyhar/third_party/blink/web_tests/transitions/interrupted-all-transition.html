@@ -33,7 +33,7 @@
     'use strict';
 
     // It may take a number of frames before the property updates.
-    // https://bugs.chromium.org/p/chromium/issues/detail?id=679981
+    // https://bugs.monyhar.org/p/monyhar/issues/detail?id=679981
     function waitForProgress() {
       var initialLeft = getComputedStyle(box).left;
       return new Promise(resolve => {

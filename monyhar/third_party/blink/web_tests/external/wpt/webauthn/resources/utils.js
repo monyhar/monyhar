@@ -154,7 +154,7 @@ function parseAuthenticatorData(authenticatorData) {
 }
 
 // Taken from
-// https://cs.chromium.org/chromium/src/chrome/browser/resources/cryptotoken/cbor.js?rcl=c9b6055cf9c158fb4119afd561a591f8fc95aefe
+// https://cs.monyhar.org/monyhar/src/chrome/browser/resources/cryptotoken/cbor.js?rcl=c9b6055cf9c158fb4119afd561a591f8fc95aefe
 class Cbor {
   constructor(buffer) {
     this.slice = new Uint8Array(buffer);

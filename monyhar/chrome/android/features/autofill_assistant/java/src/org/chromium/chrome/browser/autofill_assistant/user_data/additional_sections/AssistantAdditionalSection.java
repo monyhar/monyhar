@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.user_data.additional_sections;
+package org.monyhar.chrome.browser.autofill_assistant.user_data.additional_sections;
 
 import android.view.View;
 
-import org.chromium.chrome.browser.autofill_assistant.generic_ui.AssistantValue;
+import org.monyhar.chrome.browser.autofill_assistant.generic_ui.AssistantValue;
 
 /** Interface for an additional section of the user data form. */
 public interface AssistantAdditionalSection {

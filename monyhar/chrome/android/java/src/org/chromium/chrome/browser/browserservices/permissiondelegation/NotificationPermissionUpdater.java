@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.permissiondelegation;
+package org.monyhar.chrome.browser.browserservices.permissiondelegation;
 
 import android.content.ComponentName;
 
 import androidx.annotation.WorkerThread;
 
-import org.chromium.base.Log;
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.browser.browserservices.TrustedWebActivityClient;
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.components.embedder_support.util.Origin;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.base.Log;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.browser.browserservices.TrustedWebActivityClient;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.components.embedder_support.util.Origin;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;

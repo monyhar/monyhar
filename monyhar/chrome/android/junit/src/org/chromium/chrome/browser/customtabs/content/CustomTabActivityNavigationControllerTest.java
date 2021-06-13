@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs.content;
+package org.monyhar.chrome.browser.customtabs.content;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyInt;
@@ -24,15 +24,15 @@ import org.mockito.MockitoAnnotations;
 import org.mockito.stubbing.Answer;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.task.TaskTraits;
-import org.chromium.base.task.test.ShadowPostTask;
-import org.chromium.chrome.browser.customtabs.content.CustomTabActivityNavigationController.FinishHandler;
-import org.chromium.chrome.browser.customtabs.content.CustomTabActivityNavigationController.FinishReason;
-import org.chromium.chrome.browser.customtabs.shadows.ShadowExternalNavigationDelegateImpl;
-import org.chromium.chrome.browser.flags.ActivityType;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.testing.local.LocalRobolectricTestRunner;
-import org.chromium.url.GURL;
+import org.monyhar.base.task.TaskTraits;
+import org.monyhar.base.task.test.ShadowPostTask;
+import org.monyhar.chrome.browser.customtabs.content.CustomTabActivityNavigationController.FinishHandler;
+import org.monyhar.chrome.browser.customtabs.content.CustomTabActivityNavigationController.FinishReason;
+import org.monyhar.chrome.browser.customtabs.shadows.ShadowExternalNavigationDelegateImpl;
+import org.monyhar.chrome.browser.flags.ActivityType;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.url.GURL;
 
 /**
  * Unit tests for {@link CustomTabActivityNavigationController}.

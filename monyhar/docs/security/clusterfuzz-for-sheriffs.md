@@ -47,7 +47,7 @@ Therefore, do this instead:
   ```
   <script src="file:///gen/mojo/public/js/mojo_bindings_lite.js">
   ```
-  This works because most of the ClusterFuzz Chrome binaries are [now built with](https://chromium-review.googlesource.com/c/chromium/src/+/1119727) `enable_ipc_fuzzer=true`.
+  This works because most of the ClusterFuzz Chrome binaries are [now built with](https://monyhar-review.googlesource.com/c/monyhar/src/+/1119727) `enable_ipc_fuzzer=true`.
 * If you believe the bug will reproduce on Linux, use the [linux_asan_chrome_mojo](https://clusterfuzz.com/upload-testcase?upload=true&job=linux_asan_chrome_mojo) job type.
 * If you believe the bug will only reproduce on Android, [ClusterFuzz can't help right now](https://crbug.com/1067103).
 * Otherwise, use any job type but specify extra command-line flags `--enable-blink-features=MojoJS`. In this case, ClusterFuzz might declare that a browser process crash is Critical severity, whereas because of the precondition of a compromised renderer [you may wish to adjust it down to High](severity-guidelines.md).

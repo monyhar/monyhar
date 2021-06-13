@@ -125,7 +125,7 @@ ExceptionSwallower::ExceptionSwallower() : exception_swallower_thread_() {
   }
 
   std::string service_name =
-      base::StringPrintf("org.chromium.crashpad.test.exception_swallower.%d.%s",
+      base::StringPrintf("org.monyhar.crashpad.test.exception_swallower.%d.%s",
                          getpid(),
                          RandomString().c_str());
   base::mac::ScopedMachReceiveRight receive_right(

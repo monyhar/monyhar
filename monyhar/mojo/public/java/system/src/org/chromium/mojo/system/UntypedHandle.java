@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo.system;
+package org.monyhar.mojo.system;
 
-import org.chromium.mojo.system.DataPipe.ConsumerHandle;
-import org.chromium.mojo.system.DataPipe.ProducerHandle;
+import org.monyhar.mojo.system.DataPipe.ConsumerHandle;
+import org.monyhar.mojo.system.DataPipe.ProducerHandle;
 
 /**
  * A mojo handle of unknown type. This handle can be typed by using one of its methods, which will
@@ -15,7 +15,7 @@ import org.chromium.mojo.system.DataPipe.ProducerHandle;
 public interface UntypedHandle extends Handle {
 
     /**
-     * @see org.chromium.mojo.system.Handle#pass()
+     * @see org.monyhar.mojo.system.Handle#pass()
      */
     @Override
     public UntypedHandle pass();

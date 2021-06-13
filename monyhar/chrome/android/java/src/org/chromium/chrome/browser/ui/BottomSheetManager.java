@@ -2,40 +2,40 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui;
+package org.monyhar.chrome.browser.ui;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
-import org.chromium.base.CallbackController;
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.base.supplier.OneshotSupplier;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.ActivityTabProvider;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsVisibilityManager;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanel;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanelManager;
-import org.chromium.chrome.browser.lifecycle.DestroyObserver;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabObserver;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
-import org.chromium.chrome.browser.util.ChromeAccessibilityUtil;
-import org.chromium.chrome.browser.vr.VrModuleProvider;
-import org.chromium.chrome.features.start_surface.StartSurface;
-import org.chromium.chrome.features.start_surface.StartSurface.StateObserver;
-import org.chromium.chrome.features.start_surface.StartSurfaceState;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetContent;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController.StateChangeReason;
-import org.chromium.components.browser_ui.bottomsheet.EmptyBottomSheetObserver;
-import org.chromium.components.browser_ui.bottomsheet.ManagedBottomSheetController;
-import org.chromium.content_public.browser.SelectionPopupController;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.util.TokenHolder;
-import org.chromium.ui.vr.VrModeObserver;
-import org.chromium.url.GURL;
+import org.monyhar.base.Callback;
+import org.monyhar.base.CallbackController;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.base.supplier.OneshotSupplier;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.ActivityTabProvider;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsVisibilityManager;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanel;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanelManager;
+import org.monyhar.chrome.browser.lifecycle.DestroyObserver;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabObserver;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.chrome.browser.util.ChromeAccessibilityUtil;
+import org.monyhar.chrome.browser.vr.VrModuleProvider;
+import org.monyhar.chrome.features.start_surface.StartSurface;
+import org.monyhar.chrome.features.start_surface.StartSurface.StateObserver;
+import org.monyhar.chrome.features.start_surface.StartSurfaceState;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetContent;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController.StateChangeReason;
+import org.monyhar.components.browser_ui.bottomsheet.EmptyBottomSheetObserver;
+import org.monyhar.components.browser_ui.bottomsheet.ManagedBottomSheetController;
+import org.monyhar.content_public.browser.SelectionPopupController;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.util.TokenHolder;
+import org.monyhar.ui.vr.VrModeObserver;
+import org.monyhar.url.GURL;
 
 /**
  * A class that manages activity-specific interactions with the BottomSheet component that it

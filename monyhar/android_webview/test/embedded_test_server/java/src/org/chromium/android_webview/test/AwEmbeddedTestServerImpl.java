@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
 import android.content.Context;
 
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.net.test.EmbeddedTestServerImpl;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.net.test.EmbeddedTestServerImpl;
 
 /**
  * Java bindings for running a net::test_server::EmbeddedTestServer.

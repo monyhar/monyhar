@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.paintpreview.player.frame;
+package org.monyhar.components.paintpreview.player.frame;
 
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.inOrder;
@@ -24,9 +24,9 @@ import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowLooper;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.components.paintpreview.player.OverscrollHandler;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.components.paintpreview.player.OverscrollHandler;
 
 /**
  * Tests for the {@link PlayerFrameScrollController} class.

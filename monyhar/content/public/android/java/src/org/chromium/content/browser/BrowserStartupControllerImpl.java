@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import android.content.Context;
 import android.os.StrictMode;
@@ -10,23 +10,23 @@ import android.os.StrictMode;
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.BuildInfo;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.library_loader.LibraryProcessType;
-import org.chromium.base.library_loader.LoaderErrors;
-import org.chromium.base.library_loader.ProcessInitException;
-import org.chromium.base.metrics.ScopedSysTraceEvent;
-import org.chromium.base.task.PostTask;
-import org.chromium.content.app.ContentMain;
-import org.chromium.content.browser.ServicificationStartupUma.ServicificationStartup;
-import org.chromium.content_public.browser.BrowserStartupController;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.library_loader.LibraryProcessType;
+import org.monyhar.base.library_loader.LoaderErrors;
+import org.monyhar.base.library_loader.ProcessInitException;
+import org.monyhar.base.metrics.ScopedSysTraceEvent;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.content.app.ContentMain;
+import org.monyhar.content.browser.ServicificationStartupUma.ServicificationStartup;
+import org.monyhar.content_public.browser.BrowserStartupController;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -434,7 +434,7 @@ public class BrowserStartupControllerImpl implements BrowserStartupController {
         if (mPrepareToStartCompleted) {
             return;
         }
-        Log.d(TAG, "Initializing chromium process, singleProcess=%b", singleProcess);
+        Log.d(TAG, "Initializing monyhar process, singleProcess=%b", singleProcess);
         mPrepareToStartCompleted = true;
         try (ScopedSysTraceEvent e = ScopedSysTraceEvent.scoped("prepareToStartBrowserProcess")) {
             // This strictmode exception is to cover the case where the browser process is being

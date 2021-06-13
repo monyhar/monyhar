@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.firstrun;
+package org.monyhar.chrome.browser.firstrun;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,15 +13,15 @@ import android.widget.Button;
 
 import androidx.fragment.app.Fragment;
 
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.locale.LocaleManager;
-import org.chromium.chrome.browser.search_engines.DefaultSearchEngineDialogHelper;
-import org.chromium.chrome.browser.search_engines.SearchEnginePromoType;
-import org.chromium.chrome.browser.search_engines.TemplateUrlServiceFactory;
-import org.chromium.components.browser_ui.widget.RadioButtonLayout;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.locale.LocaleManager;
+import org.monyhar.chrome.browser.search_engines.DefaultSearchEngineDialogHelper;
+import org.monyhar.chrome.browser.search_engines.SearchEnginePromoType;
+import org.monyhar.chrome.browser.search_engines.TemplateUrlServiceFactory;
+import org.monyhar.components.browser_ui.widget.RadioButtonLayout;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 /** A {@link Fragment} that presents a set of search engines for the user to choose from. */
 public class DefaultSearchEngineFirstRunFragment extends Fragment implements FirstRunFragment {

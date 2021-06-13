@@ -21,10 +21,10 @@ Wildcards can be used to run specific sets of tests:
 * Run all VP8 tests: `tast run $HOST video.EncodeAccel.vp8*`
 
 Check the
-[tast video folder](https://chromium.googlesource.com/chromiumos/platform/tast-tests/+/refs/heads/main/src/chromiumos/tast/local/bundles/cros/video/)
+[tast video folder](https://monyhar.googlesource.com/monyharos/platform/tast-tests/+/refs/heads/main/src/monyharos/tast/local/bundles/cros/video/)
 for a list of all available tests.
 See the
-[Tast quickstart guide](https://chromium.googlesource.com/chromiumos/platform/tast/+/HEAD/docs/quickstart.md)
+[Tast quickstart guide](https://monyhar.googlesource.com/monyharos/platform/tast/+/HEAD/docs/quickstart.md)
 for more information about the Tast framework.
 
 ## Running manually
@@ -45,9 +45,9 @@ target.
 e.g.: `./video_encode_accelerator_perf_tests bear_320x192_40frames.yuv.webm`
 
 __Test videos:__ Various test videos are present in the
-[_media/test/data_](https://cs.chromium.org/chromium/src/media/test/data/)
+[_media/test/data_](https://cs.monyhar.org/monyhar/src/media/test/data/)
 folder in Chromium's source tree (e.g.
-[_bear_320x192_40frames.yuv.webm_](https://cs.chromium.org/chromium/src/media/test/data/bear_320x192_40frames.yuv.webm)).
+[_bear_320x192_40frames.yuv.webm_](https://cs.monyhar.org/monyhar/src/media/test/data/bear_320x192_40frames.yuv.webm)).
 These videos are stored in compressed format and extracted at the start of each
 test run, as storing uncompressed videos requires a lot of disk space. Currently
 only VP9 or uncompressed videos are supported as test input. If no video is
@@ -58,7 +58,7 @@ that needs to be deployed alongside the test video. The video metadata file is a
 simple json file that contains info about the video such as its pixel format,
 dimensions, framerate and number of frames. These can also be found in the
 _media/test/data_ folder (e.g.
-[_bear_320x192_40frames.yuv.webm.json_](https://cs.chromium.org/chromium/src/media/test/data/bear_320x192_40frames.yuv.webm.json)).
+[_bear_320x192_40frames.yuv.webm.json_](https://cs.monyhar.org/monyhar/src/media/test/data/bear_320x192_40frames.yuv.webm.json)).
 The metadata file must be _\<video path\>.json_ in the same directory.
 
 ## Command line options
@@ -95,5 +95,5 @@ Non-performance tests only:
     --output_limit        limit the number of images saved to disk.
 
 ## Source code
-See the video encoder tests [source code](https://cs.chromium.org/chromium/src/media/gpu/video_encode_accelerator_tests.cc).
-See the video encoder performance tests [source code](https://cs.chromium.org/chromium/src/media/gpu/video_encode_accelerator_perf_tests.cc).
+See the video encoder tests [source code](https://cs.monyhar.org/monyhar/src/media/gpu/video_encode_accelerator_tests.cc).
+See the video encoder performance tests [source code](https://cs.monyhar.org/monyhar/src/media/gpu/video_encode_accelerator_perf_tests.cc).

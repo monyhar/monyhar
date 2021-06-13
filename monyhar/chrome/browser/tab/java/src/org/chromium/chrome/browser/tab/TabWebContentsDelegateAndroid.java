@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab;
+package org.monyhar.chrome.browser.tab;
 
 import android.graphics.Rect;
 
-import org.chromium.components.embedder_support.delegate.WebContentsDelegateAndroid;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.components.embedder_support.delegate.WebContentsDelegateAndroid;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * A basic {@link WebContentsDelegateAndroid} that proxies methods into Tab.

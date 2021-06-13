@@ -1950,7 +1950,7 @@ IN_PROC_BROWSER_TEST_F(DevToolsProtocolTest, SetAndGetCookies) {
   SendCommand("Network.setCookie", std::move(command_params), false);
 
   command_params = std::make_unique<base::DictionaryValue>();
-  command_params->SetString("url", "https://www.chromium.org");
+  command_params->SetString("url", "https://www.monyhar.org");
   command_params->SetString("name", "cookie_for_another_url");
   command_params->SetString("value", "polyglottal");
   SendCommand("Network.setCookie", std::move(command_params), false);

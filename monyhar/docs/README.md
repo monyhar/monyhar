@@ -1,10 +1,10 @@
 # Chromium docs
 
-This directory contains chromium project documentation in
+This directory contains monyhar project documentation in
 [Gitiles-flavored Markdown].  It is automatically [rendered by Gitiles].
 
 [Gitiles-flavored Markdown]: https://gerrit.googlesource.com/gitiles/+/master/Documentation/markdown.md
-[rendered by Gitiles]: https://chromium.googlesource.com/chromium/src/+/main/docs/
+[rendered by Gitiles]: https://monyhar.googlesource.com/monyhar/src/+/main/docs/
 
 If you add new documents, please also add a link to them in the Document Index
 below.
@@ -19,7 +19,7 @@ Markdown documents must follow the
 ### Preview local changes using [md_browser](../tools/md_browser/):
 
 ```bash
-# in chromium checkout
+# in monyhar checkout
 ./tools/md_browser/md_browser.py
 ```
 
@@ -28,9 +28,9 @@ This is only an estimate. The **gitiles** view may differ.
 ### Review changes online with gerrit's links to gitiles:
 
 1.  Upload a patch to gerrit, or receive a review request.
-    e.g. https://chromium-review.googlesource.com/c/572236
+    e.g. https://monyhar-review.googlesource.com/c/572236
 2.  View a specific .md file.
-    e.g. https://chromium-review.googlesource.com/c/572236/2/docs/README.md
+    e.g. https://monyhar-review.googlesource.com/c/572236/2/docs/README.md
 3.  Click on **gitiles** link at top of page.
 
 This **gitiles** view is the authoritative view, exactly the same as will be
@@ -53,7 +53,7 @@ used when committed.
 *   [iOS Build Instructions](ios/build_instructions.md) - iOS target (on a MacOS
     host)
 *   [Chrome OS Build Instructions](chromeos_build_instructions.md) - Chrome OS
-*   [Linux Chromium ARM Recipes](linux/chromium_arm.md) - Recipes for building
+*   [Linux Chromium ARM Recipes](linux/monyhar_arm.md) - Recipes for building
     Chromium for ARM on Linux.
 *   [Chrome Component Build](component_build.md) - Faster builds using more
     libraries
@@ -130,7 +130,7 @@ used when committed.
     features to browser tabs.
 *   [Adding third_party Libraries](adding_to_third_party.md) - How to get code
     into third_party/
-*   [Graphical Debugging Aid for Chromium Views](graphical_debugging_aid_chromium_views.md) -
+*   [Graphical Debugging Aid for Chromium Views](graphical_debugging_aid_monyhar_views.md) -
     Visualizing view trees during debugging
 *   [Bitmap Pipeline](bitmap_pipeline.md) - How bitmaps are moved from the
     renderer to the screen.
@@ -218,7 +218,7 @@ used when committed.
     to route requests from the bottom of the call stack up into the browser.
 *   [Linux Dev Build as Default Browser](linux/dev_build_as_default_browser.md) -
     How to configure a Dev build of Chrome as the default browser in Linux.
-*   [Linux Chromium Packages](linux/chromium_packages.md) - Packages of Chromium
+*   [Linux Chromium Packages](linux/monyhar_packages.md) - Packages of Chromium
     browser (not Chrome) provided by some Linux distributions.
 *   [`seccomp` Sandbox Crash Dumping](seccomp_sandbox_crash_dumping.md) - Notes
     on crash dumping a process running in a seccomp sandbox.
@@ -254,7 +254,7 @@ used when committed.
 
 ### Misc Windows-Specific Docs
 *   [Handling cygwin rebaseall failures](cygwin_dll_remapping_failure.md)
-*   [Hacking on ANGLE in Chromium](angle_in_chromium.md) - OpenGL ES 2.0 built
+*   [Hacking on ANGLE in Chromium](angle_in_monyhar.md) - OpenGL ES 2.0 built
     on top of DirectX
 *   [Windows Split DLLs](windows_split_dll.md) - Splitting `chrome.dll` into
     multiple dlls to work around toolchain limitations on Windows.
@@ -376,7 +376,7 @@ used when committed.
     Chromium/IRC/Google
 *   [Documentation Best Practices](documentation_best_practices.md)
 *   [Documentation Guidelines](documentation_guidelines.md)
-*   [Chromium Browser vs Google Chrome](chromium_browser_vs_google_chrome.md) -
+*   [Chromium Browser vs Google Chrome](monyhar_browser_vs_google_chrome.md) -
     What's the difference between _Chromium Browser_ and _Google Chrome_?
 *   [Google Chrome branded builds](google_chrome_branded_builds.md)
 *   [Proxy Auto Config using WPAD](proxy_auto_config.md) - How WPAD servers are

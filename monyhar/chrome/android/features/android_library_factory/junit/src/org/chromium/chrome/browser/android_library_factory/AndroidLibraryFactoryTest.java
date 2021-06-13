@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.android_library_factory;
+package org.monyhar.chrome.browser.android_library_factory;
 
 import static org.junit.Assert.assertNotNull;
 
@@ -12,7 +12,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
 
 /**
  * Test that javatests can access package private methods when android_library_factory() is

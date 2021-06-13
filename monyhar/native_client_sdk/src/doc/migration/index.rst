@@ -28,7 +28,7 @@ flag in chrome://flags can also be used to enable PNaCl locally for testing
 
 We also recently announced the deprecation Q1 2018 of
 `Chrome Apps
-<https://blog.chromium.org/2016/08/from-chrome-apps-to-web.html>`_
+<https://blog.monyhar.org/2016/08/from-chrome-apps-to-web.html>`_
 outside of Chrome OS.
 
 

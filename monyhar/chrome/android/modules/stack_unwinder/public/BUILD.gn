@@ -5,7 +5,7 @@
 import("//build/config/android/rules.gni")
 
 android_library("java") {
-  sources = [ "java/src/org/chromium/chrome/modules/stack_unwinder/StackUnwinderModuleContents.java" ]
+  sources = [ "java/src/org/monyhar/chrome/modules/stack_unwinder/StackUnwinderModuleContents.java" ]
   deps = [
     "//base:base_java",
     "//components/module_installer/android:module_installer_java",

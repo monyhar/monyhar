@@ -1,5 +1,5 @@
-mek@chromium.org
-jbroman@chromium.org
+mek@monyhar.org
+jbroman@monyhar.org
 
 per-file *.mojom=set noparent
 per-file *.mojom=file://ipc/SECURITY_OWNERS

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webapk.shell_apk;
+package org.monyhar.webapk.shell_apk;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -12,7 +12,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 
-import org.chromium.webapk.lib.common.WebApkConstants;
+import org.monyhar.webapk.lib.common.WebApkConstants;
 
 /** Contains methods for launching host browser. */
 public class HostBrowserLauncher {
@@ -25,7 +25,7 @@ public class HostBrowserLauncher {
             "com.google.android.apps.chrome.webapps.WebappManager.ACTION_START_WEBAPP";
 
     // Must stay in sync with
-    // {@link org.chromium.chrome.browser.ShortcutHelper#REUSE_URL_MATCHING_TAB_ELSE_NEW_TAB}.
+    // {@link org.monyhar.chrome.browser.ShortcutHelper#REUSE_URL_MATCHING_TAB_ELSE_NEW_TAB}.
     private static final String REUSE_URL_MATCHING_TAB_ELSE_NEW_TAB =
             "REUSE_URL_MATCHING_TAB_ELSE_NEW_TAB";
 

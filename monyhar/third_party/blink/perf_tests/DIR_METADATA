@@ -1,4 +1,4 @@
 monorail {
   component: "Speed>Benchmark"
 }
-team_email: "benchmarking-dev@chromium.org"
+team_email: "benchmarking-dev@monyhar.org"

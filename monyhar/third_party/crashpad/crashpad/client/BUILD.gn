@@ -66,13 +66,13 @@ crashpad_static_library("client") {
 
   public_deps = [
     ":common",
-    "../third_party/mini_chromium:base",
+    "../third_party/mini_monyhar:base",
     "../util",
   ]
 
   deps = [
     ":common",
-    "../third_party/mini_chromium:chromeos_buildflags",
+    "../third_party/mini_monyhar:chromeos_buildflags",
   ]
 
   if (crashpad_is_win) {
@@ -132,7 +132,7 @@ static_library("common") {
 
   public_configs = [ "..:crashpad_config" ]
   public_deps = [
-    "../third_party/mini_chromium:base",
+    "../third_party/mini_monyhar:base",
     "../util",
   ]
   deps = [ "../util" ]
@@ -181,7 +181,7 @@ source_set("client_test") {
     "../test",
     "../third_party/googletest:googlemock",
     "../third_party/googletest:googletest",
-    "../third_party/mini_chromium:base",
+    "../third_party/mini_monyhar:base",
     "../util",
   ]
 

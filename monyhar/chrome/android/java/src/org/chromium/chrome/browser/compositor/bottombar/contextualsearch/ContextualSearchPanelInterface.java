@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.bottombar.contextualsearch;
+package org.monyhar.chrome.browser.compositor.bottombar.contextualsearch;
 
 import android.graphics.Rect;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanel.PanelState;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanel.StateChangeReason;
-import org.chromium.chrome.browser.contextualsearch.ContextualSearchManagementDelegate;
-import org.chromium.chrome.browser.contextualsearch.ResolvedSearchTerm.CardTag;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanel.PanelState;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanel.StateChangeReason;
+import org.monyhar.chrome.browser.contextualsearch.ContextualSearchManagementDelegate;
+import org.monyhar.chrome.browser.contextualsearch.ResolvedSearchTerm.CardTag;
+import org.monyhar.content_public.browser.WebContents;
 
 import java.util.List;
 

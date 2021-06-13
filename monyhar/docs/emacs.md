@@ -12,7 +12,7 @@
 `flymake.el` on each buffer-save:
 
 
-    (load-file "src/tools/emacs/flymake-chromium.el")
+    (load-file "src/tools/emacs/flymake-monyhar.el")
 
 ## [ycmd](https://github.com/Valloric/ycmd) (YouCompleteMe) + flycheck
 
@@ -57,7 +57,7 @@ flycheck provides:
 
         ```shell
         cd ~/dev/blink
-        ln -s src/tools/vim/chromium.ycm_extra_conf.py .ycm_extra_conf.py
+        ln -s src/tools/vim/monyhar.ycm_extra_conf.py .ycm_extra_conf.py
         ```
 
     1.  Add something like the following to your `init.el`
@@ -151,7 +151,7 @@ specific) that always finds, try this:
 ```
 
 _Note: if you know an easy way to change the ff-get-other-file behavior, please
-replace this hack with that solution! - stevenjb@chromium.org_
+replace this hack with that solution! - stevenjb@monyhar.org_
 
 ## Use Google's C++ style!
 
@@ -160,7 +160,7 @@ We have an emacs module,
 which adds c-mode formatting. Then add to your .emacs:
 
 ```el
-(load "/<path/to/chromium>/src/buildtools/clang_format/script/clang-format.el")
+(load "/<path/to/monyhar>/src/buildtools/clang_format/script/clang-format.el")
 (add-hook 'c-mode-common-hook
     (function (lambda () (local-set-key (kbd "TAB") 'clang-format-region))))
 ```

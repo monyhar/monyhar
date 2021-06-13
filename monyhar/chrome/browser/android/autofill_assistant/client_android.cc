@@ -294,7 +294,7 @@ base::android::ScopedJavaLocalRef<jobjectArray> ClientAndroid::GetDirectActions(
   // Prepare the java array to hold the direct actions.
   base::android::ScopedJavaLocalRef<jclass> directaction_array_class =
       base::android::GetClass(env,
-                              "org/chromium/chrome/browser/autofill_assistant/"
+                              "org/monyhar/chrome/browser/autofill_assistant/"
                               "AutofillAssistantDirectActionImpl",
                               "autofill_assistant");
 

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.media;
+package org.monyhar.components.browser_ui.media;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -11,7 +11,7 @@ import android.graphics.Paint;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.SysUtils;
+import org.monyhar.base.SysUtils;
 
 /** A collection of utilities and constants for the images used in MediaSession notifications. */
 public class MediaNotificationImageUtils {

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.qrcode.scan_tab;
+package org.monyhar.chrome.browser.share.qrcode.scan_tab;
 
 import android.Manifest.permission;
 import android.app.Activity;
@@ -21,17 +21,17 @@ import com.google.android.gms.vision.Frame;
 import com.google.android.gms.vision.barcode.Barcode;
 import com.google.android.gms.vision.barcode.BarcodeDetector;
 
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.ShortcutHelper;
-import org.chromium.chrome.browser.document.ChromeLauncherActivity;
-import org.chromium.ui.base.ActivityAndroidPermissionDelegate;
-import org.chromium.ui.base.AndroidPermissionDelegate;
-import org.chromium.ui.base.PermissionCallback;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.ShortcutHelper;
+import org.monyhar.chrome.browser.document.ChromeLauncherActivity;
+import org.monyhar.ui.base.ActivityAndroidPermissionDelegate;
+import org.monyhar.ui.base.AndroidPermissionDelegate;
+import org.monyhar.ui.base.PermissionCallback;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.widget.Toast;
 
 import java.lang.ref.WeakReference;
 import java.nio.ByteBuffer;

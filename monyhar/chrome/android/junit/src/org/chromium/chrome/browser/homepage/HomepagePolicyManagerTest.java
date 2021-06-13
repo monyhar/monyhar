@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.homepage;
+package org.monyhar.chrome.browser.homepage;
 
 import android.support.test.filters.SmallTest;
 
@@ -19,16 +19,16 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.homepage.HomepagePolicyManager.HomepagePolicyStateListener;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.Pref;
-import org.chromium.chrome.browser.preferences.PrefChangeRegistrar;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.prefs.PrefService;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.homepage.HomepagePolicyManager.HomepagePolicyStateListener;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.Pref;
+import org.monyhar.chrome.browser.preferences.PrefChangeRegistrar;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.prefs.PrefService;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /**
  * Tests for the {@link HomepagePolicyManager}.

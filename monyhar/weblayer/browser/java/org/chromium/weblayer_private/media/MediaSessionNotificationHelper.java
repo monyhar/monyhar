@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private.media;
+package org.monyhar.weblayer_private.media;
 
 import android.app.Service;
 import android.content.Intent;
 
-import org.chromium.components.browser_ui.media.MediaNotificationController;
-import org.chromium.components.browser_ui.media.MediaNotificationManager;
-import org.chromium.components.browser_ui.notifications.ForegroundServiceUtils;
-import org.chromium.components.browser_ui.notifications.NotificationMetadata;
-import org.chromium.components.browser_ui.notifications.NotificationWrapperBuilder;
-import org.chromium.weblayer_private.WebLayerNotificationChannels;
-import org.chromium.weblayer_private.WebLayerNotificationWrapperBuilder;
+import org.monyhar.components.browser_ui.media.MediaNotificationController;
+import org.monyhar.components.browser_ui.media.MediaNotificationManager;
+import org.monyhar.components.browser_ui.notifications.ForegroundServiceUtils;
+import org.monyhar.components.browser_ui.notifications.NotificationMetadata;
+import org.monyhar.components.browser_ui.notifications.NotificationWrapperBuilder;
+import org.monyhar.weblayer_private.WebLayerNotificationChannels;
+import org.monyhar.weblayer_private.WebLayerNotificationWrapperBuilder;
 
 /**
  * A helper class for management of MediaSession (local device), Presentation API and Remote

@@ -27,7 +27,7 @@ using ContentSuggestionsItemTest = PlatformTest;
 TEST_F(ContentSuggestionsItemTest, CellIsConfiguredWithoutImage) {
   // Setup.
   NSString* title = @"testTitle";
-  GURL url = GURL("http://chromium.org");
+  GURL url = GURL("http://monyhar.org");
   NSString* publisher = @"publisherName";
   base::Time publishTime = base::Time::Now();
   NSString* date = l10n_util::GetNSString(IDS_IOS_READING_LIST_JUST_NOW);
@@ -66,7 +66,7 @@ TEST_F(ContentSuggestionsItemTest, CellIsConfiguredWithoutImage) {
 TEST_F(ContentSuggestionsItemTest, DontFetchImageIfImageIsBeingFetched) {
   // Setup.
   NSString* title = @"testTitle";
-  GURL url = GURL("http://chromium.org");
+  GURL url = GURL("http://monyhar.org");
   id niceDelegateMock =
       OCMProtocolMock(@protocol(ContentSuggestionsItemDelegate));
   ContentSuggestionsItem* item =
@@ -102,7 +102,7 @@ TEST_F(ContentSuggestionsItemTest, DontFetchImageIfImageIsBeingFetched) {
 TEST_F(ContentSuggestionsItemTest, NoDelegateCallWhenHasNotImage) {
   // Setup.
   NSString* title = @"testTitle";
-  GURL url = GURL("http://chromium.org");
+  GURL url = GURL("http://monyhar.org");
   // Strict mock. Raise exception if the load method is called.
   id delegateMock =
       OCMStrictProtocolMock(@protocol(ContentSuggestionsItemDelegate));
@@ -122,7 +122,7 @@ TEST_F(ContentSuggestionsItemTest, NoDelegateCallWhenHasNotImage) {
 TEST_F(ContentSuggestionsItemTest, ImageAnimatedOnlyTheFirstTime) {
   // Setup.
   NSString* title = @"testTitle";
-  GURL url = GURL("http://chromium.org");
+  GURL url = GURL("http://monyhar.org");
   ContentSuggestionsItem* item =
       [[ContentSuggestionsItem alloc] initWithType:0
                                              title:title
@@ -149,7 +149,7 @@ TEST_F(ContentSuggestionsItemTest, ImageAnimatedOnlyTheFirstTime) {
 TEST_F(ContentSuggestionsItemTest, NoReadLaterAction) {
   // Setup.
   NSString* title = @"testTitle";
-  GURL url = GURL("http://chromium.org");
+  GURL url = GURL("http://monyhar.org");
   ContentSuggestionsItem* item =
       [[ContentSuggestionsItem alloc] initWithType:0 title:title url:url];
   item.readLaterAction = NO;

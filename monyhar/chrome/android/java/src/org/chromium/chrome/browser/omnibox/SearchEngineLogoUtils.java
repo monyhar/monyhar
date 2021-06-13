@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox;
+package org.monyhar.chrome.browser.omnibox;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -14,20 +14,20 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.locale.LocaleManager;
-import org.chromium.chrome.browser.omnibox.status.StatusProperties.StatusIconResource;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.theme.ThemeUtils;
-import org.chromium.chrome.browser.ui.favicon.FaviconHelper;
-import org.chromium.components.browser_ui.widget.RoundedIconGenerator;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.components.search_engines.TemplateUrlService;
-import org.chromium.content_public.browser.BrowserStartupController;
+import org.monyhar.base.Callback;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.locale.LocaleManager;
+import org.monyhar.chrome.browser.omnibox.status.StatusProperties.StatusIconResource;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.theme.ThemeUtils;
+import org.monyhar.chrome.browser.ui.favicon.FaviconHelper;
+import org.monyhar.components.browser_ui.widget.RoundedIconGenerator;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.components.search_engines.TemplateUrlService;
+import org.monyhar.content_public.browser.BrowserStartupController;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

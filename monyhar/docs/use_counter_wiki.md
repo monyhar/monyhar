@@ -8,8 +8,8 @@ extensions is measured on a separate histogram.
 
 UseCounter data can be biased against scenarios where user metrics analysis is
 not enabled (e.g., enterprises). However, UseCounter data is essential for
-[web compat decision making](https://www.chromium.org/blink/platform-predictability/compat-tools)
-and [the blink process for breaking changes](https://sites.google.com/a/chromium.org/dev/blink/removing-features), as it reflects the real Chrome usage with a wide fraction of coverage.
+[web compat decision making](https://www.monyhar.org/blink/platform-predictability/compat-tools)
+and [the blink process for breaking changes](https://sites.google.com/a/monyhar.org/dev/blink/removing-features), as it reflects the real Chrome usage with a wide fraction of coverage.
 The results are publicly available on https://chromestatus.com/ and internally
 (for Google employees) on [UMA dashboard](https://goto.google.com/uma-usecounter)
 and [UKM dashboard](https://goto.google.com/ukm-usecounter) with more detailed
@@ -21,7 +21,7 @@ break-downs.
 UseCounter measures feature usage via UMA histogram and UKM. To add your
 feature to UseCounter, simply:
 + Add your feature to the
-  [blink::mojom::WebFeature enum](https://cs.chromium.org/chromium/src/third_party/blink/public/mojom/web_feature/web_feature.mojom);
+  [blink::mojom::WebFeature enum](https://cs.monyhar.org/monyhar/src/third_party/blink/public/mojom/web_feature/web_feature.mojom);
 + Usage can be measured via:
     * MeasureAs=\<enum value\> in the feature's IDL definition; Or
     * blink::UseCounter::Count() for blink side features; Or
@@ -63,7 +63,7 @@ OR
 
 Not all features collect URL-keyed metrics. To opt in your feature to UKM,
 simply add your feature to
-[UseCounterPageLoadMetricsObserver::GetAllowedUkmFeatures()](https://cs.chromium.org/chromium/src/components/page_load_metrics/browser/observers/use_counter/ukm_features.cc)
+[UseCounterPageLoadMetricsObserver::GetAllowedUkmFeatures()](https://cs.monyhar.org/monyhar/src/components/page_load_metrics/browser/observers/use_counter/ukm_features.cc)
 and get approval from one of the privacy owners.
 
 You can quickly verify that your feature is added to UMA histograms and UKM by

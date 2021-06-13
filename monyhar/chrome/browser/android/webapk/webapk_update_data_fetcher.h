@@ -26,7 +26,7 @@ struct InstallableData;
 }
 
 // WebApkUpdateDataFetcher is the C++ counterpart of
-// org.chromium.chrome.browser's WebApkUpdateDataFetcher in Java. It is created
+// org.monyhar.chrome.browser's WebApkUpdateDataFetcher in Java. It is created
 // via a JNI (Initialize) call and MUST BE DESTROYED via Destroy().
 class WebApkUpdateDataFetcher : public content::WebContentsObserver {
  public:

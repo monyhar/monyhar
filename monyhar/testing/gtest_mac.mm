@@ -18,7 +18,7 @@ namespace testing {
 namespace internal {
 
 static std::string StringFromNSString(NSString* string) {
-  // Note that -[NSString UTF8String] is banned in chromium code because
+  // Note that -[NSString UTF8String] is banned in monyhar code because
   // base::SysNSStringToUTF8() is safer, but //testing isn't allowed to depend
   // on //base, so deliberately ignore that function ban.
   const char* utf_string = [string UTF8String];

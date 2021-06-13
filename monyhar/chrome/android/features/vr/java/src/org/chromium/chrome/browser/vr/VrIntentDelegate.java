@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr;
+package org.monyhar.chrome.browser.vr;
 
 import android.app.Activity;
 import android.app.ActivityOptions;
@@ -12,7 +12,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.Display;
 
-import org.chromium.chrome.R;
+import org.monyhar.chrome.R;
 
 /** Intent-specific delegate to call into VR. */
 public abstract class VrIntentDelegate {

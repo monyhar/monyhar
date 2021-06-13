@@ -240,13 +240,13 @@ TEST_F(ExtensionWebRequestPermissionsTest,
   };
 
   const GURL example_com("https://example.com");
-  const GURL chromium_org("https://chromium.org");
+  const GURL monyhar_org("https://monyhar.org");
   const url::Origin example_com_origin(url::Origin::Create(example_com));
-  const url::Origin chromium_org_origin(url::Origin::Create(chromium_org));
+  const url::Origin monyhar_org_origin(url::Origin::Create(monyhar_org));
 
-  GURL urls[] = {example_com, chromium_org};
+  GURL urls[] = {example_com, monyhar_org};
   absl::optional<url::Origin> initiators[] = {absl::nullopt, example_com_origin,
-                                              chromium_org_origin};
+                                              monyhar_org_origin};
   WebRequestResourceType types[] = {WebRequestResourceType::OTHER,
                                     WebRequestResourceType::MAIN_FRAME};
 
@@ -261,13 +261,13 @@ TEST_F(ExtensionWebRequestPermissionsTest,
     }
   }
 
-  // Grant access to chromium.org.
-  URLPatternSet chromium_org_patterns({URLPattern(
-      Extension::kValidHostPermissionSchemes, "https://chromium.org/*")});
+  // Grant access to monyhar.org.
+  URLPatternSet monyhar_org_patterns({URLPattern(
+      Extension::kValidHostPermissionSchemes, "https://monyhar.org/*")});
   extension->permissions_data()->SetPermissions(
       std::make_unique<PermissionSet>(
           APIPermissionSet(), ManifestPermissionSet(),
-          std::move(chromium_org_patterns), URLPatternSet()),
+          std::move(monyhar_org_patterns), URLPatternSet()),
       std::make_unique<PermissionSet>(APIPermissionSet(),
                                       ManifestPermissionSet(), all_urls.Clone(),
                                       URLPatternSet()));
@@ -286,13 +286,13 @@ TEST_F(ExtensionWebRequestPermissionsTest,
   // necessary for any extension with webRequest to work with the runtime host
   // permissions feature. See https://crbug.com/851722.
   EXPECT_EQ(PermissionsData::PageAccess::kAllowed,
-            get_access(example_com, chromium_org_origin,
+            get_access(example_com, monyhar_org_origin,
                        WebRequestResourceType::OTHER));
   EXPECT_EQ(PermissionsData::PageAccess::kWithheld,
-            get_access(example_com, chromium_org_origin,
+            get_access(example_com, monyhar_org_origin,
                        WebRequestResourceType::SUB_FRAME));
   EXPECT_EQ(PermissionsData::PageAccess::kWithheld,
-            get_access(example_com, chromium_org_origin,
+            get_access(example_com, monyhar_org_origin,
                        WebRequestResourceType::MAIN_FRAME));
 
   // With access to the requested origin, access is always allowed for
@@ -300,7 +300,7 @@ TEST_F(ExtensionWebRequestPermissionsTest,
   for (const auto& initiator : initiators) {
     for (const auto& type : types) {
       EXPECT_EQ(PermissionsData::PageAccess::kAllowed,
-                get_access(chromium_org, initiator, type));
+                get_access(monyhar_org, initiator, type));
     }
   }
 }

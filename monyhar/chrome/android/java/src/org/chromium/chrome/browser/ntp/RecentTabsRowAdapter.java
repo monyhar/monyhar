@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ntp;
+package org.monyhar.chrome.browser.ntp;
 
 import android.app.Activity;
 import android.content.res.Resources;
@@ -24,22 +24,22 @@ import android.widget.TextView;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ntp.ForeignSessionHelper.ForeignSession;
-import org.chromium.chrome.browser.ntp.ForeignSessionHelper.ForeignSessionTab;
-import org.chromium.chrome.browser.ntp.ForeignSessionHelper.ForeignSessionWindow;
-import org.chromium.chrome.browser.signin.SyncPromoView;
-import org.chromium.chrome.browser.ui.favicon.FaviconHelper.DefaultFaviconHelper;
-import org.chromium.chrome.browser.ui.favicon.FaviconHelper.FaviconImageCallback;
-import org.chromium.chrome.browser.ui.favicon.FaviconUtils;
-import org.chromium.components.browser_ui.widget.RoundedIconGenerator;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.components.signin.metrics.SigninAccessPoint;
-import org.chromium.ui.base.DeviceFormFactor;
-import org.chromium.ui.mojom.WindowOpenDisposition;
-import org.chromium.url.GURL;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ntp.ForeignSessionHelper.ForeignSession;
+import org.monyhar.chrome.browser.ntp.ForeignSessionHelper.ForeignSessionTab;
+import org.monyhar.chrome.browser.ntp.ForeignSessionHelper.ForeignSessionWindow;
+import org.monyhar.chrome.browser.signin.SyncPromoView;
+import org.monyhar.chrome.browser.ui.favicon.FaviconHelper.DefaultFaviconHelper;
+import org.monyhar.chrome.browser.ui.favicon.FaviconHelper.FaviconImageCallback;
+import org.monyhar.chrome.browser.ui.favicon.FaviconUtils;
+import org.monyhar.components.browser_ui.widget.RoundedIconGenerator;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.components.signin.metrics.SigninAccessPoint;
+import org.monyhar.ui.base.DeviceFormFactor;
+import org.monyhar.ui.mojom.WindowOpenDisposition;
+import org.monyhar.url.GURL;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

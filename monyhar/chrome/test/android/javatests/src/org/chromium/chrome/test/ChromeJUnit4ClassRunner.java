@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test;
+package org.monyhar.chrome.test;
 
 import android.content.Context;
 import android.os.Build;
@@ -12,18 +12,18 @@ import android.text.TextUtils;
 import org.junit.rules.TestRule;
 import org.junit.runners.model.InitializationError;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.test.util.RestrictionSkipCheck;
-import org.chromium.base.test.util.SkipCheck;
-import org.chromium.chrome.browser.version.ChromeVersionInfo;
-import org.chromium.chrome.test.util.ChromeRestriction;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.policy.test.annotations.Policies;
-import org.chromium.content_public.browser.test.ContentJUnit4ClassRunner;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.gms.ChromiumPlayServicesAvailability;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.test.util.RestrictionSkipCheck;
+import org.monyhar.base.test.util.SkipCheck;
+import org.monyhar.chrome.browser.version.ChromeVersionInfo;
+import org.monyhar.chrome.test.util.ChromeRestriction;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.policy.test.annotations.Policies;
+import org.monyhar.content_public.browser.test.ContentJUnit4ClassRunner;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.gms.ChromiumPlayServicesAvailability;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

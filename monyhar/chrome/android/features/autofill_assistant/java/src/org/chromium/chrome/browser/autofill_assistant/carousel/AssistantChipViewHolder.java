@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.carousel;
+package org.monyhar.chrome.browser.autofill_assistant.carousel;
 
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -13,8 +13,8 @@ import android.widget.PopupMenu;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.autofill_assistant.LayoutUtils;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.autofill_assistant.LayoutUtils;
 
 /**
  * The {@link ViewHolder} responsible for reflecting an {@link AssistantChip} to a {@link

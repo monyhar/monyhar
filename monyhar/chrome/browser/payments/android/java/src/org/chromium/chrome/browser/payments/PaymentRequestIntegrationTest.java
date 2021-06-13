@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments;
+package org.monyhar.chrome.browser.payments;
 
 import org.junit.After;
 import org.junit.Assert;
@@ -18,32 +18,32 @@ import org.mockito.junit.MockitoRule;
 import org.mockito.quality.Strictness;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.browser.payments.test_support.MockPaymentUiServiceBuilder;
-import org.chromium.chrome.browser.payments.test_support.PaymentRequestParamsBuilder;
-import org.chromium.chrome.browser.payments.ui.PaymentUiService;
-import org.chromium.components.payments.AndroidPaymentApp;
-import org.chromium.components.payments.ErrorMessageUtil;
-import org.chromium.components.payments.ErrorMessageUtilJni;
-import org.chromium.components.payments.JourneyLogger;
-import org.chromium.components.payments.MethodStrings;
-import org.chromium.components.payments.PayerData;
-import org.chromium.components.payments.PaymentApp;
-import org.chromium.components.payments.PaymentApp.InstrumentDetailsCallback;
-import org.chromium.components.payments.PaymentAppFactoryDelegate;
-import org.chromium.components.payments.PaymentAppFactoryInterface;
-import org.chromium.components.payments.PaymentAppService;
-import org.chromium.components.payments.PaymentAppType;
-import org.chromium.components.payments.PaymentFeatureList;
-import org.chromium.components.payments.PaymentMethodCategory;
-import org.chromium.components.payments.PaymentRequestService;
-import org.chromium.components.payments.test_support.ShadowPaymentFeatureList;
-import org.chromium.payments.mojom.PaymentErrorReason;
-import org.chromium.payments.mojom.PaymentRequest;
-import org.chromium.payments.mojom.PaymentRequestClient;
-import org.chromium.payments.mojom.PaymentResponse;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.browser.payments.test_support.MockPaymentUiServiceBuilder;
+import org.monyhar.chrome.browser.payments.test_support.PaymentRequestParamsBuilder;
+import org.monyhar.chrome.browser.payments.ui.PaymentUiService;
+import org.monyhar.components.payments.AndroidPaymentApp;
+import org.monyhar.components.payments.ErrorMessageUtil;
+import org.monyhar.components.payments.ErrorMessageUtilJni;
+import org.monyhar.components.payments.JourneyLogger;
+import org.monyhar.components.payments.MethodStrings;
+import org.monyhar.components.payments.PayerData;
+import org.monyhar.components.payments.PaymentApp;
+import org.monyhar.components.payments.PaymentApp.InstrumentDetailsCallback;
+import org.monyhar.components.payments.PaymentAppFactoryDelegate;
+import org.monyhar.components.payments.PaymentAppFactoryInterface;
+import org.monyhar.components.payments.PaymentAppService;
+import org.monyhar.components.payments.PaymentAppType;
+import org.monyhar.components.payments.PaymentFeatureList;
+import org.monyhar.components.payments.PaymentMethodCategory;
+import org.monyhar.components.payments.PaymentRequestService;
+import org.monyhar.components.payments.test_support.ShadowPaymentFeatureList;
+import org.monyhar.payments.mojom.PaymentErrorReason;
+import org.monyhar.payments.mojom.PaymentRequest;
+import org.monyhar.payments.mojom.PaymentRequestClient;
+import org.monyhar.payments.mojom.PaymentResponse;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -61,7 +61,7 @@ public class PaymentRequestIntegrationTest {
     private static final String STRINGIFIED_DETAILS = "test stringifiedDetails";
     private final ArgumentCaptor<InstrumentDetailsCallback> mPaymentAppCallbackCaptor =
             ArgumentCaptor.forClass(InstrumentDetailsCallback.class);
-    private String mInstrumentMethodName = "https://www.chromium.org";
+    private String mInstrumentMethodName = "https://www.monyhar.org";
     private int mPaymentAppType = PaymentAppType.SERVICE_WORKER_APP;
 
     @Rule
@@ -224,7 +224,7 @@ public class PaymentRequestIntegrationTest {
         assertNoError();
 
         show(request);
-        assertError("(Mock) Not supported error: [https://www.chromium.org]",
+        assertError("(Mock) Not supported error: [https://www.monyhar.org]",
                 PaymentErrorReason.NOT_SUPPORTED);
     }
 

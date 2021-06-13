@@ -99,20 +99,20 @@ def main_mac(output_directory, results_collector, size_path):
     framework_bundle = framework_name + '.framework'
     framework_dsym_bundle = framework_name + '.dSYM'
 
-    chromium_app_dir = os.path.join(output_directory, app_bundle)
-    chromium_executable = os.path.join(chromium_app_dir, 'Contents', 'MacOS',
+    monyhar_app_dir = os.path.join(output_directory, app_bundle)
+    monyhar_executable = os.path.join(monyhar_app_dir, 'Contents', 'MacOS',
                                        base_name)
 
-    chromium_framework_dir = os.path.join(output_directory, framework_bundle)
-    chromium_framework_executable = os.path.join(chromium_framework_dir,
+    monyhar_framework_dir = os.path.join(output_directory, framework_bundle)
+    monyhar_framework_executable = os.path.join(monyhar_framework_dir,
                                                  framework_name)
 
-    chromium_framework_dsym_dir = os.path.join(output_directory,
+    monyhar_framework_dsym_dir = os.path.join(output_directory,
                                                framework_dsym_bundle)
-    chromium_framework_dsym = os.path.join(chromium_framework_dsym_dir,
+    monyhar_framework_dsym = os.path.join(monyhar_framework_dsym_dir,
                                            'Contents', 'Resources', 'DWARF',
                                            framework_name)
-    if os.path.exists(chromium_executable):
+    if os.path.exists(monyhar_executable):
       print_dict = {
           # Remove spaces in the names so any downstream processing is less
           # likely to choke.
@@ -120,27 +120,27 @@ def main_mac(output_directory, results_collector, size_path):
           'app_bundle': re.sub(r'\s', '', app_bundle),
           'framework_name': re.sub(r'\s', '', framework_name),
           'framework_bundle': re.sub(r'\s', '', framework_bundle),
-          'app_size': get_size(chromium_executable),
-          'framework_size': get_size(chromium_framework_executable),
+          'app_size': get_size(monyhar_executable),
+          'framework_size': get_size(monyhar_framework_executable),
           'framework_dsym_name': re.sub(r'\s', '', framework_name) + 'Dsym',
-          'framework_dsym_size': get_size(chromium_framework_dsym),
+          'framework_dsym_size': get_size(monyhar_framework_dsym),
       }
 
       # Collect the segment info out of the App
-      result, stdout = run_process(result, [size_path, chromium_executable])
+      result, stdout = run_process(result, [size_path, monyhar_executable])
       print_dict['app_text'], print_dict['app_data'], print_dict['app_objc'] = \
           re.search(r'(\d+)\s+(\d+)\s+(\d+)', stdout).groups()
 
       # Collect the segment info out of the Framework
       result, stdout = run_process(result,
-                                   [size_path, chromium_framework_executable])
+                                   [size_path, monyhar_framework_executable])
       print_dict['framework_text'], print_dict['framework_data'], \
         print_dict['framework_objc'] = \
           re.search(r'(\d+)\s+(\d+)\s+(\d+)', stdout).groups()
 
       # Collect the whole size of the App bundle on disk (include the framework)
       whole_size = 0
-      for root_dir, _, filenames in os.walk(chromium_app_dir,
+      for root_dir, _, filenames in os.walk(monyhar_app_dir,
                                             followlinks=False):
         for filename in filenames:
           full_path = os.path.join(root_dir, filename)

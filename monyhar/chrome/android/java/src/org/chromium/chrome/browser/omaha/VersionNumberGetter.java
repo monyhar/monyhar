@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omaha;
+package org.monyhar.chrome.browser.omaha;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -10,9 +10,9 @@ import android.os.Build;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.BuildInfo;
-import org.chromium.base.ThreadUtils;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
 
 /**
  * Stubbed class for getting version numbers from the rest of Chrome.  Override the functions for

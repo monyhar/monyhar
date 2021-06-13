@@ -71,7 +71,7 @@ namespace {
 
 // The agent path is relatively meaningless since BlueZ only permits one to
 // exist per D-Bus connection, it just has to be unique within Chromium.
-const char kAgentPath[] = "/org/chromium/bluetooth_agent";
+const char kAgentPath[] = "/org/monyhar/bluetooth_agent";
 const char kGattApplicationObjectPath[] = "/gatt_application";
 
 void OnUnregisterAgentError(const std::string& error_name,

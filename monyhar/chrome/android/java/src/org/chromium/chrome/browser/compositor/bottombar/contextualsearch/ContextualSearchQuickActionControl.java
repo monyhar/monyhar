@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.bottombar.contextualsearch;
+package org.monyhar.chrome.browser.compositor.bottombar.contextualsearch;
 
 import android.content.Context;
 import android.content.Intent;
@@ -17,21 +17,21 @@ import android.widget.ImageView;
 
 import androidx.core.graphics.drawable.DrawableCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.PackageManagerUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.ChromeTabbedActivity2;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.contextualsearch.ContextualSearchUma;
-import org.chromium.chrome.browser.contextualsearch.QuickActionCategory;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.theme.ThemeUtils;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.ui.resources.dynamics.DynamicResourceLoader;
-import org.chromium.ui.resources.dynamics.ViewResourceInflater;
-import org.chromium.ui.util.ColorUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.PackageManagerUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.ChromeTabbedActivity2;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.contextualsearch.ContextualSearchUma;
+import org.monyhar.chrome.browser.contextualsearch.QuickActionCategory;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.theme.ThemeUtils;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.ui.resources.dynamics.DynamicResourceLoader;
+import org.monyhar.ui.resources.dynamics.ViewResourceInflater;
+import org.monyhar.ui.util.ColorUtils;
 
 import java.net.URISyntaxException;
 import java.util.List;

@@ -88,7 +88,7 @@
 
 namespace base {
 
-// See https://groups.google.com/a/chromium.org/d/msg/chromium-dev/nkdTP7sstSc/uT3FaE_sgkAJ .
+// See https://groups.google.com/a/monyhar.org/d/msg/monyhar-dev/nkdTP7sstSc/uT3FaE_sgkAJ .
 using ::operator<<;
 
 // The environment variable name for the total number of test shards.

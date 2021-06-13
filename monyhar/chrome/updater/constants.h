@@ -100,7 +100,7 @@ extern const char kSystemSwitch[];
 extern const char kTestSwitch[];
 
 // Disables throttling for the crash reported until the following bug is fixed:
-// https://bugs.chromium.org/p/crashpad/issues/detail?id=23
+// https://bugs.monyhar.org/p/crashpad/issues/detail?id=23
 extern const char kNoRateLimitSwitch[];
 
 // The handle of an event to signal when the initialization of the main process

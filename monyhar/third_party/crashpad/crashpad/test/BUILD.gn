@@ -115,7 +115,7 @@ static_library("test") {
   public_configs = [ "..:crashpad_config" ]
 
   configs += [
-    "../build:crashpad_is_in_chromium",
+    "../build:crashpad_is_in_monyhar",
     "../build:crashpad_is_in_fuchsia",
   ]
 
@@ -124,7 +124,7 @@ static_library("test") {
   deps = [
     "../compat",
     "../third_party/googletest:googletest",
-    "../third_party/mini_chromium:base",
+    "../third_party/mini_monyhar:base",
     "../util",
   ]
 
@@ -204,11 +204,11 @@ source_set("test_test") {
     "../compat",
     "../third_party/googletest:googlemock",
     "../third_party/googletest:googletest",
-    "../third_party/mini_chromium:base",
+    "../third_party/mini_monyhar:base",
     "../util",
   ]
 
-  if (crashpad_is_in_chromium && !crashpad_is_ios) {
+  if (crashpad_is_in_monyhar && !crashpad_is_ios) {
     # TODO(crbug.com/1153544): Disabling MultiprocessExec.MultiprocessExec if
     # PartitionAlloc is used for malloc.
     deps += [ "//base/allocator:buildflags" ]
@@ -225,21 +225,21 @@ if (!crashpad_is_ios) {
   crashpad_executable("crashpad_test_test_multiprocess_exec_test_child") {
     sources = [ "multiprocess_exec_test_child.cc" ]
 
-    deps = [ "../third_party/mini_chromium:base" ]
+    deps = [ "../third_party/mini_monyhar:base" ]
   }
 }
 
 static_library("googlemock_main") {
   testonly = true
   sources = [ "gtest_main.cc" ]
-  configs += [ "../build:crashpad_is_in_chromium" ]
+  configs += [ "../build:crashpad_is_in_monyhar" ]
   defines = [ "CRASHPAD_TEST_LAUNCHER_GOOGLEMOCK" ]
   deps = [
     ":test",
     "../third_party/googletest:googlemock",
     "../third_party/googletest:googletest",
-    "../third_party/mini_chromium:base",
-    "../third_party/mini_chromium:base_test_support",
+    "../third_party/mini_monyhar:base",
+    "../third_party/mini_monyhar:base_test_support",
   ]
   if (crashpad_is_android) {
     deps += [ "../util" ]
@@ -252,13 +252,13 @@ static_library("googlemock_main") {
 static_library("googletest_main") {
   testonly = true
   sources = [ "gtest_main.cc" ]
-  configs += [ "../build:crashpad_is_in_chromium" ]
+  configs += [ "../build:crashpad_is_in_monyhar" ]
   defines = [ "CRASHPAD_TEST_LAUNCHER_GOOGLETEST" ]
   deps = [
     ":test",
     "../third_party/googletest:googletest",
-    "../third_party/mini_chromium:base",
-    "../third_party/mini_chromium:base_test_support",
+    "../third_party/mini_monyhar:base",
+    "../third_party/mini_monyhar:base_test_support",
   ]
   if (crashpad_is_android) {
     deps += [ "../util" ]

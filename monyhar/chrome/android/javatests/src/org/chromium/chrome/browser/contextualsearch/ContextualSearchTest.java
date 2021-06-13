@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.contextualsearch;
+package org.monyhar.chrome.browser.contextualsearch;
 
 import android.content.Context;
 import android.widget.LinearLayout;
@@ -18,34 +18,34 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.base.test.util.Restriction;
-import org.chromium.chrome.browser.WebContentsFactory;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanelManager;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanelManagerWrapper;
-import org.chromium.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchPanel;
-import org.chromium.chrome.browser.compositor.layouts.LayoutManagerImpl;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.batch.BlankCTATabInitialStateRule;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.embedder_support.view.ContentView;
-import org.chromium.content_public.browser.SelectionClient;
-import org.chromium.content_public.browser.SelectionPopupController;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.test.util.TestSelectionPopupController;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.content_public.browser.test.util.WebContentsUtils;
-import org.chromium.ui.base.ViewAndroidDelegate;
-import org.chromium.ui.resources.dynamics.DynamicResourceLoader;
-import org.chromium.ui.touch_selection.SelectionEventType;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.base.test.util.Restriction;
+import org.monyhar.chrome.browser.WebContentsFactory;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanelManager;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanelManagerWrapper;
+import org.monyhar.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchPanel;
+import org.monyhar.chrome.browser.compositor.layouts.LayoutManagerImpl;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.batch.BlankCTATabInitialStateRule;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.embedder_support.view.ContentView;
+import org.monyhar.content_public.browser.SelectionClient;
+import org.monyhar.content_public.browser.SelectionPopupController;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.test.util.TestSelectionPopupController;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.content_public.browser.test.util.WebContentsUtils;
+import org.monyhar.ui.base.ViewAndroidDelegate;
+import org.monyhar.ui.resources.dynamics.DynamicResourceLoader;
+import org.monyhar.ui.touch_selection.SelectionEventType;
 
 /**
  * Mock touch events with Contextual Search to test behavior of its panel and manager.

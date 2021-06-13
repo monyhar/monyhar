@@ -26,7 +26,7 @@ namespace webapps {
 struct ShortcutInfo;
 }
 
-// ShortcutHelper is the C++ counterpart of org.chromium.chrome.browser's
+// ShortcutHelper is the C++ counterpart of org.monyhar.chrome.browser's
 // ShortcutHelper in Java.
 class ShortcutHelper {
  public:

@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.app.followmanagement;
+package org.monyhar.chrome.browser.app.followmanagement;
 
 import android.os.Bundle;
 
-import org.chromium.base.Log;
-import org.chromium.chrome.browser.SnackbarActivity;
-import org.chromium.chrome.browser.feed.followmanagement.FollowManagementCoordinator;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.browser.SnackbarActivity;
+import org.monyhar.chrome.browser.feed.followmanagement.FollowManagementCoordinator;
 
 /**
  * Activity for managing feed and webfeed settings on the new tab page.

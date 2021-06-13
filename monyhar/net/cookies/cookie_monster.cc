@@ -1384,7 +1384,7 @@ void CookieMonster::SetAllCookies(CookieList list,
 
   // TODO(rdsmith): If this function always returns the same value, it
   // shouldn't have a return value.  But it should also be deleted (see
-  // https://codereview.chromium.org/2882063002/#msg64), which would
+  // https://codereview.monyhar.org/2882063002/#msg64), which would
   // solve the return value problem.
   MaybeRunCookieCallback(std::move(callback), CookieAccessResult());
 }

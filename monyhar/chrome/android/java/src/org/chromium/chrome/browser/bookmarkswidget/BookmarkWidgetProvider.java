@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.bookmarkswidget;
+package org.monyhar.chrome.browser.bookmarkswidget;
 
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
@@ -16,9 +16,9 @@ import android.widget.RemoteViews;
 
 import com.google.android.apps.chrome.appwidget.bookmarks.BookmarkThumbnailWidgetProvider;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.chrome.R;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.chrome.R;
 
 /**
  * Widget that shows a preview of the user's bookmarks.

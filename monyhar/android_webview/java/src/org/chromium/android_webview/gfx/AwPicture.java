@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.gfx;
+package org.monyhar.android_webview.gfx;
 
 import android.graphics.Canvas;
 import android.graphics.Picture;
 
-import org.chromium.android_webview.CleanupReference;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
+import org.monyhar.android_webview.CleanupReference;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
 
 import java.io.OutputStream;
 
 /**
  * A simple wrapper around a SkPicture, that allows final rendering to be performed using the
- * chromium skia library.
+ * monyhar skia library.
  */
 @JNINamespace("android_webview")
 public class AwPicture extends Picture {

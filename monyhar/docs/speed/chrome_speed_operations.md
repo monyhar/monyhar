@@ -3,7 +3,7 @@
 Chrome Speed Operations provides tools, framework, and infrastructure
 to track Chrome's performance and guide optimizations to Chrome.
 
-TPM: ushesh@chromium.org
+TPM: ushesh@monyhar.org
 
 Speed Operations consists of 3 teams, working in tandem:
 
@@ -15,7 +15,7 @@ The Benchmarking team provides:
   * A [perf waterfall](perf_waterfall.md) to run these benchmarks on our continuous build on a dozen
     real device types, on Windows, Mac, Linux, and Android.
 
-TL: johnchen@chromium.org
+TL: johnchen@monyhar.org
 
 ## Speed Tooling
 The [Speed Tooling](chrome_speed_tooling.md) team provides:
@@ -25,11 +25,11 @@ The [Speed Tooling](chrome_speed_tooling.md) team provides:
     with Chromium's bug tracker for easy tracking.
   * Tools for [bisecting regressions](bisects.md) on our continuous build down
     to an exact culprit CL.
-  * A [performance try job service](perf_trybots.md) which allows chromium
+  * A [performance try job service](perf_trybots.md) which allows monyhar
     developers to run benchmarks on unsubmitted CLs using the same hardware
     we use in the continuous build.
 
-TL: dberris@chromium.org
+TL: dberris@monyhar.org
 
 ## Releasing and System Health
 The releasing team provides:
@@ -39,4 +39,4 @@ The releasing team provides:
   * Recommendations about lab hardware and new test scenarios.
   * Management of performance sheriff rotations.
 
-TPM: ushesh@chromium.org
+TPM: ushesh@monyhar.org

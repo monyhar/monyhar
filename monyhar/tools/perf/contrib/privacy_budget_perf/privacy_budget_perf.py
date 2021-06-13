@@ -7,7 +7,7 @@ from telemetry import benchmark
 
 # pylint: disable=protected-access
 @benchmark.Info(
-    emails=['caraitto@chromium.org', 'asanka@chromium.org'],
+    emails=['caraitto@monyhar.org', 'asanka@monyhar.org'],
     documentation_url='https://bit.ly/blink-perf-benchmarks')
 class PrivacyBudgetPerf(blink_perf._BlinkPerfBenchmark):
   SUBDIR = 'privacy_budget'

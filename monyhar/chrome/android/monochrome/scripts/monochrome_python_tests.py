@@ -15,7 +15,7 @@ _DEVIL_CHROMIUM_DIR = os.path.join(_SRC_DIR, 'build', 'android')
 
 sys.path[1:1] = [_TYP_DIR, _DEVIL_CHROMIUM_DIR]
 
-import devil_chromium
+import devil_monyhar
 import typ
 
 # Import test files so they they are included in .pydeps.
@@ -54,7 +54,7 @@ def create_argument_parser():
 
 
 def main(argv):
-  devil_chromium.Initialize()
+  devil_monyhar.Initialize()
   argument_parser = create_argument_parser()
 
   runner = typ.Runner()

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.webauthn;
+package org.monyhar.components.webauthn;
 
 import android.util.Base64;
 
@@ -28,19 +28,19 @@ import com.google.android.gms.fido.fido2.api.common.PublicKeyCredentialUserEntit
 import com.google.android.gms.fido.fido2.api.common.UserVerificationMethodExtension;
 import com.google.android.gms.fido.fido2.api.common.UvmEntries;
 
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.blink.mojom.AuthenticatorAttachment;
-import org.chromium.blink.mojom.AuthenticatorStatus;
-import org.chromium.blink.mojom.AuthenticatorTransport;
-import org.chromium.blink.mojom.CommonCredentialInfo;
-import org.chromium.blink.mojom.GetAssertionAuthenticatorResponse;
-import org.chromium.blink.mojom.MakeCredentialAuthenticatorResponse;
-import org.chromium.blink.mojom.PublicKeyCredentialRequestOptions;
-import org.chromium.blink.mojom.UvmEntry;
-import org.chromium.mojo_base.mojom.TimeDelta;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.blink.mojom.AuthenticatorAttachment;
+import org.monyhar.blink.mojom.AuthenticatorStatus;
+import org.monyhar.blink.mojom.AuthenticatorTransport;
+import org.monyhar.blink.mojom.CommonCredentialInfo;
+import org.monyhar.blink.mojom.GetAssertionAuthenticatorResponse;
+import org.monyhar.blink.mojom.MakeCredentialAuthenticatorResponse;
+import org.monyhar.blink.mojom.PublicKeyCredentialRequestOptions;
+import org.monyhar.blink.mojom.UvmEntry;
+import org.monyhar.mojo_base.mojom.TimeDelta;
 
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
@@ -76,7 +76,7 @@ public final class Fido2Helper {
      * @throws NoSuchAlgorithmException
      */
     public static PublicKeyCredentialCreationOptions toMakeCredentialOptions(
-            org.chromium.blink.mojom.PublicKeyCredentialCreationOptions options)
+            org.monyhar.blink.mojom.PublicKeyCredentialCreationOptions options)
             throws NoSuchAlgorithmException {
         // Pack incoming options as Fido2's BrowserMakeCredentialOptions.
         String rpIcon = options.relyingParty.icon != null ? options.relyingParty.icon.url : null;
@@ -88,10 +88,10 @@ public final class Fido2Helper {
                 options.user.id, options.user.name, userIcon, options.user.displayName);
 
         List<PublicKeyCredentialParameters> parameters = new ArrayList<>();
-        for (org.chromium.blink.mojom.PublicKeyCredentialParameters param :
+        for (org.monyhar.blink.mojom.PublicKeyCredentialParameters param :
                 options.publicKeyParameters) {
             if (param.algorithmIdentifier == ECDSA_COSE_IDENTIFIER
-                    && param.type == org.chromium.blink.mojom.PublicKeyCredentialType.PUBLIC_KEY) {
+                    && param.type == org.monyhar.blink.mojom.PublicKeyCredentialType.PUBLIC_KEY) {
                 parameters.add(new PublicKeyCredentialParameters(
                         PublicKeyCredentialType.PUBLIC_KEY.toString(), param.algorithmIdentifier));
             }
@@ -318,13 +318,13 @@ public final class Fido2Helper {
     }
 
     private static List<PublicKeyCredentialDescriptor> convertCredentialDescriptor(
-            org.chromium.blink.mojom.PublicKeyCredentialDescriptor[] mojoDescriptors) {
+            org.monyhar.blink.mojom.PublicKeyCredentialDescriptor[] mojoDescriptors) {
         if (mojoDescriptors == null) {
             return null;
         }
 
         List<PublicKeyCredentialDescriptor> descriptors = new ArrayList<>();
-        for (org.chromium.blink.mojom.PublicKeyCredentialDescriptor descriptor : mojoDescriptors) {
+        for (org.monyhar.blink.mojom.PublicKeyCredentialDescriptor descriptor : mojoDescriptors) {
             descriptors.add(
                     new PublicKeyCredentialDescriptor(PublicKeyCredentialType.PUBLIC_KEY.toString(),
                             descriptor.id, toTransportList(descriptor.transports)));
@@ -333,7 +333,7 @@ public final class Fido2Helper {
     }
 
     private static AuthenticatorSelectionCriteria convertSelectionCriteria(
-            org.chromium.blink.mojom.AuthenticatorSelectionCriteria mojoSelection) {
+            org.monyhar.blink.mojom.AuthenticatorSelectionCriteria mojoSelection) {
         AuthenticatorSelectionCriteria selection = null;
         if (mojoSelection != null) {
             /* Sets UserVerificationRequirement and RequireResidentKey to default until the FIDO2
@@ -381,13 +381,13 @@ public final class Fido2Helper {
 
     private static AttestationConveyancePreference convertAttestationPreference(int preference) {
         switch (preference) {
-            case org.chromium.blink.mojom.AttestationConveyancePreference.NONE:
+            case org.monyhar.blink.mojom.AttestationConveyancePreference.NONE:
                 return AttestationConveyancePreference.NONE;
-            case org.chromium.blink.mojom.AttestationConveyancePreference.INDIRECT:
+            case org.monyhar.blink.mojom.AttestationConveyancePreference.INDIRECT:
                 return AttestationConveyancePreference.INDIRECT;
-            case org.chromium.blink.mojom.AttestationConveyancePreference.DIRECT:
+            case org.monyhar.blink.mojom.AttestationConveyancePreference.DIRECT:
                 return AttestationConveyancePreference.DIRECT;
-            case org.chromium.blink.mojom.AttestationConveyancePreference.ENTERPRISE:
+            case org.monyhar.blink.mojom.AttestationConveyancePreference.ENTERPRISE:
                 return AttestationConveyancePreference.NONE;
             default:
                 return AttestationConveyancePreference.NONE;

@@ -12,7 +12,7 @@ Counters can also be directly added to the bindings layer in method and attribut
 
 ## Viewing Results
 
-Results can be seen through [chrome tracing](https://www.chromium.org/developers/how-tos/trace-event-profiling-tool). Run chrome with `--enable-blink-features=BlinkRuntimeCallStats`, and record a trace. Be sure to enable the `v8` and `v8.runtime_stats` (which is disabled by default) categories under 'Manually select settings'. After recording a trace, select the events recorded (for the website being analyzed) and click on 'Runtime call stats table'. The Blink runtime call stats should be visible below the V8 call stats table.
+Results can be seen through [chrome tracing](https://www.monyhar.org/developers/how-tos/trace-event-profiling-tool). Run chrome with `--enable-blink-features=BlinkRuntimeCallStats`, and record a trace. Be sure to enable the `v8` and `v8.runtime_stats` (which is disabled by default) categories under 'Manually select settings'. After recording a trace, select the events recorded (for the website being analyzed) and click on 'Runtime call stats table'. The Blink runtime call stats should be visible below the V8 call stats table.
 
 Alternatively, running chrome as follows `chrome --enable-blink-features=BlinkRuntimeCallStats --dump-blink-runtime-call-stats --single-process` will dump call stats to the logs when the browser is closed. Adding `--enable-logging=stderr` will display log output in stderr.
 

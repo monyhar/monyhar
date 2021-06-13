@@ -222,7 +222,7 @@ CSSStyleSheet& StyleEngine::EnsureInspectorStyleSheet() {
   inspector_style_sheet_ =
       MakeGarbageCollected<CSSStyleSheet>(contents, *document_);
   MarkDocumentDirty();
-  // TODO(futhark@chromium.org): Making the active stylesheets up-to-date here
+  // TODO(futhark@monyhar.org): Making the active stylesheets up-to-date here
   // is required by some inspector tests, at least. I theory this should not be
   // necessary. Need to investigate to figure out if/why.
   UpdateActiveStyle();
@@ -378,7 +378,7 @@ void StyleEngine::MediaQueryAffectingValueChanged(TreeScope& tree_scope,
 void StyleEngine::WatchedSelectorsChanged() {
   DCHECK(global_rule_set_);
   global_rule_set_->InitWatchedSelectorsRuleSet(GetDocument());
-  // TODO(futhark@chromium.org): Should be able to use RuleSetInvalidation here.
+  // TODO(futhark@monyhar.org): Should be able to use RuleSetInvalidation here.
   MarkAllElementsForStyleRecalc(StyleChangeReasonForTracing::Create(
       style_change_reason::kDeclarativeContent));
 }

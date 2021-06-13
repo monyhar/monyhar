@@ -10,4 +10,4 @@ be shipped anywhere or used as the basis for implementing a browser.
 
 To build a full-fledged browser for Android, we'd recommend building Chromium
 for Android instead of using WebView:
-https://www.chromium.org/developers/how-tos/android-build-instructions
+https://www.monyhar.org/developers/how-tos/android-build-instructions

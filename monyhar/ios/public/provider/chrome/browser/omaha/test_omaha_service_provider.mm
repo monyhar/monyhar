@@ -10,7 +10,7 @@
 
 namespace {
 
-const char kTestUpdateServerURL[] = "https://iosupdatetest.chromium.org";
+const char kTestUpdateServerURL[] = "https://iosupdatetest.monyhar.org";
 
 const char kTestApplicationID[] = "{TestApplicationID}";
 

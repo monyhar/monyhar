@@ -14,7 +14,7 @@
     android:paddingEnd="@dimen/card_padding"
     android:paddingBottom="@dimen/card_padding">
 
-    <org.chromium.ui.widget.ChromeImageButton
+    <org.monyhar.ui.widget.ChromeImageButton
         android:id="@+id/favicon"
         android:layout_width="16dp"
         android:layout_height="16dp"

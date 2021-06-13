@@ -44,7 +44,7 @@
 #include "gpu/command_buffer/service/feature_info.h"
 #include "gpu/command_buffer/service/gl_utils.h"
 #include "gpu/command_buffer/service/gles2_cmd_copy_tex_image.h"
-#include "gpu/command_buffer/service/gles2_cmd_copy_texture_chromium.h"
+#include "gpu/command_buffer/service/gles2_cmd_copy_texture_monyhar.h"
 #include "gpu/command_buffer/service/gpu_tracer.h"
 #include "gpu/command_buffer/service/logger.h"
 #include "gpu/command_buffer/service/mailbox_manager.h"
@@ -794,7 +794,7 @@ class RasterDecoderImpl final : public RasterDecoder,
 
   std::unique_ptr<gles2::CopyTexImageResourceManager> copy_tex_image_blit_;
   std::unique_ptr<gles2::CopyTextureCHROMIUMResourceManager>
-      copy_texture_chromium_;
+      copy_texture_monyhar_;
 
   std::unique_ptr<gles2::GPUTracer> gpu_tracer_;
   const unsigned char* gpu_decoder_category_;
@@ -821,7 +821,7 @@ class RasterDecoderImpl final : public RasterDecoder,
   std::vector<SkDiscardableHandleId> locked_handles_;
 
   // Tracing helpers.
-  int raster_chromium_id_ = 0;
+  int raster_monyhar_id_ = 0;
 
   // Workaround for https://crbug.com/906453
   bool flush_workaround_disabled_for_test_ = false;
@@ -993,9 +993,9 @@ ContextResult RasterDecoderImpl::Initialize(
   query_manager_ = std::make_unique<QueryManager>();
 
   if (attrib_helper.enable_oop_rasterization) {
-    if (!features().chromium_raster_transport) {
+    if (!features().monyhar_raster_transport) {
       LOG(ERROR) << "ContextResult::kFatalFailure: "
-                    "chromium_raster_transport not present";
+                    "monyhar_raster_transport not present";
       Destroy(true);
       return ContextResult::kFatalFailure;
     }
@@ -1025,9 +1025,9 @@ void RasterDecoderImpl::Destroy(bool have_context) {
       copy_tex_image_blit_.reset();
     }
 
-    if (copy_texture_chromium_) {
-      copy_texture_chromium_->Destroy();
-      copy_texture_chromium_.reset();
+    if (copy_texture_monyhar_) {
+      copy_texture_monyhar_->Destroy();
+      copy_texture_monyhar_.reset();
     }
 
     // Make sure we flush any pending skia work on this context.
@@ -1054,7 +1054,7 @@ void RasterDecoderImpl::Destroy(bool have_context) {
   }
 
   copy_tex_image_blit_.reset();
-  copy_texture_chromium_.reset();
+  copy_texture_monyhar_.reset();
 
   if (query_manager_) {
     query_manager_->Destroy(have_context);
@@ -1113,7 +1113,7 @@ Capabilities RasterDecoderImpl::GetCapabilities() {
   caps.texture_format_bgra8888 =
       feature_info()->feature_flags().ext_texture_format_bgra8888;
   caps.texture_storage_image =
-      feature_info()->feature_flags().chromium_texture_storage_image;
+      feature_info()->feature_flags().monyhar_texture_storage_image;
   caps.texture_storage = feature_info()->feature_flags().ext_texture_storage;
   // TODO(piman): have a consistent limit in shared image backings.
   // https://crbug.com/960588
@@ -1150,7 +1150,7 @@ Capabilities RasterDecoderImpl::GetCapabilities() {
         std::min(caps.max_array_texture_layers,
                  feature_info()->workarounds().max_3d_array_texture_size);
   }
-  caps.sync_query = feature_info()->feature_flags().chromium_sync_query;
+  caps.sync_query = feature_info()->feature_flags().monyhar_sync_query;
   caps.msaa_is_slow = feature_info()->workarounds().msaa_is_slow;
   caps.avoid_stencil_buffers =
       feature_info()->workarounds().avoid_stencil_buffers;
@@ -1349,7 +1349,7 @@ gles2::ImageManager* RasterDecoderImpl::GetImageManagerForTest() {
 
 void RasterDecoderImpl::SetCopyTextureResourceManagerForTest(
     gles2::CopyTextureCHROMIUMResourceManager* copy_texture_resource_manager) {
-  copy_texture_chromium_.reset(copy_texture_resource_manager);
+  copy_texture_monyhar_.reset(copy_texture_resource_manager);
 }
 
 void RasterDecoderImpl::BeginDecoding() {
@@ -1695,7 +1695,7 @@ error::Error RasterDecoderImpl::HandleBeginQueryEXT(
     case GL_COMMANDS_ISSUED_CHROMIUM:
       break;
     case GL_COMMANDS_COMPLETED_CHROMIUM:
-      if (!features().chromium_sync_query) {
+      if (!features().monyhar_sync_query) {
         LOCAL_SET_GL_ERROR(GL_INVALID_OPERATION, "glBeginQueryEXT",
                            "not enabled for commands completed queries");
         return error::kNoError;
@@ -1927,11 +1927,11 @@ bool RasterDecoderImpl::InitializeCopyTexImageBlitter() {
 bool RasterDecoderImpl::InitializeCopyTextureCHROMIUM() {
   // Defer initializing the CopyTextureCHROMIUMResourceManager until it is
   // needed because it takes 10s of milliseconds to initialize.
-  if (!copy_texture_chromium_.get()) {
+  if (!copy_texture_monyhar_.get()) {
     LOCAL_COPY_REAL_GL_ERRORS_TO_WRAPPER("glCopySubTexture");
-    copy_texture_chromium_.reset(
+    copy_texture_monyhar_.reset(
         gles2::CopyTextureCHROMIUMResourceManager::Create());
-    copy_texture_chromium_->Initialize(this, features());
+    copy_texture_monyhar_->Initialize(this, features());
     if (LOCAL_PEEK_GL_ERROR("glCopySubTexture") != GL_NO_ERROR)
       return false;
 
@@ -2257,7 +2257,7 @@ void RasterDecoderImpl::DoCopySubTextureINTERNALGL(
 #endif
 
   in_copy_sub_texture_ = true;
-  copy_texture_chromium_->DoCopySubTexture(
+  copy_texture_monyhar_->DoCopySubTexture(
       this, source_target, source_texture->service_id(), source_level,
       source_internal_format, dest_target, dest_texture->service_id(),
       dest_level, dest_internal_format, xoffset, yoffset, x, y, width, height,
@@ -3114,7 +3114,7 @@ void RasterDecoderImpl::DeletePaintCacheTextBlobsINTERNALHelper(
   if (!supports_oop_raster_) {
     LOCAL_SET_GL_ERROR(GL_INVALID_OPERATION,
                        "glDeletePaintCacheEntriesINTERNAL",
-                       "No chromium raster support");
+                       "No monyhar raster support");
     return;
   }
 
@@ -3127,7 +3127,7 @@ void RasterDecoderImpl::DeletePaintCachePathsINTERNALHelper(
   if (!supports_oop_raster_) {
     LOCAL_SET_GL_ERROR(GL_INVALID_OPERATION,
                        "glDeletePaintCacheEntriesINTERNAL",
-                       "No chromium raster support");
+                       "No monyhar raster support");
     return;
   }
 
@@ -3137,7 +3137,7 @@ void RasterDecoderImpl::DeletePaintCachePathsINTERNALHelper(
 void RasterDecoderImpl::DoClearPaintCacheINTERNAL() {
   if (!supports_oop_raster_) {
     LOCAL_SET_GL_ERROR(GL_INVALID_OPERATION, "glClearPaintCacheINTERNAL",
-                       "No chromium raster support");
+                       "No monyhar raster support");
     return;
   }
 
@@ -3155,7 +3155,7 @@ void RasterDecoderImpl::DoBeginRasterCHROMIUM(GLuint sk_color,
 
   if (!gr_context() || !supports_oop_raster_) {
     LOCAL_SET_GL_ERROR(GL_INVALID_OPERATION, "glBeginRasterCHROMIUM",
-                       "chromium_raster_transport not enabled via attribs");
+                       "monyhar_raster_transport not enabled via attribs");
     return;
   }
   if (sk_surface_) {
@@ -3278,7 +3278,7 @@ void RasterDecoderImpl::DoRasterCHROMIUM(GLuint raster_shm_id,
                                          GLuint font_shm_offset,
                                          GLuint font_shm_size) {
   TRACE_EVENT1("gpu", "RasterDecoderImpl::DoRasterCHROMIUM", "raster_id",
-               ++raster_chromium_id_);
+               ++raster_monyhar_id_);
 
   if (!sk_surface_) {
     LOCAL_SET_GL_ERROR(GL_INVALID_OPERATION, "glRasterCHROMIUM",

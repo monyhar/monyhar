@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ntp;
+package org.monyhar.chrome.browser.ntp;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -13,9 +13,9 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ntp.ForeignSessionHelper.ForeignSession;
-import org.chromium.components.browser_ui.widget.TintedDrawable;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ntp.ForeignSessionHelper.ForeignSession;
+import org.monyhar.components.browser_ui.widget.TintedDrawable;
 
 /**
  * Header view shown above each group of items on the Recent Tabs page. Shows the name of the

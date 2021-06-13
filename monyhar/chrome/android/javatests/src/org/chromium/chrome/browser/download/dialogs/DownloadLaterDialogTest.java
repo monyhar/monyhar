@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.dialogs;
+package org.monyhar.chrome.browser.download.dialogs;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -36,19 +36,19 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.chrome.browser.download.DownloadLaterPromptStatus;
-import org.chromium.chrome.browser.download.R;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.preferences.Pref;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.components.browser_ui.widget.RadioButtonWithDescription;
-import org.chromium.components.prefs.PrefService;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.modaldialog.ModalDialogProperties;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.chrome.browser.download.DownloadLaterPromptStatus;
+import org.monyhar.chrome.browser.download.R;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.preferences.Pref;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.components.browser_ui.widget.RadioButtonWithDescription;
+import org.monyhar.components.prefs.PrefService;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.modaldialog.ModalDialogProperties;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * Test to verify download later dialog.
@@ -138,20 +138,20 @@ public class DownloadLaterDialogTest {
     }
 
     private void clickPositiveButton() {
-        onView(withId(org.chromium.chrome.R.id.positive_button)).perform(click());
+        onView(withId(org.monyhar.chrome.R.id.positive_button)).perform(click());
     }
 
     private void clickNegativeButton() {
-        onView(withId(org.chromium.chrome.R.id.negative_button)).perform(click());
+        onView(withId(org.monyhar.chrome.R.id.negative_button)).perform(click());
     }
 
     private void assertPositiveButtonText(String expectedText) {
-        onView(withId(org.chromium.chrome.R.id.positive_button))
+        onView(withId(org.monyhar.chrome.R.id.positive_button))
                 .check(matches(withText(expectedText)));
     }
 
     private void assertSubtitle(String subtitle) {
-        onView(withId(org.chromium.chrome.R.id.subtitle)).check(matches(withText(subtitle)));
+        onView(withId(org.monyhar.chrome.R.id.subtitle)).check(matches(withText(subtitle)));
     }
 
     private void assertShowAgainCheckBox(boolean enabled, int visibility, boolean checked) {
@@ -257,7 +257,7 @@ public class DownloadLaterDialogTest {
             // for the initial setup.
             RadioButtonWithDescription onWifiButton =
                     (RadioButtonWithDescription) getDownloadLaterDialogView().findViewById(
-                            org.chromium.chrome.browser.download.R.id.on_wifi);
+                            org.monyhar.chrome.browser.download.R.id.on_wifi);
             Assert.assertTrue(onWifiButton.isChecked());
 
             // Simulate a click on another radio button, the event should be propagated to
@@ -309,7 +309,7 @@ public class DownloadLaterDialogTest {
 
             RadioButtonWithDescription onWifiButton =
                     (RadioButtonWithDescription) getDownloadLaterDialogView().findViewById(
-                            org.chromium.chrome.browser.download.R.id.on_wifi);
+                            org.monyhar.chrome.browser.download.R.id.on_wifi);
             onWifiButton.setChecked(true);
             getDownloadLaterDialogView().onCheckedChanged(null, -1);
         });

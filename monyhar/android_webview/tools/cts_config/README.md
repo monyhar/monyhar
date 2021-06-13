@@ -88,7 +88,7 @@ Before re-enabling tests, make sure it's actually safe to enable the test again.
       no longer receive CTS releases. Unfortunately, if there was a test bug for
       these OS levels, we must disable the test forever on that OS (and you
       should cherry-pick the fix to the earliest supported CTS branch).
-* If the failure was due to a chromium-side bug/regression, you can re-enable
+* If the failure was due to a monyhar-side bug/regression, you can re-enable
   the test as soon as the bug is fixed on trunk. You can run CTS on a device or
   emulator with [this guide](/android_webview/docs/test-instructions.md#cts).
 
@@ -100,7 +100,7 @@ the relevant OS levels. Please verify this change by adding the
 
 Android generally has strict backward compatibility requirements, and this
 extends to CTS. However, sometimes it's appropriate to change the test logic
-rather than restoring the old chromium behavior, such as when the test logic is
+rather than restoring the old monyhar behavior, such as when the test logic is
 responsible for flakiness or relies on an invalid assumption. Please reach out
 to [the WebView team][1] quickly if you think a CTS test needs to change (the
 failure is still considered **ReleaseBlock-Dev** until the test change actually
@@ -109,7 +109,7 @@ lands in Android).
 Any CTS changes must be backward compatible. The original WebView version which
 shipped on that OS version must continue to pass the revised CTS test.
 
-[1]: https://groups.google.com/a/chromium.org/forum/#!forum/android-webview-dev
+[1]: https://groups.google.com/a/monyhar.org/forum/#!forum/android-webview-dev
 [lollipop-mr1-cts-release]: https://cs.android.com/android/platform/superproject/+/lollipop-mr1-cts-release:cts/tests/tests/webkit/src/android/webkit/cts/
 [marshmallow-cts-release]: https://cs.android.com/android/platform/superproject/+/marshmallow-cts-release:cts/tests/tests/webkit/src/android/webkit/cts/
 [nougat-cts-dev]: https://cs.android.com/android/platform/superproject/+/nougat-cts-dev:cts/tests/tests/webkit/src/android/webkit/cts/

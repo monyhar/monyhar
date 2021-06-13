@@ -1,21 +1,21 @@
 # Subject matter experts:
-#   Componentization and iOS: droger@chromium.org
-#                             jzw@chromium.org
-#   "Bubble" UI and translate internals: megjablon@chromium.org
-#                                        groby@chromium.org
-#                                        hajimehoshi@chromium.org
-#   CSP and isolated worlds: toyoshim@chromium.org
-anthonyvd@chromium.org
-droger@chromium.org
-groby@chromium.org
-hajimehoshi@chromium.org
+#   Componentization and iOS: droger@monyhar.org
+#                             jzw@monyhar.org
+#   "Bubble" UI and translate internals: megjablon@monyhar.org
+#                                        groby@monyhar.org
+#                                        hajimehoshi@monyhar.org
+#   CSP and isolated worlds: toyoshim@monyhar.org
+anthonyvd@monyhar.org
+droger@monyhar.org
+groby@monyhar.org
+hajimehoshi@monyhar.org
 jds@google.com
-jzw@chromium.org
-megjablon@chromium.org
-perrier@chromium.org
-sclittle@chromium.org
-toyoshim@chromium.org
+jzw@monyhar.org
+megjablon@monyhar.org
+perrier@monyhar.org
+sclittle@monyhar.org
+toyoshim@monyhar.org
 
 # Specialized reviewers
 # UMA and UKM translate metrics
-curranmax@chromium.org
+curranmax@monyhar.org

@@ -233,7 +233,7 @@ bool TestPatchUsingDynamicStub() {
   // IncrementNumber because it starts with a jump.
 #if 0
   IncrementingFunc dummy = NULL;
-  // TODO(joi@chromium.org): restore this test once flag is added to
+  // TODO(joi@monyhar.org): restore this test once flag is added to
   // disable JMP following
   SIDESTEP_EXPECT_TRUE(sidestep::SIDESTEP_JUMP_INSTRUCTION ==
                        sidestep::PreamblePatcher::Patch(IncrementNumber,

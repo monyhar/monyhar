@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.home.list;
+package org.monyhar.chrome.browser.download.home.list;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -10,9 +10,9 @@ import android.text.TextUtils;
 
 import androidx.core.util.Pair;
 
-import org.chromium.base.CollectionUtil;
-import org.chromium.components.offline_items_collection.OfflineItem;
-import org.chromium.components.offline_items_collection.OfflineItemShareInfo;
+import org.monyhar.base.CollectionUtil;
+import org.monyhar.components.offline_items_collection.OfflineItem;
+import org.monyhar.components.offline_items_collection.OfflineItemShareInfo;
 
 import java.util.ArrayList;
 import java.util.Collection;

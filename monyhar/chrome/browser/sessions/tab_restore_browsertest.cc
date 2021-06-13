@@ -1017,7 +1017,7 @@ IN_PROC_BROWSER_TEST_F(TabRestoreTest, MAYBE_RestoreTabWithSpecialURL) {
             0);
 }
 
-// https://crbug.com/667932: Flakiness on linux_chromium_asan_rel_ng bot.
+// https://crbug.com/667932: Flakiness on linux_monyhar_asan_rel_ng bot.
 // https://crbug.com/825305: Timeout flakiness on Win7 Tests (dbg)(1) and
 // Mac10.13 Tests (dbg) bots.
 // Also fails on Linux Tests (dbg).

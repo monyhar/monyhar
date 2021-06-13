@@ -156,7 +156,7 @@ void RegisterComponentsForUpdate(bool is_off_the_record_profile,
 
 #if defined(OS_WIN)
   // SwReporter is only needed for official builds.  However, to enable testing
-  // on chromium build bots, it is always registered here and
+  // on monyhar build bots, it is always registered here and
   // RegisterSwReporterComponent() has support for running only in official
   // builds or tests.
   RegisterSwReporterComponent(cus);

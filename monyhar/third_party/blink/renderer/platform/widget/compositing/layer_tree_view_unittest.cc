@@ -22,7 +22,7 @@
 #include "cc/trees/layer_tree_host.h"
 #include "cc/trees/render_frame_metadata_observer.h"
 #include "components/viz/test/test_context_provider.h"
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"
 #include "third_party/blink/public/platform/scheduler/test/renderer_scheduler_test_support.h"

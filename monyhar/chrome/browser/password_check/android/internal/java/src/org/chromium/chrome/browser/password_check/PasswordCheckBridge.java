@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_check;
+package org.monyhar.chrome.browser.password_check;
 
 import android.app.Activity;
 import android.content.Context;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.url.GURL;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.url.GURL;
 
 /**
  * Class handling the communication with the C++ part of the password check feature. It forwards

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -11,17 +11,17 @@ import android.os.Process;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeClassQualifiedName;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.net.ConnectionType;
-import org.chromium.net.NetworkChangeNotifierAutoDetect;
-import org.chromium.net.RegistrationPolicyAlwaysRegister;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeClassQualifiedName;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.net.ConnectionType;
+import org.monyhar.net.NetworkChangeNotifierAutoDetect;
+import org.monyhar.net.RegistrationPolicyAlwaysRegister;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.remoteobjects;
+package org.monyhar.content.browser.remoteobjects;
 
-import org.chromium.blink.mojom.RemoteObject;
-import org.chromium.blink.mojom.RemoteObjectHost;
-import org.chromium.mojo.bindings.InterfaceRequest;
-import org.chromium.mojo.system.MojoException;
+import org.monyhar.blink.mojom.RemoteObject;
+import org.monyhar.blink.mojom.RemoteObjectHost;
+import org.monyhar.mojo.bindings.InterfaceRequest;
+import org.monyhar.mojo.system.MojoException;
 
 import java.lang.ref.WeakReference;
 

@@ -9,8 +9,8 @@ def CheckChangeOnUpload(input_api, output_api):
     # If new functions are added to the original file, it is very likely that
     # function with the same signature should be added to the shadow.
     impl_to_shadow_paths = {
-        'base/android/java/src/org/chromium/base/metrics/RecordHistogram.java':
-        'base/android/junit/src/org/chromium/base/metrics/test/ShadowRecordHistogram.java'
+        'base/android/java/src/org/monyhar/base/metrics/RecordHistogram.java':
+        'base/android/junit/src/org/monyhar/base/metrics/test/ShadowRecordHistogram.java'
     }
 
     for impl_path, shadow_path in impl_to_shadow_paths.items():

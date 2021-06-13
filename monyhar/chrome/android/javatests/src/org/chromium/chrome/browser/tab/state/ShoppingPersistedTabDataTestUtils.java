@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab.state;
+package org.monyhar.chrome.browser.tab.state;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyInt;
@@ -21,22 +21,22 @@ import com.google.protobuf.ByteString;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.endpoint_fetcher.EndpointFetcher;
-import org.chromium.chrome.browser.optimization_guide.OptimizationGuideBridge;
-import org.chromium.chrome.browser.optimization_guide.OptimizationGuideBridge.OptimizationGuideCallback;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tab.MockTab;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.proto.PriceTracking.BuyableProduct;
-import org.chromium.chrome.browser.tab.proto.PriceTracking.PriceTrackingData;
-import org.chromium.chrome.browser.tab.proto.PriceTracking.ProductPrice;
-import org.chromium.chrome.browser.tab.proto.PriceTracking.ProductPriceUpdate;
-import org.chromium.components.optimization_guide.OptimizationGuideDecision;
-import org.chromium.components.optimization_guide.proto.CommonTypesProto.Any;
-import org.chromium.components.optimization_guide.proto.HintsProto;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.url.GURL;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.endpoint_fetcher.EndpointFetcher;
+import org.monyhar.chrome.browser.optimization_guide.OptimizationGuideBridge;
+import org.monyhar.chrome.browser.optimization_guide.OptimizationGuideBridge.OptimizationGuideCallback;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tab.MockTab;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.proto.PriceTracking.BuyableProduct;
+import org.monyhar.chrome.browser.tab.proto.PriceTracking.PriceTrackingData;
+import org.monyhar.chrome.browser.tab.proto.PriceTracking.ProductPrice;
+import org.monyhar.chrome.browser.tab.proto.PriceTracking.ProductPriceUpdate;
+import org.monyhar.components.optimization_guide.OptimizationGuideDecision;
+import org.monyhar.components.optimization_guide.proto.CommonTypesProto.Any;
+import org.monyhar.components.optimization_guide.proto.HintsProto;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.url.GURL;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

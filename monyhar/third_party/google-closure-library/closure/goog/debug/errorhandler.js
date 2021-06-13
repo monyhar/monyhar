@@ -220,7 +220,7 @@ goog.debug.ErrorHandler.prototype.handleError_ = function(e) {
     }
     if (goog.DEBUG) {
       // Work around for https://code.google.com/p/v8/issues/detail?id=2625
-      // and https://code.google.com/p/chromium/issues/detail?id=237059
+      // and https://code.google.com/p/monyhar/issues/detail?id=237059
       // Custom errors and errors with custom stack traces show the wrong
       // stack trace
       // If it has a stack and Error.captureStackTrace is supported (only

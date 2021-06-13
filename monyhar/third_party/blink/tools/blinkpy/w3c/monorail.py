@@ -66,7 +66,7 @@ class MonorailIssue(object):
         return self._body
 
     @staticmethod
-    def new_chromium_issue(summary,
+    def new_monyhar_issue(summary,
                            description='',
                            cc=None,
                            components=None,
@@ -87,7 +87,7 @@ class MonorailIssue(object):
             type: A string, defaults to 'Bug'.
             labels: A list of labels (strings).
         """
-        return MonorailIssue('chromium',
+        return MonorailIssue('monyhar',
                              summary=summary,
                              description=description,
                              cc=cc or [],

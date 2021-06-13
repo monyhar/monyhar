@@ -26,7 +26,7 @@ namespace content {
 namespace {
 
 const char kTestUrl[] = "https://www.google.com";
-const char kCrossOriginTestUrl[] = "https://www.chromium.org";
+const char kCrossOriginTestUrl[] = "https://www.monyhar.org";
 
 class MockSerialServiceClient : public blink::mojom::SerialServiceClient {
  public:

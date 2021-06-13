@@ -49,9 +49,9 @@
 #endif
 
 const char kCreateWebSocketPath[] =
-    "session/:sessionId/chromium/create_websocket";
+    "session/:sessionId/monyhar/create_websocket";
 const char kSendCommandFromWebSocket[] =
-    "session/:sessionId/chromium/send_command_from_websocket";
+    "session/:sessionId/monyhar/send_command_from_websocket";
 
 namespace {
 
@@ -895,22 +895,22 @@ HttpHandler::HttpHandler(
       //
 
       CommandMapping(
-          kGet, "session/:sessionId/chromium/heap_snapshot",
+          kGet, "session/:sessionId/monyhar/heap_snapshot",
           WrapToCommand("HeapSnapshot",
                         base::BindRepeating(&ExecuteTakeHeapSnapshot))),
       CommandMapping(
-          kGet, "session/:sessionId/chromium/network_conditions",
+          kGet, "session/:sessionId/monyhar/network_conditions",
           WrapToCommand("GetNetworkConditions",
                         base::BindRepeating(&ExecuteGetNetworkConditions))),
       CommandMapping(
-          kPost, "session/:sessionId/chromium/network_conditions",
+          kPost, "session/:sessionId/monyhar/network_conditions",
           WrapToCommand("SetNetworkConditions",
                         base::BindRepeating(&ExecuteSetNetworkConditions))),
       CommandMapping(
-          kDelete, "session/:sessionId/chromium/network_conditions",
+          kDelete, "session/:sessionId/monyhar/network_conditions",
           WrapToCommand("DeleteNetworkConditions",
                         base::BindRepeating(&ExecuteDeleteNetworkConditions))),
-      CommandMapping(kPost, "session/:sessionId/chromium/send_command",
+      CommandMapping(kPost, "session/:sessionId/monyhar/send_command",
                      WrapToCommand("SendCommand",
                                    base::BindRepeating(&ExecuteSendCommand))),
       VendorPrefixedCommandMapping(
@@ -918,7 +918,7 @@ HttpHandler::HttpHandler(
           WrapToCommand("ExecuteCDP",
                         base::BindRepeating(&ExecuteSendCommandAndGetResult))),
       CommandMapping(
-          kPost, "session/:sessionId/chromium/send_command_and_get_result",
+          kPost, "session/:sessionId/monyhar/send_command_and_get_result",
           WrapToCommand("SendCommandAndGetResult",
                         base::BindRepeating(&ExecuteSendCommandAndGetResult))),
       VendorPrefixedCommandMapping(

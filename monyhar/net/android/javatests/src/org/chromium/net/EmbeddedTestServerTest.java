@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
 import android.support.test.InstrumentationRegistry;
 
@@ -11,9 +11,9 @@ import androidx.test.filters.MediumTest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.net.test.EmbeddedTestServer;
-import org.chromium.net.test.EmbeddedTestServer.EmbeddedTestServerFailure;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.net.test.EmbeddedTestServer;
+import org.monyhar.net.test.EmbeddedTestServer.EmbeddedTestServerFailure;
 
 /**
  * Tests for {@link EmbeddedTestServer}.

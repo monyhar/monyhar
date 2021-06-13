@@ -55,7 +55,7 @@ class PartnerBookmarksReader {
  private:
   // These values are persisted to logs. Entries should not be renumbered and
   // numeric values should never be reused.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.partnerbookmarks
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.partnerbookmarks
   enum class FaviconFetchResult {
     // Successfully fetched a favicon from cache or server.
     // Deprecated, SUCCESS_FROM_CACHE and SUCCESS_FROM_SERVER should be used.

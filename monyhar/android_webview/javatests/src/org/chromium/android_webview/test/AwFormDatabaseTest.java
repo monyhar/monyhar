@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
 import android.support.test.InstrumentationRegistry;
 
@@ -13,7 +13,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.AwFormDatabase;
+import org.monyhar.android_webview.AwFormDatabase;
 
 /** AwFormDatabaseTest. */
 @RunWith(AwJUnit4ClassRunner.class)

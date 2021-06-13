@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
-import static org.chromium.android_webview.test.AwActivityTestRule.WAIT_TIMEOUT_MS;
-import static org.chromium.base.test.util.ScalableTimeout.scaleTimeout;
+import static org.monyhar.android_webview.test.AwActivityTestRule.WAIT_TIMEOUT_MS;
+import static org.monyhar.base.test.util.ScalableTimeout.scaleTimeout;
 
 import android.graphics.Bitmap;
 import android.graphics.Color;
@@ -20,22 +20,22 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.AwContents;
-import org.chromium.android_webview.AwContents.VisualStateCallback;
-import org.chromium.android_webview.AwContentsClient;
-import org.chromium.android_webview.test.util.CommonResources;
-import org.chromium.android_webview.test.util.GraphicsTestUtils;
-import org.chromium.android_webview.test.util.JavascriptEventObserver;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.components.embedder_support.util.WebResourceResponseInfo;
-import org.chromium.content_public.browser.JavascriptInjector;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.test.util.DOMUtils;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.android_webview.AwContents;
+import org.monyhar.android_webview.AwContents.VisualStateCallback;
+import org.monyhar.android_webview.AwContentsClient;
+import org.monyhar.android_webview.test.util.CommonResources;
+import org.monyhar.android_webview.test.util.GraphicsTestUtils;
+import org.monyhar.android_webview.test.util.JavascriptEventObserver;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.components.embedder_support.util.WebResourceResponseInfo;
+import org.monyhar.content_public.browser.JavascriptInjector;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.test.util.DOMUtils;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.io.ByteArrayInputStream;
 import java.io.FilterInputStream;

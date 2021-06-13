@@ -1,8 +1,8 @@
-per-file deep_scanning_browsertest_base*=domfc@chromium.org
-per-file deep_scanning_utils*=rogerta@chromium.org
-per-file deep_scanning_utils*=domfc@chromium.org
-per-file deep_scanning_test_utils*=rogerta@chromium.org
-per-file deep_scanning_test_utils*=domfc@chromium.org
-per-file multipart_data_pipe_getter*=domfc@chromium.org
+per-file deep_scanning_browsertest_base*=domfc@monyhar.org
+per-file deep_scanning_utils*=rogerta@monyhar.org
+per-file deep_scanning_utils*=domfc@monyhar.org
+per-file deep_scanning_test_utils*=rogerta@monyhar.org
+per-file deep_scanning_test_utils*=domfc@monyhar.org
+per-file multipart_data_pipe_getter*=domfc@monyhar.org
 
-drubery@chromium.org
+drubery@monyhar.org

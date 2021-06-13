@@ -8,7 +8,7 @@ option optimize_for = LITE_RUNTIME;
 
 package omaha_metrics;
 
-option java_package = "org.chromium.chrome.browser.omaha.metrics";
+option java_package = "org.monyhar.chrome.browser.omaha.metrics";
 option java_outer_classname = "UpdateProtos";
 
 message Tracking {

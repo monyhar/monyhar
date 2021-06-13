@@ -9,7 +9,7 @@
 #
 # Example usage, testing M80 tests and client against master implementation:
 #   autoninja -C out/Release weblayer_instrumentation_test_versions_apk
-#   cipd install --root /tmp/M80 chromium/testing/weblayer-x86 m80
+#   cipd install --root /tmp/M80 monyhar/testing/weblayer-x86 m80
 #   out/Release/bin/run_weblayer_instrumentation_test_versions_apk \
 #       --test-runner-outdir out/Release
 #       --client-outdir /tmp/M80/out/Release

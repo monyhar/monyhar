@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ntp;
+package org.monyhar.chrome.browser.ntp;
 
 import android.content.Context;
 
@@ -10,29 +10,29 @@ import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.browser.invalidation.SessionsInvalidationManager;
-import org.chromium.chrome.browser.ntp.ForeignSessionHelper.ForeignSession;
-import org.chromium.chrome.browser.ntp.ForeignSessionHelper.ForeignSessionTab;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.signin.SyncConsentActivityLauncherImpl;
-import org.chromium.chrome.browser.signin.services.IdentityServicesProvider;
-import org.chromium.chrome.browser.signin.services.ProfileDataCache;
-import org.chromium.chrome.browser.signin.services.SigninManager;
-import org.chromium.chrome.browser.signin.services.SigninManager.SignInStateObserver;
-import org.chromium.chrome.browser.signin.ui.PersonalizedSigninPromoView;
-import org.chromium.chrome.browser.signin.ui.SigninPromoController;
-import org.chromium.chrome.browser.sync.SyncService;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.ui.favicon.FaviconHelper;
-import org.chromium.chrome.browser.ui.favicon.FaviconHelper.FaviconImageCallback;
-import org.chromium.components.signin.AccountManagerFacadeProvider;
-import org.chromium.components.signin.AccountsChangeObserver;
-import org.chromium.components.signin.identitymanager.ConsentLevel;
-import org.chromium.components.signin.metrics.SigninAccessPoint;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.url.GURL;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.browser.invalidation.SessionsInvalidationManager;
+import org.monyhar.chrome.browser.ntp.ForeignSessionHelper.ForeignSession;
+import org.monyhar.chrome.browser.ntp.ForeignSessionHelper.ForeignSessionTab;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.signin.SyncConsentActivityLauncherImpl;
+import org.monyhar.chrome.browser.signin.services.IdentityServicesProvider;
+import org.monyhar.chrome.browser.signin.services.ProfileDataCache;
+import org.monyhar.chrome.browser.signin.services.SigninManager;
+import org.monyhar.chrome.browser.signin.services.SigninManager.SignInStateObserver;
+import org.monyhar.chrome.browser.signin.ui.PersonalizedSigninPromoView;
+import org.monyhar.chrome.browser.signin.ui.SigninPromoController;
+import org.monyhar.chrome.browser.sync.SyncService;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.ui.favicon.FaviconHelper;
+import org.monyhar.chrome.browser.ui.favicon.FaviconHelper.FaviconImageCallback;
+import org.monyhar.components.signin.AccountManagerFacadeProvider;
+import org.monyhar.components.signin.AccountsChangeObserver;
+import org.monyhar.components.signin.identitymanager.ConsentLevel;
+import org.monyhar.components.signin.metrics.SigninAccessPoint;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.url.GURL;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

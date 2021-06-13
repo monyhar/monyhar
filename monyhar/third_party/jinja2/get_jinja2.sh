@@ -9,7 +9,7 @@ VERSION='2.10'
 SRC_URL='https://files.pythonhosted.org/packages/56/e6/332789f295cf22308386cf5bbd1f4e00ed11484299c5d7383378cf48ba47/Jinja2-2.10.tar.gz'
 PACKAGE_DIR='jinja2'
 
-CHROMIUM_FILES="README.chromium OWNERS get_jinja2.sh DIR_METADATA patches"
+CHROMIUM_FILES="README.monyhar OWNERS get_jinja2.sh DIR_METADATA patches"
 EXTRA_FILES='LICENSE AUTHORS'
 REMOVE_FILES='testsuite'
 

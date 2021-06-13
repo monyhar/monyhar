@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.firstrun;
+package org.monyhar.chrome.browser.firstrun;
 
 import static org.robolectric.Shadows.shadowOf;
 
@@ -23,16 +23,16 @@ import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowUserManager;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.metrics.test.ShadowRecordHistogram;
-import org.chromium.base.task.TaskTraits;
-import org.chromium.base.task.test.ShadowPostTask;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.PayloadCallbackHelper;
-import org.chromium.components.policy.PolicySwitches;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.metrics.test.ShadowRecordHistogram;
+import org.monyhar.base.task.TaskTraits;
+import org.monyhar.base.task.test.ShadowPostTask;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.PayloadCallbackHelper;
+import org.monyhar.components.policy.PolicySwitches;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.Arrays;
 import java.util.List;

@@ -14,7 +14,7 @@ from contrib.media_router_benchmarks import media_router_measurements
 from contrib.media_router_benchmarks import media_router_pages
 
 
-@benchmark.Info(emails=['mfoltz@chromium.org', 'cliffordcheng@chromium.org'],
+@benchmark.Info(emails=['mfoltz@monyhar.org', 'cliffordcheng@monyhar.org'],
                 component='Internals>Cast')
 class MediaRouterCPUMemoryCast(perf_benchmark.PerfBenchmark):
   """Obtains media performance for key user scenarios on desktop."""
@@ -53,7 +53,7 @@ class MediaRouterCPUMemoryCast(perf_benchmark.PerfBenchmark):
     return 'media_router.cpu_memory'
 
 
-@benchmark.Info(emails=['mfoltz@chromium.org', 'cliffordcheng@chromium.org'],
+@benchmark.Info(emails=['mfoltz@monyhar.org', 'cliffordcheng@monyhar.org'],
                 component='Internals>Cast')
 class NoMediaRouterCPUMemory(perf_benchmark.PerfBenchmark):
   """Benchmark for CPU and memory usage without Media Router."""

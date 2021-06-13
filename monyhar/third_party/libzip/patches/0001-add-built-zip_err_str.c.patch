@@ -1,5 +1,5 @@
 From 327a318dbdb7d91986cc0d8fa46b44118bf8463d Mon Sep 17 00:00:00 2001
-From: Michael Crouse <mcrouse@chromium.org>
+From: Michael Crouse <mcrouse@monyhar.org>
 Date: Tue, 5 Jan 2021 09:06:54 -0800
 Subject: [PATCH] add built zip_err_str.c
 

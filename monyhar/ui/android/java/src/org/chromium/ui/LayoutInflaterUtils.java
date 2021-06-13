@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui;
+package org.monyhar.ui;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,12 +12,12 @@ import android.view.Window;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.StrictModeContext;
+import org.monyhar.base.StrictModeContext;
 
 /**
  * {@link LayoutInflater} wrapper class which suppresses strict mode violations. A helper class is
  * used for strict mode suppression instead of
- * {@link org.chromium.components.strictmode.browser.ThreadStrictModeInterceptor.Builder}
+ * {@link org.monyhar.components.strictmode.browser.ThreadStrictModeInterceptor.Builder}
  * because we only want to suppress strict mode violations caused by Chromium usage of
  * LayoutInflater and not usage by embedders of Web Layer or Web View.
  */

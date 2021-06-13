@@ -10,13 +10,13 @@
 #   chrome/renderer/resources/extensions/OWNERS
 
 set noparent
-rdevlin.cronin@chromium.org
-lazyboy@chromium.org
-karandeepb@chromium.org
-dbertoni@chromium.org
-benwells@chromium.org
-finnur@chromium.org
-reillyg@chromium.org
+rdevlin.cronin@monyhar.org
+lazyboy@monyhar.org
+karandeepb@monyhar.org
+dbertoni@monyhar.org
+benwells@monyhar.org
+finnur@monyhar.org
+reillyg@monyhar.org
 
 # Translation artifacts:
 per-file *.xtb=file://tools/translation/TRANSLATION_OWNERS

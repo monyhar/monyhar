@@ -37,7 +37,7 @@ void GetAllowedClientHintsFromSource(
         rule.setting_value.FindKey("expiration_time");
 
     // |expiration_time| may be null in rare cases. See
-    // https://bugs.chromium.org/p/chromium/issues/detail?id=942398.
+    // https://bugs.monyhar.org/p/monyhar/issues/detail?id=942398.
     if (expiration_time == nullptr)
       continue;
     DCHECK(expiration_time->is_double());

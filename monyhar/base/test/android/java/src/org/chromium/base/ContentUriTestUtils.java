@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base;
+package org.monyhar.base;
 
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.net.Uri;
 import android.provider.MediaStore;
 
-import org.chromium.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.CalledByNative;
 
 /**
  * Utilities for testing operations on content URI.

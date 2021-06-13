@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.crash;
+package org.monyhar.chrome.browser.crash;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
-import static org.chromium.chrome.browser.crash.LogcatExtractionRunnable.BEGIN_MICRODUMP;
-import static org.chromium.chrome.browser.crash.LogcatExtractionRunnable.END_MICRODUMP;
-import static org.chromium.chrome.browser.crash.LogcatExtractionRunnable.SNIPPED_MICRODUMP;
+import static org.monyhar.chrome.browser.crash.LogcatExtractionRunnable.BEGIN_MICRODUMP;
+import static org.monyhar.chrome.browser.crash.LogcatExtractionRunnable.END_MICRODUMP;
+import static org.monyhar.chrome.browser.crash.LogcatExtractionRunnable.SNIPPED_MICRODUMP;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
 
 import java.util.Arrays;
 import java.util.LinkedList;

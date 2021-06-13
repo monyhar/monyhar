@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox;
+package org.monyhar.chrome.browser.omnibox;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -10,8 +10,8 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
-import org.chromium.chrome.R;
-import org.chromium.ui.base.LocalizationUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.ui.base.LocalizationUtils;
 
 /**
  * Location bar for tablet form factors.

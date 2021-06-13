@@ -38,8 +38,8 @@ These benchmarks are run continuously on the [chrome.perf][] waterfall,
 collecting and reporting results on the
 [Chrome Performance Dashboard][chromeperf].
 
-[system_health]: https://chromium.googlesource.com/chromium/src/+/main/tools/perf/page_sets/system_health/
-[chrome.perf]: https://ci.chromium.org/p/chrome/g/chrome.perf/console
+[system_health]: https://monyhar.googlesource.com/monyhar/src/+/main/tools/perf/page_sets/system_health/
+[chrome.perf]: https://ci.monyhar.org/p/chrome/g/chrome.perf/console
 [chromeperf]: https://chromeperf.appspot.com/report
 
 ### User stories
@@ -81,7 +81,7 @@ obtained from this single measurement.
 
 ## Continuous monitoring
 
-![Chrome Performance Dashboard](https://storage.googleapis.com/chromium-docs.appspot.com/79d08f59cf497c761f7099ea427704c14e9afc03.png)
+![Chrome Performance Dashboard](https://storage.googleapis.com/monyhar-docs.appspot.com/79d08f59cf497c761f7099ea427704c14e9afc03.png)
 
 To view data from one of the benchmarks on the
 [Chrome Performance Dashboard][chromeperf] you should select:
@@ -107,14 +107,14 @@ to find the root cause of regressions.
 
 [perf sheriffs]: /docs/speed/perf_regression_sheriffing.md
 
-![Chrome Performance Dashboard Alert](https://storage.googleapis.com/chromium-docs.appspot.com/perfdashboard_alert.png)
+![Chrome Performance Dashboard Alert](https://storage.googleapis.com/monyhar-docs.appspot.com/perfdashboard_alert.png)
 
 ## Debugging memory regressions
 
 If you are investigating a memory regression, chances are, a [pinpoint][]
 job identified one of your CLs as a possible culprit.
 
-![Pinpoint Regression](https://storage.googleapis.com/chromium-docs.appspot.com/pinpoint_regression.png)
+![Pinpoint Regression](https://storage.googleapis.com/monyhar-docs.appspot.com/pinpoint_regression.png)
 
 Note the "chart" argument identifies the memory metric that regressed. The
 pinpoint results page also gives you easy access to traces before and after
@@ -142,7 +142,7 @@ may not be the cause of the regression; instead follow the more general
 guidance on how to [address performance regressions][addressing-regressions].
 Bugs should only be closed if the regression has been fixed or justified.
 
-[results-ui]: https://chromium.googlesource.com/catapult.git/+/HEAD/docs/metrics-results-ui.md
+[results-ui]: https://monyhar.googlesource.com/catapult.git/+/HEAD/docs/metrics-results-ui.md
 [memory-infra]: /docs/memory-infra/README.md
 [addressing-regressions]: /docs/speed/addressing_performance_regressions.md
 
@@ -157,7 +157,7 @@ Given a patch already uploaded to code review, try jobs provide a convenient
 way to evaluate its memory implications on devices or platforms which
 may not be immediately available to developers.
 
-![New pinpoint try job dialog](https://storage.googleapis.com/chromium-docs.appspot.com/yHRMmUqraqJ.png)
+![New pinpoint try job dialog](https://storage.googleapis.com/monyhar-docs.appspot.com/yHRMmUqraqJ.png)
 
 To start a try job go to the [pinpoint][] website, click on the `+` button to
 create a new job, and fill in the required details:
@@ -167,7 +167,7 @@ create a new job, and fill in the required details:
 * **Bug ID** (optional): The id of a crbug.com issue where pinpoint can post
   updates when the job finishes.
 * **Gerrit URL**: URL to the patch you want to test. Note that your patch can
-  live in chromium or any of its sub-repositories!
+  live in monyhar or any of its sub-repositories!
 * **Bot**: Select a suitable device/platform from the drop-down menu on which
   to run your job.
 * **Benchmark**: The name of the benchmark to run. If you are interested in
@@ -184,7 +184,7 @@ create a new job, and fill in the required details:
 If you have more specific needs, or need to automate the creation of jobs, you
 can also consider using [pinpoint_cli][].
 
-[pinpoint_cli]: https://cs.chromium.org/chromium/src/tools/perf/pinpoint_cli
+[pinpoint_cli]: https://cs.monyhar.org/monyhar/src/tools/perf/pinpoint_cli
 
 ### How to run locally
 
@@ -193,7 +193,7 @@ story with the command:
 
 ```
 $SRC/tools/perf/run_benchmark run system_health.memory_mobile \
-    --browser android-chromium --story-filter load:search:google
+    --browser android-monyhar --story-filter load:search:google
 ```
 
 This will run the story with a default of 3 repetitions and produce a
@@ -203,7 +203,7 @@ for each story run by the benchmark. **Note:** by default only high level
 metrics are shown, you may need to tick the "Show all" check box in order to
 view some of the lower level memory metrics.
 
-![Example results.html file](https://storage.googleapis.com/chromium-docs.appspot.com/ea60207d9bb4809178fe75923d6d1a2b241170ef.png)
+![Example results.html file](https://storage.googleapis.com/monyhar-docs.appspot.com/ea60207d9bb4809178fe75923d6d1a2b241170ef.png)
 
 Other useful options for this command are:
 
@@ -217,14 +217,14 @@ For WebView make sure to [replace the system WebView][webview_install]
 on your device and use `--browser android-webview`.
 
 [memory-infra]: /docs/memory-infra/README.md
-[webview_install]: https://www.chromium.org/developers/how-tos/build-instructions-android-webview
+[webview_install]: https://www.monyhar.org/developers/how-tos/build-instructions-android-webview
 
 ## Understanding memory metrics
 
 There is a large number of [memory-infra][] metrics, breaking down usage
 attributed to different components and processes.
 
-![memory-infra metrics](https://storage.googleapis.com/chromium-docs.appspot.com/a73239c6367ed0f844500e51ce1e04556cb99b4f.png)
+![memory-infra metrics](https://storage.googleapis.com/monyhar-docs.appspot.com/a73239c6367ed0f844500e51ce1e04556cb99b4f.png)
 
 Most memory metrics have the form
 `memory:{browser}:{processes}:{source}:{component}:{kind}`

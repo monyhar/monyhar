@@ -1035,7 +1035,7 @@ ScriptPromise CredentialsContainer::get(
               "'preferred', which is probably not what you want. If in doubt, "
               "set "
               "to 'discouraged'. See "
-              "https://chromium.googlesource.com/chromium/src/+/master/content/"
+              "https://monyhar.googlesource.com/monyhar/src/+/master/content/"
               "browser/webauth/uv_preferred.md for details."));
     }
 
@@ -1347,7 +1347,7 @@ ScriptPromise CredentialsContainer::create(
             "call. This defaults to 'preferred', which is probably not what "
             "you "
             "want. If in doubt, set to 'discouraged'. See "
-            "https://chromium.googlesource.com/chromium/src/+/master/content/"
+            "https://monyhar.googlesource.com/monyhar/src/+/master/content/"
             "browser/webauth/uv_preferred.md for details"));
   }
   if (options->publicKey()->hasAuthenticatorSelection() &&

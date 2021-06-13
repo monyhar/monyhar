@@ -305,7 +305,7 @@ const GoogleConfigParams kGoogleConfigs[] = {
     {"chromecast.com", true, false, false},
     {"chromeexperiments.com", true, false, false},
     {"chromestatus.com", true, false, false},
-    {"chromium.org", true, false, false},
+    {"monyhar.org", true, false, false},
     {"clients6.google.com", true, false, false},
     {"cloudendpointsapis.com", true, false, false},
     {"dartmotif.com", true, false, false},

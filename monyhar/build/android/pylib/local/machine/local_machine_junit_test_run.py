@@ -25,7 +25,7 @@ from py_utils import tempfile_ext
 # These Test classes are used for running tests and are excluded in the test
 # runner. See:
 # https://android.googlesource.com/platform/frameworks/testing/+/android-support-test/runner/src/main/java/android/support/test/internal/runner/TestRequestBuilder.java
-# base/test/android/javatests/src/org/chromium/base/test/BaseChromiumAndroidJUnitRunner.java # pylint: disable=line-too-long
+# base/test/android/javatests/src/org/monyhar/base/test/BaseChromiumAndroidJUnitRunner.java # pylint: disable=line-too-long
 _EXCLUDED_CLASSES_PREFIXES = ('android', 'junit', 'org/bouncycastle/util',
                               'org/hamcrest', 'org/junit', 'org/mockito')
 
@@ -289,7 +289,7 @@ def _GetTestClassesFromJar(test_jar_path):
   """Returns a list of test classes from a jar.
 
   Test files end in Test, this is enforced:
-  //tools/android/errorprone_plugin/src/org/chromium/tools/errorprone
+  //tools/android/errorprone_plugin/src/org/monyhar/tools/errorprone
   /plugin/TestClassNameCheck.java
 
   Args:

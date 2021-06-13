@@ -12,7 +12,7 @@ namespace ui {
 // blink::WebGestureEvent types.
 //
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.ui.base
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.ui.base
 enum GestureEventType {
   GESTURE_EVENT_TYPE_SHOW_PRESS,
   GESTURE_EVENT_TYPE_DOUBLE_TAP,

@@ -16,7 +16,7 @@
 #ifndef UTIL_STATUS_MACROS_H_
 #define UTIL_STATUS_MACROS_H_
 
-#include "third_party/private-join-and-compute/src/chromium_patch.h"
+#include "third_party/private-join-and-compute/src/monyhar_patch.h"
 #include "third_party/private-join-and-compute/src/util/status.h"
 #include "third_party/private-join-and-compute/src/util/statusor.h"
 

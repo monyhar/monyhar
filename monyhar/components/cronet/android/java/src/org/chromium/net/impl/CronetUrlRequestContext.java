@@ -2,30 +2,30 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.impl;
+package org.monyhar.net.impl;
 
 import android.os.ConditionVariable;
 import android.os.Process;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
-import org.chromium.base.ObserverList;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeClassQualifiedName;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.annotations.UsedByReflection;
-import org.chromium.net.BidirectionalStream;
-import org.chromium.net.EffectiveConnectionType;
-import org.chromium.net.ExperimentalBidirectionalStream;
-import org.chromium.net.NetworkQualityRttListener;
-import org.chromium.net.NetworkQualityThroughputListener;
-import org.chromium.net.RequestFinishedInfo;
-import org.chromium.net.RttThroughputValues;
-import org.chromium.net.UrlRequest;
-import org.chromium.net.urlconnection.CronetHttpURLConnection;
-import org.chromium.net.urlconnection.CronetURLStreamHandlerFactory;
+import org.monyhar.base.Log;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeClassQualifiedName;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.annotations.UsedByReflection;
+import org.monyhar.net.BidirectionalStream;
+import org.monyhar.net.EffectiveConnectionType;
+import org.monyhar.net.ExperimentalBidirectionalStream;
+import org.monyhar.net.NetworkQualityRttListener;
+import org.monyhar.net.NetworkQualityThroughputListener;
+import org.monyhar.net.RequestFinishedInfo;
+import org.monyhar.net.RttThroughputValues;
+import org.monyhar.net.UrlRequest;
+import org.monyhar.net.urlconnection.CronetHttpURLConnection;
+import org.monyhar.net.urlconnection.CronetURLStreamHandlerFactory;
 
 import java.net.Proxy;
 import java.net.URL;

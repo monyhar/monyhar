@@ -2,31 +2,31 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.editurl;
+package org.monyhar.chrome.browser.omnibox.suggestions.editurl;
 
 import android.content.Context;
 
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.history_clusters.HistoryClustersTabHelper;
-import org.chromium.chrome.browser.omnibox.OmniboxSuggestionType;
-import org.chromium.chrome.browser.omnibox.suggestions.OmniboxSuggestionUiType;
-import org.chromium.chrome.browser.omnibox.suggestions.SuggestionHost;
-import org.chromium.chrome.browser.omnibox.suggestions.UrlBarDelegate;
-import org.chromium.chrome.browser.omnibox.suggestions.base.BaseSuggestionViewProcessor;
-import org.chromium.chrome.browser.omnibox.suggestions.base.BaseSuggestionViewProperties.Action;
-import org.chromium.chrome.browser.omnibox.suggestions.base.SuggestionDrawableState;
-import org.chromium.chrome.browser.omnibox.suggestions.base.SuggestionSpannable;
-import org.chromium.chrome.browser.omnibox.suggestions.basic.SuggestionViewProperties;
-import org.chromium.chrome.browser.share.ShareDelegate;
-import org.chromium.chrome.browser.share.ShareDelegate.ShareOrigin;
-import org.chromium.chrome.browser.tab.SadTab;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.favicon.LargeIconBridge;
-import org.chromium.components.omnibox.AutocompleteMatch;
-import org.chromium.ui.base.Clipboard;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.history_clusters.HistoryClustersTabHelper;
+import org.monyhar.chrome.browser.omnibox.OmniboxSuggestionType;
+import org.monyhar.chrome.browser.omnibox.suggestions.OmniboxSuggestionUiType;
+import org.monyhar.chrome.browser.omnibox.suggestions.SuggestionHost;
+import org.monyhar.chrome.browser.omnibox.suggestions.UrlBarDelegate;
+import org.monyhar.chrome.browser.omnibox.suggestions.base.BaseSuggestionViewProcessor;
+import org.monyhar.chrome.browser.omnibox.suggestions.base.BaseSuggestionViewProperties.Action;
+import org.monyhar.chrome.browser.omnibox.suggestions.base.SuggestionDrawableState;
+import org.monyhar.chrome.browser.omnibox.suggestions.base.SuggestionSpannable;
+import org.monyhar.chrome.browser.omnibox.suggestions.basic.SuggestionViewProperties;
+import org.monyhar.chrome.browser.share.ShareDelegate;
+import org.monyhar.chrome.browser.share.ShareDelegate.ShareOrigin;
+import org.monyhar.chrome.browser.tab.SadTab;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.favicon.LargeIconBridge;
+import org.monyhar.components.omnibox.AutocompleteMatch;
+import org.monyhar.ui.base.Clipboard;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.util.Arrays;
 

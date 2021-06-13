@@ -4,7 +4,7 @@
 
 ## Recipe1: Building for an ARM CrOS device
 
-https://sites.google.com/a/chromium.org/dev/developers/how-tos/-quickly-building-for-cros-arm-x64
+https://sites.google.com/a/monyhar.org/dev/developers/how-tos/-quickly-building-for-cros-arm-x64
 
 ## Recipe2: Explicit Cross compiling
 
@@ -45,8 +45,8 @@ Chromium's testing infrastructure for ARM/Linux is somewhat limited.
 There are currently two builders setup, one on the FYI waterfall and one
 the the try bot waterfall:
 
-*   [Linux ARM](https://build.chromium.org/p/chromium.fyi/builders/Linux%20ARM)
-*   [linux_arm](https://build.chromium.org/p/tryserver.chromium.linux/builders/linux_arm)
+*   [Linux ARM](https://build.monyhar.org/p/monyhar.fyi/builders/Linux%20ARM)
+*   [linux_arm](https://build.monyhar.org/p/tryserver.monyhar.linux/builders/linux_arm)
 
 These bots run x86-64 linux and cross-compile the ARM targets.  Tests are
 run on ARM hardware via swarming.

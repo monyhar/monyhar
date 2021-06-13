@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget;
+package org.monyhar.components.browser_ui.widget;
 
 import android.app.Activity;
 import android.graphics.Color;
@@ -16,17 +16,17 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.params.BaseJUnit4RunnerDelegate;
-import org.chromium.base.test.params.ParameterAnnotations.ClassParameter;
-import org.chromium.base.test.params.ParameterAnnotations.UseRunnerDelegate;
-import org.chromium.base.test.params.ParameterSet;
-import org.chromium.base.test.params.ParameterizedRunner;
-import org.chromium.base.test.util.Feature;
-import org.chromium.components.browser_ui.widget.test.R;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.ui.test.util.DummyUiActivityTestCase;
-import org.chromium.ui.test.util.NightModeTestUtils;
-import org.chromium.ui.test.util.RenderTestRule;
+import org.monyhar.base.test.params.BaseJUnit4RunnerDelegate;
+import org.monyhar.base.test.params.ParameterAnnotations.ClassParameter;
+import org.monyhar.base.test.params.ParameterAnnotations.UseRunnerDelegate;
+import org.monyhar.base.test.params.ParameterSet;
+import org.monyhar.base.test.params.ParameterizedRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.components.browser_ui.widget.test.R;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.ui.test.util.DummyUiActivityTestCase;
+import org.monyhar.ui.test.util.NightModeTestUtils;
+import org.monyhar.ui.test.util.RenderTestRule;
 
 import java.util.List;
 

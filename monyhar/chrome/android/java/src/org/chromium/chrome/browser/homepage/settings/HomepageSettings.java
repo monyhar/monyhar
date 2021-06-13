@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.homepage.settings;
+package org.monyhar.chrome.browser.homepage.settings;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -11,17 +11,17 @@ import androidx.annotation.VisibleForTesting;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.homepage.HomepageManager;
-import org.chromium.chrome.browser.homepage.HomepagePolicyManager;
-import org.chromium.chrome.browser.homepage.settings.RadioButtonGroupHomepagePreference.HomepageOption;
-import org.chromium.chrome.browser.homepage.settings.RadioButtonGroupHomepagePreference.PreferenceValues;
-import org.chromium.chrome.browser.settings.ChromeManagedPreferenceDelegate;
-import org.chromium.components.browser_ui.settings.ChromeSwitchPreference;
-import org.chromium.components.browser_ui.settings.SettingsUtils;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.components.url_formatter.UrlFormatter;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.homepage.HomepageManager;
+import org.monyhar.chrome.browser.homepage.HomepagePolicyManager;
+import org.monyhar.chrome.browser.homepage.settings.RadioButtonGroupHomepagePreference.HomepageOption;
+import org.monyhar.chrome.browser.homepage.settings.RadioButtonGroupHomepagePreference.PreferenceValues;
+import org.monyhar.chrome.browser.settings.ChromeManagedPreferenceDelegate;
+import org.monyhar.components.browser_ui.settings.ChromeSwitchPreference;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.components.url_formatter.UrlFormatter;
 
 /**
  * Fragment that allows the user to configure homepage related preferences.
@@ -34,7 +34,7 @@ public class HomepageSettings extends PreferenceFragmentCompat {
 
     /**
      * Delegate used to mark that the homepage is being managed.
-     * Created for {@link org.chromium.chrome.browser.settings.HomepagePreferences}
+     * Created for {@link org.monyhar.chrome.browser.settings.HomepagePreferences}
      */
     private static class HomepageManagedPreferenceDelegate
             implements ChromeManagedPreferenceDelegate {

@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.optimization_guide;
+package org.monyhar.chrome.browser.optimization_guide;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.profiles.ProfileManager;
-import org.chromium.components.optimization_guide.proto.HintsProto;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.profiles.ProfileManager;
+import org.monyhar.components.optimization_guide.proto.HintsProto;
 
 import java.util.ArrayList;
 import java.util.HashMap;

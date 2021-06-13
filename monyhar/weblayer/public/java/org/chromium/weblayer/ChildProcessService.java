@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer;
+package org.monyhar.weblayer;
 
 import android.app.Service;
 import android.content.Context;
@@ -10,9 +10,9 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.os.RemoteException;
 
-import org.chromium.weblayer_private.interfaces.APICallException;
-import org.chromium.weblayer_private.interfaces.IChildProcessService;
-import org.chromium.weblayer_private.interfaces.ObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.APICallException;
+import org.monyhar.weblayer_private.interfaces.IChildProcessService;
+import org.monyhar.weblayer_private.interfaces.ObjectWrapper;
 
 /**
  * Delegates service calls to the chrome service implementation.
@@ -33,7 +33,7 @@ public abstract class ChildProcessService extends Service {
             mImpl = IChildProcessService.Stub.asInterface(
                     (IBinder) WebLayer
                             .loadRemoteClass(appContext,
-                                    "org.chromium.weblayer_private.ChildProcessServiceImpl")
+                                    "org.monyhar.weblayer_private.ChildProcessServiceImpl")
                             .getMethod("create", Service.class, Context.class, Context.class)
                             .invoke(null, this, appContext, remoteContext));
             mImpl.onCreate();

@@ -23,7 +23,7 @@
 #include "gpu/command_buffer/common/shared_image_usage.h"
 #include "gpu/command_buffer/service/context_group.h"
 #include "gpu/command_buffer/service/context_state_test_helpers.h"
-#include "gpu/command_buffer/service/copy_texture_chromium_mock.h"
+#include "gpu/command_buffer/service/copy_texture_monyhar_mock.h"
 #include "gpu/command_buffer/service/gpu_switches.h"
 #include "gpu/command_buffer/service/logger.h"
 #include "gpu/command_buffer/service/mailbox_manager.h"

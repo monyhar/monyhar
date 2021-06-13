@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -21,21 +21,21 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.BrowserSafeModeActionList;
-import org.chromium.android_webview.common.SafeModeAction;
-import org.chromium.android_webview.common.SafeModeController;
-import org.chromium.android_webview.common.services.ISafeModeService;
-import org.chromium.android_webview.common.variations.VariationsUtils;
-import org.chromium.android_webview.services.SafeModeService;
-import org.chromium.android_webview.services.SafeModeService.TrustedPackage;
-import org.chromium.android_webview.test.VariationsSeedLoaderTest.TestLoader;
-import org.chromium.android_webview.test.VariationsSeedLoaderTest.TestLoaderResult;
-import org.chromium.android_webview.test.services.ServiceConnectionHelper;
-import org.chromium.android_webview.test.util.VariationsTestUtils;
-import org.chromium.android_webview.variations.VariationsSeedSafeModeAction;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.test.util.Feature;
-import org.chromium.build.BuildConfig;
+import org.monyhar.android_webview.BrowserSafeModeActionList;
+import org.monyhar.android_webview.common.SafeModeAction;
+import org.monyhar.android_webview.common.SafeModeController;
+import org.monyhar.android_webview.common.services.ISafeModeService;
+import org.monyhar.android_webview.common.variations.VariationsUtils;
+import org.monyhar.android_webview.services.SafeModeService;
+import org.monyhar.android_webview.services.SafeModeService.TrustedPackage;
+import org.monyhar.android_webview.test.VariationsSeedLoaderTest.TestLoader;
+import org.monyhar.android_webview.test.VariationsSeedLoaderTest.TestLoaderResult;
+import org.monyhar.android_webview.test.services.ServiceConnectionHelper;
+import org.monyhar.android_webview.test.util.VariationsTestUtils;
+import org.monyhar.android_webview.variations.VariationsSeedSafeModeAction;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.build.BuildConfig;
 
 import java.io.File;
 import java.util.Arrays;
@@ -50,7 +50,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class SafeModeTest {
     // The package name of the test shell. This is acting both as the client app and the WebView
     // provider.
-    public static final String TEST_WEBVIEW_PACKAGE_NAME = "org.chromium.android_webview.shell";
+    public static final String TEST_WEBVIEW_PACKAGE_NAME = "org.monyhar.android_webview.shell";
 
     // This is the actual certificate hash we use to sign webview_instrumentation_apk (Signer #1
     // certificate SHA-256 digest). This can be obtained by running:

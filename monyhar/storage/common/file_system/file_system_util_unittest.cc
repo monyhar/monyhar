@@ -24,12 +24,12 @@ namespace {
 class FileSystemUtilTest : public testing::Test {};
 
 TEST_F(FileSystemUtilTest, ParseFileSystemSchemeURL) {
-  GURL uri("filesystem:http://chromium.org/temporary/foo/bar");
+  GURL uri("filesystem:http://monyhar.org/temporary/foo/bar");
   GURL origin_url;
   storage::FileSystemType type;
   base::FilePath virtual_path;
   ParseFileSystemSchemeURL(uri, &origin_url, &type, &virtual_path);
-  EXPECT_EQ(GURL("http://chromium.org"), origin_url);
+  EXPECT_EQ(GURL("http://monyhar.org"), origin_url);
   EXPECT_EQ(storage::kFileSystemTypeTemporary, type);
 #if defined(FILE_PATH_USES_WIN_SEPARATORS)
   base::FilePath expected_path(FILE_PATH_LITERAL("foo\\bar"));
@@ -40,16 +40,16 @@ TEST_F(FileSystemUtilTest, ParseFileSystemSchemeURL) {
 }
 
 TEST_F(FileSystemUtilTest, GetTempFileSystemRootURI) {
-  GURL origin_url("http://chromium.org");
+  GURL origin_url("http://monyhar.org");
   storage::FileSystemType type = storage::kFileSystemTypeTemporary;
-  GURL uri = GURL("filesystem:http://chromium.org/temporary/");
+  GURL uri = GURL("filesystem:http://monyhar.org/temporary/");
   EXPECT_EQ(uri, GetFileSystemRootURI(origin_url, type));
 }
 
 TEST_F(FileSystemUtilTest, GetPersistentFileSystemRootURI) {
-  GURL origin_url("http://chromium.org");
+  GURL origin_url("http://monyhar.org");
   storage::FileSystemType type = storage::kFileSystemTypePersistent;
-  GURL uri = GURL("filesystem:http://chromium.org/persistent/");
+  GURL uri = GURL("filesystem:http://monyhar.org/persistent/");
   EXPECT_EQ(uri, GetFileSystemRootURI(origin_url, type));
 }
 

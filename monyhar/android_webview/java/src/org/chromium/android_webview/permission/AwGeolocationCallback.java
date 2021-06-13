@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.permission;
+package org.monyhar.android_webview.permission;
 
-import org.chromium.android_webview.AwContents;
-import org.chromium.android_webview.AwGeolocationPermissions;
-import org.chromium.android_webview.CleanupReference;
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
+import org.monyhar.android_webview.AwContents;
+import org.monyhar.android_webview.AwGeolocationPermissions;
+import org.monyhar.android_webview.CleanupReference;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
 
 import java.lang.ref.WeakReference;
 

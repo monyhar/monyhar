@@ -286,7 +286,7 @@ chrome.test.runTests([
   },
 
   async function disallowedPermission() {
-    const query = {url: 'http://chromium.org/*'};
+    const query = {url: 'http://monyhar.org/*'};
     let tab = await getSingleTab(query);
     const expectedTitle = 'Title Of Awesomeness';
     chrome.test.assertEq(expectedTitle, tab.title);

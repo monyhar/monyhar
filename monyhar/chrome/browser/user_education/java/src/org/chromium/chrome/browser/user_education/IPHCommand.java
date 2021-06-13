@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.user_education;
+package org.monyhar.chrome.browser.user_education;
 
 import android.graphics.Rect;
 import android.view.View;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.components.browser_ui.widget.highlight.ViewHighlighter.HighlightParams;
-import org.chromium.ui.widget.ViewRectProvider;
+import org.monyhar.components.browser_ui.widget.highlight.ViewHighlighter.HighlightParams;
+import org.monyhar.ui.widget.ViewRectProvider;
 
 /**
  * Class encapsulating the data needed to show in-product help (IPH).

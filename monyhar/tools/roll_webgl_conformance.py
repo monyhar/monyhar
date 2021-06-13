@@ -16,25 +16,25 @@ import time
 
 extra_trybots = [
     {
-        "mastername": "luci.chromium.try",
+        "mastername": "luci.monyhar.try",
         "buildernames": ["win_optional_gpu_tests_rel"]
     },
     {
-        "mastername": "luci.chromium.try",
+        "mastername": "luci.monyhar.try",
         "buildernames": ["mac_optional_gpu_tests_rel"]
     },
     {
-        "mastername": "luci.chromium.try",
+        "mastername": "luci.monyhar.try",
         "buildernames": ["linux_optional_gpu_tests_rel"]
     },
     {
-        "mastername": "luci.chromium.try",
+        "mastername": "luci.monyhar.try",
         "buildernames": ["android_optional_gpu_tests_rel"]
     },
     # Include the ANGLE tryservers which run the WebGL conformance tests
     # in some non-default configurations.
     {
-        "mastername": "luci.chromium.try",
+        "mastername": "luci.monyhar.try",
         "buildernames": ["linux-angle-rel"]
     },
 ]
@@ -45,7 +45,7 @@ sys.path.insert(0, os.path.join(SRC_DIR, 'build'))
 import find_depot_tools
 find_depot_tools.add_depot_tools_to_path()
 
-CHROMIUM_GIT_URL = 'https://chromium.googlesource.com/chromium/src.git'
+CHROMIUM_GIT_URL = 'https://monyhar.googlesource.com/monyhar/src.git'
 CL_ISSUE_RE = re.compile('^Issue number: ([0-9]+) \((.*)\)$')
 REVIEW_URL_RE = re.compile('^https?://(.*)/(.*)')
 ROLL_BRANCH_NAME = 'special_webgl_roll_branch'
@@ -136,8 +136,8 @@ def _GenerateCLDescriptionCommand(webgl_current, webgl_new, bugs):
 
 
 class AutoRoller(object):
-  def __init__(self, chromium_src):
-    self._chromium_src = chromium_src
+  def __init__(self, monyhar_src):
+    self._monyhar_src = monyhar_src
 
   def _RunCommand(self, command, working_dir=None, ignore_exit_code=False,
                   extra_env=None):
@@ -145,7 +145,7 @@ class AutoRoller(object):
 
     If the command fails (exit code != 0), the function will exit the process.
     """
-    working_dir = working_dir or self._chromium_src
+    working_dir = working_dir or self._monyhar_src
     logging.debug('cmd: %s cwd: %s', ' '.join(command), working_dir)
     env = os.environ.copy()
     if extra_env:
@@ -165,7 +165,7 @@ class AutoRoller(object):
     return output
 
   def _GetCommitInfo(self, path_below_src, git_hash=None, git_repo_url=None):
-    working_dir = os.path.join(self._chromium_src, path_below_src)
+    working_dir = os.path.join(self._monyhar_src, path_below_src)
     self._RunCommand(['git', 'fetch', 'origin'], working_dir=working_dir)
     revision_range = git_hash or 'origin'
     ret = self._RunCommand(
@@ -214,7 +214,7 @@ class AutoRoller(object):
   def _GetBugList(self, path_below_src, webgl_current, webgl_new):
     # TODO(kbr): this isn't useful, at least not yet, when run against
     # the WebGL Github repository.
-    working_dir = os.path.join(self._chromium_src, path_below_src)
+    working_dir = os.path.join(self._monyhar_src, path_below_src)
     lines = self._RunCommand(
         ['git','log',
             '%s..%s' % (webgl_current.git_commit, webgl_new.git_commit)],
@@ -235,7 +235,7 @@ class AutoRoller(object):
     return bugs
 
   def _UpdateReadmeFile(self, readme_path, new_revision):
-    readme = open(os.path.join(self._chromium_src, readme_path), 'r+')
+    readme = open(os.path.join(self._monyhar_src, readme_path), 'r+')
     txt = readme.read()
     m = re.sub(re.compile('.*^Revision\: ([0-9]*).*', re.MULTILINE),
         ('Revision: %s' % new_revision), txt)
@@ -267,7 +267,7 @@ class AutoRoller(object):
     # Modify Chromium's DEPS file.
 
     # Parse current hashes.
-    deps_filename = os.path.join(self._chromium_src, 'DEPS')
+    deps_filename = os.path.join(self._monyhar_src, 'DEPS')
     deps = _ParseDepsFile(deps_filename)
     webgl_current = self._GetDepsCommitInfo(deps, WEBGL_PATH)
 

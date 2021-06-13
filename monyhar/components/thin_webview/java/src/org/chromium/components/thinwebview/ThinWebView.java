@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.thinwebview;
+package org.monyhar.components.thinwebview;
 
 import android.view.View;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.components.embedder_support.delegate.WebContentsDelegateAndroid;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.components.embedder_support.delegate.WebContentsDelegateAndroid;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * An android view backed by a {@link Surface} that is able to display a cc::Layer. Either, a {@link

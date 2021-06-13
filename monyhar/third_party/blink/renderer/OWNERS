@@ -1,5 +1,5 @@
-per-file DEPS=dcheng@chromium.org
-per-file DEPS=haraken@chromium.org
-per-file DEPS=jbroman@chromium.org
-per-file README.md=haraken@chromium.org
+per-file DEPS=dcheng@monyhar.org
+per-file DEPS=haraken@monyhar.org
+per-file DEPS=jbroman@monyhar.org
+per-file README.md=haraken@monyhar.org
 

@@ -53,7 +53,7 @@ from devil.android.sdk import intent # pylint: disable=import-error
 #     expectations.config to avoid failures on Android versions below M. This
 #     override is also used on internal bots. See: http://crbug.com/894744 and
 #     http://crbug.com/849907.
-# --browser=android-chrome - *must* be used *instead* of "android-chromium". The
+# --browser=android-chrome - *must* be used *instead* of "android-monyhar". The
 #     latter may silently produce subtly incorrect results. This is because
 #     MonohromePublic initialization path is less optimized than Monochrome
 #     (no orderfile, no library prefetch, etc.)
@@ -160,8 +160,8 @@ class _MobileStartupSharedState(story_module.SharedState):
     # APK.
     self.platform.WaitForBatteryTemperature(_MAX_BATTERY_TEMP)
     self.platform.StartActivity(intent.Intent(
-        package='org.chromium.maps_go_webapk',
-        activity='org.chromium.webapk.shell_apk.h2o.H2OMainActivity',
+        package='org.monyhar.maps_go_webapk',
+        activity='org.monyhar.webapk.shell_apk.h2o.H2OMainActivity',
         category='android.intent.category.LAUNCHER',
         action='android.intent.action.MAIN'),
                                 blocking=True)
@@ -276,7 +276,7 @@ class _MobileStartupStorySet(story_module.StorySet):
     self.AddStory(_MapsPwaStartupStory())
 
 
-@benchmark.Info(emails=['pasko@chromium.org', 'lizeb@chromium.org'],
+@benchmark.Info(emails=['pasko@monyhar.org', 'lizeb@monyhar.org'],
                 component='Speed>Metrics>SystemHealthRegressions')
 class MobileStartupBenchmark(perf_benchmark.PerfBenchmark):
   """Startup benchmark for Chrome on Android."""

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.content.Context;
 
@@ -10,12 +10,12 @@ import com.google.android.gms.gcm.TaskParams;
 
 import org.junit.Assert;
 
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.browser.init.BrowserParts;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
-import org.chromium.chrome.browser.init.EmptyBrowserParts;
-import org.chromium.content_public.browser.BrowserStartupController;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.browser.init.BrowserParts;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.chrome.browser.init.EmptyBrowserParts;
+import org.monyhar.content_public.browser.BrowserStartupController;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /**
  * Class for launching the minimal browser mode for tests.

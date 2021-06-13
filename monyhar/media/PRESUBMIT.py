@@ -4,7 +4,7 @@
 
 """Top-level presubmit script for Chromium media component.
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See http://dev.monyhar.org/developers/how-tos/depottools/presubmit-scripts
 for more details about the presubmit API built into depot_tools.
 """
 
@@ -146,7 +146,7 @@ def _CheckForHistogramOffByOne(input_api, output_api):
       ' - The max value (3rd argument) should be an enum value equal to the\n'
       '   last valid value, e.g. FOO_MAX = LAST_VALID_FOO.\n'
       ' - 1 must be added to that max value.\n'
-      'Contact dalecurtis@chromium.org if you have questions.' , problems)]
+      'Contact dalecurtis@monyhar.org if you have questions.' , problems)]
 
   return []
 

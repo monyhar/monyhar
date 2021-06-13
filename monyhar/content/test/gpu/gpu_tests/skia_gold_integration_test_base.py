@@ -56,7 +56,7 @@ class SkiaGoldIntegrationTestBase(gpu_integration_test.GpuIntegrationTest):
   # raised when running the tests.
   _parsed_command_line_options = None
 
-  _error_image_cloud_storage_bucket = 'chromium-browser-gpu-tests'
+  _error_image_cloud_storage_bucket = 'monyhar-browser-gpu-tests'
 
   # This information is class-scoped, so that it can be shared across
   # invocations of tests; but it's zapped every time the browser is
@@ -244,7 +244,7 @@ class SkiaGoldIntegrationTestBase(gpu_integration_test.GpuIntegrationTest):
     # TODO(senorblanco): This should probably be checking
     # for the presence of the extensions in system_info.gpu_aux_attributes
     # in order to check for MSAA, rather than sniffing the blocklist.
-    params.msaa = not (('disable_chromium_framebuffer_multisample' in
+    params.msaa = not (('disable_monyhar_framebuffer_multisample' in
                         system_info.gpu.driver_bug_workarounds) or
                        ('disable_multisample_render_to_texture' in system_info.
                         gpu.driver_bug_workarounds))

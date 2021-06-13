@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
 import static junit.framework.Assert.assertTrue;
 
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.net.impl.CronetUrlRequestContext;
-import org.chromium.net.test.FailurePhase;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.net.impl.CronetUrlRequestContext;
+import org.monyhar.net.test.FailurePhase;
 
 /**
  * Helper class to set up url interceptors for testing purposes.
@@ -40,7 +40,7 @@ public final class MockUrlRequestJobFactory {
      * Constructs a mock URL that hangs or fails at certain phase.
      *
      * @param phase at which request fails. It should be a value in
-     *              org.chromium.net.test.FailurePhase.
+     *              org.monyhar.net.test.FailurePhase.
      * @param netError reported by UrlRequestJob. Passing -1, results in hang.
      */
     public static String getMockUrlWithFailure(int phase, int netError) {
@@ -52,7 +52,7 @@ public final class MockUrlRequestJobFactory {
                 break;
             default:
                 throw new IllegalArgumentException(
-                        "phase not in org.chromium.net.test.FailurePhase");
+                        "phase not in org.monyhar.net.test.FailurePhase");
         }
         return nativeGetMockUrlWithFailure(phase, netError);
     }

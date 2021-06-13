@@ -2,36 +2,36 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tabmodel;
+package org.monyhar.chrome.browser.tabmodel;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.MathUtils;
-import org.chromium.base.ObserverList;
-import org.chromium.base.TraceEvent;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.compositor.layouts.content.TabContentManager;
-import org.chromium.chrome.browser.flags.ActivityType;
-import org.chromium.chrome.browser.homepage.HomepageManager;
-import org.chromium.chrome.browser.ntp.RecentlyClosedBridge;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tab.InterceptNavigationDelegateTabHelper;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabCreationState;
-import org.chromium.chrome.browser.tab.TabLaunchType;
-import org.chromium.chrome.browser.tab.TabSelectionType;
-import org.chromium.chrome.browser.tab.state.CriticalPersistedTabData;
-import org.chromium.chrome.browser.tabmodel.NextTabPolicy.NextTabPolicySupplier;
-import org.chromium.chrome.browser.tasks.tab_management.TabUiFeatureUtilities;
-import org.chromium.components.external_intents.InterceptNavigationDelegateImpl;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.common.ResourceRequestBody;
-import org.chromium.ui.mojom.WindowOpenDisposition;
-import org.chromium.url.GURL;
-import org.chromium.url.Origin;
+import org.monyhar.base.MathUtils;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.compositor.layouts.content.TabContentManager;
+import org.monyhar.chrome.browser.flags.ActivityType;
+import org.monyhar.chrome.browser.homepage.HomepageManager;
+import org.monyhar.chrome.browser.ntp.RecentlyClosedBridge;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tab.InterceptNavigationDelegateTabHelper;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabCreationState;
+import org.monyhar.chrome.browser.tab.TabLaunchType;
+import org.monyhar.chrome.browser.tab.TabSelectionType;
+import org.monyhar.chrome.browser.tab.state.CriticalPersistedTabData;
+import org.monyhar.chrome.browser.tabmodel.NextTabPolicy.NextTabPolicySupplier;
+import org.monyhar.chrome.browser.tasks.tab_management.TabUiFeatureUtilities;
+import org.monyhar.components.external_intents.InterceptNavigationDelegateImpl;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.common.ResourceRequestBody;
+import org.monyhar.ui.mojom.WindowOpenDisposition;
+import org.monyhar.url.GURL;
+import org.monyhar.url.Origin;
 
 import java.util.ArrayList;
 import java.util.List;

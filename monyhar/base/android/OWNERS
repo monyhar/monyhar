@@ -1,10 +1,10 @@
-agrieve@chromium.org
-lizeb@chromium.org
-nyquist@chromium.org
-pasko@chromium.org
-rmcilroy@chromium.org
-torne@chromium.org
-yfriedman@chromium.org
+agrieve@monyhar.org
+lizeb@monyhar.org
+nyquist@monyhar.org
+pasko@monyhar.org
+rmcilroy@monyhar.org
+torne@monyhar.org
+yfriedman@monyhar.org
 
 per-file *.aidl=set noparent
 per-file *.aidl=file://ipc/SECURITY_OWNERS

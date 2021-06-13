@@ -13,7 +13,7 @@
 
 namespace content {
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.content.browser.sms
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.content.browser.sms
 enum class GmsBackend : int {
   kAuto = 0,
   kUserConsent = 1,

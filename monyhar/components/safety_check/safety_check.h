@@ -17,7 +17,7 @@ namespace safety_check {
 // desktop, Android, and iOS) of the safety check and should be kept in sync
 // with the JS frontend (safety_check_browser_proxy.js) and |SafetyCheck*|
 // metrics enums in enums.xml.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.safety_check
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.safety_check
 enum class PasswordsStatus {
   kChecking = 0,
   kSafe = 1,
@@ -37,7 +37,7 @@ enum class PasswordsStatus {
   kMaxValue = kWeakPasswordsExist,
 };
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.safety_check
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.safety_check
 enum class SafeBrowsingStatus {
   kChecking = 0,
   kEnabled = 1,
@@ -51,7 +51,7 @@ enum class SafeBrowsingStatus {
   kMaxValue = kEnabledStandardAvailableEnhanced,
 };
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.safety_check
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.safety_check
 enum class UpdateStatus {
   kChecking = 0,
   kUpdated = 1,

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.policy;
+package org.monyhar.components.policy;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -14,8 +14,8 @@ import android.os.StrictMode;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
 
 /**
  * Retrieves app restrictions and provides them to the parent class as Bundles.

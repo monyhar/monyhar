@@ -3,9 +3,9 @@ import("//chrome/android/features/android_library_factory_tmpl.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/attribution_reporting/AttributionConstants.java",
-    "java/src/org/chromium/chrome/browser/attribution_reporting/AttributionIntentHandler.java",
-    "java/src/org/chromium/chrome/browser/attribution_reporting/AttributionParameters.java",
+    "java/src/org/monyhar/chrome/browser/attribution_reporting/AttributionConstants.java",
+    "java/src/org/monyhar/chrome/browser/attribution_reporting/AttributionIntentHandler.java",
+    "java/src/org/monyhar/chrome/browser/attribution_reporting/AttributionParameters.java",
   ]
 }
 
@@ -15,5 +15,5 @@ android_library_factory("factory_java") {
     "//base:base_java",
   ]
 
-  sources = [ "internal/java/src/org/chromium/chrome/browser/attribution_reporting/AttributionIntentHandlerFactory.java" ]
+  sources = [ "internal/java/src/org/monyhar/chrome/browser/attribution_reporting/AttributionIntentHandlerFactory.java" ]
 }

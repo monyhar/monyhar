@@ -3,7 +3,7 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
 
-<org.chromium.chrome.browser.webapps.launchpad.AppManagementMenuPermissionsView
+<org.monyhar.chrome.browser.webapps.launchpad.AppManagementMenuPermissionsView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -13,7 +13,7 @@
     android:paddingEnd="16dp"
     android:orientation="horizontal">
 
-  <org.chromium.ui.widget.ChromeImageButton
+  <org.monyhar.ui.widget.ChromeImageButton
       android:id="@+id/notifications_button"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_weight="1" />
-  <org.chromium.ui.widget.ChromeImageButton
+  <org.monyhar.ui.widget.ChromeImageButton
       android:id="@+id/mic_button"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_weight="1" />
-  <org.chromium.ui.widget.ChromeImageButton
+  <org.monyhar.ui.widget.ChromeImageButton
       android:id="@+id/camera_button"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
@@ -46,11 +46,11 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_weight="1" />
-  <org.chromium.ui.widget.ChromeImageButton
+  <org.monyhar.ui.widget.ChromeImageButton
       android:id="@+id/location_button"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:background="@null"
       android:src="@drawable/gm_filled_location_on_24"
       android:contentDescription="@string/website_settings_device_location" />
-</org.chromium.chrome.browser.webapps.launchpad.AppManagementMenuPermissionsView>
+</org.monyhar.chrome.browser.webapps.launchpad.AppManagementMenuPermissionsView>

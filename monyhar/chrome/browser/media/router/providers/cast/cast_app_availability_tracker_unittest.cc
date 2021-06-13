@@ -84,7 +84,7 @@ TEST_F(CastAppAvailabilityTrackerTest, RegisterSource) {
 
 TEST_F(CastAppAvailabilityTrackerTest, RegisterSourceReturnsMultipleAppIds) {
   auto source1 = CastMediaSource::FromMediaSourceId(
-      "urn:x-org.chromium.media:source:tab:1");
+      "urn:x-org.monyhar.media:source:tab:1");
   ASSERT_TRUE(source1);
 
   // Mirorring app ids.
@@ -105,7 +105,7 @@ TEST_F(CastAppAvailabilityTrackerTest, MultipleAppIdsAlreadyTrackingOne) {
   EXPECT_EQ(registered_app_ids, tracker_.GetRegisteredApps());
 
   auto source2 = CastMediaSource::FromMediaSourceId(
-      "urn:x-org.chromium.media:source:tab:1");
+      "urn:x-org.monyhar.media:source:tab:1");
   ASSERT_TRUE(source2);
 
   new_app_ids = {"85CDB22F"};

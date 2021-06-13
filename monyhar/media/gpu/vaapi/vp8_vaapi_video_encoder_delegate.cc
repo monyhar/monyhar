@@ -153,7 +153,7 @@ bool VP8VaapiVideoEncoderDelegate::PrepareEncodeJob(EncodeJob* encode_job) {
   *picture->frame_hdr = current_frame_hdr_;
 
   // We only use |last_frame| for a reference frame. This follows the behavior
-  // of libvpx encoder in chromium webrtc use case.
+  // of libvpx encoder in monyhar webrtc use case.
   std::array<bool, kNumVp8ReferenceBuffers> ref_frames_used{true, false, false};
 
   if (current_frame_hdr_.IsKeyframe()) {

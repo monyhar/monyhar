@@ -88,7 +88,7 @@ js_library("app") {
     "modules:module_registry",
     "realbox:realbox",
     "//skia/public/mojom:mojom_webui_js",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_button:cr_button.m",
     "//ui/webui/resources/js:event_tracker.m",
     "//ui/webui/resources/js/cr/ui:focus_outline_manager.m",
@@ -103,7 +103,7 @@ js_library("middle_slot_promo") {
   deps = [
     ":new_tab_page_proxy",
     ":window_proxy",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -116,7 +116,7 @@ js_library("customize_dialog") {
     ":i18n_setup",
     ":new_tab_page_proxy",
     ":utils",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_components/customize_themes",
     "//ui/webui/resources/cr_elements/cr_button:cr_button.m",
     "//ui/webui/resources/cr_elements/cr_dialog:cr_dialog.m",
@@ -131,13 +131,13 @@ js_library("customize_backgrounds") {
     ":customize_dialog_types",
     ":i18n_setup",
     ":new_tab_page_proxy",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
 js_library("mini_page") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -146,7 +146,7 @@ js_library("customize_shortcuts") {
     ":i18n_setup",
     ":mini_page",
     ":new_tab_page_proxy",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_toggle:cr_toggle.m",
   ]
 }
@@ -156,7 +156,7 @@ js_library("customize_modules") {
     ":i18n_setup",
     ":new_tab_page_proxy",
     "modules:module_registry",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_button:cr_button.m",
     "//ui/webui/resources/cr_elements/cr_radio_button:cr_radio_button.m",
     "//ui/webui/resources/cr_elements/cr_radio_group:cr_radio_group.m",
@@ -171,7 +171,7 @@ js_library("voice_search_overlay") {
     ":i18n_setup",
     ":new_tab_page_proxy",
     ":window_proxy",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_button:cr_button.m",
     "//ui/webui/resources/cr_elements/cr_icon_button:cr_icon_button.m",
   ]
@@ -189,7 +189,7 @@ js_library("iframe") {
   deps = [
     ":utils",
     ":window_proxy",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
   ]
 }
@@ -200,7 +200,7 @@ js_library("logo") {
     ":i18n_setup",
     ":new_tab_page_proxy",
     ":window_proxy",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_button:cr_button.m",
   ]
 }
@@ -208,7 +208,7 @@ js_library("logo") {
 js_library("doodle_share_dialog") {
   deps = [
     ":i18n_setup",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_button:cr_button.m",
     "//ui/webui/resources/cr_elements/cr_dialog:cr_dialog.m",
     "//ui/webui/resources/cr_elements/cr_icon_button:cr_icon_button.m",

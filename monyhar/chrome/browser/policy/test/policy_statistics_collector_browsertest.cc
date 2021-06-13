@@ -35,7 +35,7 @@ class PolicyStatisticsCollectorTest : public PolicyTest {
                  nullptr);
     policies.Set(key::kHomepageLocation, POLICY_LEVEL_MANDATORY,
                  POLICY_SCOPE_USER, POLICY_SOURCE_CLOUD,
-                 base::Value("http://chromium.org"), nullptr);
+                 base::Value("http://monyhar.org"), nullptr);
     provider_.UpdateChromePolicy(policies);
   }
 };

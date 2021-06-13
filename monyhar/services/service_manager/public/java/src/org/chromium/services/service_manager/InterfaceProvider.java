@@ -2,27 +2,27 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.services.service_manager;
+package org.monyhar.services.service_manager;
 
-import org.chromium.mojo.bindings.ConnectionErrorHandler;
-import org.chromium.mojo.bindings.Interface;
-import org.chromium.mojo.bindings.InterfaceRequest;
-import org.chromium.mojo.system.Core;
-import org.chromium.mojo.system.MessagePipeHandle;
-import org.chromium.mojo.system.MojoException;
-import org.chromium.mojo.system.Pair;
+import org.monyhar.mojo.bindings.ConnectionErrorHandler;
+import org.monyhar.mojo.bindings.Interface;
+import org.monyhar.mojo.bindings.InterfaceRequest;
+import org.monyhar.mojo.system.Core;
+import org.monyhar.mojo.system.MessagePipeHandle;
+import org.monyhar.mojo.system.MojoException;
+import org.monyhar.mojo.system.Pair;
 
 /**
  * Provides access to interfaces exposed by an InterfaceProvider mojo interface.
  */
 public class InterfaceProvider implements ConnectionErrorHandler {
     private Core mCore;
-    private org.chromium.service_manager.mojom.InterfaceProvider.Proxy mInterfaceProvider;
+    private org.monyhar.service_manager.mojom.InterfaceProvider.Proxy mInterfaceProvider;
 
     public InterfaceProvider(MessagePipeHandle pipe) {
         mCore = pipe.getCore();
         mInterfaceProvider =
-                org.chromium.service_manager.mojom.InterfaceProvider.MANAGER.attachProxy(pipe, 0);
+                org.monyhar.service_manager.mojom.InterfaceProvider.MANAGER.attachProxy(pipe, 0);
         mInterfaceProvider.getProxyHandler().setErrorHandler(this);
     }
 

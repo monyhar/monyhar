@@ -4,7 +4,7 @@
 
 '''Chromium presubmit script for fetch API layout tests.
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts.
+See http://dev.monyhar.org/developers/how-tos/depottools/presubmit-scripts.
 '''
 
 import os

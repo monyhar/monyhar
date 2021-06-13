@@ -8,7 +8,7 @@
 
 #include <GLES2/gl2.h>
 #include <GLES2/gl2ext.h>
-#include <GLES2/gl2extchromium.h>
+#include <GLES2/gl2extmonyhar.h>
 #include <GLES3/gl3.h>
 #include <GLES3/gl31.h>
 #include <stddef.h>
@@ -202,7 +202,7 @@ GLES2Implementation::GLES2Implementation(
     GpuControl* gpu_control)
     : ImplementationBase(helper, transfer_buffer, gpu_control),
       helper_(helper),
-      chromium_framebuffer_multisample_(kUnknownExtensionStatus),
+      monyhar_framebuffer_multisample_(kUnknownExtensionStatus),
       pack_alignment_(4),
       pack_row_length_(0),
       pack_skip_pixels_(0),
@@ -304,7 +304,7 @@ gpu::ContextResult GLES2Implementation::Initialize(
 
   // GL_BIND_GENERATES_RESOURCE_CHROMIUM state must be the same
   // on Client & Service.
-  if (capabilities_.bind_generates_resource_chromium !=
+  if (capabilities_.bind_generates_resource_monyhar !=
       (share_group_->bind_generates_resource() ? 1 : 0)) {
     SetGLError(GL_INVALID_OPERATION, "Initialize",
                "Service bind_generates_resource mismatch.");
@@ -593,7 +593,7 @@ bool GLES2Implementation::IsExtensionAvailableHelper(const char* extension,
 
 bool GLES2Implementation::IsChromiumFramebufferMultisampleAvailable() {
   return IsExtensionAvailableHelper("GL_CHROMIUM_framebuffer_multisample",
-                                    &chromium_framebuffer_multisample_);
+                                    &monyhar_framebuffer_multisample_);
 }
 
 const std::string& GLES2Implementation::GetLogPrefix() const {
@@ -6231,7 +6231,7 @@ void GLES2Implementation::RequestExtensionCHROMIUM(const char* extension) {
   const ExtensionCheck checks[] = {
       {
           "GL_CHROMIUM_framebuffer_multisample",
-          &chromium_framebuffer_multisample_,
+          &monyhar_framebuffer_multisample_,
       },
   };
   const size_t kNumChecks = sizeof(checks) / sizeof(checks[0]);
@@ -6599,7 +6599,7 @@ void GLES2Implementation::EndQueryEXT(GLenum target) {
   }  // GPU_CLIENT_SINGLE_THREAD_CHECK ends here
 
   if (target == GL_READBACK_SHADOW_COPIES_UPDATED_CHROMIUM) {
-    DCHECK(capabilities_.chromium_nonblocking_readback);
+    DCHECK(capabilities_.monyhar_nonblocking_readback);
     DCHECK(query);
     auto serial = readback_buffer_shadow_tracker_->buffer_shadow_serial();
     readback_buffer_shadow_tracker_->IncrementSerial();

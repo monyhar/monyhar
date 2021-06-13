@@ -48,7 +48,7 @@ constexpr char kValidPolicy[] = R"(
         ]
       }, {
         "devices": [{ }],
-        "urls": ["https://chromium.org,"]
+        "urls": ["https://monyhar.org,"]
       }
     ])";
 // An invalid entry invalidates the entire policy.
@@ -541,7 +541,7 @@ TEST_F(WebUsbAllowDevicesForUrlsPolicyHandlerTest, ApplyPolicySettings) {
   const auto& second_urls_list = urls->GetList();
   ASSERT_EQ(1ul, second_urls_list.size());
   ASSERT_TRUE(second_urls_list[0].is_string());
-  EXPECT_EQ("https://chromium.org,", second_urls_list[0].GetString());
+  EXPECT_EQ("https://monyhar.org,", second_urls_list[0].GetString());
 }
 
 TEST_F(WebUsbAllowDevicesForUrlsPolicyHandlerTest,

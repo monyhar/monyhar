@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.crash;
+package org.monyhar.chrome.browser.crash;
 
-import org.chromium.chrome.browser.crash.MinidumpUploadServiceImpl.ProcessType;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.crash.MinidumpUploadServiceImpl.ProcessType;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
 
 /**
  * Records number of crashes uploaded in SharedPreferences.

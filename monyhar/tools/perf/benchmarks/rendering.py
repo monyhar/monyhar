@@ -85,8 +85,8 @@ class _RenderingBenchmark(perf_benchmark.PerfBenchmark):
     return options
 
 
-@benchmark.Info(emails=['behdadb@chromium.org', 'jonross@chromium.org',
-                        'sadrul@chromium.org'],
+@benchmark.Info(emails=['behdadb@monyhar.org', 'jonross@monyhar.org',
+                        'sadrul@monyhar.org'],
                 documentation_url='https://bit.ly/rendering-benchmarks',
                 component='Internals>GPU>Metrics')
 class RenderingDesktop(_RenderingBenchmark):
@@ -113,8 +113,8 @@ class RenderingDesktop(_RenderingBenchmark):
           '--use-gpu-high-thread-priority-for-perf-tests')
 
 
-@benchmark.Info(emails=['behdadb@chromium.org', 'jonross@chromium.org',
-                        'sadrul@chromium.org'],
+@benchmark.Info(emails=['behdadb@monyhar.org', 'jonross@monyhar.org',
+                        'sadrul@monyhar.org'],
                 documentation_url='https://bit.ly/rendering-benchmarks',
                 component='Internals>GPU>Metrics')
 class RenderingMobile(_RenderingBenchmark):

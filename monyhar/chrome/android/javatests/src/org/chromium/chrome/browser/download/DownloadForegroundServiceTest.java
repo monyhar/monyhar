@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download;
+package org.monyhar.chrome.browser.download;
 
 import static android.app.Service.STOP_FOREGROUND_DETACH;
 import static android.app.Service.STOP_FOREGROUND_REMOVE;
 
 import static junit.framework.Assert.assertEquals;
 
-import static org.chromium.chrome.browser.download.DownloadSnackbarController.INVALID_NOTIFICATION_ID;
+import static org.monyhar.chrome.browser.download.DownloadSnackbarController.INVALID_NOTIFICATION_ID;
 
 import android.app.Notification;
 
@@ -21,11 +21,11 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.notifications.NotificationWrapperBuilderFactory;
-import org.chromium.chrome.browser.notifications.channels.ChromeChannelDefinitions;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.notifications.NotificationWrapperBuilderFactory;
+import org.monyhar.chrome.browser.notifications.channels.ChromeChannelDefinitions;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -114,7 +114,7 @@ public class DownloadForegroundServiceTest {
                 NotificationWrapperBuilderFactory
                         .createNotificationWrapperBuilder(true /* preferCompat */,
                                 ChromeChannelDefinitions.ChannelId.DOWNLOADS)
-                        .setSmallIcon(org.chromium.chrome.R.drawable.ic_file_download_white_24dp)
+                        .setSmallIcon(org.monyhar.chrome.R.drawable.ic_file_download_white_24dp)
                         .setContentTitle("fakeContentTitle")
                         .setContentText("fakeContentText")
                         .build();

@@ -63,7 +63,7 @@
 
 // We would like finding a way to convert from/to blink type automatically.
 // The following attempt has been withdrawn:
-// https://chromium-review.googlesource.com/c/chromium/src/+/2126933/7
+// https://monyhar-review.googlesource.com/c/monyhar/src/+/2126933/7
 //
 // Note: nesting these helpers inside network::mojom bypasses warnings from
 // audit_non_blink_style.py, as well as saving a bunch of typing to qualify the

@@ -6,6 +6,6 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "android/java/src/org/chromium/chrome/browser/test_dummy/TestDummy.java",
+    "android/java/src/org/monyhar/chrome/browser/test_dummy/TestDummy.java",
   ]
 }

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.firstrun;
+package org.monyhar.chrome.browser.firstrun;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -15,15 +15,15 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.supplier.OneshotSupplierImpl;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.enterprise.util.EnterpriseInfo;
-import org.chromium.chrome.browser.policy.PolicyServiceFactory;
-import org.chromium.components.policy.PolicyService;
-import org.chromium.ui.widget.LoadingView;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.supplier.OneshotSupplierImpl;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.enterprise.util.EnterpriseInfo;
+import org.monyhar.chrome.browser.policy.PolicyServiceFactory;
+import org.monyhar.components.policy.PolicyService;
+import org.monyhar.ui.widget.LoadingView;
 
 /**
  * Another FirstRunFragment that is only used when running with CCT.

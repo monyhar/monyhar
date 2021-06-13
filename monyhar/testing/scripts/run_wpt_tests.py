@@ -9,7 +9,7 @@ This script maps flags supported by run_isolate_script_test.py to flags that are
 understood by WPT.
 
 Here's the mapping [isolate script flag] : [wpt flag]
---isolated-script-test-output : --log-chromium
+--isolated-script-test-output : --log-monyhar
 --total-shards : --total-chunks
 --shard-index : -- this-chunk
 """

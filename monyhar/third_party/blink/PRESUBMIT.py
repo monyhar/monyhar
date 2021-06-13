@@ -3,7 +3,7 @@
 # found in the LICENSE file.
 """Top-level presubmit script for Blink.
 
-See https://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See https://dev.monyhar.org/developers/how-tos/depottools/presubmit-scripts
 for more details about the presubmit API built into gcl.
 """
 
@@ -243,7 +243,7 @@ def CheckChangeOnCommit(input_api, output_api):
         input_api.canned_checks.CheckTreeIsOpen(
             input_api,
             output_api,
-            json_url='http://chromium-status.appspot.com/current?format=json'))
+            json_url='http://monyhar-status.appspot.com/current?format=json'))
     results.extend(
         input_api.canned_checks.CheckChangeHasDescription(
             input_api, output_api))

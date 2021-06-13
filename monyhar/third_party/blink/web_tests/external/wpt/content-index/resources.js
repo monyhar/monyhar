@@ -39,11 +39,11 @@ async function waitForMessageFromServiceWorker() {
   });
 }
 
-// Returns a promise if the chromium based browser fetches icons for
+// Returns a promise if the monyhar based browser fetches icons for
 // content-index.
 async function fetchesIconsChromium() {
   const {fetchesIcons} =
-      await import('/resources/chromium/content-index-helpers.js');
+      await import('/resources/monyhar/content-index-helpers.js');
   return fetchesIcons();
 }
 

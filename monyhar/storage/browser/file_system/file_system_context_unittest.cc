@@ -36,12 +36,12 @@ namespace storage {
 
 namespace {
 
-const char kTestOrigin[] = "http://chromium.org/";
+const char kTestOrigin[] = "http://monyhar.org/";
 
 GURL CreateRawFileSystemURL(const std::string& type_str,
                             const std::string& fs_id) {
   std::string url_str =
-      base::StringPrintf("filesystem:http://chromium.org/%s/%s/root/file",
+      base::StringPrintf("filesystem:http://monyhar.org/%s/%s/root/file",
                          type_str.c_str(), fs_id.c_str());
   return GURL(url_str);
 }
@@ -210,7 +210,7 @@ TEST_F(FileSystemContextTest, CrackFileSystemURL) {
       "ext", kFileSystemTypeLocal, FileSystemMountOption(),
       base::FilePath(DRIVE FPL("/test/local/ext/"))));
 
-  const GURL kTestOrigin = GURL("http://chromium.org/");
+  const GURL kTestOrigin = GURL("http://monyhar.org/");
   const base::FilePath kVirtualPathNoRoot = base::FilePath(FPL("root/file"));
 
   struct TestCase {

@@ -2,25 +2,25 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.suggestions.tile;
+package org.monyhar.chrome.browser.suggestions.tile;
 
 import android.content.Context;
 
-import org.chromium.base.Callback;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ntp.NewTabPageUma;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.query_tiles.QueryTileUtils;
-import org.chromium.chrome.browser.suggestions.SuggestionsDependencyFactory;
-import org.chromium.chrome.browser.suggestions.SuggestionsMetrics;
-import org.chromium.chrome.browser.suggestions.SuggestionsNavigationDelegate;
-import org.chromium.chrome.browser.suggestions.mostvisited.MostVisitedSites;
-import org.chromium.chrome.browser.ui.messages.snackbar.Snackbar;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager.SnackbarController;
-import org.chromium.ui.mojom.WindowOpenDisposition;
-import org.chromium.url.GURL;
+import org.monyhar.base.Callback;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ntp.NewTabPageUma;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.query_tiles.QueryTileUtils;
+import org.monyhar.chrome.browser.suggestions.SuggestionsDependencyFactory;
+import org.monyhar.chrome.browser.suggestions.SuggestionsMetrics;
+import org.monyhar.chrome.browser.suggestions.SuggestionsNavigationDelegate;
+import org.monyhar.chrome.browser.suggestions.mostvisited.MostVisitedSites;
+import org.monyhar.chrome.browser.ui.messages.snackbar.Snackbar;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager.SnackbarController;
+import org.monyhar.ui.mojom.WindowOpenDisposition;
+import org.monyhar.url.GURL;
 
 import java.util.List;
 

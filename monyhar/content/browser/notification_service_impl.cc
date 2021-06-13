@@ -138,7 +138,7 @@ NotificationServiceImpl::~NotificationServiceImpl() {
   for (int i = 0; i < static_cast<int>(observer_counts_.size()); i++) {
     if (observer_counts_[i] > 0) {
       // This may not be completely fixable -- see
-      // http://code.google.com/p/chromium/issues/detail?id=11010 .
+      // http://code.google.com/p/monyhar/issues/detail?id=11010 .
       VLOG(1) << observer_counts_[i] << " notification observer(s) leaked "
                  "of notification type " << i;
     }

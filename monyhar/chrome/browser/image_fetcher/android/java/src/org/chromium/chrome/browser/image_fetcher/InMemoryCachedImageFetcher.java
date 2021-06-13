@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.image_fetcher;
+package org.monyhar.chrome.browser.image_fetcher;
 
 import android.graphics.Bitmap;
 
@@ -10,10 +10,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.DiscardableReferencePool;
-import org.chromium.components.browser_ui.util.BitmapCache;
-import org.chromium.components.browser_ui.util.ConversionUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.base.DiscardableReferencePool;
+import org.monyhar.components.browser_ui.util.BitmapCache;
+import org.monyhar.components.browser_ui.util.ConversionUtils;
 
 import jp.tomorrowkey.android.gifplayer.BaseGifImage;
 

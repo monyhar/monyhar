@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.client_certificate;
+package org.monyhar.components.browser_ui.client_certificate;
 
 import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.verify;
@@ -18,9 +18,9 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.components.browser_ui.client_certificate.SSLClientCertificateRequest.CertSelectionFailureDialog;
-import org.chromium.components.browser_ui.client_certificate.SSLClientCertificateRequest.KeyChainCertSelectionWrapper;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.components.browser_ui.client_certificate.SSLClientCertificateRequest.CertSelectionFailureDialog;
+import org.monyhar.components.browser_ui.client_certificate.SSLClientCertificateRequest.KeyChainCertSelectionWrapper;
 
 /**
  * Unit tests for the SSLClientCertificateRequest class.

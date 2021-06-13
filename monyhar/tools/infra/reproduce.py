@@ -2,7 +2,7 @@
 # Copyright 2019 The Chromium Authors. All rights reserved.
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
-"""Debug chromium builds locally.
+"""Debug monyhar builds locally.
 
 Takes as input a build you want to reproduce locally.
 
@@ -42,15 +42,15 @@ import requests
 CHROMIUM_ROOT = os.path.abspath(os.path.join(
     os.path.dirname(__file__), '..', '..'))
 
-LOGDOG_BASE = 'https://logs.chromium.org/'
+LOGDOG_BASE = 'https://logs.monyhar.org/'
 # TODO(martiniss): Allow this to be configured, to support internal builds.
 TEST_RESULTS_BASE = 'https://test-results.appspot.com/'
 BB_API_BASE = 'https://cr-buildbucket.appspot.com/'
-CI_PREFIX = 'https://ci.chromium.org/p/chromium/builders/'
+CI_PREFIX = 'https://ci.monyhar.org/p/monyhar/builders/'
 
 
 # Small named tuple for test suite entries in the
-# //testing/buildbot/chromium.*.json files.
+# //testing/buildbot/monyhar.*.json files.
 TestSuiteEntry = collections.namedtuple('TestSuiteEntry', [
     'name', 'args', 'is_isolated', 'swarming'])
 
@@ -70,7 +70,7 @@ def fetch_step_log(build, step, log):
   data = {
       'path': log_path.replace(' ', '_'),
       # TODO(martiniss): Get actual project.
-      'project': 'chromium',
+      'project': 'monyhar',
   }
   headers = {
       'accept': 'application/json',
@@ -145,7 +145,7 @@ class Build(object):
     self._bb_id = ''
 
     # Chromium revision. Used to run `gclient sync`.
-    self.chromium_revision = ''
+    self.monyhar_revision = ''
 
     # Patch information. Tuple of (repo url, patch ref). Used in `gclient sync`.
     self.patch_info = ('', '')
@@ -188,7 +188,7 @@ class Build(object):
     data = {
         'builder': {
             # TODO(martiniss): Remove this hard coding.
-            'project': 'chromium',
+            'project': 'monyhar',
             'bucket': self.bucket,
             'builder': self.builder,
         },
@@ -305,7 +305,7 @@ class Build(object):
     bb_id, steps, properties = self._fetch_build_info()
     self._bb_id = bb_id
     self._mastername = properties['mastername']
-    self.chromium_revision = properties.get('got_revision')
+    self.monyhar_revision = properties.get('got_revision')
     self.patch_info = (
         properties.get('patch_repository_url'),
         properties.get('patch_ref'),
@@ -323,7 +323,7 @@ class Build(object):
     explicit_dims = self.lookup_suite(suite).swarming.get('dimensions_sets', {})
     if 'os' not in explicit_dims:
       # Copied from
-      # https://cs.chromium.org/chromium/build/scripts/slave/recipe_modules/swarming/api.py?l=422&rcl=181d7618c62947cbfd9941f3d48537c92c955acf
+      # https://cs.monyhar.org/monyhar/build/scripts/slave/recipe_modules/swarming/api.py?l=422&rcl=181d7618c62947cbfd9941f3d48537c92c955acf
       # Also very hacky, as it uses the mastername of the bot as a key.
       explicit_dims['os'] = {
           'linux': 'Ubuntu-14.04',
@@ -393,7 +393,7 @@ class Build(object):
     cmd = [
         'gclient',
         'sync',
-        '-r', 'src@%s' % self.chromium_revision,
+        '-r', 'src@%s' % self.monyhar_revision,
     ]
     if self.patch_info:
       cmd.extend([
@@ -407,7 +407,7 @@ class Build(object):
       run_command(cmd)
 
   def lookup_suite(self, suite_name):
-    """Looks up information about a suite from json files in chromium src.
+    """Looks up information about a suite from json files in monyhar src.
 
     Returns: A list of TestSuiteEntry objects.
     """
@@ -455,12 +455,12 @@ def main():
   parser.add_argument('build_url',
                       help='the URL of a build you want to debug locally. '
                       'Usually something like '
-                      '%sluci.chromium.try/linux-rel/265964.' % CI_PREFIX)
+                      '%sluci.monyhar.try/linux-rel/265964.' % CI_PREFIX)
   parser.add_argument('path', nargs='?', default='//out/Default',
                       help='path to output directory to build. Default is '
                       '%(default)s.')
   parser.add_argument('-s', '--sync-checkout', action='store_true',
-                      help='attempts to emulate the chromium checkout in the '
+                      help='attempts to emulate the monyhar checkout in the '
                       'build to reproduce. Does this by calling `gclient sync`')
   parser.add_argument('-n', '--no-run-tests', action='store_false',
                       dest='run_tests', help='don\'t run any tests. Useful if '
@@ -480,13 +480,13 @@ def main():
     print('The build you are attempting to debug is a %s.' % (
         'tryjob' if build.is_tryjob else 'continuous build'))
     print('The build checked out revision %s%s.' % (
-        build.chromium_revision,
+        build.monyhar_revision,
         ' and applied the patch https://crrev.com/c/%s' % (
             '/'.join(build.patch_info[1].split('/')[3:])
             if build.is_tryjob else '')))
     # TODO(martiniss): Consider validating the user's gclient config.
     print(
-        'This script can attempt to reproduce the chromium checkout the build '
+        'This script can attempt to reproduce the monyhar checkout the build '
         'executed with. It would do so by running the following commands:')
     print()
     for cmd in build.checkout_commands():

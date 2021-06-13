@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import android.webkit.JavascriptInterface;
 
@@ -10,16 +10,16 @@ import org.junit.Assert;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.base.Log;
-import org.chromium.base.test.params.ParameterProvider;
-import org.chromium.base.test.params.ParameterSet;
-import org.chromium.base.test.util.UrlUtils;
-import org.chromium.content_public.browser.JavascriptInjector;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.test.util.TestCallbackHelperContainer;
-import org.chromium.content_shell_apk.ContentShellActivity;
-import org.chromium.content_shell_apk.ContentShellActivityTestRule;
+import org.monyhar.base.Log;
+import org.monyhar.base.test.params.ParameterProvider;
+import org.monyhar.base.test.params.ParameterSet;
+import org.monyhar.base.test.util.UrlUtils;
+import org.monyhar.content_public.browser.JavascriptInjector;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.test.util.TestCallbackHelperContainer;
+import org.monyhar.content_shell_apk.ContentShellActivity;
+import org.monyhar.content_shell_apk.ContentShellActivityTestRule;
 
 import java.lang.annotation.Annotation;
 import java.util.Arrays;

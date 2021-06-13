@@ -29,7 +29,7 @@
         '../test/test.gyp:crashpad_test',
         '../third_party/googletest/googlemock.gyp:googlemock',
         '../third_party/googletest/googletest.gyp:googletest',
-        '../third_party/mini_chromium/mini_chromium.gyp:base',
+        '../third_party/mini_monyhar/mini_monyhar.gyp:base',
         '../util/util.gyp:crashpad_util',
       ],
       'include_dirs': [

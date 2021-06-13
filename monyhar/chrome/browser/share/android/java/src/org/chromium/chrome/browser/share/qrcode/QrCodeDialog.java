@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.qrcode;
+package org.monyhar.chrome.browser.share.qrcode;
 
 import android.app.Dialog;
 import android.app.DialogFragment;
@@ -15,11 +15,11 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.share.qrcode.scan_tab.QrCodeScanCoordinator;
-import org.chromium.chrome.browser.share.qrcode.share_tab.QrCodeShareCoordinator;
-import org.chromium.ui.base.AndroidPermissionDelegate;
-import org.chromium.ui.widget.ChromeImageButton;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.share.qrcode.scan_tab.QrCodeScanCoordinator;
+import org.monyhar.chrome.browser.share.qrcode.share_tab.QrCodeShareCoordinator;
+import org.monyhar.ui.base.AndroidPermissionDelegate;
+import org.monyhar.ui.widget.ChromeImageButton;
 
 import java.util.ArrayList;
 

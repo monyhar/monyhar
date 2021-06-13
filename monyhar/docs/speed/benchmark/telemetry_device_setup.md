@@ -13,7 +13,7 @@ $ tools/perf/run_benchmark --browser=system dummy_benchmark.noisy_benchmark_1
 ```
 
 Otherwise have a look at the required catapult dependencies listed in the
-[.vpython](https://chromium.googlesource.com/chromium/src/+/main/.vpython)
+[.vpython](https://monyhar.googlesource.com/monyhar/src/+/main/.vpython)
 spec file.
 
 ## Desktop benchmarks
@@ -29,7 +29,7 @@ possible (e.g: AntiVirus,..) before running the benchmarks.
 ### ChromeOS
 
 Virtual Machine: see
-[cros_vm.md doc](https://chromium.googlesource.com/chromiumos/docs/+/main/cros_vm.md)
+[cros_vm.md doc](https://monyhar.googlesource.com/monyharos/docs/+/main/cros_vm.md)
 
 Actual CrOS machine: please contact achuith@, cywang@ from CrOS teams for
 advice.
@@ -62,10 +62,10 @@ USB debugging.
     If you are planning to test WebView on Android M or lower also add
     `--remove-system-webview` to this command, otherwise Telemetry will
     have trouble installing the required APKs. This should take care of
-    everything, but see [build instructions for WebView](https://www.chromium.org/developers/how-tos/build-instructions-android-webview)
+    everything, but see [build instructions for WebView](https://www.monyhar.org/developers/how-tos/build-instructions-android-webview)
     if you run into problems.
 *   Finally, use one of the supported [`--browser` types](https://github.com/catapult-project/catapult/blob/d5b0db081b74c717effa1080ca06c4f679136b73/telemetry/telemetry/internal/backends/android_browser_backend_settings.py#L150)
     on your
-    [`run_benchmark`](https://cs.chromium.org/chromium/src/tools/perf/run_benchmark)
-    or [`run_tests`](https://cs.chromium.org/chromium/src/tools/perf/run_tests)
+    [`run_benchmark`](https://cs.monyhar.org/monyhar/src/tools/perf/run_benchmark)
+    or [`run_tests`](https://cs.monyhar.org/monyhar/src/tools/perf/run_tests)
     command.

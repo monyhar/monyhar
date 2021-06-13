@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import android.os.SystemClock;
 import android.support.test.InstrumentationRegistry;
@@ -19,16 +19,16 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.UrlUtils;
-import org.chromium.content_public.browser.ViewEventSink.InternalAccessDelegate;
-import org.chromium.content_public.browser.test.util.WebContentsUtils;
-import org.chromium.content_shell_apk.ContentShellActivityTestRule;
-import org.chromium.content_shell_apk.ContentShellActivityTestRule.RerunWithUpdatedContainerView;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.UrlUtils;
+import org.monyhar.content_public.browser.ViewEventSink.InternalAccessDelegate;
+import org.monyhar.content_public.browser.test.util.WebContentsUtils;
+import org.monyhar.content_shell_apk.ContentShellActivityTestRule;
+import org.monyhar.content_shell_apk.ContentShellActivityTestRule.RerunWithUpdatedContainerView;
 
 /**
  * Tests that we can scroll and fling a ContentView running inside ContentShell.

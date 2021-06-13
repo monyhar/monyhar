@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
-import static org.chromium.components.webapk.lib.common.WebApkConstants.WEBAPK_PACKAGE_PREFIX;
+import static org.monyhar.components.webapk.lib.common.WebApkConstants.WEBAPK_PACKAGE_PREFIX;
 
 import android.app.Activity;
 import android.app.KeyguardManager;
@@ -29,40 +29,40 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.browser.customtabs.CustomTabsSessionToken;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.FileUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.Log;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.browser.customtabs.CustomTabsConnection;
-import org.chromium.chrome.browser.document.ChromeLauncherActivity;
-import org.chromium.chrome.browser.externalnav.IntentWithRequestMetadataHandler;
-import org.chromium.chrome.browser.externalnav.IntentWithRequestMetadataHandler.RequestMetadata;
-import org.chromium.chrome.browser.gsa.GSAState;
-import org.chromium.chrome.browser.offlinepages.OfflinePageUtils;
-import org.chromium.chrome.browser.omnibox.suggestions.AutocompleteCoordinator;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.search_engines.TemplateUrlServiceFactory;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabLaunchType;
-import org.chromium.chrome.browser.translate.TranslateIntentHandler;
-import org.chromium.chrome.browser.webapps.WebappActivity;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.components.external_intents.ExternalNavigationHandler;
-import org.chromium.components.externalauth.ExternalAuthUtils;
-import org.chromium.content_public.browser.BrowserStartupController;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.common.ContentUrlConstants;
-import org.chromium.content_public.common.Referrer;
-import org.chromium.net.HttpUtil;
-import org.chromium.network.mojom.ReferrerPolicy;
-import org.chromium.ui.base.PageTransition;
-import org.chromium.url.GURL;
-import org.chromium.url.Origin;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.FileUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.browser.customtabs.CustomTabsConnection;
+import org.monyhar.chrome.browser.document.ChromeLauncherActivity;
+import org.monyhar.chrome.browser.externalnav.IntentWithRequestMetadataHandler;
+import org.monyhar.chrome.browser.externalnav.IntentWithRequestMetadataHandler.RequestMetadata;
+import org.monyhar.chrome.browser.gsa.GSAState;
+import org.monyhar.chrome.browser.offlinepages.OfflinePageUtils;
+import org.monyhar.chrome.browser.omnibox.suggestions.AutocompleteCoordinator;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.search_engines.TemplateUrlServiceFactory;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabLaunchType;
+import org.monyhar.chrome.browser.translate.TranslateIntentHandler;
+import org.monyhar.chrome.browser.webapps.WebappActivity;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.components.external_intents.ExternalNavigationHandler;
+import org.monyhar.components.externalauth.ExternalAuthUtils;
+import org.monyhar.content_public.browser.BrowserStartupController;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.common.ContentUrlConstants;
+import org.monyhar.content_public.common.Referrer;
+import org.monyhar.net.HttpUtil;
+import org.monyhar.network.mojom.ReferrerPolicy;
+import org.monyhar.ui.base.PageTransition;
+import org.monyhar.url.GURL;
+import org.monyhar.url.Origin;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -98,7 +98,7 @@ public class IntentHandler {
      * Activity (e.g. BookmarkActivity) to intent back into the Activity it sits on top of.
      */
     public static final String EXTRA_PARENT_COMPONENT =
-            "org.chromium.chrome.browser.parent_component";
+            "org.monyhar.chrome.browser.parent_component";
 
     /**
      * Transition type is only set internally by a first-party app and has to be signed.
@@ -124,21 +124,21 @@ public class IntentHandler {
 
     /**
      * An extra to indicate that the intent was triggered by the launch new incognito tab feature.
-     * See {@link org.chromium.chrome.browser.incognito.IncognitoTabLauncher}.
+     * See {@link org.monyhar.chrome.browser.incognito.IncognitoTabLauncher}.
      */
     public static final String EXTRA_INVOKED_FROM_LAUNCH_NEW_INCOGNITO_TAB =
-            "org.chromium.chrome.browser.incognito.invoked_from_launch_new_incognito_tab";
+            "org.monyhar.chrome.browser.incognito.invoked_from_launch_new_incognito_tab";
 
     /**
      * Intent extra used to deliver the original activity referrer.
      */
     public static final String EXTRA_ACTIVITY_REFERRER =
-            "org.chromium.chrome.browser.activity_referrer";
+            "org.monyhar.chrome.browser.activity_referrer";
 
     /**
      * A referrer id used for Chrome to Chrome referrer passing.
      */
-    public static final String EXTRA_REFERRER_ID = "org.chromium.chrome.browser.referrer_id";
+    public static final String EXTRA_REFERRER_ID = "org.monyhar.chrome.browser.referrer_id";
 
     /**
      * An extra for identifying the referrer policy to be used.
@@ -150,28 +150,28 @@ public class IntentHandler {
     /**
      * Key to associate a timestamp with an intent.
      */
-    private static final String EXTRA_TIMESTAMP_MS = "org.chromium.chrome.browser.timestamp";
+    private static final String EXTRA_TIMESTAMP_MS = "org.monyhar.chrome.browser.timestamp";
 
     /**
      * For multi-window, passes the id of the window.
      */
-    public static final String EXTRA_WINDOW_ID = "org.chromium.chrome.browser.window_id";
+    public static final String EXTRA_WINDOW_ID = "org.monyhar.chrome.browser.window_id";
 
     /**
      * Extra to indicate the launch type of the tab to be created.
      */
     private static final String EXTRA_TAB_LAUNCH_TYPE =
-            "org.chromium.chrome.browser.tab_launch_type";
+            "org.monyhar.chrome.browser.tab_launch_type";
 
     /**
      * A hash code for the URL to verify intent data hasn't been modified.
      */
-    public static final String EXTRA_DATA_HASH_CODE = "org.chromium.chrome.browser.data_hash";
+    public static final String EXTRA_DATA_HASH_CODE = "org.monyhar.chrome.browser.data_hash";
 
     /**
      * A boolean to indicate whether incognito mode is currently selected.
      */
-    public static final String EXTRA_INCOGNITO_MODE = "org.chromium.chrome.browser.incognito_mode";
+    public static final String EXTRA_INCOGNITO_MODE = "org.monyhar.chrome.browser.incognito_mode";
 
     /**
      * Byte array for the POST data when load a url, only Intents sent by Chrome can use this.
@@ -196,14 +196,14 @@ public class IntentHandler {
      *{@link CustomTabIntent} in order to identify themselves for metric purposes.
      **/
     public static final String EXTRA_INCOGNITO_CCT_CALLER_ID =
-            "org.chromium.chrome.browser.customtabs.EXTRA_INCOGNITO_CCT_CALLER_ID";
+            "org.monyhar.chrome.browser.customtabs.EXTRA_INCOGNITO_CCT_CALLER_ID";
 
     /**
      * A boolean to indicate whether the ChromeTabbedActivity task was started by this Intent. Only
      * used for external View intents.
      */
     public static final String EXTRA_STARTED_TABBED_CHROME_TASK =
-            "org.chromium.chrome.browser.started_chrome_task";
+            "org.monyhar.chrome.browser.started_chrome_task";
 
     private static Pair<Integer, String> sPendingReferrer;
     private static int sReferrerId;

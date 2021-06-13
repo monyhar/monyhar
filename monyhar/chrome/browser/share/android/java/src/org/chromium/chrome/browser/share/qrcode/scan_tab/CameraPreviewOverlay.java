@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.qrcode.scan_tab;
+package org.monyhar.chrome.browser.share.qrcode.scan_tab;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -14,7 +14,7 @@ import android.text.StaticLayout;
 import android.text.TextPaint;
 import android.view.View;
 
-import org.chromium.chrome.R;
+import org.monyhar.chrome.R;
 
 /** CameraPreviewOverlay is a mainly transparent layer meant for the camera preview. */
 public class CameraPreviewOverlay extends View {
@@ -49,10 +49,10 @@ public class CameraPreviewOverlay extends View {
         mTextPaint.setAntiAlias(true);
         mTextPaint.setColor(getResources().getColor(android.R.color.white));
         mTextPaint.setTextSize(
-                getResources().getDimensionPixelSize(org.chromium.chrome.R.dimen.text_size_large));
+                getResources().getDimensionPixelSize(org.monyhar.chrome.R.dimen.text_size_large));
 
         String textString = getResources().getString(
-                org.chromium.chrome.R.string.qr_code_camera_framing_rect_description);
+                org.monyhar.chrome.R.string.qr_code_camera_framing_rect_description);
         mTextLayout = new StaticLayout(textString, mTextPaint, mFramingRect.width(),
                 Alignment.ALIGN_CENTER, 1.0f, 0.0f, true);
     }

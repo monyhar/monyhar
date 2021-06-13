@@ -36,7 +36,7 @@ import sys
 
 sys.path.append(os.path.join(
     os.path.dirname(__file__), os.pardir, os.pardir, 'build', 'android'))
-import devil_chromium
+import devil_monyhar
 from devil.android import device_errors
 from devil.android import device_utils
 from devil.android.sdk import keyevent
@@ -92,7 +92,7 @@ def RemovePreinstalledWebViews(device):
       # workaround this. Use lots of newlines to make sure this message doesn't
       # get lost.
       logging.error('Did you start the emulator with "-writable-system?"\n'
-                    'See https://chromium.googlesource.com/chromium/src/+/'
+                    'See https://monyhar.googlesource.com/monyhar/src/+/'
                     'main/docs/android_emulator.md#writable-system-partition'
                     '\n')
     raise
@@ -111,7 +111,7 @@ development.
 
   args = parser.parse_args()
   logging_common.InitializeLogging(args)
-  devil_chromium.Initialize(adb_path=args.adb_path)
+  devil_monyhar.Initialize(adb_path=args.adb_path)
 
   devices = device_utils.DeviceUtils.HealthyDevices(device_arg=args.devices)
   device_utils.DeviceUtils.parallel(devices).pMap(RemovePreinstalledWebViews)

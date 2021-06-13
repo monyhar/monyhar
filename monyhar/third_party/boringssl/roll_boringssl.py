@@ -140,8 +140,8 @@ def main():
       if lower.startswith('bug:') or lower.startswith('bug='):
         for bug in lower[4:].split(','):
           bug = bug.strip()
-          if bug.startswith('chromium:'):
-            crbugs.add(int(bug[len('chromium:'):]))
+          if bug.startswith('monyhar:'):
+            crbugs.add(int(bug[len('monyhar:'):]))
             has_bugs = True
       if lower.startswith('update-note:'):
         has_update_note = True

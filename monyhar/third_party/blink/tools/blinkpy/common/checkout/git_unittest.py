@@ -186,14 +186,14 @@ class GitTestWithRealFilesystemAndExecutive(unittest.TestCase):
         # This tests a protected method. pylint: disable=protected-access
         git_log = """
 commit 624c3081c0
-Author: foobarbaz1 <foobarbaz1@chromium.org>
+Author: foobarbaz1 <foobarbaz1@monyhar.org>
 Date:   Mon Sep 28 19:10:30 2015 -0700
 
     Test foo bar baz qux 123.
 
     BUG=000000
 
-    Review URL: https://codereview.chromium.org/999999999
+    Review URL: https://codereview.monyhar.org/999999999
 
     Cr-Commit-Position: refs/heads/main@{#1234567}
 """

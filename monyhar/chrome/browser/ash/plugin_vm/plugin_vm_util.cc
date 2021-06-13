@@ -67,7 +67,7 @@ bool IsPluginVmAppWindow(const aura::Window* window) {
   const std::string* app_id = exo::GetShellApplicationId(window);
   if (!app_id)
     return false;
-  return *app_id == "org.chromium.plugin_vm_ui";
+  return *app_id == "org.monyhar.plugin_vm_ui";
 }
 
 std::string GetPluginVmLicenseKey() {

@@ -8,7 +8,7 @@
     graphviz.
 
     For more info see
-    chromium/src/+/HEAD/docs/graphical_debugging_aid_chromium_views.md
+    monyhar/src/+/HEAD/docs/graphical_debugging_aid_monyhar_views.md
 
     To make this command available, add the following to your ~/.lldbinit:
     command script import {Path to SRC Root}/tools/lldb/lldb_viewg.py

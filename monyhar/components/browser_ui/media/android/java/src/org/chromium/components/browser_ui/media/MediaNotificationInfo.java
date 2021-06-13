@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.media;
+package org.monyhar.components.browser_ui.media;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -10,8 +10,8 @@ import android.text.TextUtils;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.services.media_session.MediaMetadata;
-import org.chromium.services.media_session.MediaPosition;
+import org.monyhar.services.media_session.MediaMetadata;
+import org.monyhar.services.media_session.MediaPosition;
 
 import java.util.Set;
 

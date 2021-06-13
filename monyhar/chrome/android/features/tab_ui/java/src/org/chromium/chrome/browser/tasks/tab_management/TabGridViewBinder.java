@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
-import static org.chromium.chrome.browser.tasks.tab_management.TabListModel.CardProperties.CARD_ALPHA;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabListModel.CardProperties.CARD_ALPHA;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -24,19 +24,19 @@ import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.core.view.ViewCompat;
 import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.Callback;
-import org.chromium.base.MathUtils;
-import org.chromium.chrome.tab_ui.R;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.widget.ButtonCompat;
-import org.chromium.ui.widget.ChipView;
-import org.chromium.ui.widget.ChromeImageView;
-import org.chromium.ui.widget.ViewLookupCachingFrameLayout;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.base.MathUtils;
+import org.monyhar.chrome.tab_ui.R;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.widget.ButtonCompat;
+import org.monyhar.ui.widget.ChipView;
+import org.monyhar.ui.widget.ChromeImageView;
+import org.monyhar.ui.widget.ViewLookupCachingFrameLayout;
 
 /**
- * {@link org.chromium.ui.modelutil.SimpleRecyclerViewMcp.ViewBinder} for tab grid.
+ * {@link org.monyhar.ui.modelutil.SimpleRecyclerViewMcp.ViewBinder} for tab grid.
  * This class supports both full and partial updates to the {@link TabGridViewHolder}.
  */
 class TabGridViewBinder {

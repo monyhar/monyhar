@@ -46,7 +46,7 @@ class PaymentMethodManifestDownloaderTest : public testing::Test {
         downloader_(std::make_unique<ErrorLogger>(),
                     shared_url_loader_factory_) {
     downloader_.DownloadPaymentMethodManifest(
-        url::Origin::Create(GURL("https://chromium.org")), test_url_,
+        url::Origin::Create(GURL("https://monyhar.org")), test_url_,
         base::BindOnce(&PaymentMethodManifestDownloaderTest::OnManifestDownload,
                        base::Unretained(this)));
   }

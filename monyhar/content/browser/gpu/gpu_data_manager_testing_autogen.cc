@@ -4,8 +4,8 @@
 
 // This file is auto-generated from
 //    gpu/config/process_json.py
-// It's formatted by clang-format using chromium coding style:
-//    clang-format -i -style=chromium filename
+// It's formatted by clang-format using monyhar coding style:
+//    clang-format -i -style=monyhar filename
 // DO NOT EDIT!
 
 #include "content/browser/gpu/gpu_data_manager_testing_autogen.h"

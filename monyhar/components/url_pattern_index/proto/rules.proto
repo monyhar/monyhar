@@ -6,7 +6,7 @@ syntax = "proto2";
 option optimize_for = LITE_RUNTIME;
 
 package url_pattern_index.proto;
-option java_package = "org.chromium.components.url_pattern_index.proto";
+option java_package = "org.monyhar.components.url_pattern_index.proto";
 
 // The type of a subresource filtering rule.
 enum RuleType {

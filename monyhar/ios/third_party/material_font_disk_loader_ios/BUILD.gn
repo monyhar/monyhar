@@ -14,10 +14,10 @@ source_set("material_font_disk_loader_ios") {
     "src/src/MaterialFontDiskLoader.h",
   ]
   public_configs = [ ":material_font_disk_loader_ios_config" ]
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
     ":material_font_disk_loader_ios_config",
     "//build/config/compiler:enable_arc",
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
   ]
 }

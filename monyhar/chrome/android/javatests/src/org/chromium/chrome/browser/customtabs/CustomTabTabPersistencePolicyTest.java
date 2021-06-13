@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import android.app.Activity;
 import android.support.test.InstrumentationRegistry;
@@ -18,37 +18,37 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.StreamUtil;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.task.SequencedTaskRunner;
-import org.chromium.base.task.TaskRunner;
-import org.chromium.base.task.TaskTraits;
-import org.chromium.base.test.UiThreadTest;
-import org.chromium.base.test.util.AdvancedMockContext;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.app.tabmodel.AsyncTabParamsManagerSingleton;
-import org.chromium.chrome.browser.app.tabmodel.ChromeTabModelFilterFactory;
-import org.chromium.chrome.browser.app.tabmodel.CustomTabsTabModelOrchestrator;
-import org.chromium.chrome.browser.compositor.layouts.content.TabContentManager;
-import org.chromium.chrome.browser.tab.MockTab;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabStateFileManager;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorImpl;
-import org.chromium.chrome.browser.tabmodel.TabPersistencePolicy;
-import org.chromium.chrome.browser.tabmodel.TabPersistentStore;
-import org.chromium.chrome.browser.tabmodel.TestTabModelDirectory;
-import org.chromium.chrome.browser.tabpersistence.TabStateDirectory;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.util.browser.tabmodel.MockTabModel;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.url.GURL;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.StreamUtil;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.task.SequencedTaskRunner;
+import org.monyhar.base.task.TaskRunner;
+import org.monyhar.base.task.TaskTraits;
+import org.monyhar.base.test.UiThreadTest;
+import org.monyhar.base.test.util.AdvancedMockContext;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.app.tabmodel.AsyncTabParamsManagerSingleton;
+import org.monyhar.chrome.browser.app.tabmodel.ChromeTabModelFilterFactory;
+import org.monyhar.chrome.browser.app.tabmodel.CustomTabsTabModelOrchestrator;
+import org.monyhar.chrome.browser.compositor.layouts.content.TabContentManager;
+import org.monyhar.chrome.browser.tab.MockTab;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabStateFileManager;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorImpl;
+import org.monyhar.chrome.browser.tabmodel.TabPersistencePolicy;
+import org.monyhar.chrome.browser.tabmodel.TabPersistentStore;
+import org.monyhar.chrome.browser.tabmodel.TestTabModelDirectory;
+import org.monyhar.chrome.browser.tabpersistence.TabStateDirectory;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.util.browser.tabmodel.MockTabModel;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.url.GURL;
 
 import java.io.File;
 import java.io.FileOutputStream;

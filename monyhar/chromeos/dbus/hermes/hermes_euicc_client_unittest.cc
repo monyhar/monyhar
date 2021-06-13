@@ -27,8 +27,8 @@ const char kInvalidPath[] = "/test/invalid/path";
 const char kTestRootSmds[] = "test.smds";
 const char kTestActivationCode[] = "abc123";
 const char kTestConfirmationCode[] = "def456";
-const char kTestEuiccPath[] = "/org/chromium/hermes/Euicc/1";
-const char kTestCarrierProfilePath[] = "/org/chromium/hermes/Profile/1";
+const char kTestEuiccPath[] = "/org/monyhar/hermes/Euicc/1";
+const char kTestCarrierProfilePath[] = "/org/monyhar/hermes/Profile/1";
 
 // Matches dbus::MethodCall for UninstallProfile call with given path.
 MATCHER_P(MatchUninstallProfileCall, expected_profile_path, "") {

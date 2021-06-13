@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_manager;
+package org.monyhar.chrome.browser.password_manager;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -13,8 +13,8 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.R;
-import org.chromium.ui.widget.ChromeImageButton;
+import org.monyhar.chrome.R;
+import org.monyhar.ui.widget.ChromeImageButton;
 
 /**
  * The dialog content view for illustration dialogs used by the password manager (e.g. leak

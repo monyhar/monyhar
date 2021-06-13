@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-[JavaPackage="org.chromium.payments.mojom"]
+[JavaPackage="org.monyhar.payments.mojom"]
 module payments.mojom;
 
 // The shipping address that the browser process provides to the renderer

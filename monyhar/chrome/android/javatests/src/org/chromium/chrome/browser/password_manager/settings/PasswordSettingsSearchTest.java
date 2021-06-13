@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_manager.settings;
+package org.monyhar.chrome.browser.password_manager.settings;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.Espresso.openActionBarOverflowOrOptionsMenu;
@@ -27,17 +27,17 @@ import static org.hamcrest.Matchers.nullValue;
 import static org.hamcrest.Matchers.sameInstance;
 import static org.junit.Assert.assertThat;
 
-import static org.chromium.chrome.browser.password_manager.settings.PasswordSettingsTestHelper.ARES_AT_OLYMP;
-import static org.chromium.chrome.browser.password_manager.settings.PasswordSettingsTestHelper.DEIMOS_AT_OLYMP;
-import static org.chromium.chrome.browser.password_manager.settings.PasswordSettingsTestHelper.GREEK_GODS;
-import static org.chromium.chrome.browser.password_manager.settings.PasswordSettingsTestHelper.HADES_AT_UNDERWORLD;
-import static org.chromium.chrome.browser.password_manager.settings.PasswordSettingsTestHelper.PHOBOS_AT_OLYMP;
-import static org.chromium.chrome.browser.password_manager.settings.PasswordSettingsTestHelper.ZEUS_ON_EARTH;
-import static org.chromium.chrome.test.util.ViewUtils.VIEW_GONE;
-import static org.chromium.chrome.test.util.ViewUtils.VIEW_INVISIBLE;
-import static org.chromium.chrome.test.util.ViewUtils.VIEW_NULL;
-import static org.chromium.chrome.test.util.ViewUtils.onViewWaiting;
-import static org.chromium.chrome.test.util.ViewUtils.waitForView;
+import static org.monyhar.chrome.browser.password_manager.settings.PasswordSettingsTestHelper.ARES_AT_OLYMP;
+import static org.monyhar.chrome.browser.password_manager.settings.PasswordSettingsTestHelper.DEIMOS_AT_OLYMP;
+import static org.monyhar.chrome.browser.password_manager.settings.PasswordSettingsTestHelper.GREEK_GODS;
+import static org.monyhar.chrome.browser.password_manager.settings.PasswordSettingsTestHelper.HADES_AT_UNDERWORLD;
+import static org.monyhar.chrome.browser.password_manager.settings.PasswordSettingsTestHelper.PHOBOS_AT_OLYMP;
+import static org.monyhar.chrome.browser.password_manager.settings.PasswordSettingsTestHelper.ZEUS_ON_EARTH;
+import static org.monyhar.chrome.test.util.ViewUtils.VIEW_GONE;
+import static org.monyhar.chrome.test.util.ViewUtils.VIEW_INVISIBLE;
+import static org.monyhar.chrome.test.util.ViewUtils.VIEW_NULL;
+import static org.monyhar.chrome.test.util.ViewUtils.onViewWaiting;
+import static org.monyhar.chrome.test.util.ViewUtils.waitForView;
 
 import android.app.Instrumentation;
 import android.content.Intent;
@@ -67,21 +67,21 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.history.HistoryActivity;
-import org.chromium.chrome.browser.history.HistoryManager;
-import org.chromium.chrome.browser.history.StubbedHistoryProvider;
-import org.chromium.chrome.browser.password_check.PasswordCheck;
-import org.chromium.chrome.browser.password_check.PasswordCheckFactory;
-import org.chromium.chrome.browser.settings.SettingsActivityTestRule;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.util.browser.Features.DisableFeatures;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.history.HistoryActivity;
+import org.monyhar.chrome.browser.history.HistoryManager;
+import org.monyhar.chrome.browser.history.StubbedHistoryProvider;
+import org.monyhar.chrome.browser.password_check.PasswordCheck;
+import org.monyhar.chrome.browser.password_check.PasswordCheckFactory;
+import org.monyhar.chrome.browser.settings.SettingsActivityTestRule;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.util.browser.Features.DisableFeatures;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.Date;
 import java.util.concurrent.atomic.AtomicReference;

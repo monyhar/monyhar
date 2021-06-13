@@ -48,7 +48,7 @@ class ExecutionContext;
 //   channel0 = message_port.Disentangle();
 //
 // Note that there is a Java wrapper to this class implemented by
-// org.chromium.content.browser.AppWebMessagePortDescriptor.
+// org.monyhar.content.browser.AppWebMessagePortDescriptor.
 class BLINK_COMMON_EXPORT MessagePortDescriptor {
  public:
   // Delegate used to provide information about the state of message ports.
@@ -113,8 +113,8 @@ class BLINK_COMMON_EXPORT MessagePortDescriptor {
   // The following functions are only intended to be used by classes that
   // implemented message port endpoints, like blink::MessagePort (for internal
   // use from content and blink), blink::WebMessagePort (for embedder use from
-  // C++ code) and org.chromium.content.browser.AppWebMessagePort
-  // (implementation of org.chromium.content_public.browser.MessagePort, which
+  // C++ code) and org.monyhar.content.browser.AppWebMessagePort
+  // (implementation of org.monyhar.content_public.browser.MessagePort, which
   // is intended for embedder use in Java code).
 
   // Intended for use by MessagePort, for binding/unbinding the handle to/from a
@@ -129,7 +129,7 @@ class BLINK_COMMON_EXPORT MessagePortDescriptor {
       ExecutionContext* execution_context);
 
   // Intended for use by WebMessagePort and the corresponding
-  // org.chromium.content.browser.AppWebMessagePort, which are the interfaces
+  // org.monyhar.content.browser.AppWebMessagePort, which are the interfaces
   // that embedders use for communicating with hosted content.
   mojo::ScopedMessagePipeHandle TakeHandleToEntangleWithEmbedder();
 

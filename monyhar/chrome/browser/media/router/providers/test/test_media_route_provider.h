@@ -87,9 +87,9 @@ class TestMediaRouteProvider : public mojom::MediaRouteProvider {
   void set_empty_sink_list() { sinks_ = {}; }
 
   void set_unsupported_media_sources_list() {
-    unsupported_media_sources_ = {"urn:x-org.chromium.media:source:tab:0",
-                                  "urn:x-org.chromium.media:source:tab:*",
-                                  "urn:x-org.chromium.media:source:desktop",
+    unsupported_media_sources_ = {"urn:x-org.monyhar.media:source:tab:0",
+                                  "urn:x-org.monyhar.media:source:tab:*",
+                                  "urn:x-org.monyhar.media:source:desktop",
                                   "https://www.example.com/presentation.html"};
   }
 

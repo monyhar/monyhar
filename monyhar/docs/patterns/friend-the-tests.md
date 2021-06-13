@@ -30,7 +30,7 @@ individual fields or methods.
 * [TestApi]
 * [ForTesting methods]
 * ["Test the contract, not the implementation"](https://abseil.io/tips/135)
-* [Discussion thread on cxx@](https://groups.google.com/a/chromium.org/d/msg/cxx/AOsKCPCBYhk/RDVLSMRGCgAJ)
+* [Discussion thread on cxx@](https://groups.google.com/a/monyhar.org/d/msg/cxx/AOsKCPCBYhk/RDVLSMRGCgAJ)
 
 ## How to use this pattern:
 

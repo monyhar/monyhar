@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,21 +14,21 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.browser.customtabs.CustomTabsSessionToken;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.TraceEvent;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.app.tab_activity_glue.ReparentingTask;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabBuilder;
-import org.chromium.chrome.browser.tab.TabLaunchType;
-import org.chromium.chrome.browser.tab.TabUtils;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.common.Referrer;
-import org.chromium.network.mojom.ReferrerPolicy;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.app.tab_activity_glue.ReparentingTask;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabBuilder;
+import org.monyhar.chrome.browser.tab.TabLaunchType;
+import org.monyhar.chrome.browser.tab.TabUtils;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.common.Referrer;
+import org.monyhar.network.mojom.ReferrerPolicy;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Holds a hidden tab which may be used to preload pages before a CustomTabActivity is launched.

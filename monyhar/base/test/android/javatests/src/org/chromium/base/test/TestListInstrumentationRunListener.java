@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.test;
+package org.monyhar.base.test;
 
 import android.support.test.internal.runner.listener.InstrumentationRunListener;
 
@@ -13,7 +13,7 @@ import org.junit.runner.Description;
 import org.junit.runner.notification.Failure;
 import org.junit.runners.model.InitializationError;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

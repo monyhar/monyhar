@@ -29,7 +29,7 @@ namespace {
 const char kPDFPath[] = "/testpage.pdf";
 
 // Path wich leads to a PNG file.
-const char kPNGPath[] = "/chromium_logo.png";
+const char kPNGPath[] = "/monyhar_logo.png";
 
 // Path wich leads to a MOV file.
 const char kMOVPath[] = "/video_sample.mov";
@@ -127,7 +127,7 @@ using base::test::ios::WaitUntilConditionOrTimeout;
   ConditionBlock condition = ^{
     NSError* error = nil;
     [[EarlGrey
-        selectElementWithMatcher:grey_allOf(grey_text(@"chromium_logo"),
+        selectElementWithMatcher:grey_allOf(grey_text(@"monyhar_logo"),
                                             grey_sufficientlyVisible(), nil)]
         assertWithMatcher:grey_notNil()
                     error:&error];

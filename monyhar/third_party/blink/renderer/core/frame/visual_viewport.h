@@ -160,7 +160,7 @@ class CORE_EXPORT VisualViewport : public GarbageCollected<VisualViewport>,
   void ClampToBoundaries();
 
   // See
-  // http://www.chromium.org/developers/design-documents/blink-coordinate-spaces.
+  // http://www.monyhar.org/developers/design-documents/blink-coordinate-spaces.
   // These methods are used to convert coordinates from/to viewport to root
   // frame. Root frame coordinates x page scale(pinch zoom) -> Viewport
   FloatRect ViewportToRootFrame(const FloatRect&) const;

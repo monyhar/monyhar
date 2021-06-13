@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test.component_updater;
+package org.monyhar.android_webview.test.component_updater;
 
 import android.app.Service;
 import android.content.Intent;
@@ -11,8 +11,8 @@ import android.os.IBinder;
 import android.os.ParcelFileDescriptor;
 import android.os.ResultReceiver;
 
-import org.chromium.android_webview.services.ComponentsProviderService;
-import org.chromium.components.component_updater.IComponentsProviderService;
+import org.monyhar.android_webview.services.ComponentsProviderService;
+import org.monyhar.components.component_updater.IComponentsProviderService;
 
 import java.io.File;
 import java.io.FileNotFoundException;

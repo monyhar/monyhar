@@ -152,7 +152,7 @@ TEST_F(ScriptingPermissionsModifierUnitTest, WithholdHostPermissionsOnInstall) {
   InitializeEmptyExtensionService();
 
   constexpr char kHostGoogle[] = "https://google.com/*";
-  constexpr char kHostChromium[] = "https://chromium.org/*";
+  constexpr char kHostChromium[] = "https://monyhar.org/*";
   scoped_refptr<const Extension> extension =
       ExtensionBuilder("a")
           .AddPermissions({kHostGoogle, kHostChromium})
@@ -206,14 +206,14 @@ TEST_F(ScriptingPermissionsModifierUnitTest,
   InitializeEmptyExtensionService();
 
   constexpr char kHostGoogle[] = "https://google.com/*";
-  constexpr char kHostChromium[] = "https://chromium.org/*";
+  constexpr char kHostChromium[] = "https://monyhar.org/*";
   TestExtensionDir test_extension_dir;
   test_extension_dir.WriteManifest(
       R"({
            "name": "foo",
            "manifest_version": 2,
            "version": "1",
-           "permissions": ["https://google.com/*", "https://chromium.org/*"]
+           "permissions": ["https://google.com/*", "https://monyhar.org/*"]
          })");
   ChromeTestExtensionLoader loader(profile());
   loader.add_creation_flag(Extension::WITHHOLD_PERMISSIONS);
@@ -303,14 +303,14 @@ TEST_F(ScriptingPermissionsModifierUnitTest,
   InitializeEmptyExtensionService();
 
   constexpr char kHostGoogle[] = "https://google.com/*";
-  constexpr char kHostChromium[] = "https://chromium.org/*";
+  constexpr char kHostChromium[] = "https://monyhar.org/*";
   TestExtensionDir test_extension_dir;
   constexpr char kManifestTemplate[] =
       R"({
            "name": "foo",
            "manifest_version": 2,
            "version": "%s",
-           "permissions": ["https://google.com/*", "https://chromium.org/*"]
+           "permissions": ["https://google.com/*", "https://monyhar.org/*"]
          })";
 
   test_extension_dir.WriteManifest(base::StringPrintf(kManifestTemplate, "1"));
@@ -452,7 +452,7 @@ TEST_F(ScriptingPermissionsModifierUnitTest, GrantHostPermission) {
   modifier.SetWithholdHostPermissions(true);
 
   const GURL kUrl("https://www.google.com/");
-  const GURL kUrl2("https://www.chromium.org/");
+  const GURL kUrl2("https://www.monyhar.org/");
   EXPECT_FALSE(modifier.HasGrantedHostPermission(kUrl));
   EXPECT_FALSE(modifier.HasGrantedHostPermission(kUrl2));
 
@@ -529,7 +529,7 @@ TEST_F(ScriptingPermissionsModifierUnitTest,
   InitializeEmptyExtensionService();
 
   const GURL kExampleCom("https://example.com/");
-  const GURL kChromiumOrg("https://chromium.org/");
+  const GURL kChromiumOrg("https://monyhar.org/");
   const URLPatternSet kExampleComPatternSet({URLPattern(
       Extension::kValidHostPermissionSchemes, "https://example.com/")});
 
@@ -607,11 +607,11 @@ TEST_F(ScriptingPermissionsModifierUnitTest,
   EXPECT_THAT(GetEffectivePatternsAsStrings(*extension), testing::IsEmpty());
 
   modifier.GrantHostPermission(GURL("https://example.com"));
-  modifier.GrantHostPermission(GURL("https://chromium.org"));
+  modifier.GrantHostPermission(GURL("https://monyhar.org"));
 
   EXPECT_THAT(GetEffectivePatternsAsStrings(*extension),
               testing::UnorderedElementsAre("https://example.com/*",
-                                            "https://chromium.org/*"));
+                                            "https://monyhar.org/*"));
 
   modifier.RemoveAllGrantedHostPermissions();
   EXPECT_THAT(GetEffectivePatternsAsStrings(*extension), testing::IsEmpty());
@@ -626,7 +626,7 @@ TEST_F(ScriptingPermissionsModifierUnitTest,
 
   scoped_refptr<const Extension> extension =
       ExtensionBuilder("test")
-          .AddPermissions({"https://example.com/*", "https://chromium.org/*"})
+          .AddPermissions({"https://example.com/*", "https://monyhar.org/*"})
           .Build();
   ScriptingPermissionsModifier modifier(profile(), extension.get());
 
@@ -635,11 +635,11 @@ TEST_F(ScriptingPermissionsModifierUnitTest,
   EXPECT_THAT(GetEffectivePatternsAsStrings(*extension), testing::IsEmpty());
 
   modifier.GrantHostPermission(GURL("https://example.com"));
-  modifier.GrantHostPermission(GURL("https://chromium.org"));
+  modifier.GrantHostPermission(GURL("https://monyhar.org"));
 
   EXPECT_THAT(GetEffectivePatternsAsStrings(*extension),
               testing::UnorderedElementsAre("https://example.com/*",
-                                            "https://chromium.org/*"));
+                                            "https://monyhar.org/*"));
 
   modifier.RemoveAllGrantedHostPermissions();
   EXPECT_THAT(GetEffectivePatternsAsStrings(*extension), testing::IsEmpty());
@@ -689,7 +689,7 @@ TEST_F(ScriptingPermissionsModifierUnitTest, HasBroadGrantedHostPermissions) {
     bool expected_broad_permissions;
   } test_cases[] = {{{}, false},
                     {{"https://www.google.com/*"}, false},
-                    {{"https://www.google.com/*", "*://chromium.org/*"}, false},
+                    {{"https://www.google.com/*", "*://monyhar.org/*"}, false},
                     {{"*://*.google.*/*"}, false},
                     {{"<all_urls>"}, true},
                     {{"https://*/*"}, true},

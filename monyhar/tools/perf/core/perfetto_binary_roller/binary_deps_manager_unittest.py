@@ -42,12 +42,12 @@ class BinaryDepsManagerTests(unittest.TestCase):
 
     insert_patch.assert_has_calls([
         mock.call(
-            'chromium-telemetry',
+            'monyhar-telemetry',
             'perfetto_binaries/dep/testos/abc123/bin',
             '/path/to/bin',
             publicly_readable=True),
         mock.call(
-            'chromium-telemetry',
+            'monyhar-telemetry',
             'perfetto_binaries/dep/testos/latest',
             mock.ANY,
             publicly_readable=True),
@@ -62,7 +62,7 @@ class BinaryDepsManagerTests(unittest.TestCase):
           binary_deps_manager.UploadHostBinary('dep', '/path/to/bin', 'abc123')
 
     insert_patch.assert_called_once_with(
-        'chromium-telemetry',
+        'monyhar-telemetry',
         'perfetto_binaries/dep/testos/latest',
         mock.ANY,
         publicly_readable=True,
@@ -112,7 +112,7 @@ class BinaryDepsManagerTests(unittest.TestCase):
               local_path = binary_deps_manager.FetchHostBinary('dep')
 
     self.assertEqual(os.path.basename(local_path), 'bin')
-    get_patch.assert_called_once_with('chromium-telemetry', remote_path,
+    get_patch.assert_called_once_with('monyhar-telemetry', remote_path,
                                       local_path)
 
   def testFetchHostBinaryWrongHash(self):

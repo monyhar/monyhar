@@ -631,9 +631,9 @@ base::FilePath PreinstalledWebAppManager::GetConfigDir() {
       dir = *g_config_dir_for_testing;
     } else {
       // For manual testing, you can change s/STANDALONE/USER/, as writing to
-      // "$HOME/.config/chromium/test-user/.config/chromium/External
+      // "$HOME/.config/monyhar/test-user/.config/monyhar/External
       // Extensions/web_apps" does not require root ACLs, unlike
-      // "/usr/share/chromium/extensions/web_apps".
+      // "/usr/share/monyhar/extensions/web_apps".
       if (!base::PathService::Get(chrome::DIR_STANDALONE_EXTERNAL_EXTENSIONS,
                                   &dir)) {
         LOG(ERROR) << "base::PathService::Get failed";

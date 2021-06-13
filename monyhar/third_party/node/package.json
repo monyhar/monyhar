@@ -1,7 +1,7 @@
 {
   "name": "webui-node-modules",
   "version": "1.0.0",
-  "author": "dpapad@chromium.org",
+  "author": "dpapad@monyhar.org",
   "dependencies": {
     "babel-eslint": "10.0.2",
     "crisper": "2.1.1",

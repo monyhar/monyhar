@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.supplier;
+package org.monyhar.base.supplier;
 
 /**
  * Based on Java 8's java.util.function.BooleanSupplier. Same as Supplier<T>, but with a primitive

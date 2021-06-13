@@ -1,7 +1,7 @@
 # Buildbot Testing Configuration Files
 
 The files in this directory control how tests are run on the
-[Chromium buildbots](https://www.chromium.org/developers/testing/chromium-build-infrastructure/tour-of-the-chromium-buildbot).
+[Chromium buildbots](https://www.monyhar.org/developers/testing/monyhar-build-infrastructure/tour-of-the-monyhar-buildbot).
 In addition to specifying what tests run on which builders, they also specify
 special arguments and constraints for the tests.
 
@@ -39,27 +39,27 @@ to GN labels. Allows for certain overrides to get certain tests targets to work
 with GN (and properly run when isolated).
 * [trybot_analyze_config.json](./trybot_analyze_config.json) -- used to provide
 exclusions to
-[the analyze step](https://www.chromium.org/developers/testing/commit-queue/chromium_trybot-json)
+[the analyze step](https://www.monyhar.org/developers/testing/commit-queue/monyhar_trybot-json)
 on trybots.
 * [filters/](./filters/) -- filters out tests that shouldn't be
 run in a particular mode.
 * [timeouts.py](./timeouts.py) -- calculates acceptable timeouts for tests by
 analyzing their execution on
-[swarming](https://chromium.googlesource.com/infra/luci/luci-py/+/HEAD/appengine/swarming).
+[swarming](https://monyhar.googlesource.com/infra/luci/luci-py/+/HEAD/appengine/swarming).
 * [manage.py](./manage.py) -- makes sure the buildbot configuration json is in
 a standardized format.
 
 ## How the files are consumed
 ### Buildbot configuration json
 Logic in the
-[Chromium recipe](https://chromium.googlesource.com/chromium/tools/build/+/HEAD/recipes/recipes/chromium.py)
+[Chromium recipe](https://monyhar.googlesource.com/monyhar/tools/build/+/HEAD/recipes/recipes/monyhar.py)
 looks up each builder for each master and test generators in
-[chromium_tests/steps.py](https://chromium.googlesource.com/chromium/tools/build/+/HEAD/recipes/recipe_modules/chromium_tests/steps.py)
+[monyhar_tests/steps.py](https://monyhar.googlesource.com/monyhar/tools/build/+/HEAD/recipes/recipe_modules/monyhar_tests/steps.py)
 parse the data. For example, as of
-[a6e11220](https://chromium.googlesource.com/chromium/tools/build/+/a6e11220d97d578d6ba091abd68beba28a004722)
-[generate_gtest](https://chromium.googlesource.com/chromium/tools/build/+/a6e11220d97d578d6ba091abd68beba28a004722/scripts/slave/recipe_modules/chromium_tests/steps.py#416)
+[a6e11220](https://monyhar.googlesource.com/monyhar/tools/build/+/a6e11220d97d578d6ba091abd68beba28a004722)
+[generate_gtest](https://monyhar.googlesource.com/monyhar/tools/build/+/a6e11220d97d578d6ba091abd68beba28a004722/scripts/slave/recipe_modules/monyhar_tests/steps.py#416)
 parses any entry in a builder's
-['gtest_tests'](https://chromium.googlesource.com/chromium/src/+/5750756522296b2a9a08009d8d2cc90db3b88f56/testing/buildbot/chromium.android.json#1243)
+['gtest_tests'](https://monyhar.googlesource.com/monyhar/src/+/5750756522296b2a9a08009d8d2cc90db3b88f56/testing/buildbot/monyhar.android.json#1243)
 entry.
 
 ## Making changes
@@ -70,13 +70,13 @@ manages most of the waterfalls. It's no longer possible to hand-edit the JSON
 files; presubmit checks forbid doing so.
 
 Note that trybots mirror regular waterfall bots, with the mapping defined in
-[trybots.py](https://chromium.googlesource.com/chromium/tools/build/+/HEAD/recipes/recipe_modules/chromium_tests/trybots.py).
+[trybots.py](https://monyhar.googlesource.com/monyhar/tools/build/+/HEAD/recipes/recipe_modules/monyhar_tests/trybots.py).
 This means that, as of
-[81fcc4bc](https://chromium.googlesource.com/chromium/src/+/81fcc4bc6123ace8dd37db74fd2592e3e15ea46a/testing/buildbot/),
+[81fcc4bc](https://monyhar.googlesource.com/monyhar/src/+/81fcc4bc6123ace8dd37db74fd2592e3e15ea46a/testing/buildbot/),
 if you want to edit
-[linux_android_rel_ng](https://chromium.googlesource.com/chromium/tools/build/+/59a2653d5f143213f4f166714657808b0c646bd7/scripts/slave/recipe_modules/chromium_tests/trybots.py#142),
+[linux_android_rel_ng](https://monyhar.googlesource.com/monyhar/tools/build/+/59a2653d5f143213f4f166714657808b0c646bd7/scripts/slave/recipe_modules/monyhar_tests/trybots.py#142),
 you actually need to edit
-[Android Tests](https://chromium.googlesource.com/chromium/src/+/81fcc4bc6123ace8dd37db74fd2592e3e15ea46a/testing/buildbot/chromium.linux.json#23).
+[Android Tests](https://monyhar.googlesource.com/monyhar/src/+/81fcc4bc6123ace8dd37db74fd2592e3e15ea46a/testing/buildbot/monyhar.linux.json#23).
 
 ### Trying the changes on trybots
 You should be able to try build changes that affect the trybots directly (for
@@ -87,7 +87,7 @@ your tryjob). Non-trybot changes have to be landed manually :(.
 When adding tests or bumping timeouts, care must be taken to ensure the
 infrastructure has capacity to handle the extra load.  This is especially true
 for the established
-[Chromium CQ builders](https://chromium.googlesource.com/chromium/src/+/HEAD/infra/config/generated/cq-builders.md),
+[Chromium CQ builders](https://monyhar.googlesource.com/monyhar/src/+/HEAD/infra/config/generated/cq-builders.md),
 as they operate under strict execution requirements. Make sure to get a resource
 owner or a member of Chrome Browser Core EngProd to sign off that there is both
 builder and swarmed test shard capacity available.
@@ -113,12 +113,12 @@ organization helps enforce sharing of test suites among multiple bots.
 
 An example of a simple test suite:
 
-    'basic_chromium_gtests': {
+    'basic_monyhar_gtests': {
       'base_unittests': {},
     }
 
 If a bot in [waterfalls.pyl](./waterfalls.pyl) refers to the test suite
-`basic_chromium_gtests`, then that bot will run `base_unittests`.
+`basic_monyhar_gtests`, then that bot will run `base_unittests`.
 
 The test's name is usually both the build target as well as how the test appears
 in the steps that the bot runs. However, this can be overridden using dictionary
@@ -331,7 +331,7 @@ reduces redundancy compared to maintaining the JSON files by hand.
 
 A waterfall is a dictionary containing the following:
 
-* `name`: the waterfall's name, for example `'chromium.win'`.
+* `name`: the waterfall's name, for example `'monyhar.win'`.
 * `machines`: a dictionary mapping machine names to dictionaries containing bot
   descriptions.
 
@@ -403,7 +403,7 @@ The exceptions file supports the following options per test:
 * `remove_from`: a list of bot names on which this test should not run.
   Currently, bots on different waterfalls that have the same name can be
   disambiguated by appending the waterfall's name: for example, `Nougat Phone
-  Tester chromium.android`.
+  Tester monyhar.android`.
 
 * `modifications`: a dictionary mapping a bot's name to a dictionary of
   modifications that should be merged into the test's specification on that
@@ -488,4 +488,4 @@ the data files. Some examples might include:
 `dpranke`, `jbudorick` or `kbr` will be glad to review any improvements you make
 to the tools. Thanks in advance for contributing!
 
-[task deduplication]: https://chromium.googlesource.com/infra/luci/luci-py/+/HEAD/appengine/swarming/doc/Detailed-Design.md#task-deduplication
+[task deduplication]: https://monyhar.googlesource.com/infra/luci/luci-py/+/HEAD/appengine/swarming/doc/Detailed-Design.md#task-deduplication

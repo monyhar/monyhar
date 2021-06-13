@@ -40,7 +40,7 @@ cat <<HTMLBEGIN
 </head>
 <body>
 <h3>
-image source: <a href="https://cs.chromium.org?q=${source}">${source}</a>
+image source: <a href="https://cs.monyhar.org?q=${source}">${source}</a>
 </h3>
 HTMLBEGIN
 

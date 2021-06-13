@@ -6,7 +6,7 @@ import json
 
 from blinkpy.common.host_mock import MockHost
 from blinkpy.common.system.log_testing import LoggingTestCase
-from blinkpy.w3c.chromium_commit_mock import MockChromiumCommit
+from blinkpy.w3c.monyhar_commit_mock import MockChromiumCommit
 from blinkpy.w3c.gerrit import GerritError
 from blinkpy.w3c.gerrit_mock import MockGerritAPI, MockGerritCL
 from blinkpy.w3c.test_exporter import TestExporter
@@ -49,11 +49,11 @@ class TestExporterTest(LoggingTestCase):
                         }
                     },
                     'owner': {
-                        'email': 'test@chromium.org'
+                        'email': 'test@monyhar.org'
                     },
                 },
                 api=test_exporter.gerrit,
-                chromium_commit=MockChromiumCommit(
+                monyhar_commit=MockChromiumCommit(
                     self.host,
                     subject='subject',
                     body='fake body',
@@ -71,8 +71,8 @@ class TestExporterTest(LoggingTestCase):
         self.assertTrue(success)
         self.assertEqual(test_exporter.wpt_github.calls, [
             'pr_with_change_id',
-            'pr_for_chromium_commit',
-            'pr_for_chromium_commit',
+            'pr_for_monyhar_commit',
+            'pr_for_monyhar_commit',
         ])
         self.assertEqual(len(test_exporter.gerrit.request_posted), 0)
 
@@ -97,22 +97,22 @@ class TestExporterTest(LoggingTestCase):
             test_exporter.wpt_github.calls,
             [
                 # 1
-                'pr_for_chromium_commit',
+                'pr_for_monyhar_commit',
                 'create_pr',
-                'add_label "chromium-export"',
+                'add_label "monyhar-export"',
                 # 2
-                'pr_for_chromium_commit',
+                'pr_for_monyhar_commit',
                 'create_pr',
-                'add_label "chromium-export"',
+                'add_label "monyhar-export"',
                 # 3
-                'pr_for_chromium_commit',
+                'pr_for_monyhar_commit',
                 'create_pr',
-                'add_label "chromium-export"',
+                'add_label "monyhar-export"',
             ])
         self.assertEqual(test_exporter.wpt_github.pull_requests_created, [
-            ('chromium-export-7db6c89e05', 'subject 1',
+            ('monyhar-export-7db6c89e05', 'subject 1',
              'body 1\n\nChange-Id: I001\n'),
-            ('chromium-export-f8c201ca95', 'subject 3',
+            ('monyhar-export-f8c201ca95', 'subject 3',
              'body 3\n\nChange-Id: I003\n'),
         ])
 
@@ -179,30 +179,30 @@ class TestExporterTest(LoggingTestCase):
             test_exporter.wpt_github.calls,
             [
                 # 1. #458475
-                'pr_for_chromium_commit',
+                'pr_for_monyhar_commit',
                 'get_pr_branch',
                 'update_pr',
                 'remove_label "do not merge yet"',
                 # 2. #458476
-                'pr_for_chromium_commit',
+                'pr_for_monyhar_commit',
                 'create_pr',
-                'add_label "chromium-export"',
+                'add_label "monyhar-export"',
                 # 3. #458477
-                'pr_for_chromium_commit',
+                'pr_for_monyhar_commit',
                 # 4. #458478
-                'pr_for_chromium_commit',
+                'pr_for_monyhar_commit',
                 # Testing the lack of remove_label here. The exporter should not
                 # try to remove the provisional label from PRs it has already
                 # removed it from.
                 'get_pr_branch',
                 'merge_pr',
                 # 5. #458479
-                'pr_for_chromium_commit',
+                'pr_for_monyhar_commit',
                 'get_pr_branch',
                 'merge_pr',
             ])
         self.assertEqual(test_exporter.wpt_github.pull_requests_created, [
-            ('chromium-export-981776f989', 'Fake subject',
+            ('monyhar-export-981776f989', 'Fake subject',
              'Fake body\n\nChange-Id: I0476\n'),
         ])
         self.assertEqual(test_exporter.wpt_github.pull_requests_merged, [3456])
@@ -226,11 +226,11 @@ class TestExporterTest(LoggingTestCase):
                         }
                     },
                     'owner': {
-                        'email': 'test@chromium.org'
+                        'email': 'test@monyhar.org'
                     },
                 },
                 api=test_exporter.gerrit,
-                chromium_commit=MockChromiumCommit(
+                monyhar_commit=MockChromiumCommit(
                     self.host,
                     subject='subject',
                     body='fake body <html>',
@@ -248,11 +248,11 @@ class TestExporterTest(LoggingTestCase):
                         }
                     },
                     'owner': {
-                        'email': 'test@chromium.org'
+                        'email': 'test@monyhar.org'
                     },
                 },
                 api=test_exporter.gerrit,
-                chromium_commit=MockChromiumCommit(
+                monyhar_commit=MockChromiumCommit(
                     self.host, subject='subject', body='body',
                     change_id=None)),
         ]
@@ -261,21 +261,21 @@ class TestExporterTest(LoggingTestCase):
         self.assertEqual(test_exporter.wpt_github.calls, [
             'pr_with_change_id',
             'create_pr',
-            'add_label "chromium-export"',
+            'add_label "monyhar-export"',
             'add_label "do not merge yet"',
             'pr_with_change_id',
             'create_pr',
-            'add_label "chromium-export"',
+            'add_label "monyhar-export"',
             'add_label "do not merge yet"',
         ])
         self.assertEqual(test_exporter.wpt_github.pull_requests_created, [
-            ('chromium-export-cl-1234', 'subject',
+            ('monyhar-export-cl-1234', 'subject',
              'fake body \\<html>\n\nChange-Id: I001\nReviewed-on: '
-             'https://chromium-review.googlesource.com/1234\n'
+             'https://monyhar-review.googlesource.com/1234\n'
              'WPT-Export-Revision: 1'),
-            ('chromium-export-cl-1235', 'subject',
+            ('monyhar-export-cl-1235', 'subject',
              'body\nChange-Id: I002\nReviewed-on: '
-             'https://chromium-review.googlesource.com/1235\n'
+             'https://monyhar-review.googlesource.com/1235\n'
              'WPT-Export-Revision: 1'),
         ])
         self.assertEqual(test_exporter.wpt_github.pull_requests_merged, [])
@@ -306,11 +306,11 @@ class TestExporterTest(LoggingTestCase):
                         }
                     },
                     'owner': {
-                        'email': 'test@chromium.org'
+                        'email': 'test@monyhar.org'
                     },
                 },
                 api=test_exporter.gerrit,
-                chromium_commit=MockChromiumCommit(self.host))
+                monyhar_commit=MockChromiumCommit(self.host))
         ]
         success = test_exporter.main(
             ['--credentials-json', '/tmp/credentials.json'])
@@ -353,11 +353,11 @@ class TestExporterTest(LoggingTestCase):
                         },
                     },
                     'owner': {
-                        'email': 'test@chromium.org'
+                        'email': 'test@monyhar.org'
                     },
                 },
                 api=test_exporter.gerrit,
-                chromium_commit=MockChromiumCommit(self.host))
+                monyhar_commit=MockChromiumCommit(self.host))
         ]
         test_exporter.main(['--credentials-json', '/tmp/credentials.json'])
 
@@ -387,7 +387,7 @@ class TestExporterTest(LoggingTestCase):
 
         self.assertTrue(success)
         self.assertEqual(test_exporter.wpt_github.calls, [
-            'pr_for_chromium_commit',
+            'pr_for_monyhar_commit',
             'get_pr_branch',
             'update_pr',
             'remove_label "do not merge yet"',
@@ -413,7 +413,7 @@ class TestExporterTest(LoggingTestCase):
 
         self.assertTrue(success)
         self.assertEqual(test_exporter.wpt_github.calls, [
-            'pr_for_chromium_commit',
+            'pr_for_monyhar_commit',
             'get_pr_branch',
             'merge_pr',
         ])
@@ -444,11 +444,11 @@ class TestExporterTest(LoggingTestCase):
                         },
                     },
                     'owner': {
-                        'email': 'test@chromium.org'
+                        'email': 'test@monyhar.org'
                     },
                 },
                 api=test_exporter.gerrit,
-                chromium_commit=MockChromiumCommit(self.host))
+                monyhar_commit=MockChromiumCommit(self.host))
         ]
         success = test_exporter.main(
             ['--credentials-json', '/tmp/credentials.json'])

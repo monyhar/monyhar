@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.input;
+package org.monyhar.content.browser.input;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -20,23 +20,23 @@ import android.view.inputmethod.InputConnection;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.CriteriaNotSatisfiedException;
-import org.chromium.content.browser.ViewEventSinkImpl;
-import org.chromium.content.browser.selection.SelectionPopupControllerImpl;
-import org.chromium.content.browser.webcontents.WebContentsImpl;
-import org.chromium.content_public.browser.ImeAdapter;
-import org.chromium.content_public.browser.test.RenderFrameHostTestExt;
-import org.chromium.content_public.browser.test.util.DOMUtils;
-import org.chromium.content_public.browser.test.util.JavaScriptUtils;
-import org.chromium.content_public.browser.test.util.TestCallbackHelperContainer;
-import org.chromium.content_public.browser.test.util.TestInputMethodManagerWrapper;
-import org.chromium.content_public.browser.test.util.TestInputMethodManagerWrapper.InputConnectionProvider;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.content_shell_apk.ContentShellActivityTestRule;
-import org.chromium.ui.base.ime.TextInputType;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.CriteriaNotSatisfiedException;
+import org.monyhar.content.browser.ViewEventSinkImpl;
+import org.monyhar.content.browser.selection.SelectionPopupControllerImpl;
+import org.monyhar.content.browser.webcontents.WebContentsImpl;
+import org.monyhar.content_public.browser.ImeAdapter;
+import org.monyhar.content_public.browser.test.RenderFrameHostTestExt;
+import org.monyhar.content_public.browser.test.util.DOMUtils;
+import org.monyhar.content_public.browser.test.util.JavaScriptUtils;
+import org.monyhar.content_public.browser.test.util.TestCallbackHelperContainer;
+import org.monyhar.content_public.browser.test.util.TestInputMethodManagerWrapper;
+import org.monyhar.content_public.browser.test.util.TestInputMethodManagerWrapper.InputConnectionProvider;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.content_shell_apk.ContentShellActivityTestRule;
+import org.monyhar.ui.base.ime.TextInputType;
 
 import java.util.ArrayList;
 import java.util.Arrays;

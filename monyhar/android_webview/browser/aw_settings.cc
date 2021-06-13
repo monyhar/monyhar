@@ -381,7 +381,7 @@ void AwSettings::PopulateWebPreferencesLocked(JNIEnv* env,
 
   // Blink's LoadsImagesAutomatically and ImagesEnabled must be
   // set cris-cross to Android's. See
-  // https://code.google.com/p/chromium/issues/detail?id=224317#c26
+  // https://code.google.com/p/monyhar/issues/detail?id=224317#c26
   web_prefs->loads_images_automatically =
       Java_AwSettings_getImagesEnabledLocked(env, obj);
   web_prefs->images_enabled =

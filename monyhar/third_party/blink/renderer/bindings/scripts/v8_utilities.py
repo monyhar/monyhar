@@ -27,7 +27,7 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 """Functions shared by various parts of the code generator.
 
-Design doc: http://www.chromium.org/developers/design-documents/idl-compiler
+Design doc: http://www.monyhar.org/developers/design-documents/idl-compiler
 """
 
 import os

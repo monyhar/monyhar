@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.base;
+package org.monyhar.chrome.browser.base;
 
-import static org.chromium.chrome.browser.base.SplitCompatUtils.CHROME_SPLIT_NAME;
+import static org.monyhar.chrome.browser.base.SplitCompatUtils.CHROME_SPLIT_NAME;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -15,12 +15,12 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.SystemClock;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.BundleUtils;
-import org.chromium.base.JNIUtils;
-import org.chromium.base.TraceEvent;
-import org.chromium.base.metrics.RecordHistogram;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.BundleUtils;
+import org.monyhar.base.JNIUtils;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.base.metrics.RecordHistogram;
 
 /**
  * Application class to use for Chrome when //chrome code is in an isolated split. This class will
@@ -40,7 +40,7 @@ public class SplitChromeApplication extends SplitCompatApplication {
 
     public SplitChromeApplication() {
         this(SplitCompatUtils.getIdentifierName(
-                "org.chromium.chrome.browser.ChromeApplicationImpl"));
+                "org.monyhar.chrome.browser.ChromeApplicationImpl"));
     }
 
     public SplitChromeApplication(String chromeApplicationClassName) {
@@ -113,7 +113,7 @@ public class SplitChromeApplication extends SplitCompatApplication {
                         // startup in the background.
                         chromeContext.getClassLoader()
                                 .loadClass(
-                                        "org.chromium.chrome.browser.ChromeTabbedActivity$Preload")
+                                        "org.monyhar.chrome.browser.ChromeTabbedActivity$Preload")
                                 .newInstance();
                     } catch (ReflectiveOperationException e) {
                         throw new RuntimeException(e);

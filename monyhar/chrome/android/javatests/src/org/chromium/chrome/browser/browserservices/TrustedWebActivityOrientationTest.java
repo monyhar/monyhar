@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices;
+package org.monyhar.chrome.browser.browserservices;
 
 import static org.junit.Assert.assertTrue;
 
-import static org.chromium.chrome.browser.browserservices.TrustedWebActivityTestUtil.createSession;
-import static org.chromium.chrome.browser.browserservices.TrustedWebActivityTestUtil.createTrustedWebActivityIntent;
-import static org.chromium.chrome.browser.browserservices.TrustedWebActivityTestUtil.isTrustedWebActivity;
-import static org.chromium.chrome.browser.browserservices.TrustedWebActivityTestUtil.spoofVerification;
+import static org.monyhar.chrome.browser.browserservices.TrustedWebActivityTestUtil.createSession;
+import static org.monyhar.chrome.browser.browserservices.TrustedWebActivityTestUtil.createTrustedWebActivityIntent;
+import static org.monyhar.chrome.browser.browserservices.TrustedWebActivityTestUtil.isTrustedWebActivity;
+import static org.monyhar.chrome.browser.browserservices.TrustedWebActivityTestUtil.spoofVerification;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -26,28 +26,28 @@ import org.junit.Test;
 import org.junit.rules.RuleChain;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.browser.customtabs.CustomTabActivityTestRule;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabTestUtils;
-import org.chromium.chrome.browser.tab.TabWebContentsDelegateAndroid;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.util.FullscreenTestUtils;
-import org.chromium.content_public.browser.test.util.JavaScriptUtils;
-import org.chromium.content_public.common.ContentSwitches;
-import org.chromium.net.test.EmbeddedTestServerRule;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivityTestRule;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabTestUtils;
+import org.monyhar.chrome.browser.tab.TabWebContentsDelegateAndroid;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.util.FullscreenTestUtils;
+import org.monyhar.content_public.browser.test.util.JavaScriptUtils;
+import org.monyhar.content_public.common.ContentSwitches;
+import org.monyhar.net.test.EmbeddedTestServerRule;
 
 import java.util.concurrent.TimeoutException;
 
 /**
  * Instrumentation tests for launching
- * {@link org.chromium.chrome.browser.customtabs.CustomTabActivity} in Trusted Web Activity Mode
+ * {@link org.monyhar.chrome.browser.customtabs.CustomTabActivity} in Trusted Web Activity Mode
  * with default orientation set.
  */
 @RunWith(ChromeJUnit4ClassRunner.class)

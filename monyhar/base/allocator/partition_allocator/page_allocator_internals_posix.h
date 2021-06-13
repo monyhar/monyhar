@@ -74,7 +74,7 @@ const char* PageTagToName(PageTag tag) {
     case PageTag::kPartitionAlloc:
       return "partition_alloc";
     case PageTag::kChromium:
-      return "chromium";
+      return "monyhar";
     case PageTag::kV8:
       return "v8";
     default:

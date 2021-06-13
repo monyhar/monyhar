@@ -9,8 +9,8 @@ create {
   }
 
   build {
-    tool: "chromium/tools/flex"
+    tool: "monyhar/tools/flex"
   }
 }
 
-upload { pkg_prefix: "chromium/third_party" }
+upload { pkg_prefix: "monyhar/third_party" }

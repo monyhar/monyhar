@@ -26,9 +26,9 @@ def GetBuild(project, bucket, builder, build_number):
   """Get the status of a build by its build number.
 
   Args:
-    project: The LUCI project name (e.g. 'chromium').
+    project: The LUCI project name (e.g. 'monyhar').
     bucket: The LUCI bucket name (e.g. 'ci' or 'try').
-    builder: The builder name (e.g. 'linux_chromium_rel_ng').
+    builder: The builder name (e.g. 'linux_monyhar_rel_ng').
     build_number: An int with the build number to get.
   """
   return Request('GetBuild', data={
@@ -45,9 +45,9 @@ def GetBuilds(project, bucket, builder, only_completed=True):
   """Get a list of recent builds from a given builder.
 
   Args:
-    project: The LUCI project name (e.g. 'chromium').
+    project: The LUCI project name (e.g. 'monyhar').
     bucket: The LUCI bucket name (e.g. 'ci' or 'try').
-    builder: The builder name (e.g. 'linux_chromium_rel_ng').
+    builder: The builder name (e.g. 'linux_monyhar_rel_ng').
     only_completed: An optional bool to indicate whehter builds that have
       not yet finished should be included in the results. The default is to
       include only completed builds.

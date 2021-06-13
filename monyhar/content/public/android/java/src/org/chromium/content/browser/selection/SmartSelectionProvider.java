@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.selection;
+package org.monyhar.content.browser.selection;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -18,13 +18,13 @@ import android.view.textclassifier.TextSelection;
 import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Log;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.content.browser.WindowEventObserver;
-import org.chromium.content.browser.WindowEventObserverManager;
-import org.chromium.content_public.browser.SelectionClient;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.Log;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.content.browser.WindowEventObserver;
+import org.monyhar.content.browser.WindowEventObserverManager;
+import org.monyhar.content_public.browser.SelectionClient;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.WindowAndroid;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

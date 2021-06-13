@@ -34,7 +34,7 @@ class ExternalVkImageDawnRepresentation : public SharedImageRepresentationDawn {
 
   WGPUTexture texture_ = nullptr;
 
-  // TODO(cwallez@chromium.org): Load procs only once when the factory is
+  // TODO(cwallez@monyhar.org): Load procs only once when the factory is
   // created and pass a pointer to them around?
   const DawnProcTable dawn_procs_;
 

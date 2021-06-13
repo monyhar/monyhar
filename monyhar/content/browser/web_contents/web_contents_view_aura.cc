@@ -224,7 +224,7 @@ void PrepareDragForDownload(const DropData& drop_data,
 // Returns the ClipboardFormatType to store file system files.
 const ui::ClipboardFormatType& GetFileSystemFileFormatType() {
   static base::NoDestructor<ui::ClipboardFormatType> format(
-      ui::ClipboardFormatType::GetType("chromium/x-file-system-files"));
+      ui::ClipboardFormatType::GetType("monyhar/x-file-system-files"));
   return *format;
 }
 

@@ -1045,7 +1045,7 @@ IN_PROC_BROWSER_TEST_F(AppLaunchHandlerArcAppBrowserTest, RestoreArcApp) {
   // Create the window for app1. The task id needs to match the |window_app_id|
   // arg of CreateExoWindow.
   int32_t kTaskId1 = 100;
-  views::Widget* widget = CreateExoWindow("org.chromium.arc.100");
+  views::Widget* widget = CreateExoWindow("org.monyhar.arc.100");
   aura::Window* window = widget->GetNativeWindow();
 
   VerifyObserver(window, /*launch_count=*/0, /*init_count=*/0);
@@ -1078,7 +1078,7 @@ IN_PROC_BROWSER_TEST_F(AppLaunchHandlerArcAppBrowserTest, RestoreArcApp) {
   // Create the window to simulate the restoration for the app. The task id
   // needs to match the |window_app_id| arg of CreateExoWindow.
   int32_t kTaskId2 = 200;
-  widget = CreateExoWindow("org.chromium.arc.200");
+  widget = CreateExoWindow("org.monyhar.arc.200");
   window = widget->GetNativeWindow();
 
   // The task is not ready, so the window is currently in a hidden container.
@@ -1135,7 +1135,7 @@ IN_PROC_BROWSER_TEST_F(AppLaunchHandlerArcAppBrowserTest,
   // Create the window for app1. The task id needs to match the |window_app_id|
   // arg of CreateExoWindow.
   int32_t kTaskId1 = 100;
-  views::Widget* widget = CreateExoWindow("org.chromium.arc.100");
+  views::Widget* widget = CreateExoWindow("org.monyhar.arc.100");
   aura::Window* window = widget->GetNativeWindow();
 
   VerifyObserver(window, /*launch_count=*/0, /*init_count=*/0);
@@ -1164,7 +1164,7 @@ IN_PROC_BROWSER_TEST_F(AppLaunchHandlerArcAppBrowserTest,
   // Create the window with the ghost window session to simulate the ghost
   // window restoration for the app.
   widget = CreateExoWindow(
-      base::StringPrintf("org.chromium.arc.session.%d", session_id2), app_id);
+      base::StringPrintf("org.monyhar.arc.session.%d", session_id2), app_id);
   window = widget->GetNativeWindow();
 
   SaveAppLaunchInfo(app_id, session_id2);
@@ -1209,7 +1209,7 @@ IN_PROC_BROWSER_TEST_F(AppLaunchHandlerArcAppBrowserTest, SaveArcGhostWindow) {
   // Create the window for app1. The task id needs to match the |window_app_id|
   // arg of CreateExoWindow.
   int32_t kTaskId1 = 100;
-  views::Widget* widget = CreateExoWindow("org.chromium.arc.100");
+  views::Widget* widget = CreateExoWindow("org.monyhar.arc.100");
   aura::Window* window = widget->GetNativeWindow();
 
   VerifyObserver(window, /*launch_count=*/0, /*init_count=*/0);
@@ -1239,7 +1239,7 @@ IN_PROC_BROWSER_TEST_F(AppLaunchHandlerArcAppBrowserTest, SaveArcGhostWindow) {
   // Create the window with the ghost window session to simulate the ghost
   // window restoration for the app.
   widget = CreateExoWindow(
-      base::StringPrintf("org.chromium.arc.session.%d", session_id2), app_id);
+      base::StringPrintf("org.monyhar.arc.session.%d", session_id2), app_id);
   window = widget->GetNativeWindow();
 
   SaveAppLaunchInfo(app_id, session_id2);
@@ -1264,7 +1264,7 @@ IN_PROC_BROWSER_TEST_F(AppLaunchHandlerArcAppBrowserTest, SaveArcGhostWindow) {
   // Create the window with the ghost window session to simulate the ghost
   // window restoration for the app.
   widget = CreateExoWindow(
-      base::StringPrintf("org.chromium.arc.session.%d", session_id3), app_id);
+      base::StringPrintf("org.monyhar.arc.session.%d", session_id3), app_id);
   window = widget->GetNativeWindow();
 
   SaveAppLaunchInfo(app_id, session_id3);
@@ -1314,14 +1314,14 @@ IN_PROC_BROWSER_TEST_F(AppLaunchHandlerArcAppBrowserTest,
   CreateTask(app_id1, kTaskId1, session_id1);
 
   // Create the window for the app1 and store its bounds.
-  views::Widget* widget1 = CreateExoWindow("org.chromium.arc.100");
+  views::Widget* widget1 = CreateExoWindow("org.monyhar.arc.100");
   aura::Window* window1 = widget1->GetNativeWindow();
   gfx::Rect pre_restore_bounds_1 = window1->GetBoundsInScreen();
 
   // Create the window for the app2 and store its bounds. The task id needs to
   // match the |window_app_id| arg of CreateExoWindow.
   int32_t kTaskId2 = 101;
-  views::Widget* widget2 = CreateExoWindow("org.chromium.arc.101");
+  views::Widget* widget2 = CreateExoWindow("org.monyhar.arc.101");
   aura::Window* window2 = widget2->GetNativeWindow();
   gfx::Rect pre_restore_bounds_2 = window2->GetBoundsInScreen();
 
@@ -1361,7 +1361,7 @@ IN_PROC_BROWSER_TEST_F(AppLaunchHandlerArcAppBrowserTest,
   // Create the window to simulate the restoration for the app1. The task id
   // needs to match the |window_app_id| arg of CreateExoWindow.
   int32_t kTaskId3 = 201;
-  widget1 = CreateExoWindow("org.chromium.arc.201");
+  widget1 = CreateExoWindow("org.monyhar.arc.201");
   window1 = widget1->GetNativeWindow();
 
   VerifyWindowProperty(window1, kTaskId3,
@@ -1376,7 +1376,7 @@ IN_PROC_BROWSER_TEST_F(AppLaunchHandlerArcAppBrowserTest,
   CreateTask(app_id2, kTaskId4, session_id4);
 
   // Create the window to simulate the restoration for the app2.
-  widget2 = CreateExoWindow("org.chromium.arc.202");
+  widget2 = CreateExoWindow("org.monyhar.arc.202");
   window2 = widget2->GetNativeWindow();
   EXPECT_EQ(pre_restore_bounds_2, window2->GetBoundsInScreen());
 
@@ -1407,12 +1407,12 @@ IN_PROC_BROWSER_TEST_F(AppLaunchHandlerArcAppBrowserTest,
   constexpr int32_t kPreRestoreTaskId = 100;
   const int32_t kPreRestoreSessionId =
       ::full_restore::FullRestoreSaveHandler::GetInstance()->GetArcSessionId();
-  constexpr char kPreRestoreWindowAppId[] = "org.chromium.arc.100";
+  constexpr char kPreRestoreWindowAppId[] = "org.monyhar.arc.100";
 
   constexpr int32_t kRestoreTaskId = 200;
   constexpr int32_t kRestoreSessionId =
       ::full_restore::kArcSessionIdOffsetForRestoredLaunching + 1;
-  constexpr char kRestoreWindowAppId[] = "org.chromium.arc.200";
+  constexpr char kRestoreWindowAppId[] = "org.monyhar.arc.200";
 
   // Create four desks in total.
   ash::AutotestDesksApi().CreateNewDesk();
@@ -1522,7 +1522,7 @@ IN_PROC_BROWSER_TEST_F(AppLaunchHandlerArcAppBrowserTest,
   int32_t kTaskId = 100;
   uint32_t kPrimaryColor = 0xFFFFFFFF;
   uint32_t kStatusBarColor = 0xFF000000;
-  views::Widget* widget = CreateExoWindow("org.chromium.arc.100");
+  views::Widget* widget = CreateExoWindow("org.monyhar.arc.100");
   aura::Window* window = widget->GetNativeWindow();
 
   VerifyObserver(window, /*launch_count=*/0, /*init_count=*/0);

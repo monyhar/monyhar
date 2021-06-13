@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps;
+package org.monyhar.chrome.browser.webapps;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -23,21 +23,21 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.Restriction;
-import org.chromium.chrome.browser.ShortcutHelper;
-import org.chromium.chrome.browser.browserservices.intents.BitmapHelper;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabTestUtils;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.ui.test.util.UiRestriction;
-import org.chromium.webapk.lib.common.splash.R;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.Restriction;
+import org.monyhar.chrome.browser.ShortcutHelper;
+import org.monyhar.chrome.browser.browserservices.intents.BitmapHelper;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabTestUtils;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.ui.test.util.UiRestriction;
+import org.monyhar.webapk.lib.common.splash.R;
 
 /**
  * Tests for splash screens.

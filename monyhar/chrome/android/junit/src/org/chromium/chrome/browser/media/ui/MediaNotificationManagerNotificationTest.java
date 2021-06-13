@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.media.ui;
+package org.monyhar.chrome.browser.media.ui;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -25,12 +25,12 @@ import org.robolectric.Shadows;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowNotification;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.R;
-import org.chromium.components.browser_ui.media.MediaNotificationController;
-import org.chromium.components.browser_ui.media.MediaNotificationInfo;
-import org.chromium.services.media_session.MediaMetadata;
-import org.chromium.services.media_session.MediaPosition;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.R;
+import org.monyhar.components.browser_ui.media.MediaNotificationController;
+import org.monyhar.components.browser_ui.media.MediaNotificationInfo;
+import org.monyhar.services.media_session.MediaMetadata;
+import org.monyhar.services.media_session.MediaPosition;
 
 /**
  * JUnit tests for checking MediaNotificationManager presents correct notification to Android

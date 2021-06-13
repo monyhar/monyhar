@@ -13,10 +13,10 @@ android_library("java") {
     "//chrome/android:chrome_test_java",
   ]
   sources = [
-    "java/src/org/chromium/chrome/browser/privacy/secure_dns/SecureDnsBridge.java",
-    "java/src/org/chromium/chrome/browser/privacy/secure_dns/SecureDnsProviderPreference.java",
-    "java/src/org/chromium/chrome/browser/privacy/secure_dns/SecureDnsSettings.java",
-    "settings/java/src/org/chromium/chrome/browser/privacy/settings/PrivacyPreferencesManager.java",
+    "java/src/org/monyhar/chrome/browser/privacy/secure_dns/SecureDnsBridge.java",
+    "java/src/org/monyhar/chrome/browser/privacy/secure_dns/SecureDnsProviderPreference.java",
+    "java/src/org/monyhar/chrome/browser/privacy/secure_dns/SecureDnsSettings.java",
+    "settings/java/src/org/monyhar/chrome/browser/privacy/settings/PrivacyPreferencesManager.java",
   ]
   deps = [
     ":java_resources",
@@ -41,7 +41,7 @@ android_library("java") {
     "//net/dns/public:secure_dns_mode_generated_enum",
   ]
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
-  resources_package = "org.chromium.chrome.browser.privacy.secure_dns"
+  resources_package = "org.monyhar.chrome.browser.privacy.secure_dns"
 }
 
 android_resources("java_resources") {
@@ -65,5 +65,5 @@ generate_jni("jni_headers") {
     "//chrome/android:jni_headers",
     "//chrome/browser",
   ]
-  sources = [ "java/src/org/chromium/chrome/browser/privacy/secure_dns/SecureDnsBridge.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/privacy/secure_dns/SecureDnsBridge.java" ]
 }

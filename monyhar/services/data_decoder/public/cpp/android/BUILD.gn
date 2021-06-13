@@ -5,7 +5,7 @@
 import("//build/config/android/rules.gni")
 
 _jni_sources =
-    [ "java/src/org/chromium/services/data_decoder/JsonSanitizer.java" ]
+    [ "java/src/org/monyhar/services/data_decoder/JsonSanitizer.java" ]
 
 generate_jni("safe_json_jni_headers") {
   sources = _jni_sources

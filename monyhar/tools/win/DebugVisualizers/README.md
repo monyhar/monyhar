@@ -17,7 +17,7 @@ following steps will help to avoid the full build, and to benefit from Visual
 Studio's dynamic reloading feature.
 
 1. Comment out the `.natvis` you want to edit in `BUILD.gn`. You can find them
-by [Chromium Code Search](https://source.chromium.org/search?q=.natvis%20file:BUILD.gn&ss=chromium).
+by [Chromium Code Search](https://source.monyhar.org/search?q=.natvis%20file:BUILD.gn&ss=monyhar).
 2. Create a directory "`Visual Studio 2019\Visualizers`" in your Documents
 folder if it does not exist.
 3. Copy the `.natvis` files you want to edit to the directory.

@@ -11,7 +11,7 @@ import sys
 
 usage = """%s BUILDTYPE BUILDDIR
 
-BUILDTYPE: either chromium or chrome.
+BUILDTYPE: either monyhar or chrome.
 BUILDDIR: The path to the output directory. e.g. relpath/to/out/Release
 
 Prints out (to stdout) the sorted list of resource ids that are marked as
@@ -46,7 +46,7 @@ def Main():
   build_type = sys.argv[1]
   build_dir = sys.argv[2]
 
-  if build_type not in ('chromium', 'chrome'):
+  if build_type not in ('monyhar', 'chrome'):
     sys.stderr.write(usage % sys.argv[0])
     return 1
 
@@ -55,7 +55,7 @@ def Main():
     sys.stderr.write('Cannot find gen dir %s' % generated_output_dir)
     return 1
 
-  product = 'chromium' if build_type == 'chromium' else 'google_chrome'
+  product = 'monyhar' if build_type == 'monyhar' else 'google_chrome'
   suffix = product + '_strings.h'
   excluded_headers = set([s % suffix for s in ('%s', 'components_%s')])
 

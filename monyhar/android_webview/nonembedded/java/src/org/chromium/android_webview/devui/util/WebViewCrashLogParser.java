@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.devui.util;
+package org.monyhar.android_webview.devui.util;
 
 import androidx.annotation.VisibleForTesting;
 
 import org.json.JSONException;
 
-import org.chromium.android_webview.common.crash.CrashInfo;
-import org.chromium.base.Log;
+import org.monyhar.android_webview.common.crash.CrashInfo;
+import org.monyhar.base.Log;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -24,7 +24,7 @@ import java.util.concurrent.TimeUnit;
 public class WebViewCrashLogParser extends CrashInfoLoader {
     private static final String TAG = "WebViewCrashUI";
 
-    // 30 days to match org.chromium.components.minidump_uploader.CrashFileManager minidump reports
+    // 30 days to match org.monyhar.components.minidump_uploader.CrashFileManager minidump reports
     // max age.
     private static final long MAX_CRASH_REPORT_AGE_MILLIS = TimeUnit.DAYS.toMillis(30);
 

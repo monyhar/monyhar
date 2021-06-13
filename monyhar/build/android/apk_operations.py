@@ -26,7 +26,7 @@ import textwrap
 import zipfile
 
 import adb_command_line
-import devil_chromium
+import devil_monyhar
 from devil import devil_env
 from devil.android import apk_helper
 from devil.android import device_errors
@@ -377,9 +377,9 @@ def _DuHelper(device, path_spec, run_as=None):
     A dict of path->size in KiB containing all paths in |path_spec| that exist
     on device. Paths that do not exist are silently ignored.
   """
-  # Example output for: du -s -k /data/data/org.chromium.chrome/{*,.*}
-  # 144     /data/data/org.chromium.chrome/cache
-  # 8       /data/data/org.chromium.chrome/files
+  # Example output for: du -s -k /data/data/org.monyhar.chrome/{*,.*}
+  # 144     /data/data/org.monyhar.chrome/cache
+  # 8       /data/data/org.monyhar.chrome/files
   # <snip>
   # du: .*: No such file or directory
 
@@ -415,47 +415,47 @@ def _RunDiskUsage(devices, package_name):
   #
   # For KitKat and below:
   #   dumpsys package contains:
-  #     dataDir=/data/data/org.chromium.chrome
-  #     codePath=/data/app/org.chromium.chrome-1.apk
-  #     resourcePath=/data/app/org.chromium.chrome-1.apk
-  #     nativeLibraryPath=/data/app-lib/org.chromium.chrome-1
+  #     dataDir=/data/data/org.monyhar.chrome
+  #     codePath=/data/app/org.monyhar.chrome-1.apk
+  #     resourcePath=/data/app/org.monyhar.chrome-1.apk
+  #     nativeLibraryPath=/data/app-lib/org.monyhar.chrome-1
   #   To measure odex:
-  #     ls -l /data/dalvik-cache/data@app@org.chromium.chrome-1.apk@classes.dex
+  #     ls -l /data/dalvik-cache/data@app@org.monyhar.chrome-1.apk@classes.dex
   #
   # For Android L and M (and maybe for N+ system apps):
   #   dumpsys package contains:
-  #     codePath=/data/app/org.chromium.chrome-1
-  #     resourcePath=/data/app/org.chromium.chrome-1
-  #     legacyNativeLibraryDir=/data/app/org.chromium.chrome-1/lib
+  #     codePath=/data/app/org.monyhar.chrome-1
+  #     resourcePath=/data/app/org.monyhar.chrome-1
+  #     legacyNativeLibraryDir=/data/app/org.monyhar.chrome-1/lib
   #   To measure odex:
   #     # Option 1:
-  #  /data/dalvik-cache/arm/data@app@org.chromium.chrome-1@base.apk@classes.dex
-  #  /data/dalvik-cache/arm/data@app@org.chromium.chrome-1@base.apk@classes.vdex
-  #     ls -l /data/dalvik-cache/profiles/org.chromium.chrome
+  #  /data/dalvik-cache/arm/data@app@org.monyhar.chrome-1@base.apk@classes.dex
+  #  /data/dalvik-cache/arm/data@app@org.monyhar.chrome-1@base.apk@classes.vdex
+  #     ls -l /data/dalvik-cache/profiles/org.monyhar.chrome
   #         (these profiles all appear to be 0 bytes)
   #     # Option 2:
-  #     ls -l /data/app/org.chromium.chrome-1/oat/arm/base.odex
+  #     ls -l /data/app/org.monyhar.chrome-1/oat/arm/base.odex
   #
   # For Android N+:
   #   dumpsys package contains:
-  #     dataDir=/data/user/0/org.chromium.chrome
-  #     codePath=/data/app/org.chromium.chrome-UuCZ71IE-i5sZgHAkU49_w==
-  #     resourcePath=/data/app/org.chromium.chrome-UuCZ71IE-i5sZgHAkU49_w==
-  #     legacyNativeLibraryDir=/data/app/org.chromium.chrome-GUID/lib
+  #     dataDir=/data/user/0/org.monyhar.chrome
+  #     codePath=/data/app/org.monyhar.chrome-UuCZ71IE-i5sZgHAkU49_w==
+  #     resourcePath=/data/app/org.monyhar.chrome-UuCZ71IE-i5sZgHAkU49_w==
+  #     legacyNativeLibraryDir=/data/app/org.monyhar.chrome-GUID/lib
   #     Instruction Set: arm
-  #       path: /data/app/org.chromium.chrome-UuCZ71IE-i5sZgHAkU49_w==/base.apk
+  #       path: /data/app/org.monyhar.chrome-UuCZ71IE-i5sZgHAkU49_w==/base.apk
   #       status: /data/.../oat/arm/base.odex[status=kOatUpToDate, compilation_f
   #       ilter=quicken]
   #     Instruction Set: arm64
-  #       path: /data/app/org.chromium.chrome-UuCZ71IE-i5sZgHAkU49_w==/base.apk
+  #       path: /data/app/org.monyhar.chrome-UuCZ71IE-i5sZgHAkU49_w==/base.apk
   #       status: /data/.../oat/arm64/base.odex[status=..., compilation_filter=q
   #       uicken]
   #   To measure odex:
   #     ls -l /data/app/.../oat/arm/base.odex
   #     ls -l /data/app/.../oat/arm/base.vdex (optional)
   #   To measure the correct odex size:
-  #     cmd package compile -m speed org.chromium.chrome  # For webview
-  #     cmd package compile -m speed-profile org.chromium.chrome  # For others
+  #     cmd package compile -m speed org.monyhar.chrome  # For webview
+  #     cmd package compile -m speed-profile org.monyhar.chrome  # For others
   def disk_usage_helper(d):
     package_output = '\n'.join(d.RunShellCommand(
         ['dumpsys', 'package', package_name], check_return=True))
@@ -1893,7 +1893,7 @@ def Run(output_directory, apk_path, additional_apk_paths, incremental_json,
         command_line_flags_file, target_cpu, proguard_mapping_path):
   """Entry point for generated wrapper scripts."""
   constants.SetOutputDirectory(output_directory)
-  devil_chromium.Initialize(output_directory=output_directory)
+  devil_monyhar.Initialize(output_directory=output_directory)
   parser = argparse.ArgumentParser()
   exists_or_none = lambda p: p if p and os.path.exists(p) else None
 
@@ -1937,7 +1937,7 @@ def RunForBundle(output_directory, bundle_path, bundle_apks_path,
       given by the '-m' switch.
   """
   constants.SetOutputDirectory(output_directory)
-  devil_chromium.Initialize(output_directory=output_directory)
+  devil_monyhar.Initialize(output_directory=output_directory)
   bundle_generation_info = BundleGenerationInfo(
       bundle_path=bundle_path,
       bundle_apks_path=bundle_apks_path,
@@ -1962,7 +1962,7 @@ def RunForBundle(output_directory, bundle_path, bundle_apks_path,
 
 
 def main():
-  devil_chromium.Initialize()
+  devil_monyhar.Initialize()
   _RunInternal(argparse.ArgumentParser())
 
 

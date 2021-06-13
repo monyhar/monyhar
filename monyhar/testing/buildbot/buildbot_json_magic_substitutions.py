@@ -34,7 +34,7 @@ def ChromeOSTelemetryRemote(test_config):
 
   TEST_POOLS = [
       'chrome.tests',
-      'chromium.tests',
+      'monyhar.tests',
   ]
   dimensions = test_config.get('swarming', {}).get('dimension_sets', [])
   assert len(dimensions)

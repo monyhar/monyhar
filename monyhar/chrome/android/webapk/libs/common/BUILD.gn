@@ -6,21 +6,21 @@ import("//build/config/android/rules.gni")
 
 android_library("common_java") {
   sources = [
-    "src/org/chromium/webapk/lib/common/WebApkCommonUtils.java",
-    "src/org/chromium/webapk/lib/common/WebApkConstants.java",
-    "src/org/chromium/webapk/lib/common/WebApkMetaDataUtils.java",
+    "src/org/monyhar/webapk/lib/common/WebApkCommonUtils.java",
+    "src/org/monyhar/webapk/lib/common/WebApkConstants.java",
+    "src/org/monyhar/webapk/lib/common/WebApkMetaDataUtils.java",
   ]
   deps = [ "//components/webapk/android/libs/common:java" ]
   srcjar_deps = [ "//chrome/android/webapk/libs/common:identity_service_aidl" ]
 }
 
 android_library("splash_java") {
-  sources = [ "src/org/chromium/webapk/lib/common/splash/SplashLayout.java" ]
+  sources = [ "src/org/monyhar/webapk/lib/common/splash/SplashLayout.java" ]
   deps = [
     ":splash_resources",
     "//third_party/androidx:androidx_annotation_annotation_java",
   ]
-  resources_package = "org.chromium.webapk.lib.common.splash"
+  resources_package = "org.monyhar.webapk.lib.common.splash"
 }
 
 android_resources("splash_resources") {
@@ -35,10 +35,10 @@ android_resources("splash_resources") {
 }
 
 android_aidl("identity_service_aidl") {
-  import_include = [ "src/org/chromium/webapk/lib/common/identity_service" ]
+  import_include = [ "src/org/monyhar/webapk/lib/common/identity_service" ]
   interface_file =
-      "src/org/chromium/webapk/lib/common/identity_service/common.aidl"
+      "src/org/monyhar/webapk/lib/common/identity_service/common.aidl"
   sources = [
-    "src/org/chromium/webapk/lib/common/identity_service/IIdentityService.aidl",
+    "src/org/monyhar/webapk/lib/common/identity_service/IIdentityService.aidl",
   ]
 }

@@ -21,7 +21,7 @@ CWV_EXPORT
 
 - (instancetype)init NS_UNAVAILABLE;
 
-// The user's email address. e.g. john.doe@chromium.org.
+// The user's email address. e.g. john.doe@monyhar.org.
 @property(nonatomic, copy, readonly, nullable) NSString* email;
 
 // The user's full name. e.g. John Doe.

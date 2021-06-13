@@ -2,22 +2,22 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.scene_layer;
+package org.monyhar.chrome.browser.compositor.scene_layer;
 
 import android.content.Context;
 import android.os.Build;
 
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.compositor.LayerTitleCache;
-import org.chromium.chrome.browser.compositor.layouts.components.CompositorButton;
-import org.chromium.chrome.browser.compositor.overlays.strip.StripLayoutHelperManager;
-import org.chromium.chrome.browser.compositor.overlays.strip.StripLayoutTab;
-import org.chromium.chrome.browser.layouts.scene_layer.SceneLayer;
-import org.chromium.chrome.browser.layouts.scene_layer.SceneOverlayLayer;
-import org.chromium.ui.base.LocalizationUtils;
-import org.chromium.ui.resources.ResourceManager;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.compositor.LayerTitleCache;
+import org.monyhar.chrome.browser.compositor.layouts.components.CompositorButton;
+import org.monyhar.chrome.browser.compositor.overlays.strip.StripLayoutHelperManager;
+import org.monyhar.chrome.browser.compositor.overlays.strip.StripLayoutTab;
+import org.monyhar.chrome.browser.layouts.scene_layer.SceneLayer;
+import org.monyhar.chrome.browser.layouts.scene_layer.SceneOverlayLayer;
+import org.monyhar.ui.base.LocalizationUtils;
+import org.monyhar.ui.resources.ResourceManager;
 
 /**
  * The Java component of what is basically a CC Layer that manages drawing the Tab Strip (which is

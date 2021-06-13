@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices;
+package org.monyhar.chrome.browser.browserservices;
 
-import static org.chromium.chrome.browser.browserservices.TrustedWebActivityUmaRecorder.DelegatedNotificationSmallIconFallback.FALLBACK_ICON_NOT_PROVIDED;
-import static org.chromium.chrome.browser.browserservices.TrustedWebActivityUmaRecorder.DelegatedNotificationSmallIconFallback.NO_FALLBACK;
-import static org.chromium.chrome.browser.browserservices.permissiondelegation.InstalledWebappGeolocationBridge.EXTRA_NEW_LOCATION_ERROR_CALLBACK;
+import static org.monyhar.chrome.browser.browserservices.TrustedWebActivityUmaRecorder.DelegatedNotificationSmallIconFallback.FALLBACK_ICON_NOT_PROVIDED;
+import static org.monyhar.chrome.browser.browserservices.TrustedWebActivityUmaRecorder.DelegatedNotificationSmallIconFallback.NO_FALLBACK;
+import static org.monyhar.chrome.browser.browserservices.permissiondelegation.InstalledWebappGeolocationBridge.EXTRA_NEW_LOCATION_ERROR_CALLBACK;
 
 import android.app.Notification;
 import android.content.ComponentName;
@@ -31,21 +31,21 @@ import androidx.browser.trusted.TrustedWebActivityServiceConnectionPool;
 
 import com.google.common.util.concurrent.ListenableFuture;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ChromeApplicationImpl;
-import org.chromium.chrome.browser.browserservices.TrustedWebActivityUmaRecorder.DelegatedNotificationSmallIconFallback;
-import org.chromium.chrome.browser.browserservices.permissiondelegation.TrustedWebActivityPermissionManager;
-import org.chromium.chrome.browser.notifications.NotificationBuilderBase;
-import org.chromium.chrome.browser.notifications.NotificationUmaTracker;
-import org.chromium.components.browser_ui.notifications.NotificationMetadata;
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.components.embedder_support.util.Origin;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ChromeApplicationImpl;
+import org.monyhar.chrome.browser.browserservices.TrustedWebActivityUmaRecorder.DelegatedNotificationSmallIconFallback;
+import org.monyhar.chrome.browser.browserservices.permissiondelegation.TrustedWebActivityPermissionManager;
+import org.monyhar.chrome.browser.notifications.NotificationBuilderBase;
+import org.monyhar.chrome.browser.notifications.NotificationUmaTracker;
+import org.monyhar.components.browser_ui.notifications.NotificationMetadata;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.components.embedder_support.util.Origin;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 import java.util.List;
 import java.util.Set;

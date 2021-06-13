@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.qrcode.share_tab;
+package org.monyhar.chrome.browser.share.qrcode.share_tab;
 
 import android.content.Context;
 import android.view.View;
 
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.browser.share.qrcode.QrCodeDialogTab;
-import org.chromium.ui.base.AndroidPermissionDelegate;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.browser.share.qrcode.QrCodeDialogTab;
+import org.monyhar.ui.base.AndroidPermissionDelegate;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
 
 /**
  * Creates and represents the QrCode share panel UI.

@@ -16,7 +16,7 @@ enum CustomTabsVisibilityHistogram {
   kMaxValue = VISIBLE_CHROME_TAB,
 };
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.flags
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.flags
 enum class ActivityType {
   kTabbed,
   kCustomTab,

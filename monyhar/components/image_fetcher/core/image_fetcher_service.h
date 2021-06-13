@@ -26,7 +26,7 @@ class ImageDecoder;
 // configure the correct one. New values should be added at the end and things
 // should not be renumbered.
 // GENERATED_JAVA_ENUM_PACKAGE: (
-// org.chromium.chrome.browser.image_fetcher)
+// org.monyhar.chrome.browser.image_fetcher)
 enum class ImageFetcherConfig {
   kNetworkOnly = 0,
   kDiskCacheOnly = 1,

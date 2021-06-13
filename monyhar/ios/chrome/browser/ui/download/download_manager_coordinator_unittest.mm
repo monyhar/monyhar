@@ -52,7 +52,7 @@ using base::test::ios::kWaitForUIElementTimeout;
 namespace {
 
 // Constants for configuring a fake download task.
-const char kTestUrl[] = "https://chromium.test/download.txt";
+const char kTestUrl[] = "https://monyhar.test/download.txt";
 const char kTestMimeType[] = "text/html";
 const int64_t kTestTotalBytes = 10;
 const int64_t kTestReceivedBytes = 0;

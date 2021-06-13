@@ -316,7 +316,7 @@ class ProfileImpl : public Profile {
   // Profile use our new BrowserContextKeyedServiceFactory system instead.
   // You can find the design document here:
   //
-  //   https://sites.google.com/a/chromium.org/dev/developers/design-documents/profile-architecture
+  //   https://sites.google.com/a/monyhar.org/dev/developers/design-documents/profile-architecture
   //
   // and you can read the raw headers here:
   //

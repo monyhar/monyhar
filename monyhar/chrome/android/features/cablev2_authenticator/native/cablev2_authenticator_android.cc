@@ -194,7 +194,7 @@ class AndroidBLEAdvert
       : env_(env), advert_(std::move(advert)) {
     DCHECK(env_->IsInstanceOf(
         advert_.obj(),
-        org_chromium_chrome_browser_webauth_authenticator_BLEAdvert_clazz(
+        org_monyhar_chrome_browser_webauth_authenticator_BLEAdvert_clazz(
             env)));
   }
 
@@ -225,7 +225,7 @@ class AndroidPlatform : public device::cablev2::authenticator::Platform {
       : env_(env), cable_authenticator_(cable_authenticator), is_usb_(is_usb) {
     DCHECK(env_->IsInstanceOf(
         cable_authenticator_.obj(),
-        org_chromium_chrome_browser_webauth_authenticator_CableAuthenticator_clazz(
+        org_monyhar_chrome_browser_webauth_authenticator_CableAuthenticator_clazz(
             env)));
   }
 
@@ -385,7 +385,7 @@ class USBTransport : public device::cablev2::authenticator::Transport {
       : env_(env), usb_device_(std::move(usb_device)) {
     DCHECK(env_->IsInstanceOf(
         usb_device_.obj(),
-        org_chromium_chrome_browser_webauth_authenticator_USBHandler_clazz(
+        org_monyhar_chrome_browser_webauth_authenticator_USBHandler_clazz(
             env)));
   }
 

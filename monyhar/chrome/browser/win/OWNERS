@@ -1,8 +1,8 @@
 # Reviewers:
-gab@chromium.org
-grt@chromium.org
-pmonette@chromium.org
+gab@monyhar.org
+grt@monyhar.org
+pmonette@monyhar.org
 
 # per-file rules:
 per-file chrome_elf_init*=file://chrome/chrome_elf/OWNERS
-per-file enumerate_modules_model*=finnur@chromium.org
+per-file enumerate_modules_model*=finnur@monyhar.org

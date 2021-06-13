@@ -92,7 +92,7 @@ void MachMultiprocess::PreFork() {
   // Set up the parent port and register it with the bootstrap server before
   // forking, so that it’s guaranteed to be there when the child attempts to
   // look it up.
-  info_->service_name = "org.chromium.crashpad.test.mach_multiprocess.";
+  info_->service_name = "org.monyhar.crashpad.test.mach_multiprocess.";
   info_->service_name.append(RandomString());
 
   info_->local_port = BootstrapCheckIn(info_->service_name);

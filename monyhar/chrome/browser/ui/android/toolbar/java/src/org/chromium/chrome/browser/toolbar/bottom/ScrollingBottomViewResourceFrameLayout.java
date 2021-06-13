@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar.bottom;
+package org.monyhar.chrome.browser.toolbar.bottom;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -10,9 +10,9 @@ import android.graphics.PorterDuff;
 import android.graphics.Rect;
 import android.util.AttributeSet;
 
-import org.chromium.chrome.browser.toolbar.R;
-import org.chromium.components.browser_ui.widget.ViewResourceFrameLayout;
-import org.chromium.ui.resources.dynamics.ViewResourceAdapter;
+import org.monyhar.chrome.browser.toolbar.R;
+import org.monyhar.components.browser_ui.widget.ViewResourceFrameLayout;
+import org.monyhar.ui.resources.dynamics.ViewResourceAdapter;
 
 /**
  * A {@link ViewResourceFrameLayout} that specifically handles redraw of the top shadow of the view

@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.promo;
+package org.monyhar.components.browser_ui.widget.promo;
 
 import android.content.res.ColorStateList;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 
-import org.chromium.base.Callback;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel.ReadableBooleanPropertyKey;
-import org.chromium.ui.modelutil.PropertyModel.ReadableObjectPropertyKey;
-import org.chromium.ui.modelutil.PropertyModel.WritableBooleanPropertyKey;
-import org.chromium.ui.modelutil.PropertyModel.WritableObjectPropertyKey;
+import org.monyhar.base.Callback;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel.ReadableBooleanPropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel.ReadableObjectPropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel.WritableBooleanPropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel.WritableObjectPropertyKey;
 
 /**
  * Properties for PromoCardView.
@@ -61,7 +61,7 @@ public class PromoCardProperties {
      * #IS_IMPRESSION_ON_PRIMARY_BUTTON} to change the impression object from the entire promo card
      * to the primary button.
      *
-     * @see org.chromium.components.browser_ui.widget.impression.ImpressionTracker
+     * @see org.monyhar.components.browser_ui.widget.impression.ImpressionTracker
      */
     public static final ReadableObjectPropertyKey<Runnable> IMPRESSION_SEEN_CALLBACK =
             new ReadableObjectPropertyKey<>();

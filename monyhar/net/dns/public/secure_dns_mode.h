@@ -7,7 +7,7 @@
 
 namespace net {
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.net
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.net
 // The SecureDnsMode specifies what types of lookups (secure/insecure) should
 // be performed and in what order when resolving a specific query. The int
 // values should not be changed as they are logged.

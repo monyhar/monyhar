@@ -213,7 +213,7 @@ bool PEImageReader::DebugDirectoryInformation(UUID* uuid,
       // This occurs for non-PDB based debug information. We simply ignore these
       // as we don't expect to encounter modules that will be in this format
       // for which we'll actually have symbols. See
-      // https://crashpad.chromium.org/bug/47.
+      // https://crashpad.monyhar.org/bug/47.
     }
   }
 

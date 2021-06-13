@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.text;
+package org.monyhar.components.browser_ui.widget.text;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -16,7 +16,7 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatTextView;
 
-import org.chromium.components.browser_ui.widget.R;
+import org.monyhar.components.browser_ui.widget.R;
 
 /**
  * A {@link TextView} with support for explicitly sizing and tinting compound drawables.

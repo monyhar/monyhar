@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.preferences;
+package org.monyhar.chrome.browser.preferences;
 
 /**
  * A dummy key checker that never throws exceptions. Used in production builds.

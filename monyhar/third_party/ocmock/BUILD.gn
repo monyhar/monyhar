@@ -99,9 +99,9 @@ source_set("ocmock") {
 
   deps = [ "//testing/gtest" ]
   public_configs = [ ":ocmock_config" ]
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
     ":ocmock_warnings",
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
   ]
 }

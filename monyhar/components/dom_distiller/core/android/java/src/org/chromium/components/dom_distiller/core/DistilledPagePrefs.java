@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.dom_distiller.core;
+package org.monyhar.components.dom_distiller.core;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.dom_distiller.mojom.FontFamily;
-import org.chromium.dom_distiller.mojom.Theme;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.dom_distiller.mojom.FontFamily;
+import org.monyhar.dom_distiller.mojom.Theme;
 
 import java.util.HashMap;
 import java.util.Map;

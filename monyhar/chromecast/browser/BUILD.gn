@@ -688,10 +688,10 @@ cast_source_set("unittests") {
 if (is_android) {
   generate_jni("jni_headers") {
     sources = [
-      "android/apk/src/org/chromium/chromecast/shell/CastContentWindowAndroid.java",
-      "android/apk/src/org/chromium/chromecast/shell/CastCrashHandler.java",
-      "android/apk/src/org/chromium/chromecast/shell/CastMetricsHelper.java",
-      "android/apk/src/org/chromium/chromecast/shell/CastSysInfoAndroid.java",
+      "android/apk/src/org/monyhar/chromecast/shell/CastContentWindowAndroid.java",
+      "android/apk/src/org/monyhar/chromecast/shell/CastCrashHandler.java",
+      "android/apk/src/org/monyhar/chromecast/shell/CastMetricsHelper.java",
+      "android/apk/src/org/monyhar/chromecast/shell/CastSysInfoAndroid.java",
     ]
   }
 

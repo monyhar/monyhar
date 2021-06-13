@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.module_installer.engine;
+package org.monyhar.components.module_installer.engine;
 
 import android.app.Activity;
 
@@ -11,10 +11,10 @@ import com.google.android.play.core.splitinstall.SplitInstallManager;
 import com.google.android.play.core.splitinstall.SplitInstallManagerFactory;
 import com.google.android.play.core.splitinstall.SplitInstallRequest;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.components.module_installer.logger.Logger;
-import org.chromium.components.module_installer.logger.PlayCoreLogger;
-import org.chromium.components.module_installer.util.ModuleUtil;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.components.module_installer.logger.Logger;
+import org.monyhar.components.module_installer.logger.PlayCoreLogger;
+import org.monyhar.components.module_installer.util.ModuleUtil;
 
 /**
  * PlayCore SplitCompatEngine Context. Class used to segregate external dependencies that

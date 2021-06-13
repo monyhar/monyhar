@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private.interfaces;
+package org.monyhar.weblayer_private.interfaces;
 
-import org.chromium.weblayer_private.interfaces.IBrowser;
-import org.chromium.weblayer_private.interfaces.IRemoteFragment;
+import org.monyhar.weblayer_private.interfaces.IBrowser;
+import org.monyhar.weblayer_private.interfaces.IRemoteFragment;
 
 interface IBrowserFragment {
   IRemoteFragment asRemoteFragment() = 0;

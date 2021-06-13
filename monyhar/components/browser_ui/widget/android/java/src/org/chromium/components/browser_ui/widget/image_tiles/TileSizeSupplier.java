@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.image_tiles;
+package org.monyhar.components.browser_ui.widget.image_tiles;
 
 import android.content.Context;
 import android.content.res.Resources;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.components.browser_ui.widget.R;
-import org.chromium.components.browser_ui.widget.image_tiles.TileSizeSupplier.TileSize;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.components.browser_ui.widget.R;
+import org.monyhar.components.browser_ui.widget.image_tiles.TileSizeSupplier.TileSize;
 
 /**
  * A helper class to compute dimensions for the carousel layout.

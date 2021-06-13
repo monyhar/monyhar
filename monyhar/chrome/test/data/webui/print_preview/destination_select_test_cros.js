@@ -29,7 +29,7 @@ suite(printer_status_test_cros.suiteName, function() {
   /** @type {!PrintPreviewDestinationSelectCrosElement} */
   let destinationSelect;
 
-  const account = 'foo@chromium.org';
+  const account = 'foo@monyhar.org';
 
   /** @type {?NativeLayerCrosStub} */
   let nativeLayerCros = null;

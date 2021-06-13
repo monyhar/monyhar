@@ -121,7 +121,7 @@ fi
 echo "Building version $version_full $revision_text"
 
 # Create a fresh debian/changelog.
-export DEBEMAIL="The Chromium Authors <chromium-dev@chromium.org>"
+export DEBEMAIL="The Chromium Authors <monyhar-dev@monyhar.org>"
 rm -f debian/changelog
 debchange --create \
   --package "$PACKAGE" \

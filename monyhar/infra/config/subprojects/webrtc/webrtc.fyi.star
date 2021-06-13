@@ -13,7 +13,7 @@ luci.bucket(
         ),
         acl.entry(
             roles = acl.BUILDBUCKET_TRIGGERER,
-            groups = "project-chromium-ci-schedulers",
+            groups = "project-monyhar-ci-schedulers",
         ),
         acl.entry(
             roles = acl.BUILDBUCKET_OWNER,
@@ -33,15 +33,15 @@ luci.gitiles_poller(
 )
 
 defaults.bucket.set("webrtc.fyi")
-defaults.builder_group.set("chromium.webrtc.fyi")
+defaults.builder_group.set("monyhar.webrtc.fyi")
 defaults.builderless.set(None)
 defaults.build_numbers.set(True)
 defaults.cpu.set(cpu.X86_64)
-defaults.executable.set("recipe:chromium")
+defaults.executable.set("recipe:monyhar")
 defaults.execution_timeout.set(2 * time.hour)
 defaults.os.set(os.LINUX_XENIAL_OR_BIONIC_REMOVE)
-defaults.pool.set("luci.chromium.webrtc.fyi")
-defaults.service_account.set("chromium-ci-builder@chops-service-accounts.iam.gserviceaccount.com")
+defaults.pool.set("luci.monyhar.webrtc.fyi")
+defaults.service_account.set("monyhar-ci-builder@chops-service-accounts.iam.gserviceaccount.com")
 defaults.swarming_tags.set(["vpython:native-python-wrapper"])
 defaults.triggered_by.set(["webrtc-gitiles-trigger-master"])
 
@@ -141,7 +141,7 @@ builder(
 
 builder(
     name = "WebRTC Chromium FYI ios-device",
-    executable = "recipe:webrtc/chromium_ios",
+    executable = "recipe:webrtc/monyhar_ios",
     goma_backend = goma.backend.RBE_PROD,
     os = os.MAC_ANY,
     xcode = xcode.x12d4e,
@@ -149,7 +149,7 @@ builder(
 
 builder(
     name = "WebRTC Chromium FYI ios-simulator",
-    executable = "recipe:webrtc/chromium_ios",
+    executable = "recipe:webrtc/monyhar_ios",
     goma_backend = goma.backend.RBE_PROD,
     os = os.MAC_ANY,
     xcode = xcode.x12d4e,

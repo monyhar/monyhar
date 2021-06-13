@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.bookmarks;
+package org.monyhar.chrome.browser.bookmarks;
 
 import android.content.ComponentName;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
-import org.chromium.chrome.browser.ui.native_page.BasicNativePage;
-import org.chromium.chrome.browser.ui.native_page.NativePageHost;
-import org.chromium.components.embedder_support.util.UrlConstants;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.chrome.browser.ui.native_page.BasicNativePage;
+import org.monyhar.chrome.browser.ui.native_page.NativePageHost;
+import org.monyhar.components.embedder_support.util.UrlConstants;
 
 /**
  * A native page holding a {@link BookmarkManager} on _tablet_.

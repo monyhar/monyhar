@@ -12,7 +12,7 @@ category and look at the _size_ column. (Not _effective size_.)
 ![Look at the size column for total GPU memory][gpu-size-column]
 
 [memory-infra]:    README.md
-[gpu-size-column]: https://storage.googleapis.com/chromium-docs.appspot.com/c7d632c18d90d99e393ad0ade929f96e7d8243fe
+[gpu-size-column]: https://storage.googleapis.com/monyhar-docs.appspot.com/c7d632c18d90d99e393ad0ade929f96e7d8243fe
 
 ## In Depth
 
@@ -89,5 +89,5 @@ GPU category. This will show all GPU allocations, whether or not they are owned
 by another process.
 
 [cc-memory]:      /docs/memory-infra/probe-cc.md
-[owner-size]:     https://storage.googleapis.com/chromium-docs.appspot.com/a325c4426422e53394a322d31b652cfa34231189
-[non-owner-size]: https://storage.googleapis.com/chromium-docs.appspot.com/b8cf464636940d0925f29a102e99aabb9af40b13
+[owner-size]:     https://storage.googleapis.com/monyhar-docs.appspot.com/a325c4426422e53394a322d31b652cfa34231189
+[non-owner-size]: https://storage.googleapis.com/monyhar-docs.appspot.com/b8cf464636940d0925f29a102e99aabb9af40b13

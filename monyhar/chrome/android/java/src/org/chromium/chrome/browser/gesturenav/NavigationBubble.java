@@ -1,7 +1,7 @@
 // Copyright 2019 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.chrome.browser.gesturenav;
+package org.monyhar.chrome.browser.gesturenav;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -18,9 +18,9 @@ import android.widget.TextView;
 import androidx.annotation.DrawableRes;
 import androidx.annotation.IntDef;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.R;
-import org.chromium.ui.util.ColorUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.ui.util.ColorUtils;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

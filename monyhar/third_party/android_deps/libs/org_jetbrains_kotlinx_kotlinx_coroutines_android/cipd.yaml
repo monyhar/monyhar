@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@1.4.3.cr0
-package: chromium/third_party/android_deps/libs/org_jetbrains_kotlinx_kotlinx_coroutines_android
+package: monyhar/third_party/android_deps/libs/org_jetbrains_kotlinx_kotlinx_coroutines_android
 description: "kotlinx-coroutines-android"
 data:
 - file: kotlinx-coroutines-android-1.4.3.jar

@@ -75,7 +75,7 @@ def DoMain(argv):
 
       # Deleting .isolate files leads to gyp failures. They are usually
       # not used by a distro build anyway.
-      # See http://www.chromium.org/developers/testing/isolated-testing
+      # See http://www.monyhar.org/developers/testing/isolated-testing
       # for more info.
       if f.endswith('.isolate'):
         continue

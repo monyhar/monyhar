@@ -69,7 +69,7 @@ void WriteStateHeaderToPickle(bool off_the_record,
 // chromes.
 //
 // This uses the fields from SerializedNavigationEntry/TabNavigation from:
-// https://gerrit-int.chromium.org/gitweb?p=clank/internal/apps.git;
+// https://gerrit-int.monyhar.org/gitweb?p=clank/internal/apps.git;
 //              a=blob;f=native/framework/chrome/tab.cc;hb=refs/heads/m18
 //
 // 1. For each tab navigation:
@@ -153,7 +153,7 @@ void UpgradeNavigationFromV0ToV2(
 // won't consume bytes from a subsequent SerializedNavigationEntry.
 //
 // This uses the fields from SerializedNavigationEntry/TabNavigation prior to
-// https://chromiumcodereview.appspot.com/11876045 which are:
+// https://monyharcodereview.appspot.com/11876045 which are:
 //
 // index
 // virtual_url

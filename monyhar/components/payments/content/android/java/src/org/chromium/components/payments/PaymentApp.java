@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.payments;
+package org.monyhar.components.payments;
 
 import android.graphics.drawable.Drawable;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.task.PostTask;
-import org.chromium.components.autofill.EditableOption;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.payments.mojom.PaymentDetailsModifier;
-import org.chromium.payments.mojom.PaymentItem;
-import org.chromium.payments.mojom.PaymentMethodData;
-import org.chromium.payments.mojom.PaymentOptions;
-import org.chromium.payments.mojom.PaymentRequestDetailsUpdate;
-import org.chromium.payments.mojom.PaymentShippingOption;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.components.autofill.EditableOption;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.payments.mojom.PaymentDetailsModifier;
+import org.monyhar.payments.mojom.PaymentItem;
+import org.monyhar.payments.mojom.PaymentMethodData;
+import org.monyhar.payments.mojom.PaymentOptions;
+import org.monyhar.payments.mojom.PaymentRequestDetailsUpdate;
+import org.monyhar.payments.mojom.PaymentShippingOption;
 
 import java.util.List;
 import java.util.Map;

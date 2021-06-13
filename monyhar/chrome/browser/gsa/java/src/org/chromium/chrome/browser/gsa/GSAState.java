@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.gsa;
+package org.monyhar.chrome.browser.gsa;
 
 import android.annotation.SuppressLint;
 import android.content.ComponentName;
@@ -18,16 +18,16 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
-import org.chromium.base.ObserverList;
-import org.chromium.base.PackageManagerUtils;
-import org.chromium.base.PackageUtils;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.profiles.ProfileManager;
-import org.chromium.chrome.browser.signin.services.IdentityServicesProvider;
-import org.chromium.components.signin.base.CoreAccountInfo;
-import org.chromium.components.signin.identitymanager.ConsentLevel;
-import org.chromium.components.signin.identitymanager.IdentityManager;
+import org.monyhar.base.Log;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.PackageManagerUtils;
+import org.monyhar.base.PackageUtils;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.profiles.ProfileManager;
+import org.monyhar.chrome.browser.signin.services.IdentityServicesProvider;
+import org.monyhar.components.signin.base.CoreAccountInfo;
+import org.monyhar.components.signin.identitymanager.ConsentLevel;
+import org.monyhar.components.signin.identitymanager.IdentityManager;
 
 import java.util.List;
 import java.util.regex.Matcher;

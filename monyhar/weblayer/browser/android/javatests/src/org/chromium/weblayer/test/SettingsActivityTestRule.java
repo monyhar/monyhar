@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer.test;
+package org.monyhar.weblayer.test;
 
 import android.content.Context;
 import android.content.Intent;
 import android.support.test.InstrumentationRegistry;
 
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.weblayer.SettingsActivity;
-import org.chromium.weblayer.WebLayer;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.weblayer.SettingsActivity;
+import org.monyhar.weblayer.WebLayer;
 
 /**
  * ActivityTestRule for SettingsActivity.

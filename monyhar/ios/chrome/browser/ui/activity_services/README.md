@@ -31,4 +31,4 @@ a changelist similar to [this][3] for review.
 
 [1]: https://developer.apple.com/reference/uikit/uiactivity?language=objc
 [2]: ./activity_type_util.mm
-[3]: https://codereview.chromium.org/2820113002/
+[3]: https://codereview.monyhar.org/2820113002/

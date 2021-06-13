@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.language;
+package org.monyhar.chrome.browser.language;
 
 import android.content.Context;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
 
-import org.chromium.base.BundleUtils;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.base.BundleUtils;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
 
 /**
  * Provides utility functions to assist with overriding the application language.

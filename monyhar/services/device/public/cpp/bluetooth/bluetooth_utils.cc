@@ -141,7 +141,7 @@ std::u16string GetBluetoothDeviceLabelForAccessibility(
 
 const BluetoothUUID& GetSerialPortProfileUUID() {
   // The Serial Port Profile (SPP) UUID is 1101.
-  // https://chromium-review.googlesource.com/c/chromium/src/+/2334682/17..19
+  // https://monyhar-review.googlesource.com/c/monyhar/src/+/2334682/17..19
   static const BluetoothUUID kValue("1101");
   return kValue;
 }

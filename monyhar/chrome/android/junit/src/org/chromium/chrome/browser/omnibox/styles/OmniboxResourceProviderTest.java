@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.styles;
+package org.monyhar.chrome.browser.omnibox.styles;
 
 import android.app.Activity;
 import android.graphics.drawable.Drawable;
@@ -13,8 +13,8 @@ import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.annotation.Config;
 
-import org.chromium.chrome.R;
-import org.chromium.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.chrome.R;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
 
 /** Tests for {@link OmniboxResourceProvider}. */
 @RunWith(LocalRobolectricTestRunner.class)

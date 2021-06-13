@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.notifications;
+package org.monyhar.chrome.browser.notifications;
 
 import android.app.PendingIntent;
 import android.content.Context;
@@ -19,8 +19,8 @@ import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowLog;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.components.browser_ui.notifications.PendingIntentProvider;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.components.browser_ui.notifications.PendingIntentProvider;
 
 /**
  * Test pending intent generation.

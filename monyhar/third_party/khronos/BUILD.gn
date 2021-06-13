@@ -5,6 +5,6 @@
 config("khronos_headers") {
   include_dirs = [
     ".",
-    "//gpu",  # Contains GLES2/gl2chromium.h
+    "//gpu",  # Contains GLES2/gl2monyhar.h
   ]
 }

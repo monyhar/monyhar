@@ -21,7 +21,7 @@ from itertools import chain
 # Specifying the exact alignment sizes for each type is impossible because it's
 # platform specific, so we define an ordering instead.
 # The ordering comes from the data obtained in:
-# https://codereview.chromium.org/2841413002
+# https://codereview.monyhar.org/2841413002
 # FIXME: Put alignment sizes into code form, rather than linking to a CL
 # which may disappear.
 ALIGNMENT_ORDER = [

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browser_controls;
+package org.monyhar.chrome.browser.browser_controls;
 
 /**
  * Static utilities related to browser controls interfaces.

@@ -1,7 +1,7 @@
 monorail {
   component: "Blink>WebAuthentication"
 }
-team_email: "identity-dev@chromium.org"
+team_email: "identity-dev@monyhar.org"
 wpt {
   notify: YES
 }

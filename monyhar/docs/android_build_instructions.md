@@ -28,7 +28,7 @@ Building the Android client on Windows or Mac is not supported and doesn't work.
 Clone the `depot_tools` repository:
 
 ```shell
-git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+git clone https://monyhar.googlesource.com/monyhar/tools/depot_tools.git
 ```
 
 Add `depot_tools` to the end of your PATH (you will probably want to put this
@@ -41,12 +41,12 @@ export PATH="$PATH:/path/to/depot_tools"
 
 ## Get the code
 
-Create a `chromium` directory for the checkout and change to it (you can call
+Create a `monyhar` directory for the checkout and change to it (you can call
 this whatever you like and put it wherever you like, as
 long as the full path has no spaces):
 
 ```shell
-mkdir ~/chromium && cd ~/chromium
+mkdir ~/monyhar && cd ~/monyhar
 fetch --nohooks android
 ```
 
@@ -84,7 +84,7 @@ Then run `gclient sync` to pull the new Android dependencies:
 gclient sync
 ```
 
-(This is the only difference between `fetch android` and `fetch chromium`.)
+(This is the only difference between `fetch android` and `fetch monyhar`.)
 
 ### Install additional build dependencies
 
@@ -109,7 +109,7 @@ gclient runhooks
 ```
 
 *Optional*: You can also [install API
-keys](https://www.chromium.org/developers/how-tos/api-keys) if you want your
+keys](https://www.monyhar.org/developers/how-tos/api-keys) if you want your
 build to talk to some Google services, but this is not necessary for most
 development and testing purposes.
 
@@ -132,7 +132,7 @@ target_cpu = "arm64"  # See "Figuring out target_cpu" below
 * You can replace `Default` with another name, but
   it should be a subdirectory of `out`.
 * For other build arguments, including release settings, see [GN build
-  configuration](https://www.chromium.org/developers/gn-build-configuration).
+  configuration](https://www.monyhar.org/developers/gn-build-configuration).
   The default will be a debug component build.
 * For more info on GN, run `gn help` on the command line or read the
   [quick start guide](https://gn.googlesource.com/gn/+/master/docs/quick_start.md).
@@ -185,7 +185,7 @@ feature to package optimized versions for different OS versions.
 
 1. `chrome_modern_public_bundle` (ChromeModernPublic.aab)
    * `minSdkVersion=21` (Lollipop).
-   * Uses [Crazy Linker](https://cs.chromium.org/chromium/src/base/android/linker/BUILD.gn?rcl=6bb29391a86f2be58c626170156cbfaa2cbc5c91&l=9).
+   * Uses [Crazy Linker](https://cs.monyhar.org/monyhar/src/base/android/linker/BUILD.gn?rcl=6bb29391a86f2be58c626170156cbfaa2cbc5c91&l=9).
    * Stores native library with "crazy." prefix to prevent extraction.
    * WebView packaged independently (`system_webview_bundle`).
 2. `monochrome_public_bundle` (MonochromePublic.aab)
@@ -285,7 +285,7 @@ The app will appear on the device as "Chromium".
 ### Build Content shell
 
 Wraps the content module (but not the /chrome embedder). See
-[https://www.chromium.org/developers/content-module](https://www.chromium.org/developers/content-module)
+[https://www.monyhar.org/developers/content-module](https://www.monyhar.org/developers/content-module)
 for details on the content module and content shell.
 
 ```shell
@@ -300,12 +300,12 @@ this will build and install an Android apk under
 
 [Android WebView](https://developer.android.com/reference/android/webkit/WebView.html)
 is a system framework component. Since Android KitKat, it is implemented using
-Chromium code (based off the [content module](https://dev.chromium.org/developers/content-module)).
+Chromium code (based off the [content module](https://dev.monyhar.org/developers/content-module)).
 
 If you want to build the complete Android WebView framework component and test
-the effect of your chromium changes in Android apps using WebView, you should
-follow the [Android AOSP + chromium WebView
-instructions](https://www.chromium.org/developers/how-tos/build-instructions-android-webview)
+the effect of your monyhar changes in Android apps using WebView, you should
+follow the [Android AOSP + monyhar WebView
+instructions](https://www.monyhar.org/developers/how-tos/build-instructions-android-webview)
 
 ### Running
 
@@ -400,7 +400,7 @@ will not fail if an analysis check fails. Make sure to check the terminal that
 the server is running in at regular intervals to fix outstanding issues caught
 by these analysis checks.
 
-[fast_local_dev]: https://source.chromium.org/chromium/chromium/src/+/main:build/android/fast_local_dev_server.py
+[fast_local_dev]: https://source.monyhar.org/monyhar/monyhar/src/+/main:build/android/fast_local_dev_server.py
 
 #### Incremental Install
 [Incremental Install](/build/android/incremental_install/README.md) uses
@@ -435,7 +435,7 @@ In the case where you want to modify the native code for an existing
 release of Chrome for Android (v25+) you can do the following steps.
 Note that in order to get your changes into the official release, you'll
 need to send your change for a codereview using the regular process for
-committing code to chromium.
+committing code to monyhar.
 
 1.  Open Chrome on your Android device and visit chrome://version
 2.  Copy down the id listed next to "Build ID:"

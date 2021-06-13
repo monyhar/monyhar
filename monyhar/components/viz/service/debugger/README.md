@@ -2,14 +2,14 @@
 
 ## Viz Remote Visual Debugger
 
-The Viz Remote Debugger is a debug only connection that allows an active chromium instance to send graphical and text debug information to a remote client for display.
+The Viz Remote Debugger is a debug only connection that allows an active monyhar instance to send graphical and text debug information to a remote client for display.
 
 ### Motivation
 [Visual Debugger one-pager](https://docs.google.com/document/d/1s2OLZcUrUxXRxOD8nR4giNRnCQZcdtXBp4DUI_Fb2GU/edit?usp=sharing).
 
 
 ### Usage
-Macros constitute the full Viz Debugger logging API  (as far as a nominal chromium developer is concerned).
+Macros constitute the full Viz Debugger logging API  (as far as a nominal monyhar developer is concerned).
 
 These macros tend to take the basic form below:
 
@@ -19,7 +19,7 @@ This macro will log a rect to the viz debugger for this frame.
 anno - short for Annotation. This must be a string literal. The remote can filter on anno (as well as file and function).
 rect - a (gfx::) rect. Expected dimensions is in pixels.
 
-Unlike a debugging session printfs these logging macros can be remain the chromium source. This allows developers to use these debug logs in future sessions and other share them with other developers.
+Unlike a debugging session printfs these logging macros can be remain the monyhar source. This allows developers to use these debug logs in future sessions and other share them with other developers.
 
 
 The full list of these macros can be found in VizDebugger.h

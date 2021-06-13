@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.payments;
+package org.monyhar.components.payments;
 
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.url.GURL;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.url.GURL;
 
 /** URL validity checker for web payment APIs. */
 @JNINamespace("payments::android")

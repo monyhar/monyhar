@@ -1,6 +1,6 @@
-boliu@chromium.org
-tedchoc@chromium.org
-yfriedman@chromium.org
+boliu@monyhar.org
+tedchoc@monyhar.org
+yfriedman@monyhar.org
 
 per-file *_messages*.h=set noparent
 per-file *_messages*.h=file://ipc/SECURITY_OWNERS

@@ -88,8 +88,8 @@ static_library("xml_reader") {
     visibility += [ "//components/wifi" ]
   }
   sources = [
-    "chromium/xml_reader.cc",
-    "chromium/xml_reader.h",
+    "monyhar/xml_reader.cc",
+    "monyhar/xml_reader.h",
   ]
   deps = [
     ":libxml",
@@ -102,8 +102,8 @@ static_library("xml_writer") {
   # The XmlWriter is considered safe to use from any target.
   visibility = [ "*" ]
   sources = [
-    "chromium/xml_writer.cc",
-    "chromium/xml_writer.h",
+    "monyhar/xml_writer.cc",
+    "monyhar/xml_writer.h",
   ]
   deps = [
     ":libxml",
@@ -122,8 +122,8 @@ static_library("libxml_utils") {
     "//services/data_decoder:xml_parser_fuzzer",
   ]
   sources = [
-    "chromium/libxml_utils.cc",
-    "chromium/libxml_utils.h",
+    "monyhar/libxml_utils.cc",
+    "monyhar/libxml_utils.h",
   ]
   deps = [ ":libxml" ]
   public_deps = [ "//third_party/icu:icuuc" ]
@@ -274,11 +274,11 @@ static_library("libxml") {
     "src/xzlib.h",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
 
-    # Must be after no_chromium_code for warning flags to be ordered correctly.
+    # Must be after no_monyhar_code for warning flags to be ordered correctly.
     ":libxml_warnings",
   ]
 

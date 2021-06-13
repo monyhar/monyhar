@@ -10,8 +10,8 @@ testonly = true
 android_library("component_autofill_provider_java_test_support") {
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
   sources = [
-    "java/src/org/chromium/components/autofill/AutofillHintsServiceTestHelper.java",
-    "java/src/org/chromium/components/autofill/AutofillProviderTestHelper.java",
+    "java/src/org/monyhar/components/autofill/AutofillHintsServiceTestHelper.java",
+    "java/src/org/monyhar/components/autofill/AutofillProviderTestHelper.java",
   ]
   deps = [
     "//base:base_java",
@@ -25,7 +25,7 @@ android_library("component_autofill_provider_java_test_support") {
 }
 generate_jni("jni_headers") {
   sources = [
-    "java/src/org/chromium/components/autofill/AutofillProviderTestHelper.java",
+    "java/src/org/monyhar/components/autofill/AutofillProviderTestHelper.java",
   ]
 }
 

@@ -31,7 +31,7 @@ INFRA_CONFIG_DIR = os.path.abspath(os.path.join(__file__, '..', '..'))
 def parse_args(args=None, *, parser_type=None):
   parser_type = parser_type or argparse.ArgumentParser
   parser = parser_type(
-      description='Update the project settings for a chromium branch')
+      description='Update the project settings for a monyhar branch')
   parser.set_defaults(func=_activate_milestone)
   parser.add_argument('--milestones-py',
                       help='Path to milestones.py script',

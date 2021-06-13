@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
-import org.chromium.android_webview.nonembedded.WebViewApkApplication;
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.chrome.browser.base.SplitCompatApplication;
-import org.chromium.chrome.browser.version.ChromeVersionInfo;
+import org.monyhar.android_webview.nonembedded.WebViewApkApplication;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.chrome.browser.base.SplitCompatApplication;
+import org.monyhar.chrome.browser.version.ChromeVersionInfo;
 
 /**
  * This is Application class for Monochrome.

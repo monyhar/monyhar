@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.test;
+package org.monyhar.base.test;
 
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.base.BundleUtils;
+import org.monyhar.base.BundleUtils;
 
 /**
  * Ensures that BundleUtils#isBundle returns true for the duration of the test.

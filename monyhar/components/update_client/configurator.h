@@ -59,7 +59,7 @@ class Configurator : public base::RefCountedThreadSafe<Configurator> {
 
   // The ProdId is used as a prefix in some of the version strings which appear
   // in the protocol requests. Possible values include "chrome", "chromecrx",
-  // "chromiumcrx", and "unknown".
+  // "monyharcrx", and "unknown".
   virtual std::string GetProdId() const = 0;
 
   // Version of the application. Used to compare the component manifests.

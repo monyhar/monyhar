@@ -22,28 +22,28 @@ android_library("java") {
   srcjar_deps = [ ":password_manager_android_java_enums_srcjar" ]
 
   sources = [
-    "java/src/org/chromium/chrome/browser/password_manager/BiometricAuthenticatorBridge.java",
-    "java/src/org/chromium/chrome/browser/password_manager/ConfirmationDialogHelper.java",
-    "java/src/org/chromium/chrome/browser/password_manager/PasswordManagerHelper.java",
-    "java/src/org/chromium/chrome/browser/password_manager/PasswordScriptsFetcherBridge.java",
-    "java/src/org/chromium/chrome/browser/password_manager/PasswordStoreBridge.java",
-    "java/src/org/chromium/chrome/browser/password_manager/PasswordStoreCredential.java",
-    "java/src/org/chromium/chrome/browser/password_manager/settings/PasswordAccessReauthenticationHelper.java",
-    "java/src/org/chromium/chrome/browser/password_manager/settings/PasswordReauthenticationFragment.java",
-    "java/src/org/chromium/chrome/browser/password_manager/settings/ReauthenticationManager.java",
+    "java/src/org/monyhar/chrome/browser/password_manager/BiometricAuthenticatorBridge.java",
+    "java/src/org/monyhar/chrome/browser/password_manager/ConfirmationDialogHelper.java",
+    "java/src/org/monyhar/chrome/browser/password_manager/PasswordManagerHelper.java",
+    "java/src/org/monyhar/chrome/browser/password_manager/PasswordScriptsFetcherBridge.java",
+    "java/src/org/monyhar/chrome/browser/password_manager/PasswordStoreBridge.java",
+    "java/src/org/monyhar/chrome/browser/password_manager/PasswordStoreCredential.java",
+    "java/src/org/monyhar/chrome/browser/password_manager/settings/PasswordAccessReauthenticationHelper.java",
+    "java/src/org/monyhar/chrome/browser/password_manager/settings/PasswordReauthenticationFragment.java",
+    "java/src/org/monyhar/chrome/browser/password_manager/settings/ReauthenticationManager.java",
   ]
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
 
-  resources_package = "org.chromium.chrome.browser.password_manager"
+  resources_package = "org.monyhar.chrome.browser.password_manager"
 }
 
 generate_jni("jni_headers") {
   visibility = [ "//chrome/browser" ]
   sources = [
-    "java/src/org/chromium/chrome/browser/password_manager/BiometricAuthenticatorBridge.java",
-    "java/src/org/chromium/chrome/browser/password_manager/PasswordScriptsFetcherBridge.java",
-    "java/src/org/chromium/chrome/browser/password_manager/PasswordStoreBridge.java",
-    "java/src/org/chromium/chrome/browser/password_manager/PasswordStoreCredential.java",
+    "java/src/org/monyhar/chrome/browser/password_manager/BiometricAuthenticatorBridge.java",
+    "java/src/org/monyhar/chrome/browser/password_manager/PasswordScriptsFetcherBridge.java",
+    "java/src/org/monyhar/chrome/browser/password_manager/PasswordStoreBridge.java",
+    "java/src/org/monyhar/chrome/browser/password_manager/PasswordStoreCredential.java",
   ]
 }
 
@@ -51,8 +51,8 @@ junit_binary("password_manager_junit_tests") {
   testonly = true
 
   sources = [
-    "junit/src/org/chromium/chrome/browser/password_manager/settings/PasswordReauthenticationFragmentTest.java",
-    "junit/src/org/chromium/chrome/browser/password_manager/settings/ReauthenticationManagerTest.java",
+    "junit/src/org/monyhar/chrome/browser/password_manager/settings/PasswordReauthenticationFragmentTest.java",
+    "junit/src/org/monyhar/chrome/browser/password_manager/settings/ReauthenticationManagerTest.java",
   ]
 
   deps = [

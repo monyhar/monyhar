@@ -110,7 +110,7 @@ constexpr char ChromeJsErrorReportProcessorTest::kSecondProduct[];
 
 TEST_F(ChromeJsErrorReportProcessorTest, Basic) {
   auto report = MakeErrorReport("Hello World");
-  report.url = "https://www.chromium.org/Home";
+  report.url = "https://www.monyhar.org/Home";
 
   SendErrorReport(std::move(report));
   EXPECT_TRUE(finish_callback_was_called_);
@@ -124,9 +124,9 @@ TEST_F(ChromeJsErrorReportProcessorTest, Basic) {
   EXPECT_THAT(actual_report->query, HasSubstr("renderer_process_uptime_ms=0"));
   // TODO(iby) research why URL is repeated...
   EXPECT_THAT(actual_report->query,
-              HasSubstr("src=https%3A%2F%2Fwww.chromium.org%2FHome"));
+              HasSubstr("src=https%3A%2F%2Fwww.monyhar.org%2FHome"));
   EXPECT_THAT(actual_report->query,
-              HasSubstr("full_url=https%3A%2F%2Fwww.chromium.org%2FHome"));
+              HasSubstr("full_url=https%3A%2F%2Fwww.monyhar.org%2FHome"));
   EXPECT_THAT(actual_report->query, HasSubstr("url=%2FHome"));
   EXPECT_THAT(actual_report->query, HasSubstr("browser=Chrome"));
   EXPECT_THAT(actual_report->query, Not(HasSubstr("source_system=")));
@@ -155,12 +155,12 @@ TEST_F(ChromeJsErrorReportProcessorTest, Basic) {
 
 void ChromeJsErrorReportProcessorTest::TestAllFields() {
   auto report = MakeErrorReport("Hello World");
-  report.url = "https://www.chromium.org/Home/scripts.js";
+  report.url = "https://www.monyhar.org/Home/scripts.js";
   report.product = "Unit test";
   report.version = "6.2.3.4";
   report.line_number = 83;
   report.column_number = 14;
-  report.page_url = "https://www.chromium.org/Home.html";
+  report.page_url = "https://www.monyhar.org/Home.html";
   report.stack_trace = "bad_func(1, 2)\nonclick()\n";
   report.renderer_process_uptime_ms = 1234;
   report.window_type = WindowType::kSystemWebApp;
@@ -181,13 +181,13 @@ void ChromeJsErrorReportProcessorTest::TestAllFields() {
   // TODO(iby) research why URL is repeated...
   EXPECT_THAT(
       actual_report->query,
-      HasSubstr("src=https%3A%2F%2Fwww.chromium.org%2FHome%2Fscripts.js"));
+      HasSubstr("src=https%3A%2F%2Fwww.monyhar.org%2FHome%2Fscripts.js"));
   EXPECT_THAT(
       actual_report->query,
-      HasSubstr("full_url=https%3A%2F%2Fwww.chromium.org%2FHome%2Fscripts.js"));
+      HasSubstr("full_url=https%3A%2F%2Fwww.monyhar.org%2FHome%2Fscripts.js"));
   EXPECT_THAT(actual_report->query, HasSubstr("url=%2FHome%2Fscripts.js"));
   EXPECT_THAT(actual_report->query,
-              HasSubstr("page_url=https%3A%2F%2Fwww.chromium.org%2FHome.html"));
+              HasSubstr("page_url=https%3A%2F%2Fwww.monyhar.org%2FHome.html"));
   EXPECT_THAT(actual_report->query, HasSubstr("browser=Chrome"));
   // product is double-escaped. The first time, it transforms to Unit%20test,
   // then the % is turned into %25.
@@ -227,7 +227,7 @@ TEST_F(ChromeJsErrorReportProcessorTest, AllFields) {
 TEST_F(ChromeJsErrorReportProcessorTest, NoConsent) {
   endpoint_->set_consented(false);
   auto report = MakeErrorReport("Hello World");
-  report.url = "https://www.chromium.org/Home";
+  report.url = "https://www.monyhar.org/Home";
 
   SendErrorReport(std::move(report));
   EXPECT_TRUE(finish_callback_was_called_);
@@ -238,7 +238,7 @@ TEST_F(ChromeJsErrorReportProcessorTest, NoConsent) {
 
 TEST_F(ChromeJsErrorReportProcessorTest, StackTraceWithErrorMessage) {
   auto report = MakeErrorReport("Hello World");
-  report.url = "https://www.chromium.org/Home";
+  report.url = "https://www.monyhar.org/Home";
   report.stack_trace = "Hello World\nbad_func(1, 2)\nonclick()\n";
 
   SendErrorReport(std::move(report));
@@ -253,7 +253,7 @@ TEST_F(ChromeJsErrorReportProcessorTest, StackTraceWithErrorMessage) {
 
 TEST_F(ChromeJsErrorReportProcessorTest, RedactMessage) {
   auto report = MakeErrorReport("alpha@beta.org says hi to gamma@omega.co.uk");
-  report.url = "https://www.chromium.org/Home";
+  report.url = "https://www.monyhar.org/Home";
   report.stack_trace =
       "alpha@beta.org says hi to gamma@omega.co.uk\n"
       "bad_func(1, 2)\nonclick()\n";

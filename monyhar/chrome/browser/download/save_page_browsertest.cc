@@ -930,7 +930,7 @@ IN_PROC_BROWSER_TEST_F(SavePageBrowserTest, SaveUnauthorizedResource) {
 }
 
 // Test suite that allows testing --site-per-process against cross-site frames.
-// See http://dev.chromium.org/developers/design-documents/site-isolation.
+// See http://dev.monyhar.org/developers/design-documents/site-isolation.
 class SavePageSitePerProcessBrowserTest : public SavePageBrowserTest {
  public:
   SavePageSitePerProcessBrowserTest() {}

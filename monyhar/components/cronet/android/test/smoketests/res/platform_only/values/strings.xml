@@ -7,5 +7,5 @@
  -->
 
 <resources>
-    <string name="TestSupportImplClass">org.chromium.net.smoke.ChromiumPlatformOnlyTestSupport</string>
+    <string name="TestSupportImplClass">org.monyhar.net.smoke.ChromiumPlatformOnlyTestSupport</string>
 </resources>

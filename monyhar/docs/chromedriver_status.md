@@ -42,12 +42,12 @@ Below is a list of all WebDriver commands and their current support in ChromeDri
 | GET    | /session/{session id}/element/{element id}/enabled             | Is Element Enabled         | Complete           |
 | GET    | /session/{session id}/element/{element id}/computedlabel       | Get Computed Label         | Complete           |
 | GET    | /session/{session id}/element/{element id}/computedrole        | Get Computed Role          | Complete           |
-| POST   | /session/{session id}/element/{element id}/click               | Element Click              | Partially Complete | [1996](https://bugs.chromium.org/p/chromedriver/issues/detail?id=1996)
+| POST   | /session/{session id}/element/{element id}/click               | Element Click              | Partially Complete | [1996](https://bugs.monyhar.org/p/chromedriver/issues/detail?id=1996)
 | POST   | /session/{session id}/element/{element id}/clear               | Element Clear              | Complete           |
-| POST   | /session/{session id}/element/{element id}/value               | Element Send Keys          | Partially Complete | [1999](https://bugs.chromium.org/p/chromedriver/issues/detail?id=1999)
+| POST   | /session/{session id}/element/{element id}/value               | Element Send Keys          | Partially Complete | [1999](https://bugs.monyhar.org/p/chromedriver/issues/detail?id=1999)
 | GET    | /session/{session id}/source                                   | Get Page Source            | Complete           |
-| POST   | /session/{session id}/execute/sync                             | Execute Script             | Almost Complete    | [2938](https://bugs.chromium.org/p/chromedriver/issues/detail?id=2938)
-| POST   | /session/{session id}/execute/async                            | Execute Async Script       | Almost Complete    | [2938](https://bugs.chromium.org/p/chromedriver/issues/detail?id=2938)
+| POST   | /session/{session id}/execute/sync                             | Execute Script             | Almost Complete    | [2938](https://bugs.monyhar.org/p/chromedriver/issues/detail?id=2938)
+| POST   | /session/{session id}/execute/async                            | Execute Async Script       | Almost Complete    | [2938](https://bugs.monyhar.org/p/chromedriver/issues/detail?id=2938)
 | GET    | /session/{session id}/cookie                                   | Get All Cookies            | Complete           |
 | GET    | /session/{session id}/cookie/{name}                            | Get Named Cookie           | Complete           |
 | POST   | /session/{session id}/cookie                                   | Add Cookie                 | Complete           |
@@ -61,4 +61,4 @@ Below is a list of all WebDriver commands and their current support in ChromeDri
 | POST   | /session/{session id}/alert/text                               | Send Alert Text            | Complete           |
 | GET    | /session/{session id}/screenshot                               | Take Screenshot            | Complete           |
 | GET    | /session/{session id}/element/{element id}/screenshot          | Take Element Screenshot    | Complete           |
-| POST   | /session/{session id}/print                                    | Print Page                 | Partially Complete(available for Headless)           | [3481](https://bugs.chromium.org/p/chromedriver/issues/detail?id=3481)
+| POST   | /session/{session id}/print                                    | Print Page                 | Partially Complete(available for Headless)           | [3481](https://bugs.monyhar.org/p/chromedriver/issues/detail?id=3481)

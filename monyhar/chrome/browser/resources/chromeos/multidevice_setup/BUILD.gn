@@ -88,7 +88,7 @@ js_type_check("closure_compile") {
 js_library("multidevice_setup_post_oobe") {
   deps = [
     ":post_oobe_delegate",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_components/chromeos/multidevice_setup:multidevice_setup.m",
     "//ui/webui/resources/cr_components/chromeos/multidevice_setup:multidevice_setup_delegate.m",
     "//ui/webui/resources/cr_components/chromeos/multidevice_setup:multidevice_setup_shared_css.m",

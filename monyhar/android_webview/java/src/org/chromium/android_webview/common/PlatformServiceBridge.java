@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.common;
+package org.monyhar.android_webview.common;
 
 import android.content.Context;
 import android.os.Handler;
@@ -10,11 +10,11 @@ import android.os.HandlerThread;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.base.Callback;
-import org.chromium.base.Consumer;
-import org.chromium.base.ThreadUtils;
-import org.chromium.components.metrics.AndroidMetricsLogUploader;
-import org.chromium.content_public.browser.trusttokens.TrustTokenFulfillerManager;
+import org.monyhar.base.Callback;
+import org.monyhar.base.Consumer;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.components.metrics.AndroidMetricsLogUploader;
+import org.monyhar.content_public.browser.trusttokens.TrustTokenFulfillerManager;
 
 /**
  * This class manages platform-specific services. (i.e. Google Services) The platform

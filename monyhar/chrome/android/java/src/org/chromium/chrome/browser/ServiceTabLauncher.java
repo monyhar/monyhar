@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,33 +10,33 @@ import android.content.pm.ResolveInfo;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.browser.browserservices.BrowserServicesMetrics;
-import org.chromium.chrome.browser.browserservices.TrustedWebActivityClient;
-import org.chromium.chrome.browser.notifications.WebPlatformNotificationMetrics;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabLaunchType;
-import org.chromium.chrome.browser.tabmodel.AsyncTabCreationParams;
-import org.chromium.chrome.browser.tabmodel.document.TabDelegate;
-import org.chromium.chrome.browser.webapps.ChromeWebApkHost;
-import org.chromium.chrome.browser.webapps.WebappDataStorage;
-import org.chromium.chrome.browser.webapps.WebappRegistry;
-import org.chromium.components.payments.PaymentRequestService;
-import org.chromium.components.webapk.lib.client.WebApkValidator;
-import org.chromium.components.webapps.ShortcutSource;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.common.Referrer;
-import org.chromium.content_public.common.ResourceRequestBody;
-import org.chromium.ui.base.PageTransition;
-import org.chromium.ui.mojom.WindowOpenDisposition;
-import org.chromium.url.GURL;
-import org.chromium.webapk.lib.client.WebApkIdentityServiceClient;
-import org.chromium.webapk.lib.client.WebApkNavigationClient;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.browser.browserservices.BrowserServicesMetrics;
+import org.monyhar.chrome.browser.browserservices.TrustedWebActivityClient;
+import org.monyhar.chrome.browser.notifications.WebPlatformNotificationMetrics;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabLaunchType;
+import org.monyhar.chrome.browser.tabmodel.AsyncTabCreationParams;
+import org.monyhar.chrome.browser.tabmodel.document.TabDelegate;
+import org.monyhar.chrome.browser.webapps.ChromeWebApkHost;
+import org.monyhar.chrome.browser.webapps.WebappDataStorage;
+import org.monyhar.chrome.browser.webapps.WebappRegistry;
+import org.monyhar.components.payments.PaymentRequestService;
+import org.monyhar.components.webapk.lib.client.WebApkValidator;
+import org.monyhar.components.webapps.ShortcutSource;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.common.Referrer;
+import org.monyhar.content_public.common.ResourceRequestBody;
+import org.monyhar.ui.base.PageTransition;
+import org.monyhar.ui.mojom.WindowOpenDisposition;
+import org.monyhar.url.GURL;
+import org.monyhar.webapk.lib.client.WebApkIdentityServiceClient;
+import org.monyhar.webapk.lib.client.WebApkNavigationClient;
 
 import java.util.List;
 
@@ -51,7 +51,7 @@ import java.util.List;
 public class ServiceTabLauncher {
     // Name of the extra containing the Id of a tab launch request id.
     public static final String LAUNCH_REQUEST_ID_EXTRA =
-            "org.chromium.chrome.browser.ServiceTabLauncher.LAUNCH_REQUEST_ID";
+            "org.monyhar.chrome.browser.ServiceTabLauncher.LAUNCH_REQUEST_ID";
 
     /**
      * Launches the browser activity and launches a tab for |url|.

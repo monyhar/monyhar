@@ -12,14 +12,14 @@ Steps to upgrade to a new version of GRPC, all relative to //third_party/grpc:
 2. Update revision and version information in this file.
 3. Checkout GRPC submodules by running from the src/ directory:
    git submodule update --init
-4. Copy template/BUILD.chromium.gn.template to src/templates.
+4. Copy template/BUILD.monyhar.gn.template to src/templates.
 5. Rebuild BUILD.gn by running from the src/ directory:
    tools/buildgen/generate_projects.sh
     (make sure mako_templates python module is installed in your system using
      command "apt-get install python3-mako")
-   This will use the template in templates/BUILD.chromium.gn.template to
-   generate src/BUILD.chromium.gn file.
-6. Run: mv third_party/grpc/src/BUILD.chromium.gn third_party/grpc/BUILD.gn
+   This will use the template in templates/BUILD.monyhar.gn.template to
+   generate src/BUILD.monyhar.gn file.
+6. Run: mv third_party/grpc/src/BUILD.monyhar.gn third_party/grpc/BUILD.gn
 7. If the new gRPC version adds new dependencies, this may result in linker
    errors when building due to some of the gRPC Plugins that have been manually
    disabled. Manually comment out - not remove - these from the BUILD.gn file,

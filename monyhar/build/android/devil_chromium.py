@@ -2,7 +2,7 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
-"""Configures devil for use in chromium."""
+"""Configures devil for use in monyhar."""
 
 import os
 import sys
@@ -23,14 +23,14 @@ if _BUILD_DIR not in sys.path:
 import gn_helpers
 
 _DEVIL_CONFIG = os.path.abspath(
-    os.path.join(os.path.dirname(__file__), 'devil_chromium.json'))
+    os.path.join(os.path.dirname(__file__), 'devil_monyhar.json'))
 
 _DEVIL_BUILD_PRODUCT_DEPS = {
-  'chromium_commands': [
+  'monyhar_commands': [
     {
       'platform': 'linux2',
       'arch': 'x86_64',
-      'path_components': ['lib.java', 'chromium_commands.dex.jar'],
+      'path_components': ['lib.java', 'monyhar_commands.dex.jar'],
     }
   ],
   'forwarder_device': [
@@ -133,18 +133,18 @@ def _UseLocalBuildProducts(output_directory, devil_dynamic_config):
 
 
 def _BuildWithChromium():
-  """Returns value of gclient's |build_with_chromium|."""
+  """Returns value of gclient's |build_with_monyhar|."""
   gni_path = os.path.join(_BUILD_DIR, 'config', 'gclient_args.gni')
   if not os.path.exists(gni_path):
     return False
   with open(gni_path) as f:
     data = f.read()
   args = gn_helpers.FromGNArgs(data)
-  return args.get('build_with_chromium', False)
+  return args.get('build_with_monyhar', False)
 
 
 def Initialize(output_directory=None, custom_deps=None, adb_path=None):
-  """Initializes devil with chromium's binaries and third-party libraries.
+  """Initializes devil with monyhar's binaries and third-party libraries.
 
   This includes:
     - Libraries:
@@ -170,14 +170,14 @@ def Initialize(output_directory=None, custom_deps=None, adb_path=None):
     adb_path: An optional path to use for the adb binary. If not set, this uses
       the adb binary provided by the Android SDK.
   """
-  build_with_chromium = _BuildWithChromium()
+  build_with_monyhar = _BuildWithChromium()
 
   devil_dynamic_config = {
     'config_type': 'BaseConfig',
     'dependencies': {},
   }
-  if build_with_chromium and output_directory:
-    # Non-chromium users of chromium's //build directory fetch build products
+  if build_with_monyhar and output_directory:
+    # Non-monyhar users of monyhar's //build directory fetch build products
     # from google storage rather than use locally built copies. Chromium uses
     # locally-built copies so that changes to the tools can be easily tested.
     _UseLocalBuildProducts(output_directory, devil_dynamic_config)
@@ -195,6 +195,6 @@ def Initialize(output_directory=None, custom_deps=None, adb_path=None):
       }
     })
 
-  config_files = [_DEVIL_CONFIG] if build_with_chromium else None
+  config_files = [_DEVIL_CONFIG] if build_with_monyhar else None
   devil_env.config.Initialize(configs=[devil_dynamic_config],
                               config_files=config_files)

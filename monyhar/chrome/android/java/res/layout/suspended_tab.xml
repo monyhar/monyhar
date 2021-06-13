@@ -43,7 +43,7 @@
             android:layout_gravity="start"
             android:text="@string/usage_stats_site_paused" />
 
-        <org.chromium.ui.widget.TextViewWithLeading
+        <org.monyhar.ui.widget.TextViewWithLeading
             android:id="@+id/suspended_tab_explanation"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
@@ -53,7 +53,7 @@
             android:layout_gravity="start"
             app:leading="@dimen/text_size_large_leading" />
 
-        <org.chromium.ui.widget.ButtonCompat
+        <org.monyhar.ui.widget.ButtonCompat
             android:id="@+id/suspended_tab_settings_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

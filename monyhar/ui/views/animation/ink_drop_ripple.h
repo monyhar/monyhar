@@ -29,7 +29,7 @@ class InkDropRippleTestApi;
 // Simple base class for animations that provide visual feedback for View state.
 // Manages the attached InkDropRippleObservers.
 //
-// TODO(bruthig): Document the ink drop ripple on chromium.org and add a link to
+// TODO(bruthig): Document the ink drop ripple on monyhar.org and add a link to
 // the doc here.
 class VIEWS_EXPORT InkDropRipple {
  public:

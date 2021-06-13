@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer.test;
+package org.monyhar.weblayer.test;
 
-import static org.chromium.content_public.browser.test.util.TestThreadUtils.runOnUiThreadBlocking;
+import static org.monyhar.content_public.browser.test.util.TestThreadUtils.runOnUiThreadBlocking;
 
 import android.annotation.TargetApi;
 import android.app.Notification;
@@ -22,15 +22,15 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.MinAndroidSdkLevel;
-import org.chromium.weblayer.Browser;
-import org.chromium.weblayer.OpenUrlCallback;
-import org.chromium.weblayer.Tab;
-import org.chromium.weblayer.TestWebLayer;
-import org.chromium.weblayer.shell.InstrumentationActivity;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.MinAndroidSdkLevel;
+import org.monyhar.weblayer.Browser;
+import org.monyhar.weblayer.OpenUrlCallback;
+import org.monyhar.weblayer.Tab;
+import org.monyhar.weblayer.TestWebLayer;
+import org.monyhar.weblayer.shell.InstrumentationActivity;
 
 /**
  * Tests Background Fetch and the OpenUrlCallback API.
@@ -130,7 +130,7 @@ public class BackgroundFetchTest {
                          Context.NOTIFICATION_SERVICE))
                         .getActiveNotifications();
         for (StatusBarNotification statusBarNotification : notifications) {
-            if (statusBarNotification.getTag().equals("org.chromium.weblayer.downloads")) {
+            if (statusBarNotification.getTag().equals("org.monyhar.weblayer.downloads")) {
                 Notification notification = statusBarNotification.getNotification();
                 if (expectedTitle == null) return notification;
 

@@ -2339,7 +2339,7 @@ void TestRunner::Reset() {
   http_headers_to_clear_.clear();
   clear_referrer_ = false;
 
-  platform_name_ = "chromium";
+  platform_name_ = "monyhar";
 
   weak_factory_.InvalidateWeakPtrs();
   work_queue_.Reset();

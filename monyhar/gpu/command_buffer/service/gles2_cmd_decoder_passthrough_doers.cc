@@ -245,7 +245,7 @@ void AssignGLRectangle(GLint rectangle[4],
 // not needed when uploading from a PBO and for compressed formats which the
 // client sends untouched. This class handles resetting and restoring the unpack
 // state.
-// TODO(cwallez@chromium.org) it would be nicer to handle the resetting /
+// TODO(cwallez@monyhar.org) it would be nicer to handle the resetting /
 // restoring on the client side.
 class ScopedUnpackStateButAlignmentReset {
  public:
@@ -3320,7 +3320,7 @@ error::Error GLES2DecoderPassthroughImpl::DoBlitFramebufferCHROMIUM(
     GLint dstY1,
     GLbitfield mask,
     GLenum filter) {
-  DCHECK(feature_info_->feature_flags().chromium_framebuffer_multisample);
+  DCHECK(feature_info_->feature_flags().monyhar_framebuffer_multisample);
   api()->glBlitFramebufferFn(srcX0, srcY0, srcX1, srcY1, dstX0, dstY0, dstX1,
                              dstY1, mask, filter);
   return error::kNoError;
@@ -3333,7 +3333,7 @@ GLES2DecoderPassthroughImpl::DoRenderbufferStorageMultisampleCHROMIUM(
     GLenum internalformat,
     GLsizei width,
     GLsizei height) {
-  DCHECK(feature_info_->feature_flags().chromium_framebuffer_multisample);
+  DCHECK(feature_info_->feature_flags().monyhar_framebuffer_multisample);
   api()->glRenderbufferStorageMultisampleFn(target, samples, internalformat,
                                             width, height);
   return error::kNoError;
@@ -5188,7 +5188,7 @@ error::Error GLES2DecoderPassthroughImpl::DoWindowRectanglesEXT(
 
 error::Error GLES2DecoderPassthroughImpl::DoCreateGpuFenceINTERNAL(
     GLuint gpu_fence_id) {
-  if (!feature_info_->feature_flags().chromium_gpu_fence)
+  if (!feature_info_->feature_flags().monyhar_gpu_fence)
     return error::kUnknownCommand;
   if (!GetGpuFenceManager()->CreateGpuFence(gpu_fence_id))
     return error::kInvalidArguments;
@@ -5197,7 +5197,7 @@ error::Error GLES2DecoderPassthroughImpl::DoCreateGpuFenceINTERNAL(
 
 error::Error GLES2DecoderPassthroughImpl::DoWaitGpuFenceCHROMIUM(
     GLuint gpu_fence_id) {
-  if (!feature_info_->feature_flags().chromium_gpu_fence)
+  if (!feature_info_->feature_flags().monyhar_gpu_fence)
     return error::kUnknownCommand;
   if (!GetGpuFenceManager()->GpuFenceServerWait(gpu_fence_id))
     return error::kInvalidArguments;
@@ -5206,7 +5206,7 @@ error::Error GLES2DecoderPassthroughImpl::DoWaitGpuFenceCHROMIUM(
 
 error::Error GLES2DecoderPassthroughImpl::DoDestroyGpuFenceCHROMIUM(
     GLuint gpu_fence_id) {
-  if (!feature_info_->feature_flags().chromium_gpu_fence)
+  if (!feature_info_->feature_flags().monyhar_gpu_fence)
     return error::kUnknownCommand;
   if (!GetGpuFenceManager()->RemoveGpuFence(gpu_fence_id))
     return error::kInvalidArguments;

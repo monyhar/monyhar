@@ -10,9 +10,9 @@
 
 #include <memory>
 
-#import "remoting/ios/app/account_manager_chromium.h"
+#import "remoting/ios/app/account_manager_monyhar.h"
 #import "remoting/ios/app/help_and_feedback.h"
-#import "remoting/ios/app/refresh_control_provider_chromium.h"
+#import "remoting/ios/app/refresh_control_provider_monyhar.h"
 #import "remoting/ios/facade/remoting_oauth_authentication.h"
 #import "remoting/ios/facade/remoting_service.h"
 

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.native_page;
+package org.monyhar.chrome.browser.native_page;
 
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -13,13 +13,13 @@ import android.view.View;
 import androidx.annotation.IntDef;
 import androidx.annotation.StringRes;
 
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.offlinepages.OfflinePageBridge;
-import org.chromium.chrome.browser.tasks.tab_management.TabUiFeatureUtilities;
-import org.chromium.ui.base.WindowAndroid.OnCloseContextMenuListener;
-import org.chromium.ui.mojom.WindowOpenDisposition;
-import org.chromium.url.GURL;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.offlinepages.OfflinePageBridge;
+import org.monyhar.chrome.browser.tasks.tab_management.TabUiFeatureUtilities;
+import org.monyhar.ui.base.WindowAndroid.OnCloseContextMenuListener;
+import org.monyhar.ui.mojom.WindowOpenDisposition;
+import org.monyhar.url.GURL;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

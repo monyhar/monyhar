@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.status;
+package org.monyhar.chrome.browser.omnibox.status;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.assertion.ViewAssertions.doesNotExist;
@@ -18,7 +18,7 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.mockito.Mockito.doReturn;
 
-import static org.chromium.content_public.browser.test.util.TestThreadUtils.runOnUiThreadBlocking;
+import static org.monyhar.content_public.browser.test.util.TestThreadUtils.runOnUiThreadBlocking;
 
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
@@ -31,20 +31,20 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.Restriction;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.omnibox.NewTabPageDelegate;
-import org.chromium.chrome.browser.omnibox.SearchEngineLogoUtils;
-import org.chromium.chrome.browser.omnibox.status.StatusProperties.StatusIconResource;
-import org.chromium.chrome.browser.toolbar.LocationBarModel;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.util.ToolbarTestUtils;
-import org.chromium.components.browser_ui.widget.CompositeTouchDelegate;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
-import org.chromium.ui.test.util.DummyUiActivityTestCase;
-import org.chromium.ui.test.util.UiRestriction;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.Restriction;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.omnibox.NewTabPageDelegate;
+import org.monyhar.chrome.browser.omnibox.SearchEngineLogoUtils;
+import org.monyhar.chrome.browser.omnibox.status.StatusProperties.StatusIconResource;
+import org.monyhar.chrome.browser.toolbar.LocationBarModel;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.util.ToolbarTestUtils;
+import org.monyhar.components.browser_ui.widget.CompositeTouchDelegate;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.ui.test.util.DummyUiActivityTestCase;
+import org.monyhar.ui.test.util.UiRestriction;
 
 /**
  * Tests for {@link StatusView} and {@link StatusViewBinder}.

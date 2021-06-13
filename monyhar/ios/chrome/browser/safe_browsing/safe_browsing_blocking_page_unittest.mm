@@ -49,7 +49,7 @@ class SafeBrowsingBlockingPageTest : public PlatformTest {
  public:
   SafeBrowsingBlockingPageTest()
       : browser_state_(TestChromeBrowserState::Builder().Build()),
-        url_("http://www.chromium.test"),
+        url_("http://www.monyhar.test"),
         resource_(CreateResource(&web_state_, url_)) {
     auto navigation_manager = std::make_unique<web::FakeNavigationManager>();
     navigation_manager->SetBrowserState(browser_state_.get());

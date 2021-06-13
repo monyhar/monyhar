@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ntp;
+package org.monyhar.chrome.browser.ntp;
 
 import android.animation.Animator;
 import android.animation.ObjectAnimator;
@@ -27,11 +27,11 @@ import android.widget.FrameLayout;
 
 import androidx.annotation.ColorInt;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ntp.LogoBridge.Logo;
-import org.chromium.chrome.browser.search_engines.TemplateUrlServiceFactory;
-import org.chromium.ui.widget.LoadingView;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ntp.LogoBridge.Logo;
+import org.monyhar.chrome.browser.search_engines.TemplateUrlServiceFactory;
+import org.monyhar.ui.widget.LoadingView;
 
 import java.lang.ref.WeakReference;
 

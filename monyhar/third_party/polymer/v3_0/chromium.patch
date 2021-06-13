@@ -1,5 +1,5 @@
---- a/components-chromium/iron-iconset-svg/iron-iconset-svg.js
-+++ b/components-chromium/iron-iconset-svg/iron-iconset-svg.js
+--- a/components-monyhar/iron-iconset-svg/iron-iconset-svg.js
++++ b/components-monyhar/iron-iconset-svg/iron-iconset-svg.js
 @@ -134,6 +134,18 @@ Polymer({
      return null;
    },
@@ -19,10 +19,10 @@
    /**
     * Remove an icon from the given element by undoing the changes effected
     * by `applyIcon`.
-diff --git a/components-chromium/polymer/lib/legacy/legacy-element-mixin.js b/components-chromium/polymer/lib/legacy/legacy-element-mixin.js
+diff --git a/components-monyhar/polymer/lib/legacy/legacy-element-mixin.js b/components-monyhar/polymer/lib/legacy/legacy-element-mixin.js
 index 21fa65c0208d..bd591b6dd341 100644
---- a/components-chromium/polymer/lib/legacy/legacy-element-mixin.js
-+++ b/components-chromium/polymer/lib/legacy/legacy-element-mixin.js
+--- a/components-monyhar/polymer/lib/legacy/legacy-element-mixin.js
++++ b/components-monyhar/polymer/lib/legacy/legacy-element-mixin.js
 @@ -10,7 +10,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
  import '../../../shadycss/entrypoints/apply-shim.js';
  import { ElementMixin } from '../mixins/element-mixin.js';
@@ -44,8 +44,8 @@ index 21fa65c0208d..bd591b6dd341 100644
  
    /**
     * Map of simple names to touch action names
---- a/components-chromium/polymer/lib/mixins/template-stamp.js
-+++ b/components-chromium/polymer/lib/mixins/template-stamp.js
+--- a/components-monyhar/polymer/lib/mixins/template-stamp.js
++++ b/components-monyhar/polymer/lib/mixins/template-stamp.js
 @@ -204,9 +204,7 @@ export const TemplateStamp = dedupingMixin(
        if (!template._templateInfo) {
          let templateInfo = template._templateInfo = {};
@@ -57,10 +57,10 @@ index 21fa65c0208d..bd591b6dd341 100644
          this._parseTemplateContent(template, templateInfo, {parent: null});
        }
        return template._templateInfo;
-diff --git a/components-chromium/iron-list/iron-list.js b/components-chromium/iron-list/iron-list.js
+diff --git a/components-monyhar/iron-list/iron-list.js b/components-monyhar/iron-list/iron-list.js
 index 43c59653a39b..26652936735c 100644
---- a/components-chromium/iron-list/iron-list.js
-+++ b/components-chromium/iron-list/iron-list.js
+--- a/components-monyhar/iron-list/iron-list.js
++++ b/components-monyhar/iron-list/iron-list.js
 @@ -376,7 +376,15 @@
       * there's some offset between the scrolling element and the list. For
       * example: a header is placed above the list.
@@ -158,10 +158,10 @@ index 43c59653a39b..26652936735c 100644
    },
  
    _forwardItemPath: function(path, value) {
-diff --git a/components-chromium/iron-overlay-behavior/iron-overlay-manager.js b/components-chromium/iron-overlay-behavior/iron-overlay-manager.js
+diff --git a/components-monyhar/iron-overlay-behavior/iron-overlay-manager.js b/components-monyhar/iron-overlay-behavior/iron-overlay-manager.js
 index 99768f419688..7dd55b8077b7 100644
---- a/components-chromium/iron-overlay-behavior/iron-overlay-manager.js
-+++ b/components-chromium/iron-overlay-behavior/iron-overlay-manager.js
+--- a/components-monyhar/iron-overlay-behavior/iron-overlay-manager.js
++++ b/components-monyhar/iron-overlay-behavior/iron-overlay-manager.js
 @@ -13,7 +13,7 @@ import './iron-overlay-backdrop.js';
  
  import {IronA11yKeysBehavior} from '../iron-a11y-keys-behavior/iron-a11y-keys-behavior.js';
@@ -171,10 +171,10 @@ index 99768f419688..7dd55b8077b7 100644
  
  /**
   * @struct
-diff --git a/components-chromium/paper-tooltip/paper-tooltip.js b/components-chromium/paper-tooltip/paper-tooltip.js
+diff --git a/components-monyhar/paper-tooltip/paper-tooltip.js b/components-monyhar/paper-tooltip/paper-tooltip.js
 index 853eee199025..303d1bbdfc78 100644
---- a/components-chromium/paper-tooltip/paper-tooltip.js
-+++ b/components-chromium/paper-tooltip/paper-tooltip.js
+--- a/components-monyhar/paper-tooltip/paper-tooltip.js
++++ b/components-monyhar/paper-tooltip/paper-tooltip.js
 @@ -311,12 +311,16 @@ Polymer({
  
    /**
@@ -210,10 +210,10 @@ index 853eee199025..303d1bbdfc78 100644
    /**
     * @return {void}
     */
-diff --git a/components-chromium/paper-styles/color.js b/components-chromium/paper-styles/color.js
+diff --git a/components-monyhar/paper-styles/color.js b/components-monyhar/paper-styles/color.js
 index 6af2fa359336..c56a6737e1d8 100644
---- a/components-chromium/paper-styles/color.js
-+++ b/components-chromium/paper-styles/color.js
+--- a/components-monyhar/paper-styles/color.js
++++ b/components-monyhar/paper-styles/color.js
 @@ -81,81 +81,6 @@ const template = html`
        --paper-red-a400: #ff1744;
        --paper-red-a700: #d50000;

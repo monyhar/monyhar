@@ -9,7 +9,7 @@ information.
 ## Document your metrics in ukm.xml
 
 Any events and metrics you collect need to be documented in
-[//tools/metrics/ukm/ukm.xml](https://cs.chromium.org/chromium/src/tools/metrics/ukm/ukm.xml)
+[//tools/metrics/ukm/ukm.xml](https://cs.monyhar.org/monyhar/src/tools/metrics/ukm/ukm.xml)
 
 ### Required Details
 
@@ -22,7 +22,7 @@ Any events and metrics you collect need to be documented in
 * The `enum` type if the metric is enumerated which ensures that every value is
   accounted independently with no attempt to "bucket" the results. The enum uses
   the
-  [//tools/metrics/histograms/enums.xml](https://cs.chromium.org/chromium/src/tools/metrics/histograms/enums.xml)
+  [//tools/metrics/histograms/enums.xml](https://cs.monyhar.org/monyhar/src/tools/metrics/histograms/enums.xml)
   file for definitions. Note this is the same file for UMA histogram definitions
   so these can ideally be reused.
 * If the metric is numeric then a `unit` should be included so that bare numbers
@@ -36,7 +36,7 @@ Any events and metrics you collect need to be documented in
 ### Example
 ```xml
 <event name="Goat.Teleported">
-  <owner>teleporter@chromium.org</owner>
+  <owner>teleporter@monyhar.org</owner>
   <summary>
     Recorded when a page teleports a goat.
   </summary>
@@ -58,7 +58,7 @@ Any events and metrics you collect need to be documented in
 Control of which metrics are included in the
 [History](http://go/aggregated-ukm#history-table) table (the table behind the
 main UKM dashboard) is done via the same
-[`tools/metrics/ukm/ukm.xml`](https://cs.chromium.org/chromium/src/tools/metrics/ukm/ukm.xml)
+[`tools/metrics/ukm/ukm.xml`](https://cs.monyhar.org/monyhar/src/tools/metrics/ukm/ukm.xml)
 file in the Chromium codebase. To have a metric aggregated, `<history>`,
 `<aggregation>` and `<statistics>` tags need to be added along with the type of
 statistic to be generated..
@@ -164,7 +164,7 @@ emitted.
 
 ### Get UkmRecorder Instance
 
-In order to record UKM events, your code needs a UkmRecorder object, defined by [//services/metrics/public/cpp/ukm_recorder.h](https://cs.chromium.org/chromium/src/services/metrics/public/cpp/ukm_recorder.h)
+In order to record UKM events, your code needs a UkmRecorder object, defined by [//services/metrics/public/cpp/ukm_recorder.h](https://cs.monyhar.org/monyhar/src/services/metrics/public/cpp/ukm_recorder.h)
 
 There are three main ways of getting a UkmRecorder instance.
 
@@ -253,7 +253,7 @@ Build Chromium and run it with '--force-enable-metrics-reporting --metrics-uploa
 
 ## Unit Testing
 
-You can pass your code a TestUkmRecorder (see [//components/ukm/test_ukm_recorder.h](https://cs.chromium.org/chromium/src/components/ukm/test_ukm_recorder.h)) and then use the methods it provides to test that your data records correctly.
+You can pass your code a TestUkmRecorder (see [//components/ukm/test_ukm_recorder.h](https://cs.monyhar.org/monyhar/src/components/ukm/test_ukm_recorder.h)) and then use the methods it provides to test that your data records correctly.
 
 ## Recording Information about Subframes URLs via Categorization
 
@@ -268,7 +268,7 @@ The full metrics will not be keyed off the subframe URL. Rather, the subframe UR
 
 ```xml
 <event name="WebFrameworkPerformance">
-  <owner>owner@chromium.org</owner>
+  <owner>owner@monyhar.org</owner>
   <summary>
     Recorded when a page uses on of a list of known web frameworks. This records various performance measurements.
   </summary>

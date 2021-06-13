@@ -129,15 +129,15 @@ if (is_android) {
   }
 
   android_library("url_java") {
-    sources = [ "android/java/src/org/chromium/url/IDNStringUtil.java" ]
+    sources = [ "android/java/src/org/monyhar/url/IDNStringUtil.java" ]
     deps = [ "//base:base_java" ]
   }
 
   android_library("gurl_java") {
     sources = [
-      "android/java/src/org/chromium/url/GURL.java",
-      "android/java/src/org/chromium/url/Parsed.java",
-      "android/java/src/org/chromium/url/URI.java",
+      "android/java/src/org/monyhar/url/GURL.java",
+      "android/java/src/org/monyhar/url/Parsed.java",
+      "android/java/src/org/monyhar/url/URI.java",
     ]
     deps = [
       "//base:base_java",
@@ -147,7 +147,7 @@ if (is_android) {
   }
 
   android_library("origin_java") {
-    sources = [ "android/java/src/org/chromium/url/Origin.java" ]
+    sources = [ "android/java/src/org/monyhar/url/Origin.java" ]
     deps = [
       "//base:base_java",
       "//mojo/public/java:bindings_java",
@@ -158,15 +158,15 @@ if (is_android) {
 
   generate_jni("url_jni_headers") {
     sources = [
-      "android/java/src/org/chromium/url/IDNStringUtil.java",
-      "android/java/src/org/chromium/url/Origin.java",
+      "android/java/src/org/monyhar/url/IDNStringUtil.java",
+      "android/java/src/org/monyhar/url/Origin.java",
     ]
   }
 
   generate_jni("gurl_jni_headers") {
     sources = [
-      "android/java/src/org/chromium/url/GURL.java",
-      "android/java/src/org/chromium/url/Parsed.java",
+      "android/java/src/org/monyhar/url/GURL.java",
+      "android/java/src/org/monyhar/url/Parsed.java",
     ]
   }
 }
@@ -286,7 +286,7 @@ if (is_android) {
   android_library("gurl_android_test_helper_java") {
     testonly = true
     sources =
-        [ "android/javatests/src/org/chromium/url/GURLJavaTestHelper.java" ]
+        [ "android/javatests/src/org/monyhar/url/GURLJavaTestHelper.java" ]
     deps = [
       ":gurl_java",
       "//base:base_java",
@@ -296,15 +296,15 @@ if (is_android) {
 
   android_library("gurl_junit_test_support") {
     testonly = true
-    sources = [ "android/test/java/src/org/chromium/url/JUnitTestGURLs.java" ]
+    sources = [ "android/test/java/src/org/monyhar/url/JUnitTestGURLs.java" ]
     deps = [ ":gurl_java" ]
   }
 
   android_library("gurl_javatests") {
     testonly = true
     sources = [
-      "android/javatests/src/org/chromium/url/GURLJavaTest.java",
-      "android/javatests/src/org/chromium/url/JUnitTestGURLsTest.java",
+      "android/javatests/src/org/monyhar/url/GURLJavaTest.java",
+      "android/javatests/src/org/monyhar/url/JUnitTestGURLsTest.java",
     ]
     deps = [
       ":gurl_android_test_helper_java",
@@ -323,11 +323,11 @@ if (is_android) {
     annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
   }
 
-  # See https://bugs.chromium.org/p/chromium/issues/detail?id=908819 for why we
+  # See https://bugs.monyhar.org/p/monyhar/issues/detail?id=908819 for why we
   # can't put 'java' in the name here.
   generate_jni("gurl_j_test_jni_headers") {
     testonly = true
     sources =
-        [ "android/javatests/src/org/chromium/url/GURLJavaTestHelper.java" ]
+        [ "android/javatests/src/org/monyhar/url/GURLJavaTestHelper.java" ]
   }
 }

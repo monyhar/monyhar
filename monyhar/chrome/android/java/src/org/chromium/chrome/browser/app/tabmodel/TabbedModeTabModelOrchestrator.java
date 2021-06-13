@@ -2,22 +2,22 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.app.tabmodel;
+package org.monyhar.chrome.browser.app.tabmodel;
 
 import android.app.Activity;
 import android.os.Build;
 import android.util.Pair;
 
-import org.chromium.chrome.browser.multiwindow.MultiInstanceManager;
-import org.chromium.chrome.browser.multiwindow.MultiWindowUtils;
-import org.chromium.chrome.browser.tabmodel.NextTabPolicy.NextTabPolicySupplier;
-import org.chromium.chrome.browser.tabmodel.TabCreatorManager;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorImpl;
-import org.chromium.chrome.browser.tabmodel.TabPersistencePolicy;
-import org.chromium.chrome.browser.tabmodel.TabPersistentStore;
-import org.chromium.chrome.browser.tabmodel.TabbedModeTabPersistencePolicy;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.chrome.browser.multiwindow.MultiInstanceManager;
+import org.monyhar.chrome.browser.multiwindow.MultiWindowUtils;
+import org.monyhar.chrome.browser.tabmodel.NextTabPolicy.NextTabPolicySupplier;
+import org.monyhar.chrome.browser.tabmodel.TabCreatorManager;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorImpl;
+import org.monyhar.chrome.browser.tabmodel.TabPersistencePolicy;
+import org.monyhar.chrome.browser.tabmodel.TabPersistentStore;
+import org.monyhar.chrome.browser.tabmodel.TabbedModeTabPersistencePolicy;
+import org.monyhar.ui.widget.Toast;
 
 /**
  * Glue-level class that manages lifetime of root .tabmodel objects: {@link TabPersistentStore} and
@@ -49,7 +49,7 @@ public class TabbedModeTabModelOrchestrator extends TabModelOrchestrator {
             markTabModelsInitialized();
             Toast.makeText(activity,
                          activity.getString(
-                                 org.chromium.chrome.R.string.unsupported_number_of_windows),
+                                 org.monyhar.chrome.R.string.unsupported_number_of_windows),
                          Toast.LENGTH_LONG)
                     .show();
             return false;

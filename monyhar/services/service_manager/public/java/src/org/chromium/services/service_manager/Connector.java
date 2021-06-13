@@ -2,30 +2,30 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.services.service_manager;
+package org.monyhar.services.service_manager;
 
-import org.chromium.mojo.bindings.ConnectionErrorHandler;
-import org.chromium.mojo.bindings.Interface;
-import org.chromium.mojo.bindings.InterfaceRequest;
-import org.chromium.mojo.system.MessagePipeHandle;
-import org.chromium.mojo.system.MojoException;
-import org.chromium.service_manager.mojom.Identity;
-import org.chromium.service_manager.mojom.ServiceFilter;
+import org.monyhar.mojo.bindings.ConnectionErrorHandler;
+import org.monyhar.mojo.bindings.Interface;
+import org.monyhar.mojo.bindings.InterfaceRequest;
+import org.monyhar.mojo.system.MessagePipeHandle;
+import org.monyhar.mojo.system.MojoException;
+import org.monyhar.service_manager.mojom.Identity;
+import org.monyhar.service_manager.mojom.ServiceFilter;
 
 /**
  * This class exposes the ability to bind interfaces from other services in the system.
  */
 public class Connector implements ConnectionErrorHandler {
-    private org.chromium.service_manager.mojom.Connector.Proxy mConnector;
+    private org.monyhar.service_manager.mojom.Connector.Proxy mConnector;
 
     private static class ConnectorBindInterfaceResponseImpl
-            implements org.chromium.service_manager.mojom.Connector.BindInterfaceResponse {
+            implements org.monyhar.service_manager.mojom.Connector.BindInterfaceResponse {
         @Override
         public void call(Integer result, Identity identity) {}
     }
 
     public Connector(MessagePipeHandle handle) {
-        mConnector = org.chromium.service_manager.mojom.Connector.MANAGER.attachProxy(handle, 0);
+        mConnector = org.monyhar.service_manager.mojom.Connector.MANAGER.attachProxy(handle, 0);
         mConnector.getProxyHandler().setErrorHandler(this);
     }
 
@@ -41,10 +41,10 @@ public class Connector implements ConnectionErrorHandler {
         ServiceFilter filter = new ServiceFilter();
         filter.serviceName = serviceName;
 
-        org.chromium.service_manager.mojom.Connector.BindInterfaceResponse callback =
+        org.monyhar.service_manager.mojom.Connector.BindInterfaceResponse callback =
                 new ConnectorBindInterfaceResponseImpl();
         mConnector.bindInterface(filter, interfaceName, request.passHandle(),
-                org.chromium.service_manager.mojom.BindInterfacePriority.IMPORTANT, callback);
+                org.monyhar.service_manager.mojom.BindInterfacePriority.IMPORTANT, callback);
     }
 
     @Override

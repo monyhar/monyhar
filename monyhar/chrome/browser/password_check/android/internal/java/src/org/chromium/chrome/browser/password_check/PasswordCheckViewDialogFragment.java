@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_check;
+package org.monyhar.chrome.browser.password_check;
 
 import android.app.Dialog;
 import android.content.ClipData;
@@ -18,9 +18,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 
-import org.chromium.chrome.browser.password_check.internal.R;
-import org.chromium.chrome.browser.password_manager.settings.ReauthenticationManager;
-import org.chromium.chrome.browser.password_manager.settings.ReauthenticationManager.ReauthScope;
+import org.monyhar.chrome.browser.password_check.internal.R;
+import org.monyhar.chrome.browser.password_manager.settings.ReauthenticationManager;
+import org.monyhar.chrome.browser.password_manager.settings.ReauthenticationManager.ReauthScope;
 
 /**
  * Shows the dialog that allows the user to see the compromised credential.

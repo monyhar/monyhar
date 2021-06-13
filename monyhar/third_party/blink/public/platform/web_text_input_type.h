@@ -73,7 +73,7 @@ enum WebTextInputType {
 // an appropriate default based on other things (like InputType and direct
 // knowledge of the actual input system) if there are no overrides.
 //
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.blink_public.web
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.blink_public.web
 // GENERATED_JAVA_PREFIX_TO_STRIP: WebTextInputFlag
 enum WebTextInputFlags {
   kWebTextInputFlagNone = 0,

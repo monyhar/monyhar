@@ -364,7 +364,7 @@ for all types `T`. But there are many cases where what we really want is a
 representation of a boolean state: on or off, active or inactive, and don't need
 any activation data.
 
-For these cases, the `org.chromium.chromecast.base.Unit` class is used to denote
+For these cases, the `org.monyhar.chromecast.base.Unit` class is used to denote
 the fact that there is no data associated with the controller. The `Unit` type
 is inspired by the type of the same name in many functional programming
 languages, and represents a type with only one possible instance (aka
@@ -1011,7 +1011,7 @@ implements `Observable` and changes from deactivated to activated every time its
 `flip` method is called. The tests might look like this:
 
 ```java
-import org.chromium.chromecast.base.ReactiveRecorder;
+import org.monyhar.chromecast.base.ReactiveRecorder;
 ... // other imports
 public class FlipFlopTest {
     @Test

@@ -76,7 +76,7 @@ WebViewGCMProfileServiceFactory::GetInstance() {
 
 // static
 std::string WebViewGCMProfileServiceFactory::GetProductCategoryForSubtypes() {
-  return "org.chromium.chromewebview";
+  return "org.monyhar.chromewebview";
 }
 
 WebViewGCMProfileServiceFactory::WebViewGCMProfileServiceFactory()

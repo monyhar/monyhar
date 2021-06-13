@@ -263,7 +263,7 @@ promise_test(async t => {
 ### What about testdriver-vendor.js?
 
 The file [testdriver-vendor.js](https://github.com/web-platform-tests/wpt/blob/master/resources/testdriver-vendor.js) is the equivalent to testdriver-extra.js above, except it is
-run instead of testdriver-extra.js in browser-specific test environments. For example, in [Chromium web_tests](https://cs.chromium.org/chromium/src/third_party/blink/web_tests/).
+run instead of testdriver-extra.js in browser-specific test environments. For example, in [Chromium web_tests](https://cs.monyhar.org/monyhar/src/third_party/blink/web_tests/).
 
 ### What if I need to return a value from my testdriver API?
 

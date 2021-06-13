@@ -75,15 +75,15 @@ constexpr base::FilePath::CharType kArcExternalFilesRoot[] =
     FILE_PATH_LITERAL("/external_files");
 // Sync with the volume provider in ARC++ side.
 constexpr char kArcRemovableMediaContentUrlPrefix[] =
-    "content://org.chromium.arc.volumeprovider/";
+    "content://org.monyhar.arc.volumeprovider/";
 // The dummy UUID of the MyFiles volume is taken from
 // components/arc/volume_mounter/arc_volume_mounter_bridge.cc.
 // TODO(crbug.com/929031): Move MyFiles constants to a common place.
 constexpr char kArcMyFilesContentUrlPrefix[] =
-    "content://org.chromium.arc.volumeprovider/"
+    "content://org.monyhar.arc.volumeprovider/"
     "0000000000000000000000000000CAFEF00D2019/";
 constexpr char kArcDriveContentUrlPrefix[] =
-    "content://org.chromium.arc.volumeprovider/MyDrive/";
+    "content://org.monyhar.arc.volumeprovider/MyDrive/";
 
 // Helper function for |ConvertToContentUrls|.
 void OnSingleContentUrlResolved(const base::RepeatingClosure& barrier_closure,

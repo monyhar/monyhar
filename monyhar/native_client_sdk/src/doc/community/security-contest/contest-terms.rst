@@ -117,7 +117,7 @@ I. Binding Agreement
       use Native Client to produce or have the potential to produce
       behavior prohibited by Native Client's security policies and
       design which can be found at
-      http://src.chromium.org/viewvc/native_client/trunk/src/native_client/README.html.
+      http://src.monyhar.org/viewvc/native_client/trunk/src/native_client/README.html.
       Google reserves the right to modify the security policies and
       design at any time. An example of an Exploit would be producing
       file system or network access outside of the scope of

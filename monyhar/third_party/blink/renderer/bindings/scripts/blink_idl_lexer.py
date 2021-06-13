@@ -47,7 +47,7 @@ PLY:
     http://www.dabeaz.com/ply/
 
 Design doc:
-http://www.chromium.org/developers/design-documents/idl-compiler#TOC-Front-end
+http://www.monyhar.org/developers/design-documents/idl-compiler#TOC-Front-end
 """
 
 # Disable attribute validation, as lint can't import parent class to check

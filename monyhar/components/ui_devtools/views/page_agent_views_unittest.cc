@@ -162,7 +162,7 @@ TEST_F(PageAgentViewsTest, GetResourceTree) {
 
 TEST_F(PageAgentViewsTest, GetResourceContent) {
   auto result = GetResourceContent(
-      "chromium/src/components/test/data/ui_devtools/test_file.cc?l=0");
+      "monyhar/src/components/test/data/ui_devtools/test_file.cc?l=0");
 
   EXPECT_TRUE(result.first);
   EXPECT_NE(result.second, "");
@@ -178,13 +178,13 @@ TEST_F(PageAgentViewsTest, GetResourceContentFailsOnBadURL) {
 
   // Test if URL doesn't have line number.
   result = GetResourceContent(
-      "chromium/src/components/test/data/ui_devtools/test_file.cc");
+      "monyhar/src/components/test/data/ui_devtools/test_file.cc");
 
   EXPECT_FALSE(result.first);
   EXPECT_EQ(result.second, "");
 
   // Test if URL isn't a real file.
-  result = GetResourceContent("chromium/src/not/a/real/file.cc?l=0");
+  result = GetResourceContent("monyhar/src/not/a/real/file.cc?l=0");
 
   EXPECT_FALSE(result.first);
   EXPECT_EQ(result.second, "");

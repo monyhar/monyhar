@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.webfeed;
+package org.monyhar.chrome.browser.feed.webfeed;
 
 import androidx.annotation.IdRes;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
+import org.monyhar.base.Callback;
 
 /**
  * Class containing all data that customizes the contents displayed in the dialog.

@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab;
+package org.monyhar.chrome.browser.tab;
 
 import android.view.ViewGroup;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.content_public.browser.RenderWidgetHostView;
-import org.chromium.ui.base.ViewAndroidDelegate;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.Callback;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.content_public.browser.RenderWidgetHostView;
+import org.monyhar.ui.base.ViewAndroidDelegate;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Implementation of the abstract class {@link ViewAndroidDelegate} for Chrome.

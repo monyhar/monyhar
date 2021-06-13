@@ -17,6 +17,6 @@ js_type_check("closure_compile") {
 js_library("web_app_internals") {
   deps = [
     "//chrome/browser/ui/webui/internals/web_app:mojo_bindings_js_library_for_compile",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }

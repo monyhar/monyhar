@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.datareduction;
+package org.monyhar.chrome.browser.datareduction;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -14,18 +14,18 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.datareduction.settings.DataReductionPreferenceFragment;
-import org.chromium.chrome.browser.feature_engagement.TrackerFactory;
-import org.chromium.chrome.browser.net.spdyproxy.DataReductionProxySettings;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.profiles.ProfileManager;
-import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.feature_engagement.EventConstants;
-import org.chromium.components.feature_engagement.Tracker;
-import org.chromium.third_party.android.datausagechart.ChartDataUsageView;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.datareduction.settings.DataReductionPreferenceFragment;
+import org.monyhar.chrome.browser.feature_engagement.TrackerFactory;
+import org.monyhar.chrome.browser.net.spdyproxy.DataReductionProxySettings;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.profiles.ProfileManager;
+import org.monyhar.chrome.browser.settings.SettingsLauncherImpl;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.feature_engagement.EventConstants;
+import org.monyhar.components.feature_engagement.Tracker;
+import org.monyhar.third_party.android.datausagechart.ChartDataUsageView;
 
 /**
  * Specific {@link FrameLayout} that displays the data savings of Data Saver in the main menu.

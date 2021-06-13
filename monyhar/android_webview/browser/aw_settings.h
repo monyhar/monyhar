@@ -21,14 +21,14 @@ class AwRenderViewHostExt;
 
 class AwSettings : public content::WebContentsObserver {
  public:
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.android_webview.settings
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.android_webview.settings
   enum ForceDarkMode {
     FORCE_DARK_OFF = 0,
     FORCE_DARK_AUTO = 1,
     FORCE_DARK_ON = 2,
   };
 
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.android_webview.settings
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.android_webview.settings
   enum ForceDarkBehavior {
     FORCE_DARK_ONLY = 0,
     MEDIA_QUERY_ONLY = 1,

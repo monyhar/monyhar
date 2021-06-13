@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.util;
+package org.monyhar.chrome.test.util;
 
 import android.content.Context;
 import android.view.View;
@@ -10,18 +10,18 @@ import android.view.inputmethod.InputMethodManager;
 
 import org.hamcrest.Matchers;
 
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.browser.omnibox.LocationBarLayout;
-import org.chromium.chrome.browser.omnibox.UrlBar;
-import org.chromium.chrome.browser.omnibox.suggestions.AutocompleteCoordinator;
-import org.chromium.chrome.browser.omnibox.suggestions.DropdownItemViewInfo;
-import org.chromium.chrome.browser.omnibox.suggestions.OmniboxSuggestionUiType;
-import org.chromium.chrome.browser.omnibox.suggestions.OmniboxSuggestionsDropdown;
-import org.chromium.chrome.browser.omnibox.suggestions.header.HeaderView;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.content_public.browser.test.util.TouchCommon;
-import org.chromium.ui.modelutil.MVCListAdapter.ModelList;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.browser.omnibox.LocationBarLayout;
+import org.monyhar.chrome.browser.omnibox.UrlBar;
+import org.monyhar.chrome.browser.omnibox.suggestions.AutocompleteCoordinator;
+import org.monyhar.chrome.browser.omnibox.suggestions.DropdownItemViewInfo;
+import org.monyhar.chrome.browser.omnibox.suggestions.OmniboxSuggestionUiType;
+import org.monyhar.chrome.browser.omnibox.suggestions.OmniboxSuggestionsDropdown;
+import org.monyhar.chrome.browser.omnibox.suggestions.header.HeaderView;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.content_public.browser.test.util.TouchCommon;
+import org.monyhar.ui.modelutil.MVCListAdapter.ModelList;
 
 import java.util.concurrent.Callable;
 

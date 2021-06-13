@@ -97,7 +97,7 @@ AccessibilityHitTestingBrowserTest::GetViewBoundsInScreenCoordinates() {
       ->GetViewBoundsInScreenCoordinates();
 }
 
-  // http://www.chromium.org/developers/design-documents/blink-coordinate-spaces
+  // http://www.monyhar.org/developers/design-documents/blink-coordinate-spaces
   // If UseZoomForDSF is enabled, device scale factor gets applied going from
   // CSS to page pixels, i.e. before view offset.
   // if UseZoomForDSF is disabled, device scale factor gets applied going from

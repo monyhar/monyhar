@@ -52,23 +52,23 @@ if (is_android) {
     annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
 
     sources = [
-      "java/src/org/chromium/midi/MidiDeviceAndroid.java",
-      "java/src/org/chromium/midi/MidiInputPortAndroid.java",
-      "java/src/org/chromium/midi/MidiManagerAndroid.java",
-      "java/src/org/chromium/midi/MidiOutputPortAndroid.java",
-      "java/src/org/chromium/midi/UsbMidiDeviceAndroid.java",
-      "java/src/org/chromium/midi/UsbMidiDeviceFactoryAndroid.java",
+      "java/src/org/monyhar/midi/MidiDeviceAndroid.java",
+      "java/src/org/monyhar/midi/MidiInputPortAndroid.java",
+      "java/src/org/monyhar/midi/MidiManagerAndroid.java",
+      "java/src/org/monyhar/midi/MidiOutputPortAndroid.java",
+      "java/src/org/monyhar/midi/UsbMidiDeviceAndroid.java",
+      "java/src/org/monyhar/midi/UsbMidiDeviceFactoryAndroid.java",
     ]
   }
 
   generate_jni("midi_jni_headers") {
     sources = [
-      "java/src/org/chromium/midi/MidiDeviceAndroid.java",
-      "java/src/org/chromium/midi/MidiInputPortAndroid.java",
-      "java/src/org/chromium/midi/MidiManagerAndroid.java",
-      "java/src/org/chromium/midi/MidiOutputPortAndroid.java",
-      "java/src/org/chromium/midi/UsbMidiDeviceAndroid.java",
-      "java/src/org/chromium/midi/UsbMidiDeviceFactoryAndroid.java",
+      "java/src/org/monyhar/midi/MidiDeviceAndroid.java",
+      "java/src/org/monyhar/midi/MidiInputPortAndroid.java",
+      "java/src/org/monyhar/midi/MidiManagerAndroid.java",
+      "java/src/org/monyhar/midi/MidiOutputPortAndroid.java",
+      "java/src/org/monyhar/midi/UsbMidiDeviceAndroid.java",
+      "java/src/org/monyhar/midi/UsbMidiDeviceFactoryAndroid.java",
     ]
   }
 }

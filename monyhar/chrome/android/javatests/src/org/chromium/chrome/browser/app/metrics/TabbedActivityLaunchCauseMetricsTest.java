@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.app.metrics;
+package org.monyhar.chrome.browser.app.metrics;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -33,34 +33,34 @@ import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 import org.mockito.quality.Strictness;
 
-import org.chromium.android.support.PackageManagerWrapper;
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.test.util.ApplicationTestUtils;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.LauncherShortcutActivity;
-import org.chromium.chrome.browser.ServiceTabLauncher;
-import org.chromium.chrome.browser.ServiceTabLauncherJni;
-import org.chromium.chrome.browser.bookmarkswidget.BookmarkWidgetProxy;
-import org.chromium.chrome.browser.document.ChromeLauncherActivity;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.searchwidget.SearchActivity;
-import org.chromium.chrome.test.ChromeBrowserTestRule;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.ChromeApplicationTestUtils;
-import org.chromium.network.mojom.ReferrerPolicy;
-import org.chromium.ui.mojom.WindowOpenDisposition;
-import org.chromium.url.GURL;
+import org.monyhar.android.support.PackageManagerWrapper;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.test.util.ApplicationTestUtils;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.LauncherShortcutActivity;
+import org.monyhar.chrome.browser.ServiceTabLauncher;
+import org.monyhar.chrome.browser.ServiceTabLauncherJni;
+import org.monyhar.chrome.browser.bookmarkswidget.BookmarkWidgetProxy;
+import org.monyhar.chrome.browser.document.ChromeLauncherActivity;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.searchwidget.SearchActivity;
+import org.monyhar.chrome.test.ChromeBrowserTestRule;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.ChromeApplicationTestUtils;
+import org.monyhar.network.mojom.ReferrerPolicy;
+import org.monyhar.ui.mojom.WindowOpenDisposition;
+import org.monyhar.url.GURL;
 
 import java.util.Collections;
 import java.util.List;

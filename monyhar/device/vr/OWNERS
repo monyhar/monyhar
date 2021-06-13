@@ -1,6 +1,6 @@
-alcooper@chromium.org
-bajones@chromium.org
-bialpio@chromium.org
+alcooper@monyhar.org
+bajones@monyhar.org
+bialpio@monyhar.org
 
 per-file *.mojom=set noparent
 per-file *.mojom=file://ipc/SECURITY_OWNERS

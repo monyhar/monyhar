@@ -1578,7 +1578,7 @@ class AppCacheUpdateJobTest : public testing::Test,
     // Start update after data write completes asynchronously.
   }
 
-  // See http://code.google.com/p/chromium/issues/detail?id=95101
+  // See http://code.google.com/p/monyhar/issues/detail?id=95101
   void Bug95101Test() {
     MakeService();
     group_ = base::MakeRefCounted<AppCacheGroup>(

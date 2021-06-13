@@ -5,8 +5,8 @@
     "configuration": "android-pixel2-perf",
     "benchmark": "v8.browsing_mobile",
     "story_tags": "2019",
-    "patch": "https://chromium-review.googlesource.com/c/v8/v8/+/1784285",
-    "repository": "chromium"
+    "patch": "https://monyhar-review.googlesource.com/c/v8/v8/+/1784285",
+    "repository": "monyhar"
   },
   {
     "name": "Try job for v8: enable TurboProp as top-tier - Linux",
@@ -14,8 +14,8 @@
     "configuration": "linux-perf",
     "benchmark": "v8.browsing_desktop",
     "story_tags": "2019,2018",
-    "patch": "https://chromium-review.googlesource.com/c/v8/v8/+/1784285",
-    "repository": "chromium"
+    "patch": "https://monyhar-review.googlesource.com/c/v8/v8/+/1784285",
+    "repository": "monyhar"
   },
   {
     "name": "Try job for v8: enable TurboProp as mid-tier - Pixel 2",
@@ -23,8 +23,8 @@
     "configuration": "android-pixel2-perf",
     "benchmark": "v8.browsing_mobile",
     "story_tags": "2019",
-    "patch": "https://chromium-review.googlesource.com/c/v8/v8/+/2632600",
-    "repository": "chromium"
+    "patch": "https://monyhar-review.googlesource.com/c/v8/v8/+/2632600",
+    "repository": "monyhar"
   },
   {
     "name": "Try job for v8: enable TurboProp as mid-tier - Linux",
@@ -32,8 +32,8 @@
     "configuration": "linux-perf",
     "benchmark": "v8.browsing_desktop",
     "story_tags": "2019,2018",
-    "patch": "https://chromium-review.googlesource.com/c/v8/v8/+/2632600",
-    "repository": "chromium"
+    "patch": "https://monyhar-review.googlesource.com/c/v8/v8/+/2632600",
+    "repository": "monyhar"
   },
   {
     "name": "Try job for v8: enable TurboProp as mid-tier - Win10",
@@ -41,8 +41,8 @@
     "configuration": "win-10-perf",
     "benchmark": "v8.browsing_desktop",
     "story_tags": "2019,2018",
-    "patch": "https://chromium-review.googlesource.com/c/v8/v8/+/2632600",
-    "repository": "chromium"
+    "patch": "https://monyhar-review.googlesource.com/c/v8/v8/+/2632600",
+    "repository": "monyhar"
   },
   {
     "name": "Try job for v8: enable TurboProp as mid-tier - Speedometer - Pixel2",
@@ -50,8 +50,8 @@
     "configuration": "android-pixel2-perf",
     "benchmark": "speedometer2",
     "story": "Speedometer2",
-    "patch": "https://chromium-review.googlesource.com/c/v8/v8/+/2632600",
-    "repository": "chromium"
+    "patch": "https://monyhar-review.googlesource.com/c/v8/v8/+/2632600",
+    "repository": "monyhar"
   },
   {
     "name": "Try job for v8: enable TurboProp as mid-tier - Jetstream2 - Pixel2",
@@ -59,8 +59,8 @@
     "configuration": "android-pixel2-perf",
     "benchmark": "jetstream2",
     "story": "JetStream2",
-    "patch": "https://chromium-review.googlesource.com/c/v8/v8/+/2632600",
-    "repository": "chromium"
+    "patch": "https://monyhar-review.googlesource.com/c/v8/v8/+/2632600",
+    "repository": "monyhar"
   },
   {
     "name": "Try job for v8: enable TurboProp as mid-tier - Speedometer - Linux",
@@ -68,8 +68,8 @@
     "configuration": "linux-perf",
     "benchmark": "speedometer2",
     "story": "Speedometer2",
-    "patch": "https://chromium-review.googlesource.com/c/v8/v8/+/2632600",
-    "repository": "chromium"
+    "patch": "https://monyhar-review.googlesource.com/c/v8/v8/+/2632600",
+    "repository": "monyhar"
   },
   {
     "name": "Try job for v8: enable TurboProp as mid-tier - Jetstream2 - Linux",
@@ -77,8 +77,8 @@
     "configuration": "linux-perf",
     "benchmark": "jetstream2",
     "story": "JetStream2",
-    "patch": "https://chromium-review.googlesource.com/c/v8/v8/+/2632600",
-    "repository": "chromium"
+    "patch": "https://monyhar-review.googlesource.com/c/v8/v8/+/2632600",
+    "repository": "monyhar"
   },
   {
     "name": "Try job for v8: enable TurboProp as mid-tier - Speedometer - Win10",
@@ -86,8 +86,8 @@
     "configuration": "win-10-perf",
     "benchmark": "speedometer2",
     "story": "Speedometer2",
-    "patch": "https://chromium-review.googlesource.com/c/v8/v8/+/2632600",
-    "repository": "chromium"
+    "patch": "https://monyhar-review.googlesource.com/c/v8/v8/+/2632600",
+    "repository": "monyhar"
   },
   {
     "name": "Try job for v8: enable TurboProp as mid-tier - Jetstream2 - Win10",
@@ -95,7 +95,7 @@
     "configuration": "win-10-perf",
     "benchmark": "jetstream2",
     "story": "JetStream2",
-    "patch": "https://chromium-review.googlesource.com/c/v8/v8/+/2632600",
-    "repository": "chromium"
+    "patch": "https://monyhar-review.googlesource.com/c/v8/v8/+/2632600",
+    "repository": "monyhar"
   }
 ]

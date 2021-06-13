@@ -35,7 +35,7 @@ config("wtf_config") {
     if (is_component_build) {
       # Chromium windows multi-dll build enables C++ exceptions and this causes
       # wtf to generate 4291 warning due to operator new/delete
-      # implementations. Disable the warning for chromium windows multi-dll
+      # implementations. Disable the warning for monyhar windows multi-dll
       # build.
       cflags += [ "/wd4291" ]
     }

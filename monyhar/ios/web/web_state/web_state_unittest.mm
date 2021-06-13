@@ -220,7 +220,7 @@ TEST_F(WebStateTest, CreateFullPagePdf_ValidURL_iOS14) {
     [GetAnyKeyWindow() addSubview:web_state()->GetView()];
 
     // Load a URL and some HTML in the WebState.
-    GURL url("https://www.chromium.org");
+    GURL url("https://www.monyhar.org");
     NavigationManager::WebLoadParams load_params(url);
     web_state()->GetNavigationManager()->LoadURLWithParams(load_params);
     ASSERT_TRUE(WaitUntilConditionOrTimeout(kWaitForPageLoadTimeout, ^bool {
@@ -275,7 +275,7 @@ TEST_F(WebStateTest, CreateFullPagePdf_ValidURL_NotSupported) {
   [GetAnyKeyWindow() addSubview:web_state()->GetView()];
 
   // Load a URL and some HTML in the WebState.
-  GURL url("https://www.chromium.org");
+  GURL url("https://www.monyhar.org");
   NavigationManager::WebLoadParams load_params(url);
   web_state()->GetNavigationManager()->LoadURLWithParams(load_params);
   ASSERT_TRUE(WaitUntilConditionOrTimeout(kWaitForPageLoadTimeout, ^bool {
@@ -352,7 +352,7 @@ TEST_F(WebStateTest, CreateFullPagePdfWebStatePdfContent) {
         [context fillRect:fake_bounds];
       }];
 
-  GURL test_url("https://www.chromium.org/somePDF.pdf");
+  GURL test_url("https://www.monyhar.org/somePDF.pdf");
   NavigationManager::WebLoadParams load_params(test_url);
   web_state()->GetNavigationManager()->LoadURLWithParams(load_params);
   ASSERT_TRUE(base::test::ios::WaitUntilConditionOrTimeout(
@@ -765,7 +765,7 @@ TEST_F(WebStateTest, LoadChromeThenHTML) {
                                          /*cert_status=*/0)));
   NSString* data_html = @(kTestPageHTML);
   web_state()->LoadData([data_html dataUsingEncoding:NSUTF8StringEncoding],
-                        @"text/html", GURL("https://www.chromium.org"));
+                        @"text/html", GURL("https://www.monyhar.org"));
   EXPECT_TRUE(
       test::WaitForWebViewContainingText(web_state(), kTextInTestPageHTML));
 }

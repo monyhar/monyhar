@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.form;
+package org.monyhar.chrome.browser.autofill_assistant.form;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.autofill_assistant.AssistantTextUtils;
-import org.chromium.chrome.browser.autofill_assistant.LayoutUtils;
-import org.chromium.chrome.browser.autofill_assistant.user_data.AssistantChoiceList;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.autofill_assistant.AssistantTextUtils;
+import org.monyhar.chrome.browser.autofill_assistant.LayoutUtils;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantChoiceList;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,7 +46,7 @@ class AssistantFormSelectionInput extends AssistantFormInput {
         ViewGroup root = (ViewGroup) inflater.inflate(
                 R.layout.autofill_assistant_form_selection_input, parent,
                 /* attachToRoot= */ false);
-        TextView label = root.findViewById(org.chromium.chrome.autofill_assistant.R.id.label);
+        TextView label = root.findViewById(org.monyhar.chrome.autofill_assistant.R.id.label);
         if (mLabel.isEmpty()) {
             label.setVisibility(View.GONE);
         } else {

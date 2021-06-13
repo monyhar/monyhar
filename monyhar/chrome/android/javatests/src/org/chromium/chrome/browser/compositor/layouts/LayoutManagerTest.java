@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.layouts;
+package org.monyhar.chrome.browser.compositor.layouts;
 
 import static android.os.Build.VERSION_CODES.N;
 import static android.os.Build.VERSION_CODES.N_MR1;
@@ -13,10 +13,10 @@ import static org.mockito.Mockito.doAnswer;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import static org.chromium.base.test.util.Restriction.RESTRICTION_TYPE_LOW_END_DEVICE;
-import static org.chromium.base.test.util.Restriction.RESTRICTION_TYPE_NON_LOW_END_DEVICE;
-import static org.chromium.chrome.browser.tab.TabCreationState.LIVE_IN_BACKGROUND;
-import static org.chromium.chrome.test.util.ViewUtils.createMotionEvent;
+import static org.monyhar.base.test.util.Restriction.RESTRICTION_TYPE_LOW_END_DEVICE;
+import static org.monyhar.base.test.util.Restriction.RESTRICTION_TYPE_NON_LOW_END_DEVICE;
+import static org.monyhar.chrome.browser.tab.TabCreationState.LIVE_IN_BACKGROUND;
+import static org.monyhar.chrome.test.util.ViewUtils.createMotionEvent;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -40,54 +40,54 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.stubbing.Answer;
 
-import org.chromium.base.Log;
-import org.chromium.base.MathUtils;
-import org.chromium.base.supplier.ObservableSupplierImpl;
-import org.chromium.base.supplier.OneshotSupplierImpl;
-import org.chromium.base.test.UiThreadTest;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.Restriction;
-import org.chromium.chrome.browser.accessibility_tab_switcher.OverviewListLayout;
-import org.chromium.chrome.browser.compositor.layouts.content.TabContentManager;
-import org.chromium.chrome.browser.flags.CachedFeatureFlags;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
-import org.chromium.chrome.browser.layouts.LayoutStateProvider;
-import org.chromium.chrome.browser.layouts.LayoutType;
-import org.chromium.chrome.browser.layouts.animation.CompositorAnimationHandler;
-import org.chromium.chrome.browser.tab.MockTab;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabLaunchType;
-import org.chromium.chrome.browser.tabmodel.TabModel;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabModelUtils;
-import org.chromium.chrome.browser.tasks.tab_management.TabListCoordinator;
-import org.chromium.chrome.browser.tasks.tab_management.TabSwitcher;
-import org.chromium.chrome.browser.tasks.tab_management.TabUiTestHelper;
-import org.chromium.chrome.browser.theme.TopUiThemeColorProvider;
-import org.chromium.chrome.browser.util.ChromeAccessibilityUtil;
-import org.chromium.chrome.features.start_surface.StartSurface;
-import org.chromium.chrome.features.start_surface.StartSurfaceLayout;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.chrome.test.util.browser.tabmodel.MockTabModel.MockTabModelDelegate;
-import org.chromium.chrome.test.util.browser.tabmodel.MockTabModelSelector;
-import org.chromium.components.browser_ui.widget.gesture.SwipeGestureListener.ScrollDirection;
-import org.chromium.components.browser_ui.widget.gesture.SwipeGestureListener.SwipeHandler;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.ui.test.util.UiRestriction;
+import org.monyhar.base.Log;
+import org.monyhar.base.MathUtils;
+import org.monyhar.base.supplier.ObservableSupplierImpl;
+import org.monyhar.base.supplier.OneshotSupplierImpl;
+import org.monyhar.base.test.UiThreadTest;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.Restriction;
+import org.monyhar.chrome.browser.accessibility_tab_switcher.OverviewListLayout;
+import org.monyhar.chrome.browser.compositor.layouts.content.TabContentManager;
+import org.monyhar.chrome.browser.flags.CachedFeatureFlags;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.chrome.browser.layouts.LayoutStateProvider;
+import org.monyhar.chrome.browser.layouts.LayoutType;
+import org.monyhar.chrome.browser.layouts.animation.CompositorAnimationHandler;
+import org.monyhar.chrome.browser.tab.MockTab;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabLaunchType;
+import org.monyhar.chrome.browser.tabmodel.TabModel;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabModelUtils;
+import org.monyhar.chrome.browser.tasks.tab_management.TabListCoordinator;
+import org.monyhar.chrome.browser.tasks.tab_management.TabSwitcher;
+import org.monyhar.chrome.browser.tasks.tab_management.TabUiTestHelper;
+import org.monyhar.chrome.browser.theme.TopUiThemeColorProvider;
+import org.monyhar.chrome.browser.util.ChromeAccessibilityUtil;
+import org.monyhar.chrome.features.start_surface.StartSurface;
+import org.monyhar.chrome.features.start_surface.StartSurfaceLayout;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.chrome.test.util.browser.tabmodel.MockTabModel.MockTabModelDelegate;
+import org.monyhar.chrome.test.util.browser.tabmodel.MockTabModelSelector;
+import org.monyhar.components.browser_ui.widget.gesture.SwipeGestureListener.ScrollDirection;
+import org.monyhar.components.browser_ui.widget.gesture.SwipeGestureListener.SwipeHandler;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.ui.test.util.UiRestriction;
 
 import java.util.concurrent.TimeoutException;
 
 /**
- * Unit tests for {@link org.chromium.chrome.browser.compositor.layouts.LayoutManagerChrome}
+ * Unit tests for {@link org.monyhar.chrome.browser.compositor.layouts.LayoutManagerChrome}
  */
 @RunWith(ChromeJUnit4ClassRunner.class)
 public class LayoutManagerTest implements MockTabModelDelegate {

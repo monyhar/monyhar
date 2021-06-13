@@ -48,8 +48,8 @@
 #include "components/prefs/pref_service.h"
 #include "content/public/browser/web_contents.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"
-#include "third_party/libaddressinput/chromium/chrome_metadata_source.h"
-#include "third_party/libaddressinput/chromium/chrome_storage_impl.h"
+#include "third_party/libaddressinput/monyhar/chrome_metadata_source.h"
+#include "third_party/libaddressinput/monyhar/chrome_storage_impl.h"
 #include "ui/base/l10n/l10n_util.h"
 
 namespace autofill {

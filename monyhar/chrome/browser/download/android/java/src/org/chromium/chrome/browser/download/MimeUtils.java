@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download;
+package org.monyhar.chrome.browser.download;
 
 import android.text.TextUtils;
 import android.webkit.MimeTypeMap;
 
-import org.chromium.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.CalledByNative;
 
 import java.util.ArrayList;
 import java.util.Arrays;

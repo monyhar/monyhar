@@ -80,7 +80,7 @@ IN_PROC_BROWSER_TEST_F(CrossSiteRedirectorBrowserTest,
 using EvalJsBrowserTest = ContentBrowserTest;
 
 // TODO(mslekova): Re-enable once test expectations are updated,
-// see chromium:916975
+// see monyhar:916975
 IN_PROC_BROWSER_TEST_F(EvalJsBrowserTest, DISABLED_EvalJsErrors) {
   ASSERT_TRUE(embedded_test_server()->Start());
   EXPECT_TRUE(

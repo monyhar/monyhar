@@ -403,8 +403,8 @@ test("device_unittests") {
 
 if (is_android) {
   bluetooth_java_sources_needing_jni = [
-    "bluetooth/test/android/java/src/org/chromium/device/bluetooth/Fakes.java",
-    "bluetooth/test/android/java/src/org/chromium/device/bluetooth/ChromeBluetoothScanFilter.java",
+    "bluetooth/test/android/java/src/org/monyhar/device/bluetooth/Fakes.java",
+    "bluetooth/test/android/java/src/org/monyhar/device/bluetooth/ChromeBluetoothScanFilter.java",
   ]
 
   generate_jni("bluetooth_test_jni_headers") {
@@ -428,8 +428,8 @@ if (is_android) {
 
   junit_binary("device_junit_tests") {
     sources = [
-      "gamepad/android/junit/src/org/chromium/device/gamepad/GamepadDeviceTest.java",
-      "gamepad/android/junit/src/org/chromium/device/gamepad/GamepadMappingsTest.java",
+      "gamepad/android/junit/src/org/monyhar/device/gamepad/GamepadDeviceTest.java",
+      "gamepad/android/junit/src/org/monyhar/device/gamepad/GamepadMappingsTest.java",
     ]
     deps = [
       "$google_play_services_package:google_play_services_base_java",

@@ -20,7 +20,7 @@ import xvfb
 # Importing it and using its get_sandbox_env breaks test runs on Linux
 # (it seems to unset DISPLAY).
 CHROME_SANDBOX_ENV = 'CHROME_DEVEL_SANDBOX'
-CHROME_SANDBOX_PATH = '/opt/chromium/chrome_sandbox'
+CHROME_SANDBOX_PATH = '/opt/monyhar/chrome_sandbox'
 
 
 def main(argv):

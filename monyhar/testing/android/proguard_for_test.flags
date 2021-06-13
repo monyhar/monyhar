@@ -18,7 +18,7 @@
 
 # Keep classes implementing ParameterProvider -- these will be instantiated
 # via reflection.
--keep class * implements org.chromium.base.test.params.ParameterProvider {
+-keep class * implements org.monyhar.base.test.params.ParameterProvider {
   *;
 }
 
@@ -40,8 +40,8 @@
 # This is a workaround for b/147584922 - otherwise, R8 would generate a synthetic
 # abstract method for the subsclass FeedOfflineIndicator, which Mockito would not
 # mock.
--keep,allowobfuscation @interface org.chromium.base.annotations.MockedInTests
--keep @org.chromium.base.annotations.MockedInTests class * {
+-keep,allowobfuscation @interface org.monyhar.base.annotations.MockedInTests
+-keep @org.monyhar.base.annotations.MockedInTests class * {
   <methods>;
 }
 

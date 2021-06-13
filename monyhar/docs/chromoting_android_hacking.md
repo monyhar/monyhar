@@ -36,7 +36,7 @@ display log messages to the `LogCat` pane.
     1.  Eclipse should have generated .project and perhaps a .classpath file in
         your <project root>/src/ directory.
     1.  Replace/Add the .classpath file with the content from Below. Remember
-        that the path field should be the location of the chromium source
+        that the path field should be the location of the monyhar source
         relative to the current directory of your project.
 
 ```xml
@@ -112,7 +112,7 @@ display log messages to the `LogCat` pane.
 
 1.  Obtain the debug port
     1.  Go to Window > Open Perspective > DDMS
-    1.  In order for the app org.chromium.chromoting to show up, you must build
+    1.  In order for the app org.monyhar.chromoting to show up, you must build
         Debug instead of Retail
     1.  Note down the port number, should be 8600 or 8700
 1.  Setup a debug configuration
@@ -125,7 +125,7 @@ display log messages to the `LogCat` pane.
     1.  Right click on the Chromoting [Application](Remoting.md) and select Edit
         source Lookup Path
     1.  Click "Add" and select File System Directory
-    1.  Select the location of your chromium checkout,
+    1.  Select the location of your monyhar checkout,
         e.g. <project root>/src/remoting/android
 1.  Debugging
     1.  To add a breakpoint, simply open the source file and hit Ctrl+Shift+B to
@@ -135,7 +135,7 @@ display log messages to the `LogCat` pane.
 
 With the Android Device Monitor open, look under `Devices`, expand the entry for
 the device on which you want to debug, and select the entry for
-`org.chromium.chromoting` (it must already be running). This forwards the JVM
+`org.monyhar.chromoting` (it must already be running). This forwards the JVM
 debugging connection to your local port 8700.  In your shell, do `$ jdb -attach
 localhost:8700`.
 
@@ -145,7 +145,7 @@ The Chromium build system provides a convenience wrapper script that can be used
 to easily launch GDB. Run
 
 ```shell
-$ build/android/adb_gdb --package-name=org.chromium.chromoting \
+$ build/android/adb_gdb --package-name=org.monyhar.chromoting \
 --activity=.Chromoting --start
 ```
 

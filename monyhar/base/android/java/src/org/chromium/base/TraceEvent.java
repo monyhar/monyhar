@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base;
+package org.monyhar.base;
 
 import android.os.Looper;
 import android.os.MessageQueue;
@@ -14,10 +14,10 @@ import androidx.annotation.AnyThread;
 import androidx.annotation.Nullable;
 import androidx.annotation.UiThread;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.MainDex;
-import org.chromium.base.annotations.NativeMethods;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.MainDex;
+import org.monyhar.base.annotations.NativeMethods;
 
 import java.lang.reflect.Method;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -89,7 +89,7 @@ public class TraceEvent implements AutoCloseable {
                 mGetSystemPropertyMethod = mSystemPropertiesClass.getMethod("get", String.class);
             } catch (Exception e) {
                 // If we hit reflection errors, just disable atrace support.
-                org.chromium.base.Log.w(TAG, "Reflection error", e);
+                org.monyhar.base.Log.w(TAG, "Reflection error", e);
                 mIsTraceTagEnabledMethod = null;
             }
             // If there's an active atrace session, also start collecting early trace events.

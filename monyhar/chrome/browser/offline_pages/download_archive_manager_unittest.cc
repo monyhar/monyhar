@@ -21,7 +21,7 @@ const char* kPrivateDir = "/private/";
 const char* kTemporaryDir = "/temporary/";
 const char* kPublicDir = "/public/";
 const char* kChromePublicSdCardDir =
-    "/sd-card/1234-5678/Android/data/org.chromium.chrome/files/Download";
+    "/sd-card/1234-5678/Android/data/org.monyhar.chrome/files/Download";
 }  // namespace
 
 class DownloadArchiveManagerTest : public testing::Test {

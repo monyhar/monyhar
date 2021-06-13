@@ -145,7 +145,7 @@ class BuildStats(object):
 
 
 def BuildLinkFromBuildId(build_id):
-  return 'http://ci.chromium.org/b/%s' % build_id
+  return 'http://ci.monyhar.org/b/%s' % build_id
 
 
 # These explicit overrides could likely be replaced by using regular dicts with

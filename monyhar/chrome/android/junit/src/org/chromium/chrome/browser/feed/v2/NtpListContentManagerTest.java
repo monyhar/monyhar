@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.v2;
+package org.monyhar.chrome.browser.feed.v2;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
@@ -27,9 +27,9 @@ import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.feed.NtpListContentManager;
-import org.chromium.chrome.browser.xsurface.ListContentManagerObserver;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.feed.NtpListContentManager;
+import org.monyhar.chrome.browser.xsurface.ListContentManagerObserver;
 
 import java.util.List;
 

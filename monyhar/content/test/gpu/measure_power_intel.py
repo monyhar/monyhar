@@ -17,7 +17,7 @@ Selenium 4 is required for Edge. Selenium 4.00-alpha5 or later is recommended:
   `pip install selenium==4.0.0a5`
 
 And finally install the web drivers for Chrome (and Edge if needed):
-  http://chromedriver.chromium.org/downloads
+  http://chromedriver.monyhar.org/downloads
   https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
 
 Sample runs:
@@ -27,7 +27,7 @@ python measure_power_intel.py --browser=canary --duration=10 --delay=5
   --extra-browser-args="--no-sandbox"
 
 Supported browsers (--browser=xxx): 'stable', 'beta', 'dev', 'canary',
-  'chromium', 'edge', and path_to_exe_file.
+  'monyhar', 'edge', and path_to_exe_file.
 For Edge from insider channels (beta, dev, can), use path_to_exe_file.
 
 It is recommended to test with optimized builds of Chromium e.g. these GN args:
@@ -84,7 +84,7 @@ CHROME_CANARY_PATH_MAC = (
     "/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary"
 )
 
-SUPPORTED_BROWSERS = ['stable', 'beta', 'dev', 'canary', 'chromium', 'edge']
+SUPPORTED_BROWSERS = ['stable', 'beta', 'dev', 'canary', 'monyhar', 'edge']
 
 
 def LocateBrowserWin(options_browser):
@@ -99,7 +99,7 @@ def LocateBrowserWin(options_browser):
     browser = CHROME_DEV_PATH_WIN
   elif options_browser == 'canary':
     browser = os.path.join(os.getenv('LOCALAPPDATA'), CHROME_CANARY_PATH_WIN)
-  elif options_browser == 'chromium':
+  elif options_browser == 'monyhar':
     browser = os.path.join(os.getenv('LOCALAPPDATA'), CHROMIUM_PATH_WIN)
   elif options_browser.endswith(".exe"):
     browser = options_browser
@@ -154,10 +154,10 @@ def CreateWebDriver(browser, user_data_dir, url, fullscreen,
                     extra_browser_args):
   if browser == 'edge' or browser.endswith('msedge.exe'):
     options = webdriver.EdgeOptions()
-    # Set use_chromium to true or an error will be triggered that the latest
+    # Set use_monyhar to true or an error will be triggered that the latest
     # MSEdgeDriver doesn't support an older version (non-chrome based) of
     # MSEdge.
-    options.use_chromium = True
+    options.use_monyhar = True
     options.binary_location = browser
     for arg in extra_browser_args:
       options.add_argument(arg)

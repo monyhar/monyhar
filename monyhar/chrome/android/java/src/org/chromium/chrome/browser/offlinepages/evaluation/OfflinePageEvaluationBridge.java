@@ -2,22 +2,22 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.offlinepages.evaluation;
+package org.monyhar.chrome.browser.offlinepages.evaluation;
 
-import org.chromium.base.Callback;
-import org.chromium.base.Log;
-import org.chromium.base.ObserverList;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.task.TaskRunner;
-import org.chromium.base.task.TaskTraits;
-import org.chromium.chrome.browser.offlinepages.ClientId;
-import org.chromium.chrome.browser.offlinepages.OfflinePageItem;
-import org.chromium.chrome.browser.offlinepages.SavePageRequest;
-import org.chromium.chrome.browser.profiles.Profile;
+import org.monyhar.base.Callback;
+import org.monyhar.base.Log;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.task.TaskRunner;
+import org.monyhar.base.task.TaskTraits;
+import org.monyhar.chrome.browser.offlinepages.ClientId;
+import org.monyhar.chrome.browser.offlinepages.OfflinePageItem;
+import org.monyhar.chrome.browser.offlinepages.SavePageRequest;
+import org.monyhar.chrome.browser.profiles.Profile;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -54,7 +54,7 @@ public class OfflinePageEvaluationBridge {
          * Event fired when a request is completed.
          * @param request The completed request.
          * @param status The status of the completion, see
-         * org.chromium.components.offlinepages.BackgroundSavePageResult.
+         * org.monyhar.components.offlinepages.BackgroundSavePageResult.
          */
         public void savePageRequestCompleted(SavePageRequest request, int status) {}
 

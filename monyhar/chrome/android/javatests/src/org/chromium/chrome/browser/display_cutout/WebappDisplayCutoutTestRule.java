@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.display_cutout;
+package org.monyhar.chrome.browser.display_cutout;
 
 import android.annotation.TargetApi;
 import android.content.Intent;
@@ -14,11 +14,11 @@ import org.hamcrest.Matchers;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.browser.ShortcutHelper;
-import org.chromium.chrome.browser.browserservices.intents.WebDisplayMode;
-import org.chromium.chrome.browser.webapps.WebappActivity;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.browser.ShortcutHelper;
+import org.monyhar.chrome.browser.browserservices.intents.WebDisplayMode;
+import org.monyhar.chrome.browser.webapps.WebappActivity;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

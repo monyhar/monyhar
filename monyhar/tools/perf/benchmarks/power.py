@@ -12,7 +12,7 @@ from telemetry.timeline import chrome_trace_category_filter
 from telemetry.web_perf import timeline_based_measurement
 
 
-@benchmark.Info(emails=['brucedawson@chromium.org'],
+@benchmark.Info(emails=['brucedawson@monyhar.org'],
                 documentation_url='https://bit.ly/power-benchmarks')
 class PowerDesktop(perf_benchmark.PerfBenchmark):
   # TODO(rmhasan): Remove the SUPPORTED_PLATFORMS lists.

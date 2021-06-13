@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.gesturenav;
+package org.monyhar.chrome.browser.gesturenav;
 
 import android.graphics.Point;
 import android.util.DisplayMetrics;
 
-import org.chromium.chrome.browser.tabbed_mode.TabbedRootUiCoordinator;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.chrome.browser.tabbed_mode.TabbedRootUiCoordinator;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /** Utility class providing gesture actions for tests. */
 public final class GestureNavigationUtils {

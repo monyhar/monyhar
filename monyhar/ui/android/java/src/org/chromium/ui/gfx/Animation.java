@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.gfx;
+package org.monyhar.ui.gfx;
 
 import android.annotation.TargetApi;
 import android.os.Build;
 import android.provider.Settings;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
 
 /**
  * Provides utility methods relating to system animation state on the current platform (i.e. Android

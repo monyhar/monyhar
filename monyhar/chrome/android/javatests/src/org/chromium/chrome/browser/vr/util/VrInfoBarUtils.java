@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr.util;
+package org.monyhar.chrome.browser.vr.util;
 
-import static org.chromium.chrome.browser.vr.XrTestFramework.POLL_CHECK_INTERVAL_SHORT_MS;
-import static org.chromium.chrome.browser.vr.XrTestFramework.POLL_TIMEOUT_SHORT_MS;
+import static org.monyhar.chrome.browser.vr.XrTestFramework.POLL_CHECK_INTERVAL_SHORT_MS;
+import static org.monyhar.chrome.browser.vr.XrTestFramework.POLL_TIMEOUT_SHORT_MS;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.test.ChromeActivityTestRule;
-import org.chromium.chrome.test.util.InfoBarUtil;
-import org.chromium.components.infobars.InfoBar;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.test.ChromeActivityTestRule;
+import org.monyhar.chrome.test.util.InfoBarUtil;
+import org.monyhar.components.infobars.InfoBar;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

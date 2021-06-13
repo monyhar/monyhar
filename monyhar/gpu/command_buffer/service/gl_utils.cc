@@ -10,7 +10,7 @@
 #include "gpu/command_buffer/common/capabilities.h"
 #include "gpu/command_buffer/service/error_state.h"
 #include "gpu/command_buffer/service/feature_info.h"
-#include "gpu/command_buffer/service/gles2_cmd_copy_texture_chromium.h"
+#include "gpu/command_buffer/service/gles2_cmd_copy_texture_monyhar.h"
 #include "gpu/command_buffer/service/logger.h"
 #include "gpu/command_buffer/service/texture_manager.h"
 #include "ui/gl/gl_version_info.h"
@@ -269,7 +269,7 @@ void PopulateNumericCapabilities(Capabilities* caps,
     }
   }
   if (feature_info->feature_flags().multisampled_render_to_texture ||
-      feature_info->feature_flags().chromium_framebuffer_multisample ||
+      feature_info->feature_flags().monyhar_framebuffer_multisample ||
       feature_info->IsWebGL2OrES3OrHigherContext()) {
     glGetIntegerv(GL_MAX_SAMPLES, &caps->max_samples);
   }
@@ -933,9 +933,9 @@ bool ValidateCopyTexFormatHelper(const FeatureInfo* feature_info,
     return false;
   }
   if (feature_info->IsWebGL2OrES3OrHigherContext() ||
-      (feature_info->feature_flags().chromium_color_buffer_float_rgb &&
+      (feature_info->feature_flags().monyhar_color_buffer_float_rgb &&
        internal_format == GL_RGB32F) ||
-      (feature_info->feature_flags().chromium_color_buffer_float_rgba &&
+      (feature_info->feature_flags().monyhar_color_buffer_float_rgba &&
        internal_format == GL_RGBA32F)) {
     if (GLES2Util::IsSizedColorFormat(internal_format)) {
       int sr, sg, sb, sa;
@@ -1114,12 +1114,12 @@ bool ValidateCopyTextureCHROMIUMInternalFormats(const FeatureInfo* feature_info,
     case GL_RGB32F:
       valid_dest_format =
           feature_info->ext_color_buffer_float_available() ||
-          feature_info->feature_flags().chromium_color_buffer_float_rgb;
+          feature_info->feature_flags().monyhar_color_buffer_float_rgb;
       break;
     case GL_RGBA32F:
       valid_dest_format =
           feature_info->ext_color_buffer_float_available() ||
-          feature_info->feature_flags().chromium_color_buffer_float_rgba;
+          feature_info->feature_flags().monyhar_color_buffer_float_rgba;
       break;
     case GL_ALPHA:
     case GL_LUMINANCE:

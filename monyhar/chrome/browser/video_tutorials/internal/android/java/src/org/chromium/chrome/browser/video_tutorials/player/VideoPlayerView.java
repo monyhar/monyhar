@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.video_tutorials.player;
+package org.monyhar.chrome.browser.video_tutorials.player;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,11 +11,11 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 
-import org.chromium.chrome.browser.video_tutorials.PlaybackStateObserver.WatchStateInfo;
-import org.chromium.chrome.browser.video_tutorials.PlaybackStateObserver.WatchStateInfo.State;
-import org.chromium.chrome.browser.video_tutorials.R;
-import org.chromium.components.thinwebview.ThinWebView;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.chrome.browser.video_tutorials.PlaybackStateObserver.WatchStateInfo;
+import org.monyhar.chrome.browser.video_tutorials.PlaybackStateObserver.WatchStateInfo.State;
+import org.monyhar.chrome.browser.video_tutorials.R;
+import org.monyhar.components.thinwebview.ThinWebView;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * Represents the view component of the media player. Contains loading screen, language picker, and

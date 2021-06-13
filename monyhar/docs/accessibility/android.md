@@ -17,7 +17,7 @@ and
 ## WebContentsAccessibility
 
 The main Java class that implements the accessibility protocol in Chrome is
-[https://cs.chromium.org/chromium/src/content/public/android/java/src/org/chromium/content/browser/accessibility/WebContentsAccessibilityImpl.java](WebContentsAccessibilityImpl.java). It implements the AccessibilityNodeProvider
+[https://cs.monyhar.org/monyhar/src/content/public/android/java/src/org/monyhar/content/browser/accessibility/WebContentsAccessibilityImpl.java](WebContentsAccessibilityImpl.java). It implements the AccessibilityNodeProvider
 interface, so a single Android View can be represented by an entire tree
 of virtual views. Note that WebContentsAccessibilityImpl represents an
 entire web page, including all frames. The ids in the java code are unique IDs,
@@ -44,7 +44,7 @@ point. That's called by the Android framework when we need to provide the
 info about one virtual view (a web node).
 
 We call into C++ code - 
-[https://cs.chromium.org/chromium/src/content/browser/accessibility/web_contents_accessibility_android.cc](web_contents_accessibility_android.cc) from
+[https://cs.monyhar.org/monyhar/src/content/browser/accessibility/web_contents_accessibility_android.cc](web_contents_accessibility_android.cc) from
 there, because all of the information about the accessibility tree is
 using the shared C++ BrowserAccessibilityManager code.
 

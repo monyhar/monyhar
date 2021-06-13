@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base;
+package org.monyhar.base;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.annotations.CheckDiscard;
-import org.chromium.build.BuildConfig;
+import org.monyhar.base.annotations.CheckDiscard;
+import org.monyhar.build.BuildConfig;
 
 import java.lang.ref.PhantomReference;
 import java.lang.ref.ReferenceQueue;
@@ -148,7 +148,7 @@ public class LifetimeAssert {
         if (BuildConfig.ENABLE_ASSERTS) {
             // This guaratees that the target object is reachable until after mSafeToGc value
             // is updated here. See comment on Reference.reachabilityFence and review comments
-            // on https://chromium-review.googlesource.com/c/chromium/src/+/1887151 for a
+            // on https://monyhar-review.googlesource.com/c/monyhar/src/+/1887151 for a
             // problematic example. This synchronized is used instead of calling
             // reachabilityFence because robolectric has problems mocking out that method,
             // and this should work for all Android versions.

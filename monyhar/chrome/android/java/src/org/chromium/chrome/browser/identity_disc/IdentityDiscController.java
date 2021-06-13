@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.identity_disc;
+package org.monyhar.chrome.browser.identity_disc;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -10,35 +10,35 @@ import android.graphics.drawable.Drawable;
 import androidx.annotation.DimenRes;
 import androidx.annotation.IntDef;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ObserverList;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.feature_engagement.TrackerFactory;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.lifecycle.NativeInitObserver;
-import org.chromium.chrome.browser.ntp.NewTabPage;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.settings.MainSettings;
-import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
-import org.chromium.chrome.browser.signin.services.IdentityServicesProvider;
-import org.chromium.chrome.browser.signin.services.ProfileDataCache;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.toolbar.ButtonData;
-import org.chromium.chrome.browser.toolbar.ButtonData.ButtonSpec;
-import org.chromium.chrome.browser.toolbar.ButtonDataImpl;
-import org.chromium.chrome.browser.toolbar.ButtonDataProvider;
-import org.chromium.chrome.browser.user_education.IPHCommandBuilder;
-import org.chromium.chrome.features.start_surface.StartSurfaceState;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.feature_engagement.EventConstants;
-import org.chromium.components.feature_engagement.FeatureConstants;
-import org.chromium.components.feature_engagement.Tracker;
-import org.chromium.components.signin.base.CoreAccountInfo;
-import org.chromium.components.signin.identitymanager.ConsentLevel;
-import org.chromium.components.signin.identitymanager.IdentityManager;
-import org.chromium.components.signin.identitymanager.PrimaryAccountChangeEvent;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.feature_engagement.TrackerFactory;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.lifecycle.NativeInitObserver;
+import org.monyhar.chrome.browser.ntp.NewTabPage;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.settings.MainSettings;
+import org.monyhar.chrome.browser.settings.SettingsLauncherImpl;
+import org.monyhar.chrome.browser.signin.services.IdentityServicesProvider;
+import org.monyhar.chrome.browser.signin.services.ProfileDataCache;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.toolbar.ButtonData;
+import org.monyhar.chrome.browser.toolbar.ButtonData.ButtonSpec;
+import org.monyhar.chrome.browser.toolbar.ButtonDataImpl;
+import org.monyhar.chrome.browser.toolbar.ButtonDataProvider;
+import org.monyhar.chrome.browser.user_education.IPHCommandBuilder;
+import org.monyhar.chrome.features.start_surface.StartSurfaceState;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.feature_engagement.EventConstants;
+import org.monyhar.components.feature_engagement.FeatureConstants;
+import org.monyhar.components.feature_engagement.Tracker;
+import org.monyhar.components.signin.base.CoreAccountInfo;
+import org.monyhar.components.signin.identitymanager.ConsentLevel;
+import org.monyhar.components.signin.identitymanager.IdentityManager;
+import org.monyhar.components.signin.identitymanager.PrimaryAccountChangeEvent;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

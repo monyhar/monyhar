@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.long_screenshots.bitmap_generation;
+package org.monyhar.chrome.browser.share.long_screenshots.bitmap_generation;
 
 import android.graphics.Bitmap;
 import android.graphics.Rect;
@@ -10,7 +10,7 @@ import android.graphics.Rect;
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
+import org.monyhar.base.Callback;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

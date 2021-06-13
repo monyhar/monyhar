@@ -203,7 +203,7 @@ class ChromeDriver(object):
         chrome_switches = []
       # Workaround for crbug.com/611886.
       chrome_switches.append('no-sandbox')
-      # https://bugs.chromium.org/p/chromedriver/issues/detail?id=1695
+      # https://bugs.monyhar.org/p/chromedriver/issues/detail?id=1695
       chrome_switches.append('disable-gpu')
 
     if chrome_switches is None:

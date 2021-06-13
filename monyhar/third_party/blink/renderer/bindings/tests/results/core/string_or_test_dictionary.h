@@ -90,7 +90,7 @@ struct V8TypeOf<StringOrTestDictionary> {
 // We need to set canInitializeWithMemset=true because HeapVector supports
 // items that can initialize with memset or have a vtable. It is safe to
 // set canInitializeWithMemset=true for a union type object in practice.
-// See https://codereview.chromium.org/1118993002/#msg5 for more details.
+// See https://codereview.monyhar.org/1118993002/#msg5 for more details.
 WTF_ALLOW_MOVE_AND_INIT_WITH_MEM_FUNCTIONS(blink::StringOrTestDictionary)
 
 #endif  // THIRD_PARTY_BLINK_RENDERER_BINDINGS_TESTS_RESULTS_CORE_STRING_OR_TEST_DICTIONARY_H_

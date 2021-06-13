@@ -112,7 +112,7 @@ static_library("internal") {
 
 if (is_android) {
   android_library("internal_java") {
-    sources = [ "android/java/src/org/chromium/components/download/internal/BatteryStatusListenerAndroid.java" ]
+    sources = [ "android/java/src/org/monyhar/components/download/internal/BatteryStatusListenerAndroid.java" ]
 
     deps = [
       "//base:base_java",
@@ -122,7 +122,7 @@ if (is_android) {
 
   generate_jni("jni_headers") {
     visibility = [ ":*" ]
-    sources = [ "android/java/src/org/chromium/components/download/internal/BatteryStatusListenerAndroid.java" ]
+    sources = [ "android/java/src/org/monyhar/components/download/internal/BatteryStatusListenerAndroid.java" ]
   }
 }
 

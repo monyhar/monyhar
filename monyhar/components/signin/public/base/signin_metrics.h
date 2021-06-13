@@ -27,7 +27,7 @@ enum DifferentPrimaryAccounts {
 };
 
 // Track all the ways a profile can become signed out as a histogram.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.signin.metrics
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.signin.metrics
 // GENERATED_JAVA_CLASS_NAME_OVERRIDE: SignoutReason
 // These values are persisted to logs. Entries should not be renumbered and
 // numeric values should never be reused.
@@ -138,7 +138,7 @@ enum Source {
 // "Signin.SigninStartedAccessPoint" and "Signin.SigninCompletedAccessPoint"
 // histograms.
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.signin.metrics
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.signin.metrics
 // GENERATED_JAVA_CLASS_NAME_OVERRIDE: SigninAccessPoint
 enum class AccessPoint : int {
   ACCESS_POINT_START_PAGE = 0,
@@ -216,7 +216,7 @@ enum class PromoAction : int {
 #if defined(OS_ANDROID)
 // This class is used to record user action that was taken after
 // receiving the header from Gaia in the web sign-in flow.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.signin.metrics
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.signin.metrics
 // GENERATED_JAVA_CLASS_NAME_OVERRIDE: AccountConsistencyPromoAction
 enum class AccountConsistencyPromoAction : int {
   // Promo is not shown as there are no accounts on device.
@@ -292,7 +292,7 @@ enum class AccountConsistencyPromoAfterDismissal {
 // Please keep in Sync with "SigninReason" in
 // src/tools/metrics/histograms/enums.xml.
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.signin.metrics
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.signin.metrics
 // GENERATED_JAVA_CLASS_NAME_OVERRIDE: SigninReason
 enum class Reason : int {
   kSigninPrimaryAccount = 0,
@@ -358,7 +358,7 @@ enum class AccountEquality : int {
 // When the user is give a choice of deleting their profile or not when signing
 // out, the |kDeleted| or |kKeeping| metric should be used. If the user is not
 // given any option, then use the |kIgnoreMetric| value should be used.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.signin.metrics
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.signin.metrics
 enum class SignoutDelete : int {
   kDeleted = 0,
   kKeeping,

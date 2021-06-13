@@ -82,12 +82,12 @@ if (is_android) {
     ]
 
     sources = [
-      "android/java/src/org/chromium/chrome/browser/thumbnail/generator/ThumbnailDiskStorage.java",
-      "android/java/src/org/chromium/chrome/browser/thumbnail/generator/ThumbnailGenerator.java",
-      "android/java/src/org/chromium/chrome/browser/thumbnail/generator/ThumbnailGeneratorCallback.java",
-      "android/java/src/org/chromium/chrome/browser/thumbnail/generator/ThumbnailProvider.java",
-      "android/java/src/org/chromium/chrome/browser/thumbnail/generator/ThumbnailProviderImpl.java",
-      "android/java/src/org/chromium/chrome/browser/thumbnail/generator/ThumbnailStorageDelegate.java",
+      "android/java/src/org/monyhar/chrome/browser/thumbnail/generator/ThumbnailDiskStorage.java",
+      "android/java/src/org/monyhar/chrome/browser/thumbnail/generator/ThumbnailGenerator.java",
+      "android/java/src/org/monyhar/chrome/browser/thumbnail/generator/ThumbnailGeneratorCallback.java",
+      "android/java/src/org/monyhar/chrome/browser/thumbnail/generator/ThumbnailProvider.java",
+      "android/java/src/org/monyhar/chrome/browser/thumbnail/generator/ThumbnailProviderImpl.java",
+      "android/java/src/org/monyhar/chrome/browser/thumbnail/generator/ThumbnailStorageDelegate.java",
     ]
 
     annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
@@ -96,12 +96,12 @@ if (is_android) {
   generate_jni("jni_headers") {
     visibility = [ ":*" ]
 
-    sources = [ "android/java/src/org/chromium/chrome/browser/thumbnail/generator/ThumbnailGenerator.java" ]
+    sources = [ "android/java/src/org/monyhar/chrome/browser/thumbnail/generator/ThumbnailGenerator.java" ]
   }
 
   proto_java_library("proto_java") {
     proto_path =
-        "android/java/src/org/chromium/chrome/browser/thumbnail/generator"
+        "android/java/src/org/monyhar/chrome/browser/thumbnail/generator"
     sources = [ "$proto_path/thumbnail_cache_entry.proto" ]
   }
 
@@ -131,9 +131,9 @@ if (is_android) {
     data = [ "//chrome/browser/thumbnail/generator/test/data/android/" ]
 
     sources = [
-      "android/java/src/org/chromium/chrome/browser/thumbnail/generator/ThumbnailDiskStorageTest.java",
-      "android/java/src/org/chromium/chrome/browser/thumbnail/generator/ThumbnailMediaParserTest.java",
-      "android/java/src/org/chromium/chrome/browser/thumbnail/generator/ThumbnailProviderImplTest.java",
+      "android/java/src/org/monyhar/chrome/browser/thumbnail/generator/ThumbnailDiskStorageTest.java",
+      "android/java/src/org/monyhar/chrome/browser/thumbnail/generator/ThumbnailMediaParserTest.java",
+      "android/java/src/org/monyhar/chrome/browser/thumbnail/generator/ThumbnailProviderImplTest.java",
     ]
   }
 
@@ -143,8 +143,8 @@ if (is_android) {
     visibility = [ ":*" ]
 
     sources = [
-      "android/java/src/org/chromium/chrome/browser/thumbnail/generator/ThumbnailMediaData.java",
-      "android/java/src/org/chromium/chrome/browser/thumbnail/generator/ThumbnailMediaParserBridge.java",
+      "android/java/src/org/monyhar/chrome/browser/thumbnail/generator/ThumbnailMediaData.java",
+      "android/java/src/org/monyhar/chrome/browser/thumbnail/generator/ThumbnailMediaParserBridge.java",
     ]
   }
 
@@ -152,8 +152,8 @@ if (is_android) {
     testonly = true
 
     sources = [
-      "android/java/src/org/chromium/chrome/browser/thumbnail/generator/ThumbnailMediaData.java",
-      "android/java/src/org/chromium/chrome/browser/thumbnail/generator/ThumbnailMediaParserBridge.java",
+      "android/java/src/org/monyhar/chrome/browser/thumbnail/generator/ThumbnailMediaData.java",
+      "android/java/src/org/monyhar/chrome/browser/thumbnail/generator/ThumbnailMediaParserBridge.java",
     ]
 
     deps = [

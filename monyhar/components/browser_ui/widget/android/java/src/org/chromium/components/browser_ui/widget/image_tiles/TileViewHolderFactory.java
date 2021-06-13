@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.image_tiles;
+package org.monyhar.components.browser_ui.widget.image_tiles;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.components.browser_ui.widget.R;
-import org.chromium.components.browser_ui.widget.image_tiles.TileSizeSupplier.TileSize;
-import org.chromium.ui.modelutil.RecyclerViewAdapter;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.components.browser_ui.widget.R;
+import org.monyhar.components.browser_ui.widget.image_tiles.TileSizeSupplier.TileSize;
+import org.monyhar.ui.modelutil.RecyclerViewAdapter;
 
 /**
  * A factory class to create view holders for the tiles.

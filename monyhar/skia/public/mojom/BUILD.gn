@@ -6,7 +6,7 @@ import("//mojo/public/tools/bindings/mojom.gni")
 
 # Normally typemap traits sources should be build directly into mojom targets
 # via the typemap file. This target is for typemapped mojo_base types whose
-# traits are shared between chromium and blink variants.
+# traits are shared between monyhar and blink variants.
 component("shared_typemap_traits") {
   output_name = "skia_shared_typemap_traits"
 

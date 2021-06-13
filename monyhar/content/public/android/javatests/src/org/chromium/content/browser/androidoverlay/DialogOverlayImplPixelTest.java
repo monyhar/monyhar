@@ -1,7 +1,7 @@
 // Copyright 2017 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.content.browser.androidoverlay;
+package org.monyhar.content.browser.androidoverlay;
 import android.annotation.TargetApi;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -19,13 +19,13 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.MinAndroidSdkLevel;
-import org.chromium.base.test.util.UrlUtils;
-import org.chromium.content.browser.RenderCoordinatesImpl;
-import org.chromium.content.browser.androidoverlay.DialogOverlayImplTestRule.Client;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.MinAndroidSdkLevel;
+import org.monyhar.base.test.util.UrlUtils;
+import org.monyhar.content.browser.RenderCoordinatesImpl;
+import org.monyhar.content.browser.androidoverlay.DialogOverlayImplTestRule.Client;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.concurrent.Callable;
 
@@ -259,7 +259,7 @@ public class DialogOverlayImplPixelTest {
         final DialogOverlayImpl overlay = mActivityTestRule.createOverlay(0, 0, 10, 10);
         Surface surface = waitForSurface(overlay);
 
-        final org.chromium.gfx.mojom.Rect rect = new org.chromium.gfx.mojom.Rect();
+        final org.monyhar.gfx.mojom.Rect rect = new org.monyhar.gfx.mojom.Rect();
         rect.x = mDivXPx;
         rect.y = mDivYPx;
         rect.width = mDivWidthPx;

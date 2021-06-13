@@ -89,7 +89,7 @@ group("telemetry_chrome_test") {
 
   if (is_chromeos_ash && is_chromeos_device) {
     data_deps += [
-      "//:chromiumos_preflight",
+      "//:monyharos_preflight",
       "//chromeos:cros_chrome_deploy",
       "//chromeos:cros_test_wrapper",
     ]
@@ -200,7 +200,7 @@ group("telemetry_chrome_test_without_chrome") {
   testonly = true
 
   data = [
-    "//build/android/pylib/",  # chromium_config.py uses pylib to look for Java
+    "//build/android/pylib/",  # monyhar_config.py uses pylib to look for Java
     "//components/crash/content/tools/generate_breakpad_symbols.py",
     "//tools/perf/chrome_telemetry_build/",
     "//tools/perf/core/",  # chrome_telemetry_build/ depends on core/
@@ -248,7 +248,7 @@ group("telemetry_chrome_test_without_chrome") {
       "//tools/android/avd/proto/",
     ]
     data_deps += [
-      "//build/android:devil_chromium_py",
+      "//build/android:devil_monyhar_py",
       "//build/android:stack_tools",
     ]
   } else if (!is_fuchsia) {

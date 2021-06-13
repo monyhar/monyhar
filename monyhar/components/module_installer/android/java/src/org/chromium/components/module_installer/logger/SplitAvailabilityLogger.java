@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.module_installer.logger;
+package org.monyhar.components.module_installer.logger;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -13,8 +13,8 @@ import com.google.android.play.core.splitinstall.SplitInstallManager;
 import com.google.android.play.core.splitinstall.SplitInstallManagerFactory;
 import com.google.android.play.core.splitinstall.model.SplitInstallSessionStatus;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.metrics.RecordHistogram;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.metrics.RecordHistogram;
 
 import java.util.HashMap;
 import java.util.HashSet;

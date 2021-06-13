@@ -161,10 +161,10 @@ Default directory for cache data.  (Why?  See
 .SH BUGS
 Bug tracker:
 .IP
-http://code.google.com/p/chromium/issues/list
+http://code.google.com/p/monyhar/issues/list
 .PP
 Be sure to do your search within "All Issues" before reporting bugs,
 and be sure to pick the "Defect on Linux" template when filing a new one.
 
 .SH AUTHOR
-The Chromium team \- <http://www.chromium.org>
+The Chromium team \- <http://www.monyhar.org>

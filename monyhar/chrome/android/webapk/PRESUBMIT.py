@@ -4,7 +4,7 @@
 
 """Presubmit script for changes affecting chrome/android/webapk/shell_apk:webapk
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See http://dev.monyhar.org/developers/how-tos/depottools/presubmit-scripts
 for more details about the presubmit API built into depot_tools.
 
 This presubmit checks for three rules:

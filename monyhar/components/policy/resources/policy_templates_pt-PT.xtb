@@ -112,7 +112,7 @@
 
       Se definir esta política, o <ph name="PRODUCT_NAME" /> utiliza o diretório fornecido, independentemente de o utilizador ter especificado o sinalizador "--disk-cache-dir" ou não. Para evitar perda de dados ou outros erros inesperados, esta política não deve ser definida para o diretório raiz de um volume nem para um diretório utilizado para outros fins porque o <ph name="PRODUCT_NAME" /> gere os respetivos conteúdos.
 
-      Aceda a https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables para ver uma lista das variáveis que podem ser utilizadas.
+      Aceda a https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables para ver uma lista das variáveis que podem ser utilizadas.
 
       Se esta política permanecer por definir, é utilizado o diretório de cache predefinido e o utilizador pode substituí-lo pelo sinalizador de linha de comando "--disk-cache-dir".</translation>
 <translation id="113521240853905588">Configura os idiomas que o <ph name="PRODUCT_OS_NAME" /> pode utilizar como idiomas preferidos.
@@ -497,7 +497,7 @@
 <translation id="1852294065645015766">Permitir a reprodução automática de multimédia</translation>
 <translation id="1857152770025485173">Esta política impede que o utilizador carregue páginas Web a partir de URLs incluídos na lista negra. A lista negra fornece uma lista de padrões de URL que especifica que URLs são nela incluídos.
 
-      Um padrão de URL tem de ser formatado de acordo com as indicações em https://www.chromium.org/administrators/url-blacklist-filter-format.
+      Um padrão de URL tem de ser formatado de acordo com as indicações em https://www.monyhar.org/administrators/url-blacklist-filter-format.
 
       É possível definir exceções na política de lista de autorizações de URLs. Estas políticas estão limitadas a 1000 entradas; as entradas subsequentes são ignoradas.
 
@@ -534,7 +534,7 @@
 
       Se a política não estiver configurada, o relatório de métricas e de dados de diagnóstico é desativado em dispositivos não geridos e é ativado em dispositivos geridos.</translation>
 <translation id="1907431809333268751">Configure a lista de URLs de início de sessão empresariais (apenas esquemas HTTP e HTTPS). A pegada digital da palavra-passe é capturada nestes URLs e utilizada para a deteção de reutilização da palavra-passe.
-      Para que o <ph name="PRODUCT_NAME" /> capture pegadas digitais de palavras-passe corretamente, certifique-se de que as suas páginas de início de sessão seguem as diretrizes apresentadas em https://www.chromium.org/developers/design-documents/create-amazing-password-forms.
+      Para que o <ph name="PRODUCT_NAME" /> capture pegadas digitais de palavras-passe corretamente, certifique-se de que as suas páginas de início de sessão seguem as diretrizes apresentadas em https://www.monyhar.org/developers/design-documents/create-amazing-password-forms.
 
       Se esta definição estiver ativada, o serviço de proteção por palavra-passe captura a pegada digital da palavra-passe nestes URLs para fins de deteção de reutilização da palavra-passe.
       Se esta definição estiver desativada ou não estiver configurada, o serviço de proteção por palavra-passe apenas captura a pegada digital da palavra-passe em https://accounts.google.com.
@@ -832,7 +832,7 @@
 
       Esta política permite que os certificados para os nomes de anfitrião nos URLs especificados não sejam divulgados através da Transparência de certificados. Isto permite que os certificados que seriam de outra forma considerados não fidedignos, por não terem sido divulgados publicamente de forma correta, continuem a ser utilizados, mas dificulta a deteção de certificados emitidos incorretamente para esses anfitriões.
 
-      Um padrão de URL é formatado em conformidade com https://www.chromium.org/administrators/url-blacklist-filter-format. No entanto, uma vez que os certificados são válidos para um determinado nome de anfitrião independente do esquema, da porta ou do caminho, apenas é considerada a parte do nome do anfitrião do URL. Os anfitriões com carateres universais não são suportados.
+      Um padrão de URL é formatado em conformidade com https://www.monyhar.org/administrators/url-blacklist-filter-format. No entanto, uma vez que os certificados são válidos para um determinado nome de anfitrião independente do esquema, da porta ou do caminho, apenas é considerada a parte do nome do anfitrião do URL. Os anfitriões com carateres universais não são suportados.
 
       Se esta política não estiver definida, quaisquer certificados que tenham de ser divulgados através da Transparência de certificados serão considerados não fidedignos, se não forem divulgados em conformidade com a política de Transparência de certificados.</translation>
 <translation id="2488010520405124654">Ativar o pedido de configuração da rede quando estiver offline.
@@ -1512,7 +1512,7 @@ Se esta definição estiver desativada, os utilizadores não podem ativar o prox
 
       Se definir esta política, o <ph name="PRODUCT_NAME" /> utilizar o diretório fornecido, independentemente de o utilizador ter especificado um diretório ou ativado o sinalizador para que seja sempre pedida a localização da transferência.
 
-      Consulte http://www.chromium.org/administrators/policy-list-3/user-data-directory-variables para obter uma lista das variáveis que podem ser utilizadas.
+      Consulte http://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables para obter uma lista das variáveis que podem ser utilizadas.
 
       Se deixar este política por definir, é utilizado o diretório de transferência predefinido e o utilizador pode alterá-lo.</translation>
 <translation id="3805659594028420438">Ativar extensão de certificados de vinculação ao domínio TLS (obsoleto)</translation>
@@ -1601,7 +1601,7 @@ Se esta definição estiver desativada, os utilizadores não podem ativar o prox
 
       Se não definir esta política, o <ph name="PRODUCT_NAME" /> utiliza o respetivo diretório predefinido habitual (específico da plataforma).
 
-      Consulte https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables para ver uma lista das variáveis que é possível utilizar.</translation>
+      Consulte https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables para ver uma lista das variáveis que é possível utilizar.</translation>
 <translation id="3911737181201537215">Esta política não tem qualquer efeito nos registos realizados pelo Android.</translation>
 <translation id="391531815696899618">Desativa a sincronização do Google Drive na aplicação Ficheiros do <ph name="PRODUCT_OS_NAME" /> quando definida como verdadeira. Nesse caso, os dados não são carregados para o Google Drive.
 
@@ -1802,7 +1802,7 @@ Se esta definição estiver desativada, os utilizadores não podem ativar o prox
 
       Se definir esta política, o <ph name="PRODUCT_NAME" /> utiliza o diretório fornecido para armazenar a cópia de roaming dos perfis se a política <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> tiver sido ativada. Se a política <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> estiver desativada ou não estiver definida, não é utilizado o valor armazenado nesta política.
 
-      Consulte https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables para obter uma lista das variáveis que podem ser utilizadas.
+      Consulte https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables para obter uma lista das variáveis que podem ser utilizadas.
 
       Se esta política não estiver definida, é utilizado o caminho do perfil de roaming predefinido.</translation>
 <translation id="4239720644496144453">A cache não é utilizada para aplicações para Android. Se vários utilizadores instalarem a mesma aplicação Android, é transferida uma nova para cada utilizador.</translation>
@@ -1996,7 +1996,7 @@ Se esta definição estiver desativada, os utilizadores não podem ativar o prox
 
           Se esta política não for definida, é utilizado o processador predefinido para todos os sites, conforme especificado pela política "ChromeFrameRendererSettings".
 
-          Para obter exemplos de padrões, consulte https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Para obter exemplos de padrões, consulte https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="467449052039111439">Abrir uma lista de URLs</translation>
 <translation id="4674871290487541952">Permitir algoritmos inseguros nas verificações de integridade de instalações e atualizações de extensões</translation>
 <translation id="4680936297850947973">Foi descontinuada no M68. Em vez disso, utilize DefaultPopupsSetting.
@@ -2619,7 +2619,7 @@ Se esta definição estiver desativada, os utilizadores não podem ativar o prox
 
       Se definir esta política, o <ph name="PRODUCT_FRAME_NAME" /> utiliza o diretório fornecido.
 
-      Consulte http://www.chromium.org/administrators/policy-list-3/user-data-directory-variables para obter uma lista de variáveis que podem ser utilizadas.
+      Consulte http://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables para obter uma lista de variáveis que podem ser utilizadas.
 
       Se deixar esta definição por definir, é utilizado o diretório de perfil predefinido.</translation>
 <translation id="5826047473100157858">Especifica se o utilizador pode abrir páginas em modo de Navegação Anónima no <ph name="PRODUCT_NAME" />. Se selecionar "Ativada" ou deixar a política por definir, as páginas podem ser abertas no modo de Navegação Anónima. Se selecionar "Desativada", as páginas não podem ser abertas no modo de Navegação Anónima. Se selecionar "Forçada", as páginas APENAS podem ser abertas no modo de Navegação Anónima.</translation>
@@ -3183,7 +3183,7 @@ Se esta definição estiver desativada, os utilizadores não podem ativar o prox
 
       Se definir esta política, o <ph name="PRODUCT_NAME" /> utiliza o diretório fornecido, independentemente de o utilizador ter especificado o sinalizador "--user-data-dir" ou não. Para evitar a perda de dados ou outros erros inesperados, esta política não deve ser definida para o diretório raiz de um volume nem para um diretório utilizado para outros fins porque o <ph name="PRODUCT_NAME" /> gere os respetivos conteúdos.
 
-      Aceda a https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables para ver uma lista das variáveis que podem ser utilizadas.
+      Aceda a https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables para ver uma lista das variáveis que podem ser utilizadas.
 
       Se esta política permanecer por definir, é utilizado o caminho de perfil predefinido e o utilizador pode substituí-lo pelo sinalizador de linha de comando "--user-data-dir".</translation>
 <translation id="7027785306666625591">Configurar a gestão de energia em <ph name="PRODUCT_OS_NAME" />.
@@ -3953,7 +3953,7 @@ A forma recomendada para configurar a política no Windows é através do GPO, e
 
           Se esta política não for definida, é utilizado o processador predefinido para todos os sites, conforme especificado pela política "ChromeFrameRendererSettings".
 
-          Para obter exemplos de padrões, consulte https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Para obter exemplos de padrões, consulte https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="8489964335640955763">PluginVm</translation>
 <translation id="8493645415242333585">Desativar armazenamento do histórico de navegação</translation>
 <translation id="8499172469244085141">Predefinições (os utilizadores podem substituir)</translation>

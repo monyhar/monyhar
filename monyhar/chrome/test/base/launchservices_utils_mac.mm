@@ -21,7 +21,7 @@ bool RegisterAppWithLaunchServices() {
   const char kAppSuffix[] = "Chromium.app";
 #endif
 
-  // Try to guess the path to the real org.chromium.Chromium and/or
+  // Try to guess the path to the real org.monyhar.Chromium and/or
   // org.google.Chrome bundle if the current main bundle's path isn't already a
   // .app directory:
   NSURL* bundleURL = [[NSBundle mainBundle] bundleURL];

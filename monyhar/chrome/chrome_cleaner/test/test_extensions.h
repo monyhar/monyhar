@@ -101,7 +101,7 @@ const char kDefaultExtensionsJson[] =
 const char kMasterPreferencesJson[] =
     R"(
     {
-      "homepage": "http://dev.chromium.org/",
+      "homepage": "http://dev.monyhar.org/",
       "extensions": {
         "settings": {
           "egegegegegegegegegegegegegegegeg": {
@@ -120,12 +120,12 @@ const char kMasterPreferencesJson[] =
       }
     })";
 const char kValidMasterPreferencesJson[] =
-    "{\"extensions\":{\"settings\":{}},\"homepage\":\"http://dev.chromium.org/"
+    "{\"extensions\":{\"settings\":{}},\"homepage\":\"http://dev.monyhar.org/"
     "\"}";
 const char kMasterPreferencesJsonNoExtensions[] =
     R"(
 {
-  "homepage": "http://dev.chromium.org/"
+  "homepage": "http://dev.monyhar.org/"
 })";
 
 bool CreateProfileWithExtensionAndFiles(

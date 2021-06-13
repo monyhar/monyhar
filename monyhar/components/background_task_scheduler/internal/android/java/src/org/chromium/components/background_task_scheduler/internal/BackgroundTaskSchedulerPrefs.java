@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.background_task_scheduler.internal;
+package org.monyhar.components.background_task_scheduler.internal;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -14,11 +14,11 @@ import androidx.annotation.VisibleForTesting;
 
 import com.google.protobuf.InvalidProtocolBufferException;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.TraceEvent;
-import org.chromium.components.background_task_scheduler.TaskInfo;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.components.background_task_scheduler.TaskInfo;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -33,7 +33,7 @@ public class BackgroundTaskSchedulerPrefs {
     @VisibleForTesting
     static final String KEY_SCHEDULED_TASKS = "bts_scheduled_tasks";
     private static final String KEY_LAST_SDK_VERSION = "bts_last_sdk_version";
-    private static final String PREF_PACKAGE = "org.chromium.components.background_task_scheduler";
+    private static final String PREF_PACKAGE = "org.monyhar.components.background_task_scheduler";
 
     /**
      * Class abstracting conversions between a string kept in shared preferences and actual values

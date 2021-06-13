@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Sharing histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -23,8 +23,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.AnyShareStarted" enum="ShareSourceAndroid"
     expires_after="2022-05-04">
-  <owner>ellyjones@chromium.org</owner>
-  <owner>sophey@chromium.org</owner>
+  <owner>ellyjones@monyhar.org</owner>
+  <owner>sophey@monyhar.org</owner>
   <owner>src/components/send_tab_to_self/OWNERS</owner>
   <summary>
     The UI surface that started any share attempt. Android only.
@@ -35,8 +35,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="2021-10-25">
 <!-- Name completed by histogram_suffixes name="SharingClickToCallUi" -->
 
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>peter@monyhar.org</owner>
   <summary>
     The number of available apps that are about to be shown in a UI for picking
     an app to start a phone call with. Desktop only.
@@ -47,8 +47,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="2021-08-22">
 <!-- Name completed by histogram_suffixes name="SharingClickToCallUi" -->
 
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>peter@monyhar.org</owner>
   <summary>
     The number of available devices that are about to be shown in a UI for
     picking a device to start a phone call on. Desktop only.
@@ -57,8 +57,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.ClickToCallDialerPresent" enum="BooleanPresent"
     expires_after="2021-08-22">
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     Logged when we try to fire a dial intent in click to call. Distinguishes
     between if the user has an app that can handle dial intent or not. Android
@@ -68,8 +68,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.ClickToCallDialogShown" enum="SharingDialogType"
     expires_after="2021-10-25">
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     Logged whenever a dialog is shown for the Click to Call feature. Desktop
     only.
@@ -81,8 +81,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in M87.
   </obsolete>
-  <owner>knollr@chromium.org</owner>
-  <owner>mvanouwerkerk@chromium.org</owner>
+  <owner>knollr@monyhar.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
   <summary>
     Duration of the phone number regex precompilation task. This is recorded
     once after startup. Desktop only.
@@ -91,8 +91,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.ClickToCallPhoneNumberValid" units="BooleanValid"
     expires_after="M95">
-  <owner>knollr@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
+  <owner>knollr@monyhar.org</owner>
+  <owner>peter@monyhar.org</owner>
   <summary>
     Records if a received phone number is valid. Invalid numbers might suggest
     that the remote device tried to send malicious data. Logged when handling a
@@ -104,8 +104,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="2021-08-22">
 <!-- Name completed by histogram_suffixes name="SharingClickToCallUi" -->
 
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>peter@monyhar.org</owner>
   <summary>
     The index of the app selected by the user for Click to Call. Zero based.
     Desktop only.
@@ -116,8 +116,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="2021-10-25">
 <!-- Name completed by histogram_suffixes name="SharingClickToCallUi" -->
 
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>peter@monyhar.org</owner>
   <summary>
     The index of the device selected by the user for Click to Call. Zero based.
     Desktop only.
@@ -126,7 +126,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.DefaultSharesheetAndroid.Opened" enum="ShareOrigin"
     expires_after="M97">
-  <owner>sophey@chromium.org</owner>
+  <owner>sophey@monyhar.org</owner>
   <owner>src/components/send_tab_to_self/OWNERS</owner>
   <summary>
     Records the origin of the share that opened the default sharesheet. Recorded
@@ -139,8 +139,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in M89.
   </obsolete>
-  <owner>knollr@chromium.org</owner>
-  <owner>mvanouwerkerk@chromium.org</owner>
+  <owner>knollr@monyhar.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
   <summary>
     Whether a device identified by its guid is available in the local
     DeviceInfoTracker. Logged before sending a message to that guid.
@@ -154,8 +154,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   </obsolete>
 <!-- Name completed by histogram_suffixes name="SharingMessage" -->
 
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     The number of hours since the target device timestamp was last updated.
     Logged when a message is sent to the device. Not logged for sending ack
@@ -170,8 +170,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   </obsolete>
 <!-- Name completed by histogram_suffixes name="SharingSendMessageResult" -->
 
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     The number of hours since the target device timestamp was last updated.
     Logged when a message is sent to the device and the result is known. Not
@@ -181,8 +181,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.DeviceRegistrationResult"
     enum="SharingDeviceRegistrationResult" expires_after="M97">
-  <owner>knollr@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
+  <owner>knollr@monyhar.org</owner>
+  <owner>peter@monyhar.org</owner>
   <summary>
     Result of Sharing device registration. Logged after Sharing registration is
     attempted.
@@ -191,8 +191,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.DeviceUnregistrationResult"
     enum="SharingDeviceRegistrationResult" expires_after="M97">
-  <owner>knollr@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
+  <owner>knollr@monyhar.org</owner>
+  <owner>peter@monyhar.org</owner>
   <summary>
     Result of Sharing device un-registration. Logged after Sharing
     un-registration is attempted.
@@ -201,7 +201,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.LongScreenshots.BitmapGenerationStatus"
     enum="SharingLongScreenshotsEvent" expires_after="M98">
-  <owner>skare@chromium.org</owner>
+  <owner>skare@monyhar.org</owner>
   <owner>src/components/send_tab_to_self/OWNERS</owner>
   <summary>
     Counts of Bitmap Generator statuses when capturing long screenshots.
@@ -212,7 +212,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.LongScreenshots.Event"
     enum="SharingLongScreenshotsEvent" expires_after="M98">
-  <owner>skare@chromium.org</owner>
+  <owner>skare@monyhar.org</owner>
   <owner>src/components/send_tab_to_self/OWNERS</owner>
   <summary>
     Counts of events in the long screenshot capture process. Events are recorded
@@ -228,8 +228,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   </obsolete>
 <!-- Name completed by histogram_suffixes name="SharingMessage" -->
 
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     The comparison of the major version of Chrome on this (the sender) device
     and the receiver device. Logged when a message is sent. All platforms.
@@ -240,8 +240,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <!-- Name completed by histogram_suffixes name="SharingChannelType",
      name="SharingDevicePlatform" and name="SharingMessage" -->
 
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     The time from sending a FCM message from the Sharing service until an ack
     message is received for it.
@@ -251,8 +251,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Sharing.MessageHandlerTime" units="ms" expires_after="M97">
 <!-- Name completed by histogram_suffix name="SharingMessage" -->
 
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     The time from receiving a SharingMessage in SharingFCMHandler until an ack
     is sent back. Recorded when SendAckMessage callback is run in
@@ -262,8 +262,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.MessageReceivedType" enum="SharingMessageType"
     expires_after="2021-08-09">
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>peter@monyhar.org</owner>
   <summary>
     The type of SharingMessage (aka the PayloadCase). This is logged when a
     message is received through FCM by the handler in the Sharing service. All
@@ -273,15 +273,15 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.RemoteCopyDecodeImageTime" units="ms"
     expires_after="M97">
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>The time to decode an image for Remote Copy. Desktop only.</summary>
 </histogram>
 
 <histogram name="Sharing.RemoteCopyHandleMessageResult"
     enum="SharingRemoteCopyHandleMessageResult" expires_after="M97">
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     The result of handling a Remote Copy message. Logged once per message, when
     the handler for the Remote Copy FCM message is finished handling it. Desktop
@@ -291,8 +291,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.RemoteCopyLoadImageStatusCode"
     enum="CombinedHttpResponseAndNetErrorCode" expires_after="M97">
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     Result code from loading an image for Remote Copy. Logs net::Error if it's
     not net::OK. Logs net::OK if response header is not present. Otherwise, logs
@@ -302,15 +302,15 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.RemoteCopyLoadImageTime" units="ms"
     expires_after="M97">
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>The time to load an image for Remote Copy. Desktop only.</summary>
 </histogram>
 
 <histogram name="Sharing.RemoteCopyReceivedImageSizeAfterDecode" units="bytes"
     expires_after="M97">
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     The size of the image loaded from the image URL specified in a Remote Copy
     message received from FCM, after decoding. Desktop only.
@@ -319,8 +319,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.RemoteCopyReceivedImageSizeBeforeDecode" units="bytes"
     expires_after="M97">
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     The size of the image loaded from the image URL specified in a Remote Copy
     message received from FCM, before decoding. Desktop only.
@@ -329,8 +329,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.RemoteCopyReceivedTextSize" units="bytes"
     expires_after="M97">
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     The size of the text in a Remote Copy message received from FCM. Desktop
     only.
@@ -342,15 +342,15 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in M92.
   </obsolete>
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>The time to resize an image for Remote Copy. Desktop only.</summary>
 </histogram>
 
 <histogram name="Sharing.RemoteCopyWriteImageDetectionTime" units="ms"
     expires_after="M97">
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     The time to detect a clipboard image write for Remote Copy. Logged after
     writing the image. Desktop only.
@@ -359,8 +359,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.RemoteCopyWriteImageTime" units="ms"
     expires_after="M97">
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     The time to write an image to the clipboard for Remote Copy. Logged after
     writing the image. Desktop only.
@@ -369,8 +369,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.RemoteCopyWriteTextDetectionTime" units="ms"
     expires_after="M97">
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     The time to detect a clipboard text write for Remote Copy. Logged after
     writing the text. Desktop only.
@@ -379,8 +379,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.RemoteCopyWriteTextTime" units="ms"
     expires_after="M97">
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     The time to write text to the clipboard for Remote Copy. Logged after
     writing the text. Desktop only.
@@ -389,7 +389,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.Screenshot.Action" enum="SharingScreenshotAction"
     expires_after="M97">
-  <owner>jeffreycohen@chromium.org</owner>
+  <owner>jeffreycohen@monyhar.org</owner>
   <owner>src/components/send_tab_to_self/OWNERS</owner>
   <summary>
     Logged when actions are taken in the sharing screenshot image editing
@@ -399,7 +399,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.ScreenshotFallback.Action"
     enum="SharingScreenshotFallbackAction" expires_after="M97">
-  <owner>jeffreycohen@chromium.org</owner>
+  <owner>jeffreycohen@monyhar.org</owner>
   <owner>src/components/send_tab_to_self/OWNERS</owner>
   <summary>
     Logged when actions are taken in the sharing screenshot fallback feature.
@@ -408,8 +408,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.ScreenshotsAndroid.IsEditorDismissedOnStart"
     enum="Boolean" expires_after="M97">
-  <owner>jeffreycohen@chromium.org</owner>
-  <owner>kristipark@chromium.org</owner>
+  <owner>jeffreycohen@monyhar.org</owner>
+  <owner>kristipark@monyhar.org</owner>
   <owner>src/components/send_tab_to_self/OWNERS</owner>
   <summary>Whether the editor was dismissed during editor recreation.</summary>
 </histogram>
@@ -419,8 +419,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <!-- Name completed by histogram_suffixes name="SharingChannelType",
      name="SharingDevicePlatform" and name="SharingMessage" -->
 
-  <owner>peter@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     Result of sending an ack for a SharingMessage by the Sharing service. Logged
     in the callback for sending the message to FCM. All platforms.
@@ -432,8 +432,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <!-- Name completed by histogram_suffixes SharingChannelType,
     SharingDevicePlatform, SharingMessage, and SharingPulseInterval. -->
 
-  <owner>peter@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     Result of sending a SharingMessage by the Sharing service. Logged after the
     send message callback is run. Not logged for sending ack messages. All
@@ -443,8 +443,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.SharedClipboardDevicesToShow" units="devices"
     expires_after="M88">
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     The number of available devices that are about to be shown in a UI for
     picking a device to share the clipboard with. On desktop, it gets recorded
@@ -456,8 +456,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.SharedClipboardDialogShown" enum="SharingDialogType"
     expires_after="M88">
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     Logged whenever a dialog is shown for the Shared Clipboard feature.
   </summary>
@@ -470,8 +470,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   </obsolete>
 <!-- Name completed by histogram_suffixes name="SharingSendMessageResult" -->
 
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     The retry count for sending a shared clipboard message. The zero value is
     for the first attempt to send the message, which is not a retry. Logged when
@@ -481,8 +481,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.SharedClipboardSelectedDeviceIndex" units="index"
     expires_after="M88">
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     The index of the device selected by the user for Shared Clipboard gets
     recorded when the user chooses the destination device for sharing text. Zero
@@ -492,8 +492,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.SharedClipboardSelectedTextSize" units="characters"
     expires_after="M88">
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     The size of the selected text in Shared Clipboard gets recorded when the
     user shares selected text.
@@ -502,7 +502,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.SharingHubAndroid.Opened" enum="ShareOrigin"
     expires_after="M97">
-  <owner>sophey@chromium.org</owner>
+  <owner>sophey@monyhar.org</owner>
   <owner>src/components/send_tab_to_self/OWNERS</owner>
   <summary>
     Records the origin of the share that opened the sharing hub. Recorded when
@@ -513,7 +513,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Sharing.SharingHubAndroid.SharedHighlights.TimeToGetLinkToText"
     units="ms" expires_after="2021-07-11">
-  <owner>gayane@chromium.org</owner>
+  <owner>gayane@monyhar.org</owner>
   <owner>chrome-shared-highlighting@google.com</owner>
   <summary>
     Records time it takes to fulfill a link-to-text request. Recorded even if
@@ -524,7 +524,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.SharingHubAndroid.ThirdPartyAppUsage"
     enum="SharingHubBottomRowIndex" expires_after="M97">
-  <owner>kmilka@chromium.org</owner>
+  <owner>kmilka@monyhar.org</owner>
   <owner>src/components/send_tab_to_self/OWNERS</owner>
   <summary>
     Records the index of the third party app selected from the bottom row of the
@@ -534,7 +534,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.SharingHubAndroid.TimeToShare" units="ms"
     expires_after="M97">
-  <owner>kmilka@chromium.org</owner>
+  <owner>kmilka@monyhar.org</owner>
   <owner>src/components/send_tab_to_self/OWNERS</owner>
   <summary>
     Records the amount of time taken for the user to select a share target after
@@ -544,7 +544,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.SharingHubAndroid.TimeToShowShareSheet" units="ms"
     expires_after="M97">
-  <owner>kmilka@chromium.org</owner>
+  <owner>kmilka@monyhar.org</owner>
   <owner>src/components/send_tab_to_self/OWNERS</owner>
   <summary>
     Records the amount of time taken for the custom share sheet to open after a
@@ -554,7 +554,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.SharingHubDesktop.CrOSSharesheetResult"
     enum="SharingHubSharesheetResult" expires_after="M97">
-  <owner>kristipark@chromium.org</owner>
+  <owner>kristipark@monyhar.org</owner>
   <owner>src/components/send_tab_to_self/OWNERS</owner>
   <summary>
     Records whether the user selects a share target after opening the Chrome OS
@@ -564,7 +564,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.SmsFetcherTapWithChromeDestroyed" enum="Boolean"
     expires_after="M96">
-  <owner>yigu@chromium.org</owner>
+  <owner>yigu@monyhar.org</owner>
   <owner>web-identity@google.com</owner>
   <summary>
     Records whether a user taps/dismisses the notification after Chrome is
@@ -576,8 +576,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Sharing.WebRtc.IceConfigFetched" units="ice_servers"
     expires_after="M97">
-  <owner>peter@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     Number of ice servers fetched by network traversal API call. Logged after
     receiving response of API call.

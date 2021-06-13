@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.contacts_picker;
+package org.monyhar.components.browser_ui.contacts_picker;
 
 import android.content.ContentResolver;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.blink.mojom.ContactIconBlob;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.blink.mojom.ContactIconBlob;
 
 import java.io.ByteArrayOutputStream;
 import java.util.HashMap;

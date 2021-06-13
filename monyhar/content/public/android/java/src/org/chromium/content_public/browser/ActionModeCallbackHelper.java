@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.browser;
+package org.monyhar.content_public.browser;
 
 import android.content.Intent;
 import android.graphics.Rect;
@@ -12,7 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebSettings;
 
-import org.chromium.content.browser.selection.SelectionPopupControllerImpl;
+import org.monyhar.content.browser.selection.SelectionPopupControllerImpl;
 
 /**
  * Helper class for {@link WebActionMode} encapsulating

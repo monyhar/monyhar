@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.shell;
+package org.monyhar.chromecast.shell;
 
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -10,16 +10,16 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 
-import org.chromium.base.Consumer;
-import org.chromium.base.Log;
-import org.chromium.chromecast.base.Both;
-import org.chromium.chromecast.base.Controller;
-import org.chromium.chromecast.base.Observable;
-import org.chromium.chromecast.base.Observer;
-import org.chromium.chromecast.base.Observers;
-import org.chromium.chromecast.base.Unit;
-import org.chromium.content.browser.MediaSessionImpl;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.Consumer;
+import org.monyhar.base.Log;
+import org.monyhar.chromecast.base.Both;
+import org.monyhar.chromecast.base.Controller;
+import org.monyhar.chromecast.base.Observable;
+import org.monyhar.chromecast.base.Observer;
+import org.monyhar.chromecast.base.Observers;
+import org.monyhar.chromecast.base.Unit;
+import org.monyhar.content.browser.MediaSessionImpl;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * A util class for CastWebContentsActivity and CastWebContentsFragment to show

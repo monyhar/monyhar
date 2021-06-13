@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import static androidx.browser.customtabs.CustomTabsIntent.COLOR_SCHEME_DARK;
 import static androidx.browser.customtabs.CustomTabsIntent.COLOR_SCHEME_LIGHT;
 
-import static org.chromium.chrome.browser.customtabs.content.CustomTabActivityNavigationController.FinishReason.USER_NAVIGATION;
+import static org.monyhar.chrome.browser.customtabs.content.CustomTabActivityNavigationController.FinishReason.USER_NAVIGATION;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -18,44 +18,44 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.browser.customtabs.CustomTabsIntent;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ChromeApplicationImpl;
-import org.chromium.chrome.browser.KeyboardShortcuts;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.app.tabmodel.TabModelOrchestrator;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.browserservices.intents.WebappExtras;
-import org.chromium.chrome.browser.browserservices.ui.controller.Verifier;
-import org.chromium.chrome.browser.browserservices.ui.trustedwebactivity.TrustedWebActivityCoordinator;
-import org.chromium.chrome.browser.customtabs.content.CustomTabActivityNavigationController;
-import org.chromium.chrome.browser.customtabs.content.CustomTabActivityTabController;
-import org.chromium.chrome.browser.customtabs.content.CustomTabActivityTabFactory;
-import org.chromium.chrome.browser.customtabs.content.CustomTabActivityTabProvider;
-import org.chromium.chrome.browser.customtabs.content.CustomTabIntentHandler;
-import org.chromium.chrome.browser.customtabs.content.CustomTabIntentHandler.IntentIgnoringCriterion;
-import org.chromium.chrome.browser.customtabs.content.TabCreationMode;
-import org.chromium.chrome.browser.customtabs.dependency_injection.BaseCustomTabActivityComponent;
-import org.chromium.chrome.browser.customtabs.dependency_injection.BaseCustomTabActivityModule;
-import org.chromium.chrome.browser.customtabs.features.toolbar.CustomTabToolbarCoordinator;
-import org.chromium.chrome.browser.dependency_injection.ChromeActivityCommonsModule;
-import org.chromium.chrome.browser.flags.ActivityType;
-import org.chromium.chrome.browser.metrics.UmaSessionStats;
-import org.chromium.chrome.browser.night_mode.NightModeStateProvider;
-import org.chromium.chrome.browser.night_mode.PowerSavingModeMonitor;
-import org.chromium.chrome.browser.night_mode.SystemNightModeMonitor;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabState;
-import org.chromium.chrome.browser.tabmodel.ChromeTabCreator;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorImpl;
-import org.chromium.chrome.browser.theme.TopUiThemeColorProvider;
-import org.chromium.chrome.browser.ui.RootUiCoordinator;
-import org.chromium.chrome.browser.ui.appmenu.AppMenuPropertiesDelegate;
-import org.chromium.chrome.browser.usage_stats.UsageStatsService;
-import org.chromium.chrome.browser.webapps.SameTaskWebApkActivity;
-import org.chromium.chrome.browser.webapps.WebappActivityCoordinator;
-import org.chromium.components.embedder_support.delegate.WebContentsDelegateAndroid;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ChromeApplicationImpl;
+import org.monyhar.chrome.browser.KeyboardShortcuts;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.app.tabmodel.TabModelOrchestrator;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.browserservices.intents.WebappExtras;
+import org.monyhar.chrome.browser.browserservices.ui.controller.Verifier;
+import org.monyhar.chrome.browser.browserservices.ui.trustedwebactivity.TrustedWebActivityCoordinator;
+import org.monyhar.chrome.browser.customtabs.content.CustomTabActivityNavigationController;
+import org.monyhar.chrome.browser.customtabs.content.CustomTabActivityTabController;
+import org.monyhar.chrome.browser.customtabs.content.CustomTabActivityTabFactory;
+import org.monyhar.chrome.browser.customtabs.content.CustomTabActivityTabProvider;
+import org.monyhar.chrome.browser.customtabs.content.CustomTabIntentHandler;
+import org.monyhar.chrome.browser.customtabs.content.CustomTabIntentHandler.IntentIgnoringCriterion;
+import org.monyhar.chrome.browser.customtabs.content.TabCreationMode;
+import org.monyhar.chrome.browser.customtabs.dependency_injection.BaseCustomTabActivityComponent;
+import org.monyhar.chrome.browser.customtabs.dependency_injection.BaseCustomTabActivityModule;
+import org.monyhar.chrome.browser.customtabs.features.toolbar.CustomTabToolbarCoordinator;
+import org.monyhar.chrome.browser.dependency_injection.ChromeActivityCommonsModule;
+import org.monyhar.chrome.browser.flags.ActivityType;
+import org.monyhar.chrome.browser.metrics.UmaSessionStats;
+import org.monyhar.chrome.browser.night_mode.NightModeStateProvider;
+import org.monyhar.chrome.browser.night_mode.PowerSavingModeMonitor;
+import org.monyhar.chrome.browser.night_mode.SystemNightModeMonitor;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabState;
+import org.monyhar.chrome.browser.tabmodel.ChromeTabCreator;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorImpl;
+import org.monyhar.chrome.browser.theme.TopUiThemeColorProvider;
+import org.monyhar.chrome.browser.ui.RootUiCoordinator;
+import org.monyhar.chrome.browser.ui.appmenu.AppMenuPropertiesDelegate;
+import org.monyhar.chrome.browser.usage_stats.UsageStatsService;
+import org.monyhar.chrome.browser.webapps.SameTaskWebApkActivity;
+import org.monyhar.chrome.browser.webapps.WebappActivityCoordinator;
+import org.monyhar.components.embedder_support.delegate.WebContentsDelegateAndroid;
 
 /**
  * Contains functionality which is shared between {@link WebappActivity} and

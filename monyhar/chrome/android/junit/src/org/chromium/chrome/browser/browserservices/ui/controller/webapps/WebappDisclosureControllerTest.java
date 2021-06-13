@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.ui.controller.webapps;
+package org.monyhar.chrome.browser.browserservices.ui.controller.webapps;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -11,11 +11,11 @@ import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.mock;
 
-import static org.chromium.chrome.browser.browserservices.ui.TrustedWebActivityModel.DISCLOSURE_EVENTS_CALLBACK;
-import static org.chromium.chrome.browser.browserservices.ui.TrustedWebActivityModel.DISCLOSURE_STATE;
-import static org.chromium.chrome.browser.browserservices.ui.TrustedWebActivityModel.DISCLOSURE_STATE_DISMISSED_BY_USER;
-import static org.chromium.chrome.browser.browserservices.ui.TrustedWebActivityModel.DISCLOSURE_STATE_NOT_SHOWN;
-import static org.chromium.chrome.browser.browserservices.ui.TrustedWebActivityModel.DISCLOSURE_STATE_SHOWN;
+import static org.monyhar.chrome.browser.browserservices.ui.TrustedWebActivityModel.DISCLOSURE_EVENTS_CALLBACK;
+import static org.monyhar.chrome.browser.browserservices.ui.TrustedWebActivityModel.DISCLOSURE_STATE;
+import static org.monyhar.chrome.browser.browserservices.ui.TrustedWebActivityModel.DISCLOSURE_STATE_DISMISSED_BY_USER;
+import static org.monyhar.chrome.browser.browserservices.ui.TrustedWebActivityModel.DISCLOSURE_STATE_NOT_SHOWN;
+import static org.monyhar.chrome.browser.browserservices.ui.TrustedWebActivityModel.DISCLOSURE_STATE_SHOWN;
 
 import org.junit.After;
 import org.junit.Before;
@@ -29,21 +29,21 @@ import org.robolectric.android.util.concurrent.RoboExecutorService;
 import org.robolectric.annotation.Config;
 import org.robolectric.annotation.LooperMode;
 
-import org.chromium.base.task.PostTask;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.browserservices.ui.TrustedWebActivityModel;
-import org.chromium.chrome.browser.browserservices.ui.controller.CurrentPageVerifier;
-import org.chromium.chrome.browser.browserservices.ui.controller.CurrentPageVerifier.VerificationState;
-import org.chromium.chrome.browser.browserservices.ui.controller.CurrentPageVerifier.VerificationStatus;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.webapps.WebappDataStorage;
-import org.chromium.chrome.browser.webapps.WebappDeferredStartupWithStorageHandler;
-import org.chromium.chrome.browser.webapps.WebappIntentUtils;
-import org.chromium.chrome.browser.webapps.WebappRegistry;
-import org.chromium.chrome.test.util.browser.webapps.WebApkIntentDataProviderBuilder;
-import org.chromium.components.webapk.lib.common.WebApkConstants;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.browserservices.ui.TrustedWebActivityModel;
+import org.monyhar.chrome.browser.browserservices.ui.controller.CurrentPageVerifier;
+import org.monyhar.chrome.browser.browserservices.ui.controller.CurrentPageVerifier.VerificationState;
+import org.monyhar.chrome.browser.browserservices.ui.controller.CurrentPageVerifier.VerificationStatus;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.webapps.WebappDataStorage;
+import org.monyhar.chrome.browser.webapps.WebappDeferredStartupWithStorageHandler;
+import org.monyhar.chrome.browser.webapps.WebappIntentUtils;
+import org.monyhar.chrome.browser.webapps.WebappRegistry;
+import org.monyhar.chrome.test.util.browser.webapps.WebApkIntentDataProviderBuilder;
+import org.monyhar.components.webapk.lib.common.WebApkConstants;
 
 /**
  * Tests for WebappDisclosureController

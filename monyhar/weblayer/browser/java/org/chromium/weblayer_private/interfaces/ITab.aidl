@@ -2,24 +2,24 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private.interfaces;
+package org.monyhar.weblayer_private.interfaces;
 
 import java.util.List;
 
-import org.chromium.weblayer_private.interfaces.IContextMenuParams;
-import org.chromium.weblayer_private.interfaces.IDownloadCallbackClient;
-import org.chromium.weblayer_private.interfaces.IErrorPageCallbackClient;
-import org.chromium.weblayer_private.interfaces.IFaviconFetcher;
-import org.chromium.weblayer_private.interfaces.IFaviconFetcherClient;
-import org.chromium.weblayer_private.interfaces.IFindInPageCallbackClient;
-import org.chromium.weblayer_private.interfaces.IFullscreenCallbackClient;
-import org.chromium.weblayer_private.interfaces.IGoogleAccountsCallbackClient;
-import org.chromium.weblayer_private.interfaces.IMediaCaptureCallbackClient;
-import org.chromium.weblayer_private.interfaces.INavigationController;
-import org.chromium.weblayer_private.interfaces.INavigationControllerClient;
-import org.chromium.weblayer_private.interfaces.IObjectWrapper;
-import org.chromium.weblayer_private.interfaces.ITabClient;
-import org.chromium.weblayer_private.interfaces.IWebMessageCallbackClient;
+import org.monyhar.weblayer_private.interfaces.IContextMenuParams;
+import org.monyhar.weblayer_private.interfaces.IDownloadCallbackClient;
+import org.monyhar.weblayer_private.interfaces.IErrorPageCallbackClient;
+import org.monyhar.weblayer_private.interfaces.IFaviconFetcher;
+import org.monyhar.weblayer_private.interfaces.IFaviconFetcherClient;
+import org.monyhar.weblayer_private.interfaces.IFindInPageCallbackClient;
+import org.monyhar.weblayer_private.interfaces.IFullscreenCallbackClient;
+import org.monyhar.weblayer_private.interfaces.IGoogleAccountsCallbackClient;
+import org.monyhar.weblayer_private.interfaces.IMediaCaptureCallbackClient;
+import org.monyhar.weblayer_private.interfaces.INavigationController;
+import org.monyhar.weblayer_private.interfaces.INavigationControllerClient;
+import org.monyhar.weblayer_private.interfaces.IObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.ITabClient;
+import org.monyhar.weblayer_private.interfaces.IWebMessageCallbackClient;
 
 interface ITab {
   void setClient(in ITabClient client) = 0;

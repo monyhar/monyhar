@@ -40,7 +40,7 @@ NSString* const kContentType = @"Content-Type";
 
 namespace net {
 
-NSString* const kNSErrorDomain = @"org.chromium.net.ErrorDomain";
+NSString* const kNSErrorDomain = @"org.monyhar.net.ErrorDomain";
 
 NSError* GetIOSError(NSInteger ns_error_code,
                      int net_error_code,

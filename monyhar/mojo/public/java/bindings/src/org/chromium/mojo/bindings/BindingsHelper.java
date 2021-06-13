@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo.bindings;
+package org.monyhar.mojo.bindings;
 
-import org.chromium.mojo.system.Handle;
-import org.chromium.mojo.system.Watcher;
+import org.monyhar.mojo.system.Handle;
+import org.monyhar.mojo.system.Watcher;
 
 /**
  * Helper functions.

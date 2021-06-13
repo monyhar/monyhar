@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.site_settings;
+package org.monyhar.components.browser_ui.site_settings;
 
 import android.net.Uri;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.components.url_formatter.SchemeDisplay;
-import org.chromium.components.url_formatter.UrlFormatter;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.components.url_formatter.SchemeDisplay;
+import org.monyhar.components.url_formatter.UrlFormatter;
 
 import java.io.Serializable;
 

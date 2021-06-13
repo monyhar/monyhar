@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.input;
+package org.monyhar.content.browser.input;
 
 import android.os.Build;
 import android.os.Handler;
@@ -13,8 +13,8 @@ import android.view.inputmethod.EditorInfo;
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
-import org.chromium.content_public.browser.InputMethodManagerWrapper;
+import org.monyhar.base.Log;
+import org.monyhar.content_public.browser.InputMethodManagerWrapper;
 
 /**
  * A factory class for {@link ThreadedInputConnection}. The class also includes triggering

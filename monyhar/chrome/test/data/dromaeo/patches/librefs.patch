@@ -281,13 +281,13 @@ Date: Thu, 17 Nov 2016 16:38:01 +1100
 Subject: [PATCH 2/4] change readme
 
 ---
- chrome/test/data/dromaeo/README.chromium | 6 +++++-
+ chrome/test/data/dromaeo/README.monyhar | 6 +++++-
  1 file changed, 5 insertions(+), 1 deletion(-)
 
-diff --git a/chrome/test/data/dromaeo/README.chromium b/chrome/test/data/dromaeo/README.chromium
+diff --git a/chrome/test/data/dromaeo/README.monyhar b/chrome/test/data/dromaeo/README.monyhar
 index 8f036bf..c57c79f 100644
---- a/chrome/test/data/dromaeo/README.chromium
-+++ b/chrome/test/data/dromaeo/README.chromium
+--- a/chrome/test/data/dromaeo/README.monyhar
++++ b/chrome/test/data/dromaeo/README.monyhar
 @@ -2,7 +2,10 @@ This directory contains Dromaeo, a JavaScript and DOM performance benchmark.
  
  Dromaeo was developed and released by John Resig (jresig at mozilla.com)/

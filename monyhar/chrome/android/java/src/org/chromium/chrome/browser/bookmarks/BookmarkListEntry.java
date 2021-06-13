@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.bookmarks;
+package org.monyhar.chrome.browser.bookmarks;
 
 import android.content.Context;
 
 import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.browser.bookmarks.BookmarkBridge.BookmarkItem;
+import org.monyhar.chrome.browser.bookmarks.BookmarkBridge.BookmarkItem;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

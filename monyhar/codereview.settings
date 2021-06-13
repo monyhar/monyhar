@@ -1,7 +1,7 @@
 # This file is used by git-cl to get repository specific information.
-PROJECT: chromium
+PROJECT: monyhar
 GERRIT_HOST: True
-CC_LIST: chromium-reviews@chromium.org
-VIEW_VC: https://chromium.googlesource.com/chromium/src/+/
-STATUS: http://chromium-status.appspot.com/status
+CC_LIST: monyhar-reviews@monyhar.org
+VIEW_VC: https://monyhar.googlesource.com/monyhar/src/+/
+STATUS: http://monyhar-status.appspot.com/status
 RUN_POST_UPLOAD_HOOK: True

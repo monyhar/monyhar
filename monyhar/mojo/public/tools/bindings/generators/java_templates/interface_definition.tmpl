@@ -19,7 +19,7 @@
 
 {%- macro declare_callback(method) -%}
 
-interface {{method|interface_response_name}} extends org.chromium.mojo.bindings.Callbacks.Callback{{method.response_parameters|length}}{% if method.response_parameters %}<
+interface {{method|interface_response_name}} extends org.monyhar.mojo.bindings.Callbacks.Callback{{method.response_parameters|length}}{% if method.response_parameters %}<
 {%-   for param in method.response_parameters -%}
 {{param.kind|java_type(True)}}
 {%- if not loop.last %}, {% endif %}
@@ -42,19 +42,19 @@ interface {{method|interface_response_name}} extends org.chromium.mojo.bindings.
 
 {%- macro flags(use_response_flag, is_request, is_sync) -%}
 {%-  if not use_response_flag -%}
-org.chromium.mojo.bindings.MessageHeader.NO_FLAG
+org.monyhar.mojo.bindings.MessageHeader.NO_FLAG
 {%-   elif is_request: -%}
-org.chromium.mojo.bindings.MessageHeader.MESSAGE_EXPECTS_RESPONSE_FLAG
+org.monyhar.mojo.bindings.MessageHeader.MESSAGE_EXPECTS_RESPONSE_FLAG
 {%-   else -%}
-org.chromium.mojo.bindings.MessageHeader.MESSAGE_IS_RESPONSE_FLAG
+org.monyhar.mojo.bindings.MessageHeader.MESSAGE_IS_RESPONSE_FLAG
 {%-   if is_sync -%}
- | org.chromium.mojo.bindings.MessageHeader.MESSAGE_IS_SYNC_FLAG
+ | org.monyhar.mojo.bindings.MessageHeader.MESSAGE_IS_SYNC_FLAG
 {%-   endif  -%}
 {%-  endif -%}
 {%- endmacro -%}
 
 {%- macro manager_class(interface, fully_qualified=False) -%}
-{% if fully_qualified %}org.chromium.mojo.bindings.Interface.{% endif %}Manager<{{interface|name}}, {{interface|name}}.Proxy>
+{% if fully_qualified %}org.monyhar.mojo.bindings.Interface.{% endif %}Manager<{{interface|name}}, {{interface|name}}.Proxy>
 {%- endmacro -%}
 
 {%- macro manager_def(interface) -%}
@@ -72,13 +72,13 @@ public static final {{manager_class(interface, True)}} MANAGER =
     }
 
     @Override
-    public Proxy buildProxy(org.chromium.mojo.system.Core core,
-                            org.chromium.mojo.bindings.MessageReceiverWithResponder messageReceiver) {
+    public Proxy buildProxy(org.monyhar.mojo.system.Core core,
+                            org.monyhar.mojo.bindings.MessageReceiverWithResponder messageReceiver) {
         return new Proxy(core, messageReceiver);
     }
 
     @Override
-    public Stub buildStub(org.chromium.mojo.system.Core core, {{interface|name}} impl) {
+    public Stub buildStub(org.monyhar.mojo.system.Core core, {{interface|name}} impl) {
         return new Stub(core, impl);
     }
 
@@ -91,24 +91,24 @@ public static final {{manager_class(interface, True)}} MANAGER =
 
 {%- macro accept_body(interface, with_response) -%}
 try {
-    org.chromium.mojo.bindings.ServiceMessage messageWithHeader =
+    org.monyhar.mojo.bindings.ServiceMessage messageWithHeader =
             message.asServiceMessage();
-    org.chromium.mojo.bindings.MessageHeader header = messageWithHeader.getHeader();
+    org.monyhar.mojo.bindings.MessageHeader header = messageWithHeader.getHeader();
     int flags = {{flags(with_response, True)}};
-    if (header.hasFlag(org.chromium.mojo.bindings.MessageHeader.MESSAGE_IS_SYNC_FLAG)) {
-        flags = flags | org.chromium.mojo.bindings.MessageHeader.MESSAGE_IS_SYNC_FLAG;
+    if (header.hasFlag(org.monyhar.mojo.bindings.MessageHeader.MESSAGE_IS_SYNC_FLAG)) {
+        flags = flags | org.monyhar.mojo.bindings.MessageHeader.MESSAGE_IS_SYNC_FLAG;
     }
     if (!header.validateHeader(flags)) {
         return false;
     }
     switch(header.getType()) {
 {%   if with_response %}
-        case org.chromium.mojo.bindings.interfacecontrol.InterfaceControlMessagesConstants.RUN_MESSAGE_ID:
-            return org.chromium.mojo.bindings.InterfaceControlMessagesHelper.handleRun(
+        case org.monyhar.mojo.bindings.interfacecontrol.InterfaceControlMessagesConstants.RUN_MESSAGE_ID:
+            return org.monyhar.mojo.bindings.InterfaceControlMessagesHelper.handleRun(
                     getCore(), {{interface|name}}_Internal.MANAGER, messageWithHeader, receiver);
 {%   else %}
-        case org.chromium.mojo.bindings.interfacecontrol.InterfaceControlMessagesConstants.RUN_OR_CLOSE_PIPE_MESSAGE_ID:
-            return org.chromium.mojo.bindings.InterfaceControlMessagesHelper.handleRunOrClosePipe(
+        case org.monyhar.mojo.bindings.interfacecontrol.InterfaceControlMessagesConstants.RUN_OR_CLOSE_PIPE_MESSAGE_ID:
+            return org.monyhar.mojo.bindings.InterfaceControlMessagesHelper.handleRunOrClosePipe(
                     {{interface|name}}_Internal.MANAGER, messageWithHeader);
 {%   endif %}
 {%   for method in interface.methods %}
@@ -133,14 +133,14 @@ try {
         default:
             return false;
     }
-} catch (org.chromium.mojo.bindings.DeserializationException e) {
+} catch (org.monyhar.mojo.bindings.DeserializationException e) {
     System.err.println(e.toString());
     return false;
 }
 {%- endmacro -%}
 
 {% macro interface_def(interface) %}
-public interface {{interface|name}} extends org.chromium.mojo.bindings.Interface {
+public interface {{interface|name}} extends org.monyhar.mojo.bindings.Interface {
 {%  for constant in interface.constants %}
 
     {{constant_def(constant)|indent(4)}}
@@ -150,7 +150,7 @@ public interface {{interface|name}} extends org.chromium.mojo.bindings.Interface
     {{enum_def(enum, false)|indent(4)}}
 {% endfor %}
 
-    public interface Proxy extends {{interface|name}}, org.chromium.mojo.bindings.Interface.Proxy {
+    public interface Proxy extends {{interface|name}}, org.monyhar.mojo.bindings.Interface.Proxy {
     }
 
     {{manager_class(interface)}} MANAGER = {{interface|name}}_Internal.MANAGER;
@@ -173,10 +173,10 @@ class {{interface|name}}_Internal {
     private static final int {{method|method_ordinal_name}} = {{method.ordinal}};
 {% endfor %}
 
-    static final class Proxy extends org.chromium.mojo.bindings.Interface.AbstractProxy implements {{interface|name}}.Proxy {
+    static final class Proxy extends org.monyhar.mojo.bindings.Interface.AbstractProxy implements {{interface|name}}.Proxy {
 
-        Proxy(org.chromium.mojo.system.Core core,
-              org.chromium.mojo.bindings.MessageReceiverWithResponder messageReceiver) {
+        Proxy(org.monyhar.mojo.system.Core core,
+              org.monyhar.mojo.bindings.MessageReceiverWithResponder messageReceiver) {
             super(core, messageReceiver);
         }
 {% for method in interface.methods %}
@@ -192,7 +192,7 @@ class {{interface|name}}_Internal {
             getProxyHandler().getMessageReceiver().acceptWithResponder(
                     _message.serializeWithHeader(
                             getProxyHandler().getCore(),
-                            new org.chromium.mojo.bindings.MessageHeader(
+                            new org.monyhar.mojo.bindings.MessageHeader(
                                     {{method|method_ordinal_name}},
                                     {{flags_for_method(method, True)}},
                                     0)),
@@ -201,26 +201,26 @@ class {{interface|name}}_Internal {
             getProxyHandler().getMessageReceiver().accept(
                     _message.serializeWithHeader(
                             getProxyHandler().getCore(),
-                            new org.chromium.mojo.bindings.MessageHeader({{method|method_ordinal_name}})));
+                            new org.monyhar.mojo.bindings.MessageHeader({{method|method_ordinal_name}})));
 {%   endif %}
         }
 {% endfor %}
 
     }
 
-    static final class Stub extends org.chromium.mojo.bindings.Interface.Stub<{{interface|name}}> {
+    static final class Stub extends org.monyhar.mojo.bindings.Interface.Stub<{{interface|name}}> {
 
-        Stub(org.chromium.mojo.system.Core core, {{interface|name}} impl) {
+        Stub(org.monyhar.mojo.system.Core core, {{interface|name}} impl) {
             super(core, impl);
         }
 
         @Override
-        public boolean accept(org.chromium.mojo.bindings.Message message) {
+        public boolean accept(org.monyhar.mojo.bindings.Message message) {
             {{accept_body(interface, False)|indent(12)}}
         }
 
         @Override
-        public boolean acceptWithResponder(org.chromium.mojo.bindings.Message message, org.chromium.mojo.bindings.MessageReceiver receiver) {
+        public boolean acceptWithResponder(org.monyhar.mojo.bindings.Message message, org.monyhar.mojo.bindings.MessageReceiver receiver) {
             {{accept_body(interface, True)|indent(12)}}
         }
     }
@@ -232,8 +232,8 @@ class {{interface|name}}_Internal {
 
     {{ struct_def(response_struct, True)|indent(4) }}
 
-    static class {{response_struct|name}}ForwardToCallback extends org.chromium.mojo.bindings.SideEffectFreeCloseable
-            implements org.chromium.mojo.bindings.MessageReceiver {
+    static class {{response_struct|name}}ForwardToCallback extends org.monyhar.mojo.bindings.SideEffectFreeCloseable
+            implements org.monyhar.mojo.bindings.MessageReceiver {
         private final {{interface|name}}.{{method|interface_response_name}} mCallback;
 
         {{response_struct|name}}ForwardToCallback({{interface|name}}.{{method|interface_response_name}} callback) {
@@ -241,11 +241,11 @@ class {{interface|name}}_Internal {
         }
 
         @Override
-        public boolean accept(org.chromium.mojo.bindings.Message message) {
+        public boolean accept(org.monyhar.mojo.bindings.Message message) {
             try {
-                org.chromium.mojo.bindings.ServiceMessage messageWithHeader =
+                org.monyhar.mojo.bindings.ServiceMessage messageWithHeader =
                         message.asServiceMessage();
-                org.chromium.mojo.bindings.MessageHeader header = messageWithHeader.getHeader();
+                org.monyhar.mojo.bindings.MessageHeader header = messageWithHeader.getHeader();
                 if (!header.validateHeader({{method|method_ordinal_name}},
                                            {{flags_for_method(method, False)}})) {
                     return false;
@@ -255,7 +255,7 @@ class {{interface|name}}_Internal {
 {%   endif %}
                 mCallback.call({{run_callback('response', method.response_parameters)}});
                 return true;
-            } catch (org.chromium.mojo.bindings.DeserializationException e) {
+            } catch (org.monyhar.mojo.bindings.DeserializationException e) {
                 return false;
             }
         }
@@ -263,13 +263,13 @@ class {{interface|name}}_Internal {
 
     static class {{response_struct|name}}ProxyToResponder implements {{interface|name}}.{{method|interface_response_name}} {
 
-        private final org.chromium.mojo.system.Core mCore;
-        private final org.chromium.mojo.bindings.MessageReceiver mMessageReceiver;
+        private final org.monyhar.mojo.system.Core mCore;
+        private final org.monyhar.mojo.bindings.MessageReceiver mMessageReceiver;
         private final long mRequestId;
 
         {{response_struct|name}}ProxyToResponder(
-                org.chromium.mojo.system.Core core,
-                org.chromium.mojo.bindings.MessageReceiver messageReceiver,
+                org.monyhar.mojo.system.Core core,
+                org.monyhar.mojo.bindings.MessageReceiver messageReceiver,
                 long requestId) {
             mCore = core;
             mMessageReceiver = messageReceiver;
@@ -282,10 +282,10 @@ class {{interface|name}}_Internal {
 {%   for param in method.response_parameters %}
             _response.{{param|name}} = {{param|name}};
 {%   endfor %}
-            org.chromium.mojo.bindings.ServiceMessage _message =
+            org.monyhar.mojo.bindings.ServiceMessage _message =
                     _response.serializeWithHeader(
                             mCore,
-                            new org.chromium.mojo.bindings.MessageHeader(
+                            new org.monyhar.mojo.bindings.MessageHeader(
                                     {{method|method_ordinal_name}},
                                     {{flags_for_method(method, False)}},
                                     mRequestId));

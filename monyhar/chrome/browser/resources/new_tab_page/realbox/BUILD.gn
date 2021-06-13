@@ -16,7 +16,7 @@ js_library("realbox") {
     ":realbox_icon",
     "..:i18n_setup",
     "../:utils",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
   ]
 }
@@ -33,7 +33,7 @@ js_library("realbox_dropdown") {
     ":realbox_match",
     "..:i18n_setup",
     "../:utils",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_icon_button:cr_icon_button.m",
     "//ui/webui/resources/js:assert.m",
   ]
@@ -41,7 +41,7 @@ js_library("realbox_dropdown") {
 
 js_library("realbox_icon") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -50,7 +50,7 @@ js_library("realbox_match") {
     ":realbox_icon",
     "..:i18n_setup",
     "../:utils",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_icon_button:cr_icon_button.m",
   ]
 }

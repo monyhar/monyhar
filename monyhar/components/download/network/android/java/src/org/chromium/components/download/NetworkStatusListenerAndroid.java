@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.download;
+package org.monyhar.components.download;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.net.NetworkChangeNotifierAutoDetect;
-import org.chromium.net.NetworkChangeNotifierAutoDetect.Observer;
-import org.chromium.net.RegistrationPolicyAlwaysRegister;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.net.NetworkChangeNotifierAutoDetect;
+import org.monyhar.net.NetworkChangeNotifierAutoDetect.Observer;
+import org.monyhar.net.RegistrationPolicyAlwaysRegister;
 
 /**
  * Network listener that can notify network connectivity changes to native side

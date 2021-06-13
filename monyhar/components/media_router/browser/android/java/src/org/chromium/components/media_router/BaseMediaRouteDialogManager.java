@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.media_router;
+package org.monyhar.components.media_router;
 
 import android.app.Activity;
 import android.view.View;
@@ -14,7 +14,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.mediarouter.media.MediaRouteSelector;
 import androidx.mediarouter.media.MediaRouter;
 
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * Shared code for media route dialogs.

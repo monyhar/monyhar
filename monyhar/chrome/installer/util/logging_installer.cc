@@ -120,7 +120,7 @@ base::FilePath GetLogFilePath(const installer::InitialPreferences& prefs) {
 #if BUILDFLAG(GOOGLE_CHROME_BRANDING)
       FILE_PATH_LITERAL("chrome_installer.log");
 #else  // BUILDFLAG(CHROMIUM_BRANDING)
-      FILE_PATH_LITERAL("chromium_installer.log");
+      FILE_PATH_LITERAL("monyhar_installer.log");
 #endif
 
   // Fallback to current directory if getting the temp directory fails.

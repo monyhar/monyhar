@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webapk.shell_apk.h2o;
+package org.monyhar.webapk.shell_apk.h2o;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -12,9 +12,9 @@ import android.graphics.Matrix;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import org.chromium.webapk.lib.common.splash.SplashLayout;
-import org.chromium.webapk.shell_apk.R;
-import org.chromium.webapk.shell_apk.WebApkUtils;
+import org.monyhar.webapk.lib.common.splash.SplashLayout;
+import org.monyhar.webapk.shell_apk.R;
+import org.monyhar.webapk.shell_apk.WebApkUtils;
 
 /** Contains splash screen related utility methods. */
 public class SplashUtils {

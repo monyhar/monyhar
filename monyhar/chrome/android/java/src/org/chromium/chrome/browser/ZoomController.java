@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.os.SystemClock;
 
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.EventForwarder;
-import org.chromium.ui.base.GestureEventType;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.EventForwarder;
+import org.monyhar.ui.base.GestureEventType;
 
 /**
  * Handles zoom in/out WebContents.

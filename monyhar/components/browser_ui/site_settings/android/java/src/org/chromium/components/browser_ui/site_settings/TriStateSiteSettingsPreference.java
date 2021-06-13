@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.site_settings;
+package org.monyhar.components.browser_ui.site_settings;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -11,8 +11,8 @@ import android.widget.RadioGroup;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 
-import org.chromium.components.browser_ui.widget.RadioButtonWithDescription;
-import org.chromium.components.content_settings.ContentSettingValues;
+import org.monyhar.components.browser_ui.widget.RadioButtonWithDescription;
+import org.monyhar.components.content_settings.ContentSettingValues;
 
 /**
  * A 3-state Allowed/Ask/Blocked radio group Preference used for SiteSettings.

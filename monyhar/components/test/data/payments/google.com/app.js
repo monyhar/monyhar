@@ -59,7 +59,7 @@ self.addEventListener('paymentrequest', (evt) => {
   }
 
   if (gpayData['emailRequired']) {
-    details['email'] = 'paymentrequest@chromium.org';
+    details['email'] = 'paymentrequest@monyhar.org';
   }
 
   if (apiVersion == 1) {

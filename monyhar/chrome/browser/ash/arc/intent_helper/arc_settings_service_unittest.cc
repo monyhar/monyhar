@@ -41,7 +41,7 @@ namespace arc {
 namespace {
 
 constexpr char kActionLocaionEnabled[] =
-    "org.chromium.arc.intent_helper.SET_LOCATION_SERVICE_ENABLED";
+    "org.monyhar.arc.intent_helper.SET_LOCATION_SERVICE_ENABLED";
 
 class ArcSettingsServiceTest : public BrowserWithTestWindowTest {
  public:
@@ -262,7 +262,7 @@ TEST_F(ArcSettingsServiceTest, InitialSettingsNotAppliedNextSession) {
 
 TEST_F(ArcSettingsServiceTest, DisablesFontSize) {
   constexpr char kSetFontScale[] =
-      "org.chromium.arc.intent_helper.SET_FONT_SCALE";
+      "org.monyhar.arc.intent_helper.SET_FONT_SCALE";
 
   // Initial broadcast resets to 100%.
   arc_session_manager()->RequestEnable();
@@ -280,7 +280,7 @@ TEST_F(ArcSettingsServiceTest, DisablesFontSize) {
 
 TEST_F(ArcSettingsServiceTest, DisablesPageZoom) {
   constexpr char kSetPageZoom[] =
-      "org.chromium.arc.intent_helper.SET_PAGE_ZOOM";
+      "org.monyhar.arc.intent_helper.SET_PAGE_ZOOM";
 
   // Initial broadcast resets to 100%.
   arc_session_manager()->RequestEnable();

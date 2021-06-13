@@ -25,8 +25,8 @@ TEST_F(QRCodeGeneratorBubbleTest, SuggestedDownloadURLNoIP) {
             u"qrcode_chrome.png");
 
   EXPECT_EQ(QRCodeGeneratorBubble::GetQRCodeFilenameForURL(
-                GURL("https://chromium.org")),
-            u"qrcode_chromium.org.png");
+                GURL("https://monyhar.org")),
+            u"qrcode_monyhar.org.png");
 
   EXPECT_EQ(
       QRCodeGeneratorBubble::GetQRCodeFilenameForURL(GURL("text, not url")),
@@ -124,7 +124,7 @@ class QRCodeGeneratorBubbleUITest : public ChromeViewsTestBase {
     CHECK(anchor_view_);
     auto bubble = std::make_unique<QRCodeGeneratorBubble>(
         anchor_view_, nullptr, base::DoNothing(),
-        GURL("https://www.chromium.org/a"));
+        GURL("https://www.monyhar.org/a"));
     bubble->SetQRCodeServiceForTesting(
         mojo::Remote<mojom::QRCodeGeneratorService>(
             receiver_.BindNewPipeAndPassRemote()));
@@ -187,7 +187,7 @@ TEST_F(QRCodeGeneratorBubbleUITest, ImageShowsAfterErrorState) {
 
   // The UI regenerates the QR code when the user types new text, so synthesize
   // that.
-  textfield()->InsertOrReplaceText(u"https://www.chromium.org/b");
+  textfield()->InsertOrReplaceText(u"https://www.monyhar.org/b");
   service()->WaitForRequest();
 
   auto ok_response = mojom::GenerateQRCodeResponse::New();

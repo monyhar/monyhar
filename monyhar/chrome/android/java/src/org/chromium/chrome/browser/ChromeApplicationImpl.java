@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.app.Application;
 import android.content.Intent;
@@ -11,29 +11,29 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.chrome.browser.background_task_scheduler.ChromeBackgroundTaskFactory;
-import org.chromium.chrome.browser.base.SplitCompatApplication;
-import org.chromium.chrome.browser.crash.PureJavaExceptionReporter;
-import org.chromium.chrome.browser.customtabs.CustomTabsConnection;
-import org.chromium.chrome.browser.dependency_injection.ChromeAppComponent;
-import org.chromium.chrome.browser.dependency_injection.ChromeAppModule;
-import org.chromium.chrome.browser.dependency_injection.DaggerChromeAppComponent;
-import org.chromium.chrome.browser.dependency_injection.ModuleFactoryOverrides;
-import org.chromium.chrome.browser.flags.CachedFeatureFlags;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.fonts.FontPreloader;
-import org.chromium.chrome.browser.night_mode.SystemNightModeMonitor;
-import org.chromium.chrome.browser.profiles.ProfileResolver;
-import org.chromium.chrome.browser.vr.OnExitVrRequestListener;
-import org.chromium.chrome.browser.vr.VrModuleProvider;
-import org.chromium.components.browser_ui.util.GlobalDiscardableReferencePool;
-import org.chromium.components.embedder_support.browser_context.PartitionResolverSupplier;
-import org.chromium.components.module_installer.util.ModuleUtil;
-import org.chromium.components.version_info.Channel;
-import org.chromium.components.version_info.VersionConstants;
-import org.chromium.url.GURL;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.chrome.browser.background_task_scheduler.ChromeBackgroundTaskFactory;
+import org.monyhar.chrome.browser.base.SplitCompatApplication;
+import org.monyhar.chrome.browser.crash.PureJavaExceptionReporter;
+import org.monyhar.chrome.browser.customtabs.CustomTabsConnection;
+import org.monyhar.chrome.browser.dependency_injection.ChromeAppComponent;
+import org.monyhar.chrome.browser.dependency_injection.ChromeAppModule;
+import org.monyhar.chrome.browser.dependency_injection.DaggerChromeAppComponent;
+import org.monyhar.chrome.browser.dependency_injection.ModuleFactoryOverrides;
+import org.monyhar.chrome.browser.flags.CachedFeatureFlags;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.fonts.FontPreloader;
+import org.monyhar.chrome.browser.night_mode.SystemNightModeMonitor;
+import org.monyhar.chrome.browser.profiles.ProfileResolver;
+import org.monyhar.chrome.browser.vr.OnExitVrRequestListener;
+import org.monyhar.chrome.browser.vr.VrModuleProvider;
+import org.monyhar.components.browser_ui.util.GlobalDiscardableReferencePool;
+import org.monyhar.components.embedder_support.browser_context.PartitionResolverSupplier;
+import org.monyhar.components.module_installer.util.ModuleUtil;
+import org.monyhar.components.version_info.Channel;
+import org.monyhar.components.version_info.VersionConstants;
+import org.monyhar.url.GURL;
 
 /**
  * Basic application functionality that should be shared among all browser applications that use

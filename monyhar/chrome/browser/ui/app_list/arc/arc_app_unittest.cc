@@ -2450,7 +2450,7 @@ TEST_P(ArcAppModelBuilderTest, IconLoaderForShelfGroup) {
       arc_test()->fake_shortcuts();
   shortcuts.resize(1);
   shortcuts[0].intent_uri +=
-      ";S.org.chromium.arc.shelf_group_id=arc_test_shelf_group;end";
+      ";S.org.monyhar.arc.shelf_group_id=arc_test_shelf_group;end";
   SendInstallShortcuts(shortcuts);
   const std::string shortcut_id = ArcAppTest::GetAppId(shortcuts[0]);
   content::RunAllTasksUntilIdle();
@@ -3055,7 +3055,7 @@ TEST_P(ArcAppModelBuilderTest, AppLauncher) {
 
   const std::string launch_intent2_str = arc::GetLaunchIntent(
       app2.package_name, app2.activity,
-      std::vector<std::string>{"S.org.chromium.arc.start_type=initialStart"});
+      std::vector<std::string>{"S.org.monyhar.arc.start_type=initialStart"});
   {
     auto launch_intent2 = apps_util::CreateIntentForActivity(
         app2.activity, arc::kInitialStartParam, arc::kCategoryLauncher);

@@ -16,7 +16,7 @@ class Bus;
 
 namespace chromeos {
 
-// SystemProxyClient is used to communicate with the org.chromium.SystemProxy
+// SystemProxyClient is used to communicate with the org.monyhar.SystemProxy
 // service. All method should be called from the origin thread (UI thread) which
 // initializes the DBusThreadManager instance.
 class COMPONENT_EXPORT(SYSTEM_PROXY) SystemProxyClient {
@@ -76,7 +76,7 @@ class COMPONENT_EXPORT(SYSTEM_PROXY) SystemProxyClient {
   // Returns the global instance which may be null if not initialized.
   static SystemProxyClient* Get();
 
-  // SystemProxy daemon D-Bus method calls. See org.chromium.SystemProxy.xml and
+  // SystemProxy daemon D-Bus method calls. See org.monyhar.SystemProxy.xml and
   // system_proxy_service.proto in Chromium OS code for the documentation of the
   // methods and request/response messages.
   virtual void SetAuthenticationDetails(

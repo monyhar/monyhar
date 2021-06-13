@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.shape_detection;
+package org.monyhar.shape_detection;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.mojo.system.MessagePipeHandle;
-import org.chromium.mojo.system.impl.CoreImpl;
-import org.chromium.shape_detection.mojom.BarcodeDetectionProvider;
-import org.chromium.shape_detection.mojom.FaceDetectionProvider;
-import org.chromium.shape_detection.mojom.TextDetection;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.mojo.system.MessagePipeHandle;
+import org.monyhar.mojo.system.impl.CoreImpl;
+import org.monyhar.shape_detection.mojom.BarcodeDetectionProvider;
+import org.monyhar.shape_detection.mojom.FaceDetectionProvider;
+import org.monyhar.shape_detection.mojom.TextDetection;
 
 @JNINamespace("shape_detection")
 class InterfaceRegistrar {

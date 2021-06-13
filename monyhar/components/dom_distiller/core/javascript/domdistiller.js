@@ -18,7 +18,7 @@ try {
 
   // The OPTIONS placeholder will be replaced with the DomDistillerOptions at
   // runtime.
-  const distiller = window.org.chromium.distiller.DomDistiller;
+  const distiller = window.org.monyhar.distiller.DomDistiller;
   const res = distiller.applyWithOptions(options);
 
   if (stringify_output) {

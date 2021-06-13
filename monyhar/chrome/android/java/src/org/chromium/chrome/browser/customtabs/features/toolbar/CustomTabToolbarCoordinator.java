@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs.features.toolbar;
+package org.monyhar.chrome.browser.customtabs.features.toolbar;
 
-import static org.chromium.chrome.browser.dependency_injection.ChromeCommonQualifiers.APP_CONTEXT;
+import static org.monyhar.chrome.browser.dependency_injection.ChromeCommonQualifiers.APP_CONTEXT;
 
 import android.app.Activity;
 import android.app.PendingIntent;
@@ -19,26 +19,26 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.browser.customtabs.CustomTabsIntent;
 
-import org.chromium.base.Log;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.cc.input.BrowserControlsState;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsVisibilityManager;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.browserservices.intents.CustomButtonParams;
-import org.chromium.chrome.browser.compositor.layouts.LayoutManagerImpl;
-import org.chromium.chrome.browser.customtabs.CloseButtonVisibilityManager;
-import org.chromium.chrome.browser.customtabs.CustomTabCompositorContentInitializer;
-import org.chromium.chrome.browser.customtabs.CustomTabsConnection;
-import org.chromium.chrome.browser.customtabs.content.CustomTabActivityNavigationController;
-import org.chromium.chrome.browser.customtabs.content.CustomTabActivityTabController;
-import org.chromium.chrome.browser.customtabs.content.CustomTabActivityTabProvider;
-import org.chromium.chrome.browser.dependency_injection.ActivityScope;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.toolbar.ToolbarManager;
-import org.chromium.components.browser_ui.share.ShareHelper;
-import org.chromium.ui.util.TokenHolder;
-import org.chromium.url.GURL;
+import org.monyhar.base.Log;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.cc.input.BrowserControlsState;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsVisibilityManager;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.browserservices.intents.CustomButtonParams;
+import org.monyhar.chrome.browser.compositor.layouts.LayoutManagerImpl;
+import org.monyhar.chrome.browser.customtabs.CloseButtonVisibilityManager;
+import org.monyhar.chrome.browser.customtabs.CustomTabCompositorContentInitializer;
+import org.monyhar.chrome.browser.customtabs.CustomTabsConnection;
+import org.monyhar.chrome.browser.customtabs.content.CustomTabActivityNavigationController;
+import org.monyhar.chrome.browser.customtabs.content.CustomTabActivityTabController;
+import org.monyhar.chrome.browser.customtabs.content.CustomTabActivityTabProvider;
+import org.monyhar.chrome.browser.dependency_injection.ActivityScope;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.toolbar.ToolbarManager;
+import org.monyhar.components.browser_ui.share.ShareHelper;
+import org.monyhar.ui.util.TokenHolder;
+import org.monyhar.url.GURL;
 
 import javax.inject.Inject;
 import javax.inject.Named;

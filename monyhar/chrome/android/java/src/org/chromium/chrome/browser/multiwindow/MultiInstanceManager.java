@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.multiwindow;
+package org.monyhar.chrome.browser.multiwindow;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -19,27 +19,27 @@ import android.view.Display;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.CommandLine;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.app.tab_activity_glue.ReparentingTask;
-import org.chromium.chrome.browser.app.tabmodel.TabModelOrchestrator;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.lifecycle.ConfigurationChangedObserver;
-import org.chromium.chrome.browser.lifecycle.DestroyObserver;
-import org.chromium.chrome.browser.lifecycle.NativeInitObserver;
-import org.chromium.chrome.browser.lifecycle.PauseResumeWithNativeObserver;
-import org.chromium.chrome.browser.lifecycle.RecreateObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.util.AndroidTaskUtils;
-import org.chromium.components.browser_ui.widget.MenuOrKeyboardActionController;
-import org.chromium.ui.display.DisplayAndroidManager;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.app.tab_activity_glue.ReparentingTask;
+import org.monyhar.chrome.browser.app.tabmodel.TabModelOrchestrator;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.lifecycle.ConfigurationChangedObserver;
+import org.monyhar.chrome.browser.lifecycle.DestroyObserver;
+import org.monyhar.chrome.browser.lifecycle.NativeInitObserver;
+import org.monyhar.chrome.browser.lifecycle.PauseResumeWithNativeObserver;
+import org.monyhar.chrome.browser.lifecycle.RecreateObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.util.AndroidTaskUtils;
+import org.monyhar.components.browser_ui.widget.MenuOrKeyboardActionController;
+import org.monyhar.ui.display.DisplayAndroidManager;
 
 import java.util.List;
 
@@ -338,7 +338,7 @@ public class MultiInstanceManager
 
     @Override
     public boolean handleMenuOrKeyboardAction(int id, boolean fromMenu) {
-        if (id == org.chromium.chrome.R.id.move_to_other_window_menu_id) {
+        if (id == org.monyhar.chrome.R.id.move_to_other_window_menu_id) {
             TabModelOrchestrator tabModelOrchestrator = mTabModelOrchestratorSupplier.get();
             if (tabModelOrchestrator == null) return true;
             TabModelSelector tabModelSelector = tabModelOrchestrator.getTabModelSelector();
@@ -347,7 +347,7 @@ public class MultiInstanceManager
             Tab currentTab = tabModelSelector.getCurrentTab();
             if (currentTab != null) moveTabToOtherWindow(currentTab);
             return true;
-        } else if (id == org.chromium.chrome.R.id.new_window_menu_id) {
+        } else if (id == org.monyhar.chrome.R.id.new_window_menu_id) {
             openNewWindow();
             return true;
         }

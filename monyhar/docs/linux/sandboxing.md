@@ -6,7 +6,7 @@ renderers to run with a limited set of privileges since they process untrusted
 input and are likely to be compromised. Renderers will use an IPC mechanism to
 request access to resource from a more privileged (browser process).
 You can find more about this general design
-[here](https://dev.chromium.org/developers/design-documents/sandbox).
+[here](https://dev.monyhar.org/developers/design-documents/sandbox).
 
 We use different sandboxing techniques on Linux and Chrome OS, in combination,
 to achieve a good level of sandboxing. You can see which sandboxes are currently
@@ -41,11 +41,11 @@ network, something that is difficult to perform at the layer-2.
 
 | **Name** | **Layer and process** | **Linux flavors where available** | **State** |
 |:---------|:----------------------|:----------------------------------|:----------|
-| [Setuid sandbox](#The-setuid-sandbox) | Layer-1 in Zygote processes (renderers, PPAPI, [NaCl](https://www.chromium.org/nativeclient), some utility processes) | Linux distributions and Chrome OS | Enabled by default (old kernels) and maintained |
-| [User namespaces sandbox](#User-namespaces-sandbox) | Modern alternative to the setuid sandbox. Layer-1 in Zygote processes (renderers, PPAPI, [NaCl](https://www.chromium.org/nativeclient), some utility processes) | Linux distributions and Chrome OS (kernel >= 3.8) | Enabled by default (modern kernels) and actively developed |
-| [Seccomp-BPF](#The-sandbox-1) | Layer-2 in some Zygote processes (renderers, PPAPI, [NaCl](https://www.chromium.org/nativeclient)), Layer-1 + Layer-2 in GPU process | Linux kernel >= 3.5, Chrome OS and Ubuntu | Enabled by default and actively developed |
-| [Seccomp-legacy](#The-sandbox-2) | Layer-2 in renderers  | All                               | [Deprecated](https://src.chromium.org/viewvc/chrome?revision=197301&view=revision)  |
-| [SELinux](#SELinux) | Layer-1 in Zygote processes (renderers, PPAPI) | SELinux distributions             | [Deprecated](https://src.chromium.org/viewvc/chrome?revision=200838&view=revision) |
+| [Setuid sandbox](#The-setuid-sandbox) | Layer-1 in Zygote processes (renderers, PPAPI, [NaCl](https://www.monyhar.org/nativeclient), some utility processes) | Linux distributions and Chrome OS | Enabled by default (old kernels) and maintained |
+| [User namespaces sandbox](#User-namespaces-sandbox) | Modern alternative to the setuid sandbox. Layer-1 in Zygote processes (renderers, PPAPI, [NaCl](https://www.monyhar.org/nativeclient), some utility processes) | Linux distributions and Chrome OS (kernel >= 3.8) | Enabled by default (modern kernels) and actively developed |
+| [Seccomp-BPF](#The-sandbox-1) | Layer-2 in some Zygote processes (renderers, PPAPI, [NaCl](https://www.monyhar.org/nativeclient)), Layer-1 + Layer-2 in GPU process | Linux kernel >= 3.5, Chrome OS and Ubuntu | Enabled by default and actively developed |
+| [Seccomp-legacy](#The-sandbox-2) | Layer-2 in renderers  | All                               | [Deprecated](https://src.monyhar.org/viewvc/chrome?revision=197301&view=revision)  |
+| [SELinux](#SELinux) | Layer-1 in Zygote processes (renderers, PPAPI) | SELinux distributions             | [Deprecated](https://src.monyhar.org/viewvc/chrome?revision=200838&view=revision) |
 | AppArmor | Outer layer-1 in Zygote processes (renderers, PPAPI) | Not used                          | Deprecated |
 
 ## The setuid sandbox
@@ -98,7 +98,7 @@ async-signal safe IPC facility.
 [this page](http://outflux.net/teach-seccomp/) for more information.
 
 See
-[this blog post](http://blog.chromium.org/2012/11/a-safer-playground-for-your-linux-and.html)
+[this blog post](http://blog.monyhar.org/2012/11/a-safer-playground-for-your-linux-and.html)
 announcing Chrome support. Or
 [this one](http://blog.cr0.org/2012/09/introducing-chromes-next-generation.html)
 for a more technical overview.
@@ -121,7 +121,7 @@ See:
 
 ## SELinux
 
-[Deprecated](https://src.chromium.org/viewvc/chrome?revision=200838&view=revision).
+[Deprecated](https://src.monyhar.org/viewvc/chrome?revision=200838&view=revision).
 Was designed to be used instead of the SUID sandbox.
 
 Old information for archival purposes:
@@ -131,7 +131,7 @@ renderers and PPAPI processes) will do a dynamic transition. audit2allow will
 quickly build a usable module.
 
 Available since
-[r26257](https://src.chromium.org/viewvc/chrome?view=rev&revision=26257),
+[r26257](https://src.monyhar.org/viewvc/chrome?view=rev&revision=26257),
 more information in
 [this blog post](http://www.imperialviolet.org/2009/07/14/selinux.html) (grep
 for 'dynamic' since dynamic transitions are a little obscure in SELinux)
@@ -141,11 +141,11 @@ for 'dynamic' since dynamic transitions are a little obscure in SELinux)
 Sandboxing can make developing harder, see:
 
 *   [this page](suid_sandbox_development.md) for the `setuid` sandbox
-*   [this page](https://www.chromium.org/for-testers/bug-reporting-guidelines/hanging-tabs)
+*   [this page](https://www.monyhar.org/for-testers/bug-reporting-guidelines/hanging-tabs)
     for triggering crashes
 *   [this page for debugging tricks](debugging.md)
 
 ## See also
 
 *   [LinuxSandboxIPC](sandbox_ipc.md)
-*   [How Chromium's Linux sandbox affects Native Client](https://chromium.googlesource.com/native_client/src/native_client.git/+/main/docs/outer_sandbox.md)
+*   [How Chromium's Linux sandbox affects Native Client](https://monyhar.googlesource.com/native_client/src/native_client.git/+/main/docs/outer_sandbox.md)

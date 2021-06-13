@@ -32,7 +32,7 @@ GLOutputSurface::GLOutputSurface(
       viz_context_provider_(context_provider),
       surface_handle_(surface_handle),
       use_gpu_fence_(
-          context_provider->ContextCapabilities().chromium_gpu_fence &&
+          context_provider->ContextCapabilities().monyhar_gpu_fence &&
           context_provider->ContextCapabilities()
               .use_gpu_fences_for_overlay_planes) {
   const auto& context_capabilities = context_provider->ContextCapabilities();

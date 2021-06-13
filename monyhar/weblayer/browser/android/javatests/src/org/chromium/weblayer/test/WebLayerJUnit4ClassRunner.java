@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer.test;
+package org.monyhar.weblayer.test;
 
 import android.support.test.InstrumentationRegistry;
 
 import org.junit.runners.model.InitializationError;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.SkipCheck;
-import org.chromium.ui.test.util.UiDisableIfSkipCheck;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.SkipCheck;
+import org.monyhar.ui.test.util.UiDisableIfSkipCheck;
 
 import java.util.List;
 

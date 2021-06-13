@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.followmanagement;
+package org.monyhar.chrome.browser.feed.followmanagement;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -13,15 +13,15 @@ import android.widget.LinearLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.chrome.browser.feed.webfeed.R;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.favicon.LargeIconBridge;
-import org.chromium.ui.modelutil.LayoutViewBuilder;
-import org.chromium.ui.modelutil.MVCListAdapter.ModelList;
-import org.chromium.ui.modelutil.SimpleRecyclerViewAdapter;
+import org.monyhar.chrome.browser.feed.webfeed.R;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.favicon.LargeIconBridge;
+import org.monyhar.ui.modelutil.LayoutViewBuilder;
+import org.monyhar.ui.modelutil.MVCListAdapter.ModelList;
+import org.monyhar.ui.modelutil.SimpleRecyclerViewAdapter;
 /**
  * Sets up the model, adapter, and mediator for FollowManagement surface.  It is based on the doc at
- * https://chromium.googlesource.com/chromium/src/+/HEAD/docs/ui/android/mvc_simple_list_tutorial.md
+ * https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/ui/android/mvc_simple_list_tutorial.md
  */
 public class FollowManagementCoordinator {
     private static final String TAG = "FollowMMCoordinator";

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.paint_preview;
+package org.monyhar.chrome.browser.paint_preview;
 
 import android.graphics.Bitmap;
 import android.graphics.Rect;
@@ -21,25 +21,25 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 
-import org.chromium.base.Callback;
-import org.chromium.base.UnguessableToken;
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.browser.browser_controls.BrowserStateBrowserControlsVisibilityDelegate;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.paint_preview.services.PaintPreviewTabService;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.components.paint_preview.common.proto.PaintPreview.PaintPreviewProto;
-import org.chromium.components.paintpreview.browser.NativePaintPreviewServiceProvider;
-import org.chromium.components.paintpreview.player.PlayerCompositorDelegate;
-import org.chromium.components.paintpreview.player.PlayerManager;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.ui.util.TokenHolder;
-import org.chromium.url.GURL;
+import org.monyhar.base.Callback;
+import org.monyhar.base.UnguessableToken;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.browser.browser_controls.BrowserStateBrowserControlsVisibilityDelegate;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.paint_preview.services.PaintPreviewTabService;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.components.paint_preview.common.proto.PaintPreview.PaintPreviewProto;
+import org.monyhar.components.paintpreview.browser.NativePaintPreviewServiceProvider;
+import org.monyhar.components.paintpreview.player.PlayerCompositorDelegate;
+import org.monyhar.components.paintpreview.player.PlayerManager;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.ui.util.TokenHolder;
+import org.monyhar.url.GURL;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;

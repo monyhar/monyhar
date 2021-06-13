@@ -45,11 +45,11 @@ complicated.
 * [AFL OSS-Fuzz bugs] - bugs found by AFL in [OSS-Fuzz].
 
 [AFL]: http://lcamtuf.coredump.cx/afl/
-[AFL Chromium bugs]: https://bugs.chromium.org/p/chromium/issues/list?can=1&q=afl_chrome_asan+-status%3AWontFix%2CDuplicate+label%3Aclusterfuzz
-[AFL OSS-Fuzz bugs]: https://bugs.chromium.org/p/oss-fuzz/issues/list?can=1&q=label%3AEngine-afl%2CStability-AFL+label%3AClusterFuzz+-status%3AWontFix%2CDuplicate
-[trace-pc-guard]: https://chromium.googlesource.com/chromium/src/+/HEAD/third_party/afl/src/llvm_mode/README.llvm#169
+[AFL Chromium bugs]: https://bugs.monyhar.org/p/monyhar/issues/list?can=1&q=afl_chrome_asan+-status%3AWontFix%2CDuplicate+label%3Aclusterfuzz
+[AFL OSS-Fuzz bugs]: https://bugs.monyhar.org/p/oss-fuzz/issues/list?can=1&q=label%3AEngine-afl%2CStability-AFL+label%3AClusterFuzz+-status%3AWontFix%2CDuplicate
+[trace-pc-guard]: https://monyhar.googlesource.com/monyhar/src/+/HEAD/third_party/afl/src/llvm_mode/README.llvm#169
 [ASan]: https://clang.llvm.org/docs/AddressSanitizer.html
-[afl_driver.cpp]: https://chromium.googlesource.com/chromium/llvm-project/compiler-rt/lib/fuzzer.git/+/HEAD/afl/afl_driver.cpp
+[afl_driver.cpp]: https://monyhar.googlesource.com/monyhar/llvm-project/compiler-rt/lib/fuzzer.git/+/HEAD/afl/afl_driver.cpp
 [launcher]: https://github.com/google/clusterfuzz/blob/master/src/python/bot/fuzzers/afl/launcher.py
 [LPM]: libprotobuf-mutator.md
 [OSS-Fuzz]: https://github.com/google/oss-fuzz/

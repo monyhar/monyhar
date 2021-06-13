@@ -46,9 +46,9 @@ test_resources("root_tagged_root_resources") {
 android_library("javatests") {
   testonly = true
   sources = [
-    "java/src/org/chromium/build/resource_overlay/ResourceOverlayTest.java",
+    "java/src/org/monyhar/build/resource_overlay/ResourceOverlayTest.java",
   ]
-  resources_package = "org.chromium.build.resource_overlay"
+  resources_package = "org.monyhar.build.resource_overlay"
   deps = [
     ":dependency_tagged_root_resources",
     ":root_tagged_root_resources",

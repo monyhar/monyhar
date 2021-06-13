@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.preferences;
+package org.monyhar.chrome.browser.preferences;
 
 import android.text.TextUtils;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.annotations.CheckDiscard;
+import org.monyhar.base.annotations.CheckDiscard;
 
 import java.util.Arrays;
 import java.util.HashSet;

@@ -82,7 +82,7 @@ js_library("crostini_disk_resize_dialog.m") {
   sources = [ "$root_gen_dir/chrome/browser/resources/settings/chromeos/crostini_page/crostini_disk_resize_dialog.m.js" ]
   deps = [
     ":crostini_browser_proxy.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_button:cr_button.m",
     "//ui/webui/resources/cr_elements/cr_dialog:cr_dialog.m",
     "//ui/webui/resources/cr_elements/cr_slider:cr_slider.m",
@@ -166,7 +166,7 @@ js_library("crostini_port_forwarding.m") {
     "..:metrics_recorder.m",
     "../../controls:settings_toggle_button",
     "../../prefs:prefs_behavior",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_action_menu:cr_action_menu.m",
     "//ui/webui/resources/cr_elements/cr_icon_button:cr_icon_button.m",
     "//ui/webui/resources/cr_elements/cr_lazy_render:cr_lazy_render.m",

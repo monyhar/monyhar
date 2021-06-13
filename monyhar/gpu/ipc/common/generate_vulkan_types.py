@@ -237,8 +237,8 @@ def GenerateMojom(mojom_file):
 
 // This file is auto-generated from
 // gpu/ipc/common/generate_vulkan_types.py
-// It's formatted by clang-format using chromium coding style:
-//    clang-format -i -style=chromium filename
+// It's formatted by clang-format using monyhar coding style:
+//    clang-format -i -style=monyhar filename
 // DO NOT EDIT!
 
 module gpu.mojom;
@@ -424,8 +424,8 @@ def GenerateTraitsFile(traits_header_file, traits_source_file):
 
 // This file is auto-generated from
 // gpu/ipc/common/generate_vulkan_types.py
-// It's formatted by clang-format using chromium coding style:
-//    clang-format -i -style=chromium filename
+// It's formatted by clang-format using monyhar coding style:
+//    clang-format -i -style=monyhar filename
 // DO NOT EDIT!
 
 #ifndef GPU_IPC_COMMON_VULKAN_TYPES_MOJOM_TRAITS_H_
@@ -446,8 +446,8 @@ namespace mojo {
 
 // This file is auto-generated from
 // gpu/ipc/common/generate_vulkan_types.py
-// It's formatted by clang-format using chromium coding style:
-//    clang-format -i -style=chromium filename
+// It's formatted by clang-format using monyhar coding style:
+//    clang-format -i -style=monyhar filename
 // DO NOT EDIT!
 
 #include "gpu/ipc/common/vulkan_info_mojom_traits.h"
@@ -503,7 +503,7 @@ def main(argv):
       "directory.")
   parser.add_option(
       "-c", "--check", action="store_true",
-      help="Check if output files match generated files in chromium root "
+      help="Check if output files match generated files in monyhar root "
       "directory. Use this in PRESUBMIT scripts with --output-dir.")
 
   (options, _) = parser.parse_args(args=argv)
@@ -518,7 +518,7 @@ def main(argv):
     formatter = "clang-format"
     if platform.system() == "Windows":
       formatter += ".bat"
-    subprocess.call([formatter, "-i", "-style=chromium", filename])
+    subprocess.call([formatter, "-i", "-style=monyhar", filename])
 
   vk_xml_file_path = os.path.join(
     _SELF_LOCATION, "../../..", _VK_XML_FILE)

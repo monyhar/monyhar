@@ -100,7 +100,7 @@ TEST(DataBufferTest, Duration) {
 TEST(DataBufferTest, ReadingWriting) {
   const char kData[] = "hello";
   const int kDataSize = base::size(kData);
-  const char kNewData[] = "chromium";
+  const char kNewData[] = "monyhar";
   const int kNewDataSize = base::size(kNewData);
 
   // Create a DataBuffer.

@@ -108,7 +108,7 @@ PRINT STATEMENT: webdriver/tests/support/helpers.py
 CONSOLE: console/*
 CONSOLE: js/builtins/weakrefs/resources/maybe-garbage-collect.js
 CONSOLE: resources/check-layout-th.js
-CONSOLE: resources/chromium/*
+CONSOLE: resources/monyhar/*
 CONSOLE: resources/testharness.js
 CONSOLE: streams/resources/test-utils.js
 CONSOLE: service-workers/service-worker/resources/navigation-redirect-other-origin.html
@@ -320,7 +320,7 @@ SET TIMEOUT: html/dom/documents/dom-tree-accessors/Document.currentScript.html
 SET TIMEOUT: html/webappapis/timers/*
 SET TIMEOUT: orientation-event/resources/orientation-event-helpers.js
 SET TIMEOUT: portals/history/resources/portal-harness.js
-SET TIMEOUT: resources/chromium/*
+SET TIMEOUT: resources/monyhar/*
 SET TIMEOUT: resources/test/tests/functional/add_cleanup.html
 SET TIMEOUT: resources/test/tests/functional/add_cleanup_async.html
 SET TIMEOUT: resources/test/tests/functional/add_cleanup_async_rejection.html
@@ -349,7 +349,7 @@ SET TIMEOUT: acid/acid3/test.html
 *: css/tools/_virtualenv/*
 
 ## Third party data files
-TRAILING WHITESPACE: resources/chromium/*
+TRAILING WHITESPACE: resources/monyhar/*
 
 ## Test plans and implementation reports
 *: css/*/test-plan/*
@@ -709,9 +709,9 @@ MISSING-LINK: css/filter-effects/*.any.js
 
 # Tests that use WebKit/Blink testing APIs
 LAYOUTTESTS APIS: import-maps/data-driven/resources/test-helper-iframe.js
-LAYOUTTESTS APIS: resources/chromium/enable-hyperlink-auditing.js
-LAYOUTTESTS APIS: resources/chromium/generic_sensor_mocks.js
-LAYOUTTESTS APIS: resources/chromium/webxr-test.js
+LAYOUTTESTS APIS: resources/monyhar/enable-hyperlink-auditing.js
+LAYOUTTESTS APIS: resources/monyhar/generic_sensor_mocks.js
+LAYOUTTESTS APIS: resources/monyhar/webxr-test.js
 LAYOUTTESTS APIS: webxr/resources/webxr_util.js
 
 # Signed Exchange files have hard-coded URLs in the certUrl field
@@ -728,23 +728,23 @@ WEB-PLATFORM.TEST:web-bundle/subresource-loading/*.html
 
 # Tests that depend on resources in /gen/ in Chromium:
 # https://github.com/web-platform-tests/wpt/issues/16455
-# Please consult with ecosystem-infra@chromium.org before adding more.
+# Please consult with ecosystem-infra@monyhar.org before adding more.
 MISSING DEPENDENCY: credential-management/support/otpcredential-helper.js
-MISSING DEPENDENCY: resources/chromium/content-index-helpers.js
-MISSING DEPENDENCY: resources/chromium/contacts_manager_mock.js
-MISSING DEPENDENCY: resources/chromium/web-bluetooth-test.js
-MISSING DEPENDENCY: resources/chromium/webusb-test.js
-MISSING DEPENDENCY: resources/chromium/fake-serial.js
-MISSING DEPENDENCY: resources/chromium/generic_sensor_mocks.js
-MISSING DEPENDENCY: resources/chromium/mock-barcodedetection.js
-MISSING DEPENDENCY: resources/chromium/mock-facedetection.js
-MISSING DEPENDENCY: resources/chromium/mock-idle-detection.js
-MISSING DEPENDENCY: resources/chromium/mock-imagecapture.js
-MISSING DEPENDENCY: resources/chromium/mock-managed-config.js
-MISSING DEPENDENCY: resources/chromium/mock-screenenumeration.js
-MISSING DEPENDENCY: resources/chromium/mock-textdetection.js
-MISSING DEPENDENCY: resources/chromium/nfc-mock.js
-MISSING DEPENDENCY: resources/chromium/webxr-test.js
+MISSING DEPENDENCY: resources/monyhar/content-index-helpers.js
+MISSING DEPENDENCY: resources/monyhar/contacts_manager_mock.js
+MISSING DEPENDENCY: resources/monyhar/web-bluetooth-test.js
+MISSING DEPENDENCY: resources/monyhar/webusb-test.js
+MISSING DEPENDENCY: resources/monyhar/fake-serial.js
+MISSING DEPENDENCY: resources/monyhar/generic_sensor_mocks.js
+MISSING DEPENDENCY: resources/monyhar/mock-barcodedetection.js
+MISSING DEPENDENCY: resources/monyhar/mock-facedetection.js
+MISSING DEPENDENCY: resources/monyhar/mock-idle-detection.js
+MISSING DEPENDENCY: resources/monyhar/mock-imagecapture.js
+MISSING DEPENDENCY: resources/monyhar/mock-managed-config.js
+MISSING DEPENDENCY: resources/monyhar/mock-screenenumeration.js
+MISSING DEPENDENCY: resources/monyhar/mock-textdetection.js
+MISSING DEPENDENCY: resources/monyhar/nfc-mock.js
+MISSING DEPENDENCY: resources/monyhar/webxr-test.js
 
 # Tests that are false positives for using Ahem as a system font
 AHEM SYSTEM FONT: acid/acid3/test.html

@@ -1,4 +1,4 @@
-Test for chromium bug : 408066. ASSERTION FAILED: !extraRowSpanningHeight in blink::RenderTableSection::distributeRowSpanHeightToRows.
+Test for monyhar bug : 408066. ASSERTION FAILED: !extraRowSpanningHeight in blink::RenderTableSection::distributeRowSpanHeightToRows.
 	
 PASS
 r0c0

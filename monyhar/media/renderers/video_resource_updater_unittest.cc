@@ -14,7 +14,7 @@
 #include "components/viz/client/shared_bitmap_reporter.h"
 #include "components/viz/test/fake_output_surface.h"
 #include "components/viz/test/test_gles2_interface.h"
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "gpu/command_buffer/common/mailbox.h"
 #include "media/base/video_frame.h"
 #include "testing/gtest/include/gtest/gtest.h"

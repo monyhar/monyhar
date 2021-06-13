@@ -3,12 +3,12 @@
 # found in the LICENSE file.
 
 # To create CIPD package run the following commands:
-# For full instructions see: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/cipd_and_3pp.md
+# For full instructions see: https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/cipd_and_3pp.md
 # cd third_party/google-truth
 # cipd auth-login
 # cipd create --pkg-def cipd.yaml
 # cd -
-package: chromium/third_party/google-truth
+package: monyhar/third_party/google-truth
 description: Google Truth Fluent Assertions Java Library
 data:
   - file: lib/truth-0.45.jar

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr;
+package org.monyhar.chrome.browser.vr;
 
 import android.content.Context;
 import android.view.Gravity;
@@ -11,7 +11,7 @@ import android.view.ViewGroup.MarginLayoutParams;
 import android.widget.FrameLayout;
 import android.widget.PopupWindow;
 
-import org.chromium.ui.UiUtils;
+import org.monyhar.ui.UiUtils;
 
 /**
  * This class implements a VrPopupWindow which is similar to Android PopupWindow in VR.

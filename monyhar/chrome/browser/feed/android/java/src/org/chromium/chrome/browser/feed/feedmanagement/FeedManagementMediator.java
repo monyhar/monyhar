@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.feedmanagement;
+package org.monyhar.chrome.browser.feed.feedmanagement;
 
 import android.app.PendingIntent;
 import android.content.ComponentName;
@@ -16,13 +16,13 @@ import android.view.View.OnClickListener;
 
 import androidx.browser.customtabs.CustomTabsIntent;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.compat.ApiHelperForM;
-import org.chromium.chrome.browser.feed.webfeed.R;
-import org.chromium.ui.modelutil.MVCListAdapter.ModelList;
-import org.chromium.ui.modelutil.ModelListAdapter;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.compat.ApiHelperForM;
+import org.monyhar.chrome.browser.feed.webfeed.R;
+import org.monyhar.ui.modelutil.MVCListAdapter.ModelList;
+import org.monyhar.ui.modelutil.ModelListAdapter;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * The MVC pattern Mediator for the Feed Management activity. This activity provides a common place
@@ -81,7 +81,7 @@ public class FeedManagementMediator {
     }
 
     // TODO(petewil): Borrowed these from code we can't link to.  How do I keep them in sync?
-    static final String EXTRA_UI_TYPE = "org.chromium.chrome.browser.customtabs.EXTRA_UI_TYPE";
+    static final String EXTRA_UI_TYPE = "org.monyhar.chrome.browser.customtabs.EXTRA_UI_TYPE";
     static final String TRUSTED_APPLICATION_CODE_EXTRA = "trusted_application_code_extra";
 
     // Launch a new activity in the same task with the given uri as a CCT.
@@ -92,7 +92,7 @@ public class FeedManagementMediator {
         Intent intent = builder.build().intent;
         intent.setData(Uri.parse(uri));
         intent.setAction(Intent.ACTION_VIEW);
-        intent.setClassName(mContext, "org.chromium.chrome.browser.customtabs.CustomTabActivity");
+        intent.setClassName(mContext, "org.monyhar.chrome.browser.customtabs.CustomTabActivity");
 
         // Do the things that createCustomTabActivityIntent does:
         intent.setPackage(mContext.getPackageName());

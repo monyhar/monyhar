@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.shell;
+package org.monyhar.chromecast.shell;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,13 +13,13 @@ import android.widget.FrameLayout;
 import androidx.annotation.ColorInt;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chromecast.base.Observer;
-import org.chromium.components.embedder_support.view.ContentView;
-import org.chromium.components.embedder_support.view.ContentViewRenderView;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.ActivityWindowAndroid;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chromecast.base.Observer;
+import org.monyhar.components.embedder_support.view.ContentView;
+import org.monyhar.components.embedder_support.view.ContentViewRenderView;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.ActivityWindowAndroid;
+import org.monyhar.ui.base.WindowAndroid;
 
 class CastWebContentsScopes {
     interface WindowTokenProvider {

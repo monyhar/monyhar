@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:$(cat version.txt)
-package: chromium/third_party/bouncycastle
+package: monyhar/third_party/bouncycastle
 description: bouncycastle Java library
 data:
   - file: lib/bcprov-jdk16.jar

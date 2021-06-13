@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.page_info;
+package org.monyhar.chrome.browser.page_info;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -17,17 +17,17 @@ import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.chrome.test.util.browser.LocationSettingsTestUtil;
-import org.chromium.components.content_settings.ContentSettingValues;
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.components.page_info.PageInfoPermissionsController.PermissionObject;
-import org.chromium.components.page_info.PermissionParamsListBuilder;
-import org.chromium.ui.base.AndroidPermissionDelegate;
-import org.chromium.ui.base.PermissionCallback;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.chrome.test.util.browser.LocationSettingsTestUtil;
+import org.monyhar.components.content_settings.ContentSettingValues;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.components.page_info.PageInfoPermissionsController.PermissionObject;
+import org.monyhar.components.page_info.PermissionParamsListBuilder;
+import org.monyhar.ui.base.AndroidPermissionDelegate;
+import org.monyhar.ui.base.PermissionCallback;
 
 import java.util.ArrayList;
 import java.util.List;

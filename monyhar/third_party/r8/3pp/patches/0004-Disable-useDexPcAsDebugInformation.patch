@@ -1,5 +1,5 @@
 From 9d1ddf05f237b5bc678f52688db84a9ae0682476 Mon Sep 17 00:00:00 2001
-From: Sam Maier <smaier@chromium.org>
+From: Sam Maier <smaier@monyhar.org>
 Date: Mon, 31 May 2021 15:28:45 -0400
 Subject: [PATCH 4/4] Disable useDexPcAsDebugInformation
 

@@ -37,7 +37,7 @@ class GPU_GLES2_EXPORT Logger {
 
   // Defaults to true. Set to false for the gpu_unittests as they
   // are explicitly checking errors are generated and so don't need the numerous
-  // messages. Otherwise, chromium code that generates these errors likely has a
+  // messages. Otherwise, monyhar code that generates these errors likely has a
   // bug.
   void set_log_synthesized_gl_errors(bool enabled) {
     log_synthesized_gl_errors_ = enabled;

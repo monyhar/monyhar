@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_manager.settings;
+package org.monyhar.chrome.browser.password_manager.settings;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -19,8 +19,8 @@ import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.not;
 import static org.mockito.Mockito.when;
 
-import static org.chromium.chrome.browser.password_manager.settings.PasswordSettingsTestHelper.hasTextInViewHolder;
-import static org.chromium.chrome.test.util.ViewUtils.onViewWaiting;
+import static org.monyhar.chrome.browser.password_manager.settings.PasswordSettingsTestHelper.hasTextInViewHolder;
+import static org.monyhar.chrome.test.util.ViewUtils.onViewWaiting;
 
 import android.view.View;
 
@@ -36,28 +36,28 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.CollectionUtil;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.password_check.PasswordCheck;
-import org.chromium.chrome.browser.password_check.PasswordCheckFactory;
-import org.chromium.chrome.browser.preferences.Pref;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.settings.SettingsActivity;
-import org.chromium.chrome.browser.settings.SettingsActivityTestRule;
-import org.chromium.chrome.browser.sync.SyncService;
-import org.chromium.chrome.test.ChromeBrowserTestRule;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.util.browser.Features.DisableFeatures;
-import org.chromium.components.browser_ui.settings.ChromeSwitchPreference;
-import org.chromium.components.prefs.PrefService;
-import org.chromium.components.sync.ModelType;
-import org.chromium.components.user_prefs.UserPrefs;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.CollectionUtil;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.password_check.PasswordCheck;
+import org.monyhar.chrome.browser.password_check.PasswordCheckFactory;
+import org.monyhar.chrome.browser.preferences.Pref;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.settings.SettingsActivity;
+import org.monyhar.chrome.browser.settings.SettingsActivityTestRule;
+import org.monyhar.chrome.browser.sync.SyncService;
+import org.monyhar.chrome.test.ChromeBrowserTestRule;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.util.browser.Features.DisableFeatures;
+import org.monyhar.components.browser_ui.settings.ChromeSwitchPreference;
+import org.monyhar.components.prefs.PrefService;
+import org.monyhar.components.sync.ModelType;
+import org.monyhar.components.user_prefs.UserPrefs;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /**
  * Tests for the "Passwords" settings screen. These tests are not batchable (without significant

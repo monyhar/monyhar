@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.home.list.holder;
+package org.monyhar.chrome.browser.download.home.list.holder;
 
 import android.graphics.drawable.BitmapDrawable;
 import android.view.LayoutInflater;
@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.chromium.chrome.browser.download.home.list.ListItem;
-import org.chromium.chrome.browser.download.home.list.ListProperties;
-import org.chromium.chrome.browser.download.internal.R;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.chrome.browser.download.home.list.ListItem;
+import org.monyhar.chrome.browser.download.home.list.ListProperties;
+import org.monyhar.chrome.browser.download.internal.R;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * A {@link RecyclerView.ViewHolder} specifically meant to display a card header.

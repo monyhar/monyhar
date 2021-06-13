@@ -21,7 +21,7 @@ and app Providers. This simplifies `M×N` code paths to `M+N` code paths, each
 side with a uniform API, reducing code duplication and improving behavioral
 consistency. This service (a Mojo service) could potentially be spun out into a
 new process, for the usual
-[Servicification](https://www.chromium.org/servicification) benefits (e.g.
+[Servicification](https://www.monyhar.org/servicification) benefits (e.g.
 self-contained services are easier to test and to sandbox), and would also
 facilitate Chrome OS apps that aren't tied to the browser, e.g. Ash apps.
 

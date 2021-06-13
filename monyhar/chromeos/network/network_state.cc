@@ -382,13 +382,13 @@ std::string NetworkState::connection_state() const {
          connection_state_ == shill::kStateRedirectFound ||
          connection_state_ == shill::kStatePortalSuspected ||
          // TODO(https://crbug.com/552190): Remove kStateOffline from this list
-         // when occurrences in chromium code have been eliminated.
+         // when occurrences in monyhar code have been eliminated.
          connection_state_ == shill::kStateOffline ||
          connection_state_ == shill::kStateOnline ||
          connection_state_ == shill::kStateFailure ||
          connection_state_ == shill::kStateDisconnect ||
          // TODO(https://crbug.com/552190): Remove kStateActivationFailure from
-         // this list when occurrences in chromium code have been eliminated.
+         // this list when occurrences in monyhar code have been eliminated.
          connection_state_ == shill::kStateActivationFailure ||
          // TODO(https://crbug.com/552190): Empty should not be a valid state,
          // but e.g. new tether NetworkStates and unit tests use it currently.

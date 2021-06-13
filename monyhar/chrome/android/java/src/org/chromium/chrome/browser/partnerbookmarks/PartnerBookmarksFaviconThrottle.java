@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.partnerbookmarks;
+package org.monyhar.chrome.browser.partnerbookmarks;
 
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
@@ -10,7 +10,7 @@ import android.text.format.DateUtils;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ContextUtils;
+import org.monyhar.base.ContextUtils;
 
 import java.util.HashMap;
 import java.util.Map;

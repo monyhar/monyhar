@@ -192,7 +192,7 @@ gsutil -m rsync <path_to_corpus> gs://clusterfuzz-corpus/libfuzzer/<my_fuzzer>
 
 *** note
 **Note:** To write to this bucket using `gsutil`, you must be logged into your
-@google.com account (@chromium.org will not work). You can use the `gcloud auth
+@google.com account (@monyhar.org will not work). You can use the `gcloud auth
 login` command to log into your account in `gsutil` if you installed `gsutil`
 through `gcloud`.
 ***
@@ -291,7 +291,7 @@ crashes).
 [Corpus GCS Bucket]: https://console.cloud.google.com/storage/clusterfuzz-corpus/libfuzzer
 [Getting Started Guide]: getting_started.md
 [corpus from ClusterFuzz]: libFuzzer_integration.md#Corpus
-[coverage script]: https://cs.chromium.org/chromium/src/tools/code_coverage/coverage.py
-[fuzzing coverage]: https://chromium-coverage.appspot.com/reports/latest_fuzzers_only/linux/index.html
+[coverage script]: https://cs.monyhar.org/monyhar/src/tools/code_coverage/coverage.py
+[fuzzing coverage]: https://monyhar-coverage.appspot.com/reports/latest_fuzzers_only/linux/index.html
 [gsutil]: https://cloud.google.com/storage/docs/gsutil
 [startup initialization]: https://llvm.org/docs/LibFuzzer.html#startup-initialization

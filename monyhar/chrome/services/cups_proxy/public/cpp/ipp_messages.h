@@ -27,7 +27,7 @@ struct HttpRequestLine {
 
 // POD representation of an IPP request and assorted metadata.
 struct IppRequest {
-  // Explicitly declared/defined defaults since [chromium-style] flagged this as
+  // Explicitly declared/defined defaults since [monyhar-style] flagged this as
   // a complex struct.
   IppRequest();
   IppRequest(IppRequest&& other);
@@ -55,7 +55,7 @@ struct HttpStatusLine {
 
 // POD representation of an IPP response and assorted metadata.
 struct IppResponse {
-  // Explicitly declared/defined defaults since [chromium-style] flagged this as
+  // Explicitly declared/defined defaults since [monyhar-style] flagged this as
   // a complex struct.
   IppResponse();
   IppResponse(IppResponse&& other);

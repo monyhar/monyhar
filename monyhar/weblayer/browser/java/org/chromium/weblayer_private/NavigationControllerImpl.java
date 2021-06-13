@@ -2,26 +2,26 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.os.RemoteException;
 import android.os.SystemClock;
 import android.webkit.WebResourceResponse;
 
-import org.chromium.base.TimeUtilsJni;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.embedder_support.util.WebResourceResponseInfo;
-import org.chromium.weblayer_private.interfaces.APICallException;
-import org.chromium.weblayer_private.interfaces.IClientPage;
-import org.chromium.weblayer_private.interfaces.INavigateParams;
-import org.chromium.weblayer_private.interfaces.INavigationController;
-import org.chromium.weblayer_private.interfaces.INavigationControllerClient;
-import org.chromium.weblayer_private.interfaces.IObjectWrapper;
-import org.chromium.weblayer_private.interfaces.NavigateParams;
-import org.chromium.weblayer_private.interfaces.ObjectWrapper;
-import org.chromium.weblayer_private.interfaces.StrictModeWorkaround;
+import org.monyhar.base.TimeUtilsJni;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.embedder_support.util.WebResourceResponseInfo;
+import org.monyhar.weblayer_private.interfaces.APICallException;
+import org.monyhar.weblayer_private.interfaces.IClientPage;
+import org.monyhar.weblayer_private.interfaces.INavigateParams;
+import org.monyhar.weblayer_private.interfaces.INavigationController;
+import org.monyhar.weblayer_private.interfaces.INavigationControllerClient;
+import org.monyhar.weblayer_private.interfaces.IObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.NavigateParams;
+import org.monyhar.weblayer_private.interfaces.ObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.StrictModeWorkaround;
 
 import java.util.HashMap;
 import java.util.Map;

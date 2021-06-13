@@ -2,27 +2,27 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar.top;
+package org.monyhar.chrome.browser.toolbar.top;
 
 import android.content.Context;
 import android.graphics.RectF;
 
-import org.chromium.base.Callback;
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsStateProvider;
-import org.chromium.chrome.browser.layouts.CompositorModelChangeProcessor;
-import org.chromium.chrome.browser.layouts.EventFilter;
-import org.chromium.chrome.browser.layouts.LayoutManager;
-import org.chromium.chrome.browser.layouts.SceneOverlay;
-import org.chromium.chrome.browser.layouts.components.VirtualView;
-import org.chromium.chrome.browser.layouts.scene_layer.SceneOverlayLayer;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.theme.TopUiThemeColorProvider;
-import org.chromium.chrome.browser.toolbar.R;
-import org.chromium.components.browser_ui.widget.ClipDrawableProgressBar;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.resources.ResourceManager;
+import org.monyhar.base.Callback;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsStateProvider;
+import org.monyhar.chrome.browser.layouts.CompositorModelChangeProcessor;
+import org.monyhar.chrome.browser.layouts.EventFilter;
+import org.monyhar.chrome.browser.layouts.LayoutManager;
+import org.monyhar.chrome.browser.layouts.SceneOverlay;
+import org.monyhar.chrome.browser.layouts.components.VirtualView;
+import org.monyhar.chrome.browser.layouts.scene_layer.SceneOverlayLayer;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.theme.TopUiThemeColorProvider;
+import org.monyhar.chrome.browser.toolbar.R;
+import org.monyhar.components.browser_ui.widget.ClipDrawableProgressBar;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.resources.ResourceManager;
 
 import java.util.List;
 

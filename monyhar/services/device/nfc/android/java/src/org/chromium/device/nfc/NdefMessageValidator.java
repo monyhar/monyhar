@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.device.nfc;
+package org.monyhar.device.nfc;
 
-import org.chromium.device.mojom.NdefMessage;
-import org.chromium.device.mojom.NdefRecord;
+import org.monyhar.device.mojom.NdefMessage;
+import org.monyhar.device.mojom.NdefRecord;
 
 /**
  * Utility class that provides validation of NdefMessage.

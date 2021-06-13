@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.home;
+package org.monyhar.chrome.browser.download.home;
 
 import android.graphics.Bitmap;
 
-import org.chromium.base.Callback;
+import org.monyhar.base.Callback;
 
 /** Responsible for providing favicon for a given URL. */
 public interface FaviconProvider {

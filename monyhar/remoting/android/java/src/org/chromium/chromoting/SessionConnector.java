@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting;
+package org.monyhar.chromoting;
 
-import org.chromium.chromoting.jni.Client;
-import org.chromium.chromoting.jni.ConnectionListener;
-import org.chromium.chromoting.jni.DirectoryService;
-import org.chromium.chromoting.jni.DirectoryServiceRequestError;
+import org.monyhar.chromoting.jni.Client;
+import org.monyhar.chromoting.jni.ConnectionListener;
+import org.monyhar.chromoting.jni.DirectoryService;
+import org.monyhar.chromoting.jni.DirectoryServiceRequestError;
 
 /**
  * This class manages making a connection to a host, with logic for reloading the host list and

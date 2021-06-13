@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr;
+package org.monyhar.chrome.browser.vr;
 
-import org.chromium.base.annotations.UsedByReflection;
+import org.monyhar.base.annotations.UsedByReflection;
 
 /** {@link VrDelegateProvider} implementation if the VR module is available. */
 @UsedByReflection("VrModuleProvider.java")

@@ -1,6 +1,6 @@
-dtapuska@chromium.org
-bokan@chromium.org
-flackr@chromium.org
+dtapuska@monyhar.org
+bokan@monyhar.org
+flackr@monyhar.org
 
 per-file *.mojom=set noparent
 per-file *.mojom=file://ipc/SECURITY_OWNERS

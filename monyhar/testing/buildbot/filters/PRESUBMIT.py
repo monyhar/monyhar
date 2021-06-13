@@ -3,7 +3,7 @@
 # found in the LICENSE file.
 """Presubmit script for //testing/buildbot/filters.
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See http://dev.monyhar.org/developers/how-tos/depottools/presubmit-scripts
 for more details about the presubmit API built into depot_tools.
 """
 
@@ -15,9 +15,9 @@ def _CheckFilterFileFormat(input_api, output_api):
   """This ensures all modified filter files are free of common syntax errors.
 
   See the following for the correct syntax of these files:
-  https://chromium.googlesource.com/chromium/src/+/main/testing/buildbot/filters/README.md#file-syntax
+  https://monyhar.googlesource.com/monyhar/src/+/main/testing/buildbot/filters/README.md#file-syntax
   As well as:
-  https://bit.ly/chromium-test-list-format
+  https://bit.ly/monyhar-test-list-format
   """
   errors = []
   warnings = []

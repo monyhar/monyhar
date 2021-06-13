@@ -2,26 +2,26 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omaha.notification;
+package org.monyhar.chrome.browser.omaha.notification;
 
-import static org.chromium.chrome.browser.omaha.UpdateStatusProvider.UpdateState.INLINE_UPDATE_AVAILABLE;
-import static org.chromium.chrome.browser.omaha.UpdateStatusProvider.UpdateState.UPDATE_AVAILABLE;
+import static org.monyhar.chrome.browser.omaha.UpdateStatusProvider.UpdateState.INLINE_UPDATE_AVAILABLE;
+import static org.monyhar.chrome.browser.omaha.UpdateStatusProvider.UpdateState.UPDATE_AVAILABLE;
 
 import android.content.Context;
 import android.content.Intent;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.document.ChromeLauncherActivity;
-import org.chromium.chrome.browser.omaha.UpdateStatusProvider;
-import org.chromium.chrome.browser.omaha.UpdateStatusProvider.UpdateState;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.document.ChromeLauncherActivity;
+import org.monyhar.chrome.browser.omaha.UpdateStatusProvider;
+import org.monyhar.chrome.browser.omaha.UpdateStatusProvider.UpdateState;
 
 /**
  * Util functions for update notification implementation.
  */
 public class UpdateUtils {
     private static final String INLINE_UPDATE_NOTIFICATION_RECEIVED_EXTRA =
-            "org.chromium.chrome.browser.omaha.inline_update_notification_received_extra";
+            "org.monyhar.chrome.browser.omaha.inline_update_notification_received_extra";
 
     /**
      * Addresses different states for update notification.

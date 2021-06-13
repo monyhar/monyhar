@@ -8,7 +8,7 @@ developers who use WebView in their apps.
 
 ## Which channel do I want?
 
-Like [Chrome](https://www.chromium.org/getting-involved/dev-channel), WebView
+Like [Chrome](https://www.monyhar.org/getting-involved/dev-channel), WebView
 has four release channels:
 
 - Stable channel
@@ -32,9 +32,9 @@ has four release channels:
   - Includes the latest code changes from the previous day
   - Has not been tested or used
 
-If you're looking for a specific of version of chromium, the latest versions
+If you're looking for a specific of version of monyhar, the latest versions
 released to each channel can be found on [Chromium
-Dash](https://chromiumdash.appspot.com/releases?platform=Android). WebView and
+Dash](https://monyhardash.appspot.com/releases?platform=Android). WebView and
 Chrome for Android always release together on all OS levels.
 
 On Android 7 (Nougat) and later, you can install multiple channels at the same
@@ -127,7 +127,7 @@ pre-release channels of WebView are not available.
 ## Reporting problems with pre-release WebView
 
 Any WebView-related bugs can be filed
-[here](https://bugs.chromium.org/p/chromium/issues/entry?template=Webview+Bugs).
+[here](https://bugs.monyhar.org/p/monyhar/issues/entry?template=Webview+Bugs).
 
 To best enable us to resolve the issue, please ensure you provide all of the
 information requested in the bug report template.
@@ -182,5 +182,5 @@ Package names are as follows:
 ## See also
 - [WebView channels in detail](/android_webview/docs/channels.md)
 - [Chrome Release
-  Channels](https://www.chromium.org/getting-involved/dev-channel)
-- [WebView Release History](https://chromiumdash.appspot.com/releases?platform=Android)
+  Channels](https://www.monyhar.org/getting-involved/dev-channel)
+- [WebView Release History](https://monyhardash.appspot.com/releases?platform=Android)

@@ -29,7 +29,7 @@ namespace arc {
 
 namespace {
 
-constexpr char kArcUrlPrefix[] = "content://org.chromium.foo/";
+constexpr char kArcUrlPrefix[] = "content://org.monyhar.foo/";
 
 std::unique_ptr<KeyedService> CreateFileSystemOperationRunnerForTesting(
     content::BrowserContext* context) {

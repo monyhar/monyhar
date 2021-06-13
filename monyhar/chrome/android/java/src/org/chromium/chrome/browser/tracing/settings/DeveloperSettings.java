@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tracing.settings;
+package org.monyhar.chrome.browser.tracing.settings;
 
 import android.os.Bundle;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.preference.PreferenceFragmentCompat;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.version.ChromeVersionInfo;
-import org.chromium.components.browser_ui.settings.SettingsUtils;
-import org.chromium.components.version_info.Channel;
-import org.chromium.components.version_info.VersionConstants;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.version.ChromeVersionInfo;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.components.version_info.Channel;
+import org.monyhar.components.version_info.VersionConstants;
 
 /**
  * Settings fragment containing preferences aimed at Chrome and web developers.

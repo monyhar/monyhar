@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.chromium.third_party.android.datausagechart;
+package org.monyhar.third_party.android.datausagechart;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -29,7 +29,7 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 
-import org.chromium.third_party.android.R;
+import org.monyhar.third_party.android.R;
 
 /**
  * {@link NetworkStatsHistory} series to render inside a {@link ChartView},

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar.adaptive;
+package org.monyhar.chrome.browser.toolbar.adaptive;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;
@@ -27,26 +27,26 @@ import org.robolectric.annotation.Config;
 import org.robolectric.annotation.Implementation;
 import org.robolectric.annotation.Implements;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.app.tabmodel.TabWindowManagerSingleton;
-import org.chromium.chrome.browser.flags.CachedFeatureFlags;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.tab.MockTab;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.TabCreatorManager;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.toolbar.ButtonDataProvider;
-import org.chromium.chrome.browser.toolbar.ButtonDataProvider.ButtonDataObserver;
-import org.chromium.chrome.browser.toolbar.top.OptionalBrowsingModeButtonController;
-import org.chromium.chrome.browser.toolbar.top.TopToolbarCoordinator;
-import org.chromium.chrome.test.util.browser.tabmodel.MockTabCreatorManager;
-import org.chromium.chrome.test.util.browser.tabmodel.MockTabModelSelector;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.display.DisplayAndroidManager;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.app.tabmodel.TabWindowManagerSingleton;
+import org.monyhar.chrome.browser.flags.CachedFeatureFlags;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.tab.MockTab;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.TabCreatorManager;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.toolbar.ButtonDataProvider;
+import org.monyhar.chrome.browser.toolbar.ButtonDataProvider.ButtonDataObserver;
+import org.monyhar.chrome.browser.toolbar.top.OptionalBrowsingModeButtonController;
+import org.monyhar.chrome.browser.toolbar.top.TopToolbarCoordinator;
+import org.monyhar.chrome.test.util.browser.tabmodel.MockTabCreatorManager;
+import org.monyhar.chrome.test.util.browser.tabmodel.MockTabModelSelector;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.display.DisplayAndroidManager;
 
 import java.util.List;
 import java.util.NoSuchElementException;

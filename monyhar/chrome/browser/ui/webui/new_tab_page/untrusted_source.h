@@ -16,7 +16,7 @@
 class Profile;
 
 // Serves chrome-untrusted://new-tab-page/* sources which can return content
-// from outside the chromium codebase. The chrome-untrusted://new-tab-page/*
+// from outside the monyhar codebase. The chrome-untrusted://new-tab-page/*
 // sources can only be embedded in the chrome://new-tab-page by using an
 // <iframe>.
 //

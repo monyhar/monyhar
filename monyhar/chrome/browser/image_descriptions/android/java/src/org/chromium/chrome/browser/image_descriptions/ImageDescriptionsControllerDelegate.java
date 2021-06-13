@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.image_descriptions;
+package org.monyhar.chrome.browser.image_descriptions;
 
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * A delegate to {@link ImageDescriptionsController} to allow UIs to control its state.

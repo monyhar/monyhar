@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.language;
+package org.monyhar.chrome.browser.language;
 
 import com.google.android.play.core.splitinstall.SplitInstallManager;
 import com.google.android.play.core.splitinstall.SplitInstallManagerFactory;
@@ -10,8 +10,8 @@ import com.google.android.play.core.splitinstall.SplitInstallRequest;
 import com.google.android.play.core.splitinstall.SplitInstallStateUpdatedListener;
 import com.google.android.play.core.splitinstall.model.SplitInstallSessionStatus;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
 
 import java.util.Arrays;
 import java.util.Locale;

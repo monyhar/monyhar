@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.media;
+package org.monyhar.chrome.browser.media;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -17,20 +17,20 @@ import android.util.Rational;
 import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
-import org.chromium.base.Log;
-import org.chromium.base.MathUtils;
-import org.chromium.base.annotations.VerifiesOnO;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.ActivityTabProvider;
-import org.chromium.chrome.browser.fullscreen.FullscreenManager;
-import org.chromium.chrome.browser.infobar.InfoBarContainer;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.WebContentsObserver;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.Callback;
+import org.monyhar.base.Log;
+import org.monyhar.base.MathUtils;
+import org.monyhar.base.annotations.VerifiesOnO;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.ActivityTabProvider;
+import org.monyhar.chrome.browser.fullscreen.FullscreenManager;
+import org.monyhar.chrome.browser.infobar.InfoBarContainer;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.WebContentsObserver;
+import org.monyhar.ui.base.WindowAndroid;
 
 import java.util.LinkedList;
 import java.util.List;

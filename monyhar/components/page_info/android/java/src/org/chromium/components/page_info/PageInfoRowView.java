@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.page_info;
+package org.monyhar.components.page_info;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -17,9 +17,9 @@ import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.ui.base.ViewUtils;
-import org.chromium.ui.widget.ChromeImageView;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.ui.base.ViewUtils;
+import org.monyhar.ui.widget.ChromeImageView;
 
 /**
  * View showing an icon, title and subtitle for a page info row.

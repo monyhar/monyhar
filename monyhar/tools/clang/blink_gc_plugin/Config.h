@@ -5,7 +5,7 @@
 // This file defines the names used by GC infrastructure.
 
 // TODO: Restructure the name determination to use fully qualified names (ala,
-// blink::Foo) so that the plugin can be enabled for all of chromium. Doing so
+// blink::Foo) so that the plugin can be enabled for all of monyhar. Doing so
 // would allow us to catch errors with structures outside of blink that might
 // have unsafe pointers to GC allocated blink structures.
 

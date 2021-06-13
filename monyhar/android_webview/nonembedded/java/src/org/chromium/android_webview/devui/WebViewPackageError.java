@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.devui;
+package org.monyhar.android_webview.devui;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -13,8 +13,8 @@ import android.content.pm.ResolveInfo;
 import android.os.Build;
 import android.provider.Settings;
 
-import org.chromium.android_webview.devui.util.WebViewPackageHelper;
-import org.chromium.base.Log;
+import org.monyhar.android_webview.devui.util.WebViewPackageHelper;
+import org.monyhar.base.Log;
 
 import java.util.List;
 import java.util.Locale;
@@ -44,7 +44,7 @@ public class WebViewPackageError {
     private static final String NO_VALID_WEBVIEW_MESSAGE =
             "Cannot find a valid WebView provider installed. "
             + "Please install a valid WebView package. Contact "
-            + "android-webview-dev@chromium.org for help.";
+            + "android-webview-dev@monyhar.org for help.";
 
     /**
      * @param context The {@link Activity} where the error is yield.

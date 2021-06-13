@@ -127,7 +127,7 @@ class COMPONENT_EXPORT(TRACING_CPP) PerfettoProducer {
   //
   // This value for SharedMemoryArbiter's batch_commits_duration_ms was
   // determined by load testing, using the script at
-  // https://chromium-review.googlesource.com/c/chromium/src/+/1835498. The
+  // https://monyhar-review.googlesource.com/c/monyhar/src/+/1835498. The
   // effects of various delays on the overhead of tracing in Chrome
   // can be seen at https://screenshot.googleplex.com/KgsJshNCFKq. See commit
   // 2fc0474d9 and crbug.com/1029298 for more context.

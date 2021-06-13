@@ -25,9 +25,9 @@ js_library("change_picture.m") {
     "..:metrics_recorder.m",
     "..:os_route.m",
     "../..:router",
-    "//third_party/polymer/v3_0/components-chromium/iron-a11y-announcer:iron-a11y-announcer",
-    "//third_party/polymer/v3_0/components-chromium/iron-selector:iron-selector",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-a11y-announcer:iron-a11y-announcer",
+    "//third_party/polymer/v3_0/components-monyhar/iron-selector:iron-selector",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/chromeos/cr_picture:cr_picture_list.m",
     "//ui/webui/resources/cr_elements/chromeos/cr_picture:cr_picture_pane.m",
     "//ui/webui/resources/cr_elements/chromeos/cr_picture:cr_picture_types.m",
@@ -55,7 +55,7 @@ js_library("personalization_page.m") {
     "../../prefs:prefs",
     "../../settings_page:settings_animated_pages",
     "../ambient_mode_page:ambient_mode_browser_proxy",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:load_time_data.m",
   ]
   extra_deps = [ ":personalization_page_module" ]

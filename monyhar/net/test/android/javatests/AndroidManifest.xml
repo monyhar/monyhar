@@ -6,7 +6,7 @@
 <!-- package name must be unique. -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="org.chromium.net.test.support">
+    package="org.monyhar.net.test.support">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -23,12 +23,12 @@
              usually applied at the application level, but those do not
              propagate to child services and the service is the thing that
              actually reads from external storage. -->
-        <service android:name="org.chromium.net.test.EmbeddedTestServerService"
+        <service android:name="org.monyhar.net.test.EmbeddedTestServerService"
                 android:requestLegacyExternalStorage="true"
                 android:exported="true"
                 tools:ignore="ExportedService">
             <intent-filter>
-                <action android:name="org.chromium.net.test.EMBEDDED_TEST_SERVER_SERVICE" />
+                <action android:name="org.monyhar.net.test.EMBEDDED_TEST_SERVER_SERVICE" />
             </intent-filter>
         </service>
 

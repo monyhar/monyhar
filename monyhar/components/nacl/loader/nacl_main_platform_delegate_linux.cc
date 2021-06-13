@@ -7,12 +7,12 @@
 void NaClMainPlatformDelegate::EnableSandbox(
     const content::MainFunctionParams& parameters) {
   // The setuid sandbox is started in the zygote process: zygote_main_linux.cc
-  // https://chromium.googlesource.com/chromium/src/+/main/docs/linux/suid_sandbox.md
+  // https://monyhar.googlesource.com/monyhar/src/+/main/docs/linux/suid_sandbox.md
   //
   // The seccomp sandbox is started in the renderer.
   // http://code.google.com/p/seccompsandbox/
   // seccomp is currently disabled for nacl.
-  // http://code.google.com/p/chromium/issues/detail?id=59423
+  // http://code.google.com/p/monyhar/issues/detail?id=59423
   // See the code in chrome/renderer/renderer_main_platform_delegate_linux.cc
   // for how to turn seccomp on.
   //

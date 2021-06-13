@@ -11,7 +11,7 @@ include_rules = [
   "+components/variations/android/java",
 
   "-content/public/android/java",
-  "+content/public/android/java/src/org/chromium/content_public",
+  "+content/public/android/java/src/org/monyhar/content_public",
 
   "-content/public/android/javatests",
   "+content/public/test/android/javatests",

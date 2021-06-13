@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omaha.inline;
+package org.monyhar.chrome.browser.omaha.inline;
 
 import com.google.android.play.core.appupdate.AppUpdateManagerFactory;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.omaha.UpdateConfigs;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.omaha.UpdateConfigs;
 
 /**
  * A factory that creates an {@link InlineUpdateController} instance.

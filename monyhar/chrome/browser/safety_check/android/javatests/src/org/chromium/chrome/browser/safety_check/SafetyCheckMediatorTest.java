@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.safety_check;
+package org.monyhar.chrome.browser.safety_check;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
@@ -11,10 +11,10 @@ import static org.mockito.Mockito.doAnswer;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.when;
 
-import static org.chromium.chrome.browser.safety_check.SafetyCheckProperties.COMPROMISED_PASSWORDS;
-import static org.chromium.chrome.browser.safety_check.SafetyCheckProperties.PASSWORDS_STATE;
-import static org.chromium.chrome.browser.safety_check.SafetyCheckProperties.SAFE_BROWSING_STATE;
-import static org.chromium.chrome.browser.safety_check.SafetyCheckProperties.UPDATES_STATE;
+import static org.monyhar.chrome.browser.safety_check.SafetyCheckProperties.COMPROMISED_PASSWORDS;
+import static org.monyhar.chrome.browser.safety_check.SafetyCheckProperties.PASSWORDS_STATE;
+import static org.monyhar.chrome.browser.safety_check.SafetyCheckProperties.SAFE_BROWSING_STATE;
+import static org.monyhar.chrome.browser.safety_check.SafetyCheckProperties.UPDATES_STATE;
 
 import android.os.Handler;
 
@@ -27,26 +27,26 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.Callback;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.test.ShadowRecordHistogram;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.browser.password_check.PasswordCheck;
-import org.chromium.chrome.browser.password_check.PasswordCheckFactory;
-import org.chromium.chrome.browser.password_check.PasswordCheckUIStatus;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.safety_check.SafetyCheckMediator.SafetyCheckInteractions;
-import org.chromium.chrome.browser.safety_check.SafetyCheckProperties.PasswordsState;
-import org.chromium.chrome.browser.safety_check.SafetyCheckProperties.SafeBrowsingState;
-import org.chromium.chrome.browser.safety_check.SafetyCheckProperties.UpdatesState;
-import org.chromium.chrome.browser.signin.ui.SyncConsentActivityLauncher;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.embedder_support.browser_context.BrowserContextHandle;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.Callback;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.test.ShadowRecordHistogram;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.browser.password_check.PasswordCheck;
+import org.monyhar.chrome.browser.password_check.PasswordCheckFactory;
+import org.monyhar.chrome.browser.password_check.PasswordCheckUIStatus;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.safety_check.SafetyCheckMediator.SafetyCheckInteractions;
+import org.monyhar.chrome.browser.safety_check.SafetyCheckProperties.PasswordsState;
+import org.monyhar.chrome.browser.safety_check.SafetyCheckProperties.SafeBrowsingState;
+import org.monyhar.chrome.browser.safety_check.SafetyCheckProperties.UpdatesState;
+import org.monyhar.chrome.browser.signin.ui.SyncConsentActivityLauncher;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.embedder_support.browser_context.BrowserContextHandle;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.lang.ref.WeakReference;
 

@@ -133,7 +133,7 @@ IN_PROC_BROWSER_TEST_F(DOMStorageBrowserTest, DeletePhysicalOrigin) {
   EXPECT_EQ(0U, GetUsage().size());
 }
 
-// On Windows file://localhost/C:/src/chromium/src/content/test/data/title1.html
+// On Windows file://localhost/C:/src/monyhar/src/content/test/data/title1.html
 // doesn't work.
 #if !defined(OS_WIN)
 // Regression test for https://crbug.com/776160.  The test verifies that there

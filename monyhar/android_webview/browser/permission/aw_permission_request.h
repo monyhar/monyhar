@@ -24,7 +24,7 @@ class AwPermissionRequestDelegate;
 // This object is owned by the java peer.
 class AwPermissionRequest {
  public:
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.android_webview.permission
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.android_webview.permission
   enum Resource {
     Geolocation = 1 << 0,
     VideoCapture = 1 << 1,

@@ -3,7 +3,7 @@
 # found in the LICENSE file.
 """Generate template values for a callback function.
 
-Design doc: http://www.chromium.org/developers/design-documents/idl-compiler
+Design doc: http://www.monyhar.org/developers/design-documents/idl-compiler
 """
 
 from v8_globals import includes

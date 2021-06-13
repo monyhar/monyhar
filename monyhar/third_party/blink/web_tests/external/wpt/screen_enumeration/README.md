@@ -29,7 +29,7 @@ makeDisplay(id, bounds, work_area, scale_factor); // Create display object.
 ```
 
 The Chromium implementation of the `ScreenEnumerationTest` interface is located
-in [mock-screenenumeration.js](../resources/chromium/mock-screenenumeration.js).
+in [mock-screenenumeration.js](../resources/monyhar/mock-screenenumeration.js).
 
 Other browser vendors should provide their own implementations of
 the `ScreenEnumerationTest` interfaces.

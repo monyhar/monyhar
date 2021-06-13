@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.annotation.TargetApi;
 import android.app.NotificationManager;
@@ -11,11 +11,11 @@ import android.os.Build;
 
 import androidx.annotation.StringDef;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxyImpl;
-import org.chromium.components.browser_ui.notifications.channels.ChannelDefinitions;
-import org.chromium.components.browser_ui.notifications.channels.ChannelDefinitions.PredefinedChannel;
-import org.chromium.components.browser_ui.notifications.channels.ChannelsInitializer;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxyImpl;
+import org.monyhar.components.browser_ui.notifications.channels.ChannelDefinitions;
+import org.monyhar.components.browser_ui.notifications.channels.ChannelDefinitions.PredefinedChannel;
+import org.monyhar.components.browser_ui.notifications.channels.ChannelsInitializer;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -34,7 +34,7 @@ public class WebLayerNotificationChannels extends ChannelDefinitions {
      * changes.
      */
     static final int sChannelsVersion = 0;
-    static final String sChannelsVersionKey = "org.chromium.weblayer.notification_channels_version";
+    static final String sChannelsVersionKey = "org.monyhar.weblayer.notification_channels_version";
 
     private static class LazyHolder {
         private static WebLayerNotificationChannels sInstance = new WebLayerNotificationChannels();
@@ -56,16 +56,16 @@ public class WebLayerNotificationChannels extends ChannelDefinitions {
             ChannelId.WEBRTC_CAM_AND_MIC})
     @Retention(RetentionPolicy.SOURCE)
     public @interface ChannelId {
-        String ACTIVE_DOWNLOADS = "org.chromium.weblayer.active_downloads";
-        String COMPLETED_DOWNLOADS = "org.chromium.weblayer.completed_downloads";
-        String MEDIA_PLAYBACK = "org.chromium.weblayer.media_playback";
-        String WEBRTC_CAM_AND_MIC = "org.chromium.weblayer.webrtc_cam_and_mic";
+        String ACTIVE_DOWNLOADS = "org.monyhar.weblayer.active_downloads";
+        String COMPLETED_DOWNLOADS = "org.monyhar.weblayer.completed_downloads";
+        String MEDIA_PLAYBACK = "org.monyhar.weblayer.media_playback";
+        String WEBRTC_CAM_AND_MIC = "org.monyhar.weblayer.webrtc_cam_and_mic";
     }
 
     @StringDef({ChannelGroupId.WEBLAYER})
     @Retention(RetentionPolicy.SOURCE)
     public @interface ChannelGroupId {
-        String WEBLAYER = "org.chromium.weblayer";
+        String WEBLAYER = "org.monyhar.weblayer";
     }
 
     // Map defined in static inner class so it's only initialized lazily.

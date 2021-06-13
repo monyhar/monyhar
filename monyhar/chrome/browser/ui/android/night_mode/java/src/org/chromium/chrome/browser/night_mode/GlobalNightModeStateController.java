@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.night_mode;
+package org.monyhar.chrome.browser.night_mode;
 
-import static org.chromium.chrome.browser.preferences.ChromePreferenceKeys.UI_THEME_SETTING;
+import static org.monyhar.chrome.browser.preferences.ChromePreferenceKeys.UI_THEME_SETTING;
 
 import android.text.TextUtils;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatDelegate;
 
-import org.chromium.base.ApplicationState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ObserverList;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.base.ApplicationState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ObserverList;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
 
 /**
  * Maintains and provides the night mode state for the entire application.

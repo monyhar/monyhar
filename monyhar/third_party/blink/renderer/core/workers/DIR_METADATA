@@ -2,4 +2,4 @@ monorail {
   component: "Blink>Workers"
 }
 
-team_email: "worker-dev@chromium.org"
+team_email: "worker-dev@monyhar.org"

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo.bindings;
+package org.monyhar.mojo.bindings;
 
 import androidx.test.filters.SmallTest;
 
@@ -11,16 +11,16 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.mojo.MojoTestRule;
-import org.chromium.mojo.bindings.test.mojom.test_structs.MultiVersionStruct;
-import org.chromium.mojo.bindings.test.mojom.test_structs.MultiVersionStructV0;
-import org.chromium.mojo.bindings.test.mojom.test_structs.MultiVersionStructV1;
-import org.chromium.mojo.bindings.test.mojom.test_structs.MultiVersionStructV3;
-import org.chromium.mojo.bindings.test.mojom.test_structs.MultiVersionStructV5;
-import org.chromium.mojo.bindings.test.mojom.test_structs.MultiVersionStructV7;
-import org.chromium.mojo.bindings.test.mojom.test_structs.Rect;
-import org.chromium.mojo.system.impl.CoreImpl;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.mojo.MojoTestRule;
+import org.monyhar.mojo.bindings.test.mojom.test_structs.MultiVersionStruct;
+import org.monyhar.mojo.bindings.test.mojom.test_structs.MultiVersionStructV0;
+import org.monyhar.mojo.bindings.test.mojom.test_structs.MultiVersionStructV1;
+import org.monyhar.mojo.bindings.test.mojom.test_structs.MultiVersionStructV3;
+import org.monyhar.mojo.bindings.test.mojom.test_structs.MultiVersionStructV5;
+import org.monyhar.mojo.bindings.test.mojom.test_structs.MultiVersionStructV7;
+import org.monyhar.mojo.bindings.test.mojom.test_structs.Rect;
+import org.monyhar.mojo.system.impl.CoreImpl;
 
 /**
  * Testing generated classes with the [MinVersion] annotation. Struct in this test are from:

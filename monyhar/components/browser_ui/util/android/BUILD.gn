@@ -6,16 +6,16 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/components/browser_ui/util/AvatarGenerator.java",
-    "java/src/org/chromium/components/browser_ui/util/BitmapCache.java",
-    "java/src/org/chromium/components/browser_ui/util/BrowserControlsVisibilityDelegate.java",
-    "java/src/org/chromium/components/browser_ui/util/ComposedBrowserControlsVisibilityDelegate.java",
-    "java/src/org/chromium/components/browser_ui/util/ConversionUtils.java",
-    "java/src/org/chromium/components/browser_ui/util/DownloadUtils.java",
-    "java/src/org/chromium/components/browser_ui/util/GlobalDiscardableReferencePool.java",
-    "java/src/org/chromium/components/browser_ui/util/date/CalendarFactory.java",
-    "java/src/org/chromium/components/browser_ui/util/date/CalendarUtils.java",
-    "java/src/org/chromium/components/browser_ui/util/date/StringUtils.java",
+    "java/src/org/monyhar/components/browser_ui/util/AvatarGenerator.java",
+    "java/src/org/monyhar/components/browser_ui/util/BitmapCache.java",
+    "java/src/org/monyhar/components/browser_ui/util/BrowserControlsVisibilityDelegate.java",
+    "java/src/org/monyhar/components/browser_ui/util/ComposedBrowserControlsVisibilityDelegate.java",
+    "java/src/org/monyhar/components/browser_ui/util/ConversionUtils.java",
+    "java/src/org/monyhar/components/browser_ui/util/DownloadUtils.java",
+    "java/src/org/monyhar/components/browser_ui/util/GlobalDiscardableReferencePool.java",
+    "java/src/org/monyhar/components/browser_ui/util/date/CalendarFactory.java",
+    "java/src/org/monyhar/components/browser_ui/util/date/CalendarUtils.java",
+    "java/src/org/monyhar/components/browser_ui/util/date/StringUtils.java",
   ]
 
   deps = [
@@ -29,7 +29,7 @@ android_library("java") {
     "//third_party/androidx:androidx_core_core_java",
     "//url:gurl_java",
   ]
-  resources_package = "org.chromium.components.browser_ui.util"
+  resources_package = "org.monyhar.components.browser_ui.util"
 }
 
 android_resources("java_resources") {
@@ -49,8 +49,8 @@ java_library("junit") {
   bypass_platform_checks = true
   testonly = true
   sources = [
-    "java/src/org/chromium/components/browser_ui/util/BitmapCacheTest.java",
-    "java/src/org/chromium/components/browser_ui/util/ComposedBrowserControlsVisibilityDelegateTest.java",
+    "java/src/org/monyhar/components/browser_ui/util/BitmapCacheTest.java",
+    "java/src/org/monyhar/components/browser_ui/util/ComposedBrowserControlsVisibilityDelegateTest.java",
   ]
   deps = [
     ":java",

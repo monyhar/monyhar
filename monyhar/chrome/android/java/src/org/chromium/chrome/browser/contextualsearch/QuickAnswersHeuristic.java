@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.contextualsearch;
+package org.monyhar.chrome.browser.contextualsearch;
 
 /**
  * Provides a {@link ContextualSearchHeuristic} that tracks whether a "QuickAnswer" was provided

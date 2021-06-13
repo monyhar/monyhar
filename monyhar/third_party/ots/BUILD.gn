@@ -98,8 +98,8 @@ static_library("ots") {
     "//third_party/zlib",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 }
 
 fuzzer_test("ots_fuzzer") {

@@ -7,22 +7,22 @@ import("//chrome/android/features/android_library_factory_tmpl.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/ui/appmenu/AppMenuBlocker.java",
-    "java/src/org/chromium/chrome/browser/ui/appmenu/AppMenuButtonHelper.java",
-    "java/src/org/chromium/chrome/browser/ui/appmenu/AppMenuClickHandler.java",
-    "java/src/org/chromium/chrome/browser/ui/appmenu/AppMenuCoordinator.java",
-    "java/src/org/chromium/chrome/browser/ui/appmenu/AppMenuDelegate.java",
-    "java/src/org/chromium/chrome/browser/ui/appmenu/AppMenuHandler.java",
-    "java/src/org/chromium/chrome/browser/ui/appmenu/AppMenuObserver.java",
-    "java/src/org/chromium/chrome/browser/ui/appmenu/AppMenuPropertiesDelegate.java",
-    "java/src/org/chromium/chrome/browser/ui/appmenu/CustomViewBinder.java",
-    "java/src/org/chromium/chrome/browser/ui/appmenu/MenuButtonDelegate.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/AppMenuBlocker.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/AppMenuButtonHelper.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/AppMenuClickHandler.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/AppMenuCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/AppMenuDelegate.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/AppMenuHandler.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/AppMenuObserver.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/AppMenuPropertiesDelegate.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/CustomViewBinder.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/MenuButtonDelegate.java",
   ]
   deps = [
     "//chrome/browser/android/lifecycle:java",
     "//third_party/androidx:androidx_annotation_annotation_java",
   ]
-  resources_package = "org.chromium.chrome.browser.ui.appmenu"
+  resources_package = "org.monyhar.chrome.browser.ui.appmenu"
 }
 
 android_library_factory("factory_java") {
@@ -34,7 +34,7 @@ android_library_factory("factory_java") {
 
   # This internal file will be replaced by a generated file so the resulting
   # android_library target does not actually depend on this internal file.
-  sources = [ "//chrome/browser/ui/android/appmenu/internal/java/src/org/chromium/chrome/browser/ui/appmenu/AppMenuCoordinatorFactory.java" ]
+  sources = [ "//chrome/browser/ui/android/appmenu/internal/java/src/org/monyhar/chrome/browser/ui/appmenu/AppMenuCoordinatorFactory.java" ]
 }
 
 android_resources("java_resources") {

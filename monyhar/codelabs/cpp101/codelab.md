@@ -9,11 +9,11 @@ of Chromium's repository.
 
 As always, consider the following resources as of primary importance:
 
--   [Coding Style](https://chromium.googlesource.com/chromium/src/+/main/styleguide/styleguide.md)
--   [Callback<> and Bind()](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/callback.md)
--   [Threading and Tasks in Chrome](https://chromium.googlesource.com/chromium/src/+/main/docs/threading_and_tasks.md)
--   [Intro to Mojo & Services](https://chromium.googlesource.com/chromium/src.git/+/main/docs/mojo_and_services.md)
--   [Important Abstractions and Data Structures](https://sites.google.com/a/chromium.org/dev/developers/coding-style/important-abstractions-and-data-structures) (badly needs updating)
+-   [Coding Style](https://monyhar.googlesource.com/monyhar/src/+/main/styleguide/styleguide.md)
+-   [Callback<> and Bind()](https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/callback.md)
+-   [Threading and Tasks in Chrome](https://monyhar.googlesource.com/monyhar/src/+/main/docs/threading_and_tasks.md)
+-   [Intro to Mojo & Services](https://monyhar.googlesource.com/monyhar/src.git/+/main/docs/mojo_and_services.md)
+-   [Important Abstractions and Data Structures](https://sites.google.com/a/monyhar.org/dev/developers/coding-style/important-abstractions-and-data-structures) (badly needs updating)
 
 This tutorial does not assume you have read any of the above,
 though you should feel free to peruse them when necessary.
@@ -39,7 +39,7 @@ finding the binary within `out/Default`.
 
 Sample execution:
 ```shell
-$ cd /path/to/chromium/src
+$ cd /path/to/monyhar/src
 $ gclient runhooks
 $ autoninja -C out/Default codelab_hello_world
 $ out/Default/codelab_hello_world
@@ -49,8 +49,8 @@ Hello, world!
 
 ### More information
 
-[Git Tips](https://chromium.googlesource.com/chromium/src.git/+/main/docs/git_tips.md)
-and [Git Cookbook](https://chromium.googlesource.com/chromium/src.git/+/main/docs/git_cookbook.md)
+[Git Tips](https://monyhar.googlesource.com/monyhar/src.git/+/main/docs/git_tips.md)
+and [Git Cookbook](https://monyhar.googlesource.com/monyhar/src.git/+/main/docs/git_cookbook.md)
 
 [Life of a Chromium Developer](https://docs.google.com/a/google.com/presentation/d/1abnqM9j6zFodPHA38JG1061rG2iGj_GABxEDgZsdbJg/)
 
@@ -157,7 +157,7 @@ my_callback2.Run(3.5);
 `base::BindOnce()` and `base::BindRepeating()` can do a lot more, including
 binding class member functions and binding additional arguments to an
 existing `base::OnceCallback` or `base::RepeatingCallback`. See
-[docs/callback.md](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/callback.md)
+[docs/callback.md](https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/callback.md)
 for details.
 
 ### Important Include Files
@@ -169,7 +169,7 @@ for details.
 
 ### More Information
 
-[Callback<> and Bind()](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/callback.md)
+[Callback<> and Bind()](https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/callback.md)
 
 ### Exercise 2: Fibonacci closures
 
@@ -193,7 +193,7 @@ and uses your function to print out the first `n` Fibonacci numbers.
 ## Part 3: Threads and task runners
 
 Chromium has a number of abstractions for sequencing and threading.
-[Threading and Tasks in Chrome](https://chromium.googlesource.com/chromium/src/+/main/docs/threading_and_tasks.md)
+[Threading and Tasks in Chrome](https://monyhar.googlesource.com/monyhar/src/+/main/docs/threading_and_tasks.md)
 is a must-read and go-to reference for anything related to tasks, thread pools,
 task runners, and more.
 
@@ -261,22 +261,22 @@ as long as the factoring task is executing.
 
 ### More information
 
-[Threading and Tasks in Chrome](https://chromium.googlesource.com/chromium/src/+/main/docs/threading_and_tasks.md)
+[Threading and Tasks in Chrome](https://monyhar.googlesource.com/monyhar/src/+/main/docs/threading_and_tasks.md)
 
 ## Part 4: Mojo
 
 Mojo is Chromium's abstraction of IPC. Mojo allows for developers to easily
 connect interface clients and implementations across arbitrary intra- and
 inter-process boundaries. See the
-[Intro to Mojo and Services](https://chromium.googlesource.com/chromium/src.git/+/main/docs/mojo_and_services.md)
+[Intro to Mojo and Services](https://monyhar.googlesource.com/monyhar/src.git/+/main/docs/mojo_and_services.md)
 guide to get started.
 
  ### Exercise 4: Building a simple out-of-process service
 
-See the [building a simple out-of-process service](https://chromium.googlesource.com/chromium/src.git/+/main/docs/mojo_and_services.md#example_building-a-simple-out_of_process-service)
+See the [building a simple out-of-process service](https://monyhar.googlesource.com/monyhar/src.git/+/main/docs/mojo_and_services.md#example_building-a-simple-out_of_process-service)
 tutorial on using Mojo to define, hook up, and launch an out-of-process service.
 
 ### More Information
 
-[Mojo C++ Bindings API Docs](https://chromium.googlesource.com/chromium/src.git/+/main/mojo/public/cpp/bindings/README.md)
-[Mojo Docs](https://chromium.googlesource.com/chromium/src.git/+/main/mojo/README.md)
+[Mojo C++ Bindings API Docs](https://monyhar.googlesource.com/monyhar/src.git/+/main/mojo/public/cpp/bindings/README.md)
+[Mojo Docs](https://monyhar.googlesource.com/monyhar/src.git/+/main/mojo/README.md)

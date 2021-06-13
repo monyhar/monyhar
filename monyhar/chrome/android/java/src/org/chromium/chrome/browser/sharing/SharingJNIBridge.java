@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sharing;
+package org.monyhar.chrome.browser.sharing;
 
 import android.content.Context;
 import android.telephony.TelephonyManager;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.annotations.CalledByNative;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.annotations.CalledByNative;
 
 /**
  * JNI bridge for SharingService.

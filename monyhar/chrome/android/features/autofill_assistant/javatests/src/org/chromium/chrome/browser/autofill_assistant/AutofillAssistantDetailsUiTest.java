@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant;
+package org.monyhar.chrome.browser.autofill_assistant;
 
 import static android.view.View.IMPORTANT_FOR_ACCESSIBILITY_AUTO;
 import static android.view.View.IMPORTANT_FOR_ACCESSIBILITY_NO;
@@ -20,11 +20,11 @@ import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.not;
 
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.hasTypefaceSpan;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.hasTypefaceStyle;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.isImportantForAccessibility;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.isTextMaxLines;
-import static org.chromium.content_public.browser.test.util.TestThreadUtils.runOnUiThreadBlocking;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.hasTypefaceSpan;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.hasTypefaceStyle;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.isImportantForAccessibility;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.isTextMaxLines;
+import static org.monyhar.content_public.browser.test.util.TestThreadUtils.runOnUiThreadBlocking;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -40,16 +40,16 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.autofill_assistant.details.AssistantDetails;
-import org.chromium.chrome.browser.autofill_assistant.details.AssistantDetailsCoordinator;
-import org.chromium.chrome.browser.autofill_assistant.details.AssistantDetailsModel;
-import org.chromium.chrome.browser.autofill_assistant.details.AssistantPlaceholdersConfiguration;
-import org.chromium.chrome.browser.customtabs.CustomTabActivityTestRule;
-import org.chromium.chrome.browser.customtabs.CustomTabsTestUtils;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.autofill_assistant.details.AssistantDetails;
+import org.monyhar.chrome.browser.autofill_assistant.details.AssistantDetailsCoordinator;
+import org.monyhar.chrome.browser.autofill_assistant.details.AssistantDetailsModel;
+import org.monyhar.chrome.browser.autofill_assistant.details.AssistantPlaceholdersConfiguration;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivityTestRule;
+import org.monyhar.chrome.browser.customtabs.CustomTabsTestUtils;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
 
 import java.util.Arrays;
 

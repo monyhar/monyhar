@@ -691,7 +691,7 @@ TYPED_TEST(ClipboardTest, BitmapWriteAndPngRead_N32_Premul_2x7) {
 
 TYPED_TEST(ClipboardTest, PickleTest) {
   const ClipboardFormatType kFormat =
-      ClipboardFormatType::GetType("chromium/x-test-format");
+      ClipboardFormatType::GetType("monyhar/x-test-format");
   std::string payload("test string");
   base::Pickle write_pickle;
   write_pickle.WriteString(payload);
@@ -716,13 +716,13 @@ TYPED_TEST(ClipboardTest, PickleTest) {
 
 TYPED_TEST(ClipboardTest, MultiplePickleTest) {
   const ClipboardFormatType kFormat1 =
-      ClipboardFormatType::GetType("chromium/x-test-format1");
+      ClipboardFormatType::GetType("monyhar/x-test-format1");
   std::string payload1("test string1");
   base::Pickle write_pickle1;
   write_pickle1.WriteString(payload1);
 
   const ClipboardFormatType kFormat2 =
-      ClipboardFormatType::GetType("chromium/x-test-format2");
+      ClipboardFormatType::GetType("monyhar/x-test-format2");
   std::string payload2("test string2");
   base::Pickle write_pickle2;
   write_pickle2.WriteString(payload2);
@@ -775,8 +775,8 @@ TYPED_TEST(ClipboardTest, MultiplePickleTest) {
 }
 
 TYPED_TEST(ClipboardTest, DataTest) {
-  const std::string kFormatString = "chromium/x-test-format";
-  const std::u16string kFormatString16 = u"chromium/x-test-format";
+  const std::string kFormatString = "monyhar/x-test-format";
+  const std::u16string kFormatString16 = u"monyhar/x-test-format";
   const ClipboardFormatType kFormat =
       ClipboardFormatType::GetType(kFormatString);
   const std::string payload = "test string";
@@ -804,16 +804,16 @@ TYPED_TEST(ClipboardTest, DataTest) {
      defined(USE_X11)) &&                                           \
     !BUILDFLAG(IS_CHROMEOS_ASH)
 TYPED_TEST(ClipboardTest, MultipleDataTest) {
-  const std::string kFormatString1 = "chromium/x-test-format1";
-  const std::u16string kFormatString116 = u"chromium/x-test-format1";
+  const std::string kFormatString1 = "monyhar/x-test-format1";
+  const std::u16string kFormatString116 = u"monyhar/x-test-format1";
   const ClipboardFormatType kFormat1 =
       ClipboardFormatType::GetType(kFormatString1);
   const std::string payload1("test string1");
   base::span<const uint8_t> payload_span1(
       reinterpret_cast<const uint8_t*>(payload1.data()), payload1.size());
 
-  const std::string kFormatString2 = "chromium/x-test-format2";
-  const std::u16string kFormatString216 = u"chromium/x-test-format2";
+  const std::string kFormatString2 = "monyhar/x-test-format2";
+  const std::u16string kFormatString216 = u"monyhar/x-test-format2";
   const ClipboardFormatType kFormat2 =
       ClipboardFormatType::GetType(kFormatString2);
   const std::string payload2("test string2");

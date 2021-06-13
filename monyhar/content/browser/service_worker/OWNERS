@@ -16,12 +16,12 @@
 #   //third_party/blink/renderer/modules/service_worker/
 #   //third_party/blink/web_tests/external/wpt/service-workers/
 
-bashi@chromium.org
-falken@chromium.org
-kinuko@chromium.org
-mek@chromium.org
-nhiroki@chromium.org
-wanderview@chromium.org
+bashi@monyhar.org
+falken@monyhar.org
+kinuko@monyhar.org
+mek@monyhar.org
+nhiroki@monyhar.org
+wanderview@monyhar.org
 
 # per-file rules:
 per-file *_type_converter*.*=set noparent

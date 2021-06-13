@@ -98,7 +98,7 @@ Pentru mai multe informații despre contextele sigure, accesează https://www.w3
 
       Dacă configurezi această politică, <ph name="PRODUCT_NAME" /> va folosi directorul indicat, indiferent dacă utilizatorul a specificat semnalizatorul „--disk-cache-dir”. Pentru a evita pierderea de date sau alte erori neașteptate, această politică nu ar trebui setată la un director rădăcină al volumului sau la un director folosit pentru alte scopuri, deoarece <ph name="PRODUCT_NAME" /> îi gestionează conținutul.
 
-      Pentru a vedea o listă cu variabilele care pot fi folosite, accesează  https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Pentru a vedea o listă cu variabilele care pot fi folosite, accesează  https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Dacă această politică nu este configurată, va fi folosit directorul prestabilit pentru memoria cache, iar utilizatorul îl va putea modifica folosind semnalizatorul de linie de comandă „--disk-cache-dir”.</translation>
 <translation id="113521240853905588">Configurează limbile care pot fi folosite ca limbi preferate de <ph name="PRODUCT_OS_NAME" />.
@@ -483,7 +483,7 @@ Dacă politica nu este setată, se va folosi comportamentul prestabilit de a nu 
 <translation id="1852294065645015766">Permite redarea automată a conținutului media</translation>
 <translation id="1857152770025485173">Această politică împiedică utilizatorul să încarce pagini web de la adresele URL incluse în lista neagră. Lista neagră este o listă cu șabloane de adrese URL care indică ce adrese URL vor fi adăugate în lista neagră.
 
-      Un șablon de adrese URL trebuie să fie formatat conform instrucțiunilor de la https://www.chromium.org/administrators/url-blacklist-filter-format.
+      Un șablon de adrese URL trebuie să fie formatat conform instrucțiunilor de la https://www.monyhar.org/administrators/url-blacklist-filter-format.
 
       Excepțiile pot fi definite în politica privind lista albă de adrese URL. Aceste politici sunt limitate la 1.000 de intrări. Intrările suplimentare vor fi ignorate.
 
@@ -520,7 +520,7 @@ Dacă politica nu este setată, se va folosi comportamentul prestabilit de a nu 
 
       Dacă politica nu este configurată, raportarea valorilor și a datelor de diagnosticare va fi dezactivată pe dispozitivele negestionate și activată pe dispozitivele gestionate.</translation>
 <translation id="1907431809333268751">Configurează lista de adrese URL de autentificare ca întreprindere (doar schemele HTTP și HTTPS). Amprenta parolei va fi scanată la aceste adrese URL și folosită pentru detectarea refolosirii parolelor.
-      Pentru ca <ph name="PRODUCT_NAME" /> să scaneze corect amprenta parolei, asigură-te că paginile de conectare respectă regulile prevăzute în https://www.chromium.org/developers/design-documents/create-amazing-password-forms.
+      Pentru ca <ph name="PRODUCT_NAME" /> să scaneze corect amprenta parolei, asigură-te că paginile de conectare respectă regulile prevăzute în https://www.monyhar.org/developers/design-documents/create-amazing-password-forms.
 
       Dacă această setare este activată, serviciul de protecție prin parolă va scana amprenta parolei la aceste adrese URL pentru a detecta refolosirea parolelor.
       Dacă această setare este dezactivată sau nu este configurată, serviciul de protecție prin parolă va scana amprenta parolei doar la https://accounts.google.com.
@@ -818,7 +818,7 @@ Dacă politica nu este setată, se va folosi comportamentul prestabilit de a nu 
 
       Această politică permite ca certificatele pentru numele de gazdă din adresele URL specificate să nu fie dezvăluite folosind Transparența certificatului. Astfel, certificatele care altfel nu ar fi de încredere, deoarece nu au fost dezvăluite public corespunzător, pot fi folosite în continuare, dar detectarea certificatelor emise greșit pentru gazdele respective este mai dificilă.
 
-      Un șablon de adrese URL se formatează conform instrucțiunilor de la https://www.chromium.org/administrators/url-blacklist-filter-format. Cu toate acestea, întrucât certificatele sunt valide pentru un anumit nume de gazdă independent de schemă, port sau cale, se ia în considerare numai porțiunea cu numele de gazdă din adresa URL. Gazdele care conțin metacaractere nu sunt acceptate.
+      Un șablon de adrese URL se formatează conform instrucțiunilor de la https://www.monyhar.org/administrators/url-blacklist-filter-format. Cu toate acestea, întrucât certificatele sunt valide pentru un anumit nume de gazdă independent de schemă, port sau cale, se ia în considerare numai porțiunea cu numele de gazdă din adresa URL. Gazdele care conțin metacaractere nu sunt acceptate.
 
       Dacă această politică nu este configurată, orice certificat pentru care este necesară dezvăluirea folosind Transparența certificatului va fi considerat a nu fi de încredere dacă nu este dezvăluit conform politicii privind Transparența certificatului.</translation>
 <translation id="2488010520405124654">Activați solicitarea privind configurația rețelei, în modul offline.
@@ -1499,7 +1499,7 @@ Dacă politica nu este setată, se va folosi comportamentul prestabilit de a nu 
 
       Dacă configurezi această politică, <ph name="PRODUCT_NAME" /> va folosi directorul indicat, indiferent dacă utilizatorul a specificat unul sau a activat semnalizatorul care îi solicită locația de descărcare de fiecare dată.
 
-      Pentru a vedea o listă cu variabilele care pot fi folosite, accesează https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Pentru a vedea o listă cu variabilele care pot fi folosite, accesează https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Dacă această politică nu este configurată, va fi folosit directorul prestabilit pentru descărcare, iar utilizatorul îl va putea modifica.</translation>
 <translation id="3805659594028420438">Activați extensia pentru certificatele TLS legate la domeniu (învechită)</translation>
@@ -1588,7 +1588,7 @@ Dacă politica nu este setată, se va folosi comportamentul prestabilit de a nu 
 
       Dacă nu setezi această politică, <ph name="PRODUCT_NAME" /> va utiliza directorul prestabilit obișnuit (specific platformei).
 
-      Pentru o listă a variabilelor care pot fi utilizate, accesează https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.</translation>
+      Pentru o listă a variabilelor care pot fi utilizate, accesează https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.</translation>
 <translation id="3911737181201537215">Această politică nu afectează înregistrările în jurnal din Android.</translation>
 <translation id="391531815696899618">Dacă este activată, dezactivează sincronizarea cu Google Drive în aplicația Fișiere din <ph name="PRODUCT_OS_NAME" />. În acest caz, datele nu sunt încărcate în Google Drive.
 
@@ -1789,7 +1789,7 @@ Dacă politica nu este setată, se va folosi comportamentul prestabilit de a nu 
 
       Dacă setezi politica, <ph name="PRODUCT_NAME" /> va folosi directorul specificat ca să stocheze copia de roaming a profilurilor dacă politica <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> este activată. Dacă politica <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> este dezactivată sau nu este configurată, valoarea stocată în această politică nu este folosită.
 
-      Consultă https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables pentru o listă de variabile care pot fi folosite.
+      Consultă https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables pentru o listă de variabile care pot fi folosite.
 
       Dacă politica nu este configurată, se va folosi calea prestabilită a profilului de roaming.</translation>
 <translation id="4239720644496144453">Memoria cache nu este folosită pentru aplicațiile Android. Dacă mai mulți utilizatori instalează aceeași aplicație Android, aceasta va fi descărcată din nou pentru fiecare utilizator.</translation>
@@ -1983,7 +1983,7 @@ Dacă politica nu este setată, se va folosi comportamentul prestabilit de a nu 
 
            Dacă această politică nu este configurată, va fi folosit programul de redare prestabilit pentru toate site-urile, așa cum este indicat în politica „ChromeFrameRendererSettings”.
 
-           Pentru exemple de șabloane, accesează https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+           Pentru exemple de șabloane, accesează https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="467449052039111439">Deschide o listă de adrese URL</translation>
 <translation id="4674871290487541952">Permite algoritmi nesecurizați în verificarea integrității la actualizările și instalările extensiilor</translation>
 <translation id="4680936297850947973">Învechită în M68. Folosește DefaultPopupsSetting.
@@ -2614,7 +2614,7 @@ Dacă politica nu este setată, se va folosi comportamentul prestabilit de a nu 
 
       Dacă configurezi această politică, <ph name="PRODUCT_FRAME_NAME" /> va folosi directorul indicat.
 
-      Pentru a vedea o listă cu variabilele care pot fi folosite, accesează https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Pentru a vedea o listă cu variabilele care pot fi folosite, accesează https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Dacă această setare nu este configurată, va fi folosit directorul prestabilit al profilului.</translation>
 <translation id="5826047473100157858">Specifică dacă utilizatorul poate deschide pagini în modul incognito în <ph name="PRODUCT_NAME" />. Dacă politica este activată sau nu este setată, paginile pot fi deschise în modul incognito. Dacă este dezactivată, paginile nu pot fi deschise în modul incognito. Dacă este selectat „Forțat”, paginile pot fi deschise NUMAI în modul incognito.</translation>
@@ -3177,7 +3177,7 @@ Dacă politica este setată la True sau nu este setată, modelul inteligent de r
 
       Dacă configurezi această politică, <ph name="PRODUCT_NAME" /> va folosi directorul indicat, indiferent dacă utilizatorul a specificat semnalizatorul „--user-data-dir”. Pentru a evita pierderea de date sau alte erori neașteptate, această politică nu ar trebui setată la un director rădăcină al volumului sau la un director folosit pentru alte scopuri, deoarece <ph name="PRODUCT_NAME" /> îi gestionează conținutul.
 
-      Pentru a vedea o listă cu variabilele care pot fi folosite, accesează  https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Pentru a vedea o listă cu variabilele care pot fi folosite, accesează  https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Dacă această politică nu este configurată, va fi folosită calea prestabilită pentru profil, iar utilizatorul o va putea modifica folosind semnalizatorul de linie de comandă „--user-data-dir”.</translation>
 <translation id="7027785306666625591">Configurează gestionarea consumului de energie în <ph name="PRODUCT_OS_NAME" />.
@@ -3952,7 +3952,7 @@ Este recomandat să configurezi politica în Windows prin GPO, cu toate că gest
 
           Dacă această politică nu este configurată, va fi folosit programul de redare prestabilit pentru toate site-urile, așa cum este indicat în politica „ChromeFrameRendererSettings”.
 
-          Pentru exemple de șabloane, accesează https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Pentru exemple de șabloane, accesează https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="8489964335640955763">PluginVm</translation>
 <translation id="8493645415242333585">Dezactivează salvarea istoricului browserului</translation>
 <translation id="8499172469244085141">Setări prestabilite (utilizatorii le pot ignora)</translation>

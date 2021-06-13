@@ -18,7 +18,7 @@ namespace perf_test {
 
 // Generates TestResultEntry dict in LUCI Test Results format.
 // See: go/luci-test-results-design
-//      //infra/go/src/go.chromium.org/luci/results/proto/v1/test_result.proto
+//      //infra/go/src/go.monyhar.org/luci/results/proto/v1/test_result.proto
 class LuciTestResult {
  public:
   // Represents a test result status.
@@ -70,7 +70,7 @@ class LuciTestResult {
   static LuciTestResult CreateForGTest();
 
   // Adds a variant key-value pair to |extra_variant_pairs_|. See VariantDef in
-  //   //infra/go/src/go.chromium.org/luci/resultdb/proto/v1/common.proto
+  //   //infra/go/src/go.monyhar.org/luci/resultdb/proto/v1/common.proto
   // for more details.
   void AddVariant(const std::string& key, const std::string& value);
 

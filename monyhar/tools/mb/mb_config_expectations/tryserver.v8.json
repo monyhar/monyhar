@@ -10,7 +10,7 @@
       "use_goma": true
     }
   },
-  "v8_linux_chromium_gn_rel": {
+  "v8_linux_monyhar_gn_rel": {
     "gn_args": {
       "dcheck_always_on": true,
       "is_component_build": false,

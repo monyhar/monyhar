@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant;
+package org.monyhar.chrome.browser.autofill_assistant;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -35,11 +35,11 @@ import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.iterableWithSize;
 import static org.hamcrest.Matchers.not;
 
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.getElementValue;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.startAutofillAssistant;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.tapElement;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilKeyboardMatchesCondition;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilViewMatchesCondition;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.getElementValue;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.startAutofillAssistant;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.tapElement;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilKeyboardMatchesCondition;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilViewMatchesCondition;
 
 import android.support.test.InstrumentationRegistry;
 import android.widget.DatePicker;
@@ -53,53 +53,53 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.LocaleUtils;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.autofill.PersonalDataManager;
-import org.chromium.chrome.browser.autofill_assistant.carousel.ButtonView;
-import org.chromium.chrome.browser.autofill_assistant.proto.ActionProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ChipIcon;
-import org.chromium.chrome.browser.autofill_assistant.proto.ChipProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ChipType;
-import org.chromium.chrome.browser.autofill_assistant.proto.ClickType;
-import org.chromium.chrome.browser.autofill_assistant.proto.CollectUserDataProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.CollectUserDataProto.TermsAndConditionsState;
-import org.chromium.chrome.browser.autofill_assistant.proto.CollectUserDataResultProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ContactDetailsProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.DateProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.DateTimeRangeProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.DropdownSelectStrategy;
-import org.chromium.chrome.browser.autofill_assistant.proto.ElementAreaProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ElementAreaProto.Rectangle;
-import org.chromium.chrome.browser.autofill_assistant.proto.ElementConditionProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.IntList;
-import org.chromium.chrome.browser.autofill_assistant.proto.KeyboardValueFillStrategy;
-import org.chromium.chrome.browser.autofill_assistant.proto.ModelProto.ModelValue;
-import org.chromium.chrome.browser.autofill_assistant.proto.PopupListSectionProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ProcessedActionProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ProcessedActionStatusProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.PromptProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.PromptProto.Choice;
-import org.chromium.chrome.browser.autofill_assistant.proto.RequiredFieldProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.SelectorProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ShowCastProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ShowDetailsProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.SupportedScriptProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.SupportedScriptProto.PresentationProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.TextInputProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.TextInputProto.InputType;
-import org.chromium.chrome.browser.autofill_assistant.proto.TextInputSectionProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.UseCreditCardProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.UserFormSectionProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ValueExpression;
-import org.chromium.chrome.browser.autofill_assistant.proto.ValueExpression.Chunk;
-import org.chromium.chrome.browser.autofill_assistant.proto.ValueProto;
-import org.chromium.chrome.browser.customtabs.CustomTabActivityTestRule;
-import org.chromium.chrome.browser.customtabs.CustomTabsTestUtils;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.LocaleUtils;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager;
+import org.monyhar.chrome.browser.autofill_assistant.carousel.ButtonView;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ActionProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ChipIcon;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ChipProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ChipType;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ClickType;
+import org.monyhar.chrome.browser.autofill_assistant.proto.CollectUserDataProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.CollectUserDataProto.TermsAndConditionsState;
+import org.monyhar.chrome.browser.autofill_assistant.proto.CollectUserDataResultProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ContactDetailsProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.DateProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.DateTimeRangeProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.DropdownSelectStrategy;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ElementAreaProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ElementAreaProto.Rectangle;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ElementConditionProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.IntList;
+import org.monyhar.chrome.browser.autofill_assistant.proto.KeyboardValueFillStrategy;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ModelProto.ModelValue;
+import org.monyhar.chrome.browser.autofill_assistant.proto.PopupListSectionProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ProcessedActionProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ProcessedActionStatusProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.PromptProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.PromptProto.Choice;
+import org.monyhar.chrome.browser.autofill_assistant.proto.RequiredFieldProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.SelectorProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ShowCastProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ShowDetailsProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.SupportedScriptProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.SupportedScriptProto.PresentationProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.TextInputProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.TextInputProto.InputType;
+import org.monyhar.chrome.browser.autofill_assistant.proto.TextInputSectionProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.UseCreditCardProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.UserFormSectionProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ValueExpression;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ValueExpression.Chunk;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ValueProto;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivityTestRule;
+import org.monyhar.chrome.browser.customtabs.CustomTabsTestUtils;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.content_public.browser.WebContents;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -940,7 +940,7 @@ public class AutofillAssistantCollectUserDataIntegrationTest {
                 equalTo(ModelValue.newBuilder()
                                 .setIdentifier("field_1")
                                 .setValue(ValueProto.newBuilder().setStrings(
-                                        org.chromium.chrome.browser.autofill_assistant.proto
+                                        org.monyhar.chrome.browser.autofill_assistant.proto
                                                 .StringList.newBuilder()
                                                 .addValues("new value")))
                                 .build()));

@@ -12,7 +12,7 @@ import os
 import subprocess
 import sys
 
-from chrome_telemetry_build import chromium_config
+from chrome_telemetry_build import monyhar_config
 from core import path_util
 
 path_util.AddTelemetryToPath()
@@ -20,7 +20,7 @@ from telemetry.testing import unittest_runner
 
 
 def main():
-  project_config = chromium_config.ChromiumConfig(
+  project_config = monyhar_config.ChromiumConfig(
       top_level_dir=path_util.GetPerfDir())
   return unittest_runner.Run(project_config)
 

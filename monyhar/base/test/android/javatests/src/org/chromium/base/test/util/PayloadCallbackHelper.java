@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.test.util;
+package org.monyhar.base.test.util;
 
 import androidx.annotation.Nullable;
 
@@ -15,7 +15,7 @@ import java.util.concurrent.TimeoutException;
 
 /**
  * A generic wrapper around {@link CallbackHelper} that takes an object when notified. Very often
- * tests pass a {@link org.chromium.base.Callback} which will be given a payload by the production
+ * tests pass a {@link org.monyhar.base.Callback} which will be given a payload by the production
  * code, and the tests want to assert something about this payload. This class aims to reduce the
  * number of identical subclasses used to temporarily hold onto that payload.
  *

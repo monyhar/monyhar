@@ -16,7 +16,7 @@ js_type_check("closure_compile_module") {
 
 js_library("cr_view_manager") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
   ]
 }

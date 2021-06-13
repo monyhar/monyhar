@@ -54,27 +54,27 @@ android_resources("java_resources") {
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/components/page_info/CertificateChainHelper.java",
-    "java/src/org/chromium/components/page_info/CertificateViewer.java",
-    "java/src/org/chromium/components/page_info/ConnectionInfoView.java",
-    "java/src/org/chromium/components/page_info/ElidedUrlTextView.java",
-    "java/src/org/chromium/components/page_info/PageInfoConnectionController.java",
-    "java/src/org/chromium/components/page_info/PageInfoContainer.java",
-    "java/src/org/chromium/components/page_info/PageInfoController.java",
-    "java/src/org/chromium/components/page_info/PageInfoControllerDelegate.java",
-    "java/src/org/chromium/components/page_info/PageInfoCookiesController.java",
-    "java/src/org/chromium/components/page_info/PageInfoCookiesPreference.java",
-    "java/src/org/chromium/components/page_info/PageInfoDialog.java",
-    "java/src/org/chromium/components/page_info/PageInfoDiscoverabilityMetrics.java",
-    "java/src/org/chromium/components/page_info/PageInfoFeatures.java",
-    "java/src/org/chromium/components/page_info/PageInfoMainController.java",
-    "java/src/org/chromium/components/page_info/PageInfoPermissionsController.java",
-    "java/src/org/chromium/components/page_info/PageInfoRowView.java",
-    "java/src/org/chromium/components/page_info/PageInfoSubpageController.java",
-    "java/src/org/chromium/components/page_info/PageInfoView.java",
-    "java/src/org/chromium/components/page_info/PermissionParamsListBuilder.java",
-    "java/src/org/chromium/components/page_info/SystemSettingsActivityRequiredListener.java",
-    "java/src/org/chromium/components/page_info/VrHandler.java",
+    "java/src/org/monyhar/components/page_info/CertificateChainHelper.java",
+    "java/src/org/monyhar/components/page_info/CertificateViewer.java",
+    "java/src/org/monyhar/components/page_info/ConnectionInfoView.java",
+    "java/src/org/monyhar/components/page_info/ElidedUrlTextView.java",
+    "java/src/org/monyhar/components/page_info/PageInfoConnectionController.java",
+    "java/src/org/monyhar/components/page_info/PageInfoContainer.java",
+    "java/src/org/monyhar/components/page_info/PageInfoController.java",
+    "java/src/org/monyhar/components/page_info/PageInfoControllerDelegate.java",
+    "java/src/org/monyhar/components/page_info/PageInfoCookiesController.java",
+    "java/src/org/monyhar/components/page_info/PageInfoCookiesPreference.java",
+    "java/src/org/monyhar/components/page_info/PageInfoDialog.java",
+    "java/src/org/monyhar/components/page_info/PageInfoDiscoverabilityMetrics.java",
+    "java/src/org/monyhar/components/page_info/PageInfoFeatures.java",
+    "java/src/org/monyhar/components/page_info/PageInfoMainController.java",
+    "java/src/org/monyhar/components/page_info/PageInfoPermissionsController.java",
+    "java/src/org/monyhar/components/page_info/PageInfoRowView.java",
+    "java/src/org/monyhar/components/page_info/PageInfoSubpageController.java",
+    "java/src/org/monyhar/components/page_info/PageInfoView.java",
+    "java/src/org/monyhar/components/page_info/PermissionParamsListBuilder.java",
+    "java/src/org/monyhar/components/page_info/SystemSettingsActivityRequiredListener.java",
+    "java/src/org/monyhar/components/page_info/VrHandler.java",
   ]
 
   deps = [
@@ -106,17 +106,17 @@ android_library("java") {
     "//url:gurl_java",
   ]
 
-  resources_package = "org.chromium.components.page_info"
+  resources_package = "org.monyhar.components.page_info"
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
 }
 
 generate_jni("jni_headers") {
   sources = [
-    "java/src/org/chromium/components/page_info/CertificateChainHelper.java",
-    "java/src/org/chromium/components/page_info/CertificateViewer.java",
-    "java/src/org/chromium/components/page_info/ConnectionInfoView.java",
-    "java/src/org/chromium/components/page_info/PageInfoController.java",
-    "java/src/org/chromium/components/page_info/PageInfoFeatures.java",
+    "java/src/org/monyhar/components/page_info/CertificateChainHelper.java",
+    "java/src/org/monyhar/components/page_info/CertificateViewer.java",
+    "java/src/org/monyhar/components/page_info/ConnectionInfoView.java",
+    "java/src/org/monyhar/components/page_info/PageInfoController.java",
+    "java/src/org/monyhar/components/page_info/PageInfoFeatures.java",
   ]
 }
 

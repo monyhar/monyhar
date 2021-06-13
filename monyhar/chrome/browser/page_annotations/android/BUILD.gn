@@ -6,15 +6,15 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/page_annotations/BuyableProductPageAnnotation.java",
-    "java/src/org/chromium/chrome/browser/page_annotations/PageAnnotation.java",
-    "java/src/org/chromium/chrome/browser/page_annotations/PageAnnotationUtils.java",
-    "java/src/org/chromium/chrome/browser/page_annotations/PageAnnotationsService.java",
-    "java/src/org/chromium/chrome/browser/page_annotations/PageAnnotationsServiceConfig.java",
-    "java/src/org/chromium/chrome/browser/page_annotations/PageAnnotationsServiceFactory.java",
-    "java/src/org/chromium/chrome/browser/page_annotations/PageAnnotationsServiceProxy.java",
-    "java/src/org/chromium/chrome/browser/page_annotations/ProductPriceUpdatePageAnnotation.java",
-    "java/src/org/chromium/chrome/browser/page_annotations/SinglePageAnnotationsServiceResponse.java",
+    "java/src/org/monyhar/chrome/browser/page_annotations/BuyableProductPageAnnotation.java",
+    "java/src/org/monyhar/chrome/browser/page_annotations/PageAnnotation.java",
+    "java/src/org/monyhar/chrome/browser/page_annotations/PageAnnotationUtils.java",
+    "java/src/org/monyhar/chrome/browser/page_annotations/PageAnnotationsService.java",
+    "java/src/org/monyhar/chrome/browser/page_annotations/PageAnnotationsServiceConfig.java",
+    "java/src/org/monyhar/chrome/browser/page_annotations/PageAnnotationsServiceFactory.java",
+    "java/src/org/monyhar/chrome/browser/page_annotations/PageAnnotationsServiceProxy.java",
+    "java/src/org/monyhar/chrome/browser/page_annotations/ProductPriceUpdatePageAnnotation.java",
+    "java/src/org/monyhar/chrome/browser/page_annotations/SinglePageAnnotationsServiceResponse.java",
   ]
 
   deps = [

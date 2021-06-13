@@ -3,7 +3,7 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
 
-<org.chromium.chrome.browser.tasks.tab_management.TabGroupUiToolbarView
+<org.monyhar.chrome.browser.tasks.tab_management.TabGroupUiToolbarView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -19,7 +19,7 @@
         android:gravity="center_vertical"
         android:focusable="true"
         android:focusableInTouchMode="true">
-        <org.chromium.ui.widget.ChromeImageView
+        <org.monyhar.ui.widget.ChromeImageView
             android:id="@+id/toolbar_left_button"
             style="@style/BottomToolbarButton"
             android:src="@drawable/ic_expand_more_black_24dp"
@@ -41,13 +41,13 @@
             android:theme="@style/TabGridDialogTitleTheme"
             android:gravity="center"
             android:selectAllOnFocus="true"/>
-        <org.chromium.ui.widget.ChromeImageView
+        <org.monyhar.ui.widget.ChromeImageView
             android:id="@+id/toolbar_right_button"
             style="@style/BottomToolbarButton"
             android:src="@drawable/plus"
             app:tint="@color/default_icon_color_tint_list"
             android:contentDescription="@string/bottom_tab_grid_new_tab" />
-        <org.chromium.ui.widget.ChromeImageView
+        <org.monyhar.ui.widget.ChromeImageView
             android:id="@+id/toolbar_menu_button"
             style="@style/ToolbarMenuButtonPhone"
             android:src="@drawable/ic_more_vert_24dp"
@@ -55,4 +55,4 @@
             app:tint="@color/default_icon_color_tint_list"
             android:contentDescription="@string/accessibility_toolbar_btn_menu" />
    </LinearLayout>
-</org.chromium.chrome.browser.tasks.tab_management.TabGroupUiToolbarView>
+</org.monyhar.chrome.browser.tasks.tab_management.TabGroupUiToolbarView>

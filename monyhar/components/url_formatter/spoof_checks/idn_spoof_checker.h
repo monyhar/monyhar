@@ -61,7 +61,7 @@ struct TopDomainEntry {
 // A helper class for IDN Spoof checking, used to ensure that no IDN input is
 // spoofable per Chromium's standard of spoofability. For a more thorough
 // explanation of how spoof checking works in Chromium, see
-// http://dev.chromium.org/developers/design-documents/idn-in-google-chrome .
+// http://dev.monyhar.org/developers/design-documents/idn-in-google-chrome .
 class IDNSpoofChecker {
  public:
   struct HuffmanTrieParams {

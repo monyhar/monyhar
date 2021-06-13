@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sync;
+package org.monyhar.chrome.browser.sync;
 
 import android.util.Pair;
 
@@ -19,21 +19,21 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaNotSatisfiedException;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.bookmarks.BookmarkBridge;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.util.browser.sync.SyncTestUtil;
-import org.chromium.components.bookmarks.BookmarkId;
-import org.chromium.components.sync.ModelType;
-import org.chromium.components.sync.protocol.BookmarkSpecifics;
-import org.chromium.components.sync.protocol.SyncEntity;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.url.GURL;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaNotSatisfiedException;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.bookmarks.BookmarkBridge;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.util.browser.sync.SyncTestUtil;
+import org.monyhar.components.bookmarks.BookmarkId;
+import org.monyhar.components.sync.ModelType;
+import org.monyhar.components.sync.protocol.BookmarkSpecifics;
+import org.monyhar.components.sync.protocol.SyncEntity;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,7 +52,7 @@ public class BookmarksTest {
 
     private static final String BOOKMARKS_TYPE_STRING = "Bookmarks";
 
-    private static final GURL URL = new GURL("http://chromium.org/");
+    private static final GURL URL = new GURL("http://monyhar.org/");
     private static final String TITLE = "Chromium";
     private static final String MODIFIED_TITLE = "Chromium2";
     private static final String FOLDER_TITLE = "Tech";

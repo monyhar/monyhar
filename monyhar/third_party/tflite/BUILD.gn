@@ -469,10 +469,10 @@ static_library("tflite") {
     "//third_party/flatbuffers",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
     ":tflite_flags",
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     "//third_party/eigen3:eigen_includes",
   ]
 

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar.top;
+package org.monyhar.chrome.browser.toolbar.top;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -15,21 +15,21 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewStub;
 
-import org.chromium.base.TraceEvent;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.compositor.resources.ResourceFactory;
-import org.chromium.chrome.browser.flags.CachedFeatureFlags;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.toolbar.ControlContainer;
-import org.chromium.chrome.browser.toolbar.ToolbarProgressBar;
-import org.chromium.components.browser_ui.widget.ClipDrawableProgressBar.DrawingInfo;
-import org.chromium.components.browser_ui.widget.ViewResourceFrameLayout;
-import org.chromium.components.browser_ui.widget.gesture.SwipeGestureListener;
-import org.chromium.components.browser_ui.widget.gesture.SwipeGestureListener.SwipeHandler;
-import org.chromium.ui.KeyboardVisibilityDelegate;
-import org.chromium.ui.base.ViewUtils;
-import org.chromium.ui.resources.dynamics.ViewResourceAdapter;
-import org.chromium.ui.widget.OptimizedFrameLayout;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.compositor.resources.ResourceFactory;
+import org.monyhar.chrome.browser.flags.CachedFeatureFlags;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.toolbar.ControlContainer;
+import org.monyhar.chrome.browser.toolbar.ToolbarProgressBar;
+import org.monyhar.components.browser_ui.widget.ClipDrawableProgressBar.DrawingInfo;
+import org.monyhar.components.browser_ui.widget.ViewResourceFrameLayout;
+import org.monyhar.components.browser_ui.widget.gesture.SwipeGestureListener;
+import org.monyhar.components.browser_ui.widget.gesture.SwipeGestureListener.SwipeHandler;
+import org.monyhar.ui.KeyboardVisibilityDelegate;
+import org.monyhar.ui.base.ViewUtils;
+import org.monyhar.ui.resources.dynamics.ViewResourceAdapter;
+import org.monyhar.ui.widget.OptimizedFrameLayout;
 
 /**
  * Layout for the browser controls (omnibox, menu, tab strip, etc..).

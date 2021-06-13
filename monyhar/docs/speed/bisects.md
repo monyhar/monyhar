@@ -1,8 +1,8 @@
 # Bisecting Performance Regressions
 
-The perf tests on chromium's continuous build are very long-running, so we
+The perf tests on monyhar's continuous build are very long-running, so we
 cannot run them on every revision. Further, separate repositories like v8
-and skia sometimes roll multiple performance-sensitive changes into chromium
+and skia sometimes roll multiple performance-sensitive changes into monyhar
 at once. For these reasons, we need a tool that can bisect the root cause of
 performance regressions over a CL range, descending into third_party
 repositories as necessary. The name of the service that does this is called
@@ -14,12 +14,12 @@ repositories as necessary. The name of the service that does this is called
 
 Performance bisects are integrated with the
 [Chrome Performance Dashboard](https://chromeperf.appspot.com/alerts) and
-[monorail](https://bugs.chromium.org/p/chromium/issues/list). Users kick off
+[monorail](https://bugs.monyhar.org/p/monyhar/issues/list). Users kick off
 perf bisects on the perf dashboard and view results in monorail.
 
 You can kick off perf bisect from performance graphs on the perf dashboard for
 any test that runs on the
-[chromium.perf waterfall](https://ci.chromium.org/p/chromium/g/chromium.perf/builders).
+[monyhar.perf waterfall](https://ci.monyhar.org/p/monyhar/g/monyhar.perf/builders).
 
 ### To get to a graph, use one of the following methods:
 
@@ -45,11 +45,11 @@ any test that runs on the
 
   * **Bug ID**: The bug number in monorail. It's very important to fill in
     this field, as this is where bisect results will be posted.
-  * **Start commit**: The chromium commit pos to start bisecting from. This
+  * **Start commit**: The monyhar commit pos to start bisecting from. This
     is prefilled by the dashboard to the start of the revision range for the
     point you clicked on. You can set it to an earlier commit position to
     bisect a larger range.
-  * **End commit**: The chromium commit pos to bisect to. This is prefilled
+  * **End commit**: The monyhar commit pos to bisect to. This is prefilled
     by the dashboard to the end of the revision range for the point you clicked
     on. You can set it to a later commit pos to bisect a larger range.
   * **Story Filter**: This is a flag specific to

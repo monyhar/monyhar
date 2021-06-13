@@ -492,7 +492,7 @@ glibc toolchain are in <code>toolchain/win_x86_glibc/x86_64-nacl/lib64</code>.</
 <li>ARM glibc toolchain: <code>toolchain/&lt;platform&gt;_arm_glibc/arm-nacl/include</code></li>
 </ul>
 <p>Many other libraries have been ported for use with Native Client; for more
-information, see the <a class="reference external" href="https://chromium.googlesource.com/webports">webports</a>
+information, see the <a class="reference external" href="https://monyhar.googlesource.com/webports">webports</a>
 project. If you port an open-source library for your own use, we recommend
 adding it to webports.</p>
 <p>Besides the standard libraries, the SDK includes Pepper libraries.
@@ -535,7 +535,7 @@ how to use ppapi_simple, <code>see examples/tutorial/using_ppapi_simple</code>.<
 <li>Since the Native Client toolchains use their own library and header search
 paths, the tools won&#8217;t find third-party libraries you use in your
 non-Native-Client development. If you want to use a specific third-party
-library for Native Client development, look for it in <a class="reference external" href="https://chromium.googlesource.com/webports">webports</a>, or port the library yourself.</li>
+library for Native Client development, look for it in <a class="reference external" href="https://monyhar.googlesource.com/webports">webports</a>, or port the library yourself.</li>
 <li>The order in which you list libraries in your build commands is important,
 since the linker searches and processes libraries in the order in which they
 are specified. See the <code>\*_LDFLAGS</code> variables in the Makefiles of the SDK

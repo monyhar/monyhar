@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.continuous_search;
+package org.monyhar.chrome.browser.continuous_search;
 
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.url.GURL;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.url.GURL;
 
 /**
  * API for implementations that produce search result data.

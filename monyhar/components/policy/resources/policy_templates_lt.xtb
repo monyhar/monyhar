@@ -111,7 +111,7 @@
 
       Jei nustatysite šią politiką, „<ph name="PRODUCT_NAME" />“ naudos pateiktą katalogą neatsižvelgiant į tai, ar naudotojas nurodė žymą „--disk-cache-dir“, ar ne. Kad neprarastumėte duomenų ir išvengtumėte kitų netikėtų klaidų, ši politika neturėtų būti nustatyta tomo šakniniame kataloge ar kitais tikslais naudojamame kataloge, nes „<ph name="PRODUCT_NAME" />“ tvarko savo turinį.
 
-      Galimų naudoti kintamųjų sąrašą rasite apsilankę adresu https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Galimų naudoti kintamųjų sąrašą rasite apsilankę adresu https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Jei ši politika nenustatyta, bus naudojamas numatytasis talpyklos katalogas ir naudotojas galės jo nepaisyti naudodamas komandos eilutės žymą „--disk-cache-dir“.</translation>
 <translation id="113521240853905588">Konfigūruojamos kalbos, kurios gali būti naudojamos kaip pageidaujamos „<ph name="PRODUCT_OS_NAME" />“ kalbos.
@@ -498,7 +498,7 @@
 <translation id="1852294065645015766">Leisti automatiškai leisti mediją</translation>
 <translation id="1857152770025485173">Naudojant šią politiką naudotojams neleidžiama įkelti tinklalapių iš juodojo URL sąrašo. Juodajame sąraše pateikiami URL šablonai, nurodantys, kurie URL bus įtraukti į juodąjį sąrašą.
 
-      URL šablonas turi būti suformatuotas atsižvelgiant į gaires, pateikiamas adresu https://www.chromium.org/administrators/url-blacklist-filter-format.
+      URL šablonas turi būti suformatuotas atsižvelgiant į gaires, pateikiamas adresu https://www.monyhar.org/administrators/url-blacklist-filter-format.
 
       Išimtis galima nurodyti URL baltojo sąrašo politikoje. Į politiką galima įtraukti iki 1000 įrašų – į kitus nebus atsižvelgiama.
 
@@ -541,7 +541,7 @@
 
       Jei nesukonfigūruota, metrikos ir diagnostikos duomenų ataskaitos bus išjungtos netvarkomuose įrenginiuose ir įgalintos tvarkomuose įrenginiuose.</translation>
 <translation id="1907431809333268751">Konfigūruojamas įmonių prisijungimo URL (tik HTTP ir HTTPS schemų) sąrašas. Šiais URL bus užfiksuotas slaptažodžio kontrolinis kodas, kuris bus naudojamas aptinkant, kada slaptažodis naudojamas pakartotinai.
-      Kad „<ph name="PRODUCT_NAME" />“ tinkamai užfiksuotų slaptažodžių kontrolinius kodus, įsitikinkite, kad prisijungimo puslapiuose laikomasi šių gairių: https://www.chromium.org/developers/design-documents/create-amazing-password-forms.
+      Kad „<ph name="PRODUCT_NAME" />“ tinkamai užfiksuotų slaptažodžių kontrolinius kodus, įsitikinkite, kad prisijungimo puslapiuose laikomasi šių gairių: https://www.monyhar.org/developers/design-documents/create-amazing-password-forms.
 
       Įgalinus šį nustatymą, taikant slaptažodžio apsaugos paslaugą bus fiksuojamas slaptažodžio kontrolinis kodas šiais URL adresais, siekiant aptikti, kada slaptažodis naudojamas pakartotinai.
       Jei šis nustatymas išjungtas arba nenustatytas, taikant slaptažodžio apsaugos paslaugą slaptažodžio kontrolinis kodas bus užfiksuotas tik adresu https://accounts.google.com.
@@ -843,7 +843,7 @@
 
       Taikant šią politiką leidžiama neatskleisti prieglobos serverių pavadinimų nurodytuose URL sertifikatų taikant sertifikato skaidrumą. Todėl bus leidžiama toliau naudoti sertifikatus, kurie priešingu atveju būtų nepatikimi, nes nebuvo tinkamai viešai atskleisti, bet bus sudėtingiau aptikti netinkamai naudojamus šių prieglobų sertifikatus.
 
-      URL šablonas formatuojamas pagal https://www.chromium.org/administrators/url-blacklist-filter-format. Tačiau, kadangi sertifikatai galioja nurodytam prieglobos serverio pavadinimui, neatsižvelgiant į schemą, prievadą ar kelią, atsižvelgiama tik į URL prieglobos serverio pavadinimo dalį. Pakaitos simbolių prieglobos nepalaikomos.
+      URL šablonas formatuojamas pagal https://www.monyhar.org/administrators/url-blacklist-filter-format. Tačiau, kadangi sertifikatai galioja nurodytam prieglobos serverio pavadinimui, neatsižvelgiant į schemą, prievadą ar kelią, atsižvelgiama tik į URL prieglobos serverio pavadinimo dalį. Pakaitos simbolių prieglobos nepalaikomos.
 
       Jei politika nenustatyta, bet koks sertifikatas, kurį reikia atskleisti taikant sertifikato skaidrumą, bus laikomas nepatikimu, jei nebus atskleistas vadovaujantis sertifikato skaidrumo politika.</translation>
 <translation id="2488010520405124654">Įgalinti tinklo konfigūracijos raginimą, kai esate neprisijungę.
@@ -1538,7 +1538,7 @@
 
       Jei nustatysite šią politiką, „<ph name="PRODUCT_NAME" />“ naudos nurodytą katalogą, nesvarbu, ar naudotojas jį nurodė, ar įgalino žymą kiekvieną kartą raginti nurodyti atsisiuntimo vietą.
 
-      Apsilankykite adresu https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables. Čia rasite kintamųjų, kuriuos galima naudoti, sąrašą.
+      Apsilankykite adresu https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables. Čia rasite kintamųjų, kuriuos galima naudoti, sąrašą.
 
       Jei ši politika nenustatyta, bus naudojamas numatytasis atsisiuntimo katalogas ir naudotojas galės jį pakeisti.</translation>
 <translation id="3805659594028420438">Įgalinti TLS domenų sertifikatų plėtinį (nebenaudojamas)</translation>
@@ -1629,7 +1629,7 @@
 
       Nenustačius šios politikos, „<ph name="PRODUCT_NAME" />“ naudos įprastą numatytąjį katalogą (konkrečios platformos).
 
-      Jei reikia kintamųjų, kuriuos galima naudoti, sąrašo, žr. https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.</translation>
+      Jei reikia kintamųjų, kuriuos galima naudoti, sąrašo, žr. https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.</translation>
 <translation id="3911737181201537215">Ši politika neturi įtakos „Android“ vykdomam registravimo procesui.</translation>
 <translation id="391531815696899618">Kai nustatyta kaip „true“, neleidžiamas „Google“ disko sinchronizavimas „<ph name="PRODUCT_OS_NAME" />“ programoje „Failai“. Tokiu atveju duomenys į „Google“ diską neįkeliami.
 
@@ -1831,7 +1831,7 @@
 
       Jei nustatysite šią politiką, „<ph name="PRODUCT_NAME" />“ naudos nurodytą katalogą profilių tarptinklinio ryšio kopijoms saugoti, jei įgalinta politika „<ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" />“. Jei politika „<ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" />“ išjungta ar nenustatyta, šioje politikoje išsaugota vertė nebus naudojama.
 
-      Jei norite peržiūrėti galimų naudoti kintamųjų sąrašą, apsilankykite adresu https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Jei norite peržiūrėti galimų naudoti kintamųjų sąrašą, apsilankykite adresu https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Jei ši politika nenustatyta, bus naudojamas numatytasis tarptinklinio ryšio profilio kelias.</translation>
 <translation id="4239720644496144453">Talpykla nenaudojama „Android“ programose. Jei keli naudotojai įdiegs tą pačią „Android“ programą, kiekvienam naudotojui bus atsisiųsta nauja programa.</translation>
@@ -2033,7 +2033,7 @@
 
           Nenustačius šios politikos visose svetainėse bus naudojamas numatytasis pateikėjas, kaip nurodyta politikoje „ChromeFrameRendererSettings“.
 
-          Šablonų pavyzdžių pateikiama apsilankius adresu https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Šablonų pavyzdžių pateikiama apsilankius adresu https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="467449052039111439">Atidaryti URL sąrašą</translation>
 <translation id="4674871290487541952">Nesaugių algoritmų leidimas tikrinant plėtinių naujinių ir diegimų vientisumą</translation>
 <translation id="4680936297850947973">Nebenaudojama M68. Naudokite numatytąjį iššokančiųjų langų nustatymą.
@@ -2684,7 +2684,7 @@
 
       Jei nustatysite šią politiką, „<ph name="PRODUCT_FRAME_NAME" />“ naudos nurodytą katalogą.
 
-      Apsilankykite adresu https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables. Čia rasite kintamųjų, kuriuos galima naudoti, sąrašą.
+      Apsilankykite adresu https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables. Čia rasite kintamųjų, kuriuos galima naudoti, sąrašą.
 
       Jei šis nustatymas paliekamas nenustatytas, naudojamas numatytasis profilio katalogas.</translation>
 <translation id="5826047473100157858">Nurodoma, ar naudotojas (-a) gali atidaryti puslapius inkognito režimu „<ph name="PRODUCT_NAME" />“.
@@ -3265,7 +3265,7 @@
 
       Jei nustatysite šią politiką, „<ph name="PRODUCT_NAME" />“ naudos nurodytą katalogą neatsižvelgiant į tai, ar naudotojas nurodė žymą „--user-data-dir“, ar ne. Kad neprarastumėte duomenų ir išvengtumėte kitų netikėtų klaidų, ši politika neturėtų būti nustatyta tomo šakniniame kataloge ar kitais tikslais naudojamame kataloge, nes „<ph name="PRODUCT_NAME" />“ tvarko savo turinį.
 
-      Galimų naudoti kintamųjų sąrašą rasite apsilankę adresu https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Galimų naudoti kintamųjų sąrašą rasite apsilankę adresu https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Jei ši politika nenustatyta, bus naudojamas numatytasis profilio kelias ir naudotojas galės nepaisyti jo naudodamas komandos eilutės žymą „--user-data-dir“.</translation>
 <translation id="7027785306666625591">Konfigūruoti energijos valdymą „<ph name="PRODUCT_OS_NAME" />“.
@@ -4062,7 +4062,7 @@ Rekomenduojame politiką sistemoje „Windows“ nustatyti naudojant GPO, tačia
 
           Jei ši politika nenustatyta, numatytasis pateikėjas naudojamas visose svetainėse, kaip nurodyta politikoje „ChromeFrameRendererSettings“.
 
-          Šablonų pavyzdžių galite rasti apsilankę adresu https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Šablonų pavyzdžių galite rasti apsilankę adresu https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="8489964335640955763">PluginVm</translation>
 <translation id="8493645415242333585">Neleisti išsaugoti naršyklės istorijos</translation>
 <translation id="8499172469244085141">Numatytieji nustatymai (naudotojai gali nepaisyti)</translation>

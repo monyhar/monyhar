@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_manager;
+package org.monyhar.chrome.browser.password_manager;
 
 import android.content.Context;
 import android.os.Bundle;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
 
 /** A helper class for showing PasswordSettings. */
 public class PasswordManagerHelper {
@@ -20,7 +20,7 @@ public class PasswordManagerHelper {
     // |PasswordSettings| full class name to open the fragment. Will be changed to
     // |PasswordSettings.class.getName()| once it's modularized.
     private static final String PASSWORD_SETTINGS_CLASS =
-            "org.chromium.chrome.browser.password_manager.settings.PasswordSettings";
+            "org.monyhar.chrome.browser.password_manager.settings.PasswordSettings";
 
     /**
      * Launches the password settings in or the Google Password Manager if available.

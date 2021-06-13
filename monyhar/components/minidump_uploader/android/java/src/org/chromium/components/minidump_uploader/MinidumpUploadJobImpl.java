@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.minidump_uploader;
+package org.monyhar.components.minidump_uploader;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.components.minidump_uploader.MinidumpUploadCallable.MinidumpUploadStatus;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.components.minidump_uploader.MinidumpUploadCallable.MinidumpUploadStatus;
 
 import java.io.File;
 

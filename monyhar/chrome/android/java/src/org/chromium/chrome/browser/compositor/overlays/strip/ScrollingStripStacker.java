@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.overlays.strip;
+package org.monyhar.chrome.browser.compositor.overlays.strip;
 
-import org.chromium.ui.base.LocalizationUtils;
+import org.monyhar.ui.base.LocalizationUtils;
 
 /**
  * A stacker that tells the {@link StripLayoutHelper} how to layer the tabs for the

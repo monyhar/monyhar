@@ -260,7 +260,7 @@ memory leaks.
 One way to execute such an incorrect assignment is `reinterpret_cast` of
 a pointer to a `CheckedPtr`.  For example, see https://crbug.com/1154799
 where the `reintepret_cast` is/was used in the `Extract` method
-[here](https://source.chromium.org/chromium/chromium/src/+/main:device/fido/cbor_extract.h;l=318;drc=16f9768803e17c90901adce97b3153cfd39fdde2)).
+[here](https://source.monyhar.org/monyhar/monyhar/src/+/main:device/fido/cbor_extract.h;l=318;drc=16f9768803e17c90901adce97b3153cfd39fdde2)).
 Simplified example:
 
 ```cpp
@@ -312,7 +312,7 @@ In practice this will lead to a null dereference and a crash
 
 Note that this code pattern would have resulted in an Undefined Behavior,
 even if `foo_ptr_` was a raw `Foo*` pointer (see the
-[memory-safete-dev@ discussion](https://groups.google.com/a/chromium.org/g/memory-safety-dev/c/3sEmSnFc61I/m/Ng6PyqDiAAAJ)
+[memory-safete-dev@ discussion](https://groups.google.com/a/monyhar.org/g/memory-safety-dev/c/3sEmSnFc61I/m/Ng6PyqDiAAAJ)
 for more details).
 
 Possible solutions (in no particular order):
@@ -353,4 +353,4 @@ but runtime errors still exist for BackupRefPtr).
 
 TODO(glazunov): One example is
 accessing a class' CheckedPtr fields in its base class' constructor:
-https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/platform/wtf/doubly_linked_list.h;drc=cce44dc1cb55c77f63f2ebec5e7015b8dc851c82;l=52
+https://source.monyhar.org/monyhar/monyhar/src/+/main:third_party/blink/renderer/platform/wtf/doubly_linked_list.h;drc=cce44dc1cb55c77f63f2ebec5e7015b8dc851c82;l=52

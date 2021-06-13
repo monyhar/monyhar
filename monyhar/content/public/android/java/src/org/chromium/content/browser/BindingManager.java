@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import android.content.ComponentCallbacks2;
 import android.content.Context;
@@ -10,10 +10,10 @@ import android.content.res.Configuration;
 
 import androidx.collection.ArraySet;
 
-import org.chromium.base.Log;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.process_launcher.ChildProcessConnection;
+import org.monyhar.base.Log;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.process_launcher.ChildProcessConnection;
 
 import java.util.Iterator;
 import java.util.Set;

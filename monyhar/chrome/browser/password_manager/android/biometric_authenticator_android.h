@@ -18,7 +18,7 @@ namespace password_manager {
 
 // The biometric authentication result as returned by the biometric prompt.
 //
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.password_manager
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.password_manager
 enum class BiometricAuthUIResult {
   kSuccessWithUnknownMethod = 0,
   kSuccessWithBiometrics = 1,

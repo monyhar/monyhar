@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test;
+package org.monyhar.chrome.test;
 
 import android.app.ActivityOptions;
 import android.app.Instrumentation;
@@ -15,25 +15,25 @@ import android.text.TextUtils;
 
 import org.junit.Assert;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.Log;
-import org.chromium.base.test.util.ApplicationTestUtils;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.omnibox.UrlBar;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabCreationState;
-import org.chromium.chrome.browser.tab.TabLaunchType;
-import org.chromium.chrome.browser.tab.TabSelectionType;
-import org.chromium.chrome.browser.tabmodel.TabModel;
-import org.chromium.chrome.browser.tabmodel.TabModelObserver;
-import org.chromium.chrome.test.util.ChromeTabUtils;
-import org.chromium.chrome.test.util.MenuUtils;
-import org.chromium.chrome.test.util.NewTabPageTestUtils;
-import org.chromium.chrome.test.util.WaitForFocusHelper;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.Log;
+import org.monyhar.base.test.util.ApplicationTestUtils;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.omnibox.UrlBar;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabCreationState;
+import org.monyhar.chrome.browser.tab.TabLaunchType;
+import org.monyhar.chrome.browser.tab.TabSelectionType;
+import org.monyhar.chrome.browser.tabmodel.TabModel;
+import org.monyhar.chrome.browser.tabmodel.TabModelObserver;
+import org.monyhar.chrome.test.util.ChromeTabUtils;
+import org.monyhar.chrome.test.util.MenuUtils;
+import org.monyhar.chrome.test.util.NewTabPageTestUtils;
+import org.monyhar.chrome.test.util.WaitForFocusHelper;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.concurrent.TimeoutException;
 

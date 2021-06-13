@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feedback;
+package org.monyhar.chrome.browser.feedback;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,14 +13,14 @@ import android.text.TextUtils;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.AppHooks;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.components.embedder_support.util.UrlUtilitiesJni;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.AppHooks;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.embedder_support.util.UrlUtilitiesJni;
 
 import java.util.Map;
 

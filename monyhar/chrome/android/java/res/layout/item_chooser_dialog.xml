@@ -15,7 +15,7 @@
     <include layout="@layout/device_item_list" />
 
     <!-- Status message at the bottom. -->
-    <org.chromium.ui.widget.TextViewWithClickableSpans
+    <org.monyhar.ui.widget.TextViewWithClickableSpans
         android:id="@+id/status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
         android:textAppearance="@style/TextAppearance.TextMedium.Secondary" />
 
     <!-- Button row. -->
-    <org.chromium.ui.widget.ButtonCompat
+    <org.monyhar.ui.widget.ButtonCompat
         android:id="@+id/positive"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"

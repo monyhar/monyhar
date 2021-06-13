@@ -15,7 +15,7 @@ namespace arc {
 namespace {
 
 // Prefix in intent that specifies ARC shelf group. S. means string type.
-constexpr char kShelfGroupIntentPrefix[] = "S.org.chromium.arc.shelf_group_id=";
+constexpr char kShelfGroupIntentPrefix[] = "S.org.monyhar.arc.shelf_group_id=";
 // Prefix to specify ARC shelf group.
 constexpr char kShelfGroupPrefix[] = "shelf_group:";
 

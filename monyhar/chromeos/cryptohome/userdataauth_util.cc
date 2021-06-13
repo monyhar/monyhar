@@ -138,7 +138,7 @@ cryptohome::MountError CryptohomeErrorToMountError(CryptohomeErrorCode code) {
       return cryptohome::MOUNT_ERROR_FATAL;
     // TODO(dlunev): remove this temporary case after rolling up system api
     // change and adding proper handling for the new enum value in
-    // https://chromium-review.googlesource.com/c/chromium/src/+/2518524
+    // https://monyhar-review.googlesource.com/c/monyhar/src/+/2518524
     default:
       NOTREACHED();
       return cryptohome::MOUNT_ERROR_FATAL;

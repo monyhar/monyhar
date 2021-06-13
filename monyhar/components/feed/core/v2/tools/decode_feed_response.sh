@@ -16,4 +16,4 @@ while sys.stdin.buffer.read(1)[0]>127:
   pass
 sys.stdout.buffer.write(sys.stdin.buffer.read())" | \
 python3 $CHROMIUM_SRC/components/feed/core/v2/tools/textpb_to_binarypb.py \
-  --chromium_path=$CHROMIUM_SRC --direction=reverse
+  --monyhar_path=$CHROMIUM_SRC --direction=reverse

@@ -4645,7 +4645,7 @@ TEST_F(HttpCacheTest, SimpleGET_ParallelWritersFailWrite) {
   }
 }
 
-// This is a test for http://code.google.com/p/chromium/issues/detail?id=4769.
+// This is a test for http://code.google.com/p/monyhar/issues/detail?id=4769.
 // If cancelling a request is racing with another request for the same resource
 // finishing, we have to make sure that we remove both transactions from the
 // entry.
@@ -4727,7 +4727,7 @@ TEST_F(HttpCacheTest, SimpleGET_RacingReaders) {
 
 // Tests that we can doom an entry with pending transactions and delete one of
 // the pending transactions before the first one completes.
-// See http://code.google.com/p/chromium/issues/detail?id=25588
+// See http://code.google.com/p/monyhar/issues/detail?id=25588
 TEST_F(HttpCacheTest, SimpleGET_DoomWithPending) {
   // We need simultaneous doomed / not_doomed entries so let's use a real cache.
   MockHttpCache cache(HttpCache::DefaultBackend::InMemory(1024 * 1024));
@@ -4847,7 +4847,7 @@ TEST_F(HttpCacheTest, DoomDoesNotSetHints) {
   EXPECT_EQ(2, cache.disk_cache()->create_count());
 }
 
-// This is a test for http://code.google.com/p/chromium/issues/detail?id=4731.
+// This is a test for http://code.google.com/p/monyhar/issues/detail?id=4731.
 // We may attempt to delete an entry synchronously with the act of adding a new
 // transaction to said entry.
 TEST_F(HttpCacheTest, FastNoStoreGET_DoneWithPending) {

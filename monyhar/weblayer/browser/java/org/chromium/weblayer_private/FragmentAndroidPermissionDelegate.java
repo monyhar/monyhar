@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
-import org.chromium.base.compat.ApiHelperForM;
-import org.chromium.ui.base.AndroidPermissionDelegateWithRequester;
+import org.monyhar.base.compat.ApiHelperForM;
+import org.monyhar.ui.base.AndroidPermissionDelegateWithRequester;
 
 /**
  * AndroidPermissionDelegate implementation for BrowserFragment.

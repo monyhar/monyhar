@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.gesturenav;
+package org.monyhar.chrome.browser.gesturenav;
 
 import android.content.Context;
 import android.gesture.GesturePoint;
@@ -12,9 +12,9 @@ import android.widget.FrameLayout;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.gesturenav.NavigationBubble.CloseTarget;
+import org.monyhar.base.Callback;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.gesturenav.NavigationBubble.CloseTarget;
 
 /**
  * FrameLayout that supports side-wise slide gesture for history navigation.

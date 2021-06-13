@@ -92,7 +92,7 @@ void AppCacheUpdateJob::URLFetcher::OnResponseStarted(int net_error) {
     // We've opted for a milder constraint and allow caching unless
     // the resource has a "no-store" header. A spec change has been
     // requested on the whatwg list.
-    // See http://code.google.com/p/chromium/issues/detail?id=69594
+    // See http://code.google.com/p/monyhar/issues/detail?id=69594
     // TODO(michaeln): Consider doing this for cross-origin HTTP too.
     if ((net::IsCertStatusError(
              request_->GetResponseInfo().ssl_info.cert_status) &&

@@ -36,8 +36,8 @@ class ExportNotifier(object):
         gerrit_dict = {}
 
         try:
-            _log.info('Searching for recent failiing chromium exports.')
-            prs = self.wpt_github.recent_failing_chromium_exports()
+            _log.info('Searching for recent failiing monyhar exports.')
+            prs = self.wpt_github.recent_failing_monyhar_exports()
         except GitHubError as e:
             _log.info(
                 'Surfacing Taskcluster failures cannot be completed due to the following error:'
@@ -201,7 +201,7 @@ class PRStatusInfo(object):
             'a look at the output and see if it can be fixed. '
             'Unresolved failures will be looked at by the Ecosystem-Infra '
             'sheriff after this CL has been landed in Chromium; if you '
-            'need earlier help please contact ecosystem-infra@chromium.org.\n\n'
+            'need earlier help please contact ecosystem-infra@monyhar.org.\n\n'
             'Any suggestions to improve this service are welcome; '
             'crbug.com/1027618.').format(
                 '%spull/%d' % (WPT_GH_URL, self._pr_number),

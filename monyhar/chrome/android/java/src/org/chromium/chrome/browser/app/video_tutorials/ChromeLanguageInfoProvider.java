@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.app.video_tutorials;
+package org.monyhar.chrome.browser.app.video_tutorials;
 
-import org.chromium.chrome.browser.language.settings.LanguageItem;
-import org.chromium.chrome.browser.language.settings.LanguagesManager;
-import org.chromium.chrome.browser.video_tutorials.Language;
-import org.chromium.chrome.browser.video_tutorials.LanguageInfoProvider;
+import org.monyhar.chrome.browser.language.settings.LanguageItem;
+import org.monyhar.chrome.browser.language.settings.LanguagesManager;
+import org.monyhar.chrome.browser.video_tutorials.Language;
+import org.monyhar.chrome.browser.video_tutorials.LanguageInfoProvider;
 
 /**
  * See {@link LanguageInfoProvider}.

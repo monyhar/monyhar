@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.common.variations;
+package org.monyhar.android_webview.common.variations;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
@@ -10,12 +10,12 @@ import androidx.annotation.VisibleForTesting;
 import com.google.protobuf.ByteString;
 import com.google.protobuf.InvalidProtocolBufferException;
 
-import org.chromium.android_webview.proto.AwVariationsSeedOuterClass.AwVariationsSeed;
-import org.chromium.base.BuildInfo;
-import org.chromium.base.CommandLine;
-import org.chromium.base.Log;
-import org.chromium.base.PathUtils;
-import org.chromium.components.variations.firstrun.VariationsSeedFetcher.SeedInfo;
+import org.monyhar.android_webview.proto.AwVariationsSeedOuterClass.AwVariationsSeed;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.Log;
+import org.monyhar.base.PathUtils;
+import org.monyhar.components.variations.firstrun.VariationsSeedFetcher.SeedInfo;
 
 import java.io.Closeable;
 import java.io.File;

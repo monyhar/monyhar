@@ -204,8 +204,8 @@ suite(destination_dialog_test.suiteName, function() {
   test(assert(destination_dialog_test.TestNames.UserAccounts), async () => {
     // Set up the cloud print interface with Google Drive printer for a couple
     // different accounts.
-    const user1 = 'foo@chromium.org';
-    const user2 = 'bar@chromium.org';
+    const user1 = 'foo@monyhar.org';
+    const user2 = 'bar@monyhar.org';
     cloudPrintInterface.setPrinter(getGoogleDriveDestination(user1));
     cloudPrintInterface.setPrinter(getGoogleDriveDestination(user2));
     // Override so that privet printers will also be fetched, since we are

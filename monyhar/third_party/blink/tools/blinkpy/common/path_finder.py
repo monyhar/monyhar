@@ -72,21 +72,21 @@ def get_blink_dir():
             os.path.dirname(os.path.dirname(os.path.realpath(__file__)))))
 
 
-def get_chromium_src_dir():
+def get_monyhar_src_dir():
     return os.path.dirname(os.path.dirname(get_blink_dir()))
 
 
 def get_depot_tools_dir():
-    return os.path.join(get_chromium_src_dir(), 'third_party', 'depot_tools')
+    return os.path.join(get_monyhar_src_dir(), 'third_party', 'depot_tools')
 
 
 def get_source_dir():
-    return os.path.join(get_chromium_src_dir(), 'third_party', 'blink',
+    return os.path.join(get_monyhar_src_dir(), 'third_party', 'blink',
                         'renderer')
 
 
 def get_typ_dir():
-    return os.path.join(get_chromium_src_dir(), 'third_party', 'catapult',
+    return os.path.join(get_monyhar_src_dir(), 'third_party', 'catapult',
                         'third_party', 'typ')
 
 
@@ -95,7 +95,7 @@ def get_blinkpy_thirdparty_dir():
 
 
 def get_blink_tools_dir():
-    return os.path.join(get_chromium_src_dir(), 'third_party', 'blink',
+    return os.path.join(get_monyhar_src_dir(), 'third_party', 'blink',
                         'tools')
 
 
@@ -111,7 +111,7 @@ def add_blink_tools_dir_to_sys_path():
 
 def _does_blink_web_tests_exist():
     return os.path.exists(
-        os.path.join(get_chromium_src_dir(), 'third_party', 'blink',
+        os.path.join(get_monyhar_src_dir(), 'third_party', 'blink',
                      'web_tests'))
 
 
@@ -130,16 +130,16 @@ class PathFinder(object):
         self._env_path = env_path or os.environ['PATH'].split(os.pathsep)
 
     @memoized
-    def chromium_base(self):
+    def monyhar_base(self):
         return self._filesystem.dirname(
             self._filesystem.dirname(self._blink_base()))
 
     def web_tests_dir(self):
-        return self.path_from_chromium_base('third_party', 'blink',
+        return self.path_from_monyhar_base('third_party', 'blink',
                                             'web_tests')
 
     def perf_tests_dir(self):
-        return self.path_from_chromium_base('third_party', 'blink',
+        return self.path_from_monyhar_base('third_party', 'blink',
                                             'perf_tests')
 
     def webdriver_prefix(self):
@@ -153,11 +153,11 @@ class PathFinder(object):
         assert tools_index != -1, 'could not find location of this checkout from %s' % module_path
         return self._filesystem.normpath(module_path[0:tools_index - 1])
 
-    def path_from_chromium_base(self, *comps):
-        return self._filesystem.join(self.chromium_base(), *comps)
+    def path_from_monyhar_base(self, *comps):
+        return self._filesystem.join(self.monyhar_base(), *comps)
 
     def _blink_source_dir(self):
-        return self._filesystem.join(self.chromium_base(), 'third_party',
+        return self._filesystem.join(self.monyhar_base(), 'third_party',
                                      'blink', 'renderer')
 
     def path_from_blink_source(self, *comps):
@@ -165,7 +165,7 @@ class PathFinder(object):
 
     def path_from_blink_tools(self, *comps):
         return self._filesystem.join(
-            self._filesystem.join(self.chromium_base(), 'third_party', 'blink',
+            self._filesystem.join(self.monyhar_base(), 'third_party', 'blink',
                                   'tools'), *comps)
 
     def path_from_web_tests(self, *comps):
@@ -192,7 +192,7 @@ class PathFinder(object):
         Expects depot_tools to be //third_party/depot_tools.
         src.git's DEPS defines depot_tools to be there.
         """
-        depot_tools = self.path_from_chromium_base('third_party',
+        depot_tools = self.path_from_monyhar_base('third_party',
                                                    'depot_tools')
         return depot_tools if self._filesystem.isdir(depot_tools) else None
 

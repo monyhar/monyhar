@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.screenshot;
+package org.monyhar.chrome.browser.share.screenshot;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -12,10 +12,10 @@ import android.os.Bundle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.share.share_sheet.ChromeOptionShareCallback;
-import org.chromium.chrome.browser.tab.Tab;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.share.share_sheet.ChromeOptionShareCallback;
+import org.monyhar.chrome.browser.tab.Tab;
 
 /**
  * ScreenshotShareSheetDialog is the main view for sharing non edited screenshots.

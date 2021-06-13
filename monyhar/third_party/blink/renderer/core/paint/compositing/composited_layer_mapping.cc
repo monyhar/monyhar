@@ -1811,7 +1811,7 @@ void CompositedLayerMapping::PaintContents(
 
   FramePaintTiming frame_paint_timing(context, GetLayoutObject().GetFrame());
 
-  // https://code.google.com/p/chromium/issues/detail?id=343772
+  // https://code.google.com/p/monyhar/issues/detail?id=343772
   DisableCompositingQueryAsserts disabler;
 #if DCHECK_IS_ON()
   // FIXME: once the state machine is ready, this can be removed and we can

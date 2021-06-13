@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.display;
+package org.monyhar.ui.display;
 
 import android.annotation.TargetApi;
 import android.graphics.PixelFormat;
@@ -11,10 +11,10 @@ import android.os.Build;
 import android.util.DisplayMetrics;
 import android.view.Display;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.Log;
-import org.chromium.base.compat.ApiHelperForM;
-import org.chromium.base.compat.ApiHelperForO;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.Log;
+import org.monyhar.base.compat.ApiHelperForM;
+import org.monyhar.base.compat.ApiHelperForO;
 
 import java.util.Arrays;
 import java.util.List;

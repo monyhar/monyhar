@@ -3783,7 +3783,7 @@ IN_PROC_BROWSER_TEST_P(RenderFrameHostManagerTest,
   ASSERT_TRUE(NavigateToURL(shell(), file_url));
   EXPECT_EQ(1, web_contents->GetController().GetEntryCount());
   EXPECT_TRUE(
-      ExecJs(root, "history.pushState({}, '', 'https://chromium.org');"));
+      ExecJs(root, "history.pushState({}, '', 'https://monyhar.org');"));
   ASSERT_TRUE(web_contents->GetMainFrame()->IsRenderFrameLive());
   EXPECT_EQ(2, web_contents->GetController().GetEntryCount());
 

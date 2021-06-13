@@ -56,7 +56,7 @@ class WinPort(base.Port):
     FALLBACK_PATHS = {'win10': ['win']}
     FALLBACK_PATHS['win7'] = ['win7'] + FALLBACK_PATHS['win10']
 
-    BUILD_REQUIREMENTS_URL = 'https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md'
+    BUILD_REQUIREMENTS_URL = 'https://monyhar.googlesource.com/monyhar/src/+/master/docs/windows_build_instructions.md'
 
     @classmethod
     def determine_full_port_name(cls, host, options, port_name):
@@ -132,7 +132,7 @@ class WinPort(base.Port):
 
         # Note that we write to HKCU so that we don't need privileged access
         # to the registry, and that will get reflected in HKCR when it is read, above.
-        cmdline = self._path_from_chromium_base('third_party', 'perl', 'perl',
+        cmdline = self._path_from_monyhar_base('third_party', 'perl', 'perl',
                                                 'bin', 'perl.exe') + ' -wT'
         hkey = _winreg.CreateKeyEx(_winreg.HKEY_CURRENT_USER,
                                    'Software\\Classes\\' + sub_key, 0,
@@ -164,7 +164,7 @@ class WinPort(base.Port):
             _log.error('For complete Windows build requirements, please see:')
             _log.error('')
             _log.error(
-                '    https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md'
+                '    https://monyhar.googlesource.com/monyhar/src/+/master/docs/windows_build_instructions.md'
             )
         return result
 
@@ -200,7 +200,7 @@ class WinPort(base.Port):
         return val
 
     def path_to_apache(self):
-        return self._path_from_chromium_base('third_party', 'apache-win32',
+        return self._path_from_monyhar_base('third_party', 'apache-win32',
                                              'bin', 'httpd.exe')
 
     def path_to_apache_config_file(self):

@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.bottombar.contextualsearch;
+package org.monyhar.chrome.browser.compositor.bottombar.contextualsearch;
 
 import android.view.View;
 
-import org.chromium.chrome.R;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetContent;
+import org.monyhar.chrome.R;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetContent;
 
 class ContextualSearchSheetContent implements BottomSheetContent {
     private final View mView;

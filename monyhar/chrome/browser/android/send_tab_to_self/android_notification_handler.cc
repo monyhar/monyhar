@@ -31,7 +31,7 @@ void AndroidNotificationHandler::DisplayNewEntries(
 
     ScopedJavaLocalRef<jclass> send_tab_to_self_notification_receiver_class =
         // base::android::GetClass(env,
-        //                         "org/chromium/chrome/browser/send_tab_to_self/"
+        //                         "org/monyhar/chrome/browser/send_tab_to_self/"
         //                         "SendTabToSelfNotificationReceiver");
         Java_SendTabToSelfNotificationReceiver_getSendTabToSelfNotificationReciever(
             env);

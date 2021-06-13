@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.bottombar.contextualsearch;
+package org.monyhar.chrome.browser.compositor.bottombar.contextualsearch;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -13,16 +13,16 @@ import android.widget.Button;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.MathUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanel;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanelAnimation;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanelInflater;
-import org.chromium.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchPanel.ContextualSearchHelpSectionHost;
-import org.chromium.chrome.browser.layouts.animation.CompositorAnimator;
-import org.chromium.ui.base.LocalizationUtils;
-import org.chromium.ui.resources.dynamics.DynamicResourceLoader;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.MathUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanel;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanelAnimation;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanelInflater;
+import org.monyhar.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchPanel.ContextualSearchHelpSectionHost;
+import org.monyhar.chrome.browser.layouts.animation.CompositorAnimator;
+import org.monyhar.ui.base.LocalizationUtils;
+import org.monyhar.ui.resources.dynamics.DynamicResourceLoader;
 
 /**
  * Controls a section of the Panel that provides end user help messages.

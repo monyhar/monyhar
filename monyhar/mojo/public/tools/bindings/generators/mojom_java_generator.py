@@ -37,28 +37,28 @@ GENERATOR_PREFIX = 'java'
 
 _spec_to_java_type = {
   mojom.BOOL.spec: 'boolean',
-  mojom.DCPIPE.spec: 'org.chromium.mojo.system.DataPipe.ConsumerHandle',
+  mojom.DCPIPE.spec: 'org.monyhar.mojo.system.DataPipe.ConsumerHandle',
   mojom.DOUBLE.spec: 'double',
-  mojom.DPPIPE.spec: 'org.chromium.mojo.system.DataPipe.ProducerHandle',
+  mojom.DPPIPE.spec: 'org.monyhar.mojo.system.DataPipe.ProducerHandle',
   mojom.FLOAT.spec: 'float',
-  mojom.HANDLE.spec: 'org.chromium.mojo.system.UntypedHandle',
+  mojom.HANDLE.spec: 'org.monyhar.mojo.system.UntypedHandle',
   mojom.INT16.spec: 'short',
   mojom.INT32.spec: 'int',
   mojom.INT64.spec: 'long',
   mojom.INT8.spec: 'byte',
-  mojom.MSGPIPE.spec: 'org.chromium.mojo.system.MessagePipeHandle',
-  mojom.PLATFORMHANDLE.spec: 'org.chromium.mojo.system.UntypedHandle',
+  mojom.MSGPIPE.spec: 'org.monyhar.mojo.system.MessagePipeHandle',
+  mojom.PLATFORMHANDLE.spec: 'org.monyhar.mojo.system.UntypedHandle',
   mojom.NULLABLE_DCPIPE.spec:
-      'org.chromium.mojo.system.DataPipe.ConsumerHandle',
+      'org.monyhar.mojo.system.DataPipe.ConsumerHandle',
   mojom.NULLABLE_DPPIPE.spec:
-      'org.chromium.mojo.system.DataPipe.ProducerHandle',
-  mojom.NULLABLE_HANDLE.spec: 'org.chromium.mojo.system.UntypedHandle',
-  mojom.NULLABLE_MSGPIPE.spec: 'org.chromium.mojo.system.MessagePipeHandle',
-  mojom.NULLABLE_PLATFORMHANDLE.spec: 'org.chromium.mojo.system.UntypedHandle',
+      'org.monyhar.mojo.system.DataPipe.ProducerHandle',
+  mojom.NULLABLE_HANDLE.spec: 'org.monyhar.mojo.system.UntypedHandle',
+  mojom.NULLABLE_MSGPIPE.spec: 'org.monyhar.mojo.system.MessagePipeHandle',
+  mojom.NULLABLE_PLATFORMHANDLE.spec: 'org.monyhar.mojo.system.UntypedHandle',
   mojom.NULLABLE_SHAREDBUFFER.spec:
-      'org.chromium.mojo.system.SharedBufferHandle',
+      'org.monyhar.mojo.system.SharedBufferHandle',
   mojom.NULLABLE_STRING.spec: 'String',
-  mojom.SHAREDBUFFER.spec: 'org.chromium.mojo.system.SharedBufferHandle',
+  mojom.SHAREDBUFFER.spec: 'org.monyhar.mojo.system.SharedBufferHandle',
   mojom.STRING.spec: 'String',
   mojom.UINT16.spec: 'short',
   mojom.UINT32.spec: 'int',
@@ -164,11 +164,11 @@ def GetArrayNullabilityFlags(kind):
     """
   assert mojom.IsArrayKind(kind)
   ARRAY_NULLABLE   = \
-      'org.chromium.mojo.bindings.BindingsHelper.ARRAY_NULLABLE'
+      'org.monyhar.mojo.bindings.BindingsHelper.ARRAY_NULLABLE'
   ELEMENT_NULLABLE = \
-      'org.chromium.mojo.bindings.BindingsHelper.ELEMENT_NULLABLE'
+      'org.monyhar.mojo.bindings.BindingsHelper.ELEMENT_NULLABLE'
   NOTHING_NULLABLE = \
-      'org.chromium.mojo.bindings.BindingsHelper.NOTHING_NULLABLE'
+      'org.monyhar.mojo.bindings.BindingsHelper.NOTHING_NULLABLE'
 
   flags_to_set = []
   if mojom.IsNullableKind(kind):
@@ -237,8 +237,8 @@ def GetPackage(module):
     return ParseStringAttribute(module.attributes['JavaPackage'])
   # Default package.
   if module.namespace:
-    return 'org.chromium.' + module.namespace
-  return 'org.chromium'
+    return 'org.monyhar.' + module.namespace
+  return 'org.monyhar'
 
 def GetNameForKind(context, kind):
   def _GetNameHierachy(kind):
@@ -276,14 +276,14 @@ def GetJavaType(context, kind, boxed=False, with_generics=True):
   if mojom.IsPendingRemoteKind(kind):
     return GetNameForKind(context, kind.kind)
   if mojom.IsInterfaceRequestKind(kind) or mojom.IsPendingReceiverKind(kind):
-    return ('org.chromium.mojo.bindings.InterfaceRequest<%s>' %
+    return ('org.monyhar.mojo.bindings.InterfaceRequest<%s>' %
             GetNameForKind(context, kind.kind))
   if (mojom.IsAssociatedInterfaceKind(kind) or
       mojom.IsPendingAssociatedRemoteKind(kind)):
-    return 'org.chromium.mojo.bindings.AssociatedInterfaceNotSupported'
+    return 'org.monyhar.mojo.bindings.AssociatedInterfaceNotSupported'
   if (mojom.IsAssociatedInterfaceRequestKind(kind) or
       mojom.IsPendingAssociatedReceiverKind(kind)):
-    return 'org.chromium.mojo.bindings.AssociatedInterfaceRequestNotSupported'
+    return 'org.monyhar.mojo.bindings.AssociatedInterfaceRequestNotSupported'
   if mojom.IsMapKind(kind):
     if with_generics:
       return 'java.util.Map<%s, %s>' % (
@@ -375,7 +375,7 @@ def GetArrayExpectedLength(kind):
   if mojom.IsArrayKind(kind) and kind.length is not None:
     return getattr(kind, 'java_map_size', str(kind.length))
   else:
-    return 'org.chromium.mojo.bindings.BindingsHelper.UNSPECIFIED_ARRAY_LENGTH'
+    return 'org.monyhar.mojo.bindings.BindingsHelper.UNSPECIFIED_ARRAY_LENGTH'
 
 def IsPointerArrayKind(kind):
   if not mojom.IsArrayKind(kind):

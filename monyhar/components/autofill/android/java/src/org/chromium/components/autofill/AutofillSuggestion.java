@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.autofill;
+package org.monyhar.components.autofill;
 
-import org.chromium.ui.DropdownItemBase;
+import org.monyhar.ui.DropdownItemBase;
 
 /**
  * Autofill suggestion container used to store information needed for each Autofill popup entry.

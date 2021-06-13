@@ -157,7 +157,7 @@ that need to happen in the API surface during the primary review.
 #### Code Concepts
 TODO(devlin): Incorporate the below into this article.
 
-This [article](https://www.chromium.org/developers/design-documents/extensions/proposed-changes/creating-new-apis)
+This [article](https://www.monyhar.org/developers/design-documents/extensions/proposed-changes/creating-new-apis)
 describes a number of different code concepts, and can be useful for some of
 the high-level approaches.  Note that some of this is outdated.
 

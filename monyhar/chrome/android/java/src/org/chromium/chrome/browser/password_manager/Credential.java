@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_manager;
+package org.monyhar.chrome.browser.password_manager;
 
 import android.graphics.drawable.Drawable;
 
-import org.chromium.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.CalledByNative;
 
 /**
  * Credential type which is used to represent credential which will be shown in account chooser

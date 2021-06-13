@@ -46,7 +46,7 @@ class FlakyTests(Command):
         '#testType=blink_web_tests&tests=%s')
 
     BUG_TEMPLATE = (
-        'https://code.google.com/p/chromium/issues/entry?owner=FILL_ME_IN&status=Assigned&'
+        'https://code.google.com/p/monyhar/issues/entry?owner=FILL_ME_IN&status=Assigned&'
         'labels=Pri-1,Cr-Blink,FlakyLayoutTest&summary=XXXXXXX%20is%20flaky&'
         'comment=XXXXXXX%20is%20flaky.%0A%0AIt%20failed%20twice%20and%20then'
         '%20passed%20on%20the%203rd%20or%204th%20retry.%20This%20is%20too%20'

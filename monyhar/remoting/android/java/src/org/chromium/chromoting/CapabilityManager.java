@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting;
+package org.monyhar.chromoting;
 
 import android.app.Activity;
 import android.text.TextUtils;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -191,7 +191,7 @@ public class CapabilityManager {
      */
     private ClientExtension maybeCreateCastExtensionHandler() {
         try {
-            Class<?> cls = Class.forName("org.chromium.chromoting.CastExtensionHandler");
+            Class<?> cls = Class.forName("org.monyhar.chromoting.CastExtensionHandler");
             return (ClientExtension) cls.newInstance();
         } catch (ClassNotFoundException e) {
             Log.w(TAG, "Failed to create CastExtensionHandler.");

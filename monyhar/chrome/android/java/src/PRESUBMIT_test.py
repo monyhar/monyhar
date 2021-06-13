@@ -36,11 +36,11 @@ class CheckNotificationConstructors(unittest.TestCase):
     mock_input = MockInputApi()
     mock_input.files = [
         MockFile(
-            'chrome/android/java/src/org/chromium/chrome/browser/notifications/'
+            'chrome/android/java/src/org/monyhar/chrome/browser/notifications/'
             'ChromeNotificationWrapperBuilder.java',
             ['new Notification.Builder()']),
         MockFile(
-            'chrome/android/java/src/org/chromium/chrome/browser/notifications/'
+            'chrome/android/java/src/org/monyhar/chrome/browser/notifications/'
             'ChromeNotificationWrapperCompatBuilder.java',
             ['new NotificationCompat.Builder()']),
         MockFile('path/One.java', ['Notification.Builder']),
@@ -132,7 +132,7 @@ class CheckCompatibleAlertDialogBuilder(unittest.TestCase):
     mock_input.files = [
         MockFile('path/One.java',
                  ['import '
-                  'org.chromium.ui.UiUtils.CompatibleAlertDialogBuilder;',
+                  'org.monyhar.ui.UiUtils.CompatibleAlertDialogBuilder;',
                   'new CompatibleAlertDialogBuilder()',
                   'A new line to make sure there is no duplicate error.']),
         MockFile('path/Two.java',
@@ -157,7 +157,7 @@ class CheckCompatibleAlertDialogBuilder(unittest.TestCase):
     """Examples of when AlertDialog.Builder should not be flagged."""
     mock_input = MockInputApi()
     mock_input.files = [
-        MockFile('chrome/android/java/src/org/chromium/chrome/browser/payments/'
+        MockFile('chrome/android/java/src/org/monyhar/chrome/browser/payments/'
                  'AndroidPaymentApp.java',
                  ['new UiUtils.CompatibleAlertDialogBuilder()']),
         MockFile('path/One.java', ['UiUtils.CompatibleAlertDialogBuilder']),

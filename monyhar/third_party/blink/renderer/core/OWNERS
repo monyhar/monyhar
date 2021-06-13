@@ -1,73 +1,73 @@
 # Please prefer to use more specific OWNERS if possible.
 # For example, core/rendering/OWNERS for rendering changes.
 
-# New owners should be proposed by email to blink-core-owners-discuss@chromium.org,
+# New owners should be proposed by email to blink-core-owners-discuss@monyhar.org,
 # similar to the committer nomination process.
-# Once accepted, new owners should also be added to blink-core-owners-discuss@chromium.org.
-# https://groups.google.com/a/chromium.org/g/blink-core-owners-discuss
+# Once accepted, new owners should also be added to blink-core-owners-discuss@monyhar.org.
+# https://groups.google.com/a/monyhar.org/g/blink-core-owners-discuss
 
 # Reviewers (comments indicate areas of expertise):
 alexis.menard@intel.com
 almaher@microsoft.com
 # bokan reviews changes around viewport behavior, scrolling, cc/blink interaction, co-ordinate spaces and input events
-bokan@chromium.org
-cbiesinger@chromium.org
-chrishtr@chromium.org
-clamy@chromium.org
-dcheng@chromium.org
-dgozman@chromium.org
+bokan@monyhar.org
+cbiesinger@monyhar.org
+chrishtr@monyhar.org
+clamy@monyhar.org
+dcheng@monyhar.org
+dgozman@monyhar.org
 dlibby@microsoft.com
 # drott reviews font specific changes.
-drott@chromium.org
+drott@monyhar.org
 # dtapuska reviews input-related changes
-dtapuska@chromium.org
-enne@chromium.org
+dtapuska@monyhar.org
+enne@monyhar.org
 # flackr reviews animation- and scrolling-related changes.
-flackr@chromium.org
-fmalita@chromium.org
+flackr@monyhar.org
+fmalita@monyhar.org
 # foolip reviews <video>, <track>, WebVTT and Fullscreen.
-foolip@chromium.org
+foolip@monyhar.org
 fs@opera.com
-fserb@chromium.org
-futhark@chromium.org
+fserb@monyhar.org
+futhark@monyhar.org
 fwang@igalia.com
-haraken@chromium.org
-hayato@chromium.org
-hiroshige@chromium.org
-ikilpatrick@chromium.org
-japhet@chromium.org
-jarhar@chromium.org
-jbroman@chromium.org
+haraken@monyhar.org
+hayato@monyhar.org
+hiroshige@monyhar.org
+ikilpatrick@monyhar.org
+japhet@monyhar.org
+jarhar@monyhar.org
+jbroman@monyhar.org
 jfernandez@igalia.com
-jochen@chromium.org
-junov@chromium.org
-kbr@chromium.org
-keishi@chromium.org
-kinuko@chromium.org
-kojii@chromium.org
-kouhei@chromium.org
-masonf@chromium.org
-mkwst@chromium.org
-mstensho@chromium.org
-nhiroki@chromium.org
+jochen@monyhar.org
+junov@monyhar.org
+kbr@monyhar.org
+keishi@monyhar.org
+kinuko@monyhar.org
+kojii@monyhar.org
+kouhei@monyhar.org
+masonf@monyhar.org
+mkwst@monyhar.org
+mstensho@monyhar.org
+nhiroki@monyhar.org
 obrufau@igalia.com
 # pdr reviews many svg and text autosizing patches.
-pdr@chromium.org
-pfeldman@chromium.org
-pkasting@chromium.org
+pdr@monyhar.org
+pfeldman@monyhar.org
+pkasting@monyhar.org
 rego@igalia.com
 rbuis@igalia.com
 robhogan@gmail.com
-schenney@chromium.org
-senorblanco@chromium.org
-skobes@chromium.org
+schenney@monyhar.org
+senorblanco@monyhar.org
+skobes@monyhar.org
 svillar@igalia.com
-szager@chromium.org
-thakis@chromium.org
-tkent@chromium.org
-vmpstr@chromium.org
-vollick@chromium.org
-wangxianzhu@chromium.org
-yhirano@chromium.org
-yoavweiss@chromium.org
-yutak@chromium.org
+szager@monyhar.org
+thakis@monyhar.org
+tkent@monyhar.org
+vmpstr@monyhar.org
+vollick@monyhar.org
+wangxianzhu@monyhar.org
+yhirano@monyhar.org
+yoavweiss@monyhar.org
+yutak@monyhar.org

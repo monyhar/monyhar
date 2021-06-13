@@ -34,16 +34,16 @@ namespace chromeos {
 namespace {
 
 const char kDefaultCellularDevicePath[] = "test_cellular_device";
-const char kDefaultEuiccPath[] = "/org/chromium/Hermes/Euicc/0";
+const char kDefaultEuiccPath[] = "/org/monyhar/Hermes/Euicc/0";
 const char kDefaultEid[] = "12345678901234567890123456789012";
 
-const char kTestCarrierProfilePath[] = "/org/chromium/Hermes/Profile/123";
+const char kTestCarrierProfilePath[] = "/org/monyhar/Hermes/Profile/123";
 const char kTestNetworkServicePath[] = "/service/cellular123";
 const char kTestCellularIccid[] = "100000000000000001";
 const char kTestProfileName[] = "TestCellularNetwork";
 const char kTestServiceProvider[] = "Test Wireless";
 
-const char kTestCarrierProfilePath2[] = "/org/chromium/Hermes/Profile/124";
+const char kTestCarrierProfilePath2[] = "/org/monyhar/Hermes/Profile/124";
 const char kTestNetworkServicePath2[] = "/service/cellular124";
 const char kTestCellularIccid2[] = "100000000000000002";
 

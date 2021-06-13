@@ -91,13 +91,13 @@ def main(argv):
   parser = OptionParser()
   parser.add_option(
       "--output-dir",
-      help="Output directory for generated files. Defaults to chromium root "
+      help="Output directory for generated files. Defaults to monyhar root "
       "directory.")
   parser.add_option(
       "-v", "--verbose", action="store_true", help="Verbose logging output.")
   parser.add_option(
       "-c", "--check", action="store_true",
-      help="Check if output files match generated files in chromium root "
+      help="Check if output files match generated files in monyhar root "
       "directory.  Use this in PRESUBMIT scripts with --output-dir.")
 
   (options, _) = parser.parse_args(args=argv)
@@ -106,20 +106,20 @@ def main(argv):
   script_dir = os.path.dirname(os.path.abspath(__file__))
   assert script_dir.endswith(os.path.normpath("src/gpu/command_buffer"))
   # os.path.join doesn't do the right thing with relative paths.
-  chromium_root_dir = os.path.abspath(script_dir + "/../..")
+  monyhar_root_dir = os.path.abspath(script_dir + "/../..")
 
   # Support generating files under gen/ and for PRESUBMIT.
   if options.output_dir:
     output_dir = options.output_dir
   else:
-    output_dir = chromium_root_dir
+    output_dir = monyhar_root_dir
   os.chdir(output_dir)
 
   # This script lives under gpu/command_buffer, cd to base directory.
   build_cmd_buffer_lib.InitializePrefix("WebGPU")
   gen = build_cmd_buffer_lib.GLGenerator(
       options.verbose, "2018", _FUNCTION_INFO, _NAMED_TYPE_INFO,
-      chromium_root_dir)
+      monyhar_root_dir)
   gen.ParseGLH("gpu/command_buffer/webgpu_cmd_buffer_functions.txt")
 
   gen.WriteCommandIds("gpu/command_buffer/common/webgpu_cmd_ids_autogen.h")
@@ -149,7 +149,7 @@ def main(argv):
     "webgpu_cmd_validation_implementation_autogen.h")
 
   build_cmd_buffer_lib.Format(gen.generated_cpp_filenames, output_dir,
-                              chromium_root_dir)
+                              monyhar_root_dir)
 
   if gen.errors > 0:
     print "build_webgpu_cmd_buffer.py: Failed with %d errors" % gen.errors
@@ -159,7 +159,7 @@ def main(argv):
   if options.check:
     for filename in gen.generated_cpp_filenames:
       if not filecmp.cmp(os.path.join(output_dir, filename),
-                         os.path.join(chromium_root_dir, filename)):
+                         os.path.join(monyhar_root_dir, filename)):
         check_failed_filenames.append(filename)
 
   if len(check_failed_filenames) > 0:

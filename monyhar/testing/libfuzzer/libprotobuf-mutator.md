@@ -3,7 +3,7 @@
 *** note
 **Note:** Writing grammar fuzzers with libprotobuf-mutator requires greater
 effort than writing fuzzers with libFuzzer alone. If you run into problems, send
-an email to [fuzzing@chromium.org] for help.
+an email to [fuzzing@monyhar.org] for help.
 
 **Prerequisites:** Knowledge of [libFuzzer in Chromium] and basic understanding
 of [Protocol Buffers].
@@ -361,9 +361,9 @@ fuzzer).
 
 [libfuzzer in Chromium]: getting_started.md
 [Protocol Buffers]: https://developers.google.com/protocol-buffers/docs/cpptutorial
-[fuzzing@chromium.org]: mailto:fuzzing@chromium.org
+[fuzzing@monyhar.org]: mailto:fuzzing@monyhar.org
 [this]: https://github.com/google/libprotobuf-mutator/tree/master/examples/libfuzzer/libfuzzer_example.cc
-[existing proto fuzzers]: https://cs.chromium.org/search/?q=DEFINE_(BINARY_%7CTEXT_)?PROTO_FUZZER+-file:src/third_party/libprotobuf-mutator/src/src/libfuzzer/libfuzzer_macro.h+lang:cpp&sq=package:chromium&type=cs
+[existing proto fuzzers]: https://cs.monyhar.org/search/?q=DEFINE_(BINARY_%7CTEXT_)?PROTO_FUZZER+-file:src/third_party/libprotobuf-mutator/src/src/libfuzzer/libfuzzer_macro.h+lang:cpp&sq=package:monyhar&type=cs
 [here]: https://github.com/google/libprotobuf-mutator/blob/master/README.md#utf-8-strings
-[lpm_test_fuzzer]: https://cs.chromium.org/#search&q=lpm_test_fuzzer+file:%5Esrc/third_party/libprotobuf-mutator/BUILD.gn
-[mojo_parse_messages_proto_fuzzer]: https://cs.chromium.org/chromium/src/mojo/public/tools/fuzzers/mojo_parse_message_proto_fuzzer.cc?l=25
+[lpm_test_fuzzer]: https://cs.monyhar.org/#search&q=lpm_test_fuzzer+file:%5Esrc/third_party/libprotobuf-mutator/BUILD.gn
+[mojo_parse_messages_proto_fuzzer]: https://cs.monyhar.org/monyhar/src/mojo/public/tools/fuzzers/mojo_parse_message_proto_fuzzer.cc?l=25

@@ -20,7 +20,7 @@
 
 namespace {
 // URL to load in WebStates.
-const char kURL[] = "https://chromium.org";
+const char kURL[] = "https://monyhar.org";
 }
 
 class WebUsageEnablerBrowserAgentTest : public PlatformTest {

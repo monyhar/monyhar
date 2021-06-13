@@ -2,8 +2,8 @@
 //:blink_tests
 //:blink_web_tests
 //:blink_web_tests_exparchive
-//:chromium_builder_asan
-//:chromium_builder_perf
+//:monyhar_builder_asan
+//:monyhar_builder_perf
 //:gn_all
 //:run_web_tests
 //apps:apps

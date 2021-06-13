@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.util;
+package org.monyhar.chrome.browser.util;
 
 import android.content.Context;
 import android.text.Spannable;
@@ -10,7 +10,7 @@ import android.text.SpannableString;
 import android.text.format.Formatter;
 import android.text.style.TtsSpan;
 
-import org.chromium.components.browser_ui.util.ConversionUtils;
+import org.monyhar.components.browser_ui.util.ConversionUtils;
 
 /**
  * Helper functions for file size info that is shown to the user.

@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.signin.identitymanager;
+package org.monyhar.components.signin.identitymanager;
 
-import org.chromium.base.Promise;
-import org.chromium.components.signin.base.AccountInfo;
+import org.monyhar.base.Promise;
+import org.monyhar.components.signin.base.AccountInfo;
 
 /**
  * This interface handles the {@link AccountInfo} fetch on Java side.

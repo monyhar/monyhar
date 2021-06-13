@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.settings;
+package org.monyhar.chrome.browser.settings;
 
 import android.app.Activity;
 import android.content.Context;
@@ -12,8 +12,8 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
 
 /**
  * Implementation class for launching a {@link SettingsActivity}.

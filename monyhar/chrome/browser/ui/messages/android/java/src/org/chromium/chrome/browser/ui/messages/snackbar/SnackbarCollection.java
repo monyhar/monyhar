@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui.messages.snackbar;
+package org.monyhar.chrome.browser.ui.messages.snackbar;
 
 import android.text.TextUtils;
 
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager.SnackbarController;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager.SnackbarController;
 
 import java.util.Deque;
 import java.util.Iterator;

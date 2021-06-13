@@ -6,7 +6,7 @@
  * Tests to verify that NetError.java is created succesfully.
  */
 
-package org.chromium.net;
+package org.monyhar.net;
 
 import androidx.test.filters.SmallTest;
 
@@ -14,9 +14,9 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.Feature;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.Feature;
 
 @RunWith(BaseJUnit4ClassRunner.class)
 @Batch(Batch.UNIT_TESTS)

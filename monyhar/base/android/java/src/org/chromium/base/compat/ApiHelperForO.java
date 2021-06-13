@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.compat;
+package org.monyhar.base.compat;
 
 import android.animation.ValueAnimator;
 import android.annotation.TargetApi;
@@ -23,8 +23,8 @@ import android.view.View;
 import android.view.Window;
 import android.view.autofill.AutofillManager;
 
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.annotations.VerifiesOnO;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.annotations.VerifiesOnO;
 
 /**
  * Utility class to use new APIs that were added in O (API level 26). These need to exist in a

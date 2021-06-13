@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui.android.webid;
+package org.monyhar.chrome.browser.ui.android.webid;
 
 import android.content.Context;
 
-import org.chromium.chrome.browser.ui.android.webid.data.Account;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.chrome.browser.ui.android.webid.data.Account;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
 
 import java.util.List;
 

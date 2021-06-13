@@ -203,7 +203,7 @@ std::vector<std::string> ModuleSnapshotWin::AnnotationsVector() const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
   // These correspond to system-logged things on Mac. We don't currently track
   // any of these on Windows, but could in the future. See
-  // https://crashpad.chromium.org/bug/38.
+  // https://crashpad.monyhar.org/bug/38.
   return std::vector<std::string>();
 }
 

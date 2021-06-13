@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.gcore;
+package org.monyhar.chrome.test.gcore;
 
 import static junit.framework.Assert.assertEquals;
 
-import org.chromium.chrome.browser.gcore.ChromeGoogleApiClient;
+import org.monyhar.chrome.browser.gcore.ChromeGoogleApiClient;
 
 /**
  * Mock of ChromeGoogleApiClient that tracks which methods are called.

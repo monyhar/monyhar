@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.explore_sites;
+package org.monyhar.chrome.browser.explore_sites;
 
 import android.app.Activity;
 import android.content.Context;
@@ -18,29 +18,29 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.native_page.ContextMenuManager;
-import org.chromium.chrome.browser.native_page.NativePageNavigationDelegate;
-import org.chromium.chrome.browser.native_page.NativePageNavigationDelegateImpl;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabObserver;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.ui.native_page.BasicNativePage;
-import org.chromium.chrome.browser.ui.native_page.NativePageHost;
-import org.chromium.components.browser_ui.widget.RoundedIconGenerator;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.content_public.browser.NavigationController;
-import org.chromium.content_public.browser.NavigationEntry;
-import org.chromium.ui.modelutil.ListModel;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.RecyclerViewAdapter;
-import org.chromium.url.GURL;
-import org.chromium.url.URI;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.native_page.ContextMenuManager;
+import org.monyhar.chrome.browser.native_page.NativePageNavigationDelegate;
+import org.monyhar.chrome.browser.native_page.NativePageNavigationDelegateImpl;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabObserver;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.ui.native_page.BasicNativePage;
+import org.monyhar.chrome.browser.ui.native_page.NativePageHost;
+import org.monyhar.components.browser_ui.widget.RoundedIconGenerator;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.content_public.browser.NavigationController;
+import org.monyhar.content_public.browser.NavigationEntry;
+import org.monyhar.ui.modelutil.ListModel;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.RecyclerViewAdapter;
+import org.monyhar.url.GURL;
+import org.monyhar.url.URI;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

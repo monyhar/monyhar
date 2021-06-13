@@ -253,12 +253,12 @@ ios_framework_bundle("ochamcrest") {
   ]
 
   configs -= [
-    "//build/config/compiler:chromium_code",
+    "//build/config/compiler:monyhar_code",
     "//build/config/gcc:symbol_visibility_hidden",
   ]
   configs += [
     "//build/config/compiler:enable_arc",
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     "//build/config/gcc:symbol_visibility_default",
   ]
 }

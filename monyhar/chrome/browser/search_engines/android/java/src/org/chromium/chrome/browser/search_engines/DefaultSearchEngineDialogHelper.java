@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.search_engines;
+package org.monyhar.chrome.browser.search_engines;
 
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -12,8 +12,8 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.components.browser_ui.widget.RadioButtonLayout;
-import org.chromium.components.search_engines.TemplateUrl;
+import org.monyhar.components.browser_ui.widget.RadioButtonLayout;
+import org.monyhar.components.search_engines.TemplateUrl;
 
 import java.util.ArrayList;
 import java.util.Collections;

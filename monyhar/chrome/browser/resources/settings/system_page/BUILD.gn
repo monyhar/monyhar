@@ -19,7 +19,7 @@ js_library("system_page") {
   deps = [
     ":system_page_browser_proxy",
     "..:lifetime_browser_proxy",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   externs_list = [ "$externs_path/settings_private.js" ]
 }

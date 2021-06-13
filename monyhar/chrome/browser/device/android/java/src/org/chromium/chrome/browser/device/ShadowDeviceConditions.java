@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.device;
+package org.monyhar.chrome.browser.device;
 
 import android.content.Context;
 
 import org.robolectric.annotation.Implementation;
 import org.robolectric.annotation.Implements;
 
-import org.chromium.net.ConnectionType;
+import org.monyhar.net.ConnectionType;
 
 /** Custom shadow for the OfflinePageUtils. */
 @Implements(DeviceConditions.class)

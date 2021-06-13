@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.test;
+package org.monyhar.net.test;
 
-import org.chromium.net.UrlResponseInfo;
+import org.monyhar.net.UrlResponseInfo;
 
 import java.io.UnsupportedEncodingException;
 import java.util.AbstractMap;

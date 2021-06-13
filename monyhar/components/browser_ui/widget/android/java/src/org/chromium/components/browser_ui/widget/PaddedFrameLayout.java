@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget;
+package org.monyhar.components.browser_ui.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -12,11 +12,11 @@ import android.widget.FrameLayout;
 /**
  * A layout for displaying a View with padding, borders, and a maximum width and/or height. E.g.:
  *
- *   <org.chromium.components.browser_ui.widget.PaddedFrameLayout
+ *   <org.monyhar.components.browser_ui.widget.PaddedFrameLayout
  *       chrome:maxChildWidth="200dp"
  *       chrome:maxChildHeight="400dp">
  *       ... contents here ...
- *   </org.chromium.components.browser_ui.widget.PaddedFrameLayout>
+ *   </org.monyhar.components.browser_ui.widget.PaddedFrameLayout>
  */
 public class PaddedFrameLayout extends FrameLayout {
     // Value for mMaxChildWidth or mMaxChildHeight to specify that the width or height should

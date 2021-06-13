@@ -1,7 +1,7 @@
-diff --git a/components-chromium/polymer/polymer.d.ts b/components-chromium/polymer/polymer.d.ts
+diff --git a/components-monyhar/polymer/polymer.d.ts b/components-monyhar/polymer/polymer.d.ts
 index a9f1aa64c5b8..a202c7fb06ba 100644
---- a/components-chromium/polymer/polymer.d.ts
-+++ b/components-chromium/polymer/polymer.d.ts
+--- a/components-monyhar/polymer/polymer.d.ts
++++ b/components-monyhar/polymer/polymer.d.ts
 @@ -24,8 +24,6 @@ export {Debouncer, enqueueDebouncer} from './lib/utils/debounce.js';
  export {html} from './lib/utils/html-tag.js';
  export {matches, translate} from './lib/utils/path.js';

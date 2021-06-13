@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox;
+package org.monyhar.chrome.browser.omnibox;
 
 import android.content.res.Configuration;
 import android.graphics.Rect;
@@ -12,7 +12,7 @@ import android.view.WindowManager;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.ui.base.WindowDelegate;
+import org.monyhar.ui.base.WindowDelegate;
 
 /**
  * Helps to detect whether the virtual keyboard was hidden to allow unfocusing of the omnibox.

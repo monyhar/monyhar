@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.testing.local;
+package org.monyhar.testing.local;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -32,14 +32,14 @@ public class PackageFilterTest {
 
     @Test
     public void testFilterHit() {
-        Filter filterUnderTest = new PackageFilter("org.chromium.testing.local");
+        Filter filterUnderTest = new PackageFilter("org.monyhar.testing.local");
         Assert.assertTrue(filterUnderTest.shouldRun(
                 Description.createTestDescription(PackageFilterTest.class, "testWithFilter")));
     }
 
     @Test
     public void testFilterMiss() {
-        Filter filterUnderTest = new PackageFilter("org.chromium.native_test");
+        Filter filterUnderTest = new PackageFilter("org.monyhar.native_test");
         Assert.assertFalse(filterUnderTest.shouldRun(
                 Description.createTestDescription(PackageFilterTest.class, "testWithFilter")));
     }

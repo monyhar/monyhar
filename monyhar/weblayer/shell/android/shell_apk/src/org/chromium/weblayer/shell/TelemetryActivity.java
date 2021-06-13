@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer.shell;
+package org.monyhar.weblayer.shell;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -21,14 +21,14 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import org.chromium.weblayer.Browser;
-import org.chromium.weblayer.Navigation;
-import org.chromium.weblayer.NavigationCallback;
-import org.chromium.weblayer.Profile;
-import org.chromium.weblayer.Tab;
-import org.chromium.weblayer.TabCallback;
-import org.chromium.weblayer.UnsupportedVersionException;
-import org.chromium.weblayer.WebLayer;
+import org.monyhar.weblayer.Browser;
+import org.monyhar.weblayer.Navigation;
+import org.monyhar.weblayer.NavigationCallback;
+import org.monyhar.weblayer.Profile;
+import org.monyhar.weblayer.Tab;
+import org.monyhar.weblayer.TabCallback;
+import org.monyhar.weblayer.UnsupportedVersionException;
+import org.monyhar.weblayer.WebLayer;
 
 import java.util.List;
 

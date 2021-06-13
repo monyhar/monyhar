@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import android.content.Intent;
 
@@ -14,10 +14,10 @@ import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.chrome.browser.AppHooksModule;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.dependency_injection.ModuleOverridesRule;
-import org.chromium.components.externalauth.ExternalAuthUtils;
+import org.monyhar.chrome.browser.AppHooksModule;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.dependency_injection.ModuleOverridesRule;
+import org.monyhar.components.externalauth.ExternalAuthUtils;
 
 import java.util.concurrent.TimeoutException;
 

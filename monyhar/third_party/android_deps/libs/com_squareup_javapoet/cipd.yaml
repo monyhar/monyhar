@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@1.13.0.cr0
-package: chromium/third_party/android_deps/libs/com_squareup_javapoet
+package: monyhar/third_party/android_deps/libs/com_squareup_javapoet
 description: "JavaPoet"
 data:
 - file: javapoet-1.13.0.jar

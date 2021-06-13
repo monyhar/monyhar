@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.payments;
+package org.monyhar.components.payments;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.content_public.browser.RenderFrameHost;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.url.Origin;
+import org.monyhar.content_public.browser.RenderFrameHost;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.url.Origin;
 
 /** Interface for providing information to a payment app factory. */
 public interface PaymentAppFactoryParams extends PaymentRequestParams {

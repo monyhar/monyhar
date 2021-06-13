@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.tile;
+package org.monyhar.components.browser_ui.widget.tile;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -11,7 +11,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.chromium.components.browser_ui.widget.R;
+import org.monyhar.components.browser_ui.widget.R;
 
 /**
  * The view for a tile with icon and text.

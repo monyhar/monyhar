@@ -7,7 +7,7 @@
 
 namespace vr {
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.vr
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.vr
 enum class UiUnsupportedMode : int {
   kUnhandledCodePoint = 0,
   // kCouldNotElideURL = 1,  // Obsolete.

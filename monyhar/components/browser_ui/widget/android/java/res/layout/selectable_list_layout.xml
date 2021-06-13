@@ -46,7 +46,7 @@
             android:layout_marginEnd="@dimen/default_list_row_padding"
             android:visibility="gone">
 
-            <org.chromium.ui.widget.TextViewWithLeading
+            <org.monyhar.ui.widget.TextViewWithLeading
                 android:id="@+id/empty_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -59,14 +59,14 @@
 
         </FrameLayout>
 
-        <org.chromium.ui.widget.LoadingView
+        <org.monyhar.ui.widget.LoadingView
             android:id="@+id/loading_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center" />
     </FrameLayout>
 
-    <org.chromium.components.browser_ui.widget.FadingShadowView
+    <org.monyhar.components.browser_ui.widget.FadingShadowView
         android:id="@+id/shadow"
         android:layout_width="match_parent"
         android:layout_height="@dimen/action_bar_shadow_height"

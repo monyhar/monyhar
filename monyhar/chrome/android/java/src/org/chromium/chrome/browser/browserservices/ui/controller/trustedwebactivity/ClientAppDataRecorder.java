@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.ui.controller.trustedwebactivity;
+package org.monyhar.chrome.browser.browserservices.ui.controller.trustedwebactivity;
 
-import static org.chromium.chrome.browser.dependency_injection.ChromeCommonQualifiers.APP_CONTEXT;
+import static org.monyhar.chrome.browser.dependency_injection.ChromeCommonQualifiers.APP_CONTEXT;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.text.TextUtils;
 
-import org.chromium.base.Log;
-import org.chromium.chrome.browser.browserservices.ClientAppDataRegister;
-import org.chromium.chrome.browser.dependency_injection.ActivityScope;
-import org.chromium.components.embedder_support.util.Origin;
-import org.chromium.components.embedder_support.util.UrlUtilities;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.browser.browserservices.ClientAppDataRegister;
+import org.monyhar.chrome.browser.dependency_injection.ActivityScope;
+import org.monyhar.components.embedder_support.util.Origin;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
 
 import java.util.HashSet;
 import java.util.Set;

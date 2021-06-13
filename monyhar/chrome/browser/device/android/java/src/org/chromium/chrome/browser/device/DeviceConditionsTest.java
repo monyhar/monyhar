@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.device;
+package org.monyhar.chrome.browser.device;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -32,10 +32,10 @@ import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 import org.robolectric.util.ReflectionHelpers;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.net.ConnectionType;
-import org.chromium.net.NetworkChangeNotifier;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.net.ConnectionType;
+import org.monyhar.net.NetworkChangeNotifier;
 
 /** Unit tests for {@link DeviceConditions} class. */
 @RunWith(BaseRobolectricTestRunner.class)

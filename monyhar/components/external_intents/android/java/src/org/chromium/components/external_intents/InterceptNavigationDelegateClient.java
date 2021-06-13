@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.external_intents;
+package org.monyhar.components.external_intents;
 
 import android.app.Activity;
 
-import org.chromium.components.external_intents.ExternalNavigationHandler.OverrideUrlLoadingResult;
-import org.chromium.components.navigation_interception.NavigationParams;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.components.external_intents.ExternalNavigationHandler.OverrideUrlLoadingResult;
+import org.monyhar.components.navigation_interception.NavigationParams;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * An interface via which the embedder provides the context information that

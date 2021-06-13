@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar.menu_button;
+package org.monyhar.chrome.browser.toolbar.menu_button;
 
 import static junit.framework.Assert.assertEquals;
 
@@ -33,10 +33,10 @@ import org.robolectric.Robolectric;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowDrawable;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.omaha.UpdateMenuItemHelper;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.omaha.UpdateMenuItemHelper;
 
 /**
  * Unit tests for MenuButton.
@@ -57,7 +57,7 @@ public class MenuButtonTest {
     public void setUp() {
         MockitoAnnotations.initMocks(this);
         mActivity = Robolectric.buildActivity(Activity.class).setup().get();
-        mActivity.setTheme(org.chromium.chrome.R.style.Theme_MaterialComponents);
+        mActivity.setTheme(org.monyhar.chrome.R.style.Theme_MaterialComponents);
         mMenuButton = (MenuButton) ((ViewGroup) LayoutInflater.from(mActivity).inflate(
                                             R.layout.menu_button, new LinearLayout(mActivity)))
                               .getChildAt(0);

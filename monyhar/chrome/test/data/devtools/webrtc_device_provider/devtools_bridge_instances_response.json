@@ -52,7 +52,7 @@
       "kind": "clouddevices#device",
       "lastUseTimeMs": "1418304532173",
       "name": "Chrome DevTools Bridge",
-      "owner": "...@chromium.org",
+      "owner": "...@monyhar.org",
       "personalizedInfo": {
          "maxRole": "owner"
       },

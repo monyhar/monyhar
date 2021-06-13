@@ -4,7 +4,7 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file.
 -->
-<org.chromium.chrome.browser.firstrun.FirstRunView
+<org.monyhar.chrome.browser.firstrun.FirstRunView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -56,7 +56,7 @@
                     android:layout_marginStart="@dimen/fre_content_margin"
                     android:orientation="vertical" >
 
-                    <org.chromium.ui.widget.TextViewWithClickableSpans
+                    <org.monyhar.ui.widget.TextViewWithClickableSpans
                         android:id="@+id/data_reduction_promo_summary_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -79,7 +79,7 @@
         </LinearLayout>
     </ScrollView>
 
-    <org.chromium.ui.widget.ButtonCompat
+    <org.monyhar.ui.widget.ButtonCompat
         android:id="@+id/next_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -89,4 +89,4 @@
         android:paddingEnd="@dimen/fre_button_padding"
         android:text="@string/next"
         style="@style/FilledButton.Flat" />
-</org.chromium.chrome.browser.firstrun.FirstRunView>
+</org.monyhar.chrome.browser.firstrun.FirstRunView>

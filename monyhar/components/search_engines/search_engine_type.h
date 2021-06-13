@@ -10,7 +10,7 @@
 // numeric values should never be reused.
 //
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.search_engines
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.search_engines
 enum SearchEngineType {
   // Prepopulated engines.
   SEARCH_ENGINE_UNKNOWN = -1,

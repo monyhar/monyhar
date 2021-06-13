@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.previews;
+package org.monyhar.chrome.browser.previews;
 
 import android.app.Activity;
 import android.os.Bundle;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.datareduction.settings.DataReductionPreferenceFragment;
-import org.chromium.chrome.browser.infobar.InfoBarIdentifier;
-import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabUtils;
-import org.chromium.chrome.browser.ui.messages.infobar.SimpleConfirmInfoBarBuilder;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.datareduction.settings.DataReductionPreferenceFragment;
+import org.monyhar.chrome.browser.infobar.InfoBarIdentifier;
+import org.monyhar.chrome.browser.settings.SettingsLauncherImpl;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabUtils;
+import org.monyhar.chrome.browser.ui.messages.infobar.SimpleConfirmInfoBarBuilder;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
 
 /**
  * Common utility API used in java land.

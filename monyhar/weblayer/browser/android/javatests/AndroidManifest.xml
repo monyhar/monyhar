@@ -7,7 +7,7 @@
  -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.chromium.weblayer.tests">
+    package="org.monyhar.weblayer.tests">
   <uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
   <!-- We add an application tag here just so that we can indicate that this
@@ -15,11 +15,11 @@
        needed when building test cases. -->
   <application>
     <uses-library android:name="android.test.runner" />
-    <activity android:name="org.chromium.test.broker.OnDeviceInstrumentationBroker"
+    <activity android:name="org.monyhar.test.broker.OnDeviceInstrumentationBroker"
         android:exported="true"/>
   </application>
 
-  <instrumentation android:name="org.chromium.base.test.BaseChromiumAndroidJUnitRunner"
-      android:targetPackage="org.chromium.weblayer.shell"
-      android:label="JUnit4-based tests for org.chromium.weblayer.shell" />
+  <instrumentation android:name="org.monyhar.base.test.BaseChromiumAndroidJUnitRunner"
+      android:targetPackage="org.monyhar.weblayer.shell"
+      android:label="JUnit4-based tests for org.monyhar.weblayer.shell" />
 </manifest>

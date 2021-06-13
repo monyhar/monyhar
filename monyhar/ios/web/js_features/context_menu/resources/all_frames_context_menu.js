@@ -101,7 +101,7 @@ __gCrWeb['findElementAtPointInPageCoordinates'] = function(requestId, x, y) {
         (element.tagName.toLowerCase() === 'iframe' ||
          element.tagName.toLowerCase() === 'frame')) {
       var payload = {
-        type: 'org.chromium.contextMenuMessage',
+        type: 'org.monyhar.contextMenuMessage',
         requestId: requestId,
         x: x - element.offsetLeft,
         y: y - element.offsetTop
@@ -351,7 +351,7 @@ var getElementHref_ = function(element) {
 window.addEventListener('message', function(message) {
   var payload = message.data;
   if (payload.hasOwnProperty('type') &&
-      payload.type == 'org.chromium.contextMenuMessage') {
+      payload.type == 'org.monyhar.contextMenuMessage') {
     __gCrWeb.findElementAtPointInPageCoordinates(
         payload.requestId,
         payload.x + window.pageXOffset,

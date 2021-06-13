@@ -160,8 +160,8 @@ if (!is_win) {
         "breakpad/src/third_party/libdisasm/x86_operand_list.h",
       ]
 
-      configs -= [ "//build/config/compiler:chromium_code" ]
-      configs += [ "//build/config/compiler:no_chromium_code" ]
+      configs -= [ "//build/config/compiler:monyhar_code" ]
+      configs += [ "//build/config/compiler:no_monyhar_code" ]
       configs += default_breakpad_configs
     }
 
@@ -206,8 +206,8 @@ if (!is_win) {
 
       deps = [ ":stackwalk_common" ]
 
-      configs -= [ "//build/config/compiler:chromium_code" ]
-      configs += [ "//build/config/compiler:no_chromium_code" ]
+      configs -= [ "//build/config/compiler:monyhar_code" ]
+      configs += [ "//build/config/compiler:no_monyhar_code" ]
       configs += default_breakpad_configs
     }
 
@@ -221,8 +221,8 @@ if (!is_win) {
 
       deps = [ ":stackwalk_common" ]
 
-      configs -= [ "//build/config/compiler:chromium_code" ]
-      configs += [ "//build/config/compiler:no_chromium_code" ]
+      configs -= [ "//build/config/compiler:monyhar_code" ]
+      configs += [ "//build/config/compiler:no_monyhar_code" ]
       configs += default_breakpad_configs
 
       sources += [
@@ -259,8 +259,8 @@ if (!is_win) {
       configs += [ ":tools_config" ]
 
       # There are some warnings in this code.
-      configs -= [ "//build/config/compiler:chromium_code" ]
-      configs += [ "//build/config/compiler:no_chromium_code" ]
+      configs -= [ "//build/config/compiler:monyhar_code" ]
+      configs += [ "//build/config/compiler:no_monyhar_code" ]
     }
   } else {
     # Aliases for convenience.
@@ -321,8 +321,8 @@ if (is_mac) {
       configs -= [ "//build/config/compiler:no_rtti" ]
       configs += [ "//build/config/compiler:rtti" ]
 
-      configs -= [ "//build/config/compiler:chromium_code" ]
-      configs += [ "//build/config/compiler:no_chromium_code" ]
+      configs -= [ "//build/config/compiler:monyhar_code" ]
+      configs += [ "//build/config/compiler:no_monyhar_code" ]
 
       # For breakpad/src/common/stabs_reader.h.
       defines = [ "HAVE_MACH_O_NLIST_H" ]
@@ -330,8 +330,8 @@ if (is_mac) {
 
     executable("dump_syms") {
       sources = [ "breakpad/src/tools/mac/dump_syms/dump_syms_tool.cc" ]
-      configs -= [ "//build/config/compiler:chromium_code" ]
-      configs += [ "//build/config/compiler:no_chromium_code" ]
+      configs -= [ "//build/config/compiler:monyhar_code" ]
+      configs += [ "//build/config/compiler:no_monyhar_code" ]
 
       configs += [ ":internal_config" ]
 
@@ -367,8 +367,8 @@ if (is_mac) {
 
       frameworks = [ "Foundation.framework" ]
 
-      configs -= [ "//build/config/compiler:chromium_code" ]
-      configs += [ "//build/config/compiler:no_chromium_code" ]
+      configs -= [ "//build/config/compiler:monyhar_code" ]
+      configs += [ "//build/config/compiler:no_monyhar_code" ]
 
       deps = [ ":common" ]
     }
@@ -419,8 +419,8 @@ if (is_mac) {
     configs += [ ":internal_config" ]
 
     # There are some warnings in this code.
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
   }
 
   executable("crash_inspector") {
@@ -562,8 +562,8 @@ if (is_linux || is_chromeos || is_android) {
       ]
 
       # There are some warnings in this code.
-      configs -= [ "//build/config/compiler:chromium_code" ]
-      configs += [ "//build/config/compiler:no_chromium_code" ]
+      configs -= [ "//build/config/compiler:monyhar_code" ]
+      configs += [ "//build/config/compiler:no_monyhar_code" ]
 
       # dwarf2reader.cc uses dynamic_cast. Because we don't typically
       # don't support RTTI, we enable it for this single target. Since
@@ -651,8 +651,8 @@ if (is_linux || is_chromeos || is_android) {
       "breakpad/src/common/string_conversion.h",
     ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     public_configs = [ ":client_config" ]
 
     if (current_cpu == "arm" && is_chromeos_ash) {
@@ -697,8 +697,8 @@ if (is_linux || is_chromeos || is_android) {
     ]
 
     # There are some warnings in this code.
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
   }
 
   test("breakpad_unittests") {
@@ -750,10 +750,10 @@ if (is_linux || is_chromeos || is_android) {
     ]
 
     # There are some warnings in this code.
-    configs -= [ "//build/config/compiler:chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
     configs += [
       ":client_config",
-      "//build/config/compiler:no_chromium_code",
+      "//build/config/compiler:no_monyhar_code",
     ]
 
     if (is_clang) {
@@ -788,10 +788,10 @@ if (is_linux || is_chromeos || is_android) {
     sources = [ "linux/generate-test-dump.cc" ]
 
     # This file has an unused variable warning.
-    configs -= [ "//build/config/compiler:chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
     configs += [
       ":client_config",
-      "//build/config/compiler:no_chromium_code",
+      "//build/config/compiler:no_monyhar_code",
     ]
 
     deps = [ ":client" ]

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab;
+package org.monyhar.chrome.browser.tab;
 
 import android.annotation.SuppressLint;
 import android.os.Handler;
@@ -10,20 +10,20 @@ import android.os.Message;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.cc.input.BrowserControlsState;
-import org.chromium.chrome.browser.device.DeviceClassManager;
-import org.chromium.chrome.browser.util.ChromeAccessibilityUtil;
-import org.chromium.components.browser_ui.util.BrowserControlsVisibilityDelegate;
-import org.chromium.components.dom_distiller.core.DomDistillerUrlUtils;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.components.security_state.SecurityStateModel;
-import org.chromium.content_public.browser.ImeAdapter;
-import org.chromium.content_public.browser.ImeEventObserver;
-import org.chromium.content_public.browser.NavigationHandle;
-import org.chromium.content_public.browser.SelectionPopupController;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.url.GURL;
+import org.monyhar.cc.input.BrowserControlsState;
+import org.monyhar.chrome.browser.device.DeviceClassManager;
+import org.monyhar.chrome.browser.util.ChromeAccessibilityUtil;
+import org.monyhar.components.browser_ui.util.BrowserControlsVisibilityDelegate;
+import org.monyhar.components.dom_distiller.core.DomDistillerUrlUtils;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.security_state.SecurityStateModel;
+import org.monyhar.content_public.browser.ImeAdapter;
+import org.monyhar.content_public.browser.ImeEventObserver;
+import org.monyhar.content_public.browser.NavigationHandle;
+import org.monyhar.content_public.browser.SelectionPopupController;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.url.GURL;
 
 /**
  * Determines the desired visibility of the browser controls based on the current state of a given

@@ -18,7 +18,7 @@ using CWVPreviewElementInfoTest = PlatformTest;
 
 // Tests CWVPreviewElementInfoTest initialization.
 TEST_F(CWVPreviewElementInfoTest, Initialization) {
-  NSURL* const linkURL = [NSURL URLWithString:@"https://chromium.test"];
+  NSURL* const linkURL = [NSURL URLWithString:@"https://monyhar.test"];
   CWVPreviewElementInfo* element =
       [[CWVPreviewElementInfo alloc] initWithLinkURL:linkURL];
   EXPECT_NSEQ(linkURL, element.linkURL);

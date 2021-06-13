@@ -1,4 +1,4 @@
 monorail {
   component: "IO>Gamepad"
 }
-team_email: "device-dev@chromium.org"
+team_email: "device-dev@monyhar.org"

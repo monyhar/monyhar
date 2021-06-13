@@ -1705,7 +1705,7 @@
     <ph name="BR">&lt;br&gt;</ph>
     <ph name="BR">&lt;br&gt;</ph>
     For more information about the debugging features see:<ph name="BR">&lt;br&gt;</ph>
-    https://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-features
+    https://www.monyhar.org/monyhar-os/how-tos-and-troubleshooting/debugging-features
     <ph name="BR">&lt;br&gt;</ph>
     <ph name="BR">&lt;br&gt;</ph>
     <ph name="BEGIN_BOLD">&lt;b&gt;</ph>Note:<ph name="END_BOLD">&lt;/b&gt;</ph>  The system will reboot during the process.
@@ -2099,7 +2099,7 @@
         A different keyboard has been connected since you last entered your password. It may be attempting to steal your keystrokes.
       </message>
   <message name="IDS_LOGIN_ERROR_TPM_UPDATE_REQUIRED" desc="Text for error dialog shown on the login screen when the Trusted Platform Module needs to be updated due to a vulnerability.">
-    An update for the Trusted Platform Module firmware needs to be installed. See <ph name="TPM_FIRMWARE_UPDATE_LINK">https://www.chromium.org/chromium-os/tpm_firmware_update</ph>
+    An update for the Trusted Platform Module firmware needs to be installed. See <ph name="TPM_FIRMWARE_UPDATE_LINK">https://www.monyhar.org/monyhar-os/tpm_firmware_update</ph>
   </message>
   <message name="IDS_LOGIN_PROXY_ERROR_MESSAGE" desc="An offline message shown when a proxy error has appeared.">
     The sign-in page failed to load using the current proxy settings. Please <ph name="GAIA_RELOAD_LINK_START">$1<ex>&gt;a&lt;</ex></ph>try to sign in again<ph name="GAIA_RELOAD_LINK_END">$2<ex>&gt;/a&lt;</ex></ph>, or use different <ph name="PROXY_SETTINGS_LINK_START">$3<ex>&gt;a&lt;</ex></ph>proxy settings<ph name="PROXY_SETTINGS_LINK_END">$4<ex>&gt;/a&lt;</ex></ph>.

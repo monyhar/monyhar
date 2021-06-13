@@ -261,7 +261,7 @@ make permissions checks.
 Ensuring that WebView's CTS tests all pass with your change enabled is a very
 important first step; if it causes CTS failures then this means WebView
 compatibility is _definitely_ affected, and means you should definitely
-[reach out to the WebView team](https://groups.google.com/a/chromium.org/forum/#!forum/android-webview-dev)
+[reach out to the WebView team](https://groups.google.com/a/monyhar.org/forum/#!forum/android-webview-dev)
 to discuss it.
 
 CTS is run as part of the `android-pie-arm64-rel` trybot, and on the main

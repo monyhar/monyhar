@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.app.video_tutorials;
+package org.monyhar.chrome.browser.app.video_tutorials;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,23 +11,23 @@ import android.os.Bundle;
 import android.util.Pair;
 import android.view.WindowManager;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.SynchronousInitializationActivity;
-import org.chromium.chrome.browser.WebContentsFactory;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.video_tutorials.FeatureType;
-import org.chromium.chrome.browser.video_tutorials.Tutorial;
-import org.chromium.chrome.browser.video_tutorials.VideoTutorialService;
-import org.chromium.chrome.browser.video_tutorials.VideoTutorialServiceFactory;
-import org.chromium.chrome.browser.video_tutorials.player.VideoPlayerCoordinator;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.components.embedder_support.view.ContentView;
-import org.chromium.components.version_info.VersionConstants;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.ActivityWindowAndroid;
-import org.chromium.ui.base.ViewAndroidDelegate;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.SynchronousInitializationActivity;
+import org.monyhar.chrome.browser.WebContentsFactory;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.video_tutorials.FeatureType;
+import org.monyhar.chrome.browser.video_tutorials.Tutorial;
+import org.monyhar.chrome.browser.video_tutorials.VideoTutorialService;
+import org.monyhar.chrome.browser.video_tutorials.VideoTutorialServiceFactory;
+import org.monyhar.chrome.browser.video_tutorials.player.VideoPlayerCoordinator;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.embedder_support.view.ContentView;
+import org.monyhar.components.version_info.VersionConstants;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.ActivityWindowAndroid;
+import org.monyhar.ui.base.ViewAndroidDelegate;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Java interface for interacting with the native video tutorial service. Responsible for

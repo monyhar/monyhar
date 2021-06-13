@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.selection;
+package org.monyhar.content.browser.selection;
 
 import android.animation.ValueAnimator;
 import android.view.animation.LinearInterpolator;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 /**
  * MagnifierAnimator adds animation to MagnifierWrapper when there is a change in y direction.

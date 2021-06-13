@@ -171,7 +171,7 @@ TestParameter build_test_parameter[] = {
 };
 
 std::string CreateIntentUriWithShelfGroup(const std::string& shelf_group_id) {
-  return base::StringPrintf("#Intent;S.org.chromium.arc.shelf_group_id=%s;end",
+  return base::StringPrintf("#Intent;S.org.monyhar.arc.shelf_group_id=%s;end",
                             shelf_group_id.c_str());
 }
 
@@ -179,8 +179,8 @@ std::string CreateIntentUriWithShelfGroupAndLogicalWindow(
     const std::string& shelf_group_id,
     const std::string& logical_window_id) {
   return base::StringPrintf(
-      "#Intent;S.org.chromium.arc.logical_window_id=%s;"
-      "S.org.chromium.arc.shelf_group_id=%s;end",
+      "#Intent;S.org.monyhar.arc.logical_window_id=%s;"
+      "S.org.monyhar.arc.shelf_group_id=%s;end",
       logical_window_id.c_str(), shelf_group_id.c_str());
 }
 
@@ -708,7 +708,7 @@ IN_PROC_BROWSER_TEST_F(ArcAppShelfBrowserTest, LogicalWindow) {
         test_windows[task_id - 1]->GetWidget()->GetNativeWindow();
     ASSERT_TRUE(aura_window);
     exo::SetShellApplicationId(
-        aura_window, base::StringPrintf("org.chromium.arc.%d", task_id));
+        aura_window, base::StringPrintf("org.monyhar.arc.%d", task_id));
   }
 
   // Group 1 with two logical windows: one with 2, and one with 3 tasks.

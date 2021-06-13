@@ -38,7 +38,7 @@ namespace enterprise_connectors {
 
 namespace {
 
-constexpr char kUserName[] = "test@chromium.org";
+constexpr char kUserName[] = "test@monyhar.org";
 
 constexpr char kScanId1[] = "scan id 1";
 constexpr char kScanId2[] = "scan id 2";

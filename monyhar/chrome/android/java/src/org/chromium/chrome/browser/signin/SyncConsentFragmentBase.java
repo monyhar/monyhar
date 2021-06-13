@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.signin;
+package org.monyhar.chrome.browser.signin;
 
 import android.accounts.Account;
 import android.accounts.AccountManager;
@@ -22,34 +22,34 @@ import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
 
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.consent_auditor.ConsentAuditorFeature;
-import org.chromium.chrome.browser.preferences.Pref;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.signin.services.DisplayableProfileData;
-import org.chromium.chrome.browser.signin.services.ProfileDataCache;
-import org.chromium.chrome.browser.signin.services.SigninMetricsUtils;
-import org.chromium.chrome.browser.signin.ui.ConfirmSyncDataStateMachine;
-import org.chromium.chrome.browser.signin.ui.ConfirmSyncDataStateMachineDelegate;
-import org.chromium.chrome.browser.signin.ui.ConsentTextTracker;
-import org.chromium.chrome.browser.signin.ui.SigninUtils;
-import org.chromium.chrome.browser.signin.ui.SigninView;
-import org.chromium.chrome.browser.signin.ui.account_picker.AccountPickerCoordinator;
-import org.chromium.chrome.browser.signin.ui.account_picker.AccountPickerDialogCoordinator;
-import org.chromium.chrome.browser.sync.SyncUserDataWiper;
-import org.chromium.components.externalauth.ExternalAuthUtils;
-import org.chromium.components.externalauth.UserRecoverableErrorHandler;
-import org.chromium.components.signin.AccountManagerFacade;
-import org.chromium.components.signin.AccountManagerFacadeProvider;
-import org.chromium.components.signin.AccountUtils;
-import org.chromium.components.signin.AccountsChangeObserver;
-import org.chromium.components.signin.ChildAccountStatus;
-import org.chromium.components.signin.identitymanager.AccountInfoServiceImpl;
-import org.chromium.components.signin.metrics.SigninAccessPoint;
-import org.chromium.components.user_prefs.UserPrefs;
-import org.chromium.ui.text.NoUnderlineClickableSpan;
-import org.chromium.ui.text.SpanApplier;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.consent_auditor.ConsentAuditorFeature;
+import org.monyhar.chrome.browser.preferences.Pref;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.signin.services.DisplayableProfileData;
+import org.monyhar.chrome.browser.signin.services.ProfileDataCache;
+import org.monyhar.chrome.browser.signin.services.SigninMetricsUtils;
+import org.monyhar.chrome.browser.signin.ui.ConfirmSyncDataStateMachine;
+import org.monyhar.chrome.browser.signin.ui.ConfirmSyncDataStateMachineDelegate;
+import org.monyhar.chrome.browser.signin.ui.ConsentTextTracker;
+import org.monyhar.chrome.browser.signin.ui.SigninUtils;
+import org.monyhar.chrome.browser.signin.ui.SigninView;
+import org.monyhar.chrome.browser.signin.ui.account_picker.AccountPickerCoordinator;
+import org.monyhar.chrome.browser.signin.ui.account_picker.AccountPickerDialogCoordinator;
+import org.monyhar.chrome.browser.sync.SyncUserDataWiper;
+import org.monyhar.components.externalauth.ExternalAuthUtils;
+import org.monyhar.components.externalauth.UserRecoverableErrorHandler;
+import org.monyhar.components.signin.AccountManagerFacade;
+import org.monyhar.components.signin.AccountManagerFacadeProvider;
+import org.monyhar.components.signin.AccountUtils;
+import org.monyhar.components.signin.AccountsChangeObserver;
+import org.monyhar.components.signin.ChildAccountStatus;
+import org.monyhar.components.signin.identitymanager.AccountInfoServiceImpl;
+import org.monyhar.components.signin.metrics.SigninAccessPoint;
+import org.monyhar.components.user_prefs.UserPrefs;
+import org.monyhar.ui.text.NoUnderlineClickableSpan;
+import org.monyhar.ui.text.SpanApplier;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

@@ -28,9 +28,9 @@ class U2FTabHelperTest : public PlatformTest {
   U2FTabHelperTest() {
     U2FTabHelper::CreateForWebState(&web_state_);
     TabIdTabHelper::CreateForWebState(&web_state_);
-    url::AddStandardScheme("chromium", url::SCHEME_WITH_HOST);
+    url::AddStandardScheme("monyhar", url::SCHEME_WITH_HOST);
     [[ChromeAppConstants sharedInstance]
-        setCallbackSchemeForTesting:@"chromium"];
+        setCallbackSchemeForTesting:@"monyhar"];
   }
 
   U2FTabHelper* tab_helper() { return U2FTabHelper::FromWebState(&web_state_); }
@@ -83,13 +83,13 @@ class U2FTabHelperTest : public PlatformTest {
 
 // Tests that IsU2FUrl returns true only if U2F url param is true.
 TEST_F(U2FTabHelperTest, TestIsU2FUrl) {
-  GURL u2f_url("chromium://u2f-callback?isU2F=1");
+  GURL u2f_url("monyhar://u2f-callback?isU2F=1");
   EXPECT_TRUE(U2FTabHelper::IsU2FUrl(u2f_url));
 
-  GURL wrong_u2f_url("chromium://u2f-callback?isU2F=0");
+  GURL wrong_u2f_url("monyhar://u2f-callback?isU2F=0");
   EXPECT_FALSE(U2FTabHelper::IsU2FUrl(wrong_u2f_url));
 
-  GURL non_u2f_url("chromium://u2f-callback");
+  GURL non_u2f_url("monyhar://u2f-callback");
   EXPECT_FALSE(U2FTabHelper::IsU2FUrl(non_u2f_url));
 
   GURL invalid_url;
@@ -99,11 +99,11 @@ TEST_F(U2FTabHelperTest, TestIsU2FUrl) {
 // Tests that GetTabIdFromU2FUrl returns the correct tab ID.
 TEST_F(U2FTabHelperTest, TestGetTabIdFromU2FURL) {
   NSString* tab_id = @"B05B1860-18BA-43EA-B7DC-470D9F918FF5";
-  GURL correct_url("chromium://"
+  GURL correct_url("monyhar://"
                    "u2f-callback?tabID=B05B1860-18BA-43EA-B7DC-470D9F918FF5");
   EXPECT_NSEQ(tab_id, U2FTabHelper::GetTabIdFromU2FUrl(correct_url));
 
-  GURL wrong_url("chromium://u2fdemo.appspot.com");
+  GURL wrong_url("monyhar://u2fdemo.appspot.com");
   EXPECT_FALSE(U2FTabHelper::GetTabIdFromU2FUrl(wrong_url));
 }
 
@@ -129,7 +129,7 @@ TEST_F(U2FTabHelperTest, TestGetXCallbackUrlWithCorrectFlow) {
 
 // Tests when request is legal but contains duplicated parameters.
 TEST_F(U2FTabHelperTest, TestGetXCallbackUrlWithDuplicatedParams) {
-  GURL request_url("chromium://u2f-callback?isU2F=0&tabID=1&requestUUID=2"
+  GURL request_url("monyhar://u2f-callback?isU2F=0&tabID=1&requestUUID=2"
                    "&data=abc&def%26ghi");
   GURL origin_url("https://accounts.google.com");
   GURL tab_url("https://accounts.google.com");
@@ -181,7 +181,7 @@ TEST_F(U2FTabHelperTest, TestEvaluateU2FResultWithCorrectFlowTest) {
   NSString* request_uuid = GetRequestUuidFromXCallbackUrl(xcallback_url);
   web_state_.SetTrustLevel(web::URLVerificationTrustLevel::kAbsolute);
   GURL correct_request_uuid_url(
-      "chromium://u2f-callback?requestUUID=" +
+      "monyhar://u2f-callback?requestUUID=" +
       base::SysNSStringToUTF8(request_uuid) +
       "&requestId=TestID&registrationData=TestData&tabID=" +
       base::SysNSStringToUTF8(tab_id()));
@@ -214,14 +214,14 @@ TEST_F(U2FTabHelperTest, TestEvaluateU2FResultWithBadURLFormat) {
 
   // Test when U2F callback has no requestUUID info.
   GURL no_request_uuid_url(
-      "chromium://"
+      "monyhar://"
       "u2f-callback?requestId=TestID&registrationData=TestData&tabID=" +
       base::SysNSStringToUTF8(tab_id()));
   tab_helper()->EvaluateU2FResult(no_request_uuid_url);
   EXPECT_TRUE(web_state_.GetLastExecutedJavascript().empty());
 
   // Test when U2F callback has wrong requestUUID value.
-  GURL wrong_request_uuid_url("chromium://"
+  GURL wrong_request_uuid_url("monyhar://"
                               "u2f-callback?requestId=TestID&registrationData="
                               "TestData&requestUUID=123&tabID=" +
                               base::SysNSStringToUTF8(tab_id()));
@@ -230,7 +230,7 @@ TEST_F(U2FTabHelperTest, TestEvaluateU2FResultWithBadURLFormat) {
 
   // Test when U2F callback has no registrationData value.
   GURL no_registration_request_url(
-      "chromium://u2f-callback?requestUUID=" +
+      "monyhar://u2f-callback?requestUUID=" +
       base::SysNSStringToUTF8(request_uuid) +
       "&requestId=TestID&tabID=" + base::SysNSStringToUTF8(tab_id()));
 
@@ -239,7 +239,7 @@ TEST_F(U2FTabHelperTest, TestEvaluateU2FResultWithBadURLFormat) {
 
   // Test when U2F callback hostname is unexpected.
   GURL wrong_host_name_url(
-      "chromium://"
+      "monyhar://"
       "evil-callback?requestId=TestID&registrationData=TestData&requestUUID=" +
       base::SysNSStringToUTF8(request_uuid) +
       "&tabID=" + base::SysNSStringToUTF8(tab_id()));
@@ -263,7 +263,7 @@ TEST_F(U2FTabHelperTest, TestEvaluateU2FResultWithBadTabState) {
   web_state_.SetTrustLevel(web::URLVerificationTrustLevel::kAbsolute);
   web_state_.SetCurrentURL(GURL("http://www.dummy.com"));
   GURL correct_request_uuid_url(
-      "chromium://"
+      "monyhar://"
       "u2f-callback?requestId=TestID&registrationData=TestData&requestUUID=" +
       base::SysNSStringToUTF8(request_uuid) +
       "&tabID=" + base::SysNSStringToUTF8(tab_id()));
@@ -277,7 +277,7 @@ TEST_F(U2FTabHelperTest, TestEvaluateU2FResultWithBadTabState) {
   xcallback_url = tab_helper()->GetXCallbackUrl(request_url, origin_url);
   request_uuid = GetRequestUuidFromXCallbackUrl(xcallback_url);
   correct_request_uuid_url = GURL(
-      "chromium://"
+      "monyhar://"
       "u2f-callback?requestId=TestID&registrationData=TestData&requestUUID=" +
       base::SysNSStringToUTF8(request_uuid) +
       "&tabID=" + base::SysNSStringToUTF8(tab_id()));

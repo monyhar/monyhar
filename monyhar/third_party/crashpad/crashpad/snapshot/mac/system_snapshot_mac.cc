@@ -190,7 +190,7 @@ void SystemSnapshotMac::CPUFrequency(
   *current_hz = ReadIntSysctlByName<uint64_t>("hw.cpufrequency", 0);
   *max_hz = ReadIntSysctlByName<uint64_t>("hw.cpufrequency_max", 0);
 #elif defined(ARCH_CPU_ARM64)
-  // TODO(https://crashpad.chromium.org/bug/352): When production arm64
+  // TODO(https://crashpad.monyhar.org/bug/352): When production arm64
   // hardware is available, determine whether CPU frequency is visible anywhere
   // (likely via a sysctl or via IOKit) and use it if feasible.
   *current_hz = 0;

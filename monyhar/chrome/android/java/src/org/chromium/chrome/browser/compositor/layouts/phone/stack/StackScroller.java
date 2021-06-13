@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.layouts.phone.stack;
+package org.monyhar.chrome.browser.compositor.layouts.phone.stack;
 
 import android.content.Context;
 import android.hardware.SensorManager;
 import android.util.Log;
 import android.view.ViewConfiguration;
 
-import org.chromium.base.MathUtils;
+import org.monyhar.base.MathUtils;
 
 /**
  * This class is vastly copied from {@link android.widget.OverScroller} but decouples the time

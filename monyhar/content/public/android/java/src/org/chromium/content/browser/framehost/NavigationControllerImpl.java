@@ -2,22 +2,22 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.framehost;
+package org.monyhar.content.browser.framehost;
 
 import android.graphics.Bitmap;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.NavigationController;
-import org.chromium.content_public.browser.NavigationEntry;
-import org.chromium.content_public.browser.NavigationHistory;
-import org.chromium.content_public.common.ResourceRequestBody;
-import org.chromium.url.GURL;
-import org.chromium.url.Origin;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.NavigationController;
+import org.monyhar.content_public.browser.NavigationEntry;
+import org.monyhar.content_public.browser.NavigationHistory;
+import org.monyhar.content_public.common.ResourceRequestBody;
+import org.monyhar.url.GURL;
+import org.monyhar.url.Origin;
 
 /**
  * The NavigationControllerImpl Java wrapper to allow communicating with the native

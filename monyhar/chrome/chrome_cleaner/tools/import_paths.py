@@ -3,7 +3,7 @@
 # found in the LICENSE file.
 """Paths for python proto modules and depot_tools.
 
-This script must be used from inside a chromium checkout because it depends on
+This script must be used from inside a monyhar checkout because it depends on
 paths relative to the root of the checkout.
 """
 
@@ -31,7 +31,7 @@ def GetBuildDirectory(build_configuration):
 
 
 def GetChromiumRootDirectory():
-  """Returns the path to root directory of the chromium checkout."""
+  """Returns the path to root directory of the monyhar checkout."""
   return _ROOT_DIRECTORY
 
 

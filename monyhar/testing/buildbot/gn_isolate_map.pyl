@@ -576,16 +576,16 @@
     "label": "//chromeos:chromeos_unittests",
     "type": "console_test_launcher",
   },
-  "chromium_builder_asan": {
-    "label": "//:chromium_builder_asan",
+  "monyhar_builder_asan": {
+    "label": "//:monyhar_builder_asan",
     "type": "additional_compile_target",
   },
-  "chromium_builder_perf": {
-    "label": "//:chromium_builder_perf",
+  "monyhar_builder_perf": {
+    "label": "//:monyhar_builder_perf",
     "type": "additional_compile_target",
   },
-  "chromiumos_preflight": {
-    "label": "//:chromiumos_preflight",
+  "monyharos_preflight": {
+    "label": "//:monyharos_preflight",
     "type": "additional_compile_target",
   },
   "color_unittests": {
@@ -864,8 +864,8 @@
     "label": "//chrome/credential_provider/test:gcp_unittests",
     "type": "console_test_launcher",
   },
-  "gen_linux_ash_chromium_cipd_yaml": {
-    "label": "//chrome:gen_linux_ash_chromium_cipd_yaml",
+  "gen_linux_ash_monyhar_cipd_yaml": {
+    "label": "//chrome:gen_linux_ash_monyhar_cipd_yaml",
     "type": "additional_compile_target",
   },
   "gfx_unittests": {
@@ -1675,7 +1675,7 @@
   "system_webview_shell_layout_test_apk": {
     "args": [
       "--replace-system-package",
-      "org.chromium.webview_shell,apks/SystemWebViewShell.apk",
+      "org.monyhar.webview_shell,apks/SystemWebViewShell.apk",
       "--use-apk-under-test-flags-file",
     ],
     "label": "//android_webview/tools/system_webview_shell:system_webview_shell_layout_test_apk",
@@ -1723,7 +1723,7 @@
     "type": "script",
   },
   # This isolate is used by
-  # https://www.chromium.org/developers/cluster-telemetry
+  # https://www.monyhar.org/developers/cluster-telemetry
   "ct_telemetry_perf_tests_without_chrome": {
     "args": [
       "../../tools/perf/run_benchmark",
@@ -2038,7 +2038,7 @@
   "weblayer_skew_tests": {
     "args":  [
       "--replace-system-package",
-      "org.chromium.weblayer.shell,apks/WebLayerShellSystemWebView.apk"
+      "org.monyhar.weblayer.shell,apks/WebLayerShellSystemWebView.apk"
     ],
     "label": "//weblayer/browser/android/javatests:weblayer_skew_tests",
     "type": "console_test_launcher",
@@ -2046,7 +2046,7 @@
   "weblayer_skew_tests_with_chrome": {
     "args":  [
       "--replace-system-package",
-      "org.chromium.weblayer.shell,apks/WebLayerShellSystemWebView.apk"
+      "org.monyhar.weblayer.shell,apks/WebLayerShellSystemWebView.apk"
     ],
     "label": "//weblayer/browser/android/javatests:weblayer_skew_tests_with_chrome",
     "type": "console_test_launcher",

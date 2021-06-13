@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@16.3.5.cr0
-package: chromium/third_party/android_deps/libs/com_google_firebase_firebase_installations
+package: monyhar/third_party/android_deps/libs/com_google_firebase_firebase_installations
 description: "firebase-installations"
 data:
 - file: firebase-installations-16.3.5.aar

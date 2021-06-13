@@ -21,7 +21,7 @@ def main():
       'download_from_google_storage',
       '--no_resume',
       '--no_auth',
-      '--bucket', 'chromium-doclava',
+      '--bucket', 'monyhar-doclava',
       '--extract',
       '-s',
       os.path.join(os.path.dirname(__file__), '..', '..', 'buildtools',

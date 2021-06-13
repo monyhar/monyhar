@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tabmodel;
+package org.monyhar.chrome.browser.tabmodel;
 
 import androidx.test.filters.SmallTest;
 
@@ -10,11 +10,11 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.UiThreadTest;
-import org.chromium.base.test.util.Batch;
-import org.chromium.chrome.browser.app.tabmodel.AsyncTabParamsManagerSingleton;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.content_public.browser.LoadUrlParams;
+import org.monyhar.base.test.UiThreadTest;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.chrome.browser.app.tabmodel.AsyncTabParamsManagerSingleton;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.content_public.browser.LoadUrlParams;
 
 /**
  * Tests that the AsyncTabCreationParamsManager works as expected.

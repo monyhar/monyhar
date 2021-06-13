@@ -71,7 +71,7 @@ specific_include_rules = {
   ],
   "request_conversion.cc": [
      # This file consists of conversion functions and hence needs to access
-     # both the blink and chromium mojom variants.
+     # both the blink and monyhar mojom variants.
      "+net/base/request_priority.h",
      "+net/http/http_request_headers.h",
      "+net/http/http_util.h",

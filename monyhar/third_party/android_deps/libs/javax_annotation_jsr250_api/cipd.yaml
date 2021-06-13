@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@1.0.cr0
-package: chromium/third_party/android_deps/libs/javax_annotation_jsr250_api
+package: monyhar/third_party/android_deps/libs/javax_annotation_jsr250_api
 description: "JSR-250 Common Annotations for the JavaTM Platform"
 data:
 - file: jsr250-api-1.0.jar

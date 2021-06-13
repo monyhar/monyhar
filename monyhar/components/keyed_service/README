@@ -1,5 +1,5 @@
 KeyedService is a layered component
-(https://sites.google.com/a/chromium.org/dev/developers/design-documents/layered-components-design)
+(https://sites.google.com/a/monyhar.org/dev/developers/design-documents/layered-components-design)
 to enable it to be shared cleanly on iOS. 
 
 This component has the following structure:

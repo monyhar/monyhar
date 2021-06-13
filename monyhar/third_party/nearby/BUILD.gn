@@ -69,8 +69,8 @@ source_set("platform_api_comm") {
     "//third_party/abseil-cpp:absl",
     "//third_party/webrtc_overrides:webrtc_component",
   ]
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 }
 
 source_set("platform_api_types") {
@@ -98,8 +98,8 @@ source_set("platform_api_types") {
     ":platform_base",
     "//third_party/abseil-cpp:absl",
   ]
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 }
 
 source_set("platform_api_platform") {
@@ -111,8 +111,8 @@ source_set("platform_api_platform") {
     ":platform_base",
     "//third_party/abseil-cpp:absl",
   ]
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 }
 
 # src/cpp/platform/base
@@ -141,8 +141,8 @@ source_set("platform_base") {
     "src/cpp/platform/base/types.h",
   ]
   public_deps = [ "//third_party/abseil-cpp:absl" ]
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 }
 
 source_set("platform_base_util") {
@@ -161,8 +161,8 @@ source_set("platform_base_util") {
     ":platform_base",
     "//third_party/abseil-cpp:absl",
   ]
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 }
 
 source_set("platform_base_logging") {
@@ -173,8 +173,8 @@ source_set("platform_base_logging") {
     ":platform_api_types",
     "//base:base",
   ]
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 }
 
 source_set("platform_base_cancellation_flag") {
@@ -186,8 +186,8 @@ source_set("platform_base_cancellation_flag") {
     ":platform_base_util",
     "//third_party/abseil-cpp:absl",
   ]
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 }
 
 # src/cpp/platform/public
@@ -232,8 +232,8 @@ source_set("platform_public_types") {
     ":platform_public_logging",
     "//third_party/abseil-cpp:absl",
   ]
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 }
 
 source_set("platform_public_comm") {
@@ -259,16 +259,16 @@ source_set("platform_public_comm") {
     "//third_party/abseil-cpp:absl",
     "//third_party/webrtc_overrides:webrtc_component",
   ]
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 }
 
 source_set("platform_public_logging") {
   public_configs = [ ":nearby_include_config" ]
   public = [ "src/cpp/platform/public/logging.h" ]
   public_deps = [ ":platform_base_logging" ]
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 }
 
 # src/cpp/core
@@ -286,8 +286,8 @@ source_set("core") {
     ":platform_public_types",
     "//third_party/abseil-cpp:absl",
   ]
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 }
 
 source_set("core_types") {
@@ -309,8 +309,8 @@ source_set("core_types") {
     ":platform_public_types",
     "//third_party/abseil-cpp:absl",
   ]
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 }
 
 # src/cpp/core/internal
@@ -402,8 +402,8 @@ source_set("core_internal") {
     "//third_party/protobuf:protobuf_lite",
     "//third_party/ukey2",
   ]
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 }
 
 source_set("core_internal_test") {
@@ -463,8 +463,8 @@ source_set("core_internal_mediums") {
     "//third_party/smhasher:murmurhash3",
     "//third_party/webrtc_overrides:webrtc_component",
   ]
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 }
 
 source_set("core_internal_mediums_webrtc") {
@@ -497,6 +497,6 @@ source_set("core_internal_mediums_webrtc") {
     "//third_party/abseil-cpp:absl",
     "//third_party/webrtc_overrides:webrtc_component",
   ]
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 }

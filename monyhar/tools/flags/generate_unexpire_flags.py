@@ -21,8 +21,8 @@ import sys
 ROOT_PATH = os.path.join(os.path.dirname(__file__), '..', '..')
 
 
-def get_chromium_version():
-  """Parses the chromium version out of //chrome/VERSION."""
+def get_monyhar_version():
+  """Parses the monyhar version out of //chrome/VERSION."""
   with open(os.path.join(ROOT_PATH, 'chrome', 'VERSION')) as f:
     for line in f.readlines():
       key, value = line.strip().split('=')
@@ -156,7 +156,7 @@ def update_file_if_stale(filename, data):
 
 
 def main():
-  mstone = get_chromium_version()
+  mstone = get_monyhar_version()
 
   if not mstone:
     raise ValueError('Can\'t find or understand //chrome/VERSION')

@@ -160,7 +160,7 @@ Delicious success.
 By default $i18n{} escapes strings for HTML. $i18nRaw{} can be used for
 translations that embed HTML, and $i18nPolymer{} can be used for Polymer
 bindings. See
-[this comment](https://bugs.chromium.org/p/chromium/issues/detail?id=1010815#c1)
+[this comment](https://bugs.monyhar.org/p/monyhar/issues/detail?id=1010815#c1)
 for more information.
 
 ## C++ classes
@@ -435,21 +435,21 @@ Javascript doesn't expect them. In the latter case, sensitive information may be
 delivered to an untrusted origin.
 
 Therefore each message handler maintains
-[a boolean](https://cs.chromium.org/search/?q=WebUIMessageHandler::javascript_allowed_)
+[a boolean](https://cs.monyhar.org/search/?q=WebUIMessageHandler::javascript_allowed_)
 that describes whether delivering callbacks to Javascript is currently
 appropriate. This boolean is set by calling `AllowJavascript`, which should be
 done when handling a call from Javascript, because that indicates that the page
 is ready for the subsequent callback. (See
 [design doc](https://drive.google.com/open?id=1z1diKvwgMmn4YFzlW1kss0yHmo8yy68TN_FUhUzRz7Q).)
 If the tab navigates or reloads,
-[`DisallowJavascript`](https://cs.chromium.org/search/?q=WebUIMessageHandler::DisallowJavascript)
+[`DisallowJavascript`](https://cs.monyhar.org/search/?q=WebUIMessageHandler::DisallowJavascript)
 is called to clear the flag.
 
 Therefore, before each callback from C++ to Javascript, the flag must be tested
 by calling
-[`IsJavascriptAllowed`](https://cs.chromium.org/search/?q=WebUIMessageHandler::IsJavascriptAllowed).
+[`IsJavascriptAllowed`](https://cs.monyhar.org/search/?q=WebUIMessageHandler::IsJavascriptAllowed).
 If false, then the callback must be dropped. (When the flag is false, calling
-[`ResolveJavascriptCallback`](https://cs.chromium.org/search/?q=WebUIMessageHandler::ResolveJavascriptCallback)
+[`ResolveJavascriptCallback`](https://cs.monyhar.org/search/?q=WebUIMessageHandler::ResolveJavascriptCallback)
 will crash. See
 [design doc](https://docs.google.com/document/d/1udXoW3aJL0-l5wrbsOg5bpYWB0qOCW5K7yXpv4tFeA8).)
 
@@ -462,7 +462,7 @@ discarded by the reload. (Reloading settings UI does _not_ cause message handler
 objects to be deleted.)
 
 Thus a message handler may override
-[`OnJavascriptDisallowed`](https://cs.chromium.org/search/?q=WebUIMessageHandler::OnJavascriptDisallowed)
+[`OnJavascriptDisallowed`](https://cs.monyhar.org/search/?q=WebUIMessageHandler::OnJavascriptDisallowed)
 to learn when pending callbacks should be canceled.
 
 In the JS:

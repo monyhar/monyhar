@@ -86,7 +86,7 @@ and the new permissions system. For more details, see the following files in
 
 # Resources and Documentation
 
-Mailing list: web-bluetooth@chromium.org
+Mailing list: web-bluetooth@monyhar.org
 
 Bug tracker: [Blink>Bluetooth]
 
@@ -96,7 +96,7 @@ Bug tracker: [Blink>Bluetooth]
 * [BluetoothFakeAdapter]
 * [FakeBluetooth]
 
-[Blink>Bluetooth]: https://bugs.chromium.org/p/chromium/issues/list?q=component%3ABlink%3EBluetooth&can=2
+[Blink>Bluetooth]: https://bugs.monyhar.org/p/monyhar/issues/list?q=component%3ABlink%3EBluetooth&can=2
 
 ## Design Documents
 
@@ -106,7 +106,7 @@ Bug tracker: [Blink>Bluetooth]
 * [Web Bluetooth Persistent Permissions]
 
 [Class Diagram of Web Bluetooth through Bluetooth Android]:
-https://sites.google.com/a/chromium.org/dev/developers/design-documents/bluetooth-design-docs/web-bluetooth-through-bluetooth-android-class-diagram
+https://sites.google.com/a/monyhar.org/dev/developers/design-documents/bluetooth-design-docs/web-bluetooth-through-bluetooth-android-class-diagram
 [Web Bluetooth Testing]:
 https://docs.google.com/document/d/1Nhv_oVDCodd1pEH_jj9k8gF4rPGb_84VYaZ9IG8M_WY/edit?usp=sharing
 [Web Bluetooth Test Scanning]:

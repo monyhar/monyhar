@@ -34,7 +34,7 @@ states that "~70% of the vulnerabilities addressed through a security update
 each year continue to be memory safety issues". A trip through Chromium's bug
 tracker will show many, many vulnerabilities whose root cause is memory
 unsafety. (As of March 2019, only about 5 of 130 [public Critical-severity
-bugs](https://bugs.chromium.org/p/chromium/issues/list?can=1&q=Type%3DBug-Security+Security_Severity%3DCritical+-status%3AWontFix+-status%3ADuplicate&sort=&groupby=&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&mode=&cells=ids&num=)
+bugs](https://bugs.monyhar.org/p/monyhar/issues/list?can=1&q=Type%3DBug-Security+Security_Severity%3DCritical+-status%3AWontFix+-status%3ADuplicate&sort=&groupby=&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&mode=&cells=ids&num=)
 are not obviously due to memory corruption.)
 
 Security engineers in general, very much including Chrome Security Team, would
@@ -99,7 +99,7 @@ privilege without breaking them.
 
 Low-privilege processes include sandboxed utility processes and renderer
 processes with [Site
-Isolation](https://www.chromium.org/Home/chromium-security/site-isolation) (very
+Isolation](https://www.monyhar.org/Home/monyhar-security/site-isolation) (very
 good) or [origin
 isolation](https://cloud.google.com/docs/chrome-enterprise/policies/?policy=IsolateOrigins)
 (even better).
@@ -129,7 +129,7 @@ things. Here are some ways to do that.
 
 ### Privilege Reduction
 
-Also known as [_sandboxing_](https://cs.chromium.org/chromium/src/sandbox/),
+Also known as [_sandboxing_](https://cs.monyhar.org/monyhar/src/sandbox/),
 privilege reduction means running the code in a process that has had some or
 many of its privileges revoked.
 
@@ -141,7 +141,7 @@ itself to validate and act on the meaning of an object.
 Equivalently, you can launch a sandboxed utility process to handle the data, and
 return a well-formed response back to the caller in an IPC message. See [Safe
 Browsing's ZIP
-analyzer](https://cs.chromium.org/chromium/src/chrome/common/safe_browsing/zip_analyzer.h)
+analyzer](https://cs.monyhar.org/monyhar/src/chrome/common/safe_browsing/zip_analyzer.h)
 for an example.
 
 ### Verifying The Trustworthiness Of A Source
@@ -162,7 +162,7 @@ Such cryptographic proof can potentially be obtained by:
 Pinned TLS needs to meet all these criteria to be effective:
 
   * communication happens via validly-authenticated TLS, HTTPS, or QUIC;
-  * the peer's keys are [pinned in Chrome](https://cs.chromium.org/chromium/src/net/http/transport_security_state_static.json?sq=package:chromium&g=0); and
+  * the peer's keys are [pinned in Chrome](https://cs.monyhar.org/monyhar/src/net/http/transport_security_state_static.json?sq=package:monyhar&g=0); and
   * pinning is active on all platforms where the feature will launch.
 
 At present pinning is not enabled for all Chrome platforms. On other platforms,
@@ -254,11 +254,11 @@ used in Chromium. (Some of us on Security Team aspire to get more of Chromium in
 safer languages, but that's a long-term, heavy lift.)
 
 For an example of image processing, we have the pure-Java class
-[BaseGifImage](https://cs.chromium.org/chromium/src/third_party/gif_player/src/jp/tomorrowkey/android/gifplayer/BaseGifImage.java?rcl=27febd503d1bab047d73df26db83184fff8d6620&l=27).
+[BaseGifImage](https://cs.monyhar.org/monyhar/src/third_party/gif_player/src/jp/tomorrowkey/android/gifplayer/BaseGifImage.java?rcl=27febd503d1bab047d73df26db83184fff8d6620&l=27).
 On Android, where we can use Java and also face a particularly high cost for
 creating new processes (necessary for sandboxing), using Java to decode tricky
 formats can be a great approach. We do a similar thing with the pure-Java
-[JsonSanitizer](https://cs.chromium.org/chromium/src/services/data_decoder/public/cpp/android/java/src/org/chromium/services/data_decoder/JsonSanitizer.java),
+[JsonSanitizer](https://cs.monyhar.org/monyhar/src/services/data_decoder/public/cpp/android/java/src/org/monyhar/services/data_decoder/JsonSanitizer.java),
 to 'vet' incoming JSON in a memory-safe way before passing the input to the C++
 JSON implementation.
 
@@ -303,10 +303,10 @@ is to parse complex and untrustworthy inputs (TLS, QUIC, HTTP, DNS, X.509, and
 more). This dangerous combination is why bugs in that area of code are often of
 Critical severity:
 
-  * [OOB Write in `QuicStreamSequencerBuffer::OnStreamData`](https://bugs.chromium.org/p/chromium/issues/detail?id=778505)
-  * [Stack Buffer Overflow in `QuicClientPromisedInfo::OnPromiseHeaders`](https://bugs.chromium.org/p/chromium/issues/detail?id=777728)
+  * [OOB Write in `QuicStreamSequencerBuffer::OnStreamData`](https://bugs.monyhar.org/p/monyhar/issues/detail?id=778505)
+  * [Stack Buffer Overflow in `QuicClientPromisedInfo::OnPromiseHeaders`](https://bugs.monyhar.org/p/monyhar/issues/detail?id=777728)
 
 We now have the network stack in its own dedicated process, and have begun the
 process of reducing that process' privilege. ([macOS
-bug](https://bugs.chromium.org/p/chromium/issues/detail?id=915910), [Windows
-bug](https://bugs.chromium.org/p/chromium/issues/detail?id=841001))
+bug](https://bugs.monyhar.org/p/monyhar/issues/detail?id=915910), [Windows
+bug](https://bugs.monyhar.org/p/monyhar/issues/detail?id=841001))

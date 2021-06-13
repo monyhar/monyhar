@@ -2,29 +2,29 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.bottombar.ephemeraltab;
+package org.monyhar.chrome.browser.compositor.bottombar.ephemeraltab;
 
 import android.graphics.drawable.Drawable;
 import android.os.Handler;
 
 import androidx.annotation.DrawableRes;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.components.embedder_support.delegate.WebContentsDelegateAndroid;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.components.embedder_support.view.ContentView;
-import org.chromium.components.security_state.ConnectionSecurityLevel;
-import org.chromium.components.security_state.SecurityStateModel;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.NavigationHandle;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.WebContentsObserver;
-import org.chromium.content_public.common.ResourceRequestBody;
-import org.chromium.ui.widget.Toast;
-import org.chromium.url.GURL;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.components.embedder_support.delegate.WebContentsDelegateAndroid;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.components.embedder_support.view.ContentView;
+import org.monyhar.components.security_state.ConnectionSecurityLevel;
+import org.monyhar.components.security_state.SecurityStateModel;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.NavigationHandle;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.WebContentsObserver;
+import org.monyhar.content_public.common.ResourceRequestBody;
+import org.monyhar.ui.widget.Toast;
+import org.monyhar.url.GURL;
 
 /**
  * Mediator class for preview tab, responsible for communicating with other objects.

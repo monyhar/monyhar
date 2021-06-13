@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private.test;
+package org.monyhar.weblayer_private.test;
 
-import org.chromium.components.content_capture.ContentCaptureConsumer;
-import org.chromium.components.content_capture.ContentCaptureFrame;
-import org.chromium.components.content_capture.FrameSession;
+import org.monyhar.components.content_capture.ContentCaptureConsumer;
+import org.monyhar.components.content_capture.ContentCaptureFrame;
+import org.monyhar.components.content_capture.FrameSession;
 
 import java.util.ArrayList;
 

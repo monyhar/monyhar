@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.privacy.settings;
+package org.monyhar.chrome.browser.privacy.settings;
 
-import org.chromium.components.minidump_uploader.util.CrashReportingPermissionManager;
+import org.monyhar.components.minidump_uploader.util.CrashReportingPermissionManager;
 
 /**
  * Manages preferences related to privacy, metrics reporting, prerendering, and network prediction.
@@ -31,13 +31,13 @@ public interface PrivacyPreferencesManager extends CrashReportingPermissionManag
 
     /**
      * Sets whether this client is in-sample for usage metrics and crash reporting. See
-     * {@link org.chromium.chrome.browser.metrics.UmaUtils#isClientInMetricsSample} for details.
+     * {@link org.monyhar.chrome.browser.metrics.UmaUtils#isClientInMetricsSample} for details.
      */
     void setClientInMetricsSample(boolean inSample);
 
     /**
      * Checks whether this client is in-sample for usage metrics and crash reporting. See
-     * {@link org.chromium.chrome.browser.metrics.UmaUtils#isClientInMetricsSample} for details.
+     * {@link org.monyhar.chrome.browser.metrics.UmaUtils#isClientInMetricsSample} for details.
      *
      * @returns boolean Whether client is in-sample.
      */

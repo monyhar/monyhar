@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.embedder_support.view;
+package org.monyhar.components.embedder_support.view;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -24,17 +24,17 @@ import android.widget.FrameLayout;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ObserverList;
-import org.chromium.base.TraceEvent;
-import org.chromium.base.compat.ApiHelperForO;
-import org.chromium.content_public.browser.ImeAdapter;
-import org.chromium.content_public.browser.RenderCoordinates;
-import org.chromium.content_public.browser.SmartClipProvider;
-import org.chromium.content_public.browser.ViewEventSink;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.WebContentsAccessibility;
-import org.chromium.ui.base.EventForwarder;
-import org.chromium.ui.base.EventOffsetHandler;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.base.compat.ApiHelperForO;
+import org.monyhar.content_public.browser.ImeAdapter;
+import org.monyhar.content_public.browser.RenderCoordinates;
+import org.monyhar.content_public.browser.SmartClipProvider;
+import org.monyhar.content_public.browser.ViewEventSink;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.WebContentsAccessibility;
+import org.monyhar.ui.base.EventForwarder;
+import org.monyhar.ui.base.EventOffsetHandler;
 
 /**
  * The containing view for {@link WebContents} that exists in the Android UI hierarchy and exposes

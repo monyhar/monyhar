@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_shell_apk;
+package org.monyhar.content_shell_apk;
 
-import org.chromium.base.annotations.MainDex;
+import org.monyhar.base.annotations.MainDex;
 
 /** One of the TestChildProcessService defined in the AndroidManifest.xml. */
 @MainDex

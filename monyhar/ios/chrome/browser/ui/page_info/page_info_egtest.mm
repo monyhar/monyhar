@@ -5,9 +5,9 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-#include "components/strings/grit/components_chromium_strings.h"
+#include "components/strings/grit/components_monyhar_strings.h"
 #import "ios/chrome/browser/ui/page_info/page_info_constants.h"
-#include "ios/chrome/grit/ios_chromium_strings.h"
+#include "ios/chrome/grit/ios_monyhar_strings.h"
 #import "ios/chrome/test/earl_grey/chrome_earl_grey.h"
 #import "ios/chrome/test/earl_grey/chrome_earl_grey_ui.h"
 #import "ios/chrome/test/earl_grey/chrome_matchers.h"

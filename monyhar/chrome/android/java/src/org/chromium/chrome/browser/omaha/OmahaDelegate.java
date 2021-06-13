@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omaha;
+package org.monyhar.chrome.browser.omaha;
 
 import android.content.Context;
 
-import org.chromium.chrome.browser.omaha.OmahaBase.PostResult;
+import org.monyhar.chrome.browser.omaha.OmahaBase.PostResult;
 
 /** Delegates calls out from {@link OmahaBase}. */
 public abstract class OmahaDelegate {

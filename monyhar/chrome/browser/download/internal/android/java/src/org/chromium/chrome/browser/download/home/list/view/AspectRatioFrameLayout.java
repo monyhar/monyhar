@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.home.list.view;
+package org.monyhar.chrome.browser.download.home.list.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-import org.chromium.chrome.browser.download.internal.R;
+import org.monyhar.chrome.browser.download.internal.R;
 
 /**
  * Helper FrameLayout that knows how to make children fit certain aspect ratios.
@@ -20,7 +20,7 @@ import org.chromium.chrome.browser.download.internal.R;
  * Below is an example usage to make an ImageView a square based on the width.  Note that you do not
  * need to set both layout_width and layout_height if setting layout_aspectRatio.
  *
- * <org.chromium.chrome.browser.download.home.list.view.AspectRatioFrameLayout
+ * <org.monyhar.chrome.browser.download.home.list.view.AspectRatioFrameLayout
  *     xmlns:android="http://schemas.android.com/apk/res/android"
  *     xmlns:app="http://schemas.android.com/apk/res-auto"
  *     android:layout_width="match_parent"
@@ -28,7 +28,7 @@ import org.chromium.chrome.browser.download.internal.R;
  *     <ImageView
  *         android:layout_width="match_parent"
  *         app:layout_aspectRatio="100%" />
- * </org.chromium.chrome.browser.download.home.list.view.AspectRatioFrameLayout>
+ * </org.monyhar.chrome.browser.download.home.list.view.AspectRatioFrameLayout>
  */
 public class AspectRatioFrameLayout extends FrameLayout {
     /** Creates an instance of {@link AspectRatioFrameLayout}. */

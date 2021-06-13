@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.paintpreview.player.frame;
+package org.monyhar.components.paintpreview.player.frame;
 
 import android.graphics.Matrix;
 import android.graphics.Rect;

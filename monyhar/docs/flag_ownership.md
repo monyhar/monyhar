@@ -80,7 +80,7 @@ schedule changes.
 ## I Have Other Questions
 
 Please get in touch with
-[`flags-dev@chromium.org`](https://groups.google.com/a/chromium.org/forum/#!forum/flags-dev).
+[`flags-dev@monyhar.org`](https://groups.google.com/a/monyhar.org/forum/#!forum/flags-dev).
 If you feel like you need to have a Google-internal discussion for some reason,
 there's also
 [`chrome-flags@`](https://groups.google.com/a/google.com/forum/#!forum/chrome-flags).

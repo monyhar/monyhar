@@ -38,7 +38,7 @@
 #include "base/trace_event/trace_event.h"
 #include "build/build_config.h"
 #include "gpu/command_buffer/common/debug_marker_manager.h"
-#include "gpu/command_buffer/common/gles2_cmd_copy_texture_chromium_utils.h"
+#include "gpu/command_buffer/common/gles2_cmd_copy_texture_monyhar_utils.h"
 #include "gpu/command_buffer/common/gles2_cmd_format.h"
 #include "gpu/command_buffer/common/gles2_cmd_utils.h"
 #include "gpu/command_buffer/common/gpu_memory_buffer_support.h"
@@ -55,7 +55,7 @@
 #include "gpu/command_buffer/service/gl_utils.h"
 #include "gpu/command_buffer/service/gles2_cmd_clear_framebuffer.h"
 #include "gpu/command_buffer/service/gles2_cmd_copy_tex_image.h"
-#include "gpu/command_buffer/service/gles2_cmd_copy_texture_chromium.h"
+#include "gpu/command_buffer/service/gles2_cmd_copy_texture_monyhar.h"
 #include "gpu/command_buffer/service/gles2_cmd_decoder_passthrough.h"
 #include "gpu/command_buffer/service/gles2_cmd_srgb_converter.h"
 #include "gpu/command_buffer/service/gles2_cmd_validation.h"
@@ -804,7 +804,7 @@ class GLES2DecoderImpl : public GLES2Decoder,
   void SetCopyTextureResourceManagerForTest(
       CopyTextureCHROMIUMResourceManager* copy_texture_resource_manager)
       override {
-    copy_texture_chromium_.reset(copy_texture_resource_manager);
+    copy_texture_monyhar_.reset(copy_texture_resource_manager);
   }
 
   void SetCopyTexImageBlitterForTest(
@@ -2510,7 +2510,7 @@ class GLES2DecoderImpl : public GLES2Decoder,
   void ClearFramebufferForWorkaround(GLbitfield mask);
 
   bool SupportsSeparateFramebufferBinds() const {
-    return (feature_info_->feature_flags().chromium_framebuffer_multisample ||
+    return (feature_info_->feature_flags().monyhar_framebuffer_multisample ||
             feature_info_->IsWebGL2OrES3Context());
   }
 
@@ -2757,7 +2757,7 @@ class GLES2DecoderImpl : public GLES2Decoder,
   bool service_logging_;
 
   std::unique_ptr<CopyTexImageResourceManager> copy_tex_image_blit_;
-  std::unique_ptr<CopyTextureCHROMIUMResourceManager> copy_texture_chromium_;
+  std::unique_ptr<CopyTextureCHROMIUMResourceManager> copy_texture_monyhar_;
   std::unique_ptr<SRGBConverter> srgb_converter_;
   std::unique_ptr<ClearFramebufferResourceManager> clear_framebuffer_blit_;
 
@@ -3797,7 +3797,7 @@ gpu::ContextResult GLES2DecoderImpl::Initialize(
          attrib_helper.should_use_native_gmb_for_backbuffer);
 
     if (attrib_helper.samples > 0 && attrib_helper.sample_buffers > 0 &&
-        features().chromium_framebuffer_multisample) {
+        features().monyhar_framebuffer_multisample) {
       // Per ext_framebuffer_multisample spec, need max bound on sample count.
       // max_sample_count must be initialized to a sane value.  If
       // glGetIntegerv() throws a GL error, it leaves its argument unchanged.
@@ -4129,7 +4129,7 @@ gpu::ContextResult GLES2DecoderImpl::Initialize(
     InitializeGLDebugLogging(true, GLDebugMessageCallback, &logger_);
   }
 
-  if (feature_info_->feature_flags().chromium_texture_filtering_hint) {
+  if (feature_info_->feature_flags().monyhar_texture_filtering_hint) {
     api()->glHintFn(GL_TEXTURE_FILTERING_HINT_CHROMIUM, GL_NICEST);
   }
 
@@ -4190,7 +4190,7 @@ Capabilities GLES2DecoderImpl::GetCapabilities() {
   DoGetIntegerv(GL_NUM_SHADER_BINARY_FORMATS, &caps.num_shader_binary_formats,
                 1);
   DoGetIntegerv(GL_BIND_GENERATES_RESOURCE_CHROMIUM,
-                &caps.bind_generates_resource_chromium, 1);
+                &caps.bind_generates_resource_monyhar, 1);
   if (feature_info_->IsWebGL2OrES3Context()) {
     // TODO(zmo): Note that some parameter values could be more than 32-bit,
     // but for now we clamp them to 32-bit max.
@@ -4252,7 +4252,7 @@ Capabilities GLES2DecoderImpl::GetCapabilities() {
     caps.minor_version = 0;
   }
   if (feature_info_->feature_flags().multisampled_render_to_texture ||
-      feature_info_->feature_flags().chromium_framebuffer_multisample ||
+      feature_info_->feature_flags().monyhar_framebuffer_multisample ||
       feature_info_->IsWebGL2OrES3Context()) {
     caps.max_samples = ComputeMaxSamples();
   }
@@ -4289,9 +4289,9 @@ Capabilities GLES2DecoderImpl::GetCapabilities() {
   caps.texture_storage = feature_info_->feature_flags().ext_texture_storage;
   caps.discard_framebuffer =
       feature_info_->feature_flags().ext_discard_framebuffer;
-  caps.sync_query = feature_info_->feature_flags().chromium_sync_query;
+  caps.sync_query = feature_info_->feature_flags().monyhar_sync_query;
 
-  caps.chromium_image_rgb_emulation = ChromiumImageNeedsRGBEmulation();
+  caps.monyhar_image_rgb_emulation = ChromiumImageNeedsRGBEmulation();
 #if defined(OS_MAC)
   // This is unconditionally true on mac, no need to test for it at runtime.
   caps.iosurface = true;
@@ -4324,18 +4324,18 @@ Capabilities GLES2DecoderImpl::GetCapabilities() {
       feature_info_->ext_color_buffer_float_available() ||
       feature_info_->ext_color_buffer_half_float_available();
   caps.image_ycbcr_422 =
-      feature_info_->feature_flags().chromium_image_ycbcr_422;
+      feature_info_->feature_flags().monyhar_image_ycbcr_422;
   caps.image_ycbcr_420v =
-      feature_info_->feature_flags().chromium_image_ycbcr_420v;
+      feature_info_->feature_flags().monyhar_image_ycbcr_420v;
   caps.image_ycbcr_420v_disabled_for_video_frames =
       group_->gpu_preferences()
           .disable_biplanar_gpu_memory_buffers_for_video_frames;
-  caps.image_ar30 = feature_info_->feature_flags().chromium_image_ar30;
-  caps.image_ab30 = feature_info_->feature_flags().chromium_image_ab30;
+  caps.image_ar30 = feature_info_->feature_flags().monyhar_image_ar30;
+  caps.image_ab30 = feature_info_->feature_flags().monyhar_image_ab30;
   caps.image_ycbcr_p010 =
-      feature_info_->feature_flags().chromium_image_ycbcr_p010;
-  caps.max_copy_texture_chromium_size =
-      workarounds().max_copy_texture_chromium_size;
+      feature_info_->feature_flags().monyhar_image_ycbcr_p010;
+  caps.max_copy_texture_monyhar_size =
+      workarounds().max_copy_texture_monyhar_size;
   caps.render_buffer_format_bgra8888 =
       feature_info_->feature_flags().ext_render_buffer_format_bgra8888;
   caps.occlusion_query = feature_info_->feature_flags().occlusion_query;
@@ -4352,14 +4352,14 @@ Capabilities GLES2DecoderImpl::GetCapabilities() {
   }
   caps.texture_npot = feature_info_->feature_flags().npot_ok;
   caps.texture_storage_image =
-      feature_info_->feature_flags().chromium_texture_storage_image;
+      feature_info_->feature_flags().monyhar_texture_storage_image;
   caps.supports_oop_raster = false;
-  caps.chromium_gpu_fence = feature_info_->feature_flags().chromium_gpu_fence;
+  caps.monyhar_gpu_fence = feature_info_->feature_flags().monyhar_gpu_fence;
   caps.unpremultiply_and_dither_copy =
       feature_info_->feature_flags().unpremultiply_and_dither_copy;
   caps.separate_stencil_ref_mask_writemask =
       feature_info_->feature_flags().separate_stencil_ref_mask_writemask;
-  caps.chromium_nonblocking_readback =
+  caps.monyhar_nonblocking_readback =
       feature_info_->context_type() == CONTEXT_TYPE_WEBGL2;
   caps.num_surface_buffers = surface_->GetBufferCount();
   caps.mesa_framebuffer_flip_y =
@@ -4773,7 +4773,7 @@ void GLES2DecoderImpl::DeleteRenderbuffersHelper(
     GLsizei n,
     const volatile GLuint* client_ids) {
   bool supports_separate_framebuffer_binds =
-     features().chromium_framebuffer_multisample;
+     features().monyhar_framebuffer_multisample;
   for (GLsizei ii = 0; ii < n; ++ii) {
     GLuint client_id = client_ids[ii];
     Renderbuffer* renderbuffer = GetRenderbuffer(client_id);
@@ -5378,9 +5378,9 @@ void GLES2DecoderImpl::Destroy(bool have_context) {
       copy_tex_image_blit_.reset();
     }
 
-    if (copy_texture_chromium_.get()) {
-      copy_texture_chromium_->Destroy();
-      copy_texture_chromium_.reset();
+    if (copy_texture_monyhar_.get()) {
+      copy_texture_monyhar_->Destroy();
+      copy_texture_monyhar_.reset();
     }
 
     if (srgb_converter_.get()) {
@@ -5493,7 +5493,7 @@ void GLES2DecoderImpl::Destroy(bool have_context) {
   state_.current_program = nullptr;
 
   copy_tex_image_blit_.reset();
-  copy_texture_chromium_.reset();
+  copy_texture_monyhar_.reset();
   srgb_converter_.reset();
   clear_framebuffer_blit_.reset();
 
@@ -5655,7 +5655,7 @@ error::Error GLES2DecoderImpl::HandleCreateGpuFenceINTERNAL(
   const volatile gles2::cmds::CreateGpuFenceINTERNAL& c =
       *static_cast<const volatile gles2::cmds::CreateGpuFenceINTERNAL*>(
           cmd_data);
-  if (!features().chromium_gpu_fence) {
+  if (!features().monyhar_gpu_fence) {
     return error::kUnknownCommand;
   }
   GLuint gpu_fence_id = static_cast<GLuint>(c.gpu_fence_id);
@@ -5669,7 +5669,7 @@ error::Error GLES2DecoderImpl::HandleWaitGpuFenceCHROMIUM(
     const volatile void* cmd_data) {
   const volatile gles2::cmds::WaitGpuFenceCHROMIUM& c =
       *static_cast<const volatile gles2::cmds::WaitGpuFenceCHROMIUM*>(cmd_data);
-  if (!features().chromium_gpu_fence) {
+  if (!features().monyhar_gpu_fence) {
     return error::kUnknownCommand;
   }
   GLuint gpu_fence_id = static_cast<GLuint>(c.gpu_fence_id);
@@ -5684,7 +5684,7 @@ error::Error GLES2DecoderImpl::HandleDestroyGpuFenceCHROMIUM(
   const volatile gles2::cmds::DestroyGpuFenceCHROMIUM& c =
       *static_cast<const volatile gles2::cmds::DestroyGpuFenceCHROMIUM*>(
           cmd_data);
-  if (!features().chromium_gpu_fence) {
+  if (!features().monyhar_gpu_fence) {
     return error::kUnknownCommand;
   }
   GLuint gpu_fence_id = static_cast<GLuint>(c.gpu_fence_id);
@@ -17651,7 +17651,7 @@ error::Error GLES2DecoderImpl::HandleBeginQueryEXT(
       break;
     case GL_READBACK_SHADOW_COPIES_UPDATED_CHROMIUM:
     case GL_COMMANDS_COMPLETED_CHROMIUM:
-      if (!features().chromium_sync_query) {
+      if (!features().monyhar_sync_query) {
         LOCAL_SET_GL_ERROR(
             GL_INVALID_OPERATION, "glBeginQueryEXT",
             "not enabled for commands completed queries");
@@ -17659,7 +17659,7 @@ error::Error GLES2DecoderImpl::HandleBeginQueryEXT(
       }
       break;
     case GL_PROGRAM_COMPLETION_QUERY_CHROMIUM:
-      if (!features().chromium_completion_query) {
+      if (!features().monyhar_completion_query) {
         LOCAL_SET_GL_ERROR(GL_INVALID_OPERATION, "glBeginQueryEXT",
                            "not enabled for program completion queries");
         return error::kNoError;
@@ -18274,7 +18274,7 @@ void GLES2DecoderImpl::DoCopyTextureCHROMIUM(
       unpack_flip_y == GL_TRUE, unpack_premultiply_alpha == GL_TRUE,
       unpack_unmultiply_alpha == GL_TRUE, false /* dither */);
 
-  copy_texture_chromium_->DoCopyTexture(
+  copy_texture_monyhar_->DoCopyTexture(
       this, source_target, source_texture->service_id(), source_level,
       source_internal_format, dest_target, dest_texture->service_id(),
       dest_level, internal_format, source_width, source_height,
@@ -18501,7 +18501,7 @@ void GLES2DecoderImpl::CopySubTextureHelper(const char* function_name,
     method = CopyTextureMethod::DIRECT_DRAW;
   }
 
-  copy_texture_chromium_->DoCopySubTexture(
+  copy_texture_monyhar_->DoCopySubTexture(
       this, source_target, source_texture->service_id(), source_level,
       source_internal_format, dest_target, dest_texture->service_id(),
       dest_level, dest_internal_format, xoffset, yoffset, x, y, width, height,
@@ -18551,10 +18551,10 @@ bool GLES2DecoderImpl::InitializeCopyTextureCHROMIUM(
     const char* function_name) {
   // Defer initializing the CopyTextureCHROMIUMResourceManager until it is
   // needed because it takes 10s of milliseconds to initialize.
-  if (!copy_texture_chromium_.get()) {
+  if (!copy_texture_monyhar_.get()) {
     LOCAL_COPY_REAL_GL_ERRORS_TO_WRAPPER(function_name);
-    copy_texture_chromium_.reset(CopyTextureCHROMIUMResourceManager::Create());
-    copy_texture_chromium_->Initialize(this, features());
+    copy_texture_monyhar_.reset(CopyTextureCHROMIUMResourceManager::Create());
+    copy_texture_monyhar_->Initialize(this, features());
     if (LOCAL_PEEK_GL_ERROR(function_name) != GL_NO_ERROR)
       return false;
 

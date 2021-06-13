@@ -18,7 +18,7 @@
 #include "jingle/glue/thread_wrapper.h"
 #include "net/url_request/url_request_context_getter.h"
 #include "remoting/base/url_request.h"
-#include "remoting/protocol/chromium_port_allocator_factory.h"
+#include "remoting/protocol/monyhar_port_allocator_factory.h"
 #include "remoting/protocol/connection_tester.h"
 #include "remoting/protocol/fake_authenticator.h"
 #include "remoting/protocol/message_channel_factory.h"

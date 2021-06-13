@@ -20,8 +20,8 @@ using CWVHTMLElementTest = PlatformTest;
 
 // Tests CWVHTMLElementTest initialization.
 TEST_F(CWVHTMLElementTest, Initialization) {
-  NSURL* const hyperlink = [NSURL URLWithString:@"https://chromium.test"];
-  NSURL* const mediaSource = [NSURL URLWithString:@"https://chromium/img.webp"];
+  NSURL* const hyperlink = [NSURL URLWithString:@"https://monyhar.test"];
+  NSURL* const mediaSource = [NSURL URLWithString:@"https://monyhar/img.webp"];
   NSString* const text = @"link";
   CWVHTMLElement* element =
       [[CWVHTMLElement alloc] initWithHyperlink:hyperlink

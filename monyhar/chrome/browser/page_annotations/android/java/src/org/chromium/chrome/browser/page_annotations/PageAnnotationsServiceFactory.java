@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.page_annotations;
+package org.monyhar.chrome.browser.page_annotations;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.profiles.ProfileManager;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.profiles.ProfileManager;
 
 import java.util.HashMap;
 import java.util.Map;

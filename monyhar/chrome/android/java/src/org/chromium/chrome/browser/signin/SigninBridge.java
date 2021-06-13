@@ -2,38 +2,38 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.signin;
+package org.monyhar.chrome.browser.signin;
 
 import android.accounts.Account;
 import android.content.Context;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.signin.services.IdentityServicesProvider;
-import org.chromium.chrome.browser.signin.services.SigninManager;
-import org.chromium.chrome.browser.signin.services.SigninMetricsUtils;
-import org.chromium.chrome.browser.signin.services.SigninPreferencesManager;
-import org.chromium.chrome.browser.signin.services.WebSigninBridge;
-import org.chromium.chrome.browser.signin.ui.account_picker.AccountPickerBottomSheetCoordinator;
-import org.chromium.chrome.browser.signin.ui.account_picker.AccountPickerDelegateImpl;
-import org.chromium.chrome.browser.signin.ui.account_picker.AccountPickerFeatureUtils;
-import org.chromium.chrome.browser.sync.settings.AccountManagementFragment;
-import org.chromium.chrome.browser.tabmodel.TabModel;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorSupplier;
-import org.chromium.chrome.browser.tabmodel.TabModelUtils;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetControllerProvider;
-import org.chromium.components.signin.AccountManagerFacadeProvider;
-import org.chromium.components.signin.AccountUtils;
-import org.chromium.components.signin.GAIAServiceType;
-import org.chromium.components.signin.metrics.AccountConsistencyPromoAction;
-import org.chromium.components.signin.metrics.SigninAccessPoint;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.signin.services.IdentityServicesProvider;
+import org.monyhar.chrome.browser.signin.services.SigninManager;
+import org.monyhar.chrome.browser.signin.services.SigninMetricsUtils;
+import org.monyhar.chrome.browser.signin.services.SigninPreferencesManager;
+import org.monyhar.chrome.browser.signin.services.WebSigninBridge;
+import org.monyhar.chrome.browser.signin.ui.account_picker.AccountPickerBottomSheetCoordinator;
+import org.monyhar.chrome.browser.signin.ui.account_picker.AccountPickerDelegateImpl;
+import org.monyhar.chrome.browser.signin.ui.account_picker.AccountPickerFeatureUtils;
+import org.monyhar.chrome.browser.sync.settings.AccountManagementFragment;
+import org.monyhar.chrome.browser.tabmodel.TabModel;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorSupplier;
+import org.monyhar.chrome.browser.tabmodel.TabModelUtils;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetControllerProvider;
+import org.monyhar.components.signin.AccountManagerFacadeProvider;
+import org.monyhar.components.signin.AccountUtils;
+import org.monyhar.components.signin.GAIAServiceType;
+import org.monyhar.components.signin.metrics.AccountConsistencyPromoAction;
+import org.monyhar.components.signin.metrics.SigninAccessPoint;
+import org.monyhar.ui.base.WindowAndroid;
 
 import java.util.List;
 

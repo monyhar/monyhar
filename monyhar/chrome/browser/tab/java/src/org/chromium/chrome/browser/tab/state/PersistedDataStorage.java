@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab.state;
+package org.monyhar.chrome.browser.tab.state;
 
-import org.chromium.base.Callback;
+import org.monyhar.base.Callback;
 
 /**
  * Provides key -> byte[] array mapping storage with namespace support for PersistedData

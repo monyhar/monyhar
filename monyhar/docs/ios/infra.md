@@ -20,8 +20,8 @@ the change again.
 
 Bots are slaves attached to a buildbot master (or "waterfall"). A buildbot
 master is a server which polls for commits to a repository and triggers workers
-to compile and test new commits whenever they are detected. [chromium.mac] is
-the main waterfall for Mac desktop and iOS. [tryserver.chromium.mac] serves
+to compile and test new commits whenever they are detected. [monyhar.mac] is
+the main waterfall for Mac desktop and iOS. [tryserver.monyhar.mac] serves
 as the try server for Mac desktop and iOS.
 
 The bots know how to check out a given revision of Chromium, compile, and test.
@@ -35,7 +35,7 @@ contains various infra-related scripts.
 
 #### Pollers
 
-[chromium.mac] uses a `GitilesPoller` which polls the Chromium repository for
+[monyhar.mac] uses a `GitilesPoller` which polls the Chromium repository for
 new commits using the [gitiles] interface. When a new commit is detected, the
 bots are triggered.
 
@@ -123,17 +123,17 @@ directory. The configs directory contains a named directory for each master. For
 example:
 ```shell
 $ ls ios/build/bots
-OWNERS  scripts  tests  chromium.fyi  chromium.mac
+OWNERS  scripts  tests  monyhar.fyi  monyhar.mac
 ```
-In this case, configs are defined for iOS bots on [chromium.fyi] and
-[chromium.mac]. Inside each master-specific directory are JSON config files
+In this case, configs are defined for iOS bots on [monyhar.fyi] and
+[monyhar.mac]. Inside each master-specific directory are JSON config files
 named after each bot. For example:
 ```shell
-$ ls ios/build/bots/chromium.mac
+$ ls ios/build/bots/monyhar.mac
 ios-device.json ios-simulator.json
 ```
-The `ios-device` bot on [chromium.mac] will read its configuration from
-`chromium.mac/ios-device.json` in the configs directory.
+The `ios-device` bot on [monyhar.mac] will read its configuration from
+`monyhar.mac/ios-device.json` in the configs directory.
 
 ### Example
 
@@ -363,28 +363,28 @@ reporting server where they can be used to symbolicate stack traces.
 If `artifact` is a directory, you must specify `"compress": true`.
 
 [analyzer]: ../../tools/mb
-[breakpad]: https://chromium.googlesource.com/breakpad/breakpad
+[breakpad]: https://monyhar.googlesource.com/breakpad/breakpad
 [buildbucket]: https://cr-buildbucket.appspot.com
-[chromium.fyi]: https://build.chromium.org/p/chromium.fyi/waterfall
-[chromium.mac]: https://build.chromium.org/p/chromium.mac
+[monyhar.fyi]: https://build.monyhar.org/p/monyhar.fyi/waterfall
+[monyhar.mac]: https://build.monyhar.org/p/monyhar.mac
 [clang]: ../../tools/clang
-[commit queue]: https://dev.chromium.org/developers/testing/commit-queue
+[commit queue]: https://dev.monyhar.org/developers/testing/commit-queue
 [gitiles]: https://gerrit.googlesource.com/gitiles
 [GN]: ../../tools/gn
 [instructions]: ./build_instructions.md
-[iOS recipes]: https://chromium.googlesource.com/chromium/tools/build/+/main/scripts/slave/recipes/ios
+[iOS recipes]: https://monyhar.googlesource.com/monyhar/tools/build/+/main/scripts/slave/recipes/ios
 [iOS simulator]: ../../testing/iossim
-[recipe module]: https://chromium.googlesource.com/chromium/tools/build/+/main/scripts/slave/recipe_modules/ios
-[recipes]: https://chromium.googlesource.com/infra/infra/+/HEAD/doc/users/recipes.md
+[recipe module]: https://monyhar.googlesource.com/monyhar/tools/build/+/main/scripts/slave/recipe_modules/ios
+[recipes]: https://monyhar.googlesource.com/infra/infra/+/HEAD/doc/users/recipes.md
 [simulator]: https://developer.apple.com/library/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/Introduction/Introduction.html
 [src/ios/build/bots]: ../../ios/build/bots
 [src/ios/build/bots/scripts]: ../../ios/build/bots/scripts
-[swarming]: https://chromium.googlesource.com/infra/luci/luci-py/+/main/appengine/swarming/
-[swarming server]: https://chromium-swarm.appspot.com
+[swarming]: https://monyhar.googlesource.com/infra/luci/luci-py/+/main/appengine/swarming/
+[swarming server]: https://monyhar-swarm.appspot.com
 [test runner]: ../../ios/build/bots/scripts/test_runner.py
-[tools/build]: https://chromium.googlesource.com/chromium/tools/build
-[try job access]: https://www.chromium.org/getting-involved/become-a-committer#TOC-Try-job-access
-[try server]: https://build.chromium.org/p/tryserver.chromium.mac/waterfall
-[tryserver.chromium.mac]: https://build.chromium.org/p/tryserver.chromium.mac/waterfall
+[tools/build]: https://monyhar.googlesource.com/monyhar/tools/build
+[try job access]: https://www.monyhar.org/getting-involved/become-a-committer#TOC-Try-job-access
+[try server]: https://build.monyhar.org/p/tryserver.monyhar.mac/waterfall
+[tryserver.monyhar.mac]: https://build.monyhar.org/p/tryserver.monyhar.mac/waterfall
 [universal binary]: https://en.wikipedia.org/wiki/Universal_binary
 [xctest]: https://developer.apple.com/reference/xctest

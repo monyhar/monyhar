@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps;
+package org.monyhar.chrome.browser.webapps;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -20,19 +20,19 @@ import org.robolectric.Robolectric;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowApplication;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.components.webapk.lib.client.WebApkValidator;
-import org.chromium.components.webapk.lib.common.WebApkMetaDataKeys;
-import org.chromium.webapk.lib.common.WebApkConstants;
-import org.chromium.webapk.test.WebApkTestHelper;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.components.webapk.lib.client.WebApkValidator;
+import org.monyhar.components.webapk.lib.common.WebApkMetaDataKeys;
+import org.monyhar.webapk.lib.common.WebApkConstants;
+import org.monyhar.webapk.test.WebApkTestHelper;
 
 /** JUnit test for WebappLauncherActivity. */
 @RunWith(BaseRobolectricTestRunner.class)
 @Config(manifest = Config.NONE)
 public class WebappLauncherActivityTest {
-    private static final String WEBAPK_PACKAGE_NAME = "org.chromium.webapk.test_package";
+    private static final String WEBAPK_PACKAGE_NAME = "org.monyhar.webapk.test_package";
     private static final String START_URL = "https://www.google.com/scope/a_is_for_apple";
 
     @Before

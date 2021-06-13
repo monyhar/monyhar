@@ -27,7 +27,7 @@ namespace android_webview {
 
 // This class overrides VizCompositorThreadRunner largely so that
 // FrameSinkManagerImpl and other viz classes are connected to their mojo end
-// points using the same code path (through VizMainImpl) as other chromium
+// points using the same code path (through VizMainImpl) as other monyhar
 // platforms. The benefit of this include:
 // * code path sharing
 // * keep illusion in content and below that webview does not assume

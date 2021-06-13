@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.signin;
+package org.monyhar.chrome.browser.signin;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
@@ -22,28 +22,28 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.stubbing.Answer;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.signin.services.SigninManager;
-import org.chromium.chrome.browser.sync.AndroidSyncSettings;
-import org.chromium.chrome.browser.sync.SyncService;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.externalauth.ExternalAuthUtils;
-import org.chromium.components.signin.AccountUtils;
-import org.chromium.components.signin.base.AccountInfo;
-import org.chromium.components.signin.base.CoreAccountId;
-import org.chromium.components.signin.base.CoreAccountInfo;
-import org.chromium.components.signin.identitymanager.AccountTrackerService;
-import org.chromium.components.signin.identitymanager.ConsentLevel;
-import org.chromium.components.signin.identitymanager.IdentityManager;
-import org.chromium.components.signin.identitymanager.IdentityManagerJni;
-import org.chromium.components.signin.identitymanager.IdentityMutator;
-import org.chromium.components.signin.identitymanager.PrimaryAccountChangeEvent;
-import org.chromium.components.signin.metrics.SigninAccessPoint;
-import org.chromium.components.signin.metrics.SignoutDelete;
-import org.chromium.components.signin.metrics.SignoutReason;
-import org.chromium.components.sync.ModelType;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.signin.services.SigninManager;
+import org.monyhar.chrome.browser.sync.AndroidSyncSettings;
+import org.monyhar.chrome.browser.sync.SyncService;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.externalauth.ExternalAuthUtils;
+import org.monyhar.components.signin.AccountUtils;
+import org.monyhar.components.signin.base.AccountInfo;
+import org.monyhar.components.signin.base.CoreAccountId;
+import org.monyhar.components.signin.base.CoreAccountInfo;
+import org.monyhar.components.signin.identitymanager.AccountTrackerService;
+import org.monyhar.components.signin.identitymanager.ConsentLevel;
+import org.monyhar.components.signin.identitymanager.IdentityManager;
+import org.monyhar.components.signin.identitymanager.IdentityManagerJni;
+import org.monyhar.components.signin.identitymanager.IdentityMutator;
+import org.monyhar.components.signin.identitymanager.PrimaryAccountChangeEvent;
+import org.monyhar.components.signin.metrics.SigninAccessPoint;
+import org.monyhar.components.signin.metrics.SignoutDelete;
+import org.monyhar.components.signin.metrics.SignoutReason;
+import org.monyhar.components.sync.ModelType;
 
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;

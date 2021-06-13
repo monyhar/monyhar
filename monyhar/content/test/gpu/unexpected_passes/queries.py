@@ -59,10 +59,10 @@ WITH
             FROM tr.tags
             WHERE key = "raw_typ_expectation") as typ_expectations
       )) as test_results,
-      FROM `luci-resultdb.chromium.gpu_{builder_type}_test_results` tr
+      FROM `luci-resultdb.monyhar.gpu_{builder_type}_test_results` tr
       WHERE
         status != "SKIP"
-        AND exported.realm = "chromium:{builder_type}"
+        AND exported.realm = "monyhar:{builder_type}"
         AND STRUCT("builder", @builder_name) IN UNNEST(variant)
         {test_filter_clause}
       GROUP BY exported.id
@@ -105,10 +105,10 @@ WITH
             FROM tr.tags
             WHERE key = "raw_typ_expectation") as typ_expectations
       )) as test_results,
-      FROM `luci-resultdb.chromium.gpu_{builder_type}_test_results` tr
+      FROM `luci-resultdb.monyhar.gpu_{builder_type}_test_results` tr
       WHERE
         status != "SKIP"
-        AND exported.realm = "chromium:{builder_type}"
+        AND exported.realm = "monyhar:{builder_type}"
         AND STRUCT("builder", @builder_name) IN UNNEST(variant)
         AND REGEXP_CONTAINS(
           test_id,

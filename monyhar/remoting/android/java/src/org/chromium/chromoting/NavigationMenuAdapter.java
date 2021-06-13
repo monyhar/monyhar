@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting;
+package org.monyhar.chromoting;
 
 import android.app.Activity;
 import android.content.Context;
@@ -16,8 +16,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chromoting.help.HelpContext;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chromoting.help.HelpContext;
 
 /**
  * Describes the appearance and behavior of the navigation menu. This also implements

@@ -17,7 +17,7 @@
   <uses-permission android:name="android.permission.INTERNET"/>
   <uses-sdk android:minSdkVersion="29" android:targetSdkVersion="30"/>
   <application
-      android:name="org.chromium.android_webview.nonembedded.WebViewApkApplication"
+      android:name="org.monyhar.android_webview.nonembedded.WebViewApkApplication"
       android:extractNativeLibs="False"
       android:icon="@$PACKAGE:drawable/icon_webview"
       android:label="Android System WebView"
@@ -29,13 +29,13 @@
         android:theme="@android:style/Theme.Translucent.NoTitleBar">
     </activity>  # DIFF-ANCHOR: ea1a94af
     <activity  # DIFF-ANCHOR: a4438884
-        android:name="org.chromium.android_webview.devui.MainActivity"
+        android:name="org.monyhar.android_webview.devui.MainActivity"
         android:exported="true"
         android:icon="@drawable/icon_webview"
         android:label="WebView DevTools"
         android:launchMode="singleTask"
         android:process=":webview_apk"
-        android:taskAffinity="$PACKAGE.org.chromium.android_webview.devui"
+        android:taskAffinity="$PACKAGE.org.monyhar.android_webview.devui"
         android:theme="@style/Theme.DevUi.DayNight"
         android:visibleToInstantApps="true"
         android:windowSoftInputMode="adjustPan">
@@ -45,7 +45,7 @@
       </intent-filter>  # DIFF-ANCHOR: b80aa336
     </activity>  # DIFF-ANCHOR: a4438884
     <activity  # DIFF-ANCHOR: aeabab17
-        android:name="org.chromium.android_webview.nonembedded.LicenseActivity"
+        android:name="org.monyhar.android_webview.nonembedded.LicenseActivity"
         android:exported="true"
         android:label="@string/license_activity_title"
         android:process=":webview_apk">
@@ -56,25 +56,25 @@
       <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED" android:value="true"/>
     </activity>  # DIFF-ANCHOR: aeabab17
     <activity-alias  # DIFF-ANCHOR: b7cc06e9
-        android:name="org.chromium.android_webview.devui.DeveloperModeState"
+        android:name="org.monyhar.android_webview.devui.DeveloperModeState"
         android:enabled="false"
         android:process=":webview_apk"
-        android:targetActivity="org.chromium.android_webview.devui.MainActivity"
+        android:targetActivity="org.monyhar.android_webview.devui.MainActivity"
         android:visibleToInstantApps="true">
     </activity-alias>  # DIFF-ANCHOR: b7cc06e9
     <meta-data android:name="$PACKAGE.WebViewLibrary" android:value="libmonochrome.so"/>
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
-    <meta-data android:name="org.chromium.content.browser.NUM_PRIVILEGED_SERVICES" android:value="0"/>
-    <meta-data android:name="org.chromium.content.browser.NUM_SANDBOXED_SERVICES" android:value="40"/>
+    <meta-data android:name="org.monyhar.content.browser.NUM_PRIVILEGED_SERVICES" android:value="0"/>
+    <meta-data android:name="org.monyhar.content.browser.NUM_SANDBOXED_SERVICES" android:value="40"/>
     <provider  # DIFF-ANCHOR: a5e78e63
-        android:name="org.chromium.android_webview.nonembedded.LicenseContentProvider"
+        android:name="org.monyhar.android_webview.nonembedded.LicenseContentProvider"
         android:authorities="$PACKAGE.LicenseContentProvider"
         android:exported="true"
         android:grantUriPermissions="true"
         android:process=":webview_apk">
     </provider>  # DIFF-ANCHOR: a5e78e63
     <provider  # DIFF-ANCHOR: bfe37944
-        android:name="org.chromium.android_webview.services.DeveloperModeContentProvider"
+        android:name="org.monyhar.android_webview.services.DeveloperModeContentProvider"
         android:authorities="$PACKAGE.DeveloperModeContentProvider"
         android:exported="true"
         android:process=":webview_service"
@@ -93,52 +93,52 @@
         android:exported="false">
     </service>  # DIFF-ANCHOR: 48ce9d28
     <service  # DIFF-ANCHOR: b9ec52c4
-        android:name="org.chromium.android_webview.nonembedded.AwComponentUpdateService"
+        android:name="org.monyhar.android_webview.nonembedded.AwComponentUpdateService"
         android:exported="false"
         android:permission="android.permission.BIND_JOB_SERVICE"
         android:process=":webview_apk">
     </service>  # DIFF-ANCHOR: b9ec52c4
     <service  # DIFF-ANCHOR: 3cd6d713
-        android:name="org.chromium.android_webview.services.AwMinidumpUploadJobService"
+        android:name="org.monyhar.android_webview.services.AwMinidumpUploadJobService"
         android:exported="true"
         android:permission="android.permission.BIND_JOB_SERVICE"
         android:process=":webview_service">
     </service>  # DIFF-ANCHOR: 3cd6d713
     <service  # DIFF-ANCHOR: 65cddb26
-        android:name="org.chromium.android_webview.services.AwVariationsSeedFetcher"
+        android:name="org.monyhar.android_webview.services.AwVariationsSeedFetcher"
         android:exported="false"
         android:permission="android.permission.BIND_JOB_SERVICE"
         android:process=":webview_service">
     </service>  # DIFF-ANCHOR: 65cddb26
     <service  # DIFF-ANCHOR: c756cf8d
-        android:name="org.chromium.android_webview.services.ComponentsProviderService"
+        android:name="org.monyhar.android_webview.services.ComponentsProviderService"
         android:exported="true"
         android:process=":webview_service"
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: c756cf8d
     <service  # DIFF-ANCHOR: 5cda9608
-        android:name="org.chromium.android_webview.services.CrashReceiverService"
+        android:name="org.monyhar.android_webview.services.CrashReceiverService"
         android:exported="true"
         android:process=":webview_service">
     </service>  # DIFF-ANCHOR: 5cda9608
     <service  # DIFF-ANCHOR: adce9ea1
-        android:name="org.chromium.android_webview.services.DeveloperUiService"
+        android:name="org.monyhar.android_webview.services.DeveloperUiService"
         android:exported="true"
         android:process=":webview_service">
     </service>  # DIFF-ANCHOR: adce9ea1
     <service  # DIFF-ANCHOR: eecf2fee
-        android:name="org.chromium.android_webview.services.MetricsBridgeService"
+        android:name="org.monyhar.android_webview.services.MetricsBridgeService"
         android:exported="true"
         android:process=":webview_service"
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: eecf2fee
     <service  # DIFF-ANCHOR: dc926e35
-        android:name="org.chromium.android_webview.services.VariationsSeedServer"
+        android:name="org.monyhar.android_webview.services.VariationsSeedServer"
         android:exported="true"
         android:process=":webview_service">
     </service>  # DIFF-ANCHOR: dc926e35
     <service  # DIFF-ANCHOR: b1e3e8bd
-        android:name="org.chromium.content.app.SandboxedProcessService0"
+        android:name="org.monyhar.content.app.SandboxedProcessService0"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -146,7 +146,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: b1e3e8bd
     <service  # DIFF-ANCHOR: 76d1ccf8
-        android:name="org.chromium.content.app.SandboxedProcessService1"
+        android:name="org.monyhar.content.app.SandboxedProcessService1"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -154,7 +154,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: 76d1ccf8
     <service  # DIFF-ANCHOR: 38b95266
-        android:name="org.chromium.content.app.SandboxedProcessService10"
+        android:name="org.monyhar.content.app.SandboxedProcessService10"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -162,7 +162,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: 38b95266
     <service  # DIFF-ANCHOR: e4a2e4a2
-        android:name="org.chromium.content.app.SandboxedProcessService11"
+        android:name="org.monyhar.content.app.SandboxedProcessService11"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -170,7 +170,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: e4a2e4a2
     <service  # DIFF-ANCHOR: d9b2ffba
-        android:name="org.chromium.content.app.SandboxedProcessService12"
+        android:name="org.monyhar.content.app.SandboxedProcessService12"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -178,7 +178,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: d9b2ffba
     <service  # DIFF-ANCHOR: b41bb17d
-        android:name="org.chromium.content.app.SandboxedProcessService13"
+        android:name="org.monyhar.content.app.SandboxedProcessService13"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -186,7 +186,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: b41bb17d
     <service  # DIFF-ANCHOR: aec0ea21
-        android:name="org.chromium.content.app.SandboxedProcessService14"
+        android:name="org.monyhar.content.app.SandboxedProcessService14"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -194,7 +194,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: aec0ea21
     <service  # DIFF-ANCHOR: cf88a5e5
-        android:name="org.chromium.content.app.SandboxedProcessService15"
+        android:name="org.monyhar.content.app.SandboxedProcessService15"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -202,7 +202,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: cf88a5e5
     <service  # DIFF-ANCHOR: 7d85889d
-        android:name="org.chromium.content.app.SandboxedProcessService16"
+        android:name="org.monyhar.content.app.SandboxedProcessService16"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -210,7 +210,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: 7d85889d
     <service  # DIFF-ANCHOR: dae26ed4
-        android:name="org.chromium.content.app.SandboxedProcessService17"
+        android:name="org.monyhar.content.app.SandboxedProcessService17"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -218,7 +218,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: dae26ed4
     <service  # DIFF-ANCHOR: 2c6cf029
-        android:name="org.chromium.content.app.SandboxedProcessService18"
+        android:name="org.monyhar.content.app.SandboxedProcessService18"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -226,7 +226,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: 2c6cf029
     <service  # DIFF-ANCHOR: 1d2f0988
-        android:name="org.chromium.content.app.SandboxedProcessService19"
+        android:name="org.monyhar.content.app.SandboxedProcessService19"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -234,7 +234,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: 1d2f0988
     <service  # DIFF-ANCHOR: 4a39041b
-        android:name="org.chromium.content.app.SandboxedProcessService2"
+        android:name="org.monyhar.content.app.SandboxedProcessService2"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -242,7 +242,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: 4a39041b
     <service  # DIFF-ANCHOR: 073533bf
-        android:name="org.chromium.content.app.SandboxedProcessService20"
+        android:name="org.monyhar.content.app.SandboxedProcessService20"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -250,7 +250,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: 073533bf
     <service  # DIFF-ANCHOR: d24da41d
-        android:name="org.chromium.content.app.SandboxedProcessService21"
+        android:name="org.monyhar.content.app.SandboxedProcessService21"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -258,7 +258,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: d24da41d
     <service  # DIFF-ANCHOR: 594d8b32
-        android:name="org.chromium.content.app.SandboxedProcessService22"
+        android:name="org.monyhar.content.app.SandboxedProcessService22"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -266,7 +266,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: 594d8b32
     <service  # DIFF-ANCHOR: 5528c0c3
-        android:name="org.chromium.content.app.SandboxedProcessService23"
+        android:name="org.monyhar.content.app.SandboxedProcessService23"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -274,7 +274,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: 5528c0c3
     <service  # DIFF-ANCHOR: b7ab2ba3
-        android:name="org.chromium.content.app.SandboxedProcessService24"
+        android:name="org.monyhar.content.app.SandboxedProcessService24"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -282,7 +282,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: b7ab2ba3
     <service  # DIFF-ANCHOR: cec6cb64
-        android:name="org.chromium.content.app.SandboxedProcessService25"
+        android:name="org.monyhar.content.app.SandboxedProcessService25"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -290,7 +290,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: cec6cb64
     <service  # DIFF-ANCHOR: 5b4a00fe
-        android:name="org.chromium.content.app.SandboxedProcessService26"
+        android:name="org.monyhar.content.app.SandboxedProcessService26"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -298,7 +298,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: 5b4a00fe
     <service  # DIFF-ANCHOR: ad49d203
-        android:name="org.chromium.content.app.SandboxedProcessService27"
+        android:name="org.monyhar.content.app.SandboxedProcessService27"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -306,7 +306,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: ad49d203
     <service  # DIFF-ANCHOR: 573298e9
-        android:name="org.chromium.content.app.SandboxedProcessService28"
+        android:name="org.monyhar.content.app.SandboxedProcessService28"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -314,7 +314,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: 573298e9
     <service  # DIFF-ANCHOR: 79897b32
-        android:name="org.chromium.content.app.SandboxedProcessService29"
+        android:name="org.monyhar.content.app.SandboxedProcessService29"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -322,7 +322,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: 79897b32
     <service  # DIFF-ANCHOR: 84335864
-        android:name="org.chromium.content.app.SandboxedProcessService3"
+        android:name="org.monyhar.content.app.SandboxedProcessService3"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -330,7 +330,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: 84335864
     <service  # DIFF-ANCHOR: c4bd371e
-        android:name="org.chromium.content.app.SandboxedProcessService30"
+        android:name="org.monyhar.content.app.SandboxedProcessService30"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -338,7 +338,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: c4bd371e
     <service  # DIFF-ANCHOR: 394a9fd0
-        android:name="org.chromium.content.app.SandboxedProcessService31"
+        android:name="org.monyhar.content.app.SandboxedProcessService31"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -346,7 +346,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: 394a9fd0
     <service  # DIFF-ANCHOR: b811afb8
-        android:name="org.chromium.content.app.SandboxedProcessService32"
+        android:name="org.monyhar.content.app.SandboxedProcessService32"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -354,7 +354,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: b811afb8
     <service  # DIFF-ANCHOR: 2811ddd3
-        android:name="org.chromium.content.app.SandboxedProcessService33"
+        android:name="org.monyhar.content.app.SandboxedProcessService33"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -362,7 +362,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: 2811ddd3
     <service  # DIFF-ANCHOR: 73ae1688
-        android:name="org.chromium.content.app.SandboxedProcessService34"
+        android:name="org.monyhar.content.app.SandboxedProcessService34"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -370,7 +370,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: 73ae1688
     <service  # DIFF-ANCHOR: c476f324
-        android:name="org.chromium.content.app.SandboxedProcessService35"
+        android:name="org.monyhar.content.app.SandboxedProcessService35"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -378,7 +378,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: c476f324
     <service  # DIFF-ANCHOR: 75d5304b
-        android:name="org.chromium.content.app.SandboxedProcessService36"
+        android:name="org.monyhar.content.app.SandboxedProcessService36"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -386,7 +386,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: 75d5304b
     <service  # DIFF-ANCHOR: dc6d0617
-        android:name="org.chromium.content.app.SandboxedProcessService37"
+        android:name="org.monyhar.content.app.SandboxedProcessService37"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -394,7 +394,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: dc6d0617
     <service  # DIFF-ANCHOR: e31efe49
-        android:name="org.chromium.content.app.SandboxedProcessService38"
+        android:name="org.monyhar.content.app.SandboxedProcessService38"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -402,7 +402,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: e31efe49
     <service  # DIFF-ANCHOR: 5736507e
-        android:name="org.chromium.content.app.SandboxedProcessService39"
+        android:name="org.monyhar.content.app.SandboxedProcessService39"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -410,7 +410,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: 5736507e
     <service  # DIFF-ANCHOR: a161be24
-        android:name="org.chromium.content.app.SandboxedProcessService4"
+        android:name="org.monyhar.content.app.SandboxedProcessService4"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -418,7 +418,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: a161be24
     <service  # DIFF-ANCHOR: 8e591688
-        android:name="org.chromium.content.app.SandboxedProcessService5"
+        android:name="org.monyhar.content.app.SandboxedProcessService5"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -426,7 +426,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: 8e591688
     <service  # DIFF-ANCHOR: 705141d0
-        android:name="org.chromium.content.app.SandboxedProcessService6"
+        android:name="org.monyhar.content.app.SandboxedProcessService6"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -434,7 +434,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: 705141d0
     <service  # DIFF-ANCHOR: 38ed2189
-        android:name="org.chromium.content.app.SandboxedProcessService7"
+        android:name="org.monyhar.content.app.SandboxedProcessService7"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -442,7 +442,7 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: 38ed2189
     <service  # DIFF-ANCHOR: aa417956
-        android:name="org.chromium.content.app.SandboxedProcessService8"
+        android:name="org.monyhar.content.app.SandboxedProcessService8"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
@@ -450,13 +450,13 @@
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: aa417956
     <service  # DIFF-ANCHOR: e2f3bbbd
-        android:name="org.chromium.content.app.SandboxedProcessService9"
+        android:name="org.monyhar.content.app.SandboxedProcessService9"
         android:exported="true"
         android:externalService="true"
         android:isolatedProcess="true"
         android:process=":sandboxed_process9"
         android:visibleToInstantApps="true">
     </service>  # DIFF-ANCHOR: e2f3bbbd
-    <uses-static-library android:name="org.chromium.trichromelibrary" android:certDigest="32a2fc74d731105859e5a85df16d95f102d85b22099b8064c5d8915c61dad1e0" android:version="$VERSION_NUMBER"/>
+    <uses-static-library android:name="org.monyhar.trichromelibrary" android:certDigest="32a2fc74d731105859e5a85df16d95f102d85b22099b8064c5d8915c61dad1e0" android:version="$VERSION_NUMBER"/>
   </application>
 </manifest>

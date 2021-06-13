@@ -15,7 +15,7 @@ ORIGINAL_XML = """
 <!-- Second level Comment 1 -->
 <histograms>
  <histogram name="Test.Histogram" units="us">
-   <owner>person@chromium.org</owner>
+   <owner>person@monyhar.org</owner>
    <summary>A long line that should be formatted in a way that does not result
      in extra whitespace between words.
 
@@ -43,7 +43,7 @@ ORIGINAL_XML = """
 <histogram_suffixes_list>
 
 <histogram name="Test.MisplacedHistogram" units="us">
-   <owner>person@chromium.org</owner>
+   <owner>person@monyhar.org</owner>
    Misplaced content.
    <summary>A misplaced histogram
    </summary>
@@ -76,7 +76,7 @@ PRETTY_XML = """
   <obsolete>
     Removed 1/2019.
   </obsolete>
-  <owner>person@chromium.org</owner>
+  <owner>person@monyhar.org</owner>
   <summary>
     A long line that should be formatted in a way that does not result in extra
     whitespace between words.
@@ -86,7 +86,7 @@ PRETTY_XML = """
 </histogram>
 
 <histogram name="Test.MisplacedHistogram" units="microseconds">
-  <owner>person@chromium.org</owner>
+  <owner>person@monyhar.org</owner>
   <summary>A misplaced histogram</summary>
 </histogram>
 

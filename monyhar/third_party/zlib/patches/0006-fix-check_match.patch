@@ -1,5 +1,5 @@
 From 8304bdda5293ffd5b3efce8e4f54904b387029d6 Mon Sep 17 00:00:00 2001
-From: Hans Wennborg <hans@chromium.org>
+From: Hans Wennborg <hans@monyhar.org>
 Date: Wed, 23 Sep 2020 16:36:38 +0200
 Subject: [PATCH] Avoid crashing in check_match when prev_match == -1
 

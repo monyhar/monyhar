@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget;
+package org.monyhar.components.browser_ui.widget;
 
 import android.app.Activity;
 import android.content.DialogInterface;
@@ -23,15 +23,15 @@ import org.junit.ClassRule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseActivityTestRule;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.components.browser_ui.widget.PromoDialog.DialogParams;
-import org.chromium.components.browser_ui.widget.test.R;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.ui.test.util.DisableAnimationsTestRule;
-import org.chromium.ui.test.util.DummyUiActivity;
+import org.monyhar.base.test.BaseActivityTestRule;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.components.browser_ui.widget.PromoDialog.DialogParams;
+import org.monyhar.components.browser_ui.widget.test.R;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.ui.test.util.DisableAnimationsTestRule;
+import org.monyhar.ui.test.util.DummyUiActivity;
 
 import java.util.concurrent.Callable;
 

@@ -1,7 +1,7 @@
 // Copyright 2020 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.chrome.browser.safe_browsing;
+package org.monyhar.chrome.browser.safe_browsing;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,11 +11,11 @@ import android.provider.Browser;
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.IntentHandler.ExternalAppId;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.IntentHandler.ExternalAppId;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Bridge between Java and native SafeBrowsing code to get referring app information.

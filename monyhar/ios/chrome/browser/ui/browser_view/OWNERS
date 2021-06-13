@@ -1,9 +1,9 @@
-marq@chromium.org
-rohitrao@chromium.org
+marq@monyhar.org
+rohitrao@monyhar.org
 
-per-file browser_coordinator.*=edchin@chromium.org
+per-file browser_coordinator.*=edchin@monyhar.org
 
 # BVC OWNERS for small changes. Please refer larger changes to one
 # of the above OWNERs.
-per-file browser_view_controller*=edchin@chromium.org
-per-file browser_view_controller*=gambard@chromium.org
+per-file browser_view_controller*=edchin@monyhar.org
+per-file browser_view_controller*=gambard@monyhar.org

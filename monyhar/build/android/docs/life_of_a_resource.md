@@ -9,7 +9,7 @@ are built in Chromium's build system. It does not mention native resources
 which are [processed differently][native resources].
 
 [android resources]: https://developer.android.com/guide/topics/resources/providing-resources
-[native resources]: https://www.chromium.org/developers/tools-we-use-in-chromium/grit/grit-users-guide
+[native resources]: https://www.monyhar.org/developers/tools-we-use-in-monyhar/grit/grit-users-guide
 
 The steps consume the following files as inputs:
 * AndroidManifest.xml
@@ -143,7 +143,7 @@ resources are compiled as both `resources.arsc` and `resources.proto`.
 An example message from a stacktrace could be something like this:
 ```
 java.lang.IllegalStateException: Could not find CoordinatorLayout descendant
-view with id org.chromium.chrome:id/0_resource_name_obfuscated to anchor view
+view with id org.monyhar.chrome:id/0_resource_name_obfuscated to anchor view
 android.view.ViewStub{be192d5 G.E...... ......I. 0,0-0,0 #7f0a02ad
 app:id/0_resource_name_obfuscated}
 ```
@@ -192,7 +192,7 @@ Monochrome, when loaded as webview, rewrites the package ids of resources used
 by the webview portion to the correct value at runtime, otherwise, its resources
 have package id `0x7f` when run as a regular apk.
 
-[Base Module R.java File]: https://cs.chromium.org/chromium/src/out/android-Debug/gen/android_webview/system_webview_apk/generated_java/gen/base_module/R.java
+[Base Module R.java File]: https://cs.monyhar.org/monyhar/src/out/android-Debug/gen/android_webview/system_webview_apk/generated_java/gen/base_module/R.java
 
 ## How R.java files are generated
 
@@ -239,7 +239,7 @@ access their own resources as well as the base module's resources.
 
 Example Source R.java File
 ```java
-package org.chromium.chrome.vr;
+package org.monyhar.chrome.vr;
 
 public final class R {
     public static final class anim extends

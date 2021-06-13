@@ -1205,7 +1205,7 @@ void GpuDataManagerImplPrivate::AppendGpuCommandLine(
     if (command_line->HasSwitch(switches::kUseGL)) {
       use_gl = command_line->GetSwitchValueASCII(switches::kUseGL);
       // Don't append kOverrideUseSoftwareGLForHeadless when we need to enable
-      // GPU hardware for headless chromium.
+      // GPU hardware for headless monyhar.
       if (use_gl != gl::kGLImplementationEGLName)
         command_line->AppendSwitch(switches::kOverrideUseSoftwareGLForHeadless);
     }
@@ -1304,7 +1304,7 @@ void GpuDataManagerImplPrivate::AddLogMessage(int level,
                                               const std::string& message) {
   // Some clients emit many log messages. This has been observed to consume GBs
   // of memory in the wild
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=798012. Use a limit
+  // https://bugs.monyhar.org/p/monyhar/issues/detail?id=798012. Use a limit
   // of 1000 messages to prevent excess memory usage.
   const int kLogMessageLimit = 1000;
 

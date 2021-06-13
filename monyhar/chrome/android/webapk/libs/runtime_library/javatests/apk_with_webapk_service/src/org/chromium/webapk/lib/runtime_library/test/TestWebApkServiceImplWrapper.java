@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webapk.lib.runtime_library.test;
+package org.monyhar.webapk.lib.runtime_library.test;
 
 import android.app.Service;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.IBinder;
 
-import org.chromium.webapk.lib.runtime_library.WebApkServiceImpl;
+import org.monyhar.webapk.lib.runtime_library.WebApkServiceImpl;
 
 /**
  * Simple service which uses {@link WebApkServiceImpl} for testing.

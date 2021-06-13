@@ -39,7 +39,7 @@ size_t GetCrashReports_ExportThunk(crash_reporter::Report* reports,
 // for it to do anything.
 // NOTE: This function is used by SyzyASAN to invoke a crash. If you change the
 // the name or signature of this function you will break SyzyASAN instrumented
-// releases of Chrome. Please contact syzygy-team@chromium.org before doing so!
+// releases of Chrome. Please contact syzygy-team@monyhar.org before doing so!
 int CrashForException_ExportThunk(EXCEPTION_POINTERS* info);
 
 // This function is used in chrome_metrics_services_manager_client.cc to trigger

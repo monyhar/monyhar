@@ -14,7 +14,7 @@
 #include "components/dom_distiller/core/url_constants.h"
 #include "components/security_interstitials/core/common_string_util.h"
 #include "components/security_state/core/security_state.h"
-#include "components/strings/grit/components_chromium_strings.h"
+#include "components/strings/grit/components_monyhar_strings.h"
 #include "components/strings/grit/components_strings.h"
 #include "content/public/browser/navigation_entry.h"
 #include "content/public/browser/security_style_explanation.h"

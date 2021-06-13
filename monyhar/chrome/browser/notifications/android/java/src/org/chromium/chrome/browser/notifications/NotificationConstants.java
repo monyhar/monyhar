@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.notifications;
+package org.monyhar.chrome.browser.notifications;
 
 import android.content.Intent;
 
@@ -12,9 +12,9 @@ import android.content.Intent;
 public class NotificationConstants {
     // These actions have to be synchronized with the receiver defined in AndroidManifest.xml.
     static final String ACTION_CLICK_NOTIFICATION =
-            "org.chromium.chrome.browser.notifications.CLICK_NOTIFICATION";
+            "org.monyhar.chrome.browser.notifications.CLICK_NOTIFICATION";
     static final String ACTION_CLOSE_NOTIFICATION =
-            "org.chromium.chrome.browser.notifications.CLOSE_NOTIFICATION";
+            "org.monyhar.chrome.browser.notifications.CLOSE_NOTIFICATION";
 
     /**
      * Name of the Intent extra set by the framework when a notification preferences intent has
@@ -167,7 +167,7 @@ public class NotificationConstants {
     public static final String GROUP_SMS_FETCHER = "SmsFetcher";
 
     // Web notification group names are set dynamically as this prefix + notification origin.
-    // For example, 'Web:chromium.org' for a notification from chromium.org.
+    // For example, 'Web:monyhar.org' for a notification from monyhar.org.
     static final String GROUP_WEB_PREFIX = "Web:";
 
     // Default notificationId until it has been set.

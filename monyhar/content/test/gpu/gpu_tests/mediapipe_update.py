@@ -22,9 +22,9 @@ _TEST_ROOT = os.path.join(GetChromiumSrcDir(), 'content', 'test', 'data', 'gpu')
 
 def main():
   sha1_src = os.path.join(_TEST_ROOT, 'mediapipe_zip',
-                          'mediapipe_chromium_tests.zip.sha1')
+                          'mediapipe_monyhar_tests.zip.sha1')
   sha1_dest = os.path.join(_TEST_ROOT, 'mediapipe',
-                           'mediapipe_chromium_tests.zip.sha1')
+                           'mediapipe_monyhar_tests.zip.sha1')
 
   download_script = 'download_from_google_storage'
   if os.name == 'nt':
@@ -32,7 +32,7 @@ def main():
 
   subprocess.check_call([
       download_script, '--no_resume', '--no_auth', '--bucket',
-      'chromium-telemetry', '-s', sha1_src
+      'monyhar-telemetry', '-s', sha1_src
   ])
 
   # Check the SHA1 of the downloaded ZIP with the one we recorded
@@ -47,7 +47,7 @@ def main():
       shutil.rmtree(data_path)
     os.mkdir(data_path)
     zip_file_path = os.path.join(_TEST_ROOT, 'mediapipe_zip',
-                                 'mediapipe_chromium_tests.zip')
+                                 'mediapipe_monyhar_tests.zip')
     zip_file = zipfile.ZipFile(zip_file_path)
     zip_file.extractall(data_path)
     zip_file.close()

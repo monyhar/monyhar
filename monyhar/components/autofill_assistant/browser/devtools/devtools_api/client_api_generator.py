@@ -3,7 +3,7 @@
 # found in the LICENSE file.
 
 # Copied and modified from
-# https://chromium.googlesource.com/chromium/src/+/a3f9d4fac81fc86065d867ab08fa4912ddf662c7/headless/lib/browser/devtools_api/client_api_generator.py
+# https://monyhar.googlesource.com/monyhar/src/+/a3f9d4fac81fc86065d867ab08fa4912ddf662c7/headless/lib/browser/devtools_api/client_api_generator.py
 # Modifications include namespace, path and remove of js binings.
 
 import argparse
@@ -32,7 +32,7 @@ third_party_dir = os.path.normpath(
                  os.pardir, 'third_party'))
 templates_dir = module_path
 
-# jinja2 is in chromium's third_party directory.
+# jinja2 is in monyhar's third_party directory.
 # Insert at 1 so at front to override system libraries, and
 # after path[0] == invoking script dir
 sys.path.insert(1, third_party_dir)
@@ -69,7 +69,7 @@ def CamelCaseToHackerStyle(name):
 
 def Shorten(js_name, domain_name):
   short_name = domain_name + '.'
-  long_name = 'chromium.DevTools.' + short_name
+  long_name = 'monyhar.DevTools.' + short_name
   return js_name.replace(long_name, short_name)
 
 
@@ -142,7 +142,7 @@ def PatchFullQualifiedRefs(json_api):
 def CreateUserTypeDefinition(domain, type):
   namespace = CamelCaseToHackerStyle(domain['domain'])
   return {
-      'js_type': '!chromium.DevTools.%s.%s' % (domain['domain'], type['id']),
+      'js_type': '!monyhar.DevTools.%s.%s' % (domain['domain'], type['id']),
       'return_type': 'std::unique_ptr<::autofill_assistant::%s::%s>' % (
           namespace, type['id']),
       'pass_type': 'std::unique_ptr<::autofill_assistant::%s::%s>' % (
@@ -164,7 +164,7 @@ def CreateUserTypeDefinition(domain, type):
 def CreateEnumTypeDefinition(domain_name, type):
   namespace = CamelCaseToHackerStyle(domain_name)
   return {
-      'js_type': '!chromium.DevTools.%s.%s' % (domain_name, type['id']),
+      'js_type': '!monyhar.DevTools.%s.%s' % (domain_name, type['id']),
       'return_type': '::autofill_assistant::%s::%s' % (namespace, type['id']),
       'pass_type': '::autofill_assistant::%s::%s' % (namespace, type['id']),
       'to_raw_type': '%s',

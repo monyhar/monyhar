@@ -1,8 +1,8 @@
 # DOM
 
-[Rendered](https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/renderer/core/dom/README.md)
+[Rendered](https://monyhar.googlesource.com/monyhar/src/+/master/third_party/blink/renderer/core/dom/README.md)
 
-Author: hayato@chromium.org
+Author: hayato@monyhar.org
 
 The `renderer/core/dom` directory contains the implementation of [DOM].
 
@@ -122,7 +122,7 @@ cost of using range-based for loops is zero because everything can be inlined.
 Further info:
 
 - `NodeTraversal` and `ElementTraversal` (more type-safe version)
-- The [CL](https://codereview.chromium.org/642973003), which introduced these
+- The [CL](https://codereview.monyhar.org/642973003), which introduced these
   range-based for loops.
 
 # Shadow Tree
@@ -730,7 +730,7 @@ DCHECK. :(
 Since `Node::UpdateDistributionForFlatTreeTraversal` can take O(N) in the worst
 case (_even if the distribution flag is clean!_), you should be careful not to
 call it in hot code paths. If you are not sure, please contact
-dom-dev@chromium.org, or add masonf@chromium.org to reviewers.
+dom-dev@monyhar.org, or add masonf@monyhar.org to reviewers.
 
 Once Blink removes Shadow DOM v0 in the future, you don't need to call
 `Node::UpdateDistributionForFlatTreeTraversal` before using `FlatTreeTraversal`

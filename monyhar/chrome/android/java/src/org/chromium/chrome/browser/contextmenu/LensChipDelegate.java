@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.contextmenu;
+package org.monyhar.chrome.browser.contextmenu;
 
 import android.net.Uri;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.lens.LensController;
-import org.chromium.chrome.browser.lens.LensEntryPoint;
-import org.chromium.chrome.browser.lens.LensQueryParams;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.lens.LensController;
+import org.monyhar.chrome.browser.lens.LensEntryPoint;
+import org.monyhar.chrome.browser.lens.LensQueryParams;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * The class to handle Lens chip data and actions.

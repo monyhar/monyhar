@@ -6255,7 +6255,7 @@ Mesaj de la server: <ph name="SERVER_MSG" /></translation>
     <ph name="BR" />
     <ph name="BR" />
     Pentru mai multe informații despre funcțiile de remediere a erorilor, consultă:<ph name="BR" />
-    https://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-features
+    https://www.monyhar.org/monyhar-os/how-tos-and-troubleshooting/debugging-features
     <ph name="BR" />
     <ph name="BR" />
     <ph name="BEGIN_BOLD" />Notă:<ph name="END_BOLD" /> sistemul va reporni în timpul acestui proces.</translation>

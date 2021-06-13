@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.signin.identitymanager;
+package org.monyhar.components.signin.identitymanager;
 
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.CalledByNative;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 /**
  * Event class for primary account change events fired by {@link
- * org.chromium.components.signin.identitymanager.IdentityManager} This class has a native
+ * org.monyhar.components.signin.identitymanager.IdentityManager} This class has a native
  * counterpart called PrimaryAccountChangeEvent.
  */
 public class PrimaryAccountChangeEvent {

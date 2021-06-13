@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.page_annotations;
+package org.monyhar.chrome.browser.page_annotations;
 
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.StringCachedFieldTrialParameter;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.StringCachedFieldTrialParameter;
 
 /** Flag configuration for Page Annotations Service. */
 public class PageAnnotationsServiceConfig {

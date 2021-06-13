@@ -57,14 +57,14 @@ def ci_builder(
         selector causes the entry to be defined.
       tree_closing - If true, failed builds from this builder that meet certain
         criteria will close the tree and email the sheriff. See the
-        'chromium-tree-closer' config in notifiers.star for the full criteria.
+        'monyhar-tree-closer' config in notifiers.star for the full criteria.
       notifies - Any extra notifiers to attach to this builder.
       resultdb_bigquery_exports - a list of resultdb.export_test_results(...)
         specifying additional parameters for exporting test results to BigQuery.
         Will always upload to the following tables in addition to any tables
         specified by the list's elements:
-          luci-resultdb.chromium.ci_test_results
-          luci-resultdb.chromium.gpu_ci_test_results
+          luci-resultdb.monyhar.ci_test_results
+          luci-resultdb.monyhar.gpu_ci_test_results
       experiments - a dict of experiment name to the percentage chance (0-100)
         that it will apply to builds generated from this builder.
     """
@@ -75,14 +75,14 @@ def ci_builder(
     # "ci" bucket.
     bucket = defaults.get_value_from_kwargs("bucket", kwargs)
     if tree_closing and bucket == "ci":
-        notifies = (notifies or []) + ["chromium-tree-closer", "chromium-tree-closer-email"]
+        notifies = (notifies or []) + ["monyhar-tree-closer", "monyhar-tree-closer-email"]
 
     merged_resultdb_bigquery_exports = [
         resultdb.export_test_results(
-            bq_table = "luci-resultdb.chromium.ci_test_results",
+            bq_table = "luci-resultdb.monyhar.ci_test_results",
         ),
         resultdb.export_test_results(
-            bq_table = "luci-resultdb.chromium.gpu_ci_test_results",
+            bq_table = "luci-resultdb.monyhar.gpu_ci_test_results",
             predicate = resultdb.test_result_predicate(
                 # Only match the telemetry_gpu_integration_test and
                 # fuchsia_telemetry_gpu_integration_test targets.
@@ -92,11 +92,11 @@ def ci_builder(
     ]
     merged_resultdb_bigquery_exports.extend(resultdb_bigquery_exports or [])
 
-    # Enable "chromium.resultdb.result_sink" on ci builders.
+    # Enable "monyhar.resultdb.result_sink" on ci builders.
     experiments = experiments or {}
-    experiments.setdefault("chromium.resultdb.result_sink", 100)
-    experiments.setdefault("chromium.resultdb.result_sink.junit_tests", 100)
-    experiments.setdefault("chromium.resultdb.result_sink.gtests_local", 100)
+    experiments.setdefault("monyhar.resultdb.result_sink", 100)
+    experiments.setdefault("monyhar.resultdb.result_sink.junit_tests", 100)
+    experiments.setdefault("monyhar.resultdb.result_sink.gtests_local", 100)
 
     # Migrate executable to bbagent incrementally.
     experiments.setdefault("luci.buildbucket.use_bbagent", 100)
@@ -172,7 +172,7 @@ def android_builder(
     kwargs.setdefault("os", os.LINUX_BIONIC_REMOVE)
     return ci_builder(
         name = name,
-        builder_group = "chromium.android",
+        builder_group = "monyhar.android",
         goma_backend = builders.goma.backend.RBE_PROD,
         goma_jobs = goma_jobs,
         **kwargs
@@ -182,7 +182,7 @@ def android_fyi_builder(*, name, **kwargs):
     kwargs.setdefault("os", os.LINUX_BIONIC_REMOVE)
     return ci_builder(
         name = name,
-        builder_group = "chromium.android.fyi",
+        builder_group = "monyhar.android.fyi",
         goma_backend = builders.goma.backend.RBE_PROD,
         **kwargs
     )
@@ -190,10 +190,10 @@ def android_fyi_builder(*, name, **kwargs):
 def angle_builder(*, name, **kwargs):
     return ci.builder(
         name = name,
-        builder_group = "chromium.angle",
-        executable = "recipe:angle_chromium",
+        builder_group = "monyhar.angle",
+        executable = "recipe:angle_monyhar",
         service_account =
-            "chromium-ci-gpu-builder@chops-service-accounts.iam.gserviceaccount.com",
+            "monyhar-ci-gpu-builder@chops-service-accounts.iam.gserviceaccount.com",
         properties = {
             "perf_dashboard_machine_group": "ChromiumANGLE",
         },
@@ -209,7 +209,7 @@ def angle_linux_builder(
         name = name,
         goma_backend = goma_backend,
         os = builders.os.LINUX_BIONIC_SWITCH_TO_DEFAULT,
-        pool = "luci.chromium.gpu.ci",
+        pool = "luci.monyhar.gpu.ci",
         **kwargs
     )
 
@@ -244,41 +244,41 @@ def angle_windows_builder(*, name, **kwargs):
         builderless = True,
         goma_backend = builders.goma.backend.RBE_PROD,
         os = builders.os.WINDOWS_ANY,
-        pool = "luci.chromium.gpu.ci",
+        pool = "luci.monyhar.gpu.ci",
         **kwargs
     )
 
 def cipd_builder(*, name, **kwargs):
     return ci_builder(
         name = name,
-        builder_group = "chromium.packager",
-        service_account = "chromium-cipd-builder@chops-service-accounts.iam.gserviceaccount.com",
+        builder_group = "monyhar.packager",
+        service_account = "monyhar-cipd-builder@chops-service-accounts.iam.gserviceaccount.com",
         **kwargs
     )
 
 def cipd_3pp_builder(*, name, os, properties, **kwargs):
     return cipd_builder(
         name = name,
-        executable = "recipe:chromium_3pp",
+        executable = "recipe:monyhar_3pp",
         os = os,
         properties = properties,
         **kwargs
     )
 
-def chromium_builder(*, name, tree_closing = True, **kwargs):
+def monyhar_builder(*, name, tree_closing = True, **kwargs):
     return ci_builder(
         name = name,
-        builder_group = "chromium",
+        builder_group = "monyhar",
         goma_backend = builders.goma.backend.RBE_PROD,
         tree_closing = tree_closing,
         **kwargs
     )
 
-def chromiumos_builder(*, name, tree_closing = True, **kwargs):
+def monyharos_builder(*, name, tree_closing = True, **kwargs):
     kwargs.setdefault("os", os.LINUX_BIONIC_REMOVE)
     return ci_builder(
         name = name,
-        builder_group = "chromium.chromiumos",
+        builder_group = "monyhar.monyharos",
         goma_backend = builders.goma.backend.RBE_PROD,
         tree_closing = tree_closing,
         **kwargs
@@ -291,7 +291,7 @@ def clang_builder(*, name, builderless = True, cores = 32, properties = None, **
     })
     return ci_builder(
         name = name,
-        builder_group = "chromium.clang",
+        builder_group = "monyhar.clang",
         builderless = builderless,
         cores = cores,
         # Because these run ToT Clang, goma is not used.
@@ -320,9 +320,9 @@ def clang_mac_builder(*, name, cores = 24, **kwargs):
 def dawn_builder(*, name, **kwargs):
     return ci.builder(
         name = name,
-        builder_group = "chromium.dawn",
+        builder_group = "monyhar.dawn",
         service_account =
-            "chromium-ci-gpu-builder@chops-service-accounts.iam.gserviceaccount.com",
+            "monyhar-ci-gpu-builder@chops-service-accounts.iam.gserviceaccount.com",
         **kwargs
     )
 
@@ -336,7 +336,7 @@ def dawn_linux_builder(
         builderless = True,
         goma_backend = goma_backend,
         os = builders.os.LINUX_BIONIC_SWITCH_TO_DEFAULT,
-        pool = "luci.chromium.gpu.ci",
+        pool = "luci.monyhar.gpu.ci",
         **kwargs
     )
 
@@ -370,14 +370,14 @@ def dawn_windows_builder(*, name, **kwargs):
         builderless = True,
         goma_backend = builders.goma.backend.RBE_PROD,
         os = builders.os.WINDOWS_ANY,
-        pool = "luci.chromium.gpu.ci",
+        pool = "luci.monyhar.gpu.ci",
         **kwargs
     )
 
 def fuzz_builder(*, name, **kwargs):
     return ci.builder(
         name = name,
-        builder_group = "chromium.fuzz",
+        builder_group = "monyhar.fuzz",
         goma_backend = builders.goma.backend.RBE_PROD,
         notifies = ["chromesec-lkgr-failures"],
         **kwargs
@@ -386,7 +386,7 @@ def fuzz_builder(*, name, **kwargs):
 def fuzz_libfuzzer_builder(*, name, **kwargs):
     return fuzz_builder(
         name = name,
-        executable = "recipe:chromium_libfuzzer",
+        executable = "recipe:monyhar_libfuzzer",
         **kwargs
     )
 
@@ -399,7 +399,7 @@ def fyi_builder(
     kwargs.setdefault("os", os.LINUX_BIONIC_REMOVE)
     return ci.builder(
         name = name,
-        builder_group = "chromium.fyi",
+        builder_group = "monyhar.fyi",
         execution_timeout = execution_timeout,
         goma_backend = goma_backend,
         **kwargs
@@ -408,13 +408,13 @@ def fyi_builder(
 def fyi_celab_builder(*, name, **kwargs):
     return ci.builder(
         name = name,
-        builder_group = "chromium.fyi",
+        builder_group = "monyhar.fyi",
         os = builders.os.WINDOWS_ANY,
         executable = "recipe:celab",
         goma_backend = builders.goma.backend.RBE_PROD,
         properties = {
             "exclude": "chrome_only",
-            "pool_name": "celab-chromium-ci",
+            "pool_name": "celab-monyhar-ci",
             "pool_size": 20,
             "tests": "*",
         },
@@ -439,7 +439,7 @@ def fyi_coverage_builder(
 def fyi_ios_builder(
         *,
         name,
-        executable = "recipe:chromium",
+        executable = "recipe:monyhar",
         goma_backend = builders.goma.backend.RBE_PROD,
         os = builders.os.MAC_10_15_OR_11,
         xcode = builders.xcode.x12d4e,
@@ -481,9 +481,9 @@ def fyi_windows_builder(
 def gpu_fyi_builder(*, name, **kwargs):
     return ci.builder(
         name = name,
-        builder_group = "chromium.gpu.fyi",
+        builder_group = "monyhar.gpu.fyi",
         service_account =
-            "chromium-ci-gpu-builder@chops-service-accounts.iam.gserviceaccount.com",
+            "monyhar-ci-gpu-builder@chops-service-accounts.iam.gserviceaccount.com",
         properties = {
             "perf_dashboard_machine_group": "ChromiumGPUFYI",
         },
@@ -501,7 +501,7 @@ def gpu_fyi_linux_builder(
         execution_timeout = execution_timeout,
         goma_backend = goma_backend,
         os = builders.os.LINUX_BIONIC_SWITCH_TO_DEFAULT,
-        pool = "luci.chromium.gpu.ci",
+        pool = "luci.monyhar.gpu.ci",
         **kwargs
     )
 
@@ -539,7 +539,7 @@ def gpu_fyi_windows_builder(*, name, **kwargs):
         builderless = True,
         goma_backend = builders.goma.backend.RBE_PROD,
         os = builders.os.WINDOWS_ANY,
-        pool = "luci.chromium.gpu.ci",
+        pool = "luci.monyhar.gpu.ci",
         **kwargs
     )
 
@@ -548,7 +548,7 @@ def gpu_builder(*, name, tree_closing = True, notifies = None, **kwargs):
         notifies = (notifies or []) + ["gpu-tree-closer-email"]
     return ci.builder(
         name = name,
-        builder_group = "chromium.gpu",
+        builder_group = "monyhar.gpu",
         tree_closing = tree_closing,
         notifies = notifies,
         **kwargs
@@ -564,7 +564,7 @@ def gpu_linux_builder(
         builderless = True,
         goma_backend = goma_backend,
         os = builders.os.LINUX_BIONIC_SWITCH_TO_DEFAULT,
-        pool = "luci.chromium.gpu.ci",
+        pool = "luci.monyhar.gpu.ci",
         **kwargs
     )
 
@@ -596,7 +596,7 @@ def gpu_windows_builder(*, name, **kwargs):
         builderless = True,
         goma_backend = builders.goma.backend.RBE_PROD,
         os = builders.os.WINDOWS_ANY,
-        pool = "luci.chromium.gpu.ci",
+        pool = "luci.monyhar.gpu.ci",
         **kwargs
     )
 
@@ -606,13 +606,13 @@ def linux_builder(
         goma_backend = builders.goma.backend.RBE_PROD,
         goma_jobs = builders.goma.jobs.MANY_JOBS_FOR_CI,
         tree_closing = True,
-        notifies = ("chromium.linux",),
+        notifies = ("monyhar.linux",),
         extra_notifies = None,
         **kwargs):
     kwargs.setdefault("os", builders.os.LINUX_BIONIC_REMOVE)
     return ci.builder(
         name = name,
-        builder_group = "chromium.linux",
+        builder_group = "monyhar.linux",
         goma_backend = goma_backend,
         goma_jobs = goma_jobs,
         tree_closing = tree_closing,
@@ -630,7 +630,7 @@ def mac_builder(
         **kwargs):
     return ci.builder(
         name = name,
-        builder_group = "chromium.mac",
+        builder_group = "monyhar.mac",
         cores = cores,
         goma_backend = goma_backend,
         os = os,
@@ -641,7 +641,7 @@ def mac_builder(
 def mac_ios_builder(
         *,
         name,
-        executable = "recipe:chromium",
+        executable = "recipe:monyhar",
         goma_backend = builders.goma.backend.RBE_PROD,
         os = builders.os.MAC_10_15_OR_11,
         xcode = builders.xcode.x12d4e,
@@ -668,7 +668,7 @@ def memory_builder(
 
     return ci.builder(
         name = name,
-        builder_group = "chromium.memory",
+        builder_group = "monyhar.memory",
         goma_backend = builders.goma.backend.RBE_PROD,
         goma_jobs = goma_jobs,
         notifies = notifies,
@@ -684,7 +684,7 @@ def mojo_builder(
         **kwargs):
     return ci.builder(
         name = name,
-        builder_group = "chromium.mojo",
+        builder_group = "monyhar.mojo",
         execution_timeout = execution_timeout,
         goma_backend = goma_backend,
         **kwargs
@@ -694,13 +694,13 @@ def swangle_builder(*, name, builderless = True, pinned = True, **kwargs):
     builder_args = dict(kwargs)
     builder_args.update(
         name = name,
-        builder_group = "chromium.swangle",
+        builder_group = "monyhar.swangle",
         builderless = builderless,
         service_account =
-            "chromium-ci-gpu-builder@chops-service-accounts.iam.gserviceaccount.com",
+            "monyhar-ci-gpu-builder@chops-service-accounts.iam.gserviceaccount.com",
     )
     if pinned:
-        builder_args.update(executable = "recipe:angle_chromium")
+        builder_args.update(executable = "recipe:angle_monyhar")
     return ci.builder(**builder_args)
 
 def swangle_linux_builder(
@@ -711,7 +711,7 @@ def swangle_linux_builder(
         name = name,
         goma_backend = builders.goma.backend.RBE_PROD,
         os = builders.os.LINUX_BIONIC_SWITCH_TO_DEFAULT,
-        pool = "luci.chromium.gpu.ci",
+        pool = "luci.monyhar.gpu.ci",
         **kwargs
     )
 
@@ -733,7 +733,7 @@ def swangle_windows_builder(*, name, **kwargs):
         name = name,
         goma_backend = builders.goma.backend.RBE_PROD,
         os = builders.os.WINDOWS_ANY,
-        pool = "luci.chromium.gpu.ci",
+        pool = "luci.monyhar.gpu.ci",
         **kwargs
     )
 
@@ -762,7 +762,7 @@ def updater_builder(
     kwargs.setdefault("os", os.LINUX_BIONIC_REMOVE)
     return ci.builder(
         name = name,
-        builder_group = "chromium.updater",
+        builder_group = "monyhar.updater",
         goma_backend = builders.goma.backend.RBE_PROD,
         **kwargs
     )
@@ -775,7 +775,7 @@ def win_builder(
         **kwargs):
     return ci.builder(
         name = name,
-        builder_group = "chromium.win",
+        builder_group = "monyhar.win",
         goma_backend = builders.goma.backend.RBE_PROD,
         os = os,
         tree_closing = tree_closing,
@@ -796,8 +796,8 @@ ci = struct(
     angle_mac_builder = angle_mac_builder,
     angle_thin_tester = angle_thin_tester,
     angle_windows_builder = angle_windows_builder,
-    chromium_builder = chromium_builder,
-    chromiumos_builder = chromiumos_builder,
+    monyhar_builder = monyhar_builder,
+    monyharos_builder = monyharos_builder,
     cipd_3pp_builder = cipd_3pp_builder,
     cipd_builder = cipd_builder,
     clang_builder = clang_builder,

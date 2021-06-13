@@ -80,7 +80,7 @@ enum Milestone {
 // Returns estimated milestone dates as milliseconds since January 1, 1970.
 base::Time::Exploded MilestoneDate(Milestone milestone) {
   // These are the Estimated Stable Dates:
-  // https://www.chromium.org/developers/calendar
+  // https://www.monyhar.org/developers/calendar
   // All dates except for kUnknown are at 04:00:00 GMT.
   switch (milestone) {
     case kUnknown:
@@ -115,7 +115,7 @@ base::Time::Exploded MilestoneDate(Milestone milestone) {
       return {2020, 4, 0, 7, 4};
     case kM82:
       // This release was cancelled, so this is the (new) M83 date.
-      // https://groups.google.com/a/chromium.org/d/msg/chromium-dev/N1NxbSVOZas/ySlEKDKkBgAJ
+      // https://groups.google.com/a/monyhar.org/d/msg/monyhar-dev/N1NxbSVOZas/ySlEKDKkBgAJ
       return {2020, 5, 0, 18, 4};
     case kM83:
       return {2020, 5, 0, 18, 4};

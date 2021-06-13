@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.geo;
+package org.monyhar.chrome.browser.omnibox.geo;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -15,10 +15,10 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.omnibox.geo.VisibleNetworks.VisibleCell;
-import org.chromium.chrome.browser.omnibox.geo.VisibleNetworks.VisibleCell.RadioType;
-import org.chromium.chrome.browser.omnibox.geo.VisibleNetworks.VisibleWifi;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.omnibox.geo.VisibleNetworks.VisibleCell;
+import org.monyhar.chrome.browser.omnibox.geo.VisibleNetworks.VisibleCell.RadioType;
+import org.monyhar.chrome.browser.omnibox.geo.VisibleNetworks.VisibleWifi;
 
 import java.util.Arrays;
 import java.util.HashSet;

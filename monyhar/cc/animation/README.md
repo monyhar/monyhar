@@ -18,7 +18,7 @@ of Chromium interact with cc/animation, most prominently Blink and ui/.
 
 ## cc/animation terminology
 
-[Animation](https://cs.chromium.org/chromium/src/cc/animation/animation.h)
+[Animation](https://cs.monyhar.org/monyhar/src/cc/animation/animation.h)
 A cc::Animation is responsible for managing animating properties for a set of
 targets. Each target is represented by a [KeyframeEffect][] and can be animating
 multiple properties on that target; see KeyframeEffect below.
@@ -34,10 +34,10 @@ synchronizing to/from the impl thread when requested.
 
 There is a 1:1 relationship between Animation and KeyframeEffect.
 
-[Keyframe model](https://codesearch.chromium.org/chromium/src/cc/animation/keyframe_model.h)
+[Keyframe model](https://codesearch.monyhar.org/monyhar/src/cc/animation/keyframe_model.h)
 KeyframeModels contain the state necessary to 'play' (interpolate values from) an
 
-[animation curve](https://codesearch.chromium.org/chromium/src/cc/animation/animation_curve.h),
+[animation curve](https://codesearch.monyhar.org/monyhar/src/cc/animation/animation_curve.h),
 which is a function that returns a value given an input time. Aside from the
 animation curve itself, a keyframe model's state includes the run state (playing,
 paused, etc), the start time, the current direction (forwards, reverse), etc.
@@ -66,12 +66,12 @@ no two keyframe models within a keyframe effect that have both the same group id
 and property id.
 
 In general, KeyframeModels are grouped together based on their
-[animation target](https://codesearch.chromium.org/chromium/src/cc/animation/animation_target.h)
+[animation target](https://codesearch.monyhar.org/monyhar/src/cc/animation/animation_target.h)
 (the entity whose property is being animated) and each such group is owned by an
-[animation](https://codesearch.chromium.org/chromium/src/cc/animation/animation.h).
+[animation](https://codesearch.monyhar.org/monyhar/src/cc/animation/animation.h).
 Note that there may be multiple animations with the same target (each
 with a set of KeyframeModels for that target); the
-[ElementAnimations](https://codesearch.chromium.org/chromium/src/cc/animation/element_animations.h)
+[ElementAnimations](https://codesearch.monyhar.org/monyhar/src/cc/animation/element_animations.h)
 class wraps the multiple animations and has a 1:1 relationship with
 target entities.
 
@@ -80,7 +80,7 @@ target entities.
 In order to play an animation, input time values must be provided to the
 animation curve and output values fed back into the animating entity. This is
 called 'ticking' an animation and is the responsibility of the
-[animation host](https://codesearch.chromium.org/chromium/src/cc/animation/animation_host.h).
+[animation host](https://codesearch.monyhar.org/monyhar/src/cc/animation/animation_host.h).
 The animation host has a list of currently ticking animations (i.e. those that have
 any non-deleted animations), which it iterates through whenever it receives a
 tick call from the client (along with a corresponding input time).  The
@@ -99,7 +99,7 @@ curve, but some common ones are `FloatAnimationCurve`, `ColorAnimationCurve`,
 and `TransformAnimationCurve`.
 
 The most common implementation of the various animation curve categories are the
-[keyframed animation curves](https://codesearch.chromium.org/chromium/src/cc/animation/keyframed_animation_curve.h).
+[keyframed animation curves](https://codesearch.monyhar.org/monyhar/src/cc/animation/keyframed_animation_curve.h).
 These curves each have a set of keyframes which map a specific time to a
 specific output value. Producing an output value for a given input time is then
 a matter of identifying the two keyframes the time lies between, and
@@ -109,7 +109,7 @@ details of how each animation curve category is interpolated can be found in the
 implementations.
 
 There is one category of animation curve that stands somewhat apart, the
-[scroll offset animation curve](https://codesearch.chromium.org/chromium/src/cc/animation/scroll_offset_animation_curve.h).
+[scroll offset animation curve](https://codesearch.monyhar.org/monyhar/src/cc/animation/scroll_offset_animation_curve.h).
 This curve converts the input time into a scroll offset, interpolating between
 an initial scroll offset and an updateable target scroll offset. It has logic to
 handle different types of scrolling such as programmatic, keyboard, and mouse
@@ -118,7 +118,7 @@ wheel scrolls.
 ### Animation Timelines
 
 cc/animation has a concept of an
-[animation timeline](https://codesearch.chromium.org/chromium/src/cc/animation/animation_timeline.h).
+[animation timeline](https://codesearch.monyhar.org/monyhar/src/cc/animation/animation_timeline.h).
 This should not be confused with the identically named Blink concept. In
 cc/animation, animation timelines are an implementation detail - they hold the
 animations and are responsible for syncing them to the impl thread (see
@@ -127,7 +127,7 @@ below), but do not participate in the ticking process in any way.
 ### Main/Impl Threads
 
 One part of cc/animation that is not client agnostic is its support for the
-[Chromium compositor thread](https://codesearch.chromium.org/chromium/src/cc/README.md).
+[Chromium compositor thread](https://codesearch.monyhar.org/monyhar/src/cc/README.md).
 Most of the cc/animation classes have a `PushPropertiesTo` method, in which they
 synchronize necessary state from the main thread to the impl thread. It is
 feasible that such support could be abstracted if necessary, but so far it has
@@ -138,9 +138,9 @@ not been required.
 As noted above, the main clients of cc/animation are currently Blink for
 accelerated web animations, and ui/ for accelerated user interface animations.
 Both of these clients utilize
-[cc::Layer](https://codesearch.chromium.org/chromium/src/cc/layers/layer.h)
+[cc::Layer](https://codesearch.monyhar.org/monyhar/src/cc/layers/layer.h)
 as their animation entity and interact with cc/animation via the
-[MutatorHostClient](https://codesearch.chromium.org/chromium/src/cc/trees/mutator_host_client.h)
+[MutatorHostClient](https://codesearch.monyhar.org/monyhar/src/cc/trees/mutator_host_client.h)
 interface (which is implemented by cc::LayerTreeHost and cc::LayerTreeHostImpl).
 Recently a third client, chrome/browser/vr/, has started using cc/animations as
 well. The vr/ client does not use cc::Layer as its animation entity.
@@ -210,25 +210,25 @@ The lifetime of a newly started cc::Animation is roughly the following:
    tree.
 
 [new animation]: images/new-animation.png
-[BeginMainFrame]: https://cs.chromium.org/chromium/src/cc/trees/proxy_main.cc?type=cs&q=file:proxy_main%5C.cc+RequestMainFrameUpdate
-[ScheduleVisualUpdate]: https://cs.chromium.org/chromium/src/third_party/blink/renderer/core/frame/local_frame.cc?type=cs&q=file:local_frame%5C.cc+ScheduleVisualUpdate
-[blink::DocumentAnimations::UpdateAnimations]: https://cs.chromium.org/search?q=function:blink::DocumentAnimations::UpdateAnimations+GetPendingAnimations
-[blink::Animation::PreCommit]: https://cs.chromium.org/search?q=function:blink::PendingAnimations::Update+%5C-%5C>PreCommit%5C(&g=0&l=57
-[blink::Animation::CreateCompositorAnimation]: https://cs.chromium.org/search?q=function:blink::Animation::CreateCompositorAnimation+%5E%5B+%5D*AttachCompositorTimeline
-[blink::Animation::StartAnimationOnCompositor]: https://cs.chromium.org/search?q=function:blink::Animation::StartAnimationOnCompositor+%5C-%5C>StartAnimationOnCompositor
-[AnimationHost::RegisterKeyframeEffectForElement]: https://cs.chromium.org/search?q=function:cc::AnimationHost::RegisterKeyframeEffectForElement+ElementAnimations::Create
-[cc::ElementAnimations::ElementRegistered]: https://cs.chromium.org/search?q=function:cc::ElementAnimations::ElementRegistered+%5C!has_element_in_any_list
-[cc::LayerTreeHost::FinishCommitOnImplThread]: https://cs.chromium.org/search?q=cc::LayerTreeHost::FinishCommitOnImplThread+file:%5C.cc
-[cc::AnimationHost::PushPropertiesTo]: https://cs.chromium.org/search/?q=function:cc::LayerTreeHost::FinishCommitOnImplThread+%5C-%5C>PushPropertiesTo
-[cc::AnimationTimeline::PushAttachedAnimationsToImplThread]: https://cs.chromium.org/search?q=function:cc::AnimationTimeline::PushAttachedAnimationsToImplThread+animation%5C-%5C>CreateImplInstance
-[cc::Animation::PushPropertiesTo]: https://cs.chromium.org/search?q=cc::Animation::PushPropertiesTo+file:%5C.cc
-[cc::KeyframeEffect::PushPropertiesTo]: https://cs.chromium.org/search?q=cc::KeyframeEffect::PushPropertiesTo+file:%5C.cc
-[cc::Animation::AttachElementForKeyframeEffect]: https://cs.chromium.org/search?q=cc::Animation::AttachElementForKeyframeEffect+file:%5C.cc
-[cc::Animation::Tick]: https://cs.chromium.org/search?q=cc::Animation::Tick+file:%5C.cc
-[cc::AnimationHost::ActivateAnimations]: https://cs.chromium.org/search?q=cc::AnimationHost::ActivateAnimations+ActivateKeyframeEffects
-[cc::ElementAnimations::ElementRegistered]: https://cs.chromium.org/search?q=cc::ElementAnimations::ElementRegistered+file:%5C.cc
-[KeyframeEffect]: https://cs.chromium.org/chromium/src/cc/animation/keyframe_effect.h
-[PropertyToElementIdMap]: https://cs.chromium.org/chromium/src/cc/trees/target_property.h?type=cs&g=0&l=42
+[BeginMainFrame]: https://cs.monyhar.org/monyhar/src/cc/trees/proxy_main.cc?type=cs&q=file:proxy_main%5C.cc+RequestMainFrameUpdate
+[ScheduleVisualUpdate]: https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/core/frame/local_frame.cc?type=cs&q=file:local_frame%5C.cc+ScheduleVisualUpdate
+[blink::DocumentAnimations::UpdateAnimations]: https://cs.monyhar.org/search?q=function:blink::DocumentAnimations::UpdateAnimations+GetPendingAnimations
+[blink::Animation::PreCommit]: https://cs.monyhar.org/search?q=function:blink::PendingAnimations::Update+%5C-%5C>PreCommit%5C(&g=0&l=57
+[blink::Animation::CreateCompositorAnimation]: https://cs.monyhar.org/search?q=function:blink::Animation::CreateCompositorAnimation+%5E%5B+%5D*AttachCompositorTimeline
+[blink::Animation::StartAnimationOnCompositor]: https://cs.monyhar.org/search?q=function:blink::Animation::StartAnimationOnCompositor+%5C-%5C>StartAnimationOnCompositor
+[AnimationHost::RegisterKeyframeEffectForElement]: https://cs.monyhar.org/search?q=function:cc::AnimationHost::RegisterKeyframeEffectForElement+ElementAnimations::Create
+[cc::ElementAnimations::ElementRegistered]: https://cs.monyhar.org/search?q=function:cc::ElementAnimations::ElementRegistered+%5C!has_element_in_any_list
+[cc::LayerTreeHost::FinishCommitOnImplThread]: https://cs.monyhar.org/search?q=cc::LayerTreeHost::FinishCommitOnImplThread+file:%5C.cc
+[cc::AnimationHost::PushPropertiesTo]: https://cs.monyhar.org/search/?q=function:cc::LayerTreeHost::FinishCommitOnImplThread+%5C-%5C>PushPropertiesTo
+[cc::AnimationTimeline::PushAttachedAnimationsToImplThread]: https://cs.monyhar.org/search?q=function:cc::AnimationTimeline::PushAttachedAnimationsToImplThread+animation%5C-%5C>CreateImplInstance
+[cc::Animation::PushPropertiesTo]: https://cs.monyhar.org/search?q=cc::Animation::PushPropertiesTo+file:%5C.cc
+[cc::KeyframeEffect::PushPropertiesTo]: https://cs.monyhar.org/search?q=cc::KeyframeEffect::PushPropertiesTo+file:%5C.cc
+[cc::Animation::AttachElementForKeyframeEffect]: https://cs.monyhar.org/search?q=cc::Animation::AttachElementForKeyframeEffect+file:%5C.cc
+[cc::Animation::Tick]: https://cs.monyhar.org/search?q=cc::Animation::Tick+file:%5C.cc
+[cc::AnimationHost::ActivateAnimations]: https://cs.monyhar.org/search?q=cc::AnimationHost::ActivateAnimations+ActivateKeyframeEffects
+[cc::ElementAnimations::ElementRegistered]: https://cs.monyhar.org/search?q=cc::ElementAnimations::ElementRegistered+file:%5C.cc
+[KeyframeEffect]: https://cs.monyhar.org/monyhar/src/cc/animation/keyframe_effect.h
+[PropertyToElementIdMap]: https://cs.monyhar.org/monyhar/src/cc/trees/target_property.h?type=cs&g=0&l=42
 
 #### Animation Events
 The purpose of animation events ([cc::AnimationEvent][], not to confuse with
@@ -253,11 +253,11 @@ animations that are running on IMPL thread only. These events are not passed to
 the MAIN thread and skip dispatch stage. They are delegated to the
 [cc::AnimationDelegate][] on the IMPL thread.
 
-[cc::AnimationEvent]: https://cs.chromium.org/chromium/src/cc/animation/animation_events.h
-[cc::AnimationEvents]: https://cs.chromium.org/chromium/src/cc/animation/animation_events.h
-[blink::AnimationEvent]: https://cs.chromium.org/chromium/src/third_party/blink/renderer/core/events/animation_event.h
-[cc::KeyframeModel]: https://cs.chromium.org/chromium/src/cc/animation/keyframe_model.h
-[cc::AnimationDelegate]: https://cs.chromium.org/chromium/src/cc/animation/animation_delegate.h
+[cc::AnimationEvent]: https://cs.monyhar.org/monyhar/src/cc/animation/animation_events.h
+[cc::AnimationEvents]: https://cs.monyhar.org/monyhar/src/cc/animation/animation_events.h
+[blink::AnimationEvent]: https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/core/events/animation_event.h
+[cc::KeyframeModel]: https://cs.monyhar.org/monyhar/src/cc/animation/keyframe_model.h
+[cc::AnimationDelegate]: https://cs.monyhar.org/monyhar/src/cc/animation/animation_delegate.h
 
 `TODO(flackr): Document finishing / cancel / abort.`
 
@@ -281,5 +281,5 @@ base. [Smooth Scrolling in Chromium](https://goo.gl/XXwAwk) provides
 an overview of smooth scrolling. There is further class header
 documentation in
 Blink's
-[platform/scroll](https://codesearch.chromium.org/chromium/src/third_party/blink/renderer/platform/scroll/)
+[platform/scroll](https://codesearch.monyhar.org/monyhar/src/third_party/blink/renderer/platform/scroll/)
 directory.

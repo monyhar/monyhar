@@ -212,7 +212,7 @@ TEST(ExtensionBuilderTest, SetManifestKey) {
 TEST(ExtensionBuilderTest, AddContentScript) {
   constexpr char kScriptOne[] = "one.js";
   const std::vector<std::string> script_one_patterns = {
-      "https://example.com/*", "https://chromium.org/foo"};
+      "https://example.com/*", "https://monyhar.org/foo"};
   constexpr char kScriptTwo[] = "two.js";
   const std::vector<std::string> script_two_patterns = {"https://google.com/*"};
   scoped_refptr<const Extension> extension =

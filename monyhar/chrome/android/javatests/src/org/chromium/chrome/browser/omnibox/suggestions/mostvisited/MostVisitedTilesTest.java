@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.mostvisited;
+package org.monyhar.chrome.browser.omnibox.suggestions.mostvisited;
 
 import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.anyInt;
@@ -29,38 +29,38 @@ import org.mockito.Captor;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.omnibox.LocationBarLayout;
-import org.chromium.chrome.browser.omnibox.OmniboxSuggestionType;
-import org.chromium.chrome.browser.omnibox.UrlBar;
-import org.chromium.chrome.browser.omnibox.suggestions.AutocompleteController;
-import org.chromium.chrome.browser.omnibox.suggestions.AutocompleteControllerFactory;
-import org.chromium.chrome.browser.omnibox.suggestions.AutocompleteCoordinator;
-import org.chromium.chrome.browser.omnibox.suggestions.carousel.BaseCarouselSuggestionView;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.batch.BlankCTATabInitialStateRule;
-import org.chromium.chrome.test.util.ChromeTabUtils;
-import org.chromium.chrome.test.util.OmniboxTestUtils;
-import org.chromium.chrome.test.util.WaitForFocusHelper;
-import org.chromium.chrome.test.util.browser.Features.EnableFeatures;
-import org.chromium.components.omnibox.AutocompleteMatch.NavsuggestTile;
-import org.chromium.components.omnibox.AutocompleteMatchBuilder;
-import org.chromium.components.omnibox.AutocompleteResult;
-import org.chromium.content_public.browser.test.util.KeyUtils;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.net.test.EmbeddedTestServer;
-import org.chromium.net.test.EmbeddedTestServerRule;
-import org.chromium.ui.test.util.DisableAnimationsTestRule;
-import org.chromium.url.GURL;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.omnibox.LocationBarLayout;
+import org.monyhar.chrome.browser.omnibox.OmniboxSuggestionType;
+import org.monyhar.chrome.browser.omnibox.UrlBar;
+import org.monyhar.chrome.browser.omnibox.suggestions.AutocompleteController;
+import org.monyhar.chrome.browser.omnibox.suggestions.AutocompleteControllerFactory;
+import org.monyhar.chrome.browser.omnibox.suggestions.AutocompleteCoordinator;
+import org.monyhar.chrome.browser.omnibox.suggestions.carousel.BaseCarouselSuggestionView;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.batch.BlankCTATabInitialStateRule;
+import org.monyhar.chrome.test.util.ChromeTabUtils;
+import org.monyhar.chrome.test.util.OmniboxTestUtils;
+import org.monyhar.chrome.test.util.WaitForFocusHelper;
+import org.monyhar.chrome.test.util.browser.Features.EnableFeatures;
+import org.monyhar.components.omnibox.AutocompleteMatch.NavsuggestTile;
+import org.monyhar.components.omnibox.AutocompleteMatchBuilder;
+import org.monyhar.components.omnibox.AutocompleteResult;
+import org.monyhar.content_public.browser.test.util.KeyUtils;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.net.test.EmbeddedTestServer;
+import org.monyhar.net.test.EmbeddedTestServerRule;
+import org.monyhar.ui.test.util.DisableAnimationsTestRule;
+import org.monyhar.url.GURL;
 
 import java.util.Arrays;
 

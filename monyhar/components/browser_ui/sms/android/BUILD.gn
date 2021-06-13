@@ -42,15 +42,15 @@ source_set("unit_tests") {
 
 generate_jni("jni_headers") {
   sources = [
-    "java/src/org/chromium/components/browser_ui/sms/WebOTPServiceInfoBar.java",
+    "java/src/org/monyhar/components/browser_ui/sms/WebOTPServiceInfoBar.java",
   ]
 }
 
 android_library("java") {
-  resources_package = "org.chromium.components.browser_ui.sms"
+  resources_package = "org.monyhar.components.browser_ui.sms"
   sources = [
-    "java/src/org/chromium/components/browser_ui/sms/WebOTPServiceInfoBar.java",
-    "java/src/org/chromium/components/browser_ui/sms/WebOTPServiceUma.java",
+    "java/src/org/monyhar/components/browser_ui/sms/WebOTPServiceInfoBar.java",
+    "java/src/org/monyhar/components/browser_ui/sms/WebOTPServiceUma.java",
   ]
 
   deps = [

@@ -35,7 +35,7 @@ $ adb logcat
 
 *** aside
 You can optionally use `ClassName.methodName` instead of `ClassName#methodName`;
-the chromium test runner understands either syntax.
+the monyhar test runner understands either syntax.
 ***
 
 ### Java unittests
@@ -62,7 +62,7 @@ $ out/Default/bin/run_android_webview_unittests -v # All tests, including logs
 
 *** note
 For junit tests, filter (`-f`) arguments require fully qualified class names
-(e.g. `org.chromium.android_webview.robolectric.FindAddressTest`), but replacing
+(e.g. `org.monyhar.android_webview.robolectric.FindAddressTest`), but replacing
 the package name with a glob wildcard (`*`), as in the example above, will work
 if the class name is unique.
 ***
@@ -185,9 +185,9 @@ renderer threads is to run in single-process mode by adding
 $ (shell) adb root
 $ (shell) adb shell
 
-# Get the main WebView Shell pid, e.g. org.chromium.android_webview.shell and
-# not org.chromium.android_webview.shell:sandboxed_process0
-$ (phone) ps -A | grep org.chromium.android_webview.shell
+# Get the main WebView Shell pid, e.g. org.monyhar.android_webview.shell and
+# not org.monyhar.android_webview.shell:sandboxed_process0
+$ (phone) ps -A | grep org.monyhar.android_webview.shell
 # Generate a callstack (this won't kill the process)
 $ (phone) kill -3 pid
 # Look for the latest trace
@@ -202,8 +202,8 @@ $ (shell) third_party/android_platform/development/scripts/stack --output-direct
 ## External tests
 
 As WebView is an Android system component, we have some tests defined outside of
-the chromium repository, but which the team still maintains. For some of these
-tests, we have scripts to help chromium developers check these tests.
+the monyhar repository, but which the team still maintains. For some of these
+tests, we have scripts to help monyhar developers check these tests.
 
 *** promo
 All of these tests are end-to-end, so they exercise whatever WebView

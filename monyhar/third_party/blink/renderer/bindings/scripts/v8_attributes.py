@@ -31,7 +31,7 @@
 
 Extends IdlType with property |constructor_type_name|.
 
-Design doc: http://www.chromium.org/developers/design-documents/idl-compiler
+Design doc: http://www.monyhar.org/developers/design-documents/idl-compiler
 """
 
 import os

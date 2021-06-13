@@ -540,8 +540,8 @@ class Chrome(Browser):
         if dest is None:
             dest = self._get_dest(None, channel)
 
-        filename = self._chromium_package_name() + ".zip"
-        url = self._latest_chromium_snapshot_url() + filename
+        filename = self._monyhar_package_name() + ".zip"
+        url = self._latest_monyhar_snapshot_url() + filename
         self.logger.info("Downloading Chrome from %s" % url)
         resp = get(url)
         installer_path = os.path.join(dest, filename)
@@ -562,7 +562,7 @@ class Chrome(Browser):
 
     def install_mojojs(self, dest, channel, browser_binary):
         if channel == "nightly" or channel == "canary":
-            url = self._latest_chromium_snapshot_url() + "mojojs.zip"
+            url = self._latest_monyhar_snapshot_url() + "mojojs.zip"
         else:
             chrome_version = self.version(binary=browser_binary)
             assert chrome_version, "Cannot determine the version of Chrome"
@@ -602,7 +602,7 @@ class Chrome(Browser):
 
         return "%s%s" % (platform, bits)
 
-    def _chromium_platform_string(self):
+    def _monyhar_platform_string(self):
         platform = self.platforms.get(uname[0])
 
         if platform is None:
@@ -613,23 +613,23 @@ class Chrome(Browser):
 
         return platform
 
-    def _chromium_package_name(self):
+    def _monyhar_package_name(self):
         return "chrome-%s" % self.platforms.get(uname[0]).lower()
 
-    def _latest_chromium_snapshot_url(self):
+    def _latest_monyhar_snapshot_url(self):
         # Make sure we use the same revision in an invocation.
-        architecture = self._chromium_platform_string()
+        architecture = self._monyhar_platform_string()
         if self._last_change is None:
-            revision_url = "https://storage.googleapis.com/chromium-browser-snapshots/%s/LAST_CHANGE" % architecture
+            revision_url = "https://storage.googleapis.com/monyhar-browser-snapshots/%s/LAST_CHANGE" % architecture
             self._last_change = get(revision_url).text.strip()
-        return "https://storage.googleapis.com/chromium-browser-snapshots/%s/%s/" % (architecture, self._last_change)
+        return "https://storage.googleapis.com/monyhar-browser-snapshots/%s/%s/" % (architecture, self._last_change)
 
     def find_nightly_binary(self, dest):
         if uname[0] == "Darwin":
             return find_executable("Chromium",
-                                   os.path.join(dest, self._chromium_package_name(), "Chromium.app", "Contents", "MacOS"))
+                                   os.path.join(dest, self._monyhar_package_name(), "Chromium.app", "Contents", "MacOS"))
         # find_executable will add .exe on Windows automatically.
-        return find_executable("chrome", os.path.join(dest, self._chromium_package_name()))
+        return find_executable("chrome", os.path.join(dest, self._monyhar_package_name()))
 
     def find_binary(self, venv_path=None, channel=None):
         if channel == "nightly":
@@ -694,7 +694,7 @@ class Chrome(Browser):
         return True
 
     def _official_chromedriver_url(self, chrome_version):
-        # http://chromedriver.chromium.org/downloads/version-selection
+        # http://chromedriver.monyhar.org/downloads/version-selection
         parts = chrome_version.split(".")
         assert len(parts) == 4
         latest_url = "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_%s.%s.%s" % tuple(parts[:-1])
@@ -709,27 +709,27 @@ class Chrome(Browser):
         return "https://chromedriver.storage.googleapis.com/%s/chromedriver_%s.zip" % (
             latest, self._chromedriver_platform_string())
 
-    def _chromium_chromedriver_url(self, chrome_version):
+    def _monyhar_chromedriver_url(self, chrome_version):
         if chrome_version:
             try:
                 # Try to find the Chromium build with the same revision.
                 omaha = get("https://omahaproxy.appspot.com/deps.json?version=" + chrome_version).json()
-                revision = omaha['chromium_base_position']
-                url = "https://storage.googleapis.com/chromium-browser-snapshots/%s/%s/chromedriver_%s.zip" % (
-                    self._chromium_platform_string(), revision, self._chromedriver_platform_string())
+                revision = omaha['monyhar_base_position']
+                url = "https://storage.googleapis.com/monyhar-browser-snapshots/%s/%s/chromedriver_%s.zip" % (
+                    self._monyhar_platform_string(), revision, self._chromedriver_platform_string())
                 # Check the status without downloading the content (this is a streaming request).
                 get(url)
                 return url
             except requests.RequestException:
                 pass
         # Fall back to the tip-of-tree Chromium build.
-        return "%schromedriver_%s.zip" % (self._latest_chromium_snapshot_url(), self._chromedriver_platform_string())
+        return "%schromedriver_%s.zip" % (self._latest_monyhar_snapshot_url(), self._chromedriver_platform_string())
 
     def _latest_chromedriver_url(self, chrome_version):
         # Remove channel suffixes (e.g. " dev").
         chrome_version = chrome_version.split(' ')[0]
         return (self._official_chromedriver_url(chrome_version) or
-                self._chromium_chromedriver_url(chrome_version))
+                self._monyhar_chromedriver_url(chrome_version))
 
     def install_webdriver_by_version(self, version, dest=None):
         if dest is None:
@@ -746,7 +746,7 @@ class Chrome(Browser):
             os.remove(existing_binary_path)
 
         url = self._latest_chromedriver_url(version) if version \
-            else self._chromium_chromedriver_url(None)
+            else self._monyhar_chromedriver_url(None)
         self.logger.info("Downloading ChromeDriver from %s" % url)
         unzip(get(url).raw, dest)
 
@@ -889,7 +889,7 @@ class AndroidWeblayer(ChromeAndroidBase):
     requirements = "requirements_android_webview.txt"
 
     def find_binary(self, venv_path=None, channel=None):
-        return "org.chromium.weblayer.shell"
+        return "org.monyhar.weblayer.shell"
 
 
 class AndroidWebview(ChromeAndroidBase):
@@ -906,7 +906,7 @@ class AndroidWebview(ChromeAndroidBase):
         # Just get the current package name of the WebView provider.
         # For WebView, it is not trivial to change the WebView provider, so
         # we will just grab whatever is available.
-        # https://chromium.googlesource.com/chromium/src/+/HEAD/android_webview/docs/channels.md
+        # https://monyhar.googlesource.com/monyhar/src/+/HEAD/android_webview/docs/channels.md
         command = ['adb']
         if self.device_serial:
             command.extend(['-s', self.device_serial])
@@ -1002,8 +1002,8 @@ class Opera(Browser):
     def install_webdriver(self, dest=None, channel=None, browser_binary=None):
         if dest is None:
             dest = os.pwd
-        latest = get("https://api.github.com/repos/operasoftware/operachromiumdriver/releases/latest").json()["tag_name"]
-        url = "https://github.com/operasoftware/operachromiumdriver/releases/download/%s/operadriver_%s.zip" % (latest,
+        latest = get("https://api.github.com/repos/operasoftware/operamonyhardriver/releases/latest").json()["tag_name"]
+        url = "https://github.com/operasoftware/operamonyhardriver/releases/download/%s/operadriver_%s.zip" % (latest,
                                                                                                                 self.platform_string())
         unzip(get(url).raw, dest)
 
@@ -1036,9 +1036,9 @@ class EdgeChromium(Browser):
         "Windows": "win",
         "Darwin": "macos"
     }.get(uname[0])
-    product = "edgechromium"
+    product = "edgemonyhar"
     edgedriver_name = "msedgedriver"
-    requirements = "requirements_edge_chromium.txt"
+    requirements = "requirements_edge_monyhar.txt"
 
     def download(self, dest=None, channel=None, rename=None):
         raise NotImplementedError

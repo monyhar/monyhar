@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments;
+package org.monyhar.chrome.browser.payments;
 
 import androidx.test.filters.MediumTest;
 
@@ -13,16 +13,16 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.components.payments.PaymentManifestParser;
-import org.chromium.components.payments.PaymentManifestParser.ManifestParseCallback;
-import org.chromium.components.payments.WebAppManifestSection;
-import org.chromium.url.GURL;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.components.payments.PaymentManifestParser;
+import org.monyhar.components.payments.PaymentManifestParser.ManifestParseCallback;
+import org.monyhar.components.payments.WebAppManifestSection;
+import org.monyhar.url.GURL;
 
 /** An integration test for the payment manifest parser. */
 @RunWith(ChromeJUnit4ClassRunner.class)
@@ -83,7 +83,7 @@ public class PaymentManifestParserTest implements ManifestParseCallback {
         mActivityTestRule.runOnUiThread(
                 (Runnable) ()
                         -> mParser.parsePaymentMethodManifest(
-                                new GURL("https://chromium.org/pmm.json"),
+                                new GURL("https://monyhar.org/pmm.json"),
                                 "invalid payment method manifest", PaymentManifestParserTest.this));
         CriteriaHelper.pollInstrumentationThread(() -> mParseFailure);
     }

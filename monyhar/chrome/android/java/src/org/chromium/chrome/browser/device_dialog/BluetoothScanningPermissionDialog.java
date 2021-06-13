@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.device_dialog;
+package org.monyhar.chrome.browser.device_dialog;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -24,18 +24,18 @@ import android.widget.ProgressBar;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.MathUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.omnibox.ChromeAutocompleteSchemeClassifier;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.omnibox.OmniboxUrlEmphasizer;
-import org.chromium.content_public.browser.bluetooth_scanning.Event;
-import org.chromium.ui.base.DeviceFormFactor;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.util.ColorUtils;
-import org.chromium.ui.widget.TextViewWithClickableSpans;
+import org.monyhar.base.MathUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.omnibox.ChromeAutocompleteSchemeClassifier;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.omnibox.OmniboxUrlEmphasizer;
+import org.monyhar.content_public.browser.bluetooth_scanning.Event;
+import org.monyhar.ui.base.DeviceFormFactor;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.util.ColorUtils;
+import org.monyhar.ui.widget.TextViewWithClickableSpans;
 
 /**
  * A dialog for asking user permission to do Bluetooth scanning. This dialog is shown when a

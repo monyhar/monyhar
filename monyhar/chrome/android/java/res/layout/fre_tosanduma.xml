@@ -5,7 +5,7 @@
      found in the LICENSE file.
 -->
 <!-- Most of the placement in this layout is controlled by TosAndUmaFragmentView#onMeasure. When changing the layout in this file, be sure to also check on the view object to see what is changing to avoid unexpected behavior. -->
-<org.chromium.chrome.browser.firstrun.TosAndUmaFragmentView
+<org.monyhar.chrome.browser.firstrun.TosAndUmaFragmentView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -58,7 +58,7 @@
                     android:visibility="gone"
                     android:contentDescription="@string/sync_loading">
 
-                    <org.chromium.ui.widget.LoadingView
+                    <org.monyhar.ui.widget.LoadingView
                         android:id="@+id/progress_spinner_large"
                         style="@style/Widget.AppCompat.ProgressBar"
                         android:layout_height="@dimen/fre_loading_spinner_size"
@@ -76,7 +76,7 @@
                     android:gravity="center_vertical"
                     android:orientation="vertical" >
 
-                    <org.chromium.ui.widget.TextViewWithClickableSpans
+                    <org.monyhar.ui.widget.TextViewWithClickableSpans
                         android:id="@+id/tos_and_privacy"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -116,7 +116,7 @@
         android:layout_marginVertical="@dimen/fre_button_vertical_margin"
         android:layout_marginHorizontal="@dimen/fre_content_margin">
 
-        <org.chromium.ui.widget.ButtonCompat
+        <org.monyhar.ui.widget.ButtonCompat
             android:id="@+id/terms_accept"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -159,4 +159,4 @@
         android:textAppearance="@style/TextAppearance.Button.Text.Filled"
         android:visibility="gone"/>
 
-</org.chromium.chrome.browser.firstrun.TosAndUmaFragmentView>
+</org.monyhar.chrome.browser.firstrun.TosAndUmaFragmentView>

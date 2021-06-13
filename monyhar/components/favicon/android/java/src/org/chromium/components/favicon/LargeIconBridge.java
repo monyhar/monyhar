@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.favicon;
+package org.monyhar.components.favicon;
 
 import android.graphics.Bitmap;
 import android.util.LruCache;
@@ -10,12 +10,12 @@ import android.util.LruCache;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.browser_ui.util.ConversionUtils;
-import org.chromium.components.embedder_support.browser_context.BrowserContextHandle;
-import org.chromium.url.GURL;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.browser_ui.util.ConversionUtils;
+import org.monyhar.components.embedder_support.browser_context.BrowserContextHandle;
+import org.monyhar.url.GURL;
 
 /**
  * A Java API for using the C++ LargeIconService.

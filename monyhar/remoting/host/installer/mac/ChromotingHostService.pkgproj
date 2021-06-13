@@ -287,7 +287,7 @@
 										<key>GID</key>
 										<integer>0</integer>
 										<key>PATH</key>
-										<string>LaunchAgents/org.chromium.chromoting.plist</string>
+										<string>LaunchAgents/org.monyhar.chromoting.plist</string>
 										<key>PATH_TYPE</key>
 										<integer>1</integer>
 										<key>PERMISSIONS</key>

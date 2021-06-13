@@ -8022,7 +8022,7 @@ TEST_F(URLRequestTestHTTP, BasicAuthLoadTiming) {
 // In this test, we do a POST which the server will 302 redirect.
 // The subsequent transaction should use GET, and should not send the
 // Content-Type header.
-// http://code.google.com/p/chromium/issues/detail?id=843
+// http://code.google.com/p/monyhar/issues/detail?id=843
 TEST_F(URLRequestTestHTTP, Post302RedirectGet) {
   ASSERT_TRUE(http_test_server()->Start());
 
@@ -11764,7 +11764,7 @@ TEST_F(URLRequestTestFTP, FTPMimeType) {
     const char* path;
     const char* mime;
   } test_cases[] = {
-      {"/", "text/vnd.chromium.ftp-dir"},
+      {"/", "text/vnd.monyhar.ftp-dir"},
       {kFtpTestFile, "application/octet-stream"},
   };
 

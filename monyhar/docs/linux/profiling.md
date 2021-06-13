@@ -3,7 +3,7 @@
 How to profile Chromium on Linux.
 
 See
-[Profiling Chromium and WebKit](https://sites.google.com/a/chromium.org/dev/developers/profiling-chromium-and-webkit)
+[Profiling Chromium and WebKit](https://sites.google.com/a/monyhar.org/dev/developers/profiling-monyhar-and-webkit)
 for alternative discussion.
 
 ## CPU Profiling
@@ -17,7 +17,7 @@ startup).
 TODO(willchan): Talk more about oprofile, gprof, etc.
 
 Also see
-https://sites.google.com/a/chromium.org/dev/developers/profiling-chromium-and-webkit
+https://sites.google.com/a/monyhar.org/dev/developers/profiling-monyhar-and-webkit
 
 ### perf
 
@@ -111,7 +111,7 @@ catch those, use the `HEAP_PROFILE_ALLOCATION_INTERVAL` environment variable.
 
 To programmatically generate a heap profile before exit, use code like:
 
-    #include "third_party/tcmalloc/chromium/src/google/heap-profiler.h"
+    #include "third_party/tcmalloc/monyhar/src/google/heap-profiler.h"
 
     // "foobar" will be included in the message printed to the console
     HeapProfilerDump("foobar");

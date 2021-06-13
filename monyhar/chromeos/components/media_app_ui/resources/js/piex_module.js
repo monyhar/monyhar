@@ -191,7 +191,7 @@ async function extractFromRawImageBuffer(buffer) {
 }
 
 // Export to `window` manually until the toolchain has better support for
-// dynamic module loading. Dynamic modules require ES2020, but asking chromium's
+// dynamic module loading. Dynamic modules require ES2020, but asking monyhar's
 // closure typechecking toolchain for ES2020 input and output still complains
 // that dynamic imports can't be transpiled.
 window['extractFromRawImageBuffer'] = extractFromRawImageBuffer;

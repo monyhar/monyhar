@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo.bindings.test.mojom.mojo;
+package org.monyhar.mojo.bindings.test.mojom.mojo;
 
-import org.chromium.mojo.bindings.MessageReceiver;
-import org.chromium.mojo.bindings.test.mojom.mojo.IntegrationTestInterface.Method0Response;
-import org.chromium.mojo.bindings.test.mojom.mojo.IntegrationTestInterface_Internal.IntegrationTestInterfaceMethod0ResponseParamsForwardToCallback;
+import org.monyhar.mojo.bindings.MessageReceiver;
+import org.monyhar.mojo.bindings.test.mojom.mojo.IntegrationTestInterface.Method0Response;
+import org.monyhar.mojo.bindings.test.mojom.mojo.IntegrationTestInterface_Internal.IntegrationTestInterfaceMethod0ResponseParamsForwardToCallback;
 
 /**
  * Helper class to access {@link IntegrationTestInterface_Internal} package protected method for

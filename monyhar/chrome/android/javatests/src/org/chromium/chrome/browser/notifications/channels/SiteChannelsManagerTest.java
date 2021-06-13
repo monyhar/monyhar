@@ -1,7 +1,7 @@
 // Copyright 2017 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.chrome.browser.notifications.channels;
+package org.monyhar.chrome.browser.notifications.channels;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsInAnyOrder;
@@ -27,21 +27,21 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.MinAndroidSdkLevel;
-import org.chromium.chrome.browser.notifications.NotificationChannelStatus;
-import org.chromium.chrome.browser.notifications.NotificationSettingsBridge;
-import org.chromium.chrome.browser.profiles.OTRProfileID;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.test.ChromeBrowserTestRule;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxy;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxyImpl;
-import org.chromium.components.browser_ui.site_settings.PermissionInfo;
-import org.chromium.components.content_settings.ContentSettingValues;
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.content_public.browser.test.NativeLibraryTestUtils;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.MinAndroidSdkLevel;
+import org.monyhar.chrome.browser.notifications.NotificationChannelStatus;
+import org.monyhar.chrome.browser.notifications.NotificationSettingsBridge;
+import org.monyhar.chrome.browser.profiles.OTRProfileID;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.test.ChromeBrowserTestRule;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxy;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxyImpl;
+import org.monyhar.components.browser_ui.site_settings.PermissionInfo;
+import org.monyhar.components.content_settings.ContentSettingValues;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.content_public.browser.test.NativeLibraryTestUtils;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -130,7 +130,7 @@ public class SiteChannelsManagerTest {
     @SmallTest
     public void testDeleteSiteChannel_channelExists() {
         NotificationSettingsBridge.SiteChannel channel =
-                mSiteChannelsManager.createSiteChannel("https://chromium.org", 0L, true);
+                mSiteChannelsManager.createSiteChannel("https://monyhar.org", 0L, true);
         mSiteChannelsManager.deleteSiteChannel(channel.getId());
         assertThat(Arrays.asList(mSiteChannelsManager.getSiteChannels()), hasSize(0));
     }
@@ -139,7 +139,7 @@ public class SiteChannelsManagerTest {
     @MinAndroidSdkLevel(Build.VERSION_CODES.O)
     @SmallTest
     public void testDeleteAllSiteChannels() {
-        mSiteChannelsManager.createSiteChannel("https://chromium.org", 0L, true);
+        mSiteChannelsManager.createSiteChannel("https://monyhar.org", 0L, true);
         mSiteChannelsManager.createSiteChannel("https://tests.peter.sh", 0L, true);
         mSiteChannelsManager.deleteAllSiteChannels();
         assertThat(Arrays.asList(mSiteChannelsManager.getSiteChannels()), hasSize(0));
@@ -149,7 +149,7 @@ public class SiteChannelsManagerTest {
     @MinAndroidSdkLevel(Build.VERSION_CODES.O)
     @SmallTest
     public void testDeleteSiteChannel_channelDoesNotExist() {
-        mSiteChannelsManager.createSiteChannel("https://chromium.org", 0L, true);
+        mSiteChannelsManager.createSiteChannel("https://monyhar.org", 0L, true);
         mSiteChannelsManager.deleteSiteChannel("https://some-other-origin.org");
         assertThat(Arrays.asList(mSiteChannelsManager.getSiteChannels()), hasSize(1));
     }
@@ -189,7 +189,7 @@ public class SiteChannelsManagerTest {
     @SmallTest
     public void testGetChannelStatus_channelCreatedThenDeleted() {
         NotificationSettingsBridge.SiteChannel channel =
-                mSiteChannelsManager.createSiteChannel("https://chromium.org", 0L, true);
+                mSiteChannelsManager.createSiteChannel("https://monyhar.org", 0L, true);
         mSiteChannelsManager.deleteSiteChannel(channel.getId());
         assertThat(mSiteChannelsManager.getChannelStatus(channel.getId()),
                 matchesChannelStatus(NotificationChannelStatus.UNAVAILABLE));

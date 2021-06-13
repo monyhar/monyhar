@@ -20,4 +20,4 @@ Let `<browser>` be one of the results.
 ```
 
 The results will be in
-`<chromium src folder>/chrome/test/media_router/telemetry/results.html`
+`<monyhar src folder>/chrome/test/media_router/telemetry/results.html`

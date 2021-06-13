@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps.launchpad;
+package org.monyhar.chrome.browser.webapps.launchpad;
 
 import android.app.Activity;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.ui.native_page.BasicNativePage;
-import org.chromium.chrome.browser.ui.native_page.NativePageHost;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.ui.modaldialog.ModalDialogManager;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.ui.native_page.BasicNativePage;
+import org.monyhar.chrome.browser.ui.native_page.NativePageHost;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
 
 import java.util.List;
 

@@ -42,7 +42,7 @@ function testPostMessageFromTab(origPort) {
 
 // Workaround two bugs: shutdown crash if we hook 'unload', and content script
 // GC if we don't register any event handlers.
-// http://code.google.com/p/chromium/issues/detail?id=17410
-// http://code.google.com/p/chromium/issues/detail?id=17582
+// http://code.google.com/p/monyhar/issues/detail?id=17410
+// http://code.google.com/p/monyhar/issues/detail?id=17582
 function foo() {}
 win.addEventListener('error', foo);

@@ -41,7 +41,7 @@ bool FilePathForMemoryName(const std::string& mem_name, base::FilePath* path) {
 #if BUILDFLAG(GOOGLE_CHROME_BRANDING)
   static const char kShmem[] = "com.google.Chrome.shmem.";
 #else
-  static const char kShmem[] = "org.chromium.Chromium.shmem.";
+  static const char kShmem[] = "org.monyhar.Chromium.shmem.";
 #endif
   *path = temp_dir.AppendASCII(kShmem + mem_name);
   return true;

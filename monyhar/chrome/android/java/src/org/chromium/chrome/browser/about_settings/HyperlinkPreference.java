@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.about_settings;
+package org.monyhar.chrome.browser.about_settings;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -10,10 +10,10 @@ import android.util.AttributeSet;
 
 import androidx.preference.Preference;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.customtabs.CustomTabActivity;
-import org.chromium.ui.base.LocalizationUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivity;
+import org.monyhar.ui.base.LocalizationUtils;
 
 /**
  * A preference that navigates to an URL.

@@ -11,7 +11,7 @@ namespace blink {
 // The minimum and maximum amount of page zoom that is possible, independent
 // of other factors such as device scale and page scale (pinch). Historically,
 // these values came from WebKitLegacy/mac/WebView/WebView.mm where they are
-// named MinimumZoomMultiplier and MaximumZoomMultiplier. But chromium has
+// named MinimumZoomMultiplier and MaximumZoomMultiplier. But monyhar has
 // changed to use different limits.
 const double kMinimumPageZoomFactor = 0.25;
 const double kMaximumPageZoomFactor = 5.0;

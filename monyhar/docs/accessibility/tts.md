@@ -18,11 +18,11 @@ platform.
     native speech synthesis.
 
     - Input to the extension is first processed in the
-    [TtsExtensionApi](https://cs.chromium.org/chromium/src/chrome/browser/speech/extension_api/tts_extension_api.h).
+    [TtsExtensionApi](https://cs.monyhar.org/monyhar/src/chrome/browser/speech/extension_api/tts_extension_api.h).
 
     - The extension is passed an [Options object](https://developer.chrome.com/apps/tts#method-speak)
     in chrome.tts.speak, which is translated into a
-    [tts_controller Utterance](https://cs.chromium.org/chromium/src/content/public/browser/tts_controller.h?dr=CSs&l=120).
+    [tts_controller Utterance](https://cs.monyhar.org/monyhar/src/content/public/browser/tts_controller.h?dr=CSs&l=120).
 
 - Web Speech API
 
@@ -32,27 +32,27 @@ platform.
     This allows web apps to do text-to-speech via the device's speech
     synthesizer.
 
-    - A [WebSpeechSynthesisUtterance](https://cs.chromium.org/chromium/src/third_party/blink/public/platform/web_speech_synthesis_utterance.h)
+    - A [WebSpeechSynthesisUtterance](https://cs.monyhar.org/monyhar/src/third_party/blink/public/platform/web_speech_synthesis_utterance.h)
     is created by window.SpeechSynthesis
 
 ### Processing
 
-- The [TtsControllerImpl](https://cs.chromium.org/chromium/src/content/browser/speech/tts_controller_impl.h)
+- The [TtsControllerImpl](https://cs.monyhar.org/monyhar/src/content/browser/speech/tts_controller_impl.h)
 (in content/) processes utterances and sends them to the correct output engine.
 
-- The [TtsControllerDelegateImpl](https://cs.chromium.org/chromium/src/chrome/browser/speech/tts_controller_delegate_impl.h)
+- The [TtsControllerDelegateImpl](https://cs.monyhar.org/monyhar/src/chrome/browser/speech/tts_controller_delegate_impl.h)
 (in chrome/) provides chrome OS specific functionality.
 
 ### Output
 
 - May differ by system, including Mac, Wind, Android, Arc++, and Chrome OS
 
-    - Platform APIs are in [content/browser/speech](https://cs.chromium.org/chromium/src/content/browser/speech/), expect for
-    Chrome OS's, which is in [chrome/browser/speech](https://cs.chromium.org/chromium/src/chrome/browser/speech/).
+    - Platform APIs are in [content/browser/speech](https://cs.monyhar.org/monyhar/src/content/browser/speech/), expect for
+    Chrome OS's, which is in [chrome/browser/speech](https://cs.monyhar.org/monyhar/src/chrome/browser/speech/).
 
 - In Chrome OS:
 
-    - [TtsEngineExtensionAPI](https://cs.chromium.org/chromium/src/chrome/browser/speech/extension_api/tts_engine_extension_api.h)
+    - [TtsEngineExtensionAPI](https://cs.monyhar.org/monyhar/src/chrome/browser/speech/extension_api/tts_engine_extension_api.h)
     forwards speech events to PATTS, or the network speech engine, or,
     coming soon, third-party speech engines.
 

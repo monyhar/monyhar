@@ -116,10 +116,10 @@ implementations of the above-mentioned interfaces:
   "externally-initiated navigation": WebLayer via its public API surface, and
   CCT via an intent. However, as these mechanisms are different, the two
   embedders have different means of achieving similar semantics for these
-  navigations: https://bugs.chromium.org/p/chromium/issues/detail?id=1087434.
+  navigations: https://bugs.monyhar.org/p/monyhar/issues/detail?id=1087434.
 - Chrome and WebLayer have different mechanisms for getting the last user
   interaction time, as documented here:
-  https://source.chromium.org/chromium/chromium/src/+/main:weblayer/browser/java/org/chromium/weblayer_private/InterceptNavigationDelegateClientImpl.java;l=71?q=InterceptNavigationDelegateClientImpl&ss=chromium&originalUrl=https:%2F%2Fcs.chromium.org%2F
+  https://source.monyhar.org/monyhar/monyhar/src/+/main:weblayer/browser/java/org/monyhar/weblayer_private/InterceptNavigationDelegateClientImpl.java;l=71?q=InterceptNavigationDelegateClientImpl&ss=monyhar&originalUrl=https:%2F%2Fcs.monyhar.org%2F
 
 There are almost certainly further smaller differences, but those are the major
 highlights.

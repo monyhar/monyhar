@@ -27,7 +27,7 @@ sys.path.append(os.path.join(_CHROMIUM_SRC, 'third_party', 'catapult', 'devil'))
 from devil.utils import logging_common  # pylint: disable=wrong-import-position
 
 _FLAG_LIST_FILE = os.path.join(_CHROMIUM_SRC, 'android_webview', 'java', 'src',
-                               'org', 'chromium', 'android_webview', 'common',
+                               'org', 'monyhar', 'android_webview', 'common',
                                'ProductionSupportedFlagList.java')
 _ENUMS_XML_FILE = os.path.join(_CHROMIUM_SRC, 'tools', 'metrics', 'histograms',
                                'enums.xml')
@@ -103,7 +103,7 @@ def ConvertNameIfNecessary(name):
 class Flag(object):
   """Simplified python equivalent of the Flag java class.
 
-  See //android_webview/java/src/org/chromium/android_webview/common/Flag.java
+  See //android_webview/java/src/org/monyhar/android_webview/common/Flag.java
   """
 
   def __init__(self, name, is_base_feature):
@@ -245,7 +245,7 @@ double-check this picked the correct labels for your new features (labels are
 case-sensitive!), add these to enums.xml, run `git-cl format`, and then follow
 these steps as a final check:
 
-https://chromium.googlesource.com/chromium/src/+/main/tools/metrics/histograms/README.md#flag-histograms
+https://monyhar.googlesource.com/monyhar/src/+/main/tools/metrics/histograms/README.md#flag-histograms
 
 If any labels were generated incorrectly, please edit this script and change
 KNOWN_MISTAKES.

@@ -116,9 +116,9 @@ name: cookie2, value: httpOnly, domain: localhost, path: /, httpOnly, session
 name: cookie3, value: secure, domain: localhost, path: /, secure, session
 name: cookie4, value: lax, domain: localhost, path: /, session, Lax
 name: cookie5, value: expires, domain: localhost, path: /, expires
-name: cookie6, value: .domain, domain: .chromium.org, path: /path, session
-name: cookie7, value: domain, domain: www.chromium.org, path: /path, session
-name: cookie8, value: url-based, domain: www.chromium.org, path: /, secure, session
+name: cookie6, value: .domain, domain: .monyhar.org, path: /path, session
+name: cookie7, value: domain, domain: www.monyhar.org, path: /path, session
+name: cookie8, value: url-based, domain: www.monyhar.org, path: /, secure, session
 
 Running test: deleteAllCookies
 
@@ -131,22 +131,22 @@ Running test: deleteAllCookies
 Running test: deleteCookieByURL
 Adding multiple cookies
 Num of cookies 2
-name: cookie1, value: .domain, domain: www.chromium.org, path: /, session
-name: cookie2, value: .domain, domain: www.chromium.org, path: /, expires
+name: cookie1, value: .domain, domain: www.monyhar.org, path: /, session
+name: cookie2, value: .domain, domain: www.monyhar.org, path: /, expires
 Deleting Cookie
 Num of cookies 1
-name: cookie2, value: .domain, domain: www.chromium.org, path: /, expires
+name: cookie2, value: .domain, domain: www.monyhar.org, path: /, expires
 
 Running test: deleteAllCookies
 
 Running test: deleteCookieByDomain
 Adding multiple cookies
 Num of cookies 2
-name: cookie1, value: .domain, domain: .chromium.org, path: /path, session
-name: cookie2, value: .domain, domain: .chromium.org, path: /path, expires
+name: cookie1, value: .domain, domain: .monyhar.org, path: /path, session
+name: cookie2, value: .domain, domain: .monyhar.org, path: /path, expires
 Deleting Cookie
 Num of cookies 1
-name: cookie2, value: .domain, domain: .chromium.org, path: /path, expires
+name: cookie2, value: .domain, domain: .monyhar.org, path: /path, expires
 Deleting Cookie
 Num of cookies 0
 
@@ -155,10 +155,10 @@ Running test: deleteAllCookies
 Running test: deleteCookieByDomainAndPath
 Adding multiple cookies
 Num of cookies 1
-name: cookie1, value: .domain, domain: .chromium.org, path: /path, session
+name: cookie1, value: .domain, domain: .monyhar.org, path: /path, session
 Deleting Cookie
 Num of cookies 1
-name: cookie1, value: .domain, domain: .chromium.org, path: /path, session
+name: cookie1, value: .domain, domain: .monyhar.org, path: /path, session
 Deleting Cookie
 Num of cookies 0
 
@@ -167,7 +167,7 @@ Running test: deleteAllCookies
 Running test: nonUnicodeCookie
 Adding multiple cookies
 Num of cookies 1
-name: cookie1, value: привет, domain: .chromium.org, path: /path, session
+name: cookie1, value: привет, domain: .monyhar.org, path: /path, session
 
 Running test: deleteAllCookies
 

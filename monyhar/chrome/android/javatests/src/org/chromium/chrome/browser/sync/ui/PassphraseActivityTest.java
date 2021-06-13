@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sync.ui;
+package org.monyhar.chrome.browser.sync.ui;
 
 import android.app.Instrumentation.ActivityMonitor;
 import android.content.ComponentName;
@@ -20,12 +20,12 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.sync.FakeSyncServiceImpl;
-import org.chromium.chrome.browser.sync.SyncService;
-import org.chromium.chrome.test.ChromeBrowserTestRule;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.sync.FakeSyncServiceImpl;
+import org.monyhar.chrome.browser.sync.SyncService;
+import org.monyhar.chrome.test.ChromeBrowserTestRule;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /**
  * Tests for PassphraseActivity.

@@ -6,7 +6,7 @@
  * Test suite for displaying and functioning of modal dialogs.
  */
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
 import androidx.test.filters.MediumTest;
 import androidx.test.filters.SmallTest;
@@ -16,15 +16,15 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.AwContents;
-import org.chromium.android_webview.JsPromptResultReceiver;
-import org.chromium.android_webview.JsResultReceiver;
-import org.chromium.android_webview.test.util.AwTestTouchUtils;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.content_public.browser.GestureListenerManager;
-import org.chromium.content_public.browser.GestureStateListener;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.android_webview.AwContents;
+import org.monyhar.android_webview.JsPromptResultReceiver;
+import org.monyhar.android_webview.JsResultReceiver;
+import org.monyhar.android_webview.test.util.AwTestTouchUtils;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.content_public.browser.GestureListenerManager;
+import org.monyhar.content_public.browser.GestureStateListener;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 

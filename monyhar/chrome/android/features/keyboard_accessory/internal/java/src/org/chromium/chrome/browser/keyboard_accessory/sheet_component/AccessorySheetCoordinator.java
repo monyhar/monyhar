@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.keyboard_accessory.sheet_component;
+package org.monyhar.chrome.browser.keyboard_accessory.sheet_component;
 
-import static org.chromium.chrome.browser.keyboard_accessory.sheet_component.AccessorySheetProperties.ACTIVE_TAB_INDEX;
-import static org.chromium.chrome.browser.keyboard_accessory.sheet_component.AccessorySheetProperties.HEIGHT;
-import static org.chromium.chrome.browser.keyboard_accessory.sheet_component.AccessorySheetProperties.NO_ACTIVE_TAB;
-import static org.chromium.chrome.browser.keyboard_accessory.sheet_component.AccessorySheetProperties.PAGE_CHANGE_LISTENER;
-import static org.chromium.chrome.browser.keyboard_accessory.sheet_component.AccessorySheetProperties.TABS;
-import static org.chromium.chrome.browser.keyboard_accessory.sheet_component.AccessorySheetProperties.TOP_SHADOW_VISIBLE;
-import static org.chromium.chrome.browser.keyboard_accessory.sheet_component.AccessorySheetProperties.VISIBLE;
+import static org.monyhar.chrome.browser.keyboard_accessory.sheet_component.AccessorySheetProperties.ACTIVE_TAB_INDEX;
+import static org.monyhar.chrome.browser.keyboard_accessory.sheet_component.AccessorySheetProperties.HEIGHT;
+import static org.monyhar.chrome.browser.keyboard_accessory.sheet_component.AccessorySheetProperties.NO_ACTIVE_TAB;
+import static org.monyhar.chrome.browser.keyboard_accessory.sheet_component.AccessorySheetProperties.PAGE_CHANGE_LISTENER;
+import static org.monyhar.chrome.browser.keyboard_accessory.sheet_component.AccessorySheetProperties.TABS;
+import static org.monyhar.chrome.browser.keyboard_accessory.sheet_component.AccessorySheetProperties.TOP_SHADOW_VISIBLE;
+import static org.monyhar.chrome.browser.keyboard_accessory.sheet_component.AccessorySheetProperties.VISIBLE;
 
 import android.view.ViewStub;
 
@@ -21,13 +21,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import org.chromium.chrome.browser.keyboard_accessory.data.KeyboardAccessoryData;
-import org.chromium.ui.DeferredViewStubInflationProvider;
-import org.chromium.ui.ViewProvider;
-import org.chromium.ui.modelutil.LazyConstructionPropertyMcp;
-import org.chromium.ui.modelutil.ListModel;
-import org.chromium.ui.modelutil.ListModelChangeProcessor;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.chrome.browser.keyboard_accessory.data.KeyboardAccessoryData;
+import org.monyhar.ui.DeferredViewStubInflationProvider;
+import org.monyhar.ui.ViewProvider;
+import org.monyhar.ui.modelutil.LazyConstructionPropertyMcp;
+import org.monyhar.ui.modelutil.ListModel;
+import org.monyhar.ui.modelutil.ListModelChangeProcessor;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * Creates and owns all elements which are part of the accessory sheet component.

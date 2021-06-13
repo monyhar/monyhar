@@ -50,7 +50,7 @@ class BASE_EXPORT MemoryPressureListener {
   // A Java counterpart will be generated for this enum.
   // The values needs to be kept in sync with the MemoryPressureLevel entry in
   // enums.xml.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.base
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.base
   // GENERATED_JAVA_PREFIX_TO_STRIP: MEMORY_PRESSURE_LEVEL_
   enum MemoryPressureLevel {
     // No problems, there is enough memory to use. This event is not sent via

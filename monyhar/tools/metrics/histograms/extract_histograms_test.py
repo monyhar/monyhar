@@ -122,7 +122,7 @@ TEST_HISTOGRAM_WITH_TOKENS = """
 <histogram-configuration>
 <histograms>
 <histogram name="HistogramName.{Color}{Size}" expires_after="2017-10-16">
-  <owner>me@chromium.org</owner>
+  <owner>me@monyhar.org</owner>
   <summary>
     This is a histogram for button of {Color} color and {Size} size.
   </summary>
@@ -133,13 +133,13 @@ TEST_HISTOGRAM_WITH_TOKENS = """
       </obsolete>
     </variant>
     <variant name="green">
-      <owner>green@chromium.org</owner>
+      <owner>green@monyhar.org</owner>
     </variant>
   </token>
   <token key="Size">
     <variant name="" summary="all"/>
     <variant name=".small" summary="small">
-      <owner>small@chromium.org</owner>
+      <owner>small@monyhar.org</owner>
       <obsolete>
         Obsolete small
       </obsolete>
@@ -158,7 +158,7 @@ TEST_HISTOGRAM_WITH_VARIANTS = """
 <variants name="HistogramNameSize">
   <variant name="" summary="all"/>
   <variant name=".small" summary="small">
-    <owner>small@chromium.org</owner>
+    <owner>small@monyhar.org</owner>
     <obsolete>
       Obsolete small
     </obsolete>
@@ -168,7 +168,7 @@ TEST_HISTOGRAM_WITH_VARIANTS = """
 </variants>
 
 <histogram name="HistogramName.{Color}{Size}" expires_after="2017-10-16">
-  <owner>me@chromium.org</owner>
+  <owner>me@monyhar.org</owner>
   <summary>
     This is a histogram for button of {Color} color and {Size} size.
   </summary>
@@ -179,7 +179,7 @@ TEST_HISTOGRAM_WITH_VARIANTS = """
       </obsolete>
     </variant>
     <variant name="green">
-      <owner>green@chromium.org</owner>
+      <owner>green@monyhar.org</owner>
     </variant>
   </token>
   <token key="Size" variants="HistogramNameSize"/>
@@ -193,7 +193,7 @@ TEST_HISTOGRAM_TOKENS_DUPLICATE = """
 <histograms>
 <histogram name="Histogram{Color}{Size}" units="things"
     expires_after="2017-10-16">
-  <owner>me@chromium.org</owner>
+  <owner>me@monyhar.org</owner>
   <summary>
     This is a histogram for button of {Color} color and {Size} size.
   </summary>
@@ -227,7 +227,7 @@ TEST_HISTOGRAM_VARIANTS_DUPLICATE = """
 <histograms>
 <histogram name="Histogram{Color}{Size}" units="things"
     expires_after="2017-10-16">
-  <owner>me@chromium.org</owner>
+  <owner>me@monyhar.org</owner>
   <summary>
     This is a histogram for button of {Color} color and {Size} size.
   </summary>
@@ -252,7 +252,7 @@ TEST_HISTOGRAM_WITH_MIXED_VARIANTS = """
 </variants>
 
 <histogram name="HistogramName.{Color}{Size}" expires_after="2017-10-16">
-  <owner>me@chromium.org</owner>
+  <owner>me@monyhar.org</owner>
   <summary>
     This is a histogram for button of {Color} color and {Size} size.
   </summary>
@@ -263,13 +263,13 @@ TEST_HISTOGRAM_WITH_MIXED_VARIANTS = """
       </obsolete>
     </variant>
     <variant name="green">
-      <owner>green@chromium.org</owner>
+      <owner>green@monyhar.org</owner>
     </variant>
   </token>
   <token key="Size" variants="HistogramNameSize">
     <variant name="" summary="all"/>
     <variant name=".small" summary="small">
-      <owner>small@chromium.org</owner>
+      <owner>small@monyhar.org</owner>
       <obsolete>
         Obsolete small
       </obsolete>
@@ -514,7 +514,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histogram-configuration>
 <histograms>
  <histogram name="Test.Histogram" units="things" expires_after="2019-01-01">
-   <owner>person@chromium.org</owner>
+   <owner>person@monyhar.org</owner>
  </histogram>
 </histograms>
 </histogram-configuration>
@@ -528,7 +528,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histogram-configuration>
 <histograms>
  <histogram name="Test.Histogram" units="things" expires_after="2019-01-01">
-   <owner>person@chromium.org</owner>
+   <owner>person@monyhar.org</owner>
    <summary/>
  </histogram>
 </histograms>
@@ -655,7 +655,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histogram-configuration>
 <histograms>
  <histogram name="Test.Histogram" units="things" expires_after="2019-01-01">
-  <owner>cait@chromium.org, paul@chromium.org</owner>
+  <owner>cait@monyhar.org, paul@monyhar.org</owner>
   <summary> This is a summary </summary>
  </histogram>
 </histograms>
@@ -823,21 +823,21 @@ class ExtractHistogramsTest(unittest.TestCase):
     histograms_dict, _ = extract_histograms._UpdateHistogramsWithTokens(
         histograms_dict)
 
-    self.assertEqual(['small@chromium.org'],
+    self.assertEqual(['small@monyhar.org'],
                      histograms_dict['HistogramName.red.small']['owners'])
-    self.assertEqual(['me@chromium.org'],
+    self.assertEqual(['me@monyhar.org'],
                      histograms_dict['HistogramName.red.medium']['owners'])
-    self.assertEqual(['me@chromium.org'],
+    self.assertEqual(['me@monyhar.org'],
                      histograms_dict['HistogramName.red.large']['owners'])
-    self.assertEqual(['me@chromium.org'],
+    self.assertEqual(['me@monyhar.org'],
                      histograms_dict['HistogramName.red']['owners'])
-    self.assertEqual(['green@chromium.org', 'small@chromium.org'],
+    self.assertEqual(['green@monyhar.org', 'small@monyhar.org'],
                      histograms_dict['HistogramName.green.small']['owners'])
-    self.assertEqual(['green@chromium.org'],
+    self.assertEqual(['green@monyhar.org'],
                      histograms_dict['HistogramName.green.medium']['owners'])
-    self.assertEqual(['green@chromium.org'],
+    self.assertEqual(['green@monyhar.org'],
                      histograms_dict['HistogramName.green.large']['owners'])
-    self.assertEqual(['green@chromium.org'],
+    self.assertEqual(['green@monyhar.org'],
                      histograms_dict['HistogramName.green']['owners'])
 
   @parameterized.expand([
@@ -888,7 +888,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histograms>
 <histogram name="Histogram{Color}{SizeNone}" units="things"
     expires_after="2017-10-16">
-  <owner>me@chromium.org</owner>
+  <owner>me@monyhar.org</owner>
   <summary>
     This is a histogram for button of {Color} color and {SizeNone} size.
   </summary>

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.contextualsearch;
+package org.monyhar.chrome.browser.contextualsearch;
 
 import android.net.Uri;
 import android.support.test.InstrumentationRegistry;
@@ -13,15 +13,15 @@ import androidx.annotation.VisibleForTesting;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayContentDelegate;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayContentProgressObserver;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanelContent;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanelContentFactory;
-import org.chromium.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchPanel;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.WebContentsObserver;
-import org.chromium.url.GURL;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayContentDelegate;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayContentProgressObserver;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanelContent;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanelContentFactory;
+import org.monyhar.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchPanel;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.WebContentsObserver;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.HashMap;

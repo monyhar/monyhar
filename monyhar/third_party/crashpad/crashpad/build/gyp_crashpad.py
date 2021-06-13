@@ -59,14 +59,14 @@ def main(args):
 
     crashpad_dir_or_dot = crashpad_dir if crashpad_dir is not '' else os.curdir
 
-    (dependencies, mini_chromium_common_gypi) = (ChooseDependencyPath(
-        os.path.join(crashpad_dir, 'third_party', 'mini_chromium',
-                     'mini_chromium', 'build', 'common.gypi'),
-        os.path.join(crashpad_dir, os.pardir, os.pardir, 'mini_chromium',
-                     'mini_chromium', 'build', 'common.gypi')))
+    (dependencies, mini_monyhar_common_gypi) = (ChooseDependencyPath(
+        os.path.join(crashpad_dir, 'third_party', 'mini_monyhar',
+                     'mini_monyhar', 'build', 'common.gypi'),
+        os.path.join(crashpad_dir, os.pardir, os.pardir, 'mini_monyhar',
+                     'mini_monyhar', 'build', 'common.gypi')))
     if dependencies is not None:
         args.extend(['-D', 'crashpad_dependencies=%s' % dependencies])
-    args.extend(['--include', mini_chromium_common_gypi])
+    args.extend(['--include', mini_monyhar_common_gypi])
     args.extend(['--depth', crashpad_dir_or_dot])
     args.append(os.path.join(crashpad_dir, 'crashpad.gyp'))
 

@@ -32,9 +32,9 @@ _RESOURCE_SIZES = os.path.join(_DIR_SOURCE_ROOT,
 _AAPT2 = os.path.join(_DIR_SOURCE_ROOT,
                       'third_party/android_build_tools/aapt2/aapt2')
 _KEYSTORE = os.path.join(_DIR_SOURCE_ROOT,
-                         'build/android/chromium-debug.keystore')
-_KEYSTORE_PASSWORD = 'chromium'
-_KEYSTORE_ALIAS = 'chromiumdebugkey'
+                         'build/android/monyhar-debug.keystore')
+_KEYSTORE_PASSWORD = 'monyhar'
+_KEYSTORE_ALIAS = 'monyhardebugkey'
 
 
 class _Artifact(object):

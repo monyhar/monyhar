@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.site_settings;
+package org.monyhar.chrome.browser.site_settings;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.test.InstrumentationRegistry;
 
-import org.chromium.chrome.browser.settings.SettingsActivity;
-import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.browser_ui.site_settings.SingleCategorySettings;
-import org.chromium.components.browser_ui.site_settings.SingleWebsiteSettings;
-import org.chromium.components.browser_ui.site_settings.SiteSettings;
-import org.chromium.components.browser_ui.site_settings.SiteSettingsCategory;
-import org.chromium.components.browser_ui.site_settings.Website;
+import org.monyhar.chrome.browser.settings.SettingsActivity;
+import org.monyhar.chrome.browser.settings.SettingsLauncherImpl;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.browser_ui.site_settings.SingleCategorySettings;
+import org.monyhar.components.browser_ui.site_settings.SingleWebsiteSettings;
+import org.monyhar.components.browser_ui.site_settings.SiteSettings;
+import org.monyhar.components.browser_ui.site_settings.SiteSettingsCategory;
+import org.monyhar.components.browser_ui.site_settings.Website;
 
 /**
  * Util functions for testing SiteSettings functionality.

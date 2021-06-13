@@ -645,7 +645,7 @@ TEST_F(SupervisedUserURLFilterTest, ChromeWebstoreDownloadsAreAlwaysAllowed) {
   GURL crx_download_url1(
       "https://clients2.google.com/service/update2/"
       "crx?response=redirect&os=linux&arch=x64&nacl_arch=x86-64&prod="
-      "chromiumcrx&prodchannel=&prodversion=55.0.2882.0&lang=en-US&x=id%"
+      "monyharcrx&prodchannel=&prodversion=55.0.2882.0&lang=en-US&x=id%"
       "3Dciniambnphakdoflgeamacamhfllbkmo%26installsource%3Dondemand%26uc");
   GURL crx_download_url2(
       "https://clients2.googleusercontent.com/crx/blobs/"

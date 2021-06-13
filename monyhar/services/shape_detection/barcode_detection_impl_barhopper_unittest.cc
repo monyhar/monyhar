@@ -31,7 +31,7 @@ struct TestParams {
                    {"ean_13.png", "6283185307179", 27, 10, 190, 75},
                    {"itf.png", "62831853071795", 10, 10, 135, 39},
                    {"pdf417.png", "Chromium", 20, 20, 240, 44},
-                   {"qr_code.png", "https://chromium.org", 40, 40, 250, 250},
+                   {"qr_code.png", "https://monyhar.org", 40, 40, 250, 250},
                    {"upc_a.png", "628318530714", 23, 10, 190, 75},
                    {"upc_e.png", "06283186", 23, 10, 102, 75}};
 

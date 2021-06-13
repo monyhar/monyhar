@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.content.pm.ResolveInfo;
 import android.graphics.Rect;
@@ -16,30 +16,30 @@ import android.view.View;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.CollectionUtil;
-import org.chromium.base.Consumer;
-import org.chromium.base.PackageManagerUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.firstrun.FirstRunStatus;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.locale.LocaleManager;
-import org.chromium.chrome.browser.share.ChromeShareExtras;
-import org.chromium.chrome.browser.share.ShareDelegate;
-import org.chromium.chrome.browser.share.ShareDelegate.ShareOrigin;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabUtils;
-import org.chromium.chrome.browser.tab.TabWebContentsObserver;
-import org.chromium.chrome.browser.user_education.IPHCommandBuilder;
-import org.chromium.chrome.browser.user_education.UserEducationHelper;
-import org.chromium.components.browser_ui.share.ShareParams;
-import org.chromium.components.feature_engagement.FeatureConstants;
-import org.chromium.content_public.browser.ActionModeCallbackHelper;
-import org.chromium.content_public.browser.SelectionPopupController;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.Callback;
+import org.monyhar.base.CollectionUtil;
+import org.monyhar.base.Consumer;
+import org.monyhar.base.PackageManagerUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.firstrun.FirstRunStatus;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.locale.LocaleManager;
+import org.monyhar.chrome.browser.share.ChromeShareExtras;
+import org.monyhar.chrome.browser.share.ShareDelegate;
+import org.monyhar.chrome.browser.share.ShareDelegate.ShareOrigin;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabUtils;
+import org.monyhar.chrome.browser.tab.TabWebContentsObserver;
+import org.monyhar.chrome.browser.user_education.IPHCommandBuilder;
+import org.monyhar.chrome.browser.user_education.UserEducationHelper;
+import org.monyhar.components.browser_ui.share.ShareParams;
+import org.monyhar.components.feature_engagement.FeatureConstants;
+import org.monyhar.content_public.browser.ActionModeCallbackHelper;
+import org.monyhar.content_public.browser.SelectionPopupController;
+import org.monyhar.content_public.browser.WebContents;
 
 import java.util.HashSet;
 import java.util.List;

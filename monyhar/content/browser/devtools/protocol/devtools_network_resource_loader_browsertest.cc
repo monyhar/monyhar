@@ -80,7 +80,7 @@ class DevtoolsNetworkResourceLoaderTest : public ContentBrowserTest {
         "DevtoolsNetworkResourceLoaderTest");
     // Let DevTools fetch resources without CORS and CORB. Source maps are valid
     // JSON and would otherwise require a CORS fetch + correct response headers.
-    // See BUG(chromium:1076435) for more context.
+    // See BUG(monyhar:1076435) for more context.
     params->is_corb_enabled = false;
     current_frame_host()->GetProcess()->CreateURLLoaderFactory(
         url_loader_factory.BindNewPipeAndPassReceiver(), std::move(params));

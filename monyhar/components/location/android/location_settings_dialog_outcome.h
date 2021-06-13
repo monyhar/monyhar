@@ -6,7 +6,7 @@
 #define COMPONENTS_LOCATION_ANDROID_LOCATION_SETTINGS_DIALOG_OUTCOME_H_
 
 // An enum to describe the outcome of a system location setting prompt.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.location
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.location
 enum LocationSettingsDialogOutcome {
   // The user accepted the prompt and the system location setting has been
   // flipped to granted.

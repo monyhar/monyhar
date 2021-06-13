@@ -30,21 +30,21 @@ To update:
  2. Download Apache2, unpack, and move to "apache-win32". This directory
     should contain metadata files and bin/ and modules/ subdirectories.
 
- 3. Copy ".gitignore" and "README.chromium" to the new apache-win32 directory.
+ 3. Copy ".gitignore" and "README.monyhar" to the new apache-win32 directory.
 
  4. Download PHP and unpack; copy "readme-redist-bins.txt" to your Apache
     directory, copy "php*ts.dll" to bin/, and copy "php*apache2_*.dll" to modules/.
 
  5. It might be necessary to copy other DLL files to the directories
     where the relevant binaries are present. Update
-    remove_files_not_needed_for_chromium.sh accordingly.
+    remove_files_not_needed_for_monyhar.sh accordingly.
 
  6. Verify that Apache2 works, for example by running "run-blink-httpd"
     in the Blink tools directory. Update the win-httpd.conf configuration
     file if necessary.
 
  7. Update filenames as necessary and delete files that aren't need for Chromium
-    using remove_files_not_needed_for_chromium.sh.
+    using remove_files_not_needed_for_monyhar.sh.
 
  8. Copy vsruntime{version}.dll from the corresponding MSVC version to
     bin/. (Note VC15/MSVC2017 and VC14/MSVC2015 are both version 140.) See also
@@ -58,13 +58,13 @@ To update:
     include a full install. https://crbug.com/910745
 
 10. Upload the executables and DLLs to Google Storage, to the
-    chromium-apache-win32 bucket. See http://g.co/bugatrooper in order to get
+    monyhar-apache-win32 bucket. See http://g.co/bugatrooper in order to get
     permission to upload. Upload all exe, dll and so binaries, e.g.:
 
-    % find apache-win32/bin -name '*.exe' | upload_to_google_storage.py --bucket chromium-apache-win32 -
-    % find apache-win32/bin -name '*.dll' | upload_to_google_storage.py --bucket chromium-apache-win32 -
-    % find apache-win32/modules -name '*.so' | upload_to_google_storage.py --bucket chromium-apache-win32 -
-    % find apache-win32/modules -name '*.dll' | upload_to_google_storage.py --bucket chromium-apache-win32 -
+    % find apache-win32/bin -name '*.exe' | upload_to_google_storage.py --bucket monyhar-apache-win32 -
+    % find apache-win32/bin -name '*.dll' | upload_to_google_storage.py --bucket monyhar-apache-win32 -
+    % find apache-win32/modules -name '*.so' | upload_to_google_storage.py --bucket monyhar-apache-win32 -
+    % find apache-win32/modules -name '*.dll' | upload_to_google_storage.py --bucket monyhar-apache-win32 -
 
 11. Optionally, prune the files that were uploaded and run gclient runhooks to
     verify that they are re-downloaded. Remember to clean up any temp files used

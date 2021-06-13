@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
-import org.chromium.chrome.browser.browserservices.ui.splashscreen.SplashController;
-import org.chromium.chrome.browser.browserservices.ui.splashscreen.trustedwebactivity.TwaSplashController;
+import org.monyhar.chrome.browser.browserservices.ui.splashscreen.SplashController;
+import org.monyhar.chrome.browser.browserservices.ui.splashscreen.trustedwebactivity.TwaSplashController;
 
 /**
  * A CustomTabActivity that has a translucent theme. This is used to ensure seamless transition of

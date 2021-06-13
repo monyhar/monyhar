@@ -1,7 +1,7 @@
 // Copyright 2018 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.chrome.browser.metrics;
+package org.monyhar.chrome.browser.metrics;
 
 import android.annotation.TargetApi;
 import android.app.usage.StorageStats;
@@ -14,10 +14,10 @@ import android.os.Process;
 import android.os.storage.StorageManager;
 import android.os.storage.StorageVolume;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.components.browser_ui.util.ConversionUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.components.browser_ui.util.ConversionUtils;
 
 import java.io.IOException;
 import java.util.UUID;

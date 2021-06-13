@@ -22,7 +22,7 @@
 #include "components/prefs/pref_service.h"
 #include "components/safe_browsing/buildflags.h"
 #include "components/security_interstitials/core/common_string_util.h"
-#include "components/strings/grit/components_chromium_strings.h"
+#include "components/strings/grit/components_monyhar_strings.h"
 #include "components/strings/grit/components_strings.h"
 #include "components/vector_icons/vector_icons.h"
 #include "ppapi/buildflags/buildflags.h"

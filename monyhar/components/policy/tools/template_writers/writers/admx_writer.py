@@ -161,10 +161,10 @@ class ADMXWriter(xml_formatted_writer.XMLFormattedWriter,
 
   def _AddCategory(self, parent, name, display_name, parent_category_name=None):
     '''Adds an ADMX category element to the passed parent node. The following
-    snippet shows an example of a category element where "chromium" is the value
+    snippet shows an example of a category element where "monyhar" is the value
     of the parameter name:
 
-    <category displayName="$(string.chromium)" name="chromium"/>
+    <category displayName="$(string.monyhar)" name="monyhar"/>
 
     Each parent node can have only one category with a given name. Adding the
     same category again with the same attributes is ignored, but adding it

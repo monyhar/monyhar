@@ -433,7 +433,7 @@ js_library("focus_row_behavior.m") {
     ":focus_row.m",
     ":focus_without_ink.m",
     "../..:assert.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   sources =
       [ "$root_gen_dir/ui/webui/resources/js/cr/ui/focus_row_behavior.m.js" ]

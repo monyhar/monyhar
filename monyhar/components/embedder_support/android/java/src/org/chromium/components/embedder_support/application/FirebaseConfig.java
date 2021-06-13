@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.embedder_support.application;
+package org.monyhar.components.embedder_support.application;
 
-import org.chromium.build.BuildConfig;
+import org.monyhar.build.BuildConfig;
 
 /**
  * Simple class containing build specific Firebase app IDs.

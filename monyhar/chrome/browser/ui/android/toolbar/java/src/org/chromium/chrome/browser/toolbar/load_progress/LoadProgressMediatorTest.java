@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar.load_progress;
+package org.monyhar.chrome.browser.toolbar.load_progress;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
@@ -22,19 +22,19 @@ import org.mockito.Captor;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.MathUtils;
-import org.chromium.base.supplier.ObservableSupplierImpl;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.UiThreadTest;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabObserver;
-import org.chromium.chrome.browser.toolbar.load_progress.LoadProgressProperties.CompletionState;
-import org.chromium.content_public.browser.NavigationHandle;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.url.GURL;
+import org.monyhar.base.MathUtils;
+import org.monyhar.base.supplier.ObservableSupplierImpl;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.UiThreadTest;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabObserver;
+import org.monyhar.chrome.browser.toolbar.load_progress.LoadProgressProperties.CompletionState;
+import org.monyhar.content_public.browser.NavigationHandle;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.url.GURL;
 
 /** Unit tests for LoadProgressMediator. */
 @RunWith(BaseJUnit4ClassRunner.class)

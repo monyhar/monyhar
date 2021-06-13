@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.merchant_viewer;
+package org.monyhar.chrome.browser.merchant_viewer;
 
 import static org.mockito.Mockito.doReturn;
 
@@ -17,12 +17,12 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.supplier.ObservableSupplierImpl;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.profiles.ProfileJni;
-import org.chromium.chrome.test.util.browser.Features;
+import org.monyhar.base.supplier.ObservableSupplierImpl;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.profiles.ProfileJni;
+import org.monyhar.chrome.test.util.browser.Features;
 
 /**
  * Tests for {@link MerchantTrustSignalsStorageFactory}.

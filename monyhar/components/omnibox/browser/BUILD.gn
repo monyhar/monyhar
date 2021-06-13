@@ -372,16 +372,16 @@ if (is_android) {
 
   android_library("browser_java") {
     sources = [
-      "android/java/src/org/chromium/components/omnibox/AutocompleteMatch.java",
-      "android/java/src/org/chromium/components/omnibox/AutocompleteResult.java",
-      "android/java/src/org/chromium/components/omnibox/AutocompleteSchemeClassifier.java",
-      "android/java/src/org/chromium/components/omnibox/OmniboxUrlEmphasizer.java",
-      "android/java/src/org/chromium/components/omnibox/SecurityButtonAnimationDelegate.java",
-      "android/java/src/org/chromium/components/omnibox/SecurityStatusIcon.java",
-      "android/java/src/org/chromium/components/omnibox/SuggestionAnswer.java",
+      "android/java/src/org/monyhar/components/omnibox/AutocompleteMatch.java",
+      "android/java/src/org/monyhar/components/omnibox/AutocompleteResult.java",
+      "android/java/src/org/monyhar/components/omnibox/AutocompleteSchemeClassifier.java",
+      "android/java/src/org/monyhar/components/omnibox/OmniboxUrlEmphasizer.java",
+      "android/java/src/org/monyhar/components/omnibox/SecurityButtonAnimationDelegate.java",
+      "android/java/src/org/monyhar/components/omnibox/SecurityStatusIcon.java",
+      "android/java/src/org/monyhar/components/omnibox/SuggestionAnswer.java",
     ]
 
-    resources_package = "org.chromium.components.omnibox"
+    resources_package = "org.monyhar.components.omnibox"
     deps = [
       ":java_resources",
       "//base:base_java",
@@ -411,11 +411,11 @@ if (is_android) {
 
   generate_jni("jni_headers") {
     sources = [
-      "android/java/src/org/chromium/components/omnibox/AutocompleteMatch.java",
-      "android/java/src/org/chromium/components/omnibox/AutocompleteResult.java",
-      "android/java/src/org/chromium/components/omnibox/AutocompleteSchemeClassifier.java",
-      "android/java/src/org/chromium/components/omnibox/OmniboxUrlEmphasizer.java",
-      "android/java/src/org/chromium/components/omnibox/SuggestionAnswer.java",
+      "android/java/src/org/monyhar/components/omnibox/AutocompleteMatch.java",
+      "android/java/src/org/monyhar/components/omnibox/AutocompleteResult.java",
+      "android/java/src/org/monyhar/components/omnibox/AutocompleteSchemeClassifier.java",
+      "android/java/src/org/monyhar/components/omnibox/OmniboxUrlEmphasizer.java",
+      "android/java/src/org/monyhar/components/omnibox/SuggestionAnswer.java",
     ]
   }
 }

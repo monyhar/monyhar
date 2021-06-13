@@ -25,7 +25,7 @@ class RenderFrameHost;
 // will be cached.
 //
 // WARNING: This code is still experimental and might completely go away.
-// Please get in touch with bfcache-dev@chromium.org if you intend to use it.
+// Please get in touch with bfcache-dev@monyhar.org if you intend to use it.
 //
 // All methods of this class should be called from the UI thread.
 class CONTENT_EXPORT BackForwardCache {

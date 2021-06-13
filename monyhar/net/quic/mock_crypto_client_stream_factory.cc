@@ -5,7 +5,7 @@
 #include "net/quic/mock_crypto_client_stream_factory.h"
 
 #include "base/lazy_instance.h"
-#include "net/quic/quic_chromium_client_session.h"
+#include "net/quic/quic_monyhar_client_session.h"
 #include "net/third_party/quiche/src/quic/core/quic_crypto_client_stream.h"
 
 using std::string;

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.basic;
+package org.monyhar.chrome.browser.omnibox.suggestions.basic;
 
 import static org.mockito.Mockito.anyInt;
 import static org.mockito.Mockito.doReturn;
@@ -26,27 +26,27 @@ import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.UiThreadTest;
-import org.chromium.base.test.util.Batch;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.omnibox.OmniboxSuggestionType;
-import org.chromium.chrome.browser.omnibox.UrlBarEditingTextStateProvider;
-import org.chromium.chrome.browser.omnibox.suggestions.SuggestionHost;
-import org.chromium.chrome.browser.omnibox.suggestions.base.BaseSuggestionViewProperties;
-import org.chromium.chrome.browser.omnibox.suggestions.base.SuggestionDrawableState;
-import org.chromium.chrome.browser.omnibox.suggestions.basic.SuggestionViewProperties.SuggestionIcon;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.chrome.test.util.browser.Features.DisableFeatures;
-import org.chromium.components.favicon.LargeIconBridge;
-import org.chromium.components.favicon.LargeIconBridge.LargeIconCallback;
-import org.chromium.components.omnibox.AutocompleteMatch;
-import org.chromium.components.omnibox.AutocompleteMatchBuilder;
-import org.chromium.content_public.browser.test.NativeLibraryTestUtils;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.url.GURL;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.UiThreadTest;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.omnibox.OmniboxSuggestionType;
+import org.monyhar.chrome.browser.omnibox.UrlBarEditingTextStateProvider;
+import org.monyhar.chrome.browser.omnibox.suggestions.SuggestionHost;
+import org.monyhar.chrome.browser.omnibox.suggestions.base.BaseSuggestionViewProperties;
+import org.monyhar.chrome.browser.omnibox.suggestions.base.SuggestionDrawableState;
+import org.monyhar.chrome.browser.omnibox.suggestions.basic.SuggestionViewProperties.SuggestionIcon;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.chrome.test.util.browser.Features.DisableFeatures;
+import org.monyhar.components.favicon.LargeIconBridge;
+import org.monyhar.components.favicon.LargeIconBridge.LargeIconCallback;
+import org.monyhar.components.omnibox.AutocompleteMatch;
+import org.monyhar.components.omnibox.AutocompleteMatchBuilder;
+import org.monyhar.content_public.browser.test.NativeLibraryTestUtils;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.url.GURL;
 
 import java.util.List;
 

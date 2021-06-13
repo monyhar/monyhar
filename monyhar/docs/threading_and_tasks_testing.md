@@ -83,7 +83,7 @@ TEST(FooTest, DoSomething) {
 
 Note that `RunLoop().RunUntilIdle()` could be used instead of a `QuitClosure()`
 above but [best
-practices](https://developers.google.com/web/updates/2019/04/chromium-chronicle-1)
+practices](https://developers.google.com/web/updates/2019/04/monyhar-chronicle-1)
 favor QuitClosure() over RunUntilIdle() as the latter can lead to flaky tests.
 
 ### Full fledged base::test::TaskEnvironment
@@ -188,7 +188,7 @@ All task environments support the following methods to run tasks:
 By default tests run under `TimeSource::SYSTEM_TIME` which means delays are
 real-time and `base::Time::Now()` and `base::TimeTicks::Now()` return live
 system times
-([context](https://chromium-review.googlesource.com/c/chromium/src/+/1742616)).
+([context](https://monyhar-review.googlesource.com/c/monyhar/src/+/1742616)).
 
 Whenever testing code with delays, you should favor `TimeSource::MOCK_TIME` as a
 trait. This makes it such that delayed tasks and `base::Time::Now()` +
@@ -459,11 +459,11 @@ individual tests provide additional traits.
 
 [Threading and Tasks]: threading_and_tasks.md
 [Threading and Tasks FAQ]: threading_and_tasks_faq.md
-[`ValidTraits`]: https://cs.chromium.org/chromium/src/base/test/task_environment.h?type=cs&q=ValidTraits&sq=package:chromium&g=0
-[task_environment.h]: https://cs.chromium.org/chromium/src/base/test/task_environment.h
-[base/task/post_task.h]: https://cs.chromium.org/chromium/src/base/task/post_task.h
-[ViewsTestBase]: https://cs.chromium.org/chromium/src/ui/views/test/views_test_base.h
-[base/traits_bag.h]: https://cs.chromium.org/chromium/src/base/traits_bag.h
-[content/public/test/browser_test_utils.h]: https://cs.chromium.org/chromium/src/content/public/test/browser_test_utils.h
-[content/public/test/content_browser_test_utils.h]: https://cs.chromium.org/chromium/src/content/public/test/content_browser_test_utils.h
-[content/public/test/test_utils.h]: https://cs.chromium.org/chromium/src/content/public/test/test_utils.h
+[`ValidTraits`]: https://cs.monyhar.org/monyhar/src/base/test/task_environment.h?type=cs&q=ValidTraits&sq=package:monyhar&g=0
+[task_environment.h]: https://cs.monyhar.org/monyhar/src/base/test/task_environment.h
+[base/task/post_task.h]: https://cs.monyhar.org/monyhar/src/base/task/post_task.h
+[ViewsTestBase]: https://cs.monyhar.org/monyhar/src/ui/views/test/views_test_base.h
+[base/traits_bag.h]: https://cs.monyhar.org/monyhar/src/base/traits_bag.h
+[content/public/test/browser_test_utils.h]: https://cs.monyhar.org/monyhar/src/content/public/test/browser_test_utils.h
+[content/public/test/content_browser_test_utils.h]: https://cs.monyhar.org/monyhar/src/content/public/test/content_browser_test_utils.h
+[content/public/test/test_utils.h]: https://cs.monyhar.org/monyhar/src/content/public/test/test_utils.h

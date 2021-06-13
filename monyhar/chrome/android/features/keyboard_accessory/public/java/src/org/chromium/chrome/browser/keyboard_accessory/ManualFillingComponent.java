@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.keyboard_accessory;
+package org.monyhar.chrome.browser.keyboard_accessory;
 
 import android.content.Context;
 import android.view.View;
@@ -11,15 +11,15 @@ import android.view.ViewStub;
 
 import androidx.annotation.Px;
 
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.chrome.browser.keyboard_accessory.data.KeyboardAccessoryData;
-import org.chromium.chrome.browser.keyboard_accessory.data.PropertyProvider;
-import org.chromium.components.autofill.AutofillDelegate;
-import org.chromium.components.autofill.AutofillSuggestion;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.DropdownPopupWindow;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.chrome.browser.keyboard_accessory.data.KeyboardAccessoryData;
+import org.monyhar.chrome.browser.keyboard_accessory.data.PropertyProvider;
+import org.monyhar.components.autofill.AutofillDelegate;
+import org.monyhar.components.autofill.AutofillSuggestion;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.DropdownPopupWindow;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * This component handles the new, non-popup filling UI.
@@ -36,8 +36,8 @@ public interface ManualFillingComponent {
 
     /**
      * Since the ManualFillingComponent is considered part of the keyboard when using the regular
-     * {@link org.chromium.ui.KeyboardVisibilityDelegate}, it needs direct access to the system
-     * keyboard (but still reuse a form of {@link org.chromium.ui.KeyboardVisibilityDelegate}).
+     * {@link org.monyhar.ui.KeyboardVisibilityDelegate}, it needs direct access to the system
+     * keyboard (but still reuse a form of {@link org.monyhar.ui.KeyboardVisibilityDelegate}).
      * The "soft keyboard" describes the system's onscreen keyboard that covers part of the device
      * screen. It is hidden by default if the phone uses any physical keyboard.
      */

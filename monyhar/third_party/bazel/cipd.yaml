@@ -2,7 +2,7 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
-package: chromium/third_party/bazel
+package: monyhar/third_party/bazel
 data:
   - file: desugar/Desugar.jar
   - file: desugar/Desugar_runtime.jar

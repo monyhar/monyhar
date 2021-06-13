@@ -18,7 +18,7 @@ namespace content {
 PepperPluginRegistry* PepperPluginRegistry::GetInstance() {
   static PepperPluginRegistry* registry = nullptr;
   // This object leaks.  It is a temporary hack to work around a crash.
-  // http://code.google.com/p/chromium/issues/detail?id=63234
+  // http://code.google.com/p/monyhar/issues/detail?id=63234
   if (!registry) {
     registry = new PepperPluginRegistry;
     registry->Initialize();

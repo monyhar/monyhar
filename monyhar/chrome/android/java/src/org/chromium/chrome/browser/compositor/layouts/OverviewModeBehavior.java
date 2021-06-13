@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.layouts;
+package org.monyhar.chrome.browser.compositor.layouts;
 
 /**
  * Exposes the current overview mode state as well as a way to listen to overview mode state
  * changes.
  *
- * DEPRECATED, please use {@link org.chromium.chrome.browser.layouts.LayoutStateProvider} instead.
+ * DEPRECATED, please use {@link org.monyhar.chrome.browser.layouts.LayoutStateProvider} instead.
  */
 @Deprecated
 public interface OverviewModeBehavior {
@@ -16,7 +16,7 @@ public interface OverviewModeBehavior {
      * An observer that is notified when the overview mode state changes.
      *
      * DEPRECATED, please use {@link
-     * org.chromium.chrome.browser.layouts.LayoutStateProvider.LayoutStateObserver} instead.
+     * org.monyhar.chrome.browser.layouts.LayoutStateProvider.LayoutStateObserver} instead.
      */
     @Deprecated
     interface OverviewModeObserver {

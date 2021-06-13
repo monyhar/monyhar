@@ -54,7 +54,7 @@ const tests = [
     chrome.test.assertEq(undefined, uriBookmark.page);
     chrome.test.assertEq(undefined, uriBookmark.x);
     chrome.test.assertEq(undefined, uriBookmark.y);
-    chrome.test.assertEq('http://www.chromium.org', uriBookmark.uri);
+    chrome.test.assertEq('http://www.monyhar.org', uriBookmark.uri);
 
     chrome.test.succeed();
   },
@@ -142,7 +142,7 @@ const tests = [
     testTapTarget(subBookmarks[0].$.item, {page: 1, x: 133, y: 667, zoom: 1.5});
     testTapTarget(
         rootBookmarks[1].$.item, {page: 2, x: 133, y: 667, zoom: 1.75});
-    testTapTarget(rootBookmarks[2].$.item, {uri: 'http://www.chromium.org'});
+    testTapTarget(rootBookmarks[2].$.item, {uri: 'http://www.monyhar.org'});
 
     chrome.test.succeed();
   }

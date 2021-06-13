@@ -51,8 +51,8 @@ namespace subtle {
 // chrome.dll) because linker is able to fold these for multiple Types but
 // couldn't with the more advanced CreatorFunc template type which in turn
 // improves code locality (and application startup) -- ref.
-// https://chromium-review.googlesource.com/c/chromium/src/+/530984/5/base/lazy_instance.h#140,
-// worsened by https://chromium-review.googlesource.com/c/chromium/src/+/868013
+// https://monyhar-review.googlesource.com/c/monyhar/src/+/530984/5/base/lazy_instance.h#140,
+// worsened by https://monyhar-review.googlesource.com/c/monyhar/src/+/868013
 // and caught then as https://crbug.com/804034.
 template <typename Type>
 Type* GetOrCreateLazyPointer(subtle::AtomicWord* state,

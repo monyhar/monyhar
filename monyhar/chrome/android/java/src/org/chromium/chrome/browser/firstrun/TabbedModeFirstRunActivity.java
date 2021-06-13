@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.firstrun;
+package org.monyhar.chrome.browser.firstrun;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -15,7 +15,7 @@ import android.widget.FrameLayout;
 
 import androidx.annotation.AnyRes;
 
-import org.chromium.chrome.R;
+import org.monyhar.chrome.R;
 
 /**
  * FirstRunActivity variant that fills the whole screen, but displays the content

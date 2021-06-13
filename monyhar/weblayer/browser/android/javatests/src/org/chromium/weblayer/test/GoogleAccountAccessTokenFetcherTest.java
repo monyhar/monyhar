@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer.test;
+package org.monyhar.weblayer.test;
 
 import androidx.test.filters.SmallTest;
 
@@ -12,13 +12,13 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.weblayer.Callback;
-import org.chromium.weblayer.GoogleAccountAccessTokenFetcher;
-import org.chromium.weblayer.Profile;
-import org.chromium.weblayer.TestWebLayer;
-import org.chromium.weblayer.shell.InstrumentationActivity;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.weblayer.Callback;
+import org.monyhar.weblayer.GoogleAccountAccessTokenFetcher;
+import org.monyhar.weblayer.Profile;
+import org.monyhar.weblayer.TestWebLayer;
+import org.monyhar.weblayer.shell.InstrumentationActivity;
 
 import java.util.Arrays;
 import java.util.HashMap;

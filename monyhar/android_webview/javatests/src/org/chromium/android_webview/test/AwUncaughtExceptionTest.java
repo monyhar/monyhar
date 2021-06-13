@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
-import static org.chromium.android_webview.test.AwActivityTestRule.SCALED_WAIT_TIMEOUT_MS;
+import static org.monyhar.android_webview.test.AwActivityTestRule.SCALED_WAIT_TIMEOUT_MS;
 
 import android.os.Looper;
 import android.support.test.runner.lifecycle.ActivityLifecycleMonitor;
@@ -19,10 +19,10 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.AwContents;
-import org.chromium.android_webview.common.crash.AwCrashReporterClient;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.test.util.Feature;
+import org.monyhar.android_webview.AwContents;
+import org.monyhar.android_webview.common.crash.AwCrashReporterClient;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.test.util.Feature;
 
 import java.lang.reflect.Field;
 import java.util.concurrent.CountDownLatch;

@@ -156,7 +156,7 @@ def Main(cleanup_funcs):
   # Find crash dump results.
   if sys.platform.startswith('linux'):
     # Look in "~/.config/*/Crash Reports".  This will find crash
-    # reports under ~/.config/chromium or ~/.config/google-chrome, or
+    # reports under ~/.config/monyhar or ~/.config/google-chrome, or
     # under other subdirectories in case the branding is changed.
     dumps_dirs = [os.path.join(path, 'Crash Reports')
                   for path in ListPathsInDir(os.path.join(home_dir, '.config'))]

@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui;
+package org.monyhar.ui;
 
 import android.view.View;
 import android.view.ViewStub;
 
-import org.chromium.base.Callback;
-import org.chromium.base.Promise;
+import org.monyhar.base.Callback;
+import org.monyhar.base.Promise;
 
 /**
  * View provider that inflates a ViewStub. This does not support inflation on a background thread,

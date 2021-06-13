@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.accessibility.captioning;
+package org.monyhar.content.browser.accessibility.captioning;
 
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -10,7 +10,7 @@ import android.view.accessibility.CaptioningManager.CaptionStyle;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.content.browser.accessibility.captioning.SystemCaptioningBridge.SystemCaptioningBridgeListener;
+import org.monyhar.content.browser.accessibility.captioning.SystemCaptioningBridge.SystemCaptioningBridgeListener;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;

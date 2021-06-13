@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import static androidx.browser.customtabs.CustomTabsIntent.COLOR_SCHEME_LIGHT;
 import static androidx.browser.customtabs.CustomTabsIntent.COLOR_SCHEME_SYSTEM;
@@ -16,11 +16,11 @@ import androidx.annotation.Nullable;
 import androidx.browser.customtabs.CustomTabColorSchemeParams;
 import androidx.browser.customtabs.CustomTabsIntent;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.base.Log;
-import org.chromium.chrome.browser.browserservices.intents.ColorProvider;
-import org.chromium.components.browser_ui.styles.ChromeColors;
-import org.chromium.ui.util.ColorUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.browser.browserservices.intents.ColorProvider;
+import org.monyhar.components.browser_ui.styles.ChromeColors;
+import org.monyhar.ui.util.ColorUtils;
 
 /**
  * ColorProvider implementation used for normal profiles.

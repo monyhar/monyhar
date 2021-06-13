@@ -89,8 +89,8 @@ source_set("ruy") {
     "src/ruy/wait.h",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 
   public_configs = [ ":ruy_includes" ]
 }

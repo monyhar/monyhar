@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.infobars;
+package org.monyhar.components.infobars;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -21,9 +21,9 @@ import android.widget.TextView;
 import androidx.annotation.ColorRes;
 import androidx.annotation.StringRes;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.Callback;
-import org.chromium.ui.text.NoUnderlineClickableSpan;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.ui.text.NoUnderlineClickableSpan;
 
 /**
  * Lays out controls along a line, sandwiched between an (optional) icon and close button.

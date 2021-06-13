@@ -47,7 +47,7 @@ class ScopedLoggingPathTest : public ::testing::Test {
  protected:
   base::ScopedTempDir temp_dir_;
 
-  // Override the default chromium LOCAL_APP_DATA.
+  // Override the default monyhar LOCAL_APP_DATA.
   std::unique_ptr<base::ScopedPathOverride> app_data_override_;
 
   // Override the chrome_cleaner specific LOCAL_APP_DATA used by

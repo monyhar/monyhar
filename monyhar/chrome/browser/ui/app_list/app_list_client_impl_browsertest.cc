@@ -344,7 +344,7 @@ IN_PROC_BROWSER_TEST_F(AppListClientImplBrowserTest, OpenSearchResult) {
 #if BUILDFLAG(GOOGLE_CHROME_BRANDING)
   const std::string app_title = "chrome";
 #else
-  const std::string app_title = "chromium";
+  const std::string app_title = "monyhar";
 #endif  // !BUILDFLAG(GOOGLE_CHROME_BRANDING)
 
   const std::string app_result_id =

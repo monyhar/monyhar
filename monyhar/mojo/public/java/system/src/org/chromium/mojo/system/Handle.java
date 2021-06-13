@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo.system;
+package org.monyhar.mojo.system;
 
-import org.chromium.mojo.system.Core.HandleSignalsState;
+import org.monyhar.mojo.system.Core.HandleSignalsState;
 
 import java.io.Closeable;
 

@@ -28,8 +28,8 @@ bindingUtil.registerEventArgumentMassager('permissions.onRemoved', massager);
 // possible to have a union of types as the type of the items in an array.
 // Once that is fixed, this entire file should go away.
 // See,
-// https://code.google.com/p/chromium/issues/detail?id=162044
-// https://code.google.com/p/chromium/issues/detail?id=162042
+// https://code.google.com/p/monyhar/issues/detail?id=162044
+// https://code.google.com/p/monyhar/issues/detail?id=162042
 // TODO(bryeung): delete this file.
 apiBridge.registerCustomHook(function(api) {
   var apiFunctions = api.apiFunctions;

@@ -14,7 +14,7 @@
 
 ### Chromium-specific
 
-*   [Chromium's plugin architecture](https://dev.chromium.org/developers/design-documents/plugin-architecture)
+*   [Chromium's plugin architecture](https://dev.monyhar.org/developers/design-documents/plugin-architecture)
     -- may be out of date but will be worth reading
 
 ## Code to reference

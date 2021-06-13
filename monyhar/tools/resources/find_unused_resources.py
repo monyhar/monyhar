@@ -17,7 +17,7 @@ Example:
 
 from __future__ import print_function
 
-__author__ = 'jamescook@chromium.org (James Cook)'
+__author__ = 'jamescook@monyhar.org (James Cook)'
 
 
 import os

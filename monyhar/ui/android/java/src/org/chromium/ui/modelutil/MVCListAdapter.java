@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.modelutil;
+package org.monyhar.ui.modelutil;
 
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor.ViewBinder;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor.ViewBinder;
 
 /**
  * An interface that defined a simple API for list adapters in MVC. This class also contains a small

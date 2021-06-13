@@ -67,7 +67,7 @@ if __name__ == '__main__':
                     default=False,
                     help='Print enum definition formatted for use in uma.py of '
                     'Chromium dashboard developed at '
-                    'https://github.com/GoogleChrome/chromium-dashboard')
+                    'https://github.com/GoogleChrome/monyhar-dashboard')
   options, args = parser.parse_args()
 
   if options.dashboard:

@@ -1,4 +1,4 @@
-boliu@chromium.org
+boliu@monyhar.org
 
 per-file *.aidl=set noparent
 per-file *.aidl=file://ipc/SECURITY_OWNERS

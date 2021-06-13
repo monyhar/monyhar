@@ -78,7 +78,7 @@ def StepTestSDK(args):
     # Run all of test_sdk.py under xvfb-run; it's startup time leaves something
     # to be desired, so only start it up once.
     # We also need to make sure that there are at least 24 bits per pixel.
-    # https://code.google.com/p/chromium/issues/detail?id=316687
+    # https://code.google.com/p/monyhar/issues/detail?id=316687
     cmd += [
         'xvfb-run',
         '--auto-servernum',

@@ -1102,7 +1102,7 @@ crbug.com/591099 wpt_internal/webcodecs/basic_video_encoding.any.worker.html [ F
 crbug.com/591099 wpt_internal/webcodecs/reconfiguring_encoder.any.html [ Failure ]
 crbug.com/591099 wpt_internal/webcodecs/reconfiguring_encoder.any.worker.html [ Failure ]
 
-# broken by https://chromium-review.googlesource.com/c/chromium/src/+/2392444
+# broken by https://monyhar-review.googlesource.com/c/monyhar/src/+/2392444
 crbug.com/958381 external/wpt/css/css-flexbox/table-as-item-wide-content.html [ Failure ]
 crbug.com/958381 external/wpt/css/css-flexbox/table-as-item-fixed-min-width.html [ Failure ]
 

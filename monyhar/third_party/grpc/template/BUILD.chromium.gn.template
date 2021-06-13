@@ -7,7 +7,7 @@
 
   # This file has been automatically generated from a template file.
   # Please look at the templates directory instead.
-  # See //third_party/grpc/README.chromium for more information.
+  # See //third_party/grpc/README.monyhar for more information.
 
   declare_args() {
     # Compiles with ares.

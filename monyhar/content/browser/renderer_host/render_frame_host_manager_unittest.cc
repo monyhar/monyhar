@@ -652,7 +652,7 @@ TEST_P(RenderFrameHostManagerTest,
 // as frames in a SiteInstance get replaced.
 TEST_P(RenderFrameHostManagerTest, ActiveFrameCountWhileSwappingInAndOut) {
   const GURL kUrl1("http://www.google.com/");
-  const GURL kUrl2("http://www.chromium.org/");
+  const GURL kUrl2("http://www.monyhar.org/");
 
   // Navigate to an initial URL.
   contents()->NavigateAndCommit(kUrl1);
@@ -684,7 +684,7 @@ TEST_P(RenderFrameHostManagerTest, ActiveFrameCountWhileSwappingInAndOut) {
     EXPECT_EQ(instance1->active_frame_count(), 3U);
     EXPECT_EQ(instance1, instance2);
   } else {
-    // rvh2 is on chromium.org which is different from google.com on
+    // rvh2 is on monyhar.org which is different from google.com on
     // which other tabs are.
     EXPECT_EQ(instance2->active_frame_count(), 1U);
 
@@ -731,7 +731,7 @@ TEST_P(RenderFrameHostManagerTest,
        DetectUseAfterFreeInShutdownRenderViewHostsInSiteInstance) {
   const GURL kChromeURL(GetWebUIURL("newtab"));
   const GURL kUrl1("http://www.google.com");
-  const GURL kUrl2("http://www.chromium.org");
+  const GURL kUrl2("http://www.monyhar.org");
 
   // Navigate our first tab to a chrome url and then to the destination.
   NavigationSimulator::NavigateAndCommitFromBrowser(contents(), kChromeURL);
@@ -1454,7 +1454,7 @@ TEST_P(RenderFrameHostManagerTest, NoSwapOnGuestNavigations) {
 
   // 2) Navigate to a different domain. -------------------------
   // Guests stay in the same process on navigation.
-  const GURL kUrl2("http://www.chromium.org");
+  const GURL kUrl2("http://www.monyhar.org");
   const url::Origin kInitiatorOrigin =
       url::Origin::Create(GURL("https://initiator.example.com"));
   NavigationEntryImpl entry2(
@@ -1597,7 +1597,7 @@ TEST_P(RenderFrameHostManagerTest, DeleteFrameAfterUnloadACK) {
   contents()->GetController().GetBackForwardCache().DisableForTesting(
       BackForwardCache::TEST_ASSUMES_NO_CACHING);
   const GURL kUrl1("http://www.google.com/");
-  const GURL kUrl2("http://www.chromium.org/");
+  const GURL kUrl2("http://www.monyhar.org/");
 
   // Navigate to the first page.
   contents()->NavigateAndCommit(kUrl1);
@@ -1648,7 +1648,7 @@ TEST_P(RenderFrameHostManagerTest, UnloadFrameAfterUnloadACK) {
   contents()->GetController().GetBackForwardCache().DisableForTesting(
       BackForwardCache::TEST_ASSUMES_NO_CACHING);
   const GURL kUrl1("http://www.google.com/");
-  const GURL kUrl2("http://www.chromium.org/");
+  const GURL kUrl2("http://www.monyhar.org/");
 
   // Navigate to the first page.
   contents()->NavigateAndCommit(kUrl1);
@@ -1696,7 +1696,7 @@ TEST_P(RenderFrameHostManagerTest, CommitNewNavigationBeforeSendingUnload) {
   contents()->GetController().GetBackForwardCache().DisableForTesting(
       BackForwardCache::TEST_ASSUMES_NO_CACHING);
   const GURL kUrl1("http://www.google.com/");
-  const GURL kUrl2("http://www.chromium.org/");
+  const GURL kUrl2("http://www.monyhar.org/");
 
   // Navigate to the first page.
   contents()->NavigateAndCommit(kUrl1);
@@ -3169,7 +3169,7 @@ TEST_P(RenderFrameHostManagerTestWithSiteIsolation,
        NewProxyReceivesLoadingState) {
   StartStopLoadingProxyObserver proxy_observer;
 
-  const GURL kUrl1("http://www.chromium.org");
+  const GURL kUrl1("http://www.monyhar.org");
   const GURL kUrl2("http://www.google.com");
   const GURL kUrl3("http://foo.com");
 
@@ -3238,7 +3238,7 @@ TEST_P(RenderFrameHostManagerTest,
       BackForwardCache::TEST_ASSUMES_NO_CACHING);
 
   const GURL kUrl1("http://www.google.com");
-  const GURL kUrl2("http://www.chromium.org");
+  const GURL kUrl2("http://www.monyhar.org");
   const GURL kUrl3("http://foo.com");
 
   contents()->NavigateAndCommit(kUrl1);
@@ -3296,7 +3296,7 @@ class RenderFrameHostManagerTestWithBackForwardCache
 TEST_P(RenderFrameHostManagerTestWithBackForwardCache,
        BeginNavigationIgnoredWhenInBackForwardCache) {
   const GURL kUrl1("http://www.google.com");
-  const GURL kUrl2("http://www.chromium.org");
+  const GURL kUrl2("http://www.monyhar.org");
   const GURL kUrl3("http://foo.com");
 
   contents()->SetDelegate(this);

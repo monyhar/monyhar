@@ -12,7 +12,7 @@ from pylib.base import base_test_result
 import requests  # pylint: disable=import-error
 
 # Maps base_test_results to the luci test-result.proto.
-# https://godoc.org/go.chromium.org/luci/resultdb/proto/v1#TestStatus
+# https://godoc.org/go.monyhar.org/luci/resultdb/proto/v1#TestStatus
 RESULT_MAP = {
     base_test_result.ResultType.UNKNOWN: 'ABORT',
     base_test_result.ResultType.PASS: 'PASS',
@@ -120,7 +120,7 @@ class ResultSinkClient(object):
           'name': test_id,
           'location': {
               'file_name': test_file,
-              'repo': 'https://chromium.googlesource.com/chromium/src',
+              'repo': 'https://monyhar.googlesource.com/monyhar/src',
           }
       }
 

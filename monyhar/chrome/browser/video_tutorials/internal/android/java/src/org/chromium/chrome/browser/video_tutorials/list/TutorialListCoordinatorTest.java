@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.video_tutorials.list;
+package org.monyhar.chrome.browser.video_tutorials.list;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
@@ -27,16 +27,16 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.Callback;
-import org.chromium.base.test.BaseActivityTestRule;
-import org.chromium.chrome.browser.video_tutorials.R;
-import org.chromium.chrome.browser.video_tutorials.Tutorial;
-import org.chromium.chrome.browser.video_tutorials.VideoTutorialUtils;
-import org.chromium.chrome.browser.video_tutorials.test.TestImageFetcher;
-import org.chromium.chrome.browser.video_tutorials.test.TestVideoTutorialService;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.ui.test.util.DummyUiActivity;
+import org.monyhar.base.Callback;
+import org.monyhar.base.test.BaseActivityTestRule;
+import org.monyhar.chrome.browser.video_tutorials.R;
+import org.monyhar.chrome.browser.video_tutorials.Tutorial;
+import org.monyhar.chrome.browser.video_tutorials.VideoTutorialUtils;
+import org.monyhar.chrome.browser.video_tutorials.test.TestImageFetcher;
+import org.monyhar.chrome.browser.video_tutorials.test.TestVideoTutorialService;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.ui.test.util.DummyUiActivity;
 
 /**
  * Tests for {@link TutorialListCoordinator}.
@@ -69,7 +69,7 @@ public class TutorialListCoordinatorTest {
             parentView.addView(mContentView);
 
             Bitmap testImage = BitmapFactory.decodeResource(mActivity.getResources(),
-                    org.chromium.chrome.browser.video_tutorials.R.drawable.btn_close);
+                    org.monyhar.chrome.browser.video_tutorials.R.drawable.btn_close);
             TestImageFetcher imageFetcher = new TestImageFetcher(testImage);
             mCoordinator = new TutorialListCoordinatorImpl(
                     mContentView.findViewById(R.id.video_tutorial_list), mTestVideoTutorialService,

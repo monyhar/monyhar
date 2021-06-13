@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.browser.test;
+package org.monyhar.content_public.browser.test;
 
-import org.chromium.base.Callback;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.content.browser.framehost.RenderFrameHostImpl;
-import org.chromium.content_public.browser.RenderFrameHost;
+import org.monyhar.base.Callback;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.content.browser.framehost.RenderFrameHostImpl;
+import org.monyhar.content_public.browser.RenderFrameHost;
 
 /**
  * The Java wrapper around RenderFrameHost to define test-only operations.

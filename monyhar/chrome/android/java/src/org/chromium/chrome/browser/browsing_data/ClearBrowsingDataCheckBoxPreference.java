@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browsing_data;
+package org.monyhar.chrome.browser.browsing_data;
 
 import android.content.Context;
 import android.text.SpannableString;
@@ -13,10 +13,10 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 import androidx.preference.PreferenceViewHolder;
-import org.chromium.chrome.browser.util.ChromeAccessibilityUtil;
-import org.chromium.components.browser_ui.settings.ChromeBaseCheckBoxPreference;
-import org.chromium.ui.text.NoUnderlineClickableSpan;
-import org.chromium.ui.text.SpanApplier;
+import org.monyhar.chrome.browser.util.ChromeAccessibilityUtil;
+import org.monyhar.components.browser_ui.settings.ChromeBaseCheckBoxPreference;
+import org.monyhar.ui.text.NoUnderlineClickableSpan;
+import org.monyhar.ui.text.SpanApplier;
 
 /**
  * A preference representing one browsing data type in ClearBrowsingDataFragment.

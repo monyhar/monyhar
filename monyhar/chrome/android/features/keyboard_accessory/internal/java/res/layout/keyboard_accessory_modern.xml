@@ -3,7 +3,7 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
 
-<org.chromium.chrome.browser.keyboard_accessory.bar_component.KeyboardAccessoryModernView
+<org.monyhar.chrome.browser.keyboard_accessory.bar_component.KeyboardAccessoryModernView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/keyboard_accessory"
@@ -68,4 +68,4 @@
 
     </LinearLayout>
 
-</org.chromium.chrome.browser.keyboard_accessory.bar_component.KeyboardAccessoryModernView>
+</org.monyhar.chrome.browser.keyboard_accessory.bar_component.KeyboardAccessoryModernView>

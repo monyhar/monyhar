@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.shared;
+package org.monyhar.chrome.browser.feed.shared;
 
 import android.app.Activity;
 import android.view.MotionEvent;
 
-import org.chromium.chrome.browser.feed.FeedSurfaceCoordinator;
-import org.chromium.chrome.browser.feed.FeedSurfaceLifecycleManager;
+import org.monyhar.chrome.browser.feed.FeedSurfaceCoordinator;
+import org.monyhar.chrome.browser.feed.FeedSurfaceLifecycleManager;
 
 /**
  * The delegate of the {@link FeedSurfaceProvider} creator needs to implement.

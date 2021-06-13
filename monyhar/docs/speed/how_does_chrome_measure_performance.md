@@ -24,8 +24,8 @@ builds to pinpoint performance regressions down to individual changelists.
 ### The chrome.perf lab
 
 The main lab for performance monitoring is
-[chrome.perf](https://ci.chromium.org/p/chrome/g/chrome.perf/console). It continuously tests
-chromium commits and is monitored by several perf sheriff rotations.
+[chrome.perf](https://ci.monyhar.org/p/chrome/g/chrome.perf/console). It continuously tests
+monyhar commits and is monitored by several perf sheriff rotations.
 
   * **[What is the perf waterfall?](perf_waterfall.md)** An overview of the
     waterfall that runs the continuous build.
@@ -46,7 +46,7 @@ chromium commits and is monitored by several perf sheriff rotations.
   * **[How to run telemetry locally](https://github.com/catapult-project/catapult/blob/master/telemetry/docs/run_benchmarks_locally.md)**:
     Instructions on running telemetry benchmarks on your local machine.
   * **[List of platforms in the lab](perf_lab_platforms.md)**: Devices,
-    configurations, and OSes the chromium.perf lab tests on.
+    configurations, and OSes the monyhar.perf lab tests on.
 
 ### Other performance labs
 

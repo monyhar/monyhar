@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.util.browser.suggestions.mostvisited;
+package org.monyhar.chrome.test.util.browser.suggestions.mostvisited;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.chrome.browser.suggestions.SiteSuggestion;
-import org.chromium.chrome.browser.suggestions.mostvisited.MostVisitedSites;
-import org.chromium.chrome.browser.suggestions.tile.Tile;
-import org.chromium.chrome.browser.suggestions.tile.TileSectionType;
-import org.chromium.chrome.browser.suggestions.tile.TileSource;
-import org.chromium.chrome.browser.suggestions.tile.TileTitleSource;
-import org.chromium.url.GURL;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.chrome.browser.suggestions.SiteSuggestion;
+import org.monyhar.chrome.browser.suggestions.mostvisited.MostVisitedSites;
+import org.monyhar.chrome.browser.suggestions.tile.Tile;
+import org.monyhar.chrome.browser.suggestions.tile.TileSectionType;
+import org.monyhar.chrome.browser.suggestions.tile.TileSource;
+import org.monyhar.chrome.browser.suggestions.tile.TileTitleSource;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.Arrays;

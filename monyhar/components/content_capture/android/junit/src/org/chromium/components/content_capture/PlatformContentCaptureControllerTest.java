@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.content_capture;
+package org.monyhar.components.content_capture;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -23,7 +23,7 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
 
 import java.util.HashSet;
 
@@ -59,7 +59,7 @@ public class PlatformContentCaptureControllerTest {
                 new PlatformContentCaptureController(mContext);
         assertTrue(controller.isAiai());
         assertTrue(controller.shouldStartCapture());
-        assertTrue(controller.shouldCapture(new String[] {"http://www.chromium.org"}));
+        assertTrue(controller.shouldCapture(new String[] {"http://www.monyhar.org"}));
     }
 
     @Test
@@ -71,21 +71,21 @@ public class PlatformContentCaptureControllerTest {
                 new PlatformContentCaptureController(mContext);
         assertTrue(controller.isAiai());
         assertTrue(controller.shouldStartCapture());
-        assertFalse(controller.shouldCapture(new String[] {"http://www.chromium.org"}));
+        assertFalse(controller.shouldCapture(new String[] {"http://www.monyhar.org"}));
     }
 
     @Test
     public void testContentCaptureConditions() throws Throwable {
         HashSet<ContentCaptureCondition> conditions = new HashSet<ContentCaptureCondition>();
         conditions.add(new ContentCaptureCondition(
-                new LocusId(".*chromium.org"), ContentCaptureCondition.FLAG_IS_REGEX));
+                new LocusId(".*monyhar.org"), ContentCaptureCondition.FLAG_IS_REGEX));
         conditions.add(new ContentCaptureCondition(new LocusId("www.abc.org"), 0));
         doReturn(conditions).when(mContentCaptureManager).getContentCaptureConditions();
         PlatformContentCaptureController controller =
                 new PlatformContentCaptureController(mContext);
         assertTrue(controller.isAiai());
         assertTrue(controller.shouldStartCapture());
-        assertTrue(controller.shouldCapture(new String[] {"http://www.chromium.org"}));
+        assertTrue(controller.shouldCapture(new String[] {"http://www.monyhar.org"}));
         assertTrue(controller.shouldCapture(new String[] {"http://www.abc.org"}));
         assertFalse(controller.shouldCapture(new String[] {"http://abc.org"}));
     }

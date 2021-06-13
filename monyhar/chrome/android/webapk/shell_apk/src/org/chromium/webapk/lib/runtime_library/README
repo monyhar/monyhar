@@ -7,5 +7,5 @@ browser, there's no way to guarantee this with the WebAPK shell change.
 To update this generated copy again:
 $ ninja -C out/Debug webapk_runtime_library
 $ unzip out/Debug/gen/chrome/android/webapk/libs/runtime_library/webapk_service_aidl.srcjar
-$ mv org/chromium/webapk/lib/runtime_library/IWebApkApi.java chrome/android/webapk/shell_apk/src/org/chromium/webapk/lib/runtime_library/
+$ mv org/monyhar/webapk/lib/runtime_library/IWebApkApi.java chrome/android/webapk/shell_apk/src/org/monyhar/webapk/lib/runtime_library/
 $ git cl format

@@ -16,13 +16,13 @@ sanitizer:
 ```bash
 # AddressSanitizer is the default config we recommend testing with.
 # Linux:
-tools/mb/mb.py gen -m chromium.fuzz -b 'Libfuzzer Upload Linux ASan' out/libfuzzer
+tools/mb/mb.py gen -m monyhar.fuzz -b 'Libfuzzer Upload Linux ASan' out/libfuzzer
 # Chrome OS:
-tools/mb/mb.py gen -m chromium.fuzz -b 'Libfuzzer Upload Chrome OS ASan' out/libfuzzer
+tools/mb/mb.py gen -m monyhar.fuzz -b 'Libfuzzer Upload Chrome OS ASan' out/libfuzzer
 # Mac:
-tools/mb/mb.py gen -m chromium.fuzz -b 'Libfuzzer Upload Mac ASan' out/libfuzzer
+tools/mb/mb.py gen -m monyhar.fuzz -b 'Libfuzzer Upload Mac ASan' out/libfuzzer
 # Windows:
-python tools\mb\mb.py gen -m chromium.fuzz -b "Libfuzzer Upload Windows ASan" out\libfuzzer
+python tools\mb\mb.py gen -m monyhar.fuzz -b "Libfuzzer Upload Windows ASan" out\libfuzzer
 ```
 
 *** note
@@ -309,7 +309,7 @@ fuzzing engine.
 [AddressSanitizer]: http://clang.llvm.org/docs/AddressSanitizer.html
 [ClusterFuzz status]: libFuzzer_integration.md#Status-Links
 [Efficient Fuzzing Guide]: efficient_fuzzing.md
-[FuzzedDataProvider]: https://cs.chromium.org/chromium/src/third_party/libFuzzer/src/utils/FuzzedDataProvider.h
+[FuzzedDataProvider]: https://cs.monyhar.org/monyhar/src/third_party/libFuzzer/src/utils/FuzzedDataProvider.h
 [Fuzzer Dictionary]: efficient_fuzzing.md#Fuzzer-dictionary
 [GN]: https://gn.googlesource.com/gn/+/master/README.md
 [Getting Started with libprotobuf-mutator in Chromium]: libprotobuf-mutator.md
@@ -318,8 +318,8 @@ fuzzing engine.
 [Seed Corpus]: efficient_fuzzing.md#Seed-corpus
 [UndefinedBehaviorSanitizer]: http://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html
 [code coverage report]: efficient_fuzzing.md#Code-coverage
-[crbug/598448]: https://bugs.chromium.org/p/chromium/issues/detail?id=598448
+[crbug/598448]: https://bugs.monyhar.org/p/monyhar/issues/detail?id=598448
 [upstream documentation]: https://github.com/google/fuzzing/blob/master/docs/split-inputs.md#fuzzed-data-provider
 [libFuzzer's output documentation]: http://llvm.org/docs/LibFuzzer.html#output
-[quic_stream_factory_fuzzer.cc]: https://cs.chromium.org/chromium/src/net/quic/quic_stream_factory_fuzzer.cc
+[quic_stream_factory_fuzzer.cc]: https://cs.monyhar.org/monyhar/src/net/quic/quic_stream_factory_fuzzer.cc
 [sanitizers]: https://github.com/google/sanitizers

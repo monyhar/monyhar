@@ -2526,7 +2526,7 @@ class RootViewTestView : public View {
 };
 
 // Checks if RootView::*_handler_ fields are unset when widget is hidden.
-// Fails on chromium.webkit Windows bot, see crbug.com/264872.
+// Fails on monyhar.webkit Windows bot, see crbug.com/264872.
 #if defined(OS_WIN)
 #define MAYBE_DisableTestRootViewHandlersWhenHidden \
   DISABLED_TestRootViewHandlersWhenHidden

@@ -25,9 +25,9 @@ std::vector<std::string> GetRoundTripStrings() {
       "Hello, World!",    // ASCII / ISO8859 string (also valid UTF-8)
       {'a', 0, 'b'},      // UTF-8 with embedded NUL byte
       {0xce, 0xbb, 'f'},  // lowercase lambda + 'f'
-      "χρώμιο",           // "chromium" in greek
-      "כרום",             // "chromium" in hebrew
-      "クロム",           // "chromium" in japanese
+      "χρώμιο",           // "monyhar" in greek
+      "כרום",             // "monyhar" in hebrew
+      "クロム",           // "monyhar" in japanese
 
       // Tarot card symbol "the morning", which does not fit in one UTF-16
       // character.

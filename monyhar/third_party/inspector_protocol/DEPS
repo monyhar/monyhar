@@ -1,5 +1,5 @@
 # The tests in the crdtp/ directory are setup to use
-# base from mini_chromium, as well as gmock / gtest.
+# base from mini_monyhar, as well as gmock / gtest.
 # Within the Chromium tree, we can use these dependencies
 # directly but this requires an exception here.
 

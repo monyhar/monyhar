@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.photo_picker;
+package org.monyhar.components.browser_ui.photo_picker;
 
 import android.content.ComponentName;
 import android.content.ContentResolver;
@@ -23,15 +23,15 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.base.task.PostTask;
-import org.chromium.components.browser_ui.util.ConversionUtils;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.base.Log;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.components.browser_ui.util.ConversionUtils;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

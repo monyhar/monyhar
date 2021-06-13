@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -23,22 +23,22 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.base.MathUtils;
-import org.chromium.chrome.browser.lifecycle.DestroyObserver;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tasks.pseudotab.PseudoTab;
-import org.chromium.chrome.browser.tasks.tab_management.TabProperties.UiType;
-import org.chromium.chrome.features.start_surface.StartSurfaceConfiguration;
-import org.chromium.chrome.tab_ui.R;
-import org.chromium.ui.modelutil.MVCListAdapter;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
-import org.chromium.ui.modelutil.SimpleRecyclerViewAdapter;
-import org.chromium.ui.resources.dynamics.DynamicResourceLoader;
-import org.chromium.ui.widget.ViewLookupCachingFrameLayout;
+import org.monyhar.base.MathUtils;
+import org.monyhar.chrome.browser.lifecycle.DestroyObserver;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tasks.pseudotab.PseudoTab;
+import org.monyhar.chrome.browser.tasks.tab_management.TabProperties.UiType;
+import org.monyhar.chrome.features.start_surface.StartSurfaceConfiguration;
+import org.monyhar.chrome.tab_ui.R;
+import org.monyhar.ui.modelutil.MVCListAdapter;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.ui.modelutil.SimpleRecyclerViewAdapter;
+import org.monyhar.ui.resources.dynamics.DynamicResourceLoader;
+import org.monyhar.ui.widget.ViewLookupCachingFrameLayout;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -411,7 +411,7 @@ public class TabListCoordinator
     }
 
     /**
-     * Inserts a special {@link org.chromium.ui.modelutil.MVCListAdapter.ListItem} at given index of
+     * Inserts a special {@link org.monyhar.ui.modelutil.MVCListAdapter.ListItem} at given index of
      * the model list.
      * @see TabListMediator#addSpecialItemToModel(int, int, PropertyModel).
      */
@@ -420,7 +420,7 @@ public class TabListCoordinator
     }
 
     /**
-     * Inserts a special {@link org.chromium.ui.modelutil.MVCListAdapter.ListItem} to the end of
+     * Inserts a special {@link org.monyhar.ui.modelutil.MVCListAdapter.ListItem} to the end of
      * model list.
      */
     void addSpecialListItemToEnd(@UiType int uiType, PropertyModel model) {
@@ -428,13 +428,13 @@ public class TabListCoordinator
     }
 
     /**
-     * Removes a special {@link org.chromium.ui.modelutil.MVCListAdapter.ListItem} that
+     * Removes a special {@link org.monyhar.ui.modelutil.MVCListAdapter.ListItem} that
      * has the given {@code uiType} and/or its {@link PropertyModel} has the given
      * {@code itemIdentifier}.
      *
      * @param uiType The uiType to match.
      * @param itemIdentifier The itemIdentifier to match. This can be obsoleted if the {@link
-     *         org.chromium.ui.modelutil.MVCListAdapter.ListItem} does not need additional
+     *         org.monyhar.ui.modelutil.MVCListAdapter.ListItem} does not need additional
      *         identifier.
      */
     void removeSpecialListItem(@UiType int uiType, int itemIdentifier) {

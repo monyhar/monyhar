@@ -89,7 +89,7 @@ struct GPU_EXPORT Capabilities {
   int num_compressed_texture_formats = 0;
   int num_shader_binary_formats = 0;
   int num_stencil_bits = 0;  // For the default framebuffer.
-  int bind_generates_resource_chromium = 0;
+  int bind_generates_resource_monyhar = 0;
 
   int max_3d_texture_size = 0;
   int max_array_texture_layers = 0;
@@ -97,7 +97,7 @@ struct GPU_EXPORT Capabilities {
   int64_t max_combined_fragment_uniform_components = 0;
   int max_combined_uniform_blocks = 0;
   int64_t max_combined_vertex_uniform_components = 0;
-  int max_copy_texture_chromium_size = 0;
+  int max_copy_texture_monyhar_size = 0;
   int max_draw_buffers = 0;
   int64_t max_element_index = 0;
   int max_elements_indices = 0;
@@ -181,7 +181,7 @@ struct GPU_EXPORT Capabilities {
   // the complexities associated with this. See
   // gpu/GLES2/extensions/CHROMIUM/CHROMIUM_image.txt for more
   // details.
-  bool chromium_image_rgb_emulation = false;
+  bool monyhar_image_rgb_emulation = false;
 
   bool disable_2d_canvas_copy_on_write = false;
 
@@ -191,7 +191,7 @@ struct GPU_EXPORT Capabilities {
 
   bool supports_oop_raster = false;
 
-  bool chromium_gpu_fence = false;
+  bool monyhar_gpu_fence = false;
 
   bool unpremultiply_and_dither_copy = false;
 
@@ -199,7 +199,7 @@ struct GPU_EXPORT Capabilities {
 
   bool use_gpu_fences_for_overlay_planes = false;
 
-  bool chromium_nonblocking_readback = false;
+  bool monyhar_nonblocking_readback = false;
 
   bool mesa_framebuffer_flip_y = false;
 

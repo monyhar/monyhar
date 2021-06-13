@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tabbed_mode;
+package org.monyhar.chrome.browser.tabbed_mode;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -14,24 +14,24 @@ import android.view.Window;
 import androidx.annotation.ColorInt;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.CallbackController;
-import org.chromium.base.MathUtils;
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.base.supplier.OneshotSupplier;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.compositor.layouts.EmptyOverviewModeObserver;
-import org.chromium.chrome.browser.compositor.layouts.OverviewModeBehavior;
-import org.chromium.chrome.browser.compositor.layouts.OverviewModeBehavior.OverviewModeObserver;
-import org.chromium.chrome.browser.device.DeviceClassManager;
-import org.chromium.chrome.browser.tabmodel.TabModel;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorObserver;
-import org.chromium.chrome.browser.tasks.tab_management.TabUiFeatureUtilities;
-import org.chromium.chrome.browser.vr.VrModuleProvider;
-import org.chromium.ui.UiUtils;
-import org.chromium.ui.util.ColorUtils;
-import org.chromium.ui.vr.VrModeObserver;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.CallbackController;
+import org.monyhar.base.MathUtils;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.base.supplier.OneshotSupplier;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.compositor.layouts.EmptyOverviewModeObserver;
+import org.monyhar.chrome.browser.compositor.layouts.OverviewModeBehavior;
+import org.monyhar.chrome.browser.compositor.layouts.OverviewModeBehavior.OverviewModeObserver;
+import org.monyhar.chrome.browser.device.DeviceClassManager;
+import org.monyhar.chrome.browser.tabmodel.TabModel;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorObserver;
+import org.monyhar.chrome.browser.tasks.tab_management.TabUiFeatureUtilities;
+import org.monyhar.chrome.browser.vr.VrModuleProvider;
+import org.monyhar.ui.UiUtils;
+import org.monyhar.ui.util.ColorUtils;
+import org.monyhar.ui.vr.VrModeObserver;
 
 /**
  * Controls the bottom system navigation bar color for the provided {@link Window}.

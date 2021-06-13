@@ -24,7 +24,7 @@ LINES = [
 
 NO_COMPILE_LINES = [
     'This is a "No Compile Test" suite.',
-    'https://dev.chromium.org/developers/testing/no-compile-tests'
+    'https://dev.monyhar.org/developers/testing/no-compile-tests'
 ]
 
 EXTENSIONS_TO_COMMENTS = {

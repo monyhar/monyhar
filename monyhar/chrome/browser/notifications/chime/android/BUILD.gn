@@ -6,8 +6,8 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/notifications/chime/ChimeDelegate.java",
-    "java/src/org/chromium/chrome/browser/notifications/chime/ChimeFeatures.java",
+    "java/src/org/monyhar/chrome/browser/notifications/chime/ChimeDelegate.java",
+    "java/src/org/monyhar/chrome/browser/notifications/chime/ChimeFeatures.java",
   ]
   deps = [ "//chrome/browser/flags:java" ]
 }

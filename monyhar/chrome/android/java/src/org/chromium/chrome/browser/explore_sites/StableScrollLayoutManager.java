@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.explore_sites;
+package org.monyhar.chrome.browser.explore_sites;
 
 import android.content.Context;
 import android.os.Parcel;

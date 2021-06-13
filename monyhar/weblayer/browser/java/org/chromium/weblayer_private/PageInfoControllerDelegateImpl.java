@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,26 +15,26 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.FragmentManager;
 
-import org.chromium.base.Callback;
-import org.chromium.base.StrictModeContext;
-import org.chromium.components.browser_ui.site_settings.ContentSettingsResources;
-import org.chromium.components.browser_ui.site_settings.SiteSettingsCategory;
-import org.chromium.components.browser_ui.site_settings.SiteSettingsDelegate;
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.components.content_settings.CookieControlsBridge;
-import org.chromium.components.content_settings.CookieControlsObserver;
-import org.chromium.components.embedder_support.browser_context.BrowserContextHandle;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.components.page_info.PageInfoControllerDelegate;
-import org.chromium.components.page_info.PageInfoMainController;
-import org.chromium.components.page_info.PageInfoRowView;
-import org.chromium.components.page_info.PageInfoSubpageController;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.url.GURL;
-import org.chromium.weblayer_private.interfaces.ObjectWrapper;
-import org.chromium.weblayer_private.interfaces.SettingsIntentHelper;
-import org.chromium.weblayer_private.settings.WebLayerSiteSettingsDelegate;
+import org.monyhar.base.Callback;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.components.browser_ui.site_settings.ContentSettingsResources;
+import org.monyhar.components.browser_ui.site_settings.SiteSettingsCategory;
+import org.monyhar.components.browser_ui.site_settings.SiteSettingsDelegate;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.components.content_settings.CookieControlsBridge;
+import org.monyhar.components.content_settings.CookieControlsObserver;
+import org.monyhar.components.embedder_support.browser_context.BrowserContextHandle;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.page_info.PageInfoControllerDelegate;
+import org.monyhar.components.page_info.PageInfoMainController;
+import org.monyhar.components.page_info.PageInfoRowView;
+import org.monyhar.components.page_info.PageInfoSubpageController;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.url.GURL;
+import org.monyhar.weblayer_private.interfaces.ObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.SettingsIntentHelper;
+import org.monyhar.weblayer_private.settings.WebLayerSiteSettingsDelegate;
 
 /**
  * WebLayer's customization of PageInfoControllerDelegate.

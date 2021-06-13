@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.highlight;
+package org.monyhar.components.browser_ui.widget.highlight;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -14,8 +14,8 @@ import androidx.annotation.Nullable;
 import androidx.annotation.Px;
 import androidx.core.view.ViewCompat;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.components.browser_ui.widget.R;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.components.browser_ui.widget.R;
 
 /**
  * A helper class to draw an overlay layer on the top of a view to enable highlighting. The overlay

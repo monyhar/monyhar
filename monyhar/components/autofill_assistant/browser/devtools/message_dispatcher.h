@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 // Copied and modified from
-// https://chromium.googlesource.com/chromium/src/+/a3f9d4fac81fc86065d867ab08fa4912ddf662c7/headless/public/internal/message_dispatcher.h
+// https://monyhar.googlesource.com/monyhar/src/+/a3f9d4fac81fc86065d867ab08fa4912ddf662c7/headless/public/internal/message_dispatcher.h
 // Modifications include namespace and path.
 
 #ifndef COMPONENTS_AUTOFILL_ASSISTANT_BROWSER_DEVTOOLS_MESSAGE_DISPATCHER_H_

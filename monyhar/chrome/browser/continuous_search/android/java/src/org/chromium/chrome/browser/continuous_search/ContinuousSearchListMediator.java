@@ -2,31 +2,31 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.continuous_search;
+package org.monyhar.chrome.browser.continuous_search;
 
 import android.content.res.Resources;
 
 import androidx.annotation.DrawableRes;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.Callback;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.continuous_search.ContinuousSearchListProperties.ListItemProperties;
-import org.chromium.chrome.browser.continuous_search.ContinuousSearchListProperties.ListItemType;
-import org.chromium.chrome.browser.continuous_search.ContinuousSearchListProperties.ProviderProperties;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.theme.ThemeColorProvider;
-import org.chromium.chrome.browser.theme.ThemeUtils;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.NavigationController;
-import org.chromium.content_public.common.Referrer;
-import org.chromium.network.mojom.ReferrerPolicy;
-import org.chromium.ui.modelutil.MVCListAdapter.ListItem;
-import org.chromium.ui.modelutil.MVCListAdapter.ModelList;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.util.ColorUtils;
-import org.chromium.url.GURL;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.continuous_search.ContinuousSearchListProperties.ListItemProperties;
+import org.monyhar.chrome.browser.continuous_search.ContinuousSearchListProperties.ListItemType;
+import org.monyhar.chrome.browser.continuous_search.ContinuousSearchListProperties.ProviderProperties;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.theme.ThemeColorProvider;
+import org.monyhar.chrome.browser.theme.ThemeUtils;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.NavigationController;
+import org.monyhar.content_public.common.Referrer;
+import org.monyhar.network.mojom.ReferrerPolicy;
+import org.monyhar.ui.modelutil.MVCListAdapter.ListItem;
+import org.monyhar.ui.modelutil.MVCListAdapter.ModelList;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.util.ColorUtils;
+import org.monyhar.url.GURL;
 
 /**
  * Business logic for the UI component of Continuous Search Navigation. This class updates the UI on

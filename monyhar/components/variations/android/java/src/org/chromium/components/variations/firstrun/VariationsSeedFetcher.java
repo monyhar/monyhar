@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.variations.firstrun;
+package org.monyhar.components.variations.firstrun;
 
 import android.content.SharedPreferences;
 import android.os.SystemClock;
@@ -10,12 +10,12 @@ import android.os.SystemClock;
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.FileUtils;
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.build.BuildConfig;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.FileUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.build.BuildConfig;
 
 import java.io.IOException;
 import java.io.InputStream;

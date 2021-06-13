@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments;
+package org.monyhar.chrome.browser.payments;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -26,31 +26,31 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.UiThreadTest;
-import org.chromium.base.test.util.Batch;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorSupplier;
-import org.chromium.chrome.test.ChromeBrowserTestRule;
-import org.chromium.components.payments.AndroidPaymentAppFinder;
-import org.chromium.components.payments.PackageManagerDelegate;
-import org.chromium.components.payments.PaymentApp;
-import org.chromium.components.payments.PaymentAppFactoryDelegate;
-import org.chromium.components.payments.PaymentAppFactoryParams;
-import org.chromium.components.payments.PaymentManifestDownloader;
-import org.chromium.components.payments.PaymentManifestParser;
-import org.chromium.components.payments.PaymentManifestWebDataService;
-import org.chromium.components.payments.WebAppManifestSection;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.test.NativeLibraryTestUtils;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.payments.mojom.PaymentDetailsModifier;
-import org.chromium.payments.mojom.PaymentMethodData;
-import org.chromium.ui.base.ActivityWindowAndroid;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.test.util.DummyUiActivityTestCase;
-import org.chromium.url.GURL;
-import org.chromium.url.Origin;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.UiThreadTest;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorSupplier;
+import org.monyhar.chrome.test.ChromeBrowserTestRule;
+import org.monyhar.components.payments.AndroidPaymentAppFinder;
+import org.monyhar.components.payments.PackageManagerDelegate;
+import org.monyhar.components.payments.PaymentApp;
+import org.monyhar.components.payments.PaymentAppFactoryDelegate;
+import org.monyhar.components.payments.PaymentAppFactoryParams;
+import org.monyhar.components.payments.PaymentManifestDownloader;
+import org.monyhar.components.payments.PaymentManifestParser;
+import org.monyhar.components.payments.PaymentManifestWebDataService;
+import org.monyhar.components.payments.WebAppManifestSection;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.test.NativeLibraryTestUtils;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.payments.mojom.PaymentDetailsModifier;
+import org.monyhar.payments.mojom.PaymentMethodData;
+import org.monyhar.ui.base.ActivityWindowAndroid;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.test.util.DummyUiActivityTestCase;
+import org.monyhar.url.GURL;
+import org.monyhar.url.Origin;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -64,7 +64,7 @@ public class AndroidPaymentAppFinderUnitTest extends DummyUiActivityTestCase {
     // Collection of payments unit tests that require the browser process to be initialized.
     static final String PAYMENTS_BROWSER_UNIT_TESTS = "PaymentsBrowserUnitTests";
     private static final IntentArgumentMatcher sPayIntentArgumentMatcher =
-            new IntentArgumentMatcher(new Intent("org.chromium.intent.action.PAY"));
+            new IntentArgumentMatcher(new Intent("org.monyhar.intent.action.PAY"));
 
     @Rule
     public ChromeBrowserTestRule mTestRule = new ChromeBrowserTestRule();
@@ -136,8 +136,8 @@ public class AndroidPaymentAppFinderUnitTest extends DummyUiActivityTestCase {
         Mockito.when(params.getWebContents()).thenReturn(webContents);
         Mockito.when(params.getId()).thenReturn("id");
         Mockito.when(params.getMethodData()).thenReturn(methodData);
-        Mockito.when(params.getTopLevelOrigin()).thenReturn("https://chromium.org");
-        Mockito.when(params.getPaymentRequestOrigin()).thenReturn("https://chromium.org");
+        Mockito.when(params.getTopLevelOrigin()).thenReturn("https://monyhar.org");
+        Mockito.when(params.getPaymentRequestOrigin()).thenReturn("https://monyhar.org");
         Mockito.when(params.getCertificateChain()).thenReturn(null);
         Mockito.when(params.getUnmodifiableModifiers())
                 .thenReturn(new HashMap<String, PaymentDetailsModifier>());

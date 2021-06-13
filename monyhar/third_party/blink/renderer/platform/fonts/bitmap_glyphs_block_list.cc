@@ -14,7 +14,7 @@ namespace {
 // vector outlines for Latin glyphs. We avoid using the bitmap glyphs
 // because they cause issues with uneven spacing when combined with
 // subpixel positioning, see
-// https://bugs.chromium.org/p/chromium/issues/detail?id=707713#c5
+// https://bugs.monyhar.org/p/monyhar/issues/detail?id=707713#c5
 constexpr const char* kBitmapGlyphsBlockList[] = {"Calibri", "Courier New"};
 
 }  // namespace

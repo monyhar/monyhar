@@ -6,8 +6,8 @@
 #
 # Aside from work necessary to adhere to changes in Chromium interfaces used by
 # Crashpad, all changes should first be made in the upstream Crashpad
-# repository, and then imported here. See README.chromium.
+# repository, and then imported here. See README.monyhar.
 
-mark@chromium.org
-rsesek@chromium.org
-scottmg@chromium.org
+mark@monyhar.org
+rsesek@monyhar.org
+scottmg@monyhar.org

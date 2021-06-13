@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.infobars;
+package org.monyhar.components.infobars;
 
 import android.content.Context;
 import android.text.style.ClickableSpan;
@@ -10,7 +10,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.ViewConfiguration;
 
-import org.chromium.ui.widget.TextViewWithClickableSpans;
+import org.monyhar.ui.widget.TextViewWithClickableSpans;
 
 /**
  * Handles the additional message view responsibilities needed for InfoBars.

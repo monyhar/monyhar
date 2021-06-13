@@ -36,7 +36,7 @@ extern const base::Feature kIPHUpdatedConnectionSecurityIndicatorsFeature;
 
 // All the features declared for Android below that are also used in Java,
 // should also be declared in:
-// org.chromium.components.feature_engagement.FeatureConstants.
+// org.monyhar.components.feature_engagement.FeatureConstants.
 #if defined(OS_ANDROID)
 extern const base::Feature kIPHAddToHomescreenMessageFeature;
 extern const base::Feature kIPHAddToHomescreenTextBubbleFeature;

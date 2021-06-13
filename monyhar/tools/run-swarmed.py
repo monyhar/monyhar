@@ -54,7 +54,7 @@ def _Spawn(args):
       'tools/luci-go/swarming',
       'trigger',
       '-S',
-      'https://chromium-swarm.appspot.com',
+      'https://monyhar-swarm.appspot.com',
       '-d',
       'pool=' + args.pool,
       '-digest',
@@ -129,14 +129,14 @@ def _Collect(spawn_result):
   task_ids = [task['task_id'] for task in task_json['tasks']]
 
   for t in task_ids:
-    print('Task {}: https://chromium-swarm.appspot.com/task?id={}'.format(
+    print('Task {}: https://monyhar-swarm.appspot.com/task?id={}'.format(
         index, t))
   p = subprocess.Popen(
       [
           'tools/luci-go/swarming',
           'collect',
           '-S',
-          'https://chromium-swarm.appspot.com',
+          'https://monyhar-swarm.appspot.com',
           '--task-output-stdout=console',
       ] + task_ids,
       stdout=subprocess.PIPE,
@@ -177,9 +177,9 @@ def main():
   parser.add_argument(
       '--device-type',
       help='device_type specifier for Swarming'
-      ' from https://chromium-swarm.appspot.com/botlist .')
+      ' from https://monyhar-swarm.appspot.com/botlist .')
   parser.add_argument('--pool',
-                      default='chromium.tests',
+                      default='monyhar.tests',
                       help='Use the given swarming pool.')
   parser.add_argument('--results', '-r', default='results',
                       help='Directory in which to store results.')
@@ -249,14 +249,14 @@ def main():
 
   print('If you get authentication errors, follow:')
   print(
-      '  https://chromium.googlesource.com/chromium/src/+/HEAD/docs/workflow/debugging-with-swarming.md#authenticating'
+      '  https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/workflow/debugging-with-swarming.md#authenticating'
   )
 
   print('Uploading to isolate server, this can take a while...')
   isolate = os.path.join(args.out_dir, args.target_name + '.isolate')
   archive_json = os.path.join(args.out_dir, args.target_name + '.archive.json')
   subprocess.check_output([
-      'tools/luci-go/isolate', 'archive', '-cas-instance', 'chromium-swarm',
+      'tools/luci-go/isolate', 'archive', '-cas-instance', 'monyhar-swarm',
       '-isolate', isolate, '-dump-json', archive_json
   ])
   with open(archive_json) as f:

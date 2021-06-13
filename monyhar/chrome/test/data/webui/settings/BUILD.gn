@@ -262,7 +262,7 @@ js_library("passwords_and_autofill_fake_data") {
     "..:chai_assert",
     "//chrome/browser/resources/settings:lazy_load",
     "//chrome/browser/resources/settings:settings",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
   ]
   externs_list = [
@@ -387,7 +387,7 @@ js_library("settings_category_default_radio_group_tests") {
     "..:chai_assert",
     "..:test_util.m",
     "//chrome/browser/resources/settings:lazy_load",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   externs_list = [ "$externs_path/mocha-2.5.js" ]
 }
@@ -423,7 +423,7 @@ js_library("settings_ui_tests") {
     "..:chai_assert",
     "..:test_util.m",
     "//chrome/browser/resources/settings:settings",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   externs_list = [ "$externs_path/mocha-2.5.js" ]
 }

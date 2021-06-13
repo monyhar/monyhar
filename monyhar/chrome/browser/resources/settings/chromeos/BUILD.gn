@@ -588,7 +588,7 @@ js_library("os_icons.m") {
     "$root_gen_dir/chrome/browser/resources/settings/chromeos/os_icons.m.js",
   ]
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   extra_deps = [ ":os_icons_module" ]
 }

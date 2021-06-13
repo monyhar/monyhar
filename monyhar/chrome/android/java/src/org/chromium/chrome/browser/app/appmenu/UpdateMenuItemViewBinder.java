@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.app.appmenu;
+package org.monyhar.chrome.browser.app.appmenu;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -19,11 +19,11 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.graphics.drawable.DrawableCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.omaha.UpdateMenuItemHelper;
-import org.chromium.chrome.browser.ui.appmenu.AppMenuClickHandler;
-import org.chromium.chrome.browser.ui.appmenu.CustomViewBinder;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.omaha.UpdateMenuItemHelper;
+import org.monyhar.chrome.browser.ui.appmenu.AppMenuClickHandler;
+import org.monyhar.chrome.browser.ui.appmenu.CustomViewBinder;
 
 /**
  * A custom binder used to bind the update menu item.

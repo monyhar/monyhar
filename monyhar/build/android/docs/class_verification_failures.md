@@ -5,7 +5,7 @@
 ## What's this all about?
 
 This document aims to explain class verification on Android, how this can affect
-app performance, how to identify problems, and chromium-specific solutions. For
+app performance, how to identify problems, and monyhar-specific solutions. For
 simplicity, this document focuses on how class verification is implemented by
 ART, the virtual machine which replaced Dalvik starting in Android Lollipop.
 
@@ -136,7 +136,7 @@ public class ApiHelperForOMR1 {
 }
 ```
 
-* `@VerifiesOnO_MR1`: this is a chromium-defined annotation to tell proguard
+* `@VerifiesOnO_MR1`: this is a monyhar-defined annotation to tell proguard
   (and similar tools) not to inline this class or its methods (since that would
   defeat the point of out-of-lining!)
 * `@TargetApi(Build.VERSION_CODES.O_MR1)`: this tells Android Lint it's OK to
@@ -189,14 +189,14 @@ public class ApiHelperForP {
 ## Investigating class verification failures
 
 Class verification is generally surprising and nonintuitive. Fortunately, the
-ART team have provided tools to investigate errors (and the chromium team has
+ART team have provided tools to investigate errors (and the monyhar team has
 built helpful wrappers).
 
 ### Listing failing classes
 
 The main starting point is to figure out which classes fail verification (those
 which ART marks as `RetryVerificationAtRuntime`). This can be done for **any
-Android app** (it doesn't have to be from the chromium project) like so:
+Android app** (it doesn't have to be from the monyhar project) like so:
 
 ```shell
 # Install the app first. Using Chrome as an example.
@@ -204,7 +204,7 @@ autoninja -C out/Default chrome_public_apk
 out/Default/bin/chrome_public_apk install
 
 # List all classes marked as 'RetryVerificationAtRuntime'
-build/android/list_class_verification_failures.py --package="org.chromium.chrome"
+build/android/list_class_verification_failures.py --package="org.monyhar.chrome"
 W    0.000s Main  Skipping deobfuscation because no map file was provided.
 first.failing.Class
 second.failing.Class
@@ -219,7 +219,7 @@ knows how to deobfuscate classes for you (useful for `is_debug = true` or
 `is_java_debug = true`):
 
 ```shell
-build/android/list_class_verification_failures.py --package="org.chromium.chrome" \
+build/android/list_class_verification_failures.py --package="org.monyhar.chrome" \
   --mapping=<path/to/file.mapping> # ex. out/Release/apks/ChromePublic.apk.mapping
 android.support.design.widget.AppBarLayout
 android.support.design.widget.TextInputLayout
@@ -250,9 +250,9 @@ adb logcat -c
 adb install -d -r out/Default/apks/ChromePublic.apk
 adb logcat | grep 'dex2oat'
 ...
-... I dex2oat : Soft verification failures in boolean org.chromium.content.browser.selection.SelectionPopupControllerImpl.b(android.view.ActionMode, android.view.Menu)
-... I dex2oat : boolean org.chromium.content.browser.selection.SelectionPopupControllerImpl.b(android.view.ActionMode, android.view.Menu): [0xF0] couldn't find method android.view.textclassifier.TextClassification.getActions ()Ljava/util/List;
-... I dex2oat : boolean org.chromium.content.browser.selection.SelectionPopupControllerImpl.b(android.view.ActionMode, android.view.Menu): [0xFA] couldn't find method android.view.textclassifier.TextClassification.getActions ()Ljava/util/List;
+... I dex2oat : Soft verification failures in boolean org.monyhar.content.browser.selection.SelectionPopupControllerImpl.b(android.view.ActionMode, android.view.Menu)
+... I dex2oat : boolean org.monyhar.content.browser.selection.SelectionPopupControllerImpl.b(android.view.ActionMode, android.view.Menu): [0xF0] couldn't find method android.view.textclassifier.TextClassification.getActions ()Ljava/util/List;
+... I dex2oat : boolean org.monyhar.content.browser.selection.SelectionPopupControllerImpl.b(android.view.ActionMode, android.view.Menu): [0xFA] couldn't find method android.view.textclassifier.TextClassification.getActions ()Ljava/util/List;
 ...
 ```
 
@@ -271,16 +271,16 @@ devices, then `TextClassification.getActions()` must be out-of-lined.
 
 ## See also
 
-* Bugs or questions? Contact ntfschr@chromium.org
+* Bugs or questions? Contact ntfschr@monyhar.org
 * ART team's Google I/O talks: [2014](https://youtu.be/EBlTzQsUoOw) and later
   years
 * Analysis of class verification in Chrome and WebView (Google-only
-  [doc](http://go/class-verification-chromium-analysis))
+  [doc](http://go/class-verification-monyhar-analysis))
 * Presentation on class verification in Chrome and WebView (Google-only
-  [slide deck](http://go/class-verification-chromium-slides))
+  [slide deck](http://go/class-verification-monyhar-slides))
 
 [1]: https://docs.oracle.com/javase/specs/jvms/se7/html/jvms-5.html#jvms-5.5
 [2]: https://developer.android.com/reference/android/view/Window.html#isWideColorGamut()
-[3]: https://bugs.chromium.org/p/chromium/issues/detail?id=838702
+[3]: https://bugs.monyhar.org/p/monyhar/issues/detail?id=838702
 [4]: https://developer.android.com/reference/android/os/Build.VERSION_CODES
 [5]: https://developer.android.com/reference/android/view/textclassifier/TextClassification.html#getActions()

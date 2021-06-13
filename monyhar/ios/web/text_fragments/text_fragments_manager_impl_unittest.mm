@@ -36,7 +36,7 @@ using shared_highlighting::TextFragmentLinkOpenSource;
 namespace {
 
 const char kValidFragmentsURL[] =
-    "https://chromium.org#idFrag:~:text=text%201&text=text%202";
+    "https://monyhar.org#idFrag:~:text=text%201&text=text%202";
 const char16_t kScriptForValidFragmentsURL[] =
     u"__gCrWeb.textFragments.handleTextFragments([{\"textStart\":\"text "
     u"1\"},{\"textStart\":\"text 2\"}], true, null, null)";
@@ -44,9 +44,9 @@ const char16_t kScriptForValidFragmentsColorChangeURL[] =
     u"__gCrWeb.textFragments.handleTextFragments([{\"textStart\":\"text "
     u"1\"},{\"textStart\":\"text 2\"}], true, 'e9d2fd', '000000')";
 
-const char kSingleFragmentURL[] = "https://chromium.org#:~:text=text";
+const char kSingleFragmentURL[] = "https://monyhar.org#:~:text=text";
 const char kTwoFragmentsURL[] =
-    "https://chromium.org#:~:text=text&text=other%20text";
+    "https://monyhar.org#:~:text=text&text=other%20text";
 
 const char kSearchEngineURL[] = "https://google.com";
 const char kNonSearchEngineURL[] = "https://notasearchengine.com";
@@ -218,7 +218,7 @@ TEST_F(TextFragmentsManagerImplTest, SameDocumentFragmentsDisallowed) {
 // Tests that the manager will not execute JavaScript if there are no
 // fragments on the current URL.
 TEST_F(TextFragmentsManagerImplTest, NoFragmentsNoJavaScript) {
-  SetLastURL(GURL("https://www.chromium.org/"));
+  SetLastURL(GURL("https://www.monyhar.org/"));
 
   TextFragmentsManagerImpl* manager =
       CreateManager(/*has_opener=*/false,
@@ -237,7 +237,7 @@ TEST_F(TextFragmentsManagerImplTest, NoMetricsRecordedIfNoFragmentPresent) {
   base::HistogramTester histogram_tester;
 
   // Set a URL without text fragments.
-  SetLastURL(GURL("https://www.chromium.org/"));
+  SetLastURL(GURL("https://www.monyhar.org/"));
 
   TextFragmentsManagerImpl* manager = CreateDefaultManager();
 
@@ -258,7 +258,7 @@ TEST_F(TextFragmentsManagerImplTest,
   ukm::TestAutoSetUkmRecorder ukm_recorder;
 
   // Set a URL without text fragments, but with an id fragment.
-  SetLastURL(GURL("https://www.chromium.org/#FragmentID"));
+  SetLastURL(GURL("https://www.monyhar.org/#FragmentID"));
 
   TextFragmentsManagerImpl* manager = CreateDefaultManager();
 

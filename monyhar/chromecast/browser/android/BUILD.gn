@@ -77,8 +77,8 @@ android_library("cast_audio_manager_java") {
       "//third_party/android_sdk:public_framework_system_java"
 
   sources = [
-    "$java_src_dir/org/chromium/chromecast/shell/CastAudioFocusRequest.java",
-    "$java_src_dir/org/chromium/chromecast/shell/CastAudioManager.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/CastAudioFocusRequest.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/CastAudioManager.java",
   ]
   deps = [
     "//base:base_java",
@@ -89,22 +89,22 @@ android_library("cast_audio_manager_java") {
 
 android_library("cast_intents_java") {
   java_src_dir = "//chromecast/browser/android/apk/src"
-  sources = [ "$java_src_dir/org/chromium/chromecast/shell/CastIntents.java" ]
+  sources = [ "$java_src_dir/org/monyhar/chromecast/shell/CastIntents.java" ]
 }
 android_aidl("logs_provider_aidl") {
   java_src_dir = "//chromecast/browser/android/apk/src"
   interface_file =
-      "$java_src_dir/org/chromium/chromecast/shell/logs_provider_service.aidl"
+      "$java_src_dir/org/monyhar/chromecast/shell/logs_provider_service.aidl"
 
   sources =
-      [ "$java_src_dir/org/chromium/chromecast/shell/IDeviceLogsProvider.aidl" ]
+      [ "$java_src_dir/org/monyhar/chromecast/shell/IDeviceLogsProvider.aidl" ]
 }
 
 android_library("reactive_android_java") {
   java_src_dir = "//chromecast/browser/android/apk/src"
   sources = [
-    "$java_src_dir/org/chromium/chromecast/shell/AsyncTaskRunner.java",
-    "$java_src_dir/org/chromium/chromecast/shell/LocalBroadcastReceiverScope.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/AsyncTaskRunner.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/LocalBroadcastReceiverScope.java",
   ]
   deps = [
     "//base:base_java",
@@ -114,44 +114,44 @@ android_library("reactive_android_java") {
 }
 
 generate_product_config_srcjar("chromecast_product_config") {
-  java_package = "org.chromium.chromecast.shell"
+  java_package = "org.monyhar.chromecast.shell"
 }
 
 android_library("resume_intents_java") {
   java_src_dir = "//chromecast/browser/android/apk/src"
-  sources = [ "$java_src_dir/org/chromium/chromecast/shell/ResumeIntents.java" ]
+  sources = [ "$java_src_dir/org/monyhar/chromecast/shell/ResumeIntents.java" ]
   deps = [ "//chromecast/base:base_java" ]
 }
 
 android_library("cast_shell_java") {
   java_src_dir = "//chromecast/browser/android/apk/src"
   sources = [
-    "$java_src_dir/org/chromium/chromecast/shell/AndroidAppLogcatProvider.java",
-    "$java_src_dir/org/chromium/chromecast/shell/CastApplication.java",
-    "$java_src_dir/org/chromium/chromecast/shell/CastBrowserHelper.java",
-    "$java_src_dir/org/chromium/chromecast/shell/CastCommandLineHelper.java",
-    "$java_src_dir/org/chromium/chromecast/shell/CastContentWindowAndroid.java",
-    "$java_src_dir/org/chromium/chromecast/shell/CastCrashHandler.java",
-    "$java_src_dir/org/chromium/chromecast/shell/CastCrashUploader.java",
-    "$java_src_dir/org/chromium/chromecast/shell/CastCrashUploaderFactory.java",
-    "$java_src_dir/org/chromium/chromecast/shell/CastMetricsHelper.java",
-    "$java_src_dir/org/chromium/chromecast/shell/CastSerialGenerator.java",
-    "$java_src_dir/org/chromium/chromecast/shell/CastSysInfoAndroid.java",
-    "$java_src_dir/org/chromium/chromecast/shell/CastWebContentsActivity.java",
-    "$java_src_dir/org/chromium/chromecast/shell/CastWebContentsComponent.java",
-    "$java_src_dir/org/chromium/chromecast/shell/CastWebContentsFragment.java",
-    "$java_src_dir/org/chromium/chromecast/shell/CastWebContentsIntentUtils.java",
-    "$java_src_dir/org/chromium/chromecast/shell/CastWebContentsScopes.java",
-    "$java_src_dir/org/chromium/chromecast/shell/CastWebContentsService.java",
-    "$java_src_dir/org/chromium/chromecast/shell/CastWebContentsSurfaceHelper.java",
-    "$java_src_dir/org/chromium/chromecast/shell/CastWebContentsView.java",
-    "$java_src_dir/org/chromium/chromecast/shell/ElidedLogcatProvider.java",
-    "$java_src_dir/org/chromium/chromecast/shell/ExternalServiceDeviceLogcatProvider.java",
-    "$java_src_dir/org/chromium/chromecast/shell/LogcatElision.java",
-    "$java_src_dir/org/chromium/chromecast/shell/WebContentsRegistry.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/AndroidAppLogcatProvider.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/CastApplication.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/CastBrowserHelper.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/CastCommandLineHelper.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/CastContentWindowAndroid.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/CastCrashHandler.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/CastCrashUploader.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/CastCrashUploaderFactory.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/CastMetricsHelper.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/CastSerialGenerator.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/CastSysInfoAndroid.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/CastWebContentsActivity.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/CastWebContentsComponent.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/CastWebContentsFragment.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/CastWebContentsIntentUtils.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/CastWebContentsScopes.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/CastWebContentsService.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/CastWebContentsSurfaceHelper.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/CastWebContentsView.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/ElidedLogcatProvider.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/ExternalServiceDeviceLogcatProvider.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/LogcatElision.java",
+    "$java_src_dir/org/monyhar/chromecast/shell/WebContentsRegistry.java",
   ]
 
-  resources_package = "org.chromium.chromecast.shell"
+  resources_package = "org.monyhar.chromecast.shell"
   srcjar_deps = [
     ":cast_shell_build_config_gen",
     ":chromecast_product_config",
@@ -198,18 +198,18 @@ android_library("cast_shell_java") {
 
 junit_binary("cast_shell_junit_tests") {
   sources = [
-    "junit/src/org/chromium/chromecast/shell/AsyncTaskRunnerTest.java",
-    "junit/src/org/chromium/chromecast/shell/CastAudioFocusRequestTest.java",
-    "junit/src/org/chromium/chromecast/shell/CastAudioManagerTest.java",
-    "junit/src/org/chromium/chromecast/shell/CastCommandLineHelperTest.java",
-    "junit/src/org/chromium/chromecast/shell/CastWebContentsActivityTest.java",
-    "junit/src/org/chromium/chromecast/shell/CastWebContentsComponentTest.java",
-    "junit/src/org/chromium/chromecast/shell/CastWebContentsIntentUtilsTest.java",
-    "junit/src/org/chromium/chromecast/shell/CastWebContentsServiceTest.java",
-    "junit/src/org/chromium/chromecast/shell/CastWebContentsSurfaceHelperTest.java",
-    "junit/src/org/chromium/chromecast/shell/ElidedLogcatProviderUnitTest.java",
-    "junit/src/org/chromium/chromecast/shell/LocalBroadcastReceiverScopeTest.java",
-    "junit/src/org/chromium/chromecast/shell/LogcatElisionUnitTest.java",
+    "junit/src/org/monyhar/chromecast/shell/AsyncTaskRunnerTest.java",
+    "junit/src/org/monyhar/chromecast/shell/CastAudioFocusRequestTest.java",
+    "junit/src/org/monyhar/chromecast/shell/CastAudioManagerTest.java",
+    "junit/src/org/monyhar/chromecast/shell/CastCommandLineHelperTest.java",
+    "junit/src/org/monyhar/chromecast/shell/CastWebContentsActivityTest.java",
+    "junit/src/org/monyhar/chromecast/shell/CastWebContentsComponentTest.java",
+    "junit/src/org/monyhar/chromecast/shell/CastWebContentsIntentUtilsTest.java",
+    "junit/src/org/monyhar/chromecast/shell/CastWebContentsServiceTest.java",
+    "junit/src/org/monyhar/chromecast/shell/CastWebContentsSurfaceHelperTest.java",
+    "junit/src/org/monyhar/chromecast/shell/ElidedLogcatProviderUnitTest.java",
+    "junit/src/org/monyhar/chromecast/shell/LocalBroadcastReceiverScopeTest.java",
+    "junit/src/org/monyhar/chromecast/shell/LogcatElisionUnitTest.java",
   ]
 
   srcjar_deps = [ ":cast_shell_build_config_gen" ]

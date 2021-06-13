@@ -13,7 +13,7 @@ generally easier to use.
 
 This document provides a brief guide to API usage with example code snippets.
 For a detailed API references please consult the headers in
-[//mojo/public/cpp/system](https://cs.chromium.org/chromium/src/mojo/public/cpp/system/README.md).
+[//mojo/public/cpp/system](https://cs.monyhar.org/monyhar/src/mojo/public/cpp/system/README.md).
 
 Note that all API symbols referenced in this document are implicitly in the
 top-level `mojo` namespace.
@@ -85,7 +85,7 @@ mojo::ReadMessageNew(server.get(), &received_message, &num_bytes, nullptr,
                      nullptr, MOJO_READ_MESSAGE_FLAG_NONE);
 ```
 
-See [message_pipe.h](https://cs.chromium.org/chromium/src/mojo/public/cpp/system/message_pipe.h)
+See [message_pipe.h](https://cs.monyhar.org/monyhar/src/mojo/public/cpp/system/message_pipe.h)
 for detailed C++ message pipe API documentation.
 
 ## Data Pipes
@@ -119,7 +119,7 @@ uint32_t num_bytes = 64;
 consumer.ReadData(buffer, &num_bytes, MOJO_READ_DATA_FLAG_NONE);
 ```
 
-See [data_pipe.h](https://cs.chromium.org/chromium/src/mojo/public/cpp/system/data_pipe.h)
+See [data_pipe.h](https://cs.monyhar.org/monyhar/src/mojo/public/cpp/system/data_pipe.h)
 for detailed C++ data pipe API documentation.
 
 ## Shared Buffers
@@ -154,7 +154,7 @@ static_cast<int*>(mapping.get())[0] = 43;
 When `mapping` and `another_mapping` are destroyed, they automatically unmap
 their respective memory regions.
 
-See [buffer.h](https://cs.chromium.org/chromium/src/mojo/public/cpp/system/buffer.h)
+See [buffer.h](https://cs.monyhar.org/monyhar/src/mojo/public/cpp/system/buffer.h)
 for detailed C++ shared buffer API documentation.
 
 ## Native Platform Handles (File Descriptors, Windows Handles, *etc.*)
@@ -164,7 +164,7 @@ These are specifically useful when working with a few `//base` types, namely
 `base::PlatformFile`, `base::SharedMemoryHandle` (deprecated), and various
 strongly-typed shared memory region types like
 `base::ReadOnlySharedMemoryRegion`. See
-[platform_handle.h](https://cs.chromium.org/chromium/src/mojo/public/cpp/system/platform_handle.h)
+[platform_handle.h](https://cs.monyhar.org/monyhar/src/mojo/public/cpp/system/platform_handle.h)
 for detailed C++ platform handle API documentation.
 
 ## Signals & Traps
@@ -207,7 +207,7 @@ if (message_pipe.handle0->QuerySignalsState().readable()) {
 
 ### Watching Handles
 
-The [`mojo::SimpleWatcher`](https://cs.chromium.org/chromium/src/mojo/public/cpp/system/simple_watcher.h)
+The [`mojo::SimpleWatcher`](https://cs.monyhar.org/monyhar/src/mojo/public/cpp/system/simple_watcher.h)
 class serves as a convenient helper for using the
 [low-level traps API](/mojo/public/c/system/README.md#Signals-Traps)
 to watch a handle for signaling state changes. A `SimpleWatcher` is bound to a
@@ -284,8 +284,8 @@ with common synchronization primitives (namely `base::WaitableEvent`.)
 While these API features should be used sparingly, they are sometimes necessary.
 
 See the documentation in
-[wait.h](https://cs.chromium.org/chromium/src/mojo/public/cpp/system/wait.h)
-and [wait_set.h](https://cs.chromium.org/chromium/src/mojo/public/cpp/system/wait_set.h)
+[wait.h](https://cs.monyhar.org/monyhar/src/mojo/public/cpp/system/wait.h)
+and [wait_set.h](https://cs.monyhar.org/monyhar/src/mojo/public/cpp/system/wait_set.h)
 for a more detailed API reference.
 
 ### Waiting On a Single Handle
@@ -344,7 +344,7 @@ conditions being waited upon do not change much between consecutive blocking
 waits. It's also often useful to be able to interrupt the blocking operation
 as efficiently as possible.
 
-[`mojo::WaitSet`](https://cs.chromium.org/chromium/src/mojo/public/cpp/system/wait_set.h)
+[`mojo::WaitSet`](https://cs.monyhar.org/monyhar/src/mojo/public/cpp/system/wait_set.h)
 is designed with these conditions in mind. A `WaitSet` maintains a persistent
 set of (not-owned) Mojo handles and `base::WaitableEvent`s, which may be
 explicitly added to or removed from the set at any time.

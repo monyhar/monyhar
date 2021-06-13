@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.keyboard_accessory.bar_component;
+package org.monyhar.chrome.browser.keyboard_accessory.bar_component;
 
 import android.animation.ObjectAnimator;
 import android.content.Context;
@@ -19,9 +19,9 @@ import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.view.ViewCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.keyboard_accessory.R;
-import org.chromium.ui.widget.ViewRectProvider;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.keyboard_accessory.R;
+import org.monyhar.ui.widget.ViewRectProvider;
 
 /**
  * The Accessory sitting above the keyboard and below the content area. It is used for autofill

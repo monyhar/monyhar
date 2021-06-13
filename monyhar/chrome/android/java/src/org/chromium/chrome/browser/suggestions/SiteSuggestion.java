@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.suggestions;
+package org.monyhar.chrome.browser.suggestions;
 
-import org.chromium.chrome.browser.suggestions.tile.TileSectionType;
-import org.chromium.chrome.browser.suggestions.tile.TileSource;
-import org.chromium.chrome.browser.suggestions.tile.TileTitleSource;
-import org.chromium.url.GURL;
+import org.monyhar.chrome.browser.suggestions.tile.TileSectionType;
+import org.monyhar.chrome.browser.suggestions.tile.TileSource;
+import org.monyhar.chrome.browser.suggestions.tile.TileTitleSource;
+import org.monyhar.url.GURL;
 
 import java.util.Date;
 
@@ -35,7 +35,7 @@ public class SiteSuggestion {
     public final int source;
 
     /**
-     * The {@link org.chromium.chrome.browser.suggestions.tile.TileSectionType} the tile is
+     * The {@link org.monyhar.chrome.browser.suggestions.tile.TileSectionType} the tile is
      * contained in.
      */
     @TileSectionType

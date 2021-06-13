@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant;
+package org.monyhar.chrome.browser.autofill_assistant;
 
 import static androidx.test.espresso.Espresso.onData;
 import static androidx.test.espresso.Espresso.onView;
@@ -40,12 +40,12 @@ import static org.hamcrest.Matchers.instanceOf;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.lessThan;
 
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.getElementValue;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.isNextAfterSibling;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.startAutofillAssistant;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilViewInRootMatchesCondition;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilViewMatchesCondition;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.withTextId;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.getElementValue;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.isNextAfterSibling;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.startAutofillAssistant;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilViewInRootMatchesCondition;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilViewMatchesCondition;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.withTextId;
 
 import android.support.test.InstrumentationRegistry;
 import android.widget.RadioButton;
@@ -60,30 +60,30 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.FlakyTest;
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.autofill.PersonalDataManager;
-import org.chromium.chrome.browser.autofill.PersonalDataManager.CreditCard;
-import org.chromium.chrome.browser.autofill_assistant.proto.ActionProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ChipProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.CollectUserDataProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ContactDetailsProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.PromptProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.RequiredDataPiece;
-import org.chromium.chrome.browser.autofill_assistant.proto.RequiredFieldProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.SelectorProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.SupportedScriptProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.SupportedScriptProto.PresentationProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.UseAddressProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ValueExpression;
-import org.chromium.chrome.browser.autofill_assistant.proto.ValueExpression.Chunk;
-import org.chromium.chrome.browser.customtabs.CustomTabActivityTestRule;
-import org.chromium.chrome.browser.customtabs.CustomTabsTestUtils;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.FlakyTest;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager.CreditCard;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ActionProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ChipProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.CollectUserDataProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ContactDetailsProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.PromptProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.RequiredDataPiece;
+import org.monyhar.chrome.browser.autofill_assistant.proto.RequiredFieldProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.SelectorProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.SupportedScriptProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.SupportedScriptProto.PresentationProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.UseAddressProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ValueExpression;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ValueExpression.Chunk;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivityTestRule;
+import org.monyhar.chrome.browser.customtabs.CustomTabsTestUtils;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -213,7 +213,7 @@ public class AutofillAssistantPersonalDataManagerTest {
                 withContentDescription("Email*"), allOf(isDisplayed(), isEnabled()));
         onView(withContentDescription("Email*")).perform(typeText("johndoe@google.com"));
         Espresso.closeSoftKeyboard();
-        onView(withId(org.chromium.chrome.R.id.editor_dialog_done_button))
+        onView(withId(org.monyhar.chrome.R.id.editor_dialog_done_button))
                 .perform(scrollTo(), click());
         // First round: Missing name piece.
         waitUntilViewMatchesCondition(
@@ -234,7 +234,7 @@ public class AutofillAssistantPersonalDataManagerTest {
                 withContentDescription("Name*"), allOf(isDisplayed(), isEnabled()));
         onView(withContentDescription("Name*")).perform(typeText(" Doe"));
         Espresso.closeSoftKeyboard();
-        onView(withId(org.chromium.chrome.R.id.editor_dialog_done_button))
+        onView(withId(org.monyhar.chrome.R.id.editor_dialog_done_button))
                 .perform(scrollTo(), click());
         // Second round: Complete.
         waitUntilViewMatchesCondition(
@@ -302,7 +302,7 @@ public class AutofillAssistantPersonalDataManagerTest {
                 withContentDescription("Email*"), allOf(isDisplayed(), isEnabled()));
         onView(withContentDescription("Email*")).perform(typeText("doe@google.com"));
         Espresso.closeSoftKeyboard();
-        onView(withId(org.chromium.chrome.R.id.editor_dialog_done_button))
+        onView(withId(org.monyhar.chrome.R.id.editor_dialog_done_button))
                 .perform(scrollTo(), click());
         waitUntilViewMatchesCondition(withText("Continue"), isEnabled());
 
@@ -312,7 +312,7 @@ public class AutofillAssistantPersonalDataManagerTest {
         waitUntilViewMatchesCondition(
                 withContentDescription("Name*"), allOf(isDisplayed(), isEnabled()));
         Espresso.closeSoftKeyboard();
-        onView(withId(org.chromium.chrome.R.id.editor_dialog_done_button))
+        onView(withId(org.monyhar.chrome.R.id.editor_dialog_done_button))
                 .perform(scrollTo(), click());
 
         // Second edit: change name from John Doe to Jane Doe.
@@ -321,7 +321,7 @@ public class AutofillAssistantPersonalDataManagerTest {
                 withContentDescription("Name*"), allOf(isDisplayed(), isEnabled()));
         onView(withContentDescription("Name*")).perform(clearText(), typeText("Jane Doe"));
         Espresso.closeSoftKeyboard();
-        onView(withId(org.chromium.chrome.R.id.editor_dialog_done_button))
+        onView(withId(org.monyhar.chrome.R.id.editor_dialog_done_button))
                 .perform(scrollTo(), click());
 
         // There used to be a bug where consecutive edits of the same profile would create a
@@ -557,7 +557,7 @@ public class AutofillAssistantPersonalDataManagerTest {
                 .perform(clearText())
                 .perform(typeText("janedoe@google.com"));
         Espresso.closeSoftKeyboard();
-        onView(withId(org.chromium.chrome.R.id.editor_dialog_done_button))
+        onView(withId(org.monyhar.chrome.R.id.editor_dialog_done_button))
                 .perform(scrollTo(), click());
         waitUntilViewMatchesCondition(withText("Contact info"), isDisplayed());
         // Continue.
@@ -590,7 +590,7 @@ public class AutofillAssistantPersonalDataManagerTest {
                          .build());
         list.add((ActionProto) ActionProto.newBuilder()
                          .setUseCard(
-                                 org.chromium.chrome.browser.autofill_assistant.proto
+                                 org.monyhar.chrome.browser.autofill_assistant.proto
                                          .UseCreditCardProto.newBuilder()
                                          .setFormFieldElement(SelectorProto.newBuilder().addFilters(
                                                  SelectorProto.Filter.newBuilder().setCssSelector(
@@ -624,21 +624,21 @@ public class AutofillAssistantPersonalDataManagerTest {
                 withContentDescription("Name on card*"), allOf(isDisplayed(), isEnabled()));
         onView(withContentDescription("Name on card*")).perform(typeText("John Doe"));
         Espresso.closeSoftKeyboard(); // Close keyboard, not to hide the Spinners.
-        onView(allOf(withId(org.chromium.chrome.R.id.spinner),
+        onView(allOf(withId(org.monyhar.chrome.R.id.spinner),
                        withChild(withText(String.valueOf(year)))))
                 .perform(click());
         onData(anything())
                 .atPosition(2 /* select 2 years in the future, 0 is the current year */)
                 .inRoot(withDecorView(withClassName(containsString("Popup"))))
                 .perform(click());
-        onView(allOf(withId(org.chromium.chrome.R.id.spinner), withChild(withText("Select"))))
+        onView(allOf(withId(org.monyhar.chrome.R.id.spinner), withChild(withText("Select"))))
                 .perform(scrollTo(), click());
         onData(anything())
                 .atPosition(1 /* address of Adam, 0 is SELECT (empty) */)
                 .inRoot(withDecorView(withClassName(containsString("Popup"))))
                 .perform(click());
         Espresso.closeSoftKeyboard();
-        onView(withId(org.chromium.chrome.R.id.editor_dialog_done_button))
+        onView(withId(org.monyhar.chrome.R.id.editor_dialog_done_button))
                 .perform(scrollTo(), click());
         waitUntilViewMatchesCondition(allOf(withId(R.id.credit_card_number),
                                               isDescendantOfA(withId(R.id.payment_method_summary))),
@@ -770,7 +770,7 @@ public class AutofillAssistantPersonalDataManagerTest {
                 isCompletelyDisplayed());
         CreditCard card = new CreditCard("", "https://example.com", /* isLocal= */ true,
                 /* isCached= */ true, "John Doe", "4111111111111111", "1111", "12", "2000", "visa",
-                org.chromium.chrome.autofill_assistant.R.drawable.visa_card, profileId,
+                org.monyhar.chrome.autofill_assistant.R.drawable.visa_card, profileId,
                 /* serverId= */ "");
         mHelper.setCreditCard(card);
         waitUntilViewMatchesCondition(allOf(withText("Card is expired"),
@@ -788,7 +788,7 @@ public class AutofillAssistantPersonalDataManagerTest {
                 .perform(click());
         waitUntilViewMatchesCondition(
                 withContentDescription("Card number*"), allOf(isDisplayed(), isEnabled()));
-        onView(allOf(withId(org.chromium.chrome.R.id.spinner), withChild(withText("2000"))))
+        onView(allOf(withId(org.monyhar.chrome.R.id.spinner), withChild(withText("2000"))))
                 .perform(click());
         // Select 2 years in the future, 0 is the currently invalid year, 1 is the current year.
         onData(anything())
@@ -796,7 +796,7 @@ public class AutofillAssistantPersonalDataManagerTest {
                 .inRoot(withDecorView(withClassName(containsString("Popup"))))
                 .perform(click());
         Espresso.closeSoftKeyboard();
-        onView(withId(org.chromium.chrome.R.id.editor_dialog_done_button))
+        onView(withId(org.monyhar.chrome.R.id.editor_dialog_done_button))
                 .perform(scrollTo(), click());
         // Updating the card does not collapse the card section.
         waitUntilViewMatchesCondition(allOf(withId(R.id.credit_card_number),
@@ -908,7 +908,7 @@ public class AutofillAssistantPersonalDataManagerTest {
         onView(withContentDescription("Edit card")).perform(click());
         waitUntilViewMatchesCondition(withText("Billing address*"), isDisplayed());
         // TODO(b/155624806) edit billing address and fill/check values on test website.
-        onView(withId(org.chromium.chrome.R.id.payments_edit_cancel_button)).perform(click());
+        onView(withId(org.monyhar.chrome.R.id.payments_edit_cancel_button)).perform(click());
     }
 
     /**
@@ -977,7 +977,7 @@ public class AutofillAssistantPersonalDataManagerTest {
         waitUntilViewMatchesCondition(
                 withContentDescription("Card number*"), allOf(isDisplayed(), isEnabled()));
         Espresso.closeSoftKeyboard();
-        onView(allOf(withId(org.chromium.chrome.R.id.spinner), withChild(withText("Select"))))
+        onView(allOf(withId(org.monyhar.chrome.R.id.spinner), withChild(withText("Select"))))
                 .perform(scrollTo(), click());
     }
 
@@ -1043,7 +1043,7 @@ public class AutofillAssistantPersonalDataManagerTest {
         onView(withContentDescription("ZIP code*")).perform(scrollTo(), typeText("1234"));
         onView(withContentDescription("Phone*")).perform(scrollTo(), typeText("8008080808"));
         Espresso.closeSoftKeyboard();
-        onView(withId(org.chromium.chrome.R.id.editor_dialog_done_button))
+        onView(withId(org.monyhar.chrome.R.id.editor_dialog_done_button))
                 .perform(scrollTo(), click());
         // First round: Invalid state.
         waitUntilViewMatchesCondition(
@@ -1064,7 +1064,7 @@ public class AutofillAssistantPersonalDataManagerTest {
         onView(withContentDescription("State*"))
                 .perform(scrollTo(), clearText(), typeText("California"));
         Espresso.closeSoftKeyboard();
-        onView(withId(org.chromium.chrome.R.id.editor_dialog_done_button))
+        onView(withId(org.monyhar.chrome.R.id.editor_dialog_done_button))
                 .perform(scrollTo(), click());
         // Second round: Complete.
         waitUntilViewMatchesCondition(

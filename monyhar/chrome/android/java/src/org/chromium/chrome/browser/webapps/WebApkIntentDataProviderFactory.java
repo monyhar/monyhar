@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps;
+package org.monyhar.chrome.browser.webapps;
 
-import static org.chromium.components.webapk.lib.common.WebApkConstants.WEBAPK_PACKAGE_PREFIX;
-import static org.chromium.webapk.lib.common.WebApkConstants.EXTRA_SPLASH_PROVIDED_BY_WEBAPK;
-import static org.chromium.webapk.lib.common.WebApkConstants.EXTRA_WEBAPK_SELECTED_SHARE_TARGET_ACTIVITY_CLASS_NAME;
+import static org.monyhar.components.webapk.lib.common.WebApkConstants.WEBAPK_PACKAGE_PREFIX;
+import static org.monyhar.webapk.lib.common.WebApkConstants.EXTRA_SPLASH_PROVIDED_BY_WEBAPK;
+import static org.monyhar.webapk.lib.common.WebApkConstants.EXTRA_WEBAPK_SELECTED_SHARE_TARGET_ACTIVITY_CLASS_NAME;
 
 import android.content.Context;
 import android.content.Intent;
@@ -27,27 +27,27 @@ import androidx.browser.trusted.sharing.ShareData;
 
 import org.xmlpull.v1.XmlPullParser;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.Log;
-import org.chromium.base.PackageManagerUtils;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.ShortcutHelper;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.browserservices.intents.WebApkDistributor;
-import org.chromium.chrome.browser.browserservices.intents.WebApkExtras;
-import org.chromium.chrome.browser.browserservices.intents.WebApkExtras.ShortcutItem;
-import org.chromium.chrome.browser.browserservices.intents.WebApkShareTarget;
-import org.chromium.chrome.browser.browserservices.intents.WebDisplayMode;
-import org.chromium.chrome.browser.browserservices.intents.WebappExtras;
-import org.chromium.chrome.browser.browserservices.intents.WebappIcon;
-import org.chromium.components.webapk.lib.common.WebApkMetaDataKeys;
-import org.chromium.components.webapps.ShortcutSource;
-import org.chromium.device.mojom.ScreenOrientationLockType;
-import org.chromium.webapk.lib.common.WebApkCommonUtils;
-import org.chromium.webapk.lib.common.WebApkMetaDataUtils;
-import org.chromium.webapk.lib.common.splash.SplashLayout;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.PackageManagerUtils;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.ShortcutHelper;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.browserservices.intents.WebApkDistributor;
+import org.monyhar.chrome.browser.browserservices.intents.WebApkExtras;
+import org.monyhar.chrome.browser.browserservices.intents.WebApkExtras.ShortcutItem;
+import org.monyhar.chrome.browser.browserservices.intents.WebApkShareTarget;
+import org.monyhar.chrome.browser.browserservices.intents.WebDisplayMode;
+import org.monyhar.chrome.browser.browserservices.intents.WebappExtras;
+import org.monyhar.chrome.browser.browserservices.intents.WebappIcon;
+import org.monyhar.components.webapk.lib.common.WebApkMetaDataKeys;
+import org.monyhar.components.webapps.ShortcutSource;
+import org.monyhar.device.mojom.ScreenOrientationLockType;
+import org.monyhar.webapk.lib.common.WebApkCommonUtils;
+import org.monyhar.webapk.lib.common.WebApkMetaDataUtils;
+import org.monyhar.webapk.lib.common.splash.SplashLayout;
 
 import java.util.ArrayList;
 import java.util.HashMap;

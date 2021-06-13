@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.bytecode;
+package org.monyhar.bytecode;
 
 import org.objectweb.asm.ClassReader;
 
@@ -52,7 +52,7 @@ public class ClassPathValidator {
             throws ClassNotLoadedException {
         if (className.startsWith("[")) {
             // Dealing with an array type which isn't encoded nicely in the constant pool.
-            // For example, [[Lorg/chromium/Class$1;
+            // For example, [[Lorg/monyhar/Class$1;
             className = className.substring(className.lastIndexOf('[') + 1);
             if (className.charAt(0) == 'L' && className.endsWith(";")) {
                 className = className.substring(1, className.length() - 1);

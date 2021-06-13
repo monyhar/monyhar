@@ -18,7 +18,7 @@
 #include <cmath>
 #include <vector>
 
-#include "third_party/private-join-and-compute/src/chromium_patch.h"
+#include "third_party/private-join-and-compute/src/monyhar_patch.h"
 #include "third_party/private-join-and-compute/src/crypto/context.h"
 #include "third_party/private-join-and-compute/src/crypto/openssl.inc"
 #include "third_party/private-join-and-compute/src/util/status.inc"

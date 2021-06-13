@@ -109,10 +109,10 @@ def FetchTraces(job_id):
   The structure of the directory is like:
     ~/.local/share/pinpoint_traces/latest/
     ├── job_results.csv
-    ├── chromium@4efc7af
+    ├── monyhar@4efc7af
     │   ├── trace1.html
     │   ├── trace2.html
-    ├── chromium@5707819
+    ├── monyhar@5707819
     │   ├── trace3.html
     │   │
     │   ...
@@ -232,7 +232,7 @@ def ExtractFromOneTraceThrowing(args):
 
     ~/.local/share/pinpoint_traces/latest/
     ├── job_results.csv
-    ├── chromium@4efc7af
+    ├── monyhar@4efc7af
     │   ├── trace1.html
     │   ├── trace2.html
     │   └── json_cache
@@ -243,7 +243,7 @@ def ExtractFromOneTraceThrowing(args):
     │       │   ├── json
     │       │   ├── json.1
     │       │   └── json.2
-    ├── chromium@5707819
+    ├── monyhar@5707819
     │   │
     │   ...
     ...
@@ -255,7 +255,7 @@ def ExtractFromOneTraceThrowing(args):
 
   Args: (passed as a single tuple to allow easier posting to subprocess.Pool)
     label: (str) A label corresponding to the revision of the code, for example,
-        'chromium@4efc7af'.
+        'monyhar@4efc7af'.
     trace_index: (int) The number uniquely identifying the trace html that the
         JSON was generated from.
     html_trace: (str) Path to the original downloaded trace file.

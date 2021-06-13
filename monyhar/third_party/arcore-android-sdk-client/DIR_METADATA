@@ -2,6 +2,6 @@ monorail {
   component: "Internals>XR>AR"
 }
 
-team_email: "xr-dev@chromium.org"
+team_email: "xr-dev@monyhar.org"
 
 os: ANDROID

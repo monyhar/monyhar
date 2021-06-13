@@ -6,7 +6,7 @@
 
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="{{manifest_package|default('org.chromium.webview_shell')}}"
+    package="{{manifest_package|default('org.monyhar.webview_shell')}}"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -35,37 +35,37 @@
         <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing"
             android:value="true" />
         <activity
-            android:name="org.chromium.webview_shell.TelemetryActivity"
+            android:name="org.monyhar.webview_shell.TelemetryActivity"
             android:launchMode="singleTask"
             android:label="@string/title_activity_telemetry"
             android:exported="true">
         </activity>
         <activity
-            android:name="org.chromium.webview_shell.TelemetryMemoryPressureActivity"
+            android:name="org.monyhar.webview_shell.TelemetryMemoryPressureActivity"
             android:launchMode="singleTask"
             android:label="@string/title_activity_telemetry"
             android:exported="true">
         </activity>
         <activity
-            android:name="org.chromium.webview_shell.JankActivity"
+            android:name="org.monyhar.webview_shell.JankActivity"
             android:label="@string/title_activity_jank"
             android:noHistory="true"
             android:exported="true">
         </activity>
         <activity
-            android:name="org.chromium.webview_shell.StartupTimeActivity"
+            android:name="org.monyhar.webview_shell.StartupTimeActivity"
             android:label="@string/title_activity_startup_time"
             android:noHistory="true"
             android:exported="true">
         </activity>
         <activity
-            android:name="org.chromium.webview_shell.WebViewCreateDestroyActivity"
+            android:name="org.monyhar.webview_shell.WebViewCreateDestroyActivity"
             android:launchMode="singleTask"
             android:label="@string/title_activity_create_destroy"
             android:exported="true">
         </activity>
         <activity
-            android:name="org.chromium.webview_shell.WebViewBrowserActivity"
+            android:name="org.monyhar.webview_shell.WebViewBrowserActivity"
             android:label="@string/title_activity_browser"
             android:exported="true"
             android:windowSoftInputMode="adjustResize"
@@ -98,7 +98,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="org.chromium.webview_shell.WebViewBrowserSecondProcessActivity"
+            android:name="org.monyhar.webview_shell.WebViewBrowserSecondProcessActivity"
             android:process=":second_process"
             android:label="@string/title_activity_browser_second_process"
             android:exported="true"
@@ -107,39 +107,39 @@
             android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|density">
         </activity>
         <activity
-            android:name="org.chromium.webview_shell.WebViewLayoutTestActivity"
+            android:name="org.monyhar.webview_shell.WebViewLayoutTestActivity"
             android:label="@string/title_activity_layout_test"
             android:exported="true">
         </activity>
         <activity
-            android:name="org.chromium.webview_shell.WebViewThreadTestActivity"
+            android:name="org.monyhar.webview_shell.WebViewThreadTestActivity"
             android:label="@string/title_activity_thread_test"
             android:exported="true">
         </activity>
-        <activity android:name="org.chromium.test.broker.OnDeviceInstrumentationBroker"
+        <activity android:name="org.monyhar.test.broker.OnDeviceInstrumentationBroker"
             android:exported="true"/>
 
         <activity
-            android:name="org.chromium.webview_shell.PageCyclerTestActivity"
+            android:name="org.monyhar.webview_shell.PageCyclerTestActivity"
             android:label="@string/title_activity_page_cycler"
             android:exported="true">
         </activity>
 
         <activity
-            android:name="org.chromium.webview_shell.WebViewTracingActivity"
+            android:name="org.monyhar.webview_shell.WebViewTracingActivity"
             android:label="@string/title_activity_telemetry"
             android:noHistory="true"
             android:exported="true">
         </activity>
 
         <activity
-            android:name="org.chromium.webview_shell.WebViewAnimationTestActivity"
+            android:name="org.monyhar.webview_shell.WebViewAnimationTestActivity"
             android:noHistory="true"
             android:exported="true">
         </activity>
 
         <activity
-            android:name="org.chromium.webview_shell.WebPlatformTestsActivity"
+            android:name="org.monyhar.webview_shell.WebPlatformTestsActivity"
             android:noHistory="true"
             android:exported="true">
         </activity>

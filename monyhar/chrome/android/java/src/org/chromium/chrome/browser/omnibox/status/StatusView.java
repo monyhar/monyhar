@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.status;
+package org.monyhar.chrome.browser.omnibox.status;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -24,13 +24,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.omnibox.LocationBarDataProvider;
-import org.chromium.chrome.browser.omnibox.SearchEngineLogoUtils;
-import org.chromium.components.browser_ui.widget.CompositeTouchDelegate;
-import org.chromium.components.browser_ui.widget.animation.Interpolators;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.omnibox.LocationBarDataProvider;
+import org.monyhar.chrome.browser.omnibox.SearchEngineLogoUtils;
+import org.monyhar.components.browser_ui.widget.CompositeTouchDelegate;
+import org.monyhar.components.browser_ui.widget.animation.Interpolators;
+import org.monyhar.ui.widget.Toast;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

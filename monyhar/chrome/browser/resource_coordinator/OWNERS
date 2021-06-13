@@ -1,9 +1,9 @@
 file://services/resource_coordinator/OWNERS
 
-fdoray@chromium.org
+fdoray@monyhar.org
 
 # ChromeOS tab manager related implementation.
-per-file *chromeos*=vovoy@chromium.org
+per-file *chromeos*=vovoy@monyhar.org
 
 per-file *.mojom=set noparent
 per-file *.mojom=file://ipc/SECURITY_OWNERS

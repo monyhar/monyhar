@@ -68,12 +68,12 @@ suite(destination_settings_test.suiteName, function() {
   let isDriveMounted = true;
 
   /** @type {string} */
-  const defaultUser = 'foo@chromium.org';
+  const defaultUser = 'foo@monyhar.org';
 
   /** @type {string} */
   const driveDestinationKey = isChromeOS || isLacros ?
       'Save to Drive CrOS/local/' :
-      '__google__docs/cookies/foo@chromium.org';
+      '__google__docs/cookies/foo@monyhar.org';
 
   /** @override */
   suiteSetup(function() {
@@ -666,7 +666,7 @@ suite(destination_settings_test.suiteName, function() {
   test(
       assert(destination_settings_test.TestNames.TwoAccountsRecentDestinations),
       function() {
-        const account2 = 'bar@chromium.org';
+        const account2 = 'bar@monyhar.org';
         const driveUser1 = getGoogleDriveDestination(defaultUser);
         const driveUser2 = getGoogleDriveDestination(account2);
         const cloudPrinterUser1 = new Destination(
@@ -702,7 +702,7 @@ suite(destination_settings_test.suiteName, function() {
               assertEquals('FooCloud', destinationSettings.destination.id);
               assertFalse(dropdown.disabled);
               const dropdownItems = [
-                'FooCloud/cookies/foo@chromium.org',
+                'FooCloud/cookies/foo@monyhar.org',
                 makeLocalDestinationKey('ID1'),
                 'Save as PDF/local/',
               ];
@@ -730,7 +730,7 @@ suite(destination_settings_test.suiteName, function() {
             })
             .then(() => {
               const dropdownItems = [
-                'BarCloud/cookies/bar@chromium.org',
+                'BarCloud/cookies/bar@monyhar.org',
                 makeLocalDestinationKey('ID1'),
                 'Save as PDF/local/',
               ];

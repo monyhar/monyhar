@@ -5,7 +5,7 @@
 syntax = "proto2";
 
 option optimize_for = LITE_RUNTIME;
-option java_package = "org.chromium.components.optimization_guide.proto";
+option java_package = "org.monyhar.components.optimization_guide.proto";
 option java_outer_classname = "PerformanceHintsMetadataProto";
 
 package optimization_guide.proto;
@@ -26,7 +26,7 @@ message PerformanceHint {
   oneof key {
     // Uses wildcard strings (e.g. "https://google.com/*/page.html") to match
     // URLs. See the following code for more information:
-    // https://cs.chromium.org/chromium/src/components/optimization_guide/url_pattern_with_wildcards.h
+    // https://cs.monyhar.org/monyhar/src/components/optimization_guide/url_pattern_with_wildcards.h
     string wildcard_pattern = 1;
   }
 

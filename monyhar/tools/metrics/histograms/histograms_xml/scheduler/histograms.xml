@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of others histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -25,8 +25,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="2021-04-04">
 <!-- Name completed by histogram_suffixes name="CancelableTaskTrackerDurationTypes" -->
 
-  <owner>wez@chromium.org</owner>
-  <owner>scheduler-dev@chromium.org</owner>
+  <owner>wez@monyhar.org</owner>
+  <owner>scheduler-dev@monyhar.org</owner>
   <summary>
     Time taken for a task posted to a CancelableTaskTracker to run. Durations
     are not recorded for tasks skipped due to having been canceled.
@@ -35,8 +35,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Scheduler.CancelableTaskTracker.TaskStatus"
     enum="CancelableTaskStatus" expires_after="2021-04-04">
-  <owner>wez@chromium.org</owner>
-  <owner>scheduler-dev@chromium.org</owner>
+  <owner>wez@monyhar.org</owner>
+  <owner>scheduler-dev@monyhar.org</owner>
   <summary>
     Records whether a task posted to CancelableTaskTracker was canceled before
     it got the chance to run, and whether it was same-sequence or off-sequence.
@@ -50,8 +50,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="2020-12-01">
 <!-- Name completed by histogram_suffixes name="Scheduler.DOMScheduler.Priority" -->
 
-  <owner>kdillon@chromium.org</owner>
-  <owner>shaseley@chromium.org</owner>
+  <owner>kdillon@monyhar.org</owner>
+  <owner>shaseley@monyhar.org</owner>
   <summary>
     Queueing time of a task posted via the postTask API. Reported when the task
     is starts and bycked by priority. Tasks who have had their priority changed
@@ -61,8 +61,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Scheduler.DOMScheduler.TaskSignalPriorityWasChanged"
     enum="PriorityChangeStatus" expires_after="2020-12-01">
-  <owner>kdillon@chromium.org</owner>
-  <owner>shaseley@chromium.org</owner>
+  <owner>kdillon@monyhar.org</owner>
+  <owner>shaseley@monyhar.org</owner>
   <summary>
     Records whether or not a task posted via scheduler.postTask had it's
     priority changed. Records when the task is started.
@@ -71,7 +71,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Scheduler.Experimental.CPUTimePerThread"
     enum="SchedulerThreadType" expires_after="M81">
-  <owner>altimin@chromium.org</owner>
+  <owner>altimin@monyhar.org</owner>
   <summary>
     Total wall time of all tasks in scheduler-managed threads split per thread.
 
@@ -83,7 +83,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="Scheduler.Experimental.Renderer.CPUTimePerThread"
     enum="RendererSchedulerThreadType" expires_after="M85">
-  <owner>altimin@chromium.org</owner>
+  <owner>altimin@monyhar.org</owner>
   <summary>
     Total cpu time of scheduler-managed threads in the renderer process.
 
@@ -101,7 +101,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram base="true"
     name="Scheduler.Experimental.Renderer.TotalTime.Wall.MainThread" units="s"
     expires_after="M81">
-  <owner>altimin@chromium.org</owner>
+  <owner>altimin@monyhar.org</owner>
   <summary>
     Sum of durations of all scheduler-managed tasks in the renderer process.
 
@@ -115,7 +115,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Scheduler.Experimental.Renderer.UkmRecordingStatus"
     enum="SchedulerUkmRecordingStatus" expires_after="M81">
-  <owner>altimin@chromium.org</owner>
+  <owner>altimin@monyhar.org</owner>
   <summary>
     The results of the attempts to sample scheduling tasks into the UKM. Used to
     ensure that we're not silently dropping tasks, which can lead to biases in
@@ -127,7 +127,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Scheduler.Experimental.WallTimePerThread"
     enum="SchedulerThreadType" expires_after="M77">
-  <owner>altimin@chromium.org</owner>
+  <owner>altimin@monyhar.org</owner>
   <summary>
     Total wall time of all tasks in scheduler-managed threads split per thread.
 
@@ -139,7 +139,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Scheduling.BeginImplFrameLatency2" units="microseconds"
     expires_after="M85">
-  <owner>stanisc@chromium.org</owner>
+  <owner>stanisc@monyhar.org</owner>
   <summary>
     The time from v-sync to when the main side actually starts the
     BeginImplFrame.
@@ -154,8 +154,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Scheduling.CommitToReadyToActivateDuration2"
     units="microseconds" expires_after="M85">
-  <owner>vmiura@chromium.org</owner>
-  <owner>sadrul@chromium.org</owner>
+  <owner>vmiura@monyhar.org</owner>
+  <owner>sadrul@monyhar.org</owner>
   <summary>
     How long it takes for the compositor to rasterize pending tree content after
     a commit before it is ready for activation.
@@ -170,8 +170,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Scheduling.DrawDuration2" units="microseconds"
     expires_after="M85">
-  <owner>vmiura@chromium.org</owner>
-  <owner>sadrul@chromium.org</owner>
+  <owner>vmiura@monyhar.org</owner>
+  <owner>sadrul@monyhar.org</owner>
   <summary>
     How long it takes the compositor to draw a frame.
 
@@ -185,8 +185,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Scheduling.InvalidationToReadyToActivateDuration2"
     units="microseconds" expires_after="M85">
-  <owner>vmiura@chromium.org</owner>
-  <owner>sadrul@chromium.org</owner>
+  <owner>vmiura@monyhar.org</owner>
+  <owner>sadrul@monyhar.org</owner>
   <summary>
     How long it takes for the compositor to rasterize pending tree content after
     an impl-side invalidation before it is ready for activation.
@@ -204,8 +204,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed M90.
   </obsolete>
-  <owner>vmiura@chromium.org</owner>
-  <owner>sadrul@chromium.org</owner>
+  <owner>vmiura@monyhar.org</owner>
+  <owner>sadrul@monyhar.org</owner>
   <summary>
     How long it takes the compositor to PreapreTiles, which determines what
     rasterization work to do.
@@ -220,8 +220,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Scheduling.Renderer.BeginMainFrameQueueDurationNotCritical2"
     units="microseconds" expires_after="M77">
-  <owner>vmiura@chromium.org</owner>
-  <owner>sadrul@chromium.org</owner>
+  <owner>vmiura@monyhar.org</owner>
+  <owner>sadrul@monyhar.org</owner>
   <summary>
     How long it takes for the main side to start the BeginMainFrame in response
     to the compositor's SendBeginMainFrame when the on_critical_path flag is not
@@ -239,9 +239,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: guiding metric (internal: go/chrome-browser-guiding-metrics) -->
 
-  <owner>vmiura@chromium.org</owner>
-  <owner>sadrul@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>vmiura@monyhar.org</owner>
+  <owner>sadrul@monyhar.org</owner>
+  <owner>speed-metrics-dev@monyhar.org</owner>
   <owner>chrome-analysis-team@google.com</owner>
   <summary>
     The time delta between the draw times of back-to-back BeginImplFrames,
@@ -250,7 +250,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     The interval is only recorded when every BeginImplFrame wants to draw.
 
     Do not modify this metric in any way without contacting
-    speed-metrics-dev@chromium.org AND chrome-analysis-team@google.com.
+    speed-metrics-dev@monyhar.org AND chrome-analysis-team@google.com.
 
     Warning: This metric may include reports from clients with low-resolution
     clocks (i.e. on Windows, ref. |TimeTicks::IsHighResolution()|). Such reports
@@ -262,8 +262,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Scheduling.Renderer.DrawIntervalWithCustomPropertyAnimations2"
     units="microseconds" expires_after="2022-02-01">
-  <owner>xidachen@chromium.org</owner>
-  <owner>animations-dev@chromium.org</owner>
+  <owner>xidachen@monyhar.org</owner>
+  <owner>animations-dev@monyhar.org</owner>
   <summary>
     The time delta between the draw times of back-to-back BeginImplFrames,
     regardless of whether or not they result in a swap, when there is at least
@@ -281,7 +281,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Scheduling.Renderer.PendingTreeRasterDuration"
     units="microseconds" expires_after="2020-02-16">
-  <owner>khushalsagar@chromium.org</owner>
+  <owner>khushalsagar@monyhar.org</owner>
   <summary>
     Time between starting raster work on the pending tree and when it is ready
     to activate. Unlike PendingTreeDuration which - includes the time to commit
@@ -305,8 +305,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed M90.
   </obsolete>
-  <owner>vmiura@chromium.org</owner>
-  <owner>sadrul@chromium.org</owner>
+  <owner>vmiura@monyhar.org</owner>
+  <owner>sadrul@monyhar.org</owner>
   <summary>
     How long it takes the swap ack to return after a swap.
 
@@ -323,9 +323,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 10/2020. Not actively used.
   </obsolete>
-  <owner>fdoray@chromium.org</owner>
-  <owner>gab@chromium.org</owner>
-  <owner>robliao@chromium.org</owner>
+  <owner>fdoray@monyhar.org</owner>
+  <owner>gab@monyhar.org</owner>
+  <owner>robliao@monyhar.org</owner>
   <summary>
     Time elapsed between when the thread managed by a SchedulerWorker is
     detached and when the main function of a new thread managed by the same
@@ -339,9 +339,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 11/2020. Not actively used.
   </obsolete>
-  <owner>fdoray@chromium.org</owner>
-  <owner>gab@chromium.org</owner>
-  <owner>robliao@chromium.org</owner>
+  <owner>fdoray@monyhar.org</owner>
+  <owner>gab@monyhar.org</owner>
+  <owner>robliao@monyhar.org</owner>
   <summary>
     Latency of dummy &quot;heartbeat&quot; tasks posted with specific traits
     (see suffix). The heartbeat recording avoids dependencies between this
@@ -359,9 +359,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="ThreadPool.NumTasksBeforeDetach" units="tasks"
     expires_after="M85">
-  <owner>fdoray@chromium.org</owner>
-  <owner>gab@chromium.org</owner>
-  <owner>robliao@chromium.org</owner>
+  <owner>fdoray@monyhar.org</owner>
+  <owner>gab@monyhar.org</owner>
+  <owner>robliao@monyhar.org</owner>
   <summary>
     Number of tasks executed by a SchedulerWorker before it detached. Recorded
     when a SchedulerWorker detaches.
@@ -373,7 +373,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 10/2020. Not actively used.
   </obsolete>
-  <owner>fdoray@chromium.org</owner>
+  <owner>fdoray@monyhar.org</owner>
   <summary>
     Number of tasks run by ThreadPool while task was queuing (from time task was
     posted until time it was run). Recorded for dummy &quot;heartbeat&quot;
@@ -388,9 +388,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 10/2020. Not actively used.
   </obsolete>
-  <owner>fdoray@chromium.org</owner>
-  <owner>gab@chromium.org</owner>
-  <owner>robliao@chromium.org</owner>
+  <owner>fdoray@monyhar.org</owner>
+  <owner>gab@monyhar.org</owner>
+  <owner>robliao@monyhar.org</owner>
   <summary>
     Time elapsed between when a task is posted and when it starts to run.
     Recorded for each task that runs inside the ThreadPool.

@@ -43,7 +43,7 @@ const std::vector<base::Feature> kEnabledFeaturesForVideoEncoderTest = {
 
 const std::vector<base::Feature> kDisabledFeaturesForVideoEncoderTest = {
     // FFmpegVideoDecoder is used for vp8 stream whose alpha mode is opaque in
-    // chromium browser. However, VpxVideoDecoder will be used to decode any vp8
+    // monyhar browser. However, VpxVideoDecoder will be used to decode any vp8
     // stream for the rightness (b/138840822), and currently be experimented
     // with this feature flag. We disable the feature to use VpxVideoDecoder to
     // decode any vp8 stream in BitstreamValidator.

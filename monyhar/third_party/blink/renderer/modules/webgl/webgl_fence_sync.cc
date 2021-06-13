@@ -4,7 +4,7 @@
 
 #include "third_party/blink/renderer/modules/webgl/webgl_fence_sync.h"
 
-#include <GLES2/gl2extchromium.h>
+#include <GLES2/gl2extmonyhar.h>
 #include "gpu/command_buffer/client/gles2_interface.h"
 #include "third_party/blink/renderer/modules/webgl/webgl2_rendering_context_base.h"
 

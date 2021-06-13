@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.signin.ui;
+package org.monyhar.chrome.browser.signin.ui;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.provider.Browser;
 
-import org.chromium.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.embedder_support.util.UrlConstants;
 
 /**
  * Controls how Google uses Chrome data to personalize Search and other Google services.

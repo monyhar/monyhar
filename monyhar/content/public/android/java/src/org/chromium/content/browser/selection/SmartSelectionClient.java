@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.selection;
+package org.monyhar.content.browser.selection;
 
 import android.content.Context;
 import android.os.Build;
@@ -12,14 +12,14 @@ import android.view.textclassifier.TextClassifier;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.content_public.browser.SelectionClient;
-import org.chromium.content_public.browser.SelectionEventProcessor;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.touch_selection.SelectionEventType;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.content_public.browser.SelectionClient;
+import org.monyhar.content_public.browser.SelectionEventProcessor;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.touch_selection.SelectionEventType;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

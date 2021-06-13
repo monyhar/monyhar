@@ -11,13 +11,13 @@ namespace chrome_checker {
 namespace {
 
 const char kWriteParamBadType[] =
-    "[chromium-ipc] IPC::WriteParam() is called on blacklisted type '%0'%1.";
+    "[monyhar-ipc] IPC::WriteParam() is called on blacklisted type '%0'%1.";
 
 const char kTupleBadType[] =
-    "[chromium-ipc] IPC tuple references banned type '%0'%1.";
+    "[monyhar-ipc] IPC tuple references banned type '%0'%1.";
 
 const char kWriteParamBadSignature[] =
-    "[chromium-ipc] IPC::WriteParam() is expected to have two arguments.";
+    "[monyhar-ipc] IPC::WriteParam() is expected to have two arguments.";
 
 const char kNoteSeeHere[] =
     "see here";

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer.test;
+package org.monyhar.weblayer.test;
 
 import android.app.Activity;
 import android.content.Context;
@@ -12,8 +12,8 @@ import android.text.TextUtils;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.test.BaseActivityTestRule;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.test.BaseActivityTestRule;
 
 import java.io.File;
 import java.io.OutputStreamWriter;

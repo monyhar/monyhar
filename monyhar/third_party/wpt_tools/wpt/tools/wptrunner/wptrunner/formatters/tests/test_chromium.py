@@ -6,10 +6,10 @@ from io import StringIO
 from mozlog import handlers, structuredlog
 
 sys.path.insert(0, join(dirname(__file__), "..", ".."))
-from formatters.chromium import ChromiumFormatter
+from formatters.monyhar import ChromiumFormatter
 
 
-def test_chromium_required_fields(capfd):
+def test_monyhar_required_fields(capfd):
     # Test that the test results contain a handful of required fields.
 
     # Set up the handler.
@@ -45,7 +45,7 @@ def test_chromium_required_fields(capfd):
     assert "expected" in test_obj
 
 
-def test_chromium_test_name_trie(capfd):
+def test_monyhar_test_name_trie(capfd):
     # Ensure test names are broken into directories and stored in a trie with
     # test results at the leaves.
 

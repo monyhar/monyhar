@@ -363,7 +363,7 @@
 
       このポリシーを設定しない場合、プロンプトを表示せずにプロトコルを実行することはデフォルトで許可されません。<ph name="EXTERNAL_PROTOCOL_DIALOG_SHOW_ALWAYS_OPEN_CHECKBOX_POLICY_NAME" /> ポリシーが無効に設定されていない場合、ユーザーはプロトコルやサイト単位でプロンプト表示を無効にできます。このポリシーは、ユーザーがプロトコルやサイト単位で設定したプロンプト表示の無効化に影響しません。
 
-      提供元の一致パターンは、<ph name="URL_BLOCKLIST_POLICY_NAME" /> ポリシーと同様の形式で指定します。詳しくは、http://www.chromium.org/administrators/url-blocklist-filter-format をご覧ください。
+      提供元の一致パターンは、<ph name="URL_BLOCKLIST_POLICY_NAME" /> ポリシーと同様の形式で指定します。詳しくは、http://www.monyhar.org/administrators/url-blocklist-filter-format をご覧ください。
 
       ただし、このポリシーの提供元の一致パターンに「/path」要素や「@query」要素を含めることはできません。「/path」要素や「@query」要素が含まれているパターンは無視されます。</translation>
 <translation id="1509377996969000672">このポリシーでは、デバイスに接続された企業プリンタの設定を指定できます。フォーマットは <ph name="NATIVE_PRINTERS_POLICY_NAME" /> ディクショナリと一致させ、許可リストまたは拒否リストに登録するプリンタごとに「id」または「guid」フィールドを追加で指定する必要があります。ファイルのサイズは 5 MB 以下とし、JSON 形式にします。5 MB は、約 21,000 台のプリンタを指定してエンコードしたファイルに相当します。ダウンロードの整合性の確認には暗号化ハッシュが使用されます。このファイルはダウンロードされた後、キャッシュされ、URL またはハッシュに変更があった場合は再度ダウンロードされます。<ph name="PRODUCT_OS_NAME" /> ではプリンタ設定ファイルがダウンロードされ、<ph name="DEVICE_PRINTERS_ACCESS_MODE_POLICY_NAME" />、<ph name="DEVICE_PRINTERS_ALLOWLIST_POLICY_NAME" />、<ph name="DEVICE_PRINTERS_BLOCKLIST_POLICY_NAME" /> に沿ってプリンタが利用可能になります。
@@ -572,7 +572,7 @@
 
        プロキシ ポリシーの設定で他のモードを選択した場合は、このポリシーを未設定のままにしてください。
 
-       注: 詳しい例については、Chromium プロジェクトの説明（https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett）をご覧ください。</translation>
+       注: 詳しい例については、Chromium プロジェクトの説明（https://www.monyhar.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett）をご覧ください。</translation>
 <translation id="1767673020408652620">検索ボックスが「ゼロ状態」のときにアプリのおすすめを有効にする</translation>
 <translation id="1780323582106687813">このポリシーはサポートが終了しています。代わりに <ph name="EXTENSION_INSTALL_ALLOWLIST_POLICY_NAME" /> ポリシーを使用してください。
 
@@ -1085,7 +1085,7 @@
 
       このポリシーを設定しない場合、<ph name="AUTO_OPEN_FILE_TYPES_POLICY_NAME" /> で指定されているファイル形式のダウンロード ファイルはすべて自動的に開きます。
 
-      URL のパターンは、https://www.chromium.org/administrators/url-blocklist-filter-format の形式で指定する必要があります。</translation>
+      URL のパターンは、https://www.monyhar.org/administrators/url-blocklist-filter-format の形式で指定する必要があります。</translation>
 <translation id="2433516903565257847">特定の日数が経過したときにアップデートを適用するデバイスの割合（%）です。</translation>
 <translation id="2435052056904485763">Kerberos 委任サーバーの許可リスト</translation>
 <translation id="2435232509335686514">ダウンロードされたファイルを処理する <ph name="FILE_SYSTEM_ENTERPRISE_CONNECTOR" /> の設定ポリシー</translation>
@@ -1735,7 +1735,7 @@
 <translation id="3255762580838224124">このポリシーを設定した場合、各ディスプレイは再起動のたびに指定した方向に回転します。ポリシーの値を変更した後、初めて接続したときにも、指定した方向に回転します。ユーザーはログイン後に設定ページからディスプレイの回転方法を変更することができますが、次に再起動したときにはポリシーの値に戻ります。このポリシーは、メインと予備のディスプレイに適用されます。
 
       このポリシーを設定しない場合、デフォルト値として 0 度が使用され、ユーザーはこの値を自由に変更できます。この場合、再起動時にデフォルト値が再適用されることはありません。</translation>
-<translation id="325883417142483505">このポリシーでは、企業のログイン URL のリストを設定できます（HTTP と HTTPS プロトコルのみ）。パスワード保護サービスでは、これらの URL で入力されたパスワードのソルトハッシュを取得し、パスワードの再利用を検出する目的で使用します。<ph name="PRODUCT_NAME" /> でパスワードのソルトハッシュが適切に取得されるようにするには、ログインページが https://www.chromium.org/developers/design-documents/create-amazing-password-forms のガイドラインに沿っていることを確認します。
+<translation id="325883417142483505">このポリシーでは、企業のログイン URL のリストを設定できます（HTTP と HTTPS プロトコルのみ）。パスワード保護サービスでは、これらの URL で入力されたパスワードのソルトハッシュを取得し、パスワードの再利用を検出する目的で使用します。<ph name="PRODUCT_NAME" /> でパスワードのソルトハッシュが適切に取得されるようにするには、ログインページが https://www.monyhar.org/developers/design-documents/create-amazing-password-forms のガイドラインに沿っていることを確認します。
 
       この設定をオフにするか未設定のままにした場合、パスワード保護サービスでは https://accounts.google.com のパスワードのソルトハッシュのみを取得します。
 
@@ -2368,7 +2368,7 @@
 
       このポリシーは、SAML を使用して認証を行うユーザーのみに影響します。</translation>
 <translation id="4105989332710272578">指定した URL に対して証明書の透明性ポリシーの適用を無効にする</translation>
-<translation id="4114059938441379876">このポリシーでは、ブラウザで警告が表示された後にユーザーがパスワードを変更するための URL を設定できます。パスワード保護サービスにより、ユーザーはこのポリシーで指定した URL（HTTP と HTTPS プロトコルのみ）にリダイレクトされます。<ph name="PRODUCT_NAME" /> で、このパスワード変更ページの新しいパスワードのソルトハッシュが適切に取得されるようにするには、パスワード変更ページが https://www.chromium.org/developers/design-documents/create-amazing-password-forms のガイドラインに沿っていることを確認します。
+<translation id="4114059938441379876">このポリシーでは、ブラウザで警告が表示された後にユーザーがパスワードを変更するための URL を設定できます。パスワード保護サービスにより、ユーザーはこのポリシーで指定した URL（HTTP と HTTPS プロトコルのみ）にリダイレクトされます。<ph name="PRODUCT_NAME" /> で、このパスワード変更ページの新しいパスワードのソルトハッシュが適切に取得されるようにするには、パスワード変更ページが https://www.monyhar.org/developers/design-documents/create-amazing-password-forms のガイドラインに沿っていることを確認します。
 
       このポリシーを無効に設定するか未設定のままにした場合、パスワード保護サービスにより、ユーザーは https://myaccount.google.com にリダイレクトされ、パスワードの変更を促されます。
 
@@ -2453,7 +2453,7 @@
 <translation id="4248277954659222481">メディアの自動再生を許可する URL パターンのリストを指定する</translation>
 <translation id="4250680216510889253">いいえ</translation>
 <translation id="4261820385751181068">デバイスのログイン画面の言語 / 地域</translation>
-<translation id="4266547484666068234">このポリシーでは、<ph name="URL_BLOCKLIST_POLICY_NAME" /> の例外としてアクセスを許可する URL のリストを指定できます。リストの指定形式については、このポリシーの説明をご覧ください。このポリシーは、たとえば <ph name="URL_BLOCKLIST_POLICY_NAME" /> で「*」と設定してすべてのリクエストをブロックし、限定された一部の URL のみアクセスを許可する場合に使用します。つまり、特定のスキームや、他のドメインのサブドメイン、ポート、具体的なパスについて例外を設定します。設定の際は、https://www.chromium.org/administrators/url-blocklist-filter-format で指定された形式を使用します。URL をブロックするか許可するかは、最も具体的なフィルタによって決定されます。<ph name="URL_ALLOWLIST_POLICY_NAME" /> ポリシーは、<ph name="URL_BLOCKLIST_POLICY_NAME" /> より優先されます。このポリシーで指定できる URL は最大 1,000 件です。
+<translation id="4266547484666068234">このポリシーでは、<ph name="URL_BLOCKLIST_POLICY_NAME" /> の例外としてアクセスを許可する URL のリストを指定できます。リストの指定形式については、このポリシーの説明をご覧ください。このポリシーは、たとえば <ph name="URL_BLOCKLIST_POLICY_NAME" /> で「*」と設定してすべてのリクエストをブロックし、限定された一部の URL のみアクセスを許可する場合に使用します。つまり、特定のスキームや、他のドメインのサブドメイン、ポート、具体的なパスについて例外を設定します。設定の際は、https://www.monyhar.org/administrators/url-blocklist-filter-format で指定された形式を使用します。URL をブロックするか許可するかは、最も具体的なフィルタによって決定されます。<ph name="URL_ALLOWLIST_POLICY_NAME" /> ポリシーは、<ph name="URL_BLOCKLIST_POLICY_NAME" /> より優先されます。このポリシーで指定できる URL は最大 1,000 件です。
 
       また、このポリシーでは、リストで指定したプロトコル（「tel:」、「ssh:」など）のプロトコル ハンドラとして登録されている外部アプリケーションをブラウザから自動で呼び出すことも許可できます。
 
@@ -2612,7 +2612,7 @@
 
       このポリシーを未設定のままにした場合、Chrome ではデフォルトのダウンロード ディレクトリが使用され、ユーザーはこの設定を変更できます。
 
-      注: 使用できる変数の一覧については、https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables をご覧ください。</translation>
+      注: 使用できる変数の一覧については、https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables をご覧ください。</translation>
 <translation id="4531706050939927436">Android アプリを強制的にインストールするには、Google 管理コンソールで Google Play からのインストールを指定します。Android アプリでこのポリシーは使用されません。</translation>
 <translation id="4534500438517478692">Android の制限名:</translation>
 <translation id="4541530620466526913">デバイスのローカル アカウント</translation>
@@ -2664,7 +2664,7 @@
 
       このポリシーを設定し、<ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> ポリシーが有効な場合、<ph name="PRODUCT_NAME" /> では、指定のディレクトリにプロフィールのローミング コピーが保存されます。<ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> ポリシーが無効または未設定の場合、このポリシーで保存した値は使用されません。
 
-      使用できる変数のリストについては、https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables をご覧ください。
+      使用できる変数のリストについては、https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables をご覧ください。
 
       Windows 以外のプラットフォームの場合、このポリシーを作業用のローミング プロフィールに設定する必要があります。
 
@@ -2728,7 +2728,7 @@
 
           このポリシーが未設定の場合は、「ChromeFrameRendererSettings」ポリシーで指定されているデフォルトのレンダラがすべてのサイトで使用されます。
 
-          パターンの例については、https://www.chromium.org/developers/how-tos/chrome-frame-getting-started をご覧ください。</translation>
+          パターンの例については、https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started をご覧ください。</translation>
 <translation id="467449052039111439">URL のリストを開く</translation>
 <translation id="4674871290487541952">拡張機能の更新とインストール時の整合性チェックで安全でないアルゴリズムを許可する</translation>
 <translation id="4680936297850947973">M68 でサポートを終了します。代わりに DefaultPopupsSetting を使用してください。
@@ -2830,7 +2830,7 @@
 <translation id="4876805738539874299">有効な SSL の最大バージョン</translation>
 <translation id="4877402532842958110">このポリシーはサポートが終了しています。代わりに <ph name="URL_ALLOWLIST_POLICY_NAME" /> ポリシーを使用してください。
 
-      このポリシーでは、URL 拒否リストの例外としてアクセスを許可する URL のリストを指定できます。リストの指定形式については、このポリシーの説明をご覧ください。このポリシーは、たとえば <ph name="URL_BLOCKLIST_POLICY_NAME" /> で「*」と設定してすべてのリクエストをブロックし、限定された一部の URL のみアクセスを許可する場合に使用します。つまり、特定のスキームや、他のドメインのサブドメイン、ポート、具体的なパスについて例外を設定します。設定の際は、https://www.chromium.org/administrators/url-blocklist-filter-format で指定された形式を使用します。URL をブロックするか許可するかは、最も具体的なフィルタによって決定されます。許可リストは拒否リストより優先されます。このポリシーで指定できる URL は最大 1,000 件です。
+      このポリシーでは、URL 拒否リストの例外としてアクセスを許可する URL のリストを指定できます。リストの指定形式については、このポリシーの説明をご覧ください。このポリシーは、たとえば <ph name="URL_BLOCKLIST_POLICY_NAME" /> で「*」と設定してすべてのリクエストをブロックし、限定された一部の URL のみアクセスを許可する場合に使用します。つまり、特定のスキームや、他のドメインのサブドメイン、ポート、具体的なパスについて例外を設定します。設定の際は、https://www.monyhar.org/administrators/url-blocklist-filter-format で指定された形式を使用します。URL をブロックするか許可するかは、最も具体的なフィルタによって決定されます。許可リストは拒否リストより優先されます。このポリシーで指定できる URL は最大 1,000 件です。
 
       また、このポリシーでは、リストで指定したプロトコル（「tel:」、「ssh:」など）のプロトコル ハンドラとして登録されている外部アプリケーションをブラウザから自動で呼び出すことも許可できます。
 
@@ -3745,7 +3745,7 @@
 
       設定しない場合、<ph name="PRODUCT_NAME" /> ではデフォルトのキャッシュ ディレクトリが使用されますが、ユーザーは「--disk-cache-dir」コマンドライン フラグを使って設定を変更できます。
 
-      <ph name="PRODUCT_NAME" /> では、ボリュームのルート ディレクトリのコンテンツが管理されます。したがって、データの消失やその他のエラーを避けるため、ルート ディレクトリや他の用途で使用されてるディレクトリは指定しないでください。使用できる変数については、https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables をご覧ください。</translation>
+      <ph name="PRODUCT_NAME" /> では、ボリュームのルート ディレクトリのコンテンツが管理されます。したがって、データの消失やその他のエラーを避けるため、ルート ディレクトリや他の用途で使用されてるディレクトリは指定しないでください。使用できる変数については、https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables をご覧ください。</translation>
 <translation id="6083631234867522991">Windows（Windows クライアント）:</translation>
 <translation id="608788685013546076">電力ピークシフトのバッテリーのしきい値をパーセントで設定する</translation>
 <translation id="6089679180657323464">Wilco の診断およびテレメトリー用コントローラの設定を制御します。</translation>
@@ -3796,7 +3796,7 @@
 
       このポリシーを未設定のままにした場合、ユーザーはブラウザのテーマを自由に変更できます。</translation>
 <translation id="6195802366906945965">サーバー証明書の確認に組み込みの証明書確認機能を使用する</translation>
-<translation id="6198947200418556248">このポリシーはサポートが終了しています。Cookie を以前の動作に戻す必要がある場合は、<ph name="LEGACY_SAMESITE_COOKIE_BEHAVIOR_ENABLED_FOR_DOMAIN_LIST_POLICY_NAME" /> ポリシーを使用してください。すべての Cookie を以前の <ph name="ATTRIBUTE_SAMESITE_NAME" /> 動作に戻します。以前の動作に戻すと、<ph name="ATTRIBUTE_SAMESITE_NAME" /> 属性のない Cookie は「<ph name="ATTRIBUTE_VALUE_SAMESITE_NONE" />」が指定されたものとして扱われます。また、「<ph name="ATTRIBUTE_VALUE_SAMESITE_NONE" />」の Cookie に「<ph name="ATTRIBUTE_SECURE_NAME" />」属性は必須ではなくなります。さらに、2 つのサイトが同一サイトかどうかを評価する際に、スキーム比較がスキップされます。詳細については https://www.chromium.org/administrators/policy-list-3/cookie-legacy-samesite-policies をご覧ください。
+<translation id="6198947200418556248">このポリシーはサポートが終了しています。Cookie を以前の動作に戻す必要がある場合は、<ph name="LEGACY_SAMESITE_COOKIE_BEHAVIOR_ENABLED_FOR_DOMAIN_LIST_POLICY_NAME" /> ポリシーを使用してください。すべての Cookie を以前の <ph name="ATTRIBUTE_SAMESITE_NAME" /> 動作に戻します。以前の動作に戻すと、<ph name="ATTRIBUTE_SAMESITE_NAME" /> 属性のない Cookie は「<ph name="ATTRIBUTE_VALUE_SAMESITE_NONE" />」が指定されたものとして扱われます。また、「<ph name="ATTRIBUTE_VALUE_SAMESITE_NONE" />」の Cookie に「<ph name="ATTRIBUTE_SECURE_NAME" />」属性は必須ではなくなります。さらに、2 つのサイトが同一サイトかどうかを評価する際に、スキーム比較がスキップされます。詳細については https://www.monyhar.org/administrators/policy-list-3/cookie-legacy-samesite-policies をご覧ください。
 
           このポリシーを設定しない場合、Cookie のデフォルトの <ph name="ATTRIBUTE_SAMESITE_NAME" /> 動作は、<ph name="FEATURE_NAME_SAMESITE_BY_DEFAULT_COOKIES" /> 機能、<ph name="FEATURE_NAME_SAMESITE_NONE_MUST_BE_SECURE" /> 機能、<ph name="FEATURE_NAME_SCHEMEFUL_SAME_SITE" /> 機能に対するユーザーの個人設定（公開テストで、またはそれぞれ <ph name="FLAG_NAME_SAMESITE_BY_DEFAULT_COOKIES" /> フラグ、<ph name="FLAG_NAME_SAMESITE_NONE_MUST_BE_SECURE" /> フラグ、<ph name="FLAG_NAME_SCHEMEFUL_SAME_SITE" /> フラグを有効か無効にすることで設定される）によって決まります。</translation>
 <translation id="6208896993204286313"><ph name="PRODUCT_NAME" /> のポリシー情報に関するレポートを作成</translation>
@@ -4059,7 +4059,7 @@
 
       このポリシーを未設定のままにした場合、ユーザーはプロキシ設定を選択できます。
 
-      注: 詳しい例については、Chromium プロジェクトの説明（https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett）をご覧ください。</translation>
+      注: 詳しい例については、Chromium プロジェクトの説明（https://www.monyhar.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett）をご覧ください。</translation>
 <translation id="6561396069801924653">システム トレイ メニューにユーザー補助オプションを表示</translation>
 <translation id="6562889469672829421">ユーザー入力が行われなくなってから画面を暗くするまでの時間（ミリ秒）</translation>
 <translation id="6563458316362153786">802.11r 高速切り替えを有効にする</translation>
@@ -4282,7 +4282,7 @@
           * <ph name="PROXY_MODE_ENUM_FIXED_SERVERS" />: <ph name="PROXY_SERVER_PROXY_SETTINGS_FIELD" /> フィールドと <ph name="PROXY_BYPASS_LIST_PROXY_SETTINGS_FIELD" /> フィールドを使用します。
           * <ph name="PROXY_MODE_ENUM_PAC_SCRIPT" />: <ph name="PROXY_BYPASS_LIST_PROXY_PAC_URL" /> フィールドと <ph name="PROXY_BYPASS_LIST_PROXY_SETTINGS_FIELD" /> フィールドを使用します。
 
-      注: 詳しい例については、Chromium プロジェクトの説明（https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett）をご覧ください。</translation>
+      注: 詳しい例については、Chromium プロジェクトの説明（https://www.monyhar.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett）をご覧ください。</translation>
 <translation id="6835883744948188639">再起動が推奨されることを示すメッセージをユーザーに繰り返し表示する</translation>
 <translation id="683688607121170501">ユーザーが <ph name="PRODUCT_OS_NAME" /> デバイスにログインした後に、ブラウザ ウィンドウのコンテンツ領域内や Android アプリケーションで Google アカウントを切り替えることができるかどうかを制御します。
 
@@ -4386,7 +4386,7 @@
       注:
       - 「PRIVACY_SCREEN」の制限を設定しても、プライバシー画面はオンにできますが、制限クラスを「BLOCK」に設定した場合はオンにできなくなります。
       - 「CLIPBOARD」の制限を設定した場合、参照先を空白にすることはできませんが、他の制限については参照先を空白にできます。
-      - URL のパターンは https://www.chromium.org/administrators/url-blocklist-filter-format の形式で指定します。
+      - URL のパターンは https://www.monyhar.org/administrators/url-blocklist-filter-format の形式で指定します。
 
       ポリシーを未設定のままにした場合、制限は適用されません。</translation>
 <translation id="6922884955650325312"><ph name="FLASH_PLUGIN_NAME" /> プラグインをブロックする</translation>
@@ -4446,10 +4446,10 @@
 
       このポリシーを無効に設定した場合、悪質な疑いのある不明なコードに対して <ph name="PRODUCT_NAME" /> のレンダラ プロセス内での読み込みが許可されるため、<ph name="PRODUCT_NAME" /> のセキュリティと安定性が低下します。このポリシーは、<ph name="PRODUCT_NAME" /> のレンダラ プロセス内で実行する必要のあるサードパーティ ソフトウェアとの間で互換性の問題が発生する場合にのみ無効にしてください。
 
-      注: 詳しくはプロセス対応ポリシー（https://chromium.googlesource.com/chromium/src/+/HEAD/docs/design/sandbox.md#Process-mitigation-policies）をご覧ください。</translation>
+      注: 詳しくはプロセス対応ポリシー（https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/design/sandbox.md#Process-mitigation-policies）をご覧ください。</translation>
 <translation id="6969131408525928234">このポリシーを設定した場合、指定した URL 内のホスト名について、Certificate Transparency（証明書の透明性）の開示要件が無効になります。ホストに対して間違って発行された証明書は検出が難しくなりますが、適切に公開されていないことを理由に通常であれば信頼できないものとして扱われる証明書でも、引き続き使用できるようになります。ポリシーを未設定のままにした場合、Certificate Transparency（証明書の透明性）に基づき開示が必要な証明書が開示されていなければ、<ph name="PRODUCT_NAME" /> で信頼されません。
 
-      URL のパターンは、https://www.chromium.org/administrators/url-blocklist-filter-format の形式で指定します。ただし、スキーム、ポート、パスに関係なく特定のホスト名に対して証明書が有効になるため、<ph name="PRODUCT_NAME" /> で考慮されるのは URL のホスト名の部分のみです。ワイルドカードを使ったホストの指定はサポートされていません。</translation>
+      URL のパターンは、https://www.monyhar.org/administrators/url-blocklist-filter-format の形式で指定します。ただし、スキーム、ポート、パスに関係なく特定のホスト名に対して証明書が有効になるため、<ph name="PRODUCT_NAME" /> で考慮されるのは URL のホスト名の部分のみです。ワイルドカードを使ったホストの指定はサポートされていません。</translation>
 <translation id="6972540544240464302">タスク スケジューラ設定を選択します</translation>
 <translation id="6973754855639335783">このポリシーを設定した場合、カンマ区切りのリストで指定した発行元が各自のプロセスで実行され、サブドメインによって指定された発行元が分離されます。たとえば、https://example.com/ と指定すると、https://foo.example.com/ が https://example.com/ サイトの一部として分離されます。
 
@@ -4492,7 +4492,7 @@
 
        プロキシ ポリシーの設定で他のモードを選択した場合は、このポリシーを未設定のままにしてください。
 
-       注: 詳しい例については、Chromium プロジェクトの説明（https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett）をご覧ください。</translation>
+       注: 詳しい例については、Chromium プロジェクトの説明（https://www.monyhar.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett）をご覧ください。</translation>
 <translation id="7002040773317582266">メインフレームの URL のリアルタイム チェックが有効。</translation>
 <translation id="7003746348783715221"><ph name="PRODUCT_NAME" /> の設定</translation>
 <translation id="7007283257527015835">プロトコル ハンドラがデフォルトとして設定されている必要があるかどうかを示すブール値のフラグです。</translation>
@@ -5028,7 +5028,7 @@
 
        プロキシ ポリシーの設定で他のモードを選択した場合は、このポリシーを未設定のままにしてください。
 
-      注: 詳しい例については、Chromium プロジェクトの説明（https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett）をご覧ください。</translation>
+      注: 詳しい例については、Chromium プロジェクトの説明（https://www.monyhar.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett）をご覧ください。</translation>
 <translation id="7717938661004793600"><ph name="PRODUCT_OS_NAME" /> のユーザー補助機能を設定します。</translation>
 <translation id="7721944091689270995"><ph name="PLUGIN_VM_NAME" /> ユーザー ID</translation>
 <translation id="7724161903134898864">このポリシーを 1 に設定した場合、ウェブサイトによるポップアップの表示が許可されます。このポリシーを 2 に設定した場合、ポップアップは拒否されます。
@@ -5571,7 +5571,7 @@
 
           このポリシーが未設定の場合は、「ChromeFrameRendererSettings」ポリシーで指定されているデフォルトのレンダラがすべてのサイトで使用されます。
 
-          パターンの例については、https://www.chromium.org/developers/how-tos/chrome-frame-getting-started をご覧ください。</translation>
+          パターンの例については、https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started をご覧ください。</translation>
 <translation id="8489964335640955763">PluginVm</translation>
 <translation id="8493645415242333585">ブラウザの履歴の保存を無効にする</translation>
 <translation id="8499172469244085141">デフォルト設定（ユーザーによるオーバーライド可能）</translation>
@@ -5652,10 +5652,10 @@
       最近のバージョンの Samba サーバーと <ph name="MS_WIN_NAME" /> サーバーでは NTLMv2 がサポートされています。この設定は、古いバージョンとの互換性が必要な場合にのみ無効にしてください。無効にした場合は、認証のセキュリティが低下します。</translation>
 <translation id="8606263947930257189">5 分以上バックグラウンドになっているタブを <ph name="PRODUCT_NAME" /> で凍結可能にするかどうかを管理します。
 
-      このポリシーを true に設定した場合、5 分以上バックグラウンドになっているタブは凍結可能になります。タブを凍結すると、CPU、バッテリー、メモリの使用量が削減されます。<ph name="PRODUCT_NAME" /> ではヒューリスティックにより、バックグラウンドで有用な処理（通知の表示、サウンドの再生、動画のストリーミングなど）を行うタブが凍結の対象から外されます。ウェブ デベロッパーが自身のサイトを凍結の対象から外すこともできます（https://chromium.googlesource.com/chromium/src/+/HEAD/chrome/browser/performance_manager/docs/freezing_opt_out_opt_in.md）。
+      このポリシーを true に設定した場合、5 分以上バックグラウンドになっているタブは凍結可能になります。タブを凍結すると、CPU、バッテリー、メモリの使用量が削減されます。<ph name="PRODUCT_NAME" /> ではヒューリスティックにより、バックグラウンドで有用な処理（通知の表示、サウンドの再生、動画のストリーミングなど）を行うタブが凍結の対象から外されます。ウェブ デベロッパーが自身のサイトを凍結の対象から外すこともできます（https://monyhar.googlesource.com/monyhar/src/+/HEAD/chrome/browser/performance_manager/docs/freezing_opt_out_opt_in.md）。
 
       このポリシーを false に設定した場合は、どのタブも凍結されません。</translation>
-<translation id="8619480582976056396">このポリシーでは、禁止した URL のリストからのウェブページの読み込みを防止できます。このリストには、禁止する URL のパターンを指定します。このポリシーを未設定のままにした場合、ブラウザですべての URL が許可されます。URL のパターンは、https://www.chromium.org/administrators/url-blocklist-filter-format の形式で指定します。また、<ph name="URL_ALLOWLIST_POLICY_NAME" /> で最大 1,000 件の URL を例外として指定できます。
+<translation id="8619480582976056396">このポリシーでは、禁止した URL のリストからのウェブページの読み込みを防止できます。このリストには、禁止する URL のパターンを指定します。このポリシーを未設定のままにした場合、ブラウザですべての URL が許可されます。URL のパターンは、https://www.monyhar.org/administrators/url-blocklist-filter-format の形式で指定します。また、<ph name="URL_ALLOWLIST_POLICY_NAME" /> で最大 1,000 件の URL を例外として指定できます。
 
       <ph name="PRODUCT_NAME" /> バージョン 73 以降では、「javascript://*」の URL をブロックできます。ただし、ブロックされるのはアドレスバーに入力された（またはブックマークレットなどの）JavaScript のみです。ページ内の JavaScript URL に動的に読み込まれるデータが含まれる場合、このポリシーは適用されません。たとえば、「example.com/abc」をブロックした場合でも、「example.com」では XMLHTTPRequest を使用して「example.com/abc」を読み込むことができます。
 
@@ -5755,7 +5755,7 @@
 
       このポリシーを未設定のままにした場合、Chrome ではプラットフォーム固有のデフォルト ディレクトリが使用されます。
 
-      注: 使用できる変数の一覧については、https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables をご覧ください。</translation>
+      注: 使用できる変数の一覧については、https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables をご覧ください。</translation>
 <translation id="877557628527387598">パスワード ログイン</translation>
 <translation id="8777369558049831576">外部プロトコルに関するダイアログに [常に開く] チェックボックスを表示する。</translation>
 <translation id="8786409859071107656">このポリシーを有効に設定した場合、USB 電力供給の電力管理ポリシーが有効になります。
@@ -5856,7 +5856,7 @@
       このポリシーを設定しないか空の文字列を入力した場合、デバイスでは現在有効になっているタイムゾーンが使用されますが、ユーザーはこれを変更できます。</translation>
 <translation id="8880294585549584028">ファイルとディレクトリへの書き込みアクセスを許可するサイトを指定する</translation>
 <translation id="8882006618241293596">これらのサイトで <ph name="FLASH_PLUGIN_NAME" /> プラグインをブロックする</translation>
-<translation id="8887158351295718009">ここで指定したパターンに一致するドメインに設定されている Cookie を、以前の <ph name="ATTRIBUTE_SAMESITE_NAME" /> 動作に戻します。以前の動作に戻すと、<ph name="ATTRIBUTE_SAMESITE_NAME" /> 属性のない Cookie は「<ph name="ATTRIBUTE_VALUE_SAMESITE_NONE" />」が指定されたものとして扱われます。また、「<ph name="ATTRIBUTE_VALUE_SAMESITE_NONE" />」の Cookie に「<ph name="ATTRIBUTE_SECURE_NAME" />」属性は必須ではなくなります。さらに、2 つのサイトが同一サイトかどうかを評価する際に、スキーム比較がスキップされます。詳細については https://www.chromium.org/administrators/policy-list-3/cookie-legacy-samesite-policies をご覧ください。
+<translation id="8887158351295718009">ここで指定したパターンに一致するドメインに設定されている Cookie を、以前の <ph name="ATTRIBUTE_SAMESITE_NAME" /> 動作に戻します。以前の動作に戻すと、<ph name="ATTRIBUTE_SAMESITE_NAME" /> 属性のない Cookie は「<ph name="ATTRIBUTE_VALUE_SAMESITE_NONE" />」が指定されたものとして扱われます。また、「<ph name="ATTRIBUTE_VALUE_SAMESITE_NONE" />」の Cookie に「<ph name="ATTRIBUTE_SECURE_NAME" />」属性は必須ではなくなります。さらに、2 つのサイトが同一サイトかどうかを評価する際に、スキーム比較がスキップされます。詳細については https://www.monyhar.org/administrators/policy-list-3/cookie-legacy-samesite-policies をご覧ください。
 
           ここで指定したパターンに一致しないドメインの Cookie（またはこのポリシーが未設定の場合はすべての Cookie）には、グローバルなデフォルト値（<ph name="LEGACY_SAMESITE_COOKIE_BEHAVIOR_ENABLED_POLICY_NAME" /> ポリシーで値が設定されている場合はその値、設定されていない場合はユーザーの個人設定の値）が使用されます。
 
@@ -6151,7 +6151,7 @@
 <translation id="944817693306670849">ディスク キャッシュ サイズを設定します</translation>
 <translation id="947333773406819973">このポリシーはサポートが終了しています。代わりに <ph name="URL_BLOCKLIST_POLICY_NAME" /> ポリシーを使用してください。
 
-      このポリシーでは、禁止した URL のリストからのウェブページの読み込みを防止できます。このリストには、禁止する URL のパターンを指定します。このポリシーを未設定のままにした場合、ブラウザですべての URL が許可されます。URL のパターンは、https://www.chromium.org/administrators/url-blocklist-filter-format の形式で指定します。また、<ph name="URL_ALLOWLIST_POLICY_NAME" /> で最大 1,000 件の URL を例外として指定できます。
+      このポリシーでは、禁止した URL のリストからのウェブページの読み込みを防止できます。このリストには、禁止する URL のパターンを指定します。このポリシーを未設定のままにした場合、ブラウザですべての URL が許可されます。URL のパターンは、https://www.monyhar.org/administrators/url-blocklist-filter-format の形式で指定します。また、<ph name="URL_ALLOWLIST_POLICY_NAME" /> で最大 1,000 件の URL を例外として指定できます。
 
       <ph name="PRODUCT_NAME" /> バージョン 73 以降では、「javascript://*」の URL をブロックできます。ただし、ブロックされるのはアドレスバーに入力された（またはブックマークレットなどの）JavaScript のみです。ページ内の JavaScript URL に動的に読み込まれるデータが含まれる場合、このポリシーは適用されません。たとえば、「example.com/abc」をブロックした場合でも、「example.com」では XMLHTTPRequest を使用して「example.com/abc」を読み込むことができます。
 

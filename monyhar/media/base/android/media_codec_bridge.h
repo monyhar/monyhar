@@ -25,14 +25,14 @@ namespace media {
 
 struct SubsampleEntry;
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.media
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.media
 enum class CodecType {
   kAny,
   kSecure,    // Note that all secure codecs are HW codecs.
   kSoftware,  // In some cases hardware codecs could hang the GPU process.
 };
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.media
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.media
 // GENERATED_JAVA_PREFIX_TO_STRIP: MEDIA_CODEC_
 enum MediaCodecStatus {
   MEDIA_CODEC_OK,

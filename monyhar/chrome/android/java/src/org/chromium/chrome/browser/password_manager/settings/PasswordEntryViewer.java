@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_manager.settings;
+package org.monyhar.chrome.browser.password_manager.settings;
 
-import static org.chromium.chrome.browser.password_manager.settings.PasswordAccessReauthenticationHelper.SETTINGS_REAUTHENTICATION_HISTOGRAM;
+import static org.monyhar.chrome.browser.password_manager.settings.PasswordAccessReauthenticationHelper.SETTINGS_REAUTHENTICATION_HISTOGRAM;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -35,14 +35,14 @@ import androidx.annotation.StringRes;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.fragment.app.Fragment;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.password_manager.ReauthResult;
-import org.chromium.chrome.browser.sync.SyncService;
-import org.chromium.components.browser_ui.settings.SettingsUtils;
-import org.chromium.ui.text.SpanApplier;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.password_manager.ReauthResult;
+import org.monyhar.chrome.browser.sync.SyncService;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.ui.text.SpanApplier;
+import org.monyhar.ui.widget.Toast;
 
 /**
  * Password entry viewer that allows to view and delete passwords stored in Chrome.

@@ -4162,7 +4162,7 @@ Data.prototype = {
             // Support: Chrome <= 35-45+
             // Webkit & Blink performance suffers when deleting properties
             // from DOM nodes, so set to undefined instead
-            // https://code.google.com/p/chromium/issues/detail?id=378607
+            // https://code.google.com/p/monyhar/issues/detail?id=378607
             if ( owner.nodeType ) {
                 owner[ this.expando ] = undefined;
             } else {
@@ -5372,7 +5372,7 @@ jQuery.Event.prototype = {
 //
 // Support: Safari 7 only
 // Safari sends mouseenter too often; see:
-// https://code.google.com/p/chromium/issues/detail?id=470258
+// https://code.google.com/p/monyhar/issues/detail?id=470258
 // for the description of the bug (it existed in older Chrome versions as well).
 jQuery.each( {
     mouseenter: "mouseover",
@@ -8243,7 +8243,7 @@ support.focusin = "onfocusin" in window;
 // Support: Chrome, Safari
 // focus(in | out) events fire after focus & blur events,
 // which is spec violation - http://www.w3.org/TR/DOM-Level-3-Events/#events-focusevent-event-order
-// Related ticket - https://code.google.com/p/chromium/issues/detail?id=449857
+// Related ticket - https://code.google.com/p/monyhar/issues/detail?id=449857
 if ( !support.focusin ) {
     jQuery.each( { focus: "focusin", blur: "focusout" }, function( orig, fix ) {
 
@@ -9994,7 +9994,7 @@ jQuery.each( { scrollLeft: "pageXOffset", scrollTop: "pageYOffset" }, function( 
 // Support: Safari<7-8+, Chrome<37-44+
 // Add the top/left cssHooks using jQuery.fn.position
 // Webkit bug: https://bugs.webkit.org/show_bug.cgi?id=29084
-// Blink bug: https://code.google.com/p/chromium/issues/detail?id=229280
+// Blink bug: https://code.google.com/p/monyhar/issues/detail?id=229280
 // getComputedStyle returns percent when specified for top/left/bottom/right;
 // rather than make the css module depend on the offset module, just check for it here
 jQuery.each( [ "top", "left" ], function( i, prop ) {
@@ -22378,7 +22378,7 @@ enifed('ember-htmlbars/system/lookup-helper', ['exports', 'ember-metal/debug', '
       if (validateLazyHelperName(name, owner, env.hooks.keywords)) {
         var helperName = 'helper:' + name;
         // See https://github.com/emberjs/ember.js/issues/13071
-        // See https://bugs.chromium.org/p/v8/issues/detail?id=4839
+        // See https://bugs.monyhar.org/p/v8/issues/detail?id=4839
         var registered = owner.hasRegistration(helperName, options);
         if (registered) {
           helper = owner._lookupFactory(helperName, options);
@@ -30591,7 +30591,7 @@ enifed("ember-metal/replace", ["exports"], function (exports) {
   function _replace(array, idx, amt, objects) {
     var args = [].concat(objects);
     var ret = [];
-    // https://code.google.com/p/chromium/issues/detail?id=56588
+    // https://code.google.com/p/monyhar/issues/detail?id=56588
     var size = 60000;
     var start = idx;
     var ends = amt;

@@ -1,20 +1,20 @@
 // Copyright 2021 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.chrome.browser.continuous_search;
+package org.monyhar.chrome.browser.continuous_search;
 
 import android.graphics.RectF;
 import android.view.View;
 
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.layouts.EventFilter;
-import org.chromium.chrome.browser.layouts.SceneOverlay;
-import org.chromium.chrome.browser.layouts.components.VirtualView;
-import org.chromium.chrome.browser.layouts.scene_layer.SceneLayer;
-import org.chromium.chrome.browser.layouts.scene_layer.SceneOverlayLayer;
-import org.chromium.components.browser_ui.widget.ViewResourceFrameLayout;
-import org.chromium.ui.resources.ResourceManager;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.layouts.EventFilter;
+import org.monyhar.chrome.browser.layouts.SceneOverlay;
+import org.monyhar.chrome.browser.layouts.components.VirtualView;
+import org.monyhar.chrome.browser.layouts.scene_layer.SceneLayer;
+import org.monyhar.chrome.browser.layouts.scene_layer.SceneOverlayLayer;
+import org.monyhar.components.browser_ui.widget.ViewResourceFrameLayout;
+import org.monyhar.ui.resources.ResourceManager;
 
 import java.util.List;
 

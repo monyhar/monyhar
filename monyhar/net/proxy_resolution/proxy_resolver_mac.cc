@@ -270,7 +270,7 @@ int ProxyResolverMac::GetProxyForURL(
     return ERR_FAILED;
 
   const CFStringRef private_runloop_mode =
-      CFSTR("org.chromium.ProxyResolverMac");
+      CFSTR("org.monyhar.ProxyResolverMac");
 
   // Add the run loop observer to synchronize events of
   // CFNetworkExecuteProxyAutoConfigurationURL sources. See the definition of

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ntp;
+package org.monyhar.chrome.browser.ntp;
 
 import static junit.framework.Assert.assertTrue;
 
@@ -20,21 +20,21 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.suggestions.tile.Tile;
-import org.chromium.chrome.browser.suggestions.tile.TileVisualType;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.NewTabPageTestUtils;
-import org.chromium.chrome.test.util.browser.suggestions.SuggestionsDependenciesRule;
-import org.chromium.chrome.test.util.browser.suggestions.mostvisited.FakeMostVisitedSites;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.components.favicon.IconType;
-import org.chromium.components.favicon.LargeIconBridge;
-import org.chromium.net.test.EmbeddedTestServer;
-import org.chromium.url.GURL;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.suggestions.tile.Tile;
+import org.monyhar.chrome.browser.suggestions.tile.TileVisualType;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.NewTabPageTestUtils;
+import org.monyhar.chrome.test.util.browser.suggestions.SuggestionsDependenciesRule;
+import org.monyhar.chrome.test.util.browser.suggestions.mostvisited.FakeMostVisitedSites;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.favicon.IconType;
+import org.monyhar.components.favicon.LargeIconBridge;
+import org.monyhar.net.test.EmbeddedTestServer;
+import org.monyhar.url.GURL;
 
 /**
  * Tests for events around the loading of a New Tab Page.

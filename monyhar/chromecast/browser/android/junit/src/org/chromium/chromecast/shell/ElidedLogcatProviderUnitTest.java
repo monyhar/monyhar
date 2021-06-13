@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.shell;
+package org.monyhar.chromecast.shell;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.not;
@@ -13,7 +13,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -73,7 +73,7 @@ public class ElidedLogcatProviderUnitTest {
         List<String> lines = Arrays.asList(
                 "04-30 16:30:11.030 15721 15721 E libc    : Access denied finding property \"persist.mtk.mlog2logcat\"",
                 "04-30 16:30:51.590 15721 15721 W MLOG_KERN: type=1400 audit(0.0:137421): avc: denied",
-                "05-01 15:34:55.523   651   651 I chromium: [651:651:INFO:ccs_manager_impl.cc(891)] Waiting for all transports to be enabled");
+                "05-01 15:34:55.523   651   651 I monyhar: [651:651:INFO:ccs_manager_impl.cc(891)] Waiting for all transports to be enabled");
 
         String elided = ElidedLogcatProvider.elideLogcat(concatLines(lines));
         assertThat(elided, not(containsString(lines.get(0))));

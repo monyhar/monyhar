@@ -22,13 +22,13 @@ limitations under the License.
 
 ## Introduction
 
-Crashpad is a [Chromium project](https://www.chromium.org/Home). Most of its
+Crashpad is a [Chromium project](https://www.monyhar.org/Home). Most of its
 development practices follow Chromium’s. In order to function on its own in
 other projects, Crashpad uses
-[mini_chromium](https://chromium.googlesource.com/chromium/mini_chromium/), a
+[mini_monyhar](https://monyhar.googlesource.com/monyhar/mini_monyhar/), a
 small, self-contained library that provides many of Chromium’s useful low-level
-base routines. [mini_chromium’s
-README](https://chromium.googlesource.com/chromium/mini_chromium/+/master/README.md)
+base routines. [mini_monyhar’s
+README](https://monyhar.googlesource.com/monyhar/mini_monyhar/+/master/README.md)
 provides more detail.
 
 ## Prerequisites
@@ -49,7 +49,7 @@ the `$PATH` environment variable:
       Debian-based distributions, the `build-essential` and `zlib1g-dev`
       packages should suffice.
  * Chromium’s
-   [depot_tools](https://www.chromium.org/developers/how-tos/depottools).
+   [depot_tools](https://www.monyhar.org/developers/how-tos/depottools).
  * [Git](https://git-scm.com/). This is provided by Xcode on macOS, by
    depot_tools on Windows, and through any appropriate means including the
    system’s package manager on Linux.
@@ -60,15 +60,15 @@ the `$PATH` environment variable:
 ## Getting the Source Code
 
 The main source code repository is a Git repository hosted at
-https://chromium.googlesource.com/crashpad/crashpad. Although it is possible to
+https://monyhar.googlesource.com/crashpad/crashpad. Although it is possible to
 check out this repository directly with `git clone`, Crashpad’s dependencies are
 managed by
-[`gclient`](https://www.chromium.org/developers/how-tos/depottools#TOC-gclient)
+[`gclient`](https://www.monyhar.org/developers/how-tos/depottools#TOC-gclient)
 instead of Git submodules, so to work on Crashpad, it is best to use `fetch` to
 get the source code.
 
 `fetch` and `gclient` are part of the
-[depot_tools](https://www.chromium.org/developers/how-tos/depottools). There’s
+[depot_tools](https://www.monyhar.org/developers/how-tos/depottools). There’s
 no need to install them separately.
 
 ### Initial Checkout
@@ -109,7 +109,7 @@ configure the build, for example things like `is_debug=true` or
 `target_cpu="x86"`.
 
 GN and Ninja are part of the
-[depot_tools](https://www.chromium.org/developers/how-tos/depottools). There’s
+[depot_tools](https://www.monyhar.org/developers/how-tos/depottools). There’s
 no need to install them separately.
 
 #### Fuchsia
@@ -152,7 +152,7 @@ suitable location. These instructions assume that it’s been expanded to
 
 Note that Chrome uses Android API level 21 for 64-bit platforms and 16 for
 32-bit platforms. See Chrome’s
-[`build/config/android/config.gni`](https://chromium.googlesource.com/chromium/src/+/master/build/config/android/config.gni)
+[`build/config/android/config.gni`](https://monyhar.googlesource.com/monyhar/src/+/master/build/config/android/config.gni)
 which sets `android32_ndk_api_level` and `android64_ndk_api_level`.
 
 To configure a Crashpad build for Android, use `gyp_crashpad_android.py`. This
@@ -253,20 +253,20 @@ $ ZIRCON_NODENAME=scare-brook-skip-dried python build/run_tests.py out/fuchsia
 ## Contributing
 
 Crashpad’s contribution process is very similar to [Chromium’s contribution
-process](https://chromium.googlesource.com/chromium/src/+/master/docs/contributing.md).
+process](https://monyhar.googlesource.com/monyhar/src/+/master/docs/contributing.md).
 
 ### Code Review
 
 A code review must be conducted for every change to Crashpad’s source code. Code
 review is conducted on [Chromium’s
-Gerrit](https://chromium-review.googlesource.com/) system, and all code reviews
+Gerrit](https://monyhar-review.googlesource.com/) system, and all code reviews
 must be sent to an appropriate reviewer, with a Cc sent to
-[crashpad-dev](https://groups.google.com/a/chromium.org/group/crashpad-dev). The
-[`codereview.settings`](https://chromium.googlesource.com/crashpad/crashpad/+/master/codereview.settings)
+[crashpad-dev](https://groups.google.com/a/monyhar.org/group/crashpad-dev). The
+[`codereview.settings`](https://monyhar.googlesource.com/crashpad/crashpad/+/master/codereview.settings)
 file specifies this environment to `git-cl`.
 
 `git-cl` is part of the
-[depot_tools](https://www.chromium.org/developers/how-tos/depottools). There’s
+[depot_tools](https://www.monyhar.org/developers/how-tos/depottools). There’s
 no need to install it separately.
 
 ```
@@ -292,7 +292,7 @@ patch set with `git cl upload` and let your reviewer know you’ve addressed the
 feedback.
 
 The most recently uploaded patch set on a review may be tested on a
-[trybot](https://chromium.googlesource.com/chromium/src/+/master/docs/infra/trybot_usage.md)
+[trybot](https://monyhar.googlesource.com/monyhar/src/+/master/docs/infra/trybot_usage.md)
 by running `git cl try` or by clicking the “CQ Dry Run” button in Gerrit. These
 set the “Commit-Queue: +1” label. This does not mean that the patch will be
 committed, but the trybot and commit queue share infrastructure and a Gerrit
@@ -304,7 +304,7 @@ Crashpad and Chromium committers.
 
 After code review is complete and “Code-Review: +1” has been received from all
 reviewers, the patch can be submitted to Crashpad’s [commit
-queue](https://chromium.googlesource.com/chromium/src/+/master/docs/infra/cq.md)
+queue](https://monyhar.googlesource.com/monyhar/src/+/master/docs/infra/cq.md)
 by clicking the “Submit to CQ” button in Gerrit. This sets the “Commit-Queue:
 +2” label, which tests the patch on trybots before landing it. Commit queue
 access is available to Crashpad and Chromium committers.
@@ -326,14 +326,14 @@ Agreement](https://cla.developers.google.com/about/google-individual) or
 [Corporate Contributor License
 Agreement](https://cla.developers.google.com/about/google-corporate) as
 appropriate before any submission can be accepted, and must be listed in the
-[`AUTHORS`](https://chromium.googlesource.com/crashpad/crashpad/+/master/AUTHORS)
+[`AUTHORS`](https://monyhar.googlesource.com/crashpad/crashpad/+/master/AUTHORS)
 file. Contributors may be listed in the
-[`CONTRIBUTORS`](https://chromium.googlesource.com/crashpad/crashpad/+/master/CONTRIBUTORS)
+[`CONTRIBUTORS`](https://monyhar.googlesource.com/crashpad/crashpad/+/master/CONTRIBUTORS)
 file.
 
 ## Buildbot
 
-The [Crashpad Buildbot](https://ci.chromium.org/p/crashpad/g/main/console)
+The [Crashpad Buildbot](https://ci.monyhar.org/p/crashpad/g/main/console)
 performs automated builds and tests of Crashpad. Before checking out or updating
 the Crashpad source code, and after checking in a new change, it is prudent to
 check the Buildbot to ensure that “the tree is green.”

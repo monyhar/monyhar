@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.impl;
+package org.monyhar.net.impl;
 
 import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 
-import org.chromium.net.CronetException;
-import org.chromium.net.RequestFinishedInfo;
-import org.chromium.net.UrlResponseInfo;
+import org.monyhar.net.CronetException;
+import org.monyhar.net.RequestFinishedInfo;
+import org.monyhar.net.UrlResponseInfo;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

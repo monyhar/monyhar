@@ -96,7 +96,7 @@ Here's how to run `chrome_public_test_apk` on a bot with a Nexus 5 running KitKa
 ```sh
 $ tools/mb/mb.py run \
     -s --no-default-dimensions \
-    -d pool chromium.tests \
+    -d pool monyhar.tests \
     -d device_os_type userdebug -d device_os KTU84P -d device_type hammerhead \
     out/Android-arm-dbg chrome_public_test_apk
 ```
@@ -119,14 +119,14 @@ use_goma = true
 
 The examples in this doc use `$criteria`. To figure out what values to use, you
 can go to an existing swarming run
-([recent tasks page](https://chromium-swarm.appspot.com/tasklist)) and
+([recent tasks page](https://monyhar-swarm.appspot.com/tasklist)) and
 look at the `Dimensions` section. Each of these becomes a `-d dimension_name
 dimension_value` in your `$criteria`. Click on `bots` (or go
-[here](https://chromium-swarm.appspot.com/botlist)) to be taken to a UI that
+[here](https://monyhar-swarm.appspot.com/botlist)) to be taken to a UI that
 allows you to try out the criteria interactively, so that you can be sure that
 there are bots matching your criteria. Sometimes the web page shows a
 human-friendly name rather than the name required on the commandline. [This
-file](https://cs.chromium.org/chromium/infra/luci/appengine/swarming/ui2/modules/alias.js)
+file](https://cs.monyhar.org/monyhar/infra/luci/appengine/swarming/ui2/modules/alias.js)
 contains the mapping to human-friendly names. You can test your commandline by
 entering `dimension_name:dimension_value` in the interactive UI.
 
@@ -152,7 +152,7 @@ for a platform you can't build for locally, does not yet exist.
 
 ## Authenticating
 
-You may need to log in to `https://chromium-swarm.appspot.com` to do this
+You may need to log in to `https://monyhar-swarm.appspot.com` to do this
 
 ```
 $ tools/luci-go/isolate login
@@ -189,14 +189,14 @@ previous step, you can run on bots of your choice:
 
 ```
 $ tools/luci-go/swarming trigger \
-    -server https://chromium-swarm.appspot.com \
+    -server https://monyhar-swarm.appspot.com \
     -dimension pool=$pool \
     $criteria \
     -digest $digest
 ```
 
 There are two more things you need to fill in here. The first is the pool name;
-you should pick "chromium.tests" unless you know otherwise. The pool is the
+you should pick "monyhar.tests" unless you know otherwise. The pool is the
 collection of hosts from which swarming will try to pick bots to run your tasks.
 
 The second is the criteria, which is how you specify which bot(s) you want your
@@ -227,7 +227,7 @@ command you can run to collect the results of that task. For example:
 
 ```
 To collect results use:
-  swarming collect -server https://chromium-swarm.appspot.com 4a0e739053fddd10
+  swarming collect -server https://monyhar-swarm.appspot.com 4a0e739053fddd10
 ```
 
 The 'collect' command given there will block until the task is complete, then
@@ -245,4 +245,4 @@ page, which gives you commands to:
 
 [borg]: https://ai.google/research/pubs/pub43438
 [kubernetes]: https://kubernetes.io/
-[swarming bot list]: https://chromium-swarm.appspot.com/botlist
+[swarming bot list]: https://monyhar-swarm.appspot.com/botlist

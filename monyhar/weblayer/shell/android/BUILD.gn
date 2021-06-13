@@ -34,7 +34,7 @@ android_resources("weblayer_shell_resources") {
 
 android_library("weblayer_shell_java") {
   testonly = true
-  resources_package = "org.chromium.weblayer.shell"
+  resources_package = "org.monyhar.weblayer.shell"
 
   # The google_play_services_base_java dependency is necessary for the
   # google_play_services_version definition in the manifest.
@@ -49,9 +49,9 @@ android_library("weblayer_shell_java") {
     "//weblayer/public/java",
   ]
   sources = [
-    "shell_apk/src/org/chromium/weblayer/shell/InstrumentationActivity.java",
-    "shell_apk/src/org/chromium/weblayer/shell/TelemetryActivity.java",
-    "shell_apk/src/org/chromium/weblayer/shell/WebLayerShellActivity.java",
+    "shell_apk/src/org/monyhar/weblayer/shell/InstrumentationActivity.java",
+    "shell_apk/src/org/monyhar/weblayer/shell/TelemetryActivity.java",
+    "shell_apk/src/org/monyhar/weblayer/shell/WebLayerShellActivity.java",
   ]
 }
 
@@ -91,7 +91,7 @@ template("weblayer_shell_apk_helper") {
 }
 
 weblayer_shell_apk_helper("weblayer_shell") {
-  weblayer_package = "org.chromium.weblayer.support"
+  weblayer_package = "org.monyhar.weblayer.support"
   apk_name = "WebLayerShell"
 }
 
@@ -248,9 +248,9 @@ android_apk("weblayer_support_apk") {
   deps += [ "//weblayer/browser/java:upstream_java" ]
 
   # Add the Chromium linker for WebView compatibility support on L-M.
-  deps += [ "//base/android/linker:chromium_android_linker" ]
+  deps += [ "//base/android/linker:monyhar_android_linker" ]
   loadable_modules =
-      [ "$root_out_dir/libchromium_android_linker$shlib_extension" ]
+      [ "$root_out_dir/libmonyhar_android_linker$shlib_extension" ]
 
   apk_name = "WebLayerSupport"
   android_manifest = weblayer_support_manifest

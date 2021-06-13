@@ -24,7 +24,7 @@ basis.
 Clone the `depot_tools` repository:
 
 ```shell
-$ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+$ git clone https://monyhar.googlesource.com/monyhar/tools/depot_tools.git
 ```
 
 Add `depot_tools` to the end of your PATH (you will probably want to put this
@@ -37,19 +37,19 @@ $ export PATH="$PATH:/path/to/depot_tools"
 
 ## Get the code
 
-Create a `chromium` directory for the checkout and change to it (you can call
+Create a `monyhar` directory for the checkout and change to it (you can call
 this whatever you like and put it wherever you like, as long as the full path
 has no spaces):
 
 ```shell
-$ mkdir ~/chromium && cd ~/chromium
+$ mkdir ~/monyhar && cd ~/monyhar
 ```
 
 Run the `fetch` tool from depot_tools to check out the code and its
 dependencies.
 
 ```shell
-$ fetch --nohooks chromium
+$ fetch --nohooks monyhar
 ```
 
 Expect the command to take 30 minutes on even a fast connection, and many
@@ -78,7 +78,7 @@ as follows:
 ```
 solutions = [
   {
-    "url": "https://chromium.googlesource.com/chromium/src.git",
+    "url": "https://monyhar.googlesource.com/monyhar/src.git",
     "managed": False,
     "name": "src",
     "custom_deps": {},
@@ -113,7 +113,7 @@ $ build/install-build-deps.sh
 ```
 
 Note that you need to do this only once, and thereafter only if new dependencies
-are added - these will be announced to the chromium-dev@ group.
+are added - these will be announced to the monyhar-dev@ group.
 
 ### Update your checkout
 

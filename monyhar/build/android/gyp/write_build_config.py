@@ -286,7 +286,7 @@ Path to an AndroidManifest.xml file to use for this lint target.
 
 * `deps_info['lint_java_sources']`:
 The list of all `deps_info['java_sources_file']` entries for all library
-dependencies that are chromium code. Note: this is a list of files, where each
+dependencies that are monyhar code. Note: this is a list of files, where each
 file contains a list of Java source files. This is used for lint.
 
 * `deps_info['lint_aars']`:
@@ -295,15 +295,15 @@ their custom annotations.zip and run checks like @IntDef on their annotations.
 
 * `deps_info['lint_srcjars']`:
 List of all bundled srcjars of all transitive java library targets. Excludes
-non-chromium java libraries.
+non-monyhar java libraries.
 
 * `deps_info['lint_resource_sources']`:
 List of all resource sources files belonging to all transitive resource
-dependencies of this target. Excludes resources owned by non-chromium code.
+dependencies of this target. Excludes resources owned by non-monyhar code.
 
 * `deps_info['lint_resource_zips']`:
 List of all resource zip files belonging to all transitive resource dependencies
-of this target. Excludes resources owned by non-chromium code.
+of this target. Excludes resources owned by non-monyhar code.
 
 * `deps_info['javac']`:
 A dictionary containing information about the way the sources in this library
@@ -1043,9 +1043,9 @@ def main(argv):
                     'from this JAR except meta-inf/ content and .class files '
                     'will be added to the final APK.')
   parser.add_option(
-      '--non-chromium-code',
+      '--non-monyhar-code',
       action='store_true',
-      help='True if a java library is not chromium code, used for lint.')
+      help='True if a java library is not monyhar code, used for lint.')
 
   # android library options
   parser.add_option('--dex-path', help='Path to target\'s dex output.')
@@ -1323,7 +1323,7 @@ def main(argv):
           'type': options.type,
           'gn_target': options.gn_target,
           'deps_configs': [d['path'] for d in direct_deps],
-          'chromium_code': not options.non_chromium_code,
+          'monyhar_code': not options.non_monyhar_code,
       },
       # Info needed only by generate_gradle.py.
       'gradle': {}
@@ -1693,7 +1693,7 @@ def main(argv):
     if options.bundled_srcjars:
       lint_srcjars.update(deps_info['bundled_srcjars'])
     for c in all_library_deps:
-      if c['chromium_code'] and c['requires_android']:
+      if c['monyhar_code'] and c['requires_android']:
         if 'java_sources_file' in c:
           lint_java_sources.add(c['java_sources_file'])
         lint_srcjars.update(c['bundled_srcjars'])
@@ -1705,7 +1705,7 @@ def main(argv):
     if options.resources_zip:
       lint_resource_zips.add(options.resources_zip)
     for c in all_resources_deps:
-      if c['chromium_code']:
+      if c['monyhar_code']:
         # Prefer res_sources_path to resources_zips so that lint errors have
         # real paths and to avoid needing to extract during lint.
         if c['res_sources_path']:

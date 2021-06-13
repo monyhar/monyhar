@@ -17,7 +17,7 @@
 #include "components/autofill_assistant/browser/url_utils.h"
 #include "components/autofill_assistant/browser/website_login_manager.h"
 #include "components/strings/grit/components_strings.h"
-#include "third_party/libaddressinput/chromium/addressinput_util.h"
+#include "third_party/libaddressinput/monyhar/addressinput_util.h"
 #include "third_party/libaddressinput/src/cpp/include/libaddressinput/address_data.h"
 #include "third_party/re2/src/re2/re2.h"
 #include "ui/base/l10n/l10n_util.h"

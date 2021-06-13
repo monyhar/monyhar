@@ -25,8 +25,8 @@ static_library("woff2_dec") {
     "src/woff2_out.cc",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 
   deps = [ "//third_party/brotli:dec" ]
 

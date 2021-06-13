@@ -2,7 +2,7 @@
 <!-- Copyright 2018 The Chromium Authors. All rights reserved.
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
-<org.chromium.components.browser_ui.bottomsheet.BottomSheet
+<org.monyhar.components.browser_ui.bottomsheet.BottomSheet
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/bottom_sheet"
@@ -11,7 +11,7 @@
     android:clipChildren="false" >
 
     <view
-        class="org.chromium.components.browser_ui.bottomsheet.BottomSheet$ShadowLayerView"
+        class="org.monyhar.components.browser_ui.bottomsheet.BottomSheet$ShadowLayerView"
         android:id="@+id/shadow_layer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -22,7 +22,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/bottom_sheet_background" />
 
-    <org.chromium.components.browser_ui.bottomsheet.TouchRestrictingFrameLayout
+    <org.monyhar.components.browser_ui.bottomsheet.TouchRestrictingFrameLayout
         android:id="@+id/bottom_sheet_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content" >
 
         <view
-            class="org.chromium.components.browser_ui.bottomsheet.TouchRestrictingFrameLayout"
+            class="org.monyhar.components.browser_ui.bottomsheet.TouchRestrictingFrameLayout"
             android:id="@+id/bottom_sheet_toolbar_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
@@ -52,4 +52,4 @@
         android:layout_height="wrap_content"
         android:layout_gravity="start|bottom" />
 
-</org.chromium.components.browser_ui.bottomsheet.BottomSheet>
+</org.monyhar.components.browser_ui.bottomsheet.BottomSheet>

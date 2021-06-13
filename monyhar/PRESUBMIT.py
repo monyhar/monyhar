@@ -4,7 +4,7 @@
 
 """Top-level presubmit script for Chromium.
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See http://dev.monyhar.org/developers/how-tos/depottools/presubmit-scripts
 for more details about the presubmit API built into depot_tools.
 """
 PRESUBMIT_VERSION = '2.0.0'
@@ -115,10 +115,10 @@ _BANNED_JAVA_IMPORTS = (
     (
       'java.net.URI;',
       (
-       'Use org.chromium.url.GURL instead of java.net.URI, where possible.',
+       'Use org.monyhar.url.GURL instead of java.net.URI, where possible.',
       ),
       (
-        'net/android/javatests/src/org/chromium/net/'
+        'net/android/javatests/src/org/monyhar/net/'
         'AndroidProxySelectorTest.java',
         'components/cronet/',
         'third_party/robolectric/local/',
@@ -128,7 +128,7 @@ _BANNED_JAVA_IMPORTS = (
       'android.support.test.rule.UiThreadTestRule;',
       (
        'Do not use UiThreadTestRule, just use '
-       '@org.chromium.base.test.UiThreadTest on test methods that should run '
+       '@org.monyhar.base.test.UiThreadTest on test methods that should run '
        'on the UI thread. See https://crbug.com/1111893.',
       ),
       (),
@@ -137,7 +137,7 @@ _BANNED_JAVA_IMPORTS = (
       'android.support.test.annotation.UiThreadTest;',
       (
         'Do not use android.support.test.annotation.UiThreadTest, use '
-        'org.chromium.base.test.UiThreadTest instead. See '
+        'org.monyhar.base.test.UiThreadTest instead. See '
         'https://crbug.com/1111893.',
       ),
       ()
@@ -146,7 +146,7 @@ _BANNED_JAVA_IMPORTS = (
       'android.support.test.rule.ActivityTestRule;',
       (
         'Do not use ActivityTestRule, use '
-        'org.chromium.base.test.BaseActivityTestRule instead.',
+        'org.monyhar.base.test.BaseActivityTestRule instead.',
       ),
       (
         'components/cronet/',
@@ -195,7 +195,7 @@ _BANNED_OBJC_FUNCTIONS = (
       (
        'The use of -[NSView addTrackingRect:owner:userData:assumeInside:] is'
        'prohibited. Please use CrTrackingArea instead.',
-       'http://dev.chromium.org/developers/coding-style/cocoa-dos-and-donts',
+       'http://dev.monyhar.org/developers/coding-style/cocoa-dos-and-donts',
       ),
       False,
     ),
@@ -204,7 +204,7 @@ _BANNED_OBJC_FUNCTIONS = (
       (
        'The use of NSTrackingAreas is prohibited. Please use CrTrackingArea',
        'instead.',
-       'http://dev.chromium.org/developers/coding-style/cocoa-dos-and-donts',
+       'http://dev.monyhar.org/developers/coding-style/cocoa-dos-and-donts',
       ),
       False,
     ),
@@ -213,7 +213,7 @@ _BANNED_OBJC_FUNCTIONS = (
       (
        'The use of -[NSView convertPointFromBase:] is almost certainly wrong.',
        'Please use |convertPoint:(point) fromView:nil| instead.',
-       'http://dev.chromium.org/developers/coding-style/cocoa-dos-and-donts',
+       'http://dev.monyhar.org/developers/coding-style/cocoa-dos-and-donts',
       ),
       True,
     ),
@@ -222,7 +222,7 @@ _BANNED_OBJC_FUNCTIONS = (
       (
        'The use of -[NSView convertPointToBase:] is almost certainly wrong.',
        'Please use |convertPoint:(point) toView:nil| instead.',
-       'http://dev.chromium.org/developers/coding-style/cocoa-dos-and-donts',
+       'http://dev.monyhar.org/developers/coding-style/cocoa-dos-and-donts',
       ),
       True,
     ),
@@ -231,7 +231,7 @@ _BANNED_OBJC_FUNCTIONS = (
       (
        'The use of -[NSView convertRectFromBase:] is almost certainly wrong.',
        'Please use |convertRect:(point) fromView:nil| instead.',
-       'http://dev.chromium.org/developers/coding-style/cocoa-dos-and-donts',
+       'http://dev.monyhar.org/developers/coding-style/cocoa-dos-and-donts',
       ),
       True,
     ),
@@ -240,7 +240,7 @@ _BANNED_OBJC_FUNCTIONS = (
       (
        'The use of -[NSView convertRectToBase:] is almost certainly wrong.',
        'Please use |convertRect:(point) toView:nil| instead.',
-       'http://dev.chromium.org/developers/coding-style/cocoa-dos-and-donts',
+       'http://dev.monyhar.org/developers/coding-style/cocoa-dos-and-donts',
       ),
       True,
     ),
@@ -249,7 +249,7 @@ _BANNED_OBJC_FUNCTIONS = (
       (
        'The use of -[NSView convertSizeFromBase:] is almost certainly wrong.',
        'Please use |convertSize:(point) fromView:nil| instead.',
-       'http://dev.chromium.org/developers/coding-style/cocoa-dos-and-donts',
+       'http://dev.monyhar.org/developers/coding-style/cocoa-dos-and-donts',
       ),
       True,
     ),
@@ -258,7 +258,7 @@ _BANNED_OBJC_FUNCTIONS = (
       (
        'The use of -[NSView convertSizeToBase:] is almost certainly wrong.',
        'Please use |convertSize:(point) toView:nil| instead.',
-       'http://dev.chromium.org/developers/coding-style/cocoa-dos-and-donts',
+       'http://dev.monyhar.org/developers/coding-style/cocoa-dos-and-donts',
       ),
       True,
     ),
@@ -500,7 +500,7 @@ _BANNED_CPP_FUNCTIONS = (
       'leveldb::DB::Open',
       (
         'Instead of leveldb::DB::Open() use leveldb_env::OpenDB() from',
-        'third_party/leveldatabase/env_chromium.h. It exposes databases to',
+        'third_party/leveldatabase/env_monyhar.h. It exposes databases to',
         "Chrome's tracing, making their memory usage visible.",
       ),
       True,
@@ -1019,7 +1019,7 @@ _DEPRECATED_MOJO_TYPES = (
 
 _IPC_ENUM_TRAITS_DEPRECATED = (
     'You are using IPC_ENUM_TRAITS() in your code. It has been deprecated.\n'
-    'See http://www.chromium.org/Home/chromium-security/education/'
+    'See http://www.monyhar.org/Home/monyhar-security/education/'
     'security-tips-for-ipc')
 
 _LONG_PATH_ERROR = (
@@ -1036,7 +1036,7 @@ _JAVA_MULTIPLE_DEFINITION_EXCLUDED_PATHS = [
     r".*chrome[\\\/]android[\\\/]feed[\\\/]dummy[\\\/].*\.java",
 ]
 
-# List of image extensions that are used as resources in chromium.
+# List of image extensions that are used as resources in monyhar.
 _IMAGE_EXTENSIONS = ['.svg', '.png', '.webp']
 
 # These paths contain test data and other known invalid JSON files.
@@ -1077,7 +1077,7 @@ _VALID_OS_MACROS = (
 )
 
 
-# These are not checked on the public chromium-presubmit trybot.
+# These are not checked on the public monyhar-presubmit trybot.
 # Add files here that rely on .py files that exists only for target_os="android"
 # checkouts.
 _ANDROID_SPECIFIC_PYDEPS_FILES = [
@@ -1090,7 +1090,7 @@ _GENERIC_PYDEPS_FILES = [
     'base/android/jni_generator/jni_generator.pydeps',
     'base/android/jni_generator/jni_registration_generator.pydeps',
     'build/android/apk_operations.pydeps',
-    'build/android/devil_chromium.pydeps',
+    'build/android/devil_monyhar.pydeps',
     'build/android/gyp/aar.pydeps',
     'build/android/gyp/aidl.pydeps',
     'build/android/gyp/allot_native_libraries.pydeps',
@@ -1177,9 +1177,9 @@ _KNOWN_ROBOTS = set(
           for s in ('bling-autoroll-builder', 'v8-ci-autoroll-builder',
                     'wpt-autoroller', 'chrome-weblayer-builder')
   ) | set('%s@skia-public.iam.gserviceaccount.com' % s
-          for s in ('chromium-autoroll', 'chromium-release-autoroll')
+          for s in ('monyhar-autoroll', 'monyhar-release-autoroll')
   ) | set('%s@skia-corp.google.com.iam.gserviceaccount.com' % s
-          for s in ('chromium-internal-autoroll',)
+          for s in ('monyhar-internal-autoroll',)
   ) | set('%s@owners-cleanup-prod.google.com.iam.gserviceaccount.com' % s
           for s in ('swarming-tasks',))
 
@@ -1480,7 +1480,7 @@ def CheckDCHECK_IS_ONHasBraces(input_api, output_api):
 
 # TODO(crbug/1138055): Reimplement CheckUmaHistogramChangesOnUpload check in a
 # more reliable way. See
-# https://chromium-review.googlesource.com/c/chromium/src/+/2500269
+# https://monyhar-review.googlesource.com/c/monyhar/src/+/2500269
 
 
 def CheckFlakyTestUsage(input_api, output_api):
@@ -1493,7 +1493,7 @@ def CheckFlakyTestUsage(input_api, output_api):
         files.append(f)
   if len(files):
     return [output_api.PresubmitError(
-      'Use org.chromium.base.test.util.FlakyTest instead of '
+      'Use org.monyhar.base.test.util.FlakyTest instead of '
       'android.test.FlakyTest',
       files)]
   return []
@@ -1507,7 +1507,7 @@ def CheckNoDEPSGIT(input_api, output_api):
       'Never commit changes to .DEPS.git. This file is maintained by an\n'
       'automated system based on what\'s in DEPS and your changes will be\n'
       'overwritten.\n'
-      'See https://sites.google.com/a/chromium.org/dev/developers/how-tos/'
+      'See https://sites.google.com/a/monyhar.org/dev/developers/how-tos/'
       'get-the-code#Rolling_DEPS\n'
       'for more information')]
   return []
@@ -1718,7 +1718,7 @@ def CheckNoPragmaOnce(input_api, output_api):
   if files:
     return [output_api.PresubmitError(
         'Do not use #pragma once in header files.\n'
-        'See http://www.chromium.org/developers/coding-style#TOC-File-headers',
+        'See http://www.monyhar.org/developers/coding-style#TOC-File-headers',
         files)]
   return []
 
@@ -2042,7 +2042,7 @@ def CheckNoAbbreviationInPngFileName(input_api, output_api):
     results.append(output_api.PresubmitError(
         'The name of PNG files should not have abbreviations. \n'
         'Use _hover.png, _center.png, instead of _h.png, _c.png.\n'
-        'Contact oshima@chromium.org if you have questions.', errors))
+        'Contact oshima@monyhar.org if you have questions.', errors))
   return results
 
 
@@ -2590,7 +2590,7 @@ def CheckJavaStyle(input_api, output_api):
     sys.path = original_sys_path
 
   return checkstyle.RunCheckstyle(
-      input_api, output_api, 'tools/android/checkstyle/chromium-style-5.0.xml',
+      input_api, output_api, 'tools/android/checkstyle/monyhar-style-5.0.xml',
       files_to_skip=_EXCLUDED_PATHS + input_api.DEFAULT_FILES_TO_SKIP)
 
 
@@ -2606,7 +2606,7 @@ def CheckPythonDevilInit(input_api, output_api):
   sources = lambda affected_file: input_api.FilterSourceFile(
       affected_file,
       files_to_skip=(_EXCLUDED_PATHS + input_api.DEFAULT_FILES_TO_SKIP +
-                     (r'^build[\\/]android[\\/]devil_chromium\.py',
+                     (r'^build[\\/]android[\\/]devil_monyhar\.py',
                       r'^third_party[\\/].*',)),
       files_to_check=[r'.*\.py$'])
 
@@ -2621,7 +2621,7 @@ def CheckPythonDevilInit(input_api, output_api):
   if errors:
     results.append(output_api.PresubmitError(
         'Devil initialization should always be done using '
-        'devil_chromium.Initialize() in the chromium project, to use better '
+        'devil_monyhar.Initialize() in the monyhar project, to use better '
         'defaults for dependencies (ex. up-to-date version of adb).',
         errors))
 
@@ -2674,8 +2674,8 @@ def _GetOwnersFilesToCheckForIpcOwners(input_api):
       'third_party/feed_library/*',
       # These files are just used to communicate between class loaders running
       # in the same process.
-      'weblayer/browser/java/org/chromium/weblayer_private/interfaces/*',
-      'weblayer/browser/java/org/chromium/weblayer_private/test_interfaces/*',
+      'weblayer/browser/java/org/monyhar/weblayer_private/interfaces/*',
+      'weblayer/browser/java/org/monyhar/weblayer_private/test_interfaces/*',
 
   ]
 
@@ -2813,7 +2813,7 @@ def CheckSecurityOwners(input_api, output_api):
   if to_check:
     # If there are any OWNERS files to check, there are IPC-related changes in
     # this CL. Auto-CC the review list.
-    output_api.AppendCC('ipc-security-reviews@chromium.org')
+    output_api.AppendCC('ipc-security-reviews@monyhar.org')
 
   # Go through the OWNERS files to check, filtering out rules that are already
   # present in that OWNERS file.
@@ -3064,7 +3064,7 @@ def _CheckAndroidDebuggableBuild(input_api, output_api):
                       r"^chrome[\\/]android[\\/]webapk[\\/].*",
                       r'^third_party[\\/].*',
                       r"tools[\\/]android[\\/]customtabs_benchmark[\\/].*",
-                      r"webview[\\/]chromium[\\/]License.*",)),
+                      r"webview[\\/]monyhar[\\/]License.*",)),
       files_to_check=[r'.*\.java$'])
 
   for f in input_api.AffectedSourceFiles(sources):
@@ -3084,7 +3084,7 @@ def _CheckAndroidDebuggableBuild(input_api, output_api):
 
 # TODO: add unit tests
 def _CheckAndroidToastUsage(input_api, output_api):
-  """Checks that code uses org.chromium.ui.widget.Toast instead of
+  """Checks that code uses org.monyhar.ui.widget.Toast instead of
      android.widget.Toast (Chromium Toast doesn't force hardware
      acceleration on low-end devices, saving memory).
   """
@@ -3113,15 +3113,15 @@ def _CheckAndroidToastUsage(input_api, output_api):
     results.append(output_api.PresubmitError(
         'android.widget.Toast usage is detected. Android toasts use hardware'
         ' acceleration, and can be\ncostly on low-end devices. Please use'
-        ' org.chromium.ui.widget.Toast instead.\n'
-        'Contact dskiba@chromium.org if you have any questions.',
+        ' org.monyhar.ui.widget.Toast instead.\n'
+        'Contact dskiba@monyhar.org if you have any questions.',
         errors))
 
   return results
 
 
 def _CheckAndroidCrLogUsage(input_api, output_api):
-  """Checks that new logs using org.chromium.base.Log:
+  """Checks that new logs using org.monyhar.base.Log:
     - Are using 'TAG' as variable name for the tags (warn)
     - Are using a tag that is shorter than 20 characters (error)
   """
@@ -3132,16 +3132,16 @@ def _CheckAndroidCrLogUsage(input_api, output_api):
     r"^chrome[\\/]android[\\/]webapk[\\/].*",
     # WebView license viewer code cannot depend on //base; used in stub APK.
     r"^android_webview[\\/]glue[\\/]java[\\/]src[\\/]com[\\/]android[\\/]"
-    r"webview[\\/]chromium[\\/]License.*",
+    r"webview[\\/]monyhar[\\/]License.*",
     # The customtabs_benchmark is a small app that does not depend on Chromium
     # java pieces.
     r"tools[\\/]android[\\/]customtabs_benchmark[\\/].*",
   ]
 
   cr_log_import_pattern = input_api.re.compile(
-      r'^import org\.chromium\.base\.Log;$', input_api.re.MULTILINE)
+      r'^import org\.monyhar\.base\.Log;$', input_api.re.MULTILINE)
   class_in_base_pattern = input_api.re.compile(
-      r'^package org\.chromium\.base;$', input_api.re.MULTILINE)
+      r'^package org\.monyhar\.base;$', input_api.re.MULTILINE)
   has_some_log_import_pattern = input_api.re.compile(
       r'^import .*\.Log;$', input_api.re.MULTILINE)
   # Extract the tag from lines like `Log.d(TAG, "*");` or `Log.d("TAG", "*");`
@@ -3220,7 +3220,7 @@ def _CheckAndroidCrLogUsage(input_api, output_api):
 
   if util_log_errors:
     results.append(output_api.PresubmitPromptWarning(
-        'Please use org.chromium.base.Log for new logs.\n' + REF_MSG,
+        'Please use org.monyhar.base.Log for new logs.\n' + REF_MSG,
         util_log_errors))
 
   if tag_with_dot_errors:
@@ -3248,7 +3248,7 @@ def _CheckAndroidTestJUnitFrameworkImport(input_api, output_api):
   if errors:
     results.append(output_api.PresubmitError(
       'APIs from junit.framework.* are deprecated, please use JUnit4 framework'
-      '(org.junit.*) from //third_party/junit. Contact yolandyan@chromium.org'
+      '(org.junit.*) from //third_party/junit. Contact yolandyan@monyhar.org'
       ' if you have any question.', errors))
   return results
 
@@ -3279,7 +3279,7 @@ def _CheckAndroidTestJUnitInheritance(input_api, output_api):
     results.append(output_api.PresubmitPromptWarning(
       'The newly created files include Test classes that inherits from base'
       ' class. Please do not use inheritance in JUnit4 tests or add new'
-      ' JUnit3 tests. Contact yolandyan@chromium.org if you have any'
+      ' JUnit3 tests. Contact yolandyan@monyhar.org if you have any'
       ' questions.', errors))
   return results
 
@@ -3303,7 +3303,7 @@ def _CheckAndroidTestAnnotationUsage(input_api, output_api):
       'Annotations in android.test.suitebuilder.annotation have been'
       ' deprecated since API level 24. Please use android.support.test.filters'
       ' from //third_party/android_support_test_runner:runner_java instead.'
-      ' Contact yolandyan@chromium.org if you have any questions.', errors))
+      ' Contact yolandyan@monyhar.org if you have any questions.', errors))
   return results
 
 
@@ -3323,12 +3323,12 @@ def _CheckAndroidNewMdpiAssetLocation(input_api, output_api):
         'MDPI assets should be placed in /res/drawable-mdpi/ or '
         '/res/drawable-ldrtl-mdpi/\ninstead of /res/drawable/ and'
         '/res/drawable-ldrtl/.\n'
-        'Contact newt@chromium.org if you have questions.', errors))
+        'Contact newt@monyhar.org if you have questions.', errors))
   return results
 
 
 def _CheckAndroidWebkitImports(input_api, output_api):
-  """Checks that code uses org.chromium.base.Callback instead of
+  """Checks that code uses org.monyhar.base.Callback instead of
      android.webview.ValueCallback except in the WebView glue layer
      and WebLayer.
   """
@@ -3358,7 +3358,7 @@ def _CheckAndroidWebkitImports(input_api, output_api):
         'android.webkit.ValueCallback usage is detected outside of the glue'
         ' layer. To stay compatible with the support library, android.webkit.*'
         ' classes should only be used inside the glue layer and'
-        ' org.chromium.base.Callback should be used instead.',
+        ' org.monyhar.base.Callback should be used instead.',
         errors))
 
   return results
@@ -3858,7 +3858,7 @@ def CheckGnGlobForward(input_api, output_api):
         long_text=('The variables "visibilty" and "test_only" should be '
                    'explicitly listed in forward_variables_from(). For more '
                    'details, see:\n'
-                   'https://chromium.googlesource.com/chromium/src/+/HEAD/'
+                   'https://monyhar.googlesource.com/monyhar/src/+/HEAD/'
                    'build/docs/writing_gn_templates.md'
                    '#Using-forward_variables_from'))]
   return []
@@ -3916,7 +3916,7 @@ def CheckCorrectProductNameInMessages(input_api, output_api):
     "correct_name": "Chrome",
     "incorrect_name": "Chromium",
   }, {
-    "filename_postfix": "chromium_strings.grd",
+    "filename_postfix": "monyhar_strings.grd",
     "correct_name": "Chromium",
     "incorrect_name": "Chrome",
   }]
@@ -4020,7 +4020,7 @@ def CheckFuzzTargetsOnUpload(input_api, output_api):
       'LLVMFuzzerInitialize should not be used, unless your fuzz target needs '
       'to access command line arguments passed to the fuzzer. Instead, prefer '
       'static initialization and shared resources as documented in '
-      'https://chromium.googlesource.com/chromium/src/+/main/testing/'
+      'https://monyhar.googlesource.com/monyhar/src/+/main/testing/'
       'libfuzzer/efficient_fuzzing.md#simplifying-initialization_cleanup.\n' % (
           ', '.join(EXPORTED_SYMBOLS), REQUIRED_HEADER)
     )
@@ -4055,7 +4055,7 @@ def _CheckNewImagesWarning(input_api, output_api):
     errors.append(output_api.PresubmitPromptWarning(
         'It looks like you are trying to commit some images. If these are '
         'non-test-only images, please make sure to read and apply the tips in '
-        'https://chromium.googlesource.com/chromium/src/+/HEAD/docs/speed/'
+        'https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/speed/'
         'binary_size/optimization_advice.md#optimizing-images\nThis check is '
         'FYI only and will not block your CL on the CQ.', image_paths))
   return errors
@@ -4149,7 +4149,7 @@ _NON_INCLUSIVE_TERMS = (
             '"# nocheck" or "<!-- nocheck -->"',
             'at the end of the offending line will bypass this PRESUBMIT error',
             'but avoid using this whenever possible. Reach out to',
-            'community@chromium.org if you have questions'),
+            'community@monyhar.org if you have questions'),
         True),)
 
 def ChecksCommon(input_api, output_api):
@@ -4417,7 +4417,7 @@ def CheckForInvalidIfDefinedMacros(input_api, output_api):
 
 def CheckForIPCRules(input_api, output_api):
   """Check for same IPC rules described in
-  http://www.chromium.org/Home/chromium-security/education/security-tips-for-ipc
+  http://www.monyhar.org/Home/monyhar-security/education/security-tips-for-ipc
   """
   base_pattern = r'IPC_ENUM_TRAITS\('
   inclusion_pattern = input_api.re.compile(r'(%s)' % base_pattern)
@@ -4463,7 +4463,7 @@ def CheckForIncludeGuards(input_api, output_api):
   If a file should not have such guards (and it probably should) then it
   should include the string "no-include-guard-because-multiply-included".
   """
-  def is_chromium_header_file(f):
+  def is_monyhar_header_file(f):
     # We only check header files under the control of the Chromium
     # project. That is, those outside third_party apart from
     # third_party/blink.
@@ -4481,7 +4481,7 @@ def CheckForIncludeGuards(input_api, output_api):
 
   errors = []
 
-  for f in input_api.AffectedSourceFiles(is_chromium_header_file):
+  for f in input_api.AffectedSourceFiles(is_monyhar_header_file):
     guard_name = None
     guard_line_number = None
     seen_guard_end = False
@@ -4530,7 +4530,7 @@ def CheckForIncludeGuards(input_api, output_api):
           guard_line_number = line_number
 
           # We allow existing files to use include guards whose names
-          # don't match the chromium style guide, but new files should
+          # don't match the monyhar style guide, but new files should
           # get it right.
           if not f.OldContents():
             if guard_name != expected_guard:
@@ -4670,7 +4670,7 @@ def CheckForUseOfChromeAppsDeprecations(input_api, output_api):
     return [output_api.PresubmitPromptWarning('You are adding/modifying code'
     'related to technologies which will soon be deprecated (Chrome Apps, NaCl,'
     ' PNaCl, PPAPI). See this blog post for more details:\n'
-    'https://blog.chromium.org/2020/08/changes-to-chrome-app-support-timeline.html\n'
+    'https://blog.monyhar.org/2020/08/changes-to-chrome-app-support-timeline.html\n'
     'and this documentation for options to replace these technologies:\n'
     'https://developer.chrome.com/docs/apps/migration/\n'+
     '\n'.join(problems))]
@@ -4715,7 +4715,7 @@ def CheckChangeOnCommit(input_api, output_api):
   results.extend(input_api.canned_checks.CheckTreeIsOpen(
       input_api,
       output_api,
-      json_url='http://chromium-status.appspot.com/current?format=json'))
+      json_url='http://monyhar-status.appspot.com/current?format=json'))
 
   results.extend(
       input_api.canned_checks.CheckPatchFormatted(input_api, output_api))
@@ -5047,7 +5047,7 @@ def CheckStrings(input_api, output_api):
   if icu_syntax_errors:
     results.append(output_api.PresubmitPromptWarning(
       'ICU syntax errors were found in the following strings (problems or '
-      'feedback? Contact rainhard@chromium.org):', items=icu_syntax_errors))
+      'feedback? Contact rainhard@monyhar.org):', items=icu_syntax_errors))
 
   return results
 

@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.suggestions;
+package org.monyhar.chrome.browser.suggestions;
 
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
 
 /**
  * Interface between the suggestion surface and the rest of the browser.

@@ -2,5 +2,5 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-interface org.chromium.IsReadyToPayServiceCallback;
-interface org.chromium.IsReadyToPayService;
+interface org.monyhar.IsReadyToPayServiceCallback;
+interface org.monyhar.IsReadyToPayService;

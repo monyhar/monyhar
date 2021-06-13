@@ -1,8 +1,8 @@
 # for *aura*
-per-file *aura*=sadrul@chromium.org
+per-file *aura*=sadrul@monyhar.org
 
 # for *android*
-per-file *android*=tedchoc@chromium.org
+per-file *android*=tedchoc@monyhar.org
 
 # for Multiple Page Architecture
-altimin@chromium.org
+altimin@monyhar.org

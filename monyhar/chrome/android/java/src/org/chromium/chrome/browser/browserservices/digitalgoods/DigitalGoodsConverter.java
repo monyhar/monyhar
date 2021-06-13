@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.digitalgoods;
+package org.monyhar.chrome.browser.browserservices.digitalgoods;
 
 import android.os.Bundle;
 import android.os.Parcelable;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Log;
-import org.chromium.payments.mojom.BillingResponseCode;
+import org.monyhar.base.Log;
+import org.monyhar.payments.mojom.BillingResponseCode;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,11 +1,11 @@
 file://components/signin/OWNERS
 
-per-file chrome_proximity_auth_*=tbarzic@chromium.org
-per-file chrome_proximity_auth_*=tengs@chromium.org
-per-file chrome_proximity_auth_*=xiyuan@chromium.org
+per-file chrome_proximity_auth_*=tbarzic@monyhar.org
+per-file chrome_proximity_auth_*=tengs@monyhar.org
+per-file chrome_proximity_auth_*=xiyuan@monyhar.org
 
-per-file easy_unlock_*=tbarzic@chromium.org
-per-file easy_unlock_*=tengs@chromium.org
-per-file easy_unlock_*=xiyuan@chromium.org
+per-file easy_unlock_*=tbarzic@monyhar.org
+per-file easy_unlock_*=tengs@monyhar.org
+per-file easy_unlock_*=xiyuan@monyhar.org
 
-per-file signin_profile_attributes_updater*=msalama@chromium.org
+per-file signin_profile_attributes_updater*=msalama@monyhar.org

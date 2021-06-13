@@ -18,11 +18,11 @@ of this archive are copied here.  More specifically:
 3/ source code for SfxSetup, a utility for creating self extracting archives
 4/ C code required for xz decompression (split into its own static library)
 
-The patch in chromium.patch was applied to CpuArch.c to fix register corruption
+The patch in monyhar.patch was applied to CpuArch.c to fix register corruption
 that can occur on 64-bit platforms built with -fPIC and register clobbering that
 occurred on Mac builds (but in principle can occur anywhere).
 
-The patch in Util/SfxSetup/chromium.patch was applied so that:
+The patch in Util/SfxSetup/monyhar.patch was applied so that:
 
 1/ The code compiles without warnings which are treated as errors. Warning is:
    C6246: Local declaration hides declaration of same name in outer scope.

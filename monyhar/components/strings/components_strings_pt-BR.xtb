@@ -821,7 +821,7 @@ Se não fizer isso, a permissão será bloqueada pelas configurações de privac
 <translation id="3986705137476756801">Desativar "Legenda instantânea" por enquanto</translation>
 <translation id="3987405730340719549">O Chrome determinou que este site pode ser falso ou fraudulento.
 
-    Se você acha que essa mensagem foi mostrada por engano, acesse https://bugs.chromium.org/p/chromium/issues/entry?template=Safety+Tips+Appeals (em inglês).</translation>
+    Se você acha que essa mensagem foi mostrada por engano, acesse https://bugs.monyhar.org/p/monyhar/issues/entry?template=Safety+Tips+Appeals (em inglês).</translation>
 <translation id="3987940399970879459">Menos de 1 MB</translation>
 <translation id="3990250421422698716">Ajustar desvio</translation>
 <translation id="3996311196211510766">O site <ph name="ORIGIN" /> solicitou que uma política de origem seja aplicada a todas as solicitações feitas a ele, mas não é possível aplicá-la no momento.</translation>
@@ -1330,7 +1330,7 @@ Se não fizer isso, a permissão será bloqueada pelas configurações de privac
 <translation id="5851548754964597211">Lista de guias</translation>
 <translation id="5855253129151731373">O nome do host deste site é parecido com o de <ph name="LOOKALIKE_DOMAIN" />. Às vezes, os invasores imitam sites, fazendo modificações quase imperceptíveis no nome de domínio.
 
-    Se você acha que essa mensagem foi mostrada por engano, acesse https://bugs.chromium.org/p/chromium/issues/entry?template=Safety+Tips+Appeals (em inglês).</translation>
+    Se você acha que essa mensagem foi mostrada por engano, acesse https://bugs.monyhar.org/p/monyhar/issues/entry?template=Safety+Tips+Appeals (em inglês).</translation>
 <translation id="5860033963881614850">Desativado</translation>
 <translation id="5862579898803147654">Empilhador 8</translation>
 <translation id="5863847714970149516">A página que você está prestes a acessar pode tentar cobrar pagamentos</translation>

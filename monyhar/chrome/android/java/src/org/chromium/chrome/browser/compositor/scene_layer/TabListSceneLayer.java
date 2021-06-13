@@ -2,28 +2,28 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.scene_layer;
+package org.monyhar.chrome.browser.compositor.scene_layer;
 
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.RectF;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsStateProvider;
-import org.chromium.chrome.browser.compositor.LayerTitleCache;
-import org.chromium.chrome.browser.compositor.layouts.Layout;
-import org.chromium.chrome.browser.compositor.layouts.components.LayoutTab;
-import org.chromium.chrome.browser.compositor.layouts.content.TabContentManager;
-import org.chromium.chrome.browser.layouts.scene_layer.SceneLayer;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tasks.tab_management.TabUiFeatureUtilities;
-import org.chromium.components.browser_ui.styles.ChromeColors;
-import org.chromium.ui.resources.ResourceManager;
-import org.chromium.ui.util.ColorUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsStateProvider;
+import org.monyhar.chrome.browser.compositor.LayerTitleCache;
+import org.monyhar.chrome.browser.compositor.layouts.Layout;
+import org.monyhar.chrome.browser.compositor.layouts.components.LayoutTab;
+import org.monyhar.chrome.browser.compositor.layouts.content.TabContentManager;
+import org.monyhar.chrome.browser.layouts.scene_layer.SceneLayer;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tasks.tab_management.TabUiFeatureUtilities;
+import org.monyhar.components.browser_ui.styles.ChromeColors;
+import org.monyhar.ui.resources.ResourceManager;
+import org.monyhar.ui.util.ColorUtils;
 
 /**
  * A SceneLayer to render a tab stack.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer;
+package org.monyhar.weblayer;
 
 import androidx.annotation.IntDef;
 
@@ -23,7 +23,7 @@ public @interface BrowserEmbeddabilityMode {
      * applying View transforms or transparency. Also app should have at most one Browser
      * instance in this mode per window.
      */
-    int UNSUPPORTED = org.chromium.weblayer_private.interfaces.BrowserEmbeddabilityMode.UNSUPPORTED;
+    int UNSUPPORTED = org.monyhar.weblayer_private.interfaces.BrowserEmbeddabilityMode.UNSUPPORTED;
 
     /**
      * Supports embedding use cases.
@@ -33,7 +33,7 @@ public @interface BrowserEmbeddabilityMode {
      * It is suitable for displaying general web content, though some situations may be
      * significantly less efficient.
      */
-    int SUPPORTED = org.chromium.weblayer_private.interfaces.BrowserEmbeddabilityMode.SUPPORTED;
+    int SUPPORTED = org.monyhar.weblayer_private.interfaces.BrowserEmbeddabilityMode.SUPPORTED;
 
     /**
      * Same as SUPPORTED with the page background set to transparent.
@@ -43,6 +43,6 @@ public @interface BrowserEmbeddabilityMode {
      * fully controlled by the embedder, not for general web content.
      */
     int SUPPORTED_WITH_TRANSPARENT_BACKGROUND =
-            org.chromium.weblayer_private.interfaces.BrowserEmbeddabilityMode
+            org.monyhar.weblayer_private.interfaces.BrowserEmbeddabilityMode
                     .SUPPORTED_WITH_TRANSPARENT_BACKGROUND;
 }

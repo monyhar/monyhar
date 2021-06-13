@@ -2,7 +2,7 @@
 
 This file contains high-level info about how ChromeDriver works and how to
 contribute. If you are looking for information on how to use ChromeDriver,
-please see the [ChromeDriver user site](https://chromedriver.chromium.org/).
+please see the [ChromeDriver user site](https://chromedriver.monyhar.org/).
 
 ChromeDriver is an implementation of the
 [WebDriver standard](https://w3c.github.io/webdriver/),
@@ -13,7 +13,7 @@ which allows users to automate testing of their website across browsers.
 ChromeDriver source code is located in the Chromium source repository,
 and shares the same build tools as Chromium.
 To build ChromeDriver, please first follow the instructions to
-[download and build Chromium](https://www.chromium.org/developers/how-tos/get-the-code).
+[download and build Chromium](https://www.monyhar.org/developers/how-tos/get-the-code).
 
 Once you have set up the build environment,
 build ChromeDriver by building the `chromedriver` target, e.g.,
@@ -40,13 +40,13 @@ autoninja -C out/Default clang_x64/chromedriver
 
 For testing purposes, ChromeDriver can be used interactively with python.
 The following is an example on Linux. It assumes that you downloaded Chromium
-repository at ~/chromium/src, and you used out/Default as the build location.
+repository at ~/monyhar/src, and you used out/Default as the build location.
 You may need to adjust the paths if you used different locations.
 The following code uses our own testing API, not the commonly used Python
 binding provided by Selenium.
 
 ```python
-$ cd ~/chromium/src/chrome/test/chromedriver
+$ cd ~/monyhar/src/chrome/test/chromedriver
 $ export PYTHONPATH=$PWD:$PWD/server:$PWD/client
 $ python
 >>> import server
@@ -64,7 +64,7 @@ If Chrome is not found there, it will use the system installed Chrome.
 To use ChromeDriver with Chrome on Android pass the Android package name in the
 chromeOptions.androidPackage capability when creating the driver. You also need
 to have Android SDK's Android Debug Bridge (adb) server running. For
-more detailed instructions see the [user site](https://chromedriver.chromium.org/getting-started/getting-started---android).
+more detailed instructions see the [user site](https://chromedriver.monyhar.org/getting-started/getting-started---android).
 
 ## Architecture
 
@@ -76,7 +76,7 @@ is essentially synchronous JSON commands over HTTP. WebDriver clients are
 available in many languages, and many are available from the open source
 [Selenium WebDriver project](https://www.selenium.dev/).
 ChromeDriver uses the webserver from
-[net/server](https://source.chromium.org/chromium/chromium/src/+/main:net/server/).
+[net/server](https://source.monyhar.org/monyhar/monyhar/src/+/main:net/server/).
 
 Additional information is available on the following pages:
 * [Threading](docs/threading.md): ChromeDriver threading model.

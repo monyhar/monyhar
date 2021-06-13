@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#include "third_party/libaddressinput/chromium/input_suggester.h"
+#include "third_party/libaddressinput/monyhar/input_suggester.h"
 
 #include <cstddef>
 #include <set>
@@ -11,7 +11,7 @@
 #include "base/check_op.h"
 #include "base/logging.h"
 #include "base/macros.h"
-#include "third_party/libaddressinput/chromium/trie.h"
+#include "third_party/libaddressinput/monyhar/trie.h"
 #include "third_party/libaddressinput/src/cpp/include/libaddressinput/address_data.h"
 #include "third_party/libaddressinput/src/cpp/include/libaddressinput/callback.h"
 #include "third_party/libaddressinput/src/cpp/include/libaddressinput/preload_supplier.h"

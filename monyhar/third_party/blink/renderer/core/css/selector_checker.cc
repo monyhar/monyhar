@@ -562,7 +562,7 @@ static bool AnyAttributeMatches(Element& element,
         !HTMLDocument::IsCaseSensitiveAttribute(selector_attr);
 
     // If case-insensitive, re-check, and count if result differs.
-    // See http://code.google.com/p/chromium/issues/detail?id=327060
+    // See http://code.google.com/p/monyhar/issues/detail?id=327060
     if (legacy_case_insensitive &&
         AttributeValueMatches(attribute_item, match, selector_value,
                               kTextCaseASCIIInsensitive)) {

@@ -318,7 +318,7 @@ class AutotestPrivateArcPerformanceTracing : public AutotestPrivateApiTest {
 IN_PROC_BROWSER_TEST_F(AutotestPrivateArcPerformanceTracing, Basic) {
   views::Widget* const arc_widget =
       arc::ArcAppPerformanceTracingTestHelper::CreateArcWindow(
-          "org.chromium.arc.1");
+          "org.monyhar.arc.1");
   performance_tracing()->OnWindowActivated(
       wm::ActivationChangeObserver::ActivationReason::ACTIVATION_CLIENT,
       arc_widget->GetNativeWindow(), arc_widget->GetNativeWindow());

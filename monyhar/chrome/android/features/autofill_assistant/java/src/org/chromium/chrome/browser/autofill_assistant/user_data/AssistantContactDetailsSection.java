@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.user_data;
+package org.monyhar.chrome.browser.autofill_assistant.user_data;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -13,10 +13,10 @@ import android.widget.TextView;
 import androidx.annotation.DrawableRes;
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataModel.ContactModel;
-import org.chromium.chrome.browser.payments.AutofillContact;
-import org.chromium.chrome.browser.payments.ContactEditor;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataModel.ContactModel;
+import org.monyhar.chrome.browser.payments.AutofillContact;
+import org.monyhar.chrome.browser.payments.ContactEditor;
 
 import java.util.ArrayList;
 import java.util.List;

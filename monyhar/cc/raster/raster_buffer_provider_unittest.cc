@@ -48,7 +48,7 @@
 #include "components/viz/test/test_context_support.h"
 #include "components/viz/test/test_gles2_interface.h"
 #include "components/viz/test/test_gpu_memory_buffer_manager.h"
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "gpu/command_buffer/client/gles2_interface.h"
 #include "gpu/command_buffer/client/raster_implementation_gles.h"
 #include "gpu/command_buffer/client/raster_interface.h"
@@ -456,7 +456,7 @@ TEST_P(RasterBufferProviderTest, FailedMapResource) {
     return;
 
   viz::TestGLES2Interface* gl = context_provider_->TestContextGL();
-  gl->set_times_map_buffer_chromium_succeeds(0);
+  gl->set_times_map_buffer_monyhar_succeeds(0);
   AppendTask(0u);
   ScheduleTasks();
 

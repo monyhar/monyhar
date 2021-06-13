@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps;
+package org.monyhar.chrome.browser.webapps;
 
-import static org.chromium.components.webapk.lib.common.WebApkConstants.WEBAPK_PACKAGE_PREFIX;
-import static org.chromium.webapk.lib.common.WebApkConstants.EXTRA_RELAUNCH;
-import static org.chromium.webapk.lib.common.WebApkConstants.EXTRA_SPLASH_PROVIDED_BY_WEBAPK;
-import static org.chromium.webapk.lib.common.WebApkConstants.EXTRA_WEBAPK_PACKAGE_NAME;
+import static org.monyhar.components.webapk.lib.common.WebApkConstants.WEBAPK_PACKAGE_PREFIX;
+import static org.monyhar.webapk.lib.common.WebApkConstants.EXTRA_RELAUNCH;
+import static org.monyhar.webapk.lib.common.WebApkConstants.EXTRA_SPLASH_PROVIDED_BY_WEBAPK;
+import static org.monyhar.webapk.lib.common.WebApkConstants.EXTRA_WEBAPK_PACKAGE_NAME;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -24,20 +24,20 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.Log;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.ShortcutHelper;
-import org.chromium.chrome.browser.WarmupManager;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.customtabs.BaseCustomTabActivity;
-import org.chromium.chrome.browser.document.ChromeLauncherActivity;
-import org.chromium.chrome.browser.firstrun.FirstRunFlowSequencer;
-import org.chromium.components.webapk.lib.client.WebApkValidator;
-import org.chromium.components.webapps.ShortcutSource;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.ShortcutHelper;
+import org.monyhar.chrome.browser.WarmupManager;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.customtabs.BaseCustomTabActivity;
+import org.monyhar.chrome.browser.document.ChromeLauncherActivity;
+import org.monyhar.chrome.browser.firstrun.FirstRunFlowSequencer;
+import org.monyhar.components.webapk.lib.client.WebApkValidator;
+import org.monyhar.components.webapps.ShortcutSource;
 
 import java.lang.ref.WeakReference;
 
@@ -54,9 +54,9 @@ public class WebappLauncherActivity extends Activity {
             "com.google.android.apps.chrome.webapps.WebappManager.ACTION_START_WEBAPP";
 
     public static final String SECURE_WEBAPP_LAUNCHER =
-            "org.chromium.chrome.browser.webapps.SecureWebAppLauncher";
+            "org.monyhar.chrome.browser.webapps.SecureWebAppLauncher";
     public static final String ACTION_START_SECURE_WEBAPP =
-            "org.chromium.chrome.browser.webapps.WebappManager.ACTION_START_SECURE_WEBAPP";
+            "org.monyhar.chrome.browser.webapps.WebappManager.ACTION_START_SECURE_WEBAPP";
 
     /**
      * Delay in ms for relaunching WebAPK as a result of getting intent with extra

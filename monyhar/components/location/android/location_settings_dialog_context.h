@@ -7,7 +7,7 @@
 
 // An enum to describe the context in which a system location setting prompt
 // is triggered to allow the prompt UI to be customized to the given context.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.location
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.location
 enum LocationSettingsDialogContext {
   // Default context.
   DEFAULT = 1,

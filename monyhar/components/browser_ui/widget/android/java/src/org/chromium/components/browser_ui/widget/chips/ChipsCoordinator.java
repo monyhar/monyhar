@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.chips;
+package org.monyhar.components.browser_ui.widget.chips;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -13,10 +13,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.ItemDecoration;
 import androidx.recyclerview.widget.RecyclerView.State;
 
-import org.chromium.components.browser_ui.widget.R;
-import org.chromium.ui.modelutil.ListModel;
-import org.chromium.ui.modelutil.RecyclerViewAdapter;
-import org.chromium.ui.modelutil.SimpleRecyclerViewMcp;
+import org.monyhar.components.browser_ui.widget.R;
+import org.monyhar.ui.modelutil.ListModel;
+import org.monyhar.ui.modelutil.RecyclerViewAdapter;
+import org.monyhar.ui.modelutil.SimpleRecyclerViewMcp;
 
 import java.util.List;
 

@@ -14,7 +14,7 @@
  * limitations under the License
  */
 
-package org.chromium.third_party.android.provider;
+package org.monyhar.third_party.android.provider;
 
 import android.annotation.TargetApi;
 import android.content.ContentValues;

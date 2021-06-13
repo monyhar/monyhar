@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting;
+package org.monyhar.chromoting;
 
 import android.os.Handler;
 import android.os.Looper;
@@ -14,9 +14,9 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chromoting.test.util.MutableReference;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chromoting.test.util.MutableReference;
 
 import java.util.ArrayList;
 import java.util.List;

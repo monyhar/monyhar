@@ -3,7 +3,7 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
 
-<org.chromium.components.infobars.InfoBarMessageView
+<org.monyhar.components.infobars.InfoBarMessageView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/infobar_message"
     android:layout_width="match_parent"

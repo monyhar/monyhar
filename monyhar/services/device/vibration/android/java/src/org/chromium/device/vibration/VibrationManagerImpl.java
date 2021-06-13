@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.device.vibration;
+package org.monyhar.device.vibration;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.media.AudioManager;
 import android.os.Vibrator;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.device.mojom.VibrationManager;
-import org.chromium.mojo.system.MojoException;
-import org.chromium.services.service_manager.InterfaceFactory;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.device.mojom.VibrationManager;
+import org.monyhar.mojo.system.MojoException;
+import org.monyhar.services.service_manager.InterfaceFactory;
 
 /**
  * Android implementation of the VibrationManager interface defined in

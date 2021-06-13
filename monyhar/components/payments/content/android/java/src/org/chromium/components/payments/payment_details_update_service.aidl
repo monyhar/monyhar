@@ -2,5 +2,5 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-interface org.chromium.components.payments.IPaymentDetailsUpdateService;
-interface org.chromium.components.payments.IPaymentDetailsUpdateServiceCallback;
+interface org.monyhar.components.payments.IPaymentDetailsUpdateService;
+interface org.monyhar.components.payments.IPaymentDetailsUpdateServiceCallback;

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments;
+package org.monyhar.chrome.browser.payments;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -12,25 +12,25 @@ import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 import androidx.appcompat.content.res.AppCompatResources;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.autofill.PersonalDataManager;
-import org.chromium.chrome.browser.autofill.PersonalDataManager.AutofillProfile;
-import org.chromium.chrome.browser.autofill.PersonalDataManager.CreditCard;
-import org.chromium.chrome.browser.autofill.PersonalDataManager.FullCardRequestDelegate;
-import org.chromium.chrome.browser.autofill.PersonalDataManager.NormalizedAddressRequestDelegate;
-import org.chromium.components.payments.BasicCardUtils;
-import org.chromium.components.payments.ErrorStrings;
-import org.chromium.components.payments.PayerData;
-import org.chromium.components.payments.PaymentApp;
-import org.chromium.components.payments.PaymentAppType;
-import org.chromium.components.payments.PaymentFeatureList;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.payments.mojom.PaymentDetailsModifier;
-import org.chromium.payments.mojom.PaymentItem;
-import org.chromium.payments.mojom.PaymentMethodData;
-import org.chromium.payments.mojom.PaymentOptions;
-import org.chromium.payments.mojom.PaymentShippingOption;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager.AutofillProfile;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager.CreditCard;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager.FullCardRequestDelegate;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager.NormalizedAddressRequestDelegate;
+import org.monyhar.components.payments.BasicCardUtils;
+import org.monyhar.components.payments.ErrorStrings;
+import org.monyhar.components.payments.PayerData;
+import org.monyhar.components.payments.PaymentApp;
+import org.monyhar.components.payments.PaymentAppType;
+import org.monyhar.components.payments.PaymentFeatureList;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.payments.mojom.PaymentDetailsModifier;
+import org.monyhar.payments.mojom.PaymentItem;
+import org.monyhar.payments.mojom.PaymentMethodData;
+import org.monyhar.payments.mojom.PaymentOptions;
+import org.monyhar.payments.mojom.PaymentShippingOption;
 
 import java.io.IOException;
 import java.io.StringWriter;

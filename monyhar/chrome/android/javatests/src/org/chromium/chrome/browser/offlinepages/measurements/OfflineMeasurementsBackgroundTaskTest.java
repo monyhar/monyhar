@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.offlinepages.measurements;
+package org.monyhar.chrome.browser.offlinepages.measurements;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -18,23 +18,23 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.FeatureList;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.chrome.browser.content.ContentUtils;
-import org.chromium.chrome.browser.flags.CachedFeatureFlags;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.components.background_task_scheduler.BackgroundTask;
-import org.chromium.components.background_task_scheduler.BackgroundTaskScheduler;
-import org.chromium.components.background_task_scheduler.BackgroundTaskSchedulerFactory;
-import org.chromium.components.background_task_scheduler.TaskIds;
-import org.chromium.components.background_task_scheduler.TaskInfo;
-import org.chromium.components.background_task_scheduler.TaskParameters;
-import org.chromium.content_public.browser.test.NativeLibraryTestUtils;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.net.test.EmbeddedTestServer;
+import org.monyhar.base.FeatureList;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.chrome.browser.content.ContentUtils;
+import org.monyhar.chrome.browser.flags.CachedFeatureFlags;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.components.background_task_scheduler.BackgroundTask;
+import org.monyhar.components.background_task_scheduler.BackgroundTaskScheduler;
+import org.monyhar.components.background_task_scheduler.BackgroundTaskSchedulerFactory;
+import org.monyhar.components.background_task_scheduler.TaskIds;
+import org.monyhar.components.background_task_scheduler.TaskInfo;
+import org.monyhar.components.background_task_scheduler.TaskParameters;
+import org.monyhar.content_public.browser.test.NativeLibraryTestUtils;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.net.test.EmbeddedTestServer;
 
 import java.util.HashMap;
 import java.util.concurrent.Semaphore;

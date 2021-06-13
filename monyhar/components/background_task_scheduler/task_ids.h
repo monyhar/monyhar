@@ -20,7 +20,7 @@ namespace background_task {
 // 111000000 to 111999999 are reserved for internal usage. A Java counterpart
 // will be generated for this enum.
 // GENERATED_JAVA_ENUM_PACKAGE: (
-// org.chromium.components.background_task_scheduler)
+// org.monyhar.components.background_task_scheduler)
 enum class TaskIds {
   TEST = 0x00008378,
   OMAHA_JOB_ID = 0x00011684,

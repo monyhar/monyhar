@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.digitalgoods;
+package org.monyhar.chrome.browser.browserservices.digitalgoods;
 
-import org.chromium.mojo.system.MojoException;
-import org.chromium.payments.mojom.DigitalGoods;
-import org.chromium.payments.mojom.DigitalGoods.AcknowledgeResponse;
-import org.chromium.payments.mojom.DigitalGoods.GetDetailsResponse;
-import org.chromium.payments.mojom.DigitalGoods.ListPurchasesResponse;
-import org.chromium.payments.mojom.ItemDetails;
-import org.chromium.payments.mojom.PaymentCurrencyAmount;
+import org.monyhar.mojo.system.MojoException;
+import org.monyhar.payments.mojom.DigitalGoods;
+import org.monyhar.payments.mojom.DigitalGoods.AcknowledgeResponse;
+import org.monyhar.payments.mojom.DigitalGoods.GetDetailsResponse;
+import org.monyhar.payments.mojom.DigitalGoods.ListPurchasesResponse;
+import org.monyhar.payments.mojom.ItemDetails;
+import org.monyhar.payments.mojom.PaymentCurrencyAmount;
 
 import java.util.HashMap;
 import java.util.Map;

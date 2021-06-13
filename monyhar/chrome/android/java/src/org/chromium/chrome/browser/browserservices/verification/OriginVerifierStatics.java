@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.verification;
+package org.monyhar.chrome.browser.browserservices.verification;
 
 import android.content.pm.PackageManager;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.browser.customtabs.CustomTabsService;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.components.embedder_support.util.Origin;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.components.embedder_support.util.Origin;
 
 /**
  * Adds a layer of indirection to calls to static methods on {@link OriginVerifier}. This allows us

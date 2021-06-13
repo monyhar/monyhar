@@ -8,7 +8,7 @@
 
 ## What is it? {#what-is-it}
 
-`chromium/src` has millions of lines of code. Sometimes, we want to change code that has been used for years and is referenced from thousands of places throughout the codebase. These sorts of changes are referred to as LSCs (Large Scale Changes) and generally require complex planning.
+`monyhar/src` has millions of lines of code. Sometimes, we want to change code that has been used for years and is referenced from thousands of places throughout the codebase. These sorts of changes are referred to as LSCs (Large Scale Changes) and generally require complex planning.
 
 This page and the referenced docs describe the policies and best practices that go into the planning, creating, and executing changes that impact many distinct packages.
 
@@ -54,8 +54,8 @@ As a LSC Requestor, you can split your CLs across these boundaries.
 
 ### Historical examples of candidates for this new process {#historical-examples-of-candidates-for-this-new-process}
 
-* [Migrate from base::Bind() to base::BindOnce() or base::BindRepeating()](https://bugs.chromium.org/p/chromium/issues/detail?id=714018)
-* [Restrict abilities of MessageLoop::current() (and ultimately remove it)](https://bugs.chromium.org/p/chromium/issues/detail?id=825327)
+* [Migrate from base::Bind() to base::BindOnce() or base::BindRepeating()](https://bugs.monyhar.org/p/monyhar/issues/detail?id=714018)
+* [Restrict abilities of MessageLoop::current() (and ultimately remove it)](https://bugs.monyhar.org/p/monyhar/issues/detail?id=825327)
 
 ## Best practices {#best-practices}
 
@@ -77,9 +77,9 @@ As a LSC Requestor, you can split your CLs across these boundaries.
   * If all sub-CLs affect the same OWNERS, you do not need to follow the LSC process and instead can talk to an area owner for how to proceed with your change.
 * **What do I have to do?** Follow the steps at [Chrome LSC Workflow](lsc_workflow.md).
 * **How long will this process take?** You should expect an initial response from a cleanup approver within two days.
-* **I'm in a hurry; Is there a fast track?** Eng Review may fast-track low-risk changes, with a response estimated between a few hours to one business day. If you'd like to request fast tracking, email [lsc-review](https://groups.google.com/a/chromium.org/d/forum/lsc-review) with a link to the doc that you created end of [Chrome LSC Workflow](lsc_workflow.md) and we'll get to it as quickly as we can.
+* **I'm in a hurry; Is there a fast track?** Eng Review may fast-track low-risk changes, with a response estimated between a few hours to one business day. If you'd like to request fast tracking, email [lsc-review](https://groups.google.com/a/monyhar.org/d/forum/lsc-review) with a link to the doc that you created end of [Chrome LSC Workflow](lsc_workflow.md) and we'll get to it as quickly as we can.
 * **Why this process?** Changes that operate broadly across the codebase affect many engineers and teams and these changes may generate discussion on the change or the best way to roll it out. This process is in place to make sure that these changes are useful, well-communicated, and to minimize the risk of having to attempt difficult rollbacks.
-* **I have an idea for a change, but I’m not sure who to ask about it?** Definitely email the lsc-review@chromium.org list. We should be able to give you at least a vague idea of whether your idea has merit and who to approach as a domain expert to move ahead.
+* **I have an idea for a change, but I’m not sure who to ask about it?** Definitely email the lsc-review@monyhar.org list. We should be able to give you at least a vague idea of whether your idea has merit and who to approach as a domain expert to move ahead.
 * **My LSC touches third_party, do I have to do anything special?** These changes are likely to be rare. If it does occur, please obey the normal rules for third_party changes. Be aware that some parts of third_party have an external codebase as their source-of-truth, and so are mechanically generated (e.g. by Copybara [[external](https://opensource.google/projects/copybara), [internal, Googlers only](http://go/copybara)]). This means that your changes will be overwritten by the next import.
 * **My proposal was accepted for "local approval", now what?** Get your CLs submitted. For changes at this scale, it's usually best to use Find Owners and Auto-Submit. If anything surprising comes up during this process, or you need to ask questions to someone familiar with the process, try your assigned committee reviewer (see your LSC document). As with any wide-scale change, you should also consider announcing it on a mailing list that covers the target audience.
 * **My proposal was accepted for "global approval", now what?** Contact your Eng Review reviewer: they should have granted you (or your Googler sponsor) Global Approver power. The techniques for getting these submitted via global owner approval vary based on what is being changed, your approver will know what's what for your particular LSC. As with any wide-scale change, you should also consider announcing it on a mailing list. Any coworker or contributor can be your second-set of eyes to mass Code-Review +1 all of your CLs.
@@ -110,12 +110,12 @@ If you wish to share your concerns, see the contact info below.
 
 ## History and evolution {#history-and-evolution}
 
-Chrome’s LSC process was introduced to reduce the use of self-code-review to bypass OWNERS as we moved to make code review mandatory. It (and this doc) were heavily copied from a Google-internal process that has been in place for more than a decade. We needed an improved workflow for submitting large scale changes (i.e. refactorings or architectural changes) across a big codebase (e.g. chromium/src). Because it had been so slow to get OWNERS approval for dozens of directories across dozens of CLs, folks in chromium/src had the convention of code-review from a main owner and then TBR= every other owner.
+Chrome’s LSC process was introduced to reduce the use of self-code-review to bypass OWNERS as we moved to make code review mandatory. It (and this doc) were heavily copied from a Google-internal process that has been in place for more than a decade. We needed an improved workflow for submitting large scale changes (i.e. refactorings or architectural changes) across a big codebase (e.g. monyhar/src). Because it had been so slow to get OWNERS approval for dozens of directories across dozens of CLs, folks in monyhar/src had the convention of code-review from a main owner and then TBR= every other owner.
 
 ## Whom to contact {#whom-to-contact}
 
-* lsc-policy@chromium.org for questions about best practices, documentation, or this FAQ.
-* lsc-review@chromium.org for questions about a particular change.
+* lsc-policy@monyhar.org for questions about best practices, documentation, or this FAQ.
+* lsc-review@monyhar.org for questions about a particular change.
 
 ## Additional resources {#additional-resources}
 

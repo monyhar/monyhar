@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.thumbnail.generator;
+package org.monyhar.chrome.browser.thumbnail.generator;
 
-import org.chromium.base.Callback;
-import org.chromium.base.annotations.NativeMethods;
+import org.monyhar.base.Callback;
+import org.monyhar.base.annotations.NativeMethods;
 
 /**
  * A JNI bridge that owns a native side ThumbnailMediaParser, which parses media file safely in an

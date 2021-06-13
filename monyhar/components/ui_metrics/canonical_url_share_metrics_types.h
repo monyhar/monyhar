@@ -10,7 +10,7 @@ namespace ui_metrics {
 const char kCanonicalURLResultHistogram[] = "Mobile.CanonicalURLResult";
 
 // Used to report the result of the retrieval of the Canonical URL.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.ui_metrics
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.ui_metrics
 enum CanonicalURLResult {
   // The canonical URL retrieval failed because the visible URL is not HTTPS.
   FAILED_VISIBLE_URL_NOT_HTTPS = 0,

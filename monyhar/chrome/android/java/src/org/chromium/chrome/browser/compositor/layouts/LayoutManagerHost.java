@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.layouts;
+package org.monyhar.chrome.browser.compositor.layouts;
 
 import android.content.Context;
 import android.graphics.RectF;
 import android.view.View;
 
-import org.chromium.chrome.browser.compositor.TitleCache;
-import org.chromium.chrome.browser.fullscreen.BrowserControlsManager;
-import org.chromium.chrome.browser.fullscreen.FullscreenManager;
+import org.monyhar.chrome.browser.compositor.TitleCache;
+import org.monyhar.chrome.browser.fullscreen.BrowserControlsManager;
+import org.monyhar.chrome.browser.fullscreen.FullscreenManager;
 
 /**
  * This is the minimal interface of the host view from the layout side.

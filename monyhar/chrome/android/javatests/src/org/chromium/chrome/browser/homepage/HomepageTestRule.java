@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.homepage;
+package org.monyhar.chrome.browser.homepage;
 
 import android.support.test.InstrumentationRegistry;
 import android.text.TextUtils;
@@ -13,13 +13,13 @@ import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.components.policy.AbstractAppRestrictionsProvider;
-import org.chromium.components.policy.AppRestrictionsProvider;
-import org.chromium.components.policy.CombinedPolicyProvider;
-import org.chromium.components.policy.test.PolicyData;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.components.policy.AbstractAppRestrictionsProvider;
+import org.monyhar.components.policy.AppRestrictionsProvider;
+import org.monyhar.components.policy.CombinedPolicyProvider;
+import org.monyhar.components.policy.test.PolicyData;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.Arrays;
 

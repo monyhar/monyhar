@@ -29,7 +29,7 @@ namespace syncer {
 // An object's type is inferred from the type of data it holds.
 //
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.sync
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.sync
 //
 // |kModelTypeInfoMap| struct entries are in the same order as their definition
 // in ModelType enum. When you make changes in ModelType enum, don't forget to

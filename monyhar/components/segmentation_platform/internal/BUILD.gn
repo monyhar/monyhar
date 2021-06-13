@@ -115,7 +115,7 @@ source_set("unit_tests") {
 if (is_android) {
   android_library("internal_java") {
     visibility = [ "//chrome/android:chrome_all_java" ]
-    sources = [ "android/java/src/org/chromium/components/segmentation_platform/SegmentationPlatformServiceImpl.java" ]
+    sources = [ "android/java/src/org/monyhar/components/segmentation_platform/SegmentationPlatformServiceImpl.java" ]
 
     deps = [
       "//base:base_java",

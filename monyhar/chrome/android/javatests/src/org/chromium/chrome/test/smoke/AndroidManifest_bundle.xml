@@ -6,7 +6,7 @@
 
 <manifest
       xmlns:android="http://schemas.android.com/apk/res/android"
-      package="org.chromium.chrome.test.smoke.bundle">
+      package="org.monyhar.chrome.test.smoke.bundle">
 
     <uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -21,15 +21,15 @@
         <uses-library android:name="android.test.runner" />
     </application>
 
-    <instrumentation android:name="org.chromium.base.test.BaseChromiumAndroidJUnitRunner"
-        android:targetPackage="org.chromium.chrome.test.smoke.bundle"
-        android:label="Runner for org.chromium.chrome.test.smoke.bundle"/>
+    <instrumentation android:name="org.monyhar.base.test.BaseChromiumAndroidJUnitRunner"
+        android:targetPackage="org.monyhar.chrome.test.smoke.bundle"
+        android:label="Runner for org.monyhar.chrome.test.smoke.bundle"/>
 
     <!-- In Android-11 or newer, apks need to have the <queries> element when
          querying and interfacting with other packages. See
          https://developer.android.com/training/basics/intents/package-visibility#package-name
          for more details. -->
     <queries>
-      <package android:name="org.chromium.chrome" />
+      <package android:name="org.monyhar.chrome" />
     </queries>
 </manifest>

@@ -13,7 +13,7 @@
 #include "chrome/browser/ui/views/frame/browser_frame_lacros.h"
 #endif
 #include "chrome/browser/ui/views/frame/native_browser_frame_factory.h"
-#include "chrome/grit/chromium_strings.h"
+#include "chrome/grit/monyhar_strings.h"
 #include "components/safe_browsing/core/password_protection/metrics_util.h"
 #if defined(USE_AURA)
 #include "ui/aura/client/aura_constants.h"

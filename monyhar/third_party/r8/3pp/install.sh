@@ -13,7 +13,7 @@ DEPS_PREFIX="$2"
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
 # Download depot_tools
-git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git $SCRIPT_DIR/depot_tools
+git clone https://monyhar.googlesource.com/monyhar/tools/depot_tools.git $SCRIPT_DIR/depot_tools
 
 # Build
 PATH=$SCRIPT_DIR/depot_tools:$PATH tools/gradle.py r8

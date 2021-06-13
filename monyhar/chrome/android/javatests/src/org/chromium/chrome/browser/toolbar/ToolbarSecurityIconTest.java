@@ -1,7 +1,7 @@
 // Copyright 2017 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.chrome.browser.toolbar;
+package org.monyhar.chrome.browser.toolbar;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.any;
@@ -17,21 +17,21 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.UiThreadTest;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.omnibox.LocationBarLayout;
-import org.chromium.chrome.browser.omnibox.NewTabPageDelegate;
-import org.chromium.chrome.browser.omnibox.SearchEngineLogoUtils;
-import org.chromium.chrome.browser.tab.TabImpl;
-import org.chromium.chrome.test.util.ToolbarTestUtils;
-import org.chromium.components.security_state.ConnectionSecurityLevel;
-import org.chromium.components.security_state.SecurityStateModel;
-import org.chromium.components.security_state.SecurityStateModelJni;
-import org.chromium.content_public.browser.test.NativeLibraryTestUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.UiThreadTest;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.omnibox.LocationBarLayout;
+import org.monyhar.chrome.browser.omnibox.NewTabPageDelegate;
+import org.monyhar.chrome.browser.omnibox.SearchEngineLogoUtils;
+import org.monyhar.chrome.browser.tab.TabImpl;
+import org.monyhar.chrome.test.util.ToolbarTestUtils;
+import org.monyhar.components.security_state.ConnectionSecurityLevel;
+import org.monyhar.components.security_state.SecurityStateModel;
+import org.monyhar.components.security_state.SecurityStateModelJni;
+import org.monyhar.content_public.browser.test.NativeLibraryTestUtils;
 
 /**
  * Unit tests for {@link LocationBarLayout} class.

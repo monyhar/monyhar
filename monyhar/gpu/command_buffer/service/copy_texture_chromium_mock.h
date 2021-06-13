@@ -6,7 +6,7 @@
 #define GPU_COMMAND_BUFFER_SERVICE_COPY_TEXTURE_CHROMIUM_MOCK_H_
 
 #include "gpu/command_buffer/service/gles2_cmd_copy_tex_image.h"
-#include "gpu/command_buffer/service/gles2_cmd_copy_texture_chromium.h"
+#include "gpu/command_buffer/service/gles2_cmd_copy_texture_monyhar.h"
 
 #include "testing/gmock/include/gmock/gmock.h"
 

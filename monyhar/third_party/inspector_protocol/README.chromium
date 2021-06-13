@@ -1,6 +1,6 @@
 Name: inspector protocol
 Short Name: inspector_protocol
-URL: https://chromium.googlesource.com/deps/inspector_protocol/
+URL: https://monyhar.googlesource.com/deps/inspector_protocol/
 Version: 0
 Revision: 35e8d2d89cb017d72cf905362672de77c978e1e6
 License: BSD
@@ -15,4 +15,4 @@ Local modifications:
 - This only includes the lib/, templates/, crdtp/ directories, scripts, build
   and the LICENSE files.
 - DEPS files to allow dependencies on base and gtest, for test_platform.{h,cc}
-- Chromium specific files in crdtp/chromium.
+- Chromium specific files in crdtp/monyhar.

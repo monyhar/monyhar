@@ -58,7 +58,7 @@ class BrowserTestPortOverrides(object):
         to src/chrome/test/data/printing/layout_tests.
         """
         # pylint: disable=no-member
-        return self._path_from_chromium_base('chrome', 'test', 'data',
+        return self._path_from_monyhar_base('chrome', 'test', 'data',
                                              'printing', 'layout_tests')
 
     def check_sys_deps(self):

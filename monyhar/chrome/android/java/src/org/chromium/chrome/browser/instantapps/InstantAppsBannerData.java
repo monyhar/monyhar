@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.instantapps;
+package org.monyhar.chrome.browser.instantapps;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * Encapsulates information needed to display an {@link InstantAppsInfoBar}.

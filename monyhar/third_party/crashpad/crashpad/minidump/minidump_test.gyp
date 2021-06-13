@@ -23,7 +23,7 @@
       'dependencies': [
         'minidump.gyp:crashpad_minidump',
         '../third_party/googletest/googletest.gyp:googletest',
-        '../third_party/mini_chromium/mini_chromium.gyp:base',
+        '../third_party/mini_monyhar/mini_monyhar.gyp:base',
       ],
       'include_dirs': [
         '..',
@@ -57,7 +57,7 @@
         '../test/test.gyp:crashpad_googletest_main',
         '../test/test.gyp:crashpad_test',
         '../third_party/googletest/googletest.gyp:googletest',
-        '../third_party/mini_chromium/mini_chromium.gyp:base',
+        '../third_party/mini_monyhar/mini_monyhar.gyp:base',
         '../util/util.gyp:crashpad_util',
       ],
       'include_dirs': [

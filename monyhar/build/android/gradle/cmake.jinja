@@ -17,7 +17,7 @@ include_directories(
 
 # Android studio will index faster when adding all sources into one library.
 {% if native.sources is defined %}
-add_library("chromium"
+add_library("monyhar"
 {% for path in native.sources %}
     {{ path }}
 {% endfor %}

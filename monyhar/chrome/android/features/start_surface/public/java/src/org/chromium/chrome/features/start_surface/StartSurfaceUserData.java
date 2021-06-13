@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.features.start_surface;
+package org.monyhar.chrome.features.start_surface;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.UserData;
-import org.chromium.chrome.browser.tab.Tab;
+import org.monyhar.base.UserData;
+import org.monyhar.chrome.browser.tab.Tab;
 
 /**
  * Helper class for Tabs created from the Start surface.
@@ -38,7 +38,7 @@ public class StartSurfaceUserData implements UserData {
     /**
      * Sets the flag of whether to keep the given tab in the TabModel without auto deleting when
      * tapping the back button. This flag is for a tab with launchType
-     * {@link org.chromium.chrome.browser.tab.TabLaunchType.FROM_START_SURFACE}.
+     * {@link org.monyhar.chrome.browser.tab.TabLaunchType.FROM_START_SURFACE}.
      */
     public static void setKeepTab(Tab tab, boolean keepTab) {
         StartSurfaceUserData startSurfaceUserData = get(tab);

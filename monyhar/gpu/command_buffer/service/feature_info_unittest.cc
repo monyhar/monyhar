@@ -180,7 +180,7 @@ INSTANTIATE_TEST_SUITE_P(Service,
 TEST_P(FeatureInfoTest, Basic) {
   SetupWithoutInit();
   // Test it starts off uninitialized.
-  EXPECT_FALSE(info_->feature_flags().chromium_framebuffer_multisample);
+  EXPECT_FALSE(info_->feature_flags().monyhar_framebuffer_multisample);
   EXPECT_FALSE(info_->feature_flags().multisampled_render_to_texture);
   EXPECT_FALSE(info_->feature_flags(
       ).use_img_for_multisampled_render_to_texture);
@@ -368,8 +368,8 @@ TEST_P(FeatureInfoTest, InitializeNoExtensions) {
       GL_DEPTH24_STENCIL8_OES));
   EXPECT_FALSE(info_->validators()->equation.IsValid(GL_MIN_EXT));
   EXPECT_FALSE(info_->validators()->equation.IsValid(GL_MAX_EXT));
-  EXPECT_FALSE(info_->feature_flags().chromium_sync_query);
-  EXPECT_FALSE(info_->feature_flags().chromium_image_ycbcr_422);
+  EXPECT_FALSE(info_->feature_flags().monyhar_sync_query);
+  EXPECT_FALSE(info_->feature_flags().monyhar_image_ycbcr_422);
 }
 
 TEST_P(FeatureInfoTest, InitializeWithANGLE) {
@@ -909,8 +909,8 @@ TEST_P(FeatureInfoTest,
 
 TEST_P(FeatureInfoTest, InitializeARB_texture_float) {
   DisallowedFeatures disallowed_features;
-  disallowed_features.chromium_color_buffer_float_rgb = true;
-  disallowed_features.chromium_color_buffer_float_rgba = true;
+  disallowed_features.monyhar_color_buffer_float_rgb = true;
+  disallowed_features.monyhar_color_buffer_float_rgba = true;
   SetupInitExpectationsWithGLVersionAndDisallowedFeatures(
       "GL_ARB_texture_float", "", "3.0", disallowed_features);
   EXPECT_FALSE(gfx::HasExtension(info_->extensions(),
@@ -1035,7 +1035,7 @@ TEST_P(FeatureInfoTest, InitializeOES_texture_half_float_linearGLES2) {
 TEST_P(FeatureInfoTest, InitializeEXT_framebuffer_multisample) {
   SetupInitExpectations(
       "GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample");
-  EXPECT_TRUE(info_->feature_flags().chromium_framebuffer_multisample);
+  EXPECT_TRUE(info_->feature_flags().monyhar_framebuffer_multisample);
   EXPECT_TRUE(gfx::HasExtension(info_->extensions(),
                                 "GL_CHROMIUM_framebuffer_multisample"));
   EXPECT_TRUE(
@@ -1051,7 +1051,7 @@ TEST_P(FeatureInfoTest, InitializeEXT_framebuffer_multisample) {
 
 TEST_P(FeatureInfoTest, InitializeARB_framebuffer_multisample) {
   SetupInitExpectations("GL_ARB_framebuffer_object");
-  EXPECT_TRUE(info_->feature_flags().chromium_framebuffer_multisample);
+  EXPECT_TRUE(info_->feature_flags().monyhar_framebuffer_multisample);
   EXPECT_TRUE(gfx::HasExtension(info_->extensions(),
                                 "GL_CHROMIUM_framebuffer_multisample"));
   EXPECT_TRUE(info_->validators()->framebuffer_target.IsValid(
@@ -1069,7 +1069,7 @@ TEST_P(FeatureInfoTest, InitializeARB_framebuffer_multisample) {
 TEST_P(FeatureInfoTest, InitializeANGLE_framebuffer_multisample) {
   SetupInitExpectationsWithGLVersion(
       "GL_ANGLE_framebuffer_multisample", kGLRendererStringANGLE, "");
-  EXPECT_TRUE(info_->feature_flags().chromium_framebuffer_multisample);
+  EXPECT_TRUE(info_->feature_flags().monyhar_framebuffer_multisample);
   EXPECT_TRUE(gfx::HasExtension(info_->extensions(),
                                 "GL_CHROMIUM_framebuffer_multisample"));
   EXPECT_TRUE(info_->validators()->framebuffer_target.IsValid(
@@ -1089,7 +1089,7 @@ TEST_P(FeatureInfoTest, InitializeANGLE_framebuffer_multisample) {
 // extension was falsely advertised on some Android devices (crbug.com/165736).
 TEST_P(FeatureInfoTest, InitializeANGLE_framebuffer_multisampleWithoutANGLE) {
   SetupInitExpectations("GL_ANGLE_framebuffer_multisample");
-  EXPECT_FALSE(info_->feature_flags().chromium_framebuffer_multisample);
+  EXPECT_FALSE(info_->feature_flags().monyhar_framebuffer_multisample);
   EXPECT_FALSE(gfx::HasExtension(info_->extensions(),
                                  "GL_CHROMIUM_framebuffer_multisample"));
   EXPECT_FALSE(info_->validators()->framebuffer_target.IsValid(
@@ -1475,7 +1475,7 @@ TEST_P(FeatureInfoTest, InitializeSamplersWithARBSamplerObjects) {
 
 TEST_P(FeatureInfoTest, InitializeWithES3) {
   SetupInitExpectationsWithGLVersion("", "", "OpenGL ES 3.0");
-  EXPECT_TRUE(info_->feature_flags().chromium_framebuffer_multisample);
+  EXPECT_TRUE(info_->feature_flags().monyhar_framebuffer_multisample);
   EXPECT_TRUE(gfx::HasExtension(info_->extensions(),
                                 "GL_CHROMIUM_framebuffer_multisample"));
   EXPECT_TRUE(info_->feature_flags().use_async_readpixels);
@@ -1510,7 +1510,7 @@ TEST_P(FeatureInfoTest, InitializeWithES3) {
   EXPECT_TRUE(info_->feature_flags().ext_discard_framebuffer);
   EXPECT_TRUE(
       gfx::HasExtension(info_->extensions(), "GL_EXT_discard_framebuffer"));
-  EXPECT_TRUE(info_->feature_flags().chromium_sync_query);
+  EXPECT_TRUE(info_->feature_flags().monyhar_sync_query);
   EXPECT_TRUE(gl::GLFence::IsSupported());
 }
 
@@ -1561,13 +1561,13 @@ TEST_P(FeatureInfoTest, ParseDriverBugWorkaroundsMultiple) {
 
 TEST_P(FeatureInfoTest, InitializeWithARBSync) {
   SetupInitExpectations("GL_ARB_sync");
-  EXPECT_TRUE(info_->feature_flags().chromium_sync_query);
+  EXPECT_TRUE(info_->feature_flags().monyhar_sync_query);
   EXPECT_TRUE(gl::GLFence::IsSupported());
 }
 
 TEST_P(FeatureInfoTest, InitializeWithNVFence) {
   SetupInitExpectations("GL_NV_fence");
-  EXPECT_TRUE(info_->feature_flags().chromium_sync_query);
+  EXPECT_TRUE(info_->feature_flags().monyhar_sync_query);
   EXPECT_TRUE(gl::GLFence::IsSupported());
 }
 

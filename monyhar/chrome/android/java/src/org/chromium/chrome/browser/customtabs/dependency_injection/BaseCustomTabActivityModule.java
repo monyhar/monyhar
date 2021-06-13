@@ -2,26 +2,26 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs.dependency_injection;
+package org.monyhar.chrome.browser.customtabs.dependency_injection;
 
-import org.chromium.chrome.browser.browserservices.ClientAppDataRegister;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.browserservices.trustedwebactivityui.TwaIntentHandlingStrategy;
-import org.chromium.chrome.browser.browserservices.ui.controller.EmptyVerifier;
-import org.chromium.chrome.browser.browserservices.ui.controller.Verifier;
-import org.chromium.chrome.browser.browserservices.ui.controller.trustedwebactivity.TwaVerifier;
-import org.chromium.chrome.browser.browserservices.ui.controller.webapps.AddToHomescreenVerifier;
-import org.chromium.chrome.browser.browserservices.ui.controller.webapps.WebApkVerifier;
-import org.chromium.chrome.browser.browserservices.verification.OriginVerifierFactory;
-import org.chromium.chrome.browser.browserservices.verification.OriginVerifierFactoryImpl;
-import org.chromium.chrome.browser.customtabs.CustomTabNightModeStateController;
-import org.chromium.chrome.browser.customtabs.content.CustomTabIntentHandler.IntentIgnoringCriterion;
-import org.chromium.chrome.browser.customtabs.content.CustomTabIntentHandlingStrategy;
-import org.chromium.chrome.browser.customtabs.content.DefaultCustomTabIntentHandlingStrategy;
-import org.chromium.chrome.browser.flags.ActivityType;
-import org.chromium.chrome.browser.init.StartupTabPreloader;
-import org.chromium.chrome.browser.theme.TopUiThemeColorProvider;
-import org.chromium.chrome.browser.webapps.WebApkPostShareTargetNavigator;
+import org.monyhar.chrome.browser.browserservices.ClientAppDataRegister;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.browserservices.trustedwebactivityui.TwaIntentHandlingStrategy;
+import org.monyhar.chrome.browser.browserservices.ui.controller.EmptyVerifier;
+import org.monyhar.chrome.browser.browserservices.ui.controller.Verifier;
+import org.monyhar.chrome.browser.browserservices.ui.controller.trustedwebactivity.TwaVerifier;
+import org.monyhar.chrome.browser.browserservices.ui.controller.webapps.AddToHomescreenVerifier;
+import org.monyhar.chrome.browser.browserservices.ui.controller.webapps.WebApkVerifier;
+import org.monyhar.chrome.browser.browserservices.verification.OriginVerifierFactory;
+import org.monyhar.chrome.browser.browserservices.verification.OriginVerifierFactoryImpl;
+import org.monyhar.chrome.browser.customtabs.CustomTabNightModeStateController;
+import org.monyhar.chrome.browser.customtabs.content.CustomTabIntentHandler.IntentIgnoringCriterion;
+import org.monyhar.chrome.browser.customtabs.content.CustomTabIntentHandlingStrategy;
+import org.monyhar.chrome.browser.customtabs.content.DefaultCustomTabIntentHandlingStrategy;
+import org.monyhar.chrome.browser.flags.ActivityType;
+import org.monyhar.chrome.browser.init.StartupTabPreloader;
+import org.monyhar.chrome.browser.theme.TopUiThemeColorProvider;
+import org.monyhar.chrome.browser.webapps.WebApkPostShareTargetNavigator;
 
 import dagger.Lazy;
 import dagger.Module;

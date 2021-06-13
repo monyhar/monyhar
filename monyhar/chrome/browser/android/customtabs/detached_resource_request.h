@@ -42,7 +42,7 @@ class DetachedResourceRequest {
   static constexpr int kMaxResponseSize = 500 * 1024;
 
   // The motivation of the resource request, used for histograms reporting.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.customtabs
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.customtabs
   // GENERATED_JAVA_CLASS_NAME_OVERRIDE: DetachedResourceRequestMotivation
   enum class Motivation { kParallelRequest, kResourcePrefetch };
 

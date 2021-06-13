@@ -30,7 +30,7 @@ sensor backends. The `GenericSensorTest` interface is defined as:
 ```
 
 The Chromium implementation of the `GenericSensorTest` interface is located in
-[generic_sensor_mocks.js](../resources/chromium/generic_sensor_mocks.js).
+[generic_sensor_mocks.js](../resources/monyhar/generic_sensor_mocks.js).
 
 Other browser vendors should provide their own implementations of
 the `GenericSensorTest` interface.

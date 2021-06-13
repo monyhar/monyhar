@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer.test;
+package org.monyhar.weblayer.test;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -24,13 +24,13 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.CriteriaNotSatisfiedException;
-import org.chromium.base.test.util.MinAndroidSdkLevel;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.weblayer.BrowserEmbeddabilityMode;
-import org.chromium.weblayer.shell.InstrumentationActivity;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.CriteriaNotSatisfiedException;
+import org.monyhar.base.test.util.MinAndroidSdkLevel;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.weblayer.BrowserEmbeddabilityMode;
+import org.monyhar.weblayer.shell.InstrumentationActivity;
 
 import java.lang.ref.PhantomReference;
 import java.lang.ref.Reference;

@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.digitalgoods;
+package org.monyhar.chrome.browser.browserservices.digitalgoods;
 
-import static org.chromium.chrome.browser.browserservices.digitalgoods.DigitalGoodsConverter.checkField;
-import static org.chromium.chrome.browser.browserservices.digitalgoods.DigitalGoodsConverter.convertParcelableArray;
-import static org.chromium.chrome.browser.browserservices.digitalgoods.DigitalGoodsConverter.convertResponseCode;
+import static org.monyhar.chrome.browser.browserservices.digitalgoods.DigitalGoodsConverter.checkField;
+import static org.monyhar.chrome.browser.browserservices.digitalgoods.DigitalGoodsConverter.convertParcelableArray;
+import static org.monyhar.chrome.browser.browserservices.digitalgoods.DigitalGoodsConverter.convertResponseCode;
 
 import android.os.Bundle;
 import android.os.Parcelable;
@@ -16,11 +16,11 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.browser.trusted.TrustedWebActivityCallback;
 
-import org.chromium.base.Log;
-import org.chromium.payments.mojom.BillingResponseCode;
-import org.chromium.payments.mojom.DigitalGoods.GetDetailsResponse;
-import org.chromium.payments.mojom.ItemDetails;
-import org.chromium.payments.mojom.PaymentCurrencyAmount;
+import org.monyhar.base.Log;
+import org.monyhar.payments.mojom.BillingResponseCode;
+import org.monyhar.payments.mojom.DigitalGoods.GetDetailsResponse;
+import org.monyhar.payments.mojom.ItemDetails;
+import org.monyhar.payments.mojom.PaymentCurrencyAmount;
 
 /**
  * A converter that deals with the parameters and result for GetDetails calls.

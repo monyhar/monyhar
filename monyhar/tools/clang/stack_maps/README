@@ -1,7 +1,7 @@
 Prototype and playground for generating stack maps to garbage-collected objects
 using clang/llvm infrastructure.
 
-Design doc: https://bit.ly/chromium-stack-maps
+Design doc: https://bit.ly/monyhar-stack-maps
 
 Building and Running Tests:
 
@@ -19,6 +19,6 @@ Building and Running Tests:
 
 3. Run the tests (from stack_maps/tests/)
 
-`./test.py <path_to_chromium_llvm_bin_dir> ../gc/build/libGC.a \
+`./test.py <path_to_monyhar_llvm_bin_dir> ../gc/build/libGC.a \
 ../build/IdentifySafepoints/libLLVMIdentifySafepointsPass.so \
 ../build/RegisterGcFunctionsPass.so`

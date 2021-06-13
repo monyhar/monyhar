@@ -14,11 +14,11 @@ import page_sets
 
 @benchmark.Info(
     emails=[
-        'yuhengh@chromium.org', 'tluk@chromium.org', 'romanarora@chromium.org'
+        'yuhengh@monyhar.org', 'tluk@monyhar.org', 'romanarora@monyhar.org'
     ],
     component='UI>Browser',
     documentation_url=
-    'https://chromium.googlesource.com/chromium/src/+/main/docs/speed/benchmark/harnesses/desktop_ui.md'
+    'https://monyhar.googlesource.com/monyhar/src/+/main/docs/speed/benchmark/harnesses/desktop_ui.md'
 )
 class DesktopUI(perf_benchmark.PerfBenchmark):
   """Desktop UI Benchmark."""

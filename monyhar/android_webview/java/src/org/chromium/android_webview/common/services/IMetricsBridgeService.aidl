@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.common.services;
+package org.monyhar.android_webview.common.services;
 
 import android.os.Bundle;
 
@@ -17,7 +17,7 @@ interface IMetricsBridgeService {
      * although its work (including disk IO) happens asynchronously.
      *
      * @param methodCall a byte array serialization of
-     *                   org.chromium.android_webview.proto.HistogramRecord proto message object.
+     *                   org.monyhar.android_webview.proto.HistogramRecord proto message object.
      */
     void recordMetrics(in byte[] methodCall);
 
@@ -27,7 +27,7 @@ interface IMetricsBridgeService {
      * WebView).
      *
      * @returns a List<byte[]> of byte array serialization of
-                org.chromium.android_webview.proto.HistogramRecord proto message object.
+                org.monyhar.android_webview.proto.HistogramRecord proto message object.
      */
     List retrieveNonembeddedMetrics();
 }

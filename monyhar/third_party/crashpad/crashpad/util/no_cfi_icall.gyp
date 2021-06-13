@@ -21,7 +21,7 @@
       'target_name': 'no_cfi_icall',
       'type': 'static_library',
       'dependencies': [
-        '../third_party/mini_chromium/mini_chromium.gyp:base',
+        '../third_party/mini_monyhar/mini_monyhar.gyp:base',
       ],
       'include_dirs': [
         '..',
@@ -31,7 +31,7 @@
         'misc/no_cfi_icall.h',
       ],
       'export_dependent_settings': [
-        '../third_party/mini_chromium/mini_chromium.gyp:base',
+        '../third_party/mini_monyhar/mini_monyhar.gyp:base',
       ],
     },
   ],

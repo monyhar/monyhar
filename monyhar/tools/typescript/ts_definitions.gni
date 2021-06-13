@@ -53,16 +53,16 @@ template("ts_definitions") {
 
     path_mappings = [
       "chrome://resources/polymer/v3_0/*|" +
-          rebase_path("//third_party/polymer/v3_0/components-chromium/*",
+          rebase_path("//third_party/polymer/v3_0/components-monyhar/*",
                       target_gen_dir),
       "//resources/polymer/v3_0/*|" +
-          rebase_path("//third_party/polymer/v3_0/components-chromium/*",
+          rebase_path("//third_party/polymer/v3_0/components-monyhar/*",
                       target_gen_dir),
       "chrome://resources/polymer/v3_0/polymer/polymer_bundled.min.js|" + rebase_path(
-              "//third_party/polymer/v3_0/components-chromium/polymer/polymer-element.d.ts",
+              "//third_party/polymer/v3_0/components-monyhar/polymer/polymer-element.d.ts",
               target_gen_dir),
       "//resources/polymer/v3_0/polymer/polymer_bundled.min.js|" + rebase_path(
-              "//third_party/polymer/v3_0/components-chromium/polymer/polymer-element.d.ts",
+              "//third_party/polymer/v3_0/components-monyhar/polymer/polymer-element.d.ts",
               target_gen_dir),
     ]
     args += [ "--path_mappings" ] + path_mappings

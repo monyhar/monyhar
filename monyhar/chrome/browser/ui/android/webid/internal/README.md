@@ -21,7 +21,7 @@ logic from representation:
  * The [model](#Model) keeps all state that affects the visual appearance of the
    component. Changes made to it are automatically propagated to the view by a
    Model-Change-Processor (MCP) as defined in
-    `//src/ui/android/java/src/org/chromium/ui/modelutil/`
+    `//src/ui/android/java/src/org/monyhar/ui/modelutil/`
  * The [view](#View) is the representation of the component. It enforces styles
    and is mostly called by a view binder to set mutable properties.
 
@@ -31,7 +31,7 @@ logic from representation:
 The model holds state and event listeners connected to the view. An MCP
 automatically notifies listener about any change made to a property. To automate
 this Observer structure, the model is a `ListModel` as defined in
-`//src/ui/android/java/src/org/chromium/ui/modelutil/`.
+`//src/ui/android/java/src/org/monyhar/ui/modelutil/`.
 
 TODO(majidvp): Explain the type of items in the list once they are added.
 

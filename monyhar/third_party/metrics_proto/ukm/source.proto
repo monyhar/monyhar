@@ -5,12 +5,12 @@
 syntax = "proto2";
 
 option optimize_for = LITE_RUNTIME;
-option java_package = "org.chromium.components.metrics";
+option java_package = "org.monyhar.components.metrics";
 
 package ukm;
 
 // Types of source ids defined by
-// https://cs.chromium.org/chromium/src/services/metrics/public/cpp/ukm_source_id.h
+// https://cs.monyhar.org/monyhar/src/services/metrics/public/cpp/ukm_source_id.h
 enum SourceType {
   DEFAULT = 0;
   NAVIGATION_ID = 1;

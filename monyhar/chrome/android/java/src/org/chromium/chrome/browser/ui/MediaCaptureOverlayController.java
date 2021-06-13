@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui;
+package org.monyhar.chrome.browser.ui;
 
 import android.util.SparseArray;
 import android.view.View;
@@ -11,12 +11,12 @@ import android.view.ViewGroup.MarginLayoutParams;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.UnownedUserData;
-import org.chromium.base.UnownedUserDataKey;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabBrowserControlsOffsetHelper;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.UnownedUserData;
+import org.monyhar.base.UnownedUserDataKey;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabBrowserControlsOffsetHelper;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * This class manages the visibility of an overlay border when tab capture is ongoing.

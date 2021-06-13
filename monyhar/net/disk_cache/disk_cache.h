@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 // Defines the public interface of the disk cache. For more details see
-// http://dev.chromium.org/developers/design-documents/network-stack/disk-cache
+// http://dev.monyhar.org/developers/design-documents/network-stack/disk-cache
 
 #ifndef NET_DISK_CACHE_DISK_CACHE_H_
 #define NET_DISK_CACHE_DISK_CACHE_H_

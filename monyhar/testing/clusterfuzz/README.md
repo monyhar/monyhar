@@ -1,3 +1,3 @@
 Useful scripts for writting ClusterFuzz fuzzers.
 
-https://www.chromium.org/Home/chromium-security/bugs/developing-fuzzers-for-clusterfuzz
+https://www.monyhar.org/Home/monyhar-security/bugs/developing-fuzzers-for-clusterfuzz

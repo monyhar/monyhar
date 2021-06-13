@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.device.sensors;
+package org.monyhar.device.sensors;
 
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -11,12 +11,12 @@ import android.hardware.SensorManager;
 
 import androidx.annotation.GuardedBy;
 
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.device.mojom.ReportingMode;
-import org.chromium.device.mojom.SensorType;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.device.mojom.ReportingMode;
+import org.monyhar.device.mojom.SensorType;
 
 import java.util.List;
 

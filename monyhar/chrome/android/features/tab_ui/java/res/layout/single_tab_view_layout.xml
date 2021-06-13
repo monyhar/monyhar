@@ -3,7 +3,7 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
 
-<org.chromium.chrome.browser.tasks.SingleTabView
+<org.monyhar.chrome.browser.tasks.SingleTabView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -35,4 +35,4 @@
         android:gravity="center_vertical"
         android:singleLine="true"
         android:textAppearance="@style/TextAppearance.TextLarge"/>
-</org.chromium.chrome.browser.tasks.SingleTabView>
+</org.monyhar.chrome.browser.tasks.SingleTabView>

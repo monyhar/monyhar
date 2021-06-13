@@ -15,7 +15,7 @@ In order to use [ccache](http://ccache.samba.org) with
 current [git HEAD](http://ccache.samba.org/repo.html), since the most recent
 version (3.1.9) doesn't contain the
 [patch needed](https://github.com/jrosdahl/ccache/pull/4) for using
-[the chromium style plugin](clang.md#Using_plugins).
+[the monyhar style plugin](clang.md#Using_plugins).
 
 To install ccache with [homebrew](http://mxcl.github.com/homebrew/), use the
 following command:
@@ -36,7 +36,7 @@ git clone git://git.samba.org/ccache.git cd ccache
 Make sure ccache can be found in your `$PATH`.
 
 You can also just use the current released version of ccache (3.1.8 or 3.1.9)
-and disable the chromium style plugin with `clang_use_chrome_plugins = false`
+and disable the monyhar style plugin with `clang_use_chrome_plugins = false`
 in your args.gn.
 
 ## Use with GN
@@ -50,7 +50,7 @@ gn gen out-gn --args='cc_wrapper="ccache"'
 ## Build
 
 In the build phase, the following environment variables must be set (assuming
-you are in `chromium/src`):
+you are in `monyhar/src`):
 
 ```shell
 export CCACHE_CPP2=yes

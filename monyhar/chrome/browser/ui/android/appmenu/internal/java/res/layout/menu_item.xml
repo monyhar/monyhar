@@ -19,7 +19,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start" />
 
-    <org.chromium.ui.widget.ChromeImageView
+    <org.monyhar.ui.widget.ChromeImageView
         android:id="@+id/menu_item_icon"
         android:layout_weight="0"
         android:layout_width="wrap_content"

@@ -27,8 +27,8 @@ import buildbot_json_magic_substitutions as magic_substitutions
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 BROWSER_CONFIG_TO_TARGET_SUFFIX_MAP = {
-    'android-chromium': '_android_chrome',
-    'android-chromium-monochrome': '_android_monochrome',
+    'android-monyhar': '_android_chrome',
+    'android-monyhar-monochrome': '_android_monochrome',
     'android-weblayer': '_android_weblayer',
     'android-webview': '_android_webview',
 }
@@ -40,7 +40,7 @@ class BBGenErr(Exception):
 
 
 # This class is only present to accommodate certain machines on
-# chromium.android.fyi which run certain tests as instrumentation
+# monyhar.android.fyi which run certain tests as instrumentation
 # tests, but not as gtests. If this discrepancy were fixed then the
 # notion could be removed.
 class TestSuiteTypes(object):
@@ -443,7 +443,7 @@ class BBJSONGenerator(object):
       # TODO(kbr): this code path was added for some tests (including
       # android_webview_unittests) on one machine (Nougat Phone
       # Tester) which exists with the same name on two waterfalls,
-      # chromium.android and chromium.fyi; the tests are run on one
+      # monyhar.android and monyhar.fyi; the tests are run on one
       # but not the other. Once the bots are all uniquely named (a
       # different ongoing project) this code should be removed.
       # TODO(kbr): add coverage.
@@ -740,7 +740,7 @@ class BBJSONGenerator(object):
 
   def add_android_presentation_args(self, tester_config, test_name, result):
     args = result.get('args', [])
-    bucket = tester_config.get('results_bucket', 'chromium-result-details')
+    bucket = tester_config.get('results_bucket', 'monyhar-result-details')
     args.append('--gs-results-bucket=%s' % bucket)
     if (result['swarming']['can_use_on_swarming_builders'] and not
         tester_config.get('skip_merge_script', False)):
@@ -956,7 +956,7 @@ class BBJSONGenerator(object):
     # However, this actively messes with logging on CrOS (because Chrome's
     # stderr goes nowhere on CrOS) AND --log-level=0 is required for some reason
     # in order to see JavaScript console messages. See
-    # https://chromium.googlesource.com/chromium/src.git/+/HEAD/docs/chrome_os_logging.md
+    # https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/docs/chrome_os_logging.md
     logging_arg = '--log-level=0' if self.is_chromeos(
         tester_config) else '--enable-logging=stderr'
 
@@ -1062,7 +1062,7 @@ class BBJSONGenerator(object):
         assert isinstance(test, dict)
 
         # This assumes the recipe logic which prefers 'test' to 'isolate_name'
-        # https://source.chromium.org/chromium/chromium/tools/build/+/main:scripts/slave/recipe_modules/chromium_tests/generators.py;l=89;drc=14c062ba0eb418d3c4623dde41a753241b9df06b
+        # https://source.monyhar.org/monyhar/monyhar/tools/build/+/main:scripts/slave/recipe_modules/monyhar_tests/generators.py;l=89;drc=14c062ba0eb418d3c4623dde41a753241b9df06b
         # TODO(crbug.com/1035124): clean this up.
         isolate_name = test.get('test') or test.get('isolate_name') or key
         gn_entry = self.gn_isolate_map.get(isolate_name)
@@ -1488,17 +1488,17 @@ class BBJSONGenerator(object):
         os.path.join(self.args.infra_config_dir, 'generated', 'luci-milo*.cfg'))
     for c in milo_configs:
       for l in self.read_file(c).splitlines():
-        if (not 'name: "buildbucket/luci.chromium.' in l and
+        if (not 'name: "buildbucket/luci.monyhar.' in l and
             not 'name: "buildbucket/luci.chrome.' in l):
           continue
         # l looks like
-        # `name: "buildbucket/luci.chromium.try/win_chromium_dbg_ng"`
-        # Extract win_chromium_dbg_ng part.
+        # `name: "buildbucket/luci.monyhar.try/win_monyhar_dbg_ng"`
+        # Extract win_monyhar_dbg_ng part.
         bot_names.add(l[l.rindex('/') + 1:l.rindex('"')])
     return bot_names
 
   def get_builders_that_do_not_actually_exist(self):
-    # Some of the bots on the chromium.gpu.fyi waterfall in particular
+    # Some of the bots on the monyhar.gpu.fyi waterfall in particular
     # are defined only to be mirrored into trybots, and don't actually
     # exist on any of the waterfalls or consoles.
     return [
@@ -1515,9 +1515,9 @@ class BBJSONGenerator(object):
         'Optional Mac Retina Release (NVIDIA)',
         'Optional Win10 x64 Release (Intel HD 630)',
         'Optional Win10 x64 Release (NVIDIA)',
-        # chromium.chromiumos
+        # monyhar.monyharos
         'linux-lacros-rel',
-        # chromium.fyi
+        # monyhar.fyi
         'linux-blink-rel-dummy',
         'linux-blink-optional-highdpi-rel-dummy',
         'mac10.12-blink-rel-dummy',
@@ -1529,7 +1529,7 @@ class BBJSONGenerator(object):
         'win10-blink-rel-dummy',
         'WebKit Linux composite_after_paint Dummy Builder',
         'WebKit Linux layout_ng_disabled Builder',
-        # chromium, due to https://crbug.com/878915
+        # monyhar, due to https://crbug.com/878915
         'win-dbg',
         'win32-dbg',
         'win-archive-dbg',
@@ -1582,19 +1582,19 @@ class BBJSONGenerator(object):
           if bot_name in builders_that_dont_exist:
             continue  # pragma: no cover
           if bot_name not in bot_names:
-            if waterfall['name'] in ['client.v8.chromium', 'client.v8.fyi']:
+            if waterfall['name'] in ['client.v8.monyhar', 'client.v8.fyi']:
               # TODO(thakis): Remove this once these bots move to luci.
               continue  # pragma: no cover
             if waterfall['name'] in ['tryserver.webrtc',
-                                     'webrtc.chromium.fyi.experimental']:
+                                     'webrtc.monyhar.fyi.experimental']:
               # These waterfalls have their bot configs in a different repo.
               # so we don't know about their bot names.
               continue  # pragma: no cover
             if waterfall['name'] in ['client.devtools-frontend.integration',
                                      'tryserver.devtools-frontend',
-                                     'chromium.devtools-frontend']:
+                                     'monyhar.devtools-frontend']:
               continue  # pragma: no cover
-            if waterfall['name'] in ['client.openscreen.chromium']:
+            if waterfall['name'] in ['client.openscreen.monyhar']:
               continue  # pragma: no cover
             raise self.unknown_bot(bot_name, waterfall['name'])
 

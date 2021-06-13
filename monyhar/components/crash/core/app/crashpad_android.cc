@@ -399,7 +399,7 @@ bool BuildEnvironmentWithApk(bool use_64_bit,
 }
 
 const char kCrashpadJavaMain[] =
-    "org.chromium.components.crash.browser.CrashpadMain";
+    "org.monyhar.components.crash.browser.CrashpadMain";
 
 void BuildHandlerArgs(CrashReporterClient* crash_reporter_client,
                       base::FilePath* database_path,

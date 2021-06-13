@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview;
+package org.monyhar.android_webview;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.task.PostTask;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 import java.util.Queue;
 import java.util.concurrent.Callable;
@@ -28,9 +28,9 @@ public class WebViewChromiumRunQueue {
      */
     public static interface ChromiumHasStartedCallable { public boolean hasStarted(); }
 
-    public WebViewChromiumRunQueue(ChromiumHasStartedCallable chromiumHasStartedCallable) {
+    public WebViewChromiumRunQueue(ChromiumHasStartedCallable monyharHasStartedCallable) {
         mQueue = new ConcurrentLinkedQueue<Runnable>();
-        mChromiumHasStartedCallable = chromiumHasStartedCallable;
+        mChromiumHasStartedCallable = monyharHasStartedCallable;
     }
 
     /**
@@ -59,12 +59,12 @@ public class WebViewChromiumRunQueue {
         }
     }
 
-    public boolean chromiumHasStarted() {
+    public boolean monyharHasStarted() {
         return mChromiumHasStartedCallable.hasStarted();
     }
 
     public <T> T runBlockingFuture(FutureTask<T> task) {
-        if (!chromiumHasStarted()) throw new RuntimeException("Must be started before we block!");
+        if (!monyharHasStarted()) throw new RuntimeException("Must be started before we block!");
         if (ThreadUtils.runningOnUiThread()) {
             throw new IllegalStateException("This method should only be called off the UI thread");
         }

@@ -2684,7 +2684,7 @@ void NetworkHandler::OnLoadNetworkResourceFinished(
     size_t iterator = 0;
     std::string name;
     std::string value;
-    // TODO(chromium:1069378): This probably needs to handle duplicate header
+    // TODO(monyhar:1069378): This probably needs to handle duplicate header
     // names correctly by folding them.
     while (rh->EnumerateHeaderLines(&iterator, &name, &value)) {
       headers_object->setString(name, value);
@@ -2714,7 +2714,7 @@ CreateNetworkFactoryForDevTools(
       network::mojom::TrustTokenRedemptionPolicy::kForbid;
   // Let DevTools fetch resources without CORS and CORB. Source maps are valid
   // JSON and would otherwise require a CORS fetch + correct response headers.
-  // See BUG(chromium:1076435) for more context.
+  // See BUG(monyhar:1076435) for more context.
   params->is_corb_enabled = false;
 
   mojo::PendingRemote<network::mojom::URLLoaderFactory> remote;

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.app.PendingIntent;
 import android.content.ActivityNotFoundException;
@@ -18,25 +18,25 @@ import android.text.TextUtils;
 import androidx.annotation.VisibleForTesting;
 import androidx.core.app.NotificationCompat;
 
-import org.chromium.base.ContentUriUtils;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxy;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxyImpl;
-import org.chromium.components.browser_ui.notifications.NotificationMetadata;
-import org.chromium.components.browser_ui.notifications.PendingIntentProvider;
-import org.chromium.components.browser_ui.util.DownloadUtils;
-import org.chromium.url.GURL;
-import org.chromium.weblayer_private.interfaces.APICallException;
-import org.chromium.weblayer_private.interfaces.DownloadError;
-import org.chromium.weblayer_private.interfaces.DownloadState;
-import org.chromium.weblayer_private.interfaces.IClientDownload;
-import org.chromium.weblayer_private.interfaces.IDownload;
-import org.chromium.weblayer_private.interfaces.IDownloadCallbackClient;
-import org.chromium.weblayer_private.interfaces.StrictModeWorkaround;
+import org.monyhar.base.ContentUriUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxy;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxyImpl;
+import org.monyhar.components.browser_ui.notifications.NotificationMetadata;
+import org.monyhar.components.browser_ui.notifications.PendingIntentProvider;
+import org.monyhar.components.browser_ui.util.DownloadUtils;
+import org.monyhar.url.GURL;
+import org.monyhar.weblayer_private.interfaces.APICallException;
+import org.monyhar.weblayer_private.interfaces.DownloadError;
+import org.monyhar.weblayer_private.interfaces.DownloadState;
+import org.monyhar.weblayer_private.interfaces.IClientDownload;
+import org.monyhar.weblayer_private.interfaces.IDownload;
+import org.monyhar.weblayer_private.interfaces.IDownloadCallbackClient;
+import org.monyhar.weblayer_private.interfaces.StrictModeWorkaround;
 
 import java.io.File;
 import java.util.HashMap;
@@ -46,7 +46,7 @@ import java.util.HashMap;
  */
 @JNINamespace("weblayer")
 public final class DownloadImpl extends IDownload.Stub {
-    private static final String DOWNLOADS_PREFIX = "org.chromium.weblayer.downloads";
+    private static final String DOWNLOADS_PREFIX = "org.monyhar.weblayer.downloads";
 
     // These actions have to be synchronized with the receiver defined in AndroidManifest.xml.
     private static final String OPEN_INTENT = DOWNLOADS_PREFIX + ".OPEN";

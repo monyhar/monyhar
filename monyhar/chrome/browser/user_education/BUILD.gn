@@ -8,9 +8,9 @@ import("//chrome/browser/buildflags.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/user_education/IPHCommand.java",
-    "java/src/org/chromium/chrome/browser/user_education/IPHCommandBuilder.java",
-    "java/src/org/chromium/chrome/browser/user_education/UserEducationHelper.java",
+    "java/src/org/monyhar/chrome/browser/user_education/IPHCommand.java",
+    "java/src/org/monyhar/chrome/browser/user_education/IPHCommandBuilder.java",
+    "java/src/org/monyhar/chrome/browser/user_education/UserEducationHelper.java",
   ]
 
   deps = [
@@ -26,7 +26,7 @@ android_library("java") {
     "//third_party/androidx:androidx_core_core_java",
     "//ui/android:ui_full_java",
   ]
-  resources_package = "org.chromium.chrome.browser.user_education"
+  resources_package = "org.monyhar.chrome.browser.user_education"
 }
 
 android_resources("java_resources") {

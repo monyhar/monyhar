@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -13,8 +13,8 @@ import android.widget.LinearLayout;
 
 import androidx.appcompat.widget.SwitchCompat;
 
-import org.chromium.chrome.tab_ui.R;
-import org.chromium.ui.widget.ChromeImageButton;
+import org.monyhar.chrome.tab_ui.R;
+import org.monyhar.ui.widget.ChromeImageButton;
 
 /**
  * The view for PriceTrackingSettings dialog related UIs.

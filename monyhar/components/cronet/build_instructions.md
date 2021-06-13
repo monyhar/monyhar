@@ -5,7 +5,7 @@
 ## Checking out the code
 
 Follow all the
-[Get the Code](https://www.chromium.org/developers/how-tos/get-the-code)
+[Get the Code](https://www.monyhar.org/developers/how-tos/get-the-code)
 instructions for your target platform up to and including running hooks.
 
 ## Building Cronet for development and debugging

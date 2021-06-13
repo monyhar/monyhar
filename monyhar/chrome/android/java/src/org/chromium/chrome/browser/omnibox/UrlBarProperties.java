@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox;
+package org.monyhar.chrome.browser.omnibox;
 
 import android.text.TextWatcher;
 import android.view.ActionMode;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.omnibox.UrlBar.ScrollType;
-import org.chromium.chrome.browser.omnibox.UrlBar.UrlBarDelegate;
-import org.chromium.chrome.browser.omnibox.UrlBar.UrlBarTextContextMenuDelegate;
-import org.chromium.chrome.browser.omnibox.UrlBar.UrlTextChangeListener;
-import org.chromium.chrome.browser.omnibox.UrlBarCoordinator.SelectionState;
-import org.chromium.ui.base.WindowDelegate;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel.WritableBooleanPropertyKey;
-import org.chromium.ui.modelutil.PropertyModel.WritableObjectPropertyKey;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.omnibox.UrlBar.ScrollType;
+import org.monyhar.chrome.browser.omnibox.UrlBar.UrlBarDelegate;
+import org.monyhar.chrome.browser.omnibox.UrlBar.UrlBarTextContextMenuDelegate;
+import org.monyhar.chrome.browser.omnibox.UrlBar.UrlTextChangeListener;
+import org.monyhar.chrome.browser.omnibox.UrlBarCoordinator.SelectionState;
+import org.monyhar.ui.base.WindowDelegate;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel.WritableBooleanPropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel.WritableObjectPropertyKey;
 
 import java.util.Locale;
 

@@ -6,12 +6,12 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <org.chromium.chrome.browser.language.settings.ContentLanguagesPreference
+    <org.monyhar.chrome.browser.language.settings.ContentLanguagesPreference
         android:key="preferred_languages"
         android:layout="@layout/languages_preference"
         android:widgetLayout="@layout/accept_languages_list" />
 
-    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+    <org.monyhar.components.browser_ui.settings.ChromeSwitchPreference
         android:key="translate_switch"
         android:summaryOn="@string/languages_offer_translate_switch"
         android:summaryOff="@string/languages_offer_translate_switch" />

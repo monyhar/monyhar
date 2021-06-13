@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.shell;
+package org.monyhar.chromecast.shell;
 
 import android.media.AudioAttributes;
 import android.media.AudioFocusRequest;
@@ -11,7 +11,7 @@ import android.os.Build;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 import java.util.HashSet;
 import java.util.Set;

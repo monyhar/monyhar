@@ -230,7 +230,7 @@
       function revisionFromVersion(version, callback) {
         var url = 'http://omahaproxy.appspot.com/revision.json?version='+version;
         loadJson(url, function(data) {
-          callback(data.chromium_revision);
+          callback(data.monyhar_revision);
         });
       }
 

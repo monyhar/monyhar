@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.embedder_support.util;
+package org.monyhar.components.embedder_support.util;
 
 /**
  * Java side version of chrome/common/url_constants.cc

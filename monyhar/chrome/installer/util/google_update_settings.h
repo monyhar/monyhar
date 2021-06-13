@@ -158,7 +158,7 @@ class GoogleUpdateSettings {
   static bool GetReactivationBrand(std::wstring* brand);
 
   // Returns in 'client' the RLZ referral available for some distribution
-  // partners. This value does not exist for most chrome or chromium installs.
+  // partners. This value does not exist for most chrome or monyhar installs.
   static bool GetReferral(std::wstring* referral);
 
   // Overwrites the current value of the referral with an empty string. Returns

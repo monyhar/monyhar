@@ -94,13 +94,13 @@ TEST_F(SearchEngineJsTest, TestGetOpenSearchDescriptionDocumentUrlSucceed) {
   LoadHtmlAndInject(
       @"<html><link rel='search' type='application/opensearchdescription+xml' "
       @"title='Chromium Code Search' "
-      @"href='//cs.chromium.org/codesearch/first_opensearch.xml' />"
+      @"href='//cs.monyhar.org/codesearch/first_opensearch.xml' />"
       @"<link rel='search' type='application/opensearchdescription+xml' "
       @"title='Chromium Code Search 2' "
-      @"href='//cs.chromium.org/codesearch/second_opensearch.xml' />"
+      @"href='//cs.monyhar.org/codesearch/second_opensearch.xml' />"
       @"<link href='/favicon.ico' rel='shortcut icon' "
       @"type='image/x-icon'></html>",
-      GURL("https://cs.chromium.org"));
+      GURL("https://cs.monyhar.org"));
   ASSERT_TRUE(WaitUntilConditionOrTimeout(kWaitForJSCompletionTimeout, ^{
     base::RunLoop().RunUntilIdle();
     return message_received_;
@@ -112,11 +112,11 @@ TEST_F(SearchEngineJsTest, TestGetOpenSearchDescriptionDocumentUrlSucceed) {
   const base::Value* page_url = message_.FindKey(kOpenSearchPageUrlKey);
   ASSERT_TRUE(page_url);
   ASSERT_TRUE(page_url->is_string());
-  EXPECT_EQ("https://cs.chromium.org/", page_url->GetString());
+  EXPECT_EQ("https://cs.monyhar.org/", page_url->GetString());
   const base::Value* osdd_url = message_.FindKey(kOpenSearchOsddUrlKey);
   ASSERT_TRUE(osdd_url);
   ASSERT_TRUE(osdd_url->is_string());
-  EXPECT_EQ("https://cs.chromium.org/codesearch/first_opensearch.xml",
+  EXPECT_EQ("https://cs.monyhar.org/codesearch/first_opensearch.xml",
             osdd_url->GetString());
 }
 
@@ -126,7 +126,7 @@ TEST_F(SearchEngineJsTest, TestGetOpenSearchDescriptionDocumentUrlFail) {
   LoadHtmlAndInject(
       @"<html><link href='/favicon.ico' rel='shortcut icon' "
       @"type='image/x-icon'></html>",
-      GURL("https://cs.chromium.org"));
+      GURL("https://cs.monyhar.org"));
   ASSERT_FALSE(WaitUntilConditionOrTimeout(kWaitForJsNotReturnTimeout, ^{
     base::RunLoop().RunUntilIdle();
     return message_received_;

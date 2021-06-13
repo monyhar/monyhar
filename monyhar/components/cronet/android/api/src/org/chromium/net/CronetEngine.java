@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
 import android.content.Context;
 import android.net.http.HttpResponseCache;
@@ -141,7 +141,7 @@ public abstract class CronetEngine {
         }
 
         /**
-         * Sets whether <a href="https://www.chromium.org/quic">QUIC</a> protocol
+         * Sets whether <a href="https://www.monyhar.org/quic">QUIC</a> protocol
          * is enabled. Defaults to enabled. If QUIC is enabled, then QUIC User Agent Id
          * containing application name and Cronet version is sent to the server.
          * @param value {@code true} to enable QUIC, {@code false} to disable.
@@ -296,7 +296,7 @@ public abstract class CronetEngine {
          * proxy certificate to the list of local trust anchor. Disabling the bypass will most
          * likly prevent the app from sending any traffic to the pinned hosts. For more
          * information see 'How does key pinning interact with local proxies and filters?' at
-         * https://www.chromium.org/Home/chromium-security/security-faq
+         * https://www.monyhar.org/Home/monyhar-security/security-faq
          *
          * @param value {@code true} to enable the bypass, {@code false} to disable.
          * @return the builder to facilitate chaining.

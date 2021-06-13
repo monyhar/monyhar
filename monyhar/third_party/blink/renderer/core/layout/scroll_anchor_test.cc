@@ -974,7 +974,7 @@ TEST_P(ScrollAnchorTest, DeleteAnonymousBlockCrash) {
 
   // Removing #deleteMe will also remove the anonymous block around the text
   // node. This would cause NG to point to dead layout objects, prior to
-  // https://chromium-review.googlesource.com/1193868 and therefore crash.
+  // https://monyhar-review.googlesource.com/1193868 and therefore crash.
 
   ScrollLayoutViewport(ScrollOffset(0, 20000));
   GetDocument().getElementById("deleteMe")->remove();

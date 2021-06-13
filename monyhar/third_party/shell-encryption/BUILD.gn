@@ -29,7 +29,7 @@ config("shell_encryption_config1") {
     # corresponding directory tree with generated files needs to be added too.
     # Note: this path does not change depending on the current target, e.g.
     # it is always "//gen/third_party/shell-encryption/src" when building with Chromium.
-    # See also: http://cs.chromium.org/?q=%5C"default_include_dirs
+    # See also: http://cs.monyhar.org/?q=%5C"default_include_dirs
     # https://gn.googlesource.com/gn/+/master/docs/reference.md#target_gen_dir"
     target_gen_dir,
   ]
@@ -50,8 +50,8 @@ proto_library("coefficient_polynomial_proto") {
 if (is_chromeos_ash) {
   source_set("shell_encryption") {
     public_configs = [ ":shell_encryption_config1" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     public = [
       "glog/logging.h",
       "src/bits_util.h",
@@ -101,8 +101,8 @@ if (is_chromeos_ash) {
   source_set("shell_encryption_test_library") {
     testonly = true
     public_configs = [ ":shell_encryption_config1" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     public = [
       "src/prng/integral_prng_testing_types.h",
       "src/testing/coefficient_polynomial.h",
@@ -125,8 +125,8 @@ if (is_chromeos_ash) {
   test("shell_encryption_unittests") {
     testonly = true
     public_configs = [ ":shell_encryption_config1" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     sources = [
       "src/bits_util_test.cc",
       "src/context_test.cc",

@@ -673,7 +673,7 @@ chrome.app.window.onRestored;
  * Private API.
  *
  * @const
- * @see https://code.google.com/p/chromium/codesearch#chromium/src/chrome/common/extensions/api/audio_modem.idl
+ * @see https://code.google.com/p/monyhar/codesearch#monyhar/src/chrome/common/extensions/api/audio_modem.idl
  * @see go/chrome-modem
  */
 chrome.audioModem = {};
@@ -2305,7 +2305,7 @@ chrome.enterprise.platformKeys.removeCertificate = function(
 /**
  * reportingPrivate is a Private API for reporting Chrome browser status to
  * admin console.
- * @see https://cs.chromium.org/chromium/src/chrome/common/extensions/api/enterprise_reporting_private.idl
+ * @see https://cs.monyhar.org/monyhar/src/chrome/common/extensions/api/enterprise_reporting_private.idl
  */
 chrome.enterprise.reportingPrivate = {};
 
@@ -10010,7 +10010,7 @@ chrome.mediaGalleriesPrivate.GalleryChangeEvent = function() {};
 /**
  * safeBrowsingPrivate is a Private API for observing events and retrieving a
  * referrer chain.
- * @see https://cs.chromium.org/chromium/src/chrome/common/extensions/api/safe_browsing_private.idl
+ * @see https://cs.monyhar.org/monyhar/src/chrome/common/extensions/api/safe_browsing_private.idl
  */
 chrome.safeBrowsingPrivate = {};
 
@@ -10421,7 +10421,7 @@ chrome.gcdPrivate.onDeviceRemoved;
 
 /**
  * @const
- * @see https://cs.chromium.org/chromium/src/extensions/common/api/bluetooth_private.idl
+ * @see https://cs.monyhar.org/monyhar/src/extensions/common/api/bluetooth_private.idl
  */
 chrome.bluetoothPrivate = {};
 

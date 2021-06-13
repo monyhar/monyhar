@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.subresource_filter;
+package org.monyhar.components.subresource_filter;
 
 import android.text.SpannableString;
 import android.text.SpannableStringBuilder;
@@ -13,15 +13,15 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 
 import androidx.appcompat.widget.SwitchCompat;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.chrome.browser.infobar.ActionType;
-import org.chromium.components.infobars.ConfirmInfoBar;
-import org.chromium.components.infobars.InfoBar;
-import org.chromium.components.infobars.InfoBarControlLayout;
-import org.chromium.components.infobars.InfoBarLayout;
-import org.chromium.ui.text.NoUnderlineClickableSpan;
-import org.chromium.ui.widget.ButtonCompat;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.chrome.browser.infobar.ActionType;
+import org.monyhar.components.infobars.ConfirmInfoBar;
+import org.monyhar.components.infobars.InfoBar;
+import org.monyhar.components.infobars.InfoBarControlLayout;
+import org.monyhar.components.infobars.InfoBarLayout;
+import org.monyhar.ui.text.NoUnderlineClickableSpan;
+import org.monyhar.ui.widget.ButtonCompat;
 
 /**
  * This infobar appears when ads are being blocked on the page. This occurs after proceeding through

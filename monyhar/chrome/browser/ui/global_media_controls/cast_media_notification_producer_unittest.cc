@@ -186,7 +186,7 @@ TEST_F(CastMediaNotificationProducerCastStartStopTest,
   MediaRoute non_display_route = CreateRoute("route-1");
   non_display_route.set_for_display(false);
   MediaRoute mirroring_route =
-      CreateRoute("route-2", "urn:x-org.chromium.media:source:tab:*");
+      CreateRoute("route-2", "urn:x-org.monyhar.media:source:tab:*");
   MediaRoute multizone_member_route = CreateRoute("route-3", "cast:705D30C6");
 
   notification_producer_->OnRoutesUpdated(

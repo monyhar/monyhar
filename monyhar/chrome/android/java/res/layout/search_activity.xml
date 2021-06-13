@@ -27,7 +27,7 @@
             android:paddingEnd="@dimen/toolbar_edge_padding"
             android:clickable="true" >
 
-        <org.chromium.chrome.browser.searchwidget.SearchActivityLocationBarLayout
+        <org.monyhar.chrome.browser.searchwidget.SearchActivityLocationBarLayout
                 android:id="@+id/search_location_bar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

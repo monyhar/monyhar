@@ -3,7 +3,7 @@
   "AAAAA2 See generate_buildbot_json.py to make changes": {},
   "chromeos-betty-arc-r-chrome": {
     "additional_compile_targets": [
-      "chromiumos_preflight"
+      "monyharos_preflight"
     ],
     "gtest_tests": [
       {
@@ -56,7 +56,7 @@
   },
   "chromeos-betty-pi-arc-chrome-dchecks": {
     "additional_compile_targets": [
-      "chromiumos_preflight"
+      "monyharos_preflight"
     ],
     "gtest_tests": [
       {
@@ -619,7 +619,7 @@
             {
               "cipd_package": "infra/python/cpython/linux-amd64",
               "location": "vpython_dir_linux_amd64",
-              "revision": "version:2.7.15.chromium14"
+              "revision": "version:2.7.15.monyhar14"
             },
             {
               "cipd_package": "infra/tools/luci/vpython/linux-amd64",
@@ -1075,7 +1075,7 @@
   },
   "chromeos-eve-arc-r-chrome": {
     "additional_compile_targets": [
-      "chromiumos_preflight"
+      "monyharos_preflight"
     ],
     "gtest_tests": [
       {

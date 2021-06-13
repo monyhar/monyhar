@@ -216,7 +216,7 @@ NoteTakingHelper::LaunchResult LaunchWebAppInternal(
 }  // namespace
 
 const char NoteTakingHelper::kIntentAction[] =
-    "org.chromium.arc.intent.action.CREATE_NOTE";
+    "org.monyhar.arc.intent.action.CREATE_NOTE";
 const char NoteTakingHelper::kDevKeepExtensionId[] =
     "ogfjaccbdfhecploibfbhighmebiffla";
 const char NoteTakingHelper::kProdKeepExtensionId[] =

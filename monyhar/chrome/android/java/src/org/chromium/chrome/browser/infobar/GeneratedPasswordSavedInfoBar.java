@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.infobar;
+package org.monyhar.chrome.browser.infobar;
 
 import android.text.SpannableString;
 import android.text.Spanned;
 
-import org.chromium.chrome.R;
-import org.chromium.components.infobars.ConfirmInfoBar;
-import org.chromium.components.infobars.InfoBarControlLayout;
-import org.chromium.components.infobars.InfoBarLayout;
-import org.chromium.ui.text.NoUnderlineClickableSpan;
+import org.monyhar.chrome.R;
+import org.monyhar.components.infobars.ConfirmInfoBar;
+import org.monyhar.components.infobars.InfoBarControlLayout;
+import org.monyhar.components.infobars.InfoBarLayout;
+import org.monyhar.ui.text.NoUnderlineClickableSpan;
 
 /**
  * An infobar to notify that the generated password was saved.

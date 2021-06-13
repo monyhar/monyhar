@@ -48,7 +48,7 @@ finally:
 # to reload.
 _DEBUGGING = False
 
-pp_set = gdb.printing.RegexpCollectionPrettyPrinter("chromium")
+pp_set = gdb.printing.RegexpCollectionPrettyPrinter("monyhar")
 
 
 def typed_ptr(ptr):

@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.directactions;
+package org.monyhar.chrome.browser.directactions;
 
 import android.os.Bundle;
 
-import org.chromium.base.Callback;
+import org.monyhar.base.Callback;
 
 /**
  * Abstract base class that helps define handler that provide a single, no-argument action,

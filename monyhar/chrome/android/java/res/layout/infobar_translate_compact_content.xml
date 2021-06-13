@@ -11,7 +11,7 @@
     android:gravity="center_vertical"
     android:orientation="horizontal">
     <!-- TODO(huayinz): Change app:tabIndicatorColor to some common color reference -->
-    <org.chromium.components.translate.TranslateTabLayout
+    <org.monyhar.components.translate.TranslateTabLayout
         android:id="@+id/translate_infobar_tabs"
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -26,7 +26,7 @@
         app:tabGravity="fill"
         app:tabMode="scrollable" />
 
-    <org.chromium.ui.widget.ChromeImageButton
+    <org.monyhar.ui.widget.ChromeImageButton
         android:id="@+id/translate_infobar_menu_button"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"

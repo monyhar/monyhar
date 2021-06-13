@@ -130,8 +130,8 @@ if (current_cpu == "x86" || (current_cpu == "x64" && !is_msan)) {
   # symbols.
 
   source_set("libvpx_intrinsics_mmx") {
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs += [ ":libvpx_config" ]
     if (!is_win) {
       cflags = [ "-mmmx" ]
@@ -146,8 +146,8 @@ if (current_cpu == "x86" || (current_cpu == "x64" && !is_msan)) {
   }
 
   source_set("libvpx_intrinsics_sse2") {
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs += [ ":libvpx_config" ]
     if (!is_win || is_clang) {
       cflags = [ "-msse2" ]
@@ -162,8 +162,8 @@ if (current_cpu == "x86" || (current_cpu == "x64" && !is_msan)) {
   }
 
   source_set("libvpx_intrinsics_ssse3") {
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs += [ ":libvpx_config" ]
     if (!is_win || is_clang) {
       cflags = [ "-mssse3" ]
@@ -178,8 +178,8 @@ if (current_cpu == "x86" || (current_cpu == "x64" && !is_msan)) {
   }
 
   source_set("libvpx_intrinsics_sse4_1") {
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs += [ ":libvpx_config" ]
     if (!is_win || is_clang) {
       cflags = [ "-msse4.1" ]
@@ -194,8 +194,8 @@ if (current_cpu == "x86" || (current_cpu == "x64" && !is_msan)) {
   }
 
   source_set("libvpx_intrinsics_avx") {
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs += [ ":libvpx_config" ]
     if (is_win) {
       cflags = [ "/arch:AVX" ]
@@ -212,8 +212,8 @@ if (current_cpu == "x86" || (current_cpu == "x64" && !is_msan)) {
   }
 
   source_set("libvpx_intrinsics_avx2") {
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs += [ ":libvpx_config" ]
     if (is_win) {
       cflags = [ "/arch:AVX2" ]
@@ -230,12 +230,12 @@ if (current_cpu == "x86" || (current_cpu == "x64" && !is_msan)) {
   }
 
   source_set("libvpx_intrinsics_avx512") {
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs += [ ":libvpx_config" ]
     if (is_win) {
       # clang-cl does not accept this flag.
-      # https://bugs.chromium.org/p/chromium/issues/detail?id=783370
+      # https://bugs.monyhar.org/p/monyhar/issues/detail?id=783370
       cflags = [ "/arch:AVX512" ]
     } else {
       cflags = [
@@ -420,8 +420,8 @@ static_library("libvpx") {
     }
   }
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
   configs += [ ":libvpx_config" ]
   deps = []
   if (!_force_generic_srcs) {
@@ -462,8 +462,8 @@ static_library("libvp9rc") {
     "//third_party/libvpx/source/libvpx/vp9/ratectrl_rtc.h",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
   configs += [ ":libvpx_config" ]
   public_deps = [ ":libvpx" ]
 

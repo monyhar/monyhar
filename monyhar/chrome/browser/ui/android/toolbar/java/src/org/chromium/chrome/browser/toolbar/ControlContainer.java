@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar;
+package org.monyhar.chrome.browser.toolbar;
 
 import android.view.View;
 
-import org.chromium.components.browser_ui.widget.ClipDrawableProgressBar;
-import org.chromium.components.browser_ui.widget.gesture.SwipeGestureListener.SwipeHandler;
-import org.chromium.ui.resources.dynamics.ViewResourceAdapter;
+import org.monyhar.components.browser_ui.widget.ClipDrawableProgressBar;
+import org.monyhar.components.browser_ui.widget.gesture.SwipeGestureListener.SwipeHandler;
+import org.monyhar.ui.resources.dynamics.ViewResourceAdapter;
 
 /**
  * Interface that defines the responsibilities of the layout container for the browser controls.

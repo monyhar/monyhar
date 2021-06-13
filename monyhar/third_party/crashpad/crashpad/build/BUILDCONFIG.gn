@@ -36,16 +36,16 @@ if (current_cpu == "") {
 import("//build/crashpad_buildconfig.gni")
 
 if (crashpad_is_standalone) {
-  _mini_chromium_dir = "//third_party/mini_chromium/mini_chromium"
+  _mini_monyhar_dir = "//third_party/mini_monyhar/mini_monyhar"
 } else if (crashpad_is_external) {
-  _mini_chromium_dir = "//../../mini_chromium/mini_chromium"
+  _mini_monyhar_dir = "//../../mini_monyhar/mini_monyhar"
 }
 
 if (current_os == "win") {
   set_default_toolchain(
-      "$_mini_chromium_dir/build/config:msvc_toolchain_$current_cpu")
+      "$_mini_monyhar_dir/build/config:msvc_toolchain_$current_cpu")
 } else {
-  set_default_toolchain("$_mini_chromium_dir/build/config:gcc_like_toolchain")
+  set_default_toolchain("$_mini_monyhar_dir/build/config:gcc_like_toolchain")
 }
 
 declare_args() {
@@ -60,9 +60,9 @@ declare_args() {
 }
 
 _default_configs = [
-  "$_mini_chromium_dir/build/config:default",
-  "$_mini_chromium_dir/build/config:Wexit_time_destructors",
-  "$_mini_chromium_dir/build/config:Wimplicit_fallthrough",
+  "$_mini_monyhar_dir/build/config:default",
+  "$_mini_monyhar_dir/build/config:Wexit_time_destructors",
+  "$_mini_monyhar_dir/build/config:Wimplicit_fallthrough",
 ]
 
 if (crashpad_use_libfuzzer) {
@@ -70,8 +70,8 @@ if (crashpad_use_libfuzzer) {
 }
 
 _default_executable_configs = _default_configs + [
-                                "$_mini_chromium_dir/build/config:executable",
-                                "$_mini_chromium_dir/build/config:win_console",
+                                "$_mini_monyhar_dir/build/config:executable",
+                                "$_mini_monyhar_dir/build/config:win_console",
                               ]
 
 set_defaults("source_set") {

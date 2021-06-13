@@ -935,7 +935,7 @@ void LayoutTable::AdjustWidthsForCollapsedColumns(
     // collapsed column. ColElementAtAbsoluteColumn() is currently O(n);
     // ideally, it would be O(1). We have to improve the runtime before shipping
     // visibility:collapse for columns. See discussion at
-    // https://chromium-review.googlesource.com/c/chromium/src/+/602506/18/third_party/WebKit/Source/core/layout/LayoutTable.cpp
+    // https://monyhar-review.googlesource.com/c/monyhar/src/+/602506/18/third_party/WebKit/Source/core/layout/LayoutTable.cpp
     if (IsAbsoluteColumnCollapsed(EffectiveColumnToAbsoluteColumn(i))) {
       if (!col_collapsed_width.size())
         col_collapsed_width.Grow(n_eff_cols);

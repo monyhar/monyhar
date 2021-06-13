@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.lens;
+package org.monyhar.chrome.browser.lens;
 
 import android.net.Uri;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * A wrapper class for the Lens image query params (e.g. used in LensController.queryImage)

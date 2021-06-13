@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.screenshot;
+package org.monyhar.chrome.browser.share.screenshot;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
@@ -11,9 +11,9 @@ import androidx.annotation.VisibleForTesting;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.share.share_sheet.ChromeOptionShareCallback;
-import org.chromium.chrome.browser.tab.Tab;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.share.share_sheet.ChromeOptionShareCallback;
+import org.monyhar.chrome.browser.tab.Tab;
 /**
  * Coordinator for displaying the screenshot share sheet dialog.
  */

@@ -5,7 +5,7 @@
 import("//build/config/android/rules.gni")
 
 android_library("util_java") {
-  sources = [ "java/src/org/chromium/chrome/browser/policy/CloudManagementSharedPreferences.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/policy/CloudManagementSharedPreferences.java" ]
 
   deps = [
     "//base:base_java",
@@ -18,8 +18,8 @@ android_library("util_java") {
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/policy/CloudManagementAndroidConnection.java",
-    "java/src/org/chromium/chrome/browser/policy/PolicyServiceFactory.java",
+    "java/src/org/monyhar/chrome/browser/policy/CloudManagementAndroidConnection.java",
+    "java/src/org/monyhar/chrome/browser/policy/PolicyServiceFactory.java",
   ]
 
   deps = [
@@ -39,8 +39,8 @@ android_library("java") {
 
 android_library("delegate_java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/policy/CloudManagementAndroidConnectionDelegate.java",
-    "java/src/org/chromium/chrome/browser/policy/CloudManagementAndroidConnectionDelegateImpl.java",
+    "java/src/org/monyhar/chrome/browser/policy/CloudManagementAndroidConnectionDelegate.java",
+    "java/src/org/monyhar/chrome/browser/policy/CloudManagementAndroidConnectionDelegateImpl.java",
   ]
 
   # Add the actual implementation where necessary so that downstream
@@ -50,7 +50,7 @@ android_library("delegate_java") {
 }
 
 android_library("delegate_public_impl_java") {
-  sources = [ "java/src/org/chromium/chrome/browser/policy/CloudManagementAndroidConnectionDelegateImpl.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/policy/CloudManagementAndroidConnectionDelegateImpl.java" ]
 
   deps = [
     ":delegate_java",
@@ -60,9 +60,9 @@ android_library("delegate_public_impl_java") {
 
 generate_jni("jni_headers") {
   sources = [
-    "java/src/org/chromium/chrome/browser/policy/CloudManagementAndroidConnection.java",
-    "java/src/org/chromium/chrome/browser/policy/CloudManagementSharedPreferences.java",
-    "java/src/org/chromium/chrome/browser/policy/PolicyServiceFactory.java",
+    "java/src/org/monyhar/chrome/browser/policy/CloudManagementAndroidConnection.java",
+    "java/src/org/monyhar/chrome/browser/policy/CloudManagementSharedPreferences.java",
+    "java/src/org/monyhar/chrome/browser/policy/PolicyServiceFactory.java",
   ]
 }
 
@@ -72,8 +72,8 @@ android_library("junit") {
   testonly = true
 
   sources = [
-    "java/src/org/chromium/chrome/browser/policy/CloudManagementAndroidConnectionTest.java",
-    "java/src/org/chromium/chrome/browser/policy/CloudManagementSharedPreferencesTest.java",
+    "java/src/org/monyhar/chrome/browser/policy/CloudManagementAndroidConnectionTest.java",
+    "java/src/org/monyhar/chrome/browser/policy/CloudManagementSharedPreferencesTest.java",
   ]
 
   deps = [

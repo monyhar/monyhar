@@ -181,8 +181,8 @@ js_library("profile_picker_main_view") {
     ":manage_profiles_browser_proxy",
     ":navigation_behavior",
     ":profile_card",
-    "//third_party/polymer/v3_0/components-chromium/iron-icon",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-icon",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_checkbox:cr_checkbox.m",
     "//ui/webui/resources/cr_elements/cr_icon_button:cr_icon_button.m",
     "//ui/webui/resources/js:load_time_data.m",
@@ -193,7 +193,7 @@ js_library("profile_picker_main_view") {
 
 js_library("navigation_behavior") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
   ]
   externs_list = [ "$externs_path/metrics_private.js" ]
@@ -205,7 +205,7 @@ js_library("profile_picker_app") {
     ":navigation_behavior",
     ":profile_picker_main_view",
     ":profile_switch",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_lazy_render:cr_lazy_render.m",
     "//ui/webui/resources/cr_elements/cr_view_manager:cr_view_manager",
   ]
@@ -215,8 +215,8 @@ js_library("profile_card") {
   deps = [
     ":manage_profiles_browser_proxy",
     ":profile_card_menu",
-    "//third_party/polymer/v3_0/components-chromium/paper-tooltip:paper-tooltip",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/paper-tooltip:paper-tooltip",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_button:cr_button.m",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
@@ -225,7 +225,7 @@ js_library("profile_card") {
 js_library("profile_card_menu") {
   deps = [
     ":manage_profiles_browser_proxy",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_action_menu:cr_action_menu.m",
     "//ui/webui/resources/cr_elements/cr_dialog:cr_dialog.m",
     "//ui/webui/resources/cr_elements/cr_icon_button:cr_icon_button.m",

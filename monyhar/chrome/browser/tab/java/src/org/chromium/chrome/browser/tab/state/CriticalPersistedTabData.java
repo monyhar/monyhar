@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab.state;
+package org.monyhar.chrome.browser.tab.state;
 
 import android.graphics.Color;
 import android.text.TextUtils;
@@ -13,21 +13,21 @@ import androidx.annotation.VisibleForTesting;
 import com.google.protobuf.ByteString;
 import com.google.protobuf.InvalidProtocolBufferException;
 
-import org.chromium.base.Callback;
-import org.chromium.base.Log;
-import org.chromium.base.ObserverList;
-import org.chromium.base.TraceEvent;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabLaunchType;
-import org.chromium.chrome.browser.tab.WebContentsState;
-import org.chromium.chrome.browser.tab.WebContentsStateBridge;
-import org.chromium.chrome.browser.tab.proto.CriticalPersistedTabData.CriticalPersistedTabDataProto;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.common.Referrer;
-import org.chromium.url.GURL;
+import org.monyhar.base.Callback;
+import org.monyhar.base.Log;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabLaunchType;
+import org.monyhar.chrome.browser.tab.WebContentsState;
+import org.monyhar.chrome.browser.tab.WebContentsStateBridge;
+import org.monyhar.chrome.browser.tab.proto.CriticalPersistedTabData.CriticalPersistedTabDataProto;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.common.Referrer;
+import org.monyhar.url.GURL;
 
 import java.nio.ByteBuffer;
 import java.util.Locale;

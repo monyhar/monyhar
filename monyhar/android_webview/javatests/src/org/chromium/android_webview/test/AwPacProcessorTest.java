@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 import androidx.test.filters.SmallTest;
 
-import com.android.webview.chromium.WebViewChromiumFactoryProvider;
+import com.android.webview.monyhar.WebViewChromiumFactoryProvider;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -13,9 +13,9 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.AwPacProcessor;
-import org.chromium.base.JNIUtils;
-import org.chromium.base.library_loader.LibraryLoader;
+import org.monyhar.android_webview.AwPacProcessor;
+import org.monyhar.base.JNIUtils;
+import org.monyhar.base.library_loader.LibraryLoader;
 
 /**
  * Tests for AwPacProcessor class.

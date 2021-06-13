@@ -11,7 +11,7 @@ namespace crdtp {
 namespace json {
 // These routines are implemented in json_platform.cc, or in a
 // platform-dependent (code-base dependent) custom replacement.
-// E.g., json_platform_chromium.cc, json_platform_v8.cc.
+// E.g., json_platform_monyhar.cc, json_platform_v8.cc.
 namespace platform {
 // Parses |str| into |result|. Returns false iff there are
 // leftover characters or parsing errors.

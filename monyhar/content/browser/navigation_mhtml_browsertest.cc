@@ -105,7 +105,7 @@ class MhtmlArchive {
   // Writes the MHTML archive into a file and returns its URL.
   const GURL Write(const std::string& file) {
     const char* document_header =
-        "From: The chromium developers\n"
+        "From: The monyhar developers\n"
         "Subject: <the subject>\n"
         "Date: Mon, May 27 2019 11:55:42 GMT+0200\n"
         "MIME-Version: 1.0\n"

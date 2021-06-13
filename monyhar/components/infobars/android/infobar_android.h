@@ -15,7 +15,7 @@ namespace infobars {
 class InfoBarAndroid : public InfoBar {
  public:
   // A Java counterpart will be generated for this enum.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.infobar
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.infobar
   // GENERATED_JAVA_PREFIX_TO_STRIP: ACTION_
   enum ActionType {
     ACTION_NONE = 0,

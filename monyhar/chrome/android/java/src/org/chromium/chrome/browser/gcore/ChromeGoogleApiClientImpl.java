@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.gcore;
+package org.monyhar.chrome.browser.gcore;
 
 import android.content.Context;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 
-import org.chromium.base.Log;
-import org.chromium.base.TraceEvent;
-import org.chromium.components.externalauth.ExternalAuthUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.components.externalauth.ExternalAuthUtils;
 
 import java.util.concurrent.TimeUnit;
 

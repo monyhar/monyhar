@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar.top;
+package org.monyhar.chrome.browser.toolbar.top;
 
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
@@ -13,37 +13,37 @@ import android.view.View.OnLongClickListener;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.supplier.BooleanSupplier;
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.base.supplier.OneShotCallback;
-import org.chromium.base.supplier.OneshotSupplier;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsStateProvider;
-import org.chromium.chrome.browser.device.DeviceClassManager;
-import org.chromium.chrome.browser.layouts.LayoutManager;
-import org.chromium.chrome.browser.layouts.LayoutStateProvider;
-import org.chromium.chrome.browser.layouts.LayoutType;
-import org.chromium.chrome.browser.omnibox.LocationBar;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.IncognitoStateProvider;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.theme.ThemeColorProvider;
-import org.chromium.chrome.browser.theme.TopUiThemeColorProvider;
-import org.chromium.chrome.browser.toolbar.ButtonData;
-import org.chromium.chrome.browser.toolbar.ButtonDataProvider;
-import org.chromium.chrome.browser.toolbar.TabCountProvider;
-import org.chromium.chrome.browser.toolbar.ToolbarDataProvider;
-import org.chromium.chrome.browser.toolbar.ToolbarProgressBar;
-import org.chromium.chrome.browser.toolbar.ToolbarTabController;
-import org.chromium.chrome.browser.toolbar.menu_button.MenuButton;
-import org.chromium.chrome.browser.toolbar.menu_button.MenuButtonCoordinator;
-import org.chromium.chrome.browser.ui.appmenu.AppMenuButtonHelper;
-import org.chromium.chrome.browser.user_education.UserEducationHelper;
-import org.chromium.chrome.features.start_surface.StartSurface;
-import org.chromium.chrome.features.start_surface.StartSurfaceState;
-import org.chromium.ui.resources.ResourceManager;
+import org.monyhar.base.Callback;
+import org.monyhar.base.supplier.BooleanSupplier;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.base.supplier.OneShotCallback;
+import org.monyhar.base.supplier.OneshotSupplier;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsStateProvider;
+import org.monyhar.chrome.browser.device.DeviceClassManager;
+import org.monyhar.chrome.browser.layouts.LayoutManager;
+import org.monyhar.chrome.browser.layouts.LayoutStateProvider;
+import org.monyhar.chrome.browser.layouts.LayoutType;
+import org.monyhar.chrome.browser.omnibox.LocationBar;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.IncognitoStateProvider;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.theme.ThemeColorProvider;
+import org.monyhar.chrome.browser.theme.TopUiThemeColorProvider;
+import org.monyhar.chrome.browser.toolbar.ButtonData;
+import org.monyhar.chrome.browser.toolbar.ButtonDataProvider;
+import org.monyhar.chrome.browser.toolbar.TabCountProvider;
+import org.monyhar.chrome.browser.toolbar.ToolbarDataProvider;
+import org.monyhar.chrome.browser.toolbar.ToolbarProgressBar;
+import org.monyhar.chrome.browser.toolbar.ToolbarTabController;
+import org.monyhar.chrome.browser.toolbar.menu_button.MenuButton;
+import org.monyhar.chrome.browser.toolbar.menu_button.MenuButtonCoordinator;
+import org.monyhar.chrome.browser.ui.appmenu.AppMenuButtonHelper;
+import org.monyhar.chrome.browser.user_education.UserEducationHelper;
+import org.monyhar.chrome.features.start_surface.StartSurface;
+import org.monyhar.chrome.features.start_surface.StartSurfaceState;
+import org.monyhar.ui.resources.ResourceManager;
 
 import java.util.List;
 

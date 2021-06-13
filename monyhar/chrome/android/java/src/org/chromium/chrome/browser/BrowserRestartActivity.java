@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,15 +10,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Process;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.annotations.MainDex;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.annotations.MainDex;
 
 /**
  * Kills and (optionally) restarts the main Chrome process, then immediately kills itself.
  *
  * Starting this Activity should only be done by the
- * {@link org.chromium.chrome.browser.init.ChromeLifetimeController}, and requires
+ * {@link org.monyhar.chrome.browser.init.ChromeLifetimeController}, and requires
  * passing in the process ID (the Intent should have the value of Process#myPid() as an extra).
  *
  * This Activity runs on a separate process from the main Chrome browser and cannot see the main
@@ -28,13 +28,13 @@ import org.chromium.base.annotations.MainDex;
 @MainDex // Runs in a separate process.
 public class BrowserRestartActivity extends Activity {
     public static final String EXTRA_MAIN_PID =
-            "org.chromium.chrome.browser.BrowserRestartActivity.main_pid";
+            "org.monyhar.chrome.browser.BrowserRestartActivity.main_pid";
     public static final String EXTRA_RESTART =
-            "org.chromium.chrome.browser.BrowserRestartActivity.restart";
+            "org.monyhar.chrome.browser.BrowserRestartActivity.restart";
 
     /**
      * Creates an Intent to start the {@link BrowserRestartActivity}.  Must only be called by the
-     * {@link org.chromium.chrome.browser.init.ChromeLifetimeController}.
+     * {@link org.monyhar.chrome.browser.init.ChromeLifetimeController}.
      * @param context       Context to use when constructing the Intent.
      * @param restartChrome Whether or not to restart Chrome after killing the process.
      * @return Intent that can be used to restart Chrome.

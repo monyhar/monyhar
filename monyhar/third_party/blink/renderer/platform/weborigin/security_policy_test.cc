@@ -422,8 +422,8 @@ class SecurityPolicyAccessTest : public testing::Test {
         SecurityOrigin::CreateFromString("https://sub.example.com");
     http_example_origin_ =
         SecurityOrigin::CreateFromString("http://example.com");
-    https_chromium_origin_ =
-        SecurityOrigin::CreateFromString("https://chromium.org");
+    https_monyhar_origin_ =
+        SecurityOrigin::CreateFromString("https://monyhar.org");
     https_google_origin_ =
         SecurityOrigin::CreateFromString("https://google.com");
   }
@@ -439,8 +439,8 @@ class SecurityPolicyAccessTest : public testing::Test {
   const SecurityOrigin* http_example_origin() const {
     return http_example_origin_.get();
   }
-  const SecurityOrigin* https_chromium_origin() const {
-    return https_chromium_origin_.get();
+  const SecurityOrigin* https_monyhar_origin() const {
+    return https_monyhar_origin_.get();
   }
   const SecurityOrigin* https_google_origin() const {
     return https_google_origin_.get();
@@ -450,7 +450,7 @@ class SecurityPolicyAccessTest : public testing::Test {
   scoped_refptr<const SecurityOrigin> https_example_origin_;
   scoped_refptr<const SecurityOrigin> https_sub_example_origin_;
   scoped_refptr<const SecurityOrigin> http_example_origin_;
-  scoped_refptr<const SecurityOrigin> https_chromium_origin_;
+  scoped_refptr<const SecurityOrigin> https_monyhar_origin_;
   scoped_refptr<const SecurityOrigin> https_google_origin_;
 
   DISALLOW_COPY_AND_ASSIGN(SecurityPolicyAccessTest);
@@ -460,120 +460,120 @@ class SecurityPolicyAccessTest : public testing::Test {
 // is to check think wrapper functions to the network::cors::OriginAccessList.
 TEST_F(SecurityPolicyAccessTest, IsOriginAccessAllowed) {
   // By default, no access should be allowed.
-  EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(https_chromium_origin(),
+  EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(https_monyhar_origin(),
                                                      https_example_origin()));
   EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(
-      https_chromium_origin(), https_sub_example_origin()));
-  EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(https_chromium_origin(),
+      https_monyhar_origin(), https_sub_example_origin()));
+  EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(https_monyhar_origin(),
                                                      http_example_origin()));
 
   // Adding access for https://example.com should work, but should not grant
   // access to subdomains or other schemes.
   SecurityPolicy::AddOriginAccessAllowListEntry(
-      *https_chromium_origin(), "https", "example.com",
+      *https_monyhar_origin(), "https", "example.com",
       /*destination_port=*/0,
       network::mojom::CorsDomainMatchMode::kDisallowSubdomains,
       network::mojom::CorsPortMatchMode::kAllowAnyPort,
       network::mojom::CorsOriginAccessMatchPriority::kDefaultPriority);
-  EXPECT_TRUE(SecurityPolicy::IsOriginAccessAllowed(https_chromium_origin(),
+  EXPECT_TRUE(SecurityPolicy::IsOriginAccessAllowed(https_monyhar_origin(),
                                                     https_example_origin()));
   EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(
-      https_chromium_origin(), https_sub_example_origin()));
-  EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(https_chromium_origin(),
+      https_monyhar_origin(), https_sub_example_origin()));
+  EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(https_monyhar_origin(),
                                                      http_example_origin()));
 
   // Clearing the map should revoke all special access.
   SecurityPolicy::ClearOriginAccessList();
-  EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(https_chromium_origin(),
+  EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(https_monyhar_origin(),
                                                      https_example_origin()));
   EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(
-      https_chromium_origin(), https_sub_example_origin()));
-  EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(https_chromium_origin(),
+      https_monyhar_origin(), https_sub_example_origin()));
+  EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(https_monyhar_origin(),
                                                      http_example_origin()));
 
   // Adding an entry that matches subdomains should grant access to any
   // subdomains.
   SecurityPolicy::AddOriginAccessAllowListEntry(
-      *https_chromium_origin(), "https", "example.com",
+      *https_monyhar_origin(), "https", "example.com",
       /*destination_port=*/0,
       network::mojom::CorsDomainMatchMode::kAllowSubdomains,
       network::mojom::CorsPortMatchMode::kAllowAnyPort,
       network::mojom::CorsOriginAccessMatchPriority::kDefaultPriority);
-  EXPECT_TRUE(SecurityPolicy::IsOriginAccessAllowed(https_chromium_origin(),
+  EXPECT_TRUE(SecurityPolicy::IsOriginAccessAllowed(https_monyhar_origin(),
                                                     https_example_origin()));
   EXPECT_TRUE(SecurityPolicy::IsOriginAccessAllowed(
-      https_chromium_origin(), https_sub_example_origin()));
-  EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(https_chromium_origin(),
+      https_monyhar_origin(), https_sub_example_origin()));
+  EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(https_monyhar_origin(),
                                                      http_example_origin()));
 }
 
 TEST_F(SecurityPolicyAccessTest, IsOriginAccessAllowedWildCard) {
   // An empty domain that matches subdomains results in matching every domain.
   SecurityPolicy::AddOriginAccessAllowListEntry(
-      *https_chromium_origin(), "https", "",
+      *https_monyhar_origin(), "https", "",
       /*destination_port=*/0,
       network::mojom::CorsDomainMatchMode::kAllowSubdomains,
       network::mojom::CorsPortMatchMode::kAllowAnyPort,
       network::mojom::CorsOriginAccessMatchPriority::kDefaultPriority);
-  EXPECT_TRUE(SecurityPolicy::IsOriginAccessAllowed(https_chromium_origin(),
+  EXPECT_TRUE(SecurityPolicy::IsOriginAccessAllowed(https_monyhar_origin(),
                                                     https_example_origin()));
-  EXPECT_TRUE(SecurityPolicy::IsOriginAccessAllowed(https_chromium_origin(),
+  EXPECT_TRUE(SecurityPolicy::IsOriginAccessAllowed(https_monyhar_origin(),
                                                     https_google_origin()));
-  EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(https_chromium_origin(),
+  EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(https_monyhar_origin(),
                                                      http_example_origin()));
 }
 
 TEST_F(SecurityPolicyAccessTest, IsOriginAccessAllowedWithBlockListEntry) {
   // The block list takes priority over the allow list.
   SecurityPolicy::AddOriginAccessAllowListEntry(
-      *https_chromium_origin(), "https", "example.com",
+      *https_monyhar_origin(), "https", "example.com",
       /*destination_port=*/0,
       network::mojom::CorsDomainMatchMode::kAllowSubdomains,
       network::mojom::CorsPortMatchMode::kAllowAnyPort,
       network::mojom::CorsOriginAccessMatchPriority::kDefaultPriority);
   SecurityPolicy::AddOriginAccessBlockListEntry(
-      *https_chromium_origin(), "https", "example.com",
+      *https_monyhar_origin(), "https", "example.com",
       /*destination_port=*/0,
       network::mojom::CorsDomainMatchMode::kDisallowSubdomains,
       network::mojom::CorsPortMatchMode::kAllowAnyPort,
       network::mojom::CorsOriginAccessMatchPriority::kDefaultPriority);
 
-  EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(https_chromium_origin(),
+  EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(https_monyhar_origin(),
                                                      https_example_origin()));
   EXPECT_TRUE(SecurityPolicy::IsOriginAccessAllowed(
-      https_chromium_origin(), https_sub_example_origin()));
+      https_monyhar_origin(), https_sub_example_origin()));
 }
 
 TEST_F(SecurityPolicyAccessTest,
        IsOriginAccessAllowedWildcardWithBlockListEntry) {
   SecurityPolicy::AddOriginAccessAllowListEntry(
-      *https_chromium_origin(), "https", "",
+      *https_monyhar_origin(), "https", "",
       /*destination_port=*/0,
       network::mojom::CorsDomainMatchMode::kAllowSubdomains,
       network::mojom::CorsPortMatchMode::kAllowAnyPort,
       network::mojom::CorsOriginAccessMatchPriority::kDefaultPriority);
   SecurityPolicy::AddOriginAccessBlockListEntry(
-      *https_chromium_origin(), "https", "google.com",
+      *https_monyhar_origin(), "https", "google.com",
       /*destination_port=*/0,
       network::mojom::CorsDomainMatchMode::kDisallowSubdomains,
       network::mojom::CorsPortMatchMode::kAllowAnyPort,
       network::mojom::CorsOriginAccessMatchPriority::kDefaultPriority);
 
-  EXPECT_TRUE(SecurityPolicy::IsOriginAccessAllowed(https_chromium_origin(),
+  EXPECT_TRUE(SecurityPolicy::IsOriginAccessAllowed(https_monyhar_origin(),
                                                     https_example_origin()));
-  EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(https_chromium_origin(),
+  EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(https_monyhar_origin(),
                                                      https_google_origin()));
 }
 
 TEST_F(SecurityPolicyAccessTest, ClearOriginAccessListForOrigin) {
   SecurityPolicy::AddOriginAccessAllowListEntry(
-      *https_chromium_origin(), "https", "example.com",
+      *https_monyhar_origin(), "https", "example.com",
       /*destination_port=*/0,
       network::mojom::CorsDomainMatchMode::kAllowSubdomains,
       network::mojom::CorsPortMatchMode::kAllowAnyPort,
       network::mojom::CorsOriginAccessMatchPriority::kDefaultPriority);
   SecurityPolicy::AddOriginAccessAllowListEntry(
-      *https_chromium_origin(), "https", "google.com",
+      *https_monyhar_origin(), "https", "google.com",
       /*destination_port=*/0,
       network::mojom::CorsDomainMatchMode::kAllowSubdomains,
       network::mojom::CorsPortMatchMode::kAllowAnyPort,
@@ -585,11 +585,11 @@ TEST_F(SecurityPolicyAccessTest, ClearOriginAccessListForOrigin) {
       network::mojom::CorsPortMatchMode::kAllowAnyPort,
       network::mojom::CorsOriginAccessMatchPriority::kDefaultPriority);
 
-  SecurityPolicy::ClearOriginAccessListForOrigin(*https_chromium_origin());
+  SecurityPolicy::ClearOriginAccessListForOrigin(*https_monyhar_origin());
 
-  EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(https_chromium_origin(),
+  EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(https_monyhar_origin(),
                                                      https_example_origin()));
-  EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(https_chromium_origin(),
+  EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(https_monyhar_origin(),
                                                      https_google_origin()));
   EXPECT_TRUE(SecurityPolicy::IsOriginAccessAllowed(https_example_origin(),
                                                     https_google_origin()));
@@ -597,31 +597,31 @@ TEST_F(SecurityPolicyAccessTest, ClearOriginAccessListForOrigin) {
 
 TEST_F(SecurityPolicyAccessTest, IsOriginAccessAllowedPriority) {
   EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(
-      https_chromium_origin(), https_sub_example_origin()));
+      https_monyhar_origin(), https_sub_example_origin()));
   SecurityPolicy::AddOriginAccessAllowListEntry(
-      *https_chromium_origin(), "https", "sub.example.com",
+      *https_monyhar_origin(), "https", "sub.example.com",
       /*destination_port=*/0,
       network::mojom::CorsDomainMatchMode::kDisallowSubdomains,
       network::mojom::CorsPortMatchMode::kAllowAnyPort,
       network::mojom::CorsOriginAccessMatchPriority::kLowPriority);
   EXPECT_TRUE(SecurityPolicy::IsOriginAccessAllowed(
-      https_chromium_origin(), https_sub_example_origin()));
+      https_monyhar_origin(), https_sub_example_origin()));
   SecurityPolicy::AddOriginAccessBlockListEntry(
-      *https_chromium_origin(), "https", "example.com",
+      *https_monyhar_origin(), "https", "example.com",
       /*destination_port=*/0,
       network::mojom::CorsDomainMatchMode::kAllowSubdomains,
       network::mojom::CorsPortMatchMode::kAllowAnyPort,
       network::mojom::CorsOriginAccessMatchPriority::kMediumPriority);
   EXPECT_FALSE(SecurityPolicy::IsOriginAccessAllowed(
-      https_chromium_origin(), https_sub_example_origin()));
+      https_monyhar_origin(), https_sub_example_origin()));
   SecurityPolicy::AddOriginAccessAllowListEntry(
-      *https_chromium_origin(), "https", "example.com",
+      *https_monyhar_origin(), "https", "example.com",
       /*destination_port=*/0,
       network::mojom::CorsDomainMatchMode::kAllowSubdomains,
       network::mojom::CorsPortMatchMode::kAllowAnyPort,
       network::mojom::CorsOriginAccessMatchPriority::kHighPriority);
   EXPECT_TRUE(SecurityPolicy::IsOriginAccessAllowed(
-      https_chromium_origin(), https_sub_example_origin()));
+      https_monyhar_origin(), https_sub_example_origin()));
 }
 
 // Test that referrers for custom hierarchical (standard) schemes are correctly

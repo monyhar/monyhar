@@ -1,4 +1,4 @@
 monorail {
   component: "Internals>Plugins>Pepper"
 }
-team_email: "pepper-dev@chromium.org"
+team_email: "pepper-dev@monyhar.org"

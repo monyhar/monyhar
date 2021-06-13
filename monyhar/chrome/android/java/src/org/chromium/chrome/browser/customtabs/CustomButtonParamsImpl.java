@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import android.app.PendingIntent;
 import android.content.Context;
@@ -25,14 +25,14 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.browser.customtabs.CustomTabsIntent;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.base.Log;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.browserservices.intents.CustomButtonParams;
-import org.chromium.chrome.browser.theme.ThemeUtils;
-import org.chromium.components.browser_ui.widget.TintedDrawable;
-import org.chromium.ui.util.ColorUtils;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.browserservices.intents.CustomButtonParams;
+import org.monyhar.chrome.browser.theme.ThemeUtils;
+import org.monyhar.components.browser_ui.widget.TintedDrawable;
+import org.monyhar.ui.util.ColorUtils;
+import org.monyhar.ui.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashSet;

@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_entry_edit;
+package org.monyhar.chrome.browser.password_entry_edit;
 
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.ALL_KEYS;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.FEDERATION_ORIGIN;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.UI_ACTION_HANDLER;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.URL_OR_APP;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.ALL_KEYS;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.FEDERATION_ORIGIN;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.UI_ACTION_HANDLER;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.URL_OR_APP;
 
-import org.chromium.chrome.browser.feedback.HelpAndFeedbackLauncher;
-import org.chromium.chrome.browser.password_entry_edit.CredentialEntryFragmentViewBase.ComponentStateDelegate;
-import org.chromium.chrome.browser.password_manager.ConfirmationDialogHelper;
-import org.chromium.chrome.browser.password_manager.settings.PasswordAccessReauthenticationHelper;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.chrome.browser.feedback.HelpAndFeedbackLauncher;
+import org.monyhar.chrome.browser.password_entry_edit.CredentialEntryFragmentViewBase.ComponentStateDelegate;
+import org.monyhar.chrome.browser.password_manager.ConfirmationDialogHelper;
+import org.monyhar.chrome.browser.password_manager.settings.PasswordAccessReauthenticationHelper;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
 
 import java.lang.ref.WeakReference;
 

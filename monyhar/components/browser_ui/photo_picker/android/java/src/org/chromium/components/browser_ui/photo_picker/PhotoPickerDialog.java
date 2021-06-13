@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.photo_picker;
+package org.monyhar.components.browser_ui.photo_picker;
 
 import android.content.ContentResolver;
 import android.net.Uri;
@@ -10,9 +10,9 @@ import android.net.Uri;
 import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.app.AlertDialog;
 
-import org.chromium.ui.base.PhotoPicker;
-import org.chromium.ui.base.PhotoPickerListener;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.ui.base.PhotoPicker;
+import org.monyhar.ui.base.PhotoPickerListener;
+import org.monyhar.ui.base.WindowAndroid;
 
 import java.util.List;
 

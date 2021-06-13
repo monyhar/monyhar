@@ -817,7 +817,7 @@ EmbeddedWorkerInstance::CreateFactoryBundle(
   // Without PlzServiceWorker, the COEP header might no be known initially for
   // new ServiceWorker. The default COEP header is used instead here. Later, the
   // subresource loader factories will be updated with the correct COEP header.
-  // See: https://chromium-review.googlesource.com/c/chromium/src/+/2029403
+  // See: https://monyhar-review.googlesource.com/c/monyhar/src/+/2029403
   factory_params->client_security_state->cross_origin_embedder_policy =
       cross_origin_embedder_policy ? cross_origin_embedder_policy.value()
                                    : network::CrossOriginEmbedderPolicy();

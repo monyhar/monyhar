@@ -9,7 +9,7 @@
 #include "base/notreached.h"
 #include "base/strings/string_piece.h"
 #include "fuchsia/base/mem_buffer_util.h"
-#include "fuchsia/fidl/chromium/cast/cpp/fidl.h"
+#include "fuchsia/fidl/monyhar/cast/cpp/fidl.h"
 
 namespace cast_api_bindings {
 namespace {

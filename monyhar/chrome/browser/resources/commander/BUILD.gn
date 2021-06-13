@@ -82,7 +82,7 @@ js_library("app") {
     ":browser_proxy",
     ":option",
     ":types",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:cr.m",
   ]
 }
@@ -95,7 +95,7 @@ js_library("option") {
   deps = [
     ":icons",
     ":types",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 

@@ -26,7 +26,7 @@
 #include "chrome/browser/ui/extensions/icon_with_badge_image_source.h"
 #include "chrome/browser/ui/tabs/tab_strip_model.h"
 #include "chrome/browser/ui/toolbar/toolbar_actions_model.h"
-#include "chrome/grit/chromium_strings.h"
+#include "chrome/grit/monyhar_strings.h"
 #include "chrome/grit/generated_resources.h"
 #include "chrome/test/base/browser_with_test_window_test.h"
 #include "components/sessions/content/session_tab_helper.h"
@@ -272,7 +272,7 @@ TEST_F(ExtensionActionViewControllerUnitTest, OnlyHostPermissionsAppearance) {
   EXPECT_EQ(extension.get(), action_controller->extension());
 
   // Initially load on a site that the extension doesn't have permissions to.
-  AddTab(browser(), GURL("https://www.chromium.org/"));
+  AddTab(browser(), GURL("https://www.monyhar.org/"));
   content::WebContents* web_contents = GetActiveWebContents();
 
   std::unique_ptr<IconWithBadgeImageSource> image_source =
@@ -390,7 +390,7 @@ void ExtensionActionViewControllerGrayscaleTest::RunGrayscaleTest(
                                                                 extension);
   permissions_modifier.SetWithholdHostPermissions(true);
   const GURL kHasPermissionUrl("https://www.google.com/");
-  const GURL kNoPermissionsUrl("https://www.chromium.org/");
+  const GURL kNoPermissionsUrl("https://www.monyhar.org/");
 
   // Make sure UserScriptListener doesn't hold up the navigation.
   extensions::ExtensionsBrowserClient::Get()

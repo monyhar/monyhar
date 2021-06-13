@@ -10,8 +10,8 @@ from gpu_tests import path_util
 
 path_util.AddDirToPathIfNeeded(path_util.GetChromiumSrcDir(), 'tools', 'perf')
 
-from chrome_telemetry_build import chromium_config
+from chrome_telemetry_build import monyhar_config
 
-CONFIG = chromium_config.ChromiumConfig(
+CONFIG = monyhar_config.ChromiumConfig(
     top_level_dir=path_util.GetGpuTestDir(),
     benchmark_dirs=[os.path.join(path_util.GetGpuTestDir(), 'gpu_tests')])

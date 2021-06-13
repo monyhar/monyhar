@@ -7,7 +7,7 @@ compositor_frame_fuzzer.proto, which describes the root RenderPass for a
 CompositorFrame as input. It uses [libFuzzer][libfuzzer] and
 [libprotobuf-mutator][protobuf-mutator] to generate and mutate a corpus of
 inputs that exercise as many code paths as possible. See [libFuzzer in
-Chromium][libfuzzer-chromium] documentation for general information on these
+Chromium][libfuzzer-monyhar] documentation for general information on these
 tools and how they are used in Chromium.
 
 On each iteration, the CompositorFrame fuzzer builds a CompositorFrame
@@ -61,5 +61,5 @@ compositor_frame_fuzzer <path-to-build-gen-files>/components/viz/service/composi
 
 [libfuzzer]: http://llvm.org/docs/LibFuzzer.html
 [protobuf-mutator]: https://github.com/google/libprotobuf-mutator/
-[libfuzzer-chromium]: https://chromium.googlesource.com/chromium/src/+/main/testing/libfuzzer/README.md
-[efficient-fuzzing]: https://chromium.googlesource.com/chromium/src/+/main/testing/libfuzzer/efficient_fuzzer.md
+[libfuzzer-monyhar]: https://monyhar.googlesource.com/monyhar/src/+/main/testing/libfuzzer/README.md
+[efficient-fuzzing]: https://monyhar.googlesource.com/monyhar/src/+/main/testing/libfuzzer/efficient_fuzzer.md

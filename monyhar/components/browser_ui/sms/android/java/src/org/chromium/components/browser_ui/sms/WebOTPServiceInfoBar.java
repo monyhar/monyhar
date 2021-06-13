@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.sms;
+package org.monyhar.components.browser_ui.sms;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,13 +11,13 @@ import android.view.View;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.components.infobars.ConfirmInfoBar;
-import org.chromium.components.infobars.InfoBarControlLayout;
-import org.chromium.components.infobars.InfoBarLayout;
-import org.chromium.ui.KeyboardVisibilityDelegate;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.components.infobars.ConfirmInfoBar;
+import org.monyhar.components.infobars.InfoBarControlLayout;
+import org.monyhar.components.infobars.InfoBarLayout;
+import org.monyhar.ui.KeyboardVisibilityDelegate;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * An InfoBar that asks for the user's permission to share the SMS with the page.

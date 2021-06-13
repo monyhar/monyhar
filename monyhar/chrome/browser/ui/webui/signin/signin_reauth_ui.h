@@ -30,7 +30,7 @@ class WebUIDataSource;
 // Currently this dialog is only used for account password storage opt-in that
 // satisfies both of those conditions.
 //
-// Contact chrome-signin@chromium.org if you want to reuse this dialog for other
+// Contact chrome-signin@monyhar.org if you want to reuse this dialog for other
 // reauth use-cases.
 class SigninReauthUI : public SigninWebDialogUI {
  public:

@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.language.settings;
+package org.monyhar.chrome.browser.language.settings;
 
 import android.text.TextUtils;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.chrome.browser.language.AppLocaleUtils;
-import org.chromium.chrome.browser.language.GlobalAppLocaleController;
-import org.chromium.chrome.browser.language.R;
-import org.chromium.ui.base.ResourceBundle;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.chrome.browser.language.AppLocaleUtils;
+import org.monyhar.chrome.browser.language.GlobalAppLocaleController;
+import org.monyhar.chrome.browser.language.R;
+import org.monyhar.ui.base.ResourceBundle;
 
 import java.util.Arrays;
 import java.util.Comparator;

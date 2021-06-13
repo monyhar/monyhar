@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions;
+package org.monyhar.chrome.browser.omnibox.suggestions;
 
-import org.chromium.ui.base.PageTransition;
+import org.monyhar.ui.base.PageTransition;
 
 /**
  * Provides the additional functionality to trigger and interact with autocomplete suggestions.

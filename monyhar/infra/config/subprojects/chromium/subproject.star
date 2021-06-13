@@ -17,19 +17,19 @@ exec("./swangle.try.star")
 # luci.external_console_view(
 #     name = "main-m86",
 #     title = "Chromium M86 Main Console",
-#     source = "chromium-m86:main",
+#     source = "monyhar-m86:main",
 # )
 
 # luci.external_console_view(
 #     name = "mirrors-m86",
 #     title = "Chromium M86 CQ Mirrors Console",
-#     source = "chromium-m86:mirrors",
+#     source = "monyhar-m86:mirrors",
 # )
 
 # luci.external_console_view(
 #     name = "try-m86",
 #     title = "Chromium M86 CQ Console",
-#     source = "chromium-m86:try",
+#     source = "monyhar-m86:try",
 # )
 
 branches.exec("./fallback-cq.star")

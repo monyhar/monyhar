@@ -21,7 +21,7 @@ import tempfile
 _BUILD_ANDROID_PATH = os.path.abspath(
     os.path.join(os.path.dirname(__file__), '..'))
 sys.path.append(_BUILD_ANDROID_PATH)
-import devil_chromium
+import devil_monyhar
 from devil.android import device_utils
 from devil.utils import timeout_retry
 
@@ -136,7 +136,7 @@ def main():
     logging.error('Missing minidump_stackwalk executable')
     return 1
 
-  devil_chromium.Initialize(output_directory=args.build_path,
+  devil_monyhar.Initialize(output_directory=args.build_path,
                             adb_path=args.adb_path)
   device = device_utils.DeviceUtils(args.device)
 

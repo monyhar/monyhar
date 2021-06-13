@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webapk.shell_apk.test.dex_optimizer;
+package org.monyhar.webapk.shell_apk.test.dex_optimizer;
 
 /**
  * Interface for service which extracts and optimizes a dex file from an APK.

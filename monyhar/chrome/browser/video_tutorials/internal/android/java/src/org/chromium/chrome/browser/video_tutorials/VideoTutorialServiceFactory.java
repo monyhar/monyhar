@@ -2,28 +2,28 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.video_tutorials;
+package org.monyhar.chrome.browser.video_tutorials;
 
 import android.content.Context;
 import android.util.Pair;
 import android.view.ViewGroup;
 import android.view.ViewStub;
 
-import org.chromium.base.Callback;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcher;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.video_tutorials.iph.TryNowTrackerImpl;
-import org.chromium.chrome.browser.video_tutorials.iph.VideoIPHCoordinator;
-import org.chromium.chrome.browser.video_tutorials.iph.VideoIPHCoordinatorImpl;
-import org.chromium.chrome.browser.video_tutorials.iph.VideoTutorialTryNowTracker;
-import org.chromium.chrome.browser.video_tutorials.list.TutorialListCoordinator;
-import org.chromium.chrome.browser.video_tutorials.list.TutorialListCoordinatorImpl;
-import org.chromium.chrome.browser.video_tutorials.player.VideoPlayerCoordinator;
-import org.chromium.chrome.browser.video_tutorials.player.VideoPlayerCoordinatorImpl;
-import org.chromium.components.embedder_support.view.ContentView;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.Callback;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcher;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.video_tutorials.iph.TryNowTrackerImpl;
+import org.monyhar.chrome.browser.video_tutorials.iph.VideoIPHCoordinator;
+import org.monyhar.chrome.browser.video_tutorials.iph.VideoIPHCoordinatorImpl;
+import org.monyhar.chrome.browser.video_tutorials.iph.VideoTutorialTryNowTracker;
+import org.monyhar.chrome.browser.video_tutorials.list.TutorialListCoordinator;
+import org.monyhar.chrome.browser.video_tutorials.list.TutorialListCoordinatorImpl;
+import org.monyhar.chrome.browser.video_tutorials.player.VideoPlayerCoordinator;
+import org.monyhar.chrome.browser.video_tutorials.player.VideoPlayerCoordinatorImpl;
+import org.monyhar.components.embedder_support.view.ContentView;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * Basic factory that creates and returns an {@link VideoTutorialService} that is attached

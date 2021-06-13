@@ -1,11 +1,11 @@
 file://media/OWNERS
 
 # WebRTC OWNERS.
-guidou@chromium.org
-tommi@chromium.org
-olka@chromium.org
+guidou@monyhar.org
+tommi@monyhar.org
+olka@monyhar.org
 
 # Original (legacy) owners.
-per-file *video*=chfremer@chromium.org
-per-file *video*=emircan@chromium.org
-per-file *video*=mcasas@chromium.org
+per-file *video*=chfremer@monyhar.org
+per-file *video*=emircan@monyhar.org
+per-file *video*=mcasas@monyhar.org

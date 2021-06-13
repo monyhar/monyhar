@@ -6,12 +6,12 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/browserservices/verification/OriginVerifier.java",
-    "java/src/org/chromium/chrome/browser/browserservices/verification/OriginVerifierFactory.java",
-    "java/src/org/chromium/chrome/browser/browserservices/verification/OriginVerifierFactoryImpl.java",
-    "java/src/org/chromium/chrome/browser/browserservices/verification/PackageFingerprintCalculator.java",
-    "java/src/org/chromium/chrome/browser/browserservices/verification/Relationship.java",
-    "java/src/org/chromium/chrome/browser/browserservices/verification/VerificationResultStore.java",
+    "java/src/org/monyhar/chrome/browser/browserservices/verification/OriginVerifier.java",
+    "java/src/org/monyhar/chrome/browser/browserservices/verification/OriginVerifierFactory.java",
+    "java/src/org/monyhar/chrome/browser/browserservices/verification/OriginVerifierFactoryImpl.java",
+    "java/src/org/monyhar/chrome/browser/browserservices/verification/PackageFingerprintCalculator.java",
+    "java/src/org/monyhar/chrome/browser/browserservices/verification/Relationship.java",
+    "java/src/org/monyhar/chrome/browser/browserservices/verification/VerificationResultStore.java",
   ]
   deps = [
     "//base:base_java",
@@ -31,14 +31,14 @@ android_library("java") {
 }
 
 generate_jni("jni_headers") {
-  sources = [ "java/src/org/chromium/chrome/browser/browserservices/verification/OriginVerifier.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/browserservices/verification/OriginVerifier.java" ]
 }
 
 android_library("javatests") {
   testonly = true
   sources = [
-    "./java/src/org/chromium/chrome/browser/browserservices/verification/OriginVerifierTest.java",
-    "./java/src/org/chromium/chrome/browser/browserservices/verification/PackageFingerprintCalculatorTest.java",
+    "./java/src/org/monyhar/chrome/browser/browserservices/verification/OriginVerifierTest.java",
+    "./java/src/org/monyhar/chrome/browser/browserservices/verification/PackageFingerprintCalculatorTest.java",
   ]
 
   deps = [

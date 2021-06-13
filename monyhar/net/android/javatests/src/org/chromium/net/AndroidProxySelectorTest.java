@@ -12,7 +12,7 @@
  * in net/proxy_resolution/proxy_config_service_android_unittests.cc if required.
  */
 
-package org.chromium.net;
+package org.monyhar.net;
 
 import android.os.Build;
 
@@ -24,9 +24,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.Feature;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.Feature;
 
 import java.net.Proxy;
 import java.net.ProxySelector;

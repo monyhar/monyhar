@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -15,10 +15,10 @@ import android.os.PowerManager;
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.ThreadUtils;
-import org.chromium.chrome.browser.omaha.OmahaBase;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.chrome.browser.omaha.OmahaBase;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

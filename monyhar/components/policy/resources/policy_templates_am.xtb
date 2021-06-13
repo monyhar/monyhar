@@ -98,7 +98,7 @@
 
       ይህን መመሪያ ካዋቀሩት ተጠቃሚው «--disk-cache-dir» ቢጠቅስም ባይጠቅስም <ph name="PRODUCT_NAME" /> የቀረበለትን ማውጫ ይጠቀማል። የውሂብ መጥፋትን ወይም ሌሎች ያልተጠበቁ ስህተቶችን ማስቀረት እንዲቻል ይህ መመሪያ ወደ የመጠኑ የሥር ማውጫ ወይም ለሌሎች ዓላማዎች ጥቅም ላይ ወደሚውል ማውጫ መዋቀር የለበትም፣ ምክንያቱም <ph name="PRODUCT_NAME" /> ይዘቶቹን የሚያስተዳድረው ስለሆነ ነው።
 
-      ጥቅም ላይ ሊውሉ የሚችሉ የተለዋጮች ዝርዝር ለማግኘት https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables ይመልከቱ።
+      ጥቅም ላይ ሊውሉ የሚችሉ የተለዋጮች ዝርዝር ለማግኘት https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables ይመልከቱ።
 
       ይህ መመሪያ እንዳልተዋቀረ ከተተወ ነባሪው የመሸጎጫ ማውጫ ጥቅም ላይ ይውልና ተጠቃሚው በ«--disk-cache-dir» ትዕዛዝ መስመር ጠቋሚው አማካኝነት ሊሽረው ይችላል።</translation>
 <translation id="113521240853905588">በ<ph name="PRODUCT_OS_NAME" /> እንደ ተመራጭ ቋንቋዎች ጥቅም ላይ ሊውሉ የሚችሉትን ተማራጭ ቋንቋዎች ያዋቅራል።
@@ -479,7 +479,7 @@
 <translation id="1852294065645015766">የሚዲያን ራስ-ማጫወት ይፍቀዱ</translation>
 <translation id="1857152770025485173">ይህ መመሪያ ተጠቃሚው በታገዱ የዩአርኤሎች ዝርዝር ውስጥ ያለ ድረ-ገጾችን እንዳይጭን ይከለክለዋል። የታገዱ ዝርዝር የትኛዎቹ ዩአርኤሎች እንደሚከለከሉ የሚገልጽ የዩአርኤል ስርዓተ-ጥለቶች ዝርዝር ያቀርባል።
 
-      የዩአርኤል ስርዓተ-ጥለት በhttps://www.chromium.org/administrators/url-blacklist-filter-format መሠረት ቅርጸት የተሰራለት መሆን አለበት።
+      የዩአርኤል ስርዓተ-ጥለት በhttps://www.monyhar.org/administrators/url-blacklist-filter-format መሠረት ቅርጸት የተሰራለት መሆን አለበት።
 
       የማይመለከታቸው በተፈቀደላቸው የዩአርኤል ዝርዝር መመሪያ ውስጥ መግለጽ ይቻላል። እነዚህ መመሪያዎች በ1000 ግቤቶች የተገደቡ ናቸው፤ ከዚህ ተርፈው የሚገቡ ግቤቶች ችላ ይባላሉ።
 
@@ -522,7 +522,7 @@
 
       ካልተዋቀረ መለኪያዎች እና የምርመራ ውሂብን ሪፖርት ማድረግ በማይተዳደሩ መሣሪያዎች ላይ የሚሰናከል ሲሆን በሚተዳደሩ መሣሪያዎች ላይ ይነቃል።</translation>
 <translation id="1907431809333268751">የድርጅት መለያ መግቢያ ዩአርኤሎች ዝርዝርን ያዋቅሩ (የኤችቲቲፒ እና የኤችቲቲኤስ ዕቅዶች ብቻ)። በእነዚህ ዩአርኤሎች ላይ የተያዘ የይለፍ ቃል ጣት አሻራ ለይለፍ ቃል ዳግም መጠቀም ማግኘት ስራ ላይ ይውላል።
-      <ph name="PRODUCT_NAME" /> የይለፍ ቃል ጣት አሻራዎችን በትክክል እንዲይዙ እባክዎ የመለያ መግቢያ ገጾችዎ በhttps://www.chromium.org/developers/design-documents/create-amazing-password-forms ላይ ያሉ መመሪያዎችን የሚከተሉ መሆናቸውን ያረጋግጡ።
+      <ph name="PRODUCT_NAME" /> የይለፍ ቃል ጣት አሻራዎችን በትክክል እንዲይዙ እባክዎ የመለያ መግቢያ ገጾችዎ በhttps://www.monyhar.org/developers/design-documents/create-amazing-password-forms ላይ ያሉ መመሪያዎችን የሚከተሉ መሆናቸውን ያረጋግጡ።
 
       ይህ ቅንብር ከነቃ የይለፍ ቃል ጥበቃ አገልግሎቱ በእነዚህ ዩአርኤሎች ላይ የይለፍ ቃል ጣት አሻራን ለይለፍ ቃል ዳግም መጠቀም ማግኘት ዓላማ ይይዛቸዋል።
       ይህ ቅንብር ከተሰናከለ ወይም ካልተዋቀረ የይለፍ ቃል ጥበቃ አገልግሎቱ በhttps://accounts.google.com ላይ ብቻ ነው የይለፍ ቃል ጣት አሻራን የሚይዘው።
@@ -821,7 +821,7 @@
 
       ይህ መመሪያ በተገለጹት ዩአርኤሎች ውስጥ ያሉ የአስተናጋጅ ስሞች የእውቅና ማረጋገጫዎች በእውቅና ማረጋገጫ ግልጽነት በኩል እንዳይገለጹ ይፈቅድላቸዋል። ይሄ በአግባቡ በይፋ ስላልተገለጹ የማይታመኑ ይሆኑ የነበሩ የእውቅና ማረጋገጫዎች ጥቅም ላይ መዋላቸውን እንዲቀጥሉ ያስችላል፣ ነገር ግን ለእነዚያ አስተናጋጆች አላግባብ ጥቅም ላይ የዋሉ የእውቅና ማረጋገጫዎችን ፈልገው እንዳያገኙ ያከብድባቸዋል።
 
-      የዩአርኤል ሥርዓተ ጥለት በhttps://www.chromium.org/administrators/url-blacklist-filter-format መሠረት ነው ቅርጸት የሚሰራለት። ይሁንና፣ እውቅና ማረጋገጫዎች ከመርሐግብር፣ ከወደብ ወይም ከዱካ ነጻ ለሆነ አንድ የተወሰነ የአስተናጋጅ ስም የሚሠሩ ስለሆኑ የዩአርኤሉ የአስተናጋጅ ስም ክፋይ ብቻ ነው ከግምት ውስጥ የሚገባው። የልቅ ምልክት አስተናጋጆች አይደገፉም።
+      የዩአርኤል ሥርዓተ ጥለት በhttps://www.monyhar.org/administrators/url-blacklist-filter-format መሠረት ነው ቅርጸት የሚሰራለት። ይሁንና፣ እውቅና ማረጋገጫዎች ከመርሐግብር፣ ከወደብ ወይም ከዱካ ነጻ ለሆነ አንድ የተወሰነ የአስተናጋጅ ስም የሚሠሩ ስለሆኑ የዩአርኤሉ የአስተናጋጅ ስም ክፋይ ብቻ ነው ከግምት ውስጥ የሚገባው። የልቅ ምልክት አስተናጋጆች አይደገፉም።
 
       ይህ መመሪያ ካልተዋቀረ ማንኛውም በእውቅና ማረጋገጫ ግልጽነት በኩል መገለጽ ያለበት የእውቅና ማረጋገጫ በእውቅና ማረጋገጫ ግልጽነት መመሪያው መሠረት ካልተገለጸ እንደ ያልታመነ ተደርጎ ይስተናገዳል።</translation>
 <translation id="2488010520405124654">ከመስመር ውጪ ሲሆኑ የአውታረ መረብ መዋቅር ጥያቄን ያንቁ።
@@ -1514,7 +1514,7 @@
 
       ይህን መመሪያ ካቀናበሩት ተጠቃሚው ማውጫ ቢጠቅስም ባይጠቅስም ወይም ለማውረጃ አካባቢ በየጊዜው እንዲጠየቅ ዕልባቱን ቢያነቃ ባይነቃም <ph name="PRODUCT_NAME" /> የተሰጠውን ማውጫ ብቻ ነው የሚጠቀመው።
 
-      ስራ ላይ ሊውሉ የሚችሉ የተለዋዋጮችን ዝርዝር ለማየት https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables ን ይመልከቱ።
+      ስራ ላይ ሊውሉ የሚችሉ የተለዋዋጮችን ዝርዝር ለማየት https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables ን ይመልከቱ።
 
       ይህ መመሪያ ሳይቀናበር ከተተወ ነባሪው የማውረጃ ማውጫ ስራ ላይ ይውላል፣ እና ተጠቃሚው ሊለውጠው ይችላል።</translation>
 <translation id="3805659594028420438">TLS ጎራ ጋር የተሳሰሩ የምስክር ወረቀት ቅጥያዎችን አንቃ (ተቀባይነት ያላገኘ)</translation>
@@ -1605,7 +1605,7 @@
 
       ይህን መመሪያ እርስዎ ካላዋቀሩት <ph name="PRODUCT_NAME" /> የተለመደው የራሱን ነባሪ ማውጫ (መሣሪያ ስርዓት-ተኮር) ይጠቀማል።
 
-       ስራ ላይ ሊውሉ የሚችሉ የተለዋዋጮች ዝርዝርን ለማግኘት https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables ይመለከቱ።</translation>
+       ስራ ላይ ሊውሉ የሚችሉ የተለዋዋጮች ዝርዝርን ለማግኘት https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables ይመለከቱ።</translation>
 <translation id="3911737181201537215">ይህ መመሪያ Android በሚያከናውነው የምዝግብ ማስታወሻ መያዝ ላይ ምንም ተጽዕኖ የለውም።</translation>
 <translation id="391531815696899618">ወደ እውነት ሲዋቀር በ<ph name="PRODUCT_OS_NAME" /> የፋይሎች መተግበሪያ የGoogle Drive ማመሳሰልን ያሰናክለዋል። በዚያ ጊዜ ምንም ውሂብ ወደ Google Drive አይሰቀልም።
 
@@ -1800,7 +1800,7 @@
 
       ይህን መመሪያ ካዋቀሩት <ph name="PRODUCT_NAME" /> የ<ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> መመሪያው ነቅቶ ከሆነ የመገለጫዎቹ ተንዣባቢ ቅጂውን ለማከማቸት የቀረበውን ማውጫ ይጠቀማል። የ<ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> መመሪያው ከተሰናከለ ወይም እንዳልተዋቀረ ከተተወ በዚህ መመሪያ ውስጥ የተከማቸው እሴት ስራ ላይ አይውልም።
 
-      ስራ ላይ ሊውሉ የሚችሉት የተለዋዋጮች ዝርዝር ለማየት https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables ይመልከቱ።
+      ስራ ላይ ሊውሉ የሚችሉት የተለዋዋጮች ዝርዝር ለማየት https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables ይመልከቱ።
 
       ይህ መመሪያ እንዳልተዋቀረ ከተተወ ነባሪው የተንዣባቢ መገለጫ ዱካ ጥቅም ላይ ይውላል።</translation>
 <translation id="4239720644496144453">መሸጎጫው ለAndroid መተግበሪያዎች ጥቅም ላይ አይውልም። በርካታ ተጠቃሚዎች ተመሳሳዩን የAndroid መተግበሪያ ከጫኑ ለእያንዳንዱ ተጠቃሚ እንደ አዲስ ይወርዳል።</translation>
@@ -2002,7 +2002,7 @@
 
           ይህ መምሪያ ካልተዋቀረ በ«ChromeFrameRendererSettings» መመሪያው በተገለጸው መሠረት ነባሪው ማስል ሰሪው ነው ለሁሉም ጣቢያዎች ስራ ላይ የሚውለው።
 
-          የምሳሌ ስርዓተ ጥለቶችን ለማግኘት https://www.chromium.org/developers/how-tos/chrome-frame-getting-started ይመልከቱ።</translation>
+          የምሳሌ ስርዓተ ጥለቶችን ለማግኘት https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started ይመልከቱ።</translation>
 <translation id="467449052039111439">የዩ አር ኤልዎች ዝርዝር ይክፈቱ</translation>
 <translation id="4674871290487541952">በቅጥያ ዝማኔዎች እና ጭነቶች ላይ ደህንነታቸው ያልተጠበቁ ስልተ-ቀመሮች በሙሉዕነት ፍተሻዎች ላይ ይፍቀዱ</translation>
 <translation id="4680936297850947973">በM68 ተቋርጧል። በምትኩ DefaultPopupsSetting ይጠቀሙ።
@@ -2636,7 +2636,7 @@
 
       ይህንን መምሪያ ካዋቀሩ <ph name="PRODUCT_FRAME_NAME" /> የተሰጠውን ማውጫ ይጠቀማል።
 
-      ስራ ላይ ሊውሉ የሚችሉ የተለዋዋጮችን ዝርዝር ለማግኘት https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables ን ይመልከቱ።
+      ስራ ላይ ሊውሉ የሚችሉ የተለዋዋጮችን ዝርዝር ለማግኘት https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables ን ይመልከቱ።
 
       ይህ ቅንብር ሳይቀናበር ከተተወ ነባሪው የመገለጫ ማውጫ ሥራ ላይ ይውላል።</translation>
 <translation id="5826047473100157858">ተጠቃሚው በ<ph name="PRODUCT_NAME" /> ውስጥ ገጾች በስውር ሁነታ መክፈት ይችል ወይም አይችል እንደሆነ ይገልጻል።
@@ -3217,7 +3217,7 @@
 
       ይህን መመሪያ ካዋቀሩት ተጠቃሚው «--disk-cache-dir» ቢጠቅስም ባይጠቅስም <ph name="PRODUCT_NAME" /> የቀረበለትን ማውጫ ይጠቀማል። የውሂብ መጥፋትን ወይም ሌሎች ያልተጠበቁ ስህተቶችን ማስቀረት እንዲቻል ይህ መመሪያ ወደ የመጠኑ የሥር ማውጫ ወይም ለሌሎች ዓላማዎች ጥቅም ላይ ወደሚውል ማውጫ መዋቀር የለበትም፣ ምክንያቱም <ph name="PRODUCT_NAME" /> ይዘቶቹን የሚያስተዳድረው ስለሆነ ነው።
 
-      ጥቅም ላይ ሊውሉ የሚችሉ የተለዋጮች ዝርዝር ለማግኘት https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables ይመልከቱ።
+      ጥቅም ላይ ሊውሉ የሚችሉ የተለዋጮች ዝርዝር ለማግኘት https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables ይመልከቱ።
 
       ይህ መመሪያ እንዳልተዋቀረ ከተተወ ነባሪው የመገለጫ ማውጫ ጥቅም ላይ ይውልና ተጠቃሚው በ«--disk-cache-dir» ትዕዛዝ መስመር ጠቋሚው አማካኝነት ሊሽረው ይችላል።</translation>
 <translation id="7027785306666625591">በ<ph name="PRODUCT_OS_NAME" /> ውስጥ የኃይል አስተዳደርን ያዋቅሩ።
@@ -4004,7 +4004,7 @@
 
           ይህ መምሪያ ሳይቀናበር ከተተወ ለሁሉም ጣቢያዎች ሥራ ላይ የሚውለው ነባሪ ምስል ሰሪ በ«ChromeFrameRendererSettings» መመሪያ የተገለጸው ነው።
 
-          የምሳሌ ስርዓተ ጥለቶችን ለማግኘት https://www.chromium.org/developers/how-tos/chrome-frame-getting-started ን ይመልከቱ።</translation>
+          የምሳሌ ስርዓተ ጥለቶችን ለማግኘት https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started ን ይመልከቱ።</translation>
 <translation id="8489964335640955763">PluginVm</translation>
 <translation id="8493645415242333585">የአሰሳ ታሪክ ማስቀመጥን ያሰናክሉ</translation>
 <translation id="8499172469244085141">ነባሪ ቅንብሮች (ተጠቃሚዎች ሊሽሯቸው የሚችሉት)</translation>

@@ -28,7 +28,7 @@ given input id as described here:
       ...
       string_id_N,
     ],
-    brand_2: [  # 'chromium', for example.
+    brand_2: [  # 'monyhar', for example.
       ...
     ],
   },
@@ -503,7 +503,7 @@ def BuildArgumentParser():
   parser = argparse.ArgumentParser(
     description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
   parser.add_argument('-b',
-                      help='identifier of the browser brand (e.g., chromium).'
+                      help='identifier of the browser brand (e.g., monyhar).'
                       'This argument is mandatory if the module file included'
                       'by --extract-datafile contains MODE_SPECIFIC_STRINGS',
                       dest='brand')

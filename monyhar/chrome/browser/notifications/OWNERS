@@ -1,17 +1,17 @@
-dewittj@chromium.org
-dimich@chromium.org
-knollr@chromium.org
-mukai@chromium.org
-peter@chromium.org
-yoshiki@chromium.org
+dewittj@monyhar.org
+dimich@monyhar.org
+knollr@monyhar.org
+mukai@monyhar.org
+peter@monyhar.org
+yoshiki@monyhar.org
 
 # Linux files
-per-file *_linux*=thomasanderson@chromium.org
+per-file *_linux*=thomasanderson@monyhar.org
 
 # Mac files
-per-file *_mac*=rsesek@chromium.org
+per-file *_mac*=rsesek@monyhar.org
 
 # Windows files
-per-file *_win*=finnur@chromium.org
+per-file *_win*=finnur@monyhar.org
 
 per-file *permission_context*=file://components/permissions/PERMISSIONS_OWNERS

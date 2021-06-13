@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.Espresso.pressBack;
@@ -22,10 +22,10 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import static org.chromium.base.test.util.CallbackHelper.WAIT_TIMEOUT_SECONDS;
-import static org.chromium.base.test.util.CriteriaHelper.DEFAULT_MAX_TIME_TO_POLL;
-import static org.chromium.base.test.util.CriteriaHelper.DEFAULT_POLLING_INTERVAL;
-import static org.chromium.components.browser_ui.widget.RecyclerViewTestUtils.waitForStableRecyclerView;
+import static org.monyhar.base.test.util.CallbackHelper.WAIT_TIMEOUT_SECONDS;
+import static org.monyhar.base.test.util.CriteriaHelper.DEFAULT_MAX_TIME_TO_POLL;
+import static org.monyhar.base.test.util.CriteriaHelper.DEFAULT_POLLING_INTERVAL;
+import static org.monyhar.components.browser_ui.widget.RecyclerViewTestUtils.waitForStableRecyclerView;
 
 import android.app.Activity;
 import android.provider.Settings;
@@ -48,22 +48,22 @@ import androidx.test.espresso.contrib.RecyclerViewActions;
 
 import org.hamcrest.Matcher;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.test.util.ApplicationTestUtils;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.compositor.layouts.content.TabContentManager;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabSelectionType;
-import org.chromium.chrome.browser.tabmodel.TabModel;
-import org.chromium.chrome.browser.tasks.pseudotab.PseudoTab;
-import org.chromium.chrome.browser.tasks.tab_groups.TabGroupModelFilter;
-import org.chromium.chrome.tab_ui.R;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.ChromeTabUtils;
-import org.chromium.chrome.test.util.OverviewModeBehaviorWatcher;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.test.util.ApplicationTestUtils;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.compositor.layouts.content.TabContentManager;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabSelectionType;
+import org.monyhar.chrome.browser.tabmodel.TabModel;
+import org.monyhar.chrome.browser.tasks.pseudotab.PseudoTab;
+import org.monyhar.chrome.browser.tasks.tab_groups.TabGroupModelFilter;
+import org.monyhar.chrome.tab_ui.R;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.ChromeTabUtils;
+import org.monyhar.chrome.test.util.OverviewModeBehaviorWatcher;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.io.File;
 import java.lang.annotation.Retention;
@@ -131,7 +131,7 @@ public class TabUiTestHelper {
      */
     public static void clickNthCardFromTabSwitcher(ChromeTabbedActivity cta, int index) {
         assertTrue(cta.getLayoutManager().overviewVisible());
-        onView(allOf(withParent(withId(org.chromium.chrome.R.id.compositor_view_holder)),
+        onView(allOf(withParent(withId(org.monyhar.chrome.R.id.compositor_view_holder)),
                        withId(R.id.tab_list_view)))
                 .perform(RecyclerViewActions.actionOnItemAtPosition(index, click()));
     }
@@ -338,7 +338,7 @@ public class TabUiTestHelper {
      */
     public static void verifyTabSwitcherCardCount(ChromeTabbedActivity cta, int count) {
         assertTrue(cta.getLayoutManager().overviewVisible());
-        onView(allOf(withParent(withId(org.chromium.chrome.R.id.compositor_view_holder)),
+        onView(allOf(withParent(withId(org.monyhar.chrome.R.id.compositor_view_holder)),
                        withId(R.id.tab_list_view)))
                 .check(ChildrenCountAssertion.havingTabCount(count));
     }

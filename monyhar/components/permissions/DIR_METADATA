@@ -2,4 +2,4 @@ monorail {
   component: "Internals>Permissions"
 }
 
-team_email: "permissions-dev@chromium.org"
+team_email: "permissions-dev@monyhar.org"

@@ -16,7 +16,7 @@ unit tests.
 
 - mit.davidben.der : An expired MIT client certificate.
 
-- foaf.me.chromium-test-cert.der : A client certificate for a FOAF.ME identity
+- foaf.me.monyhar-test-cert.der : A client certificate for a FOAF.ME identity
      created for testing.
 
 - unosoft_hu_cert : Certificate used by X509CertificateTest.UnoSoftCertParsing.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.page_info;
+package org.monyhar.components.page_info;
 
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -14,11 +14,11 @@ import android.widget.FrameLayout;
 
 import androidx.annotation.ColorRes;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.components.omnibox.SecurityStatusIcon;
-import org.chromium.components.security_state.ConnectionSecurityLevel;
-import org.chromium.components.security_state.SecurityStateModel;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.components.omnibox.SecurityStatusIcon;
+import org.monyhar.components.security_state.ConnectionSecurityLevel;
+import org.monyhar.components.security_state.SecurityStateModel;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * Class for controlling the page info connection section.

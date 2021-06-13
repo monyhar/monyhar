@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.v2;
+package org.monyhar.chrome.browser.feed.v2;
 
 import static com.google.common.truth.Truth.assertThat;
 
@@ -31,8 +31,8 @@ import org.mockito.MockitoAnnotations;
 import org.robolectric.Robolectric;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.feed.NtpListContentManager;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.feed.NtpListContentManager;
 
 /** Unit tests for {@link NativeViewListRenderer}. */
 @RunWith(BaseRobolectricTestRunner.class)

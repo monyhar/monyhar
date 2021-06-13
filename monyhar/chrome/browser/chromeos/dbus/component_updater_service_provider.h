@@ -27,18 +27,18 @@ namespace chromeos {
 //
 // LoadComponent:
 // % dbus-send --system --type=method_call --print-reply
-//     --dest=org.chromium.ComponentUpdaterService
-//     /org/chromium/ComponentUpdaterService
-//     org.chromium.ComponentUpdaterService.LoadComponent
+//     --dest=org.monyhar.ComponentUpdaterService
+//     /org/monyhar/ComponentUpdaterService
+//     org.monyhar.ComponentUpdaterService.LoadComponent
 //     "string:|component name|" "boolean:|mount|"
 //
 // % string "/run/imageloader/|component name|/|version|"
 //
 // UnloadComponent:
 // % dbus-send --system --type=method_call --print-reply
-//     --dest=org.chromium.ComponentUpdaterService
-//     /org/chromium/ComponentUpdaterService
-//     org.chromium.ComponentUpdaterService.UnloadComponent
+//     --dest=org.monyhar.ComponentUpdaterService
+//     /org/monyhar/ComponentUpdaterService
+//     org.monyhar.ComponentUpdaterService.UnloadComponent
 //     "string:|component name|"
 //
 // % (returns empty response on success and error response on failure)

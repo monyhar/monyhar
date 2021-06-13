@@ -4,8 +4,8 @@
 
 // This file is auto-generated from
 // gpu/command_buffer/build_gles2_cmd_buffer.py
-// It's formatted by clang-format using chromium coding style:
-//    clang-format -i -style=chromium filename
+// It's formatted by clang-format using monyhar coding style:
+//    clang-format -i -style=monyhar filename
 // DO NOT EDIT!
 
 // It is included by context_state.cc
@@ -246,7 +246,7 @@ void ContextState::InitState(const ContextState* prev_state) const {
         (cached_color_mask_alpha != prev_state->cached_color_mask_alpha))
       api()->glColorMaskFn(cached_color_mask_red, cached_color_mask_green,
                            cached_color_mask_blue, cached_color_mask_alpha);
-    if (feature_info_->feature_flags().chromium_framebuffer_mixed_samples)
+    if (feature_info_->feature_flags().monyhar_framebuffer_mixed_samples)
       if ((coverage_modulation != prev_state->coverage_modulation))
         api()->glCoverageModulationNVFn(coverage_modulation);
     if ((cull_mode != prev_state->cull_mode))
@@ -271,7 +271,7 @@ void ContextState::InitState(const ContextState* prev_state) const {
                         hint_fragment_shader_derivative);
       }
     }
-    if (feature_info_->feature_flags().chromium_texture_filtering_hint) {
+    if (feature_info_->feature_flags().monyhar_texture_filtering_hint) {
       if (prev_state->hint_texture_filtering != hint_texture_filtering) {
         api()->glHintFn(GL_TEXTURE_FILTERING_HINT_CHROMIUM,
                         hint_texture_filtering);
@@ -342,7 +342,7 @@ void ContextState::InitState(const ContextState* prev_state) const {
     api()->glClearStencilFn(stencil_clear);
     api()->glColorMaskFn(cached_color_mask_red, cached_color_mask_green,
                          cached_color_mask_blue, cached_color_mask_alpha);
-    if (feature_info_->feature_flags().chromium_framebuffer_mixed_samples)
+    if (feature_info_->feature_flags().monyhar_framebuffer_mixed_samples)
       api()->glCoverageModulationNVFn(coverage_modulation);
     api()->glCullFaceFn(cull_mode);
     api()->glDepthFuncFn(depth_func);
@@ -356,7 +356,7 @@ void ContextState::InitState(const ContextState* prev_state) const {
       api()->glHintFn(GL_FRAGMENT_SHADER_DERIVATIVE_HINT_OES,
                       hint_fragment_shader_derivative);
     }
-    if (feature_info_->feature_flags().chromium_texture_filtering_hint) {
+    if (feature_info_->feature_flags().monyhar_texture_filtering_hint) {
       api()->glHintFn(GL_TEXTURE_FILTERING_HINT_CHROMIUM,
                       hint_texture_filtering);
     }

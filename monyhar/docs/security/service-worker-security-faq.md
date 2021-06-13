@@ -10,7 +10,7 @@ Chromium developers. (rsesek, estark, falken, slightlyoff, jakearchibald, evn,
 raymes, ainslie, mek, lgarron, elawrence, kinuko, palmer, your name here...)
 Last updated 12 May 2017. If you see an error or have an additional question,
 and have a Chromium account, go ahead and fix it. If you don't have a Chromium
-account, email security-dev@chromium.org for a fix.
+account, email security-dev@monyhar.org for a fix.
 
 ## Service Workers seem extremely risky! Why are they OK?
 
@@ -37,7 +37,7 @@ Explained](https://github.com/w3c/ServiceWorker/blob/master/explainer.md).
 Yes, SWs run in renderer processes. When Chrome starts a SW, it chooses a
 renderer process that is associated with the SW’s origin. If one does not exist,
 the browser creates a new one using a new
-[`SiteInstance`](https://cs.chromium.org/chromium/src/content/public/browser/site_instance.h)
+[`SiteInstance`](https://cs.monyhar.org/monyhar/src/content/public/browser/site_instance.h)
 for the origin.
 
 ## What APIs can Service Workers access?
@@ -120,7 +120,7 @@ If an origin has any Service Workers running, each worker will be shut down soon
 after it processes the last event. Events that can keep a worker alive include
 push notifications. (Note that the [push notifications will trigger a
 user-visible notification if the SW does not create
-one](https://cs.chromium.org/chromium/src/chrome/browser/push_messaging/push_messaging_notification_manager.cc?type=cs&l=270),
+one](https://cs.monyhar.org/monyhar/src/chrome/browser/push_messaging/push_messaging_notification_manager.cc?type=cs&l=270),
 and they also require the person to grant the origin permission in a prompt. you
 can see that in action in this [push notifications demo
 app](https://gauntface.github.io/simple-push-demo/).)
@@ -264,7 +264,7 @@ Browser vendors are committed to ensuring the security of the OWP improves even
 as we give it new capabilities. This process happens in the open, in fora like
 [W3C Technical Architecture Group](https://www.w3.org/2001/tag/), [W3C’s Web
 Platform Incubator Community Group](https://www.w3.org/blog/2015/07/wicg/), and
-[blink-dev@chromium.org](https://groups.google.com/a/chromium.org/forum/#!forum/blink-dev).
+[blink-dev@monyhar.org](https://groups.google.com/a/monyhar.org/forum/#!forum/blink-dev).
 Security and privacy reviews are part of the process and we invite knowledgeable
 experts to participate in those open fora.
 
@@ -294,17 +294,17 @@ that would be potentially rewardable under the Vulnerability Rewards Program
      *    USB, Bluetooth
 
 Here is [a list of historical SW security
-bugs](https://bugs.chromium.org/p/chromium/issues/list?can=1&q=Type%3DBug-Security+serviceworker&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
+bugs](https://bugs.monyhar.org/p/monyhar/issues/list?can=1&q=Type%3DBug-Security+serviceworker&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
 in Chromium’s bug tracker.
 
 If you believe you have found a bug in the SW specification, please [file a new
 Chromium bug using the Security
-template](https://bugs.chromium.org/p/chromium/issues/entry?template=Security%20Bug).
+template](https://bugs.monyhar.org/p/monyhar/issues/entry?template=Security%20Bug).
 It’s a good idea to file bugs with all browser vendors that implement the buggy
 section of the spec.
 
 If you believe you have found a bug in Chrome’s implementation of SW, please
 [file a new bug using the Security
-template](https://bugs.chromium.org/p/chromium/issues/entry?template=Security%20Bug).
+template](https://bugs.monyhar.org/p/monyhar/issues/entry?template=Security%20Bug).
 The Chrome Security Team will triage it within 1 or 2 business days. Good bug
 reports come with minimal test cases that demonstrate the problem!

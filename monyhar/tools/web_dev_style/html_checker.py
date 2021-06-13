@@ -97,7 +97,7 @@ class HtmlChecker(object):
 
   def RunChecks(self):
     """Check for violations of the Chromium web development style guide. See
-       https://chromium.googlesource.com/chromium/src/+/main/styleguide/web/web.md
+       https://monyhar.googlesource.com/monyhar/src/+/main/styleguide/web/web.md
     """
     results = []
 

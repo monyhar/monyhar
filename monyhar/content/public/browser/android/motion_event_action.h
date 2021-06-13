@@ -8,7 +8,7 @@
 namespace content {
 
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.content.browser
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.content.browser
 // GENERATED_JAVA_PREFIX_TO_STRIP: MOTION_EVENT_ACTION_
 enum MotionEventAction {
   MOTION_EVENT_ACTION_INVALID = -1,

@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.gsa;
+package org.monyhar.chrome.browser.gsa;
 
 import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
 
 /**
  * Helper class that triggers integration methods with GSA.

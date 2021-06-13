@@ -334,11 +334,11 @@ function update_readme {
   sed -E -i.bak \
     -e "s/^(Date:)[[:space:]]+.*$/\1 ${vals[0]}/" \
     -e "s/^(Commit:)[[:space:]]+[a-f0-9]{40}/\1 ${vals[1]}/" \
-    ${BASE_DIR}/README.chromium
-  rm ${BASE_DIR}/README.chromium.bak
+    ${BASE_DIR}/README.monyhar
+  rm ${BASE_DIR}/README.monyhar.bak
   cat <<EOF
 
-README.chromium updated with:
+README.monyhar updated with:
 Date: ${vals[0]}
 Commit: ${vals[1]}
 EOF
@@ -415,7 +415,7 @@ rm -rf $TEMP_DIR
 cp -R $LIBVPX_SRC_DIR $TEMP_DIR
 cd $TEMP_DIR
 
-# chromium has required sse2 for x86 since 2014
+# monyhar has required sse2 for x86 since 2014
 require_sse2="--require-mmx --require-sse --require-sse2"
 
 gen_rtcd_header linux/ia32 x86 "${require_sse2}"

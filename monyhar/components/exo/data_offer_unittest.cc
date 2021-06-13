@@ -235,7 +235,7 @@ TEST_F(DataOfferTest, SetPickleDropData) {
   pickle.WriteInt64(1000);   // file size
   pickle.WriteString("id");  // filesystem id
   data.SetPickledData(
-      ui::ClipboardFormatType::GetType("chromium/x-file-system-files"), pickle);
+      ui::ClipboardFormatType::GetType("monyhar/x-file-system-files"), pickle);
   data_offer.SetDropData(&data_exchange_delegate, nullptr, data);
 
   EXPECT_EQ(1u, delegate.mime_types().size());
@@ -350,7 +350,7 @@ TEST_F(DataOfferTest, ReceiveUriListFromPickle_ReceiveBeforeUrlIsResolved) {
   pickle.WriteInt64(1000);   // file size
   pickle.WriteString("id");  // filesystem id
   data.SetPickledData(
-      ui::ClipboardFormatType::GetType("chromium/x-file-system-files"), pickle);
+      ui::ClipboardFormatType::GetType("monyhar/x-file-system-files"), pickle);
   data_offer.SetDropData(&data_exchange_delegate, nullptr, data);
 
   base::ScopedFD read_pipe1;
@@ -367,16 +367,16 @@ TEST_F(DataOfferTest, ReceiveUriListFromPickle_ReceiveBeforeUrlIsResolved) {
   // Run callback with a resolved URL.
   std::vector<GURL> urls;
   urls.push_back(
-      GURL("content://org.chromium.arc.chromecontentprovider/path/to/file1"));
+      GURL("content://org.monyhar.arc.chromecontentprovider/path/to/file1"));
   data_exchange_delegate.RunSendPickleCallback(urls);
 
   std::string result1;
   ASSERT_TRUE(ReadString(std::move(read_pipe1), &result1));
-  EXPECT_EQ("content://org.chromium.arc.chromecontentprovider/path/to/file1",
+  EXPECT_EQ("content://org.monyhar.arc.chromecontentprovider/path/to/file1",
             result1);
   std::string result2;
   ASSERT_TRUE(ReadString(std::move(read_pipe2), &result2));
-  EXPECT_EQ("content://org.chromium.arc.chromecontentprovider/path/to/file1",
+  EXPECT_EQ("content://org.monyhar.arc.chromecontentprovider/path/to/file1",
             result2);
 }
 
@@ -394,7 +394,7 @@ TEST_F(DataOfferTest,
   pickle.WriteInt64(1000);   // file size
   pickle.WriteString("id");  // filesystem id
   data.SetPickledData(
-      ui::ClipboardFormatType::GetType("chromium/x-file-system-files"), pickle);
+      ui::ClipboardFormatType::GetType("monyhar/x-file-system-files"), pickle);
   data_offer.SetDropData(&data_exchange_delegate, nullptr, data);
 
   base::ScopedFD read_pipe;

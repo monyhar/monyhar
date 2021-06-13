@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments;
+package org.monyhar.chrome.browser.payments;
 
 import android.support.test.InstrumentationRegistry;
 
@@ -16,31 +16,31 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.payments.AndroidPaymentAppFinder;
-import org.chromium.components.payments.PaymentApp;
-import org.chromium.components.payments.PaymentAppFactoryDelegate;
-import org.chromium.components.payments.PaymentAppFactoryInterface;
-import org.chromium.components.payments.PaymentAppFactoryParams;
-import org.chromium.components.payments.PaymentFeatureList;
-import org.chromium.components.payments.PaymentManifestDownloader;
-import org.chromium.components.payments.PaymentManifestParser;
-import org.chromium.components.payments.PaymentManifestWebDataService;
-import org.chromium.content_public.browser.RenderFrameHost;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.net.test.EmbeddedTestServer;
-import org.chromium.payments.mojom.PaymentDetailsModifier;
-import org.chromium.payments.mojom.PaymentItem;
-import org.chromium.payments.mojom.PaymentMethodData;
-import org.chromium.payments.mojom.PaymentOptions;
-import org.chromium.url.GURL;
-import org.chromium.url.Origin;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.payments.AndroidPaymentAppFinder;
+import org.monyhar.components.payments.PaymentApp;
+import org.monyhar.components.payments.PaymentAppFactoryDelegate;
+import org.monyhar.components.payments.PaymentAppFactoryInterface;
+import org.monyhar.components.payments.PaymentAppFactoryParams;
+import org.monyhar.components.payments.PaymentFeatureList;
+import org.monyhar.components.payments.PaymentManifestDownloader;
+import org.monyhar.components.payments.PaymentManifestParser;
+import org.monyhar.components.payments.PaymentManifestWebDataService;
+import org.monyhar.content_public.browser.RenderFrameHost;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.net.test.EmbeddedTestServer;
+import org.monyhar.payments.mojom.PaymentDetailsModifier;
+import org.monyhar.payments.mojom.PaymentItem;
+import org.monyhar.payments.mojom.PaymentMethodData;
+import org.monyhar.payments.mojom.PaymentOptions;
+import org.monyhar.url.GURL;
+import org.monyhar.url.Origin;
 
 import java.util.ArrayList;
 import java.util.Arrays;

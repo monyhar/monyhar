@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.modules.image_editor;
+package org.monyhar.chrome.modules.image_editor;
 
-import org.chromium.chrome.browser.image_editor.ImageEditorDialogCoordinator;
-import org.chromium.components.module_installer.engine.InstallListener;
+import org.monyhar.chrome.browser.image_editor.ImageEditorDialogCoordinator;
+import org.monyhar.components.module_installer.engine.InstallListener;
 
 /**
  * Interface for installing and loading the image_editor module.

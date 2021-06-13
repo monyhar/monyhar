@@ -832,14 +832,14 @@ TEST_F(ProxyResolverFactoryMojoTest, GetProxyForURL_MultipleRequests) {
   mock_proxy_resolver_.AddGetProxyAction(GetProxyForUrlAction::ReturnServers(
       GURL(kExampleUrl), ProxyServersFromPacString("DIRECT")));
   mock_proxy_resolver_.AddGetProxyAction(GetProxyForUrlAction::ReturnServers(
-      GURL("https://www.chromium.org"),
+      GURL("https://www.monyhar.org"),
       ProxyServersFromPacString("HTTPS foo:443")));
   CreateProxyResolver();
 
   std::unique_ptr<Request> request1(MakeRequest(GURL(kExampleUrl)));
   EXPECT_THAT(request1->Resolve(), IsError(net::ERR_IO_PENDING));
   std::unique_ptr<Request> request2(
-      MakeRequest(GURL("https://www.chromium.org")));
+      MakeRequest(GURL("https://www.monyhar.org")));
   EXPECT_THAT(request2->Resolve(), IsError(net::ERR_IO_PENDING));
 
   EXPECT_THAT(request1->WaitForResult(), IsOk());

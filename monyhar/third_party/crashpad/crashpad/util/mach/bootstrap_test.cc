@@ -29,7 +29,7 @@ TEST(Bootstrap, BootstrapCheckInAndLookUp) {
       BootstrapLookUp("com.apple.ReportCrash"));
   EXPECT_NE(report_crash, kMachPortNull);
 
-  std::string service_name = "org.chromium.crashpad.test.bootstrap_check_in.";
+  std::string service_name = "org.monyhar.crashpad.test.bootstrap_check_in.";
   service_name.append(RandomString());
 
   {

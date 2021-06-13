@@ -7,7 +7,7 @@ import("//tools/grit/grit_rule.gni")
 
 group("strings") {
   public_deps = [
-    ":ios_chromium_strings",
+    ":ios_monyhar_strings",
     ":ios_google_chrome_strings",
     ":ios_strings",
   ]
@@ -22,12 +22,12 @@ grit("ios_strings") {
   }
 }
 
-grit("ios_chromium_strings") {
-  source = "ios_chromium_strings.grd"
+grit("ios_monyhar_strings") {
+  source = "ios_monyhar_strings.grd"
   output_dir = "$root_gen_dir/ios/chrome"
-  outputs = [ "grit/ios_chromium_strings.h" ]
+  outputs = [ "grit/ios_monyhar_strings.h" ]
   foreach(locale, locales_with_pseudolocales) {
-    outputs += [ "ios_chromium_strings_$locale.pak" ]
+    outputs += [ "ios_monyhar_strings_$locale.pak" ]
   }
 }
 

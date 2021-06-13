@@ -7,7 +7,7 @@
   <key>CFBundleExecutable</key>
   <string>Cronet</string>
   <key>CFBundleIdentifier</key>
-  <string>org.chromium.net.Cronet</string>
+  <string>org.monyhar.net.Cronet</string>
   <key>CFBundleInfoDictionaryVersion</key>
   <string>6.0</string>
   <key>CFBundleName</key>

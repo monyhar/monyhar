@@ -19,8 +19,8 @@ template("generate_dummy_android_library") {
   _generate_java_source_target_name = "${target_name}generatejavasource"
   jinja_template(_generate_java_source_target_name) {
     testonly = true
-    input = "java/src/org/chromium/build/classpath_order/Dummy.java.jinja2"
-    output = "$target_gen_dir/java/src/org/chromium/build/classpath_order/${invoker.class_name}.java"
+    input = "java/src/org/monyhar/build/classpath_order/Dummy.java.jinja2"
+    output = "$target_gen_dir/java/src/org/monyhar/build/classpath_order/${invoker.class_name}.java"
     variables = [ "class_name=${invoker.class_name}" ]
   }
 
@@ -47,7 +47,7 @@ test_resources("a1_dependency_resources") {
 generate_dummy_android_library("a1_dependency_java") {
   testonly = true
   class_name = "A1Dependency"
-  resources_package = "org.chromium.build.classpath_order.test1"
+  resources_package = "org.monyhar.build.classpath_order.test1"
   deps = [ ":a1_dependency_resources" ]
 }
 
@@ -59,7 +59,7 @@ test_resources("z1_master_resources") {
 generate_dummy_android_library("z1_master_java") {
   testonly = true
   class_name = "Z1Master"
-  resources_package = "org.chromium.build.classpath_order.test1"
+  resources_package = "org.monyhar.build.classpath_order.test1"
   deps = [
     ":a1_dependency_java",
     ":z1_master_resources",
@@ -73,7 +73,7 @@ test_resources("z2_dependency_resources") {
 generate_dummy_android_library("z2_dependency_java") {
   testonly = true
   class_name = "Z2Dependency"
-  resources_package = "org.chromium.build.classpath_order.test2"
+  resources_package = "org.monyhar.build.classpath_order.test2"
   deps = [ ":z2_dependency_resources" ]
 }
 
@@ -85,7 +85,7 @@ test_resources("a2_master_resources") {
 generate_dummy_android_library("a2_master_java") {
   testonly = true
   class_name = "A2Master"
-  resources_package = "org.chromium.build.classpath_order.test2"
+  resources_package = "org.monyhar.build.classpath_order.test2"
   deps = [
     ":a2_master_resources",
     ":z2_dependency_java",
@@ -96,7 +96,7 @@ java_library("junit_tests") {
   bypass_platform_checks = true
   testonly = true
   sources =
-      [ "java/src/org/chromium/build/classpath_order/ClassPathOrderTest.java" ]
+      [ "java/src/org/monyhar/build/classpath_order/ClassPathOrderTest.java" ]
   deps = [
     ":a1_dependency_java",
     ":a2_master_java",

@@ -19,7 +19,7 @@ class XrInstallHelperDelegate;
 // Equivalent of ArCoreApk.Availability enum.
 // For detailed description, please see:
 // https://developers.google.com/ar/reference/java/arcore/reference/com/google/ar/core/ArCoreApk.Availability
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.webxr
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.webxr
 enum class ArCoreAvailability : int {
   kSupportedApkTooOld = 0,
   kSupportedInstalled = 1,

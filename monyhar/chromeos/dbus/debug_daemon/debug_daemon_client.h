@@ -68,7 +68,7 @@ class COMPONENT_EXPORT(DEBUG_DAEMON) DebugDaemonClient
 
   // Gets information about network interfaces as json.
   // For details, please refer to
-  // http://gerrit.chromium.org/gerrit/#/c/28045/5/src/helpers/netif.cc
+  // http://gerrit.monyhar.org/gerrit/#/c/28045/5/src/helpers/netif.cc
   virtual void GetNetworkInterfaces(
       DBusMethodCallback<std::string> callback) = 0;
 
@@ -135,7 +135,7 @@ class COMPONENT_EXPORT(DEBUG_DAEMON) DebugDaemonClient
   // - The string value contains information about ICMP connectivity to a
   //   specified host as json.
   //   For details please refer to
-  //   https://gerrit.chromium.org/gerrit/#/c/30310/2/src/helpers/icmp.cc
+  //   https://gerrit.monyhar.org/gerrit/#/c/30310/2/src/helpers/icmp.cc
   using TestICMPCallback = DBusMethodCallback<std::string>;
 
   // Tests ICMP connectivity to a specified host. The |ip_address| contains the

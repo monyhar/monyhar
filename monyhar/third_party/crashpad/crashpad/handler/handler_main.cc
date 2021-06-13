@@ -974,7 +974,7 @@ int HandlerMain(int argc,
   if (!options.url.empty()) {
     // TODO(scottmg): options.rate_limit should be removed when we have a
     // configurable database setting to control upload limiting.
-    // See https://crashpad.chromium.org/bug/23.
+    // See https://crashpad.monyhar.org/bug/23.
     CrashReportUploadThread::Options upload_thread_options;
     upload_thread_options.identify_client_via_url =
         options.identify_client_via_url;

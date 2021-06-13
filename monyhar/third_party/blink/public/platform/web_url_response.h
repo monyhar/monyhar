@@ -241,7 +241,7 @@ class WebURLResponse {
   BLINK_PLATFORM_EXPORT void SetWasCached(bool);
 
   // Flag whether this request was loaded via the SPDY protocol or not.
-  // SPDY is an experimental web protocol, see http://dev.chromium.org/spdy
+  // SPDY is an experimental web protocol, see http://dev.monyhar.org/spdy
   BLINK_PLATFORM_EXPORT bool WasFetchedViaSPDY() const;
   BLINK_PLATFORM_EXPORT void SetWasFetchedViaSPDY(bool);
 

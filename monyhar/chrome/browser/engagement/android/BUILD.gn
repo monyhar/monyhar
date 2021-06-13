@@ -6,7 +6,7 @@ import("//build/config/android/rules.gni")
 
 android_library("javatests") {
   testonly = true
-  sources = [ "java/src/org/chromium/chrome/browser/engagement/SiteEngagementServiceTest.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/engagement/SiteEngagementServiceTest.java" ]
   deps = [
     "//base:base_java_test_support",
     "//chrome/android:chrome_java",

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.eq;
@@ -21,8 +21,8 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
 
 /**
  * Unit tests for the DelayedScreenLockIntentHandlerTest class.

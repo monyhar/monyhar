@@ -59,9 +59,9 @@ perfetto::TraceConfig StopTracingTriggerConfig(
   perfetto::TraceConfig trace_config;
   trace_config.add_buffers()->set_size_kb(1024);
   auto* ds_config = trace_config.add_data_sources()->mutable_config();
-  ds_config->set_name("org.chromium.trace_event");
+  ds_config->set_name("org.monyhar.trace_event");
   ds_config = trace_config.add_data_sources()->mutable_config();
-  ds_config->set_name("org.chromium.trace_metadata");
+  ds_config->set_name("org.monyhar.trace_metadata");
   auto* trigger_cfg = trace_config.mutable_trigger_config();
   trigger_cfg->set_trigger_mode(
       perfetto::TraceConfig::TriggerConfig::STOP_TRACING);
@@ -101,7 +101,7 @@ std::unique_ptr<tracing::MockConsumer> CreateDefaultConsumer(
     perfetto::TracingService* service,
     base::RunLoop* no_more_packets) {
   return std::unique_ptr<tracing::MockConsumer>(new tracing::MockConsumer(
-      {"org.chromium.trace_event", "org.chromium.trace_metadata"}, service,
+      {"org.monyhar.trace_event", "org.monyhar.trace_metadata"}, service,
       [no_more_packets](bool has_more) {
         if (!has_more) {
           no_more_packets->Quit();
@@ -1866,7 +1866,7 @@ IN_PROC_BROWSER_TEST_F(BackgroundTracingManagerBrowserTest,
 
   //  ******************** Start System trace **********************
   perfetto::TraceConfig trace_config =
-      StopTracingTriggerConfig("org.chromium.background_tracing.system_test");
+      StopTracingTriggerConfig("org.monyhar.background_tracing.system_test");
   base::RunLoop system_no_more_packets_runloop;
   auto system_consumer = CreateDefaultConsumer(std::move(trace_config),
                                                system_service->GetService(),

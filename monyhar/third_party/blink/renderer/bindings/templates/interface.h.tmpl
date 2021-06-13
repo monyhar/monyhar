@@ -121,7 +121,7 @@ class {{v8_class}} {
   {% endif %}
   {# Custom internal fields #}
   {# persistentHandleIndex must be the last field, if it is present.
-     Detailed explanation: https://codereview.chromium.org/139173012
+     Detailed explanation: https://codereview.monyhar.org/139173012
      FIXME: Remove this internal field, and share one field for either:
      * a persistent handle (if the object is in oilpan) or
      * a C++ pointer to the DOM object (if the object is not in oilpan) #}

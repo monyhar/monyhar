@@ -2,36 +2,36 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tabbed_mode;
+package org.monyhar.chrome.browser.tabbed_mode;
 
 import android.content.Context;
 import android.view.View;
 
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.base.supplier.OneshotSupplier;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ActivityTabProvider;
-import org.chromium.chrome.browser.app.appmenu.AppMenuPropertiesDelegateImpl;
-import org.chromium.chrome.browser.bookmarks.BookmarkBridge;
-import org.chromium.chrome.browser.compositor.layouts.OverviewModeBehavior;
-import org.chromium.chrome.browser.datareduction.DataReductionMainMenuItem;
-import org.chromium.chrome.browser.enterprise.util.ManagedBrowserUtils;
-import org.chromium.chrome.browser.feed.shared.FeedFeatures;
-import org.chromium.chrome.browser.feed.webfeed.WebFeedMainMenuItem;
-import org.chromium.chrome.browser.feed.webfeed.WebFeedSnackbarController;
-import org.chromium.chrome.browser.multiwindow.MultiWindowModeStateDispatcher;
-import org.chromium.chrome.browser.net.spdyproxy.DataReductionProxySettings;
-import org.chromium.chrome.browser.offlinepages.OfflinePageUtils;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.toolbar.ToolbarManager;
-import org.chromium.chrome.browser.ui.appmenu.AppMenuDelegate;
-import org.chromium.chrome.browser.ui.appmenu.AppMenuHandler;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.components.favicon.LargeIconBridge;
-import org.chromium.ui.modaldialog.ModalDialogManager;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.base.supplier.OneshotSupplier;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ActivityTabProvider;
+import org.monyhar.chrome.browser.app.appmenu.AppMenuPropertiesDelegateImpl;
+import org.monyhar.chrome.browser.bookmarks.BookmarkBridge;
+import org.monyhar.chrome.browser.compositor.layouts.OverviewModeBehavior;
+import org.monyhar.chrome.browser.datareduction.DataReductionMainMenuItem;
+import org.monyhar.chrome.browser.enterprise.util.ManagedBrowserUtils;
+import org.monyhar.chrome.browser.feed.shared.FeedFeatures;
+import org.monyhar.chrome.browser.feed.webfeed.WebFeedMainMenuItem;
+import org.monyhar.chrome.browser.feed.webfeed.WebFeedSnackbarController;
+import org.monyhar.chrome.browser.multiwindow.MultiWindowModeStateDispatcher;
+import org.monyhar.chrome.browser.net.spdyproxy.DataReductionProxySettings;
+import org.monyhar.chrome.browser.offlinepages.OfflinePageUtils;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.toolbar.ToolbarManager;
+import org.monyhar.chrome.browser.ui.appmenu.AppMenuDelegate;
+import org.monyhar.chrome.browser.ui.appmenu.AppMenuHandler;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.favicon.LargeIconBridge;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
 
 /**
  * An {@link AppMenuPropertiesDelegateImpl} for ChromeTabbedActivity.

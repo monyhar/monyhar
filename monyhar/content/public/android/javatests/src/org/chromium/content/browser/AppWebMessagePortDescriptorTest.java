@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import androidx.test.filters.SmallTest;
 
@@ -11,11 +11,11 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.blink.mojom.MessagePortDescriptor;
-import org.chromium.mojo.MojoTestRule;
-import org.chromium.mojo.bindings.Connector;
-import org.chromium.mojo.system.Pair;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.blink.mojom.MessagePortDescriptor;
+import org.monyhar.mojo.MojoTestRule;
+import org.monyhar.mojo.bindings.Connector;
+import org.monyhar.mojo.system.Pair;
 
 /**
  * Test suite for AppWebMessagePortDescriptor.

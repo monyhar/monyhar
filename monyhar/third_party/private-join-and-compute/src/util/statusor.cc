@@ -15,7 +15,7 @@
 
 #include "third_party/private-join-and-compute/src/util/statusor.h"
 
-#include "third_party/private-join-and-compute/src/chromium_patch.h"
+#include "third_party/private-join-and-compute/src/monyhar_patch.h"
 #include "third_party/private-join-and-compute/src/util/status.h"
 
 namespace private_join_and_compute {

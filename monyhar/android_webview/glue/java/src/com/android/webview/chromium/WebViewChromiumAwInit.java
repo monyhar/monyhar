@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package com.android.webview.chromium;
+package com.android.webview.monyhar;
 
 import android.Manifest;
 import android.content.Context;
@@ -19,42 +19,42 @@ import android.webkit.WebViewDatabase;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.android_webview.AwBrowserContext;
-import org.chromium.android_webview.AwBrowserProcess;
-import org.chromium.android_webview.AwContents;
-import org.chromium.android_webview.AwContentsStatics;
-import org.chromium.android_webview.AwCookieManager;
-import org.chromium.android_webview.AwLocaleConfig;
-import org.chromium.android_webview.AwNetworkChangeNotifierRegistrationPolicy;
-import org.chromium.android_webview.AwProxyController;
-import org.chromium.android_webview.AwServiceWorkerController;
-import org.chromium.android_webview.AwThreadUtils;
-import org.chromium.android_webview.AwTracingController;
-import org.chromium.android_webview.HttpAuthDatabase;
-import org.chromium.android_webview.ProductConfig;
-import org.chromium.android_webview.R;
-import org.chromium.android_webview.WebViewChromiumRunQueue;
-import org.chromium.android_webview.common.AwResource;
-import org.chromium.android_webview.common.AwSwitches;
-import org.chromium.android_webview.gfx.AwDrawFnImpl;
-import org.chromium.android_webview.variations.VariationsSeedLoader;
-import org.chromium.base.BuildInfo;
-import org.chromium.base.BundleUtils;
-import org.chromium.base.CommandLine;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.FieldTrialList;
-import org.chromium.base.JNIUtils;
-import org.chromium.base.PathService;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.TraceEvent;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.ScopedSysTraceEvent;
-import org.chromium.base.task.PostTask;
-import org.chromium.build.BuildConfig;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.net.NetworkChangeNotifier;
-import org.chromium.ui.base.ResourceBundle;
+import org.monyhar.android_webview.AwBrowserContext;
+import org.monyhar.android_webview.AwBrowserProcess;
+import org.monyhar.android_webview.AwContents;
+import org.monyhar.android_webview.AwContentsStatics;
+import org.monyhar.android_webview.AwCookieManager;
+import org.monyhar.android_webview.AwLocaleConfig;
+import org.monyhar.android_webview.AwNetworkChangeNotifierRegistrationPolicy;
+import org.monyhar.android_webview.AwProxyController;
+import org.monyhar.android_webview.AwServiceWorkerController;
+import org.monyhar.android_webview.AwThreadUtils;
+import org.monyhar.android_webview.AwTracingController;
+import org.monyhar.android_webview.HttpAuthDatabase;
+import org.monyhar.android_webview.ProductConfig;
+import org.monyhar.android_webview.R;
+import org.monyhar.android_webview.WebViewChromiumRunQueue;
+import org.monyhar.android_webview.common.AwResource;
+import org.monyhar.android_webview.common.AwSwitches;
+import org.monyhar.android_webview.gfx.AwDrawFnImpl;
+import org.monyhar.android_webview.variations.VariationsSeedLoader;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.BundleUtils;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.FieldTrialList;
+import org.monyhar.base.JNIUtils;
+import org.monyhar.base.PathService;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.ScopedSysTraceEvent;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.build.BuildConfig;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.net.NetworkChangeNotifier;
+import org.monyhar.ui.base.ResourceBundle;
 
 /**
  * Class controlling the Chromium initialization for WebView.
@@ -84,7 +84,7 @@ public class WebViewChromiumAwInit {
     private AwProxyController mAwProxyController;
 
     // Guards accees to the other members, and is notifyAll() signalled on the UI thread
-    // when the chromium process has been started.
+    // when the monyhar process has been started.
     // This member is not private only because the downstream subclass needs to access it,
     // it shouldn't be accessed from anywhere else.
     /* package */ final Object mLock = new Object();
@@ -410,7 +410,7 @@ public class WebViewChromiumAwInit {
     }
 
     /**
-     * Returns the lock used for guarding chromium initialization.
+     * Returns the lock used for guarding monyhar initialization.
      * We make this public to let higher-level classes use this lock to guard variables
      * dependent on this class, to avoid introducing new locks (which can cause deadlocks).
      */

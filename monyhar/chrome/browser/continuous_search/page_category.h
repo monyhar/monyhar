@@ -7,7 +7,7 @@
 
 namespace continuous_search {
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.continuous_search
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.continuous_search
 enum class PageCategory {
   kOrganicSrp = 0,
   kNewsSrp = 1,

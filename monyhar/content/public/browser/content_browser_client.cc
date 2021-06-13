@@ -8,7 +8,7 @@
 // build time significantly. If you run into this limit, try using forward
 // declarations instead of including more headers. If that is infeasible, adjust
 // the limit. For more info, see
-// https://chromium.googlesource.com/chromium/src/+/HEAD/docs/wmax_tokens.md
+// https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/wmax_tokens.md
 #pragma clang max_tokens_here 850000
 
 #include <utility>

@@ -27,7 +27,7 @@ using testing::Mock;
 
 namespace {
 
-const char kFixedPacUrl[] = "http://chromium.org/fixed_pac_url";
+const char kFixedPacUrl[] = "http://monyhar.org/fixed_pac_url";
 
 // Testing proxy config service that allows us to fire notifications at will.
 class TestProxyConfigService : public net::ProxyConfigService {

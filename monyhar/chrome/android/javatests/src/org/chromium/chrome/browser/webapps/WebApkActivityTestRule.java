@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps;
+package org.monyhar.chrome.browser.webapps;
 
 import android.content.Intent;
 import android.support.test.InstrumentationRegistry;
@@ -11,13 +11,13 @@ import org.hamcrest.Matchers;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.browser.ShortcutHelper;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.test.ChromeActivityTestRule;
-import org.chromium.chrome.test.util.ChromeTabUtils;
-import org.chromium.webapk.lib.common.WebApkConstants;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.browser.ShortcutHelper;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.test.ChromeActivityTestRule;
+import org.monyhar.chrome.test.util.ChromeTabUtils;
+import org.monyhar.webapk.lib.common.WebApkConstants;
 
 /** Custom {@link ChromeActivityTestRule} for tests using a WebAPK {@link WebappActivity}. */
 public class WebApkActivityTestRule extends ChromeActivityTestRule<WebappActivity> {
@@ -63,7 +63,7 @@ public class WebApkActivityTestRule extends ChromeActivityTestRule<WebappActivit
     public WebappActivity startWebApkActivity(final String startUrl) {
         Intent intent =
                 new Intent(InstrumentationRegistry.getTargetContext(), WebappActivity.class);
-        intent.putExtra(WebApkConstants.EXTRA_WEBAPK_PACKAGE_NAME, "org.chromium.webapk.test");
+        intent.putExtra(WebApkConstants.EXTRA_WEBAPK_PACKAGE_NAME, "org.monyhar.webapk.test");
         intent.putExtra(ShortcutHelper.EXTRA_URL, startUrl);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 

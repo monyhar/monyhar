@@ -47,7 +47,7 @@
 namespace ios_web_view {
 namespace {
 
-const char kTestEmail[] = "johndoe@chromium.org";
+const char kTestEmail[] = "johndoe@monyhar.org";
 
 }  // namespace
 

@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar.bottom;
+package org.monyhar.chrome.browser.toolbar.bottom;
 
 import android.view.View;
 
-import org.chromium.chrome.browser.toolbar.R;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.chrome.browser.toolbar.R;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 class BottomControlsViewBinder {
     /**

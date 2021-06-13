@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.ui.controller.trustedwebactivity;
+package org.monyhar.chrome.browser.browserservices.ui.controller.trustedwebactivity;
 
-import org.chromium.chrome.browser.browserservices.BrowserServicesStore;
-import org.chromium.chrome.browser.browserservices.TrustedWebActivityUmaRecorder;
-import org.chromium.chrome.browser.browserservices.ui.TrustedWebActivityModel;
-import org.chromium.chrome.browser.browserservices.ui.controller.CurrentPageVerifier;
-import org.chromium.chrome.browser.browserservices.ui.controller.DisclosureController;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.browserservices.BrowserServicesStore;
+import org.monyhar.chrome.browser.browserservices.TrustedWebActivityUmaRecorder;
+import org.monyhar.chrome.browser.browserservices.ui.TrustedWebActivityModel;
+import org.monyhar.chrome.browser.browserservices.ui.controller.CurrentPageVerifier;
+import org.monyhar.chrome.browser.browserservices.ui.controller.DisclosureController;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
 
 import javax.inject.Inject;
 

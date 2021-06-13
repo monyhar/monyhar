@@ -61,9 +61,9 @@ function testAdbTargetsListed() {
     expectNotEquals(undefined, chromeBrowser);
 
     var chromePages = chromeBrowser.querySelectorAll('.pages');
-    var chromiumPage =
-        findByContentSubstring(chromePages, 'http://www.chromium.org/', '.url');
-    expectNotEquals(undefined, chromiumPage);
+    var monyharPage =
+        findByContentSubstring(chromePages, 'http://www.monyhar.org/', '.url');
+    expectNotEquals(undefined, monyharPage);
 
     var pageById = {};
     Array.prototype.forEach.call(devices, function(device) {

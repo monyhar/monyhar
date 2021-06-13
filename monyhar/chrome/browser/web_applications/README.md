@@ -46,7 +46,7 @@ This link ties the manifest to the document, and subsequently used in the spec a
 
 ### Installable
 
-If a document or page is considered "installable", then the user agent can create some form of installed web app for that page. To be installable, [web_app::CanCreateWebApp](https://source.chromium.org/search?q=web_app::CanCreateWebApp) must return true, where:
+If a document or page is considered "installable", then the user agent can create some form of installed web app for that page. To be installable, [web_app::CanCreateWebApp](https://source.monyhar.org/search?q=web_app::CanCreateWebApp) must return true, where:
 * The user profile must allow webapps to be installed
 * The web contents of the page must not be crashed
 * The last navigation on the web contents must not be an error (like a 404)
@@ -110,9 +110,9 @@ This refers to the user specifying that a WebApp should NOT open in a window, an
 ### Placeholder app
 There are some webapps which are managed by external sources - for example, the enterprise policy force-install apps, or the system web apps for ChromeOS. These are generally not installed by user interaction, and the WebAppProvider needs to install something for each of these apps.
 
-Sometimes, the installation of these apps can fail because the install url is not reachable (usually a cert or login needs to occur, and the url is redirected). When this happens, the system [can](https://source.chromium.org/search?q=ExternalInstallOptions::install_placeholder) install a "placeholder" app, which is a fake application that, when launched navigates to the install url of the application, given by the external app manager.
+Sometimes, the installation of these apps can fail because the install url is not reachable (usually a cert or login needs to occur, and the url is redirected). When this happens, the system [can](https://source.monyhar.org/search?q=ExternalInstallOptions::install_placeholder) install a "placeholder" app, which is a fake application that, when launched navigates to the install url of the application, given by the external app manager.
 
-When any web contents, either in-(placeholder)-app or in the browser, successfully [navigates](https://source.chromium.org/search?q=WebAppTabHelper::ReinstallPlaceholderAppIfNecessary) to a install url that the placeholder app is installed for, the web app installation is restarted for the true app, and after that installation succeeds the placeholder app is uninstalled.
+When any web contents, either in-(placeholder)-app or in the browser, successfully [navigates](https://source.monyhar.org/search?q=WebAppTabHelper::ReinstallPlaceholderAppIfNecessary) to a install url that the placeholder app is installed for, the web app installation is restarted for the true app, and after that installation succeeds the placeholder app is uninstalled.
 
 ### Locally Installed
 When signing into a non-ChromeOS device, all web apps are installed but not **locally installed**. This means that OS integration is not triggered (so there are no platform shortcuts created), install icons will still show up for the app websites, and the app icon will appear greyed out on chrome://apps.
@@ -219,7 +219,7 @@ Sometimes we need to query window state from chrome/browser/ui land even though
 our BUILD.gn targets disallow this as it would be a circular dependency. This
 [abstract class](web_app_ui_manager.h) + [impl](web_app_ui_manager_impl.h)
 injects the dependency at link time (see
-[`WebAppUiManager::Create()`](https://source.chromium.org/search?q=WebAppUiManager::Create)'s
+[`WebAppUiManager::Create()`](https://source.monyhar.org/search?q=WebAppUiManager::Create)'s
 declaration and definition locations).
 
 ## Storage

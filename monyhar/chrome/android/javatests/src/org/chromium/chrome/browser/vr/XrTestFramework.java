@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr;
+package org.monyhar.chrome.browser.vr;
 
 import android.view.View;
 
@@ -10,20 +10,20 @@ import androidx.annotation.IntDef;
 
 import org.junit.Assert;
 
-import org.chromium.base.Log;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.UrlUtils;
-import org.chromium.chrome.browser.tab.SadTab;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabLaunchType;
-import org.chromium.chrome.test.ChromeActivityTestRule;
-import org.chromium.chrome.test.util.ChromeTabUtils;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.test.RenderFrameHostTestExt;
-import org.chromium.content_public.browser.test.util.JavaScriptUtils;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.content_public.browser.test.util.WebContentsUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.UrlUtils;
+import org.monyhar.chrome.browser.tab.SadTab;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabLaunchType;
+import org.monyhar.chrome.test.ChromeActivityTestRule;
+import org.monyhar.chrome.test.util.ChromeTabUtils;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.test.RenderFrameHostTestExt;
+import org.monyhar.content_public.browser.test.util.JavaScriptUtils;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.content_public.browser.test.util.WebContentsUtils;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

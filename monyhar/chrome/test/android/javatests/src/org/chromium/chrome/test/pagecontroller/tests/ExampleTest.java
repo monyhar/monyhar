@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.pagecontroller.tests;
+package org.monyhar.chrome.test.pagecontroller.tests;
 
 import androidx.test.filters.SmallTest;
 
@@ -15,12 +15,12 @@ import org.junit.rules.RuleChain;
 import org.junit.rules.TestRule;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.chrome.test.pagecontroller.controllers.PageController;
-import org.chromium.chrome.test.pagecontroller.rules.ChromeUiApplicationTestRule;
-import org.chromium.chrome.test.pagecontroller.rules.ChromeUiAutomatorTestRule;
-import org.chromium.chrome.test.pagecontroller.utils.IUi2Locator;
-import org.chromium.chrome.test.pagecontroller.utils.Ui2Locators;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.chrome.test.pagecontroller.controllers.PageController;
+import org.monyhar.chrome.test.pagecontroller.rules.ChromeUiApplicationTestRule;
+import org.monyhar.chrome.test.pagecontroller.rules.ChromeUiAutomatorTestRule;
+import org.monyhar.chrome.test.pagecontroller.utils.IUi2Locator;
+import org.monyhar.chrome.test.pagecontroller.utils.Ui2Locators;
 
 /**
  * An example test that demonstrates how to use Page Controllers.

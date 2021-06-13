@@ -18,10 +18,10 @@ click of a button you can understand where memory is being used in your system.
       ![Tick the memory-infra checkbox when recording a trace.][memory-infra-box]
 
 
-[record-trace]:     https://sites.google.com/a/chromium.org/dev/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs
+[record-trace]:     https://sites.google.com/a/monyhar.org/dev/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs
 [tracing]:          chrome://tracing
 [inspect-tracing]:  chrome://inspect
-[memory-infra-box]: https://storage.googleapis.com/chromium-docs.appspot.com/1c6d1886584e7cc6ffed0d377f32023f8da53e02
+[memory-infra-box]: https://storage.googleapis.com/monyhar-docs.appspot.com/1c6d1886584e7cc6ffed0d377f32023f8da53e02
 
 ## Navigating a memory-infra trace
 
@@ -38,9 +38,9 @@ instance, has more details about its partitions.
 The full details of the MemoryInfra UI are explained in its [design
 doc][mi-ui-doc].
 
-[tracing-views]:     https://storage.googleapis.com/chromium-docs.appspot.com/db12015bd262385f0f8bd69133330978a99da1ca
-[partalloc-details]: https://storage.googleapis.com/chromium-docs.appspot.com/02eade61d57c83f8ef8227965513456555fc3324
-[m-purple]:          https://storage.googleapis.com/chromium-docs.appspot.com/d7bdf4d16204c293688be2e5a0bcb2bf463dbbc3
+[tracing-views]:     https://storage.googleapis.com/monyhar-docs.appspot.com/db12015bd262385f0f8bd69133330978a99da1ca
+[partalloc-details]: https://storage.googleapis.com/monyhar-docs.appspot.com/02eade61d57c83f8ef8227965513456555fc3324
+[m-purple]:          https://storage.googleapis.com/monyhar-docs.appspot.com/d7bdf4d16204c293688be2e5a0bcb2bf463dbbc3
 [mi-ui-doc]:         https://docs.google.com/document/d/1b5BSBEd1oB-3zj_CBAQWiQZ0cmI0HmjmXG-5iNveLqw/edit
 
 ## Columns
@@ -158,12 +158,12 @@ MemoryInfra is based on a simple and extensible architecture. See
 or take a look at one of the existing examples such as
 [malloc_dump_provider.cc][malloc-dp]. The crbug label is
 [Hotlist-MemoryInfra][hotlist]. Don't hesitate to contact
-[tracing@chromium.org][mailtracing] for questions and support.
+[tracing@monyhar.org][mailtracing] for questions and support.
 
 [dp-slides]:   https://docs.google.com/presentation/d/1GI3HY3Mm5-Mvp6eZyVB0JiaJ-u3L1MMJeKHJg4lxjEI/present?slide=id.g995514d5c_1_45
-[malloc-dp]:   https://chromium.googlesource.com/chromium/src.git/+/main/base/trace_event/malloc_dump_provider.cc
-[hotlist]:     https://code.google.com/p/chromium/issues/list?q=label:Hotlist-MemoryInfra
-[mailtracing]: mailto:tracing@chromium.org
+[malloc-dp]:   https://monyhar.googlesource.com/monyhar/src.git/+/main/base/trace_event/malloc_dump_provider.cc
+[hotlist]:     https://code.google.com/p/monyhar/issues/list?q=label:Hotlist-MemoryInfra
+[mailtracing]: mailto:tracing@monyhar.org
 
 ## Design documents
 

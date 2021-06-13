@@ -24,8 +24,8 @@
 + (void)disableSuggestions;
 
 // Adds |numberOfSuggestions| suggestions to the list of suggestions provided.
-// The suggestions have the name "chromium<suggestionNumber>" and the url
-// http://chromium/<suggestionNumber>.
+// The suggestions have the name "monyhar<suggestionNumber>" and the url
+// http://monyhar/<suggestionNumber>.
 + (void)addNumberOfSuggestions:(NSInteger)numberOfSuggestions
       additionalSuggestionsURL:(NSURL*)URL;
 

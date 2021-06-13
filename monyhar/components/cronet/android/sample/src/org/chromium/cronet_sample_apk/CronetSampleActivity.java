@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.cronet_sample_apk;
+package org.monyhar.cronet_sample_apk;
 
 import android.app.Activity;
 import android.content.DialogInterface;
@@ -15,11 +15,11 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 
-import org.chromium.net.CronetEngine;
-import org.chromium.net.CronetException;
-import org.chromium.net.UploadDataProviders;
-import org.chromium.net.UrlRequest;
-import org.chromium.net.UrlResponseInfo;
+import org.monyhar.net.CronetEngine;
+import org.monyhar.net.CronetException;
+import org.monyhar.net.UploadDataProviders;
+import org.monyhar.net.UrlRequest;
+import org.monyhar.net.UrlResponseInfo;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -192,7 +192,7 @@ public class CronetSampleActivity extends Activity {
     // Stops writing NetLog to disk. Should be called after calling startNetLog().
     // NetLog can be downloaded afterwards via:
     //   adb root
-    //   adb pull /data/data/org.chromium.cronet_sample_apk/cache/netlog.json
+    //   adb pull /data/data/org.monyhar.cronet_sample_apk/cache/netlog.json
     // netlog.json can then be viewed in a Chrome tab navigated to chrome://net-internals/#import
     private void stopNetLog() {
         mCronetEngine.stopNetLog();

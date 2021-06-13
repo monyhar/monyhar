@@ -111,7 +111,7 @@ This is a strong authentication check and it is the **only** reliable mechanism
 by which you can authenticate your peer.
 
 In Chrome, the helper functions
-[`ExternalAuthUtils.isCallerValid()`](https://cs.chromium.org/chromium/src/chrome/android/java/src/org/chromium/chrome/browser/externalauth/ExternalAuthUtils.java?l=157&rcl=fa790f69ce80bf2e192d710ea08b8343cad93fbb)
+[`ExternalAuthUtils.isCallerValid()`](https://cs.monyhar.org/monyhar/src/chrome/android/java/src/org/monyhar/chrome/browser/externalauth/ExternalAuthUtils.java?l=157&rcl=fa790f69ce80bf2e192d710ea08b8343cad93fbb)
 and `isCallerValidForPackage()` can perform these checks for you.
 
 ## Capability Tokens {#capability-tokens}

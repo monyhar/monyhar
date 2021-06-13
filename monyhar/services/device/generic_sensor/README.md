@@ -150,7 +150,7 @@ Sensors platform unit tests are located in the current directory and its
 subdirectories.
 
 The sensors unit tests file for Android is
-`android/junit/src/org/chromium/device/sensors/PlatformSensorAndProviderTest.java`.
+`android/junit/src/org/monyhar/device/sensors/PlatformSensorAndProviderTest.java`.
 
 Sensors browser tests are located in `content/test/data/generic_sensor`.
 

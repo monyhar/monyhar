@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omaha.metrics;
+package org.monyhar.chrome.browser.omaha.metrics;
 
 import android.text.TextUtils;
 
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.browser.omaha.UpdateConfigs;
-import org.chromium.chrome.browser.omaha.UpdateStatusProvider.UpdateInteractionSource;
-import org.chromium.chrome.browser.omaha.UpdateStatusProvider.UpdateState;
-import org.chromium.chrome.browser.omaha.UpdateStatusProvider.UpdateStatus;
-import org.chromium.chrome.browser.omaha.metrics.UpdateProtos.Tracking;
-import org.chromium.chrome.browser.omaha.metrics.UpdateProtos.Tracking.Source;
-import org.chromium.chrome.browser.omaha.metrics.UpdateProtos.Tracking.Type;
-import org.chromium.components.version_info.VersionConstants;
+import org.monyhar.chrome.browser.omaha.UpdateConfigs;
+import org.monyhar.chrome.browser.omaha.UpdateStatusProvider.UpdateInteractionSource;
+import org.monyhar.chrome.browser.omaha.UpdateStatusProvider.UpdateState;
+import org.monyhar.chrome.browser.omaha.UpdateStatusProvider.UpdateStatus;
+import org.monyhar.chrome.browser.omaha.metrics.UpdateProtos.Tracking;
+import org.monyhar.chrome.browser.omaha.metrics.UpdateProtos.Tracking.Source;
+import org.monyhar.chrome.browser.omaha.metrics.UpdateProtos.Tracking.Type;
+import org.monyhar.components.version_info.VersionConstants;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

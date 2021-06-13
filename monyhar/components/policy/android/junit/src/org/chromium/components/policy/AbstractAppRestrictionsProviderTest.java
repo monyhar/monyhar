@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.policy;
+package org.monyhar.components.policy;
 
 import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.ArgumentMatchers.anyString;
@@ -24,8 +24,8 @@ import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowApplication;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
 
 /**
  * Robolectric test for AbstractAppRestrictionsProvider.
@@ -94,7 +94,7 @@ public class AbstractAppRestrictionsProviderTest {
     public void testStartListeningForPolicyChanges() {
         Context context = RuntimeEnvironment.application;
         AbstractAppRestrictionsProvider provider = spy(new DummyAppRestrictionsProvider(context));
-        Intent intent = new Intent("org.chromium.test.policy.Hello");
+        Intent intent = new Intent("org.monyhar.test.policy.Hello");
         ShadowApplication shadowApplication = ShadowApplication.getInstance();
 
         // If getRestrictionsChangeIntentAction returns null then we should not start a broadcast
@@ -104,7 +104,7 @@ public class AbstractAppRestrictionsProviderTest {
 
         // If it returns a string then we should.
         when(provider.getRestrictionChangeIntentAction())
-                .thenReturn("org.chromium.test.policy.Hello");
+                .thenReturn("org.monyhar.test.policy.Hello");
         provider.startListeningForPolicyChanges();
         Assert.assertTrue(shadowApplication.hasReceiverForIntent(intent));
     }
@@ -116,7 +116,7 @@ public class AbstractAppRestrictionsProviderTest {
     public void testStopListening() {
         Context context = RuntimeEnvironment.application;
         AbstractAppRestrictionsProvider provider = spy(new DummyAppRestrictionsProvider(context));
-        Intent intent = new Intent("org.chromium.test.policy.Hello");
+        Intent intent = new Intent("org.monyhar.test.policy.Hello");
         ShadowApplication shadowApplication = ShadowApplication.getInstance();
 
         // First try with null result from getRestrictionsChangeIntentAction, only test here is no
@@ -125,7 +125,7 @@ public class AbstractAppRestrictionsProviderTest {
 
         // Now try starting and stopping listening properly.
         when(provider.getRestrictionChangeIntentAction())
-                .thenReturn("org.chromium.test.policy.Hello");
+                .thenReturn("org.monyhar.test.policy.Hello");
         provider.startListeningForPolicyChanges();
         provider.stopListening();
         Assert.assertFalse(shadowApplication.hasReceiverForIntent(intent));

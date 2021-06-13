@@ -2,22 +2,22 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.page_info;
+package org.monyhar.chrome.browser.page_info;
 
 import android.app.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.offlinepages.OfflinePageUtils;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabUtils;
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.components.page_info.PageInfoController;
-import org.chromium.components.page_info.PageInfoController.OpenedFromSource;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.modaldialog.ModalDialogManager;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.offlinepages.OfflinePageUtils;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabUtils;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.components.page_info.PageInfoController;
+import org.monyhar.components.page_info.PageInfoController.OpenedFromSource;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
 
 /**
  * Helper class showing page info dialog for Clank.

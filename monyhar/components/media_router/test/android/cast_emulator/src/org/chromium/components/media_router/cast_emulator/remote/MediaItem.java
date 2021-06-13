@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.media_router.cast_emulator.remote;
+package org.monyhar.components.media_router.cast_emulator.remote;
 
 import android.app.PendingIntent;
 import android.net.Uri;
@@ -10,7 +10,7 @@ import android.os.SystemClock;
 
 import androidx.mediarouter.media.MediaItemStatus;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 /**
  * PlaylistItem helps keep track of the current status of an media item.

@@ -7,9 +7,9 @@
 
 syntax = "proto2";
 
-package org.chromium.chrome.browser.thumbnail.generator;
+package org.monyhar.chrome.browser.thumbnail.generator;
 
-option java_package = "org.chromium.chrome.browser.thumbnail.generator";
+option java_package = "org.monyhar.chrome.browser.thumbnail.generator";
 
 // TODO(jkrcal): Remove when protobuf 4.0 is out, https://crbug.com/800281.
 option optimize_for = LITE_RUNTIME;

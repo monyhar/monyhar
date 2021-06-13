@@ -26,7 +26,7 @@ REQUIRED = {
 OPTIONAL_MATCHING = (
     'builder_name',
     'build_number',
-    'chromium_revision',
+    'monyhar_revision',
     'has_pretty_patch',
     'has_wdiff',
     'path_delimiter',
@@ -60,7 +60,7 @@ def merge_test_results(shard_results_list, test_cross_device=False):
     shard_results_list: list of results to merge. All the results must have the
       same format. Supported format are simplified JSON format & Chromium JSON
       test results format version 3 (see
-      https://www.chromium.org/developers/the-json-test-results-format)
+      https://www.monyhar.org/developers/the-json-test-results-format)
     test_cross_device: If true, some tests are running in multiple shards. This
       requires some extra handling on merging the values under 'tests'.
 
@@ -107,7 +107,7 @@ def _merge_simplified_json_format(shard_results_list):
 
 def _merge_json_test_result_format(shard_results_list, test_cross_device=False):
   # This code is specialized to the Chromium JSON test results format version 3:
-  # https://www.chromium.org/developers/the-json-test-results-format
+  # https://www.monyhar.org/developers/the-json-test-results-format
 
   # These are required fields for the JSON test result format version 3.
   merged_results = {

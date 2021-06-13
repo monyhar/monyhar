@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.services;
+package org.monyhar.android_webview.services;
 
 import android.os.PersistableBundle;
 
-import org.chromium.components.minidump_uploader.MinidumpUploadJob;
-import org.chromium.components.minidump_uploader.MinidumpUploadJobImpl;
-import org.chromium.components.minidump_uploader.MinidumpUploadJobService;
+import org.monyhar.components.minidump_uploader.MinidumpUploadJob;
+import org.monyhar.components.minidump_uploader.MinidumpUploadJobImpl;
+import org.monyhar.components.minidump_uploader.MinidumpUploadJobService;
 
 /**
  * Class that interacts with the Android JobScheduler to upload Minidumps at appropriate times.

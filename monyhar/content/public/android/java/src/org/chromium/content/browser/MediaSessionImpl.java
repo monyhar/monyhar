@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ObserverList;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.content_public.browser.MediaSession;
-import org.chromium.content_public.browser.MediaSessionObserver;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.services.media_session.MediaImage;
-import org.chromium.services.media_session.MediaMetadata;
-import org.chromium.services.media_session.MediaPosition;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.content_public.browser.MediaSession;
+import org.monyhar.content_public.browser.MediaSessionObserver;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.services.media_session.MediaImage;
+import org.monyhar.services.media_session.MediaMetadata;
+import org.monyhar.services.media_session.MediaPosition;
 
 import java.util.Arrays;
 import java.util.HashSet;

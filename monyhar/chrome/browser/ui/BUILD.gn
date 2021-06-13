@@ -800,7 +800,7 @@ static_library("ui") {
     deps += [
       "//chrome/android:jni_headers",
       "//chrome/android/features/dev_ui:buildflags",
-      "//chrome/app:chromium_strings",
+      "//chrome/app:monyhar_strings",
       "//chrome/browser/flags:flags_android",
       "//chrome/browser/image_decoder",
       "//chrome/browser/notifications/scheduler/public",
@@ -3299,7 +3299,7 @@ static_library("ui") {
     ]
     weak_frameworks = [ "ScreenTime.framework" ]
 
-    if (enable_chromium_updater) {
+    if (enable_monyhar_updater) {
       deps += [
         "//chrome/browser/updater:browser_updater_client",
         "//chrome/updater:browser_sources",

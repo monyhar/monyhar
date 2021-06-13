@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
 import android.support.test.InstrumentationRegistry;
 
@@ -14,13 +14,13 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.AwContentsStatics;
-import org.chromium.android_webview.AwWebContentsObserver;
-import org.chromium.base.test.util.Feature;
-import org.chromium.content_public.browser.NavigationHandle;
-import org.chromium.content_public.browser.test.util.TestCallbackHelperContainer;
-import org.chromium.ui.base.PageTransition;
-import org.chromium.url.GURL;
+import org.monyhar.android_webview.AwContentsStatics;
+import org.monyhar.android_webview.AwWebContentsObserver;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.content_public.browser.NavigationHandle;
+import org.monyhar.content_public.browser.test.util.TestCallbackHelperContainer;
+import org.monyhar.ui.base.PageTransition;
+import org.monyhar.url.GURL;
 
 /**
  * Tests for the AwWebContentsObserver class.

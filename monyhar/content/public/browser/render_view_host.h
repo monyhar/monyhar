@@ -43,7 +43,7 @@ class RenderWidgetHost;
 // Page (if it's page specific).
 //
 // For context, please see https://crbug.com/467770 and
-// https://www.chromium.org/developers/design-documents/site-isolation.
+// https://www.monyhar.org/developers/design-documents/site-isolation.
 class CONTENT_EXPORT RenderViewHost {
  public:
   // Returns the RenderViewHost given its ID and the ID of its render process.

@@ -15,16 +15,16 @@ if (current_toolchain == host_toolchain) {
 
   executable("android_protoc") {
     configs -= [
-      "//build/config/compiler:chromium_code",
+      "//build/config/compiler:monyhar_code",
 
       # Does not compile with sanitizers.
       "//build/config/sanitizers:default_sanitizer_flags",
     ]
 
     configs += [
-      "//build/config/compiler:no_chromium_code",
+      "//build/config/compiler:no_monyhar_code",
 
-      # Must be after no_chromium_code so warning flags are ordered correctly.
+      # Must be after no_monyhar_code so warning flags are ordered correctly.
       ":android_protoc_warnings",
     ]
 
@@ -144,7 +144,7 @@ if (is_android) {
   import("//build/config/android/rules.gni")
 
   android_library("protobuf_nano_javalib") {
-    chromium_code = false
+    monyhar_code = false
     sources = [
       "src/java/src/device/main/java/com/google/protobuf/nano/android/ParcelableExtendableMessageNano.java",
       "src/java/src/device/main/java/com/google/protobuf/nano/android/ParcelableMessageNano.java",

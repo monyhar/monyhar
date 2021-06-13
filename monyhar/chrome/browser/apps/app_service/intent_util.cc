@@ -63,7 +63,7 @@ apps::mojom::IntentFilterPtr CreateShareFileFilter(
 #if BUILDFLAG(IS_CHROMEOS_ASH)
 constexpr char kIntentExtraText[] = "S.android.intent.extra.TEXT";
 constexpr char kIntentExtraSubject[] = "S.android.intent.extra.SUBJECT";
-constexpr char kIntentExtraStartType[] = "S.org.chromium.arc.start_type";
+constexpr char kIntentExtraStartType[] = "S.org.monyhar.arc.start_type";
 constexpr char kIntentActionPrefix[] = "android.intent.action";
 constexpr char kType[] = "type";
 

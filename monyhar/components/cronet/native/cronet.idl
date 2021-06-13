@@ -108,7 +108,7 @@ struct Error {
     ERROR_ADDRESS_UNREACHABLE = 9,
 
     /**
-     * Error code indicating an error related to the <a href="https://www.chromium.org/quic">
+     * Error code indicating an error related to the <a href="https://www.monyhar.org/quic">
      * QUIC</a> protocol. When {@link #error_code} is this code, see
      * {@link quic_detailed_error_code} for more information.
      */
@@ -135,7 +135,7 @@ struct Error {
    * Cronet internal error code. This may provide more specific error
    * diagnosis than |error_code|, but the constant values may change over time.
    * See
-   * <a href=https://chromium.googlesource.com/chromium/src/+/main/net/base/net_error_list.h>
+   * <a href=https://monyhar.googlesource.com/monyhar/src/+/main/net/base/net_error_list.h>
    * here</a> for the lastest list of values.
    */
   int32 internal_error_code = 0;
@@ -152,8 +152,8 @@ struct Error {
   bool immediately_retryable = false;
 
   /**
-   * Contains detailed <a href="https://www.chromium.org/quic">QUIC</a> error code from
-   * <a href="https://cs.chromium.org/search/?q=symbol:%5CbQuicErrorCode%5Cb">
+   * Contains detailed <a href="https://www.monyhar.org/quic">QUIC</a> error code from
+   * <a href="https://cs.monyhar.org/search/?q=symbol:%5CbQuicErrorCode%5Cb">
    * QuicErrorCode</a> when the |error_code| code is |ERROR_QUIC_PROTOCOL_FAILED|.
    */
   int32 quic_detailed_error_code = 0;
@@ -524,7 +524,7 @@ struct EngineParams {
   string storage_path;
 
   /**
-   * Whether <a href="https://www.chromium.org/quic">QUIC</a> protocol
+   * Whether <a href="https://www.monyhar.org/quic">QUIC</a> protocol
    * is enabled. If QUIC is enabled, then QUIC User Agent Id
    * containing application name and Cronet version is sent to the server.
    */
@@ -595,7 +595,7 @@ struct EngineParams {
    * proxy certificate to the list of local trust anchor. Disabling the bypass will most
    * likly prevent the app from sending any traffic to the pinned hosts. For more
    * information see 'How does key pinning interact with local proxies and filters?' at
-   * https://www.chromium.org/Home/chromium-security/security-faq
+   * https://www.monyhar.org/Home/monyhar-security/security-faq
    */
   bool enable_public_key_pinning_bypass_for_local_trust_anchors = true;
 
@@ -1294,7 +1294,7 @@ struct DateTime {
  *
  * Most timing metrics are taken from
  * <a
- * href="https://cs.chromium.org/chromium/src/net/base/load_timing_info.h">LoadTimingInfo</a>,
+ * href="https://cs.monyhar.org/monyhar/src/net/base/load_timing_info.h">LoadTimingInfo</a>,
  * which holds the information for <a href="http://w3c.github.io/navigation-timing/"></a> and
  * <a href="https://www.w3.org/TR/resource-timing/"></a>.
  */

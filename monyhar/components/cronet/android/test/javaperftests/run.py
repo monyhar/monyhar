@@ -57,7 +57,7 @@ sys.path.append(os.path.join(REPOSITORY_ROOT, 'build', 'android'))
 sys.path.append(os.path.join(REPOSITORY_ROOT, 'components'))
 
 # pylint: disable=wrong-import-position
-from chrome_telemetry_build import chromium_config
+from chrome_telemetry_build import monyhar_config
 from devil.android import device_utils
 from devil.android.sdk import intent
 from core import benchmark_runner
@@ -199,7 +199,7 @@ def main():
   # CronetPerfTestBenchmark class to run the benchmark.
   top_level_dir = os.path.dirname(os.path.realpath(__file__))
   expectations_files = [os.path.join(top_level_dir, 'expectations.config')]
-  runner_config = chromium_config.ChromiumConfig(
+  runner_config = monyhar_config.ChromiumConfig(
       top_level_dir=top_level_dir,
       benchmark_dirs=[top_level_dir],
       expectations_files=expectations_files)

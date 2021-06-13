@@ -23,7 +23,7 @@
       'dependencies': [
         '../client/client.gyp:crashpad_client',
         '../compat/compat.gyp:crashpad_compat',
-        '../third_party/mini_chromium/mini_chromium.gyp:base',
+        '../third_party/mini_monyhar/mini_monyhar.gyp:base',
         '../util/util.gyp:crashpad_util',
       ],
       'include_dirs': [

@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.searchwidget;
+package org.monyhar.chrome.browser.searchwidget;
 
 import android.content.res.Resources;
 
 import androidx.annotation.ColorInt;
 import androidx.annotation.ColorRes;
 
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.chrome.browser.omnibox.LocationBarDataProvider;
-import org.chromium.chrome.browser.omnibox.NewTabPageDelegate;
-import org.chromium.chrome.browser.omnibox.UrlBarData;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.browser_ui.styles.ChromeColors;
-import org.chromium.components.metrics.OmniboxEventProtos.OmniboxEventProto.PageClassification;
-import org.chromium.components.security_state.ConnectionSecurityLevel;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.chrome.browser.omnibox.LocationBarDataProvider;
+import org.monyhar.chrome.browser.omnibox.NewTabPageDelegate;
+import org.monyhar.chrome.browser.omnibox.UrlBarData;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.browser_ui.styles.ChromeColors;
+import org.monyhar.components.metrics.OmniboxEventProtos.OmniboxEventProto.PageClassification;
+import org.monyhar.components.security_state.ConnectionSecurityLevel;
 
 class SearchBoxDataProvider implements LocationBarDataProvider {
     private final @ColorInt int mPrimaryColor;

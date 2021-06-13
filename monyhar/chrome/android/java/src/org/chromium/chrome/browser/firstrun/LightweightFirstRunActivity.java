@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.firstrun;
+package org.monyhar.chrome.browser.firstrun;
 
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -19,18 +19,18 @@ import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.customtabs.CustomTabActivity;
-import org.chromium.chrome.browser.enterprise.util.EnterpriseInfo;
-import org.chromium.components.signin.ChildAccountStatus;
-import org.chromium.ui.base.LocalizationUtils;
-import org.chromium.ui.text.NoUnderlineClickableSpan;
-import org.chromium.ui.text.SpanApplier;
-import org.chromium.ui.text.SpanApplier.SpanInfo;
-import org.chromium.ui.widget.LoadingView;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivity;
+import org.monyhar.chrome.browser.enterprise.util.EnterpriseInfo;
+import org.monyhar.components.signin.ChildAccountStatus;
+import org.monyhar.ui.base.LocalizationUtils;
+import org.monyhar.ui.text.NoUnderlineClickableSpan;
+import org.monyhar.ui.text.SpanApplier;
+import org.monyhar.ui.text.SpanApplier.SpanInfo;
+import org.monyhar.ui.widget.LoadingView;
 
 /**
 * Lightweight FirstRunActivity. It shows ToS dialog only.
@@ -60,7 +60,7 @@ public class LightweightFirstRunActivity
     private Runnable mExitFreRunnable;
 
     public static final String EXTRA_ASSOCIATED_APP_NAME =
-            "org.chromium.chrome.browser.firstrun.AssociatedAppName";
+            "org.monyhar.chrome.browser.firstrun.AssociatedAppName";
 
     public LightweightFirstRunActivity() {
         super();

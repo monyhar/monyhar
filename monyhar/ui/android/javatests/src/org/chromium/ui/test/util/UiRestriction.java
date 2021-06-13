@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.test.util;
+package org.monyhar.ui.test.util;
 
-import org.chromium.base.test.util.Restriction;
+import org.monyhar.base.test.util.Restriction;
 
 /**
  * UiRestrictions list form factor restrictions, that are usable with

@@ -4,7 +4,7 @@
 
 #include "trivial_ctor.h"
 
-// Due to https://bugs.chromium.org/p/chromium/issues/detail?id=663463, we treat
+// Due to https://bugs.monyhar.org/p/monyhar/issues/detail?id=663463, we treat
 // templated classes/structs as non-trivial, even if they really are trivial.
 // Thus, classes that have such a class/struct as a member get flagged as being
 // themselves non-trivial, even if (like |MySpinLock|) they are. Special-case

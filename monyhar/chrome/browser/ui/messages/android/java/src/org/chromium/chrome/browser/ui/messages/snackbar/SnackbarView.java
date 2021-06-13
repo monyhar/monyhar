@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui.messages.snackbar;
+package org.monyhar.chrome.browser.ui.messages.snackbar;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -26,13 +26,13 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.ui.messages.R;
-import org.chromium.components.browser_ui.widget.animation.Interpolators;
-import org.chromium.components.browser_ui.widget.text.TemplatePreservingTextView;
-import org.chromium.ui.base.DeviceFormFactor;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.interpolators.BakedBezierInterpolator;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.ui.messages.R;
+import org.monyhar.components.browser_ui.widget.animation.Interpolators;
+import org.monyhar.components.browser_ui.widget.text.TemplatePreservingTextView;
+import org.monyhar.ui.base.DeviceFormFactor;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.interpolators.BakedBezierInterpolator;
 
 /**
  * Visual representation of a snackbar. On phone it matches the width of the activity; on tablet it

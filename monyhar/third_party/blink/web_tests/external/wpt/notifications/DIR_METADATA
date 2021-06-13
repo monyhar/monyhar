@@ -1,7 +1,7 @@
 monorail {
   component: "UI>Notifications"
 }
-team_email: "platform-capabilities@chromium.org"
+team_email: "platform-capabilities@monyhar.org"
 wpt {
   notify: YES
 }

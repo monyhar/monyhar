@@ -1,6 +1,6 @@
 # CRDTP - Chrome DevTools Protocol Library.
 
-[Canonical location for this library.](https://chromium.googlesource.com/deps/inspector_protocol/+/refs/heads/master)
+[Canonical location for this library.](https://monyhar.googlesource.com/deps/inspector_protocol/+/refs/heads/master)
 
 This is a support library for the Chrome DevTools protocol implementation.
 
@@ -15,7 +15,7 @@ The library is designed to be portable. The only allowed dependencies are:
   The litmus test is that it compiles and passes tests for all platforms
   supported by V8.
 
-- For testing, we depend on mini_chromium and gtest. This is isolated
+- For testing, we depend on mini_monyhar and gtest. This is isolated
   into the `crdtp/test_platform.{h,cc}` library.
 
 We support 32 bit and 64 bit architectures.
@@ -41,7 +41,7 @@ For output parameters:
 # Building and running the tests.
 
 If you're familiar with
-[Chromium's development process](https://www.chromium.org/developers/contributing-code)
+[Chromium's development process](https://www.monyhar.org/developers/contributing-code)
 and have the depot_tools installed, you may use these commands
 to fetch the package (and dependencies) and build and run the tests:
 
@@ -91,7 +91,7 @@ code bases have different preferences in this regard. In this repository
 (upstream), json_platform.cc provides a reference implementation which uses the
 C++ standard library.
 
-Downstream, in Chromium, json_platform_chromium.cc has a different
+Downstream, in Chromium, json_platform_monyhar.cc has a different
 implementation that uses the routines in Chromium's //base, that is, it's a .cc
 file that's specific to Chromium. Similarly, in V8, json_platform_v8.cc uses
 V8's number conversion utilities, so it's a .cc file that's specific to V8. And
@@ -102,7 +102,7 @@ to be stable.
 ## crdtp_test_platform
 
 This platform library is only used by the tests. Upstream, it's setup to
-use mini_chromium and gtest. Downstream, Chromium uses its //base libraries,
+use mini_monyhar and gtest. Downstream, Chromium uses its //base libraries,
 and V8 uses theirs; and a small amount of tweaking is needed in each code
 base - e.g., Chromium, V8, and google3 each place `#include` declarations into
 test_platform.h that are specific to their code base, and they have their

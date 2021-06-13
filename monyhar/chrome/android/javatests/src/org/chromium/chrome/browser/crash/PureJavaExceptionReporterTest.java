@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.crash;
+package org.monyhar.chrome.browser.crash;
 
 import androidx.test.filters.SmallTest;
 
@@ -11,11 +11,11 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.components.crash.CrashKeyIndex;
-import org.chromium.components.crash.CrashKeys;
-import org.chromium.components.minidump_uploader.CrashTestRule;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.components.crash.CrashKeyIndex;
+import org.monyhar.components.crash.CrashKeys;
+import org.monyhar.components.minidump_uploader.CrashTestRule;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.io.BufferedReader;
 import java.io.File;

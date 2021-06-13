@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.background_sync;
+package org.monyhar.chrome.browser.background_sync;
 
 import android.os.Bundle;
 import android.text.format.DateUtils;
@@ -10,13 +10,13 @@ import android.text.format.DateUtils;
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.ObserverList;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.background_task_scheduler.BackgroundTaskSchedulerFactory;
-import org.chromium.components.background_task_scheduler.TaskIds;
-import org.chromium.components.background_task_scheduler.TaskInfo;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.background_task_scheduler.BackgroundTaskSchedulerFactory;
+import org.monyhar.components.background_task_scheduler.TaskIds;
+import org.monyhar.components.background_task_scheduler.TaskInfo;
 
 /**
  * The {@link BackgroundSyncBackgroundTaskScheduler} singleton is responsible

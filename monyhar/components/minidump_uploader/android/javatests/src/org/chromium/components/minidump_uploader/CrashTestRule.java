@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.minidump_uploader;
+package org.monyhar.components.minidump_uploader;
 
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.library_loader.LibraryProcessType;
-import org.chromium.components.minidump_uploader.util.CrashReportingPermissionManager;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.library_loader.LibraryProcessType;
+import org.monyhar.components.minidump_uploader.util.CrashReportingPermissionManager;
 
 import java.io.File;
 import java.io.FileWriter;

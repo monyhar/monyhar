@@ -39,7 +39,7 @@ from blinkpy.common import exit_codes
 from blinkpy.common.path_finder import RELATIVE_WEB_TESTS
 from blinkpy.common.path_finder import WEB_TESTS_LAST_COMPONENT
 from blinkpy.common.path_finder import get_blink_dir
-from blinkpy.common.path_finder import get_chromium_src_dir
+from blinkpy.common.path_finder import get_monyhar_src_dir
 from blinkpy.common.system.executive import ScriptError
 from blinkpy.common.system.profiler import SingleFileOutputProfiler
 from blinkpy.web_tests.breakpad.dump_reader_multipart import DumpReaderAndroid
@@ -58,7 +58,7 @@ from blinkpy.web_tests.port import server_process
 battery_utils = None
 device_errors = None
 device_utils = None
-devil_chromium = None
+devil_monyhar = None
 devil_env = None
 intent = None
 perf_control = None
@@ -106,7 +106,7 @@ WPT_SMOKE_TESTS_FILE = os.path.join(
 _friendly_browser_names = {
     'weblayershell': 'weblayer',
     'systemwebviewshell': 'webview',
-    'chromepublic': 'chromium'
+    'chromepublic': 'monyhar'
 }
 
 
@@ -115,17 +115,17 @@ def _import_android_packages_if_necessary():
     global battery_utils
     global device_errors
     global device_utils
-    global devil_chromium
+    global devil_monyhar
     global devil_env
     global intent
     global perf_control
     # pylint: enable=invalid-name
 
     if not battery_utils:
-        chromium_src_root = get_chromium_src_dir()
-        devil_root = os.path.join(chromium_src_root, 'third_party', 'catapult',
+        monyhar_src_root = get_monyhar_src_dir()
+        devil_root = os.path.join(monyhar_src_root, 'third_party', 'catapult',
                                   'devil')
-        build_android_root = os.path.join(chromium_src_root, 'build',
+        build_android_root = os.path.join(monyhar_src_root, 'build',
                                           'android')
         sys.path.insert(0, devil_root)
         sys.path.insert(0, build_android_root)
@@ -135,7 +135,7 @@ def _import_android_packages_if_necessary():
         devil_env = import_module('devil.devil_env')
         device_errors = import_module('devil.android.device_errors')
         device_utils = import_module('devil.android.device_utils')
-        devil_chromium = import_module('devil_chromium')
+        devil_monyhar = import_module('devil_monyhar')
         intent = import_module('devil.android.sdk.intent')
         perf_control = import_module('devil.android.perf.perf_control')
 
@@ -213,7 +213,7 @@ class ContentShellDriverDetails(DriverDetails):
         return '/data/data/' + self.package_name() + '/files/'
 
     def package_name(self):
-        return 'org.chromium.content_shell_apk'
+        return 'org.monyhar.content_shell_apk'
 
     def activity_name(self):
         return self.package_name() + '/.ContentShellActivity'
@@ -304,7 +304,7 @@ class AndroidPort(base.Port):
         'pie': linux.LinuxPort.latest_platform_fallback_path()
     }
 
-    BUILD_REQUIREMENTS_URL = 'https://www.chromium.org/developers/how-tos/android-build-instructions'
+    BUILD_REQUIREMENTS_URL = 'https://www.monyhar.org/developers/how-tos/android-build-instructions'
 
     def __init__(self, host, port_name='', apk='', product='', options=None, **kwargs):
         super(AndroidPort, self).__init__(
@@ -341,9 +341,9 @@ class AndroidPort(base.Port):
             self._devices = AndroidDevices(default_devices,
                                            self._debug_logging)
 
-            devil_chromium.Initialize(
+            devil_monyhar.Initialize(
                 output_directory=self._build_path(),
-                adb_path=self._path_from_chromium_base(
+                adb_path=self._path_from_monyhar_base(
                     'third_party', 'android_sdk', 'public', 'platform-tools',
                     'adb'))
 
@@ -683,8 +683,8 @@ https://android.googlesource.com/platform/external/elfutils/
 
 The test driver must be built with profiling=1, make sure you've done:
 export GYP_DEFINES="profiling=1 $GYP_DEFINES"
-update-webkit --chromium-android
-build-webkit --chromium-android
+update-webkit --monyhar-android
+build-webkit --monyhar-android
 
 Googlers should read:
 http://goto.google.com/cr-android-perf-howto

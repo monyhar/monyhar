@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_manager.settings;
+package org.monyhar.chrome.browser.password_manager.settings;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -17,11 +17,11 @@ import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.FragmentManager;
 
-import org.chromium.base.ContentUriUtils;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.StrictModeContext;
-import org.chromium.chrome.R;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.ContentUriUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.chrome.R;
+import org.monyhar.ui.widget.Toast;
 
 import java.io.File;
 import java.lang.annotation.Retention;

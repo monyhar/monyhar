@@ -198,32 +198,32 @@ Parsing url: http://example.com/foo/bar/////baz.html
   fragment: undefined
   folderPathComponents: /foo/bar////
   lastPathComponent: baz.html
-Splitting url: http://www.chromium.org
-  URL: http://www.chromium.org
+Splitting url: http://www.monyhar.org
+  URL: http://www.monyhar.org
   Line: undefined
   Column: undefined
-Splitting url: http://www.chromium.org:8000
-  URL: http://www.chromium.org:8000
+Splitting url: http://www.monyhar.org:8000
+  URL: http://www.monyhar.org:8000
   Line: undefined
   Column: undefined
-Splitting url: http://www.chromium.org:8000/
-  URL: http://www.chromium.org:8000/
+Splitting url: http://www.monyhar.org:8000/
+  URL: http://www.monyhar.org:8000/
   Line: undefined
   Column: undefined
-Splitting url: http://www.chromium.org:8000/foo.js:10
-  URL: http://www.chromium.org:8000/foo.js
+Splitting url: http://www.monyhar.org:8000/foo.js:10
+  URL: http://www.monyhar.org:8000/foo.js
   Line: 9
   Column: undefined
-Splitting url: http://www.chromium.org:8000/foo.js:10:20
-  URL: http://www.chromium.org:8000/foo.js
+Splitting url: http://www.monyhar.org:8000/foo.js:10:20
+  URL: http://www.monyhar.org:8000/foo.js
   Line: 9
   Column: 19
-Splitting url: http://www.chromium.org/foo.js:10
-  URL: http://www.chromium.org/foo.js
+Splitting url: http://www.monyhar.org/foo.js:10
+  URL: http://www.monyhar.org/foo.js
   Line: 9
   Column: undefined
-Splitting url: http://www.chromium.org/foo.js:10:20
-  URL: http://www.chromium.org/foo.js
+Splitting url: http://www.monyhar.org/foo.js:10:20
+  URL: http://www.monyhar.org/foo.js
   Line: 9
   Column: 19
 URL: http://example.com/foo.html

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.merchant_viewer;
+package org.monyhar.chrome.browser.merchant_viewer;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -17,23 +17,23 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 
-import org.chromium.base.Callback;
-import org.chromium.base.test.params.ParameterAnnotations;
-import org.chromium.base.test.params.ParameterAnnotations.ClassParameter;
-import org.chromium.base.test.params.ParameterSet;
-import org.chromium.base.test.params.ParameterizedRunner;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.merchant_viewer.proto.MerchantTrustSignalsOuterClass.MerchantTrustSignals;
-import org.chromium.chrome.test.ChromeJUnit4RunnerDelegate;
-import org.chromium.chrome.test.util.ChromeRenderTestRule;
-import org.chromium.components.messages.MessageBannerView;
-import org.chromium.components.messages.MessageBannerViewBinder;
-import org.chromium.components.messages.R;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
-import org.chromium.ui.test.util.DummyUiActivityTestCase;
-import org.chromium.ui.test.util.NightModeTestUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.base.test.params.ParameterAnnotations;
+import org.monyhar.base.test.params.ParameterAnnotations.ClassParameter;
+import org.monyhar.base.test.params.ParameterSet;
+import org.monyhar.base.test.params.ParameterizedRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.merchant_viewer.proto.MerchantTrustSignalsOuterClass.MerchantTrustSignals;
+import org.monyhar.chrome.test.ChromeJUnit4RunnerDelegate;
+import org.monyhar.chrome.test.util.ChromeRenderTestRule;
+import org.monyhar.components.messages.MessageBannerView;
+import org.monyhar.components.messages.MessageBannerViewBinder;
+import org.monyhar.components.messages.R;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.ui.test.util.DummyUiActivityTestCase;
+import org.monyhar.ui.test.util.NightModeTestUtils;
 
 import java.io.IOException;
 import java.util.List;

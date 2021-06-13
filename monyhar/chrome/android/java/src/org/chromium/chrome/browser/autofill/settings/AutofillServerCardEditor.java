@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill.settings;
+package org.monyhar.chrome.browser.autofill.settings;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,13 +12,13 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.TextView;
 
-import org.chromium.base.annotations.UsedByReflection;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ChromeStringConstants;
-import org.chromium.chrome.browser.autofill.PersonalDataManager;
-import org.chromium.chrome.browser.autofill.PersonalDataManager.AutofillProfile;
-import org.chromium.chrome.browser.customtabs.CustomTabActivity;
-import org.chromium.chrome.browser.payments.SettingsAutofillAndPaymentsObserver;
+import org.monyhar.base.annotations.UsedByReflection;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ChromeStringConstants;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager.AutofillProfile;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivity;
+import org.monyhar.chrome.browser.payments.SettingsAutofillAndPaymentsObserver;
 
 /**
  * Server credit card settings.

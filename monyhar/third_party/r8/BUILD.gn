@@ -7,7 +7,7 @@ import("//build/config/android/rules.gni")
 # The output jar for this target is copied and checked-in to minimize the number
 # of edges in the build graph. This is a class that rarely changes.
 java_library("custom_d8_java") {
-  sources = [ "java/src/org/chromium/build/CustomD8.java" ]
+  sources = [ "java/src/org/monyhar/build/CustomD8.java" ]
 
   # Avoid using java_prebuilt() to ensure all uses go through the checked-in
   # version.

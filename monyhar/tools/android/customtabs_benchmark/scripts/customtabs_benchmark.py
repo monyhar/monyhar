@@ -27,7 +27,7 @@ from devil.android.perf import cache_control
 from devil.android.sdk import intent
 
 sys.path.append(os.path.join(_SRC_PATH, 'build', 'android'))
-import devil_chromium
+import devil_monyhar
 
 import chrome_setup
 
@@ -35,7 +35,7 @@ import chrome_setup
 # Local build of Chrome (not Chromium).
 _CHROME_PACKAGE = 'com.google.android.apps.chrome'
 _COMMAND_LINE_FILE = 'chrome-command-line'
-_TEST_APP_PACKAGE_NAME = 'org.chromium.customtabs.test'
+_TEST_APP_PACKAGE_NAME = 'org.monyhar.customtabs.test'
 _INVALID_VALUE = -1
 
 
@@ -88,7 +88,7 @@ def RunOnce(device, url, speculated_url, parallel_url, warmup,
     launch_intent = intent.Intent(
         action='android.intent.action.MAIN',
         package=_TEST_APP_PACKAGE_NAME,
-        activity='org.chromium.customtabs.test.MainActivity',
+        activity='org.monyhar.customtabs.test.MainActivity',
         extras={'url': str(url),
                 'speculated_url': str(speculated_url),
                 'parallel_url': str (parallel_url),
@@ -289,7 +289,7 @@ def _CreateOptionParser():
 def main():
   parser = _CreateOptionParser()
   options, _ = parser.parse_args()
-  devil_chromium.Initialize()
+  devil_monyhar.Initialize()
   devices = device_utils.DeviceUtils.HealthyDevices()
   device = devices[0]
   if len(devices) != 1 and options.device is None:

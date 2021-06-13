@@ -2,24 +2,24 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.gsa;
+package org.monyhar.chrome.browser.gsa;
 
 import android.text.TextUtils;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
-import org.chromium.base.Log;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabSelectionType;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorTabModelObserver;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorTabObserver;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.url.GURL;
+import org.monyhar.base.Callback;
+import org.monyhar.base.Log;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabSelectionType;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorTabModelObserver;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorTabObserver;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.url.GURL;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 

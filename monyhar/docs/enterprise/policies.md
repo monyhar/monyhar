@@ -23,7 +23,7 @@ to propagate policies for all users (including non-managed ones):
 
 **Linux** Policies can be set via files in specific directories:
 
-The base directory is `/etc/chromium/policies` for Chromium builds,
+The base directory is `/etc/monyhar/policies` for Chromium builds,
  `/etc/opt/chrome/policies/` for official Chrome builds.
 The base directory contains two subdirectories: `managed/` for mandatory
 policies and `recommended/` for recommended policies. All files inside these
@@ -55,8 +55,8 @@ the whole device.
 
 ## Device policies
 
-Device policies are defined in the [chrome_device_policy proto file](https://cs.chromium.org/chromium/src/components/policy/proto/chrome_device_policy.proto).
-They are also mentioned in the [policy templates file](https://cs.chromium.org/chromium/src/components/policy/resources/policy_templates.json)
+Device policies are defined in the [chrome_device_policy proto file](https://cs.monyhar.org/monyhar/src/components/policy/proto/chrome_device_policy.proto).
+They are also mentioned in the [policy templates file](https://cs.monyhar.org/monyhar/src/components/policy/resources/policy_templates.json)
 with `'device_only': True` for documentation purposes.
 
 Device policies are applied to all users on the device (and even if no user
@@ -65,12 +65,12 @@ which users can sign in on the device.
 
 Implementation-wise, these policies can have complex structure, and are
 usually accessed via
-[DeviceSettingsProvider](https://cs.chromium.org/chromium/src/chrome/browser/ash/settings/device_settings_provider.h)
-or its wrapper [CrosSettings](https://cs.chromium.org/chromium/src/chrome/browser/ash/settings/cros_settings.h).
+[DeviceSettingsProvider](https://cs.monyhar.org/monyhar/src/chrome/browser/ash/settings/device_settings_provider.h)
+or its wrapper [CrosSettings](https://cs.monyhar.org/monyhar/src/chrome/browser/ash/settings/cros_settings.h).
 
 ## User policies
 
-User policies are defined in the [policy templates file](https://cs.chromium.org/chromium/src/components/policy/resources/policy_templates.json);
+User policies are defined in the [policy templates file](https://cs.monyhar.org/monyhar/src/components/policy/resources/policy_templates.json);
 only entries without `'device_only': True` are user policies.
 
 User policies are bound to user accounts, so a personal account on
@@ -91,7 +91,7 @@ users.
 
 ## Extension policies
 
-Organization admins can [configure particular extensions](https://www.chromium.org/administrators/configuring-policy-for-extensions)
+Organization admins can [configure particular extensions](https://www.monyhar.org/administrators/configuring-policy-for-extensions)
 for the user. Such extensions have to define the schema of the configuration
 in their manifest.
 
@@ -107,4 +107,4 @@ policies (e.g. background wallpapers or printer configuration).
 
 ## Adding new policies
 
-See [adding new policies HowTo](https://www.chromium.org/developers/how-tos/enterprise/adding-new-policies).
+See [adding new policies HowTo](https://www.monyhar.org/developers/how-tos/enterprise/adding-new-policies).

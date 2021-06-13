@@ -82,7 +82,7 @@ class DesktopMemoryPageSet(story_module.StorySet):
       self.AddStory(DesktopMemoryPage(url, self))
 
 
-@benchmark.Info(emails=['etienneb@chromium.org'])
+@benchmark.Info(emails=['etienneb@monyhar.org'])
 class LongRunningMemoryBenchmarkSitesDesktop(perf_benchmark.PerfBenchmark):
   """Measure memory usage on popular sites.
 

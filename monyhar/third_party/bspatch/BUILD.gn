@@ -8,8 +8,8 @@ source_set("bspatch") {
     "mbspatch.h",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 
   deps = [ "//third_party/lzma_sdk" ]
 }

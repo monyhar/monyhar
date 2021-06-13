@@ -47,7 +47,7 @@ IDR_MAINFRAME_4         ICON       "theme\\google_chrome\\win\\placeholder.ico"
 // identify it.
 IDR_SXS                 ICON       "theme\\google_chrome\\win\\chrome_sxs.ico"
 #else
-IDR_MAINFRAME           ICON       "theme\\chromium\\win\\chromium.ico"
+IDR_MAINFRAME           ICON       "theme\\monyhar\\win\\monyhar.ico"
 #endif
 
 // Start a naming scheme to keep icons in order. A leading X is used to keep
@@ -62,8 +62,8 @@ IDR_X003_INCOGNITO      ICON       "theme\\google_chrome\\win\\incognito.ico"
 IDR_X004_DEV            ICON       "theme\\google_chrome\\win\\chrome_dev.ico"
 IDR_X005_BETA           ICON       "theme\\google_chrome\\win\\chrome_beta.ico"
 #else
-IDR_X001_APP_LIST       ICON       "theme\\chromium\\win\\app_list.ico"
-IDR_X003_INCOGNITO      ICON       "theme\\chromium\\win\\incognito.ico"
+IDR_X001_APP_LIST       ICON       "theme\\monyhar\\win\\app_list.ico"
+IDR_X003_INCOGNITO      ICON       "theme\\monyhar\\win\\incognito.ico"
 #endif
 
 

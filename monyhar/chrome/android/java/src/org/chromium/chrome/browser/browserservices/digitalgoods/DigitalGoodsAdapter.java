@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.digitalgoods;
+package org.monyhar.chrome.browser.browserservices.digitalgoods;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -10,12 +10,12 @@ import android.os.Bundle;
 import androidx.browser.trusted.TrustedWebActivityCallback;
 import androidx.browser.trusted.TrustedWebActivityServiceConnection;
 
-import org.chromium.base.Log;
-import org.chromium.chrome.browser.browserservices.TrustedWebActivityClient;
-import org.chromium.components.embedder_support.util.Origin;
-import org.chromium.payments.mojom.DigitalGoods.AcknowledgeResponse;
-import org.chromium.payments.mojom.DigitalGoods.GetDetailsResponse;
-import org.chromium.payments.mojom.DigitalGoods.ListPurchasesResponse;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.browser.browserservices.TrustedWebActivityClient;
+import org.monyhar.components.embedder_support.util.Origin;
+import org.monyhar.payments.mojom.DigitalGoods.AcknowledgeResponse;
+import org.monyhar.payments.mojom.DigitalGoods.GetDetailsResponse;
+import org.monyhar.payments.mojom.DigitalGoods.ListPurchasesResponse;
 
 /**
  * This class uses the {@link DigitalGoodsConverter} to convert data types between mojo types and

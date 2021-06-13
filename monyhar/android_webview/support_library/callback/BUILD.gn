@@ -7,9 +7,9 @@ import("//build/config/android/rules.gni")
 
 android_library("callback_java") {
   sources = [
-    "java/src/org/chromium/support_lib_callback_glue/SupportLibSafeBrowsingResponse.java",
-    "java/src/org/chromium/support_lib_callback_glue/SupportLibWebResourceError.java",
-    "java/src/org/chromium/support_lib_callback_glue/SupportLibWebViewContentsClientAdapter.java",
+    "java/src/org/monyhar/support_lib_callback_glue/SupportLibSafeBrowsingResponse.java",
+    "java/src/org/monyhar/support_lib_callback_glue/SupportLibWebResourceError.java",
+    "java/src/org/monyhar/support_lib_callback_glue/SupportLibWebViewContentsClientAdapter.java",
   ]
 
   deps = [

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.browser;
+package org.monyhar.content_public.browser;
 
 import android.graphics.Rect;
 import android.os.Handler;
@@ -12,11 +12,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.ui.OverscrollRefreshHandler;
-import org.chromium.ui.base.EventForwarder;
-import org.chromium.ui.base.ViewAndroidDelegate;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.url.GURL;
+import org.monyhar.ui.OverscrollRefreshHandler;
+import org.monyhar.ui.base.EventForwarder;
+import org.monyhar.ui.base.ViewAndroidDelegate;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.url.GURL;
 
 import java.util.List;
 
@@ -354,7 +354,7 @@ public interface WebContents extends Parcelable {
 
     /**
      * Adds a log message to dev tools console. |level| must be a value of
-     * org.chromium.content_public.common.ConsoleMessageLevel.
+     * org.monyhar.content_public.common.ConsoleMessageLevel.
      */
     void addMessageToDevToolsConsole(int level, String message);
 

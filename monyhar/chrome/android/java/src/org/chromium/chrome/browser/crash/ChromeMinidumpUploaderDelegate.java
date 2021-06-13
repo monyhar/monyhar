@@ -1,7 +1,7 @@
 // Copyright 2017 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.chrome.browser.crash;
+package org.monyhar.chrome.browser.crash;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -9,10 +9,10 @@ import android.net.ConnectivityManager;
 import android.os.Build;
 import android.os.PersistableBundle;
 
-import org.chromium.chrome.browser.privacy.settings.PrivacyPreferencesManagerImpl;
-import org.chromium.components.minidump_uploader.MinidumpUploaderDelegate;
-import org.chromium.components.minidump_uploader.util.CrashReportingPermissionManager;
-import org.chromium.components.minidump_uploader.util.NetworkPermissionUtil;
+import org.monyhar.chrome.browser.privacy.settings.PrivacyPreferencesManagerImpl;
+import org.monyhar.components.minidump_uploader.MinidumpUploaderDelegate;
+import org.monyhar.components.minidump_uploader.util.CrashReportingPermissionManager;
+import org.monyhar.components.minidump_uploader.util.NetworkPermissionUtil;
 
 import java.io.File;
 

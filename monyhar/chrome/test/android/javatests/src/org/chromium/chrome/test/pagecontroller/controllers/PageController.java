@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.pagecontroller.controllers;
+package org.monyhar.chrome.test.pagecontroller.controllers;
 
 import android.os.RemoteException;
 
-import org.chromium.chrome.test.pagecontroller.utils.UiLocationException;
+import org.monyhar.chrome.test.pagecontroller.utils.UiLocationException;
 
 /**
  * Base class for Page Controllers.

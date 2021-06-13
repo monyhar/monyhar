@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.webapk.lib.client;
+package org.monyhar.components.webapk.lib.client;
 
 import static java.nio.ByteOrder.LITTLE_ENDIAN;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

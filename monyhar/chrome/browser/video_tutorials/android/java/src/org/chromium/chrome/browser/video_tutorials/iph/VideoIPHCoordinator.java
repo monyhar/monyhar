@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.video_tutorials.iph;
+package org.monyhar.chrome.browser.video_tutorials.iph;
 
 import android.view.ViewStub;
 
-import org.chromium.chrome.browser.video_tutorials.Tutorial;
+import org.monyhar.chrome.browser.video_tutorials.Tutorial;
 
 /**
  * Creates and shows a video tutorial IPH. Requires a {@link ViewStub} to be passed which will

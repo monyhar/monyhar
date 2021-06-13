@@ -28,7 +28,7 @@ third_party_dir = os.path.normpath(
                  'third_party'))
 templates_dir = module_path
 
-# jinja2 is in chromium's third_party directory.
+# jinja2 is in monyhar's third_party directory.
 # Insert at 1 so at front to override system libraries, and
 # after path[0] == invoking script dir
 sys.path.insert(1, third_party_dir)

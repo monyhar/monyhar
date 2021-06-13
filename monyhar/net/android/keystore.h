@@ -22,11 +22,11 @@ namespace net {
 namespace android {
 
 // Define a list of constants describing private key types. The
-// values are shared with Java through org.chromium.net.PrivateKeyType.
+// values are shared with Java through org.monyhar.net.PrivateKeyType.
 // Example: PRIVATE_KEY_TYPE_RSA.
 //
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.net
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.net
 enum PrivateKeyType {
   PRIVATE_KEY_TYPE_RSA = 0,
   // Obsolete: PRIVATE_KEY_TYPE_DSA = 1,

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.infobars;
+package org.monyhar.components.infobars;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -18,7 +18,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import org.chromium.ui.widget.OptimizedFrameLayout;
+import org.monyhar.ui.widget.OptimizedFrameLayout;
 
 import java.util.ArrayList;
 

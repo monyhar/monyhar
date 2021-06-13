@@ -96,7 +96,7 @@ Do not attempt to write your own canonicalizer.
 
     * Do not display the scheme if it will always be https://. If the scheme is not https://, prefer to show a security indicator icon (dangerous triangle icon + "Not Secure" string on http://) rather than the scheme itself.
 
-    * In Chrome, we often remove subdomains "www" and “m” as a special case to simplify the origin, except when they are part of the registrable domain. You can use the [`kFormatUrlOmitTrivialSubdomains`](https://cs.chromium.org/chromium/src/components/url_formatter/url_formatter.h?q=kFormatUrlOmitTrivial&sq=package:chromium&g=0&l=63) flag for `url_formatter::FormatURL` ([example usage](https://cs.chromium.org/chromium/src/components/history/core/browser/history_backend.cc?type=cs&q=OmitTrivialSubdomains&sq=package:chromium&g=0&l=127)).
+    * In Chrome, we often remove subdomains "www" and “m” as a special case to simplify the origin, except when they are part of the registrable domain. You can use the [`kFormatUrlOmitTrivialSubdomains`](https://cs.monyhar.org/monyhar/src/components/url_formatter/url_formatter.h?q=kFormatUrlOmitTrivial&sq=package:monyhar&g=0&l=63) flag for `url_formatter::FormatURL` ([example usage](https://cs.monyhar.org/monyhar/src/components/history/core/browser/history_backend.cc?type=cs&q=OmitTrivialSubdomains&sq=package:monyhar&g=0&l=127)).
 
     * Omit default ports (80 for http, 443 for https).
 
@@ -104,7 +104,7 @@ Do not attempt to write your own canonicalizer.
 
 ### Eliding URLs
 
-* When the full hostname cannot be displayed, elide labels starting from the front. (Right-to-Left character support means that the *front* of the string may not appear at the *left*). (Note that Chrome's omnibox behavior on desktop is currently [buggy](https://bugs.chromium.org/p/chromium/issues/detail?id=527638) in this respect.)
+* When the full hostname cannot be displayed, elide labels starting from the front. (Right-to-Left character support means that the *front* of the string may not appear at the *left*). (Note that Chrome's omnibox behavior on desktop is currently [buggy](https://bugs.monyhar.org/p/monyhar/issues/detail?id=527638) in this respect.)
 
 * Ensure that at least the registrable domain can be shown, to avoid showing **...paypal.com** when loading `https://not-really-paypal.com`.
 
@@ -118,7 +118,7 @@ If showing the full URL is deemed necessary, consider highlighting to help the u
 
 ![URL highlighting example](highlighting.png)
 
-(Note that Chrome's omnibox does [not](https://bugs.chromium.org/p/chromium/issues/detail?id=527638#c6) currently do this style of highlighting.)
+(Note that Chrome's omnibox does [not](https://bugs.monyhar.org/p/monyhar/issues/detail?id=527638#c6) currently do this style of highlighting.)
 
 ### URL Length
 
@@ -158,11 +158,11 @@ The primary threat of non-ASCII text in URLs is a [homoglyph attack](https://en.
 
 #### IDN Display Restrictions in Chrome
 
-To mitigate URL spoofing attacks, Chrome follows a set of [rules](https://www.chromium.org/developers/design-documents/idn-in-google-chrome) that determine whether a given International Domain Name is shown in Unicode characters or degrades to show the ASCII [Punycode](https://en.wikipedia.org/wiki/Punycode) string (starting with "xn--"). The Punycode string is not intended to be human-readable: display of Punycode is instead only intended to defeat homoglyph attacks.
+To mitigate URL spoofing attacks, Chrome follows a set of [rules](https://www.monyhar.org/developers/design-documents/idn-in-google-chrome) that determine whether a given International Domain Name is shown in Unicode characters or degrades to show the ASCII [Punycode](https://en.wikipedia.org/wiki/Punycode) string (starting with "xn--"). The Punycode string is not intended to be human-readable: display of Punycode is instead only intended to defeat homoglyph attacks.
 
-Chrome’s [`FormatURLForSecurityDisplay`](https://cs.chromium.org/chromium/src/components/url_formatter/elide_url.h?q=FormatURLForS&sq=package:chromium&l=108) function encapsulates this and other behaviors.
+Chrome’s [`FormatURLForSecurityDisplay`](https://cs.monyhar.org/monyhar/src/components/url_formatter/elide_url.h?q=FormatURLForS&sq=package:monyhar&l=108) function encapsulates this and other behaviors.
 
-* Follow Chrome’s rules for [IDN Display](https://www.chromium.org/developers/design-documents/idn-in-google-chrome) to avoid homograph attacks.
+* Follow Chrome’s rules for [IDN Display](https://www.monyhar.org/developers/design-documents/idn-in-google-chrome) to avoid homograph attacks.
 
 * For the benefit of technical users, *consider* displaying an indicator when a URL contains non-ASCII characters. To date, Chrome has not implemented such an indicator. By way of comparison, Internet Explorer shows an icon in the address bar which opens a bubble that provides more information. An international URL indicator generally *should not* be positioned as a warning, but should allow the user to get more information about the content of the URL. Security-savvy users may find this UI useful in detecting spoofs and escalating reports to more effective security mechanisms (e.g., SafeBrowsing).
 
@@ -185,10 +185,10 @@ An attacker may abuse whitespace and line-wrapping characters in order to push t
 
 * Unicode line terminators (e.g., U+2028, U+2029, and U+0085).
 
-* Unicode explicit directional formatting commands (e.g., U+200E--U+200F, U+202A--U+202E, see the full [list](https://unicode.org/reports/tr9/#Directional_Formatting_Characters) and [`ShouldUnescapeCodePoint`](https://cs.chromium.org/chromium/src/net/base/escape.cc?l=172&rcl=dc22553340d5c4dda162f17a07d706748be44042)).
+* Unicode explicit directional formatting commands (e.g., U+200E--U+200F, U+202A--U+202E, see the full [list](https://unicode.org/reports/tr9/#Directional_Formatting_Characters) and [`ShouldUnescapeCodePoint`](https://cs.monyhar.org/monyhar/src/net/base/escape.cc?l=172&rcl=dc22553340d5c4dda162f17a07d706748be44042)).
 
 * Characters that look like security UI (e.g., U+1F512 🔒).
-    - Emoji may be confusing because users are not accustomed to seeing graphics in URL displays and may be misled into believing that they represent claims on the browser’s part (e.g., the Lock emoji). See issue [746350](https://bugs.chromium.org/p/chromium/issues/detail?id=746350).
+    - Emoji may be confusing because users are not accustomed to seeing graphics in URL displays and may be misled into believing that they represent claims on the browser’s part (e.g., the Lock emoji). See issue [746350](https://bugs.monyhar.org/p/monyhar/issues/detail?id=746350).
 
 * Use of [Combining characters](https://blog.emojipedia.org/fun-emoji-hacks/) to create look-alikes.
 
@@ -202,7 +202,7 @@ A URL may contain an IPv4 or IPv6 literal in the host component instead of a ful
 
 #### IPv4
 
-The canonical representation of an IPv4 literal is [dotted-decimal](https://en.wikipedia.org/wiki/Dot-decimal_notation) (aka "dotted quad") notation, but many surfaces will accept a 32-bit decimal integer (or even [octal](https://bugs.chromium.org/p/chromium/issues/detail?id=787361) or hex) IP representation:
+The canonical representation of an IPv4 literal is [dotted-decimal](https://en.wikipedia.org/wiki/Dot-decimal_notation) (aka "dotted quad") notation, but many surfaces will accept a 32-bit decimal integer (or even [octal](https://bugs.monyhar.org/p/monyhar/issues/detail?id=787361) or hex) IP representation:
 
 ![URL with a decimal IP literal hostname](decimal_ip.png)
 ![URL with a hex IP literal hostname](hex_ip.png)
@@ -247,7 +247,7 @@ In Chrome, file:// schemed URIs do not contain a host component; be sure that yo
 
 **view-source:** is a special URL scheme which wraps another scheme (e.g., `view-source:https://example.com`) and displays the document in a special Blink "view-source" mode. For security reasons, web content cannot navigate directly to view-source URLs.
 
-In Chrome, a **virtual URL** is roughly the URL displayed in the omnibox even though the real url is something different. An example is `chrome://newtab/` -- under the hood it is either a local version or a remote one but that shouldn’t matter to the user who sees it as the New Tab Page. URL spoofs can easily result if the URL display surface fails to update the URL upon a navigation to a resource which is not intended to be rendered under the virtual URL (e.g., [750298](https://bugs.chromium.org/p/chromium/issues/detail?id=750298)).
+In Chrome, a **virtual URL** is roughly the URL displayed in the omnibox even though the real url is something different. An example is `chrome://newtab/` -- under the hood it is either a local version or a remote one but that shouldn’t matter to the user who sees it as the New Tab Page. URL spoofs can easily result if the URL display surface fails to update the URL upon a navigation to a resource which is not intended to be rendered under the virtual URL (e.g., [750298](https://bugs.monyhar.org/p/monyhar/issues/detail?id=750298)).
 
 ### %-Escaping
 
@@ -255,7 +255,7 @@ The [URL Standard](https://url.spec.whatwg.org/#url-rendering) suggests that *th
 
 This is generally a user-experience feature (some sites strive to use human-readable URLs and %-escaped characters are not human readable) but could lead to spoofing attacks if performed incorrectly.
 
-Chrome’s [`FormatUrl`](https://cs.chromium.org/chromium/src/components/url_formatter/url_formatter.h?l=100&rcl=1deab0dd75a1659e44b8159d60de9cf26dc3dbf0) function takes an [`UnescapeRule`](https://cs.chromium.org/chromium/src/net/base/escape.h?l=64&rcl=ecba19472b9290092745e9846edd0d6fd8dcc48b) parameter that determines what components should be decoded for display. As of Chrome 65, we unescape path, query, and fragment components for display.
+Chrome’s [`FormatUrl`](https://cs.monyhar.org/monyhar/src/components/url_formatter/url_formatter.h?l=100&rcl=1deab0dd75a1659e44b8159d60de9cf26dc3dbf0) function takes an [`UnescapeRule`](https://cs.monyhar.org/monyhar/src/net/base/escape.h?l=64&rcl=ecba19472b9290092745e9846edd0d6fd8dcc48b) parameter that determines what components should be decoded for display. As of Chrome 65, we unescape path, query, and fragment components for display.
 
 Space and other invisible characters should be displayed in encoded form.
 
@@ -287,7 +287,7 @@ The **registrable domain** is the public suffix plus one additional label. Somet
 
 It should be noted that *many* displays of URLs in the web platform occur on surfaces [not deemed securable](https://docs.google.com/document/d/11-SXwzCGBlk8q1cNtb7peZjb2UjRPrKSFhOfZhTOz24/edit#).
 
-Any URL displayed below the browser’s "[line of death](https://textslashplain.com/2017/01/14/the-line-of-death/)" is usually *inherently* spoofable (insofar as web content can usually fake the entire UI). In particular, this means that UI helpers like the [Status Bubble](https://dev.chromium.org/user-experience/status-bubble#TOC-Lack-of-Security) are inherently untrustworthy.
+Any URL displayed below the browser’s "[line of death](https://textslashplain.com/2017/01/14/the-line-of-death/)" is usually *inherently* spoofable (insofar as web content can usually fake the entire UI). In particular, this means that UI helpers like the [Status Bubble](https://dev.monyhar.org/user-experience/status-bubble#TOC-Lack-of-Security) are inherently untrustworthy.
 
 ## Out-of-Scope for this Document
 
@@ -327,7 +327,7 @@ This is, generally, outside of the client threat-model, although in some cases (
 
 ## Testing URL Displays
 
-Chromium's open-source [Trickuri](https://github.com/chromium/trickuri) tool is a Go-based proxy server designed to enable manual testing of URL display behavior.
+Chromium's open-source [Trickuri](https://github.com/monyhar/trickuri) tool is a Go-based proxy server designed to enable manual testing of URL display behavior.
 
 ## Further Reading
 
@@ -337,6 +337,6 @@ Chromium's open-source [Trickuri](https://github.com/chromium/trickuri) tool is 
 
 * [Rethinking URL bars](https://medium.com/@owencm/rethinking-url-bars-as-primary-browser-ui-e2118339d2c0)
 
-* [Chromium’s URL Formatter Component (C++)](https://cs.chromium.org/chromium/src/components/url_formatter/url_formatter.cc)
+* [Chromium’s URL Formatter Component (C++)](https://cs.monyhar.org/monyhar/src/components/url_formatter/url_formatter.cc)
 
 * [URL interop issues across specs](https://github.com/bagder/docs/blob/master/URL-interop.md)

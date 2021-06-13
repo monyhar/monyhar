@@ -5,13 +5,13 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+    <org.monyhar.components.browser_ui.settings.ChromeSwitchPreference
         android:key="image_descriptions_switch"
         android:persistent="false"
         android:title="@string/image_descriptions_settings_toggle_title"
         android:summary="@string/image_descriptions_settings_toggle_content" />
 
-    <org.chromium.chrome.browser.image_descriptions.RadioButtonGroupAccessibilityPreference
+    <org.monyhar.chrome.browser.image_descriptions.RadioButtonGroupAccessibilityPreference
         android:key="image_descriptions_data_policy"
         android:persistent="false" />
 

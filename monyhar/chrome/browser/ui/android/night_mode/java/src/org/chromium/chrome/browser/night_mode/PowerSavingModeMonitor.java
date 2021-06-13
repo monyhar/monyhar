@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.night_mode;
+package org.monyhar.chrome.browser.night_mode;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -12,10 +12,10 @@ import android.os.PowerManager;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ApplicationState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.ObserverList;
+import org.monyhar.base.ApplicationState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.ObserverList;
 
 /**
  * Observes and keeps a record of whether the system power saving mode is on.

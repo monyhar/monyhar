@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.invalidation;
+package org.monyhar.chrome.browser.invalidation;
 
 import android.text.format.DateUtils;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApplicationState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ThreadUtils;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.ntp.ForeignSessionHelper;
-import org.chromium.chrome.browser.profiles.Profile;
+import org.monyhar.base.ApplicationState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.ntp.ForeignSessionHelper;
+import org.monyhar.chrome.browser.profiles.Profile;
 
 /**
  * Class responsible for managing registration for invalidations for noisy sync

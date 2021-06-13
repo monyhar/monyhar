@@ -11,10 +11,10 @@ android_library("java") {
     "//chrome/android:chrome_test_java",
   ]
   sources = [
-    "android/java/src/org/chromium/chrome/browser/tabmodel/AsyncTabParamsManagerFactory.java",
-    "android/java/src/org/chromium/chrome/browser/tabmodel/AsyncTabParamsManagerImpl.java",
-    "android/java/src/org/chromium/chrome/browser/tabmodel/TabWindowManagerFactory.java",
-    "android/java/src/org/chromium/chrome/browser/tabmodel/TabWindowManagerImpl.java",
+    "android/java/src/org/monyhar/chrome/browser/tabmodel/AsyncTabParamsManagerFactory.java",
+    "android/java/src/org/monyhar/chrome/browser/tabmodel/AsyncTabParamsManagerImpl.java",
+    "android/java/src/org/monyhar/chrome/browser/tabmodel/TabWindowManagerFactory.java",
+    "android/java/src/org/monyhar/chrome/browser/tabmodel/TabWindowManagerImpl.java",
   ]
   deps = [
     "//base:base_java",

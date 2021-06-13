@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.gsa;
+package org.monyhar.chrome.browser.gsa;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -15,11 +15,11 @@ import android.os.Process;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.SysUtils;
-import org.chromium.base.metrics.RecordHistogram;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.SysUtils;
+import org.monyhar.base.metrics.RecordHistogram;
 
 /**
  * Listens to te account change notifications from GSA.

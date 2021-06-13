@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webapk.lib.common;
+package org.monyhar.webapk.lib.common;
 
 import android.os.Bundle;
 

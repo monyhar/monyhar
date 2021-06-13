@@ -1,5 +1,5 @@
 From e4b8790a56487279b084fb59a2186a8bfd24b838 Mon Sep 17 00:00:00 2001
-From: Michael Crouse <mcrouse@chromium.org>
+From: Michael Crouse <mcrouse@monyhar.org>
 Date: Thu, 7 Jan 2021 08:20:06 -0800
 Subject: [PATCH] use SysNSStringToUTF8
 

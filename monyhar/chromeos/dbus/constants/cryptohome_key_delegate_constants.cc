@@ -7,8 +7,8 @@
 namespace cryptohome {
 
 const char kCryptohomeKeyDelegateServiceName[] =
-    "org.chromium.CryptohomeKeyDelegate";
+    "org.monyhar.CryptohomeKeyDelegate";
 const char kCryptohomeKeyDelegateServicePath[] =
-    "/org/chromium/CryptohomeKeyDelegate";
+    "/org/monyhar/CryptohomeKeyDelegate";
 
 }  // namespace cryptohome

@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox;
+package org.monyhar.chrome.browser.omnibox;
 
-import org.chromium.ui.base.PageTransition;
+import org.monyhar.ui.base.PageTransition;
 
 /**
  * Delegate interface that allows implementers to override the default URL loading behavior of the

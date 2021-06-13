@@ -3,7 +3,7 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
 
-<org.chromium.chrome.browser.datareduction.DataReductionMainMenuItem
+<org.monyhar.chrome.browser.datareduction.DataReductionMainMenuItem
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -26,7 +26,7 @@
         style="@style/AppMenuItem" >
 
         <!-- ContentDescription is set in Java code. -->
-        <org.chromium.ui.widget.ChromeImageView
+        <org.monyhar.ui.widget.ChromeImageView
             tools:ignore="ContentDescription"
             android:id="@+id/icon"
             android:src="@drawable/preview_pin_round"
@@ -57,4 +57,4 @@
 
     </FrameLayout>
 
-</org.chromium.chrome.browser.datareduction.DataReductionMainMenuItem>
+</org.monyhar.chrome.browser.datareduction.DataReductionMainMenuItem>

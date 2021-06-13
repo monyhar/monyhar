@@ -10,7 +10,7 @@
 //   --enable-blink-features=MojoJS,MojoJSTest
 
 async function loadChromiumResources() {
-  await import('/resources/chromium/mock-imagecapture.js');
+  await import('/resources/monyhar/mock-imagecapture.js');
 }
 
 async function initialize_image_capture_tests() {

@@ -2,25 +2,25 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.offlinepages.downloads;
+package org.monyhar.chrome.browser.offlinepages.downloads;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.download.DownloadInfo;
-import org.chromium.chrome.browser.download.DownloadManagerService;
-import org.chromium.chrome.browser.download.DownloadNotifier;
-import org.chromium.chrome.browser.download.items.OfflineContentAggregatorFactory;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.components.offline_items_collection.FailState;
-import org.chromium.components.offline_items_collection.LegacyHelpers;
-import org.chromium.components.offline_items_collection.OfflineContentProvider;
-import org.chromium.components.offline_items_collection.PendingState;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.download.DownloadInfo;
+import org.monyhar.chrome.browser.download.DownloadManagerService;
+import org.monyhar.chrome.browser.download.DownloadNotifier;
+import org.monyhar.chrome.browser.download.items.OfflineContentAggregatorFactory;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.components.offline_items_collection.FailState;
+import org.monyhar.components.offline_items_collection.LegacyHelpers;
+import org.monyhar.components.offline_items_collection.OfflineContentProvider;
+import org.monyhar.components.offline_items_collection.PendingState;
+import org.monyhar.ui.widget.Toast;
 
 /**
  * Class for dispatching offline page/request related notifications to the
- * {org.chromium.chrome.browser.download.DownloadNotifier}.
+ * {org.monyhar.chrome.browser.download.DownloadNotifier}.
  */
 public class OfflinePageNotificationBridge {
     /**

@@ -38,7 +38,7 @@ from telemetry.testing import fakes
 from telemetry.testing import run_browser_tests
 
 path_util.AddDirToPathIfNeeded(path_util.GetChromiumSrcDir(), 'tools', 'perf')
-from chrome_telemetry_build import chromium_config
+from chrome_telemetry_build import monyhar_config
 
 # Unittest test cases are defined as public methods, so ignore complaints about
 # having too many.
@@ -120,7 +120,7 @@ class GpuIntegrationTestUnittest(unittest.TestCase):
 
   def _RunGpuIntegrationTests(self, test_name, extra_args=None):
     extra_args = extra_args or []
-    unittest_config = chromium_config.ChromiumConfig(
+    unittest_config = monyhar_config.ChromiumConfig(
         top_level_dir=path_util.GetGpuTestDir(),
         benchmark_dirs=[
             os.path.join(path_util.GetGpuTestDir(), 'unittest_data')
@@ -445,7 +445,7 @@ class GpuIntegrationTestUnittest(unittest.TestCase):
     Args:
       test_args: A _IntegrationTestArgs instance to use.
     """
-    config = chromium_config.ChromiumConfig(
+    config = monyhar_config.ChromiumConfig(
         top_level_dir=path_util.GetGpuTestDir(),
         benchmark_dirs=[
             os.path.join(path_util.GetGpuTestDir(), 'unittest_data')

@@ -230,7 +230,7 @@ TEST(ExternalMountPointsTest, HandlesFileSystemMountType) {
   scoped_refptr<ExternalMountPoints> mount_points =
       ExternalMountPoints::CreateRefCounted();
 
-  const GURL test_origin("http://chromium.org");
+  const GURL test_origin("http://monyhar.org");
   const base::FilePath test_path(FPL("/mount"));
 
   // Should handle External File System.
@@ -260,7 +260,7 @@ TEST(ExternalMountPointsTest, CreateCrackedFileSystemURL) {
       ExternalMountPoints::CreateRefCounted();
 
   const url::Origin kTestOrigin =
-      url::Origin::Create(GURL("http://chromium.org"));
+      url::Origin::Create(GURL("http://monyhar.org"));
 
   mount_points->RegisterFileSystem("c", kFileSystemTypeLocal,
                                    FileSystemMountOption(),
@@ -275,7 +275,7 @@ TEST(ExternalMountPointsTest, CreateCrackedFileSystemURL) {
                                    base::FilePath(DRIVE FPL("/root")));
 
   // Try cracking invalid GURL.
-  FileSystemURL invalid = mount_points->CrackURL(GURL("http://chromium.og"));
+  FileSystemURL invalid = mount_points->CrackURL(GURL("http://monyhar.og"));
   EXPECT_FALSE(invalid.is_valid());
 
   // Try cracking isolated path.
@@ -356,7 +356,7 @@ TEST(ExternalMountPointsTest, CrackVirtualPath) {
   scoped_refptr<ExternalMountPoints> mount_points =
       ExternalMountPoints::CreateRefCounted();
 
-  const GURL kTestOrigin("http://chromium.org");
+  const GURL kTestOrigin("http://monyhar.org");
 
   mount_points->RegisterFileSystem("c", kFileSystemTypeLocal,
                                    FileSystemMountOption(),

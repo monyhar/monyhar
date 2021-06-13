@@ -20,7 +20,7 @@ class ExternalClearKeyTestHelper {
   ExternalClearKeyTestHelper();
   ~ExternalClearKeyTestHelper();
 
-  std::string KeySystemName() { return "org.chromium.externalclearkey"; }
+  std::string KeySystemName() { return "org.monyhar.externalclearkey"; }
   base::FilePath LibraryPath() { return library_path_; }
 
  private:

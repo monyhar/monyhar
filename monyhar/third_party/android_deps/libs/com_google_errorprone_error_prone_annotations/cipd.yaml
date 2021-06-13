@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@2.4.0.cr0
-package: chromium/third_party/android_deps/libs/com_google_errorprone_error_prone_annotations
+package: monyhar/third_party/android_deps/libs/com_google_errorprone_error_prone_annotations
 description: "error-prone annotations"
 data:
 - file: error_prone_annotations-2.4.0.jar

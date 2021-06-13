@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.site_settings;
+package org.monyhar.components.browser_ui.site_settings;
 
-import static org.chromium.components.browser_ui.site_settings.WebsitePreferenceBridge.SITE_WILDCARD;
+import static org.monyhar.components.browser_ui.site_settings.WebsitePreferenceBridge.SITE_WILDCARD;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.MathUtils;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.components.browser_ui.site_settings.WebsitePreferenceBridge.StorageInfoClearedCallback;
-import org.chromium.components.content_settings.ContentSettingValues;
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.components.embedder_support.browser_context.BrowserContextHandle;
+import org.monyhar.base.MathUtils;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.components.browser_ui.site_settings.WebsitePreferenceBridge.StorageInfoClearedCallback;
+import org.monyhar.components.content_settings.ContentSettingValues;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.components.embedder_support.browser_context.BrowserContextHandle;
 
 import java.io.Serializable;
 import java.util.ArrayList;

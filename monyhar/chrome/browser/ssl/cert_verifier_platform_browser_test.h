@@ -24,7 +24,7 @@
 // CertVerifierPlatformBrowserTest is platform-agnostic, and can run in both
 // browser_tests and android_browsertests. However, care must be taken to
 // avoid technical debt, as documented in
-// https://groups.google.com/a/chromium.org/d/msg/chromium-dev/E_wqfkuO3JQ/opIZSZaEFAAJ
+// https://groups.google.com/a/monyhar.org/d/msg/monyhar-dev/E_wqfkuO3JQ/opIZSZaEFAAJ
 class CertVerifierPlatformBrowserTest : public PlatformBrowserTest {
  public:
   CertVerifierPlatformBrowserTest();

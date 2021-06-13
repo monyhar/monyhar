@@ -4,4 +4,4 @@
 # found in the LICENSE file.
 
 echo 'Updating copyrights is no longer necessary.'
-echo 'See https://groups.google.com/a/chromium.org/d/msg/chromium-dev/8p4JKV76kig/OiFYFjuZ6nAJ'
+echo 'See https://groups.google.com/a/monyhar.org/d/msg/monyhar-dev/8p4JKV76kig/OiFYFjuZ6nAJ'

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omaha.inline;
+package org.monyhar.chrome.browser.omaha.inline;
 
 import android.app.Activity;
 import android.content.IntentSender.SendIntentException;
@@ -19,9 +19,9 @@ import com.google.android.play.core.install.model.InstallErrorCode;
 import com.google.android.play.core.install.model.InstallStatus;
 import com.google.android.play.core.install.model.UpdateAvailability;
 
-import org.chromium.base.Log;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.omaha.UpdateStatusProvider.UpdateState;
+import org.monyhar.base.Log;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.omaha.UpdateStatusProvider.UpdateState;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

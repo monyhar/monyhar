@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.services.gcm;
+package org.monyhar.chrome.browser.services.gcm;
 
-import org.chromium.chrome.browser.base.SplitCompatIntentService;
-import org.chromium.chrome.browser.base.SplitCompatUtils;
+import org.monyhar.chrome.browser.base.SplitCompatIntentService;
+import org.monyhar.chrome.browser.base.SplitCompatUtils;
 
 /** See {@link GCMBackgroundServiceImpl}. */
 public class GCMBackgroundService extends SplitCompatIntentService {
@@ -13,7 +13,7 @@ public class GCMBackgroundService extends SplitCompatIntentService {
 
     public GCMBackgroundService() {
         super(SplitCompatUtils.getIdentifierName(
-                      "org.chromium.chrome.browser.services.gcm.GCMBackgroundServiceImpl"),
+                      "org.monyhar.chrome.browser.services.gcm.GCMBackgroundServiceImpl"),
                 TAG);
     }
 }

@@ -30,7 +30,7 @@ js_library("clear_browsing_data_dialog") {
     "../controls:settings_checkbox",
     "../controls:settings_dropdown_menu",
     "../people_page:sync_browser_proxy",
-    "//third_party/polymer/v3_0/components-chromium/iron-a11y-announcer:iron-a11y-announcer",
+    "//third_party/polymer/v3_0/components-monyhar/iron-a11y-announcer:iron-a11y-announcer",
     "//ui/webui/resources/js:load_time_data.m",
     "//ui/webui/resources/js:web_ui_listener_behavior.m",
   ]
@@ -38,14 +38,14 @@ js_library("clear_browsing_data_dialog") {
 
 js_library("history_deletion_dialog") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_dialog:cr_dialog.m",
   ]
 }
 
 js_library("passwords_deletion_dialog") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_dialog:cr_dialog.m",
   ]
 }
@@ -53,7 +53,7 @@ js_library("passwords_deletion_dialog") {
 js_library("installed_app_checkbox") {
   deps = [
     ":clear_browsing_data_browser_proxy",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 

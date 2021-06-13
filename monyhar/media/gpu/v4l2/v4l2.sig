@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 //------------------------------------------------
-// Functions from libv4l2 used in chromium code.
+// Functions from libv4l2 used in monyhar code.
 //------------------------------------------------
 LIBV4L_PUBLIC int v4l2_close(int fd);
 LIBV4L_PUBLIC int v4l2_ioctl(int fd, unsigned long int request, ...);

@@ -19,7 +19,7 @@ class Bus;
 namespace chromeos {
 
 // IpPeripheralServiceClient is used to communicate with the DBus interface
-// (org.chromium.IpPeripheralService) exposed by the IP Peripheral service on
+// (org.monyhar.IpPeripheralService) exposed by the IP Peripheral service on
 // Chrome OS devices that support IP-based cameras and other peripherals. The IP
 // Peripheral service manages all communications with IP-based peripherals.
 //

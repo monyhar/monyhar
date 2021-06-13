@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.screenshot;
+package org.monyhar.chrome.browser.share.screenshot;
 
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.share.share_sheet.ChromeOptionShareCallback;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.ui.base.ActivityAndroidPermissionDelegate;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.share.share_sheet.ChromeOptionShareCallback;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.ui.base.ActivityAndroidPermissionDelegate;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;

@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.firstrun;
+package org.monyhar.chrome.browser.firstrun;
 
 import android.os.Bundle;
 
-import org.chromium.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.CallbackHelper;
 
 import java.util.HashMap;
 import java.util.Map;

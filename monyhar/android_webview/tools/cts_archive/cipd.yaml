@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml
-package: chromium/android_webview/tools/cts_archive
+package: monyhar/android_webview/tools/cts_archive
 description: Archive of WebView CTS tests
 data:
   - file: arm64/L/android-cts-arm64-5.1_r28.zip

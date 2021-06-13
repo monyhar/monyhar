@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.app;
+package org.monyhar.content.app;
 
-import org.chromium.base.annotations.MainDex;
+import org.monyhar.base.annotations.MainDex;
 
 /**
  * This is needed to register multiple PrivilegedProcess services so that we can have

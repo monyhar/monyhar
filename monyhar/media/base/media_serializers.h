@@ -100,7 +100,7 @@ struct MediaSerializer<float> {
   }
 };
 
-// Serialization for chromium-specific types.
+// Serialization for monyhar-specific types.
 // Each serializer should be commented like:
 // Class/Enum (simple/complex)
 // where Classes should take constref arguments, and "simple" methods should

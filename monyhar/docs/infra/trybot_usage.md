@@ -28,8 +28,8 @@ an automated way.
       setting CQ+1 on gerrit or by running `git cl try` with no arguments.
     * Run trybots of your choice by providing arguments to `git cl try`:
 
-        * specify bucket name with `-B/--bucket`. For chromium tryjobs, this
-          should always be `luci.chromium.try`
+        * specify bucket name with `-B/--bucket`. For monyhar tryjobs, this
+          should always be `luci.monyhar.try`
         * specify bot names with `-b/--bot`. This can be specified more than once.
 
 ### Examples
@@ -43,13 +43,13 @@ $ git cl try
 Launching a particular trybot:
 
 ```bash
-$ git cl try -B luci.chromium.try -b linux-rel
+$ git cl try -B luci.monyhar.try -b linux-rel
 ```
 
 Launching multiple trybots:
 
 ```bash
-$ git cl try -B luci.chromium.try \
+$ git cl try -B luci.monyhar.try \
   -b android-binary-size \
   -b ios-simulator-full-configs \
   -b linux-blink-rel \
@@ -96,6 +96,6 @@ top of the same revision specified in the DEPS file to avoid this.
  - [Design doc][4]
 
 [1]: /docs/infra/cq.md
-[2]: https://www.chromium.org/getting-involved/become-a-committer#TOC-Try-job-access
+[2]: https://www.monyhar.org/getting-involved/become-a-committer#TOC-Try-job-access
 [3]: https://g.co/bugatrooper
-[4]: https://www.chromium.org/developers/testing/try-server-usage/design
+[4]: https://www.monyhar.org/developers/testing/try-server-usage/design

@@ -2,24 +2,24 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab;
+package org.monyhar.chrome.browser.tab;
 
 import android.app.Activity;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.browser.AppHooks;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.components.external_intents.AuthenticatorNavigationInterceptor;
-import org.chromium.components.external_intents.ExternalNavigationHandler;
-import org.chromium.components.external_intents.ExternalNavigationHandler.OverrideUrlLoadingResult;
-import org.chromium.components.external_intents.InterceptNavigationDelegateClient;
-import org.chromium.components.external_intents.InterceptNavigationDelegateImpl;
-import org.chromium.components.external_intents.RedirectHandler;
-import org.chromium.components.navigation_interception.NavigationParams;
-import org.chromium.content_public.browser.NavigationHandle;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.chrome.browser.AppHooks;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.components.external_intents.AuthenticatorNavigationInterceptor;
+import org.monyhar.components.external_intents.ExternalNavigationHandler;
+import org.monyhar.components.external_intents.ExternalNavigationHandler.OverrideUrlLoadingResult;
+import org.monyhar.components.external_intents.InterceptNavigationDelegateClient;
+import org.monyhar.components.external_intents.InterceptNavigationDelegateImpl;
+import org.monyhar.components.external_intents.RedirectHandler;
+import org.monyhar.components.navigation_interception.NavigationParams;
+import org.monyhar.content_public.browser.NavigationHandle;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Class that provides embedder-level information to InterceptNavigationDelegateImpl based off a

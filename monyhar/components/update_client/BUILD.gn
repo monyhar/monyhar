@@ -7,7 +7,7 @@ import("//testing/libfuzzer/fuzzer_test.gni")
 
 source_set("network_impl") {
   sources = [
-    "net/network_chromium.h",
+    "net/network_monyhar.h",
     "net/network_impl.cc",
     "net/network_impl.h",
   ]

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.base;
+package org.monyhar.chrome.browser.omnibox.suggestions.base;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -14,17 +14,17 @@ import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.omnibox.MatchClassificationStyle;
-import org.chromium.chrome.browser.omnibox.suggestions.SuggestionHost;
-import org.chromium.chrome.browser.omnibox.suggestions.SuggestionProcessor;
-import org.chromium.chrome.browser.omnibox.suggestions.base.BaseSuggestionViewProperties.Action;
-import org.chromium.components.favicon.LargeIconBridge;
-import org.chromium.components.omnibox.AutocompleteMatch;
-import org.chromium.components.omnibox.AutocompleteMatch.MatchClassification;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.url.GURL;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.omnibox.MatchClassificationStyle;
+import org.monyhar.chrome.browser.omnibox.suggestions.SuggestionHost;
+import org.monyhar.chrome.browser.omnibox.suggestions.SuggestionProcessor;
+import org.monyhar.chrome.browser.omnibox.suggestions.base.BaseSuggestionViewProperties.Action;
+import org.monyhar.components.favicon.LargeIconBridge;
+import org.monyhar.components.omnibox.AutocompleteMatch;
+import org.monyhar.components.omnibox.AutocompleteMatch.MatchClassification;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.url.GURL;
 
 import java.util.Arrays;
 import java.util.List;

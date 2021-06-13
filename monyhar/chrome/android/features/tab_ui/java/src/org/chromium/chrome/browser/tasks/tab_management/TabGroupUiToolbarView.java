@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -19,10 +19,10 @@ import android.widget.LinearLayout;
 
 import androidx.core.widget.TextViewCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.tab_ui.R;
-import org.chromium.ui.KeyboardVisibilityDelegate;
-import org.chromium.ui.widget.ChromeImageView;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.tab_ui.R;
+import org.monyhar.ui.KeyboardVisibilityDelegate;
+import org.monyhar.ui.widget.ChromeImageView;
 
 /**
  * Represents a generic toolbar used in the bottom strip/grid component.
@@ -166,14 +166,14 @@ public class TabGroupUiToolbarView extends FrameLayout {
      */
     void setupDialogToolbarLayout() {
         Context context = getContext();
-        mLeftButton.setImageResource(org.chromium.chrome.R.drawable.ic_arrow_back_24dp);
+        mLeftButton.setImageResource(org.monyhar.chrome.R.drawable.ic_arrow_back_24dp);
         int topicMargin =
                 (int) context.getResources().getDimension(R.dimen.tab_group_toolbar_topic_margin);
         MarginLayoutParams params = (MarginLayoutParams) mTitleTextView.getLayoutParams();
         params.setMarginStart(topicMargin);
         mTitleTextView.setGravity(Gravity.START | Gravity.CENTER_VERTICAL);
         TextViewCompat.setTextAppearance(
-                mTitleTextView, org.chromium.chrome.R.style.TextAppearance_Headline_Primary);
+                mTitleTextView, org.monyhar.chrome.R.style.TextAppearance_Headline_Primary);
     }
 
     /**

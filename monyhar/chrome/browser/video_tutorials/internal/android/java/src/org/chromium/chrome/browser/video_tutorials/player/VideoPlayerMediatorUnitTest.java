@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.video_tutorials.player;
+package org.monyhar.chrome.browser.video_tutorials.player;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -23,21 +23,21 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.Callback;
-import org.chromium.base.metrics.test.ShadowRecordHistogram;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.video_tutorials.FeatureType;
-import org.chromium.chrome.browser.video_tutorials.PlaybackStateObserver;
-import org.chromium.chrome.browser.video_tutorials.PlaybackStateObserver.WatchStateInfo;
-import org.chromium.chrome.browser.video_tutorials.Tutorial;
-import org.chromium.chrome.browser.video_tutorials.VideoTutorialUtils;
-import org.chromium.chrome.browser.video_tutorials.languages.LanguagePickerCoordinator;
-import org.chromium.chrome.browser.video_tutorials.test.TestVideoTutorialService;
-import org.chromium.content_public.browser.NavigationController;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyObservable;
+import org.monyhar.base.Callback;
+import org.monyhar.base.metrics.test.ShadowRecordHistogram;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.video_tutorials.FeatureType;
+import org.monyhar.chrome.browser.video_tutorials.PlaybackStateObserver;
+import org.monyhar.chrome.browser.video_tutorials.PlaybackStateObserver.WatchStateInfo;
+import org.monyhar.chrome.browser.video_tutorials.Tutorial;
+import org.monyhar.chrome.browser.video_tutorials.VideoTutorialUtils;
+import org.monyhar.chrome.browser.video_tutorials.languages.LanguagePickerCoordinator;
+import org.monyhar.chrome.browser.video_tutorials.test.TestVideoTutorialService;
+import org.monyhar.content_public.browser.NavigationController;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyObservable;
 
 /**
  * Tests for {@link VideoPlayerMediator}.

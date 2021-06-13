@@ -16,7 +16,7 @@ config("compiler") {
   # will be available. Raise to 8M which matches e.g. macOS.
   ldflags = [ "-Wl,-z,stack-size=0x800000" ]
 
-  # Allow this in chromium-only builds, but do not allow this in Chromecast
+  # Allow this in monyhar-only builds, but do not allow this in Chromecast
   # builds.
   if (!is_chromecast) {
     cflags_cc = [ "-fexperimental-relative-c++-abi-vtables" ]

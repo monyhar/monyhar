@@ -4,7 +4,7 @@
      found in the LICENSE file.
 -->
 
-<org.chromium.chrome.browser.ntp.snippets.SectionHeaderView
+<org.monyhar.chrome.browser.ntp.snippets.SectionHeaderView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -27,7 +27,7 @@
         android:textAppearance="@style/TextAppearance.TextAccentMediumThick.Secondary"
         android:textDirection="locale" />
 
-    <org.chromium.components.browser_ui.widget.listmenu.ListMenuButton
+    <org.monyhar.components.browser_ui.widget.listmenu.ListMenuButton
         android:id="@+id/header_menu"
         android:layout_width="@dimen/feed_v2_header_menu_width"
         android:layout_height="@dimen/snippets_article_header_menu_size"
@@ -39,4 +39,4 @@
         android:contentDescription="@string/accessibility_ntp_feed_menu_button"
         app:menuMaxWidth="@dimen/feed_header_menu_max_width"
         app:tint="@null" />
-</org.chromium.chrome.browser.ntp.snippets.SectionHeaderView>
+</org.monyhar.chrome.browser.ntp.snippets.SectionHeaderView>

@@ -12,7 +12,7 @@ import test_runner_test
 
 _TEST_APP_PATH = '/path/to/test_app.app'
 _HOST_APP_PATH = '/path/to/host_app.app'
-_BUNDLE_ID = 'org.chromium.gtest.test-app'
+_BUNDLE_ID = 'org.monyhar.gtest.test-app'
 _MODULE_NAME = 'test_app'
 _XCTEST_PATH = '/PlugIns/boringssl_ssl_tests_module.xctest'
 

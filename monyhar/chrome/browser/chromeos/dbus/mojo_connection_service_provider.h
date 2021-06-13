@@ -28,7 +28,7 @@ namespace chromeos {
 // The following methods are exported:
 //
 // Interface:
-// org.chromium.MojoConnectionService
+// org.monyhar.MojoConnectionService
 //    (mojo_connection_service::kMojoConnectionServiceInterfaceName)
 // Methods: BootstrapMojoConnectionForIioService
 //     (mojo_connection_service::kBootstrapMojoConnectionForIioServiceMethod),

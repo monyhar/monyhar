@@ -210,7 +210,7 @@ goog.crypt.BlobHasher.prototype.processNextBlock_ = function() {
 
     // We have to reset the FileReader every time, otherwise it fails on
     // Chrome, including the latest Chrome 12 beta.
-    // http://code.google.com/p/chromium/issues/detail?id=82346
+    // http://code.google.com/p/monyhar/issues/detail?id=82346
     this.fileReader_ = new FileReader();
     this.fileReader_.onload = goog.bind(this.onLoad_, this);
     this.fileReader_.onerror = goog.bind(this.onError_, this);

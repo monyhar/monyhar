@@ -160,10 +160,10 @@
         <structure type="chrome_scaled_image" name="IDR_PRERENDER" file="common/prerender_succeed_icon.png" />
       </if>
       <if expr="not _google_chrome">
-        <structure type="chrome_scaled_image" name="IDR_PRODUCT_LOGO_16" file="chromium/product_logo_16.png" />
-        <structure type="chrome_scaled_image" name="IDR_PRODUCT_LOGO_32" file="chromium/product_logo_32.png" />
-        <structure type="chrome_scaled_image" name="IDR_PRODUCT_LOGO_NAME_22" file="chromium/product_logo_name_22.png" />
-        <structure type="chrome_scaled_image" name="IDR_PRODUCT_LOGO_NAME_22_WHITE" file="chromium/product_logo_name_22_white.png" />
+        <structure type="chrome_scaled_image" name="IDR_PRODUCT_LOGO_16" file="monyhar/product_logo_16.png" />
+        <structure type="chrome_scaled_image" name="IDR_PRODUCT_LOGO_32" file="monyhar/product_logo_32.png" />
+        <structure type="chrome_scaled_image" name="IDR_PRODUCT_LOGO_NAME_22" file="monyhar/product_logo_name_22.png" />
+        <structure type="chrome_scaled_image" name="IDR_PRODUCT_LOGO_NAME_22_WHITE" file="monyhar/product_logo_name_22_white.png" />
       </if>
       <if expr="_google_chrome">
         <if expr="not is_android">
@@ -349,10 +349,10 @@
       </if>
       <if expr="not _google_chrome">
         <if expr="not is_android">
-          <structure type="chrome_scaled_image" name="IDR_WEBSTORE_ICON" file="chromium/webstore_icon.png" />
-          <structure type="chrome_scaled_image" name="IDR_WEBSTORE_ICON_16" file="chromium/webstore_icon_16.png" />
-          <structure type="chrome_scaled_image" name="IDR_WEBSTORE_ICON_24" file="chromium/webstore_icon_24.png" />
-          <structure type="chrome_scaled_image" name="IDR_WEBSTORE_ICON_32" file="chromium/webstore_icon_32.png" />
+          <structure type="chrome_scaled_image" name="IDR_WEBSTORE_ICON" file="monyhar/webstore_icon.png" />
+          <structure type="chrome_scaled_image" name="IDR_WEBSTORE_ICON_16" file="monyhar/webstore_icon_16.png" />
+          <structure type="chrome_scaled_image" name="IDR_WEBSTORE_ICON_24" file="monyhar/webstore_icon_24.png" />
+          <structure type="chrome_scaled_image" name="IDR_WEBSTORE_ICON_32" file="monyhar/webstore_icon_32.png" />
         </if>
       </if>
       <if expr="_google_chrome">

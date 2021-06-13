@@ -2,8 +2,8 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab.state;
-import org.chromium.base.test.util.CallbackHelper;
+package org.monyhar.chrome.browser.tab.state;
+import org.monyhar.base.test.util.CallbackHelper;
 
 /**
  * Stores a byte array and notifies when said byte array acquisition is complete

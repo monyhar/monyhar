@@ -1,6 +1,6 @@
 Tests that console produces instant previews for arrays and objects.
 
-console-format-classes.js:30 Error: custom error with link www.chromium.org
+console-format-classes.js:30 Error: custom error with link www.monyhar.org
     at console-format-classes.js:20 
   console-message
     source-code
@@ -140,7 +140,7 @@ console-format-classes.js:30 HTMLAllCollection(4) [html, head, base, body]
                 webkit-html-tag-name
             object-state-note info-note
               children
-console-format-classes.js:34 (7) [Error: custom error with link www.chromium.org
+console-format-classes.js:34 (7) [Error: custom error with link www.monyhar.org
     at test://evaluations/0/console-format-classes.j…, Array(6), {…}, {…}, {…}, Proxy, HTMLAllCollection(4)] 
   console-message
     source-code

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.app.appmenu;
+package org.monyhar.chrome.browser.app.appmenu;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -13,15 +13,15 @@ import android.view.ViewGroup;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.incognito.IncognitoUtils;
-import org.chromium.chrome.browser.ui.appmenu.AppMenuClickHandler;
-import org.chromium.chrome.browser.ui.appmenu.CustomViewBinder;
-import org.chromium.components.browser_ui.widget.highlight.ViewHighlighter;
-import org.chromium.components.browser_ui.widget.highlight.ViewHighlighter.HighlightParams;
-import org.chromium.components.browser_ui.widget.highlight.ViewHighlighter.HighlightShape;
-import org.chromium.components.browser_ui.widget.text.TextViewWithCompoundDrawables;
-import org.chromium.ui.widget.ChromeImageView;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.incognito.IncognitoUtils;
+import org.monyhar.chrome.browser.ui.appmenu.AppMenuClickHandler;
+import org.monyhar.chrome.browser.ui.appmenu.CustomViewBinder;
+import org.monyhar.components.browser_ui.widget.highlight.ViewHighlighter;
+import org.monyhar.components.browser_ui.widget.highlight.ViewHighlighter.HighlightParams;
+import org.monyhar.components.browser_ui.widget.highlight.ViewHighlighter.HighlightShape;
+import org.monyhar.components.browser_ui.widget.text.TextViewWithCompoundDrawables;
+import org.monyhar.ui.widget.ChromeImageView;
 
 /**
  * A custom binder used to bind the incognito menu item.

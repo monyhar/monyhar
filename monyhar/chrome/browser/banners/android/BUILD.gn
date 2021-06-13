@@ -6,9 +6,9 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/banners/AppBannerInProductHelpController.java",
-    "java/src/org/chromium/chrome/browser/banners/AppBannerInProductHelpControllerFactory.java",
-    "java/src/org/chromium/chrome/browser/banners/AppBannerInProductHelpControllerProvider.java",
+    "java/src/org/monyhar/chrome/browser/banners/AppBannerInProductHelpController.java",
+    "java/src/org/monyhar/chrome/browser/banners/AppBannerInProductHelpControllerFactory.java",
+    "java/src/org/monyhar/chrome/browser/banners/AppBannerInProductHelpControllerProvider.java",
   ]
   deps = [
     ":java_resources",
@@ -28,7 +28,7 @@ android_library("java") {
   ]
 
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
-  resources_package = "org.chromium.chrome.browser.banners"
+  resources_package = "org.monyhar.chrome.browser.banners"
 }
 
 android_resources("java_resources") {
@@ -39,13 +39,13 @@ android_resources("java_resources") {
 }
 
 generate_jni("jni_headers") {
-  sources = [ "java/src/org/chromium/chrome/browser/banners/AppBannerInProductHelpControllerProvider.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/banners/AppBannerInProductHelpControllerProvider.java" ]
 }
 
 android_library("javatests") {
   testonly = true
   sources = [
-    "java/src/org/chromium/chrome/browser/banners/AppBannerManagerTest.java",
+    "java/src/org/monyhar/chrome/browser/banners/AppBannerManagerTest.java",
   ]
   deps = [
     ":java",

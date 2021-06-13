@@ -33,9 +33,9 @@ static const struct PPB_OpenGLES2FramebufferBlit*
 static const struct PPB_OpenGLES2FramebufferMultisample*
     g_gles2_framebuffer_multisample_interface = NULL;
 static const struct PPB_OpenGLES2ChromiumEnableFeature*
-    g_gles2_chromium_enable_feature_interface = NULL;
+    g_gles2_monyhar_enable_feature_interface = NULL;
 static const struct PPB_OpenGLES2ChromiumMapSub*
-    g_gles2_chromium_map_sub_interface = NULL;
+    g_gles2_monyhar_map_sub_interface = NULL;
 static const struct PPB_OpenGLES2Query*
     g_gles2_query_interface = NULL;
 static const struct PPB_OpenGLES2VertexArrayObject*
@@ -64,13 +64,13 @@ GLboolean GL_APIENTRY glInitializePPAPI(
         get_browser_interface(
             PPB_OPENGLES2_FRAMEBUFFERMULTISAMPLE_INTERFACE);
   }
-  if (!g_gles2_chromium_enable_feature_interface) {
-    g_gles2_chromium_enable_feature_interface =
+  if (!g_gles2_monyhar_enable_feature_interface) {
+    g_gles2_monyhar_enable_feature_interface =
         get_browser_interface(
             PPB_OPENGLES2_CHROMIUMENABLEFEATURE_INTERFACE);
   }
-  if (!g_gles2_chromium_map_sub_interface) {
-    g_gles2_chromium_map_sub_interface =
+  if (!g_gles2_monyhar_map_sub_interface) {
+    g_gles2_monyhar_map_sub_interface =
         get_browser_interface(PPB_OPENGLES2_CHROMIUMMAPSUB_INTERFACE);
   }
   if (!g_gles2_query_interface) {
@@ -122,12 +122,12 @@ const struct PPB_OpenGLES2FramebufferMultisample* GL_APIENTRY
 
 const struct PPB_OpenGLES2ChromiumEnableFeature* GL_APIENTRY
     glGetChromiumEnableFeatureInterfacePPAPI(void) {
-  return g_gles2_chromium_enable_feature_interface;
+  return g_gles2_monyhar_enable_feature_interface;
 }
 
 const struct PPB_OpenGLES2ChromiumMapSub* GL_APIENTRY
     glGetChromiumMapSubInterfacePPAPI(void) {
-  return g_gles2_chromium_map_sub_interface;
+  return g_gles2_monyhar_map_sub_interface;
 }
 
 const struct PPB_OpenGLES2Query* GL_APIENTRY

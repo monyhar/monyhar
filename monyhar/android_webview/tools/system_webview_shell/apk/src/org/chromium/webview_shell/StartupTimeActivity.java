@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webview_shell;
+package org.monyhar.webview_shell;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -15,7 +15,7 @@ import android.widget.LinearLayout;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 import java.util.LinkedList;
 
@@ -25,9 +25,9 @@ import java.util.LinkedList;
  * Example run:
  *   # Compile dex file for optimized run.
  *   adb shell cmd package compile -m speed -f <webview_package_name>
- *   adb shell killall org.chromium.webview_shell
+ *   adb shell killall org.monyhar.webview_shell
  *   # Run scenario: CREATE (1). There are other scenarios you can try.
- *   adb shell am start -n org.chromium.webview_shell/.StartupTimeActivity \
+ *   adb shell am start -n org.monyhar.webview_shell/.StartupTimeActivity \
  *     -a android.intent.action.VIEW --ei "target" 1
  *   adb logcat | grep WebViewShell
  *

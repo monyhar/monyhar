@@ -16,24 +16,24 @@ from __future__ import print_function
 
 # The base URL for stored build archives.
 CHROMIUM_BASE_URL = ('http://commondatastorage.googleapis.com'
-                     '/chromium-browser-snapshots')
+                     '/monyhar-browser-snapshots')
 WEBKIT_BASE_URL = ('http://commondatastorage.googleapis.com'
-                   '/chromium-webkit-snapshots')
+                   '/monyhar-webkit-snapshots')
 ASAN_BASE_URL = ('http://commondatastorage.googleapis.com'
-                 '/chromium-browser-asan')
+                 '/monyhar-browser-asan')
 
 # URL template for viewing changelogs between revisions.
-CHANGELOG_URL = ('https://chromium.googlesource.com/chromium/src/+log/%s..%s')
+CHANGELOG_URL = ('https://monyhar.googlesource.com/monyhar/src/+log/%s..%s')
 
 # URL to convert SVN revision to git hash.
 CRREV_URL = ('https://cr-rev.appspot.com/_ah/api/crrev/v1/redirect/')
 
 # DEPS file URL.
-DEPS_FILE = ('https://chromium.googlesource.com/chromium/src/+/%s/DEPS')
+DEPS_FILE = ('https://monyhar.googlesource.com/monyhar/src/+/%s/DEPS')
 
 # Blink changelogs URL.
-BLINK_CHANGELOG_URL = ('http://build.chromium.org'
-                      '/f/chromium/perf/dashboard/ui/changelog_blink.html'
+BLINK_CHANGELOG_URL = ('http://build.monyhar.org'
+                      '/f/monyhar/perf/dashboard/ui/changelog_blink.html'
                       '?url=/trunk&range=%d%%3A%d')
 
 DONE_MESSAGE_GOOD_MIN = ('You are probably looking for a change made after %s ('
@@ -42,13 +42,13 @@ DONE_MESSAGE_GOOD_MAX = ('You are probably looking for a change made after %s ('
                          'known bad), but no later than %s (first known good).')
 
 CHROMIUM_GITHASH_TO_SVN_URL = (
-    'https://chromium.googlesource.com/chromium/src/+/%s?format=json')
+    'https://monyhar.googlesource.com/monyhar/src/+/%s?format=json')
 
 BLINK_GITHASH_TO_SVN_URL = (
-    'https://chromium.googlesource.com/chromium/blink/+/%s?format=json')
+    'https://monyhar.googlesource.com/monyhar/blink/+/%s?format=json')
 
 GITHASH_TO_SVN_URL = {
-    'chromium': CHROMIUM_GITHASH_TO_SVN_URL,
+    'monyhar': CHROMIUM_GITHASH_TO_SVN_URL,
     'blink': BLINK_GITHASH_TO_SVN_URL,
 }
 
@@ -58,19 +58,19 @@ VERSION_HISTORY_URL = ('https://versionhistory.googleapis.com/v1/chrome'
 OMAHA_REVISIONS_URL = ('https://omahaproxy.appspot.com/deps.json?version=%s')
 
 # Search pattern to be matched in the JSON output from
-# CHROMIUM_GITHASH_TO_SVN_URL to get the chromium revision (svn revision).
+# CHROMIUM_GITHASH_TO_SVN_URL to get the monyhar revision (svn revision).
 CHROMIUM_SEARCH_PATTERN_OLD = (
-    r'.*git-svn-id: svn://svn.chromium.org/chrome/trunk/src@(\d+) ')
+    r'.*git-svn-id: svn://svn.monyhar.org/chrome/trunk/src@(\d+) ')
 CHROMIUM_SEARCH_PATTERN = (
     r'Cr-Commit-Position: refs/heads/master@{#(\d+)}')
 
 # Search pattern to be matched in the json output from
 # BLINK_GITHASH_TO_SVN_URL to get the blink revision (svn revision).
 BLINK_SEARCH_PATTERN = (
-    r'.*git-svn-id: svn://svn.chromium.org/blink/trunk@(\d+) ')
+    r'.*git-svn-id: svn://svn.monyhar.org/blink/trunk@(\d+) ')
 
 SEARCH_PATTERN = {
-    'chromium': CHROMIUM_SEARCH_PATTERN,
+    'monyhar': CHROMIUM_SEARCH_PATTERN,
     'blink': BLINK_SEARCH_PATTERN,
 }
 
@@ -210,7 +210,7 @@ class PathContext(object):
     archive_name = self.archive_name
 
     # At revision 591483, the names of two of the archives changed
-    # due to: https://chromium-review.googlesource.com/#/q/1226086
+    # due to: https://monyhar-review.googlesource.com/#/q/1226086
     # See: http://crbug.com/789612
     if revision >= 591483:
       if self.platform == 'chromeos':
@@ -242,7 +242,7 @@ class PathContext(object):
       extract_dir = self._archive_extract_dir
 
     # At revision 591483, the names of two of the archives changed
-    # due to: https://chromium-review.googlesource.com/#/q/1226086
+    # due to: https://monyhar-review.googlesource.com/#/q/1226086
     # See: http://crbug.com/789612
     if revision >= 591483:
       if self.platform == 'chromeos':
@@ -314,9 +314,9 @@ class PathContext(object):
             revnum = int(revnum)
             revisions.append(revnum)
           # Notes:
-          # Ignore hash in chromium-browser-snapshots as they are invalid
+          # Ignore hash in monyhar-browser-snapshots as they are invalid
           # Resulting in 404 error in fetching pages:
-          # https://chromium.googlesource.com/chromium/src/+/[rev_hash]
+          # https://monyhar.googlesource.com/monyhar/src/+/[rev_hash]
           except ValueError:
             pass
       return (revisions, next_marker, githash_svn_dict)
@@ -370,7 +370,7 @@ class PathContext(object):
       if result:
         return result.group(1)
       else:
-        if depot == 'chromium':
+        if depot == 'monyhar':
           result = re.search(CHROMIUM_SEARCH_PATTERN_OLD,
                              message[len(message)-1])
           if result:
@@ -408,7 +408,7 @@ class PathContext(object):
       return revision
     raise ValueError
 
-  def GetSVNRevisionFromGitHash(self, git_sha1, depot='chromium'):
+  def GetSVNRevisionFromGitHash(self, git_sha1, depot='monyhar'):
     if not self.local_src_path:
       return self._GetSVNRevisionFromGitHashWithoutGitCheckout(git_sha1, depot)
     else:
@@ -503,7 +503,7 @@ class PathContext(object):
         self.bad_revision = revlist[0]
         self.good_revision = revlist[-1]
 
-      # Fix chromium rev so that the deps blink revision matches REVISIONS file.
+      # Fix monyhar rev so that the deps blink revision matches REVISIONS file.
       if self.base_url == WEBKIT_BASE_URL:
         revlist_all.sort()
         self.good_revision = FixChromiumRevForBlink(revlist,
@@ -1000,7 +1000,7 @@ def Bisect(context,
 
 def GetBlinkDEPSRevisionForChromiumRevision(self, rev):
   """Returns the blink revision that was in REVISIONS file at
-  chromium revision |rev|."""
+  monyhar revision |rev|."""
 
   def _GetBlinkRev(url, blink_re):
     m = blink_re.search(url.read())
@@ -1018,7 +1018,7 @@ def GetBlinkDEPSRevisionForChromiumRevision(self, rev):
 
 def GetBlinkRevisionForChromiumRevision(context, rev):
   """Returns the blink revision that was in REVISIONS file at
-  chromium revision |rev|."""
+  monyhar revision |rev|."""
   def _IsRevisionNumber(revision):
     if isinstance(revision, int):
       return True
@@ -1048,7 +1048,7 @@ def GetBlinkRevisionForChromiumRevision(context, rev):
 
 
 def FixChromiumRevForBlink(revisions_final, revisions, self, rev):
-  """Returns the chromium revision that has the correct blink revision
+  """Returns the monyhar revision that has the correct blink revision
   for blink bisect, DEPS and REVISIONS file might not match since
   blink snapshots point to tip of tree blink.
   Note: The revisions_final variable might get modified to include
@@ -1067,7 +1067,7 @@ def FixChromiumRevForBlink(revisions_final, revisions, self, rev):
 
 
 def GetChromiumRevision(context, url):
-  """Returns the chromium revision read from given URL."""
+  """Returns the monyhar revision read from given URL."""
   try:
     # Location of the latest build revision number
     latest_revision = urllib.urlopen(url).read()
@@ -1114,7 +1114,7 @@ def GetRevision(revision_text):
   if len(revision_text.split('.')) == 4:
     response = urllib.urlopen(OMAHA_REVISIONS_URL % revision_text)
     revision_details = json.loads(response.read())
-    revision_text = revision_details['chromium_base_position']
+    revision_text = revision_details['monyhar_base_position']
 
   # Translate from text commit position to integer commit position.
   return int(revision_text)
@@ -1128,11 +1128,11 @@ def GetGitHashFromSVNRevision(svn_revision):
     if 'git_sha' in data:
       return data['git_sha']
 
-def PrintChangeLog(min_chromium_rev, max_chromium_rev):
+def PrintChangeLog(min_monyhar_rev, max_monyhar_rev):
   """Prints the changelog URL."""
 
-  print('  ' + CHANGELOG_URL % (GetGitHashFromSVNRevision(min_chromium_rev),
-                                GetGitHashFromSVNRevision(max_chromium_rev)))
+  print('  ' + CHANGELOG_URL % (GetGitHashFromSVNRevision(min_monyhar_rev),
+                                GetGitHashFromSVNRevision(max_monyhar_rev)))
 
 
 def error_internal_option(option, opt, value, parser):
@@ -1142,7 +1142,7 @@ def error_internal_option(option, opt, value, parser):
         'for\nconfiguration instructions.')
 
 def main():
-  usage = ('%prog [options] [-- chromium-options]\n'
+  usage = ('%prog [options] [-- monyhar-options]\n'
            'Perform binary search on the snapshot builds to find a minimal\n'
            'range of revisions where a behavior change happened. The\n'
            'behaviors are described as "good" and "bad".\n'
@@ -1150,13 +1150,13 @@ def main():
            'the bad one.\n'
            '\n'
            'Revision numbers should use\n'
-           '  SVN revisions (e.g. 123456) for chromium builds, from trunk.\n'
+           '  SVN revisions (e.g. 123456) for monyhar builds, from trunk.\n'
            '    Use base_trunk_revision from http://omahaproxy.appspot.com/\n'
            '    for earlier revs.\n'
            '    Chrome\'s about: build number and omahaproxy branch_revision\n'
            '    are incorrect, they are from branches.\n'
            '\n'
-           'Use "-- <args-to-pass-to-chromium>" to pass arbitrary extra \n'
+           'Use "-- <args-to-pass-to-monyhar>" to pass arbitrary extra \n'
            'arguments to the test binaries.\n'
            'E.g., add "-- --no-first-run" to bypass the first run prompts.')
   parser = optparse.OptionParser(usage=usage)
@@ -1210,7 +1210,7 @@ def main():
                     'Defaults to "%p %a". Note that any extra paths specified '
                     'should be absolute. If you just need to append an '
                     'argument to the Chrome command line use "-- '
-                    '<args-to-pass-to-chromium>" instead.')
+                    '<args-to-pass-to-monyhar>" instead.')
   parser.add_option('-l', '--blink',
                     action='store_true',
                     help='Use Blink bisect instead of Chromium. ')
@@ -1304,16 +1304,16 @@ def main():
   print('Scanning from %d to %d (%d revisions).' %
         (good_rev, bad_rev, abs(good_rev - bad_rev)))
 
-  (min_chromium_rev, max_chromium_rev,
+  (min_monyhar_rev, max_monyhar_rev,
    context) = Bisect(context, opts.times, opts.command, args, opts.profile,
                      evaluator, opts.verify_range, opts.archive)
 
   # Get corresponding blink revisions.
   try:
     min_blink_rev = GetBlinkRevisionForChromiumRevision(context,
-                                                        min_chromium_rev)
+                                                        min_monyhar_rev)
     max_blink_rev = GetBlinkRevisionForChromiumRevision(context,
-                                                        max_chromium_rev)
+                                                        max_monyhar_rev)
   except Exception:
     # Silently ignore the failure.
     min_blink_rev, max_blink_rev = 0, 0
@@ -1331,17 +1331,17 @@ def main():
   else:
     # We're done. Let the user know the results in an official manner.
     if good_rev > bad_rev:
-      print(DONE_MESSAGE_GOOD_MAX % (str(min_chromium_rev),
-                                     str(max_chromium_rev)))
+      print(DONE_MESSAGE_GOOD_MAX % (str(min_monyhar_rev),
+                                     str(max_monyhar_rev)))
     else:
-      print(DONE_MESSAGE_GOOD_MIN % (str(min_chromium_rev),
-                                     str(max_chromium_rev)))
+      print(DONE_MESSAGE_GOOD_MIN % (str(min_monyhar_rev),
+                                     str(max_monyhar_rev)))
     if min_blink_rev != max_blink_rev:
       print ('NOTE: There is a Blink roll in the range, '
              'you might also want to do a Blink bisect.')
 
     print('CHANGELOG URL:')
-    PrintChangeLog(min_chromium_rev, max_chromium_rev)
+    PrintChangeLog(min_monyhar_rev, max_monyhar_rev)
 
 
 if __name__ == '__main__':

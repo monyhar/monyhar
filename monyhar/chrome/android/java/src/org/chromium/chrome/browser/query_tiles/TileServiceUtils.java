@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.query_tiles;
+package org.monyhar.chrome.browser.query_tiles;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.chrome.browser.AppHooks;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.chrome.browser.AppHooks;
 
 /**
  * Class for providing helper method for corresponding native class.

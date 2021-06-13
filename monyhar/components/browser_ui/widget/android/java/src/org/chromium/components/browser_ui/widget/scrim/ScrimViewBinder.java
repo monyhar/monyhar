@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.scrim;
+package org.monyhar.components.browser_ui.widget.scrim;
 
 import android.view.View;
 import android.view.ViewGroup.MarginLayoutParams;
 
-import org.chromium.ui.UiUtils;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.ui.UiUtils;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /** The Class responsible for binding properties to and updating the scrim. */
 class ScrimViewBinder {

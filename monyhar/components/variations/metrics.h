@@ -25,7 +25,7 @@ enum class FirstRunSeedImportResult {
 
 // The result of attempting to load a variations seed on startup.
 // Note: UMA histogram enum - don't re-order or remove entries.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.variations
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.variations
 enum class LoadSeedResult {
   SUCCESS,
   EMPTY,

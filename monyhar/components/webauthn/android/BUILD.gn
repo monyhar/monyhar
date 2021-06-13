@@ -5,20 +5,20 @@
 import("//build/config/android/rules.gni")
 
 generate_jni("jni_headers") {
-  sources = [ "java/src/org/chromium/components/webauthn/Fido2Helper.java" ]
+  sources = [ "java/src/org/monyhar/components/webauthn/Fido2Helper.java" ]
 }
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/components/webauthn/AuthenticatorFactory.java",
-    "java/src/org/chromium/components/webauthn/AuthenticatorImpl.java",
-    "java/src/org/chromium/components/webauthn/Fido2ApiHandler.java",
-    "java/src/org/chromium/components/webauthn/Fido2CredentialRequest.java",
-    "java/src/org/chromium/components/webauthn/Fido2Helper.java",
-    "java/src/org/chromium/components/webauthn/FidoErrorResponseCallback.java",
-    "java/src/org/chromium/components/webauthn/GetAssertionResponseCallback.java",
-    "java/src/org/chromium/components/webauthn/IsUvpaaResponseCallback.java",
-    "java/src/org/chromium/components/webauthn/MakeCredentialResponseCallback.java",
+    "java/src/org/monyhar/components/webauthn/AuthenticatorFactory.java",
+    "java/src/org/monyhar/components/webauthn/AuthenticatorImpl.java",
+    "java/src/org/monyhar/components/webauthn/Fido2ApiHandler.java",
+    "java/src/org/monyhar/components/webauthn/Fido2CredentialRequest.java",
+    "java/src/org/monyhar/components/webauthn/Fido2Helper.java",
+    "java/src/org/monyhar/components/webauthn/FidoErrorResponseCallback.java",
+    "java/src/org/monyhar/components/webauthn/GetAssertionResponseCallback.java",
+    "java/src/org/monyhar/components/webauthn/IsUvpaaResponseCallback.java",
+    "java/src/org/monyhar/components/webauthn/MakeCredentialResponseCallback.java",
   ]
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
   deps = [
@@ -44,7 +44,7 @@ android_library("java") {
 android_library("test_support_java") {
   testonly = true
   sources =
-      [ "java/src/org/chromium/components/webauthn/MockFido2ApiHandler.java" ]
+      [ "java/src/org/monyhar/components/webauthn/MockFido2ApiHandler.java" ]
   deps = [
     ":java",
     "//content/public/android:content_java",

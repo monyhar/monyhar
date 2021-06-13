@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.payments;
+package org.monyhar.components.payments;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -11,35 +11,35 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.collection.ArrayMap;
 
-import org.chromium.base.LocaleUtils;
-import org.chromium.base.Log;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.components.page_info.CertificateChainHelper;
-import org.chromium.components.url_formatter.SchemeDisplay;
-import org.chromium.components.url_formatter.UrlFormatter;
-import org.chromium.content_public.browser.RenderFrameHost;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.mojo.system.MojoException;
-import org.chromium.payments.mojom.CanMakePaymentQueryResult;
-import org.chromium.payments.mojom.HasEnrolledInstrumentQueryResult;
-import org.chromium.payments.mojom.PayerDetail;
-import org.chromium.payments.mojom.PaymentAddress;
-import org.chromium.payments.mojom.PaymentComplete;
-import org.chromium.payments.mojom.PaymentDetails;
-import org.chromium.payments.mojom.PaymentDetailsModifier;
-import org.chromium.payments.mojom.PaymentErrorReason;
-import org.chromium.payments.mojom.PaymentItem;
-import org.chromium.payments.mojom.PaymentMethodData;
-import org.chromium.payments.mojom.PaymentOptions;
-import org.chromium.payments.mojom.PaymentRequest;
-import org.chromium.payments.mojom.PaymentRequestClient;
-import org.chromium.payments.mojom.PaymentResponse;
-import org.chromium.payments.mojom.PaymentShippingOption;
-import org.chromium.payments.mojom.PaymentShippingType;
-import org.chromium.payments.mojom.PaymentValidationErrors;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.url.GURL;
-import org.chromium.url.Origin;
+import org.monyhar.base.LocaleUtils;
+import org.monyhar.base.Log;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.page_info.CertificateChainHelper;
+import org.monyhar.components.url_formatter.SchemeDisplay;
+import org.monyhar.components.url_formatter.UrlFormatter;
+import org.monyhar.content_public.browser.RenderFrameHost;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.mojo.system.MojoException;
+import org.monyhar.payments.mojom.CanMakePaymentQueryResult;
+import org.monyhar.payments.mojom.HasEnrolledInstrumentQueryResult;
+import org.monyhar.payments.mojom.PayerDetail;
+import org.monyhar.payments.mojom.PaymentAddress;
+import org.monyhar.payments.mojom.PaymentComplete;
+import org.monyhar.payments.mojom.PaymentDetails;
+import org.monyhar.payments.mojom.PaymentDetailsModifier;
+import org.monyhar.payments.mojom.PaymentErrorReason;
+import org.monyhar.payments.mojom.PaymentItem;
+import org.monyhar.payments.mojom.PaymentMethodData;
+import org.monyhar.payments.mojom.PaymentOptions;
+import org.monyhar.payments.mojom.PaymentRequest;
+import org.monyhar.payments.mojom.PaymentRequestClient;
+import org.monyhar.payments.mojom.PaymentResponse;
+import org.monyhar.payments.mojom.PaymentShippingOption;
+import org.monyhar.payments.mojom.PaymentShippingType;
+import org.monyhar.payments.mojom.PaymentValidationErrors;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.url.GURL;
+import org.monyhar.url.Origin;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -54,7 +54,7 @@ import java.util.Set;
  * ChromePaymentRequestService together make up the PaymentRequest service defined in
  * third_party/blink/public/mojom/payments/payment_request.mojom. This class provides the parts
  * shareable between Clank and WebLayer. The Clank specific logic lives in
- * org.chromium.chrome.browser.payments.ChromePaymentRequestService.
+ * org.monyhar.chrome.browser.payments.ChromePaymentRequestService.
  * TODO(crbug.com/1102522): ChromePaymentRequestService is under refactoring, with the purpose of
  * moving the business logic of ChromePaymentRequestService into PaymentRequestService and
  * eventually moving ChromePaymentRequestService. Note that the callers of the instances of this

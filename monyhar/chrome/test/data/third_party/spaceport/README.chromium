@@ -8,7 +8,7 @@ License: Various, see license file
 License File: LICENSE
 
 Additional files, not in the original suite:
-  README.chromium
+  README.monyhar
 
 Modifications to the test suite to enable running as a cross browser performance test.
   js/index.js

@@ -254,14 +254,14 @@ TEST_F(IsolatedContextTest, CrackURLWithRelativePaths) {
                                         .Append(relatives[j].path);
 
       FileSystemURL cracked = isolated_context()->CreateCrackedFileSystemURL(
-          url::Origin::Create(GURL("http://chromium.org")),
+          url::Origin::Create(GURL("http://monyhar.org")),
           kFileSystemTypeIsolated, virtual_path);
 
       ASSERT_EQ(relatives[j].valid, cracked.is_valid());
 
       if (!relatives[j].valid)
         continue;
-      ASSERT_EQ("http://chromium.org", cracked.origin().Serialize());
+      ASSERT_EQ("http://monyhar.org", cracked.origin().Serialize());
       ASSERT_EQ(kTestPaths[i]
                     .Append(relatives[j].path)
                     .NormalizePathSeparators()
@@ -300,7 +300,7 @@ TEST_F(IsolatedContextTest, TestWithVirtualRoot) {
 }
 
 TEST_F(IsolatedContextTest, CanHandleURL) {
-  const GURL test_origin("http://chromium.org");
+  const GURL test_origin("http://monyhar.org");
   const base::FilePath test_path(FPL("/mount"));
 
   // Should handle isolated file system.

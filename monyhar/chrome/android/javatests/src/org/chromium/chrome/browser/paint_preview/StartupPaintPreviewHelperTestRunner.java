@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.paint_preview;
+package org.monyhar.chrome.browser.paint_preview;
 
 import android.content.Context;
 import android.provider.Settings;
@@ -11,9 +11,9 @@ import android.text.TextUtils;
 
 import org.junit.runners.model.InitializationError;
 
-import org.chromium.base.test.util.RestrictionSkipCheck;
-import org.chromium.base.test.util.SkipCheck;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.base.test.util.RestrictionSkipCheck;
+import org.monyhar.base.test.util.SkipCheck;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
 
 import java.util.List;
 

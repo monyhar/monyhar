@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.video_tutorials.player;
+package org.monyhar.chrome.browser.video_tutorials.player;
 
-import org.chromium.chrome.browser.video_tutorials.Tutorial;
+import org.monyhar.chrome.browser.video_tutorials.Tutorial;
 
 /**
  * Creates the player URL for a video tutorial.

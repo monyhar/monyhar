@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import android.content.Context;
 
@@ -16,7 +16,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
 
 /**
  * Tests for RequestThrottler.
@@ -27,7 +27,7 @@ public class RequestThrottlerTest {
     private static final int UID = 1234;
     private static final int UID2 = 12345;
     private static final String URL = "https://www.google.com";
-    private static final String URL2 = "https://www.chromium.org";
+    private static final String URL2 = "https://www.monyhar.org";
 
     private Context mContext;
 

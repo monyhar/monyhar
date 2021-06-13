@@ -32,7 +32,7 @@ instructions may be out of date.
 ***
 
 The runner script is
-[`testing/scripts/run_wpt_tests.py`](https://source.chromium.org/chromium/chromium/src/+/main:testing/scripts/run_wpt_tests.py).
+[`testing/scripts/run_wpt_tests.py`](https://source.monyhar.org/monyhar/monyhar/src/+/main:testing/scripts/run_wpt_tests.py).
 Before running the script, you must have built the necessary ninja targets:
 
 ```
@@ -67,16 +67,16 @@ As of Q4 2020, an MVP of wptrunner in Chromium is being run with two customer
 teams: Web Payments and Web Identity. For these teams, two **Linux-only** bots
 have been brought up:
 
-* [linux-wpt-identity-fyi-rel](https://ci.chromium.org/p/chromium/builders/ci/linux-wpt-identity-fyi-rel),
+* [linux-wpt-identity-fyi-rel](https://ci.monyhar.org/p/monyhar/builders/ci/linux-wpt-identity-fyi-rel),
   which runs tests under `external/wpt/webauthn/`.
-* [linux-wpt-input-fyi-rel](https://ci.chromium.org/p/chromium/builders/ci/linux-wpt-input-fyi-rel),
+* [linux-wpt-input-fyi-rel](https://ci.monyhar.org/p/monyhar/builders/ci/linux-wpt-input-fyi-rel),
   which runs tests under `external/wpt/{input-events, pointerevents, uievents}`,
   as well as `external/wpt/infrastructure/testdriver/actions/`
 
 These bots run on the waterfall, but can also be run on CLs by clicking the
 `Choose Tryjobs` button in Gerrit followed by searching for the bot name in the
 modal dialog that appears. One can also include the tag `Cq-Include-Trybots:
-luci.chromium.try:linux-wpt-identity-fyi-rel` (or input) in the description
+luci.monyhar.try:linux-wpt-identity-fyi-rel` (or input) in the description
 for the CL, which will make the bot mandatory for that CL.
 
 Results for the bots use the existing layout test results viewer
@@ -90,7 +90,7 @@ codifies what the output result should be.
 
 By default `wptrunner` will inherit expected statuses from `TestExpecations`.
 This can currently be overridden by adding an entry to the
-[`WPTOverrideExpectations`](https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/web_tests/WPTOverrideExpectations)
+[`WPTOverrideExpectations`](https://source.monyhar.org/monyhar/monyhar/src/+/main:third_party/blink/web_tests/WPTOverrideExpectations)
 file when `wptrunner` has a different result than `run_web_tests.py`.
 `WPTOverrideExpectations` is however [deprecated](https://crbug.com/1035911),
 and the preferred method for specifying expected results for `wptrunner` is to

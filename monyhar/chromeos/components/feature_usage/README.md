@@ -27,7 +27,7 @@ The first two are reported periodically every 30 minutes. To correctly track 1-,
 
 For more details see original [CL](https://crrev.com/c/2596263)
 
-[1]: https://source.chromium.org/search?q=FeatureUsageEvent%20f:metrics&ss=chromium
+[1]: https://source.monyhar.org/search?q=FeatureUsageEvent%20f:metrics&ss=monyhar
 
 ## Integrate your new feature with the component
 
@@ -48,8 +48,8 @@ name="FeaturesLoggingUsageEvents">`
 
 ```
   <variant name="YourFeature" summary="your feature">
-    <owner>you@chromium.org<owner>
-    <owner>your-team@chromium.org</owner>
+    <owner>you@monyhar.org<owner>
+    <owner>your-team@monyhar.org</owner>
   </variant>
 ```
 

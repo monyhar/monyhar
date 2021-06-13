@@ -15,7 +15,7 @@
 #ifndef CRASHPAD_PACKAGE_H_
 #define CRASHPAD_PACKAGE_H_
 
-#define PACKAGE_BUGREPORT "https://crashpad.chromium.org/bug/new"
+#define PACKAGE_BUGREPORT "https://crashpad.monyhar.org/bug/new"
 #define PACKAGE_COPYRIGHT \
   "Copyright " PACKAGE_COPYRIGHT_YEAR " " PACKAGE_COPYRIGHT_OWNER
 #define PACKAGE_COPYRIGHT_OWNER "The Crashpad Authors"
@@ -24,6 +24,6 @@
 #define PACKAGE_STRING PACKAGE_NAME " " PACKAGE_VERSION
 #define PACKAGE_TARNAME "crashpad"
 #define PACKAGE_VERSION "0.8.0"
-#define PACKAGE_URL "https://crashpad.chromium.org/"
+#define PACKAGE_URL "https://crashpad.monyhar.org/"
 
 #endif  // CRASHPAD_PACKAGE_H_

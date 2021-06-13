@@ -318,7 +318,7 @@ There exists a mechanism in Windows Error Reporting (WER) that allows a client
 process to register for handling client exceptions out of the crashing process.
 Unfortunately this mechanism is difficult to use, and doesn’t provide coverage
 for many of the caveats above. [Details
-here.](https://crashpad.chromium.org/bug/133)
+here.](https://crashpad.monyhar.org/bug/133)
 
 #### Linux/Android
 
@@ -494,7 +494,7 @@ very little loss of signal due to the throttling, though the ability to
 reconstruct at least the full crash count is highly desirable.
 
 The lack of retry is expected to [change
-soon](https://crashpad.chromium.org/bug/23), as this creates blind spots for
+soon](https://crashpad.monyhar.org/bug/23), as this creates blind spots for
 client crashes that exclusively occur on e.g. network down events, during
 suspend and resume and such.
 
@@ -526,14 +526,14 @@ or other resource duress at the time of crash.
 ### Dependencies
 
 Aside from system headers and APIs, when used outside of Chromium, Crashpad has
-a dependency on “mini_chromium”, which is a subset of the Chromium base library.
+a dependency on “mini_monyhar”, which is a subset of the Chromium base library.
 This is to allow non-Chromium clients to use Crashpad, without taking a direct
 dependency on the Chromium base, while allowing Chromium projects to use
 Crashpad with minimum code duplication or hassle. When using Crashpad as part of
 Chromium, Chromium’s own copy of the base library is used instead of
-mini_chromium.
+mini_monyhar.
 
-The downside to this is that mini_chromium must be kept up to date with
+The downside to this is that mini_monyhar must be kept up to date with
 interface and implementation changes in Chromium base, for the subset of
 functionality used by Crashpad.
 

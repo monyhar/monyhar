@@ -25,9 +25,9 @@ To update this, do something roughly along the lines of:
     cd Markdown-$VERSION
     rm -fr bin docs INSTALL.md makefile MANIFEST PKG-INFO \
            run-tests.py setup.py tests tox.ini
-    cp ../Python-Markdown/README.chromium .
+    cp ../Python-Markdown/README.monyhar .
 
-    # update the version numbers in README.chromium
+    # update the version numbers in README.monyhar
 
     cd ..
     rm -fr Python-Markdown

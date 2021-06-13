@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.image_descriptions;
+package org.monyhar.chrome.browser.image_descriptions;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
@@ -33,23 +33,23 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.browser.device.DeviceConditions;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.Pref;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.components.prefs.PrefService;
-import org.chromium.components.user_prefs.UserPrefs;
-import org.chromium.components.user_prefs.UserPrefsJni;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.net.ConnectionType;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.test.util.DummyUiActivityTestCase;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.browser.device.DeviceConditions;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.Pref;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.components.prefs.PrefService;
+import org.monyhar.components.user_prefs.UserPrefs;
+import org.monyhar.components.user_prefs.UserPrefsJni;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.net.ConnectionType;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.test.util.DummyUiActivityTestCase;
 
 /**
  *  Unit tests for {@link ImageDescriptionsController}

@@ -8,7 +8,7 @@
 Global objects are defined by interfaces with [Global] on
 their definition: http://heycam.github.io/webidl/#Global
 
-Design document: http://www.chromium.org/developers/design-documents/idl-build
+Design document: http://www.monyhar.org/developers/design-documents/idl-build
 """
 
 # pylint: disable=relative-import

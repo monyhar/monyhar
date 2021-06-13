@@ -120,7 +120,7 @@ TEST_F(WebAccessibleResourcesManifestTest, WebAccessibleResourcesV3Valid) {
        R"([
             {
               "resources": ["test"],
-              "matches": ["https://chromium.org/*"],
+              "matches": ["https://monyhar.org/*"],
               "extension_ids": ["abcdefghijklmnopabcdefghijklmnop"],
               "unexpected_key": ["allowed"]
             }

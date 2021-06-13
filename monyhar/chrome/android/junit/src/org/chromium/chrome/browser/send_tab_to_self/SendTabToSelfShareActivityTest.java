@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.send_tab_to_self;
+package org.monyhar.chrome.browser.send_tab_to_self;
 
 import static org.mockito.Mockito.eq;
 import static org.mockito.Mockito.when;
@@ -19,12 +19,12 @@ import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.browser.share.send_tab_to_self.SendTabToSelfAndroidBridge;
-import org.chromium.chrome.browser.share.send_tab_to_self.SendTabToSelfAndroidBridgeJni;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.browser.share.send_tab_to_self.SendTabToSelfAndroidBridge;
+import org.monyhar.chrome.browser.share.send_tab_to_self.SendTabToSelfAndroidBridgeJni;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.content_public.browser.WebContents;
 
 /** Tests for SendTabToSelfShareActivity */
 @RunWith(BaseRobolectricTestRunner.class)

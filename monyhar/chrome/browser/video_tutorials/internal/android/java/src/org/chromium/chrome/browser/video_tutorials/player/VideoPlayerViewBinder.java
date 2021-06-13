@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.video_tutorials.player;
+package org.monyhar.chrome.browser.video_tutorials.player;
 
 import android.view.View;
 import android.widget.TextView;
 
-import org.chromium.chrome.browser.video_tutorials.R;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor.ViewBinder;
+import org.monyhar.chrome.browser.video_tutorials.R;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor.ViewBinder;
 
 /**
  * The binder to bind the video player property model with the {@link VideoPlayerView}.

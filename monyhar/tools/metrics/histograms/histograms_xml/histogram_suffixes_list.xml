@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of histogram suffixes
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -83,8 +83,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed M80. Only affects one histogram, which is deprecated.
   </obsolete>
-  <owner>msalama@chromium.org</owner>
-  <owner>msarda@chromium.org</owner>
+  <owner>msalama@monyhar.org</owner>
+  <owner>msarda@monyhar.org</owner>
   <suffix name="FirstExecution" label="The first Reconcilor execution"/>
   <suffix name="NotFirstExecution" label="Not the first Reconcilor execution"/>
   <affected-histogram name="Signin.DiceMigrationNotReady.Reason"/>
@@ -882,7 +882,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram_suffixes name="AndroidProcessExitReasons" separator=".">
   <owner>boliu@google.com</owner>
-  <owner>ssid@chromium.org</owner>
+  <owner>ssid@monyhar.org</owner>
   <suffix name="Browser" label="Recorded for Browser crashes."/>
   <suffix name="Browser.Background"
       label="Recorded for background Browser crashes."/>
@@ -2576,7 +2576,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram_suffixes>
 
 <histogram_suffixes name="CertificateTypeAlgorithms" separator=".">
-  <owner>rsleevi@chromium.org</owner>
+  <owner>rsleevi@monyhar.org</owner>
   <suffix name="DH" label="DH"/>
   <suffix name="DSA" label="DSA"/>
   <suffix name="ECDH" label="ECDH"/>
@@ -4652,7 +4652,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram_suffixes>
 
 <histogram_suffixes name="DataSaverProxyTypes" separator=".">
-  <owner>tbansal@chromium.org</owner>
+  <owner>tbansal@monyhar.org</owner>
   <suffix name="InsecureProxy.Core"
       label="Over an insecure, core data saver proxy."/>
   <suffix name="InsecureProxy.NonCore"
@@ -5947,7 +5947,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram_suffixes>
 
 <histogram_suffixes name="EngagementScoreBuckets" separator="_">
-  <owner>calamity@chromium.org</owner>
+  <owner>calamity@monyhar.org</owner>
   <suffix name="0" label=""/>
   <suffix name="10" label=""/>
   <suffix name="20" label=""/>
@@ -6076,8 +6076,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram_suffixes>
 
 <histogram_suffixes name="EnterpriseDMServerRequest" separator=".">
-  <owner>poromov@chromium.org</owner>
-  <owner>zmin@chromium.org</owner>
+  <owner>poromov@monyhar.org</owner>
+  <owner>zmin@monyhar.org</owner>
   <suffix name="ActiveDirectoryEnrollPlayUser"
       label="Active Directory Enroll Play User."/>
   <suffix name="ActiveDirectoryPlayActivity"
@@ -6114,8 +6114,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in M91 since the data is no longer monitored.
   </obsolete>
-  <owner>emaxx@chromium.org</owner>
-  <owner>igorcov@chromium.org</owner>
+  <owner>emaxx@monyhar.org</owner>
+  <owner>igorcov@monyhar.org</owner>
   <suffix name="Device" label="Device policy fetch response."/>
   <suffix name="DeviceLocalAccount"
       label="DeviceLocalAccount policy fetch response."/>
@@ -7136,7 +7136,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram_suffixes>
 
 <histogram_suffixes name="GoogleSearchVariations" separator="_">
-  <owner>kmadhusu@chromium.org</owner>
+  <owner>kmadhusu@monyhar.org</owner>
   <suffix name="_PrerenderDisabled"
       label="Counts number of Google searches from various access points in
              the Android Chrome browser when prerendering is disabled via
@@ -7993,7 +7993,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     All relevant histograms have been marked as obsolete as of Sep 2016.
   </obsolete>
-  <owner>macourteau@chromium.org</owner>
+  <owner>macourteau@monyhar.org</owner>
   <suffix name="400" label="Omnibox width &lt; 400"/>
   <suffix name="700" label="Omnibox width &lt; 700"/>
   <suffix name="1200" label="Omnibox width &lt; 1200"/>
@@ -8041,8 +8041,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram_suffixes>
 
 <histogram_suffixes name="IntentToFirstCommitZoom" separator=".">
-  <owner>lizeb@chromium.org</owner>
-  <owner>pasko@chromium.org</owner>
+  <owner>lizeb@monyhar.org</owner>
+  <owner>pasko@monyhar.org</owner>
   <suffix name="ZoomedIn" label="Zoomed in view: shorter range, more buckets."/>
   <suffix name="ZoomedOut"
       label="Zoomed out view: longer time range, less buckets."/>
@@ -8098,7 +8098,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Code removed long ago.
   </obsolete>
-  <owner>pauljensen@chromium.org</owner>
+  <owner>pauljensen@monyhar.org</owner>
   <suffix name="" label="not using Data Reduction Proxy"/>
   <suffix name="_DataReductionProxy" label="using Data Reduction Proxy"/>
   <affected-histogram name="Tabs.iOS_PostRedirectPLT"/>
@@ -8555,7 +8555,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram_suffixes>
 
 <histogram_suffixes name="LevelDBBFEMethods" separator=".">
-  <owner>cmumford@chromium.org</owner>
+  <owner>cmumford@monyhar.org</owner>
   <suffix name="CreateDir" label="ChromiumEnv::CreateDir"/>
   <suffix name="DeleteDir" label="ChromiumEnv::DeleteDir">
     <obsolete>
@@ -8780,7 +8780,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram_suffixes>
 
 <histogram_suffixes name="LevelDBSharedCache" separator=".">
-  <owner>cmumford@chromium.org</owner>
+  <owner>cmumford@monyhar.org</owner>
   <suffix name="Browser"
       label="Cache shared databases whose access pattern is dictated by
              browser code."/>
@@ -10063,8 +10063,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 07/2020. Not used in active investigations.
   </obsolete>
-  <owner>mef@chromium.org</owner>
-  <owner>pauljensen@chromium.org</owner>
+  <owner>mef@monyhar.org</owner>
+  <owner>pauljensen@monyhar.org</owner>
   <suffix name="HTTP2" label="Bidirectional stream that use HTTP2 protocol"/>
   <suffix name="QUIC" label="Bidirectional streams that use QUIC protocol"/>
   <affected-histogram name="Net.BidirectionalStream.ReceivedBytes"/>
@@ -10123,7 +10123,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram_suffixes name="Net_QuicClientHelloRejectReasons_QuicIsSecureOrNot"
     separator=".">
-  <owner>dschinazi@chromium.org</owner>
+  <owner>dschinazi@monyhar.org</owner>
   <owner>src/net/quic/OWNERS</owner>
   <suffix name="Insecure" label="for insecure QUIC.">
     <obsolete>
@@ -10137,7 +10137,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram_suffixes>
 
 <histogram_suffixes name="Net_QuicSession_21CumulativePackets" separator="_">
-  <owner>dschinazi@chromium.org</owner>
+  <owner>dschinazi@monyhar.org</owner>
   <owner>src/net/quic/OWNERS</owner>
   <suffix name="First21"
       label="Only the first group of 21 packets in a connection via"/>
@@ -10148,7 +10148,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram_suffixes>
 
 <histogram_suffixes name="Net_QuicSession_6PacketPatterns" separator="_">
-  <owner>dschinazi@chromium.org</owner>
+  <owner>dschinazi@monyhar.org</owner>
   <owner>src/net/quic/OWNERS</owner>
   <suffix name="First6"
       label="Only the first group of 6 packets in a connection via"/>
@@ -10159,7 +10159,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram_suffixes>
 
 <histogram_suffixes name="Net_QuicSession_PacketReceived" separator="_">
-  <owner>dschinazi@chromium.org</owner>
+  <owner>dschinazi@monyhar.org</owner>
   <owner>src/net/quic/OWNERS</owner>
   <suffix name="Ack"
       label="Only packets that were received by Chrome as well being part of
@@ -10178,7 +10178,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram_suffixes name="Net_QuicSession_PacketReceived_CONNECTION_TYPE"
     separator="_">
-  <owner>dschinazi@chromium.org</owner>
+  <owner>dschinazi@monyhar.org</owner>
   <owner>src/net/quic/OWNERS</owner>
   <suffix name="CONNECTION_2G" label="mobile 2G are tallied."/>
   <suffix name="CONNECTION_3G" label="mobile 3G are tallied."/>
@@ -11390,7 +11390,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram_suffixes>
 
 <histogram_suffixes name="NetErrorCodeSubtype" separator="." ordering="prefix">
-  <owner>csharrison@chromium.org</owner>
+  <owner>csharrison@monyhar.org</owner>
   <suffix name="NTP.Google" label="The Google web NTP"/>
   <suffix name="NTP.Local" label="The local NTP"/>
   <suffix name="NTP.ThirdParty"
@@ -11467,14 +11467,14 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram_suffixes>
 
 <histogram_suffixes name="NetHttpProxyConnectLatencySecure" separator=".">
-  <owner>tbansal@chromium.org</owner>
+  <owner>tbansal@monyhar.org</owner>
   <suffix name="Insecure" label="Insecure proxy"/>
   <suffix name="Secure" label="Secure proxy"/>
   <affected-histogram name="Net.HttpProxy.ConnectLatency"/>
 </histogram_suffixes>
 
 <histogram_suffixes name="NetHttpProxyConnectLatencySuccess" separator=".">
-  <owner>tbansal@chromium.org</owner>
+  <owner>tbansal@monyhar.org</owner>
   <suffix name="Error" label="Connection to proxy resulted in an error"/>
   <suffix name="Success" label="Connection to proxy was successful"/>
   <suffix name="TimedOut" label="Connection to proxy timed out"/>
@@ -11491,7 +11491,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram_suffixes>
 
 <histogram_suffixes name="NetQuicDiskCacheBackend" separator=".">
-  <owner>dschinazi@chromium.org</owner>
+  <owner>dschinazi@monyhar.org</owner>
   <owner>src/net/quic/OWNERS</owner>
   <suffix name="DiskCache" label="DiskCache backend is using disk cache."/>
   <suffix name="MemoryCache" label="DiskCache backend is using memory cache."/>
@@ -15096,7 +15096,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram_suffixes>
 
 <histogram_suffixes name="PrivacyScreenToggleState" separator=".">
-  <owner>tengs@chromium.org</owner>
+  <owner>tengs@monyhar.org</owner>
   <owner>gzadina@google.com</owner>
   <suffix name="Disabled" label=""/>
   <suffix name="Enabled" label=""/>
@@ -15611,7 +15611,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram_suffixes>
 
 <histogram_suffixes name="QuicConnectionType" separator="">
-  <owner>dschinazi@chromium.org</owner>
+  <owner>dschinazi@monyhar.org</owner>
   <owner>src/net/quic/OWNERS</owner>
   <suffix name="ForHTTP" label="Only insecure HTTP connections are counted.">
     <obsolete>
@@ -15649,7 +15649,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram_suffixes>
 
 <histogram_suffixes name="QuicPortSelection" separator="">
-  <owner>dschinazi@chromium.org</owner>
+  <owner>dschinazi@monyhar.org</owner>
   <owner>src/net/quic/OWNERS</owner>
   <suffix name="RandomPort"
       label="The operating system randomly selected a source port for the
@@ -17103,8 +17103,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram_suffixes>
 
 <histogram_suffixes name="SecurityLevel" separator=".">
-  <owner>cthomp@chromium.org</owner>
-  <owner>estark@chromium.org</owner>
+  <owner>cthomp@monyhar.org</owner>
+  <owner>estark@monyhar.org</owner>
   <suffix name="DANGEROUS" label="SecurityLevel is DANGEROUS."/>
   <suffix name="EV_SECURE" label="SecurityLevel is EV_SECURE.">
     <obsolete>
@@ -17143,8 +17143,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram_suffixes name="SendTabToSelfEntryPoint" separator="."
     ordering="prefix">
-  <owner>jeffreycohen@chromium.org</owner>
-  <owner>tgupta@chromium.org</owner>
+  <owner>jeffreycohen@monyhar.org</owner>
+  <owner>tgupta@monyhar.org</owner>
   <owner>chrome-sharing-core@google.com</owner>
   <suffix name="AndroidShareSheet"
       label="Option to show in the android share sheet"/>
@@ -17491,7 +17491,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram_suffixes>
 
 <histogram_suffixes name="ServiceWorkerCache_Cache_MatchSuffixes" separator=".">
-  <owner>wanderview@chromium.org</owner>
+  <owner>wanderview@monyhar.org</owner>
   <suffix name="Hit"
       label="The time to perform a 'match' operation on a given Cache that
              successfully results in a Response."/>
@@ -17508,7 +17508,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram_suffixes name="ServiceWorkerCache_Cache_ProcessOpSuffixes"
     separator=".">
-  <owner>wanderview@chromium.org</owner>
+  <owner>wanderview@monyhar.org</owner>
   <suffix name="DeleteOne"
       label="The time to delete a single Request/Response entry from a Cache.
              This measurement includes times for both existing or
@@ -17609,7 +17609,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram_suffixes name="ServiceWorkerCache_CacheStorage_ProcessOpSuffixes"
     separator=".">
-  <owner>wanderview@chromium.org</owner>
+  <owner>wanderview@monyhar.org</owner>
   <suffix name="Delete"
       label="The time to 'delete' a Cache from the origin's CacheStorage. If
              the Cache is still in use then the actual deletion may be
@@ -17639,7 +17639,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram_suffixes>
 
 <histogram_suffixes name="ServiceWorkerCache_ProcessSuffixes" separator=".">
-  <owner>wanderview@chromium.org</owner>
+  <owner>wanderview@monyhar.org</owner>
   <suffix base="true" name="Browser"
       label="Measurements taken in the browser process on the IO thread."/>
   <suffix base="true" name="Renderer"
@@ -18467,7 +18467,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed as of 07/2014.
   </obsolete>
-  <owner>willchan@chromium.org</owner>
+  <owner>willchan@monyhar.org</owner>
   <suffix name="cwnd10" label="using cwnd policy static 10"/>
   <suffix name="cwnd16" label="using cwnd policy static 16"/>
   <suffix name="cwnd32" label="using cwnd policy static 32"/>
@@ -20239,7 +20239,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram_suffixes>
 
 <histogram_suffixes name="WebFontMissedCache" separator="." ordering="prefix">
-  <owner>toyoshim@chromium.org</owner>
+  <owner>toyoshim@monyhar.org</owner>
   <suffix name="MissedCache" label="On missed cache">
     <obsolete>
       Removed Dec 2020.
@@ -20258,7 +20258,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 10/2017. Related field trial has finished rolling out.
   </obsolete>
-  <owner>toyoshim@chromium.org</owner>
+  <owner>toyoshim@monyhar.org</owner>
   <suffix name="MissedCacheAndInterventionNotTriggered"
       label="On missed cache and intervention not triggered"/>
   <suffix name="MissedCacheAndInterventionTriggered"
@@ -20356,7 +20356,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram_suffixes>
 
 <histogram_suffixes name="WelcomeWin10Variant" separator="_">
-  <owner>tmartino@chromium.org</owner>
+  <owner>tmartino@monyhar.org</owner>
   <suffix name="InlineCombined" label="Inline layout style, combined promo"/>
   <suffix name="InlineDefault"
       label="Inline layout style, default browser promo only"/>

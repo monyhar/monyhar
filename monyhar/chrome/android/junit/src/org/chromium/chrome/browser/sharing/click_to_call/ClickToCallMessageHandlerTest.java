@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sharing.click_to_call;
+package org.monyhar.chrome.browser.sharing.click_to_call;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.any;
@@ -26,13 +26,13 @@ import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowNotification;
 import org.robolectric.shadows.ShadowNotificationManager;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.device.DeviceConditions;
-import org.chromium.chrome.browser.device.ShadowDeviceConditions;
-import org.chromium.chrome.browser.notifications.NotificationConstants;
-import org.chromium.net.ConnectionType;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.device.DeviceConditions;
+import org.monyhar.chrome.browser.device.ShadowDeviceConditions;
+import org.monyhar.chrome.browser.notifications.NotificationConstants;
+import org.monyhar.net.ConnectionType;
 
 /**
  * Tests for ClickToCallMessageHandler that check how we handle Click to Call messages. We either

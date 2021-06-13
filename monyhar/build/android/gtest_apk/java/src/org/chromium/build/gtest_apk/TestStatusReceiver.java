@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.build.gtest_apk;
+package org.monyhar.build.gtest_apk;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
    Receives test status broadcasts sent from
-    {@link org.chromium.test.reporter.TestStatusReporter}.
+    {@link org.monyhar.test.reporter.TestStatusReporter}.
  */
 public class TestStatusReceiver extends BroadcastReceiver {
     private static final String TAG = "test_reporter";

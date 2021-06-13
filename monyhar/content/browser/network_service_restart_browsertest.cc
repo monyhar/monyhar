@@ -1170,7 +1170,7 @@ IN_PROC_BROWSER_TEST_F(NetworkServiceRestartBrowserTest,
   GURL final_resource_url(
       embedded_test_server()->GetURL("bar.com", "/site_isolation/json.txt"));
   EXPECT_EQ(
-      "{ \"name\" : \"chromium\" }\n",
+      "{ \"name\" : \"monyhar\" }\n",
       EvalJs(shell(), JsReplace("fetch($1).then(response => response.text())",
                                 final_resource_url)));
 }

@@ -35,7 +35,7 @@ struct ShortcutInfo;
 class SkBitmap;
 
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.webapps
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.webapps
 enum class WebApkInstallResult {
   SUCCESS = 0,
   FAILURE = 1,

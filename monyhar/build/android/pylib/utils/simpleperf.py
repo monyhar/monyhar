@@ -38,7 +38,7 @@ def _GetSpecifiedPID(device, package_name, process_specifier):
     pass
 
   # Check for exact process name; can be any of these formats:
-  #   <package>:<process name>, i.e. 'org.chromium.chrome:sandboxed_process0'
+  #   <package>:<process name>, i.e. 'org.monyhar.chrome:sandboxed_process0'
   #   :<process name>, i.e. ':sandboxed_process0'
   #   <process name>, i.e. 'sandboxed_process0'
   full_process_name = process_specifier
@@ -231,7 +231,7 @@ def ConvertSimpleperfToPprof(simpleperf_out_path, build_directory,
                        'Either the process was idle for the entire profiling '
                        'period, or something went very wrong (and you should '
                        'file a bug at crbug.com/new with component '
-                       'Speed>Tracing, and assign it to szager@chromium.org).'
+                       'Speed>Tracing, and assign it to szager@monyhar.org).'
                        % simpleperf_out_path)
 
   # Recreate the directory structure locally, and symlink unstripped libs.

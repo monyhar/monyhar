@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.app.tab_activity_glue;
+package org.monyhar.chrome.browser.app.tab_activity_glue;
 
 import android.app.Activity;
 import android.content.Context;
@@ -15,21 +15,21 @@ import android.text.TextUtils;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.UserData;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.app.tabmodel.AsyncTabParamsManagerSingleton;
-import org.chromium.chrome.browser.compositor.CompositorViewHolder;
-import org.chromium.chrome.browser.document.ChromeLauncherActivity;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabDelegateFactory;
-import org.chromium.chrome.browser.tab.TabImpl;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabReparentingParams;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.UserData;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.app.tabmodel.AsyncTabParamsManagerSingleton;
+import org.monyhar.chrome.browser.compositor.CompositorViewHolder;
+import org.monyhar.chrome.browser.document.ChromeLauncherActivity;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabDelegateFactory;
+import org.monyhar.chrome.browser.tab.TabImpl;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabReparentingParams;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Takes care of reparenting a Tab object from one Activity to another.

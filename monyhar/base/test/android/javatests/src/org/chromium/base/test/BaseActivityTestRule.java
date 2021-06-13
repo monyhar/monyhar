@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.test;
+package org.monyhar.base.test;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -17,9 +17,9 @@ import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.test.util.ApplicationTestUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.test.util.ApplicationTestUtils;
 
 /**
  * A replacement for ActivityTestRule, designed for use in Chromium. This implementation supports

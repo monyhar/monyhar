@@ -1,5 +1,5 @@
 {
-  "chromium_linux64_debug": {
+  "monyhar_linux64_debug": {
     "gn_args": {
       "is_component_build": true,
       "is_debug": true,
@@ -7,7 +7,7 @@
       "use_goma": true
     }
   },
-  "chromium_mac_debug": {
+  "monyhar_mac_debug": {
     "gn_args": {
       "is_component_build": true,
       "is_debug": true,

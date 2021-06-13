@@ -8,44 +8,44 @@ import("//chrome/browser/buildflags.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/tab/CurrentTabObserver.java",
-    "java/src/org/chromium/chrome/browser/tab/EmptyTabObserver.java",
-    "java/src/org/chromium/chrome/browser/tab/SadTab.java",
-    "java/src/org/chromium/chrome/browser/tab/SadTabView.java",
-    "java/src/org/chromium/chrome/browser/tab/Tab.java",
-    "java/src/org/chromium/chrome/browser/tab/TabAttributeKeys.java",
-    "java/src/org/chromium/chrome/browser/tab/TabAttributes.java",
-    "java/src/org/chromium/chrome/browser/tab/TabCreationState.java",
-    "java/src/org/chromium/chrome/browser/tab/TabDelegateFactory.java",
-    "java/src/org/chromium/chrome/browser/tab/TabHidingType.java",
-    "java/src/org/chromium/chrome/browser/tab/TabLifecycle.java",
-    "java/src/org/chromium/chrome/browser/tab/TabObserver.java",
-    "java/src/org/chromium/chrome/browser/tab/TabResolver.java",
-    "java/src/org/chromium/chrome/browser/tab/TabState.java",
-    "java/src/org/chromium/chrome/browser/tab/TabViewManager.java",
-    "java/src/org/chromium/chrome/browser/tab/TabViewProvider.java",
-    "java/src/org/chromium/chrome/browser/tab/TabWebContentsDelegateAndroid.java",
-    "java/src/org/chromium/chrome/browser/tab/TabWebContentsUserData.java",
-    "java/src/org/chromium/chrome/browser/tab/TrustedCdn.java",
-    "java/src/org/chromium/chrome/browser/tab/WebContentsState.java",
-    "java/src/org/chromium/chrome/browser/tab/WebContentsStateBridge.java",
-    "java/src/org/chromium/chrome/browser/tab/state/CriticalPersistedTabData.java",
-    "java/src/org/chromium/chrome/browser/tab/state/CriticalPersistedTabDataObserver.java",
-    "java/src/org/chromium/chrome/browser/tab/state/EncryptedFilePersistedTabDataStorage.java",
-    "java/src/org/chromium/chrome/browser/tab/state/FilePersistedTabDataStorage.java",
-    "java/src/org/chromium/chrome/browser/tab/state/LevelDBPersistedDataStorage.java",
-    "java/src/org/chromium/chrome/browser/tab/state/LevelDBPersistedTabDataStorage.java",
-    "java/src/org/chromium/chrome/browser/tab/state/LevelDBPersistedTabDataStorageFactory.java",
-    "java/src/org/chromium/chrome/browser/tab/state/MockPersistedTabData.java",
-    "java/src/org/chromium/chrome/browser/tab/state/MockPersistedTabDataStorage.java",
-    "java/src/org/chromium/chrome/browser/tab/state/PersistedDataStorage.java",
-    "java/src/org/chromium/chrome/browser/tab/state/PersistedTabData.java",
-    "java/src/org/chromium/chrome/browser/tab/state/PersistedTabDataConfiguration.java",
-    "java/src/org/chromium/chrome/browser/tab/state/PersistedTabDataFactory.java",
-    "java/src/org/chromium/chrome/browser/tab/state/PersistedTabDataStorage.java",
-    "java/src/org/chromium/chrome/browser/tab/state/PersistedTabDataStorageFactory.java",
-    "java/src/org/chromium/chrome/browser/tab/state/ShoppingPersistedTabData.java",
-    "java/src/org/chromium/chrome/browser/tab/state/StorePersistedTabData.java",
+    "java/src/org/monyhar/chrome/browser/tab/CurrentTabObserver.java",
+    "java/src/org/monyhar/chrome/browser/tab/EmptyTabObserver.java",
+    "java/src/org/monyhar/chrome/browser/tab/SadTab.java",
+    "java/src/org/monyhar/chrome/browser/tab/SadTabView.java",
+    "java/src/org/monyhar/chrome/browser/tab/Tab.java",
+    "java/src/org/monyhar/chrome/browser/tab/TabAttributeKeys.java",
+    "java/src/org/monyhar/chrome/browser/tab/TabAttributes.java",
+    "java/src/org/monyhar/chrome/browser/tab/TabCreationState.java",
+    "java/src/org/monyhar/chrome/browser/tab/TabDelegateFactory.java",
+    "java/src/org/monyhar/chrome/browser/tab/TabHidingType.java",
+    "java/src/org/monyhar/chrome/browser/tab/TabLifecycle.java",
+    "java/src/org/monyhar/chrome/browser/tab/TabObserver.java",
+    "java/src/org/monyhar/chrome/browser/tab/TabResolver.java",
+    "java/src/org/monyhar/chrome/browser/tab/TabState.java",
+    "java/src/org/monyhar/chrome/browser/tab/TabViewManager.java",
+    "java/src/org/monyhar/chrome/browser/tab/TabViewProvider.java",
+    "java/src/org/monyhar/chrome/browser/tab/TabWebContentsDelegateAndroid.java",
+    "java/src/org/monyhar/chrome/browser/tab/TabWebContentsUserData.java",
+    "java/src/org/monyhar/chrome/browser/tab/TrustedCdn.java",
+    "java/src/org/monyhar/chrome/browser/tab/WebContentsState.java",
+    "java/src/org/monyhar/chrome/browser/tab/WebContentsStateBridge.java",
+    "java/src/org/monyhar/chrome/browser/tab/state/CriticalPersistedTabData.java",
+    "java/src/org/monyhar/chrome/browser/tab/state/CriticalPersistedTabDataObserver.java",
+    "java/src/org/monyhar/chrome/browser/tab/state/EncryptedFilePersistedTabDataStorage.java",
+    "java/src/org/monyhar/chrome/browser/tab/state/FilePersistedTabDataStorage.java",
+    "java/src/org/monyhar/chrome/browser/tab/state/LevelDBPersistedDataStorage.java",
+    "java/src/org/monyhar/chrome/browser/tab/state/LevelDBPersistedTabDataStorage.java",
+    "java/src/org/monyhar/chrome/browser/tab/state/LevelDBPersistedTabDataStorageFactory.java",
+    "java/src/org/monyhar/chrome/browser/tab/state/MockPersistedTabData.java",
+    "java/src/org/monyhar/chrome/browser/tab/state/MockPersistedTabDataStorage.java",
+    "java/src/org/monyhar/chrome/browser/tab/state/PersistedDataStorage.java",
+    "java/src/org/monyhar/chrome/browser/tab/state/PersistedTabData.java",
+    "java/src/org/monyhar/chrome/browser/tab/state/PersistedTabDataConfiguration.java",
+    "java/src/org/monyhar/chrome/browser/tab/state/PersistedTabDataFactory.java",
+    "java/src/org/monyhar/chrome/browser/tab/state/PersistedTabDataStorage.java",
+    "java/src/org/monyhar/chrome/browser/tab/state/PersistedTabDataStorageFactory.java",
+    "java/src/org/monyhar/chrome/browser/tab/state/ShoppingPersistedTabData.java",
+    "java/src/org/monyhar/chrome/browser/tab/state/StorePersistedTabData.java",
   ]
 
   srcjar_deps = [
@@ -94,7 +94,7 @@ android_library("java") {
   ]
 
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
-  resources_package = "org.chromium.chrome.browser.tab"
+  resources_package = "org.monyhar.chrome.browser.tab"
 }
 
 android_resources("java_resources") {
@@ -111,14 +111,14 @@ android_resources("java_resources") {
 
 generate_jni("jni_headers") {
   sources = [
-    "java/src/org/chromium/chrome/browser/tab/TrustedCdn.java",
-    "java/src/org/chromium/chrome/browser/tab/WebContentsStateBridge.java",
-    "java/src/org/chromium/chrome/browser/tab/state/LevelDBPersistedDataStorage.java",
+    "java/src/org/monyhar/chrome/browser/tab/TrustedCdn.java",
+    "java/src/org/monyhar/chrome/browser/tab/WebContentsStateBridge.java",
+    "java/src/org/monyhar/chrome/browser/tab/state/LevelDBPersistedDataStorage.java",
   ]
 }
 
 proto_java_library("critical_persisted_tab_data_proto_java") {
-  proto_path = "java/src/org/chromium/chrome/browser/tab/state/proto"
+  proto_path = "java/src/org/monyhar/chrome/browser/tab/state/proto"
   sources = [
     "$proto_path/critical_persisted_tab_data.proto",
     "$proto_path/shopping_persisted_tab_data.proto",
@@ -127,7 +127,7 @@ proto_java_library("critical_persisted_tab_data_proto_java") {
 }
 
 proto_java_library("optimization_guide_protos_java") {
-  proto_path = "java/src/org/chromium/chrome/browser/tab/state/proto"
+  proto_path = "java/src/org/monyhar/chrome/browser/tab/state/proto"
   sources = [ "$proto_path/price_tracking.proto" ]
 }
 
@@ -135,7 +135,7 @@ android_library("junit") {
   bypass_platform_checks = true
   testonly = true
   sources =
-      [ "java/src/org/chromium/chrome/browser/tab/CurrentTabObserverTest.java" ]
+      [ "java/src/org/monyhar/chrome/browser/tab/CurrentTabObserverTest.java" ]
 
   deps = [
     ":java",

@@ -100,26 +100,26 @@ __gCrWeb.common.isElementVisible = function(element) {
  *
  * This method aims to provide the same logic as method
  *     bool WebInputElement::isTextField() const
- * in chromium/src/third_party/WebKit/Source/WebKit/chromium/src/
+ * in monyhar/src/third_party/WebKit/Source/WebKit/monyhar/src/
  * WebInputElement.cpp, where this information is from
  *     bool HTMLInputElement::isTextField() const
  *     {
  *       return m_inputType->isTextField();
  *     }
- * (chromium/src/third_party/WebKit/Source/WebCore/html/HTMLInputElement.cpp)
+ * (monyhar/src/third_party/WebKit/Source/WebCore/html/HTMLInputElement.cpp)
  *
  * The implementation here is based on the following:
  *
  * - Method bool InputType::isTextField() defaults to be false and it is
  *   override to return true only in HTMLInputElement's subclass
- *   TextFieldInputType (chromium/src/third_party/WebKit/Source/WebCore/html/
+ *   TextFieldInputType (monyhar/src/third_party/WebKit/Source/WebCore/html/
  *   TextFieldInputType.h).
  *
  * - The implementation here considers all the subclasses of
  *   TextFieldInputType: NumberInputType and BaseTextInputType, which has
  *   subclasses EmailInputType, PasswordInputType, SearchInputType,
  *   TelephoneInputType, TextInputType, URLInputType. (All these classes are
- *   defined in chromium/src/third_party/WebKit/Source/WebCore/html/)
+ *   defined in monyhar/src/third_party/WebKit/Source/WebCore/html/)
  *
  * @param {Element} element An element to examine if it is a text field.
  * @return {boolean} true if element has type=text.

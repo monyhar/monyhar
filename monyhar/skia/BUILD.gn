@@ -515,11 +515,11 @@ component("skia") {
     configs -= [ "//build/config/clang:extra_warnings" ]
   }
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
     ":skia_config",
     ":skia_library_config",
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
   ]
   public_configs = [ ":skia_config" ]
 
@@ -646,11 +646,11 @@ template("skia_source_set") {
       configs += [ "//build/config/compiler:optimize_max" ]
     }
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
     configs += [
       ":skia_config",
       ":skia_library_config",
-      "//build/config/compiler:no_chromium_code",
+      "//build/config/compiler:no_monyhar_code",
     ]
     public_configs = [ ":skia_config" ]
 

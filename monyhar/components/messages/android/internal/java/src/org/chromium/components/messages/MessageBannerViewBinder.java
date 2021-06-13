@@ -2,32 +2,32 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.messages;
+package org.monyhar.components.messages;
 
-import static org.chromium.components.messages.MessageBannerProperties.ALPHA;
-import static org.chromium.components.messages.MessageBannerProperties.DESCRIPTION;
-import static org.chromium.components.messages.MessageBannerProperties.DESCRIPTION_MAX_LINES;
-import static org.chromium.components.messages.MessageBannerProperties.ICON;
-import static org.chromium.components.messages.MessageBannerProperties.ICON_RESOURCE_ID;
-import static org.chromium.components.messages.MessageBannerProperties.ICON_TINT_COLOR;
-import static org.chromium.components.messages.MessageBannerProperties.ON_SECONDARY_ACTION;
-import static org.chromium.components.messages.MessageBannerProperties.ON_TOUCH_RUNNABLE;
-import static org.chromium.components.messages.MessageBannerProperties.PRIMARY_BUTTON_CLICK_LISTENER;
-import static org.chromium.components.messages.MessageBannerProperties.PRIMARY_BUTTON_TEXT;
-import static org.chromium.components.messages.MessageBannerProperties.SECONDARY_BUTTON_MENU_TEXT;
-import static org.chromium.components.messages.MessageBannerProperties.SECONDARY_ICON;
-import static org.chromium.components.messages.MessageBannerProperties.SECONDARY_ICON_CONTENT_DESCRIPTION;
-import static org.chromium.components.messages.MessageBannerProperties.SECONDARY_ICON_RESOURCE_ID;
-import static org.chromium.components.messages.MessageBannerProperties.TITLE;
-import static org.chromium.components.messages.MessageBannerProperties.TRANSLATION_X;
-import static org.chromium.components.messages.MessageBannerProperties.TRANSLATION_Y;
+import static org.monyhar.components.messages.MessageBannerProperties.ALPHA;
+import static org.monyhar.components.messages.MessageBannerProperties.DESCRIPTION;
+import static org.monyhar.components.messages.MessageBannerProperties.DESCRIPTION_MAX_LINES;
+import static org.monyhar.components.messages.MessageBannerProperties.ICON;
+import static org.monyhar.components.messages.MessageBannerProperties.ICON_RESOURCE_ID;
+import static org.monyhar.components.messages.MessageBannerProperties.ICON_TINT_COLOR;
+import static org.monyhar.components.messages.MessageBannerProperties.ON_SECONDARY_ACTION;
+import static org.monyhar.components.messages.MessageBannerProperties.ON_TOUCH_RUNNABLE;
+import static org.monyhar.components.messages.MessageBannerProperties.PRIMARY_BUTTON_CLICK_LISTENER;
+import static org.monyhar.components.messages.MessageBannerProperties.PRIMARY_BUTTON_TEXT;
+import static org.monyhar.components.messages.MessageBannerProperties.SECONDARY_BUTTON_MENU_TEXT;
+import static org.monyhar.components.messages.MessageBannerProperties.SECONDARY_ICON;
+import static org.monyhar.components.messages.MessageBannerProperties.SECONDARY_ICON_CONTENT_DESCRIPTION;
+import static org.monyhar.components.messages.MessageBannerProperties.SECONDARY_ICON_RESOURCE_ID;
+import static org.monyhar.components.messages.MessageBannerProperties.TITLE;
+import static org.monyhar.components.messages.MessageBannerProperties.TRANSLATION_X;
+import static org.monyhar.components.messages.MessageBannerProperties.TRANSLATION_Y;
 
 import android.annotation.SuppressLint;
 
 import androidx.appcompat.content.res.AppCompatResources;
 
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * View binder of Message banner.

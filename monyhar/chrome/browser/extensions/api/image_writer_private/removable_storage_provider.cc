@@ -18,7 +18,7 @@ static base::LazyInstance<scoped_refptr<StorageDeviceList>>::DestructorAtExit
     g_test_device_list = LAZY_INSTANCE_INITIALIZER;
 
 // TODO(haven): Udev code may be duplicated in the Chrome codebase.
-// https://code.google.com/p/chromium/issues/detail?id=284898
+// https://code.google.com/p/monyhar/issues/detail?id=284898
 
 void RemovableStorageProvider::GetAllDevices(DeviceListReadyCallback callback) {
   DCHECK_CURRENTLY_ON(content::BrowserThread::UI);

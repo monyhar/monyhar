@@ -37,36 +37,36 @@ android_library("java") {
     "//ui/android:ui_utils_java",
   ]
   sources = [
-    "java/src/org/chromium/chrome/browser/signin/ui/ConfirmImportSyncDataDialog.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/ConfirmManagedSyncDataDialog.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/ConfirmSyncDataStateMachine.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/ConfirmSyncDataStateMachineDelegate.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/ConsentTextTracker.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/GoogleActivityController.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/PersonalizedSigninPromoView.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/SignOutDialogFragment.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/SigninPromoController.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/SigninPromoUtil.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/SigninScrollView.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/SigninUtils.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/SigninView.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/SyncConsentActivityLauncher.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/account_picker/AccountPickerBottomSheetCoordinator.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/account_picker/AccountPickerBottomSheetMediator.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/account_picker/AccountPickerBottomSheetProperties.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/account_picker/AccountPickerBottomSheetView.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/account_picker/AccountPickerBottomSheetViewBinder.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/account_picker/AccountPickerCoordinator.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/account_picker/AccountPickerDelegate.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/account_picker/AccountPickerDelegateImpl.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/account_picker/AccountPickerDialogCoordinator.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/account_picker/AccountPickerFeatureUtils.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/account_picker/AccountPickerMediator.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/account_picker/AccountPickerProperties.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/account_picker/ExistingAccountRowViewBinder.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/account_picker/OnClickListenerViewBinder.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/ConfirmImportSyncDataDialog.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/ConfirmManagedSyncDataDialog.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/ConfirmSyncDataStateMachine.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/ConfirmSyncDataStateMachineDelegate.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/ConsentTextTracker.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/GoogleActivityController.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/PersonalizedSigninPromoView.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/SignOutDialogFragment.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/SigninPromoController.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/SigninPromoUtil.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/SigninScrollView.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/SigninUtils.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/SigninView.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/SyncConsentActivityLauncher.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/account_picker/AccountPickerBottomSheetCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/account_picker/AccountPickerBottomSheetMediator.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/account_picker/AccountPickerBottomSheetProperties.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/account_picker/AccountPickerBottomSheetView.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/account_picker/AccountPickerBottomSheetViewBinder.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/account_picker/AccountPickerCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/account_picker/AccountPickerDelegate.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/account_picker/AccountPickerDelegateImpl.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/account_picker/AccountPickerDialogCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/account_picker/AccountPickerFeatureUtils.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/account_picker/AccountPickerMediator.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/account_picker/AccountPickerProperties.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/account_picker/ExistingAccountRowViewBinder.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/account_picker/OnClickListenerViewBinder.java",
   ]
-  resources_package = "org.chromium.chrome.browser.signin.ui"
+  resources_package = "org.monyhar.chrome.browser.signin.ui"
 }
 
 android_resources("java_resources") {
@@ -115,13 +115,13 @@ android_library("junit") {
   bypass_platform_checks = true
   testonly = true
   sources = [
-    "junit/src/org/chromium/chrome/browser/signin/ui/ConfirmManagedSyncDataDialogTest.java",
-    "junit/src/org/chromium/chrome/browser/signin/ui/ConfirmSyncDataStateMachineDelegateTest.java",
-    "junit/src/org/chromium/chrome/browser/signin/ui/ConfirmSyncDataStateMachineTest.java",
-    "junit/src/org/chromium/chrome/browser/signin/ui/SignOutDialogFragmentTest.java",
-    "junit/src/org/chromium/chrome/browser/signin/ui/SigninPromoUtilLaunchSigninPromoTest.java",
-    "junit/src/org/chromium/chrome/browser/signin/ui/account_picker/AccountPickerDelegateImplTest.java",
-    "junit/src/org/chromium/chrome/browser/signin/ui/account_picker/AccountPickerMediatorTest.java",
+    "junit/src/org/monyhar/chrome/browser/signin/ui/ConfirmManagedSyncDataDialogTest.java",
+    "junit/src/org/monyhar/chrome/browser/signin/ui/ConfirmSyncDataStateMachineDelegateTest.java",
+    "junit/src/org/monyhar/chrome/browser/signin/ui/ConfirmSyncDataStateMachineTest.java",
+    "junit/src/org/monyhar/chrome/browser/signin/ui/SignOutDialogFragmentTest.java",
+    "junit/src/org/monyhar/chrome/browser/signin/ui/SigninPromoUtilLaunchSigninPromoTest.java",
+    "junit/src/org/monyhar/chrome/browser/signin/ui/account_picker/AccountPickerDelegateImplTest.java",
+    "junit/src/org/monyhar/chrome/browser/signin/ui/account_picker/AccountPickerMediatorTest.java",
   ]
   deps = [
     ":java",
@@ -153,13 +153,13 @@ android_library("junit") {
 android_library("javatests") {
   testonly = true
   sources = [
-    "java/src/org/chromium/chrome/browser/signin/ui/ConfirmImportSyncDataDialogTest.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/ConfirmManagedSyncDataDialogIntegrationTest.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/ConfirmSyncDataIntegrationTest.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/SignOutDialogRenderTest.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/account_picker/AccountPickerBottomSheetRenderTest.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/account_picker/AccountPickerBottomSheetTest.java",
-    "java/src/org/chromium/chrome/browser/signin/ui/account_picker/AccountPickerDialogTest.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/ConfirmImportSyncDataDialogTest.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/ConfirmManagedSyncDataDialogIntegrationTest.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/ConfirmSyncDataIntegrationTest.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/SignOutDialogRenderTest.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/account_picker/AccountPickerBottomSheetRenderTest.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/account_picker/AccountPickerBottomSheetTest.java",
+    "java/src/org/monyhar/chrome/browser/signin/ui/account_picker/AccountPickerDialogTest.java",
   ]
   deps = [
     ":java",

@@ -7,17 +7,17 @@ rolldeps() {
 }
 
 updatereadme() {
-  STEP="update README.chromium" &&
+  STEP="update README.monyhar" &&
   HB_VERSION=$(git -C third_party/harfbuzz-ng/src/ describe --long) &&
   HB_COMMIT=$(git -C third_party/harfbuzz-ng/src/ rev-parse HEAD) &&
   HB_DATE=$(date "+%Y%m%d")
   HB_CPE_VERSION=$(echo ${HB_VERSION} | sed -r -e's/^([0-9]+)\.([0-9]+)\.([0-9]+)-[0-9]+-g[0-9a-f]+$/\1.\2.\3/') &&
   [ ${HB_VERSION} != ${HB_CPE_VERSION} ] &&
-  sed -i'' -e "s/^Version: .*\$/Version: ${HB_VERSION%-*}/" third_party/harfbuzz-ng/README.chromium &&
-  sed -i'' -e "s@^CPEPrefix: cpe:/a:harfbuzz_project:harfbuzz:.*\$@CPEPrefix: cpe:/a:harfbuzz_project:harfbuzz:${HB_CPE_VERSION}@" third_party/harfbuzz-ng/README.chromium &&
-  sed -i'' -e "s/^Revision: .*\$/Revision: ${HB_COMMIT}/" third_party/harfbuzz-ng/README.chromium &&
-  sed -i'' -e "s/^Date: .*\$/Date: ${HB_DATE}/" third_party/harfbuzz-ng/README.chromium &&
-  git add third_party/harfbuzz-ng/README.chromium
+  sed -i'' -e "s/^Version: .*\$/Version: ${HB_VERSION%-*}/" third_party/harfbuzz-ng/README.monyhar &&
+  sed -i'' -e "s@^CPEPrefix: cpe:/a:harfbuzz_project:harfbuzz:.*\$@CPEPrefix: cpe:/a:harfbuzz_project:harfbuzz:${HB_CPE_VERSION}@" third_party/harfbuzz-ng/README.monyhar &&
+  sed -i'' -e "s/^Revision: .*\$/Revision: ${HB_COMMIT}/" third_party/harfbuzz-ng/README.monyhar &&
+  sed -i'' -e "s/^Date: .*\$/Date: ${HB_DATE}/" third_party/harfbuzz-ng/README.monyhar &&
+  git add third_party/harfbuzz-ng/README.monyhar
 }
 
 previousrev() {

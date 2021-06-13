@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.paint_preview;
+package org.monyhar.chrome.browser.paint_preview;
 
-import static org.chromium.base.test.util.Batch.PER_CLASS;
-import static org.chromium.chrome.browser.paint_preview.TabbedPaintPreviewTest.assertAttachedAndShown;
+import static org.monyhar.base.test.util.Batch.PER_CLASS;
+import static org.monyhar.chrome.browser.paint_preview.TabbedPaintPreviewTest.assertAttachedAndShown;
 
 import android.support.test.uiautomator.UiObjectNotFoundException;
 
@@ -22,20 +22,20 @@ import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Mockito;
 
-import org.chromium.base.Callback;
-import org.chromium.base.test.util.Batch;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.paint_preview.services.PaintPreviewTabService;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.ui.appmenu.AppMenuCoordinator;
-import org.chromium.chrome.browser.ui.appmenu.AppMenuTestSupport;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.batch.BlankCTATabInitialStateRule;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.paintpreview.player.PlayerManager;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.paint_preview.services.PaintPreviewTabService;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.ui.appmenu.AppMenuCoordinator;
+import org.monyhar.chrome.browser.ui.appmenu.AppMenuTestSupport;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.batch.BlankCTATabInitialStateRule;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.paintpreview.player.PlayerManager;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.concurrent.ExecutionException;
 

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.tools.audio_focus_grabber;
+package org.monyhar.tools.audio_focus_grabber;
 
 import android.app.Activity;
 import android.content.Intent;

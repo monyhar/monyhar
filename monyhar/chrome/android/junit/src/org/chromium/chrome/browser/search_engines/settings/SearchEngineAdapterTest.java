@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.search_engines.settings;
+package org.monyhar.chrome.browser.search_engines.settings;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.contains;
@@ -13,8 +13,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.components.search_engines.TemplateUrl;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.components.search_engines.TemplateUrl;
 
 import java.util.ArrayList;
 import java.util.Arrays;

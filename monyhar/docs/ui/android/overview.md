@@ -16,17 +16,17 @@ Chrome for Android has a color palette defined in [//ui/android/java/res/values/
 
 For more information on selecting the right color, see [Night Mode on Chrome Android](night_mode.md).
 
-Text should be styled with a pre-defined text appearance from [//ui/android/java/res/values-v17/styles.xml](/ui/android/java/res/values-v17/styles.xml). If leading (aka line height) is needed, use [org.chromium.ui.widget.TextViewWithLeading](/ui/android/java/src/org/chromium/ui/widget/TextViewWithLeading.java) with `app:leading` set to one of the pre-defined *_leading dimensions in [//ui/android/java/res/values/dimens.xml](/ui/android/java/res/values/dimens.xml).
+Text should be styled with a pre-defined text appearance from [//ui/android/java/res/values-v17/styles.xml](/ui/android/java/res/values-v17/styles.xml). If leading (aka line height) is needed, use [org.monyhar.ui.widget.TextViewWithLeading](/ui/android/java/src/org/monyhar/ui/widget/TextViewWithLeading.java) with `app:leading` set to one of the pre-defined *_leading dimensions in [//ui/android/java/res/values/dimens.xml](/ui/android/java/res/values/dimens.xml).
 
 ## Widgets
 
 The Chromium code base contains a number of wrappers around Android classes (to smooth over bugs or save on binary size) and many UI widgets that provide Chrome-specific behavior and/or styling.
 
-These can be found in [//components/browser_ui/widget/android/](/components/browser_ui/widget/android/), [//ui/android/](/ui/android/), and [//chrome/android/java/src/org/chromium/chrome/browser/widget/](/chrome/android/java/src/org/chromium/chrome/browser/widget/). There is an ongoing effort to consolidate all widgets in //components/browser_ui/widget/android.
+These can be found in [//components/browser_ui/widget/android/](/components/browser_ui/widget/android/), [//ui/android/](/ui/android/), and [//chrome/android/java/src/org/monyhar/chrome/browser/widget/](/chrome/android/java/src/org/monyhar/chrome/browser/widget/). There is an ongoing effort to consolidate all widgets in //components/browser_ui/widget/android.
 
 ## MVC
 
-UI development should follow a modified Model-View-Controller pattern. MVC base classes live in [//ui/android/java/src/org/chromium/ui/modelutil](/ui/android/java/src/org/chromium/ui/modelutil/).
+UI development should follow a modified Model-View-Controller pattern. MVC base classes live in [//ui/android/java/src/org/monyhar/ui/modelutil](/ui/android/java/src/org/monyhar/ui/modelutil/).
 
 The following guides introduce MVC in Chrome for Android:
 

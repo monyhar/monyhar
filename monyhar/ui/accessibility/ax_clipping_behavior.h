@@ -10,7 +10,7 @@ namespace ui {
 // The clipping behavior to perform on bounds. Clipping limits a node's bounding
 // box to the visible sizes of it's ancestors - which may be hidden or scrolled
 // out of view. For a longer discussion on clipping behavior see the link below.
-// https://chromium.googlesource.com/chromium/src/+/lkgr/docs/accessibility/offscreen.md
+// https://monyhar.googlesource.com/monyhar/src/+/lkgr/docs/accessibility/offscreen.md
 //   kUnclipped: Do not apply clipping to bound results
 //   kClipped:   Apply clipping to bound results
 enum class AXClippingBehavior { kUnclipped, kClipped };

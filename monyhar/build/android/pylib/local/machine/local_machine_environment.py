@@ -3,7 +3,7 @@
 # found in the LICENSE file.
 
 from __future__ import absolute_import
-import devil_chromium
+import devil_monyhar
 from pylib import constants
 from pylib.base import environment
 
@@ -13,7 +13,7 @@ class LocalMachineEnvironment(environment.Environment):
   def __init__(self, _args, output_manager, _error_func):
     super(LocalMachineEnvironment, self).__init__(output_manager)
 
-    devil_chromium.Initialize(
+    devil_monyhar.Initialize(
         output_directory=constants.GetOutDirectory())
 
   #override

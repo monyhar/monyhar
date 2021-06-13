@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
 import android.content.Context;
 import android.os.StrictMode;
@@ -13,12 +13,12 @@ import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.PathUtils;
-import org.chromium.net.impl.JavaCronetEngine;
-import org.chromium.net.impl.JavaCronetProvider;
-import org.chromium.net.impl.UserAgent;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.PathUtils;
+import org.monyhar.net.impl.JavaCronetEngine;
+import org.monyhar.net.impl.JavaCronetProvider;
+import org.monyhar.net.impl.UserAgent;
 
 import java.io.File;
 import java.lang.annotation.Annotation;
@@ -33,8 +33,8 @@ import java.net.URLStreamHandlerFactory;
  * Custom TestRule for Cronet instrumentation tests.
  *
  * TODO(yolandyan): refactor this to three TestRules, one for setUp and tearDown,
- * one for tests under org.chromium.net.urlconnection, one for test under
- * org.chromium.net
+ * one for tests under org.monyhar.net.urlconnection, one for test under
+ * org.monyhar.net
  */
 public class CronetTestRule implements TestRule {
     private static final String PRIVATE_DATA_DIRECTORY_SUFFIX = "cronet_test";
@@ -134,7 +134,7 @@ public class CronetTestRule implements TestRule {
             Log.i(TAG,
                     desc.getMethodName() + " skipped because it requires API " + requiredApiVersion
                             + " but only API " + getMaximumAvailableApiLevel() + " is present.");
-        } else if (packageName.equals("org.chromium.net.urlconnection")) {
+        } else if (packageName.equals("org.monyhar.net.urlconnection")) {
             try {
                 if (desc.getAnnotation(CompareDefaultWithCronet.class) != null) {
                     // Run with the default HttpURLConnection implementation first.
@@ -150,7 +150,7 @@ public class CronetTestRule implements TestRule {
             } catch (Throwable e) {
                 throw new Throwable("Cronet Test failed.", e);
             }
-        } else if (packageName.equals("org.chromium.net")) {
+        } else if (packageName.equals("org.monyhar.net")) {
             try {
                 base.evaluate();
                 if (desc.getAnnotation(OnlyRunNativeCronet.class) == null) {
@@ -262,7 +262,7 @@ public class CronetTestRule implements TestRule {
     }
 
     /**
-     * Annotation for test methods in org.chromium.net.urlconnection pacakage that runs them
+     * Annotation for test methods in org.monyhar.net.urlconnection pacakage that runs them
      * against both Cronet's HttpURLConnection implementation, and against the system's
      * HttpURLConnection implementation.
      */
@@ -271,7 +271,7 @@ public class CronetTestRule implements TestRule {
     public @interface CompareDefaultWithCronet {}
 
     /**
-     * Annotation for test methods in org.chromium.net.urlconnection pacakage that runs them
+     * Annotation for test methods in org.monyhar.net.urlconnection pacakage that runs them
      * only against Cronet's HttpURLConnection implementation, and not against the system's
      * HttpURLConnection implementation.
      */
@@ -280,7 +280,7 @@ public class CronetTestRule implements TestRule {
     public @interface OnlyRunCronetHttpURLConnection {}
 
     /**
-     * Annotation for test methods in org.chromium.net package that disables rerunning the test
+     * Annotation for test methods in org.monyhar.net package that disables rerunning the test
      * against the Java-only implementation. When this annotation is present the test is only run
      * against the native implementation.
      */

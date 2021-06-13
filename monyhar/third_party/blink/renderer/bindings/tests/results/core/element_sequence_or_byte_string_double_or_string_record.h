@@ -92,7 +92,7 @@ struct V8TypeOf<ElementSequenceOrByteStringDoubleOrStringRecord> {
 // We need to set canInitializeWithMemset=true because HeapVector supports
 // items that can initialize with memset or have a vtable. It is safe to
 // set canInitializeWithMemset=true for a union type object in practice.
-// See https://codereview.chromium.org/1118993002/#msg5 for more details.
+// See https://codereview.monyhar.org/1118993002/#msg5 for more details.
 WTF_ALLOW_MOVE_AND_INIT_WITH_MEM_FUNCTIONS(blink::ElementSequenceOrByteStringDoubleOrStringRecord)
 
 #endif  // THIRD_PARTY_BLINK_RENDERER_BINDINGS_TESTS_RESULTS_CORE_ELEMENT_SEQUENCE_OR_BYTE_STRING_DOUBLE_OR_STRING_RECORD_H_

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.signin.ui;
+package org.monyhar.chrome.browser.signin.ui;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
@@ -14,11 +14,11 @@ import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.signin.services.IdentityServicesProvider;
-import org.chromium.components.browser_ui.settings.ManagedPreferencesUtils;
-import org.chromium.components.browser_ui.widget.RadioButtonWithDescription;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.signin.services.IdentityServicesProvider;
+import org.monyhar.components.browser_ui.settings.ManagedPreferencesUtils;
+import org.monyhar.components.browser_ui.widget.RadioButtonWithDescription;
 
 import java.util.Arrays;
 import java.util.List;

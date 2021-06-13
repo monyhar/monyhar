@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tabmodel;
+package org.monyhar.chrome.browser.tabmodel;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.base.supplier.Supplier;
+import org.monyhar.base.supplier.Supplier;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

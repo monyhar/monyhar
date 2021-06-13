@@ -2,10 +2,10 @@
 # Copyright 2020 The Chromium Authors. All rights reserved.
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
-r'''Get chromium OWNERS information for android directories.
+r'''Get monyhar OWNERS information for android directories.
 
    tools/android/modularization/owners/getowners.py -- \
-   --git-dir ~/chromium/src \
+   --git-dir ~/monyhar/src \
    -o ~/owners.json
 '''
 
@@ -29,7 +29,7 @@ import owners_input
 
 def main():
   arg_parser = argparse.ArgumentParser(
-      description='Traverses the chromium codebase gathering OWNERS data.')
+      description='Traverses the monyhar codebase gathering OWNERS data.')
 
   required_arg_group = arg_parser.add_argument_group('required arguments')
   required_arg_group.add_argument('--git-dir',
@@ -51,19 +51,19 @@ def main():
 
   start_time = time.time()
 
-  chromium_root = os.path.expanduser(arguments.git_dir)
+  monyhar_root = os.path.expanduser(arguments.git_dir)
   # Guarantee path does not end with '/'
-  chromium_root = os.path.normpath(chromium_root)
+  monyhar_root = os.path.normpath(monyhar_root)
 
-  paths_to_search = owners_input.get_android_folders(chromium_root,
+  paths_to_search = owners_input.get_android_folders(monyhar_root,
                                                      arguments.limit_to_dir)
 
   all_dir_metadata = owners_dir_metadata.read_raw_dir_metadata(
-      chromium_root, arguments.dirmd_path)
+      monyhar_root, arguments.dirmd_path)
 
   with multiprocessing.Pool() as p:
     data = p.map(
-        functools.partial(_process_requested_path, chromium_root,
+        functools.partial(_process_requested_path, monyhar_root,
                           all_dir_metadata), paths_to_search)
 
   owners_exporter.to_json_file(data, arguments.output)
@@ -73,22 +73,22 @@ def main():
 
 
 def _process_requested_path(
-    chromium_root: str, all_dir_metadata: Dict,
+    monyhar_root: str, all_dir_metadata: Dict,
     requested_path: owners_data.RequestedPath
 ) -> Tuple[owners_data.RequestedPath, owners_data.PathData]:
   '''Gets the necessary information from the git repository.'''
 
-  owners_file = _find_owners_file(chromium_root, requested_path.path)
-  owners = _build_owners_info(chromium_root, owners_file)
-  git_data = _fetch_git_data(chromium_root, requested_path)
-  dir_metadata = owners_dir_metadata.build_dir_metadata(chromium_root,
+  owners_file = _find_owners_file(monyhar_root, requested_path.path)
+  owners = _build_owners_info(monyhar_root, owners_file)
+  git_data = _fetch_git_data(monyhar_root, requested_path)
+  dir_metadata = owners_dir_metadata.build_dir_metadata(monyhar_root,
                                                         all_dir_metadata,
                                                         requested_path)
   path_data = owners_data.PathData(owners, git_data, dir_metadata)
   return (requested_path, path_data)
 
 
-def _fetch_git_data(chromium_root: str,
+def _fetch_git_data(monyhar_root: str,
                     requested_path: owners_data.RequestedPath
                     ) -> owners_data.GitData:
   '''Fetches git data for a given directory for the last 182 days.
@@ -105,7 +105,7 @@ def _fetch_git_data(chromium_root: str,
 
   ignored_authors = ('autoroll', 'roller')
 
-  git_log = owners_git.get_log(chromium_root, requested_path.path, 182)
+  git_log = owners_git.get_log(monyhar_root, requested_path.path, 182)
   git_data = owners_data.GitData()
 
   for commit_msg in git_log.split(line_delimiter):
@@ -139,20 +139,20 @@ def _fetch_git_data(chromium_root: str,
         break
 
   git_data.lines_of_code = owners_git.get_total_lines_of_code(
-      chromium_root, requested_path.path)
-  git_data.number_of_files = owners_git.get_total_files(chromium_root,
+      monyhar_root, requested_path.path)
+  git_data.number_of_files = owners_git.get_total_files(monyhar_root,
                                                         requested_path.path)
-  git_data.git_head = owners_git.get_head_hash(chromium_root)
-  git_data.git_head_time = owners_git.get_last_commit_date(chromium_root)
+  git_data.git_head = owners_git.get_head_hash(monyhar_root)
+  git_data.git_head_time = owners_git.get_last_commit_date(monyhar_root)
 
   return git_data
 
 
-def _find_owners_file(chromium_root: str, filepath: str) -> str:
+def _find_owners_file(monyhar_root: str, filepath: str) -> str:
   '''Returns the path to the OWNERS file for the given path (or up the tree).'''
 
-  if not filepath.startswith(os.path.join(chromium_root, '')):
-    filepath = os.path.join(chromium_root, filepath)
+  if not filepath.startswith(os.path.join(monyhar_root, '')):
+    filepath = os.path.join(monyhar_root, filepath)
 
   if os.path.isdir(filepath):
     ofile = os.path.join(filepath, 'OWNERS')
@@ -166,20 +166,20 @@ def _find_owners_file(chromium_root: str, filepath: str) -> str:
   if os.path.exists(ofile):
     return ofile
   else:
-    return _find_owners_file(chromium_root, os.path.dirname(filepath))
+    return _find_owners_file(monyhar_root, os.path.dirname(filepath))
 
 
 owners_map: Dict[str, owners_data.Owners] = {}
 
 
-def _build_owners_info(chromium_root: str,
+def _build_owners_info(monyhar_root: str,
                        owners_filepath: str) -> owners_data.Owners:
   '''Creates a synthetic representation of an OWNERS file.'''
 
   if not owners_filepath: return None
 
-  assert owners_filepath.startswith(os.path.join(chromium_root, ''))
-  owners_file = owners_filepath[len(chromium_root) + 1:]
+  assert owners_filepath.startswith(os.path.join(monyhar_root, ''))
+  owners_file = owners_filepath[len(monyhar_root) + 1:]
   if owners_file in owners_map:
     return owners_map[owners_file]
 
@@ -203,12 +203,12 @@ def _build_owners_info(chromium_root: str,
 
     owners_map[owners.owners_file] = owners
 
-    _propagate_down_owner_variables(chromium_root, owners)
+    _propagate_down_owner_variables(monyhar_root, owners)
 
     return owners
 
 
-def _propagate_down_owner_variables(chromium_root: str,
+def _propagate_down_owner_variables(monyhar_root: str,
                                     owners: owners_data.Owners) -> None:
   '''For a given Owners, make sure that parent OWNERS are propagated down.
 
@@ -231,8 +231,8 @@ def _propagate_down_owner_variables(chromium_root: str,
       parent_dir = parent_owners.file_inherited
     else:
       parent_dir = os.path.dirname(os.path.dirname(parent_owners.owners_file))
-    parent_owners_file = _find_owners_file(chromium_root, parent_dir)
-    parent_owners = _build_owners_info(chromium_root, parent_owners_file)
+    parent_owners_file = _find_owners_file(monyhar_root, parent_dir)
+    parent_owners = _build_owners_info(monyhar_root, parent_owners_file)
 
 
 if __name__ == '__main__':

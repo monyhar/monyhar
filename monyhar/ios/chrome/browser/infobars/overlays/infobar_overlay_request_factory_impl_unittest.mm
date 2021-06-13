@@ -73,7 +73,7 @@ class InfobarOverlayRequestFactoryImplTest : public PlatformTest {
 
 // Tests that the factory creates a save passwords infobar request.
 TEST_F(InfobarOverlayRequestFactoryImplTest, SavePasswords) {
-  GURL url("https://chromium.test");
+  GURL url("https://monyhar.test");
   std::unique_ptr<InfoBarDelegate> delegate =
       MockIOSChromeSavePasswordInfoBarDelegate::Create(@"username", @"password",
                                                        url);
@@ -95,7 +95,7 @@ TEST_F(InfobarOverlayRequestFactoryImplTest, SavePasswords) {
 
 // Tests that the factory creates an update passwords infobar request.
 TEST_F(InfobarOverlayRequestFactoryImplTest, UpdatePasswords) {
-  GURL url("https://chromium.test");
+  GURL url("https://monyhar.test");
   std::unique_ptr<InfoBarDelegate> delegate =
       MockIOSChromeSavePasswordInfoBarDelegate::Create(@"username", @"password",
                                                        url);
@@ -118,7 +118,7 @@ TEST_F(InfobarOverlayRequestFactoryImplTest, UpdatePasswords) {
 
 // Tests that the factory creates an confirm infobar request.
 TEST_F(InfobarOverlayRequestFactoryImplTest, Confirm) {
-  GURL url("https://chromium.test");
+  GURL url("https://monyhar.test");
   std::unique_ptr<MockInfobarDelegate> delegate =
       std::make_unique<MockInfobarDelegate>();
   InfoBarIOS infobar(InfobarType::kInfobarTypeConfirm, std::move(delegate));
@@ -136,7 +136,7 @@ TEST_F(InfobarOverlayRequestFactoryImplTest, Confirm) {
 
 // Tests that the factory creates a save card request.
 TEST_F(InfobarOverlayRequestFactoryImplTest, SaveCard) {
-  GURL url("https://chromium.test");
+  GURL url("https://monyhar.test");
   InfoBarIOS infobar(InfobarType::kInfobarTypeSaveCard,
                      MockAutofillSaveCardInfoBarDelegateMobileFactory::
                          CreateMockAutofillSaveCardInfoBarDelegateMobileFactory(
@@ -155,7 +155,7 @@ TEST_F(InfobarOverlayRequestFactoryImplTest, SaveCard) {
 
 // Tests that the factory creates a translate request.
 TEST_F(InfobarOverlayRequestFactoryImplTest, Translate) {
-  GURL url("https://chromium.test");
+  GURL url("https://monyhar.test");
   InfoBarIOS infobar(
       InfobarType::kInfobarTypeTranslate,
       translate_delegate_factory_.CreateMockTranslateInfoBarDelegate(
@@ -174,7 +174,7 @@ TEST_F(InfobarOverlayRequestFactoryImplTest, Translate) {
 
 // Tests that the factory creates a save address profile request.
 TEST_F(InfobarOverlayRequestFactoryImplTest, SaveAddressProfile) {
-  GURL url("https://chromium.test");
+  GURL url("https://monyhar.test");
   InfoBarIOS infobar(
       InfobarType::kInfobarTypeSaveAutofillAddressProfile,
       MockAutofillSaveUpdateAddressProfileDelegateIOSFactory::

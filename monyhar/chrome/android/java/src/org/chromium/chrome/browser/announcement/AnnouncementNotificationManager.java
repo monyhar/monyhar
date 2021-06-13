@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.announcement;
+package org.monyhar.chrome.browser.announcement;
 
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
@@ -11,24 +11,24 @@ import android.content.Intent;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.customtabs.CustomTabActivity;
-import org.chromium.chrome.browser.firstrun.FirstRunStatus;
-import org.chromium.chrome.browser.init.BrowserParts;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
-import org.chromium.chrome.browser.init.EmptyBrowserParts;
-import org.chromium.chrome.browser.notifications.NotificationUmaTracker;
-import org.chromium.chrome.browser.notifications.NotificationWrapperBuilderFactory;
-import org.chromium.chrome.browser.notifications.channels.ChromeChannelDefinitions;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxy;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxyImpl;
-import org.chromium.components.browser_ui.notifications.NotificationMetadata;
-import org.chromium.components.browser_ui.notifications.NotificationWrapper;
-import org.chromium.components.browser_ui.notifications.NotificationWrapperBuilder;
-import org.chromium.components.browser_ui.notifications.PendingIntentProvider;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivity;
+import org.monyhar.chrome.browser.firstrun.FirstRunStatus;
+import org.monyhar.chrome.browser.init.BrowserParts;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.chrome.browser.init.EmptyBrowserParts;
+import org.monyhar.chrome.browser.notifications.NotificationUmaTracker;
+import org.monyhar.chrome.browser.notifications.NotificationWrapperBuilderFactory;
+import org.monyhar.chrome.browser.notifications.channels.ChromeChannelDefinitions;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxy;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxyImpl;
+import org.monyhar.components.browser_ui.notifications.NotificationMetadata;
+import org.monyhar.components.browser_ui.notifications.NotificationWrapper;
+import org.monyhar.components.browser_ui.notifications.NotificationWrapperBuilder;
+import org.monyhar.components.browser_ui.notifications.PendingIntentProvider;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -41,8 +41,8 @@ public class AnnouncementNotificationManager {
     private static final String ANNOUNCEMENT_NOTIFICATION_TAG = "announcement_notification";
     private static final int ANNOUNCEMENT_NOTIFICATION_ID = 100;
     private static final String EXTRA_INTENT_TYPE =
-            "org.chromium.chrome.browser.announcement.EXTRA_INTENT_TYPE";
-    private static final String EXTRA_URL = "org.chromium.chrome.browser.announcement.EXTRA_URL";
+            "org.monyhar.chrome.browser.announcement.EXTRA_INTENT_TYPE";
+    private static final String EXTRA_URL = "org.monyhar.chrome.browser.announcement.EXTRA_URL";
 
     @IntDef({IntentType.UNKNOWN, IntentType.CLICK, IntentType.CLOSE, IntentType.ACK,
             IntentType.OPEN})

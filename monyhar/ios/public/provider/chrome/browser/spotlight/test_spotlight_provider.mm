@@ -13,15 +13,15 @@ bool TestSpotlightProvider::IsSpotlightEnabled() {
 }
 
 NSString* TestSpotlightProvider::GetBookmarkDomain() {
-  return @"org.chromium.bookmarks";
+  return @"org.monyhar.bookmarks";
 }
 
 NSString* TestSpotlightProvider::GetTopSitesDomain() {
-  return @"org.chromium.topsites";
+  return @"org.monyhar.topsites";
 }
 
 NSString* TestSpotlightProvider::GetActionsDomain() {
-  return @"org.chromium.actions";
+  return @"org.monyhar.actions";
 }
 
 NSString* TestSpotlightProvider::GetCustomAttributeItemID() {
@@ -29,5 +29,5 @@ NSString* TestSpotlightProvider::GetCustomAttributeItemID() {
 }
 
 NSArray* TestSpotlightProvider::GetAdditionalKeywords() {
-  return @[ @"chromium" ];
+  return @[ @"monyhar" ];
 }

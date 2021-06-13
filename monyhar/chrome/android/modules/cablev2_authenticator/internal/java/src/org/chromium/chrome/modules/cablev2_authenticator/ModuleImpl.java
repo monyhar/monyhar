@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.modules.cablev2_authenticator;
+package org.monyhar.chrome.modules.cablev2_authenticator;
 
 import androidx.fragment.app.Fragment;
 
-import org.chromium.base.annotations.UsedByReflection;
-import org.chromium.chrome.browser.webauth.authenticator.CableAuthenticatorUI;
+import org.monyhar.base.annotations.UsedByReflection;
+import org.monyhar.chrome.browser.webauth.authenticator.CableAuthenticatorUI;
 
 /**
  * This is the implementation of the interface to the caBLE v2 Authenticator module. It should

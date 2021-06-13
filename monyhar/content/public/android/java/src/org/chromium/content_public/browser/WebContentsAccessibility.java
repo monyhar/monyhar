@@ -1,7 +1,7 @@
 // Copyright 2018 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.content_public.browser;
+package org.monyhar.content_public.browser;
 
 import android.annotation.TargetApi;
 import android.os.Build;
@@ -13,7 +13,7 @@ import android.view.accessibility.AccessibilityNodeProvider;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.content.browser.accessibility.WebContentsAccessibilityImpl;
+import org.monyhar.content.browser.accessibility.WebContentsAccessibilityImpl;
 
 /**
  * Interface providing native accessibility for a {@link WebContents}. Actual native

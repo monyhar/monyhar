@@ -18,7 +18,7 @@ using base::android::ScopedJavaLocalRef;
 namespace device {
 
 // BluetoothAdapterAndroid, along with the Java class
-// org.chromium.device.bluetooth.BluetoothAdapter, implement BluetoothAdapter.
+// org.monyhar.device.bluetooth.BluetoothAdapter, implement BluetoothAdapter.
 //
 // The GATT Profile over Low Energy is supported, but not Classic Bluetooth at
 // this time. LE GATT support has been initially built out to support Web
@@ -128,7 +128,7 @@ class DEVICE_BLUETOOTH_EXPORT BluetoothAdapterAndroid final
   base::android::ScopedJavaLocalRef<jobject> CreateAndroidFilter(
       const BluetoothDiscoveryFilter* discovery_filter);
 
-  // Java object org.chromium.device.bluetooth.ChromeBluetoothAdapter.
+  // Java object org.monyhar.device.bluetooth.ChromeBluetoothAdapter.
   base::android::ScopedJavaGlobalRef<jobject> j_adapter_;
 
  private:

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.omaha;
+package org.monyhar.chrome.test.omaha;
 
 import android.util.Log;
 

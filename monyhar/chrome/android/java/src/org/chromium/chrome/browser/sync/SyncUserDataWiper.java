@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sync;
+package org.monyhar.chrome.browser.sync;
 
-import org.chromium.base.Promise;
-import org.chromium.chrome.browser.bookmarks.BookmarkModel;
-import org.chromium.chrome.browser.browsing_data.BrowsingDataBridge;
-import org.chromium.chrome.browser.browsing_data.BrowsingDataBridge.OnClearBrowsingDataListener;
-import org.chromium.chrome.browser.browsing_data.BrowsingDataType;
-import org.chromium.chrome.browser.browsing_data.TimePeriod;
+import org.monyhar.base.Promise;
+import org.monyhar.chrome.browser.bookmarks.BookmarkModel;
+import org.monyhar.chrome.browser.browsing_data.BrowsingDataBridge;
+import org.monyhar.chrome.browser.browsing_data.BrowsingDataBridge.OnClearBrowsingDataListener;
+import org.monyhar.chrome.browser.browsing_data.BrowsingDataType;
+import org.monyhar.chrome.browser.browsing_data.TimePeriod;
 
 /**
  * A class to wipe the user's bookmarks and all types of sync data.

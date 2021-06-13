@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.contextualsearch;
+package org.monyhar.chrome.browser.contextualsearch;
 
-import org.chromium.chrome.browser.contextualsearch.ContextualSearchFieldTrial.ContextualSearchSetting;
+import org.monyhar.chrome.browser.contextualsearch.ContextualSearchFieldTrial.ContextualSearchSetting;
 
 /**
  * Provides a {@link ContextualSearchHeuristic} for the duration of a Tap being either brief or

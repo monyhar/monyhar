@@ -49,7 +49,7 @@ NSString* const kOnLoadCheckScript = @"isOnLoadTextVisible()";
 NSString* const kNoOpCheckScript = @"isNoOpTextVisible()";
 
 // URL of a sample file-based page.
-const char kSampleFileBasedURL[] = "/chromium_logo_page.html";
+const char kSampleFileBasedURL[] = "/monyhar_logo_page.html";
 
 }  // namespace
 

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.modelutil;
+package org.monyhar.ui.modelutil;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import androidx.annotation.LayoutRes;
 
-import org.chromium.ui.modelutil.MVCListAdapter.ViewBuilder;
+import org.monyhar.ui.modelutil.MVCListAdapter.ViewBuilder;
 
 /**
  * Helper class that inflates view from XML layout.

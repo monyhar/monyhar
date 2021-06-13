@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.webfeed;
+package org.monyhar.chrome.browser.feed.webfeed;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -18,19 +18,19 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.DrawableRes;
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.browser.feed.webfeed.WebFeedBridge.WebFeedMetadata;
-import org.chromium.chrome.browser.feed.webfeed.WebFeedSnackbarController.FeedLauncher;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.ui.appmenu.AppMenuHandler;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
-import org.chromium.components.browser_ui.widget.RoundedIconGenerator;
-import org.chromium.components.favicon.IconType;
-import org.chromium.components.favicon.LargeIconBridge;
-import org.chromium.components.url_formatter.UrlFormatter;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.widget.ChipView;
-import org.chromium.ui.widget.LoadingView;
-import org.chromium.url.GURL;
+import org.monyhar.chrome.browser.feed.webfeed.WebFeedBridge.WebFeedMetadata;
+import org.monyhar.chrome.browser.feed.webfeed.WebFeedSnackbarController.FeedLauncher;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.ui.appmenu.AppMenuHandler;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.components.browser_ui.widget.RoundedIconGenerator;
+import org.monyhar.components.favicon.IconType;
+import org.monyhar.components.favicon.LargeIconBridge;
+import org.monyhar.components.url_formatter.UrlFormatter;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.widget.ChipView;
+import org.monyhar.ui.widget.LoadingView;
+import org.monyhar.url.GURL;
 
 /**
  * Specific {@link FrameLayout} that displays the Web Feed footer in the main menu.

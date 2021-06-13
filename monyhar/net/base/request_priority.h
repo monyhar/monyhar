@@ -12,7 +12,7 @@ namespace net {
 // Prioritization used in various parts of the networking code such
 // as connection prioritization and resource loading prioritization.
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.net
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.net
 // GENERATED_JAVA_CLASS_NAME_OVERRIDE: RequestPriority
 //
 // This enum should be synchronized with the enum NetRequestPriority in

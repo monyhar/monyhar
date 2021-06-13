@@ -6,7 +6,7 @@
 
 This script takes a list of json test results files, the format of which is
 described in
-https://chromium.googlesource.com/chromium/src/+/main/docs/testing/json_test_results_format.md.
+https://monyhar.googlesource.com/monyhar/src/+/main/docs/testing/json_test_results_format.md.
 For each file, it looks for test artifacts embedded in each test. It detects
 this by looking for the top level "artifact_type_info" key.
 
@@ -190,7 +190,7 @@ def main():
                       )
   parser.add_argument('--artifact-root', required=True, type=os.path.realpath,
                       help='The file path where artifact locations are rooted.')
-  parser.add_argument('--bucket', default='chromium-test-artifacts',
+  parser.add_argument('--bucket', default='monyhar-test-artifacts',
                       help='The google storage bucket to upload artifacts to.'
                       ' The default bucket is public and accessible by anyone.')
   parser.add_argument('-q', '--quiet', action='store_true',

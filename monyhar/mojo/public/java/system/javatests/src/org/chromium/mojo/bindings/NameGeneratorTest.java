@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo.bindings;
+package org.monyhar.mojo.bindings;
 
 import androidx.test.filters.SmallTest;
 
@@ -10,10 +10,10 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Batch;
-import org.chromium.mojo.bindings.test.mojom.sample.NameGeneratorConstants;
-import org.chromium.mojo.bindings.test.mojom.sample.SupportedCases;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.mojo.bindings.test.mojom.sample.NameGeneratorConstants;
+import org.monyhar.mojo.bindings.test.mojom.sample.SupportedCases;
 
 /**
  * Test mojom constant names generated for java.

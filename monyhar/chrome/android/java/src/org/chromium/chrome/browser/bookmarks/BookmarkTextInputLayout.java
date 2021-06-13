@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.bookmarks;
+package org.monyhar.chrome.browser.bookmarks;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -13,7 +13,7 @@ import android.util.AttributeSet;
 
 import com.google.android.material.textfield.TextInputLayout;
 
-import org.chromium.chrome.R;
+import org.monyhar.chrome.R;
 
 /**
  * Wraps around {@link TextInputLayout} to implement a basic empty field error behavior

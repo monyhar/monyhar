@@ -459,7 +459,7 @@
       "use_goma": true
     }
   },
-  "mac_chromium_10.11_rel_ng": {
+  "mac_monyhar_10.11_rel_ng": {
     "gn_args": {
       "dcheck_always_on": true,
       "ffmpeg_branding": "Chrome",
@@ -470,7 +470,7 @@
       "use_goma": true
     }
   },
-  "mac_chromium_10.12_rel_ng": {
+  "mac_monyhar_10.12_rel_ng": {
     "gn_args": {
       "dcheck_always_on": true,
       "ffmpeg_branding": "Chrome",
@@ -481,7 +481,7 @@
       "use_goma": true
     }
   },
-  "mac_chromium_10.13_rel_ng": {
+  "mac_monyhar_10.13_rel_ng": {
     "gn_args": {
       "dcheck_always_on": true,
       "is_component_build": false,
@@ -490,7 +490,7 @@
       "use_goma": true
     }
   },
-  "mac_chromium_10.14_rel_ng": {
+  "mac_monyhar_10.14_rel_ng": {
     "gn_args": {
       "dcheck_always_on": true,
       "is_component_build": false,
@@ -499,7 +499,7 @@
       "use_goma": true
     }
   },
-  "mac_chromium_10.15_rel_ng": {
+  "mac_monyhar_10.15_rel_ng": {
     "gn_args": {
       "dcheck_always_on": true,
       "enable_nacl": false,
@@ -509,7 +509,7 @@
       "use_goma": true
     }
   },
-  "mac_chromium_11.0_rel_ng": {
+  "mac_monyhar_11.0_rel_ng": {
     "gn_args": {
       "dcheck_always_on": true,
       "is_component_build": false,
@@ -518,7 +518,7 @@
       "use_goma": true
     }
   },
-  "mac_chromium_archive_rel_ng": {
+  "mac_monyhar_archive_rel_ng": {
     "gn_args": {
       "enable_stripping": true,
       "is_component_build": false,
@@ -527,7 +527,7 @@
       "use_goma": true
     }
   },
-  "mac_chromium_asan_rel_ng": {
+  "mac_monyhar_asan_rel_ng": {
     "gn_args": {
       "dcheck_always_on": true,
       "enable_nacl": false,
@@ -537,7 +537,7 @@
       "use_goma": true
     }
   },
-  "mac_chromium_compile_dbg_ng": {
+  "mac_monyhar_compile_dbg_ng": {
     "gn_args": {
       "ffmpeg_branding": "Chrome",
       "is_component_build": true,
@@ -547,7 +547,7 @@
       "use_goma": true
     }
   },
-  "mac_chromium_compile_rel_ng": {
+  "mac_monyhar_compile_rel_ng": {
     "gn_args": {
       "dcheck_always_on": true,
       "ffmpeg_branding": "Chrome",
@@ -558,7 +558,7 @@
       "use_goma": true
     }
   },
-  "mac_chromium_dbg_ng": {
+  "mac_monyhar_dbg_ng": {
     "gn_args": {
       "ffmpeg_branding": "Chrome",
       "is_component_build": true,

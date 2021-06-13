@@ -43,7 +43,7 @@ we are being explicit that any ancestor clipping a node can make it offscreen,
 not just a rootWebArea or scrollable ancestor.
 
 ### Technical Implementation
-Offscreen is calculated in [AXTree::RelativeToTreeBounds](https://cs.chromium.org/chromium/src/ui/accessibility/ax_tree.cc).
+Offscreen is calculated in [AXTree::RelativeToTreeBounds](https://cs.monyhar.org/monyhar/src/ui/accessibility/ax_tree.cc).
 In this function, we walk up the accessibility tree adjusting a node's bounding
 box to the frame of its ancestors. If the box is clipped because it lies
 outside an ancestor's bounds, and that ancestor clips its children (i.e.
@@ -94,7 +94,7 @@ not currently visible. Without clipping you end up with elements floating
 outside of windows.
 
 ### Technical implementation
-A node's location and size are calculated in[AXTree::RelativeToTreeBounds](https://cs.chromium.org/chromium/src/ui/accessibility/ax_tree.cc),
+A node's location and size are calculated in[AXTree::RelativeToTreeBounds](https://cs.monyhar.org/monyhar/src/ui/accessibility/ax_tree.cc),
 and so closely tied to the offscreen calculation. In this function, we walk up
 the accessibility tree adjusting a node's bounding box to the frame of its
 ancestors.
@@ -120,7 +120,7 @@ size of the nearest ancestor which has size. However, this node will be marked
 
     * This is useful for exposing nodes to screen reader users.
 
-In addition, [AXTree::RelativeToTreeBounds](https://cs.chromium.org/chromium/src/ui/accessibility/ax_tree.cc)
+In addition, [AXTree::RelativeToTreeBounds](https://cs.monyhar.org/monyhar/src/ui/accessibility/ax_tree.cc)
 is used to determine how location and size may be clipped by ancestors,
 allowing bounding boxes to reflect the location of a node clipped to its
 ancestors.

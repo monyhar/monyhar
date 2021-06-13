@@ -166,7 +166,7 @@ const wchar_t kChromeExePathForTests[] = L"google\\chrome\\application";
 const wchar_t kMasterPreferencesFileNameForTests[] = L"master_preferences";
 const char kMasterPreferencesJsonForTests[] = R"(
     {
-      "homepage": "http://dev.chromium.org/",
+      "homepage": "http://dev.monyhar.org/",
       "extensions": {
         "settings": {
           "ababababcdcdcdcdefefefefghghghgh": {

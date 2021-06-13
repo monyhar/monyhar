@@ -31,7 +31,7 @@ namespace ui {
 namespace {
 
 const char kDndSelection[] = "XdndSelection";
-const char kRendererTaint[] = "chromium/x-renderer-taint";
+const char kRendererTaint[] = "monyhar/x-renderer-taint";
 
 const char kNetscapeURL[] = "_NETSCAPE_URL";
 

@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omaha;
+package org.monyhar.chrome.browser.omaha;
 
 import android.text.TextUtils;
 import android.util.Log;
 
-import org.chromium.chrome.browser.omaha.OmahaBase.VersionConfig;
-import org.chromium.chrome.browser.omaha.XMLParser.Node;
+import org.monyhar.chrome.browser.omaha.OmahaBase.VersionConfig;
+import org.monyhar.chrome.browser.omaha.XMLParser.Node;
 
 /**
  * Parses XML responses from the Omaha Update Server.

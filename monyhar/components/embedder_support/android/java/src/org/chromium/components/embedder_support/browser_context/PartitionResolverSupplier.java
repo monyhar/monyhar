@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.embedder_support.browser_context;
+package org.monyhar.components.embedder_support.browser_context;
 
-import org.chromium.base.supplier.OneshotSupplierImpl;
+import org.monyhar.base.supplier.OneshotSupplierImpl;
 
 /**
  * Shared access point for components to fetch the singleton embedder specific implementation of

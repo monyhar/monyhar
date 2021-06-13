@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant;
+package org.monyhar.chrome.browser.autofill_assistant;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -21,13 +21,13 @@ import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.greaterThan;
 
-import static org.chromium.base.test.util.CriteriaHelper.DEFAULT_MAX_TIME_TO_POLL;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.createDefaultTriggerScriptUI;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.scrollIntoView;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.tapElement;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilKeyboardMatchesCondition;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilViewAssertionTrue;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilViewMatchesCondition;
+import static org.monyhar.base.test.util.CriteriaHelper.DEFAULT_MAX_TIME_TO_POLL;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.createDefaultTriggerScriptUI;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.scrollIntoView;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.tapElement;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilKeyboardMatchesCondition;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilViewAssertionTrue;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilViewMatchesCondition;
 
 import android.os.Build.VERSION_CODES;
 import android.support.test.InstrumentationRegistry;
@@ -43,37 +43,37 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.base.test.util.FlakyTest;
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.autofill_assistant.proto.ActionProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ChipProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.Empty;
-import org.chromium.chrome.browser.autofill_assistant.proto.GetTriggerScriptsResponseProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.PromptProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.SelectorProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.SupportedScriptProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.SupportedScriptProto.PresentationProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.TriggerScriptConditionProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.TriggerScriptConditionsProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.TriggerScriptProto;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.signin.services.UnifiedConsentServiceBridge;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.content_public.browser.GestureListenerManager;
-import org.chromium.content_public.browser.GestureStateListener;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.content_public.browser.test.util.TouchCommon;
-import org.chromium.net.test.EmbeddedTestServer;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.base.test.util.FlakyTest;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ActionProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ChipProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.Empty;
+import org.monyhar.chrome.browser.autofill_assistant.proto.GetTriggerScriptsResponseProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.PromptProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.SelectorProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.SupportedScriptProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.SupportedScriptProto.PresentationProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.TriggerScriptConditionProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.TriggerScriptConditionsProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.TriggerScriptProto;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.signin.services.UnifiedConsentServiceBridge;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.content_public.browser.GestureListenerManager;
+import org.monyhar.content_public.browser.GestureStateListener;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.content_public.browser.test.util.TouchCommon;
+import org.monyhar.net.test.EmbeddedTestServer;
 
 import java.util.ArrayList;
 import java.util.Arrays;

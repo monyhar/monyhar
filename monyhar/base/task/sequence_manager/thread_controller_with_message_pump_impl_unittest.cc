@@ -658,7 +658,7 @@ TEST_F(ThreadControllerWithMessagePumpTest, NativeNestedMessageLoop) {
 
         thread_controller_.SetTaskExecutionAllowed(false);
 
-        // Simulate a subsequent PostTask by the chromium task after
+        // Simulate a subsequent PostTask by the monyhar task after
         // we've left the native loop. This should not ScheduleWork
         // on the pump because the ThreadController will do that
         // after this task finishes.

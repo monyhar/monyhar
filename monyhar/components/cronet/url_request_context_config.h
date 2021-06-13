@@ -33,7 +33,7 @@ namespace cronet {
 // should be kept more separate from applying the configuration.
 struct URLRequestContextConfig {
   // Type of HTTP cache.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.net.impl
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.net.impl
   enum HttpCacheType {
     // No HTTP cache.
     DISABLED,

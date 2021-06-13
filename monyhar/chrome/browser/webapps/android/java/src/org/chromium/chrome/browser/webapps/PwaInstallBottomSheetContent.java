@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps;
+package org.monyhar.chrome.browser.webapps;
 
 import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetContent;
-import org.chromium.components.webapps.AddToHomescreenViewDelegate;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetContent;
+import org.monyhar.components.webapps.AddToHomescreenViewDelegate;
 
 /**
  * The class handling the bottom sheet install for PWA installs. The UI is shown on construction

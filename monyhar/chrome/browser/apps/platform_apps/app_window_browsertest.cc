@@ -131,7 +131,7 @@ class AppWindowAPITest : public extensions::PlatformAppBrowserTest {
   }
 };
 
-// These tests are flaky after https://codereview.chromium.org/57433010/.
+// These tests are flaky after https://codereview.monyhar.org/57433010/.
 // See http://crbug.com/319613.
 
 IN_PROC_BROWSER_TEST_F(AppWindowAPITest, TestCreate) {

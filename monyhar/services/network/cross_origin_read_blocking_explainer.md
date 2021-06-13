@@ -6,7 +6,7 @@ browsers before they reach the web page.
 CORB reduces the risk of leaking sensitive data by keeping it further from
 cross-origin web pages.  In most browsers, it keeps such data out of untrusted
 script execution contexts.  In browsers with
-[Site Isolation](https://www.chromium.org/Home/chromium-security/site-isolation),
+[Site Isolation](https://www.monyhar.org/Home/monyhar-security/site-isolation),
 it can keep such data out of untrusted renderer processes entirely, helping even
 against side channel attacks.
 
@@ -68,7 +68,7 @@ CORB mitigates the following attack vectors:
     speculative side channel attack (e.g. [Spectre](https://spectreattack.com))
     to read the secret.
   * CORB can prevent this class of attacks when used in tandem with
-    [Site Isolation](https://www.chromium.org/Home/chromium-security/site-isolation),
+    [Site Isolation](https://www.monyhar.org/Home/monyhar-security/site-isolation),
     by preventing the JSON resource from being present in the
     memory of a process hosting a cross-site page.
 
@@ -79,7 +79,7 @@ modified as follows:
 * The response body is replaced with an empty body.
 * The response headers are removed.
 
-> [lukasza@chromium.org] Chromium currently retains Access-Control-\* headers
+> [lukasza@monyhar.org] Chromium currently retains Access-Control-\* headers
 > (this helps generate better error messages for CORS).
 
 To be effective against speculative side-channel attacks, CORB blocking must
@@ -114,7 +114,7 @@ The following kinds of requests are CORB-exempt:
   with Site Isolation, this security context uses a separate process, keeping
   the data out of the malicious page's address space entirely.
 
-> [lukasza@chromium.org] TODO: Figure out how
+> [lukasza@monyhar.org] TODO: Figure out how
 > [Edge's VM-based isolation](https://cloudblogs.microsoft.com/microsoftsecure/2017/10/23/making-microsoft-edge-the-most-secure-browser-with-windows-defender-application-guard/)
 > works (e.g. if some origins are off-limits in particular renderers, then this
 > would greatly increase utility of CORB in Edge).
@@ -125,7 +125,7 @@ The following kinds of requests are CORB-exempt:
   (instead of being shared to a cross-origin context) and therefore wouldn't
   benefit from CORB protection.
 
-> [lukasza@chromium.org] AFAIK, in Chrome a response to a download request never
+> [lukasza@monyhar.org] AFAIK, in Chrome a response to a download request never
 > passes through memory of a renderer process.  Not sure if this is true in
 > other browsers.
 
@@ -243,7 +243,7 @@ rel="manifest">`, whose `href` attribute specifies a JSON manifest file.
 Fortunately, this mechanism requires CORS when the manifest is specified cross-
 origin, so its CORB treatment works identically to the rules applied to fetch().
 
-> [nick@chromium.org] TODO: Is there a spec link for JSON being side-effect
+> [nick@monyhar.org] TODO: Is there a spec link for JSON being side-effect
 > free when interpreted as script?
 
 ### Protecting HTML
@@ -351,7 +351,7 @@ responses.
   header and 2) opt out of sniffing by using the
   `X-Content-Type-Options: nosniff` header.
 
-> [nick@chromium.org] This section needs a strong justification for why
+> [nick@monyhar.org] This section needs a strong justification for why
 > text/plain gets this special interpretation. Ideally data showing that
 > text/plain is commonly used to serve HTML, JSON, or XML. Treatment of
 > text/plain in our current implementation may actually be an artifact of
@@ -421,7 +421,7 @@ web features that consume images - including, but not limited to:
 * `background-image` in stylesheets
 * painting images onto (potentially tainted) HTML's `<canvas>`
 
-> [lukasza@chromium.org] Earlier attempts to block nosniff images with
+> [lukasza@monyhar.org] Earlier attempts to block nosniff images with
 > incompatible MIME types
 > [failed](https://github.com/whatwg/fetch/issues/395).
 > We think that CORB will have more luck, because
@@ -456,7 +456,7 @@ Examples:
     because the empty body of the blocked response parses fine as JavaScript.
   * WPT test: `fetch/corb/script-html-correctly-labeled.tentative.sub.html`
 
-> [lukasza@chromium.org] In theory, using a non-empty response in CORB-blocked
+> [lukasza@monyhar.org] In theory, using a non-empty response in CORB-blocked
 > responses might reintroduce the lost syntax error.  We didn't go down that
 > path, because
 > 1) using a non-empty response would be inconsistent with other parts of the
@@ -522,7 +522,7 @@ Examples:
     (restrictions vary by browser:
     [IE](http://msdn.microsoft.com/en-us/library/ie/gg622939%28v=vs.85%29.aspx),
     [Firefox](http://www.mozilla.org/security/announce/2010/mfsa2010-46.html),
-    [Chrome](https://bugs.chromium.org/p/chromium/issues/detail?id=9877),
+    [Chrome](https://bugs.monyhar.org/p/monyhar/issues/detail?id=9877),
     [Safari](http://support.apple.com/kb/HT4070)
     (scroll down to CVE-2010-0051) and
     [Opera](http://www.opera.com/support/kb/view/943/)).
@@ -651,7 +651,7 @@ impact.
     expect many of these cases actually contained HTML and would not have
     rendered in the image tag anyway (as we observed in one case).
 
-> [creis@chromium.org] We are considering lowering this bound further by
+> [creis@monyhar.org] We are considering lowering this bound further by
 > sniffing these responses to confirm how many might contain actual images.
 
   * Another 3.76% of these are range requests for text/plain from a media
@@ -704,7 +704,7 @@ In the future CORB may be extended to protect additional resources as follows:
   for these other MIME types seems low, since mislabeling content as such
   types seems less likely than for example mislabeling as `text/html`.
 
-> [lukasza@chromium.org] See also https://github.com/whatwg/fetch/issues/721
+> [lukasza@monyhar.org] See also https://github.com/whatwg/fetch/issues/721
 
 * **CORB opt-in header**.
   To protect resources that normally may be embedded cross-origin,
@@ -712,7 +712,7 @@ In the future CORB may be extended to protect additional resources as follows:
   This would make it possible to CORB-protect resources like
   images or JavaScript (including JSONP).
 
-> [lukasza@chromium.org] Currently considered CORB opt-in signals include:
+> [lukasza@monyhar.org] Currently considered CORB opt-in signals include:
 > - `From-Origin:` or `Cross-Origin-Resource-Policy:` header - see https://github.com/whatwg/fetch/issues/687
 > - `Isolate-Me` header - see https://github.com/WICG/isolation
 

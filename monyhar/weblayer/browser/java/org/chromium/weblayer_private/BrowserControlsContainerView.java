@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -13,14 +13,14 @@ import android.widget.FrameLayout;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.MathUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.cc.input.BrowserControlsState;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.EventOffsetHandler;
-import org.chromium.ui.resources.dynamics.ViewResourceAdapter;
+import org.monyhar.base.MathUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.cc.input.BrowserControlsState;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.EventOffsetHandler;
+import org.monyhar.ui.resources.dynamics.ViewResourceAdapter;
 
 /**
  * BrowserControlsContainerView is responsible for positioning and sizing a view from the client

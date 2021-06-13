@@ -34,7 +34,7 @@ class ChromiumServiceWrapper : public external_mojo::mojom::ExternalService {
   ChromiumServiceWrapper(
       ExternalConnector* connector,
       mojo::Remote<service_manager::mojom::Service> service_remote,
-      std::unique_ptr<service_manager::Service> chromium_service,
+      std::unique_ptr<service_manager::Service> monyhar_service,
       const std::string& service_name);
   ~ChromiumServiceWrapper() override;
 
@@ -44,7 +44,7 @@ class ChromiumServiceWrapper : public external_mojo::mojom::ExternalService {
                        mojo::ScopedMessagePipeHandle interface_pipe) override;
 
   const mojo::Remote<service_manager::mojom::Service> service_remote_;
-  const std::unique_ptr<service_manager::Service> chromium_service_;
+  const std::unique_ptr<service_manager::Service> monyhar_service_;
 
   mojo::Receiver<external_mojo::mojom::ExternalService> service_receiver_{this};
 

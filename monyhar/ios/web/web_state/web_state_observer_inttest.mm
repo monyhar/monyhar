@@ -2922,7 +2922,7 @@ TEST_F(WebStateObserverTest, LoadData) {
   ASSERT_TRUE(LoadUrl(first_url));
 
   NSString* html = @"<html><body>foo</body></html>";
-  GURL data_url("https://www.chromium.test");
+  GURL data_url("https://www.monyhar.test");
 
   EXPECT_CALL(observer_, DidStartLoading(web_state()));
   EXPECT_CALL(*decider_, ShouldAllowRequest(_, _))

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.notifications.channels;
+package org.monyhar.chrome.browser.notifications.channels;
 
 import android.annotation.TargetApi;
 import android.app.NotificationManager;
@@ -11,8 +11,8 @@ import android.text.TextUtils;
 
 import androidx.annotation.StringDef;
 
-import org.chromium.chrome.browser.notifications.R;
-import org.chromium.components.browser_ui.notifications.channels.ChannelDefinitions;
+import org.monyhar.chrome.browser.notifications.R;
+import org.monyhar.components.browser_ui.notifications.channels.ChannelDefinitions;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -57,7 +57,7 @@ public class ChromeChannelDefinitions extends ChannelDefinitions {
 
     /**
      * Keeps the value consistent with {@link
-     * org.chromium.webapk.shell_apk.WebApkServiceImplWrapper#DEFAULT_NOTIFICATION_CHANNEL_ID}.
+     * org.monyhar.webapk.shell_apk.WebApkServiceImplWrapper#DEFAULT_NOTIFICATION_CHANNEL_ID}.
      */
     public static final String CHANNEL_ID_WEBAPKS = "default_channel_id";
 
@@ -178,7 +178,7 @@ public class ChromeChannelDefinitions extends ChannelDefinitions {
 
             // Not adding to startup channels because this channel is experimental and enabled only
             // through the associated feature (see
-            // org.chromium.chrome.browser.ntp.ContentSuggestionsNotificationHelper).
+            // org.monyhar.chrome.browser.ntp.ContentSuggestionsNotificationHelper).
             map.put(ChannelId.CONTENT_SUGGESTIONS,
                     PredefinedChannel.create(ChannelId.CONTENT_SUGGESTIONS,
                             R.string.notification_category_content_suggestions,

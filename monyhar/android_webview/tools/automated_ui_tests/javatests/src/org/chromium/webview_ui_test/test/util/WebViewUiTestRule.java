@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webview_ui_test.test.util;
+package org.monyhar.webview_ui_test.test.util;
 
 import static androidx.test.espresso.matcher.RootMatchers.withDecorView;
 import static androidx.test.espresso.matcher.ViewMatchers.hasDescendant;
@@ -15,7 +15,7 @@ import static org.hamcrest.CoreMatchers.allOf;
 import static org.hamcrest.Matchers.endsWith;
 import static org.hamcrest.Matchers.hasItem;
 
-import static org.chromium.base.test.util.ScalableTimeout.scaleTimeout;
+import static org.monyhar.base.test.util.ScalableTimeout.scaleTimeout;
 
 import android.content.Intent;
 import android.os.Build;
@@ -27,10 +27,10 @@ import androidx.test.espresso.DaggerBaseLayerComponent;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.test.BaseActivityTestRule;
-import org.chromium.webview_ui_test.R;
-import org.chromium.webview_ui_test.WebViewUiTestActivity;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.test.BaseActivityTestRule;
+import org.monyhar.webview_ui_test.R;
+import org.monyhar.webview_ui_test.WebViewUiTestActivity;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 

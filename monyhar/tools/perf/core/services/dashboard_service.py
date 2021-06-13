@@ -5,7 +5,7 @@
 """Make requests to the Chrome Perf Dashboard API.
 
 For more details on the API see:
-https://chromium.googlesource.com/catapult.git/+/HEAD/dashboard/dashboard/api/README.md
+https://monyhar.googlesource.com/catapult.git/+/HEAD/dashboard/dashboard/api/README.md
 """
 
 import six.moves.urllib.parse  # pylint: disable=import-error

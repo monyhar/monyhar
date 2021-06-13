@@ -344,7 +344,7 @@ apps::mojom::IconValuePtr ApplyEffects(apps::IconEffects icon_effects,
   if (icon_effects & apps::IconEffects::kResizeAndPad) {
     // TODO(crbug.com/826982): MD post-processing is not always applied: "See
     // legacy code:
-    // https://cs.chromium.org/search/?q=ChromeAppIconLoader&type=cs In one
+    // https://cs.monyhar.org/search/?q=ChromeAppIconLoader&type=cs In one
     // cases MD design is used in another not."
     resize_function =
         base::BindRepeating(&app_list::MaybeResizeAndPadIconForMd);

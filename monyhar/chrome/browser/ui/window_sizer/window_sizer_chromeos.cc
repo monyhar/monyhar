@@ -107,7 +107,7 @@ bool WindowSizerChromeOS::GetBrowserBounds(
       determined = true;
     } else if (state_provider()) {
       // Finally, prioritize the last saved |show_state|. If you have questions
-      // or comments about this behavior please contact oshima@chromium.org.
+      // or comments about this behavior please contact oshima@monyhar.org.
       gfx::Rect ignored_bounds, ignored_work_area;
       state_provider()->GetPersistentState(&ignored_bounds, &ignored_work_area,
                                            show_state);

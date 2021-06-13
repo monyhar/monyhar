@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download;
+package org.monyhar.chrome.browser.download;
 
 import android.os.Handler;
 import android.os.SystemClock;
@@ -10,9 +10,9 @@ import android.os.SystemClock;
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.components.offline_items_collection.ContentId;
-import org.chromium.components.offline_items_collection.PendingState;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.components.offline_items_collection.ContentId;
+import org.monyhar.components.offline_items_collection.PendingState;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

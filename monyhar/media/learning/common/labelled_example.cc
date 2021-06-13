@@ -80,7 +80,7 @@ TrainingData& TrainingData::operator=(TrainingData&& rhs) = default;
 
 TrainingData TrainingData::DeDuplicate() const {
   // flat_set has non-const iterators, while std::set does not.  const_cast is
-  // not allowed by chromium style outside of getters, so flat_set it is.
+  // not allowed by monyhar style outside of getters, so flat_set it is.
   base::flat_set<LabelledExample> example_set;
   for (auto& example : examples_) {
     auto iter = example_set.find(example);

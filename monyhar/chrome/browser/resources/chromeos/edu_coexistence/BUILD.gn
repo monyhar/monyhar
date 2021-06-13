@@ -32,7 +32,7 @@ js_library("edu_coexistence_app") {
     ":edu_coexistence_error",
     ":edu_coexistence_offline",
     ":edu_coexistence_ui",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_view_manager:cr_view_manager",
     "//ui/webui/resources/js:assert.m",
     "//ui/webui/resources/js:web_ui_listener_behavior.m",
@@ -41,7 +41,7 @@ js_library("edu_coexistence_app") {
 
 js_library("edu_coexistence_button") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
     "//ui/webui/resources/js:util.m",
   ]
@@ -51,7 +51,7 @@ js_library("edu_coexistence_error") {
   deps = [
     ":edu_coexistence_button",
     ":edu_coexistence_template",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -59,7 +59,7 @@ js_library("edu_coexistence_offline") {
   deps = [
     ":edu_coexistence_button",
     ":edu_coexistence_template",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -69,7 +69,7 @@ js_library("edu_coexistence_ui") {
     ":edu_coexistence_button",
     ":edu_coexistence_controller",
     ":edu_coexistence_template",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:web_ui_listener_behavior.m",
   ]
   externs_list = [
@@ -80,7 +80,7 @@ js_library("edu_coexistence_ui") {
 
 js_library("edu_coexistence_template") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements:cr_scrollable_behavior.m",
   ]
 }

@@ -19,7 +19,7 @@ rm -rf node_modules
 npm install --no-bin-links --only=prod
 
 # Apply local patch to polymer-bundler.
-patch -d node_modules/polymer-bundler/ -p1 < chromium_polymer_bundler.patch
+patch -d node_modules/polymer-bundler/ -p1 < monyhar_polymer_bundler.patch
 
 rsync -c --delete -r -q --include-from="npm_include.txt" --exclude-from="npm_exclude.txt" \
       --prune-empty-dirs "node_modules/" "node_modules_filtered/"
@@ -41,6 +41,6 @@ echo "After compressing:" size: $(du -h node_modules.tar.gz | tail -n1 | cut -f1
 sha1="$(sha1sum node_modules.tar.gz | cut -d ' ' -f1)"
 echo "${sha1}" > node_modules.tar.gz.sha1
 echo "Please run the following manually to update Google Storage bucket:"
-echo "> gsutil.py cp node_modules.tar.gz gs://chromium-nodejs/${sha1}"
+echo "> gsutil.py cp node_modules.tar.gz gs://monyhar-nodejs/${sha1}"
 echo "DONE"
 echo -e "---------------------------------------------------------"

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.merchant_viewer;
+package org.monyhar.chrome.browser.merchant_viewer;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,13 +13,13 @@ import android.widget.TextView;
 
 import androidx.annotation.DrawableRes;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.tab_ui.R;
-import org.chromium.components.browser_ui.widget.FadingShadow;
-import org.chromium.components.browser_ui.widget.FadingShadowView;
-import org.chromium.components.url_formatter.SchemeDisplay;
-import org.chromium.components.url_formatter.UrlFormatter;
-import org.chromium.url.GURL;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.tab_ui.R;
+import org.monyhar.components.browser_ui.widget.FadingShadow;
+import org.monyhar.components.browser_ui.widget.FadingShadowView;
+import org.monyhar.components.url_formatter.SchemeDisplay;
+import org.monyhar.components.url_formatter.UrlFormatter;
+import org.monyhar.url.GURL;
 
 /** BottomSheetToolbar UI. */
 public class BottomSheetToolbarView {

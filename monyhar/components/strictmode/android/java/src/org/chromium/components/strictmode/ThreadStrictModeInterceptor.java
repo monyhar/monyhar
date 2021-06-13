@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.strictmode;
+package org.monyhar.components.strictmode;
 
 import android.os.Handler;
 import android.os.Looper;
@@ -10,8 +10,8 @@ import android.os.StrictMode.ThreadPolicy;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Consumer;
-import org.chromium.base.Function;
+import org.monyhar.base.Consumer;
+import org.monyhar.base.Function;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -65,7 +65,7 @@ public interface ThreadStrictModeInterceptor {
          *
          * @param violationType A mask containing one or more of the DETECT_* constants.
          * @param packageName The name of the package to ignore StrictMode violations
-         *     for example, "org.chromium.foo"
+         *     for example, "org.monyhar.foo"
          */
         public Builder ignoreExternalPackage(int violationType, final String packageName) {
             mWhitelistEntries.add(violation -> {
@@ -96,7 +96,7 @@ public interface ThreadStrictModeInterceptor {
          *
          * @param violationType A mask containing one or more of the DETECT_* constants.
          * @param className The name of the class to ignore StrictMode violations
-         *     for example, "org.chromium.foo.ThreadStrictModeInterceptor"
+         *     for example, "org.monyhar.foo.ThreadStrictModeInterceptor"
          */
         public Builder ignoreExternalClass(int violationType, final String className) {
             mWhitelistEntries.add(violation -> {

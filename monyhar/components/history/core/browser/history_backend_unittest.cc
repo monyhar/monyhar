@@ -1352,7 +1352,7 @@ TEST_F(HistoryBackendTest, AddPageVisitRedirectBackForward) {
   ASSERT_TRUE(backend_.get());
 
   GURL url1("http://www.google.com");
-  GURL url2("http://www.chromium.org");
+  GURL url2("http://www.monyhar.org");
 
   // Clear all history.
   backend_->DeleteAllHistory();

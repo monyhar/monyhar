@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.module_installer.observer;
+package org.monyhar.components.module_installer.observer;
 
 import android.app.Activity;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ThreadUtils;
-import org.chromium.components.module_installer.engine.InstallEngine;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.components.module_installer.engine.InstallEngine;
 
 import java.util.HashSet;
 

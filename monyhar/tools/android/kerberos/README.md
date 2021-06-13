@@ -27,7 +27,7 @@ $CHROMIUM_SRC/tools/android/kerberos/negotiate_test_server.py
     ```sh
     $CHROMIUM_SRC/build/android/adb_chrome_public_command_line \
     '--auth-server-whitelist="*" \
-    --auth-spnego-account-type="org.chromium.tools.SpnegoAuthenticator"'
+    --auth-spnego-account-type="org.monyhar.tools.SpnegoAuthenticator"'
     ```
 
  -  By setting policies
@@ -35,7 +35,7 @@ $CHROMIUM_SRC/tools/android/kerberos/negotiate_test_server.py
     The policies to set are:
 
      *   AuthServerAllowlist: `*`
-     *   AuthAndroidNegotiateAccountType: `org.chromium.tools.SpnegoAuthenticator`
+     *   AuthAndroidNegotiateAccountType: `org.monyhar.tools.SpnegoAuthenticator`
 
     To set them you have to be able to set restrictions for apps on the device.
     This can be achieved using the TestDPC app ([Play store][testdpc-play],
@@ -63,9 +63,9 @@ $CHROMIUM_SRC/tools/android/kerberos/negotiate_test_server.py
 ### SpnegoAuthenticator
 
 This app declares and sets up an accounts to be used for Negotiate auth, as
-described in the chromium.org wiki
+described in the monyhar.org wiki
 ([Writing a SPNEGO Authenticator for Chrome on Android][crwiki]).
-Those accounts use the type `org.chromium.tools.SpnegoAuthenticator`.
+Those accounts use the type `org.monyhar.tools.SpnegoAuthenticator`.
 
 ![Account administration activity preview][screenshot]
 
@@ -79,5 +79,5 @@ Features:
 
 [testdpc-play]: https://play.google.com/store/apps/details?id=com.sample.android.testdpc
 [testdpc-gh]: https://github.com/googlesamples/android-testdpc
-[crwiki]:https://sites.google.com/a/chromium.org/dev/developers/design-documents/http-authentication/writing-a-spnego-authenticator-for-chrome-on-android
+[crwiki]:https://sites.google.com/a/monyhar.org/dev/developers/design-documents/http-authentication/writing-a-spnego-authenticator-for-chrome-on-android
 [screenshot]:SpnegoAuthenticator/preview.png

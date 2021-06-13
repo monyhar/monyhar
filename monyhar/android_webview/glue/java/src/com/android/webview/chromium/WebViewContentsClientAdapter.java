@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package com.android.webview.chromium;
+package com.android.webview.monyhar;
 
 import android.content.Context;
 import android.content.Intent;
@@ -34,28 +34,28 @@ import android.webkit.WebResourceResponse;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.android.webview.chromium.WebViewDelegateFactory.WebViewDelegate;
+import com.android.webview.monyhar.WebViewDelegateFactory.WebViewDelegate;
 
-import org.chromium.android_webview.AwConsoleMessage;
-import org.chromium.android_webview.AwContentsClient;
-import org.chromium.android_webview.AwContentsClientBridge;
-import org.chromium.android_webview.AwGeolocationPermissions;
-import org.chromium.android_webview.AwHistogramRecorder;
-import org.chromium.android_webview.AwHttpAuthHandler;
-import org.chromium.android_webview.AwRenderProcessGoneDetail;
-import org.chromium.android_webview.JsPromptResultReceiver;
-import org.chromium.android_webview.JsResultReceiver;
-import org.chromium.android_webview.permission.AwPermissionRequest;
-import org.chromium.android_webview.permission.Resource;
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.TraceEvent;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.ScopedSysTraceEvent;
-import org.chromium.base.task.PostTask;
-import org.chromium.components.embedder_support.util.WebResourceResponseInfo;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.android_webview.AwConsoleMessage;
+import org.monyhar.android_webview.AwContentsClient;
+import org.monyhar.android_webview.AwContentsClientBridge;
+import org.monyhar.android_webview.AwGeolocationPermissions;
+import org.monyhar.android_webview.AwHistogramRecorder;
+import org.monyhar.android_webview.AwHttpAuthHandler;
+import org.monyhar.android_webview.AwRenderProcessGoneDetail;
+import org.monyhar.android_webview.JsPromptResultReceiver;
+import org.monyhar.android_webview.JsResultReceiver;
+import org.monyhar.android_webview.permission.AwPermissionRequest;
+import org.monyhar.android_webview.permission.Resource;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.ScopedSysTraceEvent;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.components.embedder_support.util.WebResourceResponseInfo;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 import java.lang.ref.WeakReference;
 import java.security.Principal;
@@ -1013,7 +1013,7 @@ class WebViewContentsClientAdapter extends SharedWebViewContentsClientAdapter {
                 // on a gray background.
                 Bitmap poster = BitmapFactory.decodeResource(
                         mContext.getResources(),
-                        org.chromium.android_webview.R.drawable.ic_play_circle_outline_black_48dp);
+                        org.monyhar.android_webview.R.drawable.ic_play_circle_outline_black_48dp);
                 result = Bitmap.createBitmap(
                         poster.getWidth(), poster.getHeight(), poster.getConfig());
                 result.eraseColor(Color.GRAY);

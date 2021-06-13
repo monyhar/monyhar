@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.download;
+package org.monyhar.components.download;
 
 import android.annotation.TargetApi;
 import android.content.ContentResolver;
@@ -20,16 +20,16 @@ import android.text.format.DateUtils;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.compat.ApiHelperForQ;
-import org.chromium.third_party.android.provider.MediaStoreUtils;
-import org.chromium.third_party.android.provider.MediaStoreUtils.PendingParams;
-import org.chromium.third_party.android.provider.MediaStoreUtils.PendingSession;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.compat.ApiHelperForQ;
+import org.monyhar.third_party.android.provider.MediaStoreUtils;
+import org.monyhar.third_party.android.provider.MediaStoreUtils.PendingParams;
+import org.monyhar.third_party.android.provider.MediaStoreUtils.PendingSession;
 
 import java.io.FileInputStream;
 import java.io.InputStream;

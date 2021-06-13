@@ -53,7 +53,7 @@ js_type_check("closure_compile_polymer") {
 
 js_library("audio_player") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/file_manager/audio_player/elements:audio_player",
     "//ui/file_manager/file_manager/common/js:app_util.m",
     "//ui/file_manager/file_manager/common/js:async_util.m",

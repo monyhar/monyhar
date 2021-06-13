@@ -439,7 +439,7 @@ TEST_F(BookmarkBarViewTest, DropCallbackTest) {
   gfx::Point bar_loc;
   views::View::ConvertPointToScreen(bookmark_bar_view(), &bar_loc);
   ui::OSExchangeData drop_data;
-  drop_data.SetURL(GURL("http://www.chromium.org/"), std::u16string(u"z"));
+  drop_data.SetURL(GURL("http://www.monyhar.org/"), std::u16string(u"z"));
   ui::DropTargetEvent target_event(drop_data, gfx::PointF(bar_loc),
                                    gfx::PointF(bar_loc),
                                    ui::DragDropTypes::DRAG_COPY);
@@ -463,7 +463,7 @@ TEST_F(BookmarkBarViewTest, DropCallback_InvalidatePtrTest) {
   gfx::Point bar_loc;
   views::View::ConvertPointToScreen(bookmark_bar_view(), &bar_loc);
   ui::OSExchangeData drop_data;
-  drop_data.SetURL(GURL("http://www.chromium.org/"), std::u16string(u"z"));
+  drop_data.SetURL(GURL("http://www.monyhar.org/"), std::u16string(u"z"));
   ui::DropTargetEvent target_event(drop_data, gfx::PointF(bar_loc),
                                    gfx::PointF(bar_loc),
                                    ui::DragDropTypes::DRAG_COPY);

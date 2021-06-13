@@ -131,9 +131,9 @@ TEST_F(GetPagesTaskTest, RequestOrigin) {
 }
 
 TEST_F(GetPagesTaskTest, Url) {
-  const GURL kUrl1("http://cs.chromium.org");
-  const GURL kUrl1WithSuffix("http://cs.chromium.org/suffix");
-  const GURL kUrl1Frag("http://cs.chromium.org#frag1");
+  const GURL kUrl1("http://cs.monyhar.org");
+  const GURL kUrl1WithSuffix("http://cs.monyhar.org/suffix");
+  const GURL kUrl1Frag("http://cs.monyhar.org#frag1");
   const GURL kUrl2("http://chrome.google.com");
   generator()->SetNamespace(kTestNamespace);
   generator()->SetUrl(kUrl1);
@@ -227,7 +227,7 @@ TEST_F(GetPagesTaskTest, Digest) {
 }
 
 TEST_F(GetPagesTaskTest, MultipleConditions) {
-  const GURL kUrl1("http://cs.chromium.org");
+  const GURL kUrl1("http://cs.monyhar.org");
   const std::string digest = "abc";
 
   // |item_1| matches, and all other items differ by one criteria.
@@ -251,7 +251,7 @@ TEST_F(GetPagesTaskTest, MultipleConditions) {
 
   OfflinePageItem item_5 = item_1;
   item_5.offline_id = store_utils::GenerateOfflineId();
-  item_5.url = GURL("http://cs.chromium.org/1");
+  item_5.url = GURL("http://cs.monyhar.org/1");
 
   InsertItems({item_1, item_2, item_3, item_4, item_5});
 

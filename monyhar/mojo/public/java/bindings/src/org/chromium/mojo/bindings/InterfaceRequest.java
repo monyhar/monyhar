@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo.bindings;
+package org.monyhar.mojo.bindings;
 
-import org.chromium.mojo.system.MessagePipeHandle;
+import org.monyhar.mojo.system.MessagePipeHandle;
 
 /**
  * One end of the message pipe representing a request to create an implementation to be bound to it.

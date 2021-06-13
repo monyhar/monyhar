@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.features.start_surface;
+package org.monyhar.chrome.features.start_surface;
 
-import org.chromium.chrome.browser.feed.FeedSurfaceCoordinator;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.chrome.browser.feed.FeedSurfaceCoordinator;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /** List of the start surface properties. */
 class StartSurfaceProperties {

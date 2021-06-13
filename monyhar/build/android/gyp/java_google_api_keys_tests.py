@@ -28,7 +28,7 @@ class TestJavaGoogleAPIKeys(unittest.TestCase):
 // From
 //     google_api_keys/google_api_keys.h
 
-package org.chromium.chrome;
+package org.monyhar.chrome;
 
 public class GoogleAPIKeys {
   public static final String E1 = "abc";

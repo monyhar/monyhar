@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.header;
+package org.monyhar.chrome.browser.autofill_assistant.header;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -15,13 +15,13 @@ import android.widget.RelativeLayout;
 
 import androidx.core.content.ContextCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.autofill_assistant.AssistantTagsForTesting;
-import org.chromium.chrome.browser.autofill_assistant.drawable.AssistantDrawableIcon;
-import org.chromium.chrome.browser.autofill_assistant.generic_ui.AssistantDrawable;
-import org.chromium.components.browser_ui.widget.animation.Interpolators;
-import org.chromium.ui.widget.ChromeImageView;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.autofill_assistant.AssistantTagsForTesting;
+import org.monyhar.chrome.browser.autofill_assistant.drawable.AssistantDrawableIcon;
+import org.monyhar.chrome.browser.autofill_assistant.generic_ui.AssistantDrawable;
+import org.monyhar.components.browser_ui.widget.animation.Interpolators;
+import org.monyhar.ui.widget.ChromeImageView;
 
 import java.util.ArrayList;
 import java.util.List;

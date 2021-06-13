@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
@@ -13,9 +13,9 @@ import android.util.SparseArray;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.task.TaskTraits;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.task.TaskTraits;
 
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;

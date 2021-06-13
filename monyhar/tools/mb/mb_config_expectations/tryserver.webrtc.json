@@ -1,5 +1,5 @@
 {
-  "android_chromium_compile": {
+  "android_monyhar_compile": {
     "gn_args": {
       "dcheck_always_on": true,
       "ffmpeg_branding": "Chrome",
@@ -12,7 +12,7 @@
       "use_goma": true
     }
   },
-  "linux_chromium_compile": {
+  "linux_monyhar_compile": {
     "gn_args": {
       "dcheck_always_on": true,
       "is_component_build": false,
@@ -21,7 +21,7 @@
       "use_goma": true
     }
   },
-  "linux_chromium_compile_dbg": {
+  "linux_monyhar_compile_dbg": {
     "gn_args": {
       "is_component_build": true,
       "is_debug": true,
@@ -29,7 +29,7 @@
       "use_goma": true
     }
   },
-  "mac_chromium_compile": {
+  "mac_monyhar_compile": {
     "gn_args": {
       "dcheck_always_on": true,
       "ffmpeg_branding": "Chrome",
@@ -40,7 +40,7 @@
       "use_goma": true
     }
   },
-  "win_chromium_compile": {
+  "win_monyhar_compile": {
     "gn_args": {
       "dcheck_always_on": true,
       "enable_resource_allowlist_generation": true,
@@ -52,7 +52,7 @@
       "use_goma": true
     }
   },
-  "win_chromium_compile_dbg": {
+  "win_monyhar_compile_dbg": {
     "gn_args": {
       "ffmpeg_branding": "Chrome",
       "is_component_build": true,

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.messages;
+package org.monyhar.chrome.browser.messages;
 
 import static android.view.accessibility.AccessibilityManager.FLAG_CONTENT_CONTROLS;
 import static android.view.accessibility.AccessibilityManager.FLAG_CONTENT_ICONS;
@@ -13,9 +13,9 @@ import android.text.format.DateUtils;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.util.ChromeAccessibilityUtil;
-import org.chromium.components.messages.MessageAutodismissDurationProvider;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.util.ChromeAccessibilityUtil;
+import org.monyhar.components.messages.MessageAutodismissDurationProvider;
 
 /**
  * Implementation of {@link MessageAutodismissDurationProvider}.

@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@30.0.0-alpha10.cr0
-package: chromium/third_party/android_deps/libs/com_android_tools_layoutlib_layoutlib_api
+package: monyhar/third_party/android_deps/libs/com_android_tools_layoutlib_layoutlib_api
 description: "com.android.tools.layoutlib.layoutlib-api"
 data:
 - file: layoutlib-api-30.0.0-alpha10.jar

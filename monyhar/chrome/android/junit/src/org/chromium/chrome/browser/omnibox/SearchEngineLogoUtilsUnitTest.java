@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox;
+package org.monyhar.chrome.browser.omnibox;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -37,22 +37,22 @@ import org.mockito.junit.MockitoRule;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadow.api.Shadow;
 
-import org.chromium.base.Callback;
-import org.chromium.base.metrics.test.ShadowRecordHistogram;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.locale.LocaleManager;
-import org.chromium.chrome.browser.locale.LocaleManagerDelegate;
-import org.chromium.chrome.browser.omnibox.status.StatusProperties.StatusIconResource;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.theme.ThemeUtils;
-import org.chromium.chrome.browser.ui.favicon.FaviconHelper;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.browser_ui.widget.RoundedIconGenerator;
-import org.chromium.components.search_engines.TemplateUrlService;
-import org.chromium.content_public.browser.BrowserStartupController;
-import org.chromium.url.JUnitTestGURLs;
+import org.monyhar.base.Callback;
+import org.monyhar.base.metrics.test.ShadowRecordHistogram;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.locale.LocaleManager;
+import org.monyhar.chrome.browser.locale.LocaleManagerDelegate;
+import org.monyhar.chrome.browser.omnibox.status.StatusProperties.StatusIconResource;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.theme.ThemeUtils;
+import org.monyhar.chrome.browser.ui.favicon.FaviconHelper;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.browser_ui.widget.RoundedIconGenerator;
+import org.monyhar.components.search_engines.TemplateUrlService;
+import org.monyhar.content_public.browser.BrowserStartupController;
+import org.monyhar.url.JUnitTestGURLs;
 
 /**
  * Tests for SearchEngineLogoUtils.

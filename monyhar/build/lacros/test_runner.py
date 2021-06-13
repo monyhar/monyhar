@@ -33,7 +33,7 @@
   The above command runs tests with a given version of ash-chrome, which is
   useful to reproduce test failures, the version corresponds to the commit
   position of commits on the master branch, and a list of prebuilt versions can
-  be found at: gs://ash-chromium-on-linux-prebuilts/x86_64.
+  be found at: gs://ash-monyhar-on-linux-prebuilts/x86_64.
 
   ./testing/xvfb.py ./build/lacros/test_runner.py test out/lacros/browser_tests
 
@@ -58,13 +58,13 @@ _SRC_ROOT = os.path.abspath(
 sys.path.append(os.path.join(_SRC_ROOT, 'third_party', 'depot_tools'))
 
 # Base GS URL to store prebuilt ash-chrome.
-_GS_URL_BASE = 'gs://ash-chromium-on-linux-prebuilts/x86_64'
+_GS_URL_BASE = 'gs://ash-monyhar-on-linux-prebuilts/x86_64'
 
 # Latest file version.
-_GS_URL_LATEST_FILE = _GS_URL_BASE + '/latest/ash-chromium.txt'
+_GS_URL_LATEST_FILE = _GS_URL_BASE + '/latest/ash-monyhar.txt'
 
 # GS path to the zipped ash-chrome build with any given version.
-_GS_ASH_CHROME_PATH = 'ash-chromium.zip'
+_GS_ASH_CHROME_PATH = 'ash-monyhar.zip'
 
 # Directory to cache downloaded ash-chrome versions to avoid re-downloading.
 _PREBUILT_ASH_CHROME_DIR = os.path.join(os.path.dirname(__file__),

@@ -135,15 +135,15 @@ template("chrome_common_shared_library") {
     }
 
     # Compress relocations if needed.
-    if ((_is_monochrome || _is_webview || chromium_linker_supported) &&
+    if ((_is_monochrome || _is_webview || monyhar_linker_supported) &&
         use_lld) {
       configs += [ "//build/config/android:lld_pack_relocations" ]
     }
 
-    if ((_is_monochrome || _is_webview || chromium_linker_supported) &&
+    if ((_is_monochrome || _is_webview || monyhar_linker_supported) &&
         target_cpu != "mipsel" && target_cpu != "mips64el") {
       # By default, the static linker will create ELF executables with both
-      # SysV and GNU hash tables. Now that the chromium linker supports the GNU
+      # SysV and GNU hash tables. Now that the monyhar linker supports the GNU
       # format, which is considerably smaller, ensure that the SysV one is
       # never compiled in the final library (http://crbug.com/742525#c28). GNU
       # hash support was added in Android M. Also not supported on MIPS

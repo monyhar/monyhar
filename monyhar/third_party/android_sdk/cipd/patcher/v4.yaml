@@ -2,7 +2,7 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
-package: chromium/third_party/android_sdk/public/patcher/v4
+package: monyhar/third_party/android_sdk/public/patcher/v4
 description: patcher Android SDK Tools library
 root: ../../public/
 data:

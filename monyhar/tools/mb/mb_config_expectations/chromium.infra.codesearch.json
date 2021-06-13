@@ -1,5 +1,5 @@
 {
-  "codesearch-gen-chromium-android": {
+  "codesearch-gen-monyhar-android": {
     "gn_args": {
       "clang_use_chrome_plugins": false,
       "enable_kythe_annotations": true,
@@ -11,7 +11,7 @@
       "use_goma": true
     }
   },
-  "codesearch-gen-chromium-chromiumos": {
+  "codesearch-gen-monyhar-monyharos": {
     "gn_args": {
       "clang_use_chrome_plugins": false,
       "enable_kythe_annotations": true,
@@ -23,7 +23,7 @@
       "use_goma": true
     }
   },
-  "codesearch-gen-chromium-fuchsia": {
+  "codesearch-gen-monyhar-fuchsia": {
     "gn_args": {
       "clang_use_chrome_plugins": false,
       "enable_kythe_annotations": true,
@@ -33,7 +33,7 @@
       "use_goma": true
     }
   },
-  "codesearch-gen-chromium-lacros": {
+  "codesearch-gen-monyhar-lacros": {
     "gn_args": {
       "chromeos_is_browser_only": true,
       "clang_use_chrome_plugins": false,
@@ -50,7 +50,7 @@
       "use_ozone": true
     }
   },
-  "codesearch-gen-chromium-linux": {
+  "codesearch-gen-monyhar-linux": {
     "gn_args": {
       "clang_use_chrome_plugins": false,
       "enable_kythe_annotations": true,
@@ -61,7 +61,7 @@
       "use_goma": true
     }
   },
-  "codesearch-gen-chromium-win": {
+  "codesearch-gen-monyhar-win": {
     "gn_args": {
       "clang_use_chrome_plugins": false,
       "enable_kythe_annotations": true,

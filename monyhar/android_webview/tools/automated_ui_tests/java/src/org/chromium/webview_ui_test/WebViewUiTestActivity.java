@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webview_ui_test;
+package org.monyhar.webview_ui_test;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 /**
  * Android app that uses WebView for UI Testing.
@@ -18,7 +18,7 @@ public class WebViewUiTestActivity extends Activity {
     private static final String TAG = "WebViewUiTest";
 
     public static final String EXTRA_TEST_LAYOUT_FILE =
-            "org.chromium.webview_ui_app.WebViewUiTestActivity.LayoutFile";
+            "org.monyhar.webview_ui_app.WebViewUiTestActivity.LayoutFile";
 
     private String mLayout;
 

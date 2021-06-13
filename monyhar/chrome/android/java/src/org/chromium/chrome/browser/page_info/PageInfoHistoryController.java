@@ -1,17 +1,17 @@
 // Copyright 2020 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.chrome.browser.page_info;
+package org.monyhar.chrome.browser.page_info;
 
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.chromium.chrome.R;
-import org.chromium.components.page_info.PageInfoAction;
-import org.chromium.components.page_info.PageInfoControllerDelegate;
-import org.chromium.components.page_info.PageInfoMainController;
-import org.chromium.components.page_info.PageInfoRowView;
-import org.chromium.components.page_info.PageInfoSubpageController;
+import org.monyhar.chrome.R;
+import org.monyhar.components.page_info.PageInfoAction;
+import org.monyhar.components.page_info.PageInfoControllerDelegate;
+import org.monyhar.components.page_info.PageInfoMainController;
+import org.monyhar.components.page_info.PageInfoRowView;
+import org.monyhar.components.page_info.PageInfoSubpageController;
 
 /**
  * Controller to manage the history elements of PageInfo. Including the row view, subpage, and

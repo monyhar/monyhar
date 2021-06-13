@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.gesturenav;
+package org.monyhar.chrome.browser.gesturenav;
 
 import android.content.Context;
 import android.view.View;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.content_public.browser.NavigationHistory;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.content_public.browser.NavigationHistory;
 
 /**
  * Interface that defines the methods for controlling Navigation sheet.

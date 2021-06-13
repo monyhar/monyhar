@@ -46,7 +46,7 @@ namespace android {
 
 namespace {
 
-const char kLogTag[] = "chromium";
+const char kLogTag[] = "monyhar";
 const char kCrashedMarker[] = "[ CRASHED      ]\n";
 
 // The list of signals which are considered to be crashes.

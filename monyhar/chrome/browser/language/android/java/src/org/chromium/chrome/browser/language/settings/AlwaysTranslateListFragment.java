@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.language.settings;
+package org.monyhar.chrome.browser.language.settings;
 
 import android.content.Context;
 
-import org.chromium.chrome.browser.language.R;
-import org.chromium.chrome.browser.translate.TranslateBridge;
+import org.monyhar.chrome.browser.language.R;
+import org.monyhar.chrome.browser.translate.TranslateBridge;
 
 import java.util.Collection;
 

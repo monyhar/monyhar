@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.carousel;
+package org.monyhar.chrome.browser.omnibox.suggestions.carousel;
 
 import static org.mockito.Mockito.anyInt;
 import static org.mockito.Mockito.eq;
@@ -24,13 +24,13 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.chrome.R;
-import org.chromium.testing.local.LocalRobolectricTestRunner;
-import org.chromium.ui.modelutil.MVCListAdapter.ListItem;
-import org.chromium.ui.modelutil.MVCListAdapter.ModelList;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
-import org.chromium.ui.modelutil.SimpleRecyclerViewAdapter;
+import org.monyhar.chrome.R;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.ui.modelutil.MVCListAdapter.ListItem;
+import org.monyhar.ui.modelutil.MVCListAdapter.ModelList;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.ui.modelutil.SimpleRecyclerViewAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

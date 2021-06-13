@@ -63,8 +63,8 @@ class BlockingMethodCallerTest : public testing::Test {
     // Create a mock proxy.
     mock_proxy_ = new dbus::MockObjectProxy(
         mock_bus_.get(),
-        "org.chromium.TestService",
-        dbus::ObjectPath("/org/chromium/TestObject"));
+        "org.monyhar.TestService",
+        dbus::ObjectPath("/org/monyhar/TestObject"));
 
     // Set an expectation so mock_proxy's CallMethodAndBlock() will use
     // CreateMockProxyResponse() to return responses.
@@ -76,8 +76,8 @@ class BlockingMethodCallerTest : public testing::Test {
     // Set an expectation so mock_bus's GetObjectProxy() for the given
     // service name and the object path will return mock_proxy_.
     EXPECT_CALL(*mock_bus_.get(),
-                GetObjectProxy("org.chromium.TestService",
-                               dbus::ObjectPath("/org/chromium/TestObject")))
+                GetObjectProxy("org.monyhar.TestService",
+                               dbus::ObjectPath("/org/monyhar/TestObject")))
         .WillOnce(Return(mock_proxy_.get()));
 
     // Set an expectation so mock_bus's GetDBusTaskRunner will return the fake
@@ -103,7 +103,7 @@ class BlockingMethodCallerTest : public testing::Test {
       dbus::MethodCall* method_call,
       int timeout_ms,
       dbus::ScopedDBusError* error) {
-    if (method_call->GetInterface() == "org.chromium.TestInterface" &&
+    if (method_call->GetInterface() == "org.monyhar.TestInterface" &&
         method_call->GetMember() == "Echo") {
       dbus::MessageReader reader(method_call);
       std::string text_message;
@@ -125,11 +125,11 @@ TEST_F(BlockingMethodCallerTest, Echo) {
   const char kHello[] = "Hello";
   // Get an object proxy from the mock bus.
   dbus::ObjectProxy* proxy = mock_bus_->GetObjectProxy(
-      "org.chromium.TestService",
-      dbus::ObjectPath("/org/chromium/TestObject"));
+      "org.monyhar.TestService",
+      dbus::ObjectPath("/org/monyhar/TestObject"));
 
   // Create a method call.
-  dbus::MethodCall method_call("org.chromium.TestInterface", "Echo");
+  dbus::MethodCall method_call("org.monyhar.TestInterface", "Echo");
   dbus::MessageWriter writer(&method_call);
   writer.AppendString(kHello);
 

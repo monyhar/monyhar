@@ -2,4 +2,4 @@ monorail {
   component: "Blink>HID"
 }
 
-team_email: "device-dev@chromium.org"
+team_email: "device-dev@monyhar.org"

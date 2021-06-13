@@ -101,7 +101,7 @@ class StatusCollector {
 
   // Methods used to decide whether a specific categories of data should be
   // included in the reports or not. See:
-  // https://cs.chromium.org/search/?q=AddDeviceReportingInfo
+  // https://cs.monyhar.org/search/?q=AddDeviceReportingInfo
   virtual bool ShouldReportActivityTimes() const = 0;
   virtual bool ShouldReportNetworkInterfaces() const = 0;
   virtual bool ShouldReportUsers() const = 0;

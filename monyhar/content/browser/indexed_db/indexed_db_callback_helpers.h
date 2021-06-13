@@ -12,7 +12,7 @@
 #include "base/memory/weak_ptr.h"
 #include "content/browser/indexed_db/indexed_db_transaction.h"
 #include "third_party/blink/public/mojom/indexeddb/indexeddb.mojom-forward.h"
-#include "third_party/leveldatabase/env_chromium.h"
+#include "third_party/leveldatabase/env_monyhar.h"
 
 // Since functions in this file use templates, they must be in a header file
 // and can't be placed in a definition file.  Please ensure any including file

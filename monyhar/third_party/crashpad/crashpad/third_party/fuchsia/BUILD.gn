@@ -21,7 +21,7 @@ if (crashpad_is_in_fuchsia) {
       "//zircon/public/lib/zx",
     ]
   }
-} else if (crashpad_is_in_chromium) {
+} else if (crashpad_is_in_monyhar) {
   group("fuchsia") {
     public_deps = [
       "//third_party/fuchsia-sdk/sdk/pkg/fdio",

@@ -27,7 +27,7 @@ test(t => {
   assert_equals(Object.prototype.toString.call(iteratorProto), "[object Not URLSearchParams Iterator]");
 }, "Object.prototype.toString applied after modifying @@toStringTag");
 
-// Chrome had a bug (https://bugs.chromium.org/p/chromium/issues/detail?id=793406) where if there
+// Chrome had a bug (https://bugs.monyhar.org/p/monyhar/issues/detail?id=793406) where if there
 // was no @@toStringTag, it would fall back to a magic class string. This tests that the bug is
 // fixed.
 

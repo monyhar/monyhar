@@ -46,9 +46,9 @@ String Navigator::productSub() const {
 
 String Navigator::vendor() const {
   // Do not change without good cause. History:
-  // https://code.google.com/p/chromium/issues/detail?id=276813
+  // https://code.google.com/p/monyhar/issues/detail?id=276813
   // https://www.w3.org/Bugs/Public/show_bug.cgi?id=27786
-  // https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/QrgyulnqvmE
+  // https://groups.google.com/a/monyhar.org/forum/#!topic/blink-dev/QrgyulnqvmE
   return "Google Inc.";
 }
 

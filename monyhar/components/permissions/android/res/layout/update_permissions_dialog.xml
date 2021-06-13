@@ -9,7 +9,7 @@
     android:gravity="start"
     style="@style/AlertDialogContent">
 
-    <org.chromium.ui.widget.ChromeImageView
+    <org.monyhar.ui.widget.ChromeImageView
         android:id="@+id/icon"
         android:layout_width="32dp"
         android:layout_height="32dp"
@@ -18,7 +18,7 @@
         tools:ignore="ContentDescription"
         app:tint="@color/default_icon_color" />
 
-    <org.chromium.ui.widget.TextViewWithLeading
+    <org.monyhar.ui.widget.TextViewWithLeading
         android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

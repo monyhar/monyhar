@@ -24,9 +24,9 @@ namespace chromeos {
 //
 // VmStarting:
 // % dbus-send --system --type=method_call --print-reply
-//     --dest=org.chromium.LockToSingleUserService
-//     /org/chromium/LockToSingleUserService
-//     org.chromium.LockToSingleUserServiceInterface.VmStarting
+//     --dest=org.monyhar.LockToSingleUserService
+//     /org/monyhar/LockToSingleUserService
+//     org.monyhar.LockToSingleUserServiceInterface.VmStarting
 //
 // The method checks if the DeviceRebootOnUserSignout requires a reboot after
 // sign-out and uses the TPM to ensure that other users can not log in.

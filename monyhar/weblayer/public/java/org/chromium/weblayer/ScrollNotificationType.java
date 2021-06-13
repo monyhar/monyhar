@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer;
+package org.monyhar.weblayer;
 
 import androidx.annotation.IntDef;
 
@@ -24,11 +24,11 @@ public @interface ScrollNotificationType {
      * is a direction change) on the first touch move, not touch down.
      */
     int DIRECTION_CHANGED_UP =
-            org.chromium.weblayer_private.interfaces.ScrollNotificationType.DIRECTION_CHANGED_UP;
+            org.monyhar.weblayer_private.interfaces.ScrollNotificationType.DIRECTION_CHANGED_UP;
 
     /**
      * This is the direction away from vertical scroll offset 0. See notes on DIRECTION_CHANGED_UP.
      */
     int DIRECTION_CHANGED_DOWN =
-            org.chromium.weblayer_private.interfaces.ScrollNotificationType.DIRECTION_CHANGED_DOWN;
+            org.monyhar.weblayer_private.interfaces.ScrollNotificationType.DIRECTION_CHANGED_DOWN;
 }

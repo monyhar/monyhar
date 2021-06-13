@@ -858,7 +858,7 @@ bool WebSocketChannelImpl::SendMessageData(base::span<const char>* data) {
         // passed on to the network service.
         //
         // The corresponding bug for this is
-        // https://bugs.chromium.org/p/chromium/issues/detail?id=937790
+        // https://bugs.monyhar.org/p/monyhar/issues/detail?id=937790
         // The corresponding test case is
         // browser_tests WebRequestApiTest.WebSocketCleanClose.
         if (client_) {

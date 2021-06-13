@@ -40,10 +40,10 @@ mitigation bypasses exist on a continuum based on how harmful they are to users.
 Site Isolation vulnerabilities are no longer receiving special rewards and will
 be categorized and rewarded as Universal Cross-site Scripting vulnerabilities.
 
-[Site Isolation](https://www.chromium.org/Home/chromium-security/site-isolation)
+[Site Isolation](https://www.monyhar.org/Home/monyhar-security/site-isolation)
 makes it possible for sites (i.e., combination of scheme and eTLD+1) to run in
 dedicated renderer processes. This can mitigate [speculative side channel
-attacks](https://www.chromium.org/Home/chromium-security/ssca) as well as
+attacks](https://www.monyhar.org/Home/monyhar-security/ssca) as well as
 attacks from compromised renderer processes.  Site Isolation is enabled for all
 sites on desktop platforms. On Android, Site Isolation is enabled for sites
 where users enter passwords, but it does not yet mitigate compromised renderers.
@@ -55,7 +55,7 @@ In scope:
  * Bugs that cause cross-site data disclosure, even if the bug assumes a
    compromised renderer. Examples of data protected by Site Isolation: cookies,
    saved passwords, localStorage, IndexedDB, HTTP resources covered by
-   [CORB](https://www.chromium.org/Home/chromium-security/corb-for-developers)
+   [CORB](https://www.monyhar.org/Home/monyhar-security/corb-for-developers)
    or
    [CORP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cross-Origin_Resource_Policy_(CORP)).
 
@@ -70,7 +70,7 @@ Out of scope and known issues:
    their creator.
  * CORB is not enforced for the Flash plugin, which is disabled by default and
    will be removed. CORB is also not enforced for a small set of [allowlisted
-   extensions](https://www.chromium.org/Home/chromium-security/extension-content-script-fetches),
+   extensions](https://www.monyhar.org/Home/monyhar-security/extension-content-script-fetches),
    until these extensions have a chance to update to the new security model.
  * Compromised renderers can still spoof other sites (e.g., spoof Origin headers
    or Sec-Fetch-Site headers).
@@ -78,7 +78,7 @@ Out of scope and known issues:
    be mitigated by robust server-side CSRF protection.
  * Problems in websites (e.g. missing CORB protection because of incorrect
    Content-Type header) or
-   [extensions](https://groups.google.com/a/chromium.org/d/topic/chromium-extensions/0ei-UCHNm34/discussion)
+   [extensions](https://groups.google.com/a/monyhar.org/d/topic/monyhar-extensions/0ei-UCHNm34/discussion)
    (e.g., privilege escalation via messages from a compromised content script)
    are out of scope of the Chrome VRP, but may be covered by a separate
    website-specific or extension-specific VRP.

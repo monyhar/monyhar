@@ -32,7 +32,7 @@
       "infra/recipes/.*"
     ]
   },
-  "chromium": {
+  "monyhar": {
     "exclusions": [
       "buildtools/checkdeps/.*",
       "chrome/android/profiles/newest.txt",
@@ -60,7 +60,7 @@
       "third_party/jstemplate/.*(css|html|js)",
       "third_party/mocha/.*(css|html|js)",
       "third_party/openscreen/src/DEPS",
-      "third_party/polymer/v1_0/components-chromium/.*(css|html|js)",
+      "third_party/polymer/v1_0/components-monyhar/.*(css|html|js)",
       "third_party/vulkan-deps/DEPS",
       "third_party/web-animations-js/.*(css|html|js)",
       "third_party/zlib/google/test/data/.*",

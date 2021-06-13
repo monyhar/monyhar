@@ -6,7 +6,7 @@
      found in the LICENSE file.
 -->
 
-<org.chromium.chrome.browser.tab.SadTabView
+<org.monyhar.chrome.browser.tab.SadTabView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -37,7 +37,7 @@
             tools:ignore="ContentDescription"
             android:layout_gravity="start" />
 
-        <org.chromium.ui.widget.TextViewWithLeading
+        <org.monyhar.ui.widget.TextViewWithLeading
             android:id="@+id/sad_tab_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -61,14 +61,14 @@
             style="@style/SadTabBodyText"
             android:visibility="gone" />
 
-        <org.chromium.ui.widget.TextViewWithClickableSpans
+        <org.monyhar.ui.widget.TextViewWithClickableSpans
             android:id="@+id/sad_tab_message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="22dp"
             style="@style/SadTabBodyText" />
 
-        <org.chromium.ui.widget.ButtonCompat
+        <org.monyhar.ui.widget.ButtonCompat
             android:id="@+id/sad_tab_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -76,4 +76,4 @@
             android:layout_gravity="end"
             style="@style/FilledButton" />
     </LinearLayout>
-</org.chromium.chrome.browser.tab.SadTabView>
+</org.monyhar.chrome.browser.tab.SadTabView>

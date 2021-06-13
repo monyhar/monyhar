@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ntp;
+package org.monyhar.chrome.browser.ntp;
 
 import android.annotation.SuppressLint;
 import android.content.res.Resources;
@@ -12,7 +12,7 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.R;
+import org.monyhar.chrome.R;
 
 /**
  * This class handles snap scroll for the search box on a {@link NewTabPage}.

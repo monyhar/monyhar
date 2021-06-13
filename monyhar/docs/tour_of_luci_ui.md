@@ -1,7 +1,7 @@
 # A Tour of Continuous Integration UI
 
 This document details a tour of page layouts and site hierarchy for [LUCI
-UI](https://ci.chromium.org/p/chromium), Chromium's continuous integration user
+UI](https://ci.monyhar.org/p/monyhar), Chromium's continuous integration user
 interface. Currently, LUCI shows both Buildbot and LUCI builds. In the near
 future, LUCI will replace Buildbot as the default continuous integration system.
 Read this document to learn how to navigate LUCI and to better understand the
@@ -14,9 +14,9 @@ sections.
 
 **Where can I see the console view for my builders?**
 
-*Using this URL schema, `ci.chromium.org/p/<project_id>/g/<group_id>/console`,
+*Using this URL schema, `ci.monyhar.org/p/<project_id>/g/<group_id>/console`,
 replace `<project_id>` with the project ID and `<group_id>` with the group ID.
-For example, [Chromium Main](http://ci.chromium.org/p/chromium/g/main/console).
+For example, [Chromium Main](http://ci.monyhar.org/p/monyhar/g/main/console).
 See [console view page](#Console-view-page) section below for details on the
 page.*
 
@@ -34,14 +34,14 @@ each page.*
 **Is LUCI only for the Chromium project?**
 
 _The overall goal is to have LUCI serve all projects (wherever possible) that
-Buildbot currently serves. The 11/30 UI rollout is limited to chromium.* masters
-and tryserver.chromium.* + tryserver.blink masters. Other projects/masters will
+Buildbot currently serves. The 11/30 UI rollout is limited to monyhar.* masters
+and tryserver.monyhar.* + tryserver.blink masters. Other projects/masters will
 switch to LUCI UI at later notice._
 
 **Is there a list of Known Issues?**
 
 _A list of known user interface issues can be viewed in [Chromium
-bugs](https://bugs.chromium.org/p/chromium/issues/list?q=label%3Aluci-knownissues-ui)._
+bugs](https://bugs.monyhar.org/p/monyhar/issues/list?q=label%3Aluci-knownissues-ui)._
 
 **What happened to Masters?**
 
@@ -86,7 +86,7 @@ enhanced user experiences on top of the new LUCI UI.
 
 #### Home
 
-**URL:** [ci.chromium.org](http://ci.chromium.org/)
+**URL:** [ci.monyhar.org](http://ci.monyhar.org/)
 
 This is the "Home" page for LUCI. It contains a listing of all of the projects
 configured in LUCI.
@@ -96,7 +96,7 @@ configured in LUCI.
 
 #### Search
 
-**URL:** [ci.chromium.org/search](http://ci.chromium.org/search)
+**URL:** [ci.monyhar.org/search](http://ci.monyhar.org/search)
 
 This is the builder search page for LUCI. Find a specific builder serviced by
 LUCI by name. Search results are sorted by bucket and groups. This can also be
@@ -106,9 +106,9 @@ accessed by typing "ci.<tab>" in the Chrome Omnibox.
 
 #### Project page
 
-**URL:** `ci.chromium.org/p/<project_id>`
+**URL:** `ci.monyhar.org/p/<project_id>`
 
-Example: [ci.chromium.org/p/chromium](http://ci.chromium.org/p/chromium)
+Example: [ci.monyhar.org/p/monyhar](http://ci.monyhar.org/p/monyhar)
 
 A list of the groups defined for the project. A group is an ordered list of
 builders (Builders can be referenced by multiple groups). This page contains
@@ -126,10 +126,10 @@ Buildbot master and included builders that used to be attached to it.
 
 #### Builders list page per project
 
-**URL:** `ci.chromium.org/p/<project_id>/builders`
+**URL:** `ci.monyhar.org/p/<project_id>/builders`
 
 Example:
-[ci.chromium.org/p/chromium/builders](http://ci.chromium.org/p/chromium/builders)
+[ci.monyhar.org/p/monyhar/builders](http://ci.monyhar.org/p/monyhar/builders)
 
 Shows a listing of all builders belonging to the *`<project_id>`*. Each builder
 shows number of builds pending, in-progress and the build statuses of the last
@@ -150,10 +150,10 @@ These pages display a singular resource that *belongs to* the project
 
 #### Builder page
 
-**Buildbot Builder URL:** `ci.chromium.org/buildbot/<group_id>/<builder_name>`
+**Buildbot Builder URL:** `ci.monyhar.org/buildbot/<group_id>/<builder_name>`
 
 **LUCI Builder URL:**
-`ci.chromium.org/p/<project_id>/builders/<bucket>/<builder_name>`
+`ci.monyhar.org/p/<project_id>/builders/<bucket>/<builder_name>`
 
 This is the page describing the builder and lists machine pool, current builds,
 pending builds and recent builds completed. The layout is equivalent to Buildbot
@@ -165,19 +165,19 @@ layout of builder pages.
 #### Build Results page
 
 **Buildbot Build URL:** `
-ci.chromium.org/buildbot/<group_id>/<builder_name>/<build_#>`
+ci.monyhar.org/buildbot/<group_id>/<builder_name>/<build_#>`
 
 **LUCI Build URL:**
-`ci.chromium.org/p/<project_id>/builders/<bucket>/<builder_name>/<build_#>`
+`ci.monyhar.org/p/<project_id>/builders/<bucket>/<builder_name>/<build_#>`
 
-*Alternate LUCI Build URL: `ci.chromium.org/p/<project_id>/builds/b<buildbucket_build_id>`*
+*Alternate LUCI Build URL: `ci.monyhar.org/p/<project_id>/builds/b<buildbucket_build_id>`*
 
 This is the page describing the build and results. Contains build info,
 properties, result status, blame-list, steps and links to log files. The layout
 is equivalent to Buildbot layout of build result pages.
 
 Builds can also have an alternate LUCI build URL under
-`ci.chromium.org/p/<project_id>/builds/b<buildbucket_build_id>` if the build does
+`ci.monyhar.org/p/<project_id>/builds/b<buildbucket_build_id>` if the build does
 not have a “buildnumber” property. This does not apply to Chromium builds since
 all Chromium builds have a buildnumber property.
 
@@ -194,10 +194,10 @@ they show up on main/console.
 
 #### Console view page
 
-**URL:** `ci.chromium.org/p/<project_id>/g/<group_id>/console`
+**URL:** `ci.monyhar.org/p/<project_id>/g/<group_id>/console`
 
 Example:
-[ci.chromium.org/p/chromium/g/main/console](http://ci.chromium.org/p/chromium/g/main/console)
+[ci.monyhar.org/p/monyhar/g/main/console](http://ci.monyhar.org/p/monyhar/g/main/console)
 
 A high-level overview of the recently completed builds. Contains most relevant
 information on the Group, including tree status, on-call information, important
@@ -212,14 +212,14 @@ console view page")
 **Tree Status**
 
 The "tree" represents the various source repositories used to build the project,
-e.g.  chromium/src.git plus its
-[DEPS](http://src.chromium.org/viewvc/chrome/trunk/src/DEPS?view=markup) file.
+e.g.  monyhar/src.git plus its
+[DEPS](http://src.monyhar.org/viewvc/chrome/trunk/src/DEPS?view=markup) file.
 **Tree status **displays the state of the tree corresponding to the project and
 determines whether or not developers are allowed to commit to the repositories.
 The tree can be "open", "closed" or "throttled". The normal state is open. When
 vital builders fail or tests break, the tree is closed by putting the word
 "closed" in the tree status;
-[PRESUBMIT.py](http://src.chromium.org/viewvc/chrome/trunk/src/PRESUBMIT.py?view=markup)
+[PRESUBMIT.py](http://src.monyhar.org/viewvc/chrome/trunk/src/PRESUBMIT.py?view=markup)
 checks the status and will block commits, and the build sheriff will act to fix
 the tree. When the tree is throttled, commits are only allowed with specific
 permission from the build sheriff, generally because the sheriff wants to make
@@ -252,10 +252,10 @@ status.
 
 #### Builders view page
 
-**URL:** `ci.chromium.org/p/<project_id>/g/<group_id>/builders`
+**URL:** `ci.monyhar.org/p/<project_id>/g/<group_id>/builders`
 
 Example:
-[ci.chromium.org/p/chromium/g/main/builders](http://ci.chromium.org/p/chromium/g/main/builders)
+[ci.monyhar.org/p/monyhar/g/main/builders](http://ci.monyhar.org/p/monyhar/g/main/builders)
 
 Builders view page for the group_id under project_id. Shows all builders of this
 group. Each builder shows number of builds pending, in-progress and the build
@@ -305,7 +305,7 @@ presentation](https://docs.google.com/presentation/d/1dhUecmBf7IZ3moy_SflNT7yBYe
 
 On the highest level, LUCI is organized by **projects**. A project contains all
 the configuration necessary to do development on a given repo, for example,
-Chromium is one of these projects (corresponding to chromium/src.git). Each
+Chromium is one of these projects (corresponding to monyhar/src.git). Each
 project contains **builders**, which describe how a given builder works (i.e.
 recipe to run, gn args to use, etc.). Each **builder** has **builds**, which
 contain build information, build properties details, success or failure status,
@@ -330,7 +330,7 @@ these **views**. We have currently implemented 2 views; a **console view** and a
 ![Project hierarchy diagram](images/LUCI-Project-Diagram.png)
 
 
-To get started with LUCI, go to [ci.chromium.org](http://ci.chromium.org). Drill
+To get started with LUCI, go to [ci.monyhar.org](http://ci.monyhar.org). Drill
 down to build results from the list of projects. The search page is available to
 find a specific builder by name.
 
@@ -340,7 +340,7 @@ find a specific builder by name.
 ## Known Issues
 
 A list of [known
-issues](https://bugs.chromium.org/p/chromium/issues/list?q=label%3Aluci-knownissues-ui)
+issues](https://bugs.monyhar.org/p/monyhar/issues/list?q=label%3Aluci-knownissues-ui)
 for the user interface of LUCI is available under Chromium bugs.
 
 Note: URLs and pages are subject to change. Our initial goal is to provide
@@ -352,7 +352,7 @@ enhanced user experiences on top of the new LUCI UI.
 The Chrome Operations Foundation team is responsible for the design and
 development of LUCI. If you have any questions or need help on usage, feel free
 to reach out to the Chrome Operations team by emailing us at
-[infra-dev@chromium.org](mailto:infra-dev@chromium.org)
+[infra-dev@monyhar.org](mailto:infra-dev@monyhar.org)
 
 
 ## Feedback
@@ -368,11 +368,11 @@ hear it and incorporate it into our ongoing UI improvements.
 Use the **feedback button** on a LUCI page.
 
 For **feature requests or bugs**, please file a crbug using the following
-[template](https://bugs.chromium.org/p/chromium/issues/entry?labels=LUCI-M0-Backlog&summary=[LUCI-Feedback-UI]%20Enter%20an%20one-line%20summary&components=Infra>Platform>Milo&cc=efoo@chromium.org,estaab@chromium.org,nodir@chromium.org&description=Please%20use%20this%20to%20template%20to%20file%20a%20feature%20request%20into%20LUCI%20backlog.%20%20%0A%0AReminder%20to%20include%20the%20following%3A%0A-%20Description%0A-%20Priority%0A-%20Why%20this%20feature%20is%20needed).
+[template](https://bugs.monyhar.org/p/monyhar/issues/entry?labels=LUCI-M0-Backlog&summary=[LUCI-Feedback-UI]%20Enter%20an%20one-line%20summary&components=Infra>Platform>Milo&cc=efoo@monyhar.org,estaab@monyhar.org,nodir@monyhar.org&description=Please%20use%20this%20to%20template%20to%20file%20a%20feature%20request%20into%20LUCI%20backlog.%20%20%0A%0AReminder%20to%20include%20the%20following%3A%0A-%20Description%0A-%20Priority%0A-%20Why%20this%20feature%20is%20needed).
 
 To **share your feedback**, please fill out this [short
 survey](https://goo.gl/forms/YPO6XCQ3q47r00iw2).
 
 **Contact us** directly by emailing us at
-[infra-dev@chromium.org](mailto:infra-dev@chromium.org).
+[infra-dev@monyhar.org](mailto:infra-dev@monyhar.org).
 

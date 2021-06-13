@@ -7,11 +7,11 @@ import("//chrome/android/features/android_library_factory_tmpl.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/components/browser_ui/bottomsheet/BottomSheetContent.java",
-    "java/src/org/chromium/components/browser_ui/bottomsheet/BottomSheetController.java",
-    "java/src/org/chromium/components/browser_ui/bottomsheet/BottomSheetControllerProvider.java",
-    "java/src/org/chromium/components/browser_ui/bottomsheet/BottomSheetObserver.java",
-    "java/src/org/chromium/components/browser_ui/bottomsheet/EmptyBottomSheetObserver.java",
+    "java/src/org/monyhar/components/browser_ui/bottomsheet/BottomSheetContent.java",
+    "java/src/org/monyhar/components/browser_ui/bottomsheet/BottomSheetController.java",
+    "java/src/org/monyhar/components/browser_ui/bottomsheet/BottomSheetControllerProvider.java",
+    "java/src/org/monyhar/components/browser_ui/bottomsheet/BottomSheetObserver.java",
+    "java/src/org/monyhar/components/browser_ui/bottomsheet/EmptyBottomSheetObserver.java",
   ]
 
   deps = [
@@ -21,7 +21,7 @@ android_library("java") {
     "//third_party/androidx:androidx_annotation_annotation_java",
     "//ui/android:ui_java",
   ]
-  resources_package = "org.chromium.components.browser_ui.bottomsheet"
+  resources_package = "org.monyhar.components.browser_ui.bottomsheet"
 }
 
 android_resources("java_resources") {
@@ -35,7 +35,7 @@ android_resources("java_resources") {
 
 # The only dependent on this code outside of this component should be glue.
 android_library("manager_java") {
-  sources = [ "java/src/org/chromium/components/browser_ui/bottomsheet/ManagedBottomSheetController.java" ]
+  sources = [ "java/src/org/monyhar/components/browser_ui/bottomsheet/ManagedBottomSheetController.java" ]
 
   deps = [
     ":java",
@@ -44,7 +44,7 @@ android_library("manager_java") {
 }
 
 android_library_factory("factory_java") {
-  sources = [ "internal/java/src/org/chromium/components/browser_ui/bottomsheet/BottomSheetControllerFactory.java" ]
+  sources = [ "internal/java/src/org/monyhar/components/browser_ui/bottomsheet/BottomSheetControllerFactory.java" ]
 
   deps = [
     ":java",

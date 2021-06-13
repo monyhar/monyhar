@@ -5,7 +5,7 @@ from benchmarks import loading
 from telemetry import benchmark
 
 # pylint: disable=protected-access
-@benchmark.Info(emails=['cbiesinger@chromium.org'],
+@benchmark.Info(emails=['cbiesinger@monyhar.org'],
                 documentation_url='https://bit.ly/loading-benchmarks')
 class LoadingDesktopLayoutNg(loading.LoadingDesktop):
   """A benchmark that runs loading.desktop with the layoutng flag."""
@@ -20,7 +20,7 @@ class LoadingDesktopLayoutNg(loading.LoadingDesktop):
 
 
 # pylint: disable=protected-access
-@benchmark.Info(emails=['cbiesinger@chromium.org'],
+@benchmark.Info(emails=['cbiesinger@monyhar.org'],
                 documentation_url='https://bit.ly/loading-benchmarks')
 class LoadingMobileLayoutNg(loading.LoadingDesktop):
   """A benchmark that runs loading.mobile with the layoutng flag."""

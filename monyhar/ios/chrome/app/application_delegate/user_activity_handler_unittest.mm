@@ -850,7 +850,7 @@ TEST_F(UserActivityHandlerTest, HandleStartupParamsU2F) {
   browser_list_->AddBrowser(browser_.get());
 
   std::string urlRepresentation = base::StringPrintf(
-      "chromium://u2f-callback?isU2F=1&tabID=%s",
+      "monyhar://u2f-callback?isU2F=1&tabID=%s",
       base::SysNSStringToUTF8(GetTabIdForWebState(web_state_ptr)).c_str());
 
   GURL gurl(urlRepresentation);

@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import android.os.Handler;
 
-import org.chromium.base.process_launcher.ChildProcessConnection;
-import org.chromium.build.BuildConfig;
-import org.chromium.content_public.browser.ChildProcessImportance;
+import org.monyhar.base.process_launcher.ChildProcessConnection;
+import org.monyhar.build.BuildConfig;
+import org.monyhar.content_public.browser.ChildProcessImportance;
 
 import java.util.ArrayList;
 import java.util.Comparator;

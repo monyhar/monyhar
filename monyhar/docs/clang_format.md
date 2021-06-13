@@ -4,14 +4,14 @@
 
 *** note
 NOTE: This page does not apply to the Chromium OS project. See [Chromium Issue
-878506](https://bugs.chromium.org/p/chromium/issues/detail?id=878506#c10)
+878506](https://bugs.monyhar.org/p/monyhar/issues/detail?id=878506#c10)
 for updates.
 ***
 
 ## Easiest usage, from the command line
 
 To automatically format a pending patch according to
-[Chromium style](https://www.chromium.org/developers/coding-style), run:
+[Chromium style](https://www.monyhar.org/developers/coding-style), run:
 ``` git cl format ``` from the command line. This should work on all platforms
 without any extra set up: the tool is integrated with depot_tools and the
 Chromium checkout.
@@ -27,22 +27,22 @@ the now-formatted code.
 Many developers find it useful to integrate the clang-format tool with their
 editor of choice. As a convenience, the scripts for this are also available in
 your checkout of Chrome under
-[src/buildtools/clang_format/script/](https://source.chromium.org/chromium/chromium/src/+/HEAD:buildtools/clang_format/script/).
+[src/buildtools/clang_format/script/](https://source.monyhar.org/monyhar/monyhar/src/+/HEAD:buildtools/clang_format/script/).
 
 If you use an editor integration, you should try to make sure that you're using
 the version of clang-format that comes with your checkout. That way, you'll
 automatically get updates and be running a tool that formats consistently with
 other developers. The binary lives under `src/buildtools`, but it's also in your
 path indirectly via a `depot_tools` launcher script:
-[clang-format](https://code.google.com/p/chromium/codesearch#chromium/tools/depot_tools/clang-format)
-([clang-format.bat](https://code.google.com/p/chromium/codesearch#chromium/tools/depot_tools/clang-format.bat) on Windows). Assuming that `depot_tools` is in your editor's `PATH`
+[clang-format](https://code.google.com/p/monyhar/codesearch#monyhar/tools/depot_tools/clang-format)
+([clang-format.bat](https://code.google.com/p/monyhar/codesearch#monyhar/tools/depot_tools/clang-format.bat) on Windows). Assuming that `depot_tools` is in your editor's `PATH`
 and the editor command runs from a working directory inside the Chromium
 checkout, the editor scripts (which anticipate clang-format on the path) should
 work.
 
 For further guidance on editor integration, see these specific pages:
 
-*   [Sublime Text](https://www.chromium.org/developers/sublime-text#TOC-Format-selection-or-area-around-cursor-using-clang-format)
+*   [Sublime Text](https://www.monyhar.org/developers/sublime-text#TOC-Format-selection-or-area-around-cursor-using-clang-format)
 *   [llvm's guidelines for vim, emacs, and bbedit](http://clang.llvm.org/docs/ClangFormat.html)
 *   For vim, `:so tools/vim/clang-format.vim` and then hit cmd-shift-i (mac)
     ctrl-shift-i (elsewhere) to indent the current line or current selection.
@@ -50,11 +50,11 @@ For further guidance on editor integration, see these specific pages:
 ## Reporting problems
 
 If clang-format is broken, or produces badly formatted code, please file a
-[bug]. Assign it to thakis@chromium.org or dcheng@chromium.org, who will route
+[bug]. Assign it to thakis@monyhar.org or dcheng@monyhar.org, who will route
 it upstream.
 
 [bug]:
-https://code.google.com/p/chromium/issues/entry?comment=clang-format%20produced%20code%20that%20(choose%20all%20that%20apply):%20%0A-%20Doesn%27t%20match%20Chromium%20style%0A-%20Doesn%27t%20match%20blink%20style%0A-%20Riles%20my%20finely%20honed%20stylistic%20dander%0A-%20No%20sane%20human%20would%20ever%20choose%0A%0AHere%27s%20the%20code%20before%20formatting:%0A%0A%0AHere%27s%20the%20code%20after%20formatting:%0A%0A%0AHere%27s%20how%20it%20ought%20to%20look:%0A%0A%0ACode%20review%20link%20for%20full%20files/context:&summary=clang-format%20quality%20problem&cc=thakis@chromium.org&labels=Type-Bug,Build-Tools,OS-?,clang-format
+https://code.google.com/p/monyhar/issues/entry?comment=clang-format%20produced%20code%20that%20(choose%20all%20that%20apply):%20%0A-%20Doesn%27t%20match%20Chromium%20style%0A-%20Doesn%27t%20match%20blink%20style%0A-%20Riles%20my%20finely%20honed%20stylistic%20dander%0A-%20No%20sane%20human%20would%20ever%20choose%0A%0AHere%27s%20the%20code%20before%20formatting:%0A%0A%0AHere%27s%20the%20code%20after%20formatting:%0A%0A%0AHere%27s%20how%20it%20ought%20to%20look:%0A%0A%0ACode%20review%20link%20for%20full%20files/context:&summary=clang-format%20quality%20problem&cc=thakis@monyhar.org&labels=Type-Bug,Build-Tools,OS-?,clang-format
 
 ## Are robots taking over my freedom to choose where newlines go?
 

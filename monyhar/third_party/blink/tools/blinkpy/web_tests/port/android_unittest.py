@@ -34,7 +34,7 @@ import sys
 import time
 import unittest
 
-from blinkpy.common.path_finder import get_chromium_src_dir
+from blinkpy.common.path_finder import get_monyhar_src_dir
 from blinkpy.common.system.executive_mock import MockExecutive
 from blinkpy.common.system.system_host_mock import MockSystemHost
 from blinkpy.web_tests.port import android
@@ -42,7 +42,7 @@ from blinkpy.web_tests.port import driver_unittest
 from blinkpy.web_tests.port import port_testcase
 from blinkpy.web_tests.models.test_expectations import TestExpectations
 
-_DEVIL_ROOT = os.path.join(get_chromium_src_dir(), 'third_party', 'catapult',
+_DEVIL_ROOT = os.path.join(get_monyhar_src_dir(), 'third_party', 'catapult',
                            'devil')
 sys.path.insert(0, _DEVIL_ROOT)
 from devil.android import device_utils

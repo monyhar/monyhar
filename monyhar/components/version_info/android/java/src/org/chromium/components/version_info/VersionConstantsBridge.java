@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.version_info;
+package org.monyhar.components.version_info;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.MainDex;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.MainDex;
 
 /**
  * Bridge between native and VersionConstants.java.

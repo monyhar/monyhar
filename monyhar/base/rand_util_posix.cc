@@ -59,7 +59,7 @@ namespace base {
 // NOTE: In an ideal future, all implementations of this function will just
 // wrap BoringSSL's `RAND_bytes`. TODO(crbug.com/995996): Figure out the
 // build/test/performance issues with dcheng's CL
-// (https://chromium-review.googlesource.com/c/chromium/src/+/1545096) and land
+// (https://monyhar-review.googlesource.com/c/monyhar/src/+/1545096) and land
 // it or some form of it.
 void RandBytes(void* output, size_t output_length) {
 #if (defined(OS_LINUX) || defined(OS_CHROMEOS)) && !defined(OS_NACL)

@@ -5,7 +5,7 @@
 // This file was generated using
 //     mojo/tools/generate_java_callback_interfaces.py
 
-package org.chromium.mojo.bindings;
+package org.monyhar.mojo.bindings;
 
 /**
  * Contains a generic interface for callbacks.

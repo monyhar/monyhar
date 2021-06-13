@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.dom_distiller;
+package org.monyhar.chrome.browser.dom_distiller;
 
 import android.support.test.InstrumentationRegistry;
 
@@ -15,18 +15,18 @@ import org.junit.ClassRule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.UiThreadTest;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.test.ChromeBrowserTestRule;
-import org.chromium.components.dom_distiller.core.DistilledPagePrefs;
-import org.chromium.components.dom_distiller.core.DomDistillerService;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.content_public.browser.test.util.UiUtils;
-import org.chromium.dom_distiller.mojom.FontFamily;
-import org.chromium.dom_distiller.mojom.Theme;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.UiThreadTest;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.test.ChromeBrowserTestRule;
+import org.monyhar.components.dom_distiller.core.DistilledPagePrefs;
+import org.monyhar.components.dom_distiller.core.DomDistillerService;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.content_public.browser.test.util.UiUtils;
+import org.monyhar.dom_distiller.mojom.FontFamily;
+import org.monyhar.dom_distiller.mojom.Theme;
 
 /**
  * Test class for {@link DistilledPagePrefs}.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.test;
+package org.monyhar.net.test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -21,8 +21,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.net.CronetEngine;
-import org.chromium.net.impl.JavaCronetEngineBuilderImpl;
+import org.monyhar.net.CronetEngine;
+import org.monyhar.net.impl.JavaCronetEngineBuilderImpl;
 
 import java.util.AbstractMap;
 import java.util.List;

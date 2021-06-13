@@ -19,7 +19,7 @@ class Bus;
 
 namespace chromeos {
 
-// AttestationClient is used to communicate with the org.chromium.Attestation
+// AttestationClient is used to communicate with the org.monyhar.Attestation
 // service. All method should be called from the origin thread (UI thread) which
 // initializes the DBusThreadManager instance.
 class COMPONENT_EXPORT(CHROMEOS_DBUS_ATTESTATION) AttestationClient {
@@ -226,7 +226,7 @@ class COMPONENT_EXPORT(CHROMEOS_DBUS_ATTESTATION) AttestationClient {
   // Gets the verified access server type from command-line arguments.
   static ::attestation::VAType GetVerifiedAccessServerType();
 
-  // Attestation daemon D-Bus method calls. See org.chromium.Attestation.xml and
+  // Attestation daemon D-Bus method calls. See org.monyhar.Attestation.xml and
   // the corresponding protobuf definitions in Chromium OS code for the
   // documentation of the methods and request/ messages.
 

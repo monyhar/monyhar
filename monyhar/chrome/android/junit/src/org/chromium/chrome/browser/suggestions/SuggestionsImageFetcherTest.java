@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.suggestions;
+package org.monyhar.chrome.browser.suggestions;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
@@ -17,14 +17,14 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.thumbnail.generator.ThumbnailProvider;
-import org.chromium.chrome.test.util.browser.suggestions.SuggestionsDependenciesRule;
-import org.chromium.components.favicon.LargeIconBridge;
-import org.chromium.components.favicon.LargeIconBridge.LargeIconCallback;
-import org.chromium.url.GURL;
-import org.chromium.url.JUnitTestGURLs;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.thumbnail.generator.ThumbnailProvider;
+import org.monyhar.chrome.test.util.browser.suggestions.SuggestionsDependenciesRule;
+import org.monyhar.components.favicon.LargeIconBridge;
+import org.monyhar.components.favicon.LargeIconBridge.LargeIconCallback;
+import org.monyhar.url.GURL;
+import org.monyhar.url.JUnitTestGURLs;
 
 /**
  * Unit tests for {@link ImageFetcher}.

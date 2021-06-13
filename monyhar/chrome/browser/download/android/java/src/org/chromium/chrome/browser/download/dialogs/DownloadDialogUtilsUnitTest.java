@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.dialogs;
+package org.monyhar.chrome.browser.download.dialogs;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -11,8 +11,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.chrome.browser.download.DirectoryOption;
-import org.chromium.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.chrome.browser.download.DirectoryOption;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
 
 import java.util.ArrayList;
 

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,21 +12,21 @@ import android.util.Base64;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.browserservices.intents.BitmapHelper;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.browserservices.intents.WebDisplayMode;
-import org.chromium.chrome.browser.webapps.WebappActivity;
-import org.chromium.chrome.browser.webapps.WebappAuthenticator;
-import org.chromium.chrome.browser.webapps.WebappDataStorage;
-import org.chromium.chrome.browser.webapps.WebappIntentDataProviderFactory;
-import org.chromium.chrome.browser.webapps.WebappLauncherActivity;
-import org.chromium.chrome.browser.webapps.WebappRegistry;
-import org.chromium.components.webapps.WebappsUtils;
-import org.chromium.content_public.common.ScreenOrientationConstants;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.browserservices.intents.BitmapHelper;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.browserservices.intents.WebDisplayMode;
+import org.monyhar.chrome.browser.webapps.WebappActivity;
+import org.monyhar.chrome.browser.webapps.WebappAuthenticator;
+import org.monyhar.chrome.browser.webapps.WebappDataStorage;
+import org.monyhar.chrome.browser.webapps.WebappIntentDataProviderFactory;
+import org.monyhar.chrome.browser.webapps.WebappLauncherActivity;
+import org.monyhar.chrome.browser.webapps.WebappRegistry;
+import org.monyhar.components.webapps.WebappsUtils;
+import org.monyhar.content_public.common.ScreenOrientationConstants;
 
 import java.util.HashMap;
 import java.util.Locale;
@@ -39,34 +39,34 @@ import java.util.Set;
  * or open a web app.
  */
 public class ShortcutHelper {
-    public static final String EXTRA_ICON = "org.chromium.chrome.browser.webapp_icon";
-    public static final String EXTRA_ID = "org.chromium.chrome.browser.webapp_id";
-    public static final String EXTRA_MAC = "org.chromium.chrome.browser.webapp_mac";
+    public static final String EXTRA_ICON = "org.monyhar.chrome.browser.webapp_icon";
+    public static final String EXTRA_ID = "org.monyhar.chrome.browser.webapp_id";
+    public static final String EXTRA_MAC = "org.monyhar.chrome.browser.webapp_mac";
     // EXTRA_TITLE is present for backward compatibility reasons.
-    public static final String EXTRA_TITLE = "org.chromium.chrome.browser.webapp_title";
-    public static final String EXTRA_NAME = "org.chromium.chrome.browser.webapp_name";
-    public static final String EXTRA_SHORT_NAME = "org.chromium.chrome.browser.webapp_short_name";
-    public static final String EXTRA_URL = "org.chromium.chrome.browser.webapp_url";
-    public static final String EXTRA_SCOPE = "org.chromium.chrome.browser.webapp_scope";
+    public static final String EXTRA_TITLE = "org.monyhar.chrome.browser.webapp_title";
+    public static final String EXTRA_NAME = "org.monyhar.chrome.browser.webapp_name";
+    public static final String EXTRA_SHORT_NAME = "org.monyhar.chrome.browser.webapp_short_name";
+    public static final String EXTRA_URL = "org.monyhar.chrome.browser.webapp_url";
+    public static final String EXTRA_SCOPE = "org.monyhar.chrome.browser.webapp_scope";
     public static final String EXTRA_DISPLAY_MODE =
-            "org.chromium.chrome.browser.webapp_display_mode";
+            "org.monyhar.chrome.browser.webapp_display_mode";
     public static final String EXTRA_ORIENTATION = ScreenOrientationConstants.EXTRA_ORIENTATION;
-    public static final String EXTRA_SOURCE = "org.chromium.chrome.browser.webapp_source";
-    public static final String EXTRA_THEME_COLOR = "org.chromium.chrome.browser.theme_color";
+    public static final String EXTRA_SOURCE = "org.monyhar.chrome.browser.webapp_source";
+    public static final String EXTRA_THEME_COLOR = "org.monyhar.chrome.browser.theme_color";
     public static final String EXTRA_BACKGROUND_COLOR =
-            "org.chromium.chrome.browser.background_color";
+            "org.monyhar.chrome.browser.background_color";
     public static final String EXTRA_IS_ICON_GENERATED =
-            "org.chromium.chrome.browser.is_icon_generated";
+            "org.monyhar.chrome.browser.is_icon_generated";
     public static final String EXTRA_IS_ICON_ADAPTIVE =
-            "org.chromium.chrome.browser.webapp_icon_adaptive";
+            "org.monyhar.chrome.browser.webapp_icon_adaptive";
     public static final String EXTRA_VERSION =
-            "org.chromium.chrome.browser.webapp_shortcut_version";
+            "org.monyhar.chrome.browser.webapp_shortcut_version";
     public static final String REUSE_URL_MATCHING_TAB_ELSE_NEW_TAB =
             "REUSE_URL_MATCHING_TAB_ELSE_NEW_TAB";
     // Whether the webapp should navigate to the URL in {@link EXTRA_URL} if the webapp is already
     // open. Applies to webapps and WebAPKs. Value contains "webapk" for backward compatibility.
     public static final String EXTRA_FORCE_NAVIGATION =
-            "org.chromium.chrome.browser.webapk_force_navigation";
+            "org.monyhar.chrome.browser.webapk_force_navigation";
 
     // When a new field is added to the intent, this version should be incremented so that it will
     // be correctly populated into the WebappRegistry/WebappDataStorage.

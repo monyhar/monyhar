@@ -39,7 +39,7 @@ This is best thought of as WebLayer's ABI (for Java).
 
 The client library loads the WebLayer implementation from WebView APK and uses
 AIDL for the IPC. The aidl interfaces are defined in
-"//weblayer/browser/java/org/chromium/weblayer_private/interfaces". AIDL is used
+"//weblayer/browser/java/org/monyhar/weblayer_private/interfaces". AIDL is used
 to enable the implementation to be loaded using a different ClassLoader than
 the embedder.
 

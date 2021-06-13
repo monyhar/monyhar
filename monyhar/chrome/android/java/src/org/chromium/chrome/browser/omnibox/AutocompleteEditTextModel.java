@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox;
+package org.monyhar.chrome.browser.omnibox;
 
 import android.text.Editable;
 import android.text.Selection;
@@ -14,7 +14,7 @@ import android.view.inputmethod.BaseInputConnection;
 import android.view.inputmethod.InputConnection;
 import android.view.inputmethod.InputConnectionWrapper;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 /**
  * An autocomplete model that appends autocomplete text at the end of query/URL text and selects it.

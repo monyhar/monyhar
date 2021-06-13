@@ -128,7 +128,7 @@ together.
 
 ## See also
 
-* [`Manifest::Type` declaration](https://cs.chromium.org/chromium/src/extensions/common/manifest.h?gs=cpp%253Aextensions%253A%253Aclass-Manifest%253A%253Aenum-Type%2540chromium%252F..%252F..%252Fextensions%252Fcommon%252Fmanifest.h%257Cdef&gsn=Type&ct=xref_usages)
+* [`Manifest::Type` declaration](https://cs.monyhar.org/monyhar/src/extensions/common/manifest.h?gs=cpp%253Aextensions%253A%253Aclass-Manifest%253A%253Aenum-Type%2540monyhar%252F..%252F..%252Fextensions%252Fcommon%252Fmanifest.h%257Cdef&gsn=Type&ct=xref_usages)
 * Extensions (3rd-party developer documentation)
     * [Extension APIs](https://developer.chrome.com/extensions/api_index)
     * [Extension manifest file format](

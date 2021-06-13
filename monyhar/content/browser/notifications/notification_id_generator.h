@@ -41,7 +41,7 @@ namespace content {
 //
 // Also note that several functions in NotificationPlatformBridge class
 // rely on the format of the notification generated here.
-// Code: chrome/android/java/src/org/chromium/chrome/browser/notifications/
+// Code: chrome/android/java/src/org/monyhar/chrome/browser/notifications/
 // NotificationPlatformBridge.java
 class CONTENT_EXPORT NotificationIdGenerator {
  public:

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox;
+package org.monyhar.chrome.browser.omnibox;
 
 import android.graphics.Point;
 import android.graphics.Rect;
@@ -12,7 +12,7 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
+import org.monyhar.base.Callback;
 
 /**
  * Delegate that provides the toolbar with the info of the NTP for the current tab.

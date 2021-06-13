@@ -9,7 +9,7 @@ pretty-printing of custom Chromium types.
 To use, add the following to your `~/.gdbinit`
 
 ```
-source /path/to/chromium/src/tools/gdb/gdbinit
+source /path/to/monyhar/src/tools/gdb/gdbinit
 ```
 
 *** promo

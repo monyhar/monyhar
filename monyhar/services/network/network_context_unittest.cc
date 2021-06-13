@@ -2151,7 +2151,7 @@ TEST_F(NetworkContextTest, ClearReportingCacheReportsWithFilter) {
   GURL url1("http://google.com");
   reporting_service->QueueReport(url1, net::NetworkIsolationKey(),
                                  "Mozilla/1.0", "group", "type", nullptr, 0);
-  GURL url2("http://chromium.org");
+  GURL url2("http://monyhar.org");
   reporting_service->QueueReport(url2, net::NetworkIsolationKey(),
                                  "Mozilla/1.0", "group", "type", nullptr, 0);
 
@@ -2161,7 +2161,7 @@ TEST_F(NetworkContextTest, ClearReportingCacheReportsWithFilter) {
 
   mojom::ClearDataFilterPtr filter = mojom::ClearDataFilter::New();
   filter->type = mojom::ClearDataFilter_Type::KEEP_MATCHES;
-  filter->domains.push_back("chromium.org");
+  filter->domains.push_back("monyhar.org");
 
   base::RunLoop run_loop;
   network_context->ClearReportingCacheReports(std::move(filter),
@@ -2302,7 +2302,7 @@ TEST_F(NetworkContextTest, ClearReportingCacheClientsWithFilter) {
   reporting_cache->SetEndpointForTesting(
       group_key1, domain1, net::OriginSubdomains::DEFAULT, base::Time::Max(),
       1 /* priority */, 1 /* weight */);
-  GURL domain2("https://chromium.org");
+  GURL domain2("https://monyhar.org");
   net::ReportingEndpointGroupKey group_key2(
       net::NetworkIsolationKey(), url::Origin::Create(domain2), "group");
   reporting_cache->SetEndpointForTesting(
@@ -2313,7 +2313,7 @@ TEST_F(NetworkContextTest, ClearReportingCacheClientsWithFilter) {
 
   mojom::ClearDataFilterPtr filter = mojom::ClearDataFilter::New();
   filter->type = mojom::ClearDataFilter_Type::KEEP_MATCHES;
-  filter->domains.push_back("chromium.org");
+  filter->domains.push_back("monyhar.org");
 
   base::RunLoop run_loop;
   network_context->ClearReportingCacheClients(std::move(filter),
@@ -2404,7 +2404,7 @@ TEST_F(NetworkContextTest, ClearNetworkErrorLoggingWithFilter) {
                             url::Origin::Create(domain1),
                             net::IPAddress(192, 168, 0, 1),
                             "{\"report_to\":\"group\",\"max_age\":86400}");
-  GURL domain2("https://chromium.org");
+  GURL domain2("https://monyhar.org");
   logging_service->OnHeader(net::NetworkIsolationKey(),
                             url::Origin::Create(domain2),
                             net::IPAddress(192, 168, 0, 1),
@@ -2414,7 +2414,7 @@ TEST_F(NetworkContextTest, ClearNetworkErrorLoggingWithFilter) {
 
   mojom::ClearDataFilterPtr filter = mojom::ClearDataFilter::New();
   filter->type = mojom::ClearDataFilter_Type::KEEP_MATCHES;
-  filter->domains.push_back("chromium.org");
+  filter->domains.push_back("monyhar.org");
 
   base::RunLoop run_loop;
   network_context->ClearNetworkErrorLogging(std::move(filter),

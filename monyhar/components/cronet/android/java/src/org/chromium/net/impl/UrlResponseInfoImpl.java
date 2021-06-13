@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.impl;
+package org.monyhar.net.impl;
 
-import org.chromium.net.UrlResponseInfo;
+import org.monyhar.net.UrlResponseInfo;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -16,8 +16,8 @@ import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * Implements the container for basic information about a response. Included in
- * {@link org.chromium.net.UrlRequest.Callback} callbacks. Each
- * {@link org.chromium.net.UrlRequest.Callback#onRedirectReceived onRedirectReceived()}
+ * {@link org.monyhar.net.UrlRequest.Callback} callbacks. Each
+ * {@link org.monyhar.net.UrlRequest.Callback#onRedirectReceived onRedirectReceived()}
  * callback gets a different copy of {@code UrlResponseInfo} describing a particular
  * redirect response.
  */

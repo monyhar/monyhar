@@ -12,7 +12,7 @@ namespace protocol {
 
 // The UI implementations maintain corresponding definitions of this
 // enumeration in webapp/base/js/error.js, webapp/base/js/chromoting_event.js,
-// android/java/src/org/chromium/chromoting/jni/ConnectionListener.java and
+// android/java/src/org/monyhar/chromoting/jni/ConnectionListener.java and
 // remoting/protocol/errors.cc.
 // Be sure to update these locations if you make any changes to the ordering.
 enum ErrorCode {

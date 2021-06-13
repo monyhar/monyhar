@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo.bindings;
+package org.monyhar.mojo.bindings;
 
-import org.chromium.mojo.bindings.Interface.Proxy;
-import org.chromium.mojo.system.DataPipe;
-import org.chromium.mojo.system.Handle;
-import org.chromium.mojo.system.InvalidHandle;
-import org.chromium.mojo.system.MessagePipeHandle;
-import org.chromium.mojo.system.SharedBufferHandle;
-import org.chromium.mojo.system.UntypedHandle;
+import org.monyhar.mojo.bindings.Interface.Proxy;
+import org.monyhar.mojo.system.DataPipe;
+import org.monyhar.mojo.system.Handle;
+import org.monyhar.mojo.system.InvalidHandle;
+import org.monyhar.mojo.system.MessagePipeHandle;
+import org.monyhar.mojo.system.SharedBufferHandle;
+import org.monyhar.mojo.system.UntypedHandle;
 
 import java.nio.ByteOrder;
 import java.nio.charset.Charset;

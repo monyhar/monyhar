@@ -1017,7 +1017,7 @@ class DnsOverHttpsProbeRunner : public DnsProbeRunner {
   }
 
   base::WeakPtr<DnsSession> session_;
-  // TODO(ericorth@chromium.org): Use base::UnownedPtr once available.
+  // TODO(ericorth@monyhar.org): Use base::UnownedPtr once available.
   ResolveContext* const context_;
   std::string formatted_probe_hostname_;
 
@@ -1628,7 +1628,7 @@ class DnsTransactionImpl : public DnsTransaction,
   base::OneShotTimer timer_;
   std::unique_ptr<base::ElapsedTimer> time_from_start_;
 
-  // TODO(ericorth@chromium.org): Use base::UnownedPtr once available.
+  // TODO(ericorth@monyhar.org): Use base::UnownedPtr once available.
   ResolveContext* resolve_context_;
   RequestPriority request_priority_;
 

@@ -4,7 +4,7 @@
 
 # Every fragment must have an empty constructor, so it can be instantiated when
 # restoring its activity's state.
--keep public class org.chromium.** extends androidx.fragment.app.Fragment {
+-keep public class org.monyhar.** extends androidx.fragment.app.Fragment {
   public <init>();
 }
 
@@ -12,10 +12,10 @@
 # referenced, and we look up these services by appending a number onto the name
 # of the base class. Thus, we need to keep the base class name around so that
 # the child classes can be looked up.
--keep class org.chromium.content.app.SandboxedProcessService {
+-keep class org.monyhar.content.app.SandboxedProcessService {
   public <init>();
 }
--keep class org.chromium.content.app.PrivilegedProcessService {
+-keep class org.monyhar.content.app.PrivilegedProcessService {
   public <init>();
 }
 
@@ -60,6 +60,6 @@
 
 # Keep implementation classes needed for split compat. These will be accessed by
 # reflection.
--keep,allowobfuscation public class ** extends org.chromium.chrome.browser.base.SplitCompat*$Impl {
+-keep,allowobfuscation public class ** extends org.monyhar.chrome.browser.base.SplitCompat*$Impl {
   public <init>();
 }

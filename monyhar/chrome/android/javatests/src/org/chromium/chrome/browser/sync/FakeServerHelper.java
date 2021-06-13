@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sync;
+package org.monyhar.chrome.browser.sync;
 
 import androidx.annotation.Nullable;
 
 import com.google.protobuf.InvalidProtocolBufferException;
 
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.sync.protocol.EntitySpecifics;
-import org.chromium.components.sync.protocol.SyncEntity;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.url.GURL;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.sync.protocol.EntitySpecifics;
+import org.monyhar.components.sync.protocol.SyncEntity;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.List;

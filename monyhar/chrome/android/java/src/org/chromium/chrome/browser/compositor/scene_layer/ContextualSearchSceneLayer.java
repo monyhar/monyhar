@@ -2,24 +2,24 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.scene_layer;
+package org.monyhar.chrome.browser.compositor.scene_layer;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchBarBannerControl;
-import org.chromium.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchBarControl;
-import org.chromium.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchImageControl;
-import org.chromium.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchPanel;
-import org.chromium.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchPanelHelp;
-import org.chromium.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchPromoControl;
-import org.chromium.chrome.browser.compositor.bottombar.contextualsearch.RelatedSearchesControl;
-import org.chromium.chrome.browser.layouts.scene_layer.SceneLayer;
-import org.chromium.chrome.browser.layouts.scene_layer.SceneOverlayLayer;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.resources.ResourceManager;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchBarBannerControl;
+import org.monyhar.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchBarControl;
+import org.monyhar.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchImageControl;
+import org.monyhar.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchPanel;
+import org.monyhar.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchPanelHelp;
+import org.monyhar.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchPromoControl;
+import org.monyhar.chrome.browser.compositor.bottombar.contextualsearch.RelatedSearchesControl;
+import org.monyhar.chrome.browser.layouts.scene_layer.SceneLayer;
+import org.monyhar.chrome.browser.layouts.scene_layer.SceneOverlayLayer;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.resources.ResourceManager;
 
 /**
  * A SceneLayer to render layers for ContextualSearchLayout.

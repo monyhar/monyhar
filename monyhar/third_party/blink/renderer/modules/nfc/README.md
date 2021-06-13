@@ -11,10 +11,10 @@ implementation are located in `services/device/nfc`.
 
 ## Testing
 
-Web NFC is primarily tested in [Web Platform Tests](https://source.chromium.org/chromium/chromium/src/+/master:third_party/blink/web_tests/external/wpt/web-nfc/).
+Web NFC is primarily tested in [Web Platform Tests](https://source.monyhar.org/monyhar/monyhar/src/+/master:third_party/blink/web_tests/external/wpt/web-nfc/).
 
 
 ## Design Documents
 
-Please refer to the [design documentation](https://sites.google.com/a/chromium.org/dev/developers/design-documents/web-nfc)
+Please refer to the [design documentation](https://sites.google.com/a/monyhar.org/dev/developers/design-documents/web-nfc)
 for more details.

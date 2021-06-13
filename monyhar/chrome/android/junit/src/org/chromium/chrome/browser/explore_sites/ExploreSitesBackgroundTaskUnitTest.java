@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.explore_sites;
+package org.monyhar.chrome.browser.explore_sites;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -31,21 +31,21 @@ import org.robolectric.annotation.Implementation;
 import org.robolectric.annotation.Implements;
 import org.robolectric.shadows.multidex.ShadowMultiDex;
 
-import org.chromium.base.Callback;
-import org.chromium.base.metrics.test.ShadowRecordHistogram;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.device.DeviceConditions;
-import org.chromium.chrome.browser.device.ShadowDeviceConditions;
-import org.chromium.chrome.browser.init.BrowserParts;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.background_task_scheduler.BackgroundTaskScheduler;
-import org.chromium.components.background_task_scheduler.BackgroundTaskSchedulerFactory;
-import org.chromium.components.background_task_scheduler.NativeBackgroundTask;
-import org.chromium.components.background_task_scheduler.TaskIds;
-import org.chromium.components.background_task_scheduler.TaskInfo;
-import org.chromium.components.background_task_scheduler.TaskParameters;
-import org.chromium.net.ConnectionType;
+import org.monyhar.base.Callback;
+import org.monyhar.base.metrics.test.ShadowRecordHistogram;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.device.DeviceConditions;
+import org.monyhar.chrome.browser.device.ShadowDeviceConditions;
+import org.monyhar.chrome.browser.init.BrowserParts;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.background_task_scheduler.BackgroundTaskScheduler;
+import org.monyhar.components.background_task_scheduler.BackgroundTaskSchedulerFactory;
+import org.monyhar.components.background_task_scheduler.NativeBackgroundTask;
+import org.monyhar.components.background_task_scheduler.TaskIds;
+import org.monyhar.components.background_task_scheduler.TaskInfo;
+import org.monyhar.components.background_task_scheduler.TaskParameters;
+import org.monyhar.net.ConnectionType;
 
 import java.util.HashMap;
 import java.util.List;

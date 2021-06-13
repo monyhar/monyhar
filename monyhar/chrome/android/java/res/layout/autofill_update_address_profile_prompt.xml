@@ -20,7 +20,7 @@
       android:textAppearance="@style/TextAppearance.TextMedium.Secondary"
       tools:text="For Alex Park — 345 Spear street" />
 
-  <org.chromium.components.browser_ui.widget.FadingEdgeScrollView
+  <org.monyhar.components.browser_ui.widget.FadingEdgeScrollView
       android:layout_width="match_parent"
       android:layout_height="0dp"
       android:layout_marginTop="4dp"
@@ -55,7 +55,7 @@
             android:text="@string/autofill_update_address_prompt_new_values_section_label"
             android:textAppearance="@style/TextAppearance.TextMedium.Blue" />
 
-        <org.chromium.ui.widget.TextViewWithLeading
+        <org.monyhar.ui.widget.TextViewWithLeading
             android:id="@+id/details_new"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
             app:leading="@dimen/text_size_large_leading"
             tools:text="Alex Johnson Park\n+1 858 230 4000" />
 
-        <org.chromium.ui.widget.ChromeImageButton
+        <org.monyhar.ui.widget.ChromeImageButton
             android:id="@+id/edit_button"
             android:layout_width="48dp"
             android:layout_height="48dp"
@@ -94,7 +94,7 @@
           android:text="@string/autofill_update_address_prompt_old_values_section_label"
           android:textAppearance="@style/TextAppearance.TextMedium.Secondary" />
 
-      <org.chromium.ui.widget.TextViewWithLeading
+      <org.monyhar.ui.widget.TextViewWithLeading
           android:id="@+id/details_old"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
@@ -105,5 +105,5 @@
           app:leading="@dimen/text_size_large_leading"
           tools:text="Alex Park" />
     </LinearLayout>
-  </org.chromium.components.browser_ui.widget.FadingEdgeScrollView>
+  </org.monyhar.components.browser_ui.widget.FadingEdgeScrollView>
 </LinearLayout>

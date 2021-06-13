@@ -14,7 +14,7 @@
 using chrome::android::ActivityType;
 
 // Keep this in sync with
-// chrome/android/java/src/org/chromium/chrome/browser/tabmodel/TabList.java
+// chrome/android/java/src/org/monyhar/chrome/browser/tabmodel/TabList.java
 static int INVALID_TAB_INDEX = -1;
 
 TabModel::TabModel(Profile* profile, ActivityType activity_type)

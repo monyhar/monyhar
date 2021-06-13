@@ -19,7 +19,7 @@ namespace ash {
 // constructor. That is achieved by making this class friend of
 // base::ScopedAllowBlocking.
 // Non-goal: This class is not created to group static member functions (as
-// discouraged by chromium style guide).
+// discouraged by monyhar style guide).
 class MojoUtils final {
  public:
   // Disallow all implicit constructors.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webapk.shell_apk;
+package org.monyhar.webapk.shell_apk;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -14,8 +14,8 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Pair;
 
-import org.chromium.components.webapk.lib.common.WebApkMetaDataKeys;
-import org.chromium.webapk.lib.common.WebApkConstants;
+import org.monyhar.components.webapk.lib.common.WebApkMetaDataKeys;
+import org.monyhar.webapk.lib.common.WebApkConstants;
 
 import java.util.ArrayList;
 import java.util.Locale;

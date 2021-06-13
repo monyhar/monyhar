@@ -16,7 +16,7 @@
 
 namespace extensions {
 // TODO(haven): Udev code may be duplicated in the Chrome codebase.
-// https://code.google.com/p/chromium/issues/detail?id=284898
+// https://code.google.com/p/monyhar/issues/detail?id=284898
 
 #if defined(USE_UDEV)
 // Returns the integer contained in |attr|.  Returns 0 on error.

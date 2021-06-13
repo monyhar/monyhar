@@ -2,14 +2,14 @@
 
 This document describes how the Chromium Commit Queue (CQ) is structured and
 managed. This is specific for the Chromium CQ. Questions about other CQs should
-be directed to infra-dev@chromium.org.
+be directed to infra-dev@monyhar.org.
 
 [TOC]
 
 ## Purpose
 
 The Chromium CQ exists to test developer changes before they land into
-[chromium/src](https://chromium.googlesource.com/chromium/src/). It runs all the
+[monyhar/src](https://monyhar.googlesource.com/monyhar/src/). It runs all the
 test suites which a given CL affects, and ensures that they all pass.
 
 ## Options
@@ -54,7 +54,7 @@ The Chromium CQ supports a variety of options that can change what it checks.
 
 * `Tbr: <username>`
 
-  [See policy](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/code_reviews.md#TBR-To-Be-Reviewed)
+  [See policy](https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/code_reviews.md#TBR-To-Be-Reviewed)
   of when it's acceptable to use TBR ("To be reviewed"). If a change has a TBR
   line with a valid reviewer, the CQ will skip checks for LGTMs.
 
@@ -101,7 +101,7 @@ Please follow these general guidelines:
 1. If compilation or individual tests are failing on one or more CQ bots and you
    suspect that your CL is not responsible, please contact your friendly
    neighborhood sheriff by filing a
-   [sheriff bug](https://bugs.chromium.org/p/chromium/issues/entry?template=Defect%20report%20from%20developer&labels=Sheriff-Chromium&summary=%5BBrief%20description%20of%20problem%5D&comment=What%27s%20wrong?).
+   [sheriff bug](https://bugs.monyhar.org/p/monyhar/issues/entry?template=Defect%20report%20from%20developer&labels=Sheriff-Chromium&summary=%5BBrief%20description%20of%20problem%5D&comment=What%27s%20wrong?).
    If the code in question has appropriate OWNERS, consider contacting or CCing
    them.
 1. If other parts of CQ bot execution (e.g. `bot_update`) are failing, or you
@@ -132,7 +132,7 @@ There are several requirements for a builder to be added to the Commit Queue.
   If a configuration only fails once every couple of weeks on the waterfalls,
   then it's probably not worth adding it to the commit queue.
 
-Please email estaab@chromium.org, who will approve new build configurations.
+Please email estaab@monyhar.org, who will approve new build configurations.
 
 ### How do I ensure a trybot runs on all changes to a specific directory?
 
@@ -178,8 +178,8 @@ without retries, pretty much no CL would ever pass the CQ.
 ## Help!
 
 Have other questions? Run into any issues with the CQ? Email
-infra-dev@chromium.org, or file a [trooper bug](https://g.co/bugatrooper).
+infra-dev@monyhar.org, or file a [trooper bug](https://g.co/bugatrooper).
 
 
-[1]: https://chromium.googlesource.com/chromium/tools/depot_tools/+/HEAD/git_footers.py
+[1]: https://monyhar.googlesource.com/monyhar/tools/depot_tools/+/HEAD/git_footers.py
 [2]: ../../infra/config/generated/commit-queue.cfg

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.site_settings;
+package org.monyhar.components.browser_ui.site_settings;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -16,9 +16,9 @@ import android.widget.TextView;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 
-import org.chromium.components.browser_ui.settings.ChromeImageViewPreference;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.url.GURL;
+import org.monyhar.components.browser_ui.settings.ChromeImageViewPreference;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.url.GURL;
 
 /**
  * A preference that displays a website's favicon and URL and, optionally, the amount of local

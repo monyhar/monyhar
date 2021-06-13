@@ -31,10 +31,10 @@ function loadScript(path) {
 async function performChromiumSetup() {
   // Determine path prefixes.
   let resPrefix = '/resources';
-  const chromiumResources = ['/resources/chromium/web-bluetooth-test.js'];
+  const monyharResources = ['/resources/monyhar/web-bluetooth-test.js'];
   const pathname = window.location.pathname;
   if (pathname.includes('/wpt_internal/')) {
-    chromiumResources.push(
+    monyharResources.push(
         '/wpt_internal/bluetooth/resources/bluetooth-fake-adapter.js');
   }
 
@@ -43,7 +43,7 @@ async function performChromiumSetup() {
     return;
   }
 
-  for (const path of chromiumResources) {
+  for (const path of monyharResources) {
     await loadScript(path);
   }
 

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 //
-package org.chromium.chrome.browser.share.share_sheet;
+package org.monyhar.chrome.browser.share.share_sheet;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -28,27 +28,27 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.share.link_to_text.LinkToTextCoordinator.LinkGeneration;
-import org.chromium.chrome.browser.share.share_sheet.ShareSheetPropertyModelBuilder.ContentType;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetContent;
-import org.chromium.components.browser_ui.share.ShareParams;
-import org.chromium.components.browser_ui.widget.RoundedCornerImageView;
-import org.chromium.components.favicon.IconType;
-import org.chromium.components.favicon.LargeIconBridge;
-import org.chromium.components.url_formatter.UrlFormatter;
-import org.chromium.ui.modelutil.LayoutViewBuilder;
-import org.chromium.ui.modelutil.MVCListAdapter.ListItem;
-import org.chromium.ui.modelutil.MVCListAdapter.ModelList;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.SimpleRecyclerViewAdapter;
-import org.chromium.ui.widget.Toast;
-import org.chromium.url.GURL;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.share.link_to_text.LinkToTextCoordinator.LinkGeneration;
+import org.monyhar.chrome.browser.share.share_sheet.ShareSheetPropertyModelBuilder.ContentType;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetContent;
+import org.monyhar.components.browser_ui.share.ShareParams;
+import org.monyhar.components.browser_ui.widget.RoundedCornerImageView;
+import org.monyhar.components.favicon.IconType;
+import org.monyhar.components.favicon.LargeIconBridge;
+import org.monyhar.components.url_formatter.UrlFormatter;
+import org.monyhar.ui.modelutil.LayoutViewBuilder;
+import org.monyhar.ui.modelutil.MVCListAdapter.ListItem;
+import org.monyhar.ui.modelutil.MVCListAdapter.ModelList;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.SimpleRecyclerViewAdapter;
+import org.monyhar.ui.widget.Toast;
+import org.monyhar.url.GURL;
 
 import java.io.IOException;
 import java.util.List;

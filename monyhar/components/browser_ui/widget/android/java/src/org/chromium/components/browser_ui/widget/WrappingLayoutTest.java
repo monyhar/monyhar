@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget;
+package org.monyhar.components.browser_ui.widget;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -16,13 +16,13 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.params.BaseJUnit4RunnerDelegate;
-import org.chromium.base.test.params.ParameterAnnotations.UseMethodParameter;
-import org.chromium.base.test.params.ParameterAnnotations.UseRunnerDelegate;
-import org.chromium.base.test.params.ParameterProvider;
-import org.chromium.base.test.params.ParameterSet;
-import org.chromium.base.test.params.ParameterizedRunner;
-import org.chromium.base.test.util.Batch;
+import org.monyhar.base.test.params.BaseJUnit4RunnerDelegate;
+import org.monyhar.base.test.params.ParameterAnnotations.UseMethodParameter;
+import org.monyhar.base.test.params.ParameterAnnotations.UseRunnerDelegate;
+import org.monyhar.base.test.params.ParameterProvider;
+import org.monyhar.base.test.params.ParameterSet;
+import org.monyhar.base.test.params.ParameterizedRunner;
+import org.monyhar.base.test.util.Batch;
 
 import java.util.Arrays;
 import java.util.List;

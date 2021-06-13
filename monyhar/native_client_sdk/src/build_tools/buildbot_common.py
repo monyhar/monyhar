@@ -3,7 +3,7 @@
 # found in the LICENSE file.
 
 """Common utilities for all buildbot scripts that specifically don't rely
-on having a full chromium checkout.
+on having a full monyhar checkout.
 """
 
 import os

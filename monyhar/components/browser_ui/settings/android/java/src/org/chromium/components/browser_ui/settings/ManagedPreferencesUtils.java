@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.settings;
+package org.monyhar.components.browser_ui.settings;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -17,8 +17,8 @@ import androidx.annotation.StringRes;
 import androidx.annotation.VisibleForTesting;
 import androidx.preference.Preference;
 
-import org.chromium.ui.base.ViewUtils;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.ui.base.ViewUtils;
+import org.monyhar.ui.widget.Toast;
 
 import java.util.Locale;
 

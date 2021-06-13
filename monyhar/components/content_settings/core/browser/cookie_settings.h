@@ -30,7 +30,7 @@ namespace content_settings {
 // The enum needs to correspond to CookieControlsMode in enums.xml.
 // This enum needs to be kept in sync with the enum of the same name in
 // browser/resources/settings/site_settings/constants.js.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.content_settings
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.content_settings
 enum class CookieControlsMode {
   kOff = 0,
   kBlockThirdParty = 1,

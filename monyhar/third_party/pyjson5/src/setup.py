@@ -44,7 +44,7 @@ setup(
     },
     version=json5.VERSION,
     author='Dirk Pranke',
-    author_email='dpranke@chromium.org',
+    author_email='dpranke@monyhar.org',
     description=long_description.splitlines()[2],
     long_description=long_description,
     long_description_content_type='text/markdown',

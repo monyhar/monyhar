@@ -28,10 +28,10 @@ const char kValueProperty[] = "Value";
 
 // static
 const char BluetoothGattDescriptorClient::kNoResponseError[] =
-    "org.chromium.Error.NoResponse";
+    "org.monyhar.Error.NoResponse";
 // static
 const char BluetoothGattDescriptorClient::kUnknownDescriptorError[] =
-    "org.chromium.Error.UnknownDescriptor";
+    "org.monyhar.Error.UnknownDescriptor";
 
 BluetoothGattDescriptorClient::Properties::Properties(
     dbus::ObjectProxy* object_proxy,

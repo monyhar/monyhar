@@ -7,7 +7,7 @@
 #include <utility>
 
 #include "chrome/browser/ui/views/relaunch_notification/relaunch_required_timer_internal.h"
-#include "chrome/grit/chromium_strings.h"
+#include "chrome/grit/monyhar_strings.h"
 #include "chrome/grit/generated_resources.h"
 #include "ui/base/l10n/l10n_util.h"
 

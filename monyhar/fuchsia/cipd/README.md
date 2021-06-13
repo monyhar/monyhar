@@ -8,4 +8,4 @@ under the output directory, under the path `gen/fuchsia/cipd/`.
 
 The most recent package can be discovered by searching for the "canary" ref:
 
-`$ cipd describe chromium/fuchsia/$PACKAGE_NAME-$TARGET_ARCH -version canary`
+`$ cipd describe monyhar/fuchsia/$PACKAGE_NAME-$TARGET_ARCH -version canary`

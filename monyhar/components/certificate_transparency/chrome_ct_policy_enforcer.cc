@@ -175,7 +175,7 @@ bool ChromeCTPolicyEnforcer::IsLogDataTimely() const {
 }
 
 // Evaluates against the policy specified at
-// https://sites.google.com/a/chromium.org/dev/Home/chromium-security/root-ca-policy/EVCTPlanMay2015edition.pdf?attredirects=0
+// https://sites.google.com/a/monyhar.org/dev/Home/monyhar-security/root-ca-policy/EVCTPlanMay2015edition.pdf?attredirects=0
 CTPolicyCompliance ChromeCTPolicyEnforcer::CheckCTPolicyCompliance(
     const net::X509Certificate& cert,
     const net::ct::SCTList& verified_scts) const {

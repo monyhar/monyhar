@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.autofill_public;
+package org.monyhar.components.autofill_public;
 
 import android.annotation.TargetApi;
 import android.os.Build;
@@ -10,7 +10,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.view.autofill.AutofillId;
 
-import org.chromium.base.annotations.VerifiesOnO;
+import org.monyhar.base.annotations.VerifiesOnO;
 
 /**
  * This class is used to send the server and computed view type to the autofill service.

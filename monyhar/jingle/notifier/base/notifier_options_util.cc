@@ -30,7 +30,7 @@ jingle_xmpp::XmppClientSettings MakeXmppClientSettings(
   if (notifier_options.auth_mechanism == jingle_xmpp::AUTH_MECHANISM_OAUTH2)
     xmpp_client_settings.set_token_service("oauth2");
   else
-    xmpp_client_settings.set_token_service("chromiumsync");
+    xmpp_client_settings.set_token_service("monyharsync");
   if (notifier_options.allow_insecure_connection) {
     xmpp_client_settings.set_allow_plain(true);
     xmpp_client_settings.set_use_tls(jingle_xmpp::TLS_DISABLED);

@@ -21,7 +21,7 @@
 #include "third_party/abseil-cpp/absl/types/optional.h"
 
 namespace {
-constexpr char kGeneratedWebApkPackagePrefix[] = "org.chromium.webapk.";
+constexpr char kGeneratedWebApkPackagePrefix[] = "org.monyhar.webapk.";
 }  // namespace
 
 namespace apps {

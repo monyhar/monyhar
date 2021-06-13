@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.offlinepages.prefetch;
+package org.monyhar.chrome.browser.offlinepages.prefetch;
 
-import org.chromium.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.JNINamespace;
 
 /** Prefetch test Java to native bridge. */
 @JNINamespace("offline_pages::prefetch")

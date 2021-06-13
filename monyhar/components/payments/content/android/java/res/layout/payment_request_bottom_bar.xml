@@ -4,7 +4,7 @@
      found in the LICENSE file. -->
 
 <!-- Sits at the bottom of the payment request UI. -->
-<org.chromium.chrome.browser.payments.ui.PaymentRequestBottomBar
+<org.monyhar.chrome.browser.payments.ui.PaymentRequestBottomBar
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/bottom_bar"
@@ -34,17 +34,17 @@
         android:layout_width="0dp"
         android:layout_height="0dp" />
 
-    <org.chromium.ui.widget.ButtonCompat
+    <org.monyhar.ui.widget.ButtonCompat
         android:id="@+id/button_secondary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/payments_edit_button"
         style="@style/TextButton" />
 
-    <org.chromium.ui.widget.ButtonCompat
+    <org.monyhar.ui.widget.ButtonCompat
         android:id="@+id/button_primary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/payments_pay_button"
         style="@style/FilledButton.Flat" />
-</org.chromium.chrome.browser.payments.ui.PaymentRequestBottomBar>
+</org.monyhar.chrome.browser.payments.ui.PaymentRequestBottomBar>

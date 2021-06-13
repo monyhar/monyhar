@@ -7,7 +7,7 @@
 
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.chromium.webview_shell.test"
+    package="org.monyhar.webview_shell.test"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -24,11 +24,11 @@
 
     <application android:hardwareAccelerated="false">
         <uses-library android:name="android.test.runner" />
-        <activity android:name="org.chromium.test.broker.OnDeviceInstrumentationBroker"
+        <activity android:name="org.monyhar.test.broker.OnDeviceInstrumentationBroker"
             android:exported="true"/>
     </application>
 
-    <instrumentation android:name="org.chromium.base.test.BaseChromiumAndroidJUnitRunner"
-        android:targetPackage="org.chromium.webview_shell"
-        android:label="Layout tests for org.chromium.webview_shell"/>
+    <instrumentation android:name="org.monyhar.base.test.BaseChromiumAndroidJUnitRunner"
+        android:targetPackage="org.monyhar.webview_shell"
+        android:label="Layout tests for org.monyhar.webview_shell"/>
 </manifest>

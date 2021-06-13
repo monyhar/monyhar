@@ -61,7 +61,7 @@ constexpr net::NetworkTrafficAnnotationTag kReporterTrafficAnnotation =
               "information is a subset of the information in "
               "\"chrome_cleanup_report\". The complete data specification is "
               "at "
-              "https://cs.chromium.org/chromium/src/chrome/chrome_cleaner/logging/proto/reporter_logs.proto."
+              "https://cs.monyhar.org/monyhar/src/chrome/chrome_cleaner/logging/proto/reporter_logs.proto."
             destination: GOOGLE_OWNED_SERVICE
           }
           policy {

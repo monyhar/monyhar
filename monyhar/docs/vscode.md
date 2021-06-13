@@ -43,8 +43,8 @@ Here's what works well:
 Please keep this doc up-to-date. VS Code is still in active development and
 subject to changes. This doc is checked into the Chromium git repo, so if you
 make changes, read the [documentation
-guidelines](https://chromium.googlesource.com/chromium/src/+/main/docs/documentation_guidelines.md)
-and [submit a change list](https://www.chromium.org/developers/contributing-code).
+guidelines](https://monyhar.googlesource.com/monyhar/src/+/main/docs/documentation_guidelines.md)
+and [submit a change list](https://www.monyhar.org/developers/contributing-code).
 
 All file paths and commands have been tested on Linux. Windows and Mac might
 require a slightly different setup (e.g. `Ctrl` -> `Cmd`). Please update this
@@ -119,9 +119,9 @@ The following extensions might be useful for you as well:
     Git blame view.
 *   ***Git History (git log)*** -
     Git history view.
-*   ***chromium-codesearch*** -
+*   ***monyhar-codesearch*** -
     Mac and Linux only: adds ability to open the current line in [Chromium Code
-    Search](https://cs.chromium.org/). All other functionality is deprecated, so
+    Search](https://cs.monyhar.org/). All other functionality is deprecated, so
     currently only of limited usefulness.
 *   ***change-case*** -
     Quickly change the case of the current selection or current word.
@@ -270,7 +270,7 @@ You can bind any command to a key, even commands specified by extensions like
 `{ "key": "F2", "command": "cs.open" },`.
 Note that the command title `CodeSearchOpen` won't work. You have to get the
 actual command name from the [package.json
-file](https://github.com/chaopeng/vscode-chromium-codesearch/blob/master/package.json)
+file](https://github.com/chaopeng/vscode-monyhar-codesearch/blob/master/package.json)
 of the extension.
 
 If you are used to other editors, you can also install your favorite keymap.
@@ -394,10 +394,10 @@ To edit this, go to `Settings` -> Select the `Workspace` tab, and choose to open
 {
   "folders": [
     {
-      "path": "chromium/src/third_party/perfetto"
+      "path": "monyhar/src/third_party/perfetto"
     },
     {
-      "path": "chromium/src"
+      "path": "monyhar/src"
     }
   ]
 }

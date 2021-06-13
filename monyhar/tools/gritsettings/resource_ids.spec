@@ -44,7 +44,7 @@
   # Chromium strings and Google Chrome strings must start at the same id.
   # We only use one file depending on whether we're building Chromium or
   # Google Chrome.
-  "chrome/app/chromium_strings.grd": {
+  "chrome/app/monyhar_strings.grd": {
     "messages": [400],
   },
   "chrome/app/google_chrome_strings.grd": {
@@ -66,8 +66,8 @@
   },
 
   # These each start with the same resource id because we only use one
-  # file for each build (chromiumos, google_chromeos, linux, mac, or win).
-  "chrome/app/resources/locale_settings_chromiumos.grd": {
+  # file for each build (monyharos, google_chromeos, linux, mac, or win).
+  "chrome/app/resources/locale_settings_monyharos.grd": {
     # Big alignment since strings (previous item) are frequently added.
     "META": {"align": 100},
     "messages": [1100],
@@ -474,7 +474,7 @@
   # Chromium strings and Google Chrome strings must start at the same id.
   # We only use one file depending on whether we're building Chromium or
   # Google Chrome.
-  "components/components_chromium_strings.grd": {
+  "components/components_monyhar_strings.grd": {
     # Big alignment at start of section.
     "META": {"align": 100},
     "messages": [2700],
@@ -523,7 +523,7 @@
   # Chromium strings and Google Chrome strings must start at the same id.
   # We only use one file depending on whether we're building Chromium or
   # Google Chrome.
-  "ios/chrome/app/strings/ios_chromium_strings.grd": {
+  "ios/chrome/app/strings/ios_monyhar_strings.grd": {
     # Big alignment to make start IDs look nicer.
     "META": {"align": 100},
     "messages": [500],
@@ -548,13 +548,13 @@
   "ios/chrome/search_widget_extension/strings/ios_search_widget_extension_strings.grd": {
     "messages": [740],
   },
-  "ios/chrome/search_widget_extension/strings/ios_search_widget_extension_chromium_strings.grd": {
+  "ios/chrome/search_widget_extension/strings/ios_search_widget_extension_monyhar_strings.grd": {
     "messages": [760],
   },
   "ios/chrome/search_widget_extension/strings/ios_search_widget_extension_google_chrome_strings.grd": {
     "messages": [760],
   },
-  "ios/chrome/content_widget_extension/strings/ios_content_widget_extension_chromium_strings.grd": {
+  "ios/chrome/content_widget_extension/strings/ios_content_widget_extension_monyhar_strings.grd": {
     "META": {"join": 2},
     "messages": [780],
   },
@@ -722,7 +722,7 @@
   "third_party/blink/public/strings/blink_strings.grd": {
     "messages": [3560],
   },
-  "third_party/libaddressinput/chromium/address_input_strings.grd": {
+  "third_party/libaddressinput/monyhar/address_input_strings.grd": {
     "messages": [3600],
   },
 

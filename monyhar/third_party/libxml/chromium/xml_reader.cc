@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#include "third_party/libxml/chromium/xml_reader.h"
+#include "third_party/libxml/monyhar/xml_reader.h"
 
 #include <libxml/xmlreader.h>
 
 #include <vector>
 
-#include "third_party/libxml/chromium/libxml_utils.h"
+#include "third_party/libxml/monyhar/libxml_utils.h"
 
 using internal::XmlStringToStdString;
 

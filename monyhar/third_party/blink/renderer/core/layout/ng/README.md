@@ -3,7 +3,7 @@
 This directory contains the implementation of Blink's new layout engine
 "LayoutNG".
 
-This README can be viewed in formatted form [here](https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/renderer/core/layout/ng/README.md).
+This README can be viewed in formatted form [here](https://monyhar.googlesource.com/monyhar/src/+/master/third_party/blink/renderer/core/layout/ng/README.md).
 
 The original design document can be seen [here](https://docs.google.com/document/d/1uxbDh4uONFQOiGuiumlJBLGgO4KDWB8ZEkp7Rd47fw4/edit).
 
@@ -103,24 +103,24 @@ Here is the instruction how to generate a new result.
 #### Environment setup ####
  1. Set up Chromium development environment for Windows
  2. Download DynamoRIO from [www.dynamorio.org](www.dynamorio.org)
- 3. Extract downloaded DynamoRIO package into your chromium/src folder.
- 4. Get dynamorio.git and extract it into your chromium/src folder `git clone https://github.com/DynamoRIO/dynamorio.git`
+ 3. Extract downloaded DynamoRIO package into your monyhar/src folder.
+ 4. Get dynamorio.git and extract it into your monyhar/src folder `git clone https://github.com/DynamoRIO/dynamorio.git`
  5. Install Node js from https://nodejs.org/en/download/
  6. Install lcov-merger dependencies:  `npm install vinyl, npm install vinyl-fs`
  7. Install Perl from https://www.perl.org/get.html#win32
- 8. Get lcov-result-merger and extract into your chromium/src folder `git clone https://github.com/mweibel/lcov-result-merger`
+ 8. Get lcov-result-merger and extract into your monyhar/src folder `git clone https://github.com/mweibel/lcov-result-merger`
 
 #### Generating code coverage ####
 * Build the unit tets target with debug information
-`chromium\src> ninja -C out\Debug blink_unittests`
+`monyhar\src> ninja -C out\Debug blink_unittests`
 * Run DynamoRIO with drcov tool
-`chromium\src>DynamoRIO\bin64\drrun.exe -t drcov -- .\out\Debug\blink_unittests.exe --gtest_filter=NG*`
+`monyhar\src>DynamoRIO\bin64\drrun.exe -t drcov -- .\out\Debug\blink_unittests.exe --gtest_filter=NG*`
 * Convert the output information to lcov format
-`chromium\src>for %file in (*.log) do DynamoRIO\tools\bin64\drcov2lcov.exe -input %file -output %file.info -src_filter layout/ng -src_skip_filter _test`
+`monyhar\src>for %file in (*.log) do DynamoRIO\tools\bin64\drcov2lcov.exe -input %file -output %file.info -src_filter layout/ng -src_skip_filter _test`
 * Merge all lcov files into one file
-`chromium\src>node lcov-result-merger\bin\lcov-result-merger.js *.info output.info`
+`monyhar\src>node lcov-result-merger\bin\lcov-result-merger.js *.info output.info`
 * Generate the coverage html from the lcov file
-`chromium\src>C:\Perl64\bin\perl.exe dynamorio.git\third_party\lcov\genhtml output.info -o output`
+`monyhar\src>C:\Perl64\bin\perl.exe dynamorio.git\third_party\lcov\genhtml output.info -o output`
 
 ### Debugging, logging and testing ###
 Both layout input node subtrees and layout output physical fragment subtrees

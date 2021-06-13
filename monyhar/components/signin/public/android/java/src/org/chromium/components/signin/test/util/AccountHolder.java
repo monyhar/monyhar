@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.signin.test.util;
+package org.monyhar.components.signin.test.util;
 
 import android.accounts.Account;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.components.signin.AccessTokenData;
-import org.chromium.components.signin.AccountUtils;
+import org.monyhar.components.signin.AccessTokenData;
+import org.monyhar.components.signin.AccountUtils;
 
 import java.util.Collections;
 import java.util.HashMap;

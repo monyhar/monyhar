@@ -4,7 +4,7 @@ GetTempFileName() Windows API and using the GUID-based method, especially when
 there are already tens of thousands of temporary files in the target directory.
 
 The problem setting can be referred to 
-https://bugs.chromium.org/p/chromium/issues/detail?id=711534
+https://bugs.monyhar.org/p/monyhar/issues/detail?id=711534
 
 [How to use it]
 Please download the files (.cc, .sln, .vcxproj) and compile the code in Visual 

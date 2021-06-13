@@ -4,7 +4,7 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
-# Reproduces the content of 'components' and 'components-chromium' using the
+# Reproduces the content of 'components' and 'components-monyhar' using the
 # list of dependencies from 'bower.json'. Downloads needed packages and makes
 # Chromium specific modifications. To launch the script you need 'bower' and
 # 'crisper' installed on your system.
@@ -47,10 +47,10 @@ sed -i 's/^\s*\/\/#\s*sourceMappingURL.*//' \
   ../../web-animations-js/sources/*.min.js
 
 rsync -c --delete --delete-excluded -r -v --exclude-from="rsync_exclude.txt" \
-    --prune-empty-dirs "components/" "components-chromium/"
+    --prune-empty-dirs "components/" "components-monyhar/"
 
-find "components-chromium/" -name "*.html" \
-  ! -path "components-chromium/polymer2*" | \
+find "components-monyhar/" -name "*.html" \
+  ! -path "components-monyhar/polymer2*" | \
   xargs grep -l "<script>" | \
 while read original_html_name
 do
@@ -61,21 +61,21 @@ done
 # Remove import of external resource in font-roboto (fonts.googleapis.com)
 # and apply additional chrome specific patches. NOTE: Where possible create
 # a Polymer issue and/or pull request to minimize these patches.
-patch -p1 --forward -r - < chromium.patch
+patch -p1 --forward -r - < monyhar.patch
 
 echo 'Minifying Polymer 2, since it comes non-minified from bower.'
 python minify_polymer.py
 
 # Undo any changes in paper-ripple, since Chromium's implementation is a fork of
 # the original paper-ripple.
-git checkout -- components-chromium/paper-ripple/*
+git checkout -- components-monyhar/paper-ripple/*
 
 # Remove iron-flex-layout-extracted.js since it only contains an unnecessary
 # backwards compatibiilty code that was added at
 # https://github.com/PolymerElements/iron-flex-layout/commit/f1c967fddbced2ecb5f78456b837fec5117dad14
-rm components-chromium/iron-flex-layout/iron-flex-layout-extracted.js
+rm components-monyhar/iron-flex-layout/iron-flex-layout-extracted.js
 
-new=$(git status --porcelain components-chromium | grep '^??' | \
+new=$(git status --porcelain components-monyhar | grep '^??' | \
       cut -d' ' -f2 | egrep '\.(html|js|css)$' || true)
 
 if [[ ! -z "${new}" ]]; then
@@ -84,7 +84,7 @@ if [[ ! -z "${new}" ]]; then
   echo "${new}" | sed 's/^/  /'
 fi
 
-deleted=$(git status --porcelain components-chromium | grep '^.D' | \
+deleted=$(git status --porcelain components-monyhar | grep '^.D' | \
           sed 's/^.//' | cut -d' ' -f2 | egrep '\.(html|js|css)$' || true)
 
 if [[ ! -z "${deleted}" ]]; then
@@ -102,7 +102,7 @@ python css_strip_prefixes.py --file_extension=html
 
 echo 'Generating -rgb versions of --google-* vars in paper-style/colors.html...'
 python rgbify_hex_vars.py --filter-prefix=google --replace \
-    components-chromium/paper-styles/color.html
+    components-monyhar/paper-styles/color.html
 
 echo 'Creating a summary of components...'
 python create_components_summary.py > components_summary.txt

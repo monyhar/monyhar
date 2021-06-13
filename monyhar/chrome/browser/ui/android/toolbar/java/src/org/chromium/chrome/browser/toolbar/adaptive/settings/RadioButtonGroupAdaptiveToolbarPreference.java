@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar.adaptive.settings;
+package org.monyhar.chrome.browser.toolbar.adaptive.settings;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -15,11 +15,11 @@ import androidx.annotation.VisibleForTesting;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 
-import org.chromium.chrome.browser.toolbar.R;
-import org.chromium.chrome.browser.toolbar.adaptive.AdaptiveToolbarFeatures.AdaptiveToolbarButtonVariant;
-import org.chromium.chrome.browser.toolbar.adaptive.AdaptiveToolbarStatePredictor;
-import org.chromium.components.browser_ui.widget.RadioButtonWithDescription;
-import org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionLayout;
+import org.monyhar.chrome.browser.toolbar.R;
+import org.monyhar.chrome.browser.toolbar.adaptive.AdaptiveToolbarFeatures.AdaptiveToolbarButtonVariant;
+import org.monyhar.chrome.browser.toolbar.adaptive.AdaptiveToolbarStatePredictor;
+import org.monyhar.components.browser_ui.widget.RadioButtonWithDescription;
+import org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionLayout;
 
 /**
  * Fragment that allows the user to configure toolbar shortcut preferences.

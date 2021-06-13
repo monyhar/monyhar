@@ -46,7 +46,7 @@ the blob through a data pipe. This is implemented in the browser process in the
 General Chrome terminology:
 
 * **Renderer, Browser, and IPCs**: See the [Multi-Process Architecture](
-https://www.chromium.org/developers/design-documents/multi-process-architecture)
+https://www.monyhar.org/developers/design-documents/multi-process-architecture)
 document to learn about these concepts.
 * **Shared Memory**: Memory that both the browser and renderer process can read
 & write. Created only between 2 processes.
@@ -77,7 +77,7 @@ message size.
 # Blob Storage Limits
 
 We calculate the storage limits [here](
-https://cs.chromium.org/chromium/src/storage/browser/blob/blob_memory_controller.cc?q=CalculateBlobStorageLimitsImpl&sq=package:chromium).
+https://cs.monyhar.org/monyhar/src/storage/browser/blob/blob_memory_controller.cc?q=CalculateBlobStorageLimitsImpl&sq=package:monyhar).
 
 **In-Memory Storage Limit**
 

@@ -96,7 +96,7 @@ class ModuleSnapshotElf final : public ModuleSnapshot {
   std::unique_ptr<CrashpadInfoReader> crashpad_info_;
   ModuleType type_;
   InitializationStateDcheck initialized_;
-  // Too const-y: https://crashpad.chromium.org/bug/9.
+  // Too const-y: https://crashpad.monyhar.org/bug/9.
   mutable std::vector<std::unique_ptr<const UserMinidumpStream>> streams_;
 
   DISALLOW_COPY_AND_ASSIGN(ModuleSnapshotElf);

@@ -26,7 +26,7 @@ base::Lock& GetCrashKeyLock() {
 
 crashpad::SimpleStringDictionary* GetCrashKeys() {
   // TODO(crbug.com/870715): Use the new crash key API from
-  // https://cs.chromium.org/chromium/src/components/crash/core/common/crash_key.h
+  // https://cs.monyhar.org/monyhar/src/components/crash/core/common/crash_key.h
   static crashpad::SimpleStringDictionary* crash_keys =
       new crashpad::SimpleStringDictionary();
   return crash_keys;

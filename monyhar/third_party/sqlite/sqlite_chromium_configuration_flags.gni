@@ -16,7 +16,7 @@
 # covered by our fuzzers, more logic to reason through when debugging a crash
 # or a security vulnerability report). Enabled features must provide benefits
 # that outweigh these costs.
-sqlite_chromium_configuration_flags = [
+sqlite_monyhar_configuration_flags = [
   # Chrome doesn't use the ANALYZE SQLite extension.
   #
   # ANALYZE [1] is non-standard, and currently performs a table scan to

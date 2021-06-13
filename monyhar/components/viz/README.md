@@ -93,7 +93,7 @@ helpers only, and can be used from anywhere else in Viz.
 
 ### service <a name="directory-structure-service"></a>
 Service-side implementations of Viz Mojo interfaces, which are found in
-[//services/viz](https://cs.chromium.org/chromium/src/services/viz/). Each
+[//services/viz](https://cs.monyhar.org/monyhar/src/services/viz/). Each
 component of the service-side implementation is located in its own
 sub-directory.
 

@@ -32,7 +32,7 @@ if (current_cpu == "x86" || current_cpu == "x64") {
   } else {
     # The compiler flags, as well as the stack alignment values, all mirror
     # upstream's meson.build setup:
-    # https://chromium.googlesource.com/external/github.com/videolan/dav1d/+/master/meson.build
+    # https://monyhar.googlesource.com/external/github.com/videolan/dav1d/+/master/meson.build
     needs_stack_alignment = true
     if (current_cpu == "x86") {
       stack_alignment = 16
@@ -153,9 +153,9 @@ if (enable_nasm) {
 }
 
 source_set("dav1d_headers") {
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":dav1d_config",
   ]
 
@@ -163,9 +163,9 @@ source_set("dav1d_headers") {
 }
 
 static_library("dav1d_entrypoints") {
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":dav1d_config",
   ]
 
@@ -183,9 +183,9 @@ static_library("dav1d_entrypoints") {
 }
 
 static_library("dav1d_8bit") {
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":dav1d_config",
   ]
 
@@ -206,7 +206,7 @@ static_library("dav1d_8bit") {
 
 static_library("dav1d_10bit") {
   configs -= [
-    "//build/config/compiler:chromium_code",
+    "//build/config/compiler:monyhar_code",
 
     # Disable coverage for the 10 bit version to avoid confusing the
     # instrumentation about which version of the library is being run.
@@ -215,7 +215,7 @@ static_library("dav1d_10bit") {
     "//build/config/coverage:default_coverage",
   ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":dav1d_config",
   ]
 
@@ -247,9 +247,9 @@ if (current_cpu == "x86" || current_cpu == "x64") {
     if (enable_nasm && current_cpu == "x64") {
       sources += [ "libdav1d/src/x86/msac_init.c" ]
     }
-    configs -= [ "//build/config/compiler:chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
     configs += [
-      "//build/config/compiler:no_chromium_code",
+      "//build/config/compiler:no_monyhar_code",
       ":dav1d_config",
     ]
     cflags = dav1d_copts
@@ -271,9 +271,9 @@ if (current_cpu == "x86" || current_cpu == "x64") {
       sources += arm64_asm_sources
     }
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
     configs += [
-      "//build/config/compiler:no_chromium_code",
+      "//build/config/compiler:no_monyhar_code",
       ":dav1d_config",
     ]
 
@@ -292,9 +292,9 @@ if (current_cpu == "x86" || current_cpu == "x64") {
 static_library("dav1d") {
   sources = c_sources
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":dav1d_config",
   ]
   cflags = dav1d_copts

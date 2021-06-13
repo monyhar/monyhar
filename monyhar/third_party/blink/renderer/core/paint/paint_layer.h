@@ -138,7 +138,7 @@ struct PaintLayerRareData {
   // we are not paginated.
   //
   // See LayoutMultiColumnFlowThread and
-  // https://sites.google.com/a/chromium.org/dev/developers/design-documents/multi-column-layout
+  // https://sites.google.com/a/monyhar.org/dev/developers/design-documents/multi-column-layout
   // for more information about the multicol implementation. It's important to
   // understand the difference between flow thread coordinates and visual
   // coordinates when working with multicol in Layer, since Layer is one of the
@@ -433,7 +433,7 @@ class CORE_EXPORT PaintLayer : public DisplayItemClient {
   // coordinates (what the layout engine uses internally), while this method
   // calculates the visual coordinates; i.e. it figures out which column the
   // layer starts in and adds in the offset. See
-  // http://www.chromium.org/developers/design-documents/multi-column-layout for
+  // http://www.monyhar.org/developers/design-documents/multi-column-layout for
   // more info.
   PhysicalOffset VisualOffsetFromAncestor(
       const PaintLayer* ancestor_layer,
@@ -441,7 +441,7 @@ class CORE_EXPORT PaintLayer : public DisplayItemClient {
 
   // Convert a bounding box from flow thread coordinates, relative to |this|, to
   // visual coordinates, relative to |ancestorLayer|.
-  // See http://www.chromium.org/developers/design-documents/multi-column-layout
+  // See http://www.monyhar.org/developers/design-documents/multi-column-layout
   // for more info on these coordinate types.  This method requires this layer
   // to be paginated; i.e. it must have an enclosingPaginationLayer().
   void ConvertFromFlowThreadToVisualBoundingBoxInAncestor(
@@ -1108,7 +1108,7 @@ class CORE_EXPORT PaintLayer : public DisplayItemClient {
       const PaintLayer* compositing_layer = nullptr) const;
 
   // See
-  // https://chromium.googlesource.com/chromium/src.git/+/master/third_party/blink/renderer/core/paint/README.md
+  // https://monyhar.googlesource.com/monyhar/src.git/+/master/third_party/blink/renderer/core/paint/README.md
   // for the definition of a replaced normal-flow stacking element.
   bool IsReplacedNormalFlowStacking() const;
 

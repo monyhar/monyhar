@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.lifecycle;
+package org.monyhar.chrome.browser.lifecycle;
 
 /**
  * Implement this interface and register in {@link ActivityLifecycleDispatcher} to receive
@@ -11,7 +11,7 @@ package org.chromium.chrome.browser.lifecycle;
 public interface InflationObserver extends LifecycleObserver {
     /**
      * Called immediately before the view hierarchy is inflated.
-     * See {@link org.chromium.chrome.browser.init.BrowserParts#preInflationStartup()}.
+     * See {@link org.monyhar.chrome.browser.init.BrowserParts#preInflationStartup()}.
      */
     void onPreInflationStartup();
 
@@ -28,7 +28,7 @@ public interface InflationObserver extends LifecycleObserver {
 
     /**
      * Called immediately after the view hierarchy is inflated.
-     * See {@link org.chromium.chrome.browser.init.BrowserParts#postInflationStartup()}.
+     * See {@link org.monyhar.chrome.browser.init.BrowserParts#postInflationStartup()}.
      */
     void onPostInflationStartup();
 }

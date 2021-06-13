@@ -2,34 +2,34 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.signin;
+package org.monyhar.chrome.browser.signin;
 
 import android.accounts.Account;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApplicationState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.Log;
-import org.chromium.base.TraceEvent;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.browser.SyncFirstSetupCompleteSource;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.signin.services.SigninManager;
-import org.chromium.chrome.browser.signin.services.SigninManager.SignInCallback;
-import org.chromium.chrome.browser.sync.SyncService;
-import org.chromium.chrome.browser.sync.SyncUserDataWiper;
-import org.chromium.components.signin.AccountManagerFacade;
-import org.chromium.components.signin.AccountManagerFacadeProvider;
-import org.chromium.components.signin.AccountRenameChecker;
-import org.chromium.components.signin.AccountUtils;
-import org.chromium.components.signin.ChildAccountStatus;
-import org.chromium.components.signin.ChildAccountStatus.Status;
-import org.chromium.components.signin.base.CoreAccountInfo;
-import org.chromium.components.signin.identitymanager.AccountTrackerService;
-import org.chromium.components.signin.identitymanager.ConsentLevel;
-import org.chromium.components.signin.metrics.SigninAccessPoint;
-import org.chromium.components.signin.metrics.SignoutReason;
+import org.monyhar.base.ApplicationState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.Log;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.browser.SyncFirstSetupCompleteSource;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.signin.services.SigninManager;
+import org.monyhar.chrome.browser.signin.services.SigninManager.SignInCallback;
+import org.monyhar.chrome.browser.sync.SyncService;
+import org.monyhar.chrome.browser.sync.SyncUserDataWiper;
+import org.monyhar.components.signin.AccountManagerFacade;
+import org.monyhar.components.signin.AccountManagerFacadeProvider;
+import org.monyhar.components.signin.AccountRenameChecker;
+import org.monyhar.components.signin.AccountUtils;
+import org.monyhar.components.signin.ChildAccountStatus;
+import org.monyhar.components.signin.ChildAccountStatus.Status;
+import org.monyhar.components.signin.base.CoreAccountInfo;
+import org.monyhar.components.signin.identitymanager.AccountTrackerService;
+import org.monyhar.components.signin.identitymanager.ConsentLevel;
+import org.monyhar.components.signin.metrics.SigninAccessPoint;
+import org.monyhar.components.signin.metrics.SignoutReason;
 
 import java.util.List;
 

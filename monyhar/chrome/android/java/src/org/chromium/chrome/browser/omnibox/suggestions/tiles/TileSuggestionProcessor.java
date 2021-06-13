@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.tiles;
+package org.monyhar.chrome.browser.omnibox.suggestions.tiles;
 
 import android.content.Context;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.omnibox.OmniboxSuggestionType;
-import org.chromium.chrome.browser.omnibox.suggestions.OmniboxSuggestionUiType;
-import org.chromium.chrome.browser.omnibox.suggestions.SuggestionProcessor;
-import org.chromium.components.omnibox.AutocompleteMatch;
-import org.chromium.components.query_tiles.QueryTile;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.omnibox.OmniboxSuggestionType;
+import org.monyhar.chrome.browser.omnibox.suggestions.OmniboxSuggestionUiType;
+import org.monyhar.chrome.browser.omnibox.suggestions.SuggestionProcessor;
+import org.monyhar.components.omnibox.AutocompleteMatch;
+import org.monyhar.components.query_tiles.QueryTile;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,7 +32,7 @@ public class TileSuggestionProcessor implements SuggestionProcessor {
             Context context, Callback<List<QueryTile>> queryTileSuggestionCallback) {
         mQueryTileSuggestionCallback = queryTileSuggestionCallback;
         mMinViewHeight = context.getResources().getDimensionPixelSize(
-                org.chromium.chrome.R.dimen.omnibox_suggestion_comfortable_height);
+                org.monyhar.chrome.R.dimen.omnibox_suggestion_comfortable_height);
     }
 
     @Override

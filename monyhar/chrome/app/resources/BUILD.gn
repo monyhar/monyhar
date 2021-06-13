@@ -29,7 +29,7 @@ grit("platform_locale_settings") {
     if (is_chrome_branded) {
       source = "locale_settings_google_chromeos.grd"
     } else {
-      source = "locale_settings_chromiumos.grd"
+      source = "locale_settings_monyharos.grd"
     }
   } else if (is_posix || is_fuchsia) {
     # All other posix systems just use the Linux one.

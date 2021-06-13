@@ -9,7 +9,7 @@ instrumentation and JUnit tests.
 
 In order to use JaCoCo code coverage, we need to create build time pre-instrumented
 class files and runtime **.exec** files. Then we need to process them using the
-[build/android/generate_jacoco_report.py](https://source.chromium.org/chromium/chromium/src/+/main:build/android/generate_jacoco_report.py) script.
+[build/android/generate_jacoco_report.py](https://source.monyhar.org/monyhar/monyhar/src/+/main:build/android/generate_jacoco_report.py) script.
 
 ## How to collect coverage data
 

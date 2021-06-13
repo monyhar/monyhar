@@ -1,4 +1,4 @@
-guidou@chromium.org
+guidou@monyhar.org
 
 per-file *.mojom=set noparent
 per-file *.mojom=file://ipc/SECURITY_OWNERS

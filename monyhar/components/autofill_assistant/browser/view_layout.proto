@@ -5,7 +5,7 @@
 syntax = "proto2";
 
 option optimize_for = LITE_RUNTIME;
-option java_package = "org.chromium.chrome.browser.autofill_assistant.proto";
+option java_package = "org.monyhar.chrome.browser.autofill_assistant.proto";
 option java_multiple_files = true;
 
 package autofill_assistant;
@@ -261,7 +261,7 @@ message ImageViewProto {
 // A text input widget. Note: View identifier is mandatory!
 message TextInputViewProto {
   // This mirrors the type hints specified in
-  // https://cs.chromium.org/chromium/src/chrome/android/java/src/org/chromium/chrome/browser/autofill/prefeditor/EditorFieldModel.java
+  // https://cs.monyhar.org/monyhar/src/chrome/android/java/src/org/monyhar/chrome/browser/autofill/prefeditor/EditorFieldModel.java
   enum InputTypeHint {
     // No special formatting rules.
     NONE = 0;

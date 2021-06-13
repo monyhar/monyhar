@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.test.util;
+package org.monyhar.base.test.util;
 
 import static org.hamcrest.Matchers.isIn;
 import static org.junit.Assert.fail;

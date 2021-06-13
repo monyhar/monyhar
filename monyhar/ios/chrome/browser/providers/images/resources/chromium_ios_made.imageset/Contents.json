@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "chromium_ios_made.png",
+      "filename" : "monyhar_ios_made.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -12,12 +12,12 @@
           "value" : "dark"
         }
       ],
-      "filename" : "chromium_ios_made_dark.png",
+      "filename" : "monyhar_ios_made_dark.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "chromium_ios_made@2x.png",
+      "filename" : "monyhar_ios_made@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -28,12 +28,12 @@
           "value" : "dark"
         }
       ],
-      "filename" : "chromium_ios_made_dark@2x.png",
+      "filename" : "monyhar_ios_made_dark@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "chromium_ios_made@3x.png",
+      "filename" : "monyhar_ios_made@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     },
@@ -44,7 +44,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "chromium_ios_made_dark@3x.png",
+      "filename" : "monyhar_ios_made_dark@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import android.app.Activity;
 import android.app.PendingIntent;
@@ -17,21 +17,21 @@ import androidx.browser.customtabs.CustomTabsIntent;
 import androidx.browser.customtabs.CustomTabsService;
 import androidx.browser.customtabs.CustomTabsSessionToken;
 
-import org.chromium.base.Log;
-import org.chromium.chrome.browser.browserservices.SessionDataHolder;
-import org.chromium.chrome.browser.browserservices.SessionHandler;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.browserservices.intents.CustomButtonParams;
-import org.chromium.chrome.browser.browserservices.verification.OriginVerifier;
-import org.chromium.chrome.browser.customtabs.content.CustomTabActivityTabProvider;
-import org.chromium.chrome.browser.customtabs.content.CustomTabIntentHandler;
-import org.chromium.chrome.browser.customtabs.features.toolbar.CustomTabToolbarCoordinator;
-import org.chromium.chrome.browser.dependency_injection.ActivityScope;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.lifecycle.StartStopWithNativeObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.embedder_support.util.Origin;
-import org.chromium.content_public.browser.NavigationEntry;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.browser.browserservices.SessionDataHolder;
+import org.monyhar.chrome.browser.browserservices.SessionHandler;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.browserservices.intents.CustomButtonParams;
+import org.monyhar.chrome.browser.browserservices.verification.OriginVerifier;
+import org.monyhar.chrome.browser.customtabs.content.CustomTabActivityTabProvider;
+import org.monyhar.chrome.browser.customtabs.content.CustomTabIntentHandler;
+import org.monyhar.chrome.browser.customtabs.features.toolbar.CustomTabToolbarCoordinator;
+import org.monyhar.chrome.browser.dependency_injection.ActivityScope;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.lifecycle.StartStopWithNativeObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.embedder_support.util.Origin;
+import org.monyhar.content_public.browser.NavigationEntry;
 
 import javax.inject.Inject;
 

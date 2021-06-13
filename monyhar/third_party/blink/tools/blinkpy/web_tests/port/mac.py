@@ -50,7 +50,7 @@ class MacPort(base.Port):
 
     CONTENT_SHELL_NAME = 'Content Shell'
 
-    BUILD_REQUIREMENTS_URL = 'https://chromium.googlesource.com/chromium/src/+/master/docs/mac_build_instructions.md'
+    BUILD_REQUIREMENTS_URL = 'https://monyhar.googlesource.com/monyhar/src/+/master/docs/mac_build_instructions.md'
 
     @classmethod
     def determine_full_port_name(cls, host, options, port_name):
@@ -85,7 +85,7 @@ class MacPort(base.Port):
             _log.error('For complete Mac build requirements, please see:')
             _log.error('')
             _log.error(
-                '    https://chromium.googlesource.com/chromium/src/+/master/docs/mac_build_instructions.md'
+                '    https://monyhar.googlesource.com/monyhar/src/+/master/docs/mac_build_instructions.md'
             )
 
         return result
@@ -98,7 +98,7 @@ class MacPort(base.Port):
     #
 
     def path_to_apache(self):
-        return self._path_from_chromium_base('third_party', 'apache-mac',
+        return self._path_from_monyhar_base('third_party', 'apache-mac',
                                              'bin', 'httpd')
 
     def path_to_apache_config_file(self):

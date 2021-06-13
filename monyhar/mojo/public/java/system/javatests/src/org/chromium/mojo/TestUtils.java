@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo;
+package org.monyhar.mojo;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;

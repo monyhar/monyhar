@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.payments;
+package org.monyhar.components.payments;
 
-import org.chromium.mojo.system.MojoException;
-import org.chromium.payments.mojom.CanMakePaymentQueryResult;
-import org.chromium.payments.mojom.HasEnrolledInstrumentQueryResult;
-import org.chromium.payments.mojom.PaymentDetails;
-import org.chromium.payments.mojom.PaymentErrorReason;
-import org.chromium.payments.mojom.PaymentMethodData;
-import org.chromium.payments.mojom.PaymentOptions;
-import org.chromium.payments.mojom.PaymentRequest;
-import org.chromium.payments.mojom.PaymentRequestClient;
-import org.chromium.payments.mojom.PaymentValidationErrors;
+import org.monyhar.mojo.system.MojoException;
+import org.monyhar.payments.mojom.CanMakePaymentQueryResult;
+import org.monyhar.payments.mojom.HasEnrolledInstrumentQueryResult;
+import org.monyhar.payments.mojom.PaymentDetails;
+import org.monyhar.payments.mojom.PaymentErrorReason;
+import org.monyhar.payments.mojom.PaymentMethodData;
+import org.monyhar.payments.mojom.PaymentOptions;
+import org.monyhar.payments.mojom.PaymentRequest;
+import org.monyhar.payments.mojom.PaymentRequestClient;
+import org.monyhar.payments.mojom.PaymentValidationErrors;
 
 /**
  * An implementation of PaymentRequest that immediately rejects all connections.

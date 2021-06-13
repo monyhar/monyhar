@@ -13,7 +13,7 @@ namespace mojo {
 // a mojom struct. |DataViewType| is the corresponding data view type of the
 // mojom struct. For example, if the mojom struct is example.Foo,
 // |DataViewType| will be example::FooDataView, which can also be referred to by
-// example::Foo::DataView (in chromium) and example::blink::Foo::DataView (in
+// example::Foo::DataView (in monyhar) and example::blink::Foo::DataView (in
 // blink).
 //
 // Each specialization needs to implement a few things:

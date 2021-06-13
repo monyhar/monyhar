@@ -8,7 +8,7 @@ import("//chrome/android/features/android_library_factory_tmpl.gni")
 import("//chrome/common/features.gni")
 import("//tools/grit/grit_rule.gni")
 
-_factory_sources = [ "java/src/org/chromium/chrome/browser/password_check/PasswordCheckFactory.java" ]
+_factory_sources = [ "java/src/org/monyhar/chrome/browser/password_check/PasswordCheckFactory.java" ]
 _public_target = "//chrome/browser/password_check/android:public_java"
 
 android_library_factory("public_factory_java") {
@@ -36,7 +36,7 @@ android_library("internal_factory_java") {
   sources = _factory_sources
 }
 
-_ui_factory_sources = [ "java/src/org/chromium/chrome/browser/password_check/PasswordCheckComponentUiFactory.java" ]
+_ui_factory_sources = [ "java/src/org/monyhar/chrome/browser/password_check/PasswordCheckComponentUiFactory.java" ]
 _public_ui_target = "//chrome/browser/password_check/android:public_ui_java"
 
 android_library_factory("public_ui_factory_java") {
@@ -100,21 +100,21 @@ android_library("internal_java") {
     _public_target,
   ]
   sources = [
-    "java/src/org/chromium/chrome/browser/password_check/PasswordCheckBridge.java",
-    "java/src/org/chromium/chrome/browser/password_check/PasswordCheckCoordinator.java",
-    "java/src/org/chromium/chrome/browser/password_check/PasswordCheckDeletionDialogFragment.java",
-    "java/src/org/chromium/chrome/browser/password_check/PasswordCheckDialogFragment.java",
-    "java/src/org/chromium/chrome/browser/password_check/PasswordCheckImpl.java",
-    "java/src/org/chromium/chrome/browser/password_check/PasswordCheckMediator.java",
-    "java/src/org/chromium/chrome/browser/password_check/PasswordCheckProperties.java",
-    "java/src/org/chromium/chrome/browser/password_check/PasswordCheckViewBinder.java",
-    "java/src/org/chromium/chrome/browser/password_check/PasswordCheckViewDialogFragment.java",
-    "java/src/org/chromium/chrome/browser/password_check/PasswordCheckViewHolder.java",
-    "java/src/org/chromium/chrome/browser/password_check/helper/PasswordCheckChangePasswordHelper.java",
-    "java/src/org/chromium/chrome/browser/password_check/helper/PasswordCheckIconHelper.java",
+    "java/src/org/monyhar/chrome/browser/password_check/PasswordCheckBridge.java",
+    "java/src/org/monyhar/chrome/browser/password_check/PasswordCheckCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/password_check/PasswordCheckDeletionDialogFragment.java",
+    "java/src/org/monyhar/chrome/browser/password_check/PasswordCheckDialogFragment.java",
+    "java/src/org/monyhar/chrome/browser/password_check/PasswordCheckImpl.java",
+    "java/src/org/monyhar/chrome/browser/password_check/PasswordCheckMediator.java",
+    "java/src/org/monyhar/chrome/browser/password_check/PasswordCheckProperties.java",
+    "java/src/org/monyhar/chrome/browser/password_check/PasswordCheckViewBinder.java",
+    "java/src/org/monyhar/chrome/browser/password_check/PasswordCheckViewDialogFragment.java",
+    "java/src/org/monyhar/chrome/browser/password_check/PasswordCheckViewHolder.java",
+    "java/src/org/monyhar/chrome/browser/password_check/helper/PasswordCheckChangePasswordHelper.java",
+    "java/src/org/monyhar/chrome/browser/password_check/helper/PasswordCheckIconHelper.java",
   ]
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
-  resources_package = "org.chromium.chrome.browser.password_check.internal"
+  resources_package = "org.monyhar.chrome.browser.password_check.internal"
 }
 
 android_resources("java_resources") {

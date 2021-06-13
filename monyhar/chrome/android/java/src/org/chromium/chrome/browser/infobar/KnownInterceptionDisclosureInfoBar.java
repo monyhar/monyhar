@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.infobar;
+package org.monyhar.chrome.browser.infobar;
 
 import android.graphics.Bitmap;
 
 import androidx.annotation.ColorRes;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.components.infobars.ConfirmInfoBar;
-import org.chromium.components.infobars.InfoBarLayout;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.components.infobars.ConfirmInfoBar;
+import org.monyhar.components.infobars.InfoBarLayout;
 
 /**
  * An infobar to disclose known monitoring to the user. This is a thin veneer over

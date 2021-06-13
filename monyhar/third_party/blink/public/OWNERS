@@ -1,21 +1,21 @@
-# NOTE: keep this in sync with lsc-owners-override@chromium.org owners
-chrishtr@chromium.org
-danakj@chromium.org
-dcheng@chromium.org
-dgozman@chromium.org
-dtapuska@chromium.org
-falken@chromium.org
-foolip@chromium.org
-haraken@chromium.org
-japhet@chromium.org
-jbroman@chromium.org
-jochen@chromium.org
-kinuko@chromium.org
-mkwst@chromium.org
-pdr@chromium.org
-pfeldman@chromium.org
-tkent@chromium.org
-# NOTE: keep this in sync with lsc-owners-override@chromium.org owners
+# NOTE: keep this in sync with lsc-owners-override@monyhar.org owners
+chrishtr@monyhar.org
+danakj@monyhar.org
+dcheng@monyhar.org
+dgozman@monyhar.org
+dtapuska@monyhar.org
+falken@monyhar.org
+foolip@monyhar.org
+haraken@monyhar.org
+japhet@monyhar.org
+jbroman@monyhar.org
+jochen@monyhar.org
+kinuko@monyhar.org
+mkwst@monyhar.org
+pdr@monyhar.org
+pfeldman@monyhar.org
+tkent@monyhar.org
+# NOTE: keep this in sync with lsc-owners-override@monyhar.org owners
 
 # This is for the common case of adding or renaming files. If you're doing
 # structural changes, please get a review from a reviewer in this file.

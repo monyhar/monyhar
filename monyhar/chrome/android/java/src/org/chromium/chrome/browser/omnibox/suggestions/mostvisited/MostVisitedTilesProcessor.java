@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.mostvisited;
+package org.monyhar.chrome.browser.omnibox.suggestions.mostvisited;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -13,28 +13,28 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.omnibox.OmniboxSuggestionType;
-import org.chromium.chrome.browser.omnibox.styles.OmniboxResourceProvider;
-import org.chromium.chrome.browser.omnibox.styles.OmniboxTheme;
-import org.chromium.chrome.browser.omnibox.suggestions.OmniboxSuggestionUiType;
-import org.chromium.chrome.browser.omnibox.suggestions.SuggestionHost;
-import org.chromium.chrome.browser.omnibox.suggestions.carousel.BaseCarouselSuggestionProcessor;
-import org.chromium.chrome.browser.omnibox.suggestions.carousel.BaseCarouselSuggestionView;
-import org.chromium.chrome.browser.omnibox.suggestions.carousel.BaseCarouselSuggestionViewProperties;
-import org.chromium.components.browser_ui.widget.RoundedIconGenerator;
-import org.chromium.components.browser_ui.widget.tile.TileView;
-import org.chromium.components.browser_ui.widget.tile.TileViewBinder;
-import org.chromium.components.browser_ui.widget.tile.TileViewProperties;
-import org.chromium.components.favicon.LargeIconBridge;
-import org.chromium.components.omnibox.AutocompleteMatch;
-import org.chromium.ui.modelutil.MVCListAdapter.ListItem;
-import org.chromium.ui.modelutil.MVCListAdapter.ModelList;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.SimpleRecyclerViewAdapter;
-import org.chromium.url.GURL;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.omnibox.OmniboxSuggestionType;
+import org.monyhar.chrome.browser.omnibox.styles.OmniboxResourceProvider;
+import org.monyhar.chrome.browser.omnibox.styles.OmniboxTheme;
+import org.monyhar.chrome.browser.omnibox.suggestions.OmniboxSuggestionUiType;
+import org.monyhar.chrome.browser.omnibox.suggestions.SuggestionHost;
+import org.monyhar.chrome.browser.omnibox.suggestions.carousel.BaseCarouselSuggestionProcessor;
+import org.monyhar.chrome.browser.omnibox.suggestions.carousel.BaseCarouselSuggestionView;
+import org.monyhar.chrome.browser.omnibox.suggestions.carousel.BaseCarouselSuggestionViewProperties;
+import org.monyhar.components.browser_ui.widget.RoundedIconGenerator;
+import org.monyhar.components.browser_ui.widget.tile.TileView;
+import org.monyhar.components.browser_ui.widget.tile.TileViewBinder;
+import org.monyhar.components.browser_ui.widget.tile.TileViewProperties;
+import org.monyhar.components.favicon.LargeIconBridge;
+import org.monyhar.components.omnibox.AutocompleteMatch;
+import org.monyhar.ui.modelutil.MVCListAdapter.ListItem;
+import org.monyhar.ui.modelutil.MVCListAdapter.ModelList;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.SimpleRecyclerViewAdapter;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.List;

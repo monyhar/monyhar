@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.infobar;
+package org.monyhar.chrome.browser.infobar;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;
@@ -10,18 +10,18 @@ import android.content.pm.PackageManager.NameNotFoundException;
 
 import androidx.annotation.DrawableRes;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.ThreadUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.about_settings.AboutSettingsBridge;
-import org.chromium.chrome.browser.datareduction.DataReductionPromoUtils;
-import org.chromium.chrome.browser.omaha.VersionNumberGetter;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.components.infobars.ConfirmInfoBar;
-import org.chromium.components.infobars.InfoBarControlLayout;
-import org.chromium.components.infobars.InfoBarLayout;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.url.GURL;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.about_settings.AboutSettingsBridge;
+import org.monyhar.chrome.browser.datareduction.DataReductionPromoUtils;
+import org.monyhar.chrome.browser.omaha.VersionNumberGetter;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.infobars.ConfirmInfoBar;
+import org.monyhar.components.infobars.InfoBarControlLayout;
+import org.monyhar.components.infobars.InfoBarLayout;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.url.GURL;
 
 import java.net.HttpURLConnection;
 import java.sql.Date;

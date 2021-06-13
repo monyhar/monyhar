@@ -82,7 +82,7 @@ class BLINK_COMMON_EXPORT WebInputEvent {
   // content/renderer/pepper/event_conversion.cc
   //
   // A Java counterpart will be generated for this enum.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.blink_public.web
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.blink_public.web
   // GENERATED_JAVA_CLASS_NAME_OVERRIDE: WebInputEventModifier
   enum Modifiers {
     // modifiers for all events:

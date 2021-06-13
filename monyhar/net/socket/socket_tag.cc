@@ -16,7 +16,7 @@ namespace net {
 
 #if defined(OS_ANDROID)
 // Expose UNSET_UID to Java.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.net
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.net
 enum TrafficStatsUid {
   UNSET = -1,
 };

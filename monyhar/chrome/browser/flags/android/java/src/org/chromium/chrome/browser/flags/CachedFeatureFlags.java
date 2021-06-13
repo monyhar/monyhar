@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.flags;
+package org.monyhar.chrome.browser.flags;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.FieldTrialList;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.CheckDiscard;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.base.FieldTrialList;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.CheckDiscard;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
 
 import java.util.HashMap;
 import java.util.List;

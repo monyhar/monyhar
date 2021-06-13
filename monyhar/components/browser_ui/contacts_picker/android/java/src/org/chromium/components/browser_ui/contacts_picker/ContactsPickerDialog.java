@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.contacts_picker;
+package org.monyhar.components.browser_ui.contacts_picker;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.app.AlertDialog;
 
-import org.chromium.content_public.browser.ContactsPickerListener;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.content_public.browser.ContactsPickerListener;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * UI for the contacts picker that shows on the Android platform as a result of

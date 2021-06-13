@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.selection;
+package org.monyhar.content.browser.selection;
 
 import android.annotation.TargetApi;
 import android.app.PendingIntent;
@@ -17,8 +17,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.textclassifier.TextClassification;
 
-import org.chromium.base.Log;
-import org.chromium.base.annotations.VerifiesOnP;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.VerifiesOnP;
 
 import java.util.ArrayList;
 import java.util.HashMap;

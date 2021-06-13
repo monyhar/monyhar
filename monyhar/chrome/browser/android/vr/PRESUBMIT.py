@@ -4,7 +4,7 @@
 
 """Presubmit script for changes affecting chrome/browser/android/vr
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See http://dev.monyhar.org/developers/how-tos/depottools/presubmit-scripts
 for more details about the presubmit API built into depot_tools.
 """
 

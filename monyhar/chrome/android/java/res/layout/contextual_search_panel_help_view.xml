@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <org.chromium.ui.widget.TextViewWithLeading
+        <org.monyhar.ui.widget.TextViewWithLeading
             android:id="@+id/contextual_search_help_header_view"
             android:text="@string/contextual_search_help_header"
             android:layout_width="match_parent"
@@ -35,7 +35,7 @@
             android:layout_marginTop="12dp"
             style="@style/TextAppearance.TextLarge.Primary"
             app:leading="@dimen/headline_size_leading" />
-        <org.chromium.ui.widget.TextViewWithLeading
+        <org.monyhar.ui.widget.TextViewWithLeading
             android:id="@+id/contextual_search_help_body_view"
             android:text="@string/contextual_search_help_body"
             android:layout_width="match_parent"
@@ -45,7 +45,7 @@
             android:layout_marginEnd="12dp"
             android:textAppearance="@style/TextAppearance.TextSmall.Secondary"
             app:leading="@dimen/text_size_small_leading" />
-        <org.chromium.ui.widget.ButtonCompat
+        <org.monyhar.ui.widget.ButtonCompat
             android:id="@+id/contextual_search_ok_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

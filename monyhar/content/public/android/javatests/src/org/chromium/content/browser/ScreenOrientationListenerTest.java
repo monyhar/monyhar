@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import android.content.pm.ActivityInfo;
 import android.view.Surface;
@@ -16,16 +16,16 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.base.test.util.Feature;
-import org.chromium.content_public.browser.ScreenOrientationProvider;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.content_shell_apk.ContentShellActivityTestRule;
-import org.chromium.device.mojom.ScreenOrientationLockType;
-import org.chromium.ui.display.DisplayAndroid;
-import org.chromium.ui.display.DisplayAndroid.DisplayAndroidObserver;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.content_public.browser.ScreenOrientationProvider;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.content_shell_apk.ContentShellActivityTestRule;
+import org.monyhar.device.mojom.ScreenOrientationLockType;
+import org.monyhar.ui.display.DisplayAndroid;
+import org.monyhar.ui.display.DisplayAndroid.DisplayAndroidObserver;
 
 import java.util.concurrent.Callable;
 

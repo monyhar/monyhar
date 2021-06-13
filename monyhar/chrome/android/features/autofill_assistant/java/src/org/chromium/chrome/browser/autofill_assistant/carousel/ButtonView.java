@@ -1,7 +1,7 @@
 // Copyright 2019 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.chrome.browser.autofill_assistant.carousel;
+package org.monyhar.chrome.browser.autofill_assistant.carousel;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -21,11 +21,11 @@ import androidx.annotation.Px;
 import androidx.annotation.StyleRes;
 import androidx.core.view.ViewCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.ui.base.ViewUtils;
-import org.chromium.ui.widget.ChromeImageView;
-import org.chromium.ui.widget.RippleBackgroundHelper;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.ui.base.ViewUtils;
+import org.monyhar.ui.widget.ChromeImageView;
+import org.monyhar.ui.widget.RippleBackgroundHelper;
 
 /**
  * The view responsible for displaying rounded buttons. This class is a fork of {@link ChipView}
@@ -82,7 +82,7 @@ public class ButtonView extends LinearLayout {
                 a.getResourceId(R.styleable.ButtonView_chipBorderWidth, R.dimen.chip_border_width);
         int verticalInset = a.getDimensionPixelSize(R.styleable.ButtonView_verticalInset,
                 getResources().getDimensionPixelSize(
-                        org.chromium.ui.R.dimen.chip_bg_vertical_inset));
+                        org.monyhar.ui.R.dimen.chip_bg_vertical_inset));
         a.recycle();
 
         mIcon = new ChromeImageView(getContext());

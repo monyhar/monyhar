@@ -21,9 +21,9 @@
 
 namespace syncer {
 
-const char kTestURL[] = "http://chromium.org/test";
-const char kTestURLTrailingSlash[] = "http://chromium.org/test/";
-const char kEventURL[] = "http://chromium.org/test/event";
+const char kTestURL[] = "http://monyhar.org/test";
+const char kTestURLTrailingSlash[] = "http://monyhar.org/test/";
+const char kEventURL[] = "http://monyhar.org/test/event";
 
 const char kTestUserAgent[] = "the_fifth_element";
 const char kAuthToken[] = "multipass";

@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.policy;
+package org.monyhar.components.policy;
 
 import android.os.Bundle;
 
-import org.chromium.base.ThreadUtils;
+import org.monyhar.base.ThreadUtils;
 
 /**
  * Base class for Policy providers.

@@ -39,7 +39,7 @@ void UnmapTexSubImage2DCHROMIUM(PP_Resource context, const void* mem) {
 }
 
 const PPB_GLESChromiumTextureMapping_Dev
-g_ppb_gles_chromium_texture_mapping_thunk = {
+g_ppb_gles_monyhar_texture_mapping_thunk = {
   &MapTexSubImage2DCHROMIUM,
   &UnmapTexSubImage2DCHROMIUM
 };
@@ -48,7 +48,7 @@ g_ppb_gles_chromium_texture_mapping_thunk = {
 
 const PPB_GLESChromiumTextureMapping_Dev_0_1*
 GetPPB_GLESChromiumTextureMapping_Dev_0_1_Thunk() {
-  return &g_ppb_gles_chromium_texture_mapping_thunk;
+  return &g_ppb_gles_monyhar_texture_mapping_thunk;
 }
 
 }  // namespace thunk

@@ -24,7 +24,7 @@ class AwWebResourceInterceptResponse {
   AwWebResourceInterceptResponse() = delete;
 
   // It is expected that |obj| is an instance of the Java-side
-  // org.chromium.android_webview.AwWebResourceInterceptResponse class.
+  // org.monyhar.android_webview.AwWebResourceInterceptResponse class.
   explicit AwWebResourceInterceptResponse(
       const base::android::JavaRef<jobject>& obj);
   ~AwWebResourceInterceptResponse();

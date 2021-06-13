@@ -4,7 +4,7 @@
      found in the LICENSE file. -->
 
 <!-- An explore sites section tile. -->
-<org.chromium.chrome.browser.explore_sites.ExperimentalExploreSitesCategoryTileView
+<org.monyhar.chrome.browser.explore_sites.ExperimentalExploreSitesCategoryTileView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -28,4 +28,4 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:textAppearance="@style/TextAppearance.TextSmall.Primary" />
-</org.chromium.chrome.browser.explore_sites.ExperimentalExploreSitesCategoryTileView>
+</org.monyhar.chrome.browser.explore_sites.ExperimentalExploreSitesCategoryTileView>

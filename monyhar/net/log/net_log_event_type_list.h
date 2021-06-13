@@ -14,7 +14,7 @@
 // of these parameters are not individually documented.
 //
 // For best practices on how to add new NetLog events see:
-// https://chromium.googlesource.com/chromium/src/+/HEAD/net/docs/net-log.md
+// https://monyhar.googlesource.com/monyhar/src/+/HEAD/net/docs/net-log.md
 
 // --------------------------------------------------------------------------
 // General pseudo-events

@@ -4,9 +4,9 @@
 
 """Run the Chrome WebUI presubmit scripts on our test javascript.
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See http://dev.monyhar.org/developers/how-tos/depottools/presubmit-scripts
 for more details about the presubmit API built into depot_tools, and see
-https://chromium.googlesource.com/chromium/src/+/main/styleguide/web/web.md
+https://monyhar.googlesource.com/monyhar/src/+/main/styleguide/web/web.md
 for the rules we're checking against here.
 """
 

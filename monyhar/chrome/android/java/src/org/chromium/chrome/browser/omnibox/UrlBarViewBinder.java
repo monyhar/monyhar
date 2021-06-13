@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox;
+package org.monyhar.chrome.browser.omnibox;
 
 import android.content.res.Resources;
 import android.text.Editable;
@@ -12,13 +12,13 @@ import android.view.ActionMode;
 
 import androidx.annotation.ColorInt;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.Callback;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.omnibox.UrlBarProperties.AutocompleteText;
-import org.chromium.chrome.browser.omnibox.UrlBarProperties.UrlBarTextState;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.omnibox.UrlBarProperties.AutocompleteText;
+import org.monyhar.chrome.browser.omnibox.UrlBarProperties.UrlBarTextState;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * Handles translating the UrlBar model data to the view state.

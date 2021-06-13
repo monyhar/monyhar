@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.explore_sites;
+package org.monyhar.chrome.browser.explore_sites;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,8 +10,8 @@ import android.view.ViewGroup;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.chrome.R;
-import org.chromium.ui.modelutil.RecyclerViewAdapter;
+import org.monyhar.chrome.R;
+import org.monyhar.ui.modelutil.RecyclerViewAdapter;
 
 /** Factory to create CategoryCardViewHolder objects. */
 public class CategoryCardViewHolderFactory implements RecyclerViewAdapter.ViewHolderFactory<

@@ -101,7 +101,7 @@ static std::unique_ptr<IPC::Message> RewriteMessage(IPC::Message* message,
   if (it == map->end()) {
     // This usually indicates a missing message file in all_messages.h, or
     // that the message dump file is taken from a different revision of
-    // chromium from this executable.
+    // monyhar from this executable.
     std::cerr << "Unknown message type: ["
               << IPC_MESSAGE_ID_CLASS(message->type()) << ", "
               << IPC_MESSAGE_ID_LINE(message->type()) << "].\n";

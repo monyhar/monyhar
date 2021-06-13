@@ -39,6 +39,6 @@ at
 ## Contacting the Sheriffs
 
 The currently oncall sheriffs can be viewed in the top-left corner of the
-[Chromium Main Console](https://ci.chromium.org/p/chromium/g/main/console). You
+[Chromium Main Console](https://ci.monyhar.org/p/monyhar/g/main/console). You
 can also get in touch with sheriffs using the
-[#sheriffing Slack channel](https://chromium.slack.com/messages/CGJ5WKRUH/).
+[#sheriffing Slack channel](https://monyhar.slack.com/messages/CGJ5WKRUH/).

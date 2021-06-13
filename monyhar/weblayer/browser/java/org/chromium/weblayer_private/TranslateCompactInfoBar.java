@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,21 +15,21 @@ import androidx.core.content.ContextCompat;
 
 import com.google.android.material.tabs.TabLayout;
 
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.infobar.ActionType;
-import org.chromium.chrome.browser.infobar.InfobarEvent;
-import org.chromium.components.infobars.InfoBar;
-import org.chromium.components.infobars.InfoBarCompactLayout;
-import org.chromium.components.translate.TranslateMenu;
-import org.chromium.components.translate.TranslateMenuHelper;
-import org.chromium.components.translate.TranslateOption;
-import org.chromium.components.translate.TranslateOptions;
-import org.chromium.components.translate.TranslateTabLayout;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.infobar.ActionType;
+import org.monyhar.chrome.browser.infobar.InfobarEvent;
+import org.monyhar.components.infobars.InfoBar;
+import org.monyhar.components.infobars.InfoBarCompactLayout;
+import org.monyhar.components.translate.TranslateMenu;
+import org.monyhar.components.translate.TranslateMenuHelper;
+import org.monyhar.components.translate.TranslateOption;
+import org.monyhar.components.translate.TranslateOptions;
+import org.monyhar.components.translate.TranslateTabLayout;
+import org.monyhar.ui.widget.Toast;
 
 /**
  * Java version of the compact translate infobar.

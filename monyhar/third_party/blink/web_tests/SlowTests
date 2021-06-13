@@ -13,7 +13,7 @@
 
 
 # Further documentation:
-# https://chromium.googlesource.com/chromium/src/+/master/docs/testing/web_test_expectations.md
+# https://monyhar.googlesource.com/monyhar/src/+/master/docs/testing/web_test_expectations.md
 
 crbug.com/24182 storage/indexeddb/objectstore-cursor.html [ Slow ]
 crbug.com/24182 storage/indexeddb/mozilla/test_objectStore_openKeyCursor.html [ Slow ]
@@ -200,12 +200,12 @@ crbug.com/741259 editing/selection/select-bidi-run.html [ Slow ]
 crbug.com/793771 media/controls/scrubbing.html [ Slow ]
 
 # These tests need to do many iterations and so can't be fast.
-crbug.com/748418 http/tests/streams/chromium/deep-recursion-getwriter.html [ Slow ]
-crbug.com/748418 http/tests/streams/chromium/simple-queue-empty-node-push.html [ Slow ]
-crbug.com/748418 http/tests/streams/chromium/simple-queue-full-node-reject.html [ Slow ]
-crbug.com/748418 http/tests/streams/chromium/simple-queue-full-node-shift.html [ Slow ]
-crbug.com/748418 http/tests/streams/chromium/simple-queue-many-foreach.html [ Slow ]
-crbug.com/748418 http/tests/streams/chromium/simple-queue-push-shift-peek.html [ Slow ]
+crbug.com/748418 http/tests/streams/monyhar/deep-recursion-getwriter.html [ Slow ]
+crbug.com/748418 http/tests/streams/monyhar/simple-queue-empty-node-push.html [ Slow ]
+crbug.com/748418 http/tests/streams/monyhar/simple-queue-full-node-reject.html [ Slow ]
+crbug.com/748418 http/tests/streams/monyhar/simple-queue-full-node-shift.html [ Slow ]
+crbug.com/748418 http/tests/streams/monyhar/simple-queue-many-foreach.html [ Slow ]
+crbug.com/748418 http/tests/streams/monyhar/simple-queue-push-shift-peek.html [ Slow ]
 
 # This page loads slow in real browser, and can timeout in CompositeAfterPaint layout test.
 crbug.com/779366 fast/shapes/crash-allocating-very-large-raster-shape.html [ Slow ]
@@ -218,8 +218,8 @@ crbug.com/564109 http/tests/webfont/font-display-intervention.html [ Slow ]
 crbug.com/826957 fast/peerconnection/RTCPeerConnection-manyCandidates.html [ Slow ]
 
 # These tests take 90 seconds on MSAN due to a large amount of JS execution.
-crbug.com/853977 [ Linux ] http/tests/fetch/chromium/call-extra-crash-tee.html [ Slow ]
-crbug.com/853977 [ Linux ] http/tests/fetch/chromium/release-handle-crash.html [ Slow ]
+crbug.com/853977 [ Linux ] http/tests/fetch/monyhar/call-extra-crash-tee.html [ Slow ]
+crbug.com/853977 [ Linux ] http/tests/fetch/monyhar/release-handle-crash.html [ Slow ]
 
 crbug.com/865262 [ Mac ] media/controls/text-track-menu-pointer-selection.html [ Slow ]
 
@@ -325,7 +325,7 @@ crbug.com/874695 fast/webgl/texImage-imageBitmap-from-video-resize.html [ Slow ]
 crbug.com/874695 fast/webgl/webgl-composite-modes.html [ Slow ]
 crbug.com/874695 fast/webgl/webgl-composite-modes-repaint.html [ Slow ]
 crbug.com/874695 fast/webgl/webgl-composite-modes-tabswitching.html [ Slow ]
-crbug.com/874695 fast/workers/chromium/worker-document-leak.html [ Slow ]
+crbug.com/874695 fast/workers/monyhar/worker-document-leak.html [ Slow ]
 crbug.com/874695 fullscreen/full-screen-restrictions.html [ Slow ]
 crbug.com/874695 http/tests/cookies/same-site/framed.https.html [ Slow ]
 crbug.com/874695 http/tests/credentialmanager/credentialscontainer-create-with-virtual-authenticator.html [ Slow ]
@@ -362,12 +362,12 @@ crbug.com/874695 http/tests/misc/svg-image-delayed-size-negotiation.html [ Slow 
 crbug.com/874695 http/tests/multipart/multipart-main-resource.html [ Slow ]
 crbug.com/874695 http/tests/multipart/stop-loading-after-onload2.html [ Slow ]
 crbug.com/874695 http/tests/notifications/permission-behaviour.html [ Slow ]
-crbug.com/874695 http/tests/permissions/chromium/test-request-multiple-sharedworker.html [ Slow ]
-crbug.com/874695 http/tests/permissions/chromium/test-request-multiple-window.html [ Slow ]
-crbug.com/874695 http/tests/permissions/chromium/test-request-multiple-worker.html [ Slow ]
-crbug.com/874695 http/tests/permissions/chromium/test-request-sharedworker.html [ Slow ]
-crbug.com/874695 http/tests/permissions/chromium/test-request-window.html [ Slow ]
-crbug.com/874695 http/tests/permissions/chromium/test-request-worker.html [ Slow ]
+crbug.com/874695 http/tests/permissions/monyhar/test-request-multiple-sharedworker.html [ Slow ]
+crbug.com/874695 http/tests/permissions/monyhar/test-request-multiple-window.html [ Slow ]
+crbug.com/874695 http/tests/permissions/monyhar/test-request-multiple-worker.html [ Slow ]
+crbug.com/874695 http/tests/permissions/monyhar/test-request-sharedworker.html [ Slow ]
+crbug.com/874695 http/tests/permissions/monyhar/test-request-window.html [ Slow ]
+crbug.com/874695 http/tests/permissions/monyhar/test-request-worker.html [ Slow ]
 crbug.com/874695 http/tests/permissions/test-query.html [ Slow ]
 crbug.com/874695 http/tests/security/contentSecurityPolicy/redirect-with-delay.html [ Slow ]
 crbug.com/874695 http/tests/security/cross-frame-mouse-source-capabilities.html [ Slow ]
@@ -472,11 +472,11 @@ crbug.com/874695 wpt_internal/bluetooth/server/getPrimaryServices/gen-delayed-di
 
 crbug.com/868956 virtual/gpu/fast/canvas/canvas-composite-video-shadow.html [ Slow ]
 
-crbug.com/893015 [ Linux ] http/tests/fetch/chromium/response-array-buffer-gc-crash.html [ Slow ]
-crbug.com/893015 [ Linux ] http/tests/fetch/chromium/response-blob-gc-crash.html [ Slow ]
-crbug.com/893015 [ Linux ] http/tests/fetch/chromium/response-form-data-gc-crash.html [ Slow ]
-crbug.com/893015 [ Linux ] http/tests/fetch/chromium/response-json-gc-crash.html [ Slow ]
-crbug.com/893015 [ Linux ] http/tests/fetch/chromium/response-text-gc-crash.html [ Slow ]
+crbug.com/893015 [ Linux ] http/tests/fetch/monyhar/response-array-buffer-gc-crash.html [ Slow ]
+crbug.com/893015 [ Linux ] http/tests/fetch/monyhar/response-blob-gc-crash.html [ Slow ]
+crbug.com/893015 [ Linux ] http/tests/fetch/monyhar/response-form-data-gc-crash.html [ Slow ]
+crbug.com/893015 [ Linux ] http/tests/fetch/monyhar/response-json-gc-crash.html [ Slow ]
+crbug.com/893015 [ Linux ] http/tests/fetch/monyhar/response-text-gc-crash.html [ Slow ]
 
 crbug.com/914981 [ Mac ] media/controls/overflow-menu-pointer-selection.html [ Slow ]
 crbug.com/914981 [ Mac ] fast/events/no-fake-mousemove.html [ Slow ]

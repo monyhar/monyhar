@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.base;
+package org.monyhar.ui.base;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -25,20 +25,20 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.core.content.ContextCompat;
 
-import org.chromium.base.ContentUriUtils;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.task.TaskTraits;
-import org.chromium.ui.R;
-import org.chromium.ui.UiUtils;
+import org.monyhar.base.ContentUriUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.task.TaskTraits;
+import org.monyhar.ui.R;
+import org.monyhar.ui.UiUtils;
 
 import java.io.File;
 import java.io.IOException;
@@ -1005,7 +1005,7 @@ public class SelectFileDialog implements WindowAndroid.IntentCallback, PhotoPick
                 // The |path| variable will now contain a content URI such as:
                 //   content://media/external/file/1234
                 //   content://com.android.providers.media.documents/document/image%3A1234
-                //   content://org.chromium.chrome.FileProvider/images/1234.jpg
+                //   content://org.monyhar.chrome.FileProvider/images/1234.jpg
                 // The first is an example URI from Chrome's MediaPicker, the second from the stock
                 // Android picker and the third is from the camera (when taking a photo). All
                 // obtained using the Emulator.

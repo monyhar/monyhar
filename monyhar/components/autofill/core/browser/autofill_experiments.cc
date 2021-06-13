@@ -148,14 +148,14 @@ bool IsCreditCardUploadEnabled(const PrefService* pref_service,
 
   std::string domain = gaia::ExtractDomainName(user_email);
   // If the "allow all email domains" flag is off, restrict credit card upload
-  // only to Google Accounts with @googlemail, @gmail, @google, or @chromium
+  // only to Google Accounts with @googlemail, @gmail, @google, or @monyhar
   // domains.
   // example.com is on the list because ChromeOS tests rely on using this. That
   // should be fine, since example.com is an IANA reserved domain.
   if (!base::FeatureList::IsEnabled(
           features::kAutofillUpstreamAllowAllEmailDomains) &&
       !(domain == "googlemail.com" || domain == "gmail.com" ||
-        domain == "google.com" || domain == "chromium.org" ||
+        domain == "google.com" || domain == "monyhar.org" ||
         domain == "example.com")) {
     AutofillMetrics::LogCardUploadEnabledMetric(
         AutofillMetrics::CardUploadEnabledMetric::EMAIL_DOMAIN_NOT_SUPPORTED,

@@ -8,7 +8,7 @@ A `ReadWriteLock` is used rather than `synchronized` blocks to the limit
 opportunitie for stutter on the UI thread when waiting for this shared resource.
 
 For context see
-`base/android/java/src/org/chromium/base/metrics/CachingUmaRecorder.java`
+`base/android/java/src/org/monyhar/base/metrics/CachingUmaRecorder.java`
 
 ### Method A
 

@@ -40,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.TextMedium.Blue"/>
-        <org.chromium.ui.widget.ChromeImageView
+        <org.monyhar.ui.widget.ChromeImageView
             android:id="@+id/chevron"
             android:layout_width="16dp"
             android:layout_height="16dp"

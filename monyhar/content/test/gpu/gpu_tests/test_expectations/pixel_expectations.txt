@@ -17,7 +17,7 @@
 # tags: [ desktop
 #         mobile ]
 # Browser
-# tags: [ android-chromium android-webview-instrumentation
+# tags: [ android-monyhar android-webview-instrumentation
 #         debug debug-x64
 #         release release-x64 ]
 # GPU
@@ -166,13 +166,13 @@ crbug.com/883500 [ android android-nexus-6 ] Pixel_BackgroundImage [ Skip ]
 crbug.com/1029389 [ android android-nexus-5 ] Pixel_PrecisionRoundedCorner [ Skip ]
 
 # Flakes on Nexus 5X.
-crbug.com/883500 [ android android-chromium android-nexus-5x ] Pixel_BackgroundImage [ RetryOnFailure ]
-crbug.com/1065514 [ android android-chromium android-nexus-5x ] Pixel_WebGLReadPixelsTabSwitch [ RetryOnFailure ]
-crbug.com/1121476 [ android android-chromium android-nexus-5x ] Pixel_Canvas2DTabSwitch [ RetryOnFailure ]
+crbug.com/883500 [ android android-monyhar android-nexus-5x ] Pixel_BackgroundImage [ RetryOnFailure ]
+crbug.com/1065514 [ android android-monyhar android-nexus-5x ] Pixel_WebGLReadPixelsTabSwitch [ RetryOnFailure ]
+crbug.com/1121476 [ android android-monyhar android-nexus-5x ] Pixel_Canvas2DTabSwitch [ RetryOnFailure ]
 
 # Frequently fails on Nexus 5X
-crbug.com/1157136 [ android android-chromium android-nexus-5x skia-renderer-disabled ] Pixel_OffscreenCanvasWebGLDefault [ Skip ]
-crbug.com/1157136 [ android android-chromium android-nexus-5x skia-renderer-gl ] Pixel_OffscreenCanvasWebGLDefault [ Skip ]
+crbug.com/1157136 [ android android-monyhar android-nexus-5x skia-renderer-disabled ] Pixel_OffscreenCanvasWebGLDefault [ Skip ]
+crbug.com/1157136 [ android android-monyhar android-nexus-5x skia-renderer-gl ] Pixel_OffscreenCanvasWebGLDefault [ Skip ]
 
 # We do not have software H.264 decoding on Android, so it can't survive a
 # context loss which results in hardware decoder loss.

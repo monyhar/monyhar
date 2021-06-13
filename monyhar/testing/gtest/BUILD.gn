@@ -32,12 +32,12 @@ static_library("gtest") {
     #
     # 1) This target needs to be a static_library (not a source set) on Mac to
     #    avoid the build errors in
-    #    https://codereview.chromium.org/2779193002#msg82.
+    #    https://codereview.monyhar.org/2779193002#msg82.
     # 2) A static_library must have at least one source file, to avoid build
     #    errors on Mac and Windows. https://crbug.com/710334
     # 3) A static_library with complete_static_lib = true, which would not
     #    require adding the empty file, will result in duplicate symbols on
-    #    Android. https://codereview.chromium.org/2852613002/#ps20001
+    #    Android. https://codereview.monyhar.org/2852613002/#ps20001
     "empty.cc",
   ]
   public_deps = [ "//third_party/googletest:gtest" ]

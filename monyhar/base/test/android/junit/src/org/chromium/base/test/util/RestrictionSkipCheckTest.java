@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.test.util;
+package org.monyhar.base.test.util;
 
 import android.text.TextUtils;
 
@@ -13,16 +13,16 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
 
 /** Unit tests for RestrictionSkipCheck. */
 @RunWith(BaseRobolectricTestRunner.class)
 @Config(manifest = Config.NONE)
 public class RestrictionSkipCheckTest {
     private static final String TEST_RESTRICTION_APPLIES =
-            "org.chromium.base.test.util.RestrictionSkipCheckTest.TEST_RESTRICTION_APPLIES";
+            "org.monyhar.base.test.util.RestrictionSkipCheckTest.TEST_RESTRICTION_APPLIES";
     private static final String TEST_RESTRICTION_DOES_NOT_APPLY =
-            "org.chromium.base.test.util.RestrictionSkipCheckTest.TEST_RESTRICTION_DOES_NOT_APPLY";
+            "org.monyhar.base.test.util.RestrictionSkipCheckTest.TEST_RESTRICTION_DOES_NOT_APPLY";
 
     private static class TestRestrictionSkipCheck extends RestrictionSkipCheck {
         public TestRestrictionSkipCheck() {

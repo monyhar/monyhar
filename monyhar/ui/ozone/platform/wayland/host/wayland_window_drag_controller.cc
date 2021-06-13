@@ -48,7 +48,7 @@ namespace ui {
 namespace {
 
 // Custom mime type used for window dragging DND sessions.
-constexpr char kMimeTypeChromiumWindow[] = "chromium/x-window";
+constexpr char kMimeTypeChromiumWindow[] = "monyhar/x-window";
 
 // DND action used in window dragging DND sessions.
 constexpr uint32_t kDndActionWindowDrag =

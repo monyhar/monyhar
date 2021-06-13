@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.safety_check;
+package org.monyhar.chrome.browser.safety_check;
 
-import org.chromium.base.Callback;
+import org.monyhar.base.Callback;
 
 import java.lang.ref.WeakReference;
 

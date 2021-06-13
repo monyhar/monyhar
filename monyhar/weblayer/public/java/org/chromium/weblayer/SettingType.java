@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer;
+package org.monyhar.weblayer;
 
 import androidx.annotation.IntDef;
 
@@ -22,11 +22,11 @@ public @interface SettingType {
      * (which checks that the loaded URLs are safe). Safe Browsing is enabled by default.
      */
     int BASIC_SAFE_BROWSING_ENABLED =
-            org.chromium.weblayer_private.interfaces.SettingType.BASIC_SAFE_BROWSING_ENABLED;
+            org.monyhar.weblayer_private.interfaces.SettingType.BASIC_SAFE_BROWSING_ENABLED;
     /**
      * Allows the embedder to enable URL-Keyed Metrics. Disabled by default.
      */
-    int UKM_ENABLED = org.chromium.weblayer_private.interfaces.SettingType.UKM_ENABLED;
+    int UKM_ENABLED = org.monyhar.weblayer_private.interfaces.SettingType.UKM_ENABLED;
 
     /**
      * Allows the embedder to set whether it wants to enable/disable the Extended Reporting
@@ -42,7 +42,7 @@ public @interface SettingType {
      * is true).
      */
     int EXTENDED_REPORTING_SAFE_BROWSING_ENABLED =
-            org.chromium.weblayer_private.interfaces.SettingType
+            org.monyhar.weblayer_private.interfaces.SettingType
                     .EXTENDED_REPORTING_SAFE_BROWSING_ENABLED;
 
     /**
@@ -53,11 +53,11 @@ public @interface SettingType {
      * is true).
      */
     int REAL_TIME_SAFE_BROWSING_ENABLED =
-            org.chromium.weblayer_private.interfaces.SettingType.REAL_TIME_SAFE_BROWSING_ENABLED;
+            org.monyhar.weblayer_private.interfaces.SettingType.REAL_TIME_SAFE_BROWSING_ENABLED;
 
     /**
      * Allows the embedder to enable/disable NoStatePrefetch. Enabled by default.
      */
     int NETWORK_PREDICTION_ENABLED =
-            org.chromium.weblayer_private.interfaces.SettingType.NETWORK_PREDICTION_ENABLED;
+            org.monyhar.weblayer_private.interfaces.SettingType.NETWORK_PREDICTION_ENABLED;
 }

@@ -23,7 +23,7 @@ class BluetoothAdapterAndroid;
 class BluetoothRemoteGattServiceAndroid;
 
 // BluetoothRemoteGattCharacteristicAndroid along with its owned Java class
-// org.chromium.device.bluetooth.ChromeBluetoothRemoteGattCharacteristic
+// org.monyhar.device.bluetooth.ChromeBluetoothRemoteGattCharacteristic
 // implement BluetootGattCharacteristic.
 class DEVICE_BLUETOOTH_EXPORT BluetoothRemoteGattCharacteristicAndroid
     : public BluetoothRemoteGattCharacteristic {
@@ -135,7 +135,7 @@ class DEVICE_BLUETOOTH_EXPORT BluetoothRemoteGattCharacteristicAndroid
   BluetoothRemoteGattServiceAndroid* service_;
 
   // Java object
-  // org.chromium.device.bluetooth.ChromeBluetoothRemoteGattCharacteristic.
+  // org.monyhar.device.bluetooth.ChromeBluetoothRemoteGattCharacteristic.
   base::android::ScopedJavaGlobalRef<jobject> j_characteristic_;
 
   // Adapter unique instance ID.

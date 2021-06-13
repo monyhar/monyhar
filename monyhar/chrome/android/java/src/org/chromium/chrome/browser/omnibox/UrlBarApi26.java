@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox;
+package org.monyhar.chrome.browser.omnibox;
 
 import android.content.Context;
 import android.os.Build;
 import android.util.AttributeSet;
 import android.view.ViewStructure;
 
-import org.chromium.base.annotations.VerifiesOnO;
+import org.monyhar.base.annotations.VerifiesOnO;
 
 /**
  * Sub-class of UrlBar that contains newer Android APIs to avoid verification errors.

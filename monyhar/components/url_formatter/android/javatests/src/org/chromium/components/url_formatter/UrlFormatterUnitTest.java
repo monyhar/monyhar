@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.url_formatter;
+package org.monyhar.components.url_formatter;
 
 import static org.junit.Assert.assertEquals;
 
@@ -13,12 +13,12 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.Function;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Batch;
-import org.chromium.content_public.browser.test.NativeLibraryTestUtils;
-import org.chromium.url.GURL;
-import org.chromium.url.GURLJavaTestHelper;
+import org.monyhar.base.Function;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.content_public.browser.test.NativeLibraryTestUtils;
+import org.monyhar.url.GURL;
+import org.monyhar.url.GURLJavaTestHelper;
 
 /**
  * Unit tests for {@link UrlFormatter}.

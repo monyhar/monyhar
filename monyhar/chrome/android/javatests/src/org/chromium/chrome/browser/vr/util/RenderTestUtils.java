@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr.util;
+package org.monyhar.chrome.browser.vr.util;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -10,8 +10,8 @@ import android.graphics.RectF;
 
 import org.junit.Assert;
 
-import org.chromium.base.test.util.UrlUtils;
-import org.chromium.ui.test.util.RenderTestRule;
+import org.monyhar.base.test.util.UrlUtils;
+import org.monyhar.ui.test.util.RenderTestRule;
 
 import java.io.File;
 import java.io.IOException;

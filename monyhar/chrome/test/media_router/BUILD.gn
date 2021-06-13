@@ -6,7 +6,7 @@ declare_args() {
   # Many of the targets defined in this file have dependencies that cannot be
   # satisfied without additional downstream resources. Explicitly guard them
   # them behind this flag so that we do not attempt to build or isolate targets
-  # in public chromium checkouts.
+  # in public monyhar checkouts.
   enable_downstream_media_tests = false
 }
 

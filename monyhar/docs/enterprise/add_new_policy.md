@@ -30,7 +30,7 @@ Usually you need a policy when
     -   Negative policies (*Disable*, *Disallow*) are verboten because setting
         something to "true" to disable it confuses people.
 2.  Declare the policy in the
-    [policy_templates.json](https://cs.chromium.org/chromium/src/components/policy/resources/policy_templates.json)
+    [policy_templates.json](https://cs.monyhar.org/monyhar/src/components/policy/resources/policy_templates.json)
     -   This file contains meta-level descriptions of all policies and is used
         to generate code, policy templates (ADM/ADMX for Windows and the
         application manifest for Mac), as well as documentation. Please make
@@ -55,7 +55,7 @@ Usually you need a policy when
             using a command line switch or an extension.
     - The complete list of attributes and their expected values can be found in
       the
-      [policy_templates.json](https://cs.chromium.org/chromium/src/components/policy/resources/policy_templates.json).
+      [policy_templates.json](https://cs.monyhar.org/monyhar/src/components/policy/resources/policy_templates.json).
     -   The textual policy description should include the following:
         -   What features of Chrome are affected.
         -   Which behavior and/or UI/UX changes the policy triggers.
@@ -65,7 +65,7 @@ Usually you need a policy when
             traditionally, and we've seen requests from organizations to
             explicitly spell out the behavior for all possible values and for
             when the policy is unset.
-    -   See [description_guidelines.md](https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/enterprise/description_guidelines.md)
+    -   See [description_guidelines.md](https://monyhar.googlesource.com/monyhar/src/+/refs/heads/main/docs/enterprise/description_guidelines.md)
         for additional guidelines when creating a description, including how
         various products should be referenced.
 3.  Create a preference and map the policy value to it.
@@ -79,15 +79,15 @@ Usually you need a policy when
             Prefs** if possible, because this gives admin more flexibility of
             policy setup.
         2.  Most policies can be mapped to prefs with `kSimplePolicyMap` in
-            [configuration_policy_handler_list_factory.cc](https://cs.chromium.org/chromium/src/chrome/browser/policy/configuration_policy_handler_list_factory.cc?type=cs&q=kSimplePolicyMap&g=0&l=150).
+            [configuration_policy_handler_list_factory.cc](https://cs.monyhar.org/monyhar/src/chrome/browser/policy/configuration_policy_handler_list_factory.cc?type=cs&q=kSimplePolicyMap&g=0&l=150).
             If the policy needs additional verification or processing, please
             implement a `ConfigurationPolicyHandler` to do so.
         3.  Test the mapping by adding policy to
-            [policy_test_cases.json](https://cs.chromium.org/chromium/src/chrome/test/data/policy/policy_test_cases.json?q=policy_test_case).
+            [policy_test_cases.json](https://cs.monyhar.org/monyhar/src/chrome/test/data/policy/policy_test_cases.json?q=policy_test_case).
         4.  iOS platform has its own
-            [configuration_policy_handler_list_factory.mm](https://source.chromium.org/chromium/chromium/src/+/main:ios/chrome/browser/policy/configuration_policy_handler_list_factory.mm)
+            [configuration_policy_handler_list_factory.mm](https://source.monyhar.org/monyhar/monyhar/src/+/main:ios/chrome/browser/policy/configuration_policy_handler_list_factory.mm)
             and
-            [policy_test_cases.json](https://source.chromium.org/chromium/chromium/src/+/main:ios/chrome/test/data/policy/policy_test_cases.json)
+            [policy_test_cases.json](https://source.monyhar.org/monyhar/monyhar/src/+/main:ios/chrome/test/data/policy/policy_test_cases.json)
             file.
 4.  Disable the user setting UI when the policy is applied.
     -   If your feature can be controlled by GUI in `chrome://settings`, the
@@ -96,7 +96,7 @@ Usually you need a policy when
         -   `PrefService:Preference::IsManaged` reveals whether a prefs value
             comes from policy or not.
         -   The setting needs an
-            [indicator](https://cs.chromium.org/chromium/src/ui/webui/resources/images/business.svg)
+            [indicator](https://cs.monyhar.org/monyhar/src/ui/webui/resources/images/business.svg)
             to tell users that the setting is enforced by the administrator.
 5.  Support `dynamic_refresh` if possible.
     -   We strongly encourage developers to make their policies support this
@@ -106,7 +106,7 @@ Usually you need a policy when
         Please verify with a Chrome OS policy owner if your profile policy does
         not support dynamic refresh on Chrome OS.
     -   Most of the time, this requires a
-        [PrefChangeRegistrar](https://cs.chromium.org/chromium/src/components/prefs/pref_change_registrar.h)
+        [PrefChangeRegistrar](https://cs.monyhar.org/monyhar/src/components/prefs/pref_change_registrar.h)
         to listen to the preference change notification and update UI or
         browser behavior right away.
 6.  Adding a device policy for Chrome OS.
@@ -132,21 +132,21 @@ Usually you need a policy when
         `Software\Policies\Google\Chrome` (for Google Chrome branded builds). If
         you want to test policy refresh, you need to use group policy tools and
         gpupdate; see
-        [Windows Quick Start](https://www.chromium.org/administrators/windows-quick-start).
+        [Windows Quick Start](https://www.monyhar.org/administrators/windows-quick-start).
     -   Mac: See
-        [Mac Quick Start](https://www.chromium.org/administrators/mac-quick-start)
+        [Mac Quick Start](https://www.monyhar.org/administrators/mac-quick-start)
         (section "Debugging")
     -   Linux: See
-        [Linux Quick Start](https://www.chromium.org/administrators/linux-quick-start)
+        [Linux Quick Start](https://www.monyhar.org/administrators/linux-quick-start)
         (section "Set Up Policies")
     -   Chrome OS and Android are more complex to test, as a full end-to-end
         test requires network transactions to the policy test server.
         Instructions on how to set up the policy test server and have the
         browser talk to it are here:
-        [Running the cloud policy test server](https://www.chromium.org/developers/how-tos/enterprise/running-the-cloud-policy-test-server).
+        [Running the cloud policy test server](https://www.monyhar.org/developers/how-tos/enterprise/running-the-cloud-policy-test-server).
         If you'd just like to do a quick test for Chrome OS, the Linux code is
         also functional on CrOS, see
-        [Linux Quick Start](https://www.chromium.org/administrators/linux-quick-start).
+        [Linux Quick Start](https://www.monyhar.org/administrators/linux-quick-start).
 9.  If you are adding a new policy that supersedes an older one, verify that the
     new policy works as expected even if the old policy is set (allowing us to
     set both during the transition time when Chrome versions honoring the old
@@ -197,7 +197,7 @@ supported_on field. See "Removing support for a policy" below for more details.
 1. Update the policy handling code. This is generally ensuring that if the old
    policy is set, the values are propagated to the new policies if they were
    unset.
-1. Notify chromium-enterprise@chromium.org to ensure this deprecation is
+1. Notify monyhar-enterprise@monyhar.org to ensure this deprecation is
    mentioned in the enterprise release notes.
 
 ## Removing support for a policy
@@ -215,7 +215,7 @@ If the policy was never launched, it can also be deleted from
 policy_templates.json instead of just being marked as no longer supported.
 In this case, please remember to add the deleted id to deleted_policy_ids.
 
-If you want to remove support for another reason, please reach out to someone in [ENTERPRISE_POLICY_OWNERS](https://cs.chromium.org/chromium/src/components/policy/resources/ENTERPRISE_POLICY_OWNERS)
+If you want to remove support for another reason, please reach out to someone in [ENTERPRISE_POLICY_OWNERS](https://cs.monyhar.org/monyhar/src/components/policy/resources/ENTERPRISE_POLICY_OWNERS)
 to ensure this is okay. The general preference is to leave policies as
 deprecated, but still supported.
 
@@ -228,14 +228,14 @@ if the policy skipped past the deprecation state.
    Also marking as deprecated if not previously done.
 1. Remove the related policy_test_case.json code one milestone before support is removed.
 1. Remove the policy handling code.
-1. Notify chromium-enterprise@chromium.org to ensure this removal of support is
+1. Notify monyhar-enterprise@monyhar.org to ensure this removal of support is
    mentioned in the enterprise release notes.
 
 ## Examples
 
 Here is an example based on the instructions above. It's a good, simple place to
 get started:
-[https://chromium-review.googlesource.com/c/chromium/src/+/1742209](https://chromium-review.googlesource.com/c/chromium/src/+/1742209)
+[https://monyhar-review.googlesource.com/c/monyhar/src/+/1742209](https://monyhar-review.googlesource.com/c/monyhar/src/+/1742209)
 
 
 ## Modifying existing policies
@@ -278,7 +278,7 @@ put the deprecated flag if you deprecate a policy.
 To enforce the above rules concerning policy modification and ensure no
 backwards incompatible changes are introduced, presubmit checks
 will be performed on every change to
-[policy_templates.json](https://cs.chromium.org/chromium/src/components/policy/resources/policy_templates.json).
+[policy_templates.json](https://cs.monyhar.org/monyhar/src/components/policy/resources/policy_templates.json).
 
 The presubmit checks perform the following verifications:
 

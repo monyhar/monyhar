@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.messages;
+package org.monyhar.components.messages;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * A key stands for a scope instance of a certain scope type.

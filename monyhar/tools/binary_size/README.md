@@ -4,15 +4,15 @@ These tools currently focus on supporting Android. They somewhat work with
 Linux builds. As for Windows, some great tools already exist and are documented
 here:
 
- * https://www.chromium.org/developers/windows-binary-sizes
+ * https://www.monyhar.org/developers/windows-binary-sizes
 
 There is also a dedicated mailing-list for binary size discussions:
 
- * https://groups.google.com/a/chromium.org/forum/#!forum/binary-size
+ * https://groups.google.com/a/monyhar.org/forum/#!forum/binary-size
 
 Bugs and feature requests are tracked in crbug under:
 
- * [Tools > BinarySize](https://bugs.chromium.org/p/chromium/issues/list?q=component%3ATools>BinarySize)
+ * [Tools > BinarySize](https://bugs.monyhar.org/p/monyhar/issues/list?q=component%3ATools>BinarySize)
 
 Per-Milestone Binary Size Breakdowns:
 
@@ -36,7 +36,7 @@ Guide to dealing with chrome-perf size alerts:
 
 ## resource_sizes.py
 
- * [//build/android/resource_sizes.py](https://cs.chromium.org/chromium/src/build/android/resource_sizes.py)
+ * [//build/android/resource_sizes.py](https://cs.monyhar.org/monyhar/src/build/android/resource_sizes.py)
  * Able to run on an `.apk` without having the build directory available.
  * Reports the size metrics captured by our perf builders. Viewable at
    [chromeperf](https://chromeperf.appspot.com/report) under
@@ -48,7 +48,7 @@ Guide to dealing with chrome-perf size alerts:
 
 Collects, archives, and analyzes Chrome's binary size.
 Supports Android and Linux (although Linux
-[has issues](https://bugs.chromium.org/p/chromium/issues/detail?id=717550)).
+[has issues](https://bugs.monyhar.org/p/monyhar/issues/detail?id=717550)).
 
 ### Technical Details
 
@@ -221,7 +221,7 @@ Collect size information and dump it into a `.size` file.
 
 *** note
 **Note:** Refer to
-[diagnose_bloat.py](https://cs.chromium.org/search/?q=file:diagnose_bloat.py+gn_args)
+[diagnose_bloat.py](https://cs.monyhar.org/search/?q=file:diagnose_bloat.py+gn_args)
 for list of GN args to build a Release binary (or just use the tool with --single).
 ***
 

@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer;
+package org.monyhar.weblayer;
 
 import android.content.Context;
 import android.os.Bundle;
 
-import org.chromium.weblayer_private.interfaces.IRemoteFragment;
+import org.monyhar.weblayer_private.interfaces.IRemoteFragment;
 
 /**
  * The client-side implementation of a SettingsFragment.

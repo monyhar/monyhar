@@ -1,25 +1,25 @@
 # Note: Unless you want a specific reviewer's expertise, please send CLs to
-# chromium-chrome-browser-ui-views-reviews@google.com rather than to specific
+# monyhar-chrome-browser-ui-views-reviews@google.com rather than to specific
 # individuals. These CLs will be automatically reassigned to a reviewer within
 # about 5 minutes. This approach helps our team to load-balance incoming
 # reviews. Googlers can read more about this at go/gwsq-gerrit.
 
-bsep@chromium.org
-collinbaker@chromium.org
-connily@chromium.org
-corising@chromium.org
-cyan@chromium.org
-dfried@chromium.org
-ellyjones@chromium.org
-kylixrd@chromium.org
-msw@chromium.org
-pbos@chromium.org
-pkasting@chromium.org
-sky@chromium.org
-tbergquist@chromium.org
+bsep@monyhar.org
+collinbaker@monyhar.org
+connily@monyhar.org
+corising@monyhar.org
+cyan@monyhar.org
+dfried@monyhar.org
+ellyjones@monyhar.org
+kylixrd@monyhar.org
+msw@monyhar.org
+pbos@monyhar.org
+pkasting@monyhar.org
+sky@monyhar.org
+tbergquist@monyhar.org
 
-per-file drag_and_drop_interactive_uitest.*=lukasza@chromium.org
-per-file drag_and_drop_interactive_uitest.*=paulmeyer@chromium.org
+per-file drag_and_drop_interactive_uitest.*=lukasza@monyhar.org
+per-file drag_and_drop_interactive_uitest.*=paulmeyer@monyhar.org
 per-file drag_and_drop_interactive_uitest.*=file://content/OWNERS
 
 per-file hung_renderer*=file://chrome/browser/ui/hung_renderer/OWNERS

@@ -26,8 +26,8 @@ currently stored in `//tools/android/avd/proto`.
 
 You can use these configuration files to run the same emulator images locally.
 
-[android-marshmallow-x86-rel]: https://ci.chromium.org/p/chromium/builders/ci/android-marshmallow-x86-rel
-[android-pie-x86-rel]: https://ci.chromium.org/p/chromium/builders/ci/android-pie-x86-rel
+[android-marshmallow-x86-rel]: https://ci.monyhar.org/p/monyhar/builders/ci/android-marshmallow-x86-rel
+[android-pie-x86-rel]: https://ci.monyhar.org/p/monyhar/builders/ci/android-pie-x86-rel
 
 #### Prerequisite
 

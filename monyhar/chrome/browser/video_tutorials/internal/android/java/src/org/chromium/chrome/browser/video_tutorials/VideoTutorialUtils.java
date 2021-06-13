@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.video_tutorials;
+package org.monyhar.chrome.browser.video_tutorials;
 
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 
-import org.chromium.base.Callback;
-import org.chromium.base.Log;
+import org.monyhar.base.Callback;
+import org.monyhar.base.Log;
 
 import java.util.List;
 import java.util.Locale;

@@ -1,15 +1,15 @@
 // Copyright 2021 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.chrome.browser.merchant_viewer;
+package org.monyhar.chrome.browser.merchant_viewer;
 
-import org.chromium.base.Callback;
-import org.chromium.base.Log;
-import org.chromium.chrome.browser.merchant_viewer.proto.MerchantTrustSignalsOuterClass.MerchantTrustSignals;
-import org.chromium.chrome.browser.optimization_guide.OptimizationGuideBridgeFactory;
-import org.chromium.components.optimization_guide.OptimizationGuideDecision;
-import org.chromium.components.optimization_guide.proto.HintsProto;
-import org.chromium.content_public.browser.NavigationHandle;
+import org.monyhar.base.Callback;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.browser.merchant_viewer.proto.MerchantTrustSignalsOuterClass.MerchantTrustSignals;
+import org.monyhar.chrome.browser.optimization_guide.OptimizationGuideBridgeFactory;
+import org.monyhar.components.optimization_guide.OptimizationGuideDecision;
+import org.monyhar.components.optimization_guide.proto.HintsProto;
+import org.monyhar.content_public.browser.NavigationHandle;
 
 import java.io.IOException;
 import java.util.Arrays;

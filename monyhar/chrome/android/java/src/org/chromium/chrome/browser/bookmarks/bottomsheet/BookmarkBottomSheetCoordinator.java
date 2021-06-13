@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.bookmarks.bottomsheet;
+package org.monyhar.chrome.browser.bookmarks.bottomsheet;
 
 import android.content.Context;
 import android.text.SpannableString;
@@ -19,29 +19,29 @@ import androidx.core.util.Pair;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.Callback;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.bookmarks.BookmarkBridge.BookmarkItem;
-import org.chromium.chrome.browser.bookmarks.BookmarkModel;
-import org.chromium.chrome.browser.bookmarks.BookmarkUtils;
-import org.chromium.chrome.browser.bookmarks.bottomsheet.BookmarkBottomSheetItemProperties.ItemType;
-import org.chromium.chrome.browser.feature_engagement.TrackerFactory;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.bookmarks.BookmarkId;
-import org.chromium.components.bookmarks.BookmarkType;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController.StateChangeReason;
-import org.chromium.components.browser_ui.bottomsheet.EmptyBottomSheetObserver;
-import org.chromium.components.feature_engagement.FeatureConstants;
-import org.chromium.components.feature_engagement.Tracker;
-import org.chromium.ui.modelutil.LayoutViewBuilder;
-import org.chromium.ui.modelutil.MVCListAdapter.ListItem;
-import org.chromium.ui.modelutil.MVCListAdapter.ModelList;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.SimpleRecyclerViewAdapter;
-import org.chromium.ui.text.SpanApplier;
-import org.chromium.ui.text.SpanApplier.SpanInfo;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.bookmarks.BookmarkBridge.BookmarkItem;
+import org.monyhar.chrome.browser.bookmarks.BookmarkModel;
+import org.monyhar.chrome.browser.bookmarks.BookmarkUtils;
+import org.monyhar.chrome.browser.bookmarks.bottomsheet.BookmarkBottomSheetItemProperties.ItemType;
+import org.monyhar.chrome.browser.feature_engagement.TrackerFactory;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.bookmarks.BookmarkId;
+import org.monyhar.components.bookmarks.BookmarkType;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController.StateChangeReason;
+import org.monyhar.components.browser_ui.bottomsheet.EmptyBottomSheetObserver;
+import org.monyhar.components.feature_engagement.FeatureConstants;
+import org.monyhar.components.feature_engagement.Tracker;
+import org.monyhar.ui.modelutil.LayoutViewBuilder;
+import org.monyhar.ui.modelutil.MVCListAdapter.ListItem;
+import org.monyhar.ui.modelutil.MVCListAdapter.ModelList;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.SimpleRecyclerViewAdapter;
+import org.monyhar.ui.text.SpanApplier;
+import org.monyhar.ui.text.SpanApplier.SpanInfo;
 
 import java.util.List;
 
@@ -81,9 +81,9 @@ public class BookmarkBottomSheetCoordinator {
 
         // Load bookmark model data into recycler view.
         View contentView = LayoutInflater.from(mContext).inflate(
-                org.chromium.chrome.R.layout.bookmark_bottom_sheet, /*root=*/null);
+                org.monyhar.chrome.R.layout.bookmark_bottom_sheet, /*root=*/null);
         RecyclerView sheetItemListView =
-                contentView.findViewById(org.chromium.chrome.R.id.sheet_item_list);
+                contentView.findViewById(org.monyhar.chrome.R.id.sheet_item_list);
         SimpleRecyclerViewAdapter adapter = new SimpleRecyclerViewAdapter(loadTopLevelFolders());
         adapter.registerType(ItemType.FOLDER_ROW,
                 new LayoutViewBuilder(R.layout.bookmark_bottom_sheet_folder_row),

@@ -64,7 +64,7 @@ std::string GetAuthorizationCodeUri() {
 }
 @end
 
-// This is the chromium version of the menu view controller. This will
+// This is the monyhar version of the menu view controller. This will
 // launch a web view to login and collect an oauth token to be able to login to
 // the app without the standard google login flow. It also loads and shows all
 // other menu items from SideMenuItemsProvider.

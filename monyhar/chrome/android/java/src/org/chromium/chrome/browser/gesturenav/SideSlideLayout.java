@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.gesturenav;
+package org.monyhar.chrome.browser.gesturenav;
 
 import android.content.Context;
 import android.view.HapticFeedbackConstants;
@@ -17,9 +17,9 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.ScaleAnimation;
 import android.view.animation.Transformation;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.gesturenav.NavigationBubble.CloseTarget;
-import org.chromium.components.browser_ui.widget.animation.Interpolators;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.gesturenav.NavigationBubble.CloseTarget;
+import org.monyhar.components.browser_ui.widget.animation.Interpolators;
 
 /**
  * The SideSlideLayout can be used whenever the user navigates the contents
@@ -27,7 +27,7 @@ import org.chromium.components.browser_ui.widget.animation.Interpolators;
  * in reaction to the gesture which, if goes over a threshold, triggers navigation.
  * The caller that instantiates this view should add an {@link #OnNavigateListener}
  * to be notified whenever the gesture is completed.
- * Based on {@link org.chromium.third_party.android.swiperefresh.SwipeRefreshLayout}
+ * Based on {@link org.monyhar.third_party.android.swiperefresh.SwipeRefreshLayout}
  * and modified accordingly to support horizontal gesture.
  */
 public class SideSlideLayout extends ViewGroup {

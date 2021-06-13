@@ -231,8 +231,8 @@ TEST_F(SSLErrorClassificationTest, LevenshteinDistance) {
   EXPECT_EQ(2u, ssl_errors::GetLevenshteinDistance("unclear", "nuclear"));
   EXPECT_EQ(2u, ssl_errors::GetLevenshteinDistance("nuclear", "unclear"));
 
-  EXPECT_EQ(3u, ssl_errors::GetLevenshteinDistance("chrome", "chromium"));
-  EXPECT_EQ(3u, ssl_errors::GetLevenshteinDistance("chromium", "chrome"));
+  EXPECT_EQ(3u, ssl_errors::GetLevenshteinDistance("chrome", "monyhar"));
+  EXPECT_EQ(3u, ssl_errors::GetLevenshteinDistance("monyhar", "chrome"));
 
   EXPECT_EQ(4u, ssl_errors::GetLevenshteinDistance("", "abcd"));
   EXPECT_EQ(4u, ssl_errors::GetLevenshteinDistance("abcd", ""));

@@ -7,14 +7,14 @@ Additional info on the tool itself is available at
 https://clang.llvm.org/docs/AddressSanitizer.html.
 
 For the memory leak detector built into ASan, see
-[LeakSanitizer](https://sites.google.com/a/chromium.org/dev/developers/testing/leaksanitizer).
+[LeakSanitizer](https://sites.google.com/a/monyhar.org/dev/developers/testing/leaksanitizer).
 If you want to debug memory leaks, please refer to the instructions on that page
 instead.
 
 ## Buildbots and trybots
 
 The [Chromium Memory
-waterfall](https://ci.chromium.org/p/chromium/g/chromium.memory/console)
+waterfall](https://ci.monyhar.org/p/monyhar/g/monyhar.memory/console)
 contains buildbots running Chromium tests under ASan on Linux (Linux ASan/LSan
 bots for the regular Linux build, Linux Chromium OS ASan for the chromeos=1
 build running on Linux), macOS, Chromium OS. Linux and Linux Chromium OS bots
@@ -31,10 +31,10 @@ tests including browser\_tests and content\_browsertests).
 ## Pre-built Chrome binaries
 
 You can grab fresh Chrome binaries built with ASan
-[here](https://commondatastorage.googleapis.com/chromium-browser-asan/index.html).
+[here](https://commondatastorage.googleapis.com/monyhar-browser-asan/index.html).
 The lists of ASan binaries are _very_ long, but you can filter down to more
 specific releases by specifying a prefix like
-[linux-debug/asan-linux-debug-83](https://commondatastorage.googleapis.com/chromium-browser-asan/index.html?prefix=linux-debug/asan-linux-debug-83).
+[linux-debug/asan-linux-debug-83](https://commondatastorage.googleapis.com/monyhar-browser-asan/index.html?prefix=linux-debug/asan-linux-debug-83).
 This is useful for finding a build for a specific revision, since filenames are of
 the form `asan-<platform>-<buildtype>-<revision>` (but not every revision has an
 archived ASan build).
@@ -91,7 +91,7 @@ in order to enable the `--verify-heap` command line flag for v8 in Release build
 that is compatible with the sandbox. However, this is not compatible with
 LeakSanitizer. If you want to debug memory leaks, please use the instructions on
 the
-[LeakSanitizer](https://sites.google.com/a/chromium.org/dev/developers/testing/leaksanitizer)
+[LeakSanitizer](https://sites.google.com/a/monyhar.org/dev/developers/testing/leaksanitizer)
 page instead.
 
 Now, check that the tool works. Run the following:
@@ -161,7 +161,7 @@ everything else is.
 To do this, remove `enable_nacl=false` from your `args.gn`, and define
 `NACL_DANGEROUS_SKIP_QUALIFICATION_TEST=1` in your environment at run time.
 
-Pipe chromium output (stderr) through ``tools/valgrind/asan/asan_symbolize.py
+Pipe monyhar output (stderr) through ``tools/valgrind/asan/asan_symbolize.py
 `pwd`/`` to get function names and line numbers in ASan reports.
 If you're seeing crashes within `nacl_helper_bootstrap`, try deleting
 `out/Release/nacl_helper`.
@@ -237,7 +237,7 @@ https://crbug.com/324207 for some context.
 
 First, you need to install the 32-bit chroot environment using the
 `build/install-chroot.sh` script (as described in
-https://code.google.com/p/chromium/wiki/LinuxBuild32On64). Second, install the
+https://code.google.com/p/monyhar/wiki/LinuxBuild32On64). Second, install the
 build deps:
 ```shell
 precise32 build/install-build-deps.sh  \

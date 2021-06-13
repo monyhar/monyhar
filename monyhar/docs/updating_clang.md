@@ -6,7 +6,7 @@ just regular LLVM binaries built at a fixed upstream revision. This document
 describes how to build a package at a newer revision and update Chromium to it.
 An archive of all packages built so far is at https://is.gd/chromeclang
 
-1.  Check that https://ci.chromium.org/p/chromium/g/chromium.clang/console
+1.  Check that https://ci.monyhar.org/p/monyhar/g/monyhar.clang/console
     looks reasonably green. Red bots with seemingly normal test failures are
     usually ok, that likely means the test is broken with the stable Clang as
     well.
@@ -19,7 +19,7 @@ An archive of all packages built so far is at https://is.gd/chromeclang
     bug at g.co/bugatrooper if you don't have these already (e.g.,
     https://crbug.com/1034081). Then it will push the packages to goma. If you
     do not have the necessary credentials to do the upload, ask
-    clang@chromium.org to find someone who does.
+    clang@monyhar.org to find someone who does.
     *   Alternatively, to create your own roll CL, you can manually run
 	`tools/clang/scripts/upload_revision.py` with a recent upstream LLVM
 	commit hash as the argument. After the `*_upload_clang` trybots are

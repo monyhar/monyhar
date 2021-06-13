@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
 import androidx.annotation.Nullable;
 
@@ -88,7 +88,7 @@ public abstract class RequestFinishedInfo {
      *
      * Most timing metrics are taken from
      * <a
-     * href="https://cs.chromium.org/chromium/src/net/base/load_timing_info.h">LoadTimingInfo</a>,
+     * href="https://cs.monyhar.org/monyhar/src/net/base/load_timing_info.h">LoadTimingInfo</a>,
      * which holds the information for <a href="http://w3c.github.io/navigation-timing/"></a> and
      * <a href="https://www.w3.org/TR/resource-timing/"></a>.
      *

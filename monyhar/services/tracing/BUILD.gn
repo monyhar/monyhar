@@ -168,13 +168,13 @@ source_set("tests") {
 if (is_android) {
   generate_jni("jni_headers") {
     testonly = true
-    sources = [ "android/test/src/org/chromium/tracing/UnwindTestHelper.java" ]
+    sources = [ "android/test/src/org/monyhar/tracing/UnwindTestHelper.java" ]
   }
 
   android_library("tracing_test_helper_java") {
     testonly = true
     deps = [ "//base:base_java" ]
-    sources = [ "android/test/src/org/chromium/tracing/UnwindTestHelper.java" ]
+    sources = [ "android/test/src/org/monyhar/tracing/UnwindTestHelper.java" ]
   }
 }
 

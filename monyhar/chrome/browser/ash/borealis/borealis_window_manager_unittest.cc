@@ -39,7 +39,7 @@ TEST_F(BorealisWindowManagerTest, NonBorealisWindowHasNoId) {
 TEST_F(BorealisWindowManagerTest, BorealisWindowHasAnId) {
   BorealisWindowManager window_manager(profile());
   std::unique_ptr<aura::Window> window =
-      MakeWindow("org.chromium.borealis.foobarbaz");
+      MakeWindow("org.monyhar.borealis.foobarbaz");
   EXPECT_NE(window_manager.GetShelfAppId(window.get()), "");
 }
 
@@ -52,7 +52,7 @@ TEST_F(BorealisWindowManagerTest, IdDetectionDoesNotImplyTracking) {
   window_manager.AddObserver(&life_observer);
 
   std::unique_ptr<aura::Window> window =
-      MakeWindow("org.chromium.borealis.foobarbaz");
+      MakeWindow("org.monyhar.borealis.foobarbaz");
   window_manager.GetShelfAppId(window.get());
 
   window_manager.RemoveObserver(&anon_observer);
@@ -85,7 +85,7 @@ TEST_F(BorealisWindowManagerTest, ObserverCalledForAnonymousApp) {
   BorealisWindowManager window_manager(profile());
   window_manager.AddObserver(&observer);
   std::unique_ptr<ScopedTestWindow> window = MakeAndTrackWindow(
-      "org.chromium.borealis.anonymous_app", &window_manager);
+      "org.monyhar.borealis.anonymous_app", &window_manager);
 
   EXPECT_CALL(observer,
               OnAnonymousAppRemoved(testing::ContainsRegex("anonymous_app")));
@@ -108,18 +108,18 @@ TEST_F(BorealisWindowManagerTest, LifetimeObserverTracksWindows) {
   EXPECT_CALL(observer, OnAppStarted(_));
   EXPECT_CALL(observer, OnWindowStarted(_, _));
   std::unique_ptr<ScopedTestWindow> first_foo =
-      MakeAndTrackWindow("org.chromium.borealis.foo", &window_manager);
+      MakeAndTrackWindow("org.monyhar.borealis.foo", &window_manager);
 
   // A window for the same app only starts that window.
   EXPECT_CALL(observer, OnWindowStarted(_, _));
   std::unique_ptr<ScopedTestWindow> second_foo =
-      MakeAndTrackWindow("org.chromium.borealis.foo", &window_manager);
+      MakeAndTrackWindow("org.monyhar.borealis.foo", &window_manager);
 
   // Whereas a new app starts both the app and the window.
   EXPECT_CALL(observer, OnAppStarted(_));
   EXPECT_CALL(observer, OnWindowStarted(_, _));
   std::unique_ptr<ScopedTestWindow> only_bar =
-      MakeAndTrackWindow("org.chromium.borealis.bar", &window_manager);
+      MakeAndTrackWindow("org.monyhar.borealis.bar", &window_manager);
 
   // Deleting an app window while one still exists does not end the app.
   EXPECT_CALL(observer, OnWindowFinished(_, _));
@@ -150,9 +150,9 @@ TEST_F(BorealisWindowManagerTest, HandlesMultipleAnonymousWindows) {
   EXPECT_CALL(observer, OnAnonymousAppAdded(_, _)).Times(1);
 
   std::unique_ptr<ScopedTestWindow> window1 = MakeAndTrackWindow(
-      "org.chromium.borealis.anonymous_app", &window_manager);
+      "org.monyhar.borealis.anonymous_app", &window_manager);
   std::unique_ptr<ScopedTestWindow> window2 = MakeAndTrackWindow(
-      "org.chromium.borealis.anonymous_app", &window_manager);
+      "org.monyhar.borealis.anonymous_app", &window_manager);
 
   // We only expect to see the app removed after the last window closes.
   window1.reset();
@@ -180,7 +180,7 @@ TEST_F(BorealisWindowManagerTest, AnonymousObserverNotCalledForKnownApp) {
   BorealisWindowManager window_manager(profile());
   window_manager.AddObserver(&observer);
   std::unique_ptr<ScopedTestWindow> window =
-      MakeAndTrackWindow("org.chromium.borealis.wmclass.foo", &window_manager);
+      MakeAndTrackWindow("org.monyhar.borealis.wmclass.foo", &window_manager);
 
   window_manager.RemoveObserver(&observer);
 }

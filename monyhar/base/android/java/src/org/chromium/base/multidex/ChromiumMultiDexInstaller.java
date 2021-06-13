@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.multidex;
+package org.monyhar.base.multidex;
 
 import android.content.Context;
 import android.os.Build;
@@ -10,8 +10,8 @@ import android.os.Build;
 import androidx.annotation.VisibleForTesting;
 import androidx.multidex.MultiDex;
 
-import org.chromium.base.Log;
-import org.chromium.base.annotations.MainDex;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.MainDex;
 
 /**
  *  Performs multidex installation for non-isolated processes.

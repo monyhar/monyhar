@@ -115,7 +115,7 @@
 #include "chrome/common/net/safe_search_util.h"
 #include "chrome/common/pref_names.h"
 #include "chrome/common/url_constants.h"
-#include "chrome/grit/chromium_strings.h"
+#include "chrome/grit/monyhar_strings.h"
 #include "components/background_sync/background_sync_controller_impl.h"
 #include "components/bookmarks/browser/bookmark_model.h"
 #include "components/content_settings/core/browser/cookie_settings.h"
@@ -1513,7 +1513,7 @@ GURL ProfileImpl::GetHomePage() {
       *base::CommandLine::ForCurrentProcess();
   if (command_line.HasSwitch(switches::kHomePage)) {
     // TODO(evanm): clean up usage of DIR_CURRENT.
-    //   http://code.google.com/p/chromium/issues/detail?id=60630
+    //   http://code.google.com/p/monyhar/issues/detail?id=60630
     // For now, allow this code to call getcwd().
     base::ThreadRestrictions::ScopedAllowIO allow_io;
 

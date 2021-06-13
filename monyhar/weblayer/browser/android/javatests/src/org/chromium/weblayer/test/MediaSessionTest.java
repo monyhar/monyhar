@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer.test;
+package org.monyhar.weblayer.test;
 
-import static org.chromium.weblayer.R.id.weblayer_media_session_notification;
+import static org.monyhar.weblayer.R.id.weblayer_media_session_notification;
 
 import android.annotation.TargetApi;
 import android.app.Notification;
@@ -20,11 +20,11 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.MinAndroidSdkLevel;
-import org.chromium.weblayer.shell.InstrumentationActivity;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.MinAndroidSdkLevel;
+import org.monyhar.weblayer.shell.InstrumentationActivity;
 
 /**
  * Tests that MediaSession works as expected.

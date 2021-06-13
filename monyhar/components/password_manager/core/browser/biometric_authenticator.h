@@ -17,7 +17,7 @@ namespace password_manager {
 // These values are persisted to logs. Entries should not be renumbered and
 // numeric values should never be reused.
 //
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.password_manager
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.password_manager
 enum class BiometricsAvailability {
   kOtherError = 0,
   kAvailable = 1,

@@ -145,7 +145,7 @@ TEST_F(ServiceProcessStateTest, AutoRun) {
 #if BUILDFLAG(GOOGLE_CHROME_BRANDING)
   std::string base_desktop_name = "google-chrome-service.desktop";
 #else  // BUILDFLAG(CHROMIUM_BRANDING)
-  std::string base_desktop_name = "chromium-service.desktop";
+  std::string base_desktop_name = "monyhar-service.desktop";
 #endif
   std::string exec_value;
   EXPECT_TRUE(AutoStart::GetAutostartFileValue(

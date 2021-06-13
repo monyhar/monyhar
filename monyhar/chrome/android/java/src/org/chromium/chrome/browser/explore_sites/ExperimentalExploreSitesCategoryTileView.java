@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.explore_sites;
+package org.monyhar.chrome.browser.explore_sites;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -14,10 +14,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.R;
-import org.chromium.components.browser_ui.widget.RoundedIconGenerator;
-import org.chromium.ui.base.ViewUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.components.browser_ui.widget.RoundedIconGenerator;
+import org.monyhar.ui.base.ViewUtils;
 
 /**
  * The View representing a single explore sites category.

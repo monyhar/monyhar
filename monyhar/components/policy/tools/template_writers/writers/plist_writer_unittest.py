@@ -96,7 +96,7 @@ class PListWriterUnittest(writer_unittest_common.WriterUnittestCommon):
       }'''
 
     output = self.GetOutput(policy_json, {
-        '_chromium': '1',
+        '_monyhar': '1',
         'mac_bundle_id': 'com.example.Test'
     }, 'plist')
     expected_output = self._GetExpectedOutputs('Chromium', 'com.example.Test',
@@ -115,13 +115,13 @@ class PListWriterUnittest(writer_unittest_common.WriterUnittestCommon):
 
     output = self.GetOutput(
         policy_json, {
-            '_chromium': '1',
+            '_monyhar': '1',
             'mac_bundle_id': 'com.example.Test',
             'version': '39.0.0.0'
         }, 'plist')
     expected_output = self._GetExpectedOutputsWithVersion(
         'Chromium', 'com.example.Test', '<array/>',
-        'chromium version: 39.0.0.0')
+        'monyhar version: 39.0.0.0')
     self.assertEquals(output.strip(), expected_output.strip())
 
   def testMainPolicy(self):
@@ -149,7 +149,7 @@ class PListWriterUnittest(writer_unittest_common.WriterUnittestCommon):
         'messages': {}
       }'''
     output = self.GetOutput(policy_json, {
-        '_chromium': '1',
+        '_monyhar': '1',
         'mac_bundle_id': 'com.example.Test'
     }, 'plist')
     expected_output = self._GetExpectedOutputs(
@@ -199,7 +199,7 @@ class PListWriterUnittest(writer_unittest_common.WriterUnittestCommon):
         'messages': {}
       }'''
     output = self.GetOutput(policy_json, {
-        '_chromium': '1',
+        '_monyhar': '1',
         'mac_bundle_id': 'com.example.Test'
     }, 'plist')
     expected_output = self._GetExpectedOutputs(
@@ -251,7 +251,7 @@ class PListWriterUnittest(writer_unittest_common.WriterUnittestCommon):
         'messages': {}
       }'''
     output = self.GetOutput(policy_json, {
-        '_chromium': '1',
+        '_monyhar': '1',
         'mac_bundle_id': 'com.example.Test'
     }, 'plist')
     expected_output = self._GetExpectedOutputs(
@@ -298,7 +298,7 @@ class PListWriterUnittest(writer_unittest_common.WriterUnittestCommon):
         'messages': {},
       }'''
     output = self.GetOutput(policy_json, {
-        '_chromium': '1',
+        '_monyhar': '1',
         'mac_bundle_id': 'com.example.Test'
     }, 'plist')
     expected_output = self._GetExpectedOutputs(
@@ -349,7 +349,7 @@ class PListWriterUnittest(writer_unittest_common.WriterUnittestCommon):
         'messages': {},
       }'''
     output = self.GetOutput(policy_json, {
-        '_chromium': '1',
+        '_monyhar': '1',
         'mac_bundle_id': 'com.example.Test'
     }, 'plist')
     expected_output = self._GetExpectedOutputs(
@@ -412,7 +412,7 @@ class PListWriterUnittest(writer_unittest_common.WriterUnittestCommon):
         'messages': {},
       }'''
     output = self.GetOutput(policy_json, {
-        '_chromium': '1',
+        '_monyhar': '1',
         'mac_bundle_id': 'com.example.Test'
     }, 'plist')
     expected_output = self._GetExpectedOutputs(
@@ -466,7 +466,7 @@ class PListWriterUnittest(writer_unittest_common.WriterUnittestCommon):
         'messages': {},
       }'''
     output = self.GetOutput(policy_json, {
-        '_chromium': '1',
+        '_monyhar': '1',
         'mac_bundle_id': 'com.example.Test'
     }, 'plist')
     expected_output = self._GetExpectedOutputs(
@@ -625,7 +625,7 @@ class PListWriterUnittest(writer_unittest_common.WriterUnittestCommon):
         'messages': {},
       }'''
     output = self.GetOutput(policy_json, {
-        '_chromium': '1',
+        '_monyhar': '1',
         'mac_bundle_id': 'com.example.Test'
     }, 'plist')
     expected_output = self._GetExpectedOutputs(
@@ -672,7 +672,7 @@ class PListWriterUnittest(writer_unittest_common.WriterUnittestCommon):
         'messages': {},
       }'''
     output = self.GetOutput(policy_json, {
-        '_chromium': '1',
+        '_monyhar': '1',
         'mac_bundle_id': 'com.example.Test'
     }, 'plist')
     expected_output = self._GetExpectedOutputs(

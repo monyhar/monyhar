@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting;
+package org.monyhar.chromoting;
 
-import org.chromium.chromoting.jni.TouchEventData;
+import org.monyhar.chromoting.jni.TouchEventData;
 
 import java.util.ArrayList;
 

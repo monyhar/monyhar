@@ -106,7 +106,7 @@ struct AutocompleteMatch {
     // passing the values around, so the compiler doesn't complain.
     //
     // A Java counterpart will be generated for this enum.
-    // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.omnibox
+    // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.omnibox
     // GENERATED_JAVA_CLASS_NAME_OVERRIDE: MatchClassificationStyle
     // clang-format off
     enum Style {

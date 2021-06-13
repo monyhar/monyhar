@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.language.settings;
+package org.monyhar.chrome.browser.language.settings;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -14,24 +14,24 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragmentCompat;
 
-import org.chromium.base.BuildInfo;
-import org.chromium.base.Log;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.language.AppLocaleUtils;
-import org.chromium.chrome.browser.language.GlobalAppLocaleController;
-import org.chromium.chrome.browser.language.LanguageSplitInstaller;
-import org.chromium.chrome.browser.language.R;
-import org.chromium.chrome.browser.preferences.Pref;
-import org.chromium.chrome.browser.preferences.PrefChangeRegistrar;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.settings.ChromeManagedPreferenceDelegate;
-import org.chromium.chrome.browser.translate.TranslateBridge;
-import org.chromium.components.browser_ui.settings.ChromeSwitchPreference;
-import org.chromium.components.browser_ui.settings.FragmentSettingsLauncher;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.browser_ui.settings.SettingsUtils;
-import org.chromium.components.prefs.PrefService;
-import org.chromium.components.user_prefs.UserPrefs;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.language.AppLocaleUtils;
+import org.monyhar.chrome.browser.language.GlobalAppLocaleController;
+import org.monyhar.chrome.browser.language.LanguageSplitInstaller;
+import org.monyhar.chrome.browser.language.R;
+import org.monyhar.chrome.browser.preferences.Pref;
+import org.monyhar.chrome.browser.preferences.PrefChangeRegistrar;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.settings.ChromeManagedPreferenceDelegate;
+import org.monyhar.chrome.browser.translate.TranslateBridge;
+import org.monyhar.components.browser_ui.settings.ChromeSwitchPreference;
+import org.monyhar.components.browser_ui.settings.FragmentSettingsLauncher;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.components.prefs.PrefService;
+import org.monyhar.components.user_prefs.UserPrefs;
 
 /**
  * Settings fragment that displays information about Chrome languages, which allow users to

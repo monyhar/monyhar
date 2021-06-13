@@ -1,8 +1,8 @@
-gab@chromium.org
-isherman@chromium.org
+gab@monyhar.org
+isherman@monyhar.org
 
 # For NSS logic.
-per-file nss_*=engedy@chromium.org
+per-file nss_*=engedy@monyhar.org
 
 per-file *.mojom=set noparent
 per-file *.mojom=file://ipc/SECURITY_OWNERS

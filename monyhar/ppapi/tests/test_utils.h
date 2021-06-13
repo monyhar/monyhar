@@ -298,7 +298,7 @@ do { \
 
 /*
  * A set of macros to use for platform detection. These were largely copied
- * from chromium's build_config.h.
+ * from monyhar's build_config.h.
  */
 #if defined(__APPLE__)
 #define PPAPI_OS_MACOSX 1

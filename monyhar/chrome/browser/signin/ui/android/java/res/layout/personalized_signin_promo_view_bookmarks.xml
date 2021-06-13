@@ -3,7 +3,7 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
 
-<org.chromium.chrome.browser.signin.ui.PersonalizedSigninPromoView
+<org.monyhar.chrome.browser.signin.ui.PersonalizedSigninPromoView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/signin_promo_view_container"
     android:layout_width="match_parent"
@@ -27,4 +27,4 @@
 
     <include layout="@layout/personalized_signin_promo_view_body"/>
 
-</org.chromium.chrome.browser.signin.ui.PersonalizedSigninPromoView>
+</org.monyhar.chrome.browser.signin.ui.PersonalizedSigninPromoView>

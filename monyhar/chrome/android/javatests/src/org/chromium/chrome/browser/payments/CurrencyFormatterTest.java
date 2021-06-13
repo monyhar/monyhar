@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments;
+package org.monyhar.chrome.browser.payments;
 
 import androidx.test.filters.MediumTest;
 
@@ -11,10 +11,10 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.LocaleUtils;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeBrowserTestRule;
-import org.chromium.components.payments.CurrencyFormatter;
+import org.monyhar.base.LocaleUtils;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeBrowserTestRule;
+import org.monyhar.components.payments.CurrencyFormatter;
 
 import java.util.Arrays;
 import java.util.List;

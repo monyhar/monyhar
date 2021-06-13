@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_check;
+package org.monyhar.chrome.browser.password_check;
 
 import android.util.Pair;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.chrome.browser.password_check.helper.PasswordCheckIconHelper.FaviconOrFallback;
-import org.chromium.ui.modelutil.ListModel;
-import org.chromium.ui.modelutil.MVCListAdapter;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.chrome.browser.password_check.helper.PasswordCheckIconHelper.FaviconOrFallback;
+import org.monyhar.ui.modelutil.ListModel;
+import org.monyhar.ui.modelutil.MVCListAdapter;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

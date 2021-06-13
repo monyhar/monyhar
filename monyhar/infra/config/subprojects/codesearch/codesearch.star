@@ -15,29 +15,29 @@ luci.bucket(
         ),
         acl.entry(
             roles = acl.BUILDBUCKET_TRIGGERER,
-            groups = "project-chromium-tryjob-access",
+            groups = "project-monyhar-tryjob-access",
         ),
         acl.entry(
             roles = acl.BUILDBUCKET_OWNER,
-            groups = "service-account-chromium-tryserver",
+            groups = "service-account-monyhar-tryserver",
         ),
     ],
 )
 
 try_.defaults.bucket.set("codesearch")
 try_.defaults.build_numbers.set(True)
-try_.defaults.builder_group.set("tryserver.chromium.codesearch")
+try_.defaults.builder_group.set("tryserver.monyhar.codesearch")
 try_.defaults.builderless.set(True)
 try_.defaults.cores.set(8)
 try_.defaults.cpu.set(cpu.X86_64)
 try_.defaults.cq_group.set("cq")
-try_.defaults.executable.set("recipe:chromium_codesearch")
+try_.defaults.executable.set("recipe:monyhar_codesearch")
 try_.defaults.execution_timeout.set(9 * time.hour)
 try_.defaults.expiration_timeout.set(2 * time.hour)
 try_.defaults.goma_backend.set(goma.backend.RBE_PROD)
 try_.defaults.os.set(os.LINUX_BIONIC_SWITCH_TO_DEFAULT)
-try_.defaults.pool.set("luci.chromium.try")
-try_.defaults.service_account.set("chromium-try-builder@chops-service-accounts.iam.gserviceaccount.com")
+try_.defaults.pool.set("luci.monyhar.try")
+try_.defaults.service_account.set("monyhar-try-builder@chops-service-accounts.iam.gserviceaccount.com")
 try_.defaults.swarming_tags.set(["vpython:native-python-wrapper"])
 
 try_.defaults.caches.set([
@@ -48,7 +48,7 @@ try_.defaults.caches.set([
 ])
 
 consoles.list_view(
-    name = "tryserver.chromium.codesearch",
+    name = "tryserver.monyhar.codesearch",
 )
 
 try_.builder(
@@ -56,7 +56,7 @@ try_.builder(
 )
 
 try_.builder(
-    name = "gen-chromiumos-try",
+    name = "gen-monyharos-try",
 )
 
 try_.builder(

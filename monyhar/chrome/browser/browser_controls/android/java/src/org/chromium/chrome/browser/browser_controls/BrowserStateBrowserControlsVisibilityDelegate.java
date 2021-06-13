@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browser_controls;
+package org.monyhar.chrome.browser.browser_controls;
 
 import android.os.Handler;
 import android.os.SystemClock;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.lifetime.Destroyable;
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.cc.input.BrowserControlsState;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.components.browser_ui.util.BrowserControlsVisibilityDelegate;
-import org.chromium.ui.util.TokenHolder;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.lifetime.Destroyable;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.cc.input.BrowserControlsState;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.components.browser_ui.util.BrowserControlsVisibilityDelegate;
+import org.monyhar.ui.util.TokenHolder;
 
 /**
  * Determines the desired visibility of the browser controls based on the current state of the

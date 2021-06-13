@@ -171,7 +171,7 @@ const PackageGraphPage = {
     if (this.displaySettingsData.nodeFilterData.filterList.length === 0) {
       // Default package to be displayed when the page is first loaded.
       [
-        'org.chromium.chrome.browser.tab',
+        'org.monyhar.chrome.browser.tab',
       ].forEach(nodeName => this.filterAddOrCheckNode(nodeName));
     }
   },

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.ui.controller.trustedwebactivity;
+package org.monyhar.chrome.browser.browserservices.ui.controller.trustedwebactivity;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyLong;
@@ -22,13 +22,13 @@ import org.mockito.MockitoAnnotations;
 import org.robolectric.Robolectric;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.ActivityTabProvider;
-import org.chromium.chrome.browser.browserservices.TrustedWebActivityUmaRecorder;
-import org.chromium.chrome.browser.browserservices.ui.controller.CurrentPageVerifier;
-import org.chromium.chrome.browser.browserservices.ui.controller.CurrentPageVerifier.VerificationState;
-import org.chromium.chrome.browser.browserservices.ui.controller.CurrentPageVerifier.VerificationStatus;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.ActivityTabProvider;
+import org.monyhar.chrome.browser.browserservices.TrustedWebActivityUmaRecorder;
+import org.monyhar.chrome.browser.browserservices.ui.controller.CurrentPageVerifier;
+import org.monyhar.chrome.browser.browserservices.ui.controller.CurrentPageVerifier.VerificationState;
+import org.monyhar.chrome.browser.browserservices.ui.controller.CurrentPageVerifier.VerificationStatus;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
 
 import java.util.concurrent.TimeUnit;
 

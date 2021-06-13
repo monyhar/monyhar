@@ -23,7 +23,7 @@
 //
 // ChangeLog:
 // 2016-07-22 - Initial commit and adaption to use PagedArray.
-//                --Samuel Huang <huangs@chromium.org>
+//                --Samuel Huang <huangs@monyhar.org>
 
 #ifndef COURGETTE_BSDIFF_THIRD_PARTY_DIVSUFSORT_H_
 #define COURGETTE_BSDIFF_THIRD_PARTY_DIVSUFSORT_H_

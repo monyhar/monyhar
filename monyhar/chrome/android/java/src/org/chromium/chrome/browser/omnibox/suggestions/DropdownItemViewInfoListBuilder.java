@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions;
+package org.monyhar.chrome.browser.omnibox.suggestions;
 
 import android.content.Context;
 import android.util.Pair;
@@ -12,34 +12,34 @@ import androidx.annotation.Nullable;
 import androidx.annotation.Px;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcher;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcherConfig;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcherFactory;
-import org.chromium.chrome.browser.omnibox.UrlBarEditingTextStateProvider;
-import org.chromium.chrome.browser.omnibox.suggestions.answer.AnswerSuggestionProcessor;
-import org.chromium.chrome.browser.omnibox.suggestions.basic.BasicSuggestionProcessor;
-import org.chromium.chrome.browser.omnibox.suggestions.basic.BasicSuggestionProcessor.BookmarkState;
-import org.chromium.chrome.browser.omnibox.suggestions.clipboard.ClipboardSuggestionProcessor;
-import org.chromium.chrome.browser.omnibox.suggestions.editurl.EditUrlSuggestionProcessor;
-import org.chromium.chrome.browser.omnibox.suggestions.entity.EntitySuggestionProcessor;
-import org.chromium.chrome.browser.omnibox.suggestions.header.HeaderProcessor;
-import org.chromium.chrome.browser.omnibox.suggestions.mostvisited.MostVisitedTilesProcessor;
-import org.chromium.chrome.browser.omnibox.suggestions.tail.TailSuggestionProcessor;
-import org.chromium.chrome.browser.omnibox.suggestions.tiles.TileSuggestionProcessor;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.share.ShareDelegate;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.browser_ui.util.ConversionUtils;
-import org.chromium.components.browser_ui.util.GlobalDiscardableReferencePool;
-import org.chromium.components.favicon.LargeIconBridge;
-import org.chromium.components.omnibox.AutocompleteMatch;
-import org.chromium.components.omnibox.AutocompleteResult;
-import org.chromium.components.omnibox.AutocompleteResult.GroupDetails;
-import org.chromium.components.query_tiles.QueryTile;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.Callback;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcher;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcherConfig;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcherFactory;
+import org.monyhar.chrome.browser.omnibox.UrlBarEditingTextStateProvider;
+import org.monyhar.chrome.browser.omnibox.suggestions.answer.AnswerSuggestionProcessor;
+import org.monyhar.chrome.browser.omnibox.suggestions.basic.BasicSuggestionProcessor;
+import org.monyhar.chrome.browser.omnibox.suggestions.basic.BasicSuggestionProcessor.BookmarkState;
+import org.monyhar.chrome.browser.omnibox.suggestions.clipboard.ClipboardSuggestionProcessor;
+import org.monyhar.chrome.browser.omnibox.suggestions.editurl.EditUrlSuggestionProcessor;
+import org.monyhar.chrome.browser.omnibox.suggestions.entity.EntitySuggestionProcessor;
+import org.monyhar.chrome.browser.omnibox.suggestions.header.HeaderProcessor;
+import org.monyhar.chrome.browser.omnibox.suggestions.mostvisited.MostVisitedTilesProcessor;
+import org.monyhar.chrome.browser.omnibox.suggestions.tail.TailSuggestionProcessor;
+import org.monyhar.chrome.browser.omnibox.suggestions.tiles.TileSuggestionProcessor;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.share.ShareDelegate;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.browser_ui.util.ConversionUtils;
+import org.monyhar.components.browser_ui.util.GlobalDiscardableReferencePool;
+import org.monyhar.components.favicon.LargeIconBridge;
+import org.monyhar.components.omnibox.AutocompleteMatch;
+import org.monyhar.components.omnibox.AutocompleteResult;
+import org.monyhar.components.omnibox.AutocompleteResult.GroupDetails;
+import org.monyhar.components.query_tiles.QueryTile;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.util.ArrayList;
 import java.util.List;

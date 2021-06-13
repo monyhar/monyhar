@@ -48,7 +48,7 @@ class GFX_EXPORT RenderingPipeline {
   virtual ~RenderingPipeline() = default;
 
   // Add to this pipeline a thread backed by base sequence manager, where
-  // |base::CurrentThread| works. Most threads in chromium should fall into
+  // |base::CurrentThread| works. Most threads in monyhar should fall into
   // this category.
   // This method is thread safe and can be called on any thread.
   virtual void AddSequenceManagerThread(

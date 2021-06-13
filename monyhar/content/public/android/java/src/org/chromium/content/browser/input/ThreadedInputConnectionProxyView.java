@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.input;
+package org.monyhar.content.browser.input;
 
 import android.content.Context;
 import android.os.Handler;
@@ -11,9 +11,9 @@ import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 
-import org.chromium.base.Log;
-import org.chromium.base.task.PostTask;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.base.Log;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;

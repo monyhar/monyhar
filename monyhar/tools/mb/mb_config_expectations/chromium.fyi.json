@@ -734,7 +734,7 @@
       "use_goma": true
     }
   },
-  "linux-ash-chromium-builder-fyi-rel": {
+  "linux-ash-monyhar-builder-fyi-rel": {
     "gn_args": {
       "ffmpeg_branding": "ChromeOS",
       "is_component_build": false,
@@ -826,7 +826,7 @@
       "use_javascript_coverage": true
     }
   },
-  "linux-chromium-tests-staging-builder": {
+  "linux-monyhar-tests-staging-builder": {
     "gn_args": {
       "is_component_build": false,
       "is_debug": false,

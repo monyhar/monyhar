@@ -7,7 +7,7 @@ network.
 
 NOTE: This implementation is **deprecated**, and to be replaced soon by the one
 found in `../../third_party/openscreen/src/cast/streaming/`. Contact
-jophba@chromium.org for details.
+jophba@monyhar.org for details.
 
 # Directory Breakdown
 

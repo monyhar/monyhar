@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.tail;
+package org.monyhar.chrome.browser.omnibox.suggestions.tail;
 
 import android.content.Context;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.omnibox.OmniboxSuggestionType;
-import org.chromium.chrome.browser.omnibox.suggestions.OmniboxSuggestionUiType;
-import org.chromium.chrome.browser.omnibox.suggestions.SuggestionHost;
-import org.chromium.chrome.browser.omnibox.suggestions.base.BaseSuggestionViewProcessor;
-import org.chromium.chrome.browser.omnibox.suggestions.base.SuggestionDrawableState;
-import org.chromium.chrome.browser.omnibox.suggestions.base.SuggestionSpannable;
-import org.chromium.components.omnibox.AutocompleteMatch;
-import org.chromium.ui.base.DeviceFormFactor;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.omnibox.OmniboxSuggestionType;
+import org.monyhar.chrome.browser.omnibox.suggestions.OmniboxSuggestionUiType;
+import org.monyhar.chrome.browser.omnibox.suggestions.SuggestionHost;
+import org.monyhar.chrome.browser.omnibox.suggestions.base.BaseSuggestionViewProcessor;
+import org.monyhar.chrome.browser.omnibox.suggestions.base.SuggestionDrawableState;
+import org.monyhar.chrome.browser.omnibox.suggestions.base.SuggestionSpannable;
+import org.monyhar.components.omnibox.AutocompleteMatch;
+import org.monyhar.ui.base.DeviceFormFactor;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /** A class that handles model and view creation for the tail suggestions. */
 public class TailSuggestionProcessor extends BaseSuggestionViewProcessor {

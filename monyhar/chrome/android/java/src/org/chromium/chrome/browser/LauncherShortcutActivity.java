@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -16,10 +16,10 @@ import android.os.Bundle;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.incognito.IncognitoUtils;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.incognito.IncognitoUtils;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -29,9 +29,9 @@ import java.util.List;
  * A helper activity for routing launcher shortcut intents.
  */
 public class LauncherShortcutActivity extends Activity {
-    public static final String ACTION_OPEN_NEW_TAB = "chromium.shortcut.action.OPEN_NEW_TAB";
+    public static final String ACTION_OPEN_NEW_TAB = "monyhar.shortcut.action.OPEN_NEW_TAB";
     public static final String ACTION_OPEN_NEW_INCOGNITO_TAB =
-            "chromium.shortcut.action.OPEN_NEW_INCOGNITO_TAB";
+            "monyhar.shortcut.action.OPEN_NEW_INCOGNITO_TAB";
     @VisibleForTesting
     static final String DYNAMIC_OPEN_NEW_INCOGNITO_TAB_ID = "dynamic-new-incognito-tab-shortcut";
 

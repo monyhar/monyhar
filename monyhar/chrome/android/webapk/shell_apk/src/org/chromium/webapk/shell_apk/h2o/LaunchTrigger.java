@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webapk.shell_apk.h2o;
+package org.monyhar.webapk.shell_apk.h2o;
 
 /**
  * Controls when to launch the WebAPK for {@link SplashActivity}.

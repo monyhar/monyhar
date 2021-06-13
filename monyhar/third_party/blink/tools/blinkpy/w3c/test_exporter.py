@@ -8,7 +8,7 @@ import logging
 
 from blinkpy.common.system.log_utils import configure_logging
 from blinkpy.w3c.local_wpt import LocalWPT
-from blinkpy.w3c.chromium_exportable_commits import exportable_commits_over_last_n_commits
+from blinkpy.w3c.monyhar_exportable_commits import exportable_commits_over_last_n_commits
 from blinkpy.w3c.common import (
     CHANGE_ID_FOOTER,
     WPT_GH_URL,
@@ -54,7 +54,7 @@ class TestExporter(object):
         if not (credentials.get('GH_USER') and credentials.get('GH_TOKEN')):
             _log.error('You must provide your GitHub credentials for this '
                        'script to work.')
-            _log.error('See https://chromium.googlesource.com/chromium/src'
+            _log.error('See https://monyhar.googlesource.com/monyhar/src'
                        '/+/main/docs/testing/web_platform_tests.md'
                        '#GitHub-credentials for instructions on how to set '
                        'your credentials up.')
@@ -84,7 +84,7 @@ class TestExporter(object):
 
         _log.info('Searching for exportable Chromium commits.')
         exportable_commits, git_errors = self.get_exportable_commits()
-        self.process_chromium_commits(exportable_commits)
+        self.process_monyhar_commits(exportable_commits)
         if git_errors:
             _log.info(
                 'Attention: The following errors have prevented some commits from being '
@@ -160,15 +160,15 @@ class TestExporter(object):
             _log.info('No in-flight PR found for CL. Creating...')
             self.create_or_update_pr_from_inflight_cl(cl)
 
-    def process_chromium_commits(self, exportable_commits):
+    def process_monyhar_commits(self, exportable_commits):
         for commit in exportable_commits:
-            self.process_chromium_commit(commit)
+            self.process_monyhar_commit(commit)
 
-    def process_chromium_commit(self, commit):
+    def process_monyhar_commit(self, commit):
         _log.info('Found exportable Chromium commit: %s %s', commit.subject(),
                   commit.sha)
 
-        pull_request = self.wpt_github.pr_for_chromium_commit(commit)
+        pull_request = self.wpt_github.pr_for_monyhar_commit(commit)
         if pull_request:
             pr_url = '{}pull/{}'.format(WPT_GH_URL, pull_request.number)
             _log.info('In-flight PR found: %s', pr_url)
@@ -256,7 +256,7 @@ class TestExporter(object):
             self.create_or_update_pr_from_commit(
                 commit, provisional=False, pr_number=pull_request.number)
         else:
-            branch_name = 'chromium-export-' + commit.short_sha
+            branch_name = 'monyhar-export-' + commit.short_sha
             self.create_or_update_pr_from_commit(
                 commit, provisional=False, pr_branch_name=branch_name)
 
@@ -318,7 +318,7 @@ class TestExporter(object):
                      pr_url='%spull/%d' % (WPT_GH_URL, pull_request.number),
                  ))
         else:
-            branch_name = 'chromium-export-cl-{}'.format(cl.number)
+            branch_name = 'monyhar-export-cl-{}'.format(cl.number)
             pr_number = self.create_or_update_pr_from_commit(
                 commit,
                 provisional=True,
@@ -334,7 +334,7 @@ class TestExporter(object):
                 'on GitHub if the required GitHub checks pass; otherwise, '
                 'ecosystem-infra@ team will triage the failures and may contact you.\n\n'
                 'WPT Export docs:\n'
-                'https://chromium.googlesource.com/chromium/src/+/main'
+                'https://monyhar.googlesource.com/monyhar/src/+/main'
                 '/docs/testing/web_platform_tests.md#Automatic-export-process'
             ).format(pr_url='%spull/%d' % (WPT_GH_URL, pr_number)))
 

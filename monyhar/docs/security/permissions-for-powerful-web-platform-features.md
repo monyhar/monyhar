@@ -1,13 +1,13 @@
 # Controlling Access to Powerful Web Platform Features
 
-_Author: [dominickn@chromium.org](mailto:dominickn@chromium.org)_
-_Contributors: [rorymcclelland@chromium.org](mailto:rorymcclelland@chromium.org)_
+_Author: [dominickn@monyhar.org](mailto:dominickn@monyhar.org)_
+_Contributors: [rorymcclelland@monyhar.org](mailto:rorymcclelland@monyhar.org)_
 
 # Overview
 
-[Fugu](https://blog.chromium.org/2018/11/our-commitment-to-more-capable-web.html)
+[Fugu](https://blog.monyhar.org/2018/11/our-commitment-to-more-capable-web.html)
  is a renewed effort to bring
- [powerful new capabilities](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=Proj%3DFugu+&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
+ [powerful new capabilities](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=Proj%3DFugu+&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
 to the web -- e.g. filesystem read/write access. Allowing users to control
 which sites are able to access such APIs is crucial for maintaining the
 security and privacy properties of the web. The impact of restrictions on the
@@ -17,7 +17,7 @@ must also be considered.
 This document explores approaches to guarding powerful APIs, e.g. using
 [installed web app state](https://developers.google.com/web/progressive-web-apps/)
 or some other proxy for high user
-[engagement](https://www.chromium.org/developers/design-documents/site-engagement).
+[engagement](https://www.monyhar.org/developers/design-documents/site-engagement).
 The following general principles summarise the overall approach of the
 Chromium project to evaluating how powerful new features should be controlled
 on the web:
@@ -49,7 +49,7 @@ and summarises why alternative proposals were not taken up.
 
 # Definition of Terms
 
-+   [__Powerful Web Platform APIs__](https://www.chromium.org/Home/chromium-security/prefer-secure-origins-for-powerful-new-features)
++   [__Powerful Web Platform APIs__](https://www.monyhar.org/Home/monyhar-security/prefer-secure-origins-for-powerful-new-features)
     are capabilities which carry inherent security or privacy risks when used,
     but also provide users of web apps with significant utility. A canonical
     example is local file system access (i.e. allowing web sites to directly
@@ -63,7 +63,7 @@ and summarises why alternative proposals were not taken up.
     granted a presence in the platform launcher (e.g. the desktop).
 +   [__Progressive Web Apps__](https://developers.google.com/web/progressive-web-apps/)
     (PWAs) are web sites which are designed to be installable.
-+   [__Engagement__](https://www.chromium.org/developers/design-documents/site-engagement)
++   [__Engagement__](https://www.monyhar.org/developers/design-documents/site-engagement)
     is a mechanism for measuring how much users interact with a site. Higher
     engagement may be a signal that the user derives significant utility from
     a site.
@@ -106,7 +106,7 @@ principles will be considered when evaluating how new APIs are designed.
 ### Baseline: secure contexts, top-level frames, user gesture
 
 Minimally, all new powerful APIs must only be available in
-[secure contexts](https://www.chromium.org/Home/chromium-security/deprecating-powerful-features-on-insecure-origins).
+[secure contexts](https://www.monyhar.org/Home/monyhar-security/deprecating-powerful-features-on-insecure-origins).
 Ideally, availability is restricted to top-level frames and requires a user
 gesture to trigger. When a webpage is running in a secure context in
 a top-level frame with an active user gesture, we call this situation
@@ -142,9 +142,9 @@ which may include:
 
 These mechanisms must clearly disclose the origin of the request, and follow
 Chromium's
-[guidelines on displaying URLs](https://chromium.googlesource.com/chromium/src/+/main/docs/security/url_display_guidelines/url_display_guidelines.md).
+[guidelines on displaying URLs](https://monyhar.googlesource.com/monyhar/src/+/main/docs/security/url_display_guidelines/url_display_guidelines.md).
 Implementations may be tested using tools such as
-[Trickuri](https://github.com/chromium/trickuri).
+[Trickuri](https://github.com/monyhar/trickuri).
 
 As much as possible, APIs should avoid a "double prompt", e.g. a permission
 prompt requesting access to the file system, followed by a chooser to pick the

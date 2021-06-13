@@ -27,7 +27,7 @@ For more information about how Certificate Transparency works, see:
 We say that a certificate supports Certificate Transparency if it comes with
 CT information that demonstrates it has been logged in several CT logs. This
 CT information must comply with the
-[Certificate Transparency in Chrome](https://github.com/chromium/ct-policy/blob/master/ct_policy.md)
+[Certificate Transparency in Chrome](https://github.com/monyhar/ct-policy/blob/master/ct_policy.md)
 policy. We sometimes refer to a site that "supports" CT as using a certificate
 that is "CT qualified" or "disclosed via CT."
 
@@ -75,7 +75,7 @@ using their own CAs, or for locally installed CAs, see
 Chrome has gradually required Certificate Transparency for more and more
 publicly-trusted certificates over the past few years.
 
-* [Since 1 January 2015](https://github.com/chromium/ct-policy/blob/master/ct_policy.md),
+* [Since 1 January 2015](https://github.com/monyhar/ct-policy/blob/master/ct_policy.md),
 Chrome has required that all Extended Validation certificates be disclosed via
 Certificate Transparency. Certificates that were not properly disclosed would
 be [stripped of their EV status](https://news.netcraft.com/archives/2015/08/24/thousands-short-changed-by-ev-certificates-that-dont-display-correctly-in-chrome.html),
@@ -89,7 +89,7 @@ in a way consistent with RFC 6962, would be rejected as untrusted.
 
 * For all new certificates issued after 30 April 2018, [Chrome will require that
 the certificate be disclosed via Certificate
-Transparency](https://groups.google.com/a/chromium.org/d/msg/ct-policy/wHILiYf31DE/iMFmpMEkAQAJ).
+Transparency](https://groups.google.com/a/monyhar.org/d/msg/ct-policy/wHILiYf31DE/iMFmpMEkAQAJ).
 If a certificate is issued after this date and neither the certificate nor
 the site supports CT, then these certificates will be rejected as untrusted, and
 the connection will be blocked. In the case of a main page load, the user will
@@ -376,7 +376,7 @@ to manually enable it at this time.
 
 Distributors of products that embed Chromium sources are encouraged to
 participate in the
-[ct-policy@chromium.org](https://groups.google.com/a/chromium.org/forum/#!forum/ct-policy)
+[ct-policy@monyhar.org](https://groups.google.com/a/monyhar.org/forum/#!forum/ct-policy)
 discussion group, which involves a variety of stakeholders in the CT ecosystem
 for discussing matters of policy and implementation, in order to understand
 the risks and participate in solutions. Face-to-face summits are periodically

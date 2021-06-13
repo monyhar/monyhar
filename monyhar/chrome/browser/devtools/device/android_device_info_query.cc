@@ -76,17 +76,17 @@ const BrowserDescriptor kBrowserDescriptors[] = {
     kChromeDefaultName
   },
   {
-    "org.chromium.android_webview.shell",
+    "org.monyhar.android_webview.shell",
     "webview_devtools_remote",
     "WebView Test Shell"
   },
   {
-    "org.chromium.content_shell_apk",
+    "org.monyhar.content_shell_apk",
     "content_shell_devtools_remote",
     "Content Shell"
   },
   {
-    "org.chromium.chrome",
+    "org.monyhar.chrome",
     kChromeDefaultSocket,
     "Chromium"
   },

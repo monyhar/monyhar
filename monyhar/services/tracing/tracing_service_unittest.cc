@@ -183,7 +183,7 @@ TEST_F(TracingServiceTest, PerfettoClientConsumer) {
   base::RunLoop wait_for_start;
   base::RunLoop wait_for_registration;
   std::unique_ptr<MockProducer> producer = std::make_unique<MockProducer>(
-      std::string("org.chromium-") + base::NumberToString(pid),
+      std::string("org.monyhar-") + base::NumberToString(pid),
       "com.example.mock_data_source", perfetto_service(),
       wait_for_registration.QuitClosure(), wait_for_start.QuitClosure(),
       kNumPackets);
@@ -383,7 +383,7 @@ TEST_F(TracingServiceTest, TraceToFile) {
   base::RunLoop wait_for_start;
   base::RunLoop wait_for_registration;
   std::unique_ptr<MockProducer> producer = std::make_unique<MockProducer>(
-      std::string("org.chromium-") + base::NumberToString(pid),
+      std::string("org.monyhar-") + base::NumberToString(pid),
       "com.example.mock_data_source", perfetto_service(),
       wait_for_registration.QuitClosure(), wait_for_start.QuitClosure(),
       kNumPackets);

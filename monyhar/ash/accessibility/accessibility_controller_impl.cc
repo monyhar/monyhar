@@ -1391,7 +1391,7 @@ void AccessibilityControllerImpl::ObservePrefs(PrefService* prefs) {
   DCHECK(prefs);
 
   // TODO(accessibility): Remove in m92 or later after deprecation; see
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=1161305
+  // https://bugs.monyhar.org/p/monyhar/issues/detail?id=1161305
   static const char kAccessibilitySwitchAccessSelectKeyCodes[] =
       "settings.a11y.switch_access.select.key_codes";
   static const char kAccessibilitySwitchAccessNextKeyCodes[] =

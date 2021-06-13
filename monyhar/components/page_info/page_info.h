@@ -121,7 +121,7 @@ class PageInfo : public content::WebContentsObserver {
 
   // UMA statistics for PageInfo. Do not reorder or remove existing
   // fields. A Java counterpart will be generated for this enum.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.page_info
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.page_info
   // All values here should have corresponding entries in
   // WebsiteSettingsAction area of enums.xml.
   enum PageInfoAction {

@@ -2,4 +2,4 @@ monorail {
   component: "Internals>Metrics"
 }
 
-team_email: "chromium-dev@chromium.org"
+team_email: "monyhar-dev@monyhar.org"

@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.webcontents;
+package org.monyhar.content.browser.webcontents;
 
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 
-import org.chromium.content_public.browser.ViewEventSink;
+import org.monyhar.content_public.browser.ViewEventSink;
 
 /**
  * Empty implementation of {@link ViewEventSink.InternalAccessDelegate}. Intentional no-op for

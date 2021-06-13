@@ -23,7 +23,7 @@
 #include "components/viz/common/resources/platform_color.h"
 #include "components/viz/common/viz_utils.h"
 #include "components/viz/service/display/display_compositor_memory_and_task_controller.h"
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "gpu/command_buffer/client/gles2_cmd_helper.h"
 #include "gpu/command_buffer/client/gles2_implementation.h"
 #include "gpu/command_buffer/client/raster_implementation_gles.h"

@@ -1,5 +1,5 @@
 # GPU memory buffer interface.
-per-file gpu_memory_buffer*=dcastagna@chromium.org
+per-file gpu_memory_buffer*=dcastagna@monyhar.org
 
 # IOSurface usage.
-per-file *io_surface*=ccameron@chromium.org
+per-file *io_surface*=ccameron@monyhar.org

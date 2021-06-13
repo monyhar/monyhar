@@ -111,7 +111,7 @@ struct BackupRefPtrImpl {
     // LLVM currently has issues with optimizing that away properly; see:
     // https://bugs.llvm.org/show_bug.cgi?id=49403
     // https://reviews.llvm.org/D97848
-    // https://chromium-review.googlesource.com/c/chromium/src/+/2727400/2/base/memory/checked_ptr.h#120
+    // https://monyhar-review.googlesource.com/c/monyhar/src/+/2727400/2/base/memory/checked_ptr.h#120
     DCHECK(ptr != nullptr || !ret);
 #if HAS_BUILTIN(__builtin_assume)
     __builtin_assume(ptr != nullptr || !ret);

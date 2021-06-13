@@ -6,7 +6,7 @@
 def get_class():
     """Returns the subclass of |model.CodeSignConfig| to use."""
     # First look up the processed Chromium config.
-    from .chromium_config import ChromiumCodeSignConfig
+    from .monyhar_config import ChromiumCodeSignConfig
     config_class = ChromiumCodeSignConfig
 
     # Then search for the internal config for Google Chrome.

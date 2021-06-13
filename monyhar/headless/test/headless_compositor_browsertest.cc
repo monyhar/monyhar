@@ -44,8 +44,8 @@ class HeadlessCompositorBrowserTest : public HeadlessProtocolBrowserTest {
   }
 };
 
-// BeginFrameControl is not supported on MacOS yet, see: https://cs.chromium.org
-// chromium/src/headless/lib/browser/protocol/target_handler.cc?
+// BeginFrameControl is not supported on MacOS yet, see: https://cs.monyhar.org
+// monyhar/src/headless/lib/browser/protocol/target_handler.cc?
 // rcl=5811aa08e60ba5ac7622f029163213cfbdb682f7&l=32
 // TODO(crbug.com/1020046): Suite is flaky on TSan Linux.
 #if defined(OS_MAC) || \

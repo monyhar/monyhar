@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.contacts_picker;
+package org.monyhar.components.browser_ui.contacts_picker;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -17,22 +17,22 @@ import androidx.annotation.VisibleForTesting;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.components.browser_ui.util.BitmapCache;
-import org.chromium.components.browser_ui.util.ConversionUtils;
-import org.chromium.components.browser_ui.util.GlobalDiscardableReferencePool;
-import org.chromium.components.browser_ui.widget.RoundedIconGenerator;
-import org.chromium.components.browser_ui.widget.selectable_list.SelectableListLayout;
-import org.chromium.components.browser_ui.widget.selectable_list.SelectableListToolbar;
-import org.chromium.components.browser_ui.widget.selectable_list.SelectionDelegate;
-import org.chromium.content.browser.contacts.ContactsPickerPropertiesRequested;
-import org.chromium.content_public.browser.ContactsPicker;
-import org.chromium.content_public.browser.ContactsPickerListener;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.widget.OptimizedFrameLayout;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.components.browser_ui.util.BitmapCache;
+import org.monyhar.components.browser_ui.util.ConversionUtils;
+import org.monyhar.components.browser_ui.util.GlobalDiscardableReferencePool;
+import org.monyhar.components.browser_ui.widget.RoundedIconGenerator;
+import org.monyhar.components.browser_ui.widget.selectable_list.SelectableListLayout;
+import org.monyhar.components.browser_ui.widget.selectable_list.SelectableListToolbar;
+import org.monyhar.components.browser_ui.widget.selectable_list.SelectionDelegate;
+import org.monyhar.content.browser.contacts.ContactsPickerPropertiesRequested;
+import org.monyhar.content_public.browser.ContactsPicker;
+import org.monyhar.content_public.browser.ContactsPickerListener;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.widget.OptimizedFrameLayout;
 
 import java.util.ArrayList;
 import java.util.Collections;

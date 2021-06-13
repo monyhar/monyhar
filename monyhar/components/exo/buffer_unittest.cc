@@ -4,7 +4,7 @@
 
 #include "components/exo/buffer.h"
 
-#include <GLES2/gl2extchromium.h>
+#include <GLES2/gl2extmonyhar.h>
 
 #include "ash/shell.h"
 #include "base/bind.h"

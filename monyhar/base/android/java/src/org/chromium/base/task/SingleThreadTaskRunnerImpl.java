@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.task;
+package org.monyhar.base.task;
 
 import android.annotation.SuppressLint;
 import android.os.Build;
@@ -11,7 +11,7 @@ import android.os.Message;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.JNINamespace;
 
 /**
  * Implementation of the abstract class {@link SingleThreadTaskRunner}. Before native initialization

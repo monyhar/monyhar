@@ -1929,7 +1929,7 @@ class HostedAppOriginIsolationTest : public HostedOrWebAppTest {
 };
 
 // This test case implements creis@'s repro case from
-// https://bugs.chromium.org/p/chromium/issues/detail?id=1141721#c32.
+// https://bugs.monyhar.org/p/monyhar/issues/detail?id=1141721#c32.
 // Prior to the fix, we end up putting the app's extension url into the opt-in
 // list, then later the second navigation tries to compare an effective URL to
 // the actual (extension) url in the ProcessLocks in CanAccessDataForOrigin,

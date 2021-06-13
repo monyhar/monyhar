@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments.minimal;
+package org.monyhar.chrome.browser.payments.minimal;
 
 import android.content.Context;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.payments.ui.LineItem;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.components.payments.CurrencyFormatter;
-import org.chromium.components.payments.PaymentApp;
-import org.chromium.payments.mojom.PaymentComplete;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.payments.ui.LineItem;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.components.payments.CurrencyFormatter;
+import org.monyhar.components.payments.PaymentApp;
+import org.monyhar.payments.mojom.PaymentComplete;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
 
 /**
  * Payment minimal UI coordinator, which owns the component overall, i.e., creates other objects in

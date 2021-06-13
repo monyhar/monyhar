@@ -20,7 +20,7 @@ import sys
 _MODULE_PATH, _ = os.path.split(os.path.realpath(__file__))
 _THIRD_PARTY_DIR = os.path.normpath(
     os.path.join(_MODULE_PATH, os.pardir, os.pardir, os.pardir, os.pardir))
-# jinja2 is in chromium's third_party directory.
+# jinja2 is in monyhar's third_party directory.
 # Insert at 1 so at front to override system libraries, and
 # after path[0] == invoking script dir
 sys.path.insert(1, _THIRD_PARTY_DIR)

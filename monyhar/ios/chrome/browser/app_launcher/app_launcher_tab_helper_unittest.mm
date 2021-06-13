@@ -110,7 +110,7 @@ class AppLauncherTabHelperTest : public PlatformTest {
     auto navigation_manager = std::make_unique<FakeNavigationManager>();
     navigation_manager_ = navigation_manager.get();
     web_state_.SetNavigationManager(std::move(navigation_manager));
-    web_state_.SetCurrentURL(GURL("https://chromium.org"));
+    web_state_.SetCurrentURL(GURL("https://monyhar.org"));
     tab_helper_ = AppLauncherTabHelper::FromWebState(&web_state_);
     tab_helper_->SetDelegate(&delegate_);
   }
@@ -152,7 +152,7 @@ class AppLauncherTabHelperTest : public PlatformTest {
     if (!is_reading_list_initialized_)
       InitializeReadingListModel();
 
-    web_state_.SetCurrentURL(GURL("https://chromium.org"));
+    web_state_.SetCurrentURL(GURL("https://monyhar.org"));
     GURL pending_url("http://google.com");
     navigation_manager_->AddItem(pending_url, ui::PAGE_TRANSITION_LINK);
     web::NavigationItem* item = navigation_manager_->GetItemAtIndex(0);
@@ -422,16 +422,16 @@ TEST_F(AppLauncherTabHelperTest, MAYBE_U2FUrls) {
   // bypassing the browser origin/security check for u2f schemes.
   item->SetURL(GURL("https://chromeiostesting-dot-u2fdemo.appspot.com"));
   navigation_manager_->SetLastCommittedItem(item.get());
-  EXPECT_FALSE(TestShouldAllowRequest(@"u2f-x-callback://chromium.test",
+  EXPECT_FALSE(TestShouldAllowRequest(@"u2f-x-callback://monyhar.test",
                                       /*target_frame_is_main=*/true,
                                       /*target_frame_is_cross_origin=*/false,
                                       /*has_user_gesture=*/false));
   EXPECT_EQ(0U, delegate_.app_launch_count());
 
   // Source URL is not trusted, so u2f scheme should not be allowed.
-  item->SetURL(GURL("https://chromium.test"));
+  item->SetURL(GURL("https://monyhar.test"));
   navigation_manager_->SetLastCommittedItem(item.get());
-  EXPECT_FALSE(TestShouldAllowRequest(@"u2f://chromium.test",
+  EXPECT_FALSE(TestShouldAllowRequest(@"u2f://monyhar.test",
                                       /*target_frame_is_main=*/true,
                                       /*target_frame_is_cross_origin=*/false,
                                       /*has_user_gesture=*/false));
@@ -441,7 +441,7 @@ TEST_F(AppLauncherTabHelperTest, MAYBE_U2FUrls) {
   // is launched via URL with u2f-x-callback scheme.
   item->SetURL(GURL("https://chromeiostesting-dot-u2fdemo.appspot.com"));
   navigation_manager_->SetLastCommittedItem(item.get());
-  EXPECT_FALSE(TestShouldAllowRequest(@"u2f://chromium.test",
+  EXPECT_FALSE(TestShouldAllowRequest(@"u2f://monyhar.test",
                                       /*target_frame_is_main=*/true,
                                       /*target_frame_is_cross_origin=*/false,
                                       /*has_user_gesture=*/false));

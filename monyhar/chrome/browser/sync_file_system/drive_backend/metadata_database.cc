@@ -36,7 +36,7 @@
 #include "components/drive/drive_api_util.h"
 #include "google_apis/drive/drive_api_parser.h"
 #include "storage/common/file_system/file_system_util.h"
-#include "third_party/leveldatabase/env_chromium.h"
+#include "third_party/leveldatabase/env_monyhar.h"
 #include "third_party/leveldatabase/leveldb_chrome.h"
 #include "third_party/leveldatabase/src/include/leveldb/db.h"
 #include "third_party/leveldatabase/src/include/leveldb/status.h"

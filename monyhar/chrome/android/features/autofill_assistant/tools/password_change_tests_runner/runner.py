@@ -141,13 +141,13 @@ def main(args):
       return
 
   packages = {
-      'org.chromium.chrome.tests': [
+      'org.monyhar.chrome.tests': [
           'ACCESS_COARSE_LOCATION', 'ACCESS_FINE_LOCATION', 'CAMERA',
           'GET_ACCOUNTS', 'READ_EXTERNAL_STORAGE', 'READ_LOGS',
           'READ_PHONE_STATE', 'RECORD_AUDIO', 'SET_ANIMATION_SCALE',
           'WRITE_EXTERNAL_STORAGE'
       ],
-      'org.chromium.net.test.support': [
+      'org.monyhar.net.test.support': [
           'READ_EXTERNAL_STORAGE', 'READ_PHONE_STATE', 'WRITE_EXTERNAL_STORAGE'
       ]
   }
@@ -189,9 +189,9 @@ def main(args):
   print('Running test ...')
   command = get_adb_command([
       'shell', 'am', 'instrument', '-w', '-r', '-e', 'class',
-      '\"org.chromium.chrome.browser.autofill_assistant.'
+      '\"org.monyhar.chrome.browser.autofill_assistant.'
       'PasswordChangeFixtureTest#%s\"' % options.test,
-      'org.chromium.chrome.tests/org.chromium.base.test'
+      'org.monyhar.chrome.tests/org.monyhar.base.test'
       '.BaseChromiumAndroidJUnitRunner'
   ])
 

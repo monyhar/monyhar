@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Variations histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -23,8 +23,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.AppSeedFreshness" units="minutes"
     expires_after="2021-12-05">
-  <owner>rmcelrath@chromium.org</owner>
-  <owner>ntfschr@chromium.org</owner>
+  <owner>rmcelrath@monyhar.org</owner>
+  <owner>ntfschr@monyhar.org</owner>
   <owner>src/android_webview/OWNERS</owner>
   <summary>
     The time interval between when a WebView-using app's copy of the variations
@@ -42,8 +42,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed from code October 2020.
   </obsolete>
-  <owner>rmcelrath@chromium.org</owner>
-  <owner>ntfschr@chromium.org</owner>
+  <owner>rmcelrath@monyhar.org</owner>
+  <owner>ntfschr@monyhar.org</owner>
   <owner>src/android_webview/OWNERS</owner>
   <summary>
     The result of checking if a WebView-using app's copy of the variations seed
@@ -53,8 +53,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.CreateTrials.SeedExpiry"
     enum="VariationsSeedExpiry" expires_after="2022-04-22">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>rkaplow@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>rkaplow@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     The result of verifying if the variations seed is expired, recorded before
@@ -64,8 +64,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.FirstRun.SeedConnectTime" units="ms"
     expires_after="2022-04-22">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>rkaplow@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>rkaplow@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     The latency of connection to the variations server when fetching an initial
@@ -77,8 +77,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.FirstRun.SeedFetchResult"
     enum="VariationsSeedFetchResult" expires_after="2022-04-22">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>rkaplow@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>rkaplow@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     The result of attempting to fetch an initial variations seed during Android
@@ -89,8 +89,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.FirstRun.SeedFetchTime" units="ms"
     expires_after="2022-04-22">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>rkaplow@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>rkaplow@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     The latency of fetching an initial variations seed during Android Chrome
@@ -100,7 +100,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.FirstRunPrefsDebug"
     enum="VariationsFirstRunPrefEvents" expires_after="2021-08-29">
-  <owner>asvitkine@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     Logs each event related to Android Chrome variations first run prefs to
@@ -110,8 +110,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.FirstRunResult" enum="VariationsFirstRunResult"
     expires_after="2021-10-25">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>rkaplow@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>rkaplow@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     The result of attempting to import an initial variations seed during Android
@@ -137,8 +137,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.Headers.ExperimentCount" units="units"
     expires_after="2021-10-24">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>rkaplow@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>rkaplow@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     Records number of experiment ids in the X-Client-Data header at the time the
@@ -148,8 +148,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.Headers.RequestContextCategory"
     enum="VariationsHeadersRequestContextCategory" expires_after="2021-11-08">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>jwd@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>jwd@monyhar.org</owner>
   <owner>caitlinfischer@google.com</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <component>Internals&gt;Metrics</component>
@@ -163,8 +163,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Variations.Headers.URLValidationResult{VariationsHeadersURLValidationResult}"
     enum="VariationsHeadersURLValidationResult" expires_after="2022-03-15">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>jwd@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>jwd@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     The result of whether to append Variations headers to a request. Logged when
@@ -189,8 +189,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Variations.LoadPermanentConsistencyCountryResult"
     enum="VariationsPermanentConsistencyCountryResult"
     expires_after="2022-04-22">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>rkaplow@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>rkaplow@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     Records how the country code saved in prefs used for filtering permanent
@@ -201,8 +201,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.LoadSeedSignature" enum="VariationSeedSignature"
     expires_after="2018-08-30">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>rkaplow@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>rkaplow@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     The result of verifying the latest variations seed's signature, recorded
@@ -213,8 +213,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.PolicyRestriction"
     enum="VariationsRestrictionPolicyValues" expires_after="2022-04-30">
-  <owner>pastarmovj@chromium.org</owner>
-  <owner>ydago@chromium.org</owner>
+  <owner>pastarmovj@monyhar.org</owner>
+  <owner>ydago@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     Records the restrictions on how experiment variations are applied on the
@@ -224,8 +224,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.RequestCount" units="units"
     expires_after="2018-08-30">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>rkaplow@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>rkaplow@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     Number of previous requests to the variations server in the same session,
@@ -237,8 +237,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.ResourceRequestsAllowed"
     enum="VariationsResourceRequestsAllowedState" expires_after="2021-10-25">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>rkaplow@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>rkaplow@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     Counts the number of times the VariationsService is allowed or not allowed
@@ -249,8 +249,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.SafeMode.FellBackToSafeMode2"
     enum="BooleanSafeMode" expires_after="2021-10-25">
-  <owner>isherman@chromium.org</owner>
-  <owner>asvitkine@chromium.org</owner>
+  <owner>isherman@monyhar.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     Whether or not the VariationsService fell back to Safe Mode, due to either
@@ -262,8 +262,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.SafeMode.LoadSafeSeed.Result"
     enum="VariationsSeedLoadResult" expires_after="M77">
-  <owner>isherman@chromium.org</owner>
-  <owner>asvitkine@chromium.org</owner>
+  <owner>isherman@monyhar.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     Records whether the safe variations seed was successfully read from local
@@ -274,8 +274,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.SafeMode.LoadSafeSeed.SignatureValidity"
     enum="VariationSeedSignature" expires_after="M77">
-  <owner>isherman@chromium.org</owner>
-  <owner>asvitkine@chromium.org</owner>
+  <owner>isherman@monyhar.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     The result of verifying the safe variations seed's signature, recorded when
@@ -286,8 +286,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.SafeMode.StoreSafeSeed.Result"
     enum="VariationsSeedStoreResult" expires_after="M77">
-  <owner>isherman@chromium.org</owner>
-  <owner>asvitkine@chromium.org</owner>
+  <owner>isherman@monyhar.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     Records the result of storing a safe variations seed (and all associated
@@ -297,8 +297,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.SafeMode.StoreSafeSeed.SignatureValidity"
     enum="VariationSeedSignature" expires_after="M77">
-  <owner>isherman@chromium.org</owner>
-  <owner>asvitkine@chromium.org</owner>
+  <owner>isherman@monyhar.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     The result of verifying the safe variations seed's signature, recorded when
@@ -308,8 +308,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.SafeMode.Streak.Crashes" units="crashes"
     expires_after="2022-05-09">
-  <owner>isherman@chromium.org</owner>
-  <owner>asvitkine@chromium.org</owner>
+  <owner>isherman@monyhar.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     The number of consecutive crashes observed by the VariationsService without
@@ -322,8 +322,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.SafeMode.Streak.FetchFailures" units="failures"
     expires_after="2022-05-09">
-  <owner>isherman@chromium.org</owner>
-  <owner>asvitkine@chromium.org</owner>
+  <owner>isherman@monyhar.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     The number of consecutive failed attempts to fetch a new seed by the
@@ -334,8 +334,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.SeedDateChange" enum="VariationsSeedDateChange"
     expires_after="2021-10-25">
-  <owner>jwd@chromium.org</owner>
-  <owner>asvitkine@chromium.org</owner>
+  <owner>jwd@monyhar.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     Counts if a response from the variations server is the first response of the
@@ -348,8 +348,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.SeedFetchResponseOrErrorCode"
     enum="CombinedHttpResponseAndNetErrorCode" expires_after="2021-10-25">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>rkaplow@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>rkaplow@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     HTTP response codes and network error encountered by VariationsService when
@@ -360,8 +360,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.SeedFetchResponseOrErrorCode.HTTP"
     enum="CombinedHttpResponseAndNetErrorCode" expires_after="2021-10-25">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>rkaplow@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>rkaplow@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     HTTP response codes and network error encountered by VariationsService when
@@ -372,8 +372,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.SeedFreshness" units="minutes"
     expires_after="2021-10-24">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>rkaplow@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>rkaplow@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     The time interval between when the variations seed was downloaded and when
@@ -384,7 +384,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.SeedLoadBlockingTime" units="ms"
     expires_after="2021-10-24">
-  <owner>changwan@chromium.org</owner>
+  <owner>changwan@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     Records the time spent blocking WebView startup to wait for the variations
@@ -399,8 +399,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.SeedLoadResult" enum="VariationsSeedLoadResult"
     expires_after="2021-10-24">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>rkaplow@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>rkaplow@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     Records whether the latest variations seed was successfully read from local
@@ -411,8 +411,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.SeedProcessingTime" units="ms"
     expires_after="2021-10-24">
-  <owner>isherman@chromium.org</owner>
-  <owner>asvitkine@chromium.org</owner>
+  <owner>isherman@monyhar.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     Records how long it takes to load and process variations seed. This metric
@@ -422,8 +422,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.SeedStoreResult" enum="VariationsSeedStoreResult"
     expires_after="2021-10-25">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>rkaplow@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>rkaplow@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     Records the result of storing the variations seed that was received from the
@@ -433,8 +433,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.SimulateSeed.Duration" units="ms"
     expires_after="2018-08-30">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>rkaplow@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>rkaplow@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     Records the time taken to perform variations seed simulation.
@@ -445,8 +445,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.SimulateSeed.KillBestEffortChanges" units="units"
     expires_after="2018-08-30">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>rkaplow@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>rkaplow@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     Records the result of variations seed simulation. Logs the number of
@@ -459,8 +459,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.SimulateSeed.KillCriticalChanges" units="units"
     expires_after="2018-08-30">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>rkaplow@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>rkaplow@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     Records the result of variations seed simulation. Logs the number of
@@ -473,8 +473,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.SimulateSeed.NormalChanges" units="units"
     expires_after="2018-08-30">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>rkaplow@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>rkaplow@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     Records the result of variations seed simulation. Logs the number of
@@ -487,8 +487,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.StoreSeed.DataSize" units="KiB"
     expires_after="2021-10-25">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>rkaplow@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>rkaplow@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     The size of the variations seed data, which may be a partial (delta) or
@@ -498,8 +498,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.StoreSeedSignature" enum="VariationSeedSignature"
     expires_after="2022-04-22">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>rkaplow@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>rkaplow@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     The result of verifying the variations seed signature, recorded when the
@@ -510,7 +510,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.StringsOverridden" units="strings"
     expires_after="2018-08-30">
-  <owner>asvitkine@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     Records the number of UI strings overriden for each study that overrides
@@ -520,8 +520,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.TimeSinceLastFetchAttempt" units="minutes"
     expires_after="2022-04-22">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>rkaplow@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>rkaplow@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     The time since the previous attempt to fetch the variations seed within the
@@ -532,8 +532,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.UserChannel" enum="UserChannels"
     expires_after="2021-10-25">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>rkaplow@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>rkaplow@monyhar.org</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     Log the user channel assigned at browser startup used for evaluating the
@@ -546,7 +546,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed from code January 2021.
   </obsolete>
-  <owner>rmcelrath@chromium.org</owner>
+  <owner>rmcelrath@monyhar.org</owner>
   <owner>src/android_webview/OWNERS</owner>
   <summary>
     The result of a WebView seed download. Records both the HTTP code and
@@ -559,7 +559,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed from code January 2021.
   </obsolete>
-  <owner>rmcelrath@chromium.org</owner>
+  <owner>rmcelrath@monyhar.org</owner>
   <owner>src/android_webview/OWNERS</owner>
   <summary>
     The duration of the network request to downloads a new WebView variations
@@ -569,7 +569,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.WebViewDownloadJobInterval" units="minutes"
     expires_after="2022-01-20">
-  <owner>ntfschr@chromium.org</owner>
+  <owner>ntfschr@monyhar.org</owner>
   <owner>src/android_webview/OWNERS</owner>
   <summary>
     The time between the start of two consecutive WebView seed downloads by
@@ -580,7 +580,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Variations.WebViewDownloadJobQueueTime" units="minutes"
     expires_after="2022-01-20">
-  <owner>ntfschr@chromium.org</owner>
+  <owner>ntfschr@monyhar.org</owner>
   <owner>src/android_webview/OWNERS</owner>
   <summary>
     The delay between when a WebView seed download was scheduled by the service

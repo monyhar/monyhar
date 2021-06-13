@@ -234,7 +234,7 @@ TEST_F(ExtensionDataCollectionTest, CollectExtensionDataWithExtension) {
   base::Time install_time = base::Time::Now();
   std::string version = "1.4.2";
   std::string description = "Test Extension";
-  std::string update_url = "https://www.chromium.org";
+  std::string update_url = "https://www.monyhar.org";
   int state = extensions::Extension::State::ENABLED;
 
   std::unique_ptr<ExtensionTestingProfile> profile =
@@ -269,7 +269,7 @@ TEST_F(ExtensionDataCollectionTest, CollectExtensionDataWithExtension) {
   std::string expected_manifest =
       "{\"description\":\"Test Extension\",\""
       "manifest_version\":2,\"name\":\"my_test_extension\",\"update_url\":\""
-      "https://www.chromium.org\",\"version\":\"1.4.2\"}";
+      "https://www.monyhar.org\",\"version\":\"1.4.2\"}";
   ASSERT_EQ(extension_info.manifest(), expected_manifest);
 }
 

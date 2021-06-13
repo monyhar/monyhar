@@ -1,4 +1,4 @@
-These mojoms are for a service that exists outside of chromium. Implementation
+These mojoms are for a service that exists outside of monyhar. Implementation
 for CfmServiceContext are found in the private CrOS repo.
 
 Note: //chromeos/services/chromebox_for_meetings/public/mojom/cfm_service_manager.mojom

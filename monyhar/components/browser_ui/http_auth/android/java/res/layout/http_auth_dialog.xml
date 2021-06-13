@@ -22,7 +22,7 @@
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:hint="@string/login_dialog_username_field" >
-          <org.chromium.components.browser_ui.widget.text.AlertDialogEditText
+          <org.monyhar.components.browser_ui.widget.text.AlertDialogEditText
               android:id="@+id/username"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:hint="@string/login_dialog_password_field" >
-          <org.chromium.components.browser_ui.widget.text.AlertDialogEditText
+          <org.monyhar.components.browser_ui.widget.text.AlertDialogEditText
               android:id="@+id/password"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"

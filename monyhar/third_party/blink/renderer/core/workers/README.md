@@ -83,7 +83,7 @@ thus WorkerOrWorkletGlobalScope and the worker thread are not involved.
 
 ## UseCounter
 
-[UseCounter](https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/instrumentation/use_counter.h)
+[UseCounter](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/platform/instrumentation/use_counter.h)
 is available in all workers and worklets. The count mechanism varies based on
 worker and worklet types as follows.
 
@@ -105,7 +105,7 @@ for details.
 `WorkerOrWorkletGlobalScope::CountUse()` is the common entry point. For more
 details, see [Design of UseCounter for
 workers](https://docs.google.com/document/d/1VyYZnhjBdk-MzCRAcX37TM5-yjwTY40U_J9rWnEAo8c/edit?usp=sharing)
-and [crbug 376039](https://bugs.chromium.org/p/chromium/issues/detail?id=376039).
+and [crbug 376039](https://bugs.monyhar.org/p/monyhar/issues/detail?id=376039).
 
 There are some fundamental metrics.
 
@@ -141,42 +141,42 @@ following files and directories to check integration with the underlying worker
 and worklet infrastructure.
 
 - Web Platform Tests
-  - [workers/](https://cs.chromium.org/chromium/src/third_party/blink/web_tests/external/wpt/workers/)
-  - [worklets/](https://cs.chromium.org/chromium/src/third_party/blink/web_tests/external/wpt/worklets/)
+  - [workers/](https://cs.monyhar.org/monyhar/src/third_party/blink/web_tests/external/wpt/workers/)
+  - [worklets/](https://cs.monyhar.org/monyhar/src/third_party/blink/web_tests/external/wpt/worklets/)
 - Web tests
-  - [webexposed/](https://cs.chromium.org/chromium/src/third_party/blink/web_tests/webexposed/)
-  - [workers/](https://cs.chromium.org/chromium/src/third_party/blink/web_tests/http/tests/workers/)
-  - [worklet/](https://cs.chromium.org/chromium/src/third_party/blink/web_tests/http/tests/worklet/)
+  - [webexposed/](https://cs.monyhar.org/monyhar/src/third_party/blink/web_tests/webexposed/)
+  - [workers/](https://cs.monyhar.org/monyhar/src/third_party/blink/web_tests/http/tests/workers/)
+  - [worklet/](https://cs.monyhar.org/monyhar/src/third_party/blink/web_tests/http/tests/worklet/)
 - Unit tests
-  - [content/browser/worker_host/](https://cs.chromium.org/chromium/src/content/browser/worker_host/)
-  - [content/renderer/worker/](https://cs.chromium.org/chromium/src/content/renderer/worker/)
-  - [third_party/blink/renderer/core/workers/](https://cs.chromium.org/chromium/src/third_party/blink/renderer/core/workers/)
+  - [content/browser/worker_host/](https://cs.monyhar.org/monyhar/src/content/browser/worker_host/)
+  - [content/renderer/worker/](https://cs.monyhar.org/monyhar/src/content/renderer/worker/)
+  - [third_party/blink/renderer/core/workers/](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/core/workers/)
 - Browser tests
-  - [chrome/browser/chrome_worker_browsertest.cc](https://cs.chromium.org/chromium/src/chrome/browser/chrome_worker_browsertest.cc)
-  - [content/browser/worker_host/worker_browsertest.cc](https://cs.chromium.org/chromium/src/content/browser/worker_host/worker_browsertest.cc)
+  - [chrome/browser/chrome_worker_browsertest.cc](https://cs.monyhar.org/monyhar/src/chrome/browser/chrome_worker_browsertest.cc)
+  - [content/browser/worker_host/worker_browsertest.cc](https://cs.monyhar.org/monyhar/src/content/browser/worker_host/worker_browsertest.cc)
 
 Workers and worklets interact with various features. You should also add tests
 in the following files and directories to avoid breakage.
 
 - Web Platform Tests
-  - [content-security-policy/](https://cs.chromium.org/chromium/src/third_party/blink/web_tests/external/wpt/content-security-policy/)
-  - [cross-origin-embedder-policy/](https://cs.chromium.org/chromium/src/third_party/blink/web_tests/external/wpt/html/cross-origin-embedder-policy/)
-  - [fetch/](https://cs.chromium.org/chromium/src/third_party/blink/web_tests/external/wpt/fetch/)
-  - [mixed-content/](https://cs.chromium.org/chromium/src/third_party/blink/web_tests/external/wpt/mixed-content/)
-  - [performance-timeline/](https://cs.chromium.org/chromium/src/third_party/blink/web_tests/external/wpt/performance-timeline/)
-  - [referrer-policy/](https://cs.chromium.org/chromium/src/third_party/blink/web_tests/external/wpt/referrer-policy/)
-  - [resource-timing/](https://cs.chromium.org/chromium/src/third_party/blink/web_tests/external/wpt/resource-timing/)
-  - [secure-contexts/](https://cs.chromium.org/chromium/src/third_party/blink/web_tests/external/wpt/secure-contexts/)
-  - [service-workers/service-worker/](https://cs.chromium.org/chromium/src/third_party/blink/web_tests/external/wpt/service-workers/service-worker/)
-  - [upgrade-insecure-requests/](https://cs.chromium.org/chromium/src/third_party/blink/web_tests/external/wpt/upgrade-insecure-requests/)
-  - [websockets/](https://cs.chromium.org/chromium/src/third_party/blink/web_tests/external/wpt/websockets/)
+  - [content-security-policy/](https://cs.monyhar.org/monyhar/src/third_party/blink/web_tests/external/wpt/content-security-policy/)
+  - [cross-origin-embedder-policy/](https://cs.monyhar.org/monyhar/src/third_party/blink/web_tests/external/wpt/html/cross-origin-embedder-policy/)
+  - [fetch/](https://cs.monyhar.org/monyhar/src/third_party/blink/web_tests/external/wpt/fetch/)
+  - [mixed-content/](https://cs.monyhar.org/monyhar/src/third_party/blink/web_tests/external/wpt/mixed-content/)
+  - [performance-timeline/](https://cs.monyhar.org/monyhar/src/third_party/blink/web_tests/external/wpt/performance-timeline/)
+  - [referrer-policy/](https://cs.monyhar.org/monyhar/src/third_party/blink/web_tests/external/wpt/referrer-policy/)
+  - [resource-timing/](https://cs.monyhar.org/monyhar/src/third_party/blink/web_tests/external/wpt/resource-timing/)
+  - [secure-contexts/](https://cs.monyhar.org/monyhar/src/third_party/blink/web_tests/external/wpt/secure-contexts/)
+  - [service-workers/service-worker/](https://cs.monyhar.org/monyhar/src/third_party/blink/web_tests/external/wpt/service-workers/service-worker/)
+  - [upgrade-insecure-requests/](https://cs.monyhar.org/monyhar/src/third_party/blink/web_tests/external/wpt/upgrade-insecure-requests/)
+  - [websockets/](https://cs.monyhar.org/monyhar/src/third_party/blink/web_tests/external/wpt/websockets/)
 - Browser tests
-  - [chrome/browser/chrome_do_not_track_browsertest.cc](https://cs.chromium.org/chromium/src/chrome/browser/chrome_do_not_track_browsertest.cc)
-  - [chrome/browser/chrome_worker_browsertest.cc](https://cs.chromium.org/chromium/src/chrome/browser/chrome_worker_browsertest.cc)
-  - [chrome/browser/extensions/api/web_request/web_request_apitest.cc](https://cs.chromium.org/chromium/src/chrome/browser/extensions/api/web_request/web_request_apitest.cc)
-  - [chrome/browser/ssl/ssl_browsertest.cc](https://cs.chromium.org/chromium/src/chrome/browser/ssl/ssl_browsertest.cc)
-  - [chrome/browser/subresource_filter/subresource_filter_browsertest.cc](https://cs.chromium.org/chromium/src/chrome/browser/subresource_filter/subresource_filter_browsertest.cc)
-  - [content/browser/do_not_track_browsertest.cc](https://cs.chromium.org/chromium/src/content/browser/do_not_track_browsertest.cc)
+  - [chrome/browser/chrome_do_not_track_browsertest.cc](https://cs.monyhar.org/monyhar/src/chrome/browser/chrome_do_not_track_browsertest.cc)
+  - [chrome/browser/chrome_worker_browsertest.cc](https://cs.monyhar.org/monyhar/src/chrome/browser/chrome_worker_browsertest.cc)
+  - [chrome/browser/extensions/api/web_request/web_request_apitest.cc](https://cs.monyhar.org/monyhar/src/chrome/browser/extensions/api/web_request/web_request_apitest.cc)
+  - [chrome/browser/ssl/ssl_browsertest.cc](https://cs.monyhar.org/monyhar/src/chrome/browser/ssl/ssl_browsertest.cc)
+  - [chrome/browser/subresource_filter/subresource_filter_browsertest.cc](https://cs.monyhar.org/monyhar/src/chrome/browser/subresource_filter/subresource_filter_browsertest.cc)
+  - [content/browser/do_not_track_browsertest.cc](https://cs.monyhar.org/monyhar/src/content/browser/do_not_track_browsertest.cc)
 
 # References
 

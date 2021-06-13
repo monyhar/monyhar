@@ -49,7 +49,7 @@ class PlatformSensorAndroid : public PlatformSensor {
       const PlatformSensorConfiguration& configuration) override;
 
  private:
-  // Java object org.chromium.device.sensors.PlatformSensor
+  // Java object org.monyhar.device.sensors.PlatformSensor
   base::android::ScopedJavaGlobalRef<jobject> j_object_;
   DISALLOW_COPY_AND_ASSIGN(PlatformSensorAndroid);
 };

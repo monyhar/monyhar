@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.media.ui;
+package org.monyhar.chrome.browser.media.ui;
 
 import static org.mockito.ArgumentMatchers.argThat;
 import static org.mockito.Mockito.mock;
@@ -13,20 +13,20 @@ import android.graphics.Bitmap;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.browser_ui.media.MediaSessionHelper;
-import org.chromium.components.favicon.LargeIconBridge;
-import org.chromium.components.url_formatter.UrlFormatter;
-import org.chromium.components.url_formatter.UrlFormatterJni;
-import org.chromium.content_public.browser.MediaSession;
-import org.chromium.content_public.browser.NavigationHandle;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.media_session.mojom.MediaSessionAction;
-import org.chromium.net.GURLUtils;
-import org.chromium.net.GURLUtilsJni;
-import org.chromium.services.media_session.MediaMetadata;
-import org.chromium.url.GURL;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.browser_ui.media.MediaSessionHelper;
+import org.monyhar.components.favicon.LargeIconBridge;
+import org.monyhar.components.url_formatter.UrlFormatter;
+import org.monyhar.components.url_formatter.UrlFormatterJni;
+import org.monyhar.content_public.browser.MediaSession;
+import org.monyhar.content_public.browser.NavigationHandle;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.media_session.mojom.MediaSessionAction;
+import org.monyhar.net.GURLUtils;
+import org.monyhar.net.GURLUtilsJni;
+import org.monyhar.services.media_session.MediaMetadata;
+import org.monyhar.url.GURL;
 
 import java.util.Set;
 import java.util.stream.Collectors;

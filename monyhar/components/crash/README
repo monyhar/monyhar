@@ -2,7 +2,7 @@
 
 Crash is a [layered component] to enable it to be shared cleanly on iOS.
 
-[layered component]: (https://sites.google.com/a/chromium.org/dev/developers/design-documents/layered-components-design)
+[layered component]: (https://sites.google.com/a/monyhar.org/dev/developers/design-documents/layered-components-design)
 
 ## Debugging
 

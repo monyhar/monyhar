@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -16,25 +16,25 @@ import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.graphics.drawable.DrawableCompat;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ActivityTabProvider;
-import org.chromium.chrome.browser.DefaultBrowserInfo;
-import org.chromium.chrome.browser.app.appmenu.AppMenuPropertiesDelegateImpl;
-import org.chromium.chrome.browser.bookmarks.BookmarkBridge;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider.CustomTabsUiType;
-import org.chromium.chrome.browser.browserservices.ui.controller.Verifier;
-import org.chromium.chrome.browser.firstrun.FirstRunStatus;
-import org.chromium.chrome.browser.multiwindow.MultiWindowModeStateDispatcher;
-import org.chromium.chrome.browser.share.ShareHelper;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.toolbar.ToolbarManager;
-import org.chromium.chrome.browser.ui.appmenu.AppMenuHandler;
-import org.chromium.chrome.browser.ui.appmenu.CustomViewBinder;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.url.GURL;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ActivityTabProvider;
+import org.monyhar.chrome.browser.DefaultBrowserInfo;
+import org.monyhar.chrome.browser.app.appmenu.AppMenuPropertiesDelegateImpl;
+import org.monyhar.chrome.browser.bookmarks.BookmarkBridge;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider.CustomTabsUiType;
+import org.monyhar.chrome.browser.browserservices.ui.controller.Verifier;
+import org.monyhar.chrome.browser.firstrun.FirstRunStatus;
+import org.monyhar.chrome.browser.multiwindow.MultiWindowModeStateDispatcher;
+import org.monyhar.chrome.browser.share.ShareHelper;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.toolbar.ToolbarManager;
+import org.monyhar.chrome.browser.ui.appmenu.AppMenuHandler;
+import org.monyhar.chrome.browser.ui.appmenu.CustomViewBinder;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.url.GURL;
 
 import java.util.Collections;
 import java.util.HashMap;

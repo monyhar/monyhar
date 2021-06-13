@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.layouts;
+package org.monyhar.chrome.browser.compositor.layouts;
 
-import org.chromium.chrome.browser.layouts.LayoutStateProvider.LayoutStateObserver;
+import org.monyhar.chrome.browser.layouts.LayoutStateProvider.LayoutStateObserver;
 
 /**
  * An observer that listens for active {@link Layout} changes.

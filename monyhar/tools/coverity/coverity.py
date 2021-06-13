@@ -42,7 +42,7 @@ import time
 # --source-dir, --coverity-bin-dir, --coverity-intermediate-dir, and
 # --coverity-target command line flags.
 
-CHROMIUM_SOURCE_DIR = 'C:\\chromium.latest'
+CHROMIUM_SOURCE_DIR = 'C:\\monyhar.latest'
 
 # Relative to CHROMIUM_SOURCE_DIR.
 CHROMIUM_SOLUTION_FILE = 'src\\chrome\\chrome.sln'

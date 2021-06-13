@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.services.service_manager;
+package org.monyhar.services.service_manager;
 
-import org.chromium.mojo.bindings.Interface;
-import org.chromium.mojo.system.MessagePipeHandle;
-import org.chromium.mojo.system.MojoException;
-import org.chromium.service_manager.mojom.InterfaceProvider;
+import org.monyhar.mojo.bindings.Interface;
+import org.monyhar.mojo.system.MessagePipeHandle;
+import org.monyhar.mojo.system.MojoException;
+import org.monyhar.service_manager.mojom.InterfaceProvider;
 
 import java.util.HashMap;
 import java.util.Map;

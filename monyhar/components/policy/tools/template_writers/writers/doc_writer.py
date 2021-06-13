@@ -21,7 +21,7 @@ def GetWriter(config):
 class DocWriter(xml_formatted_writer.XMLFormattedWriter):
   '''Class for generating policy templates in HTML format.
   The intended use of the generated file is to upload it on
-  http://dev.chromium.org, therefore its format has some limitations:
+  http://dev.monyhar.org, therefore its format has some limitations:
   - No HTML and body tags.
   - Restricted set of element attributes: for example no 'class'.
   Because of the latter the output is styled using the 'style'
@@ -206,7 +206,7 @@ class DocWriter(xml_formatted_writer.XMLFormattedWriter):
     return self.config['win_config'][platform][key]
 
   def _GetOmaUriPath(self, policy):
-    product = 'googlechrome' if self.config['build'] == 'chrome' else 'chromium'
+    product = 'googlechrome' if self.config['build'] == 'chrome' else 'monyhar'
     group = '~' + policy['group'] if 'group' in policy else ''
     return '.\\Device\\Vendor\\MSFT\\Policy\\Config\\Chrome~Policy~%s%s\\%s' % (
         product, group, policy['name'])

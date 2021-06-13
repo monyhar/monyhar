@@ -69,7 +69,7 @@ npm run build && npm run serve-dist
 
 ### Deploy
 The Chromium Dependency Graph Visualizer is hosted at
-https://chromium-dependency-graph.firebaseapp.com.
+https://monyhar-dependency-graph.firebaseapp.com.
 
 If you are a Googler, you can see this [doc][deploy doc] for how to deploy a new
 version of the viewer.

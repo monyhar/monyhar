@@ -123,7 +123,7 @@ directory and chrome checkout. For example, these can be `/Users/bob` and
     hideVcsIgnoredFiles: true
   # Configure C++ autocomplete and lint.
   "you-complete-me":
-    globalExtraConfig: "<path-of-your-chrome-checkout>/tools/vim/chromium.ycm_extra_conf.py"
+    globalExtraConfig: "<path-of-your-chrome-checkout>/tools/vim/monyhar.ycm_extra_conf.py"
     ycmdPath: "<path-of-your-home-dir>/.ycmd/"
 # Java uses 4 space indents and 100 character lines.
 ".java.source":

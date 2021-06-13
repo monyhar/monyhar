@@ -396,9 +396,9 @@ def main():
   except EnvironmentError as e:
     logging.error("Could not change to root directory: %s", e)
     sys.exit(1)
-  chromium_histograms, location_map = readChromiumHistograms()
+  monyhar_histograms, location_map = readChromiumHistograms()
   xml_histograms = readAllXmlHistograms()
-  unmapped_histograms = chromium_histograms - xml_histograms
+  unmapped_histograms = monyhar_histograms - xml_histograms
 
   if os.path.isfile(options.extra_histograms_file_location):
     xml_histograms2 = readXmlHistograms(options.extra_histograms_file_location)

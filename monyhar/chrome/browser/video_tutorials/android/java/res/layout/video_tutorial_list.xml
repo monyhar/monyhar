@@ -31,7 +31,7 @@
             android:layout_height="0dp"
             android:layout_weight="1" />
 
-        <org.chromium.ui.widget.ChromeImageButton
+        <org.monyhar.ui.widget.ChromeImageButton
             android:id="@+id/close_button"
             android:layout_height="48dp"
             android:layout_width="48dp"
@@ -53,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-        <org.chromium.components.browser_ui.widget.FadingShadowView
+        <org.monyhar.components.browser_ui.widget.FadingShadowView
             android:id="@+id/toolbar_shadow"
             android:layout_width="match_parent"
             android:layout_height="@dimen/action_bar_shadow_height"/>

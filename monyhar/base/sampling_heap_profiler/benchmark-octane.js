@@ -4,7 +4,7 @@
 
 // To benchmark a specific version of Chrome set the CHROME_PATH environment
 // variable, e.g.:
-// $ CHROME_PATH=~/chromium/src/out/Release/chrome node benchmark-octane.js
+// $ CHROME_PATH=~/monyhar/src/out/Release/chrome node benchmark-octane.js
 
 const puppeteer = require('puppeteer');
 
@@ -18,7 +18,7 @@ async function runOctane(samplingRate) {
       browser = await puppeteer.launch({
           executablePath: process.env.CHROME_PATH, args, headless: true});
       const page = await browser.newPage();
-      await page.goto('https://chromium.github.io/octane/');
+      await page.goto('https://monyhar.github.io/octane/');
       await page.waitForSelector('#run-octane');  // Just in case.
       await page.click('#run-octane');
 

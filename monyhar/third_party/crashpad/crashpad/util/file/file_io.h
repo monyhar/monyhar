@@ -457,8 +457,8 @@ FileHandle LoggingOpenFileForReadAndWrite(const base::FilePath& path,
                                           FilePermissions permissions);
 
 // Fuchsia does not currently support any sort of file locking. See
-// https://crashpad.chromium.org/bug/196 and
-// https://crashpad.chromium.org/bug/217.
+// https://crashpad.monyhar.org/bug/196 and
+// https://crashpad.monyhar.org/bug/217.
 #if !defined(OS_FUCHSIA)
 
 //! \brief Locks the given \a file using `flock()` on POSIX or `LockFileEx()` on

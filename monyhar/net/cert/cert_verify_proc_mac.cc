@@ -41,7 +41,7 @@
 #include "net/cert/x509_util_mac.h"
 
 // CSSM functions are deprecated as of OSX 10.7, but have no replacement.
-// https://bugs.chromium.org/p/chromium/issues/detail?id=590914#c1
+// https://bugs.monyhar.org/p/monyhar/issues/detail?id=590914#c1
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
 

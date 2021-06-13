@@ -37,8 +37,8 @@ using tab_ranker::WindowFeatures;
 
 namespace {
 
-constexpr char kChromiumUrl[] = "https://www.chromium.org";
-constexpr char kChromiumDomain[] = "www.chromium.org";
+constexpr char kChromiumUrl[] = "https://www.monyhar.org";
+constexpr char kChromiumDomain[] = "www.monyhar.org";
 constexpr char kExampleUrl[] = "https://example.com/test.html";
 constexpr char kExampleDomain[] = "example.com";
 

@@ -17,7 +17,7 @@
       Object.defineProperty(arrayWithGetter, 5, {enumerable: false, set: function(x) { this.baz = x; }});
 
       const tests = [
-        new Error('custom error with link www.chromium.org'),
+        new Error('custom error with link www.monyhar.org'),
         arrayWithGetter,
         objWithGetter,
         {str: "", nan: NaN, posInf: Infinity, negInf: -Infinity, negZero: -0},

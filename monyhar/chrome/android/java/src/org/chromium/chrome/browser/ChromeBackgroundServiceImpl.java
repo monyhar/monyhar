@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.content.Context;
 
@@ -11,14 +11,14 @@ import androidx.annotation.VisibleForTesting;
 import com.google.android.gms.gcm.GcmNetworkManager;
 import com.google.android.gms.gcm.TaskParams;
 
-import org.chromium.base.Log;
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.browser.background_sync.BackgroundSyncBackgroundTaskScheduler;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
-import org.chromium.chrome.browser.init.MinimalBrowserStartupUtils;
-import org.chromium.chrome.browser.offlinepages.BackgroundScheduler;
-import org.chromium.chrome.browser.offlinepages.OfflinePageUtils;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.base.Log;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.browser.background_sync.BackgroundSyncBackgroundTaskScheduler;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.chrome.browser.init.MinimalBrowserStartupUtils;
+import org.monyhar.chrome.browser.offlinepages.BackgroundScheduler;
+import org.monyhar.chrome.browser.offlinepages.OfflinePageUtils;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 /**
  * {@link ChromeBackgroundService} is scheduled through the {@link GcmNetworkManager} when the

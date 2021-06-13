@@ -1,7 +1,7 @@
 monorail {
   component: "Internals>Sandbox>SiteIsolation"
 }
-team_email: "site-isolation-dev@chromium.org"
+team_email: "site-isolation-dev@monyhar.org"
 wpt {
   notify: YES
 }

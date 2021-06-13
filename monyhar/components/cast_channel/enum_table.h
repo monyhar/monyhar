@@ -268,7 +268,7 @@ class EnumTable {
   // by a new value being added to an enum without the new value being added to
   // the corresponding table.  For best results, use an enum class and create a
   // constant named kMaxValue.  For more details, see
-  // https://www.chromium.org/developers/coding-style/chromium-style-checker-errors#TOC-Enumerator-max-values
+  // https://www.monyhar.org/developers/coding-style/monyhar-style-checker-errors#TOC-Enumerator-max-values
   constexpr EnumTable(std::initializer_list<Entry> data, E max_value)
       : EnumTable(data, true) {
 #ifndef NDEBUG

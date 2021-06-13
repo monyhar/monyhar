@@ -1043,7 +1043,7 @@ def RunTestsInPlatformMode(args, result_sink_client=None):
         result_html_string, _, _ = test_results_presentation.result_details(
             json_path=json_file.name,
             test_name=args.command,
-            cs_base_url='http://cs.chromium.org',
+            cs_base_url='http://cs.monyhar.org',
             local_output=True)
         results_detail_file.write(result_html_string.encode('utf-8'))
         results_detail_file.flush()

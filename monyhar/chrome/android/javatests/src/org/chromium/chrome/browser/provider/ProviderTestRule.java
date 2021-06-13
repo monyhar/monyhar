@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.provider;
+package org.monyhar.chrome.browser.provider;
 
 import android.content.ContentProvider;
 import android.content.ContentResolver;
@@ -16,8 +16,8 @@ import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /**
  * Base class for Chrome's ContentProvider tests.

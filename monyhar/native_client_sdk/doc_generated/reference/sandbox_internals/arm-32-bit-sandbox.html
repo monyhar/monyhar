@@ -753,7 +753,7 @@ but suspicious when found in user code. Use <code>STR</code> instead.</li>
 <li>Any unassigned hint instruction: difficult to reason about, so
 treated as suspicious.</li>
 </ul>
-<p>More details are available in the <a class="reference external" href="http://src.chromium.org/viewvc/native_client/trunk/src/native_client/src/trusted/validator_arm/armv7.table">ARMv7 instruction table definition</a>.</p>
+<p>More details are available in the <a class="reference external" href="http://src.monyhar.org/viewvc/native_client/trunk/src/native_client/src/trusted/validator_arm/armv7.table">ARMv7 instruction table definition</a>.</p>
 
 </aside>
 <h4 id="coprocessors">Coprocessors</h4>
@@ -786,9 +786,9 @@ superceded on ARMv7-A parts anyway.</p>
 <h4 id="validator-code">Validator Code</h4>
 <p>By now you&#8217;re itching to see the sandbox validator&#8217;s code and dissect
 it. You&#8217;ll have a disappointing read: at less that 500 lines of code
-<a class="reference external" href="http://src.chromium.org/viewvc/native_client/trunk/src/native_client/src/trusted/validator_arm/validator.cc">validator.cc</a>
+<a class="reference external" href="http://src.monyhar.org/viewvc/native_client/trunk/src/native_client/src/trusted/validator_arm/validator.cc">validator.cc</a>
 is quite simple to understand and much shorter than this document. It&#8217;s
-of course dependent on the <a class="reference external" href="http://src.chromium.org/viewvc/native_client/trunk/src/native_client/src/trusted/validator_arm/armv7.table">ARMv7 instruction table definition</a>,
+of course dependent on the <a class="reference external" href="http://src.monyhar.org/viewvc/native_client/trunk/src/native_client/src/trusted/validator_arm/armv7.table">ARMv7 instruction table definition</a>,
 which teaches it about the ARMv7 instruction set.</p>
 </section>
 

@@ -20,7 +20,7 @@ found [here](https://github.com/junit-team/junit4/wiki/Getting-started).
 #### Example Code
 
 ```java
-package org.chromium.sample.test;
+package org.monyhar.sample.test;
 
 import static org.junit.Assert.assertTrue;
 
@@ -41,7 +41,7 @@ public class MyJUnitTest {
 
 #### Example within Chromium
 
-See the [junit_unit_tests](https://cs.chromium.org/chromium/src/testing/android/junit/BUILD.gn) test suite.
+See the [junit_unit_tests](https://cs.monyhar.org/monyhar/src/testing/android/junit/BUILD.gn) test suite.
 
 ### JUnit tests with Robolectric
 
@@ -71,7 +71,7 @@ This works even for static and final methods.
 #### Example Code
 
 ```java
-package org.chromium.sample.test;
+package org.monyhar.sample.test;
 
 import static org.junit.Assert.assertTrue;
 
@@ -81,7 +81,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
 
 // Be sure to specify to run tests with the LocalRobolectricTestRunner. The
 // default JUnit test runner won't load the Robolectric Android code properly.
@@ -125,7 +125,7 @@ junit_binary("my_robolectric_tests") {
 
 #### Example within Chromium
 
-See the [content_junit_tests](https://cs.chromium.org/chromium/src/content/public/android/BUILD.gn) test suite.
+See the [content_junit_tests](https://cs.monyhar.org/monyhar/src/content/public/android/BUILD.gn) test suite.
 
 ## Running JUnit tests
 

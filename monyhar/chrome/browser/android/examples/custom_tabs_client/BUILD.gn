@@ -55,14 +55,14 @@ android_resources("chrome_tabs_client_example_apk_resources") {
 
 android_apk("custom_tabs_client_example_apk") {
   sources = [
-    "src/java/org/chromium/customtabsclient/BottomBarManager.java",
-    "src/java/org/chromium/customtabsclient/BrowserActionsReceiver.java",
-    "src/java/org/chromium/customtabsclient/MainActivity.java",
-    "src/java/org/chromium/customtabsclient/SessionHelper.java",
-    "src/java/org/chromium/customtabsclient/shared/CustomTabsHelper.java",
-    "src/java/org/chromium/customtabsclient/shared/KeepAliveService.java",
-    "src/java/org/chromium/customtabsclient/shared/ServiceConnection.java",
-    "src/java/org/chromium/customtabsclient/shared/ServiceConnectionCallback.java",
+    "src/java/org/monyhar/customtabsclient/BottomBarManager.java",
+    "src/java/org/monyhar/customtabsclient/BrowserActionsReceiver.java",
+    "src/java/org/monyhar/customtabsclient/MainActivity.java",
+    "src/java/org/monyhar/customtabsclient/SessionHelper.java",
+    "src/java/org/monyhar/customtabsclient/shared/CustomTabsHelper.java",
+    "src/java/org/monyhar/customtabsclient/shared/KeepAliveService.java",
+    "src/java/org/monyhar/customtabsclient/shared/ServiceConnection.java",
+    "src/java/org/monyhar/customtabsclient/shared/ServiceConnectionCallback.java",
   ]
 
   android_manifest = "src/AndroidManifest.xml"

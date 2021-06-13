@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private.payments;
+package org.monyhar.weblayer_private.payments;
 
 import org.junit.After;
 import org.junit.Assert;
@@ -18,24 +18,24 @@ import org.mockito.junit.MockitoRule;
 import org.mockito.quality.Strictness;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.components.payments.ErrorMessageUtil;
-import org.chromium.components.payments.ErrorMessageUtilJni;
-import org.chromium.components.payments.PayerData;
-import org.chromium.components.payments.PaymentApp;
-import org.chromium.components.payments.PaymentApp.InstrumentDetailsCallback;
-import org.chromium.components.payments.PaymentAppFactoryDelegate;
-import org.chromium.components.payments.PaymentAppFactoryInterface;
-import org.chromium.components.payments.PaymentAppService;
-import org.chromium.components.payments.PaymentFeatureList;
-import org.chromium.components.payments.PaymentRequestService;
-import org.chromium.components.payments.test_support.ShadowPaymentFeatureList;
-import org.chromium.payments.mojom.PaymentRequest;
-import org.chromium.payments.mojom.PaymentRequestClient;
-import org.chromium.payments.mojom.PaymentResponse;
-import org.chromium.weblayer_private.payments.test_support.WebLayerPaymentRequestBuilder;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.components.payments.ErrorMessageUtil;
+import org.monyhar.components.payments.ErrorMessageUtilJni;
+import org.monyhar.components.payments.PayerData;
+import org.monyhar.components.payments.PaymentApp;
+import org.monyhar.components.payments.PaymentApp.InstrumentDetailsCallback;
+import org.monyhar.components.payments.PaymentAppFactoryDelegate;
+import org.monyhar.components.payments.PaymentAppFactoryInterface;
+import org.monyhar.components.payments.PaymentAppService;
+import org.monyhar.components.payments.PaymentFeatureList;
+import org.monyhar.components.payments.PaymentRequestService;
+import org.monyhar.components.payments.test_support.ShadowPaymentFeatureList;
+import org.monyhar.payments.mojom.PaymentRequest;
+import org.monyhar.payments.mojom.PaymentRequestClient;
+import org.monyhar.payments.mojom.PaymentResponse;
+import org.monyhar.weblayer_private.payments.test_support.WebLayerPaymentRequestBuilder;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -48,7 +48,7 @@ import java.util.Set;
 @RunWith(BaseRobolectricTestRunner.class)
 @Config(manifest = Config.NONE, shadows = {ShadowPaymentFeatureList.class})
 public class WebLayerPaymentRequestServiceTest {
-    private static final String METHOD_NAME = "https://www.chromium.org";
+    private static final String METHOD_NAME = "https://www.monyhar.org";
     private static final String STRINGIFIED_DETAILS = "test stringifiedDetails";
     private final ArgumentCaptor<InstrumentDetailsCallback> mPaymentAppCallbackCaptor =
             ArgumentCaptor.forClass(InstrumentDetailsCallback.class);

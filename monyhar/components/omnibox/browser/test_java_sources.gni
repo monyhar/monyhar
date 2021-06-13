@@ -3,6 +3,6 @@
 # found in the LICENSE file.
 
 omnibox_test_java_sources = [
-  "//components/omnibox/browser/android/javatests/src/org/chromium/components/omnibox/AutocompleteMatchBuilder.java",
-  "//components/omnibox/browser/android/javatests/src/org/chromium/components/omnibox/AutocompleteResultUnitTest.java",
+  "//components/omnibox/browser/android/javatests/src/org/monyhar/components/omnibox/AutocompleteMatchBuilder.java",
+  "//components/omnibox/browser/android/javatests/src/org/monyhar/components/omnibox/AutocompleteResultUnitTest.java",
 ]

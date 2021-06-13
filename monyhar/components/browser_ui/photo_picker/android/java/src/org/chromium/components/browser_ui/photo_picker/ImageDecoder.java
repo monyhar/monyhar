@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.photo_picker;
+package org.monyhar.components.browser_ui.photo_picker;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -11,8 +11,8 @@ import android.os.RemoteException;
 import android.os.SystemClock;
 import android.util.Pair;
 
-import org.chromium.base.Log;
-import org.chromium.base.annotations.NativeMethods;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.NativeMethods;
 
 import java.io.FileDescriptor;
 import java.io.IOException;

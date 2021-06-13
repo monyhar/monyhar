@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.find_in_page;
+package org.monyhar.components.find_in_page;
 
 import android.graphics.Rect;
 

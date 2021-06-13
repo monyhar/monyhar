@@ -4,4 +4,4 @@
 
 // This file is needed to compile IGpuProcessCallback.aidl.
 
-parcelable org.chromium.base.UnguessableToken;
+parcelable org.monyhar.base.UnguessableToken;

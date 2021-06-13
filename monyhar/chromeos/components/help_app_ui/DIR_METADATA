@@ -5,4 +5,4 @@ monorail {
   component: "Platform>Apps>Default"
 }
 os: CHROME_OS
-team_email: "cros-essential-apps-dev@chromium.org"
+team_email: "cros-essential-apps-dev@monyhar.org"

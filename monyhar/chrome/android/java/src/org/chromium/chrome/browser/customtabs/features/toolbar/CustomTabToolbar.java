@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs.features.toolbar;
+package org.monyhar.chrome.browser.customtabs.features.toolbar;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -39,47 +39,47 @@ import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.view.MarginLayoutParamsCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.omnibox.LocationBar;
-import org.chromium.chrome.browser.omnibox.LocationBarDataProvider;
-import org.chromium.chrome.browser.omnibox.OmniboxStub;
-import org.chromium.chrome.browser.omnibox.UrlBar;
-import org.chromium.chrome.browser.omnibox.UrlBarCoordinator;
-import org.chromium.chrome.browser.omnibox.UrlBarCoordinator.SelectionState;
-import org.chromium.chrome.browser.omnibox.UrlBarData;
-import org.chromium.chrome.browser.page_info.ChromePageInfo;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TrustedCdn;
-import org.chromium.chrome.browser.theme.ThemeUtils;
-import org.chromium.chrome.browser.toolbar.LocationBarModel;
-import org.chromium.chrome.browser.toolbar.ToolbarProgressBar;
-import org.chromium.chrome.browser.toolbar.top.ToolbarLayout;
-import org.chromium.chrome.browser.toolbar.top.ToolbarPhone;
-import org.chromium.chrome.browser.ui.native_page.NativePage;
-import org.chromium.components.browser_ui.styles.ChromeColors;
-import org.chromium.components.browser_ui.widget.TintedDrawable;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.components.page_info.PageInfoController;
-import org.chromium.components.page_info.PageInfoController.OpenedFromSource;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.common.ContentUrlConstants;
-import org.chromium.ui.KeyboardVisibilityDelegate;
-import org.chromium.ui.base.Clipboard;
-import org.chromium.ui.base.DeviceFormFactor;
-import org.chromium.ui.interpolators.BakedBezierInterpolator;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.text.SpanApplier;
-import org.chromium.ui.text.SpanApplier.SpanInfo;
-import org.chromium.ui.util.ColorUtils;
-import org.chromium.ui.widget.Toast;
-import org.chromium.url.GURL;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.omnibox.LocationBar;
+import org.monyhar.chrome.browser.omnibox.LocationBarDataProvider;
+import org.monyhar.chrome.browser.omnibox.OmniboxStub;
+import org.monyhar.chrome.browser.omnibox.UrlBar;
+import org.monyhar.chrome.browser.omnibox.UrlBarCoordinator;
+import org.monyhar.chrome.browser.omnibox.UrlBarCoordinator.SelectionState;
+import org.monyhar.chrome.browser.omnibox.UrlBarData;
+import org.monyhar.chrome.browser.page_info.ChromePageInfo;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TrustedCdn;
+import org.monyhar.chrome.browser.theme.ThemeUtils;
+import org.monyhar.chrome.browser.toolbar.LocationBarModel;
+import org.monyhar.chrome.browser.toolbar.ToolbarProgressBar;
+import org.monyhar.chrome.browser.toolbar.top.ToolbarLayout;
+import org.monyhar.chrome.browser.toolbar.top.ToolbarPhone;
+import org.monyhar.chrome.browser.ui.native_page.NativePage;
+import org.monyhar.components.browser_ui.styles.ChromeColors;
+import org.monyhar.components.browser_ui.widget.TintedDrawable;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.components.page_info.PageInfoController;
+import org.monyhar.components.page_info.PageInfoController.OpenedFromSource;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.common.ContentUrlConstants;
+import org.monyhar.ui.KeyboardVisibilityDelegate;
+import org.monyhar.ui.base.Clipboard;
+import org.monyhar.ui.base.DeviceFormFactor;
+import org.monyhar.ui.interpolators.BakedBezierInterpolator;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.text.SpanApplier;
+import org.monyhar.ui.text.SpanApplier.SpanInfo;
+import org.monyhar.ui.util.ColorUtils;
+import org.monyhar.ui.widget.Toast;
+import org.monyhar.url.GURL;
 
 /**
  * The Toolbar layout to be used for a custom tab. This is used for both phone and tablet UIs.

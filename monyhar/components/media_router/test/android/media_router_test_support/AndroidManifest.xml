@@ -4,11 +4,11 @@
        in the LICENSE file. -->
   <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:tools="http://schemas.android.com/tools"
-      package="org.chromium.components.media_router.test_support">
+      package="org.monyhar.components.media_router.test_support">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <application>
-        <service android:name="org.chromium.components.media_router.cast_emulator.TestMediaRouteProviderService"
+        <service android:name="org.monyhar.components.media_router.cast_emulator.TestMediaRouteProviderService"
                 android:label="testMediaRouteProviderService"
                 android:process=":mrp"
                 tools:ignore="ExportedService" >

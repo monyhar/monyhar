@@ -12,13 +12,13 @@ This heart beat lets the devices know that they are connected to a host.
 import sys
 import time
 
-import devil_chromium
+import devil_monyhar
 from devil.android import device_utils
 
 PULSE_PERIOD = 20
 
 def main():
-  devil_chromium.Initialize()
+  devil_monyhar.Initialize()
 
   while True:
     try:

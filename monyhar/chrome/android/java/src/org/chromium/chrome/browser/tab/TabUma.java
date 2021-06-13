@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab;
+package org.monyhar.chrome.browser.tab;
 
 import android.os.SystemClock;
 import android.text.format.DateUtils;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.UserData;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.tab.state.CriticalPersistedTabData;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.net.NetError;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.url.GURL;
+import org.monyhar.base.UserData;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.tab.state.CriticalPersistedTabData;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.net.NetError;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.url.GURL;
 
 /**
  * Centralizes UMA data collection for Tab management.

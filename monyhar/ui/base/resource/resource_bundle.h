@@ -290,7 +290,7 @@ class COMPONENT_EXPORT(UI_BASE) ResourceBundle {
   // Return the contents of a scale independent resource, decompressed
   // into a newly allocated string given the resource id. Todo: Look into
   // introducing an Async version of this function in the future.
-  // Bug: https://bugs.chromium.org/p/chromium/issues/detail?id=973417
+  // Bug: https://bugs.monyhar.org/p/monyhar/issues/detail?id=973417
   std::string LoadDataResourceString(int resource_id) const;
 
   // Return the contents of a scale dependent resource, decompressed into

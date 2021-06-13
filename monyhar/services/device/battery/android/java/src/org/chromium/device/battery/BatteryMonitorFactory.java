@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.device.battery;
+package org.monyhar.device.battery;
 
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.device.battery.BatteryStatusManager.BatteryStatusCallback;
-import org.chromium.device.mojom.BatteryMonitor;
-import org.chromium.device.mojom.BatteryStatus;
-import org.chromium.services.service_manager.InterfaceFactory;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.device.battery.BatteryStatusManager.BatteryStatusCallback;
+import org.monyhar.device.mojom.BatteryMonitor;
+import org.monyhar.device.mojom.BatteryStatus;
+import org.monyhar.services.service_manager.InterfaceFactory;
 
 import java.util.ArrayList;
 import java.util.HashSet;

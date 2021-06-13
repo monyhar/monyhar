@@ -8,5 +8,5 @@
 CHROMIUM_SRC=$(realpath $(dirname $(readlink -f $0))/../../../../..)
 python3 \
  $CHROMIUM_SRC/components/feed/core/v2/tools/textpb_to_binarypb.py \
-   --direction=reverse --chromium_path="$CHROMIUM_SRC" \
+   --direction=reverse --monyhar_path="$CHROMIUM_SRC" \
    --message=feedwire.Request

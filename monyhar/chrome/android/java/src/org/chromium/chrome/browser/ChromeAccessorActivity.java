@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.chrome.browser.share.ShareHelper;
-import org.chromium.chrome.browser.share.ShareRegistrationCoordinator.ShareBroadcastReceiver;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.chrome.browser.share.ShareHelper;
+import org.monyhar.chrome.browser.share.ShareRegistrationCoordinator.ShareBroadcastReceiver;
 
 /**
  * {@code ChromeActivityAccessor} is the base class for share options, which

@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.user_prefs;
+package org.monyhar.components.user_prefs;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.embedder_support.browser_context.BrowserContextHandle;
-import org.chromium.components.prefs.PrefService;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.embedder_support.browser_context.BrowserContextHandle;
+import org.monyhar.components.prefs.PrefService;
 
 /**
  * Helper for retrieving a {@link PrefService} from a {@link BrowserContextHandle}.

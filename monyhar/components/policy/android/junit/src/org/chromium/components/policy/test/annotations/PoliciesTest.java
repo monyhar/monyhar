@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.policy.test.annotations;
+package org.monyhar.components.policy.test.annotations;
 
 import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.CoreMatchers.is;
@@ -12,7 +12,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.BlockJUnit4ClassRunner;
 
-import org.chromium.components.policy.test.PolicyData;
+import org.monyhar.components.policy.test.PolicyData;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;

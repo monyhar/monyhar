@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs.features.toolbar;
+package org.monyhar.chrome.browser.customtabs.features.toolbar;
 
-import org.chromium.cc.input.BrowserControlsState;
-import org.chromium.chrome.browser.ActivityTabProvider;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsVisibilityManager;
-import org.chromium.chrome.browser.browser_controls.BrowserStateBrowserControlsVisibilityDelegate;
-import org.chromium.chrome.browser.dependency_injection.ActivityScope;
-import org.chromium.components.browser_ui.util.BrowserControlsVisibilityDelegate;
+import org.monyhar.cc.input.BrowserControlsState;
+import org.monyhar.chrome.browser.ActivityTabProvider;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsVisibilityManager;
+import org.monyhar.chrome.browser.browser_controls.BrowserStateBrowserControlsVisibilityDelegate;
+import org.monyhar.chrome.browser.dependency_injection.ActivityScope;
+import org.monyhar.components.browser_ui.util.BrowserControlsVisibilityDelegate;
 
 import javax.inject.Inject;
 

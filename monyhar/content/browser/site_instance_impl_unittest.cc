@@ -575,9 +575,9 @@ TEST_F(SiteInstanceTest, GetSiteForURL) {
   EXPECT_EQ(GURL("http://xn--snowperson-di0gka.net"), site_url);
 
   // Username and password are stripped out.
-  test_url = GURL("ftp://username:password@ftp.chromium.org/files/README");
+  test_url = GURL("ftp://username:password@ftp.monyhar.org/files/README");
   site_url = GetSiteForURL(test_url);
-  EXPECT_EQ(GURL("ftp://chromium.org"), site_url);
+  EXPECT_EQ(GURL("ftp://monyhar.org"), site_url);
 
   // Literal IP addresses of any flavor are okay.
   test_url = GURL("http://127.0.0.1/a.html");
@@ -638,10 +638,10 @@ TEST_F(SiteInstanceTest, GetSiteForURL) {
 
   // Blob URLs extract the site from the origin.
   test_url = GURL(
-      "blob:https://www.ftp.chromium.org/"
+      "blob:https://www.ftp.monyhar.org/"
       "4d4ff040-6d61-4446-86d3-13ca07ec9ab9");
   site_url = GetSiteForURL(test_url);
-  EXPECT_EQ(GURL("https://chromium.org"), site_url);
+  EXPECT_EQ(GURL("https://monyhar.org"), site_url);
 
   // Blob URLs with file origin also extract the site from the origin.
   test_url = GURL("blob:file:///1029e5a4-2983-4b90-a585-ed217563acfeb");

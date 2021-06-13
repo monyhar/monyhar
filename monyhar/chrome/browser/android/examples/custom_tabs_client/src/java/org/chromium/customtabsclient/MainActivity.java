@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.customtabsclient;
+package org.monyhar.customtabsclient;
 
 import android.app.ActivityManager;
 import android.app.ActivityOptions;
@@ -39,9 +39,9 @@ import androidx.browser.customtabs.CustomTabsIntent;
 import androidx.browser.customtabs.CustomTabsServiceConnection;
 import androidx.browser.customtabs.CustomTabsSession;
 
-import org.chromium.customtabsclient.shared.CustomTabsHelper;
-import org.chromium.customtabsclient.shared.ServiceConnection;
-import org.chromium.customtabsclient.shared.ServiceConnectionCallback;
+import org.monyhar.customtabsclient.shared.CustomTabsHelper;
+import org.monyhar.customtabsclient.shared.ServiceConnection;
+import org.monyhar.customtabsclient.shared.ServiceConnectionCallback;
 
 import java.util.ArrayList;
 import java.util.List;

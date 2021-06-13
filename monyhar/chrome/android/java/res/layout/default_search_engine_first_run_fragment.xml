@@ -18,7 +18,7 @@
         android:layout_height="0dp"
         android:layout_weight="1" >
 
-        <org.chromium.chrome.browser.firstrun.FirstRunChooserView
+        <org.monyhar.chrome.browser.firstrun.FirstRunChooserView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fadeScrollbars="false"
@@ -47,7 +47,7 @@
 
                 <View style="@style/HorizontalDivider" />
 
-                <org.chromium.components.browser_ui.widget.RadioButtonLayout
+                <org.monyhar.components.browser_ui.widget.RadioButtonLayout
                     android:id="@+id/default_search_engine_dialog_options"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
                     android:layout_marginStart="12dp"
                     android:layout_marginEnd="@dimen/signin_chooser_padding" />
             </LinearLayout>
-        </org.chromium.chrome.browser.firstrun.FirstRunChooserView>
+        </org.monyhar.chrome.browser.firstrun.FirstRunChooserView>
     </FrameLayout>
 
     <TextView
@@ -66,7 +66,7 @@
         android:padding="@dimen/signin_chooser_padding" />
 
     <!--suppress ButtonStyle -->
-    <org.chromium.ui.widget.ButtonCompat
+    <org.monyhar.ui.widget.ButtonCompat
         android:id="@+id/button_primary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

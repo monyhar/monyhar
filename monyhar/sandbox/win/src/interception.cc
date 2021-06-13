@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 // For information about interceptions as a whole see
-// http://dev.chromium.org/developers/design-documents/sandbox .
+// http://dev.monyhar.org/developers/design-documents/sandbox .
 
 #include "sandbox/win/src/interception.h"
 

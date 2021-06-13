@@ -6,7 +6,7 @@
 
 // logging.h is a widely included header and its size has significant impact on
 // build time. Try not to raise this limit unless absolutely necessary. See
-// https://chromium.googlesource.com/chromium/src/+/HEAD/docs/wmax_tokens.md
+// https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/wmax_tokens.md
 #ifndef NACL_TC_REV
 #pragma clang max_tokens_here 350000
 #endif  // NACL_TC_REV
@@ -736,7 +736,7 @@ LogMessage::~LogMessage() {
       const class OSLog {
        public:
         explicit OSLog(const char* subsystem)
-            : os_log_(subsystem ? os_log_create(subsystem, "chromium_logging")
+            : os_log_(subsystem ? os_log_create(subsystem, "monyhar_logging")
                                 : OS_LOG_DEFAULT) {}
         OSLog(const OSLog&) = delete;
         OSLog& operator=(const OSLog&) = delete;
@@ -785,7 +785,7 @@ LogMessage::~LogMessage() {
         priority = ANDROID_LOG_FATAL;
         break;
     }
-    const char kAndroidLogTag[] = "chromium";
+    const char kAndroidLogTag[] = "monyhar";
 #if DCHECK_IS_ON()
     // Split the output by new lines to prevent the Android system from
     // truncating the log.

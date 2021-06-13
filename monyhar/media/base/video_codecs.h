@@ -15,7 +15,7 @@ namespace media {
 
 class VideoColorSpace;
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.media
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.media
 enum VideoCodec {
   // These values are histogrammed over time; do not change their ordinal
   // values.  When deleting a codec replace it with a dummy value; when adding a
@@ -45,7 +45,7 @@ enum VideoCodec {
 // in content/renderer/pepper/ppb_video_decoder_impl.cc).
 // NOTE: These values are histogrammed over time in UMA so the values must never
 // ever change (add new values to tools/metrics/histograms/histograms.xml)
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.media
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.media
 enum VideoCodecProfile {
   // Keep the values in this enum unique, as they imply format (h.264 vs. VP8,
   // for example), and keep the values for a particular format grouped

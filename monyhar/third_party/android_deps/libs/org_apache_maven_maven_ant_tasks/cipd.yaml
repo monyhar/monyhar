@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@2.1.3.cr0
-package: chromium/third_party/android_deps/libs/org_apache_maven_maven_ant_tasks
+package: monyhar/third_party/android_deps/libs/org_apache_maven_maven_ant_tasks
 description: "Maven Ant Tasks"
 data:
 - file: maven-ant-tasks-2.1.3.jar

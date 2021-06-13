@@ -17,7 +17,7 @@ import sys
 
 from multiprocessing.pool import ThreadPool
 
-import devil_chromium
+import devil_monyhar
 
 from devil.android import device_denylist
 from devil.android import device_errors
@@ -254,7 +254,7 @@ def main():
   if args.output_directory:
     constants.SetOutputDirectory(args.output_directory)
 
-  devil_chromium.Initialize(output_directory=constants.GetOutDirectory(),
+  devil_monyhar.Initialize(output_directory=constants.GetOutDirectory(),
                             adb_path=args.adb_path)
 
   denylist = (device_denylist.Denylist(args.denylist_file)

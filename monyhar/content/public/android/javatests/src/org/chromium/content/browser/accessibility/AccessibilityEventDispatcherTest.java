@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.accessibility;
+package org.monyhar.content.browser.accessibility;
 
 import androidx.test.filters.SmallTest;
 
@@ -11,7 +11,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
 
 import java.util.HashMap;
 import java.util.HashSet;

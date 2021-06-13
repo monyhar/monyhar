@@ -19,8 +19,8 @@
 #include "build/build_config.h"
 
 #if BUILDFLAG(USE_TCMALLOC)
-#include "third_party/tcmalloc/chromium/src/config.h"
-#include "third_party/tcmalloc/chromium/src/gperftools/tcmalloc.h"
+#include "third_party/tcmalloc/monyhar/src/config.h"
+#include "third_party/tcmalloc/monyhar/src/gperftools/tcmalloc.h"
 #endif
 
 namespace base {

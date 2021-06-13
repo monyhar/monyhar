@@ -197,7 +197,7 @@ int GenerateDumpMain(int argc, char* argv[]) {
       return EXIT_FAILURE;
     }
 #elif defined(OS_LINUX) || defined(OS_CHROMEOS) || defined(OS_ANDROID)
-    // TODO(jperaza): https://crashpad.chromium.org/bug/30.
+    // TODO(jperaza): https://crashpad.monyhar.org/bug/30.
     ProcessSnapshotLinux process_snapshot;
     if (!process_snapshot.Initialize(nullptr)) {
       return EXIT_FAILURE;

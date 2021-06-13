@@ -59,7 +59,7 @@ TEST_F(ExtensionsInternalsUnitTest, WriteToStringPermissions) {
           .SetManifestKey("optional_permissions",
                           extensions::ListBuilder().Append("storage").Build())
           .AddPermission("https://example.com/*")
-          .AddContentScript("not-real.js", {"https://chromium.org/foo"})
+          .AddContentScript("not-real.js", {"https://monyhar.org/foo"})
           .Build();
   service()->AddExtension(extension.get());
 
@@ -89,7 +89,7 @@ TEST_F(ExtensionsInternalsUnitTest, WriteToStringPermissions) {
             "https://example.com/*");
   ASSERT_NE(active->FindListKey("scriptable_hosts"), nullptr);
   EXPECT_EQ(active->FindListKey("scriptable_hosts")->GetList()[0].GetString(),
-            "https://chromium.org/foo");
+            "https://monyhar.org/foo");
 
   base::Value* optional = permissions->FindDictKey("optional");
   EXPECT_EQ(optional->FindListKey("api")->GetList()[0].GetString(), "storage");

@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.layouts.components;
+package org.monyhar.chrome.browser.compositor.layouts.components;
 
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.RectF;
 
-import org.chromium.base.MathUtils;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.MathUtils;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * {@link LayoutTab} is used to keep track of a thumbnail's bitmap and position and to

@@ -27,7 +27,7 @@ class JavacOutputProcessor:
   def __init__(self, target_name):
     self._target_name = target_name
 
-    # Example: ../../ui/android/java/src/org/chromium/ui/base/Clipboard.java:45:
+    # Example: ../../ui/android/java/src/org/monyhar/ui/base/Clipboard.java:45:
     fileline_prefix = (
         r'(?P<fileline>(?P<file>[-.\w/\\]+.java):(?P<line>[0-9]+):)')
 
@@ -39,7 +39,7 @@ class JavacOutputProcessor:
 
     # Matches output modification performed by _ElaborateLineForUnknownSymbol()
     # so that it can be colorized.
-    # Example: org.chromium.base.Log found in dep //base:base_java.
+    # Example: org.monyhar.base.Log found in dep //base:base_java.
     self._found_in_dep_re = re.compile(
         r'(?P<full_message>[\w.]+ found in dep //[\w/:]+.)$')
 
@@ -47,18 +47,18 @@ class JavacOutputProcessor:
     # class/package is part of the error message.
     self._symbol_not_found_re_list = [
         # Example:
-        # error: package org.chromium.components.url_formatter does not exist
+        # error: package org.monyhar.components.url_formatter does not exist
         (True,
          re.compile(fileline_prefix +
                     r'( error: package [\w.]+ does not exist)$')),
         # Example: error: cannot find symbol
         (False, re.compile(fileline_prefix + r'( error: cannot find symbol)$')),
-        # Example: error: symbol not found org.chromium.url.GURL
+        # Example: error: symbol not found org.monyhar.url.GURL
         (True,
          re.compile(fileline_prefix + r'( error: symbol not found [\w.]+)$')),
     ]
 
-    # Example: import org.chromium.url.GURL;
+    # Example: import org.monyhar.url.GURL;
     self._import_re = re.compile(r'\s*import (?P<imported_class>[\w\.]+);$')
 
     self._warning_color = [

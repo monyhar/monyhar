@@ -176,7 +176,7 @@ IN_PROC_BROWSER_TEST_F(AutocompleteBrowserTest, MAYBE_Autocomplete) {
 
 IN_PROC_BROWSER_TEST_F(AutocompleteBrowserTest, TabAwayRevertSelect) {
   WaitForTemplateURLServiceToLoad();
-  // http://code.google.com/p/chromium/issues/detail?id=38385
+  // http://code.google.com/p/monyhar/issues/detail?id=38385
   // Make sure that tabbing away from an empty omnibox causes a revert
   // and select all.
   LocationBar* location_bar = GetLocationBar();

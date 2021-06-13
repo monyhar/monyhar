@@ -9,7 +9,7 @@ cross-origin accesses.
 ## Purpose of this document
 WebView provides some APIs that change the CORS behaviors, but details are not
 explained in the API documents. This document aims to clarify such detailed
-behaviors and implementation details to give WebView and chromium developers
+behaviors and implementation details to give WebView and monyhar developers
 hints to keep consistent behaviors among making code changes.
 
 ## TL;DR for new developers

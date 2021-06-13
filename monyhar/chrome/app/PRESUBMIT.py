@@ -4,7 +4,7 @@
 
 """Presubmit script for changes affecting chrome/app/
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See http://dev.monyhar.org/developers/how-tos/depottools/presubmit-scripts
 for more details about the presubmit API built into depot_tools.
 """
 
@@ -15,8 +15,8 @@ def _CheckNoProductNameInGeneratedResources(input_api, output_api):
   """Check that no PRODUCT_NAME placeholders are found in resources files.
 
   These kinds of strings prevent proper localization in some languages. For
-  more information, see the following chromium-dev thread:
-  https://groups.google.com/a/chromium.org/forum/#!msg/chromium-dev/PBs5JfR0Aoc/NOcIHII9u14J
+  more information, see the following monyhar-dev thread:
+  https://groups.google.com/a/monyhar.org/forum/#!msg/monyhar-dev/PBs5JfR0Aoc/NOcIHII9u14J
   """
 
   problems = []
@@ -30,8 +30,8 @@ def _CheckNoProductNameInGeneratedResources(input_api, output_api):
     return [output_api.PresubmitPromptWarning(
         "Don't use PRODUCT_NAME placeholders in string resources. Instead, add "
         "separate strings to google_chrome_strings.grd and "
-        "chromium_strings.grd. See http://goo.gl/6614MQ for more information."
-        "Problems with this check? Contact dubroy@chromium.org.",
+        "monyhar_strings.grd. See http://goo.gl/6614MQ for more information."
+        "Problems with this check? Contact dubroy@monyhar.org.",
         items=problems)]
   return []
 

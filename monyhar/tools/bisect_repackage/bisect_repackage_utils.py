@@ -4,7 +4,7 @@
 
 """Set of basic operations/utilities that are used by repacakging tool.
 
-These functions were mostly imported from build/scripts/common/chromium_utils
+These functions were mostly imported from build/scripts/common/monyhar_utils
 and build/scripts/common/slave_utils.
 """
 
@@ -145,7 +145,7 @@ def RunGsutilCommand(args):
   gsutil_path = CheckDepotToolsInPath()
   if gsutil_path is None:
     print ('Follow the instructions in this document '
-           'http://dev.chromium.org/developers/how-tos/install-depot-tools'
+           'http://dev.monyhar.org/developers/how-tos/install-depot-tools'
            ' to install depot_tools and then try again.')
     sys.exit(1)
   gsutil_path = os.path.join(gsutil_path, 'third_party', 'gsutil', 'gsutil')
@@ -278,7 +278,7 @@ def RemoveDirectory(*path):
     > mkdir test
     > mkdir test\1
     > mklink /D test\current test\1
-    > python -c "import chromium_utils; chromium_utils.RemoveDirectory('test')"
+    > python -c "import monyhar_utils; monyhar_utils.RemoveDirectory('test')"
     To avoid this issue, we pass this error-handling function to rmtree.  If
     we see the exact sort of failure, we ignore it.  All other failures we re-
     raise.

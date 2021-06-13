@@ -4,22 +4,22 @@
 
 ## Introduction
 
-These are instructions for collecting a CPU profile of chromium. All of the profiling methods described here produce output that can be view using the `pprof` tool. `pprof` is highly customizable; here's a screenshot of some example `pprof` output:
+These are instructions for collecting a CPU profile of monyhar. All of the profiling methods described here produce output that can be view using the `pprof` tool. `pprof` is highly customizable; here's a screenshot of some example `pprof` output:
 
 ![pprof output screenshot](./media/profile-screenshot.png)
 
-This doc is intended to be an authoritative one-stop resource for profiling chromium. At the time of writing, there are a number of existing docs with profiling instructions, in varying states of obsolescence:
+This doc is intended to be an authoritative one-stop resource for profiling monyhar. At the time of writing, there are a number of existing docs with profiling instructions, in varying states of obsolescence:
 
 * [./linux/profiling.md](./linux/profiling.md)
 * [./profiling_content_shell_on_android.md](./profiling_content_shell_on_android.md)
-* https://www.chromium.org/developers/profiling-chromium-and-webkit
-* https://www.chromium.org/developers/telemetry/profiling
+* https://www.monyhar.org/developers/profiling-monyhar-and-webkit
+* https://www.monyhar.org/developers/telemetry/profiling
 
 ***promo 
 CPU profiling is not to be confused with tracing or task profiling:
 
-* https://www.chromium.org/developers/how-tos/trace-event-profiling-tool
-* https://www.chromium.org/developers/threaded-task-tracking
+* https://www.monyhar.org/developers/how-tos/trace-event-profiling-tool
+* https://www.monyhar.org/developers/threaded-task-tracking
 ***
 
 # Profiling on Linux
@@ -37,11 +37,11 @@ Profiling should always be done on a Release build, which has very similar perfo
 
 ## Profiling using built-in tcmalloc profiler
 
-Profiling support is built into tcmalloc and exposed in chromium, so any platform that uses tcmalloc should be able to generate profiling data without using external tools.
+Profiling support is built into tcmalloc and exposed in monyhar, so any platform that uses tcmalloc should be able to generate profiling data without using external tools.
 
 #### Preparing your environment
 
-By default, the profiler will take a sample 100 times per second. You can adjust this rate by setting the `CPUPROFILE_FREQUENCY` environment variable before launching chromium:
+By default, the profiler will take a sample 100 times per second. You can adjust this rate by setting the `CPUPROFILE_FREQUENCY` environment variable before launching monyhar:
 
     $ export CPUPROFILE_FREQUENCY=1000
     
@@ -172,14 +172,14 @@ kcachegrind callgrind.<pid>
 
 Android (Nougat and later) supports profiling using the [simpleperf](https://developer.android.com/ndk/guides/simpleperf) tool.
 
-Follow the [instructions](./android_build_instructions.md) for building and installing chromium on android. With chromium running on the device, run the following command to start profiling on the browser process (assuming your build is in `src/out/Release`):
+Follow the [instructions](./android_build_instructions.md) for building and installing monyhar on android. With monyhar running on the device, run the following command to start profiling on the browser process (assuming your build is in `src/out/Release`):
 
     $ src/out/Release/bin/chrome_public_apk profile
     Profiler is running; press Enter to stop...
     
 Once you stop the profiler, the profiling data will be copied off the device to the host machine and post-processed so it can be viewed in `pprof`, as described above.
 
-To profile the renderer process, you must have just one tab open in chromium, and use a command like this:
+To profile the renderer process, you must have just one tab open in monyhar, and use a command like this:
 
     $ src/out/Release/bin/chrome_public_apk profile --profile-process=renderer
     
@@ -193,7 +193,7 @@ The `--profile-process` and `--profile-thread` arguments support most of the com
 
 # Profiling on ChromeOS
 
-Follow the [simple chrome instructions](https://chromium.googlesource.com/chromiumos/docs/+/HEAD/simple_chrome_workflow.md), to build
+Follow the [simple chrome instructions](https://monyhar.googlesource.com/monyharos/docs/+/HEAD/simple_chrome_workflow.md), to build
 and deploy chrome to your chromeos device.  These instructions will set up a
 build directory for you, so be sure to `gn args out_${SDK_BOARD}/Release` to
 edit them and add the gn args listed above.

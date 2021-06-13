@@ -138,7 +138,7 @@ class ProducerEndpoint : public perfetto::ProducerEndpoint,
     // Can be called from any thread.
     // Chromium uses BufferExhaustedPolicy::kDrop to avoid stalling trace
     // writers when the chunks in the SMB are exhausted. Stalling could
-    // otherwise lead to deadlocks in chromium, because a stalled mojo IPC
+    // otherwise lead to deadlocks in monyhar, because a stalled mojo IPC
     // thread could prevent CommitRequest messages from reaching the perfetto
     // service.
     return MaybeSharedMemoryArbiter()->CreateTraceWriter(

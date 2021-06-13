@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package com.android.webview.chromium;
+package com.android.webview.monyhar;
 
 import android.annotation.TargetApi;
 import android.os.Build;
 
-import org.chromium.android_webview.AwServiceWorkerSettings;
+import org.monyhar.android_webview.AwServiceWorkerSettings;
 
 /**
  * Type adaptation layer between {@link android.webkit.ServiceWorkerWebSettings}
- * and {@link org.chromium.android_webview.AwServiceWorkerSettings}.
+ * and {@link org.monyhar.android_webview.AwServiceWorkerSettings}.
  */
 @SuppressWarnings("NoSynchronizedMethodCheck")
 @TargetApi(Build.VERSION_CODES.N)

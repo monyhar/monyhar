@@ -11,7 +11,7 @@
 class GURL;
 
 // WebappRegistry is the C++ counterpart of
-// org.chromium.chrome.browser.webapp's WebappRegistry in Java.
+// org.monyhar.chrome.browser.webapp's WebappRegistry in Java.
 // All methods in this class which make JNI calls should be declared virtual and
 // mocked out in C++ unit tests. The JNI call cannot be made in this environment
 // as the Java side will not be initialised.

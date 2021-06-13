@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.accessibility.settings;
+package org.monyhar.chrome.browser.accessibility.settings;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -25,20 +25,20 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.accessibility.FontSizePrefs;
-import org.chromium.chrome.browser.settings.SettingsActivityTestRule;
-import org.chromium.chrome.browser.util.ChromeAccessibilityUtil;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.browser_ui.settings.ChromeBaseCheckBoxPreference;
-import org.chromium.content_public.browser.ContentFeatureList;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.content_public.browser.test.util.UiUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.accessibility.FontSizePrefs;
+import org.monyhar.chrome.browser.settings.SettingsActivityTestRule;
+import org.monyhar.chrome.browser.util.ChromeAccessibilityUtil;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.browser_ui.settings.ChromeBaseCheckBoxPreference;
+import org.monyhar.content_public.browser.ContentFeatureList;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.content_public.browser.test.util.UiUtils;
 
 import java.text.NumberFormat;
 
@@ -173,7 +173,7 @@ public class AccessibilitySettingsTest {
 
         // First scroll to bottom of the page, then click.
         onView(ViewMatchers.isRoot()).perform(swipeUp());
-        onView(withText(org.chromium.chrome.R.string.accessibility_captions_title))
+        onView(withText(org.monyhar.chrome.R.string.accessibility_captions_title))
                 .perform(click());
         monitor.waitForActivityWithTimeout(CriteriaHelper.DEFAULT_MAX_TIME_TO_POLL);
         Assert.assertEquals("Monitor for has not been called", 1, monitor.getHits());
@@ -223,7 +223,7 @@ public class AccessibilitySettingsTest {
 
         // First scroll to bottom of the page, then click.
         onView(ViewMatchers.isRoot()).perform(swipeUp());
-        onView(withText(org.chromium.chrome.R.string.image_descriptions_settings_title))
+        onView(withText(org.monyhar.chrome.R.string.image_descriptions_settings_title))
                 .perform(click());
 
         monitor.waitForActivityWithTimeout(CriteriaHelper.DEFAULT_MAX_TIME_TO_POLL);

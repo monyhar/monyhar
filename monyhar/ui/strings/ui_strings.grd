@@ -9,7 +9,7 @@ need to be translated for each locale.-->
   <outputs>
     <!-- TODO add each of your output files.  Modify the three below, and add
     your own for your various languages.  See the user's guide
-    (https://www.chromium.org/developers/tools-we-use-in-chromium/grit/grit-users-guide)
+    (https://www.monyhar.org/developers/tools-we-use-in-monyhar/grit/grit-users-guide)
     for more details.
     Note that all output references are relative to the output directory
     which is specified at build time. -->

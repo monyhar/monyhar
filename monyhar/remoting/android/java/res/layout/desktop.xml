@@ -8,7 +8,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <org.chromium.chromoting.DesktopView android:id="@+id/desktop_view"
+    <org.monyhar.chromoting.DesktopView android:id="@+id/desktop_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
     <RelativeLayout

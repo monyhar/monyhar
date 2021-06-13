@@ -5,7 +5,7 @@
 syntax = "proto2";
 
 option optimize_for = LITE_RUNTIME;
-option java_package = "org.chromium.components.variations";
+option java_package = "org.monyhar.components.variations";
 
 package variations;
 
@@ -208,7 +208,7 @@ message Study {
   repeated Experiment experiment = 9;
 
   // Possible Chrome release channels.
-  // See: http://dev.chromium.org/getting-involved/dev-channel
+  // See: http://dev.monyhar.org/getting-involved/dev-channel
   enum Channel {
     // UNKNOWN value is defined here for the benefit of code using this enum
     // type, but is not actually meant to be encoded in the protobuf.

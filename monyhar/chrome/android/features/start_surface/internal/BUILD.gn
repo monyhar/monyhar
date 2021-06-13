@@ -45,23 +45,23 @@ android_resources("java_resources") {
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/features/start_surface/BottomBarCoordinator.java",
-    "java/src/org/chromium/chrome/features/start_surface/BottomBarView.java",
-    "java/src/org/chromium/chrome/features/start_surface/BottomBarViewBinder.java",
-    "java/src/org/chromium/chrome/features/start_surface/ExploreSurfaceCoordinator.java",
-    "java/src/org/chromium/chrome/features/start_surface/ExploreSurfaceFeedLifecycleManager.java",
-    "java/src/org/chromium/chrome/features/start_surface/ExploreSurfaceNavigationDelegate.java",
-    "java/src/org/chromium/chrome/features/start_surface/ExploreSurfaceViewBinder.java",
-    "java/src/org/chromium/chrome/features/start_surface/FeedPlaceholderCoordinator.java",
-    "java/src/org/chromium/chrome/features/start_surface/FeedPlaceholderLayout.java",
-    "java/src/org/chromium/chrome/features/start_surface/ReturnToStartSurfaceUtil.java",
-    "java/src/org/chromium/chrome/features/start_surface/SecondaryTasksSurfaceViewBinder.java",
-    "java/src/org/chromium/chrome/features/start_surface/StartSurfaceCoordinator.java",
-    "java/src/org/chromium/chrome/features/start_surface/StartSurfaceDelegate.java",
-    "java/src/org/chromium/chrome/features/start_surface/StartSurfaceLayout.java",
-    "java/src/org/chromium/chrome/features/start_surface/StartSurfaceMediator.java",
-    "java/src/org/chromium/chrome/features/start_surface/StartSurfaceProperties.java",
-    "java/src/org/chromium/chrome/features/start_surface/TasksSurfaceViewBinder.java",
+    "java/src/org/monyhar/chrome/features/start_surface/BottomBarCoordinator.java",
+    "java/src/org/monyhar/chrome/features/start_surface/BottomBarView.java",
+    "java/src/org/monyhar/chrome/features/start_surface/BottomBarViewBinder.java",
+    "java/src/org/monyhar/chrome/features/start_surface/ExploreSurfaceCoordinator.java",
+    "java/src/org/monyhar/chrome/features/start_surface/ExploreSurfaceFeedLifecycleManager.java",
+    "java/src/org/monyhar/chrome/features/start_surface/ExploreSurfaceNavigationDelegate.java",
+    "java/src/org/monyhar/chrome/features/start_surface/ExploreSurfaceViewBinder.java",
+    "java/src/org/monyhar/chrome/features/start_surface/FeedPlaceholderCoordinator.java",
+    "java/src/org/monyhar/chrome/features/start_surface/FeedPlaceholderLayout.java",
+    "java/src/org/monyhar/chrome/features/start_surface/ReturnToStartSurfaceUtil.java",
+    "java/src/org/monyhar/chrome/features/start_surface/SecondaryTasksSurfaceViewBinder.java",
+    "java/src/org/monyhar/chrome/features/start_surface/StartSurfaceCoordinator.java",
+    "java/src/org/monyhar/chrome/features/start_surface/StartSurfaceDelegate.java",
+    "java/src/org/monyhar/chrome/features/start_surface/StartSurfaceLayout.java",
+    "java/src/org/monyhar/chrome/features/start_surface/StartSurfaceMediator.java",
+    "java/src/org/monyhar/chrome/features/start_surface/StartSurfaceProperties.java",
+    "java/src/org/monyhar/chrome/features/start_surface/TasksSurfaceViewBinder.java",
   ]
 
   deps = [
@@ -103,5 +103,5 @@ android_library("java") {
     }
     proguard_configs += [ "proguard.flags" ]
   }
-  resources_package = "org.chromium.chrome.start_surface"
+  resources_package = "org.monyhar.chrome.start_surface"
 }

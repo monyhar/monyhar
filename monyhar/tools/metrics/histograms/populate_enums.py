@@ -30,7 +30,7 @@ def _GetEventDetails(event):
   """
   name = event.getAttribute('name')
   # The value is UKM event name hash truncated to 31 bits. This is recorded in
-  # https://cs.chromium.org/chromium/src/components/ukm/ukm_recorder_impl.cc?q=LogEventHashasUmaHistogram
+  # https://cs.monyhar.org/monyhar/src/components/ukm/ukm_recorder_impl.cc?q=LogEventHashasUmaHistogram
   hash = codegen.HashName(name) & 0x7fffffff
 
   def _HasDirectObsoleteTag(node):

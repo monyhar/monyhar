@@ -314,9 +314,9 @@ class PolicyJson(skeleton_gatherer.SkeletonGatherer):
     if not defines:
       raise Exception('Must pass valid defines')
 
-    if '_chromium' in defines:
+    if '_monyhar' in defines:
       self._config = {
-        'build': 'chromium',
+        'build': 'monyhar',
         'app_name': 'Chromium',
         'frame_name': 'Chromium Frame',
         'os_name': 'Chromium OS',

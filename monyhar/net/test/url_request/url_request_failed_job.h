@@ -20,7 +20,7 @@ namespace net {
 class URLRequestFailedJob : public URLRequestJob {
  public:
   // A Java counterpart will be generated for this enum.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.net.test
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.net.test
   enum FailurePhase {
     START = 0,
     READ_SYNC = 1,

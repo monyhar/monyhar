@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.continuous_search;
+package org.monyhar.chrome.browser.continuous_search;
 
 import androidx.test.core.app.ApplicationProvider;
 
@@ -14,21 +14,21 @@ import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Mockito;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.chrome.browser.continuous_search.ContinuousSearchListProperties.ListItemProperties;
-import org.chromium.chrome.browser.continuous_search.ContinuousSearchListProperties.ListItemType;
-import org.chromium.chrome.browser.continuous_search.ContinuousSearchListProperties.ProviderProperties;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.theme.ThemeColorProvider;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.NavigationController;
-import org.chromium.content_public.browser.NavigationEntry;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.modelutil.MVCListAdapter;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.url.GURL;
-import org.chromium.url.JUnitTestGURLs;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.chrome.browser.continuous_search.ContinuousSearchListProperties.ListItemProperties;
+import org.monyhar.chrome.browser.continuous_search.ContinuousSearchListProperties.ListItemType;
+import org.monyhar.chrome.browser.continuous_search.ContinuousSearchListProperties.ProviderProperties;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.theme.ThemeColorProvider;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.NavigationController;
+import org.monyhar.content_public.browser.NavigationEntry;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.modelutil.MVCListAdapter;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.url.GURL;
+import org.monyhar.url.JUnitTestGURLs;
 
 import java.util.Arrays;
 

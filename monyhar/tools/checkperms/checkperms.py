@@ -79,7 +79,7 @@ NON_EXECUTABLE_EXTENSIONS = (
   'c',
   'cc',
   'cfg',
-  'chromium',
+  'monyhar',
   'cpp',
   'crx',
   'cs',

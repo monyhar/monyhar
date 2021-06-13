@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.offlinepages.downloads;
+package org.monyhar.chrome.browser.offlinepages.downloads;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -13,30 +13,30 @@ import android.provider.Browser;
 
 import androidx.browser.customtabs.CustomTabsIntent;
 
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.LaunchIntentDispatcher;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider.CustomTabsUiType;
-import org.chromium.chrome.browser.customtabs.CustomTabIntentDataProvider;
-import org.chromium.chrome.browser.download.DownloadActivity;
-import org.chromium.chrome.browser.download.DownloadManagerService;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.offlinepages.OfflinePageOrigin;
-import org.chromium.chrome.browser.offlinepages.OfflinePageUtils;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabLaunchType;
-import org.chromium.chrome.browser.tabmodel.AsyncTabCreationParams;
-import org.chromium.chrome.browser.tabmodel.document.TabDelegate;
-import org.chromium.components.offline_items_collection.LaunchLocation;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.LaunchIntentDispatcher;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider.CustomTabsUiType;
+import org.monyhar.chrome.browser.customtabs.CustomTabIntentDataProvider;
+import org.monyhar.chrome.browser.download.DownloadActivity;
+import org.monyhar.chrome.browser.download.DownloadManagerService;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.offlinepages.OfflinePageOrigin;
+import org.monyhar.chrome.browser.offlinepages.OfflinePageUtils;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabLaunchType;
+import org.monyhar.chrome.browser.tabmodel.AsyncTabCreationParams;
+import org.monyhar.chrome.browser.tabmodel.document.TabDelegate;
+import org.monyhar.components.offline_items_collection.LaunchLocation;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.ui.widget.Toast;
 
 /**
  * Serves as an interface between Download Home UI and offline page related items that are to be

@@ -6,13 +6,13 @@ This directory contains checked out and reduced code from web-platform-tests
 (https://github.com/web-platform-tests/wpt/) required to run WPT tests as part
 of Blink's test infrastructure and some maintenance/configuration code.
 
-For licensing, see README.chromium
+For licensing, see README.monyhar
 
 **
 
 Files in this directory (non third-party)
 
-README.chromium
+README.monyhar
 ===============
 Parseable details on the project name, URL, license, etc.
 
@@ -79,7 +79,7 @@ the desired HEAD position. You can then call "./checkout.sh clone" which will
 pull in all the code.
 
 It is also important to update the hashes in the 'Version:' fields of
-//third_party/wpt_tools/README.chromium. While you're in this file, look at the
+//third_party/wpt_tools/README.monyhar. While you're in this file, look at the
 "Local Modifications" section which lists ways in which Chromium has diverged
 from WPT. Make sure these modifications are persisted when reviewing the changes
 being made.

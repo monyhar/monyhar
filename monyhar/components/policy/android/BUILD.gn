@@ -5,11 +5,11 @@
 import("//build/config/android/rules.gni")
 
 _jni_sources = [
-  "java/src/org/chromium/components/policy/CombinedPolicyProvider.java",
-  "java/src/org/chromium/components/policy/PolicyCacheUpdater.java",
-  "java/src/org/chromium/components/policy/PolicyConverter.java",
-  "java/src/org/chromium/components/policy/PolicyMap.java",
-  "java/src/org/chromium/components/policy/PolicyService.java",
+  "java/src/org/monyhar/components/policy/CombinedPolicyProvider.java",
+  "java/src/org/monyhar/components/policy/PolicyCacheUpdater.java",
+  "java/src/org/monyhar/components/policy/PolicyConverter.java",
+  "java/src/org/monyhar/components/policy/PolicyMap.java",
+  "java/src/org/monyhar/components/policy/PolicyService.java",
 ]
 
 java_cpp_strings("java_switches_srcjar") {
@@ -28,11 +28,11 @@ android_library("policy_java") {
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
 
   sources = _jni_sources + [
-              "java/src/org/chromium/components/policy/AbstractAppRestrictionsProvider.java",
-              "java/src/org/chromium/components/policy/AppRestrictionsProvider.java",
-              "java/src/org/chromium/components/policy/PolicyCache.java",
-              "java/src/org/chromium/components/policy/PolicyCacheProvider.java",
-              "java/src/org/chromium/components/policy/PolicyProvider.java",
+              "java/src/org/monyhar/components/policy/AbstractAppRestrictionsProvider.java",
+              "java/src/org/monyhar/components/policy/AppRestrictionsProvider.java",
+              "java/src/org/monyhar/components/policy/PolicyCache.java",
+              "java/src/org/monyhar/components/policy/PolicyCacheProvider.java",
+              "java/src/org/monyhar/components/policy/PolicyProvider.java",
             ]
 }
 
@@ -47,8 +47,8 @@ android_library("policy_java_test_support") {
     "//third_party/junit",
   ]
   sources = [
-    "javatests/src/org/chromium/components/policy/test/PolicyData.java",
-    "javatests/src/org/chromium/components/policy/test/annotations/Policies.java",
+    "javatests/src/org/monyhar/components/policy/test/PolicyData.java",
+    "javatests/src/org/monyhar/components/policy/test/annotations/Policies.java",
   ]
 }
 
@@ -62,12 +62,12 @@ java_library("components_policy_junit_tests") {
   bypass_platform_checks = true
   testonly = true
   sources = [
-    "junit/src/org/chromium/components/policy/AbstractAppRestrictionsProviderTest.java",
-    "junit/src/org/chromium/components/policy/CombinedPolicyProviderTest.java",
-    "junit/src/org/chromium/components/policy/PolicyCacheProviderTest.java",
-    "junit/src/org/chromium/components/policy/PolicyCacheTest.java",
-    "junit/src/org/chromium/components/policy/PolicyConverterTest.java",
-    "junit/src/org/chromium/components/policy/test/annotations/PoliciesTest.java",
+    "junit/src/org/monyhar/components/policy/AbstractAppRestrictionsProviderTest.java",
+    "junit/src/org/monyhar/components/policy/CombinedPolicyProviderTest.java",
+    "junit/src/org/monyhar/components/policy/PolicyCacheProviderTest.java",
+    "junit/src/org/monyhar/components/policy/PolicyCacheTest.java",
+    "junit/src/org/monyhar/components/policy/PolicyConverterTest.java",
+    "junit/src/org/monyhar/components/policy/test/annotations/PoliciesTest.java",
   ]
   deps = [
     ":policy_java",
@@ -83,9 +83,9 @@ java_library("components_policy_junit_tests") {
 }
 
 _test_jni_sources = [
-  "javatests/src/org/chromium/components/policy/test/PolicyCacheUpdaterTestSupporter.java",
-  "javatests/src/org/chromium/components/policy/test/PolicyMapTestSupporter.java",
-  "javatests/src/org/chromium/components/policy/test/PolicyServiceTestSupporter.java",
+  "javatests/src/org/monyhar/components/policy/test/PolicyCacheUpdaterTestSupporter.java",
+  "javatests/src/org/monyhar/components/policy/test/PolicyMapTestSupporter.java",
+  "javatests/src/org/monyhar/components/policy/test/PolicyServiceTestSupporter.java",
 ]
 
 android_library("native_test_support_java") {

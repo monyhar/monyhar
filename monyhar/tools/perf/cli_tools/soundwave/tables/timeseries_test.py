@@ -14,7 +14,7 @@ def SamplePoint(point_id, value, timestamp=None, missing_commit_pos=False):
   """Build a sample point as returned by timeseries2 API."""
   revisions = {
       'r_commit_pos': str(point_id),
-      'r_chromium': 'chromium@%d' % point_id,
+      'r_monyhar': 'monyhar@%d' % point_id,
   }
   annotations = {
       'a_tracing_uri': 'http://example.com/trace/%d' % point_id
@@ -77,7 +77,7 @@ class TestTimeSeries(unittest.TestCase):
         'test_path': test_path,
         'improvement_direction': 1,
         'timeseries': [
-            ['revision', 'value', 'timestamp', 'r_commit_pos', 'r_chromium'],
+            ['revision', 'value', 'timestamp', 'r_commit_pos', 'r_monyhar'],
             [547397, 2300.3, '2018-04-01T14:16:32.000', '547397', 'adb123'],
             [547398, 2750.9, '2018-04-01T18:24:04.000', '547398', 'cde456'],
             [547423, 2342.2, '2018-04-02T02:19:00.000', '547423', 'fab789'],
@@ -103,7 +103,7 @@ class TestTimeSeries(unittest.TestCase):
     self.assertEqual(point['timestamp'], datetime.datetime(
         year=2018, month=4, day=1, hour=14, minute=16, second=32))
     self.assertEqual(point['commit_pos'], 547397)
-    self.assertEqual(point['chromium_rev'], 'adb123')
+    self.assertEqual(point['monyhar_rev'], 'adb123')
     self.assertEqual(point['clank_rev'], None)
 
   def testDataFrameFromJsonV2(self):
@@ -141,7 +141,7 @@ class TestTimeSeries(unittest.TestCase):
     self.assertEqual(point['timestamp'], datetime.datetime(
         year=2018, month=4, day=1, hour=14, minute=16, second=32))
     self.assertEqual(point['commit_pos'], 547397)
-    self.assertEqual(point['chromium_rev'], 'chromium@547397')
+    self.assertEqual(point['monyhar_rev'], 'monyhar@547397')
     self.assertEqual(point['clank_rev'], None)
 
   def testDataFrameFromJson_withSummaryMetric(self):

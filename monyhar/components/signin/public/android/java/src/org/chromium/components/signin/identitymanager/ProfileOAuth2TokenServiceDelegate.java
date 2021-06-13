@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.signin.identitymanager;
+package org.monyhar.components.signin.identitymanager;
 
 import android.accounts.Account;
 
@@ -10,17 +10,17 @@ import androidx.annotation.MainThread;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Promise;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.signin.AccessTokenData;
-import org.chromium.components.signin.AccountManagerFacade;
-import org.chromium.components.signin.AccountManagerFacadeProvider;
-import org.chromium.components.signin.AccountUtils;
-import org.chromium.components.signin.AuthException;
-import org.chromium.components.signin.ConnectionRetry;
-import org.chromium.components.signin.ConnectionRetry.AuthTask;
+import org.monyhar.base.Promise;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.signin.AccessTokenData;
+import org.monyhar.components.signin.AccountManagerFacade;
+import org.monyhar.components.signin.AccountManagerFacadeProvider;
+import org.monyhar.components.signin.AccountUtils;
+import org.monyhar.components.signin.AuthException;
+import org.monyhar.components.signin.ConnectionRetry;
+import org.monyhar.components.signin.ConnectionRetry.AuthTask;
 
 import java.util.List;
 

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui;
+package org.monyhar.ui;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -21,10 +21,10 @@ import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowLooper;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.test.ui.R;
-import org.chromium.ui.shadows.ShadowAsyncLayoutInflater;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.test.ui.R;
+import org.monyhar.ui.shadows.ShadowAsyncLayoutInflater;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

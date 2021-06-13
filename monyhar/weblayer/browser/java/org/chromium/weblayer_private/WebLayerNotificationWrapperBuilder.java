@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.annotation.TargetApi;
 import android.app.Notification;
@@ -14,12 +14,12 @@ import android.webkit.WebViewFactory;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxyImpl;
-import org.chromium.components.browser_ui.notifications.NotificationMetadata;
-import org.chromium.components.browser_ui.notifications.NotificationWrapperBuilder;
-import org.chromium.components.browser_ui.notifications.NotificationWrapperStandardBuilder;
-import org.chromium.components.browser_ui.notifications.channels.ChannelsInitializer;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxyImpl;
+import org.monyhar.components.browser_ui.notifications.NotificationMetadata;
+import org.monyhar.components.browser_ui.notifications.NotificationWrapperBuilder;
+import org.monyhar.components.browser_ui.notifications.NotificationWrapperStandardBuilder;
+import org.monyhar.components.browser_ui.notifications.channels.ChannelsInitializer;
 
 /** A notification builder for WebLayer which has extra logic to make icons work correctly. */
 public final class WebLayerNotificationWrapperBuilder extends NotificationWrapperStandardBuilder {

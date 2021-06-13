@@ -38,13 +38,13 @@
 #include "net/http/transport_security_state.h"
 #include "net/http/transport_security_state_test_util.h"
 #include "net/quic/address_utils.h"
-#include "net/quic/crypto/proof_verifier_chromium.h"
+#include "net/quic/crypto/proof_verifier_monyhar.h"
 #include "net/quic/mock_crypto_client_stream_factory.h"
 #include "net/quic/mock_quic_context.h"
 #include "net/quic/mock_quic_data.h"
 #include "net/quic/properties_based_quic_server_info.h"
-#include "net/quic/quic_chromium_alarm_factory.h"
-#include "net/quic/quic_chromium_client_session_peer.h"
+#include "net/quic/quic_monyhar_alarm_factory.h"
+#include "net/quic/quic_monyhar_client_session_peer.h"
 #include "net/quic/quic_http_stream.h"
 #include "net/quic/quic_http_utils.h"
 #include "net/quic/quic_server_info.h"
@@ -12748,7 +12748,7 @@ TEST_P(QuicStreamFactoryTest, YieldAfterPackets) {
   // Set up the TaskObserver to verify QuicChromiumPacketReader::StartReading
   // posts a task.
   // TODO(rtenneti): Change SpdySessionTestTaskObserver to NetTestTaskObserver??
-  SpdySessionTestTaskObserver observer("quic_chromium_packet_reader.cc",
+  SpdySessionTestTaskObserver observer("quic_monyhar_packet_reader.cc",
                                        "StartReading");
 
   QuicStreamRequest request(factory_.get());
@@ -12801,7 +12801,7 @@ TEST_P(QuicStreamFactoryTest, YieldAfterDuration) {
   // Set up the TaskObserver to verify QuicChromiumPacketReader::StartReading
   // posts a task.
   // TODO(rtenneti): Change SpdySessionTestTaskObserver to NetTestTaskObserver??
-  SpdySessionTestTaskObserver observer("quic_chromium_packet_reader.cc",
+  SpdySessionTestTaskObserver observer("quic_monyhar_packet_reader.cc",
                                        "StartReading");
 
   QuicStreamRequest request(factory_.get());

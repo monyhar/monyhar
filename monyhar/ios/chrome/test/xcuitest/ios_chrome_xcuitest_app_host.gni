@@ -46,14 +46,14 @@ template("ios_chrome_xcuitest_app_host") {
 
     info_plist_target = ":$_tweak_info_plist"
     extra_substitutions = [
-      "CHROMIUM_HANDOFF_ID=$chromium_handoff_id",
+      "CHROMIUM_HANDOFF_ID=$monyhar_handoff_id",
       "CHROMIUM_SHORT_NAME=$target_name",
       "CHROMIUM_URL_CHANNEL_SCHEME=$url_channel_scheme",
       "CHROMIUM_URL_SCHEME_1=$url_unsecure_scheme",
       "CHROMIUM_URL_SCHEME_2=$url_secure_scheme",
       "CHROMIUM_URL_SCHEME_3=$url_x_callback_scheme",
       "CHROMIUM_BUNDLE_ID=gtest.$target_name",
-      "CONTENT_WIDGET_EXTENSION_BUNDLE_ID=$chromium_bundle_id.ContentTodayExtension",
+      "CONTENT_WIDGET_EXTENSION_BUNDLE_ID=$monyhar_bundle_id.ContentTodayExtension",
       "IOS_MOVE_TAB_ACTIVITY_TYPE=$ios_move_tab_activity_type",
       "SSOAUTH_URL_SCHEME=$url_ssoauth_scheme",
     ]

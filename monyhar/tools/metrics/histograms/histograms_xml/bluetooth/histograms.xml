@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Bluetooth histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -26,8 +26,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2021/04/09. crbug.com/1052931
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     Disconnected GATT connection status codes. Used to better understand errors
     seen in Android.
@@ -39,8 +39,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2021/04/09. crbug.com/1052932
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     Failed GATT connection error codes. Used to better understand errors seen in
     Android.
@@ -52,8 +52,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2021/04/09. crbug.com/1052933
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     Successful GATT connection result codes. Used to better understand Android
     results.
@@ -62,8 +62,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Bluetooth.Availability.v2" enum="BluetoothAvailability"
     expires_after="2021-12-31">
-  <owner>kenrb@chromium.org</owner>
-  <owner>kpaulhamus@chromium.org</owner>
+  <owner>kenrb@monyhar.org</owner>
+  <owner>kpaulhamus@monyhar.org</owner>
   <summary>
     Determines the availability and capabilities of the Bluetooth driver. This
     metric is logged on startup.
@@ -75,7 +75,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <!-- Name completed by histogram_suffixes name="BluetoothUISurfaces",
      name="BluetoothPairingStates", and name="BluetoothTransportTypes" -->
 
-  <owner>hansberry@chromium.org</owner>
+  <owner>hansberry@monyhar.org</owner>
   <owner>cros-system-services-networking@google.com</owner>
   <summary>
     Records how long it takes for the user to select a device either after they
@@ -88,7 +88,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="2022-03-05">
 <!-- Name completed by histogram_suffixes name="BluetoothTransportTypes" -->
 
-  <owner>hansberry@chromium.org</owner>
+  <owner>hansberry@monyhar.org</owner>
   <owner>cros-system-services-networking@google.com</owner>
   <summary>
     Records how long it takes for a failed pairing attempt, initiated from
@@ -102,7 +102,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="2022-03-05">
 <!-- Name completed by histogram_suffixes name="BluetoothTransportTypes" -->
 
-  <owner>hansberry@chromium.org</owner>
+  <owner>hansberry@monyhar.org</owner>
   <owner>cros-system-services-networking@google.com</owner>
   <summary>
     Records how long it takes for a successful pairing attempt, initiated from
@@ -116,7 +116,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="2021-09-12">
 <!-- Name completed by histogram_suffixes name="BluetoothTransportTypes" -->
 
-  <owner>hansberry@chromium.org</owner>
+  <owner>hansberry@monyhar.org</owner>
   <owner>cros-system-services-networking@google.com</owner>
   <summary>
     Records success or failure of a pairing attempt (initiated in the UI) to a
@@ -133,7 +133,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="BluetoothConnectionFailureReason" expires_after="2021-09-19">
 <!-- Name completed by histogram_suffixes name="BluetoothTransportTypes" -->
 
-  <owner>hansberry@chromium.org</owner>
+  <owner>hansberry@monyhar.org</owner>
   <owner>cros-system-services-networking@google.com</owner>
   <summary>
     Breaks down why a pairing attempt to a peripheral failed (see
@@ -147,7 +147,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Bluetooth.ChromeOS.Pairing.TransportType"
     enum="BluetoothTransportType" expires_after="2022-03-05">
-  <owner>hansberry@chromium.org</owner>
+  <owner>hansberry@monyhar.org</owner>
   <owner>cros-system-services-networking@google.com</owner>
   <summary>
     An enumerated histogram which captures the transport type of devices which
@@ -160,7 +160,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="BooleanSuccess" expires_after="2021-11-14">
 <!-- Name completed by histogram_suffixes name="BluetoothUISurfaces" -->
 
-  <owner>hansberry@chromium.org</owner>
+  <owner>hansberry@monyhar.org</owner>
   <owner>cros-system-services-networking@google.com</owner>
   <summary>
     Records success or failure of a reconnection attempt to an already paired
@@ -179,7 +179,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="BluetoothConnectionFailureReason" expires_after="2022-03-05">
 <!-- Name completed by histogram_suffixes name="BluetoothUISurfaces" -->
 
-  <owner>hansberry@chromium.org</owner>
+  <owner>hansberry@monyhar.org</owner>
   <owner>cros-system-services-networking@google.com</owner>
   <summary>
     Breaks down why a user-initiated reconnection attempt to a peripheral failed
@@ -193,7 +193,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Bluetooth.ConnectedDeviceCount" units="devices"
     expires_after="2021-11-21">
-  <owner>adlr@chromium.org</owner>
+  <owner>adlr@monyhar.org</owner>
   <summary>
     Counts the number of simulataneously connected Bluetooth devices. Used to
     direct testing efforts, and by our UI team to determine appropriate UI
@@ -206,8 +206,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2020/11/05. crbug.com/1088659
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     Records the outcome of calls to BluetoothAdapter::StartDiscoverySession.
     Used to prioritize efforts to fix failures of this function.
@@ -216,7 +216,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Bluetooth.DiscoverySession.Stop.Outcome"
     enum="BluetoothDiscoveryOutcomes" expires_after="2021-03-01">
-  <owner>reillyg@chromium.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <owner>deviceapi-team@google.com</owner>
   <summary>
     Records the outcome of calls to BluetoothDiscoverySession::Stop. Used to
@@ -227,7 +227,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Bluetooth.Linux.ConnectToServiceInsecurelyResult"
     enum="BluetoothAdapterConnectToServiceInsecurelyResult"
     expires_after="2022-01-01">
-  <owner>alainm@chromium.org</owner>
+  <owner>alainm@monyhar.org</owner>
   <owner>nearby-share-chromeos-eng@google.com</owner>
   <summary>
     Result of attempting a call to mojom::Adapter::ConnectToServiceInsecurely().
@@ -239,7 +239,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="MacOSBluetoothOperationsResult" expires_after="2021-01-31">
 <!-- Name completed by histogram_suffixes name="WebBluetoothMacOSAPIs" -->
 
-  <owner>reillyg@chromium.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <owner>deviceapi-team@google.com</owner>
   <summary>
     Records how many times each macOS GATT error has occured. The results will
@@ -250,7 +250,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Bluetooth.Mojo.PendingConnectAtShutdown.DurationWaiting"
     units="ms" expires_after="2022-04-21">
-  <owner>jonmann@chromium.org</owner>
+  <owner>jonmann@monyhar.org</owner>
   <owner>cros-system-services-networking@google.com</owner>
   <summary>
     Records the number of milliseconds a pending connect request has been
@@ -262,7 +262,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Bluetooth.Mojo.PendingConnectAtShutdown.NumberOfServiceDiscoveriesInProgress"
     units="count" expires_after="2022-04-21">
-  <owner>jonmann@chromium.org</owner>
+  <owner>jonmann@monyhar.org</owner>
   <owner>cros-system-services-networking@google.com</owner>
   <summary>
     This metric is emitted when the Mojo Adapter is destroyed, with the value of
@@ -276,7 +276,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Bluetooth.PairingMethod" enum="BluetoothPairingMethod"
     expires_after="2020-11-08">
-  <owner>adlr@chromium.org</owner>
+  <owner>adlr@monyhar.org</owner>
   <summary>
     Records the method used to pair each Bluetooth Device. Used to direct our
     testing efforts.
@@ -288,7 +288,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2020/11/05. crbug.com/1088659
   </obsolete>
-  <owner>adlr@chromium.org</owner>
+  <owner>adlr@monyhar.org</owner>
   <summary>
     Records the result of pairing each Bluetooth Device. Used to understand
     whether we are having significant problems with Bluetooth pairing and seeing
@@ -303,8 +303,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   </obsolete>
 <!-- Name completed by histogram_suffixes name="AndroidGATTEvents" -->
 
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>'status' values returned by Android GATT event.</summary>
 </histogram>
 
@@ -313,8 +313,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2020/11/05. crbug.com/1088659
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     Records the result of BluetoothBlocklist::Add parsing a non-empty string.
     These strings will be updated dynamically by a server, and this histogram
@@ -329,8 +329,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2021/04/09. crbug.com/1052935
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     Records the outcome of a call to characteristic.readValue(). Used to know
     what types of errors users are seeing. The results will be used to determine
@@ -344,8 +344,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2021/04/09. crbug.com/1160798
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     Records the outcome of a call to characteristic.startNofications(). Used to
     know what types of errors users are seeing. The results will be used to
@@ -359,8 +359,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2021/04/09. crbug.com/1052936
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     Records the outcome of a call to characteristic.writeValue(). Used to know
     what types of errors users are seeing. The results will be used to determine
@@ -371,7 +371,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Bluetooth.Web.ChooserInteraction" enum="BooleanInvalid"
     expires_after="2021-11-21">
-  <owner>reillyg@chromium.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <owner>deviceapi-team@google.com</owner>
   <summary>
     Counts how many times users interact with a regular chooser vs. an invalid
@@ -381,7 +381,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Bluetooth.Web.ConnectGATT.Outcome"
     enum="WebBluetoothConnectGATTOutcome" expires_after="2021-11-21">
-  <owner>reillyg@chromium.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <owner>deviceapi-team@google.com</owner>
   <summary>
     Records the result of a device.gatt.connect() call. Used to understand what
@@ -392,7 +392,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Bluetooth.Web.ConnectGATT.TimeFailed" units="ms"
     expires_after="2021-01-31">
-  <owner>reillyg@chromium.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <owner>deviceapi-team@google.com</owner>
   <summary>
     Records how long it takes for a connection attempt to fail. Use to let
@@ -402,7 +402,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Bluetooth.Web.ConnectGATT.TimeSuccess" units="ms"
     expires_after="2021-01-31">
-  <owner>reillyg@chromium.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <owner>deviceapi-team@google.com</owner>
   <summary>
     Records how long it takes for a device to successfully connect. Use to let
@@ -415,8 +415,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2020/11/05. crbug.com/1088659
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     Records the outcome of a call to descriptor.readValue(). Used to know what
     types of errors users are seeing. The results will be used to determine how
@@ -430,8 +430,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2020/11/05. crbug.com/1088659
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     Records the outcome of a call to descriptor.writeValue(). Used to know what
     types of errors users are seeing. The results will be used to determine how
@@ -442,7 +442,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Bluetooth.Web.GetCharacteristic.Characteristic"
     enum="GATTCharacteristicHash" expires_after="2021-01-31">
-  <owner>reillyg@chromium.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <owner>deviceapi-team@google.com</owner>
   <summary>
     Records the UUIDs used when getting a characteristic. The recorded value is
@@ -456,8 +456,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2020/11/05. crbug.com/1088659
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     Records the outcome of a call to getCharacteristic(). Used to understand
     what errors developers are getting so we can target efforts toward the most
@@ -467,7 +467,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Bluetooth.Web.GetCharacteristics.Characteristic"
     enum="GATTCharacteristicHash" expires_after="2021-01-31">
-  <owner>reillyg@chromium.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <owner>deviceapi-team@google.com</owner>
   <summary>
     Records the UUIDs used when getting characteristics. The recorded value is a
@@ -481,8 +481,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2020/11/05. crbug.com/1088659
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     Records the outcome of a call to getCharacteristics(). Used to understand
     what errors developers are getting so we can target efforts toward the most
@@ -495,8 +495,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2020/11/05. crbug.com/1088659
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     Records the UUIDs used when getting a descriptor. The recorded value is a
     31-bit hash of the UUID. Used to know what types of descriptors to target
@@ -509,8 +509,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2020/11/05. crbug.com/1088659
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     Records the outcome of a call to getDescriptor(). Used to understand what
     errors developers are getting so we can target efforts toward the most
@@ -523,8 +523,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2020/11/05. crbug.com/1088659
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     Records the UUIDs used when getting descriptors. The recorded value is a
     31-bit hash of the UUID. Used to know what types of descriptors to target
@@ -537,8 +537,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2020/11/05. crbug.com/1088659
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     Records the outcome of a call to getDescriptors(). Used to understand what
     errors developers are getting so we can target efforts toward the most
@@ -548,7 +548,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Bluetooth.Web.GetPrimaryService.Outcome"
     enum="WebBluetoothGetPrimaryServiceOutcome" expires_after="2021-01-31">
-  <owner>reillyg@chromium.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <owner>deviceapi-team@google.com</owner>
   <summary>
     Records the result of a GATTServer.getPrimaryService() call. Used to
@@ -559,7 +559,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Bluetooth.Web.GetPrimaryService.Services"
     enum="GATTServiceHash" expires_after="2021-01-31">
-  <owner>reillyg@chromium.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <owner>deviceapi-team@google.com</owner>
   <summary>
     Records what GATT Services are used when connected. The record value is a
@@ -570,7 +570,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Bluetooth.Web.GetPrimaryServices.Outcome"
     enum="WebBluetoothGetPrimaryServiceOutcome" expires_after="2021-01-31">
-  <owner>reillyg@chromium.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <owner>deviceapi-team@google.com</owner>
   <summary>
     Records the result of a GATTServer.getPrimaryServices() call. Used to
@@ -581,7 +581,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Bluetooth.Web.GetPrimaryServices.Services"
     enum="GATTServiceHash" expires_after="2021-01-31">
-  <owner>reillyg@chromium.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <owner>deviceapi-team@google.com</owner>
   <summary>
     Records what GATT Services are used when connected. The record value is a
@@ -595,8 +595,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2021/04/09. crbug.com/1160804
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     Records how many filters are used when scanning. These results will help us
     better understand the uses of the API and make changes according to
@@ -610,8 +610,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     Removed 2021/04/09. crbug.com/1160804 Use
     Bluetooth.Web.RequestDevice.UnionOfServices.Services instead.
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     Records a 31-bit hash of the GATT Service UUIDs used when scanning. This
     will help us know if we should build an API for specific services rather
@@ -624,8 +624,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2021/04/09. crbug.com/1160804
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     Records how many services are used in a filter. These results will help us
     better understand the uses of the API and make changes according to
@@ -639,8 +639,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2021/04/09. crbug.com/1160804
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     In the case of not accepting all devices, records the number of devices that
     are in the chooser when a device is paired.
@@ -652,8 +652,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2021/04/09. crbug.com/1160804
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     Records how many optional services are used when scanning. These results
     will help us better understand the uses of the API and make changes
@@ -667,8 +667,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     Removed 2021/04/09. crbug.com/1160804 Use
     Bluetooth.Web.RequestDevice.UnionOfServices.Services instead.
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     Records what optional services are used. The recorded value is a 31-bit hash
     of the Service UUID. These results will help us better understand the uses
@@ -681,8 +681,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2021/04/09. crbug.com/1160804
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     Records the value of 'acceptAllDevices' in RequestDeviceOptions. These
     results will help us better understand the uses of the API and make changes
@@ -692,7 +692,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Bluetooth.Web.RequestDevice.Outcome"
     enum="WebBluetoothRequestDeviceOutcome" expires_after="2021-09-19">
-  <owner>reillyg@chromium.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <owner>deviceapi-team@google.com</owner>
   <summary>
     Records the result of a navigator.bluetooth.requestDevice() call. Used to
@@ -703,7 +703,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Bluetooth.Web.RequestDevice.RSSISignalStrength" units="dBm"
     expires_after="2022-04-09">
-  <owner>reillyg@chromium.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <owner>deviceapi-team@google.com</owner>
   <summary>
     Raw RSSI values provided to chooser, before processing them for display in
@@ -716,7 +716,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Bluetooth.Web.RequestDevice.RSSISignalStrengthLevel"
     enum="WebBluetoothRSSISignalStrengthLevel" expires_after="2022-04-09">
-  <owner>reillyg@chromium.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <owner>deviceapi-team@google.com</owner>
   <summary>
     Displayed RSSI levels, after processing and as displayed to users in the Web
@@ -729,8 +729,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2021/04/09. crbug.com/1160804
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     Records the duration scanning for devices is run, terminated by events such
     as the chooser being closed with a selected device, cancelled, or the scan
@@ -743,8 +743,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2021/04/09. crbug.com/1036974
   </obsolete>
-  <owner>ortuno@chromium.org</owner>
-  <owner>reillyg@chromium.org</owner>
+  <owner>ortuno@monyhar.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <summary>
     Records how many services are used when scanning. This results will help us
     better understand the uses of the API and make changes according to
@@ -754,7 +754,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Bluetooth.Web.RequestDevice.UnionOfServices.Services"
     enum="GATTServiceHash" expires_after="2021-10-17">
-  <owner>reillyg@chromium.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <owner>deviceapi-team@google.com</owner>
   <summary>
     Records what services are used from either required or optional sets. The

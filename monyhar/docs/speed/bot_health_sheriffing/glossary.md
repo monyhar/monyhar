@@ -28,7 +28,7 @@
 
 * **Pinpoint: **[The microservice](https://pinpoint-dot-chromeperf.appspot.com/) used to run bisects.
 
-* **Sherff-o-matic: **[The central tool](https://sheriff-o-matic.appspot.com/chromium.perf#) used to bot health sheriff.
+* **Sherff-o-matic: **[The central tool](https://sheriff-o-matic.appspot.com/monyhar.perf#) used to bot health sheriff.
 
 * **Snooze: **An action taken by sheriffs to dismiss an alert for a defined amount of time.
 

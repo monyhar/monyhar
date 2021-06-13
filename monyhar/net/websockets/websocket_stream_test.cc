@@ -716,17 +716,17 @@ TEST_P(WebSocketMultiProtocolStreamCreateTest, PathIsUsed) {
 TEST_P(WebSocketMultiProtocolStreamCreateTest, SubProtocolIsUsed) {
   AddSSLData();
   std::vector<std::string> sub_protocols;
-  sub_protocols.push_back("chatv11.chromium.org");
-  sub_protocols.push_back("chatv20.chromium.org");
+  sub_protocols.push_back("chatv11.monyhar.org");
+  sub_protocols.push_back("chatv20.monyhar.org");
   CreateAndConnectStandard(
       "wss://www.example.org/testing_path", sub_protocols, {},
       {{"Sec-WebSocket-Protocol",
-        "chatv11.chromium.org, chatv20.chromium.org"}},
-      {{"Sec-WebSocket-Protocol", "chatv20.chromium.org"}});
+        "chatv11.monyhar.org, chatv20.monyhar.org"}},
+      {{"Sec-WebSocket-Protocol", "chatv20.monyhar.org"}});
   WaitUntilConnectDone();
   ASSERT_TRUE(stream_);
   EXPECT_FALSE(has_failed());
-  EXPECT_EQ("chatv20.chromium.org", stream_->GetSubProtocol());
+  EXPECT_EQ("chatv20.monyhar.org", stream_->GetSubProtocol());
 }
 
 // Unsolicited sub-protocols are rejected.
@@ -736,13 +736,13 @@ TEST_P(WebSocketMultiProtocolStreamCreateTest, UnsolicitedSubProtocol) {
   AddSSLData();
   CreateAndConnectStandard(
       "wss://www.example.org/testing_path", NoSubProtocols(), {}, {},
-      {{"Sec-WebSocket-Protocol", "chatv20.chromium.org"}});
+      {{"Sec-WebSocket-Protocol", "chatv20.monyhar.org"}});
   WaitUntilConnectDone();
   EXPECT_FALSE(stream_);
   EXPECT_TRUE(has_failed());
   EXPECT_EQ("Error during WebSocket handshake: "
             "Response must not include 'Sec-WebSocket-Protocol' header "
-            "if not present in request: chatv20.chromium.org",
+            "if not present in request: chatv20.monyhar.org",
             failure_message());
   EXPECT_EQ(ERR_INVALID_RESPONSE,
             url_request_context_host_.network_delegate().last_error());
@@ -786,14 +786,14 @@ TEST_P(WebSocketMultiProtocolStreamCreateTest, UnacceptedSubProtocol) {
 TEST_P(WebSocketMultiProtocolStreamCreateTest, MultipleSubProtocolsInResponse) {
   AddSSLData();
   std::vector<std::string> sub_protocols;
-  sub_protocols.push_back("chatv11.chromium.org");
-  sub_protocols.push_back("chatv20.chromium.org");
+  sub_protocols.push_back("chatv11.monyhar.org");
+  sub_protocols.push_back("chatv20.monyhar.org");
   CreateAndConnectStandard("wss://www.example.org/testing_path", sub_protocols,
                            {},
                            {{"Sec-WebSocket-Protocol",
-                             "chatv11.chromium.org, chatv20.chromium.org"}},
+                             "chatv11.monyhar.org, chatv20.monyhar.org"}},
                            {{"Sec-WebSocket-Protocol",
-                             "chatv11.chromium.org, chatv20.chromium.org"}});
+                             "chatv11.monyhar.org, chatv20.monyhar.org"}});
   WaitUntilConnectDone();
   EXPECT_FALSE(stream_);
   EXPECT_TRUE(has_failed());
@@ -808,18 +808,18 @@ TEST_P(WebSocketMultiProtocolStreamCreateTest, MultipleSubProtocolsInResponse) {
 TEST_P(WebSocketMultiProtocolStreamCreateTest, UnmatchedSubProtocolInResponse) {
   AddSSLData();
   std::vector<std::string> sub_protocols;
-  sub_protocols.push_back("chatv11.chromium.org");
-  sub_protocols.push_back("chatv20.chromium.org");
+  sub_protocols.push_back("chatv11.monyhar.org");
+  sub_protocols.push_back("chatv20.monyhar.org");
   CreateAndConnectStandard(
       "wss://www.example.org/testing_path", sub_protocols, {},
       {{"Sec-WebSocket-Protocol",
-        "chatv11.chromium.org, chatv20.chromium.org"}},
-      {{"Sec-WebSocket-Protocol", "chatv21.chromium.org"}});
+        "chatv11.monyhar.org, chatv20.monyhar.org"}},
+      {{"Sec-WebSocket-Protocol", "chatv21.monyhar.org"}});
   WaitUntilConnectDone();
   EXPECT_FALSE(stream_);
   EXPECT_TRUE(has_failed());
   EXPECT_EQ("Error during WebSocket handshake: "
-            "'Sec-WebSocket-Protocol' header value 'chatv21.chromium.org' "
+            "'Sec-WebSocket-Protocol' header value 'chatv21.monyhar.org' "
             "in response does not match any of sent values",
             failure_message());
 }

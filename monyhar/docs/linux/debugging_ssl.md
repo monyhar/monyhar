@@ -33,6 +33,6 @@ Edit / Preferences / Protocols / SSL, and in the "RSA Keys List" box, enter
 
 e.g.
 
-    127.0.0.1,9443,http,/home/dank/chromium/src/net/data/ssl/certificates/ok_cert.pem;127.0.0.1,9666,http,/home/dank/chromium/src/net/data/ssl/certificates/expired_cert.pem
+    127.0.0.1,9443,http,/home/dank/monyhar/src/net/data/ssl/certificates/ok_cert.pem;127.0.0.1,9666,http,/home/dank/monyhar/src/net/data/ssl/certificates/expired_cert.pem
 
 Then capture all tcp traffic on interface lo, and run your test.

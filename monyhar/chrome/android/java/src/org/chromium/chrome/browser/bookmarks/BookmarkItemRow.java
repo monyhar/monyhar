@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.bookmarks;
+package org.monyhar.chrome.browser.bookmarks;
 
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.bookmarks.BookmarkBridge.BookmarkItem;
-import org.chromium.chrome.browser.ui.favicon.FaviconUtils;
-import org.chromium.components.bookmarks.BookmarkId;
-import org.chromium.components.browser_ui.widget.RoundedIconGenerator;
-import org.chromium.components.favicon.IconType;
-import org.chromium.components.favicon.LargeIconBridge.LargeIconCallback;
-import org.chromium.url.GURL;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.bookmarks.BookmarkBridge.BookmarkItem;
+import org.monyhar.chrome.browser.ui.favicon.FaviconUtils;
+import org.monyhar.components.bookmarks.BookmarkId;
+import org.monyhar.components.browser_ui.widget.RoundedIconGenerator;
+import org.monyhar.components.favicon.IconType;
+import org.monyhar.components.favicon.LargeIconBridge.LargeIconCallback;
+import org.monyhar.url.GURL;
 
 /**
  * A row view that shows bookmark info in the bookmarks UI.

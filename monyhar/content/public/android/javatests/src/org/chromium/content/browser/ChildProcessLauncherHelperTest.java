@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -24,21 +24,21 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.BaseSwitches;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.library_loader.LibraryProcessType;
-import org.chromium.base.process_launcher.ChildConnectionAllocator;
-import org.chromium.base.process_launcher.ChildProcessConnection;
-import org.chromium.base.process_launcher.FileDescriptorInfo;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.base.test.util.Feature;
-import org.chromium.content_public.browser.test.ChildProcessAllocatorSettings;
-import org.chromium.content_public.browser.test.ContentJUnit4ClassRunner;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.content_shell_apk.ChildProcessLauncherTestHelperService;
-import org.chromium.content_shell_apk.ChildProcessLauncherTestUtils;
+import org.monyhar.base.BaseSwitches;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.library_loader.LibraryProcessType;
+import org.monyhar.base.process_launcher.ChildConnectionAllocator;
+import org.monyhar.base.process_launcher.ChildProcessConnection;
+import org.monyhar.base.process_launcher.FileDescriptorInfo;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.content_public.browser.test.ChildProcessAllocatorSettings;
+import org.monyhar.content_public.browser.test.ContentJUnit4ClassRunner;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.content_shell_apk.ChildProcessLauncherTestHelperService;
+import org.monyhar.content_shell_apk.ChildProcessLauncherTestUtils;
 
 import java.util.concurrent.Callable;
 
@@ -53,7 +53,7 @@ public class ChildProcessLauncherHelperTest {
     private static final String[] sProcessWaitArguments = {
             "_", "--" + BaseSwitches.RENDERER_WAIT_FOR_JAVA_DEBUGGER};
     private static final String DEFAULT_SANDBOXED_PROCESS_SERVICE =
-            "org.chromium.content.app.SandboxedProcessService";
+            "org.monyhar.content.app.SandboxedProcessService";
 
     private static final int DONT_BLOCK = 0;
     private static final int BLOCK_UNTIL_CONNECTED = 1;

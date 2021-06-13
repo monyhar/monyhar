@@ -9,7 +9,7 @@
     android:orientation="vertical"
     android:paddingBottom="16dp" >
 
-    <org.chromium.ui.widget.TextViewWithClickableSpans
+    <org.monyhar.ui.widget.TextViewWithClickableSpans
         android:id="@+id/privacy_disclaimer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

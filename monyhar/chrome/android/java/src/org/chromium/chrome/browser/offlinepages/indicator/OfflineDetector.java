@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.offlinepages.indicator;
+package org.monyhar.chrome.browser.offlinepages.indicator;
 
 import android.os.Handler;
 import android.os.SystemClock;
@@ -10,16 +10,16 @@ import android.text.TextUtils;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApplicationState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.Callback;
-import org.chromium.base.Log;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.net.connectivitydetector.ConnectivityDetector;
-import org.chromium.chrome.browser.net.connectivitydetector.ConnectivityDetector.ConnectionState;
-import org.chromium.chrome.browser.version.ChromeVersionInfo;
-import org.chromium.components.variations.VariationsAssociatedData;
+import org.monyhar.base.ApplicationState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.Callback;
+import org.monyhar.base.Log;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.net.connectivitydetector.ConnectivityDetector;
+import org.monyhar.chrome.browser.net.connectivitydetector.ConnectivityDetector.ConnectionState;
+import org.monyhar.chrome.browser.version.ChromeVersionInfo;
+import org.monyhar.components.variations.VariationsAssociatedData;
 
 /**
  * Class that detects if the network is offline. Waits for the network to stablize before notifying

@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant;
+package org.monyhar.chrome.browser.autofill_assistant;
 
 import android.annotation.SuppressLint;
 import android.content.pm.ActivityInfo;
 
-import org.chromium.chrome.test.ChromeActivityTestRule;
+import org.monyhar.chrome.test.ChromeActivityTestRule;
 
 class AutofillAssistantScreenOrientationHelper<T extends ChromeActivityTestRule> {
     private int mOriginalRequestedScreenOrientation;

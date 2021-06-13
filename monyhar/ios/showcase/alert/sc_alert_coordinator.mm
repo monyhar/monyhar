@@ -128,7 +128,7 @@
                            handler:^(AlertAction* action) {
                              [weakSelf.presenter dismissAnimated:YES];
                            }];
-  [self presentAlertWithTitle:@"chromium.org says"
+  [self presentAlertWithTitle:@"monyhar.org says"
                       message:@"This is an alert message from a website."
                       actions:@[ action ]
       textFieldConfigurations:nil];
@@ -153,7 +153,7 @@
                            handler:^(AlertAction* action) {
                              [weakSelf.presenter dismissAnimated:YES];
                            }];
-  [self presentAlertWithTitle:@"chromium.org says"
+  [self presentAlertWithTitle:@"monyhar.org says"
                       message:@"This is a promp message from a website."
                       actions:@[ OKAction, cancelAction ]
       textFieldConfigurations:@[ fieldConfiguration ]];
@@ -173,7 +173,7 @@
                            handler:^(AlertAction* action) {
                              [weakSelf.presenter dismissAnimated:YES];
                            }];
-  [self presentAlertWithTitle:@"chromium.org says"
+  [self presentAlertWithTitle:@"monyhar.org says"
                       message:@"This is a confirm message from a website."
                       actions:@[ OKAction, cancelAction ]
       textFieldConfigurations:nil];
@@ -205,7 +205,7 @@
                              [weakSelf.presenter dismissAnimated:YES];
                            }];
   [self presentAlertWithTitle:@"Sign In"
-                      message:@"https://www.chromium.org requires a "
+                      message:@"https://www.monyhar.org requires a "
                               @"username and a password."
                       actions:@[ OKAction, cancelAction ]
       textFieldConfigurations:@[ usernameOptions, passwordOptions ]];

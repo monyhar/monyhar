@@ -31,11 +31,11 @@ imageset("signin_promo_logo_chrome_color") {
   ]
 }
 
-imageset("signin_promo_logo_chromium_color") {
+imageset("signin_promo_logo_monyhar_color") {
   sources = [
-    "signin_promo_logo_chromium_color.imageset/Contents.json",
-    "signin_promo_logo_chromium_color.imageset/signin_promo_logo_chromium_color.png",
-    "signin_promo_logo_chromium_color.imageset/signin_promo_logo_chromium_color@2x.png",
-    "signin_promo_logo_chromium_color.imageset/signin_promo_logo_chromium_color@3x.png",
+    "signin_promo_logo_monyhar_color.imageset/Contents.json",
+    "signin_promo_logo_monyhar_color.imageset/signin_promo_logo_monyhar_color.png",
+    "signin_promo_logo_monyhar_color.imageset/signin_promo_logo_monyhar_color@2x.png",
+    "signin_promo_logo_monyhar_color.imageset/signin_promo_logo_monyhar_color@3x.png",
   ]
 }

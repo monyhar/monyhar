@@ -62,9 +62,9 @@ source_set("android") {
 
 android_library("ar_java_interfaces") {
   sources = [
-    "//components/webxr/android/java/src/org/chromium/components/webxr/ArCompositorDelegate.java",
-    "//components/webxr/android/java/src/org/chromium/components/webxr/ArCompositorDelegateProvider.java",
-    "//components/webxr/android/java/src/org/chromium/components/webxr/ArDelegate.java",
+    "//components/webxr/android/java/src/org/monyhar/components/webxr/ArCompositorDelegate.java",
+    "//components/webxr/android/java/src/org/monyhar/components/webxr/ArCompositorDelegateProvider.java",
+    "//components/webxr/android/java/src/org/monyhar/components/webxr/ArDelegate.java",
   ]
 
   deps = [
@@ -87,13 +87,13 @@ android_library("ar_java_base") {
   ]
 
   sources = [
-    "//components/webxr/android/java/src/org/chromium/components/webxr/ArCoreInstallUtils.java",
-    "//components/webxr/android/java/src/org/chromium/components/webxr/ArCoreJavaUtils.java",
-    "//components/webxr/android/java/src/org/chromium/components/webxr/ArCoreShim.java",
-    "//components/webxr/android/java/src/org/chromium/components/webxr/ArImmersiveOverlay.java",
+    "//components/webxr/android/java/src/org/monyhar/components/webxr/ArCoreInstallUtils.java",
+    "//components/webxr/android/java/src/org/monyhar/components/webxr/ArCoreJavaUtils.java",
+    "//components/webxr/android/java/src/org/monyhar/components/webxr/ArCoreShim.java",
+    "//components/webxr/android/java/src/org/monyhar/components/webxr/ArImmersiveOverlay.java",
   ]
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
-  resources_package = "org.chromium.components.webxr"
+  resources_package = "org.monyhar.components.webxr"
 }
 
 android_resources("ar_java_base_resources") {
@@ -108,14 +108,14 @@ android_library("ar_java") {
     "//third_party/arcore-android-sdk-client:com_google_ar_core_java",
   ]
 
-  sources = [ "//components/webxr/android/java/src/org/chromium/components/webxr/ArCoreShimImpl.java" ]
+  sources = [ "//components/webxr/android/java/src/org/monyhar/components/webxr/ArCoreShimImpl.java" ]
 }
 
 if (enable_arcore) {
   generate_jni("ar_jni_headers") {
     sources = [
-      "//components/webxr/android/java/src/org/chromium/components/webxr/ArCoreInstallUtils.java",
-      "//components/webxr/android/java/src/org/chromium/components/webxr/ArCoreJavaUtils.java",
+      "//components/webxr/android/java/src/org/monyhar/components/webxr/ArCoreInstallUtils.java",
+      "//components/webxr/android/java/src/org/monyhar/components/webxr/ArCoreJavaUtils.java",
     ]
   }
 }

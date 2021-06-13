@@ -11,9 +11,9 @@ won't be included by default. Here's how to enable it.
 ## Compiling the Chrome OS version of Chrome
 
 First follow the public instructions for
-[Chrome checkout and build](https://www.chromium.org/developers/how-tos/get-the-code).
+[Chrome checkout and build](https://www.monyhar.org/developers/how-tos/get-the-code).
 
-Edit `.gclient` (in `chromium/`) and at the bottom add:
+Edit `.gclient` (in `monyhar/`) and at the bottom add:
 
 ```
 target_os = ["chromeos"]

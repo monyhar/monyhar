@@ -14,11 +14,11 @@ Currently using (not yet released) manifest reuse feature for all platforms
 except Chrome OS.
 
 Local Additions:
-* GN file for building in chromium
-* port/port_chromium.{h,cc} and env_chromium.{h,cc} provide chromium
+* GN file for building in monyhar
+* port/port_monyhar.{h,cc} and env_monyhar.{h,cc} provide monyhar
   implementations of primitives used by leveldb.  E.g. threading, file handling,
-  etc. env_chromium.h allows re-use of some utility functions.
-* chromium_logger.h was copied from src/util/posix_logger.h and updated to use
+  etc. env_monyhar.h allows re-use of some utility functions.
+* monyhar_logger.h was copied from src/util/posix_logger.h and updated to use
   chrome primitives in place of some posix primitives
 * TRACE macros/thread name for chrome://tracing diagnostics
 * Handle in-process exclusive file locks, based on src/util/env_posix.cc

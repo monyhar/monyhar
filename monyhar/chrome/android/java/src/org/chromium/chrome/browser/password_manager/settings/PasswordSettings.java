@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_manager.settings;
+package org.monyhar.chrome.browser.password_manager.settings;
 
 import android.app.Activity;
 import android.content.Context;
@@ -25,33 +25,33 @@ import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceGroup;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.StrictModeContext;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.feedback.HelpAndFeedbackLauncherImpl;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.password_check.PasswordCheck;
-import org.chromium.chrome.browser.password_check.PasswordCheckFactory;
-import org.chromium.chrome.browser.password_check.PasswordCheckReferrer;
-import org.chromium.chrome.browser.password_manager.ManagePasswordsReferrer;
-import org.chromium.chrome.browser.password_manager.PasswordManagerHelper;
-import org.chromium.chrome.browser.password_manager.PasswordManagerLauncher;
-import org.chromium.chrome.browser.preferences.Pref;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.settings.ChromeManagedPreferenceDelegate;
-import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
-import org.chromium.chrome.browser.sync.SyncService;
-import org.chromium.chrome.browser.sync.settings.SyncSettingsUtils;
-import org.chromium.chrome.browser.webauthn.CableAuthenticatorModuleProvider;
-import org.chromium.components.browser_ui.settings.ChromeBasePreference;
-import org.chromium.components.browser_ui.settings.ChromeSwitchPreference;
-import org.chromium.components.browser_ui.settings.SearchUtils;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.browser_ui.settings.TextMessagePreference;
-import org.chromium.components.prefs.PrefService;
-import org.chromium.components.signin.base.CoreAccountInfo;
-import org.chromium.components.user_prefs.UserPrefs;
-import org.chromium.ui.text.SpanApplier;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.feedback.HelpAndFeedbackLauncherImpl;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.password_check.PasswordCheck;
+import org.monyhar.chrome.browser.password_check.PasswordCheckFactory;
+import org.monyhar.chrome.browser.password_check.PasswordCheckReferrer;
+import org.monyhar.chrome.browser.password_manager.ManagePasswordsReferrer;
+import org.monyhar.chrome.browser.password_manager.PasswordManagerHelper;
+import org.monyhar.chrome.browser.password_manager.PasswordManagerLauncher;
+import org.monyhar.chrome.browser.preferences.Pref;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.settings.ChromeManagedPreferenceDelegate;
+import org.monyhar.chrome.browser.settings.SettingsLauncherImpl;
+import org.monyhar.chrome.browser.sync.SyncService;
+import org.monyhar.chrome.browser.sync.settings.SyncSettingsUtils;
+import org.monyhar.chrome.browser.webauthn.CableAuthenticatorModuleProvider;
+import org.monyhar.components.browser_ui.settings.ChromeBasePreference;
+import org.monyhar.components.browser_ui.settings.ChromeSwitchPreference;
+import org.monyhar.components.browser_ui.settings.SearchUtils;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.browser_ui.settings.TextMessagePreference;
+import org.monyhar.components.prefs.PrefService;
+import org.monyhar.components.signin.base.CoreAccountInfo;
+import org.monyhar.components.user_prefs.UserPrefs;
+import org.monyhar.ui.text.SpanApplier;
 
 import java.util.Locale;
 

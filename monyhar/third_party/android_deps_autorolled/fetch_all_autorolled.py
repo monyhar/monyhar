@@ -102,12 +102,12 @@ def _write_cipd_yaml(libs_dir, cipd_yaml_path):
         if not 'cipd.yaml' in lib_files:
             continue
 
-        if not 'README.chromium' in lib_files:
-            raise Exception('README.chromium not in {}'.format(abs_lib_dir))
+        if not 'README.monyhar' in lib_files:
+            raise Exception('README.monyhar not in {}'.format(abs_lib_dir))
         if not 'LICENSE' in lib_files:
             raise Exception('LICENSE not in {}'.format(abs_lib_dir))
         data_files.append(os.path.join(autorolled_rel_lib_dir,
-                                       'README.chromium'))
+                                       'README.monyhar'))
         data_files.append(os.path.join(autorolled_rel_lib_dir, 'LICENSE'))
 
         _rel_extracted_files = _extract_files_from_yaml(
@@ -120,7 +120,7 @@ def _write_cipd_yaml(libs_dir, cipd_yaml_path):
         '# Copyright 2021 The Chromium Authors. All rights reserved.',
         '# Use of this source code is governed by a BSD-style license that can be',
         '# found in the LICENSE file.',
-        'package: chromium/third_party/android_deps_autorolled', 'description: android_deps_autorolled',
+        'package: monyhar/third_party/android_deps_autorolled', 'description: android_deps_autorolled',
         'data:'
     ]
     contents.extend('- file: ' + f for f in data_files)

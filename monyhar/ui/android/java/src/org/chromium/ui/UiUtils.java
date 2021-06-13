@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui;
+package org.monyhar.ui;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -31,8 +31,8 @@ import androidx.annotation.StyleableRes;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.graphics.drawable.DrawableCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.Log;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.Log;
 
 import java.io.File;
 import java.io.IOException;

@@ -24,7 +24,7 @@ mach_port_t xpc_mach_send_copy_right(OS_xpc_mach_send*);
 
 namespace {
 
-NSString* const kCrSendRight = @"org.chromium.xpc.MachSendRight";
+NSString* const kCrSendRight = @"org.monyhar.xpc.MachSendRight";
 
 }  // namespace
 

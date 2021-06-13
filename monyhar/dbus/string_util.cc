@@ -16,8 +16,8 @@ bool IsValidObjectPath(const std::string& value) {
   if (!base::StartsWith(value, "/", base::CompareCase::SENSITIVE))
     return false;
 
-  // Elements are pieces delimited by '/'. For instance, "org", "chromium",
-  // "Foo" are elements of "/org/chromium/Foo".
+  // Elements are pieces delimited by '/'. For instance, "org", "monyhar",
+  // "Foo" are elements of "/org/monyhar/Foo".
   int element_length = 0;
   for (size_t i = 1; i < value.size(); ++i) {
     const char c = value[i];

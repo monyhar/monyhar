@@ -66,7 +66,7 @@ tracks the effort to enable them on Android.
 **Web Tests Note**
 
 Web Tests were enabled on Android K before, but it is disabled on Android platform now,
-see [this thread](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/338WKwWPbPI/discussion) for more context.
+see [this thread](https://groups.google.com/a/monyhar.org/forum/#!topic/blink-dev/338WKwWPbPI/discussion) for more context.
 ***
 
 ## General Principles
@@ -112,7 +112,7 @@ The following is the recommended thresholds for different code coverage levels:
 * >level 3(commendable): 75%
 * >level 4(exemplary): 90%
 
-Go to [code coverage dashboard](https://analysis.chromium.org/p/chromium/coverage) to check the code coverage for your project.
+Go to [code coverage dashboard](https://analysis.monyhar.org/p/monyhar/coverage) to check the code coverage for your project.
 
 
 ## How to write new tests
@@ -181,19 +181,19 @@ test]" has instructions on how to disable a flaky test.
 [gtest]: https://github.com/google/googletest
 [Simple gtests]: https://github.com/google/googletest/blob/master/docs/primer.md#simple-tests
 [Junit]: https://developer.android.com/training/testing/junit-rules
-[Instrumentation Tests]: https://chromium.googlesource.com/chromium/src/+/main/testing/android/docs/instrumentation.md
+[Instrumentation Tests]: https://monyhar.googlesource.com/monyhar/src/+/main/testing/android/docs/instrumentation.md
 [EarlGrey]: https://github.com/google/EarlGrey
-[Telemetry]: https://chromium.googlesource.com/catapult/+/HEAD/telemetry/README.md
-[Fuzzer Tests]: https://chromium.googlesource.com/chromium/src/+/main/testing/libfuzzer/README.md
-[Tast]: https://chromium.googlesource.com/chromiumos/platform/tast/+/HEAD/README.md
+[Telemetry]: https://monyhar.googlesource.com/catapult/+/HEAD/telemetry/README.md
+[Fuzzer Tests]: https://monyhar.googlesource.com/monyhar/src/+/main/testing/libfuzzer/README.md
+[Tast]: https://monyhar.googlesource.com/monyharos/platform/tast/+/HEAD/README.md
 [Web Tests]: ./web_tests.md
-[crbug/611756]: https://bugs.chromium.org/p/chromium/issues/detail?id=611756
-[Flake Portal]: https://analysis.chromium.org/p/chromium/flake-portal
-[Write Fuzz Target]: https://chromium.googlesource.com/chromium/src/+/main/testing/libfuzzer/getting_started.md#write-fuzz-target
-[Telemetry: Run benchmarks locally]: https://chromium.googlesource.com/catapult/+/HEAD/telemetry/docs/run_benchmarks_locally.md
-[Run fuzz target locally]: https://chromium.googlesource.com/chromium/src/+/main/testing/libfuzzer/getting_started.md#build-and-run-fuzz-target-locally
-[Android Debugging Instructions]: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/android_debugging_instructions.md
+[crbug/611756]: https://bugs.monyhar.org/p/monyhar/issues/detail?id=611756
+[Flake Portal]: https://analysis.monyhar.org/p/monyhar/flake-portal
+[Write Fuzz Target]: https://monyhar.googlesource.com/monyhar/src/+/main/testing/libfuzzer/getting_started.md#write-fuzz-target
+[Telemetry: Run benchmarks locally]: https://monyhar.googlesource.com/catapult/+/HEAD/telemetry/docs/run_benchmarks_locally.md
+[Run fuzz target locally]: https://monyhar.googlesource.com/monyhar/src/+/main/testing/libfuzzer/getting_started.md#build-and-run-fuzz-target-locally
+[Android Debugging Instructions]: https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/android_debugging_instructions.md
 [Chrome OS Debugging Tips]: ./chromeos_debugging_tips.md
-[Debugging Web Tests]: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/testing/web_tests.md#Debugging-Web-Tests
-[code coverage dashboard]: https://analysis.chromium.org/p/chromium/coverage
-[How do I disable a flaky test]: https://www.chromium.org/developers/tree-sheriffs/sheriff-details-chromium#TOC-How-do-I-disable-a-flaky-test-
+[Debugging Web Tests]: https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/testing/web_tests.md#Debugging-Web-Tests
+[code coverage dashboard]: https://analysis.monyhar.org/p/monyhar/coverage
+[How do I disable a flaky test]: https://www.monyhar.org/developers/tree-sheriffs/sheriff-details-monyhar#TOC-How-do-I-disable-a-flaky-test-

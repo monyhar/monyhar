@@ -20,7 +20,7 @@ enum class PrefetchResultCode;
 }  // namespace base
 
 // Implements the common aspects of loading the main dll for both chrome and
-// chromium scenarios, which are in charge of implementing one abstract
+// monyhar scenarios, which are in charge of implementing one abstract
 // method: OnBeforeLaunch()
 class MainDllLoader {
  public:

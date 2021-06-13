@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.send_tab_to_self;
+package org.monyhar.chrome.browser.share.send_tab_to_self;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.chrome.R;
-import org.chromium.components.infobars.InfoBar;
-import org.chromium.components.infobars.InfoBarCompactLayout;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.chrome.R;
+import org.monyhar.components.infobars.InfoBar;
+import org.monyhar.components.infobars.InfoBarCompactLayout;
 
 /**
  * This infobar is shown to let users know they have a shared tab from another

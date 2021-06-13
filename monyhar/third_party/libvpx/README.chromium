@@ -16,7 +16,7 @@ Chromium.
 
 The libvpx source is from webmproject.org:
   http://www.webmproject.org/code/
-  https://chromium.googlesource.com/webm/libvpx
+  https://monyhar.googlesource.com/webm/libvpx
 
 Please follow these steps to update libvpx source code:
 
@@ -38,7 +38,7 @@ Please follow these steps to update libvpx source code:
 
      git commit -a --amend
 
-3. Update 'Branch' in README.chromium if necessary.
+3. Update 'Branch' in README.monyhar if necessary.
 
 4. Upload the change to Gerrit:
 

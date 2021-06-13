@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.signin.ui.account_picker;
+package org.monyhar.chrome.browser.signin.ui.account_picker;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,15 +13,15 @@ import androidx.annotation.VisibleForTesting;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.chrome.browser.signin.ui.R;
-import org.chromium.chrome.browser.signin.ui.account_picker.AccountPickerCoordinator.Listener;
-import org.chromium.components.browser_ui.modaldialog.AppModalPresenter;
-import org.chromium.ui.modaldialog.DialogDismissalCause;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.modaldialog.ModalDialogManager.ModalDialogType;
-import org.chromium.ui.modaldialog.ModalDialogProperties;
-import org.chromium.ui.modaldialog.ModalDialogProperties.Controller;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.chrome.browser.signin.ui.R;
+import org.monyhar.chrome.browser.signin.ui.account_picker.AccountPickerCoordinator.Listener;
+import org.monyhar.components.browser_ui.modaldialog.AppModalPresenter;
+import org.monyhar.ui.modaldialog.DialogDismissalCause;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.modaldialog.ModalDialogManager.ModalDialogType;
+import org.monyhar.ui.modaldialog.ModalDialogProperties;
+import org.monyhar.ui.modaldialog.ModalDialogProperties.Controller;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * Coordinator to show the modal account picker dialog.

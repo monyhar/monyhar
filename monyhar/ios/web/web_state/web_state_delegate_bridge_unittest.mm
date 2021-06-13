@@ -87,8 +87,8 @@ TEST_F(WebStateDelegateBridgeTest, OpenURLFromWebState) {
   ASSERT_FALSE([delegate_ openURLParams]);
 
   web::WebState::OpenURLParams params(
-      GURL("https://chromium.test/"), GURL("https://virtual.chromium.test/"),
-      web::Referrer(GURL("https://chromium2.test/"), ReferrerPolicyNever),
+      GURL("https://monyhar.test/"), GURL("https://virtual.monyhar.test/"),
+      web::Referrer(GURL("https://monyhar2.test/"), ReferrerPolicyNever),
       WindowOpenDisposition::NEW_WINDOW, ui::PAGE_TRANSITION_FORM_SUBMIT, true);
   EXPECT_EQ(&fake_web_state_,
             bridge_->OpenURLFromWebState(&fake_web_state_, params));

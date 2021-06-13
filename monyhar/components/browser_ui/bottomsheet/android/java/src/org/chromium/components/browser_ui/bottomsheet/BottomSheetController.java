@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.bottomsheet;
+package org.monyhar.components.browser_ui.bottomsheet;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.components.browser_ui.widget.scrim.ScrimCoordinator;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.components.browser_ui.widget.scrim.ScrimCoordinator;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

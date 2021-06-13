@@ -10,15 +10,15 @@ module arc.mojom;
 // if there are no errors.
 struct IsPaymentImplementedValidResult {
   // The list of activities with intent filter for
-  // org.chromium.intent.action.PAY action and "https://play.google.com/billing"
-  // in either "org.chromium.default_payment_method_name" or
-  // "org.chromium.payment_method_names" metadata. Other payment methods are
+  // org.monyhar.intent.action.PAY action and "https://play.google.com/billing"
+  // in either "org.monyhar.default_payment_method_name" or
+  // "org.monyhar.payment_method_names" metadata. Other payment methods are
   // ignored for now.
   // Example activity name: "com.example.app.PaymentActivity".
   array<string> activity_names;
 
   // The list of services with intent filter for
-  // org.chromium.intent.action.IS_READY_TO_PAY. Example service name:
+  // org.monyhar.intent.action.IS_READY_TO_PAY. Example service name:
   // "com.example.app.IsReadyToPayService".
   array<string> service_names;
 };
@@ -138,11 +138,11 @@ union InvokePaymentAppResult {
 interface PaymentAppInstance {
   // Called by the browser to check whether the TWA with |package_name| (e.g.,
   // "com.example.app") in ARC has intent filters for
-  // org.chromium.intent.action.PAY and
-  // org.chromium.intent.action.IS_READY_TO_PAY with
+  // org.monyhar.intent.action.PAY and
+  // org.monyhar.intent.action.IS_READY_TO_PAY with
   // "https://play.google.com/billing" in either
-  // "org.chromium.default_payment_method_name" or
-  // "org.chromium.payment_method_names" metadata of the PAY intent filter.
+  // "org.monyhar.default_payment_method_name" or
+  // "org.monyhar.payment_method_names" metadata of the PAY intent filter.
   // Other payment methods are ignored for now.
   //
   // Should not invoke any of the TWA activities or connect to any of its

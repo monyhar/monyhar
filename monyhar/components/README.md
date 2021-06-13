@@ -20,7 +20,7 @@ than one part of the Chromium codebase.
         it's conceptually Blink code, then `//third_party/blink/common` likely
         makes more sense. (In the so-far hypothetical case where it's
         conceptually Blink code that is shared by iOS, raise the question on
-        chromium-dev@, where the right folks will see it).
+        monyhar-dev@, where the right folks will see it).
 
 ## Guidelines for adding a new component
 
@@ -58,7 +58,7 @@ Components **can** depend on `//content/public`, `//ipc`, and
 `//third_party/blink/public`. This must be made explicit in the `DEPS` file of
 the component. If such a component is used by Chrome for iOS (which does not
 use content or IPC), the component will have to be in the form of a [layered
-component](http://www.chromium.org/developers/design-documents/layered-components-design).
+component](http://www.monyhar.org/developers/design-documents/layered-components-design).
 
 `//chrome`, `//ios/chrome`, `//content` and `//ios/web` **can** depend on
 individual components. The dependency might have to be made explicit in the
@@ -70,7 +70,7 @@ component cannot depend on  `//content/public`, directly or indirectly.
 
 As mentioned above, components that depend on `//content/public`, `//ipc`, or
 `third_party/blink/public` might have to be in the form of a [layered
-component](http://www.chromium.org/developers/design-documents/layered-components-design).
+component](http://www.monyhar.org/developers/design-documents/layered-components-design).
 
 Components that have bits of code that need to live in different processes (e.g.
 some code in the browser process, some in the renderer process, etc.) should
@@ -90,13 +90,13 @@ renderer process directory except for `third_party/blink/public/common` which
 can be used by all processes.
 
 Note that there may also be an `android` subdir, with a Java source code
-structure underneath it where the package name is org.chromium.components.foo,
+structure underneath it where the package name is org.monyhar.components.foo,
 and with subdirs after 'foo' to illustrate process, e.g. 'browser' or
 'renderer':
 
   * `components/foo/android/OWNERS`, `DEPS`
-  * `components/foo/android/java/src/org/chromium/components/foo/browser/`
-  * `components/foo/android/javatests/src/org/chromium/components/foo/browser/`
+  * `components/foo/android/java/src/org/monyhar/components/foo/browser/`
+  * `components/foo/android/javatests/src/org/monyhar/components/foo/browser/`
 
 Code in a component should be placed in a namespace corresponding to the name of
 the component; e.g. for a component living in `//components/foo`, code in that
@@ -104,4 +104,4 @@ component should be in the `foo::` namespace.
 
 ## How does this differ from //base/util?
 
-See the explanation in [//base/util/README.md](https://chromium.googlesource.com/chromium/src/+/HEAD/base/util/README.md#how-does-this-differ-from-components).
+See the explanation in [//base/util/README.md](https://monyhar.googlesource.com/monyhar/src/+/HEAD/base/util/README.md#how-does-this-differ-from-components).

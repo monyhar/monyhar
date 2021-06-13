@@ -15,4 +15,4 @@ applications, or by launching those applications directly.
 
 For other desktop environments, Chromium's proxy settings can be configured
 using command-line flags or environment variables. These are documented on the
-man page (`man google-chrome` or `man chromium-browser`).
+man page (`man google-chrome` or `man monyhar-browser`).

@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.infobar;
+package org.monyhar.chrome.browser.infobar;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.chrome.R;
-import org.chromium.components.infobars.InfoBar;
-import org.chromium.components.infobars.InfoBarCompactLayout;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.chrome.R;
+import org.monyhar.components.infobars.InfoBar;
+import org.monyhar.components.infobars.InfoBarCompactLayout;
 
 /**
  * This InfoBar is shown to let the user know when the browser took action to stop a page from using

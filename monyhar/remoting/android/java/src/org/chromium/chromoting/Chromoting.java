@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting;
+package org.monyhar.chromoting;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
@@ -33,18 +33,18 @@ import androidx.core.content.ContextCompat;
 import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import org.chromium.base.Log;
-import org.chromium.chromoting.accountswitcher.AccountSwitcher;
-import org.chromium.chromoting.accountswitcher.AccountSwitcherFactory;
-import org.chromium.chromoting.base.OAuthTokenFetcher;
-import org.chromium.chromoting.help.HelpContext;
-import org.chromium.chromoting.help.HelpSingleton;
-import org.chromium.chromoting.jni.Client;
-import org.chromium.chromoting.jni.ConnectionListener;
-import org.chromium.chromoting.jni.DirectoryService;
-import org.chromium.chromoting.jni.DirectoryServiceRequestError;
-import org.chromium.chromoting.jni.JniOAuthTokenGetter;
-import org.chromium.chromoting.jni.NotificationPresenter;
+import org.monyhar.base.Log;
+import org.monyhar.chromoting.accountswitcher.AccountSwitcher;
+import org.monyhar.chromoting.accountswitcher.AccountSwitcherFactory;
+import org.monyhar.chromoting.base.OAuthTokenFetcher;
+import org.monyhar.chromoting.help.HelpContext;
+import org.monyhar.chromoting.help.HelpSingleton;
+import org.monyhar.chromoting.jni.Client;
+import org.monyhar.chromoting.jni.ConnectionListener;
+import org.monyhar.chromoting.jni.DirectoryService;
+import org.monyhar.chromoting.jni.DirectoryServiceRequestError;
+import org.monyhar.chromoting.jni.JniOAuthTokenGetter;
+import org.monyhar.chromoting.jni.NotificationPresenter;
 
 import java.util.ArrayList;
 import java.util.Arrays;

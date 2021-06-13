@@ -350,7 +350,7 @@ Follow the instructions below to debug your module with nacl-gdb:
 
    ``--user-data-dir=<directory>``
      Specifies the `user data directory
-     <http://www.chromium.org/user-experience/user-data-directory>`_ from which
+     <http://www.monyhar.org/user-experience/user-data-directory>`_ from which
      Chrome should load its state.  You can specify a different user data
      directory so that changes you make to Chrome in your debugging session do
      not affect your personal Chrome data (history, cookies, bookmarks, themes,
@@ -533,7 +533,7 @@ Debugging with other tools
 If you cannot use the :ref:`Visual Studio add-in <visual_studio>`, or you want
 to use a debugger other than nacl-gdb, you must manually build your module as a
 Pepper plugin (sometimes referred to as a "`trusted
-<http://www.chromium.org/nativeclient/getting-started/getting-started-background-and-basics#TOC-Trusted-vs-Untrusted>`_"
+<http://www.monyhar.org/nativeclient/getting-started/getting-started-background-and-basics#TOC-Trusted-vs-Untrusted>`_"
 or "in-process" plugin).  Pepper plugins (.DLL files on Windows; .so files on
 Linux; .bundle files on Mac) are loaded directly in either the Chrome renderer
 process or a separate plugin process, rather than in Native Client. Building a
@@ -542,7 +542,7 @@ development tools on your system, but when you're finished developing the
 plugin, you need to port it to Native Client (i.e., build the module with one of
 the toolchains in the NaCl SDK so that the module runs in Native Client).  For
 details on this advanced development technique, see `Debugging a Trusted Plugin
-<http://www.chromium.org/nativeclient/how-tos/debugging-documentation/debugging-a-trusted-plugin>`_.
+<http://www.monyhar.org/nativeclient/how-tos/debugging-documentation/debugging-a-trusted-plugin>`_.
 Note that starting with the ``pepper_22`` bundle, the NaCl SDK for Windows
 includes pre-built libraries and library source code, making it much easier to
 build a module into a .DLL.

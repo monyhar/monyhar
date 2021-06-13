@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting.help;
+package org.monyhar.chromoting.help;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -16,8 +16,8 @@ import android.os.Parcel;
 import android.os.RemoteException;
 import android.view.View;
 
-import org.chromium.base.Log;
-import org.chromium.ui.UiUtils;
+import org.monyhar.base.Log;
+import org.monyhar.ui.UiUtils;
 
 /**
  * This is a helper class for sending feedback.

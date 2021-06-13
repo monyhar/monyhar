@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.gcore;
+package org.monyhar.chrome.browser.gcore;
 
 import android.text.format.DateUtils;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
-import org.chromium.base.TraceEvent;
-import org.chromium.base.annotations.RemovableInRelease;
+import org.monyhar.base.Log;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.base.annotations.RemovableInRelease;
 
 /**
  * Base class for tasks which connects to Google Play Services using given GoogleApiClient,

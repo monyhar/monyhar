@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.search_engines;
+package org.monyhar.chrome.browser.search_engines;
 
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,12 +10,12 @@ import android.view.ViewGroup;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 
-import org.chromium.base.task.PostTask;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.R;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.R;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /**
  * Utilities for interacting with a {@link DefaultSearchEngineDialogHelper}.

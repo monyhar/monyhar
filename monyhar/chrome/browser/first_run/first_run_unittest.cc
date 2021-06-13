@@ -147,7 +147,7 @@ TEST_F(FirstRunTest, MAYBE_InitialPrefsUsedIfReadable) {
   std::unique_ptr<installer::InitialPreferences> prefs =
       first_run::LoadInitialPrefs();
   ASSERT_TRUE(prefs);
-  EXPECT_EQ(prefs->GetFirstRunTabs()[0], "https://www.chromium.org/initial");
+  EXPECT_EQ(prefs->GetFirstRunTabs()[0], "https://www.monyhar.org/initial");
 }
 
 #if defined(OS_MAC)
@@ -163,7 +163,7 @@ TEST_F(FirstRunTest, MAYBE_LegacyInitialPrefsUsedIfNewFileIsNotPresent) {
   std::unique_ptr<installer::InitialPreferences> prefs =
       first_run::LoadInitialPrefs();
   ASSERT_TRUE(prefs);
-  EXPECT_EQ(prefs->GetFirstRunTabs()[0], "https://www.chromium.org/legacy");
+  EXPECT_EQ(prefs->GetFirstRunTabs()[0], "https://www.monyhar.org/legacy");
 }
 
 }  // namespace first_run

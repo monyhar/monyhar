@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sync;
+package org.monyhar.chrome.browser.sync;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /**
  * A utility class for mocking AndroidSyncSettings.

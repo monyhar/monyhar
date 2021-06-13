@@ -7,7 +7,7 @@ Sample usage:
 > rem Add the VS tools to the path, for access to dumpbin
 > "%vs120comntools%vsvars32.bat"
 
-D:\src\chromium\src\tools\win>dumpbin /headers "c:\Program Files (x86)\Google\Chrome\Application\chrome.exe" | findstr "RSDS date image"
+D:\src\monyhar\src\tools\win>dumpbin /headers "c:\Program Files (x86)\Google\Chrome\Application\chrome.exe" | findstr "RSDS date image"
         54E3AECF time date stamp Tue Feb 17 13:12:47 2015
           400000 image base (00400000 to 004D2FFF)
             0.00 image version

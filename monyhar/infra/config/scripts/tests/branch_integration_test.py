@@ -49,7 +49,7 @@ class BranchIntegrationTest(unittest.TestCase):
         settings,
         textwrap.dedent("""\
         {
-            "project": "chromium-mXX",
+            "project": "monyhar-mXX",
             "project_title": "Chromium MXX",
             "is_main": false,
             "is_lts_branch": false,
@@ -71,7 +71,7 @@ class BranchIntegrationTest(unittest.TestCase):
   def test_set_type_rewrites_settings_json(self):
     with open(self._settings_json, 'w') as f:
       settings = {
-          "project": "chromium-mXX",
+          "project": "monyhar-mXX",
           "project_title": "Chromium MXX",
           "is_main": True,
           "is_lts_branch": False,
@@ -90,7 +90,7 @@ class BranchIntegrationTest(unittest.TestCase):
         settings,
         textwrap.dedent("""\
             {
-                "project": "chromium-mXX",
+                "project": "monyhar-mXX",
                 "project_title": "Chromium MXX",
                 "is_main": false,
                 "is_lts_branch": true,

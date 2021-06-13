@@ -15,7 +15,7 @@
 #include "jingle/glue/thread_wrapper.h"
 #include "net/url_request/url_request_context_getter.h"
 #include "remoting/base/logging.h"
-#include "remoting/protocol/chromium_port_allocator_factory.h"
+#include "remoting/protocol/monyhar_port_allocator_factory.h"
 #include "remoting/protocol/port_allocator_factory.h"
 #include "remoting/protocol/remoting_ice_config_request.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"

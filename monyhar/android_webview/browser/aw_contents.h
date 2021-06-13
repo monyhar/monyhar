@@ -77,7 +77,7 @@ class AwContents : public FindHelper::Listener,
   }
 
   // |handler| is an instance of
-  // org.chromium.android_webview.AwHttpAuthHandler.
+  // org.monyhar.android_webview.AwHttpAuthHandler.
   bool OnReceivedHttpAuthRequest(const base::android::JavaRef<jobject>& handler,
                                  const std::string& host,
                                  const std::string& realm);

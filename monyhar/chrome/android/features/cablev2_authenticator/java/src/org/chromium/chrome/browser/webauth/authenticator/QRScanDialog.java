@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webauth.authenticator;
+package org.monyhar.chrome.browser.webauth.authenticator;
 
 import android.content.DialogInterface;
 import android.graphics.ImageFormat;
@@ -21,11 +21,11 @@ import com.google.android.gms.vision.Frame;
 import com.google.android.gms.vision.barcode.Barcode;
 import com.google.android.gms.vision.barcode.BarcodeDetector;
 
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.task.TaskTraits;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.task.TaskTraits;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 import java.nio.ByteBuffer;
 

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting.accountswitcher;
+package org.monyhar.chromoting.accountswitcher;
 
 import android.accounts.Account;
 import android.accounts.AccountManager;
@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import org.chromium.chromoting.R;
+import org.monyhar.chromoting.R;
 
 /**
  * This class implements a basic UI for a user account switcher. This implementation works on

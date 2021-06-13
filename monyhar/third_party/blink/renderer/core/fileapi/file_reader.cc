@@ -62,7 +62,7 @@ const std::string Utf8FilePath(Blob* blob) {
 
 }  // namespace
 
-// Embedders like chromium limit the number of simultaneous requests to avoid
+// Embedders like monyhar limit the number of simultaneous requests to avoid
 // excessive IPC congestion. We limit this to 100 per thread to throttle the
 // requests (the value is arbitrarily chosen).
 static const size_t kMaxOutstandingRequestsPerThread = 100;

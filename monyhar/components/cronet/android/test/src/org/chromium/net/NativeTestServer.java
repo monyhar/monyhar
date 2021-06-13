@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
 import android.content.Context;
 
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.test.util.UrlUtils;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.test.util.UrlUtils;
 
 /**
  * Wrapper class to start an in-process native test server, and get URLs

@@ -15,7 +15,7 @@
 namespace bluez {
 
 const char BluetoothProfileManagerClient::kNoResponseError[] =
-    "org.chromium.Error.NoResponse";
+    "org.monyhar.Error.NoResponse";
 
 BluetoothProfileManagerClient::Options::Options() = default;
 

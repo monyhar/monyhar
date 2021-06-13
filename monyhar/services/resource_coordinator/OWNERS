@@ -1,10 +1,10 @@
-chrisha@chromium.org
-fdoray@chromium.org
+chrisha@monyhar.org
+fdoray@monyhar.org
 
 # Emeritus:
-haraken@chromium.org
-lpy@chromium.org
-oysteine@chromium.org
-zhenw@chromium.org
+haraken@monyhar.org
+lpy@monyhar.org
+oysteine@monyhar.org
+zhenw@monyhar.org
 
 per-file BUILD.gn=file://services/resource_coordinator/memory_instrumentation/OWNERS

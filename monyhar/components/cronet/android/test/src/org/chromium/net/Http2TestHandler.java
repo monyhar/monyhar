@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

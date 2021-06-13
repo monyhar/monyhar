@@ -41,14 +41,14 @@ namespace {
 // Directory containing the |kLogoPagePath| and |kLogoPageImageSourcePath|
 // resources.
 // const char kServerFilesDir[] = "ios/testing/data/http_server_files/";
-// Path to a page containing the chromium logo and the text |kLogoPageText|.
-const char kLogoPagePath[] = "/chromium_logo_page.html";
-// Path to the chromium logo.
-const char kLogoPageImageSourcePath[] = "/chromium_logo.png";
-// The DOM element ID of the chromium image on the logo page.
-const char kLogoPageChromiumImageId[] = "chromium_image";
+// Path to a page containing the monyhar logo and the text |kLogoPageText|.
+const char kLogoPagePath[] = "/monyhar_logo_page.html";
+// Path to the monyhar logo.
+const char kLogoPageImageSourcePath[] = "/monyhar_logo.png";
+// The DOM element ID of the monyhar image on the logo page.
+const char kLogoPageChromiumImageId[] = "monyhar_image";
 // The text of the message on the logo page.
-const char kLogoPageText[] = "Page with some text and the chromium logo image.";
+const char kLogoPageText[] = "Page with some text and the monyhar logo image.";
 
 // URL to a page with a static message.
 const char kDestinationPageUrl[] = "/destination";
@@ -83,7 +83,7 @@ const char kInitialPageDestinationLinkText[] = "link";
 NSString* const kTruncationTestPageTemplateHtml =
     @"<html><body><p style='margin-bottom:50px'>Short title test.</p>"
      "<p><a style='margin-left:150px' href='%@' id='%s'>LINK</a></p>"
-     "<img src='chromium_logo.png' title='%@' id='%s'/>"
+     "<img src='monyhar_logo.png' title='%@' id='%s'/>"
      "</body></html>";
 
 const char kShortTruncationPageUrl[] = "/shortTruncation";

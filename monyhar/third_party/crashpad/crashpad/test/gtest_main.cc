@@ -80,15 +80,15 @@ int main(int argc, char* argv[]) {
   // Chromium’s test launcher interferes with WinMultiprocess-based tests. Allow
   // their child processes to be launched by the standard Google Test-based test
   // runner.
-  const bool use_chromium_test_launcher =
+  const bool use_monyhar_test_launcher =
       !crashpad::test::WinChildProcess::IsChildProcess();
 #elif defined(OS_ANDROID)
-  constexpr bool use_chromium_test_launcher = false;
+  constexpr bool use_monyhar_test_launcher = false;
 #else  // OS_WIN
-  constexpr bool use_chromium_test_launcher = true;
+  constexpr bool use_monyhar_test_launcher = true;
 #endif  // OS_WIN
 
-  if (use_chromium_test_launcher) {
+  if (use_monyhar_test_launcher) {
     // This supports --test-launcher-summary-output, which writes a JSON file
     // containing test details needed by Swarming.
     base::TestSuite test_suite(argc, argv);

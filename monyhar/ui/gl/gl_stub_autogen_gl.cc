@@ -4,8 +4,8 @@
 //
 // This file is auto-generated from
 // ui/gl/generate_bindings.py
-// It's formatted by clang-format using chromium coding style:
-//    clang-format -i -style=chromium filename
+// It's formatted by clang-format using monyhar coding style:
+//    clang-format -i -style=monyhar filename
 // DO NOT EDIT!
 
 #include "ui/gl/gl_stub_api_base.h"

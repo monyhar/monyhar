@@ -11,7 +11,7 @@ namespace ui {
 // https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-enterkeyhint-attribute
 //
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.ui.base.ime
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.ui.base.ime
 enum class TextInputAction {
   kDefault,
   kEnter,

@@ -76,7 +76,7 @@ from collections import namedtuple
 #
 # Here's an example of what the entry for the Chromium repo looks like:
 #   {
-#     'url': 'chromium.googlesource/+/{revision}/{file_path}?format=TEXT',
+#     'url': 'monyhar.googlesource/+/{revision}/{file_path}?format=TEXT',
 #     'base64': True
 #   }
 #

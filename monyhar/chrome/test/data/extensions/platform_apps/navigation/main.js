@@ -60,7 +60,7 @@ chrome.test.getConfig(function(config) {
     // (verified in C++).
     function() {
       testLink.target = '_blank';
-      testLink.href = 'http://chromium.org';
+      testLink.href = 'http://monyhar.org';
       clickTestLink();
     },
     // If we manage to execute this test case, then we haven't navigated away.

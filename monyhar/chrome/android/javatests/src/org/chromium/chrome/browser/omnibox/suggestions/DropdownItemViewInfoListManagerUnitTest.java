@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions;
+package org.monyhar.chrome.browser.omnibox.suggestions;
 
 import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.eq;
@@ -24,13 +24,13 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Batch;
-import org.chromium.chrome.browser.omnibox.styles.OmniboxTheme;
-import org.chromium.components.omnibox.AutocompleteResult.GroupDetails;
-import org.chromium.ui.modelutil.ListObservable.ListObserver;
-import org.chromium.ui.modelutil.MVCListAdapter.ModelList;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.chrome.browser.omnibox.styles.OmniboxTheme;
+import org.monyhar.components.omnibox.AutocompleteResult.GroupDetails;
+import org.monyhar.ui.modelutil.ListObservable.ListObserver;
+import org.monyhar.ui.modelutil.MVCListAdapter.ModelList;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -6,7 +6,7 @@ data) should live here as much as possible.
 
 Internally, the directory uses the Layered Components model:
 
-http://www.chromium.org/developers/design-documents/layered-components-design
+http://www.monyhar.org/developers/design-documents/layered-components-design
 
 
 In practical terms, our division between content/ and core/ is usually just a

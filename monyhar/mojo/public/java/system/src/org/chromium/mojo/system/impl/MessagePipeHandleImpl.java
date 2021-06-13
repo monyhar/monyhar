@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo.system.impl;
+package org.monyhar.mojo.system.impl;
 
-import org.chromium.mojo.system.Handle;
-import org.chromium.mojo.system.MessagePipeHandle;
-import org.chromium.mojo.system.ResultAnd;
+import org.monyhar.mojo.system.Handle;
+import org.monyhar.mojo.system.MessagePipeHandle;
+import org.monyhar.mojo.system.ResultAnd;
 
 import java.nio.ByteBuffer;
 import java.util.List;
@@ -30,7 +30,7 @@ class MessagePipeHandleImpl extends HandleBase implements MessagePipeHandle {
     }
 
     /**
-     * @see org.chromium.mojo.system.MessagePipeHandle#pass()
+     * @see org.monyhar.mojo.system.MessagePipeHandle#pass()
      */
     @Override
     public MessagePipeHandle pass() {

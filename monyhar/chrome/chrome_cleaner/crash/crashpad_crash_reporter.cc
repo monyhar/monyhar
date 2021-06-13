@@ -115,7 +115,7 @@ int CrashReporterMain() {
 
   std::vector<std::wstring> argv = command_line->argv();
 
-  // Because of https://bugs.chromium.org/p/crashpad/issues/detail?id=82,
+  // Because of https://bugs.monyhar.org/p/crashpad/issues/detail?id=82,
   // Crashpad fails on the presence of flags it doesn't handle. Until that bug
   // is fixed, we need to remove any custom flag passed by the cleaner to the
   // Crashpad process.
@@ -124,7 +124,7 @@ int CrashReporterMain() {
   RemoveSwitchIfExisting(chrome_cleaner::kCleanupIdSwitch, &argv);
 
   // Disable rate-limiting until this is fixed:
-  //   https://bugs.chromium.org/p/crashpad/issues/detail?id=23
+  //   https://bugs.monyhar.org/p/crashpad/issues/detail?id=23
   argv.push_back(L"--no-rate-limit");
 
   // |storage| must be declared before |argv_as_utf8|, to ensure it outlives

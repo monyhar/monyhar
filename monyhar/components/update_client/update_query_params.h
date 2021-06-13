@@ -28,7 +28,7 @@ class UpdateQueryParams {
   static std::string Get(ProdId prod);
 
   // Returns the value we use for the "prod=" parameter. Possible return values
-  // include "chrome", "chromecrx", "chromiumcrx", and "unknown".
+  // include "chrome", "chromecrx", "monyharcrx", and "unknown".
   static const char* GetProdIdString(ProdId prod);
 
   // Returns the value we use for the "os=" parameter. Possible return values

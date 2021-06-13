@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sync;
+package org.monyhar.chrome.browser.sync;
 
 import android.util.Pair;
 
@@ -18,23 +18,23 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaNotSatisfiedException;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabModelUtils;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.util.browser.sync.SyncTestUtil;
-import org.chromium.components.sync.protocol.EntitySpecifics;
-import org.chromium.components.sync.protocol.SessionHeader;
-import org.chromium.components.sync.protocol.SessionSpecifics;
-import org.chromium.components.sync.protocol.SessionTab;
-import org.chromium.components.sync.protocol.SessionWindow;
-import org.chromium.components.sync.protocol.SyncEnums;
-import org.chromium.components.sync.protocol.TabNavigation;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaNotSatisfiedException;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabModelUtils;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.util.browser.sync.SyncTestUtil;
+import org.monyhar.components.sync.protocol.EntitySpecifics;
+import org.monyhar.components.sync.protocol.SessionHeader;
+import org.monyhar.components.sync.protocol.SessionSpecifics;
+import org.monyhar.components.sync.protocol.SessionTab;
+import org.monyhar.components.sync.protocol.SessionWindow;
+import org.monyhar.components.sync.protocol.SyncEnums;
+import org.monyhar.components.sync.protocol.TabNavigation;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;

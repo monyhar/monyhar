@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.browser;
+package org.monyhar.content_public.browser;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.blink.mojom.ContactIconBlob;
-import org.chromium.payments.mojom.PaymentAddress;
+import org.monyhar.blink.mojom.ContactIconBlob;
+import org.monyhar.payments.mojom.PaymentAddress;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

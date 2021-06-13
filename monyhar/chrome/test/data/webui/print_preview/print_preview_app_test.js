@@ -56,7 +56,7 @@ suite(print_preview_app_test.suiteName, function() {
     pdfPrinterDisabled: false,
     destinationsManaged: false,
     cloudPrintURL: 'cloudprint URL',
-    userAccounts: ['foo@chromium.org'],
+    userAccounts: ['foo@monyhar.org'],
   };
 
   /**
@@ -94,7 +94,7 @@ suite(print_preview_app_test.suiteName, function() {
       assert(print_preview_app_test.TestNames.PrintToGoogleDrive), async () => {
         await initialize();
         // Set up the UI to have Google Drive as the printer.
-        page.destination_ = getGoogleDriveDestination('foo@chromium.org');
+        page.destination_ = getGoogleDriveDestination('foo@monyhar.org');
         page.destination_.capabilities = getCddTemplate(page.destination_.id);
 
         // Trigger print.

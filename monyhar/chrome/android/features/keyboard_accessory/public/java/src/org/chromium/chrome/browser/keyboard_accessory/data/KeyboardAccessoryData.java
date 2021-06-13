@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.keyboard_accessory.data;
+package org.monyhar.chrome.browser.keyboard_accessory.data;
 
 import android.graphics.drawable.Drawable;
 import android.view.ViewGroup;
@@ -10,9 +10,9 @@ import android.view.ViewGroup;
 import androidx.annotation.LayoutRes;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.keyboard_accessory.AccessoryAction;
-import org.chromium.chrome.browser.keyboard_accessory.AccessoryTabType;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.keyboard_accessory.AccessoryAction;
+import org.monyhar.chrome.browser.keyboard_accessory.AccessoryTabType;
 
 import java.util.ArrayList;
 import java.util.List;

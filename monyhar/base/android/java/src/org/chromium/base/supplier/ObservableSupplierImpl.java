@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.supplier;
+package org.monyhar.base.supplier;
 
 import android.os.Handler;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ObserverList;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ObserverList;
 
 /**
  * Concrete implementation of {@link ObservableSupplier} to be used by classes owning the

@@ -14,7 +14,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <org.chromium.components.browser_ui.widget.PromoDialogLayout
+    <org.monyhar.components.browser_ui.widget.PromoDialogLayout
             android:id="@+id/promo_dialog_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
             app:maxWidthLandscape="@dimen/dialog_max_width"
             app:maxWidthPortrait="@dimen/dialog_max_width" >
 
-        <org.chromium.components.browser_ui.widget.FadingEdgeScrollView
+        <org.monyhar.components.browser_ui.widget.FadingEdgeScrollView
                 android:id="@+id/promo_container"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -51,7 +51,7 @@
                         android:scaleType="fitCenter"
                         tools:ignore="ContentDescription" />
 
-                <org.chromium.components.browser_ui.widget.BoundedLinearLayout
+                <org.monyhar.components.browser_ui.widget.BoundedLinearLayout
                         android:id="@+id/scrollable_promo_content"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -68,17 +68,17 @@
                         android:layout_marginBottom="@dimen/dialog_header_margin"
                         android:textAppearance="@style/TextAppearance.Headline.Primary" />
 
-                    <org.chromium.ui.widget.TextViewWithClickableSpans
+                    <org.monyhar.ui.widget.TextViewWithClickableSpans
                         android:id="@+id/subheader"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textDirection="locale"
                         app:leading="@dimen/text_size_medium_leading"
                         style="@style/TextAppearance.TextMedium.Secondary" />
-                </org.chromium.components.browser_ui.widget.BoundedLinearLayout>
+                </org.monyhar.components.browser_ui.widget.BoundedLinearLayout>
             </LinearLayout>
 
-        </org.chromium.components.browser_ui.widget.FadingEdgeScrollView>
+        </org.monyhar.components.browser_ui.widget.FadingEdgeScrollView>
 
         <ViewStub
                 android:id="@+id/footer_stub"
@@ -88,7 +88,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-        <org.chromium.components.browser_ui.widget.DualControlLayout
+        <org.monyhar.components.browser_ui.widget.DualControlLayout
                 android:id="@+id/button_bar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -97,6 +97,6 @@
                 app:buttonAlignment="end"
                 app:stackedMargin="@dimen/promo_dialog_stacked_margin" />
 
-    </org.chromium.components.browser_ui.widget.PromoDialogLayout>
+    </org.monyhar.components.browser_ui.widget.PromoDialogLayout>
 
 </merge>

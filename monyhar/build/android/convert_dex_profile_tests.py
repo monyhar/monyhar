@@ -75,19 +75,19 @@ Class descriptor  : 'La;'
 
 # pylint: disable=line-too-long
 PROGUARD_MAPPING = \
-"""org.chromium.Original -> a:
-    org.chromium.Original sDisplayAndroidManager -> e
-    org.chromium.Original another() -> b
+"""org.monyhar.Original -> a:
+    org.monyhar.Original sDisplayAndroidManager -> e
+    org.monyhar.Original another() -> b
     4:4:void inlined():237:237 -> a
-    4:4:org.chromium.Original getInstance():203 -> a
-    5:5:void org.chromium.Original$Subclass.<init>(org.chromium.Original,byte):130:130 -> a
+    4:4:org.monyhar.Original getInstance():203 -> a
+    5:5:void org.monyhar.Original$Subclass.<init>(org.monyhar.Original,byte):130:130 -> a
     5:5:void initialize():237 -> a
-    5:5:org.chromium.Original getInstance():203 -> a
+    5:5:org.monyhar.Original getInstance():203 -> a
     6:6:void initialize():237:237 -> a
-    9:9:android.content.Context org.chromium.base.ContextUtils.getApplicationContext():49:49 -> a
+    9:9:android.content.Context org.monyhar.base.ContextUtils.getApplicationContext():49:49 -> a
     9:9:android.content.Context getContext():219 -> a
     9:9:void initialize():245 -> a
-    9:9:org.chromium.Original getInstance():203 -> a"""
+    9:9:org.monyhar.Original getInstance():203 -> a"""
 
 OBFUSCATED_PROFILE = \
 """La;
@@ -143,11 +143,11 @@ Class descriptor  : 'La;'
 
 # pylint: disable=line-too-long
 PROGUARD_MAPPING_2 = \
-"""org.chromium.Original -> a:
-    org.chromium.Original sDisplayAndroidManager -> e
-    org.chromium.Original another() -> b
+"""org.monyhar.Original -> a:
+    org.monyhar.Original sDisplayAndroidManager -> e
+    org.monyhar.Original another() -> b
     void initialize() -> c
-    org.chromium.Original getInstance():203 -> a
+    org.monyhar.Original getInstance():203 -> a
     4:4:void inlined():237:237 -> a"""
 
 OBFUSCATED_PROFILE_2 = \
@@ -157,10 +157,10 @@ HPSLa;->a()La;
 HPLa;->c()V"""
 
 UNOBFUSCATED_PROFILE = \
-"""Lorg/chromium/Original;
-PLorg/chromium/Original;->another()Lorg/chromium/Original;
-HPSLorg/chromium/Original;->getInstance()Lorg/chromium/Original;
-HPLorg/chromium/Original;->initialize()V"""
+"""Lorg/monyhar/Original;
+PLorg/monyhar/Original;->another()Lorg/monyhar/Original;
+HPSLorg/monyhar/Original;->getInstance()Lorg/monyhar/Original;
+HPLorg/monyhar/Original;->initialize()V"""
 
 class GenerateProfileTests(unittest.TestCase):
   def testProcessDex(self):
@@ -183,16 +183,16 @@ class GenerateProfileTests(unittest.TestCase):
     mapping, reverse = cp.ProcessProguardMapping(
         PROGUARD_MAPPING.splitlines(), dex)
 
-    self.assertEquals('La;', reverse.GetClassMapping('Lorg/chromium/Original;'))
+    self.assertEquals('La;', reverse.GetClassMapping('Lorg/monyhar/Original;'))
 
     getInstance = cp.Method(
-        'getInstance', 'Lorg/chromium/Original;', '', 'Lorg/chromium/Original;')
-    initialize = cp.Method('initialize', 'Lorg/chromium/Original;', '', 'V')
+        'getInstance', 'Lorg/monyhar/Original;', '', 'Lorg/monyhar/Original;')
+    initialize = cp.Method('initialize', 'Lorg/monyhar/Original;', '', 'V')
     another = cp.Method(
-        'another', 'Lorg/chromium/Original;', '', 'Lorg/chromium/Original;')
+        'another', 'Lorg/monyhar/Original;', '', 'Lorg/monyhar/Original;')
     subclassInit = cp.Method(
-        '<init>', 'Lorg/chromium/Original$Subclass;',
-        'Lorg/chromium/Original;B', 'V')
+        '<init>', 'Lorg/monyhar/Original$Subclass;',
+        'Lorg/monyhar/Original;B', 'V')
 
     mapped = mapping.GetMethodMapping(
         cp.Method('a', 'La;', 'Ljava/lang/String;', 'I'))
@@ -200,7 +200,7 @@ class GenerateProfileTests(unittest.TestCase):
     self.assertIn(getInstance, mapped)
     self.assertNotIn(subclassInit, mapped)
     self.assertNotIn(
-        cp.Method('inlined', 'Lorg/chromium/Original;', '', 'V'), mapped)
+        cp.Method('inlined', 'Lorg/monyhar/Original;', '', 'V'), mapped)
     self.assertIn(initialize, mapped)
 
     mapped = mapping.GetMethodMapping(
@@ -224,12 +224,12 @@ class GenerateProfileTests(unittest.TestCase):
     profile = cp.ProcessProfile(OBFUSCATED_PROFILE.splitlines(), mapping)
 
     getInstance = cp.Method(
-        'getInstance', 'Lorg/chromium/Original;', '', 'Lorg/chromium/Original;')
-    initialize = cp.Method('initialize', 'Lorg/chromium/Original;', '', 'V')
+        'getInstance', 'Lorg/monyhar/Original;', '', 'Lorg/monyhar/Original;')
+    initialize = cp.Method('initialize', 'Lorg/monyhar/Original;', '', 'V')
     another = cp.Method(
-        'another', 'Lorg/chromium/Original;', '', 'Lorg/chromium/Original;')
+        'another', 'Lorg/monyhar/Original;', '', 'Lorg/monyhar/Original;')
 
-    self.assertIn('Lorg/chromium/Original;', profile._classes)
+    self.assertIn('Lorg/monyhar/Original;', profile._classes)
     self.assertIn(getInstance, profile._methods)
     self.assertIn(initialize, profile._methods)
     self.assertIn(another, profile._methods)

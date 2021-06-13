@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox;
+package org.monyhar.chrome.browser.omnibox;
 
 import static org.mockito.Mockito.verify;
 
@@ -20,9 +20,9 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.Robolectric;
 
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.omnibox.UrlBar.UrlBarDelegate;
-import org.chromium.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.omnibox.UrlBar.UrlBarDelegate;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
 
 /**
  * Unit tests for the URL bar UI component.

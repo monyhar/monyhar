@@ -25,13 +25,13 @@ re-position the menu to another corner of the screen.
 
 ## Reporting bugs
 
-Use bugs.chromium.org, filing bugs under the component UI>Accessibility with
+Use bugs.monyhar.org, filing bugs under the component UI>Accessibility with
 the label “autoclick” (or, use
-[this template](https://bugs.chromium.org/p/chromium/issues/entry?summary=Autoclick%20-%20&status=Available&cc=katie%40chromium.org%2C%20qqwangxin%40google.com&labels=Pri-3%2C%20autoclick%2C&components=UI>Accessibility)).
+[this template](https://bugs.monyhar.org/p/monyhar/issues/entry?summary=Autoclick%20-%20&status=Available&cc=katie%40monyhar.org%2C%20qqwangxin%40google.com&labels=Pri-3%2C%20autoclick%2C&components=UI>Accessibility)).
 
 
 Open bugs have the label
-“[autoclick](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=label%3Aautoclick)”.
+“[autoclick](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=label%3Aautoclick)”.
 
 ## Developing
 

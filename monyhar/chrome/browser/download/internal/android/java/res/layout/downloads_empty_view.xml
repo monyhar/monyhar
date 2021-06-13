@@ -18,7 +18,7 @@
         android:gravity="center"
         android:padding="@dimen/card_padding" >
 
-        <org.chromium.ui.widget.TextViewWithLeading
+        <org.monyhar.ui.widget.TextViewWithLeading
             android:id="@+id/empty"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
 
     </FrameLayout>
 
-    <org.chromium.ui.widget.LoadingView
+    <org.monyhar.ui.widget.LoadingView
         android:id="@+id/loading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

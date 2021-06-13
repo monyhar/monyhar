@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.header;
+package org.monyhar.chrome.browser.autofill_assistant.header;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -14,18 +14,18 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiController;
-import org.chromium.chrome.browser.autofill_assistant.LayoutUtils;
-import org.chromium.chrome.browser.autofill_assistant.carousel.AssistantChipAdapter;
-import org.chromium.chrome.browser.autofill_assistant.header.AssistantHeaderViewBinder.ViewHolder;
-import org.chromium.chrome.browser.signin.services.DisplayableProfileData;
-import org.chromium.chrome.browser.signin.services.IdentityServicesProvider;
-import org.chromium.chrome.browser.signin.services.ProfileDataCache;
-import org.chromium.components.signin.base.CoreAccountInfo;
-import org.chromium.components.signin.identitymanager.ConsentLevel;
-import org.chromium.components.signin.identitymanager.IdentityManager;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiController;
+import org.monyhar.chrome.browser.autofill_assistant.LayoutUtils;
+import org.monyhar.chrome.browser.autofill_assistant.carousel.AssistantChipAdapter;
+import org.monyhar.chrome.browser.autofill_assistant.header.AssistantHeaderViewBinder.ViewHolder;
+import org.monyhar.chrome.browser.signin.services.DisplayableProfileData;
+import org.monyhar.chrome.browser.signin.services.IdentityServicesProvider;
+import org.monyhar.chrome.browser.signin.services.ProfileDataCache;
+import org.monyhar.components.signin.base.CoreAccountInfo;
+import org.monyhar.components.signin.identitymanager.ConsentLevel;
+import org.monyhar.components.signin.identitymanager.IdentityManager;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
 
 /**
  * Coordinator for the header of the Autofill Assistant.

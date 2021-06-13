@@ -977,7 +977,7 @@ domain Browser
   experimental type PermissionDescriptor extends object
     properties
       # Name of permission.
-      # See https://cs.chromium.org/chromium/src/third_party/blink/renderer/modules/permissions/permission_descriptor.idl for valid permission names.
+      # See https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/modules/permissions/permission_descriptor.idl for valid permission names.
       string name
       # For "midi" permission, may also specify sysex control.
       optional boolean sysex
@@ -3976,7 +3976,7 @@ domain Input
       optional integer location
       # Editing commands to send with the key event (e.g., 'selectAll') (default: []).
       # These are related to but not equal the command names used in `document.execCommand` and NSStandardKeyBindingResponding.
-      # See https://source.chromium.org/chromium/chromium/src/+/master:third_party/blink/renderer/core/editing/commands/editor_command_names.h for valid command names.
+      # See https://source.monyhar.org/monyhar/monyhar/src/+/master:third_party/blink/renderer/core/editing/commands/editor_command_names.h for valid command names.
       experimental optional array of string commands
 
   # This method emulates inserting text that doesn't come from a key press,
@@ -6597,7 +6597,7 @@ domain Page
       boolean allowed
       optional PermissionsPolicyBlockLocator locator
 
-  # Origin Trial(https://www.chromium.org/blink/origin-trials) support.
+  # Origin Trial(https://www.monyhar.org/blink/origin-trials) support.
   # Status for an Origin Trial token.
   experimental type OriginTrialTokenStatus extends string
     enum

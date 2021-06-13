@@ -22,7 +22,7 @@
 namespace chromeos {
 
 namespace {
-const char* kDefaultEuiccPath = "/org/chromium/Hermes/Euicc/0";
+const char* kDefaultEuiccPath = "/org/monyhar/Hermes/Euicc/0";
 const char* kDefaultEid = "12345678901234567890123456789012";
 }  // namespace
 

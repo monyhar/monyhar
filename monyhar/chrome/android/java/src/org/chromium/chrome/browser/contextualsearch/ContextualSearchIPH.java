@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.contextualsearch;
+package org.monyhar.chrome.browser.contextualsearch;
 
 import android.graphics.Point;
 import android.graphics.Rect;
@@ -10,19 +10,19 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.PopupWindow.OnDismissListener;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchPanel;
-import org.chromium.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchPanelInterface;
-import org.chromium.chrome.browser.feature_engagement.TrackerFactory;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.util.ChromeAccessibilityUtil;
-import org.chromium.components.browser_ui.widget.textbubble.TextBubble;
-import org.chromium.components.feature_engagement.EventConstants;
-import org.chromium.components.feature_engagement.FeatureConstants;
-import org.chromium.components.feature_engagement.Tracker;
-import org.chromium.components.feature_engagement.TriggerState;
-import org.chromium.ui.widget.AnchoredPopupWindow;
-import org.chromium.ui.widget.RectProvider;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchPanel;
+import org.monyhar.chrome.browser.compositor.bottombar.contextualsearch.ContextualSearchPanelInterface;
+import org.monyhar.chrome.browser.feature_engagement.TrackerFactory;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.util.ChromeAccessibilityUtil;
+import org.monyhar.components.browser_ui.widget.textbubble.TextBubble;
+import org.monyhar.components.feature_engagement.EventConstants;
+import org.monyhar.components.feature_engagement.FeatureConstants;
+import org.monyhar.components.feature_engagement.Tracker;
+import org.monyhar.components.feature_engagement.TriggerState;
+import org.monyhar.ui.widget.AnchoredPopupWindow;
+import org.monyhar.ui.widget.RectProvider;
 
 /**
  * Helper class for displaying In-Product Help UI for Contextual Search.

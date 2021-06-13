@@ -1,18 +1,18 @@
 // Copyright 2019 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.chrome.browser.password_manager;
+package org.monyhar.chrome.browser.password_manager;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.chrome.browser.AppHooks;
-import org.chromium.chrome.browser.password_check.PasswordCheckFactory;
-import org.chromium.chrome.browser.password_check.PasswordCheckReferrer;
-import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.chrome.browser.AppHooks;
+import org.monyhar.chrome.browser.password_check.PasswordCheckFactory;
+import org.monyhar.chrome.browser.password_check.PasswordCheckReferrer;
+import org.monyhar.chrome.browser.settings.SettingsLauncherImpl;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * A utitily class for launching the password leak check.

@@ -5,4 +5,4 @@ and web search engine data.
 This component is not allowed to depend on content/, because it is used by iOS.
 If dependencies on content/ need to be added, this component will have to be
 made into a layered component: see
-https://www.chromium.org/developers/design-documents/layered-components-design .
+https://www.monyhar.org/developers/design-documents/layered-components-design .

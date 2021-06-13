@@ -6,13 +6,13 @@
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.chromium.tools.audio_focus_grabber" >
+    package="org.monyhar.tools.audio_focus_grabber" >
 
     <application
         android:label="@string/app_name" >
 
         <activity
-            android:name="org.chromium.tools.audio_focus_grabber.AudioFocusGrabberActivity"
+            android:name="org.monyhar.tools.audio_focus_grabber.AudioFocusGrabberActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +21,7 @@
         </activity>
 
         <service
-            android:name="org.chromium.tools.audio_focus_grabber.AudioFocusGrabberListenerService"
+            android:name="org.monyhar.tools.audio_focus_grabber.AudioFocusGrabberListenerService"
             android:exported="true" >
             <intent-filter>
                 <action android:name="AUDIO_FOCUS_GRABBER_GAIN" />

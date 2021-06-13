@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package com.android.webview.chromium;
+package com.android.webview.monyhar;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -28,38 +28,38 @@ import android.webkit.WebViewFactory;
 import android.webkit.WebViewFactoryProvider;
 import android.webkit.WebViewProvider;
 
-import com.android.webview.chromium.WebViewDelegateFactory.WebViewDelegate;
+import com.android.webview.monyhar.WebViewDelegateFactory.WebViewDelegate;
 
-import org.chromium.android_webview.ApkType;
-import org.chromium.android_webview.AwBrowserContext;
-import org.chromium.android_webview.AwBrowserProcess;
-import org.chromium.android_webview.AwContentsStatics;
-import org.chromium.android_webview.AwSettings;
-import org.chromium.android_webview.ProductConfig;
-import org.chromium.android_webview.WebViewChromiumRunQueue;
-import org.chromium.android_webview.common.AwSwitches;
-import org.chromium.android_webview.common.CommandLineUtil;
-import org.chromium.android_webview.common.DeveloperModeUtils;
-import org.chromium.android_webview.common.FlagOverrideHelper;
-import org.chromium.android_webview.common.ProductionSupportedFlagList;
-import org.chromium.base.BuildInfo;
-import org.chromium.base.CommandLine;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.PackageUtils;
-import org.chromium.base.PathUtils;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.VerifiesOnN;
-import org.chromium.base.annotations.VerifiesOnP;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.ScopedSysTraceEvent;
-import org.chromium.build.BuildConfig;
-import org.chromium.build.NativeLibraries;
-import org.chromium.components.embedder_support.application.ClassLoaderContextWrapperFactory;
-import org.chromium.components.embedder_support.application.FirebaseConfig;
-import org.chromium.components.version_info.VersionConstants;
-import org.chromium.content_public.browser.LGEmailActionModeWorkaround;
+import org.monyhar.android_webview.ApkType;
+import org.monyhar.android_webview.AwBrowserContext;
+import org.monyhar.android_webview.AwBrowserProcess;
+import org.monyhar.android_webview.AwContentsStatics;
+import org.monyhar.android_webview.AwSettings;
+import org.monyhar.android_webview.ProductConfig;
+import org.monyhar.android_webview.WebViewChromiumRunQueue;
+import org.monyhar.android_webview.common.AwSwitches;
+import org.monyhar.android_webview.common.CommandLineUtil;
+import org.monyhar.android_webview.common.DeveloperModeUtils;
+import org.monyhar.android_webview.common.FlagOverrideHelper;
+import org.monyhar.android_webview.common.ProductionSupportedFlagList;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.PackageUtils;
+import org.monyhar.base.PathUtils;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.VerifiesOnN;
+import org.monyhar.base.annotations.VerifiesOnP;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.ScopedSysTraceEvent;
+import org.monyhar.build.BuildConfig;
+import org.monyhar.build.NativeLibraries;
+import org.monyhar.components.embedder_support.application.ClassLoaderContextWrapperFactory;
+import org.monyhar.components.embedder_support.application.FirebaseConfig;
+import org.monyhar.components.version_info.VersionConstants;
+import org.monyhar.content_public.browser.LGEmailActionModeWorkaround;
 
 import java.io.File;
 import java.util.List;
@@ -79,7 +79,7 @@ public class WebViewChromiumFactoryProvider implements WebViewFactoryProvider {
     private static final String VERSION_CODE_PREF = "lastVersionCodeUsed";
 
     private static final String SUPPORT_LIB_GLUE_AND_BOUNDARY_INTERFACE_PREFIX =
-            "org.chromium.support_lib_";
+            "org.monyhar.support_lib_";
 
     // This is an ID hardcoded by WebLayer for resources stored in locale splits. See
     // WebLayerImpl.java for more info.
@@ -133,7 +133,7 @@ public class WebViewChromiumFactoryProvider implements WebViewFactoryProvider {
     }
 
     /**
-     * Class that takes care of chromium lazy initialization.
+     * Class that takes care of monyhar lazy initialization.
      * This is package-public so that a downstream subclass can access it.
      */
     /* package */ WebViewChromiumAwInit mAwInit;
@@ -384,7 +384,7 @@ public class WebViewChromiumFactoryProvider implements WebViewFactoryProvider {
 
                 try (ScopedSysTraceEvent e2 = ScopedSysTraceEvent.scoped(
                              "WebViewChromiumFactoryProvider.loadGlueLayerPlatSupportLibrary")) {
-                    System.loadLibrary("webviewchromium_plat_support");
+                    System.loadLibrary("webviewmonyhar_plat_support");
                 }
 
                 deleteContentsOnPackageDowngrade(packageInfo);

@@ -22,8 +22,8 @@ static_library("libxml_utils") {
     "//services/data_decoder:xml_parser_fuzzer",
   ]
   sources = [
-    "chromium/libxml_utils.cc",
-    "chromium/libxml_utils.h",
+    "monyhar/libxml_utils.cc",
+    "monyhar/libxml_utils.h",
   ]
   public_configs = [ ":system_libxml" ]
 }
@@ -38,8 +38,8 @@ static_library("xml_reader") {
     "//tools/traffic_annotation/auditor:auditor_sources",
   ]
   sources = [
-    "chromium/xml_reader.cc",
-    "chromium/xml_reader.h",
+    "monyhar/xml_reader.cc",
+    "monyhar/xml_reader.h",
   ]
   deps = [ ":libxml_utils" ]
 }
@@ -48,8 +48,8 @@ static_library("xml_writer") {
   # The XmlWriter is considered safe to use from any target.
   visibility = [ "*" ]
   sources = [
-    "chromium/xml_writer.cc",
-    "chromium/xml_writer.h",
+    "monyhar/xml_writer.cc",
+    "monyhar/xml_writer.h",
   ]
   deps = [ ":libxml_utils" ]
 }

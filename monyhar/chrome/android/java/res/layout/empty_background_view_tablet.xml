@@ -3,7 +3,7 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
 
-<org.chromium.chrome.browser.ui.tablet.emptybackground.EmptyBackgroundViewTablet
+<org.monyhar.chrome.browser.ui.tablet.emptybackground.EmptyBackgroundViewTablet
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/empty_container"
@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="top|start"
         android:paddingTop="@dimen/menu_negative_software_vertical_offset">
-        <org.chromium.chrome.browser.toolbar.NewTabButton
+        <org.monyhar.chrome.browser.toolbar.NewTabButton
             android:id="@+id/empty_new_tab_button"
             style="@style/ToolbarButton"
             android:layout_width="wrap_content"
@@ -31,7 +31,7 @@
             android:layout_weight="1.0"
             android:layout_height="wrap_content"
             android:layout_width="0dp" />
-        <org.chromium.chrome.browser.ui.tablet.emptybackground.incognitotoggle.IncognitoToggleButtonTablet
+        <org.monyhar.chrome.browser.ui.tablet.emptybackground.incognitotoggle.IncognitoToggleButtonTablet
             android:id="@+id/empty_incognito_toggle_button"
             android:layout_width="48dp"
             android:layout_height="@dimen/toolbar_height_no_shadow"
@@ -40,7 +40,7 @@
             android:background="?attr/selectableItemBackground"
             android:contentDescription="@string/accessibility_tabstrip_btn_incognito_toggle_standard"
             />
-        <org.chromium.ui.widget.ChromeImageButton
+        <org.monyhar.ui.widget.ChromeImageButton
             android:id="@+id/empty_menu_button"
             style="@style/ToolbarButton"
             android:layout_width="48dp"
@@ -52,4 +52,4 @@
             app:tint="@color/default_icon_color_light_tint_list"
             />
     </LinearLayout>
-</org.chromium.chrome.browser.ui.tablet.emptybackground.EmptyBackgroundViewTablet>
+</org.monyhar.chrome.browser.ui.tablet.emptybackground.EmptyBackgroundViewTablet>

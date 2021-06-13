@@ -23,7 +23,7 @@ namespace offline_pages {
 // Result of saving a page offline. Must be kept with sync with
 // OfflinePagesSavePageResult in metrics' enum.xml
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.offlinepages
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.offlinepages
 enum class SavePageResult {
   SUCCESS = 0,
   CANCELLED = 1,
@@ -62,7 +62,7 @@ enum class AddPageResult {
 // Result of deleting an offline page. Must be kept with sync with
 // OfflinePagesDeletePageResult in metrics' enum.xml.
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.offlinepages
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.offlinepages
 enum class DeletePageResult {
   SUCCESS,
   CANCELLED,

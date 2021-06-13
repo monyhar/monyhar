@@ -26,8 +26,8 @@
 	<string>1.0</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
-		<string>chromium</string>
-		<string>chromiums</string>
+		<string>monyhar</string>
+		<string>monyhars</string>
 		<string>comgooglemaps</string>
 		<string>googleapp</string>
 		<string>googlechrome</string>

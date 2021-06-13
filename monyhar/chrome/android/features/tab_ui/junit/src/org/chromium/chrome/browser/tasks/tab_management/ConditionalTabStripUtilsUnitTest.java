@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
@@ -19,19 +19,19 @@ import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.RecordHistogramJni;
-import org.chromium.base.metrics.test.ShadowRecordHistogram;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.browser.tasks.ConditionalTabStripUtils;
-import org.chromium.chrome.browser.tasks.ConditionalTabStripUtils.FeatureStatus;
-import org.chromium.chrome.browser.tasks.ConditionalTabStripUtils.UserStatus;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordHistogramJni;
+import org.monyhar.base.metrics.test.ShadowRecordHistogram;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.browser.tasks.ConditionalTabStripUtils;
+import org.monyhar.chrome.browser.tasks.ConditionalTabStripUtils.FeatureStatus;
+import org.monyhar.chrome.browser.tasks.ConditionalTabStripUtils.UserStatus;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
 
 /**
- * Tests for {@link org.chromium.chrome.browser.tasks.ConditionalTabStripUtils}.
+ * Tests for {@link org.monyhar.chrome.browser.tasks.ConditionalTabStripUtils}.
  */
 @RunWith(LocalRobolectricTestRunner.class)
 @Config(manifest = Config.NONE, shadows = {ShadowRecordHistogram.class})

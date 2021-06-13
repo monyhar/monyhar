@@ -27,7 +27,7 @@
   if (completionHandler) {
     completionHandler(
         nil, nil,
-        [NSError errorWithDomain:@"org.chromium.chromewebview.shell"
+        [NSError errorWithDomain:@"org.monyhar.chromewebview.shell"
                             code:0
                         userInfo:nil]);
   }

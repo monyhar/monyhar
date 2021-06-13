@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package com.android.webview.chromium;
+package com.android.webview.monyhar;
 
-import org.chromium.base.annotations.JniIgnoreNatives;
+import org.monyhar.base.annotations.JniIgnoreNatives;
 
 @JniIgnoreNatives
 class DrawFunctor {

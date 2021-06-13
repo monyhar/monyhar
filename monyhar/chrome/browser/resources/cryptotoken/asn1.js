@@ -9,7 +9,7 @@
  * must know something about the expected sequence of tags, which allows you to
  * call getASN1() and friends with the right arguments and in the right order.
  *
- * https://commondatastorage.googleapis.com/chromium-boringssl-docs/bytestring.h.html
+ * https://commondatastorage.googleapis.com/monyhar-boringssl-docs/bytestring.h.html
  * is the canonical API reference.
  */
 const ByteString = class {

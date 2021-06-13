@@ -154,7 +154,7 @@ from that one then adjust it to point it at the real upstream one.
 
 1.  Clone a nearby copy of the code you want: `git clone coworker-machine:/path/to/repo`
 1.  Change the URL your copy fetches from to point at the real git repo:
-    `git set-url origin https://chromium.googlesource.com/chromium/src.git`
+    `git set-url origin https://monyhar.googlesource.com/monyhar/src.git`
 1.  Update your copy: `git fetch`
 1.  Delete any extra branches that you picked up in the initial clone:
     `git prune origin`

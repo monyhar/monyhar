@@ -22,9 +22,9 @@ namespace chromeos {
 //
 // IsCrostiniEnabled:
 // % dbus-send --system --type=method_call --print-reply
-//     --dest=org.chromium.ChromeFeaturesService
-//     /org/chromium/ChromeFeaturesService
-//     org.chromium.ChromeFeaturesServiceInterface.IsCrostiniEnabled
+//     --dest=org.monyhar.ChromeFeaturesService
+//     /org/monyhar/ChromeFeaturesService
+//     org.monyhar.ChromeFeaturesServiceInterface.IsCrostiniEnabled
 //     string:"|user id hash|"
 //
 // % (If |user id hash| is set correctly, returns true if Crostini is enabled
@@ -32,9 +32,9 @@ namespace chromeos {
 //
 // IsPluginVmEnabled:
 // % dbus-send --system --type=method_call --print-reply
-//     --dest=org.chromium.ChromeFeaturesService
-//     /org/chromium/ChromeFeaturesService
-//     org.chromium.ChromeFeaturesServiceInterface.IsPluginVmEnabled
+//     --dest=org.monyhar.ChromeFeaturesService
+//     /org/monyhar/ChromeFeaturesService
+//     org.monyhar.ChromeFeaturesServiceInterface.IsPluginVmEnabled
 //     string:"|user id hash|"
 //
 // % (If |user id hash| is set correctly, returns true if Plugin VMs are enabled

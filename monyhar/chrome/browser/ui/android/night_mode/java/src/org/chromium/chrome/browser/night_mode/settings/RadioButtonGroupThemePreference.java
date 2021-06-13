@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.night_mode.settings;
+package org.monyhar.chrome.browser.night_mode.settings;
 
 import android.content.Context;
 import android.os.Build;
@@ -16,12 +16,12 @@ import androidx.annotation.VisibleForTesting;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.night_mode.NightModeMetrics;
-import org.chromium.chrome.browser.night_mode.R;
-import org.chromium.chrome.browser.night_mode.ThemeType;
-import org.chromium.components.browser_ui.widget.RadioButtonWithDescription;
-import org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionLayout;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.night_mode.NightModeMetrics;
+import org.monyhar.chrome.browser.night_mode.R;
+import org.monyhar.chrome.browser.night_mode.ThemeType;
+import org.monyhar.components.browser_ui.widget.RadioButtonWithDescription;
+import org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionLayout;
 
 import java.util.ArrayList;
 import java.util.Collections;

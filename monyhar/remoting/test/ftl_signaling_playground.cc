@@ -29,7 +29,7 @@
 #include "remoting/base/service_urls.h"
 #include "remoting/base/url_request_context_getter.h"
 #include "remoting/protocol/auth_util.h"
-#include "remoting/protocol/chromium_port_allocator_factory.h"
+#include "remoting/protocol/monyhar_port_allocator_factory.h"
 #include "remoting/protocol/jingle_session_manager.h"
 #include "remoting/protocol/me2me_host_authenticator_factory.h"
 #include "remoting/protocol/negotiating_client_authenticator.h"

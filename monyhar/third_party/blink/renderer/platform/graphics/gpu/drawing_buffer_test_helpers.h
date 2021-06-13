@@ -204,7 +204,7 @@ class GLES2InterfaceForTests : public gpu::gles2::GLES2InterfaceStub,
   void ProduceTextureDirectCHROMIUM(GLuint texture, GLbyte* mailbox) override {
     ++current_mailbox_byte_;
     memset(mailbox, current_mailbox_byte_, GL_MAILBOX_SIZE_CHROMIUM);
-    if (!create_image_chromium_fail_) {
+    if (!create_image_monyhar_fail_) {
       ASSERT_TRUE(texture_sizes_.Contains(texture));
       most_recently_produced_size_ = texture_sizes_.at(texture);
     }
@@ -229,7 +229,7 @@ class GLES2InterfaceForTests : public gpu::gles2::GLES2InterfaceStub,
                              GLsizei width,
                              GLsizei height,
                              GLenum internalformat) override {
-    if (create_image_chromium_fail_)
+    if (create_image_monyhar_fail_)
       return 0;
     image_sizes_.Set(current_image_id_, IntSize(width, height));
     return current_image_id_++;
@@ -358,7 +358,7 @@ class GLES2InterfaceForTests : public gpu::gles2::GLES2InterfaceStub,
   }
 
   void SetCreateImageChromiumFail(bool fail) {
-    create_image_chromium_fail_ = fail;
+    create_image_monyhar_fail_ = fail;
   }
 
   // Saves current GL state for later verification.
@@ -432,7 +432,7 @@ class GLES2InterfaceForTests : public gpu::gles2::GLES2InterfaceStub,
   gpu::SyncToken most_recently_waited_sync_token_;
   GLbyte current_mailbox_byte_ = 0;
   IntSize most_recently_produced_size_;
-  bool create_image_chromium_fail_ = false;
+  bool create_image_monyhar_fail_ = false;
   GLuint current_image_id_ = 1;
   HashMap<GLuint, IntSize> texture_sizes_;
   HashMap<GLuint, IntSize> image_sizes_;

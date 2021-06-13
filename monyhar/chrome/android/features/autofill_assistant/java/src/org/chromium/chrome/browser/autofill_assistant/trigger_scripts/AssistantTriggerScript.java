@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.trigger_scripts;
+package org.monyhar.chrome.browser.autofill_assistant.trigger_scripts;
 
 import android.content.Context;
 import android.view.ViewGroup;
@@ -13,28 +13,28 @@ import android.widget.Space;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.supplier.ObservableSupplierImpl;
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.autofill_assistant.AssistantBottomBarDelegate;
-import org.chromium.chrome.browser.autofill_assistant.AssistantBottomSheetContent;
-import org.chromium.chrome.browser.autofill_assistant.AssistantRootViewContainer;
-import org.chromium.chrome.browser.autofill_assistant.AutofillAssistantServiceInjector;
-import org.chromium.chrome.browser.autofill_assistant.BottomSheetUtils;
-import org.chromium.chrome.browser.autofill_assistant.LayoutUtils;
-import org.chromium.chrome.browser.autofill_assistant.ScrollToHideGestureListener;
-import org.chromium.chrome.browser.autofill_assistant.carousel.AssistantChip;
-import org.chromium.chrome.browser.autofill_assistant.carousel.AssistantChipViewHolder;
-import org.chromium.chrome.browser.autofill_assistant.generic_ui.AssistantDimension;
-import org.chromium.chrome.browser.autofill_assistant.header.AssistantHeaderCoordinator;
-import org.chromium.chrome.browser.autofill_assistant.header.AssistantHeaderModel;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetContent;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController.StateChangeReason;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetObserver;
-import org.chromium.components.browser_ui.bottomsheet.EmptyBottomSheetObserver;
-import org.chromium.content_public.browser.GestureListenerManager;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.ApplicationViewportInsetSupplier;
+import org.monyhar.base.supplier.ObservableSupplierImpl;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.autofill_assistant.AssistantBottomBarDelegate;
+import org.monyhar.chrome.browser.autofill_assistant.AssistantBottomSheetContent;
+import org.monyhar.chrome.browser.autofill_assistant.AssistantRootViewContainer;
+import org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantServiceInjector;
+import org.monyhar.chrome.browser.autofill_assistant.BottomSheetUtils;
+import org.monyhar.chrome.browser.autofill_assistant.LayoutUtils;
+import org.monyhar.chrome.browser.autofill_assistant.ScrollToHideGestureListener;
+import org.monyhar.chrome.browser.autofill_assistant.carousel.AssistantChip;
+import org.monyhar.chrome.browser.autofill_assistant.carousel.AssistantChipViewHolder;
+import org.monyhar.chrome.browser.autofill_assistant.generic_ui.AssistantDimension;
+import org.monyhar.chrome.browser.autofill_assistant.header.AssistantHeaderCoordinator;
+import org.monyhar.chrome.browser.autofill_assistant.header.AssistantHeaderModel;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetContent;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController.StateChangeReason;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetObserver;
+import org.monyhar.components.browser_ui.bottomsheet.EmptyBottomSheetObserver;
+import org.monyhar.content_public.browser.GestureListenerManager;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.ApplicationViewportInsetSupplier;
 
 import java.util.ArrayList;
 import java.util.List;

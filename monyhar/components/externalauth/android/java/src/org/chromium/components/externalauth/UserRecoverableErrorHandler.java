@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.externalauth;
+package org.monyhar.components.externalauth;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -11,8 +11,8 @@ import android.content.DialogInterface;
 
 import com.google.android.gms.common.GoogleApiAvailability;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.metrics.RecordUserAction;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.metrics.RecordUserAction;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 

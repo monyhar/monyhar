@@ -489,7 +489,7 @@ class CHROME_DBUS_EXPORT Bus : public base::RefCountedThreadSafe<Bus> {
   // as many times as it was added.
   //
   // The match rule looks like:
-  // "type='signal', interface='org.chromium.SomeInterface'".
+  // "type='signal', interface='org.monyhar.SomeInterface'".
   //
   // See "Message Bus Message Routing" section in the D-Bus specification
   // for details about match rules:
@@ -741,7 +741,7 @@ class CHROME_DBUS_EXPORT Bus : public base::RefCountedThreadSafe<Bus> {
   // ObjectProxyTable is used to hold the object proxies created by the
   // bus object. Key is a pair; the first part is a concatenated string of
   // service name + object path, like
-  // "org.chromium.TestService/org/chromium/TestObject".
+  // "org.monyhar.TestService/org/monyhar/TestObject".
   // The second part is the ObjectProxy::Options for the proxy.
   typedef std::map<std::pair<std::string, int>,
                    scoped_refptr<dbus::ObjectProxy>> ObjectProxyTable;
@@ -749,14 +749,14 @@ class CHROME_DBUS_EXPORT Bus : public base::RefCountedThreadSafe<Bus> {
 
   // ExportedObjectTable is used to hold the exported objects created by
   // the bus object. Key is a concatenated string of service name +
-  // object path, like "org.chromium.TestService/org/chromium/TestObject".
+  // object path, like "org.monyhar.TestService/org/monyhar/TestObject".
   typedef std::map<const dbus::ObjectPath,
                    scoped_refptr<dbus::ExportedObject>> ExportedObjectTable;
   ExportedObjectTable exported_object_table_;
 
   // ObjectManagerTable is used to hold the object managers created by the
   // bus object. Key is a concatenated string of service name + object path,
-  // like "org.chromium.TestService/org/chromium/TestObject".
+  // like "org.monyhar.TestService/org/monyhar/TestObject".
   typedef std::map<std::string,
                    scoped_refptr<dbus::ObjectManager>> ObjectManagerTable;
   ObjectManagerTable object_manager_table_;

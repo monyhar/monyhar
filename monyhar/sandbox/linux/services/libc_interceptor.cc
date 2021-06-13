@@ -114,7 +114,7 @@ void WriteTimeStruct(base::Pickle* pickle, const struct tm& time) {
 }
 
 // See
-// https://chromium.googlesource.com/chromium/src/+/main/docs/linux/zygote.md
+// https://monyhar.googlesource.com/monyhar/src/+/main/docs/linux/zygote.md
 void ProxyLocaltimeCallToBrowser(time_t input,
                                  struct tm* output,
                                  char* timezone_out,
@@ -191,7 +191,7 @@ static void InitLibcLocaltimeFunctionsImpl() {
       reinterpret_cast<LocaltimeRFunction>(dlsym(RTLD_NEXT, "localtime64_r"));
 
   if (!g_libc_localtime || !g_libc_localtime_r) {
-    // https://bugs.chromium.org/p/chromium/issues/detail?id=16800
+    // https://bugs.monyhar.org/p/monyhar/issues/detail?id=16800
     //
     // Nvidia's libGL.so overrides dlsym for an unknown reason and replaces
     // it with a version which doesn't work. In this case we'll get a NULL
@@ -199,7 +199,7 @@ static void InitLibcLocaltimeFunctionsImpl() {
     LOG(ERROR) << "Your system is broken: dlsym doesn't work! This has been "
                   "reported to be caused by Nvidia's libGL. You should expect"
                   " time related functions to misbehave. "
-                  "https://bugs.chromium.org/p/chromium/issues/detail?id=16800";
+                  "https://bugs.monyhar.org/p/monyhar/issues/detail?id=16800";
   }
 
   if (!g_libc_localtime)

@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@1.0-rc6.cr0
-package: chromium/third_party/android_deps/libs/com_google_auto_service_auto_service_annotations
+package: monyhar/third_party/android_deps/libs/com_google_auto_service_auto_service_annotations
 description: "AutoService"
 data:
 - file: auto-service-annotations-1.0-rc6.jar

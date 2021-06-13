@@ -5,7 +5,7 @@
 import("//build/config/android/rules.gni")
 
 android_library("java") {
-  sources = [ "java/src/org/chromium/components/browser_ui/display_cutout/DisplayCutoutController.java" ]
+  sources = [ "java/src/org/monyhar/components/browser_ui/display_cutout/DisplayCutoutController.java" ]
 
   deps = [
     "//base:base_java",

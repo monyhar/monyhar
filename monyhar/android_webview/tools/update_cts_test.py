@@ -377,7 +377,7 @@ class UpdateCTSTest(unittest.TestCase):
       cts_updater.update_repository_cmd()
 
       latest_version = fake_cipd.get_latest_version(
-          'chromium/android_webview/tools/cts_archive')
+          'monyhar/android_webview/tools/cts_archive')
       self.assertNotEquals(DEPS_DATA['revision'], latest_version)
       self._assertCIPDVersionUpdated(repoRoot, latest_version)
 

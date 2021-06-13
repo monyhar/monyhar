@@ -21,7 +21,7 @@ class WebSocketCommands:
   CREATE_WEBSOCKET = \
     '/session/:sessionId'
   SEND_OVER_WEBSOCKET = \
-    '/session/:sessionId/chromium/send_command_from_websocket'
+    '/session/:sessionId/monyhar/send_command_from_websocket'
 
 class WebSocketConnection(object):
   def __init__(self, server_url, session_id):

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed;
+package org.monyhar.chrome.browser.feed;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
@@ -35,46 +35,46 @@ import org.robolectric.Robolectric;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowLog;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.browser.AppHooksImpl;
-import org.chromium.chrome.browser.feed.shared.FeedFeatures;
-import org.chromium.chrome.browser.feed.shared.FeedSurfaceDelegate;
-import org.chromium.chrome.browser.feed.v2.FakeLinearLayoutManager;
-import org.chromium.chrome.browser.feed.v2.FeedStream;
-import org.chromium.chrome.browser.feed.v2.FeedStreamJni;
-import org.chromium.chrome.browser.feed.webfeed.WebFeedBridge;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.native_page.NativePageNavigationDelegate;
-import org.chromium.chrome.browser.ntp.NewTabPageLaunchOrigin;
-import org.chromium.chrome.browser.ntp.SnapScrollHelper;
-import org.chromium.chrome.browser.ntp.cards.SignInPromo;
-import org.chromium.chrome.browser.ntp.snippets.SectionHeaderListProperties;
-import org.chromium.chrome.browser.ntp.snippets.SectionHeaderView;
-import org.chromium.chrome.browser.preferences.Pref;
-import org.chromium.chrome.browser.preferences.PrefChangeRegistrar;
-import org.chromium.chrome.browser.privacy.settings.PrivacyPreferencesManagerImpl;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.search_engines.TemplateUrlServiceFactory;
-import org.chromium.chrome.browser.share.ShareDelegate;
-import org.chromium.chrome.browser.signin.services.IdentityServicesProvider;
-import org.chromium.chrome.browser.signin.services.SigninManager;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
-import org.chromium.chrome.browser.xsurface.FeedLaunchReliabilityLogger;
-import org.chromium.chrome.browser.xsurface.FeedLaunchReliabilityLogger.SurfaceType;
-import org.chromium.chrome.browser.xsurface.HybridListRenderer;
-import org.chromium.chrome.browser.xsurface.ProcessScope;
-import org.chromium.chrome.browser.xsurface.ProcessScopeDependencyProvider;
-import org.chromium.chrome.browser.xsurface.SurfaceScope;
-import org.chromium.chrome.browser.xsurface.SurfaceScopeDependencyProvider;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.components.prefs.PrefService;
-import org.chromium.components.search_engines.TemplateUrlService;
-import org.chromium.components.signin.identitymanager.IdentityManager;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.browser.AppHooksImpl;
+import org.monyhar.chrome.browser.feed.shared.FeedFeatures;
+import org.monyhar.chrome.browser.feed.shared.FeedSurfaceDelegate;
+import org.monyhar.chrome.browser.feed.v2.FakeLinearLayoutManager;
+import org.monyhar.chrome.browser.feed.v2.FeedStream;
+import org.monyhar.chrome.browser.feed.v2.FeedStreamJni;
+import org.monyhar.chrome.browser.feed.webfeed.WebFeedBridge;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.native_page.NativePageNavigationDelegate;
+import org.monyhar.chrome.browser.ntp.NewTabPageLaunchOrigin;
+import org.monyhar.chrome.browser.ntp.SnapScrollHelper;
+import org.monyhar.chrome.browser.ntp.cards.SignInPromo;
+import org.monyhar.chrome.browser.ntp.snippets.SectionHeaderListProperties;
+import org.monyhar.chrome.browser.ntp.snippets.SectionHeaderView;
+import org.monyhar.chrome.browser.preferences.Pref;
+import org.monyhar.chrome.browser.preferences.PrefChangeRegistrar;
+import org.monyhar.chrome.browser.privacy.settings.PrivacyPreferencesManagerImpl;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.search_engines.TemplateUrlServiceFactory;
+import org.monyhar.chrome.browser.share.ShareDelegate;
+import org.monyhar.chrome.browser.signin.services.IdentityServicesProvider;
+import org.monyhar.chrome.browser.signin.services.SigninManager;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.chrome.browser.xsurface.FeedLaunchReliabilityLogger;
+import org.monyhar.chrome.browser.xsurface.FeedLaunchReliabilityLogger.SurfaceType;
+import org.monyhar.chrome.browser.xsurface.HybridListRenderer;
+import org.monyhar.chrome.browser.xsurface.ProcessScope;
+import org.monyhar.chrome.browser.xsurface.ProcessScopeDependencyProvider;
+import org.monyhar.chrome.browser.xsurface.SurfaceScope;
+import org.monyhar.chrome.browser.xsurface.SurfaceScopeDependencyProvider;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.components.prefs.PrefService;
+import org.monyhar.components.search_engines.TemplateUrlService;
+import org.monyhar.components.signin.identitymanager.IdentityManager;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Tests for {@link FeedSurfaceCoordinator}.

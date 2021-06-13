@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.metrics;
+package org.monyhar.base.metrics;
 
 import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -380,7 +380,7 @@ import javax.annotation.concurrent.GuardedBy;
         }
 
         // Downgraded to read lock.
-        // See base/android/java/src/org/chromium/base/metrics/forwarding_synchronization.md
+        // See base/android/java/src/org/monyhar/base/metrics/forwarding_synchronization.md
         try {
             assert mDelegate != null;
             recordHistogramSampleAlreadyLocked(type, name, sample, min, max, numBuckets);
@@ -546,7 +546,7 @@ import javax.annotation.concurrent.GuardedBy;
         }
 
         // Downgraded to read lock.
-        // See base/android/java/src/org/chromium/base/metrics/forwarding_synchronization.md
+        // See base/android/java/src/org/monyhar/base/metrics/forwarding_synchronization.md
         try {
             assert mDelegate != null;
             mDelegate.recordUserAction(name, elapsedRealtimeMillis);

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.xsurface;
+package org.monyhar.chrome.browser.xsurface;
 
 import android.view.View;
 
@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 import java.util.Map;
 
 /**
- * Interface to provide chromium calling points for a feed.
+ * Interface to provide monyhar calling points for a feed.
  */
 public interface FeedActionsHandler {
     String KEY = "FeedActions";

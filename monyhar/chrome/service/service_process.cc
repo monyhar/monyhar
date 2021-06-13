@@ -38,7 +38,7 @@
 #include "chrome/common/env_vars.h"
 #include "chrome/common/pref_names.h"
 #include "chrome/common/service_process_util.h"
-#include "chrome/grit/chromium_strings.h"
+#include "chrome/grit/monyhar_strings.h"
 #include "chrome/grit/generated_resources.h"
 #include "chrome/service/cloud_print/cloud_print_message_handler.h"
 #include "chrome/service/cloud_print/cloud_print_proxy.h"
@@ -159,7 +159,7 @@ bool ServiceProcess::Initialize(base::OnceClosure quit_closure,
       kMaxForegroundThreads);
 #if defined(OS_WIN)
   // TODO(robliao): Remove DEPRECATED_COM_STA_IN_FOREGROUND_GROUP usage.
-  // WIP: https://chromium-review.googlesource.com/c/chromium/src/+/1271099
+  // WIP: https://monyhar-review.googlesource.com/c/monyhar/src/+/1271099
   thread_pool_init_params.common_thread_pool_environment =
       base::ThreadPoolInstance::InitParams::CommonThreadPoolEnvironment::
           DEPRECATED_COM_STA_IN_FOREGROUND_GROUP;
@@ -287,7 +287,7 @@ bool ServiceProcess::Teardown() {
 void ServiceProcess::Shutdown() {
 #if defined(OS_MAC)
   // On MacOS X the service must be removed from the launchd job list.
-  // http://www.chromium.org/developers/design-documents/service-processes
+  // http://www.monyhar.org/developers/design-documents/service-processes
   // The best way to do that is to go through the ForceServiceProcessShutdown
   // path. If it succeeds Terminate() will be called from the handler registered
   // via service_process_state_->SignalReady().

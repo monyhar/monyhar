@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.app.appmenu;
+package org.monyhar.chrome.browser.app.appmenu;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,9 +12,9 @@ import android.view.ViewGroup;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ui.appmenu.AppMenuClickHandler;
-import org.chromium.chrome.browser.ui.appmenu.CustomViewBinder;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ui.appmenu.AppMenuClickHandler;
+import org.monyhar.chrome.browser.ui.appmenu.CustomViewBinder;
 
 /**
  * A custom binder used to bind the managed menu item.

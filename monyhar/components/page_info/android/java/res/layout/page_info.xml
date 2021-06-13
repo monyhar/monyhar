@@ -21,29 +21,29 @@
         android:showDividers="middle"
         android:divider="?android:listDivider"
         android:dividerPadding="2dp" >
-        <org.chromium.components.page_info.PageInfoRowView
+        <org.monyhar.components.page_info.PageInfoRowView
             android:id="@+id/page_info_connection_row"
             android:visibility="gone"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
-        <org.chromium.components.page_info.PageInfoRowView
+        <org.monyhar.components.page_info.PageInfoRowView
             android:id="@+id/page_info_permissions_row"
             android:visibility="gone"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
-        <org.chromium.components.page_info.PageInfoRowView
+        <org.monyhar.components.page_info.PageInfoRowView
             android:id="@+id/page_info_cookies_row"
             android:visibility="gone"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
-        <org.chromium.components.page_info.PageInfoRowView
+        <org.monyhar.components.page_info.PageInfoRowView
             android:id="@+id/page_info_history_row"
             android:visibility="gone"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
     </LinearLayout>
 
-    <org.chromium.ui.widget.ButtonCompat
+    <org.monyhar.ui.widget.ButtonCompat
         android:id="@+id/page_info_forget_site_button"
         android:text="@string/page_info_history_forget"
         android:visibility="gone"
@@ -64,7 +64,7 @@
         android:textAppearance="@style/TextAppearance.TextMedium.Secondary"
         android:visibility="gone" />
 
-    <org.chromium.ui.widget.ButtonCompat
+    <org.monyhar.ui.widget.ButtonCompat
         android:id="@+id/page_info_instant_app_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
         app:buttonColor="@color/app_banner_install_button_bg"
         style="@style/FilledButton" />
 
-    <org.chromium.ui.widget.ButtonCompat
+    <org.monyhar.ui.widget.ButtonCompat
         android:id="@+id/page_info_open_online_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

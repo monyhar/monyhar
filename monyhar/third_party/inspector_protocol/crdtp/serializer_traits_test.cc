@@ -132,7 +132,7 @@ TEST(SerializerTraits, UTF8String) {
 
 // A trivial model of Exported.
 // (see
-// https://cs.chromium.org/chromium/src/out/Debug/gen/v8/include/inspector/Debugger.h).
+// https://cs.monyhar.org/monyhar/src/out/Debug/gen/v8/include/inspector/Debugger.h).
 struct Exported {
   std::string msg;
   void AppendSerialized(std::vector<uint8_t>* out) const {

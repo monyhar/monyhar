@@ -79,7 +79,7 @@ js_library("nearby_contact_visibility") {
   deps = [
     ":nearby_contact_manager",
     ":nearby_share_settings_behavior",
-    "//third_party/polymer/v1_0/components-chromium/iron-icon:iron-icon-extracted",
+    "//third_party/polymer/v1_0/components-monyhar/iron-icon:iron-icon-extracted",
     "//ui/webui/resources/cr_elements/cr_radio_button:cr_card_radio_button",
     "//ui/webui/resources/cr_elements/cr_radio_group:cr_radio_group",
     "//ui/webui/resources/js:assert",
@@ -94,14 +94,14 @@ js_library("nearby_device_icon") {
     "//chrome/browser/ui/webui/nearby_share:mojom_js_library_for_compile",
     "//chrome/browser/ui/webui/nearby_share:share_type_js_library_for_compile",
     "//chromeos/services/nearby/public/mojom:nearby_share_target_types_js_library_for_compile",
-    "//third_party/polymer/v1_0/components-chromium/iron-icon:iron-icon-extracted",
+    "//third_party/polymer/v1_0/components-monyhar/iron-icon:iron-icon-extracted",
   ]
 }
 
 js_library("nearby_device") {
   deps = [
     ":nearby_device_icon",
-    "//third_party/polymer/v1_0/components-chromium/iron-icon:iron-icon-extracted",
+    "//third_party/polymer/v1_0/components-monyhar/iron-icon:iron-icon-extracted",
   ]
 }
 
@@ -116,7 +116,7 @@ js_library("nearby_preview") {
     "//chrome/browser/ui/webui/nearby_share:mojom_js_library_for_compile",
     "//chrome/browser/ui/webui/nearby_share:share_type_js_library_for_compile",
     "//chromeos/services/nearby/public/mojom:nearby_share_target_types_js_library_for_compile",
-    "//third_party/polymer/v1_0/components-chromium/iron-icon:iron-icon-extracted",
+    "//third_party/polymer/v1_0/components-monyhar/iron-icon:iron-icon-extracted",
     "//ui/webui/resources/js:assert",
     "//ui/webui/resources/js:i18n_behavior",
   ]
@@ -125,7 +125,7 @@ js_library("nearby_preview") {
 js_library("nearby_progress") {
   deps = [
     ":nearby_device_icon",
-    "//third_party/polymer/v1_0/components-chromium/iron-icon:iron-icon-extracted",
+    "//third_party/polymer/v1_0/components-monyhar/iron-icon:iron-icon-extracted",
   ]
 }
 
@@ -134,7 +134,7 @@ js_library("nearby_onboarding_page") {
     ":nearby_metrics_logger",
     ":nearby_page_template",
     ":nearby_share_settings_behavior",
-    "//third_party/polymer/v1_0/components-chromium/iron-icon:iron-icon-extracted",
+    "//third_party/polymer/v1_0/components-monyhar/iron-icon:iron-icon-extracted",
     "//ui/webui/resources/cr_elements/cr_input:cr_input",
     "//ui/webui/resources/js:i18n_behavior",
   ]
@@ -222,7 +222,7 @@ js_library("nearby_contact_visibility.m") {
   deps = [
     ":nearby_contact_manager.m",
     ":nearby_share_settings_behavior.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_radio_button:cr_card_radio_button.m",
     "//ui/webui/resources/cr_elements/cr_radio_group:cr_radio_group.m",
     "//ui/webui/resources/js:assert.m",
@@ -239,7 +239,7 @@ js_library("nearby_device_icon.m") {
     "//chrome/browser/ui/webui/nearby_share:mojom_js_library_for_compile",
     "//chrome/browser/ui/webui/nearby_share:share_type_js_library_for_compile",
     "//chromeos/services/nearby/public/mojom:nearby_share_target_types_js_library_for_compile",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   extra_deps = [ ":nearby_device_icon_module" ]
 }
@@ -248,7 +248,7 @@ js_library("nearby_device.m") {
   sources = [ "$root_gen_dir/chrome/browser/resources/nearby_share/shared/nearby_device.m.js" ]
   deps = [
     ":nearby_device_icon.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   extra_deps = [ ":nearby_device_module" ]
 }
@@ -259,7 +259,7 @@ js_library("nearby_onboarding_page.m") {
     ":nearby_metrics_logger.m",
     ":nearby_page_template.m",
     ":nearby_share_settings_behavior.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_link_row:cr_link_row",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
@@ -277,7 +277,7 @@ js_library("nearby_preview.m") {
     "//chrome/browser/ui/webui/nearby_share:mojom_js_library_for_compile",
     "//chrome/browser/ui/webui/nearby_share:share_type_js_library_for_compile",
     "//chromeos/services/nearby/public/mojom:nearby_share_target_types_js_library_for_compile",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
@@ -288,7 +288,7 @@ js_library("nearby_progress.m") {
   sources = [ "$root_gen_dir/chrome/browser/resources/nearby_share/shared/nearby_progress.m.js" ]
   deps = [
     ":nearby_device_icon.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   extra_deps = [ ":nearby_progress_module" ]
 }
@@ -318,7 +318,7 @@ js_library("nearby_visibility_page.m") {
     ":nearby_contact_visibility.m",
     ":nearby_page_template.m",
     ":nearby_share_settings_behavior.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
   extra_deps = [ ":nearby_visibility_page_module" ]

@@ -35,7 +35,7 @@ cast_source_set("backend") {
     "//chromecast/media/common:media_resource_tracker",
   ]
 
-  if (enable_chromium_runtime_cast_renderer) {
+  if (enable_monyhar_runtime_cast_renderer) {
     deps += [ "//chromecast/media/cma/backend/proxy" ]
   }
 

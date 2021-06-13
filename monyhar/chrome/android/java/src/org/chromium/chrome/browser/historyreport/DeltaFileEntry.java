@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.historyreport;
+package org.monyhar.chrome.browser.historyreport;
 
 /**
  * Represents entry in delta file. Each entry is a log of action that happened to history data. It

@@ -110,7 +110,7 @@
 
       Jika anda menetapkan dasar ini, <ph name="PRODUCT_NAME" /> akan menggunakan direktori yang diberikan tanpa mengambil kira sama ada pengguna telah menentukan bendera '--disk-cache-dir' atau tidak. Untuk mengelakkan kehilangan data atau ralat lain yang tidak dijangka, dasar ini tidak seharusnya ditetapkan pada direktori akar volum atau pada direkori yang digunakan untuk tujuan lain kerana <ph name="PRODUCT_NAME" /> mengurus kandungannya.
 
-      Lihat https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables untuk mendapatkan senarai pemboleh ubah yang boleh digunakan.
+      Lihat https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables untuk mendapatkan senarai pemboleh ubah yang boleh digunakan.
 
       Jika dasar ini dibiarkan tanpa ditetapkan, direktori cache lalai akan digunakan dan pengguna dapat mengatasinya dengan bendera baris perintah '--disk-cache-dir'.</translation>
 <translation id="113521240853905588">Mengkonfigurasikan bahasa yang boleh digunakan sebagai bahasa pilihan oleh <ph name="PRODUCT_OS_NAME" />.
@@ -497,7 +497,7 @@
 <translation id="1852294065645015766">Benarkan automain media</translation>
 <translation id="1857152770025485173">Dasar ini menghalang pengguna daripada memuatkan halaman web daripada URL yang disenaraihitamkan. Senarai hitam tersebut memberikan senarai pola URL yang menentukan URL yang akan disenaraihitamkan.
 
-      Pola URL mesti diformatkan mengikut https://www.chromium.org/administrators/url-blacklist-filter-format.
+      Pola URL mesti diformatkan mengikut https://www.monyhar.org/administrators/url-blacklist-filter-format.
 
       Pengecualian boleh ditentukan dalam dasar senarai putih URL. Dasar ini terhad kepada 1,000 masukan; masukan berikutnya akan diabaikan.
 
@@ -540,7 +540,7 @@
 
       Jika tidak dikonfigurasikan, pelaporan metrik dan data diagnostik akan dilumpuhkan pada peranti tidak diurus dan didayakan pada peranti yang diurus.</translation>
 <translation id="1907431809333268751">Mengkonfigurasi senarai URL log masuk perusahaan (skema HTTP dan HTTPS sahaja). Cap jari kata laluan akan ditangkap pada URL ini dan digunakan untuk pengesanan penggunaan semula kata laluan.
-      Untuk membolehkan <ph name="PRODUCT_NAME" /> menangkap cap jari kata laluan dengan betul, sila pastikan halaman log masuk anda mematuhi garis panduan di https://www.chromium.org/developers/design-documents/create-amazing-password-forms.
+      Untuk membolehkan <ph name="PRODUCT_NAME" /> menangkap cap jari kata laluan dengan betul, sila pastikan halaman log masuk anda mematuhi garis panduan di https://www.monyhar.org/developers/design-documents/create-amazing-password-forms.
 
       Jika tetapan ini didayakan, maka perkhidmatan perlindungan kata laluan akan menangkap cap jari kata laluan pada URL ini untuk tujuan pengesanan penggunaan semula kata laluan.
       Jika tetapan ini dilumpuhkan atau tidak ditetapkan, maka perkhidmatan perlindungan kata laluan hanya akan menangkap cap jari kata laluan di https://accounts.google.com.
@@ -842,7 +842,7 @@
 
       Dasar ini membenarkan sijil bagi nama hos dalam URL yang dinyatakan, tidak didedahkan melalui Ketelusan Sijil. Pada umumnya, sijil yang tidak didedahkan kepada umum dengan betul, dikendalikan sebagai sijil yang tidak dipercayai. Namun, dasar ini membenarkan sijil yang tidak dipercayai itu untuk terus digunakan, tetapi hal ini akan menyukarkan lagi kami mengesan sijil yang tersilap dikeluarkan oleh hos tersebut.
 
-      Pola URL diformatkan mengikut https://www.chromium.org/administrators/url-blacklist-filter-format. Walau bagaimanapun, oleh sebab sijil sah untuk nama hos yang tertentu tanpa mengira skim, port atau laluannya, hanya bahagian nama hos URL yang dipertimbangkan. Kad bebas hos tidak disokong.
+      Pola URL diformatkan mengikut https://www.monyhar.org/administrators/url-blacklist-filter-format. Walau bagaimanapun, oleh sebab sijil sah untuk nama hos yang tertentu tanpa mengira skim, port atau laluannya, hanya bahagian nama hos URL yang dipertimbangkan. Kad bebas hos tidak disokong.
 
       Jika dasar ini tidak ditetapkan, mana-mana sijil yang dikehendaki supaya didedahkan melalui Ketelusan Sijil akan dikendalikan sebagai tidak dipercayai jika sijil itu tidak didedahkan mengikut dasar Ketelusan Sijil.</translation>
 <translation id="2488010520405124654">Dayakan gesaan konfigurasi rangkaian semasa di luar talian.
@@ -1535,7 +1535,7 @@
 
       Jika anda menetapkan dasar ini, <ph name="PRODUCT_NAME" /> akan menggunakan direktori yang disediakan tidak kira sama ada pengguna telah menetapkan satu direktori atau mendayakan bendera untuk digesa bagi lokasi muat turun pada setiap kali.
 
-      Lihat http://www.chromium.org/administrators/policy-list-3/user-data-directory-variables untuk mendapatkan senarai pemboleh ubah yang boleh digunakan.
+      Lihat http://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables untuk mendapatkan senarai pemboleh ubah yang boleh digunakan.
 
       Jika dasar ini dibiarkan tanpa ditetapkan, direktori muat turun lalai akan digunakan dan pengguna akan dapat mengubahnya.</translation>
 <translation id="3805659594028420438">Dayakan sambungan sijil hala domain TLS (dikecam)</translation>
@@ -1626,7 +1626,7 @@
 
       Jika anda tidak menetapkan dasar ini, <ph name="PRODUCT_NAME" /> akan menggunakan direktori lalainya yang biasa (khusus platform).
 
-      Lihat https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables untuk mendapatkan senarai pemboleh ubah yang boleh digunakan.</translation>
+      Lihat https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables untuk mendapatkan senarai pemboleh ubah yang boleh digunakan.</translation>
 <translation id="3911737181201537215">Dasar ini tidak memberi kesan kepada pengelogan yang dilakukan oleh Android.</translation>
 <translation id="391531815696899618">Melumpuhkan penyegerakan Google Drive dalam apl Fail <ph name="PRODUCT_OS_NAME" /> apabila ditetapkan kepada Benar. Jika ini berlaku, tiada data akan dimuat naik ke Google Drive.
 
@@ -1829,7 +1829,7 @@ Apabila |IdleAction| tidak ditetapkan, tindakan lalai akan diambil, iaitu gantun
 
       Jika anda menetapkan dasar ini, <ph name="PRODUCT_NAME" /> akan menggunakan direktori yang diberikan untuk menyimpan salinan perayauan profil jika dasar <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> telah didayakan. Jika dasar <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> dilumpuhkan atau dibiarkan tanpa ditetapkan, nilai yang disimpan dalam dasar ini tidak digunakan.
 
-      Lihat https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables untuk mendapatkan senarai pemboleh ubah yang boleh digunakan.
+      Lihat https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables untuk mendapatkan senarai pemboleh ubah yang boleh digunakan.
 
       Jika dasar ini dibiarkan tanpa ditetapkan, laluan profil perayauan lalai akan digunakan.</translation>
 <translation id="4239720644496144453">Cache tidak digunakan untuk apl Android. Jika beberapa orang pengguna memasang apl Android yang sama, apl yang baharu akan dimuat turun untuk setiap pengguna.</translation>
@@ -2031,7 +2031,7 @@ Apabila |IdleAction| tidak ditetapkan, tindakan lalai akan diambil, iaitu gantun
 
           Jika dasar ini tidak ditetapkan, pemapar lalai akan digunakan untuk semua tapak seperti yang dinyatakan oleh dasar 'ChromeFrameRendererSettings'.
 
-          Untuk melihat contoh pola, lawati http://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Untuk melihat contoh pola, lawati http://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="467449052039111439">Buka senarai URL</translation>
 <translation id="4674871290487541952">Benarkan algoritma tidak selamat dalam semakan integriti pada kemas kini dan pemasangan sambungan</translation>
 <translation id="4680936297850947973">Ditamatkan dalam M68. Gunakan DefaultPopupsSetting sebagai ganti.
@@ -2679,7 +2679,7 @@ Apabila |IdleAction| tidak ditetapkan, tindakan lalai akan diambil, iaitu gantun
 
       Jika anda menetapkan dasar ini, <ph name="PRODUCT_FRAME_NAME" /> akan menggunakan direktori yang disediakan.
 
-      Lihat http://www.chromium.org/administrators/policy-list-3/user-data-directory-variables untuk mendapatkan senarai pemboleh ubah yang boleh digunakan.
+      Lihat http://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables untuk mendapatkan senarai pemboleh ubah yang boleh digunakan.
 
       Jika tetapan ini dibiarkan tanpa ditetapkan, direktori profil lalai akan digunakan.</translation>
 <translation id="5826047473100157858">Menentukan sama ada pengguna boleh membuka halaman dalam mod Inkognito dalam <ph name="PRODUCT_NAME" />.
@@ -3259,7 +3259,7 @@ Jika dasar ini dibiarkan tidak ditetapkan, papan kekunci pada skrin dilumpuhkan 
 
       Jika anda menetapkan dasar ini, <ph name="PRODUCT_NAME" /> akan menggunakan direktori yang diberikan tanpa mengambil kira sama ada pengguna telah menentukan bendera '--user-data-dir' atau tidak. Untuk mengelakkan kehilangan data atau ralat lain yang tidak dijangka, dasar ini tidak seharusnya ditetapkan pada direktori akar volum atau pada direkori yang digunakan untuk tujuan lain kerana <ph name="PRODUCT_NAME" /> mengurus kandungannya.
 
-      Lihat https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables untuk mendapatkan senarai pemboleh ubah yang boleh digunakan.
+      Lihat https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables untuk mendapatkan senarai pemboleh ubah yang boleh digunakan.
 
       Jika dasar ini dibiarkan tanpa ditetapkan, laluan profil lalai akan digunakan dan pengguna dapat mengatasinya dengan bendera baris perintah '--user-data-dir'.</translation>
 <translation id="7027785306666625591">Konfigurasi pengurusan kuasa dalam <ph name="PRODUCT_OS_NAME" />.
@@ -4057,7 +4057,7 @@ Cara yang disyorkan untuk mengkonfigurasikan dasar pada Windows adalah melalui G
 
           Jika dasar ini tidak ditetapkan, pemapar lalai akan digunakan untuk semua tapak seperti yang dinyatakan oleh dasar 'ChromeFrameRendererSettings'.
 
-          Untuk melihat contoh pola, lihat http://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Untuk melihat contoh pola, lihat http://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="8489964335640955763">PluginVm</translation>
 <translation id="8493645415242333585">Lumpuhkan penyimpanan sejarah penyemakan imbas</translation>
 <translation id="8499172469244085141">Tetapan lalai (pengguna boleh mengatasi)</translation>

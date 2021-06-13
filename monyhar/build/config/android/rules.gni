@@ -240,7 +240,7 @@ if (enable_java_templates) {
   #     # Generates gen/base/foo_jni/Foo_jni.h
   #     # To use: #include "base/foo_jni/Foo_jni.h"
   #     sources = [
-  #       "android/java/src/org/chromium/foo/Foo.java",
+  #       "android/java/src/org/monyhar/foo/Foo.java",
   #       ...,
   #     ]
   #   }
@@ -302,10 +302,10 @@ if (enable_java_templates) {
   #   sources_exclusions: List of .java files that should be skipped. (optional)
   #   namespace: Registration functions will be wrapped into this. (optional)
   #   require_native_mocks: Enforce that any native calls using
-  #     org.chromium.base.annotations.NativeMethods must have a mock set
+  #     org.monyhar.base.annotations.NativeMethods must have a mock set
   #     (optional).
   #   enable_native_mocks: Allow native calls using
-  #     org.chromium.base.annotations.NativeMethods to be mocked in tests
+  #     org.monyhar.base.annotations.NativeMethods to be mocked in tests
   #     (optional).
   #   no_transitive_deps: Generate registration for only the Java source in the
   #     specified target(s). This is useful for generating registration for
@@ -687,7 +687,7 @@ if (enable_java_templates) {
   #     libraries to write.
   #   version_number: (Optional) String of expected version of 'main' native
   #     library.
-  #   enable_chromium_linker: (Optional) Whether to use the Chromium linker.
+  #   enable_monyhar_linker: (Optional) Whether to use the Chromium linker.
   #   load_library_from_apk: (Optional) Whether libraries should be loaded from
   #     the APK without uncompressing.
   #   use_final_fields: True to use final fields. When false, all other
@@ -731,9 +731,9 @@ if (enable_java_templates) {
             invoker.main_component_library,
           ]
         }
-        if (defined(invoker.enable_chromium_linker) &&
-            invoker.enable_chromium_linker) {
-          args += [ "--enable-chromium-linker" ]
+        if (defined(invoker.enable_monyhar_linker) &&
+            invoker.enable_monyhar_linker) {
+          args += [ "--enable-monyhar-linker" ]
         }
         if (defined(invoker.load_library_from_apk) &&
             invoker.load_library_from_apk) {
@@ -974,7 +974,7 @@ if (enable_java_templates) {
   #       "res/drawable/foo1.xml",
   #       "res/drawable/foo2.xml",
   #     ]
-  #     custom_package = "org.chromium.foo"
+  #     custom_package = "org.monyhar.foo"
   #   }
   #
   #   android_resources("foo_resources_overrides") {
@@ -1018,12 +1018,12 @@ if (enable_java_templates) {
     _rebased_resource_files = rebase_path(_resource_files, root_build_dir)
     write_file(_res_sources_path, _rebased_resource_files)
 
-    # This is necessary so we only lint chromium resources.
-    if (defined(invoker.chromium_code)) {
-      _chromium_code = invoker.chromium_code
+    # This is necessary so we only lint monyhar resources.
+    if (defined(invoker.monyhar_code)) {
+      _monyhar_code = invoker.monyhar_code
     } else {
       # Default based on whether target is in third_party.
-      _chromium_code =
+      _monyhar_code =
           filter_exclude([ get_label_info(":$target_name", "dir") ],
                          [ "*\bthird_party\b*" ]) != []
     }
@@ -1033,7 +1033,7 @@ if (enable_java_templates) {
       build_config = _build_config
       resources_zip = _resources_zip
       res_sources_path = _res_sources_path
-      chromium_code = _chromium_code
+      monyhar_code = _monyhar_code
 
       forward_variables_from(invoker,
                              [
@@ -1222,15 +1222,15 @@ if (enable_java_templates) {
   #
   # Example
   #   java_binary("foo") {
-  #     sources = [ "org/chromium/foo/FooMain.java" ]
+  #     sources = [ "org/monyhar/foo/FooMain.java" ]
   #     deps = [ ":bar_java" ]
-  #     main_class = "org.chromium.foo.FooMain"
+  #     main_class = "org.monyhar.foo.FooMain"
   #   }
   #
   #   java_binary("foo") {
   #     jar_path = "lib/prebuilt.jar"
   #     deps = [ ":bar_java" ]
-  #     main_class = "org.chromium.foo.FooMain"
+  #     main_class = "org.monyhar.foo.FooMain"
   #   }
   template("java_binary") {
     java_library_impl(target_name) {
@@ -1254,14 +1254,14 @@ if (enable_java_templates) {
   #
   # Example
   #   java_annotation_processor("foo_processor") {
-  #     sources = [ "org/chromium/foo/FooProcessor.java" ]
+  #     sources = [ "org/monyhar/foo/FooProcessor.java" ]
   #     deps = [ ":bar_java" ]
-  #     main_class = "org.chromium.foo.FooProcessor"
+  #     main_class = "org.monyhar.foo.FooProcessor"
   #   }
   #
   #   java_annotation_processor("foo_processor") {
   #     jar_path = "lib/prebuilt.jar"
-  #     main_class = "org.chromium.foo.FooMain"
+  #     main_class = "org.monyhar.foo.FooMain"
   #   }
   #
   #   java_library("...") {
@@ -1285,7 +1285,7 @@ if (enable_java_templates) {
   #
   # Example
   #   junit_binary("foo") {
-  #     sources = [ "org/chromium/foo/FooTest.java" ]
+  #     sources = [ "org/monyhar/foo/FooTest.java" ]
   #     deps = [ ":bar_java" ]
   #   }
   template("junit_binary") {
@@ -1293,7 +1293,7 @@ if (enable_java_templates) {
 
     _java_binary_target_name = "${target_name}__java_binary"
     _test_runner_target_name = "${target_name}__test_runner_script"
-    _main_class = "org.chromium.testing.local.JunitTestMain"
+    _main_class = "org.monyhar.testing.local.JunitTestMain"
 
     _build_config = "$target_gen_dir/$target_name.build_config"
     _build_config_target_name = "$target_name$build_config_target_suffix"
@@ -1318,7 +1318,7 @@ if (enable_java_templates) {
     if (defined(invoker.package_name)) {
       _package_name = invoker.package_name
     } else if (!defined(invoker.android_manifest)) {
-      _package_name = "org.chromium.test"
+      _package_name = "org.monyhar.test"
     }
 
     _resource_arsc_output = "${target_gen_dir}/${target_name}.ap_"
@@ -1423,7 +1423,7 @@ if (enable_java_templates) {
   #     in the compile-time classpath. These are in addition to library .jars
   #     that appear in deps.
   #
-  #   chromium_code: If true, extra analysis warning/errors will be enabled.
+  #   monyhar_code: If true, extra analysis warning/errors will be enabled.
   #   enable_errorprone: If true, enables the errorprone compiler.
   #   skip_build_server: If true, avoids sending tasks to the build server.
   #
@@ -1467,9 +1467,9 @@ if (enable_java_templates) {
   # Example
   #   java_library("foo_java") {
   #     sources = [
-  #       "org/chromium/foo/Foo.java",
-  #       "org/chromium/foo/FooInterface.java",
-  #       "org/chromium/foo/FooService.java",
+  #       "org/monyhar/foo/Foo.java",
+  #       "org/monyhar/foo/FooInterface.java",
+  #       "org/monyhar/foo/FooService.java",
   #     ]
   #     deps = [
   #       ":bar_java"
@@ -1478,7 +1478,7 @@ if (enable_java_templates) {
   #       ":foo_generated_enum"
   #     ]
   #     jar_excluded_patterns = [
-  #       "*/FooService.class", "org/chromium/FooService\$*.class"
+  #       "*/FooService.class", "org/monyhar/FooService\$*.class"
   #     ]
   #   }
   template("java_library") {
@@ -1832,9 +1832,9 @@ if (enable_java_templates) {
   # Example
   #   android_library("foo_java") {
   #     sources = [
-  #       "android/org/chromium/foo/Foo.java",
-  #       "android/org/chromium/foo/FooInterface.java",
-  #       "android/org/chromium/foo/FooService.java",
+  #       "android/org/monyhar/foo/Foo.java",
+  #       "android/org/monyhar/foo/FooInterface.java",
+  #       "android/org/monyhar/foo/FooService.java",
   #     ]
   #     deps = [
   #       ":bar_java"
@@ -1843,7 +1843,7 @@ if (enable_java_templates) {
   #       ":foo_generated_enum"
   #     ]
   #     jar_excluded_patterns = [
-  #       "*/FooService.class", "org/chromium/FooService\$*.class"
+  #       "*/FooService.class", "org/monyhar/FooService\$*.class"
   #     ]
   #   }
   template("android_library") {
@@ -1898,7 +1898,7 @@ if (enable_java_templates) {
     }
   }
 
-  # Creates org/chromium/build/BuildConfig.java
+  # Creates org/monyhar/build/BuildConfig.java
   # This doesn't really belong in //build since it genates a file for //base.
   # However, we don't currently have a better way to include this file in all
   # apks that depend on //base:base_java.
@@ -1976,14 +1976,14 @@ if (enable_java_templates) {
   #   build_config: Path to build_config used for locale lists.
   #   is_bundle_module: Whether or not this target is part of a bundle build.
   #   java_package: Java package for the generated class.
-  #   use_chromium_linker:
+  #   use_monyhar_linker:
   #   use_modern_linker:
   template("generate_product_config_srcjar") {
     java_cpp_template(target_name) {
       defines = []
       _use_final =
           defined(invoker.build_config) ||
-          defined(invoker.use_chromium_linker) ||
+          defined(invoker.use_monyhar_linker) ||
           defined(invoker.use_modern_linker) || defined(invoker.is_bundle)
       if (_use_final) {
         defines += [ "USE_FINAL" ]
@@ -1992,13 +1992,13 @@ if (enable_java_templates) {
       sources = [ "//build/android/java/templates/ProductConfig.template" ]
       defines += [ "PACKAGE=${invoker.java_package}" ]
 
-      _use_chromium_linker =
-          defined(invoker.use_chromium_linker) && invoker.use_chromium_linker
+      _use_monyhar_linker =
+          defined(invoker.use_monyhar_linker) && invoker.use_monyhar_linker
       _use_modern_linker =
           defined(invoker.use_modern_linker) && invoker.use_modern_linker
       _is_bundle = defined(invoker.is_bundle_module) && invoker.is_bundle_module
       defines += [
-        "USE_CHROMIUM_LINKER_VALUE=$_use_chromium_linker",
+        "USE_CHROMIUM_LINKER_VALUE=$_use_monyhar_linker",
         "USE_MODERN_LINKER_VALUE=$_use_modern_linker",
         "IS_BUNDLE_VALUE=$_is_bundle",
       ]
@@ -2026,7 +2026,7 @@ if (enable_java_templates) {
   #       * dependencies of this .so are not automatically included
   #       * ".cr.so" is never added
   #       * they are not side-loaded when incremental_install=true.
-  #       * load_library_from_apk, use_chromium_linker,
+  #       * load_library_from_apk, use_monyhar_linker,
   #         and enable_relocation_packing do not apply
   #     Use this instead of shared_libraries when you are going to load the library
   #     conditionally, and only when shared_libraries doesn't work for you.
@@ -2106,10 +2106,10 @@ if (enable_java_templates) {
   #   max_sdk_version: The maximum Android SDK version this target supports.
   #     Optional, default not set.
   #   require_native_mocks: Enforce that any native calls using
-  #     org.chromium.base.annotations.NativeMethods must have a mock set
+  #     org.monyhar.base.annotations.NativeMethods must have a mock set
   #     (optional).
   #   enable_native_mocks: Allow native calls using
-  #     org.chromium.base.annotations.NativeMethods to be mocked in tests
+  #     org.monyhar.base.annotations.NativeMethods to be mocked in tests
   #     (optional).
   #   product_config_java_packages: Optional list of java packages. If given, a
   #     ProductConfig.java file will be generated for each package.
@@ -2245,8 +2245,8 @@ if (enable_java_templates) {
     }
     _android_root_manifest = invoker.android_manifest
 
-    _use_chromium_linker =
-        defined(invoker.use_chromium_linker) && invoker.use_chromium_linker
+    _use_monyhar_linker =
+        defined(invoker.use_monyhar_linker) && invoker.use_monyhar_linker
     _use_modern_linker =
         defined(invoker.use_modern_linker) && invoker.use_modern_linker
 
@@ -2254,11 +2254,11 @@ if (enable_java_templates) {
         defined(invoker.load_library_from_apk) && invoker.load_library_from_apk
 
     not_needed([
-                 "_use_chromium_linker",
+                 "_use_monyhar_linker",
                  "_use_modern_linker",
                ])
-    assert(!_load_library_from_apk || _use_chromium_linker,
-           "load_library_from_apk requires use_chromium_linker")
+    assert(!_load_library_from_apk || _use_monyhar_linker,
+           "load_library_from_apk requires use_monyhar_linker")
 
     # Make sure that uncompress_shared_libraries is set to true if
     # load_library_from_apk is true.
@@ -2269,7 +2269,7 @@ if (enable_java_templates) {
       _uncompress_shared_libraries = _load_library_from_apk
     }
 
-    # The dependency that makes the chromium linker, if any is needed.
+    # The dependency that makes the monyhar linker, if any is needed.
     _native_libs_deps = []
     _shared_libraries_is_valid =
         defined(invoker.shared_libraries) && invoker.shared_libraries != []
@@ -2642,7 +2642,7 @@ if (enable_java_templates) {
         } else {
           native_libraries_list_file = _secondary_abi_shared_library_list_file
         }
-        enable_chromium_linker = _use_chromium_linker
+        enable_monyhar_linker = _use_monyhar_linker
         load_library_from_apk = _load_library_from_apk
         use_modern_linker = _use_modern_linker
         use_final_fields = true
@@ -2676,7 +2676,7 @@ if (enable_java_templates) {
         is_incremental_install = _incremental_apk
         if (defined(invoker.product_version_resources_dep)) {
           resources_version_variable =
-              "org.chromium.base.R.string.product_version"
+              "org.monyhar.base.R.string.product_version"
         }
         deps = [ ":$_build_config_target" ]
       }
@@ -2691,7 +2691,7 @@ if (enable_java_templates) {
           forward_variables_from(invoker, [ "is_bundle_module" ])
           build_config = _build_config
           java_package = _package
-          use_chromium_linker = _use_chromium_linker
+          use_monyhar_linker = _use_monyhar_linker
           use_modern_linker = _use_modern_linker
           deps = [ ":$_build_config_target" ]
         }
@@ -2743,7 +2743,7 @@ if (enable_java_templates) {
                                "annotation_processor_deps",
                                "apk_under_test",
                                "base_module_target",
-                               "chromium_code",
+                               "monyhar_code",
                                "jacoco_never_instrument",
                                "jar_excluded_patterns",
                                "javac_args",
@@ -3395,8 +3395,8 @@ if (enable_java_templates) {
   #   android_apk("foo_apk") {
   #     android_manifest = "AndroidManifest.xml"
   #     sources = [
-  #       "android/org/chromium/foo/FooApplication.java",
-  #       "android/org/chromium/foo/FooActivity.java",
+  #       "android/org/monyhar/foo/FooApplication.java",
+  #       "android/org/monyhar/foo/FooActivity.java",
   #     ]
   #     deps = [
   #       ":foo_support_java"
@@ -3425,7 +3425,7 @@ if (enable_java_templates) {
                                "app_as_shared_lib",
                                "assert_no_deps",
                                "bundles_supported",
-                               "chromium_code",
+                               "monyhar_code",
                                "command_line_flags_file",
                                "create_apk_script",
                                "data",
@@ -3504,7 +3504,7 @@ if (enable_java_templates) {
                                "use_classic_desugar",
                                "library_always_compress",
                                "library_renames",
-                               "use_chromium_linker",
+                               "use_monyhar_linker",
                                "version_code",
                                "version_name",
                                "visibility",
@@ -3572,7 +3572,7 @@ if (enable_java_templates) {
                                "assert_no_deps",
                                "base_module_target",
                                "bundle_target",
-                               "chromium_code",
+                               "monyhar_code",
                                "data",
                                "data_deps",
                                "deps",
@@ -3629,7 +3629,7 @@ if (enable_java_templates) {
                                "uncompress_shared_libraries",
                                "library_always_compress",
                                "library_renames",
-                               "use_chromium_linker",
+                               "use_monyhar_linker",
                                "use_modern_linker",
                                "uses_split",
                                "version_code",
@@ -3739,8 +3739,8 @@ if (enable_java_templates) {
   #     apk_name = "FooTest"
   #     apk_under_test = "Foo"
   #     sources = [
-  #       "android/org/chromium/foo/FooTestCase.java",
-  #       "android/org/chromium/foo/FooExampleTest.java",
+  #       "android/org/monyhar/foo/FooTestCase.java",
+  #       "android/org/monyhar/foo/FooExampleTest.java",
   #     ]
   #     deps = [
   #       ":foo_test_support_java"
@@ -4085,7 +4085,7 @@ if (enable_java_templates) {
     }
 
     android_library(target_name) {
-      chromium_code = false
+      monyhar_code = false
       sources = []
       srcjar_deps = [ ":${_template_name}__protoc_java" ]
       deps = [ "//third_party/android_deps:protobuf_lite_runtime_java" ]
@@ -5119,7 +5119,7 @@ if (enable_java_templates) {
 # Generate an Android resources target that contains localized strings
 # describing the current locale used by the Android framework to display
 # UI strings. These are used by
-# org.chromium.chrome.browser.ChromeLocalizationUtils.
+# org.monyhar.chrome.browser.ChromeLocalizationUtils.
 #
 # Variables:
 #    ui_locales: List of Chromium locale names to generate resources for.

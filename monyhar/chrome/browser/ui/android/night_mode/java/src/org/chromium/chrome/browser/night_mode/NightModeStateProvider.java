@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.night_mode;
+package org.monyhar.chrome.browser.night_mode;
 
 import android.app.Activity;
 import android.content.Context;

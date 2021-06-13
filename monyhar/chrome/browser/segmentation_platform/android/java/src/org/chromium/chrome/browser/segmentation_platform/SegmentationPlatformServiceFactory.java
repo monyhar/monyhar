@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.segmentation_platform;
+package org.monyhar.chrome.browser.segmentation_platform;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.segmentation_platform.SegmentationPlatformService;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.segmentation_platform.SegmentationPlatformService;
 
 /**
  * This factory creates SegmentationPlatformService for the given {@link Profile}.

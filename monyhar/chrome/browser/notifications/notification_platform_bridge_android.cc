@@ -51,7 +51,7 @@ namespace {
 constexpr int kNotificationInvalidButtonIndex = -1;
 
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.notifications
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.notifications
 enum NotificationActionType {
   // NB. Making this a one-line enum breaks code generation! crbug.com/657847
   BUTTON,
@@ -78,7 +78,7 @@ ScopedJavaLocalRef<jobjectArray> ConvertToJavaActionInfos(
     const std::vector<message_center::ButtonInfo>& buttons) {
   JNIEnv* env = AttachCurrentThread();
   ScopedJavaLocalRef<jclass> clazz = base::android::GetClass(
-      env, "org/chromium/chrome/browser/notifications/ActionInfo");
+      env, "org/monyhar/chrome/browser/notifications/ActionInfo");
   jobjectArray actions = env->NewObjectArray(buttons.size(), clazz.obj(),
                                              nullptr /* initialElement */);
   base::android::CheckException(env);

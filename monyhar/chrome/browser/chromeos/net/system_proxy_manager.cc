@@ -625,7 +625,7 @@ void SystemProxyManager::OnAuthenticationRequired(
     return;
   }
 
-  // TODO(acostinas,chromium:1104818) |protection_space.origin()| is in a
+  // TODO(acostinas,monyhar:1104818) |protection_space.origin()| is in a
   // URI-like format which may be incompatible between Chrome and libcurl, which
   // is used on the Chrome OS side. We should change |origin()| to be a PAC
   // string (a more "standard" way of representing proxies) and call

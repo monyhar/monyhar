@@ -153,7 +153,7 @@ repack("support_pak") {
   sources = [
     "$root_gen_dir/components/components_resources.pak",
     "$root_gen_dir/components/components_resources_100_percent.pak",
-    "$root_gen_dir/components/strings/components_chromium_strings_en-US.pak",
+    "$root_gen_dir/components/strings/components_monyhar_strings_en-US.pak",
     "$root_gen_dir/components/strings/components_locale_settings_en-US.pak",
     "$root_gen_dir/components/strings/components_strings_en-US.pak",
     "$root_gen_dir/content/app/resources/content_resources_100_percent.pak",

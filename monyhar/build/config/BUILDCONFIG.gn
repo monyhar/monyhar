@@ -159,7 +159,7 @@ declare_args() {
   # When false, components will be linked statically.
   #
   # For more information see
-  # https://chromium.googlesource.com/chromium/src/+/main/docs/component_build.md
+  # https://monyhar.googlesource.com/monyhar/src/+/main/docs/component_build.md
   is_component_build = is_debug && current_os != "ios"
 }
 
@@ -321,7 +321,7 @@ default_compiler_configs = [
   "//build/config/compiler:compiler",
   "//build/config/compiler:compiler_arm_fpu",
   "//build/config/compiler:compiler_arm_thumb",
-  "//build/config/compiler:chromium_code",
+  "//build/config/compiler:monyhar_code",
   "//build/config/compiler:default_include_dirs",
   "//build/config/compiler:default_optimization",
   "//build/config/compiler:default_stack_frames",

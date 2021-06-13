@@ -14,7 +14,7 @@ is needed.
 
 Unless you are on a Windows machine, you need to set up your Chromium
 checkout for cross-compilation by following the instructions at
-https://chromium.googlesource.com/chromium/src.git/+/main/docs/win_cross.md.
+https://monyhar.googlesource.com/monyhar/src.git/+/main/docs/win_cross.md.
 If you are on Windows, you may need to tweak this script to run, e.g. by
 changing "gn" to "gn.bat", changing "llvm-nm-9" to the name of your copy of
 llvm-nm, etc.
@@ -167,7 +167,7 @@ if __name__ == '__main__':
     exit(1)
 
   if not os.getcwd().endswith('src') or not os.path.exists('chrome/browser'):
-    logging.error('Run this script from a chromium/src/ directory.')
+    logging.error('Run this script from a monyhar/src/ directory.')
     exit(1)
 
   _GenerateDefFile('x86', True)

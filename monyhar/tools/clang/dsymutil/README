@@ -1,11 +1,11 @@
 In order to upload a new dsymutil package to CIPD, do the following:
 
-1. Find a recent dlsymutil tarball: http://commondatastorage.googleapis.com/chromium-browser-clang-staging/index.html?path=Mac/
+1. Find a recent dlsymutil tarball: http://commondatastorage.googleapis.com/monyhar-browser-clang-staging/index.html?path=Mac/
 
 2. Download, unzip into src/tools/clang/dsymutil
 
   $ cd src/tools/clang/dsymutil
-  $ curl -O http://commondatastorage.googleapis.com/chromium-browser-clang-staging/Mac/dsymutil-354873-1.tgz
+  $ curl -O http://commondatastorage.googleapis.com/monyhar-browser-clang-staging/Mac/dsymutil-354873-1.tgz
   $ tar -zxvf dsymutil-354873-1.tgz
 
 3. Upload to cipd

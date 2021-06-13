@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.onboarding;
+package org.monyhar.chrome.browser.autofill_assistant.onboarding;
 
 import android.content.Context;
 import android.content.DialogInterface.OnDismissListener;
@@ -15,9 +15,9 @@ import android.widget.ScrollView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.autofill_assistant.LayoutUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.autofill_assistant.LayoutUtils;
 
 import java.util.Map;
 
@@ -59,7 +59,7 @@ class DialogOnboardingCoordinator extends BaseOnboardingCoordinator {
     void initViewImpl(Callback<Integer> callback) {
         mDialog = new AlertDialog
                           .Builder(getContext(),
-                                  org.chromium.chrome.autofill_assistant.R.style
+                                  org.monyhar.chrome.autofill_assistant.R.style
                                           .Theme_Chromium_AlertDialog)
                           .create();
 

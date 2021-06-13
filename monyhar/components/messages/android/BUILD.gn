@@ -7,15 +7,15 @@ import("//chrome/android/features/android_library_factory_tmpl.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/components/messages/MessageAutodismissDurationProvider.java",
-    "java/src/org/chromium/components/messages/MessageBannerProperties.java",
-    "java/src/org/chromium/components/messages/MessageContainer.java",
-    "java/src/org/chromium/components/messages/MessageDispatcher.java",
-    "java/src/org/chromium/components/messages/MessageDispatcherBridge.java",
-    "java/src/org/chromium/components/messages/MessageDispatcherProvider.java",
-    "java/src/org/chromium/components/messages/MessageWrapper.java",
+    "java/src/org/monyhar/components/messages/MessageAutodismissDurationProvider.java",
+    "java/src/org/monyhar/components/messages/MessageBannerProperties.java",
+    "java/src/org/monyhar/components/messages/MessageContainer.java",
+    "java/src/org/monyhar/components/messages/MessageDispatcher.java",
+    "java/src/org/monyhar/components/messages/MessageDispatcherBridge.java",
+    "java/src/org/monyhar/components/messages/MessageDispatcherProvider.java",
+    "java/src/org/monyhar/components/messages/MessageWrapper.java",
   ]
-  resources_package = "org.chromium.components.messages"
+  resources_package = "org.monyhar.components.messages"
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
   deps = [
     ":java_resources",
@@ -43,8 +43,8 @@ android_resources("java_resources") {
 
 generate_jni("jni_headers") {
   sources = [
-    "java/src/org/chromium/components/messages/MessageDispatcherBridge.java",
-    "java/src/org/chromium/components/messages/MessageWrapper.java",
+    "java/src/org/monyhar/components/messages/MessageDispatcherBridge.java",
+    "java/src/org/monyhar/components/messages/MessageWrapper.java",
   ]
 }
 
@@ -84,15 +84,15 @@ java_cpp_enum("message_enums_java") {
 # MessageDispatcher.
 android_library("manager_java") {
   sources = [
-    "java/src/org/chromium/components/messages/ManagedMessageDispatcher.java",
-    "java/src/org/chromium/components/messages/MessageQueueDelegate.java",
+    "java/src/org/monyhar/components/messages/ManagedMessageDispatcher.java",
+    "java/src/org/monyhar/components/messages/MessageQueueDelegate.java",
   ]
   deps = [ ":java" ]
 }
 
 android_library_factory("factory_java") {
   sources = [
-    "internal/java/src/org/chromium/components/messages/MessagesFactory.java",
+    "internal/java/src/org/monyhar/components/messages/MessagesFactory.java",
   ]
 
   deps = [
@@ -115,7 +115,7 @@ java_library("junit") {
   bypass_platform_checks = true
   testonly = true
   sources =
-      [ "java/src/org/chromium/components/messages/MessageWrapperTest.java" ]
+      [ "java/src/org/monyhar/components/messages/MessageWrapperTest.java" ]
   deps = [
     ":java",
     "//base:base_java",

@@ -18,7 +18,7 @@
 // @end
 // @implementation PageLoadTestCase
 // - (void)testPageload {
-//   [ChromeEarlGreyUI loadURL:GURL("https://chromium.org")];
+//   [ChromeEarlGreyUI loadURL:GURL("https://monyhar.org")];
 // }
 //
 // In this example ChromeEarlGreyUIImpl must implement -loadURL:.

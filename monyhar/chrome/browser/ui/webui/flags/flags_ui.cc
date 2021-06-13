@@ -27,7 +27,7 @@
 #include "components/grit/components_scaled_resources.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/pref_service.h"
-#include "components/strings/grit/components_chromium_strings.h"
+#include "components/strings/grit/components_monyhar_strings.h"
 #include "components/strings/grit/components_strings.h"
 #include "components/version_info/version_info.h"
 #include "content/public/browser/web_contents.h"

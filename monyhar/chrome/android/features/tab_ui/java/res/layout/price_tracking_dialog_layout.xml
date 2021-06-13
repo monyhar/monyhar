@@ -2,7 +2,7 @@
 <!-- Copyright 2021 The Chromium Authors. All rights reserved.
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
-<org.chromium.chrome.browser.tasks.tab_management.PriceTrackingDialogView
+<org.monyhar.chrome.browser.tasks.tab_management.PriceTrackingDialogView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/price_tracking_dialog"
@@ -105,7 +105,7 @@
                 android:text="@string/price_drop_alerts_description"
                 android:textAppearance="@style/TextAppearance.TextMedium.Secondary" />
         </LinearLayout>
-        <org.chromium.ui.widget.ChromeImageButton
+        <org.monyhar.ui.widget.ChromeImageButton
             android:id="@+id/price_alerts_arrow"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -118,4 +118,4 @@
             android:background="@drawable/tab_grid_dialog_background"
             app:tint="@color/default_icon_color_tint_list" />
     </LinearLayout>
-</org.chromium.chrome.browser.tasks.tab_management.PriceTrackingDialogView>
+</org.monyhar.chrome.browser.tasks.tab_management.PriceTrackingDialogView>

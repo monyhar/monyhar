@@ -64,7 +64,7 @@ relative to the out/Release directory you just need to add that directory to
 your debugger search path, by adding a line similar to this to `~/.gdbinit`:
 
 ```
-(gdb) directory /usr/local/chromium/src/out/Release/
+(gdb) directory /usr/local/monyhar/src/out/Release/
 ```
 
 ## Notes
@@ -128,4 +128,4 @@ This page discusses the same process in the context of Chrome OS and many of the
 concepts and techniques overlap.
 
 [Debugging a Minidump](
-https://www.chromium.org/chromium-os/packages/crash-reporting/debugging-a-minidump)
+https://www.monyhar.org/monyhar-os/packages/crash-reporting/debugging-a-minidump)

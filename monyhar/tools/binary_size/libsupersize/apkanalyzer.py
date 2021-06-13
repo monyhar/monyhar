@@ -75,18 +75,18 @@ def UndoHierarchicalSizing(data):
     [
       ('P', '<TOTAL>', 37),
       ('P', 'org', 32),
-      ('P', 'org.chromium', 32),
-      ('C', 'org.chromium.ClassA', 14),
-      ('M', 'org.chromium.ClassA void methodA()', 10),
-      ('C', 'org.chromium.ClassA$Proxy', 8),
+      ('P', 'org.monyhar', 32),
+      ('C', 'org.monyhar.ClassA', 14),
+      ('M', 'org.monyhar.ClassA void methodA()', 10),
+      ('C', 'org.monyhar.ClassA$Proxy', 8),
     ]
 
   Processed nodes:
     [
       ('<TOTAL>', 15),
-      ('org.chromium.ClassA', 4),
-      ('org.chromium.ClassA void methodA()', 10),
-      ('org.chromium.ClassA$Proxy', 8),
+      ('org.monyhar.ClassA', 4),
+      ('org.monyhar.ClassA void methodA()', 10),
+      ('org.monyhar.ClassA$Proxy', 8),
     ]
   """
   num_nodes = len(data)

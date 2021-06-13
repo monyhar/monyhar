@@ -442,7 +442,7 @@ TEST(DnsRecordParserTest, RejectReadingTooManyRecords) {
       "\x00\x01\x51\x80"  // TTL=1 day
       "\x00\x04"          // RDLENGTH=4 bytes
       "\xc0\xa8\x00\x01"  // 192.168.0.1
-      "\003www\010chromium\004test\000"
+      "\003www\010monyhar\004test\000"
       "\x00\x01"           // TYPE=A
       "\x00\x01"           // CLASS=IN
       "\x00\x01\x51\x80"   // TTL=1 day
@@ -471,7 +471,7 @@ TEST(DnsRecordParserTest, RejectReadingPastEnd) {
       "\x00\x01\x51\x80"  // TTL=1 day
       "\x00\x04"          // RDLENGTH=4 bytes
       "\xc0\xa8\x00\x01"  // 192.168.0.1
-      "\003www\010chromium\004test\000"
+      "\003www\010monyhar\004test\000"
       "\x00\x01"           // TYPE=A
       "\x00\x01"           // CLASS=IN
       "\x00\x01\x51\x80"   // TTL=1 day
@@ -490,7 +490,7 @@ TEST(DnsRecordParserTest, RejectReadingPastEnd) {
 
 TEST(DnsResponseTest, InitParse) {
   // This includes \0 at the end.
-  const char qname_data[] = "\x0A""codereview""\x08""chromium""\x03""org";
+  const char qname_data[] = "\x0A""codereview""\x08""monyhar""\x03""org";
   const base::StringPiece qname(qname_data, sizeof(qname_data));
   // Compilers want to copy when binding temporary to const &, so must use heap.
   std::unique_ptr<DnsQuery> query(
@@ -581,7 +581,7 @@ TEST(DnsResponseTest, InitParse) {
   ASSERT_TRUE(DNSDomainFromDot(resp.GetSingleDottedName(), &response_qname));
   EXPECT_EQ(query->qname(), response_qname);
   EXPECT_EQ(query->qtype(), resp.GetSingleQType());
-  EXPECT_EQ("codereview.chromium.org", resp.GetSingleDottedName());
+  EXPECT_EQ("codereview.monyhar.org", resp.GetSingleDottedName());
 
   DnsResourceRecord record;
   DnsRecordParser parser = resp.Parser();
@@ -600,7 +600,7 @@ TEST(DnsResponseTest, InitParseInvalidFlags) {
       "\x0A"
       "codereview"
       "\x08"
-      "chromium"
+      "monyhar"
       "\x03"
       "org";
   const base::StringPiece qname(qname_data, sizeof(qname_data));
@@ -682,7 +682,7 @@ TEST(DnsResponseTest, InitParseRejectsResponseWithTooManyQuestions) {
       "\003www\006google\004test\000"  // www.google.test
       "\x00\x01"                       // TYPE=A
       "\x00\x01"                       // CLASS=IN
-      "\003www\010chromium\004test\000"  // www.chromium.test
+      "\003www\010monyhar\004test\000"  // www.monyhar.test
       "\x00\x01"                         // TYPE=A
       "\x00\x01";                        // CLASS=IN
 
@@ -768,7 +768,7 @@ TEST(DnsResponseTest, InitParseWithoutQueryNoQuestions) {
 
   EXPECT_FALSE(parser.AtEnd());
   EXPECT_TRUE(parser.ReadRecord(&record));
-  EXPECT_EQ("codereview.chromium.org", record.name);
+  EXPECT_EQ("codereview.monyhar.org", record.name);
   EXPECT_EQ(0x00000035u, record.ttl);
   EXPECT_EQ(dns_protocol::kTypeA, record.type);
 
@@ -865,7 +865,7 @@ TEST(DnsResponseTest, InitParseWithoutQueryTwoQuestions) {
       'w',
       '2',
       0xc0,
-      0x17,  // pointer to "chromium.org"
+      0x17,  // pointer to "monyhar.org"
       0x00,
       0x01,  // TYPE is A.
       0x00,
@@ -902,8 +902,8 @@ TEST(DnsResponseTest, InitParseWithoutQueryTwoQuestions) {
   EXPECT_EQ(0x01u, resp.answer_count());
 
   EXPECT_THAT(resp.dotted_qnames(),
-              testing::ElementsAre("codereview.chromium.org",
-                                   "codereview2.chromium.org"));
+              testing::ElementsAre("codereview.monyhar.org",
+                                   "codereview2.monyhar.org"));
   EXPECT_THAT(resp.qtypes(),
               testing::ElementsAre(dns_protocol::kTypeA, dns_protocol::kTypeA));
 
@@ -912,7 +912,7 @@ TEST(DnsResponseTest, InitParseWithoutQueryTwoQuestions) {
 
   EXPECT_FALSE(parser.AtEnd());
   EXPECT_TRUE(parser.ReadRecord(&record));
-  EXPECT_EQ("codereview.chromium.org", record.name);
+  EXPECT_EQ("codereview.monyhar.org", record.name);
   EXPECT_EQ(0x35u, record.ttl);
   EXPECT_EQ(dns_protocol::kTypeA, record.type);
 
@@ -1054,7 +1054,7 @@ TEST(DnsResponseTest, InitParseRejectsResponseWithMissingQuestions) {
       "\003www\006google\004test\000"  // www.google.test
       "\x00\x01"                       // TYPE=A
       "\x00\x01"                       // CLASS=IN
-      "\003www\010chromium\004test\000"  // www.chromium.test
+      "\003www\010monyhar\004test\000"  // www.monyhar.test
       "\x00\x01"                         // TYPE=A
       "\x00\x01";                        // CLASS=IN
   // Missing third question.
@@ -1094,7 +1094,7 @@ TEST(DnsResponseTest, ParserLimitedToNumClaimedRecords) {
       "\x00\x01\x51\x80"  // TTL=1 day
       "\x00\x04"          // RDLENGTH=4 bytes
       "\xc0\xa8\x00\x01"  // 192.168.0.1
-      "\003www\010chromium\004test\000"
+      "\003www\010monyhar\004test\000"
       "\x00\x01"          // TYPE=A
       "\x00\x01"          // CLASS=IN
       "\x00\x01\x51\x80"  // TTL=1 day
@@ -1106,7 +1106,7 @@ TEST(DnsResponseTest, ParserLimitedToNumClaimedRecords) {
       "\x00\x01\x51\x80"  // TTL=1 day
       "\x00\x04"          // RDLENGTH=4 bytes
       "\xc0\xa8\x00\x03"  // 192.168.0.3
-      "\003www\011chromium1\004test\000"
+      "\003www\011monyhar1\004test\000"
       "\x00\x01"          // TYPE=A
       "\x00\x01"          // CLASS=IN
       "\x00\x01\x51\x80"  // TTL=1 day
@@ -1118,7 +1118,7 @@ TEST(DnsResponseTest, ParserLimitedToNumClaimedRecords) {
       "\x00\x01\x51\x80"  // TTL=1 day
       "\x00\x04"          // RDLENGTH=4 bytes
       "\xc0\xa8\x00\x05"  // 192.168.0.5
-      "\003www\011chromium2\004test\000"
+      "\003www\011monyhar2\004test\000"
       "\x00\x01"           // TYPE=A
       "\x00\x01"           // CLASS=IN
       "\x00\x01\x51\x80"   // TTL=1 day
@@ -1188,7 +1188,7 @@ TEST(DnsResponseTest, ParserLimitedToBufferSize) {
       "\x00\x01\x51\x80"  // TTL=1 day
       "\x00\x04"          // RDLENGTH=4 bytes
       "\xc0\xa8\x00\x01"  // 192.168.0.1
-      "\003www\010chromium\004test\000"
+      "\003www\010monyhar\004test\000"
       "\x00\x01"           // TYPE=A
       "\x00\x01"           // CLASS=IN
       "\x00\x01\x51\x80"   // TTL=1 day

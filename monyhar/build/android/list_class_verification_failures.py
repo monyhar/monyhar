@@ -17,7 +17,7 @@ import logging
 import os
 import re
 
-import devil_chromium
+import devil_monyhar
 from devil.android import device_errors
 from devil.android import device_temp_file
 from devil.android import device_utils
@@ -262,7 +262,7 @@ List Java classes in an APK which fail ART class verification.
   logging_common.AddLoggingArguments(parser)
 
   args = parser.parse_args()
-  devil_chromium.Initialize(adb_path=args.adb_path)
+  devil_monyhar.Initialize(adb_path=args.adb_path)
   logging_common.InitializeLogging(args)
 
   if args.workdir:

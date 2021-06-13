@@ -31,7 +31,7 @@ shortcut" menu (replaces the "X" button), and reordering via click-and-drag.
 
 [local-ntp]:        #local-ntp
 [third-party-ntp]:  #third_party-ntp
-[engines]:          https://chromium.googlesource.com/chromium/src/+/main/components/search_engines/prepopulated_engines.json
+[engines]:          https://monyhar.googlesource.com/monyhar/src/+/main/components/search_engines/prepopulated_engines.json
 
 Variants
 --------

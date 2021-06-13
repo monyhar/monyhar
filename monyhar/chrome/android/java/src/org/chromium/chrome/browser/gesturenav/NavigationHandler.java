@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.gesturenav;
+package org.monyhar.chrome.browser.gesturenav;
 
-import static org.chromium.chrome.browser.gesturenav.GestureNavigationProperties.ACTION;
-import static org.chromium.chrome.browser.gesturenav.GestureNavigationProperties.ALLOW_NAV;
-import static org.chromium.chrome.browser.gesturenav.GestureNavigationProperties.BUBBLE_OFFSET;
-import static org.chromium.chrome.browser.gesturenav.GestureNavigationProperties.CLOSE_INDICATOR;
-import static org.chromium.chrome.browser.gesturenav.GestureNavigationProperties.DIRECTION;
-import static org.chromium.chrome.browser.gesturenav.GestureNavigationProperties.GESTURE_POS;
-import static org.chromium.chrome.browser.gesturenav.GestureNavigationProperties.GLOW_OFFSET;
+import static org.monyhar.chrome.browser.gesturenav.GestureNavigationProperties.ACTION;
+import static org.monyhar.chrome.browser.gesturenav.GestureNavigationProperties.ALLOW_NAV;
+import static org.monyhar.chrome.browser.gesturenav.GestureNavigationProperties.BUBBLE_OFFSET;
+import static org.monyhar.chrome.browser.gesturenav.GestureNavigationProperties.CLOSE_INDICATOR;
+import static org.monyhar.chrome.browser.gesturenav.GestureNavigationProperties.DIRECTION;
+import static org.monyhar.chrome.browser.gesturenav.GestureNavigationProperties.GESTURE_POS;
+import static org.monyhar.chrome.browser.gesturenav.GestureNavigationProperties.GLOW_OFFSET;
 
 import android.content.Context;
 import android.gesture.GesturePoint;
@@ -23,11 +23,11 @@ import android.view.ViewGroup;
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.browser.gesturenav.BackActionDelegate.ActionType;
-import org.chromium.chrome.browser.gesturenav.NavigationBubble.CloseTarget;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.browser_ui.widget.TouchEventObserver;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.chrome.browser.gesturenav.BackActionDelegate.ActionType;
+import org.monyhar.chrome.browser.gesturenav.NavigationBubble.CloseTarget;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.browser_ui.widget.TouchEventObserver;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

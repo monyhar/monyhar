@@ -213,8 +213,8 @@ function forEachWebxrObject(callback) {
 
 // Code for loading test API in Chromium.
 async function loadChromiumResources() {
-  await loadScript('/resources/chromium/webxr-test-math-helper.js');
-  await import('/resources/chromium/webxr-test.js');
+  await loadScript('/resources/monyhar/webxr-test-math-helper.js');
+  await import('/resources/monyhar/webxr-test.js');
   await loadScript('/resources/testdriver.js');
   await loadScript('/resources/testdriver-vendor.js');
 

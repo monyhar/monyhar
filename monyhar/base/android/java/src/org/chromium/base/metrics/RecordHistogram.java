@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.metrics;
+package org.monyhar.base.metrics;
 
 import android.text.format.DateUtils;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.MainDex;
-import org.chromium.base.annotations.NativeMethods;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.MainDex;
+import org.monyhar.base.annotations.NativeMethods;
 
 /**
  * Java API for recording UMA histograms. Note that when updating this file, please also update

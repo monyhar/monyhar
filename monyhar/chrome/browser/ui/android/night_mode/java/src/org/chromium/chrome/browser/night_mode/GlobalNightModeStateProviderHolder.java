@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.night_mode;
+package org.monyhar.chrome.browser.night_mode;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.app.AppCompatDelegate;
 
-import org.chromium.base.CommandLine;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.base.CommandLine;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
 
 /**
  * Holds an instance of {@link NightModeStateProvider} that provides night mode state for the entire

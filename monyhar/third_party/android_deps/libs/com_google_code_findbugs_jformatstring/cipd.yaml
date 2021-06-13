@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@3.0.0.cr0
-package: chromium/third_party/android_deps/libs/com_google_code_findbugs_jformatstring
+package: monyhar/third_party/android_deps/libs/com_google_code_findbugs_jformatstring
 description: "FindBugs-jFormatString"
 data:
 - file: jFormatString-3.0.0.jar

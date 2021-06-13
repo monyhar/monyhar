@@ -2,8 +2,8 @@
 ;; Use of this source code is governed by a BSD-style license that can be
 ;; found in the LICENSE file.
 
-;; Set up flymake for use with chromium code.  Uses ninja (since none of the
-;; other chromium build systems have latency that allows interactive use).
+;; Set up flymake for use with monyhar code.  Uses ninja (since none of the
+;; other monyhar build systems have latency that allows interactive use).
 ;;
 ;; Requires a modern emacs (GNU Emacs >= 23) and that gyp has already generated
 ;; the build.ninja file(s).  See defcustoms below for settable knobs.
@@ -12,7 +12,7 @@
 (require 'flymake)
 
 (defcustom cr-flymake-ninja-build-file "out/Debug/build.ninja"
-  "Relative path from chromium's src/ directory to the
+  "Relative path from monyhar's src/ directory to the
   build.ninja file to use.")
 
 (defcustom cr-flymake-ninja-executable "ninja"
@@ -24,8 +24,8 @@
   (when buffer-file-truename
       (expand-file-name buffer-file-truename)))
 
-(defun cr-flymake-chromium-src ()
-  "Return chromium's src/ directory, or nil on failure."
+(defun cr-flymake-monyhar-src ()
+  "Return monyhar's src/ directory, or nil on failure."
   (let ((srcdir (locate-dominating-file
                  (cr-flymake-absbufferpath) cr-flymake-ninja-build-file)))
     (when srcdir (expand-file-name srcdir))))
@@ -36,13 +36,13 @@
   (string= prefix (substring str 0 (length prefix))))
 
 (defun cr-flymake-current-file-name ()
-  "Return the relative path from chromium's src/ directory to the
+  "Return the relative path from monyhar's src/ directory to the
   file backing the current buffer or nil if it doesn't look like
-  we're under chromium/src/."
-  (when (and (cr-flymake-chromium-src)
+  we're under monyhar/src/."
+  (when (and (cr-flymake-monyhar-src)
              (cr-flymake-string-prefix-p
-              (cr-flymake-chromium-src) (cr-flymake-absbufferpath)))
-    (substring (cr-flymake-absbufferpath) (length (cr-flymake-chromium-src)))))
+              (cr-flymake-monyhar-src) (cr-flymake-absbufferpath)))
+    (substring (cr-flymake-absbufferpath) (length (cr-flymake-monyhar-src)))))
 
 (defun cr-flymake-from-build-to-src-root ()
   "Return a path fragment for getting from the build.ninja file to src/."
@@ -53,9 +53,9 @@
      (file-truename (or (and (cr-flymake-string-prefix-p
                               "/" cr-flymake-ninja-build-file)
                              cr-flymake-ninja-build-file)
-                        (concat (cr-flymake-chromium-src)
+                        (concat (cr-flymake-monyhar-src)
                                 cr-flymake-ninja-build-file))))
-    (length (cr-flymake-chromium-src)))))
+    (length (cr-flymake-monyhar-src)))))
 
 (defun cr-flymake-getfname (file-name-from-error-message)
   "Strip cruft from the passed-in filename to help flymake find the real file."
@@ -67,7 +67,7 @@
   (unless (buffer-modified-p)
     (list cr-flymake-ninja-executable
           (list "-C"
-                (concat (cr-flymake-chromium-src)
+                (concat (cr-flymake-monyhar-src)
                         (file-name-directory cr-flymake-ninja-build-file))
                 (concat (cr-flymake-from-build-to-src-root)
                         (cr-flymake-current-file-name) "^")))))
@@ -100,7 +100,7 @@
              (not buffer-read-only)
              (cr-flymake-current-file-name))
     ;; Since flymake-allowed-file-name-masks requires static regexps to match
-    ;; against, can't use cr-flymake-chromium-src here.  Instead we add a
+    ;; against, can't use cr-flymake-monyhar-src here.  Instead we add a
     ;; generic regexp, but only to a buffer-local version of the variable.
     (set (make-local-variable 'flymake-allowed-file-name-masks)
          (list (list "\\.c\\(\\|c\\|pp\\)"
@@ -116,7 +116,7 @@
   "Run the interactive compile command with the working directory
   set to src/."
   (interactive)
-  (let ((default-directory (cr-flymake-chromium-src)))
+  (let ((default-directory (cr-flymake-monyhar-src)))
     (call-interactively 'compile)))
 
 (add-hook 'find-file-hook 'cr-flymake-find-file 'append)
@@ -126,4 +126,4 @@
 ;; DEBUG-level output from flymake.el.
 (setq flymake-log-level 0)
 
-(provide 'flymake-chromium)
+(provide 'flymake-monyhar)

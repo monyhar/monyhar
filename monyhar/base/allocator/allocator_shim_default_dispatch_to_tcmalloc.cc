@@ -5,8 +5,8 @@
 #include "base/allocator/allocator_shim.h"
 #include "base/allocator/allocator_shim_internals.h"
 
-#include "third_party/tcmalloc/chromium/src/config.h"
-#include "third_party/tcmalloc/chromium/src/gperftools/tcmalloc.h"
+#include "third_party/tcmalloc/monyhar/src/config.h"
+#include "third_party/tcmalloc/monyhar/src/gperftools/tcmalloc.h"
 
 namespace {
 

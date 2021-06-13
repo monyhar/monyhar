@@ -20,10 +20,10 @@
 #endif
 
 namespace {
-const char kURL0[] = "https://chromium.org/0";
-const char kURL1[] = "https://chromium.org/1";
-const char kURL2[] = "https://chromium.org/2";
-const char kURL3[] = "https://chromium.org/3";
+const char kURL0[] = "https://monyhar.org/0";
+const char kURL1[] = "https://monyhar.org/1";
+const char kURL2[] = "https://monyhar.org/2";
+const char kURL3[] = "https://monyhar.org/3";
 
 // WebStateList observer that records which events have been called by the
 // WebStateList.

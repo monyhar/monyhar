@@ -16,7 +16,7 @@ namespace webapps {
 struct AddToHomescreenParams;
 class AppBannerManager;
 
-// AddToHomescreenCoordinator is the C++ counterpart of org.chromium.chrome.
+// AddToHomescreenCoordinator is the C++ counterpart of org.monyhar.chrome.
 // browser.webapps.addtohomescreen.AddToHomescreenCoordinator in Java.
 class AddToHomescreenCoordinator {
  public:

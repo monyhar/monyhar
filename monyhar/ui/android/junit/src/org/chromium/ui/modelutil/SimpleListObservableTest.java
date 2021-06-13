@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.modelutil;
+package org.monyhar.ui.modelutil;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
@@ -17,8 +17,8 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.ui.modelutil.ListObservable.ListObserver;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.ui.modelutil.ListObservable.ListObserver;
 
 /**
  * Basic test ensuring the {@link ListModel} notifies listeners properly.

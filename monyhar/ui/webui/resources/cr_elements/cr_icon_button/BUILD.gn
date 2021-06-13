@@ -11,7 +11,7 @@ js_type_check("closure_compile") {
 }
 
 js_library("cr_icon_button") {
-  deps = [ "//third_party/polymer/v1_0/components-chromium/paper-behaviors:paper-ripple-behavior-extracted" ]
+  deps = [ "//third_party/polymer/v1_0/components-monyhar/paper-behaviors:paper-ripple-behavior-extracted" ]
 }
 
 polymer_modulizer("cr_icon_button") {
@@ -28,8 +28,8 @@ js_type_check("closure_compile_module") {
 js_library("cr_icon_button.m") {
   sources = [ "$root_gen_dir/ui/webui/resources/cr_elements/cr_icon_button/cr_icon_button.m.js" ]
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/paper-behaviors:paper-ripple-behavior",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/paper-behaviors:paper-ripple-behavior",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   extra_deps = [ ":cr_icon_button_module" ]
 }

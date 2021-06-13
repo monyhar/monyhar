@@ -46,7 +46,7 @@ For questions and general discussions, please join [code-coverage group].
 
 There are several possible reasons:
 * A particular source file/test may not be available on a particular project or
-platform. As of now, only `chromium/src` project and `Linux` platform is
+platform. As of now, only `monyhar/src` project and `Linux` platform is
 supported.
 * There is a bug in the pipeline. Please [file a bug] to report the breakage.
 
@@ -56,7 +56,7 @@ Please refer to [code_coverage.md] for how code coverage works in Chromium in
 general, and specifically, for per-CL coverage in Gerrit, the
 [clang_code_coverage_wrapper] is used to compile and instrument ONLY the source
 files that are affected by the CL for the sake of performance and a
-[chromium-coverage Gerrit plugin] is used to display code coverage information
+[monyhar-coverage Gerrit plugin] is used to display code coverage information
 in Gerrit.
 
 
@@ -64,10 +64,10 @@ in Gerrit.
 [linux_coverage_rel]: images/code_coverage_linux_coverage_rel.png
 [code_coverage_annotations]: images/code_coverage_annotations.png
 [code_coverage_percentages]: images/code_coverage_percentages.png
-[file a bug]: https://bugs.chromium.org/p/chromium/issues/entry?components=Infra%3ETest%3ECodeCoverage
-[code-coverage group]: https://groups.google.com/a/chromium.org/forum/#!forum/code-coverage
+[file a bug]: https://bugs.monyhar.org/p/monyhar/issues/entry?components=Infra%3ETest%3ECodeCoverage
+[code-coverage group]: https://groups.google.com/a/monyhar.org/forum/#!forum/code-coverage
 [code_coverage.md]: code_coverage.md
-[clang_code_coverage_wrapper]: https://chromium.googlesource.com/chromium/src/+/main/docs/clang_code_coverage_wrapper.md
-[chromium-coverage Gerrit plugin]: https://chromium.googlesource.com/infra/gerrit-plugins/code-coverage/
-[Chromium on Chromium OS]: https://chromium.googlesource.com/chromium/src/+/main/docs/chromeos_build_instructions.md
-[Chromium on Linux]: https://chromium.googlesource.com/chromium/src/+/main/docs/linux/build_instructions.md
+[clang_code_coverage_wrapper]: https://monyhar.googlesource.com/monyhar/src/+/main/docs/clang_code_coverage_wrapper.md
+[monyhar-coverage Gerrit plugin]: https://monyhar.googlesource.com/infra/gerrit-plugins/code-coverage/
+[Chromium on Chromium OS]: https://monyhar.googlesource.com/monyhar/src/+/main/docs/chromeos_build_instructions.md
+[Chromium on Linux]: https://monyhar.googlesource.com/monyhar/src/+/main/docs/linux/build_instructions.md

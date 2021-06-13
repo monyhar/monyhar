@@ -29,7 +29,7 @@ def main():
 
   cmd = [
       java_path, '-classpath', ':'.join(classpath),
-      'org.chromium.build.FlushingReTrace'
+      'org.monyhar.build.FlushingReTrace'
   ]
   cmd.extend(sys.argv[1:])
   os.execvp(cmd[0], cmd)

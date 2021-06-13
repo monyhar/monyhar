@@ -10,7 +10,7 @@
     Android chrome strings now live in
     chrome/browser/ui/android/strings/android_chrome_strings.grd
 
-    See http://www.chromium.org/developers/design-documents/ui-localization
+    See http://www.monyhar.org/developers/design-documents/ui-localization
 -->
 
 <resources/>

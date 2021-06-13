@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@2.5.5.cr0
-package: chromium/third_party/android_deps/libs/org_checkerframework_checker_compat_qual
+package: monyhar/third_party/android_deps/libs/org_checkerframework_checker_compat_qual
 description: "Checker Qual"
 data:
 - file: checker-compat-qual-2.5.5.jar

@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private.media;
+package org.monyhar.weblayer_private.media;
 
 import android.content.Context;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
-import org.chromium.components.embedder_support.application.ClassLoaderContextWrapperFactory;
-import org.chromium.weblayer_private.FragmentHostingRemoteFragmentImpl;
-import org.chromium.weblayer_private.R;
-import org.chromium.weblayer_private.interfaces.IMediaRouteDialogFragment;
-import org.chromium.weblayer_private.interfaces.IRemoteFragment;
-import org.chromium.weblayer_private.interfaces.IRemoteFragmentClient;
-import org.chromium.weblayer_private.interfaces.StrictModeWorkaround;
+import org.monyhar.components.embedder_support.application.ClassLoaderContextWrapperFactory;
+import org.monyhar.weblayer_private.FragmentHostingRemoteFragmentImpl;
+import org.monyhar.weblayer_private.R;
+import org.monyhar.weblayer_private.interfaces.IMediaRouteDialogFragment;
+import org.monyhar.weblayer_private.interfaces.IRemoteFragment;
+import org.monyhar.weblayer_private.interfaces.IRemoteFragmentClient;
+import org.monyhar.weblayer_private.interfaces.StrictModeWorkaround;
 
 import java.lang.ref.WeakReference;
 

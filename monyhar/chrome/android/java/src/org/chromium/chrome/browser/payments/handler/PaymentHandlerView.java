@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments.handler;
+package org.monyhar.chrome.browser.payments.handler;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,10 +12,10 @@ import android.widget.FrameLayout;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.R;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetContent;
-import org.chromium.content_public.browser.RenderCoordinates;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.chrome.R;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetContent;
+import org.monyhar.content_public.browser.RenderCoordinates;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * The view of the PaymentHandler UI. This view can be divided into the toolbar area and the

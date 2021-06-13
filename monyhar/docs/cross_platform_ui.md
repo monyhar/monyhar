@@ -41,12 +41,12 @@ object "own" a garbage-collected Java object or vice versa can also be tricky.
 
     You can usually use pure static functions for simpler cases that don't
     involve state. These are easy to bridge to Java. See
-    [`UrlFormatter`](https://cs.chromium.org/chromium/src/components/url_formatter/android/java/src/org/chromium/components/url_formatter/UrlFormatter.java)
+    [`UrlFormatter`](https://cs.monyhar.org/monyhar/src/components/url_formatter/android/java/src/org/monyhar/components/url_formatter/UrlFormatter.java)
     for an example of this.
 
  2. For objects that are associated with a specific `Profile`, use a
     `KeyedService` instance with
-    [`BrowserContextKeyedServiceFactory`](https://cs.chromium.org/chromium/src/components/keyed_service/content/browser_context_keyed_service_factory.h).
+    [`BrowserContextKeyedServiceFactory`](https://cs.monyhar.org/monyhar/src/components/keyed_service/content/browser_context_keyed_service_factory.h).
     If your object depends on other `KeyedService` instances, there's a strong
     chance your object should also be a `KeyedService`. 
 
@@ -74,7 +74,7 @@ Bridging a code module to Java will have three parts:
  2. chrome/browser/android/omnibox/foo_feature_android.h/cc - C++ side of the
     bridge. You might only need the cc file.
 
- 3. chrome/android/java/src/org/chromium/chrome/browser/omnibox/FooFeature.java
+ 3. chrome/android/java/src/org/monyhar/chrome/browser/omnibox/FooFeature.java
     - Java side of the bridge.
 
 See the [JNI README](../base/android/jni_generator/README.md) for more details.

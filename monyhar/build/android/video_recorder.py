@@ -5,9 +5,9 @@
 
 import sys
 
-import devil_chromium
+import devil_monyhar
 from devil.android.tools import video_recorder
 
 if __name__ == '__main__':
-  devil_chromium.Initialize()
+  devil_monyhar.Initialize()
   sys.exit(video_recorder.main())

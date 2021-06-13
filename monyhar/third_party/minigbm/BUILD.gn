@@ -78,8 +78,8 @@ if (!use_system_minigbm) {
       "src/virtio_gpu.c",
     ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
 
     deps = [ "//build/config/linux/libdrm" ]
     public_configs = [ ":minigbm_config" ]

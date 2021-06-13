@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.text;
+package org.monyhar.ui.text;
 
 import android.content.res.Resources;
 import android.text.TextPaint;
@@ -11,9 +11,9 @@ import android.view.View;
 
 import androidx.annotation.ColorRes;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.Callback;
-import org.chromium.ui.R;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.ui.R;
 
 /**
  * Shows a blue clickable link with underlines turned off.

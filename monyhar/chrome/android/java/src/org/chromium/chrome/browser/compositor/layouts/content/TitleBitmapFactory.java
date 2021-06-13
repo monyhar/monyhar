@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.layouts.content;
+package org.monyhar.chrome.browser.compositor.layouts.content;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -16,8 +16,8 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.InflateException;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.R;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.R;
 
 /**
  * A factory that creates text and favicon bitmaps.

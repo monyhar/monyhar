@@ -24,7 +24,7 @@
       android:textAppearance="@style/TextAppearance.TextLarge.Primary"
       android:text="@string/signin_account_picker_dialog_title" />
 
-  <org.chromium.ui.widget.TextViewWithLeading
+  <org.monyhar.ui.widget.TextViewWithLeading
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_marginStart="24dp"

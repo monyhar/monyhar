@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -25,20 +25,20 @@ import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 import androidx.core.widget.ImageViewCompat;
 
-import org.chromium.base.LifetimeAssert;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.components.omnibox.SecurityButtonAnimationDelegate;
-import org.chromium.components.omnibox.SecurityStatusIcon;
-import org.chromium.components.page_info.PageInfoController;
-import org.chromium.components.security_state.ConnectionSecurityLevel;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.weblayer_private.interfaces.IObjectWrapper;
-import org.chromium.weblayer_private.interfaces.IUrlBarController;
-import org.chromium.weblayer_private.interfaces.ObjectWrapper;
-import org.chromium.weblayer_private.interfaces.StrictModeWorkaround;
-import org.chromium.weblayer_private.interfaces.UrlBarOptionsKeys;
+import org.monyhar.base.LifetimeAssert;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.components.omnibox.SecurityButtonAnimationDelegate;
+import org.monyhar.components.omnibox.SecurityStatusIcon;
+import org.monyhar.components.page_info.PageInfoController;
+import org.monyhar.components.security_state.ConnectionSecurityLevel;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.weblayer_private.interfaces.IObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.IUrlBarController;
+import org.monyhar.weblayer_private.interfaces.ObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.StrictModeWorkaround;
+import org.monyhar.weblayer_private.interfaces.UrlBarOptionsKeys;
 
 /**
  *  Implementation of {@link IUrlBarController}.

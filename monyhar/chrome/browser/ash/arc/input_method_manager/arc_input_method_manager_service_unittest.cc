@@ -406,7 +406,7 @@ TEST_F(ArcInputMethodManagerServiceTest, SwitchImeTo) {
   using crx_file::id_util::GenerateId;
 
   const std::string arc_ime_service_id =
-      "org.chromium.arc.ime/.ArcInputMethodService";
+      "org.monyhar.arc.ime/.ArcInputMethodService";
 
   ToggleTabletMode(true);
 
@@ -448,7 +448,7 @@ TEST_F(ArcInputMethodManagerServiceTest, OnImeDisabled) {
   constexpr char kArcImeX[] = "arc_ime_x";
   constexpr char kArcImeY[] = "arc_ime_y";
   constexpr char kArcIMEProxyExtensionName[] =
-      "org.chromium.arc.inputmethod.proxy";
+      "org.monyhar.arc.inputmethod.proxy";
 
   const std::string proxy_ime_extension_id =
       crx_file::id_util::GenerateId(kArcIMEProxyExtensionName);
@@ -604,7 +604,7 @@ TEST_F(ArcInputMethodManagerServiceTest, EnableArcIMEsOnlyInTabletMode) {
   using crx_file::id_util::GenerateId;
 
   constexpr char kArcIMEProxyExtensionName[] =
-      "org.chromium.arc.inputmethod.proxy";
+      "org.monyhar.arc.inputmethod.proxy";
 
   const std::string extension_ime_id =
       ceiu::GetInputMethodID(GenerateId("test.extension.ime"), "us");
@@ -713,7 +713,7 @@ TEST_F(ArcInputMethodManagerServiceTest,
   using crx_file::id_util::GenerateId;
 
   constexpr char kArcIMEProxyExtensionName[] =
-      "org.chromium.arc.inputmethod.proxy";
+      "org.monyhar.arc.inputmethod.proxy";
 
   const std::string extension_ime_id =
       ceiu::GetInputMethodID(GenerateId("test.extension.ime"), "us");
@@ -809,7 +809,7 @@ TEST_F(ArcInputMethodManagerServiceTest,
   using crx_file::id_util::GenerateId;
 
   constexpr char kArcIMEProxyExtensionName[] =
-      "org.chromium.arc.inputmethod.proxy";
+      "org.monyhar.arc.inputmethod.proxy";
 
   const std::string extension_ime_id =
       ceiu::GetInputMethodID(GenerateId("test.extension.ime"), "us");

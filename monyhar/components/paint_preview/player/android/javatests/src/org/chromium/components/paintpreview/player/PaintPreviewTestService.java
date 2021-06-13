@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.paintpreview.player;
+package org.monyhar.components.paintpreview.player;
 
-import org.chromium.base.Log;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.paintpreview.browser.NativePaintPreviewServiceProvider;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.paintpreview.browser.NativePaintPreviewServiceProvider;
 
 /**
  * A simple implementation of {@link NativePaintPreviewServiceProvider} used in tests.

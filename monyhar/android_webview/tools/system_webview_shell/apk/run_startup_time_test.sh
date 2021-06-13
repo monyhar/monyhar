@@ -26,9 +26,9 @@ for i in $(seq 1 100); do
   if [[ $(($i % 10)) -eq 0 ]]; then
     echo -n "..$i.."
   fi
-  adb shell kill -9 `adb shell ps | grep org.chromium.webview_shell \
+  adb shell kill -9 `adb shell ps | grep org.monyhar.webview_shell \
       | tr -s " " " " | cut -d" " -f2`
-  adb shell am start -n org.chromium.webview_shell/.StartupTimeActivity \
+  adb shell am start -n org.monyhar.webview_shell/.StartupTimeActivity \
       -a VIEW > /dev/null
   sleep 0.5
 done

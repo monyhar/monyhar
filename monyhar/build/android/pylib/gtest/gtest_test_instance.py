@@ -73,15 +73,15 @@ _DEPS_EXCLUSION_LIST = [
 
 
 _EXTRA_NATIVE_TEST_ACTIVITY = (
-    'org.chromium.native_test.NativeTestInstrumentationTestRunner.'
+    'org.monyhar.native_test.NativeTestInstrumentationTestRunner.'
         'NativeTestActivity')
 _EXTRA_RUN_IN_SUB_THREAD = (
-    'org.chromium.native_test.NativeTest.RunInSubThread')
+    'org.monyhar.native_test.NativeTest.RunInSubThread')
 EXTRA_SHARD_NANO_TIMEOUT = (
-    'org.chromium.native_test.NativeTestInstrumentationTestRunner.'
+    'org.monyhar.native_test.NativeTestInstrumentationTestRunner.'
         'ShardNanoTimeout')
 _EXTRA_SHARD_SIZE_LIMIT = (
-    'org.chromium.native_test.NativeTestInstrumentationTestRunner.'
+    'org.monyhar.native_test.NativeTestInstrumentationTestRunner.'
         'ShardSizeLimit')
 
 # TODO(jbudorick): Remove these once we're no longer parsing stdout to generate

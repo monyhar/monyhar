@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.verification;
+package org.monyhar.chrome.browser.browserservices.verification;
 
-import static org.chromium.chrome.browser.browserservices.verification.PackageFingerprintCalculator.byteArrayToHexString;
-import static org.chromium.chrome.browser.browserservices.verification.PackageFingerprintCalculator.getCertificateSHA256FingerprintForPackage;
+import static org.monyhar.chrome.browser.browserservices.verification.PackageFingerprintCalculator.byteArrayToHexString;
+import static org.monyhar.chrome.browser.browserservices.verification.PackageFingerprintCalculator.getCertificateSHA256FingerprintForPackage;
 
 import android.content.pm.PackageManager;
 
@@ -15,9 +15,9 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.test.util.Batch;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
 
 /**
  * Tests for {@link PackageFingerprintCalculator}.

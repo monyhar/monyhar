@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.embedder_support.delegate;
+package org.monyhar.components.embedder_support.delegate;
 
 import android.view.KeyEvent;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.blink.mojom.DisplayMode;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.common.ResourceRequestBody;
-import org.chromium.url.GURL;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.blink.mojom.DisplayMode;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.common.ResourceRequestBody;
+import org.monyhar.url.GURL;
 
 /**
  * Java peer of the native class of the same name.

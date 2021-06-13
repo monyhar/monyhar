@@ -60,13 +60,13 @@ class ShellApkVersion(unittest.TestCase):
 
    def testCheckWamMintTriggerRule(self):
      COMMON_SRC_FILE_PATH = (
-         'libs/common/src/org/chromium/webapk/lib/common/A.java')
+         'libs/common/src/org/monyhar/webapk/lib/common/A.java')
      COMMON_JUNIT_FILE_PATH = (
-         'libs/common/junit/src/org/chromium/webapk/lib/common/B.java')
+         'libs/common/junit/src/org/monyhar/webapk/lib/common/B.java')
      SHELL_APK_SRC_FILE_PATH = (
-         'shell_apk/src/org/chromium/webapk/shell_apk/C.java')
+         'shell_apk/src/org/monyhar/webapk/shell_apk/C.java')
      SHELL_APK_JUNIT_FILE_PATH = (
-         'shell_apk/junit/src/org/chromium/webapk/shell_apk/D.java')
+         'shell_apk/junit/src/org/monyhar/webapk/shell_apk/D.java')
      changed_java_file_paths = [
          COMMON_SRC_FILE_PATH, COMMON_JUNIT_FILE_PATH, SHELL_APK_SRC_FILE_PATH,
          SHELL_APK_JUNIT_FILE_PATH

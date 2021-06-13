@@ -15,7 +15,7 @@
     <!-- The top margin is supposed to be 16d, but the promo background already sets a
          insetTop of 9dp (see contextual_search_promo_background.xml). For this reason,
          we only should set the remaining margin top, which is 7dp -->
-    <org.chromium.ui.widget.TextViewWithClickableSpans
+    <org.monyhar.ui.widget.TextViewWithClickableSpans
         android:id="@+id/contextual_search_promo_text"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
@@ -28,7 +28,7 @@
         android:bufferType="spannable"
         android:textAppearance="@style/TextAppearance.TextLarge.Primary" />
 
-    <org.chromium.ui.widget.ButtonCompat
+    <org.monyhar.ui.widget.ButtonCompat
         android:id="@+id/contextual_search_allow_button"
         android:layout_below="@id/contextual_search_promo_text"
         android:layout_alignParentEnd="true"
@@ -42,7 +42,7 @@
         android:text="@string/contextual_search_allow_button"
         style="@style/FilledButton" />
 
-    <org.chromium.ui.widget.ButtonCompat
+    <org.monyhar.ui.widget.ButtonCompat
         android:id="@+id/contextual_search_no_thanks_button"
         android:layout_below="@id/contextual_search_promo_text"
         android:layout_toStartOf="@id/contextual_search_allow_button"

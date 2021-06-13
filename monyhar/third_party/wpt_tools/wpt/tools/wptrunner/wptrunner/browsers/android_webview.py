@@ -50,11 +50,11 @@ def executor_kwargs(logger, test_type, test_environment, run_info_data,
     del executor_kwargs["capabilities"]["goog:chromeOptions"]["prefs"]
     capabilities = executor_kwargs["capabilities"]
     # Note that for WebView, we launch a test shell and have the test shell use WebView.
-    # https://chromium.googlesource.com/chromium/src/+/HEAD/android_webview/docs/webview-shell.md
+    # https://monyhar.googlesource.com/monyhar/src/+/HEAD/android_webview/docs/webview-shell.md
     capabilities["goog:chromeOptions"]["androidPackage"] = \
-        kwargs.get("package_name", "org.chromium.webview_shell")
+        kwargs.get("package_name", "org.monyhar.webview_shell")
     capabilities["goog:chromeOptions"]["androidActivity"] = \
-        "org.chromium.webview_shell.WebPlatformTestsActivity"
+        "org.monyhar.webview_shell.WebPlatformTestsActivity"
     if kwargs.get("device_serial"):
         capabilities["goog:chromeOptions"]["androidDeviceSerial"] = kwargs["device_serial"]
 

@@ -117,7 +117,7 @@ class WebTestResultsTest(unittest.TestCase):
     "version": 3,
     "num_passes": 1,
     "num_flaky": 1,
-    "chromium_revision": "1234",
+    "monyhar_revision": "1234",
     "builder_name": "mock_builder_name"
 });"""
 
@@ -135,10 +135,10 @@ class WebTestResultsTest(unittest.TestCase):
                 'ADD_RESULTS({"tests":{},"interrupted":false});').
             run_was_interrupted())
 
-    def test_chromium_revision(self):
+    def test_monyhar_revision(self):
         self.assertEqual(
             WebTestResults.results_from_string(
-                self.example_full_results_json).chromium_revision(), 1234)
+                self.example_full_results_json).monyhar_revision(), 1234)
 
     def test_didnt_run_as_expected_results(self):
         results = WebTestResults.results_from_string(

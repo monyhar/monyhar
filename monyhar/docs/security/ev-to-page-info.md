@@ -1,7 +1,7 @@
 # EV UI Moving to Page Info
 
 As part of a series of data-driven
-[changes](https://blog.chromium.org/2018/05/evolving-chromes-security-indicators.html)
+[changes](https://blog.monyhar.org/2018/05/evolving-chromes-security-indicators.html)
 to Chrome’s security indicators, the Chrome Security UX team is announcing a
 change to the
 [Extended Validation](https://en.wikipedia.org/wiki/Extended_Validation_Certificate)
@@ -32,7 +32,7 @@ screen real estate, can present
 [actively confusing company names](https://www.typewritten.net/writer/ev-phishing/)
 in prominent UI, and interferes with Chrome's product direction towards
 neutral, rather than positive,
-[display for secure connections](https://blog.chromium.org/2018/05/evolving-chromes-security-indicators.html).
+[display for secure connections](https://blog.monyhar.org/2018/05/evolving-chromes-security-indicators.html).
 Because of these problems and its limited utility, we believe it belongs better
 in Page Info.
 

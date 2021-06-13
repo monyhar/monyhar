@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package com.android.webview.chromium;
+package com.android.webview.monyhar;
 
 import android.webkit.GeolocationPermissions;
 import android.webkit.ValueCallback;
 
-import org.chromium.android_webview.AwGeolocationPermissions;
-import org.chromium.base.ThreadUtils;
+import org.monyhar.android_webview.AwGeolocationPermissions;
+import org.monyhar.base.ThreadUtils;
 
 import java.util.Set;
 
 /**
  * Chromium implementation of GeolocationPermissions -- forwards calls to the
- * chromium internal implementation.
+ * monyhar internal implementation.
  */
 final class GeolocationPermissionsAdapter extends GeolocationPermissions {
     private final WebViewChromiumFactoryProvider mFactory;

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -32,15 +32,15 @@ import androidx.core.content.ContextCompat;
 import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.core.widget.ImageViewCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.Callback;
-import org.chromium.chrome.tab_ui.R;
-import org.chromium.components.browser_ui.widget.animation.Interpolators;
-import org.chromium.components.browser_ui.widget.scrim.ScrimCoordinator;
-import org.chromium.components.browser_ui.widget.scrim.ScrimProperties;
-import org.chromium.ui.KeyboardVisibilityDelegate;
-import org.chromium.ui.interpolators.BakedBezierInterpolator;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.tab_ui.R;
+import org.monyhar.components.browser_ui.widget.animation.Interpolators;
+import org.monyhar.components.browser_ui.widget.scrim.ScrimCoordinator;
+import org.monyhar.components.browser_ui.widget.scrim.ScrimProperties;
+import org.monyhar.ui.KeyboardVisibilityDelegate;
+import org.monyhar.ui.interpolators.BakedBezierInterpolator;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

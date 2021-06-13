@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webview_shell;
+package org.monyhar.webview_shell;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -15,7 +15,7 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewDatabase;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;

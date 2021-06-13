@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.spy;
@@ -24,11 +24,11 @@ import org.mockito.MockitoAnnotations;
 import org.robolectric.Robolectric;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.browserservices.intents.ColorProvider;
-import org.chromium.chrome.browser.customtabs.features.CustomTabNavigationBarController;
-import org.chromium.ui.util.ColorUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.browserservices.intents.ColorProvider;
+import org.monyhar.chrome.browser.customtabs.features.CustomTabNavigationBarController;
+import org.monyhar.ui.util.ColorUtils;
 
 /** Tests for {@link CustomTabNavigationBarController}. */
 @RunWith(BaseRobolectricTestRunner.class)
@@ -125,6 +125,6 @@ public class CustomTabNavigationBarControllerTest {
         when(mColorProvider.getNavigationBarColor()).thenReturn(Color.WHITE);
         CustomTabNavigationBarController.update(mWindow, mCustomTabIntentDataProvider, mResources);
         verify(mWindow).setNavigationBarDividerColor(ApiCompatibilityUtils.getColor(
-                mResources, org.chromium.chrome.R.color.black_alpha_12));
+                mResources, org.monyhar.chrome.R.color.black_alpha_12));
     }
 }

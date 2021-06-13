@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments;
+package org.monyhar.chrome.browser.payments;
 
 import android.app.ProgressDialog;
 import android.os.Handler;
@@ -12,21 +12,21 @@ import android.util.Pair;
 import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.autofill.PersonalDataManager;
-import org.chromium.chrome.browser.autofill.PersonalDataManager.AutofillProfile;
-import org.chromium.chrome.browser.autofill.PersonalDataManager.GetSubKeysRequestDelegate;
-import org.chromium.chrome.browser.autofill.PhoneNumberUtil;
-import org.chromium.chrome.browser.autofill.prefeditor.EditorBase;
-import org.chromium.chrome.browser.autofill.prefeditor.EditorFieldModel;
-import org.chromium.chrome.browser.autofill.prefeditor.EditorFieldModel.EditorFieldValidator;
-import org.chromium.chrome.browser.autofill.prefeditor.EditorModel;
-import org.chromium.chrome.browser.autofill.settings.AutofillProfileBridge;
-import org.chromium.chrome.browser.autofill.settings.AutofillProfileBridge.AddressField;
-import org.chromium.chrome.browser.autofill.settings.AutofillProfileBridge.AddressUiComponent;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.payments.mojom.AddressErrors;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager.AutofillProfile;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager.GetSubKeysRequestDelegate;
+import org.monyhar.chrome.browser.autofill.PhoneNumberUtil;
+import org.monyhar.chrome.browser.autofill.prefeditor.EditorBase;
+import org.monyhar.chrome.browser.autofill.prefeditor.EditorFieldModel;
+import org.monyhar.chrome.browser.autofill.prefeditor.EditorFieldModel.EditorFieldValidator;
+import org.monyhar.chrome.browser.autofill.prefeditor.EditorModel;
+import org.monyhar.chrome.browser.autofill.settings.AutofillProfileBridge;
+import org.monyhar.chrome.browser.autofill.settings.AutofillProfileBridge.AddressField;
+import org.monyhar.chrome.browser.autofill.settings.AutofillProfileBridge.AddressUiComponent;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.payments.mojom.AddressErrors;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -42,7 +42,7 @@ import java.util.UUID;
  * An address editor. Can be used for either shipping or billing address editing.
  *
  * Note that this class is used by PaymentRequest only and will be removed when not needed any more.
- * Please use {@link org.chromium.chrome.browser.autofill.settings.AddressEditor} instead.
+ * Please use {@link org.monyhar.chrome.browser.autofill.settings.AddressEditor} instead.
  */
 @Deprecated
 public class AddressEditor

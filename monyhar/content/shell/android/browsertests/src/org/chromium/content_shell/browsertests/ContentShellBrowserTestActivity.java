@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_shell.browsertests;
+package org.monyhar.content_shell.browsertests;
 
 import android.content.Context;
 import android.net.Uri;
@@ -11,18 +11,18 @@ import android.view.WindowManager;
 
 import androidx.core.content.FileProvider;
 
-import org.chromium.base.ContentUriUtils;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.library_loader.LibraryProcessType;
-import org.chromium.content_public.browser.BrowserStartupController;
-import org.chromium.content_public.browser.BrowserStartupController.StartupCallback;
-import org.chromium.content_shell.ShellManager;
-import org.chromium.native_test.NativeBrowserTest;
-import org.chromium.native_test.NativeBrowserTestActivity;
-import org.chromium.ui.base.ActivityWindowAndroid;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.ContentUriUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.library_loader.LibraryProcessType;
+import org.monyhar.content_public.browser.BrowserStartupController;
+import org.monyhar.content_public.browser.BrowserStartupController.StartupCallback;
+import org.monyhar.content_shell.ShellManager;
+import org.monyhar.native_test.NativeBrowserTest;
+import org.monyhar.native_test.NativeBrowserTestActivity;
+import org.monyhar.ui.base.ActivityWindowAndroid;
+import org.monyhar.ui.base.WindowAndroid;
 
 import java.io.File;
 

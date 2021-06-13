@@ -4,7 +4,7 @@
      found in the LICENSE file.
 -->
 
-<org.chromium.chrome.browser.download.home.list.view.AspectRatioFrameLayout
+<org.monyhar.chrome.browser.download.home.list.view.AspectRatioFrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -24,7 +24,7 @@
         android:adjustViewBounds="true"
         tools:ignore="ContentDescription" />
 
-    <org.chromium.ui.widget.ChromeImageButton
+    <org.monyhar.ui.widget.ChromeImageButton
         android:id="@+id/cancel_button"
         android:layout_width="36dp"
         android:layout_height="36dp"
@@ -48,9 +48,9 @@
             android:layout_weight="1"
             android:layout_gravity="center_vertical"
             android:paddingStart="4dp" />
-        <org.chromium.chrome.browser.download.home.list.view.CircularProgressView
+        <org.monyhar.chrome.browser.download.home.list.view.CircularProgressView
             android:id="@+id/action_button"
             android:layout_gravity="center_vertical"
             style="@style/TinyCircularProgress" />
     </LinearLayout>
-</org.chromium.chrome.browser.download.home.list.view.AspectRatioFrameLayout>
+</org.monyhar.chrome.browser.download.home.list.view.AspectRatioFrameLayout>

@@ -1,8 +1,8 @@
 # The Difference between Google Chrome and Chromium on Linux
 
 Chromium on Linux has two general flavors: You can either get
-[Google Chrome](http://www.google.com/chrome?platform=linux) or chromium-browser
-(see [Linux Chromium Packages](linux/chromium_packages.md)).
+[Google Chrome](http://www.google.com/chrome?platform=linux) or monyhar-browser
+(see [Linux Chromium Packages](linux/monyhar_packages.md)).
 This page tries to describe the differences between the two.
 
 In short, Google Chrome is the Chromium open source project built, packaged, and
@@ -42,11 +42,11 @@ builds **on Linux**.
 *   Code may be modified by distributions
 *   Sandbox depends on the distribution (navigate to about:sandbox to confirm)
 *   Packaging depends on the distribution
-*   Profile is kept in `~/.config/chromium`
-*   Cache is kept in `~/.cache/chromium`
+*   Profile is kept in `~/.config/monyhar`
+*   Cache is kept in `~/.cache/monyhar`
 *   New release testing depends on the distribution
     *   Distributions are encouraged to track stable channel releases: see
         http://googlechromereleases.blogspot.com/, http://omahaproxy.appspot.com/
-        and http://gsdview.appspot.com/chromium-browser-official/
+        and http://gsdview.appspot.com/monyhar-browser-official/
 *   Google API keys depend on the distribution
-    *   See https://www.chromium.org/developers/how-tos/api-keys
+    *   See https://www.monyhar.org/developers/how-tos/api-keys

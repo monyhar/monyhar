@@ -100,7 +100,7 @@ TEST_F(InstalledLoaderUnitTest,
   ScriptingPermissionsModifier modifier(profile(), extension);
   modifier.SetWithholdHostPermissions(true);
   modifier.GrantHostPermission(GURL("https://example.com/"));
-  modifier.GrantHostPermission(GURL("https://chromium.org/"));
+  modifier.GrantHostPermission(GURL("https://monyhar.org/"));
 
   base::HistogramTester histograms;
   InstalledLoader loader(service());

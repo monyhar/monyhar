@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview;
+package org.monyhar.android_webview;
 
 import android.content.res.Configuration;
 import android.graphics.Canvas;
@@ -17,7 +17,7 @@ import android.view.accessibility.AccessibilityNodeProvider;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 
-import org.chromium.android_webview.AwContents.InternalAccessDelegate;
+import org.monyhar.android_webview.AwContents.InternalAccessDelegate;
 
 /**
  * No-op implementation of {@link AwViewMethods} that follows the null object pattern.

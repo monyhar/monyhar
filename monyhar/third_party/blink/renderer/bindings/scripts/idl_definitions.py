@@ -57,7 +57,7 @@ TypedObject :: Object with one or more attributes that is a type.
 
 IdlArgument is 'picklable', as it is stored in interfaces_info.
 
-Design doc: http://www.chromium.org/developers/design-documents/idl-compiler
+Design doc: http://www.monyhar.org/developers/design-documents/idl-compiler
 """
 
 import abc

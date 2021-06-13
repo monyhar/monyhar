@@ -17,7 +17,7 @@ namespace certificate_transparency {
 
 // A CTPolicyEnforcer that enforces the "Certificate Transparency in Chrome"
 // policies detailed at
-// https://github.com/chromium/ct-policy/blob/master/ct_policy.md
+// https://github.com/monyhar/ct-policy/blob/master/ct_policy.md
 //
 // This should only be used when there is a reliable, rapid update mechanism
 // for the set of known, qualified logs - either through a reliable binary

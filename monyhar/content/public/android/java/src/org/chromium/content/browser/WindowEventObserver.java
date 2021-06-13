@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import android.content.res.Configuration;
 
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.display.DisplayAndroid.DisplayAndroidObserver;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.display.DisplayAndroid.DisplayAndroidObserver;
 
 /**
  * Interface to implement if Window-related events are needed.

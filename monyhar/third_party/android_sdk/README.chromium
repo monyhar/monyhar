@@ -17,7 +17,7 @@ build, test and debug for Android.
 
 Local Modifications:
 - public/
-  - Added extras/chromium/.
+  - Added extras/monyhar/.
 
 Update Instructions:
 * What to update:
@@ -26,14 +26,14 @@ Update Instructions:
 * How to update packages:
   * Find the latest build on the android-sdk-packager builder. Get the CIPD
     instance id from its logs and update //DEPS:
-    https://ci.chromium.org/p/chromium/builders/ci/android-sdk-packager
+    https://ci.monyhar.org/p/monyhar/builders/ci/android-sdk-packager
   * Use `public/cmdline-tools/latest/bin/sdkmanager platform-tools` to make
     sure that it is the latest version.
   * Update this file with the new version.
 * Adding new sdk packages:
   * Prepare the CIPD yaml files for packages in the cipd/ directory.
   * Add them to android-sdk-packager buildbucket configuation file:
-    infra/config/subprojects/chromium/master-only/ci.star
+    infra/config/subprojects/monyhar/master-only/ci.star
   * Submit the changes into gerrit (See crrev.com/c/2241994 as a reference)
   * Follow the update instructions to get a build from the CI builder.
 * Updating this file:

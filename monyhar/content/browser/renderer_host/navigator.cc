@@ -436,7 +436,7 @@ void Navigator::DidNavigate(
   // determine whether or not to enable the encoding menu.
   // It's updated only for the main frame. For a subframe,
   // RenderView::UpdateURL does not set params.contents_mime_type.
-  // (see http://code.google.com/p/chromium/issues/detail?id=2929 )
+  // (see http://code.google.com/p/monyhar/issues/detail?id=2929 )
   // TODO(jungshik): Add a test for the encoding menu to avoid
   // regressing it again.
   // TODO(nasko): Verify the correctness of the above comment, since some of the

@@ -362,7 +362,7 @@ group("gn_all") {
     deps += [
       "//base:base_junit_tests",
       "//base/android/jni_generator:jni_generator_tests",
-      "//base/android/linker:chromium_android_linker",
+      "//base/android/linker:monyhar_android_linker",
       "//build/android/gyp/test:hello_world",
       "//build/android/stacktrace:java_deobfuscate",
       "//build/android/test:android_lint_test",
@@ -565,7 +565,7 @@ group("gn_all") {
         "//net:tld_cleanup",
         "//ppapi:pepper_hash_for_uma",
         "//ppapi:ppapi_perftests",
-        "//third_party/leveldatabase:env_chromium_unittests",
+        "//third_party/leveldatabase:env_monyhar_unittests",
         "//third_party/libaddressinput:libaddressinput_unittests",
       ]
     }
@@ -967,7 +967,7 @@ if (is_win) {
 if (is_chromeos_ash) {
   # This group is used to collect all targets used when verifying a new version
   # of Chrome for Chrome OS.
-  group("chromiumos_preflight") {
+  group("monyharos_preflight") {
     testonly = true
     data_deps = [
       "//chrome",
@@ -1218,7 +1218,7 @@ if (!is_ios) {
     "100",
   ]
 
-  # https://chromium.googlesource.com/chromium/src/+/main/docs/testing/web_tests.md
+  # https://monyhar.googlesource.com/monyhar/src/+/main/docs/testing/web_tests.md
   script_test("blink_web_tests") {
     run_under_python2 = true
     script = _common_web_test_script
@@ -1319,7 +1319,7 @@ if (!is_ios) {
                          root_build_dir) + ")" ]
 
     data = [
-      # These tests use //build/android/devil_chromium.py even when !is_android,
+      # These tests use //build/android/devil_monyhar.py even when !is_android,
       # so cannot use the helpers in //build/android (they assert(is_android)).
       "//build/android/",
       "//build/gn_helpers.py",
@@ -1350,7 +1350,7 @@ if (!is_ios) {
   }
 }
 
-group("chromium_builder_perf") {
+group("monyhar_builder_perf") {
   testonly = true
 
   if (!is_ios && !is_android && !is_chromecast && !is_fuchsia) {
@@ -1399,7 +1399,7 @@ group("chromium_builder_perf") {
 }
 
 if (!is_ios && !is_android && !is_chromecast && !is_fuchsia) {
-  group("chromium_builder_asan") {
+  group("monyhar_builder_asan") {
     testonly = true
 
     deps = [
@@ -1421,7 +1421,7 @@ if (!is_ios && !is_android && !is_chromecast && !is_fuchsia) {
     }
 
     if (!is_component_build) {
-      # See https://bugs.chromium.org/p/chromium/issues/detail?id=942546#c11.
+      # See https://bugs.monyhar.org/p/monyhar/issues/detail?id=942546#c11.
       deps += [
         "//third_party/webrtc/rtc_tools:rtp_generator",
         "//third_party/webrtc/rtc_tools:video_replay",

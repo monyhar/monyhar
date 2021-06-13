@@ -30,13 +30,13 @@
 //              values throughout.
 //                --Benjamin Smedberg <benjamin@smedbergs.us>
 // 2015-08-03 - Change search() to template to allow PagedArray usage.
-//                --Samuel Huang <huangs@chromium.org>
+//                --Samuel Huang <huangs@monyhar.org>
 // 2015-08-19 - Optimized search() to be non-recursive.
-//                --Samuel Huang <huangs@chromium.org>
+//                --Samuel Huang <huangs@monyhar.org>
 // 2016-06-28 - Moved matchlen() and search() to a new file; format; changed
 //              search() use std::lexicographical_compare().
 // 2016-06-30 - Changed matchlen() input; changed search() to return struct.
-//                --Samuel Huang <huangs@chromium.org>
+//                --Samuel Huang <huangs@monyhar.org>
 
 // Copyright 2016 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be

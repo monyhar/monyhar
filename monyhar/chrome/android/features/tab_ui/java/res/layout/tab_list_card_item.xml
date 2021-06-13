@@ -3,7 +3,7 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
 <merge xmlns:android="http://schemas.android.com/apk/res/android">
-    <org.chromium.ui.widget.ChromeImageView
+    <org.monyhar.ui.widget.ChromeImageView
         android:id="@+id/selected_view_below_lollipop"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

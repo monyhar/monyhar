@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.pagecontroller.controllers.ntp;
+package org.monyhar.chrome.test.pagecontroller.controllers.ntp;
 
-import static org.chromium.chrome.test.pagecontroller.utils.Ui2Locators.withText;
+import static org.monyhar.chrome.test.pagecontroller.utils.Ui2Locators.withText;
 
 import android.support.test.uiautomator.UiObject2;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.test.pagecontroller.controllers.ElementController;
-import org.chromium.chrome.test.pagecontroller.utils.IUi2Locator;
-import org.chromium.chrome.test.pagecontroller.utils.Ui2Locators;
-import org.chromium.chrome.test.pagecontroller.utils.UiLocationException;
-import org.chromium.chrome.test.pagecontroller.utils.UiLocatorHelper;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.test.pagecontroller.controllers.ElementController;
+import org.monyhar.chrome.test.pagecontroller.utils.IUi2Locator;
+import org.monyhar.chrome.test.pagecontroller.utils.Ui2Locators;
+import org.monyhar.chrome.test.pagecontroller.utils.UiLocationException;
+import org.monyhar.chrome.test.pagecontroller.utils.UiLocatorHelper;
 
 import java.util.List;
 

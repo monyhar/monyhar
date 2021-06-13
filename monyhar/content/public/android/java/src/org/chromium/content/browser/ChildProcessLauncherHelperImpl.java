@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -13,36 +13,36 @@ import android.text.TextUtils;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApplicationState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.Callback;
-import org.chromium.base.ChildBindingState;
-import org.chromium.base.CollectionUtil;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.CpuFeatures;
-import org.chromium.base.EarlyTraceEvent;
-import org.chromium.base.JavaExceptionReporter;
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.TraceEvent;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.library_loader.LibraryLoader.MultiProcessMediator;
-import org.chromium.base.process_launcher.ChildConnectionAllocator;
-import org.chromium.base.process_launcher.ChildProcessConnection;
-import org.chromium.base.process_launcher.ChildProcessConstants;
-import org.chromium.base.process_launcher.ChildProcessLauncher;
-import org.chromium.base.process_launcher.FileDescriptorInfo;
-import org.chromium.base.task.PostTask;
-import org.chromium.build.BuildConfig;
-import org.chromium.content.app.SandboxedProcessService;
-import org.chromium.content.common.ContentSwitchUtils;
-import org.chromium.content_public.browser.ChildProcessImportance;
-import org.chromium.content_public.browser.ContentFeatureList;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.content_public.common.ContentSwitches;
+import org.monyhar.base.ApplicationState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ChildBindingState;
+import org.monyhar.base.CollectionUtil;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.CpuFeatures;
+import org.monyhar.base.EarlyTraceEvent;
+import org.monyhar.base.JavaExceptionReporter;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.library_loader.LibraryLoader.MultiProcessMediator;
+import org.monyhar.base.process_launcher.ChildConnectionAllocator;
+import org.monyhar.base.process_launcher.ChildProcessConnection;
+import org.monyhar.base.process_launcher.ChildProcessConstants;
+import org.monyhar.base.process_launcher.ChildProcessLauncher;
+import org.monyhar.base.process_launcher.FileDescriptorInfo;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.build.BuildConfig;
+import org.monyhar.content.app.SandboxedProcessService;
+import org.monyhar.content.common.ContentSwitchUtils;
+import org.monyhar.content_public.browser.ChildProcessImportance;
+import org.monyhar.content_public.browser.ContentFeatureList;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.content_public.common.ContentSwitches;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -62,9 +62,9 @@ public final class ChildProcessLauncherHelperImpl {
 
     // Manifest values used to specify the service names.
     private static final String NUM_SANDBOXED_SERVICES_KEY =
-            "org.chromium.content.browser.NUM_SANDBOXED_SERVICES";
+            "org.monyhar.content.browser.NUM_SANDBOXED_SERVICES";
     private static final String NUM_PRIVILEGED_SERVICES_KEY =
-            "org.chromium.content.browser.NUM_PRIVILEGED_SERVICES";
+            "org.monyhar.content.browser.NUM_PRIVILEGED_SERVICES";
 
     // When decrementing the refcount on bindings, delay the decrement by this amount of time in
     // case a new ref count is added in the mean time. This is a heuristic to avoid temporarily

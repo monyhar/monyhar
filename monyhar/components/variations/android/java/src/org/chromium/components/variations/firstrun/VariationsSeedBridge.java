@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.variations.firstrun;
+package org.monyhar.components.variations.firstrun;
 
 import android.util.Base64;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.metrics.RecordHistogram;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.metrics.RecordHistogram;
 
 /**
  * VariationsSeedBridge is a class which is used to pass variations first run seed that was fetched

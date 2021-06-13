@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.task;
+package org.monyhar.base.task;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
 
@@ -10,7 +10,7 @@ import android.os.Process;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.build.BuildConfig;
+import org.monyhar.build.BuildConfig;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;

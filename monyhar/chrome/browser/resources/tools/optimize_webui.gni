@@ -41,7 +41,7 @@ template("optimize_webui") {
     }
 
     polymer_path =
-        rebase_path("//third_party/polymer/v3_0/components-chromium/",
+        rebase_path("//third_party/polymer/v3_0/components-monyhar/",
                     root_build_dir)
     resources_path =
         rebase_path("$root_gen_dir/ui/webui/resources/preprocessed/",

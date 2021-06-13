@@ -2,4 +2,4 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-interface org.chromium.chromecast.shell.IDeviceLogsProvider;
+interface org.monyhar.chromecast.shell.IDeviceLogsProvider;

@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.site_settings;
+package org.monyhar.components.browser_ui.site_settings;
 
-import static org.chromium.components.browser_ui.settings.SearchUtils.handleSearchNavigation;
+import static org.monyhar.components.browser_ui.settings.SearchUtils.handleSearchNavigation;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -26,12 +26,12 @@ import androidx.preference.PreferenceManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.vectordrawable.graphics.drawable.VectorDrawableCompat;
 
-import org.chromium.base.annotations.UsedByReflection;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.components.browser_ui.settings.SearchUtils;
-import org.chromium.components.browser_ui.settings.SettingsUtils;
-import org.chromium.components.embedder_support.browser_context.BrowserContextHandle;
-import org.chromium.components.embedder_support.util.UrlUtilities;
+import org.monyhar.base.annotations.UsedByReflection;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.components.browser_ui.settings.SearchUtils;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.components.embedder_support.browser_context.BrowserContextHandle;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
 
 import java.util.ArrayList;
 import java.util.Collection;

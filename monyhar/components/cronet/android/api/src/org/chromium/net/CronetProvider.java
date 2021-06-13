@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
 import android.content.Context;
 import android.util.Log;
@@ -116,13 +116,13 @@ public abstract class CronetProvider {
      * Name of the Java {@link CronetProvider} class.
      */
     private static final String JAVA_CRONET_PROVIDER_CLASS =
-            "org.chromium.net.impl.JavaCronetProvider";
+            "org.monyhar.net.impl.JavaCronetProvider";
 
     /**
      * Name of the native {@link CronetProvider} class.
      */
     private static final String NATIVE_CRONET_PROVIDER_CLASS =
-            "org.chromium.net.impl.NativeCronetProvider";
+            "org.monyhar.net.impl.NativeCronetProvider";
 
     /**
      * {@link CronetProvider} class that is packaged with Google Play Services.

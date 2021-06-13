@@ -206,7 +206,7 @@ TEST_F(WebApkInstallTaskTest, SuccessfulInstall) {
       web_app::test::InstallWebApp(profile(), BuildDefaultWebAppInfo());
 
   SetWebApkResponse(base::BindRepeating(&BuildValidWebApkResponse,
-                                        "org.chromium.webapk.some_package"));
+                                        "org.monyhar.webapk.some_package"));
 
   EXPECT_TRUE(InstallWebApk(app_id));
 
@@ -219,14 +219,14 @@ TEST_F(WebApkInstallTaskTest, SuccessfulInstall) {
 
   ASSERT_EQ(fake_webapk_instance()->handled_packages().size(), 1);
   ASSERT_EQ(fake_webapk_instance()->handled_packages()[0],
-            "org.chromium.webapk.some_package");
+            "org.monyhar.webapk.some_package");
 
   base::flat_set<std::string> installed_webapks =
       apps::webapk_prefs::GetWebApkAppIds(profile());
   ASSERT_EQ(installed_webapks.size(), 1);
   ASSERT_TRUE(installed_webapks.contains(app_id));
   ASSERT_EQ(*apps::webapk_prefs::GetWebApkPackageName(profile(), app_id),
-            "org.chromium.webapk.some_package");
+            "org.monyhar.webapk.some_package");
 }
 
 TEST_F(WebApkInstallTaskTest, ShareTarget) {
@@ -251,7 +251,7 @@ TEST_F(WebApkInstallTaskTest, ShareTarget) {
       web_app::test::InstallWebApp(profile(), std::move(web_app_info));
 
   SetWebApkResponse(base::BindRepeating(&BuildValidWebApkResponse,
-                                        "org.chromium.webapk.some_package"));
+                                        "org.monyhar.webapk.some_package"));
 
   EXPECT_TRUE(InstallWebApk(app_id));
 
@@ -295,12 +295,12 @@ TEST_F(WebApkInstallTaskTest, FailedArcInstall) {
       web_app::test::InstallWebApp(profile(), BuildDefaultWebAppInfo());
 
   SetWebApkResponse(base::BindRepeating(&BuildValidWebApkResponse,
-                                        "org.chromium.webapk.some_package"));
+                                        "org.monyhar.webapk.some_package"));
   fake_webapk_instance()->set_install_result(
       arc::mojom::WebApkInstallResult::kErrorResolveNetworkError);
 
   ASSERT_FALSE(InstallWebApk(app_id));
   ASSERT_EQ(fake_webapk_instance()->handled_packages()[0],
-            "org.chromium.webapk.some_package");
+            "org.monyhar.webapk.some_package");
   ASSERT_EQ(apps::webapk_prefs::GetWebApkAppIds(profile()).size(), 0);
 }

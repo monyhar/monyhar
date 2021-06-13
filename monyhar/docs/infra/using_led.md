@@ -29,7 +29,7 @@ trybot's:
 those files. Instead, change the waterfall builders they mirror. This mapping is
 configured in tools/build's [trybots.py][6].)
 
-Simply edit the needed files in a local chromium/src checkout, upload the change
+Simply edit the needed files in a local monyhar/src checkout, upload the change
 to Gerrit, then select the affected trybot(s) via the "select tryjobs" menu.
 
 ## How to use it
@@ -43,9 +43,9 @@ list of features via `led help`.)
 1. Select a builder whose builds you'd like to reproduce. (Example:
 [linux-rel][7])
 2. Record its full builder name, along with its bucket. (The bucket name is
-present in the URL of the builder page, and is very likely "chromium/ci".)
+present in the URL of the builder page, and is very likely "monyhar/ci".)
 3. Checkout the [tools/build][3] repo (if not already present) and navigate to
-the [chromium][8] and/or [chromium_tests][9] recipe modules. These, along with
+the [monyhar][8] and/or [monyhar_tests][9] recipe modules. These, along with
 the other recipe_modules located in tools/build, are how the majority of a
 Chromium builder's recipe is defined.
 4. Make the desired recipe change. (Consider running local recipe unittests
@@ -53,7 +53,7 @@ before proceeding by running `recipes.py test train` via the [recipes.py][10]
 script.
 5. Launch a build with the given recipe change. This can be done with a single
 chained LED invocation, eg:
-`led get-builder chromium/ci:linux-rel | led edit-recipe-bundle | led launch`
+`led get-builder monyhar/ci:linux-rel | led edit-recipe-bundle | led launch`
 6. The LED invocation above will print out a link to the build that was
 launched. Repeat steps 4 & 5 until the triggered builds behave as expected
 with the new recipe change.
@@ -62,16 +62,16 @@ with the new recipe change.
 
 If you're in need of further assistance, if you're not sure about
 one or more steps, or if you found this documentation lacking, please
-reach out to infra-dev@chromium.org or [file a bug][11]!
+reach out to infra-dev@monyhar.org or [file a bug][11]!
 
-[1]: https://chromium.googlesource.com/infra/luci/recipes-py/
-[2]: https://chromium.googlesource.com/chromium/tools/depot_tools/
-[3]: https://chromium.googlesource.com/chromium/tools/build/
+[1]: https://monyhar.googlesource.com/infra/luci/recipes-py/
+[2]: https://monyhar.googlesource.com/monyhar/tools/depot_tools/
+[3]: https://monyhar.googlesource.com/monyhar/tools/build/
 [4]: /tools/mb/mb_config.pyl
 [5]: /testing/buildbot/
-[6]: https://chromium.googlesource.com/chromium/tools/build/+/HEAD/recipes/recipe_modules/chromium_tests/trybots.py
-[7]: https://ci.chromium.org/p/chromium/builders/ci/linux-rel
-[8]: https://chromium.googlesource.com/chromium/tools/build/+/HEAD/recipes/recipe_modules/chromium/api.py
-[9]: https://chromium.googlesource.com/chromium/tools/build/+/HEAD/recipes/recipe_modules/chromium_tests/api.py
-[10]: https://chromium.googlesource.com/chromium/tools/build/+/HEAD/recipes/recipes.py
+[6]: https://monyhar.googlesource.com/monyhar/tools/build/+/HEAD/recipes/recipe_modules/monyhar_tests/trybots.py
+[7]: https://ci.monyhar.org/p/monyhar/builders/ci/linux-rel
+[8]: https://monyhar.googlesource.com/monyhar/tools/build/+/HEAD/recipes/recipe_modules/monyhar/api.py
+[9]: https://monyhar.googlesource.com/monyhar/tools/build/+/HEAD/recipes/recipe_modules/monyhar_tests/api.py
+[10]: https://monyhar.googlesource.com/monyhar/tools/build/+/HEAD/recipes/recipes.py
 [11]: https://g.co/bugatrooper

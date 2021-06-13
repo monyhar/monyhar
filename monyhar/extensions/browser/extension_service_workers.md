@@ -8,7 +8,7 @@ Service Workers. Service Worker is a web platform feature that forms the basis
 of app-like capabilities such as offline support, push notifications, and
 background sync. A Service Worker is an event-driven JavaScript program that
 runs in a worker thread. For a more detailed
-explanation, see the [Service Workers documentation](https://chromium.googlesource.com/chromium/src/+/HEAD/content/browser/service_worker/README.md).
+explanation, see the [Service Workers documentation](https://monyhar.googlesource.com/monyhar/src/+/HEAD/content/browser/service_worker/README.md).
 
 This document describes the assumptions the //extensions layer makes when
 relying on the Service Worker layer for registering/unregistering/starting a
@@ -19,7 +19,7 @@ how ES modules can be imported in Manifest V3.
 When adding/loading an extension, `ExtensionRegistrar::ActivateExtension` is
 called which results in calling `ServiceWorkerTaskQueue::ActivateExtension`
 which calls `ServiceWorkerContext::RegisterServiceWorker`. During registration,
-[`script_url`](https://source.chromium.org/chromium/chromium/src/+/77dcc35a2a0b98d3913148149496b8dd0d3464cc:content/public/browser/service_worker_context.h;l=125) is set to the URL corresponding to the relative path from
+[`script_url`](https://source.monyhar.org/monyhar/monyhar/src/+/77dcc35a2a0b98d3913148149496b8dd0d3464cc:content/public/browser/service_worker_context.h;l=125) is set to the URL corresponding to the relative path from
 manifest.json's "background.service_worker" and scope is set to the extension
 root, i.e., chrome-extension://<extension_id>/.
 
@@ -89,7 +89,7 @@ current code, after receiving both notifications and before
 and can dispatch events to an extension Service Worker. As explained above, we
 should call `StartWorkerForScope` every time before asking the worker to do
 something instead of relying on `OnVersionStoppedRunning`. We plan to fix this
-in our code. Bug [1162193](https://bugs.chromium.org/p/chromium/issues/detail?id=1162193) tracks this fix.
+in our code. Bug [1162193](https://bugs.monyhar.org/p/monyhar/issues/detail?id=1162193) tracks this fix.
 
 ## Service Worker’s liveness
 The //extensions layer rely on the Service Worker layer to ensure the Service
@@ -112,7 +112,7 @@ as long as we use `ServiceWorkerContext::StartingExternalRequest` and
 mechanism to keep the worker alive.
 
 ## ES modules
-[ES modules in Service Workers](https://chromium.googlesource.com/chromium/src/+/HEAD/content/browser/service_worker/es_modules.md) details the current state of ES module support
+[ES modules in Service Workers](https://monyhar.googlesource.com/monyhar/src/+/HEAD/content/browser/service_worker/es_modules.md) details the current state of ES module support
 in Service Workers. In Manifest V3, type is added to the background key in the
 manifest file, where two types are supported: classic and module. Type is set
 to classic by default. For a module Service Worker, background.type should be

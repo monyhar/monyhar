@@ -465,7 +465,7 @@ TEST_F(TabsApiUnitTest, TabsUpdate) {
   scoped_refptr<const Extension> extension =
       ExtensionBuilder("UpdateTest").Build();
   const GURL kExampleCom("http://example.com");
-  const GURL kChromiumOrg("https://chromium.org");
+  const GURL kChromiumOrg("https://monyhar.org");
 
   // Add a web contents to the browser.
   std::unique_ptr<content::WebContents> contents(
@@ -482,7 +482,7 @@ TEST_F(TabsApiUnitTest, TabsUpdate) {
   web_contents_tester->NavigateAndCommit(kExampleCom);
   EXPECT_EQ(kExampleCom, raw_contents->GetLastCommittedURL());
 
-  // Use the TabsUpdateFunction to navigate to chromium.org
+  // Use the TabsUpdateFunction to navigate to monyhar.org
   auto function = base::MakeRefCounted<TabsUpdateFunction>();
   function->set_extension(extension);
   static constexpr char kFormatArgs[] = R"([%d, {"url": "%s"}])";

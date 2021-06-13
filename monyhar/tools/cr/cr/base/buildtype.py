@@ -11,7 +11,7 @@ class BuildType(cr.Plugin, cr.Plugin.Type):
   """Base class for implementing cr build types.
 
   A build type corresponds to the second directory level in the standard output
-  directory format, and the BUILDTYPE environment variable used by chromium
+  directory format, and the BUILDTYPE environment variable used by monyhar
   tools.
   """
 

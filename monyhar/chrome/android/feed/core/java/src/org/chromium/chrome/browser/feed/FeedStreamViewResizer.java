@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed;
+package org.monyhar.chrome.browser.feed;
 
 import android.app.Activity;
 import android.content.res.Configuration;
@@ -13,10 +13,10 @@ import android.view.ViewGroup;
 
 import androidx.core.view.ViewCompat;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.multiwindow.MultiWindowUtils;
-import org.chromium.components.browser_ui.widget.displaystyle.UiConfig;
-import org.chromium.components.browser_ui.widget.displaystyle.ViewResizer;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.multiwindow.MultiWindowUtils;
+import org.monyhar.components.browser_ui.widget.displaystyle.UiConfig;
+import org.monyhar.components.browser_ui.widget.displaystyle.ViewResizer;
 
 /**
  * Updates the paddings used to display the feed stream when switching to landscape mode. Due to the

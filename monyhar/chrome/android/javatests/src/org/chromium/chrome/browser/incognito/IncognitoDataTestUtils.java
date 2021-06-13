@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.incognito;
+package org.monyhar.chrome.browser.incognito;
 
 import static org.junit.Assert.assertEquals;
 
-import static org.chromium.chrome.browser.customtabs.CustomTabsTestUtils.createMinimalCustomTabIntent;
-import static org.chromium.chrome.browser.customtabs.CustomTabsTestUtils.createMinimalIncognitoCustomTabIntent;
+import static org.monyhar.chrome.browser.customtabs.CustomTabsTestUtils.createMinimalCustomTabIntent;
+import static org.monyhar.chrome.browser.customtabs.CustomTabsTestUtils.createMinimalIncognitoCustomTabIntent;
 
 import android.app.Activity;
 import android.content.Context;
@@ -16,21 +16,21 @@ import android.support.test.InstrumentationRegistry;
 
 import org.hamcrest.Matchers;
 
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.test.params.ParameterProvider;
-import org.chromium.base.test.params.ParameterSet;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.customtabs.CustomTabActivityTestRule;
-import org.chromium.chrome.browser.customtabs.CustomTabsConnection;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.test.ChromeActivityTestRule;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.content_public.browser.BrowserStartupController;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.test.params.ParameterProvider;
+import org.monyhar.base.test.params.ParameterSet;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivityTestRule;
+import org.monyhar.chrome.browser.customtabs.CustomTabsConnection;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.test.ChromeActivityTestRule;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.content_public.browser.BrowserStartupController;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.ArrayList;
 import java.util.List;

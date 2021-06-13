@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Geolocation histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -23,8 +23,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Geolocation.AuthorizationActionExistingUser"
     enum="GeolocationAuthorizationAction" expires_after="2021-10-17">
-  <owner>mattreynolds@chromium.org</owner>
-  <owner>device-dev@chromium.org</owner>
+  <owner>mattreynolds@monyhar.org</owner>
+  <owner>device-dev@monyhar.org</owner>
   <summary>
     Records the action performed by an existing user when prompted to authorize
     the use of location by Chrome.
@@ -33,8 +33,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Geolocation.AuthorizationActionNewUser"
     enum="GeolocationAuthorizationAction" expires_after="2021-10-10">
-  <owner>mattreynolds@chromium.org</owner>
-  <owner>device-dev@chromium.org</owner>
+  <owner>mattreynolds@monyhar.org</owner>
+  <owner>device-dev@monyhar.org</owner>
   <summary>
     Records the action performed by a new user when prompted to authorize the
     use of location by Chrome.
@@ -43,8 +43,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="Geolocation.Header.LocationAge" units="seconds"
     expires_after="M85">
-  <owner>kcarattini@chromium.org</owner>
-  <owner>dominickn@chromium.org</owner>
+  <owner>kcarattini@monyhar.org</owner>
+  <owner>dominickn@monyhar.org</owner>
   <summary>
     For Geolocation requests from the omnibox on Android, the time since the
     location was most recently acquired. If no location has been acquired, the
@@ -54,8 +54,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Geolocation.Header.PermissionState"
     enum="GeolocationHeaderPermissionState" expires_after="M85">
-  <owner>kcarattini@chromium.org</owner>
-  <owner>dominickn@chromium.org</owner>
+  <owner>kcarattini@monyhar.org</owner>
+  <owner>dominickn@monyhar.org</owner>
   <summary>
     Counts Geolocation requests for omnibox searches sliced by various
     permission combinations. The location mode abbreviations indicate one of:
@@ -65,8 +65,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="Geolocation.Header.TimeListening" units="ms"
     expires_after="M85">
-  <owner>kcarattini@chromium.org</owner>
-  <owner>dominickn@chromium.org</owner>
+  <owner>kcarattini@monyhar.org</owner>
+  <owner>dominickn@monyhar.org</owner>
   <summary>
     For Geolocation requests from the omnibox on Android, the time since the
     location was first acquired. If no location has been acquired, the minimum
@@ -77,8 +77,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Geolocation.HeaderSentOrNot" enum="GeolocationHeaderSentOrNot"
     expires_after="M85">
   <owner>kiyun@google.com</owner>
-  <owner>mvanouwerkerk@chromium.org</owner>
-  <owner>newt@chromium.org</owner>
+  <owner>mvanouwerkerk@monyhar.org</owner>
+  <owner>newt@monyhar.org</owner>
   <summary>
     Reason why the X-Geo header was or was not included in a Google search from
     the omnibox.
@@ -87,15 +87,15 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Geolocation.LocationUpdate.ErrorCode"
     enum="GeopositionErrorCode" expires_after="2021-11-21">
-  <owner>mattreynolds@chromium.org</owner>
-  <owner>device-dev@chromium.org</owner>
+  <owner>mattreynolds@monyhar.org</owner>
+  <owner>device-dev@monyhar.org</owner>
   <summary>Error code for the geoposition sent to the renderers.</summary>
 </histogram>
 
 <histogram name="Geolocation.NetworkLocationRequest.AccessPoints" units="units"
     expires_after="M85">
-  <owner>mattreynolds@chromium.org</owner>
-  <owner>device-dev@chromium.org</owner>
+  <owner>mattreynolds@monyhar.org</owner>
+  <owner>device-dev@monyhar.org</owner>
   <summary>
     The number of WiFi access points used to determine geolocation.
   </summary>
@@ -103,8 +103,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Geolocation.NetworkLocationRequest.Event"
     enum="NetworkLocationRequestEvent" expires_after="2022-05-22">
-  <owner>mattreynolds@chromium.org</owner>
-  <owner>device-dev@chromium.org</owner>
+  <owner>mattreynolds@monyhar.org</owner>
+  <owner>device-dev@monyhar.org</owner>
   <summary>
     Events in NetworkLocationRequest.
 
@@ -115,15 +115,15 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Geolocation.NetworkLocationRequest.NetError"
     enum="NetErrorCodes" expires_after="2022-05-22">
-  <owner>JamesHollyer@chromium.org</owner>
-  <owner>device-dev@chromium.org</owner>
+  <owner>JamesHollyer@monyhar.org</owner>
+  <owner>device-dev@monyhar.org</owner>
   <summary>Network errors in NetworkLocationRequest.</summary>
 </histogram>
 
 <histogram name="Geolocation.NetworkLocationRequest.ResponseCode"
     enum="HttpResponseCode" expires_after="2022-05-22">
-  <owner>mattreynolds@chromium.org</owner>
-  <owner>device-dev@chromium.org</owner>
+  <owner>mattreynolds@monyhar.org</owner>
+  <owner>device-dev@monyhar.org</owner>
   <summary>
     HTTP response codes in NetworkLocationRequest.
 
@@ -134,7 +134,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Geolocation.PositionCache.CacheHit" enum="BooleanCacheHit"
     expires_after="2022-05-22">
-  <owner>mattreynolds@chromium.org</owner>
+  <owner>mattreynolds@monyhar.org</owner>
   <owner>deviceapi-team@google.com</owner>
   <summary>
     For each query into the position cache used by the network location
@@ -144,7 +144,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Geolocation.PositionCache.CacheSize" units="count"
     expires_after="2022-05-22">
-  <owner>mattreynolds@chromium.org</owner>
+  <owner>mattreynolds@monyhar.org</owner>
   <owner>deviceapi-team@google.com</owner>
   <summary>
     For each query into the position cache used by the network location
@@ -157,7 +157,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="Geolocation.SettingsDialog.AcceptEvent"
     enum="GeolocationSettingsDialogBackOff" expires_after="M89">
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     Records the backoff level when the Location Settings Dialog is accepted by
@@ -167,7 +167,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="Geolocation.SettingsDialog.DenyEvent"
     enum="GeolocationSettingsDialogBackOff" expires_after="M89">
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     Records the backoff level when the Location Settings Dialog is rejected by
@@ -177,7 +177,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="Geolocation.SettingsDialog.ShowEvent"
     enum="GeolocationSettingsDialogBackOff" expires_after="M89">
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     Records the backoff level when the Location Settings Dialog is shown to the
@@ -187,7 +187,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="Geolocation.SettingsDialog.SuppressEvent"
     enum="GeolocationSettingsDialogBackOff" expires_after="M89">
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     Records the backoff level when the Location Settings Dialog is suppressed
@@ -196,7 +196,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Geolocation.Timeout" units="ms" expires_after="M85">
-  <owner>mattreynolds@chromium.org</owner>
+  <owner>mattreynolds@monyhar.org</owner>
   <owner>deviceapi-team@google.com</owner>
   <summary>
     Counts Geolocation request timeout values, bucketing by timeout duration.
@@ -207,7 +207,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Geolocation.TimeoutExpired" units="ms"
     expires_after="2020-02-01">
-  <owner>mattreynolds@chromium.org</owner>
+  <owner>mattreynolds@monyhar.org</owner>
   <owner>deviceapi-team@google.com</owner>
   <summary>
     Counts Geolocation request timeout expirations, bucketing by timeout
@@ -219,7 +219,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GeolocationDisclosure.DisclosureResult"
     enum="GeolocationDisclosureResult" expires_after="2021-10-31">
-  <owner>benwells@chromium.org</owner>
+  <owner>benwells@monyhar.org</owner>
   <summary>
     Records the action the user took after the geolocation disclosure has been
     displayed.
@@ -228,7 +228,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GeolocationDisclosure.InfoBarVisibleTime" units="ms"
     expires_after="M90">
-  <owner>benwells@chromium.org</owner>
+  <owner>benwells@monyhar.org</owner>
   <summary>
     Records how long the search geolocation disclosure infobar was visible for.
   </summary>
@@ -236,7 +236,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GeolocationDisclosure.PostDisclosureDSESetting"
     enum="BooleanAllowed" expires_after="M90">
-  <owner>benwells@chromium.org</owner>
+  <owner>benwells@monyhar.org</owner>
   <summary>
     Records the geolocation default search engine setting after the search
     geolocation disclosure has been shown and won't be shown again. This metric
@@ -246,7 +246,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GeolocationDisclosure.PreDisclosureDSESetting"
     enum="BooleanAllowed" expires_after="M90">
-  <owner>benwells@chromium.org</owner>
+  <owner>benwells@monyhar.org</owner>
   <summary>
     Records the geolocation default search engine setting immediately before the
     search geolocation disclosure has been shown. This metric is only recorded

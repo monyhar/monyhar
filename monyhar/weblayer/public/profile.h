@@ -28,7 +28,7 @@ class DownloadDelegate;
 class GoogleAccountAccessTokenFetchDelegate;
 class PrerenderController;
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.weblayer_private
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.weblayer_private
 // GENERATED_JAVA_CLASS_NAME_OVERRIDE: ImplBrowsingDataType
 enum class BrowsingDataType {
   COOKIES_AND_SITE_DATA = 0,

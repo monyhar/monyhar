@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.payments;
+package org.monyhar.components.payments;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 /**
  * This class represents the supported delegations of a service worker based payment app.
@@ -32,7 +32,7 @@ public class SupportedDelegations {
         mPayerEmail = false;
     }
 
-    public boolean providesAll(org.chromium.payments.mojom.PaymentOptions options) {
+    public boolean providesAll(org.monyhar.payments.mojom.PaymentOptions options) {
         if (options == null) return true;
         if (options.requestShipping && !mShippingAddress) return false;
         if (options.requestPayerName && !mPayerName) return false;

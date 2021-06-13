@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webview_shell.test;
+package org.monyhar.webview_shell.test;
 
 import android.os.Bundle;
 import android.support.test.InstrumentationRegistry;
@@ -18,13 +18,13 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.Log;
-import org.chromium.base.test.BaseActivityTestRule;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.base.test.util.UrlUtils;
-import org.chromium.webview_shell.WebViewLayoutTestActivity;
+import org.monyhar.base.Log;
+import org.monyhar.base.test.BaseActivityTestRule;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.base.test.util.UrlUtils;
+import org.monyhar.webview_shell.WebViewLayoutTestActivity;
 
 import java.io.BufferedReader;
 import java.io.File;

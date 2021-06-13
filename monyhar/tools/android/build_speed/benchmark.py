@@ -100,14 +100,14 @@ _BENCHMARKS = [
         'from_string': '"Url',
         'to_string': '"Url1',
         # pylint: disable=line-too-long
-        'change_file': 'chrome/android/java/src/org/chromium/chrome/browser/omnibox/UrlBar.java',
+        'change_file': 'chrome/android/java/src/org/monyhar/chrome/browser/omnibox/UrlBar.java',
     }),
     Benchmark('chrome_java_sig', {
         'kind': 'incremental',
         'from_string': 'UrlBar";',
         'to_string': 'UrlBar";public void NewInterfaceMethod(){}',
         # pylint: disable=line-too-long
-        'change_file': 'chrome/android/java/src/org/chromium/chrome/browser/omnibox/UrlBar.java',
+        'change_file': 'chrome/android/java/src/org/monyhar/chrome/browser/omnibox/UrlBar.java',
     }),
     Benchmark('chrome_java_res', {
         'kind': 'incremental',
@@ -120,26 +120,26 @@ _BENCHMARKS = [
         'from_string': 'INVALID_WINDOW_INDEX = -1',
         'to_string': 'INVALID_WINDOW_INDEX = -2',
         # pylint: disable=line-too-long
-        'change_file': 'chrome/browser/tabmodel/android/java/src/org/chromium/chrome/browser/tabmodel/TabWindowManager.java',
+        'change_file': 'chrome/browser/tabmodel/android/java/src/org/monyhar/chrome/browser/tabmodel/TabWindowManager.java',
     }),
     Benchmark('module_java_internal_nosig', {
         'kind': 'incremental',
         'from_string': '"TabModelSelector',
         'to_string': '"DifferentUniqueString',
         # pylint: disable=line-too-long
-        'change_file': 'chrome/browser/tabmodel/internal/android/java/src/org/chromium/chrome/browser/tabmodel/TabWindowManagerImpl.java',
+        'change_file': 'chrome/browser/tabmodel/internal/android/java/src/org/monyhar/chrome/browser/tabmodel/TabWindowManagerImpl.java',
     }),
     Benchmark('base_java_nosig', {
         'kind': 'incremental',
         'from_string': '"SysUtil',
         'to_string': '"SysUtil1',
-        'change_file': 'base/android/java/src/org/chromium/base/SysUtils.java',
+        'change_file': 'base/android/java/src/org/monyhar/base/SysUtils.java',
     }),
     Benchmark('base_java_sig', {
         'kind': 'incremental',
         'from_string': 'SysUtils";',
         'to_string': 'SysUtils";public void NewInterfaceMethod(){}',
-        'change_file': 'base/android/java/src/org/chromium/base/SysUtils.java',
+        'change_file': 'base/android/java/src/org/monyhar/base/SysUtils.java',
     }),
     Benchmark('turbine_headers', {
         'kind': 'incremental',

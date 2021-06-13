@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.provider;
+package org.monyhar.chrome.browser.provider;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -16,12 +16,12 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
 
 import java.util.Date;
 
@@ -64,7 +64,7 @@ public class ProviderSearchesUriTest {
     @Feature({"Android-ContentProvider"})
     public void testUpdateSearchTerm() {
         ContentValues values = new ContentValues();
-        values.put(SearchColumns.SEARCH, "chromium");
+        values.put(SearchColumns.SEARCH, "monyhar");
         values.put(SearchColumns.DATE, System.currentTimeMillis());
 
         Assert.assertEquals(0,

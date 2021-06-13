@@ -15,14 +15,14 @@ class BlinkApiProto(object):
     a identifiability.blink_apis.Snapshot proto defined in
     proto/blink_apis.proto"""
 
-    def __init__(self, web_idl_pickle, proto_out_file, chromium_revision,
+    def __init__(self, web_idl_pickle, proto_out_file, monyhar_revision,
                  web_features):
         self.web_idl_database = web_idl.Database.read_from_file(web_idl_pickle)
         self.proto_out_file = proto_out_file
         self.snapshot = pb.Snapshot()
         self.web_features = web_features
-        if chromium_revision:
-            self.snapshot.chromium_revision = chromium_revision
+        if monyhar_revision:
+            self.snapshot.monyhar_revision = monyhar_revision
 
     def Parse(self):
         """The main entry point, which synchronously does all the work."""

@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.permissiondelegation;
+package org.monyhar.chrome.browser.browserservices.permissiondelegation;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import static org.chromium.chrome.browser.browserservices.TrustedWebActivityTestUtil.isTrustedWebActivity;
+import static org.monyhar.chrome.browser.browserservices.TrustedWebActivityTestUtil.isTrustedWebActivity;
 
 import android.net.Uri;
 import android.os.Build;
@@ -20,28 +20,28 @@ import org.junit.Test;
 import org.junit.rules.RuleChain;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.chrome.browser.browserservices.TrustedWebActivityTestUtil;
-import org.chromium.chrome.browser.customtabs.CustomTabActivityTestRule;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.permissions.PermissionTestRule.PermissionUpdateWaiter;
-import org.chromium.chrome.browser.settings.SettingsActivity;
-import org.chromium.chrome.browser.site_settings.SiteSettingsTestUtils;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.test.MockCertVerifierRuleAndroid;
-import org.chromium.components.browser_ui.settings.ChromeSwitchPreference;
-import org.chromium.components.browser_ui.site_settings.SingleCategorySettings;
-import org.chromium.components.browser_ui.site_settings.SiteSettingsCategory;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.content_public.common.ContentSwitches;
-import org.chromium.device.geolocation.LocationProviderOverrider;
-import org.chromium.device.geolocation.MockLocationProvider;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.chrome.browser.browserservices.TrustedWebActivityTestUtil;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivityTestRule;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.permissions.PermissionTestRule.PermissionUpdateWaiter;
+import org.monyhar.chrome.browser.settings.SettingsActivity;
+import org.monyhar.chrome.browser.site_settings.SiteSettingsTestUtils;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.test.MockCertVerifierRuleAndroid;
+import org.monyhar.components.browser_ui.settings.ChromeSwitchPreference;
+import org.monyhar.components.browser_ui.site_settings.SingleCategorySettings;
+import org.monyhar.components.browser_ui.site_settings.SiteSettingsCategory;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.content_public.common.ContentSwitches;
+import org.monyhar.device.geolocation.LocationProviderOverrider;
+import org.monyhar.device.geolocation.MockLocationProvider;
 
 import java.util.concurrent.TimeoutException;
 
@@ -64,7 +64,7 @@ public class TrustedWebActivityLocationDelegationTest {
             RuleChain.emptyRuleChain().around(mCustomTabActivityTestRule).around(mCertVerifierRule);
 
     private static final String TEST_FILE = "/content/test/data/android/geolocation.html";
-    private static final String TEST_SUPPORT_PACKAGE = "org.chromium.chrome.tests.support";
+    private static final String TEST_SUPPORT_PACKAGE = "org.monyhar.chrome.tests.support";
 
     private String mTestPage;
 

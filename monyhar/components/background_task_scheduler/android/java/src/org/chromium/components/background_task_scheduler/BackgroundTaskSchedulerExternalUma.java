@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.background_task_scheduler;
+package org.monyhar.components.background_task_scheduler;
 
 import androidx.annotation.VisibleForTesting;
 
@@ -75,7 +75,7 @@ public abstract class BackgroundTaskSchedulerExternalUma {
     /**
      * Reports metrics of how Chrome is launched, either in minimal browser mode or as full
      * browser, as well as either cold start or warm start.
-     * See {@link org.chromium.content.browser.ServicificationStartupUma} for more details.
+     * See {@link org.monyhar.content.browser.ServicificationStartupUma} for more details.
      * @param startupMode Chrome's startup mode.
      */
     public abstract void reportStartupMode(int startupMode);

@@ -4,4 +4,4 @@ specific to this suite are most likely caused by forbidden V8 allocations or
 JavaScript execution within the scopes of calls to blink APIs that have the
 [NoAllocDirectCall] extended IDL attribute.
 
-Point of contact: junov@chromium.org
+Point of contact: junov@monyhar.org

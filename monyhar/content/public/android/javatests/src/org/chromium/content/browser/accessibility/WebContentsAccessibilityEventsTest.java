@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.accessibility;
+package org.monyhar.content.browser.accessibility;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -17,11 +17,11 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.base.test.util.FlakyTest;
-import org.chromium.base.test.util.MinAndroidSdkLevel;
-import org.chromium.base.test.util.UrlUtils;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.base.test.util.FlakyTest;
+import org.monyhar.base.test.util.MinAndroidSdkLevel;
+import org.monyhar.base.test.util.UrlUtils;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -45,7 +45,7 @@ public class WebContentsAccessibilityEventsTest {
             "Test results were null, did you remember to add the tracker to WCAI?";
 
     // Member variables required for testing framework
-    private static final String BASE_DIRECTORY = "/chromium_tests_root";
+    private static final String BASE_DIRECTORY = "/monyhar_tests_root";
     private static final String BASE_FILE_PATH = "content/test/data/accessibility/event/";
     private static final String EMPTY_EXPECTATIONS_FILE = "EmptyExpectationsFile";
 

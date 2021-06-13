@@ -4,9 +4,9 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
-# Script to install everything needed to build chromium on android, including
+# Script to install everything needed to build monyhar on android, including
 # items requiring sudo privileges.
-# See https://www.chromium.org/developers/how-tos/android-build-instructions
+# See https://www.monyhar.org/developers/how-tos/android-build-instructions
 
 args="$@"
 

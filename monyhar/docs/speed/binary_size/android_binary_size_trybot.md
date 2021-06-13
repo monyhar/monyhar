@@ -166,7 +166,7 @@ For more information on when to use `const char *` vs `const char[]`, see
 
 ### If All Else Fails
 
-- For help, email [binary-size@chromium.org]. Hearing about your issues helps us
+- For help, email [binary-size@monyhar.org]. Hearing about your issues helps us
   to improve the tools!
 - Not all checks are perfect and sometimes you want to overrule the trybot (for
   example if you did your best and are unable to reduce binary size any
@@ -178,7 +178,7 @@ For more information on when to use `const char *` vs `const char[]`, see
       adequate justification may lead to the binary size sheriff filing a bug
       against you to improve your cl.
 
-[binary-size@chromium.org]: https://groups.google.com/a/chromium.org/forum/#!forum/binary-size
+[binary-size@monyhar.org]: https://groups.google.com/a/monyhar.org/forum/#!forum/binary-size
 
 ## Bot Links Provided by the Last Step
 
@@ -205,8 +205,8 @@ For more information on when to use `const char *` vs `const char[]`, see
 
 ## Code Locations
 
-- [Trybot recipe](https://source.chromium.org/chromium/chromium/tools/build/+/main:recipes/recipes/binary_size_trybot.py),
-[CI recipe](https://source.chromium.org/chromium/chromium/tools/build/+/main:recipes/recipes/binary_size_generator_tot.py),
-[recipe module](https://source.chromium.org/chromium/chromium/tools/build/+/main:recipes/recipe_modules/binary_size/api.py)
+- [Trybot recipe](https://source.monyhar.org/monyhar/monyhar/tools/build/+/main:recipes/recipes/binary_size_trybot.py),
+[CI recipe](https://source.monyhar.org/monyhar/monyhar/tools/build/+/main:recipes/recipes/binary_size_generator_tot.py),
+[recipe module](https://source.monyhar.org/monyhar/monyhar/tools/build/+/main:recipes/recipe_modules/binary_size/api.py)
 - [Link to src-side checks](/tools/binary_size/trybot_commit_size_checker.py)
-- [Link to Gerrit Plugin](https://chromium.googlesource.com/infra/gerrit-plugins/chromium-binary-size/)
+- [Link to Gerrit Plugin](https://monyhar.googlesource.com/infra/gerrit-plugins/monyhar-binary-size/)

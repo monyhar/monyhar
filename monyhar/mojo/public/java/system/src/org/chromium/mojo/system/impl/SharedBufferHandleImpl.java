@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo.system.impl;
+package org.monyhar.mojo.system.impl;
 
-import org.chromium.mojo.system.SharedBufferHandle;
+import org.monyhar.mojo.system.SharedBufferHandle;
 
 import java.nio.ByteBuffer;
 
@@ -27,7 +27,7 @@ class SharedBufferHandleImpl extends HandleBase implements SharedBufferHandle {
     }
 
     /**
-     * @see org.chromium.mojo.system.SharedBufferHandle#pass()
+     * @see org.monyhar.mojo.system.SharedBufferHandle#pass()
      */
     @Override
     public SharedBufferHandle pass() {

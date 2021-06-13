@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr;
+package org.monyhar.chrome.browser.vr;
 
 import android.app.Activity;
 import android.app.PendingIntent;
@@ -12,17 +12,17 @@ import android.os.Process;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.ui.base.AndroidPermissionDelegate;
-import org.chromium.ui.base.PermissionCallback;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.display.DisplayAndroid;
-import org.chromium.ui.modaldialog.ModalDialogManager;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.ui.base.AndroidPermissionDelegate;
+import org.monyhar.ui.base.PermissionCallback;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.display.DisplayAndroid;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
 
 import java.lang.ref.WeakReference;
 import java.util.Arrays;

@@ -4,7 +4,7 @@
 
 """Enforces luci-milo.cfg consistency.
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See http://dev.monyhar.org/developers/how-tos/depottools/presubmit-scripts
 for more details on the presubmit API built into depot_tools.
 """
 
@@ -134,7 +134,7 @@ def CheckOutagesConfigOnCommit(input_api, output_api):
                '{} with a reason.')
               .format(_IGNORE_OUTAGE_FOOTER),
               ('For more information on outages configuration, '
-               'see https://chromium.googlesource.com/chromium/src/+/refs/heads/master/infra/config/outages'),
+               'see https://monyhar.googlesource.com/monyhar/src/+/refs/heads/master/infra/config/outages'),
           ])),
       ]
 

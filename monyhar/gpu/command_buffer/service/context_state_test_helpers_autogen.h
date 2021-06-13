@@ -4,8 +4,8 @@
 
 // This file is auto-generated from
 // gpu/command_buffer/build_gles2_cmd_buffer.py
-// It's formatted by clang-format using chromium coding style:
-//    clang-format -i -style=chromium filename
+// It's formatted by clang-format using monyhar coding style:
+//    clang-format -i -style=monyhar filename
 // DO NOT EDIT!
 
 // It is included by context_state_test_helpers.cc
@@ -57,7 +57,7 @@ void ContextStateTestHelpers::SetupInitStateExpectations(
   EXPECT_CALL(*gl, ColorMask(true, true, true, true))
       .Times(1)
       .RetiresOnSaturation();
-  if (feature_info->feature_flags().chromium_framebuffer_mixed_samples) {
+  if (feature_info->feature_flags().monyhar_framebuffer_mixed_samples) {
     EXPECT_CALL(*gl, CoverageModulationNV(GL_NONE))
         .Times(1)
         .RetiresOnSaturation();
@@ -77,7 +77,7 @@ void ContextStateTestHelpers::SetupInitStateExpectations(
         .Times(1)
         .RetiresOnSaturation();
   }
-  if (feature_info->feature_flags().chromium_texture_filtering_hint) {
+  if (feature_info->feature_flags().monyhar_texture_filtering_hint) {
     EXPECT_CALL(*gl, Hint(GL_TEXTURE_FILTERING_HINT_CHROMIUM, GL_NICEST))
         .Times(1)
         .RetiresOnSaturation();

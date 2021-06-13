@@ -10,7 +10,7 @@
 // numeric values should never be reused. Please update the enum and suffix
 // named SharingSendMessageResult in enums.xml and histograms.xml when adding
 // a new entry here.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.sharing
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.sharing
 enum class SharingSendMessageResult {
   kSuccessful = 0,
   kDeviceNotFound = 1,

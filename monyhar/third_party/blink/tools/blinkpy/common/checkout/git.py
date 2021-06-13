@@ -273,7 +273,7 @@ class Git(object):
         return int(match.group('commit_position'))
 
     def commit_position(self, path):
-        """Returns the latest chromium commit position found in the checkout."""
+        """Returns the latest monyhar commit position found in the checkout."""
         git_log = self.most_recent_log_matching('Cr-Commit-Position:', path)
         return self._commit_position_from_git_log(git_log)
 

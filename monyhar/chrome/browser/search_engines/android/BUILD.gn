@@ -8,16 +8,16 @@ import("//chrome/browser/buildflags.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/search_engines/DefaultSearchEngineDialogHelper.java",
-    "java/src/org/chromium/chrome/browser/search_engines/DefaultSearchEnginePromoDialog.java",
-    "java/src/org/chromium/chrome/browser/search_engines/SearchEngineChoiceMetrics.java",
-    "java/src/org/chromium/chrome/browser/search_engines/SearchEngineChoiceNotification.java",
-    "java/src/org/chromium/chrome/browser/search_engines/SearchEnginePromoState.java",
-    "java/src/org/chromium/chrome/browser/search_engines/SearchEnginePromoType.java",
-    "java/src/org/chromium/chrome/browser/search_engines/SogouPromoDialog.java",
-    "java/src/org/chromium/chrome/browser/search_engines/TemplateUrlServiceFactory.java",
-    "java/src/org/chromium/chrome/browser/search_engines/settings/SearchEngineAdapter.java",
-    "java/src/org/chromium/chrome/browser/search_engines/settings/SearchEngineSettings.java",
+    "java/src/org/monyhar/chrome/browser/search_engines/DefaultSearchEngineDialogHelper.java",
+    "java/src/org/monyhar/chrome/browser/search_engines/DefaultSearchEnginePromoDialog.java",
+    "java/src/org/monyhar/chrome/browser/search_engines/SearchEngineChoiceMetrics.java",
+    "java/src/org/monyhar/chrome/browser/search_engines/SearchEngineChoiceNotification.java",
+    "java/src/org/monyhar/chrome/browser/search_engines/SearchEnginePromoState.java",
+    "java/src/org/monyhar/chrome/browser/search_engines/SearchEnginePromoType.java",
+    "java/src/org/monyhar/chrome/browser/search_engines/SogouPromoDialog.java",
+    "java/src/org/monyhar/chrome/browser/search_engines/TemplateUrlServiceFactory.java",
+    "java/src/org/monyhar/chrome/browser/search_engines/settings/SearchEngineAdapter.java",
+    "java/src/org/monyhar/chrome/browser/search_engines/settings/SearchEngineSettings.java",
   ]
 
   srcjar_deps = [ "//components/search_engines:search_engine_type_java" ]
@@ -43,11 +43,11 @@ android_library("java") {
     "//ui/android:ui_full_java",
   ]
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
-  resources_package = "org.chromium.chrome.browser.search_engines"
+  resources_package = "org.monyhar.chrome.browser.search_engines"
 }
 
 generate_jni("jni_headers") {
-  sources = [ "java/src/org/chromium/chrome/browser/search_engines/TemplateUrlServiceFactory.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/search_engines/TemplateUrlServiceFactory.java" ]
 }
 
 android_resources("java_resources") {

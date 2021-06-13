@@ -4,7 +4,7 @@
 
 #include "fuchsia/engine/browser/web_engine_devtools_controller.h"
 
-#include <chromium/internal/cpp/fidl.h>
+#include <monyhar/internal/cpp/fidl.h>
 #include <fuchsia/web/cpp/fidl.h>
 #include <lib/fidl/cpp/interface_ptr_set.h>
 #include <lib/sys/cpp/component_context.h>
@@ -202,7 +202,7 @@ class UserModeController : public WebEngineDevToolsController {
 // the first Frame finishes loading its main document, so that the
 // DevToolsPerContextListeners can start interacting with it immediately.
 class DebugModeController : public WebEngineDevToolsController,
-                            public chromium::internal::DevToolsConnector {
+                            public monyhar::internal::DevToolsConnector {
  public:
   DebugModeController()
       : DebugModeController(
@@ -253,7 +253,7 @@ class DebugModeController : public WebEngineDevToolsController,
   absl::optional<uint16_t> devtools_port_;
 
  private:
-  // chromium::internal::DevToolsConnector implementation.
+  // monyhar::internal::DevToolsConnector implementation.
   void ConnectPerContextListener(
       fuchsia::web::DevToolsPerContextListenerHandle listener_handle) override {
     fuchsia::web::DevToolsPerContextListenerPtr listener;
@@ -285,7 +285,7 @@ class DebugModeController : public WebEngineDevToolsController,
   fidl::InterfacePtrSet<fuchsia::web::DevToolsPerContextListener>
       devtools_listeners_;
 
-  const base::ScopedServiceBinding<chromium::internal::DevToolsConnector>
+  const base::ScopedServiceBinding<monyhar::internal::DevToolsConnector>
       connector_binding_;
 };
 

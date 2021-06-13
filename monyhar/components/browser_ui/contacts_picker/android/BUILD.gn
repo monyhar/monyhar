@@ -18,21 +18,21 @@ source_set("android") {
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/components/browser_ui/contacts_picker/CompressContactIconsWorkerTask.java",
-    "java/src/org/chromium/components/browser_ui/contacts_picker/ContactDetails.java",
-    "java/src/org/chromium/components/browser_ui/contacts_picker/ContactView.java",
-    "java/src/org/chromium/components/browser_ui/contacts_picker/ContactViewHolder.java",
-    "java/src/org/chromium/components/browser_ui/contacts_picker/ContactsFetcherWorkerTask.java",
-    "java/src/org/chromium/components/browser_ui/contacts_picker/ContactsPickerDialog.java",
-    "java/src/org/chromium/components/browser_ui/contacts_picker/ContactsPickerFeatureList.java",
-    "java/src/org/chromium/components/browser_ui/contacts_picker/ContactsPickerToolbar.java",
-    "java/src/org/chromium/components/browser_ui/contacts_picker/FetchIconWorkerTask.java",
-    "java/src/org/chromium/components/browser_ui/contacts_picker/PickerAdapter.java",
-    "java/src/org/chromium/components/browser_ui/contacts_picker/PickerCategoryView.java",
-    "java/src/org/chromium/components/browser_ui/contacts_picker/TopView.java",
+    "java/src/org/monyhar/components/browser_ui/contacts_picker/CompressContactIconsWorkerTask.java",
+    "java/src/org/monyhar/components/browser_ui/contacts_picker/ContactDetails.java",
+    "java/src/org/monyhar/components/browser_ui/contacts_picker/ContactView.java",
+    "java/src/org/monyhar/components/browser_ui/contacts_picker/ContactViewHolder.java",
+    "java/src/org/monyhar/components/browser_ui/contacts_picker/ContactsFetcherWorkerTask.java",
+    "java/src/org/monyhar/components/browser_ui/contacts_picker/ContactsPickerDialog.java",
+    "java/src/org/monyhar/components/browser_ui/contacts_picker/ContactsPickerFeatureList.java",
+    "java/src/org/monyhar/components/browser_ui/contacts_picker/ContactsPickerToolbar.java",
+    "java/src/org/monyhar/components/browser_ui/contacts_picker/FetchIconWorkerTask.java",
+    "java/src/org/monyhar/components/browser_ui/contacts_picker/PickerAdapter.java",
+    "java/src/org/monyhar/components/browser_ui/contacts_picker/PickerCategoryView.java",
+    "java/src/org/monyhar/components/browser_ui/contacts_picker/TopView.java",
   ]
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
-  resources_package = "org.chromium.components.browser_ui.contacts_picker"
+  resources_package = "org.monyhar.components.browser_ui.contacts_picker"
   deps = [
     ":java_resources",
     "//base:base_java",
@@ -53,7 +53,7 @@ android_library("java") {
 }
 
 generate_jni("contacts_picker_jni_headers") {
-  sources = [ "java/src/org/chromium/components/browser_ui/contacts_picker/ContactsPickerFeatureList.java" ]
+  sources = [ "java/src/org/monyhar/components/browser_ui/contacts_picker/ContactsPickerFeatureList.java" ]
 }
 
 android_resources("java_resources") {
@@ -84,8 +84,8 @@ android_library("javatests") {
   testonly = true
 
   sources = [
-    "java/src/org/chromium/components/browser_ui/contacts_picker/ContactDetailsTest.java",
-    "java/src/org/chromium/components/browser_ui/contacts_picker/ContactsPickerDialogTest.java",
+    "java/src/org/monyhar/components/browser_ui/contacts_picker/ContactDetailsTest.java",
+    "java/src/org/monyhar/components/browser_ui/contacts_picker/ContactsPickerDialogTest.java",
   ]
   deps = [
     ":java",
@@ -111,5 +111,5 @@ android_library("javatests") {
     "//ui/android:ui_java",
     "//ui/android:ui_java_test_support",
   ]
-  resources_package = "org.chromium.components.browser_ui.contacts_picker.test"
+  resources_package = "org.monyhar.components.browser_ui.contacts_picker.test"
 }

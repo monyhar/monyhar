@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.subscriptions;
+package org.monyhar.chrome.browser.subscriptions;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.profiles.Profile;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.profiles.Profile;
 
 import java.util.ArrayList;
 import java.util.List;

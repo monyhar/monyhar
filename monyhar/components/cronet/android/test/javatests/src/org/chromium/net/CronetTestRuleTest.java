@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -19,12 +19,12 @@ import org.junit.Test;
 import org.junit.rules.TestName;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.Feature;
-import org.chromium.net.CronetTestRule.CronetTestFramework;
-import org.chromium.net.CronetTestRule.OnlyRunNativeCronet;
-import org.chromium.net.CronetTestRule.RequiresMinApi;
-import org.chromium.net.impl.CronetUrlRequestContext;
-import org.chromium.net.impl.JavaCronetEngine;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.net.CronetTestRule.CronetTestFramework;
+import org.monyhar.net.CronetTestRule.OnlyRunNativeCronet;
+import org.monyhar.net.CronetTestRule.RequiresMinApi;
+import org.monyhar.net.impl.CronetUrlRequestContext;
+import org.monyhar.net.impl.JavaCronetEngine;
 
 /**
  * Tests features of CronetTestRule.

@@ -62,24 +62,24 @@ static_library("android") {
 
 generate_jni("jni_headers") {
   sources = [
-    "java/src/org/chromium/components/payments/CanMakePaymentQuery.java",
-    "java/src/org/chromium/components/payments/CurrencyFormatter.java",
-    "java/src/org/chromium/components/payments/ErrorMessageUtil.java",
-    "java/src/org/chromium/components/payments/JniPaymentApp.java",
-    "java/src/org/chromium/components/payments/JourneyLogger.java",
-    "java/src/org/chromium/components/payments/OriginSecurityChecker.java",
-    "java/src/org/chromium/components/payments/PaymentCredentialEnrollmentBridgeAndroid.java",
-    "java/src/org/chromium/components/payments/PaymentFeatureList.java",
-    "java/src/org/chromium/components/payments/PaymentHandlerHost.java",
-    "java/src/org/chromium/components/payments/PaymentHandlerNavigationThrottle.java",
-    "java/src/org/chromium/components/payments/PaymentManifestDownloader.java",
-    "java/src/org/chromium/components/payments/PaymentManifestParser.java",
-    "java/src/org/chromium/components/payments/PaymentManifestWebDataService.java",
-    "java/src/org/chromium/components/payments/PaymentRequestSpec.java",
-    "java/src/org/chromium/components/payments/PaymentRequestUpdateEventListener.java",
-    "java/src/org/chromium/components/payments/PaymentValidator.java",
-    "java/src/org/chromium/components/payments/SslValidityChecker.java",
-    "java/src/org/chromium/components/payments/UrlUtil.java",
+    "java/src/org/monyhar/components/payments/CanMakePaymentQuery.java",
+    "java/src/org/monyhar/components/payments/CurrencyFormatter.java",
+    "java/src/org/monyhar/components/payments/ErrorMessageUtil.java",
+    "java/src/org/monyhar/components/payments/JniPaymentApp.java",
+    "java/src/org/monyhar/components/payments/JourneyLogger.java",
+    "java/src/org/monyhar/components/payments/OriginSecurityChecker.java",
+    "java/src/org/monyhar/components/payments/PaymentCredentialEnrollmentBridgeAndroid.java",
+    "java/src/org/monyhar/components/payments/PaymentFeatureList.java",
+    "java/src/org/monyhar/components/payments/PaymentHandlerHost.java",
+    "java/src/org/monyhar/components/payments/PaymentHandlerNavigationThrottle.java",
+    "java/src/org/monyhar/components/payments/PaymentManifestDownloader.java",
+    "java/src/org/monyhar/components/payments/PaymentManifestParser.java",
+    "java/src/org/monyhar/components/payments/PaymentManifestWebDataService.java",
+    "java/src/org/monyhar/components/payments/PaymentRequestSpec.java",
+    "java/src/org/monyhar/components/payments/PaymentRequestUpdateEventListener.java",
+    "java/src/org/monyhar/components/payments/PaymentValidator.java",
+    "java/src/org/monyhar/components/payments/SslValidityChecker.java",
+    "java/src/org/monyhar/components/payments/UrlUtil.java",
   ]
 }
 
@@ -106,15 +106,15 @@ android_resources("java_resources") {
 android_library("service_java") {
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
   sources = [
-    "java/src/org/chromium/components/payments/Address.java",
-    "java/src/org/chromium/components/payments/PackageManagerDelegate.java",
-    "java/src/org/chromium/components/payments/PayerData.java",
-    "java/src/org/chromium/components/payments/PaymentAddressTypeConverter.java",
-    "java/src/org/chromium/components/payments/PaymentDetailsUpdateService.java",
-    "java/src/org/chromium/components/payments/PaymentDetailsUpdateServiceHelper.java",
-    "java/src/org/chromium/components/payments/PaymentRequestUpdateEventListener.java",
-    "java/src/org/chromium/components/payments/intent/WebPaymentIntentHelper.java",
-    "java/src/org/chromium/components/payments/intent/WebPaymentIntentHelperType.java",
+    "java/src/org/monyhar/components/payments/Address.java",
+    "java/src/org/monyhar/components/payments/PackageManagerDelegate.java",
+    "java/src/org/monyhar/components/payments/PayerData.java",
+    "java/src/org/monyhar/components/payments/PaymentAddressTypeConverter.java",
+    "java/src/org/monyhar/components/payments/PaymentDetailsUpdateService.java",
+    "java/src/org/monyhar/components/payments/PaymentDetailsUpdateServiceHelper.java",
+    "java/src/org/monyhar/components/payments/PaymentRequestUpdateEventListener.java",
+    "java/src/org/monyhar/components/payments/intent/WebPaymentIntentHelper.java",
+    "java/src/org/monyhar/components/payments/intent/WebPaymentIntentHelperType.java",
   ]
   deps = [
     ":feature_list_java",
@@ -132,50 +132,50 @@ android_library("service_java") {
 android_library("feature_list_java") {
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
   sources =
-      [ "java/src/org/chromium/components/payments/PaymentFeatureList.java" ]
+      [ "java/src/org/monyhar/components/payments/PaymentFeatureList.java" ]
   deps = [ "//base:base_java" ]
 }
 
 android_library("full_java") {
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
   sources = [
-    "java/src/org/chromium/components/payments/AndroidPaymentApp.java",
-    "java/src/org/chromium/components/payments/AndroidPaymentAppFactory.java",
-    "java/src/org/chromium/components/payments/AndroidPaymentAppFinder.java",
-    "java/src/org/chromium/components/payments/BasicCardUtils.java",
-    "java/src/org/chromium/components/payments/BrowserPaymentRequest.java",
-    "java/src/org/chromium/components/payments/CanMakePaymentQuery.java",
-    "java/src/org/chromium/components/payments/CurrencyFormatter.java",
-    "java/src/org/chromium/components/payments/ErrorMessageUtil.java",
-    "java/src/org/chromium/components/payments/InvalidPaymentRequest.java",
-    "java/src/org/chromium/components/payments/JniPaymentApp.java",
-    "java/src/org/chromium/components/payments/JourneyLogger.java",
-    "java/src/org/chromium/components/payments/MojoPaymentRequestGateKeeper.java",
-    "java/src/org/chromium/components/payments/OriginSecurityChecker.java",
-    "java/src/org/chromium/components/payments/PaymentCredentialEnrollmentBridgeAndroid.java",
-    "java/src/org/chromium/components/payments/PaymentDetailsConverter.java",
-    "java/src/org/chromium/components/payments/PaymentHandlerNavigationThrottle.java",
-    "java/src/org/chromium/components/payments/PaymentManifestDownloader.java",
-    "java/src/org/chromium/components/payments/PaymentManifestParser.java",
-    "java/src/org/chromium/components/payments/PaymentManifestVerifier.java",
-    "java/src/org/chromium/components/payments/PaymentManifestWebDataService.java",
-    "java/src/org/chromium/components/payments/PaymentNotShownError.java",
-    "java/src/org/chromium/components/payments/PaymentOptionsUtils.java",
-    "java/src/org/chromium/components/payments/PaymentRequestService.java",
-    "java/src/org/chromium/components/payments/PaymentRequestServiceUtil.java",
-    "java/src/org/chromium/components/payments/PaymentResponseHelper.java",
-    "java/src/org/chromium/components/payments/PaymentResponseHelperInterface.java",
-    "java/src/org/chromium/components/payments/PaymentUiServiceTestInterface.java",
-    "java/src/org/chromium/components/payments/PaymentValidator.java",
-    "java/src/org/chromium/components/payments/SkipToGPayHelper.java",
-    "java/src/org/chromium/components/payments/SslValidityChecker.java",
-    "java/src/org/chromium/components/payments/SupportedDelegations.java",
-    "java/src/org/chromium/components/payments/UrlUtil.java",
-    "java/src/org/chromium/components/payments/WebAppManifestSection.java",
-    "java/src/org/chromium/components/payments/intent/IsReadyToPayServiceHelper.java",
-    "java/src/org/chromium/components/payments/intent/WebPaymentIntentHelperTypeConverter.java",
+    "java/src/org/monyhar/components/payments/AndroidPaymentApp.java",
+    "java/src/org/monyhar/components/payments/AndroidPaymentAppFactory.java",
+    "java/src/org/monyhar/components/payments/AndroidPaymentAppFinder.java",
+    "java/src/org/monyhar/components/payments/BasicCardUtils.java",
+    "java/src/org/monyhar/components/payments/BrowserPaymentRequest.java",
+    "java/src/org/monyhar/components/payments/CanMakePaymentQuery.java",
+    "java/src/org/monyhar/components/payments/CurrencyFormatter.java",
+    "java/src/org/monyhar/components/payments/ErrorMessageUtil.java",
+    "java/src/org/monyhar/components/payments/InvalidPaymentRequest.java",
+    "java/src/org/monyhar/components/payments/JniPaymentApp.java",
+    "java/src/org/monyhar/components/payments/JourneyLogger.java",
+    "java/src/org/monyhar/components/payments/MojoPaymentRequestGateKeeper.java",
+    "java/src/org/monyhar/components/payments/OriginSecurityChecker.java",
+    "java/src/org/monyhar/components/payments/PaymentCredentialEnrollmentBridgeAndroid.java",
+    "java/src/org/monyhar/components/payments/PaymentDetailsConverter.java",
+    "java/src/org/monyhar/components/payments/PaymentHandlerNavigationThrottle.java",
+    "java/src/org/monyhar/components/payments/PaymentManifestDownloader.java",
+    "java/src/org/monyhar/components/payments/PaymentManifestParser.java",
+    "java/src/org/monyhar/components/payments/PaymentManifestVerifier.java",
+    "java/src/org/monyhar/components/payments/PaymentManifestWebDataService.java",
+    "java/src/org/monyhar/components/payments/PaymentNotShownError.java",
+    "java/src/org/monyhar/components/payments/PaymentOptionsUtils.java",
+    "java/src/org/monyhar/components/payments/PaymentRequestService.java",
+    "java/src/org/monyhar/components/payments/PaymentRequestServiceUtil.java",
+    "java/src/org/monyhar/components/payments/PaymentResponseHelper.java",
+    "java/src/org/monyhar/components/payments/PaymentResponseHelperInterface.java",
+    "java/src/org/monyhar/components/payments/PaymentUiServiceTestInterface.java",
+    "java/src/org/monyhar/components/payments/PaymentValidator.java",
+    "java/src/org/monyhar/components/payments/SkipToGPayHelper.java",
+    "java/src/org/monyhar/components/payments/SslValidityChecker.java",
+    "java/src/org/monyhar/components/payments/SupportedDelegations.java",
+    "java/src/org/monyhar/components/payments/UrlUtil.java",
+    "java/src/org/monyhar/components/payments/WebAppManifestSection.java",
+    "java/src/org/monyhar/components/payments/intent/IsReadyToPayServiceHelper.java",
+    "java/src/org/monyhar/components/payments/intent/WebPaymentIntentHelperTypeConverter.java",
   ]
-  resources_package = "org.chromium.components.payments"
+  resources_package = "org.monyhar.components.payments"
   deps = [
     ":feature_list_java",
     ":java_resources",
@@ -204,22 +204,22 @@ android_library("full_java") {
     ":payments_journey_logger_enum_javagen",
     ":prefs_strings_generated_srcjar",
   ]
-  resources_package = "org.chromium.components.payments"
+  resources_package = "org.monyhar.components.payments"
 }
 
 # Minimal target that only includes what downstream code depends on.
 android_library("minimal_java") {
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
   sources = [
-    "java/src/org/chromium/components/payments/MojoStructCollection.java",
-    "java/src/org/chromium/components/payments/PaymentApp.java",
-    "java/src/org/chromium/components/payments/PaymentAppFactoryDelegate.java",
-    "java/src/org/chromium/components/payments/PaymentAppFactoryInterface.java",
-    "java/src/org/chromium/components/payments/PaymentAppFactoryParams.java",
-    "java/src/org/chromium/components/payments/PaymentAppService.java",
-    "java/src/org/chromium/components/payments/PaymentHandlerHost.java",
-    "java/src/org/chromium/components/payments/PaymentRequestParams.java",
-    "java/src/org/chromium/components/payments/PaymentRequestSpec.java",
+    "java/src/org/monyhar/components/payments/MojoStructCollection.java",
+    "java/src/org/monyhar/components/payments/PaymentApp.java",
+    "java/src/org/monyhar/components/payments/PaymentAppFactoryDelegate.java",
+    "java/src/org/monyhar/components/payments/PaymentAppFactoryInterface.java",
+    "java/src/org/monyhar/components/payments/PaymentAppFactoryParams.java",
+    "java/src/org/monyhar/components/payments/PaymentAppService.java",
+    "java/src/org/monyhar/components/payments/PaymentHandlerHost.java",
+    "java/src/org/monyhar/components/payments/PaymentRequestParams.java",
+    "java/src/org/monyhar/components/payments/PaymentRequestSpec.java",
   ]
   deps = [
     ":service_java",
@@ -237,7 +237,7 @@ android_library("minimal_java") {
     ":method_strings_generated_srcjar",
     ":payment_app_type_generated_enum",
   ]
-  resources_package = "org.chromium.components.payments"
+  resources_package = "org.monyhar.components.payments"
 }
 
 java_group("java") {
@@ -249,10 +249,10 @@ java_group("java") {
 }
 
 android_aidl("payment_details_update_service_aidl") {
-  interface_file = "java/src/org/chromium/components/payments/payment_details_update_service.aidl"
+  interface_file = "java/src/org/monyhar/components/payments/payment_details_update_service.aidl"
   sources = [
-    "java/src/org/chromium/components/payments/IPaymentDetailsUpdateService.aidl",
-    "java/src/org/chromium/components/payments/IPaymentDetailsUpdateServiceCallback.aidl",
+    "java/src/org/monyhar/components/payments/IPaymentDetailsUpdateService.aidl",
+    "java/src/org/monyhar/components/payments/IPaymentDetailsUpdateServiceCallback.aidl",
   ]
 }
 
@@ -287,9 +287,9 @@ java_library("junit_test_support") {
   bypass_platform_checks = true
   testonly = true
   sources = [
-    "junit/src/org/chromium/components/payments/test_support/PaymentRequestServiceBuilder.java",
-    "junit/src/org/chromium/components/payments/test_support/ShadowPaymentFeatureList.java",
-    "junit/src/org/chromium/components/payments/test_support/ShadowWebContentsStatics.java",
+    "junit/src/org/monyhar/components/payments/test_support/PaymentRequestServiceBuilder.java",
+    "junit/src/org/monyhar/components/payments/test_support/ShadowPaymentFeatureList.java",
+    "junit/src/org/monyhar/components/payments/test_support/ShadowWebContentsStatics.java",
   ]
   deps = [
     ":java",
@@ -313,7 +313,7 @@ java_library("junit") {
   bypass_platform_checks = true
   testonly = true
   sources = [
-    "junit/src/org/chromium/components/payments/PaymentRequestServiceTest.java",
+    "junit/src/org/monyhar/components/payments/PaymentRequestServiceTest.java",
   ]
   deps = [
     ":java",
@@ -340,7 +340,7 @@ java_library("junit") {
 
 android_library("javatests") {
   testonly = true
-  sources = [ "javatests/src/org/chromium/components/payments/AndroidPaymentAppUnitTest.java" ]
+  sources = [ "javatests/src/org/monyhar/components/payments/AndroidPaymentAppUnitTest.java" ]
   deps = [
     ":java",
     "//base:base_java_test_support",

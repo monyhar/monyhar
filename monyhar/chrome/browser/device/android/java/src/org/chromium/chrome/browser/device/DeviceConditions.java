@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.device;
+package org.monyhar.chrome.browser.device;
 
 import android.annotation.TargetApi;
 import android.app.KeyguardManager;
@@ -18,9 +18,9 @@ import android.os.PowerManager;
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.compat.ApiHelperForM;
-import org.chromium.net.ConnectionType;
-import org.chromium.net.NetworkChangeNotifier;
+import org.monyhar.base.compat.ApiHelperForM;
+import org.monyhar.net.ConnectionType;
+import org.monyhar.net.NetworkChangeNotifier;
 
 /**
  * Device network and power conditions that can be either checked individually with the specific
@@ -141,7 +141,7 @@ public class DeviceConditions {
 
     /**
      * @return Network connection type, where possible values are defined by
-     *     org.chromium.net.ConnectionType.
+     *     org.monyhar.net.ConnectionType.
      */
     public static int getCurrentNetConnectionType(Context context) {
         int connectionType = ConnectionType.CONNECTION_NONE;
@@ -158,7 +158,7 @@ public class DeviceConditions {
         // the GCM NM wakes us from doze state.  If we are really connected, report the connection
         // type from android.
         if (connectionType == ConnectionType.CONNECTION_NONE) {
-            // Get the connection type from android in case chromium's type is not yet set.
+            // Get the connection type from android in case monyhar's type is not yet set.
             ConnectivityManager cm =
                     (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
             NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
@@ -232,7 +232,7 @@ public class DeviceConditions {
 
     /**
      * Returns the network connection type based on the values defined in
-     * org.chromium.net.ConnectionType.
+     * org.monyhar.net.ConnectionType.
      */
     public int getNetConnectionType() {
         return mNetConnectionType;

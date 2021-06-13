@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.settings;
+package org.monyhar.chrome.browser.download.settings;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -15,11 +15,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.download.DirectoryOption;
-import org.chromium.chrome.browser.download.DownloadDialogBridge;
-import org.chromium.chrome.browser.download.R;
-import org.chromium.chrome.browser.download.StringUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.download.DirectoryOption;
+import org.monyhar.chrome.browser.download.DownloadDialogBridge;
+import org.monyhar.chrome.browser.download.R;
+import org.monyhar.chrome.browser.download.StringUtils;
 
 /**
  * Class used to provide data shown in the download location preference in download settings page.

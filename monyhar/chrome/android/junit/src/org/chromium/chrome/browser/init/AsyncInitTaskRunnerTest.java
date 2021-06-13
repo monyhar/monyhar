@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.init;
+package org.monyhar.chrome.browser.init;
 
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Matchers.anyString;
@@ -21,14 +21,14 @@ import org.robolectric.Robolectric;
 import org.robolectric.android.util.concurrent.RoboExecutorService;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.library_loader.LibraryProcessType;
-import org.chromium.base.library_loader.LoaderErrors;
-import org.chromium.base.library_loader.ProcessInitException;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.task.test.ShadowAsyncTask;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.components.variations.firstrun.VariationsSeedFetcher;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.library_loader.LibraryProcessType;
+import org.monyhar.base.library_loader.LoaderErrors;
+import org.monyhar.base.library_loader.ProcessInitException;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.task.test.ShadowAsyncTask;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.components.variations.firstrun.VariationsSeedFetcher;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Executor;

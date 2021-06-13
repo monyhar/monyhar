@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.process_launcher;
+package org.monyhar.base.process_launcher;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -35,8 +35,8 @@ import org.mockito.stubbing.Answer;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowLooper;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.Feature;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.Feature;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -45,7 +45,7 @@ import java.util.Set;
 @Config(manifest = Config.NONE)
 @RunWith(BaseRobolectricTestRunner.class)
 public class ChildConnectionAllocatorTest {
-    private static final String TEST_PACKAGE_NAME = "org.chromium.allocator_test";
+    private static final String TEST_PACKAGE_NAME = "org.monyhar.allocator_test";
 
     private static final int MAX_CONNECTION_NUMBER = 2;
 

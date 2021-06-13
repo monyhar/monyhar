@@ -45,7 +45,7 @@ into a Bitmap.
 
 If you are disabling hardware acceleration to avoid crashes, then please file
 a bug at
-https://bugs.chromium.org/p/chromium/issues/entry?template=Webview+Bugs.
+https://bugs.monyhar.org/p/monyhar/issues/entry?template=Webview+Bugs.
 Please include the apk of the app, exact steps to reproduce the crash, and the
 build fingerprint of the device. The fingerprint can be obtained with
 `adb shell getprop ro.build.fingerprint`.

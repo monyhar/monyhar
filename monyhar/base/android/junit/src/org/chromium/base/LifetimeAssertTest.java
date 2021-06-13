@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base;
+package org.monyhar.base;
 
 import org.junit.After;
 import org.junit.Assert;
@@ -11,8 +11,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.build.BuildConfig;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.build.BuildConfig;
 
 /**
  * junit tests for {@link LifetimeAssert}.

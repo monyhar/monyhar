@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.app.tabmodel;
+package org.monyhar.chrome.browser.app.tabmodel;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.supplier.OneshotSupplier;
-import org.chromium.chrome.browser.compositor.layouts.OverviewModeBehavior;
-import org.chromium.chrome.browser.tabmodel.NextTabPolicy;
-import org.chromium.chrome.browser.tabmodel.NextTabPolicy.NextTabPolicySupplier;
+import org.monyhar.base.supplier.OneshotSupplier;
+import org.monyhar.chrome.browser.compositor.layouts.OverviewModeBehavior;
+import org.monyhar.chrome.browser.tabmodel.NextTabPolicy;
+import org.monyhar.chrome.browser.tabmodel.NextTabPolicy.NextTabPolicySupplier;
 
 /**
  * Decides to show a next tab by location if overview is open, or by hierarchy otherwise.

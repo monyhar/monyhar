@@ -226,7 +226,7 @@ bool IsInheritableHandle(HANDLE handle) {
   // File handles (FILE_TYPE_DISK) and pipe handles (FILE_TYPE_PIPE) are known
   // to be inheritable. Console handles (FILE_TYPE_CHAR) are not inheritable via
   // PROC_THREAD_ATTRIBUTE_HANDLE_LIST. See
-  // https://crashpad.chromium.org/bug/77.
+  // https://crashpad.monyhar.org/bug/77.
   DWORD handle_type = GetFileType(handle);
   return handle_type == FILE_TYPE_DISK || handle_type == FILE_TYPE_PIPE;
 }

@@ -1,7 +1,7 @@
 This document describes how malloc / new calls are routed in the various Chrome
 platforms.
 
-Bare in mind that the chromium codebase does not always just use `malloc()`.
+Bare in mind that the monyhar codebase does not always just use `malloc()`.
 Some examples:
  - Large parts of the renderer (Blink) use two home-brewed allocators,
    PartitionAlloc and BlinkGC (Oilpan).
@@ -28,7 +28,7 @@ allocations that can hit signed vs. unsigned bugs in third_party code.
 
 **Linux Desktop / CrOS**
 `use_allocator: tcmalloc`, a forked copy of tcmalloc which resides in
-`third_party/tcmalloc/chromium`. Setting `use_allocator: none` causes the build
+`third_party/tcmalloc/monyhar`. Setting `use_allocator: none` causes the build
 to fall back to the system (Glibc) symbols.
 
 **Android**

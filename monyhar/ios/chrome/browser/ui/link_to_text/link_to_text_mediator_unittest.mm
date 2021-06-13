@@ -52,8 +52,8 @@ const CGFloat kFakeTopInset = 100;
 const char kJavaScriptFunctionName[] = "linkToText.getLinkToText";
 const char kTestQuote[] = "some selected text on a page";
 const char kTestHighlightURL[] =
-    "https://www.chromium.org/#:~:text=selected%20text";
-const char kTestBaseURL[] = "https://www.chromium.org/";
+    "https://www.monyhar.org/#:~:text=selected%20text";
+const char kTestBaseURL[] = "https://www.monyhar.org/";
 const TextFragment kTestTextFragment = TextFragment("selected text");
 
 const char kSuccessUkmMetric[] = "Success";
@@ -83,7 +83,7 @@ class LinkToTextMediatorTest : public PlatformTest {
     web_state_->SetWebFramesManager(std::move(web_frames_manager));
 
     auto main_frame = web::FakeWebFrame::Create(web::kMainFakeFrameId, true,
-                                                GURL("https://chromium.org/"));
+                                                GURL("https://monyhar.org/"));
     main_frame_ = main_frame.get();
     web_frames_manager_->AddWebFrame(std::move(main_frame));
 
@@ -551,7 +551,7 @@ TEST_F(LinkToTextMediatorTest, NotHttpsAndCanonicalUrl) {
   CGRect selection_rect = CGRectMake(100, 150, 250, 250);
 
   // Set WebState's URL to something not HTTPS.
-  GURL new_base_url("http://chromium.org");
+  GURL new_base_url("http://monyhar.org");
   web_state_->SetCurrentURL(new_base_url);
 
   std::unique_ptr<base::Value> fake_response =

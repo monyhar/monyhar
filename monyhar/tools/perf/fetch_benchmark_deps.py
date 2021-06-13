@@ -13,7 +13,7 @@ import sys
 import logging
 from six.moves import input  # pylint: disable=redefined-builtin
 
-from chrome_telemetry_build import chromium_config
+from chrome_telemetry_build import monyhar_config
 from core import benchmark_finders
 from core import path_util
 from py_utils import cloud_storage
@@ -114,7 +114,7 @@ def main(args):
     perf_dir = path_util.GetPerfDir()
     benchmark_dirs=[os.path.join(perf_dir, 'benchmarks'),
                     os.path.join(perf_dir, 'contrib')]
-    config = chromium_config.ChromiumConfig(
+    config = monyhar_config.ChromiumConfig(
         top_level_dir=path_util.GetPerfDir(), benchmark_dirs=benchmark_dirs)
     benchmark = config.GetBenchmarkByName(options.benchmark_name)
     if not benchmark:

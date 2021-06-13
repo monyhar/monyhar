@@ -19,7 +19,7 @@ import sys
 
 sys.path.append(
     os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir)))
-import devil_chromium
+import devil_monyhar
 from devil.android import apk_helper
 from devil.android import device_utils
 from devil.utils import reraiser_thread
@@ -349,7 +349,7 @@ def main():
   if args.output_directory:
     constants.SetOutputDirectory(args.output_directory)
 
-  devil_chromium.Initialize(output_directory=constants.GetOutDirectory())
+  devil_monyhar.Initialize(output_directory=constants.GetOutDirectory())
 
   # Retries are annoying when commands fail for legitimate reasons. Might want
   # to enable them if this is ever used on bots though.

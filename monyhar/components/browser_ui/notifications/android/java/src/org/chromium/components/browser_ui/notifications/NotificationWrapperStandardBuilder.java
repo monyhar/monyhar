@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.notifications;
+package org.monyhar.components.browser_ui.notifications;
 
 import android.app.Notification;
 import android.app.PendingIntent;
@@ -18,12 +18,12 @@ import android.widget.RemoteViews;
 
 import androidx.core.app.NotificationCompat;
 
-import org.chromium.base.Log;
-import org.chromium.base.compat.ApiHelperForM;
-import org.chromium.base.compat.ApiHelperForN;
-import org.chromium.base.compat.ApiHelperForO;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.components.browser_ui.notifications.channels.ChannelsInitializer;
+import org.monyhar.base.Log;
+import org.monyhar.base.compat.ApiHelperForM;
+import org.monyhar.base.compat.ApiHelperForN;
+import org.monyhar.base.compat.ApiHelperForO;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.components.browser_ui.notifications.channels.ChannelsInitializer;
 
 /**
  * Wraps a {@link Notification.Builder} object.

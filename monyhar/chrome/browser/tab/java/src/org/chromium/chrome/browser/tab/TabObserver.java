@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab;
+package org.monyhar.chrome.browser.tab;
 
 import android.graphics.Bitmap;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.components.find_in_page.FindMatchRectsDetails;
-import org.chromium.components.find_in_page.FindNotificationDetails;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.NavigationHandle;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.url.GURL;
+import org.monyhar.components.find_in_page.FindMatchRectsDetails;
+import org.monyhar.components.find_in_page.FindNotificationDetails;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.NavigationHandle;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.url.GURL;
 
 /**
  * An observer that is notified of changes to a {@link Tab} object.

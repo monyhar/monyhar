@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.subscriptions;
+package org.monyhar.chrome.browser.subscriptions;
 
-import org.chromium.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.CallbackHelper;
 
 import java.util.List;
 

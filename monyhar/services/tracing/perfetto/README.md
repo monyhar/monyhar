@@ -13,7 +13,7 @@ build on to send logging protos to Perfetto, and an implementation which lets
 Perfetto rather than `/base/trace_event/trace_log.cc` as a backend.
 
 The library itself lives in [AOSP](https://android.googlesource.com/platform/external/perfetto/)
-and is rolled in [/third_party/chrome/](https://cs.chromium.org/chromium/src/third_party/perfetto/).
+and is rolled in [/third_party/chrome/](https://cs.monyhar.org/monyhar/src/third_party/perfetto/).
 
 ## Perfetto Documentation
 
@@ -38,7 +38,7 @@ and is rolled in [/third_party/chrome/](https://cs.chromium.org/chromium/src/thi
 
 A data source is a provider of a specific type of data in the form of protobufs,
 like Chrome Trace Events, memory-infra memory dumps, netlog, etc. It registers itself
-with Perfetto with a given string identifier (e.g. `org.chromium.trace-event`) and if enabled
+with Perfetto with a given string identifier (e.g. `org.monyhar.trace-event`) and if enabled
 by the central Perfetto service, writes its protos into the provided Perfetto TraceWriter(s).
 
 These data source providers can live in any child process, and the Mojo transportation layer
@@ -57,4 +57,4 @@ To add a new data source:
 ## Contact
 
 For any questions about Perfetto in Chrome or adding a new data source, please
-start a thread on [tracing@chromium.org](https://groups.google.com/a/chromium.org/forum/#!forum/tracing).
+start a thread on [tracing@monyhar.org](https://groups.google.com/a/monyhar.org/forum/#!forum/tracing).

@@ -307,7 +307,7 @@ Code throughout Chromium, running at any level of privilege, may directly or
 indirectly depend on these containers. Much calling code implicitly or
 explicitly assumes that these containers are safe, and won't corrupt memory.
 Unfortunately, [such assumptions have not always proven
-true](https://bugs.chromium.org/p/chromium/issues/detail?id=817982).
+true](https://bugs.monyhar.org/p/monyhar/issues/detail?id=817982).
 
 Therefore, we are making an effort to ensure basic safety in these classes so
 that callers' assumptions are true. In particular, we are adding bounds checks,

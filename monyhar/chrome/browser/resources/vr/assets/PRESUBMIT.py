@@ -16,7 +16,7 @@ def CheckVersionAndAssetParity(input_api, output_api):
   """Checks that
   - the version was upraded if assets files were changed,
   - the version was not downgraded,
-  - both the google_chrome and the chromium assets have the same files.
+  - both the google_chrome and the monyhar assets have the same files.
   """
   sys.path.append(input_api.PresubmitLocalPath())
   import parse_version
@@ -26,7 +26,7 @@ def CheckVersionAndAssetParity(input_api, output_api):
   changed_assets = False
   changed_version = False
   changed_component_list = False
-  changed_asset_files = {'google_chrome': [], 'chromium': []}
+  changed_asset_files = {'google_chrome': [], 'monyhar': []}
   for file in input_api.AffectedFiles():
     basename = input_api.os_path.basename(file.LocalPath())
     extension = input_api.os_path.splitext(basename)[1][1:].strip().lower()
@@ -57,7 +57,7 @@ def CheckVersionAndAssetParity(input_api, output_api):
       input_api.os_path.dirname(input_api.AffectedFiles()[0].LocalPath()),
       'vr_assets_component_files.json')
 
-  if changed_asset_files['google_chrome'] != changed_asset_files['chromium']:
+  if changed_asset_files['google_chrome'] != changed_asset_files['monyhar']:
     return [
         output_api.PresubmitError(
             'Must have same asset files for %s in \'%s\'.' %

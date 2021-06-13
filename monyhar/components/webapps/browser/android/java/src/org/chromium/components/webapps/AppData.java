@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.webapps;
+package org.monyhar.components.webapps;
 
 import android.app.PendingIntent;
 import android.content.Intent;

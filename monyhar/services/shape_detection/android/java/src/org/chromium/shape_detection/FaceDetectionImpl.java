@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.shape_detection;
+package org.monyhar.shape_detection;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -10,15 +10,15 @@ import android.graphics.PointF;
 import android.media.FaceDetector;
 import android.media.FaceDetector.Face;
 
-import org.chromium.base.Log;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.task.TaskTraits;
-import org.chromium.gfx.mojom.RectF;
-import org.chromium.mojo.system.MojoException;
-import org.chromium.shape_detection.mojom.FaceDetection;
-import org.chromium.shape_detection.mojom.FaceDetectionResult;
-import org.chromium.shape_detection.mojom.FaceDetectorOptions;
-import org.chromium.shape_detection.mojom.Landmark;
+import org.monyhar.base.Log;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.task.TaskTraits;
+import org.monyhar.gfx.mojom.RectF;
+import org.monyhar.mojo.system.MojoException;
+import org.monyhar.shape_detection.mojom.FaceDetection;
+import org.monyhar.shape_detection.mojom.FaceDetectionResult;
+import org.monyhar.shape_detection.mojom.FaceDetectorOptions;
+import org.monyhar.shape_detection.mojom.Landmark;
 
 /**
  * Android implementation of the FaceDetection service defined in
@@ -37,7 +37,7 @@ public class FaceDetectionImpl implements FaceDetection {
 
     @Override
     public void detect(
-            org.chromium.skia.mojom.BitmapN32 bitmapData, final DetectResponse callback) {
+            org.monyhar.skia.mojom.BitmapN32 bitmapData, final DetectResponse callback) {
         Bitmap bitmap = BitmapUtils.convertToBitmap(bitmapData);
         if (bitmap == null) {
             Log.e(TAG, "Error converting Mojom Bitmap to Android Bitmap");

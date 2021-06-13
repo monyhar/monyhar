@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions;
+package org.monyhar.chrome.browser.omnibox.suggestions;
 
-import org.chromium.base.annotations.MockedInTests;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.annotations.MockedInTests;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * A processor of omnibox dropdown items.
@@ -29,7 +29,7 @@ public interface DropdownItemProcessor {
     PropertyModel createModel();
 
     /**
-     * @see org.chromium.chrome.browser.omnibox.UrlFocusChangeListener#onUrlFocusChange(boolean)
+     * @see org.monyhar.chrome.browser.omnibox.UrlFocusChangeListener#onUrlFocusChange(boolean)
      */
     void onUrlFocusChange(boolean hasFocus);
 

@@ -246,9 +246,9 @@ def _read_configuration_from_gn(fs, options):
     build_directory = getattr(options, 'build_directory', 'out')
     target = options.target
     finder = PathFinder(fs)
-    path = fs.join(finder.chromium_base(), build_directory, target, 'args.gn')
+    path = fs.join(finder.monyhar_base(), build_directory, target, 'args.gn')
     if not fs.exists(path):
-        path = fs.join(finder.chromium_base(), build_directory, target,
+        path = fs.join(finder.monyhar_base(), build_directory, target,
                        'toolchain.ninja')
         if not fs.exists(path):
             # This does not appear to be a GN-based build directory, so we don't know

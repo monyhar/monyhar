@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.chromium.third_party.android.media;
+package org.monyhar.third_party.android.media;
 
 import android.content.Context;
 import android.support.v4.media.session.PlaybackStateCompat;
@@ -29,7 +29,7 @@ import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import org.chromium.third_party.android.media.R;
+import org.monyhar.third_party.android.media.R;
 
 import java.util.Formatter;
 import java.util.Locale;

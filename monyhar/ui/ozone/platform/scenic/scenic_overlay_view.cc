@@ -17,7 +17,7 @@ namespace {
 // |buffer_collection_id| that is passed to ImagePipe::AddBufferCollection() if
 // SysmemBufferCollection instance is registered with one.
 static const uint32_t kImagePipeBufferCollectionId = 1;
-static const std::string kSessionDebugName = "chromium scenic overlay";
+static const std::string kSessionDebugName = "monyhar scenic overlay";
 
 fuchsia::ui::views::ViewToken CreateViewToken(
     fuchsia::ui::views::ViewHolderToken* holder_token) {

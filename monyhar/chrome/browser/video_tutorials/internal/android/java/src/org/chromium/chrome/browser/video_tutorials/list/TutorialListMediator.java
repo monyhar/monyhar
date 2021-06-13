@@ -2,22 +2,22 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.video_tutorials.list;
+package org.monyhar.chrome.browser.video_tutorials.list;
 
 import android.content.Context;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcher;
-import org.chromium.chrome.browser.video_tutorials.Tutorial;
-import org.chromium.chrome.browser.video_tutorials.VideoTutorialService;
-import org.chromium.chrome.browser.video_tutorials.VideoTutorialUtils;
-import org.chromium.chrome.browser.video_tutorials.metrics.VideoTutorialMetrics;
-import org.chromium.chrome.browser.video_tutorials.metrics.VideoTutorialMetrics.UserAction;
-import org.chromium.ui.modelutil.MVCListAdapter;
-import org.chromium.ui.modelutil.MVCListAdapter.ListItem;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcher;
+import org.monyhar.chrome.browser.video_tutorials.Tutorial;
+import org.monyhar.chrome.browser.video_tutorials.VideoTutorialService;
+import org.monyhar.chrome.browser.video_tutorials.VideoTutorialUtils;
+import org.monyhar.chrome.browser.video_tutorials.metrics.VideoTutorialMetrics;
+import org.monyhar.chrome.browser.video_tutorials.metrics.VideoTutorialMetrics.UserAction;
+import org.monyhar.ui.modelutil.MVCListAdapter;
+import org.monyhar.ui.modelutil.MVCListAdapter.ListItem;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.util.List;
 

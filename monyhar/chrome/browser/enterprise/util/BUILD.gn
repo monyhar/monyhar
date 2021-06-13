@@ -5,8 +5,8 @@
 import("//build/config/android/rules.gni")
 
 _jni_sources = [
-  "android/java/src/org/chromium/chrome/browser/enterprise/util/EnterpriseInfo.java",
-  "android/java/src/org/chromium/chrome/browser/enterprise/util/ManagedBrowserUtils.java",
+  "android/java/src/org/monyhar/chrome/browser/enterprise/util/EnterpriseInfo.java",
+  "android/java/src/org/monyhar/chrome/browser/enterprise/util/ManagedBrowserUtils.java",
 ]
 
 android_library("java") {
@@ -29,7 +29,7 @@ android_library("junit") {
   bypass_platform_checks = true
   testonly = true
 
-  sources = [ "android/java/src/org/chromium/chrome/browser/enterprise/util/EnterpriseInfoTest.java" ]
+  sources = [ "android/java/src/org/monyhar/chrome/browser/enterprise/util/EnterpriseInfoTest.java" ]
 
   deps = [
     ":java",

@@ -5,7 +5,7 @@
 declare_args() {
   # If this is true, the build will look for extra Google-internal resources.
   # This should only be set on the Chrome Cleaner builders, not general
-  # chromium builders, since it can cause tests to take longer.
+  # monyhar builders, since it can cause tests to take longer.
   is_internal_chrome_cleaner_build = false
 
   # If this is true, builds an official release of the Chrome Cleanup Tool

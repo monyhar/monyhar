@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.external_intents;
+package org.monyhar.components.external_intents;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -19,13 +19,13 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.PackageManagerUtils;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.AdvancedMockContext;
-import org.chromium.base.test.util.Feature;
-import org.chromium.ui.base.PageTransition;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.PackageManagerUtils;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.AdvancedMockContext;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.ui.base.PageTransition;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;

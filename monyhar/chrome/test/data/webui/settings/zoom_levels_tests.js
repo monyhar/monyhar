@@ -36,9 +36,9 @@ suite('ZoomLevels', function() {
       zoom: '125%',
     },
     {
-      origin: 'http://www.chromium.org',
-      displayName: 'http://www.chromium.org',
-      originForFavicon: 'http://www.chromium.org',
+      origin: 'http://www.monyhar.org',
+      displayName: 'http://www.monyhar.org',
+      originForFavicon: 'http://www.monyhar.org',
       setting: '',
       source: '',
       zoom: '125%',

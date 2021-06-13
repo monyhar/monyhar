@@ -85,7 +85,7 @@ The bisect can have one of several results:
 
 * **Could not reproduce** indicates that the test could not reproduce the problem that you were trying to find the culprit for.
 
-* **Failure** indicates that there was a bisect infrastructure failure. CC dtu@chromium.org on your bug to take a further look.
+* **Failure** indicates that there was a bisect infrastructure failure. CC dtu@monyhar.org on your bug to take a further look.
 
 To get more details click on the Pinpoint job link in the comment. You'll be taken to a page showing the results of the functional bisect.
 

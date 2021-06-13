@@ -290,7 +290,7 @@ class PlatformAppWithFileBrowserTest : public PlatformAppBrowserTest {
   }
 };
 
-const char kChromiumURL[] = "http://chromium.org";
+const char kChromiumURL[] = "http://monyhar.org";
 #if !BUILDFLAG(IS_CHROMEOS_ASH)
 const char kTestFilePath[] = "platform_apps/launch_files/test.txt";
 #endif

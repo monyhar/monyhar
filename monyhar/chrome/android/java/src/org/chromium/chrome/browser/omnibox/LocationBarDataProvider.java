@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox;
+package org.monyhar.chrome.browser.omnibox;
 
 import android.content.res.ColorStateList;
 
@@ -12,8 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.security_state.ConnectionSecurityLevel;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.security_state.ConnectionSecurityLevel;
 
 /**
  * Interface defining a provider for data needed by the {@link LocationBar}.

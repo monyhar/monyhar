@@ -67,9 +67,9 @@ class TextStyleTestCase(unittest.TestCase):
 
     def test_error(self):
         """Tests for error cases."""
-        self.assertError(['2009-12-16\tKent Tamura\t<tkent@chromium.org>'], 1)
+        self.assertError(['2009-12-16\tKent Tamura\t<tkent@monyhar.org>'], 1)
         self.assertError([
-            '2009-12-16 Kent Tamura <tkent@chromium.org>', '',
+            '2009-12-16 Kent Tamura <tkent@monyhar.org>', '',
             '\tReviewed by NOBODY.'
         ], 3)
 

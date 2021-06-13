@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.answer;
+package org.monyhar.chrome.browser.omnibox.suggestions.answer;
 
 import android.content.Context;
 import android.text.style.MetricAffectingSpan;
@@ -10,13 +10,13 @@ import android.text.style.TextAppearanceSpan;
 
 import androidx.annotation.StyleRes;
 
-import org.chromium.base.Log;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.omnibox.OmniboxSuggestionType;
-import org.chromium.components.omnibox.AnswerTextType;
-import org.chromium.components.omnibox.AnswerType;
-import org.chromium.components.omnibox.AutocompleteMatch;
-import org.chromium.components.omnibox.SuggestionAnswer;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.omnibox.OmniboxSuggestionType;
+import org.monyhar.components.omnibox.AnswerTextType;
+import org.monyhar.components.omnibox.AnswerType;
+import org.monyhar.components.omnibox.AutocompleteMatch;
+import org.monyhar.components.omnibox.SuggestionAnswer;
 
 /**
  * AnswerTextNewLayout builds Omnibox styled Answer suggestion texts for revamped answer layouts.

@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.instantapps;
+package org.monyhar.chrome.browser.instantapps;
 
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.url.GURL;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.url.GURL;
 
 /**
  * A bridge class for retrieving Instant Apps-related settings.

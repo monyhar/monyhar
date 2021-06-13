@@ -4,7 +4,7 @@
 **Note:** Using MojoLPM to fuzz your Mojo interfaces is intended to be simple,
 but there are edge-cases that may require a very detailed understanding of the
 Mojo implementation to fix. If you run into problems that you can't understand
-readily, send an email to [markbrand@google.com] and cc `fuzzing@chromium.org`
+readily, send an email to [markbrand@google.com] and cc `fuzzing@monyhar.org`
 and we'll try and help.
 
 **Prerequisites:** Knowledge of [libfuzzer] and basic understanding
@@ -404,7 +404,7 @@ the rough structure of the presentation service fuzzer")
 Make a corpus directory and fire up your shiny new fuzzer!
 
 ```
- ~/chromium/src% out/Default/code_cache_host_mojolpm_fuzzer /dev/shm/corpus
+ ~/monyhar/src% out/Default/code_cache_host_mojolpm_fuzzer /dev/shm/corpus
 INFO: Seed: 3273881842
 INFO: Loaded 1 modules   (1121912 inline 8-bit counters): 1121912 [0x559151a1aea8, 0x559151b2cd20),
 INFO: Loaded 1 PC tables (1121912 PCs): 1121912 [0x559151b2cd20,0x559152c4b4a0),
@@ -709,7 +709,7 @@ cases - the error happens on the `fuzzer_thread`, and during serialization.
     #44 0x7fbd957dfb40 in base::(anonymous namespace)::ThreadFunc(void*) base/threading/platform_thread_posix.cc:81:13
     #45 0x7fbd403866b9 in start_thread /build/glibc-LK5gWL/glibc-2.23/nptl/pthread_create.c:333
 AddressSanitizer can not provide additional info.
-SUMMARY: AddressSanitizer: ILL (/mnt/scratch0/clusterfuzz/bot/builds/chromium-browser-libfuzzer_linux-release-asan_ae530a86793cd6b8b56ce9af9159ac101396e802/revisions/libfuzzer-linux-release-807440/libmojo_base_shared_typemap_traits.so+0x190f9)
+SUMMARY: AddressSanitizer: ILL (/mnt/scratch0/clusterfuzz/bot/builds/monyhar-browser-libfuzzer_linux-release-asan_ae530a86793cd6b8b56ce9af9159ac101396e802/revisions/libfuzzer-linux-release-807440/libmojo_base_shared_typemap_traits.so+0x190f9)
 Thread T5 (fuzzer_thread) created by T0 here:
     #0 0x56433ef70b3a in pthread_create third_party/llvm/compiler-rt/lib/asan/asan_interceptors.cpp:214:3
 ...
@@ -718,10 +718,10 @@ Thread T5 (fuzzer_thread) created by T0 here:
 ==2940792==ABORTING
 ```
 
-[markbrand@google.com]:mailto:markbrand@google.com?subject=[MojoLPM%20Help]:%20&cc=fuzzing@chromium.org
-[libfuzzer]: https://source.chromium.org/chromium/chromium/src/+/main:testing/libfuzzer/getting_started.md
+[markbrand@google.com]:mailto:markbrand@google.com?subject=[MojoLPM%20Help]:%20&cc=fuzzing@monyhar.org
+[libfuzzer]: https://source.monyhar.org/monyhar/monyhar/src/+/main:testing/libfuzzer/getting_started.md
 [Protocol Buffers]: https://developers.google.com/protocol-buffers/docs/cpptutorial
-[libprotobuf-mutator]: https://source.chromium.org/chromium/chromium/src/+/main:testing/libfuzzer/libprotobuf-mutator.md
-[testing in Chromium]: https://source.chromium.org/chromium/chromium/src/+/main:docs/testing/testing_in_chromium.md
-[interfaces]: https://source.chromium.org/search?q=interface%5Cs%2B%5Cw%2B%5Cs%2B%7B%20f:%5C.mojom$%20-f:test
+[libprotobuf-mutator]: https://source.monyhar.org/monyhar/monyhar/src/+/main:testing/libfuzzer/libprotobuf-mutator.md
+[testing in Chromium]: https://source.monyhar.org/monyhar/monyhar/src/+/main:docs/testing/testing_in_monyhar.md
+[interfaces]: https://source.monyhar.org/search?q=interface%5Cs%2B%5Cw%2B%5Cs%2B%7B%20f:%5C.mojom$%20-f:test
 

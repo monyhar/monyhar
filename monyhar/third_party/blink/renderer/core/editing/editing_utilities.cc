@@ -464,7 +464,7 @@ bool IsEditablePosition(const Position& position) {
   if (node->GetDocument().Lifecycle().GetState() >=
       DocumentLifecycle::kInStyleRecalc) {
     // TODO(yosin): Update the condition and DCHECK here given that
-    // https://codereview.chromium.org/2665823002/ avoided this function from
+    // https://codereview.monyhar.org/2665823002/ avoided this function from
     // being called during InStyleRecalc.
   } else {
     DCHECK(!NeedsLayoutTreeUpdate(position)) << position;

@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.resources;
+package org.monyhar.chrome.browser.compositor.resources;
 
 import android.content.Context;
 
-import org.chromium.chrome.R;
-import org.chromium.ui.base.DeviceFormFactor;
+import org.monyhar.chrome.R;
+import org.monyhar.ui.base.DeviceFormFactor;
 
 /**
  * Tracks all high priority resources that should be loaded at startup to be used by CC layers.

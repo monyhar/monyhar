@@ -53,7 +53,7 @@ export const prefsTestCases = [
       type: chrome.settingsPrivate.PrefType.STRING,
       value: 'example.com',
     },
-    nextValues: ['chromium.org', 'chrome.example.com'],
+    nextValues: ['monyhar.org', 'chrome.example.com'],
   },
   {
     pref: {
@@ -70,7 +70,7 @@ export const prefsTestCases = [
       // Array of dictionaries.
       value: [
         {
-          javascript: ['chromium.org', 'example.com'],
+          javascript: ['monyhar.org', 'example.com'],
           cookies: ['example.net'],
           mic: ['example.com'],
           flash: []
@@ -89,8 +89,8 @@ export const prefsTestCases = [
       ],
       [
         {
-          javascript: ['chromium.org', 'example.com'],
-          cookies: ['chromium.org', 'example.net', 'example.com'],
+          javascript: ['monyhar.org', 'example.com'],
+          cookies: ['monyhar.org', 'example.net', 'example.com'],
           flash: ['localhost'],
           mic: ['example.com']
         },

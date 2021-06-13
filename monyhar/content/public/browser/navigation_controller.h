@@ -64,7 +64,7 @@ class NavigationController {
   //
   // A Java counterpart will be generated for this enum.
   // GENERATED_JAVA_ENUM_PACKAGE: (
-  //   org.chromium.content_public.browser.navigation_controller)
+  //   org.monyhar.content_public.browser.navigation_controller)
   // GENERATED_JAVA_PREFIX_TO_STRIP: LOAD_TYPE_
   enum LoadURLType {
     // For loads that do not fall into any types below.
@@ -86,7 +86,7 @@ class NavigationController {
   //
   // A Java counterpart will be generated for this enum.
   // GENERATED_JAVA_ENUM_PACKAGE: (
-  //   org.chromium.content_public.browser.navigation_controller)
+  //   org.monyhar.content_public.browser.navigation_controller)
   // GENERATED_JAVA_PREFIX_TO_STRIP: UA_OVERRIDE_
   enum UserAgentOverrideOption {
     // Use the override value from the previous NavigationEntry in the

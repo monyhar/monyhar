@@ -1,4 +1,4 @@
 per-file OWNERS=file://tools/metrics/histograms/histograms_xml/METRIC_REVIEWER_OWNERS
 
-# Use either chromium-metrics-reviews@google.com or the below owners.
-toyoshim@chromium.org
+# Use either monyhar-metrics-reviews@google.com or the below owners.
+toyoshim@monyhar.org

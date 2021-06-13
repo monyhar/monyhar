@@ -11,7 +11,7 @@ if (is_mac) {
 }
 
 app_name = "UpdaterTestApp"
-app_bundle_id = "org.chromium.updatertestapp"
+app_bundle_id = "org.monyhar.updatertestapp"
 
 if (is_mac) {
   app_framework_name = app_name + " Framework"

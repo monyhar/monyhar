@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo;
+package org.monyhar.mojo;
 
 import androidx.annotation.IntDef;
 
 import org.junit.rules.ExternalResource;
 
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.library_loader.LibraryProcessType;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.library_loader.LibraryProcessType;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

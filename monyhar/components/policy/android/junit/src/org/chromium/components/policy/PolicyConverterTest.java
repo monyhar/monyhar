@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.policy;
+package org.monyhar.components.policy;
 
 import static org.mockito.Mockito.verify;
 
@@ -17,8 +17,8 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.JniMocker;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.JniMocker;
 
 /**
  * Robolectric test for AbstractAppRestrictionsProvider.
@@ -40,7 +40,7 @@ public class PolicyConverterTest {
 
     /**
      * Test method for
-     * {@link org.chromium.components.policy.PolicyConverter#setPolicy(java.lang.String,
+     * {@link org.monyhar.components.policy.PolicyConverter#setPolicy(java.lang.String,
      * java.lang.Object)}.
      */
     @Test

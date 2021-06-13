@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.build;
+package org.monyhar.build;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -38,7 +38,7 @@ public class FlushingReTrace {
             // and "at" changed to to allow :
             // E.g.: 06-22 13:58:02.895  4674  4674 E THREAD_STATE:     bLA.a( PG : 173 )
             // Normal stack trace lines look like:
-            // \tat org.chromium.chrome.browser.tab.Tab.handleJavaCrash(Tab.java:682)
+            // \tat org.monyhar.chrome.browser.tab.Tab.handleJavaCrash(Tab.java:682)
             + "(?:.*?(?::|\\bat)\\s+%c\\.%m\\s*\\(\\s*%s(?:\\s*:\\s*%l\\s*)?\\))|"
             // E.g.: Caused by: java.lang.NullPointerException: Attempt to read from field 'int bLA'
             // on a null object reference

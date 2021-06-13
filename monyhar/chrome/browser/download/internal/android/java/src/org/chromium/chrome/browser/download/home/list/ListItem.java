@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.home.list;
+package org.monyhar.chrome.browser.download.home.list;
 
 import android.util.Pair;
 import android.view.View;
@@ -10,8 +10,8 @@ import android.view.View;
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.browser.download.home.StableIds;
-import org.chromium.components.offline_items_collection.OfflineItem;
+import org.monyhar.chrome.browser.download.home.StableIds;
+import org.monyhar.components.offline_items_collection.OfflineItem;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

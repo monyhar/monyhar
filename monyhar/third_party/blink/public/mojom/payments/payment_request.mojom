@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-[JavaPackage="org.chromium.payments.mojom"]
+[JavaPackage="org.monyhar.payments.mojom"]
 module payments.mojom;
 
 import "components/payments/mojom/payment_request_data.mojom";
@@ -238,7 +238,7 @@ enum PaymentComplete {
 
 // Implemented in the browser process. Not sandboxed. Deals with trusted data.
 // Android implementation (Clank, WebLayer):
-//   components/payments/content/android/java/src/org/chromium/components/payments/MojoPaymentRequestGateKeeper.java
+//   components/payments/content/android/java/src/org/monyhar/components/payments/MojoPaymentRequestGateKeeper.java
 // Desktop (Windows, ChromeOS, Linux, MacOS) implementation:
 //   components/payments/content/payment_request.h
 interface PaymentRequest {

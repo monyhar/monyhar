@@ -12,7 +12,7 @@
 
 // These tests mirror testSimulateTrialAssignments and
 // testSimulateTrialAssignmentsWithForcedSalt in the internal crosstalk_test.py.
-// Both places hard-code the same expected results, ensuring the chromium
+// Both places hard-code the same expected results, ensuring the monyhar
 // implementation matches the Python implementation.
 
 namespace variations {

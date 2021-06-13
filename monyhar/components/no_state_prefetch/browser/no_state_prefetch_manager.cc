@@ -530,7 +530,7 @@ NoStatePrefetchManager::AddPrerenderWithPreconnectFallback(
   }
 
   // Disallow NSPing link-rel:next URLs.
-  // See https://bugs.chromium.org/p/chromium/issues/detail?id=1158209.
+  // See https://bugs.monyhar.org/p/monyhar/issues/detail?id=1158209.
   if (origin == ORIGIN_LINK_REL_NEXT) {
     SkipNoStatePrefetchContentsAndMaybePreconnect(
         url_arg, origin, FINAL_STATUS_LINK_REL_NEXT_NOT_ALLOWED);

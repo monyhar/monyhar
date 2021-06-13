@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.video_tutorials.iph;
+package org.monyhar.chrome.browser.video_tutorials.iph;
 
-import org.chromium.chrome.browser.video_tutorials.FeatureType;
+import org.monyhar.chrome.browser.video_tutorials.FeatureType;
 
 /**
  * This class acts as a temporary tracker of the user click on Try Now button on the video player

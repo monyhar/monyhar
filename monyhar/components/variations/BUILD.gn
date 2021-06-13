@@ -140,8 +140,8 @@ component("variations") {
 if (is_android) {
   generate_jni("jni") {
     sources = [
-      "android/java/src/org/chromium/components/variations/VariationsAssociatedData.java",
-      "android/java/src/org/chromium/components/variations/firstrun/VariationsSeedBridge.java",
+      "android/java/src/org/monyhar/components/variations/VariationsAssociatedData.java",
+      "android/java/src/org/monyhar/components/variations/firstrun/VariationsSeedBridge.java",
     ]
   }
 

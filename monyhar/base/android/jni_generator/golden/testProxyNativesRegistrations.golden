@@ -23,18 +23,18 @@
 // Step 2: Forward declarations (methods).
 
 JNI_GENERATOR_EXPORT void
-    Java_org_chromium_base_natives_GEN_1JNI_org_1chromium_1example_1SampleProxyJni_1foo(
+    Java_org_monyhar_base_natives_GEN_1JNI_org_1monyhar_1example_1SampleProxyJni_1foo(
     JNIEnv* env,
     jclass jcaller,
     jlong nativePtr);
 JNI_GENERATOR_EXPORT jint
-    Java_org_chromium_base_natives_GEN_1JNI_org_1chromium_1example_1SampleProxyJni_1bar(
+    Java_org_monyhar_base_natives_GEN_1JNI_org_1monyhar_1example_1SampleProxyJni_1bar(
     JNIEnv* env,
     jclass jcaller,
     jint x,
     jint y);
 JNI_GENERATOR_EXPORT jstring
-    Java_org_chromium_base_natives_GEN_1JNI_org_1chromium_1example_1SampleProxyJni_1foobar(
+    Java_org_monyhar_base_natives_GEN_1JNI_org_1monyhar_1example_1SampleProxyJni_1foobar(
     JNIEnv* env,
     jclass jcaller,
     jstring x,
@@ -44,30 +44,30 @@ JNI_GENERATOR_EXPORT jstring
 // Step 3: Method declarations.
 
 
-static const JNINativeMethod kMethods_org_chromium_base_natives_GEN_1JNI[] = {
-    { "org_chromium_example_SampleProxyJni_foo", "(J)V",
-        reinterpret_cast<void*>(Java_org_chromium_base_natives_GEN_1JNI_org_1chromium_1example_1SampleProxyJni_1foo)
+static const JNINativeMethod kMethods_org_monyhar_base_natives_GEN_1JNI[] = {
+    { "org_monyhar_example_SampleProxyJni_foo", "(J)V",
+        reinterpret_cast<void*>(Java_org_monyhar_base_natives_GEN_1JNI_org_1monyhar_1example_1SampleProxyJni_1foo)
         },
-    { "org_chromium_example_SampleProxyJni_bar", "(II)I",
-        reinterpret_cast<void*>(Java_org_chromium_base_natives_GEN_1JNI_org_1chromium_1example_1SampleProxyJni_1bar)
+    { "org_monyhar_example_SampleProxyJni_bar", "(II)I",
+        reinterpret_cast<void*>(Java_org_monyhar_base_natives_GEN_1JNI_org_1monyhar_1example_1SampleProxyJni_1bar)
         },
-    { "org_chromium_example_SampleProxyJni_foobar",
+    { "org_monyhar_example_SampleProxyJni_foobar",
         "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
-        reinterpret_cast<void*>(Java_org_chromium_base_natives_GEN_1JNI_org_1chromium_1example_1SampleProxyJni_1foobar)
+        reinterpret_cast<void*>(Java_org_monyhar_base_natives_GEN_1JNI_org_1monyhar_1example_1SampleProxyJni_1foobar)
         },
 
 };
 
 namespace {
 
-JNI_REGISTRATION_EXPORT bool RegisterNative_org_chromium_base_natives_GEN_1JNI(JNIEnv* env) {
-  const int number_of_methods = base::size(kMethods_org_chromium_base_natives_GEN_1JNI);
+JNI_REGISTRATION_EXPORT bool RegisterNative_org_monyhar_base_natives_GEN_1JNI(JNIEnv* env) {
+  const int number_of_methods = base::size(kMethods_org_monyhar_base_natives_GEN_1JNI);
 
   base::android::ScopedJavaLocalRef<jclass> native_clazz =
-      base::android::GetClass(env, "org/chromium/base/natives/GEN_JNI");
+      base::android::GetClass(env, "org/monyhar/base/natives/GEN_JNI");
   if (env->RegisterNatives(
       native_clazz.obj(),
-      kMethods_org_chromium_base_natives_GEN_1JNI,
+      kMethods_org_monyhar_base_natives_GEN_1JNI,
       number_of_methods) < 0) {
 
     jni_generator::HandleRegistrationError(env, native_clazz.obj(), __FILE__);
@@ -91,7 +91,7 @@ bool RegisterMainDexNatives(JNIEnv* env) {
 
 bool RegisterNonMainDexNatives(JNIEnv* env) {
   // Register natives in a proxy.
-  if (!RegisterNative_org_chromium_base_natives_GEN_1JNI(env)) {
+  if (!RegisterNative_org_monyhar_base_natives_GEN_1JNI(env)) {
     return false;
   }
 

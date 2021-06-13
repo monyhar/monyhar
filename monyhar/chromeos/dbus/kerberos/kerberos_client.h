@@ -17,7 +17,7 @@ class Bus;
 
 namespace chromeos {
 
-// KerberosClient is used to communicate with the org.chromium.Kerberos
+// KerberosClient is used to communicate with the org.monyhar.Kerberos
 // service. All method should be called from the origin thread (UI thread) which
 // initializes the DBusThreadManager instance.
 class COMPONENT_EXPORT(KERBEROS) KerberosClient {
@@ -83,7 +83,7 @@ class COMPONENT_EXPORT(KERBEROS) KerberosClient {
   // Returns the global instance which may be null if not initialized.
   static KerberosClient* Get();
 
-  // Kerberos daemon D-Bus method calls. See org.chromium.Kerberos.xml and
+  // Kerberos daemon D-Bus method calls. See org.monyhar.Kerberos.xml and
   // kerberos_service.proto in Chromium OS code for the documentation of the
   // methods and request/response messages.
   virtual void AddAccount(const kerberos::AddAccountRequest& request,

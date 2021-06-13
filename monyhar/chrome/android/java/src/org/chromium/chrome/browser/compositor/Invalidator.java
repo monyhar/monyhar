@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor;
+package org.monyhar.chrome.browser.compositor;
 
 /**
  * The {@link Invalidator} invalidates a client when it is the right time.

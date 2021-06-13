@@ -29,7 +29,7 @@ class PrCleanupTool(object):
             _log.error('You have not set your GitHub credentials. This '
                        'script may fail with a network error when making '
                        'an API request to GitHub.')
-            _log.error('See https://chromium.googlesource.com/chromium/src'
+            _log.error('See https://monyhar.googlesource.com/monyhar/src'
                        '/+/master/docs/testing/web_platform_tests.md'
                        '#GitHub-credentials for instructions on how to set '
                        'your credentials up.')

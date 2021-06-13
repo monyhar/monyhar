@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.webauthn;
+package org.monyhar.components.webauthn;
 
-import org.chromium.blink.mojom.GetAssertionAuthenticatorResponse;
+import org.monyhar.blink.mojom.GetAssertionAuthenticatorResponse;
 
 /**
  * Callback interface for receiving a response from a request to produce a

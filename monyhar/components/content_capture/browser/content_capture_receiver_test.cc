@@ -410,7 +410,7 @@ TEST_P(ContentCaptureReceiverTest, MultipleConsumers) {
             onscreen_content_provider()->GetConsumersForTesting()[0]);
 }
 
-// TODO(https://crbug.com/1010179): Fix flakes on win10_chromium_x64_rel_ng and
+// TODO(https://crbug.com/1010179): Fix flakes on win10_monyhar_x64_rel_ng and
 // re-enable this test.
 #if defined(OS_WIN)
 #define MAYBE_DidCaptureContentWithUpdate DISABLED_DidCaptureContentWithUpdate
@@ -434,7 +434,7 @@ TEST_P(ContentCaptureReceiverTest, MAYBE_DidCaptureContentWithUpdate) {
             content_capture_consumer_helper()->captured_data());
 }
 
-// TODO(https://crbug.com/1011204): Fix flakes on win10_chromium_x64_rel_ng and
+// TODO(https://crbug.com/1011204): Fix flakes on win10_monyhar_x64_rel_ng and
 // re-enable this test.
 #if defined(OS_WIN)
 #define MAYBE_DidUpdateContent DISABLED_DidUpdateContent
@@ -587,7 +587,7 @@ TEST_P(ContentCaptureReceiverTest, TitleUpdateTaskDelay) {
   EXPECT_EQ(title2, content_capture_consumer_helper()->updated_title());
 }
 
-// TODO(https://crbug.com/1010416): Fix flakes on win10_chromium_x64_rel_ng and
+// TODO(https://crbug.com/1010416): Fix flakes on win10_monyhar_x64_rel_ng and
 // re-enable this test.
 #if defined(OS_WIN)
 #define MAYBE_ChildFrameCaptureContentFirst \
@@ -745,7 +745,7 @@ class ContentCaptureReceiverMultipleFrameTest
   void TearDown() override { content::RenderViewHostTestHarness::TearDown(); }
 };
 
-// TODO(https://crbug.com/1010417): Fix flakes on win10_chromium_x64_rel_ng and
+// TODO(https://crbug.com/1010417): Fix flakes on win10_monyhar_x64_rel_ng and
 // re-enable this test.
 #if defined(OS_WIN)
 #define MAYBE_ReceiverCreatedForExistingFrame \

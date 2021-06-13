@@ -244,7 +244,7 @@ void ContentSecurityPolicy::ReportUseCounters(
     // 2.  Asserts `base-uri 'none'` or `base-uri 'self'`.
     // 3.  Avoids URL-based matching, in favor of hashes and nonces.
     //
-    // https://chromium.googlesource.com/chromium/src/+/master/docs/security/web-mitigation-metrics.md
+    // https://monyhar.googlesource.com/monyhar/src/+/master/docs/security/web-mitigation-metrics.md
     // has more detail.
     if (CSPDirectiveListIsObjectRestrictionReasonable(*policy)) {
       Count(policy->header->type == ContentSecurityPolicyType::kEnforce

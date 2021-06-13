@@ -17,7 +17,7 @@ def GetWriter(config):
 class DocAtomicGroupsWriter(doc_writer.DocWriter):
   '''Class for generating atomic policy group templates in HTML format.
   The intended use of the generated file is to upload it on
-  https://www.chromium.org, therefore its format has some limitations:
+  https://www.monyhar.org, therefore its format has some limitations:
   - No HTML and body tags.
   - Restricted set of element attributes: for example no 'class'.
   Because of the latter the output is styled using the 'style'

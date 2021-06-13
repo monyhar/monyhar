@@ -52,7 +52,7 @@ DESCRIPTIONS = {
 
 
 class OctaneStory(press_story.PressStory):
-  URL = 'http://chromium.github.io/octane/index.html?auto=1'
+  URL = 'http://monyhar.github.io/octane/index.html?auto=1'
   NAME = 'Octane'
 
   def RunNavigateSteps(self, action_runner):

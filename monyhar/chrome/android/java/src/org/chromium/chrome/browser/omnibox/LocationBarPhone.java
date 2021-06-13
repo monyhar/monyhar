@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox;
+package org.monyhar.chrome.browser.omnibox;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -11,8 +11,8 @@ import android.util.AttributeSet;
 import android.view.TouchDelegate;
 import android.view.View;
 import android.widget.FrameLayout;
-import org.chromium.base.TraceEvent;
-import org.chromium.chrome.R;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.chrome.R;
 
 /**
  * A location bar implementation specific for smaller/phone screens.

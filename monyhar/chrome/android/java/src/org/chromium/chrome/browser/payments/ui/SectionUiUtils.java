@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments.ui;
+package org.monyhar.chrome.browser.payments.ui;
 
 import android.content.Context;
 import android.text.Layout;
@@ -12,8 +12,8 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.R;
-import org.chromium.components.autofill.EditableOption;
+import org.monyhar.chrome.R;
+import org.monyhar.components.autofill.EditableOption;
 
 /**
  * Utility functions for PaymentRequestSection.

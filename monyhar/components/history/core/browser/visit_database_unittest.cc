@@ -617,7 +617,7 @@ TEST_F(VisitDatabaseTest, GetLastVisitToHost_NonHttpURL) {
 
 TEST_F(VisitDatabaseTest, GetLastVisitToHost_NoVisits) {
   base::Time last_visit;
-  EXPECT_TRUE(GetLastVisitToHost(GURL("https://www.chromium.org"),
+  EXPECT_TRUE(GetLastVisitToHost(GURL("https://www.monyhar.org"),
                                  base::Time::Min(), base::Time::Max(),
                                  &last_visit));
   EXPECT_EQ(last_visit, base::Time());
@@ -627,7 +627,7 @@ TEST_F(VisitDatabaseTest, GetLastVisitToHost_VisitsOutsideRange) {
   base::Time begin_time = base::Time::Now();
   base::Time end_time = begin_time + base::TimeDelta::FromHours(1);
 
-  VisitRow row1{AddURL(URLRow(GURL("https://www.chromium.org"))),
+  VisitRow row1{AddURL(URLRow(GURL("https://www.monyhar.org"))),
                 begin_time - base::TimeDelta::FromHours(1),
                 0,
                 ui::PageTransitionFromInt(0),
@@ -635,7 +635,7 @@ TEST_F(VisitDatabaseTest, GetLastVisitToHost_VisitsOutsideRange) {
                 false,
                 false};
   AddVisit(&row1, SOURCE_BROWSED);
-  VisitRow row2{AddURL(URLRow(GURL("https://www.chromium.org"))),
+  VisitRow row2{AddURL(URLRow(GURL("https://www.monyhar.org"))),
                 end_time + base::TimeDelta::FromHours(1),
                 0,
                 ui::PageTransitionFromInt(0),
@@ -645,7 +645,7 @@ TEST_F(VisitDatabaseTest, GetLastVisitToHost_VisitsOutsideRange) {
   AddVisit(&row2, SOURCE_BROWSED);
 
   base::Time last_visit;
-  EXPECT_TRUE(GetLastVisitToHost(GURL("https://www.chromium.org"), begin_time,
+  EXPECT_TRUE(GetLastVisitToHost(GURL("https://www.monyhar.org"), begin_time,
                                  end_time, &last_visit));
   EXPECT_EQ(last_visit, base::Time());
 }
@@ -654,7 +654,7 @@ TEST_F(VisitDatabaseTest, GetLastVisitToHost_EndTimeNotIncluded) {
   base::Time begin_time = base::Time::Now();
   base::Time end_time = begin_time + base::TimeDelta::FromHours(1);
 
-  VisitRow row1{AddURL(URLRow(GURL("https://www.chromium.org"))),
+  VisitRow row1{AddURL(URLRow(GURL("https://www.monyhar.org"))),
                 begin_time,
                 0,
                 ui::PageTransitionFromInt(0),
@@ -662,7 +662,7 @@ TEST_F(VisitDatabaseTest, GetLastVisitToHost_EndTimeNotIncluded) {
                 false,
                 false};
   AddVisit(&row1, SOURCE_BROWSED);
-  VisitRow row2{AddURL(URLRow(GURL("https://www.chromium.org"))),
+  VisitRow row2{AddURL(URLRow(GURL("https://www.monyhar.org"))),
                 end_time,
                 0,
                 ui::PageTransitionFromInt(0),
@@ -672,7 +672,7 @@ TEST_F(VisitDatabaseTest, GetLastVisitToHost_EndTimeNotIncluded) {
   AddVisit(&row2, SOURCE_BROWSED);
 
   base::Time last_visit;
-  EXPECT_TRUE(GetLastVisitToHost(GURL("https://www.chromium.org"), begin_time,
+  EXPECT_TRUE(GetLastVisitToHost(GURL("https://www.monyhar.org"), begin_time,
                                  end_time, &last_visit));
   EXPECT_EQ(last_visit, begin_time);
 }
@@ -681,7 +681,7 @@ TEST_F(VisitDatabaseTest, GetLastVisitToHost_SameOriginOnly) {
   base::Time begin_time = base::Time::Now();
   base::Time end_time = begin_time + base::TimeDelta::FromHours(1);
 
-  VisitRow row1{AddURL(URLRow(GURL("https://other.origin.chromium.org"))),
+  VisitRow row1{AddURL(URLRow(GURL("https://other.origin.monyhar.org"))),
                 begin_time,
                 0,
                 ui::PageTransitionFromInt(0),
@@ -689,7 +689,7 @@ TEST_F(VisitDatabaseTest, GetLastVisitToHost_SameOriginOnly) {
                 false,
                 false};
   AddVisit(&row1, SOURCE_BROWSED);
-  VisitRow row2{AddURL(URLRow(GURL("https://www.chromium.org/path?query=foo"))),
+  VisitRow row2{AddURL(URLRow(GURL("https://www.monyhar.org/path?query=foo"))),
                 begin_time + base::TimeDelta::FromMinutes(1),
                 0,
                 ui::PageTransitionFromInt(0),
@@ -699,7 +699,7 @@ TEST_F(VisitDatabaseTest, GetLastVisitToHost_SameOriginOnly) {
   AddVisit(&row2, SOURCE_BROWSED);
 
   base::Time last_visit;
-  EXPECT_TRUE(GetLastVisitToHost(GURL("https://www.chromium.org"), begin_time,
+  EXPECT_TRUE(GetLastVisitToHost(GURL("https://www.monyhar.org"), begin_time,
                                  end_time, &last_visit));
   EXPECT_EQ(last_visit, begin_time + base::TimeDelta::FromMinutes(1));
 }
@@ -708,7 +708,7 @@ TEST_F(VisitDatabaseTest, GetLastVisitToHost_MostRecentVisitTime) {
   base::Time begin_time = base::Time::Now();
   base::Time end_time = begin_time + base::TimeDelta::FromHours(1);
 
-  VisitRow row1{AddURL(URLRow(GURL("https://chromium.org/"))),
+  VisitRow row1{AddURL(URLRow(GURL("https://monyhar.org/"))),
                 begin_time,
                 0,
                 ui::PageTransitionFromInt(0),
@@ -716,7 +716,7 @@ TEST_F(VisitDatabaseTest, GetLastVisitToHost_MostRecentVisitTime) {
                 false,
                 false};
   AddVisit(&row1, SOURCE_BROWSED);
-  VisitRow row2{AddURL(URLRow(GURL("https://www.chromium.org/"))),
+  VisitRow row2{AddURL(URLRow(GURL("https://www.monyhar.org/"))),
                 begin_time + base::TimeDelta::FromMinutes(1),
                 0,
                 ui::PageTransitionFromInt(0),
@@ -724,7 +724,7 @@ TEST_F(VisitDatabaseTest, GetLastVisitToHost_MostRecentVisitTime) {
                 false,
                 false};
   AddVisit(&row2, SOURCE_BROWSED);
-  VisitRow row3{AddURL(URLRow(GURL("https://www.chromium.org/"))),
+  VisitRow row3{AddURL(URLRow(GURL("https://www.monyhar.org/"))),
                 begin_time + base::TimeDelta::FromMinutes(2),
                 0,
                 ui::PageTransitionFromInt(0),
@@ -734,7 +734,7 @@ TEST_F(VisitDatabaseTest, GetLastVisitToHost_MostRecentVisitTime) {
   AddVisit(&row3, SOURCE_BROWSED);
 
   base::Time last_visit;
-  EXPECT_TRUE(GetLastVisitToHost(GURL("https://www.chromium.org"), begin_time,
+  EXPECT_TRUE(GetLastVisitToHost(GURL("https://www.monyhar.org"), begin_time,
                                  end_time, &last_visit));
   EXPECT_EQ(last_visit, begin_time + base::TimeDelta::FromMinutes(2));
 }
@@ -840,7 +840,7 @@ TEST_F(VisitDatabaseTest, GetDailyVisitsToHostNoVisits) {
   base::Time end_time = begin_time + base::TimeDelta::FromDays(10);
 
   // A non-user visible visit.
-  VisitRow row{AddURL(URLRow(GURL("https://www.chromium.org"))),
+  VisitRow row{AddURL(URLRow(GURL("https://www.monyhar.org"))),
                begin_time,
                0,
                ui::PageTransitionFromInt(0),
@@ -850,7 +850,7 @@ TEST_F(VisitDatabaseTest, GetDailyVisitsToHostNoVisits) {
   AddVisit(&row, SOURCE_BROWSED);
 
   DailyVisitsResult result = GetDailyVisitsToHost(
-      GURL("https://www.chromium.org"), begin_time, end_time);
+      GURL("https://www.monyhar.org"), begin_time, end_time);
   EXPECT_TRUE(result.success);
   EXPECT_EQ(0, result.days_with_visits);
   EXPECT_EQ(0, result.total_visits);

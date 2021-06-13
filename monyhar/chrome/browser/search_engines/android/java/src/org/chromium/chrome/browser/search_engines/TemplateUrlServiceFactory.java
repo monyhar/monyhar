@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.search_engines;
+package org.monyhar.chrome.browser.search_engines;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.search_engines.TemplateUrlService;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.search_engines.TemplateUrlService;
 
 /**
  * This factory links the native TemplateURLService for the current Profile to create and hold a
@@ -43,7 +43,7 @@ public class TemplateUrlServiceFactory {
     }
 
     // Natives interface is public to allow mocking in tests outside of
-    // org.chromium.chrome.browser.search_engines package.
+    // org.monyhar.chrome.browser.search_engines package.
     @NativeMethods
     public interface Natives {
         TemplateUrlService getTemplateUrlService();

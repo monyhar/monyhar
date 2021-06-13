@@ -30,7 +30,7 @@
 #include "remoting/host/it2me/it2me_helpers.h"
 #include "remoting/host/it2me_desktop_environment.h"
 #include "remoting/protocol/auth_util.h"
-#include "remoting/protocol/chromium_port_allocator_factory.h"
+#include "remoting/protocol/monyhar_port_allocator_factory.h"
 #include "remoting/protocol/ice_transport.h"
 #include "remoting/protocol/it2me_host_authenticator_factory.h"
 #include "remoting/protocol/jingle_session_manager.h"

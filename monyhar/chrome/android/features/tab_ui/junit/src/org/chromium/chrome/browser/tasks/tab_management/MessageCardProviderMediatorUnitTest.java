@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
 import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.doNothing;
@@ -19,12 +19,12 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.tasks.tab_management.PriceMessageService.PriceMessageType;
-import org.chromium.chrome.browser.tasks.tab_management.suggestions.TabSuggestion;
-import org.chromium.chrome.tab_ui.R;
-import org.chromium.testing.local.LocalRobolectricTestRunner;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.tasks.tab_management.PriceMessageService.PriceMessageType;
+import org.monyhar.chrome.browser.tasks.tab_management.suggestions.TabSuggestion;
+import org.monyhar.chrome.tab_ui.R;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.util.List;
 

@@ -828,7 +828,7 @@ Muussa tapauksessa tämä estetään tietosuoja-asetuksilla. Jos sallit tämän,
 <translation id="3986705137476756801">Laita Livetekstitys päälle toistaiseksi</translation>
 <translation id="3987405730340719549">Chrome epäilee tätä sivustoa vilpilliseksi tai valesivustoksi.
 
-    Jos uskot, että ilmoitus on virheellinen, siirry osoitteeseen https://bugs.chromium.org/p/chromium/issues/entry?template=Safety+Tips+Appeals.</translation>
+    Jos uskot, että ilmoitus on virheellinen, siirry osoitteeseen https://bugs.monyhar.org/p/monyhar/issues/entry?template=Safety+Tips+Appeals.</translation>
 <translation id="3987940399970879459">Alle 1 Mt</translation>
 <translation id="3990250421422698716">Jog offset</translation>
 <translation id="3996311196211510766">Sivusto <ph name="ORIGIN" /> pyytää alkuperäkäytännön
@@ -1342,7 +1342,7 @@ Muussa tapauksessa tämä estetään tietosuoja-asetuksilla. Jos sallit tämän,
 <translation id="5851548754964597211">Välilehtiluettelo</translation>
 <translation id="5855253129151731373">Sivuston isäntänimi on samankaltainen kuin <ph name="LOOKALIKE_DOMAIN" />. Hyökkääjät jäljittelevät joskus sivustoja tekemällä verkkotunnukseen pieniä muutoksia, joita on vaikea havaita.
 
-    Jos uskot, että ilmoitus on virheellinen, siirry osoitteeseen https://bugs.chromium.org/p/chromium/issues/entry?template=Safety+Tips+Appeals.</translation>
+    Jos uskot, että ilmoitus on virheellinen, siirry osoitteeseen https://bugs.monyhar.org/p/monyhar/issues/entry?template=Safety+Tips+Appeals.</translation>
 <translation id="5860033963881614850">Pois päältä</translation>
 <translation id="5862579898803147654">Pinoaja 8</translation>
 <translation id="5863847714970149516">Avaamasi sivu voi yrittää veloittaa sinulta rahaa</translation>

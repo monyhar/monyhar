@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-[JavaPackage="org.chromium.mojo.bindings.test.mojom.imported"]
+[JavaPackage="org.monyhar.mojo.bindings.test.mojom.imported"]
 module imported;
 
 // This sample just defines some types that are imported into

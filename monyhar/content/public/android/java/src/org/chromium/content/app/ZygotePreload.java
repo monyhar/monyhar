@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.app;
+package org.monyhar.content.app;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -11,12 +11,12 @@ import android.os.Build;
 import android.os.Process;
 import android.os.SystemClock;
 
-import org.chromium.base.JNIUtils;
-import org.chromium.base.Log;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.process_launcher.ChildProcessService;
-import org.chromium.build.BuildConfig;
-import org.chromium.components.version_info.VersionConstants;
+import org.monyhar.base.JNIUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.process_launcher.ChildProcessService;
+import org.monyhar.build.BuildConfig;
+import org.monyhar.components.version_info.VersionConstants;
 
 /**
  * Class used in android:zygotePreloadName attribute of manifest.

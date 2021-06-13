@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.offlinepages.measurements;
+package org.monyhar.chrome.browser.offlinepages.measurements;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -16,24 +16,24 @@ import android.util.Base64;
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApplicationState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.chrome.browser.content.ContentUtils;
-import org.chromium.chrome.browser.flags.CachedFeatureFlags;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.offline_pages.measurements.proto.OfflineMeasurementsProto.SystemState;
-import org.chromium.chrome.browser.offline_pages.measurements.proto.OfflineMeasurementsProto.SystemStateList;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.components.background_task_scheduler.BackgroundTask;
-import org.chromium.components.background_task_scheduler.BackgroundTaskSchedulerFactory;
-import org.chromium.components.background_task_scheduler.TaskIds;
-import org.chromium.components.background_task_scheduler.TaskInfo;
-import org.chromium.components.background_task_scheduler.TaskParameters;
+import org.monyhar.base.ApplicationState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.chrome.browser.content.ContentUtils;
+import org.monyhar.chrome.browser.flags.CachedFeatureFlags;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.offline_pages.measurements.proto.OfflineMeasurementsProto.SystemState;
+import org.monyhar.chrome.browser.offline_pages.measurements.proto.OfflineMeasurementsProto.SystemStateList;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.components.background_task_scheduler.BackgroundTask;
+import org.monyhar.components.background_task_scheduler.BackgroundTaskSchedulerFactory;
+import org.monyhar.components.background_task_scheduler.TaskIds;
+import org.monyhar.components.background_task_scheduler.TaskInfo;
+import org.monyhar.components.background_task_scheduler.TaskParameters;
 
 import java.io.IOException;
 import java.lang.annotation.Retention;

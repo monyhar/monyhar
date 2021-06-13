@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.test.util;
+package org.monyhar.base.test.util;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
@@ -64,7 +64,7 @@ public abstract class AnnotationProcessingUtils {
 
     private static boolean isChromiumAnnotation(Annotation annotation) {
         Package pkg = annotation.annotationType().getPackage();
-        return pkg != null && pkg.getName().startsWith("org.chromium");
+        return pkg != null && pkg.getName().startsWith("org.monyhar");
     }
 
     /**

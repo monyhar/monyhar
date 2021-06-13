@@ -26,7 +26,7 @@ class MockGesturePropertiesService
                     SetPropertyCallback));
 };
 
-// Work around the compile error '[chromium-style] Complex class/struct needs an
+// Work around the compile error '[monyhar-style] Complex class/struct needs an
 // explicit out-of-line constructor.'
 inline MockGesturePropertiesService::MockGesturePropertiesService() = default;
 inline MockGesturePropertiesService::~MockGesturePropertiesService() = default;

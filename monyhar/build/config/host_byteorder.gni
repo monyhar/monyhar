@@ -4,7 +4,7 @@
 
 # This header file defines the "host_byteorder" variable.
 # Not that this is currently used only for building v8.
-# The chromium code generally assumes little-endianness.
+# The monyhar code generally assumes little-endianness.
 declare_args() {
   host_byteorder = "undefined"
 }

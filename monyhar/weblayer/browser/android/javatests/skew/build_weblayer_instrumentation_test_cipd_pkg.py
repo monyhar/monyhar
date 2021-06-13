@@ -36,20 +36,20 @@ MB_CONFIG_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
 CHROMIUM_VERSION_REGEX = r'\d+\.\d+\.\d+\.\d+$'
 
 # CIPD package path.
-# https://chrome-infra-packages.appspot.com/p/chromium/testing/weblayer-x86/+/
-CIPD_PKG_PATH='chromium/testing/weblayer-x86'
+# https://chrome-infra-packages.appspot.com/p/monyhar/testing/weblayer-x86/+/
+CIPD_PKG_PATH='monyhar/testing/weblayer-x86'
 
 
 @contextlib.contextmanager
 def temporarily_chdir_to_src(local_paths=None):
-  """Change directories to chromium/src when entering with block and
+  """Change directories to monyhar/src when entering with block and
   then change back to current directory after exiting with block.
 
   Args:
     local_paths: List of paths to change into relative paths.
 
   Returns:
-    List of paths relative to chromium/src.
+    List of paths relative to monyhar/src.
   """
   curr_dir = os.getcwd()
   paths_rel_to_src = [
@@ -96,7 +96,7 @@ def build_cipd_pkg(input_path, cipd_filename):
   subprocess.check_call(cmd)
 
 
-def get_chromium_version():
+def get_monyhar_version():
   with open(os.path.join(SRC_DIR, 'chrome', 'VERSION')) as f:
     version = '.'.join(line[line.index('=') + 1:]
                        for line in f.read().splitlines())
@@ -115,7 +115,7 @@ def main():
       help="Output filename for resulting .cipd file.")
 
   args = parser.parse_args()
-  chromium_version = get_chromium_version()
+  monyhar_version = get_monyhar_version()
   with tempfile.TemporaryDirectory() as tmp_dir, \
        temporarily_chdir_to_src([args.cipd_out]) as cipd_out_src_rel_paths:
     # Create zip archive of test target.
@@ -135,11 +135,11 @@ def main():
 
     print(('Use "cipd pkg-register %s -verbose -tag \'version:%s\'" ' +
            'to upload package to the cipd server.') %
-          (args.cipd_out, chromium_version))
-    print('Use "cipd set-ref chromium/testing/weblayer-x86 --version ' +
+          (args.cipd_out, monyhar_version))
+    print('Use "cipd set-ref monyhar/testing/weblayer-x86 --version ' +
           '<CIPD instance version> -ref m<milestone>" to update the ref.')
     print('The CIPD instance version can be found on the "Instance" line ' +
-          'after "chromium/testing/weblayer-x86:".')
+          'after "monyhar/testing/weblayer-x86:".')
 
 
 if __name__ == '__main__':

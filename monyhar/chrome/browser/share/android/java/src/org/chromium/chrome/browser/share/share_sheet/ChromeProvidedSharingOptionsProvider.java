@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.share_sheet;
+package org.monyhar.chrome.browser.share.share_sheet;
 
 import android.app.Activity;
 import android.content.ClipData;
@@ -13,40 +13,40 @@ import android.view.View;
 
 import androidx.appcompat.content.res.AppCompatResources;
 
-import org.chromium.base.Callback;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.content_creation.notes.NoteCreationCoordinator;
-import org.chromium.chrome.browser.content_creation.notes.NoteCreationCoordinatorFactory;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.preferences.Pref;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.share.ChromeShareExtras;
-import org.chromium.chrome.browser.share.link_to_text.LinkToTextCoordinator;
-import org.chromium.chrome.browser.share.link_to_text.LinkToTextCoordinator.LinkGeneration;
-import org.chromium.chrome.browser.share.link_to_text.LinkToTextMetricsHelper;
-import org.chromium.chrome.browser.share.long_screenshots.LongScreenshotsCoordinator;
-import org.chromium.chrome.browser.share.qrcode.QrCodeCoordinator;
-import org.chromium.chrome.browser.share.screenshot.ScreenshotCoordinator;
-import org.chromium.chrome.browser.share.send_tab_to_self.SendTabToSelfCoordinator;
-import org.chromium.chrome.browser.share.share_sheet.ShareSheetPropertyModelBuilder.ContentType;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.modules.image_editor.ImageEditorModuleProvider;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController.SheetState;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetObserver;
-import org.chromium.components.browser_ui.bottomsheet.EmptyBottomSheetObserver;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.browser_ui.share.ShareParams;
-import org.chromium.components.feature_engagement.EventConstants;
-import org.chromium.components.feature_engagement.FeatureConstants;
-import org.chromium.components.feature_engagement.Tracker;
-import org.chromium.components.user_prefs.UserPrefs;
-import org.chromium.ui.base.Clipboard;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.Callback;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.content_creation.notes.NoteCreationCoordinator;
+import org.monyhar.chrome.browser.content_creation.notes.NoteCreationCoordinatorFactory;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.preferences.Pref;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.share.ChromeShareExtras;
+import org.monyhar.chrome.browser.share.link_to_text.LinkToTextCoordinator;
+import org.monyhar.chrome.browser.share.link_to_text.LinkToTextCoordinator.LinkGeneration;
+import org.monyhar.chrome.browser.share.link_to_text.LinkToTextMetricsHelper;
+import org.monyhar.chrome.browser.share.long_screenshots.LongScreenshotsCoordinator;
+import org.monyhar.chrome.browser.share.qrcode.QrCodeCoordinator;
+import org.monyhar.chrome.browser.share.screenshot.ScreenshotCoordinator;
+import org.monyhar.chrome.browser.share.send_tab_to_self.SendTabToSelfCoordinator;
+import org.monyhar.chrome.browser.share.share_sheet.ShareSheetPropertyModelBuilder.ContentType;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.modules.image_editor.ImageEditorModuleProvider;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController.SheetState;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetObserver;
+import org.monyhar.components.browser_ui.bottomsheet.EmptyBottomSheetObserver;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.browser_ui.share.ShareParams;
+import org.monyhar.components.feature_engagement.EventConstants;
+import org.monyhar.components.feature_engagement.FeatureConstants;
+import org.monyhar.components.feature_engagement.Tracker;
+import org.monyhar.components.user_prefs.UserPrefs;
+import org.monyhar.ui.base.Clipboard;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Arrays;

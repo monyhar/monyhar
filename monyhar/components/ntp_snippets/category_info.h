@@ -12,7 +12,7 @@
 namespace ntp_snippets {
 
 // On Android builds, a Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.ntp.snippets
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.ntp.snippets
 enum class ContentSuggestionsCardLayout {
   // Uses all fields.
   FULL_CARD,
@@ -22,7 +22,7 @@ enum class ContentSuggestionsCardLayout {
 };
 
 // On Android builds, a Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.suggestions
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.suggestions
 enum class ContentSuggestionsAdditionalAction {
   // No additional action available.
   NONE,

@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.continuous_search;
+package org.monyhar.chrome.browser.continuous_search;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.browser.feed.NtpListContentManager.FeedContent;
-import org.chromium.chrome.browser.feed.NtpListContentManager.FeedContentMetadata;
-import org.chromium.chrome.browser.feed.shared.stream.Stream.ContentChangedListener;
-import org.chromium.chrome.browser.feed.v2.FeedStream.InteractionsListener;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.url.GURL;
+import org.monyhar.chrome.browser.feed.NtpListContentManager.FeedContent;
+import org.monyhar.chrome.browser.feed.NtpListContentManager.FeedContentMetadata;
+import org.monyhar.chrome.browser.feed.shared.stream.Stream.ContentChangedListener;
+import org.monyhar.chrome.browser.feed.v2.FeedStream.InteractionsListener;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Plugin histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -29,8 +29,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Plugin.FlashUsage" enum="FlashUsage"
     expires_after="2021-10-10">
-  <owner>yzshen@chromium.org</owner>
-  <owner>thestig@chromium.org</owner>
+  <owner>yzshen@monyhar.org</owner>
+  <owner>thestig@monyhar.org</owner>
   <summary>Collects Flash usage data.</summary>
 </histogram>
 
@@ -39,7 +39,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Deprecated Oct 2020.
   </obsolete>
-  <owner>tommycli@chromium.org</owner>
+  <owner>tommycli@monyhar.org</owner>
   <summary>
     Record how many throttled plugins are unthrottled, and by what method.
   </summary>
@@ -50,8 +50,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Deprecated Oct 14 2020.
   </obsolete>
-  <owner>xhwang@chromium.org</owner>
-  <owner>media-dev@chromium.org</owner>
+  <owner>xhwang@monyhar.org</owner>
+  <owner>media-dev@monyhar.org</owner>
   <summary>
     The error code of a PPAPI broker load failure. Only reported on Windows.
   </summary>
@@ -62,8 +62,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Deprecated Oct 14 2020.
   </obsolete>
-  <owner>xhwang@chromium.org</owner>
-  <owner>media-dev@chromium.org</owner>
+  <owner>xhwang@monyhar.org</owner>
+  <owner>media-dev@monyhar.org</owner>
   <summary>The result from an attempt to load a PPAPI broker.</summary>
 </histogram>
 
@@ -71,8 +71,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Deprecated Oct 14 2020.
   </obsolete>
-  <owner>xhwang@chromium.org</owner>
-  <owner>media-dev@chromium.org</owner>
+  <owner>xhwang@monyhar.org</owner>
+  <owner>media-dev@monyhar.org</owner>
   <summary>The time spent to load a PPAPI broker.</summary>
 </histogram>
 
@@ -81,8 +81,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Deprecated Oct 14 2020.
   </obsolete>
-  <owner>xhwang@chromium.org</owner>
-  <owner>media-dev@chromium.org</owner>
+  <owner>xhwang@monyhar.org</owner>
+  <owner>media-dev@monyhar.org</owner>
   <summary>
     The error code of a PPAPI plugin load failure. Only reported on Windows.
   </summary>
@@ -93,8 +93,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Deprecated Oct 14 2020.
   </obsolete>
-  <owner>xhwang@chromium.org</owner>
-  <owner>media-dev@chromium.org</owner>
+  <owner>xhwang@monyhar.org</owner>
+  <owner>media-dev@monyhar.org</owner>
   <summary>The result from an attempt to load a PPAPI plugin.</summary>
 </histogram>
 
@@ -102,13 +102,13 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Deprecated Oct 14 2020.
   </obsolete>
-  <owner>xhwang@chromium.org</owner>
-  <owner>media-dev@chromium.org</owner>
+  <owner>xhwang@monyhar.org</owner>
+  <owner>media-dev@monyhar.org</owner>
   <summary>The time spent to load a PPAPI plugin.</summary>
 </histogram>
 
 <histogram name="Plugin.PpapiSyncIPCTime" units="ms" expires_after="2018-08-30">
-  <owner>gab@chromium.org</owner>
+  <owner>gab@monyhar.org</owner>
   <summary>
     The time it took to complete a synchronous IPC made from the PPAPI process.
   </summary>
@@ -179,9 +179,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PluginVm.Image.DownloadedSize" units="MB"
     expires_after="2022-05-16">
-  <owner>joelhockey@chromium.org</owner>
-  <owner>okalitova@chromium.org</owner>
-  <owner>timloh@chromium.org</owner>
+  <owner>joelhockey@monyhar.org</owner>
+  <owner>okalitova@monyhar.org</owner>
+  <owner>timloh@monyhar.org</owner>
   <summary>
     The size of the PluginVm image downloaded in MB. Recorded each time PluginVm
     image is sucessfully downloaded.
@@ -190,9 +190,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PluginVm.LaunchResult" enum="PluginVmLaunchResult"
     expires_after="2022-05-16">
-  <owner>joelhockey@chromium.org</owner>
-  <owner>okalitova@chromium.org</owner>
-  <owner>timloh@chromium.org</owner>
+  <owner>joelhockey@monyhar.org</owner>
+  <owner>okalitova@monyhar.org</owner>
+  <owner>timloh@monyhar.org</owner>
   <summary>
     Recorded at each attempt to launch PluginVm, recording whether this attempt
     is successful or not.
@@ -201,16 +201,16 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PluginVm.SetupFailureReason" enum="PluginVmSetupFailureReason"
     expires_after="2021-10-17">
-  <owner>timloh@chromium.org</owner>
+  <owner>timloh@monyhar.org</owner>
   <owner>chromeos-core-services@google.com</owner>
   <summary>Recorded when the Plugin VM installer fails.</summary>
 </histogram>
 
 <histogram name="PluginVm.SetupResult" enum="PluginVmSetupResult"
     expires_after="2021-09-19">
-  <owner>joelhockey@chromium.org</owner>
-  <owner>okalitova@chromium.org</owner>
-  <owner>timloh@chromium.org</owner>
+  <owner>joelhockey@monyhar.org</owner>
+  <owner>okalitova@monyhar.org</owner>
+  <owner>timloh@monyhar.org</owner>
   <summary>
     Recorded at each attempt to set up PluginVm, recording the setup result. As
     of M83, errors are grouped together here and broken down in
@@ -219,9 +219,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="PluginVm.SetupTime" units="ms" expires_after="2021-09-19">
-  <owner>joelhockey@chromium.org</owner>
-  <owner>okalitova@chromium.org</owner>
-  <owner>timloh@chromium.org</owner>
+  <owner>joelhockey@monyhar.org</owner>
+  <owner>okalitova@monyhar.org</owner>
+  <owner>timloh@monyhar.org</owner>
   <summary>
     Recorded at each successful attempt to set up PluginVm, recording the time
     that user spent waiting for setup to be finished. When error occurs during

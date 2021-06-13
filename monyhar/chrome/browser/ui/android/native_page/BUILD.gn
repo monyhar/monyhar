@@ -5,10 +5,10 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/ui/native_page/BasicNativePage.java",
-    "java/src/org/chromium/chrome/browser/ui/native_page/FrozenNativePage.java",
-    "java/src/org/chromium/chrome/browser/ui/native_page/NativePage.java",
-    "java/src/org/chromium/chrome/browser/ui/native_page/NativePageHost.java",
+    "java/src/org/monyhar/chrome/browser/ui/native_page/BasicNativePage.java",
+    "java/src/org/monyhar/chrome/browser/ui/native_page/FrozenNativePage.java",
+    "java/src/org/monyhar/chrome/browser/ui/native_page/NativePage.java",
+    "java/src/org/monyhar/chrome/browser/ui/native_page/NativePageHost.java",
   ]
   deps = [
     "//base:base_java",
@@ -26,7 +26,7 @@ java_library("junit") {
   testonly = true
 
   sources = [
-    "java/src/org/chromium/chrome/browser/ui/native_page/NativePageTest.java",
+    "java/src/org/monyhar/chrome/browser/ui/native_page/NativePageTest.java",
   ]
 
   deps = [

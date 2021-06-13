@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.infobar;
+package org.monyhar.chrome.browser.infobar;
 
-import static org.chromium.base.ContextUtils.getApplicationContext;
+import static org.monyhar.base.ContextUtils.getApplicationContext;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -13,21 +13,21 @@ import android.widget.ImageView;
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
-import org.chromium.chrome.browser.sync.SyncService;
-import org.chromium.chrome.browser.sync.settings.ManageSyncSettings;
-import org.chromium.chrome.browser.sync.settings.SyncSettingsUtils;
-import org.chromium.chrome.browser.sync.settings.SyncSettingsUtils.SyncError;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.infobars.ConfirmInfoBar;
-import org.chromium.components.infobars.InfoBar;
-import org.chromium.components.infobars.InfoBarLayout;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.settings.SettingsLauncherImpl;
+import org.monyhar.chrome.browser.sync.SyncService;
+import org.monyhar.chrome.browser.sync.settings.ManageSyncSettings;
+import org.monyhar.chrome.browser.sync.settings.SyncSettingsUtils;
+import org.monyhar.chrome.browser.sync.settings.SyncSettingsUtils.SyncError;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.infobars.ConfirmInfoBar;
+import org.monyhar.components.infobars.InfoBar;
+import org.monyhar.components.infobars.InfoBarLayout;
+import org.monyhar.content_public.browser.WebContents;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

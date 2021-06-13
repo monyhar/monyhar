@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices;
+package org.monyhar.chrome.browser.browserservices;
 
 import android.os.Bundle;
 
@@ -11,11 +11,11 @@ import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.browser.customtabs.CustomTabsSessionToken;
 
-import org.chromium.base.Log;
-import org.chromium.chrome.browser.ChromeApplicationImpl;
-import org.chromium.chrome.browser.customtabs.CustomTabsConnection;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
-import org.chromium.webapk.lib.common.WebApkConstants;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.browser.ChromeApplicationImpl;
+import org.monyhar.chrome.browser.customtabs.CustomTabsConnection;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.webapk.lib.common.WebApkConstants;
 
 /**
  * Launched by Trusted Web Activity apps when the user clears data.

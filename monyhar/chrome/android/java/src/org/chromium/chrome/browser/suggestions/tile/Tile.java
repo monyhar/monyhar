@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.suggestions.tile;
+package org.monyhar.chrome.browser.suggestions.tile;
 
 import android.graphics.drawable.Drawable;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.browser.suggestions.OfflinableSuggestion;
-import org.chromium.chrome.browser.suggestions.SiteSuggestion;
-import org.chromium.components.favicon.IconType;
-import org.chromium.url.GURL;
+import org.monyhar.chrome.browser.suggestions.OfflinableSuggestion;
+import org.monyhar.chrome.browser.suggestions.SiteSuggestion;
+import org.monyhar.components.favicon.IconType;
+import org.monyhar.url.GURL;
 
 /**
  * Holds the details to populate a site suggestion tile.

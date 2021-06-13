@@ -4,7 +4,7 @@
 
 // The implementation here to calculate the mozScore, mozScoreAllSqrt,
 // and mozScoreAllLinear is a copy of what is found in
-// https://github.com/chromium/dom-distiller/blob/master/
+// https://github.com/monyhar/dom-distiller/blob/master/
 // heuristics/distillable/extract_features.js#L13
 // The visibility check is removed for its poor performance, and
 // getElementsByTagName() is used for its faster runtime.

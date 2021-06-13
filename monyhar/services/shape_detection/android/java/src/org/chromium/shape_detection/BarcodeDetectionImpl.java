@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.shape_detection;
+package org.monyhar.shape_detection;
 
 import android.graphics.Point;
 import android.graphics.Rect;
@@ -12,15 +12,15 @@ import com.google.android.gms.vision.Frame;
 import com.google.android.gms.vision.barcode.Barcode;
 import com.google.android.gms.vision.barcode.BarcodeDetector;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.gfx.mojom.PointF;
-import org.chromium.gfx.mojom.RectF;
-import org.chromium.mojo.system.MojoException;
-import org.chromium.shape_detection.mojom.BarcodeDetection;
-import org.chromium.shape_detection.mojom.BarcodeDetectionResult;
-import org.chromium.shape_detection.mojom.BarcodeDetectorOptions;
-import org.chromium.shape_detection.mojom.BarcodeFormat;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.gfx.mojom.PointF;
+import org.monyhar.gfx.mojom.RectF;
+import org.monyhar.mojo.system.MojoException;
+import org.monyhar.shape_detection.mojom.BarcodeDetection;
+import org.monyhar.shape_detection.mojom.BarcodeDetectionResult;
+import org.monyhar.shape_detection.mojom.BarcodeDetectorOptions;
+import org.monyhar.shape_detection.mojom.BarcodeFormat;
 
 /**
  * Implementation of mojo BarcodeDetection, using Google Play Services vision package.
@@ -75,7 +75,7 @@ public class BarcodeDetectionImpl implements BarcodeDetection {
     }
 
     @Override
-    public void detect(org.chromium.skia.mojom.BitmapN32 bitmapData, DetectResponse callback) {
+    public void detect(org.monyhar.skia.mojom.BitmapN32 bitmapData, DetectResponse callback) {
         // The vision library will be downloaded the first time the API is used
         // on the device; this happens "fast", but it might have not completed,
         // bail in this case. Also, the API was disabled between and v.9.0 and

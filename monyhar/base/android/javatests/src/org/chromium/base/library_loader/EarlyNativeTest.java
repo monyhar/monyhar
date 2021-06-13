@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.library_loader;
+package org.monyhar.base.library_loader;
 
 import android.content.pm.ApplicationInfo;
 
@@ -14,14 +14,14 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.JniException;
-import org.chromium.base.NativeLibraryLoadedStatus;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.MainDex;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.build.BuildConfig;
+import org.monyhar.base.JniException;
+import org.monyhar.base.NativeLibraryLoadedStatus;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.MainDex;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.build.BuildConfig;
 
 import java.util.concurrent.TimeoutException;
 

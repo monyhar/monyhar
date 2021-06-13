@@ -6,16 +6,16 @@ import("//ios/public/provider/chrome/browser/build_config.gni")
 
 source_set("providers") {
   sources = [
-    "chromium_browser_provider.h",
-    "chromium_browser_provider.mm",
-    "chromium_logo_controller.h",
-    "chromium_logo_controller.mm",
-    "chromium_spotlight_provider.h",
-    "chromium_spotlight_provider.mm",
-    "chromium_text_zoom_provider.h",
-    "chromium_text_zoom_provider.mm",
-    "chromium_voice_search_provider.h",
-    "chromium_voice_search_provider.mm",
+    "monyhar_browser_provider.h",
+    "monyhar_browser_provider.mm",
+    "monyhar_logo_controller.h",
+    "monyhar_logo_controller.mm",
+    "monyhar_spotlight_provider.h",
+    "monyhar_spotlight_provider.mm",
+    "monyhar_text_zoom_provider.h",
+    "monyhar_text_zoom_provider.mm",
+    "monyhar_voice_search_provider.h",
+    "monyhar_voice_search_provider.mm",
   ]
   deps = [
     "//base",
@@ -37,7 +37,7 @@ source_set("providers") {
 }
 
 source_set("provider_factory") {
-  sources = [ "chromium_browser_provider_factory.mm" ]
+  sources = [ "monyhar_browser_provider_factory.mm" ]
   deps = [
     ":providers",
     "//base",

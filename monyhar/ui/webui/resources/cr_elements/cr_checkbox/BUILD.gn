@@ -11,7 +11,7 @@ js_type_check("closure_compile") {
 }
 
 js_library("cr_checkbox") {
-  deps = [ "//third_party/polymer/v1_0/components-chromium/paper-behaviors:paper-ripple-behavior-extracted" ]
+  deps = [ "//third_party/polymer/v1_0/components-monyhar/paper-behaviors:paper-ripple-behavior-extracted" ]
 }
 
 polymer_modulizer("cr_checkbox") {
@@ -30,8 +30,8 @@ js_library("cr_checkbox.m") {
     "$root_gen_dir/ui/webui/resources/cr_elements/cr_checkbox/cr_checkbox.m.js",
   ]
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/paper-behaviors:paper-ripple-behavior",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/paper-behaviors:paper-ripple-behavior",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   extra_deps = [ ":cr_checkbox_module" ]
 }

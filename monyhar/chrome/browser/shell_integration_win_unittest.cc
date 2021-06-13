@@ -70,7 +70,7 @@ class ShellIntegrationWinMigrateShortcutTest : public testing::Test {
         GetAppUserModelIdForBrowser(
             non_default_user_data_dir_.Append(non_default_profile_));
 
-    extension_id_ = L"chromiumexampleappidforunittests";
+    extension_id_ = L"monyharexampleappidforunittests";
     std::wstring app_name =
         base::UTF8ToWide(web_app::GenerateApplicationNameFromAppId(
             base::WideToUTF8(extension_id_)));

@@ -27,7 +27,7 @@ namespace crashpad {
 //! process-specific current and maximum file descriptor limits from
 //! `getrlimit(RLIMIT_NOFILE, …)`.
 //!
-//! See https://crashpad.chromium.org/bug/180.
+//! See https://crashpad.monyhar.org/bug/180.
 //!
 //! TODO(mark): Remove this annotation after sufficient data has been collected
 //! for analysis.

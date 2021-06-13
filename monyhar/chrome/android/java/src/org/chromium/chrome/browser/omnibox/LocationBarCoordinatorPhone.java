@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox;
+package org.monyhar.chrome.browser.omnibox;
 
 import android.animation.Animator;
 import android.animation.ObjectAnimator;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import org.chromium.chrome.browser.omnibox.status.StatusCoordinator;
-import org.chromium.ui.interpolators.BakedBezierInterpolator;
+import org.monyhar.chrome.browser.omnibox.status.StatusCoordinator;
+import org.monyhar.ui.interpolators.BakedBezierInterpolator;
 
 import java.util.List;
 

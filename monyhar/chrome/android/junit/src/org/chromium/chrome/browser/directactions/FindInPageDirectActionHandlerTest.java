@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.directactions;
+package org.monyhar.chrome.browser.directactions;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertThat;
@@ -28,13 +28,13 @@ import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.directactions.DirectActionReporter.Definition;
-import org.chromium.chrome.browser.directactions.DirectActionReporter.Type;
-import org.chromium.chrome.browser.findinpage.FindToolbarManager;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.directactions.DirectActionReporter.Definition;
+import org.monyhar.chrome.browser.directactions.DirectActionReporter.Type;
+import org.monyhar.chrome.browser.findinpage.FindToolbarManager;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.content_public.browser.WebContents;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -7,8 +7,8 @@ import("//build/config/android/rules.gni")
 
 generate_jni("jni_headers") {
   sources = [
-    "java/src/org/chromium/components/language/AndroidLanguageMetricsBridge.java",
-    "java/src/org/chromium/components/language/GeoLanguageProviderBridge.java",
+    "java/src/org/monyhar/components/language/AndroidLanguageMetricsBridge.java",
+    "java/src/org/monyhar/components/language/GeoLanguageProviderBridge.java",
   ]
 }
 
@@ -26,8 +26,8 @@ source_set("language_bridge") {
 
 android_library("language_bridge_java") {
   sources = [
-    "java/src/org/chromium/components/language/AndroidLanguageMetricsBridge.java",
-    "java/src/org/chromium/components/language/GeoLanguageProviderBridge.java",
+    "java/src/org/monyhar/components/language/AndroidLanguageMetricsBridge.java",
+    "java/src/org/monyhar/components/language/GeoLanguageProviderBridge.java",
   ]
 
   deps = [
@@ -40,7 +40,7 @@ android_library("language_bridge_java") {
 android_library("language_bridge_javatests") {
   testonly = true
 
-  sources = [ "java/src/org/chromium/components/language/AndroidLanguageMetricsBridgeTest.java" ]
+  sources = [ "java/src/org/monyhar/components/language/AndroidLanguageMetricsBridgeTest.java" ]
   deps = [
     ":language_bridge_java",
     "//base:base_java",

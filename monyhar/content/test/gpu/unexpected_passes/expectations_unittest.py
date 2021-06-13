@@ -1140,12 +1140,12 @@ class ConvertBuilderMapToPassOrderedStringDictUnittest(unittest.TestCase):
     expected_output[result_output.PARTIAL_PASS] = {
         'partial pass': {
             'step5 (1/2)': [
-                'http://ci.chromium.org/b/build_id0',
+                'http://ci.monyhar.org/b/build_id0',
             ],
         },
         'mixed': {
             'step9 (1/2)': [
-                'http://ci.chromium.org/b/build_id0',
+                'http://ci.monyhar.org/b/build_id0',
             ],
         },
     }

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private.settings;
+package org.monyhar.weblayer_private.settings;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
@@ -10,16 +10,16 @@ import android.graphics.Bitmap;
 import androidx.annotation.Nullable;
 import androidx.preference.Preference;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.components.browser_ui.settings.ManagedPreferenceDelegate;
-import org.chromium.components.browser_ui.site_settings.SiteSettingsCategory.Type;
-import org.chromium.components.browser_ui.site_settings.SiteSettingsDelegate;
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.components.embedder_support.browser_context.BrowserContextHandle;
-import org.chromium.components.embedder_support.util.Origin;
-import org.chromium.url.GURL;
-import org.chromium.weblayer_private.WebLayerImpl;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.components.browser_ui.settings.ManagedPreferenceDelegate;
+import org.monyhar.components.browser_ui.site_settings.SiteSettingsCategory.Type;
+import org.monyhar.components.browser_ui.site_settings.SiteSettingsDelegate;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.components.embedder_support.browser_context.BrowserContextHandle;
+import org.monyhar.components.embedder_support.util.Origin;
+import org.monyhar.url.GURL;
+import org.monyhar.weblayer_private.WebLayerImpl;
 
 import java.util.Collections;
 import java.util.Set;

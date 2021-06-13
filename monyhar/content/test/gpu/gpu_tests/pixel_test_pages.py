@@ -589,7 +589,7 @@ class PixelTestPages(object):
   def MacSpecificPages(base_name):
     iosurface_2d_canvas_args = ['--enable-accelerated-2d-canvas']
 
-    non_chromium_image_args = ['--disable-webgl-image-chromium']
+    non_monyhar_image_args = ['--disable-webgl-image-monyhar']
 
     # This disables the Core Animation compositor, falling back to the
     # old GLRenderer path, but continuing to allocate IOSurfaces for
@@ -620,22 +620,22 @@ class PixelTestPages(object):
                       base_name +
                       '_WebGLGreenTriangle_NonChromiumImage_AA_Alpha',
                       test_rect=[0, 0, 300, 300],
-                      browser_args=non_chromium_image_args),
+                      browser_args=non_monyhar_image_args),
         PixelTestPage('pixel_webgl_noaa_alpha.html',
                       base_name +
                       '_WebGLGreenTriangle_NonChromiumImage_NoAA_Alpha',
                       test_rect=[0, 0, 300, 300],
-                      browser_args=non_chromium_image_args),
+                      browser_args=non_monyhar_image_args),
         PixelTestPage('pixel_webgl_aa_noalpha.html',
                       base_name +
                       '_WebGLGreenTriangle_NonChromiumImage_AA_NoAlpha',
                       test_rect=[0, 0, 300, 300],
-                      browser_args=non_chromium_image_args),
+                      browser_args=non_monyhar_image_args),
         PixelTestPage('pixel_webgl_noaa_noalpha.html',
                       base_name +
                       '_WebGLGreenTriangle_NonChromiumImage_NoAA_NoAlpha',
                       test_rect=[0, 0, 300, 300],
-                      browser_args=non_chromium_image_args),
+                      browser_args=non_monyhar_image_args),
 
         # On macOS, test CSS filter effects with and without the CA compositor.
         PixelTestPage('filter_effects.html',

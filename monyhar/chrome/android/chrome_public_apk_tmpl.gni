@@ -170,7 +170,7 @@ template("chrome_public_common_apk_or_module_tmpl") {
     resource_values_filter_rules = [ "${_material_package}:[Tt]oolbarLayout" ]
 
     if (!_is_monochrome) {
-      product_config_java_packages = [ "org.chromium.chrome.browser" ]
+      product_config_java_packages = [ "org.monyhar.chrome.browser" ]
     }
 
     # Android supports webp transparent resources properly since API level 18,
@@ -189,8 +189,8 @@ template("chrome_public_common_apk_or_module_tmpl") {
       aapt_locale_allowlist = locales
     }
 
-    if (!defined(use_chromium_linker)) {
-      use_chromium_linker = chromium_linker_supported
+    if (!defined(use_monyhar_linker)) {
+      use_monyhar_linker = monyhar_linker_supported
     }
 
     if (!_is_monochrome && !_is_trichrome) {
@@ -208,11 +208,11 @@ template("chrome_public_common_apk_or_module_tmpl") {
       }
       library_always_compress += [
         "libchrome_crashpad_handler.so",
-        "libchromium_android_linker.so",
+        "libmonyhar_android_linker.so",
       ]
 
       # Adds "crazy." prefix to avoid libraries being extracted when installed.
-      if (use_chromium_linker) {
+      if (use_monyhar_linker) {
         if (!defined(library_renames)) {
           library_renames = []
         }
@@ -237,29 +237,29 @@ template("chrome_public_common_apk_or_module_tmpl") {
       }
       proguard_configs += [
         "//chrome/android/proguard/main.flags",
-        "//base/android/proguard/chromium_apk.flags",
-        "//base/android/proguard/chromium_code.flags",
+        "//base/android/proguard/monyhar_apk.flags",
+        "//base/android/proguard/monyhar_code.flags",
       ]
     }
 
-    if (use_chromium_linker) {
+    if (use_monyhar_linker) {
       _is_trichrome_3264 =
           !_is_trichrome || !android_64bit_target_cpu || _is_64_bit_browser
 
       if (_is_trichrome_3264) {
-        deps += [ "//base/android/linker:chromium_android_linker" ]
+        deps += [ "//base/android/linker:monyhar_android_linker" ]
         loadable_modules +=
-            [ "$root_out_dir/libchromium_android_linker$shlib_extension" ]
+            [ "$root_out_dir/libmonyhar_android_linker$shlib_extension" ]
       } else {
-        _secondary_linker = "//base/android/linker:chromium_android_linker($android_secondary_abi_toolchain)"
+        _secondary_linker = "//base/android/linker:monyhar_android_linker($android_secondary_abi_toolchain)"
         deps += [ _secondary_linker ]
         _secondary_out_dir = get_label_info(_secondary_linker, "root_out_dir")
         secondary_abi_loadable_modules +=
-            [ "$_secondary_out_dir/libchromium_android_linker$shlib_extension" ]
+            [ "$_secondary_out_dir/libmonyhar_android_linker$shlib_extension" ]
       }
 
       if (!defined(load_library_from_apk)) {
-        load_library_from_apk = chromium_linker_supported
+        load_library_from_apk = monyhar_linker_supported
       }
     }
     if (_target_type == "android_apk") {
@@ -417,7 +417,7 @@ template("monochrome_public_common_apk_or_module_tmpl") {
 
       if (is_monochrome) {
         product_config_java_packages = [
-          "org.chromium.chrome.browser",
+          "org.monyhar.chrome.browser",
           webview_product_config_java_package,
         ]
 
@@ -522,8 +522,8 @@ template("monochrome_public_common_apk_or_module_tmpl") {
         _pak_prefix = "trichrome_chrome"
       }
 
-      use_chromium_linker = is_trichrome && chromium_linker_supported
-      use_modern_linker = use_chromium_linker
+      use_monyhar_linker = is_trichrome && monyhar_linker_supported
+      use_modern_linker = use_monyhar_linker
 
       if (build_hwasan_splits && android_64bit_target_cpu &&
           invoker.is_64_bit_browser) {
@@ -532,9 +532,9 @@ template("monochrome_public_common_apk_or_module_tmpl") {
         shared_libraries +=
             [ "//chrome/android:libmonochrome_64($_hwasan_toolchain)" ]
 
-        if (use_chromium_linker) {
+        if (use_monyhar_linker) {
           shared_libraries += [
-            "//base/android/linker:chromium_android_linker($_hwasan_toolchain)",
+            "//base/android/linker:monyhar_android_linker($_hwasan_toolchain)",
           ]
         }
       }
@@ -623,7 +623,7 @@ template("monochrome_public_common_apk_or_module_tmpl") {
       "secondary_native_lib_placeholders",
       "shared_libraries",
       "uncompress_shared_libraries",
-      "use_chromium_linker",
+      "use_monyhar_linker",
       "use_modern_linker",
       "webview_product_config_java_package",
     ]

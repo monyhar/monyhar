@@ -28,7 +28,7 @@ template("android_resource_sizes_test") {
     executable_args = [
       "--output-format",
       "histograms",
-      "--chromium-output-directory",
+      "--monyhar-output-directory",
       "@WrappedPath(.)",
     ]
 

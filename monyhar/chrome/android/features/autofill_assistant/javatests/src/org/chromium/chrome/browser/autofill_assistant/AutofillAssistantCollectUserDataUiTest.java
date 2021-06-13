@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant;
+package org.monyhar.chrome.browser.autofill_assistant;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -33,9 +33,9 @@ import static org.hamcrest.core.AllOf.allOf;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
-import static org.chromium.chrome.browser.autofill_assistant.AssistantTagsForTesting.COLLECT_USER_DATA_CHOICE_LIST;
-import static org.chromium.chrome.browser.autofill_assistant.AssistantTagsForTesting.COLLECT_USER_DATA_TERMS_REQUIRE_REVIEW;
-import static org.chromium.chrome.browser.autofill_assistant.AssistantTagsForTesting.VERTICAL_EXPANDER_CHEVRON;
+import static org.monyhar.chrome.browser.autofill_assistant.AssistantTagsForTesting.COLLECT_USER_DATA_CHOICE_LIST;
+import static org.monyhar.chrome.browser.autofill_assistant.AssistantTagsForTesting.COLLECT_USER_DATA_TERMS_REQUIRE_REVIEW;
+import static org.monyhar.chrome.browser.autofill_assistant.AssistantTagsForTesting.VERTICAL_EXPANDER_CHEVRON;
 
 import android.support.test.InstrumentationRegistry;
 import android.view.View;
@@ -51,35 +51,35 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.LocaleUtils;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.autofill.PersonalDataManager;
-import org.chromium.chrome.browser.autofill_assistant.AutofillAssistantCollectUserDataTestHelper.ViewHolder;
-import org.chromium.chrome.browser.autofill_assistant.generic_ui.AssistantValue;
-import org.chromium.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataCoordinator;
-import org.chromium.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataModel;
-import org.chromium.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataModel.AddressModel;
-import org.chromium.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataModel.ContactModel;
-import org.chromium.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataModel.PaymentInstrumentModel;
-import org.chromium.chrome.browser.autofill_assistant.user_data.AssistantContactField;
-import org.chromium.chrome.browser.autofill_assistant.user_data.AssistantDateChoiceOptions;
-import org.chromium.chrome.browser.autofill_assistant.user_data.AssistantDateTime;
-import org.chromium.chrome.browser.autofill_assistant.user_data.AssistantLoginChoice;
-import org.chromium.chrome.browser.autofill_assistant.user_data.AssistantTermsAndConditionsState;
-import org.chromium.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantAdditionalSectionFactory;
-import org.chromium.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantStaticTextSection;
-import org.chromium.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantTextInputSection;
-import org.chromium.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantTextInputSection.TextInputFactory;
-import org.chromium.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantTextInputType;
-import org.chromium.chrome.browser.customtabs.CustomTabActivityTestRule;
-import org.chromium.chrome.browser.customtabs.CustomTabsTestUtils;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.payments.AutofillAddress;
-import org.chromium.chrome.browser.payments.AutofillContact;
-import org.chromium.chrome.browser.payments.AutofillPaymentInstrument;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.LocaleUtils;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager;
+import org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantCollectUserDataTestHelper.ViewHolder;
+import org.monyhar.chrome.browser.autofill_assistant.generic_ui.AssistantValue;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataCoordinator;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataModel;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataModel.AddressModel;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataModel.ContactModel;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataModel.PaymentInstrumentModel;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantContactField;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantDateChoiceOptions;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantDateTime;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantLoginChoice;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantTermsAndConditionsState;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantAdditionalSectionFactory;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantStaticTextSection;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantTextInputSection;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantTextInputSection.TextInputFactory;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantTextInputType;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivityTestRule;
+import org.monyhar.chrome.browser.customtabs.CustomTabsTestUtils;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.payments.AutofillAddress;
+import org.monyhar.chrome.browser.payments.AutofillContact;
+import org.monyhar.chrome.browser.payments.AutofillPaymentInstrument;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

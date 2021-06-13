@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.signin;
+package org.monyhar.chrome.browser.signin;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,9 +11,9 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ChromeBaseAppCompatActivity;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ChromeBaseAppCompatActivity;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
 
 /**
  * Allows the user to pick an account, sign in and enable sync. Started from Settings and various

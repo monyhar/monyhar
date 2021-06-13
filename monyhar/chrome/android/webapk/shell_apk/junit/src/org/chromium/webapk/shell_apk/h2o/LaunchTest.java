@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webapk.shell_apk.h2o;
+package org.monyhar.webapk.shell_apk.h2o;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import static org.chromium.webapk.shell_apk.ManageDataLauncherActivity.SITE_SETTINGS_SHORTCUT_ID;
+import static org.monyhar.webapk.shell_apk.ManageDataLauncherActivity.SITE_SETTINGS_SHORTCUT_ID;
 
 import android.app.Activity;
 import android.app.ActivityManager;
@@ -37,15 +37,15 @@ import org.robolectric.shadows.ShadowActivityManager;
 import org.robolectric.shadows.ShadowApplication;
 import org.robolectric.shadows.ShadowPackageManager;
 
-import org.chromium.components.webapk.lib.common.WebApkMetaDataKeys;
-import org.chromium.testing.local.LocalRobolectricTestRunner;
-import org.chromium.webapk.lib.common.WebApkConstants;
-import org.chromium.webapk.shell_apk.CustomAndroidOsShadowAsyncTask;
-import org.chromium.webapk.shell_apk.HostBrowserLauncher;
-import org.chromium.webapk.shell_apk.HostBrowserUtils;
-import org.chromium.webapk.shell_apk.TestBrowserInstaller;
-import org.chromium.webapk.shell_apk.WebApkSharedPreferences;
-import org.chromium.webapk.test.WebApkTestHelper;
+import org.monyhar.components.webapk.lib.common.WebApkMetaDataKeys;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.webapk.lib.common.WebApkConstants;
+import org.monyhar.webapk.shell_apk.CustomAndroidOsShadowAsyncTask;
+import org.monyhar.webapk.shell_apk.HostBrowserLauncher;
+import org.monyhar.webapk.shell_apk.HostBrowserUtils;
+import org.monyhar.webapk.shell_apk.TestBrowserInstaller;
+import org.monyhar.webapk.shell_apk.WebApkSharedPreferences;
+import org.monyhar.webapk.test.WebApkTestHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -346,7 +346,7 @@ public final class LaunchTest {
 
     /**
      * Test that H2OMainActivity is always used as the entry point when the host browser is
-     * org.chromium.arc.intent_helper.
+     * org.monyhar.arc.intent_helper.
      */
     @Test
     public void testLaunchWithArcIntentHelperHostBrowser() {

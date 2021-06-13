@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.merchant_viewer;
+package org.monyhar.chrome.browser.merchant_viewer;
 
 import android.content.Context;
 import android.graphics.Typeface;
@@ -13,13 +13,13 @@ import android.text.style.StyleSpan;
 
 import androidx.core.content.res.ResourcesCompat;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.merchant_viewer.RatingStarSpan.RatingStarType;
-import org.chromium.chrome.browser.merchant_viewer.proto.MerchantTrustSignalsOuterClass.MerchantTrustSignals;
-import org.chromium.chrome.tab_ui.R;
-import org.chromium.components.messages.MessageBannerProperties;
-import org.chromium.components.messages.MessageIdentifier;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.merchant_viewer.RatingStarSpan.RatingStarType;
+import org.monyhar.chrome.browser.merchant_viewer.proto.MerchantTrustSignalsOuterClass.MerchantTrustSignals;
+import org.monyhar.chrome.tab_ui.R;
+import org.monyhar.components.messages.MessageBannerProperties;
+import org.monyhar.components.messages.MessageIdentifier;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.text.NumberFormat;
 

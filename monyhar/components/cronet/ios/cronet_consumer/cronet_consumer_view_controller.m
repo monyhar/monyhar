@@ -16,7 +16,7 @@
   self.view.backgroundColor = [UIColor whiteColor];
 
   UIButton* button = [UIButton buttonWithType:UIButtonTypeSystem];
-  [button setTitle:@"chromium.org" forState:UIControlStateNormal];
+  [button setTitle:@"monyhar.org" forState:UIControlStateNormal];
   [button setFrame:CGRectMake(5, 0, 95, 50)];
   [button addTarget:self
                 action:@selector(loadChromium)
@@ -42,7 +42,7 @@
   [_webView
       loadRequest:[NSURLRequest
                       requestWithURL:
-                          [NSURL URLWithString:@"https://www.chromium.org"]]];
+                          [NSURL URLWithString:@"https://www.monyhar.org"]]];
 }
 #endif
 @end

@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.firstrun;
+package org.monyhar.chrome.browser.firstrun;
 
 import android.os.Bundle;
 
-import org.chromium.base.supplier.OneshotSupplier;
+import org.monyhar.base.supplier.OneshotSupplier;
 
 /**
  * Defines the host interface for First Run Experience pages.

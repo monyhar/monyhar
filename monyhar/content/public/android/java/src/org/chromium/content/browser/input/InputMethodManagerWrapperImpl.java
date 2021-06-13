@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.input;
+package org.monyhar.content.browser.input;
 
 import android.app.Activity;
 import android.content.Context;
@@ -16,12 +16,12 @@ import android.view.inputmethod.InputMethodManager;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
-import org.chromium.base.task.PostTask;
-import org.chromium.content_public.browser.InputMethodManagerWrapper;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.display.DisplayAndroid;
+import org.monyhar.base.Log;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.content_public.browser.InputMethodManagerWrapper;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.display.DisplayAndroid;
 
 import java.lang.ref.WeakReference;
 import java.lang.reflect.InvocationTargetException;

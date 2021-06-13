@@ -7,7 +7,7 @@ syntax = "proto2";
 package android_webview;
 
 option optimize_for = LITE_RUNTIME; // TODO(crbug/800281): Remove this after proto 4.0
-option java_package = "org.chromium.android_webview.proto";
+option java_package = "org.monyhar.android_webview.proto";
 
 // WebView uses AwVariationsSeed to serialize a downloaded seed, along with the
 // required HTTP header metadata, to a file. While Chrome stores the seed in

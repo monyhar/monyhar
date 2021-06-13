@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.util;
+package org.monyhar.chrome.test.util;
 
 import android.support.test.InstrumentationRegistry;
 
@@ -12,11 +12,11 @@ import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.base.test.util.ApplicationTestUtils;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.bookmarks.BookmarkActivity;
-import org.chromium.chrome.browser.bookmarks.BookmarkUtils;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.test.util.ApplicationTestUtils;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.bookmarks.BookmarkActivity;
+import org.monyhar.chrome.browser.bookmarks.BookmarkUtils;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /**
  * This test rule destroys BookmarkActivity opened with showBookmarkManager on phone.

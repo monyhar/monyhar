@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.user_education;
+package org.monyhar.chrome.browser.user_education;
 
 import android.content.res.Resources;
 import android.graphics.Rect;
@@ -11,9 +11,9 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 
-import org.chromium.components.browser_ui.widget.highlight.ViewHighlighter.HighlightParams;
-import org.chromium.components.browser_ui.widget.textbubble.TextBubble;
-import org.chromium.ui.widget.ViewRectProvider;
+import org.monyhar.components.browser_ui.widget.highlight.ViewHighlighter.HighlightParams;
+import org.monyhar.components.browser_ui.widget.textbubble.TextBubble;
+import org.monyhar.ui.widget.ViewRectProvider;
 
 /**
  * Builder for (@see IPHCommand.java). Use this instead of constructing an IPHCommand directly.

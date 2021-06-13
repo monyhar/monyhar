@@ -38,7 +38,7 @@ class Command(object):
   REFRESH = (_Method.POST, '/session/:sessionId/refresh')
   EXECUTE_SCRIPT = (_Method.POST, '/session/:sessionId/execute/sync')
   EXECUTE_ASYNC_SCRIPT = (_Method.POST, '/session/:sessionId/execute/async')
-  LAUNCH_APP = (_Method.POST, '/session/:sessionId/chromium/launch_app')
+  LAUNCH_APP = (_Method.POST, '/session/:sessionId/monyhar/launch_app')
   GET_CURRENT_URL = (_Method.GET, '/session/:sessionId/url')
   GET_TITLE = (_Method.GET, '/session/:sessionId/title')
   GET_PAGE_SOURCE = (_Method.GET, '/session/:sessionId/source')
@@ -128,11 +128,11 @@ class Command(object):
   GET_NETWORK_CONNECTION = (
      _Method.GET, '/session/:sessionId/network_connection')
   GET_NETWORK_CONDITIONS = (
-      _Method.GET, '/session/:sessionId/chromium/network_conditions')
+      _Method.GET, '/session/:sessionId/monyhar/network_conditions')
   SET_NETWORK_CONDITIONS = (
-      _Method.POST, '/session/:sessionId/chromium/network_conditions')
+      _Method.POST, '/session/:sessionId/monyhar/network_conditions')
   DELETE_NETWORK_CONDITIONS = (
-      _Method.DELETE, '/session/:sessionId/chromium/network_conditions')
+      _Method.DELETE, '/session/:sessionId/monyhar/network_conditions')
   GET_STATUS = (_Method.GET, '/session/:sessionId/application_cache/status')
   IS_BROWSER_ONLINE = (_Method.GET, '/session/:sessionId/browser_connection')
   SET_BROWSER_ONLINE = (_Method.POST, '/session/:sessionId/browser_connection')
@@ -179,7 +179,7 @@ class Command(object):
   SET_NETWORK_CONNECTION = (
       _Method.POST, '/session/:sessionId/network_connection')
   SEND_COMMAND_AND_GET_RESULT = (
-      _Method.POST, '/session/:sessionId/chromium/send_command_and_get_result')
+      _Method.POST, '/session/:sessionId/monyhar/send_command_and_get_result')
   GENERATE_TEST_REPORT = (
       _Method.POST, '/session/:sessionId/reporting/generate_test_report')
   SET_TIME_ZONE = (_Method.POST, '/session/:sessionId/time_zone')

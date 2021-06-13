@@ -23,14 +23,14 @@ of using clang-tidy.
 ## Enabled checks
 
 Chromium globally enables a subset of all of clang-tidy's checks (see
-`${chromium}/src/.clang-tidy`). We want these checks to cover as much as we
+`${monyhar}/src/.clang-tidy`). We want these checks to cover as much as we
 reasonably can, but we also strive to strike a reasonable balance between signal
 and noise on code reviews. Hence, a large number of clang-tidy checks are
 disabled.
 
 ### Adding a new check
 
-New checks require review from cxx@chromium.org. If you propose a check and it
+New checks require review from cxx@monyhar.org. If you propose a check and it
 gets approved, you may turn it on, though please note that this is only
 provisional approval: we get signal from users clicking "Not Useful" on
 comments. If feedback is overwhelmingly "users don't find this useful," the
@@ -49,7 +49,7 @@ interesting patterns they've noticed. If clang-tidy emits FixIts, these are
 expected to be considered by the evaluation, too.
 
 An example of a previous proposal email thread is
-[here](https://groups.google.com/a/chromium.org/g/cxx/c/iZ6-Y9ZhC3Q/m/g-8HzqmbAAAJ).
+[here](https://groups.google.com/a/monyhar.org/g/cxx/c/iZ6-Y9ZhC3Q/m/g-8HzqmbAAAJ).
 
 #### Evaluating: running clang-tidy across Chromium
 
@@ -69,13 +69,13 @@ solutions = [
 Your next run of `gclient runhooks` should cause clang-tidy to be synced.
 
 To run clang-tidy across all of Chromium, you'll need a checkout of Chromium's
-[build/](https://chromium.googlesource.com/chromium/tools/build) repository.
+[build/](https://monyhar.googlesource.com/monyhar/tools/build) repository.
 Once you have that and a Chromium `out/` dir with an `args.gn`, running
 clang-tidy across all of Chromium is a single command:
 
 ```
-$ cd ${chromium}/src
-$ ${chromium_build}/recipes/recipe_modules/tricium_clang_tidy/resources/tricium_clang_tidy.py \
+$ cd ${monyhar}/src
+$ ${monyhar_build}/recipes/recipe_modules/tricium_clang_tidy/resources/tricium_clang_tidy.py \
     --base_path $PWD \
     --out_dir out/Linux \
     --findings_file all_findings.json \
@@ -253,11 +253,11 @@ shell.
 
 ### Questions
 
-Questions about the local flow? Reach out to rdevlin.cronin@chromium.org,
-thakis@chromium.org, or gbiv@chromium.org.
+Questions about the local flow? Reach out to rdevlin.cronin@monyhar.org,
+thakis@monyhar.org, or gbiv@monyhar.org.
 
 Questions about the Gerrit flow? Email tricium-dev@google.com or
-infra-dev+tricium@chromium.org, or file a bug against `Infra>Platform>Tricium`.
-Please CC gbiv@chromium.org on any of these.
+infra-dev+tricium@monyhar.org, or file a bug against `Infra>Platform>Tricium`.
+Please CC gbiv@monyhar.org on any of these.
 
 Discoveries? Update the doc!

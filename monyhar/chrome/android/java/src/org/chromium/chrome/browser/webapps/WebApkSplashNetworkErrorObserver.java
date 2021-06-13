@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps;
+package org.monyhar.chrome.browser.webapps;
 
 import android.app.Activity;
 import android.content.Context;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.metrics.WebApkUma;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.content_public.browser.NavigationHandle;
-import org.chromium.net.NetError;
-import org.chromium.net.NetworkChangeNotifier;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.metrics.WebApkUma;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.content_public.browser.NavigationHandle;
+import org.monyhar.net.NetError;
+import org.monyhar.net.NetworkChangeNotifier;
 
 /**
  * Displays error dialog on top of splash screen if there is a network error while loading the

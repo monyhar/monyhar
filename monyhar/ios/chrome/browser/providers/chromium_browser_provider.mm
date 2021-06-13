@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#import "ios/chrome/browser/providers/chromium_browser_provider.h"
+#import "ios/chrome/browser/providers/monyhar_browser_provider.h"
 
 #include <memory>
 
-#import "ios/chrome/browser/providers/chromium_logo_controller.h"
-#import "ios/chrome/browser/providers/chromium_spotlight_provider.h"
-#import "ios/chrome/browser/providers/chromium_text_zoom_provider.h"
-#import "ios/chrome/browser/providers/chromium_voice_search_provider.h"
-#import "ios/chrome/browser/providers/images/chromium_branded_image_provider.h"
-#include "ios/chrome/browser/providers/signin/chromium_signin_resources_provider.h"
+#import "ios/chrome/browser/providers/monyhar_logo_controller.h"
+#import "ios/chrome/browser/providers/monyhar_spotlight_provider.h"
+#import "ios/chrome/browser/providers/monyhar_text_zoom_provider.h"
+#import "ios/chrome/browser/providers/monyhar_voice_search_provider.h"
+#import "ios/chrome/browser/providers/images/monyhar_branded_image_provider.h"
+#include "ios/chrome/browser/providers/signin/monyhar_signin_resources_provider.h"
 #import "ios/public/provider/chrome/browser/discover_feed/discover_feed_provider.h"
 #include "ios/public/provider/chrome/browser/distribution/app_distribution_provider.h"
 #include "ios/public/provider/chrome/browser/overrides_provider.h"

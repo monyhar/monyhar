@@ -26,9 +26,9 @@ both, write and scan methods:
 The most important classes for Android adaptation are [NfcImpl], [NfcTagHandler],
 and [NdefMessageUtils].
 
-[NfcImpl]: ../../../services/device/nfc/android/java/src/org/chromium/device/nfc/NfcImpl.java
-[NfcTagHandler]: ../../../services/device/nfc/android/java/src/org/chromium/device/nfc/NfcTagHandler.java
-[NdefMessageUtils]: ../../../services/device/nfc/android/java/src/org/chromium/device/nfc/NdefMessageUtils.java
+[NfcImpl]: ../../../services/device/nfc/android/java/src/org/monyhar/device/nfc/NfcImpl.java
+[NfcTagHandler]: ../../../services/device/nfc/android/java/src/org/monyhar/device/nfc/NfcTagHandler.java
+[NdefMessageUtils]: ../../../services/device/nfc/android/java/src/org/monyhar/device/nfc/NdefMessageUtils.java
 
 ## Web-exposed Interfaces
 
@@ -43,8 +43,8 @@ and [NdefMessageUtils].
   [NfcBlocklistTest.java]
 
 [web-platform-tests github repository]: https://github.com/web-platform-tests/wpt
-[nfctest.java]: ../../../services/device/nfc/android/junit/src/org/chromium/device/nfc/NFCTest.java
-[nfcblocklisttest.java]: ../../../services/device/nfc/android/junit/src/org/chromium/device/nfc/NfcBlocklistTest.java
+[nfctest.java]: ../../../services/device/nfc/android/junit/src/org/monyhar/device/nfc/NFCTest.java
+[nfcblocklisttest.java]: ../../../services/device/nfc/android/junit/src/org/monyhar/device/nfc/NfcBlocklistTest.java
 
 ## Security and Privacy
 
@@ -72,4 +72,4 @@ At the time of writing, only Android platform is supported.
 
 Please refer to the [design documentation] for more details.
 
-[design documentation]: https://sites.google.com/a/chromium.org/dev/developers/design-documents/web-nfc
+[design documentation]: https://sites.google.com/a/monyhar.org/dev/developers/design-documents/web-nfc

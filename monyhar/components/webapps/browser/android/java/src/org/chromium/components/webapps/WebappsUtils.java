@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.webapps;
+package org.monyhar.components.webapps;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -16,13 +16,13 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.Icon;
 import android.os.Build;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.components.webapk.lib.client.WebApkValidator;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.components.webapk.lib.client.WebApkValidator;
+import org.monyhar.ui.widget.Toast;
 
 import java.util.List;
 

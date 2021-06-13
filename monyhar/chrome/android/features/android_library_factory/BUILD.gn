@@ -9,8 +9,8 @@ import("//chrome/android/features/android_library_factory_tmpl.gni")
 template("generate_dummy_java") {
   jinja_template(target_name) {
     testonly = true
-    input = "junit/src/org/chromium/chrome/browser/android_library_factory/Dummy.java.jinja2"
-    output = "$target_gen_dir/junit/src/org/chromium/chrome/browser/android_library_factory/${invoker.class_name}.java"
+    input = "junit/src/org/monyhar/chrome/browser/android_library_factory/Dummy.java.jinja2"
+    output = "$target_gen_dir/junit/src/org/monyhar/chrome/browser/android_library_factory/${invoker.class_name}.java"
     variables = [ "class_name=${invoker.class_name}" ]
   }
 }
@@ -72,7 +72,7 @@ android_library_factory("a_factory2_java") {
 java_library("junit_tests") {
   bypass_platform_checks = true
   testonly = true
-  sources = [ "junit/src/org/chromium/chrome/browser/android_library_factory/AndroidLibraryFactoryTest.java" ]
+  sources = [ "junit/src/org/monyhar/chrome/browser/android_library_factory/AndroidLibraryFactoryTest.java" ]
   deps = [
     ":a_factory2_java",
     ":a_impl_factory1_java",

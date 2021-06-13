@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.resources.dynamics;
+package org.monyhar.ui.resources.dynamics;
 
 import android.graphics.Bitmap;
 import android.graphics.Rect;
 
-import org.chromium.ui.resources.ResourceFactory;
-import org.chromium.ui.resources.statics.NinePatchData;
+import org.monyhar.ui.resources.ResourceFactory;
+import org.monyhar.ui.resources.statics.NinePatchData;
 
 /**
  * A basic implementation of {@link DynamicResource} to handle updatable bitmaps.

@@ -1,11 +1,11 @@
 set noparent
-sadrul@chromium.org
-sky@chromium.org
-thakis@chromium.org
+sadrul@monyhar.org
+sky@monyhar.org
+thakis@monyhar.org
 
 # Mac stuff
-avi@chromium.org
-ccameron@chromium.org
+avi@monyhar.org
+ccameron@monyhar.org
 
 # If you're doing structural changes get a review from one of the OWNERS.
 per-file BUILD.gn=*

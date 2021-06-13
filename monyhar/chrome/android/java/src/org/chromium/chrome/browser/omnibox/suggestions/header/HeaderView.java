@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.header;
+package org.monyhar.chrome.browser.omnibox.suggestions.header;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -22,10 +22,10 @@ import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat.AccessibilityActionCompat;
 import androidx.core.widget.TextViewCompat;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.omnibox.suggestions.base.SimpleHorizontalLayoutView;
-import org.chromium.chrome.browser.util.KeyNavigationUtil;
-import org.chromium.components.browser_ui.styles.ChromeColors;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.omnibox.suggestions.base.SimpleHorizontalLayoutView;
+import org.monyhar.chrome.browser.util.KeyNavigationUtil;
+import org.monyhar.components.browser_ui.styles.ChromeColors;
 
 /**
  * View for Group Headers.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks;
+package org.monyhar.chrome.browser.tasks;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -22,20 +22,20 @@ import androidx.core.view.ViewCompat;
 
 import com.google.android.material.appbar.AppBarLayout;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.MathUtils;
-import org.chromium.chrome.browser.feed.FeedSurfaceCoordinator;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.ntp.IncognitoDescriptionView;
-import org.chromium.chrome.browser.ntp.search.SearchBoxCoordinator;
-import org.chromium.chrome.browser.omnibox.SearchEngineLogoUtils;
-import org.chromium.chrome.tab_ui.R;
-import org.chromium.components.browser_ui.styles.ChromeColors;
-import org.chromium.components.browser_ui.widget.CoordinatorLayoutForPointer;
-import org.chromium.components.browser_ui.widget.displaystyle.UiConfig;
-import org.chromium.components.browser_ui.widget.displaystyle.ViewResizer;
-import org.chromium.components.content_settings.CookieControlsEnforcement;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.MathUtils;
+import org.monyhar.chrome.browser.feed.FeedSurfaceCoordinator;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.ntp.IncognitoDescriptionView;
+import org.monyhar.chrome.browser.ntp.search.SearchBoxCoordinator;
+import org.monyhar.chrome.browser.omnibox.SearchEngineLogoUtils;
+import org.monyhar.chrome.tab_ui.R;
+import org.monyhar.components.browser_ui.styles.ChromeColors;
+import org.monyhar.components.browser_ui.widget.CoordinatorLayoutForPointer;
+import org.monyhar.components.browser_ui.widget.displaystyle.UiConfig;
+import org.monyhar.components.browser_ui.widget.displaystyle.ViewResizer;
+import org.monyhar.components.content_settings.CookieControlsEnforcement;
+import org.monyhar.ui.base.WindowAndroid;
 
 // The view of the tasks surface.
 class TasksView extends CoordinatorLayoutForPointer {

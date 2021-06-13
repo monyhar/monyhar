@@ -16,12 +16,12 @@ patches for this configuration.
 
 ## Mailing List
 
-https://groups.google.com/a/chromium.org/group/clang/topics
+https://groups.google.com/a/monyhar.org/group/clang/topics
 
 ## Using plugins
 
 The
-[chromium style plugin](https://dev.chromium.org/developers/coding-style/chromium-style-checker-errors)
+[monyhar style plugin](https://dev.monyhar.org/developers/coding-style/monyhar-style-checker-errors)
 is used by default when clang is used.
 
 If you're working on the plugin, you can build it locally like so:
@@ -61,7 +61,7 @@ to have Visual Studio with C++ support installed.
 
 Set `clang_base_path` in your args.gn to the llvm build directory containing
 `bin/clang` (i.e. the directory you ran cmake). This must be an absolute
-path. You also need to disable chromium's clang plugin.
+path. You also need to disable monyhar's clang plugin.
 
 Here's an example that also disables debug info and enables the component build
 (both not strictly necessary, but they will speed up your build):

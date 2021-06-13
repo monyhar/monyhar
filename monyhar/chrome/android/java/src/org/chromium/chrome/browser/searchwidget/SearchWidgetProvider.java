@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.searchwidget;
+package org.monyhar.chrome.browser.searchwidget;
 
 import android.annotation.SuppressLint;
 import android.app.PendingIntent;
@@ -21,23 +21,23 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.core.app.ActivityOptionsCompat;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.firstrun.FirstRunFlowSequencer;
-import org.chromium.chrome.browser.locale.LocaleManager;
-import org.chromium.chrome.browser.omnibox.UrlBarData;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.search_engines.TemplateUrlServiceFactory;
-import org.chromium.components.search_engines.TemplateUrl;
-import org.chromium.components.search_engines.TemplateUrlService;
-import org.chromium.components.search_engines.TemplateUrlService.LoadListener;
-import org.chromium.components.search_engines.TemplateUrlService.TemplateUrlServiceObserver;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.firstrun.FirstRunFlowSequencer;
+import org.monyhar.chrome.browser.locale.LocaleManager;
+import org.monyhar.chrome.browser.omnibox.UrlBarData;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.search_engines.TemplateUrlServiceFactory;
+import org.monyhar.components.search_engines.TemplateUrl;
+import org.monyhar.components.search_engines.TemplateUrlService;
+import org.monyhar.components.search_engines.TemplateUrlService.LoadListener;
+import org.monyhar.components.search_engines.TemplateUrlService.TemplateUrlServiceObserver;
 
 /**
  * Widget that lets the user search using their default search engine.
@@ -108,16 +108,16 @@ public class SearchWidgetProvider extends AppWidgetProvider {
     }
 
     static final String ACTION_START_TEXT_QUERY =
-            "org.chromium.chrome.browser.searchwidget.START_TEXT_QUERY";
+            "org.monyhar.chrome.browser.searchwidget.START_TEXT_QUERY";
     static final String ACTION_START_VOICE_QUERY =
-            "org.chromium.chrome.browser.searchwidget.START_VOICE_QUERY";
+            "org.monyhar.chrome.browser.searchwidget.START_VOICE_QUERY";
     static final String ACTION_UPDATE_ALL_WIDGETS =
-            "org.chromium.chrome.browser.searchwidget.UPDATE_ALL_WIDGETS";
+            "org.monyhar.chrome.browser.searchwidget.UPDATE_ALL_WIDGETS";
 
     public static final String EXTRA_START_VOICE_SEARCH =
-            "org.chromium.chrome.browser.searchwidget.START_VOICE_SEARCH";
+            "org.monyhar.chrome.browser.searchwidget.START_VOICE_SEARCH";
     public static final String EXTRA_FROM_SEARCH_WIDGET =
-            "org.chromium.chrome.browser.searchwidget.FROM_SEARCH_WIDGET";
+            "org.monyhar.chrome.browser.searchwidget.FROM_SEARCH_WIDGET";
 
     /** Number of consecutive crashes this widget will absorb before giving up. */
     private static final int CRASH_LIMIT = 3;

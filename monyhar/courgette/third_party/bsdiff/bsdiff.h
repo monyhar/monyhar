@@ -31,9 +31,9 @@
 //                --Benjamin Smedberg <benjamin@smedbergs.us>
 // 2009-03-31 - Change to use Streams.  Move CRC code to crc.{h,cc}
 //              Changed status to an enum, removed unused status codes.
-//                --Stephen Adams <sra@chromium.org>
+//                --Stephen Adams <sra@monyhar.org>
 // 2013-04-10 - Added wrapper to apply a patch directly to files.
-//                --Joshua Pawlicki <waffles@chromium.org>
+//                --Joshua Pawlicki <waffles@monyhar.org>
 
 // Copyright 2016 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be

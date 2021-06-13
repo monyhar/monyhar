@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.digitalgoods;
+package org.monyhar.chrome.browser.browserservices.digitalgoods;
 
 import android.net.Uri;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.mojo.system.MojoException;
-import org.chromium.payments.mojom.DigitalGoods;
-import org.chromium.payments.mojom.DigitalGoods.AcknowledgeResponse;
-import org.chromium.payments.mojom.DigitalGoods.GetDetailsResponse;
-import org.chromium.payments.mojom.DigitalGoods.ListPurchasesResponse;
-import org.chromium.url.GURL;
+import org.monyhar.mojo.system.MojoException;
+import org.monyhar.payments.mojom.DigitalGoods;
+import org.monyhar.payments.mojom.DigitalGoods.AcknowledgeResponse;
+import org.monyhar.payments.mojom.DigitalGoods.GetDetailsResponse;
+import org.monyhar.payments.mojom.DigitalGoods.ListPurchasesResponse;
+import org.monyhar.url.GURL;
 
 /**
  * An implementation of the {@link DigitalGoods} mojo interface that communicates with Trusted Web

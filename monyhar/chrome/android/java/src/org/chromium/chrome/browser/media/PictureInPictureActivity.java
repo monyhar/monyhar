@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.media;
+package org.monyhar.chrome.browser.media;
 
 import android.annotation.SuppressLint;
 import android.app.ActivityManager;
@@ -20,23 +20,23 @@ import android.view.View;
 import android.view.View.OnLayoutChangeListener;
 import android.view.ViewGroup;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.MathUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.init.AsyncInitializationActivity;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabUtils;
-import org.chromium.components.thinwebview.CompositorView;
-import org.chromium.components.thinwebview.CompositorViewFactory;
-import org.chromium.components.thinwebview.ThinWebViewConstraints;
-import org.chromium.content_public.browser.MediaSession;
-import org.chromium.content_public.browser.MediaSessionObserver;
-import org.chromium.ui.base.ActivityWindowAndroid;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.MathUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.init.AsyncInitializationActivity;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabUtils;
+import org.monyhar.components.thinwebview.CompositorView;
+import org.monyhar.components.thinwebview.CompositorViewFactory;
+import org.monyhar.components.thinwebview.ThinWebViewConstraints;
+import org.monyhar.content_public.browser.MediaSession;
+import org.monyhar.content_public.browser.MediaSessionObserver;
+import org.monyhar.ui.base.ActivityWindowAndroid;
+import org.monyhar.ui.base.WindowAndroid;
 
 import java.util.ArrayList;
 
@@ -47,7 +47,7 @@ import java.util.ArrayList;
  */
 public class PictureInPictureActivity extends AsyncInitializationActivity {
     private static final String ACTION_PLAY =
-            "org.chromium.chrome.browser.media.PictureInPictureActivity.Play";
+            "org.monyhar.chrome.browser.media.PictureInPictureActivity.Play";
 
     private static final float MAX_ASPECT_RATIO = 2.39f;
     private static final float MIN_ASPECT_RATIO = 1 / 2.39f;

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.hardware_acceleration;
+package org.monyhar.chrome.browser.hardware_acceleration;
 
 import android.content.Context;
 import android.content.pm.ActivityInfo;
@@ -16,8 +16,8 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
 
 /**
  * Hardware acceleration-related manifest tests.

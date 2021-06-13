@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.embedder_support.application;
+package org.monyhar.components.embedder_support.application;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.os.Build;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationHandler;

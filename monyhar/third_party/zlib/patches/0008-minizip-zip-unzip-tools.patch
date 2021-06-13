@@ -1,5 +1,5 @@
 From 0c7de17000659f4f79de878296892c46be0aff77 Mon Sep 17 00:00:00 2001
-From: Noel Gordon <noel@chromium.org>
+From: Noel Gordon <noel@monyhar.org>
 Date: Wed, 26 May 2021 21:57:43 +1000
 Subject: [PATCH] Build minizip zip and unzip tools
 

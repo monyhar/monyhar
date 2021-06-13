@@ -12,7 +12,7 @@
 #include "testing/gtest/include/gtest/gtest.h"
 
 TEST(AutocompleteMatchTypeTest, AccessibilityLabelHistory) {
-  const std::u16string& kTestUrl = u"https://www.chromium.org";
+  const std::u16string& kTestUrl = u"https://www.monyhar.org";
   const std::u16string& kTestTitle = u"The Chromium Projects";
 
   // Test plain url.

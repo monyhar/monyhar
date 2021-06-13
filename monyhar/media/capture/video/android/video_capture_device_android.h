@@ -34,7 +34,7 @@ class CAPTURE_EXPORT VideoCaptureDeviceAndroid : public VideoCaptureDevice {
   // Automatically generated enum to interface with Java world.
   //
   // A Java counterpart will be generated for this enum.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.media
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.media
   enum AndroidImageFormat {
     // Android graphics ImageFormat mapping, see reference in:
     // http://developer.android.com/reference/android/graphics/ImageFormat.html
@@ -47,7 +47,7 @@ class CAPTURE_EXPORT VideoCaptureDeviceAndroid : public VideoCaptureDevice {
   // A Java counterpart will be generated for this enum.
   // The values of these are matched with the ones in media::VideoCaptureError
   // to allow direct static_casting.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.media
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.media
   enum class AndroidVideoCaptureError {
     ANDROID_API_1_CAMERA_ERROR_CALLBACK_RECEIVED = 68,
     ANDROID_API_2_CAMERA_DEVICE_ERROR_RECEIVED = 69,
@@ -61,7 +61,7 @@ class CAPTURE_EXPORT VideoCaptureDeviceAndroid : public VideoCaptureDevice {
   // A Java counterpart will be generated for this enum.
   // The values of these are matched with the ones in
   // media::VideoCaptureFrameDropReason to allow direct static_casting.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.media
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.media
   enum class AndroidVideoCaptureFrameDropReason {
     ANDROID_API_1_UNEXPECTED_DATA_LENGTH = 8,
     ANDROID_API_2_ACQUIRED_IMAGE_IS_NULL = 9,
@@ -88,14 +88,14 @@ class CAPTURE_EXPORT VideoCaptureDeviceAndroid : public VideoCaptureDevice {
                        SetPhotoOptionsCallback callback) override;
   void TakePhoto(TakePhotoCallback callback) override;
 
-  // Implement org.chromium.media.VideoCapture.nativeOnFrameAvailable.
+  // Implement org.monyhar.media.VideoCapture.nativeOnFrameAvailable.
   void OnFrameAvailable(JNIEnv* env,
                         const base::android::JavaParamRef<jobject>& obj,
                         const base::android::JavaParamRef<jbyteArray>& data,
                         jint length,
                         jint rotation);
 
-  // Implement org.chromium.media.VideoCapture.nativeOnI420FrameAvailable.
+  // Implement org.monyhar.media.VideoCapture.nativeOnI420FrameAvailable.
   void OnI420FrameAvailable(JNIEnv* env,
                             jobject obj,
                             jobject y_buffer,
@@ -109,13 +109,13 @@ class CAPTURE_EXPORT VideoCaptureDeviceAndroid : public VideoCaptureDevice {
                             jint rotation,
                             jlong timestamp);
 
-  // Implement org.chromium.media.VideoCapture.nativeOnError.
+  // Implement org.monyhar.media.VideoCapture.nativeOnError.
   void OnError(JNIEnv* env,
                const base::android::JavaParamRef<jobject>& obj,
                int android_video_capture_error,
                const base::android::JavaParamRef<jstring>& message);
 
-  // Implement org.chromium.media.VideoCapture.nativeOnFrameDropped.
+  // Implement org.monyhar.media.VideoCapture.nativeOnFrameDropped.
   void OnFrameDropped(JNIEnv* env,
                       const base::android::JavaParamRef<jobject>& obj,
                       int android_video_capture_frame_drop_reason);
@@ -126,17 +126,17 @@ class CAPTURE_EXPORT VideoCaptureDeviceAndroid : public VideoCaptureDevice {
       jlong callback_id,
       jobject photo_capabilities);
 
-  // Implement org.chromium.media.VideoCapture.nativeOnPhotoTaken.
+  // Implement org.monyhar.media.VideoCapture.nativeOnPhotoTaken.
   void OnPhotoTaken(JNIEnv* env,
                     const base::android::JavaParamRef<jobject>& obj,
                     jlong callback_id,
                     const base::android::JavaParamRef<jbyteArray>& data);
 
-  // Implement org.chromium.media.VideoCapture.nativeOnStarted.
+  // Implement org.monyhar.media.VideoCapture.nativeOnStarted.
   void OnStarted(JNIEnv* env, const base::android::JavaParamRef<jobject>& obj);
 
   // Implement
-  // org.chromium.media.VideoCapture.nativeDCheckCurrentlyOnIncomingTaskRunner.
+  // org.monyhar.media.VideoCapture.nativeDCheckCurrentlyOnIncomingTaskRunner.
   void DCheckCurrentlyOnIncomingTaskRunner(
       JNIEnv* env,
       const base::android::JavaParamRef<jobject>& obj);

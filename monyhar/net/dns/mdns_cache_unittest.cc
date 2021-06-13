@@ -358,7 +358,7 @@ TEST_F(MDnsCacheTest, RemoveRecord) {
   record1 = RecordParsed::CreateFrom(&parser, default_time_);
   EXPECT_EQ(MDnsCache::RecordAdded, cache_.UpdateDnsRecord(std::move(record1)));
 
-  cache_.FindDnsRecords(dns_protocol::kTypeCNAME, "codereview.chromium.org",
+  cache_.FindDnsRecords(dns_protocol::kTypeCNAME, "codereview.monyhar.org",
                         &results, default_time_);
 
   EXPECT_EQ(1u, results.size());
@@ -368,7 +368,7 @@ TEST_F(MDnsCacheTest, RemoveRecord) {
 
   EXPECT_EQ(record_out.get(), results.front());
 
-  cache_.FindDnsRecords(dns_protocol::kTypeCNAME, "codereview.chromium.org",
+  cache_.FindDnsRecords(dns_protocol::kTypeCNAME, "codereview.monyhar.org",
                         &results, default_time_);
 
   EXPECT_EQ(0u, results.size());

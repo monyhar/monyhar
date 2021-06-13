@@ -27,7 +27,7 @@ int kRenderProcessIDForTesting = 8;
 int kRenderFrameIDForTesting = 19;
 const char kEmbeddingOrigin[] = "https://www.google.com/";
 const char kRequestingOrigin1[] = "https://www.google.com/";
-const char kRequestingOrigin2[] = "https://www.chromium.org/";
+const char kRequestingOrigin2[] = "https://www.monyhar.org/";
 
 class AwBrowserPermissionRequestDelegateForTesting final
     : public AwBrowserPermissionRequestDelegate {

@@ -12,7 +12,7 @@
 #    and with a trailing comment that says "# wpt_use_checked_in_metadata".
 
 # There may be duplicate entries between this file and other expectations, which is acceptable.
-# See go/wpt-in-chromium-ci for more info on the overall project.
+# See go/wpt-in-monyhar-ci for more info on the overall project.
 
 # Bluetooth not supported in Chrome as per
 # https://github.com/web-platform-tests/wpt/blob/master/bluetooth/README.md#web-bluetooth-testing

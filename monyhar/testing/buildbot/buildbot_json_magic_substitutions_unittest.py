@@ -26,7 +26,7 @@ def CreateConfigWithPool(pool, device_type=None):
 class ChromeOSTelemetryRemoteTest(unittest.TestCase):
 
   def testVirtualMachineSubstitutions(self):
-    test_config = CreateConfigWithPool('chromium.tests.cros.vm')
+    test_config = CreateConfigWithPool('monyhar.tests.cros.vm')
     self.assertEqual(magic_substitutions.ChromeOSTelemetryRemote(test_config),
                      [
                        '--remote=127.0.0.1',
@@ -34,7 +34,7 @@ class ChromeOSTelemetryRemoteTest(unittest.TestCase):
                      ])
 
   def testPhysicalHardwareSubstitutions(self):
-    test_config = CreateConfigWithPool('chromium.tests', device_type='eve')
+    test_config = CreateConfigWithPool('monyhar.tests', device_type='eve')
     self.assertEqual(magic_substitutions.ChromeOSTelemetryRemote(test_config),
                      ['--remote=variable_chromeos_device_hostname'])
 

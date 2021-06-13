@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui.favicon;
+package org.monyhar.chrome.browser.ui.favicon;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -12,10 +12,10 @@ import android.graphics.drawable.Drawable;
 import androidx.annotation.Nullable;
 import androidx.core.graphics.drawable.RoundedBitmapDrawable;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.components.browser_ui.widget.RoundedIconGenerator;
-import org.chromium.ui.base.ViewUtils;
-import org.chromium.url.GURL;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.components.browser_ui.widget.RoundedIconGenerator;
+import org.monyhar.ui.base.ViewUtils;
+import org.monyhar.url.GURL;
 
 /**
  * Utilities to deal with favicons.

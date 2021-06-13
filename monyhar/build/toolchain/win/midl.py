@@ -31,7 +31,7 @@ def ZapTimestamp(filename):
   # independent, replace that date with a fixed string of the same length.
   # Also blank out the minor version number.
   if filename.endswith('.tlb'):
-    # See https://chromium-review.googlesource.com/c/chromium/src/+/693223 for
+    # See https://monyhar-review.googlesource.com/c/monyhar/src/+/693223 for
     # a fairly complete description of the .tlb binary format.
     # TLB files start with a 54 byte header. Offset 0x20 stores how many types
     # are defined in the file, and the header is followed by that many uint32s.

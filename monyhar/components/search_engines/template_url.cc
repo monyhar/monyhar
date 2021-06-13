@@ -1399,7 +1399,7 @@ bool TemplateURL::IsBetterThanEngineWithConflictingKeyword(
 std::u16string TemplateURL::GenerateKeyword(const GURL& url) {
   DCHECK(url.is_valid());
   // Strip "www." off the front of the keyword; otherwise the keyword won't work
-  // properly.  See http://code.google.com/p/chromium/issues/detail?id=6984 .
+  // properly.  See http://code.google.com/p/monyhar/issues/detail?id=6984 .
   // |url|'s hostname may be IDN-encoded. Before generating |keyword| from it,
   // convert to Unicode, so it won't look like a confusing punycode string.
   std::u16string keyword =

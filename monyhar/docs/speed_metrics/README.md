@@ -22,7 +22,7 @@ incentives they need to improve it. We aim to:
 Chrome needs a small, consistent set of high quality user experience metrics.
 Chrome Speed Metrics is responsible for authoring reference implementations of
 these metrics implemented using Trace Based Metrics v2 (TBMv2) in
-[tracing/metrics](https://source.chromium.org/chromium/chromium/src/+/main:third_party/catapult/tracing/tracing/metrics/).
+[tracing/metrics](https://source.monyhar.org/monyhar/monyhar/src/+/main:third_party/catapult/tracing/tracing/metrics/).
 These reference implementations will often require adding C++ instrumentation.
 Some metrics work will also be driven by more focused metrics teams, such as the
 work on Frame Throughput. Chrome Speed Metrics also owns UMA/UKM metrics, and
@@ -51,18 +51,18 @@ improve Chrome’s UX.
 
 ### Own Core Metrics
 The Chrome Speed Metrics team will gradually gain ownership of
-[tracing/metrics](https://source.chromium.org/chromium/chromium/src/+/main:third_party/catapult/tracing/tracing/metrics/),
+[tracing/metrics](https://source.monyhar.org/monyhar/monyhar/src/+/main:third_party/catapult/tracing/tracing/metrics/),
 and will be responsible for the long term code health of this directory. We’re
 also ramping up ownership in the Web Perf API space.
 
 ## Contact information
-  * **Email**: speed-metrics-dev@chromium.org
-  * **Tech lead**: sullivan@chromium.org
+  * **Email**: speed-metrics-dev@monyhar.org
+  * **Tech lead**: sullivan@monyhar.org
   * **File a bug**:
     * For issues related to web performance APIs, file a bug
-      [here](https://bugs.chromium.org/p/chromium/issues/entry?template=Defect+report+from+developer&components=Blink%3EPerformanceAPIs)
+      [here](https://bugs.monyhar.org/p/monyhar/issues/entry?template=Defect+report+from+developer&components=Blink%3EPerformanceAPIs)
     * For other kinds of issues, file a bug
-      [here](https://bugs.chromium.org/p/chromium/issues/entry?template=Defect+report+from+developer&components=Speed%3EMetrics)
+      [here](https://bugs.monyhar.org/p/monyhar/issues/entry?template=Defect+report+from+developer&components=Speed%3EMetrics)
 
 ## APIs we own
   * [Element Timing](https://github.com/WICG/element-timing)
@@ -100,7 +100,7 @@ changelog](../speed/metrics_changelog/README.md) which will be updated over time
   * [Lessons learned from performance monitoring in
     Chrome](https://www.youtube.com/watch?v=ctavZT87syI), by Annie Sullivan.
   * [Shipping a performance API on
-    Chromium](https://ftp.osuosl.org/pub/fosdem/2020/H.1309/webperf_chromium_development.webm),
+    Chromium](https://ftp.osuosl.org/pub/fosdem/2020/H.1309/webperf_monyhar_development.webm),
     by Nicolás Peña Moreno.
   * [Understanding Cumulative Layout
     Shift](https://www.youtube.com/watch?v=zIJuY-JCjqw), by Annie Sullivan and

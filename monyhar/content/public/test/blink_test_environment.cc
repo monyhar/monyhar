@@ -85,7 +85,7 @@ void SetUpBlinkTestEnvironment() {
 
 void TearDownBlinkTestEnvironment() {
   // Flush any remaining messages before we kill ourselves.
-  // http://code.google.com/p/chromium/issues/detail?id=9500
+  // http://code.google.com/p/monyhar/issues/detail?id=9500
   test_environment->RunUntilIdle();
 
   delete test_environment;

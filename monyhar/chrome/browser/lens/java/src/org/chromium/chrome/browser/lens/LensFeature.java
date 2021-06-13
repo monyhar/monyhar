@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.lens;
+package org.monyhar.chrome.browser.lens;
 
-import org.chromium.chrome.browser.flags.BooleanCachedFieldTrialParameter;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.StringCachedFieldTrialParameter;
+import org.monyhar.chrome.browser.flags.BooleanCachedFieldTrialParameter;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.StringCachedFieldTrialParameter;
 
 /**
  * A helper class contains cached Lens feature flags and params.

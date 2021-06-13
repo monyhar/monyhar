@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test.services;
+package org.monyhar.android_webview.test.services;
 
 import android.app.Service;
 import android.content.Intent;
@@ -11,7 +11,7 @@ import android.os.IBinder;
 
 import org.junit.Assert;
 
-import org.chromium.android_webview.common.services.IMetricsBridgeService;
+import org.monyhar.android_webview.common.services.IMetricsBridgeService;
 
 import java.util.List;
 import java.util.concurrent.TimeoutException;
@@ -20,7 +20,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * Mock implementation for MetricsBridgeService that record metrics data and provide methods
  * for testing this data. Used in
- * {@link org.chromium.android_webview.test.common.metrics.AwNonembeddedUmaRecorderTest}.
+ * {@link org.monyhar.android_webview.test.common.metrics.AwNonembeddedUmaRecorderTest}.
  */
 public class MockMetricsBridgeService extends Service {
     public static final long TIMEOUT_MILLIS = 10000;

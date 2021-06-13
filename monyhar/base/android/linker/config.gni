@@ -11,6 +11,6 @@ import("//build/config/sanitizers/sanitizers.gni")
 # Chromium linker causes instrumentation to return incorrect results.
 # Incompatible with incremental_install because it causes LibraryLoader to not
 # look for the .so files in their side-loaded location.
-chromium_linker_supported =
+monyhar_linker_supported =
     !incremental_install && !is_component_build && !enable_profiling &&
     !use_order_profiling && !is_asan

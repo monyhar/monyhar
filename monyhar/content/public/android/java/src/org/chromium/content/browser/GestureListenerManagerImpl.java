@@ -2,32 +2,32 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import android.view.HapticFeedbackConstants;
 import android.view.View;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ObserverList;
-import org.chromium.base.ObserverList.RewindableIterator;
-import org.chromium.base.TraceEvent;
-import org.chromium.base.UserData;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.blink.mojom.EventType;
-import org.chromium.content.browser.input.ImeAdapterImpl;
-import org.chromium.content.browser.selection.SelectionPopupControllerImpl;
-import org.chromium.content.browser.webcontents.WebContentsImpl;
-import org.chromium.content.browser.webcontents.WebContentsImpl.UserDataFactory;
-import org.chromium.content_public.browser.GestureListenerManager;
-import org.chromium.content_public.browser.GestureStateListener;
-import org.chromium.content_public.browser.GestureStateListenerWithScroll;
-import org.chromium.content_public.browser.ViewEventSink.InternalAccessDelegate;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.GestureEventType;
-import org.chromium.ui.base.ViewAndroidDelegate;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.ObserverList.RewindableIterator;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.base.UserData;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.blink.mojom.EventType;
+import org.monyhar.content.browser.input.ImeAdapterImpl;
+import org.monyhar.content.browser.selection.SelectionPopupControllerImpl;
+import org.monyhar.content.browser.webcontents.WebContentsImpl;
+import org.monyhar.content.browser.webcontents.WebContentsImpl.UserDataFactory;
+import org.monyhar.content_public.browser.GestureListenerManager;
+import org.monyhar.content_public.browser.GestureStateListener;
+import org.monyhar.content_public.browser.GestureStateListenerWithScroll;
+import org.monyhar.content_public.browser.ViewEventSink.InternalAccessDelegate;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.GestureEventType;
+import org.monyhar.ui.base.ViewAndroidDelegate;
 
 /**
  * Implementation of the interface {@link GestureListenerManager}. Manages

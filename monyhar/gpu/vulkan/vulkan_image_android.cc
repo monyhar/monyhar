@@ -97,7 +97,7 @@ bool VulkanImage::InitializeFromGpuMemoryBufferHandle(
   }
 
   // TODO(vikassoni) : AHARDWAREBUFFER_USAGE_GPU_CUBE_MAP is supported from API
-  // level 28 which is not part of current android_ndk version in chromium. Add
+  // level 28 which is not part of current android_ndk version in monyhar. Add
   // equivalent VK usage later.
   if (!usage_flags) {
     LOG(ERROR) << "No valid usage flags found";

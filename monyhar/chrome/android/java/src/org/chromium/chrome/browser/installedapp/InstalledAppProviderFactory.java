@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.installedapp;
+package org.monyhar.chrome.browser.installedapp;
 
-import org.chromium.chrome.browser.instantapps.InstantAppsHandler;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.installedapp.InstalledAppProviderImpl;
-import org.chromium.content_public.browser.RenderFrameHost;
-import org.chromium.content_public.browser.WebContentsStatics;
-import org.chromium.installedapp.mojom.InstalledAppProvider;
-import org.chromium.services.service_manager.InterfaceFactory;
+import org.monyhar.chrome.browser.instantapps.InstantAppsHandler;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.installedapp.InstalledAppProviderImpl;
+import org.monyhar.content_public.browser.RenderFrameHost;
+import org.monyhar.content_public.browser.WebContentsStatics;
+import org.monyhar.installedapp.mojom.InstalledAppProvider;
+import org.monyhar.services.service_manager.InterfaceFactory;
 
 /** Factory to create instances of the InstalledAppProvider Mojo service. */
 public class InstalledAppProviderFactory implements InterfaceFactory<InstalledAppProvider> {

@@ -9,7 +9,7 @@ This benchmark was slightly modified to:
 
 How to update:
 
-0) remove all the files from this dir, but keep README.chromium and LICENSE.
+0) remove all the files from this dir, but keep README.monyhar and LICENSE.
 1) pull new version from git://github.com/antonm/dromaeo.git into a separate
 directory.
 2) run 'make web' to build standalone version.

@@ -11,7 +11,7 @@ template("lint_test") {
   _apk_target_name = "${target_name}_apk"
 
   android_library(_library_target_name) {
-    sources = [ "//tools/android/errorprone_plugin/test/src/org/chromium/tools/errorprone/plugin/Empty.java" ]
+    sources = [ "//tools/android/errorprone_plugin/test/src/org/monyhar/tools/errorprone/plugin/Empty.java" ]
     not_needed(invoker, [ "sources" ])
     if (enable_android_nocompile_tests) {
       sources += invoker.sources
@@ -50,7 +50,7 @@ template("missing_symbol_test") {
   _library_target_name = "${target_name}_library_java"
 
   android_library(_library_target_name) {
-    sources = [ "//tools/android/errorprone_plugin/test/src/org/chromium/tools/errorprone/plugin/Empty.java" ]
+    sources = [ "//tools/android/errorprone_plugin/test/src/org/monyhar/tools/errorprone/plugin/Empty.java" ]
     not_needed(invoker,
                [
                  "sources",

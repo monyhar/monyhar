@@ -11,7 +11,7 @@ import shutil
 import tempfile
 import threading
 
-import devil_chromium
+import devil_monyhar
 from devil import base_error
 from devil.android import device_denylist
 from devil.android import device_errors
@@ -28,7 +28,7 @@ from py_trace_event import trace_event
 
 
 LOGCAT_FILTERS = [
-  'chromium:v',
+  'monyhar:v',
   'cr_*:v',
   'DEBUG:I',
   'StrictMode:D',
@@ -125,7 +125,7 @@ class LocalDeviceEnvironment(environment.Environment):
     if hasattr(args, 'trace_all'):
       self._trace_all = args.trace_all
 
-    devil_chromium.Initialize(
+    devil_monyhar.Initialize(
         output_directory=constants.GetOutDirectory(),
         adb_path=args.adb_path)
 

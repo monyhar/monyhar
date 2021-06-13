@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of histograms
 related to video tutorials along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -32,7 +32,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="VideoTutorials.LanguagePicker.Action"
     enum="VideoTutorials.LanguagePickerAction" expires_after="2021-11-07">
-  <owner>shaktisahu@chromium.org</owner>
+  <owner>shaktisahu@monyhar.org</owner>
   <owner>chrome-upboarding-eng@google.com</owner>
   <summary>
     Recorded whenever the user interacts with the video player language picker
@@ -43,7 +43,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="VideoTutorials.LanguagePicker.LanguageSelected"
     units="position" expires_after="2021-11-07">
-  <owner>shaktisahu@chromium.org</owner>
+  <owner>shaktisahu@monyhar.org</owner>
   <owner>chrome-upboarding-eng@google.com</owner>
   <summary>
     Recorded whenever the user taps on a language in the video player language
@@ -54,7 +54,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="VideoTutorials.Player.LoadTimeLatency" units="ms"
     expires_after="2021-11-14">
-  <owner>shaktisahu@chromium.org</owner>
+  <owner>shaktisahu@monyhar.org</owner>
   <owner>chrome-upboarding-eng@google.com</owner>
   <summary>
     Records the latency in bringing up the video player for video tutorials.
@@ -65,7 +65,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="VideoTutorials.{Feature}.Player.Progress"
     enum="VideoTutorials.WatchState" expires_after="2021-07-01">
-  <owner>shaktisahu@chromium.org</owner>
+  <owner>shaktisahu@monyhar.org</owner>
   <owner>chrome-upboarding-eng@google.com</owner>
   <summary>
     Records video watch progress events such as play, pause, resume, completion,
@@ -77,7 +77,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="VideoTutorials.{Feature}.Player.UserAction"
     enum="VideoTutorials.UserAction" expires_after="2021-07-01">
-  <owner>shaktisahu@chromium.org</owner>
+  <owner>shaktisahu@monyhar.org</owner>
   <owner>chrome-upboarding-eng@google.com</owner>
   <summary>
     Records user actions on the video player UI, such as clicking on various

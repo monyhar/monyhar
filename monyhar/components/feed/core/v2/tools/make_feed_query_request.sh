@@ -9,7 +9,7 @@ CHROMIUM_SRC=$(realpath $(dirname $(readlink -f $0))/../../../../..)
 
 PLD=$(python3 \
   $CHROMIUM_SRC/components/feed/core/v2/tools/textpb_to_binarypb.py \
-  --chromium_path=$CHROMIUM_SRC \
+  --monyhar_path=$CHROMIUM_SRC \
   --message=feedwire.Request \
   --output_format=base64 \
   --source_file=$1)

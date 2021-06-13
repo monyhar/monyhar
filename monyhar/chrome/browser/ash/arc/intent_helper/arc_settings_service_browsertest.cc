@@ -186,7 +186,7 @@ constexpr char kWifi1Guid[] = "{wifi1_guid}";
 constexpr char kONCPacUrl[] = "http://domain.com/x";
 
 constexpr char kSetProxyBroadcastAction[] =
-    "org.chromium.arc.intent_helper.SET_PROXY";
+    "org.monyhar.arc.intent_helper.SET_PROXY";
 
 // Returns the number of |broadcasts| having the proxy action, and checks that
 // all their extras match with |extras|.

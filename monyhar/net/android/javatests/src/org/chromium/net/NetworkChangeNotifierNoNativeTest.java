@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -19,11 +19,11 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.MinAndroidSdkLevel;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.MinAndroidSdkLevel;
 
 /**
- * Tests for org.chromium.net.NetworkChangeNotifier without native code. This class specifically
+ * Tests for org.monyhar.net.NetworkChangeNotifier without native code. This class specifically
  * does not have a setUp() method that loads native libraries.
  */
 @RunWith(BaseJUnit4ClassRunner.class)

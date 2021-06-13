@@ -7,7 +7,7 @@
         errorLine1="        if (mDrawerLayout.isDrawerOpen(Gravity.START)) {"
         errorLine2="                                       ~~~~~~~~~~~~~">
         <location
-            file="../../remoting/android/java/src/org/chromium/chromoting/Chromoting.java"
+            file="../../remoting/android/java/src/org/monyhar/chromoting/Chromoting.java"
             line="204"
             column="40"/>
     </issue>
@@ -18,7 +18,7 @@
         errorLine1="            mDrawerLayout.closeDrawer(Gravity.START);"
         errorLine2="                                      ~~~~~~~~~~~~~">
         <location
-            file="../../remoting/android/java/src/org/chromium/chromoting/Chromoting.java"
+            file="../../remoting/android/java/src/org/monyhar/chromoting/Chromoting.java"
             line="205"
             column="39"/>
     </issue>
@@ -29,7 +29,7 @@
         errorLine1="                        if (mDrawerLayout.isDrawerOpen(Gravity.START)) {"
         errorLine2="                                                       ~~~~~~~~~~~~~">
         <location
-            file="../../remoting/android/java/src/org/chromium/chromoting/Chromoting.java"
+            file="../../remoting/android/java/src/org/monyhar/chromoting/Chromoting.java"
             line="292"
             column="56"/>
     </issue>
@@ -40,7 +40,7 @@
         errorLine1="                            mDrawerLayout.closeDrawer(Gravity.START);"
         errorLine2="                                                      ~~~~~~~~~~~~~">
         <location
-            file="../../remoting/android/java/src/org/chromium/chromoting/Chromoting.java"
+            file="../../remoting/android/java/src/org/monyhar/chromoting/Chromoting.java"
             line="293"
             column="55"/>
     </issue>
@@ -51,7 +51,7 @@
         errorLine1="                            mDrawerLayout.openDrawer(Gravity.START);"
         errorLine2="                                                     ~~~~~~~~~~~~~">
         <location
-            file="../../remoting/android/java/src/org/chromium/chromoting/Chromoting.java"
+            file="../../remoting/android/java/src/org/monyhar/chromoting/Chromoting.java"
             line="295"
             column="54"/>
     </issue>
@@ -73,7 +73,7 @@
         errorLine1="        mWebView.getSettings().setJavaScriptEnabled(true);"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="../../remoting/android/java/src/org/chromium/chromoting/help/HelpActivity.java"
+            file="../../remoting/android/java/src/org/monyhar/chromoting/help/HelpActivity.java"
             line="91"
             column="9"/>
     </issue>
@@ -84,7 +84,7 @@
         errorLine1="        webView.getSettings().setJavaScriptEnabled(true);"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="../../remoting/android/java/src/org/chromium/chromoting/WebViewActivity.java"
+            file="../../remoting/android/java/src/org/monyhar/chromoting/WebViewActivity.java"
             line="46"
             column="9"/>
     </issue>
@@ -95,7 +95,7 @@
         errorLine1="        event = MotionEvent.obtain(event);"
         errorLine2="                            ~~~~~~">
         <location
-            file="../../remoting/android/java/src/org/chromium/chromoting/TouchInputStrategy.java"
+            file="../../remoting/android/java/src/org/monyhar/chromoting/TouchInputStrategy.java"
             line="207"
             column="29"/>
     </issue>
@@ -106,7 +106,7 @@
         errorLine1="        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="../../remoting/android/java/src/org/chromium/chromoting/Chromoting.java"
+            file="../../remoting/android/java/src/org/monyhar/chromoting/Chromoting.java"
             line="628"
             column="13"/>
     </issue>
@@ -117,7 +117,7 @@
         errorLine1="        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="../../remoting/android/java/src/org/chromium/chromoting/Desktop.java"
+            file="../../remoting/android/java/src/org/monyhar/chromoting/Desktop.java"
             line="183"
             column="13"/>
     </issue>
@@ -128,7 +128,7 @@
         errorLine1="        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {"
         errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="../../remoting/android/java/src/org/chromium/chromoting/Desktop.java"
+            file="../../remoting/android/java/src/org/monyhar/chromoting/Desktop.java"
             line="221"
             column="20"/>
     </issue>
@@ -139,7 +139,7 @@
         errorLine1="        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="../../remoting/android/java/src/org/chromium/chromoting/Desktop.java"
+            file="../../remoting/android/java/src/org/monyhar/chromoting/Desktop.java"
             line="280"
             column="13"/>
     </issue>
@@ -150,7 +150,7 @@
         errorLine1="        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="../../remoting/android/java/src/org/chromium/chromoting/Desktop.java"
+            file="../../remoting/android/java/src/org/monyhar/chromoting/Desktop.java"
             line="512"
             column="13"/>
     </issue>
@@ -161,7 +161,7 @@
         errorLine1="        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="../../remoting/android/java/src/org/chromium/chromoting/Desktop.java"
+            file="../../remoting/android/java/src/org/monyhar/chromoting/Desktop.java"
             line="521"
             column="13"/>
     </issue>
@@ -172,7 +172,7 @@
         errorLine1="        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="../../remoting/android/java/src/org/chromium/chromoting/Desktop.java"
+            file="../../remoting/android/java/src/org/monyhar/chromoting/Desktop.java"
             line="605"
             column="13"/>
     </issue>
@@ -183,7 +183,7 @@
         errorLine1="    public final boolean onTouchEvent(MotionEvent event) {"
         errorLine2="                         ~~~~~~~~~~~~">
         <location
-            file="../../remoting/android/java/src/org/chromium/chromoting/DesktopView.java"
+            file="../../remoting/android/java/src/org/monyhar/chromoting/DesktopView.java"
             line="85"
             column="26"/>
     </issue>

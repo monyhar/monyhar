@@ -1,9 +1,9 @@
 # The following OWNERS refer to libwebm Chromium integration.
-niklase@chromium.org
+niklase@monyhar.org
 
 # The following OWNER refer to libwebm content.
-tomfinegan@chromium.org
+tomfinegan@monyhar.org
 
 # Original (legacy) owner.
-emircan@chromium.org
-mcasas@chromium.org
+emircan@monyhar.org
+mcasas@monyhar.org

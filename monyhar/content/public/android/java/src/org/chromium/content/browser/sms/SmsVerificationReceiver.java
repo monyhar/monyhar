@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.sms;
+package org.monyhar.content.browser.sms;
 
 import android.app.Activity;
 import android.app.PendingIntent;
@@ -21,9 +21,9 @@ import com.google.android.gms.common.api.ResolvableApiException;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.tasks.Task;
 
-import org.chromium.base.Log;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.Log;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Encapsulates logic to retrieve OTP code via SMS Browser Code API.

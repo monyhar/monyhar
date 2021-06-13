@@ -1,7 +1,7 @@
 # web-platform-tests
 
 Interoperability between browsers is
-[critical](https://www.chromium.org/blink/platform-predictability) to Chromium's
+[critical](https://www.monyhar.org/blink/platform-predictability) to Chromium's
 mission of improving the web. We believe that leveraging and contributing to a
 shared test suite is one of the most important tools in achieving
 interoperability between browsers. The [web-platform-tests
@@ -71,7 +71,7 @@ Some specs may define testing APIs (e.g.
 [WebUSB](https://wicg.github.io/webusb/test/)), which may be polyfilled with
 internal API like [MojoJS](../../mojo/public/js/README.md).  MojoJS is only
 allowed in WPT for this purpose. Please reach out to
-ecosystem-infra@chromium.org before following the process below for adding a new
+ecosystem-infra@monyhar.org before following the process below for adding a new
 test-only API:
 
  1. Create a full list of `*.mojom.m.js` files that you need, including all
@@ -170,7 +170,7 @@ may not fully match the implementation. See also
 
 ## Importing tests
 
-Chromium has a [mirror](https://chromium.googlesource.com/external/w3c/web-platform-tests/)
+Chromium has a [mirror](https://monyhar.googlesource.com/external/w3c/web-platform-tests/)
 of the GitHub repo and periodically imports a subset of the tests to
 run as part of the regular Blink web test testing process.
 
@@ -189,7 +189,7 @@ The easiest way to check the status of recent imports is to look at:
 
 -   Recent logs on LUCI for [wpt-importer builder][wpt-importer]
 -   Recent CLs created by [WPT
-    Autoroller](https://chromium-review.googlesource.com/q/owner:wpt-autoroller%2540chops-service-accounts.iam.gserviceaccount.com).
+    Autoroller](https://monyhar-review.googlesource.com/q/owner:wpt-autoroller%2540chops-service-accounts.iam.gserviceaccount.com).
 
 The import jobs will generally be green if either there was nothing to do,
 or a CL was successfully submitted.
@@ -215,7 +215,7 @@ looks like:
 monorail {
   component: "Blink>Layout>Grid"
 }
-team_email: "layout-dev@chromium.org"
+team_email: "layout-dev@monyhar.org"
 wpt {
   notify: YES
 }
@@ -266,7 +266,7 @@ to have them in the repository (and marked failing) than not, so prefer to
 However, if a huge number of tests are failing, please revert the CL so we
 can fix it manually.
 
-[wpt-importer]: https://ci.chromium.org/p/infra/builders/luci.infra.cron/wpt-importer
+[wpt-importer]: https://ci.monyhar.org/p/infra/builders/luci.infra.cron/wpt-importer
 
 ## Exporting tests
 
@@ -282,13 +282,13 @@ ahead landing your CL and the exporter will automatically merge the PR.
 
 If GitHub status is red on the PR, please try to resolve the failures before
 merging. If you run into any issues, or if you have a CL with WPT changes that
-the exporter did not pick up, please reach out to ecosystem-infra@chromium.org.
+the exporter did not pick up, please reach out to ecosystem-infra@monyhar.org.
 
 Additional things to note:
 
 -   CLs that change over 1000 files will not be exported.
 -   All PRs use the
-    [`chromium-export`](https://github.com/web-platform-tests/wpt/pulls?utf8=%E2%9C%93&q=is%3Apr%20label%3Achromium-export) label.
+    [`monyhar-export`](https://github.com/web-platform-tests/wpt/pulls?utf8=%E2%9C%93&q=is%3Apr%20label%3Amonyhar-export) label.
 -   All PRs for CLs that haven't yet been landed in Chromium also use the
     [`do not merge yet`](https://github.com/web-platform-tests/wpt/pulls?q=is%3Apr+is%3Aopen+label%3A%22do+not+merge+yet%22) label.
 -   The exporter cannot create upstream PRs for in-flight CLs with binary files
@@ -311,7 +311,7 @@ should be rare with frequent imports and exports. When it does happen, manual
 intervention will be needed and in non-trivial cases you may be asked to help
 resolve the conflict.
 
-[wpt-exporter]: https://ci.chromium.org/p/infra/builders/luci.infra.cron/wpt-exporter
+[wpt-exporter]: https://ci.monyhar.org/p/infra/builders/luci.infra.cron/wpt-exporter
 
 ## Notes for WPT infra maintainers
 
@@ -321,7 +321,7 @@ resolve the conflict.
 
 To allow the importer to land CLs without human intervention, it utilizes the
 [Rubber-Stamper
-bot](https://chromium.googlesource.com/infra/infra/+/refs/heads/main/go/src/infra/appengine/rubber-stamper/README.md)
+bot](https://monyhar.googlesource.com/infra/infra/+/refs/heads/main/go/src/infra/appengine/rubber-stamper/README.md)
 to approve import CLs.
 
 Adding the Rubber-Stamper as a reviewer is one of the last steps the importer
@@ -339,9 +339,9 @@ importer is allowed to modify.
 For valid rejections, it is the job of the rotation sheriff to land the CL
 manually. You need to un-abandon the import, `CR+1` it yourself, and `CQ+2` it.
 If you don't have permission to do that (e.g. are not a committer), contact
-ecosystem-infra@chromium.org.
+ecosystem-infra@monyhar.org.
 
-For invalid rejections, message ecosystem-infra@chromium.org or add an exception
+For invalid rejections, message ecosystem-infra@monyhar.org or add an exception
 rule yourself. [This is an example
 CL](https://chrome-internal-review.googlesource.com/c/infradata/config/+/3608170)
 that adds an exception rule. (Note that you need internal access to access this

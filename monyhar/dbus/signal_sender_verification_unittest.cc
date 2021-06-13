@@ -53,17 +53,17 @@ class SignalSenderVerificationTest : public testing::Test {
     bus_ = new Bus(bus_options);
     object_proxy_ = bus_->GetObjectProxy(
         test_service_->service_name(),
-        ObjectPath("/org/chromium/TestObject"));
+        ObjectPath("/org/monyhar/TestObject"));
     ASSERT_TRUE(bus_->HasDBusThread());
 
     object_proxy_->SetNameOwnerChangedCallback(base::BindRepeating(
         &SignalSenderVerificationTest::OnNameOwnerChanged,
         base::Unretained(this), &on_name_owner_changed_called_));
 
-    // Connect to the "Test" signal of "org.chromium.TestInterface" from
+    // Connect to the "Test" signal of "org.monyhar.TestInterface" from
     // the remote object.
     object_proxy_->ConnectToSignal(
-        "org.chromium.TestInterface", "Test",
+        "org.monyhar.TestInterface", "Test",
         base::BindRepeating(&SignalSenderVerificationTest::OnTestSignal,
                             base::Unretained(this)),
         base::BindOnce(&SignalSenderVerificationTest::OnConnected,
@@ -324,7 +324,7 @@ TEST_F(SignalSenderVerificationTest, DISABLED_TestMultipleObjects) {
 
   ObjectProxy* object_proxy2 = bus_->GetObjectProxy(
       test_service_->service_name(),
-      ObjectPath("/org/chromium/DifferentObject"));
+      ObjectPath("/org/monyhar/DifferentObject"));
 
   bool second_name_owner_changed_called = false;
   object_proxy2->SetNameOwnerChangedCallback(base::BindRepeating(
@@ -334,7 +334,7 @@ TEST_F(SignalSenderVerificationTest, DISABLED_TestMultipleObjects) {
   // Connect to a signal on the additional remote object to trigger the
   // name owner matching.
   object_proxy2->ConnectToSignal(
-      "org.chromium.DifferentTestInterface", "Test",
+      "org.monyhar.DifferentTestInterface", "Test",
       base::BindRepeating(&SignalSenderVerificationTest::OnTestSignal,
                           base::Unretained(this)),
       base::BindOnce(&SignalSenderVerificationTest::OnConnected,

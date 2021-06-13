@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.device.battery;
+package org.monyhar.device.battery;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -13,10 +13,10 @@ import android.os.BatteryManager;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.device.mojom.BatteryStatus;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.device.mojom.BatteryStatus;
 
 /**
  * Data source for battery status information. This class registers for battery status notifications

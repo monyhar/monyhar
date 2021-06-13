@@ -114,16 +114,16 @@ TEST_F(GLTest, FeatureFlagsMatchCapabilities) {
   EXPECT_EQ(caps.texture_usage, flags.angle_texture_usage);
   EXPECT_EQ(caps.texture_storage, flags.ext_texture_storage);
   EXPECT_EQ(caps.discard_framebuffer, flags.ext_discard_framebuffer);
-  EXPECT_EQ(caps.sync_query, flags.chromium_sync_query);
+  EXPECT_EQ(caps.sync_query, flags.monyhar_sync_query);
   EXPECT_EQ(caps.blend_equation_advanced, flags.blend_equation_advanced);
   EXPECT_EQ(caps.blend_equation_advanced_coherent,
             flags.blend_equation_advanced_coherent);
   EXPECT_EQ(caps.texture_rg, flags.ext_texture_rg);
-  EXPECT_EQ(caps.image_ycbcr_422, flags.chromium_image_ycbcr_422);
-  EXPECT_EQ(caps.image_ycbcr_420v, flags.chromium_image_ycbcr_420v);
-  EXPECT_EQ(caps.image_ar30, flags.chromium_image_ar30);
-  EXPECT_EQ(caps.image_ab30, flags.chromium_image_ab30);
-  EXPECT_EQ(caps.image_ycbcr_p010, flags.chromium_image_ycbcr_p010);
+  EXPECT_EQ(caps.image_ycbcr_422, flags.monyhar_image_ycbcr_422);
+  EXPECT_EQ(caps.image_ycbcr_420v, flags.monyhar_image_ycbcr_420v);
+  EXPECT_EQ(caps.image_ar30, flags.monyhar_image_ar30);
+  EXPECT_EQ(caps.image_ab30, flags.monyhar_image_ab30);
+  EXPECT_EQ(caps.image_ycbcr_p010, flags.monyhar_image_ycbcr_p010);
   EXPECT_EQ(caps.render_buffer_format_bgra8888,
             flags.ext_render_buffer_format_bgra8888);
   EXPECT_EQ(caps.occlusion_query_boolean, flags.occlusion_query_boolean);

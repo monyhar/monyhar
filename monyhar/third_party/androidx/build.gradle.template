@@ -102,10 +102,10 @@ ext {
 }
 
 task setUpRepository(type: BuildConfigGenerator) {
-    // Paths are relative to the chromium source root.
+    // Paths are relative to the monyhar source root.
     repositoryPath 'third_party/androidx'
-    chromiumSourceRoot '../..'
-    cipdBucket 'chromium'
+    monyharSourceRoot '../..'
+    cipdBucket 'monyhar'
     internalTargetVisibility = [ '//third_party/android_deps:*', ':*' ]
     skipLicenses false
     ignoreDEPS true

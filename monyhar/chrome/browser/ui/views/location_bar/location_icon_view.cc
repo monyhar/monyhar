@@ -13,7 +13,7 @@
 #include "chrome/browser/ui/view_ids.h"
 #include "chrome/browser/ui/views/page_info/page_info_bubble_view.h"
 #include "chrome/browser/ui/views/user_education/feature_promo_controller_views.h"
-#include "chrome/grit/chromium_strings.h"
+#include "chrome/grit/monyhar_strings.h"
 #include "chrome/grit/generated_resources.h"
 #include "components/dom_distiller/core/url_constants.h"
 #include "components/feature_engagement/public/event_constants.h"

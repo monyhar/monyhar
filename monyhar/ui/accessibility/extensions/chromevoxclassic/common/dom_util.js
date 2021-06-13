@@ -1440,7 +1440,7 @@ cvox.DomUtil.isFocusable = function(targetNode) {
     return false;
   }
 
-  // Workaround for http://code.google.com/p/chromium/issues/detail?id=153904
+  // Workaround for http://code.google.com/p/monyhar/issues/detail?id=153904
   if ((targetNode.tagName == 'A') && !targetNode.hasAttribute('href') &&
       !targetNode.hasAttribute('tabindex')) {
     return false;

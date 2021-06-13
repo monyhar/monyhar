@@ -51,17 +51,17 @@ source_set("libunwind") {
     "trunk/src/UnwindRegistersSave.S",
   ]
   configs -= [
-    "//build/config/compiler:chromium_code",
+    "//build/config/compiler:monyhar_code",
     "//build/config/compiler:no_exceptions",
     "//build/config/compiler:no_rtti",
     "//build/config/coverage:default_coverage",
   ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     "//build/config/compiler:exceptions",
     "//build/config/compiler:rtti",
 
-    # Must be after no_chromium_code
+    # Must be after no_monyhar_code
     ":libunwind_config",
   ]
 }

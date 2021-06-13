@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.shape_detection;
+package org.monyhar.shape_detection;
 
 import android.os.Build;
 
@@ -12,20 +12,20 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.params.BaseJUnit4RunnerDelegate;
-import org.chromium.base.test.params.ParameterAnnotations.UseMethodParameter;
-import org.chromium.base.test.params.ParameterAnnotations.UseRunnerDelegate;
-import org.chromium.base.test.params.ParameterProvider;
-import org.chromium.base.test.params.ParameterSet;
-import org.chromium.base.test.params.ParameterizedRunner;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.base.test.util.Feature;
-import org.chromium.shape_detection.mojom.BarcodeDetection;
-import org.chromium.shape_detection.mojom.BarcodeDetectionProvider;
-import org.chromium.shape_detection.mojom.BarcodeDetectionResult;
-import org.chromium.shape_detection.mojom.BarcodeDetectorOptions;
-import org.chromium.shape_detection.mojom.BarcodeFormat;
+import org.monyhar.base.test.params.BaseJUnit4RunnerDelegate;
+import org.monyhar.base.test.params.ParameterAnnotations.UseMethodParameter;
+import org.monyhar.base.test.params.ParameterAnnotations.UseRunnerDelegate;
+import org.monyhar.base.test.params.ParameterProvider;
+import org.monyhar.base.test.params.ParameterSet;
+import org.monyhar.base.test.params.ParameterizedRunner;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.shape_detection.mojom.BarcodeDetection;
+import org.monyhar.shape_detection.mojom.BarcodeDetectionProvider;
+import org.monyhar.shape_detection.mojom.BarcodeDetectionResult;
+import org.monyhar.shape_detection.mojom.BarcodeDetectorOptions;
+import org.monyhar.shape_detection.mojom.BarcodeFormat;
 
 import java.util.Arrays;
 import java.util.List;
@@ -40,7 +40,7 @@ import java.util.concurrent.TimeUnit;
 @UseRunnerDelegate(BaseJUnit4RunnerDelegate.class)
 @DisableIf.Build(sdk_is_greater_than = Build.VERSION_CODES.N_MR1, message = "crbug.com/1153716")
 public class BarcodeDetectionImplTest {
-    private static final org.chromium.skia.mojom.BitmapN32 QR_CODE_BITMAP =
+    private static final org.monyhar.skia.mojom.BitmapN32 QR_CODE_BITMAP =
             TestUtils.mojoBitmapFromFile("qr_code.png");
 
     private static final int[] SUPPORTED_FORMATS = {BarcodeFormat.AZTEC, BarcodeFormat.CODE_128,
@@ -69,13 +69,13 @@ public class BarcodeDetectionImplTest {
         return toReturn;
     }
 
-    private static BarcodeDetectionResult[] detect(org.chromium.skia.mojom.BitmapN32 mojoBitmap) {
+    private static BarcodeDetectionResult[] detect(org.monyhar.skia.mojom.BitmapN32 mojoBitmap) {
         BarcodeDetectorOptions options = new BarcodeDetectorOptions();
         return detectWithOptions(mojoBitmap, options);
     }
 
     private static BarcodeDetectionResult[] detectWithHint(
-            org.chromium.skia.mojom.BitmapN32 mojoBitmap, int format) {
+            org.monyhar.skia.mojom.BitmapN32 mojoBitmap, int format) {
         Assert.assertTrue(BarcodeFormat.isKnownValue(format));
         BarcodeDetectorOptions options = new BarcodeDetectorOptions();
         options.formats = new int[] {format};
@@ -83,7 +83,7 @@ public class BarcodeDetectionImplTest {
     }
 
     private static BarcodeDetectionResult[] detectWithOptions(
-            org.chromium.skia.mojom.BitmapN32 mojoBitmap, BarcodeDetectorOptions options) {
+            org.monyhar.skia.mojom.BitmapN32 mojoBitmap, BarcodeDetectorOptions options) {
         BarcodeDetection detector = new BarcodeDetectionImpl(options);
 
         final ArrayBlockingQueue<BarcodeDetectionResult[]> queue = new ArrayBlockingQueue<>(1);
@@ -148,7 +148,7 @@ public class BarcodeDetectionImplTest {
                         .value("pdf417.png", BarcodeFormat.PDF417, "Chromium", 20, 20, 240, 44)
                         .name("PDF417"),
                 new ParameterSet()
-                        .value("qr_code.png", BarcodeFormat.QR_CODE, "https://chromium.org", 40, 40,
+                        .value("qr_code.png", BarcodeFormat.QR_CODE, "https://monyhar.org", 40, 40,
                                 250, 250)
                         .name("QR_CODE"),
                 new ParameterSet()
@@ -173,7 +173,7 @@ public class BarcodeDetectionImplTest {
         if (!TestUtils.IS_GMS_CORE_SUPPORTED) {
             return;
         }
-        org.chromium.skia.mojom.BitmapN32 bitmap = TestUtils.mojoBitmapFromFile(inputFile);
+        org.monyhar.skia.mojom.BitmapN32 bitmap = TestUtils.mojoBitmapFromFile(inputFile);
         BarcodeDetectionResult[] results = detectWithHint(bitmap, format);
         Assert.assertEquals(1, results.length);
         Assert.assertEquals(value, results[0].rawValue);
@@ -193,7 +193,7 @@ public class BarcodeDetectionImplTest {
         if (!TestUtils.IS_GMS_CORE_SUPPORTED) {
             return;
         }
-        org.chromium.skia.mojom.BitmapN32 bitmap = TestUtils.mojoBitmapFromFile(inputFile);
+        org.monyhar.skia.mojom.BitmapN32 bitmap = TestUtils.mojoBitmapFromFile(inputFile);
         BarcodeDetectionResult[] results = detect(bitmap);
         Assert.assertEquals(1, results.length);
         Assert.assertEquals(value, results[0].rawValue);

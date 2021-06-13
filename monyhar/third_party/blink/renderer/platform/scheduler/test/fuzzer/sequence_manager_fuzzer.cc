@@ -9,7 +9,7 @@
 // Tests some APIs in base::sequence_manager::SequenceManager (ones defined in
 // SequenceManagerTesrDescription proto) for crashes, hangs, memory leaks,
 // etc ... by running randomly generated tests, and exposing problematic corner
-// cases. For more details, check out go/libfuzzer-chromium.
+// cases. For more details, check out go/libfuzzer-monyhar.
 DEFINE_BINARY_PROTO_FUZZER(
     const base::sequence_manager::SequenceManagerTestDescription&
         fuzzer_input) {

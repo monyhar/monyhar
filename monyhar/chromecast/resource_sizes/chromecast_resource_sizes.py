@@ -281,7 +281,7 @@ def main():
   """Parses arguments and runs high level flows."""
   argparser = argparse.ArgumentParser(description='Writes Cast size metrics.')
 
-  argparser.add_argument('--chromium-output-directory',
+  argparser.add_argument('--monyhar-output-directory',
                          dest='out_dir',
                          required=True,
                          type=os.path.realpath,

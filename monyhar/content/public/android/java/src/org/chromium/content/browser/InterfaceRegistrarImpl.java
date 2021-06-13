@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.blink.mojom.AndroidFontLookup;
-import org.chromium.content.browser.androidoverlay.AndroidOverlayProviderImpl;
-import org.chromium.content.browser.font.AndroidFontLookupImpl;
-import org.chromium.content.mojom.LocalTrustTokenFulfiller;
-import org.chromium.content_public.browser.InterfaceRegistrar;
-import org.chromium.content_public.browser.RenderFrameHost;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.trusttokens.TrustTokenFulfillerManager;
-import org.chromium.media.mojom.AndroidOverlayProvider;
-import org.chromium.mojo.system.impl.CoreImpl;
-import org.chromium.services.service_manager.InterfaceRegistry;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.blink.mojom.AndroidFontLookup;
+import org.monyhar.content.browser.androidoverlay.AndroidOverlayProviderImpl;
+import org.monyhar.content.browser.font.AndroidFontLookupImpl;
+import org.monyhar.content.mojom.LocalTrustTokenFulfiller;
+import org.monyhar.content_public.browser.InterfaceRegistrar;
+import org.monyhar.content_public.browser.RenderFrameHost;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.trusttokens.TrustTokenFulfillerManager;
+import org.monyhar.media.mojom.AndroidOverlayProvider;
+import org.monyhar.mojo.system.impl.CoreImpl;
+import org.monyhar.services.service_manager.InterfaceRegistry;
 
 @JNINamespace("content")
 class InterfaceRegistrarImpl {

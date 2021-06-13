@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.promo;
+package org.monyhar.components.browser_ui.widget.promo;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -18,13 +18,13 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.components.browser_ui.widget.promo.PromoCardCoordinator.LayoutStyle;
-import org.chromium.components.browser_ui.widget.test.R;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.components.browser_ui.widget.promo.PromoCardCoordinator.LayoutStyle;
+import org.monyhar.components.browser_ui.widget.test.R;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * Basic test for creating, using the promo component with {@link PromoCardCoordinator}.

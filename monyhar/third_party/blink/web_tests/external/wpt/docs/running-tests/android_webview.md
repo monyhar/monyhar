@@ -11,7 +11,7 @@ Please check [Chrome for Android](chrome_android.md) for the common instructions
 Ensure you have a userdebug or eng Android build installed on the device.
 
 Install an up-to-date version of system webview shell:
-1. Go to [chromium-browser-snapshots](https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html?prefix=Android/)
+1. Go to [monyhar-browser-snapshots](https://commondatastorage.googleapis.com/monyhar-browser-snapshots/index.html?prefix=Android/)
 2. Find the subdirectory with the highest number and click it, this number can be found
    in the "Commit Position" column of row "LAST_CHANGE" (at bottom of page).
 3. Download `chrome-android.zip` file and unzip it.
@@ -19,18 +19,18 @@ Install an up-to-date version of system webview shell:
 5. On emulator, system webview shell may already be installed by default. Then you may need to remove the existing apk:
    * Choose a userdebug build.
    * Run an emulator with
-     [writable system partition from command line](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/android_emulator.md/)
+     [writable system partition from command line](https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/android_emulator.md/)
 
 If you have an issue with ChromeDriver version mismatch, try one of the following:
   * Try removing `_venv/bin/chromedriver` such that wpt runner can install a matching version
   automatically. Failing that, please check your environment path and make
   sure that no other ChromeDriver is used.
-  * Download the [ChromeDriver binary](https://chromedriver.chromium.org/) matching your WebView's major version and specify it on the command line
+  * Download the [ChromeDriver binary](https://chromedriver.monyhar.org/) matching your WebView's major version and specify it on the command line
     ```
     ./wpt run --webdriver-binary <binary path> ...
     ```
 
-Configure host remap rules in the [webview commandline file](https://cs.chromium.org/chromium/src/android_webview/docs/commandline-flags.md?l=57):
+Configure host remap rules in the [webview commandline file](https://cs.monyhar.org/monyhar/src/android_webview/docs/commandline-flags.md?l=57):
 ```
 adb shell "echo '_ --host-resolver-rules=\"MAP nonexistent.*.test ~NOTFOUND, MAP *.test 127.0.0.1\"' > /data/local/tmp/webview-command-line"
 ```

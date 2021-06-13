@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.datareduction;
+package org.monyhar.chrome.browser.datareduction;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.components.browser_ui.util.ConversionUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.components.browser_ui.util.ConversionUtils;
 
 /**
  * Centralizes UMA data collection for the Data Reduction Proxy.

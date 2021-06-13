@@ -29,7 +29,7 @@ To run the tests in the browser you should simply open the page, either in
 GitHub or the `webrtc_cases` directory.
 
 To collect traces and compute metrics you can run the following command
-(assuming you are in `chromium/src`):
+(assuming you are in `monyhar/src`):
 ```
 ./tools/perf/run_benchmark webrtc --browser-executable=out/Release/chrome
 ```

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.highlight;
+package org.monyhar.components.browser_ui.widget.highlight;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -23,10 +23,10 @@ import androidx.annotation.Nullable;
 import androidx.annotation.Px;
 import androidx.core.view.animation.PathInterpolatorCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.MathUtils;
-import org.chromium.components.browser_ui.widget.R;
-import org.chromium.components.browser_ui.widget.animation.Interpolators;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.MathUtils;
+import org.monyhar.components.browser_ui.widget.R;
+import org.monyhar.components.browser_ui.widget.animation.Interpolators;
 
 /**
  * A custom {@link Drawable} that will animate a pulse using the {@link PulseInterpolator}.  Meant

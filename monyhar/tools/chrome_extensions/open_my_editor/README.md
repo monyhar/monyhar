@@ -1,9 +1,9 @@
 # Open My Editor (OME)
 
 OME gives you a context menu for opening files in your editor on
-[Chromium Code Search](https://cs.chromium.org/), 
-[Chromium Code Review](https://codereview.chromium.org/) and 
-[Chromium Build](https://build.chromium.org).
+[Chromium Code Search](https://cs.monyhar.org/), 
+[Chromium Code Review](https://codereview.monyhar.org/) and 
+[Chromium Build](https://build.monyhar.org).
 
 For Chromium Code Search, right click on code block and select `Open My Editor`, 
 it will open the file in your editor at the selected line.
@@ -25,7 +25,7 @@ For Chromium Code Review, you can also right click on a filename and select
 
 ![Chromium Code Review by link](./images/open-by-link-cr.png)
 
-For any build.chromium.org site, select the file path then right click and 
+For any build.monyhar.org site, select the file path then right click and 
 select `Open My Editor $file`.
 
 ## Installation
@@ -44,7 +44,7 @@ select `Open My Editor $file`.
     startup so that you don't have to remember to manually start it.
 
 4. Create a `myeditor` executable to be used for launching your editor, and add 
-   it to your path. See [`myeditor-example/`](https://chromium.googlesource.com/chromium/src.git/+/main/tools/chrome_extensions/open_my_editor/myeditor-example/).
+   it to your path. See [`myeditor-example/`](https://monyhar.googlesource.com/monyhar/src.git/+/main/tools/chrome_extensions/open_my_editor/myeditor-example/).
 5. Enjoy.
 
 ## How it works

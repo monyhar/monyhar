@@ -1,10 +1,10 @@
 abigailbklein@google.com
-aboxhall@chromium.org
-aleventhal@chromium.org
-dmazzoni@chromium.org
-dtseng@chromium.org
-katie@chromium.org
-nektar@chromium.org
+aboxhall@monyhar.org
+aleventhal@monyhar.org
+dmazzoni@monyhar.org
+dtseng@monyhar.org
+katie@monyhar.org
+nektar@monyhar.org
 
 per-file *.mojom=set noparent
 per-file *.mojom=file://ipc/SECURITY_OWNERS
@@ -12,4 +12,4 @@ per-file *.mojom=file://ipc/SECURITY_OWNERS
 per-file *_param_traits*.*=set noparent
 per-file *_param_traits*.*=file://ipc/SECURITY_OWNERS
 
-per-file ax_language_detection*=chrishall@chromium.org
+per-file ax_language_detection*=chrishall@monyhar.org

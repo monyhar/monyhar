@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.minidump_uploader;
+package org.monyhar.components.minidump_uploader;
 
 import androidx.test.filters.SmallTest;
 
@@ -12,11 +12,11 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Feature;
-import org.chromium.components.minidump_uploader.CrashTestRule.MockCrashReportingPermissionManager;
-import org.chromium.components.minidump_uploader.MinidumpUploadCallable.MinidumpUploadStatus;
-import org.chromium.components.minidump_uploader.util.CrashReportingPermissionManager;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.components.minidump_uploader.CrashTestRule.MockCrashReportingPermissionManager;
+import org.monyhar.components.minidump_uploader.MinidumpUploadCallable.MinidumpUploadStatus;
+import org.monyhar.components.minidump_uploader.util.CrashReportingPermissionManager;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -29,7 +29,7 @@ import java.io.IOException;
 @RunWith(BaseJUnit4ClassRunner.class)
 public class MinidumpUploadCallableTest {
     private static final String LOCAL_CRASH_ID = "123_log";
-    private static final String LOG_FILE_NAME = "chromium_renderer-123_log.dmp224";
+    private static final String LOG_FILE_NAME = "monyhar_renderer-123_log.dmp224";
 
     @Rule
     public CrashTestRule mTestRule = new CrashTestRule();

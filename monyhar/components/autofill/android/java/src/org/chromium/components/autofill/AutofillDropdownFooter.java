@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.autofill;
+package org.monyhar.components.autofill;
 
 import android.content.Context;
 import android.view.View;
@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.content.res.AppCompatResources;
 
-import org.chromium.ui.DropdownItem;
+import org.monyhar.ui.DropdownItem;
 
 import java.util.List;
 

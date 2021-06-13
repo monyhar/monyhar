@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.datareduction.settings;
+package org.monyhar.chrome.browser.datareduction.settings;
 
 import static android.text.format.DateUtils.FORMAT_ABBREV_MONTH;
 import static android.text.format.DateUtils.FORMAT_NO_YEAR;
 import static android.text.format.DateUtils.FORMAT_SHOW_DATE;
 
-import static org.chromium.third_party.android.datausagechart.ChartDataUsageView.MAXIMUM_DAYS_IN_CHART;
-import static org.chromium.third_party.android.datausagechart.ChartDataUsageView.MINIMUM_DAYS_IN_CHART;
+import static org.monyhar.third_party.android.datausagechart.ChartDataUsageView.MAXIMUM_DAYS_IN_CHART;
+import static org.monyhar.third_party.android.datausagechart.ChartDataUsageView.MINIMUM_DAYS_IN_CHART;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -30,21 +30,21 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 import androidx.vectordrawable.graphics.drawable.VectorDrawableCompat;
 
-import org.chromium.base.Callback;
-import org.chromium.base.Log;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.datareduction.DataReductionProxyUma;
-import org.chromium.chrome.browser.net.spdyproxy.DataReductionProxySettings;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.settings.datareduction.DataReductionProxySavingsClearedReason;
-import org.chromium.chrome.browser.util.FileSizeUtil;
-import org.chromium.components.browser_ui.util.ConversionUtils;
-import org.chromium.third_party.android.datausagechart.ChartDataUsageView;
-import org.chromium.third_party.android.datausagechart.NetworkStats;
-import org.chromium.third_party.android.datausagechart.NetworkStatsHistory;
-import org.chromium.ui.widget.RectProvider;
-import org.chromium.ui.widget.ViewRectProvider;
+import org.monyhar.base.Callback;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.datareduction.DataReductionProxyUma;
+import org.monyhar.chrome.browser.net.spdyproxy.DataReductionProxySettings;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.settings.datareduction.DataReductionProxySavingsClearedReason;
+import org.monyhar.chrome.browser.util.FileSizeUtil;
+import org.monyhar.components.browser_ui.util.ConversionUtils;
+import org.monyhar.third_party.android.datausagechart.ChartDataUsageView;
+import org.monyhar.third_party.android.datausagechart.NetworkStats;
+import org.monyhar.third_party.android.datausagechart.NetworkStatsHistory;
+import org.monyhar.ui.widget.RectProvider;
+import org.monyhar.ui.widget.ViewRectProvider;
 
 import java.util.List;
 import java.util.TimeZone;

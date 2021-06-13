@@ -201,7 +201,7 @@ Similar to the non-associated interface case, we have:
   the connection and dispatches incoming messages to a user-defined interface
   implementation.
 
-See [this document](https://www.chromium.org/developers/design-documents/mojo/associated-interfaces)
+See [this document](https://www.monyhar.org/developers/design-documents/mojo/associated-interfaces)
 for more details.
 
 ## Automatic and Manual Dependency Loading

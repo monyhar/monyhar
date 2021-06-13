@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.bookmarks.bottomsheet;
+package org.monyhar.chrome.browser.bookmarks.bottomsheet;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -16,8 +16,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.util.Pair;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.bookmarks.BookmarkRow;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.bookmarks.BookmarkRow;
 
 /**
  * Represents a folder row in bookmark bottom sheet.

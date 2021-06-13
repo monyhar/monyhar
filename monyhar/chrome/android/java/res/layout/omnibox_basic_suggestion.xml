@@ -10,7 +10,7 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <org.chromium.ui.widget.TextViewWithLeading
+    <org.monyhar.ui.widget.TextViewWithLeading
         android:id="@+id/line_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

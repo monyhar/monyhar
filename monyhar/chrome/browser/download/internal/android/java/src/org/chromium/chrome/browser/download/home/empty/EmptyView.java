@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.home.empty;
+package org.monyhar.chrome.browser.download.home.empty;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,9 +12,9 @@ import android.widget.TextView;
 
 import androidx.annotation.StringRes;
 
-import org.chromium.chrome.browser.download.home.empty.EmptyProperties.State;
-import org.chromium.chrome.browser.download.internal.R;
-import org.chromium.ui.widget.LoadingView;
+import org.monyhar.chrome.browser.download.home.empty.EmptyProperties.State;
+import org.monyhar.chrome.browser.download.internal.R;
+import org.monyhar.ui.widget.LoadingView;
 
 /** A view that represents the visuals required for the empty state of the download home list. */
 class EmptyView {

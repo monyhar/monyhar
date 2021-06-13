@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.native_page;
+package org.monyhar.chrome.browser.native_page;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,43 +11,43 @@ import android.graphics.Rect;
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.supplier.BooleanSupplier;
-import org.chromium.base.supplier.DestroyableObservableSupplier;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.bookmarks.BookmarkPage;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsMarginSupplier;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsStateProvider;
-import org.chromium.chrome.browser.download.DownloadPage;
-import org.chromium.chrome.browser.explore_sites.ExploreSitesPage;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.fullscreen.BrowserControlsManager;
-import org.chromium.chrome.browser.history.HistoryManagerUtils;
-import org.chromium.chrome.browser.history.HistoryPage;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.ntp.IncognitoNewTabPage;
-import org.chromium.chrome.browser.ntp.NewTabPage;
-import org.chromium.chrome.browser.ntp.NewTabPageUma;
-import org.chromium.chrome.browser.ntp.RecentTabsManager;
-import org.chromium.chrome.browser.ntp.RecentTabsPage;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
-import org.chromium.chrome.browser.share.ShareDelegate;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabLaunchType;
-import org.chromium.chrome.browser.tab.state.CriticalPersistedTabData;
-import org.chromium.chrome.browser.tabmodel.TabCreatorManager;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
-import org.chromium.chrome.browser.ui.native_page.NativePage;
-import org.chromium.chrome.browser.ui.native_page.NativePage.NativePageType;
-import org.chromium.chrome.browser.ui.native_page.NativePageHost;
-import org.chromium.chrome.browser.webapps.launchpad.LaunchpadPage;
-import org.chromium.chrome.browser.webapps.launchpad.LaunchpadUtils;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.ui.base.DeviceFormFactor;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.util.ColorUtils;
+import org.monyhar.base.supplier.BooleanSupplier;
+import org.monyhar.base.supplier.DestroyableObservableSupplier;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.bookmarks.BookmarkPage;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsMarginSupplier;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsStateProvider;
+import org.monyhar.chrome.browser.download.DownloadPage;
+import org.monyhar.chrome.browser.explore_sites.ExploreSitesPage;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.fullscreen.BrowserControlsManager;
+import org.monyhar.chrome.browser.history.HistoryManagerUtils;
+import org.monyhar.chrome.browser.history.HistoryPage;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.ntp.IncognitoNewTabPage;
+import org.monyhar.chrome.browser.ntp.NewTabPage;
+import org.monyhar.chrome.browser.ntp.NewTabPageUma;
+import org.monyhar.chrome.browser.ntp.RecentTabsManager;
+import org.monyhar.chrome.browser.ntp.RecentTabsPage;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.settings.SettingsLauncherImpl;
+import org.monyhar.chrome.browser.share.ShareDelegate;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabLaunchType;
+import org.monyhar.chrome.browser.tab.state.CriticalPersistedTabData;
+import org.monyhar.chrome.browser.tabmodel.TabCreatorManager;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.chrome.browser.ui.native_page.NativePage;
+import org.monyhar.chrome.browser.ui.native_page.NativePage.NativePageType;
+import org.monyhar.chrome.browser.ui.native_page.NativePageHost;
+import org.monyhar.chrome.browser.webapps.launchpad.LaunchpadPage;
+import org.monyhar.chrome.browser.webapps.launchpad.LaunchpadUtils;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.ui.base.DeviceFormFactor;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.util.ColorUtils;
 /**
  * Creates NativePage objects to show chrome-native:// URLs using the native Android view system.
  */

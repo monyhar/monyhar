@@ -26,7 +26,7 @@ QUIC_CERT_FILENAME = 'quic-chain.pem'
 QUIC_CERT = os.path.join(QUIC_CERT_DIR, QUIC_CERT_FILENAME)
 QUIC_KEY = os.path.join(QUIC_CERT_DIR, 'quic-leaf-cert.key')
 APP_APK = os.path.join(BUILD_DIR, 'apks', 'CronetPerfTest.apk')
-APP_PACKAGE = 'org.chromium.net'
+APP_PACKAGE = 'org.monyhar.net'
 APP_ACTIVITY = '.CronetPerfTestActivity'
 APP_ACTION = 'android.intent.action.MAIN'
 HTTP_PORT = None  # Value will be overridden by DEFAULT_BENCHMARK_CONFIG.
@@ -134,7 +134,7 @@ class QuicServer(object):
     # Push certificate to device.
     cert = open(QUIC_CERT, 'r').read()
     device_cert_path = posixpath.join(
-        device.GetExternalStoragePath(), 'chromium_tests_root', CERT_PATH)
+        device.GetExternalStoragePath(), 'monyhar_tests_root', CERT_PATH)
     device.RunShellCommand(['mkdir', '-p', device_cert_path], check_return=True)
     device.WriteFile(os.path.join(device_cert_path, QUIC_CERT_FILENAME), cert)
 

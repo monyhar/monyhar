@@ -41,7 +41,7 @@ namespace weblayer {
 
 #if defined(OS_ANDROID)
 // This MUST match the values defined in
-// org.chromium.weblayer_private.interfaces.DarkModeStrategy.
+// org.monyhar.weblayer_private.interfaces.DarkModeStrategy.
 enum class DarkModeStrategy {
   kWebThemeDarkeningOnly = 0,
   kUserAgentDarkeningOnly = 1,
@@ -115,7 +115,7 @@ void BrowserImpl::AddTab(JNIEnv* env, long native_tab) {
 
 ScopedJavaLocalRef<jobjectArray> BrowserImpl::GetTabs(JNIEnv* env) {
   ScopedJavaLocalRef<jclass> clazz =
-      base::android::GetClass(env, "org/chromium/weblayer_private/TabImpl");
+      base::android::GetClass(env, "org/monyhar/weblayer_private/TabImpl");
   jobjectArray tabs = env->NewObjectArray(tabs_.size(), clazz.obj(),
                                           nullptr /* initialElement */);
   base::android::CheckException(env);

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.printing;
+package org.monyhar.printing;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -15,8 +15,8 @@ import android.print.PrintJobInfo;
 import android.print.PrintManager;
 import android.text.TextUtils;
 
-import org.chromium.base.Log;
-import org.chromium.base.annotations.RemovableInRelease;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.RemovableInRelease;
 
 import java.util.List;
 

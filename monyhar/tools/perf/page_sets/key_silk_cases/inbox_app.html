@@ -1673,7 +1673,7 @@ license that can be found in the LICENSE file.
       function calcThemeOffset(theme, node) {
         if (themes[theme] === undefined) {
           var bp = getComputedStyle(node).backgroundPosition.split(' ');
-          // support 4 value syntax (https://code.google.com/p/chromium/issues/detail?id=310977)
+          // support 4 value syntax (https://code.google.com/p/monyhar/issues/detail?id=310977)
           var l = bp.length === 4 ? bp[1] : bp[0];
           var offset = parseFloat(l);
           themes[theme] = offset;

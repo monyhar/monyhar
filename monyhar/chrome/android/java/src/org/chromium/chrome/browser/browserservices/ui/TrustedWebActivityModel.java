@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.ui;
+package org.monyhar.chrome.browser.browserservices.ui;
 
-import org.chromium.chrome.browser.dependency_injection.ActivityScope;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.chrome.browser.dependency_injection.ActivityScope;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import javax.inject.Inject;
 

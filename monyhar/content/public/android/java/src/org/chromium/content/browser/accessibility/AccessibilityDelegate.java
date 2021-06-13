@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.accessibility;
+package org.monyhar.content.browser.accessibility;
 
 import android.graphics.Rect;
 import android.view.View;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.content_public.browser.AccessibilitySnapshotCallback;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.AccessibilitySnapshotCallback;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * Provides some information/functionality to {@link WebContentsAccessibilityImpl} without directly

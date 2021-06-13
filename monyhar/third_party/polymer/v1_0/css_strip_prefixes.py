@@ -93,7 +93,7 @@ def main(argv):
   opts = parser.parse_args(sys.argv[1:])
 
   files_to_process = [os.path.join(dirpath, f)
-    for dirpath, dirnames, files in os.walk('components-chromium')
+    for dirpath, dirnames, files in os.walk('components-monyhar')
     for f in fnmatch.filter(files, '*.' + opts.file_extension)]
 
   for f in files_to_process:

@@ -5,14 +5,14 @@
 // This file contains the default suppressions for ThreadSanitizer.
 // You can also pass additional suppressions via TSAN_OPTIONS:
 // TSAN_OPTIONS=suppressions=/path/to/suppressions. Please refer to
-// http://dev.chromium.org/developers/testing/threadsanitizer-tsan-v2
+// http://dev.monyhar.org/developers/testing/threadsanitizer-tsan-v2
 // for more info.
 
 #if defined(THREAD_SANITIZER)
 
 // Please make sure the code below declares a single string variable
 // kTSanDefaultSuppressions contains TSan suppressions delimited by newlines.
-// See http://dev.chromium.org/developers/testing/threadsanitizer-tsan-v2
+// See http://dev.monyhar.org/developers/testing/threadsanitizer-tsan-v2
 // for the instructions on writing suppressions.
 char kTSanDefaultSuppressions[] =
     // False positives in libdbus.so, libdconfsettings.so, libflashplayer.so,

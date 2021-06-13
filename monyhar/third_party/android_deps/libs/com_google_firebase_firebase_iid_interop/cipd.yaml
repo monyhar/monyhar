@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@17.0.0.cr0
-package: chromium/third_party/android_deps/libs/com_google_firebase_firebase_iid_interop
+package: monyhar/third_party/android_deps/libs/com_google_firebase_firebase_iid_interop
 description: "firebase-iid-interop"
 data:
 - file: firebase-iid-interop-17.0.0.aar

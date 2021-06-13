@@ -18,7 +18,7 @@ namespace activity_monitor {
 // There are a few caveats:
 //  * Bytes received includes only bytes actually received from the network, and
 //    does not include any bytes read from the the cache.
-//  * Network activity not initiated directly using chromium sockets won't be
+//  * Network activity not initiated directly using monyhar sockets won't be
 //    reflected here (for instance DNS queries issued by getaddrinfo()).
 //
 // Free functions are used instead of a singleton, to avoid memory barriers

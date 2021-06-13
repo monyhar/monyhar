@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.input;
+package org.monyhar.content.browser.input;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -15,9 +15,9 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
-import org.chromium.base.Callback;
-import org.chromium.content.R;
-import org.chromium.ui.widget.UiWidgetFactory;
+import org.monyhar.base.Callback;
+import org.monyhar.content.R;
+import org.monyhar.ui.widget.UiWidgetFactory;
 
 import java.util.List;
 

@@ -11,7 +11,7 @@
 #include "chrome/browser/vr/graphics_delegate.h"
 #include "chrome/browser/vr/render_info.h"
 #include "device/vr/public/mojom/vr_service.mojom.h"
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "gpu/command_buffer/client/gles2_interface.h"
 #include "gpu/command_buffer/client/gpu_memory_buffer_manager.h"
 #include "gpu/command_buffer/common/context_creation_attribs.h"

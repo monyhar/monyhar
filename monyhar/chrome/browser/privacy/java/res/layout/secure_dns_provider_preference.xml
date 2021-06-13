@@ -14,12 +14,12 @@
     android:paddingBottom="8dp"
     android:focusable="false">
 
-    <org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionLayout
+    <org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionLayout
         android:id="@+id/mode_group"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-      <org.chromium.components.browser_ui.widget.RadioButtonWithDescription
+      <org.monyhar.components.browser_ui.widget.RadioButtonWithDescription
           android:id="@+id/automatic"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
           app:primaryText="@string/settings_automatic_mode_label"
           app:descriptionText="@string/settings_automatic_mode_description"/>
 
-      <org.chromium.components.browser_ui.widget.RadioButtonWithDescription
+      <org.monyhar.components.browser_ui.widget.RadioButtonWithDescription
           android:id="@+id/secure"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
           android:background="?attr/selectableItemBackground"
           app:primaryText="@string/settings_secure_dropdown_mode_description"/>
 
-    </org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionLayout>
+    </org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionLayout>
 
     <!-- This container is relocated into @id/secure as an accessory view. -->
     <LinearLayout

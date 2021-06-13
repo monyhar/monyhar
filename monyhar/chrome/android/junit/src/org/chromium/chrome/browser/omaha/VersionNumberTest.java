@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omaha;
+package org.monyhar.chrome.browser.omaha;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.BlockJUnit4ClassRunner;
 
-import org.chromium.base.test.util.Feature;
+import org.monyhar.base.test.util.Feature;
 
 /**
  * Unit tests for VersionNumber.

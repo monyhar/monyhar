@@ -1,4 +1,4 @@
 monorail {
   component: "UI>Browser>Permissions>Prompts"
 }
-team_email: "permissions-dev@chromium.org"
+team_email: "permissions-dev@monyhar.org"

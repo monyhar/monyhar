@@ -41,8 +41,8 @@ class MockWPTGitHub(object):
         self.calls.append('all_pull_requests')
         return self.pull_requests
 
-    def recent_failing_chromium_exports(self):
-        self.calls.append("recent_failing_chromium_exports")
+    def recent_failing_monyhar_exports(self):
+        self.calls.append("recent_failing_monyhar_exports")
         return self.recent_failing_pull_requests
 
     def is_pr_merged(self, number):
@@ -94,8 +94,8 @@ class MockWPTGitHub(object):
         self.calls.append('get_branch_check_runs')
         return self.check_runs
 
-    def pr_for_chromium_commit(self, commit):
-        self.calls.append('pr_for_chromium_commit')
+    def pr_for_monyhar_commit(self, commit):
+        self.calls.append('pr_for_monyhar_commit')
         for pr in self.pull_requests:
             if commit.change_id() in pr.body:
                 return pr

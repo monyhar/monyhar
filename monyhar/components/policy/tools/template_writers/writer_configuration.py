@@ -24,9 +24,9 @@ def GetConfigurationForBuild(defines):
   # Google:Cat_Google references the external google.admx file.
   # category_path_strings strings in curly braces are looked up from localized
   # 'messages' in policy_templates.json.
-  if '_chromium' in defines:
+  if '_monyhar' in defines:
     config = {
-        'build': 'chromium',
+        'build': 'monyhar',
         'app_name': 'Chromium',
         'frame_name': 'Chromium Frame',
         'os_name': 'Chromium OS',
@@ -37,11 +37,11 @@ def GetConfigurationForBuild(defines):
                 'Software\\Policies\\Chromium',
                 'reg_recommended_key_name':
                 'Software\\Policies\\Chromium\\Recommended',
-                'mandatory_category_path': ['chromium'],
-                'recommended_category_path': ['chromium_recommended'],
+                'mandatory_category_path': ['monyhar'],
+                'recommended_category_path': ['monyhar_recommended'],
                 'category_path_strings': {
-                    'chromium': 'Chromium',
-                    'chromium_recommended': 'Chromium - {doc_recommended}',
+                    'monyhar': 'Chromium',
+                    'monyhar_recommended': 'Chromium - {doc_recommended}',
                 },
                 'namespace':
                 'Chromium.Policies.Chromium',
@@ -51,20 +51,20 @@ def GetConfigurationForBuild(defines):
                 'Software\\Policies\\ChromiumOS',
                 'reg_recommended_key_name':
                 'Software\\Policies\\ChromiumOS\\Recommended',
-                'mandatory_category_path': ['chromium_os'],
-                'recommended_category_path': ['chromium_os_recommended'],
+                'mandatory_category_path': ['monyhar_os'],
+                'recommended_category_path': ['monyhar_os_recommended'],
                 'category_path_strings': {
-                    'chromium_os': 'Chromium OS',
-                    'chromium_os_recommended':
+                    'monyhar_os': 'Chromium OS',
+                    'monyhar_os_recommended':
                     'Chromium OS - {doc_recommended}',
                 },
                 'namespace':
                 'Chromium.Policies.ChromiumOS'
             },
         },
-        'admx_prefix': 'chromium',
-        'linux_policy_path': '/etc/chromium/policies/',
-        'bundle_id': 'org.chromium',
+        'admx_prefix': 'monyhar',
+        'linux_policy_path': '/etc/monyhar/policies/',
+        'bundle_id': 'org.monyhar',
     }
   elif '_google_chrome' in defines:
     config = {

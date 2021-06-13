@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.paintpreview.player;
+package org.monyhar.components.paintpreview.player;
 
 import android.content.Context;
 import android.view.View;
@@ -10,7 +10,7 @@ import android.view.ViewGroup.LayoutParams;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.third_party.android.swiperefresh.SwipeRefreshLayout;
+import org.monyhar.third_party.android.swiperefresh.SwipeRefreshLayout;
 
 /**
  * A class for handling overscroll to refresh behavior for the Paint Preview player. This is based
@@ -38,11 +38,11 @@ public class PlayerSwipeRefreshHandler implements OverscrollHandler {
         mSwipeRefreshLayout = new SwipeRefreshLayout(context);
         mSwipeRefreshLayout.setLayoutParams(
                 new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
-        // Use the same colors as {@link org.chromium.chrome.browser.SwipeRefreshHandler}.
+        // Use the same colors as {@link org.monyhar.chrome.browser.SwipeRefreshHandler}.
         mSwipeRefreshLayout.setProgressBackgroundColorSchemeResource(
-                org.chromium.ui.R.color.default_bg_color_elev_2);
+                org.monyhar.ui.R.color.default_bg_color_elev_2);
         mSwipeRefreshLayout.setColorSchemeResources(
-                org.chromium.ui.R.color.default_control_color_active);
+                org.monyhar.ui.R.color.default_control_color_active);
         mSwipeRefreshLayout.setEnabled(true);
 
         mSwipeRefreshLayout.setOnRefreshListener(() -> {

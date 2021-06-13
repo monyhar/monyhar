@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.query_tiles;
+package org.monyhar.components.query_tiles;
 
-import org.chromium.base.Callback;
+import org.monyhar.base.Callback;
 
 import java.util.ArrayList;
 import java.util.List;

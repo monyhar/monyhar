@@ -17,8 +17,8 @@
 #include "net/base/ip_address.h"
 #include "net/base/ip_endpoint.h"
 #include "net/http/http_response_headers.h"
-#include "net/quic/platform/impl/quic_chromium_clock.h"
-#include "net/quic/quic_chromium_packet_reader.h"
+#include "net/quic/platform/impl/quic_monyhar_clock.h"
+#include "net/quic/quic_monyhar_packet_reader.h"
 #include "net/third_party/quiche/src/quic/core/http/quic_spdy_stream.h"
 #include "net/third_party/quiche/src/quic/core/quic_config.h"
 #include "net/third_party/quiche/src/quic/tools/quic_spdy_client_base.h"
@@ -28,7 +28,7 @@ namespace net {
 class UDPClientSocket;
 
 // An implementation of the quic::QuicClientBase::NetworkHelper based off
-// the chromium epoll server.
+// the monyhar epoll server.
 class QuicClientMessageLooplNetworkHelper
     : public quic::QuicClientBase::NetworkHelper,
       public QuicChromiumPacketReader::Visitor {

@@ -5,7 +5,7 @@
 namespace web_app {
 namespace {
 
-// TODO(jarrydg@chromium.org): Remove the macro disabling the following tests
+// TODO(jarrydg@monyhar.org): Remove the macro disabling the following tests
 // when there is a test runner defined above, the file has been added to a
 // build file, and they can compile.
 // https://crbug.com/1215791

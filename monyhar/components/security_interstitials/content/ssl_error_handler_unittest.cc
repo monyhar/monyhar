@@ -1092,7 +1092,7 @@ TEST_F(SSLErrorHandlerNameMismatchTest,
       SSLErrorHandler::SHOW_SSL_INTERSTITIAL_OVERRIDABLE, 1);
 }
 
-// Flakily fails on linux_chromium_tsan_rel_ng. http://crbug.com/989128
+// Flakily fails on linux_monyhar_tsan_rel_ng. http://crbug.com/989128
 #if (defined(OS_LINUX) || defined(OS_CHROMEOS)) && defined(THREAD_SANITIZER)
 #define MAYBE_TimeQueryStarted DISABLED_TimeQueryStarted
 #else
@@ -1130,7 +1130,7 @@ TEST_F(SSLErrorHandlerDateInvalidTest, MAYBE_TimeQueryStarted) {
 // Tests that an SSL interstitial is shown if the accuracy of the system
 // clock can't be determined because network time is unavailable.
 
-// Flakily fails on linux_chromium_tsan_rel_ng. http://crbug.com/989225
+// Flakily fails on linux_monyhar_tsan_rel_ng. http://crbug.com/989225
 #if (defined(OS_LINUX) || defined(OS_CHROMEOS)) && defined(THREAD_SANITIZER)
 #define MAYBE_NoTimeQueries DISABLED_NoTimeQueries
 #else
@@ -1157,7 +1157,7 @@ TEST_F(SSLErrorHandlerDateInvalidTest, MAYBE_NoTimeQueries) {
 // Tests that an SSL interstitial is shown if determing the accuracy of
 // the system clock times out (e.g. because a network time query hangs).
 
-// Flakily fails on linux_chromium_tsan_rel_ng. http://crbug.com/989289
+// Flakily fails on linux_monyhar_tsan_rel_ng. http://crbug.com/989289
 #if (defined(OS_LINUX) || defined(OS_CHROMEOS)) && defined(THREAD_SANITIZER)
 #define MAYBE_TimeQueryHangs DISABLED_TimeQueryHangs
 #else

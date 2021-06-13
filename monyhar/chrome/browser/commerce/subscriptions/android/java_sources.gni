@@ -5,16 +5,16 @@
 # TODO(crbug/1210158): This should be a separate build target when circular
 # dependencies are removed.
 commerce_subscriptions_java_sources = [
-  "//chrome/browser/commerce/subscriptions/android/java/src/org/chromium/chrome/browser/subscriptions/CommerceSubscription.java",
-  "//chrome/browser/commerce/subscriptions/android/java/src/org/chromium/chrome/browser/subscriptions/CommerceSubscriptionJsonSerializer.java",
-  "//chrome/browser/commerce/subscriptions/android/java/src/org/chromium/chrome/browser/subscriptions/CommerceSubscriptionsService.java",
-  "//chrome/browser/commerce/subscriptions/android/java/src/org/chromium/chrome/browser/subscriptions/CommerceSubscriptionsServiceConfig.java",
-  "//chrome/browser/commerce/subscriptions/android/java/src/org/chromium/chrome/browser/subscriptions/CommerceSubscriptionsServiceFactory.java",
-  "//chrome/browser/commerce/subscriptions/android/java/src/org/chromium/chrome/browser/subscriptions/CommerceSubscriptionsServiceProxy.java",
-  "//chrome/browser/commerce/subscriptions/android/java/src/org/chromium/chrome/browser/subscriptions/CommerceSubscriptionsStorage.java",
-  "//chrome/browser/commerce/subscriptions/android/java/src/org/chromium/chrome/browser/subscriptions/ImplicitPriceDropSubscriptionsManager.java",
-  "//chrome/browser/commerce/subscriptions/android/java/src/org/chromium/chrome/browser/subscriptions/SubscriptionsManager.java",
-  "//chrome/browser/commerce/subscriptions/android/java/src/org/chromium/chrome/browser/subscriptions/SubscriptionsManagerImpl.java",
+  "//chrome/browser/commerce/subscriptions/android/java/src/org/monyhar/chrome/browser/subscriptions/CommerceSubscription.java",
+  "//chrome/browser/commerce/subscriptions/android/java/src/org/monyhar/chrome/browser/subscriptions/CommerceSubscriptionJsonSerializer.java",
+  "//chrome/browser/commerce/subscriptions/android/java/src/org/monyhar/chrome/browser/subscriptions/CommerceSubscriptionsService.java",
+  "//chrome/browser/commerce/subscriptions/android/java/src/org/monyhar/chrome/browser/subscriptions/CommerceSubscriptionsServiceConfig.java",
+  "//chrome/browser/commerce/subscriptions/android/java/src/org/monyhar/chrome/browser/subscriptions/CommerceSubscriptionsServiceFactory.java",
+  "//chrome/browser/commerce/subscriptions/android/java/src/org/monyhar/chrome/browser/subscriptions/CommerceSubscriptionsServiceProxy.java",
+  "//chrome/browser/commerce/subscriptions/android/java/src/org/monyhar/chrome/browser/subscriptions/CommerceSubscriptionsStorage.java",
+  "//chrome/browser/commerce/subscriptions/android/java/src/org/monyhar/chrome/browser/subscriptions/ImplicitPriceDropSubscriptionsManager.java",
+  "//chrome/browser/commerce/subscriptions/android/java/src/org/monyhar/chrome/browser/subscriptions/SubscriptionsManager.java",
+  "//chrome/browser/commerce/subscriptions/android/java/src/org/monyhar/chrome/browser/subscriptions/SubscriptionsManagerImpl.java",
 ]
 
 commerce_subscriptions_java_deps = [

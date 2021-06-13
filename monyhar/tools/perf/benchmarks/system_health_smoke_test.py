@@ -12,7 +12,7 @@ stories as memory ones, only with fewer actions (no memory dumping).
 import collections
 import unittest
 
-from chrome_telemetry_build import chromium_config
+from chrome_telemetry_build import monyhar_config
 
 from core import perf_benchmark
 from core import results_processor
@@ -173,7 +173,7 @@ def GenerateBenchmarkOptions(output_dir, benchmark_cls):
   options = testing.GetRunOptions(
       output_dir=output_dir, benchmark_cls=benchmark_cls,
       overrides={'run_full_story_set': True},
-      environment=chromium_config.GetDefaultChromiumConfig())
+      environment=monyhar_config.GetDefaultChromiumConfig())
   options.pageset_repeat = 1  # For smoke testing only run each page once.
   options.output_formats = ['histograms']
   options.max_values_per_test_case = MAX_VALUES_PER_TEST_CASE

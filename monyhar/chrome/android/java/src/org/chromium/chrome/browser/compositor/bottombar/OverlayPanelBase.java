@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.bottombar;
+package org.monyhar.chrome.browser.compositor.bottombar;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -13,13 +13,13 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.MathUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanel.PanelState;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanel.StateChangeReason;
-import org.chromium.ui.base.LocalizationUtils;
-import org.chromium.ui.resources.dynamics.DynamicResourceLoader;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.MathUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanel.PanelState;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanel.StateChangeReason;
+import org.monyhar.ui.base.LocalizationUtils;
+import org.monyhar.ui.resources.dynamics.DynamicResourceLoader;
 
 /**
  * Base abstract class for the Overlay Panel.

@@ -90,7 +90,7 @@ WebViewUpdateService:
 
 ```shell
 # If you don't have `adb` in your path, you can source this file to use
-# the copy from chromium's Android SDK
+# the copy from monyhar's Android SDK
 $ source build/android/envsetup.sh
 
 # Only available on O+
@@ -131,7 +131,7 @@ android_override_version_code = "987654321"
 ### Invalid package ... SDK version too low
 
 The targetSdkVersion of your APK is too low (it must be >= the platform's API
-level). This shouldn't happen for local builds using tip-of-tree chromium on
+level). This shouldn't happen for local builds using tip-of-tree monyhar on
 public OS versions (see [note](#Building-for-preview-Android-releases)).
 
 *** note
@@ -192,8 +192,8 @@ This could fail for an even wider variety of reasons than already listed. Please
 
 ### I couldn't **build** the APK
 
-Try building Chromium. If that doesn't work, please reach out to [the chromium
-team](https://groups.google.com/a/chromium.org/forum/#!forum/chromium-dev) for
+Try building Chromium. If that doesn't work, please reach out to [the monyhar
+team](https://groups.google.com/a/monyhar.org/forum/#!forum/monyhar-dev) for
 general guidance. If `system_webview_apk` is the only troublesome target, please
 reach out to the WebView team (see previous section).
 
@@ -207,4 +207,4 @@ which don't have any error messages).
 If you can't follow the quick start guide for some reason, please consult our
 [general build instructions](build-instructions.md).
 
-[1]: https://groups.google.com/a/chromium.org/forum/#!forum/android-webview-dev
+[1]: https://groups.google.com/a/monyhar.org/forum/#!forum/android-webview-dev

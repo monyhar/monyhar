@@ -15,18 +15,18 @@ android_library("url_formatter_java") {
   srcjar_deps = [ "//components/url_formatter:url_formatter_java_enums_srcjar" ]
 
   sources =
-      [ "java/src/org/chromium/components/url_formatter/UrlFormatter.java" ]
+      [ "java/src/org/monyhar/components/url_formatter/UrlFormatter.java" ]
 }
 
 generate_jni("jni_headers") {
   sources =
-      [ "java/src/org/chromium/components/url_formatter/UrlFormatter.java" ]
+      [ "java/src/org/monyhar/components/url_formatter/UrlFormatter.java" ]
 }
 
 android_library("url_formatter_javatests") {
   testonly = true
 
-  sources = [ "javatests/src/org/chromium/components/url_formatter/UrlFormatterUnitTest.java" ]
+  sources = [ "javatests/src/org/monyhar/components/url_formatter/UrlFormatterUnitTest.java" ]
   deps = [
     ":url_formatter_java",
     "//base:base_java",

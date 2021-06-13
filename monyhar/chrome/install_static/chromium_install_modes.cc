@@ -4,7 +4,7 @@
 
 // Brand-specific constants and install modes for Chromium.
 
-#include "chrome/install_static/chromium_install_modes.h"
+#include "chrome/install_static/monyhar_install_modes.h"
 
 #include <stdlib.h>
 
@@ -20,7 +20,7 @@ const wchar_t kProductPathName[] = L"Chromium";
 
 const size_t kProductPathNameLength = _countof(kProductPathName) - 1;
 
-const char kSafeBrowsingName[] = "chromium";
+const char kSafeBrowsingName[] = "monyhar";
 
 const InstallConstants kInstallModes[] = {
     // The primary (and only) install mode for Chromium.

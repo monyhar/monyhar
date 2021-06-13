@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.messages;
+package org.monyhar.components.messages;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ActivityState;
-import org.chromium.components.messages.MessageScopeChange.ChangeType;
-import org.chromium.content_public.browser.LoadCommittedDetails;
-import org.chromium.content_public.browser.NavigationController;
-import org.chromium.content_public.browser.NavigationEntry;
-import org.chromium.content_public.browser.Visibility;
-import org.chromium.content_public.browser.WebContentsObserver;
-import org.chromium.ui.base.PageTransition;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.base.WindowAndroid.ActivityStateObserver;
+import org.monyhar.base.ActivityState;
+import org.monyhar.components.messages.MessageScopeChange.ChangeType;
+import org.monyhar.content_public.browser.LoadCommittedDetails;
+import org.monyhar.content_public.browser.NavigationController;
+import org.monyhar.content_public.browser.NavigationEntry;
+import org.monyhar.content_public.browser.Visibility;
+import org.monyhar.content_public.browser.WebContentsObserver;
+import org.monyhar.ui.base.PageTransition;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.base.WindowAndroid.ActivityStateObserver;
 
 import java.util.HashMap;
 import java.util.Map;

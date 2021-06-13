@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.layouts;
+package org.monyhar.chrome.browser.layouts;
 
 /**
  * This interface is intended to be used by glue code to manage the lifecycle and external input to

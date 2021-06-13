@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
-import org.chromium.content.browser.webcontents.WebContentsImpl;
-import org.chromium.content_public.browser.RenderCoordinates;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.content.browser.webcontents.WebContentsImpl;
+import org.monyhar.content_public.browser.RenderCoordinates;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * Cached copy of all positions and scales (CSS-to-DIP-to-physical pixels)

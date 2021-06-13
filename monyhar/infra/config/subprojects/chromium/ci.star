@@ -18,20 +18,20 @@ ci.defaults.set(
     configure_kitchen = True,
     cores = 8,
     cpu = cpu.X86_64,
-    executable = "recipe:chromium",
+    executable = "recipe:monyhar",
     execution_timeout = 3 * time.hour,
     os = os.LINUX_DEFAULT,
-    pool = "luci.chromium.ci",
-    project_trigger_overrides = branches.value(for_branches = {"chromium": settings.project}),
-    service_account = "chromium-ci-builder@chops-service-accounts.iam.gserviceaccount.com",
+    pool = "luci.monyhar.ci",
+    project_trigger_overrides = branches.value(for_branches = {"monyhar": settings.project}),
+    service_account = "monyhar-ci-builder@chops-service-accounts.iam.gserviceaccount.com",
     swarming_tags = ["vpython:native-python-wrapper"],
-    triggered_by = ["chromium-gitiles-trigger"],
+    triggered_by = ["monyhar-gitiles-trigger"],
     # TODO(crbug.com/1129723): set default goma_backend here.
 )
 
 consoles.defaults.set(
     header = HEADER,
-    repo = "https://chromium.googlesource.com/chromium/src",
+    repo = "https://monyhar.googlesource.com/monyhar/src",
     refs = [settings.ref],
 )
 
@@ -49,7 +49,7 @@ luci.bucket(
                 # to schedule builds
                 "chrome-official-brancher@chops-service-accounts.iam.gserviceaccount.com",
             ],
-            groups = "project-chromium-ci-schedulers",
+            groups = "project-monyhar-ci-schedulers",
         ),
         acl.entry(
             roles = acl.BUILDBUCKET_OWNER,
@@ -57,15 +57,15 @@ luci.bucket(
         ),
         acl.entry(
             roles = acl.SCHEDULER_TRIGGERER,
-            groups = "project-chromium-scheduler-triggerers",
+            groups = "project-monyhar-scheduler-triggerers",
         ),
     ],
 )
 
 luci.gitiles_poller(
-    name = "chromium-gitiles-trigger",
+    name = "monyhar-gitiles-trigger",
     bucket = "ci",
-    repo = "https://chromium.googlesource.com/chromium/src",
+    repo = "https://monyhar.googlesource.com/monyhar/src",
     refs = [settings.ref],
 )
 
@@ -73,28 +73,28 @@ luci.gitiles_poller(
 
 [consoles.overview_console_view(
     name = name,
-    repo = "https://chromium.googlesource.com/chromium/src",
+    repo = "https://monyhar.googlesource.com/monyhar/src",
     refs = [settings.ref],
     title = title,
     top_level_ordering = [
-        "chromium",
-        "chromium.win",
-        "chromium.mac",
-        "chromium.linux",
-        "chromium.chromiumos",
-        "chromium.android",
-        "chromium.angle",
+        "monyhar",
+        "monyhar.win",
+        "monyhar.mac",
+        "monyhar.linux",
+        "monyhar.monyharos",
+        "monyhar.android",
+        "monyhar.angle",
         "chrome",
-        "chromium.memory",
-        "chromium.dawn",
-        "chromium.gpu",
-        "chromium.fyi",
-        "chromium.android.fyi",
-        "chromium.clang",
-        "chromium.fuzz",
-        "chromium.gpu.fyi",
-        "chromium.swangle",
-        "chromium.updater",
+        "monyhar.memory",
+        "monyhar.dawn",
+        "monyhar.gpu",
+        "monyhar.fyi",
+        "monyhar.android.fyi",
+        "monyhar.clang",
+        "monyhar.fuzz",
+        "monyhar.gpu.fyi",
+        "monyhar.swangle",
+        "monyhar.updater",
     ],
 ) for name, title in (
     ("main", "{} Main Console".format(settings.project_title)),
@@ -102,7 +102,7 @@ luci.gitiles_poller(
 )]
 
 consoles.console_view(
-    name = "chromium",
+    name = "monyhar",
     branch_selector = branches.STANDARD_MILESTONE,
     include_experimental_builds = True,
     ordering = {
@@ -116,7 +116,7 @@ consoles.console_view(
 )
 
 consoles.console_view(
-    name = "chromium.android",
+    name = "monyhar.android",
     branch_selector = branches.STANDARD_MILESTONE,
     ordering = {
         None: ["cronet", "builder", "tester"],
@@ -130,14 +130,14 @@ consoles.console_view(
 )
 
 consoles.console_view(
-    name = "chromium.android.fyi",
+    name = "monyhar.android.fyi",
     ordering = {
         None: ["android", "memory", "weblayer", "webview"],
     },
 )
 
 consoles.console_view(
-    name = "chromium.angle",
+    name = "monyhar.angle",
     ordering = {
         None: ["Android", "Fuchsia", "Linux", "Mac", "iOS", "Windows", "Perf"],
         "*builder*": ["Builder"],
@@ -152,7 +152,7 @@ consoles.console_view(
 )
 
 consoles.console_view(
-    name = "chromium.chromiumos",
+    name = "monyhar.monyharos",
     branch_selector = branches.LTS_MILESTONE,
     ordering = {
         None: ["default"],
@@ -162,7 +162,7 @@ consoles.console_view(
 )
 
 consoles.console_view(
-    name = "chromium.clang",
+    name = "monyhar.clang",
     ordering = {
         None: [
             "ToT Linux",
@@ -188,7 +188,7 @@ consoles.console_view(
 )
 
 consoles.console_view(
-    name = "chromium.dawn",
+    name = "monyhar.dawn",
     branch_selector = branches.STANDARD_MILESTONE,
     ordering = {
         None: ["ToT"],
@@ -206,7 +206,7 @@ consoles.console_view(
 )
 
 consoles.console_view(
-    name = "chromium.fyi",
+    name = "monyhar.fyi",
     branch_selector = branches.STANDARD_MILESTONE,
     ordering = {
         None: [
@@ -239,7 +239,7 @@ consoles.console_view(
 )
 
 consoles.console_view(
-    name = "chromium.fuzz",
+    name = "monyhar.fuzz",
     ordering = {
         None: [
             "afl",
@@ -271,7 +271,7 @@ consoles.console_view(
 )
 
 consoles.console_view(
-    name = "chromium.gpu",
+    name = "monyhar.gpu",
     branch_selector = branches.STANDARD_MILESTONE,
     ordering = {
         None: ["Windows", "Mac", "Linux"],
@@ -279,7 +279,7 @@ consoles.console_view(
 )
 
 consoles.console_view(
-    name = "chromium.gpu.fyi",
+    name = "monyhar.gpu.fyi",
     ordering = {
         None: ["Windows", "Mac", "Linux"],
         "*builder*": ["Builder"],
@@ -310,7 +310,7 @@ consoles.console_view(
 )
 
 consoles.console_view(
-    name = "chromium.linux",
+    name = "monyhar.linux",
     branch_selector = branches.STANDARD_MILESTONE,
     ordering = {
         None: ["release", "debug"],
@@ -320,7 +320,7 @@ consoles.console_view(
 )
 
 consoles.console_view(
-    name = "chromium.mac",
+    name = "monyhar.mac",
     branch_selector = branches.STANDARD_MILESTONE,
     ordering = {
         None: ["release"],
@@ -331,7 +331,7 @@ consoles.console_view(
 )
 
 consoles.console_view(
-    name = "chromium.memory",
+    name = "monyhar.memory",
     branch_selector = branches.STANDARD_MILESTONE,
     ordering = {
         None: ["win", "mac", "linux", "cros"],
@@ -343,15 +343,15 @@ consoles.console_view(
 )
 
 consoles.console_view(
-    name = "chromium.mojo",
+    name = "monyhar.mojo",
 )
 
 consoles.console_view(
-    name = "chromium.packager",
+    name = "monyhar.packager",
 )
 
 consoles.console_view(
-    name = "chromium.swangle",
+    name = "monyhar.swangle",
     ordering = {
         None: ["DEPS", "ToT ANGLE", "ToT SwiftShader"],
         "*os*": ["Windows", "Mac"],
@@ -370,11 +370,11 @@ consoles.console_view(
 )
 
 consoles.console_view(
-    name = "chromium.updater",
+    name = "monyhar.updater",
 )
 
 consoles.console_view(
-    name = "chromium.win",
+    name = "monyhar.win",
     branch_selector = branches.STANDARD_MILESTONE,
     ordering = {
         None: ["release", "debug"],
@@ -393,9 +393,9 @@ consoles.console_view(
     title = "iOS Sheriff Console",
     ordering = {
         "*type*": consoles.ordering(short_names = ["dev", "sim"]),
-        None: ["chromium.mac", "chromium.fyi"],
-        "chromium.mac": "*type*",
-        "chromium.fyi|13": "*type*",
+        None: ["monyhar.mac", "monyhar.fyi"],
+        "monyhar.mac": "*type*",
+        "monyhar.fyi|13": "*type*",
     },
 )
 
@@ -405,15 +405,15 @@ consoles.console_view(
     ordering = {
         "*type*": consoles.ordering(short_names = ["a64", "x64"]),
         None: ["ci", "fyi", "misc"],
-        "chromium.mac": "*type*",
-        "chromium.fyi|13": "*type*",
+        "monyhar.mac": "*type*",
+        "monyhar.fyi|13": "*type*",
     },
 )
 
-# The chromium.clang console includes some entries for builders from the chrome project
+# The monyhar.clang console includes some entries for builders from the chrome project
 [branches.console_view_entry(
     builder = "chrome:ci/{}".format(name),
-    console_view = "chromium.clang",
+    console_view = "monyhar.clang",
     category = category,
     short_name = short_name,
 ) for name, category, short_name in (
@@ -454,10 +454,10 @@ consoles.console_view(
     ("win64-chrome", "win"),
 )]
 
-# The chromium.updater console includes some entries from official chrome builders.
+# The monyhar.updater console includes some entries from official chrome builders.
 [branches.console_view_entry(
     builder = "chrome:official/{}".format(name),
-    console_view = "chromium.updater",
+    console_view = "monyhar.updater",
     category = category,
     short_name = short_name,
 ) for name, category, short_name in (
@@ -568,7 +568,7 @@ ci.android_builder(
     tree_closing = True,
     experiments = {
         # TODO(crbug.com/1143122): remove this.
-        "chromium.chromium_tests.use_rbe_cas": 50,
+        "monyhar.monyhar_tests.use_rbe_cas": 50,
     },
 )
 
@@ -1023,7 +1023,7 @@ ci.android_fyi_builder(
     reclient_jobs = 150,
     execution_timeout = 5 * time.hour,
     main_console_view = main_console_if_on_branch(),
-    reclient_instance = "rbe-chromium-trusted",
+    reclient_instance = "rbe-monyhar-trusted",
     configure_kitchen = True,
     kitchen_emulate_gce = True,
     os = os.LINUX_BIONIC_SWITCH_TO_DEFAULT,
@@ -1039,7 +1039,7 @@ ci.android_fyi_builder(
     # Higher build timeout since dbg ASAN builds can take a while on a clobber
     # build.
     execution_timeout = 4 * time.hour,
-    reclient_instance = "rbe-chromium-trusted",
+    reclient_instance = "rbe-monyhar-trusted",
     reclient_jobs = 150,
     configure_kitchen = True,
     kitchen_emulate_gce = True,
@@ -1165,7 +1165,7 @@ ci.angle_thin_tester(
 )
 
 ci.angle_linux_builder(
-    name = "android-angle-chromium-arm64-builder",
+    name = "android-angle-monyhar-arm64-builder",
     console_view_entry = consoles.console_view_entry(
         category = "Android|Builder|Chromium",
         short_name = "arm64",
@@ -1173,12 +1173,12 @@ ci.angle_linux_builder(
 )
 
 ci.angle_thin_tester(
-    name = "android-angle-chromium-arm64-nexus5x",
+    name = "android-angle-monyhar-arm64-nexus5x",
     console_view_entry = consoles.console_view_entry(
         category = "Android|Nexus5X|Chromium",
         short_name = "arm64",
     ),
-    triggered_by = ["android-angle-chromium-arm64-builder"],
+    triggered_by = ["android-angle-monyhar-arm64-builder"],
 )
 
 ci.angle_linux_builder(
@@ -1216,7 +1216,7 @@ ci.angle_thin_tester(
 )
 
 ci.angle_linux_builder(
-    name = "linux-angle-chromium-builder",
+    name = "linux-angle-monyhar-builder",
     console_view_entry = consoles.console_view_entry(
         category = "Linux|Builder|Chromium",
         short_name = "x64",
@@ -1224,21 +1224,21 @@ ci.angle_linux_builder(
 )
 
 ci.angle_thin_tester(
-    name = "linux-angle-chromium-intel",
+    name = "linux-angle-monyhar-intel",
     console_view_entry = consoles.console_view_entry(
         category = "Linux|Intel|Chromium",
         short_name = "x64",
     ),
-    triggered_by = ["linux-angle-chromium-builder"],
+    triggered_by = ["linux-angle-monyhar-builder"],
 )
 
 ci.angle_thin_tester(
-    name = "linux-angle-chromium-nvidia",
+    name = "linux-angle-monyhar-nvidia",
     console_view_entry = consoles.console_view_entry(
         category = "Linux|NVIDIA|Chromium",
         short_name = "x64",
     ),
-    triggered_by = ["linux-angle-chromium-builder"],
+    triggered_by = ["linux-angle-monyhar-builder"],
 )
 
 ci.angle_mac_builder(
@@ -1277,7 +1277,7 @@ ci.angle_thin_tester(
 )
 
 ci.angle_mac_builder(
-    name = "mac-angle-chromium-builder",
+    name = "mac-angle-monyhar-builder",
     console_view_entry = consoles.console_view_entry(
         category = "Mac|Builder|Chromium",
         short_name = "x64",
@@ -1285,21 +1285,21 @@ ci.angle_mac_builder(
 )
 
 ci.angle_thin_tester(
-    name = "mac-angle-chromium-amd",
+    name = "mac-angle-monyhar-amd",
     console_view_entry = consoles.console_view_entry(
         category = "Mac|AMD|Chromium",
         short_name = "x64",
     ),
-    triggered_by = ["mac-angle-chromium-builder"],
+    triggered_by = ["mac-angle-monyhar-builder"],
 )
 
 ci.angle_thin_tester(
-    name = "mac-angle-chromium-intel",
+    name = "mac-angle-monyhar-intel",
     console_view_entry = consoles.console_view_entry(
         category = "Mac|Intel|Chromium",
         short_name = "x64",
     ),
-    triggered_by = ["mac-angle-chromium-builder"],
+    triggered_by = ["mac-angle-monyhar-builder"],
 )
 
 ci.angle_mac_builder(
@@ -1321,7 +1321,7 @@ ci.angle_thin_tester(
 )
 
 ci.angle_windows_builder(
-    name = "win-angle-chromium-x64-builder",
+    name = "win-angle-monyhar-x64-builder",
     console_view_entry = consoles.console_view_entry(
         category = "Windows|Builder|Chromium",
         short_name = "x64",
@@ -1329,25 +1329,25 @@ ci.angle_windows_builder(
 )
 
 ci.angle_thin_tester(
-    name = "win10-angle-chromium-x64-intel",
+    name = "win10-angle-monyhar-x64-intel",
     console_view_entry = consoles.console_view_entry(
         category = "Windows|Intel|Chromium",
         short_name = "x64",
     ),
-    triggered_by = ["win-angle-chromium-x64-builder"],
+    triggered_by = ["win-angle-monyhar-x64-builder"],
 )
 
 ci.angle_thin_tester(
-    name = "win10-angle-chromium-x64-nvidia",
+    name = "win10-angle-monyhar-x64-nvidia",
     console_view_entry = consoles.console_view_entry(
         category = "Windows|NVIDIA|Chromium",
         short_name = "x64",
     ),
-    triggered_by = ["win-angle-chromium-x64-builder"],
+    triggered_by = ["win-angle-monyhar-x64-builder"],
 )
 
 ci.angle_windows_builder(
-    name = "win-angle-chromium-x86-builder",
+    name = "win-angle-monyhar-x86-builder",
     console_view_entry = consoles.console_view_entry(
         category = "Windows|Builder|Chromium",
         short_name = "x86",
@@ -1355,12 +1355,12 @@ ci.angle_windows_builder(
 )
 
 ci.angle_thin_tester(
-    name = "win7-angle-chromium-x86-amd",
+    name = "win7-angle-monyhar-x86-amd",
     console_view_entry = consoles.console_view_entry(
         category = "Windows|Win7-AMD|Chromium",
         short_name = "x86",
     ),
-    triggered_by = ["win-angle-chromium-x86-builder"],
+    triggered_by = ["win-angle-monyhar-x86-builder"],
 )
 
 ci.angle_windows_builder(
@@ -1415,7 +1415,7 @@ ci.angle_thin_tester(
     triggered_by = ["win-angle-x86-builder"],
 )
 
-ci.chromium_builder(
+ci.monyhar_builder(
     name = "android-archive-dbg",
     # Bump to 32 if needed.
     console_view_entry = consoles.console_view_entry(
@@ -1427,7 +1427,7 @@ ci.chromium_builder(
     os = os.LINUX_BIONIC_REMOVE,
 )
 
-ci.chromium_builder(
+ci.monyhar_builder(
     name = "android-archive-rel",
     console_view_entry = consoles.console_view_entry(
         category = "android",
@@ -1438,7 +1438,7 @@ ci.chromium_builder(
     os = os.LINUX_BIONIC_REMOVE,
 )
 
-ci.chromium_builder(
+ci.monyhar_builder(
     name = "android-official",
     branch_selector = branches.STANDARD_MILESTONE,
     builderless = False,
@@ -1456,7 +1456,7 @@ ci.chromium_builder(
     execution_timeout = 7 * time.hour,
 )
 
-ci.chromium_builder(
+ci.monyhar_builder(
     name = "fuchsia-official",
     branch_selector = branches.STANDARD_MILESTONE,
     main_console_view = "main",
@@ -1480,7 +1480,7 @@ ci.chromium_builder(
     tree_closing = False,
 )
 
-ci.chromium_builder(
+ci.monyhar_builder(
     name = "linux-archive-dbg",
     console_view_entry = consoles.console_view_entry(
         category = "linux",
@@ -1492,7 +1492,7 @@ ci.chromium_builder(
     os = os.LINUX_BIONIC_REMOVE,
 )
 
-ci.chromium_builder(
+ci.monyhar_builder(
     name = "linux-archive-rel",
     console_view_entry = consoles.console_view_entry(
         category = "linux",
@@ -1504,14 +1504,14 @@ ci.chromium_builder(
     os = os.LINUX_BIONIC_REMOVE,
 )
 
-ci.chromium_builder(
+ci.monyhar_builder(
     name = "linux-official",
     branch_selector = branches.STANDARD_MILESTONE,
     builderless = False,
     # TODO(https://crbug.com/1072012) Use the default console view and add
     # main_console_view = 'main' once the build is green
     console_view_entry = consoles.console_view_entry(
-        console_view = "chromium.fyi",
+        console_view = "monyhar.fyi",
         category = "linux",
         short_name = "off",
     ),
@@ -1524,7 +1524,7 @@ ci.chromium_builder(
     tree_closing = False,
 )
 
-ci.chromium_builder(
+ci.monyhar_builder(
     name = "mac-archive-dbg",
     console_view_entry = consoles.console_view_entry(
         category = "mac",
@@ -1536,7 +1536,7 @@ ci.chromium_builder(
     os = os.MAC_DEFAULT,
 )
 
-ci.chromium_builder(
+ci.monyhar_builder(
     name = "mac-archive-rel",
     console_view_entry = consoles.console_view_entry(
         category = "mac",
@@ -1546,7 +1546,7 @@ ci.chromium_builder(
     os = os.MAC_DEFAULT,
 )
 
-ci.chromium_builder(
+ci.monyhar_builder(
     name = "mac-arm64-archive-dbg",
     console_view_entry = consoles.console_view_entry(
         category = "mac|arm",
@@ -1557,7 +1557,7 @@ ci.chromium_builder(
     os = os.MAC_DEFAULT,
 )
 
-ci.chromium_builder(
+ci.monyhar_builder(
     name = "mac-arm64-archive-rel",
     console_view_entry = consoles.console_view_entry(
         category = "mac|arm",
@@ -1568,13 +1568,13 @@ ci.chromium_builder(
     os = os.MAC_DEFAULT,
 )
 
-ci.chromium_builder(
+ci.monyhar_builder(
     name = "mac-official",
     builderless = False,
     # TODO(https://crbug.com/1072012) Use the default console view and add
     # main_console_view = 'main' once the build is green
     console_view_entry = consoles.console_view_entry(
-        console_view = "chromium.fyi",
+        console_view = "monyhar.fyi",
         category = "mac",
         short_name = "off",
     ),
@@ -1587,7 +1587,7 @@ ci.chromium_builder(
     cores = None,
 )
 
-ci.chromium_builder(
+ci.monyhar_builder(
     name = "win-archive-dbg",
     console_view_entry = consoles.console_view_entry(
         category = "win|dbg",
@@ -1599,7 +1599,7 @@ ci.chromium_builder(
     tree_closing = False,
 )
 
-ci.chromium_builder(
+ci.monyhar_builder(
     name = "win-archive-rel",
     console_view_entry = consoles.console_view_entry(
         category = "win|rel",
@@ -1610,7 +1610,7 @@ ci.chromium_builder(
     os = os.WINDOWS_DEFAULT,
 )
 
-ci.chromium_builder(
+ci.monyhar_builder(
     name = "win-official",
     branch_selector = branches.STANDARD_MILESTONE,
     main_console_view = "main",
@@ -1626,7 +1626,7 @@ ci.chromium_builder(
     tree_closing = False,
 )
 
-ci.chromium_builder(
+ci.monyhar_builder(
     name = "win32-archive-dbg",
     console_view_entry = consoles.console_view_entry(
         category = "win|dbg",
@@ -1638,7 +1638,7 @@ ci.chromium_builder(
     tree_closing = False,
 )
 
-ci.chromium_builder(
+ci.monyhar_builder(
     name = "win32-archive-rel",
     console_view_entry = consoles.console_view_entry(
         category = "win|rel",
@@ -1649,7 +1649,7 @@ ci.chromium_builder(
     os = os.WINDOWS_DEFAULT,
 )
 
-ci.chromium_builder(
+ci.monyhar_builder(
     name = "win32-official",
     branch_selector = branches.STANDARD_MILESTONE,
     main_console_view = "main",
@@ -1665,8 +1665,8 @@ ci.chromium_builder(
     tree_closing = False,
 )
 
-ci.chromiumos_builder(
-    name = "linux-ash-chromium-generator-rel",
+ci.monyharos_builder(
+    name = "linux-ash-monyhar-generator-rel",
     console_view_entry = consoles.console_view_entry(
         category = "default",
     ),
@@ -1680,13 +1680,13 @@ ci.chromiumos_builder(
             "cipd_archive_datas": [
                 {
                     "yaml_files": [
-                        "gen_linux_ash_chromium_cipd_yaml_cipd.yaml",
+                        "gen_linux_ash_monyhar_cipd_yaml_cipd.yaml",
                     ],
                     "refs": [
                         "{%channel%}",
                     ],
                     "tags": {
-                        "version": "{%chromium_version%}",
+                        "version": "{%monyhar_version%}",
                     },
                     "only_set_refs_on_tests_success": True,
                 },
@@ -1695,7 +1695,7 @@ ci.chromiumos_builder(
     },
 )
 
-ci.chromiumos_builder(
+ci.monyharos_builder(
     name = "Linux ChromiumOS Full",
     console_view_entry = consoles.console_view_entry(
         category = "default",
@@ -1704,7 +1704,7 @@ ci.chromiumos_builder(
     main_console_view = "main",
 )
 
-ci.chromiumos_builder(
+ci.monyharos_builder(
     name = "chromeos-amd64-generic-asan-rel",
     console_view_entry = consoles.console_view_entry(
         category = "simple|release|x64",
@@ -1713,7 +1713,7 @@ ci.chromiumos_builder(
     main_console_view = "main",
 )
 
-ci.chromiumos_builder(
+ci.monyharos_builder(
     name = "chromeos-amd64-generic-cfi-thin-lto-rel",
     console_view_entry = consoles.console_view_entry(
         category = "simple|release|x64",
@@ -1722,7 +1722,7 @@ ci.chromiumos_builder(
     main_console_view = "main",
 )
 
-ci.chromiumos_builder(
+ci.monyharos_builder(
     name = "chromeos-amd64-generic-dbg",
     branch_selector = branches.STANDARD_MILESTONE,
     console_view_entry = consoles.console_view_entry(
@@ -1733,7 +1733,7 @@ ci.chromiumos_builder(
     main_console_view = "main",
 )
 
-ci.chromiumos_builder(
+ci.monyharos_builder(
     name = "chromeos-amd64-generic-lacros-dbg",
     branch_selector = branches.STANDARD_MILESTONE,
     console_view_entry = consoles.console_view_entry(
@@ -1744,7 +1744,7 @@ ci.chromiumos_builder(
     main_console_view = "main",
 )
 
-ci.chromiumos_builder(
+ci.monyharos_builder(
     name = "chromeos-amd64-generic-rel",
     branch_selector = branches.LTS_MILESTONE,
     console_view_entry = consoles.console_view_entry(
@@ -1756,7 +1756,7 @@ ci.chromiumos_builder(
     main_console_view = "main",
 )
 
-ci.chromiumos_builder(
+ci.monyharos_builder(
     name = "chromeos-arm-generic-dbg",
     console_view_entry = consoles.console_view_entry(
         category = "simple|debug",
@@ -1765,7 +1765,7 @@ ci.chromiumos_builder(
     main_console_view = "main",
 )
 
-ci.chromiumos_builder(
+ci.monyharos_builder(
     name = "chromeos-arm-generic-rel",
     branch_selector = branches.LTS_MILESTONE,
     console_view_entry = consoles.console_view_entry(
@@ -1777,7 +1777,7 @@ ci.chromiumos_builder(
     main_console_view = "main",
 )
 
-ci.chromiumos_builder(
+ci.monyharos_builder(
     name = "chromeos-kevin-rel",
     branch_selector = branches.LTS_MILESTONE,
     console_view_entry = consoles.console_view_entry(
@@ -1787,7 +1787,7 @@ ci.chromiumos_builder(
     main_console_view = "main",
 )
 
-ci.chromiumos_builder(
+ci.monyharos_builder(
     name = "lacros-amd64-generic-binary-size-rel",
     console_view_entry = consoles.console_view_entry(
         category = "lacros|size",
@@ -1813,7 +1813,7 @@ ci.chromiumos_builder(
                         "snapshot_blob.bin",
                     ],
                     "dirs": ["locales", "swiftshader"],
-                    "gcs_bucket": "chromium-lacros-fishfood",
+                    "gcs_bucket": "monyhar-lacros-fishfood",
                     "gcs_path": "x86_64/{%position%}/lacros.zip",
                     "archive_type": "ARCHIVE_TYPE_ZIP",
                 },
@@ -1822,7 +1822,7 @@ ci.chromiumos_builder(
     },
 )
 
-ci.chromiumos_builder(
+ci.monyharos_builder(
     name = "lacros-amd64-generic-rel",
     console_view_entry = consoles.console_view_entry(
         category = "lacros|x64",
@@ -1833,7 +1833,7 @@ ci.chromiumos_builder(
     os = os.LINUX_BIONIC_REMOVE,
 )
 
-ci.chromiumos_builder(
+ci.monyharos_builder(
     name = "lacros-arm-generic-rel",
     console_view_entry = consoles.console_view_entry(
         category = "lacros|arm",
@@ -1845,7 +1845,7 @@ ci.chromiumos_builder(
     main_console_view = "main",
 )
 
-ci.chromiumos_builder(
+ci.monyharos_builder(
     name = "linux-chromeos-dbg",
     branch_selector = branches.STANDARD_MILESTONE,
     console_view_entry = consoles.console_view_entry(
@@ -1856,7 +1856,7 @@ ci.chromiumos_builder(
     main_console_view = "main",
 )
 
-ci.chromiumos_builder(
+ci.monyharos_builder(
     name = "linux-chromeos-rel",
     branch_selector = branches.LTS_MILESTONE,
     console_view_entry = consoles.console_view_entry(
@@ -1868,7 +1868,7 @@ ci.chromiumos_builder(
     os = os.LINUX_BIONIC_REMOVE,
 )
 
-ci.chromiumos_builder(
+ci.monyharos_builder(
     name = "linux-lacros-builder-rel",
     branch_selector = branches.STANDARD_MILESTONE,
     console_view_entry = consoles.console_view_entry(
@@ -1880,7 +1880,7 @@ ci.chromiumos_builder(
     os = os.LINUX_BIONIC_REMOVE,
 )
 
-ci.chromiumos_builder(
+ci.monyharos_builder(
     name = "linux-lacros-tester-rel",
     branch_selector = branches.STANDARD_MILESTONE,
     console_view_entry = consoles.console_view_entry(
@@ -1895,7 +1895,7 @@ ci.chromiumos_builder(
 )
 
 # For Chromebox for meetings(CfM)
-ci.chromiumos_builder(
+ci.monyharos_builder(
     name = "linux-cfm-rel",
     console_view_entry = consoles.console_view_entry(
         category = "simple|release",
@@ -1912,11 +1912,11 @@ ci.cipd_3pp_builder(
         category = "3pp|linux",
         short_name = "amd64",
     ),
-    notifies = ["chromium-3pp-packager"],
+    notifies = ["monyhar-3pp-packager"],
     schedule = "with 6h interval",
     triggered_by = [],
     properties = {
-        "$build/chromium_3pp": {
+        "$build/monyhar_3pp": {
             "platform": "linux-amd64",
             "preprocess": [{
                 "name": "third_party/android_deps",
@@ -1926,7 +1926,7 @@ ci.cipd_3pp_builder(
                     "--ignore-vulnerabilities",
                 ],
             }],
-            "gclient_config": "chromium",
+            "gclient_config": "monyhar",
             "gclient_apply_config": ["android"],
         },
     },
@@ -1938,7 +1938,7 @@ ci.cipd_builder(
         category = "android",
         short_name = "androidx",
     ),
-    notifies = ["chromium-androidx-packager"],
+    notifies = ["monyhar-androidx-packager"],
     executable = "recipe:android/androidx_packager",
     schedule = "0 7,14,22 * * * *",
     triggered_by = [],
@@ -2192,7 +2192,7 @@ def clang_tot_linux_builder(short_name, category = "ToT Linux", **kwargs):
         notifies = [luci.notifier(
             name = "ToT Linux notifier",
             on_new_status = ["FAILURE"],
-            notify_emails = ["thomasanderson@chromium.org"],
+            notify_emails = ["thomasanderson@monyhar.org"],
         )],
         **kwargs
     )
@@ -2223,7 +2223,7 @@ clang_tot_linux_builder(
     name = "ToTLinuxCoverage",
     category = "ToT Code Coverage",
     short_name = "linux",
-    executable = "recipe:chromium_clang_coverage_tot",
+    executable = "recipe:monyhar_clang_coverage_tot",
 )
 
 clang_tot_linux_builder(
@@ -2317,7 +2317,7 @@ ci.clang_builder(
         category = "ToT Code Coverage",
         short_name = "win",
     ),
-    executable = "recipe:chromium_clang_coverage_tot",
+    executable = "recipe:monyhar_clang_coverage_tot",
     os = os.WINDOWS_ANY,
 )
 
@@ -2385,7 +2385,7 @@ ci.clang_mac_builder(
         category = "ToT Code Coverage",
         short_name = "mac",
     ),
-    executable = "recipe:chromium_clang_coverage_tot",
+    executable = "recipe:monyhar_clang_coverage_tot",
 )
 
 ci.dawn_linux_builder(
@@ -2707,7 +2707,7 @@ ci.fuzz_builder(
         category = "afl",
         short_name = "afl",
     ),
-    executable = "recipe:chromium_afl",
+    executable = "recipe:monyhar_afl",
     triggering_policy = scheduler.greedy_batching(
         max_concurrent_invocations = 4,
     ),
@@ -3162,7 +3162,7 @@ ci.fyi_builder(
 )
 
 ci.fyi_builder(
-    name = "linux-ash-chromium-builder-fyi-rel",
+    name = "linux-ash-monyhar-builder-fyi-rel",
     console_view_entry = consoles.console_view_entry(
         category = "default",
         short_name = "lcr",
@@ -3187,11 +3187,11 @@ ci.fyi_builder(
                         "test_ash_chrome",
                     ],
                     "dirs": ["locales", "swiftshader"],
-                    "gcs_bucket": "ash-chromium-on-linux-prebuilts",
-                    "gcs_path": "x86_64/{%position%}/ash-chromium.zip",
+                    "gcs_bucket": "ash-monyhar-on-linux-prebuilts",
+                    "gcs_path": "x86_64/{%position%}/ash-monyhar.zip",
                     "archive_type": "ARCHIVE_TYPE_ZIP",
                     "latest_upload": {
-                        "gcs_path": "x86_64/latest/ash-chromium.txt",
+                        "gcs_path": "x86_64/latest/ash-monyhar.txt",
                         "gcs_file_content": "{%position%}",
                     },
                 },
@@ -3245,7 +3245,7 @@ ci.fyi_builder(
 )
 
 ci.fyi_builder(
-    name = "linux-chromium-tests-staging-builder",
+    name = "linux-monyhar-tests-staging-builder",
     console_view_entry = consoles.console_view_entry(
         category = "recipe|staging|linux",
         short_name = "bld",
@@ -3253,12 +3253,12 @@ ci.fyi_builder(
 )
 
 ci.fyi_builder(
-    name = "linux-chromium-tests-staging-tests",
+    name = "linux-monyhar-tests-staging-tests",
     console_view_entry = consoles.console_view_entry(
         category = "recipe|staging|linux",
         short_name = "tst",
     ),
-    triggered_by = ["linux-chromium-tests-staging-builder"],
+    triggered_by = ["linux-monyhar-tests-staging-builder"],
 )
 
 ci.fyi_builder(
@@ -3722,7 +3722,7 @@ ci.fyi_builder(
     ),
     cores = 32,
     goma_backend = None,
-    reclient_instance = "rbe-chromium-trusted",
+    reclient_instance = "rbe-monyhar-trusted",
     reclient_jobs = 500,
     configure_kitchen = True,
     kitchen_emulate_gce = True,
@@ -3738,7 +3738,7 @@ ci.fyi_builder(
     ),
     cores = 32,
     goma_backend = None,
-    reclient_instance = "rbe-chromium-gvisor-shadow",
+    reclient_instance = "rbe-monyhar-gvisor-shadow",
     reclient_jobs = 500,
     configure_kitchen = True,
     kitchen_emulate_gce = True,
@@ -3753,7 +3753,7 @@ ci.fyi_builder(
         short_name = "re",
     ),
     goma_backend = None,
-    reclient_instance = "rbe-chromium-trusted",
+    reclient_instance = "rbe-monyhar-trusted",
     reclient_jobs = 500,
     configure_kitchen = True,
     kitchen_emulate_gce = True,
@@ -3770,7 +3770,7 @@ ci.fyi_builder(
     reclient_rewrapper_env = {
         "RBE_platform": "container-image=docker://gcr.io/cloud-marketplace/google/rbe-ubuntu16-04@sha256:b4dad0bfc4951d619229ab15343a311f2415a16ef83bcaa55b44f4e2bf1cf635,pool=linux-e2-custom_0",
     },
-    reclient_instance = "rbe-chromium-trusted",
+    reclient_instance = "rbe-monyhar-trusted",
     reclient_jobs = 500,
     configure_kitchen = True,
     kitchen_emulate_gce = True,
@@ -3788,7 +3788,7 @@ ci.fyi_builder(
     reclient_rewrapper_env = {
         "RBE_platform": "container-image=docker://gcr.io/cloud-marketplace/google/rbe-ubuntu16-04@sha256:b4dad0bfc4951d619229ab15343a311f2415a16ef83bcaa55b44f4e2bf1cf635,pool=linux-n2-standard",
     },
-    reclient_instance = "rbe-chromium-trusted",
+    reclient_instance = "rbe-monyhar-trusted",
     reclient_jobs = 500,
     configure_kitchen = True,
     kitchen_emulate_gce = True,
@@ -3803,7 +3803,7 @@ ci.fyi_builder(
         short_name = "tre",
     ),
     goma_backend = None,
-    reclient_instance = "goma-rbe-chromium",
+    reclient_instance = "goma-rbe-monyhar",
     reclient_rewrapper_env = {"RBE_cache_silo": "Linux TSan Builder (reclient)"},
     configure_kitchen = True,
     kitchen_emulate_gce = True,
@@ -3821,7 +3821,7 @@ ci.fyi_builder(
     ),
     goma_backend = None,
     reclient_jobs = 250,
-    reclient_instance = "goma-rbe-chromium",
+    reclient_instance = "goma-rbe-monyhar",
     reclient_rewrapper_env = {"RBE_cache_silo": "Linux TSan Builder (reclient)"},
     configure_kitchen = True,
     kitchen_emulate_gce = True,
@@ -3850,7 +3850,7 @@ ci.fyi_builder(
     ),
     cores = 32,
     goma_backend = None,
-    reclient_instance = "rbe-chromium-trusted",
+    reclient_instance = "rbe-monyhar-trusted",
     reclient_jobs = 250,
     reclient_rewrapper_env = {"RBE_cache_silo": "TSAN Release (core-32) (reclient)"},
     configure_kitchen = True,
@@ -3869,7 +3869,7 @@ ci.fyi_builder(
         max_concurrent_invocations = 3,
     ),
     goma_backend = None,
-    reclient_instance = "rbe-chromium-trusted",
+    reclient_instance = "rbe-monyhar-trusted",
     reclient_rewrapper_env = {"RBE_cache_silo": "TSAN Release (deps-cache) (reclient)"},
     configure_kitchen = True,
     kitchen_emulate_gce = True,
@@ -3886,7 +3886,7 @@ ci.fyi_builder(
         max_concurrent_invocations = 3,
     ),
     goma_backend = None,
-    reclient_instance = "rbe-chromium-trusted",
+    reclient_instance = "rbe-monyhar-trusted",
     reclient_rewrapper_env = {"RBE_cache_silo": "TSAN Release (deps-cache-full-files) (reclient)"},
     configure_kitchen = True,
     kitchen_emulate_gce = True,
@@ -3900,7 +3900,7 @@ ci.fyi_builder(
         short_name = "rre",
     ),
     goma_backend = None,
-    reclient_instance = "rbe-chromium-trusted",
+    reclient_instance = "rbe-monyhar-trusted",
     reclient_jobs = 250,
     reclient_rewrapper_env = {"RBE_cache_silo": "Linux TSan Builder (reclient)"},
     configure_kitchen = True,
@@ -3919,7 +3919,7 @@ ci.fyi_builder(
         max_concurrent_invocations = 1,
     ),
     goma_backend = None,
-    reclient_instance = "goma-rbe-chromium",
+    reclient_instance = "goma-rbe-monyhar",
     reclient_rewrapper_env = {"RBE_cache_silo": "Linux TSan Builder (reclient)"},
     configure_kitchen = True,
     kitchen_emulate_gce = True,
@@ -3936,7 +3936,7 @@ ci.fyi_builder(
         max_concurrent_invocations = 1,
     ),
     goma_backend = None,
-    reclient_instance = "rbe-chromium-gvisor-shadow",
+    reclient_instance = "rbe-monyhar-gvisor-shadow",
     configure_kitchen = True,
     kitchen_emulate_gce = True,
     os = os.LINUX_BIONIC_SWITCH_TO_DEFAULT,
@@ -3953,7 +3953,7 @@ ci.fyi_builder(
     ),
     goma_backend = None,
     reclient_jobs = 250,
-    reclient_instance = "goma-rbe-chromium",
+    reclient_instance = "goma-rbe-monyhar",
     configure_kitchen = True,
     kitchen_emulate_gce = True,
     os = os.LINUX_BIONIC_SWITCH_TO_DEFAULT,
@@ -3970,7 +3970,7 @@ ci.fyi_builder(
     ),
     goma_backend = None,
     reclient_jobs = 250,
-    reclient_instance = "goma-rbe-chromium",
+    reclient_instance = "goma-rbe-monyhar",
     configure_kitchen = True,
     kitchen_emulate_gce = True,
     os = os.LINUX_BIONIC_SWITCH_TO_DEFAULT,
@@ -3986,7 +3986,7 @@ ci.fyi_builder(
     main_console_view = main_console_if_on_branch(),
     goma_backend = None,
     reclient_jobs = 250,
-    reclient_instance = "goma-rbe-chromium",
+    reclient_instance = "goma-rbe-monyhar",
     configure_kitchen = True,
     kitchen_emulate_gce = True,
     os = os.LINUX_BIONIC_SWITCH_TO_DEFAULT,
@@ -4000,7 +4000,7 @@ ci.fyi_windows_builder(
         short_name = "re",
     ),
     goma_backend = None,
-    reclient_instance = "goma-rbe-chromium",
+    reclient_instance = "goma-rbe-monyhar",
     configure_kitchen = True,
     kitchen_emulate_gce = True,
     os = os.WINDOWS_DEFAULT,
@@ -4014,7 +4014,7 @@ ci.fyi_windows_builder(
         short_name = "re x",
     ),
     goma_backend = None,
-    reclient_instance = "rbe-chromium-trusted",
+    reclient_instance = "rbe-monyhar-trusted",
     configure_kitchen = True,
     kitchen_emulate_gce = True,
     os = os.WINDOWS_DEFAULT,
@@ -4230,7 +4230,7 @@ ci.fyi_ios_builder(
         consoles.console_view_entry(
             branch_selector = branches.MAIN,
             console_view = "sheriff.ios",
-            category = "chromium.fyi|15",
+            category = "monyhar.fyi|15",
             short_name = "ios15",
         ),
     ],
@@ -4247,7 +4247,7 @@ ci.fyi_ios_builder(
         consoles.console_view_entry(
             branch_selector = branches.MAIN,
             console_view = "sheriff.ios",
-            category = "chromium.fyi|15",
+            category = "monyhar.fyi|15",
             short_name = "dev",
         ),
     ],
@@ -4265,7 +4265,7 @@ ci.fyi_ios_builder(
         consoles.console_view_entry(
             branch_selector = branches.MAIN,
             console_view = "sheriff.ios",
-            category = "chromium.fyi|15",
+            category = "monyhar.fyi|15",
             short_name = "sim",
         ),
     ],
@@ -5199,7 +5199,7 @@ ci.linux_builder(
 ci.linux_builder(
     name = "Leak Detection Linux",
     console_view_entry = consoles.console_view_entry(
-        console_view = "chromium.fyi",
+        console_view = "monyhar.fyi",
         category = "linux",
         short_name = "lk",
     ),
@@ -5218,7 +5218,7 @@ ci.linux_builder(
     main_console_view = "main",
     experiments = {
         # TODO(crbug.com/1143122): remove this.
-        "chromium.chromium_tests.use_rbe_cas": 20,
+        "monyhar.monyhar_tests.use_rbe_cas": 20,
     },
 )
 
@@ -5390,7 +5390,7 @@ ci.linux_builder(
     name = "Linux Ozone Tester (Headless)",
     branch_selector = branches.STANDARD_MILESTONE,
     console_view_entry = consoles.console_view_entry(
-        console_view = "chromium.fyi",
+        console_view = "monyhar.fyi",
         category = "linux",
         short_name = "loh",
     ),
@@ -5403,7 +5403,7 @@ ci.linux_builder(
     name = "Linux Ozone Tester (Wayland)",
     branch_selector = branches.STANDARD_MILESTONE,
     console_view_entry = consoles.console_view_entry(
-        console_view = "chromium.fyi",
+        console_view = "monyhar.fyi",
         category = "linux",
         short_name = "low",
     ),
@@ -5416,7 +5416,7 @@ ci.linux_builder(
     name = "Linux Ozone Tester (X11)",
     branch_selector = branches.STANDARD_MILESTONE,
     console_view_entry = consoles.console_view_entry(
-        console_view = "chromium.fyi",
+        console_view = "monyhar.fyi",
         category = "linux",
         short_name = "lox",
     ),
@@ -5503,7 +5503,7 @@ ci.linux_builder(
     console_view_entry = consoles.console_view_entry(
         console_view = "metadata.exporter",
     ),
-    executable = "recipe:chromium_export_metadata",
+    executable = "recipe:monyhar_export_metadata",
     service_account = "component-mapping-updater@chops-service-accounts.iam.gserviceaccount.com",
     notifies = ["metadata-mapping"],
     tree_closing = False,
@@ -5550,7 +5550,7 @@ ci.mac_builder(
 # builder from //generators/scheduler-noop-jobs.star
 ci.thin_tester(
     name = "mac-arm64-rel-tests",
-    builder_group = "chromium.fyi",
+    builder_group = "monyhar.fyi",
     console_view_entry = consoles.console_view_entry(
         category = "mac",
         short_name = "a64",
@@ -5562,7 +5562,7 @@ ci.thin_tester(
 ci.thin_tester(
     name = "Mac10.11 Tests",
     branch_selector = branches.STANDARD_MILESTONE,
-    builder_group = "chromium.mac",
+    builder_group = "monyhar.mac",
     console_view_entry = consoles.console_view_entry(
         category = "release",
         short_name = "11",
@@ -5575,7 +5575,7 @@ ci.thin_tester(
 ci.thin_tester(
     name = "Mac10.12 Tests",
     branch_selector = branches.STANDARD_MILESTONE,
-    builder_group = "chromium.mac",
+    builder_group = "monyhar.mac",
     console_view_entry = consoles.console_view_entry(
         category = "release",
         short_name = "12",
@@ -5588,7 +5588,7 @@ ci.thin_tester(
 ci.thin_tester(
     name = "Mac10.13 Tests",
     branch_selector = branches.STANDARD_MILESTONE,
-    builder_group = "chromium.mac",
+    builder_group = "monyhar.mac",
     console_view_entry = consoles.console_view_entry(
         category = "release",
         short_name = "13",
@@ -5601,7 +5601,7 @@ ci.thin_tester(
 ci.thin_tester(
     name = "Mac10.14 Tests",
     branch_selector = branches.STANDARD_MILESTONE,
-    builder_group = "chromium.mac",
+    builder_group = "monyhar.mac",
     console_view_entry = consoles.console_view_entry(
         category = "release",
         short_name = "14",
@@ -5614,7 +5614,7 @@ ci.thin_tester(
 ci.thin_tester(
     name = "Mac10.15 Tests",
     branch_selector = branches.STANDARD_MILESTONE,
-    builder_group = "chromium.mac",
+    builder_group = "monyhar.mac",
     console_view_entry = consoles.console_view_entry(
         category = "release",
         short_name = "15",
@@ -5629,7 +5629,7 @@ ci.thin_tester(
     # TODO(crbug.com/1206401): Reenable on the branches when we have
     # sufficient capacity.
     # branch_selector = branches.STANDARD_MILESTONE,
-    builder_group = "chromium.mac",
+    builder_group = "monyhar.mac",
     console_view_entry = consoles.console_view_entry(
         category = "mac",
         short_name = "11",
@@ -5641,7 +5641,7 @@ ci.thin_tester(
 ci.thin_tester(
     name = "Mac10.15 Tests (dbg)",
     branch_selector = branches.STANDARD_MILESTONE,
-    builder_group = "chromium.mac",
+    builder_group = "monyhar.mac",
     console_view_entry = consoles.console_view_entry(
         category = "debug",
         short_name = "15",
@@ -5661,7 +5661,7 @@ ci.mac_ios_builder(
         consoles.console_view_entry(
             branch_selector = branches.MAIN,
             console_view = "sheriff.ios",
-            category = "chromium.mac",
+            category = "monyhar.mac",
             short_name = "dev",
         ),
     ],
@@ -5681,7 +5681,7 @@ ci.mac_ios_builder(
         consoles.console_view_entry(
             branch_selector = branches.MAIN,
             console_view = "sheriff.ios",
-            category = "chromium.mac",
+            category = "monyhar.mac",
             short_name = "sim",
         ),
     ],
@@ -5700,7 +5700,7 @@ ci.mac_ios_builder(
         consoles.console_view_entry(
             branch_selector = branches.MAIN,
             console_view = "sheriff.ios",
-            category = "chromium.mac",
+            category = "monyhar.mac",
             short_name = "ful",
         ),
     ],
@@ -5718,7 +5718,7 @@ ci.mac_ios_builder(
         consoles.console_view_entry(
             branch_selector = branches.MAIN,
             console_view = "sheriff.ios",
-            category = "chromium.mac",
+            category = "monyhar.mac",
             short_name = "non",
         ),
     ],
@@ -6010,7 +6010,7 @@ ci.mojo_builder(
 )
 
 ci.swangle_linux_builder(
-    name = "linux-swangle-chromium-x64",
+    name = "linux-swangle-monyhar-x64",
     console_view_entry = consoles.console_view_entry(
         category = "Chromium|Linux",
         short_name = "x64",
@@ -6044,7 +6044,7 @@ ci.swangle_linux_builder(
 )
 
 ci.swangle_mac_builder(
-    name = "mac-swangle-chromium-x64",
+    name = "mac-swangle-monyhar-x64",
     console_view_entry = consoles.console_view_entry(
         category = "Chromium|Mac",
         short_name = "x64",
@@ -6053,7 +6053,7 @@ ci.swangle_mac_builder(
 )
 
 ci.swangle_windows_builder(
-    name = "win-swangle-chromium-x86",
+    name = "win-swangle-monyhar-x86",
     console_view_entry = consoles.console_view_entry(
         category = "Chromium|Windows",
         short_name = "x86",
@@ -6234,7 +6234,7 @@ ci.win_builder(
     os = os.WINDOWS_ANY,
     experiments = {
         # TODO(crbug.com/1143122): remove this.
-        "chromium.chromium_tests.use_rbe_cas": 20,
+        "monyhar.monyhar_tests.use_rbe_cas": 20,
     },
 )
 
@@ -6265,7 +6265,7 @@ ci.win_builder(
 ci.cipd_builder(
     name = "rts-model-packager",
     builderless = False,
-    executable = "recipe:chromium_rts/create_model",
+    executable = "recipe:monyhar_rts/create_model",
     schedule = "0 7 * * *",  # at 12AM or 1AM PT (depending on DST), once a day.
     triggered_by = [],
     execution_timeout = 8 * time.hour,

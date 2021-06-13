@@ -1,7 +1,7 @@
-enum_max_value.cpp:15:3: warning: [chromium-style] kMaxValue enumerator does not match max value 0 of other enumerators
+enum_max_value.cpp:15:3: warning: [monyhar-style] kMaxValue enumerator does not match max value 0 of other enumerators
   kMaxValue = kNegative,
   ^
-enum_max_value.cpp:20:12: warning: [chromium-style] kMaxValue enumerator should not have a unique value: it should share the value of the highest enumerator
+enum_max_value.cpp:20:12: warning: [monyhar-style] kMaxValue enumerator should not have a unique value: it should share the value of the highest enumerator
 enum class MaxValueIsUnique {
            ^
 2 warnings generated.

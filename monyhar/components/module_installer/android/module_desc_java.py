@@ -20,9 +20,9 @@ _TEMPLATE = """\
 //     components/module_installer/android/module_desc_java.py
 // Please do not change its content.
 
-package org.chromium.components.module_installer.builder;
+package org.monyhar.components.module_installer.builder;
 
-import org.chromium.base.annotations.UsedByReflection;
+import org.monyhar.base.annotations.UsedByReflection;
 
 @UsedByReflection("Module.java")
 public class ModuleDescriptor_{MODULE} implements ModuleDescriptor {{
@@ -87,7 +87,7 @@ def main():
         with zipfile.ZipFile(f.name, 'w') as srcjar_file:
             build_utils.AddToZipHermetic(
                 srcjar_file,
-                'org/chromium/components/module_installer/builder/'
+                'org/monyhar/components/module_installer/builder/'
                 'ModuleDescriptor_%s.java' % options.module,
                 data=_TEMPLATE.format(**format_dict))
 

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.os.SystemClock;
 import android.text.format.DateUtils;
@@ -12,19 +12,19 @@ import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.SysUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.blink.mojom.DocumentMetadata;
-import org.chromium.blink.mojom.WebPage;
-import org.chromium.chrome.browser.historyreport.AppIndexingReporter;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorTabObserver;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.content_public.browser.RenderFrameHost;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.url.GURL;
+import org.monyhar.base.Callback;
+import org.monyhar.base.SysUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.blink.mojom.DocumentMetadata;
+import org.monyhar.blink.mojom.WebPage;
+import org.monyhar.chrome.browser.historyreport.AppIndexingReporter;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorTabObserver;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.content_public.browser.RenderFrameHost;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.url.GURL;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

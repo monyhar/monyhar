@@ -16,7 +16,7 @@
 // TODO(katrielc) Also test the authenticated path, which is what
 // WebRTC uses.  This is nontrivial because you need to bypass the MAC
 // check. Two options: add a UNSAFE_FUZZER_MODE flag to libsrtp (or
-// the chromium fork of it), or compute the HMAC of whatever gibberish
+// the monyhar fork of it), or compute the HMAC of whatever gibberish
 // the fuzzer produces and write it into the packet manually.
 
 namespace LibSrtpFuzzer {

@@ -7,7 +7,7 @@ load("//console-header.star", "HEADER")
 luci.console_view(
     name = "goma.latest",
     header = HEADER,
-    repo = "https://chromium.googlesource.com/chromium/src",
+    repo = "https://monyhar.googlesource.com/monyhar/src",
     entries = [
         luci.console_view_entry(
             builder = "goma/linux-archive-rel-goma-rbe-latest",

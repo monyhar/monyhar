@@ -20,7 +20,7 @@ class Bus;
 namespace chromeos {
 
 // InstallAttributesClient is used to communicate with the
-// org.chromium.InstallAttributes interface within org.chromium.UserDataAuth
+// org.monyhar.InstallAttributes interface within org.monyhar.UserDataAuth
 // service exposed by cryptohomed. All method should be called from the origin
 // thread (UI thread) which initializes the DBusThreadManager instance.
 class COMPONENT_EXPORT(USERDATAAUTH_CLIENT) InstallAttributesClient {

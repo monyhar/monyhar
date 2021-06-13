@@ -385,7 +385,7 @@ ScopedJavaLocalRef<jobjectArray> WebContentsAndroid::GetInnerWebContents(
   std::vector<WebContents*> inner_web_contents =
       web_contents_->GetInnerWebContents();
   jclass clazz =
-      org_chromium_content_browser_webcontents_WebContentsImpl_clazz(env);
+      org_monyhar_content_browser_webcontents_WebContentsImpl_clazz(env);
   jobjectArray array =
       env->NewObjectArray(inner_web_contents.size(), clazz, nullptr);
   for (size_t i = 0; i < inner_web_contents.size(); i++) {

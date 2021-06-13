@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base;
+package org.monyhar.base;
 
 import static org.junit.Assert.assertEquals;
 
@@ -10,7 +10,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
 
 /**
  * junit tests for {@link PiiElider}.
@@ -36,7 +36,7 @@ public class PiiEliderTest {
 
     @Test
     public void testElideUrl2() {
-        String original = "exception at org.chromium.base.PiiEliderTest";
+        String original = "exception at org.monyhar.base.PiiEliderTest";
         assertEquals(original, PiiElider.elideUrl(original));
     }
 
@@ -76,21 +76,21 @@ public class PiiEliderTest {
 
     @Test
     public void testElideUrl8() {
-        String original = "exception at org.chromium.chrome.browser.compositor.scene_layer."
+        String original = "exception at org.monyhar.chrome.browser.compositor.scene_layer."
                 + "TabListSceneLayer.nativeUpdateLayer(Native Method)";
         assertEquals(original, PiiElider.elideUrl(original));
     }
 
     @Test
     public void testElideUrl9() {
-        String original = "I/dalvikvm( 5083): at org.chromium.chrome.browser.compositor."
+        String original = "I/dalvikvm( 5083): at org.monyhar.chrome.browser.compositor."
                 + "scene_layer.TabListSceneLayer.nativeUpdateLayer(Native Method)";
         assertEquals(original, PiiElider.elideUrl(original));
     }
 
     @Test
     public void testDontElideFileSuffixes() {
-        String original = "chromium_android_linker.so";
+        String original = "monyhar_android_linker.so";
         assertEquals(original, PiiElider.elideUrl(original));
     }
 
@@ -117,18 +117,18 @@ public class PiiEliderTest {
 
     @Test
     public void testElideConsole() {
-        String original = "I/chromium(123): [INFO:CONSOLE(2)] hello!";
-        String expected = "I/chromium(123): [ELIDED:CONSOLE(0)] ELIDED CONSOLE MESSAGE";
+        String original = "I/monyhar(123): [INFO:CONSOLE(2)] hello!";
+        String expected = "I/monyhar(123): [ELIDED:CONSOLE(0)] ELIDED CONSOLE MESSAGE";
         assertEquals(expected, PiiElider.elideConsole(original));
     }
 
     @Test
     public void testElideUrlInStacktrace() {
         String original = "java.lang.RuntimeException: Outer Exception crbug.com/12345\n"
-                + "  at org.chromium.base.PiiElider.sanitizeStacktrace (PiiElider.java:120)\n"
+                + "  at org.monyhar.base.PiiElider.sanitizeStacktrace (PiiElider.java:120)\n"
                 + "Caused by: java.lang.NullPointerException: Inner Exception shorturl.com/bxyj5";
         String expected = "java.lang.RuntimeException: Outer Exception HTTP://WEBADDRESS.ELIDED\n"
-                + "  at org.chromium.base.PiiElider.sanitizeStacktrace (PiiElider.java:120)\n"
+                + "  at org.monyhar.base.PiiElider.sanitizeStacktrace (PiiElider.java:120)\n"
                 + "Caused by: java.lang.NullPointerException: Inner Exception "
                 + "HTTP://WEBADDRESS.ELIDED";
         assertEquals(expected, PiiElider.sanitizeStacktrace(original));

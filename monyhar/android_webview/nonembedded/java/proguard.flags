@@ -2,13 +2,13 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
--keepclassmembers class org.chromium.android_webview.AwPdfExporter {
+-keepclassmembers class org.monyhar.android_webview.AwPdfExporter {
     android.view.ViewGroup mContainerView;
 }
 
 # Keep the factory and its public members; it's the main entry point used by the
 # framework.
--keep class com.android.webview.chromium.WebViewChromiumFactoryProvider {
+-keep class com.android.webview.monyhar.WebViewChromiumFactoryProvider {
     public *;
 }
 
@@ -16,32 +16,32 @@
     *;
 }
 
--keep class com.android.webview.chromium.ContentSettingsAdapter {
+-keep class com.android.webview.monyhar.ContentSettingsAdapter {
     public *;
 }
 
--keep class com.android.webview.chromium.WebViewChromiumFactoryProviderFor* {
+-keep class com.android.webview.monyhar.WebViewChromiumFactoryProviderFor* {
     public *;
 }
 
--keep class com.android.webview.chromium.WebViewDatabaseAdapter {
+-keep class com.android.webview.monyhar.WebViewDatabaseAdapter {
   public *;
 }
 
 # This is the main entry point for APIs. It is kept to make developing with
 # unreleased Android easier.
--keep class com.android.webview.chromium.WebViewChromium {
+-keep class com.android.webview.monyhar.WebViewChromium {
   public *;
 }
 
 # Functor classes with native methods implemented in Android.
--keep class com.android.webview.chromium.DrawFunctor
--keep class com.android.webview.chromium.DrawGLFunctor
--keep class com.android.webview.chromium.GraphicsUtils
+-keep class com.android.webview.monyhar.DrawFunctor
+-keep class com.android.webview.monyhar.DrawGLFunctor
+-keep class com.android.webview.monyhar.GraphicsUtils
 
 # The lock file object must be kept explicitly to avoid it being optimized
 # away and the lock released by the object's finalizer.
--keep class org.chromium.android_webview.AwDataDirLock {
+-keep class org.monyhar.android_webview.AwDataDirLock {
     java.nio.channels.FileLock sExclusiveFileLock;
     java.io.RandomAccessFile sLockFile;
 }

@@ -1,8 +1,8 @@
 # Speed Operations: Speed Tooling
 
-TL: dberris@chromium.org<br>
-Team: simonhatch@chromium.org, dberris@chromium.org<br>
-TPM: ushesh@chromium.org<br>
+TL: dberris@monyhar.org<br>
+Team: simonhatch@monyhar.org, dberris@monyhar.org<br>
+TPM: ushesh@monyhar.org<br>
 
 ## Mission
 The mission of the Chrome Speed Tooling team is to develop the tools and
@@ -24,6 +24,6 @@ automate the Chrome Speed Releasing workflow:
     and user interfaces that make it easy to dig deeply into performance
     regressions.
 
-Here is a diagram of how our tooling fits into the chromium performance
+Here is a diagram of how our tooling fits into the monyhar performance
 continuous build:
 ![Speed Continuous Build](images/speed_operations.png)

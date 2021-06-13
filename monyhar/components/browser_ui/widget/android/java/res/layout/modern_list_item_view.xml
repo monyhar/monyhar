@@ -8,7 +8,7 @@
     android:id="@+id/content"
     style="@style/ListItemContainer" >
 
-    <org.chromium.ui.widget.ChromeImageView
+    <org.monyhar.ui.widget.ChromeImageView
         android:id="@+id/start_icon"
         style="@style/ListItemStartIcon" />
 
@@ -36,7 +36,7 @@
             android:textAppearance="@style/TextAppearance.TextMedium.Secondary" />
     </LinearLayout>
 
-    <org.chromium.ui.widget.ChromeImageButton
+    <org.monyhar.ui.widget.ChromeImageButton
         android:id="@+id/end_button"
         android:visibility="gone"
         style="@style/ListItemEndIcon" />

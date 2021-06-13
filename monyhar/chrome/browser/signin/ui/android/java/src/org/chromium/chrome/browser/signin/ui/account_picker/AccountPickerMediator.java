@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.signin.ui.account_picker;
+package org.monyhar.chrome.browser.signin.ui.account_picker;
 
 import android.accounts.Account;
 import android.content.Context;
@@ -10,18 +10,18 @@ import android.text.TextUtils;
 
 import androidx.annotation.MainThread;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.signin.services.DisplayableProfileData;
-import org.chromium.chrome.browser.signin.services.ProfileDataCache;
-import org.chromium.chrome.browser.signin.ui.account_picker.AccountPickerProperties.AddAccountRowProperties;
-import org.chromium.chrome.browser.signin.ui.account_picker.AccountPickerProperties.ExistingAccountRowProperties;
-import org.chromium.chrome.browser.signin.ui.account_picker.AccountPickerProperties.ItemType;
-import org.chromium.components.signin.AccountManagerFacade;
-import org.chromium.components.signin.AccountManagerFacadeProvider;
-import org.chromium.components.signin.AccountUtils;
-import org.chromium.components.signin.AccountsChangeObserver;
-import org.chromium.ui.modelutil.MVCListAdapter;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.signin.services.DisplayableProfileData;
+import org.monyhar.chrome.browser.signin.services.ProfileDataCache;
+import org.monyhar.chrome.browser.signin.ui.account_picker.AccountPickerProperties.AddAccountRowProperties;
+import org.monyhar.chrome.browser.signin.ui.account_picker.AccountPickerProperties.ExistingAccountRowProperties;
+import org.monyhar.chrome.browser.signin.ui.account_picker.AccountPickerProperties.ItemType;
+import org.monyhar.components.signin.AccountManagerFacade;
+import org.monyhar.components.signin.AccountManagerFacadeProvider;
+import org.monyhar.components.signin.AccountUtils;
+import org.monyhar.components.signin.AccountsChangeObserver;
+import org.monyhar.ui.modelutil.MVCListAdapter;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.util.List;
 

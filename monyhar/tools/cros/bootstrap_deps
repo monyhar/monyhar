@@ -9,17 +9,17 @@
 
 deps = {
     "src/tools/cros/":
-        "https://src.chromium.org/chrome/trunk/src/tools/cros/",
+        "https://src.monyhar.org/chrome/trunk/src/tools/cros/",
     "src/components/variations/service":
-        "https://src.chromium.org/chrome/trunk/src/variations/service/",
+        "https://src.monyhar.org/chrome/trunk/src/variations/service/",
 }
 
 # Both contest/test/gpu and tools/perf will pull in telemetry.
 deps_includes = {
     "src/content/test/gpu/bootstrap_deps":
-        "https://src.chromium.org/chrome/trunk/src/content/test/gpu/bootstrap_deps",
+        "https://src.monyhar.org/chrome/trunk/src/content/test/gpu/bootstrap_deps",
     "src/tools/perf/bootstrap_deps":
-        "https://src.chromium.org/chrome/trunk/src/tools/perf/bootstrap_deps",
+        "https://src.monyhar.org/chrome/trunk/src/tools/perf/bootstrap_deps",
     "src/components/policy/test_support/bootstrap_deps":
-        "https://src.chromium.org/chrome/trunk/src/components/policy/test_support/bootstrap_deps",
+        "https://src.monyhar.org/chrome/trunk/src/components/policy/test_support/bootstrap_deps",
 }

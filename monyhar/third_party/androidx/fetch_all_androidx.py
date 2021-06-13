@@ -187,7 +187,7 @@ def _write_cipd_yaml(libs_dir, version, cipd_yaml_path):
         '# Use of this source code is governed by a BSD-style license that can be',
         '# found in the LICENSE file.',
         '# version: ' + version,
-        'package: chromium/third_party/androidx',
+        'package: monyhar/third_party/androidx',
         'description: androidx',
         'data:',
     ]

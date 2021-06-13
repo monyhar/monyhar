@@ -70,7 +70,7 @@ TEST_F(WebViewDeviceAccountsProviderImplTest, GetAllAccounts) {
       OCMStrictProtocolMock(@protocol(CWVSyncControllerDataSource));
   CWVSyncController.dataSource = data_source;
 
-  CWVIdentity* identity = [[CWVIdentity alloc] initWithEmail:@"foo@chromium.org"
+  CWVIdentity* identity = [[CWVIdentity alloc] initWithEmail:@"foo@monyhar.org"
                                                     fullName:nil
                                                       gaiaID:@"gaia-id"];
   OCMExpect([data_source allKnownIdentities]).andReturn(@[ identity ]);
@@ -81,7 +81,7 @@ TEST_F(WebViewDeviceAccountsProviderImplTest, GetAllAccounts) {
 
   ASSERT_EQ(1UL, accounts.size());
   DeviceAccountsProvider::AccountInfo account_info = accounts[0];
-  EXPECT_EQ("foo@chromium.org", account_info.email);
+  EXPECT_EQ("foo@monyhar.org", account_info.email);
   EXPECT_EQ("gaia-id", account_info.gaia);
 
   [data_source verify];

@@ -1,7 +1,7 @@
 # Chrome Root Store
 
 This directory contains the in development definition of the
-[Chrome Root Store](https://www.chromium.org/Home/chromium-security/root-ca-policy).
+[Chrome Root Store](https://www.monyhar.org/Home/monyhar-security/root-ca-policy).
 It is currently not used for trust decisions in Chrome.
 
 The root store is defined by `root_store.textproto` file, which is a

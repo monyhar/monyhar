@@ -15,7 +15,7 @@ namespace video_tutorials {
 // Feature in
 // tools/metrics/histograms/histograms_xml/video_tutorials/histograms.xml.
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.video_tutorials
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.video_tutorials
 enum class FeatureType {
   kTest = -1,
   kInvalid = 0,

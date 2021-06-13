@@ -2,4 +2,4 @@ monorail {
   component: "UI>Browser>Search>ContextualSearch"
 }
 
-team_email: "contextual-search-dev@chromium.org"
+team_email: "contextual-search-dev@monyhar.org"

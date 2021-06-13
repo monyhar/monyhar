@@ -60,7 +60,7 @@
             android:visibility="visible"
             tools:ignore="ContentDescription"/>
 
-        <org.chromium.components.browser_ui.widget.text.TemplatePreservingTextView
+        <org.monyhar.components.browser_ui.widget.text.TemplatePreservingTextView
             android:id="@+id/snackbar_message"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
             android:textAlignment="viewStart"
             android:textAppearance="@style/TextAppearance.TextMedium.Primary.Light" />
 
-        <org.chromium.ui.widget.ButtonCompat
+        <org.monyhar.ui.widget.ButtonCompat
             android:id="@+id/snackbar_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -2,26 +2,26 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.video_tutorials.player;
+package org.monyhar.chrome.browser.video_tutorials.player;
 
 import android.content.Context;
 import android.text.TextUtils;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.video_tutorials.PlaybackStateObserver;
-import org.chromium.chrome.browser.video_tutorials.PlaybackStateObserver.WatchStateInfo.State;
-import org.chromium.chrome.browser.video_tutorials.Tutorial;
-import org.chromium.chrome.browser.video_tutorials.VideoTutorialService;
-import org.chromium.chrome.browser.video_tutorials.VideoTutorialUtils;
-import org.chromium.chrome.browser.video_tutorials.languages.LanguagePickerCoordinator;
-import org.chromium.chrome.browser.video_tutorials.metrics.VideoTutorialMetrics;
-import org.chromium.chrome.browser.video_tutorials.metrics.VideoTutorialMetrics.LanguagePickerAction;
-import org.chromium.chrome.browser.video_tutorials.metrics.VideoTutorialMetrics.UserAction;
-import org.chromium.chrome.browser.video_tutorials.metrics.VideoTutorialMetrics.WatchState;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.video_tutorials.PlaybackStateObserver;
+import org.monyhar.chrome.browser.video_tutorials.PlaybackStateObserver.WatchStateInfo.State;
+import org.monyhar.chrome.browser.video_tutorials.Tutorial;
+import org.monyhar.chrome.browser.video_tutorials.VideoTutorialService;
+import org.monyhar.chrome.browser.video_tutorials.VideoTutorialUtils;
+import org.monyhar.chrome.browser.video_tutorials.languages.LanguagePickerCoordinator;
+import org.monyhar.chrome.browser.video_tutorials.metrics.VideoTutorialMetrics;
+import org.monyhar.chrome.browser.video_tutorials.metrics.VideoTutorialMetrics.LanguagePickerAction;
+import org.monyhar.chrome.browser.video_tutorials.metrics.VideoTutorialMetrics.UserAction;
+import org.monyhar.chrome.browser.video_tutorials.metrics.VideoTutorialMetrics.WatchState;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * The mediator for the video player UI, responsible for changing the state of UI based on user

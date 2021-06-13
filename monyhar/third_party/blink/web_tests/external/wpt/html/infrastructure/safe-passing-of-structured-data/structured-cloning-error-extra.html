@@ -25,7 +25,7 @@ test(t => {
   });
 }, "Throwing name getter fails serialization");
 
-// https://bugs.chromium.org/p/chromium/issues/detail?id=1030086
+// https://bugs.monyhar.org/p/monyhar/issues/detail?id=1030086
 // https://github.com/whatwg/html/pull/5150
 async_test(t => {
   window.onmessage = t.step_func_done(e => {

@@ -29,7 +29,7 @@ the vulnerability report (e.g. username and password pairs).
 Vendors of products based on Chromium, distributors of operating systems that
 bundle Chromium, and individuals and organizations that significantly contribute
 to fixing security bugs can be added to a list for earlier access to these bugs.
-You can email us at security@chromium.org to request to join the list if you
+You can email us at security@monyhar.org to request to join the list if you
 meet the above criteria. In particular, vendors of anti-malware, IDS/IPS,
 vulnerability risk assessment, and similar products or services do not meet this
 bar.
@@ -136,7 +136,7 @@ No. Denial of Service (DoS) issues are treated as **abuse** or **stability**
 issues rather than security vulnerabilities.
 
 *    If you find a reproducible crash, we encourage you to [report
-     it](https://bugs.chromium.org/p/chromium/issues/entry?template=Crash%20Report).
+     it](https://bugs.monyhar.org/p/monyhar/issues/entry?template=Crash%20Report).
 *    If you find a site that is abusing the user experience (e.g. preventing you
      from leaving a site), we encourage you to [report
      it](https://crbug.com/new).
@@ -148,9 +148,9 @@ are considered security vulnerabilities in more detail.
 <a name="TOC-Are-XSS-filter-bypasses-considered-security-bugs-"></a>
 ## Are XSS filter bypasses considered security bugs?
 
-No. Chromium once contained a reflected XSS filter called the [XSSAuditor](https://www.chromium.org/developers/design-documents/xss-auditor)
+No. Chromium once contained a reflected XSS filter called the [XSSAuditor](https://www.monyhar.org/developers/design-documents/xss-auditor)
 that was a best-effort second line of defense against reflected XSS flaws found
-in web sites. The XSS Auditor was [removed in Chrome 78](https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/TuYw-EZhO9g/blGViehIAwAJ).
+in web sites. The XSS Auditor was [removed in Chrome 78](https://groups.google.com/a/monyhar.org/forum/#!msg/blink-dev/TuYw-EZhO9g/blGViehIAwAJ).
 
 <a name="TOC-What-if-a-Chrome-component-breaks-an-OS-security-boundary-"></a>
 ## What if a Chrome component breaks an OS security boundary?
@@ -327,7 +327,7 @@ Narayanan's site](https://33bits.wordpress.com/about/) and [Peter Eckersley's
 discussion of the information theory behind
 Panopticlick](https://www.eff.org/deeplinks/2010/01/primer-information-theory-and-privacy).
 There is also [a pretty good analysis of in-browser fingerprinting
-vectors](https://dev.chromium.org/Home/chromium-security/client-identification-mechanisms).
+vectors](https://dev.monyhar.org/Home/monyhar-security/client-identification-mechanisms).
 
 <a name="TOC-Where-are-the-security-indicators-located-in-the-browser-window-"></a>
 ## Where are the security indicators located in the browser window?
@@ -473,7 +473,7 @@ proxies, do not need to be publicly logged in a CT log.
 ## Can I use EMET to help protect Chrome against attack on Microsoft Windows?
 
 There are [known compatibility
-problems](https://sites.google.com/a/chromium.org/dev/Home/chromium-security/chromium-and-emet)
+problems](https://sites.google.com/a/monyhar.org/dev/Home/monyhar-security/monyhar-and-emet)
 between Microsoft's EMET anti-exploit toolkit and some versions of Chrome. These
 can prevent Chrome from running in some configurations. Moreover, the Chrome
 security team does not recommend the use of EMET with Chrome because its most
@@ -486,7 +486,7 @@ degradation the toolkit can cause.
 ## Why are some web platform features only available in HTTPS page-loads?
 
 The full answer is here: we [Prefer Secure Origins For Powerful New
-Features](https://www.chromium.org/Home/chromium-security/prefer-secure-origins-for-powerful-new-features).
+Features](https://www.monyhar.org/Home/monyhar-security/prefer-secure-origins-for-powerful-new-features).
 In short, many web platform features give web origins access to sensitive new
 sources of information, or significant power over a user's experience with their
 computer/phone/watch/etc., or over their experience with it. We would therefore
@@ -520,7 +520,7 @@ That is, secure origins are those that load resources either from the local
 machine (necessarily trusted) or over the network from a
 cryptographically-authenticated server. See [Prefer Secure Origins For Powerful
 New
-Features](https://sites.google.com/a/chromium.org/dev/Home/chromium-security/prefer-secure-origins-for-powerful-new-features)
+Features](https://sites.google.com/a/monyhar.org/dev/Home/monyhar-security/prefer-secure-origins-for-powerful-new-features)
 for more details.
 
 <a name="TOC-What-s-the-story-with-certificate-revocation-"></a>
@@ -528,7 +528,7 @@ for more details.
 
 Chrome's primary mechanism for checking the revocation status of HTTPS
 certificates is
-[CRLsets](https://dev.chromium.org/Home/chromium-security/crlsets).
+[CRLsets](https://dev.monyhar.org/Home/monyhar-security/crlsets).
 
 Chrome also supports Online Certificate Status Protocol (OCSP). However, the
 effectiveness of OCSP is is essentially 0 unless the client fails hard (refuses
@@ -573,7 +573,7 @@ from the user and gave control to the web site developer, which was also a
 violation of the [priority of
 constituencies](http://www.schemehostport.com/2011/10/priority-of-constituencies.html).
 For a longer discussion on this, see the [mailing list
-announcement](https://groups.google.com/a/chromium.org/forum/#!topic/chromium-dev/zhhj7hCip5c).
+announcement](https://groups.google.com/a/monyhar.org/forum/#!topic/monyhar-dev/zhhj7hCip5c).
 
 <a name="TOC-Signout-of-Chrome"></a>
 ## Signing out of Chrome does not delete previously-synced data?
@@ -675,12 +675,12 @@ vulnerability in the relevant feature, not Safe Browsing itself.
 ## What is the security story for Service Workers?
 
 See our dedicated [Service Worker Security
-FAQ](https://chromium.googlesource.com/chromium/src/+/main/docs/security/service-worker-security-faq.md).
+FAQ](https://monyhar.googlesource.com/monyhar/src/+/main/docs/security/service-worker-security-faq.md).
 
 <a name="TOC-What-is-the-security-story-for-Extensions-"></a>
 ## What is the security story for Extensions?
 
-See our dedicated [Extensions Security FAQ](https://chromium.googlesource.com/chromium/src/+/main/extensions/docs/security_faq.md).
+See our dedicated [Extensions Security FAQ](https://monyhar.googlesource.com/monyhar/src/+/main/extensions/docs/security_faq.md).
 
 <a name="TOC-What-about-URL-spoofs-using-Internationalized-Domain-Names-IDN-"></a>
 ## What about URL spoofs using Internationalized Domain Names (IDN)?
@@ -691,13 +691,13 @@ IDN display issues we are still working on.
 
 *    Please see [this document](https://docs.google.com/document/d/1_xJz3J9kkAPwk3pma6K3X12SyPTyyaJDSCxTfF8Y5sU)
 for a list of known issues and how we handle them.
-*    [This document](https://chromium.googlesource.com/chromium/src/+/main/docs/idn.md)
+*    [This document](https://monyhar.googlesource.com/monyhar/src/+/main/docs/idn.md)
 describes Chrome's IDN policy in detail.
 
 <a name="TOC-Chrome-silently-syncs-extensions-across-devices.-Is-this-a-security-vulnerability-"></a>
 ## Chrome silently syncs extensions across devices. Is this a security vulnerability?
 
-This topic has been moved to the [Extensions Security FAQ](https://chromium.googlesource.com/chromium/src/+/main/extensions/docs/security_faq.md).
+This topic has been moved to the [Extensions Security FAQ](https://monyhar.googlesource.com/monyhar/src/+/main/extensions/docs/security_faq.md).
 
 <a name="TOC-Are-PDF-files-static-content-in-Chromium-"></a>
 ## Are PDF files static content in Chromium?

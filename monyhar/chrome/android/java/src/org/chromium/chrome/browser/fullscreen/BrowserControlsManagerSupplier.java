@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.fullscreen;
+package org.monyhar.chrome.browser.fullscreen;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.UnownedUserDataKey;
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.base.supplier.UnownedUserDataSupplier;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.UnownedUserDataKey;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.base.supplier.UnownedUserDataSupplier;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * A {@link UnownedUserDataSupplier} which manages the supplier and UnownedUserData for a

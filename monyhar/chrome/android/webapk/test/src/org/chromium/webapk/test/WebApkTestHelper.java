@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webapk.test;
+package org.monyhar.webapk.test;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -18,8 +18,8 @@ import org.robolectric.RuntimeEnvironment;
 import org.robolectric.Shadows;
 import org.robolectric.shadows.ShadowPackageManager;
 
-import org.chromium.webapk.lib.common.WebApkCommonUtils;
-import org.chromium.webapk.lib.common.WebApkConstants;
+import org.monyhar.webapk.lib.common.WebApkCommonUtils;
+import org.monyhar.webapk.lib.common.WebApkConstants;
 
 import java.net.URISyntaxException;
 

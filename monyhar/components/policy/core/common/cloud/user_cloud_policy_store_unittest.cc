@@ -91,7 +91,7 @@ class UserCloudPolicyStoreTest : public testing::Test {
   void InitPolicyPayload(enterprise_management::CloudPolicySettings* payload) {
     payload->mutable_searchsuggestenabled()->set_value(true);
     payload->mutable_urlblocklist()->mutable_value()->add_entries(
-        "chromium.org");
+        "monyhar.org");
   }
 
   base::FilePath policy_file() {

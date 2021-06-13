@@ -1,5 +1,5 @@
 From 92537ee19784e0e545f06d89b7d89ab532a18cff Mon Sep 17 00:00:00 2001
-From: Hans Wennborg <hans@chromium.org>
+From: Hans Wennborg <hans@monyhar.org>
 Date: Tue, 3 Nov 2020 15:54:09 +0100
 Subject: [PATCH] [zlib] Zero-initialize the window used for deflation
 
@@ -34,7 +34,7 @@ index 8bf93e524875..fc7ae45905ff 100644
 +    zmemzero(s->window, (s->w_size + window_padding) * (2 * sizeof(Byte)));
      s->prev   = (Posf *)  ZALLOC(strm, s->w_size, sizeof(Pos));
      /* Avoid use of uninitialized value, see:
-      * https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11360
+      * https://bugs.monyhar.org/p/oss-fuzz/issues/detail?id=11360
 -- 
 2.29.1.341.ge80a0c044ae-goog
 

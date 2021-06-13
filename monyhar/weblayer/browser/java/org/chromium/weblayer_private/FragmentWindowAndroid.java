@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -14,10 +14,10 @@ import android.view.View;
 
 import androidx.fragment.app.FragmentManager;
 
-import org.chromium.ui.base.ActivityKeyboardVisibilityDelegate;
-import org.chromium.ui.base.ImmutableWeakReference;
-import org.chromium.ui.base.IntentWindowAndroid;
-import org.chromium.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.base.ActivityKeyboardVisibilityDelegate;
+import org.monyhar.ui.base.ImmutableWeakReference;
+import org.monyhar.ui.base.IntentWindowAndroid;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
 
 import java.lang.ref.WeakReference;
 

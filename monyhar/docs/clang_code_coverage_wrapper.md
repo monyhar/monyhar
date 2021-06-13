@@ -75,5 +75,5 @@ For questions and general discussions, please join [code-coverage group].
 [//build/toolchain/clang_code_coverage_wrapper.py]: ../build/toolchain/clang_code_coverage_wrapper.py
 [code_coverage.md]: testing/code_coverage.md
 [//tools/code_coverage/coverage.py]: ../tools/code_coverage/coverage.py
-[file a bug]: https://bugs.chromium.org/p/chromium/issues/entry?components=Infra%3ETest%3ECodeCoverage
-[code-coverage group]: https://groups.google.com/a/chromium.org/forum/#!forum/code-coverage
+[file a bug]: https://bugs.monyhar.org/p/monyhar/issues/entry?components=Infra%3ETest%3ECodeCoverage
+[code-coverage group]: https://groups.google.com/a/monyhar.org/forum/#!forum/code-coverage

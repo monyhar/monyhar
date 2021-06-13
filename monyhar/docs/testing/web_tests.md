@@ -303,12 +303,12 @@ Consider the following when choosing between virtual test suites and
 flag-specific expectations:
 
 * The
-  [waterfall builders](https://dev.chromium.org/developers/testing/chromium-build-infrastructure/tour-of-the-chromium-buildbot)
-  and [try bots](https://dev.chromium.org/developers/testing/try-server-usage)
+  [waterfall builders](https://dev.monyhar.org/developers/testing/monyhar-build-infrastructure/tour-of-the-monyhar-buildbot)
+  and [try bots](https://dev.monyhar.org/developers/testing/try-server-usage)
   will run all virtual test suites in addition to the non-virtual tests.
   Conversely, a flag-specific expectations file won't automatically cause the
   bots to test your flag - if you want bot coverage without virtual test suites,
-  you will need to set up a dedicated bot ([example](https://chromium-review.googlesource.com/c/chromium/src/+/1850255))
+  you will need to set up a dedicated bot ([example](https://monyhar-review.googlesource.com/c/monyhar/src/+/1850255))
   for your flag.
 
 * Due to the above, virtual test suites incur a performance penalty for the
@@ -436,9 +436,9 @@ third_party/blink/tools/run_blink_httpd.py
 
 The web tests are served from `http://127.0.0.1:8000/`. For example, to
 run the test
-`web_tests/http/tests/serviceworker/chromium/service-worker-allowed.html`,
+`web_tests/http/tests/serviceworker/monyhar/service-worker-allowed.html`,
 navigate to
-`http://127.0.0.1:8000/serviceworker/chromium/service-worker-allowed.html`. Some
+`http://127.0.0.1:8000/serviceworker/monyhar/service-worker-allowed.html`. Some
 tests behave differently if you go to `127.0.0.1` vs. `localhost`, so use
 `127.0.0.1`.
 
@@ -476,7 +476,7 @@ machine?
 ### Debugging DevTools Tests
 
 * Do one of the following:
-    * Option A) Run from the `chromium/src` folder:
+    * Option A) Run from the `monyhar/src` folder:
       `third_party/blink/tools/run_web_tests.py --additional-driver-flag='--remote-debugging-port=9222' --additional-driver-flag='--debug-devtools' --time-out-ms=6000000`
     * Option B) If you need to debug an http/tests/inspector test, start httpd
       as described above. Then, run content_shell:
@@ -500,7 +500,7 @@ NOTE: If the test is an html file, this means it's a legacy test so you need to 
 
 You can use [`git bisect`](https://git-scm.com/docs/git-bisect) to find which
 commit broke (or fixed!) a web test in a fully automated way.  Unlike
-[bisect-builds.py](http://dev.chromium.org/developers/bisect-builds-py), which
+[bisect-builds.py](http://dev.monyhar.org/developers/bisect-builds-py), which
 downloads pre-built Chromium binaries, `git bisect` operates on your local
 checkout, so it can run tests with `content_shell`.
 
@@ -549,7 +549,7 @@ If there are current expectation files for `web_tests/foo/bar/test.html`,
 the above command will overwrite the current baselines at their original
 locations with the actual results. The current baseline means the `-expected.*`
 file used to compare the actual result when the test is run locally, i.e. the
-first file found in the [baseline search path](https://cs.chromium.org/search/?q=port/base.py+baseline_search_path).
+first file found in the [baseline search path](https://cs.monyhar.org/search/?q=port/base.py+baseline_search_path).
 
 If there are no current baselines, the above command will create new baselines
 in the platform-independent directory, e.g.
@@ -602,7 +602,7 @@ files. You can follow the steps below for easier review.
 ## Known Issues
 
 See
-[bugs with the component Blink>Infra](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=component%3ABlink%3EInfra)
+[bugs with the component Blink>Infra](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=component%3ABlink%3EInfra)
 for issues related to Blink tools, include the web test runner.
 
 * If QuickTime is not installed, the plugin tests

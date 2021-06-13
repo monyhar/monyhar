@@ -1,8 +1,8 @@
 <structured-metrics>
 
 <project name="Hindsight">
-  <owner>charleszhao@chromium.org</owner>
-  <owner>tby@chromium.org</owner>
+  <owner>charleszhao@monyhar.org</owner>
+  <owner>tby@monyhar.org</owner>
   <id>per-project</id>
   <summary>
     Project for recording CrOSActions.
@@ -190,7 +190,7 @@
 </project>
 
 <project name="LauncherUsage">
-  <owner>tby@chromium.org</owner>
+  <owner>tby@monyhar.org</owner>
   <id>per-project</id>
   <summary>
     See event summary.
@@ -253,7 +253,7 @@
 </project>
 
 <project name="TestProjectOne">
-  <owner>tby@chromium.org</owner>
+  <owner>tby@monyhar.org</owner>
   <id>none</id>
   <summary>
     Project for unit testing, do not use.
@@ -277,7 +277,7 @@
 </project>
 
 <project name="TestProjectTwo">
-  <owner>tby@chromium.org</owner>
+  <owner>tby@monyhar.org</owner>
   <id>none</id>
   <summary>
     Project for unit testing, do not use.
@@ -307,7 +307,7 @@
 </project>
 
 <project name="TestProjectThree">
-  <owner>tby@chromium.org</owner>
+  <owner>tby@monyhar.org</owner>
   <id>uma</id>
   <summary>
     Project for unit testing, do not use.

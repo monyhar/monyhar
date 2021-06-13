@@ -364,7 +364,7 @@
       "vendor_id": "0x8086",
       "device_id": ["0x0152", "0x0156", "0x015a", "0x0162", "0x0166"],
       "features": [
-        "disable_chromium_framebuffer_multisample"
+        "disable_monyhar_framebuffer_multisample"
       ]
     },
     {
@@ -611,7 +611,7 @@
       "gl_vendor": "Intel.*",
       "gl_renderer": "Intel.*BayTrail",
       "features": [
-        "disable_chromium_framebuffer_multisample"
+        "disable_monyhar_framebuffer_multisample"
       ]
     },
     {
@@ -842,7 +842,7 @@
         "GL_EXT_multisampled_render_to_texture"
       ],
       "features": [
-        "disable_chromium_framebuffer_multisample"
+        "disable_monyhar_framebuffer_multisample"
       ]
     },
     {
@@ -981,7 +981,7 @@
       },
       "gl_renderer": "Adreno.*",
       "features": [
-        "max_copy_texture_chromium_size_1048576"
+        "max_copy_texture_monyhar_size_1048576"
       ]
     },
     {
@@ -1848,7 +1848,7 @@
       },
       "features": [
         "force_update_scissor_state_when_binding_fbo0",
-        "disable_chromium_framebuffer_multisample"
+        "disable_monyhar_framebuffer_multisample"
       ]
     },
     {

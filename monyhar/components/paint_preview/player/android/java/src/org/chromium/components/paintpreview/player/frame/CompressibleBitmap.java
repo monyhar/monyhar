@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.paintpreview.player.frame;
+package org.monyhar.components.paintpreview.player.frame;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -14,8 +14,8 @@ import android.graphics.PorterDuffXfermode;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.task.SequencedTaskRunner;
+import org.monyhar.base.Callback;
+import org.monyhar.base.task.SequencedTaskRunner;
 
 import java.io.ByteArrayOutputStream;
 import java.nio.ByteBuffer;

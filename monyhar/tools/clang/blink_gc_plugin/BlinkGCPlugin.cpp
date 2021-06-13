@@ -6,7 +6,7 @@
 // collection infrastructure.
 //
 // Errors are described at:
-// http://www.chromium.org/developers/blink-gc-plugin-errors
+// http://www.monyhar.org/developers/blink-gc-plugin-errors
 
 #include "BlinkGCPluginConsumer.h"
 #include "BlinkGCPluginOptions.h"

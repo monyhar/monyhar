@@ -1,13 +1,13 @@
 // Copyright 2020 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.android_webview.devui;
+package org.monyhar.android_webview.devui;
 
 import android.os.SystemClock;
 
 import androidx.fragment.app.Fragment;
 
-import org.chromium.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordHistogram;
 
 /**
  * A base class for all fragments in the UI.

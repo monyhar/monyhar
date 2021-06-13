@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer;
+package org.monyhar.weblayer;
 
 import androidx.annotation.IntDef;
 
@@ -21,20 +21,20 @@ public @interface DarkModeStrategy {
      * provided, the page will render with its default styling, which could be a light theme.
      */
     int WEB_THEME_DARKENING_ONLY =
-            org.chromium.weblayer_private.interfaces.DarkModeStrategy.WEB_THEME_DARKENING_ONLY;
+            org.monyhar.weblayer_private.interfaces.DarkModeStrategy.WEB_THEME_DARKENING_ONLY;
 
     /**
      * Always apply automatic user-agent darkening to pages, ignoring any dark theme that the
      * site provides. All pages will appear dark in this mode.
      */
     int USER_AGENT_DARKENING_ONLY =
-            org.chromium.weblayer_private.interfaces.DarkModeStrategy.USER_AGENT_DARKENING_ONLY;
+            org.monyhar.weblayer_private.interfaces.DarkModeStrategy.USER_AGENT_DARKENING_ONLY;
 
     /**
      * Render pages using their specified dark theme if available, otherwise fall back on automatic
      * user-agent darkening. All pages will appear dark in this mode.
      */
     int PREFER_WEB_THEME_OVER_USER_AGENT_DARKENING =
-            org.chromium.weblayer_private.interfaces.DarkModeStrategy
+            org.monyhar.weblayer_private.interfaces.DarkModeStrategy
                     .PREFER_WEB_THEME_OVER_USER_AGENT_DARKENING;
 }

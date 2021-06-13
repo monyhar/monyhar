@@ -5,13 +5,13 @@ UI, scripts, and other elements. It is launched on Android as “Simplified View
 
 Reader Mode is based on the DOM distiller project which provides functionality
 for simplifying a webpage. This document focuses on how the
-[DOM distiller](https://chromium.googlesource.com/chromium/dom-distiller)
+[DOM distiller](https://monyhar.googlesource.com/monyhar/dom-distiller)
 project is integrated into Chrome on Desktop.
 
 ## Overview
 
 Desktop Reader Mode is hidden behind a
-[base::Feature](https://source.chromium.org/chromium/chromium/src/+/main:components/dom_distiller/core/dom_distiller_features.cc)
+[base::Feature](https://source.monyhar.org/monyhar/monyhar/src/+/main:components/dom_distiller/core/dom_distiller_features.cc)
 flag, ‘enable-reader-mode’. To run Chrome with Reader Mode, set the “Enable
 Reader Mode” flag to “Enabled” in chrome://flags or start Chrome with
 --enable-feature=”ReaderMode”.
@@ -28,7 +28,7 @@ argument:
 ### Code Locations
 
 Most of Reader Mode code is in components/dom_distiller (see the
-[DOM distiller project](https://chromium.googlesource.com/chromium/dom-distiller)).
+[DOM distiller project](https://monyhar.googlesource.com/monyhar/dom-distiller)).
 It is tied into Chrome via hooks in chrome/browser/dom_distiller (Desktop) and
 chrome/browser/android/dom_distiller (Android).
 
@@ -41,7 +41,7 @@ of ReaderModeIconView and dom_distiller/tab_utils.h.
 ### Bugs
 
 Reader Mode bugs should be filed under
-[UI>Browser>ReaderMode](https://bugs.chromium.org/p/chromium/issues/list?q=component:UI%3EBrowser%3EReaderMode)
+[UI>Browser>ReaderMode](https://bugs.monyhar.org/p/monyhar/issues/list?q=component:UI%3EBrowser%3EReaderMode)
 in crbug.com.
 
 ## How Reader Mode works in Desktop Chrome
@@ -56,25 +56,25 @@ distillable because they mostly consist of a single column of core text. In
 contrast, the Wikipedia main page is not distillable because it contains several
 unrelated text areas that are of roughly equal importance.
 
-The [DistillabilityAgent](https://cs.chromium.org/chromium/src/components/dom_distiller/content/renderer/distillability_agent.h),
+The [DistillabilityAgent](https://cs.monyhar.org/monyhar/src/components/dom_distiller/content/renderer/distillability_agent.h),
 located in the renderer process, examines the page contents whenever the
 compositor makes a meaningful change to the layout, which happens 1 to 3 times
 as the page loads. It then uses one of several different heuristics to determine
 whether the page is distillable or not. The browser receives the result obtained
 by the DistillabilityAgent for a given web contents via the
-[DistillabilityService](https://cs.chromium.org/chromium/src/components/dom_distiller/content/common/mojom/distillability_service.mojom),
+[DistillabilityService](https://cs.monyhar.org/monyhar/src/components/dom_distiller/content/common/mojom/distillability_service.mojom),
 which is wrapped by a helper class, the
-[DistillabilityDriver](https://cs.chromium.org/chromium/src/components/dom_distiller/content/browser/distillability_driver.h).
+[DistillabilityDriver](https://cs.monyhar.org/monyhar/src/components/dom_distiller/content/browser/distillability_driver.h).
 The DistillabilityDriver packages this information as a
-[DistillabilityResult](https://cs.chromium.org/chromium/src/components/dom_distiller/content/browser/distillable_page_utils.h),
+[DistillabilityResult](https://cs.monyhar.org/monyhar/src/components/dom_distiller/content/browser/distillable_page_utils.h),
 forwards it to all registered observers, and caches it.
 
 ### Toggling Reader Mode
 Users can toggle reader mode using an omnibox icon or an option, Toggle Reader
 Mode, in the “customize and control Chrome” menu, both of which execute
-BrowserCommands [ToggleDistilledView()](https://source.chromium.org/chromium/chromium/src/+/main:chrome/browser/ui/browser_commands.cc;bpv=1;bpt=1;l=1364?q=browser_commands%20dom_distiller&ss=chromium%2Fchromium%2Fsrc).
+BrowserCommands [ToggleDistilledView()](https://source.monyhar.org/monyhar/monyhar/src/+/main:chrome/browser/ui/browser_commands.cc;bpv=1;bpt=1;l=1364?q=browser_commands%20dom_distiller&ss=monyhar%2Fmonyhar%2Fsrc).
 
-[ReaderModeIconView](https://cs.chromium.org/chromium/src/chrome/browser/ui/views/reader_mode/reader_mode_icon_view.h)
+[ReaderModeIconView](https://cs.monyhar.org/monyhar/src/chrome/browser/ui/views/reader_mode/reader_mode_icon_view.h)
 is a DistillabilityObserver and sets its visibility based on the latest result
 for the currently active web contents. Reader Mode on desktop only considers
 whether the page is a distilled page, or, if not, the field
@@ -136,7 +136,7 @@ SecurityLevel, so it is not necessary to do such strict checking.
 ### Extracting core page content
 Reader Mode uses Chrome’s built-in DOM Distiller to generate the simplified
 version of the page. See the
-[DOM Distiller project](https://github.com/chromium/dom-distiller) on GitHub and
+[DOM Distiller project](https://github.com/monyhar/dom-distiller) on GitHub and
 this (Google-internal) [presentation](https://docs.google.com/presentation/d/1etC7ghAU89ec-UeJQ90q4KbHJHH6owfl7OactTcJvCc/edit#slide=id.p)
 for more information on how DOM Distiller works and how to debug it. From
 Chrome’s perspective, distilling the page to extract core page content can be
@@ -144,7 +144,7 @@ considered a black box.
 
 In short, content is extracted from the fully rendered article via Javascript
 (specifically from the compiled Javascript file built from DOM Distiller,
-[domdistiller.js](https://source.chromium.org/chromium/chromium/src/+/main:third_party/dom_distiller_js/dist/js/domdistiller.js))
+[domdistiller.js](https://source.monyhar.org/monyhar/monyhar/src/+/main:third_party/dom_distiller_js/dist/js/domdistiller.js))
 into a DistilledPageProto.
 
 The DOM Distiller retrieves the currently loaded document’s DOM and converts it
@@ -166,11 +166,11 @@ the following:
 
 ### Displaying Reader Mode Pages
 
-A [DistilledPageProto](https://source.chromium.org/chromium/chromium/src/+/main:components/dom_distiller/core/proto/distilled_page.proto)
+A [DistilledPageProto](https://source.monyhar.org/monyhar/monyhar/src/+/main:components/dom_distiller/core/proto/distilled_page.proto)
 is created for each page distilled, and is used to generate the HTML of the
 distilled page.
 
 Pages are loaded by
-[DomDistillerViewerSource](https://source.chromium.org/chromium/chromium/src/+/main:components/dom_distiller/content/browser/dom_distiller_viewer_source.h),
+[DomDistillerViewerSource](https://source.monyhar.org/monyhar/monyhar/src/+/main:components/dom_distiller/content/browser/dom_distiller_viewer_source.h),
 which serves the HTML and resources for viewing pages. After the DOM is
 initially loaded, the contents are populated via Javascript.

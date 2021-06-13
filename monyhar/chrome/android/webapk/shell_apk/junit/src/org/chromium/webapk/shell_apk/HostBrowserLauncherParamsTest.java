@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webapk.shell_apk;
+package org.monyhar.webapk.shell_apk;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,8 +13,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.components.webapk.lib.common.WebApkMetaDataKeys;
-import org.chromium.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.components.webapk.lib.common.WebApkMetaDataKeys;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
 
 import java.util.ArrayList;
 
@@ -35,20 +35,20 @@ public class HostBrowserLauncherParamsTest {
         params.add(new Pair<>("foo", "bar"));
 
         String uri = HostBrowserLauncherParams.createGETWebShareTargetUriString(
-                "https://www.chromium.org/wst", params);
-        Assert.assertEquals("https://www.chromium.org/wst?title=mytitle&foo=bar", uri);
+                "https://www.monyhar.org/wst", params);
+        Assert.assertEquals("https://www.monyhar.org/wst?title=mytitle&foo=bar", uri);
 
         uri = HostBrowserLauncherParams.createGETWebShareTargetUriString(
-                "https://www.chromium.org/wst/", params);
-        Assert.assertEquals("https://www.chromium.org/wst/?title=mytitle&foo=bar", uri);
+                "https://www.monyhar.org/wst/", params);
+        Assert.assertEquals("https://www.monyhar.org/wst/?title=mytitle&foo=bar", uri);
 
         uri = HostBrowserLauncherParams.createGETWebShareTargetUriString(
-                "https://www.chromium.org/base/wst.html", params);
-        Assert.assertEquals("https://www.chromium.org/base/wst.html?title=mytitle&foo=bar", uri);
+                "https://www.monyhar.org/base/wst.html", params);
+        Assert.assertEquals("https://www.monyhar.org/base/wst.html?title=mytitle&foo=bar", uri);
 
         uri = HostBrowserLauncherParams.createGETWebShareTargetUriString(
-                "https://www.chromium.org/base/wst.html/", params);
-        Assert.assertEquals("https://www.chromium.org/base/wst.html/?title=mytitle&foo=bar", uri);
+                "https://www.monyhar.org/base/wst.html/", params);
+        Assert.assertEquals("https://www.monyhar.org/base/wst.html/?title=mytitle&foo=bar", uri);
     }
 
     /*
@@ -65,8 +65,8 @@ public class HostBrowserLauncherParamsTest {
         // The baseUrl, shareAction and params are checked to be non-null in
         // HostBrowserLauncherParams#extractShareTarget.
         String uri = HostBrowserLauncherParams.createGETWebShareTargetUriString(
-                "https://www.chromium.org/wst", params);
-        Assert.assertEquals("https://www.chromium.org/wst?hello=world", uri);
+                "https://www.monyhar.org/wst", params);
+        Assert.assertEquals("https://www.monyhar.org/wst?hello=world", uri);
     }
 
     /*
@@ -79,8 +79,8 @@ public class HostBrowserLauncherParamsTest {
         params.add(new Pair<>(null, null));
         params.add(new Pair<>(null, null));
         String uri = HostBrowserLauncherParams.createGETWebShareTargetUriString(
-                "https://www.chromium.org/wst", params);
-        Assert.assertEquals("https://www.chromium.org/wst", uri);
+                "https://www.monyhar.org/wst", params);
+        Assert.assertEquals("https://www.monyhar.org/wst", uri);
     }
 
     /*
@@ -93,8 +93,8 @@ public class HostBrowserLauncherParamsTest {
         params.add(new Pair<>("a", null));
         params.add(new Pair<>(null, "b"));
         String uri = HostBrowserLauncherParams.createGETWebShareTargetUriString(
-                "https://www.chromium.org/wst", params);
-        Assert.assertEquals("https://www.chromium.org/wst", uri);
+                "https://www.monyhar.org/wst", params);
+        Assert.assertEquals("https://www.monyhar.org/wst", uri);
     }
 
     /*
@@ -107,8 +107,8 @@ public class HostBrowserLauncherParamsTest {
         params.add(new Pair<>("hello", "world"));
         params.add(new Pair<>("foobar", "baz"));
         String uri = HostBrowserLauncherParams.createGETWebShareTargetUriString(
-                "https://www.chromium.org/wst?a=b&c=d", params);
-        Assert.assertEquals("https://www.chromium.org/wst?hello=world&foobar=baz", uri);
+                "https://www.monyhar.org/wst?a=b&c=d", params);
+        Assert.assertEquals("https://www.monyhar.org/wst?hello=world&foobar=baz", uri);
     }
 
     /*
@@ -122,9 +122,9 @@ public class HostBrowserLauncherParamsTest {
         params.add(new Pair<>("foo bar", "baz"));
         params.add(new Pair<>("a!\"#$%&'()*+,-./0?@[\\]^_a`{}~", "b"));
         String uri = HostBrowserLauncherParams.createGETWebShareTargetUriString(
-                "https://www.chromium.org/wst%25%20space", params);
+                "https://www.monyhar.org/wst%25%20space", params);
         Assert.assertEquals(
-                "https://www.chromium.org/wst%25%20space?hello=world+!%22%23%24%25%26'()*%2B%2C-.%2F0%3F%40%5B%5C%5D%5E_a%60%7B%7D~&foo+bar=baz&a!%22%23%24%25%26'()*%2B%2C-.%2F0%3F%40%5B%5C%5D%5E_a%60%7B%7D~=b",
+                "https://www.monyhar.org/wst%25%20space?hello=world+!%22%23%24%25%26'()*%2B%2C-.%2F0%3F%40%5B%5C%5D%5E_a%60%7B%7D~&foo+bar=baz&a!%22%23%24%25%26'()*%2B%2C-.%2F0%3F%40%5B%5C%5D%5E_a%60%7B%7D~=b",
                 uri);
     }
 
@@ -137,7 +137,7 @@ public class HostBrowserLauncherParamsTest {
         Intent intent = new Intent();
         Bundle metaData = new Bundle();
 
-        String shareAction = "https://www.chromium.org/wst";
+        String shareAction = "https://www.monyhar.org/wst";
         metaData.putString(WebApkMetaDataKeys.SHARE_ACTION, shareAction);
         metaData.putString(WebApkMetaDataKeys.SHARE_METHOD, "GET");
         metaData.putString(WebApkMetaDataKeys.SHARE_PARAM_TITLE, "hello");
@@ -151,7 +151,7 @@ public class HostBrowserLauncherParamsTest {
         String postUri =
                 HostBrowserLauncherParams.computeStartUrlForShareTarget(metaData, intent);
 
-        Assert.assertEquals("https://www.chromium.org/wst?hello=world", getUri);
+        Assert.assertEquals("https://www.monyhar.org/wst?hello=world", getUri);
         Assert.assertEquals(shareAction, postUri);
     }
 }

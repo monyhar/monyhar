@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar;
+package org.monyhar.chrome.browser.toolbar;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;
@@ -22,15 +22,15 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.core.view.ViewCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.MathUtils;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.supplier.BooleanSupplier;
-import org.chromium.chrome.browser.theme.ThemeUtils;
-import org.chromium.components.browser_ui.widget.ClipDrawableProgressBar;
-import org.chromium.ui.UiUtils;
-import org.chromium.ui.interpolators.BakedBezierInterpolator;
-import org.chromium.ui.util.ColorUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.MathUtils;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.supplier.BooleanSupplier;
+import org.monyhar.chrome.browser.theme.ThemeUtils;
+import org.monyhar.components.browser_ui.widget.ClipDrawableProgressBar;
+import org.monyhar.ui.UiUtils;
+import org.monyhar.ui.interpolators.BakedBezierInterpolator;
+import org.monyhar.ui.util.ColorUtils;
 
 /**
  * Progress bar for use in the Toolbar view. If no progress updates are received for 5 seconds, an

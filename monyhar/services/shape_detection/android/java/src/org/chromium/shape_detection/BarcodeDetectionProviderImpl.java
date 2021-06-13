@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.shape_detection;
+package org.monyhar.shape_detection;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;
@@ -10,15 +10,15 @@ import android.content.pm.PackageManager.NameNotFoundException;
 
 import com.google.android.gms.common.GoogleApiAvailability;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.gms.ChromiumPlayServicesAvailability;
-import org.chromium.mojo.bindings.InterfaceRequest;
-import org.chromium.mojo.system.MojoException;
-import org.chromium.shape_detection.mojom.BarcodeDetection;
-import org.chromium.shape_detection.mojom.BarcodeDetectionProvider;
-import org.chromium.shape_detection.mojom.BarcodeDetectorOptions;
-import org.chromium.shape_detection.mojom.BarcodeFormat;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.gms.ChromiumPlayServicesAvailability;
+import org.monyhar.mojo.bindings.InterfaceRequest;
+import org.monyhar.mojo.system.MojoException;
+import org.monyhar.shape_detection.mojom.BarcodeDetection;
+import org.monyhar.shape_detection.mojom.BarcodeDetectionProvider;
+import org.monyhar.shape_detection.mojom.BarcodeDetectorOptions;
+import org.monyhar.shape_detection.mojom.BarcodeFormat;
 
 /**
  * Service provider to create BarcodeDetection services

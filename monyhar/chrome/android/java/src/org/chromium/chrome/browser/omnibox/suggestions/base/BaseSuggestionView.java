@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.base;
+package org.monyhar.chrome.browser.omnibox.suggestions.base;
 
 import android.content.Context;
 import android.view.KeyEvent;
@@ -15,9 +15,9 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.widget.AppCompatImageView;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.util.KeyNavigationUtil;
-import org.chromium.components.browser_ui.widget.RoundedCornerImageView;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.util.KeyNavigationUtil;
+import org.monyhar.components.browser_ui.widget.RoundedCornerImageView;
 
 import java.util.ArrayList;
 import java.util.List;

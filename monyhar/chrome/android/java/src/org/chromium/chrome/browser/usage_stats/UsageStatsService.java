@@ -2,24 +2,24 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.usage_stats;
+package org.monyhar.chrome.browser.usage_stats;
 
 import android.app.Activity;
 import android.os.Build;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.CollectionUtil;
-import org.chromium.base.Log;
-import org.chromium.base.Promise;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.AppHooks;
-import org.chromium.chrome.browser.compositor.layouts.content.TabContentManager;
-import org.chromium.chrome.browser.preferences.Pref;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.components.user_prefs.UserPrefs;
+import org.monyhar.base.CollectionUtil;
+import org.monyhar.base.Log;
+import org.monyhar.base.Promise;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.AppHooks;
+import org.monyhar.chrome.browser.compositor.layouts.content.TabContentManager;
+import org.monyhar.chrome.browser.preferences.Pref;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.components.user_prefs.UserPrefs;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;

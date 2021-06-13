@@ -3,7 +3,7 @@
   // TestProvider.js.
   "getAvailableSinks": {
     // This is the URN used by LOCAL_FILE casting mode
-    "urn:x-org.chromium.media:source:tab:0": [
+    "urn:x-org.monyhar.media:source:tab:0": [
       {"id": "id1", "friendlyName": "test-sink-1"},
       {"id": "id2", "friendlyName": "test-sink-2"}
     ]

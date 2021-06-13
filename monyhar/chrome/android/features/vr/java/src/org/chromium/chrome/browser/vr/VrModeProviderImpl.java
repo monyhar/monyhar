@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr;
+package org.monyhar.chrome.browser.vr;
 
-import org.chromium.ui.vr.VrModeObserver;
-import org.chromium.ui.vr.VrModeProvider;
+import org.monyhar.ui.vr.VrModeObserver;
+import org.monyhar.ui.vr.VrModeProvider;
 
 /**
  * A simple implementation of VrModeProvider that passes calls to VrModuleProvider.

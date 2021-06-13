@@ -6,7 +6,7 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/components/webrtc/MediaCaptureNotificationUtil.java",
+    "java/src/org/monyhar/components/webrtc/MediaCaptureNotificationUtil.java",
   ]
 
   deps = [
@@ -17,7 +17,7 @@ android_library("java") {
     "//third_party/androidx:androidx_annotation_annotation_java",
     "//third_party/androidx:androidx_core_core_java",
   ]
-  resources_package = "org.chromium.components.webrtc"
+  resources_package = "org.monyhar.components.webrtc"
 }
 
 android_resources("java_resources") {

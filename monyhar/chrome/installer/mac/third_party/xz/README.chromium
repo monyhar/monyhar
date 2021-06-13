@@ -14,7 +14,7 @@ Local Modifications:
 
 The upstream source is present in the xz directory. Other entries in this
 directory are present for build integration:
-  - README.chromium.
+  - README.monyhar.
   - xz.gyp.
   - config/mac/config.h, the ouptut of a "configure" run. SIZEOF_SIZE_T's
     definition is made conditional on __LP64__. Various macros are undefined,

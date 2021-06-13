@@ -215,7 +215,7 @@ class PermissionsClient {
       const std::vector<ContentSettingsType>& content_settings_types,
       PermissionsUpdatedCallback callback);
 
-  // Converts the given chromium |resource_id| (e.g. IDR_INFOBAR_TRANSLATE) to
+  // Converts the given monyhar |resource_id| (e.g. IDR_INFOBAR_TRANSLATE) to
   // an Android drawable resource ID. Returns 0 if a mapping wasn't found.
   virtual int MapToJavaDrawableId(int resource_id);
 #else

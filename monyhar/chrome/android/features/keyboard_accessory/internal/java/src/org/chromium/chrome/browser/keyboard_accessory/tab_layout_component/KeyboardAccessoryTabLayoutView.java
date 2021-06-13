@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.keyboard_accessory.tab_layout_component;
+package org.monyhar.chrome.browser.keyboard_accessory.tab_layout_component;
 
 import android.content.Context;
 import android.graphics.PorterDuff;
@@ -14,8 +14,8 @@ import androidx.annotation.StringRes;
 
 import com.google.android.material.tabs.TabLayout;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.browser.keyboard_accessory.R;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.browser.keyboard_accessory.R;
 
 /**
  * A {@link TabLayout} containing the tabs in the keyboard accessory.

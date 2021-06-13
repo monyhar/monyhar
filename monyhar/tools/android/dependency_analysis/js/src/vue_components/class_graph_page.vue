@@ -209,7 +209,7 @@ const ClassGraphPage = {
     if (this.displaySettingsData.nodeFilterData.filterList.length === 0) {
       // Default class to be displayed when the page is first loaded.
       [
-        'org.chromium.chrome.browser.tab.TabImpl',
+        'org.monyhar.chrome.browser.tab.TabImpl',
       ].forEach(nodeName => this.filterAddOrCheckNode(nodeName));
     }
   },

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omaha;
+package org.monyhar.chrome.browser.omaha;
 
 import android.content.res.Resources;
 import android.text.TextUtils;
@@ -12,14 +12,14 @@ import androidx.annotation.IntDef;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.ContextUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.omaha.UpdateStatusProvider.UpdateState;
-import org.chromium.chrome.browser.omaha.inline.FakeAppUpdateManagerWrapper;
-import org.chromium.components.variations.VariationsAssociatedData;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.omaha.UpdateStatusProvider.UpdateState;
+import org.monyhar.chrome.browser.omaha.inline.FakeAppUpdateManagerWrapper;
+import org.monyhar.components.variations.VariationsAssociatedData;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

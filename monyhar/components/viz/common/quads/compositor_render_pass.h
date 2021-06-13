@@ -118,7 +118,7 @@ class VIZ_COMMON_EXPORT CompositorRenderPass : public RenderPassInternal {
 
  protected:
   // This is essentially "using RenderPassInternal::RenderPassInternal", but
-  // since that generates inline (complex) ctors, the chromium-style plug-in
+  // since that generates inline (complex) ctors, the monyhar-style plug-in
   // refuses to compile it.
   CompositorRenderPass();
   explicit CompositorRenderPass(size_t num_layers);

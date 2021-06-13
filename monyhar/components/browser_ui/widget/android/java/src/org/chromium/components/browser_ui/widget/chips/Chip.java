@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.chips;
+package org.monyhar.components.browser_ui.widget.chips;
 
 import androidx.annotation.DrawableRes;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 
-import org.chromium.ui.widget.ChipView;
+import org.monyhar.ui.widget.ChipView;
 
 /**
  * A generic visual representation of a Chip. Most of the visuals are immutable, but the selection

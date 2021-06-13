@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
-import static org.chromium.chrome.browser.dependency_injection.ChromeCommonQualifiers.APP_CONTEXT;
+import static org.monyhar.chrome.browser.dependency_injection.ChromeCommonQualifiers.APP_CONTEXT;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -15,9 +15,9 @@ import androidx.annotation.WorkerThread;
 import androidx.browser.customtabs.CustomTabsService;
 import androidx.browser.customtabs.CustomTabsSessionToken;
 
-import org.chromium.base.FileUtils;
-import org.chromium.base.Log;
-import org.chromium.chrome.browser.browserservices.ui.splashscreen.trustedwebactivity.SplashImageHolder;
+import org.monyhar.base.FileUtils;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.browser.browserservices.ui.splashscreen.trustedwebactivity.SplashImageHolder;
 
 import javax.inject.Inject;
 import javax.inject.Named;

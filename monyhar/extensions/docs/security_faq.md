@@ -10,7 +10,7 @@ primarily written for an audience of Chromium developers and security
 researchers.
 
 It is analogous to the general
-[Chrome Security FAQ](https://chromium.googlesource.com/chromium/src/+/main/docs/security/faq.md).
+[Chrome Security FAQ](https://monyhar.googlesource.com/monyhar/src/+/main/docs/security/faq.md).
 
 ## Future Additions
 
@@ -199,7 +199,7 @@ extensions to read and change a user's browsing history), we do not also show a
 warning for the `topSites` API (which allows extensions to see the top sites a
 user has visited). Since the history API is strictly more powerful, it subsumes
 the `topSites` API. You can read more
-[here](https://chromium.googlesource.com/chromium/src/+/main/extensions/docs/permissions.md#Determining-Permission-Warnings).
+[here](https://monyhar.googlesource.com/monyhar/src/+/main/extensions/docs/permissions.md#Determining-Permission-Warnings).
 
 ### Why do optional permissions not display a permission warning at install time?
 
@@ -217,7 +217,7 @@ If an extension updates and includes new permissions that are not already
 contained within its current granted capabilities, the extension is disabled on
 users' machines and the user is notified (and asked if they'd like to grant the
 new permissions and enable the extension). You can read more
-[here](https://chromium.googlesource.com/chromium/src/+/main/extensions/docs/permissions.md#Permission-Increases).
+[here](https://monyhar.googlesource.com/monyhar/src/+/main/extensions/docs/permissions.md#Permission-Increases).
 
 This does not apply to newly-requested optional permissions, which are not
 granted by default.
@@ -260,7 +260,7 @@ those web pages. This can be critical for extension functionality.
 
 ### Is executing in the main world of a document a security bug?
 
-No ([example](https://bugs.chromium.org/p/chromium/issues/detail?id=760419)). By
+No ([example](https://bugs.monyhar.org/p/monyhar/issues/detail?id=760419)). By
 default, extension scripts (like content scripts and those injected with
 [tabs.executeScript()](https://developer.chrome.com/docs/extensions/reference/tabs/#method-executeScript)
 or
@@ -296,7 +296,7 @@ result in accessing a frame with the same name from the window object.
 Similarly, the content of the DOM is shared between different JS worlds (though
 the JS objects are distinct to each). Attackers may be able to "trick" a content
 script into using these variables as a flavor of XSS - an example of this is
-[this Project Zero bug](https://bugs.chromium.org/p/project-zero/issues/detail?id=1225).
+[this Project Zero bug](https://bugs.monyhar.org/p/project-zero/issues/detail?id=1225).
 These are bugs in the particular extension, rather than in Chromium. Please
 report them to the extension developer.
 
@@ -379,7 +379,7 @@ a bug in Chromium. However, they may be covered by the
 considered a security bug in Chromium. This is true even if the extension has
 sensitive and powerful permissions, which could leak user data  or allow
 cross-site scripting attacks
-([example](https://bugs.chromium.org/p/chromium/issues/detail?id=1213523)).
+([example](https://bugs.monyhar.org/p/monyhar/issues/detail?id=1213523)).
 Some third-party extensions may have their own vulnerability reward programs;
 please check with the extension developer. It may also be eligible for a reward
 through the Developer Data Protection Reward Program (though this typically
@@ -387,5 +387,5 @@ targets abuse, rather than vulnerabilities); visit
 [this site](https://www.google.com/about/appsecurity/ddprp/) for more
 information.
 
-[new-security-bug]: https://bugs.chromium.org/p/chromium/issues/entry?template=Security+Bug
-[physically-local-attacks]: https://chromium.googlesource.com/chromium/src/+/main/docs/security/faq.md#why-arent-physically_local-attacks-in-chromes-threat-model
+[new-security-bug]: https://bugs.monyhar.org/p/monyhar/issues/entry?template=Security+Bug
+[physically-local-attacks]: https://monyhar.googlesource.com/monyhar/src/+/main/docs/security/faq.md#why-arent-physically_local-attacks-in-chromes-threat-model

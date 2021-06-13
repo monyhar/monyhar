@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.partnerbookmarks;
+package org.monyhar.chrome.browser.partnerbookmarks;
 
 import android.content.Context;
 
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.chrome.browser.AppHooks;
-import org.chromium.chrome.browser.partnercustomizations.PartnerBrowserCustomizations;
-import org.chromium.ui.base.ViewUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.chrome.browser.AppHooks;
+import org.monyhar.chrome.browser.partnercustomizations.PartnerBrowserCustomizations;
+import org.monyhar.ui.base.ViewUtils;
 
 import java.util.HashSet;
 import java.util.LinkedHashMap;

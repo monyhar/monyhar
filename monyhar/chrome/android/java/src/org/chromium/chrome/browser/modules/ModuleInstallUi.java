@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.modules;
+package org.monyhar.chrome.browser.modules;
 
 import android.content.Context;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.infobar.InfoBarIdentifier;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabUtils;
-import org.chromium.chrome.browser.ui.messages.infobar.SimpleConfirmInfoBarBuilder;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.infobar.InfoBarIdentifier;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabUtils;
+import org.monyhar.chrome.browser.ui.messages.infobar.SimpleConfirmInfoBarBuilder;
+import org.monyhar.ui.widget.Toast;
 
 /**
  * UI informing the user about the status of installing a dynamic feature module. The UI consists of

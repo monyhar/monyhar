@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_entry_edit;
+package org.monyhar.chrome.browser.password_entry_edit;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -17,8 +17,8 @@ import androidx.annotation.Nullable;
 import androidx.core.view.ViewCompat;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
-import org.chromium.ui.widget.ButtonCompat;
-import org.chromium.ui.widget.ChromeImageButton;
+import org.monyhar.ui.widget.ButtonCompat;
+import org.monyhar.ui.widget.ChromeImageButton;
 
 /**
  * This class is responsible for rendering the edit fragment where users can edit a saved password.

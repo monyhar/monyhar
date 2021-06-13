@@ -32,7 +32,7 @@ class SyncSessionsClient;
 // This is achieved by implementing the interface ModelTypeSyncBridge, which
 // ClientTagBasedModelTypeProcessor will use to interact, ultimately, with the
 // sync server. See
-// https://chromium.googlesource.com/chromium/src/+/lkcr/docs/sync/model_api.md#Implementing-ModelTypeSyncBridge
+// https://monyhar.googlesource.com/monyhar/src/+/lkcr/docs/sync/model_api.md#Implementing-ModelTypeSyncBridge
 // for details.
 class SessionSyncBridge : public syncer::ModelTypeSyncBridge,
                           public LocalSessionEventHandlerImpl::Delegate {

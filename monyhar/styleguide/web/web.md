@@ -317,7 +317,7 @@ Guide](https://google.github.io/styleguide/jsguide.html) as well as
 ### Closure compiler
 
 * Use the [closure
-  compiler](https://chromium.googlesource.com/chromium/src/+/main/docs/closure_compilation.md)
+  compiler](https://monyhar.googlesource.com/monyhar/src/+/main/docs/closure_compilation.md)
   to identify JS type errors and enforce correct JSDoc annotations.
 
 * Add a `BUILD.gn` file to any new web UI code directory.
@@ -430,7 +430,7 @@ fooChanged_() {
 https://www.polymer-project.org/2.0/docs/devguide/templates#dom-if):
   * Consider using `dom-if` to lazily render parts of the DOM that are hidden by
   default. Also consider using [`cr-lazy-render`](
-  https://cs.chromium.org/chromium/src/ui/webui/resources/cr_elements/cr_lazy_render/cr_lazy_render.js)
+  https://cs.monyhar.org/monyhar/src/ui/webui/resources/cr_elements/cr_lazy_render/cr_lazy_render.js)
   instead.
   * **Only use`dom-if`** if the DOM subtree is non-trivial, defined as:
       * Contains more than 10 native elements, OR

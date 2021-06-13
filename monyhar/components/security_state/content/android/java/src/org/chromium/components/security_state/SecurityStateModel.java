@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.security_state;
+package org.monyhar.components.security_state;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * Provides a way of accessing helpers for page security state.

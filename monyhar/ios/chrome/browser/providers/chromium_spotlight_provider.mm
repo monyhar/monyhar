@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#import "ios/chrome/browser/providers/chromium_spotlight_provider.h"
+#import "ios/chrome/browser/providers/monyhar_spotlight_provider.h"
 
 #if !defined(__has_feature) || !__has_feature(objc_arc)
 #error "This file requires ARC support."
@@ -13,15 +13,15 @@ bool ChromiumSpotlightProvider::IsSpotlightEnabled() {
 }
 
 NSString* ChromiumSpotlightProvider::GetBookmarkDomain() {
-  return @"org.chromium.bookmarks";
+  return @"org.monyhar.bookmarks";
 }
 
 NSString* ChromiumSpotlightProvider::GetTopSitesDomain() {
-  return @"org.chromium.topsites";
+  return @"org.monyhar.topsites";
 }
 
 NSString* ChromiumSpotlightProvider::GetActionsDomain() {
-  return @"org.chromium.actions";
+  return @"org.monyhar.actions";
 }
 
 NSString* ChromiumSpotlightProvider::GetCustomAttributeItemID() {
@@ -29,5 +29,5 @@ NSString* ChromiumSpotlightProvider::GetCustomAttributeItemID() {
 }
 
 NSArray* ChromiumSpotlightProvider::GetAdditionalKeywords() {
-  return @[ @"chromium" ];
+  return @[ @"monyhar" ];
 }

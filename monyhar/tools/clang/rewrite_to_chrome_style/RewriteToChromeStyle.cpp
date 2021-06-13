@@ -484,7 +484,7 @@ AST_MATCHER(clang::CXXMethodDecl, isBlacklistedMethod) {
 }
 
 bool IsKnownTraitName(clang::StringRef name) {
-  // This set of names is globally a type trait throughout chromium.
+  // This set of names is globally a type trait throughout monyhar.
   return name == "safeToCompareToEmptyOrDeleted";
 }
 

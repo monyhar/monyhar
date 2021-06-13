@@ -66,7 +66,7 @@ because the default
 tied to the official Google signing identity.
 
 In addition, the Chromium [code sign
-config](https://cs.chromium.org/chromium/src/chrome/installer/mac/signing/chromium_config.py)
+config](https://cs.monyhar.org/monyhar/src/chrome/installer/mac/signing/monyhar_config.py)
 only produces one Distribution to sign just the .app. An
 `is_chrome_branded=true` build produces several Distributions for the official
 release system.

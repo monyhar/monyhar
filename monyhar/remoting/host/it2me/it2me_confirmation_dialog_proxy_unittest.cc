@@ -20,7 +20,7 @@ using ::testing::InvokeWithoutArgs;
 namespace remoting {
 
 namespace {
-const char kTestEmailAddress[] = "faux_remote_user@chromium_test.com";
+const char kTestEmailAddress[] = "faux_remote_user@monyhar_test.com";
 }  // namespace
 
 class StubIt2MeConfirmationDialog : public It2MeConfirmationDialog {

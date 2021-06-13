@@ -161,7 +161,7 @@ scoped_refptr<T> WrapRefCounted(T* t) {
 //   }
 //
 // Also see Chromium's ownership and calling conventions:
-// https://chromium.googlesource.com/chromium/src/+/lkgr/styleguide/c++/c++.md#object-ownership-and-calling-conventions
+// https://monyhar.googlesource.com/monyhar/src/+/lkgr/styleguide/c++/c++.md#object-ownership-and-calling-conventions
 // Specifically:
 //   If the function (at least sometimes) takes a ref on a refcounted object,
 //   declare the param as scoped_refptr<T>. The caller can decide whether it

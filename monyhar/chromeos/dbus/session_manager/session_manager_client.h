@@ -163,7 +163,7 @@ class COMPONENT_EXPORT(SESSION_MANAGER) SessionManagerClient {
   // request originates from belongs to the browser itself.
   // This method duplicates |socket_fd| so it's OK to close the FD without
   // waiting for the result.
-  // |reason| - restart job without user session (for headless chromium)
+  // |reason| - restart job without user session (for headless monyhar)
   // or with user session (for guest sessions only).
   virtual void RestartJob(int socket_fd,
                           const std::vector<std::string>& argv,

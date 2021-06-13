@@ -124,7 +124,7 @@ void CrashUploadListAndroid::LoadUnsuccessfulUploadList(
       file = file.RemoveExtension();
 
     // ID is the last part of the file name. e.g.
-    // chromium-renderer-minidump-f297dbcba7a2d0bb.
+    // monyhar-renderer-minidump-f297dbcba7a2d0bb.
     std::string id = file.value();
     std::size_t pos = id.find_last_of("-");
     if (pos == std::string::npos) {

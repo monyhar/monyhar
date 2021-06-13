@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions;
+package org.monyhar.chrome.browser.omnibox.suggestions;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -10,25 +10,25 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.chromium.base.Callback;
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcher;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcherConfig;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcherFactory;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.browser_ui.util.ConversionUtils;
-import org.chromium.components.browser_ui.util.GlobalDiscardableReferencePool;
-import org.chromium.components.browser_ui.widget.image_tiles.ImageTile;
-import org.chromium.components.browser_ui.widget.image_tiles.ImageTileCoordinator;
-import org.chromium.components.browser_ui.widget.image_tiles.ImageTileCoordinatorFactory;
-import org.chromium.components.browser_ui.widget.image_tiles.TileConfig;
-import org.chromium.components.query_tiles.QueryTile;
-import org.chromium.components.query_tiles.QueryTileConstants;
-import org.chromium.components.query_tiles.TileUmaLogger;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.ui.UiUtils;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.Callback;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcher;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcherConfig;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcherFactory;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.browser_ui.util.ConversionUtils;
+import org.monyhar.components.browser_ui.util.GlobalDiscardableReferencePool;
+import org.monyhar.components.browser_ui.widget.image_tiles.ImageTile;
+import org.monyhar.components.browser_ui.widget.image_tiles.ImageTileCoordinator;
+import org.monyhar.components.browser_ui.widget.image_tiles.ImageTileCoordinatorFactory;
+import org.monyhar.components.browser_ui.widget.image_tiles.TileConfig;
+import org.monyhar.components.query_tiles.QueryTile;
+import org.monyhar.components.query_tiles.QueryTileConstants;
+import org.monyhar.components.query_tiles.TileUmaLogger;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.ui.UiUtils;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -77,7 +77,7 @@ public class OmniboxQueryTileCoordinator {
         LayoutInflater inflater =
                 (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         ViewGroup suggestionView = (ViewGroup) inflater.inflate(
-                org.chromium.chrome.R.layout.omnibox_query_tiles_suggestion, null);
+                org.monyhar.chrome.R.layout.omnibox_query_tiles_suggestion, null);
 
         View tilesView = getTileCoordinator().getView();
         if (tilesView.getParent() != null) UiUtils.removeViewFromParent(tilesView);
@@ -128,7 +128,7 @@ public class OmniboxQueryTileCoordinator {
     private void getVisuals(ImageTile tile, Callback<List<Bitmap>> callback) {
         if (mTileWidth == null) {
             mTileWidth = mContext.getResources().getDimensionPixelSize(
-                    org.chromium.chrome.R.dimen.tile_ideal_width);
+                    org.monyhar.chrome.R.dimen.tile_ideal_width);
         }
 
         QueryTile queryTile = (QueryTile) tile;

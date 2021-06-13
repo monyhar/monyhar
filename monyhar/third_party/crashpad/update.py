@@ -51,7 +51,7 @@ def main(args):
         description='Update the in-tree copy of an imported project')
     parser.add_argument(
         '--repository',
-        default='https://chromium.googlesource.com/crashpad/crashpad',
+        default='https://monyhar.googlesource.com/crashpad/crashpad',
         help='The imported project\'s remote fetch URL',
         metavar='URL')
     parser.add_argument(
@@ -71,7 +71,7 @@ def main(args):
         metavar='REF')
     parser.add_argument(
         '--readme',
-        help='The README.chromium file describing the imported project',
+        help='The README.monyhar file describing the imported project',
         metavar='FILE',
         dest='readme_path')
     parser.add_argument(
@@ -90,7 +90,7 @@ def main(args):
     # it, and save it to be able to update it later.
     readme_path = (parsed.readme_path or
                    os.path.join(os.path.dirname(__file__ or '.'),
-                                'README.chromium'))
+                                'README.monyhar'))
     readme_content_old = open(readme_path, 'rb').read().decode('utf-8')
 
     project_name_match = re.search(

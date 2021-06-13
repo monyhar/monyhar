@@ -10,9 +10,9 @@
 //   --enable-blink-features=MojoJS,MojoJSTest
 
 async function loadChromiumResources() {
-  await import('/resources/chromium/mock-barcodedetection.js');
-  await import('/resources/chromium/mock-facedetection.js');
-  await import('/resources/chromium/mock-textdetection.js');
+  await import('/resources/monyhar/mock-barcodedetection.js');
+  await import('/resources/monyhar/mock-facedetection.js');
+  await import('/resources/monyhar/mock-textdetection.js');
 }
 
 /**

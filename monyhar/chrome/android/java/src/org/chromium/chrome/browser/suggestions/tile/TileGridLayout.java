@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.suggestions.tile;
+package org.monyhar.chrome.browser.suggestions.tile;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -15,9 +15,9 @@ import android.widget.FrameLayout;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.MathUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.suggestions.SiteSuggestion;
+import org.monyhar.base.MathUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.suggestions.SiteSuggestion;
 
 /**
  * A layout that arranges tiles in a grid.

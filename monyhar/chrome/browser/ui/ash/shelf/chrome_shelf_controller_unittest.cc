@@ -2206,13 +2206,13 @@ TEST_F(ChromeShelfControllerMultiProfileWithArcTest, DISABLED_ArcMultiUser) {
   const std::string arc_app_id3 =
       ArcAppTest::GetAppId(arc_test_.fake_apps()[2]);
 
-  std::string window_app_id1("org.chromium.arc.1");
+  std::string window_app_id1("org.monyhar.arc.1");
   views::Widget* arc_window1 = CreateArcWindow(window_app_id1);
   arc_test_.app_instance()->SendTaskCreated(1, arc_test_.fake_apps()[0],
                                             std::string());
   EXPECT_TRUE(shelf_controller_->GetItem(ash::ShelfID(arc_app_id1)));
 
-  std::string window_app_id2("org.chromium.arc.2");
+  std::string window_app_id2("org.monyhar.arc.2");
   views::Widget* arc_window2 = CreateArcWindow(window_app_id2);
   arc_test_.app_instance()->SendTaskCreated(2, arc_test_.fake_apps()[1],
                                             std::string());
@@ -2224,7 +2224,7 @@ TEST_F(ChromeShelfControllerMultiProfileWithArcTest, DISABLED_ArcMultiUser) {
   EXPECT_FALSE(shelf_controller_->GetItem(ash::ShelfID(arc_app_id1)));
   EXPECT_FALSE(shelf_controller_->GetItem(ash::ShelfID(arc_app_id2)));
 
-  std::string window_app_id3("org.chromium.arc.3");
+  std::string window_app_id3("org.monyhar.arc.3");
   views::Widget* arc_window3 = CreateArcWindow(window_app_id3);
   arc_test_.app_instance()->SendTaskCreated(3, arc_test_.fake_apps()[2],
                                             std::string());
@@ -2253,9 +2253,9 @@ TEST_F(ChromeShelfControllerWithArcTest, ArcRunningApp) {
   EXPECT_FALSE(shelf_controller_->GetItem(ash::ShelfID(arc_app_id)));
 
   // Normal flow, create/destroy tasks.
-  std::string window_app_id1("org.chromium.arc.1");
-  std::string window_app_id2("org.chromium.arc.2");
-  std::string window_app_id3("org.chromium.arc.3");
+  std::string window_app_id1("org.monyhar.arc.1");
+  std::string window_app_id2("org.monyhar.arc.2");
+  std::string window_app_id3("org.monyhar.arc.3");
   CreateArcWindow(window_app_id1);
   arc_test_.app_instance()->SendTaskCreated(1, arc_test_.fake_apps()[0],
                                             std::string());
@@ -2291,7 +2291,7 @@ TEST_F(ChromeShelfControllerWithArcTest, ArcRaceCreateClose) {
   SendListOfArcApps();
 
   // ARC window created before and closed after mojom notification.
-  std::string window_app_id1("org.chromium.arc.1");
+  std::string window_app_id1("org.monyhar.arc.1");
   views::Widget* arc_window = CreateArcWindow(window_app_id1);
   EXPECT_FALSE(shelf_controller_->GetItem(ash::ShelfID(arc_app_id1)));
   ASSERT_TRUE(arc_window);
@@ -2305,7 +2305,7 @@ TEST_F(ChromeShelfControllerWithArcTest, ArcRaceCreateClose) {
   EXPECT_FALSE(shelf_controller_->GetItem(ash::ShelfID(arc_app_id1)));
 
   // ARC window created after and closed before mojom notification.
-  std::string window_app_id2("org.chromium.arc.2");
+  std::string window_app_id2("org.monyhar.arc.2");
   arc_test_.app_instance()->SendTaskCreated(2, arc_test_.fake_apps()[1],
                                             std::string());
   EXPECT_TRUE(shelf_controller_->GetItem(ash::ShelfID(arc_app_id2)));
@@ -2326,7 +2326,7 @@ TEST_F(ChromeShelfControllerWithArcTest, ArcWindowRecreation) {
   const std::string arc_app_id = ArcAppTest::GetAppId(arc_test_.fake_apps()[0]);
   SendListOfArcApps();
 
-  std::string window_app_id("org.chromium.arc.1");
+  std::string window_app_id("org.monyhar.arc.1");
   views::Widget* arc_window = CreateArcWindow(window_app_id);
   ASSERT_TRUE(arc_window);
   arc_test_.app_instance()->SendTaskCreated(1, arc_test_.fake_apps()[0],
@@ -2361,7 +2361,7 @@ TEST_F(ChromeShelfControllerWithArcTest, OverrideAppItemController) {
   EXPECT_EQ(arc::kPlayStoreAppId, AddArcAppAndShortcut(app_info));
   app_service_test().WaitForAppService();
 
-  std::string window_app_id("org.chromium.arc.1");
+  std::string window_app_id("org.monyhar.arc.1");
   const ash::ShelfID play_store_shelf_id(arc::kPlayStoreAppId);
 
   shelf_controller_->UnpinAppWithID(arc::kPlayStoreAppId);
@@ -2577,8 +2577,8 @@ TEST_F(ChromeShelfControllerWithArcTest, DISABLED_ArcCustomAppIcon) {
   std::string invalid_png_data("aaaaaa");
 
   EXPECT_FALSE(shelf_controller_->GetItem(arc_shelf_id));
-  std::string window_app_id1("org.chromium.arc.1");
-  std::string window_app_id2("org.chromium.arc.2");
+  std::string window_app_id1("org.monyhar.arc.1");
+  std::string window_app_id2("org.monyhar.arc.2");
   views::Widget* window1 = CreateArcWindow(window_app_id1);
   ASSERT_TRUE(window1 && window1->GetNativeWindow());
   arc_test_.app_instance()->SendTaskCreated(1, app, std::string());
@@ -2644,9 +2644,9 @@ TEST_F(ChromeShelfControllerWithArcTest, ArcWindowPackageName) {
   SendListOfArcApps();
   app_service_test().WaitForAppService();
 
-  std::string window_app_id1("org.chromium.arc.1");
-  std::string window_app_id2("org.chromium.arc.2");
-  std::string window_app_id3("org.chromium.arc.3");
+  std::string window_app_id1("org.monyhar.arc.1");
+  std::string window_app_id2("org.monyhar.arc.2");
+  std::string window_app_id3("org.monyhar.arc.3");
   views::Widget* arc_window1 = CreateArcWindow(window_app_id1);
   arc_test_.app_instance()->SendTaskCreated(1, arc_test_.fake_apps()[0],
                                             std::string());
@@ -4190,12 +4190,12 @@ TEST_F(ChromeShelfControllerWithArcTest, ShelfItemWithMultipleWindows) {
 
   // Widgets will be deleted by the system.
   NotifyOnTaskCreated(appinfo, 1 /* task_id */);
-  views::Widget* window1 = CreateArcWindow("org.chromium.arc.1");
+  views::Widget* window1 = CreateArcWindow("org.monyhar.arc.1");
   ASSERT_TRUE(window1);
   EXPECT_TRUE(window1->IsActive());
 
   NotifyOnTaskCreated(appinfo, 2 /* task_id */);
-  views::Widget* window2 = CreateArcWindow("org.chromium.arc.2");
+  views::Widget* window2 = CreateArcWindow("org.monyhar.arc.2");
   ASSERT_TRUE(window2);
 
   EXPECT_FALSE(window1->IsActive());
@@ -4318,7 +4318,7 @@ TEST_F(ChromeShelfControllerArcDefaultAppsTest, DefaultApps) {
   };
   const SkBitmap default_icon = get_icon();
 
-  std::string window_app_id("org.chromium.arc.1");
+  std::string window_app_id("org.monyhar.arc.1");
   CreateArcWindow(window_app_id);
   arc_test_.app_instance()->SendTaskCreated(1, arc_test_.fake_default_apps()[0],
                                             std::string());
@@ -4389,7 +4389,7 @@ TEST_F(ChromeShelfControllerArcDefaultAppsTest, PlayStoreLaunchMetric) {
   app.package_name = arc::kPlayStorePackage;
   arc_test_.app_instance()->SendRefreshAppList({app});
   ASSERT_EQ(1U, arc_test_.app_instance()->launch_intents().size());
-  std::string play_store_window_id("org.chromium.arc.1");
+  std::string play_store_window_id("org.monyhar.arc.1");
   views::Widget* play_store_window = CreateArcWindow(play_store_window_id);
   arc_test_.app_instance()->SendTaskCreated(
       1, app, arc_test_.app_instance()->launch_intents()[0]);
@@ -4406,7 +4406,7 @@ TEST_F(ChromeShelfControllerArcDefaultAppsTest, PlayStoreLaunchMetric) {
   arc::LaunchApp(profile(), arc::kPlayStoreAppId, ui::EF_LEFT_MOUSE_BUTTON,
                  arc::UserInteractionType::NOT_USER_INITIATED);
   ASSERT_EQ(2U, arc_test_.app_instance()->launch_intents().size());
-  play_store_window_id = "org.chromium.arc.2";
+  play_store_window_id = "org.monyhar.arc.2";
   play_store_window = CreateArcWindow(play_store_window_id);
   arc_test_.app_instance()->SendTaskCreated(
       2, app, arc_test_.app_instance()->launch_intents()[1]);

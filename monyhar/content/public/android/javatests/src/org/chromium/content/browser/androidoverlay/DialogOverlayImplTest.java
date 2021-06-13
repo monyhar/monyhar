@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.androidoverlay;
+package org.monyhar.content.browser.androidoverlay;
 
 import androidx.test.filters.SmallTest;
 
@@ -11,10 +11,10 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Feature;
-import org.chromium.content.browser.androidoverlay.DialogOverlayImplTestRule.Client;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.content.browser.androidoverlay.DialogOverlayImplTestRule.Client;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /**
  * Tests for DialogOverlayImpl.
@@ -104,7 +104,7 @@ public class DialogOverlayImplTest {
 
         // Wait for the surface.
         Assert.assertEquals(Client.SURFACE_READY, mActivityTestRule.getClient().nextEvent().which);
-        final org.chromium.gfx.mojom.Rect rect = new org.chromium.gfx.mojom.Rect();
+        final org.monyhar.gfx.mojom.Rect rect = new org.monyhar.gfx.mojom.Rect();
         rect.x = 100;
         rect.y = 200;
         rect.width = 100;

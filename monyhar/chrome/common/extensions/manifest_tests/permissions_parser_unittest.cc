@@ -62,7 +62,7 @@ TEST_F(PermissionsParserTest, RemoveOverlappingHostPermissions) {
               testing::UnorderedElementsAre("https://example.com/*",
                                             "https://*.google.com/*"));
   EXPECT_THAT(*optional_hosts.ToStringVector(),
-              testing::UnorderedElementsAre("*://chromium.org/*"));
+              testing::UnorderedElementsAre("*://monyhar.org/*"));
 }
 
 TEST_F(PermissionsParserTest, RequiredHostPermissionsAllURLs) {

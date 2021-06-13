@@ -47,7 +47,7 @@ base::FilePath InitialPrefsPath() {
 
   // On official builds, try
   //~/Library/Application Support/Google/Chrome/Google Chrome Master Preferences
-  // On chromium builds, try
+  // On monyhar builds, try
   //~/Library/Application Support/Chromium/Chromium Master Preferences
   // This intentionally doesn't use eventual --user-data-dir overrides.
   base::FilePath user_application_support_path;
@@ -64,7 +64,7 @@ base::FilePath InitialPrefsPath() {
   }
 
   // On official builds, try /Library/Google/Google Chrome Master Preferences
-  // On chromium builds, try
+  // On monyhar builds, try
   // /Library/Application Support/Chromium/Chromium Master Preferences
   base::FilePath search_path;
   if (!base::mac::GetLocalDirectory(kSearchPath, &search_path))

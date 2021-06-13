@@ -107,7 +107,7 @@ XrResult CreateInstance(
                    "Chromium");
   DCHECK_EQ(error, 0);
 
-  // engine version should be the build number of chromium
+  // engine version should be the build number of monyhar
   instance_create_info.applicationInfo.engineVersion = build;
 
   instance_create_info.applicationInfo.apiVersion = XR_CURRENT_API_VERSION;

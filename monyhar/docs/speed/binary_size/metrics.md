@@ -7,7 +7,7 @@ This document lists metrics used to track binary size.
 ## Metrics for Desktop
 
  * Sizes are collected by
-   [//build/scripts/slave/chromium/sizes.py](https://cs.chromium.org/chromium/build/scripts/slave/chromium/sizes.py)
+   [//build/scripts/slave/monyhar/sizes.py](https://cs.monyhar.org/monyhar/build/scripts/slave/monyhar/sizes.py)
    * [Win32 Telemetry Graphs](https://chromeperf.appspot.com/report?sid=b3dcc318b51f3780924dfd3d82265ca901ac690cb61af91919997dda9821547c)
    * [Linux Telemetry Graphs](https://chromeperf.appspot.com/report?sid=bd18d34b6d29f26877e7075cb5c34c56c011d99803e9120d61610d7eaef38e9c)
    * [Mac Telemetry Graphs](https://chromeperf.appspot.com/report?sid=2cb6e0a9941e63418e7b83f91583282fa9fbaaafc2d19b3fa1179b28e7d3f7eb)
@@ -22,7 +22,7 @@ This document lists metrics used to track binary size.
 For Googlers, more information available at [go/chrome-apk-size](https://goto.google.com/chrome-apk-size).
 
  * Sizes are collected by
-   [//build/android/resource_sizes.py](https://cs.chromium.org/chromium/src/build/android/resource_sizes.py).
+   [//build/android/resource_sizes.py](https://cs.monyhar.org/monyhar/src/build/android/resource_sizes.py).
  * How to analyze Android binary size discussed in [apk_size_regressions.md#debugging-apk-size-increase](../apk_size_regressions.md#debugging-apk-size-increase).
  * Sizes for `ChromePublic.apk`, `ChromeModernPublic.apk`, `MonochromePublic.apk`, `SystemWebview.apk` are tracked.
    * But only `MonochromePublic.apk` is actively monitored.
@@ -99,4 +99,4 @@ For Googlers, more information available at [go/chrome-apk-size](https://goto.go
 ## Metrics for LaCrOS
 
  * Sizes are collected by
-   [//build/lacros/lacros_resource_sizes.py](https://cs.chromium.org/chromium/src/build/lacros/lacros_resource_sizes.py).
+   [//build/lacros/lacros_resource_sizes.py](https://cs.monyhar.org/monyhar/src/build/lacros/lacros_resource_sizes.py).

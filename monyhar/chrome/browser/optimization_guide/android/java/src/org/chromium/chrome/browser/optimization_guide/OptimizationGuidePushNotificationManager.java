@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.optimization_guide;
+package org.monyhar.chrome.browser.optimization_guide;
 
 import android.util.Base64;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.chrome.browser.flags.CachedFeatureFlags;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.IntCachedFieldTrialParameter;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.components.optimization_guide.proto.HintsProto.OptimizationType;
-import org.chromium.components.optimization_guide.proto.PushNotificationProto.HintNotificationPayload;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.chrome.browser.flags.CachedFeatureFlags;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.IntCachedFieldTrialParameter;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.components.optimization_guide.proto.HintsProto.OptimizationType;
+import org.monyhar.components.optimization_guide.proto.PushNotificationProto.HintNotificationPayload;
 
 import java.util.Iterator;
 import java.util.Set;

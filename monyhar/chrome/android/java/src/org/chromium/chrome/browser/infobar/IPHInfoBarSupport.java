@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.infobar;
+package org.monyhar.chrome.browser.infobar;
 
 import android.view.View;
 import android.widget.PopupWindow.OnDismissListener;
@@ -10,12 +10,12 @@ import android.widget.PopupWindow.OnDismissListener;
 import androidx.annotation.StringRes;
 import androidx.core.view.ViewCompat;
 
-import org.chromium.chrome.browser.infobar.InfoBarContainer.InfoBarContainerObserver;
-import org.chromium.components.browser_ui.widget.textbubble.TextBubble;
-import org.chromium.components.feature_engagement.FeatureConstants;
-import org.chromium.components.infobars.InfoBar;
-import org.chromium.components.infobars.InfoBarAnimationListener;
-import org.chromium.components.infobars.InfoBarUiItem;
+import org.monyhar.chrome.browser.infobar.InfoBarContainer.InfoBarContainerObserver;
+import org.monyhar.components.browser_ui.widget.textbubble.TextBubble;
+import org.monyhar.components.feature_engagement.FeatureConstants;
+import org.monyhar.components.infobars.InfoBar;
+import org.monyhar.components.infobars.InfoBarAnimationListener;
+import org.monyhar.components.infobars.InfoBarUiItem;
 
 /**
  * A helper class to managing showing and dismissing in-product help dialogs based on which infobar

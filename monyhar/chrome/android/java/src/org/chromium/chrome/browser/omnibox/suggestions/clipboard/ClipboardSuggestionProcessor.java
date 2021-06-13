@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.clipboard;
+package org.monyhar.chrome.browser.omnibox.suggestions.clipboard;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -12,22 +12,22 @@ import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.flags.CachedFeatureFlags;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.omnibox.OmniboxSuggestionType;
-import org.chromium.chrome.browser.omnibox.suggestions.OmniboxSuggestionUiType;
-import org.chromium.chrome.browser.omnibox.suggestions.SuggestionHost;
-import org.chromium.chrome.browser.omnibox.suggestions.base.BaseSuggestionViewProcessor;
-import org.chromium.chrome.browser.omnibox.suggestions.base.BaseSuggestionViewProperties.Action;
-import org.chromium.chrome.browser.omnibox.suggestions.base.SuggestionDrawableState;
-import org.chromium.chrome.browser.omnibox.suggestions.base.SuggestionSpannable;
-import org.chromium.chrome.browser.omnibox.suggestions.basic.SuggestionViewProperties;
-import org.chromium.components.favicon.LargeIconBridge;
-import org.chromium.components.omnibox.AutocompleteMatch;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.flags.CachedFeatureFlags;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.omnibox.OmniboxSuggestionType;
+import org.monyhar.chrome.browser.omnibox.suggestions.OmniboxSuggestionUiType;
+import org.monyhar.chrome.browser.omnibox.suggestions.SuggestionHost;
+import org.monyhar.chrome.browser.omnibox.suggestions.base.BaseSuggestionViewProcessor;
+import org.monyhar.chrome.browser.omnibox.suggestions.base.BaseSuggestionViewProperties.Action;
+import org.monyhar.chrome.browser.omnibox.suggestions.base.SuggestionDrawableState;
+import org.monyhar.chrome.browser.omnibox.suggestions.base.SuggestionSpannable;
+import org.monyhar.chrome.browser.omnibox.suggestions.basic.SuggestionViewProperties;
+import org.monyhar.components.favicon.LargeIconBridge;
+import org.monyhar.components.omnibox.AutocompleteMatch;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.util.Arrays;
 

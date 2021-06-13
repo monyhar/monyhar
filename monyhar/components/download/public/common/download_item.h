@@ -56,7 +56,7 @@ class DownloadItemRenameHandler;
 class COMPONENTS_DOWNLOAD_EXPORT DownloadItem : public base::SupportsUserData {
  public:
   // A Java counterpart will be generated for this enum.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.download
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.download
   enum DownloadState {
     // Download is actively progressing.
     IN_PROGRESS = 0,

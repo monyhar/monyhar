@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
-import static org.chromium.android_webview.test.AwActivityTestRule.SCALED_WAIT_TIMEOUT_MS;
+import static org.monyhar.android_webview.test.AwActivityTestRule.SCALED_WAIT_TIMEOUT_MS;
 
 import android.support.test.InstrumentationRegistry;
 import android.util.Pair;
@@ -21,17 +21,17 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.AwContents;
-import org.chromium.android_webview.test.util.AwTestTouchUtils;
-import org.chromium.android_webview.test.util.CommonResources;
-import org.chromium.android_webview.test.util.JSUtils;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.TestFileUtil;
-import org.chromium.components.embedder_support.util.WebResourceResponseInfo;
-import org.chromium.content_public.browser.test.util.TestCallbackHelperContainer.OnReceivedErrorHelper;
-import org.chromium.net.test.util.TestWebServer;
-import org.chromium.net.test.util.WebServer;
+import org.monyhar.android_webview.AwContents;
+import org.monyhar.android_webview.test.util.AwTestTouchUtils;
+import org.monyhar.android_webview.test.util.CommonResources;
+import org.monyhar.android_webview.test.util.JSUtils;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.TestFileUtil;
+import org.monyhar.components.embedder_support.util.WebResourceResponseInfo;
+import org.monyhar.content_public.browser.test.util.TestCallbackHelperContainer.OnReceivedErrorHelper;
+import org.monyhar.net.test.util.TestWebServer;
+import org.monyhar.net.test.util.WebServer;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -817,7 +817,7 @@ public class AwContentsClientShouldInterceptRequestTest {
     @SmallTest
     @Feature({"AndroidWebView"})
     public void testCalledForNonexistentContentUrl() throws Throwable {
-        calledForUrlTemplate("content://org.chromium.webview.NoSuchProvider/foo");
+        calledForUrlTemplate("content://org.monyhar.webview.NoSuchProvider/foo");
     }
 
     @Test
@@ -836,7 +836,7 @@ public class AwContentsClientShouldInterceptRequestTest {
         Assert.assertEquals(1, mShouldInterceptRequestHelper.getUrls().size());
 
         // With PlzNavigate, data URLs are intercepted. See
-        // https://codereview.chromium.org/2235303002/.
+        // https://codereview.monyhar.org/2235303002/.
         // TODO(boliu): Not checking the URL yet. It's the empty data URL which should be fixed in
         // crbug.com/669885.
         Assert.assertNotEquals(imageUrl, mShouldInterceptRequestHelper.getUrls().get(0));

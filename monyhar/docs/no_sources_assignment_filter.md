@@ -37,5 +37,5 @@ use the following pattern:
   }
 ```
 
-[0]: https://groups.google.com/a/chromium.org/d/topic/chromium-dev/hyLuCU6g2V4/discussion
-[1]: https://groups.google.com/a/chromium.org/d/topic/gn-dev/oQcYStl_WkI/discussion
+[0]: https://groups.google.com/a/monyhar.org/d/topic/monyhar-dev/hyLuCU6g2V4/discussion
+[1]: https://groups.google.com/a/monyhar.org/d/topic/gn-dev/oQcYStl_WkI/discussion

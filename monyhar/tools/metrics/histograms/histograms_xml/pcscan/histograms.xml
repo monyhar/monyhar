@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of PCScan histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -22,8 +22,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histograms>
 
 <histogram name="PA.PCScan.{Process}.Scanner" units="ms" expires_after="M94">
-  <owner>bikineev@chromium.org</owner>
-  <owner>mlippautz@chromium.org</owner>
+  <owner>bikineev@monyhar.org</owner>
+  <owner>mlippautz@monyhar.org</owner>
   <summary>
     Overall duration of a single PCScan cycle in the {Process} process. Reported
     once per PCScan cycle at the end.
@@ -36,8 +36,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PA.PCScan.{Process}.Scanner.{Phase}" units="ms"
     expires_after="M94">
-  <owner>bikineev@chromium.org</owner>
-  <owner>mlippautz@chromium.org</owner>
+  <owner>bikineev@monyhar.org</owner>
+  <owner>mlippautz@monyhar.org</owner>
   <summary>
     Duration of the PCScan phase that {Phase} in the {Process} process. Reported
     once per each PCScan cycle at the end.

@@ -13,7 +13,7 @@
 # in ../PRESUBMIT.py. It does not perform its check on files directly under
 # the paths listed here.
 #
-# See https://bugs.chromium.org/p/chromium/issues/detail?id=1177609 for more
+# See https://bugs.monyhar.org/p/monyhar/issues/detail?id=1177609 for more
 # context.
 #
 # To update the list so the PRESUBMIT will use it in prod, write the output to
@@ -23,7 +23,7 @@
 #    infra/inclusive_language_presubmit_exempt_dirs.txt
 #
 # Note: This script produces the list relative to the current working dir.
-# To generate the list of exempted legacy directories for chromium/src for
+# To generate the list of exempted legacy directories for monyhar/src for
 # instance, you should run this from the parent of the current directory
 # rather than from this directory.
 

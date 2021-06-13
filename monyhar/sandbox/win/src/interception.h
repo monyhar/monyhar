@@ -4,7 +4,7 @@
 
 // Defines InterceptionManager, the class in charge of setting up interceptions
 // for the sandboxed process. For more details see
-// http://dev.chromium.org/developers/design-documents/sandbox .
+// http://dev.monyhar.org/developers/design-documents/sandbox .
 
 #ifndef SANDBOX_WIN_SRC_INTERCEPTION_H_
 #define SANDBOX_WIN_SRC_INTERCEPTION_H_

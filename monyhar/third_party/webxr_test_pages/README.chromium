@@ -20,9 +20,9 @@ Local Modifications:
 - Adapted samples to work without node compilation
 
 - Added source from https://github.com/toji/gl-matrix (MIT licensed)
-  to js/third-party/gl-matrix, including license file and README.chromium.
+  to js/third-party/gl-matrix, including license file and README.monyhar.
 
-- Added missing license file and README.chromium for dat.gui
+- Added missing license file and README.monyhar for dat.gui
 
 - Removed the version shim, the samples are intended to work specifically
   with the ToT Chrome version.
@@ -71,7 +71,7 @@ To create a Google Cloud WebXR-Samples bucket:
    e. Add the member "allAuthenticatedUsers" with the role "Storage Object Viewer"
    f. Accept the prompt notifying you that you will make the bucket public to the internet.
 
-5. Select a project as bucket owner. (If this is not the default 'chromium-webxr-test' 
+5. Select a project as bucket owner. (If this is not the default 'monyhar-webxr-test' 
    use `update_bucket.py --bucket gs://PROJECT_ID` in the steps below to override its default.)
 
 6. Create a "media" folder at the top level directory of your bucket, this folder should contain a

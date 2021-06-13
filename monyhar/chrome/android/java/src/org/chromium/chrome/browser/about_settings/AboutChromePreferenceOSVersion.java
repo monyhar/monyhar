@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.about_settings;
+package org.monyhar.chrome.browser.about_settings;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -12,8 +12,8 @@ import android.view.ViewGroup;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.omaha.VersionNumberGetter;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.omaha.VersionNumberGetter;
 
 /**
  * Preference specifically made for the Android OS version. It supports displaying a warning when

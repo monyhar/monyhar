@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.metrics.util;
+package org.monyhar.chrome.browser.metrics.util;
 
 /**
  * Utilities for Android UKM tests. Not to be used outside of testing.

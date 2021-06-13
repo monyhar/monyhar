@@ -20,7 +20,7 @@ constexpr SkColor kNTPLightIconColor = gfx::kGoogleGrey100;
 constexpr SkColor kNTPDarkIconColor = gfx::kGoogleGrey900;
 
 // Javascript bindings for the chrome.embeddedSearch APIs. See
-// https://www.chromium.org/embeddedsearch.
+// https://www.monyhar.org/embeddedsearch.
 class SearchBoxExtension {
  public:
   static void Install(blink::WebLocalFrame* frame);

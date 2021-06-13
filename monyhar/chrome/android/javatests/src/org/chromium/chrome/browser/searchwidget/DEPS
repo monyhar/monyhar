@@ -1,4 +1,4 @@
 include_rules = [
-  "+components/omnibox/browser/android/javatests/src/org/chromium/components/omnibox/AutocompleteMatchBuilder.java",
+  "+components/omnibox/browser/android/javatests/src/org/monyhar/components/omnibox/AutocompleteMatchBuilder.java",
 ]
 

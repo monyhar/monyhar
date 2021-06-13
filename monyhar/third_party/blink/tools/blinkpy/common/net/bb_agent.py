@@ -35,7 +35,7 @@ class BBAgent(object):
 
     def get_latest_finished_build(self, builder_name, try_build=False):
         self._check_luci_auth()
-        builder_path = ('chromium/' +
+        builder_path = ('monyhar/' +
                         ('try' if try_build else 'ci') +
                         '/' + builder_name)
 

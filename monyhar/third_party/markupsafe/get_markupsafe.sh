@@ -8,7 +8,7 @@ PACKAGE='MarkupSafe'
 VERSION='0.18'
 PACKAGE_DIR='markupsafe'
 
-CHROMIUM_FILES="README.chromium OWNERS get_markupsafe.sh"
+CHROMIUM_FILES="README.monyhar OWNERS get_markupsafe.sh"
 EXTRA_FILES='LICENSE AUTHORS'
 REMOVE_FILES='tests.py'
 

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.features.start_surface;
+package org.monyhar.chrome.features.start_surface;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -30,12 +30,12 @@ import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assume.assumeTrue;
 
-import static org.chromium.chrome.browser.tasks.ReturnToChromeExperimentsUtil.TAB_SWITCHER_ON_RETURN_MS;
-import static org.chromium.chrome.features.start_surface.StartSurfaceMediator.FEED_VISIBILITY_CONSISTENCY;
-import static org.chromium.chrome.test.util.ViewUtils.VIEW_GONE;
-import static org.chromium.chrome.test.util.ViewUtils.onViewWaiting;
-import static org.chromium.chrome.test.util.ViewUtils.waitForStableView;
-import static org.chromium.chrome.test.util.ViewUtils.waitForView;
+import static org.monyhar.chrome.browser.tasks.ReturnToChromeExperimentsUtil.TAB_SWITCHER_ON_RETURN_MS;
+import static org.monyhar.chrome.features.start_surface.StartSurfaceMediator.FEED_VISIBILITY_CONSISTENCY;
+import static org.monyhar.chrome.test.util.ViewUtils.VIEW_GONE;
+import static org.monyhar.chrome.test.util.ViewUtils.onViewWaiting;
+import static org.monyhar.chrome.test.util.ViewUtils.waitForStableView;
+import static org.monyhar.chrome.test.util.ViewUtils.waitForView;
 
 import android.os.Build;
 import android.support.test.InstrumentationRegistry;
@@ -63,65 +63,65 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.test.params.ParameterAnnotations;
-import org.chromium.base.test.params.ParameterAnnotations.UseRunnerDelegate;
-import org.chromium.base.test.params.ParameterSet;
-import org.chromium.base.test.params.ParameterizedRunner;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.FlakyTest;
-import org.chromium.base.test.util.Restriction;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.feed.FeedSurfaceCoordinator;
-import org.chromium.chrome.browser.feed.FeedSurfaceMediator;
-import org.chromium.chrome.browser.flags.CachedFeatureFlags;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.gesturenav.GestureNavigationUtils;
-import org.chromium.chrome.browser.init.AsyncInitializationActivity;
-import org.chromium.chrome.browser.layouts.LayoutStateProvider;
-import org.chromium.chrome.browser.layouts.LayoutType;
-import org.chromium.chrome.browser.native_page.ContextMenuManager;
-import org.chromium.chrome.browser.ntp.NewTabPageLaunchOrigin;
-import org.chromium.chrome.browser.ntp.NewTabPageUtils;
-import org.chromium.chrome.browser.suggestions.SiteSuggestion;
-import org.chromium.chrome.browser.suggestions.tile.SuggestionsTileView;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabLaunchType;
-import org.chromium.chrome.browser.tabmodel.TabModel;
-import org.chromium.chrome.browser.tasks.MvTilesLayout;
-import org.chromium.chrome.browser.tasks.ReturnToChromeExperimentsUtil;
-import org.chromium.chrome.browser.tasks.SingleTabSwitcherMediator;
-import org.chromium.chrome.browser.tasks.pseudotab.TabAttributeCache;
-import org.chromium.chrome.browser.tasks.tab_groups.TabGroupModelFilter;
-import org.chromium.chrome.browser.tasks.tab_management.TabSelectionEditorTestingRobot;
-import org.chromium.chrome.browser.tasks.tab_management.TabUiFeatureUtilities;
-import org.chromium.chrome.browser.tasks.tab_management.TabUiTestHelper;
-import org.chromium.chrome.browser.toolbar.HomeButton;
-import org.chromium.chrome.browser.toolbar.ToolbarDataProvider;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
-import org.chromium.chrome.start_surface.R;
-import org.chromium.chrome.test.ChromeJUnit4RunnerDelegate;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.ChromeApplicationTestUtils;
-import org.chromium.chrome.test.util.ChromeTabUtils;
-import org.chromium.chrome.test.util.OverviewModeBehaviorWatcher;
-import org.chromium.chrome.test.util.ViewUtils;
-import org.chromium.chrome.test.util.browser.Features.EnableFeatures;
-import org.chromium.chrome.test.util.browser.suggestions.SuggestionsDependenciesRule;
-import org.chromium.chrome.test.util.browser.suggestions.mostvisited.FakeMostVisitedSites;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetTestSupport;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.content_public.browser.test.util.TestTouchUtils;
-import org.chromium.ui.test.util.UiRestriction;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.test.params.ParameterAnnotations;
+import org.monyhar.base.test.params.ParameterAnnotations.UseRunnerDelegate;
+import org.monyhar.base.test.params.ParameterSet;
+import org.monyhar.base.test.params.ParameterizedRunner;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.FlakyTest;
+import org.monyhar.base.test.util.Restriction;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.feed.FeedSurfaceCoordinator;
+import org.monyhar.chrome.browser.feed.FeedSurfaceMediator;
+import org.monyhar.chrome.browser.flags.CachedFeatureFlags;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.gesturenav.GestureNavigationUtils;
+import org.monyhar.chrome.browser.init.AsyncInitializationActivity;
+import org.monyhar.chrome.browser.layouts.LayoutStateProvider;
+import org.monyhar.chrome.browser.layouts.LayoutType;
+import org.monyhar.chrome.browser.native_page.ContextMenuManager;
+import org.monyhar.chrome.browser.ntp.NewTabPageLaunchOrigin;
+import org.monyhar.chrome.browser.ntp.NewTabPageUtils;
+import org.monyhar.chrome.browser.suggestions.SiteSuggestion;
+import org.monyhar.chrome.browser.suggestions.tile.SuggestionsTileView;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabLaunchType;
+import org.monyhar.chrome.browser.tabmodel.TabModel;
+import org.monyhar.chrome.browser.tasks.MvTilesLayout;
+import org.monyhar.chrome.browser.tasks.ReturnToChromeExperimentsUtil;
+import org.monyhar.chrome.browser.tasks.SingleTabSwitcherMediator;
+import org.monyhar.chrome.browser.tasks.pseudotab.TabAttributeCache;
+import org.monyhar.chrome.browser.tasks.tab_groups.TabGroupModelFilter;
+import org.monyhar.chrome.browser.tasks.tab_management.TabSelectionEditorTestingRobot;
+import org.monyhar.chrome.browser.tasks.tab_management.TabUiFeatureUtilities;
+import org.monyhar.chrome.browser.tasks.tab_management.TabUiTestHelper;
+import org.monyhar.chrome.browser.toolbar.HomeButton;
+import org.monyhar.chrome.browser.toolbar.ToolbarDataProvider;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.chrome.start_surface.R;
+import org.monyhar.chrome.test.ChromeJUnit4RunnerDelegate;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.ChromeApplicationTestUtils;
+import org.monyhar.chrome.test.util.ChromeTabUtils;
+import org.monyhar.chrome.test.util.OverviewModeBehaviorWatcher;
+import org.monyhar.chrome.test.util.ViewUtils;
+import org.monyhar.chrome.test.util.browser.Features.EnableFeatures;
+import org.monyhar.chrome.test.util.browser.suggestions.SuggestionsDependenciesRule;
+import org.monyhar.chrome.test.util.browser.suggestions.mostvisited.FakeMostVisitedSites;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetTestSupport;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.content_public.browser.test.util.TestTouchUtils;
+import org.monyhar.ui.test.util.UiRestriction;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -256,19 +256,19 @@ public class StartSurfaceTest {
 
         onViewWaiting(withId(R.id.primary_tasks_surface_view));
         onViewWaiting(withId(R.id.search_box_text)).check(matches(isDisplayed()));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.mv_tiles_container))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.mv_tiles_container))
                 .check(matches(isDisplayed()));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.tab_switcher_title))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.tab_switcher_title))
                 .check(matches(isDisplayed()));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.carousel_tab_switcher_container))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.carousel_tab_switcher_container))
                 .check(matches(isDisplayed()));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.tasks_surface_body))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.tasks_surface_body))
                 .check(matches(isDisplayed()));
 
         StartSurfaceTestUtils.clickMoreTabs(cta);
         onViewWaiting(withId(R.id.secondary_tasks_surface_view));
         waitForView(allOf(withParent(withId(R.id.secondary_tasks_surface_view)),
-                withId(org.chromium.chrome.tab_ui.R.id.tab_list_view)));
+                withId(org.monyhar.chrome.tab_ui.R.id.tab_list_view)));
         assertEquals(cta.findViewById(R.id.home_button_on_tab_switcher).getVisibility(), View.GONE);
 
         pressBack();
@@ -294,22 +294,22 @@ public class StartSurfaceTest {
 
         onViewWaiting(withId(R.id.primary_tasks_surface_view));
         onViewWaiting(withId(R.id.search_box_text));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.mv_tiles_container))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.mv_tiles_container))
                 .check(matches(isDisplayed()));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.tab_switcher_title))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.tab_switcher_title))
                 .check(matches(isDisplayed()));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.carousel_tab_switcher_container))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.carousel_tab_switcher_container))
                 .check(matches(isDisplayed()));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.tasks_surface_body))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.tasks_surface_body))
                 .check(matches(isDisplayed()));
 
         // TODO(crbug.com/1076274): fix toolbar to make incognito switch part of the view.
-        onView(withId(org.chromium.chrome.tab_ui.R.id.incognito_toggle_tabs))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.incognito_toggle_tabs))
                 .check(matches(withEffectiveVisibility(GONE)));
 
         StartSurfaceTestUtils.clickMoreTabs(cta);
         onViewWaiting(withId(R.id.secondary_tasks_surface_view));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.incognito_toggle_tabs))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.incognito_toggle_tabs))
                 .check(matches(withEffectiveVisibility(VISIBLE)));
 
         pressBack();
@@ -325,7 +325,7 @@ public class StartSurfaceTest {
             return;
         }
 
-        onView(withId(org.chromium.chrome.tab_ui.R.id.incognito_toggle_tabs))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.incognito_toggle_tabs))
                 .check(matches(withEffectiveVisibility(GONE)));
 
         OverviewModeBehaviorWatcher hideWatcher = TabUiTestHelper.createOverviewHideWatcher(cta);
@@ -350,18 +350,18 @@ public class StartSurfaceTest {
 
         onViewWaiting(withId(R.id.primary_tasks_surface_view));
         onViewWaiting(withId(R.id.search_box_text));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.mv_tiles_container))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.mv_tiles_container))
                 .check(matches(withEffectiveVisibility(GONE)));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.tab_switcher_title))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.tab_switcher_title))
                 .check(matches(isDisplayed()));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.carousel_tab_switcher_container))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.carousel_tab_switcher_container))
                 .check(matches(isDisplayed()));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.tasks_surface_body))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.tasks_surface_body))
                 .check(matches(isDisplayed()));
 
         if (!isInstantReturn()) {
             // TODO(crbug.com/1076274): fix toolbar to make incognito switch part of the view.
-            onView(withId(org.chromium.chrome.tab_ui.R.id.incognito_toggle_tabs))
+            onView(withId(org.monyhar.chrome.tab_ui.R.id.incognito_toggle_tabs))
                     .check(matches(withEffectiveVisibility(GONE)));
         }
 
@@ -401,24 +401,24 @@ public class StartSurfaceTest {
 
         onViewWaiting(withId(R.id.primary_tasks_surface_view));
         onViewWaiting(withId(R.id.search_box_text));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.mv_tiles_container))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.mv_tiles_container))
                 .check(matches(withEffectiveVisibility(GONE)));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.tab_switcher_title))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.tab_switcher_title))
                 .check(matches(isDisplayed()));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.carousel_tab_switcher_container))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.carousel_tab_switcher_container))
                 .check(matches(isDisplayed()));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.single_tab_view))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.single_tab_view))
                 .check(matches(isDisplayed()));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.tasks_surface_body))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.tasks_surface_body))
                 .check(matches(isDisplayed()));
 
         if (!isInstantReturn()) {
             // TODO(crbug.com/1076274): fix toolbar to make incognito switch part of the view.
-            onView(withId(org.chromium.chrome.tab_ui.R.id.incognito_toggle_tabs))
+            onView(withId(org.monyhar.chrome.tab_ui.R.id.incognito_toggle_tabs))
                     .check(matches(withEffectiveVisibility(GONE)));
         }
         onViewWaiting(allOf(
-                withId(org.chromium.chrome.tab_ui.R.id.tab_title_view), withText(not(is("")))));
+                withId(org.monyhar.chrome.tab_ui.R.id.tab_title_view), withText(not(is("")))));
 
         StartSurfaceTestUtils.clickMoreTabs(cta);
         onViewWaiting(withId(R.id.secondary_tasks_surface_view));
@@ -432,7 +432,7 @@ public class StartSurfaceTest {
         onViewWaiting(withId(R.id.primary_tasks_surface_view));
 
         OverviewModeBehaviorWatcher hideWatcher = TabUiTestHelper.createOverviewHideWatcher(cta);
-        onViewWaiting(withId(org.chromium.chrome.tab_ui.R.id.single_tab_view)).perform(click());
+        onViewWaiting(withId(org.monyhar.chrome.tab_ui.R.id.single_tab_view)).perform(click());
         hideWatcher.waitForBehavior();
     }
 
@@ -461,8 +461,8 @@ public class StartSurfaceTest {
 
         OverviewModeBehaviorWatcher hideWatcher =
                 TabUiTestHelper.createOverviewHideWatcher(mActivityTestRule.getActivity());
-        onViewWaiting(allOf(withParent(withId(org.chromium.chrome.tab_ui.R.id.tasks_surface_body)),
-                              withId(org.chromium.chrome.tab_ui.R.id.tab_list_view)))
+        onViewWaiting(allOf(withParent(withId(org.monyhar.chrome.tab_ui.R.id.tasks_surface_body)),
+                              withId(org.monyhar.chrome.tab_ui.R.id.tab_list_view)))
                 .perform(RecyclerViewActions.actionOnItemAtPosition(0, click()));
         hideWatcher.waitForBehavior();
     }
@@ -788,14 +788,14 @@ public class StartSurfaceTest {
                 mLayoutChangedCallbackHelper, mCurrentlyActiveLayout);
         StartSurfaceTestUtils.waitForTabModel(cta);
         TabUiTestHelper.verifyTabModelTabCount(cta, 1, 0);
-        assertEquals(cta.findViewById(org.chromium.chrome.tab_ui.R.id.tab_switcher_title)
+        assertEquals(cta.findViewById(org.monyhar.chrome.tab_ui.R.id.tab_switcher_title)
                              .getVisibility(),
                 View.VISIBLE);
 
         TestThreadUtils.runOnUiThreadBlocking(
                 () -> { cta.getTabModelSelector().getModel(false).closeAllTabs(); });
         TabUiTestHelper.verifyTabModelTabCount(cta, 0, 0);
-        assertEquals(cta.findViewById(org.chromium.chrome.tab_ui.R.id.tab_switcher_title)
+        assertEquals(cta.findViewById(org.monyhar.chrome.tab_ui.R.id.tab_switcher_title)
                              .getVisibility(),
                 View.GONE);
     }
@@ -826,36 +826,36 @@ public class StartSurfaceTest {
         if (mImmediateReturn) {
             StartSurfaceTestUtils.clickFirstTabInCarousel();
         } else {
-            onViewWaiting(allOf(withId(org.chromium.chrome.tab_ui.R.id.toolbar_left_button),
+            onViewWaiting(allOf(withId(org.monyhar.chrome.tab_ui.R.id.toolbar_left_button),
                                   isDescendantOfA(withId(R.id.bottom_controls))))
                     .perform(click());
         }
         onViewWaiting(
-                allOf(withId(org.chromium.chrome.tab_ui.R.id.tab_list_view),
-                        withParent(withId(org.chromium.chrome.tab_ui.R.id.dialog_container_view))))
+                allOf(withId(org.monyhar.chrome.tab_ui.R.id.tab_list_view),
+                        withParent(withId(org.monyhar.chrome.tab_ui.R.id.dialog_container_view))))
                 .check(TabUiTestHelper.ChildrenCountAssertion.havingTabCount(2));
 
         // Show start surface through tab grid dialog toolbar plus button and create a new tab by
         // clicking on MV tiles.
-        onView(allOf(withId(org.chromium.chrome.tab_ui.R.id.toolbar_right_button),
+        onView(allOf(withId(org.monyhar.chrome.tab_ui.R.id.toolbar_right_button),
                        isDescendantOfA(
-                               withId(org.chromium.chrome.tab_ui.R.id.dialog_container_view))))
+                               withId(org.monyhar.chrome.tab_ui.R.id.dialog_container_view))))
                 .perform(click());
         StartSurfaceTestUtils.launchFirstMVTile(cta, /* currentTabCount = */ 2);
 
         // Verify a tab is created within the group by checking the tab strip and tab model.
-        onView(withId(org.chromium.chrome.tab_ui.R.id.toolbar_container_view))
-                .check(waitForView(allOf(withId(org.chromium.chrome.tab_ui.R.id.tab_list_view),
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.toolbar_container_view))
+                .check(waitForView(allOf(withId(org.monyhar.chrome.tab_ui.R.id.tab_list_view),
                         isCompletelyDisplayed())));
-        onView(allOf(withId(org.chromium.chrome.tab_ui.R.id.tab_list_view),
-                       withParent(withId(org.chromium.chrome.tab_ui.R.id.toolbar_container_view))))
+        onView(allOf(withId(org.monyhar.chrome.tab_ui.R.id.tab_list_view),
+                       withParent(withId(org.monyhar.chrome.tab_ui.R.id.toolbar_container_view))))
                 .check(TabUiTestHelper.ChildrenCountAssertion.havingTabCount(3));
         assertEquals(1, filter.getTabGroupCount());
 
         // Show start surface through tab strip plus button and create a new tab by perform a query
         // search in fake box.
-        onView(allOf(withId(org.chromium.chrome.tab_ui.R.id.toolbar_right_button),
-                       isDescendantOfA(withId(org.chromium.chrome.tab_ui.R.id.bottom_controls))))
+        onView(allOf(withId(org.monyhar.chrome.tab_ui.R.id.toolbar_right_button),
+                       isDescendantOfA(withId(org.monyhar.chrome.tab_ui.R.id.bottom_controls))))
                 .perform(click());
         onViewWaiting(withId(R.id.search_box_text))
                 .check(matches(isCompletelyDisplayed()))
@@ -863,11 +863,11 @@ public class StartSurfaceTest {
         onView(withId(R.id.url_bar)).perform(pressKey(KeyEvent.KEYCODE_ENTER));
 
         // Verify a tab is created within the group by checking the tab strip and tab model.
-        onView(withId(org.chromium.chrome.tab_ui.R.id.toolbar_container_view))
-                .check(waitForView(allOf(withId(org.chromium.chrome.tab_ui.R.id.tab_list_view),
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.toolbar_container_view))
+                .check(waitForView(allOf(withId(org.monyhar.chrome.tab_ui.R.id.tab_list_view),
                         isCompletelyDisplayed())));
-        onView(allOf(withId(org.chromium.chrome.tab_ui.R.id.tab_list_view),
-                       withParent(withId(org.chromium.chrome.tab_ui.R.id.toolbar_container_view))))
+        onView(allOf(withId(org.monyhar.chrome.tab_ui.R.id.tab_list_view),
+                       withParent(withId(org.monyhar.chrome.tab_ui.R.id.toolbar_container_view))))
                 .check(TabUiTestHelper.ChildrenCountAssertion.havingTabCount(4));
         assertEquals(4, cta.getTabModelSelector().getCurrentModel().getCount());
         assertEquals(1, filter.getTabGroupCount());
@@ -961,7 +961,7 @@ public class StartSurfaceTest {
         // Scroll the toolbar.
         StartSurfaceTestUtils.scrollToolbar(cta);
         AppBarLayout taskSurfaceHeader =
-                cta.findViewById(org.chromium.chrome.tab_ui.R.id.task_surface_header);
+                cta.findViewById(org.monyhar.chrome.tab_ui.R.id.task_surface_header);
         assertNotEquals(taskSurfaceHeader.getBottom(), taskSurfaceHeader.getHeight());
 
         // Verifies the case of scrolling Start surface ->  tab switcher -> tap "+1" button ->
@@ -1008,7 +1008,7 @@ public class StartSurfaceTest {
         StartSurfaceTestUtils.launchFirstMVTile(cta, /* currentTabCount = */ 1);
         StartSurfaceTestUtils.pressHomePageButton(cta);
         onViewWaiting(withId(R.id.primary_tasks_surface_view));
-        onView(allOf(withId(org.chromium.chrome.tab_ui.R.id.tab_list_view), isDisplayed()));
+        onView(allOf(withId(org.monyhar.chrome.tab_ui.R.id.tab_list_view), isDisplayed()));
 
         // Launches the new tab from the carousel tab switcher, and press back button.
         StartSurfaceTestUtils.clickTabInCarousel(/* position = */ 1);
@@ -1048,7 +1048,7 @@ public class StartSurfaceTest {
         StartSurfaceTestUtils.waitForOverviewVisible(
                 mLayoutChangedCallbackHelper, mCurrentlyActiveLayout);
         onViewWaiting(
-                allOf(withId(org.chromium.chrome.tab_ui.R.id.mv_tiles_container), isDisplayed()));
+                allOf(withId(org.monyhar.chrome.tab_ui.R.id.mv_tiles_container), isDisplayed()));
 
         // Launches the first site in mv tiles.
         StartSurfaceTestUtils.launchFirstMVTile(cta, /* currentTabCount = */ 1);
@@ -1062,12 +1062,12 @@ public class StartSurfaceTest {
         }
 
         // Enters the tab switcher, and choose the new tab. After the tab is opening, press back.
-        waitForView(withId(org.chromium.chrome.tab_ui.R.id.tab_switcher_button));
+        waitForView(withId(org.monyhar.chrome.tab_ui.R.id.tab_switcher_button));
         TabUiTestHelper.enterTabSwitcher(cta);
         waitForView(withId(R.id.secondary_tasks_surface_view));
-        waitForView(withId(org.chromium.chrome.tab_ui.R.id.tab_list_view));
-        onView(allOf(withParent(withId(org.chromium.chrome.tab_ui.R.id.tasks_surface_body)),
-                       withId(org.chromium.chrome.tab_ui.R.id.tab_list_view)))
+        waitForView(withId(org.monyhar.chrome.tab_ui.R.id.tab_list_view));
+        onView(allOf(withParent(withId(org.monyhar.chrome.tab_ui.R.id.tasks_surface_body)),
+                       withId(org.monyhar.chrome.tab_ui.R.id.tab_list_view)))
                 .perform(RecyclerViewActions.actionOnItemAtPosition(1, click()));
         CriteriaHelper.pollUiThread(() -> !cta.getLayoutManager().overviewVisible());
         Assert.assertEquals(TabLaunchType.FROM_START_SURFACE,
@@ -1120,9 +1120,9 @@ public class StartSurfaceTest {
         TabUiTestHelper.verifyTabModelTabCount(cta, 1, 0);
 
         OverviewModeBehaviorWatcher hideWatcher = TabUiTestHelper.createOverviewHideWatcher(cta);
-        onViewWaiting(withId(org.chromium.chrome.start_surface.R.id.search_box_text))
+        onViewWaiting(withId(org.monyhar.chrome.start_surface.R.id.search_box_text))
                 .perform(replaceText("about:blank"));
-        onView(withId(org.chromium.chrome.start_surface.R.id.url_bar))
+        onView(withId(org.monyhar.chrome.start_surface.R.id.url_bar))
                 .perform(pressKey(KeyEvent.KEYCODE_ENTER));
         hideWatcher.waitForBehavior();
         TabUiTestHelper.verifyTabModelTabCount(cta, 2, 0);
@@ -1133,10 +1133,10 @@ public class StartSurfaceTest {
 
         StartSurfaceTestUtils.clickFirstTabInCarousel();
         onViewWaiting(allOf(
-                withId(org.chromium.chrome.tab_ui.R.id.dialog_container_view), isDisplayed()));
+                withId(org.monyhar.chrome.tab_ui.R.id.dialog_container_view), isDisplayed()));
 
         pressBack();
-        waitForView(withId(org.chromium.chrome.tab_ui.R.id.dialog_container_view), VIEW_GONE);
+        waitForView(withId(org.monyhar.chrome.tab_ui.R.id.dialog_container_view), VIEW_GONE);
         onView(withId(R.id.primary_tasks_surface_view)).check(matches(isDisplayed()));
     }
 
@@ -1182,7 +1182,7 @@ public class StartSurfaceTest {
             // omnibox.
             return;
         }
-        onViewWaiting(withId(org.chromium.chrome.tab_ui.R.id.tab_switcher_button));
+        onViewWaiting(withId(org.monyhar.chrome.tab_ui.R.id.tab_switcher_button));
         TabUiTestHelper.enterTabSwitcher(cta);
 
         waitForView(withId(R.id.secondary_tasks_surface_view));
@@ -1193,9 +1193,9 @@ public class StartSurfaceTest {
         robot.resultRobot.verifyTabSelectionEditorIsVisible()
                 .verifyToolbarActionButtonDisabled()
                 .verifyToolbarActionButtonWithResourceId(
-                        org.chromium.chrome.tab_ui.R.string.tab_selection_editor_group)
+                        org.monyhar.chrome.tab_ui.R.string.tab_selection_editor_group)
                 .verifyToolbarSelectionTextWithResourceId(
-                        org.chromium.chrome.tab_ui.R.string
+                        org.monyhar.chrome.tab_ui.R.string
                                 .tab_selection_editor_toolbar_select_tabs)
                 .verifyAdapterHasItemCount(tabs.size())
                 .verifyHasAtLeastNItemVisible(2);
@@ -1209,7 +1209,7 @@ public class StartSurfaceTest {
         TestThreadUtils.runOnUiThreadBlocking(
                 () -> startSurfaceCoordinator.showTabSelectionEditorForTesting(tabs));
         robot.resultRobot.verifyToolbarActionButtonWithResourceId(
-                org.chromium.chrome.tab_ui.R.string.tab_selection_editor_group);
+                org.monyhar.chrome.tab_ui.R.string.tab_selection_editor_group);
         robot.actionRobot.clickItemAtAdapterPosition(0)
                 .clickItemAtAdapterPosition(1)
                 .clickToolbarActionButton();
@@ -1217,8 +1217,8 @@ public class StartSurfaceTest {
 
         // Opens the TabGridDialog by clicking the first group card.
         onViewWaiting(Matchers.allOf(withParent(withId(
-                                             org.chromium.chrome.tab_ui.R.id.tasks_surface_body)),
-                              withId(org.chromium.chrome.tab_ui.R.id.tab_list_view)))
+                                             org.monyhar.chrome.tab_ui.R.id.tasks_surface_body)),
+                              withId(org.monyhar.chrome.tab_ui.R.id.tab_list_view)))
                 .perform(RecyclerViewActions.actionOnItemAtPosition(0, click()));
         CriteriaHelper.pollUiThread(() -> isTabGridDialogShown(cta));
 
@@ -1264,7 +1264,7 @@ public class StartSurfaceTest {
 
         // When show_last_active_tab_only is enabled, we need to enter the tab switcher first to
         // initialize the secondary task surface which shows the TabSelectionEditor dialog.
-        onViewWaiting(withId(org.chromium.chrome.tab_ui.R.id.tab_switcher_button));
+        onViewWaiting(withId(org.monyhar.chrome.tab_ui.R.id.tab_switcher_button));
         if (isInstantReturn()) {
             // TODO(crbug.com/1076274): fix toolbar to avoid wrongly focusing on the toolbar
             // omnibox.
@@ -1286,9 +1286,9 @@ public class StartSurfaceTest {
         robot.resultRobot.verifyTabSelectionEditorIsVisible()
                 .verifyToolbarActionButtonDisabled()
                 .verifyToolbarActionButtonWithResourceId(
-                        org.chromium.chrome.tab_ui.R.string.tab_selection_editor_group)
+                        org.monyhar.chrome.tab_ui.R.string.tab_selection_editor_group)
                 .verifyToolbarSelectionTextWithResourceId(
-                        org.chromium.chrome.tab_ui.R.string
+                        org.monyhar.chrome.tab_ui.R.string
                                 .tab_selection_editor_toolbar_select_tabs)
                 .verifyAdapterHasItemCount(tabs.size())
                 .verifyHasAtLeastNItemVisible(2);
@@ -1472,10 +1472,10 @@ public class StartSurfaceTest {
 
         StartSurfaceTestUtils.clickMoreTabs(cta);
         waitForView(withId(R.id.secondary_tasks_surface_view));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.home_button_on_tab_switcher))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.home_button_on_tab_switcher))
                 .check(matches(isDisplayed()));
         HomeButton homeButton =
-                cta.findViewById(org.chromium.chrome.tab_ui.R.id.home_button_on_tab_switcher);
+                cta.findViewById(org.monyhar.chrome.tab_ui.R.id.home_button_on_tab_switcher);
         Assert.assertFalse(homeButton.isLongClickable());
         onView(withId(R.id.home_button_on_tab_switcher)).perform(click());
 
@@ -1496,8 +1496,8 @@ public class StartSurfaceTest {
                     mLayoutChangedCallbackHelper, mCurrentlyActiveLayout);
 
             onViewWaiting(
-                    allOf(withId(org.chromium.chrome.tab_ui.R.id.mv_tiles_layout), isDisplayed()));
-            onViewWaiting(withId(org.chromium.chrome.tab_ui.R.id.carousel_tab_switcher_container));
+                    allOf(withId(org.monyhar.chrome.tab_ui.R.id.mv_tiles_layout), isDisplayed()));
+            onViewWaiting(withId(org.monyhar.chrome.tab_ui.R.id.carousel_tab_switcher_container));
             onViewWaiting(withId(R.id.start_tab_switcher_button));
 
             // Launch a tab. The home button should show on the normal tab.
@@ -1510,9 +1510,9 @@ public class StartSurfaceTest {
         // MV tiles and carousel tab switcher should not show anymore.
         StartSurfaceTestUtils.waitForOverviewVisible(cta);
         onViewWaiting(withId(R.id.start_tab_switcher_button));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.mv_tiles_container))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.mv_tiles_container))
                 .check(matches(withEffectiveVisibility(GONE)));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.carousel_tab_switcher_container))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.carousel_tab_switcher_container))
                 .check(matches(withEffectiveVisibility(GONE)));
     }
 
@@ -1529,8 +1529,8 @@ public class StartSurfaceTest {
             StartSurfaceTestUtils.waitForOverviewVisible(
                     mLayoutChangedCallbackHelper, mCurrentlyActiveLayout);
 
-            onViewWaiting(withId(org.chromium.chrome.tab_ui.R.id.mv_tiles_layout));
-            onViewWaiting(withId(org.chromium.chrome.tab_ui.R.id.carousel_tab_switcher_container));
+            onViewWaiting(withId(org.monyhar.chrome.tab_ui.R.id.mv_tiles_layout));
+            onViewWaiting(withId(org.monyhar.chrome.tab_ui.R.id.carousel_tab_switcher_container));
             onViewWaiting(withId(R.id.start_tab_switcher_button));
 
             // Launch a tab. The home button should show on the normal tab.
@@ -1544,9 +1544,9 @@ public class StartSurfaceTest {
         // MV tiles should shown and carousel tab switcher should not show anymore.
         StartSurfaceTestUtils.waitForOverviewVisible(cta);
         onViewWaiting(withId(R.id.start_tab_switcher_button));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.mv_tiles_layout))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.mv_tiles_layout))
                 .check(matches(withEffectiveVisibility(VISIBLE)));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.carousel_tab_switcher_container))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.carousel_tab_switcher_container))
                 .check(matches(withEffectiveVisibility(GONE)));
     }
 
@@ -1579,23 +1579,23 @@ public class StartSurfaceTest {
         StartSurfaceTestUtils.pressHomePageButton(cta);
         overviewModeWatcher.waitForBehavior();
         waitForView(allOf(
-                withParent(withId(org.chromium.chrome.tab_ui.R.id.carousel_tab_switcher_container)),
-                withId(org.chromium.chrome.tab_ui.R.id.tab_list_view)));
+                withParent(withId(org.monyhar.chrome.tab_ui.R.id.carousel_tab_switcher_container)),
+                withId(org.monyhar.chrome.tab_ui.R.id.tab_list_view)));
 
-        RecyclerView recyclerView = cta.findViewById(org.chromium.chrome.tab_ui.R.id.tab_list_view);
+        RecyclerView recyclerView = cta.findViewById(org.monyhar.chrome.tab_ui.R.id.tab_list_view);
         assertEquals(2, recyclerView.getChildCount());
         // Verifies that the tabs are shown in MRU order: the first card in the carousel Tab
         // switcher is the last created Tab by tapping the MV tile; the second card is the Tab
         // created or restored in setup().
         RecyclerView.ViewHolder firstViewHolder = recyclerView.findViewHolderForAdapterPosition(0);
         TextView title1 =
-                firstViewHolder.itemView.findViewById(org.chromium.chrome.tab_ui.R.id.tab_title);
+                firstViewHolder.itemView.findViewById(org.monyhar.chrome.tab_ui.R.id.tab_title);
         TestThreadUtils.runOnUiThreadBlocking(
                 () -> Assert.assertEquals(tab2.getTitle(), title1.getText()));
 
         RecyclerView.ViewHolder secondViewHolder = recyclerView.findViewHolderForAdapterPosition(1);
         TextView title2 =
-                secondViewHolder.itemView.findViewById(org.chromium.chrome.tab_ui.R.id.tab_title);
+                secondViewHolder.itemView.findViewById(org.monyhar.chrome.tab_ui.R.id.tab_title);
         TestThreadUtils.runOnUiThreadBlocking(
                 () -> Assert.assertEquals(tab1.getTitle(), title2.getText()));
     }
@@ -1648,24 +1648,24 @@ public class StartSurfaceTest {
         // Enter the Tab switcher.
         TabUiTestHelper.enterTabSwitcher(cta);
         waitForView(allOf(withParent(withId(R.id.secondary_tasks_surface_view)),
-                withId(org.chromium.chrome.tab_ui.R.id.tab_list_view)));
+                withId(org.monyhar.chrome.tab_ui.R.id.tab_list_view)));
 
         ViewGroup secondaryTaskSurface = cta.findViewById(R.id.secondary_tasks_surface_view);
         RecyclerView recyclerView =
-                secondaryTaskSurface.findViewById(org.chromium.chrome.tab_ui.R.id.tab_list_view);
+                secondaryTaskSurface.findViewById(org.monyhar.chrome.tab_ui.R.id.tab_list_view);
         assertEquals(2, recyclerView.getChildCount());
         // Verifies that the tabs are shown in MRU order: the first card in the Tab switcher is the
         // last created Tab by tapping the MV tile; the second card is the Tab created or restored
         // in setup().
         RecyclerView.ViewHolder firstViewHolder = recyclerView.findViewHolderForAdapterPosition(0);
         TextView title1 =
-                firstViewHolder.itemView.findViewById(org.chromium.chrome.tab_ui.R.id.tab_title);
+                firstViewHolder.itemView.findViewById(org.monyhar.chrome.tab_ui.R.id.tab_title);
         TestThreadUtils.runOnUiThreadBlocking(
                 () -> Assert.assertEquals(tab2.getTitle(), title1.getText()));
 
         RecyclerView.ViewHolder secondViewHolder = recyclerView.findViewHolderForAdapterPosition(1);
         TextView title2 =
-                secondViewHolder.itemView.findViewById(org.chromium.chrome.tab_ui.R.id.tab_title);
+                secondViewHolder.itemView.findViewById(org.monyhar.chrome.tab_ui.R.id.tab_title);
         TestThreadUtils.runOnUiThreadBlocking(
                 () -> Assert.assertEquals(tab1.getTitle(), title2.getText()));
     }
@@ -1834,16 +1834,16 @@ public class StartSurfaceTest {
     }
 
     private MvTilesLayout getMvTilesLayout() {
-        onViewWaiting(withId(org.chromium.chrome.tab_ui.R.id.mv_tiles_layout));
+        onViewWaiting(withId(org.monyhar.chrome.tab_ui.R.id.mv_tiles_layout));
         MvTilesLayout mvTilesLayout = mActivityTestRule.getActivity().findViewById(
-                org.chromium.chrome.tab_ui.R.id.mv_tiles_layout);
+                org.monyhar.chrome.tab_ui.R.id.mv_tiles_layout);
         Assert.assertNotNull("Unable to retrieve the MvTilesLayout.", mvTilesLayout);
         return mvTilesLayout;
     }
 
     private View getTileViewFor(SiteSuggestion suggestion) {
         onViewWaiting(
-                allOf(withId(org.chromium.chrome.tab_ui.R.id.mv_tiles_layout), isDisplayed()));
+                allOf(withId(org.monyhar.chrome.tab_ui.R.id.mv_tiles_layout), isDisplayed()));
         View tileView = getMvTilesLayout().getTileViewForTesting(suggestion);
         Assert.assertNotNull("Tile not found for suggestion " + suggestion.url, tileView);
 
@@ -1939,12 +1939,12 @@ public class StartSurfaceTest {
     }
 
     private boolean isTabGridDialogShown(ChromeTabbedActivity cta) {
-        View dialogView = cta.findViewById(org.chromium.chrome.tab_ui.R.id.dialog_parent_view);
+        View dialogView = cta.findViewById(org.monyhar.chrome.tab_ui.R.id.dialog_parent_view);
         return dialogView.getVisibility() == View.VISIBLE && dialogView.getAlpha() == 1f;
     }
 
     private boolean isTabGridDialogHidden(ChromeTabbedActivity cta) {
-        View dialogView = cta.findViewById(org.chromium.chrome.tab_ui.R.id.dialog_parent_view);
+        View dialogView = cta.findViewById(org.monyhar.chrome.tab_ui.R.id.dialog_parent_view);
         return dialogView.getVisibility() == View.GONE;
     }
 }

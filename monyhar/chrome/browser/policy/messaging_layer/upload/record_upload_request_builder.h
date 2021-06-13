@@ -80,7 +80,7 @@ class UploadEncryptedReportingRequestBuilder {
       bool attach_encryption_settings = false);
   ~UploadEncryptedReportingRequestBuilder();
 
-  // TODO(chromium:1165908) Have AddRecord take ownership of the record that is
+  // TODO(monyhar:1165908) Have AddRecord take ownership of the record that is
   // passed in.
   UploadEncryptedReportingRequestBuilder& AddRecord(
       const EncryptedRecord& record);

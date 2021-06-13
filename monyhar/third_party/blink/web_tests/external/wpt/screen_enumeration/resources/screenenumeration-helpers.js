@@ -9,7 +9,7 @@
 async function loadChromiumResources() {
   await loadScript('/resources/testdriver.js');
   await loadScript('/resources/testdriver-vendor.js');
-  const {HelperTypes} = await import('/resources/chromium/mock-screenenumeration.js');
+  const {HelperTypes} = await import('/resources/monyhar/mock-screenenumeration.js');
   self.HelperTypes = HelperTypes;
 }
 

@@ -308,10 +308,10 @@ void AddExternalClearKey(std::vector<content::CdmInfo>* cdms) {
   // TODO(crbug.com/764480): Remove these after we have a central place for
   // External Clear Key (ECK) related information.
   // Normal External Clear Key key system.
-  const char kExternalClearKeyKeySystem[] = "org.chromium.externalclearkey";
+  const char kExternalClearKeyKeySystem[] = "org.monyhar.externalclearkey";
   // A variant of ECK key system that has a different GUID.
   const char kExternalClearKeyDifferentGuidTestKeySystem[] =
-      "org.chromium.externalclearkey.differentguid";
+      "org.monyhar.externalclearkey.differentguid";
 
   // Supported codecs are hard-coded in ExternalClearKeyProperties.
   media::CdmCapability capability(

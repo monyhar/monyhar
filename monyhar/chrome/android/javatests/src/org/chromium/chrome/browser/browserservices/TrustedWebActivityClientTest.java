@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices;
+package org.monyhar.chrome.browser.browserservices;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -27,20 +27,20 @@ import org.junit.Test;
 import org.junit.rules.TestRule;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ChromeApplicationImpl;
-import org.chromium.chrome.browser.dependency_injection.ChromeAppComponent;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.notifications.NotificationUmaTracker;
-import org.chromium.chrome.browser.notifications.StandardNotificationBuilder;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.chrome.test.util.browser.Features.EnableFeatures;
-import org.chromium.components.embedder_support.util.Origin;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ChromeApplicationImpl;
+import org.monyhar.chrome.browser.dependency_injection.ChromeAppComponent;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.notifications.NotificationUmaTracker;
+import org.monyhar.chrome.browser.notifications.StandardNotificationBuilder;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.chrome.test.util.browser.Features.EnableFeatures;
+import org.monyhar.components.embedder_support.util.Origin;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 import java.util.Collections;
 import java.util.concurrent.TimeoutException;
@@ -72,9 +72,9 @@ public class TrustedWebActivityClientTest {
     private static final int NOTIFICATION_ID = 123;
 
     private static final String TEST_SUPPORT_PACKAGE =
-            "org.chromium.chrome.tests.support";
+            "org.monyhar.chrome.tests.support";
     private static final String MESSENGER_SERVICE_NAME =
-            "org.chromium.chrome.browser.browserservices.MessengerService";
+            "org.monyhar.chrome.browser.browserservices.MessengerService";
 
     @Rule
     public final TestRule mProcessor = new Features.JUnitProcessor();

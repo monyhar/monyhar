@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.offline_items_collection;
+package org.monyhar.components.offline_items_collection;
 
 /**
  * Java counter part of OfflineItemSchedule in native, see

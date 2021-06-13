@@ -8,7 +8,7 @@ the error.
 It is also known by its recursive backronym, GWP-ASan Will Provide Allocation
 Sanity.
 
-To read a more in-depth explanation of GWP-ASan see [this post](https://sites.google.com/a/chromium.org/dev/Home/chromium-security/articles/gwp-asan).
+To read a more in-depth explanation of GWP-ASan see [this post](https://sites.google.com/a/monyhar.org/dev/Home/monyhar-security/articles/gwp-asan).
 
 ## Allocator
 
@@ -66,7 +66,7 @@ GWP-ASan is tuned more aggressively in canary/dev, to increase the likelihood we
 catch newly introduced bugs, and for specific processes depending on the
 particular allocator.
 
-A [hotlist of bugs discovered by by GWP-ASan](https://bugs.chromium.org/p/chromium/issues/list?can=1&q=Hotlist%3DGWP-ASan)
+A [hotlist of bugs discovered by by GWP-ASan](https://bugs.monyhar.org/p/monyhar/issues/list?can=1&q=Hotlist%3DGWP-ASan)
 exists, though GWP-ASan crashes are filed Bug-Security, e.g. without external
 visibility, by default.
 

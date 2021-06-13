@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webauth.authenticator;
+package org.monyhar.chrome.browser.webauth.authenticator;
 
 import android.content.Context;
 import android.hardware.usb.UsbAccessory;
@@ -13,12 +13,12 @@ import android.system.Os;
 import android.system.OsConstants;
 import android.system.StructPollfd;
 
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.task.SingleThreadTaskRunner;
-import org.chromium.base.task.TaskTraits;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.task.SingleThreadTaskRunner;
+import org.monyhar.base.task.TaskTraits;
 
 import java.io.Closeable;
 import java.io.FileDescriptor;

@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.user_data.additional_sections;
+package org.monyhar.chrome.browser.autofill_assistant.user_data.additional_sections;
 
-import static org.chromium.chrome.browser.autofill.prefeditor.EditorFieldModel.INPUT_TYPE_HINT_ALPHA_NUMERIC;
+import static org.monyhar.chrome.browser.autofill.prefeditor.EditorFieldModel.INPUT_TYPE_HINT_ALPHA_NUMERIC;
 
 import android.content.Context;
 import android.text.Editable;
@@ -19,15 +19,15 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.core.util.Pair;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.Callback;
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.autofill.prefeditor.EditorFieldModel;
-import org.chromium.chrome.browser.autofill.prefeditor.EditorTextField;
-import org.chromium.chrome.browser.autofill_assistant.AssistantTextUtils;
-import org.chromium.chrome.browser.autofill_assistant.LayoutUtils;
-import org.chromium.chrome.browser.autofill_assistant.generic_ui.AssistantValue;
-import org.chromium.chrome.browser.autofill_assistant.user_data.AssistantVerticalExpander;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.autofill.prefeditor.EditorFieldModel;
+import org.monyhar.chrome.browser.autofill.prefeditor.EditorTextField;
+import org.monyhar.chrome.browser.autofill_assistant.AssistantTextUtils;
+import org.monyhar.chrome.browser.autofill_assistant.LayoutUtils;
+import org.monyhar.chrome.browser.autofill_assistant.generic_ui.AssistantValue;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantVerticalExpander;
 
 import java.util.ArrayList;
 import java.util.List;

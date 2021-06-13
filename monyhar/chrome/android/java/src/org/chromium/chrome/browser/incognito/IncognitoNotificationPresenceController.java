@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.incognito;
+package org.monyhar.chrome.browser.incognito;
 
-import org.chromium.chrome.browser.tabmodel.IncognitoTabModelObserver;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.IncognitoTabModelObserver;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
 
 /**
  * Controls the presence incognito notification through {@link IncognitoNotificationManager}.

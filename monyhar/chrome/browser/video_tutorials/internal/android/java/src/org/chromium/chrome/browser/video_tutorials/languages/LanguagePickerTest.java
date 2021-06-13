@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.video_tutorials.languages;
+package org.monyhar.chrome.browser.video_tutorials.languages;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
@@ -25,15 +25,15 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.test.BaseActivityTestRule;
-import org.chromium.chrome.browser.video_tutorials.FeatureType;
-import org.chromium.chrome.browser.video_tutorials.LanguageInfoProvider;
-import org.chromium.chrome.browser.video_tutorials.R;
-import org.chromium.chrome.browser.video_tutorials.VideoTutorialService;
-import org.chromium.chrome.browser.video_tutorials.test.TestVideoTutorialService;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.ui.test.util.DummyUiActivity;
+import org.monyhar.base.test.BaseActivityTestRule;
+import org.monyhar.chrome.browser.video_tutorials.FeatureType;
+import org.monyhar.chrome.browser.video_tutorials.LanguageInfoProvider;
+import org.monyhar.chrome.browser.video_tutorials.R;
+import org.monyhar.chrome.browser.video_tutorials.VideoTutorialService;
+import org.monyhar.chrome.browser.video_tutorials.test.TestVideoTutorialService;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.ui.test.util.DummyUiActivity;
 
 /**
  * Tests for {@link LanguagePickerCoordinator}.

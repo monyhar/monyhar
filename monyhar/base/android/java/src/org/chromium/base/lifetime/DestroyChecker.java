@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.lifetime;
+package org.monyhar.base.lifetime;
 
 /**
  * Utility class that help ensure destruction of objects happens only once.
  *
  * This class does not guarantee thread safety. When thread safety is desired, please use
- * {@see org.chromium.base.ThreadUtils.ThreadChecker}.
+ * {@see org.monyhar.base.ThreadUtils.ThreadChecker}.
  *
  * To use:
  *   1. In constructor of an instance a DestroyChecker field should be initialized with a new

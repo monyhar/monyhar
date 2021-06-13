@@ -15,7 +15,7 @@ typedef struct ASurfaceControl ASurfaceControl;
 typedef struct ASurfaceTransaction ASurfaceTransaction;
 
 // In order to make small changes backwards compatible, all structs passed from
-// android to chromium are versioned.
+// android to monyhar are versioned.
 //
 // 1 is Android Q. This matches kAwDrawGLInfoVersion version 3.
 // 2 Adds transfer_function_* and color_space_toXYZD50 to AwDrawFn_DrawGLParams.

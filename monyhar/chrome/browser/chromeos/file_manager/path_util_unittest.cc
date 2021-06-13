@@ -234,7 +234,7 @@ TEST_F(FileManagerPathUtilTest, MultiProfileDownloadsFolderMigration) {
   // /home/chronos/u-${HASH}/MyFiles/
   const FilePath kMyFilesFolder = GetMyFilesFolderForProfile(profile_.get());
   // In the device: /home/chronos/user
-  // In browser tests: /tmp/.org.chromium.Chromium.F0Ejp5
+  // In browser tests: /tmp/.org.monyhar.Chromium.F0Ejp5
   const FilePath old_base = DownloadPrefs::GetDefaultDownloadDirectory();
 
   FilePath path;
@@ -701,7 +701,7 @@ TEST_F(FileManagerPathUtilConvertUrlTest, ConvertPathToArcUrl_Removable) {
   EXPECT_TRUE(ConvertPathToArcUrl(
       base::FilePath::FromUTF8Unsafe("/media/removable/a/b/c"), &url,
       &requires_sharing));
-  EXPECT_EQ(GURL("content://org.chromium.arc.volumeprovider/0123-abcd/b/c"),
+  EXPECT_EQ(GURL("content://org.monyhar.arc.volumeprovider/0123-abcd/b/c"),
             url);
   EXPECT_FALSE(requires_sharing);
 }
@@ -715,7 +715,7 @@ TEST_F(FileManagerPathUtilConvertUrlTest, ConvertPathToArcUrl_MyFiles) {
           "user@gmail.com-hash"));
   EXPECT_TRUE(ConvertPathToArcUrl(myfiles.AppendASCII("a/b/c"), &url,
                                   &requires_sharing));
-  EXPECT_EQ(GURL("content://org.chromium.arc.volumeprovider/"
+  EXPECT_EQ(GURL("content://org.monyhar.arc.volumeprovider/"
                  "0000000000000000000000000000CAFEF00D2019/"
                  "a/b/c"),
             url);
@@ -750,7 +750,7 @@ TEST_F(FileManagerPathUtilConvertUrlTest, ConvertPathToArcUrl_Crostini) {
   bool requires_sharing = false;
   EXPECT_TRUE(ConvertPathToArcUrl(crostini_mount_point_.AppendASCII("a/b/c"),
                                   &url, &requires_sharing));
-  EXPECT_EQ(GURL("content://org.chromium.arc.chromecontentprovider/"
+  EXPECT_EQ(GURL("content://org.monyhar.arc.chromecontentprovider/"
                  "externalfile%3A"
                  "crostini_user%40gmail.com-hash_termina_penguin%2Fa%2Fb%2Fc"),
             url);
@@ -766,7 +766,7 @@ TEST_F(FileManagerPathUtilConvertUrlTest, ConvertPathToArcUrl_MyDriveLegacy) {
   // - creating drive mount point name for user
   // - creating externalfile: URL from the path
   // - encoding the URL to Chrome content provider URL
-  EXPECT_EQ(GURL("content://org.chromium.arc.chromecontentprovider/"
+  EXPECT_EQ(GURL("content://org.monyhar.arc.chromecontentprovider/"
                  "externalfile%3Adrivefs-b1f44746e7144c3caafeacaa8bb5c569%2Fa"
                  "%2Fb%2Fc"),
             url);
@@ -786,7 +786,7 @@ TEST_F(FileManagerPathUtilConvertUrlTest, ConvertPathToArcUrl_MyDriveArcvm) {
   bool requires_sharing = false;
   EXPECT_TRUE(ConvertPathToArcUrl(drive_mount_point_.AppendASCII("a/b/c"), &url,
                                   &requires_sharing));
-  EXPECT_EQ(GURL("content://org.chromium.arc.volumeprovider/"
+  EXPECT_EQ(GURL("content://org.monyhar.arc.volumeprovider/"
                  "MyDrive/a/b/c"),
             url);
   EXPECT_TRUE(requires_sharing);
@@ -823,7 +823,7 @@ TEST_F(FileManagerPathUtilConvertUrlTest, ConvertToContentUrls_Removable) {
             run_loop->Quit();
             ASSERT_EQ(1U, urls.size());
             EXPECT_EQ(
-                GURL("content://org.chromium.arc.volumeprovider/0123-abcd/b/c"),
+                GURL("content://org.monyhar.arc.volumeprovider/0123-abcd/b/c"),
                 urls[0]);
           },
           &run_loop));
@@ -845,7 +845,7 @@ TEST_F(FileManagerPathUtilConvertUrlTest, ConvertToContentUrls_MyFiles) {
              const std::vector<base::FilePath>& paths_to_share) {
             run_loop->Quit();
             ASSERT_EQ(1U, urls.size());
-            EXPECT_EQ(GURL("content://org.chromium.arc.volumeprovider/"
+            EXPECT_EQ(GURL("content://org.monyhar.arc.volumeprovider/"
                            "0000000000000000000000000000CAFEF00D2019/"
                            "a/b/c"),
                       urls[0]);
@@ -887,7 +887,7 @@ TEST_F(FileManagerPathUtilConvertUrlTest, ConvertToContentUrls_Downloads) {
             run_loop->Quit();
             ASSERT_EQ(1U, urls.size());
             EXPECT_EQ(
-                GURL("content://org.chromium.arc.file_system.fileprovider/"
+                GURL("content://org.monyhar.arc.file_system.fileprovider/"
                      "download/a/b/c"),
                 urls[0]);
           },
@@ -927,7 +927,7 @@ TEST_F(FileManagerPathUtilConvertUrlTest, ConvertToContentUrls_Special) {
              const std::vector<base::FilePath>& paths_to_share) {
             run_loop->Quit();
             ASSERT_EQ(1U, urls.size());
-            EXPECT_EQ(GURL("content://org.chromium.arc.chromecontentprovider/"
+            EXPECT_EQ(GURL("content://org.monyhar.arc.chromecontentprovider/"
                            "externalfile%3Adrivefs-b1f44746e7144c3caafeacaa8bb5"
                            "c569%2Fa%2Fb%2Fc"),
                       urls[0]);
@@ -1006,7 +1006,7 @@ TEST_F(FileManagerPathUtilConvertUrlTest, ConvertToContentUrls_AndroidFiles) {
             run_loop->Quit();
             ASSERT_EQ(1U, urls.size());
             EXPECT_EQ(
-                GURL("content://org.chromium.arc.file_system.fileprovider/"
+                GURL("content://org.monyhar.arc.file_system.fileprovider/"
                      "external_files/Pictures/a/b.jpg"),
                 urls[0]);
           },
@@ -1049,14 +1049,14 @@ TEST_F(FileManagerPathUtilConvertUrlTest, ConvertToContentUrls_MultipleUrls) {
             ASSERT_EQ(4U, urls.size());
             EXPECT_EQ(GURL(), urls[0]);  // Invalid URL.
             EXPECT_EQ(
-                GURL("content://org.chromium.arc.volumeprovider/0123-abcd/b/c"),
+                GURL("content://org.monyhar.arc.volumeprovider/0123-abcd/b/c"),
                 urls[1]);
-            EXPECT_EQ(GURL("content://org.chromium.arc.chromecontentprovider/"
+            EXPECT_EQ(GURL("content://org.monyhar.arc.chromecontentprovider/"
                            "externalfile%3Adrivefs-b1f44746e7144c3caafeacaa8bb5"
                            "c569%2Fa%2Fb%2Fc"),
                       urls[2]);
             EXPECT_EQ(
-                GURL("content://org.chromium.arc.file_system.fileprovider/"
+                GURL("content://org.monyhar.arc.file_system.fileprovider/"
                      "external_files/a/b/c"),
                 urls[3]);
           },

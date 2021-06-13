@@ -3,4 +3,4 @@ V8's GC behavior to pass.
 
 This virtual test suite will be removed once WeakRefs ship in V8.
 
-https://bugs.chromium.org/p/chromium/issues/detail?id=1016767
+https://bugs.monyhar.org/p/monyhar/issues/detail?id=1016767

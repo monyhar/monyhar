@@ -21,7 +21,7 @@ class MapsPage(rendering_story.RenderingStory):
 
   The command to upload it to cloud_storage is:
   <path to depot_tools>/upload_to_google_storage.py \
-      maps_perf_test/load_dataset --bucket=chromium-telemetry
+      maps_perf_test/load_dataset --bucket=monyhar-telemetry
 """
   BASE_NAME = 'maps_perf_test'
   URL = 'file://performance.html'

@@ -18,7 +18,7 @@ class CONTENT_EXPORT BluetoothScanningPrompt {
  public:
   // A Java counterpart will be generated for this enum.
   // GENERATED_JAVA_ENUM_PACKAGE: (
-  //   org.chromium.content_public.browser.bluetooth_scanning)
+  //   org.monyhar.content_public.browser.bluetooth_scanning)
   enum class Event {
     kAllow,
     kBlock,

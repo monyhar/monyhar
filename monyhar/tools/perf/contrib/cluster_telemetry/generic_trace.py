@@ -73,7 +73,7 @@ class _GenericTraceBenchmark(perf_benchmark.PerfBenchmark):
     return _GenericTraceMeasurement(options)
 
 
-@benchmark.Info(emails=['wangxianzhu@chromium.org'],
+@benchmark.Info(emails=['wangxianzhu@monyhar.org'],
                 documentation_url='https://bit.ly/2DIOVy3')
 # For local verification.
 class GenericTraceTop25(_GenericTraceBenchmark):
@@ -84,7 +84,7 @@ class GenericTraceTop25(_GenericTraceBenchmark):
     return 'generic_trace.top25'
 
 
-@benchmark.Info(emails=['wangxianzhu@chromium.org'],
+@benchmark.Info(emails=['wangxianzhu@monyhar.org'],
                 documentation_url='https://bit.ly/2DIOVy3')
 class GenericTraceClusterTelemetry(_GenericTraceBenchmark):
   @classmethod

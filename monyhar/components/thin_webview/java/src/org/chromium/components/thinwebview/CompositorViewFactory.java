@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.thinwebview;
+package org.monyhar.components.thinwebview;
 
 import android.content.Context;
 
-import org.chromium.components.thinwebview.internal.CompositorViewImpl;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.components.thinwebview.internal.CompositorViewImpl;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Factory for creating a {@link CompositorView}.

@@ -2,7 +2,7 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
-package: chromium/llvm-build-tools/dsymutil
+package: monyhar/llvm-build-tools/dsymutil
 description: recent dlsymutil for mac builds
 install_mode: copy
 data:

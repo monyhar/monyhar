@@ -148,7 +148,7 @@ const DohProviderEntry::List& DohProviderEntry::GetList() {
                            LoggingLevel::kNormal),
       new DohProviderEntry(
           "NextDns", DohProviderIdForHistogram::kNextDns, {} /* ip_strs */,
-          {} /* dns_over_tls_hostnames */, "https://chromium.dns.nextdns.io",
+          {} /* dns_over_tls_hostnames */, "https://monyhar.dns.nextdns.io",
           "NextDNS" /* ui_name */,
           "https://nextdns.io/privacy" /* privacy_policy */,
           false /* display_globally */, {"US"} /* display_countries */,

@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.messages;
+package org.monyhar.components.messages;
 
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * The public interface for Messages. To interact with messages, feature should obtain a reference

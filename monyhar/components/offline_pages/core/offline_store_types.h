@@ -25,7 +25,7 @@ enum class StoreState {
 };
 
 // Statuses referring to actions taken on items in the stores.
-// GENERATED_JAVA_ENUM_PACKAGE:org.chromium.components.offlinepages
+// GENERATED_JAVA_ENUM_PACKAGE:org.monyhar.components.offlinepages
 enum class ItemActionStatus {
   SUCCESS,
   ALREADY_EXISTS,

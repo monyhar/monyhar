@@ -30,13 +30,13 @@
   parseAndDumpURL('http://example.com/foo////bar/baz.html');
   parseAndDumpURL('http://example.com/foo/bar/////baz.html');
 
-  testSplitLineColumn('http://www.chromium.org');
-  testSplitLineColumn('http://www.chromium.org:8000');
-  testSplitLineColumn('http://www.chromium.org:8000/');
-  testSplitLineColumn('http://www.chromium.org:8000/foo.js:10');
-  testSplitLineColumn('http://www.chromium.org:8000/foo.js:10:20');
-  testSplitLineColumn('http://www.chromium.org/foo.js:10');
-  testSplitLineColumn('http://www.chromium.org/foo.js:10:20');
+  testSplitLineColumn('http://www.monyhar.org');
+  testSplitLineColumn('http://www.monyhar.org:8000');
+  testSplitLineColumn('http://www.monyhar.org:8000/');
+  testSplitLineColumn('http://www.monyhar.org:8000/foo.js:10');
+  testSplitLineColumn('http://www.monyhar.org:8000/foo.js:10:20');
+  testSplitLineColumn('http://www.monyhar.org/foo.js:10');
+  testSplitLineColumn('http://www.monyhar.org/foo.js:10:20');
 
   testExtractExtension('http://example.com/foo.html');
   testExtractExtension('http://example.com/foo.html?hello');

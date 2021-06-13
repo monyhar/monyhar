@@ -197,11 +197,11 @@ def set_up_config(path_finder, chromedriver_server):
   config_path = os.path.join(tempfile.mkdtemp(), "wd_server_config.json")
   os.environ["WD_SERVER_CONFIG_FILE"] = config_path
   # Port numbers are defined at
-  # https://cs.chromium.org/chromium/src/third_party/blink/tools
+  # https://cs.monyhar.org/monyhar/src/third_party/blink/tools
   # /blinkpy/web_tests/servers/wptserve.py?l=23&rcl=375b34c6ba64
   # 5d00c1413e4c6106c7bb74581c85
   config_dict = {
-    "doc_root": path_finder.path_from_chromium_base(CHROMIUM_WPT_DIR),
+    "doc_root": path_finder.path_from_monyhar_base(CHROMIUM_WPT_DIR),
     "browser_host": "web-platform.test",
     "domains": {"": {"": "web-platform.test",
                      "www": "www.web-platform.test",

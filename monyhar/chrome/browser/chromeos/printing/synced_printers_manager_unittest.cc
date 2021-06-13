@@ -32,7 +32,7 @@ namespace {
 
 constexpr char kTestPrinterId[] = "UUID-UUID-UUID-PRINTER";
 constexpr char kTestPrinterId2[] = "UUID-UUID-UUID-PRINTR2";
-constexpr char kTestUri[] = "ipps://printer.chromium.org/ipp/print";
+constexpr char kTestUri[] = "ipps://printer.monyhar.org/ipp/print";
 
 // Helper class to record observed events.
 class LoggingObserver : public SyncedPrintersManager::Observer {

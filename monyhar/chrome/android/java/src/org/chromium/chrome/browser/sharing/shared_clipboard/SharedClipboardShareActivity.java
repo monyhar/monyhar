@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sharing.shared_clipboard;
+package org.monyhar.chrome.browser.sharing.shared_clipboard;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -14,22 +14,22 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.task.TaskTraits;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.init.AsyncInitializationActivity;
-import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
-import org.chromium.chrome.browser.sharing.SharingAdapter;
-import org.chromium.chrome.browser.sharing.SharingServiceProxy;
-import org.chromium.chrome.browser.sharing.SharingServiceProxy.DeviceInfo;
-import org.chromium.chrome.browser.sync.AndroidSyncSettings;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.sync.protocol.SharingSpecificFields;
-import org.chromium.ui.widget.ButtonCompat;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.task.TaskTraits;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.init.AsyncInitializationActivity;
+import org.monyhar.chrome.browser.settings.SettingsLauncherImpl;
+import org.monyhar.chrome.browser.sharing.SharingAdapter;
+import org.monyhar.chrome.browser.sharing.SharingServiceProxy;
+import org.monyhar.chrome.browser.sharing.SharingServiceProxy.DeviceInfo;
+import org.monyhar.chrome.browser.sync.AndroidSyncSettings;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.sync.protocol.SharingSpecificFields;
+import org.monyhar.ui.widget.ButtonCompat;
 
 /**
  * Activity to display device targets to share text.

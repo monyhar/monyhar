@@ -26,7 +26,7 @@ class CAPTURE_EXPORT ScreenCaptureMachineAndroid {
   static base::android::ScopedJavaLocalRef<jobject>
   createScreenCaptureMachineAndroid(jlong nativeScreenCaptureMachineAndroid);
 
-  // Implement org.chromium.media.ScreenCapture.nativeOnRGBAFrameAvailable.
+  // Implement org.monyhar.media.ScreenCapture.nativeOnRGBAFrameAvailable.
   void OnRGBAFrameAvailable(JNIEnv* env,
                             const base::android::JavaRef<jobject>& obj,
                             const base::android::JavaRef<jobject>& buf,
@@ -36,7 +36,7 @@ class CAPTURE_EXPORT ScreenCaptureMachineAndroid {
                             jint width,
                             jint height,
                             jlong timestamp);
-  // Implement org.chromium.media.ScreenCapture.nativeOnI420FrameAvailable.
+  // Implement org.monyhar.media.ScreenCapture.nativeOnI420FrameAvailable.
   void OnI420FrameAvailable(JNIEnv* env,
                             const base::android::JavaRef<jobject>& obj,
                             const base::android::JavaRef<jobject>& y_buffer,
@@ -51,12 +51,12 @@ class CAPTURE_EXPORT ScreenCaptureMachineAndroid {
                             jint height,
                             jlong timestamp);
 
-  // Implement org.chromium.media.ScreenCapture.nativeOnActivityResult.
+  // Implement org.monyhar.media.ScreenCapture.nativeOnActivityResult.
   void OnActivityResult(JNIEnv* env,
                         const base::android::JavaRef<jobject>& obj,
                         jboolean result);
 
-  // Implement org.chromium.media.ScreenCaptuer.nativeOnOrientationChange.
+  // Implement org.monyhar.media.ScreenCaptuer.nativeOnOrientationChange.
   void OnOrientationChange(JNIEnv* env,
                            const base::android::JavaRef<jobject>& obj,
                            jint rotation);

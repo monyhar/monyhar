@@ -21,14 +21,14 @@ from devil.android import flag_changer
 from devil.android.sdk import intent
 
 sys.path.append(os.path.join(_SRC_PATH, 'build', 'android'))
-import devil_chromium
+import devil_monyhar
 from pylib import constants
 
 # Browser Constants
 DEFAULT_BROWSER = 'chrome'
 
 # Action Constants
-ACTION_PACKAGE = 'org.chromium.base'
+ACTION_PACKAGE = 'org.monyhar.base'
 ACTION_TRIM = {
     'moderate' : ACTION_PACKAGE + '.ACTION_TRIM_MEMORY_MODERATE',
     'critical' : ACTION_PACKAGE + '.ACTION_TRIM_MEMORY_RUNNING_CRITICAL',
@@ -85,7 +85,7 @@ def main(argv):
   if not options.browser in constants.PACKAGE_INFO.keys():
     option_parser.error('Unknown browser option ' + options.browser)
 
-  devil_chromium.Initialize()
+  devil_monyhar.Initialize()
 
   package_info = constants.PACKAGE_INFO[options.browser]
 

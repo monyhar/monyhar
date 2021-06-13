@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml
-package: chromium/third_party/r8
+package: monyhar/third_party/r8
 description: >
   R8 is a proguard-like optimizer that also has the option to dex.
 data:

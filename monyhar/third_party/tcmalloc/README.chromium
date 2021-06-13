@@ -11,13 +11,13 @@ This contains Chromium's locally patched copy of tcmalloc.
 
 Contents:
 
-  chromium/
+  monyhar/
 
-    The chromium patched sources, copied from the vendor/
+    The monyhar patched sources, copied from the vendor/
     subdirectory and containing our local modifications.
 
     We only copy over the vendor/src/ subdirectory (the only piece
-    we need) but still leave it in a chromium/src/ subdirectory to
+    we need) but still leave it in a monyhar/src/ subdirectory to
     keep the directory structures in parallel.
 
   vendor/
@@ -35,7 +35,7 @@ HOWTOs:
   2. Checkout and remove git metadata
      $ cd vendor && git checkout gperftools-2.7 && rm .rf .git
   3. Mirror the src folder
-     $ cd  .. && rsync -av --delete vendor/src chromium/src
+     $ cd  .. && rsync -av --delete vendor/src monyhar/src
 
 
 Modifications:

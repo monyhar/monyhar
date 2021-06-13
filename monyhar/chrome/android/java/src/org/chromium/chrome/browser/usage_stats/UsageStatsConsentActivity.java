@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.usage_stats;
+package org.monyhar.chrome.browser.usage_stats;
 
 import android.app.Activity;
 import android.content.ComponentName;
 import android.os.Bundle;
 import android.text.TextUtils;
 
-import org.chromium.chrome.browser.SynchronousInitializationActivity;
+import org.monyhar.chrome.browser.SynchronousInitializationActivity;
 
 /**
  * Activity that prompts the user for consent to share browsing activity with Digital Wellbeing.
  */
 public class UsageStatsConsentActivity extends SynchronousInitializationActivity {
     public static final String UNAUTHORIZE_ACTION =
-            "org.chromium.chrome.browser.usage_stats.action.UNAUTHORIZE";
+            "org.monyhar.chrome.browser.usage_stats.action.UNAUTHORIZE";
 
     private static final String DIGITAL_WELLBEING_PACKAGE_NAME =
             "com.google.android.apps.wellbeing";

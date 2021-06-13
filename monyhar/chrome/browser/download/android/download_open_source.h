@@ -10,7 +10,7 @@
 // this enum will be persisted to server logs and should not be deleted, changed
 // or reused.
 // GENERATED_JAVA_ENUM_PACKAGE: (
-//   org.chromium.chrome.browser.download)
+//   org.monyhar.chrome.browser.download)
 enum class DownloadOpenSource {
   // The action source is unknown.
   kUnknown = 0,

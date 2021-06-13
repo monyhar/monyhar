@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer.test;
+package org.monyhar.weblayer.test;
 
 import android.annotation.TargetApi;
 import android.app.Notification;
@@ -22,16 +22,16 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.base.test.util.MinAndroidSdkLevel;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.ui.test.util.UiDisableIf;
-import org.chromium.weblayer.MediaCaptureCallback;
-import org.chromium.weblayer.TestWebLayer;
-import org.chromium.weblayer.shell.InstrumentationActivity;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.base.test.util.MinAndroidSdkLevel;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.ui.test.util.UiDisableIf;
+import org.monyhar.weblayer.MediaCaptureCallback;
+import org.monyhar.weblayer.TestWebLayer;
+import org.monyhar.weblayer.shell.InstrumentationActivity;
 
 /**
  * Tests that Media Capture and Streams Web API (MediaStream) works as expected.
@@ -254,7 +254,7 @@ public final class MediaCaptureTest {
         }
         Notification notification = null;
         for (StatusBarNotification statusBarNotification : notifications) {
-            if (statusBarNotification.getTag().equals("org.chromium.weblayer.webrtc.avstream")) {
+            if (statusBarNotification.getTag().equals("org.monyhar.weblayer.webrtc.avstream")) {
                 Assert.assertNull(notification);
                 notification = statusBarNotification.getNotification();
                 Assert.assertNotNull(notification.getSmallIcon().loadDrawable(

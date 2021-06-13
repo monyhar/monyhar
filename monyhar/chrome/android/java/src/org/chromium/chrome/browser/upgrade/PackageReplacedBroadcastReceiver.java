@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.upgrade;
+package org.monyhar.chrome.browser.upgrade;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 
-import org.chromium.base.task.PostTask;
-import org.chromium.base.task.TaskTraits;
-import org.chromium.chrome.browser.autofill_assistant.AutofillAssistantModuleEntryProvider;
-import org.chromium.chrome.browser.base.DexFixer;
-import org.chromium.chrome.browser.notifications.channels.ChannelsUpdater;
-import org.chromium.chrome.browser.vr.VrModuleProvider;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.task.TaskTraits;
+import org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantModuleEntryProvider;
+import org.monyhar.chrome.browser.base.DexFixer;
+import org.monyhar.chrome.browser.notifications.channels.ChannelsUpdater;
+import org.monyhar.chrome.browser.vr.VrModuleProvider;
 
 /**
  * Triggered when Chrome's package is replaced (e.g. when it is upgraded).

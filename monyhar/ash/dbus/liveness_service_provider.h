@@ -25,9 +25,9 @@ namespace ash {
 // messages.  It can be tested with the following command:
 //
 // % dbus-send --system --type=method_call --print-reply
-//     --dest=org.chromium.LivenessService
-//     /org/chromium/LivenessService
-//     org.chromium.LivenessServiceInterface.CheckLiveness
+//     --dest=org.monyhar.LivenessService
+//     /org/monyhar/LivenessService
+//     org.monyhar.LivenessServiceInterface.CheckLiveness
 //
 // -> method return sender=:1.9 -> dest=:1.27 reply_serial=2
 //

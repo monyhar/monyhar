@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import androidx.test.filters.MediumTest;
 
@@ -11,11 +11,11 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Feature;
-import org.chromium.content_public.browser.test.NativeLibraryTestUtils;
-import org.chromium.content_shell_apk.ContentShellApplication;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.content_public.browser.test.NativeLibraryTestUtils;
+import org.monyhar.content_shell_apk.ContentShellApplication;
 
 /**
  * Test class for command lines.

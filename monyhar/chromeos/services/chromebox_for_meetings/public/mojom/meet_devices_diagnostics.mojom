@@ -6,7 +6,7 @@ module chromeos.cfm.mojom;
 
 import "chromeos/services/cros_healthd/public/mojom/cros_healthd_probe.mojom";
 
-// Interface defined by chromium specifically for the ChromeboxForMeetings
+// Interface defined by monyhar specifically for the ChromeboxForMeetings
 // platform to query system diagnostics of devices in the fleet.
 interface MeetDevicesDiagnostics {
   // Retrieves and forwards device telemetry from cros_healthd.

@@ -14,8 +14,8 @@ android_resources("customtabs_benchmark_apk_resources") {
 
 android_apk("customtabs_benchmark_apk") {
   sources = [
-    "java/src/org/chromium/customtabs/test/MainActivity.java",
-    "java/src/org/chromium/customtabs/test/WebViewActivity.java",
+    "java/src/org/monyhar/customtabs/test/MainActivity.java",
+    "java/src/org/monyhar/customtabs/test/WebViewActivity.java",
   ]
   android_manifest = "java/AndroidManifest.xml"
   min_sdk_version = 21

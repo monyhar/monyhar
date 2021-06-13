@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.base;
+package org.monyhar.chromecast.base;
 
 import android.annotation.SuppressLint;
 
-import org.chromium.base.Consumer;
-import org.chromium.base.Function;
+import org.monyhar.base.Consumer;
+import org.monyhar.base.Function;
 
 import java.util.Objects;
 

@@ -305,7 +305,7 @@ InvalidationSet& RuleFeatureSet::EnsureMutableInvalidationSet(
     // Note that we also construct a DescendantInvalidationSet instead of using
     // the SelfInvalidationSet() when we create a SiblingInvalidationSet. We may
     // be able to let SiblingInvalidationSets reference the singleton set for
-    // descendants as well. TODO(futhark@chromium.org)
+    // descendants as well. TODO(futhark@monyhar.org)
     invalidation_set = CopyInvalidationSet(*invalidation_set);
     DCHECK(invalidation_set->HasOneRef());
   }

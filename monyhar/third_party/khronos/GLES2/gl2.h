@@ -35,7 +35,7 @@ extern "C" {
 */
 
 /* Chromium-specific GLES2 declarations */
-#include <GLES2/gl2chromium.h>
+#include <GLES2/gl2monyhar.h>
 
 #include <GLES2/gl2platform.h>
 

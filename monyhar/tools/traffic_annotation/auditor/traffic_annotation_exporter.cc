@@ -13,8 +13,8 @@
 #include "base/strings/stringprintf.h"
 #include "base/time/time.h"
 #include "build/build_config.h"
-#include "third_party/libxml/chromium/xml_reader.h"
-#include "third_party/libxml/chromium/xml_writer.h"
+#include "third_party/libxml/monyhar/xml_reader.h"
+#include "third_party/libxml/monyhar/xml_writer.h"
 #include "third_party/protobuf/src/google/protobuf/text_format.h"
 #include "tools/traffic_annotation/auditor/traffic_annotation_auditor.h"
 

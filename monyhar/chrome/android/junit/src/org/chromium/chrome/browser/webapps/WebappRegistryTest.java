@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps;
+package org.monyhar.chrome.browser.webapps;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -22,14 +22,14 @@ import org.robolectric.annotation.Config;
 import org.robolectric.annotation.LooperMode;
 import org.robolectric.shadows.ShadowLooper;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.task.test.BackgroundShadowAsyncTask;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.ShortcutHelper;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.browsing_data.UrlFilters;
-import org.chromium.chrome.test.util.browser.webapps.WebApkIntentDataProviderBuilder;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.task.test.BackgroundShadowAsyncTask;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.ShortcutHelper;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.browsing_data.UrlFilters;
+import org.monyhar.chrome.test.util.browser.webapps.WebApkIntentDataProviderBuilder;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -666,7 +666,7 @@ public class WebappRegistryTest {
         final String testUrl = START_URL + "/index.html";
 
         BrowserServicesIntentDataProvider webApkIntentDataProvider =
-                new WebApkIntentDataProviderBuilder("org.chromium.webapk", startUrl).build();
+                new WebApkIntentDataProviderBuilder("org.monyhar.webapk", startUrl).build();
         registerWebapp(webApkIntentDataProvider);
 
         // testUrl should return null.
@@ -696,7 +696,7 @@ public class WebappRegistryTest {
         assertFalse(WebappRegistry.getInstance().hasAtLeastOneWebApkForOrigin(testOrigin));
 
         BrowserServicesIntentDataProvider webApkIntentDataProvider =
-                new WebApkIntentDataProviderBuilder("org.chromium.webapk", startUrl).build();
+                new WebApkIntentDataProviderBuilder("org.monyhar.webapk", startUrl).build();
         registerWebapp(webApkIntentDataProvider);
         assertTrue(WebappRegistry.getInstance().hasAtLeastOneWebApkForOrigin(testOrigin));
     }

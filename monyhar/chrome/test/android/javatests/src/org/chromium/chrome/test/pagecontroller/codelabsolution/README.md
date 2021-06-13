@@ -2,12 +2,12 @@
 
 ## These are sample solutions for the Code Lab, but not the only way to do it.
 
-***Paths in steps 1-4 are relative to src/chrome/test/android/javatests/src/org/chromium/chrome/test/pagecontroller/,
-   steps 5 is relative the chromium/src.***
+***Paths in steps 1-4 are relative to src/chrome/test/android/javatests/src/org/monyhar/chrome/test/pagecontroller/,
+   steps 5 is relative the monyhar/src.***
 
 1) tests/codelab/SettingsForCodelabTest.java:
 ``` java
-package org.chromium.chrome.test.pagecontroller.tests.codelab;
+package org.monyhar.chrome.test.pagecontroller.tests.codelab;
 
 import android.support.test.filters.SmallTest;
 
@@ -19,11 +19,11 @@ import org.junit.rules.RuleChain;
 import org.junit.rules.TestRule;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.chrome.test.pagecontroller.controllers.codelab.SearchEngineSelectionControllerForCodelab;
-import org.chromium.chrome.test.pagecontroller.controllers.ntp.ChromeMenu;
-import org.chromium.chrome.test.pagecontroller.rules.ChromeUiApplicationTestRule;
-import org.chromium.chrome.test.pagecontroller.rules.ChromeUiAutomatorTestRule;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.chrome.test.pagecontroller.controllers.codelab.SearchEngineSelectionControllerForCodelab;
+import org.monyhar.chrome.test.pagecontroller.controllers.ntp.ChromeMenu;
+import org.monyhar.chrome.test.pagecontroller.rules.ChromeUiApplicationTestRule;
+import org.monyhar.chrome.test.pagecontroller.rules.ChromeUiAutomatorTestRule;
 
 /**
  * Test for Page Controllers created in the code lab.
@@ -76,12 +76,12 @@ public class SettingsForCodelabTest {
 
 2) controllers/codelab/SettingsControllerForCodelab.java:
 ``` java
-package org.chromium.chrome.test.pagecontroller.controllers.codelab;
+package org.monyhar.chrome.test.pagecontroller.controllers.codelab;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.test.pagecontroller.controllers.PageController;
-import org.chromium.chrome.test.pagecontroller.utils.IUi2Locator;
-import org.chromium.chrome.test.pagecontroller.utils.Ui2Locators;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.test.pagecontroller.controllers.PageController;
+import org.monyhar.chrome.test.pagecontroller.utils.IUi2Locator;
+import org.monyhar.chrome.test.pagecontroller.utils.Ui2Locators;
 
 // TODO: Read documentation in the PageController class.  Refer to implemented
 // Page Controllers in the pagecontroller directory for examples.
@@ -134,23 +134,23 @@ public class SettingsControllerForCodelab extends PageController {
 
 3) controllers/codelab/SearchEngineSelectionControllerForCodelab.java:
 ``` java
-package org.chromium.chrome.test.pagecontroller.controllers.codelab;
+package org.monyhar.chrome.test.pagecontroller.controllers.codelab;
 
 import android.support.test.uiautomator.UiObject2;
 import android.util.Pair;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.test.pagecontroller.controllers.PageController;
-import org.chromium.chrome.test.pagecontroller.utils.IUi2Locator;
-import org.chromium.chrome.test.pagecontroller.utils.Ui2Locators;
-import org.chromium.chrome.test.pagecontroller.utils.UiLocationException;
-import org.chromium.chrome.test.pagecontroller.utils.UiLocatorHelper;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.test.pagecontroller.controllers.PageController;
+import org.monyhar.chrome.test.pagecontroller.utils.IUi2Locator;
+import org.monyhar.chrome.test.pagecontroller.utils.Ui2Locators;
+import org.monyhar.chrome.test.pagecontroller.utils.UiLocationException;
+import org.monyhar.chrome.test.pagecontroller.utils.UiLocatorHelper;
 
 import java.util.List;
 
 /**
  * Search Engine Selection Page Controller for the Code Lab, corresponds to
- * {@link org.chromium.chrome.browser.search_engines.settings.SearchEngineSettings}.
+ * {@link org.monyhar.chrome.browser.search_engines.settings.SearchEngineSettings}.
  */
 public class SearchEngineSelectionControllerForCodelab extends PageController {
     // TODO: Put locators here.
@@ -236,7 +236,7 @@ public class SearchEngineSelectionControllerForCodelab extends PageController {
 ``` java
 ...
 
-+ import org.chromium.chrome.test.pagecontroller.controllers.codelab.SettingsControllerForCodelab;
++ import org.monyhar.chrome.test.pagecontroller.controllers.codelab.SettingsControllerForCodelab;
 ...
 public class ChromeMenu extends PageController {
 ...
@@ -258,10 +258,10 @@ android_library("chrome_java_test_pagecontroller") {
   testonly = true
   sources = [
 ...
-    "javatests/src/org/chromium/chrome/test/pagecontroller/controllers/android/PermissionDialog.java",
-+    "javatests/src/org/chromium/chrome/test/pagecontroller/controllers/codelab/SettingsControllerForCodelab.java",
-+    "javatests/src/org/chromium/chrome/test/pagecontroller/controllers/codelab/SearchEngineSelectionControllerForCodelab.java",
-    "javatests/src/org/chromium/chrome/test/pagecontroller/controllers/first_run/TOSController.java",
+    "javatests/src/org/monyhar/chrome/test/pagecontroller/controllers/android/PermissionDialog.java",
++    "javatests/src/org/monyhar/chrome/test/pagecontroller/controllers/codelab/SettingsControllerForCodelab.java",
++    "javatests/src/org/monyhar/chrome/test/pagecontroller/controllers/codelab/SearchEngineSelectionControllerForCodelab.java",
+    "javatests/src/org/monyhar/chrome/test/pagecontroller/controllers/first_run/TOSController.java",
 ...
 
 ```

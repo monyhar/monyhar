@@ -269,7 +269,7 @@ TEST_F(ArcAccessibilityHelperBridgeTest, TaskAndAXTreeLifecycle) {
   ASSERT_EQ(0U, key_to_tree.size());
 
   // Let's make task 1 active by activating the window.
-  helper_bridge->SetActiveWindowId(std::string("org.chromium.arc.1"));
+  helper_bridge->SetActiveWindowId(std::string("org.monyhar.arc.1"));
   helper_bridge->OnAccessibilityEvent(event1.Clone());
   ASSERT_EQ(1U, key_to_tree.size());
 
@@ -299,7 +299,7 @@ TEST_F(ArcAccessibilityHelperBridgeTest, TaskAndAXTreeLifecycle) {
   ASSERT_EQ(1U, key_to_tree.size());
 
   // Now make task 2 active.
-  helper_bridge->SetActiveWindowId(std::string("org.chromium.arc.2"));
+  helper_bridge->SetActiveWindowId(std::string("org.monyhar.arc.2"));
   helper_bridge->OnAccessibilityEvent(event2.Clone());
   ASSERT_EQ(2U, key_to_tree.size());
 
@@ -372,7 +372,7 @@ TEST_F(ArcAccessibilityHelperBridgeTest, WindowIdTaskIdMapping) {
   ASSERT_EQ(0U, key_to_tree.size());
 
   // Set task ID 1 as the active window.
-  helper_bridge->SetActiveWindowId(std::string("org.chromium.arc.1"));
+  helper_bridge->SetActiveWindowId(std::string("org.monyhar.arc.1"));
   // Also, set a11y window id to the active window.
   helper_bridge->SetAccessibilityWindowId(10);
   helper_bridge->OnWindowPropertyChanged(test_window, nullptr, -1);
@@ -448,7 +448,7 @@ TEST_F(ArcAccessibilityHelperBridgeTest, FilterTypeChange) {
   ASSERT_EQ(0U, key_to_tree.size());
 
   // Let's make task 1 active by activating the window.
-  helper_bridge->SetActiveWindowId(std::string("org.chromium.arc.1"));
+  helper_bridge->SetActiveWindowId(std::string("org.monyhar.arc.1"));
   helper_bridge->SetFilterTypeForTest(arc::mojom::AccessibilityFilterType::ALL);
   helper_bridge->InvokeUpdateEnabledFeatureForTesting();
   helper_bridge->OnAccessibilityEvent(event1.Clone());
@@ -550,7 +550,7 @@ TEST_F(ArcAccessibilityHelperBridgeTest, ToggleTalkBack) {
 
   TestArcAccessibilityHelperBridge* helper_bridge =
       accessibility_helper_bridge();
-  helper_bridge->SetActiveWindowId("org.chromium.arc.1");
+  helper_bridge->SetActiveWindowId("org.monyhar.arc.1");
   ASSERT_EQ(0, helper_bridge->GetEventCount(event_name));
 
   // Enable TalkBack.

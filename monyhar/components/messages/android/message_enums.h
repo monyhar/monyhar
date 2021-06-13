@@ -9,7 +9,7 @@ namespace messages {
 
 // List of constants describing the reasons why the message was dismissed.
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.messages
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.messages
 // These values are persisted to logs. Entries should not be renumbered and
 // numeric values should never be reused.
 // TODO(crbug.com/1188983): Revisit enum values. TAB_SWITCHED is not currently
@@ -47,7 +47,7 @@ enum class DismissReason {
 
 // The constants of message scope type.
 //
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.messages
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.messages
 enum class MessageScopeType { WINDOW = 0, WEB_CONTENTS = 1, NAVIGATION = 2 };
 
 // Enumerates unique identifiers for various messages. Used for recording
@@ -64,7 +64,7 @@ enum class MessageScopeType { WINDOW = 0, WEB_CONTENTS = 1, NAVIGATION = 2 };
 // - MessagesMetrics.java: #messageIdentifierToHistogramSuffix()
 //
 // A Java counterpart is generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.messages
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.messages
 enum class MessageIdentifier {
   TEST_MESSAGE = 0,
   SAVE_PASSWORD = 1,

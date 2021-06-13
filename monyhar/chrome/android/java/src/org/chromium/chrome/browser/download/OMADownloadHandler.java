@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download;
+package org.monyhar.chrome.browser.download;
 
 import android.app.Activity;
 import android.app.DownloadManager;
@@ -31,23 +31,23 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ContentUriUtils;
-import org.chromium.base.Log;
-import org.chromium.base.ObserverList;
-import org.chromium.base.PackageManagerUtils;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.chrome.browser.content.ContentUtils;
-import org.chromium.chrome.browser.download.DownloadManagerBridge.DownloadEnqueueRequest;
-import org.chromium.chrome.browser.download.DownloadManagerBridge.DownloadEnqueueResponse;
-import org.chromium.chrome.browser.download.items.OfflineContentAggregatorFactory;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.components.download.DownloadCollectionBridge;
-import org.chromium.components.offline_items_collection.LegacyHelpers;
-import org.chromium.components.offline_items_collection.OfflineItem;
-import org.chromium.components.offline_items_collection.OfflineItemState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ContentUriUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.PackageManagerUtils;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.chrome.browser.content.ContentUtils;
+import org.monyhar.chrome.browser.download.DownloadManagerBridge.DownloadEnqueueRequest;
+import org.monyhar.chrome.browser.download.DownloadManagerBridge.DownloadEnqueueResponse;
+import org.monyhar.chrome.browser.download.items.OfflineContentAggregatorFactory;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.components.download.DownloadCollectionBridge;
+import org.monyhar.components.offline_items_collection.LegacyHelpers;
+import org.monyhar.components.offline_items_collection.OfflineItem;
+import org.monyhar.components.offline_items_collection.OfflineItemState;
 
 import java.io.DataOutputStream;
 import java.io.File;

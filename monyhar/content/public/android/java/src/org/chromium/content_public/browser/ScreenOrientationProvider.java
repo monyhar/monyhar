@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.browser;
+package org.monyhar.content_public.browser;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.content.browser.ScreenOrientationProviderImpl;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.content.browser.ScreenOrientationProviderImpl;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Interface providing the access to C++ ScreenOrientationProvider.

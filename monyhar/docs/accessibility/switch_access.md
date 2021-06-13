@@ -61,8 +61,8 @@ automatically when the user presses *select*.
 
 ## Reporting bugs
 
-Use bugs.chromium.org, filing bugs under the component
-[OS>Accessibility>SwitchAccess](https://bugs.chromium.org/p/chromium/issues/list?sort=-opened&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified&q=component%3AOS%3EAccessibility%3ESwitchAccess%20&can=2).
+Use bugs.monyhar.org, filing bugs under the component
+[OS>Accessibility>SwitchAccess](https://bugs.monyhar.org/p/monyhar/issues/list?sort=-opened&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified&q=component%3AOS%3EAccessibility%3ESwitchAccess%20&can=2).
 
 ## Developing
 

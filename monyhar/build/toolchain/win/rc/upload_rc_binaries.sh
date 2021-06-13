@@ -41,6 +41,6 @@ cp "$WORK_DIR/hack/res/rc-mac" "$DIR/mac/rc"
 cp "$WORK_DIR/hack/res/rc-win.exe" "$DIR/win/rc.exe"
 
 # Upload binaries to cloud storage.
-upload_to_google_storage.py -b chromium-browser-clang/rc "$DIR/linux64/rc"
-upload_to_google_storage.py -b chromium-browser-clang/rc "$DIR/mac/rc"
-upload_to_google_storage.py -b chromium-browser-clang/rc "$DIR/win/rc.exe"
+upload_to_google_storage.py -b monyhar-browser-clang/rc "$DIR/linux64/rc"
+upload_to_google_storage.py -b monyhar-browser-clang/rc "$DIR/mac/rc"
+upload_to_google_storage.py -b monyhar-browser-clang/rc "$DIR/win/rc.exe"

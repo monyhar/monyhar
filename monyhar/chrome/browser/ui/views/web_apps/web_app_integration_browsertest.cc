@@ -118,7 +118,7 @@ INSTANTIATE_TEST_SUITE_P(All,
                          WebAppIntegrationBrowserTest,
                          testing::ValuesIn(BuildAllPlatformTestCaseSet()));
 
-// TODO(jarrydg@chromium.org): Remove the macro disabling the following tests
+// TODO(jarrydg@monyhar.org): Remove the macro disabling the following tests
 // when they can compile. https://crbug.com/1215791
 #if false
 namespace {

@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.ukm;
+package org.monyhar.components.ukm;
 
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * An interface and classes to record User Keyed Metrics.
@@ -16,7 +16,7 @@ public abstract class UkmRecorder {
      * Records the occurrence of a (boolean) UKM event with name |eventName|.
      * A UKM entry with |eventName| must be present in ukm.xml with a metric that matches
      * |metricName| For example, <event name="SomeFeature.SomeComponent">
-     * <owner>owner@chromium.org</owner>
+     * <owner>owner@monyhar.org</owner>
      * <summary>
      * User triggered a specific feature.
      * </summary>
@@ -35,7 +35,7 @@ public abstract class UkmRecorder {
      * Records the occurrence of an (integer) UKM event with name |eventName|.
      * A UKM entry with |eventName| must be present in ukm.xml with a metric that matches
      * |metricName| For example, <event name="SomeFeature.SomeComponent">
-     * <owner>owner@chromium.org</owner>
+     * <owner>owner@monyhar.org</owner>
      * <summary>
      * User triggered a specific feature.
      * </summary>

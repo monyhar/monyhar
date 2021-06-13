@@ -51,7 +51,7 @@ _log = logging.getLogger(__name__)
 RESULTS_JSON_VALUE_OVERRIDE_WITH_BUILD_PROPERTY = [
     ("build_number", "buildnumber"),
     ("builder_name", "buildername"),
-    ("chromium_revision", "got_revision_cp"),
+    ("monyhar_revision", "got_revision_cp"),
 ]
 
 # Classes for recursively merging a JSON like dictionary together.
@@ -526,7 +526,7 @@ class JSONTestResultsMerger(JSONMerger):
     """Merger for the 'json test result' format.
 
     The JSON format is described at
-    https://dev.chromium.org/developers/the-json-test-results-format
+    https://dev.monyhar.org/developers/the-json-test-results-format
 
     allow_unknown_if_matching:
         Allow unknown keys found in multiple files if the value matches in all.
@@ -544,7 +544,7 @@ class JSONTestResultsMerger(JSONMerger):
         matching = [
             ':builder_name$',
             ':build_number$',
-            ':chromium_revision$',
+            ':monyhar_revision$',
             ':flag_name$',
             ':has_pretty_patch$',
             ':has_wdiff$',
@@ -855,12 +855,12 @@ directory. The script will be given the arguments plus
         '(Output of the swarming.py collect --task-summary-json=XXX command.)')
 
     # Script to run after merging the directories together. Normally used with archive_layout_test_results.py
-    # scripts/slave/chromium/archive_layout_test_results.py \
+    # scripts/slave/monyhar/archive_layout_test_results.py \
     #     --results-dir /b/rr/tmpIcChUS/w/layout-test-results \
     #     --build-dir /b/rr/tmpIcChUS/w/src/out \
     #     --build-number 3665 \
     #     --builder-name 'WebKit Linux - RandomOrder' \
-    #     --gs-bucket gs://chromium-layout-test-archives \
+    #     --gs-bucket gs://monyhar-layout-test-archives \
     #     --staging-dir /b/c/chrome_staging \
     #     --slave-utils-gsutil-py-path /b/rr/tmpIcChUS/rw/scripts/slave/.recipe_deps/depot_tools/gsutil.py
     # in dir /b/rr/tmpIcChUS/w

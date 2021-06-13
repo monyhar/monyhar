@@ -9,7 +9,7 @@ rolldeps() {
 addtrybots() {
   STEP="add trybots" &&
   (git show -s --format=%B HEAD \
-    | git interpret-trailers --trailer "Cq-Include-Trybots:luci.chromium.try:linux_chromium_msan_rel_ng" \
+    | git interpret-trailers --trailer "Cq-Include-Trybots:luci.monyhar.try:linux_monyhar_msan_rel_ng" \
     | git commit --amend -F -)
 }
 
@@ -21,12 +21,12 @@ addotherprojectbugs() {
 }
 
 updatereadme() {
-  STEP="update README.chromium" &&
+  STEP="update README.monyhar" &&
   FTVERSION=$(git -C third_party/freetype/src/ describe --long) &&
   FTCOMMIT=$(git -C third_party/freetype/src/ rev-parse HEAD) &&
-  sed -i'' -e "s/^Version: .*\$/Version: ${FTVERSION%-*}/" third_party/freetype/README.chromium &&
-  sed -i'' -e "s/^Revision: .*\$/Revision: ${FTCOMMIT}/" third_party/freetype/README.chromium &&
-  git add third_party/freetype/README.chromium
+  sed -i'' -e "s/^Version: .*\$/Version: ${FTVERSION%-*}/" third_party/freetype/README.monyhar &&
+  sed -i'' -e "s/^Revision: .*\$/Revision: ${FTCOMMIT}/" third_party/freetype/README.monyhar &&
+  git add third_party/freetype/README.monyhar
 }
 
 previousrev() {

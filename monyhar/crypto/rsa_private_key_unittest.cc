@@ -202,7 +202,7 @@ TEST(RSAPrivateKeyUnitTest, PublicKeyTest) {
 // two interesting sub-cases. When the sign bit of the integer is set, an extra
 // null byte is added back to force the encoded value to be positive. When the
 // sign bit is not set, the encoded integer is just left shorter than usual.
-// See also: http://code.google.com/p/chromium/issues/detail?id=14877.
+// See also: http://code.google.com/p/monyhar/issues/detail?id=14877.
 //
 // Before we were handling this correctly, we would see one of two failures:
 // * RSAPrivateKey::CreateFromPrivateKeyInfo would return null because the

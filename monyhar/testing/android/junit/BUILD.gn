@@ -11,19 +11,19 @@ java_library("junit_test_support") {
   bypass_platform_checks = true
   testonly = true
   sources = [
-    "java/src/org/chromium/testing/local/CustomShadowApplicationPackageManager.java",
-    "java/src/org/chromium/testing/local/GtestComputer.java",
-    "java/src/org/chromium/testing/local/GtestFilter.java",
-    "java/src/org/chromium/testing/local/GtestListener.java",
-    "java/src/org/chromium/testing/local/GtestLogger.java",
-    "java/src/org/chromium/testing/local/JsonListener.java",
-    "java/src/org/chromium/testing/local/JsonLogger.java",
-    "java/src/org/chromium/testing/local/JunitTestArgParser.java",
-    "java/src/org/chromium/testing/local/JunitTestMain.java",
-    "java/src/org/chromium/testing/local/LocalRobolectricTestRunner.java",
-    "java/src/org/chromium/testing/local/PackageFilter.java",
-    "java/src/org/chromium/testing/local/RunnerFilter.java",
-    "java/src/org/chromium/testing/local/TestDir.java",
+    "java/src/org/monyhar/testing/local/CustomShadowApplicationPackageManager.java",
+    "java/src/org/monyhar/testing/local/GtestComputer.java",
+    "java/src/org/monyhar/testing/local/GtestFilter.java",
+    "java/src/org/monyhar/testing/local/GtestListener.java",
+    "java/src/org/monyhar/testing/local/GtestLogger.java",
+    "java/src/org/monyhar/testing/local/JsonListener.java",
+    "java/src/org/monyhar/testing/local/JsonLogger.java",
+    "java/src/org/monyhar/testing/local/JunitTestArgParser.java",
+    "java/src/org/monyhar/testing/local/JunitTestMain.java",
+    "java/src/org/monyhar/testing/local/LocalRobolectricTestRunner.java",
+    "java/src/org/monyhar/testing/local/PackageFilter.java",
+    "java/src/org/monyhar/testing/local/RunnerFilter.java",
+    "java/src/org/monyhar/testing/local/TestDir.java",
   ]
   deps = [
     "//third_party/android_deps:robolectric_all_java",
@@ -34,9 +34,9 @@ java_library("junit_test_support") {
 
 junit_binary("junit_unit_tests") {
   sources = [
-    "javatests/src/org/chromium/testing/local/GtestFilterTest.java",
-    "javatests/src/org/chromium/testing/local/GtestLoggerTest.java",
-    "javatests/src/org/chromium/testing/local/PackageFilterTest.java",
-    "javatests/src/org/chromium/testing/local/RunnerFilterTest.java",
+    "javatests/src/org/monyhar/testing/local/GtestFilterTest.java",
+    "javatests/src/org/monyhar/testing/local/GtestLoggerTest.java",
+    "javatests/src/org/monyhar/testing/local/PackageFilterTest.java",
+    "javatests/src/org/monyhar/testing/local/RunnerFilterTest.java",
   ]
 }

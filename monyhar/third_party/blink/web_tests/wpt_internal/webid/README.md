@@ -26,4 +26,4 @@ class MockFederatedAuthRequest {
 };
 ```
 
-The chromium implementation uses the MojoJS shim.
+The monyhar implementation uses the MojoJS shim.

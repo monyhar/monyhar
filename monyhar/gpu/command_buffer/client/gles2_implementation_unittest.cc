@@ -8,7 +8,7 @@
 
 #include <GLES2/gl2.h>
 #include <GLES2/gl2ext.h>
-#include <GLES2/gl2extchromium.h>
+#include <GLES2/gl2extmonyhar.h>
 #include <GLES3/gl3.h>
 
 #include <stddef.h>
@@ -232,7 +232,7 @@ class GLES2ImplementationTest : public testing::Test {
       capabilities_.max_transform_feedback_separate_attribs =
           kMaxTransformFeedbackSeparateAttribs;
       capabilities_.max_uniform_buffer_bindings = kMaxUniformBufferBindings;
-      capabilities_.bind_generates_resource_chromium =
+      capabilities_.bind_generates_resource_monyhar =
           bind_generates_resource_service ? 1 : 0;
       capabilities_.sync_query = sync_query;
       capabilities_.occlusion_query_boolean = occlusion_query_boolean;

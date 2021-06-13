@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.site_settings;
+package org.monyhar.components.browser_ui.site_settings;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.components.content_settings.ContentSettingValues;
+import org.monyhar.components.content_settings.ContentSettingValues;
 
 /**
  * Java counterpart to C++ ContentSetting enum.

@@ -97,7 +97,7 @@ class ResultsUploader(object):
 
     upstream = (tests_type != 'Chromium_Android_Instrumentation')
     if not upstream:
-      self._build_name = 'chromium-android'
+      self._build_name = 'monyhar-android'
       buildbot_branch = os.environ.get('BUILDBOT_BRANCH')
       if not buildbot_branch:
         buildbot_branch = 'master'

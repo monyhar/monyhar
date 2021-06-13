@@ -10,7 +10,7 @@
 #include "base/logging.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
-namespace chromium_android_linker {
+namespace monyhar_android_linker {
 
 // These tests get linked with base_unittests and leave JNI uninitialized. The
 // tests must not execute any parts relying on initialization with JNI_Onload().
@@ -156,4 +156,4 @@ TEST_F(ModernLinkerTest, CreatedRegionIsSealedMemfd) {
   munmap(ro_address3, kRelroSize);
 }
 
-}  // namespace chromium_android_linker
+}  // namespace monyhar_android_linker

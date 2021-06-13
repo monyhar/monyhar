@@ -52,7 +52,7 @@ namespace blink {
 // Note that some embedders provide "PostMessageToFrame" functions directly on
 // their wrapped WebContents equivalents (Android and Cast, for example). Also
 // note that for Android embedders, there are equivalent Java interfaces defined
-// in org.chromium.content_public.browser.
+// in org.monyhar.content_public.browser.
 //
 // This is a move-only type, which makes it (almost) impossible to try to send a
 // port across itself (which is illegal). This doesn't explicitly prevent you

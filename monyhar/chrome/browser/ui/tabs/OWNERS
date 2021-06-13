@@ -1,10 +1,10 @@
-bsep@chromium.org
-connily@chromium.org
-cyan@chromium.org
-dfried@chromium.org
-erikchen@chromium.org
-sky@chromium.org
-tbergquist@chromium.org
+bsep@monyhar.org
+connily@monyhar.org
+cyan@monyhar.org
+dfried@monyhar.org
+erikchen@monyhar.org
+sky@monyhar.org
+tbergquist@monyhar.org
 
 # For changes related to the tab alert indicators.
-per-file tab_utils*=miu@chromium.org
+per-file tab_utils*=miu@monyhar.org

@@ -119,7 +119,7 @@ def main():
   print 'To upload, run:'
   for build_type in build_types:
     print('upload_to_google_storage.py -b '
-          'chromium-instrumented-libraries %s-%s.tgz' %
+          'monyhar-instrumented-libraries %s-%s.tgz' %
           (build_type, ubuntu_release))
   print 'You should then commit the resulting .sha1 files.'
 

@@ -8,13 +8,13 @@ import("//chrome/browser/buildflags.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/contextmenu/ChipDelegate.java",
-    "java/src/org/chromium/chrome/browser/contextmenu/ChipRenderParams.java",
-    "java/src/org/chromium/chrome/browser/contextmenu/ContextMenuItemDelegate.java",
-    "java/src/org/chromium/chrome/browser/contextmenu/ContextMenuNativeDelegate.java",
-    "java/src/org/chromium/chrome/browser/contextmenu/ContextMenuNativeDelegateImpl.java",
-    "java/src/org/chromium/chrome/browser/contextmenu/ContextMenuPopulator.java",
-    "java/src/org/chromium/chrome/browser/contextmenu/ContextMenuPopulatorFactory.java",
+    "java/src/org/monyhar/chrome/browser/contextmenu/ChipDelegate.java",
+    "java/src/org/monyhar/chrome/browser/contextmenu/ChipRenderParams.java",
+    "java/src/org/monyhar/chrome/browser/contextmenu/ContextMenuItemDelegate.java",
+    "java/src/org/monyhar/chrome/browser/contextmenu/ContextMenuNativeDelegate.java",
+    "java/src/org/monyhar/chrome/browser/contextmenu/ContextMenuNativeDelegateImpl.java",
+    "java/src/org/monyhar/chrome/browser/contextmenu/ContextMenuPopulator.java",
+    "java/src/org/monyhar/chrome/browser/contextmenu/ContextMenuPopulatorFactory.java",
   ]
 
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
@@ -32,5 +32,5 @@ android_library("java") {
 }
 
 generate_jni("jni_headers") {
-  sources = [ "java/src/org/chromium/chrome/browser/contextmenu/ContextMenuNativeDelegateImpl.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/contextmenu/ContextMenuNativeDelegateImpl.java" ]
 }

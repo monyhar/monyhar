@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.query_tiles;
+package org.monyhar.chrome.browser.query_tiles;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -10,28 +10,28 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 
-import org.chromium.base.Callback;
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcher;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcherConfig;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcherFactory;
-import org.chromium.chrome.browser.ntp.search.SearchBoxChipDelegate;
-import org.chromium.chrome.browser.ntp.search.SearchBoxCoordinator;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.browser_ui.util.GlobalDiscardableReferencePool;
-import org.chromium.components.browser_ui.widget.R;
-import org.chromium.components.browser_ui.widget.image_tiles.ImageTile;
-import org.chromium.components.browser_ui.widget.image_tiles.ImageTileCoordinator;
-import org.chromium.components.browser_ui.widget.image_tiles.ImageTileCoordinatorFactory;
-import org.chromium.components.browser_ui.widget.image_tiles.TileConfig;
-import org.chromium.components.query_tiles.QueryTile;
-import org.chromium.components.query_tiles.QueryTileConstants;
-import org.chromium.components.query_tiles.TileProvider;
-import org.chromium.components.query_tiles.TileUmaLogger;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.ui.display.DisplayAndroid;
-import org.chromium.ui.display.DisplayUtil;
+import org.monyhar.base.Callback;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcher;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcherConfig;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcherFactory;
+import org.monyhar.chrome.browser.ntp.search.SearchBoxChipDelegate;
+import org.monyhar.chrome.browser.ntp.search.SearchBoxCoordinator;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.browser_ui.util.GlobalDiscardableReferencePool;
+import org.monyhar.components.browser_ui.widget.R;
+import org.monyhar.components.browser_ui.widget.image_tiles.ImageTile;
+import org.monyhar.components.browser_ui.widget.image_tiles.ImageTileCoordinator;
+import org.monyhar.components.browser_ui.widget.image_tiles.ImageTileCoordinatorFactory;
+import org.monyhar.components.browser_ui.widget.image_tiles.TileConfig;
+import org.monyhar.components.query_tiles.QueryTile;
+import org.monyhar.components.query_tiles.QueryTileConstants;
+import org.monyhar.components.query_tiles.TileProvider;
+import org.monyhar.components.query_tiles.TileUmaLogger;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.ui.display.DisplayAndroid;
+import org.monyhar.ui.display.DisplayUtil;
 
 import java.util.ArrayList;
 import java.util.Arrays;

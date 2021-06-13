@@ -8,20 +8,20 @@
     android:layout_width="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionLayout
+    <org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionLayout
         android:id="@+id/test_radio_button_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <!-- RadioButtonWithDescription - With primary, without description. -->
-        <org.chromium.components.browser_ui.widget.RadioButtonWithDescription
+        <org.monyhar.components.browser_ui.widget.RadioButtonWithDescription
               android:id="@+id/base_primary_only"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               app:primaryText="@string/test_string" />
 
         <!-- RadioButtonWithDescription - With primary and description. -->
-        <org.chromium.components.browser_ui.widget.RadioButtonWithDescription
+        <org.monyhar.components.browser_ui.widget.RadioButtonWithDescription
             android:id="@+id/base_primary_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
             app:descriptionText="@string/test_string" />
 
         <!-- RadioButtonWithDescription - With background override. -->
-        <org.chromium.components.browser_ui.widget.RadioButtonWithDescription
+        <org.monyhar.components.browser_ui.widget.RadioButtonWithDescription
             android:id="@+id/base_primary_bg_override"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
             app:descriptionText="@string/test_string" />
 
         <!-- RadioButtonWithEditText - With primary and description. -->
-        <org.chromium.components.browser_ui.widget.RadioButtonWithEditText
+        <org.monyhar.components.browser_ui.widget.RadioButtonWithEditText
             android:id="@+id/edittext_primary_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
             app:descriptionText="@string/test_string" />
 
         <!-- RadioButtonWithEditText - With primary, without description. -->
-        <org.chromium.components.browser_ui.widget.RadioButtonWithEditText
+        <org.monyhar.components.browser_ui.widget.RadioButtonWithEditText
             android:id="@+id/edittext_primary_only"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
             app:primaryText="@string/test_string" />
 
         <!-- RadioButtonWithEditText - Without primary, with hint, with description. -->
-        <org.chromium.components.browser_ui.widget.RadioButtonWithEditText
+        <org.monyhar.components.browser_ui.widget.RadioButtonWithEditText
             android:id="@+id/edittext_hint_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
             app:descriptionText="@string/test_string" />
 
         <!-- RadioButtonWithEditText - Hint only. -->
-        <org.chromium.components.browser_ui.widget.RadioButtonWithEditText
+        <org.monyhar.components.browser_ui.widget.RadioButtonWithEditText
             android:id="@+id/edittext_hint_only"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -86,14 +86,14 @@
             android:hint="@string/test_uri" />
 
         <!-- RadioButtonWithDescriptionAndAuxButton - With primary, without description. -->
-        <org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionAndAuxButton
+        <org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionAndAuxButton
             android:id="@+id/aux_primary_only"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:primaryText="@string/test_string" />
 
         <!-- RadioButtonWithDescriptionAndAuxButton - With primary and description. -->
-        <org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionAndAuxButton
+        <org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionAndAuxButton
             android:id="@+id/aux_primary_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -101,12 +101,12 @@
             app:descriptionText="@string/test_string" />
 
         <!-- RadioButtonWithDescriptionAndAuxButton - With background override. -->
-        <org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionAndAuxButton
+        <org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionAndAuxButton
             android:id="@+id/aux_bg_override"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/modern_grey_100"
             app:primaryText="@string/test_string"
             app:descriptionText="@string/test_string" />
-    </org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionLayout>
+    </org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionLayout>
 </FrameLayout>

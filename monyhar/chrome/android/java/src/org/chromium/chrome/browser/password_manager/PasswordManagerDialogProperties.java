@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_manager;
+package org.monyhar.chrome.browser.password_manager;
 
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModel.ReadableIntPropertyKey;
-import org.chromium.ui.modelutil.PropertyModel.ReadableObjectPropertyKey;
-import org.chromium.ui.modelutil.PropertyModel.WritableBooleanPropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModel.ReadableIntPropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel.ReadableObjectPropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel.WritableBooleanPropertyKey;
 
 /**
  * Data properties for the password manager illustration modal dialog.

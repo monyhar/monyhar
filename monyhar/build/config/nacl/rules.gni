@@ -38,7 +38,7 @@ template("generate_nmf") {
     }
 
     # TODO(phosek): Remove this conditional once
-    # https://bugs.chromium.org/p/nativeclient/issues/detail?id=4339 is
+    # https://bugs.monyhar.org/p/nativeclient/issues/detail?id=4339 is
     # resolved.
     if (current_cpu == "pnacl") {
       objdump = rebase_path("${nacl_toolchain_bindir}/x86_64-nacl-objdump")

@@ -11,8 +11,8 @@ android_library("java") {
   ]
 
   sources = [
-    "java/src/org/chromium/chrome/browser/layouts/LayoutManagerAppUtils.java",
-    "java/src/org/chromium/chrome/browser/layouts/ManagedLayoutManager.java",
+    "java/src/org/monyhar/chrome/browser/layouts/LayoutManagerAppUtils.java",
+    "java/src/org/monyhar/chrome/browser/layouts/ManagedLayoutManager.java",
   ]
 
   deps = [

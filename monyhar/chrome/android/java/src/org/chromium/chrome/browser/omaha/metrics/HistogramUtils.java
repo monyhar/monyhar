@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omaha.metrics;
+package org.monyhar.chrome.browser.omaha.metrics;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.omaha.metrics.UpdateProtos.Tracking;
-import org.chromium.chrome.browser.omaha.metrics.UpdateProtos.Tracking.Source;
-import org.chromium.chrome.browser.omaha.metrics.UpdateProtos.Tracking.Type;
-import org.chromium.chrome.browser.omaha.metrics.UpdateSuccessMetrics.AttributionType;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.omaha.metrics.UpdateProtos.Tracking;
+import org.monyhar.chrome.browser.omaha.metrics.UpdateProtos.Tracking.Source;
+import org.monyhar.chrome.browser.omaha.metrics.UpdateProtos.Tracking.Type;
+import org.monyhar.chrome.browser.omaha.metrics.UpdateSuccessMetrics.AttributionType;
 
 /** A helper class for creating and saving histograms related to update success. */
 class HistogramUtils {

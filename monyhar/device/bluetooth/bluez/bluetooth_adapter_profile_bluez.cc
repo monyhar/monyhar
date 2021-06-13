@@ -46,7 +46,7 @@ BluetoothAdapterProfileBlueZ::BluetoothAdapterProfileBlueZ(
   std::string uuid_path;
   base::ReplaceChars(uuid.canonical_value(), ":-", "_", &uuid_path);
   object_path_ =
-      dbus::ObjectPath("/org/chromium/bluetooth_profile/" + uuid_path);
+      dbus::ObjectPath("/org/monyhar/bluetooth_profile/" + uuid_path);
 
   dbus::Bus* system_bus = bluez::BluezDBusManager::Get()->GetSystemBus();
   profile_.reset(bluez::BluetoothProfileServiceProvider::Create(

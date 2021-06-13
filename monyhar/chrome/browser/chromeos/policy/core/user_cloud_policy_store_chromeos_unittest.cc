@@ -54,7 +54,7 @@ namespace policy {
 
 namespace {
 
-const char kDefaultHomepage[] = "http://chromium.org";
+const char kDefaultHomepage[] = "http://monyhar.org";
 
 base::FilePath GetUserPolicyKeyFile(
     const base::FilePath& user_policy_dir,

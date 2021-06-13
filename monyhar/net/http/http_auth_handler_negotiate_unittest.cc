@@ -74,7 +74,7 @@ class HttpAuthHandlerNegotiateTest : public PlatformTest,
     factory_->set_http_auth_preferences(http_auth_preferences_.get());
 #if defined(OS_ANDROID)
     http_auth_preferences_->set_auth_android_negotiate_account_type(
-        "org.chromium.test.DummySpnegoAuthenticator");
+        "org.monyhar.test.DummySpnegoAuthenticator");
     MockAuthLibrary::EnsureTestAccountExists();
 #else
     factory_->set_library(base::WrapUnique(auth_library_));

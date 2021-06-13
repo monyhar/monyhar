@@ -18,7 +18,7 @@
     # treat Crashpad as Chromium code. This enables warnings at an appropriate
     # level and applies Chromium’s build/filename_rules.gypi. In a standalone
     # build, this variable has no effect.
-    'chromium_code': 1,
+    'monyhar_code': 1,
   },
   'target_defaults': {
     'msvs_disabled_warnings': [

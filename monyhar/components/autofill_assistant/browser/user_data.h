@@ -28,7 +28,7 @@ namespace autofill_assistant {
 class UserModel;
 
 // GENERATED_JAVA_ENUM_PACKAGE: (
-// org.chromium.chrome.browser.autofill_assistant.user_data)
+// org.monyhar.chrome.browser.autofill_assistant.user_data)
 // GENERATED_JAVA_CLASS_NAME_OVERRIDE: AssistantTermsAndConditionsState
 enum TermsAndConditionsState {
   NOT_SELECTED = 0,
@@ -37,12 +37,12 @@ enum TermsAndConditionsState {
 };
 
 // GENERATED_JAVA_ENUM_PACKAGE: (
-// org.chromium.chrome.browser.autofill_assistant.user_data.additional_sections)
+// org.monyhar.chrome.browser.autofill_assistant.user_data.additional_sections)
 // GENERATED_JAVA_CLASS_NAME_OVERRIDE: AssistantTextInputType
 enum TextInputType { INPUT_TEXT = 0, INPUT_ALPHANUMERIC = 1 };
 
 // GENERATED_JAVA_ENUM_PACKAGE: (
-// org.chromium.chrome.browser.autofill_assistant.user_data)
+// org.monyhar.chrome.browser.autofill_assistant.user_data)
 // GENERATED_JAVA_CLASS_NAME_OVERRIDE: AssistantContactField
 enum AutofillContactField {
   NAME_FULL = 7,

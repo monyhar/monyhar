@@ -14,7 +14,7 @@ been hard for developers to figure out what the "best" way is because the APIs
 this happening, and to add a clear separation between the core pieces of the
 code that render a page using a multi-process browser, consensus was reached to
 move the core Chrome code into `src/content` ([content not
-chrome](http://blog.chromium.org/2008/10/content-not-chrome.html) :) ).
+chrome](http://blog.monyhar.org/2008/10/content-not-chrome.html) :) ).
 
 ## content vs chrome
 `content` should only contain code that is required to implement the web
@@ -24,7 +24,7 @@ the following are true:
 - Its launch is tracked on the <https://chromestatus.com/> dashboard.
 - It has an associated spec.
 - It is going through the [feature development
-  lifecycle](https://www.chromium.org/blink/launching-features).
+  lifecycle](https://www.monyhar.org/blink/launching-features).
 
 In contrast, many features that are common to modern web browsers do not satisfy
 these criteria and thus, are not implemented in `content`. A non-exhaustive
@@ -42,7 +42,7 @@ Instead, these features are implemented in `chrome`, while `content` only
 provides generic extension points that allow these features to subscribe to the
 events they require. Some features will require adding new extension points: for
 more information, see [How to Add New Features (without bloating
-RenderView/RenderViewHost/WebContents)](https://www.chromium.org/developers/design-documents/multi-process-architecture/how-to-add-new-features).
+RenderView/RenderViewHost/WebContents)](https://www.monyhar.org/developers/design-documents/multi-process-architecture/how-to-add-new-features).
 
 Finally, there are a number of browser features that require interaction with
 online services supplied by the vendor, e.g. from the above list, Safe Browsing,
@@ -58,7 +58,7 @@ vendor-specific logic.
 ## Architectural Diagram
 TODO: Draw a modern diagram.
 
-See an older diagram at: https://www.chromium.org/developers/content-module.
+See an older diagram at: https://www.monyhar.org/developers/content-module.
 
 The diagram illustrates the layering of the different modules. A module can
 include code directly from lower modules. However, a module can not include code
@@ -70,7 +70,7 @@ them. Examples of these APIs are the WebKit API and the Content API.
 The [Content API](public/README.md) is how code in content can indirectly call
 Chrome. Where possible, Chrome features try to hook in by filtering IPCs and
 listening to events per [How to Add New Features (without bloating
-RenderView/RenderViewHost/WebContents)](https://www.chromium.org/developers/design-documents/multi-process-architecture/how-to-add-new-features).
+RenderView/RenderViewHost/WebContents)](https://www.monyhar.org/developers/design-documents/multi-process-architecture/how-to-add-new-features).
 When there isn't enough context (i.e.  callback from WebKit) or when the
 callback is a one-off, we have a `ContentClient` interface that the embedder
 (Chrome) implements. `ContentClient` is available in all processes. Some
@@ -79,7 +79,7 @@ processes also have their own callback API as well, i.e.
 
 ## Status and Roadmap
 The current status is `content` doesn't depend on chrome at all (see the meta
-[bug](https://bugs.chromium.org/p/chromium/issues/detail?id=76697) and all bugs
+[bug](https://bugs.monyhar.org/p/monyhar/issues/detail?id=76697) and all bugs
 it depends on). We now have a basic browser built on top of `content`
 ("`content_shell`") that renders pages using `content` on all platforms. This
 allow developers working on the web platform and core code to only have to

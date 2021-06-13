@@ -65,7 +65,7 @@ a new `ComponentInstaller`.
 is a good example to work from.
 
 Components need to be registered with the component updater. This is done in
-[RegisterComponentsForUpdate](https://cs.chromium.org/chromium/src/chrome/browser/chrome_browser_main.cc).
+[RegisterComponentsForUpdate](https://cs.monyhar.org/monyhar/src/chrome/browser/chrome_browser_main.cc).
 
 ### Bundle with the Chrome Installer (Optional)
 If you need the guarantee that some implementation of your component is always

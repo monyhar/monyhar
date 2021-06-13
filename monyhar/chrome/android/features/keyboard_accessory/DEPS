@@ -2,11 +2,11 @@ include_rules = [
   "+chrome/browser/fullscreen/android",
   "+chrome/browser/ui/android/favicon/java",
   "+chrome/browser/ui/messages/android/java",
-  "+components/autofill/android/java/src/org/chromium/components/autofill",
+  "+components/autofill/android/java/src/org/monyhar/components/autofill",
   "+components/browser_ui/widget/android",
   "+components/embedder_support/android/java",
   "+components/feature_engagement/public",
   "-content/public/android",
-  "+content/public/android/java/src/org/chromium/content_public",
+  "+content/public/android/java/src/org/monyhar/content_public",
   "+chrome/browser/profiles",
 ]

@@ -22,7 +22,7 @@ namespace consent_auditor {
 // numeric values should never be reused.
 //
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.consent_auditor
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.consent_auditor
 // GENERATED_JAVA_CLASS_NAME_OVERRIDE: ConsentAuditorFeature
 enum class Feature {
   CHROME_SYNC = 0,
@@ -38,7 +38,7 @@ enum class Feature {
 // Whether a consent is given or not given.
 //
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.consent_auditor
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.consent_auditor
 enum class ConsentStatus { NOT_GIVEN, GIVEN };
 
 // TODO(markusheintz): Document this class.

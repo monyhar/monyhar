@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 // Same package as NetworkFetcherTask to access NetworkFetcherTask.Natives.
-package org.chromium.android_webview.nonembedded;
+package org.monyhar.android_webview.nonembedded;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
@@ -23,12 +23,12 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.FileUtils;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.url.GURL;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.FileUtils;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.url.GURL;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

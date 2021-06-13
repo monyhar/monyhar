@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.services;
+package org.monyhar.android_webview.services;
 
 import android.annotation.SuppressLint;
 import android.app.Service;
@@ -21,12 +21,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.android_webview.common.SafeModeController;
-import org.chromium.android_webview.common.services.ISafeModeService;
-import org.chromium.base.BuildInfo;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.compat.ApiHelperForP;
+import org.monyhar.android_webview.common.SafeModeController;
+import org.monyhar.android_webview.common.services.ISafeModeService;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.compat.ApiHelperForP;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.media;
+package org.monyhar.chrome.browser.media;
 
 import android.app.PendingIntent;
 import android.content.ComponentName;
@@ -21,19 +21,19 @@ import android.text.TextUtils;
 
 import androidx.browser.customtabs.CustomTabsIntent;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.SysUtils;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.task.TaskTraits;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider.CustomTabsUiType;
-import org.chromium.chrome.browser.customtabs.CustomTabIntentDataProvider;
-import org.chromium.chrome.browser.document.ChromeLauncherActivity;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.night_mode.GlobalNightModeStateProviderHolder;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.SysUtils;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.task.TaskTraits;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider.CustomTabsUiType;
+import org.monyhar.chrome.browser.customtabs.CustomTabIntentDataProvider;
+import org.monyhar.chrome.browser.document.ChromeLauncherActivity;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.night_mode.GlobalNightModeStateProviderHolder;
 
 import java.util.Locale;
 
@@ -201,7 +201,7 @@ public class MediaViewerUtils {
         PackageManager packageManager = context.getPackageManager();
         ComponentName mediaComponentName = new ComponentName(context, MediaLauncherActivity.class);
         ComponentName audioComponentName = new ComponentName(
-                context, "org.chromium.chrome.browser.media.AudioLauncherActivity");
+                context, "org.monyhar.chrome.browser.media.AudioLauncherActivity");
 
         int newMediaState = shouldEnableMediaLauncherActivity()
                 ? PackageManager.COMPONENT_ENABLED_STATE_ENABLED

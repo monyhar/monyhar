@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.find_in_page;
+package org.monyhar.components.find_in_page;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -19,12 +19,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.MathUtils;
-import org.chromium.ui.KeyboardVisibilityDelegate;
-import org.chromium.ui.base.LocalizationUtils;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.interpolators.BakedBezierInterpolator;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.MathUtils;
+import org.monyhar.ui.KeyboardVisibilityDelegate;
+import org.monyhar.ui.base.LocalizationUtils;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.interpolators.BakedBezierInterpolator;
 
 import java.util.ArrayList;
 import java.util.Arrays;

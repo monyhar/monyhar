@@ -240,10 +240,10 @@ TEST_F(CRWWebControllerTest, CancelCommittedNavigation) {
 
   WKNavigation* navigation =
       static_cast<WKNavigation*>([[NSObject alloc] init]);
-  SetWebViewURL(@"http://chromium.test");
+  SetWebViewURL(@"http://monyhar.test");
   [navigation_delegate_ webView:mock_web_view_
       didStartProvisionalNavigation:navigation];
-  [fake_wk_list_ setCurrentURL:@"http://chromium.test"];
+  [fake_wk_list_ setCurrentURL:@"http://monyhar.test"];
   [navigation_delegate_ webView:mock_web_view_ didCommitNavigation:navigation];
   NSError* error = [NSError errorWithDomain:NSURLErrorDomain
                                        code:NSURLErrorCancelled
@@ -336,7 +336,7 @@ TEST_F(CRWWebControllerTest, RemoveWebViewFromViewHierarchy) {
 // Test fixture to test JavaScriptDialogPresenter.
 class JavaScriptDialogPresenterTest : public WebTestWithWebController {
  protected:
-  JavaScriptDialogPresenterTest() : page_url_("https://chromium.test/") {}
+  JavaScriptDialogPresenterTest() : page_url_("https://monyhar.test/") {}
   void SetUp() override {
     WebTestWithWebState::SetUp();
     LoadHtml(@"<html><body></body></html>", page_url_);
@@ -451,7 +451,7 @@ typedef WebTestWithWebState CRWWebStateSecurityStateTest;
 TEST_F(CRWWebStateSecurityStateTest, LoadHttpPage) {
   FakeWebStateObserver observer(web_state());
   ASSERT_FALSE(observer.did_change_visible_security_state_info());
-  LoadHtml(@"<html><body></body></html>", GURL("http://chromium.test"));
+  LoadHtml(@"<html><body></body></html>", GURL("http://monyhar.test"));
   NavigationManager* nav_manager = web_state()->GetNavigationManager();
   NavigationItem* item = nav_manager->GetLastCommittedItem();
   EXPECT_EQ(SECURITY_STYLE_UNAUTHENTICATED, item->GetSSL().security_style);
@@ -468,7 +468,7 @@ typedef WebTestWithWebState CRWWebControllerInvalidUrlTest;
 // invalid url, but should do nothing if navigation is performed in iframe. This
 // test prevents crbug.com/694865 regression.
 TEST_F(CRWWebControllerInvalidUrlTest, IFrameWithInvalidURL) {
-  GURL url("http://chromium.test");
+  GURL url("http://monyhar.test");
   ASSERT_FALSE(GURL(kInvalidURL).is_valid());
   LoadHtml([NSString stringWithFormat:@"<iframe src='%s'/>", kInvalidURL], url);
   EXPECT_EQ(url, web_state()->GetLastCommittedURL());
@@ -798,12 +798,12 @@ TEST_F(CRWWebControllerResponseTest, IFrameDownloadWithNSHTTPURLResponse) {
 
 // Tests |currentURLWithTrustLevel:| method.
 TEST_F(CRWWebControllerTest, CurrentUrlWithTrustLevel) {
-  GURL url("http://chromium.test");
+  GURL url("http://monyhar.test");
   AddPendingItem(url, ui::PAGE_TRANSITION_TYPED);
 
   [[[mock_web_view_ stub] andReturnBool:NO] hasOnlySecureContent];
   [static_cast<WKWebView*>([[mock_web_view_ stub] andReturn:@""]) title];
-  SetWebViewURL(@"http://chromium.test");
+  SetWebViewURL(@"http://monyhar.test");
 
   // Stub out the injection process.
   [[mock_web_view_ stub] evaluateJavaScript:OCMOCK_ANY
@@ -812,7 +812,7 @@ TEST_F(CRWWebControllerTest, CurrentUrlWithTrustLevel) {
   // Simulate a page load to trigger a URL update.
   [navigation_delegate_ webView:mock_web_view_
       didStartProvisionalNavigation:nil];
-  [fake_wk_list_ setCurrentURL:@"http://chromium.test"];
+  [fake_wk_list_ setCurrentURL:@"http://monyhar.test"];
   [navigation_delegate_ webView:mock_web_view_ didCommitNavigation:nil];
 
   URLVerificationTrustLevel trust_level = kNone;

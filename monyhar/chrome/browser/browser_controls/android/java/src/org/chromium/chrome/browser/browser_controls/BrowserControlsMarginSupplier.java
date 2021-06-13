@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browser_controls;
+package org.monyhar.chrome.browser.browser_controls;
 
 import android.graphics.Rect;
 
-import org.chromium.base.supplier.DestroyableObservableSupplier;
-import org.chromium.base.supplier.ObservableSupplierImpl;
+import org.monyhar.base.supplier.DestroyableObservableSupplier;
+import org.monyhar.base.supplier.ObservableSupplierImpl;
 
 /**
  * An implementation of {@link DestroyableObservableSupplier} that monitors changes to browser

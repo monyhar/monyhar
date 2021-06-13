@@ -2,25 +2,25 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_check;
+package org.monyhar.chrome.browser.password_check;
 
-import static org.chromium.chrome.browser.password_check.PasswordCheckProperties.CompromisedCredentialProperties.COMPROMISED_CREDENTIAL;
-import static org.chromium.chrome.browser.password_check.PasswordCheckProperties.CompromisedCredentialProperties.CREDENTIAL_HANDLER;
-import static org.chromium.chrome.browser.password_check.PasswordCheckProperties.CompromisedCredentialProperties.FAVICON_OR_FALLBACK;
-import static org.chromium.chrome.browser.password_check.PasswordCheckProperties.CompromisedCredentialProperties.HAS_MANUAL_CHANGE_BUTTON;
-import static org.chromium.chrome.browser.password_check.PasswordCheckProperties.DELETION_CONFIRMATION_HANDLER;
-import static org.chromium.chrome.browser.password_check.PasswordCheckProperties.DELETION_ORIGIN;
-import static org.chromium.chrome.browser.password_check.PasswordCheckProperties.HeaderProperties.CHECK_PROGRESS;
-import static org.chromium.chrome.browser.password_check.PasswordCheckProperties.HeaderProperties.CHECK_STATUS;
-import static org.chromium.chrome.browser.password_check.PasswordCheckProperties.HeaderProperties.CHECK_TIMESTAMP;
-import static org.chromium.chrome.browser.password_check.PasswordCheckProperties.HeaderProperties.COMPROMISED_CREDENTIALS_COUNT;
-import static org.chromium.chrome.browser.password_check.PasswordCheckProperties.HeaderProperties.LAUNCH_ACCOUNT_CHECKUP_ACTION;
-import static org.chromium.chrome.browser.password_check.PasswordCheckProperties.HeaderProperties.RESTART_BUTTON_ACTION;
-import static org.chromium.chrome.browser.password_check.PasswordCheckProperties.HeaderProperties.SHOW_CHECK_SUBTITLE;
-import static org.chromium.chrome.browser.password_check.PasswordCheckProperties.HeaderProperties.UNKNOWN_PROGRESS;
-import static org.chromium.chrome.browser.password_check.PasswordCheckProperties.ITEMS;
-import static org.chromium.chrome.browser.password_check.PasswordCheckProperties.VIEW_CREDENTIAL;
-import static org.chromium.chrome.browser.password_check.PasswordCheckProperties.VIEW_DIALOG_HANDLER;
+import static org.monyhar.chrome.browser.password_check.PasswordCheckProperties.CompromisedCredentialProperties.COMPROMISED_CREDENTIAL;
+import static org.monyhar.chrome.browser.password_check.PasswordCheckProperties.CompromisedCredentialProperties.CREDENTIAL_HANDLER;
+import static org.monyhar.chrome.browser.password_check.PasswordCheckProperties.CompromisedCredentialProperties.FAVICON_OR_FALLBACK;
+import static org.monyhar.chrome.browser.password_check.PasswordCheckProperties.CompromisedCredentialProperties.HAS_MANUAL_CHANGE_BUTTON;
+import static org.monyhar.chrome.browser.password_check.PasswordCheckProperties.DELETION_CONFIRMATION_HANDLER;
+import static org.monyhar.chrome.browser.password_check.PasswordCheckProperties.DELETION_ORIGIN;
+import static org.monyhar.chrome.browser.password_check.PasswordCheckProperties.HeaderProperties.CHECK_PROGRESS;
+import static org.monyhar.chrome.browser.password_check.PasswordCheckProperties.HeaderProperties.CHECK_STATUS;
+import static org.monyhar.chrome.browser.password_check.PasswordCheckProperties.HeaderProperties.CHECK_TIMESTAMP;
+import static org.monyhar.chrome.browser.password_check.PasswordCheckProperties.HeaderProperties.COMPROMISED_CREDENTIALS_COUNT;
+import static org.monyhar.chrome.browser.password_check.PasswordCheckProperties.HeaderProperties.LAUNCH_ACCOUNT_CHECKUP_ACTION;
+import static org.monyhar.chrome.browser.password_check.PasswordCheckProperties.HeaderProperties.RESTART_BUTTON_ACTION;
+import static org.monyhar.chrome.browser.password_check.PasswordCheckProperties.HeaderProperties.SHOW_CHECK_SUBTITLE;
+import static org.monyhar.chrome.browser.password_check.PasswordCheckProperties.HeaderProperties.UNKNOWN_PROGRESS;
+import static org.monyhar.chrome.browser.password_check.PasswordCheckProperties.ITEMS;
+import static org.monyhar.chrome.browser.password_check.PasswordCheckProperties.VIEW_CREDENTIAL;
+import static org.monyhar.chrome.browser.password_check.PasswordCheckProperties.VIEW_DIALOG_HANDLER;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -29,17 +29,17 @@ import android.util.Pair;
 import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.app.AlertDialog;
 
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.password_check.helper.PasswordCheckChangePasswordHelper;
-import org.chromium.chrome.browser.password_check.helper.PasswordCheckIconHelper;
-import org.chromium.chrome.browser.password_manager.settings.PasswordAccessReauthenticationHelper;
-import org.chromium.chrome.browser.password_manager.settings.PasswordAccessReauthenticationHelper.ReauthReason;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.ui.modelutil.ListModel;
-import org.chromium.ui.modelutil.MVCListAdapter.ListItem;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.password_check.helper.PasswordCheckChangePasswordHelper;
+import org.monyhar.chrome.browser.password_check.helper.PasswordCheckIconHelper;
+import org.monyhar.chrome.browser.password_manager.settings.PasswordAccessReauthenticationHelper;
+import org.monyhar.chrome.browser.password_manager.settings.PasswordAccessReauthenticationHelper.ReauthReason;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.ui.modelutil.ListModel;
+import org.monyhar.ui.modelutil.MVCListAdapter.ListItem;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.util.Arrays;
 import java.util.Collections;

@@ -12,7 +12,7 @@
     android:gravity="center_vertical"
     style="@android:style/Theme.Holo.Light">
     <view
-        class="org.chromium.chrome.browser.findinpage.FindToolbar$FindQuery"
+        class="org.monyhar.chrome.browser.findinpage.FindToolbar$FindQuery"
         android:id="@+id/find_query"
         android:layout_width="0dp"
         android:layout_weight="1"
@@ -40,21 +40,21 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:background="@color/divider_line_bg_color" />
-    <org.chromium.ui.widget.ChromeImageButton
+    <org.monyhar.ui.widget.ChromeImageButton
         android:id="@+id/find_prev_button"
         style="@style/ToolbarButton"
         android:layout_height="match_parent"
         android:src="@drawable/ic_expand_less_black_24dp"
         android:contentDescription="@string/accessibility_find_toolbar_btn_prev"
         app:tint="@color/default_icon_color_tint_list" />
-    <org.chromium.ui.widget.ChromeImageButton
+    <org.monyhar.ui.widget.ChromeImageButton
         android:id="@+id/find_next_button"
         style="@style/ToolbarButton"
         android:layout_height="match_parent"
         android:src="@drawable/ic_expand_more_black_24dp"
         android:contentDescription="@string/accessibility_find_toolbar_btn_next"
         app:tint="@color/default_icon_color_tint_list" />
-    <org.chromium.ui.widget.ChromeImageButton
+    <org.monyhar.ui.widget.ChromeImageButton
         android:id="@+id/close_find_button"
         style="@style/ToolbarButton"
         android:layout_height="match_parent"

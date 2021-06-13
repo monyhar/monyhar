@@ -4,7 +4,7 @@ Piranha Plant is the name of a project, started in November 2013, that aims to
 deliver the future architecture of MediaStreams in Chromium.
 
 Project members are listed in the
-[group for the project](https://groups.google.com/a/chromium.org/forum/#!members/piranha-plant).
+[group for the project](https://groups.google.com/a/monyhar.org/forum/#!members/piranha-plant).
 
 The Piranha Plant is a monster plant that has appeared in many of the Super
 Mario games. In the original Super Mario Bros, it hid in the green pipes and is
@@ -46,7 +46,7 @@ architecture should look like now that the spec is relatively stable.
 ## Deliverables
 
 1.  Project code name: Piranha Plant.
-1.  A [design document](https://www.chromium.org/developers/design-documents/idealized-mediastream-design)
+1.  A [design document](https://www.monyhar.org/developers/design-documents/idealized-mediastream-design)
     for the idealized future design (work in progress).
 1.  A document laying out a plan for incremental steps to achieve as much of the
     idealized design as is pragmatic. See below for current draft.

@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@17.5.0.cr0
-package: chromium/third_party/android_deps/libs/com_google_android_gms_play_services_basement
+package: monyhar/third_party/android_deps/libs/com_google_android_gms_play_services_basement
 description: "play-services-basement"
 data:
 - file: play-services-basement-17.5.0.aar

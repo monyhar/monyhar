@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.library_loader;
+package org.monyhar.base.library_loader;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -14,10 +14,10 @@ import android.os.SystemClock;
 import androidx.annotation.IntDef;
 import androidx.annotation.NonNull;
 
-import org.chromium.base.Log;
-import org.chromium.base.StreamUtil;
-import org.chromium.base.annotations.AccessedByNative;
-import org.chromium.base.annotations.JniIgnoreNatives;
+import org.monyhar.base.Log;
+import org.monyhar.base.StreamUtil;
+import org.monyhar.base.annotations.AccessedByNative;
+import org.monyhar.base.annotations.JniIgnoreNatives;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -76,15 +76,15 @@ abstract class Linker {
     private static final String TAG = "Linker";
 
     // Name of the library that contains the JNI code.
-    protected static final String LINKER_JNI_LIBRARY = "chromium_android_linker";
+    protected static final String LINKER_JNI_LIBRARY = "monyhar_android_linker";
 
     // Set to true to enable debug logs.
     protected static final boolean DEBUG = false;
 
     // Constants used to pass the shared RELRO Bundle through Binder.
-    private static final String SHARED_RELROS = "org.chromium.base.android.linker.shared_relros";
+    private static final String SHARED_RELROS = "org.monyhar.base.android.linker.shared_relros";
     private static final String BASE_LOAD_ADDRESS =
-            "org.chromium.base.android.linker.base_load_address";
+            "org.monyhar.base.android.linker.base_load_address";
 
     protected final Object mLock = new Object();
 

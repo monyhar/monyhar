@@ -54,4 +54,4 @@ WebView package is automatically disabled to avoid downloading redundant
 updates. You never need to manually enable or disable WebView.
 
 [1]: https://developer.android.com/reference/android/webkit/WebView.html
-[2]: https://groups.google.com/a/chromium.org/forum/#!forum/android-webview-dev
+[2]: https://groups.google.com/a/monyhar.org/forum/#!forum/android-webview-dev

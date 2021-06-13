@@ -17,7 +17,7 @@ bootstrap Mojo IPC between two processes.
 
 This document provides a brief guide to API usage with example code snippets.
 For a detailed API references please consult the headers in
-[//mojo/public/c/system](https://cs.chromium.org/chromium/src/mojo/public/c/system/).
+[//mojo/public/c/system](https://cs.monyhar.org/monyhar/src/mojo/public/c/system/).
 
 ### A Note About Multithreading
 
@@ -53,7 +53,7 @@ Most API functions return a value of type `MojoResult`. This is an integral
 result code used to convey some meaningful level of detail about the result of a
 requested operation.
 
-See [//mojo/public/c/system/types.h](https://cs.chromium.org/chromium/src/mojo/public/c/system/types.h)
+See [//mojo/public/c/system/types.h](https://cs.monyhar.org/monyhar/src/mojo/public/c/system/types.h)
 for different possible values. See documentation for individual API calls for
 more specific contextual meaning of various result codes.
 
@@ -105,7 +105,7 @@ sent over that pipe, or pipes sent over *that* pipe, and so on...)
 The public C System API exposes the ability to read and write messages on pipes
 and to create new message pipes.
 
-See [//mojo/public/c/system/message_pipe.h](https://cs.chromium.org/chromium/src/mojo/public/c/system/message_pipe.h)
+See [//mojo/public/c/system/message_pipe.h](https://cs.monyhar.org/monyhar/src/mojo/public/c/system/message_pipe.h)
 for detailed message pipe API documentation.
 
 ### Creating Message Pipes
@@ -363,7 +363,7 @@ pipes provide convenience about messaging when data is available etc. In general
 the performance advantage when compared to message pipes comes in the form of
 fewer memory allocations and fewer copies throughout the transfer process.
 
-See [//mojo/public/c/system/data_pipe.h](https://cs.chromium.org/chromium/src/mojo/public/c/system/data_pipe.h)
+See [//mojo/public/c/system/data_pipe.h](https://cs.monyhar.org/monyhar/src/mojo/public/c/system/data_pipe.h)
 for detailed data pipe API documentation.
 
 ### Creating Data Pipes
@@ -469,7 +469,7 @@ Shared buffers are chunks of memory which can be mapped simultaneously by
 multiple processes. Mojo provides a simple API to make these available to
 applications.
 
-See [//mojo/public/c/system/buffer.h](https://cs.chromium.org/chromium/src/mojo/public/c/system/buffer.h)
+See [//mojo/public/c/system/buffer.h](https://cs.monyhar.org/monyhar/src/mojo/public/c/system/buffer.h)
 for detailed shared buffer API documentation.
 
 ### Creating Buffer Handles
@@ -543,7 +543,7 @@ Native platform handles to system objects can be wrapped as Mojo handles for
 seamless transit over message pipes. Mojo currently supports wrapping POSIX
 file descriptors, Windows handles, Mach ports, and Fuchsia zx_handles.
 
-See [//mojo/public/c/system/platform_handle.h](https://cs.chromium.org/chromium/src/mojo/public/c/system/platform_handle.h)
+See [//mojo/public/c/system/platform_handle.h](https://cs.monyhar.org/monyhar/src/mojo/public/c/system/platform_handle.h)
 for detailed platform handle API documentation.
 
 ### Wrapping Basic Handle Types
@@ -615,7 +615,7 @@ MojoResult result = MojoQueryHandleSignalsState(a, &state);
 
 The `MojoHandleSignalsState` structure exposes two fields: `satisfied_signals`
 and `satisfiable_signals`. Both of these are bitmasks of the type
-`MojoHandleSignals` (see [//mojo/public/c/system/types.h](https://cs.chromium.org/chromium/src/mojo/public/c/system/types.h)
+`MojoHandleSignals` (see [//mojo/public/c/system/types.h](https://cs.monyhar.org/monyhar/src/mojo/public/c/system/types.h)
 for more details.)
 
 The `satisfied_signals` bitmask indicates signals which were satisfied on the
@@ -671,7 +671,7 @@ automatically invoke a notification handler in response.
 
 When a trap is created it must be bound to a function pointer matching
 the following signature, defined in
-[//mojo/public/c/system/trap.h](https://cs.chromium.org/chromium/src/mojo/public/c/system/trap.h):
+[//mojo/public/c/system/trap.h](https://cs.monyhar.org/monyhar/src/mojo/public/c/system/trap.h):
 
 ``` c
 typedef void (*MojoTrapEventHandler)(const struct MojoTrapEvent* event);
@@ -935,6 +935,6 @@ watcher will eventually detect that the handle is no longer readable.
 TODO.
 
 For now see the
-[C header](https://cs.chromium.org/src/mojo/public/c/system/invitation.h) and
+[C header](https://cs.monyhar.org/src/mojo/public/c/system/invitation.h) and
 the documentation for the equivalent
 [C++ API](/mojo/public/cpp/system/README.md#Invitations).

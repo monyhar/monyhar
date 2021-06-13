@@ -57,7 +57,7 @@ const char kIsWebOnlyTwaKey[] = "is_web_only_twa";
 const char kSha256FingerprintKey[] = "sha256_fingerprint";
 constexpr char kLastAppId[] = "last_app_id";
 constexpr char kPinIndex[] = "pin_index";
-constexpr char kGeneratedWebApkPackagePrefix[] = "org.chromium.webapk.";
+constexpr char kGeneratedWebApkPackagePrefix[] = "org.monyhar.webapk.";
 
 // Default icon size in pixels to request from ARC for an icon.
 const int kDefaultIconSize = 192;

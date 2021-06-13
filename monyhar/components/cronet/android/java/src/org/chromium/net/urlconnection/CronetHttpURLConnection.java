@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.urlconnection;
+package org.monyhar.net.urlconnection;
 
 import android.annotation.SuppressLint;
 import android.net.TrafficStats;
@@ -10,11 +10,11 @@ import android.os.Build;
 import android.util.Log;
 import android.util.Pair;
 
-import org.chromium.net.CronetEngine;
-import org.chromium.net.CronetException;
-import org.chromium.net.ExperimentalUrlRequest;
-import org.chromium.net.UrlRequest;
-import org.chromium.net.UrlResponseInfo;
+import org.monyhar.net.CronetEngine;
+import org.monyhar.net.CronetException;
+import org.monyhar.net.ExperimentalUrlRequest;
+import org.monyhar.net.UrlRequest;
+import org.monyhar.net.UrlResponseInfo;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

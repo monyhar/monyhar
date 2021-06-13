@@ -40,7 +40,7 @@ struct XRayTimestampPair XRayGenerateTimestampsNow(void) {
   return pair;
 }
 
-/* see chromium/src/base/trace_event/trace_event.h */
+/* see monyhar/src/base/trace_event/trace_event.h */
 #define TRACE_VALUE_TYPE_UINT (2)
 #define TRACE_VALUE_TYPE_DOUBLE (4)
 #define TRACE_VALUE_TYPE_COPY_STRING (7)

@@ -9,7 +9,7 @@
  */
 function shortenPackageName(name) {
   return name
-      .replace('org.chromium.', '.')
+      .replace('org.monyhar.', '.')
       .replace('chrome.browser.', 'c.b.');
 }
 

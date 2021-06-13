@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui.appmenu;
+package org.monyhar.chrome.browser.ui.appmenu;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;
@@ -38,15 +38,15 @@ import androidx.annotation.IdRes;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.SysUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.ui.appmenu.internal.R;
-import org.chromium.components.browser_ui.widget.highlight.ViewHighlighter;
-import org.chromium.components.browser_ui.widget.highlight.ViewHighlighter.HighlightParams;
-import org.chromium.components.browser_ui.widget.highlight.ViewHighlighter.HighlightShape;
-import org.chromium.ui.widget.ChipView;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.SysUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.ui.appmenu.internal.R;
+import org.monyhar.components.browser_ui.widget.highlight.ViewHighlighter;
+import org.monyhar.components.browser_ui.widget.highlight.ViewHighlighter.HighlightParams;
+import org.monyhar.components.browser_ui.widget.highlight.ViewHighlighter.HighlightShape;
+import org.monyhar.ui.widget.ChipView;
+import org.monyhar.ui.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,5 +1,5 @@
 @@PACKAGE@@-@@CHANNEL@@ (@@VERSIONFULL@@) @@CHANNEL@@; urgency=low
 
-  * Build spec: https://chromium.googlesource.com/chromium/src.git/+/@@VERSION@@/
+  * Build spec: https://monyhar.googlesource.com/monyhar/src.git/+/@@VERSION@@/
 
  -- @@MAINTNAME@@ <@@MAINTMAIL@@>  Tue, 03 Feb 2009 14:54:35 -0800

@@ -29,7 +29,7 @@ using base::test::ios::WaitUntilConditionOrTimeout;
 
 namespace {
 const char kTestCertFileName[] = "ok_cert.pem";
-const char kTestHostName[] = "https://chromium.test/";
+const char kTestHostName[] = "https://monyhar.test/";
 }  // namespace
 
 // Test fixture for IOSSSLErrorHandler class.

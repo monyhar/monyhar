@@ -81,7 +81,7 @@ _COMMANDS = {
     "DeleteAllCookies": (Method.DELETE, "/session/:sessionId/cookie"),
     "DeleteCookie": (Method.DELETE, "/session/:sessionId/cookie/:name"),
     "DeleteNetworkConditions":
-    (Method.DELETE, "/session/:sessionId/chromium/network_conditions"),
+    (Method.DELETE, "/session/:sessionId/monyhar/network_conditions"),
     "DismissAlert": command_executor.Command.DISMISS_ALERT,
     "DoubleClick": (Method.POST, "/session/:sessionId/doubleclick"),
     "ElementScreenshot":
@@ -126,7 +126,7 @@ _COMMANDS = {
     "GetLogTypes": (Method.GET, "/session/:sessionId/se/log/types"),
     "GetNamedCookie": (Method.GET, "/session/:sessionId/cookie/:name"),
     "GetNetworkConditions":
-    (Method.GET, "/session/:sessionId/chromium/network_conditions"),
+    (Method.GET, "/session/:sessionId/monyhar/network_conditions"),
     "GetNetworkConnection":
     (Method.GET, "/session/:sessionId/network_connection"),
     "GetSessionCapabilities": (Method.GET, "/session/:sessionId"),
@@ -152,7 +152,7 @@ _COMMANDS = {
     "GetWindows": command_executor.Command.GET_WINDOW_HANDLES,
     "GoBack": (Method.POST, "/session/:sessionId/back"),
     "GoForward": (Method.POST, "/session/:sessionId/forward"),
-    "HeapSnapshot": (Method.GET, "/session/:sessionId/chromium/heap_snapshot"),
+    "HeapSnapshot": (Method.GET, "/session/:sessionId/monyhar/heap_snapshot"),
     "InitSession": (Method.POST, "/session"),
     "IsAlertOpen": (Method.GET, "/session/:sessionId/alert"),
     "IsElementDisplayed":
@@ -163,7 +163,7 @@ _COMMANDS = {
     "IsElementSelected":
     (Method.GET, "/session/:sessionId/element/:id/selected"),
     "IsLoading": (Method.GET, "/session/:sessionId/is_loading"),
-    "LaunchApp": (Method.POST, "/session/:sessionId/chromium/launch_app"),
+    "LaunchApp": (Method.POST, "/session/:sessionId/monyhar/launch_app"),
     "MaximizeWindow": (Method.POST, "/session/:sessionId/window/maximize"),
     "MinimizeWindow": (Method.POST, "/session/:sessionId/window/minimize"),
     "MouseDown": (Method.POST, "/session/:sessionId/buttondown"),
@@ -180,18 +180,18 @@ _COMMANDS = {
     (Method.DELETE, "/session/:sessionId/session_storage/key/:key"),
     "Resume": (Method.POST, "/session/:sessionId/goog/page/resume"),
     "Screenshot": (Method.GET, "/session/:sessionId/screenshot"),
-    "SendCommand": (Method.POST, "/session/:sessionId/chromium/send_command"),
+    "SendCommand": (Method.POST, "/session/:sessionId/monyhar/send_command"),
     "SendCommandAndGetResult":
-    (Method.POST, "/session/:sessionId/chromium/send_command_and_get_result"),
+    (Method.POST, "/session/:sessionId/monyhar/send_command_and_get_result"),
     "SendCommandFromWebSocket":
-    (Method.POST, "session/:sessionId/chromium/send_command_from_websocket"),
+    (Method.POST, "session/:sessionId/monyhar/send_command_from_websocket"),
     "SetAlertPrompt": command_executor.Command.SET_ALERT_VALUE,
     "SetGeolocation": (Method.POST, "/session/:sessionId/location"),
     "SetImplicitWait":
     (Method.POST, "/session/:sessionId/timeouts/implicit_wait"),
     "SetLocalStorageKeys": (Method.POST, "/session/:sessionId/local_storage"),
     "SetNetworkConditions":
-    (Method.POST, "/session/:sessionId/chromium/network_conditions"),
+    (Method.POST, "/session/:sessionId/monyhar/network_conditions"),
     "SetNetworkConnection":
     (Method.POST, "/session/:sessionId/network_connection"),
     "SetScriptTimeout":

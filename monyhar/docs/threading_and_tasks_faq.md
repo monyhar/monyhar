@@ -84,7 +84,7 @@ If the task runs on a `DEDICATED SingleThreadTaskRunner`:
   your blocking task returns (they will never run if the blocking task never
   returns).
 
-[base/threading/scoped_blocking_call.h](https://cs.chromium.org/chromium/src/base/threading/scoped_blocking_call.h)
+[base/threading/scoped_blocking_call.h](https://cs.monyhar.org/monyhar/src/base/threading/scoped_blocking_call.h)
 explains the difference between `MAY_BLOCK ` and  `WILL_BLOCK` and gives
 examples of blocking operations.
 
@@ -107,7 +107,7 @@ such tasks at which point sequencing can be a useful tool to prevent flooding).
 No. All blocking //base APIs (e.g. base::ReadFileToString, base::File::Read,
 base::SysInfo::AmountOfFreeDiskSpace, base::WaitableEvent::Wait, etc.) have their
 own internal annotations. See
-[base/threading/scoped_blocking_call.h](https://cs.chromium.org/chromium/src/base/threading/scoped_blocking_call.h).
+[base/threading/scoped_blocking_call.h](https://cs.monyhar.org/monyhar/src/base/threading/scoped_blocking_call.h).
 
 ### Can multiple ScopedBlockingCall be nested for the purpose of documentation?
 
@@ -138,7 +138,7 @@ void ProcessDataFromNetwork() {
 
  However, CPU usage should always be minimal within the scope of
 `ScopedBlockingCall`. See
-[base/threading/scoped_blocking_call.h](https://cs.chromium.org/chromium/src/base/threading/scoped_blocking_call.h).
+[base/threading/scoped_blocking_call.h](https://cs.monyhar.org/monyhar/src/base/threading/scoped_blocking_call.h).
 
 
 ## Sequences
@@ -206,4 +206,4 @@ EXPECT_TRUE(g_condition);
 
  1. Check the main [Threading and Tasks](threading_and_tasks.md) docs.
  2. Ping
-[scheduler-dev@chromium.org](https://groups.google.com/a/chromium.org/forum/#!forum/scheduler-dev).
+[scheduler-dev@monyhar.org](https://groups.google.com/a/monyhar.org/forum/#!forum/scheduler-dev).

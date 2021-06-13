@@ -14,12 +14,12 @@ remote changes provided via the [`ModelTypeWorker`][MTW], or local changes
 reported by the [`ModelTypeSyncBridge`][MTSB]) must specify a client tag, which
 is considered (after being hashed) the main global identifier of a sync entity.
 
-[SMTP]: https://cs.chromium.org/chromium/src/components/sync/model/client_tag_based_model_type_processor.h
-[MTSB]: https://cs.chromium.org/chromium/src/components/sync/model/model_type_sync_bridge.h
-[MTCP]: https://cs.chromium.org/chromium/src/components/sync/model/model_type_change_processor.h
-[MTW]: https://cs.chromium.org/chromium/src/components/sync/engine/model_type_worker.h
-[CQ]: https://cs.chromium.org/chromium/src/components/sync/engine/commit_queue.h
-[MTP]: https://cs.chromium.org/chromium/src/components/sync/engine/model_type_processor.h
+[SMTP]: https://cs.monyhar.org/monyhar/src/components/sync/model/client_tag_based_model_type_processor.h
+[MTSB]: https://cs.monyhar.org/monyhar/src/components/sync/model/model_type_sync_bridge.h
+[MTCP]: https://cs.monyhar.org/monyhar/src/components/sync/model/model_type_change_processor.h
+[MTW]: https://cs.monyhar.org/monyhar/src/components/sync/engine/model_type_worker.h
+[CQ]: https://cs.monyhar.org/monyhar/src/components/sync/engine/commit_queue.h
+[MTP]: https://cs.monyhar.org/monyhar/src/components/sync/engine/model_type_processor.h
 
 [TOC]
 
@@ -116,5 +116,5 @@ The tracker holds the metadata in memory forever, which is needed so we know
 what to update the on-disk memory with when we get a new local or remote change.
 Changing this would require being able to handle updates asynchronously.
 
-[PET]: https://cs.chromium.org/chromium/src/components/sync/model/processor_entity.h
-[EM]: https://cs.chromium.org/chromium/src/components/sync/protocol/entity_metadata.proto
+[PET]: https://cs.monyhar.org/monyhar/src/components/sync/model/processor_entity.h
+[EM]: https://cs.monyhar.org/monyhar/src/components/sync/protocol/entity_metadata.proto

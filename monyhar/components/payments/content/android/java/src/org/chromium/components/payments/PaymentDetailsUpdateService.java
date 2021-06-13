@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.payments;
+package org.monyhar.components.payments;
 
 import android.app.Service;
 import android.content.Intent;
@@ -10,8 +10,8 @@ import android.os.Binder;
 import android.os.Bundle;
 import android.os.IBinder;
 
-import org.chromium.base.task.PostTask;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 /**
  * A bound service responsible for receiving change payment method, shipping option, and shipping

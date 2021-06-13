@@ -81,7 +81,7 @@ ALLOWED_PREFIXES = {
     '//ui/',
     '//url:',
 }
-IGNORED_CLASSES = {'org.chromium.base.natives.GEN_JNI'}
+IGNORED_CLASSES = {'org.monyhar.base.natives.GEN_JNI'}
 
 
 def get_class_name_to_display(fully_qualified_name: str,
@@ -244,7 +244,7 @@ def main():
         help='Case-sensitive name of the classes to print dependencies for. '
         'Matches either the simple class name without package or the fully '
         'qualified class name. For example, `AppHooks` matches '
-        '`org.chromium.browser.AppHooks`. Specify multiple classes with a '
+        '`org.monyhar.browser.AppHooks`. Specify multiple classes with a '
         'comma-separated list, for example '
         '`ChromeActivity,ChromeTabbedActivity`')
     required_arg_group_either.add_argument(
@@ -252,7 +252,7 @@ def main():
         '--packages',
         dest='package_names',
         help='Case-sensitive name of the packages to print dependencies for, '
-        'such as `org.chromium.browser`. Specify multiple packages with a '
+        'such as `org.monyhar.browser`. Specify multiple packages with a '
         'comma-separated list.`')
     direction_arg_group = arg_parser.add_mutually_exclusive_group()
     direction_arg_group.add_argument('--inbound',

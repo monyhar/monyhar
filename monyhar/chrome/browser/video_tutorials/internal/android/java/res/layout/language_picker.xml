@@ -12,7 +12,7 @@
     android:background="@color/default_bg_color"
     android:paddingTop="12dp" >
 
-    <org.chromium.ui.widget.ChromeImageButton
+    <org.monyhar.ui.widget.ChromeImageButton
         android:id="@+id/close_button"
         android:layout_height="48dp"
         android:layout_width="48dp"
@@ -46,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <org.chromium.ui.widget.ButtonCompat
+        <org.monyhar.ui.widget.ButtonCompat
             android:id="@+id/watch"
             android:layout_weight="0"
             android:layout_width="wrap_content"

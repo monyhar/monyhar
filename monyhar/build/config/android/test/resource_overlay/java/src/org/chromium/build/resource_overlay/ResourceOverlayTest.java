@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.build.resource_overlay;
+package org.monyhar.build.resource_overlay;
 
 import static org.junit.Assert.assertEquals;
 
@@ -14,8 +14,8 @@ import androidx.test.filters.SmallTest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Batch;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Batch;
 
 /**
  * Test for resource_overlay parameter in android_resources() build rule.

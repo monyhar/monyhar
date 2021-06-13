@@ -21,7 +21,7 @@ be enabled via chrome://memory-internals or about://flags.
  3. To take a heap dump, click `save dump`. This is stored as a
     [MemoryInfra][memory-infra] trace.
  4. To symbolize the trace:
-   * Windows only: build `addr2line-pdb` from the chromium repository. For subsequent commands, add the flag `--addr2line-executable=<path_to_addr2lin-pdb>`
+   * Windows only: build `addr2line-pdb` from the monyhar repository. For subsequent commands, add the flag `--addr2line-executable=<path_to_addr2lin-pdb>`
    * If this is a local build, run the command `./third_party/catapult/tracing/bin/symbolize_trace --is-local-build <path_to_trace>`
    * If this is an official Chrome build,  run `./third_party/catapult/tracing/bin/symbolize_trace <path_to_trace>`. This will request authentication with google cloud storage to obtain symbol files [googlers only].
    * If this is an official macOS or Linux Chrome build, add the flag `--use-breakpad-symbols`.
@@ -65,8 +65,8 @@ similar effect to the various `memlog` flags.
     Enter/Return. To pop up the stack, press Backspace/Delete.
 
 [memory-infra]:    README.md
-[m-purple]:        https://storage.googleapis.com/chromium-docs.appspot.com/d7bdf4d16204c293688be2e5a0bcb2bf463dbbc3
-[cells-heap-dump]: https://storage.googleapis.com/chromium-docs.appspot.com/a24d80d6a08da088e2e9c8b2b64daa215be4dacb
+[m-purple]:        https://storage.googleapis.com/monyhar-docs.appspot.com/d7bdf4d16204c293688be2e5a0bcb2bf463dbbc3
+[cells-heap-dump]: https://storage.googleapis.com/monyhar-docs.appspot.com/a24d80d6a08da088e2e9c8b2b64daa215be4dacb
 
 ## How to automatically extract large allocations from a heap dump
 
@@ -155,8 +155,8 @@ around 72 MiB.)
 
 ![Diff of The Verge before and after loading ads][diff]
 
-[pseudo-stack]:            https://storage.googleapis.com/chromium-docs.appspot.com/058e50350836f55724e100d4dbbddf4b9803f550
-[break-down-by-backtrace]: https://storage.googleapis.com/chromium-docs.appspot.com/ec61c5f15705f5bcf3ca83a155ed647a0538bbe1
-[break-down-by-type]:      https://storage.googleapis.com/chromium-docs.appspot.com/2236e61021922c0813908c6745136953fa20a37b
-[type-then-backtrace]:     https://storage.googleapis.com/chromium-docs.appspot.com/c5367dde11476bdbf2d5a1c51674148915573d11
-[diff]:                    https://storage.googleapis.com/chromium-docs.appspot.com/802141906869cd533bb613da5f91bd0b071ceb24
+[pseudo-stack]:            https://storage.googleapis.com/monyhar-docs.appspot.com/058e50350836f55724e100d4dbbddf4b9803f550
+[break-down-by-backtrace]: https://storage.googleapis.com/monyhar-docs.appspot.com/ec61c5f15705f5bcf3ca83a155ed647a0538bbe1
+[break-down-by-type]:      https://storage.googleapis.com/monyhar-docs.appspot.com/2236e61021922c0813908c6745136953fa20a37b
+[type-then-backtrace]:     https://storage.googleapis.com/monyhar-docs.appspot.com/c5367dde11476bdbf2d5a1c51674148915573d11
+[diff]:                    https://storage.googleapis.com/monyhar-docs.appspot.com/802141906869cd533bb613da5f91bd0b071ceb24

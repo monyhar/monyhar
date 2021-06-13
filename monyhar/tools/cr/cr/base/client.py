@@ -49,7 +49,7 @@ GCLIENT_FILENAME = '.gclient'
 # The default config values installed by this module.
 DEFAULT = cr.Config.From(
     CR_ROOT_PATH=os.path.join('{GOOGLE_CODE}'),
-    CR_CLIENT_NAME='chromium',
+    CR_CLIENT_NAME='monyhar',
     CR_CLIENT_PATH=os.path.join('{CR_ROOT_PATH}', '{CR_CLIENT_NAME}'),
     CR_SRC=os.path.join('{CR_CLIENT_PATH}', 'src'),
     CR_BUILD_DIR=os.path.join('{CR_SRC}', '{CR_OUT_FULL}'),

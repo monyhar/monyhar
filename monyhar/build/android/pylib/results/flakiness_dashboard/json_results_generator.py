@@ -128,7 +128,7 @@ class JSONResultsGeneratorBase(object):
   # Min time (seconds) that will be added to the JSON.
   MIN_TIME = 1
 
-  # Note that in non-chromium tests those chars are used to indicate
+  # Note that in non-monyhar tests those chars are used to indicate
   # test modifiers (FAILS, FLAKY, etc) but not actual test results.
   PASS_RESULT = 'P'
   SKIP_RESULT = 'X'
@@ -489,9 +489,9 @@ class JSONResultsGeneratorBase(object):
     # Include SVN revisions for the given repositories.
     for (name, path) in self._svn_repositories:
       # Note: for JSON file's backward-compatibility we use 'chrome' rather
-      # than 'chromium' here.
+      # than 'monyhar' here.
       lowercase_name = name.lower()
-      if lowercase_name == 'chromium':
+      if lowercase_name == 'monyhar':
         lowercase_name = 'chrome'
       self._InsertItemIntoRawList(results_for_builder,
                                   self._GetSVNRevision(path),

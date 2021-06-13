@@ -159,7 +159,7 @@ Run `git cl upload`. Some useful options include:
 
 *   `--cq-dry-run` (or `-d`) will set the patchset to do a CQ Dry Run. It is a
     good idea to run try jobs for each new patchset with significant changes.
-*   `-r <chromium_username>` will add reviewers.
+*   `-r <monyhar_username>` will add reviewers.
 *   `-b <bug_number>` automatically populates the bug reference line of the
     commit message. Use `-b None` if there is no relevant crbug.
 *   `--edit-description` will let you update the commit message. Using square
@@ -237,7 +237,7 @@ queue (CQ), which will land it if successful.
 Just because your CL made it through the CQ doesn't mean you're in the clear
 yet. There might be internal non-public try job failures, or bugs that went
 unnoticed during the code review process. Consider monitoring the
-[Chromium tree][chromium-tree] for about a day after your CL lands. If
+[Chromium tree][monyhar-tree] for about a day after your CL lands. If
 the Sheriff or anyone else brings any failures to your attention, revert the CL
 first and ask questions later. Gerrit can automatically generate revert CLs.
 
@@ -248,8 +248,8 @@ clean up your local branches. These commands will automatically delete merged
 branches. Mark the associated crbug as "fixed".
 
 [//]: # (the reference link section should be alphabetically sorted)
-[build-instructions]: https://chromium.googlesource.com/chromium/src.git/+/main/docs/#Checking-Out-and-Building
-[chromium-tree]: https://ci.chromium.org/p/chromium/g/main/console
+[build-instructions]: https://monyhar.googlesource.com/monyhar/src.git/+/main/docs/#Checking-Out-and-Building
+[monyhar-tree]: https://ci.monyhar.org/p/monyhar/g/main/console
 [contributing]: contributing.md
-[simple-chrome]: https://chromium.googlesource.com/chromiumos/docs/+/HEAD/simple_chrome_workflow.md
+[simple-chrome]: https://monyhar.googlesource.com/monyharos/docs/+/HEAD/simple_chrome_workflow.md
 [uploading-a-change-for-review]: contributing.md#Uploading-a-change-for-review

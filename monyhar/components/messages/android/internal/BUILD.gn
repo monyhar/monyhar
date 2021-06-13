@@ -6,23 +6,23 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/components/messages/MessageAutoDismissTimer.java",
-    "java/src/org/chromium/components/messages/MessageBannerCoordinator.java",
-    "java/src/org/chromium/components/messages/MessageBannerMediator.java",
-    "java/src/org/chromium/components/messages/MessageBannerView.java",
-    "java/src/org/chromium/components/messages/MessageBannerViewBinder.java",
-    "java/src/org/chromium/components/messages/MessageDispatcherImpl.java",
-    "java/src/org/chromium/components/messages/MessageQueueManager.java",
-    "java/src/org/chromium/components/messages/MessageScopeChange.java",
-    "java/src/org/chromium/components/messages/MessageStateHandler.java",
-    "java/src/org/chromium/components/messages/MessagesFactory.java",
-    "java/src/org/chromium/components/messages/MessagesMetrics.java",
-    "java/src/org/chromium/components/messages/ScopeChangeController.java",
-    "java/src/org/chromium/components/messages/ScopeKey.java",
-    "java/src/org/chromium/components/messages/SingleActionMessage.java",
+    "java/src/org/monyhar/components/messages/MessageAutoDismissTimer.java",
+    "java/src/org/monyhar/components/messages/MessageBannerCoordinator.java",
+    "java/src/org/monyhar/components/messages/MessageBannerMediator.java",
+    "java/src/org/monyhar/components/messages/MessageBannerView.java",
+    "java/src/org/monyhar/components/messages/MessageBannerViewBinder.java",
+    "java/src/org/monyhar/components/messages/MessageDispatcherImpl.java",
+    "java/src/org/monyhar/components/messages/MessageQueueManager.java",
+    "java/src/org/monyhar/components/messages/MessageScopeChange.java",
+    "java/src/org/monyhar/components/messages/MessageStateHandler.java",
+    "java/src/org/monyhar/components/messages/MessagesFactory.java",
+    "java/src/org/monyhar/components/messages/MessagesMetrics.java",
+    "java/src/org/monyhar/components/messages/ScopeChangeController.java",
+    "java/src/org/monyhar/components/messages/ScopeKey.java",
+    "java/src/org/monyhar/components/messages/SingleActionMessage.java",
   ]
 
-  resources_package = "org.chromium.components.messages"
+  resources_package = "org.monyhar.components.messages"
 
   deps = [
     ":java_resources",
@@ -44,10 +44,10 @@ java_library("junit") {
   bypass_platform_checks = true
   testonly = true
   sources = [
-    "java/src/org/chromium/components/messages/MessageAutoDismissTimerTest.java",
-    "java/src/org/chromium/components/messages/MessageBannerMediatorUnitTest.java",
-    "java/src/org/chromium/components/messages/MessageQueueManagerTest.java",
-    "java/src/org/chromium/components/messages/ScopeChangeControllerTest.java",
+    "java/src/org/monyhar/components/messages/MessageAutoDismissTimerTest.java",
+    "java/src/org/monyhar/components/messages/MessageBannerMediatorUnitTest.java",
+    "java/src/org/monyhar/components/messages/MessageQueueManagerTest.java",
+    "java/src/org/monyhar/components/messages/ScopeChangeControllerTest.java",
   ]
   deps = [
     ":java",
@@ -70,9 +70,9 @@ java_library("junit") {
 android_library("javatests") {
   testonly = true
   sources = [
-    "java/src/org/chromium/components/messages/MessageBannerRenderTest.java",
-    "java/src/org/chromium/components/messages/MessageBannerViewTest.java",
-    "java/src/org/chromium/components/messages/SingleActionMessageTest.java",
+    "java/src/org/monyhar/components/messages/MessageBannerRenderTest.java",
+    "java/src/org/monyhar/components/messages/MessageBannerViewTest.java",
+    "java/src/org/monyhar/components/messages/SingleActionMessageTest.java",
   ]
   deps = [
     ":java",

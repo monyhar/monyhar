@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sync;
+package org.monyhar.chrome.browser.sync;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
@@ -10,15 +10,15 @@ import androidx.annotation.VisibleForTesting;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.signin.base.CoreAccountInfo;
-import org.chromium.components.signin.base.GoogleServiceAuthError;
-import org.chromium.components.sync.KeyRetrievalTriggerForUMA;
-import org.chromium.components.sync.ModelType;
-import org.chromium.components.sync.PassphraseType;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.signin.base.CoreAccountInfo;
+import org.monyhar.components.signin.base.GoogleServiceAuthError;
+import org.monyhar.components.sync.KeyRetrievalTriggerForUMA;
+import org.monyhar.components.sync.ModelType;
+import org.monyhar.components.sync.PassphraseType;
 
 import java.util.Date;
 import java.util.HashSet;

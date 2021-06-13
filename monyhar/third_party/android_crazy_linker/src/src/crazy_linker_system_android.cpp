@@ -22,7 +22,7 @@ namespace crazy {
 // __system_property_get function.
 //
 // For more technical details from an NDK maintainer, see:
-// https://bugs.chromium.org/p/chromium/issues/detail?id=392191#c17
+// https://bugs.monyhar.org/p/monyhar/issues/detail?id=392191#c17
 
 // Use a weak symbol import to resolve at runtime whether the function is
 // available.

@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private.interfaces;
+package org.monyhar.weblayer_private.interfaces;
 
-import org.chromium.weblayer_private.interfaces.IContextMenuParams;
-import org.chromium.weblayer_private.interfaces.IObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.IContextMenuParams;
+import org.monyhar.weblayer_private.interfaces.IObjectWrapper;
 
 /**
  * Interface used by Tab to inform the client of changes. This largely duplicates the

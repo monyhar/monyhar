@@ -11,7 +11,7 @@ from typing import Any, Dict, List, Tuple, Optional
 
 def UnitStringIsValid(unit: str) -> bool:
   """Checks to make sure that a given string is in fact a recognized unit used
-      by the chromium perftests to report results.
+      by the monyhar perftests to report results.
 
   Args:
     unit (str): The unit string to be checked.

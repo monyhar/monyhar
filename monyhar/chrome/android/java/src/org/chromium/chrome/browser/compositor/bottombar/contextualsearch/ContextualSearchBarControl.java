@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.bottombar.contextualsearch;
+package org.monyhar.chrome.browser.compositor.bottombar.contextualsearch;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -11,14 +11,14 @@ import android.view.ViewGroup;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanelAnimation;
-import org.chromium.chrome.browser.contextualsearch.QuickActionCategory;
-import org.chromium.chrome.browser.contextualsearch.ResolvedSearchTerm.CardTag;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.layouts.animation.CompositorAnimator;
-import org.chromium.ui.base.LocalizationUtils;
-import org.chromium.ui.resources.dynamics.DynamicResourceLoader;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanelAnimation;
+import org.monyhar.chrome.browser.contextualsearch.QuickActionCategory;
+import org.monyhar.chrome.browser.contextualsearch.ResolvedSearchTerm.CardTag;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.layouts.animation.CompositorAnimator;
+import org.monyhar.ui.base.LocalizationUtils;
+import org.monyhar.ui.resources.dynamics.DynamicResourceLoader;
 
 /**
  * Controls the Search Bar in the Contextual Search Panel.

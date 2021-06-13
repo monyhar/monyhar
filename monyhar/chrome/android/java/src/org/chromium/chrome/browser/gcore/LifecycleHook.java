@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.gcore;
+package org.monyhar.chrome.browser.gcore;
 
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ApplicationStatus.ApplicationStateListener;
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ApplicationStatus.ApplicationStateListener;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
 
 import java.util.HashSet;
 import java.util.Set;

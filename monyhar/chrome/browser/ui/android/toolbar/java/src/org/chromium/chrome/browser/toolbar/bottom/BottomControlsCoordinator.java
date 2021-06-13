@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar.bottom;
+package org.monyhar.chrome.browser.toolbar.bottom;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -11,19 +11,19 @@ import android.view.ViewGroup;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsSizer;
-import org.chromium.chrome.browser.fullscreen.FullscreenManager;
-import org.chromium.chrome.browser.layouts.LayoutManager;
-import org.chromium.chrome.browser.layouts.LayoutStateProvider;
-import org.chromium.chrome.browser.theme.ThemeColorProvider;
-import org.chromium.chrome.browser.toolbar.R;
-import org.chromium.chrome.browser.toolbar.bottom.BottomControlsViewBinder.ViewHolder;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
-import org.chromium.ui.resources.ResourceManager;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsSizer;
+import org.monyhar.chrome.browser.fullscreen.FullscreenManager;
+import org.monyhar.chrome.browser.layouts.LayoutManager;
+import org.monyhar.chrome.browser.layouts.LayoutStateProvider;
+import org.monyhar.chrome.browser.theme.ThemeColorProvider;
+import org.monyhar.chrome.browser.toolbar.R;
+import org.monyhar.chrome.browser.toolbar.bottom.BottomControlsViewBinder.ViewHolder;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.ui.resources.ResourceManager;
+import org.monyhar.ui.widget.Toast;
 
 /**
  * The root coordinator for the bottom controls component. This component is intended for use with

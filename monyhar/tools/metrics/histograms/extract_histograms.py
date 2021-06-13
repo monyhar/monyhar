@@ -18,14 +18,14 @@ XML below will generate the following five histograms:
 <histograms>
 
 <histogram name="HistogramTime" units="milliseconds">
-  <owner>person@chromium.org</owner>
-  <owner>some-team@chromium.org</owner>
+  <owner>person@monyhar.org</owner>
+  <owner>some-team@monyhar.org</owner>
   <summary>A brief description.</summary>
   <details>This is a more thorough description of this histogram.</details>
 </histogram>
 
 <histogram name="HistogramEnum" enum="MyEnumType">
-  <owner>person@chromium.org</owner>
+  <owner>person@monyhar.org</owner>
   <summary>This histogram sports an enum value type.</summary>
 </histogram>
 
@@ -352,7 +352,7 @@ def _ExtractOwners(node):
     node: A DOM Element.
 
   Returns:
-    A tuple of owner-related info, e.g. (['alice@chromium.org'], True)
+    A tuple of owner-related info, e.g. (['alice@monyhar.org'], True)
 
     The first element is a list of the owners' email addresses, excluding the
     owner placeholder string. The second element is a boolean indicating
@@ -383,7 +383,7 @@ def _ExtractComponents(histogram):
   <component>UI&gt;Browser</component>. Components may also be present when an
   OWNERS file is given as a histogram owner, e.g. <owner>src/dir/OWNERS</owner>.
   See _ExtractComponentFromOWNERS() in the following file for details:
-  chromium/src/tools/metrics/histograms/expand_owners.py.
+  monyhar/src/tools/metrics/histograms/expand_owners.py.
 
   Args:
     histogram: A DOM Element corresponding to a histogram.
@@ -438,7 +438,7 @@ def _ProcessBaseHistogramAttribute(node, histogram_entry):
 #   'name': 'variant_name',
 #   'summary': 'variant_summary',
 #   'obsolete': 'Obsolete text.',
-#   'owners': ['me@chromium.org', 'you@chromium.org']
+#   'owners': ['me@monyhar.org', 'you@monyhar.org']
 # }
 #
 # Variants: an analog of <variants> tag, represented as a JSON object like:

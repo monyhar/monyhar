@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.infobar;
+package org.monyhar.chrome.browser.infobar;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -15,15 +15,15 @@ import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.browser.browser_controls.BrowserControlsStateProvider;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsUtils;
-import org.chromium.components.browser_ui.banners.SwipableOverlayView;
-import org.chromium.components.infobars.InfoBar;
-import org.chromium.components.infobars.InfoBarAnimationListener;
-import org.chromium.components.infobars.InfoBarContainerLayout;
-import org.chromium.components.infobars.InfoBarUiItem;
-import org.chromium.ui.display.DisplayAndroid;
-import org.chromium.ui.display.DisplayUtil;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsStateProvider;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsUtils;
+import org.monyhar.components.browser_ui.banners.SwipableOverlayView;
+import org.monyhar.components.infobars.InfoBar;
+import org.monyhar.components.infobars.InfoBarAnimationListener;
+import org.monyhar.components.infobars.InfoBarContainerLayout;
+import org.monyhar.components.infobars.InfoBarUiItem;
+import org.monyhar.ui.display.DisplayAndroid;
+import org.monyhar.ui.display.DisplayUtil;
 
 /**
  * The {@link View} for the {@link InfoBarContainer}.

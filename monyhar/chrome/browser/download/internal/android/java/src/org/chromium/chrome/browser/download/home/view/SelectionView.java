@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.home.view;
+package org.monyhar.chrome.browser.download.home.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -12,7 +12,7 @@ import android.widget.ImageView;
 
 import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat;
 
-import org.chromium.chrome.browser.download.internal.R;
+import org.monyhar.chrome.browser.download.internal.R;
 
 /**
  * A helper UI widget that provides visual feedback when the selection state of the underlying view

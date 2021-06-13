@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget;
+package org.monyhar.components.browser_ui.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.ui.KeyboardVisibilityDelegate;
+import org.monyhar.ui.KeyboardVisibilityDelegate;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,7 +47,7 @@ import java.util.List;
  * The input type, text, hint message of EditText box and an optional description to be contained in
  * the group may be set in XML. Sample declaration in XML:
  * <pre>{@code
- *  <org.chromium.components.browser_ui.widget.RadioButtonWithEditText
+ *  <org.monyhar.components.browser_ui.widget.RadioButtonWithEditText
  *     android:id="@+id/system_default"
  *     android:layout_width="match_parent"
  *     android:layout_height="wrap_content"

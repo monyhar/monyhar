@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill.prefeditor;
+package org.monyhar.chrome.browser.autofill.prefeditor;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -39,17 +39,17 @@ import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.widget.Toolbar.OnMenuItemClickListener;
 import androidx.core.view.MarginLayoutParamsCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.autofill.AutofillUiUtils;
-import org.chromium.chrome.browser.autofill.settings.CreditCardNumberFormattingTextWatcher;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.browser_ui.settings.SettingsUtils;
-import org.chromium.components.browser_ui.widget.AlwaysDismissedDialog;
-import org.chromium.components.browser_ui.widget.FadingEdgeScrollView;
-import org.chromium.components.browser_ui.widget.TintedDrawable;
-import org.chromium.components.browser_ui.widget.animation.Interpolators;
-import org.chromium.ui.KeyboardVisibilityDelegate;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.autofill.AutofillUiUtils;
+import org.monyhar.chrome.browser.autofill.settings.CreditCardNumberFormattingTextWatcher;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.components.browser_ui.widget.AlwaysDismissedDialog;
+import org.monyhar.components.browser_ui.widget.FadingEdgeScrollView;
+import org.monyhar.components.browser_ui.widget.TintedDrawable;
+import org.monyhar.components.browser_ui.widget.animation.Interpolators;
+import org.monyhar.ui.KeyboardVisibilityDelegate;
 
 import java.util.ArrayList;
 import java.util.List;

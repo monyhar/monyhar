@@ -6,7 +6,7 @@
 #define COMPONENTS_CONTENT_SETTINGS_CORE_COMMON_COOKIE_CONTROLS_ENFORCEMENT_H_
 
 // Enum to denote whether cookie controls are enforced, and how.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.content_settings
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.content_settings
 enum class CookieControlsEnforcement {
   kNoEnforcement = 0,
   kEnforcedByPolicy = 1,

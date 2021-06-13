@@ -180,7 +180,7 @@ ScriptPromise BackgroundFetchManager::fetch(
   ExecutionContext* execution_context = ExecutionContext::From(script_state);
 
   // A HashSet to find whether there are any duplicate requests within the
-  // fetch. https://bugs.chromium.org/p/chromium/issues/detail?id=871174.
+  // fetch. https://bugs.monyhar.org/p/monyhar/issues/detail?id=871174.
   HashSet<KURL> kurls;
 
   // Based on security steps from https://fetch.spec.whatwg.org/#main-fetch

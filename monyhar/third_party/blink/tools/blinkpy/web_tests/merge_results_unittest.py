@@ -923,7 +923,7 @@ class WebTestDirMergerTests(unittest.TestCase):
 {
   "build_number": "DUMMY_BUILD_NUMBER",
   "builder_name": "abc",
-  "chromium_revision": "123",
+  "monyhar_revision": "123",
   "fixable": 1,
   "interrupted": false,
   "layout_tests_dir": "/b/s/w/irJ1McdS/third_party/blink/web_tests",
@@ -1045,7 +1045,7 @@ ADD_RESULTS({
 {
   "build_number": "DUMMY_BUILD_NUMBER",
   "builder_name": "abc",
-  "chromium_revision": "123",
+  "monyhar_revision": "123",
   "fixable": 9,
   "interrupted": false,
   "layout_tests_dir": "/b/s/w/sadfa124/third_party/blink/web_tests",
@@ -1235,7 +1235,7 @@ ADD_RESULTS({
 {
   "build_number": "DUMMY_BUILD_NUMBER",
   "builder_name": "abc",
-  "chromium_revision": "123",
+  "monyhar_revision": "123",
   "fixable": 10,
   "interrupted": false,
   "layout_tests_dir": "src",
@@ -1515,7 +1515,7 @@ class MarkMissingShardsTest(unittest.TestCase):
 {
   "build_number": "DUMMY_BUILD_NUMBER",
   "builder_name": "abc",
-  "chromium_revision": "123",
+  "monyhar_revision": "123",
   "fixable": 10,
   "interrupted": false,
   "layout_tests_dir": "src",
@@ -1597,7 +1597,7 @@ class MarkMissingShardsTest(unittest.TestCase):
 {
   "build_number": "DUMMY_BUILD_NUMBER",
   "builder_name": "abc",
-  "chromium_revision": "123",
+  "monyhar_revision": "123",
   "fixable": 10,
   "interrupted": false,
   "layout_tests_dir": "src",

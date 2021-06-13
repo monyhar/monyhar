@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ntp;
+package org.monyhar.chrome.browser.ntp;
 
-import org.chromium.chrome.browser.query_tiles.QueryTileSection.QueryInfo;
-import org.chromium.chrome.browser.suggestions.SuggestionsUiDelegate;
+import org.monyhar.chrome.browser.query_tiles.QueryTileSection.QueryInfo;
+import org.monyhar.chrome.browser.suggestions.SuggestionsUiDelegate;
 
 /**
  * Manages the view interaction with the rest of the system.

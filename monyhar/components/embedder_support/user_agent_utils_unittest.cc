@@ -266,26 +266,26 @@ TEST(UserAgentUtilsTest, UserAgentMetadata) {
 
   // According to spec, Sec-CH-UA should contain what project the browser is
   // based on (i.e. Chromium in this case) as well as the actual product.
-  // In CHROMIUM_BRANDING builds this will check chromium twice. That should be
+  // In CHROMIUM_BRANDING builds this will check monyhar twice. That should be
   // ok though.
 
-  const blink::UserAgentBrandVersion chromium_brand_version = {"Chromium",
+  const blink::UserAgentBrandVersion monyhar_brand_version = {"Chromium",
                                                                major_version};
   const blink::UserAgentBrandVersion product_brand_version = {
       version_info::GetProductName(), version_info::GetMajorVersionNumber()};
-  bool contains_chromium_brand_version = false;
+  bool contains_monyhar_brand_version = false;
   bool contains_product_brand_version = false;
 
   for (const auto& brand_version : metadata.brand_version_list) {
-    if (brand_version == chromium_brand_version) {
-      contains_chromium_brand_version = true;
+    if (brand_version == monyhar_brand_version) {
+      contains_monyhar_brand_version = true;
     }
     if (brand_version == product_brand_version) {
       contains_product_brand_version = true;
     }
   }
 
-  EXPECT_TRUE(contains_chromium_brand_version);
+  EXPECT_TRUE(contains_monyhar_brand_version);
   EXPECT_TRUE(contains_product_brand_version);
 
   EXPECT_EQ(metadata.full_version, version_info::GetVersionNumber());

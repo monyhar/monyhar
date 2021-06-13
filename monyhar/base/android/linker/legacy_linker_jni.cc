@@ -20,7 +20,7 @@
 
 #include "base/android/linker/linker_jni.h"
 
-namespace chromium_android_linker {
+namespace monyhar_android_linker {
 namespace {
 
 // The linker uses a single crazy_context_t object created on demand.
@@ -70,7 +70,7 @@ class ScopedLibrary {
 // Add a zip archive file path to the context's current search path
 // list. Making it possible to load libraries directly from it.
 JNI_GENERATOR_EXPORT bool
-Java_org_chromium_base_library_1loader_LegacyLinker_nativeAddZipArchivePath(
+Java_org_monyhar_base_library_1loader_LegacyLinker_nativeAddZipArchivePath(
     JNIEnv* env,
     jclass clazz,
     jstring apk_path_obj) {
@@ -84,14 +84,14 @@ Java_org_chromium_base_library_1loader_LegacyLinker_nativeAddZipArchivePath(
   return true;
 }
 
-// Load a library with the chromium linker. This will also call its
+// Load a library with the monyhar linker. This will also call its
 // JNI_OnLoad() method, which shall register its methods. Note that
 // lazy native method resolution will _not_ work after this, because
 // Dalvik uses the system's dlsym() which won't see the new library,
 // so explicit registration is mandatory.
 //
 // |env| is the current JNI environment handle.
-// |clazz| is the static class handle for org.chromium.base.Linker,
+// |clazz| is the static class handle for org.monyhar.base.Linker,
 // and is ignored here.
 // |library_name| is the library name (e.g. libfoo.so).
 // |load_address| is an explicit load address.
@@ -99,7 +99,7 @@ Java_org_chromium_base_library_1loader_LegacyLinker_nativeAddZipArchivePath(
 // with the Java side.
 // Return true on success.
 JNI_GENERATOR_EXPORT bool
-Java_org_chromium_base_library_1loader_LegacyLinker_nativeLoadLibrary(
+Java_org_monyhar_base_library_1loader_LegacyLinker_nativeLoadLibrary(
     JNIEnv* env,
     jclass clazz,
     jstring lib_name_obj,
@@ -141,7 +141,7 @@ Java_org_chromium_base_library_1loader_LegacyLinker_nativeLoadLibrary(
 }
 
 JNI_GENERATOR_EXPORT jboolean
-Java_org_chromium_base_library_1loader_LegacyLinker_nativeCreateSharedRelro(
+Java_org_monyhar_base_library_1loader_LegacyLinker_nativeCreateSharedRelro(
     JNIEnv* env,
     jclass clazz,
     jstring library_name,
@@ -182,7 +182,7 @@ Java_org_chromium_base_library_1loader_LegacyLinker_nativeCreateSharedRelro(
 }
 
 JNI_GENERATOR_EXPORT jboolean
-Java_org_chromium_base_library_1loader_LegacyLinker_nativeUseSharedRelro(
+Java_org_monyhar_base_library_1loader_LegacyLinker_nativeUseSharedRelro(
     JNIEnv* env,
     jclass clazz,
     jstring library_name,
@@ -231,4 +231,4 @@ bool LegacyLinkerJNIInit(JavaVM* vm, JNIEnv* env) {
   return true;
 }
 
-}  // namespace chromium_android_linker
+}  // namespace monyhar_android_linker

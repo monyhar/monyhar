@@ -17,9 +17,9 @@ using ::blink::WebMediaSource;
 
 namespace media {
 
-#define STATIC_ASSERT_MATCHING_STATUS_ENUM(webkit_name, chromium_name) \
+#define STATIC_ASSERT_MATCHING_STATUS_ENUM(webkit_name, monyhar_name) \
   static_assert(static_cast<int>(WebMediaSource::webkit_name) == \
-                static_cast<int>(ChunkDemuxer::chromium_name),  \
+                static_cast<int>(ChunkDemuxer::monyhar_name),  \
                 "mismatching status enum values: " #webkit_name)
 STATIC_ASSERT_MATCHING_STATUS_ENUM(kAddStatusOk, kOk);
 STATIC_ASSERT_MATCHING_STATUS_ENUM(kAddStatusNotSupported, kNotSupported);

@@ -11,7 +11,7 @@ namespace ui {
 // for notifying Java when the renderer selection has changed.
 
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.ui.touch_selection
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.ui.touch_selection
 enum SelectionEventType {
   SELECTION_HANDLES_SHOWN,
   SELECTION_HANDLES_MOVED,

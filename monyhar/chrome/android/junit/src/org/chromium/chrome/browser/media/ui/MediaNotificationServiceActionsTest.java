@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.media.ui;
+package org.monyhar.chrome.browser.media.ui;
 
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.any;
@@ -16,10 +16,10 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.components.browser_ui.media.MediaNotificationController;
-import org.chromium.components.browser_ui.media.MediaNotificationListener;
-import org.chromium.media_session.mojom.MediaSessionAction;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.components.browser_ui.media.MediaNotificationController;
+import org.monyhar.components.browser_ui.media.MediaNotificationListener;
+import org.monyhar.media_session.mojom.MediaSessionAction;
 
 /**
  * JUnit tests for checking {@link ChromeMediaNotificationControllerDelegate.ListenerService}

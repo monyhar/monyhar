@@ -132,7 +132,7 @@ void GatewayCanBePingedRoutine::PingGateways() {
 
 // Parses |status| and returns the IP and latency. For details about |status|,
 // please refer to:
-// https://gerrit.chromium.org/gerrit/#/c/30310/2/src/helpers/icmp.cc.
+// https://gerrit.monyhar.org/gerrit/#/c/30310/2/src/helpers/icmp.cc.
 bool GatewayCanBePingedRoutine::ParseICMPResult(const std::string& status,
                                                 std::string* ip,
                                                 base::TimeDelta* latency) {

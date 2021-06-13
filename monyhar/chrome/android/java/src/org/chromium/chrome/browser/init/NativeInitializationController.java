@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.init;
+package org.monyhar.chrome.browser.init;
 
 import android.content.Intent;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.chrome.browser.firstrun.FirstRunFlowSequencer;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.chrome.browser.firstrun.FirstRunFlowSequencer;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -120,7 +120,7 @@ class NativeInitializationController {
 
     /**
      * Called when the current activity has finished its first draw pass. This and the library
-     * load has to be completed to start the chromium browser process.
+     * load has to be completed to start the monyhar browser process.
      */
     public void firstDrawComplete() {
         mHasDoneFirstDraw = true;

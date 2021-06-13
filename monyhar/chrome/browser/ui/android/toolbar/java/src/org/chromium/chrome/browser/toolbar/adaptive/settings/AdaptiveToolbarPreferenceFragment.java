@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar.adaptive.settings;
+package org.monyhar.chrome.browser.toolbar.adaptive.settings;
 
 import android.os.Bundle;
 
@@ -10,10 +10,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 import androidx.preference.PreferenceFragmentCompat;
 
-import org.chromium.chrome.browser.toolbar.R;
-import org.chromium.chrome.browser.toolbar.adaptive.AdaptiveToolbarPrefs;
-import org.chromium.components.browser_ui.settings.ChromeSwitchPreference;
-import org.chromium.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.chrome.browser.toolbar.R;
+import org.monyhar.chrome.browser.toolbar.adaptive.AdaptiveToolbarPrefs;
+import org.monyhar.components.browser_ui.settings.ChromeSwitchPreference;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
 
 /**
  * Fragment that allows the user to configure toolbar shorcut preferences.

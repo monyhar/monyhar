@@ -61,7 +61,7 @@ Browser* ChromeExtensionFunctionDetails::GetCurrentBrowser() const {
   // all of this profile's browser windows may have been closed.
   // A similar situation may arise during shutdown.
   // TODO(rafaelw): Delay creation of background_page until the browser
-  // is available. http://code.google.com/p/chromium/issues/detail?id=13284
+  // is available. http://code.google.com/p/monyhar/issues/detail?id=13284
   return NULL;
 }
 

@@ -5,7 +5,7 @@ include_rules = [
     "-content",
     "-third_party/blink",
 
-    # It is allowed to depend on common chromium stuff (and itself).
+    # It is allowed to depend on common monyhar stuff (and itself).
     "+base",
     "+build",
     "+cc/paint/element_id.h",

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui.android.webid;
+package org.monyhar.chrome.browser.ui.android.webid;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -15,10 +15,10 @@ import androidx.annotation.Px;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.chrome.browser.ui.android.webid.data.Account;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.ui.modelutil.MVCListAdapter.ModelList;
-import org.chromium.ui.modelutil.SimpleRecyclerViewAdapter;
+import org.monyhar.chrome.browser.ui.android.webid.data.Account;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.ui.modelutil.MVCListAdapter.ModelList;
+import org.monyhar.ui.modelutil.SimpleRecyclerViewAdapter;
 
 import java.util.List;
 

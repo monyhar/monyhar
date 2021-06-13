@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.scrim;
+package org.monyhar.components.browser_ui.widget.scrim;
 
 import android.content.Context;
 import android.view.MotionEvent;
@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 import androidx.annotation.ColorInt;
 
-import org.chromium.ui.UiUtils;
+import org.monyhar.ui.UiUtils;
 
 /**
  * This view is used to obscure content and bring focus to a foreground view (i.e. the bottom sheet

@@ -10,9 +10,9 @@ android_library("java") {
     "//chrome/android/modules/stack_unwinder/public:java",
   ]
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
-  sources = [ "java/src/org/chromium/chrome/modules/stack_unwinder/StackUnwinderModuleProvider.java" ]
+  sources = [ "java/src/org/monyhar/chrome/modules/stack_unwinder/StackUnwinderModuleProvider.java" ]
 }
 
 generate_jni("jni_headers") {
-  sources = [ "java/src/org/chromium/chrome/modules/stack_unwinder/StackUnwinderModuleProvider.java" ]
+  sources = [ "java/src/org/monyhar/chrome/modules/stack_unwinder/StackUnwinderModuleProvider.java" ]
 }

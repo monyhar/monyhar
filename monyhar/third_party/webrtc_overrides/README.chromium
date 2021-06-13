@@ -12,7 +12,7 @@ overridden. The reason for this folder to be separate from third_party/webrtc is
 that WebRTC is pulled directly into third_party/webrtc and the overrides need to
 be in the Chromium repo since they depend on Chromium code.
 
-For information on WebRTC, see third_party/webrtc/README.chromium.
+For information on WebRTC, see third_party/webrtc/README.monyhar.
 
 Third party code used in this project is described in the file
 third_party/webrtc/LICENSE_THIRD_PARTY.

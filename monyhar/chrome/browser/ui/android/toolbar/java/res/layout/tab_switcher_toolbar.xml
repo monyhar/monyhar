@@ -3,7 +3,7 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
 
-<org.chromium.chrome.browser.toolbar.top.TabSwitcherModeTTPhone
+<org.monyhar.chrome.browser.toolbar.top.TabSwitcherModeTTPhone
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -39,7 +39,7 @@
             android:textAppearance="@style/TextAppearance.TextMediumThick.Primary" />
     </LinearLayout>
 
-    <org.chromium.chrome.browser.toolbar.NewTabButton
+    <org.monyhar.chrome.browser.toolbar.NewTabButton
         android:id="@+id/new_tab_button"
         style="@style/ToolbarButton"
         android:layout_width="wrap_content"
@@ -74,7 +74,7 @@
         android:layout_gravity="center|end" >
 
         <!-- TODO(crbug.com/912358): Enable touch highlight on this button. -->
-        <org.chromium.chrome.browser.toolbar.top.ToggleTabStackButton
+        <org.monyhar.chrome.browser.toolbar.top.ToggleTabStackButton
             android:id="@+id/tab_switcher_mode_tab_switcher_button"
             style="@style/ToolbarButton"
             android:background="@android:color/transparent"
@@ -98,4 +98,4 @@
 
     </LinearLayout>
 
-</org.chromium.chrome.browser.toolbar.top.TabSwitcherModeTTPhone>
+</org.monyhar.chrome.browser.toolbar.top.TabSwitcherModeTTPhone>

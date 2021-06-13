@@ -100,7 +100,7 @@ bool WillDispatchWindowFocusedEvent(
       listener_filter->HasKey(extensions::tabs_constants::kWindowTypesKey);
 
   // We might not have a window controller if the focus moves away
-  // from chromium's windows.
+  // from monyhar's windows.
   if (window_controller) {
     window_id = window_controller->GetWindowId();
     new_active_context = window_controller->profile();

@@ -8,10 +8,10 @@ import("//build/config/android/rules.gni")
 
 generate_jni("nonembedded_jni_headers") {
   sources = [
-    "java/src/org/chromium/android_webview/nonembedded/AwComponentUpdateService.java",
-    "java/src/org/chromium/android_webview/nonembedded/NetworkFetcherTask.java",
-    "java/src/org/chromium/android_webview/nonembedded/WebViewApkApplication.java",
-    "java/src/org/chromium/android_webview/services/ComponentsProviderPathUtil.java",
+    "java/src/org/monyhar/android_webview/nonembedded/AwComponentUpdateService.java",
+    "java/src/org/monyhar/android_webview/nonembedded/NetworkFetcherTask.java",
+    "java/src/org/monyhar/android_webview/nonembedded/WebViewApkApplication.java",
+    "java/src/org/monyhar/android_webview/services/ComponentsProviderPathUtil.java",
   ]
 }
 
@@ -19,12 +19,12 @@ generate_jni("nonembedded_jni_headers") {
 # as a library.
 android_library("nonembedded_java") {
   sources = [
-    "java/src/org/chromium/android_webview/nonembedded/AwComponentUpdateService.java",
-    "java/src/org/chromium/android_webview/nonembedded/AwNonembeddedUmaRecorder.java",
-    "java/src/org/chromium/android_webview/nonembedded/LicenseActivity.java",
-    "java/src/org/chromium/android_webview/nonembedded/LicenseContentProvider.java",
-    "java/src/org/chromium/android_webview/nonembedded/NetworkFetcherTask.java",
-    "java/src/org/chromium/android_webview/nonembedded/WebViewApkApplication.java",
+    "java/src/org/monyhar/android_webview/nonembedded/AwComponentUpdateService.java",
+    "java/src/org/monyhar/android_webview/nonembedded/AwNonembeddedUmaRecorder.java",
+    "java/src/org/monyhar/android_webview/nonembedded/LicenseActivity.java",
+    "java/src/org/monyhar/android_webview/nonembedded/LicenseContentProvider.java",
+    "java/src/org/monyhar/android_webview/nonembedded/NetworkFetcherTask.java",
+    "java/src/org/monyhar/android_webview/nonembedded/WebViewApkApplication.java",
   ]
   deps = [
     ":devui_java",
@@ -49,20 +49,20 @@ android_library("nonembedded_java") {
 
 android_library("devui_java") {
   sources = [
-    "java/src/org/chromium/android_webview/devui/CrashesListFragment.java",
-    "java/src/org/chromium/android_webview/devui/DevUiBaseFragment.java",
-    "java/src/org/chromium/android_webview/devui/FlagsFragment.java",
-    "java/src/org/chromium/android_webview/devui/HomeFragment.java",
-    "java/src/org/chromium/android_webview/devui/MainActivity.java",
-    "java/src/org/chromium/android_webview/devui/PersistentErrorView.java",
-    "java/src/org/chromium/android_webview/devui/WebViewPackageError.java",
-    "java/src/org/chromium/android_webview/devui/util/CrashBugUrlFactory.java",
-    "java/src/org/chromium/android_webview/devui/util/CrashInfoLoader.java",
-    "java/src/org/chromium/android_webview/devui/util/UnuploadedFilesStateLoader.java",
-    "java/src/org/chromium/android_webview/devui/util/UploadedCrashesInfoLoader.java",
-    "java/src/org/chromium/android_webview/devui/util/WebViewCrashInfoCollector.java",
-    "java/src/org/chromium/android_webview/devui/util/WebViewCrashLogParser.java",
-    "java/src/org/chromium/android_webview/devui/util/WebViewPackageHelper.java",
+    "java/src/org/monyhar/android_webview/devui/CrashesListFragment.java",
+    "java/src/org/monyhar/android_webview/devui/DevUiBaseFragment.java",
+    "java/src/org/monyhar/android_webview/devui/FlagsFragment.java",
+    "java/src/org/monyhar/android_webview/devui/HomeFragment.java",
+    "java/src/org/monyhar/android_webview/devui/MainActivity.java",
+    "java/src/org/monyhar/android_webview/devui/PersistentErrorView.java",
+    "java/src/org/monyhar/android_webview/devui/WebViewPackageError.java",
+    "java/src/org/monyhar/android_webview/devui/util/CrashBugUrlFactory.java",
+    "java/src/org/monyhar/android_webview/devui/util/CrashInfoLoader.java",
+    "java/src/org/monyhar/android_webview/devui/util/UnuploadedFilesStateLoader.java",
+    "java/src/org/monyhar/android_webview/devui/util/UploadedCrashesInfoLoader.java",
+    "java/src/org/monyhar/android_webview/devui/util/WebViewCrashInfoCollector.java",
+    "java/src/org/monyhar/android_webview/devui/util/WebViewCrashLogParser.java",
+    "java/src/org/monyhar/android_webview/devui/util/WebViewPackageHelper.java",
   ]
   deps = [
     ":devui_resources",
@@ -83,23 +83,23 @@ android_library("devui_java") {
     "//third_party/androidx:androidx_savedstate_savedstate_java",
     "//ui/android:ui_no_recycler_view_java",
   ]
-  resources_package = "org.chromium.android_webview.devui"
+  resources_package = "org.monyhar.android_webview.devui"
 }
 
 android_library("services_java") {
   sources = [
-    "java/src/org/chromium/android_webview/services/AwMinidumpUploadJobService.java",
-    "java/src/org/chromium/android_webview/services/AwMinidumpUploaderDelegate.java",
-    "java/src/org/chromium/android_webview/services/AwVariationsSeedFetcher.java",
-    "java/src/org/chromium/android_webview/services/ComponentsProviderPathUtil.java",
-    "java/src/org/chromium/android_webview/services/ComponentsProviderService.java",
-    "java/src/org/chromium/android_webview/services/CrashReceiverService.java",
-    "java/src/org/chromium/android_webview/services/DeveloperModeContentProvider.java",
-    "java/src/org/chromium/android_webview/services/DeveloperUiService.java",
-    "java/src/org/chromium/android_webview/services/MetricsBridgeService.java",
-    "java/src/org/chromium/android_webview/services/SafeModeService.java",
-    "java/src/org/chromium/android_webview/services/VariationsSeedHolder.java",
-    "java/src/org/chromium/android_webview/services/VariationsSeedServer.java",
+    "java/src/org/monyhar/android_webview/services/AwMinidumpUploadJobService.java",
+    "java/src/org/monyhar/android_webview/services/AwMinidumpUploaderDelegate.java",
+    "java/src/org/monyhar/android_webview/services/AwVariationsSeedFetcher.java",
+    "java/src/org/monyhar/android_webview/services/ComponentsProviderPathUtil.java",
+    "java/src/org/monyhar/android_webview/services/ComponentsProviderService.java",
+    "java/src/org/monyhar/android_webview/services/CrashReceiverService.java",
+    "java/src/org/monyhar/android_webview/services/DeveloperModeContentProvider.java",
+    "java/src/org/monyhar/android_webview/services/DeveloperUiService.java",
+    "java/src/org/monyhar/android_webview/services/MetricsBridgeService.java",
+    "java/src/org/monyhar/android_webview/services/SafeModeService.java",
+    "java/src/org/monyhar/android_webview/services/VariationsSeedHolder.java",
+    "java/src/org/monyhar/android_webview/services/VariationsSeedServer.java",
   ]
   deps = [
     ":system_webview_manifest",

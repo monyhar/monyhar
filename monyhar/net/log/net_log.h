@@ -47,7 +47,7 @@ class TestNetLog;
 // OnAddEntry() method, as doing so will result in a deadlock.
 //
 // For a broader introduction see the design document:
-// https://sites.google.com/a/chromium.org/dev/developers/design-documents/network-stack/netlog
+// https://sites.google.com/a/monyhar.org/dev/developers/design-documents/network-stack/netlog
 //
 // ==================================
 // Materializing parameters

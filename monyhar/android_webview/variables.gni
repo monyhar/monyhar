@@ -33,4 +33,4 @@ if (webview_includes_weblayer) {
 
 webview_jinja_variables = [ "use_isolated_splits=$weblayer_in_split" ]
 
-webview_product_config_java_package = "org.chromium.android_webview"
+webview_product_config_java_package = "org.monyhar.android_webview"

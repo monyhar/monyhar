@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.safe_browsing;
+package org.monyhar.components.safe_browsing;
 
 import androidx.annotation.IntDef;
 

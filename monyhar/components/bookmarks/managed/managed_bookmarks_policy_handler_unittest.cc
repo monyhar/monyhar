@@ -65,7 +65,7 @@ TEST_F(ManagedBookmarksPolicyHandlerTest, ApplyPolicySettings) {
                                     "      },"
                                     "      {"
                                     "        \"name\": \"Chromium\","
-                                    "        \"url\": \"chromium.org\""
+                                    "        \"url\": \"monyhar.org\""
                                     "      },"
                                     "      {"
                                     "        \"name\": \"More Stuff\","
@@ -115,7 +115,7 @@ TEST_F(ManagedBookmarksPolicyHandlerTest, ApplyPolicySettings) {
           },
           {
             "name": "Chromium",
-            "url": "http://chromium.org/"
+            "url": "http://monyhar.org/"
           },
           {
             "name": "More Stuff",

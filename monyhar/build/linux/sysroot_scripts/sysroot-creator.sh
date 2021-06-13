@@ -418,7 +418,7 @@ HacksAndPatchesARM() {
 
 HacksAndPatchesARM64() {
   # Use the unstripped libdbus for arm64 to prevent linker errors.
-  # https://bugs.chromium.org/p/webrtc/issues/detail?id=8535
+  # https://bugs.monyhar.org/p/webrtc/issues/detail?id=8535
   HacksAndPatchesCommon aarch64 linux-gnu true
 }
 

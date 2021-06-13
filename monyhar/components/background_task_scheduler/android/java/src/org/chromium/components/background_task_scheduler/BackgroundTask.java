@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.background_task_scheduler;
+package org.monyhar.components.background_task_scheduler;
 
 import android.content.Context;
 
@@ -14,7 +14,7 @@ import androidx.annotation.MainThread;
  * this interface must have a public constructor which takes no arguments.
  * The callbacks will be executed on the main thread, which means that execution logic must be
  * offloaded to another {@link Thread}, {@link android.os.Handler} or {@link
- * org.chromium.base.task.AsyncTask}.
+ * org.monyhar.base.task.AsyncTask}.
  */
 public interface BackgroundTask {
     /**
@@ -38,7 +38,7 @@ public interface BackgroundTask {
      * from this method when you are done processing. If this is a long-running task, you should
      * return true from this method, and instead invoke the {@link TaskFinishedCallback} when the
      * processing is finished on some other {@link Thread}, {@link android.os.Handler} or
-     * {@link org.chromium.base.task.AsyncTask}. While this method is running the
+     * {@link org.monyhar.base.task.AsyncTask}. While this method is running the
      * system holds a wakelock. If false is returned from this method, the wakelock is immediately
      * released, but if this method returns true, the wakelock is not released until either the
      * {@link TaskFinishedCallback} is invoked, or the system calls {@link #onStopTask(Context,

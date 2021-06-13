@@ -47,7 +47,7 @@ TEST_SUITES_FILE = os.path.join('testing', 'buildbot', 'test_suites.pyl')
 END_OF_SERVICE_DESSERTS = ['L', 'M']
 
 CTS_DEP_NAME = 'src/android_webview/tools/cts_archive'
-CTS_DEP_PACKAGE = 'chromium/android_webview/tools/cts_archive'
+CTS_DEP_PACKAGE = 'monyhar/android_webview/tools/cts_archive'
 
 CIPD_REFERRERS = [DEPS_FILE, TEST_SUITES_FILE]
 

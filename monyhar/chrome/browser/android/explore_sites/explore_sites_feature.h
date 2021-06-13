@@ -20,7 +20,7 @@ extern const char kExploreSitesDenseVariationDenseTitleBottom[];
 extern const char kExploreSitesDenseVariationDenseTitleRight[];
 
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.explore_sites
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.explore_sites
 enum class ExploreSitesVariation {
   ENABLED,
   EXPERIMENT,
@@ -28,7 +28,7 @@ enum class ExploreSitesVariation {
 };
 
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.explore_sites
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.explore_sites
 enum class DenseVariation { ORIGINAL, DENSE_TITLE_BOTTOM, DENSE_TITLE_RIGHT };
 
 ExploreSitesVariation GetExploreSitesVariation();

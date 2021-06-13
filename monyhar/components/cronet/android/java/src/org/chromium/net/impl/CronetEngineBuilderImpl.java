@@ -1,7 +1,7 @@
 // Copyright 2016 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.net.impl;
+package org.monyhar.net.impl;
 
 import static android.os.Process.THREAD_PRIORITY_LOWEST;
 
@@ -11,8 +11,8 @@ import android.util.Base64;
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.net.CronetEngine;
-import org.chromium.net.ICronetEngineBuilder;
+import org.monyhar.net.CronetEngine;
+import org.monyhar.net.ICronetEngineBuilder;
 
 import java.io.File;
 import java.lang.annotation.Retention;

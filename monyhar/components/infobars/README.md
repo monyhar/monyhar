@@ -12,7 +12,7 @@ well), and are occasionally used for purposes outside their original intent
 Be cautious about adding new ones.
 
 Infobars is a layered component
-(https://sites.google.com/a/chromium.org/dev/developers/design-documents/layered-components-design)
+(https://sites.google.com/a/monyhar.org/dev/developers/design-documents/layered-components-design)
 to enable it to be shared cleanly on iOS.
 
 Directory structure:

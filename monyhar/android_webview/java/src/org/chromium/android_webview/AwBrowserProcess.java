@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview;
+package org.monyhar.android_webview;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -18,42 +18,42 @@ import androidx.annotation.IntDef;
 
 import com.google.protobuf.InvalidProtocolBufferException;
 
-import org.chromium.android_webview.common.AwSwitches;
-import org.chromium.android_webview.common.PlatformServiceBridge;
-import org.chromium.android_webview.common.services.ICrashReceiverService;
-import org.chromium.android_webview.common.services.IMetricsBridgeService;
-import org.chromium.android_webview.common.services.ServiceNames;
-import org.chromium.android_webview.metrics.AwMetricsServiceClient;
-import org.chromium.android_webview.metrics.AwNonembeddedUmaReplayer;
-import org.chromium.android_webview.policy.AwPolicyProvider;
-import org.chromium.android_webview.proto.MetricsBridgeRecords.HistogramRecord;
-import org.chromium.android_webview.safe_browsing.AwSafeBrowsingConfigHelper;
-import org.chromium.base.BaseSwitches;
-import org.chromium.base.CommandLine;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.PathUtils;
-import org.chromium.base.PowerMonitor;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.TimeUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.library_loader.LibraryProcessType;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.ScopedSysTraceEvent;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.task.TaskRunner;
-import org.chromium.base.task.TaskTraits;
-import org.chromium.components.component_updater.ComponentLoaderPolicyBridge;
-import org.chromium.components.component_updater.EmbeddedComponentLoader;
-import org.chromium.components.minidump_uploader.CrashFileManager;
-import org.chromium.components.policy.CombinedPolicyProvider;
-import org.chromium.content_public.browser.BrowserStartupController;
-import org.chromium.content_public.browser.ChildProcessCreationParams;
-import org.chromium.content_public.browser.ChildProcessLauncherHelper;
-import org.chromium.content_public.browser.trusttokens.TrustTokenFulfillerManager;
+import org.monyhar.android_webview.common.AwSwitches;
+import org.monyhar.android_webview.common.PlatformServiceBridge;
+import org.monyhar.android_webview.common.services.ICrashReceiverService;
+import org.monyhar.android_webview.common.services.IMetricsBridgeService;
+import org.monyhar.android_webview.common.services.ServiceNames;
+import org.monyhar.android_webview.metrics.AwMetricsServiceClient;
+import org.monyhar.android_webview.metrics.AwNonembeddedUmaReplayer;
+import org.monyhar.android_webview.policy.AwPolicyProvider;
+import org.monyhar.android_webview.proto.MetricsBridgeRecords.HistogramRecord;
+import org.monyhar.android_webview.safe_browsing.AwSafeBrowsingConfigHelper;
+import org.monyhar.base.BaseSwitches;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.PathUtils;
+import org.monyhar.base.PowerMonitor;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.TimeUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.library_loader.LibraryProcessType;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.ScopedSysTraceEvent;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.task.TaskRunner;
+import org.monyhar.base.task.TaskTraits;
+import org.monyhar.components.component_updater.ComponentLoaderPolicyBridge;
+import org.monyhar.components.component_updater.EmbeddedComponentLoader;
+import org.monyhar.components.minidump_uploader.CrashFileManager;
+import org.monyhar.components.policy.CombinedPolicyProvider;
+import org.monyhar.content_public.browser.BrowserStartupController;
+import org.monyhar.content_public.browser.ChildProcessCreationParams;
+import org.monyhar.content_public.browser.ChildProcessLauncherHelper;
+import org.monyhar.content_public.browser.trusttokens.TrustTokenFulfillerManager;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -66,7 +66,7 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Wrapper for the steps needed to initialize the java and native sides of webview chromium.
+ * Wrapper for the steps needed to initialize the java and native sides of webview monyhar.
  */
 @JNINamespace("android_webview")
 public final class AwBrowserProcess {
@@ -128,7 +128,7 @@ public final class AwBrowserProcess {
     }
 
     /**
-     * Starts the chromium browser process running within this process. Creates threads
+     * Starts the monyhar browser process running within this process. Creates threads
      * and performs other per-app resource allocations; must not be called from zygote.
      * Note: it is up to the caller to ensure this is only called once.
      */
@@ -420,7 +420,7 @@ public final class AwBrowserProcess {
     }
 
     /**
-     * Connect to {@link org.chromium.android_webview.services.MetricsBridgeService} to retrieve
+     * Connect to {@link org.monyhar.android_webview.services.MetricsBridgeService} to retrieve
      * any recorded UMA metrics from nonembedded WebView services and transmit them back using
      * UMA APIs.
      */
@@ -489,7 +489,7 @@ public final class AwBrowserProcess {
 
     /**
      * Load components files from {@link
-     * org.chromium.android_webview.services.ComponentsProviderService}.
+     * org.monyhar.android_webview.services.ComponentsProviderService}.
      */
     public static void loadComponents() {
         ComponentLoaderPolicyBridge[] componentPolicies =

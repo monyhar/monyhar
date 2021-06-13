@@ -27,7 +27,7 @@ Changes:
 * Holy Wu has contributed cleanup of config.h used on windows.
 
 * Mao Huang has contributed couple simple tcmalloc changes from
-  chromium code base. Making our tcmalloc forks a tiny bit closer.
+  monyhar code base. Making our tcmalloc forks a tiny bit closer.
 
 * issue #946 that caused compilation failures on some Linux clang
   installations has been fixed. Much thanks to github user htuch for
@@ -564,7 +564,7 @@ Here are notable changes since 2.1:
 * google/ headers will now give you deprecation warning. They are
   deprecated since 2.0
 
-* there's now new api: tc_malloc_skip_new_handler (ported from chromium
+* there's now new api: tc_malloc_skip_new_handler (ported from monyhar
   fork)
 
 * issue-557: added support for dumping heap profile via signal (by
@@ -599,10 +599,10 @@ Here are notable changes since 2.1:
   memallign) is now fixed
 
 * tcmalloc is now able to release memory back to OS on windows
-  (issue-489). The code was ported from chromium fork (by a number of
+  (issue-489). The code was ported from monyhar fork (by a number of
   authors).
 
-* Together with issue-489 we ported chromium's "aggressive decommit"
+* Together with issue-489 we ported monyhar's "aggressive decommit"
   mode. In this mode (settable via malloc extension and via
   environment variable TCMALLOC_AGGRESSIVE_DECOMMIT), free pages are
   returned back to OS immediately.

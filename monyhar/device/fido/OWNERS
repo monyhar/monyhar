@@ -4,10 +4,10 @@
 # people are more familiar with certain areas of the code so, if you spot that
 # your area of alteration is listed, you should prefer to select that person.
 
-agl@chromium.org
-kenrb@chromium.org
+agl@monyhar.org
+kenrb@monyhar.org
 martinkr@google.com
-nsatragno@chromium.org
+nsatragno@monyhar.org
 
 # For adding or removing languages.
-per-file *.grd=claudiomagni@chromium.org
+per-file *.grd=claudiomagni@monyhar.org

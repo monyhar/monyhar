@@ -126,7 +126,7 @@ class DumpReaderMultipart(DumpReader):
                                           'minidump_stackwalk')
 
     def _path_to_generate_breakpad_symbols(self):
-        return self._path_finder.path_from_chromium_base(
+        return self._path_finder.path_from_monyhar_base(
             'components', 'crash', 'content', 'tools',
             'generate_breakpad_symbols.py')
 

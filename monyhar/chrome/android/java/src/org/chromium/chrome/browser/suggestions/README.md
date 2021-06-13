@@ -178,7 +178,7 @@ Sample code path: [`SigninPromo.SigninObserver#onSignedOut()`][cs_link_1]
 - The RecyclerView performs the associated canned animation, attaches the view
   and displays it.
 
-[cs_link_1]: https://cs.chromium.org/chromium/src/chrome/android/java/src/org/chromium/chrome/browser/ntp/cards/SignInPromo.java?l=174&rcl=da4b23b1d2a82705f7f4fdfb6c9c8de00341c0af
+[cs_link_1]: https://cs.monyhar.org/monyhar/src/chrome/android/java/src/org/monyhar/chrome/browser/ntp/cards/SignInPromo.java?l=174&rcl=da4b23b1d2a82705f7f4fdfb6c9c8de00341c0af
 
 #### 2. Modifying an existing item
 
@@ -197,4 +197,4 @@ Sample code path: [`TileGrid#onTileOfflineBadgeVisibilityChanged()`][cs_link_2]
   the payload it received.
 - The Adapter runs the callback, passing the ViewHolder as argument.
 
-[cs_link_2]: https://cs.chromium.org/chromium/src/chrome/android/java/src/org/chromium/chrome/browser/suggestions/TileGrid.java?l=78&rcl=da4b23b1d2a82705f7f4fdfb6c9c8de00341c0af
+[cs_link_2]: https://cs.monyhar.org/monyhar/src/chrome/android/java/src/org/monyhar/chrome/browser/suggestions/TileGrid.java?l=78&rcl=da4b23b1d2a82705f7f4fdfb6c9c8de00341c0af

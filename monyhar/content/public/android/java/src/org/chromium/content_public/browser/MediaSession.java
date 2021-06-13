@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.browser;
+package org.monyhar.content_public.browser;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ObserverList;
-import org.chromium.content.browser.MediaSessionImpl;
+import org.monyhar.base.ObserverList;
+import org.monyhar.content.browser.MediaSessionImpl;
 
 /**
  * The MediaSession Java wrapper to allow communicating with the native MediaSession object.

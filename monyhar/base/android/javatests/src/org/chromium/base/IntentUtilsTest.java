@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base;
+package org.monyhar.base;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -20,9 +20,9 @@ import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 import org.mockito.quality.Strictness;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Batch;
-import org.chromium.build.BuildConfig;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.build.BuildConfig;
 
 /**
  * Tests for {@link IntentUtils}.
@@ -60,7 +60,7 @@ public class IntentUtilsTest {
         assertTargetsSelf(true, intent, false);
 
         intent.setComponent(
-                new ComponentName("other.package", "org.chromium.base.IntentUtilsTest"));
+                new ComponentName("other.package", "org.monyhar.base.IntentUtilsTest"));
         assertTargetsSelf(false, intent, false);
 
         intent.setPackage(packageName);

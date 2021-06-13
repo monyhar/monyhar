@@ -103,7 +103,7 @@ class MediaRouterActionControllerGMCUnitTest
  public:
   MediaRouterActionControllerGMCUnitTest()
       : cast_source_("cast:1234"),
-        mirroring_source_("urn:x-org.chromium.media:source:tab:*") {}
+        mirroring_source_("urn:x-org.monyhar.media:source:tab:*") {}
   void SetUp() override {
     MediaRouterActionControllerUnitTest::SetUp();
     feature_list_.InitAndEnableFeature(

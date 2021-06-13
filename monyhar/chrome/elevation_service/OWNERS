@@ -1,6 +1,6 @@
-ganesh@chromium.org
-xiaolingbao@chromium.org
-sorin@chromium.org
+ganesh@monyhar.org
+xiaolingbao@monyhar.org
+sorin@monyhar.org
 
 per-file *.idl=set noparent
 per-file *.idl=file://ipc/SECURITY_OWNERS

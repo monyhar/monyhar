@@ -14,9 +14,9 @@
 #include "net/cert/ct_log_verifier.h"
 #include "net/cert/ct_policy_enforcer.h"
 #include "net/http/transport_security_state.h"
-#include "net/quic/crypto/proof_source_chromium.h"
-#include "net/quic/crypto/proof_verifier_chromium.h"
-#include "net/quic/platform/impl/quic_chromium_clock.h"
+#include "net/quic/crypto/proof_source_monyhar.h"
+#include "net/quic/crypto/proof_verifier_monyhar.h"
+#include "net/quic/platform/impl/quic_monyhar_clock.h"
 #include "net/third_party/quiche/src/quic/platform/api/quic_flags.h"
 #include "net/third_party/quiche/src/quic/tools/simple_ticket_crypter.h"
 

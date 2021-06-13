@@ -3,7 +3,7 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
-"""Script for updating AFL. Also updates AFL version in README.chromium.
+"""Script for updating AFL. Also updates AFL version in README.monyhar.
 """
 
 import argparse
@@ -22,9 +22,9 @@ PATH_REGEX = r'(afl-)' + VERSION_REGEX
 
 
 class ChromiumReadme(object):
-  """Class that handles reading from and updating the README.chromium"""
+  """Class that handles reading from and updating the README.monyhar"""
 
-  README_FILE_PATH = 'third_party/afl/README.chromium'
+  README_FILE_PATH = 'third_party/afl/README.monyhar'
   README_VERSION_REGEX = r'Version: ' + VERSION_REGEX
 
   def __init__(self):
@@ -36,7 +36,7 @@ class ChromiumReadme(object):
 
   def get_current_version(self):
     """
-    Get the current version of AFL according to the README.chromium
+    Get the current version of AFL according to the README.monyhar
     """
     match = re.search(self.README_VERSION_REGEX, self.readme_contents)
     if not match:
@@ -68,7 +68,7 @@ class AflTarball(object):
   """
   # Regexes that match files that we don't want to extract.
   # Note that you should add these removals to "Local Modifications" in
-  # the README.chromium.
+  # the README.monyhar.
   UNWANTED_FILE_REGEX = '|'.join([
       r'(.*\.elf)',  # presubmit complains these aren't marked executable.
       r'(.*others/elf)',  # We don't need this if we have no elfs.

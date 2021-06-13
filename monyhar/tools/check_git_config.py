@@ -53,18 +53,18 @@ UPLOAD_DISABLE_TS = datetime.datetime(2014, 10, 1)
 
 # URL to POST json with results to.
 MOTHERSHIP_URL = (
-    'https://chromium-git-access.appspot.com/'
+    'https://monyhar-git-access.appspot.com/'
     'git_access/api/v1/reports/access_check')
 
 # Repository to push test commits to.
-TEST_REPO_URL = 'https://chromium.googlesource.com/a/playground/access_test'
+TEST_REPO_URL = 'https://monyhar.googlesource.com/a/playground/access_test'
 
 # Git-compatible gclient solution.
 GOOD_GCLIENT_SOLUTION = {
   'name': 'src',
   'deps_file': 'DEPS',
   'managed': False,
-  'url': 'https://chromium.googlesource.com/chromium/src.git',
+  'url': 'https://monyhar.googlesource.com/monyhar/src.git',
 }
 
 # Possible chunks of git push response in case .netrc is misconfigured.
@@ -221,9 +221,9 @@ def scan_configuration():
     'username': getpass.getuser(),
     'git_user_email': read_git_config('user.email') if is_git else '',
     'git_user_name': read_git_config('user.name') if is_git else '',
-    'git_insteadof': read_git_insteadof('chromium.googlesource.com'),
-    'chromium_netrc_email':
-        read_netrc_user(netrc_obj, 'chromium.googlesource.com'),
+    'git_insteadof': read_git_insteadof('monyhar.googlesource.com'),
+    'monyhar_netrc_email':
+        read_netrc_user(netrc_obj, 'monyhar.googlesource.com'),
     'chrome_internal_netrc_email':
         read_netrc_user(netrc_obj, 'chrome-internal.googlesource.com'),
     'gclient_deps': gclient_deps,
@@ -314,7 +314,7 @@ def check_git_config(conf, report_url, verbose):
   have failed) and should NOT be retried on next invocation of the hook.
   """
   # Don't even try to push if netrc is not configured.
-  if not conf['chromium_netrc_email']:
+  if not conf['monyhar_netrc_email']:
     return upload_report(
         conf,
         report_url,
@@ -324,7 +324,7 @@ def check_git_config(conf, report_url, verbose):
         push_duration_ms=0)
 
   # Ref to push to, each user has its own ref.
-  ref = 'refs/push-test/%s' % conf['chromium_netrc_email']
+  ref = 'refs/push-test/%s' % conf['monyhar_netrc_email']
 
   push_works = False
   flake = False
@@ -410,13 +410,13 @@ def check_gclient_config(conf):
     print('-' * 80)
     print('You are using managed gclient mode with git, which was deprecated '
           'on 8/22/13:')
-    print('https://groups.google.com/a/chromium.org/'
-          'forum/#!topic/chromium-dev/n9N5N3JL2_U')
+    print('https://groups.google.com/a/monyhar.org/'
+          'forum/#!topic/monyhar-dev/n9N5N3JL2_U')
     print()
     print('It is strongly advised to switch to unmanaged mode. For more '
           'information about managed mode and reasons for its deprecation see:')
     print(
-        'http://www.chromium.org/developers/how-tos/get-the-code/gclient-managed-mode'
+        'http://www.monyhar.org/developers/how-tos/get-the-code/gclient-managed-mode'
     )
     print()
     print('There\'s also a large suite of tools to assist managing git '

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.util;
+package org.monyhar.chrome.test.util;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertTrue;
@@ -24,15 +24,15 @@ import androidx.fragment.app.Fragment;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.Log;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.TimeoutTimer;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.settings.SettingsActivity;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.TimeoutTimer;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.settings.SettingsActivity;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.Locale;
 import java.util.concurrent.Callable;

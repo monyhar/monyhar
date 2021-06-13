@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.suggestions;
+package org.monyhar.chrome.browser.suggestions;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
-import org.chromium.chrome.browser.ui.native_page.NativePageHost;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.chrome.browser.ui.native_page.NativePageHost;
 
 import java.util.ArrayList;
 import java.util.List;

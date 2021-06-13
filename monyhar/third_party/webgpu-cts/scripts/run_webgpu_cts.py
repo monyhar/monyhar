@@ -98,7 +98,7 @@ class ExpectationsServer(BaseHTTPServer.HTTPServer):
 
 def split_cts_expectations_and_web_test_expectations(
         expectations_file_contents, platform_tags=None):
-    """Split web test expectations (bit.ly/chromium-test-list-format) into a Javascript
+    """Split web test expectations (bit.ly/monyhar-test-list-format) into a Javascript
     module containing expectations for the WebGPU CTS, and a filtered list of the same web
     test expectations, excluding the bits handled by the WebGPU CTS. Returns an object:
     {

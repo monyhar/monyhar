@@ -1,4 +1,4 @@
-rsesek@chromium.org
+rsesek@monyhar.org
 
 # ImageSkia related classes except for _mac/_ios stuff
-per-file image_skia*=oshima@chromium.org
+per-file image_skia*=oshima@monyhar.org

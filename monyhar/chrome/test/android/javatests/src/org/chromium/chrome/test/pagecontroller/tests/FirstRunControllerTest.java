@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.pagecontroller.tests;
+package org.monyhar.chrome.test.pagecontroller.tests;
 
 import androidx.test.filters.SmallTest;
 
@@ -14,13 +14,13 @@ import org.junit.rules.RuleChain;
 import org.junit.rules.TestRule;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.test.pagecontroller.controllers.first_run.TOSController;
-import org.chromium.chrome.test.pagecontroller.controllers.ntp.NewTabPageController;
-import org.chromium.chrome.test.pagecontroller.rules.ChromeUiApplicationTestRule;
-import org.chromium.chrome.test.pagecontroller.rules.ChromeUiAutomatorTestRule;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.test.pagecontroller.controllers.first_run.TOSController;
+import org.monyhar.chrome.test.pagecontroller.controllers.ntp.NewTabPageController;
+import org.monyhar.chrome.test.pagecontroller.rules.ChromeUiApplicationTestRule;
+import org.monyhar.chrome.test.pagecontroller.rules.ChromeUiAutomatorTestRule;
 
 /**
  * Test the First Run Experience.

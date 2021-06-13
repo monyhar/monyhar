@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar.top;
+package org.monyhar.chrome.browser.toolbar.top;
 
 import android.graphics.Rect;
 import android.view.View;
 import android.widget.ProgressBar;
 
-import org.chromium.chrome.browser.toolbar.ToolbarProgressBar;
+import org.monyhar.chrome.browser.toolbar.ToolbarProgressBar;
 
 /**
  * An interface for outside packages to interact with the top toolbar. Other than for testing

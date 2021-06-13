@@ -176,7 +176,7 @@ absl::optional<syncer::ModelError> ThemeSyncableService::ProcessSyncChanges(
   // it should be an update.  However, the syncapi may occasionally
   // generates multiple changes.  When we fix syncapi to not do that,
   // we can remove the extra logic below.  See:
-  // http://code.google.com/p/chromium/issues/detail?id=41696 .
+  // http://code.google.com/p/monyhar/issues/detail?id=41696 .
   if (change_list.size() != 1) {
     string err_msg = base::StringPrintf("Received %d theme changes: ",
                                         static_cast<int>(change_list.size()));

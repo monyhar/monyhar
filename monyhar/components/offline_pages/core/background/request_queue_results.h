@@ -30,7 +30,7 @@ enum class AddRequestResult {
                   // |disallow_duplicate_requests| was set to true.
 };
 
-// GENERATED_JAVA_ENUM_PACKAGE:org.chromium.components.offlinepages.background
+// GENERATED_JAVA_ENUM_PACKAGE:org.monyhar.components.offlinepages.background
 enum class UpdateRequestResult {
   SUCCESS,
   STORE_FAILURE,

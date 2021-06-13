@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.qrcode.scan_tab;
+package org.monyhar.chrome.browser.share.qrcode.scan_tab;
 
 import android.app.Activity;
 import android.content.Context;
@@ -19,10 +19,10 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.R;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.ui.widget.ButtonCompat;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.R;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.ui.widget.ButtonCompat;
 
 /**
  * Manages the Android View representing the QrCode scan panel.

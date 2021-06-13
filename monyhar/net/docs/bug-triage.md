@@ -8,7 +8,7 @@ of their two days working on bug triage/investigation.
 ## 1. Review untriaged bugs
 
 Look through [this list of untriaged
-bugs](https://bugs.chromium.org/p/chromium/issues/list?sort=pri%20-stars%20-opened&q=status%3Aunconfirmed%2Cuntriaged%20-Needs%3DFeedback%20-Label%3ANetwork-Triaged%20-has:NextAction%20component%3DInternals%3ENetwork%2CInternals%3ENetwork%3ECache%2CInternals%3ENetwork%3ESSL%2CInternals%3ENetwork%3EQUIC%2CInternals%3ENetwork%3EAuth%2CInternals%3ENetwork%3EHTTP2%2CInternals%3ENetwork%3EProxy%2CInternals%3ENetwork%3ELibrary%2CInternals%3ENetwork%3ELogging%2CInternals%3ENetwork%3EConnectivity%2CInternals%3ENetwork%3EDomainSecurityPolicy%2CInternals%3ENetwork%3ETrustTokens%2CInternals%3ENetwork%3EFTP).
+bugs](https://bugs.monyhar.org/p/monyhar/issues/list?sort=pri%20-stars%20-opened&q=status%3Aunconfirmed%2Cuntriaged%20-Needs%3DFeedback%20-Label%3ANetwork-Triaged%20-has:NextAction%20component%3DInternals%3ENetwork%2CInternals%3ENetwork%3ECache%2CInternals%3ENetwork%3ESSL%2CInternals%3ENetwork%3EQUIC%2CInternals%3ENetwork%3EAuth%2CInternals%3ENetwork%3EHTTP2%2CInternals%3ENetwork%3EProxy%2CInternals%3ENetwork%3ELibrary%2CInternals%3ENetwork%3ELogging%2CInternals%3ENetwork%3EConnectivity%2CInternals%3ENetwork%3EDomainSecurityPolicy%2CInternals%3ENetwork%3ETrustTokens%2CInternals%3ENetwork%3EFTP).
 
 The goal is for this query to be empty. Bugs can be removed from the triage queue
 by doing any of the following:
@@ -30,7 +30,7 @@ For each bug try to:
 * If the bug has privacy implications mark it with component `Privacy`.
 * Set the type to `Task` or `Feature` when it is not a bug.
 * Pay extra attention to possible regressions. Ask the reporter to narrow down using
-  [bisect-builds-py](https://www.chromium.org/developers/bisect-builds-py). To
+  [bisect-builds-py](https://www.monyhar.org/developers/bisect-builds-py). To
   view suspicious changelists in a regression window, you can use the Change Log
   form on [OmahaProxy](https://omahaproxy.appspot.com/)
 * CC others who may be able to help
@@ -57,7 +57,7 @@ For each bug try to:
   ```
   Please collect and attach a chrome://net-export log.
   Instructions can be found here:
-  https://chromium.org/for-testers/providing-network-details
+  https://monyhar.org/for-testers/providing-network-details
   ```
 * If a NetLog was provided, try to spend a bit of time reviewing it. See
   [crash-course-in-net-internals.md](crash-course-in-net-internals.md) for an
@@ -72,7 +72,7 @@ crashers](https://goto.google.com/network_triage_internal#investigating-crashers
 ## 2. Follow-up on issues with the Needs-Feedback label
 
 Look through [this list of Needs=Feedback
-bugs](https://bugs.chromium.org/p/chromium/issues/list?sort=-modified%20-modified&q=Needs%3DFeedback%20component%3DInternals%3ENetwork%2CInternals%3ENetwork%3ECache%2CInternals%3ENetwork%3ESSL%2CInternals%3ENetwork%3EQUIC%2CInternals%3ENetwork%3EAuth%2CInternals%3ENetwork%3EHTTP2%2CInternals%3ENetwork%3EProxy%2CInternals%3ENetwork%3ELibrary%2CInternals%3ENetwork%3ELogging%2CInternals%3ENetwork%3EConnectivity%2CInternals%3ENetwork%3EDomainSecurityPolicy%2CInternals%3ENetwork%3ETrustTokens%2CInternals%3ENetwork%3EFTP).
+bugs](https://bugs.monyhar.org/p/monyhar/issues/list?sort=-modified%20-modified&q=Needs%3DFeedback%20component%3DInternals%3ENetwork%2CInternals%3ENetwork%3ECache%2CInternals%3ENetwork%3ESSL%2CInternals%3ENetwork%3EQUIC%2CInternals%3ENetwork%3EAuth%2CInternals%3ENetwork%3EHTTP2%2CInternals%3ENetwork%3EProxy%2CInternals%3ENetwork%3ELibrary%2CInternals%3ENetwork%3ELogging%2CInternals%3ENetwork%3EConnectivity%2CInternals%3ENetwork%3EDomainSecurityPolicy%2CInternals%3ENetwork%3ETrustTokens%2CInternals%3ENetwork%3EFTP).
 
 * If the requested feedback was provided, review the new information and repeat
   the same steps as (1) to re-triage based on the new information.
@@ -82,7 +82,7 @@ bugs](https://bugs.chromium.org/p/chromium/issues/list?sort=-modified%20-modifie
 ## 3. Ensure P0 and P1 bugs have an owner
 
 Look through [the list of unowned high priority
-bugs](https://bugs.chromium.org/p/chromium/issues/list?sort=pri%20-stars%20-opened&q=Pri%3A0%2C1%20-has%3Aowner%20-label%3ANetwork-Triaged%20component%3DInternals%3ENetwork%2CInternals%3ENetwork%3ECache%2CInternals%3ENetwork%3ESSL%2CInternals%3ENetwork%3EQUIC%2CInternals%3ENetwork%3EAuth%2CInternals%3ENetwork%3EHTTP2%2CInternals%3ENetwork%3EProxy%2CInternals%3ENetwork%3ELibrary%2CInternals%3ENetwork%3ELogging%2CInternals%3ENetwork%3EConnectivity%2CInternals%3ENetwork%3EDomainSecurityPolicy%2CInternals%3ENetwork%3ETrustTokens%2CInternals%3ENetwork%3EFTP).
+bugs](https://bugs.monyhar.org/p/monyhar/issues/list?sort=pri%20-stars%20-opened&q=Pri%3A0%2C1%20-has%3Aowner%20-label%3ANetwork-Triaged%20component%3DInternals%3ENetwork%2CInternals%3ENetwork%3ECache%2CInternals%3ENetwork%3ESSL%2CInternals%3ENetwork%3EQUIC%2CInternals%3ENetwork%3EAuth%2CInternals%3ENetwork%3EHTTP2%2CInternals%3ENetwork%3EProxy%2CInternals%3ENetwork%3ELibrary%2CInternals%3ENetwork%3ELogging%2CInternals%3ENetwork%3EConnectivity%2CInternals%3ENetwork%3EDomainSecurityPolicy%2CInternals%3ENetwork%3ETrustTokens%2CInternals%3ENetwork%3EFTP).
 These bugs should either have an owner, or be downgraded to a lower priority.
 
 ## 4. (Optional) Look through crash reports
@@ -95,7 +95,7 @@ However if you have time to look through lower threshold crashes, see
 
 ## 5. Send out a sheriff report
 
-On the final day of your rotation, send a brief summary to net-dev@chromium.org
+On the final day of your rotation, send a brief summary to net-dev@monyhar.org
 detailing any interesting or concerning trends. Do not discuss any restricted
 bugs on the public mailing list.
 
@@ -152,7 +152,7 @@ generating and modifying shifts
 [here (internal-only)](https://goto.google.com/pflvb).
 
 * An overview of bug trends can be seen on [Chromium
-  Dashboard](https://chromiumdash.appspot.com/components/Internals/Network?project=Chromium)
+  Dashboard](https://monyhardash.appspot.com/components/Internals/Network?project=Chromium)
 
 * There is also an [internal dashboard with bug trends for Web
   Platform](https://goto.google.com/vufyq) that includes network issues.

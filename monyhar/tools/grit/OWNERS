@@ -1,11 +1,11 @@
-agrieve@chromium.org
-flackr@chromium.org
-thakis@chromium.org
-thestig@chromium.org
+agrieve@monyhar.org
+flackr@monyhar.org
+thakis@monyhar.org
+thestig@monyhar.org
 
 # For WebUI related changes
-dpapad@chromium.org
-rbpotter@chromium.org
+dpapad@monyhar.org
+rbpotter@monyhar.org
 
 # Admin policy related grit tools.
 per-file *policy*=file://components/policy/tools/OWNERS

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.shell;
+package org.monyhar.chromecast.shell;
 
 import static org.junit.Assert.assertEquals;
 
@@ -33,7 +33,7 @@ public class LogcatElisionUnitTest {
 
     @Test
     public void testElideUrl2() {
-        String original = "exception at org.chromium.chrome.browser.crash.LogcatElisionUnitTest";
+        String original = "exception at org.monyhar.chrome.browser.crash.LogcatElisionUnitTest";
         assertEquals(original, LogcatElision.elide(original));
     }
 
@@ -73,7 +73,7 @@ public class LogcatElisionUnitTest {
 
     @Test
     public void testDontElideFileSuffixes() {
-        String original = "chromium_android_linker.so";
+        String original = "monyhar_android_linker.so";
         assertEquals(original, LogcatElision.elide(original));
     }
 
@@ -100,8 +100,8 @@ public class LogcatElisionUnitTest {
 
     @Test
     public void testElideConsole() {
-        String original = "I/chromium(123): [INFO:CONSOLE(2)] hello!";
-        String expected = "I/chromium(123): [ELIDED:CONSOLE(0)] ELIDED CONSOLE MESSAGE";
+        String original = "I/monyhar(123): [INFO:CONSOLE(2)] hello!";
+        String expected = "I/monyhar(123): [ELIDED:CONSOLE(0)] ELIDED CONSOLE MESSAGE";
         assertEquals(expected, LogcatElision.elide(original));
     }
 
@@ -113,7 +113,7 @@ public class LogcatElisionUnitTest {
 
     @Test
     public void testLogCastNotElided() {
-        String original = "09-08 11:52:12.569  4406  4406 I chromium: "
+        String original = "09-08 11:52:12.569  4406  4406 I monyhar: "
                 + "Cast.Discovery.Mdns.Request.AppId.In=25";
         assertEquals(original, LogcatElision.elide(original));
     }
@@ -135,7 +135,7 @@ public class LogcatElisionUnitTest {
 
     @Test
     public void testLogCcNotElided() {
-        String original = "09-08 11:59:12.335  4406  4443 I chromium: "
+        String original = "09-08 11:59:12.335  4406  4443 I monyhar: "
                 + "[4406:4443:INFO:wifi_util.cc(113)]   No peers:";
         assertEquals(original, LogcatElision.elide(original));
     }

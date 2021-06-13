@@ -4,16 +4,16 @@
 
 Some background on the original decision to ban static initializers:
 
-http://neugierig.org/software/chromium/notes/2011/08/static-initializers.html
+http://neugierig.org/software/monyhar/notes/2011/08/static-initializers.html
 
 Note: Another name for static initializers is "global constructors".
 
 # How Static Initializers are Checked
 
 * For Linux and Mac:
-  * The expected count is stored in [//testing/scripts/check_static_initializers.py](https://source.chromium.org/chromium/chromium/src/+/main:testing/scripts/check_static_initializers.py)
+  * The expected count is stored in [//testing/scripts/check_static_initializers.py](https://source.monyhar.org/monyhar/monyhar/src/+/main:testing/scripts/check_static_initializers.py)
 * For Android:
-  * The expected count is stored in the build target [//chrome/android:monochrome_static_initializers](https://cs.chromium.org/chromium/src/chrome/android/BUILD.gn)
+  * The expected count is stored in the build target [//chrome/android:monochrome_static_initializers](https://cs.monyhar.org/monyhar/src/chrome/android/BUILD.gn)
 
 ## Removing Static Initializers
 
@@ -53,7 +53,7 @@ The last one may actually be the easiest if you've already properly built
 If the source of the new initiazers is not obvious from Step 1, you can ask the
 compiler to pinpoint the exact source line.
 
-1. Edit [//build/config/BUILDCONFIG.gn](https://cs.chromium.org/chromium/src/build/config/BUILDCONFIG.gn)
+1. Edit [//build/config/BUILDCONFIG.gn](https://cs.monyhar.org/monyhar/src/build/config/BUILDCONFIG.gn)
 and add `"//build/config/compiler:wglobal_constructors"` to `default_compiler_configs`
 2. Remove the config from the `configs` in `//base:base`
 3. Set GN arg `treat_warnings_as_errors=false`
@@ -62,7 +62,7 @@ and add `"//build/config/compiler:wglobal_constructors"` to `default_compiler_co
 *** note
 The compiler warning triggers for every static initializer that exists
 *before optimization*. We care only about those that survive optimization.
-More details in [crbug/1136086](https://bugs.chromium.org/p/chromium/issues/detail?id=1136086).
+More details in [crbug/1136086](https://bugs.monyhar.org/p/monyhar/issues/detail?id=1136086).
 ***
 
 * For more information about `diagnose_bloat.py`, refer to its [README.md](/tools/binary_size/README.md#diagnose_bloat.py)

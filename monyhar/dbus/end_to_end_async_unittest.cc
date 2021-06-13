@@ -66,13 +66,13 @@ class EndToEndAsyncTest : public testing::Test {
     bus_ = new Bus(bus_options);
     object_proxy_ = bus_->GetObjectProxy(
         test_service_->service_name(),
-        ObjectPath("/org/chromium/TestObject"));
+        ObjectPath("/org/monyhar/TestObject"));
     ASSERT_TRUE(bus_->HasDBusThread());
 
-    // Connect to the "Test" signal of "org.chromium.TestInterface" from
+    // Connect to the "Test" signal of "org.monyhar.TestInterface" from
     // the remote object.
     object_proxy_->ConnectToSignal(
-        "org.chromium.TestInterface", "Test",
+        "org.monyhar.TestInterface", "Test",
         base::BindRepeating(&EndToEndAsyncTest::OnTestSignal,
                             base::Unretained(this)),
         base::BindOnce(&EndToEndAsyncTest::OnConnected,
@@ -81,13 +81,13 @@ class EndToEndAsyncTest : public testing::Test {
     run_loop_ = std::make_unique<base::RunLoop>();
     run_loop_->Run();
 
-    // Connect to the "Test2" signal of "org.chromium.TestInterface" from
+    // Connect to the "Test2" signal of "org.monyhar.TestInterface" from
     // the remote object. There was a bug where we were emitting error
     // messages like "Requested to remove an unknown match rule: ..." at
     // the shutdown of Bus when an object proxy is connected to more than
     // one signal of the same interface. See crosbug.com/23382 for details.
     object_proxy_->ConnectToSignal(
-        "org.chromium.TestInterface", "Test2",
+        "org.monyhar.TestInterface", "Test2",
         base::BindRepeating(&EndToEndAsyncTest::OnTest2Signal,
                             base::Unretained(this)),
         base::BindOnce(&EndToEndAsyncTest::OnConnected,
@@ -101,10 +101,10 @@ class EndToEndAsyncTest : public testing::Test {
                                               ObjectPath("/"));
     ASSERT_TRUE(bus_->HasDBusThread());
 
-    // Connect to the "Test" signal of "org.chromium.TestInterface" from
+    // Connect to the "Test" signal of "org.monyhar.TestInterface" from
     // the root remote object too.
     root_object_proxy_->ConnectToSignal(
-        "org.chromium.TestInterface", "Test",
+        "org.monyhar.TestInterface", "Test",
         base::BindRepeating(&EndToEndAsyncTest::OnRootTestSignal,
                             base::Unretained(this)),
         base::BindOnce(&EndToEndAsyncTest::OnConnected,
@@ -147,7 +147,7 @@ class EndToEndAsyncTest : public testing::Test {
     // Create new object proxy.
     object_proxy_ = bus_->GetObjectProxy(
         test_service_->service_name(),
-        ObjectPath("/org/chromium/TestObject"));
+        ObjectPath("/org/monyhar/TestObject"));
   }
 
   // Calls the method asynchronously. OnResponse() will be called once the
@@ -270,7 +270,7 @@ TEST_F(EndToEndAsyncTest, Echo) {
   const char* kHello = "hello";
 
   // Create the method call.
-  MethodCall method_call("org.chromium.TestInterface", "Echo");
+  MethodCall method_call("org.monyhar.TestInterface", "Echo");
   MessageWriter writer(&method_call);
   writer.AppendString(kHello);
 
@@ -287,7 +287,7 @@ TEST_F(EndToEndAsyncTest, EchoWithErrorCallback) {
   const char* kHello = "hello";
 
   // Create the method call.
-  MethodCall method_call("org.chromium.TestInterface", "Echo");
+  MethodCall method_call("org.monyhar.TestInterface", "Echo");
   MessageWriter writer(&method_call);
   writer.AppendString(kHello);
 
@@ -307,7 +307,7 @@ TEST_F(EndToEndAsyncTest, EchoThreeTimes) {
 
   for (size_t i = 0; i < base::size(kMessages); ++i) {
     // Create the method call.
-    MethodCall method_call("org.chromium.TestInterface", "Echo");
+    MethodCall method_call("org.monyhar.TestInterface", "Echo");
     MessageWriter writer(&method_call);
     writer.AppendString(kMessages[i]);
 
@@ -329,7 +329,7 @@ TEST_F(EndToEndAsyncTest, Echo_HugePayload) {
   const std::string kHugePayload(kHugePayloadSize, 'o');
 
   // Create the method call with a huge payload.
-  MethodCall method_call("org.chromium.TestInterface", "Echo");
+  MethodCall method_call("org.monyhar.TestInterface", "Echo");
   MessageWriter writer(&method_call);
   writer.AppendString(kHugePayload);
 
@@ -349,7 +349,7 @@ TEST_F(EndToEndAsyncTest, BrokenBus) {
   SetUpBrokenBus();
 
   // Create the method call.
-  MethodCall method_call("org.chromium.TestInterface", "Echo");
+  MethodCall method_call("org.monyhar.TestInterface", "Echo");
   MessageWriter writer(&method_call);
   writer.AppendString(kHello);
 
@@ -369,7 +369,7 @@ TEST_F(EndToEndAsyncTest, BrokenBusWithErrorCallback) {
   SetUpBrokenBus();
 
   // Create the method call.
-  MethodCall method_call("org.chromium.TestInterface", "Echo");
+  MethodCall method_call("org.monyhar.TestInterface", "Echo");
   MessageWriter writer(&method_call);
   writer.AppendString(kHello);
 
@@ -387,7 +387,7 @@ TEST_F(EndToEndAsyncTest, Timeout) {
   const char* kHello = "hello";
 
   // Create the method call.
-  MethodCall method_call("org.chromium.TestInterface", "SlowEcho");
+  MethodCall method_call("org.monyhar.TestInterface", "SlowEcho");
   MessageWriter writer(&method_call);
   writer.AppendString(kHello);
 
@@ -404,7 +404,7 @@ TEST_F(EndToEndAsyncTest, TimeoutWithErrorCallback) {
   const char* kHello = "hello";
 
   // Create the method call.
-  MethodCall method_call("org.chromium.TestInterface", "SlowEcho");
+  MethodCall method_call("org.monyhar.TestInterface", "SlowEcho");
   MessageWriter writer(&method_call);
   writer.AppendString(kHello);
 
@@ -422,7 +422,7 @@ TEST_F(EndToEndAsyncTest, CancelPendingCalls) {
   const char* kHello = "hello";
 
   // Create the method call.
-  MethodCall method_call("org.chromium.TestInterface", "Echo");
+  MethodCall method_call("org.monyhar.TestInterface", "Echo");
   MessageWriter writer(&method_call);
   writer.AppendString(kHello);
 
@@ -433,7 +433,7 @@ TEST_F(EndToEndAsyncTest, CancelPendingCalls) {
   // Remove the object proxy before receiving the result.
   // This results in cancelling the pending method call.
   bus_->RemoveObjectProxy(test_service_->service_name(),
-                          ObjectPath("/org/chromium/TestObject"),
+                          ObjectPath("/org/monyhar/TestObject"),
                           base::DoNothing());
 
   // We shouldn't receive any responses. Wait for a while just to make sure.
@@ -449,7 +449,7 @@ TEST_F(EndToEndAsyncTest, AsyncEcho) {
   const char* kHello = "hello";
 
   // Create the method call.
-  MethodCall method_call("org.chromium.TestInterface", "AsyncEcho");
+  MethodCall method_call("org.monyhar.TestInterface", "AsyncEcho");
   MessageWriter writer(&method_call);
   writer.AppendString(kHello);
 
@@ -463,7 +463,7 @@ TEST_F(EndToEndAsyncTest, AsyncEcho) {
 }
 
 TEST_F(EndToEndAsyncTest, NonexistentMethod) {
-  MethodCall method_call("org.chromium.TestInterface", "Nonexistent");
+  MethodCall method_call("org.monyhar.TestInterface", "Nonexistent");
 
   const int timeout_ms = ObjectProxy::TIMEOUT_USE_DEFAULT;
   CallMethod(&method_call, timeout_ms);
@@ -474,7 +474,7 @@ TEST_F(EndToEndAsyncTest, NonexistentMethod) {
 }
 
 TEST_F(EndToEndAsyncTest, NonexistentMethodWithErrorCallback) {
-  MethodCall method_call("org.chromium.TestInterface", "Nonexistent");
+  MethodCall method_call("org.monyhar.TestInterface", "Nonexistent");
 
   const int timeout_ms = ObjectProxy::TIMEOUT_USE_DEFAULT;
   CallMethodWithErrorCallback(&method_call, timeout_ms);
@@ -486,7 +486,7 @@ TEST_F(EndToEndAsyncTest, NonexistentMethodWithErrorCallback) {
 }
 
 TEST_F(EndToEndAsyncTest, BrokenMethod) {
-  MethodCall method_call("org.chromium.TestInterface", "BrokenMethod");
+  MethodCall method_call("org.monyhar.TestInterface", "BrokenMethod");
 
   const int timeout_ms = ObjectProxy::TIMEOUT_USE_DEFAULT;
   CallMethod(&method_call, timeout_ms);
@@ -497,7 +497,7 @@ TEST_F(EndToEndAsyncTest, BrokenMethod) {
 }
 
 TEST_F(EndToEndAsyncTest, BrokenMethodWithErrorCallback) {
-  MethodCall method_call("org.chromium.TestInterface", "BrokenMethod");
+  MethodCall method_call("org.monyhar.TestInterface", "BrokenMethod");
 
   const int timeout_ms = ObjectProxy::TIMEOUT_USE_DEFAULT;
   CallMethodWithErrorCallback(&method_call, timeout_ms);
@@ -514,9 +514,9 @@ TEST_F(EndToEndAsyncTest, InvalidServiceName) {
 
   // Replace object proxy with new one.
   object_proxy_ = bus_->GetObjectProxy(invalid_service_name,
-                                       ObjectPath("/org/chromium/TestObject"));
+                                       ObjectPath("/org/monyhar/TestObject"));
 
-  MethodCall method_call("org.chromium.TestInterface", "Echo");
+  MethodCall method_call("org.monyhar.TestInterface", "Echo");
 
   const int timeout_ms = ObjectProxy::TIMEOUT_USE_DEFAULT;
   CallMethodWithErrorCallback(&method_call, timeout_ms);
@@ -531,7 +531,7 @@ TEST_F(EndToEndAsyncTest, EmptyResponseCallback) {
   const char* kHello = "hello";
 
   // Create the method call.
-  MethodCall method_call("org.chromium.TestInterface", "Echo");
+  MethodCall method_call("org.monyhar.TestInterface", "Echo");
   MessageWriter writer(&method_call);
   writer.AppendString(kHello);
 
@@ -593,7 +593,7 @@ class SignalMultipleHandlerTest : public EndToEndAsyncTest {
     // so that we can verify that a second call to ConnectSignal() delivers
     // to both our new handler and the old.
     object_proxy_->ConnectToSignal(
-        "org.chromium.TestInterface", "Test",
+        "org.monyhar.TestInterface", "Test",
         base::BindRepeating(&SignalMultipleHandlerTest::OnAdditionalTestSignal,
                             base::Unretained(this)),
         base::BindOnce(&SignalMultipleHandlerTest::OnAdditionalConnected,

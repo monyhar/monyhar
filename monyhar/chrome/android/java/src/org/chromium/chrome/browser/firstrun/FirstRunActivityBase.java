@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.firstrun;
+package org.monyhar.chrome.browser.firstrun;
 
 import android.app.Activity;
 import android.app.PendingIntent;
@@ -11,17 +11,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemClock;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.base.Log;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.supplier.OneshotSupplier;
-import org.chromium.base.supplier.OneshotSupplierImpl;
-import org.chromium.chrome.browser.customtabs.CustomTabsConnection;
-import org.chromium.chrome.browser.init.AsyncInitializationActivity;
-import org.chromium.chrome.browser.metrics.UmaUtils;
-import org.chromium.chrome.browser.policy.PolicyServiceFactory;
-import org.chromium.chrome.browser.profiles.ProfileManagerUtils;
-import org.chromium.components.policy.PolicyService;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.supplier.OneshotSupplier;
+import org.monyhar.base.supplier.OneshotSupplierImpl;
+import org.monyhar.chrome.browser.customtabs.CustomTabsConnection;
+import org.monyhar.chrome.browser.init.AsyncInitializationActivity;
+import org.monyhar.chrome.browser.metrics.UmaUtils;
+import org.monyhar.chrome.browser.policy.PolicyServiceFactory;
+import org.monyhar.chrome.browser.profiles.ProfileManagerUtils;
+import org.monyhar.components.policy.PolicyService;
 
 /** Base class for First Run Experience. */
 public abstract class FirstRunActivityBase extends AsyncInitializationActivity {

@@ -28,7 +28,7 @@ Building the Android client on Windows or Mac is not supported and doesn't work.
 Clone the `depot_tools` repository:
 
 ```shell
-$ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+$ git clone https://monyhar.googlesource.com/monyhar/tools/depot_tools.git
 ```
 
 Add `depot_tools` to the end of your PATH (you will probably want to put this
@@ -41,12 +41,12 @@ $ export PATH="$PATH:/path/to/depot_tools"
 
 ## Get the code
 
-Create a `chromium` directory for the checkout and change to it (you can call
+Create a `monyhar` directory for the checkout and change to it (you can call
 this whatever you like and put it wherever you like, as
 long as the full path has no spaces):
 
 ```shell
-$ mkdir ~/chromium && cd ~/chromium
+$ mkdir ~/monyhar && cd ~/monyhar
 $ fetch --nohooks android
 ```
 
@@ -84,7 +84,7 @@ Then run `gclient sync` to pull the new Android dependencies:
 $ gclient sync
 ```
 
-(This is the only difference between `fetch android` and `fetch chromium`.)
+(This is the only difference between `fetch android` and `fetch monyhar`.)
 
 ### Install additional build dependencies
 
@@ -109,7 +109,7 @@ $ gclient runhooks
 ```
 
 *Optional*: You can also [install API
-keys](https://www.chromium.org/developers/how-tos/api-keys) if you want your
+keys](https://www.monyhar.org/developers/how-tos/api-keys) if you want your
 build to talk to some Google services, but this is not necessary for most
 development and testing purposes.
 
@@ -130,7 +130,7 @@ $ gn gen --args='target_os="android" is_chromecast=true' out/Default
 * You can replace `Default` with another name, but
   it should be a subdirectory of `out`.
 * For other build arguments, including release settings, see [GN build
-  configuration](https://www.chromium.org/developers/gn-build-configuration).
+  configuration](https://www.monyhar.org/developers/gn-build-configuration).
   The default will be a debug component build matching the current host
   operating system and CPU.
 * For more info on GN, run `gn help` on the command line or read the

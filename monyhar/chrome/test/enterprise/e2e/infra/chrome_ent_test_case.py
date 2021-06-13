@@ -64,7 +64,7 @@ class ChromeEnterpriseTestCase(EnterpriseTestCase):
     self.RunCommand(instance_name, cmd)
 
     cmd = (
-        r'powershell -File c:\cel\supporting_files\ensure_chromium_api_keys.ps1'
+        r'powershell -File c:\cel\supporting_files\ensure_monyhar_api_keys.ps1'
         r' -Path gs://%s/api/key') % self.gsbucket
     self.RunCommand(instance_name, cmd)
 

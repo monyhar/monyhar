@@ -1629,7 +1629,7 @@ void HandleCrashDump(const BreakpadInfo& info) {
   }
 
   static const char temp_file_template[] =
-      "/tmp/chromium-upload-XXXXXXXXXXXXXXXX";
+      "/tmp/monyhar-upload-XXXXXXXXXXXXXXXX";
   char temp_file[sizeof(temp_file_template)];
   int temp_file_fd = -1;
   if (keep_fd) {

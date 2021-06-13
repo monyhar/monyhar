@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.settings;
+package org.monyhar.chrome.browser.settings;
 
 import android.annotation.SuppressLint;
 import android.app.ActivityManager;
@@ -25,43 +25,43 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.vectordrawable.graphics.drawable.VectorDrawableCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ApplicationLifetime;
-import org.chromium.chrome.browser.ChromeBaseAppCompatActivity;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.LaunchIntentDispatcher;
-import org.chromium.chrome.browser.feedback.FragmentHelpAndFeedbackLauncher;
-import org.chromium.chrome.browser.feedback.HelpAndFeedbackLauncherImpl;
-import org.chromium.chrome.browser.image_descriptions.ImageDescriptionsController;
-import org.chromium.chrome.browser.image_descriptions.ImageDescriptionsSettings;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
-import org.chromium.chrome.browser.language.settings.LanguageSettings;
-import org.chromium.chrome.browser.locale.LocaleManager;
-import org.chromium.chrome.browser.password_check.PasswordCheckComponentUiFactory;
-import org.chromium.chrome.browser.password_check.PasswordCheckEditFragmentView;
-import org.chromium.chrome.browser.password_check.PasswordCheckFactory;
-import org.chromium.chrome.browser.password_check.PasswordCheckFragmentView;
-import org.chromium.chrome.browser.password_entry_edit.CredentialEditUiFactory;
-import org.chromium.chrome.browser.password_entry_edit.CredentialEntryFragmentViewBase;
-import org.chromium.chrome.browser.privacy_sandbox.FlocSettingsFragment;
-import org.chromium.chrome.browser.privacy_sandbox.PrivacySandboxSettingsFragment;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.profiles.ProfileManagerUtils;
-import org.chromium.chrome.browser.safety_check.SafetyCheckCoordinator;
-import org.chromium.chrome.browser.safety_check.SafetyCheckSettingsFragment;
-import org.chromium.chrome.browser.safety_check.SafetyCheckUpdatesDelegateImpl;
-import org.chromium.chrome.browser.search_engines.settings.SearchEngineSettings;
-import org.chromium.chrome.browser.signin.SyncConsentActivityLauncherImpl;
-import org.chromium.chrome.browser.site_settings.ChromeSiteSettingsDelegate;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager.SnackbarManageable;
-import org.chromium.components.browser_ui.settings.FragmentSettingsLauncher;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.browser_ui.settings.SettingsUtils;
-import org.chromium.components.browser_ui.site_settings.SiteSettingsPreferenceFragment;
-import org.chromium.ui.UiUtils;
-import org.chromium.ui.util.ColorUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ApplicationLifetime;
+import org.monyhar.chrome.browser.ChromeBaseAppCompatActivity;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.LaunchIntentDispatcher;
+import org.monyhar.chrome.browser.feedback.FragmentHelpAndFeedbackLauncher;
+import org.monyhar.chrome.browser.feedback.HelpAndFeedbackLauncherImpl;
+import org.monyhar.chrome.browser.image_descriptions.ImageDescriptionsController;
+import org.monyhar.chrome.browser.image_descriptions.ImageDescriptionsSettings;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.chrome.browser.language.settings.LanguageSettings;
+import org.monyhar.chrome.browser.locale.LocaleManager;
+import org.monyhar.chrome.browser.password_check.PasswordCheckComponentUiFactory;
+import org.monyhar.chrome.browser.password_check.PasswordCheckEditFragmentView;
+import org.monyhar.chrome.browser.password_check.PasswordCheckFactory;
+import org.monyhar.chrome.browser.password_check.PasswordCheckFragmentView;
+import org.monyhar.chrome.browser.password_entry_edit.CredentialEditUiFactory;
+import org.monyhar.chrome.browser.password_entry_edit.CredentialEntryFragmentViewBase;
+import org.monyhar.chrome.browser.privacy_sandbox.FlocSettingsFragment;
+import org.monyhar.chrome.browser.privacy_sandbox.PrivacySandboxSettingsFragment;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.profiles.ProfileManagerUtils;
+import org.monyhar.chrome.browser.safety_check.SafetyCheckCoordinator;
+import org.monyhar.chrome.browser.safety_check.SafetyCheckSettingsFragment;
+import org.monyhar.chrome.browser.safety_check.SafetyCheckUpdatesDelegateImpl;
+import org.monyhar.chrome.browser.search_engines.settings.SearchEngineSettings;
+import org.monyhar.chrome.browser.signin.SyncConsentActivityLauncherImpl;
+import org.monyhar.chrome.browser.site_settings.ChromeSiteSettingsDelegate;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager.SnackbarManageable;
+import org.monyhar.components.browser_ui.settings.FragmentSettingsLauncher;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.components.browser_ui.site_settings.SiteSettingsPreferenceFragment;
+import org.monyhar.ui.UiUtils;
+import org.monyhar.ui.util.ColorUtils;
 
 /**
  * The Chrome settings activity.

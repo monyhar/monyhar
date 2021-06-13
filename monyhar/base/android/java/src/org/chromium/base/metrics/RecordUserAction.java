@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.metrics;
+package org.monyhar.base.metrics;
 
 import android.os.SystemClock;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
 
 /**
  * Java API for recording UMA actions.
@@ -16,7 +16,7 @@ import org.chromium.base.annotations.NativeMethods;
  * WARNINGS: JNI calls are relatively costly - avoid using in performance-critical code.
  * <p>
  * Action names must be documented in {@code actions.xml}. See {@link
- * https://source.chromium.org/chromium/chromium/src/+/main:tools/metrics/actions/README.md} <p>
+ * https://source.monyhar.org/monyhar/monyhar/src/+/main:tools/metrics/actions/README.md} <p>
  * We use a script ({@code extract_actions.py{}) to scan the source code and extract actions. A
  * string literal (not a variable) must be passed to {@link #record(String)}.
  */

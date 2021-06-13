@@ -33,7 +33,7 @@ class COMPONENT_EXPORT(CDM_FACTORY_DAEMON) CdmFactoryDaemonClient {
   // Returns the global instance which may be null if not initialized.
   static CdmFactoryDaemonClient* Get();
 
-  // CdmFactoryDaemon D-Bus method calls. See org.chromium.CdmFactoryDaemon.xml
+  // CdmFactoryDaemon D-Bus method calls. See org.monyhar.CdmFactoryDaemon.xml
   // in Chromium OS code for the documentation of the methods and
   // request/response messages.
   virtual void BootstrapMojoConnection(

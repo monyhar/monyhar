@@ -196,9 +196,9 @@ export class NativeLayerStub extends TestBrowserProxy {
   /** @override */
   signIn() {
     this.methodCalled('signIn');
-    const accounts = this.accounts_ || ['foo@chromium.org'];
+    const accounts = this.accounts_ || ['foo@monyhar.org'];
     if (!this.accounts_) {
-      accounts.push('bar@chromium.org');
+      accounts.push('bar@monyhar.org');
     }
     if (accounts.length > 0) {
       webUIListenerCallback('user-accounts-updated', accounts);

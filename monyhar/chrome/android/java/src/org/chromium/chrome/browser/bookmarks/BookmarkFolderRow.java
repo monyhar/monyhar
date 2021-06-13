@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.bookmarks;
+package org.monyhar.chrome.browser.bookmarks;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -10,10 +10,10 @@ import android.util.AttributeSet;
 
 import androidx.appcompat.content.res.AppCompatResources;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.bookmarks.BookmarkBridge.BookmarkItem;
-import org.chromium.components.bookmarks.BookmarkId;
-import org.chromium.components.bookmarks.BookmarkType;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.bookmarks.BookmarkBridge.BookmarkItem;
+import org.monyhar.components.bookmarks.BookmarkId;
+import org.monyhar.components.bookmarks.BookmarkType;
 
 /**
  * A row view that shows folder info in the bookmarks UI.

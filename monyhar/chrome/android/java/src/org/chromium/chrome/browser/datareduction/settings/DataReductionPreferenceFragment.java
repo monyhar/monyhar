@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.datareduction.settings;
+package org.monyhar.chrome.browser.datareduction.settings;
 
 import android.content.res.Configuration;
 import android.content.res.Resources;
@@ -15,21 +15,21 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.vectordrawable.graphics.drawable.VectorDrawableCompat;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.IntentUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.datareduction.DataReductionPromoUtils;
-import org.chromium.chrome.browser.datareduction.DataReductionProxyUma;
-import org.chromium.chrome.browser.feedback.HelpAndFeedbackLauncherImpl;
-import org.chromium.chrome.browser.infobar.PreviewsLitePageInfoBar;
-import org.chromium.chrome.browser.net.spdyproxy.DataReductionProxySettings;
-import org.chromium.chrome.browser.net.spdyproxy.DataReductionProxySettings.ContentLengths;
-import org.chromium.chrome.browser.previews.HttpsImageCompressionUtils;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.settings.ChromeManagedPreferenceDelegate;
-import org.chromium.components.browser_ui.settings.ChromeSwitchPreference;
-import org.chromium.components.browser_ui.settings.SettingsUtils;
-import org.chromium.components.browser_ui.util.ConversionUtils;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.datareduction.DataReductionPromoUtils;
+import org.monyhar.chrome.browser.datareduction.DataReductionProxyUma;
+import org.monyhar.chrome.browser.feedback.HelpAndFeedbackLauncherImpl;
+import org.monyhar.chrome.browser.infobar.PreviewsLitePageInfoBar;
+import org.monyhar.chrome.browser.net.spdyproxy.DataReductionProxySettings;
+import org.monyhar.chrome.browser.net.spdyproxy.DataReductionProxySettings.ContentLengths;
+import org.monyhar.chrome.browser.previews.HttpsImageCompressionUtils;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.settings.ChromeManagedPreferenceDelegate;
+import org.monyhar.components.browser_ui.settings.ChromeSwitchPreference;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.components.browser_ui.util.ConversionUtils;
 
 import java.text.NumberFormat;
 import java.util.Locale;

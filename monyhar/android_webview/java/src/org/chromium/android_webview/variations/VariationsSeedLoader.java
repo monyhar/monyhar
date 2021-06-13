@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.variations;
+package org.monyhar.android_webview.variations;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -17,19 +17,19 @@ import android.os.SystemClock;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.android_webview.AwBrowserProcess;
-import org.chromium.android_webview.common.AwSwitches;
-import org.chromium.android_webview.common.services.IVariationsSeedServer;
-import org.chromium.android_webview.common.services.IVariationsSeedServerCallback;
-import org.chromium.android_webview.common.services.ServiceNames;
-import org.chromium.android_webview.common.variations.VariationsServiceMetricsHelper;
-import org.chromium.android_webview.common.variations.VariationsUtils;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.components.variations.LoadSeedResult;
+import org.monyhar.android_webview.AwBrowserProcess;
+import org.monyhar.android_webview.common.AwSwitches;
+import org.monyhar.android_webview.common.services.IVariationsSeedServer;
+import org.monyhar.android_webview.common.services.IVariationsSeedServerCallback;
+import org.monyhar.android_webview.common.services.ServiceNames;
+import org.monyhar.android_webview.common.variations.VariationsServiceMetricsHelper;
+import org.monyhar.android_webview.common.variations.VariationsUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.components.variations.LoadSeedResult;
 
 import java.io.File;
 import java.io.FileNotFoundException;

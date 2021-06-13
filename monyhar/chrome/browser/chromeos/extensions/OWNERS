@@ -1,25 +1,25 @@
 file://extensions/OWNERS
 
 # Additional ChromeOS-specific reviewers
-tbarzic@chromium.org
+tbarzic@monyhar.org
 
-per-file default_app*=dominickn@chromium.org
-per-file default_app*=jshikaram@chromium.org
-per-file preinstalled_web_app_ids.h=dominickn@chromium.org
-per-file preinstalled_web_app_ids.h=jshikaram@chromium.org
+per-file default_app*=dominickn@monyhar.org
+per-file default_app*=jshikaram@monyhar.org
+per-file preinstalled_web_app_ids.h=dominickn@monyhar.org
+per-file preinstalled_web_app_ids.h=jshikaram@monyhar.org
 
 per-file *wallpaper*=file://ash/wallpaper/OWNERS
 
 # input method related reviewers. keithlee@ is primary, and shuchen@ and googleo@ are backup.
-per-file input_method*=googleo@chromium.org
-per-file input_method*=keithlee@chromium.org
-per-file input_method*=shuchen@chromium.org
-per-file ime_menu*=keithlee@chromium.org
-per-file ime_menu*=shuchen@chromium.org
+per-file input_method*=googleo@monyhar.org
+per-file input_method*=keithlee@monyhar.org
+per-file input_method*=shuchen@monyhar.org
+per-file ime_menu*=keithlee@monyhar.org
+per-file ime_menu*=shuchen@monyhar.org
 
 # DeviceLocalAccount reviewers. emaxx@ is primary, others are backup.
-per-file device_local_account*=emaxx@chromium.org
-per-file device_local_account*=isandrk@chromium.org
-per-file device_local_account*=atwilson@chromium.org
-per-file device_local_account*=bartfab@chromium.org
-per-file device_local_account*=poromov@chromium.org
+per-file device_local_account*=emaxx@monyhar.org
+per-file device_local_account*=isandrk@monyhar.org
+per-file device_local_account*=atwilson@monyhar.org
+per-file device_local_account*=bartfab@monyhar.org
+per-file device_local_account*=poromov@monyhar.org

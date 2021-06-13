@@ -2,22 +2,22 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.module_installer.builder;
+package org.monyhar.components.module_installer.builder;
 
 import android.content.Context;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.BundleUtils;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.MainDex;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.components.module_installer.engine.InstallEngine;
-import org.chromium.components.module_installer.engine.InstallListener;
-import org.chromium.components.module_installer.util.Timer;
+import org.monyhar.base.BundleUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.MainDex;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.components.module_installer.engine.InstallEngine;
+import org.monyhar.components.module_installer.engine.InstallListener;
+import org.monyhar.components.module_installer.util.Timer;
 
 /**
  * Represents a feature module. Can be used to install the module, access its interface, etc. See
@@ -179,7 +179,7 @@ public class Module<T> {
         }
 
         return (ModuleDescriptor) instantiateReflectively(
-                name, "org.chromium.components.module_installer.builder.ModuleDescriptor_" + name);
+                name, "org.monyhar.components.module_installer.builder.ModuleDescriptor_" + name);
     }
 
     /**

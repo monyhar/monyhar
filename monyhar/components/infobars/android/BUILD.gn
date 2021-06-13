@@ -52,17 +52,17 @@ static_library("android") {
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/components/infobars/ConfirmInfoBar.java",
-    "java/src/org/chromium/components/infobars/InfoBar.java",
-    "java/src/org/chromium/components/infobars/InfoBarAnimationListener.java",
-    "java/src/org/chromium/components/infobars/InfoBarCompactLayout.java",
-    "java/src/org/chromium/components/infobars/InfoBarContainerLayout.java",
-    "java/src/org/chromium/components/infobars/InfoBarControlLayout.java",
-    "java/src/org/chromium/components/infobars/InfoBarInteractionHandler.java",
-    "java/src/org/chromium/components/infobars/InfoBarLayout.java",
-    "java/src/org/chromium/components/infobars/InfoBarMessageView.java",
-    "java/src/org/chromium/components/infobars/InfoBarUiItem.java",
-    "java/src/org/chromium/components/infobars/InfoBarWrapper.java",
+    "java/src/org/monyhar/components/infobars/ConfirmInfoBar.java",
+    "java/src/org/monyhar/components/infobars/InfoBar.java",
+    "java/src/org/monyhar/components/infobars/InfoBarAnimationListener.java",
+    "java/src/org/monyhar/components/infobars/InfoBarCompactLayout.java",
+    "java/src/org/monyhar/components/infobars/InfoBarContainerLayout.java",
+    "java/src/org/monyhar/components/infobars/InfoBarControlLayout.java",
+    "java/src/org/monyhar/components/infobars/InfoBarInteractionHandler.java",
+    "java/src/org/monyhar/components/infobars/InfoBarLayout.java",
+    "java/src/org/monyhar/components/infobars/InfoBarMessageView.java",
+    "java/src/org/monyhar/components/infobars/InfoBarUiItem.java",
+    "java/src/org/monyhar/components/infobars/InfoBarWrapper.java",
   ]
   deps = [
     ":infobar_android_enums_java",
@@ -76,7 +76,7 @@ android_library("java") {
     "//ui/android:ui_java",
   ]
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
-  resources_package = "org.chromium.components.infobars"
+  resources_package = "org.monyhar.components.infobars"
 }
 
 java_cpp_enum("infobar_android_enums") {
@@ -91,15 +91,15 @@ android_library("infobar_android_enums_java") {
 
 generate_jni("jni_headers") {
   sources = [
-    "java/src/org/chromium/components/infobars/ConfirmInfoBar.java",
-    "java/src/org/chromium/components/infobars/InfoBar.java",
+    "java/src/org/monyhar/components/infobars/ConfirmInfoBar.java",
+    "java/src/org/monyhar/components/infobars/InfoBar.java",
   ]
 }
 
 android_library("javatests") {
   testonly = true
   sources = [
-    "java/src/org/chromium/components/infobars/InfoBarControlLayoutTest.java",
+    "java/src/org/monyhar/components/infobars/InfoBarControlLayoutTest.java",
   ]
   deps = [
     ":java",

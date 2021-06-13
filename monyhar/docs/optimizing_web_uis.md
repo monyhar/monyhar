@@ -101,7 +101,7 @@ breakpoints on the un-minified version.
 
 ### Gzip compression of web resources
 
-As of [r761031](https://chromium.googlesource.com/chromium/src/+/6b83ee683f6c545be29ee807c6d0b6ac1508a549)
+As of [r761031](https://monyhar.googlesource.com/monyhar/src/+/6b83ee683f6c545be29ee807c6d0b6ac1508a549)
 all HTML, JS, CSS and SVG resources are compressed by default with gzip
 Previously this was only happening if the `compress="gzip"` attribute was
 specified as follows in the corresponding .grd file:

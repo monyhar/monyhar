@@ -32,7 +32,7 @@ Now is a good time to make sure the package is available (and that the minimum
 version is available) on all supported distros. The source of truth for
 supported Debian-based distros is given in the `SUPPORTED_DEBIAN_RELEASES` and
 `SUPPORTED_UBUNTU_RELEASES` variables in
-[`//chrome/installer/linux/debian/update_dist_package_versions.py`](https://cs.chromium.org/chromium/src/chrome/installer/linux/debian/update_dist_package_versions.py).
+[`//chrome/installer/linux/debian/update_dist_package_versions.py`](https://cs.monyhar.org/monyhar/src/chrome/installer/linux/debian/update_dist_package_versions.py).
 Check on both [`packages.debian.org`](https://packages.debian.org/) and
 [`packages.ubuntu.com`](https://packages.ubuntu.com/).
 
@@ -48,16 +48,16 @@ highly likely they will be available on all RPM-based ones too. But if you want
 to double-check, [`rpmfind.net`](https://www.rpmfind.net/) is a good resource.
 The source of truth for supported RPM-based distros is given in the
 `SUPPORTED_FEDORA_RELEASES` and `SUPPORTED_OPENSUSE_LEAP_RELEASES` variables in
-[`//chrome/installer/linux/rpm/update_package_provides.py`](https://cs.chromium.org/chromium/src/chrome/installer/linux/rpm/update_package_provides.py).
+[`//chrome/installer/linux/rpm/update_package_provides.py`](https://cs.monyhar.org/monyhar/src/chrome/installer/linux/rpm/update_package_provides.py).
 
 ## Add the dev and library packages to the sysroot
 
 From the earlier section "(Debian) Determine which packages are needed", we know
 that we need `libdbus-1-dev` and `libdbus-1-3`. Add these both to the
 `DEBIAN_PACKAGES` list in
-[`//build/linux/sysroot_scripts/sysroot-creator-sid.sh`](https://cs.chromium.org/chromium/src/build/linux/sysroot_scripts/sysroot-creator-sid.sh).
+[`//build/linux/sysroot_scripts/sysroot-creator-sid.sh`](https://cs.monyhar.org/monyhar/src/build/linux/sysroot_scripts/sysroot-creator-sid.sh).
 Building and uploading the sysroot images is detailed in [Linux sysroot
-images](https://chromium.googlesource.com/chromium/src.git/+/main/docs/sysroot.md).
+images](https://monyhar.googlesource.com/monyhar/src.git/+/main/docs/sysroot.md).
 You may need to add additional dependent libraries for your new library.
 
 ## Whitelist the new dependencies
@@ -65,13 +65,13 @@ You may need to add additional dependent libraries for your new library.
 ### Debian
 
 Add the library package to the `PACKAGE_FILTER` variable in
-[`//chrome/installer/linux/debian/update_dist_package_versions.py`](https://cs.chromium.org/chromium/src/chrome/installer/linux/debian/update_dist_package_versions.py)
+[`//chrome/installer/linux/debian/update_dist_package_versions.py`](https://cs.monyhar.org/monyhar/src/chrome/installer/linux/debian/update_dist_package_versions.py)
 and run the script.
 
 ### RPM
 
 Add the library file to the `LIBRARY_FILTER` variable in
-[`//chrome/installer/linux/rpm/update_package_provides.py`](https://cs.chromium.org/chromium/src/chrome/installer/linux/rpm/update_package_provides.py)
+[`//chrome/installer/linux/rpm/update_package_provides.py`](https://cs.monyhar.org/monyhar/src/chrome/installer/linux/rpm/update_package_provides.py)
 and run the script.
 
 ## Build against the package
@@ -100,7 +100,7 @@ component("my_awesome_component") {
 ```
 
 See
-[`//build/config/linux/pkg_config.gni`](https://cs.chromium.org/chromium/src/build/config/linux/pkg_config.gni)
+[`//build/config/linux/pkg_config.gni`](https://cs.monyhar.org/monyhar/src/build/config/linux/pkg_config.gni)
 for further details.
 
 ### Including the library directly
@@ -153,7 +153,7 @@ package may not be available on all supported distros.
 ## Add packages to build deps script
 
 Add the dev package to the `dev_list` variable in
-[`//build/install-build-deps.sh`](https://cs.chromium.org/chromium/src/build/install-build-deps.sh?q=install-build-deps.sh),
+[`//build/install-build-deps.sh`](https://cs.monyhar.org/monyhar/src/build/install-build-deps.sh?q=install-build-deps.sh),
 and add the library package to the `common_lib_list` variable in the same file.
 
 Note that if you are removing a package from this script, be sure to add the
@@ -180,7 +180,7 @@ file](https://goto.google.com/ynnzy).  For DBus, this will look like:
 
 In order for `MSAN` to work, you will likely need to add your library package to
 the instrumented libraries. To do this, add the library dev package to
-[`third_party/instrumented_libraries/BUILD.gn`](https://cs.chromium.org/chromium/src/third_party/instrumented_libraries/BUILD.gn):
+[`third_party/instrumented_libraries/BUILD.gn`](https://cs.monyhar.org/monyhar/src/third_party/instrumented_libraries/BUILD.gn):
 
 ```
   # This is the minimum you will need. Check other examples in this file if
@@ -194,5 +194,5 @@ Then add `:libdbus-1-3` to
 `//third_party/instrumented_libraries:locally_built`'s `deps`.
 
 See [Linux Instrumented
-Libraries](https://chromium.googlesource.com/chromium/src.git/+/main/docs/instrumented_libraries.md)
+Libraries](https://monyhar.googlesource.com/monyhar/src.git/+/main/docs/instrumented_libraries.md)
 for instructions on building and uploading the instrumented libraries.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.signin;
+package org.monyhar.chrome.browser.signin;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,14 +15,14 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
-import org.chromium.chrome.browser.signin.ui.SyncConsentActivityLauncher.AccessPoint;
-import org.chromium.chrome.browser.sync.SyncService;
-import org.chromium.chrome.browser.sync.settings.ManageSyncSettings;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.signin.metrics.SigninAccessPoint;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.settings.SettingsLauncherImpl;
+import org.monyhar.chrome.browser.signin.ui.SyncConsentActivityLauncher.AccessPoint;
+import org.monyhar.chrome.browser.sync.SyncService;
+import org.monyhar.chrome.browser.sync.settings.ManageSyncSettings;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.signin.metrics.SigninAccessPoint;
 
 /**
  * A View that shows the user the next step they must complete to start syncing their data (eg.

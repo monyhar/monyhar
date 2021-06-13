@@ -4,7 +4,7 @@
 
 """Chromium presubmit script for third_party/polymer/v1_0.
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See http://dev.monyhar.org/developers/how-tos/depottools/presubmit-scripts
 for more details on the presubmit API built into depot_tools.
 """
 
@@ -15,7 +15,7 @@ import json
 def _CheckBowerDependencies(input_api, output_api):
   os_path = input_api.os_path
   cwd = input_api.PresubmitLocalPath()
-  components_dir = os_path.join(cwd, 'components-chromium')
+  components_dir = os_path.join(cwd, 'components-monyhar')
   bower_json_path = os_path.join(cwd, 'bower.json')
 
   for f in input_api.AffectedFiles():
@@ -32,7 +32,7 @@ def _CheckBowerDependencies(input_api, output_api):
   # '../third_party/web-animations-js'.
   installed_components.add('web-animations-js')
   # Add shadycss because it ends up bundled withing
-  # components-chromium/polymer2 (see minify_polymer.py).
+  # components-monyhar/polymer2 (see minify_polymer.py).
   installed_components.add('shadycss')
 
   if bower_dependencies == installed_components:

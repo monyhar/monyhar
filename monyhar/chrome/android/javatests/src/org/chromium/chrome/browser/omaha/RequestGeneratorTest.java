@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omaha;
+package org.monyhar.chrome.browser.omaha;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
@@ -19,18 +19,18 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.AdvancedMockContext;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.signin.services.IdentityServicesProvider;
-import org.chromium.chrome.browser.uid.SettingsSecureBasedIdentificationGenerator;
-import org.chromium.chrome.browser.uid.UniqueIdentificationGenerator;
-import org.chromium.chrome.browser.uid.UniqueIdentificationGeneratorFactory;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.omaha.AttributeFinder;
-import org.chromium.chrome.test.omaha.MockRequestGenerator;
-import org.chromium.chrome.test.omaha.MockRequestGenerator.DeviceType;
-import org.chromium.chrome.test.util.browser.signin.AccountManagerTestRule;
-import org.chromium.components.signin.identitymanager.IdentityManager;
+import org.monyhar.base.test.util.AdvancedMockContext;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.signin.services.IdentityServicesProvider;
+import org.monyhar.chrome.browser.uid.SettingsSecureBasedIdentificationGenerator;
+import org.monyhar.chrome.browser.uid.UniqueIdentificationGenerator;
+import org.monyhar.chrome.browser.uid.UniqueIdentificationGeneratorFactory;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.omaha.AttributeFinder;
+import org.monyhar.chrome.test.omaha.MockRequestGenerator;
+import org.monyhar.chrome.test.omaha.MockRequestGenerator.DeviceType;
+import org.monyhar.chrome.test.util.browser.signin.AccountManagerTestRule;
+import org.monyhar.components.signin.identitymanager.IdentityManager;
 
 /**
  * Unit tests for the RequestGenerator class.

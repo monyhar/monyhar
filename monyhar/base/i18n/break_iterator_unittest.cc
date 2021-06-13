@@ -512,7 +512,7 @@ TEST(BreakIteratorTest, BreakCharacter) {
   }
 }
 
-// Test for https://code.google.com/p/chromium/issues/detail?id=411213
+// Test for https://code.google.com/p/monyhar/issues/detail?id=411213
 // We should be able to get valid substrings with GetString() function
 // after setting new content by calling SetText().
 TEST(BreakIteratorTest, GetStringAfterSetText) {

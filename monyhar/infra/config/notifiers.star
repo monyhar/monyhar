@@ -29,7 +29,7 @@ luci.notifier(
 )
 
 luci.notifier(
-    name = "chromium-androidx-packager",
+    name = "monyhar-androidx-packager",
     on_new_status = ["FAILURE"],
     notify_emails = [
         "clank-build-core+androidxfailures@google.com",
@@ -38,10 +38,10 @@ luci.notifier(
 )
 
 luci.notifier(
-    name = "chromium-3pp-packager",
+    name = "monyhar-3pp-packager",
     on_new_status = ["FAILURE"],
     notify_emails = [
-        "chromium-3pp-packager+failures@google.com",
+        "monyhar-3pp-packager+failures@google.com",
         "clank-build-core+3ppfailures@google.com",
     ],
 )
@@ -50,7 +50,7 @@ luci.notifier(
     name = "cr-fuchsia",
     on_status_change = True,
     notify_emails = [
-        "cr-fuchsia+bot@chromium.org",
+        "cr-fuchsia+bot@monyhar.org",
         "chrome-fuchsia-gardener@grotations.appspotmail.com",
     ],
 )
@@ -66,7 +66,7 @@ luci.notifier(
 luci.notifier(
     name = "metadata-mapping",
     on_new_status = ["FAILURE"],
-    notify_emails = ["chromium-component-mapping@google.com"],
+    notify_emails = ["monyhar-component-mapping@google.com"],
 )
 
 luci.notifier(
@@ -108,14 +108,14 @@ def tree_closer(*, name, tree_status_host, **kwargs):
         _empty_notifier(name = name)
 
 tree_closer(
-    name = "chromium-tree-closer",
-    tree_status_host = "chromium-status.appspot.com",
+    name = "monyhar-tree-closer",
+    tree_status_host = "monyhar-status.appspot.com",
     failed_step_regexp = TREE_CLOSING_STEPS_REGEXP,
 )
 
 tree_closer(
     name = "close-on-any-step-failure",
-    tree_status_host = "chromium-status.appspot.com",
+    tree_status_host = "monyhar-status.appspot.com",
 )
 
 def tree_closure_notifier(*, name, **kwargs):
@@ -130,7 +130,7 @@ def tree_closure_notifier(*, name, **kwargs):
         _empty_notifier(name = name)
 
 tree_closure_notifier(
-    name = "chromium-tree-closer-email",
+    name = "monyhar-tree-closer-email",
     notify_rotation_urls = [
         "https://chrome-ops-rotation-proxy.appspot.com/current/oncallator:chrome-build-sheriff",
     ],
@@ -150,47 +150,47 @@ tree_closure_notifier(
 
 tree_closure_notifier(
     name = "linux-memory",
-    notify_emails = ["thomasanderson@chromium.org"],
+    notify_emails = ["thomasanderson@monyhar.org"],
 )
 
 tree_closure_notifier(
     name = "linux-archive-rel",
-    notify_emails = ["thomasanderson@chromium.org"],
+    notify_emails = ["thomasanderson@monyhar.org"],
 )
 
 tree_closure_notifier(
     name = "Deterministic Android",
-    notify_emails = ["agrieve@chromium.org"],
+    notify_emails = ["agrieve@monyhar.org"],
 )
 
 tree_closure_notifier(
     name = "Deterministic Linux",
     notify_emails = [
-        "tikuta@chromium.org",
-        "ukai@chromium.org",
-        "yyanagisawa@chromium.org",
+        "tikuta@monyhar.org",
+        "ukai@monyhar.org",
+        "yyanagisawa@monyhar.org",
     ],
 )
 
 tree_closure_notifier(
     name = "linux-ozone-rel",
     notify_emails = [
-        "fwang@chromium.org",
-        "maksim.sisov@chromium.org",
-        "rjkroege@chromium.org",
-        "thomasanderson@chromium.org",
-        "timbrown@chromium.org",
-        "tonikitoo@chromium.org",
+        "fwang@monyhar.org",
+        "maksim.sisov@monyhar.org",
+        "rjkroege@monyhar.org",
+        "thomasanderson@monyhar.org",
+        "timbrown@monyhar.org",
+        "tonikitoo@monyhar.org",
     ],
 )
 
 luci.notifier(
     name = "Site Isolation Android",
     notify_emails = [
-        "nasko+fyi-bots@chromium.org",
-        "creis+fyi-bots@chromium.org",
-        "lukasza+fyi-bots@chromium.org",
-        "alexmos+fyi-bots@chromium.org",
+        "nasko+fyi-bots@monyhar.org",
+        "creis+fyi-bots@monyhar.org",
+        "lukasza+fyi-bots@monyhar.org",
+        "alexmos+fyi-bots@monyhar.org",
     ],
     on_new_status = ["FAILURE"],
 )
@@ -198,7 +198,7 @@ luci.notifier(
 luci.notifier(
     name = "CFI Linux",
     notify_emails = [
-        "pcc@chromium.org",
+        "pcc@monyhar.org",
     ],
     on_new_status = ["FAILURE"],
 )
@@ -206,7 +206,7 @@ luci.notifier(
 luci.notifier(
     name = "Win 10 Fast Ring",
     notify_emails = [
-        "wfh@chromium.org",
+        "wfh@monyhar.org",
     ],
     on_new_status = ["FAILURE"],
 )
@@ -214,7 +214,7 @@ luci.notifier(
 luci.notifier(
     name = "linux-blink-fyi-bots",
     notify_emails = [
-        "mlippautz+fyi-bots@chromium.org",
+        "mlippautz+fyi-bots@monyhar.org",
     ],
     on_new_status = ["FAILURE"],
 )
@@ -222,15 +222,15 @@ luci.notifier(
 luci.notifier(
     name = "annotator-rel",
     notify_emails = [
-        "pastarmovj@chromium.org",
-        "nicolaso@chromium.org",
+        "pastarmovj@monyhar.org",
+        "nicolaso@monyhar.org",
     ],
     on_new_status = ["FAILURE"],
 )
 
 tree_closure_notifier(
-    name = "chromium.linux",
+    name = "monyhar.linux",
     notify_emails = [
-        "thomasanderson@chromium.org",
+        "thomasanderson@monyhar.org",
     ],
 )

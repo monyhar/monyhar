@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.scrim;
+package org.monyhar.components.browser_ui.widget.scrim;
 
 import android.content.Context;
 import android.view.MotionEvent;
@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 import androidx.annotation.ColorInt;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.ui.UiUtils;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.ui.UiUtils;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
 
 /**
  * The coordinator for the scrim widget used to bring focus to certain elements on screen.

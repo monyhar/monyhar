@@ -20,7 +20,7 @@ class COMPONENT_EXPORT(WM) WmMoveResizeHandler {
   // A system window manager starts interactive drag or resize of a window based
   // on the |hittest| value. The |hittest| value identifies in which direction
   // the window should be resized or whether it should be moved. See
-  // ui/base/hit_test.h for a concrete example with chromium symbolic names
+  // ui/base/hit_test.h for a concrete example with monyhar symbolic names
   // defined. The |pointer_location_in_px| indicates the position of the button
   // press with respect to the platform window in screen pixel coordinates,
   // which is needed when sending a move/resize request in such backends as X11.
@@ -34,7 +34,7 @@ class COMPONENT_EXPORT(WM) WmMoveResizeHandler {
   // non-client components (check ui/base/hit_test.h again) except the ones
   // targeted for components like HTMAXBUTTON. In that case, the mouse events
   // are used to identify clicks on maximize/minimize/restore buttons located in
-  // the top non-client area of the chromium window. See
+  // the top non-client area of the monyhar window. See
   // WindowEventFilter::OnMouseEvent for a concrete example of how mouse events
   // are identified as client or non-client.
   //

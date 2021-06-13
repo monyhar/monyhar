@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.dom_distiller;
+package org.monyhar.chrome.browser.dom_distiller;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ObserverList;
-import org.chromium.base.UserData;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.dom_distiller.content.DistillablePageUtils;
-import org.chromium.components.dom_distiller.content.DistillablePageUtils.PageDistillableDelegate;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.UserData;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.dom_distiller.content.DistillablePageUtils;
+import org.monyhar.components.dom_distiller.content.DistillablePageUtils.PageDistillableDelegate;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * A mechanism for clients interested in the distillability of a page to receive updates.

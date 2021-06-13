@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.infobars;
+package org.monyhar.components.infobars;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -23,10 +23,10 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.widget.SwitchCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.StrictModeContext;
-import org.chromium.components.browser_ui.widget.DualControlLayout;
-import org.chromium.components.browser_ui.widget.RadioButtonLayout;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.components.browser_ui.widget.DualControlLayout;
+import org.monyhar.components.browser_ui.widget.RadioButtonLayout;
 
 import java.util.List;
 

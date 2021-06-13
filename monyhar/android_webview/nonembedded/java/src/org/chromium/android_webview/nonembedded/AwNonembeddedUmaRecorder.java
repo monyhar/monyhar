@@ -1,7 +1,7 @@
 // Copyright 2020 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.android_webview.nonembedded;
+package org.monyhar.android_webview.nonembedded;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -14,14 +14,14 @@ import android.os.RemoteException;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.android_webview.common.services.IMetricsBridgeService;
-import org.chromium.android_webview.common.services.ServiceNames;
-import org.chromium.android_webview.proto.MetricsBridgeRecords.HistogramRecord;
-import org.chromium.android_webview.proto.MetricsBridgeRecords.HistogramRecord.Metadata;
-import org.chromium.android_webview.proto.MetricsBridgeRecords.HistogramRecord.RecordType;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.metrics.UmaRecorder;
+import org.monyhar.android_webview.common.services.IMetricsBridgeService;
+import org.monyhar.android_webview.common.services.ServiceNames;
+import org.monyhar.android_webview.proto.MetricsBridgeRecords.HistogramRecord;
+import org.monyhar.android_webview.proto.MetricsBridgeRecords.HistogramRecord.Metadata;
+import org.monyhar.android_webview.proto.MetricsBridgeRecords.HistogramRecord.RecordType;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.metrics.UmaRecorder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +30,7 @@ import javax.annotation.concurrent.GuardedBy;
 
 /**
  * {@link UmaRecorder} for nonembedded WebView processes.
- * Can be used as a delegate in {@link org.chromium.base.metrics.UmaRecorderHolder}. This may only
+ * Can be used as a delegate in {@link org.monyhar.base.metrics.UmaRecorderHolder}. This may only
  * be called from non-embedded WebView processes, such as developer UI or Services.
  */
 public class AwNonembeddedUmaRecorder implements UmaRecorder {
@@ -66,10 +66,10 @@ public class AwNonembeddedUmaRecorder implements UmaRecorder {
     /**
      * Records a single sample of a histogram with exponentially scaled buckets. See
      * {@link
-     * https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md#count-histograms}
+     * https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md#count-histograms}
      * <p>
      * This is the default histogram type used by "counts", "times" and "memory" histograms in
-     * {@link org.chromium.base.metrics.RecordHistogram}
+     * {@link org.monyhar.base.metrics.RecordHistogram}
      *
      * @param min the smallest value recorded in the first bucket; should be greater than zero.
      * @param max the smallest value recorded in the overflow bucket.
@@ -94,7 +94,7 @@ public class AwNonembeddedUmaRecorder implements UmaRecorder {
     /**
      * Records a single sample of a histogram with evenly spaced buckets. See
      * {@link
-     * https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md#percentage-or-ratio-histograms}
+     * https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md#percentage-or-ratio-histograms}
      * <p>
      * This histogram type is best suited for recording enums, percentages and ratios.
      *
@@ -121,7 +121,7 @@ public class AwNonembeddedUmaRecorder implements UmaRecorder {
     /**
      * Records a single sample of a sparse histogram. See
      * {@link
-     * https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md#when-to-use-sparse-histograms}
+     * https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md#when-to-use-sparse-histograms}
      */
     @Override
     public void recordSparseHistogram(String name, int sample) {
@@ -135,7 +135,7 @@ public class AwNonembeddedUmaRecorder implements UmaRecorder {
 
     /**
      * Records a user action. Action names must be documented in {@code actions.xml}. See {@link
-     * https://source.chromium.org/chromium/chromium/src/+/main:tools/metrics/actions/README.md}
+     * https://source.monyhar.org/monyhar/monyhar/src/+/main:tools/metrics/actions/README.md}
      *
      * @param name Name of the user action.
      * @param elapsedRealtimeMillis Value of {@link android.os.SystemClock.elapsedRealtime()} when

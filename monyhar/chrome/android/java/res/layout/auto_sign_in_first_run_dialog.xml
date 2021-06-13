@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="start|bottom"
     style="@style/AlertDialogContent">
-    <org.chromium.ui.widget.TextViewWithClickableSpans
+    <org.monyhar.ui.widget.TextViewWithClickableSpans
         android:id="@+id/summary"
         style="@style/AlertDialogSummaryViewItem" />
 </LinearLayout>

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.offlinepages.indicator;
+package org.monyhar.chrome.browser.offlinepages.indicator;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -10,9 +10,9 @@ import static org.junit.Assert.assertTrue;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.verify;
 
-import static org.chromium.chrome.browser.offlinepages.indicator.OfflineDetector.STATUS_INDICATOR_WAIT_ON_OFFLINE_DURATION_MS;
-import static org.chromium.chrome.browser.offlinepages.indicator.OfflineDetector.STATUS_INDICATOR_WAIT_ON_SWITCH_ONLINE_TO_OFFLINE_DEFAULT_DURATION_MS;
-import static org.chromium.chrome.browser.offlinepages.indicator.OfflineDetector.setMockElapsedTimeSupplier;
+import static org.monyhar.chrome.browser.offlinepages.indicator.OfflineDetector.STATUS_INDICATOR_WAIT_ON_OFFLINE_DURATION_MS;
+import static org.monyhar.chrome.browser.offlinepages.indicator.OfflineDetector.STATUS_INDICATOR_WAIT_ON_SWITCH_ONLINE_TO_OFFLINE_DEFAULT_DURATION_MS;
+import static org.monyhar.chrome.browser.offlinepages.indicator.OfflineDetector.setMockElapsedTimeSupplier;
 
 import android.os.Handler;
 
@@ -24,10 +24,10 @@ import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.ApplicationState;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.net.connectivitydetector.ConnectivityDetector;
-import org.chromium.chrome.browser.net.connectivitydetector.ConnectivityDetector.ConnectionState;
+import org.monyhar.base.ApplicationState;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.net.connectivitydetector.ConnectivityDetector;
+import org.monyhar.chrome.browser.net.connectivitydetector.ConnectivityDetector.ConnectionState;
 
 /**
  * Unit tests for {@link OfflineDetector}.

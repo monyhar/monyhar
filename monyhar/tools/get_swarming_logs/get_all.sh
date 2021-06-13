@@ -22,7 +22,7 @@ shift
 bindir=$(dirname $0)
 
 function get_ids() {
-  perl -lne 'print $1 if m#shard \#0\]\(https://chromium-swarm.appspot.com/user/task/([0-9a-f]*)#;' "$1" | sort | uniq
+  perl -lne 'print $1 if m#shard \#0\]\(https://monyhar-swarm.appspot.com/user/task/([0-9a-f]*)#;' "$1" | sort | uniq
 }
 
 log=$("$bindir"/get_one.sh "$base_dir" "$id")

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.shell;
+package org.monyhar.chromecast.shell;
 
 import android.content.Context;
 import android.content.Intent;
@@ -18,8 +18,8 @@ import android.widget.FrameLayout;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Log;
-import org.chromium.chromecast.base.CastSwitches;
+import org.monyhar.base.Log;
+import org.monyhar.chromecast.base.CastSwitches;
 
 /**
  * View for displaying a WebContents in CastShell.

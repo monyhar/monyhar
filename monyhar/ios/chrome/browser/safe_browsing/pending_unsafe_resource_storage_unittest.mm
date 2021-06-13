@@ -18,7 +18,7 @@ using security_interstitials::UnsafeResource;
 class PendingUnsafeResourceStorageTest : public PlatformTest {
  protected:
   PendingUnsafeResourceStorageTest()
-      : url_("http://www.chromium.test"),
+      : url_("http://www.monyhar.test"),
         threat_type_(safe_browsing::SB_THREAT_TYPE_URL_PHISHING) {
     // Create a resource and add it as a pending decision.
     UnsafeResource resource;

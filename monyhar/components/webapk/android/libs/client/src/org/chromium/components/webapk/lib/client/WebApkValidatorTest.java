@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.webapk.lib.client;
+package org.monyhar.components.webapk.lib.client;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
-import static org.chromium.components.webapk.lib.common.WebApkMetaDataKeys.SCOPE;
-import static org.chromium.components.webapk.lib.common.WebApkMetaDataKeys.START_URL;
-import static org.chromium.components.webapk.lib.common.WebApkMetaDataKeys.WEB_MANIFEST_URL;
+import static org.monyhar.components.webapk.lib.common.WebApkMetaDataKeys.SCOPE;
+import static org.monyhar.components.webapk.lib.common.WebApkMetaDataKeys.START_URL;
+import static org.monyhar.components.webapk.lib.common.WebApkMetaDataKeys.WEB_MANIFEST_URL;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -30,17 +30,17 @@ import org.robolectric.Shadows;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowPackageManager;
 
-import org.chromium.testing.local.LocalRobolectricTestRunner;
-import org.chromium.testing.local.TestDir;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.testing.local.TestDir;
 
 import java.net.URISyntaxException;
 
-/** Unit tests for {@link org.chromium.webapk.lib.client.WebApkValidator}. */
+/** Unit tests for {@link org.monyhar.webapk.lib.client.WebApkValidator}. */
 @RunWith(LocalRobolectricTestRunner.class)
 @Config(manifest = Config.NONE)
 public class WebApkValidatorTest {
-    private static final String WEBAPK_PACKAGE_NAME = "org.chromium.webapk.foo";
-    private static final String INVALID_WEBAPK_PACKAGE_NAME = "invalid.org.chromium.webapk.foo";
+    private static final String WEBAPK_PACKAGE_NAME = "org.monyhar.webapk.foo";
+    private static final String INVALID_WEBAPK_PACKAGE_NAME = "invalid.org.monyhar.webapk.foo";
     private static final String URL_OF_WEBAPK = "https://www.foo.com";
     private static final String URL_WITHOUT_WEBAPK = "https://www.other.com";
     private static final String TEST_DATA_DIR = "webapks/";

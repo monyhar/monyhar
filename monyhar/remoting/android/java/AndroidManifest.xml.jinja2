@@ -8,14 +8,14 @@
     <uses-feature android:glEsVersion="0x00020000" android:required="true" />
 
     <application android:label="@string/product_name_android"
-            android:name="org.chromium.chromoting.RemotingApplication"
+            android:name="org.monyhar.chromoting.RemotingApplication"
             android:icon="@mipmap/ic_launcher"
             android:theme="@style/BaseTheme"
             android:allowBackup="false"
             android:resizeableActivity="true"
             android:supportsPictureInPicture="false">
         <activity
-            android:name="org.chromium.chromoting.Chromoting"
+            android:name="org.monyhar.chromoting.Chromoting"
             android:configChanges="orientation|screenSize"
             android:exported="true"
             android:theme="@style/BaseTheme.NavigationDrawer"
@@ -26,7 +26,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="org.chromium.chromoting.ThirdPartyTokenFetcher$OAuthRedirectActivity"
+            android:name="org.monyhar.chromoting.ThirdPartyTokenFetcher$OAuthRedirectActivity"
             android:enabled="false"
             android:exported="true"
             android:noHistory="true">
@@ -41,22 +41,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="org.chromium.chromoting.Desktop"
+            android:name="org.monyhar.chromoting.Desktop"
             android:exported="false"
             android:windowSoftInputMode="adjustResize"/>
         <activity
-            android:name="org.chromium.chromoting.help.HelpActivity"
+            android:name="org.monyhar.chromoting.help.HelpActivity"
             android:configChanges="orientation|screenSize"
             android:exported="false"
             android:uiOptions="splitActionBarWhenNarrow"/>
         <activity
-            android:name="org.chromium.chromoting.TermsOfServiceActivity"
+            android:name="org.monyhar.chromoting.TermsOfServiceActivity"
             android:exported="false"/>
         <activity
-            android:name="org.chromium.chromoting.PrivacyPolicyActivity"
+            android:name="org.monyhar.chromoting.PrivacyPolicyActivity"
             android:exported="false"/>
         <activity
-            android:name="org.chromium.chromoting.help.CreditsActivity"
+            android:name="org.monyhar.chromoting.help.CreditsActivity"
             android:exported="true"/>
     </application>
 </manifest>

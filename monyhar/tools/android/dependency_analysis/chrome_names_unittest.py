@@ -15,18 +15,18 @@ class TestChromeNames_ShortenClass(unittest.TestCase):
         self.assertEqual(
             '.c.b.flags.ChromeFeatureList',
             chrome_names.shorten_class(
-                'org.chromium.chrome.browser.flags.ChromeFeatureList'))
+                'org.monyhar.chrome.browser.flags.ChromeFeatureList'))
 
     def test_shorten_base_class(self):
         self.assertEqual(
             '.base.Callback',
-            chrome_names.shorten_class('org.chromium.base.Callback'))
+            chrome_names.shorten_class('org.monyhar.base.Callback'))
 
     def test_shorten_components_class(self):
         self.assertEqual(
             '.components.prefs.PrefService',
             chrome_names.shorten_class(
-                'org.chromium.components.prefs.PrefService'))
+                'org.monyhar.components.prefs.PrefService'))
 
     def test_does_not_shorten_third_party_class(self):
         self.assertEqual('org.other_project.Class',

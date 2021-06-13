@@ -739,7 +739,7 @@ def RemoveComments(contents):
   # TODO(bulach): This is a bit hacky. It would be cleaner to use a real Java
   # parser. Maybe we could ditch JNIFromJavaSource and just always use
   # JNIFromJavaP; or maybe we could rewrite this script in Java and use APT.
-  # http://code.google.com/p/chromium/issues/detail?id=138941
+  # http://code.google.com/p/monyhar/issues/detail?id=138941
   def replacer(match):
     # Replace matches that are comments with nothing; return literals/strings
     # unchanged.
@@ -853,7 +853,7 @@ class JNIFromJavaP(object):
 # generate code to link between the equivalent native method as if it were
 # declared statically.
 # Under the hood the annotation processor generates the actual native method
-# declaration in another class (org.chromium.base.natives.GEN_JNI)
+# declaration in another class (org.monyhar.base.natives.GEN_JNI)
 # but generates wrapper code so it can be called through the declaring class.
 class ProxyHelpers(object):
   MAX_CHARS_FOR_HASHED_NATIVE_METHODS = 8
@@ -864,7 +864,7 @@ class ProxyHelpers(object):
 
   @staticmethod
   def GetPackage(use_hash):
-    return 'J' if use_hash else 'org/chromium/base/natives'
+    return 'J' if use_hash else 'org/monyhar/base/natives'
 
   @staticmethod
   def GetQualifiedClass(use_hash):
@@ -893,7 +893,7 @@ class ProxyHelpers(object):
                                                  old_name)
 
     # The annotation processor currently uses a method name
-    # org_chromium_example_foo_method_1name escaping _ to _1
+    # org_monyhar_example_foo_method_1name escaping _ to _1
     # and then using the appending the method name to the qualified
     # class. Since we need to escape underscores for jni to work
     # we need to double escape _1 to _11

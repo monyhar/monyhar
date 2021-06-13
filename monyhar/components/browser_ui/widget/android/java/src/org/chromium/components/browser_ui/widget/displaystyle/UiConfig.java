@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.displaystyle;
+package org.monyhar.components.browser_ui.widget.displaystyle;
 
 import android.content.Context;
 import android.view.View;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.Log;
+import org.monyhar.ui.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;

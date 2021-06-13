@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.carousel;
+package org.monyhar.chrome.browser.omnibox.suggestions.carousel;
 
 import android.content.Context;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.omnibox.suggestions.SuggestionProcessor;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.omnibox.suggestions.SuggestionProcessor;
 
 /** The base processor implementation for the Carousel suggestions. */
 public abstract class BaseCarouselSuggestionProcessor implements SuggestionProcessor {

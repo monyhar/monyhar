@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox;
+package org.monyhar.chrome.browser.omnibox;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -34,16 +34,16 @@ import androidx.core.text.BidiFormatter;
 import androidx.core.util.ObjectsCompat;
 import androidx.core.view.inputmethod.EditorInfoCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.Callback;
-import org.chromium.base.Log;
-import org.chromium.base.SysUtils;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.compat.ApiHelperForO;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.components.browser_ui.share.ShareHelper;
-import org.chromium.ui.KeyboardVisibilityDelegate;
-import org.chromium.ui.base.WindowDelegate;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.base.Log;
+import org.monyhar.base.SysUtils;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.compat.ApiHelperForO;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.components.browser_ui.share.ShareHelper;
+import org.monyhar.ui.KeyboardVisibilityDelegate;
+import org.monyhar.ui.base.WindowDelegate;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

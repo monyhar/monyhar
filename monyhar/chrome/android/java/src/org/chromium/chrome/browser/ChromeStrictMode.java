@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.os.Build;
 import android.os.Looper;
@@ -11,18 +11,18 @@ import android.text.TextUtils;
 
 import androidx.annotation.UiThread;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.JavaExceptionReporter;
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.build.BuildConfig;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.version.ChromeVersionInfo;
-import org.chromium.components.strictmode.KnownViolations;
-import org.chromium.components.strictmode.StrictModePolicyViolation;
-import org.chromium.components.strictmode.ThreadStrictModeInterceptor;
-import org.chromium.components.strictmode.Violation;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.JavaExceptionReporter;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.build.BuildConfig;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.version.ChromeVersionInfo;
+import org.monyhar.components.strictmode.KnownViolations;
+import org.monyhar.components.strictmode.StrictModePolicyViolation;
+import org.monyhar.components.strictmode.ThreadStrictModeInterceptor;
+import org.monyhar.components.strictmode.Violation;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -205,7 +205,7 @@ public class ChromeStrictMode {
 
     /**
      * Add exemptions which should only be used for Chrome. Exemptions which also apply to WebLayer
-     * and WebView should be in org.chromium.components.strictmode.KnownViolations.
+     * and WebView should be in org.monyhar.components.strictmode.KnownViolations.
      */
     private static void addChromeOnlyExemptions(
             ThreadStrictModeInterceptor.Builder threadInterceptor) {
@@ -240,12 +240,12 @@ public class ChromeStrictMode {
 
         // WebView code must be strict mode clean on all devices. Since Chrome uploads strict mode
         // violations but WebView does not, detect strict mode violations which originate from
-        // org.chromium.content in Chrome for all devices in order to provide extra strict mode
+        // org.monyhar.content in Chrome for all devices in order to provide extra strict mode
         // coverage for webview. Ignore for now strict mode violations in other packages for
         // non-Nexus, non-Pixel devices to improve the signal to noise ratio.
         String lowercaseModel = Build.MODEL.toLowerCase(Locale.US);
         if (!lowercaseModel.contains("nexus") && !lowercaseModel.contains("pixel")) {
-            threadInterceptor.onlyDetectViolationsForPackage("org.chromium.content");
+            threadInterceptor.onlyDetectViolationsForPackage("org.monyhar.content");
         }
     }
 }

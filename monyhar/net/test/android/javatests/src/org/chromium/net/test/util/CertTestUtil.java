@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.test.util;
+package org.monyhar.net.test.util;
 
 import android.util.Base64;
 
-import org.chromium.base.test.util.UrlUtils;
+import org.monyhar.base.test.util.UrlUtils;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

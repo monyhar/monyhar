@@ -159,7 +159,7 @@
 
 #else
 
-// This is supporting non-chromium user of logging.h to build with MSVC, like
+// This is supporting non-monyhar user of logging.h to build with MSVC, like
 // pdfium. On MSVC there is no __builtin_unreachable().
 #define IMMEDIATE_CRASH() WRAPPED_TRAP_SEQUENCE_()
 

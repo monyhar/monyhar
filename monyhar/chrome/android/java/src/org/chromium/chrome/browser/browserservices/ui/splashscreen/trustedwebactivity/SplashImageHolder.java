@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.ui.splashscreen.trustedwebactivity;
+package org.monyhar.chrome.browser.browserservices.ui.splashscreen.trustedwebactivity;
 
 import android.graphics.Bitmap;
 import android.util.ArrayMap;

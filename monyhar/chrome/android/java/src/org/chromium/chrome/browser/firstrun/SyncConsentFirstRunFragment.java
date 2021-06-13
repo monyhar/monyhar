@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.firstrun;
+package org.monyhar.chrome.browser.firstrun;
 
 import android.accounts.Account;
 import android.content.Context;
 import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ntp.cards.SignInPromo;
-import org.chromium.chrome.browser.signin.SyncConsentFragmentBase;
-import org.chromium.components.signin.AccountManagerFacadeProvider;
-import org.chromium.components.signin.ChildAccountStatus;
-import org.chromium.components.signin.metrics.SigninAccessPoint;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ntp.cards.SignInPromo;
+import org.monyhar.chrome.browser.signin.SyncConsentFragmentBase;
+import org.monyhar.components.signin.AccountManagerFacadeProvider;
+import org.monyhar.components.signin.ChildAccountStatus;
+import org.monyhar.components.signin.metrics.SigninAccessPoint;
 
 import java.util.List;
 

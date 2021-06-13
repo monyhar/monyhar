@@ -1,7 +1,7 @@
 # Chromium Python Style Guide
 
 _For other languages, please see the [Chromium style
-guides](https://chromium.googlesource.com/chromium/src/+/main/styleguide/styleguide.md)._
+guides](https://monyhar.googlesource.com/monyhar/src/+/main/styleguide/styleguide.md)._
 
 As of 2021-05-12, Chromium is transitioning from Python 2 to Python 3 (follow
 [crbug.com/941669](https://crbug.com/941669) for updates). See
@@ -42,7 +42,7 @@ It is also encouraged to follow advice from
 which is a superset of PEP-8.
 
 See also:
-* [Chromium OS Python Style Guide](https://sites.google.com/a/chromium.org/dev/chromium-os/python-style-guidelines)
+* [Chromium OS Python Style Guide](https://sites.google.com/a/monyhar.org/dev/monyhar-os/python-style-guidelines)
 * [Blink Python Style Guide](blink-python.md)
 
 [TOC]
@@ -61,9 +61,9 @@ making changes to files that follow them.
 ## Making Style Guide Changes
 
 You can propose changes to this style guide by sending an email to
-`python@chromium.org`. Ideally, the list will arrive at some consensus and you
+`python@monyhar.org`. Ideally, the list will arrive at some consensus and you
 can request review for a change to this file. If there's no consensus,
-[`//styleguide/python/OWNERS`](https://chromium.googlesource.com/chromium/src/+/main/styleguide/python/OWNERS)
+[`//styleguide/python/OWNERS`](https://monyhar.googlesource.com/monyhar/src/+/main/styleguide/python/OWNERS)
 get to decide.
 
 ## Tools
@@ -103,9 +103,9 @@ YAPF has gotchas. You should review its changes before submitting. Notably:
 
 #### Bugs
 * Are tracked here: https://github.com/google/yapf/issues.
-* For Chromium-specific bugs, please discuss on `python@chromium.org`.
+* For Chromium-specific bugs, please discuss on `python@monyhar.org`.
 
 #### Editor Integration
 See: https://github.com/google/yapf/tree/main/plugins
 
-[vpython]: https://chromium.googlesource.com/infra/infra/+/refs/heads/main/doc/users/vpython.md
+[vpython]: https://monyhar.googlesource.com/infra/infra/+/refs/heads/main/doc/users/vpython.md

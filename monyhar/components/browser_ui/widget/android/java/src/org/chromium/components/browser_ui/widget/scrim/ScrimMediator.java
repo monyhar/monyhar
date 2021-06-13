@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.scrim;
+package org.monyhar.components.browser_ui.widget.scrim;
 
 import android.animation.Animator;
 import android.animation.ValueAnimator;
@@ -11,10 +11,10 @@ import android.view.MotionEvent;
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.MathUtils;
-import org.chromium.components.browser_ui.widget.animation.CancelAwareAnimatorListener;
-import org.chromium.ui.interpolators.BakedBezierInterpolator;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.MathUtils;
+import org.monyhar.components.browser_ui.widget.animation.CancelAwareAnimatorListener;
+import org.monyhar.ui.interpolators.BakedBezierInterpolator;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /** This class holds the animation and related business logic for the scrim. */
 class ScrimMediator implements ScrimCoordinator.TouchEventDelegate {

@@ -155,25 +155,25 @@ class ExpiredHistogramsTest(unittest.TestCase):
 <histogram-configuration>
 <histograms><!-- Must be alphabetical. -->
   <histogram name="FirstHistogram" expires_after="2010-11-01" units="units">
-    <owner>me@chromium.org</owner>
+    <owner>me@monyhar.org</owner>
     <summary>
       This is a summary.
     </summary>
   </histogram>
   <histogram name="FourthHistogram" expires_after="M61" units="units">
-    <owner>me@chromium.org</owner>
+    <owner>me@monyhar.org</owner>
     <summary>
       This is a summary.
     </summary>
   </histogram>
   <histogram name="SecondHistogram" expires_after="2010-09-01" units="units">
-    <owner>me@chromium.org</owner>
+    <owner>me@monyhar.org</owner>
   <summary>
     This is a summary.
   </summary>
     </histogram>
   <histogram name="ThirdHistogram" expires_after="M60" units="units">
-    <owner>me@chromium.org</owner>
+    <owner>me@monyhar.org</owner>
     <summary>
       This is a summary.
     </summary>

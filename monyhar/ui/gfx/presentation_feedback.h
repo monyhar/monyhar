@@ -64,7 +64,7 @@ struct PresentationFeedback {
   // the underlying platform. If not available, the timestamp is set to 0.
 
   // A buffer sent to the system compositor or display controller for
-  // presentation is returned to chromium's compositor with an out fence for
+  // presentation is returned to monyhar's compositor with an out fence for
   // synchronization. This fence indicates when reads from this buffer for
   // presentation (on the GPU or display controller) have been finished and it
   // is safe to write new data to this buffer. Since this fence may not have

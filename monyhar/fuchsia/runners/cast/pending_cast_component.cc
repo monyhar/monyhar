@@ -50,7 +50,7 @@ PendingCastComponent::PendingCastComponent(
 PendingCastComponent::~PendingCastComponent() = default;
 
 void PendingCastComponent::OnApplicationConfigReceived(
-    chromium::cast::ApplicationConfig application_config) {
+    monyhar::cast::ApplicationConfig application_config) {
   if (application_config.IsEmpty()) {
     DLOG(WARNING) << "No application config was found.";
     delegate_->CancelPendingComponent(this);
@@ -73,7 +73,7 @@ void PendingCastComponent::OnApplicationConfigReceived(
 
   // Request custom API bindings from the component's Agent.
   params_.api_bindings_client = std::make_unique<ApiBindingsClient>(
-      params_.agent_manager->ConnectToAgentService<chromium::cast::ApiBindings>(
+      params_.agent_manager->ConnectToAgentService<monyhar::cast::ApiBindings>(
           params_.application_config.agent_url()),
       base::BindOnce(&PendingCastComponent::OnApiBindingsInitialized,
                      base::Unretained(this)));
@@ -104,7 +104,7 @@ void PendingCastComponent::OnApplicationConfigReceived(
   // media-session identifier assigned to this instance.
   application_context_ =
       params_.agent_manager
-          ->ConnectToAgentService<chromium::cast::ApplicationContext>(
+          ->ConnectToAgentService<monyhar::cast::ApplicationContext>(
               params_.application_config.agent_url());
   application_context_.set_error_handler([this](zx_status_t status) {
     ZX_LOG(ERROR, status) << "ApplicationContext disconnected.";

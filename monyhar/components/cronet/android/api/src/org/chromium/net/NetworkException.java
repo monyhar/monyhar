@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
 /**
  * Exception passed to {@link UrlRequest.Callback#onFailed UrlRequest.Callback.onFailed()} when
@@ -23,7 +23,7 @@ public abstract class NetworkException extends CronetException {
     /**
      * Error code indicating that as the request was processed the network configuration changed.
      * When {@link #getErrorCode} returns this code, this exception may be cast to
-     * {@link QuicException} for more information if <a href="https://www.chromium.org/quic">
+     * {@link QuicException} for more information if <a href="https://www.monyhar.org/quic">
      * QUIC</a> protocol is used.
      */
     public static final int ERROR_NETWORK_CHANGED = 3;
@@ -54,7 +54,7 @@ public abstract class NetworkException extends CronetException {
      */
     public static final int ERROR_ADDRESS_UNREACHABLE = 9;
     /**
-     * Error code indicating an error related to the <a href="https://www.chromium.org/quic">
+     * Error code indicating an error related to the <a href="https://www.monyhar.org/quic">
      * QUIC</a> protocol. When {@link #getErrorCode} returns this code, this exception can be cast
      * to {@link QuicException} for more information.
      */
@@ -88,7 +88,7 @@ public abstract class NetworkException extends CronetException {
      * Returns a Cronet internal error code. This may provide more specific error
      * diagnosis than {@link #getErrorCode}, but the constant values are not exposed to Java and
      * may change over time. See
-     * <a href=https://chromium.googlesource.com/chromium/src/+/main/net/base/net_error_list.h>
+     * <a href=https://monyhar.googlesource.com/monyhar/src/+/main/net/base/net_error_list.h>
      * here</a> for the lastest list of values.
      *
      * @return Cronet internal error code.

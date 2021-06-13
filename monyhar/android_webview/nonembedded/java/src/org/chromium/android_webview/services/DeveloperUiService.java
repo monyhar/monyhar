@@ -1,7 +1,7 @@
 // Copyright 2019 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.android_webview.services;
+package org.monyhar.android_webview.services;
 
 import android.annotation.TargetApi;
 import android.app.Notification;
@@ -23,16 +23,16 @@ import android.os.RemoteException;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.android_webview.common.DeveloperModeUtils;
-import org.chromium.android_webview.common.Flag;
-import org.chromium.android_webview.common.FlagOverrideHelper;
-import org.chromium.android_webview.common.ProductionSupportedFlagList;
-import org.chromium.android_webview.common.services.IDeveloperUiService;
-import org.chromium.base.BuildInfo;
-import org.chromium.base.CommandLine;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.Log;
+import org.monyhar.android_webview.common.DeveloperModeUtils;
+import org.monyhar.android_webview.common.Flag;
+import org.monyhar.android_webview.common.FlagOverrideHelper;
+import org.monyhar.android_webview.common.ProductionSupportedFlagList;
+import org.monyhar.android_webview.common.services.IDeveloperUiService;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.Log;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -234,7 +234,7 @@ public final class DeveloperUiService extends Service {
 
         Intent notificationIntent = new Intent();
         notificationIntent.setClassName(
-                getPackageName(), "org.chromium.android_webview.devui.MainActivity");
+                getPackageName(), "org.monyhar.android_webview.devui.MainActivity");
         notificationIntent.putExtra(FRAGMENT_ID_INTENT_EXTRA, FRAGMENT_ID_FLAGS);
         PendingIntent pendingIntent = PendingIntent.getActivity(
                 this, 0, notificationIntent, IntentUtils.getPendingIntentMutabilityFlag(false));

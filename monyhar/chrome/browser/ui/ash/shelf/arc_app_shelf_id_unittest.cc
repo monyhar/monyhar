@@ -12,7 +12,7 @@ namespace {
 constexpr char kTestShelfGroupId[] = "test_shelf_group_id";
 constexpr char kTestAppId[] = "mconboelelhjpkbdhhiijkgcimoangdj";
 constexpr char kTestIntentWithShelfGroup[] =
-    "#Intent;S.org.chromium.arc.shelf_group_id=test_shelf_group_id;"
+    "#Intent;S.org.monyhar.arc.shelf_group_id=test_shelf_group_id;"
     "S.other=tmp;end";
 constexpr char kTestIntentWithoutShelfGroup[] = "#Intent;S.other=tmp;end";
 }  // namespace

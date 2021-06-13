@@ -14,11 +14,11 @@ def main():
     return 0
   subprocess.check_call([
       'download_from_google_storage',
-      '--bucket', 'chromium-ar-test-apks/arcore',
+      '--bucket', 'monyhar-ar-test-apks/arcore',
       '-d', ARCORE_DIR])
   subprocess.check_call([
       'download_from_google_storage',
-      '--bucket', 'chromium-ar-test-apks/playback_datasets',
+      '--bucket', 'monyhar-ar-test-apks/playback_datasets',
       '-d', PLAYBACK_DATASET_DIR])
   return 0
 

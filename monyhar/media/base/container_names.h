@@ -19,7 +19,7 @@ namespace container_names {
 // sync with the enum definition "MediaContainers" in
 // tools/metrics/histograms/histograms.xml.
 //
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.media
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.media
 // GENERATED_JAVA_PREFIX_TO_STRIP: CONTAINER_
 enum MediaContainerName {
   CONTAINER_UNKNOWN,       // Unknown

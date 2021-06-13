@@ -138,8 +138,8 @@ TEST_F(ActivityServiceMediatorTest,
 // is not HTTP or HTTPS.
 TEST_F(ActivityServiceMediatorTest, ActivitiesForData_NotHTTPOrHTTPS) {
   ShareToData* data =
-      [[ShareToData alloc] initWithShareURL:GURL("chrome://chromium.org/")
-                                 visibleURL:GURL("chrome://chromium.org/")
+      [[ShareToData alloc] initWithShareURL:GURL("chrome://monyhar.org/")
+                                 visibleURL:GURL("chrome://monyhar.org/")
                                       title:@"baz"
                              additionalText:nil
                             isOriginalTitle:YES

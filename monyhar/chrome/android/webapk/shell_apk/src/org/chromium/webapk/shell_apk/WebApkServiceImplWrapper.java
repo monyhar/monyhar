@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webapk.shell_apk;
+package org.monyhar.webapk.shell_apk;
 
 import android.annotation.TargetApi;
 import android.app.Notification;
@@ -16,13 +16,13 @@ import android.os.Parcel;
 import android.os.RemoteException;
 import android.util.Log;
 
-import org.chromium.webapk.lib.runtime_library.IWebApkApi;
+import org.monyhar.webapk.lib.runtime_library.IWebApkApi;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 /**
- * A wrapper class of {@link org.chromium.webapk.lib.runtime_library.WebApkServiceImpl} that
+ * A wrapper class of {@link org.monyhar.webapk.lib.runtime_library.WebApkServiceImpl} that
  * provides additional functionality when the runtime library hasn't been updated.
  */
 public class WebApkServiceImplWrapper extends IWebApkApi.Stub {

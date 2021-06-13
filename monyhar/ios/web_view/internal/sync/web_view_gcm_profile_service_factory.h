@@ -29,7 +29,7 @@ class WebViewGCMProfileServiceFactory : public BrowserStateKeyedServiceFactory {
 
   static WebViewGCMProfileServiceFactory* GetInstance();
 
-  // Returns a string like "org.chromium.chromewebview" that should be used as
+  // Returns a string like "org.monyhar.chromewebview" that should be used as
   // the GCM category when an app_id is sent as a subtype instead of as a
   // category. This string must never change during the lifetime of an install,
   // since e.g. to unregister an Instance ID token the same category must be

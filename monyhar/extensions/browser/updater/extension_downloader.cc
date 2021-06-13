@@ -582,7 +582,7 @@ void ExtensionDownloader::CreateManifestLoader() {
   }
 
   // Send traffic-management headers to the webstore, and omit credentials.
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=647516
+  // https://bugs.monyhar.org/p/monyhar/issues/detail?id=647516
   if (extension_urls::IsWebstoreUpdateUrl(active_request->full_url())) {
     resource_request->headers.SetHeader(kUpdateInteractivityHeader,
                                         active_request->foreground_check()

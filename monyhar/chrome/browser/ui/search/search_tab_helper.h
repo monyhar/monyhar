@@ -49,7 +49,7 @@ class SearchSuggestService;
 class SkBitmap;
 
 // This is the browser-side, per-tab implementation of the embeddedSearch API
-// (see https://www.chromium.org/embeddedsearch).
+// (see https://www.monyhar.org/embeddedsearch).
 class SearchTabHelper : public content::WebContentsObserver,
                         public content::WebContentsUserData<SearchTabHelper>,
                         public InstantServiceObserver,

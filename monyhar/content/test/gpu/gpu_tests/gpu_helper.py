@@ -32,7 +32,7 @@ DRIVER_TAG_MATCHER = re.compile(
     r'^([a-z\d]+)_(eq|ne|ge|gt|le|lt)_([a-z\d\.]+)$')
 
 REMOTE_BROWSER_TYPES = [
-    'android-chromium',
+    'android-monyhar',
     'android-webview-instrumentation',
     'cros-chrome',
     'web-engine-shell',

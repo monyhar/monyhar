@@ -23,7 +23,7 @@ class UsbDeviceHandleAndroid : public UsbDeviceHandleUsbfs {
       const base::android::JavaRef<jobject>& usb_connection);
 
  private:
-  // |wrapper| is an instance of org.chromium.device.usb.ChromeUsbConnection.
+  // |wrapper| is an instance of org.monyhar.device.usb.ChromeUsbConnection.
   UsbDeviceHandleAndroid(scoped_refptr<UsbDevice> device,
                          base::ScopedFD fd,
                          const base::android::JavaRef<jobject>& wrapper);
@@ -34,7 +34,7 @@ class UsbDeviceHandleAndroid : public UsbDeviceHandleUsbfs {
 
   void CloseConnection();
 
-  // Java object org.chromium.device.usb.ChromeUsbConnection.
+  // Java object org.monyhar.device.usb.ChromeUsbConnection.
   base::android::ScopedJavaGlobalRef<jobject> j_object_;
 };
 

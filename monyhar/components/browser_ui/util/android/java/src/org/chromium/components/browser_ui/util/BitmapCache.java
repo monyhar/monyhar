@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.util;
+package org.monyhar.components.browser_ui.util;
 
 import android.graphics.Bitmap;
 import android.os.Looper;
@@ -12,10 +12,10 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.collection.LruCache;
 
-import org.chromium.base.CollectionUtil;
-import org.chromium.base.DiscardableReferencePool;
-import org.chromium.base.SysUtils;
-import org.chromium.base.ThreadUtils;
+import org.monyhar.base.CollectionUtil;
+import org.monyhar.base.DiscardableReferencePool;
+import org.monyhar.base.SysUtils;
+import org.monyhar.base.ThreadUtils;
 
 import java.lang.ref.WeakReference;
 import java.util.HashMap;

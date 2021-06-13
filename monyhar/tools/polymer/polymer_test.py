@@ -40,7 +40,7 @@ class PolymerModulizerTest(unittest.TestCase):
       'Polymer.PaperRippleBehavior|PaperRippleBehavior',
       '--auto_imports',
       'ui/webui/resources/html/polymer.html|Polymer,html',
-      'third_party/polymer/v1_0/components-chromium/paper-behaviors/paper-ripple-behavior.html|PaperRippleBehavior',
+      'third_party/polymer/v1_0/components-monyhar/paper-behaviors/paper-ripple-behavior.html|PaperRippleBehavior',
     ] + self._additional_flags)
 
     actual_js = self._read_out_file(js_out_file)

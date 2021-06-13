@@ -762,7 +762,7 @@ class PolicyTemplateChecker(object):
           'of the description, it is recommended to add a page under %s '
           'instead and provide a link to it.' %
           (POLICY_DESCRIPTION_LENGTH_SOFT_LIMIT,
-           'https://www.chromium.org/administrators'), 'policy',
+           'https://www.monyhar.org/administrators'), 'policy',
           policy.get('name'))
 
     # If 'label' is present, it must be a string.

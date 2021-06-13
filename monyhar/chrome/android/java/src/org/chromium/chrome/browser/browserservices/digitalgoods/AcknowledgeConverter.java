@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.digitalgoods;
+package org.monyhar.chrome.browser.browserservices.digitalgoods;
 
-import static org.chromium.chrome.browser.browserservices.digitalgoods.DigitalGoodsConverter.convertResponseCode;
+import static org.monyhar.chrome.browser.browserservices.digitalgoods.DigitalGoodsConverter.convertResponseCode;
 
 import android.os.Bundle;
 
@@ -13,9 +13,9 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.browser.trusted.TrustedWebActivityCallback;
 
-import org.chromium.base.Log;
-import org.chromium.payments.mojom.BillingResponseCode;
-import org.chromium.payments.mojom.DigitalGoods.AcknowledgeResponse;
+import org.monyhar.base.Log;
+import org.monyhar.payments.mojom.BillingResponseCode;
+import org.monyhar.payments.mojom.DigitalGoods.AcknowledgeResponse;
 
 /**
  * A converter that deals with the parameters and result for Acknowledge calls.

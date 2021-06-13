@@ -380,7 +380,7 @@ class _BlinkPerfBenchmark(perf_benchmark.PerfBenchmark):
                                   extra_tags=self.TAGS)
 
 
-@benchmark.Info(emails=['dmazzoni@chromium.org'],
+@benchmark.Info(emails=['dmazzoni@monyhar.org'],
                 component='Blink>Accessibility',
                 documentation_url='https://bit.ly/blink-perf-benchmarks')
 class BlinkPerfAccessibility(_BlinkPerfBenchmark):
@@ -399,8 +399,8 @@ class BlinkPerfAccessibility(_BlinkPerfBenchmark):
 
 @benchmark.Info(
     component='Blink>Bindings',
-    emails=['jbroman@chromium.org', 'yukishiino@chromium.org',
-            'haraken@chromium.org'],
+    emails=['jbroman@monyhar.org', 'yukishiino@monyhar.org',
+            'haraken@monyhar.org'],
     documentation_url='https://bit.ly/blink-perf-benchmarks')
 class BlinkPerfBindings(_BlinkPerfBenchmark):
   SUBDIR = 'bindings'
@@ -484,7 +484,7 @@ class ServiceWorkerRequestHandler(
 @benchmark.Info(
     component='Blink>ServiceWorker',
     emails=[
-        'shimazu@chromium.org', 'falken@chromium.org', 'ting.shao@intel.com'
+        'shimazu@monyhar.org', 'falken@monyhar.org', 'ting.shao@intel.com'
     ],
     documentation_url='https://bit.ly/blink-perf-benchmarks')
 class BlinkPerfServiceWorker(_BlinkPerfBenchmark):
@@ -511,7 +511,7 @@ class BlinkPerfServiceWorker(_BlinkPerfBenchmark):
     return story_set
 
 
-@benchmark.Info(emails=['futhark@chromium.org', 'andruud@chromium.org'],
+@benchmark.Info(emails=['futhark@monyhar.org', 'andruud@monyhar.org'],
                 documentation_url='https://bit.ly/blink-perf-benchmarks',
                 component='Blink>CSS')
 class BlinkPerfCSS(_BlinkPerfBenchmark):
@@ -523,7 +523,7 @@ class BlinkPerfCSS(_BlinkPerfBenchmark):
     return 'blink_perf.css'
 
 
-@benchmark.Info(emails=['masonf@chromium.org'],
+@benchmark.Info(emails=['masonf@monyhar.org'],
                 component='Blink>DOM',
                 documentation_url='https://bit.ly/blink-perf-benchmarks')
 class BlinkPerfDOM(_BlinkPerfBenchmark):
@@ -535,7 +535,7 @@ class BlinkPerfDOM(_BlinkPerfBenchmark):
     return 'blink_perf.dom'
 
 
-@benchmark.Info(emails=['masonf@chromium.org'],
+@benchmark.Info(emails=['masonf@monyhar.org'],
                 component='Blink>DOM',
                 documentation_url='https://bit.ly/blink-perf-benchmarks')
 class BlinkPerfEvents(_BlinkPerfBenchmark):
@@ -552,7 +552,7 @@ class BlinkPerfEvents(_BlinkPerfBenchmark):
     options.AppendExtraBrowserArgs(['--enable-blink-features=ShadowDOMV0'])
 
 
-@benchmark.Info(emails=['cblume@chromium.org'],
+@benchmark.Info(emails=['cblume@monyhar.org'],
                 component='Internals>Images>Codecs',
                 documentation_url='https://bit.ly/blink-perf-benchmarks')
 class BlinkPerfImageDecoder(_BlinkPerfBenchmark):
@@ -570,7 +570,7 @@ class BlinkPerfImageDecoder(_BlinkPerfBenchmark):
 
 
 @benchmark.Info(
-    emails=['ikilpatrick@chromium.org', 'kojii@chromium.org'],
+    emails=['ikilpatrick@monyhar.org', 'kojii@monyhar.org'],
     component='Blink>Layout',
     documentation_url='https://bit.ly/blink-perf-benchmarks')
 class BlinkPerfLayout(_BlinkPerfBenchmark):
@@ -582,7 +582,7 @@ class BlinkPerfLayout(_BlinkPerfBenchmark):
     return 'blink_perf.layout'
 
 
-@benchmark.Info(emails=['dmurph@chromium.org'],
+@benchmark.Info(emails=['dmurph@monyhar.org'],
                 component='Blink>Storage',
                 documentation_url='https://bit.ly/blink-perf-benchmarks')
 class BlinkPerfOWPStorage(_BlinkPerfBenchmark):
@@ -603,7 +603,7 @@ class BlinkPerfOWPStorage(_BlinkPerfBenchmark):
     ])
 
 
-@benchmark.Info(emails=['pdr@chromium.org', 'wangxianzhu@chromium.org'],
+@benchmark.Info(emails=['pdr@monyhar.org', 'wangxianzhu@monyhar.org'],
                 component='Blink>Paint',
                 documentation_url='https://bit.ly/blink-perf-benchmarks')
 class BlinkPerfPaint(_BlinkPerfBenchmark):
@@ -615,7 +615,7 @@ class BlinkPerfPaint(_BlinkPerfBenchmark):
     return 'blink_perf.paint'
 
 
-@benchmark.Info(emails=['yoavweiss@chromium.org'],
+@benchmark.Info(emails=['yoavweiss@monyhar.org'],
                 component='Blink>PerformanceAPIs',
                 documentation_url='https://bit.ly/blink-perf-benchmarks')
 class BlinkPerfPerformanceAPIs(_BlinkPerfBenchmark):
@@ -628,9 +628,9 @@ class BlinkPerfPerformanceAPIs(_BlinkPerfBenchmark):
 
 
 @benchmark.Info(component='Blink>Bindings',
-                emails=['jbroman@chromium.org',
-                         'yukishiino@chromium.org',
-                         'haraken@chromium.org'],
+                emails=['jbroman@monyhar.org',
+                         'yukishiino@monyhar.org',
+                         'haraken@monyhar.org'],
                 documentation_url='https://bit.ly/blink-perf-benchmarks')
 class BlinkPerfParser(_BlinkPerfBenchmark):
   SUBDIR = 'parser'
@@ -642,7 +642,7 @@ class BlinkPerfParser(_BlinkPerfBenchmark):
 
 
 @benchmark.Info(component='Blink>Security>SanitizerAPI',
-                emails=['lyf@chromium.org'],
+                emails=['lyf@monyhar.org'],
                 documentation_url='https://bit.ly/blink-perf-benchmarks')
 class BlinkPerfSanitizerAPI(_BlinkPerfBenchmark):
   SUBDIR = 'sanitizer-api'
@@ -658,7 +658,7 @@ class BlinkPerfSanitizerAPI(_BlinkPerfBenchmark):
     ])
 
 
-@benchmark.Info(emails=['fs@opera.com', 'pdr@chromium.org'],
+@benchmark.Info(emails=['fs@opera.com', 'pdr@monyhar.org'],
                 component='Blink>SVG',
                 documentation_url='https://bit.ly/blink-perf-benchmarks')
 class BlinkPerfSVG(_BlinkPerfBenchmark):
@@ -670,7 +670,7 @@ class BlinkPerfSVG(_BlinkPerfBenchmark):
     return 'blink_perf.svg'
 
 
-@benchmark.Info(emails=['masonf@chromium.org'],
+@benchmark.Info(emails=['masonf@monyhar.org'],
                 component='Blink>DOM>ShadowDOM',
                 documentation_url='https://bit.ly/blink-perf-benchmarks')
 class BlinkPerfShadowDOM(_BlinkPerfBenchmark):
@@ -686,7 +686,7 @@ class BlinkPerfShadowDOM(_BlinkPerfBenchmark):
   def SetExtraBrowserOptions(self, options):
     options.AppendExtraBrowserArgs(['--enable-blink-features=ShadowDOMV0'])
 
-@benchmark.Info(emails=['vmpstr@chromium.org'],
+@benchmark.Info(emails=['vmpstr@monyhar.org'],
                 component='Blink>Paint',
                 documentation_url='https://bit.ly/blink-perf-benchmarks')
 class BlinkPerfDisplayLocking(_BlinkPerfBenchmark):
@@ -701,7 +701,7 @@ class BlinkPerfDisplayLocking(_BlinkPerfBenchmark):
     options.AppendExtraBrowserArgs(
       ['--enable-blink-features=DisplayLocking,CSSContentSize'])
 
-@benchmark.Info(emails=['hongchan@chromium.org', 'rtoy@chromium.org'],
+@benchmark.Info(emails=['hongchan@monyhar.org', 'rtoy@monyhar.org'],
                 component='Blink>WebAudio',
                 documentation_url='https://bit.ly/blink-perf-benchmarks')
 class BlinkPerfWebAudio(_BlinkPerfBenchmark):
@@ -714,7 +714,7 @@ class BlinkPerfWebAudio(_BlinkPerfBenchmark):
 
 
 @benchmark.Info(
-    emails=['kbr@chromium.org', 'enga@chromium.org', 'webgl-team@google.com'],
+    emails=['kbr@monyhar.org', 'enga@monyhar.org', 'webgl-team@google.com'],
     component='Blink>WebGL',
     documentation_url='https://bit.ly/blink-perf-benchmarks')
 class BlinkPerfWebGL(_BlinkPerfBenchmark):
@@ -727,7 +727,7 @@ class BlinkPerfWebGL(_BlinkPerfBenchmark):
 
 
 @benchmark.Info(emails=[
-    'kbr@chromium.org', 'enga@chromium.org', 'mslekova@chromium.org',
+    'kbr@monyhar.org', 'enga@monyhar.org', 'mslekova@monyhar.org',
     'webgl-team@google.com'
 ],
                 component='Blink>WebGL',
@@ -745,7 +745,7 @@ class BlinkPerfWebGLFastCall(_BlinkPerfBenchmark):
 
 
 @benchmark.Info(emails=[
-    'enga@chromium.org', 'cwallez@chromium.org', 'webgpu-developers@google.com'
+    'enga@monyhar.org', 'cwallez@monyhar.org', 'webgpu-developers@google.com'
 ],
                 component='Blink>WebGPU',
                 documentation_url='https://bit.ly/blink-perf-benchmarks')
@@ -762,7 +762,7 @@ class BlinkPerfWebGPU(_BlinkPerfBenchmark):
 
 
 @benchmark.Info(emails=[
-    'enga@chromium.org', 'cwallez@chromium.org', 'mslekova@chromium.org',
+    'enga@monyhar.org', 'cwallez@monyhar.org', 'mslekova@monyhar.org',
     'webgpu-developers@google.com'
 ],
                 component='Blink>WebGPU',

@@ -301,7 +301,7 @@ bool MetafileSkia::SafePlayback(printing::NativeDrawingContext hdc) const {
    the drawing of the PDF into the canvas may result in a rasterized output.
    PDFMetafileSkia::RenderPage should be not implemented as shown and instead
    should do something like the following CL in PluginInstance::PrintPDFOutput:
-http://codereview.chromium.org/7200040/diff/1/webkit/plugins/ppapi/ppapi_plugin_instance.cc
+http://codereview.monyhar.org/7200040/diff/1/webkit/plugins/ppapi/ppapi_plugin_instance.cc
 */
 bool MetafileSkia::RenderPage(unsigned int page_number,
                               CGContextRef context,

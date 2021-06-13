@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.compat;
+package org.monyhar.base.compat;
 
 import android.annotation.TargetApi;
 import android.content.ClipData;
@@ -13,11 +13,11 @@ import android.view.textclassifier.TextLinks;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.BuildInfo;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.annotations.VerifiesOnS;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.VerifiesOnS;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

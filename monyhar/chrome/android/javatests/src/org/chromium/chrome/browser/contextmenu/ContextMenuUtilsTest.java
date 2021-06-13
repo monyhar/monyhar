@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.contextmenu;
+package org.monyhar.chrome.browser.contextmenu;
 
 import static org.junit.Assert.assertEquals;
 
@@ -13,10 +13,10 @@ import androidx.test.filters.SmallTest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.blink_public.common.ContextMenuDataMediaType;
-import org.chromium.components.embedder_support.contextmenu.ContextMenuParams;
-import org.chromium.url.GURL;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.blink_public.common.ContextMenuDataMediaType;
+import org.monyhar.components.embedder_support.contextmenu.ContextMenuParams;
+import org.monyhar.url.GURL;
 
 /**
  * Unit tests for {@link ContextMenuUtils}.
@@ -31,7 +31,7 @@ public class ContextMenuUtilsTest {
     @SmallTest
     public void getTitle_hasTitleText() {
         ContextMenuParams params = new ContextMenuParams(0,
-                org.chromium.blink_public.common.ContextMenuDataMediaType.IMAGE, GURL.emptyGURL(),
+                org.monyhar.blink_public.common.ContextMenuDataMediaType.IMAGE, GURL.emptyGURL(),
                 GURL.emptyGURL(), sLinkText, GURL.emptyGURL(), new GURL(sSrcUrl), sTitleText, null,
                 false, 0, 0, 0, false);
 

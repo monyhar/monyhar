@@ -14,7 +14,7 @@ _MD_HEADER = """\
 [TOC]
 
 Changes that only modify files in //infra/config, which do not change any build
-outputs, only require the chromium_presubmit builder to pass before landing.
+outputs, only require the monyhar_presubmit builder to pass before landing.
 
 Each builder name links to that builder on Milo. The "matching builders" links
 point to the file used to determine which configurations a builder should copy
@@ -44,7 +44,7 @@ These builders are currently disabled due to the cq_disable_experiments outages
 setting. See //infra/config/outages/README.md for more information.
 """ if outages_config.disable_cq_experiments else "")
 
-_TRY_BUILDER_VIEW_URL = "https://ci.chromium.org/p/chromium/builders/try"
+_TRY_BUILDER_VIEW_URL = "https://ci.monyhar.org/p/monyhar/builders/try"
 
 _REGEX_PREFIX = ".+/[+]/"
 
@@ -63,7 +63,7 @@ def _get_main_config_group_builders(ctx):
         if len(project.ref_regexp) != 1:
             continue
 
-        if (project.name == "chromium/src" and
+        if (project.name == "monyhar/src" and
             # Repeated proto fields have an internal type that won't compare equal
             # to a list, so convert it
             list(project.ref_regexp) == ["refs/heads/.+"]):
@@ -111,7 +111,7 @@ def _group_builders_by_section(builders):
     )
 
 def _codesearch_query(*atoms, package = None):
-    query = ["https://cs.chromium.org/search?q="]
+    query = ["https://cs.monyhar.org/search?q="]
     if package != None:
         query.append("package:%5E")  # %5E -> encoded ^
         query.append(package)
@@ -128,13 +128,13 @@ def _get_regex_line_details(regex):
     if regex.endswith(".+"):
         regex = regex[:-len(".+")]
 
-    url = _codesearch_query("file:" + regex, package = "chromium")
+    url = _codesearch_query("file:" + regex, package = "monyhar")
 
     # If the regex doesn't have any interesting characters that might be part of a
     # regex, assume the regex is targeting a single path and direct link to it
     # Equals sign and dashes used by layout tests
     if all([c.isalnum() or c in "/-_=" for c in regex.codepoints()]):
-        url = "https://cs.chromium.org/chromium/src/" + regex
+        url = "https://cs.monyhar.org/monyhar/src/" + regex
 
     return struct(
         title = title,
@@ -173,7 +173,7 @@ def _generate_cq_builders_md(ctx):
                     "file:/cq.star$",
                     "-file:/beta/",
                     "-file:/stable/",
-                    package = "chromium",
+                    package = "monyhar",
                 ),
                 trybot_query = _codesearch_query("file:trybots.py"),
             ))

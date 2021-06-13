@@ -358,7 +358,7 @@ suite('AutofillSectionAddressTests', function() {
       assertFalse(!!(address.emailAddresses && address.emailAddresses[0]));
 
       const phoneNumber = '(555) 555-5555';
-      const emailAddress = 'no-reply@chromium.org';
+      const emailAddress = 'no-reply@monyhar.org';
 
       dialog.$.phoneInput.value = phoneNumber;
       dialog.$.emailInput.value = emailAddress;
@@ -397,7 +397,7 @@ suite('AutofillSectionAddressTests', function() {
     const address = createEmptyAddressEntry();
 
     const phoneNumber = '(555) 555-5555';
-    const emailAddress = 'no-reply@chromium.org';
+    const emailAddress = 'no-reply@monyhar.org';
 
     address.countryCode = 'US';  // Set to allow save to be active.
     address.phoneNumbers = [phoneNumber];

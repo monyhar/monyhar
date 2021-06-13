@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.media;
+package org.monyhar.chrome.browser.media;
 
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * Java access point for MediaCaptureDevicesDispatcher, allowing for querying and manipulation of

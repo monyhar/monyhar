@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import android.app.Activity;
 import android.view.View;
@@ -11,8 +11,8 @@ import android.view.ViewStub;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.dependency_injection.ActivityScope;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.dependency_injection.ActivityScope;
 
 import javax.inject.Inject;
 

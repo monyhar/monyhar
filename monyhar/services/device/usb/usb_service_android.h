@@ -50,7 +50,7 @@ class UsbServiceAndroid final : public UsbService {
 
   std::unordered_map<jint, scoped_refptr<UsbDeviceAndroid>> devices_by_id_;
 
-  // Java object org.chromium.device.usb.ChromeUsbService.
+  // Java object org.monyhar.device.usb.ChromeUsbService.
   base::android::ScopedJavaGlobalRef<jobject> j_object_;
 
   base::WeakPtrFactory<UsbServiceAndroid> weak_factory_{this};

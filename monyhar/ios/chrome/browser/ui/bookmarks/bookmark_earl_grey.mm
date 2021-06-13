@@ -47,7 +47,7 @@ const GURL GetFrenchUrl() {
 
 - (void)setupStandardBookmarks {
   const GURL fourthURL = web::test::HttpServer::MakeUrl(
-      "http://ios/testing/data/http_server_files/chromium_logo_page.html");
+      "http://ios/testing/data/http_server_files/monyhar_logo_page.html");
 
   NSString* spec1 = base::SysUTF8ToNSString(GetFirstUrl().spec());
   NSString* spec2 = base::SysUTF8ToNSString(GetSecondUrl().spec());

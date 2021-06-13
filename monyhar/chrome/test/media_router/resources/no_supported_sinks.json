@@ -1,6 +1,6 @@
 {
   "getAvailableSinks": {
-    "urn:x-org.chromium.media:source:desktop":
+    "urn:x-org.monyhar.media:source:desktop":
         [{"id" : "id1", "friendlyName" : "test-sink-1"}]
   }
 }

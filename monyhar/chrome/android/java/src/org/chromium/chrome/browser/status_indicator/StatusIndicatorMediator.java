@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.status_indicator;
+package org.monyhar.chrome.browser.status_indicator;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;
@@ -16,12 +16,12 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsStateProvider;
-import org.chromium.components.browser_ui.widget.animation.CancelAwareAnimatorListener;
-import org.chromium.components.browser_ui.widget.animation.Interpolators;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.Callback;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsStateProvider;
+import org.monyhar.components.browser_ui.widget.animation.CancelAwareAnimatorListener;
+import org.monyhar.components.browser_ui.widget.animation.Interpolators;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.util.HashSet;
 

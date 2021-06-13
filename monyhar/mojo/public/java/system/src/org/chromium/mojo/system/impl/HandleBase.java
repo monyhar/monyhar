@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo.system.impl;
+package org.monyhar.mojo.system.impl;
 
-import org.chromium.base.Log;
-import org.chromium.mojo.system.Core;
-import org.chromium.mojo.system.Core.HandleSignalsState;
-import org.chromium.mojo.system.Handle;
-import org.chromium.mojo.system.UntypedHandle;
+import org.monyhar.base.Log;
+import org.monyhar.mojo.system.Core;
+import org.monyhar.mojo.system.Core.HandleSignalsState;
+import org.monyhar.mojo.system.Handle;
+import org.monyhar.mojo.system.UntypedHandle;
 
 /**
  * Implementation of {@link Handle}.
@@ -47,7 +47,7 @@ abstract class HandleBase implements Handle {
     }
 
     /**
-     * @see org.chromium.mojo.system.Handle#close()
+     * @see org.monyhar.mojo.system.Handle#close()
      */
     @Override
     public void close() {
@@ -60,7 +60,7 @@ abstract class HandleBase implements Handle {
     }
 
     /**
-     * @see org.chromium.mojo.system.Handle#querySignalsState()
+     * @see org.monyhar.mojo.system.Handle#querySignalsState()
      */
     @Override
     public HandleSignalsState querySignalsState() {
@@ -68,7 +68,7 @@ abstract class HandleBase implements Handle {
     }
 
     /**
-     * @see org.chromium.mojo.system.Handle#isValid()
+     * @see org.monyhar.mojo.system.Handle#isValid()
      */
     @Override
     public boolean isValid() {
@@ -76,7 +76,7 @@ abstract class HandleBase implements Handle {
     }
 
     /**
-     * @see org.chromium.mojo.system.Handle#toUntypedHandle()
+     * @see org.monyhar.mojo.system.Handle#toUntypedHandle()
      */
     @Override
     public UntypedHandle toUntypedHandle() {
@@ -84,7 +84,7 @@ abstract class HandleBase implements Handle {
     }
 
     /**
-     * @see org.chromium.mojo.system.Handle#getCore()
+     * @see org.monyhar.mojo.system.Handle#getCore()
      */
     @Override
     public Core getCore() {

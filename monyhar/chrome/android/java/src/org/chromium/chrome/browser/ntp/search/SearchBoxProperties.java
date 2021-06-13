@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ntp.search;
+package org.monyhar.chrome.browser.ntp.search;
 
 import android.content.res.ColorStateList;
 import android.graphics.drawable.Drawable;
@@ -10,11 +10,11 @@ import android.text.TextWatcher;
 import android.util.Pair;
 import android.view.View.OnClickListener;
 
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel.WritableBooleanPropertyKey;
-import org.chromium.ui.modelutil.PropertyModel.WritableFloatPropertyKey;
-import org.chromium.ui.modelutil.PropertyModel.WritableIntPropertyKey;
-import org.chromium.ui.modelutil.PropertyModel.WritableObjectPropertyKey;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel.WritableBooleanPropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel.WritableFloatPropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel.WritableIntPropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel.WritableObjectPropertyKey;
 
 /**
  * The properties required to build the fake search box on new tab page.

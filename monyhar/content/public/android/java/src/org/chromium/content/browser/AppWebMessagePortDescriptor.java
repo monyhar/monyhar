@@ -2,22 +2,22 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.blink.mojom.MessagePortDescriptor;
-import org.chromium.mojo.bindings.ConnectionErrorHandler;
-import org.chromium.mojo.bindings.Connector;
-import org.chromium.mojo.system.Core;
-import org.chromium.mojo.system.MessagePipeHandle;
-import org.chromium.mojo.system.MojoException;
-import org.chromium.mojo.system.Pair;
-import org.chromium.mojo.system.impl.CoreImpl;
-import org.chromium.mojo_base.mojom.UnguessableToken;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.blink.mojom.MessagePortDescriptor;
+import org.monyhar.mojo.bindings.ConnectionErrorHandler;
+import org.monyhar.mojo.bindings.Connector;
+import org.monyhar.mojo.system.Core;
+import org.monyhar.mojo.system.MessagePipeHandle;
+import org.monyhar.mojo.system.MojoException;
+import org.monyhar.mojo.system.Pair;
+import org.monyhar.mojo.system.impl.CoreImpl;
+import org.monyhar.mojo_base.mojom.UnguessableToken;
 
 /**
  * Java wrapper around a native blink::MessagePortDescriptor, and mojom serialized versions of that
- * class (org.chromium.blink.mojom.MessagePortDescriptor).
+ * class (org.monyhar.blink.mojom.MessagePortDescriptor).
  *
  * This object is pure implementation detail for AppWebMessagePort. Care must be taken to use this
  * object with something approaching "move" semantics, as under the hood it wraps a Mojo endpoint,
@@ -272,8 +272,8 @@ public class AppWebMessagePortDescriptor implements ConnectionErrorHandler {
      * TODO(chrisha): Make this an immediate notification that the channel has been torn down
      * rather than waiting for the owning MessagePort to be cleaned up.
      *
-     * @see org.chromium.mojo.bindings.ConnectionErrorHandler#onConnectionError.
-     * @see org.chromium.mojo.bindings.Connector#setErrorHandler.
+     * @see org.monyhar.mojo.bindings.ConnectionErrorHandler#onConnectionError.
+     * @see org.monyhar.mojo.bindings.Connector#setErrorHandler.
      */
     @Override
     public void onConnectionError(MojoException e) {

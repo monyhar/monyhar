@@ -6,14 +6,14 @@
 <!-- The toolbar containing the URL bar, back button, and NTP button.
 -->
 
-<org.chromium.chrome.browser.toolbar.top.ToolbarPhone
+<org.monyhar.chrome.browser.toolbar.top.ToolbarPhone
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="@dimen/toolbar_height_no_shadow" >
 
-    <org.chromium.chrome.browser.toolbar.HomeButton
+    <org.monyhar.chrome.browser.toolbar.HomeButton
         android:id="@+id/home_button"
         style="@style/ToolbarButton"
         android:src="@drawable/btn_toolbar_home"
@@ -21,7 +21,7 @@
         android:visibility="gone"
         app:tint="@color/default_icon_color_tint_list" />
 
-    <org.chromium.chrome.browser.omnibox.LocationBarPhone
+    <org.monyhar.chrome.browser.omnibox.LocationBarPhone
         android:id="@+id/location_bar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -43,7 +43,7 @@
             android:paddingStart="@dimen/toolbar_phone_optional_button_padding"
             android:visibility="gone" />
 
-        <org.chromium.chrome.browser.toolbar.top.ToggleTabStackButton
+        <org.monyhar.chrome.browser.toolbar.top.ToggleTabStackButton
             android:id="@+id/tab_switcher_button"
             style="@style/ToolbarButton"
             android:paddingStart="8dp"
@@ -56,4 +56,4 @@
 
     </LinearLayout>
 
-</org.chromium.chrome.browser.toolbar.top.ToolbarPhone>
+</org.monyhar.chrome.browser.toolbar.top.ToolbarPhone>

@@ -2,10 +2,10 @@
 
 ## Handy Links
 
-* [Phase 1 bugs](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=Proj%3DMacViews+label%3Aphase1&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
-* [Phase 2 bugs](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=Proj%3DMacViews+label%3Aphase2&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
-* [Other MacViews bugs](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=Proj%3DMacViews+-label%3APhase1+-label%3APhase2&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
-* [Catalog of chromium dialogs](https://docs.google.com/spreadsheets/d/1rChQOblJDsXevMxpUpvaPqK3QIMPdmd2iAvJtdeOeeY/edit#gid=0)
+* [Phase 1 bugs](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=Proj%3DMacViews+label%3Aphase1&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
+* [Phase 2 bugs](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=Proj%3DMacViews+label%3Aphase2&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
+* [Other MacViews bugs](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=Proj%3DMacViews+-label%3APhase1+-label%3APhase2&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
+* [Catalog of monyhar dialogs](https://docs.google.com/spreadsheets/d/1rChQOblJDsXevMxpUpvaPqK3QIMPdmd2iAvJtdeOeeY/edit#gid=0)
 
 ## Phase 1: Controls
 

@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.long_screenshots.bitmap_generation;
+package org.monyhar.chrome.browser.share.long_screenshots.bitmap_generation;
 
 import android.content.Context;
 import android.graphics.Rect;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.browser.share.long_screenshots.LongScreenshotsMetrics;
-import org.chromium.chrome.browser.share.long_screenshots.bitmap_generation.LongScreenshotsEntry.EntryStatus;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.paintpreview.player.CompositorStatus;
+import org.monyhar.chrome.browser.share.long_screenshots.LongScreenshotsMetrics;
+import org.monyhar.chrome.browser.share.long_screenshots.bitmap_generation.LongScreenshotsEntry.EntryStatus;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.paintpreview.player.CompositorStatus;
 
 import java.util.ArrayList;
 import java.util.List;

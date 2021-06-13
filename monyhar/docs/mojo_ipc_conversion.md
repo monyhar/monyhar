@@ -7,7 +7,7 @@
 A number of IPC messages sent (primarily between the browser and renderer
 processes) are still defined using Chrome's old IPC system in `//ipc`. This
 system uses
-[`base::Pickle`](https://cs.chromium.org/chromium/src/base/pickle.h?rcl=8b7842262ee1239b1f3ae20b9c851748ef0b9a8b&l=128)
+[`base::Pickle`](https://cs.monyhar.org/monyhar/src/base/pickle.h?rcl=8b7842262ee1239b1f3ae20b9c851748ef0b9a8b&l=128)
 as the basis for message serialization and is supported by a number if `IPC_*`
 preprocessor macros defined in `//ipc` and used around the source tree.
 
@@ -159,8 +159,8 @@ like the one on `IPC::Channel`, and both objects also implement
 interface requests specific to their own frame.
 
 There are some example conversion CLs which use Channel-associated interfaces
-[here](https://codereview.chromium.org/2381493003) and
-[here](https://codereview.chromium.org/2400313002).
+[here](https://codereview.monyhar.org/2381493003) and
+[here](https://codereview.monyhar.org/2400313002).
 
 ## Deciding How to Approach a Conversion
 
@@ -171,7 +171,7 @@ right one depends on context.
 Note that this section assumes the message is traveling between the browser
 process and a renderer process. Other cases are rare and developers may wish to
 consult
-[chromium-mojo@chromium.org](https://groups.google.com/a/chromium.org/forum/#!forum/chromium-mojo)
+[monyhar-mojo@monyhar.org](https://groups.google.com/a/monyhar.org/forum/#!forum/monyhar-mojo)
 before proceeding with them. Otherwise, apply the following basic algorithm to
 decide how to proceed:
 
@@ -201,7 +201,7 @@ decide how to proceed:
     - If the message is sent from the browser to a renderer:
         - If an existing interface is bound by `RenderThreadImpl` and requested
           through a `BrowserContext` Connector referencing a specific
-          `RenderProcessHost` [identity](https://cs.chromium.org/chromium/src/content/public/browser/render_process_host.h?rcl=1497b88b7d6400a2a5cced258df03d53800d7848&l=327),
+          `RenderProcessHost` [identity](https://cs.monyhar.org/monyhar/src/content/public/browser/render_process_host.h?rcl=1497b88b7d6400a2a5cced258df03d53800d7848&l=327),
           and the interface seems to be a good fit for the message, add the
           equivalent Mojo message to that interface.
         - If no such interface exists, consider adding one for this message and
@@ -226,11 +226,11 @@ decide how to proceed:
         - If the message is sent from the browser to a renderer, consider
           adding a Mojo equivalent to the `content.mojom.Frame` interface
           defined
-          [here](https://cs.chromium.org/chromium/src/content/common/frame.mojom?rcl=138b66744ee9ee853cbb0ae8437b71eaa1fafaa9&l=42).
+          [here](https://cs.monyhar.org/monyhar/src/content/common/frame.mojom?rcl=138b66744ee9ee853cbb0ae8437b71eaa1fafaa9&l=42).
     - If the routing endpoints are **not** frame objects (for example, they may
       be `RenderView`/`RenderViewHost` objects), this is a special case which
       does not yet have an easy conversion approach readily available. Contact
-      [chromium-mojo@chromium.org](https://groups.google.com/a/chromium.org/forum#!forum/chromium-mojo)
+      [monyhar-mojo@monyhar.org](https://groups.google.com/a/monyhar.org/forum#!forum/monyhar-mojo)
       to propose or discuss options.
 
 *** aside
@@ -273,7 +273,7 @@ Occasionally it is useful to do partial IPC conversions, where you want to
 convert a message to a Mojo interface method but you don't want to necessarily
 convert every structure passed by the message. In this case, you can leverage
 Mojo's
-[type-mapping](https://chromium.googlesource.com/chromium/src/+/main/mojo/public/cpp/bindings/README.md#Type-Mapping)
+[type-mapping](https://monyhar.googlesource.com/monyhar/src/+/main/mojo/public/cpp/bindings/README.md#Type-Mapping)
 system to repurpose existing `IPC::ParamTraits`.
 
 *** aside
@@ -290,7 +290,7 @@ typemapped C++ type and will internally use the existing `IPC::ParamTraits<T>`
 specialization for that type in order to serialize and deserialize the struct.
 
 For example, given the
-[`resource_messages.h`](https://cs.chromium.org/chromium/src/content/common/resource_messages.h?rcl=2e7a430d8d88222c04ab3ffb0a143fa85b3cec5b&l=215) header
+[`resource_messages.h`](https://cs.monyhar.org/monyhar/src/content/common/resource_messages.h?rcl=2e7a430d8d88222c04ab3ffb0a143fa85b3cec5b&l=215) header
 which defines an IPC mapping for `content::ResourceRequest`:
 
 ``` cpp
@@ -302,7 +302,7 @@ IPC_STRUCT_TRAITS_END()
 ```
 
 and the
-[`resource_request.h`](https://cs.chromium.org/chromium/src/content/common/resource_request.h?rcl=dce9e476a525e4ff0304787935dc1a8c38392ac8&l=32) header
+[`resource_request.h`](https://cs.monyhar.org/monyhar/src/content/common/resource_request.h?rcl=dce9e476a525e4ff0304787935dc1a8c38392ac8&l=32) header
 which actually defines the `content::ResourceRequest` type:
 
 ``` cpp
@@ -325,7 +325,7 @@ struct URLRequest;
 ```
 
 and add a typemap like
-[`url_request.typemap`](https://cs.chromium.org/chromium/src/content/common/url_request.typemap?rcl=4b5963fa744a706398f8f06a4cbbf70d7fa3213d)
+[`url_request.typemap`](https://cs.monyhar.org/monyhar/src/content/common/url_request.typemap?rcl=4b5963fa744a706398f8f06a4cbbf70d7fa3213d)
 to define how to map between them:
 
 ``` python
@@ -498,14 +498,14 @@ Using typemapping for messages that go between Blink and content browser code
 can sometimes be tricky due to things like dependency cycles or confusion over
 the correct place for some definition
 to live. There are some example CLs provided here, but feel free to also contact
-[chromium-mojo@chromium.org](https://groups.google.com/a/chromium.org/forum/#!forum/chromium-mojo)
+[monyhar-mojo@monyhar.org](https://groups.google.com/a/monyhar.org/forum/#!forum/monyhar-mojo)
 with specific details if you encounter trouble.
 
-[This CL](https://codereview.chromium.org/2363533002) introduces a Mojom
+[This CL](https://codereview.monyhar.org/2363533002) introduces a Mojom
 definition and typemap for `ui::WindowOpenDisposition` as a precursor to the
 IPC conversion below.
 
-The [follow-up CL](https://codereview.chromium.org/2363573002) uses that
+The [follow-up CL](https://codereview.monyhar.org/2363573002) uses that
 definition along with several other new typemaps (including native typemaps as
 described above) to convert the relatively large `ViewHostMsg_CreateWindow`
 message to Mojo.
@@ -514,5 +514,5 @@ message to Mojo.
 
 If this document was not helpful in some way, please post a message to your
 friendly
-[chromium-mojo@chromium.org](https://groups.google.com/a/chromium.org/forum/#!forum/chromium-mojo)
+[monyhar-mojo@monyhar.org](https://groups.google.com/a/monyhar.org/forum/#!forum/monyhar-mojo)
 mailing list.

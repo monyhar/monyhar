@@ -16,7 +16,7 @@
         android:key="parental_settings"
         android:title="@string/account_management_parental_settings"/>
 
-    <org.chromium.components.browser_ui.settings.TextMessagePreference
+    <org.monyhar.components.browser_ui.settings.TextMessagePreference
         android:key="parent_accounts"
         tools:summary="@string/account_management_two_parent_names"/>
 

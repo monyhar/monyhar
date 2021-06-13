@@ -20,7 +20,7 @@ struct AwWebResourceRequest;
 
 class AwUrlCheckerDelegateImpl : public safe_browsing::UrlCheckerDelegate {
  public:
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.android_webview
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.android_webview
   enum class SafeBrowsingAction {
     SHOW_INTERSTITIAL,
     PROCEED,

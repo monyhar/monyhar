@@ -27,7 +27,7 @@ TEST_LLVM_PROFILE_PATH = TEST_DATA_DIR + '/llvm-profile'
 TEST_PERF_RESULT_PATH = TEST_DATA_DIR + '/test_perf_summary.json'
 TEST_RESULT_PATH = TEST_DATA_DIR + '/test_summary.json'
 
-TEST_REALM_NAME = 'chromium_tests'
+TEST_REALM_NAME = 'monyhar_tests'
 
 
 def AddTestExecutionArgs(arg_parser):

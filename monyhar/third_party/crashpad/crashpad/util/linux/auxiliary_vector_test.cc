@@ -35,7 +35,7 @@
 #include "util/process/process_memory_linux.h"
 
 #if !defined(OS_ANDROID)
-// TODO(jperaza): This symbol isn't defined when building in chromium for
+// TODO(jperaza): This symbol isn't defined when building in monyhar for
 // Android. There may be another symbol to use.
 extern "C" {
 #if defined(ARCH_CPU_MIPS_FAMILY)

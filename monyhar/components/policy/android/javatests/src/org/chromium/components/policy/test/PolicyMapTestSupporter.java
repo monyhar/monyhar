@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.policy.test;
+package org.monyhar.components.policy.test;
 
 import org.junit.Assert;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.components.policy.PolicyMap;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.components.policy.PolicyMap;
 
 /**
  * Naitve unit test helper for class {@link PolicyMap}.

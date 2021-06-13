@@ -2918,9 +2918,9 @@ FUNCTION_SETS = [
       'GLES3/gl31.h',
       'GLES3/gl32.h',
       # Files below are Chromium-specific and shipped with Chromium sources.
-      'GL/glextchromium.h',
-      'GLES2/gl2chromium.h',
-      'GLES2/gl2extchromium.h'
+      'GL/glextmonyhar.h',
+      'GLES2/gl2monyhar.h',
+      'GLES2/gl2extmonyhar.h'
     ], [
       "GL_ANGLE_robust_resource_initialization",
       "GL_ANGLE_webgl_compatibility",
@@ -2933,7 +2933,7 @@ FUNCTION_SETS = [
   [EGL_FUNCTIONS, 'egl', [
       'EGL/eglext.h',
       # Files below are Chromium-specific and shipped with Chromium sources.
-      'EGL/eglextchromium.h',
+      'EGL/eglextmonyhar.h',
     ],
     [
       'EGL_ANGLE_d3d_share_handle_client_buffer',
@@ -2946,8 +2946,8 @@ FUNCTION_SETS = [
 GLES2_HEADERS_WITH_ENUMS = [
   'GLES2/gl2.h',
   'GLES2/gl2ext.h',
-  'GLES2/gl2chromium.h',
-  'GLES2/gl2extchromium.h',
+  'GLES2/gl2monyhar.h',
+  'GLES2/gl2extmonyhar.h',
   'GLES3/gl3.h',
   'GLES3/gl31.h',
 ]
@@ -2961,8 +2961,8 @@ LICENSE_AND_HEADER = """\
 //
 // This file is auto-generated from
 // ui/gl/generate_bindings.py
-// It's formatted by clang-format using chromium coding style:
-//    clang-format -i -style=chromium filename
+// It's formatted by clang-format using monyhar coding style:
+//    clang-format -i -style=monyhar filename
 // DO NOT EDIT!
 
 """
@@ -4000,7 +4000,7 @@ def main(argv):
     formatter = "clang-format"
     if platform.system() == "Windows":
       formatter += ".bat"
-    call([formatter, "-i", "-style=chromium", filename])
+    call([formatter, "-i", "-style=monyhar", filename])
 
   for [functions, set_name, extension_headers, extensions] in FUNCTION_SETS:
     # Function names can be specified in two ways (list of unique names or list

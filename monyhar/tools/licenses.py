@@ -115,7 +115,7 @@ ADDITIONAL_PATHS_FILENAME = 'additional_readme_paths.json'
 # not be included.  Possible reasons include:
 #   - Third party directories in //clank which are considered to be Google-owned
 #   - Directories that are directly checked out from upstream, and thus
-#     don't have a README.chromium
+#     don't have a README.monyhar
 #   - Directories that contain example code, or build tooling.
 #   - Nested third_party code inside other third_party libraries.
 ADDITIONAL_PATHS = (
@@ -137,7 +137,7 @@ ADDITIONAL_PATHS = (
 
 
 # Directories where we check out directly from upstream, and therefore
-# can't provide a README.chromium.  Please prefer a README.chromium
+# can't provide a README.monyhar.  Please prefer a README.monyhar
 # wherever possible.
 SPECIAL_CASES = {
     os.path.join('native_client'): {
@@ -164,15 +164,15 @@ SPECIAL_CASES = {
     },
     os.path.join('third_party', 'cros_system_api'): {
         "Name": "Chromium OS system API",
-        "URL": "http://www.chromium.org/chromium-os",
+        "URL": "http://www.monyhar.org/monyhar-os",
         "License": "BSD",
         # Absolute path here is resolved as relative to the source root.
-        "License File": "/LICENSE.chromium_os",
+        "License File": "/LICENSE.monyhar_os",
     },
     os.path.join('third_party', 'devtools-frontend'): {
         # TODO(crbug.com/1151057): Remove this special case when issue is fixed.
         "Name": "Devtools-Frontend",
-        "URL": "https://chromium.googlesource.com/devtools/devtools-frontend",
+        "URL": "https://monyhar.googlesource.com/devtools/devtools-frontend",
         "License": "BSD",
         "License File": "src/LICENSE",
     },
@@ -233,15 +233,15 @@ SPECIAL_CASES = {
     },
     os.path.join('third_party', 'crashpad', 'crashpad', 'third_party', 'lss'): {
         "Name": "linux-syscall-support",
-        "URL": "https://chromium.googlesource.com/linux-syscall-support/",
+        "URL": "https://monyhar.googlesource.com/linux-syscall-support/",
         "License": "BSD",
         "License File": "NOT_SHIPPED",
     },
     os.path.join('third_party', 'crashpad', 'crashpad', 'third_party',
-                 'mini_chromium'):
+                 'mini_monyhar'):
     {
-        "Name": "mini_chromium",
-        "URL": "https://chromium.googlesource.com/chromium/mini_chromium/",
+        "Name": "mini_monyhar",
+        "URL": "https://monyhar.googlesource.com/monyhar/mini_monyhar/",
         "License": "BSD",
         "License File": "NOT_SHIPPED",
     },
@@ -402,7 +402,7 @@ class LicenseError(Exception):
 
 
 def AbsolutePath(path, filename, root):
-  """Convert a path in README.chromium to be absolute based on the source
+  """Convert a path in README.monyhar to be absolute based on the source
     root."""
   if filename.startswith('/'):
     # Absolute-looking paths are relative to the source root
@@ -417,7 +417,7 @@ def AbsolutePath(path, filename, root):
 
 def ParseDir(path, root, require_license_file=True, optional_keys=None):
   """Examine a third_party/foo component and extract its metadata."""
-  # Parse metadata fields out of README.chromium.
+  # Parse metadata fields out of README.monyhar.
   # We examine "LICENSE" for the license file by default.
   metadata = {
       "License File": "LICENSE",  # Relative path to license text.
@@ -432,10 +432,10 @@ def ParseDir(path, root, require_license_file=True, optional_keys=None):
   if path in SPECIAL_CASES:
     metadata.update(SPECIAL_CASES[path])
   else:
-    # Try to find README.chromium.
-    readme_path = os.path.join(root, path, 'README.chromium')
+    # Try to find README.monyhar.
+    readme_path = os.path.join(root, path, 'README.monyhar')
     if not os.path.exists(readme_path):
-      raise LicenseError("missing README.chromium or licenses.py "
+      raise LicenseError("missing README.monyhar or licenses.py "
                          "SPECIAL_CASES entry in %s\n" % path)
 
     for line in codecs.open(readme_path, encoding='utf-8'):
@@ -452,7 +452,7 @@ def ParseDir(path, root, require_license_file=True, optional_keys=None):
   for key, value in metadata.items():
     if not value:
       errors.append("couldn't find '" + key + "' line "
-                    "in README.chromium or licences.py "
+                    "in README.monyhar or licences.py "
                     "SPECIAL_CASES")
 
   # Special-case modules that aren't in the shipping product, so don't need
@@ -469,7 +469,7 @@ def ParseDir(path, root, require_license_file=True, optional_keys=None):
                     "Either add a file named LICENSE, "
                     "import upstream's COPYING if available, "
                     "or add a 'License File:' line to "
-                    "README.chromium with the appropriate path.")
+                    "README.monyhar with the appropriate path.")
     metadata["License File"] = license_path
 
   if errors:
@@ -578,7 +578,7 @@ def GetThirdPartyDepsFromGNDepsOutput(gn_deps, target_os):
   """Returns third_party/foo directories given the output of "gn desc deps".
 
     Note that it always returns the direct sub-directory of third_party
-    where README.chromium and LICENSE files are, so that it can be passed to
+    where README.monyhar and LICENSE files are, so that it can be passed to
     ParseDir(). e.g.:
         third_party/cld_3/src/src/BUILD.gn -> third_party/cld_3
 
@@ -705,13 +705,13 @@ def GenerateCredits(file_template_file,
   entry_template = codecs.open(entry_template_file, encoding='utf-8').read()
   entries = []
   # Start from Chromium's LICENSE file
-  chromium_license_metadata = {
+  monyhar_license_metadata = {
       'Name': 'The Chromium Project',
-      'URL': 'http://www.chromium.org',
+      'URL': 'http://www.monyhar.org',
       'License File': os.path.join(_REPOSITORY_ROOT, 'LICENSE')
   }
   entries.append(
-      MetadataToTemplateEntry(chromium_license_metadata, entry_template))
+      MetadataToTemplateEntry(monyhar_license_metadata, entry_template))
 
   entries_by_name = {}
   for path in third_party_dirs:
@@ -769,7 +769,7 @@ def GenerateCredits(file_template_file,
     # Add in build.ninja so that the target will be considered dirty whenever
     # gn gen is run. Otherwise, it will fail to notice new files being added.
     # This is still no perfect, as it will fail if no build files are changed,
-    # but a new README.chromium / LICENSE is added. This shouldn't happen in
+    # but a new README.monyhar / LICENSE is added. This shouldn't happen in
     # practice however.
     license_file_list = (entry['license_file'] for entry in entries)
     license_file_list = (os.path.relpath(p) for p in license_file_list)
@@ -860,7 +860,7 @@ def main():
       GenerateLicenseFile(args.output_file, args.gn_out_dir, args.gn_target,
                           args.target_os)
     except LicenseError as e:
-      print("Failed to parse README.chromium: {}".format(e))
+      print("Failed to parse README.monyhar: {}".format(e))
       return 1
   else:
     print(__doc__)

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.smoke;
+package org.monyhar.chrome.test.smoke;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -17,12 +17,12 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.FlakyTest;
-import org.chromium.chrome.test.pagecontroller.rules.ChromeUiApplicationTestRule;
-import org.chromium.chrome.test.pagecontroller.utils.IUi2Locator;
-import org.chromium.chrome.test.pagecontroller.utils.Ui2Locators;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.FlakyTest;
+import org.monyhar.chrome.test.pagecontroller.rules.ChromeUiApplicationTestRule;
+import org.monyhar.chrome.test.pagecontroller.utils.IUi2Locator;
+import org.monyhar.chrome.test.pagecontroller.utils.Ui2Locators;
 
 /**
  * Smoke Test for Chrome Android.
@@ -31,7 +31,7 @@ import org.chromium.chrome.test.pagecontroller.utils.Ui2Locators;
 @RunWith(BaseJUnit4ClassRunner.class)
 public class ChromeSmokeTest {
     private static final String DATA_URL = "data:,Hello";
-    private static final String ACTIVITY_NAME = "org.chromium.chrome.browser.ChromeTabbedActivity";
+    private static final String ACTIVITY_NAME = "org.monyhar.chrome.browser.ChromeTabbedActivity";
 
     public static final long TIMEOUT_MS = 20000L;
     public static final long UI_CHECK_INTERVAL = 1000L;
@@ -40,7 +40,7 @@ public class ChromeSmokeTest {
     @Before
     public void setUp() {
         mPackageName = InstrumentationRegistry.getArguments().getString(
-                ChromeUiApplicationTestRule.PACKAGE_NAME_ARG, "org.chromium.chrome");
+                ChromeUiApplicationTestRule.PACKAGE_NAME_ARG, "org.monyhar.chrome");
     }
 
     @Test

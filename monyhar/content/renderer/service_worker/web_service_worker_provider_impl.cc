@@ -314,7 +314,7 @@ void WebServiceWorkerProviderImpl::OnDidGetRegistrationForReady(
   // mojo::ReportBadMessage(), this is forced by Mojo, please see
   // content::ServiceWorkerContainerHost::GetRegistrationForReady(). We'll find
   // a better solution once the discussion at
-  // https://groups.google.com/a/chromium.org/forum/#!topic/chromium-mojo/NNsogKNurlA
+  // https://groups.google.com/a/monyhar.org/forum/#!topic/monyhar-mojo/NNsogKNurlA
   // settled.
   CHECK(registration);
   DCHECK_NE(blink::mojom::kInvalidServiceWorkerRegistrationId,

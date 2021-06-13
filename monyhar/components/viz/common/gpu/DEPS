@@ -6,7 +6,7 @@ include_rules = [
   "+components/metal_util",
   "+gpu/command_buffer",
   "+gpu/config",
-  "+gpu/GLES2/gl2extchromium.h",
+  "+gpu/GLES2/gl2extmonyhar.h",
   "+gpu/vulkan",
   "+third_party/dawn/src/include",
   "+third_party/khronos/GLES2/gl2.h",

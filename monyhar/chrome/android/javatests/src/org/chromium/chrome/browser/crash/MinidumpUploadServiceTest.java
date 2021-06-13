@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.crash;
+package org.monyhar.chrome.browser.crash;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -24,19 +24,19 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.AdvancedMockContext;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.base.SplitCompatIntentService;
-import org.chromium.components.background_task_scheduler.TaskIds;
-import org.chromium.components.minidump_uploader.CrashTestRule;
-import org.chromium.components.minidump_uploader.CrashTestRule.MockCrashReportingPermissionManager;
-import org.chromium.components.minidump_uploader.MinidumpUploadCallable;
-import org.chromium.components.minidump_uploader.MinidumpUploadCallable.MinidumpUploadStatus;
-import org.chromium.components.minidump_uploader.util.CrashReportingPermissionManager;
-import org.chromium.net.NetworkChangeNotifier;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.AdvancedMockContext;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.base.SplitCompatIntentService;
+import org.monyhar.components.background_task_scheduler.TaskIds;
+import org.monyhar.components.minidump_uploader.CrashTestRule;
+import org.monyhar.components.minidump_uploader.CrashTestRule.MockCrashReportingPermissionManager;
+import org.monyhar.components.minidump_uploader.MinidumpUploadCallable;
+import org.monyhar.components.minidump_uploader.MinidumpUploadCallable.MinidumpUploadStatus;
+import org.monyhar.components.minidump_uploader.util.CrashReportingPermissionManager;
+import org.monyhar.net.NetworkChangeNotifier;
 
 import java.io.File;
 import java.io.IOException;
@@ -104,15 +104,15 @@ public class MinidumpUploadServiceTest {
         // Setup prerequisites.
         final AtomicInteger numServiceStarts = new AtomicInteger(0);
         final File[] minidumpFiles = {
-                new File(mTestRule.getCrashDir(), "chromium_renderer-111.dmp1.try0"),
-                new File(mTestRule.getCrashDir(), "chromium_renderer-222.dmp2.try1"),
-                new File(mTestRule.getCrashDir(), "chromium_renderer-333.dmp3.try2"),
+                new File(mTestRule.getCrashDir(), "monyhar_renderer-111.dmp1.try0"),
+                new File(mTestRule.getCrashDir(), "monyhar_renderer-222.dmp2.try1"),
+                new File(mTestRule.getCrashDir(), "monyhar_renderer-333.dmp3.try2"),
         };
         final File[] invalidMinidumpFiles = {
                 // The ".try" suffix is required.
-                new File(mTestRule.getCrashDir(), "chromium_renderer-111.dmp4"),
+                new File(mTestRule.getCrashDir(), "monyhar_renderer-111.dmp4"),
                 // The minidump should not have exceeded the maximum number of tries.
-                new File(mTestRule.getCrashDir(), "chromium_renderer-222.dmp5.try3"),
+                new File(mTestRule.getCrashDir(), "monyhar_renderer-222.dmp5.try3"),
         };
         MinidumpPreparationContext context = new MinidumpPreparationContext(
                 InstrumentationRegistry.getInstrumentation()
@@ -161,7 +161,7 @@ public class MinidumpUploadServiceTest {
         List<CountedMinidumpUploadCallable> callables =
                 new ArrayList<CountedMinidumpUploadCallable>();
         callables.add(new CountedMinidumpUploadCallable(
-                "chromium_renderer-111.dmp1.try0", MinidumpUploadStatus.SUCCESS, false));
+                "monyhar_renderer-111.dmp1.try0", MinidumpUploadStatus.SUCCESS, false));
         runUploadCrashTest(callables);
     }
 
@@ -174,7 +174,7 @@ public class MinidumpUploadServiceTest {
                 new ArrayList<CountedMinidumpUploadCallable>();
         for (int i = 0; i < MinidumpUploadServiceImpl.MAX_TRIES_ALLOWED; i++) {
             callables.add(new CountedMinidumpUploadCallable(
-                    "chromium_renderer-111.dmp1.try" + i, MinidumpUploadStatus.FAILURE, true));
+                    "monyhar_renderer-111.dmp1.try" + i, MinidumpUploadStatus.FAILURE, true));
         }
         runUploadCrashTest(callables);
     }
@@ -186,9 +186,9 @@ public class MinidumpUploadServiceTest {
         List<CountedMinidumpUploadCallable> callables =
                 new ArrayList<CountedMinidumpUploadCallable>();
         callables.add(new CountedMinidumpUploadCallable(
-                "chromium_renderer-111.dmp1.try0", MinidumpUploadStatus.FAILURE, true));
+                "monyhar_renderer-111.dmp1.try0", MinidumpUploadStatus.FAILURE, true));
         callables.add(new CountedMinidumpUploadCallable(
-                "chromium_renderer-111.dmp1.try1", MinidumpUploadStatus.SUCCESS, true));
+                "monyhar_renderer-111.dmp1.try1", MinidumpUploadStatus.SUCCESS, true));
         runUploadCrashTest(callables);
     }
 
@@ -199,7 +199,7 @@ public class MinidumpUploadServiceTest {
         List<CountedMinidumpUploadCallable> callables =
                 new ArrayList<CountedMinidumpUploadCallable>();
         callables.add(new CountedMinidumpUploadCallable(
-                "chromium_renderer-111.dmp1.try0", MinidumpUploadStatus.FAILURE, false));
+                "monyhar_renderer-111.dmp1.try0", MinidumpUploadStatus.FAILURE, false));
         runUploadCrashTest(callables);
     }
 
@@ -304,7 +304,7 @@ public class MinidumpUploadServiceTest {
         // dependent on the service, we do this after context creation.
         service.attachBaseContextLate(context);
         // Create the file used for uploading.
-        File minidumpFile = new File(mTestRule.getCrashDir(), "chromium_renderer-111.dmp1.try0");
+        File minidumpFile = new File(mTestRule.getCrashDir(), "monyhar_renderer-111.dmp1.try0");
         minidumpFile.createNewFile();
         CrashTestRule.setUpMinidumpFile(minidumpFile, BOUNDARY);
 
@@ -333,9 +333,9 @@ public class MinidumpUploadServiceTest {
 
         // Set up prerequisites.
         File minidumpFile = new File(
-                mTestRule.getCrashDir(), "chromium-renderer-minidump-f297dbcba7a2d0bb.dmp0.try3");
+                mTestRule.getCrashDir(), "monyhar-renderer-minidump-f297dbcba7a2d0bb.dmp0.try3");
         final File expectedRenamedMinidumpFile = new File(mTestRule.getCrashDir(),
-                "chromium-renderer-minidump-f297dbcba7a2d0bb.forced0.try0");
+                "monyhar-renderer-minidump-f297dbcba7a2d0bb.forced0.try0");
         CrashTestRule.setUpMinidumpFile(minidumpFile, BOUNDARY);
         final String startServiceFlag = "startServiceFlag";
         MinidumpPreparationContext context = new MinidumpPreparationContext(
@@ -375,7 +375,7 @@ public class MinidumpUploadServiceTest {
         // Set up prerequisites.
         CrashTestRule.setUpMinidumpFile(
                 new File(mTestRule.getCrashDir(),
-                        "chromium-renderer-minidump-f297dbcba7a2d0bb.dmp0.try3"),
+                        "monyhar-renderer-minidump-f297dbcba7a2d0bb.dmp0.try3"),
                 BOUNDARY);
         AdvancedMockContext context =
                 new MinidumpPreparationContext(InstrumentationRegistry.getInstrumentation()
@@ -388,7 +388,7 @@ public class MinidumpUploadServiceTest {
 
         // Verify.
         final File expectedRenamedMinidumpFile = new File(mTestRule.getCrashDir(),
-                "chromium-renderer-minidump-f297dbcba7a2d0bb.forced0.try0");
+                "monyhar-renderer-minidump-f297dbcba7a2d0bb.forced0.try0");
         Assert.assertTrue("Should have renamed the minidump file for forced upload",
                 expectedRenamedMinidumpFile.exists());
         Assert.assertTrue("Should have tried to schedule an upload job",
@@ -405,9 +405,9 @@ public class MinidumpUploadServiceTest {
 
         // Set up prerequisites.
         File minidumpFile = new File(mTestRule.getCrashDir(),
-                "chromium-renderer-minidump-f297dbcba7a2d0bb.skipped0.try0");
+                "monyhar-renderer-minidump-f297dbcba7a2d0bb.skipped0.try0");
         final File expectedRenamedMinidumpFile = new File(mTestRule.getCrashDir(),
-                "chromium-renderer-minidump-f297dbcba7a2d0bb.forced0.try0");
+                "monyhar-renderer-minidump-f297dbcba7a2d0bb.forced0.try0");
         CrashTestRule.setUpMinidumpFile(minidumpFile, BOUNDARY);
         final String startServiceFlag = "startServiceFlag";
         MinidumpPreparationContext context = new MinidumpPreparationContext(
@@ -447,7 +447,7 @@ public class MinidumpUploadServiceTest {
         // Set up prerequisites.
         CrashTestRule.setUpMinidumpFile(
                 new File(mTestRule.getCrashDir(),
-                        "chromium-renderer-minidump-f297dbcba7a2d0bb.skipped0.try3"),
+                        "monyhar-renderer-minidump-f297dbcba7a2d0bb.skipped0.try3"),
                 BOUNDARY);
         AdvancedMockContext context =
                 new MinidumpPreparationContext(InstrumentationRegistry.getInstrumentation()
@@ -460,7 +460,7 @@ public class MinidumpUploadServiceTest {
 
         // Verify.
         final File expectedRenamedMinidumpFile = new File(mTestRule.getCrashDir(),
-                "chromium-renderer-minidump-f297dbcba7a2d0bb.forced0.try0");
+                "monyhar-renderer-minidump-f297dbcba7a2d0bb.forced0.try0");
         Assert.assertTrue("Should have renamed the minidump file for forced upload",
                 expectedRenamedMinidumpFile.exists());
         Assert.assertTrue("Should have tried to schedule an upload job",
@@ -527,7 +527,7 @@ public class MinidumpUploadServiceTest {
         // Set up prerequisites.
         CrashTestRule.setUpMinidumpFile(
                 new File(mTestRule.getCrashDir(),
-                        "chromium-renderer-minidump-f297dbcba7a2d0bb.up0.try0"),
+                        "monyhar-renderer-minidump-f297dbcba7a2d0bb.up0.try0"),
                 BOUNDARY);
         final String startServiceFlag = "startServiceFlag";
         MinidumpPreparationContext context = new MinidumpPreparationContext(
@@ -560,7 +560,7 @@ public class MinidumpUploadServiceTest {
         // Set up prerequisites.
         CrashTestRule.setUpMinidumpFile(
                 new File(mTestRule.getCrashDir(),
-                        "chromium-renderer-minidump-f297dbcba7a2d0bb.up0.try0"),
+                        "monyhar-renderer-minidump-f297dbcba7a2d0bb.up0.try0"),
                 BOUNDARY);
         AdvancedMockContext context =
                 new MinidumpPreparationContext(InstrumentationRegistry.getInstrumentation()
@@ -580,7 +580,7 @@ public class MinidumpUploadServiceTest {
     @Feature({"Android-AppBase"})
     public void testGetCrashType1() throws IOException {
         final File minidumpFile =
-                new File(mTestRule.getCrashDir(), "chromium_renderer-123.dmp.try0");
+                new File(mTestRule.getCrashDir(), "monyhar_renderer-123.dmp.try0");
         CrashTestRule.setUpMinidumpFile(minidumpFile, BOUNDARY, "browser");
         Assert.assertEquals(MinidumpUploadServiceImpl.ProcessType.BROWSER,
                 MinidumpUploadServiceImpl.getCrashType(minidumpFile.getAbsolutePath()));
@@ -591,7 +591,7 @@ public class MinidumpUploadServiceTest {
     @Feature({"Android-AppBase"})
     public void testGetCrashType2() throws IOException {
         final File minidumpFile =
-                new File(mTestRule.getCrashDir(), "chromium_renderer-123.dmp.try0");
+                new File(mTestRule.getCrashDir(), "monyhar_renderer-123.dmp.try0");
         CrashTestRule.setUpMinidumpFile(minidumpFile, BOUNDARY, "renderer");
         Assert.assertEquals(MinidumpUploadServiceImpl.ProcessType.RENDERER,
                 MinidumpUploadServiceImpl.getCrashType(minidumpFile.getAbsolutePath()));
@@ -602,7 +602,7 @@ public class MinidumpUploadServiceTest {
     @Feature({"Android-AppBase"})
     public void testGetCrashType3() throws IOException {
         final File minidumpFile =
-                new File(mTestRule.getCrashDir(), "chromium_renderer-123.dmp.try0");
+                new File(mTestRule.getCrashDir(), "monyhar_renderer-123.dmp.try0");
         CrashTestRule.setUpMinidumpFile(minidumpFile, BOUNDARY, "gpu-process");
         Assert.assertEquals(MinidumpUploadServiceImpl.ProcessType.GPU,
                 MinidumpUploadServiceImpl.getCrashType(minidumpFile.getAbsolutePath()));
@@ -613,7 +613,7 @@ public class MinidumpUploadServiceTest {
     @Feature({"Android-AppBase"})
     public void testGetCrashType4() throws IOException {
         final File minidumpFile =
-                new File(mTestRule.getCrashDir(), "chromium_renderer-123.dmp.try0");
+                new File(mTestRule.getCrashDir(), "monyhar_renderer-123.dmp.try0");
         CrashTestRule.setUpMinidumpFile(minidumpFile, BOUNDARY, "weird test type");
         Assert.assertEquals(MinidumpUploadServiceImpl.ProcessType.OTHER,
                 MinidumpUploadServiceImpl.getCrashType(minidumpFile.getAbsolutePath()));

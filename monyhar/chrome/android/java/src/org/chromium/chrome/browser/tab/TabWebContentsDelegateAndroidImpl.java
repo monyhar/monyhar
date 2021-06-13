@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab;
+package org.monyhar.chrome.browser.tab;
 
 import android.graphics.Rect;
 import android.graphics.RectF;
@@ -11,21 +11,21 @@ import android.view.KeyEvent;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.BuildInfo;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.ObserverList.RewindableIterator;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.AppHooks;
-import org.chromium.chrome.browser.media.MediaCaptureNotificationServiceImpl;
-import org.chromium.chrome.browser.policy.PolicyAuditor;
-import org.chromium.chrome.browser.policy.PolicyAuditorJni;
-import org.chromium.components.find_in_page.FindMatchRectsDetails;
-import org.chromium.components.find_in_page.FindNotificationDetails;
-import org.chromium.content_public.browser.InvalidateTypes;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.common.ResourceRequestBody;
-import org.chromium.url.GURL;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.ObserverList.RewindableIterator;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.AppHooks;
+import org.monyhar.chrome.browser.media.MediaCaptureNotificationServiceImpl;
+import org.monyhar.chrome.browser.policy.PolicyAuditor;
+import org.monyhar.chrome.browser.policy.PolicyAuditorJni;
+import org.monyhar.components.find_in_page.FindMatchRectsDetails;
+import org.monyhar.components.find_in_page.FindNotificationDetails;
+import org.monyhar.content_public.browser.InvalidateTypes;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.common.ResourceRequestBody;
+import org.monyhar.url.GURL;
 
 /**
  * Implementation class of {@link TabWebContentsDelegateAndroid}.

@@ -20,7 +20,7 @@
               android:gravity="center_vertical"
               android:orientation="horizontal">
 
-     <org.chromium.components.browser_ui.widget.text.TextViewWithCompoundDrawables
+     <org.monyhar.components.browser_ui.widget.text.TextViewWithCompoundDrawables
         android:id="@+id/title"
         style="@style/AppMenuItemTextViewWithCompoundDrawables"
         android:layout_width="0dp"
@@ -30,7 +30,7 @@
         android:background="?attr/listChoiceBackgroundIndicator" />
 
     <!-- Checkbox.  Paddings account for built-in padding from the Android resource. -->
-    <org.chromium.chrome.browser.ui.appmenu.AppMenuItemIcon
+    <org.monyhar.chrome.browser.ui.appmenu.AppMenuItemIcon
         android:id="@+id/checkbox"
         android:layout_width="56dp"
         android:layout_height="match_parent"
@@ -46,7 +46,7 @@
     <!-- TODO(twellington): Consider setting a default tint that adjusts when the item is disabled.
          currently there are no menu items with icons that are visible but disabled so this behavior
          is currently unused. -->
-    <org.chromium.ui.widget.ChromeImageButton
+    <org.monyhar.ui.widget.ChromeImageButton
         android:id="@+id/button"
         android:layout_width="56dp"
         android:layout_height="match_parent"

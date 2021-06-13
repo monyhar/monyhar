@@ -8,7 +8,7 @@ import re
 
 
 COMPONENTS_DIR = 'components'
-DESTINATION_COMPONENTS_DIR = 'components-chromium'
+DESTINATION_COMPONENTS_DIR = 'components-monyhar'
 COMPONENT_SUMMARY =\
 """Name: %(name)s
 Repository: %(repository)s

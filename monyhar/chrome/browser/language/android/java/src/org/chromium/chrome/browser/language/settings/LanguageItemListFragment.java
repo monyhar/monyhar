@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.language.settings;
+package org.monyhar.chrome.browser.language.settings;
 
-import static org.chromium.components.browser_ui.widget.listmenu.BasicListMenu.buildMenuListItem;
+import static org.monyhar.components.browser_ui.widget.listmenu.BasicListMenu.buildMenuListItem;
 
 import android.app.Activity;
 import android.content.Context;
@@ -22,15 +22,15 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
-import org.chromium.chrome.browser.language.R;
-import org.chromium.components.browser_ui.settings.FragmentSettingsLauncher;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.browser_ui.settings.SettingsUtils;
-import org.chromium.components.browser_ui.widget.TintedDrawable;
-import org.chromium.components.browser_ui.widget.listmenu.BasicListMenu;
-import org.chromium.components.browser_ui.widget.listmenu.ListMenu;
-import org.chromium.components.browser_ui.widget.listmenu.ListMenuItemProperties;
-import org.chromium.ui.modelutil.MVCListAdapter.ModelList;
+import org.monyhar.chrome.browser.language.R;
+import org.monyhar.components.browser_ui.settings.FragmentSettingsLauncher;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.components.browser_ui.widget.TintedDrawable;
+import org.monyhar.components.browser_ui.widget.listmenu.BasicListMenu;
+import org.monyhar.components.browser_ui.widget.listmenu.ListMenu;
+import org.monyhar.components.browser_ui.widget.listmenu.ListMenuItemProperties;
+import org.monyhar.ui.modelutil.MVCListAdapter.ModelList;
 
 import java.util.Collection;
 

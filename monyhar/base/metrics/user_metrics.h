@@ -20,7 +20,7 @@ class TimeTicks;
 // the user metrics system.
 
 // For best practices on deciding when to emit a user action, see
-// https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/actions/README.md
+// https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/actions/README.md
 
 // Record that the user performed an action.
 // This function must be called after the task runner has been set with

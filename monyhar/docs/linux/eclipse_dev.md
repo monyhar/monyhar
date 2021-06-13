@@ -110,8 +110,8 @@ Create a single Eclipse project for everything:
 1.  Select C/C++ Project > Makefile Project with Existing Code
 1.  Name the project the exact name of the directory: "src" (or "WebKit" if you
     mainly work in Blink and want a faster experience)
-1.  Provide a path to the code, like /work/chromium/src (or
-    /work/chromium/src/third_party/WebKit)
+1.  Provide a path to the code, like /work/monyhar/src (or
+    /work/monyhar/src/third_party/WebKit)
 1.  Select toolchain: Linux GCC
 1.  Click Finish.
 
@@ -184,10 +184,10 @@ create the source code index before you do a real build.
     * Open C++ General > Paths and Symbols > Includes
     * Click "GNU C++"
     * Click "Add..."
-    * Add `/path/to/chromium/src`
+    * Add `/path/to/monyhar/src`
     * Check "Add to all configurations" and "Add to all languages"
 1.  Repeat the above for:
-    * `/path/to/chromium/src/testing/gtest/include`
+    * `/path/to/monyhar/src/testing/gtest/include`
 
 You may also find it helpful to define some symbols.
 
@@ -228,9 +228,9 @@ To create a Make target:
     command you would use to build this target (e.g.
    `ninja -C out/Debug base_unittests`).
 1.  Return to the project properties page a under the C/C++ Build, change the
-    Build Location/Build Directory to be /path/to/chromium/src
+    Build Location/Build Directory to be /path/to/monyhar/src
     1.  In theory `${workspace_loc}` should work, but it doesn't for me.
-    1.  If you put your workspace in `/path/to/chromium`, then
+    1.  If you put your workspace in `/path/to/monyhar`, then
         `${workspace_loc:/src}` will work too.
 1.  Now in the Make Targets view, select the target and click the hammer icon
     (Build Make Target).
@@ -300,7 +300,7 @@ Eclipse can attach automatically to forked processes
 (Run -> Debug configurations -> Debugger tab), but that doesn't seem to
 work well.
 
-The overall idea is described [here](https://www.chromium.org/blink/getting-started-with-blink-debugging)
+The overall idea is described [here](https://www.monyhar.org/blink/getting-started-with-blink-debugging)
 , but one way to accomplish this in eclipse is to run two ```Debug configurations```:
 
 1. Create a ```C/C++ Application```:
@@ -452,5 +452,5 @@ in practice than the simpler (and less bug-prone) approach above.
     is helpful:
 1.  For improved performance, I use medium-granularity projects (eg. one for
     WebKit/Source) instead of putting all of 'src/' in one project.
-1. Running [```content_shell```](https://www.chromium.org/developers/content-module)
+1. Running [```content_shell```](https://www.monyhar.org/developers/content-module)
    as opposed to all of ```chrome```  is a lot faster/smaller.

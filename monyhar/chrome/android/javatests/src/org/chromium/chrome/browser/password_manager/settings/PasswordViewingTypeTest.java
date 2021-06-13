@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_manager.settings;
+package org.monyhar.chrome.browser.password_manager.settings;
 
 import static org.mockito.Mockito.when;
 
@@ -18,14 +18,14 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.settings.MainSettings;
-import org.chromium.chrome.browser.settings.SettingsActivityTestRule;
-import org.chromium.chrome.browser.sync.SyncService;
-import org.chromium.chrome.test.ChromeBrowserTestRule;
-import org.chromium.components.browser_ui.settings.ChromeBasePreference;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.settings.MainSettings;
+import org.monyhar.chrome.browser.settings.SettingsActivityTestRule;
+import org.monyhar.chrome.browser.sync.SyncService;
+import org.monyhar.chrome.test.ChromeBrowserTestRule;
+import org.monyhar.components.browser_ui.settings.ChromeBasePreference;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /**
  * Tests for verifying whether users are presented with the correct option of viewing

@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@1.7.cr0
-package: chromium/third_party/android_deps/libs/com_google_auto_value_auto_value_annotations
+package: monyhar/third_party/android_deps/libs/com_google_auto_value_auto_value_annotations
 description: "AutoValue Annotations"
 data:
 - file: auto-value-annotations-1.7.jar

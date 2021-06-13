@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.gesturenav;
+package org.monyhar.chrome.browser.gesturenav;
 
-import static org.chromium.chrome.browser.gesturenav.GestureNavigationProperties.ACTION;
-import static org.chromium.chrome.browser.gesturenav.GestureNavigationProperties.ALLOW_NAV;
-import static org.chromium.chrome.browser.gesturenav.GestureNavigationProperties.BUBBLE_OFFSET;
-import static org.chromium.chrome.browser.gesturenav.GestureNavigationProperties.CLOSE_INDICATOR;
-import static org.chromium.chrome.browser.gesturenav.GestureNavigationProperties.DIRECTION;
-import static org.chromium.chrome.browser.gesturenav.GestureNavigationProperties.GESTURE_POS;
-import static org.chromium.chrome.browser.gesturenav.GestureNavigationProperties.GLOW_OFFSET;
+import static org.monyhar.chrome.browser.gesturenav.GestureNavigationProperties.ACTION;
+import static org.monyhar.chrome.browser.gesturenav.GestureNavigationProperties.ALLOW_NAV;
+import static org.monyhar.chrome.browser.gesturenav.GestureNavigationProperties.BUBBLE_OFFSET;
+import static org.monyhar.chrome.browser.gesturenav.GestureNavigationProperties.CLOSE_INDICATOR;
+import static org.monyhar.chrome.browser.gesturenav.GestureNavigationProperties.DIRECTION;
+import static org.monyhar.chrome.browser.gesturenav.GestureNavigationProperties.GESTURE_POS;
+import static org.monyhar.chrome.browser.gesturenav.GestureNavigationProperties.GLOW_OFFSET;
 
 import android.view.View;
 
-import org.chromium.chrome.browser.gesturenav.NavigationHandler.GestureAction;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.chrome.browser.gesturenav.NavigationHandler.GestureAction;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * This class responsible for pushing updates to gesture navigation view.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.omnibox;
+package org.monyhar.components.omnibox;
 
 import android.text.TextUtils;
 
@@ -11,11 +11,11 @@ import androidx.annotation.Nullable;
 import androidx.collection.ArraySet;
 import androidx.core.util.ObjectsCompat;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.omnibox.MatchClassificationStyle;
-import org.chromium.components.query_tiles.QueryTile;
-import org.chromium.url.GURL;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.omnibox.MatchClassificationStyle;
+import org.monyhar.components.query_tiles.QueryTile;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.Arrays;

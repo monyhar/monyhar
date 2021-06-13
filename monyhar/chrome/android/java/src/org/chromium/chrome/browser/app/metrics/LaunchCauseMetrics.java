@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.app.metrics;
+package org.monyhar.chrome.browser.app.metrics;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -11,15 +11,15 @@ import android.view.Display;
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CheckDiscard;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.ui.display.DisplayAndroidManager;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CheckDiscard;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.ui.display.DisplayAndroidManager;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

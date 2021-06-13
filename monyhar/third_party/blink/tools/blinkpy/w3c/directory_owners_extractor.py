@@ -49,7 +49,7 @@ class DirectoryOwnersExtractor(object):
             'external', 'OWNERS')
         for relpath in changed_files:
             # Try to find the first *non-empty* OWNERS file.
-            absolute_path = self.finder.path_from_chromium_base(relpath)
+            absolute_path = self.finder.path_from_monyhar_base(relpath)
             owners = None
             owners_file = self.find_owners_file(absolute_path)
             while owners_file:
@@ -88,7 +88,7 @@ class DirectoryOwnersExtractor(object):
             or if start_path is outside of web_tests/external.
         """
         abs_start_path = (start_path if self.filesystem.isabs(start_path) else
-                          self.finder.path_from_chromium_base(start_path))
+                          self.finder.path_from_monyhar_base(start_path))
         directory = (abs_start_path if self.filesystem.isdir(abs_start_path)
                      else self.filesystem.dirname(abs_start_path))
         external_root = self.finder.path_from_web_tests('external')
@@ -98,7 +98,7 @@ class DirectoryOwnersExtractor(object):
         while directory != self.finder.web_tests_dir():
             owners_file = self.filesystem.join(directory, 'OWNERS')
             if self.filesystem.isfile(
-                    self.finder.path_from_chromium_base(owners_file)):
+                    self.finder.path_from_monyhar_base(owners_file)):
                 return owners_file
             directory = self.filesystem.dirname(directory)
         return None
@@ -193,10 +193,10 @@ class WPTDirMetadata(object):
                 "dirs":{
                     "tools/binary_size/libsupersize/testdata/mock_source_directory/base":{
                         "monorail":{
-                            "project":"chromium",
+                            "project":"monyhar",
                             "component":"Blink>Internal"
                         },
-                        "teamEmail":"team@chromium.org",
+                        "teamEmail":"team@monyhar.org",
                         "os":"LINUX",
                         "wpt":{
                             "notify":"YES"

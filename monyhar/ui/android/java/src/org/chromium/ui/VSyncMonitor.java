@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui;
+package org.monyhar.ui;
 
 import android.content.Context;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.Choreographer;
 
-import org.chromium.base.TraceEvent;
+import org.monyhar.base.TraceEvent;
 
 /**
  * Notifies clients of the default displays's vertical sync pulses.

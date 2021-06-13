@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.test.util.UrlUtils;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.test.util.UrlUtils;
 
 /**
  * A Java wrapper to supply a net::MockCertVerifier which can be then passed

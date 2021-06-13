@@ -87,7 +87,7 @@ void ClipboardX11::ReadAvailableTypes(
   types->clear();
   auto available_types = x_clipboard_helper_->GetAvailableTypes(buffer);
   for (const auto& mime_type : available_types) {
-    // Special handling for chromium/x-web-custom-data. We must read the data
+    // Special handling for monyhar/x-web-custom-data. We must read the data
     // and deserialize it to find the list of mime types to report.
     if (mime_type == ClipboardFormatType::GetWebCustomDataType().GetName()) {
       auto data(x_clipboard_helper_->Read(

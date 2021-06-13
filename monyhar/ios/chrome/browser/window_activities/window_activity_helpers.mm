@@ -17,8 +17,8 @@
 #import "net/base/mac/url_conversions.h"
 
 // Activity types.
-NSString* const kLoadURLActivityType = @"org.chromium.load.url";
-NSString* const kLoadIncognitoURLActivityType = @"org.chromium.load.otr-url";
+NSString* const kLoadURLActivityType = @"org.monyhar.load.url";
+NSString* const kLoadIncognitoURLActivityType = @"org.monyhar.load.otr-url";
 
 // User info keys.
 NSString* const kURLKey = @"LoadParams_URL";

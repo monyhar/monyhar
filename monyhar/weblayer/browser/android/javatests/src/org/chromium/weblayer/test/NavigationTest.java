@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer.test;
+package org.monyhar.weblayer.test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -10,7 +10,7 @@ import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-import static org.chromium.content_public.browser.test.util.TestThreadUtils.runOnUiThreadBlocking;
+import static org.monyhar.content_public.browser.test.util.TestThreadUtils.runOnUiThreadBlocking;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -27,25 +27,25 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.net.test.util.TestWebServer;
-import org.chromium.weblayer.Browser;
-import org.chromium.weblayer.LoadError;
-import org.chromium.weblayer.NavigateParams;
-import org.chromium.weblayer.Navigation;
-import org.chromium.weblayer.NavigationCallback;
-import org.chromium.weblayer.NavigationController;
-import org.chromium.weblayer.NavigationState;
-import org.chromium.weblayer.Page;
-import org.chromium.weblayer.Tab;
-import org.chromium.weblayer.TabCallback;
-import org.chromium.weblayer.TabListCallback;
-import org.chromium.weblayer.WebLayer;
-import org.chromium.weblayer.shell.InstrumentationActivity;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.net.test.util.TestWebServer;
+import org.monyhar.weblayer.Browser;
+import org.monyhar.weblayer.LoadError;
+import org.monyhar.weblayer.NavigateParams;
+import org.monyhar.weblayer.Navigation;
+import org.monyhar.weblayer.NavigationCallback;
+import org.monyhar.weblayer.NavigationController;
+import org.monyhar.weblayer.NavigationState;
+import org.monyhar.weblayer.Page;
+import org.monyhar.weblayer.Tab;
+import org.monyhar.weblayer.TabCallback;
+import org.monyhar.weblayer.TabListCallback;
+import org.monyhar.weblayer.WebLayer;
+import org.monyhar.weblayer.shell.InstrumentationActivity;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;

@@ -110,7 +110,7 @@ class ChallengeResponseFakeUserDataAuthClient : public FakeUserDataAuthClient {
         CertificateProviderServiceFactory::GetForBrowserContext(
             GetOriginalSigninProfile());
     // Note: The real cryptohome would call the "ChallengeKey" D-Bus method
-    // exposed by Chrome via org.chromium.CryptohomeKeyDelegateInterface, but
+    // exposed by Chrome via org.monyhar.CryptohomeKeyDelegateInterface, but
     // we're directly requesting the extension in order to avoid extra
     // complexity in this UI-oriented browser test.
     certificate_provider_service->RequestSignatureBySpki(

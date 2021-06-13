@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import android.os.Build;
 
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.browserservices.ui.splashscreen.SplashController;
-import org.chromium.chrome.browser.browserservices.ui.splashscreen.SplashscreenObserver;
-import org.chromium.chrome.browser.dependency_injection.ActivityScope;
-import org.chromium.content_public.browser.ScreenOrientationProvider;
-import org.chromium.device.mojom.ScreenOrientationLockType;
-import org.chromium.ui.base.ActivityWindowAndroid;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.browserservices.ui.splashscreen.SplashController;
+import org.monyhar.chrome.browser.browserservices.ui.splashscreen.SplashscreenObserver;
+import org.monyhar.chrome.browser.dependency_injection.ActivityScope;
+import org.monyhar.content_public.browser.ScreenOrientationProvider;
+import org.monyhar.device.mojom.ScreenOrientationLockType;
+import org.monyhar.ui.base.ActivityWindowAndroid;
 
 import javax.inject.Inject;
 

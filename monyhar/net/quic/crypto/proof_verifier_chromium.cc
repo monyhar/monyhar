@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#include "net/quic/crypto/proof_verifier_chromium.h"
+#include "net/quic/crypto/proof_verifier_monyhar.h"
 
 #include <utility>
 
@@ -625,12 +625,12 @@ quic::QuicAsyncStatus ProofVerifierChromium::VerifyProof(
     *error_details = "Missing context";
     return quic::QUIC_FAILURE;
   }
-  const ProofVerifyContextChromium* chromium_context =
+  const ProofVerifyContextChromium* monyhar_context =
       reinterpret_cast<const ProofVerifyContextChromium*>(verify_context);
   std::unique_ptr<Job> job = std::make_unique<Job>(
       this, cert_verifier_, ct_policy_enforcer_, transport_security_state_,
-      sct_auditing_delegate_, chromium_context->cert_verify_flags,
-      chromium_context->net_log);
+      sct_auditing_delegate_, monyhar_context->cert_verify_flags,
+      monyhar_context->net_log);
   quic::QuicAsyncStatus status = job->VerifyProof(
       hostname, port, server_config, quic_version, chlo_hash, certs, cert_sct,
       signature, error_details, verify_details, std::move(callback));
@@ -656,12 +656,12 @@ quic::QuicAsyncStatus ProofVerifierChromium::VerifyCertChain(
     *error_details = "Missing context";
     return quic::QUIC_FAILURE;
   }
-  const ProofVerifyContextChromium* chromium_context =
+  const ProofVerifyContextChromium* monyhar_context =
       reinterpret_cast<const ProofVerifyContextChromium*>(verify_context);
   std::unique_ptr<Job> job = std::make_unique<Job>(
       this, cert_verifier_, ct_policy_enforcer_, transport_security_state_,
-      sct_auditing_delegate_, chromium_context->cert_verify_flags,
-      chromium_context->net_log);
+      sct_auditing_delegate_, monyhar_context->cert_verify_flags,
+      monyhar_context->net_log);
   quic::QuicAsyncStatus status =
       job->VerifyCertChain(hostname, port, certs, ocsp_response, cert_sct,
                            error_details, verify_details, std::move(callback));

@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.partnerbookmarks;
+package org.monyhar.chrome.browser.partnerbookmarks;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
 
-import org.chromium.chrome.browser.partnercustomizations.PartnerBrowserCustomizations;
-import org.chromium.chrome.browser.version.ChromeVersionInfo;
+import org.monyhar.chrome.browser.partnercustomizations.PartnerBrowserCustomizations;
+import org.monyhar.chrome.browser.version.ChromeVersionInfo;
 
 /**
  * The Java counterpart for the C++ partner bookmarks shim.

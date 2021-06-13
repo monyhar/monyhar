@@ -147,7 +147,7 @@ class WaylandToplevelWindow : public WaylandWindow,
   // (e.g. mojo) to identify the window.
   std::string window_unique_id_;
 #else
-  // Id of the chromium app passed through
+  // Id of the monyhar app passed through
   // PlatformWindowInitProperties::wm_class_class. This is used by Wayland
   // compositor to identify the app, unite it's windows into the same stack of
   // windows and find *.desktop file to set various preferences including icons.

@@ -38,7 +38,7 @@ void ConvertJavaStringToUTF8(JNIEnv* env, jstring str, std::string* result) {
     return;
   }
   // JNI's GetStringUTFChars() returns strings in Java "modified" UTF8, so
-  // instead get the String in UTF16 and convert using chromium's conversion
+  // instead get the String in UTF16 and convert using monyhar's conversion
   // function that yields plain (non Java-modified) UTF8.
   const jchar* chars = env->GetStringChars(str, NULL);
   DCHECK(chars);

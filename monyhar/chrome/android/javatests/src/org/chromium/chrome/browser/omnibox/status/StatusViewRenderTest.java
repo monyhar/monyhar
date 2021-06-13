@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.status;
+package org.monyhar.chrome.browser.omnibox.status;
 
 import static org.mockito.Mockito.doReturn;
 
-import static org.chromium.content_public.browser.test.util.TestThreadUtils.runOnUiThreadBlocking;
+import static org.monyhar.content_public.browser.test.util.TestThreadUtils.runOnUiThreadBlocking;
 
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
@@ -25,24 +25,24 @@ import org.mockito.MockitoAnnotations;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.omnibox.NewTabPageDelegate;
-import org.chromium.chrome.browser.omnibox.SearchEngineLogoUtils;
-import org.chromium.chrome.browser.omnibox.status.StatusProperties.PermissionIconResource;
-import org.chromium.chrome.browser.omnibox.status.StatusProperties.StatusIconResource;
-import org.chromium.chrome.browser.toolbar.LocationBarModel;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.util.ChromeRenderTestRule;
-import org.chromium.chrome.test.util.ToolbarTestUtils;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.browser_ui.site_settings.ContentSettingsResources;
-import org.chromium.components.browser_ui.widget.CompositeTouchDelegate;
-import org.chromium.components.content_settings.ContentSettingValues;
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
-import org.chromium.ui.test.util.DummyUiActivityTestCase;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.omnibox.NewTabPageDelegate;
+import org.monyhar.chrome.browser.omnibox.SearchEngineLogoUtils;
+import org.monyhar.chrome.browser.omnibox.status.StatusProperties.PermissionIconResource;
+import org.monyhar.chrome.browser.omnibox.status.StatusProperties.StatusIconResource;
+import org.monyhar.chrome.browser.toolbar.LocationBarModel;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.util.ChromeRenderTestRule;
+import org.monyhar.chrome.test.util.ToolbarTestUtils;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.browser_ui.site_settings.ContentSettingsResources;
+import org.monyhar.components.browser_ui.widget.CompositeTouchDelegate;
+import org.monyhar.components.content_settings.ContentSettingValues;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.ui.test.util.DummyUiActivityTestCase;
 
 import java.io.IOException;
 
@@ -84,8 +84,8 @@ public class StatusViewRenderTest extends DummyUiActivityTestCase {
 
             mStatusView = getActivity()
                                   .getLayoutInflater()
-                                  .inflate(org.chromium.chrome.R.layout.location_status, view, true)
-                                  .findViewById(org.chromium.chrome.R.id.location_bar_status);
+                                  .inflate(org.monyhar.chrome.R.layout.location_status, view, true)
+                                  .findViewById(org.monyhar.chrome.R.id.location_bar_status);
             mStatusView.setCompositeTouchDelegate(new CompositeTouchDelegate(view));
             // clang-format off
             mLocationBarModel = new LocationBarModel(mStatusView.getContext(),

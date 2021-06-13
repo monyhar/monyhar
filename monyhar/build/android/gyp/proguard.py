@@ -377,7 +377,7 @@ def _OptimizeWithR8(options,
                               fail_on_output=options.warnings_as_errors)
     except build_utils.CalledProcessError as err:
       debugging_link = ('\n\nR8 failed. Please see {}.'.format(
-          'https://chromium.googlesource.com/chromium/src/+/HEAD/build/'
+          'https://monyhar.googlesource.com/monyhar/src/+/HEAD/build/'
           'android/docs/java_optimization.md#Debugging-common-failures\n'))
       raise build_utils.CalledProcessError(err.cwd, err.args,
                                            err.output + debugging_link)
@@ -480,7 +480,7 @@ def _CheckForMissingSymbols(r8_path, dex_files, classpath, warnings_as_errors,
 
         # trichrome_webview_google_bundle contains this missing reference.
         # TODO(crbug.com/1142530): Fix this missing reference properly.
-        'org.chromium.build.NativeLibraries',
+        'org.monyhar.build.NativeLibraries',
 
         # TODO(agrieve): Exclude these only when use_jacoco_coverage=true.
         'java.lang.instrument.ClassFileTransformer',
@@ -518,7 +518,7 @@ out/Release/apks/YourApk.apk > dex.txt
           stderr += """
 You may need to update build configs to run FragmentActivityReplacer for
 additional targets. See
-https://chromium.googlesource.com/chromium/src.git/+/main/docs/ui/android/bytecode_rewriting.md.
+https://monyhar.googlesource.com/monyhar/src.git/+/main/docs/ui/android/bytecode_rewriting.md.
 """
       elif had_unfiltered_items:
         # Left only with empty headings. All indented items filtered out.
@@ -587,7 +587,7 @@ def _CreateDynamicConfig(options):
 
   _min_api = int(options.min_api) if options.min_api else 0
   for api_level, version_code in _API_LEVEL_VERSION_CODE:
-    annotation_name = 'org.chromium.base.annotations.VerifiesOn' + version_code
+    annotation_name = 'org.monyhar.base.annotations.VerifiesOn' + version_code
     if api_level > _min_api:
       ret.append('-keep @interface %s' % annotation_name)
       ret.append("""\

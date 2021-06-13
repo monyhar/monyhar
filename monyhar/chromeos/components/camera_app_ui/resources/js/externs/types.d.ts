@@ -130,7 +130,7 @@ interface StorageManager {
 }
 
 // Chrome WebUI specific helper.
-// https://source.chromium.org/chromium/chromium/src/+/main:ui/webui/resources/js/load_time_data.js
+// https://source.monyhar.org/monyhar/monyhar/src/+/main:ui/webui/resources/js/load_time_data.js
 
 declare var loadTimeData: {
   getString(id: string): string;

@@ -14,7 +14,7 @@ from telemetry.timeline import chrome_trace_category_filter
 from telemetry.web_perf import timeline_based_measurement
 
 
-@benchmark.Info(emails=['vovoy@chromium.org'],
+@benchmark.Info(emails=['vovoy@monyhar.org'],
                  component='OS>Performance')
 class TabSwitchingTypical25(perf_benchmark.PerfBenchmark):
   """This test records the MPArch.RWH_TabSwitchPaintDuration histogram.

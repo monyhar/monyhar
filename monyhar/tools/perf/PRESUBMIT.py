@@ -4,7 +4,7 @@
 
 """Presubmit script for changes affecting tools/perf/.
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See http://dev.monyhar.org/developers/how-tos/depottools/presubmit-scripts
 for more details about the presubmit API built into depot_tools.
 """
 
@@ -38,20 +38,20 @@ def _CommonChecks(input_api, output_api, block_on_failure=False):
 
 def _GetPathsToPrepend(input_api):
   perf_dir = input_api.PresubmitLocalPath()
-  chromium_src_dir = input_api.os_path.join(perf_dir, '..', '..')
+  monyhar_src_dir = input_api.os_path.join(perf_dir, '..', '..')
   telemetry_dir = input_api.os_path.join(
-      chromium_src_dir, 'third_party', 'catapult', 'telemetry')
+      monyhar_src_dir, 'third_party', 'catapult', 'telemetry')
   typ_dir = input_api.os_path.join(
-       chromium_src_dir, 'third_party', 'catapult', 'third_party', 'typ')
+       monyhar_src_dir, 'third_party', 'catapult', 'third_party', 'typ')
   experimental_dir = input_api.os_path.join(
-      chromium_src_dir, 'third_party', 'catapult', 'experimental')
+      monyhar_src_dir, 'third_party', 'catapult', 'experimental')
   tracing_dir = input_api.os_path.join(
-      chromium_src_dir, 'third_party', 'catapult', 'tracing')
+      monyhar_src_dir, 'third_party', 'catapult', 'tracing')
   py_utils_dir = input_api.os_path.join(
-      chromium_src_dir, 'third_party', 'catapult', 'common', 'py_utils')
+      monyhar_src_dir, 'third_party', 'catapult', 'common', 'py_utils')
   android_pylib_dir = input_api.os_path.join(
-      chromium_src_dir, 'build', 'android')
-  testing_dir = input_api.os_path.join(chromium_src_dir, 'testing')
+      monyhar_src_dir, 'build', 'android')
+  testing_dir = input_api.os_path.join(monyhar_src_dir, 'testing')
   return [
       telemetry_dir,
       typ_dir,

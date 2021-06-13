@@ -15,10 +15,10 @@ import tempfile
 
 # How to patch libxml2 in Chromium:
 #
-# 1. Write a .patch file and add it to third_party/libxml/chromium.
-# 2. Apply the patch in src: patch -p1 <../chromium/foo.patch
+# 1. Write a .patch file and add it to third_party/libxml/monyhar.
+# 2. Apply the patch in src: patch -p1 <../monyhar/foo.patch
 # 3. Add the patch to the list of patches in this file.
-# 4. Update README.chromium with the provenance of the patch.
+# 4. Update README.monyhar with the provenance of the patch.
 # 5. Upload a change with the modified documentation, roll script,
 #    patch, applied patch and any other relevant changes like
 #    regression tests. Go through the usual review and commit process.
@@ -45,31 +45,31 @@ import tempfile
 #    This will be the upstream version of libxml you are rolling to.
 #
 # 2. On Linux, in the Chromium src director:
-#    a. third_party/libxml/chromium/roll.py --linux /path/to/libxml2
+#    a. third_party/libxml/monyhar/roll.py --linux /path/to/libxml2
 #
 #    If this fails, it may be a patch no longer applies. Reset to
 #    head; modify the patch files, this script, and
-#    README.chromium; then commit the result and run it again.
+#    README.monyhar; then commit the result and run it again.
 #
 #    b. Upload a CL, but do not Start Review.
 #
 # 2. On Windows, in the Chromium src directory:
 #    a. git cl patch <Gerrit Issue ID>
-#    b. third_party\libxml\chromium\roll.py --win32
+#    b. third_party\libxml\monyhar\roll.py --win32
 #    c. git cl upload
 #
 # 3. On Mac, in the Chromium src directory:
 #    a. git cl patch <Gerrit Issue ID>
-#    b. third_party/libxml/chromium/roll.py --mac --icu4c_path=~/homebrew/opt/icu4c
-#    c. Make and commit any final changes to README.chromium, BUILD.gn, etc.
+#    b. third_party/libxml/monyhar/roll.py --mac --icu4c_path=~/homebrew/opt/icu4c
+#    c. Make and commit any final changes to README.monyhar, BUILD.gn, etc.
 #    d. git cl upload
 #    e. Complete the review as usual
 
 PATCHES = [
-    'chromium-issue-599427.patch',
-    'chromium-issue-628581.patch',
+    'monyhar-issue-599427.patch',
+    'monyhar-issue-628581.patch',
     'libxml2-2.9.4-security-xpath-nodetab-uaf.patch',
-    'chromium-issue-708434.patch',
+    'monyhar-issue-708434.patch',
 ]
 
 
@@ -330,7 +330,7 @@ def prepare_libxml_distribution(src_path, libxml2_repo_path, temp_dir):
             print('applying %s' % patch)
             subprocess.check_call(
                 'patch -p1 --fuzz=0 < %s' % os.path.join(
-                    src_path, THIRD_PARTY_LIBXML_SRC, '..', 'chromium', patch),
+                    src_path, THIRD_PARTY_LIBXML_SRC, '..', 'monyhar', patch),
                 shell=True)
 
     with WorkingDir(temp_config_path):
@@ -370,7 +370,7 @@ def roll_libxml_linux(src_path, libxml2_repo_path):
 
         with WorkingDir(THIRD_PARTY_LIBXML_SRC):
             # Put the version number is the README file
-            sed_in_place('../README.chromium',
+            sed_in_place('../README.monyhar',
                          's/Version: .*$/Version: %s/' % commit)
 
             with WorkingDir('../linux'):
@@ -423,7 +423,7 @@ def roll_libxml_mac(src_path, icu4c_path):
 
     with WorkingDir(full_path_to_third_party_libxml):
         commit = subprocess.check_output(['awk', '/Version:/ {print $2}',
-                                          'README.chromium'])
+                                          'README.monyhar'])
         remove_tracked_files(FILES_TO_REMOVE)
         commit_message = 'Roll libxml to %s' % commit
         git('commit', '-am', commit_message)

@@ -41,7 +41,7 @@ def PostProcess(df):
   df.loc[is_percentage, 'value'] = df['value'] * 100
 
   # Remove unused columns to save space in the output csv.
-  for col in ('point_id', 'chromium_rev', 'clank_rev', 'trace_url'):
+  for col in ('point_id', 'monyhar_rev', 'clank_rev', 'trace_url'):
     del df[col]
 
   return df

@@ -23,7 +23,7 @@ namespace ui {
 // core value and 0 or or more qualifiers.
 //
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.ui.base
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.ui.base
 enum PageTransition {
   PAGE_TRANSITION_FIRST = 0,
 

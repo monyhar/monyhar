@@ -10,7 +10,7 @@ import "ui/gfx/geometry/mojom/geometry.mojom";
 
 // Provides mojo clients with AndroidOverlay instances.  This will live in the
 // browser, with clients in the GPU process or renderer.  Note that if you're
-// trying to use overlays somewhere in chromium, then this isn't the interface
+// trying to use overlays somewhere in monyhar, then this isn't the interface
 // you're looking for.  Please see media::AndroidOverlayFactory instead.  The
 // AndroidOverlayProvider mojo client implements that interface.
 interface AndroidOverlayProvider {
@@ -23,7 +23,7 @@ interface AndroidOverlayProvider {
 
 // One overlay instance.  This will be provided by the provider to clients
 // elsewhere.  Note that you probably want to use media::AndroidOverlay instead
-// of this if you're trying to use overlays somewhere in chromium.  The mojo
+// of this if you're trying to use overlays somewhere in monyhar.  The mojo
 // client here is an implementation detail of AndroidOverlay via mojo.
 interface AndroidOverlay {
   // Cause a layout to occur later.

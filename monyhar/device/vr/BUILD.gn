@@ -313,7 +313,7 @@ if (enable_openxr) {
 
 if (enable_gvr_services) {
   java_sources_needing_jni =
-      [ "android/java/src/org/chromium/device/vr/NonPresentingGvrContext.java" ]
+      [ "android/java/src/org/monyhar/device/vr/NonPresentingGvrContext.java" ]
 
   generate_jni("jni_headers") {
     sources = java_sources_needing_jni

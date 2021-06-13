@@ -22,4 +22,4 @@ your .gclient configuration.
 
 
 Local Additions:
-* gn file for building in chromium
+* gn file for building in monyhar

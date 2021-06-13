@@ -64,7 +64,7 @@
   },
   'android_webview_unittests': {
     'remove_from': [
-      # On chromium.android, these do not need to run prior to M.
+      # On monyhar.android, these do not need to run prior to M.
       'android-lollipop-arm-rel',
     ],
   },
@@ -398,7 +398,7 @@
           ],
         },
       },
-      # tryserver.chromium.android
+      # tryserver.monyhar.android
       'android_blink_rel': {
         'args': [
           '--release',
@@ -549,7 +549,7 @@
           'shards': 40,
         },
       },
-      'Linux - Future (dbg)': {  # client.v8.chromium
+      'Linux - Future (dbg)': {  # client.v8.monyhar
         'swarming': {
           'shards': 10,
         },
@@ -1173,12 +1173,12 @@
       },
       'WebRTC Chromium FYI Android Tests (dbg) (L Nexus5)': {
         'args': [
-          '--test-launcher-filter-file=../../testing/buildbot/filters/chromium.webrtc.fyi.android.tests.dbg.content_browsertests.filter',
+          '--test-launcher-filter-file=../../testing/buildbot/filters/monyhar.webrtc.fyi.android.tests.dbg.content_browsertests.filter',
         ],
       },
       'WebRTC Chromium FYI Android Tests (dbg) (M Nexus5X)': {
         'args': [
-          '--test-launcher-filter-file=../../testing/buildbot/filters/chromium.webrtc.fyi.android.tests.dbg.content_browsertests.filter',
+          '--test-launcher-filter-file=../../testing/buildbot/filters/monyhar.webrtc.fyi.android.tests.dbg.content_browsertests.filter',
         ],
       }
       ,
@@ -1505,7 +1505,7 @@
             {
               'gpu': '10de:1cb3',
               'os': 'Ubuntu',
-              'pool': 'chromium.tests.gpu',
+              'pool': 'monyhar.tests.gpu',
             },
           ],
         },
@@ -1520,7 +1520,7 @@
             {
               'gpu': '10de:1cb3',
               'os': 'Ubuntu',
-              'pool': 'chromium.tests.gpu',
+              'pool': 'monyhar.tests.gpu',
             },
           ],
         },
@@ -1536,7 +1536,7 @@
             {
               'gpu': '10de:1cb3',
               'os': 'Ubuntu',
-              'pool': 'chromium.tests.gpu',
+              'pool': 'monyhar.tests.gpu',
             },
           ],
         },
@@ -1551,7 +1551,7 @@
             {
               'gpu': '10de:1cb3',
               'os': 'Ubuntu',
-              'pool': 'chromium.tests.gpu',
+              'pool': 'monyhar.tests.gpu',
             },
           ],
         },
@@ -1684,7 +1684,7 @@
       'CrWinAsan(dll)', # https://crbug.com/935598
     ],
     'modifications': {
-      'Linux - Future (dbg)': {  # client.v8.chromium
+      'Linux - Future (dbg)': {  # client.v8.monyhar
         'swarming': {
           'shards': 3,
         },
@@ -2665,7 +2665,7 @@
       'Linux Release (NVIDIA)',
     ],
   },
-  'telemetry_chromium_minidump_unittests': {
+  'telemetry_monyhar_minidump_unittests': {
     'remove_from': [
       'android-marshmallow-x86-rel-non-cq', # crbug.com/1084352
     ],
@@ -2734,7 +2734,7 @@
           '--jobs=1',
         ],
       },
-      'linux-chromium-tests-staging-tests': {
+      'linux-monyhar-tests-staging-tests': {
         'args': [
           '--xvfb',
           '--jobs=1',
@@ -2765,7 +2765,7 @@
       'Mac10.13 Tests',
       'Mac10.15 Tests',
       'Mac10.15 Tests (dbg)',
-      'Linux - Future (dbg)',  # client.v8.chromium
+      'Linux - Future (dbg)',  # client.v8.monyhar
       'Win10 Tests x64',
       'Win10 Tests x64 (dbg)',
     ],
@@ -3160,12 +3160,12 @@
     'modifications': {
       'android-weblayer-10-x86-rel-tests': {
         'args': [
-          '--replace-system-package=org.chromium.weblayer.shell,apks/WebLayerShellSystemWebView.apk'
+          '--replace-system-package=org.monyhar.weblayer.shell,apks/WebLayerShellSystemWebView.apk'
         ]
       },
       'android-weblayer-marshmallow-x86-rel-tests': {
         'args': [
-          '--replace-system-package=org.chromium.weblayer.shell,apks/WebLayerShellSystemWebView.apk'
+          '--replace-system-package=org.monyhar.weblayer.shell,apks/WebLayerShellSystemWebView.apk'
         ]
       }
     }
@@ -3175,7 +3175,7 @@
       # TODO(crbug.com/1189403): Remove the filter once the issue is fixed.
       'android-11-x86-fyi-rel': {
         'args': [
-          '--gtest_filter=-org.chromium.weblayer.test.MediaCaptureTest.*',
+          '--gtest_filter=-org.monyhar.weblayer.test.MediaCaptureTest.*',
         ],
       },
     },
@@ -3244,14 +3244,14 @@
       'android-code-coverage-native', # Does not generate profraw data.
       'android-pie-arm64-coverage-experimental-rel', # Does not generate profraw data.
 
-      # On chromium.swarm, this should possibly be being run (or removed
+      # On monyhar.swarm, this should possibly be being run (or removed
       # from android-marshmallow-arm64-rel-swarming).
       'android-lollipop-arm-rel-swarming',
       # https://crbug.com/1147531 - covered on pie
       'android-marshmallow-arm64-rel',
     ],
     'modifications': {
-      # chromium.android.fyi
+      # monyhar.android.fyi
       'Android WebView P FYI (rel)': {
         'args': [
           '--annotation',
@@ -3267,7 +3267,7 @@
       'android-11-x86-fyi-rel': {
         'args': [
           # TODO(crbug.com/1189746) Enable this test once the issue is fixed.
-          '--gtest_filter=-org.chromium.net.NetworkChangeNotifierTest.testNetworkChangeNotifierJavaObservers',
+          '--gtest_filter=-org.monyhar.net.NetworkChangeNotifierTest.testNetworkChangeNotifierJavaObservers',
         ],
       },
       'android-pie-arm64-rel': {

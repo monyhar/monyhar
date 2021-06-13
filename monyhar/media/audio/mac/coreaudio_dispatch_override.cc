@@ -188,7 +188,7 @@ bool InitializeCoreAudioDispatchOverride() {
 #if defined(ARCH_CPU_X86_64)
   const auto* header = reinterpret_cast<const mach_header*>(info.dli_fbase);
   g_pause_resume_queue =
-      dispatch_queue_create("org.chromium.CoreAudioPauseResumeQueue", nullptr);
+      dispatch_queue_create("org.monyhar.CoreAudioPauseResumeQueue", nullptr);
   // The reinterpret_cast<> is needed because in the macOS 10.14 SDK, the return
   // type of dispatch_get_global_queue changed to return a subtype of
   // dispatch_queue_t* instead of dispatch_queue_t* itself, and T(*)(...) isn't

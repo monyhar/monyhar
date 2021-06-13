@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.media;
+package org.monyhar.components.browser_ui.media;
 
 import android.content.Intent;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordHistogram;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -29,7 +29,7 @@ public class MediaNotificationUma {
     }
 
     public static final String INTENT_EXTRA_NAME =
-            "org.chromium.chrome.browser.metrics.MediaNotificationUma.EXTRA_CLICK_SOURCE";
+            "org.monyhar.chrome.browser.metrics.MediaNotificationUma.EXTRA_CLICK_SOURCE";
 
     /**
      * Record the UMA as specified by {@link intent}. The {@link intent} should contain intent extra

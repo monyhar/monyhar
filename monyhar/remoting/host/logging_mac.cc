@@ -17,7 +17,7 @@ namespace remoting {
 
 namespace {
 
-const char kChromotingLoggingFacility[] = "org.chromium.chromoting";
+const char kChromotingLoggingFacility[] = "org.monyhar.chromoting";
 
 // Define a scoper for objects allocated by asl_new.
 struct ScopedAslMsgTraits {
@@ -32,7 +32,7 @@ typedef base::ScopedGeneric<aslmsg, ScopedAslMsgTraits> ScopedAslMsg;
 
 // Logging message handler that writes to syslog.
 // The log can be obtained by running the following in a terminal:
-// syslog -k Facility org.chromium.chromoting
+// syslog -k Facility org.monyhar.chromoting
 bool LogMessageToAsl(
     logging::LogSeverity severity,
     const char* file,

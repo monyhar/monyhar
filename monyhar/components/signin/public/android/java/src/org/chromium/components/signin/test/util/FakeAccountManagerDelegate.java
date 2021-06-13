@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.signin.test.util;
+package org.monyhar.components.signin.test.util;
 
 import android.accounts.Account;
 import android.accounts.AuthenticatorDescription;
@@ -12,14 +12,14 @@ import android.content.Intent;
 import androidx.annotation.GuardedBy;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ThreadUtils;
-import org.chromium.components.signin.AccessTokenData;
-import org.chromium.components.signin.AccountManagerDelegate;
-import org.chromium.components.signin.AccountUtils;
-import org.chromium.components.signin.AccountsChangeObserver;
-import org.chromium.components.signin.AuthException;
-import org.chromium.components.signin.ProfileDataSource;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.components.signin.AccessTokenData;
+import org.monyhar.components.signin.AccountManagerDelegate;
+import org.monyhar.components.signin.AccountUtils;
+import org.monyhar.components.signin.AccountsChangeObserver;
+import org.monyhar.components.signin.AuthException;
+import org.monyhar.components.signin.ProfileDataSource;
 
 import java.util.ArrayList;
 import java.util.LinkedHashSet;

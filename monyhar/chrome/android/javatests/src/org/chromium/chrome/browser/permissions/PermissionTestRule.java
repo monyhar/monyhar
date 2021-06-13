@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.permissions;
+package org.monyhar.chrome.browser.permissions;
 
 import android.view.View;
 
@@ -11,25 +11,25 @@ import androidx.annotation.IdRes;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.ChromeTabUtils;
-import org.chromium.chrome.test.util.InfoBarTestAnimationListener;
-import org.chromium.chrome.test.util.InfoBarUtil;
-import org.chromium.components.browser_ui.modaldialog.ModalDialogTestUtils;
-import org.chromium.components.browser_ui.modaldialog.R;
-import org.chromium.components.browser_ui.modaldialog.TabModalPresenter;
-import org.chromium.components.infobars.InfoBar;
-import org.chromium.components.permissions.PermissionDialogController;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.content_public.browser.test.util.TouchCommon;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.modaldialog.ModalDialogManager.ModalDialogType;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.ChromeTabUtils;
+import org.monyhar.chrome.test.util.InfoBarTestAnimationListener;
+import org.monyhar.chrome.test.util.InfoBarUtil;
+import org.monyhar.components.browser_ui.modaldialog.ModalDialogTestUtils;
+import org.monyhar.components.browser_ui.modaldialog.R;
+import org.monyhar.components.browser_ui.modaldialog.TabModalPresenter;
+import org.monyhar.components.infobars.InfoBar;
+import org.monyhar.components.permissions.PermissionDialogController;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.content_public.browser.test.util.TouchCommon;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.modaldialog.ModalDialogManager.ModalDialogType;
 
 /**
  * TestRule for permissions UI testing on Android.

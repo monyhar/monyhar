@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.merchant_viewer;
+package org.monyhar.chrome.browser.merchant_viewer;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.CallbackController;
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.chrome.browser.profiles.Profile;
+import org.monyhar.base.CallbackController;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.chrome.browser.profiles.Profile;
 
 import java.util.HashMap;
 import java.util.Map;

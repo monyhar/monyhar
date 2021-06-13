@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.findinpage;
+package org.monyhar.chrome.browser.findinpage;
 
 import android.animation.Animator;
 import android.annotation.SuppressLint;
@@ -35,24 +35,24 @@ import androidx.annotation.VisibleForTesting;
 import androidx.core.view.accessibility.AccessibilityEventCompat;
 import androidx.core.view.inputmethod.EditorInfoCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.ThreadUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabObserver;
-import org.chromium.chrome.browser.tab.TabSelectionType;
-import org.chromium.chrome.browser.tabmodel.TabModel;
-import org.chromium.chrome.browser.tabmodel.TabModelObserver;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorObserver;
-import org.chromium.components.browser_ui.widget.text.VerticallyFixedEditText;
-import org.chromium.components.find_in_page.FindInPageBridge;
-import org.chromium.components.find_in_page.FindMatchRectsDetails;
-import org.chromium.components.find_in_page.FindNotificationDetails;
-import org.chromium.components.find_in_page.FindResultBar;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.url.GURL;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabObserver;
+import org.monyhar.chrome.browser.tab.TabSelectionType;
+import org.monyhar.chrome.browser.tabmodel.TabModel;
+import org.monyhar.chrome.browser.tabmodel.TabModelObserver;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorObserver;
+import org.monyhar.components.browser_ui.widget.text.VerticallyFixedEditText;
+import org.monyhar.components.find_in_page.FindInPageBridge;
+import org.monyhar.components.find_in_page.FindMatchRectsDetails;
+import org.monyhar.components.find_in_page.FindNotificationDetails;
+import org.monyhar.components.find_in_page.FindResultBar;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.url.GURL;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

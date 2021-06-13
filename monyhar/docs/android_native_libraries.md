@@ -8,7 +8,7 @@ Chrome on Android.
  * Android L & M (ChromeModernPublic.aab):
    * `libchrome.so` is stored uncompressed within the apk (with the name
      `crazy.libchrome.so` to avoid extraction).
-   * It is loaded directly from the apk via `libchromium_android_linker.so`.
+   * It is loaded directly from the apk via `libmonyhar_android_linker.so`.
    * Only JNI_OnLoad is exported, since manual JNI registration is required
      (see [//base/android/jni_generator/README.md]).
  * Android N, O & P (MonochromePublic.aab):
@@ -16,14 +16,14 @@ Chrome on Android.
      AndroidManifest.xml attribute disables extraction).
    * It is loaded directly from the apk by the system linker.
    * It exports all JNI symbols and does not use explicit JNI registration.
-   * It is not loaded by `libchromium_android_linker.so` and relies on the
+   * It is not loaded by `libmonyhar_android_linker.so` and relies on the
      system's webview zygote for RELRO sharing.
  * Android Q (TrichromeChrome.aab + TrichromeLibrary.apk):
    * Trichrome uses the exact same native library as Monochrome:
      `libmonochrome.so`.
    * `libmonochrome.so` is stored in the shared APK (TrichromeLibrary.apk)
      so that it can be shared with TrichromeWebView.
-   * It is loaded by `libchromium_android_linker.so` using
+   * It is loaded by `libmonyhar_android_linker.so` using
      `android_dlopen_ext()` to enable RELRO sharing.
 
 [//base/android/jni_generator/README.md]: /base/android/jni_generator/README.md
@@ -138,8 +138,8 @@ Builds on | Variant | Chrome | Library | Webview
    * Frame Pointers can also be used to produce stack traces (but without entries for inlined functions).
 
 **How we use them:**
- * We disable unwind information (search for [`exclude_unwind_tables`](https://cs.chromium.org/search/?q=exclude_unwind_tables+file:%5C.gn&type=cs)).
- * For all architectures except arm64, we disable frame pointers in order to reduce binary size (search for [`enable_frame_pointers`](https://cs.chromium.org/search/?q=enable_frame_pointers+file:%5C.gn&type=cs)).
+ * We disable unwind information (search for [`exclude_unwind_tables`](https://cs.monyhar.org/search/?q=exclude_unwind_tables+file:%5C.gn&type=cs)).
+ * For all architectures except arm64, we disable frame pointers in order to reduce binary size (search for [`enable_frame_pointers`](https://cs.monyhar.org/search/?q=enable_frame_pointers+file:%5C.gn&type=cs)).
  * Crashes are unwound offline using `minidump_stackwalk`, which can create a stack trace given a snapshot of stack memory and the unstripped library (see [//docs/testing/using_breakpad_with_content_shell.md](testing/using_breakpad_with_content_shell.md))
  * To facilitate heap profiling, we ship unwind information to arm32 canary & dev channels as a separate file: `assets/unwind_cfi_32`
 
@@ -182,7 +182,7 @@ Builds on | Variant | Chrome | Library | Webview
    6. Renderer Process: If loading to the desired address succeeds:
       * Linker puts `GNU_RELRO` into private memory and applies relocations as per normal.
       * Afterwards, memory pages are compared against the shared memory and all identical pages are swapped out for ashmem ones (using `munmap()` & `mmap()`).
- * For a more detailed description, refer to comments in [Linker.java](https://cs.chromium.org/chromium/src/base/android/java/src/org/chromium/base/library_loader/Linker.java).
+ * For a more detailed description, refer to comments in [Linker.java](https://cs.monyhar.org/monyhar/src/base/android/java/src/org/monyhar/base/library_loader/Linker.java).
  * For Android N-P:
    * The OS maintains a RELRO file on disk with the contents of the GNU_RELRO segment.
    * All Android apps that contain a WebView load `libmonochrome.so` at the same virtual address and apply RELRO sharing against the memory-mapped RELRO file.
@@ -222,7 +222,7 @@ The lld linker is now capable of producing a [partitioned
 library](https://lld.llvm.org/Partitions.html), which is effectively an
 intermediate single file containing multiple libraries. A separate tool
 *(llvm-objcopy)* then splits the file into standalone .so files, invoked through
-a [partitioned shared library](https://cs.chromium.org/chromium/src/build/partitioned_shared_library.gni)
+a [partitioned shared library](https://cs.monyhar.org/monyhar/src/build/partitioned_shared_library.gni)
 GN template.
 
 The primary partition is Chrome's main library (eg. libchrome.so), and other
@@ -266,11 +266,11 @@ Partitioned libraries are usable when all of the following are true:
 
 ## Historical Tidbits
  * We used to use the system linker on M (`ModernLinker.java`).
-   * This was removed due to [poor performance](https://bugs.chromium.org/p/chromium/issues/detail?id=719977).
+   * This was removed due to [poor performance](https://bugs.monyhar.org/p/monyhar/issues/detail?id=719977).
  * We used to use `relocation_packer` to pack relocations after linking, which complicated our build system and caused many problems for our tools because it caused logical addresses to differ from physical addresses.
    * We now link with `lld`, which supports packed relocations natively and doesn't have these problems.
 
 ## See Also
  * [//docs/android_build_instructions.md#Multiple-Chrome-APK-Targets](android_build_instructions.md#Multiple-Chrome-APK-Targets)
- * [//third_party/android_crazy_linker/README.chromium](../third_party/android_crazy_linker/README.chromium)
+ * [//third_party/android_crazy_linker/README.monyhar](../third_party/android_crazy_linker/README.monyhar)
  * [//base/android/linker/BUILD.gn](../base/android/linker/BUILD.gn)

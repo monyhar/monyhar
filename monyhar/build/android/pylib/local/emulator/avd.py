@@ -195,8 +195,8 @@ class AvdConfig(object):
     This method:
      - installs the requisite system image
      - creates the AVD
-     - modifies the AVD's ini files to support running chromium tests
-       in chromium infrastructure
+     - modifies the AVD's ini files to support running monyhar tests
+       in monyhar infrastructure
      - optionally starts & stops the AVD for snapshotting (default no)
      - By default creates and uploads an instance of the AVD CIPD package
        (can be turned off by dry_run flag).

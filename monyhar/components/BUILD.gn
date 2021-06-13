@@ -306,7 +306,7 @@ test("components_unittests") {
       "//components/policy/content:unit_tests",
       "//components/query_tiles:unit_tests",
 
-      # TODO(chromium: 1169835) components / reporting / storage / resources: unit_tests
+      # TODO(monyhar: 1169835) components / reporting / storage / resources: unit_tests
       # can't be run on iOS until they are updated.
       "//components/reporting/storage/resources:unit_tests",
       "//components/safe_browsing/content/password_protection:password_protection_unittest",
@@ -556,7 +556,7 @@ repack("components_tests_pak") {
   if (is_chrome_branded) {
     sources += [ "${root_gen_dir}/components/strings/components_google_chrome_strings_en-US.pak" ]
   } else {
-    sources += [ "${root_gen_dir}/components/strings/components_chromium_strings_en-US.pak" ]
+    sources += [ "${root_gen_dir}/components/strings/components_monyhar_strings_en-US.pak" ]
   }
 }
 
@@ -591,10 +591,10 @@ if (is_android) {
       "//ui/android:ui_full_java",
     ]
     sources = [
-      "test/android/browsertests_apk/src/org/chromium/components_browsertests_apk/ComponentsBrowserTestsActivity.java",
-      "test/android/browsertests_apk/src/org/chromium/components_browsertests_apk/ComponentsBrowserTestsApplication.java",
+      "test/android/browsertests_apk/src/org/monyhar/components_browsertests_apk/ComponentsBrowserTestsActivity.java",
+      "test/android/browsertests_apk/src/org/monyhar/components_browsertests_apk/ComponentsBrowserTestsApplication.java",
     ]
-    resources_package = "org.chromium.components_browsertests_apk"
+    resources_package = "org.monyhar.components_browsertests_apk"
   }
 
   jinja_template("components_browsertests_manifest") {

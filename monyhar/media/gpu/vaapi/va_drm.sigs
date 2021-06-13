@@ -3,6 +3,6 @@
 // found in the LICENSE file.
 
 //------------------------------------------------
-// Functions from libva-drm used in chromium code.
+// Functions from libva-drm used in monyhar code.
 //------------------------------------------------
 VADisplay vaGetDisplayDRM(int fd);

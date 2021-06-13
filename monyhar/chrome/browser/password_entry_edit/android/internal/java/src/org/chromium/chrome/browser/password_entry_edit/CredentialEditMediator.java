@@ -2,28 +2,28 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_entry_edit;
+package org.monyhar.chrome.browser.password_entry_edit;
 
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEditError.DUPLICATE_USERNAME;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEditError.EMPTY_PASSWORD;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEditError.ERROR_COUNT;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEntryAction.ACTION_COUNT;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEntryAction.COPIED_PASSWORD;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEntryAction.COPIED_USERNAME;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEntryAction.DELETED;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEntryAction.EDITED_PASSWORD;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEntryAction.EDITED_USERNAME;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEntryAction.EDITED_USERNAME_AND_PASSWORD;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEntryAction.MASKED_PASSWORD;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEntryAction.UNMASKED_PASSWORD;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.DUPLICATE_USERNAME_ERROR;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.EMPTY_PASSWORD_ERROR;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.FEDERATION_ORIGIN;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.PASSWORD;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.PASSWORD_VISIBLE;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.UI_DISMISSED_BY_NATIVE;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.URL_OR_APP;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.USERNAME;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEditError.DUPLICATE_USERNAME;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEditError.EMPTY_PASSWORD;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEditError.ERROR_COUNT;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEntryAction.ACTION_COUNT;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEntryAction.COPIED_PASSWORD;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEntryAction.COPIED_USERNAME;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEntryAction.DELETED;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEntryAction.EDITED_PASSWORD;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEntryAction.EDITED_USERNAME;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEntryAction.EDITED_USERNAME_AND_PASSWORD;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEntryAction.MASKED_PASSWORD;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEntryAction.UNMASKED_PASSWORD;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.DUPLICATE_USERNAME_ERROR;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.EMPTY_PASSWORD_ERROR;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.FEDERATION_ORIGIN;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.PASSWORD;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.PASSWORD_VISIBLE;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.UI_DISMISSED_BY_NATIVE;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.URL_OR_APP;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.USERNAME;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -32,16 +32,16 @@ import android.content.res.Resources;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.base.Callback;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.password_entry_edit.CredentialEditCoordinator.CredentialActionDelegate;
-import org.chromium.chrome.browser.password_entry_edit.CredentialEntryFragmentViewBase.UiActionHandler;
-import org.chromium.chrome.browser.password_manager.ConfirmationDialogHelper;
-import org.chromium.chrome.browser.password_manager.settings.PasswordAccessReauthenticationHelper;
-import org.chromium.chrome.browser.password_manager.settings.PasswordAccessReauthenticationHelper.ReauthReason;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModel.ReadableObjectPropertyKey;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.Callback;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.password_entry_edit.CredentialEditCoordinator.CredentialActionDelegate;
+import org.monyhar.chrome.browser.password_entry_edit.CredentialEntryFragmentViewBase.UiActionHandler;
+import org.monyhar.chrome.browser.password_manager.ConfirmationDialogHelper;
+import org.monyhar.chrome.browser.password_manager.settings.PasswordAccessReauthenticationHelper;
+import org.monyhar.chrome.browser.password_manager.settings.PasswordAccessReauthenticationHelper.ReauthReason;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModel.ReadableObjectPropertyKey;
+import org.monyhar.ui.widget.Toast;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

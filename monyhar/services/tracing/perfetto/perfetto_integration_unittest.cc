@@ -35,7 +35,7 @@ namespace tracing {
 namespace {
 
 const char kPerfettoTestDataSourceName[] =
-    "org.chromium.chrome_integration_unittest";
+    "org.monyhar.chrome_integration_unittest";
 
 std::string GetPerfettoProducerName() {
   return base::StrCat({mojom::kPerfettoProducerNamePrefix, "123"});

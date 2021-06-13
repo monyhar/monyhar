@@ -264,9 +264,9 @@ bool LaunchPrintCommandFromTemplate(const std::wstring& command_template,
 }
 
 // Launches a page to allow the user to download chrome.
-// TODO(abodenha@chromium.org) Point to a custom page explaining what's wrong
+// TODO(abodenha@monyhar.org) Point to a custom page explaining what's wrong
 // rather than the generic chrome download page.  See
-// http://code.google.com/p/chromium/issues/detail?id=112019
+// http://code.google.com/p/monyhar/issues/detail?id=112019
 void LaunchChromeDownloadPage() {
   if (kIsUnittest)
     return;
@@ -475,7 +475,7 @@ BOOL WINAPI Monitor2StartDocPort(HANDLE port_handle,
     return FALSE;
   }
   if (!ValidateCurrentUser()) {
-    // TODO(abodenha@chromium.org) Abort the print job.
+    // TODO(abodenha@monyhar.org) Abort the print job.
     return FALSE;
   }
   PortData* port_data = reinterpret_cast<PortData*>(port_handle);
@@ -512,7 +512,7 @@ BOOL WINAPI Monitor2WritePort(HANDLE port_handle,
                               DWORD* bytes_written) {
   PortData* port_data = reinterpret_cast<PortData*>(port_handle);
   if (!ValidateCurrentUser()) {
-    // TODO(abodenha@chromium.org) Abort the print job.
+    // TODO(abodenha@monyhar.org) Abort the print job.
     return FALSE;
   }
   *bytes_written =
@@ -533,7 +533,7 @@ BOOL WINAPI Monitor2ReadPort(HANDLE, BYTE*, DWORD, DWORD* read_bytes) {
 
 BOOL WINAPI Monitor2EndDocPort(HANDLE port_handle) {
   if (!ValidateCurrentUser()) {
-    // TODO(abodenha@chromium.org) Abort the print job.
+    // TODO(abodenha@monyhar.org) Abort the print job.
     return FALSE;
   }
   PortData* port_data = reinterpret_cast<PortData*>(port_handle);
@@ -567,7 +567,7 @@ BOOL WINAPI Monitor2EndDocPort(HANDLE port_handle) {
   }
   port_data->Close();
   // Return success even if we can't display the dialog.
-  // TODO(abodenha@chromium.org) Come up with a better way of handling
+  // TODO(abodenha@monyhar.org) Come up with a better way of handling
   // this situation.
   return TRUE;
 }

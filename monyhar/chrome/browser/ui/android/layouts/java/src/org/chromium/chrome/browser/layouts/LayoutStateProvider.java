@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.layouts;
+package org.monyhar.chrome.browser.layouts;
 
 /**
  * Exposes the current {@link Layout} state as well as a way to listen to {@link Layout} state

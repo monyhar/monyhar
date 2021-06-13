@@ -26,7 +26,7 @@ import time
 # See crbug.com/584730 and https://bugs.python.org/issue7980.
 import _strptime  # pylint: disable=unused-import
 
-import devil_chromium
+import devil_monyhar
 from devil.android import battery_utils
 from devil.android import device_denylist
 from devil.android import device_errors
@@ -550,7 +550,7 @@ def main():
 
   run_tests_helper.SetLogLevel(args.verbose)
 
-  devil_chromium.Initialize(adb_path=args.adb_path)
+  devil_monyhar.Initialize(adb_path=args.adb_path)
 
   try:
     return ProvisionDevices(args)

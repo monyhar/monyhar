@@ -1,7 +1,7 @@
 # LUCI Builder Migration - FAQ
 
 _**Buildbot end of life date is March 1, 2019**. As of March 1,
-all Chrome/Chromium builds hosted on [chromium.org](https://www.chromium.org)
+all Chrome/Chromium builds hosted on [monyhar.org](https://www.monyhar.org)
 will be running on LUCI._
 
 LUCI which stands for Layered Universal Continuous Integration is a replacement
@@ -25,7 +25,7 @@ before this date._
 
 ### **I am an owner of a builder, where can I find more info on migrations?**
 _A migration guide is available to help you with migrations. Please reach out
-to the Chrome Operations team at infra-dev@chromium.org for references and
+to the Chrome Operations team at infra-dev@monyhar.org for references and
 scheduling or timeframe info._
 
 ### **Why can't we keep using existing builders?**
@@ -48,7 +48,7 @@ ensure correctness and performance. Note that times can vary per builder set.*
 ### **Who is involved with the builder migrations?**
 
 *We have created a LUCI migration task force
-([infra-dev@chromium.org](mailto:infra-dev@chromium.org)) comprised of Chrome
+([infra-dev@monyhar.org](mailto:infra-dev@monyhar.org)) comprised of Chrome
 Operations developers. Owners of Chromium builders are responsible for approvals
 for final go ahead to switch a LUCI builder to production.*
 
@@ -77,7 +77,7 @@ known limitations:*
 ### **What differences will I see?**
 
 *All Chromium developers should already be using the new LUCI UI
-([ci.chromium.org](https://ci.chromium.org)). The views will continue to look the
+([ci.monyhar.org](https://ci.monyhar.org)). The views will continue to look the
 same once LUCI builders are switched to production. Sheriff-O-Matic,
 Gatekeeper, and Findit build integrations will all work as intended. The
 main differences to expect are:*
@@ -101,7 +101,7 @@ main differences to expect are:*
 ### **How do I know a build was run on LUCI?**
 
 *Builds on LUCI use a different URL path that
-starts with `/p/chromium/builders/…`
+starts with `/p/monyhar/builders/…`
 If the build is still running on Buildbot,
 "buildbot" will still be part of the URL path. Also, in
 the Code Review UI, try-builders on Buildbot is shown
@@ -112,7 +112,7 @@ a LUCI build.*
 
 *In some cases, builds on LUCI can also have the
 following URL
-`ci.chromium.org/p/chromium/builds/b<buildbucket_build_id>`.
+`ci.monyhar.org/p/monyhar/builds/b<buildbucket_build_id>`.
 This occurs when the build does not have a build number
 which should not occur for any Chromium build*
 
@@ -127,11 +127,11 @@ Operations._
 ### **How do I escalate for help?**
 
 _Contact the Chrome Operations Foundation team
-([infra-dev@chromium.org](mailto:infra-dev@chromium.org)) and include
-[dpranke@chromium.org](mailto:dpranke@chromium.org),
-[estaab@chromium.org](mailto:estaab@chromium.org),
-[efoo@chromium.org](mailto:efoo@chromium.org) and
-[nodir@chromium.org](mailto:nodir@chromium.org) directly for an immediate
+([infra-dev@monyhar.org](mailto:infra-dev@monyhar.org)) and include
+[dpranke@monyhar.org](mailto:dpranke@monyhar.org),
+[estaab@monyhar.org](mailto:estaab@monyhar.org),
+[efoo@monyhar.org](mailto:efoo@monyhar.org) and
+[nodir@monyhar.org](mailto:nodir@monyhar.org) directly for an immediate
 response. Also, refer to the [Contact us](#Contact-Us) section below for other
 options to reach us._
 
@@ -147,9 +147,9 @@ _Builder migration involves 3 major steps._
 _There are many ways you can help. Either through contributing to LUCI, helping
 with builder migrations or providing feedback. Reach out to the Chrome
 Operations Foundation team
-([infra-dev@chromium.org](mailto:infra-dev@chromium.org)) and CC
-[efoo@chromium.org](mailto:efoo@chromium.org) and
-[estaab@chromium.org](mailto:estaab@chromium.org) to let us know._
+([infra-dev@monyhar.org](mailto:infra-dev@monyhar.org)) and CC
+[efoo@monyhar.org](mailto:efoo@monyhar.org) and
+[estaab@monyhar.org](mailto:estaab@monyhar.org) to let us know._
 
 ## **Contact Us**
 
@@ -165,12 +165,12 @@ hear it and incorporate it into our ongoing LUCI improvements._
 "Feedback")
 on a LUCI page._
 * *__File a migration bug__ using the following
-[template](https://bugs.chromium.org/p/chromium/issues/entry?labels=LUCI-Backlog,LUCI-Migrations&summary=[LUCI-Migration-Bug]%20Enter%20an%20one-line%20summary&components=Infra>Platform&cc=efoo@chromium.org,estaab@chromium.org,nodir@chromium.org&description=Please%20use%20this%20to%20template%20to%20file%20a%20bug%20into%20LUCI%20backlog.%20%20%0A%0AReminder%20to%20include%20the%20following%3A%0A-%20Description%20of%20issue%0A-%20Priority%0A-%20Is%20this%20a%20blocker...%0A-%20What%20builder%20is%20this%20bug%20blocking).*
+[template](https://bugs.monyhar.org/p/monyhar/issues/entry?labels=LUCI-Backlog,LUCI-Migrations&summary=[LUCI-Migration-Bug]%20Enter%20an%20one-line%20summary&components=Infra>Platform&cc=efoo@monyhar.org,estaab@monyhar.org,nodir@monyhar.org&description=Please%20use%20this%20to%20template%20to%20file%20a%20bug%20into%20LUCI%20backlog.%20%20%0A%0AReminder%20to%20include%20the%20following%3A%0A-%20Description%20of%20issue%0A-%20Priority%0A-%20Is%20this%20a%20blocker...%0A-%20What%20builder%20is%20this%20bug%20blocking).*
 * *__File a feature request__ using the following
-[template](https://bugs.chromium.org/p/chromium/issues/entry?labels=LUCI-Backlog&summary=[LUCI-Feedback]%20Enter%20an%20one-line%20summary&components=Infra>Platform&cc=efoo@chromium.org,estaab@chromium.org,nodir@chromium.org&description=Please%20use%20this%20to%20template%20to%20file%20a%20feature%20request%20into%20LUCI%20backlog.%20%20%0A%0AReminder%20to%20include%20the%20following%3A%0A-%20Description%0A-%20Why%20this%20feature%20is%20needed).*
+[template](https://bugs.monyhar.org/p/monyhar/issues/entry?labels=LUCI-Backlog&summary=[LUCI-Feedback]%20Enter%20an%20one-line%20summary&components=Infra>Platform&cc=efoo@monyhar.org,estaab@monyhar.org,nodir@monyhar.org&description=Please%20use%20this%20to%20template%20to%20file%20a%20feature%20request%20into%20LUCI%20backlog.%20%20%0A%0AReminder%20to%20include%20the%20following%3A%0A-%20Description%0A-%20Why%20this%20feature%20is%20needed).*
 * *To __share your feedback__, please fill out this [short
 survey](https://goo.gl/forms/YPO6XCQ3q47r00iw2).*
-* *__Ask a question__ using [IRC under the #chromium](https://www.chromium.org/developers/irc) channel.*
+* *__Ask a question__ using [IRC under the #monyhar](https://www.monyhar.org/developers/irc) channel.*
 * *__Contact us__ directly by emailing us at
-[infra-dev@chromium.org](mailto:infra-dev@chromium.org).*
+[infra-dev@monyhar.org](mailto:infra-dev@monyhar.org).*
 

@@ -21,12 +21,12 @@ android_resources("java_resources") {
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/ui/messages/infobar/SimpleConfirmInfoBarBuilder.java",
-    "java/src/org/chromium/chrome/browser/ui/messages/snackbar/Snackbar.java",
-    "java/src/org/chromium/chrome/browser/ui/messages/snackbar/SnackbarCollection.java",
-    "java/src/org/chromium/chrome/browser/ui/messages/snackbar/SnackbarManager.java",
-    "java/src/org/chromium/chrome/browser/ui/messages/snackbar/SnackbarManagerProvider.java",
-    "java/src/org/chromium/chrome/browser/ui/messages/snackbar/SnackbarView.java",
+    "java/src/org/monyhar/chrome/browser/ui/messages/infobar/SimpleConfirmInfoBarBuilder.java",
+    "java/src/org/monyhar/chrome/browser/ui/messages/snackbar/Snackbar.java",
+    "java/src/org/monyhar/chrome/browser/ui/messages/snackbar/SnackbarCollection.java",
+    "java/src/org/monyhar/chrome/browser/ui/messages/snackbar/SnackbarManager.java",
+    "java/src/org/monyhar/chrome/browser/ui/messages/snackbar/SnackbarManagerProvider.java",
+    "java/src/org/monyhar/chrome/browser/ui/messages/snackbar/SnackbarView.java",
   ]
 
   deps = [
@@ -46,12 +46,12 @@ android_library("java") {
     "//ui/android:ui_utils_java",
   ]
 
-  resources_package = "org.chromium.chrome.ui.messages"
+  resources_package = "org.monyhar.chrome.ui.messages"
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
 }
 
 generate_jni("jni_headers") {
-  sources = [ "java/src/org/chromium/chrome/browser/ui/messages/infobar/SimpleConfirmInfoBarBuilder.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/ui/messages/infobar/SimpleConfirmInfoBarBuilder.java" ]
 }
 
 java_library("junit") {
@@ -60,7 +60,7 @@ java_library("junit") {
 
   testonly = true
 
-  sources = [ "java/src/org/chromium/chrome/browser/ui/messages/snackbar/SnackbarCollectionUnitTest.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/ui/messages/snackbar/SnackbarCollectionUnitTest.java" ]
 
   deps = [
     ":java",
@@ -73,7 +73,7 @@ java_library("junit") {
 android_library("javatests") {
   testonly = true
 
-  sources = [ "java/src/org/chromium/chrome/browser/ui/messages/snackbar/SnackbarTest.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/ui/messages/snackbar/SnackbarTest.java" ]
 
   deps = [
     ":java",

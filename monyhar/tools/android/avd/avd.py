@@ -17,7 +17,7 @@ from devil.utils import logging_common
 
 sys.path.append(
     os.path.join(_SRC_ROOT, 'build', 'android'))
-import devil_chromium
+import devil_monyhar
 from pylib.local.emulator import avd
 
 
@@ -127,7 +127,7 @@ def main(raw_args):
 
   args = parser.parse_args(raw_args)
   logging_common.InitializeLogging(args)
-  devil_chromium.Initialize(adb_path=args.adb_path)
+  devil_monyhar.Initialize(adb_path=args.adb_path)
   return args.func(args)
 
 

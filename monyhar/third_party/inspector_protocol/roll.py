@@ -95,14 +95,14 @@ def CheckRepoIsNotAtMasterBranch(path):
 def CheckRepoIsChromiumCheckout(path):
   os.chdir(path)
   if (RunCmd(['git', 'config', '--get', 'remote.origin.url']).strip() !=
-      'https://chromium.googlesource.com/chromium/src.git'):
+      'https://monyhar.googlesource.com/monyhar/src.git'):
     raise Exception('%s is not a proper Chromium checkout.' % path)
 
 
 def CheckRepoIsInspectorProtocolCheckout(path):
   os.chdir(path)
   if (RunCmd(['git', 'config', '--get', 'remote.origin.url']).strip() !=
-      'https://chromium.googlesource.com/deps/inspector_protocol.git'):
+      'https://monyhar.googlesource.com/deps/inspector_protocol.git'):
     raise Exception('%s is not a proper inspector_protocol checkout.' % path)
 
 
@@ -132,9 +132,9 @@ def main(argv):
   parser.add_argument("--ip_src_upstream",
                       help="The inspector_protocol (upstream) tree.",
                       default="~/ip/src")
-  parser.add_argument("--chromium_src_downstream",
+  parser.add_argument("--monyhar_src_downstream",
                       help="The Chromium src tree.",
-                      default="~/chromium/src")
+                      default="~/monyhar/src")
   parser.add_argument('--reverse', dest='reverse', action='store_true',
                       help=("Whether to roll the opposite direction, from "
                             "Chromium (downstream) to inspector_protocol "
@@ -148,7 +148,7 @@ def main(argv):
   args = parser.parse_args(argv)
   upstream = os.path.normpath(os.path.expanduser(args.ip_src_upstream))
   downstream = os.path.normpath(os.path.expanduser(
-      args.chromium_src_downstream))
+      args.monyhar_src_downstream))
   CheckRepoIsClean(upstream)
   CheckRepoIsClean(downstream)
   CheckRepoIsInspectorProtocolCheckout(upstream)
@@ -189,8 +189,8 @@ def main(argv):
     os.unlink(os.path.join(dest_dir, f))
   if not args.reverse:
     head_revision = GetHeadRevision(upstream)
-    lines = open(os.path.join(dest_dir, 'README.chromium')).readlines()
-    f = open(os.path.join(dest_dir, 'README.chromium'), 'w')
+    lines = open(os.path.join(dest_dir, 'README.monyhar')).readlines()
+    f = open(os.path.join(dest_dir, 'README.monyhar'), 'w')
     for line in lines:
       if line.startswith('Revision: '):
         f.write('Revision: %s' % head_revision)

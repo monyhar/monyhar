@@ -4,7 +4,7 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
-NAME=org.chromium.chromoting
+NAME=org.monyhar.chromoting
 PLIST=/Library/LaunchAgents/$NAME.plist
 
 # ksadmin moved from MacOS to Helpers in Keystone 1.2.13.112, 2019-11-12. A

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.image_tiles;
+package org.monyhar.components.browser_ui.widget.image_tiles;
 
 import android.graphics.Bitmap;
 import android.graphics.drawable.ColorDrawable;
@@ -13,8 +13,8 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
-import org.chromium.components.browser_ui.widget.R;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.components.browser_ui.widget.R;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * A {@link ViewHolder} responsible for building and setting properties on the tiles.

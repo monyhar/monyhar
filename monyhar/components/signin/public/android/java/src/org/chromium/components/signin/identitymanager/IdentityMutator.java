@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.signin.identitymanager;
+package org.monyhar.components.signin.identitymanager;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.signin.base.CoreAccountId;
-import org.chromium.components.signin.metrics.SignoutDelete;
-import org.chromium.components.signin.metrics.SignoutReason;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.signin.base.CoreAccountId;
+import org.monyhar.components.signin.metrics.SignoutDelete;
+import org.monyhar.components.signin.metrics.SignoutReason;
 
 /**
  * IdentityMutator is the write interface of IdentityManager, see identity_mutator.h for more

@@ -27,14 +27,14 @@ android_resources("java_resources") {
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/components/translate/TranslateFeatureList.java",
-    "java/src/org/chromium/components/translate/TranslateMenu.java",
-    "java/src/org/chromium/components/translate/TranslateMenuHelper.java",
-    "java/src/org/chromium/components/translate/TranslateOptions.java",
-    "java/src/org/chromium/components/translate/TranslateTabContent.java",
-    "java/src/org/chromium/components/translate/TranslateTabLayout.java",
+    "java/src/org/monyhar/components/translate/TranslateFeatureList.java",
+    "java/src/org/monyhar/components/translate/TranslateMenu.java",
+    "java/src/org/monyhar/components/translate/TranslateMenuHelper.java",
+    "java/src/org/monyhar/components/translate/TranslateOptions.java",
+    "java/src/org/monyhar/components/translate/TranslateTabContent.java",
+    "java/src/org/monyhar/components/translate/TranslateTabLayout.java",
   ]
-  resources_package = "org.chromium.components.translate"
+  resources_package = "org.monyhar.components.translate"
   deps = [
     ":java_resources",
     "//base:base_java",
@@ -65,7 +65,7 @@ static_library("android") {
 
 generate_jni("jni_headers") {
   sources =
-      [ "java/src/org/chromium/components/translate/TranslateFeatureList.java" ]
+      [ "java/src/org/monyhar/components/translate/TranslateFeatureList.java" ]
 }
 
 java_cpp_enum("translate_android_enums") {
@@ -81,7 +81,7 @@ android_library("translate_android_enums_java") {
 android_library("javatests") {
   testonly = true
   sources =
-      [ "java/src/org/chromium/components/translate/TranslateOptionsTest.java" ]
+      [ "java/src/org/monyhar/components/translate/TranslateOptionsTest.java" ]
   deps = [
     ":java",
     "//base:base_java",

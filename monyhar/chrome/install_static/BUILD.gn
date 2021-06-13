@@ -56,8 +56,8 @@ if (is_win) {
       ]
     } else {
       sources += [
-        "chromium_install_modes.cc",
-        "chromium_install_modes.h",
+        "monyhar_install_modes.cc",
+        "monyhar_install_modes.h",
       ]
     }
 

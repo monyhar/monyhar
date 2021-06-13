@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments.handler.toolbar;
+package org.monyhar.chrome.browser.payments.handler.toolbar;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,10 +11,10 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.R;
-import org.chromium.components.browser_ui.widget.FadingShadow;
-import org.chromium.components.browser_ui.widget.FadingShadowView;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.components.browser_ui.widget.FadingShadow;
+import org.monyhar.components.browser_ui.widget.FadingShadowView;
 
 /** PaymentHandlerToolbar UI. */
 /* package */ class PaymentHandlerToolbarView {

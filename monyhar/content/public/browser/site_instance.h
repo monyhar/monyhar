@@ -36,7 +36,7 @@ class RenderProcessHost;
 //
 // The principal is usually based on the site of the document's URL: the scheme
 // and "registrable domain" (i.e., eTLD+1), not the full origin. For example,
-// https://dev.chromium.org would have a site of https://chromium.org. This
+// https://dev.monyhar.org would have a site of https://monyhar.org. This
 // preserves compatibility with document.domain modifications, which allow
 // similar origin pages to script each other. (Note that there are many
 // exceptions, and the policy for determining site URLs is complex.) Meanwhile,

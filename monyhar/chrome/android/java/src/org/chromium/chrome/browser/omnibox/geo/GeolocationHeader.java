@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.geo;
+package org.monyhar.chrome.browser.omnibox.geo;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -19,22 +19,22 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.core.util.ObjectsCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.CollectionUtil;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.omnibox.geo.VisibleNetworks.VisibleCell;
-import org.chromium.chrome.browser.omnibox.geo.VisibleNetworks.VisibleWifi;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.browser_ui.site_settings.PermissionInfo;
-import org.chromium.components.browser_ui.site_settings.WebsitePreferenceBridge;
-import org.chromium.components.content_settings.ContentSettingValues;
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.components.embedder_support.util.UrlUtilitiesJni;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.CollectionUtil;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.omnibox.geo.VisibleNetworks.VisibleCell;
+import org.monyhar.chrome.browser.omnibox.geo.VisibleNetworks.VisibleWifi;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.browser_ui.site_settings.PermissionInfo;
+import org.monyhar.components.browser_ui.site_settings.WebsitePreferenceBridge;
+import org.monyhar.components.content_settings.ContentSettingValues;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.embedder_support.util.UrlUtilitiesJni;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

@@ -16,7 +16,7 @@
 #include "chrome/browser/signin/investigator_dependency_provider.h"
 #include "chrome/browser/signin/signin_util.h"
 #include "chrome/browser/ui/webui/signin/signin_ui_error.h"
-#include "chrome/grit/chromium_strings.h"
+#include "chrome/grit/monyhar_strings.h"
 #include "chrome/grit/generated_resources.h"
 #include "components/guest_view/browser/guest_view_manager.h"
 #include "components/signin/public/base/signin_pref_names.h"

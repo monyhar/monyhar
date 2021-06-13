@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.settings;
+package org.monyhar.chrome.browser.download.settings;
 
 import android.content.Context;
 import android.text.SpannableStringBuilder;
@@ -12,8 +12,8 @@ import android.util.AttributeSet;
 
 import androidx.preference.DialogPreference;
 
-import org.chromium.chrome.browser.download.DirectoryOption;
-import org.chromium.chrome.browser.download.R;
+import org.monyhar.chrome.browser.download.DirectoryOption;
+import org.monyhar.chrome.browser.download.R;
 
 /**
  * The preference used to save the download directory in download settings page.

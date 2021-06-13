@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.resources.async;
+package org.monyhar.ui.resources.async;
 
 import android.util.SparseArray;
 
-import org.chromium.base.TraceEvent;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.ui.resources.Resource;
-import org.chromium.ui.resources.ResourceLoader;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.ui.resources.Resource;
+import org.monyhar.ui.resources.ResourceLoader;
 
 import java.util.concurrent.ExecutionException;
 

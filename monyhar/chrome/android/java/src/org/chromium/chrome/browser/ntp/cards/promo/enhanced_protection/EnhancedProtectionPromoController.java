@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ntp.cards.promo.enhanced_protection;
+package org.monyhar.chrome.browser.ntp.cards.promo.enhanced_protection;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -13,16 +13,16 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.appcompat.content.res.AppCompatResources;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ntp.cards.promo.enhanced_protection.EnhancedProtectionPromoUtils.EnhancedProtectionPromoAction;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.safe_browsing.metrics.SettingsAccessPoint;
-import org.chromium.chrome.browser.safe_browsing.settings.SafeBrowsingSettingsFragment;
-import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.browser_ui.widget.promo.PromoCardCoordinator;
-import org.chromium.components.browser_ui.widget.promo.PromoCardProperties;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ntp.cards.promo.enhanced_protection.EnhancedProtectionPromoUtils.EnhancedProtectionPromoAction;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.safe_browsing.metrics.SettingsAccessPoint;
+import org.monyhar.chrome.browser.safe_browsing.settings.SafeBrowsingSettingsFragment;
+import org.monyhar.chrome.browser.settings.SettingsLauncherImpl;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.browser_ui.widget.promo.PromoCardCoordinator;
+import org.monyhar.components.browser_ui.widget.promo.PromoCardProperties;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * Controller for the Enhanced Protection promo component.

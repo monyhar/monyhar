@@ -2,7 +2,7 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
-package: chromium/third_party/android_sdk/public/system-images/android-29/google_apis_playstore/x86
+package: monyhar/third_party/android_sdk/public/system-images/android-29/google_apis_playstore/x86
 description: system_images;android-29;google_apis_playstore;x86
 root: ../../../../public/
 data:

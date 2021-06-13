@@ -19,7 +19,7 @@ const char kGaiaService[] = "gaia";
 const char kPicasaService[] = "lh2";
 
 // Service/scope names for sync.
-const char kSyncService[] = "chromiumsync";
+const char kSyncService[] = "monyharsync";
 
 // Service name for remoting.
 const char kRemotingService[] = "chromoting";

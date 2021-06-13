@@ -373,7 +373,7 @@ void DesktopCaptureDevice::Core::OnCaptureResult(
   } else {
     // Scaling frame with odd dimensions to even dimensions will cause
     // blurring. See https://crbug.com/737278.
-    // Since chromium always requests frames to be with even dimensions,
+    // Since monyhar always requests frames to be with even dimensions,
     // i.e. for I420 format and video codec, always cropping captured frame
     // to even dimensions.
     const int32_t frame_width = frame->size().width();

@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.services.service_manager;
+package org.monyhar.services.service_manager;
 
-import org.chromium.mojo.bindings.Interface;
+import org.monyhar.mojo.bindings.Interface;
 
 /**
  * A factory that creates implementations of a mojo interface.

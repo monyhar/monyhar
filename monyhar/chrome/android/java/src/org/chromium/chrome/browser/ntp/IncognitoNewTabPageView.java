@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ntp;
+package org.monyhar.chrome.browser.ntp;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -11,10 +11,10 @@ import android.view.View;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.FrameLayout;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.R;
-import org.chromium.components.content_settings.CookieControlsEnforcement;
-import org.chromium.ui.base.ViewUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.components.content_settings.CookieControlsEnforcement;
+import org.monyhar.ui.base.ViewUtils;
 
 /**
  * The New Tab Page for use in the incognito profile.
@@ -112,7 +112,7 @@ public class IncognitoNewTabPageView extends FrameLayout {
     }
 
     /**
-     * @see org.chromium.chrome.browser.compositor.layouts.content.
+     * @see org.monyhar.chrome.browser.compositor.layouts.content.
      *         InvalidationAwareThumbnailProvider#shouldCaptureThumbnail()
      */
     boolean shouldCaptureThumbnail() {
@@ -123,7 +123,7 @@ public class IncognitoNewTabPageView extends FrameLayout {
     }
 
     /**
-     * @see org.chromium.chrome.browser.compositor.layouts.content.
+     * @see org.monyhar.chrome.browser.compositor.layouts.content.
      *         InvalidationAwareThumbnailProvider#captureThumbnail(Canvas)
      */
     void captureThumbnail(Canvas canvas) {

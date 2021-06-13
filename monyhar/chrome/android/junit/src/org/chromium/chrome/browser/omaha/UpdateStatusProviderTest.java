@@ -2,22 +2,22 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omaha;
+package org.monyhar.chrome.browser.omaha;
 
-import static org.chromium.chrome.browser.omaha.UpdateStatusProvider.UpdateState.INLINE_UPDATE_AVAILABLE;
-import static org.chromium.chrome.browser.omaha.UpdateStatusProvider.UpdateState.INLINE_UPDATE_DOWNLOADING;
-import static org.chromium.chrome.browser.omaha.UpdateStatusProvider.UpdateState.INLINE_UPDATE_FAILED;
-import static org.chromium.chrome.browser.omaha.UpdateStatusProvider.UpdateState.INLINE_UPDATE_READY;
-import static org.chromium.chrome.browser.omaha.UpdateStatusProvider.UpdateState.NONE;
-import static org.chromium.chrome.browser.omaha.UpdateStatusProvider.UpdateState.UNSUPPORTED_OS_VERSION;
-import static org.chromium.chrome.browser.omaha.UpdateStatusProvider.UpdateState.UPDATE_AVAILABLE;
+import static org.monyhar.chrome.browser.omaha.UpdateStatusProvider.UpdateState.INLINE_UPDATE_AVAILABLE;
+import static org.monyhar.chrome.browser.omaha.UpdateStatusProvider.UpdateState.INLINE_UPDATE_DOWNLOADING;
+import static org.monyhar.chrome.browser.omaha.UpdateStatusProvider.UpdateState.INLINE_UPDATE_FAILED;
+import static org.monyhar.chrome.browser.omaha.UpdateStatusProvider.UpdateState.INLINE_UPDATE_READY;
+import static org.monyhar.chrome.browser.omaha.UpdateStatusProvider.UpdateState.NONE;
+import static org.monyhar.chrome.browser.omaha.UpdateStatusProvider.UpdateState.UNSUPPORTED_OS_VERSION;
+import static org.monyhar.chrome.browser.omaha.UpdateStatusProvider.UpdateState.UPDATE_AVAILABLE;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.BlockJUnit4ClassRunner;
 
-import org.chromium.base.test.util.Feature;
+import org.monyhar.base.test.util.Feature;
 
 /**
  * Unit tests for UpdateStatusProvider.

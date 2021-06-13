@@ -11,7 +11,7 @@
 
 TEST(TemplateURLDataTest, Trim) {
   TemplateURLData data(
-      u" shortname ", u" keyword ", "https://cs.chromium.org",
+      u" shortname ", u" keyword ", "https://cs.monyhar.org",
       base::StringPiece(), base::StringPiece(), base::StringPiece(),
       base::StringPiece(), base::StringPiece(), base::StringPiece(),
       base::StringPiece(), base::StringPiece(), base::StringPiece(),

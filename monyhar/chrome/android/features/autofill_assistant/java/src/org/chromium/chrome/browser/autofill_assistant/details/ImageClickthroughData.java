@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.details;
+package org.monyhar.chrome.browser.autofill_assistant.details;
 
 /**
  * Holds information controlling whether to show image clickthrough dialog and

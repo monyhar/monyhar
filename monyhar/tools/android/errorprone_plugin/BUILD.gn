@@ -11,14 +11,14 @@ java_binary("errorprone_plugin") {
   wrapper_script_name = "bin/helper/errorprone_plugin"
   sources = [
     # Turned off because of existing code which fails the check
-    # "src/org/chromium/tools/errorprone/plugin/NoContextGetApplicationContext.java",
-    "src/org/chromium/tools/errorprone/plugin/AndroidNullableCheck.java",
-    "src/org/chromium/tools/errorprone/plugin/NoAndroidAsyncTaskCheck.java",
-    "src/org/chromium/tools/errorprone/plugin/NoDynamicStringsInTraceEventCheck.java",
-    "src/org/chromium/tools/errorprone/plugin/NoRedundantFieldInitCheck.java",
-    "src/org/chromium/tools/errorprone/plugin/NoSynchronizedMethodCheck.java",
-    "src/org/chromium/tools/errorprone/plugin/NoSynchronizedThisCheck.java",
-    "src/org/chromium/tools/errorprone/plugin/TestClassNameCheck.java",
+    # "src/org/monyhar/tools/errorprone/plugin/NoContextGetApplicationContext.java",
+    "src/org/monyhar/tools/errorprone/plugin/AndroidNullableCheck.java",
+    "src/org/monyhar/tools/errorprone/plugin/NoAndroidAsyncTaskCheck.java",
+    "src/org/monyhar/tools/errorprone/plugin/NoDynamicStringsInTraceEventCheck.java",
+    "src/org/monyhar/tools/errorprone/plugin/NoRedundantFieldInitCheck.java",
+    "src/org/monyhar/tools/errorprone/plugin/NoSynchronizedMethodCheck.java",
+    "src/org/monyhar/tools/errorprone/plugin/NoSynchronizedThisCheck.java",
+    "src/org/monyhar/tools/errorprone/plugin/TestClassNameCheck.java",
   ]
 
   # Necessary to avoid dependency cycle

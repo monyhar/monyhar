@@ -250,7 +250,7 @@ const char* BaseBundleID() {
 #if BUILDFLAG(GOOGLE_CHROME_BRANDING)
   return "com.google.Chrome";
 #else
-  return "org.chromium.Chromium";
+  return "org.monyhar.Chromium";
 #endif
 }
 

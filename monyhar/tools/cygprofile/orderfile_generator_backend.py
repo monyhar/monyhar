@@ -44,7 +44,7 @@ from devil.android.sdk import version_codes
 _SRC_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                          os.pardir, os.pardir)
 sys.path.append(os.path.join(_SRC_PATH, 'build', 'android'))
-import devil_chromium
+import devil_monyhar
 from pylib import constants
 
 
@@ -1134,7 +1134,7 @@ def CreateOrderfile(options, orderfile_updater_class=None):
     True iff success.
   """
   logging.basicConfig(level=logging.INFO)
-  devil_chromium.Initialize(adb_path=options.adb_path)
+  devil_monyhar.Initialize(adb_path=options.adb_path)
 
   generator = OrderfileGenerator(options, orderfile_updater_class)
   try:

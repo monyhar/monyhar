@@ -5,7 +5,7 @@
 #ifndef CHROMEOS_SERVICES_LIBASSISTANT_SPEAKER_ID_ENROLLMENT_CONTROLLER_H_
 #define CHROMEOS_SERVICES_LIBASSISTANT_SPEAKER_ID_ENROLLMENT_CONTROLLER_H_
 
-#include "chromeos/assistant/libassistant/src/third_party/chromium/base/memory/weak_ptr.h"
+#include "chromeos/assistant/libassistant/src/third_party/monyhar/base/memory/weak_ptr.h"
 #include "chromeos/services/libassistant/abortable_task_list.h"
 #include "chromeos/services/libassistant/assistant_manager_observer.h"
 #include "chromeos/services/libassistant/public/mojom/audio_input_controller.mojom-forward.h"

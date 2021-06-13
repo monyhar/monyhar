@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Permissions histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -25,7 +25,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Primary metrics for monitoring capability usage and trends. -->
 
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     Tracks whether a permission was granted, rejected, etc. The suffix of the
@@ -35,9 +35,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.Action.WithDisposition" enum="PermissionAction"
     expires_after="2021-10-10">
-  <owner>andypaicu@chromium.org</owner>
-  <owner>engedy@chromium.org</owner>
-  <owner>hkamila@chromium.org</owner>
+  <owner>andypaicu@monyhar.org</owner>
+  <owner>engedy@monyhar.org</owner>
+  <owner>hkamila@monyhar.org</owner>
   <summary>
     Tracks the action that a user had taken per permission prompt UI
     disposition. Suffixed by the UI disposition that the prompt used. Recorded
@@ -47,7 +47,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.API.CreatedPermissionStatusObjects" units="units"
     expires_after="2022-01-01">
-  <owner>andypaicu@chromium.org</owner>
+  <owner>andypaicu@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     Records the number of PermissionStatus handles that have been created by a
@@ -59,8 +59,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.AutoBlocker.EmbargoPromptSuppression"
     enum="PermissionEmbargoStatus" expires_after="M90">
-  <owner>dominickn@chromium.org</owner>
-  <owner>kcarattini@chromium.org</owner>
+  <owner>dominickn@monyhar.org</owner>
+  <owner>kcarattini@monyhar.org</owner>
   <summary>
     For every permission request that would show a prompt to the user, this
     metric tracks whether the request is suppressed by embargo (and the source
@@ -76,8 +76,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.AutoBlocker.EmbargoStatus"
     enum="PermissionEmbargoStatus" expires_after="M90">
-  <owner>dominickn@chromium.org</owner>
-  <owner>kcarattini@chromium.org</owner>
+  <owner>dominickn@monyhar.org</owner>
+  <owner>kcarattini@monyhar.org</owner>
   <summary>
     Tracks the reason that an (origin, permission) pair has been placed under
     embargo (blocked from making requests for that permission for a period of
@@ -90,7 +90,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.BatteryLevel.Accepted.Geolocation" units="%"
     expires_after="M85">
-  <owner>timloh@chromium.org</owner>
+  <owner>timloh@monyhar.org</owner>
   <summary>
     Battery percentage when a geolocation permission prompt was accepted on
     Android.
@@ -99,11 +99,11 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.BatteryLevel.Accepted.LocationSettingsDialog"
     units="%" expires_after="M96">
-  <owner>andypaicu@chromium.org</owner>
-  <owner>engedy@chromium.org</owner>
-  <owner>hkamila@chromium.org</owner>
-  <owner>ravjit@chromium.org</owner>
-  <owner>elklm@chromium.org</owner>
+  <owner>andypaicu@monyhar.org</owner>
+  <owner>engedy@monyhar.org</owner>
+  <owner>hkamila@monyhar.org</owner>
+  <owner>ravjit@monyhar.org</owner>
+  <owner>elklm@monyhar.org</owner>
   <summary>
     Battery percentage when a location settings dialog was accepted.
   </summary>
@@ -111,7 +111,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.BatteryLevel.Denied.Geolocation" units="%"
     expires_after="M85">
-  <owner>timloh@chromium.org</owner>
+  <owner>timloh@monyhar.org</owner>
   <summary>
     Battery percentage when a geolocation permission prompt was denied on
     Android.
@@ -120,7 +120,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.BatteryLevel.Denied.LocationSettingsDialog"
     units="%" expires_after="M77">
-  <owner>timloh@chromium.org</owner>
+  <owner>timloh@monyhar.org</owner>
   <summary>
     Battery percentage when a location settings dialog was denied.
   </summary>
@@ -128,7 +128,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.BatteryLevel.Dismissed.Geolocation" units="%"
     expires_after="M85">
-  <owner>timloh@chromium.org</owner>
+  <owner>timloh@monyhar.org</owner>
   <summary>
     Battery percentage when a geolocation permission prompt was dismissed on
     Android.
@@ -137,8 +137,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.Chip.TimeToDecision.{RequestAction}" units="ms"
     expires_after="2021-08-22">
-  <owner>bsep@chromium.org</owner>
-  <owner>engedy@chromium.org</owner>
+  <owner>bsep@monyhar.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>olesiamarukhno@google.com</owner>
   <summary>
     Records how long it takes for the user to make a decision about permission
@@ -156,8 +156,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.Chip.TimeToInteraction" units="ms"
     expires_after="2021-10-25">
-  <owner>bsep@chromium.org</owner>
-  <owner>engedy@chromium.org</owner>
+  <owner>bsep@monyhar.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>olesiamarukhno@google.com</owner>
   <summary>
     Records how long it takes for the user to click on the permission chip after
@@ -167,11 +167,11 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.CrowdDeny.DidHoldbackQuietUi" enum="Boolean"
     expires_after="M96">
-  <owner>andypaicu@chromium.org</owner>
-  <owner>engedy@chromium.org</owner>
-  <owner>hkamila@chromium.org</owner>
-  <owner>ravjit@chromium.org</owner>
-  <owner>elklm@chromium.org</owner>
+  <owner>andypaicu@monyhar.org</owner>
+  <owner>engedy@monyhar.org</owner>
+  <owner>hkamila@monyhar.org</owner>
+  <owner>ravjit@monyhar.org</owner>
+  <owner>elklm@monyhar.org</owner>
   <summary>
     Whenever a notification permission prompt is to be displayed, crowd deny
     might trigger based on site reputation which will result in a quiet
@@ -185,7 +185,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.CrowdDeny.PreloadData.DelayedPushNotification"
     units="ms" expires_after="2021-10-31">
-  <owner>elklm@chromium.org</owner>
+  <owner>elklm@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     Record, for each incoming push notification, a delay caused by loading Crowd
@@ -203,7 +203,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in January 2021.
   </obsolete>
-  <owner>elklm@chromium.org</owner>
+  <owner>elklm@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     Records, each time during an abusive origin verification, whether preload
@@ -213,9 +213,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.CrowdDeny.PreloadData.NotificationUxQuality"
     enum="CrowdDenyNotificationUxQuality" expires_after="2021-10-10">
-  <owner>andypaicu@chromium.org</owner>
-  <owner>engedy@chromium.org</owner>
-  <owner>hkamila@chromium.org</owner>
+  <owner>andypaicu@monyhar.org</owner>
+  <owner>engedy@monyhar.org</owner>
+  <owner>hkamila@monyhar.org</owner>
   <summary>
     Records, each time a notification permission prompt is about to be shown,
     the NotificationUxQuality result for the requesting origin.
@@ -224,7 +224,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.CrowdDeny.PreloadData.VersionAtAbuseCheckTime"
     units="date" expires_after="2021-10-10">
-  <owner>elklm@chromium.org</owner>
+  <owner>elklm@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     Records, each time abusive origin verification is performed, the version of
@@ -234,9 +234,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.CrowdDeny.PreloadData.WarningOnly" enum="Boolean"
     expires_after="2021-10-25">
-  <owner>andypaicu@chromium.org</owner>
-  <owner>engedy@chromium.org</owner>
-  <owner>hkamila@chromium.org</owner>
+  <owner>andypaicu@monyhar.org</owner>
+  <owner>engedy@monyhar.org</owner>
+  <owner>hkamila@monyhar.org</owner>
   <summary>
     Records, each time a notification permission prompt is about to be shown,
     the whether there is preload data that indicates the origin being on a
@@ -246,9 +246,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.CrowdDeny.SafeBrowsing.RequestDuration" units="ms"
     expires_after="2021-10-10">
-  <owner>andypaicu@chromium.org</owner>
-  <owner>engedy@chromium.org</owner>
-  <owner>hkamila@chromium.org</owner>
+  <owner>andypaicu@monyhar.org</owner>
+  <owner>engedy@monyhar.org</owner>
+  <owner>hkamila@monyhar.org</owner>
   <summary>
     Records, each time a Safe Browsing request is made in response to a website
     requesting the notification permission, how long that Safe Browsing request
@@ -258,9 +258,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.CrowdDeny.SafeBrowsing.Verdict"
     enum="CrowdDenySafeBrowsingVerdict" expires_after="2021-08-09">
-  <owner>andypaicu@chromium.org</owner>
-  <owner>engedy@chromium.org</owner>
-  <owner>hkamila@chromium.org</owner>
+  <owner>andypaicu@monyhar.org</owner>
+  <owner>engedy@monyhar.org</owner>
+  <owner>hkamila@monyhar.org</owner>
   <summary>
     Records, each time a Safe Browsing request is made in response to a website
     requesting the notification permission, the Safe Browsing verdict regarding
@@ -270,7 +270,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.Engagement.Accepted" units="%"
     expires_after="2021-10-25">
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     Recorded when the user accepts the permission prompt. It tracks the Site
@@ -280,7 +280,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.Engagement.AcceptedOnce" units="%"
     expires_after="2021-10-31">
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     Recorded when the user accepts the one time permission prompt. It tracks the
@@ -291,7 +291,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.Engagement.Denied" units="%"
     expires_after="2021-10-25">
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     Recorded when the user denies the permission prompt. It tracks the Site
@@ -301,7 +301,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.Engagement.Dismissed" units="%"
     expires_after="2021-10-25">
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     Recorded when the user dismisses the permission prompt. It tracks the Site
@@ -311,7 +311,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.Engagement.Ignored" units="%"
     expires_after="2021-10-25">
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     Recorded when the user ignores the permission prompt. It tracks the Site
@@ -321,9 +321,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.MissingOSLevelPermission.Action"
     enum="PermissionAction" expires_after="2021-10-25">
-  <owner>andypaicu@chromium.org</owner>
-  <owner>engedy@chromium.org</owner>
-  <owner>hkamila@chromium.org</owner>
+  <owner>andypaicu@monyhar.org</owner>
+  <owner>engedy@monyhar.org</owner>
+  <owner>hkamila@monyhar.org</owner>
   <summary>
     Recorded when the &quot;Chrome needs permission...&quot; infobar is
     resolved. Records the resulting action that was taken. Suffixed by
@@ -333,9 +333,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.MissingOSLevelPermission.ShouldShow"
     enum="Boolean" expires_after="2021-04-04">
-  <owner>andypaicu@chromium.org</owner>
-  <owner>engedy@chromium.org</owner>
-  <owner>hkamila@chromium.org</owner>
+  <owner>andypaicu@monyhar.org</owner>
+  <owner>engedy@monyhar.org</owner>
+  <owner>hkamila@monyhar.org</owner>
   <summary>
     Recorded when the &quot;Chrome needs permission...&quot; infobar might be
     displayed to the user because a site already has the permission but Chrome
@@ -349,7 +349,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.PredictionService.Request" enum="BooleanSent"
     expires_after="M96">
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     Recorded whenever a request is eligible for Permissions predictions service.
@@ -359,8 +359,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.Prompt.Accepted" enum="PermissionRequestType"
     expires_after="2021-10-25">
-  <owner>dominickn@chromium.org</owner>
-  <owner>kcarattini@chromium.org</owner>
+  <owner>dominickn@monyhar.org</owner>
+  <owner>kcarattini@monyhar.org</owner>
   <summary>
     Tracks the permission bubbles (merged and non-merged) that are accepted.
     Merged bubbles are considered accepted if all permissions are allowed.
@@ -369,7 +369,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.Prompt.Accepted.PriorDismissCount2" units="units"
     expires_after="2021-12-31">
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     This metric, recorded at the time of a permission prompt accept, records the
@@ -382,7 +382,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.Prompt.Accepted.PriorIgnoreCount2" units="units"
     expires_after="2021-12-31">
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     This metric, recorded at the time of a permission prompt accept, records the
@@ -395,7 +395,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.Prompt.AcceptedOnce" enum="PermissionRequestType"
     expires_after="2021-12-31">
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     Recorded when the user clicks on the one-time allow button of the permission
@@ -407,7 +407,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.Prompt.AcceptedOnce.PriorDismissCount2"
     units="units" expires_after="2021-12-31">
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     This metric, recorded at the time of a permission prompt one-time accept,
@@ -420,7 +420,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.Prompt.AcceptedOnce.PriorIgnoreCount2"
     units="units" expires_after="2021-12-31">
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     This metric, recorded at the time of a permission prompt one-time accept,
@@ -433,8 +433,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.Prompt.Denied" enum="PermissionRequestType"
     expires_after="2021-10-25">
-  <owner>dominickn@chromium.org</owner>
-  <owner>kcarattini@chromium.org</owner>
+  <owner>dominickn@monyhar.org</owner>
+  <owner>kcarattini@monyhar.org</owner>
   <summary>
     Tracks the permission bubbles (merged and non-merged) that are denied.
     Merged bubbles are considered denied if any permission is denied.
@@ -443,7 +443,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.Prompt.Denied.PriorDismissCount2" units="units"
     expires_after="2021-12-31">
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     This metric, recorded at the time of a permission prompt deny, records the
@@ -456,7 +456,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.Prompt.Denied.PriorIgnoreCount2" units="units"
     expires_after="2021-12-31">
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     This metric, recorded at the time of a permission prompt deny, records the
@@ -469,7 +469,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.Prompt.Dismissed.PriorDismissCount2" units="units"
     expires_after="2021-12-31">
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     This metric, recorded at the time of a permission prompt dismiss, records
@@ -482,7 +482,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.Prompt.Dismissed.PriorIgnoreCount2" units="units"
     expires_after="2021-12-31">
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     This metric, recorded at the time of a permission prompt dismiss, records
@@ -495,7 +495,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.Prompt.Ignored.PriorDismissCount2" units="units"
     expires_after="2021-12-31">
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     This metric, recorded at the time of a permission prompt ignore, records the
@@ -508,7 +508,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.Prompt.Ignored.PriorIgnoreCount2" units="units"
     expires_after="2021-12-31">
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     This metric, recorded at the time of a permission prompt ignore, records the
@@ -521,9 +521,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.Prompt.Infobar.DetailsExpanded" enum="Boolean"
     expires_after="M82">
-  <owner>andypaicu@chromium.org</owner>
-  <owner>engedy@chromium.org</owner>
-  <owner>hkamila@chromium.org</owner>
+  <owner>andypaicu@monyhar.org</owner>
+  <owner>engedy@monyhar.org</owner>
+  <owner>hkamila@monyhar.org</owner>
   <summary>
     Tracks whether the user has expanded the infobar notification permission
     request.
@@ -532,7 +532,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.Prompt.Shown" enum="PermissionRequestType"
     expires_after="2021-08-22">
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     Tracks how many times permission prompts are shown to users.
@@ -545,8 +545,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     Replaced with Permissions.Prompt.TimeToDecision.{RequestAction} in April
     2021.
   </obsolete>
-  <owner>bsep@chromium.org</owner>
-  <owner>engedy@chromium.org</owner>
+  <owner>bsep@monyhar.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>olesiamarukhno@google.com</owner>
   <summary>
     Records how long it takes for the user to make a decision about permission
@@ -557,8 +557,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.Prompt.TimeToDecision.{RequestAction}" units="ms"
     expires_after="2021-08-22">
-  <owner>bsep@chromium.org</owner>
-  <owner>engedy@chromium.org</owner>
+  <owner>bsep@monyhar.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>olesiamarukhno@google.com</owner>
   <summary>
     Records how long it takes for the user to make a decision about permission
@@ -577,9 +577,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Permissions.QuietNotificationPrompts.DidEnableAdapativelyInPrefs"
     enum="Boolean" expires_after="2021-10-10">
-  <owner>andypaicu@chromium.org</owner>
-  <owner>engedy@chromium.org</owner>
-  <owner>hkamila@chromium.org</owner>
+  <owner>andypaicu@monyhar.org</owner>
+  <owner>engedy@monyhar.org</owner>
+  <owner>hkamila@monyhar.org</owner>
   <summary>
     Records, each time the quiet UI gets enabled in preferences, whether it was
     enabled by the adaptive activation logic.
@@ -589,9 +589,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Permissions.QuietNotificationPrompts.EnabledStateInPrefsChangedTo"
     enum="BooleanEnabled" expires_after="2021-10-10">
-  <owner>andypaicu@chromium.org</owner>
-  <owner>engedy@chromium.org</owner>
-  <owner>hkamila@chromium.org</owner>
+  <owner>andypaicu@monyhar.org</owner>
+  <owner>engedy@monyhar.org</owner>
+  <owner>hkamila@monyhar.org</owner>
   <summary>
     Records when the quiet notification permission UI state changes, that is, it
     either gets enabled or disabled, in preferences.
@@ -600,9 +600,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.QuietNotificationPrompts.IsEnabledInPrefs"
     enum="BooleanEnabled" expires_after="2021-10-10">
-  <owner>andypaicu@chromium.org</owner>
-  <owner>engedy@chromium.org</owner>
-  <owner>hkamila@chromium.org</owner>
+  <owner>andypaicu@monyhar.org</owner>
+  <owner>engedy@monyhar.org</owner>
+  <owner>hkamila@monyhar.org</owner>
   <summary>
     Records whether the quiet notification permission UI is enabled in
     preferences at profile creation. No sample recorded when notifications are
@@ -612,7 +612,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="Permissions.Revocation.ElapsedTimeSinceGrant"
     units="seconds" expires_after="2021-10-25">
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     Records the time elapsed since the grant of the permission until it's
@@ -624,7 +624,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Used to monitor user interaction with the Web Serial API. -->
 
-  <owner>reillyg@chromium.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <owner>src/content/browser/serial/OWNERS</owner>
   <summary>
     Records the reason why the Serial API chooser, triggered by a call to
@@ -636,14 +636,14 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Used to monitor user interaction with the Web Serial API. -->
 
-  <owner>reillyg@chromium.org</owner>
+  <owner>reillyg@monyhar.org</owner>
   <owner>src/content/browser/serial/OWNERS</owner>
   <summary>Records when permission to access a serial port is revoked.</summary>
 </histogram>
 
 <histogram base="true" name="Permissions.Usage.ElapsedTimeSinceGrant"
     units="seconds" expires_after="2021-10-25">
-  <owner>engedy@chromium.org</owner>
+  <owner>engedy@monyhar.org</owner>
   <owner>src/components/permissions/PERMISSIONS_OWNERS</owner>
   <summary>
     Records the time elapsed since the grant of the permission until it's latest
@@ -654,7 +654,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Permissions.WebHid.ChooserClosed" enum="WebHidChooserClosed"
     expires_after="2022-01-20">
-  <owner>mattreynolds@chromium.org</owner>
+  <owner>mattreynolds@monyhar.org</owner>
   <owner>deviceapi-team@google.com</owner>
   <summary>
     Records the reason why the WebHID device chooser was closed.

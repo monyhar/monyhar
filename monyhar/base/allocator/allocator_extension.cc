@@ -7,9 +7,9 @@
 #include "base/check.h"
 
 #if BUILDFLAG(USE_TCMALLOC)
-#include "third_party/tcmalloc/chromium/src/gperftools/heap-profiler.h"
-#include "third_party/tcmalloc/chromium/src/gperftools/malloc_extension.h"
-#include "third_party/tcmalloc/chromium/src/gperftools/malloc_hook.h"
+#include "third_party/tcmalloc/monyhar/src/gperftools/heap-profiler.h"
+#include "third_party/tcmalloc/monyhar/src/gperftools/malloc_extension.h"
+#include "third_party/tcmalloc/monyhar/src/gperftools/malloc_hook.h"
 #endif
 
 namespace base {

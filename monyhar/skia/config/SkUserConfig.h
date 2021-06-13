@@ -199,7 +199,7 @@ SK_API void SkDebugf_FileLine(const char* file,
 
 // Workaround for poor anisotropic mipmap quality,
 // pending Skia ripmap support.
-// (https://bugs.chromium.org/p/skia/issues/detail?id=4863)
+// (https://bugs.monyhar.org/p/skia/issues/detail?id=4863)
 #define SK_SUPPORT_LEGACY_ANISOTROPIC_MIPMAP_SCALE
 
 // Max. verb count for paths rendered by the edge-AA tessellating path renderer.

@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.privacy_sandbox;
+package org.monyhar.chrome.browser.privacy_sandbox;
 
 import android.content.Context;
 import android.os.Bundle;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.browser.ui.messages.snackbar.Snackbar;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.browser.ui.messages.snackbar.Snackbar;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
 
 /**
  * Shows the snackbar for Privacy Sandbox settings, allowing the user to quickly navigate there.

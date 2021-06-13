@@ -10,7 +10,7 @@
 
 namespace tools {
 
-// Prints help for tree selectors like --pattern, --chromium etc.
+// Prints help for tree selectors like --pattern, --monyhar etc.
 void PrintHelpForTreeSelectors();
 
 // Returns tree selector from command line arguments.

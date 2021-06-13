@@ -32,7 +32,7 @@ class SafeBrowsingUnsafeResourceContainerTest : public PlatformTest {
 
   UnsafeResource MakePendingUnsafeResource(bool is_main_frame) {
     UnsafeResource resource;
-    resource.url = GURL("http://www.chromium.test");
+    resource.url = GURL("http://www.monyhar.test");
     resource.navigation_url = resource.url;
     resource.threat_type = safe_browsing::SB_THREAT_TYPE_URL_PHISHING;
     resource.callback =

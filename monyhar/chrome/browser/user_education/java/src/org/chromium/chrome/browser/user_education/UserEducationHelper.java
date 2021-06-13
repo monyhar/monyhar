@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.user_education;
+package org.monyhar.chrome.browser.user_education;
 
 import android.app.Activity;
 import android.os.Handler;
 import android.view.View;
 
-import org.chromium.chrome.browser.feature_engagement.TrackerFactory;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.util.ChromeAccessibilityUtil;
-import org.chromium.components.browser_ui.widget.highlight.ViewHighlighter;
-import org.chromium.components.browser_ui.widget.highlight.ViewHighlighter.HighlightParams;
-import org.chromium.components.browser_ui.widget.textbubble.TextBubble;
-import org.chromium.components.feature_engagement.Tracker;
-import org.chromium.ui.widget.RectProvider;
-import org.chromium.ui.widget.ViewRectProvider;
+import org.monyhar.chrome.browser.feature_engagement.TrackerFactory;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.util.ChromeAccessibilityUtil;
+import org.monyhar.components.browser_ui.widget.highlight.ViewHighlighter;
+import org.monyhar.components.browser_ui.widget.highlight.ViewHighlighter.HighlightParams;
+import org.monyhar.components.browser_ui.widget.textbubble.TextBubble;
+import org.monyhar.components.feature_engagement.Tracker;
+import org.monyhar.ui.widget.RectProvider;
+import org.monyhar.ui.widget.ViewRectProvider;
 
 /**
  * Class that shows and hides in-product help message bubbles.

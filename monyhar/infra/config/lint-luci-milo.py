@@ -22,14 +22,14 @@ import project_pb2
 def compare_builders(name, main_builders, sub_builders):
   # Checks that the builders on a subwaterfall on the main waterfall
   # are consistent with the builders on that subwaterfall's main page.
-  # For example, checks that the builders on the "chromium.win" section
-  # are the same as on the dedicated standalone chromium.win waterfall.
+  # For example, checks that the builders on the "monyhar.win" section
+  # are the same as on the dedicated standalone monyhar.win waterfall.
   def to_list(builders, category_prefix=''):
     desc_list = []
     for builder in builders:
       desc_list.append('name: ' + ', '.join(builder.name))
-      # A bot with "chromium.win|foo|bar" on the main waterfall should have
-      # a category of "foo|bar" on the "chromium.win" subwaterfall.
+      # A bot with "monyhar.win|foo|bar" on the main waterfall should have
+      # a category of "foo|bar" on the "monyhar.win" subwaterfall.
       category = builder.category
       if category_prefix:
         if category:

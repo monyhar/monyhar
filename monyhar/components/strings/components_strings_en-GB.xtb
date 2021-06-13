@@ -826,7 +826,7 @@ This will otherwise be blocked by your privacy settings. This will allow the con
 <translation id="3986705137476756801">Turn off Live Caption for now</translation>
 <translation id="3987405730340719549">Chrome has determined that this site could be fake or fraudulent.
 
-    If you believe that this is shown in error please visit https://bugs.chromium.org/p/chromium/issues/entry?template=Safety+Tips+Appeals.</translation>
+    If you believe that this is shown in error please visit https://bugs.monyhar.org/p/monyhar/issues/entry?template=Safety+Tips+Appeals.</translation>
 <translation id="3987940399970879459">Less than 1 MB</translation>
 <translation id="3990250421422698716">Jog offset</translation>
 <translation id="3996311196211510766">The site <ph name="ORIGIN" /> has requested that an origin policy will
@@ -1340,7 +1340,7 @@ This will otherwise be blocked by your privacy settings. This will allow the con
 <translation id="5851548754964597211">Tab list</translation>
 <translation id="5855253129151731373">This site's hostname looks similar to <ph name="LOOKALIKE_DOMAIN" />. Attackers sometimes mimic sites by making small, hard-to-see changes to the domain name.
 
-    If you believe that this is shown in error please visit https://bugs.chromium.org/p/chromium/issues/entry?template=Safety+Tips+Appeals.</translation>
+    If you believe that this is shown in error please visit https://bugs.monyhar.org/p/monyhar/issues/entry?template=Safety+Tips+Appeals.</translation>
 <translation id="5860033963881614850">Off</translation>
 <translation id="5862579898803147654">Stacker 8</translation>
 <translation id="5863847714970149516">The page ahead may try to charge you money</translation>

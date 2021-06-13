@@ -139,6 +139,6 @@ key word 'style:' must be typed in the search bar.
 
 ### References
 
-* [Old Ash Doc](https://www.chromium.org/developers/how-tos/inspecting-ash) (obsolete)
-* [Backend Source Code](https://cs.chromium.org/chromium/src/components/ui_devtools/)
-* [Inspector Frontend Source Code](https://chromium.googlesource.com/devtools/devtools-frontend)
+* [Old Ash Doc](https://www.monyhar.org/developers/how-tos/inspecting-ash) (obsolete)
+* [Backend Source Code](https://cs.monyhar.org/monyhar/src/components/ui_devtools/)
+* [Inspector Frontend Source Code](https://monyhar.googlesource.com/devtools/devtools-frontend)

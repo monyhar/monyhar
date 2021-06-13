@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
 import android.content.Context;
 import android.content.Intent;
 
-import org.chromium.net.test.EmbeddedTestServer;
+import org.monyhar.net.test.EmbeddedTestServer;
 
 /** A simple file server for java android webview tests which extends
  *  from class EmbeddedTestServer. It is able to add custom handlers
@@ -30,8 +30,8 @@ public class AwEmbeddedTestServer extends EmbeddedTestServer {
      */
     @Override
     protected void setIntentClassName(Intent intent) {
-        intent.setClassName("org.chromium.android_webview.test.support",
-                "org.chromium.android_webview.test.AwEmbeddedTestServerService");
+        intent.setClassName("org.monyhar.android_webview.test.support",
+                "org.monyhar.android_webview.test.AwEmbeddedTestServerService");
     }
 
     /** Create and initialize a server with the default and custom handlers.

@@ -2,7 +2,7 @@
 
 ## Why this is important
 
-Our [Code of Conduct](https://www.chromium.org/conduct) under "Be respectful and
+Our [Code of Conduct](https://www.monyhar.org/conduct) under "Be respectful and
 constructive" says:
 
 > Each of us has the right to __enjoy our experience__ and participate without
@@ -74,7 +74,7 @@ examples:
 
 ### Tools
 
-* [Here](https://cs.chromium.org/search/?q=%28%5E%7C%5Cs%7C%5C%28%7C%5C%5B%29%28%5BHh%5De%7C%5BSs%5Dhe%7C%5BHh%5Dis%7C%5BHh%5Ders?%7C%5BHh%5Dim%7C%5BHh%5Der%7C%5BGg%5Duys?%29%5Cb&sq=package:chromium&type=cs)
+* [Here](https://cs.monyhar.org/search/?q=%28%5E%7C%5Cs%7C%5C%28%7C%5C%5B%29%28%5BHh%5De%7C%5BSs%5Dhe%7C%5BHh%5Dis%7C%5BHh%5Ders?%7C%5BHh%5Dim%7C%5BHh%5Der%7C%5BGg%5Duys?%29%5Cb&sq=package:monyhar&type=cs)
   is a code search link prepopulated with a search that finds a lot of gendered
   terms.
 * To search for files containing gendered terms, use this command (or a variant

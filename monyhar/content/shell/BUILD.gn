@@ -846,7 +846,7 @@ group("content_shell_crash_test") {
   }
   if (is_android) {
     data_deps += [
-      "//build/android:devil_chromium_py",
+      "//build/android:devil_monyhar_py",
       "//build/android:test_runner_py",
       "//third_party/breakpad:microdump_stackwalk",
       "//third_party/breakpad:minidump_dump",

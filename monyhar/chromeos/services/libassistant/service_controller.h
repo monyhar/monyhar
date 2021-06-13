@@ -88,7 +88,7 @@ class COMPONENT_EXPORT(LIBASSISTANT_SERVICE) ServiceController
   std::unique_ptr<assistant_client::AssistantManager> assistant_manager_;
   assistant_client::AssistantManagerInternal* assistant_manager_internal_ =
       nullptr;
-  std::unique_ptr<ChromiumApiDelegate> chromium_api_delegate_;
+  std::unique_ptr<ChromiumApiDelegate> monyhar_api_delegate_;
   std::unique_ptr<DeviceStateListener> device_state_listener_;
 
   mojo::Receiver<mojom::ServiceController> receiver_{this};

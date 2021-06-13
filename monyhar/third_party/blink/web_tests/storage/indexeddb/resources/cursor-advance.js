@@ -214,7 +214,7 @@ function testAdvanceToEnd()
         .onsuccess = testPrefetchInRange;
 }
 
-// Make sure the prefetching that exists on some platforms (chromium)
+// Make sure the prefetching that exists on some platforms (monyhar)
 // doesn't mess with advance(), or vice versa.
 function testPrefetchInRange()
 {
@@ -258,7 +258,7 @@ function testPrefetchInRange()
     request.onerror = unexpectedErrorCallback;
 }
 
-// Make sure the prefetching that exists on some platforms (chromium)
+// Make sure the prefetching that exists on some platforms (monyhar)
 // doesn't mess with advance(), or vice versa.
 function testPrefetchOutOfRange()
 {

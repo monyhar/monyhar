@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@1.1.1.cr0
-package: chromium/third_party/android_deps/libs/android_arch_lifecycle_viewmodel
+package: monyhar/third_party/android_deps/libs/android_arch_lifecycle_viewmodel
 description: "Android Lifecycle ViewModel"
 data:
 - file: viewmodel-1.1.1.aar

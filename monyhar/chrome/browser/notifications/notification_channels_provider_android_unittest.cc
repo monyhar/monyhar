@@ -636,7 +636,7 @@ TEST_F(NotificationChannelsProviderAndroidTest,
 
   fake_bridge_->CreateChannel("https://example.com", base::Time::Now(),
                               false /* enabled */);
-  fake_bridge_->CreateChannel("https://chromium.org", base::Time::Now(),
+  fake_bridge_->CreateChannel("https://monyhar.org", base::Time::Now(),
                               false /* enabled */);
   fake_bridge_->CreateChannel("https://foo.com", base::Time::Now(),
                               true /* enabled */);

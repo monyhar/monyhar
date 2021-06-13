@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.gcm_driver;
+package org.monyhar.components.gcm_driver;
 
 import android.content.Context;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.StrictModeContext;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.StrictModeContext;
 
 /**
  * This class is responsible for persisting subscription specific flags to make them available
@@ -16,7 +16,7 @@ import org.chromium.base.StrictModeContext;
 public class SubscriptionFlagManager {
     private static final String TAG = "SubscriptionFlagManager";
     private static final String PREF_PACKAGE =
-            "org.chromium.components.gcm_driver.subscription_flags";
+            "org.monyhar.components.gcm_driver.subscription_flags";
 
     // Private constructor because all methods in this class are static, and it
     // shouldn't be instantiated.

@@ -29,7 +29,7 @@ using alert_overlays::ButtonConfig;
 class HttpAuthOverlayTest : public PlatformTest {
  public:
   HttpAuthOverlayTest()
-      : url_("http://www.chromium.test"),
+      : url_("http://www.monyhar.test"),
         message_("Message"),
         default_user_text_("Default Text"),
         request_(OverlayRequest::CreateWithConfig<HTTPAuthOverlayRequestConfig>(

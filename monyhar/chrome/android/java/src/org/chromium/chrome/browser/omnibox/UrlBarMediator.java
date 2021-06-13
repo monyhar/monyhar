@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox;
+package org.monyhar.chrome.browser.omnibox;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -17,19 +17,19 @@ import android.text.format.DateUtils;
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.omnibox.UrlBar.ScrollType;
-import org.chromium.chrome.browser.omnibox.UrlBar.UrlTextChangeListener;
-import org.chromium.chrome.browser.omnibox.UrlBarCoordinator.SelectionState;
-import org.chromium.chrome.browser.omnibox.UrlBarProperties.AutocompleteText;
-import org.chromium.chrome.browser.omnibox.UrlBarProperties.UrlBarTextState;
-import org.chromium.chrome.browser.omnibox.suggestions.AutocompleteCoordinator;
-import org.chromium.components.omnibox.OmniboxUrlEmphasizer.UrlEmphasisSpan;
-import org.chromium.content_public.browser.BrowserStartupController;
-import org.chromium.ui.base.Clipboard;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.omnibox.UrlBar.ScrollType;
+import org.monyhar.chrome.browser.omnibox.UrlBar.UrlTextChangeListener;
+import org.monyhar.chrome.browser.omnibox.UrlBarCoordinator.SelectionState;
+import org.monyhar.chrome.browser.omnibox.UrlBarProperties.AutocompleteText;
+import org.monyhar.chrome.browser.omnibox.UrlBarProperties.UrlBarTextState;
+import org.monyhar.chrome.browser.omnibox.suggestions.AutocompleteCoordinator;
+import org.monyhar.components.omnibox.OmniboxUrlEmphasizer.UrlEmphasisSpan;
+import org.monyhar.content_public.browser.BrowserStartupController;
+import org.monyhar.ui.base.Clipboard;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.net.MalformedURLException;
 import java.net.URL;

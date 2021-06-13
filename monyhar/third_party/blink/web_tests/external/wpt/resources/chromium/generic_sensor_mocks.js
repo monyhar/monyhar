@@ -36,7 +36,7 @@ self.GenericSensorTest = (() => {
   const DEFAULT_FREQUENCY = 5;
 
   // Class that mocks Sensor interface defined in
-  // https://cs.chromium.org/chromium/src/services/device/public/mojom/sensor.mojom
+  // https://cs.monyhar.org/monyhar/src/services/device/public/mojom/sensor.mojom
   class MockSensor {
     constructor(sensorRequest, handle, offset, size, reportingMode) {
       this.client_ = null;
@@ -191,7 +191,7 @@ self.GenericSensorTest = (() => {
   }
 
   // Class that mocks SensorProvider interface defined in
-  // https://cs.chromium.org/chromium/src/services/device/public/mojom/sensor_provider.mojom
+  // https://cs.monyhar.org/monyhar/src/services/device/public/mojom/sensor_provider.mojom
   class MockSensorProvider {
     constructor() {
       this.readingSizeInBytes_ =

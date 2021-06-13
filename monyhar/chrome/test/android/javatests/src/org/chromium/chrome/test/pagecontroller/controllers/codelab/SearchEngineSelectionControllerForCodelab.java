@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.pagecontroller.controllers.codelab;
+package org.monyhar.chrome.test.pagecontroller.controllers.codelab;
 
-import org.chromium.chrome.test.pagecontroller.controllers.PageController;
+import org.monyhar.chrome.test.pagecontroller.controllers.PageController;
 
 // TODO: Implement page controller for SearchEngineSettings.java.
 
@@ -12,7 +12,7 @@ import org.chromium.chrome.test.pagecontroller.controllers.PageController;
  * Search Engine Selection Page Controller for the Code Lab, representing
  * SearchEnginePreferences.java.
  *
- * @see {@link org.chromium.chrome.browser.search_engines.settings.SearchEngineSettings}
+ * @see {@link org.monyhar.chrome.browser.search_engines.settings.SearchEngineSettings}
  */
 
 public class SearchEngineSelectionControllerForCodelab extends PageController {

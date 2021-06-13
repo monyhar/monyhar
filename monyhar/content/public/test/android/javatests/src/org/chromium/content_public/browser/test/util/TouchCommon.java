@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.browser.test.util;
+package org.monyhar.content_public.browser.test.util;
 
 import android.app.Activity;
 import android.os.SystemClock;

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.tools.errorprone.plugin;
+package org.monyhar.tools.errorprone.plugin;
 
 import com.google.auto.service.AutoService;
 import com.google.errorprone.BugPattern;
@@ -27,7 +27,7 @@ import javax.lang.model.element.ElementKind;
 import javax.lang.model.element.Modifier;
 
 /**
- * Triggers an error for {@link org.chromium.base.TraceEvent} usages with non string literals.
+ * Triggers an error for {@link org.monyhar.base.TraceEvent} usages with non string literals.
  */
 @AutoService(BugChecker.class)
 @BugPattern(name = "NoDynamicStringsInTraceEventCheck",
@@ -47,8 +47,8 @@ public class NoDynamicStringsInTraceEventCheck
         if (!sTracingFunctions.contains(method.name.toString())) return Description.NO_MATCH;
 
         String className = method.enclClass().fullname.toString();
-        if (!"org.chromium.base.EarlyTraceEvent".equals(className)
-                && !"org.chromium.base.TraceEvent".equals(className)) {
+        if (!"org.monyhar.base.EarlyTraceEvent".equals(className)
+                && !"org.monyhar.base.TraceEvent".equals(className)) {
             return Description.NO_MATCH;
         }
         // Allow the events added by tracing. Adding SuppressWarning in these files causes all

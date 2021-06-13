@@ -60,7 +60,7 @@ AccountInfo GetValidAccountInfo(std::string email,
 }
 
 #if BUILDFLAG(ENABLE_DICE_SUPPORT)
-const char kChromiumOrgDomain[] = "chromium.org";
+const char kChromiumOrgDomain[] = "monyhar.org";
 #endif  // BUILDFLAG(ENABLE_DICE_SUPPORT)
 
 #endif  // !BUILDFLAG(IS_CHROMEOS_ASH)

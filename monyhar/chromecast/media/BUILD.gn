@@ -47,7 +47,7 @@ group("libcast_media") {
     deps = [ "//chromecast/media/cma/backend:libcast_media_1.0" ]
   }
 
-  if (enable_chromium_runtime_cast_renderer) {
+  if (enable_monyhar_runtime_cast_renderer) {
     deps += [ "//chromecast/media/cma/backend/proxy" ]
   }
 

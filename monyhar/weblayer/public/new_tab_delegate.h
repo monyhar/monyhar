@@ -9,7 +9,7 @@ namespace weblayer {
 
 class Tab;
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.weblayer_private
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.weblayer_private
 // GENERATED_JAVA_CLASS_NAME_OVERRIDE: ImplNewTabType
 // Corresponds to type of browser the page requested.
 enum class NewTabType {

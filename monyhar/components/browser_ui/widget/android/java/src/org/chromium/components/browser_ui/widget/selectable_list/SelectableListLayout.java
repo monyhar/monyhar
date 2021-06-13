@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.selectable_list;
+package org.monyhar.components.browser_ui.widget.selectable_list;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -24,16 +24,16 @@ import androidx.recyclerview.widget.RecyclerView.AdapterDataObserver;
 import androidx.recyclerview.widget.RecyclerView.ItemAnimator;
 import androidx.recyclerview.widget.RecyclerView.OnScrollListener;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.components.browser_ui.widget.FadingShadow;
-import org.chromium.components.browser_ui.widget.FadingShadowView;
-import org.chromium.components.browser_ui.widget.R;
-import org.chromium.components.browser_ui.widget.displaystyle.DisplayStyleObserver;
-import org.chromium.components.browser_ui.widget.displaystyle.HorizontalDisplayStyle;
-import org.chromium.components.browser_ui.widget.displaystyle.UiConfig;
-import org.chromium.components.browser_ui.widget.displaystyle.UiConfig.DisplayStyle;
-import org.chromium.components.browser_ui.widget.selectable_list.SelectionDelegate.SelectionObserver;
-import org.chromium.ui.widget.LoadingView;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.components.browser_ui.widget.FadingShadow;
+import org.monyhar.components.browser_ui.widget.FadingShadowView;
+import org.monyhar.components.browser_ui.widget.R;
+import org.monyhar.components.browser_ui.widget.displaystyle.DisplayStyleObserver;
+import org.monyhar.components.browser_ui.widget.displaystyle.HorizontalDisplayStyle;
+import org.monyhar.components.browser_ui.widget.displaystyle.UiConfig;
+import org.monyhar.components.browser_ui.widget.displaystyle.UiConfig.DisplayStyle;
+import org.monyhar.components.browser_ui.widget.selectable_list.SelectionDelegate.SelectionObserver;
+import org.monyhar.ui.widget.LoadingView;
 
 import java.util.List;
 

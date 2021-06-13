@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.test.util;
+package org.monyhar.base.test.util;
 
 import static org.hamcrest.Matchers.contains;
 import static org.junit.Assert.assertEquals;
@@ -23,7 +23,7 @@ import org.junit.runners.model.FrameworkMethod;
 import org.junit.runners.model.InitializationError;
 import org.junit.runners.model.Statement;
 
-import org.chromium.base.test.util.AnnotationProcessingUtils.AnnotationExtractor;
+import org.monyhar.base.test.util.AnnotationProcessingUtils.AnnotationExtractor;
 
 import java.lang.annotation.Annotation;
 import java.lang.annotation.ElementType;

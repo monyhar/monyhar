@@ -1,4 +1,4 @@
 monorail: {
   component: "Blink>Network>WebSockets"
 }
-team_email: "blink-network-dev@chromium.org"
+team_email: "blink-network-dev@monyhar.org"

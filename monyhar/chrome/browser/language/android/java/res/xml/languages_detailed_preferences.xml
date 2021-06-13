@@ -11,7 +11,7 @@
         android:key="app_language_section"
         android:order="1">
 
-        <org.chromium.chrome.browser.language.settings.LanguageItemPickerPreference
+        <org.monyhar.chrome.browser.language.settings.LanguageItemPickerPreference
             android:key="app_language_preference" />
 
     </PreferenceCategory>
@@ -22,7 +22,7 @@
       android:order="2"
       app:allowDividerAbove="true">
 
-      <org.chromium.chrome.browser.language.settings.ContentLanguagesPreference
+      <org.monyhar.chrome.browser.language.settings.ContentLanguagesPreference
           android:key="content_languages_preference"
           android:layout="@layout/languages_preference"
           android:widgetLayout="@layout/accept_languages_list" />
@@ -36,7 +36,7 @@
         app:allowDividerAbove="true"
         app:allowDividerBelow="false">
 
-        <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+        <org.monyhar.components.browser_ui.settings.ChromeSwitchPreference
             android:key="translate_switch"
             android:summaryOn="@string/languages_send_translate_switch"
             android:summaryOff="@string/languages_send_translate_switch"
@@ -50,19 +50,19 @@
             app:allowDividerAbove="true"
             app:allowDividerBelow="false">
 
-            <org.chromium.chrome.browser.language.settings.LanguageItemPickerPreference
+            <org.monyhar.chrome.browser.language.settings.LanguageItemPickerPreference
                 android:key="translate_settings_target_language"
                 android:title="@string/languages_settings_target"
                 app:allowDividerAbove="false"
                 app:allowDividerBelow="false" />
 
-            <org.chromium.chrome.browser.language.settings.LanguageItemListPreference
+            <org.monyhar.chrome.browser.language.settings.LanguageItemListPreference
               android:key="translate_settings_always_languages"
               android:title="@string/languages_settings_automatic"
               app:allowDividerAbove="false"
               app:allowDividerBelow="false" />
 
-            <org.chromium.chrome.browser.language.settings.LanguageItemListPreference
+            <org.monyhar.chrome.browser.language.settings.LanguageItemListPreference
               android:key="translate_settings_never_languages"
               android:title="@string/languages_settings_dont_offer_langs"
               app:allowDividerAbove="false"

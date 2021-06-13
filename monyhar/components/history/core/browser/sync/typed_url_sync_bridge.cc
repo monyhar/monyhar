@@ -1045,7 +1045,7 @@ bool TypedURLSyncBridge::ShouldIgnoreUrl(const GURL& url) {
 
 bool TypedURLSyncBridge::ShouldIgnoreVisits(const VisitVector& visits) {
   // We ignore URLs that were imported, but have never been visited by
-  // chromium.
+  // monyhar.
   static const int kFirstImportedSource = SOURCE_FIREFOX_IMPORTED;
   VisitSourceMap map;
   if (!history_backend_->GetVisitsSource(visits, &map))

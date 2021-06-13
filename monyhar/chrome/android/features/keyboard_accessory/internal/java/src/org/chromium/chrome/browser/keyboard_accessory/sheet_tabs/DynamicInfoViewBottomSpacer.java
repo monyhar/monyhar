@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.keyboard_accessory.sheet_tabs;
+package org.monyhar.chrome.browser.keyboard_accessory.sheet_tabs;
 
 import android.graphics.Rect;
 import android.view.View;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.chrome.browser.keyboard_accessory.R;
+import org.monyhar.chrome.browser.keyboard_accessory.R;
 
 /**
  * This decoration adds a space between the last info view and the first non-info view. This allows

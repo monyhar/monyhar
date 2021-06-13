@@ -86,8 +86,8 @@ template("wayland_protocol") {
       "//third_party/wayland:wayland_util",
     ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
 
     public_configs = [ ":$config_name" ]
   }

@@ -22,8 +22,8 @@ TAGS_OF_INTEREST = set(['include', 'message', 'structure'])
 
 def _CountResourceUsage(grd, seen_files):
   tag_name_to_count = {tag: set() for tag in TAGS_OF_INTEREST}
-  # Pass '_chromium', but '_google_chrome' would produce the same result.
-  root = grd_reader.Parse(grd, defines={'_chromium': True})
+  # Pass '_monyhar', but '_google_chrome' would produce the same result.
+  root = grd_reader.Parse(grd, defines={'_monyhar': True})
   seen_files.add(grd)
   # Count all descendant tags, regardless of whether they're active.
   for node in root.Preorder():

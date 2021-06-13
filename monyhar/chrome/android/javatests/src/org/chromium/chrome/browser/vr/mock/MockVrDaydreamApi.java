@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr.mock;
+package org.monyhar.chrome.browser.vr.mock;
 
 import android.app.Activity;
 import android.app.PendingIntent;
 import android.content.Intent;
 
-import org.chromium.chrome.browser.vr.VrDaydreamApi;
+import org.monyhar.chrome.browser.vr.VrDaydreamApi;
 
 // TODO(bsheedy): Make Mockito work in instrumentation tests and replace uses of this class with
 // Mockito spies.

@@ -1,13 +1,13 @@
-calamity@chromium.org
-dominickn@chromium.org
-jennyz@chromium.org
-khmel@chromium.org
-nancylingwang@chromium.org
-xiyuan@chromium.org
+calamity@monyhar.org
+dominickn@monyhar.org
+jennyz@monyhar.org
+khmel@monyhar.org
+nancylingwang@monyhar.org
+xiyuan@monyhar.org
 
 # Mainly for launcher personalization purposes.
-tby@chromium.org
-thanhdng@chromium.org
-wrong@chromium.org
+tby@monyhar.org
+thanhdng@monyhar.org
+wrong@monyhar.org
 
-per-file app_launch_event_logger*=charleszhao@chromium.org
+per-file app_launch_event_logger*=charleszhao@monyhar.org

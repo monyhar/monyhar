@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_entry_edit;
+package org.monyhar.chrome.browser.password_entry_edit;
 
 import static android.text.InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD;
 
@@ -13,15 +13,15 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.ALL_KEYS;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.DUPLICATE_USERNAME_ERROR;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.EMPTY_PASSWORD_ERROR;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.FEDERATION_ORIGIN;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.PASSWORD;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.PASSWORD_VISIBLE;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.URL_OR_APP;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.USERNAME;
-import static org.chromium.content_public.browser.test.util.TestThreadUtils.runOnUiThreadBlocking;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.ALL_KEYS;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.DUPLICATE_USERNAME_ERROR;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.EMPTY_PASSWORD_ERROR;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.FEDERATION_ORIGIN;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.PASSWORD;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.PASSWORD_VISIBLE;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.URL_OR_APP;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.USERNAME;
+import static org.monyhar.content_public.browser.test.util.TestThreadUtils.runOnUiThreadBlocking;
 
 import android.widget.EditText;
 import android.widget.TextView;
@@ -41,14 +41,14 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.password_entry_edit.CredentialEntryFragmentViewBase.ComponentStateDelegate;
-import org.chromium.chrome.browser.settings.SettingsActivityTestRule;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.widget.ButtonCompat;
-import org.chromium.ui.widget.ChromeImageButton;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.password_entry_edit.CredentialEntryFragmentViewBase.ComponentStateDelegate;
+import org.monyhar.chrome.browser.settings.SettingsActivityTestRule;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.widget.ButtonCompat;
+import org.monyhar.ui.widget.ChromeImageButton;
 
 /**
  * View tests for the credential editing UI displaying a saved credential.

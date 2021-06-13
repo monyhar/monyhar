@@ -23,8 +23,8 @@ XML_RIGHT_ORDER = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>owner1@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner1@monyhar.org</owner>
+  <owner>owner2@monyhar.org</owner>
   <summary>Summary text</summary>
 </histogram>
 
@@ -32,8 +32,8 @@ XML_RIGHT_ORDER = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>owner1@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner1@monyhar.org</owner>
+  <owner>owner2@monyhar.org</owner>
   <summary>Summary text</summary>
 </histogram>
 
@@ -41,8 +41,8 @@ XML_RIGHT_ORDER = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>owner1@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner1@monyhar.org</owner>
+  <owner>owner2@monyhar.org</owner>
   <summary>Summary text</summary>
 </histogram>
 
@@ -82,8 +82,8 @@ PRETTY_XML = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>owner1@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner1@monyhar.org</owner>
+  <owner>owner2@monyhar.org</owner>
   <component>Component&gt;Subcomponent</component>
   <summary>Summary text</summary>
 </histogram>
@@ -118,8 +118,8 @@ XML_WRONG_ATTRIBUTE_ORDER = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>owner1@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner1@monyhar.org</owner>
+  <owner>owner2@monyhar.org</owner>
   <component>Component&gt;Subcomponent</component>
   <summary>Summary text</summary>
 </histogram>
@@ -154,8 +154,8 @@ XML_MISSING_SEPARATOR = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>owner1@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner1@monyhar.org</owner>
+  <owner>owner2@monyhar.org</owner>
   <summary>Summary text</summary>
 </histogram>
 
@@ -189,8 +189,8 @@ XML_WRONG_INDENT = """
     <obsolete>
       Obsolete text
     </obsolete>
-      <owner>owner1@chromium.org</owner>
-      <owner>owner2@chromium.org</owner>
+      <owner>owner1@monyhar.org</owner>
+      <owner>owner2@monyhar.org</owner>
       <component>Component&gt;Subcomponent</component>
     <summary>Summary text</summary>
   </histogram>
@@ -224,9 +224,9 @@ XML_WRONG_SINGLELINE = """
 
   <obsolete>Obsolete text</obsolete>
   <owner>
-    owner1@chromium.org
+    owner1@monyhar.org
   </owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner2@monyhar.org</owner>
   <component>
     Component&gt;Subcomponent
   </component>
@@ -263,8 +263,8 @@ XML_WRONG_LINEBREAK = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>owner1@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner1@monyhar.org</owner>
+  <owner>owner2@monyhar.org</owner>
   <component>Component&gt;Subcomponent</component>
   <summary>Summary text</summary>
 
@@ -298,9 +298,9 @@ XML_WRONG_CHILDREN_ORDER = """
     Obsolete text
   </obsolete>
   <summary>Summary text</summary>
-  <owner>owner1@chromium.org</owner>
+  <owner>owner1@monyhar.org</owner>
   <component>Component&gt;Subcomponent</component>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner2@monyhar.org</owner>
 </histogram>
 
 </histograms>
@@ -331,8 +331,8 @@ XML_WRONG_ORDER = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>owner1@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner1@monyhar.org</owner>
+  <owner>owner2@monyhar.org</owner>
   <summary>Summary text</summary>
 </histogram>
 
@@ -340,8 +340,8 @@ XML_WRONG_ORDER = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>owner1@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner1@monyhar.org</owner>
+  <owner>owner2@monyhar.org</owner>
   <summary>Summary text</summary>
 </histogram>
 
@@ -349,8 +349,8 @@ XML_WRONG_ORDER = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>owner1@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner1@monyhar.org</owner>
+  <owner>owner2@monyhar.org</owner>
   <summary>Summary text</summary>
 </histogram>
 

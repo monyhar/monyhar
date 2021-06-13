@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.infobar;
+package org.monyhar.chrome.browser.infobar;
 
 import android.widget.ImageView;
 
 import androidx.appcompat.content.res.AppCompatResources;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.instantapps.InstantAppsBannerData;
-import org.chromium.components.browser_ui.widget.DualControlLayout;
-import org.chromium.components.infobars.ConfirmInfoBar;
-import org.chromium.components.infobars.InfoBar;
-import org.chromium.components.infobars.InfoBarLayout;
-import org.chromium.components.url_formatter.SchemeDisplay;
-import org.chromium.components.url_formatter.UrlFormatter;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.instantapps.InstantAppsBannerData;
+import org.monyhar.components.browser_ui.widget.DualControlLayout;
+import org.monyhar.components.infobars.ConfirmInfoBar;
+import org.monyhar.components.infobars.InfoBar;
+import org.monyhar.components.infobars.InfoBarLayout;
+import org.monyhar.components.url_formatter.SchemeDisplay;
+import org.monyhar.components.url_formatter.UrlFormatter;
 
 /**
  * Infobar that asks the user whether they want to use an instant app for a particular website.

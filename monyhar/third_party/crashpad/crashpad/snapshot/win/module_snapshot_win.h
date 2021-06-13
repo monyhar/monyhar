@@ -112,10 +112,10 @@ class ModuleSnapshotWin final : public ModuleSnapshot {
   std::string pdb_name_;
   UUID uuid_;
   ProcessMemoryRange memory_range_;
-  // Too const-y: https://crashpad.chromium.org/bug/9.
+  // Too const-y: https://crashpad.monyhar.org/bug/9.
   mutable std::vector<std::unique_ptr<const UserMinidumpStream>> streams_;
   // VSFixedFileInfo() is logically const, but updates these members on the
-  // call. See https://crashpad.chromium.org/bug/9.
+  // call. See https://crashpad.monyhar.org/bug/9.
   mutable VS_FIXEDFILEINFO vs_fixed_file_info_;
   mutable InitializationState initialized_vs_fixed_file_info_;
   ProcessReaderWin* process_reader_;  // weak

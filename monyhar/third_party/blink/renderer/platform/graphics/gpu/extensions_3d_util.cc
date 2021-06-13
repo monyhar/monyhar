@@ -7,9 +7,9 @@
 #include <memory>
 
 #include "base/memory/ptr_util.h"
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "gpu/command_buffer/client/gles2_interface.h"
-#include "gpu/command_buffer/common/gles2_cmd_copy_texture_chromium_utils.h"
+#include "gpu/command_buffer/common/gles2_cmd_copy_texture_monyhar_utils.h"
 #include "third_party/blink/renderer/platform/wtf/text/string_hash.h"
 
 namespace blink {

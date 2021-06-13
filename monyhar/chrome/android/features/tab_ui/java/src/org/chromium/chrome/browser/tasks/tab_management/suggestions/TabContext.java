@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management.suggestions;
+package org.monyhar.chrome.browser.tasks.tab_management.suggestions;
 
 import android.text.TextUtils;
 
@@ -10,13 +10,13 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.state.CriticalPersistedTabData;
-import org.chromium.chrome.browser.tabmodel.TabModelFilter;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.components.site_engagement.SiteEngagementService;
-import org.chromium.content_public.browser.NavigationEntry;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.state.CriticalPersistedTabData;
+import org.monyhar.chrome.browser.tabmodel.TabModelFilter;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.components.site_engagement.SiteEngagementService;
+import org.monyhar.content_public.browser.NavigationEntry;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.homepage;
+package org.monyhar.chrome.browser.homepage;
 
 import android.text.TextUtils;
 
@@ -10,16 +10,16 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ObserverList;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.Pref;
-import org.chromium.chrome.browser.preferences.PrefChangeRegistrar;
-import org.chromium.chrome.browser.preferences.PrefChangeRegistrar.PrefObserver;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.prefs.PrefService;
-import org.chromium.components.user_prefs.UserPrefs;
+import org.monyhar.base.ObserverList;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.Pref;
+import org.monyhar.chrome.browser.preferences.PrefChangeRegistrar;
+import org.monyhar.chrome.browser.preferences.PrefChangeRegistrar.PrefObserver;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.prefs.PrefService;
+import org.monyhar.components.user_prefs.UserPrefs;
 
 /**
  * Provides information for the home page related policies.
@@ -87,7 +87,7 @@ public class HomepagePolicyManager implements PrefObserver {
 
     /**
      * Stop observing pref changes and destroy the singleton instance.
-     * Will be called from {@link org.chromium.chrome.browser.ChromeActivitySessionTracker}.
+     * Will be called from {@link org.monyhar.chrome.browser.ChromeActivitySessionTracker}.
      */
     public static void destroy() {
         sInstance.destroyInternal();

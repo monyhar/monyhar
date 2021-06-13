@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps;
+package org.monyhar.chrome.browser.webapps;
 
 import android.content.Intent;
 import android.content.res.AssetManager;
@@ -26,18 +26,18 @@ import org.robolectric.res.ResourceTable;
 import org.robolectric.util.ReflectionHelpers;
 import org.w3c.dom.Document;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.ShortcutHelper;
-import org.chromium.chrome.browser.browserservices.intents.WebApkDistributor;
-import org.chromium.chrome.browser.browserservices.intents.WebApkExtras;
-import org.chromium.chrome.browser.browserservices.intents.WebApkShareTarget;
-import org.chromium.chrome.browser.browserservices.intents.WebDisplayMode;
-import org.chromium.components.webapk.lib.common.WebApkMetaDataKeys;
-import org.chromium.components.webapps.ShortcutSource;
-import org.chromium.device.mojom.ScreenOrientationLockType;
-import org.chromium.webapk.lib.common.WebApkConstants;
-import org.chromium.webapk.lib.common.splash.SplashLayout;
-import org.chromium.webapk.test.WebApkTestHelper;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.ShortcutHelper;
+import org.monyhar.chrome.browser.browserservices.intents.WebApkDistributor;
+import org.monyhar.chrome.browser.browserservices.intents.WebApkExtras;
+import org.monyhar.chrome.browser.browserservices.intents.WebApkShareTarget;
+import org.monyhar.chrome.browser.browserservices.intents.WebDisplayMode;
+import org.monyhar.components.webapk.lib.common.WebApkMetaDataKeys;
+import org.monyhar.components.webapps.ShortcutSource;
+import org.monyhar.device.mojom.ScreenOrientationLockType;
+import org.monyhar.webapk.lib.common.WebApkConstants;
+import org.monyhar.webapk.lib.common.splash.SplashLayout;
+import org.monyhar.webapk.test.WebApkTestHelper;
 
 import java.io.ByteArrayInputStream;
 import java.util.ArrayList;
@@ -53,7 +53,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 @RunWith(BaseRobolectricTestRunner.class)
 @Config(manifest = Config.NONE)
 public class WebApkInfoTest {
-    private static final String WEBAPK_PACKAGE_NAME = "org.chromium.webapk.test_package";
+    private static final String WEBAPK_PACKAGE_NAME = "org.monyhar.webapk.test_package";
     private static final String UNBOUND_WEBAPK_PACKAGE_NAME = "unbound.webapk";
 
     // Android Manifest meta data for {@link PACKAGE_NAME}.

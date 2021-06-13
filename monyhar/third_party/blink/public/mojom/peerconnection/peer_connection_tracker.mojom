@@ -57,7 +57,7 @@ interface PeerConnectionManager {
 interface PeerConnectionTrackerHost {
   // PeerConnectionTrackerHost forwards these events to WebRTCInternals.
   // TODO(vm.arjun): Migrate rest of the messages,
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=792801
+  // https://bugs.monyhar.org/p/monyhar/issues/detail?id=792801
 
   // Notifies WebRTCInternals about the addition of the peer connection
   // whose data is specified in |info|.

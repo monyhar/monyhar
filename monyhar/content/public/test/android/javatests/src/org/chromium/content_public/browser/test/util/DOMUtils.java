@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.browser.test.util;
+package org.monyhar.content_public.browser.test.util;
 
 import android.app.Activity;
 import android.graphics.Rect;
@@ -12,14 +12,14 @@ import android.view.View;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.CriteriaNotSatisfiedException;
-import org.chromium.content.browser.RenderCoordinatesImpl;
-import org.chromium.content.browser.webcontents.WebContentsImpl;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.CriteriaNotSatisfiedException;
+import org.monyhar.content.browser.RenderCoordinatesImpl;
+import org.monyhar.content.browser.webcontents.WebContentsImpl;
+import org.monyhar.content_public.browser.WebContents;
 
 import java.io.IOException;
 import java.io.StringReader;

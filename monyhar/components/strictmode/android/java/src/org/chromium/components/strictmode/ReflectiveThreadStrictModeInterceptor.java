@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.strictmode;
+package org.monyhar.components.strictmode;
 
 import android.annotation.TargetApi;
 import android.app.ApplicationErrorReport;
@@ -16,9 +16,9 @@ import android.os.strictmode.ResourceMismatchViolation;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Consumer;
-import org.chromium.base.Function;
-import org.chromium.base.Log;
+import org.monyhar.base.Consumer;
+import org.monyhar.base.Function;
+import org.monyhar.base.Log;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

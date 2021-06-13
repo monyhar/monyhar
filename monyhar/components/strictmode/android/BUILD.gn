@@ -6,11 +6,11 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/components/strictmode/KnownViolations.java",
-    "java/src/org/chromium/components/strictmode/ReflectiveThreadStrictModeInterceptor.java",
-    "java/src/org/chromium/components/strictmode/StrictModePolicyViolation.java",
-    "java/src/org/chromium/components/strictmode/ThreadStrictModeInterceptor.java",
-    "java/src/org/chromium/components/strictmode/Violation.java",
+    "java/src/org/monyhar/components/strictmode/KnownViolations.java",
+    "java/src/org/monyhar/components/strictmode/ReflectiveThreadStrictModeInterceptor.java",
+    "java/src/org/monyhar/components/strictmode/StrictModePolicyViolation.java",
+    "java/src/org/monyhar/components/strictmode/ThreadStrictModeInterceptor.java",
+    "java/src/org/monyhar/components/strictmode/Violation.java",
   ]
   deps = [
     "//base:base_java",
@@ -20,7 +20,7 @@ android_library("java") {
 
 android_library("javatests") {
   testonly = true
-  sources = [ "javatests/src/org/chromium/components/strictmode/ThreadStrictModeInterceptorTest.java" ]
+  sources = [ "javatests/src/org/monyhar/components/strictmode/ThreadStrictModeInterceptorTest.java" ]
   deps = [
     ":java",
     "//base:base_java_test_support",

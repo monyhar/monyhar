@@ -69,7 +69,7 @@ def main():
         required=True,
         help='Case-insensitive name of the package to print dependencies for. '
         'Matches names of the form ...input, for example '
-        '`browser` matches `org.chromium.browser`.')
+        '`browser` matches `org.monyhar.browser`.')
     optional_arg_group = arg_parser.add_argument_group('optional arguments')
     optional_arg_group.add_argument(
         '-s',

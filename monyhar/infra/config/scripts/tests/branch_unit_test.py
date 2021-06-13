@@ -59,7 +59,7 @@ class BranchUnitTest(unittest.TestCase):
         output,
         textwrap.dedent("""\
             {
-                "project": "chromium-mMM",
+                "project": "monyhar-mMM",
                 "project_title": "Chromium MMM",
                 "is_main": false,
                 "is_lts_branch": false,
@@ -87,7 +87,7 @@ class BranchUnitTest(unittest.TestCase):
   def test_set_type_standard(self):
     input = textwrap.dedent("""\
         {
-            "project": "chromium-mMM",
+            "project": "monyhar-mMM",
             "project_title": "Chromium MMM",
             "is_main": true,
             "is_lts_branch": true,
@@ -98,7 +98,7 @@ class BranchUnitTest(unittest.TestCase):
         output,
         textwrap.dedent("""\
             {
-                "project": "chromium-mMM",
+                "project": "monyhar-mMM",
                 "project_title": "Chromium MMM",
                 "is_main": false,
                 "is_lts_branch": false,
@@ -109,7 +109,7 @@ class BranchUnitTest(unittest.TestCase):
   def test_set_type_lts(self):
     input = textwrap.dedent("""\
         {
-            "project": "chromium-mMM",
+            "project": "monyhar-mMM",
             "project_title": "Chromium MMM",
             "is_main": true,
             "is_lts_branch": false,
@@ -120,7 +120,7 @@ class BranchUnitTest(unittest.TestCase):
         output,
         textwrap.dedent("""\
             {
-                "project": "chromium-mMM",
+                "project": "monyhar-mMM",
                 "project_title": "Chromium MMM",
                 "is_main": false,
                 "is_lts_branch": true,

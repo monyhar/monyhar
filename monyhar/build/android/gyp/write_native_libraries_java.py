@@ -19,7 +19,7 @@ _NATIVE_LIBRARIES_TEMPLATE = """\
 //     build/android/gyp/write_native_libraries_java.py
 // Please do not change its content.
 
-package org.chromium.build;
+package org.monyhar.build;
 
 public class NativeLibraries {{
     public static final int CPU_FAMILY_UNKNOWN = 0;
@@ -55,7 +55,7 @@ def main():
   build_utils.AddDepfileOption(parser)
   parser.add_argument('--final', action='store_true', help='Use final fields.')
   parser.add_argument(
-      '--enable-chromium-linker',
+      '--enable-monyhar-linker',
       action='store_true',
       help='Enable Chromium linker.')
   parser.add_argument(
@@ -85,7 +85,7 @@ def main():
 
   options = parser.parse_args(build_utils.ExpandFileArgs(sys.argv[1:]))
 
-  assert (options.enable_chromium_linker or not options.load_library_from_apk)
+  assert (options.enable_monyhar_linker or not options.load_library_from_apk)
 
   native_libraries_list = []
   if options.main_component_library:
@@ -106,7 +106,7 @@ def main():
 
   format_dict = {
       'MAYBE_FINAL': 'final ' if options.final else '',
-      'USE_LINKER': bool_str(options.enable_chromium_linker),
+      'USE_LINKER': bool_str(options.enable_monyhar_linker),
       'USE_LIBRARY_IN_ZIP_FILE': bool_str(options.load_library_from_apk),
       'USE_MODERN_LINKER': bool_str(options.use_modern_linker),
       'LIBRARIES': ','.join(native_libraries_list),
@@ -116,7 +116,7 @@ def main():
     with zipfile.ZipFile(f.name, 'w') as srcjar_file:
       build_utils.AddToZipHermetic(
           zip_file=srcjar_file,
-          zip_path='org/chromium/build/NativeLibraries.java',
+          zip_path='org/monyhar/build/NativeLibraries.java',
           data=_NATIVE_LIBRARIES_TEMPLATE.format(**format_dict))
 
   if options.depfile:

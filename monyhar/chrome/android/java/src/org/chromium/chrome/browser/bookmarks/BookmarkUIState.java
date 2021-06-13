@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.bookmarks;
+package org.monyhar.chrome.browser.bookmarks;
 
 import android.net.Uri;
 import android.text.TextUtils;
 
-import org.chromium.components.bookmarks.BookmarkId;
-import org.chromium.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.bookmarks.BookmarkId;
+import org.monyhar.components.embedder_support.util.UrlConstants;
 
 /**
  * A class representing the UI state of the {@link BookmarkManager}. All

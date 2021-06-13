@@ -77,7 +77,7 @@ bool GLSurfacePresentationHelper::GetFrameTimestampInfoIfAvailable(
 
     // Workaround null timestamp by setting it to TimeTicks::Now() snapped to
     // the next vsync interval. See
-    // https://bugs.chromium.org/p/chromium/issues/detail?id=966638 for more
+    // https://bugs.monyhar.org/p/monyhar/issues/detail?id=966638 for more
     // details.
     if (result && timestamp->is_null()) {
       *timestamp = base::TimeTicks::Now();

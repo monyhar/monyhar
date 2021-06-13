@@ -74,7 +74,7 @@ def debug(extra_options):
   return run(['build/android/adb_gdb', '--start',
              '--activity=.CronetTestActivity',
              '--program-name=CronetTest',
-             '--package-name=org.chromium.net'] +
+             '--package-name=org.monyhar.net'] +
              extra_options)
 
 
@@ -162,7 +162,7 @@ def main():
     parser.add_argument('-i', '--iphoneos', action='store_true',
                       help='build for physical iphone')
     parser.add_argument('-b', '--bundle-id-prefix', action='store',
-                      dest='bundle_id_prefix', default='org.chromium',
+                      dest='bundle_id_prefix', default='org.monyhar',
                       help='configure bundle id prefix')
 
   options, extra_options = parser.parse_known_args()
@@ -199,7 +199,7 @@ def main():
       gn_args += 'arm_use_neon=false '
     if options.asan:
       # ASAN on Android requires one-time setup described here:
-      # https://www.chromium.org/developers/testing/addresssanitizer
+      # https://www.monyhar.org/developers/testing/addresssanitizer
       gn_args += 'is_asan=true is_clang=true is_debug=false '
       out_dir_suffix += '-asan'
 

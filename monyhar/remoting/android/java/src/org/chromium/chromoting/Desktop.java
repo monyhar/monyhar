@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting;
+package org.monyhar.chromoting;
 
 import android.annotation.SuppressLint;
 import android.content.res.Configuration;
@@ -32,10 +32,10 @@ import androidx.appcompat.app.ActionBar.OnMenuVisibilityListener;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import org.chromium.chromoting.help.HelpContext;
-import org.chromium.chromoting.help.HelpSingleton;
-import org.chromium.chromoting.jni.Client;
-import org.chromium.ui.KeyboardVisibilityDelegate;
+import org.monyhar.chromoting.help.HelpContext;
+import org.monyhar.chromoting.help.HelpSingleton;
+import org.monyhar.chromoting.jni.Client;
+import org.monyhar.ui.KeyboardVisibilityDelegate;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

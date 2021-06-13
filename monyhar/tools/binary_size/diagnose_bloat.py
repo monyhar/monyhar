@@ -156,7 +156,7 @@ class ResourceSizesDiff(BaseDiff):
     footer_lines = [
         '',
         'For an explanation of these metrics, see:',
-        ('https://chromium.googlesource.com/chromium/src/+/main/docs/speed/'
+        ('https://monyhar.googlesource.com/monyhar/src/+/main/docs/speed/'
          'binary_size/metrics.md#Metrics-for-Android')]
     return self._ResultLines(
         include_sections=ResourceSizesDiff._SUMMARY_SECTIONS) + footer_lines
@@ -290,7 +290,7 @@ class _BuildHelper(object):
     if 'monochrome' in self.target or 'trichrome' in self.target:
       ret = 'lib.unstripped/libmonochrome.so'
     elif 'webview' in self.target:
-      ret = 'lib.unstripped/libwebviewchromium.so'
+      ret = 'lib.unstripped/libwebviewmonyhar.so'
     else:
       ret = 'lib.unstripped/libchrome.so'
     return ret
@@ -439,7 +439,7 @@ class _BuildArchive(object):
   def _ArchiveResourceSizes(self):
     cmd = [
         _RESOURCE_SIZES_PATH, '--output-dir', self.dir, '--chartjson',
-        '--chromium-output-dir', self.build.output_directory
+        '--monyhar-output-dir', self.build.output_directory
     ]
     if self.build.IsTrichrome():
       get_apk = lambda t: next(x for x in self.build.abs_apk_paths if t in x)

@@ -316,7 +316,7 @@ def DownloadRPMalloc():
   #     | tar -C rpmalloc --strip-components=1 -xzf -
   # $ GZIP=-9 tar vzcf rpmalloc-bc1923f.tgz rpmalloc
   # $ gsutil.py cp -n -a public-read rpmalloc-bc1923f.tgz \
-  #     gs://chromium-browser-clang/tools/
+  #     gs://monyhar-browser-clang/tools/
   zip_name = 'rpmalloc-bc1923f.tgz'
   DownloadAndUnpack(CDS_URL + '/tools/' + zip_name, LLVM_BUILD_TOOLS_DIR)
   rpmalloc_dir = rpmalloc_dir.replace('\\', '/')
@@ -474,7 +474,7 @@ def main():
     print('Android NDK not found at ' + ANDROID_NDK_DIR)
     print('The Android NDK is needed to build a Clang whose -fsanitize=address')
     print('works on Android. See ')
-    print('https://www.chromium.org/developers/how-tos/android-build-instructions')
+    print('https://www.monyhar.org/developers/how-tos/android-build-instructions')
     print('for how to install the NDK, or pass --without-android.')
     return 1
 
@@ -485,7 +485,7 @@ def main():
     print('target_os section in your .gclient and running hooks, ')
     print('or pass --without-fuchsia.')
     print(
-        'https://chromium.googlesource.com/chromium/src/+/main/docs/fuchsia/build_instructions.md'
+        'https://monyhar.googlesource.com/monyhar/src/+/main/docs/fuchsia/build_instructions.md'
     )
     print('for general Fuchsia build instructions.')
     return 1

@@ -21,7 +21,7 @@ made by a member of the Chromium team.
 *** note
 All modifications to the DoH provider list must be accompanied by a request in
 the Chromium bug tracker in the
-[DoH component](https://bugs.chromium.org/p/chromium/issues/list?q=component:Internals%3ENetwork%3EDoH),
+[DoH component](https://bugs.monyhar.org/p/monyhar/issues/list?q=component:Internals%3ENetwork%3EDoH),
 and that request must be approved by the Chrome team.
 
 It is generally expected that the actual code change will be performed by the

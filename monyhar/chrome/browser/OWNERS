@@ -22,11 +22,11 @@ per-file *_lacros*=file://chrome/browser/lacros/OWNERS
 per-file browser_resources.grd=file://ui/webui/PLATFORM_OWNERS
 per-file dev_ui_browser_resources.grd=file://ui/webui/PLATFORM_OWNERS
 
-per-file browser_close_manager_browsertest.cc=creis@chromium.org
+per-file browser_close_manager_browsertest.cc=creis@monyhar.org
 
 per-file browser_navigator_browsertest.*=file://content/OWNERS
 
-per-file certificate_manager_model*=mattm@chromium.org
+per-file certificate_manager_model*=mattm@monyhar.org
 
 per-file chrome_content_browser_client.cc=*
 per-file chrome_content_browser_client.h=*
@@ -35,7 +35,7 @@ per-file chrome_content_browser_client_unittest.cc=*
 
 per-file chrome_browser_field_trials*=file://components/variations/OWNERS
 
-per-file chrome_device_client*=reillyg@chromium.org
+per-file chrome_device_client*=reillyg@monyhar.org
 per-file chrome_device_client*=rockot@google.com
 
 per-file chrome_navigation_browsertest.cc=file://content/OWNERS
@@ -49,25 +49,25 @@ per-file chrome_webusb_browser_client*=file://chrome/browser/usb/OWNERS
 per-file chrome_worker_browsertest.cc=file://content/browser/worker_host/OWNERS
 per-file ukm_worker_browsertest.cc=file://content/browser/worker_host/OWNERS
 
-per-file exo_parts.*=dcastagna@chromium.org
-per-file exo_parts.*=oshima@chromium.org
+per-file exo_parts.*=dcastagna@monyhar.org
+per-file exo_parts.*=oshima@monyhar.org
 
-per-file flag-never-expire-list.json=avi@chromium.org
-per-file flag-never-expire-list.json=ellyjones@chromium.org
+per-file flag-never-expire-list.json=avi@monyhar.org
+per-file flag-never-expire-list.json=ellyjones@monyhar.org
 
-per-file *.mm=avi@chromium.org
-per-file *.mm=mark@chromium.org
-per-file *.mm=rsesek@chromium.org
-per-file *.mm=thakis@chromium.org
+per-file *.mm=avi@monyhar.org
+per-file *.mm=mark@monyhar.org
+per-file *.mm=rsesek@monyhar.org
+per-file *.mm=thakis@monyhar.org
 
-per-file *_mac.h=avi@chromium.org
-per-file *_mac.h=mark@chromium.org
-per-file *_mac.h=rsesek@chromium.org
-per-file *_mac.h=thakis@chromium.org
+per-file *_mac.h=avi@monyhar.org
+per-file *_mac.h=mark@monyhar.org
+per-file *_mac.h=rsesek@monyhar.org
+per-file *_mac.h=thakis@monyhar.org
 
-per-file shell_integration_win*=gab@chromium.org
-per-file shell_integration_win*=grt@chromium.org
-per-file shell_integration_linux*=thomasanderson@chromium.org
+per-file shell_integration_win*=gab@monyhar.org
+per-file shell_integration_win*=grt@monyhar.org
+per-file shell_integration_linux*=thomasanderson@monyhar.org
 
 per-file unload_browsertest.cc=file://content/OWNERS
 
@@ -85,8 +85,8 @@ per-file chrome_content_browser_client_binder_policies.*=file://ipc/SECURITY_OWN
 per-file service_sandbox_type.h=file://ipc/SECURITY_OWNERS
 
 # BackForwardCache
-per-file chrome_back_forward_cache_browsertest.cc=arthursonzogni@chromium.org
-per-file chrome_back_forward_cache_browsertest.cc=altimin@chromium.org
+per-file chrome_back_forward_cache_browsertest.cc=arthursonzogni@monyhar.org
+per-file chrome_back_forward_cache_browsertest.cc=altimin@monyhar.org
 per-file chrome_back_forward_cache_browsertest.cc=file://content/OWNERS
 
 # Web Platform security metrics tests:

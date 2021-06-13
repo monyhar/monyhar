@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.media.ui;
+package org.monyhar.chrome.browser.media.ui;
 
-import org.chromium.components.browser_ui.media.MediaNotificationInfo;
-import org.chromium.components.browser_ui.media.MediaNotificationManager;
+import org.monyhar.components.browser_ui.media.MediaNotificationInfo;
+import org.monyhar.components.browser_ui.media.MediaNotificationManager;
 
 /** Thin wrapper for {@link MediaNotificationManager}. */
 public class ChromeMediaNotificationManager {

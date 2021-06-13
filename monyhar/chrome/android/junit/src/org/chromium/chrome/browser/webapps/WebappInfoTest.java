@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps;
+package org.monyhar.chrome.browser.webapps;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -12,12 +12,12 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.ShortcutHelper;
-import org.chromium.chrome.browser.browserservices.intents.WebDisplayMode;
-import org.chromium.chrome.test.util.browser.webapps.WebappTestHelper;
-import org.chromium.components.webapps.ShortcutSource;
-import org.chromium.device.mojom.ScreenOrientationLockType;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.ShortcutHelper;
+import org.monyhar.chrome.browser.browserservices.intents.WebDisplayMode;
+import org.monyhar.chrome.test.util.browser.webapps.WebappTestHelper;
+import org.monyhar.components.webapps.ShortcutSource;
+import org.monyhar.device.mojom.ScreenOrientationLockType;
 
 /**
  * Tests the WebappInfo class's ability to parse various URLs.

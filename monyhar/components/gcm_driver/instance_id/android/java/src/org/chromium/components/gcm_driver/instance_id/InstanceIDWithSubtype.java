@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.gcm_driver.instance_id;
+package org.monyhar.components.gcm_driver.instance_id;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,7 +12,7 @@ import androidx.annotation.VisibleForTesting;
 
 import com.google.android.gms.iid.InstanceID;
 
-import org.chromium.base.ContextUtils;
+import org.monyhar.base.ContextUtils;
 
 import java.io.IOException;
 import java.util.HashMap;

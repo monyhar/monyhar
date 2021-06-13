@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps;
+package org.monyhar.chrome.browser.webapps;
 
-import org.chromium.base.Callback;
+import org.monyhar.base.Callback;
 
 /**
  * Defines an interface for installing WebAPKs via Google Play.

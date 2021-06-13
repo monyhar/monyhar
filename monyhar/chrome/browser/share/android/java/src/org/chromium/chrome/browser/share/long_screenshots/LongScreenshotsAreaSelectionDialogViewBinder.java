@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.long_screenshots;
+package org.monyhar.chrome.browser.share.long_screenshots;
 
 import android.view.View;
 import android.widget.ImageButton;
 
-import org.chromium.chrome.R;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.chrome.R;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * Class responsible for binding the model and the view.

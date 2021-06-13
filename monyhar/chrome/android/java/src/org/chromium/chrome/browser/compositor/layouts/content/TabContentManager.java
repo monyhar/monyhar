@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.layouts.content;
+package org.monyhar.chrome.browser.compositor.layouts.content;
 
 import static java.lang.Math.min;
 
@@ -19,28 +19,28 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.CommandLine;
-import org.chromium.base.MathUtils;
-import org.chromium.base.PathUtils;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.TraceEvent;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.flags.BooleanCachedFieldTrialParameter;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tasks.tab_management.TabUiFeatureUtilities;
-import org.chromium.chrome.browser.ui.native_page.FrozenNativePage;
-import org.chromium.chrome.browser.ui.native_page.NativePage;
-import org.chromium.ui.base.DeviceFormFactor;
-import org.chromium.ui.display.DisplayAndroid;
-import org.chromium.url.GURL;
+import org.monyhar.base.Callback;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.MathUtils;
+import org.monyhar.base.PathUtils;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.flags.BooleanCachedFieldTrialParameter;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tasks.tab_management.TabUiFeatureUtilities;
+import org.monyhar.chrome.browser.ui.native_page.FrozenNativePage;
+import org.monyhar.chrome.browser.ui.native_page.NativePage;
+import org.monyhar.ui.base.DeviceFormFactor;
+import org.monyhar.ui.display.DisplayAndroid;
+import org.monyhar.url.GURL;
 
 import java.io.File;
 import java.lang.annotation.Retention;

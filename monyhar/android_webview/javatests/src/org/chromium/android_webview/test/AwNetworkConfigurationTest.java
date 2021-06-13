@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
-import static org.chromium.android_webview.test.AwActivityTestRule.WAIT_TIMEOUT_MS;
+import static org.monyhar.android_webview.test.AwActivityTestRule.WAIT_TIMEOUT_MS;
 
 import android.os.Build;
 import android.support.test.InstrumentationRegistry;
@@ -20,13 +20,13 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.AwContents;
-import org.chromium.android_webview.AwContentsClient.AwWebResourceRequest;
-import org.chromium.android_webview.test.TestAwContentsClient.OnReceivedSslErrorHelper;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.base.test.util.Feature;
-import org.chromium.net.test.EmbeddedTestServer;
-import org.chromium.net.test.ServerCertificate;
+import org.monyhar.android_webview.AwContents;
+import org.monyhar.android_webview.AwContentsClient.AwWebResourceRequest;
+import org.monyhar.android_webview.test.TestAwContentsClient.OnReceivedSslErrorHelper;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.net.test.EmbeddedTestServer;
+import org.monyhar.net.test.ServerCertificate;
 
 import java.net.URLEncoder;
 import java.util.HashMap;

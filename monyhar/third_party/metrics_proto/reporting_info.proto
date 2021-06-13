@@ -5,7 +5,7 @@
 syntax = "proto2";
 
 option optimize_for = LITE_RUNTIME;
-option java_package = "org.chromium.components.metrics";
+option java_package = "org.monyhar.components.metrics";
 
 package metrics;
 
@@ -19,7 +19,7 @@ message ReportingInfo {
   optional int32 last_response_code = 2;
 
   // The NET_ERROR code of the last upload attempt.
-  // See chromium's net/base/net_error_list.h for examples.
+  // See monyhar's net/base/net_error_list.h for examples.
   optional int32 last_error_code = 3;
 
   // True if the last upload attempt was over HTTPS.

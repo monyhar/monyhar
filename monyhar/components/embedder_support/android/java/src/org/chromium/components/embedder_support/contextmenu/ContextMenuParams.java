@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.embedder_support.contextmenu;
+package org.monyhar.components.embedder_support.contextmenu;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.blink_public.common.ContextMenuDataMediaType;
-import org.chromium.content_public.common.ContentUrlConstants;
-import org.chromium.content_public.common.Referrer;
-import org.chromium.ui.base.MenuSourceType;
-import org.chromium.url.GURL;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.blink_public.common.ContextMenuDataMediaType;
+import org.monyhar.content_public.common.ContentUrlConstants;
+import org.monyhar.content_public.common.Referrer;
+import org.monyhar.ui.base.MenuSourceType;
+import org.monyhar.url.GURL;
 
 /**
  * A list of parameters that explain what kind of context menu to show the user.  This data is

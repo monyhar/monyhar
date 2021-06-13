@@ -1,7 +1,7 @@
 // Copyright 2019 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.android_webview.devui;
+package org.monyhar.android_webview.devui;
 
 import android.content.Intent;
 import android.graphics.PorterDuff;
@@ -23,8 +23,8 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.metrics.RecordHistogram;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.metrics.RecordHistogram;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -263,8 +263,8 @@ public class MainActivity extends FragmentActivity {
             logMenuSelection(MenuChoice.REPORT_BUG);
             Uri reportUri = new Uri.Builder()
                                     .scheme("https")
-                                    .authority("bugs.chromium.org")
-                                    .path("/p/chromium/issues/entry")
+                                    .authority("bugs.monyhar.org")
+                                    .path("/p/monyhar/issues/entry")
                                     .appendQueryParameter("template", "Webview+Bugs")
                                     .appendQueryParameter("labels",
                                             "Via-WebView-DevTools,Pri-3,Type-Bug,OS-Android")
@@ -293,7 +293,7 @@ public class MainActivity extends FragmentActivity {
         } else if (item.getItemId() == R.id.options_menu_about_devui) {
             logMenuSelection(MenuChoice.ABOUT_DEVTOOLS);
             Uri uri = Uri.parse(
-                    "https://chromium.googlesource.com/chromium/src/+/HEAD/android_webview/docs/developer-ui.md");
+                    "https://monyhar.googlesource.com/monyhar/src/+/HEAD/android_webview/docs/developer-ui.md");
             startActivity(new Intent(Intent.ACTION_VIEW, uri));
             return true;
         }

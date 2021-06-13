@@ -10,13 +10,13 @@
 
 #include "base/callback.h"
 #include "chromecast/bindings/bindings_manager.h"
-#include "fuchsia/fidl/chromium/cast/cpp/fidl.h"
+#include "fuchsia/fidl/monyhar/cast/cpp/fidl.h"
 
 namespace chromecast {
 namespace bindings {
 
 // Implements the BindingsManager as a ApiBindings FIDL service.
-class BindingsManagerFuchsia : public chromium::cast::ApiBindings,
+class BindingsManagerFuchsia : public monyhar::cast::ApiBindings,
                                public BindingsManager {
  public:
   BindingsManagerFuchsia();
@@ -27,7 +27,7 @@ class BindingsManagerFuchsia : public chromium::cast::ApiBindings,
                   base::StringPiece binding_script) override;
 
  protected:
-  // chromium::cast::ApiBindings implementation:
+  // monyhar::cast::ApiBindings implementation:
   void GetAll(GetAllCallback callback) override;
   void Connect(
       std::string port_name,

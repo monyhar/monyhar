@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.customtabs.test;
+package org.monyhar.customtabs.test;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.browser.test.util;
+package org.monyhar.content_public.browser.test.util;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.content.browser.BackgroundSyncNetworkObserver;
-import org.chromium.net.ConnectionType;
+import org.monyhar.content.browser.BackgroundSyncNetworkObserver;
+import org.monyhar.net.ConnectionType;
 
 /**
  * Used to mock network conditions for Background Sync.

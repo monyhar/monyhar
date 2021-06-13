@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox;
+package org.monyhar.chrome.browser.omnibox;
 
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.spy;
@@ -26,8 +26,8 @@ import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowLooper;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.ui.base.WindowDelegate;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.ui.base.WindowDelegate;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

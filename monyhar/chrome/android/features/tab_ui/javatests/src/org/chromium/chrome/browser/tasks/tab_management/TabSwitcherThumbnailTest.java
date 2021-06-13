@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.contrib.RecyclerViewActions.scrollToPosition;
@@ -27,17 +27,17 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.FlakyTest;
-import org.chromium.base.test.util.Restriction;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.browser.Features.EnableFeatures;
-import org.chromium.ui.test.util.UiRestriction;
-import org.chromium.ui.widget.ViewLookupCachingFrameLayout;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.FlakyTest;
+import org.monyhar.base.test.util.Restriction;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.browser.Features.EnableFeatures;
+import org.monyhar.ui.test.util.UiRestriction;
+import org.monyhar.ui.widget.ViewLookupCachingFrameLayout;
 
 // clang-format off
 
@@ -127,8 +127,8 @@ public class TabSwitcherThumbnailTest {
         // There is a higher chance for the test to fail with backward counting, because after the
         // view being recycled, its height might have the correct measurement.
         for (int i = tabCounts - 1; i >= 0; i--) {
-            onView(allOf(withParent(withId(org.chromium.chrome.tab_ui.R.id.compositor_view_holder)),
-                           withId(org.chromium.chrome.tab_ui.R.id.tab_list_view)))
+            onView(allOf(withParent(withId(org.monyhar.chrome.tab_ui.R.id.compositor_view_holder)),
+                           withId(org.monyhar.chrome.tab_ui.R.id.tab_list_view)))
                     .perform(scrollToPosition(i))
                     .check(ThumbnailHeightAssertion.notZeroAt(i))
                     .check(ThumbnailAspectRatioAssertion.havingAspectRatioAt(ratio, i));
@@ -157,7 +157,7 @@ public class TabSwitcherThumbnailTest {
                 ViewLookupCachingFrameLayout tabView =
                         (ViewLookupCachingFrameLayout) viewHolder.itemView;
                 ImageView thumbnail = (ImageView) tabView.fastFindViewById(
-                        org.chromium.chrome.tab_ui.R.id.tab_thumbnail);
+                        org.monyhar.chrome.tab_ui.R.id.tab_thumbnail);
                 float thumbnailRatio = thumbnail.getWidth() * 1.f / thumbnail.getHeight();
                 assertEquals(mExpectedRatio, thumbnailRatio, 0.01);
             }
@@ -184,7 +184,7 @@ public class TabSwitcherThumbnailTest {
                 ViewLookupCachingFrameLayout tabView =
                         (ViewLookupCachingFrameLayout) viewHolder.itemView;
                 ImageView thumbnail = (ImageView) tabView.fastFindViewById(
-                        org.chromium.chrome.tab_ui.R.id.tab_thumbnail);
+                        org.monyhar.chrome.tab_ui.R.id.tab_thumbnail);
                 assertNotEquals("Thumbnail's height should not be zero", 0, thumbnail.getHeight());
             }
         }

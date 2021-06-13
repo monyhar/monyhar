@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.shell;
+package org.monyhar.android_webview.shell;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -25,22 +25,22 @@ import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
-import org.chromium.android_webview.AwBrowserContext;
-import org.chromium.android_webview.AwBrowserProcess;
-import org.chromium.android_webview.AwContents;
-import org.chromium.android_webview.AwContentsClient;
-import org.chromium.android_webview.AwDevToolsServer;
-import org.chromium.android_webview.AwGeolocationPermissions;
-import org.chromium.android_webview.AwSettings;
-import org.chromium.android_webview.JsResultReceiver;
-import org.chromium.android_webview.test.AwTestContainerView;
-import org.chromium.android_webview.test.NullContentsClient;
-import org.chromium.base.CommandLine;
-import org.chromium.base.Log;
-import org.chromium.base.TraceEvent;
-import org.chromium.content_public.browser.NavigationController;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.common.ContentUrlConstants;
+import org.monyhar.android_webview.AwBrowserContext;
+import org.monyhar.android_webview.AwBrowserProcess;
+import org.monyhar.android_webview.AwContents;
+import org.monyhar.android_webview.AwContentsClient;
+import org.monyhar.android_webview.AwDevToolsServer;
+import org.monyhar.android_webview.AwGeolocationPermissions;
+import org.monyhar.android_webview.AwSettings;
+import org.monyhar.android_webview.JsResultReceiver;
+import org.monyhar.android_webview.test.AwTestContainerView;
+import org.monyhar.android_webview.test.NullContentsClient;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.Log;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.content_public.browser.NavigationController;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.common.ContentUrlConstants;
 
 import java.net.MalformedURLException;
 import java.net.URI;

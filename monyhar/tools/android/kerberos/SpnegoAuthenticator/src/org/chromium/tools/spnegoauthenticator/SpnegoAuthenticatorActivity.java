@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.tools.spnegoauthenticator;
+package org.monyhar.tools.spnegoauthenticator;
 
 import android.accounts.AccountAuthenticatorActivity;
 import android.accounts.AccountAuthenticatorResponse;
@@ -15,7 +15,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 /** Provides a UI to administrate the Spnego accounts. */
 public class SpnegoAuthenticatorActivity extends AccountAuthenticatorActivity {

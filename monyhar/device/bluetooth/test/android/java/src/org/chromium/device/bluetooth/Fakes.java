@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.device.bluetooth;
+package org.monyhar.device.bluetooth;
 
 import android.annotation.TargetApi;
 import android.bluetooth.BluetoothDevice;
@@ -17,12 +17,12 @@ import android.os.ParcelUuid;
 import android.test.mock.MockContext;
 import android.util.SparseArray;
 
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.components.location.LocationUtils;
-import org.chromium.device.bluetooth.test.TestRSSI;
-import org.chromium.device.bluetooth.test.TestTxPower;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.components.location.LocationUtils;
+import org.monyhar.device.bluetooth.test.TestRSSI;
+import org.monyhar.device.bluetooth.test.TestTxPower;
 
 import java.util.ArrayList;
 import java.util.HashMap;

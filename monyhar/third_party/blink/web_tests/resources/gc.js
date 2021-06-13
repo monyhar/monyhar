@@ -52,6 +52,6 @@ function asyncMinorGC(callback) {
   checkForGCController();
 
   GCController.minorCollect();
-  // FIXME: we need a better way of waiting for chromium events to happen.
+  // FIXME: we need a better way of waiting for monyhar events to happen.
   setTimeout(callback, 0);
 }

@@ -567,7 +567,7 @@ TEST_F(PrefServiceSyncableMergeTest, ManagedListPreferences) {
   {
     syncer::SyncChangeList out;
     base::ListValue user_value;
-    user_value.AppendString("http://chromium.org");
+    user_value.AppendString("http://monyhar.org");
     prefs_.Set(kListPrefName, user_value);
     EXPECT_FALSE(FindValue(kListPrefName, out).get());
   }
@@ -788,7 +788,7 @@ TEST_F(PrefServiceSyncableTest, ManagedPreferences) {
   out.clear();
 
   // Changing the homepage preference should not sync anything.
-  base::Value user_value("http://chromium..com");
+  base::Value user_value("http://monyhar..com");
   prefs_.SetUserPref(kStringPrefName, user_value.CreateDeepCopy());
   EXPECT_TRUE(out.empty());
 

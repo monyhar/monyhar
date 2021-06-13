@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.urlconnection;
+package org.monyhar.net.urlconnection;
 
-import org.chromium.net.ExperimentalCronetEngine;
+import org.monyhar.net.ExperimentalCronetEngine;
 
 import java.net.URLStreamHandler;
 import java.net.URLStreamHandlerFactory;

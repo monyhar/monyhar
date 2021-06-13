@@ -2,25 +2,25 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.digitalgoods;
+package org.monyhar.chrome.browser.browserservices.digitalgoods;
 
 import android.app.Activity;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.browser.ActivityUtils;
-import org.chromium.chrome.browser.ChromeApplicationImpl;
-import org.chromium.chrome.browser.customtabs.CustomTabActivity;
-import org.chromium.components.payments.MethodStrings;
-import org.chromium.components.payments.PaymentFeatureList;
-import org.chromium.content_public.browser.RenderFrameHost;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.WebContentsStatics;
-import org.chromium.mojo.system.MojoException;
-import org.chromium.payments.mojom.CreateDigitalGoodsResponseCode;
-import org.chromium.payments.mojom.DigitalGoods;
-import org.chromium.payments.mojom.DigitalGoodsFactory;
-import org.chromium.payments.mojom.DigitalGoodsFactory.CreateDigitalGoodsResponse;
+import org.monyhar.chrome.browser.ActivityUtils;
+import org.monyhar.chrome.browser.ChromeApplicationImpl;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivity;
+import org.monyhar.components.payments.MethodStrings;
+import org.monyhar.components.payments.PaymentFeatureList;
+import org.monyhar.content_public.browser.RenderFrameHost;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.WebContentsStatics;
+import org.monyhar.mojo.system.MojoException;
+import org.monyhar.payments.mojom.CreateDigitalGoodsResponseCode;
+import org.monyhar.payments.mojom.DigitalGoods;
+import org.monyhar.payments.mojom.DigitalGoodsFactory;
+import org.monyhar.payments.mojom.DigitalGoodsFactory.CreateDigitalGoodsResponse;
 
 /**
  * An implementation of the mojo {@link DigitalGoodsFactory} interface.

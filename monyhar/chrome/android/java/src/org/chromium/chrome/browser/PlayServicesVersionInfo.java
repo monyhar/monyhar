@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
 
 import com.google.android.gms.common.GoogleApiAvailability;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.components.externalauth.ExternalAuthUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.components.externalauth.ExternalAuthUtils;
 
 import java.util.Locale;
 

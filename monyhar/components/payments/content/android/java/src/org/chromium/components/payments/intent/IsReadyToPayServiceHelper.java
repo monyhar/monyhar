@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.payments.intent;
+package org.monyhar.components.payments.intent;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -12,8 +12,8 @@ import android.os.Handler;
 import android.os.IBinder;
 import android.os.RemoteException;
 
-import org.chromium.IsReadyToPayService;
-import org.chromium.IsReadyToPayServiceCallback;
+import org.monyhar.IsReadyToPayService;
+import org.monyhar.IsReadyToPayServiceCallback;
 
 /** A helper to query the payment app's IsReadyToPay service. */
 public class IsReadyToPayServiceHelper

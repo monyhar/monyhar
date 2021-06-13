@@ -733,7 +733,7 @@ bool DeleteChromeRegistrationKeys(const InstallerState& installer_state,
 void RemoveChromeLegacyRegistryKeys(const base::FilePath& chrome_exe) {
   // We used to register Chrome to handle crx files, but this turned out
   // to be not worth the hassle. Remove these old registry entries if
-  // they exist. See: http://codereview.chromium.org/210007
+  // they exist. See: http://codereview.monyhar.org/210007
 
 #if BUILDFLAG(GOOGLE_CHROME_BRANDING)
   const wchar_t kChromeExtProgId[] = L"ChromeExt";

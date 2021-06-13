@@ -2,4 +2,4 @@ monorail {
   component: "Internals>Services>ServiceManager"
 }
 
-team_email: "chrome-updates-dev@chromium.org"
+team_email: "chrome-updates-dev@monyhar.org"

@@ -20,7 +20,7 @@ If you notice someone breaking a venue's code of conduct, you have several optio
 1. If you do not feel comfortable raising the concern directly, or the behavior
    is not fixed or acknowledged, disengage with the discussion and escalate the
    issue:
-   1. To your [spec mentor](https://www.chromium.org/blink/spec-mentors) if you have one.
+   1. To your [spec mentor](https://www.monyhar.org/blink/spec-mentors) if you have one.
    1. To a relevant group chair.
    1. To the SDO's ombuds group as identified below and/or in their code of conduct.
 

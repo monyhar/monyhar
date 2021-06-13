@@ -102,9 +102,9 @@ class FakeBBGen(generate_buildbot_json.BBJSONGenerator):
 FOO_GTESTS_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'swarming': {
@@ -126,9 +126,9 @@ FOO_GTESTS_WATERFALL = """\
 FOO_GTESTS_WITH_ENABLE_FEATURES_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'test_suites': {
@@ -146,9 +146,9 @@ FOO_GTESTS_WITH_ENABLE_FEATURES_WATERFALL = """\
 FOO_CHROMEOS_TRIGGER_SCRIPT_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'swarming': {
@@ -171,9 +171,9 @@ FOO_CHROMEOS_TRIGGER_SCRIPT_WATERFALL = """\
 FOO_LINUX_GTESTS_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'os_type': 'linux',
@@ -189,9 +189,9 @@ FOO_LINUX_GTESTS_WATERFALL = """\
 COMPOSITION_GTEST_SUITE_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'test_suites': {
@@ -206,9 +206,9 @@ COMPOSITION_GTEST_SUITE_WATERFALL = """\
 COMPOSITION_GTEST_SUITE_WITH_ARGS_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'test_suites': {
@@ -226,9 +226,9 @@ COMPOSITION_GTEST_SUITE_WITH_ARGS_WATERFALL = """\
 FOO_ISOLATED_SCRIPTS_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'test_suites': {
@@ -243,9 +243,9 @@ FOO_ISOLATED_SCRIPTS_WATERFALL = """\
 FOO_ISOLATED_SCRIPTS_WATERFALL_ANDROID = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'os_type': 'android',
@@ -262,9 +262,9 @@ FOO_ISOLATED_SCRIPTS_WATERFALL_ANDROID = """\
 FOO_SCRIPT_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'test_suites': {
@@ -279,9 +279,9 @@ FOO_SCRIPT_WATERFALL = """\
 FOO_SCRIPT_WATERFALL_MACHINE_FORBIDS_SCRIPT_TESTS = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'forbid_script_tests': True,
@@ -297,9 +297,9 @@ FOO_SCRIPT_WATERFALL_MACHINE_FORBIDS_SCRIPT_TESTS = """\
 FOO_SCRIPT_WATERFALL_FORBID_SCRIPT_TESTS = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'forbid_script_tests': True,
     'machines': {
       'Fake Tester': {
@@ -315,9 +315,9 @@ FOO_SCRIPT_WATERFALL_FORBID_SCRIPT_TESTS = """\
 FOO_JUNIT_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'test_suites': {
@@ -332,9 +332,9 @@ FOO_JUNIT_WATERFALL = """\
 FOO_GPU_TELEMETRY_TEST_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'os_type': 'win',
@@ -358,13 +358,13 @@ FOO_GPU_TELEMETRY_TEST_WATERFALL = """\
 FOO_GPU_TELEMETRY_TEST_WATERFALL_ANDROID = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'os_type': 'android',
-        'browser_config': 'android-chromium',
+        'browser_config': 'android-monyhar',
         'swarming': {
           'dimension_sets': [
             {
@@ -384,9 +384,9 @@ FOO_GPU_TELEMETRY_TEST_WATERFALL_ANDROID = """\
 FOO_GPU_TELEMETRY_TEST_WATERFALL_ANDROID_WEBVIEW = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'os_type': 'android',
@@ -410,9 +410,9 @@ FOO_GPU_TELEMETRY_TEST_WATERFALL_ANDROID_WEBVIEW = """\
 NVIDIA_GPU_TELEMETRY_TEST_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'os_type': 'win',
@@ -436,9 +436,9 @@ NVIDIA_GPU_TELEMETRY_TEST_WATERFALL = """\
 INTEL_GPU_TELEMETRY_TEST_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'os_type': 'win',
@@ -462,9 +462,9 @@ INTEL_GPU_TELEMETRY_TEST_WATERFALL = """\
 INTEL_UHD_GPU_TELEMETRY_TEST_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'os_type': 'win',
@@ -488,9 +488,9 @@ INTEL_UHD_GPU_TELEMETRY_TEST_WATERFALL = """\
 UNKNOWN_TEST_SUITE_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'test_suites': {
@@ -505,9 +505,9 @@ UNKNOWN_TEST_SUITE_WATERFALL = """\
 UNKNOWN_TEST_SUITE_TYPE_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'test_suites': {
@@ -523,9 +523,9 @@ UNKNOWN_TEST_SUITE_TYPE_WATERFALL = """\
 ANDROID_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Android Builder': {
         'additional_compile_targets': [
@@ -593,9 +593,9 @@ ANDROID_WATERFALL = """\
 UNKNOWN_BOT_GTESTS_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Unknown Bot': {
         'test_suites': {
@@ -610,9 +610,9 @@ UNKNOWN_BOT_GTESTS_WATERFALL = """\
 MATRIX_GTEST_SUITE_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'test_suites': {
@@ -627,9 +627,9 @@ MATRIX_GTEST_SUITE_WATERFALL = """\
 MATRIX_GTEST_SUITE_WATERFALL_MIXINS = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'mixins': ['dimension_mixin'],
@@ -1479,13 +1479,13 @@ ISOLATED_SCRIPT_OUTPUT_ANDROID = """\
     "isolated_scripts": [
       {
         "args": [
-          "--gs-results-bucket=chromium-result-details"
+          "--gs-results-bucket=monyhar-result-details"
         ],
         "isolate_name": "foo_test",
         "merge": {
           "args": [
             "--bucket",
-            "chromium-result-details",
+            "monyhar-result-details",
             "--test-name",
             "foo_test"
           ],
@@ -1616,7 +1616,7 @@ GPU_TELEMETRY_TEST_OUTPUT_ANDROID = """\
         "args": [
           "foo",
           "--show-stdout",
-          "--browser=android-chromium",
+          "--browser=android-monyhar",
           "--passthrough",
           "-v",
           "--extra-browser-args=--enable-logging=stderr --js-flags=--expose-gc"
@@ -1838,7 +1838,7 @@ ANDROID_WATERFALL_OUTPUT = """\
     "gtest_tests": [
       {
         "args": [
-          "--gs-results-bucket=chromium-result-details",
+          "--gs-results-bucket=monyhar-result-details",
           "--recover-devices"
         ],
         "merge": {
@@ -1884,7 +1884,7 @@ ANDROID_WATERFALL_OUTPUT = """\
     "gtest_tests": [
       {
         "args": [
-          "--gs-results-bucket=chromium-result-details",
+          "--gs-results-bucket=monyhar-result-details",
           "--recover-devices"
         ],
         "merge": {
@@ -2008,7 +2008,7 @@ GPU_DIMENSIONS_WATERFALL_OUTPUT = """\
 LUCI_MILO_CFG = """\
 consoles {
   builders {
-    name: "buildbucket/luci.chromium.ci/Fake Tester"
+    name: "buildbucket/luci.monyhar.ci/Fake Tester"
   }
 }
 """
@@ -2016,8 +2016,8 @@ consoles {
 LUCI_MILO_CFG_WATERFALL_SORTING = """\
 consoles {
   builders {
-    name: "buildbucket/luci.chromium.ci/Fake Tester"
-    name: "buildbucket/luci.chromium.ci/Really Fake Tester"
+    name: "buildbucket/luci.monyhar.ci/Fake Tester"
+    name: "buildbucket/luci.monyhar.ci/Really Fake Tester"
   }
 }
 """
@@ -2025,9 +2025,9 @@ consoles {
 TEST_SUITE_SORTING_WATERFALL = """
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'test_suites': {
@@ -2043,9 +2043,9 @@ TEST_SUITE_SORTING_WATERFALL = """
 TEST_SUITE_SORTED_WATERFALL = """
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'test_suites': {
@@ -2062,9 +2062,9 @@ TEST_SUITE_SORTED_WATERFALL = """
     },
   },
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.zz.test',
+    'name': 'monyhar.zz.test',
     'machines': {
       'Fake Tester': {
         'test_suites': {
@@ -2086,9 +2086,9 @@ TEST_SUITE_SORTED_WATERFALL = """
 TEST_SUITE_UNSORTED_WATERFALL_1 = """
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.zz.test',
+    'name': 'monyhar.zz.test',
     'machines': {
       'Fake Tester': {
         'test_suites': {
@@ -2105,9 +2105,9 @@ TEST_SUITE_UNSORTED_WATERFALL_1 = """
     },
   },
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'test_suites': {
@@ -2129,9 +2129,9 @@ TEST_SUITE_UNSORTED_WATERFALL_1 = """
 TEST_SUITE_UNSORTED_WATERFALL_2 = """
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Really Fake Tester': {
         'test_suites': {
@@ -2148,9 +2148,9 @@ TEST_SUITE_UNSORTED_WATERFALL_2 = """
     },
   },
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.zz.test',
+    'name': 'monyhar.zz.test',
     'machines': {
       'Fake Tester': {
         'test_suites': {
@@ -2398,7 +2398,7 @@ class UnitTest(TestCase):
   def test_good_waterfall_output(self):
     fbb = FakeBBGen(self.args, COMPOSITION_GTEST_SUITE_WATERFALL,
                     GOOD_COMPOSITION_TEST_SUITES, LUCI_MILO_CFG)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            COMPOSITION_WATERFALL_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -2409,7 +2409,7 @@ class UnitTest(TestCase):
                     REUSING_TEST_WITH_DIFFERENT_NAME,
                     LUCI_MILO_CFG,
                     gn_isolate_map=GN_ISOLATE_MAP)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            VARIATION_GTEST_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -2471,7 +2471,7 @@ class UnitTest(TestCase):
                     GOOD_COMPOSITION_TEST_SUITES,
                     LUCI_MILO_CFG,
                     exceptions=EMPTY_BAR_TEST_EXCEPTIONS)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            COMPOSITION_WATERFALL_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -2482,7 +2482,7 @@ class UnitTest(TestCase):
                     FOO_TEST_SUITE_WITH_ARGS,
                     LUCI_MILO_CFG,
                     exceptions=FOO_TEST_MODIFICATIONS)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            MERGED_ARGS_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -2490,7 +2490,7 @@ class UnitTest(TestCase):
   def test_enable_features_arg_merges(self):
     fbb = FakeBBGen(self.args, FOO_GTESTS_WITH_ENABLE_FEATURES_WATERFALL,
                     FOO_TEST_SUITE_WITH_ENABLE_FEATURES, LUCI_MILO_CFG)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            MERGED_ENABLE_FEATURES_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -2498,7 +2498,7 @@ class UnitTest(TestCase):
   def test_linux_args(self):
     fbb = FakeBBGen(self.args, FOO_LINUX_GTESTS_WATERFALL,
                     FOO_TEST_SUITE_WITH_LINUX_ARGS, LUCI_MILO_CFG)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            LINUX_ARGS_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -2510,7 +2510,7 @@ class UnitTest(TestCase):
                     LUCI_MILO_CFG,
                     exceptions=NO_BAR_TEST_EXCEPTIONS)
     self.create_testing_buildbot_json_file(
-        'chromium.test.json', COMPOSITION_WATERFALL_FILTERED_OUTPUT)
+        'monyhar.test.json', COMPOSITION_WATERFALL_FILTERED_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
 
@@ -2520,9 +2520,9 @@ class UnitTest(TestCase):
                     FOO_TEST_SUITE,
                     LUCI_MILO_CFG,
                     exceptions=FOO_TEST_MODIFICATIONS)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            MODIFIED_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json', MODIFIED_OUTPUT)
+    self.create_testing_buildbot_json_file('monyhar.ci.json', MODIFIED_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
 
@@ -2533,9 +2533,9 @@ class UnitTest(TestCase):
                     LUCI_MILO_CFG,
                     exceptions=FOO_TEST_EXPLICIT_NONE_EXCEPTIONS,
                     mixins=SWARMING_MIXINS)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            EXPLICIT_NONE_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json',
+    self.create_testing_buildbot_json_file('monyhar.ci.json',
                                            EXPLICIT_NONE_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -2546,9 +2546,9 @@ class UnitTest(TestCase):
                     GOOD_COMPOSITION_TEST_SUITES,
                     LUCI_MILO_CFG,
                     exceptions=NO_BAR_TEST_EXCEPTIONS)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            ISOLATED_SCRIPT_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json',
+    self.create_testing_buildbot_json_file('monyhar.ci.json',
                                            ISOLATED_SCRIPT_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -2559,9 +2559,9 @@ class UnitTest(TestCase):
                     GOOD_COMPOSITION_TEST_SUITES,
                     LUCI_MILO_CFG,
                     exceptions=NO_BAR_TEST_EXCEPTIONS)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            ISOLATED_SCRIPT_OUTPUT_ANDROID)
-    self.create_testing_buildbot_json_file('chromium.ci.json',
+    self.create_testing_buildbot_json_file('monyhar.ci.json',
                                            ISOLATED_SCRIPT_OUTPUT_ANDROID)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -2572,9 +2572,9 @@ class UnitTest(TestCase):
                     SCRIPT_SUITE,
                     LUCI_MILO_CFG,
                     exceptions=SCRIPT_WITH_ARGS_EXCEPTIONS)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            SCRIPT_WITH_ARGS_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json',
+    self.create_testing_buildbot_json_file('monyhar.ci.json',
                                            SCRIPT_WITH_ARGS_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -2585,8 +2585,8 @@ class UnitTest(TestCase):
                     FOO_SCRIPT_SUITE,
                     LUCI_MILO_CFG,
                     exceptions=NO_BAR_TEST_EXCEPTIONS)
-    self.create_testing_buildbot_json_file('chromium.test.json', SCRIPT_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json', SCRIPT_OUTPUT)
+    self.create_testing_buildbot_json_file('monyhar.test.json', SCRIPT_OUTPUT)
+    self.create_testing_buildbot_json_file('monyhar.ci.json', SCRIPT_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
 
@@ -2618,8 +2618,8 @@ class UnitTest(TestCase):
                     GOOD_COMPOSITION_TEST_SUITES,
                     LUCI_MILO_CFG,
                     exceptions=NO_BAR_TEST_EXCEPTIONS)
-    self.create_testing_buildbot_json_file('chromium.test.json', JUNIT_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json', JUNIT_OUTPUT)
+    self.create_testing_buildbot_json_file('monyhar.test.json', JUNIT_OUTPUT)
+    self.create_testing_buildbot_json_file('monyhar.ci.json', JUNIT_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
 
@@ -2630,9 +2630,9 @@ class UnitTest(TestCase):
                     LUCI_MILO_CFG,
                     exceptions=NO_BAR_TEST_EXCEPTIONS,
                     gn_isolate_map=GPU_TELEMETRY_GN_ISOLATE_MAP)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            GPU_TELEMETRY_TEST_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json',
+    self.create_testing_buildbot_json_file('monyhar.ci.json',
                                            GPU_TELEMETRY_TEST_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -2644,9 +2644,9 @@ class UnitTest(TestCase):
                     LUCI_MILO_CFG,
                     exceptions=NO_BAR_TEST_EXCEPTIONS,
                     gn_isolate_map=GPU_TELEMETRY_GN_ISOLATE_MAP_ANDROID)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            GPU_TELEMETRY_TEST_OUTPUT_ANDROID)
-    self.create_testing_buildbot_json_file('chromium.ci.json',
+    self.create_testing_buildbot_json_file('monyhar.ci.json',
                                            GPU_TELEMETRY_TEST_OUTPUT_ANDROID)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -2659,9 +2659,9 @@ class UnitTest(TestCase):
                     exceptions=NO_BAR_TEST_EXCEPTIONS,
                     gn_isolate_map=GPU_TELEMETRY_GN_ISOLATE_MAP_ANDROID_WEBVIEW)
     self.create_testing_buildbot_json_file(
-        'chromium.test.json', GPU_TELEMETRY_TEST_OUTPUT_ANDROID_WEBVIEW)
+        'monyhar.test.json', GPU_TELEMETRY_TEST_OUTPUT_ANDROID_WEBVIEW)
     self.create_testing_buildbot_json_file(
-        'chromium.ci.json', GPU_TELEMETRY_TEST_OUTPUT_ANDROID_WEBVIEW)
+        'monyhar.ci.json', GPU_TELEMETRY_TEST_OUTPUT_ANDROID_WEBVIEW)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
 
@@ -2672,9 +2672,9 @@ class UnitTest(TestCase):
                     LUCI_MILO_CFG,
                     exceptions=NO_BAR_TEST_EXCEPTIONS,
                     gn_isolate_map=GPU_TELEMETRY_GN_ISOLATE_MAP)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            NVIDIA_GPU_TELEMETRY_TEST_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json',
+    self.create_testing_buildbot_json_file('monyhar.ci.json',
                                            NVIDIA_GPU_TELEMETRY_TEST_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -2686,9 +2686,9 @@ class UnitTest(TestCase):
                     LUCI_MILO_CFG,
                     exceptions=NO_BAR_TEST_EXCEPTIONS,
                     gn_isolate_map=GPU_TELEMETRY_GN_ISOLATE_MAP)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            INTEL_GPU_TELEMETRY_TEST_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json',
+    self.create_testing_buildbot_json_file('monyhar.ci.json',
                                            INTEL_GPU_TELEMETRY_TEST_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -2700,9 +2700,9 @@ class UnitTest(TestCase):
                     LUCI_MILO_CFG,
                     exceptions=NO_BAR_TEST_EXCEPTIONS,
                     gn_isolate_map=GPU_TELEMETRY_GN_ISOLATE_MAP)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            INTEL_UHD_GPU_TELEMETRY_TEST_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json',
+    self.create_testing_buildbot_json_file('monyhar.ci.json',
                                            INTEL_UHD_GPU_TELEMETRY_TEST_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -2714,9 +2714,9 @@ class UnitTest(TestCase):
                     LUCI_MILO_CFG,
                     gn_isolate_map=GN_ISOLATE_MAP)
     self.create_testing_buildbot_json_file(
-        'chromium.test.json', FOO_WATERFALL_GTEST_ISOLATED_SCRIPT_OUTPUT)
+        'monyhar.test.json', FOO_WATERFALL_GTEST_ISOLATED_SCRIPT_OUTPUT)
     self.create_testing_buildbot_json_file(
-        'chromium.ci.json', FOO_WATERFALL_GTEST_ISOLATED_SCRIPT_OUTPUT)
+        'monyhar.ci.json', FOO_WATERFALL_GTEST_ISOLATED_SCRIPT_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
 
@@ -2727,12 +2727,12 @@ class UnitTest(TestCase):
                     LUCI_MILO_CFG,
                     exceptions=NO_BAR_TEST_EXCEPTIONS)
     self.create_testing_buildbot_json_file(
-        'chromium.test.json', '\n' + COMPOSITION_WATERFALL_FILTERED_OUTPUT)
+        'monyhar.test.json', '\n' + COMPOSITION_WATERFALL_FILTERED_OUTPUT)
     with self.assertRaises(generate_buildbot_json.BBGenErr):
       fbb.check_output_file_consistency(verbose=True, dump=False)
     joined_lines = ' '.join(fbb.printed_lines)
     self.assertRegex(
-        joined_lines, 'File chromium.test.json did not have the following'
+        joined_lines, 'File monyhar.test.json did not have the following'
         ' expected contents:.*')
     self.assertRegex(joined_lines, '.*--- expected.*')
     self.assertRegex(joined_lines, '.*\+\+\+ current.*')
@@ -2741,9 +2741,9 @@ class UnitTest(TestCase):
 
   def test_android_output_options(self):
     fbb = FakeBBGen(self.args, ANDROID_WATERFALL, FOO_TEST_SUITE, LUCI_MILO_CFG)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            ANDROID_WATERFALL_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json',
+    self.create_testing_buildbot_json_file('monyhar.ci.json',
                                            ANDROID_WATERFALL_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -2774,18 +2774,18 @@ class UnitTest(TestCase):
     fbb = FakeBBGen(self.args, COMPOSITION_GTEST_SUITE_WITH_ARGS_WATERFALL,
                     GOOD_COMPOSITION_TEST_SUITES, LUCI_MILO_CFG)
     self.create_testing_buildbot_json_file(
-        'chromium.test.json', COMPOSITION_WATERFALL_WITH_ARGS_OUTPUT)
+        'monyhar.test.json', COMPOSITION_WATERFALL_WITH_ARGS_OUTPUT)
     self.create_testing_buildbot_json_file(
-        'chromium.ci.json', COMPOSITION_WATERFALL_WITH_ARGS_OUTPUT)
+        'monyhar.ci.json', COMPOSITION_WATERFALL_WITH_ARGS_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
 
   def test_chromeos_trigger_script_output(self):
     fbb = FakeBBGen(self.args, FOO_CHROMEOS_TRIGGER_SCRIPT_WATERFALL,
                     FOO_TEST_SUITE, LUCI_MILO_CFG)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            CHROMEOS_TRIGGER_SCRIPT_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json',
+    self.create_testing_buildbot_json_file('monyhar.ci.json',
                                            CHROMEOS_TRIGGER_SCRIPT_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -2798,9 +2798,9 @@ class UnitTest(TestCase):
                     LUCI_MILO_CFG,
                     gn_isolate_map=GN_ISOLATE_MAP)
     fbb.check_input_file_consistency(verbose=True)
-    self.create_testing_buildbot_json_file('relative/path/chromium.test.json',
+    self.create_testing_buildbot_json_file('relative/path/monyhar.test.json',
                                            VARIATION_GTEST_OUTPUT)
-    self.create_testing_buildbot_json_file('relative/path/chromium.ci.json',
+    self.create_testing_buildbot_json_file('relative/path/monyhar.ci.json',
                                            VARIATION_GTEST_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -2844,8 +2844,8 @@ class UnitTest(TestCase):
         'The following files have invalid keys: waterfalls.pyl'):
       fbb.check_input_file_consistency(verbose=True)
     joined_lines = '\n'.join(fbb.printed_lines)
-    self.assertRegex(joined_lines, '.*\+ chromium\..*test.*')
-    self.assertRegex(joined_lines, '.*\- chromium\..*test.*')
+    self.assertRegex(joined_lines, '.*\+ monyhar\..*test.*')
+    self.assertRegex(joined_lines, '.*\- monyhar\..*test.*')
     fbb.printed_lines = []
     self.assertFalse(fbb.printed_lines)
 
@@ -2952,9 +2952,9 @@ FOO_GTESTS_WATERFALL_MIXIN_WATERFALL = """\
 [
   {
     'mixins': ['waterfall_mixin'],
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'swarming': {},
@@ -2970,9 +2970,9 @@ FOO_GTESTS_WATERFALL_MIXIN_WATERFALL = """\
 FOO_GTESTS_BUILDER_MIXIN_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'mixins': ['builder_mixin'],
@@ -2989,9 +2989,9 @@ FOO_GTESTS_BUILDER_MIXIN_WATERFALL = """\
 FOO_GTESTS_DIMENSION_SETS_MIXIN_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'mixins': [
@@ -3014,9 +3014,9 @@ FOO_GTESTS_WATERFALL_MIXIN_BUILDER_REMOVE_MIXIN_WATERFALL = """\
 [
   {
     'mixins': ['waterfall_mixin'],
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'remove_mixins': ['waterfall_mixin'],
@@ -3033,9 +3033,9 @@ FOO_GTESTS_WATERFALL_MIXIN_BUILDER_REMOVE_MIXIN_WATERFALL = """\
 FOO_GTESTS_BUILDER_MIXIN_NON_SWARMING_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'mixins': ['random_mixin'],
@@ -3052,9 +3052,9 @@ FOO_GTESTS_BUILDER_MIXIN_NON_SWARMING_WATERFALL = """\
 FOO_GTESTS_DIMENSIONS_MIXIN_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'mixins': ['dimension_mixin'],
@@ -3071,9 +3071,9 @@ FOO_GTESTS_DIMENSIONS_MIXIN_WATERFALL = """\
 FOO_GPU_TELEMETRY_TEST_DIMENSIONS_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'mixins': ['dimension_mixin'],
@@ -3092,9 +3092,9 @@ FOO_GPU_TELEMETRY_TEST_DIMENSIONS_WATERFALL = """\
 FOO_GTESTS_INVALID_LIST_MIXIN_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'mixins': 'dimension_mixin',
@@ -3110,9 +3110,9 @@ FOO_GTESTS_INVALID_LIST_MIXIN_WATERFALL = """\
 FOO_GTESTS_INVALID_NOTFOUND_MIXIN_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'mixins': ['nonexistant'],
@@ -3129,9 +3129,9 @@ FOO_GTESTS_INVALID_NOTFOUND_MIXIN_WATERFALL = """\
 FOO_GTESTS_TEST_MIXIN_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'mixins': ['waterfall_mixin'],
     'machines': {
       'Fake Tester': {
@@ -3149,9 +3149,9 @@ FOO_GTESTS_SORTING_MIXINS_WATERFALL = """\
 [
   {
     'mixins': ['a_mixin', 'b_mixin', 'c_mixin'],
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'swarming': {
@@ -3680,9 +3680,9 @@ class MixinTests(TestCase):
                     FOO_TEST_SUITE,
                     LUCI_MILO_CFG,
                     mixins=SWARMING_MIXINS)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            WATERFALL_MIXIN_WATERFALL_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json',
+    self.create_testing_buildbot_json_file('monyhar.ci.json',
                                            WATERFALL_MIXIN_WATERFALL_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -3695,9 +3695,9 @@ class MixinTests(TestCase):
                     exceptions=SCRIPT_WITH_ARGS_SWARMING_EXCEPTIONS,
                     mixins=SWARMING_MIXINS)
     self.create_testing_buildbot_json_file(
-        'chromium.test.json', WATERFALL_MIXIN_WATERFALL_EXCEPTION_OUTPUT)
+        'monyhar.test.json', WATERFALL_MIXIN_WATERFALL_EXCEPTION_OUTPUT)
     self.create_testing_buildbot_json_file(
-        'chromium.ci.json', WATERFALL_MIXIN_WATERFALL_EXCEPTION_OUTPUT)
+        'monyhar.ci.json', WATERFALL_MIXIN_WATERFALL_EXCEPTION_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
 
@@ -3707,9 +3707,9 @@ class MixinTests(TestCase):
                     FOO_TEST_SUITE,
                     LUCI_MILO_CFG,
                     mixins=SWARMING_MIXINS)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            BUILDER_MIXIN_WATERFALL_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json',
+    self.create_testing_buildbot_json_file('monyhar.ci.json',
                                            BUILDER_MIXIN_WATERFALL_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -3721,9 +3721,9 @@ class MixinTests(TestCase):
                     LUCI_MILO_CFG,
                     mixins=SWARMING_MIXINS)
     self.create_testing_buildbot_json_file(
-        'chromium.test.json', BUILDER_MIXIN_NON_SWARMING_WATERFALL_OUTPUT)
+        'monyhar.test.json', BUILDER_MIXIN_NON_SWARMING_WATERFALL_OUTPUT)
     self.create_testing_buildbot_json_file(
-        'chromium.ci.json', BUILDER_MIXIN_NON_SWARMING_WATERFALL_OUTPUT)
+        'monyhar.ci.json', BUILDER_MIXIN_NON_SWARMING_WATERFALL_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
 
@@ -3733,9 +3733,9 @@ class MixinTests(TestCase):
                     FOO_TEST_SUITE_WITH_MIXIN,
                     LUCI_MILO_CFG,
                     mixins=SWARMING_MIXINS)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            TEST_MIXIN_WATERFALL_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json',
+    self.create_testing_buildbot_json_file('monyhar.ci.json',
                                            TEST_MIXIN_WATERFALL_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -3746,9 +3746,9 @@ class MixinTests(TestCase):
                     FOO_TEST_SUITE_WITH_MIXIN,
                     LUCI_MILO_CFG,
                     mixins=SWARMING_MIXINS)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            DIMENSIONS_MIXIN_WATERFALL_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json',
+    self.create_testing_buildbot_json_file('monyhar.ci.json',
                                            DIMENSIONS_MIXIN_WATERFALL_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -3760,9 +3760,9 @@ class MixinTests(TestCase):
                     LUCI_MILO_CFG,
                     mixins=SWARMING_MIXINS,
                     gn_isolate_map=GPU_TELEMETRY_GN_ISOLATE_MAP)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            GPU_DIMENSIONS_WATERFALL_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json',
+    self.create_testing_buildbot_json_file('monyhar.ci.json',
                                            GPU_DIMENSIONS_WATERFALL_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -3784,9 +3784,9 @@ class MixinTests(TestCase):
                     FOO_TEST_SUITE_WITH_MIXIN,
                     LUCI_MILO_CFG,
                     mixins=SWARMING_MIXINS)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            DIMENSIONS_MIXIN_WATERFALL_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json',
+    self.create_testing_buildbot_json_file('monyhar.ci.json',
                                            DIMENSIONS_MIXIN_WATERFALL_OUTPUT)
     with self.assertRaises(generate_buildbot_json.BBGenErr):
       fbb.check_output_file_consistency(verbose=True)
@@ -3798,9 +3798,9 @@ class MixinTests(TestCase):
                     FOO_TEST_SUITE_WITH_MIXIN,
                     LUCI_MILO_CFG,
                     mixins=SWARMING_MIXINS)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            DIMENSIONS_MIXIN_WATERFALL_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json',
+    self.create_testing_buildbot_json_file('monyhar.ci.json',
                                            DIMENSIONS_MIXIN_WATERFALL_OUTPUT)
     with self.assertRaises(generate_buildbot_json.BBGenErr):
       fbb.check_output_file_consistency(verbose=True)
@@ -3863,9 +3863,9 @@ class MixinTests(TestCase):
                     LUCI_MILO_CFG,
                     mixins=SWARMING_MIXINS_APPEND)
     self.create_testing_buildbot_json_file(
-        'chromium.test.json', BUILDER_MIXIN_APPEND_ARGS_WATERFALL_OUTPUT)
+        'monyhar.test.json', BUILDER_MIXIN_APPEND_ARGS_WATERFALL_OUTPUT)
     self.create_testing_buildbot_json_file(
-        'chromium.ci.json', BUILDER_MIXIN_APPEND_ARGS_WATERFALL_OUTPUT)
+        'monyhar.ci.json', BUILDER_MIXIN_APPEND_ARGS_WATERFALL_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
 
@@ -3876,10 +3876,10 @@ class MixinTests(TestCase):
                     LUCI_MILO_CFG,
                     mixins=SWARMING_MIXINS_APPEND_NAMED_CACHES)
     self.create_testing_buildbot_json_file(
-        'chromium.test.json',
+        'monyhar.test.json',
         BUILDER_MIXIN_APPEND_NAMED_CACHES_WATERFALL_OUTPUT)
     self.create_testing_buildbot_json_file(
-        'chromium.ci.json', BUILDER_MIXIN_APPEND_NAMED_CACHES_WATERFALL_OUTPUT)
+        'monyhar.ci.json', BUILDER_MIXIN_APPEND_NAMED_CACHES_WATERFALL_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
 
@@ -3926,9 +3926,9 @@ class MixinTests(TestCase):
                     LUCI_MILO_CFG,
                     mixins=SWARMING_MIXINS)
     self.create_testing_buildbot_json_file(
-        'chromium.test.json', WATERFALL_MIXIN_REMOVE_WATERFALL_OUTPUT)
+        'monyhar.test.json', WATERFALL_MIXIN_REMOVE_WATERFALL_OUTPUT)
     self.create_testing_buildbot_json_file(
-        'chromium.ci.json', WATERFALL_MIXIN_REMOVE_WATERFALL_OUTPUT)
+        'monyhar.ci.json', WATERFALL_MIXIN_REMOVE_WATERFALL_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
 
@@ -3939,9 +3939,9 @@ class MixinTests(TestCase):
                     LUCI_MILO_CFG,
                     mixins=SWARMING_MIXINS)
     self.create_testing_buildbot_json_file(
-        'chromium.test.json', WATERFALL_MIXIN_REMOVE_WATERFALL_OUTPUT)
+        'monyhar.test.json', WATERFALL_MIXIN_REMOVE_WATERFALL_OUTPUT)
     self.create_testing_buildbot_json_file(
-        'chromium.ci.json', WATERFALL_MIXIN_REMOVE_WATERFALL_OUTPUT)
+        'monyhar.ci.json', WATERFALL_MIXIN_REMOVE_WATERFALL_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
 
@@ -3952,9 +3952,9 @@ class MixinTests(TestCase):
                     LUCI_MILO_CFG,
                     mixins=SWARMING_MIXINS)
     self.create_testing_buildbot_json_file(
-        'chromium.test.json', WATERFALL_MIXIN_REMOVE_WATERFALL_OUTPUT)
+        'monyhar.test.json', WATERFALL_MIXIN_REMOVE_WATERFALL_OUTPUT)
     self.create_testing_buildbot_json_file(
-        'chromium.ci.json', WATERFALL_MIXIN_REMOVE_WATERFALL_OUTPUT)
+        'monyhar.ci.json', WATERFALL_MIXIN_REMOVE_WATERFALL_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
 
@@ -3965,9 +3965,9 @@ class MixinTests(TestCase):
                     LUCI_MILO_CFG,
                     mixins=SWARMING_MIXINS_DIMENSION_SETS)
     self.create_testing_buildbot_json_file(
-        'chromium.test.json', WATERFALL_DIMENSION_SETS_WATERFALL_OUTPUT)
+        'monyhar.test.json', WATERFALL_DIMENSION_SETS_WATERFALL_OUTPUT)
     self.create_testing_buildbot_json_file(
-        'chromium.ci.json', WATERFALL_DIMENSION_SETS_WATERFALL_OUTPUT)
+        'monyhar.ci.json', WATERFALL_DIMENSION_SETS_WATERFALL_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
 
@@ -4050,7 +4050,7 @@ TEST_QUERY_BOTS_OUTPUT = {
       {
         "test": "foo_test",
         "args": [
-          "--gs-results-bucket=chromium-result-details",
+          "--gs-results-bucket=monyhar-result-details",
           "--recover-devices"
         ],
         "merge": {
@@ -4085,7 +4085,7 @@ TEST_QUERY_BOTS_OUTPUT = {
       {
         "test": "foo_test",
         "args": [
-          "--gs-results-bucket=chromium-result-details",
+          "--gs-results-bucket=monyhar-result-details",
           "--recover-devices"
         ],
         "merge": {
@@ -4143,7 +4143,7 @@ TEST_QUERY_BOTS_TESTS_OUTPUT = {
     {
       "test": "foo_test",
       "args": [
-        "--gs-results-bucket=chromium-result-details",
+        "--gs-results-bucket=monyhar-result-details",
         "--recover-devices"
       ],
       "merge": {
@@ -4175,7 +4175,7 @@ TEST_QUERY_BOTS_TESTS_OUTPUT = {
     {
       "test": "foo_test",
       "args": [
-        "--gs-results-bucket=chromium-result-details",
+        "--gs-results-bucket=monyhar-result-details",
         "--recover-devices"
       ],
       "merge": {
@@ -4220,7 +4220,7 @@ TEST_QUERY_BOT_OUTPUT = {
     {
       "test": "foo_test",
       "args": [
-        "--gs-results-bucket=chromium-result-details",
+        "--gs-results-bucket=monyhar-result-details",
         "--recover-devices"
       ],
       "merge": {
@@ -4261,7 +4261,7 @@ TEST_QUERY_BOT_TESTS_OUTPUT = [
   {
     "test": "foo_test",
     "args": [
-      "--gs-results-bucket=chromium-result-details",
+      "--gs-results-bucket=monyhar-result-details",
       "--recover-devices"
     ],
     "merge": {
@@ -4892,9 +4892,9 @@ class ReplacementTests(TestCase):
                     FOO_TEST_SUITE_WITH_ARGS,
                     LUCI_MILO_CFG,
                     exceptions=FOO_TEST_REPLACEMENTS_REMOVE_NO_VALUE)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            REPLACEMENTS_REMOVE_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json',
+    self.create_testing_buildbot_json_file('monyhar.ci.json',
                                            REPLACEMENTS_REMOVE_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -4905,9 +4905,9 @@ class ReplacementTests(TestCase):
                     FOO_TEST_SUITE_WITH_ENABLE_FEATURES,
                     LUCI_MILO_CFG,
                     exceptions=FOO_TEST_REPLACEMENTS_REMOVE_VALUE)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            REPLACEMENTS_REMOVE_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json',
+    self.create_testing_buildbot_json_file('monyhar.ci.json',
                                            REPLACEMENTS_REMOVE_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -4918,9 +4918,9 @@ class ReplacementTests(TestCase):
                     FOO_TEST_SUITE_WITH_ENABLE_FEATURES,
                     LUCI_MILO_CFG,
                     exceptions=FOO_TEST_REPLACEMENTS_REPLACE_VALUE)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            REPLACEMENTS_VALUE_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json',
+    self.create_testing_buildbot_json_file('monyhar.ci.json',
                                            REPLACEMENTS_VALUE_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -4932,9 +4932,9 @@ class ReplacementTests(TestCase):
                     LUCI_MILO_CFG,
                     exceptions=FOO_TEST_REPLACEMENTS_REPLACE_VALUE)
     self.create_testing_buildbot_json_file(
-        'chromium.test.json', REPLACEMENTS_VALUE_SEPARATE_ENTRIES_OUTPUT)
+        'monyhar.test.json', REPLACEMENTS_VALUE_SEPARATE_ENTRIES_OUTPUT)
     self.create_testing_buildbot_json_file(
-        'chromium.ci.json', REPLACEMENTS_VALUE_SEPARATE_ENTRIES_OUTPUT)
+        'monyhar.ci.json', REPLACEMENTS_VALUE_SEPARATE_ENTRIES_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
 
@@ -5024,9 +5024,9 @@ class MagicSubstitutionTests(TestCase):
   def test_valid_function(self):
     fbb = FakeBBGen(self.args, FOO_GTESTS_WATERFALL,
                     FOO_TEST_SUITE_WITH_MAGIC_ARGS, LUCI_MILO_CFG)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            MAGIC_SUBSTITUTIONS_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json',
+    self.create_testing_buildbot_json_file('monyhar.ci.json',
                                            MAGIC_SUBSTITUTIONS_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -5815,9 +5815,9 @@ EMPTY_SKYLAB_TEST_EXCEPTIONS = """\
 MATRIX_SKYLAB_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Fake Tester': {
         'test_suites': {
@@ -5910,9 +5910,9 @@ class MatrixCompositionTests(TestCase):
     """
     fbb = FakeBBGen(self.args, MATRIX_GTEST_SUITE_WATERFALL,
                     MATRIX_COMPOUND_EMPTY, LUCI_MILO_CFG)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            MATRIX_COMPOUND_EMPTY_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json',
+    self.create_testing_buildbot_json_file('monyhar.ci.json',
                                            MATRIX_COMPOUND_EMPTY_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -5988,9 +5988,9 @@ class MatrixCompositionTests(TestCase):
                     LUCI_MILO_CFG,
                     mixins=SWARMING_MIXINS)
     self.create_testing_buildbot_json_file(
-        'chromium.test.json', MATRIX_TARGET_DICT_MERGE_OUTPUT_ARGS)
+        'monyhar.test.json', MATRIX_TARGET_DICT_MERGE_OUTPUT_ARGS)
     self.create_testing_buildbot_json_file(
-        'chromium.ci.json', MATRIX_TARGET_DICT_MERGE_OUTPUT_ARGS)
+        'monyhar.ci.json', MATRIX_TARGET_DICT_MERGE_OUTPUT_ARGS)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
 
@@ -6004,9 +6004,9 @@ class MatrixCompositionTests(TestCase):
                     LUCI_MILO_CFG,
                     mixins=SWARMING_MIXINS)
     self.create_testing_buildbot_json_file(
-        'chromium.test.json', MATRIX_TARGET_DICT_MERGE_OUTPUT_MIXINS)
+        'monyhar.test.json', MATRIX_TARGET_DICT_MERGE_OUTPUT_MIXINS)
     self.create_testing_buildbot_json_file(
-        'chromium.ci.json', MATRIX_TARGET_DICT_MERGE_OUTPUT_MIXINS)
+        'monyhar.ci.json', MATRIX_TARGET_DICT_MERGE_OUTPUT_MIXINS)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
 
@@ -6020,9 +6020,9 @@ class MatrixCompositionTests(TestCase):
                     LUCI_MILO_CFG,
                     mixins=SWARMING_MIXINS)
     self.create_testing_buildbot_json_file(
-        'chromium.test.json', MATRIX_TARGET_DICT_MERGE_OUTPUT_SWARMING)
+        'monyhar.test.json', MATRIX_TARGET_DICT_MERGE_OUTPUT_SWARMING)
     self.create_testing_buildbot_json_file(
-        'chromium.ci.json', MATRIX_TARGET_DICT_MERGE_OUTPUT_SWARMING)
+        'monyhar.ci.json', MATRIX_TARGET_DICT_MERGE_OUTPUT_SWARMING)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
 
@@ -6036,9 +6036,9 @@ class MatrixCompositionTests(TestCase):
                     LUCI_MILO_CFG,
                     variants=VARIANTS_FILE)
     self.create_testing_buildbot_json_file(
-        'chromium.test.json', MATRIX_COMPOUND_TEST_SUITE_WITH_TEST_KEY_DICT)
+        'monyhar.test.json', MATRIX_COMPOUND_TEST_SUITE_WITH_TEST_KEY_DICT)
     self.create_testing_buildbot_json_file(
-        'chromium.ci.json', MATRIX_COMPOUND_TEST_SUITE_WITH_TEST_KEY_DICT)
+        'monyhar.ci.json', MATRIX_COMPOUND_TEST_SUITE_WITH_TEST_KEY_DICT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
 
@@ -6049,9 +6049,9 @@ class MatrixCompositionTests(TestCase):
                     MATRIX_COMPOUND_VARIANTS_REF,
                     LUCI_MILO_CFG,
                     variants=VARIANTS_FILE)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            MATRIX_COMPOUND_VARIANTS_REF_OUTPUT)
-    self.create_testing_buildbot_json_file('chromium.ci.json',
+    self.create_testing_buildbot_json_file('monyhar.ci.json',
                                            MATRIX_COMPOUND_VARIANTS_REF_OUTPUT)
     fbb.check_output_file_consistency(verbose=True)
     self.assertFalse(fbb.printed_lines)
@@ -6072,7 +6072,7 @@ class MatrixCompositionTests(TestCase):
                     LUCI_MILO_CFG,
                     variants=MULTI_VARIANTS_FILE)
     # self.create_testing_buildbot_json_file(
-    #     'chromium.test.json', MATRIX_COMPOUND_VARIANTS_REF_OUTPUT)
+    #     'monyhar.test.json', MATRIX_COMPOUND_VARIANTS_REF_OUTPUT)
     with self.assertRaisesRegex(generate_buildbot_json.BBGenErr,
                                 'The following variants were unreferenced *'):
       fbb.check_input_file_consistency(verbose=True)
@@ -6083,7 +6083,7 @@ class MatrixCompositionTests(TestCase):
                     MATRIX_COMPOUND_SKYLAB_REF,
                     LUCI_MILO_CFG,
                     exceptions=EMPTY_SKYLAB_TEST_EXCEPTIONS)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            VARIATION_SKYLAB_OUTPUT)
     fbb.check_input_file_consistency(verbose=True)
     fbb.check_output_file_consistency(verbose=True)
@@ -6104,9 +6104,9 @@ MAC_TEST_SUITE = """\
 MAC_GTESTS_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Mac': {
         'swarming': {
@@ -6145,9 +6145,9 @@ MAC_GTEST_WATERFALL_OUTPUT = """\
 MAC_ISOLATED_SCRIPTS_WATERFALL = """\
 [
   {
-    'project': 'chromium',
+    'project': 'monyhar',
     'bucket': 'ci',
-    'name': 'chromium.test',
+    'name': 'monyhar.test',
     'machines': {
       'Mac': {
         'swarming': {
@@ -6196,7 +6196,7 @@ MAC_ISOLATED_SCRIPTS_WATERFALL_OUTPUT = """\
 MAC_LUCI_MILO_CFG = """\
 consoles {
   builders {
-    name: "buildbucket/luci.chromium.ci/Mac"
+    name: "buildbucket/luci.monyhar.ci/Mac"
   }
 }
 """
@@ -6206,7 +6206,7 @@ class SwarmingTests(TestCase):
   def test_mac_builder_with_no_cpu_dimension_in_gtest_fails(self):
     fbb = FakeBBGen(self.args, MAC_GTESTS_WATERFALL, MAC_TEST_SUITE,
                     MAC_LUCI_MILO_CFG)
-    self.create_testing_buildbot_json_file('chromium.test.json',
+    self.create_testing_buildbot_json_file('monyhar.test.json',
                                            MAC_GTEST_WATERFALL_OUTPUT)
     fbb.check_input_file_consistency(verbose=True)
     self.assertRaisesRegex(generate_buildbot_json.BBGenErr,
@@ -6219,7 +6219,7 @@ class SwarmingTests(TestCase):
     fbb = FakeBBGen(self.args, MAC_ISOLATED_SCRIPTS_WATERFALL, MAC_TEST_SUITE,
                     MAC_LUCI_MILO_CFG)
     self.create_testing_buildbot_json_file(
-        'chromium.test.json', MAC_ISOLATED_SCRIPTS_WATERFALL_OUTPUT)
+        'monyhar.test.json', MAC_ISOLATED_SCRIPTS_WATERFALL_OUTPUT)
     fbb.check_input_file_consistency(verbose=True)
     self.assertRaisesRegex(generate_buildbot_json.BBGenErr,
                            'os and cpu',

@@ -20,7 +20,7 @@ namespace offline_pages {
 
 // Controls how to reschedule a background task.
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.offlinepages
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.offlinepages
 enum class PrefetchBackgroundTaskRescheduleType {
   // No reschedule.
   NO_RESCHEDULE,

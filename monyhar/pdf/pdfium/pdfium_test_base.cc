@@ -87,7 +87,7 @@ PDFiumTestBase::InitializeEngineWithoutLoading(
   result.document_loader = test_loader.get();
   result.engine->SetDocumentLoaderForTesting(std::move(test_loader));
 
-  if (!result.engine->New("https://chromium.org/dummy.pdf", "") ||
+  if (!result.engine->New("https://monyhar.org/dummy.pdf", "") ||
       !result.engine->HandleDocumentLoad(nullptr)) {
     client->set_engine(nullptr);
     result.engine = nullptr;

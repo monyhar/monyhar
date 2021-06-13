@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test.devui;
+package org.monyhar.android_webview.test.devui;
 
 import static androidx.test.espresso.Espresso.onData;
 import static androidx.test.espresso.Espresso.onView;
@@ -24,10 +24,10 @@ import static org.hamcrest.Matchers.anything;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.not;
 
-import static org.chromium.android_webview.test.common.crash.CrashInfoTest.createCrashInfo;
-import static org.chromium.android_webview.test.devui.DeveloperUiTestUtils.getClipBoardTextOnUiThread;
-import static org.chromium.android_webview.test.devui.DeveloperUiTestUtils.setClipBoardTextOnUiThread;
-import static org.chromium.android_webview.test.devui.DeveloperUiTestUtils.withCount;
+import static org.monyhar.android_webview.test.common.crash.CrashInfoTest.createCrashInfo;
+import static org.monyhar.android_webview.test.devui.DeveloperUiTestUtils.getClipBoardTextOnUiThread;
+import static org.monyhar.android_webview.test.devui.DeveloperUiTestUtils.setClipBoardTextOnUiThread;
+import static org.monyhar.android_webview.test.devui.DeveloperUiTestUtils.withCount;
 
 import android.app.Activity;
 import android.app.Instrumentation.ActivityResult;
@@ -61,26 +61,26 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.common.PlatformServiceBridge;
-import org.chromium.android_webview.common.crash.CrashInfo;
-import org.chromium.android_webview.common.crash.CrashInfo.UploadState;
-import org.chromium.android_webview.common.crash.CrashUploadUtil;
-import org.chromium.android_webview.common.crash.CrashUploadUtil.CrashUploadDelegate;
-import org.chromium.android_webview.common.crash.SystemWideCrashDirectories;
-import org.chromium.android_webview.devui.CrashesListFragment;
-import org.chromium.android_webview.devui.MainActivity;
-import org.chromium.android_webview.devui.R;
-import org.chromium.android_webview.devui.WebViewPackageError;
-import org.chromium.android_webview.devui.util.CrashBugUrlFactory;
-import org.chromium.android_webview.devui.util.WebViewPackageHelper;
-import org.chromium.android_webview.test.AwJUnit4ClassRunner;
-import org.chromium.base.Callback;
-import org.chromium.base.FileUtils;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.components.minidump_uploader.CrashFileManager;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.android_webview.common.PlatformServiceBridge;
+import org.monyhar.android_webview.common.crash.CrashInfo;
+import org.monyhar.android_webview.common.crash.CrashInfo.UploadState;
+import org.monyhar.android_webview.common.crash.CrashUploadUtil;
+import org.monyhar.android_webview.common.crash.CrashUploadUtil.CrashUploadDelegate;
+import org.monyhar.android_webview.common.crash.SystemWideCrashDirectories;
+import org.monyhar.android_webview.devui.CrashesListFragment;
+import org.monyhar.android_webview.devui.MainActivity;
+import org.monyhar.android_webview.devui.R;
+import org.monyhar.android_webview.devui.WebViewPackageError;
+import org.monyhar.android_webview.devui.util.CrashBugUrlFactory;
+import org.monyhar.android_webview.devui.util.WebViewPackageHelper;
+import org.monyhar.android_webview.test.AwJUnit4ClassRunner;
+import org.monyhar.base.Callback;
+import org.monyhar.base.FileUtils;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.components.minidump_uploader.CrashFileManager;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.io.File;
 import java.io.FileWriter;

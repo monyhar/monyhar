@@ -25,8 +25,8 @@ from jinja2 import Template # pylint: disable=F0401
 
 
 # A variation of these maps also exists in:
-# //base/android/java/src/org/chromium/base/LocaleUtils.java
-# //ui/android/java/src/org/chromium/base/LocalizationUtils.java
+# //base/android/java/src/org/monyhar/base/LocaleUtils.java
+# //ui/android/java/src/org/monyhar/base/LocalizationUtils.java
 _CHROME_TO_ANDROID_LOCALE_MAP = {
     'es-419': 'es-rUS',
     'sr-Latn': 'b+sr+Latn',
@@ -64,19 +64,19 @@ AAPT_IGNORE_PATTERN = ':'.join([
 MULTIPLE_RES_MAGIC_STRING = b'magic'
 
 
-def ToAndroidLocaleName(chromium_locale):
+def ToAndroidLocaleName(monyhar_locale):
   """Convert a Chromium locale name into a corresponding Android one."""
   # Should be in sync with build/config/locales.gni.
   # First handle the special cases, these are needed to deal with Android
   # releases *before* 5.0/Lollipop.
-  android_locale = _CHROME_TO_ANDROID_LOCALE_MAP.get(chromium_locale)
+  android_locale = _CHROME_TO_ANDROID_LOCALE_MAP.get(monyhar_locale)
   if android_locale:
     return android_locale
 
   # Format of Chromium locale name is '<lang>' or '<lang>-<region>'
   # where <lang> is a 2 or 3 letter language code (ISO 639-1 or 639-2)
   # and region is a capitalized locale region name.
-  lang, _, region = chromium_locale.partition('-')
+  lang, _, region = monyhar_locale.partition('-')
   if not region:
     return lang
 
@@ -767,7 +767,7 @@ def ExtractArscPackage(aapt2_path, apk_path):
                           stderr=subprocess.PIPE)
   for line in proc.stdout:
     line = line.decode('utf-8')
-    # Package name=org.chromium.webview_shell id=7f
+    # Package name=org.monyhar.webview_shell id=7f
     if line.startswith('Package'):
       proc.kill()
       parts = line.split()

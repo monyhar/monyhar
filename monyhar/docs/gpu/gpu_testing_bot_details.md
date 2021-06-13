@@ -17,27 +17,27 @@ developed and deployed in order to cover these code paths, and avoid
 regressions that are otherwise inevitable in a project the size of the Chromium
 browser.
 
-The GPU bots are utilized on the [chromium.gpu] and [chromium.gpu.fyi]
+The GPU bots are utilized on the [monyhar.gpu] and [monyhar.gpu.fyi]
 waterfalls, and various tryservers, as described in [Using the GPU Bots].
 
-[chromium.gpu]: https://ci.chromium.org/p/chromium/g/chromium.gpu/console
-[chromium.gpu.fyi]: https://ci.chromium.org/p/chromium/g/chromium.gpu.fyi/console
+[monyhar.gpu]: https://ci.monyhar.org/p/monyhar/g/monyhar.gpu/console
+[monyhar.gpu.fyi]: https://ci.monyhar.org/p/monyhar/g/monyhar.gpu.fyi/console
 [Using the GPU Bots]: gpu_testing.md#Using-the-GPU-Bots
 
 All of the physical hardware for the bots lives in the Swarming pool, and most
-of it in the chromium.tests.gpu Swarming pool. The waterfall bots are simply
+of it in the monyhar.tests.gpu Swarming pool. The waterfall bots are simply
 virtual machines which spawn Swarming tasks with the appropriate tags to get
 them to run on the desired GPU and operating system type. So, for example, the
 [Win10 x64 Release (NVIDIA)] bot is actually a virtual machine which spawns all
 of its jobs with the Swarming parameters:
 
-[Win10 x64 Release (NVIDIA)]: https://ci.chromium.org/p/chromium/builders/ci/Win10%20x64%20Release%20%28NVIDIA%29
+[Win10 x64 Release (NVIDIA)]: https://ci.monyhar.org/p/monyhar/builders/ci/Win10%20x64%20Release%20%28NVIDIA%29
 
 ```json
 {
     "gpu": "nvidia-quadro-p400-win10-stable",
     "os": "Windows-10",
-    "pool": "chromium.tests.gpu"
+    "pool": "monyhar.tests.gpu"
 }
 ```
 
@@ -45,35 +45,35 @@ Since the GPUs in the Swarming pool are mostly homogeneous, this is sufficient
 to target the pool of Windows 10-like NVIDIA machines. (There are a few Windows
 7-like NVIDIA bots in the pool, which necessitates the OS specifier.)
 
-Details about the bots can be found on [chromium-swarm.appspot.com] and by
+Details about the bots can be found on [monyhar-swarm.appspot.com] and by
 using `src/tools/luci-go/swarming`, for example `swarming bots`.
 If you are authenticated with @google.com credentials you will be able to make
 queries of the bots and see, for example, which GPUs are available.
 
-[chromium-swarm.appspot.com]: https://chromium-swarm.appspot.com/
+[monyhar-swarm.appspot.com]: https://monyhar-swarm.appspot.com/
 
 The waterfall bots run tests on a single GPU type in order to make it easier to
 see regressions or flakiness that affect only a certain type of GPU.
 'Mac FYI GPU ASAN Release' is an exception, running both on Intel and AMD GPUs.
 
-The tryservers like `win10_chromium_x64_rel_ng` which include GPU tests, on the other
+The tryservers like `win10_monyhar_x64_rel_ng` which include GPU tests, on the other
 hand, run tests on more than one GPU type. As of this writing, the Windows
 tryservers ran tests on NVIDIA and AMD GPUs; the Mac tryservers ran tests on
 Intel and NVIDIA GPUs. The way these tryservers' tests are specified is simply
 by *mirroring* how one or more waterfall bots work. This is an inherent
-property of the [`chromium_trybot` recipe][chromium_trybot.py], which was designed to eliminate
+property of the [`monyhar_trybot` recipe][monyhar_trybot.py], which was designed to eliminate
 differences in behavior between the tryservers and waterfall bots. Since the
 tryservers mirror waterfall bots, if the waterfall bot is working, the
 tryserver must almost inherently be working as well.
 
-[chromium_trybot.py]: https://chromium.googlesource.com/chromium/tools/build/+/main/recipes/recipes/chromium_trybot.py
+[monyhar_trybot.py]: https://monyhar.googlesource.com/monyhar/tools/build/+/main/recipes/recipes/monyhar_trybot.py
 
 There are some GPU configurations on the waterfall backed by only one machine,
 or a very small number of machines in the Swarming pool. A few examples are:
 
 <!-- XXX: update this list -->
-*   [Mac Pro Release (AMD)](https://luci-milo.appspot.com/p/chromium/builders/luci.chromium.ci/Mac%20Pro%20FYI%20Release%20%28AMD%29)
-*   [Linux Release (AMD R7 240)](https://luci-milo.appspot.com/p/chromium/builders/luci.chromium.ci/Linux%20FYI%20Release%20%28AMD%20R7%20240%29/)
+*   [Mac Pro Release (AMD)](https://luci-milo.appspot.com/p/monyhar/builders/luci.monyhar.ci/Mac%20Pro%20FYI%20Release%20%28AMD%29)
+*   [Linux Release (AMD R7 240)](https://luci-milo.appspot.com/p/monyhar/builders/luci.monyhar.ci/Linux%20FYI%20Release%20%28AMD%20R7%20240%29/)
 
 There are a couple of reasons to continue to support running tests on a
 specific machine: it might be too expensive to deploy the required multiple
@@ -102,11 +102,11 @@ background on [Isolates] and [Swarming].
     your target. Find a similar target to yours in order to determine the
     `type`. The type is referenced in [`src/tools/mb/mb.py`][mb.py].
 
-[testing/test.gni]:     https://chromium.googlesource.com/chromium/src/+/main/testing/test.gni
-[gpu/BUILD.gn]:         https://chromium.googlesource.com/chromium/src/+/main/gpu/BUILD.gn
-[chrome/test/BUILD.gn]: https://chromium.googlesource.com/chromium/src/+/main/chrome/test/BUILD.gn
-[gn_isolate_map.pyl]:   https://chromium.googlesource.com/chromium/src/+/main/testing/buildbot/gn_isolate_map.pyl
-[mb.py]:                https://chromium.googlesource.com/chromium/src/+/main/tools/mb/mb.py
+[testing/test.gni]:     https://monyhar.googlesource.com/monyhar/src/+/main/testing/test.gni
+[gpu/BUILD.gn]:         https://monyhar.googlesource.com/monyhar/src/+/main/gpu/BUILD.gn
+[chrome/test/BUILD.gn]: https://monyhar.googlesource.com/monyhar/src/+/main/chrome/test/BUILD.gn
+[gn_isolate_map.pyl]:   https://monyhar.googlesource.com/monyhar/src/+/main/testing/buildbot/gn_isolate_map.pyl
+[mb.py]:                https://monyhar.googlesource.com/monyhar/src/+/main/tools/mb/mb.py
 
 At this point you can build and upload your isolate to the isolate server.
 
@@ -114,7 +114,7 @@ See [Isolated Testing for SWEs] for the most up-to-date instructions. These
 instructions are a copy which show how to run an isolate that's been uploaded
 to the isolate server on your local machine rather than on Swarming.
 
-[Isolated Testing for SWEs]: https://www.chromium.org/developers/testing/isolated-testing/for-swes
+[Isolated Testing for SWEs]: https://www.monyhar.org/developers/testing/isolated-testing/for-swes
 
 If `cd`'d into `src/`:
 
@@ -134,9 +134,9 @@ See [Adding new steps to the GPU bots] for details on this process.
 
 In the [`tools/build`][tools/build] workspace:
 
-*   `recipes/recipe_modules/chromium_tests/`:
-    *   [`chromium_gpu.py`][chromium_gpu.py] and
-        [`chromium_gpu_fyi.py`][chromium_gpu_fyi.py] define the following for
+*   `recipes/recipe_modules/monyhar_tests/`:
+    *   [`monyhar_gpu.py`][monyhar_gpu.py] and
+        [`monyhar_gpu_fyi.py`][monyhar_gpu_fyi.py] define the following for
         each builder and tester:
         *   How the workspace is checked out (e.g., this is where top-of-tree
             ANGLE is specified)
@@ -155,12 +155,12 @@ In the [`tools/build`][tools/build] workspace:
             and then break on the waterfall.
         *   This file defines the behavior of the following GPU-related try
             bots:
-            *   `linux-rel`, `mac-rel`, `win10_chromium_x64_rel_ng` and
+            *   `linux-rel`, `mac-rel`, `win10_monyhar_x64_rel_ng` and
                 `android-marshmallow-arm64-rel`, which run against every
                 Chromium CL, and which mirror the behavior of bots on the
-                chromium.gpu waterfall.
+                monyhar.gpu waterfall.
             *   The ANGLE try bots, which run against ANGLE CLs, and mirror the
-                behavior of the chromium.gpu.fyi waterfall (including using
+                behavior of the monyhar.gpu.fyi waterfall (including using
                 top-of-tree ANGLE, and running additional tests not run by the
                 regular Chromium try bots)
             *   The optional GPU try servers `linux_optional_gpu_tests_rel`,
@@ -173,16 +173,16 @@ In the [`tools/build`][tools/build] workspace:
                 prefixes, which can be added manually to CLs targeting a
                 specific hardware configuration.
 
-[tools/build]:         https://chromium.googlesource.com/chromium/tools/build/
-[chromium_gpu.py]:     https://chromium.googlesource.com/chromium/tools/build/+/main/recipes/recipe_modules/chromium_tests/builders/chromium_gpu.py
-[chromium_gpu_fyi.py]: https://chromium.googlesource.com/chromium/tools/build/+/main/recipes/recipe_modules/chromium_tests/builders/chromium_gpu_fyi.py
-[trybots.py]:          https://chromium.googlesource.com/chromium/tools/build/+/main/recipes/recipe_modules/chromium_tests/trybots.py
+[tools/build]:         https://monyhar.googlesource.com/monyhar/tools/build/
+[monyhar_gpu.py]:     https://monyhar.googlesource.com/monyhar/tools/build/+/main/recipes/recipe_modules/monyhar_tests/builders/monyhar_gpu.py
+[monyhar_gpu_fyi.py]: https://monyhar.googlesource.com/monyhar/tools/build/+/main/recipes/recipe_modules/monyhar_tests/builders/monyhar_gpu_fyi.py
+[trybots.py]:          https://monyhar.googlesource.com/monyhar/tools/build/+/main/recipes/recipe_modules/monyhar_tests/trybots.py
 
-In the [`chromium/src`][chromium/src] workspace:
+In the [`monyhar/src`][monyhar/src] workspace:
 
 *   [`src/testing/buildbot`][src/testing/buildbot]:
-    *   [`chromium.gpu.json`][chromium.gpu.json] and
-        [`chromium.gpu.fyi.json`][chromium.gpu.fyi.json] define which steps are
+    *   [`monyhar.gpu.json`][monyhar.gpu.json] and
+        [`monyhar.gpu.fyi.json`][monyhar.gpu.fyi.json] define which steps are
         run on which bots. These files are autogenerated. Don't modify them
         directly!
     *   [`waterfalls.pyl`][waterfalls.pyl],
@@ -193,7 +193,7 @@ In the [`chromium/src`][chromium/src] workspace:
         generate the json files after you modify these pyl files.
     *   [`generate_buildbot_json.py`][generate_buildbot_json.py]
         *   The generator script for all the waterfalls, including
-            `chromium.gpu.json` and `chromium.gpu.fyi.json`.
+            `monyhar.gpu.json` and `monyhar.gpu.fyi.json`.
         *   See the [README for generate_buildbot_json.py] for documentation
             on this script and the descriptions of the waterfalls and test
             suites.
@@ -210,28 +210,28 @@ In the [`chromium/src`][chromium/src] workspace:
         how builds are triggered, which VMs or machines are used for the
         builder itself, i.e. for compilation and scheduling swarmed tasks
         on GPU hardware. See
-        [README.md](https://chromium.googlesource.com/chromium/src/+/main/infra/config/README.md)
+        [README.md](https://monyhar.googlesource.com/monyhar/src/+/main/infra/config/README.md)
         in this directory for up to date information.
 
-[chromium/src]:                         https://chromium.googlesource.com/chromium/src/
-[src/testing/buildbot]:                 https://chromium.googlesource.com/chromium/src/+/main/testing/buildbot
-[src/infra/config]:                     https://chromium.googlesource.com/chromium/src/+/main/infra/config
-[chromium.gpu.json]:                    https://chromium.googlesource.com/chromium/src/+/main/testing/buildbot/chromium.gpu.json
-[chromium.gpu.fyi.json]:                https://chromium.googlesource.com/chromium/src/+/main/testing/buildbot/chromium.gpu.fyi.json
-[gn_isolate_map.pyl]:                   https://chromium.googlesource.com/chromium/src/+/main/testing/buildbot/gn_isolate_map.pyl
-[mb_config.pyl]:                        https://chromium.googlesource.com/chromium/src/+/main/tools/mb/mb_config.pyl
-[generate_buildbot_json.py]:            https://chromium.googlesource.com/chromium/src/+/main/testing/buildbot/generate_buildbot_json.py
-[mixins.pyl]:                           https://chromium.googlesource.com/chromium/src/+/main/testing/buildbot/mixins.pyl
-[waterfalls.pyl]:                       https://chromium.googlesource.com/chromium/src/+/main/testing/buildbot/waterfalls.pyl
-[test_suites.pyl]:                      https://chromium.googlesource.com/chromium/src/+/main/testing/buildbot/test_suites.pyl
-[test_suite_exceptions.pyl]:            https://chromium.googlesource.com/chromium/src/+/main/testing/buildbot/test_suite_exceptions.pyl
+[monyhar/src]:                         https://monyhar.googlesource.com/monyhar/src/
+[src/testing/buildbot]:                 https://monyhar.googlesource.com/monyhar/src/+/main/testing/buildbot
+[src/infra/config]:                     https://monyhar.googlesource.com/monyhar/src/+/main/infra/config
+[monyhar.gpu.json]:                    https://monyhar.googlesource.com/monyhar/src/+/main/testing/buildbot/monyhar.gpu.json
+[monyhar.gpu.fyi.json]:                https://monyhar.googlesource.com/monyhar/src/+/main/testing/buildbot/monyhar.gpu.fyi.json
+[gn_isolate_map.pyl]:                   https://monyhar.googlesource.com/monyhar/src/+/main/testing/buildbot/gn_isolate_map.pyl
+[mb_config.pyl]:                        https://monyhar.googlesource.com/monyhar/src/+/main/tools/mb/mb_config.pyl
+[generate_buildbot_json.py]:            https://monyhar.googlesource.com/monyhar/src/+/main/testing/buildbot/generate_buildbot_json.py
+[mixins.pyl]:                           https://monyhar.googlesource.com/monyhar/src/+/main/testing/buildbot/mixins.pyl
+[waterfalls.pyl]:                       https://monyhar.googlesource.com/monyhar/src/+/main/testing/buildbot/waterfalls.pyl
+[test_suites.pyl]:                      https://monyhar.googlesource.com/monyhar/src/+/main/testing/buildbot/test_suites.pyl
+[test_suite_exceptions.pyl]:            https://monyhar.googlesource.com/monyhar/src/+/main/testing/buildbot/test_suite_exceptions.pyl
 [README for generate_buildbot_json.py]: ../../testing/buildbot/README.md
 
 In the [`infradata/config`][infradata/config] workspace (Google internal only,
 sorry):
 
 *   [`gpu.star`][gpu.star]
-    *   Defines a `chromium.tests.gpu` Swarming pool which contains all of the
+    *   Defines a `monyhar.tests.gpu` Swarming pool which contains all of the
         specialized hardware, except some hardware shared with Chromium:
         for example, the Windows and Linux NVIDIA
         bots, the Windows AMD bots, and the MacBook Pros with NVIDIA and AMD
@@ -243,9 +243,9 @@ sorry):
         triggered trybots.
 
 [infradata/config]:                https://chrome-internal.googlesource.com/infradata/config
-[gpu.star]:                        https://chrome-internal.googlesource.com/infradata/config/+/main/configs/chromium-swarm/starlark/bots/chromium/gpu.star
-[chromium.star]:                   https://chrome-internal.googlesource.com/infradata/config/+/main/configs/chromium-swarm/starlark/bots/chromium/chromium.star
-[pools.cfg]:                       https://chrome-internal.googlesource.com/infradata/config/+/main/configs/chromium-swarm/pools.cfg
+[gpu.star]:                        https://chrome-internal.googlesource.com/infradata/config/+/main/configs/monyhar-swarm/starlark/bots/monyhar/gpu.star
+[monyhar.star]:                   https://chrome-internal.googlesource.com/infradata/config/+/main/configs/monyhar-swarm/starlark/bots/monyhar/monyhar.star
+[pools.cfg]:                       https://chrome-internal.googlesource.com/infradata/config/+/main/configs/monyhar-swarm/pools.cfg
 [main.star]:                       https://chrome-internal.googlesource.com/infradata/config/+/main/main.star
 [vms.cfg]:                         https://chrome-internal.googlesource.com/infradata/config/+/main/configs/gce-provider/vms.cfg
 
@@ -258,7 +258,7 @@ maintaining the GPU bots, and how they'd be addressed.
 
 This is described in [Adding new tests to the GPU bots].
 
-[Adding new tests to the GPU bots]: https://chromium.googlesource.com/chromium/src/+/main/docs/gpu/gpu_testing.md#Adding-New-Tests-to-the-GPU-Bots
+[Adding new tests to the GPU bots]: https://monyhar.googlesource.com/monyhar/src/+/main/docs/gpu/gpu_testing.md#Adding-New-Tests-to-the-GPU-Bots
 
 ### How to set up new virtual machine instances
 
@@ -292,14 +292,14 @@ The process is:
    to be added to the right Swarming pools in a CL in the
    [`infradata/config`][infradata/config] (Google internal) workspace.
     1. GCEs for Windows CI builders and builder/testers should be added to
-       `luci-chromium-gpu-ci-win10-8` group in [`gpu.star`][gpu.star].
+       `luci-monyhar-gpu-ci-win10-8` group in [`gpu.star`][gpu.star].
     1. GCEs for Linux and Android CI builders and builder/testers should be added to
-       `luci-chromium-gpu-ci-xenial-8` group in [`gpu.star`][gpu.star].
+       `luci-monyhar-gpu-ci-xenial-8` group in [`gpu.star`][gpu.star].
     1. VMs for Mac CI builders and builder/testers should be added to
        `builderfull_gpu_ci_bots` group in [`gpu.star`][gpu.star].
        [Example](https://chrome-internal-review.googlesource.com/c/infradata/config/+/1166889).
     1. GCEs for CI testers for all OSes should be added to
-       `luci-chromium-gpu-ci-xenial-2` group in [`gpu.star`][gpu.star].
+       `luci-monyhar-gpu-ci-xenial-2` group in [`gpu.star`][gpu.star].
        [Example](https://chrome-internal-review.googlesource.com/c/infradata/config/+/2016410).
     1. GCEs and VMs for CQ and optional CQ GPU trybots for should be added to
        a corresponding `gpu_try_bots` group in [`gpu.star`][gpu.star].
@@ -309,14 +309,14 @@ The process is:
        builds on these bots (until [crbug.com/949379](crbug.com/949379) is
        fixed) to prevent oversubscribing GPU hardware.
        `win_optional_gpu_tests_rel` is an exception, its GCEs come from
-       `luci-chromium-try-win10-*-8` groups in
-       [`chromium.star`][chromium.star], see
+       `luci-monyhar-try-win10-*-8` groups in
+       [`monyhar.star`][monyhar.star], see
        [CL](https://chrome-internal-review.googlesource.com/c/infradata/config/+/1708723).
        This can cause oversubscription to Windows GPU hardware, however,
        Chrome Infra insisted on making this bot builderless due to frequent
        interruptions they get from limiting the number of concurrent builds on
        it, see discussion in
-       [CL](https://chromium-review.googlesource.com/c/chromium/src/+/1775098).
+       [CL](https://monyhar-review.googlesource.com/c/monyhar/src/+/1775098).
     1. GCEs and VMs for manual GPU trybots should be added to a corresponding
        pool in "Manually-triggered GPU trybots" in [`gpu.star`][gpu.star].
        If adding a new pool, it should also be added to
@@ -327,7 +327,7 @@ The process is:
        resource, and all trybots that target this GPU hardware compete for
        GCEs from this small pool.
     1. Run [`main.star`][main.star] to regenerate
-       `configs/chromium-swarm/bots.cfg` and `configs/gce-provider/vms.cfg`.
+       `configs/monyhar-swarm/bots.cfg` and `configs/gce-provider/vms.cfg`.
        Double-check your work there.
        Note that previously [`vms.cfg`][vms.cfg] had to be edited manually.
        Part of the difficulty was in choosing a zone. This should soon no
@@ -342,14 +342,14 @@ The process is:
        Note: CR+1 is not sticky in this repo, so you'll have to ping for
        re-review after every change, like rebase.
 
-### How to add a new tester bot to the chromium.gpu.fyi waterfall
+### How to add a new tester bot to the monyhar.gpu.fyi waterfall
 
 When deploying a new GPU configuration, it should be added to the
-chromium.gpu.fyi waterfall first. The chromium.gpu waterfall should be reserved
+monyhar.gpu.fyi waterfall first. The monyhar.gpu waterfall should be reserved
 for those GPUs which are tested on the commit queue. (Some of the bots violate
 this rule – namely, the Debug bots – though we should strive to eliminate these
 differences.) Once the new configuration is ready to be fully deployed on
-tryservers, bots can be added to the chromium.gpu waterfall, and the tryservers
+tryservers, bots can be added to the monyhar.gpu waterfall, and the tryservers
 changed to mirror them.
 
 In order to add Release and Debug waterfall bots for a new configuration,
@@ -366,11 +366,11 @@ Builder].
 
 1.  Work with the Chrome Infrastructure Labs team to get the (minimum 4)
     physical machines added to the Swarming pool. Use
-    [chromium-swarm.appspot.com] or `src/tools/luci-go/swarming bots`
+    [monyhar-swarm.appspot.com] or `src/tools/luci-go/swarming bots`
     to determine the PCI IDs of the GPUs in the bots. (These instructions will
     need to be updated for Android bots which don't have PCI buses.)
 
-    1.  Make sure to add these new machines to the chromium.tests.gpu Swarming
+    1.  Make sure to add these new machines to the monyhar.tests.gpu Swarming
         pool by creating a CL against [`gpu.star`][gpu.star] in the
         [`infradata/config`][infradata/config] (Google internal) workspace.
         Git configure your user.email to @google.com if necessary. Here is one
@@ -379,21 +379,21 @@ Builder].
         [second example](https://chrome-internal-review.googlesource.com/1111456).
 
     1.  Run [`main.star`][main.star] to regenerate
-        `configs/chromium-swarm/bots.cfg`. Double-check your work there.
+        `configs/monyhar-swarm/bots.cfg`. Double-check your work there.
 
 1.  Allocate new virtual machines for the bots as described in [How to set up
     new virtual machine
     instances](#How-to-set-up-new-virtual-machine-instances).
 
 1.  Create a CL in the Chromium workspace which does the following. Here's an
-    [example CL](https://chromium-review.googlesource.com/c/chromium/src/+/1752291).
+    [example CL](https://monyhar-review.googlesource.com/c/monyhar/src/+/1752291).
     1.  Adds the new machines to [`waterfalls.pyl`][waterfalls.pyl] directly or
         to [`mixins.pyl`][mixins.pyl], referencing the new mixin in
         [`waterfalls.pyl`][waterfalls.pyl].
         1.  The swarming dimensions are crucial. These must match the GPU and
             OS type of the physical hardware in the Swarming pool. This is what
             causes the VMs to spawn their tests on the correct hardware. Make
-            sure to use the chromium.tests.gpu pool, and that the new machines
+            sure to use the monyhar.tests.gpu pool, and that the new machines
             were specifically added to that pool.
         1.  Make triply sure that there are no collisions between the new
             hardware you're adding and hardware already in the Swarming pool.
@@ -412,7 +412,7 @@ Builder].
             to be added to any exclusion lists. For example, some of the tests
             don't run on certain Win bots because of missing OpenGL extensions.
         1.  Run [`generate_buildbot_json.py`][generate_buildbot_json.py] to
-            regenerate `src/testing/buildbot/chromium.gpu.fyi.json`.
+            regenerate `src/testing/buildbot/monyhar.gpu.fyi.json`.
     1. Updates [`ci.star`][ci.star] and its related generated files
        [`cr-buildbucket.cfg`][cr-buildbucket.cfg],
        [`luci-scheduler.cfg`][luci-scheduler.cfg], and
@@ -439,9 +439,9 @@ Builder].
 1. *After* the Chromium-side CL lands and the bot is on the console, create a CL
    in the [`tools/build`][tools/build] workspace which does the
    following. Here's an [example
-   CL](https://chromium-review.googlesource.com/1041145).
-    1.  Adds the new bot to [`chromium_gpu_fyi.py`][chromium_gpu_fyi.py] in
-        `recipes/recipe_modules/chromium_tests/builders/`. Make sure to set the
+   CL](https://monyhar-review.googlesource.com/1041145).
+    1.  Adds the new bot to [`monyhar_gpu_fyi.py`][monyhar_gpu_fyi.py] in
+        `recipes/recipe_modules/monyhar_tests/builders/`. Make sure to set the
         `serialize_tests` property to `True`. This is specified for waterfall
         bots, but not trybots, and helps avoid overloading the physical
         hardware. Double-check the `BUILD_CONFIG` and `parent_buildername`
@@ -483,32 +483,32 @@ Attempting to set up the builder/tester pair without first landing the
 [`tools/build`][tools/build] CL for the new builder will result in things
 breaking as seen in [this bug][misconfigured builder bug].
 
-[How to add a new manually-triggered trybot]: https://chromium.googlesource.com/chromium/src/+/main/docs/gpu/gpu_testing_bot_details.md#How-to-add-a-new-manually_triggered-trybot
+[How to add a new manually-triggered trybot]: https://monyhar.googlesource.com/monyhar/src/+/main/docs/gpu/gpu_testing_bot_details.md#How-to-add-a-new-manually_triggered-trybot
 
-[ci.star]:               https://chromium.googlesource.com/chromium/src/+/main/infra/config/subprojects/ci.star
-[chromium.gpu.star]:     https://chromium.googlesource.com/chromium/src/+/main/infra/config/consoles/chromium.gpu.star
-[chromium.gpu.fyi.star]: https://chromium.googlesource.com/chromium/src/+/main/infra/config/consoles/chromium.gpu.fyi.star
-[cr-buildbucket.cfg]:    https://chromium.googlesource.com/chromium/src/+/main/infra/config/generated/cr-buildbucket.cfg
-[luci-scheduler.cfg]:    https://chromium.googlesource.com/chromium/src/+/main/infra/config/generated/luci-scheduler.cfg
-[luci-milo.cfg]:         https://chromium.googlesource.com/chromium/src/+/main/infra/config/generated/luci-milo.cfg
-[GPU FYI Win Builder]:   https://ci.chromium.org/p/chromium/builders/luci.chromium.ci/GPU%20FYI%20Win%20Builder
-[misconfigured builder bug]: https://bugs.chromium.org/p/chromium/issues/detail?id=1163657
+[ci.star]:               https://monyhar.googlesource.com/monyhar/src/+/main/infra/config/subprojects/ci.star
+[monyhar.gpu.star]:     https://monyhar.googlesource.com/monyhar/src/+/main/infra/config/consoles/monyhar.gpu.star
+[monyhar.gpu.fyi.star]: https://monyhar.googlesource.com/monyhar/src/+/main/infra/config/consoles/monyhar.gpu.fyi.star
+[cr-buildbucket.cfg]:    https://monyhar.googlesource.com/monyhar/src/+/main/infra/config/generated/cr-buildbucket.cfg
+[luci-scheduler.cfg]:    https://monyhar.googlesource.com/monyhar/src/+/main/infra/config/generated/luci-scheduler.cfg
+[luci-milo.cfg]:         https://monyhar.googlesource.com/monyhar/src/+/main/infra/config/generated/luci-milo.cfg
+[GPU FYI Win Builder]:   https://ci.monyhar.org/p/monyhar/builders/luci.monyhar.ci/GPU%20FYI%20Win%20Builder
+[misconfigured builder bug]: https://bugs.monyhar.org/p/monyhar/issues/detail?id=1163657
 
 ### How to start running tests on a new GPU type on an existing try bot
 
-Let's say that you want to cause the `win10_chromium_x64_rel_ng` try bot to run
+Let's say that you want to cause the `win10_monyhar_x64_rel_ng` try bot to run
 tests on CoolNewGPUType in addition to the types it currently runs (as of this
 writing only NVIDIA). To do this:
 
 1.  Make sure there is enough hardware capacity using the available tools to
     report utilization of the Swarming pool.
-1.  Deploy Release and Debug testers on the `chromium.gpu` waterfall, following
-    the instructions for the `chromium.gpu.fyi` waterfall above. Make sure
-    the flakiness on the new bots is comparable to existing `chromium.gpu` bots
+1.  Deploy Release and Debug testers on the `monyhar.gpu` waterfall, following
+    the instructions for the `monyhar.gpu.fyi` waterfall above. Make sure
+    the flakiness on the new bots is comparable to existing `monyhar.gpu` bots
     before proceeding.
 1.  Create a CL in the [`tools/build`][tools/build] workspace, adding the new
-    Release tester to `win10_chromium_x64_rel_ng`'s `bot_ids` list
-    in `recipes/recipe_modules/chromium_tests/trybots.py`. Rerun
+    Release tester to `win10_monyhar_x64_rel_ng`'s `bot_ids` list
+    in `recipes/recipe_modules/monyhar_tests/trybots.py`. Rerun
     `recipes/recipes.py test train`.
 1.  Once the above CL lands, the commit queue will **immediately** start
     running tests on the CoolNewGPUType configuration. Be vigilant and make
@@ -523,8 +523,8 @@ Even for GPU types that have CQ trybots, it is convenient to have
 manually-triggered trybots as well, since the CQ trybot often runs on more than
 one GPU type, or some test suites which run on CI bot can be disabled on CQ
 trybot (when the CQ bot mirrors a
-[fake bot](https://chromium.googlesource.com/chromium/src/+/main/docs/gpu/gpu_testing_bot_details.md#how-to-add-a-new-try-bot-that-runs-a-subset-of-tests-or-extra-tests)).
-Thus, all CI bots in `chromium.gpu` and `chromium.gpu.fyi` have corresponding
+[fake bot](https://monyhar.googlesource.com/monyhar/src/+/main/docs/gpu/gpu_testing_bot_details.md#how-to-add-a-new-try-bot-that-runs-a-subset-of-tests-or-extra-tests)).
+Thus, all CI bots in `monyhar.gpu` and `monyhar.gpu.fyi` have corresponding
 manually-triggered trybots, except a few which don't have enough hardware
 to support it. A manually-triggered trybot should be added at the same time
 a CI bot is added.
@@ -542,13 +542,13 @@ trybot for the Win7 NVIDIA GPUs in Release mode. We will call the new bot
     following the "Manually-triggered GPU trybots" instructions.
 
 1.  Create a CL in the Chromium workspace which does the following. Here's a
-    [reference CL](https://chromium-review.googlesource.com/c/chromium/src/+/2191276)
+    [reference CL](https://monyhar-review.googlesource.com/c/monyhar/src/+/2191276)
     exemplifying the new "GCE pool per GPU hardware pool" way.
     1.  Updates [`gpu.try.star`][gpu.try.star] and its related generated file
         [`cr-buildbucket.cfg`][cr-buildbucket.cfg]:
         *   Add the new trybot with the right `builder` define and VMs pool.
             For `gpu-fyi-try-win7-nvidia-rel-64` this would be
-            `gpu_win_builder()` and `luci.chromium.gpu.win7.nvidia.try`.
+            `gpu_win_builder()` and `luci.monyhar.gpu.win7.nvidia.try`.
     1.  Run `main.star` in [`src/infra/config`][src/infra/config] to update the
         generated files. Double-check your work there.
     1.  Adds the new trybot to [`src/tools/mb/mb_config.pyl`][mb_config.pyl]
@@ -560,13 +560,13 @@ trybot for the Win7 NVIDIA GPUs in Release mode. We will call the new bot
 
 1. Create a CL in the [`tools/build`][tools/build] workspace which does the
    following. Here's an [example
-   CL](https://chromium-review.googlesource.com/c/chromium/tools/build/+/1979113).
+   CL](https://monyhar-review.googlesource.com/c/monyhar/tools/build/+/1979113).
 
     1.  Adds the new trybot to a "Manually-triggered GPU trybots" section in
-        `recipes/recipe_modules/chromium_tests/tests/trybots.py`. Create this
+        `recipes/recipe_modules/monyhar_tests/tests/trybots.py`. Create this
         section after the "Optional GPU bots" section for the appropriate
-        tryserver (`tryserver.chromium.win`, `tryserver.chromium.mac`,
-        `tryserver.chromium.linux`, `tryserver.chromium.android`). Have the bot
+        tryserver (`tryserver.monyhar.win`, `tryserver.monyhar.mac`,
+        `tryserver.monyhar.linux`, `tryserver.monyhar.android`). Have the bot
         mirror the appropriate waterfall bot; in this case, the buildername to
         mirror is `GPU FYI Win x64 Builder` and the tester is
         `Win7 FYI x64 Release (NVIDIA)`.
@@ -582,16 +582,16 @@ trybot for the Win7 NVIDIA GPUs in Release mode. We will call the new bot
 
 At this point the new trybot should automatically show up in the
 "Choose tryjobs" pop-up in the Gerrit UI, under the
-`luci.chromium.try` heading, because it was deployed via LUCI. It
+`luci.monyhar.try` heading, because it was deployed via LUCI. It
 should be possible to send a CL to it.
 
 (It should not be necessary to modify buildbucket.config as is
 mentioned at the bottom of the "Choose tryjobs" pop-up. Contact the
 chrome-infra team if this doesn't work as expected.)
 
-[gpu.try.star]:                https://chromium.googlesource.com/chromium/src/+/main/infra/config/subprojects/gpu.try.star
-[luci.chromium.try.star]:      https://chromium.googlesource.com/chromium/src/+/main/infra/config/consoles/luci.chromium.try.star
-[tryserver.chromium.win.star]: https://chromium.googlesource.com/chromium/src/+/main/infra/config/consoles/tryserver.chromium.win.star
+[gpu.try.star]:                https://monyhar.googlesource.com/monyhar/src/+/main/infra/config/subprojects/gpu.try.star
+[luci.monyhar.try.star]:      https://monyhar.googlesource.com/monyhar/src/+/main/infra/config/consoles/luci.monyhar.try.star
+[tryserver.monyhar.win.star]: https://monyhar.googlesource.com/monyhar/src/+/main/infra/config/consoles/tryserver.monyhar.win.star
 
 
 ### How to add a new try bot that runs a subset of tests or extra tests
@@ -617,7 +617,7 @@ Win10 Release (CoolNewGPUType)".
 1.  Create a CL in the Chromium workspace the does the following. Here's an
     outdated [example CL](https://crrev.com/c/1554296).
     1.  Add your new bot (for example, "MyProject GPU Win10 Release
-        (CoolNewGPUType)") to the chromium.gpu.fyi waterfall in
+        (CoolNewGPUType)") to the monyhar.gpu.fyi waterfall in
         [`waterfalls.pyl`][waterfalls.pyl].
     1.  Add your new bot to
         [`src/testing/buildbot/generate_buildbot_json.py`][generate_buildbot_json.py]
@@ -640,8 +640,8 @@ Win10 Release (CoolNewGPUType)".
     in the [`tools/build`][tools/build] workspace which does the
     following. Here's an [example CL](https://crrev.com/c/1554272).
     1.  Adds "MyProject GPU Win10 Release
-        (CoolNewGPUType)" to [`chromium_gpu_fyi.py`][chromium_gpu_fyi.py] in
-        `recipes/recipe_modules/chromium_tests/builders/`. You can copy a similar
+        (CoolNewGPUType)" to [`monyhar_gpu_fyi.py`][monyhar_gpu_fyi.py] in
+        `recipes/recipe_modules/monyhar_tests/builders/`. You can copy a similar
         step.
     1.  Adds `win-myproject-rel` to [`trybots.py`][trybots.py] in the same folder.
         This is where you associate "MyProject GPU Win10 Release
@@ -652,8 +652,8 @@ Win10 Release (CoolNewGPUType)".
 1.  After your CLs land you should be able to find and run `win-myproject-rel` on CLs
     using Choose Trybots in Gerrit.
 
-[scheduler-noop-jobs.star]: https://chromium.googlesource.com/chromium/src/+/main/infra/config/generators/scheduler-noop-jobs.star
-[try.star]:                 https://chromium.googlesource.com/chromium/src/+/main/infra/config/subprojects/try.star
+[scheduler-noop-jobs.star]: https://monyhar.googlesource.com/monyhar/src/+/main/infra/config/generators/scheduler-noop-jobs.star
+[try.star]:                 https://monyhar.googlesource.com/monyhar/src/+/main/infra/config/subprojects/try.star
 
 
 ### How to test and deploy a driver and/or OS update
@@ -672,8 +672,8 @@ or OS update. To do this:
     the physical machines already in the Swarming pool upgraded to the new
     version of the driver or the OS.
 1.  If an "experimental" version of this bot doesn't yet exist, follow the
-    instructions above for [How to add a new tester bot to the chromium.gpu.fyi
-    waterfall](#How-to-add-a-new-tester-bot-to-the-chromium_gpu_fyi-waterfall)
+    instructions above for [How to add a new tester bot to the monyhar.gpu.fyi
+    waterfall](#How-to-add-a-new-tester-bot-to-the-monyhar_gpu_fyi-waterfall)
     to deploy one.
 1.  Have this experimental bot target the new version of the driver or the OS
     in [`waterfalls.pyl`][waterfalls.pyl] and [`mixins.pyl`][mixins.pyl].
@@ -691,7 +691,7 @@ or OS update. To do this:
         'dimensions': {
           'gpu': '8086:5912-26.20.100.7870|8086:5912-26.20.100.8141',
           'os': 'Windows-10',
-          'pool': 'chromium.tests.gpu',
+          'pool': 'monyhar.tests.gpu',
         },
       },
     }
@@ -716,8 +716,8 @@ Note that we leave the experimental bot in place. We could reclaim it, but it
 seems worthwhile to continuously test the "next" version of graphics drivers as
 well as the current stable ones.
 
-[sample driver cl]: https://chromium-review.googlesource.com/c/chromium/src/+/1726875
-[updating gold baselines]: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/gpu/pixel_wrangling.md#how-to-keep-the-bots-green
+[sample driver cl]: https://monyhar-review.googlesource.com/c/monyhar/src/+/1726875
+[updating gold baselines]: https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/gpu/pixel_wrangling.md#how-to-keep-the-bots-green
 
 ## Credentials for various servers
 
@@ -738,7 +738,7 @@ To test your authentication, find a hash for a recent isolate. Consult the
 instructions on [Running Binaries from the Bots Locally] to find a random hash
 from a target like `gl_tests`. Then run the following:
 
-[Running Binaries from the Bots Locally]: https://www.chromium.org/developers/testing/gpu-testing#TOC-Running-Binaries-from-the-Bots-Locally
+[Running Binaries from the Bots Locally]: https://www.monyhar.org/developers/testing/gpu-testing#TOC-Running-Binaries-from-the-Bots-Locally
 
 ### Swarming server credentials
 
@@ -746,7 +746,7 @@ The swarming server uses the same `auth.py` script as the isolate server. You
 will need to authenticate if you want to manually download the results of
 previous swarming jobs, trigger your own jobs, or run `swarming.py reproduce`
 to re-run a remote job on your local workstation. Follow the instructions
-above, replacing the service with `https://chromium-swarm.appspot.com`.
+above, replacing the service with `https://monyhar-swarm.appspot.com`.
 
 ### Cloud storage credentials
 
@@ -768,7 +768,7 @@ appropriate cloud storage buckets. Roughly:
 At this point you should be able to write to the cloud storage bucket.
 
 Navigate to
-<https://console.developers.google.com/storage/chromium-gpu-archive> to view
+<https://console.developers.google.com/storage/monyhar-gpu-archive> to view
 the contents of the cloud storage bucket.
 
 [Google Cloud Storage instructions]: https://developers.google.com/storage/docs/gsutil

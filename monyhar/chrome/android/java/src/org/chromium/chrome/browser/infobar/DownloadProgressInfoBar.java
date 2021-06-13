@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.infobar;
+package org.monyhar.chrome.browser.infobar;
 
 import android.graphics.drawable.Drawable;
 import android.view.View;
@@ -14,17 +14,17 @@ import androidx.vectordrawable.graphics.drawable.Animatable2Compat;
 import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat;
 import androidx.vectordrawable.graphics.drawable.VectorDrawableCompat;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.download.DownloadInfoBarController;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.infobars.InfoBar;
-import org.chromium.components.infobars.InfoBarLayout;
-import org.chromium.components.offline_items_collection.ContentId;
-import org.chromium.components.offline_items_collection.OfflineItemSchedule;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.download.DownloadInfoBarController;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.infobars.InfoBar;
+import org.monyhar.components.infobars.InfoBarLayout;
+import org.monyhar.components.offline_items_collection.ContentId;
+import org.monyhar.components.offline_items_collection.OfflineItemSchedule;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 /**
  * An {@link InfoBar} to provide information about currently running downloads.

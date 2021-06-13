@@ -1,5 +1,5 @@
 # This file is for use with the Pinpoint CLI.
-# For more information, see https://source.chromium.org/chromium/infra/infra/+/main:go/src/infra/chromeperf/doc/pinpoint/cli/job-presets.md
+# For more information, see https://source.monyhar.org/monyhar/infra/infra/+/main:go/src/infra/chromeperf/doc/pinpoint/cli/job-presets.md
 # Example command:
 # pinpoint experiment-telemetry-start \
 #   --presets-file /path/to/this/file \

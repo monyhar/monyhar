@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.fullscreen;
+package org.monyhar.chrome.browser.fullscreen;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -17,33 +17,33 @@ import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ApplicationStatus.ActivityStateListener;
-import org.chromium.base.ObserverList;
-import org.chromium.base.supplier.ObservableSupplierImpl;
-import org.chromium.base.task.PostTask;
-import org.chromium.cc.input.BrowserControlsState;
-import org.chromium.chrome.browser.ActivityTabProvider;
-import org.chromium.chrome.browser.ActivityTabProvider.ActivityTabTabObserver;
-import org.chromium.chrome.browser.ActivityUtils;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsSizer;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsStateProvider;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsUtils;
-import org.chromium.chrome.browser.browser_controls.BrowserStateBrowserControlsVisibilityDelegate;
-import org.chromium.chrome.browser.tab.SadTab;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabBrowserControlsConstraintsHelper;
-import org.chromium.chrome.browser.tab.TabBrowserControlsOffsetHelper;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorTabObserver;
-import org.chromium.chrome.browser.tabmodel.TabSwitchMetrics;
-import org.chromium.chrome.browser.toolbar.ControlContainer;
-import org.chromium.chrome.browser.vr.VrModuleProvider;
-import org.chromium.components.browser_ui.util.BrowserControlsVisibilityDelegate;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.ui.util.TokenHolder;
-import org.chromium.ui.vr.VrModeObserver;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ApplicationStatus.ActivityStateListener;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.supplier.ObservableSupplierImpl;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.cc.input.BrowserControlsState;
+import org.monyhar.chrome.browser.ActivityTabProvider;
+import org.monyhar.chrome.browser.ActivityTabProvider.ActivityTabTabObserver;
+import org.monyhar.chrome.browser.ActivityUtils;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsSizer;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsStateProvider;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsUtils;
+import org.monyhar.chrome.browser.browser_controls.BrowserStateBrowserControlsVisibilityDelegate;
+import org.monyhar.chrome.browser.tab.SadTab;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabBrowserControlsConstraintsHelper;
+import org.monyhar.chrome.browser.tab.TabBrowserControlsOffsetHelper;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorTabObserver;
+import org.monyhar.chrome.browser.tabmodel.TabSwitchMetrics;
+import org.monyhar.chrome.browser.toolbar.ControlContainer;
+import org.monyhar.chrome.browser.vr.VrModuleProvider;
+import org.monyhar.components.browser_ui.util.BrowserControlsVisibilityDelegate;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.ui.util.TokenHolder;
+import org.monyhar.ui.vr.VrModeObserver;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

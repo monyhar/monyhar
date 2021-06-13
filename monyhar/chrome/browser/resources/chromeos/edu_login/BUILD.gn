@@ -35,7 +35,7 @@ js_library("app") {
     ":edu_login_parents",
     ":edu_login_signin",
     ":edu_login_util",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_view_manager:cr_view_manager",
     "//ui/webui/resources/js:assert.m",
   ]
@@ -43,7 +43,7 @@ js_library("app") {
 
 js_library("edu_login_button") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
     "//ui/webui/resources/js:util.m",
   ]
@@ -51,7 +51,7 @@ js_library("edu_login_button") {
 
 js_library("edu_login_template") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements:cr_scrollable_behavior.m",
   ]
 }
@@ -72,7 +72,7 @@ js_library("edu_login_coexistence_info") {
   deps = [
     ":edu_login_button",
     ":edu_login_template",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -80,7 +80,7 @@ js_library("edu_login_parents") {
   deps = [
     ":edu_login_button",
     ":edu_login_template",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:icon.m",
   ]
 }
@@ -90,7 +90,7 @@ js_library("edu_login_parent_signin") {
     ":browser_proxy",
     ":edu_login_button",
     ":edu_login_template",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:web_ui_listener_behavior.m",
   ]
 }
@@ -99,7 +99,7 @@ js_library("edu_login_parent_info") {
   deps = [
     ":edu_login_button",
     ":edu_login_template",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:icon.m",
   ]
 }
@@ -110,7 +110,7 @@ js_library("edu_login_signin") {
     ":edu_login_button",
     ":edu_login_template",
     "//chrome/browser/resources/gaia_auth_host:authenticator.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
     "//ui/webui/resources/js:web_ui_listener_behavior.m",
   ]
@@ -122,7 +122,7 @@ js_library("edu_login_error") {
     ":edu_login_button",
     ":edu_login_template",
     "//chrome/browser/resources/chromeos/account_manager/components:error_screen",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 

@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.partnercustomizations;
+package org.monyhar.chrome.test.partnercustomizations;
 
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 
-import org.chromium.base.annotations.MainDex;
+import org.monyhar.base.annotations.MainDex;
 
 import java.util.List;
 import java.util.concurrent.CountDownLatch;

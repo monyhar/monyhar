@@ -21,7 +21,7 @@ who're already familiar with it, and also keeps things consistent.
 e.g. `//content/browser`, `//content/renderer` etc...
 - While we don't allow old-style Chrome IPC `_messages.h` files in
   `//content/public`, we do allow `.mojom` files (see
-  [discussion](https://groups.google.com/a/chromium.org/forum/#!searchin/chromium-mojo/cross-module/chromium-mojo/ZR2YlRV7Uxs/Ce-h_AaWCgAJ)).
+  [discussion](https://groups.google.com/a/monyhar.org/forum/#!searchin/monyhar-mojo/cross-module/monyhar-mojo/ZR2YlRV7Uxs/Ce-h_AaWCgAJ)).
   If a mojom is only used inside content, it should be in
   `//content/common`. If it's an interface that is implemented or called by
   content's embedder, then it belongs in `//content/public/common`.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.pagecontroller.tests.webapk;
+package org.monyhar.chrome.test.pagecontroller.tests.webapk;
 
 import android.app.Activity;
 import android.content.Context;
@@ -20,26 +20,26 @@ import org.junit.rules.RuleChain;
 import org.junit.rules.TestRule;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.Log;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.browser.firstrun.FirstRunActivity;
-import org.chromium.chrome.browser.firstrun.FirstRunStatus;
-import org.chromium.chrome.browser.firstrun.FirstRunUtils;
-import org.chromium.chrome.browser.firstrun.LightweightFirstRunActivity;
-import org.chromium.chrome.browser.webapps.WebappActivity;
-import org.chromium.chrome.browser.webapps.WebappRegistry;
-import org.chromium.chrome.test.pagecontroller.controllers.webapk.first_run.LightWeightTOSController;
-import org.chromium.chrome.test.pagecontroller.rules.ChromeUiApplicationTestRule;
-import org.chromium.chrome.test.pagecontroller.rules.ChromeUiAutomatorTestRule;
-import org.chromium.chrome.test.pagecontroller.utils.IUi2Locator;
-import org.chromium.chrome.test.pagecontroller.utils.Ui2Locators;
-import org.chromium.chrome.test.pagecontroller.utils.UiAutomatorUtils;
-import org.chromium.chrome.test.pagecontroller.utils.UiLocatorHelper;
-import org.chromium.components.webapk.lib.client.WebApkValidator;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.Log;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.browser.firstrun.FirstRunActivity;
+import org.monyhar.chrome.browser.firstrun.FirstRunStatus;
+import org.monyhar.chrome.browser.firstrun.FirstRunUtils;
+import org.monyhar.chrome.browser.firstrun.LightweightFirstRunActivity;
+import org.monyhar.chrome.browser.webapps.WebappActivity;
+import org.monyhar.chrome.browser.webapps.WebappRegistry;
+import org.monyhar.chrome.test.pagecontroller.controllers.webapk.first_run.LightWeightTOSController;
+import org.monyhar.chrome.test.pagecontroller.rules.ChromeUiApplicationTestRule;
+import org.monyhar.chrome.test.pagecontroller.rules.ChromeUiAutomatorTestRule;
+import org.monyhar.chrome.test.pagecontroller.utils.IUi2Locator;
+import org.monyhar.chrome.test.pagecontroller.utils.Ui2Locators;
+import org.monyhar.chrome.test.pagecontroller.utils.UiAutomatorUtils;
+import org.monyhar.chrome.test.pagecontroller.utils.UiLocatorHelper;
+import org.monyhar.components.webapk.lib.client.WebApkValidator;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /**
  * Test the Maps Go First Run Experience. This test will be mostly focus on verifying the
@@ -99,7 +99,7 @@ public class MapsGoFirstRunTest {
     public void testFirstRunIsShown() {
         LightweightFirstRunActivity.setSupportSkippingTos(false);
         FirstRunStatus.setLightweightFirstRunFlowComplete(false);
-        launchWebapk("org.chromium.test.maps_go_webapk", "org.chromium.chrome");
+        launchWebapk("org.monyhar.test.maps_go_webapk", "org.monyhar.chrome");
 
         LightWeightTOSController controller = LightWeightTOSController.getInstance();
         Assert.assertTrue("Light weight TOS page should be shown.", controller.isCurrentPageThis());
@@ -115,7 +115,7 @@ public class MapsGoFirstRunTest {
         // Verification will fail for this APK, so instead of using the LWFRE, the full FRE will be
         // shown instead.
         WebApkValidator.setDisableValidationForTesting(false);
-        launchWebapk("org.chromium.test.maps_go_webapk", "org.chromium.chrome");
+        launchWebapk("org.monyhar.test.maps_go_webapk", "org.monyhar.chrome");
 
         CriteriaHelper.pollInstrumentationThread(
                 () -> mFirstRunActivity != null, "FirstRunActivity did not start");
@@ -126,7 +126,7 @@ public class MapsGoFirstRunTest {
     public void testFirstRunIsNotShownAfterAck() {
         LightweightFirstRunActivity.setSupportSkippingTos(false);
         FirstRunStatus.setLightweightFirstRunFlowComplete(true);
-        launchWebapk("org.chromium.test.maps_go_webapk", "org.chromium.chrome");
+        launchWebapk("org.monyhar.test.maps_go_webapk", "org.monyhar.chrome");
 
         verifyWebappActivityStarted();
         Assert.assertNull("Lightweight FRE should not have started.", mLightweightFreActivity);
@@ -137,7 +137,7 @@ public class MapsGoFirstRunTest {
     public void testTosSkipped() throws Exception {
         LightweightFirstRunActivity.setSupportSkippingTos(true);
         FirstRunStatus.setLightweightFirstRunFlowComplete(false);
-        launchWebapk("org.chromium.test.maps_go_webapk", "org.chromium.chrome");
+        launchWebapk("org.monyhar.test.maps_go_webapk", "org.monyhar.chrome");
 
         // Verify LWFRE activity is created before skipped to WebappActivity. See
         // https://crbug.com/1184149 for previous problems here.
@@ -152,7 +152,7 @@ public class MapsGoFirstRunTest {
     public void testTosNotSkippedByPolicy() {
         LightweightFirstRunActivity.setSupportSkippingTos(true);
         FirstRunStatus.setLightweightFirstRunFlowComplete(false);
-        launchWebapk("org.chromium.test.maps_go_webapk", "org.chromium.chrome");
+        launchWebapk("org.monyhar.test.maps_go_webapk", "org.monyhar.chrome");
 
         Assert.assertNotNull("Lightweight FRE should launch.", mLightweightFreActivity);
         LightWeightTOSController controller = LightWeightTOSController.getInstance();

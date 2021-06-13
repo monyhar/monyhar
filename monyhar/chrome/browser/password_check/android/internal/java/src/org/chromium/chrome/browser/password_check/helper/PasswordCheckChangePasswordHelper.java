@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_check.helper;
+package org.monyhar.chrome.browser.password_check.helper;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,11 +12,11 @@ import android.provider.Browser;
 
 import androidx.browser.customtabs.CustomTabsIntent;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.chrome.browser.password_check.CompromisedCredential;
-import org.chromium.chrome.browser.password_check.PasswordCheckComponentUi;
-import org.chromium.chrome.browser.password_check.PasswordCheckEditFragmentView;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.chrome.browser.password_check.CompromisedCredential;
+import org.monyhar.chrome.browser.password_check.PasswordCheckComponentUi;
+import org.monyhar.chrome.browser.password_check.PasswordCheckEditFragmentView;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
@@ -28,7 +28,7 @@ import java.util.Objects;
  */
 public class PasswordCheckChangePasswordHelper {
     private static final String AUTOFILL_ASSISTANT_PACKAGE =
-            "org.chromium.chrome.browser.autofill_assistant.";
+            "org.monyhar.chrome.browser.autofill_assistant.";
     private static final String AUTOFILL_ASSISTANT_ENABLED_KEY =
             AUTOFILL_ASSISTANT_PACKAGE + "ENABLED";
     private static final String PASSWORD_CHANGE_USERNAME_PARAMETER = "PASSWORD_CHANGE_USERNAME";

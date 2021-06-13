@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.offlinepages.prefetch;
+package org.monyhar.chrome.browser.offlinepages.prefetch;
 
 import android.util.Base64;
 
@@ -10,8 +10,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import org.chromium.base.Log;
-import org.chromium.net.test.util.WebServer;
+import org.monyhar.base.Log;
+import org.monyhar.net.test.util.WebServer;
 
 import java.io.IOException;
 import java.io.OutputStream;

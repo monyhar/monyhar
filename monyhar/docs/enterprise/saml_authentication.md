@@ -32,7 +32,7 @@ There are two ways to get user's password:
 
 ### Chrome Credentials Passing API
 Google provides a
-[Credentials Passing API](https://www.chromium.org/administrators/advanced-integration-for-saml-sso-on-chrome-devices)
+[Credentials Passing API](https://www.monyhar.org/administrators/advanced-integration-for-saml-sso-on-chrome-devices)
 that can be implemented by IdPs in Javascript on their SAML pages to pass the
 required data to Chrome. GAIA uses this API, but any SAML IdP provider could use
 it as well.
@@ -42,7 +42,7 @@ Password scraping is used when the SAML IdP provider does not support the
 Credentials Passing API.
 
 In this method, the authentication screen injects a
-[content script](https://cs.chromium.org/chromium/src/chrome/browser/resources/gaia_auth_host/saml_injected.js)
+[content script](https://cs.monyhar.org/monyhar/src/chrome/browser/resources/gaia_auth_host/saml_injected.js)
 into the webview that hosts the login process. The content script looks for HTML
 input fields of type password and copies their contents into an array. The array
 is updated whenever the contents of a password field changes. Scraped passwords
@@ -63,14 +63,14 @@ Three cases are possible:
    the login form.
 
 Case 1 will cause Chrome OS login to ask the user to
-[pick a manual password for the device](https://cs.chromium.org/chromium/src/chrome/browser/resources/chromeos/login/screen_gaia_signin.js?rcl=c4dd0ee9aebc827a18caa7cb0fdcf7c123d1a29f&l=981).
+[pick a manual password for the device](https://cs.monyhar.org/monyhar/src/chrome/browser/resources/chromeos/login/screen_gaia_signin.js?rcl=c4dd0ee9aebc827a18caa7cb0fdcf7c123d1a29f&l=981).
 If the password does not exist in the first place (e.g. authentication by smart
 cards, NFC, biometry), Chrome OS login may
-[proceed without the password](https://cs.chromium.org/chromium/src/chrome/browser/resources/gaia_auth_host/authenticator.js?rcl=faf24c60e6177fe0dcda857ec257d84ebabddc0e&l=799).
+[proceed without the password](https://cs.monyhar.org/monyhar/src/chrome/browser/resources/gaia_auth_host/authenticator.js?rcl=faf24c60e6177fe0dcda857ec257d84ebabddc0e&l=799).
 
 Case 2 is the ideal case. We most likely scraped the user’s password correctly.
 Chrome OS login
-[uses it as the user's password](https://cs.chromium.org/chromium/src/chrome/browser/resources/gaia_auth_host/authenticator.js?rcl=faf24c60e6177fe0dcda857ec257d84ebabddc0e&l=708).
+[uses it as the user's password](https://cs.monyhar.org/monyhar/src/chrome/browser/resources/gaia_auth_host/authenticator.js?rcl=faf24c60e6177fe0dcda857ec257d84ebabddc0e&l=708).
 
 Case 3 indicates that we probably scraped the user’s actual password and some
 additional password fields containing additional credentials that are not of
@@ -85,11 +85,11 @@ error message.
 For [Enterprise enrollment](enrollment.md) the enrolling user’s email address is
 needed to associate the device with the correct domain. The email is sent from
 the Device Management (DM) Server to Chrome in the
-[username field of the PolicyData message](https://cs.chromium.org/chromium/src/components/policy/proto/device_management_backend.proto?rcl=d477c3a9479cbebc4c7c36b7b89d641abda404a2&l=448)
+[username field of the PolicyData message](https://cs.monyhar.org/monyhar/src/components/policy/proto/device_management_backend.proto?rcl=d477c3a9479cbebc4c7c36b7b89d641abda404a2&l=448)
 during device
-[policy fetch](https://cs.chromium.org/chromium/src/chrome/browser/chromeos/policy/enrollment/enrollment_handler_chromeos.cc?l=316&rcl=176048587047ce83551542b20d973b2ff698cc5f).
+[policy fetch](https://cs.monyhar.org/monyhar/src/chrome/browser/chromeos/policy/enrollment/enrollment_handler_chromeos.cc?l=316&rcl=176048587047ce83551542b20d973b2ff698cc5f).
 The domain name is extracted
-[here](https://cs.chromium.org/chromium/src/chrome/browser/chromeos/policy/enrollment/enrollment_handler_chromeos.cc?rcl=d477c3a9479cbebc4c7c36b7b89d641abda404a2&l=576).
+[here](https://cs.monyhar.org/monyhar/src/chrome/browser/chromeos/policy/enrollment/enrollment_handler_chromeos.cc?rcl=d477c3a9479cbebc4c7c36b7b89d641abda404a2&l=576).
 
 There is no need to determine the user’s password.
 

@@ -74,7 +74,7 @@ For official Android devices, WebView has the following capabilities.
     App Store, but users must explicitly choose to update. As such, the
     rate of update varies much more than for the Chromium browser.
   * **Command-line Flags**: No for production devices, [yes for userdebug
-    devices](https://chromium.googlesource.com/chromium/src/+/HEAD/android_webview/docs/commandline-flags.md)
+    devices](https://monyhar.googlesource.com/monyhar/src/+/HEAD/android_webview/docs/commandline-flags.md)
   * **Field Trials (Finch)**: Yes, [with
     caveats](https://g3doc.corp.google.com/analysis/uma/g3doc/finch/platforms.md?cl=head)
   * **Enterprise Policy**: Yes, with caveats (TODO(rsleevi): document caveats)
@@ -84,8 +84,8 @@ For official Android devices, WebView has the following capabilities.
 ## `//content` Embedders
 
 In addition to Chromium, there are a number of other of embedders of
-`//content`, such as projects like [Chromium Embedded Framework](https://bitbucket.org/chromiumembedded/cef),
-[Electron](http://electron.atom.io/) or Fuchsia's [WebEngine](https://chromium.googlesource.com/chromium/src/+/HEAD/fuchsia/engine).
+`//content`, such as projects like [Chromium Embedded Framework](https://bitbucket.org/monyharembedded/cef),
+[Electron](http://electron.atom.io/) or Fuchsia's [WebEngine](https://monyhar.googlesource.com/monyhar/src/+/HEAD/fuchsia/engine).
 While `//net` does not directly support these consumers, it does support the
 `//content` embedding API that these projects use. Note that this excludes the
 [content_shell](../../content/shell) test framework.

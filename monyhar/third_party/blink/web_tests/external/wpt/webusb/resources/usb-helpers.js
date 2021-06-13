@@ -12,7 +12,7 @@
 (() => {
   // Load scripts needed by the test API on context creation.
   if (isChromiumBased) {
-    loadScript('/resources/chromium/webusb-child-test.js');
+    loadScript('/resources/monyhar/webusb-child-test.js');
   }
 })();
 
@@ -22,7 +22,7 @@ function usb_test(func, name, properties) {
     if (navigator.usb.test === undefined) {
       // Try loading a polyfill for the WebUSB Testing API.
       if (isChromiumBased) {
-        await loadScript('/resources/chromium/webusb-test.js');
+        await loadScript('/resources/monyhar/webusb-test.js');
       }
     }
     assert_implements(navigator.usb.test, 'missing navigator.usb.test after initialization');

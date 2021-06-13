@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.net.ProxyChangeListener;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.net.ProxyChangeListener;
 
 /**
  * Implementations of {@link ContentViewStatics}.

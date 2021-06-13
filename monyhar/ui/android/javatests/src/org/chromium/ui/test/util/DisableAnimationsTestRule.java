@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.test.util;
+package org.monyhar.ui.test.util;
 
 import android.os.IBinder;
 import android.provider.Settings;
@@ -11,8 +11,8 @@ import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

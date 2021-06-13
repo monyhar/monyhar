@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.content_creation.notes;
+package org.monyhar.chrome.browser.content_creation.notes;
 
 import android.app.Dialog;
 import android.graphics.Typeface;
@@ -17,13 +17,13 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.OnScrollListener;
 
-import org.chromium.chrome.browser.content_creation.internal.R;
-import org.chromium.components.content_creation.notes.models.NoteTemplate;
-import org.chromium.ui.modelutil.LayoutViewBuilder;
-import org.chromium.ui.modelutil.MVCListAdapter.ModelList;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.SimpleRecyclerViewAdapter;
+import org.monyhar.chrome.browser.content_creation.internal.R;
+import org.monyhar.components.content_creation.notes.models.NoteTemplate;
+import org.monyhar.ui.modelutil.LayoutViewBuilder;
+import org.monyhar.ui.modelutil.MVCListAdapter.ModelList;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.SimpleRecyclerViewAdapter;
 
 /**
  * Dialog for the note creation.

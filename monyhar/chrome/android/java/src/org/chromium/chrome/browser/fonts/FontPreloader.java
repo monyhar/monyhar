@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.fonts;
+package org.monyhar.chrome.browser.fonts;
 
 import android.content.Context;
 import android.graphics.Typeface;
@@ -12,9 +12,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 import androidx.core.content.res.ResourcesCompat;
 
-import org.chromium.base.ThreadUtils.ThreadChecker;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.R;
+import org.monyhar.base.ThreadUtils.ThreadChecker;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.R;
 
 /**
  * Class to load downloadable fonts async. It should be used by calling {@link FontPreloader#load)

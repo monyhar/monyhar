@@ -44,12 +44,12 @@ TEST_F(WKSecurityOriginUtilTest, GURLOriginWithNilWKSecurityOrigin) {
 TEST_F(WKSecurityOriginUtilTest, GURLOriginWithValidWKSecurityOrigin) {
   WKSecurityOriginStub* origin = [[WKSecurityOriginStub alloc] init];
   [origin setProtocol:@"http"];
-  [origin setHost:@"chromium.org"];
+  [origin setHost:@"monyhar.org"];
   [origin setPort:80];
 
   GURL url(
       GURLOriginWithWKSecurityOrigin(static_cast<WKSecurityOrigin*>(origin)));
-  EXPECT_EQ("http://chromium.org/", url.spec());
+  EXPECT_EQ("http://monyhar.org/", url.spec());
   EXPECT_TRUE(url.port().empty());
 }
 
@@ -57,12 +57,12 @@ TEST_F(WKSecurityOriginUtilTest, GURLOriginWithValidWKSecurityOrigin) {
 TEST_F(WKSecurityOriginUtilTest, GURLOriginWithDefaultPort) {
   WKSecurityOriginStub* origin = [[WKSecurityOriginStub alloc] init];
   [origin setProtocol:@"http"];
-  [origin setHost:@"chromium.org"];
+  [origin setHost:@"monyhar.org"];
   [origin setPort:0];
 
   GURL url(
       GURLOriginWithWKSecurityOrigin(static_cast<WKSecurityOrigin*>(origin)));
-  EXPECT_EQ("http://chromium.org/", url.spec());
+  EXPECT_EQ("http://monyhar.org/", url.spec());
   EXPECT_TRUE(url.port().empty());
 }
 
@@ -70,12 +70,12 @@ TEST_F(WKSecurityOriginUtilTest, GURLOriginWithDefaultPort) {
 TEST_F(WKSecurityOriginUtilTest, GURLOriginWithNonDefaultPort) {
   WKSecurityOriginStub* origin = [[WKSecurityOriginStub alloc] init];
   [origin setProtocol:@"http"];
-  [origin setHost:@"chromium.org"];
+  [origin setHost:@"monyhar.org"];
   [origin setPort:123];
 
   GURL url(
       GURLOriginWithWKSecurityOrigin(static_cast<WKSecurityOrigin*>(origin)));
-  EXPECT_EQ("http://chromium.org:123/", url.spec());
+  EXPECT_EQ("http://monyhar.org:123/", url.spec());
   EXPECT_EQ("123", url.port());
 }
 

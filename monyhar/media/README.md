@@ -2,7 +2,7 @@
 
 Welcome to Chromium Media! This directory primarily contains a collection of
 components related to media capture and playback.  Feel free to reach out to the
-media-dev@chromium.org mailing list with questions.
+media-dev@monyhar.org mailing list with questions.
 
 As a top level component this may be depended on by almost every other Chromium
 component except base/. Certain components may not work properly in sandboxed

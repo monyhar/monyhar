@@ -40,7 +40,7 @@ const char kCastStreamingMessagePortOrigin[] = "cast-streaming:receiver";
 const char kCastStreamingMessagePortName[] = "cast.__platform__.cast_transport";
 
 bool IsAppConfigForCastStreaming(
-    const chromium::cast::ApplicationConfig& application_config) {
+    const monyhar::cast::ApplicationConfig& application_config) {
   return application_config.web_url() == kCastStreamingAppUrl;
 }
 

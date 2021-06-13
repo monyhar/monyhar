@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.app.video_tutorials;
+package org.monyhar.chrome.browser.app.video_tutorials;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,23 +10,23 @@ import android.view.ViewStub;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.feature_engagement.TrackerFactory;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcher;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcherConfig;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcherFactory;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.video_tutorials.FeatureType;
-import org.chromium.chrome.browser.video_tutorials.Tutorial;
-import org.chromium.chrome.browser.video_tutorials.VideoTutorialService;
-import org.chromium.chrome.browser.video_tutorials.VideoTutorialServiceFactory;
-import org.chromium.chrome.browser.video_tutorials.iph.VideoIPHCoordinator;
-import org.chromium.chrome.browser.video_tutorials.iph.VideoTutorialIPHUtils;
-import org.chromium.chrome.browser.video_tutorials.metrics.VideoTutorialMetrics;
-import org.chromium.chrome.browser.video_tutorials.metrics.VideoTutorialMetrics.UserAction;
-import org.chromium.components.browser_ui.util.GlobalDiscardableReferencePool;
-import org.chromium.components.feature_engagement.Tracker;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.feature_engagement.TrackerFactory;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcher;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcherConfig;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcherFactory;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.video_tutorials.FeatureType;
+import org.monyhar.chrome.browser.video_tutorials.Tutorial;
+import org.monyhar.chrome.browser.video_tutorials.VideoTutorialService;
+import org.monyhar.chrome.browser.video_tutorials.VideoTutorialServiceFactory;
+import org.monyhar.chrome.browser.video_tutorials.iph.VideoIPHCoordinator;
+import org.monyhar.chrome.browser.video_tutorials.iph.VideoTutorialIPHUtils;
+import org.monyhar.chrome.browser.video_tutorials.metrics.VideoTutorialMetrics;
+import org.monyhar.chrome.browser.video_tutorials.metrics.VideoTutorialMetrics.UserAction;
+import org.monyhar.components.browser_ui.util.GlobalDiscardableReferencePool;
+import org.monyhar.components.feature_engagement.Tracker;
 
 import java.util.ArrayList;
 import java.util.List;

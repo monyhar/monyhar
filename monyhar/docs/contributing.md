@@ -10,9 +10,9 @@ subrepository, has its own [development workflow][cros-dev-guide].
 
 ## Related resources
 
-- [Life of a Chromium Developer][life-of-a-chromium-developer], which is mostly
+- [Life of a Chromium Developer][life-of-a-monyhar-developer], which is mostly
   up-to-date.
-- [Tutorial][noms-tutorial] by committer emeritus noms@chromium.org.
+- [Tutorial][noms-tutorial] by committer emeritus noms@monyhar.org.
 - [Commit Checklist][commit-checklist], a useful checklist to go through before
   submitting each CL on Gerrit.
 
@@ -44,7 +44,7 @@ design docs in the following cases:
   historical reasons (>1 person-month of work can be used as a general guideline).
 
 Send public design docs to
-[chromium-design-docs@chromium.org][chromium-design-docs]. Google internal Chrome
+[monyhar-design-docs@monyhar.org][monyhar-design-docs]. Google internal Chrome
 design docs should follow the process at
 [go/chrome-dd-review-process][chrome-dd-review-process].
 
@@ -64,11 +64,11 @@ part of your first patch and not as a separate standalone patch.
 
 ### External contributor checklist for reviewers
 
-Before LGTMing a change from a non-chromium.org address, ensure that the
+Before LGTMing a change from a non-monyhar.org address, ensure that the
 contribution can be accepted:
 
 - Definition: The "author" is the email address that owns the code review
-  request on <https://chromium-review.googlesource.com>
+  request on <https://monyhar-review.googlesource.com>
 - Ensure the author is already listed in [AUTHORS][cr-authors]. In some cases, the
   author's company might have a wildcard rule (e.g. \*@google.com).
 - If the author or their company is not listed, the CL should include a new
@@ -82,12 +82,12 @@ contribution can be accepted:
 
 ## Initial git setup
 
-1. Visit <https://chromium-review.googlesource.com/new-password> and follow the
+1. Visit <https://monyhar-review.googlesource.com/new-password> and follow the
    on-screen instructions to get credentials for uploading changes.
 2. Tell git about your name, email and some other settings.
    ```
    git config --global user.name "My Name"
-   git config --global user.email "myemail@chromium.org"
+   git config --global user.email "myemail@monyhar.org"
    git config --global core.autocrlf false
    git config --global core.filemode false
    git config --local gerrit.host true
@@ -96,7 +96,7 @@ contribution can be accepted:
    # Uncomment if you want new branches to track the current branch.
    # git config --global branch.autosetupmerge always
    ```
-3. Visit <https://chromium-review.googlesource.com/settings/> to ensure that
+3. Visit <https://monyhar-review.googlesource.com/settings/> to ensure that
    your preferred email is set to the same one you use in your git
    configuration.
 
@@ -133,7 +133,7 @@ Note: go through the [commit checklist][commit-checklist] for Chromium before
 uploading a change for review.
 
 Chromium uses a Gerrit instance hosted at
-<https://chromium-review.googlesource.com> for code reviews. In order to upload
+<https://monyhar-review.googlesource.com> for code reviews. In order to upload
 your local change to Gerrit, use `git-cl` from
 [depot\_tools][depot-tools-setup] to create a new Gerrit change, based on the
 diff between the current branch and its upstream branch:
@@ -169,7 +169,7 @@ has more in-depth tips for writing a good commit description.
 
 - Links to previous CLs should be formatted as `https://crrev.com/c/NUMBER`,
   which forwards to [Gitiles][cr-gitiles], rather than linking to the review at
-  <https://chromium-review.googlesource.com>.
+  <https://monyhar-review.googlesource.com>.
 
 - If there are instructions for testers to verify the change is correct,
   include them with the `Test:` tag:
@@ -187,7 +187,7 @@ like this:
 remote: SUCCESS
 remote:
 remote: New Changes:
-remote:   https://chromium-review.googlesource.com/c/chromium/src/+/1485699 Use base::TimeDelta::FromTimeSpec helper in more places. [WIP]
+remote:   https://monyhar-review.googlesource.com/c/monyhar/src/+/1485699 Use base::TimeDelta::FromTimeSpec helper in more places. [WIP]
 ```
 
 Additional flags can be used to specify reviewers, bugs fixed by the change, et
@@ -234,7 +234,7 @@ please make it explicit that you would like both reviewers to review.
 
 Open the change on [the web][crrev]. If you can't find the link, running `git
 cl issue` will display the review URL for the current branch. Alternatively,
-visit <https://chromium-review.googlesource.com> and look in the "Outgoing
+visit <https://monyhar-review.googlesource.com> and look in the "Outgoing
 Reviews" section.
 
 Reviewers expect to review code that compiles and passes tests. If you have
@@ -282,7 +282,7 @@ unless the person setting the label has [try job access][try-job-access].
 
 If you don't have try job access and:
 
-- you have an @chromium.org email address, request access for yourself.
+- you have an @monyhar.org email address, request access for yourself.
 - you have contributed a few patches, ask a reviewer to nominate you for access.
 - neither of the above is true, request that a reviewer run try jobs for you in
   the code review request message.
@@ -401,8 +401,8 @@ formats.
   * A bug reference
     * can be a bare number, e.g. `Bug: 123456`, or
     * can specify a project and a number, e.g. `Bug: skia:1234`.
-  * On chromium-review, the default project is assumed to be `chromium`,
-    so all bugs in non-chromium projects on bugs.chromium.org should be
+  * On monyhar-review, the default project is assumed to be `monyhar`,
+    so all bugs in non-monyhar projects on bugs.monyhar.org should be
     qualified by their project name.
   * The Google-internal issue tracker is accessible by using the `b:`
     project prefix.
@@ -421,7 +421,7 @@ formats.
   * A comma-separated list of trybots which should be triggered and
     checked by the CQ in addition to the normal set.
   * Trybots are indicated in `master:builder` format (e.g.
-    `tryserver.chromium.linux:linux_asan_experimental`).
+    `tryserver.monyhar.linux:linux_asan_experimental`).
 * **No-Presubmit:**
   * If present, the value should always be the string `true`.
   * Indicates to the CQ that it should not run presubmit checks on the CL.
@@ -465,34 +465,34 @@ formats.
     given commit diverged from main.
 
 [//]: # (the reference link section should be alphabetically sorted)
-[checkout-and-build]: https://chromium.googlesource.com/chromium/src/+/main/docs/#checking-out-and-building
+[checkout-and-build]: https://monyhar.googlesource.com/monyhar/src/+/main/docs/#checking-out-and-building
 [chrome-dd-review-process]: http://go/chrome-dd-review-process
-[chromium-design-docs]: https://groups.google.com/a/chromium.org/forum/#!forum/chromium-design-docs
+[monyhar-design-docs]: https://groups.google.com/a/monyhar.org/forum/#!forum/monyhar-design-docs
 [code-reviews-owners]: code_reviews.md#OWNERS-files
 [code-reviews]: code_reviews.md
 [commit-checklist]: commit_checklist.md
 [commit-queue]: infra/cq.md
-[core-principles]: https://www.chromium.org/developers/core-principles
+[core-principles]: https://www.monyhar.org/developers/core-principles
 [corporate-cla]: https://cla.developers.google.com/about/google-corporate?csw=1
-[cr-authors]: https://chromium.googlesource.com/chromium/src/+/HEAD/AUTHORS
-[cr-gitiles]: https://chromium.googlesource.com/chromium/src/+/main/
-[cr-styleguide]: https://chromium.googlesource.com/chromium/src/+/main/styleguide/styleguide.md
-[crbug-new]: https://bugs.chromium.org/p/chromium/issues/entry
-[crbug]: https://bugs.chromium.org/p/chromium/issues/list
-[cros-authors]: https://chromium.googlesource.com/chromium/src/+/main/AUTHORS
-[cros-dev-guide]: https://chromium.googlesource.com/chromiumos/docs/+/main/developer_guide.md
-[crrev]: https://chromium-review.googlesource.com
+[cr-authors]: https://monyhar.googlesource.com/monyhar/src/+/HEAD/AUTHORS
+[cr-gitiles]: https://monyhar.googlesource.com/monyhar/src/+/main/
+[cr-styleguide]: https://monyhar.googlesource.com/monyhar/src/+/main/styleguide/styleguide.md
+[crbug-new]: https://bugs.monyhar.org/p/monyhar/issues/entry
+[crbug]: https://bugs.monyhar.org/p/monyhar/issues/list
+[cros-authors]: https://monyhar.googlesource.com/monyhar/src/+/main/AUTHORS
+[cros-dev-guide]: https://monyhar.googlesource.com/monyharos/docs/+/main/developer_guide.md
+[crrev]: https://monyhar-review.googlesource.com
 [depot-tools-setup]: https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html#_setting_up
 [design-doc-template]: https://docs.google.com/document/d/14YBYKgk-uSfjfwpKFlp_omgUq5hwMVazy_M965s_1KA
-[direct-commit]: https://dev.chromium.org/developers/contributing-code/direct-commit
-[discussion-groups]: https://www.chromium.org/developers/discussion-groups
+[direct-commit]: https://dev.monyhar.org/developers/contributing-code/direct-commit
+[discussion-groups]: https://www.monyhar.org/developers/discussion-groups
 [github-tutorial]: https://try.github.io
 [good-git-commit-message]: https://chris.beams.io/posts/git-commit/
 [individual-cla]: https://cla.developers.google.com/about/google-individual?csw=1
-[life-of-a-chromium-developer]: https://docs.google.com/a/google.com/present/view?id=0AetfwCoL2lQAZGQ5bXJ0NDVfMGRtdGQ0OWM2
-[noms-tutorial]: https://meowni.ca/posts/chromium-101
-[review-lag]: https://dev.chromium.org/developers/contributing-code/minimizing-review-lag-across-time-zones
+[life-of-a-monyhar-developer]: https://docs.google.com/a/google.com/present/view?id=0AetfwCoL2lQAZGQ5bXJ0NDVfMGRtdGQ0OWM2
+[noms-tutorial]: https://meowni.ca/posts/monyhar-101
+[review-lag]: https://dev.monyhar.org/developers/contributing-code/minimizing-review-lag-across-time-zones
 [skia-dev-guide]: https://skia.org/dev/contrib
-[try-job-access]: https://www.chromium.org/getting-involved/become-a-committer#TOC-Try-job-access
+[try-job-access]: https://www.monyhar.org/getting-involved/become-a-committer#TOC-Try-job-access
 [v8-dev-guide]: https://v8.dev/docs
 [watchlist-doc]: infra/watchlists.md

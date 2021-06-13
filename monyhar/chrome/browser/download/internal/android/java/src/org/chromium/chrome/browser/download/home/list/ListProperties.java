@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.home.list;
+package org.monyhar.chrome.browser.download.home.list;
 
 import android.graphics.Bitmap;
 import android.util.Pair;
 
-import org.chromium.base.Callback;
-import org.chromium.components.offline_items_collection.OfflineItem;
-import org.chromium.components.offline_items_collection.OfflineItemVisuals;
-import org.chromium.components.offline_items_collection.VisualsCallback;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel.WritableBooleanPropertyKey;
-import org.chromium.ui.modelutil.PropertyModel.WritableObjectPropertyKey;
+import org.monyhar.base.Callback;
+import org.monyhar.components.offline_items_collection.OfflineItem;
+import org.monyhar.components.offline_items_collection.OfflineItemVisuals;
+import org.monyhar.components.offline_items_collection.VisualsCallback;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel.WritableBooleanPropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel.WritableObjectPropertyKey;
 
 import java.util.Date;
 

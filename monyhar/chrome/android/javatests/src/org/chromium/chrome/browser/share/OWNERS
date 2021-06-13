@@ -1,4 +1,4 @@
-file://chrome/android/java/src/org/chromium/chrome/browser/share/OWNERS
+file://chrome/android/java/src/org/monyhar/chrome/browser/share/OWNERS
 
 per-file ChromeProvidedSharingOptionsProviderTest.java=file://components/send_tab_to_self/OWNERS
 per-file ShareButton*=file://components/send_tab_to_self/OWNERS

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill.prefeditor;
+package org.monyhar.chrome.browser.autofill.prefeditor;
 
 /** The interface for editor fields that handle validation, display errors, and can be updated. */
 interface EditorFieldView {

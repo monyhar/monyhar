@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.firstrun;
+package org.monyhar.chrome.browser.firstrun;
 
 import android.os.SystemClock;
 import android.text.TextUtils;
@@ -10,14 +10,14 @@ import android.text.TextUtils;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.CallbackController;
-import org.chromium.base.Log;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.supplier.OneshotSupplier;
-import org.chromium.base.supplier.OneshotSupplierImpl;
-import org.chromium.chrome.browser.enterprise.util.EnterpriseInfo;
-import org.chromium.components.policy.PolicyService;
+import org.monyhar.base.Callback;
+import org.monyhar.base.CallbackController;
+import org.monyhar.base.Log;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.supplier.OneshotSupplier;
+import org.monyhar.base.supplier.OneshotSupplierImpl;
+import org.monyhar.chrome.browser.enterprise.util.EnterpriseInfo;
+import org.monyhar.components.policy.PolicyService;
 
 /**
  * Class that listens to signals related to ToSDialogBehavior. Supplies whether ToS dialog should be

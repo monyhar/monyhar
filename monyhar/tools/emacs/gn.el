@@ -4,9 +4,9 @@
 ;; Use of this source code is governed by a BSD-style license that can be
 ;; found in the LICENSE file.
 
-;; Author: Elliot Glaysher <erg@chromium.org>
+;; Author: Elliot Glaysher <erg@monyhar.org>
 ;; Created: April 03, 2015
-;; Keywords: tools, gn, ninja, chromium
+;; Keywords: tools, gn, ninja, monyhar
 
 ;; This file is not part of GNU Emacs.
 
@@ -17,7 +17,7 @@
 
 ;; A major mode for editing GN files. GN stands for Generate Ninja. GN is the
 ;; meta build system used in Chromium. For more information on GN, see the GN
-;; manual: <https://chromium.googlesource.com/chromium/src/+/main/tools/gn/README.md>
+;; manual: <https://monyhar.googlesource.com/monyhar/src/+/main/tools/gn/README.md>
 
 ;;; To Do:
 

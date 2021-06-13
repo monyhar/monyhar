@@ -8,8 +8,8 @@ import("//build/config/android/rules.gni")
 # implementations are compiled separately.
 android_library("google_delegate_java") {
   sources = [
-    "java/src/org/chromium/components/externalauth/ExternalAuthGoogleDelegate.java",
-    "java/src/org/chromium/components/externalauth/ExternalAuthGoogleDelegateImpl.java",
+    "java/src/org/monyhar/components/externalauth/ExternalAuthGoogleDelegate.java",
+    "java/src/org/monyhar/components/externalauth/ExternalAuthGoogleDelegateImpl.java",
   ]
 
   # Add the actual implementation where necessary so that downstream targets
@@ -20,7 +20,7 @@ android_library("google_delegate_java") {
 # This target compiles the implementation of ExternalAuthGoogleDelegate for
 # public targets.
 android_library("google_delegate_public_impl_java") {
-  sources = [ "java/src/org/chromium/components/externalauth/ExternalAuthGoogleDelegateImpl.java" ]
+  sources = [ "java/src/org/monyhar/components/externalauth/ExternalAuthGoogleDelegateImpl.java" ]
   deps = [ ":google_delegate_java" ]
 }
 
@@ -33,13 +33,13 @@ android_library("java") {
     "//components/embedder_support/android:browser_context_java",
     "//components/embedder_support/android:util_java",
     "//content/public/android:content_java",
-    "//third_party/android_deps:chromium_play_services_availability_java",
+    "//third_party/android_deps:monyhar_play_services_availability_java",
     "//third_party/androidx:androidx_annotation_annotation_java",
   ]
   sources = [
-    "java/src/org/chromium/components/externalauth/ExternalAuthUtils.java",
-    "java/src/org/chromium/components/externalauth/UserRecoverableErrorHandler.java",
-    "java/src/org/chromium/components/externalauth/VerifiedHandler.java",
+    "java/src/org/monyhar/components/externalauth/ExternalAuthUtils.java",
+    "java/src/org/monyhar/components/externalauth/UserRecoverableErrorHandler.java",
+    "java/src/org/monyhar/components/externalauth/VerifiedHandler.java",
   ]
 }
 
@@ -60,6 +60,6 @@ android_library("junit") {
   ]
 
   sources = [
-    "junit/src/org/chromium/components/externalauth/ExternalAuthUtilsTest.java",
+    "junit/src/org/monyhar/components/externalauth/ExternalAuthUtilsTest.java",
   ]
 }

@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps;
+package org.monyhar.chrome.browser.webapps;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.Browser;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.chrome.browser.ShortcutHelper;
-import org.chromium.webapk.lib.common.WebApkConstants;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.chrome.browser.ShortcutHelper;
+import org.monyhar.webapk.lib.common.WebApkConstants;
 
 import java.util.HashSet;
 

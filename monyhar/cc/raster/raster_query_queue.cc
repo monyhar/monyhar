@@ -9,7 +9,7 @@
 #include "base/strings/stringprintf.h"
 #include "cc/base/histograms.h"
 #include "components/viz/common/gpu/raster_context_provider.h"
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "gpu/command_buffer/client/raster_interface.h"
 
 namespace cc {

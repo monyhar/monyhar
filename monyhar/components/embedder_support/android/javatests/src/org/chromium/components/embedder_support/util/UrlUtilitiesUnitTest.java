@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.embedder_support.util;
+package org.monyhar.components.embedder_support.util;
 
 import androidx.test.filters.SmallTest;
 
@@ -11,10 +11,10 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Batch;
-import org.chromium.content_public.browser.test.NativeLibraryTestUtils;
-import org.chromium.url.GURL;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.content_public.browser.test.NativeLibraryTestUtils;
+import org.monyhar.url.GURL;
 
 /**
  * Unit tests for {@link UrlUtilities}.
@@ -74,17 +74,17 @@ public class UrlUtilitiesUnitTest {
     @SmallTest
     public void testStripScheme() {
         // Only scheme gets stripped.
-        Assert.assertEquals("cs.chromium.org", UrlUtilities.stripScheme("https://cs.chromium.org"));
-        Assert.assertEquals("cs.chromium.org", UrlUtilities.stripScheme("http://cs.chromium.org"));
+        Assert.assertEquals("cs.monyhar.org", UrlUtilities.stripScheme("https://cs.monyhar.org"));
+        Assert.assertEquals("cs.monyhar.org", UrlUtilities.stripScheme("http://cs.monyhar.org"));
         // If there is no scheme, nothing changes.
-        Assert.assertEquals("cs.chromium.org", UrlUtilities.stripScheme("cs.chromium.org"));
+        Assert.assertEquals("cs.monyhar.org", UrlUtilities.stripScheme("cs.monyhar.org"));
         // Path is not touched/changed.
-        String urlWithPath = "code.google.com/p/chromium/codesearch#search"
-                + "/&q=testStripScheme&sq=package:chromium&type=cs";
+        String urlWithPath = "code.google.com/p/monyhar/codesearch#search"
+                + "/&q=testStripScheme&sq=package:monyhar&type=cs";
         Assert.assertEquals(urlWithPath, UrlUtilities.stripScheme("https://" + urlWithPath));
         // Beginning and ending spaces get trimmed.
         Assert.assertEquals(
-                "cs.chromium.org", UrlUtilities.stripScheme("  https://cs.chromium.org  "));
+                "cs.monyhar.org", UrlUtilities.stripScheme("  https://cs.monyhar.org  "));
     }
 
     @Test

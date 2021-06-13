@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill.settings;
+package org.monyhar.chrome.browser.autofill.settings;
 
 import android.content.Context;
 import android.view.View;
@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 
-import org.chromium.chrome.R;
+import org.monyhar.chrome.R;
 
 /** Preference with fixed icon size for Android payment apps. */
 public class AndroidPaymentAppPreference extends Preference {

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sms;
+package org.monyhar.chrome.browser.sms;
 
 import android.widget.EditText;
 import android.widget.FrameLayout;
@@ -16,25 +16,25 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.infobar.InfoBarContainer;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.batch.BlankCTATabInitialStateRule;
-import org.chromium.chrome.test.util.InfoBarUtil;
-import org.chromium.components.browser_ui.sms.WebOTPServiceInfoBar;
-import org.chromium.components.browser_ui.sms.WebOTPServiceUma;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.ui.KeyboardVisibilityDelegate;
-import org.chromium.ui.UiUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.infobar.InfoBarContainer;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.batch.BlankCTATabInitialStateRule;
+import org.monyhar.chrome.test.util.InfoBarUtil;
+import org.monyhar.components.browser_ui.sms.WebOTPServiceInfoBar;
+import org.monyhar.components.browser_ui.sms.WebOTPServiceUma;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.ui.KeyboardVisibilityDelegate;
+import org.monyhar.ui.UiUtils;
 
 /**
  * Tests for the WebOTPServiceInfoBar class.

@@ -1644,7 +1644,7 @@ BrowserAccessibility* BrowserAccessibilityManager::CachingAsyncHitTest(
     // Transform from screen to viewport to frame coordinates to pass to Blink.
     // Note that page scale (pinch zoom) is independent of device scale factor
     // (display DPI). Only the latter is affected by UseZoomForDSF.
-    // http://www.chromium.org/developers/design-documents/blink-coordinate-spaces
+    // http://www.monyhar.org/developers/design-documents/blink-coordinate-spaces
     gfx::Point viewport_point =
         blink_screen_point - screen_view_bounds.OffsetFromOrigin();
     gfx::Point frame_point =

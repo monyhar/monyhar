@@ -40,7 +40,7 @@ class OriginAccessListTest : public testing::Test {
             url::Origin::Create(GURL("https://sub.example.com"))),
         http_example_origin_(url::Origin::Create(GURL("http://example.com"))),
         https_google_origin_(url::Origin::Create(GURL("https://google.com"))),
-        source_origin_(url::Origin::Create(GURL("https://chromium.org"))) {}
+        source_origin_(url::Origin::Create(GURL("https://monyhar.org"))) {}
 
   ~OriginAccessListTest() override = default;
 

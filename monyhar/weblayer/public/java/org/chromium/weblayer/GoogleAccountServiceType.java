@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer;
+package org.monyhar.weblayer;
 
 import androidx.annotation.IntDef;
 
@@ -19,15 +19,15 @@ public @interface GoogleAccountServiceType {
     /**
      * Logout all existing sessions.
      */
-    int SIGNOUT = org.chromium.weblayer_private.interfaces.GoogleAccountServiceType.SIGNOUT;
+    int SIGNOUT = org.monyhar.weblayer_private.interfaces.GoogleAccountServiceType.SIGNOUT;
 
     /**
      * Add or re-authenticate an account.
      */
-    int ADD_SESSION = org.chromium.weblayer_private.interfaces.GoogleAccountServiceType.ADD_SESSION;
+    int ADD_SESSION = org.monyhar.weblayer_private.interfaces.GoogleAccountServiceType.ADD_SESSION;
 
     /**
      * All other cases.
      */
-    int DEFAULT = org.chromium.weblayer_private.interfaces.GoogleAccountServiceType.DEFAULT;
+    int DEFAULT = org.monyhar.weblayer_private.interfaces.GoogleAccountServiceType.DEFAULT;
 }

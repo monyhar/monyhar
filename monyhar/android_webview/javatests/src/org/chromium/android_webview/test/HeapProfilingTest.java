@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
-import static org.chromium.android_webview.test.OnlyRunIn.ProcessMode.MULTI_PROCESS;
+import static org.monyhar.android_webview.test.OnlyRunIn.ProcessMode.MULTI_PROCESS;
 
 import androidx.test.filters.MediumTest;
 
@@ -14,9 +14,9 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.components.heap_profiling.multi_process.HeapProfilingTestShim;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.components.heap_profiling.multi_process.HeapProfilingTestShim;
 
 /**
  * Tests suite for heap profiling.

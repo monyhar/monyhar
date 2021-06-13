@@ -4,8 +4,8 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
-# Script to install everything needed to build chromium (well, ideally, anyway)
-# See https://chromium.googlesource.com/chromium/src/+/main/docs/linux/build_instructions.md
+# Script to install everything needed to build monyhar (well, ideally, anyway)
+# See https://monyhar.googlesource.com/monyhar/src/+/main/docs/linux/build_instructions.md
 
 usage() {
   echo "Usage: $0 [--options]"

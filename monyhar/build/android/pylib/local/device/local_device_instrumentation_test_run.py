@@ -84,21 +84,21 @@ FIXED_TEST_TIMEOUT_OVERHEAD = 60
 # so this needs to be less than that.
 MAX_BATCH_TEST_TIMEOUT = 30 * 60
 
-LOGCAT_FILTERS = ['*:e', 'chromium:v', 'cr_*:v', 'DEBUG:I',
+LOGCAT_FILTERS = ['*:e', 'monyhar:v', 'cr_*:v', 'DEBUG:I',
                   'StrictMode:D', '%s:I' % _TAG]
 
 EXTRA_SCREENSHOT_FILE = (
-    'org.chromium.base.test.ScreenshotOnFailureStatement.ScreenshotFile')
+    'org.monyhar.base.test.ScreenshotOnFailureStatement.ScreenshotFile')
 
 EXTRA_UI_CAPTURE_DIR = (
-    'org.chromium.base.test.util.Screenshooter.ScreenshotDir')
+    'org.monyhar.base.test.util.Screenshooter.ScreenshotDir')
 
-EXTRA_TRACE_FILE = ('org.chromium.base.test.BaseJUnit4ClassRunner.TraceFile')
+EXTRA_TRACE_FILE = ('org.monyhar.base.test.BaseJUnit4ClassRunner.TraceFile')
 
 _EXTRA_TEST_LIST = (
-    'org.chromium.base.test.BaseChromiumAndroidJUnitRunner.TestList')
+    'org.monyhar.base.test.BaseChromiumAndroidJUnitRunner.TestList')
 
-_EXTRA_PACKAGE_UNDER_TEST = ('org.chromium.chrome.test.pagecontroller.rules.'
+_EXTRA_PACKAGE_UNDER_TEST = ('org.monyhar.chrome.test.pagecontroller.rules.'
                              'ChromeUiApplicationTestRule.PackageUnderTest')
 
 FEATURE_ANNOTATION = 'Feature'
@@ -351,7 +351,7 @@ class LocalDeviceInstrumentationTestRun(
       @instrumentation_tracing.no_tracing
       def push_test_data(dev):
         device_root = posixpath.join(dev.GetExternalStoragePath(),
-                                     'chromium_tests_root')
+                                     'monyhar_tests_root')
         host_device_tuples_substituted = [
             (h, local_device_test_run.SubstituteDeviceRoot(d, device_root))
             for h, d in host_device_tuples]
@@ -1373,7 +1373,7 @@ def _FailTestIfNecessary(results, full_test_name):
   Args:
     results: A list of base_test_result.BaseTestResult objects.
     full_test_name: A string containing the full name of the test, e.g.
-        org.chromium.chrome.SomeTestClass#someTestMethod.
+        org.monyhar.chrome.SomeTestClass#someTestMethod.
   """
   found_matching_test = _MatchingTestInResults(results, full_test_name)
   if not found_matching_test and _ShouldReportNoMatchingResult(full_test_name):
@@ -1396,7 +1396,7 @@ def _AppendToLog(results, full_test_name, line):
   Args:
     results: A list of base_test_result.BaseTestResult objects.
     full_test_name: A string containing the full name of the test, e.g.
-        org.chromium.chrome.SomeTestClass#someTestMethod.
+        org.monyhar.chrome.SomeTestClass#someTestMethod.
     line: A string to be appended as a neww line to the log of |result|.
   """
   found_matching_test = _MatchingTestInResults(results, full_test_name)
@@ -1416,7 +1416,7 @@ def _SetLinkOnResults(results, full_test_name, link_name, link):
   Args:
     results: A list of base_test_result.BaseTestResult objects.
     full_test_name: A string containing the full name of the test, e.g.
-        org.chromium.chrome.SomeTestClass#someTestMethod.
+        org.monyhar.chrome.SomeTestClass#someTestMethod.
     link_name: A string containing the name of the link being set.
     link: A string containing the lkink being set.
   """
@@ -1437,7 +1437,7 @@ def _MatchingTestInResults(results, full_test_name):
   Args:
     results: A list of base_test_result.BaseTestResult objects.
     full_test_name: A string containing the full name of the test, e.g.
-        org.chromium.chrome.Some
+        org.monyhar.chrome.Some
 
   Returns:
     True if one of the results in |results| has the same name as
@@ -1451,7 +1451,7 @@ def _ShouldReportNoMatchingResult(full_test_name):
 
   Args:
     full_test_name: A string containing the full name of the test, e.g.
-        org.chromium.chrome.Some
+        org.monyhar.chrome.Some
 
   Returns:
     False if the failure to find a matching result is expected and should not

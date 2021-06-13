@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feedback;
+package org.monyhar.chrome.browser.feedback;
 
 import android.os.SystemClock;
 
@@ -10,13 +10,13 @@ import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.net.ConnectionType;
-import org.chromium.net.NetworkChangeNotifier;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.net.ConnectionType;
+import org.monyhar.net.NetworkChangeNotifier;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

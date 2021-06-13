@@ -7,17 +7,17 @@ links: {
   name: "Builds"
   links: {
     text: "continuous"
-    url: "https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html"
+    url: "https://commondatastorage.googleapis.com/monyhar-browser-snapshots/index.html"
     alt: "Continuous browser snapshots"
   }
   links: {
     text: "symbols"
-    url: "https://www.chromium.org/developers/how-tos/debugging-on-windows"
+    url: "https://www.monyhar.org/developers/how-tos/debugging-on-windows"
     alt: "Windows Symbols"
   }
   links: {
     text: "status"
-    url: "https://chromium-status.appspot.com/"
+    url: "https://monyhar-status.appspot.com/"
     alt: "Current tree status"
   }
 }
@@ -31,7 +31,7 @@ links: {
   }
   links {
     text: "flake-portal"
-    url: "https://analysis.chromium.org/p/chromium/flake-portal"
+    url: "https://analysis.monyhar.org/p/monyhar/flake-portal"
     alt: "New flake portal"
   }
   links {
@@ -45,12 +45,12 @@ links: {
   name: "Chromium"
   links: {
     text: "source"
-    url: "https://chromium.googlesource.com/chromium/src"
+    url: "https://monyhar.googlesource.com/monyhar/src"
     alt: "Chromium source code repository"
   }
   links: {
     text: "reviews"
-    url: "https://chromium-review.googlesource.com"
+    url: "https://monyhar-review.googlesource.com"
     alt: "Chromium code review tool"
   }
   links: {
@@ -60,7 +60,7 @@ links: {
   }
   links: {
     text: "dev"
-    url: "https://dev.chromium.org/Home"
+    url: "https://dev.monyhar.org/Home"
     alt: "Chromium developer home page"
   }
   links: {
@@ -74,12 +74,12 @@ links: {
   name: "Consoles"
   links: {
     text: "swarm dev"
-    url: "/p/chromium/g/chromium.dev"
+    url: "/p/monyhar/g/monyhar.dev"
     alt: "Chromium Swarm Dev console"
   }
   links: {
     text: "prod"
-    url: "https://luci-milo.appspot.com/p/chromium/g/main/console"
+    url: "https://luci-milo.appspot.com/p/monyhar/g/main/console"
     alt: "Main luci-milo console"
   }
 }
@@ -88,14 +88,14 @@ links: {
   name: "Navigate"
   links: {
     text: "about"
-    url: "http://dev.chromium.org/developers/testing/chromium-build-infrastructure/tour-of-the-chromium-buildbot"
+    url: "http://dev.monyhar.org/developers/testing/monyhar-build-infrastructure/tour-of-the-monyhar-buildbot"
     alt: "Tour of the console"
   }
   links: {
     text: "customize"
-    url: "https://chromium.googlesource.com/chromium/src/+/master/infra/config/luci-milo-dev.cfg"
+    url: "https://monyhar.googlesource.com/monyhar/src/+/master/infra/config/luci-milo-dev.cfg"
       alt: "Customize this console"
   }
 }
 
-tree_status_host: "chromium-status.appspot.com"
+tree_status_host: "monyhar-status.appspot.com"

@@ -975,9 +975,9 @@ TEST(ArcExternalProtocolDialogTest, TestIsChromeAnAppCandidate) {
 TEST(ArcExternalProtocolDialogTest,
      TestGetActionWithArcImeSettingsActivityBypassesIntentPicker) {
   constexpr char kPackageForOpeningArcImeSettingsPage[] =
-      "org.chromium.arc.applauncher";
+      "org.monyhar.arc.applauncher";
   constexpr char kActivityForOpeningArcImeSettingsPage[] =
-      "org.chromium.arc.applauncher.InputMethodSettingsActivity";
+      "org.monyhar.arc.applauncher.InputMethodSettingsActivity";
 
   std::vector<mojom::IntentHandlerInfoPtr> handlers;
   handlers.push_back(Create("ARC IME settings",

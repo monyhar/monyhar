@@ -1,6 +1,6 @@
 Name: Crashpad
 Short Name: crashpad
-URL: https://crashpad.chromium.org/
+URL: https://crashpad.monyhar.org/
 Version: unknown
 Revision: a6494f9df645b360b13b76fa2df32e38f0c6f8ac
 License: Apache 2.0
@@ -11,7 +11,7 @@ Description:
 Crashpad is a crash-reporting system. It’s the successor to Breakpad.
 
 Crashpad’s authoritative upstream repository is
-https://chromium.googlesource.com/crashpad/crashpad.
+https://monyhar.googlesource.com/crashpad/crashpad.
 
 Because Crashpad depends on some Chromium code (notably base and build), it is
 acceptable to make changes to this in-Chromium copy of Crashpad in order to
@@ -30,7 +30,7 @@ To carry changes made in Chromium to Crashpad, run:
 $ cd "${THIS_DIR}"
 $ mkdir /tmp/patchdir
 $ git format-patch -1 --binary --output-directory=/tmp/patchdir/cur "${HASH}" \
-      --add-header="Message-Id: Merged from chromium ${HASH}" -- crashpad/
+      --add-header="Message-Id: Merged from monyhar ${HASH}" -- crashpad/
 $ cd "${CRASHPAD_DIR}"
 $ git am --3way --message-id -p4 /tmp/patchdir
 

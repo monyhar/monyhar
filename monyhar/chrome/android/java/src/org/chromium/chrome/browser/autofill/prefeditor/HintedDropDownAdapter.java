@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill.prefeditor;
+package org.monyhar.chrome.browser.autofill.prefeditor;
 
 import android.content.Context;
 import android.view.View;
@@ -11,8 +11,8 @@ import android.widget.TextView;
 
 import androidx.core.view.ViewCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.R;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.R;
 
 import java.util.List;
 

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.policy;
+package org.monyhar.chrome.browser.policy;
 
 import androidx.test.filters.SmallTest;
 
@@ -12,15 +12,15 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.tabmodel.TabModel;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.components.policy.CombinedPolicyProvider;
-import org.chromium.components.policy.PolicyProvider;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.tabmodel.TabModel;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.components.policy.CombinedPolicyProvider;
+import org.monyhar.components.policy.PolicyProvider;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /** Instrumentation tests for {@link CombinedPolicyProvider} */
 @RunWith(ChromeJUnit4ClassRunner.class)

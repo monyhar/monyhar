@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.datareduction.settings;
+package org.monyhar.chrome.browser.datareduction.settings;
 
 import android.content.Context;
 
-import org.chromium.chrome.browser.util.FileSizeUtil;
+import org.monyhar.chrome.browser.util.FileSizeUtil;
 
 /**
  * Stores the data used and saved by a hostname.

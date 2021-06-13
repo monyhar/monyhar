@@ -344,16 +344,16 @@ def GetGypToolchainLib(root, tcname, xarch):
 
 def MakeGypArchives():
   join = os.path.join
-  gyp_chromium = join(SRC_DIR, 'build', 'gyp_chromium')
+  gyp_monyhar = join(SRC_DIR, 'build', 'gyp_monyhar')
   # TODO(binji): gyp_nacl doesn't build properly on Windows anymore; it only
   # can use VS2010, not VS2013 which is now required by the Chromium repo. NaCl
   # needs to be updated to perform the same logic as Chromium in detecting VS,
   # which can now exist in the depot_tools directory.
   # See https://code.google.com/p/nativeclient/issues/detail?id=4022
   #
-  # For now, let's use gyp_chromium to build these components.
+  # For now, let's use gyp_monyhar to build these components.
   # gyp_nacl = join(NACL_DIR, 'build', 'gyp_nacl')
-  gyp_nacl = gyp_chromium
+  gyp_nacl = gyp_monyhar
 
   nacl_core_sdk_gyp = join(NACL_DIR, 'build', 'nacl_core_sdk.gyp')
   all_gyp = join(NACL_DIR, 'build', 'all.gyp')
@@ -366,9 +366,9 @@ def MakeGypArchives():
   tmpdir = tmpdir_obj.name
   GypNinjaBuild('ia32', gyp_nacl, nacl_core_sdk_gyp, 'nacl_core_sdk', tmpdir)
   GypNinjaBuild('ia32', gyp_nacl, all_gyp, 'ncval_new', tmpdir)
-  GypNinjaBuild('ia32', gyp_chromium, breakpad_gyp, breakpad_targets, tmpdir)
-  GypNinjaBuild('ia32', gyp_chromium, ppapi_gyp, 'ppapi_lib', tmpdir)
-  GypNinjaBuild('x64', gyp_chromium, ppapi_gyp, 'ppapi_lib', tmpdir)
+  GypNinjaBuild('ia32', gyp_monyhar, breakpad_gyp, breakpad_targets, tmpdir)
+  GypNinjaBuild('ia32', gyp_monyhar, ppapi_gyp, 'ppapi_lib', tmpdir)
+  GypNinjaBuild('x64', gyp_monyhar, ppapi_gyp, 'ppapi_lib', tmpdir)
 
   tmpdir64_obj = TempDir('nacl_core_sdk_64_', dont_remove=True).Create()
   tmpdir_64 = tmpdir64_obj.name
@@ -380,7 +380,7 @@ def MakeGypArchives():
   tmpdirarm_obj = TempDir('nacl_core_sdk_arm_', dont_remove=True).Create()
   tmpdir_arm = tmpdirarm_obj.name
   GypNinjaBuild('arm', gyp_nacl, nacl_core_sdk_gyp, 'nacl_core_sdk', tmpdir_arm)
-  GypNinjaBuild('arm', gyp_chromium, ppapi_gyp, 'ppapi_lib', tmpdir_arm)
+  GypNinjaBuild('arm', gyp_monyhar, ppapi_gyp, 'ppapi_lib', tmpdir_arm)
 
   # Tools archive
   archive = Archive('tools')
@@ -414,12 +414,12 @@ def MakeGypArchives():
 
 def MakePNaClArchives():
   join = os.path.join
-  gyp_chromium = join(SRC_DIR, 'build', 'gyp_chromium')
+  gyp_monyhar = join(SRC_DIR, 'build', 'gyp_monyhar')
   pnacl_irt_shim_gyp = join(SRC_DIR, 'ppapi', 'native_client', 'src',
                             'untrusted', 'pnacl_irt_shim', 'pnacl_irt_shim.gyp')
 
   with TempDir('pnacl_irt_shim_ia32_') as tmpdir:
-    GypNinjaBuild('ia32', gyp_chromium, pnacl_irt_shim_gyp, 'aot', tmpdir)
+    GypNinjaBuild('ia32', gyp_monyhar, pnacl_irt_shim_gyp, 'aot', tmpdir)
 
     archive = Archive('pnacl_translator_x86_32_libs')
     libdir = join(tmpdir, 'Release', 'gen', 'tc_pnacl_translate', 'lib-x86-32')
@@ -432,7 +432,7 @@ def MakePNaClArchives():
     archive.Tar()
 
   with TempDir('pnacl_irt_shim_arm_') as tmpdir:
-    GypNinjaBuild('arm', gyp_chromium, pnacl_irt_shim_gyp, 'aot', tmpdir)
+    GypNinjaBuild('arm', gyp_monyhar, pnacl_irt_shim_gyp, 'aot', tmpdir)
 
     archive = Archive('pnacl_translator_arm_libs')
     libdir = join(tmpdir, 'Release', 'gen', 'tc_pnacl_translate', 'lib-arm')

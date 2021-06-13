@@ -358,7 +358,7 @@ if (use_cups) {
 
 if (is_android) {
   generate_jni("printing_jni_headers") {
-    sources = [ "android/java/src/org/chromium/printing/PrintingContext.java" ]
+    sources = [ "android/java/src/org/monyhar/printing/PrintingContext.java" ]
   }
 
   android_library("printing_java") {
@@ -368,13 +368,13 @@ if (is_android) {
       "//ui/android:ui_java",
     ]
     sources = [
-      "android/java/src/org/chromium/printing/PrintDocumentAdapterWrapper.java",
-      "android/java/src/org/chromium/printing/PrintManagerDelegate.java",
-      "android/java/src/org/chromium/printing/PrintManagerDelegateImpl.java",
-      "android/java/src/org/chromium/printing/Printable.java",
-      "android/java/src/org/chromium/printing/PrintingContext.java",
-      "android/java/src/org/chromium/printing/PrintingController.java",
-      "android/java/src/org/chromium/printing/PrintingControllerImpl.java",
+      "android/java/src/org/monyhar/printing/PrintDocumentAdapterWrapper.java",
+      "android/java/src/org/monyhar/printing/PrintManagerDelegate.java",
+      "android/java/src/org/monyhar/printing/PrintManagerDelegateImpl.java",
+      "android/java/src/org/monyhar/printing/Printable.java",
+      "android/java/src/org/monyhar/printing/PrintingContext.java",
+      "android/java/src/org/monyhar/printing/PrintingController.java",
+      "android/java/src/org/monyhar/printing/PrintingControllerImpl.java",
     ]
     annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
   }

@@ -22,13 +22,13 @@ UI DevTools is a set of graphical inspection and debugging tools for Chromium
 native UI. They largely resemble the Web DevTools used by Web developers.
 There are two ways to enable the tools:
 * Enable `ui-debug-tools` flag from `chrome://flags`
-* Execute chromium/chrome with `--enable-ui-devtools` command line flag
+* Execute monyhar/chrome with `--enable-ui-devtools` command line flag
 
 Once being enabled, UI DevTools can be launched through a button on
 `chrome://inspect#native-ui` page. Thus, UI developers are able to
 examine the UI structure, individual view's layout and properties etc.
 
-Detailed usage information and feature tutorials can be found in this [doc](https://chromium.googlesource.com/chromium/src/+/main/docs/ui/ui_devtools/index.md).
+Detailed usage information and feature tutorials can be found in this [doc](https://monyhar.googlesource.com/monyhar/src/+/main/docs/ui/ui_devtools/index.md).
 
 
 
@@ -45,8 +45,8 @@ information.
 | Windbg                | [README][]             | [Source][]   |
 | LLDB                  | TBA                    | TBA          |
 
-[README]: https://chromium.googlesource.com/chromium/src/+/main/tools/win/chromeexts/README.md
-[Source]: https://source.chromium.org/chromium/chromium/src/+/main:tools/win/chromeexts/
+[README]: https://monyhar.googlesource.com/monyhar/src/+/main/tools/win/chromeexts/README.md
+[Source]: https://source.monyhar.org/monyhar/monyhar/src/+/main:tools/win/chromeexts/
 
 
 ## Views examples
@@ -65,7 +65,7 @@ $ out/Default/views_examples [--enable-examples=<example1,[example2...]>]
 ```
 
 The list of all available examples can be found in
-[README](https://chromium.googlesource.com/chromium/src/+/main/ui/views/examples/README.md).
+[README](https://monyhar.googlesource.com/monyhar/src/+/main/ui/views/examples/README.md).
 
 
 ## Note
@@ -75,8 +75,8 @@ The list of all available examples can be found in
 To be able to inspect the properties of a view through those tools, the
 corresponding view needs to have metadata and properties built in it. This
 requires adding some standard macros. A simple example can be found from this
-[comment](https://source.chromium.org/chromium/chromium/src/+/main:ui/views/view.h?q=%22Property%20metadata%22&ss=chromium%2Fchromium%2Fsrc).
+[comment](https://source.monyhar.org/monyhar/monyhar/src/+/main:ui/views/view.h?q=%22Property%20metadata%22&ss=monyhar%2Fmonyhar%2Fsrc).
 
 More advanced usages of the macros and special property handlings are elaborated
-in this [doc](https://chromium.googlesource.com/chromium/src/+/main/docs/ui/views/metadata_properties.md).
+in this [doc](https://monyhar.googlesource.com/monyhar/src/+/main/docs/ui/views/metadata_properties.md).
 

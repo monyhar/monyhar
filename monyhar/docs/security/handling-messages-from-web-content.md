@@ -29,7 +29,7 @@ been put in place for Android WebView apps. This is not allowed, because:
 * Even if you can comply with the Rule of Two (for example by using a safe
   language) it's simply difficult to produce robust APIs that are safe against
   malicious data: the open web platform [API review
-  process](https://www.chromium.org/blink/launching-features) is designed to
+  process](https://www.monyhar.org/blink/launching-features) is designed to
   flush out any concerns. Any APIs or functionality accessible to web content
   therefore needs to go via that process to give the best chance of spotting
   danger.

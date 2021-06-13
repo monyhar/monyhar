@@ -31,8 +31,8 @@ under “Listen to part of a page”.
 
 ## Reporting bugs
 
-Use bugs.chromium.org, filing bugs under the component
-[UI>Accessibility>SelectToSpeak](https://bugs.chromium.org/p/chromium/issues/list?sort=-opened&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified&q=component%3AUI%3EAccessibility%3ESelectToSpeak%20&can=2).
+Use bugs.monyhar.org, filing bugs under the component
+[UI>Accessibility>SelectToSpeak](https://bugs.monyhar.org/p/monyhar/issues/list?sort=-opened&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified&q=component%3AUI%3EAccessibility%3ESelectToSpeak%20&can=2).
 
 ## Developing
 
@@ -104,7 +104,7 @@ The STS extension does the following, at a high level:
 ### Select to Speak extension structure
 
 Most STS logic takes place in
-[select_to_speak.js](https://cs.chromium.org/chromium/src/chrome/browser/resources/chromeos/accessibility/select_to_speak/select_to_speak.js).
+[select_to_speak.js](https://cs.monyhar.org/monyhar/src/chrome/browser/resources/chromeos/accessibility/select_to_speak/select_to_speak.js).
 
 #### User input
 
@@ -202,7 +202,7 @@ and deactivating STS.
 #### Floating control panel
 
 The panel is implemented as a native ASH component
-[select_to_speak_menu_bubble_controller.h](https://source.chromium.org/chromium/chromium/src/+/main:ash/system/accessibility/select_to_speak/select_to_speak_menu_bubble_controller.h).
+[select_to_speak_menu_bubble_controller.h](https://source.monyhar.org/monyhar/monyhar/src/+/main:ash/system/accessibility/select_to_speak/select_to_speak_menu_bubble_controller.h).
 Similar to focus rings, the STS component extension communicates with the panel
 via the `chrome.accessibilityPrivate` API. The
 `chrome.accessibilityPrivate.updateSelectToSpeakPanel` API controls the
@@ -262,7 +262,7 @@ Resuming TTS behaves differently depending on the context:
 
 Users can navigate to adjacent paragraphs from the current block parent when
 Select-to-speak is active. A 'paragraph' is any block element as defined by
-[ParagraphUtils.isBlock](https://source.chromium.org/chromium/chromium/src/+/main:chrome/browser/resources/chromeos/accessibility/select_to_speak/paragraph_utils.js)
+[ParagraphUtils.isBlock](https://source.monyhar.org/monyhar/monyhar/src/+/main:chrome/browser/resources/chromeos/accessibility/select_to_speak/paragraph_utils.js)
 and the navigation occurs in DOM-order.
 
 #### Sentence navigation
@@ -270,7 +270,7 @@ and the navigation occurs in DOM-order.
 Paragraphs are split into sentences based on the `sentenceStarts` property of
 an AutomationNode. Users can skip to previous and next sentences using similar
 technique as pause/resume (`stop` then `speak` with trimmed text). See
-[sentence_utils.js](https://source.chromium.org/chromium/chromium/src/+/main:chrome/browser/resources/chromeos/accessibility/select_to_speak/sentence_utils.js)
+[sentence_utils.js](https://source.monyhar.org/monyhar/monyhar/src/+/main:chrome/browser/resources/chromeos/accessibility/select_to_speak/sentence_utils.js)
 for logic on breaking node groups into sentences.
 
 #### Reading speed
@@ -290,7 +290,7 @@ Google Drive apps require a few work-arounds to work correctly with STS.
 
 - Any time a Google Drive document is loaded (such as a Doc, Sheet or Slides
 document), the script
-[select_to_speak_gdocs_script](https://cs.chromium.org/chromium/src/chrome/browser/resources/chromeos/accessibility/select_to_speak/select_to_speak_gdocs_script.js?q=select_to_speak_gdocs_script.js+file:%5Esrc/chrome/browser/resources/chromeos/accessibility/select_to_speak/+package:%5Echromium$&dr)
+[select_to_speak_gdocs_script](https://cs.monyhar.org/monyhar/src/chrome/browser/resources/chromeos/accessibility/select_to_speak/select_to_speak_gdocs_script.js?q=select_to_speak_gdocs_script.js+file:%5Esrc/chrome/browser/resources/chromeos/accessibility/select_to_speak/+package:%5Emonyhar$&dr)
 must be executed to remove aria-hidden from the content container.
 
 - Using search+s to read highlighted text uses the clipboard to get text data

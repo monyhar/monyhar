@@ -33,21 +33,21 @@ TEST(WebAppHelpers, GenerateAppIdFromURL) {
 }
 
 TEST(WebAppHelpers, IsValidWebAppUrl) {
-  EXPECT_TRUE(IsValidWebAppUrl(GURL("https://chromium.org")));
-  EXPECT_TRUE(IsValidWebAppUrl(GURL("https://www.chromium.org")));
+  EXPECT_TRUE(IsValidWebAppUrl(GURL("https://monyhar.org")));
+  EXPECT_TRUE(IsValidWebAppUrl(GURL("https://www.monyhar.org")));
   EXPECT_TRUE(
-      IsValidWebAppUrl(GURL("https://www.chromium.org/path/to/page.html")));
-  EXPECT_TRUE(IsValidWebAppUrl(GURL("http://chromium.org")));
-  EXPECT_TRUE(IsValidWebAppUrl(GURL("http://www.chromium.org")));
+      IsValidWebAppUrl(GURL("https://www.monyhar.org/path/to/page.html")));
+  EXPECT_TRUE(IsValidWebAppUrl(GURL("http://monyhar.org")));
+  EXPECT_TRUE(IsValidWebAppUrl(GURL("http://www.monyhar.org")));
   EXPECT_TRUE(
-      IsValidWebAppUrl(GURL("http://www.chromium.org/path/to/page.html")));
+      IsValidWebAppUrl(GURL("http://www.monyhar.org/path/to/page.html")));
   EXPECT_TRUE(IsValidWebAppUrl(GURL("https://examle.com/foo?bar")));
   EXPECT_TRUE(IsValidWebAppUrl(GURL("https://examle.com/foo#bar")));
 
   EXPECT_FALSE(IsValidWebAppUrl(GURL()));
   EXPECT_TRUE(IsValidWebAppUrl(
       GURL("chrome-extension://oafaagfgbdpldilgjjfjocjglfbolmac")));
-  EXPECT_FALSE(IsValidWebAppUrl(GURL("ftp://www.chromium.org")));
+  EXPECT_FALSE(IsValidWebAppUrl(GURL("ftp://www.monyhar.org")));
   EXPECT_FALSE(IsValidWebAppUrl(GURL("chrome://flags")));
   EXPECT_FALSE(IsValidWebAppUrl(GURL("about:blank")));
   EXPECT_FALSE(
@@ -58,11 +58,11 @@ TEST(WebAppHelpers, IsValidWebAppUrl) {
 }
 
 TEST(WebAppHelpers, IsValidExtensionUrl) {
-  EXPECT_FALSE(IsValidExtensionUrl(GURL("https://chromium.org")));
+  EXPECT_FALSE(IsValidExtensionUrl(GURL("https://monyhar.org")));
   EXPECT_FALSE(IsValidExtensionUrl(GURL("http://example.org")));
   EXPECT_TRUE(IsValidExtensionUrl(
       GURL("chrome-extension://oafaagfgbdpldilgjjfjocjglfbolmac")));
-  EXPECT_FALSE(IsValidExtensionUrl(GURL("ftp://www.chromium.org")));
+  EXPECT_FALSE(IsValidExtensionUrl(GURL("ftp://www.monyhar.org")));
   EXPECT_FALSE(IsValidExtensionUrl(GURL("chrome://flags")));
   EXPECT_FALSE(IsValidExtensionUrl(GURL("about:blank")));
   EXPECT_FALSE(

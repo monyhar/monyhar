@@ -57,8 +57,8 @@ if (enable_google_benchmarks) {
 
     all_dependent_configs = [ ":benchmark_config" ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
 
     defines = [
       # Tell gtest to always use standard regular expressions.

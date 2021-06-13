@@ -10,7 +10,7 @@ contributors. Now, Gerrit will disallow both bypasses. Within Google, where
 these bypasses were more common, Googlers can find Google-specific information
 in the internal announcements and landing site.
 
-Periodic updates and FAQs will be sent to chromium-dev@chromium.org
+Periodic updates and FAQs will be sent to monyhar-dev@monyhar.org
 and updated on this page.
 
 ## FAQS
@@ -21,7 +21,7 @@ Yes, but within 14 days of the original change you can add Rubber Stamper bot (r
 
 ### I have a question, whom should I contact?
 
-Send questions about this document to chromium-dev@chromium.org. Googlers can
+Send questions about this document to monyhar-dev@monyhar.org. Googlers can
 use an internal-specific email alias that was announced, separately.
 
 ### How will major refactorings be handled? I regularly need to submit 100s of CLs across the trees; getting OWNERS approval from everyone will be too hard.

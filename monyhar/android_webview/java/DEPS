@@ -7,7 +7,7 @@ include_rules = [
   "+components/component_updater/android/java",
 
   "-content/public/android/java",
-  "+content/public/android/java/src/org/chromium/content_public",
+  "+content/public/android/java/src/org/monyhar/content_public",
 
   "+device/gamepad/android/java",
   "+media/base/android/java",

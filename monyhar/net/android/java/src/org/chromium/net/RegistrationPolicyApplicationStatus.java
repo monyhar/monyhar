@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
-import org.chromium.base.ApplicationState;
-import org.chromium.base.ApplicationStatus;
+import org.monyhar.base.ApplicationState;
+import org.monyhar.base.ApplicationStatus;
 
 /**
  * Regsitration policy which depends on the ApplicationState.

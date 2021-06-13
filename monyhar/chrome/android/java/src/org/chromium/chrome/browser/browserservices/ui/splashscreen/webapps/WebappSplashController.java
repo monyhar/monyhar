@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.ui.splashscreen.webapps;
+package org.monyhar.chrome.browser.browserservices.ui.splashscreen.webapps;
 
 import android.app.Activity;
 import android.content.Context;
@@ -14,21 +14,21 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.FileUtils;
-import org.chromium.base.StrictModeContext;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.browserservices.ui.splashscreen.SplashController;
-import org.chromium.chrome.browser.browserservices.ui.splashscreen.SplashDelegate;
-import org.chromium.chrome.browser.customtabs.content.TabObserverRegistrar;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.webapps.WebApkSplashNetworkErrorObserver;
-import org.chromium.chrome.browser.webapps.WebappDataStorage;
-import org.chromium.chrome.browser.webapps.WebappInfo;
-import org.chromium.chrome.browser.webapps.WebappRegistry;
-import org.chromium.ui.util.ColorUtils;
-import org.chromium.webapk.lib.common.WebApkCommonUtils;
-import org.chromium.webapk.lib.common.splash.SplashLayout;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.FileUtils;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.browserservices.ui.splashscreen.SplashController;
+import org.monyhar.chrome.browser.browserservices.ui.splashscreen.SplashDelegate;
+import org.monyhar.chrome.browser.customtabs.content.TabObserverRegistrar;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.webapps.WebApkSplashNetworkErrorObserver;
+import org.monyhar.chrome.browser.webapps.WebappDataStorage;
+import org.monyhar.chrome.browser.webapps.WebappInfo;
+import org.monyhar.chrome.browser.webapps.WebappRegistry;
+import org.monyhar.ui.util.ColorUtils;
+import org.monyhar.webapk.lib.common.WebApkCommonUtils;
+import org.monyhar.webapk.lib.common.splash.SplashLayout;
 
 import javax.inject.Inject;
 

@@ -2,37 +2,37 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks;
+package org.monyhar.chrome.browser.tasks;
 
-import static org.chromium.chrome.browser.tasks.SingleTabViewProperties.CLICK_LISTENER;
-import static org.chromium.chrome.browser.tasks.SingleTabViewProperties.FAVICON;
-import static org.chromium.chrome.browser.tasks.SingleTabViewProperties.IS_VISIBLE;
-import static org.chromium.chrome.browser.tasks.SingleTabViewProperties.TITLE;
+import static org.monyhar.chrome.browser.tasks.SingleTabViewProperties.CLICK_LISTENER;
+import static org.monyhar.chrome.browser.tasks.SingleTabViewProperties.FAVICON;
+import static org.monyhar.chrome.browser.tasks.SingleTabViewProperties.IS_VISIBLE;
+import static org.monyhar.chrome.browser.tasks.SingleTabViewProperties.TITLE;
 
 import android.graphics.drawable.Drawable;
 import android.os.SystemClock;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ObserverList;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.browser.compositor.layouts.LayoutManagerImpl;
-import org.chromium.chrome.browser.flags.CachedFeatureFlags;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabSelectionType;
-import org.chromium.chrome.browser.tabmodel.TabList;
-import org.chromium.chrome.browser.tabmodel.TabModel;
-import org.chromium.chrome.browser.tabmodel.TabModelObserver;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorObserver;
-import org.chromium.chrome.browser.tasks.pseudotab.PseudoTab;
-import org.chromium.chrome.browser.tasks.tab_management.TabListFaviconProvider;
-import org.chromium.chrome.browser.tasks.tab_management.TabSwitcher;
-import org.chromium.chrome.browser.tasks.tab_management.TabUiFeatureUtilities;
-import org.chromium.chrome.features.start_surface.StartSurfaceConfiguration;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.browser.compositor.layouts.LayoutManagerImpl;
+import org.monyhar.chrome.browser.flags.CachedFeatureFlags;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabSelectionType;
+import org.monyhar.chrome.browser.tabmodel.TabList;
+import org.monyhar.chrome.browser.tabmodel.TabModel;
+import org.monyhar.chrome.browser.tabmodel.TabModelObserver;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorObserver;
+import org.monyhar.chrome.browser.tasks.pseudotab.PseudoTab;
+import org.monyhar.chrome.browser.tasks.tab_management.TabListFaviconProvider;
+import org.monyhar.chrome.browser.tasks.tab_management.TabSwitcher;
+import org.monyhar.chrome.browser.tasks.tab_management.TabUiFeatureUtilities;
+import org.monyhar.chrome.features.start_surface.StartSurfaceConfiguration;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /** Mediator of the single tab tab switcher. */
 public class SingleTabSwitcherMediator implements TabSwitcher.Controller {

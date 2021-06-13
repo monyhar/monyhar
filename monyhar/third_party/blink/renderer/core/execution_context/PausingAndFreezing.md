@@ -9,7 +9,7 @@ Pausing is generally only used for nested event loops (ie. synchronous print). A
 
 # Execution Context States
 
-There are 4 lifecycle states [defined](https://cs.chromium.org/chromium/src/third_party/blink/public/mojom/frame/lifecycle.mojom):
+There are 4 lifecycle states [defined](https://cs.monyhar.org/monyhar/src/third_party/blink/public/mojom/frame/lifecycle.mojom):
 
 * kRunning - actively running context
 * kPaused - Paused state. Does not fire frozen or resumed events on the document.
@@ -35,10 +35,10 @@ task queues in the scheduler).
 
 # Freezing IPCs
 
-Top level documents are frozen via [PageMsg_SetPageFrozen](https://cs.chromium.org/search/?q=PageMsg_SetPageFrozen&sq=package:chromium&type=cs) message. This
+Top level documents are frozen via [PageMsg_SetPageFrozen](https://cs.monyhar.org/search/?q=PageMsg_SetPageFrozen&sq=package:monyhar&type=cs) message. This
 will freeze and entire frame tree.
 
-Individual frames may be frozen via [SetLifecycleState](https://cs.chromium.org/chromium/src/content/common/frame.mojom?g=0) freezing only an individual frame.
+Individual frames may be frozen via [SetLifecycleState](https://cs.monyhar.org/monyhar/src/content/common/frame.mojom?g=0) freezing only an individual frame.
 Subframes will need to be frozen independently with a separate IPC.
 
 Frame freezing can also be initiated by the [Page Scheduler][#Page Scheduler] under certain conditions.
@@ -62,7 +62,7 @@ To freeze workers the Workers themselves are [ExecutionContextLifecycleStateObse
 the kFrozen/kResume state of the owning execution context and then propagate that to their own execution context.
 
 
-[ExecutionContextLifecycleStateObserver]: https://cs.chromium.org/chromium/src/third_party/blink/renderer/core/execution_context/execution_context_lifecycle_state_observer.h
-[DedicatedWorker]: https://cs.chromium.org/chromium/src/third_party/blink/renderer/core/workers/dedicated_worker.h
-[PageScheduler]: https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/scheduler/main_thread/page_scheduler_impl.h
-[TaskQueues]: https://chromium.googlesource.com/chromium/src/+/HEAD/third_party/blink/public/platform/TaskTypes.md
+[ExecutionContextLifecycleStateObserver]: https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/core/execution_context/execution_context_lifecycle_state_observer.h
+[DedicatedWorker]: https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/core/workers/dedicated_worker.h
+[PageScheduler]: https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/platform/scheduler/main_thread/page_scheduler_impl.h
+[TaskQueues]: https://monyhar.googlesource.com/monyhar/src/+/HEAD/third_party/blink/public/platform/TaskTypes.md

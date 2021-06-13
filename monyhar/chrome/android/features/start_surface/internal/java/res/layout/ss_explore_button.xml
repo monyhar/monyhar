@@ -10,7 +10,7 @@
     android:id="@+id/ss_explore_tab"
     android:background="@null"
     android:contentDescription="@string/accessibility_start_surface_bottom_explore_button" >
-    <org.chromium.ui.widget.ChromeImageView
+    <org.monyhar.ui.widget.ChromeImageView
         android:id="@+id/ss_explore_button"
         style="@style/SplitToolbarButton"
         android:clickable="false"

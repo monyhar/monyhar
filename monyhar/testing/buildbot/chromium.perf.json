@@ -6,7 +6,7 @@
       {
         "args": [
           "-v",
-          "--browser=android-chromium",
+          "--browser=android-monyhar",
           "--upload-results",
           "--test-shard-map-filename=android_nexus5_perf_map.json",
           "--assert-gpu-compositing"
@@ -206,7 +206,7 @@
       "android_tools",
       "cc_perftests",
       "chrome_public_apk",
-      "chromium_builder_perf",
+      "monyhar_builder_perf",
       "dump_syms",
       "gpu_perftests",
       "push_apps_to_background_apk",
@@ -885,7 +885,7 @@
       "android_tools",
       "cc_perftests",
       "chrome_public_apk",
-      "chromium_builder_perf",
+      "monyhar_builder_perf",
       "gpu_perftests",
       "push_apps_to_background_apk",
       "system_webview_apk",
@@ -1222,7 +1222,7 @@
   "linux-builder-perf": {
     "additional_compile_targets": [
       "chromedriver",
-      "chromium_builder_perf"
+      "monyhar_builder_perf"
     ],
     "isolated_scripts": [
       {
@@ -1255,7 +1255,7 @@
   },
   "linux-builder-perf-rel": {
     "additional_compile_targets": [
-      "chromium_builder_perf"
+      "monyhar_builder_perf"
     ]
   },
   "linux-perf": {
@@ -1495,7 +1495,7 @@
   "mac-arm-builder-perf": {
     "additional_compile_targets": [
       "chromedriver",
-      "chromium_builder_perf"
+      "monyhar_builder_perf"
     ],
     "isolated_scripts": [
       {
@@ -1529,7 +1529,7 @@
   "mac-builder-perf": {
     "additional_compile_targets": [
       "chromedriver",
-      "chromium_builder_perf"
+      "monyhar_builder_perf"
     ],
     "isolated_scripts": [
       {
@@ -1783,7 +1783,7 @@
   "win32-builder-perf": {
     "additional_compile_targets": [
       "chromedriver",
-      "chromium_builder_perf"
+      "monyhar_builder_perf"
     ],
     "isolated_scripts": [
       {
@@ -1817,7 +1817,7 @@
   "win64-builder-perf": {
     "additional_compile_targets": [
       "chromedriver",
-      "chromium_builder_perf"
+      "monyhar_builder_perf"
     ],
     "isolated_scripts": [
       {

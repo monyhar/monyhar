@@ -7,10 +7,10 @@ import("//build/config/locales.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/components/find_in_page/FindInPageBridge.java",
-    "java/src/org/chromium/components/find_in_page/FindMatchRectsDetails.java",
-    "java/src/org/chromium/components/find_in_page/FindNotificationDetails.java",
-    "java/src/org/chromium/components/find_in_page/FindResultBar.java",
+    "java/src/org/monyhar/components/find_in_page/FindInPageBridge.java",
+    "java/src/org/monyhar/components/find_in_page/FindMatchRectsDetails.java",
+    "java/src/org/monyhar/components/find_in_page/FindNotificationDetails.java",
+    "java/src/org/monyhar/components/find_in_page/FindResultBar.java",
   ]
 
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
@@ -22,7 +22,7 @@ android_library("java") {
     "//content/public/android:content_java",
     "//ui/android:ui_java",
   ]
-  resources_package = "org.chromium.components.find_in_page"
+  resources_package = "org.monyhar.components.find_in_page"
 }
 
 android_resources("java_resources") {
@@ -36,5 +36,5 @@ android_resources("java_resources") {
 
 generate_jni("jni_headers") {
   sources =
-      [ "java/src/org/chromium/components/find_in_page/FindInPageBridge.java" ]
+      [ "java/src/org/monyhar/components/find_in_page/FindInPageBridge.java" ]
 }

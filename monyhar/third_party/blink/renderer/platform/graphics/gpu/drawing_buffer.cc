@@ -117,7 +117,7 @@ scoped_refptr<DrawingBuffer> DrawingBuffer::Create(
     bool want_antialiasing,
     PreserveDrawingBuffer preserve,
     WebGLVersion webgl_version,
-    ChromiumImageUsage chromium_image_usage,
+    ChromiumImageUsage monyhar_image_usage,
     SkFilterQuality filter_quality,
     const CanvasColorParams& color_params,
     gl::GpuPreference gpu_preference) {
@@ -170,7 +170,7 @@ scoped_refptr<DrawingBuffer> DrawingBuffer::Create(
           std::move(context_provider), graphics_info, using_swap_chain,
           std::move(extensions_util), client, discard_framebuffer_supported,
           want_alpha_channel, premultiplied_alpha, preserve, webgl_version,
-          want_depth_buffer, want_stencil_buffer, chromium_image_usage,
+          want_depth_buffer, want_stencil_buffer, monyhar_image_usage,
           filter_quality, color_params, gpu_preference));
   if (!drawing_buffer->Initialize(size, multisample_supported)) {
     drawing_buffer->BeginDestruction();
@@ -192,7 +192,7 @@ DrawingBuffer::DrawingBuffer(
     WebGLVersion webgl_version,
     bool want_depth,
     bool want_stencil,
-    ChromiumImageUsage chromium_image_usage,
+    ChromiumImageUsage monyhar_image_usage,
     SkFilterQuality filter_quality,
     const CanvasColorParams& color_params,
     gl::GpuPreference gpu_preference)
@@ -214,7 +214,7 @@ DrawingBuffer::DrawingBuffer(
       use_half_float_storage_(color_params.PixelFormat() ==
                               CanvasPixelFormat::kF16),
       filter_quality_(filter_quality),
-      chromium_image_usage_(chromium_image_usage),
+      monyhar_image_usage_(monyhar_image_usage),
       opengl_flip_y_extension_(
           ContextProvider()->GetCapabilities().mesa_framebuffer_flip_y),
       initial_gpu_(gpu_preference),
@@ -917,7 +917,7 @@ bool DrawingBuffer::Initialize(const IntSize& size, bool use_multisampling) {
       have_alpha_channel_ = true;
     } else if (ShouldUseChromiumImage() && ContextProvider()
                                                ->GetCapabilities()
-                                               .chromium_image_rgb_emulation) {
+                                               .monyhar_image_rgb_emulation) {
       // This configuration avoids the above issues by
       //  - extra command buffer validation for CopyTexImage
       //  - explicity re-binding as RGB for FramebufferBlit
@@ -1949,7 +1949,7 @@ DrawingBuffer::ScopedStateRestorer::~ScopedStateRestorer() {
 
 bool DrawingBuffer::ShouldUseChromiumImage() {
   return RuntimeEnabledFeatures::WebGLImageChromiumEnabled() &&
-         chromium_image_usage_ == kAllowChromiumImage &&
+         monyhar_image_usage_ == kAllowChromiumImage &&
          Platform::Current()->GetGpuMemoryBufferManager();
 }
 

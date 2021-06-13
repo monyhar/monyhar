@@ -2,7 +2,7 @@
 
 The following list should be kept in sync with
 - //chrome/browser/webshare/share_service_impl.cc
-- //components/browser_ui/webshare/android/java/src/org/chromium/components/browser_ui/webshare/ShareServiceImpl.java
+- //components/browser_ui/webshare/android/java/src/org/monyhar/components/browser_ui/webshare/ShareServiceImpl.java
 
 
 # Audio

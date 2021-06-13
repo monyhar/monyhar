@@ -29,7 +29,7 @@ import sys
 
 
 def _SourceDir():
-  """Get chromium's source directory."""
+  """Get monyhar's source directory."""
   return os.path.join(sys.path[0], '..')
 
 

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package com.android.webview.chromium;
+package com.android.webview.monyhar;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -57,22 +57,22 @@ import android.widget.TextView;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.android_webview.AwContents;
-import org.chromium.android_webview.AwContentsStatics;
-import org.chromium.android_webview.AwPrintDocumentAdapter;
-import org.chromium.android_webview.AwSettings;
-import org.chromium.android_webview.AwThreadUtils;
-import org.chromium.android_webview.gfx.AwDrawFnImpl;
-import org.chromium.android_webview.renderer_priority.RendererPriority;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.ScopedSysTraceEvent;
-import org.chromium.components.content_capture.ContentCaptureFeatures;
-import org.chromium.components.content_capture.OnscreenContentProvider;
-import org.chromium.components.embedder_support.application.ClassLoaderContextWrapperFactory;
-import org.chromium.content_public.browser.NavigationHistory;
-import org.chromium.content_public.browser.SmartClipProvider;
-import org.chromium.url.GURL;
+import org.monyhar.android_webview.AwContents;
+import org.monyhar.android_webview.AwContentsStatics;
+import org.monyhar.android_webview.AwPrintDocumentAdapter;
+import org.monyhar.android_webview.AwSettings;
+import org.monyhar.android_webview.AwThreadUtils;
+import org.monyhar.android_webview.gfx.AwDrawFnImpl;
+import org.monyhar.android_webview.renderer_priority.RendererPriority;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.ScopedSysTraceEvent;
+import org.monyhar.components.content_capture.ContentCaptureFeatures;
+import org.monyhar.components.content_capture.OnscreenContentProvider;
+import org.monyhar.components.embedder_support.application.ClassLoaderContextWrapperFactory;
+import org.monyhar.content_public.browser.NavigationHistory;
+import org.monyhar.content_public.browser.SmartClipProvider;
+import org.monyhar.url.GURL;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -87,7 +87,7 @@ import java.util.concurrent.Executor;
  *
  * Most of the actual functionality is implemented by AwContents (or WebContents within
  * it). This class also contains WebView-specific APIs that require the creation of other
- * adapters (otherwise org.chromium.content would depend on the webview.chromium package)
+ * adapters (otherwise org.monyhar.content would depend on the webview.monyhar package)
  * and a small set of no-op deprecated APIs.
  */
 @SuppressWarnings("deprecation")
@@ -288,7 +288,7 @@ class WebViewChromium implements WebViewProvider, WebViewProvider.ScrollDelegate
                     Log.w(TAG, msg);
                     TextView warningLabel = new TextView(mContext);
                     warningLabel.setText(mContext.getString(
-                            org.chromium.android_webview.R.string.private_browsing_warning));
+                            org.monyhar.android_webview.R.string.private_browsing_warning));
                     mWebView.addView(warningLabel);
                 }
             }
@@ -604,7 +604,7 @@ class WebViewChromium implements WebViewProvider, WebViewProvider.ScrollDelegate
     @Override
     public void setNetworkAvailable(final boolean networkUp) {
         // Note that this purely toggles the JS navigator.online property.
-        // It does not in affect chromium or network stack state in any way.
+        // It does not in affect monyhar or network stack state in any way.
         if (checkNeedsPost()) {
             mFactory.addTask(new Runnable() {
                 @Override

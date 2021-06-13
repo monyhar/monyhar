@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.offlinepages;
+package org.monyhar.chrome.browser.offlinepages;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -29,25 +29,25 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.BaseSwitches;
-import org.chromium.base.Callback;
-import org.chromium.base.CommandLine;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.SysUtils;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.device.DeviceConditions;
-import org.chromium.chrome.browser.device.ShadowDeviceConditions;
-import org.chromium.components.background_task_scheduler.BackgroundTask;
-import org.chromium.components.background_task_scheduler.BackgroundTaskScheduler;
-import org.chromium.components.background_task_scheduler.BackgroundTaskSchedulerFactory;
-import org.chromium.components.background_task_scheduler.NativeBackgroundTask;
-import org.chromium.components.background_task_scheduler.TaskIds;
-import org.chromium.components.background_task_scheduler.TaskInfo;
-import org.chromium.components.background_task_scheduler.TaskParameters;
-import org.chromium.net.ConnectionType;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.BaseSwitches;
+import org.monyhar.base.Callback;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.SysUtils;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.device.DeviceConditions;
+import org.monyhar.chrome.browser.device.ShadowDeviceConditions;
+import org.monyhar.components.background_task_scheduler.BackgroundTask;
+import org.monyhar.components.background_task_scheduler.BackgroundTaskScheduler;
+import org.monyhar.components.background_task_scheduler.BackgroundTaskSchedulerFactory;
+import org.monyhar.components.background_task_scheduler.NativeBackgroundTask;
+import org.monyhar.components.background_task_scheduler.TaskIds;
+import org.monyhar.components.background_task_scheduler.TaskInfo;
+import org.monyhar.components.background_task_scheduler.TaskParameters;
+import org.monyhar.net.ConnectionType;
 
 /**
  * Unit tests for OfflineBackgroundTask.

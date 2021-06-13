@@ -37,10 +37,10 @@ class MockGerritAPI(object):
 
 
 class MockGerritCL(GerritCL):
-    def __init__(self, data, api=None, chromium_commit=None):
+    def __init__(self, data, api=None, monyhar_commit=None):
         api = api or MockGerritAPI()
-        self.chromium_commit = chromium_commit
+        self.monyhar_commit = monyhar_commit
         super(MockGerritCL, self).__init__(data, api)
 
     def fetch_current_revision_commit(self, host):
-        return self.chromium_commit
+        return self.monyhar_commit

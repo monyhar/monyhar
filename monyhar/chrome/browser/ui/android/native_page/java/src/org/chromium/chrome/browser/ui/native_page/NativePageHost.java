@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui.native_page;
+package org.monyhar.chrome.browser.ui.native_page;
 
 import android.content.Context;
 import android.graphics.Rect;
 
-import org.chromium.base.supplier.DestroyableObservableSupplier;
-import org.chromium.content_public.browser.LoadUrlParams;
+import org.monyhar.base.supplier.DestroyableObservableSupplier;
+import org.monyhar.content_public.browser.LoadUrlParams;
 
 /**
  * This interface represents a view that is capable of hosting a NativePage.

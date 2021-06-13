@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.paintpreview.player.frame;
+package org.monyhar.components.paintpreview.player.frame;
 
 import android.graphics.Bitmap;
 import android.graphics.Rect;
@@ -10,12 +10,12 @@ import android.util.Size;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.MemoryPressureLevel;
-import org.chromium.base.UnguessableToken;
-import org.chromium.base.memory.MemoryPressureMonitor;
-import org.chromium.base.task.SequencedTaskRunner;
-import org.chromium.components.paintpreview.player.PlayerCompositorDelegate;
+import org.monyhar.base.Callback;
+import org.monyhar.base.MemoryPressureLevel;
+import org.monyhar.base.UnguessableToken;
+import org.monyhar.base.memory.MemoryPressureMonitor;
+import org.monyhar.base.task.SequencedTaskRunner;
+import org.monyhar.components.paintpreview.player.PlayerCompositorDelegate;
 
 import java.util.HashSet;
 import java.util.Set;

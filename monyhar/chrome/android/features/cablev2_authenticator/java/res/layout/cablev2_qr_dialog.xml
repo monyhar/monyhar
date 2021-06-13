@@ -21,7 +21,7 @@
     referenced directly to avoid issues with reflection inside of split and
     isolated modules.
 
-  <org.chromium.chrome.browser.webauth.authenticator.CameraView
+  <org.monyhar.chrome.browser.webauth.authenticator.CameraView
       android:id="@+id/camera_view"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"

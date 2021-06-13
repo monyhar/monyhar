@@ -5,11 +5,11 @@
 import("//build/config/android/rules.gni")
 
 generate_jni("jni_headers") {
-  sources = [ "java/src/org/chromium/components/user_prefs/UserPrefs.java" ]
+  sources = [ "java/src/org/monyhar/components/user_prefs/UserPrefs.java" ]
 }
 
 android_library("java") {
-  sources = [ "java/src/org/chromium/components/user_prefs/UserPrefs.java" ]
+  sources = [ "java/src/org/monyhar/components/user_prefs/UserPrefs.java" ]
   deps = [
     "//base:base_java",
     "//components/embedder_support/android:browser_context_java",

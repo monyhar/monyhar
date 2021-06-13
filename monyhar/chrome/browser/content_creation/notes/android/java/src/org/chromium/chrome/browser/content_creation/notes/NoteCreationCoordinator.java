@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.content_creation.notes;
+package org.monyhar.chrome.browser.content_creation.notes;
 
 /**
  * Public interface note creation component that is responsible for notes main UI and its

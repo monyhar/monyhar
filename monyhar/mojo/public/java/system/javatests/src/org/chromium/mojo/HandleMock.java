@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo;
+package org.monyhar.mojo;
 
-import org.chromium.mojo.system.Core;
-import org.chromium.mojo.system.Core.HandleSignalsState;
-import org.chromium.mojo.system.DataPipe;
-import org.chromium.mojo.system.DataPipe.ConsumerHandle;
-import org.chromium.mojo.system.DataPipe.ProducerHandle;
-import org.chromium.mojo.system.Handle;
-import org.chromium.mojo.system.MessagePipeHandle;
-import org.chromium.mojo.system.MojoResult;
-import org.chromium.mojo.system.ResultAnd;
-import org.chromium.mojo.system.SharedBufferHandle;
-import org.chromium.mojo.system.UntypedHandle;
-import org.chromium.mojo.system.impl.CoreImpl;
+import org.monyhar.mojo.system.Core;
+import org.monyhar.mojo.system.Core.HandleSignalsState;
+import org.monyhar.mojo.system.DataPipe;
+import org.monyhar.mojo.system.DataPipe.ConsumerHandle;
+import org.monyhar.mojo.system.DataPipe.ProducerHandle;
+import org.monyhar.mojo.system.Handle;
+import org.monyhar.mojo.system.MessagePipeHandle;
+import org.monyhar.mojo.system.MojoResult;
+import org.monyhar.mojo.system.ResultAnd;
+import org.monyhar.mojo.system.SharedBufferHandle;
+import org.monyhar.mojo.system.UntypedHandle;
+import org.monyhar.mojo.system.impl.CoreImpl;
 
 import java.nio.ByteBuffer;
 import java.util.List;
@@ -58,7 +58,7 @@ public class HandleMock implements UntypedHandle, MessagePipeHandle, ProducerHan
     }
 
     /**
-     * @see org.chromium.mojo.system.Handle#getCore()
+     * @see org.monyhar.mojo.system.Handle#getCore()
      */
     @Override
     public Core getCore() {
@@ -66,7 +66,7 @@ public class HandleMock implements UntypedHandle, MessagePipeHandle, ProducerHan
     }
 
     /**
-     * @see org.chromium.mojo.system.UntypedHandle#pass()
+     * @see org.monyhar.mojo.system.UntypedHandle#pass()
      */
     @Override
     public HandleMock pass() {

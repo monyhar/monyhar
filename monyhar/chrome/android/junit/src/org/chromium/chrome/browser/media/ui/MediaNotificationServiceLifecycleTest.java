@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.media.ui;
+package org.monyhar.chrome.browser.media.ui;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -34,12 +34,12 @@ import org.mockito.InOrder;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowNotificationManager;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.notifications.NotificationUmaTracker;
-import org.chromium.components.browser_ui.media.MediaNotificationController;
-import org.chromium.components.browser_ui.media.MediaNotificationInfo;
-import org.chromium.components.browser_ui.media.MediaNotificationManager;
-import org.chromium.services.media_session.MediaMetadata;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.notifications.NotificationUmaTracker;
+import org.monyhar.components.browser_ui.media.MediaNotificationController;
+import org.monyhar.components.browser_ui.media.MediaNotificationInfo;
+import org.monyhar.components.browser_ui.media.MediaNotificationManager;
+import org.monyhar.services.media_session.MediaMetadata;
 
 /**
  * JUnit tests for checking {@link MediaNotificationController} handles the listener service life

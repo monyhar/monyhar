@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo.bindings;
+package org.monyhar.mojo.bindings;
 
 import androidx.test.filters.SmallTest;
 
@@ -13,17 +13,17 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.mojo.MojoTestRule;
-import org.chromium.mojo.bindings.BindingsTestUtils.RecordingMessageReceiver;
-import org.chromium.mojo.system.Core;
-import org.chromium.mojo.system.DataPipe;
-import org.chromium.mojo.system.Handle;
-import org.chromium.mojo.system.MessagePipeHandle;
-import org.chromium.mojo.system.MojoException;
-import org.chromium.mojo.system.MojoResult;
-import org.chromium.mojo.system.Pair;
-import org.chromium.mojo.system.impl.CoreImpl;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.mojo.MojoTestRule;
+import org.monyhar.mojo.bindings.BindingsTestUtils.RecordingMessageReceiver;
+import org.monyhar.mojo.system.Core;
+import org.monyhar.mojo.system.DataPipe;
+import org.monyhar.mojo.system.Handle;
+import org.monyhar.mojo.system.MessagePipeHandle;
+import org.monyhar.mojo.system.MojoException;
+import org.monyhar.mojo.system.MojoResult;
+import org.monyhar.mojo.system.Pair;
+import org.monyhar.mojo.system.impl.CoreImpl;
 
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
@@ -47,7 +47,7 @@ public class ReadAndDispatchMessageTest {
     private RecordingMessageReceiver mMessageReceiver;
 
     /**
-     * @see org.chromium.mojo.MojoTestCase#setUp()
+     * @see org.monyhar.mojo.MojoTestCase#setUp()
      */
     @Before
     public void setUp() {
@@ -62,7 +62,7 @@ public class ReadAndDispatchMessageTest {
     }
 
     /**
-     * @see org.chromium.mojo.MojoTestCase#tearDown()
+     * @see org.monyhar.mojo.MojoTestCase#tearDown()
      */
     @After
     public void tearDown() {

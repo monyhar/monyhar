@@ -34,7 +34,7 @@ except:
 
 # Try to get the path of the aapt build tool from catapult/devil.
 try:
-  import devil_chromium  # pylint: disable=unused-import
+  import devil_monyhar  # pylint: disable=unused-import
   from devil.android.sdk import build_tools
   _AAPT_DEFAULT_PATH = build_tools.GetPath('aapt')
 except:
@@ -466,9 +466,9 @@ def IsFilePathAnApk(input_file):
 # to strings:
 #
 #      config zh-rHK
-#        resource 0x7f12009c org.chromium.chrome:string/0_resource_name_obfuscated: t=0x03 d=0x0000caa9 (s=0x0008 r=0x00)
+#        resource 0x7f12009c org.monyhar.chrome:string/0_resource_name_obfuscated: t=0x03 d=0x0000caa9 (s=0x0008 r=0x00)
 #          (string8) "瀏覽首頁"
-#        resource 0x7f12009d org.chromium.chrome:string/0_resource_name_obfuscated: t=0x03 d=0x0000c8e0 (s=0x0008 r=0x00)
+#        resource 0x7f12009d org.monyhar.chrome:string/0_resource_name_obfuscated: t=0x03 d=0x0000c8e0 (s=0x0008 r=0x00)
 #          (string8) "向上瀏覽"
 #
 
@@ -496,7 +496,7 @@ assert not _RE_AAPT_BCP47_LOCALE.match('b+1234')
 _RE_AAPT_STRING_RESOURCE_HEADER = re.compile(
     r'^\s+resource 0x([0-9a-f]+) [a-zA-Z][a-zA-Z0-9.]+:string/(\w+):.*$')
 assert _RE_AAPT_STRING_RESOURCE_HEADER.match(
-    r'  resource 0x7f12009c org.chromium.chrome:string/0_resource_name_obfuscated: t=0x03 d=0x0000caa9 (s=0x0008 r=0x00)'
+    r'  resource 0x7f12009c org.monyhar.chrome:string/0_resource_name_obfuscated: t=0x03 d=0x0000caa9 (s=0x0008 r=0x00)'
 )
 
 _RE_AAPT_STRING_RESOURCE_VALUE = re.compile(r'^\s+\(string8\) "(.*)"$')

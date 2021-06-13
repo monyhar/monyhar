@@ -56,9 +56,9 @@ class WPTServe(server_base.ServerBase):
         self._config_file = fs.join(self._runtime_path, 'wpt.config.json')
 
         finder = PathFinder(fs)
-        path_to_pywebsocket = finder.path_from_chromium_base(
+        path_to_pywebsocket = finder.path_from_monyhar_base(
             'third_party', 'pywebsocket3', 'src')
-        self.path_to_wpt_support = finder.path_from_chromium_base(
+        self.path_to_wpt_support = finder.path_from_monyhar_base(
             'third_party', 'wpt_tools')
         path_to_wpt_root = fs.join(self.path_to_wpt_support, 'wpt')
         path_to_wpt_tests = fs.abspath(
@@ -95,7 +95,7 @@ class WPTServe(server_base.ServerBase):
         if datetime.date.today() > expiration_date - datetime.timedelta(30):
             _log.error(
                 'Pre-generated keys and certificates are going to be expired at %s.'
-                ' Please re-generate them by following steps in %s/README.chromium.',
+                ' Please re-generate them by following steps in %s/README.monyhar.',
                 expiration_date.strftime('%b %d %Y'), self.path_to_wpt_support)
 
     def _prepare_config(self):

@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.smoke;
+package org.monyhar.net.smoke;
 
-import static org.chromium.net.smoke.CronetSmokeTestRule.assertJavaEngine;
-import static org.chromium.net.smoke.CronetSmokeTestRule.assertSuccessfulNonEmptyResponse;
+import static org.monyhar.net.smoke.CronetSmokeTestRule.assertJavaEngine;
+import static org.monyhar.net.smoke.CronetSmokeTestRule.assertSuccessfulNonEmptyResponse;
 
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
@@ -19,7 +19,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.net.UrlRequest;
+import org.monyhar.net.UrlRequest;
 
 /**
  * Tests scenario when an app doesn't contain the native Cronet implementation.

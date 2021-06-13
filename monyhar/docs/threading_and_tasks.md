@@ -8,7 +8,7 @@ examples.
 ## Overview
 
 Chrome has a [multi-process
-architecture](https://www.chromium.org/developers/design-documents/multi-process-architecture)
+architecture](https://www.monyhar.org/developers/design-documents/multi-process-architecture)
 and each process is heavily multi-threaded. In this document we will go over the
 basic threading system shared by each process. The main goal is to keep the main
 thread (a.k.a. "UI" thread in the browser process) and IO thread (each process'
@@ -30,7 +30,7 @@ This documentation assumes familiarity with computer science
    optionally associated state. In Chrome this is `base::OnceCallback` and
    `base::RepeatingCallback` created via `base::BindOnce` and
    `base::BindRepeating`, respectively.
-   ([documentation](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/callback.md)).
+   ([documentation](https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/callback.md)).
  * **Task queue**: A queue of tasks to be processed.
  * **Physical thread**: An operating system provided thread (e.g. pthread on
    POSIX or CreateThread() on Windows). The Chrome cross-platform abstraction
@@ -41,7 +41,7 @@ This documentation assumes familiarity with computer science
  * **Thread pool**: A pool of physical threads with a shared task queue. In
    Chrome, this is `base::ThreadPoolInstance`. There's exactly one instance per
    Chrome process, it serves tasks posted through
-   [`base/task/post_task.h`](https://cs.chromium.org/chromium/src/base/task/post_task.h)
+   [`base/task/post_task.h`](https://cs.monyhar.org/monyhar/src/base/task/post_task.h)
    and as such you should rarely need to use the `base::ThreadPoolInstance` API
    directly (more on posting tasks later).
  * **Sequence** or **Virtual thread**: A chrome-managed thread of execution.
@@ -173,7 +173,7 @@ instead rely on the "current sequence" and no longer be thread-affine.
 A task that can run on any thread and doesn’t have ordering or mutual exclusion
 requirements with other tasks should be posted using one of the
 `base::ThreadPool::PostTask*()` functions defined in
-[`base/task/thread_pool.h`](https://cs.chromium.org/chromium/src/base/task/thread_pool.h).
+[`base/task/thread_pool.h`](https://cs.monyhar.org/monyhar/src/base/task/thread_pool.h).
 
 ```cpp
 base::ThreadPool::PostTask(FROM_HERE, base::BindOnce(&Task));
@@ -194,7 +194,7 @@ base::ThreadPool::PostTask(
 ### Posting via a TaskRunner
 
 A parallel
-[`base::TaskRunner`](https://cs.chromium.org/chromium/src/base/task_runner.h) is
+[`base::TaskRunner`](https://cs.monyhar.org/monyhar/src/base/task_runner.h) is
 an alternative to calling `base::ThreadPool::PostTask*()` directly. This is
 mainly useful when it isn’t known in advance whether tasks will be posted in
 parallel, in sequence, or to a single-thread (ref. [Posting a Sequenced
@@ -231,7 +231,7 @@ less invasive ways of controlling tasks in tests).
 
 A sequence is a set of tasks that run one at a time in posting order (not
 necessarily on the same thread). To post tasks as part of a sequence, use a
-[`base::SequencedTaskRunner`](https://cs.chromium.org/chromium/src/base/sequenced_task_runner.h).
+[`base::SequencedTaskRunner`](https://cs.monyhar.org/monyhar/src/base/sequenced_task_runner.h).
 
 ### Posting to a New Sequence
 
@@ -316,9 +316,9 @@ accessed on multiple threads.  If one thread updates it based on expensive
 computation or through disk access, then that slow work should be done without
 holding the lock.  Only when the result is available should the lock be used to
 swap in the new data.  An example of this is in PluginList::LoadPlugins
-([`content/browser/plugin_list.cc`](https://cs.chromium.org/chromium/src/content/browser/plugin_list.cc).
+([`content/browser/plugin_list.cc`](https://cs.monyhar.org/monyhar/src/content/browser/plugin_list.cc).
 If you must use locks,
-[here](https://www.chromium.org/developers/lock-and-condition-variable) are some
+[here](https://www.monyhar.org/developers/lock-and-condition-variable) are some
 best practices and pitfalls to avoid.
 
 In order to write non-blocking code, many APIs in Chrome are asynchronous.
@@ -331,7 +331,7 @@ thread/sequence is covered in the PostTask sections above.
 ## Posting Multiple Tasks to the Same Thread
 
 If multiple tasks need to run on the same thread, post them to a
-[`base::SingleThreadTaskRunner`](https://cs.chromium.org/chromium/src/base/single_thread_task_runner.h).
+[`base::SingleThreadTaskRunner`](https://cs.monyhar.org/monyhar/src/base/single_thread_task_runner.h).
 All tasks posted to the same `base::SingleThreadTaskRunner` run on the same thread in
 posting order.
 
@@ -340,7 +340,7 @@ posting order.
 To post tasks to the main thread or to the IO thread, use
 `content::GetUIThreadTaskRunner({})` or `content::GetIOThreadTaskRunner({})`
 from
-[`content/public/browser/browser_thread.h`](https://cs.chromium.org/chromium/src/content/public/browser/browser_thread.h)
+[`content/public/browser/browser_thread.h`](https://cs.monyhar.org/monyhar/src/content/public/browser/browser_thread.h)
 
 You may provide additional BrowserTaskTraits as a parameter to those methods
 though this is generally still uncommon in BrowserThreads and should be reserved
@@ -359,7 +359,7 @@ base::CreateSingleThreadTaskRunner({content::BrowserThread::IO})
 
 Note: For the duration of the migration, you'll unfortunately need to continue
 manually including
-[`content/public/browser/browser_task_traits.h`](https://cs.chromium.org/chromium/src/content/public/browser/browser_task_traits.h).
+[`content/public/browser/browser_task_traits.h`](https://cs.monyhar.org/monyhar/src/content/public/browser/browser_task_traits.h).
 to use the browser_thread.h API.
 
 The main thread and the IO thread are already super busy. Therefore, prefer
@@ -410,7 +410,7 @@ physical thread-affine. In a single-thread task,
 ***
 
 If you must post a task to the current physical thread nonetheless, use
-[`base::ThreadTaskRunnerHandle`](https://cs.chromium.org/chromium/src/base/threading/thread_task_runner_handle.h).
+[`base::ThreadTaskRunnerHandle`](https://cs.monyhar.org/monyhar/src/base/threading/thread_task_runner_handle.h).
 
 ```cpp
 // The task will run on the current thread in the future.
@@ -450,7 +450,7 @@ com_sta_task_runner->PostTask(FROM_HERE, base::BindOnce(&TaskBUsingCOMSTA));
 
 ## Annotating Tasks with TaskTraits
 
-[`base::TaskTraits`](https://cs.chromium.org/chromium/src/base/task/task_traits.h)
+[`base::TaskTraits`](https://cs.monyhar.org/monyhar/src/base/task/task_traits.h)
 encapsulate information about a task that helps the thread pool make better
 scheduling decisions.
 
@@ -464,10 +464,10 @@ are sufficient. Default traits are appropriate for tasks that:
   choose a fitting default).
 Tasks that don’t match this description must be posted with explicit TaskTraits.
 
-[`base/task/task_traits.h`](https://cs.chromium.org/chromium/src/base/task/task_traits.h)
+[`base/task/task_traits.h`](https://cs.monyhar.org/monyhar/src/base/task/task_traits.h)
 provides exhaustive documentation of available traits. The content layer also
 provides additional traits in
-[`content/public/browser/browser_task_traits.h`](https://cs.chromium.org/chromium/src/content/public/browser/browser_task_traits.h)
+[`content/public/browser/browser_task_traits.h`](https://cs.monyhar.org/monyhar/src/content/public/browser/browser_task_traits.h)
 to facilitate posting a task onto a BrowserThread.
 
 Below are some examples of how to specify `base::TaskTraits`.
@@ -554,7 +554,7 @@ from slowing down the browser when its delay expires.
 
 ### Posting a Repeating Task with a Delay
 To post a task that must run at regular intervals,
-use [`base::RepeatingTimer`](https://cs.chromium.org/chromium/src/base/timer/timer.h).
+use [`base::RepeatingTimer`](https://cs.monyhar.org/monyhar/src/base/timer/timer.h).
 
 ```cpp
 class A {
@@ -582,7 +582,7 @@ class A {
 
 ### Using base::WeakPtr
 
-[`base::WeakPtr`](https://cs.chromium.org/chromium/src/base/memory/weak_ptr.h)
+[`base::WeakPtr`](https://cs.monyhar.org/monyhar/src/base/memory/weak_ptr.h)
 can be used to ensure that any callback bound to an object is canceled when that
 object is destroyed.
 
@@ -614,7 +614,7 @@ Note: `WeakPtr` is not thread-safe: `GetWeakPtr()`, `~WeakPtrFactory()`, and
 
 ### Using base::CancelableTaskTracker
 
-[`base::CancelableTaskTracker`](https://cs.chromium.org/chromium/src/base/task/cancelable_task_tracker.h)
+[`base::CancelableTaskTracker`](https://cs.monyhar.org/monyhar/src/base/task/cancelable_task_tracker.h)
 allows cancellation to happen on a different sequence than the one on which
 tasks run. Keep in mind that `CancelableTaskTracker` cannot cancel tasks that
 have already started to run.
@@ -630,7 +630,7 @@ cancelable_task_tracker.TryCancelAll();
 
 ## Posting a Job to run in parallel
 
-The [`base::PostJob`](https://cs.chromium.org/chromium/src/base/task/post_job.h)
+The [`base::PostJob`](https://cs.monyhar.org/monyhar/src/base/task/post_job.h)
 is a power user API to be able to schedule a single base::RepeatingCallback
 worker task and request that ThreadPool workers invoke it concurrently.
 This avoids degenerate cases:
@@ -641,7 +641,7 @@ This avoids degenerate cases:
   to be fair to multiple same-priority requests and/or ability to request lower
   priority work to yield when high priority work comes in.
 
-See [`base/task/job_perftest.cc`](https://cs.chromium.org/chromium/src/base/task/job_perftest.cc)
+See [`base/task/job_perftest.cc`](https://cs.monyhar.org/monyhar/src/base/task/job_perftest.cc)
 for a complete example.
 
 ```cpp
@@ -689,9 +689,9 @@ Tasks](threading_and_tasks_testing.md).
 
 To test code that uses `base::ThreadTaskRunnerHandle`,
 `base::SequencedTaskRunnerHandle` or a function in
-[`base/task/post_task.h`](https://cs.chromium.org/chromium/src/base/task/post_task.h),
+[`base/task/post_task.h`](https://cs.monyhar.org/monyhar/src/base/task/post_task.h),
 instantiate a
-[`base::test::TaskEnvironment`](https://cs.chromium.org/chromium/src/base/test/task_environment.h)
+[`base::test::TaskEnvironment`](https://cs.monyhar.org/monyhar/src/base/test/task_environment.h)
 for the scope of the test. If you need BrowserThreads, use
 `content::BrowserTaskEnvironment` instead of
 `base::test::TaskEnvironment`.
@@ -760,7 +760,7 @@ TEST(MyTest, MyTest) {
 ## Using ThreadPool in a New Process
 
 ThreadPoolInstance needs to be initialized in a process before the functions in
-[`base/task/post_task.h`](https://cs.chromium.org/chromium/src/base/task/post_task.h)
+[`base/task/post_task.h`](https://cs.monyhar.org/monyhar/src/base/task/post_task.h)
 can be used. Initialization of ThreadPoolInstance in the Chrome browser process
 and child processes (renderer, GPU, utility) has already been taken care of. To
 use ThreadPoolInstance in another process, initialize ThreadPoolInstance early
@@ -797,11 +797,11 @@ base::ThreadPoolInstance::Get()->Shutdown();
 TaskRunners shouldn't be passed through several components. Instead, the
 components that uses a TaskRunner should be the one that creates it.
 
-See [this example](https://codereview.chromium.org/2885173002/) of a
+See [this example](https://codereview.monyhar.org/2885173002/) of a
 refactoring where a TaskRunner was passed through a lot of components only to be
 used in an eventual leaf. The leaf can and should now obtain its TaskRunner
 directly from
-[`base/task/post_task.h`](https://cs.chromium.org/chromium/src/base/task/post_task.h).
+[`base/task/post_task.h`](https://cs.monyhar.org/monyhar/src/base/task/post_task.h).
 
 As mentioned above, `base::test::TaskEnvironment` allows unit tests to
 control tasks posted from underlying TaskRunners. In rare cases where a test
@@ -838,7 +838,7 @@ See [Threading and Tasks FAQ](threading_and_tasks_faq.md) for more examples.
 
 ### SequenceManager
 
-[SequenceManager](https://cs.chromium.org/chromium/src/base/task/sequence_manager/sequence_manager.h)
+[SequenceManager](https://cs.monyhar.org/monyhar/src/base/task/sequence_manager/sequence_manager.h)
 manages TaskQueues which have different properties (e.g. priority, common task
 type) multiplexing all posted tasks into a single backing sequence. This will
 usually be a MessagePump. Depending on the type of message pump used other
@@ -848,13 +848,13 @@ processed.
 
 ### MessagePump
 
-[MessagePumps](https://cs.chromium.org/chromium/src/base/message_loop/message_pump.h)
+[MessagePumps](https://cs.monyhar.org/monyhar/src/base/message_loop/message_pump.h)
 are responsible for processing native messages as well as for giving cycles to
 their delegate (SequenceManager) periodically. MessagePumps take care to mixing
 delegate callbacks with native message processing so neither type of event
 starves the other of cycles.
 
-There are different [MessagePumpTypes](https://cs.chromium.org/chromium/src/base/message_loop/message_pump_type.h),
+There are different [MessagePumpTypes](https://cs.monyhar.org/monyhar/src/base/message_loop/message_pump_type.h),
 most common are:
 
 * DEFAULT: Supports tasks and timers only
@@ -916,9 +916,9 @@ following:
 
 Instead of having to deal with SequenceManager and TaskQueues code that needs a
 simple task posting environment (one default task queue) can use a
-[SingleThreadTaskExecutor](https://cs.chromium.org/chromium/src/base/task/single_thread_task_executor.h).
+[SingleThreadTaskExecutor](https://cs.monyhar.org/monyhar/src/base/task/single_thread_task_executor.h).
 
-Unit tests can use [TaskEnvironment](https://cs.chromium.org/chromium/src/base/test/task_environment.h)
+Unit tests can use [TaskEnvironment](https://cs.monyhar.org/monyhar/src/base/test/task_environment.h)
 which is highly configurable.
 
 ## MessageLoop and MessageLoopCurrent

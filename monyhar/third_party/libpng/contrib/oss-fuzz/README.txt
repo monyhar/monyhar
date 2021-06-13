@@ -10,7 +10,7 @@ Files in this directory are used by the oss-fuzz project
 for "fuzzing" libpng.
 
 They were licensed by Google Inc, using the BSD-like Chromium license,
-which may be found at https://cs.chromium.org/chromium/src/LICENSE, or, if
+which may be found at https://cs.monyhar.org/monyhar/src/LICENSE, or, if
 noted in the source, under the Apache-2.0 license, which may
 be found at http://www.apache.org/licenses/LICENSE-2.0 .
 If they have been modified, the derivatives are copyright Glenn Randers-Pehrson

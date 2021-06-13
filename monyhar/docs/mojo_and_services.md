@@ -146,7 +146,7 @@ method argument on some other already-connected interface.
 One such interface which we always have connected between a renderer's
 `RenderFrameImpl` and its corresponding `RenderFrameHostImpl` in the browser
 is
-[`BrowserInterfaceBroker`](https://cs.chromium.org/chromium/src/third_party/blink/public/mojom/browser_interface_broker.mojom).
+[`BrowserInterfaceBroker`](https://cs.monyhar.org/monyhar/src/third_party/blink/public/mojom/browser_interface_broker.mojom).
 This interface is a factory for acquiring other interfaces. Its `GetInterface`
 method takes a `GenericPendingReceiver`, which allows passing arbitrary
 interface receivers.
@@ -361,7 +361,7 @@ available in- or out-of-process.
 ### Hooking Up the Service Implementation
 
 For an out-of-process Chrome service, we simply register a factory function
-in [`//chrome/utility/services.cc`](https://cs.chromium.org/chromium/src/chrome/utility/services.cc).
+in [`//chrome/utility/services.cc`](https://cs.monyhar.org/monyhar/src/chrome/utility/services.cc).
 
 ``` cpp
 auto RunMathService(mojo::PendingReceiver<math::mojom::MathService> receiver) {
@@ -390,7 +390,7 @@ out-of-process.
 
 To launch an out-of-process service instance after the hookup performed in the
 previous section, use Content's
-[`ServiceProcessHost`](https://cs.chromium.org/chromium/src/content/public/browser/service_process_host.h?rcl=e7a1f6c9a24f3151c875598174a05167fb12c5d5&l=47)
+[`ServiceProcessHost`](https://cs.monyhar.org/monyhar/src/content/public/browser/service_process_host.h?rcl=e7a1f6c9a24f3151c875598174a05167fb12c5d5&l=47)
 API:
 
 ``` cpp
@@ -426,13 +426,13 @@ and [this note from an earlier section](#sending-a-message)).
 Ideally services will run inside the service process sandbox unless
 they need access to operating system resources. For services that need
 a custom sandbox, a new sandbox type must be defined in consultation
-with security-dev@chromium.org.
+with security-dev@monyhar.org.
 
 All services must specify their sandbox by specialization of
 `GetServiceSandboxType()` in an appropriate `service_sandbox_type.h` such as
-[`//chrome/browser/service_sandbox_type.h`](https://cs.chromium.org/chromium/src/chrome/browser/service_sandbox_type.h)
+[`//chrome/browser/service_sandbox_type.h`](https://cs.monyhar.org/monyhar/src/chrome/browser/service_sandbox_type.h)
 or
-[`//content/browser/service_sandbox_type.h`](https://cs.chromium.org/chromium/src/content/browser/service_sandbox_type.h)
+[`//content/browser/service_sandbox_type.h`](https://cs.monyhar.org/monyhar/src/content/browser/service_sandbox_type.h)
 and included where `ServiceProcessHost::Launch()` is called.
 
 ## Content-Layer Services Overview
@@ -443,7 +443,7 @@ We define an explicit mojom interface with a persistent connection
 between a renderer's frame object and the corresponding
 `RenderFrameHostImpl` in the browser process.
 This interface is called
-[`BrowserInterfaceBroker`](https://cs.chromium.org/chromium/src/third_party/blink/public/mojom/browser_interface_broker.mojom?rcl=09aa5ae71649974cae8ad4f889d7cd093637ccdb&l=11)
+[`BrowserInterfaceBroker`](https://cs.monyhar.org/monyhar/src/third_party/blink/public/mojom/browser_interface_broker.mojom?rcl=09aa5ae71649974cae8ad4f889d7cd093637ccdb&l=11)
 and is fairly easy to work with: you add a new method on `RenderFrameHostImpl`:
 
 ``` cpp
@@ -480,7 +480,7 @@ void PopulateFrameBinders(RenderFrameHostImpl* host,
 ```
 
 For binding an embedder-specific document-scoped interface, override
-[`ContentBrowserClient::RegisterBrowserInterfaceBindersForFrame()`](https://cs.chromium.org/chromium/src/content/public/browser/content_browser_client.h?rcl=3eb14ce219e383daa0cd8d743f475f9d9ce8c81a&l=999)
+[`ContentBrowserClient::RegisterBrowserInterfaceBindersForFrame()`](https://cs.monyhar.org/monyhar/src/content/public/browser/content_browser_client.h?rcl=3eb14ce219e383daa0cd8d743f475f9d9ce8c81a&l=999)
 and add the binders to the provided map.
 
 *** aside
@@ -491,7 +491,7 @@ receiver (one of the consequences is a termination of the renderer). To
 avoid this crash in tests (when content_shell doesn't bind some
 Chrome-specific interfaces, but the renderer requests them anyway),
 use the
-[`EmptyBinderForFrame`](https://cs.chromium.org/chromium/src/content/browser/browser_interface_binders.cc?rcl=12e73e76a6898cb6df6a361a98320a8936f37949&l=407)
+[`EmptyBinderForFrame`](https://cs.monyhar.org/monyhar/src/content/browser/browser_interface_binders.cc?rcl=12e73e76a6898cb6df6a361a98320a8936f37949&l=407)
 helper in `browser_interface_binders.cc`. However, it is recommended
 to have the renderer and browser sides consistent if possible.
 ***
@@ -502,7 +502,7 @@ TODO: add information about workers.
 
 If this document was not helpful in some way, please post a message to your
 friendly
-[chromium-mojo@chromium.org](https://groups.google.com/a/chromium.org/forum/#!forum/chromium-mojo)
+[monyhar-mojo@monyhar.org](https://groups.google.com/a/monyhar.org/forum/#!forum/monyhar-mojo)
 or
-[services-dev@chromium.org](https://groups.google.com/a/chromium.org/forum/#!forum/services-dev)
+[services-dev@monyhar.org](https://groups.google.com/a/monyhar.org/forum/#!forum/services-dev)
 mailing list.

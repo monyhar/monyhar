@@ -116,7 +116,7 @@ js_library("nearby_internals") {
     ":types",
     ":ui_trigger_list_object",
     ":ui_trigger_tab",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:cr.m",
   ]
 }
@@ -127,7 +127,7 @@ js_library("logging_tab") {
     ":nearby_logs_browser_proxy",
     ":nearby_prefs_browser_proxy",
     ":types",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:cr.m",
     "//ui/webui/resources/js:web_ui_listener_behavior.m",
   ]
@@ -137,7 +137,7 @@ js_library("log_object") {
   deps = [
     ":nearby_logs_browser_proxy",
     ":types",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -167,7 +167,7 @@ js_library("http_tab") {
     ":http_message_object",
     ":nearby_http_browser_proxy",
     ":types",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:cr.m",
   ]
 }
@@ -175,7 +175,7 @@ js_library("http_tab") {
 js_library("http_message_object") {
   deps = [
     ":nearby_http_browser_proxy",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -191,7 +191,7 @@ js_library("ui_trigger_tab") {
     ":nearby_ui_trigger_browser_proxy",
     ":types",
     ":ui_trigger_list_object",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:cr.m",
   ]
 }
@@ -199,7 +199,7 @@ js_library("ui_trigger_tab") {
 js_library("ui_trigger_list_object") {
   deps = [
     ":nearby_ui_trigger_browser_proxy",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -214,7 +214,7 @@ js_library("contact_tab") {
     ":contact_object",
     ":nearby_contact_browser_proxy",
     ":types",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:cr.m",
   ]
 }
@@ -222,7 +222,7 @@ js_library("contact_tab") {
 js_library("contact_object") {
   deps = [
     ":types",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 

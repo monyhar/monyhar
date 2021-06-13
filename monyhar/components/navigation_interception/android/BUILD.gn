@@ -12,7 +12,7 @@ android_library("navigation_interception_java") {
     "//url:origin_java",
   ]
   sources = [
-    "java/src/org/chromium/components/navigation_interception/InterceptNavigationDelegate.java",
-    "java/src/org/chromium/components/navigation_interception/NavigationParams.java",
+    "java/src/org/monyhar/components/navigation_interception/InterceptNavigationDelegate.java",
+    "java/src/org/monyhar/components/navigation_interception/NavigationParams.java",
   ]
 }

@@ -8,11 +8,11 @@ import("//tools/grit/grit_rule.gni")
 
 generate_jni("jni_headers") {
   sources = [
-    "java/src/org/chromium/components/permissions/PermissionDialogController.java",
-    "java/src/org/chromium/components/permissions/PermissionDialogDelegate.java",
-    "java/src/org/chromium/components/permissions/PermissionUmaUtil.java",
-    "java/src/org/chromium/components/permissions/PermissionUtil.java",
-    "java/src/org/chromium/components/permissions/nfc/NfcSystemLevelSetting.java",
+    "java/src/org/monyhar/components/permissions/PermissionDialogController.java",
+    "java/src/org/monyhar/components/permissions/PermissionDialogDelegate.java",
+    "java/src/org/monyhar/components/permissions/PermissionUmaUtil.java",
+    "java/src/org/monyhar/components/permissions/PermissionUtil.java",
+    "java/src/org/monyhar/components/permissions/nfc/NfcSystemLevelSetting.java",
   ]
 }
 
@@ -91,14 +91,14 @@ java_strings_grd("permissions_strings_grd") {
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/components/permissions/AndroidPermissionRequester.java",
-    "java/src/org/chromium/components/permissions/PermissionDialogController.java",
-    "java/src/org/chromium/components/permissions/PermissionDialogDelegate.java",
-    "java/src/org/chromium/components/permissions/PermissionDialogModel.java",
-    "java/src/org/chromium/components/permissions/PermissionUmaUtil.java",
-    "java/src/org/chromium/components/permissions/PermissionUtil.java",
-    "java/src/org/chromium/components/permissions/nfc/NfcSystemLevelPrompt.java",
-    "java/src/org/chromium/components/permissions/nfc/NfcSystemLevelSetting.java",
+    "java/src/org/monyhar/components/permissions/AndroidPermissionRequester.java",
+    "java/src/org/monyhar/components/permissions/PermissionDialogController.java",
+    "java/src/org/monyhar/components/permissions/PermissionDialogDelegate.java",
+    "java/src/org/monyhar/components/permissions/PermissionDialogModel.java",
+    "java/src/org/monyhar/components/permissions/PermissionUmaUtil.java",
+    "java/src/org/monyhar/components/permissions/PermissionUtil.java",
+    "java/src/org/monyhar/components/permissions/nfc/NfcSystemLevelPrompt.java",
+    "java/src/org/monyhar/components/permissions/nfc/NfcSystemLevelSetting.java",
   ]
   deps = [
     ":java_resources",
@@ -111,14 +111,14 @@ android_library("java") {
     "//ui/android:ui_java",
   ]
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
-  resources_package = "org.chromium.components.permissions"
+  resources_package = "org.monyhar.components.permissions"
 }
 
 java_library("components_permissions_junit_tests") {
   # Platform checks are broken for Robolectric. See https://crbug.com/1071638.
   bypass_platform_checks = true
   testonly = true
-  sources = [ "junit/src/org/chromium/components/permissions/nfc/NfcSystemLevelPromptTest.java" ]
+  sources = [ "junit/src/org/monyhar/components/permissions/nfc/NfcSystemLevelPromptTest.java" ]
   deps = [
     ":java",
     "//base:base_java_test_support",

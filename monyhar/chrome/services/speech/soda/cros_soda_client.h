@@ -15,7 +15,7 @@
 namespace soda {
 
 // Client that wraps the ML Service connection for SODA on Chrome.
-// TODO(robsc@chromium): Move this to
+// TODO(robsc@monyhar): Move this to
 // chromeos/services/machine_learning/public/cpp as SodaClient.
 class CrosSodaClient : public chromeos::machine_learning::mojom::SodaClient {
  public:

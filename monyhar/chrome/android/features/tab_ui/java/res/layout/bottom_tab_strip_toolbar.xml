@@ -3,7 +3,7 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
 
-<org.chromium.chrome.browser.tasks.tab_management.TabGroupUiToolbarView
+<org.monyhar.chrome.browser.tasks.tab_management.TabGroupUiToolbarView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/tab_group_ui_toolbar_view"
@@ -20,7 +20,7 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:gravity="center_vertical">
-            <org.chromium.ui.widget.ChromeImageView
+            <org.monyhar.ui.widget.ChromeImageView
                 android:id="@+id/toolbar_left_button"
                 style="@style/BottomToolbarButton"
                 android:src="@drawable/ic_expand_less_black_24dp"
@@ -30,20 +30,20 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"/>
-            <org.chromium.ui.widget.ChromeImageView
+            <org.monyhar.ui.widget.ChromeImageView
                 android:id="@+id/toolbar_right_button"
                 style="@style/BottomToolbarButton"
                 android:src="@drawable/plus"
                 app:tint="@color/default_icon_color_tint_list" />
         </LinearLayout>
-        <org.chromium.ui.widget.ChromeImageView
+        <org.monyhar.ui.widget.ChromeImageView
             android:id="@+id/tab_strip_fading_edge_start"
             android:layout_height="match_parent"
             android:layout_width="@dimen/tab_strip_fading_edge_width"
             android:src="@drawable/tab_strip_fading_edge_start"
             android:layout_marginStart="@dimen/tab_strip_button_width"
             tools:ignore="contentDescription"/>
-        <org.chromium.ui.widget.ChromeImageView
+        <org.monyhar.ui.widget.ChromeImageView
             android:id="@+id/tab_strip_fading_edge_end"
             android:layout_height="match_parent"
             android:layout_width="@dimen/tab_strip_fading_edge_width"
@@ -52,4 +52,4 @@
             android:layout_gravity="bottom|end"
             tools:ignore="contentDescription"/>
     </FrameLayout>
-</org.chromium.chrome.browser.tasks.tab_management.TabGroupUiToolbarView>
+</org.monyhar.chrome.browser.tasks.tab_management.TabGroupUiToolbarView>

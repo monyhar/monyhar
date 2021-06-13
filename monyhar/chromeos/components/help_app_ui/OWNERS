@@ -1,6 +1,6 @@
 dstockwell@google.com
-tapted@chromium.org
-patricialor@chromium.org
+tapted@monyhar.org
+patricialor@monyhar.org
 
 per-file *.mojom=set noparent
 per-file *.mojom=file://ipc/SECURITY_OWNERS

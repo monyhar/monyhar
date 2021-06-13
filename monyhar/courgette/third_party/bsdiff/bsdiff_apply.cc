@@ -27,9 +27,9 @@
 //
 // ChangeLog:
 // 2009-03-31 - Change to use Streams.  Move CRC code to crc.{h,cc}
-//                --Stephen Adams <sra@chromium.org>
+//                --Stephen Adams <sra@monyhar.org>
 // 2013-04-10 - Add wrapper method to apply a patch to files directly.
-//                --Joshua Pawlicki <waffles@chromium.org>
+//                --Joshua Pawlicki <waffles@monyhar.org>
 
 // Copyright (c) 2009 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be

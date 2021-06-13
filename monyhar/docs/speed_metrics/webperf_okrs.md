@@ -30,7 +30,7 @@
   [notes](https://docs.google.com/document/d/1rmVjH7-5hGk_VB0EwErM1tcEVz100XZDYlaSd75WbRE/edit?ts=601c4a9c).
 * Completed GC integration work for the **JS Sampling Profiler**.
 * Various improvements for **Layout Instability** which especially impact carousels. See
-  [changelog](https://chromium.googlesource.com/chromium/src/+/main/docs/speed/metrics_changelog/cls.md).
+  [changelog](https://monyhar.googlesource.com/monyhar/src/+/main/docs/speed/metrics_changelog/cls.md).
 * Decided redefinition of **Cumulative Layout Shift** and announced in [post](https://web.dev/evolving-cls/).
 
 ## 2021 Q1 Objectives
@@ -57,7 +57,7 @@
 * **First Contentful Paint**: improve implementation to pass more
     [tests](https://wpt.fyi/results/paint-timing?label=master&label=experimental).
 * **Longtasks**: add system time, including garbage collection
-  ([bug](https://bugs.chromium.org/p/chromium/issues/detail?id=1091754)).
+  ([bug](https://bugs.monyhar.org/p/monyhar/issues/detail?id=1091754)).
     * Present proposal to security team, and begin socializing the proposal externally.
 * **A/B testing**: organize workshop on client-side A/B testing.
 * **JS Sampling Profiler**:
@@ -69,7 +69,7 @@
 ### New web performance APIs
 
 * **performance.measureMemory**: added support for cross-origin iframes in the same process and sent
-  [Intent to Ship](https://groups.google.com/a/chromium.org/g/blink-dev/c/RExJ9a3SmQw).
+  [Intent to Ship](https://groups.google.com/a/monyhar.org/g/blink-dev/c/RExJ9a3SmQw).
 * **Page abandonment**: made some data available publicly and socialized it in a
   [blogpost](https://calendar.perfplanet.com/2020/abandonment/).
 * **JS Sampling Profiler**:
@@ -87,10 +87,10 @@
 
 ### Existing web performance API improvements
 
-* **Largest Contentful Paint**: include removed nodes ([bug](https://bugs.chromium.org/p/chromium/issues/detail?id=1045640))
-  and ignored images occupying the full viewport ([bug](https://bugs.chromium.org/p/chromium/issues/detail?id=1133883)).
+* **Largest Contentful Paint**: include removed nodes ([bug](https://bugs.monyhar.org/p/monyhar/issues/detail?id=1045640))
+  and ignored images occupying the full viewport ([bug](https://bugs.monyhar.org/p/monyhar/issues/detail?id=1133883)).
 * **Cumulative Layout Shift**: implemented various fixes, see
-  [changelog](https://chromium.googlesource.com/chromium/src/+/main/docs/speed/metrics_changelog/README.md).
+  [changelog](https://monyhar.googlesource.com/monyhar/src/+/main/docs/speed/metrics_changelog/README.md).
 
 ## 2020 Q4 Objectives
 
@@ -126,9 +126,9 @@
 ### Existing web performance API improvements
 
   * {#lcp-20204}**Largest Contentful Paint**:
-    * Complete [investigation](https://bugs.chromium.org/p/chromium/issues/detail?id=1045640) on removed nodes
+    * Complete [investigation](https://bugs.monyhar.org/p/monyhar/issues/detail?id=1045640) on removed nodes
       and if needed update the API.
-    * [Ignore](https://bugs.chromium.org/p/chromium/issues/detail?id=1133883) images that occupy the full viewport.
+    * [Ignore](https://bugs.monyhar.org/p/monyhar/issues/detail?id=1133883) images that occupy the full viewport.
   * {#cls-20204}**Cumulative Layout Shift**: evaluate the impact of triggering on empty or invisible content and update
     [spec](https://github.com/WICG/layout-instability/issues/61) and implementation accordingly.
   * {#fcp-20204}**First Contentful Paint**: improve implementation to pass more
@@ -156,7 +156,7 @@
   * [LargestContentfulPaint](#lcp-20203):
     * Did analysis on how LCP would change when removed content is included.
     * Ignored paints occurring with opacity 0.
-  * CumulativeLayoutShift [fixes](https://chromium.googlesource.com/chromium/src/+/main/docs/speed/metrics_changelog/cls.md):
+  * CumulativeLayoutShift [fixes](https://monyhar.googlesource.com/monyhar/src/+/main/docs/speed/metrics_changelog/cls.md):
     * Ignored shifts from video thumb sliders.
     * Fixed computations for ink overflow and transforms.
     * Updated computations when child moves alongside their parent element.
@@ -195,7 +195,7 @@
   * {#lcp-20203}Improve quality of **[Largest Contentful Paint](https://github.com/WICG/largest-contentful-paint)**.
     * Decide whether LCP including removals is better than the current definition (which excludes removals).
     * Address problems with LCP not correctly accounting for opacity in some cases due to optimizations in paint code: see
-      relevant [bug](https://bugs.chromium.org/p/chromium/issues/detail?id=1092473).
+      relevant [bug](https://bugs.monyhar.org/p/monyhar/issues/detail?id=1092473).
   * {#normalization-20203}Brainstorm ideas around better **normalization** techniques for existing web performance metrics and
     socialize these ideas with the W3C Web Perf WG.
 

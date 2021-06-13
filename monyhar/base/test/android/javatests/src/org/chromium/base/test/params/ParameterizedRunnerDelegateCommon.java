@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.test.params;
+package org.monyhar.base.test.params;
 
 import org.junit.runners.model.FrameworkMethod;
 import org.junit.runners.model.TestClass;
 
-import org.chromium.base.test.params.ParameterizedRunner.ParameterizedTestInstantiationException;
+import org.monyhar.base.test.params.ParameterizedRunner.ParameterizedTestInstantiationException;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;

@@ -19,7 +19,7 @@
         android:layout_height="56dp"
         android:layout_width="match_parent">
 
-        <org.chromium.ui.widget.ChromeImageButton
+        <org.monyhar.ui.widget.ChromeImageButton
             android:id="@+id/close_button"
             android:contentDescription="@string/close"
             android:src="@drawable/btn_close"
@@ -38,7 +38,7 @@
             android:layout_gravity="center_horizontal"
             android:text="@string/sharing_long_screenshot"
             android:textAppearance="@style/TextAppearance.TextSmall.Primary.Light" />
-        <org.chromium.ui.widget.ChromeImageButton
+        <org.monyhar.ui.widget.ChromeImageButton
             android:id="@+id/done_button"
             android:contentDescription="@string/close"
             android:src="@drawable/ic_checkmark_24dp"
@@ -103,7 +103,7 @@
             android:padding="1dp"
             android:visibility="gone"/>
 
-        <org.chromium.ui.widget.ChromeImageButton
+        <org.monyhar.ui.widget.ChromeImageButton
             android:id="@+id/down_button"
             android:contentDescription="@string/close"
             android:src="@drawable/arrow_down"
@@ -113,7 +113,7 @@
             android:layout_marginBottom="10dp"
             style="@style/ToolbarButton" />
 
-        <org.chromium.ui.widget.ChromeImageButton
+        <org.monyhar.ui.widget.ChromeImageButton
             android:id="@+id/up_button"
             android:contentDescription="@string/close"
             android:src="@drawable/arrow_up"

@@ -27,7 +27,7 @@
         android:layout_marginTop="10dp" />
 
     <!-- An editable text field for the name of the home screen icon. -->
-    <org.chromium.components.browser_ui.widget.text.AlertDialogEditText
+    <org.monyhar.components.browser_ui.widget.text.AlertDialogEditText
         android:id="@+id/text"
         android:inputType="text"
         android:layout_width="match_parent"

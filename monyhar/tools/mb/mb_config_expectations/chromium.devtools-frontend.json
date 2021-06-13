@@ -1,5 +1,5 @@
 {
-  "DevTools Linux (chromium)": {
+  "DevTools Linux (monyhar)": {
     "gn_args": {
       "dcheck_always_on": true,
       "ffmpeg_branding": "Chrome",

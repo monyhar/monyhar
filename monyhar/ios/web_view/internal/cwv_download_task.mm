@@ -24,7 +24,7 @@
 int64_t const CWVDownloadSizeUnknown = -1;
 
 NSErrorDomain const CWVDownloadErrorDomain =
-    @"org.chromium.chromewebview.DownloadErrorDomain";
+    @"org.monyhar.chromewebview.DownloadErrorDomain";
 
 NSInteger const CWVDownloadErrorFailed = -100;
 NSInteger const CWVDownloadErrorAborted = -101;

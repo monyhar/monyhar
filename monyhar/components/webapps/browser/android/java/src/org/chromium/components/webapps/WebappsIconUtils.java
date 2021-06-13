@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.webapps;
+package org.monyhar.components.webapps;
 
 import android.annotation.TargetApi;
 import android.app.ActivityManager;
@@ -18,13 +18,13 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.Icon;
 import android.os.Build;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.components.browser_ui.widget.RoundedIconGenerator;
-import org.chromium.ui.base.ViewUtils;
-import org.chromium.url.GURL;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.components.browser_ui.widget.RoundedIconGenerator;
+import org.monyhar.ui.base.ViewUtils;
+import org.monyhar.url.GURL;
 
 /**
  * This class contains functions related to adding shortcuts to the Android Home

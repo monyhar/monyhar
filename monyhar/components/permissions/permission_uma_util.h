@@ -78,7 +78,7 @@ enum class PermissionSourceUI {
   PROMPT = 0,
 
   // Origin info bubble.
-  // https://www.chromium.org/Home/chromium-security/enamel/goals-for-the-origin-info-bubble
+  // https://www.monyhar.org/Home/monyhar-security/enamel/goals-for-the-origin-info-bubble
   OIB = 1,
 
   // chrome://settings/content/siteDetails?site=[SITE]

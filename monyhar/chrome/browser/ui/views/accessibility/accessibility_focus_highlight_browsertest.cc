@@ -37,7 +37,7 @@
 // 3. Find the failing interactive_ui_browsertests step.
 // 4. Click the "Deterministic failure" link for the failing test case.
 // 5. Copy the "Actual pixels" data url and paste into browser.
-// 6. Save the image into your chromium checkout in
+// 6. Save the image into your monyhar checkout in
 //    chrome/test/data/accessibility.
 
 class AccessibilityFocusHighlightBrowserTest : public InProcessBrowserTest {

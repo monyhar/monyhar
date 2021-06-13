@@ -88,7 +88,7 @@ class ArcAppPerformanceTracingTest : public BrowserWithTestWindowTest {
   views::Widget* StartArcFocusAppTracing() {
     views::Widget* const arc_widget =
         ArcAppPerformanceTracingTestHelper::CreateArcWindow(
-            "org.chromium.arc.1");
+            "org.monyhar.arc.1");
     DCHECK(arc_widget && arc_widget->GetNativeWindow());
     tracing_helper().GetTracing()->OnWindowActivated(
         wm::ActivationChangeObserver::ActivationReason::ACTIVATION_CLIENT,
@@ -126,7 +126,7 @@ TEST_F(ArcAppPerformanceTracingTest, TracingScheduled) {
 
   // Create window second.
   views::Widget* const arc_widget1 =
-      ArcAppPerformanceTracingTestHelper::CreateArcWindow("org.chromium.arc.1");
+      ArcAppPerformanceTracingTestHelper::CreateArcWindow("org.monyhar.arc.1");
   ASSERT_TRUE(arc_widget1);
   ASSERT_TRUE(arc_widget1->GetNativeWindow());
   tracing_helper().GetTracing()->OnWindowActivated(
@@ -138,7 +138,7 @@ TEST_F(ArcAppPerformanceTracingTest, TracingScheduled) {
 
   // Test reverse order, create window first.
   views::Widget* const arc_widget2 =
-      ArcAppPerformanceTracingTestHelper::CreateArcWindow("org.chromium.arc.2");
+      ArcAppPerformanceTracingTestHelper::CreateArcWindow("org.monyhar.arc.2");
   ASSERT_TRUE(arc_widget2);
   ASSERT_TRUE(arc_widget2->GetNativeWindow());
   tracing_helper().GetTracing()->OnWindowActivated(
@@ -159,7 +159,7 @@ TEST_F(ArcAppPerformanceTracingTest, TracingScheduled) {
 
 TEST_F(ArcAppPerformanceTracingTest, TracingNotScheduledForNonFocusApp) {
   views::Widget* const arc_widget =
-      ArcAppPerformanceTracingTestHelper::CreateArcWindow("org.chromium.arc.1");
+      ArcAppPerformanceTracingTestHelper::CreateArcWindow("org.monyhar.arc.1");
   ASSERT_TRUE(arc_widget);
   ASSERT_TRUE(arc_widget->GetNativeWindow());
   tracing_helper().GetTracing()->OnWindowActivated(
@@ -213,7 +213,7 @@ TEST_F(ArcAppPerformanceTracingTest, StatisticsReported) {
 TEST_F(ArcAppPerformanceTracingTest, TracingNotScheduledWhenAppSyncDisabled) {
   tracing_helper().DisableAppSync();
   views::Widget* const arc_widget =
-      ArcAppPerformanceTracingTestHelper::CreateArcWindow("org.chromium.arc.1");
+      ArcAppPerformanceTracingTestHelper::CreateArcWindow("org.monyhar.arc.1");
   ASSERT_TRUE(arc_widget);
   ASSERT_TRUE(arc_widget->GetNativeWindow());
   tracing_helper().GetTracing()->OnWindowActivated(
@@ -231,7 +231,7 @@ TEST_F(ArcAppPerformanceTracingTest, TimeToFirstFrameRendered) {
   const std::string app_id =
       ArcAppListPrefs::GetAppId(kFocusAppPackage, kFocusAppActivity);
   views::Widget* const arc_widget =
-      ArcAppPerformanceTracingTestHelper::CreateArcWindow("org.chromium.arc.1");
+      ArcAppPerformanceTracingTestHelper::CreateArcWindow("org.monyhar.arc.1");
   DCHECK(arc_widget && arc_widget->GetNativeWindow());
 
   tracing_helper().GetTracing()->OnWindowActivated(

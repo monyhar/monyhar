@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.infobar;
+package org.monyhar.chrome.browser.infobar;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -10,8 +10,8 @@ import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import org.chromium.chrome.R;
-import org.chromium.components.browser_ui.widget.RoundedCornerImageView;
+import org.monyhar.chrome.R;
+import org.monyhar.components.browser_ui.widget.RoundedCornerImageView;
 
 /**
  * Provides helper methods for Android Infobars.

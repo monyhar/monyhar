@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.external_intents;
+package org.monyhar.components.external_intents;
 
 import android.Manifest.permission;
 import android.app.Activity;
@@ -34,31 +34,31 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.app.AlertDialog;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.Log;
-import org.chromium.base.PackageManagerUtils;
-import org.chromium.base.PathUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.base.task.PostTask;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.components.embedder_support.util.UrlUtilitiesJni;
-import org.chromium.components.external_intents.ExternalNavigationDelegate.IntentToAutofillAllowingAppResult;
-import org.chromium.components.webapk.lib.client.ChromeWebApkHostSignature;
-import org.chromium.components.webapk.lib.client.WebApkValidator;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.NavigationController;
-import org.chromium.content_public.browser.NavigationEntry;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.content_public.common.ContentUrlConstants;
-import org.chromium.content_public.common.Referrer;
-import org.chromium.network.mojom.ReferrerPolicy;
-import org.chromium.ui.base.PageTransition;
-import org.chromium.ui.base.PermissionCallback;
-import org.chromium.url.GURL;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.PackageManagerUtils;
+import org.monyhar.base.PathUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.components.embedder_support.util.UrlUtilitiesJni;
+import org.monyhar.components.external_intents.ExternalNavigationDelegate.IntentToAutofillAllowingAppResult;
+import org.monyhar.components.webapk.lib.client.ChromeWebApkHostSignature;
+import org.monyhar.components.webapk.lib.client.WebApkValidator;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.NavigationController;
+import org.monyhar.content_public.browser.NavigationEntry;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.content_public.common.ContentUrlConstants;
+import org.monyhar.content_public.common.Referrer;
+import org.monyhar.network.mojom.ReferrerPolicy;
+import org.monyhar.ui.base.PageTransition;
+import org.monyhar.ui.base.PermissionCallback;
+import org.monyhar.url.GURL;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -95,7 +95,7 @@ public class ExternalNavigationHandler {
      * Records package names of external applications in the system that could have handled this
      * intent.
      */
-    public static final String EXTRA_EXTERNAL_NAV_PACKAGES = "org.chromium.chrome.browser.eenp";
+    public static final String EXTRA_EXTERNAL_NAV_PACKAGES = "org.monyhar.chrome.browser.eenp";
 
     @VisibleForTesting
     public static final String EXTRA_BROWSER_FALLBACK_URL = "browser_fallback_url";

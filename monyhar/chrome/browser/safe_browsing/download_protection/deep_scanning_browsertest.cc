@@ -54,7 +54,7 @@ namespace safe_browsing {
 
 namespace {
 
-constexpr char kUserName[] = "test@chromium.org";
+constexpr char kUserName[] = "test@monyhar.org";
 
 // Extract the metadata proto from the raw request string. Returns true on
 // success.

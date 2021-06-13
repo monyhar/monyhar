@@ -19,8 +19,8 @@ source_set("farmhash") {
 
   sources = [ "src/src/farmhash.cc" ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
   configs += [ ":farmhash-warnings" ]
 
   public_configs = [ ":farmhash_include" ]

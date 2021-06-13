@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.payments.intent;
+package org.monyhar.components.payments.intent;
 
 import android.os.Bundle;
 import android.os.Parcelable;
@@ -16,9 +16,9 @@ import java.io.StringWriter;
 import java.util.Collection;
 import java.util.List;
 /**
- * The types that corresponds to the types in org.chromium.payments.mojom. The fields of these types
+ * The types that corresponds to the types in org.monyhar.payments.mojom. The fields of these types
  * are the subset of those in the mojom types. The subset is minimally selected based on the need of
- * this package. This class should be independent of the org.chromium package.
+ * this package. This class should be independent of the org.monyhar package.
  *
  * @see <a
  *         href="https://web.dev/android-payment-apps-overview/#parameters-2">Payment

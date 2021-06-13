@@ -10,9 +10,9 @@ executable("goobsdiff") {
 
   sources = [ "goobsdiff.c" ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     "//chrome/installer/mac:fat_binary_config"
   ]
 
@@ -36,9 +36,9 @@ executable("goobspatch") {
 
   sources = [ "goobspatch.c" ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     "//chrome/installer/mac:fat_binary_config"
   ]
 

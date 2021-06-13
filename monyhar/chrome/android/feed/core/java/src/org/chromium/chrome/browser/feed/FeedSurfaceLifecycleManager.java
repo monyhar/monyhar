@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed;
+package org.monyhar.chrome.browser.feed;
 
 import android.app.Activity;
 
 import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationStatus;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationStatus;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

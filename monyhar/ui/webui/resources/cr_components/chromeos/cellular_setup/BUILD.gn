@@ -39,7 +39,7 @@ js_type_check("closure_compile_module") {
 js_library("base_page.m") {
   sources = [ "$root_gen_dir/ui/webui/resources/cr_components/chromeos/cellular_setup/base_page.m.js" ]
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
   extra_deps = [ ":base_page_module" ]
@@ -59,7 +59,7 @@ js_library("activation_verification_page.m") {
   sources = [ "$root_gen_dir/ui/webui/resources/cr_components/chromeos/cellular_setup/activation_verification_page.m.js" ]
   deps = [
     ":base_page.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_lottie:cr_lottie.m",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
@@ -71,8 +71,8 @@ js_library("activation_code_page.m") {
   deps = [
     ":cellular_setup_delegate.m",
     ":subflow_behavior.m",
-    "//third_party/polymer/v3_0/components-chromium/paper-spinner:paper-spinner-lite",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/paper-spinner:paper-spinner-lite",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
   extra_deps = [ ":activation_code_page_module" ]
@@ -81,7 +81,7 @@ js_library("activation_code_page.m") {
 js_library("confirmation_code_page.m") {
   sources = [ "$root_gen_dir/ui/webui/resources/cr_components/chromeos/cellular_setup/confirmation_code_page.m.js" ]
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/paper-spinner:paper-spinner-lite",
+    "//third_party/polymer/v3_0/components-monyhar/paper-spinner:paper-spinner-lite",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
   extra_deps = [ ":confirmation_code_page_module" ]
@@ -90,7 +90,7 @@ js_library("confirmation_code_page.m") {
 js_library("profile_discovery_list_item.m") {
   sources = [ "$root_gen_dir/ui/webui/resources/cr_components/chromeos/cellular_setup/profile_discovery_list_item.m.js" ]
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/paper-spinner:paper-spinner-lite",
+    "//third_party/polymer/v3_0/components-monyhar/paper-spinner:paper-spinner-lite",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
   extra_deps = [ ":profile_discovery_list_item_module" ]
@@ -99,7 +99,7 @@ js_library("profile_discovery_list_item.m") {
 js_library("profile_discovery_list_page.m") {
   sources = [ "$root_gen_dir/ui/webui/resources/cr_components/chromeos/cellular_setup/profile_discovery_list_page.m.js" ]
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/iron-list:iron-list",
+    "//third_party/polymer/v3_0/components-monyhar/iron-list:iron-list",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
   extra_deps = [ ":profile_discovery_list_page_module" ]
@@ -153,7 +153,7 @@ js_library("provisioning_page.m") {
     ":base_page.m",
     ":cellular_setup_delegate.m",
     ":webview_post_util.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
@@ -168,7 +168,7 @@ js_library("button_bar.m") {
   sources = [ "$root_gen_dir/ui/webui/resources/cr_components/chromeos/cellular_setup/button_bar.m.js" ]
   deps = [
     ":cellular_types.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
     "//ui/webui/resources/js/cr/ui:focus_without_ink.m",
   ]
@@ -202,7 +202,7 @@ js_library("psim_flow_ui.m") {
     ":setup_loading_page.m",
     ":subflow_behavior.m",
     "//chromeos/services/cellular_setup/public/mojom:mojom_js_library_for_compile",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
@@ -224,7 +224,7 @@ js_library("esim_flow_ui.m") {
     ":profile_discovery_list_item.m",
     ":profile_discovery_list_page.m",
     ":subflow_behavior.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_components/chromeos/network:cellular_utils.m",
     "//ui/webui/resources/cr_components/chromeos/network:mojo_interface_provider.m",
     "//ui/webui/resources/cr_components/chromeos/network:network_listener_behavior.m",

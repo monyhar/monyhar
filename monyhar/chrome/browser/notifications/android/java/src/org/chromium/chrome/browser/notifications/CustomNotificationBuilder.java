@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.notifications;
+package org.monyhar.chrome.browser.notifications;
 
-import static org.chromium.ui.base.ViewUtils.dpToPx;
+import static org.monyhar.ui.base.ViewUtils.dpToPx;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -20,11 +20,11 @@ import android.widget.RemoteViews;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.StrictModeContext;
-import org.chromium.components.browser_ui.notifications.NotificationMetadata;
-import org.chromium.components.browser_ui.notifications.NotificationWrapper;
-import org.chromium.components.browser_ui.notifications.NotificationWrapperBuilder;
-import org.chromium.ui.base.LocalizationUtils;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.components.browser_ui.notifications.NotificationMetadata;
+import org.monyhar.components.browser_ui.notifications.NotificationWrapper;
+import org.monyhar.components.browser_ui.notifications.NotificationWrapperBuilder;
+import org.monyhar.ui.base.LocalizationUtils;
 
 import java.util.Date;
 

@@ -170,9 +170,9 @@ class ResourceUtilsTest(unittest.TestCase):
         'nb': 'nb',
         'yi': 'ji'
     }
-    for chromium_locale, android_locale in \
+    for monyhar_locale, android_locale in \
         _TEST_CHROMIUM_TO_ANDROID_LOCALE_MAP.items():
-      result = resource_utils.ToAndroidLocaleName(chromium_locale)
+      result = resource_utils.ToAndroidLocaleName(monyhar_locale)
       self.assertEqual(result, android_locale)
 
   def test_ToChromiumLocaleName(self):
@@ -208,10 +208,10 @@ class ResourceUtilsTest(unittest.TestCase):
         'nb': 'nb',
         'no': 'nb',  # http://crbug.com/920960
     }
-    for android_locale, chromium_locale in \
+    for android_locale, monyhar_locale in \
         _TEST_ANDROID_TO_CHROMIUM_LOCALE_MAP.items():
       result = resource_utils.ToChromiumLocaleName(android_locale)
-      self.assertEqual(result, chromium_locale)
+      self.assertEqual(result, monyhar_locale)
 
   def test_FindLocaleInStringResourceFilePath(self):
     self.assertEqual(

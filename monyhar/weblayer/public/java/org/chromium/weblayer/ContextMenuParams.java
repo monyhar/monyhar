@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer;
+package org.monyhar.weblayer;
 
 import android.net.Uri;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.weblayer_private.interfaces.IContextMenuParams;
+import org.monyhar.weblayer_private.interfaces.IContextMenuParams;
 
 /**
  * Parameters for constructing context menu.

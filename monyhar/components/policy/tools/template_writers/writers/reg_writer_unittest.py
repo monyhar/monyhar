@@ -41,7 +41,7 @@ class RegWriterUnittest(writer_unittest_common.WriterUnittestCommon):
           "messages": {}
         }'''
     output = self.GetOutput(policy_json, {
-        '_chromium': '1',
+        '_monyhar': '1',
     }, 'reg')
     expected_output = 'Windows Registry Editor Version 5.00'
     self.CompareOutputs(output, expected_output)
@@ -56,11 +56,11 @@ class RegWriterUnittest(writer_unittest_common.WriterUnittestCommon):
           "messages": {}
         }'''
     output = self.GetOutput(policy_json, {
-        '_chromium': '1',
+        '_monyhar': '1',
         'version': '39.0.0.0'
     }, 'reg')
     expected_output = ('Windows Registry Editor Version 5.00\r\n'
-                       '; chromium version: 39.0.0.0\r\n')
+                       '; monyhar version: 39.0.0.0\r\n')
     self.CompareOutputs(output, expected_output)
 
   def testMainPolicy(self):
@@ -140,7 +140,7 @@ class RegWriterUnittest(writer_unittest_common.WriterUnittestCommon):
           "placeholders": [],
           "messages": {},
         }'''
-    output = self.GetOutput(policy_json, {'_chromium': '1'}, 'reg')
+    output = self.GetOutput(policy_json, {'_monyhar': '1'}, 'reg')
     expected_output = self.NEWLINE.join([
         'Windows Registry Editor Version 5.00', '',
         '[HKEY_LOCAL_MACHINE\\Software\\Policies\\Chromium]',
@@ -166,7 +166,7 @@ class RegWriterUnittest(writer_unittest_common.WriterUnittestCommon):
           "placeholders": [],
           "messages": {},
         }'''
-    output = self.GetOutput(policy_json, {'_chromium': '1'}, 'reg')
+    output = self.GetOutput(policy_json, {'_monyhar': '1'}, 'reg')
     expected_output = self.NEWLINE.join([
         'Windows Registry Editor Version 5.00', '',
         '[HKEY_LOCAL_MACHINE\\Software\\Policies\\Chromium]',
@@ -252,7 +252,7 @@ class RegWriterUnittest(writer_unittest_common.WriterUnittestCommon):
           "placeholders": [],
           "messages": {},
         }'''
-    output = self.GetOutput(policy_json, {'_chromium': '1'}, 'reg')
+    output = self.GetOutput(policy_json, {'_monyhar': '1'}, 'reg')
     expected_output = self.NEWLINE.join([
         'Windows Registry Editor Version 5.00', '',
         '[HKEY_LOCAL_MACHINE\\Software\\Policies\\Chromium\\ListPolicy]',
@@ -281,7 +281,7 @@ class RegWriterUnittest(writer_unittest_common.WriterUnittestCommon):
           "placeholders": [],
           "messages": {},
         }'''
-    output = self.GetOutput(policy_json, {'_chromium': '1'}, 'reg')
+    output = self.GetOutput(policy_json, {'_monyhar': '1'}, 'reg')
     expected_output = self.NEWLINE.join([
         'Windows Registry Editor Version 5.00', '',
         '[HKEY_LOCAL_MACHINE\\Software\\Policies\\Chromium\\ListPolicy]',
@@ -316,7 +316,7 @@ class RegWriterUnittest(writer_unittest_common.WriterUnittestCommon):
           "placeholders": [],
           "messages": {},
         }'''
-    output = self.GetOutput(policy_json, {'_chromium': '1'}, 'reg')
+    output = self.GetOutput(policy_json, {'_monyhar': '1'}, 'reg')
     expected_output = self.NEWLINE.join([
         'Windows Registry Editor Version 5.00', '',
         '[HKEY_LOCAL_MACHINE\\Software\\Policies\\Chromium]',
@@ -348,7 +348,7 @@ class RegWriterUnittest(writer_unittest_common.WriterUnittestCommon):
           "placeholders": [],
           "messages": {},
         }''' % str(example)
-    output = self.GetOutput(policy_json, {'_chromium': '1'}, 'reg')
+    output = self.GetOutput(policy_json, {'_monyhar': '1'}, 'reg')
     expected_output = self.NEWLINE.join([
         'Windows Registry Editor Version 5.00', '',
         '[HKEY_LOCAL_MACHINE\\Software\\Policies\\Chromium]',
@@ -376,7 +376,7 @@ class RegWriterUnittest(writer_unittest_common.WriterUnittestCommon):
           "placeholders": [],
           "messages": {},
         }'''
-    output = self.GetOutput(policy_json, {'_chromium': '1'}, 'reg')
+    output = self.GetOutput(policy_json, {'_monyhar': '1'}, 'reg')
     expected_output = self.NEWLINE.join(
         ['Windows Registry Editor Version 5.00'])
     self.CompareOutputs(output, expected_output)
@@ -414,7 +414,7 @@ class RegWriterUnittest(writer_unittest_common.WriterUnittestCommon):
           "placeholders": [],
           "messages": {},
         }'''
-    output = self.GetOutput(policy_json, {'_chromium': '1'}, 'reg')
+    output = self.GetOutput(policy_json, {'_monyhar': '1'}, 'reg')
     expected_output = self.NEWLINE.join([
         'Windows Registry Editor Version 5.00', '',
         '[HKEY_LOCAL_MACHINE\\Software\\Policies\\Chromium]', '"Policy2"="c"',

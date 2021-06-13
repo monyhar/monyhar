@@ -121,7 +121,7 @@ main() {
   patch_file=$(realpath ffmpeg.patch)
   [[ -f "$patch_file" ]] || die "patch not found"
 
-  # locate ffmpeg directory in chromium source tree
+  # locate ffmpeg directory in monyhar source tree
   local ffmpeg_dir
   ffmpeg_dir=$(realpath ../../../../../../third_party/ffmpeg)
   [[ -d "$ffmpeg_dir" ]] || die "ffmpeg not found"

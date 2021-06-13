@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_check;
+package org.monyhar.chrome.browser.password_check;
 
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 
-import org.chromium.base.ObserverList;
-import org.chromium.chrome.browser.password_check.PasswordCheckBridge.PasswordCheckObserver;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.base.ObserverList;
+import org.monyhar.chrome.browser.password_check.PasswordCheckBridge.PasswordCheckObserver;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
 
 /**
  * This class is responsible for managing the saved passwords check for signed-in users.

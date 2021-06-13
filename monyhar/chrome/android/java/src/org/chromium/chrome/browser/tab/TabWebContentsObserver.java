@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab;
+package org.monyhar.chrome.browser.tab;
 
 import android.app.Activity;
 import android.os.Handler;
@@ -10,30 +10,30 @@ import android.os.Handler;
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.ObserverList;
-import org.chromium.base.ObserverList.RewindableIterator;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.AppHooks;
-import org.chromium.chrome.browser.SwipeRefreshHandler;
-import org.chromium.chrome.browser.display_cutout.DisplayCutoutTabHelper;
-import org.chromium.chrome.browser.feedback.HelpAndFeedbackLauncherImpl;
-import org.chromium.chrome.browser.media.MediaCaptureNotificationServiceImpl;
-import org.chromium.chrome.browser.policy.PolicyAuditor;
-import org.chromium.chrome.browser.policy.PolicyAuditor.AuditEvent;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.content_public.browser.NavigationHandle;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.WebContentsAccessibility;
-import org.chromium.content_public.browser.WebContentsObserver;
-import org.chromium.net.NetError;
-import org.chromium.url.GURL;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.ObserverList.RewindableIterator;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.AppHooks;
+import org.monyhar.chrome.browser.SwipeRefreshHandler;
+import org.monyhar.chrome.browser.display_cutout.DisplayCutoutTabHelper;
+import org.monyhar.chrome.browser.feedback.HelpAndFeedbackLauncherImpl;
+import org.monyhar.chrome.browser.media.MediaCaptureNotificationServiceImpl;
+import org.monyhar.chrome.browser.policy.PolicyAuditor;
+import org.monyhar.chrome.browser.policy.PolicyAuditor.AuditEvent;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.content_public.browser.NavigationHandle;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.WebContentsAccessibility;
+import org.monyhar.content_public.browser.WebContentsObserver;
+import org.monyhar.net.NetError;
+import org.monyhar.url.GURL;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

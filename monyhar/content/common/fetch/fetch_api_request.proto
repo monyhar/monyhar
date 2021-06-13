@@ -13,7 +13,7 @@ package content.proto.internal;
 // Next Tag: 17
 message FetchAPIRequest {
   // Serializable version of the Referrer struct defined in
-  // https://cs.chromium.org/chromium/src/content/public/common/referrer.h
+  // https://cs.monyhar.org/monyhar/src/content/public/common/referrer.h
   //
   // Next Tag: 3
   message Referrer {

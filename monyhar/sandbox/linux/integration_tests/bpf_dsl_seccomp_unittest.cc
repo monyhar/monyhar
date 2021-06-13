@@ -1959,7 +1959,7 @@ SANDBOX_TEST(SandboxBPF, DISABLE_ON_TSAN(SeccompRetTrace)) {
   }
 
 // This test is disabled on arm due to a kernel bug.
-// See https://code.google.com/p/chromium/issues/detail?id=383977
+// See https://code.google.com/p/monyhar/issues/detail?id=383977
 #if defined(__arm__) || defined(__aarch64__)
   printf("This test is currently disabled on ARM32/64 due to a kernel bug.");
 #elif defined(__mips__)

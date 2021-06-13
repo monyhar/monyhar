@@ -77,7 +77,7 @@ Note that all of these are stable information, unlikely to change without
 moving or deleting files (hence requiring a full rebuild anyway) or significant
 code changes (for inherited extended attributes).
 
-Design doc: http://www.chromium.org/developers/design-documents/idl-build
+Design doc: http://www.monyhar.org/developers/design-documents/idl-build
 """
 
 # pylint: disable=relative-import

@@ -23,7 +23,7 @@ config("internal_config") {
 }
 
 grit("strings") {
-  source = "chromium/address_input_strings.grd"
+  source = "monyhar/address_input_strings.grd"
 
   outputs = [
     "messages.h",
@@ -37,14 +37,14 @@ grit("strings") {
 }
 
 config("libaddressinput_config") {
-  defines = [ "I18N_ADDRESS_VALIDATION_DATA_URL=\"https://chromium-i18n.appspot.com/ssl-aggregate-address/\"" ]
+  defines = [ "I18N_ADDRESS_VALIDATION_DATA_URL=\"https://monyhar-i18n.appspot.com/ssl-aggregate-address/\"" ]
   include_dirs = [ "src/cpp/include" ]
 }
 
 # This target provides basic functionality which is cooked into the build.
 static_library("util") {
   sources = [
-    "chromium/json.cc",
+    "monyhar/json.cc",
     "src/cpp/src/address_data.cc",
     "src/cpp/src/address_field.cc",
     "src/cpp/src/address_field_util.cc",
@@ -79,10 +79,10 @@ static_library("util") {
     "src/cpp/src/util/string_util.h",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
     ":internal_config",
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
   ]
 
   public_configs = [ ":libaddressinput_config" ]
@@ -102,22 +102,22 @@ static_library("util") {
 # for validation rules.
 static_library("libaddressinput") {
   sources = [
-    "chromium/addressinput_util.cc",
-    "chromium/addressinput_util.h",
-    "chromium/chrome_address_validator.cc",
-    "chromium/chrome_address_validator.h",
-    "chromium/chrome_metadata_source.cc",
-    "chromium/chrome_metadata_source.h",
-    "chromium/chrome_storage_impl.cc",
-    "chromium/chrome_storage_impl.h",
-    "chromium/fallback_data_store.cc",
-    "chromium/fallback_data_store.h",
-    "chromium/input_suggester.cc",
-    "chromium/input_suggester.h",
-    "chromium/storage_test_runner.h",
-    "chromium/string_compare.cc",
-    "chromium/trie.cc",
-    "chromium/trie.h",
+    "monyhar/addressinput_util.cc",
+    "monyhar/addressinput_util.h",
+    "monyhar/chrome_address_validator.cc",
+    "monyhar/chrome_address_validator.h",
+    "monyhar/chrome_metadata_source.cc",
+    "monyhar/chrome_metadata_source.h",
+    "monyhar/chrome_storage_impl.cc",
+    "monyhar/chrome_storage_impl.h",
+    "monyhar/fallback_data_store.cc",
+    "monyhar/fallback_data_store.h",
+    "monyhar/input_suggester.cc",
+    "monyhar/input_suggester.h",
+    "monyhar/storage_test_runner.h",
+    "monyhar/string_compare.cc",
+    "monyhar/trie.cc",
+    "monyhar/trie.h",
     "src/cpp/src/address_input_helper.cc",
     "src/cpp/src/address_normalizer.cc",
     "src/cpp/src/address_problem.cc",
@@ -146,10 +146,10 @@ static_library("libaddressinput") {
     "src/cpp/test/testdata_source.h",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
     ":internal_config",
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
   ]
 
   public_configs = [ ":libaddressinput_config" ]
@@ -185,10 +185,10 @@ source_set("test_support") {
     "src/cpp/test/testdata_source.cc",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
     ":internal_config",
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
   ]
 
   defines = [ "TEST_DATA_DIR=\"src/third_party/libaddressinput/src/testdata\"" ]
@@ -205,15 +205,15 @@ source_set("test_support") {
 
 test("libaddressinput_unittests") {
   sources = [
-    "chromium/addressinput_util_unittest.cc",
-    "chromium/chrome_address_validator_unittest.cc",
-    "chromium/chrome_metadata_source_unittest.cc",
-    "chromium/chrome_storage_impl_unittest.cc",
-    "chromium/fallback_data_store_unittest.cc",
-    "chromium/storage_test_runner.cc",
-    "chromium/storage_test_runner.h",
-    "chromium/string_compare_unittest.cc",
-    "chromium/trie_unittest.cc",
+    "monyhar/addressinput_util_unittest.cc",
+    "monyhar/chrome_address_validator_unittest.cc",
+    "monyhar/chrome_metadata_source_unittest.cc",
+    "monyhar/chrome_storage_impl_unittest.cc",
+    "monyhar/fallback_data_store_unittest.cc",
+    "monyhar/storage_test_runner.cc",
+    "monyhar/storage_test_runner.h",
+    "monyhar/string_compare_unittest.cc",
+    "monyhar/trie_unittest.cc",
     "src/cpp/test/address_data_test.cc",
     "src/cpp/test/address_field_test.cc",
     "src/cpp/test/address_field_util_test.cc",
@@ -251,10 +251,10 @@ test("libaddressinput_unittests") {
     "src/cpp/test/validation_task_test.cc",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
     ":internal_config",
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
   ]
 
   include_dirs = [ "src/cpp/src" ]

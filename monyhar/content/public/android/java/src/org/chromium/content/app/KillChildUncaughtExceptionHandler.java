@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.app;
+package org.monyhar.content.app;
 
 import android.os.Process;
 
-import org.chromium.base.BuildInfo;
-import org.chromium.base.annotations.MainDex;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.annotations.MainDex;
 
 /**
  * Handler that immediately kills the current process on an uncaught exception.

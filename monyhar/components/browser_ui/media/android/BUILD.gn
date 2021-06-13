@@ -6,16 +6,16 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/components/browser_ui/media/MediaImageCallback.java",
-    "java/src/org/chromium/components/browser_ui/media/MediaImageManager.java",
-    "java/src/org/chromium/components/browser_ui/media/MediaNotificationController.java",
-    "java/src/org/chromium/components/browser_ui/media/MediaNotificationImageUtils.java",
-    "java/src/org/chromium/components/browser_ui/media/MediaNotificationInfo.java",
-    "java/src/org/chromium/components/browser_ui/media/MediaNotificationListener.java",
-    "java/src/org/chromium/components/browser_ui/media/MediaNotificationManager.java",
-    "java/src/org/chromium/components/browser_ui/media/MediaNotificationUma.java",
-    "java/src/org/chromium/components/browser_ui/media/MediaSessionHelper.java",
-    "java/src/org/chromium/components/browser_ui/media/MediaSessionUma.java",
+    "java/src/org/monyhar/components/browser_ui/media/MediaImageCallback.java",
+    "java/src/org/monyhar/components/browser_ui/media/MediaImageManager.java",
+    "java/src/org/monyhar/components/browser_ui/media/MediaNotificationController.java",
+    "java/src/org/monyhar/components/browser_ui/media/MediaNotificationImageUtils.java",
+    "java/src/org/monyhar/components/browser_ui/media/MediaNotificationInfo.java",
+    "java/src/org/monyhar/components/browser_ui/media/MediaNotificationListener.java",
+    "java/src/org/monyhar/components/browser_ui/media/MediaNotificationManager.java",
+    "java/src/org/monyhar/components/browser_ui/media/MediaNotificationUma.java",
+    "java/src/org/monyhar/components/browser_ui/media/MediaSessionHelper.java",
+    "java/src/org/monyhar/components/browser_ui/media/MediaSessionUma.java",
   ]
 
   deps = [
@@ -33,7 +33,7 @@ android_library("java") {
     "//ui/android:ui_full_java",
     "//url:gurl_java",
   ]
-  resources_package = "org.chromium.components.browser_ui.media"
+  resources_package = "org.monyhar.components.browser_ui.media"
 }
 
 android_resources("java_resources") {
@@ -80,8 +80,8 @@ java_library("junit") {
   bypass_platform_checks = true
   testonly = true
   sources = [
-    "java/src/org/chromium/components/browser_ui/media/MediaImageManagerTest.java",
-    "java/src/org/chromium/components/browser_ui/media/MediaNotificationButtonComputationTest.java",
+    "java/src/org/monyhar/components/browser_ui/media/MediaImageManagerTest.java",
+    "java/src/org/monyhar/components/browser_ui/media/MediaNotificationButtonComputationTest.java",
   ]
   deps = [
     ":java",

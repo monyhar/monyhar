@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.background_sync;
+package org.monyhar.chrome.browser.background_sync;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.any;
@@ -27,22 +27,22 @@ import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.BaseSwitches;
-import org.chromium.base.Callback;
-import org.chromium.base.CommandLine;
-import org.chromium.base.SysUtils;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.browser.device.ShadowDeviceConditions;
-import org.chromium.components.background_task_scheduler.BackgroundTask;
-import org.chromium.components.background_task_scheduler.BackgroundTaskScheduler;
-import org.chromium.components.background_task_scheduler.BackgroundTaskSchedulerFactory;
-import org.chromium.components.background_task_scheduler.NativeBackgroundTask;
-import org.chromium.components.background_task_scheduler.TaskIds;
-import org.chromium.components.background_task_scheduler.TaskInfo;
-import org.chromium.components.background_task_scheduler.TaskParameters;
-import org.chromium.net.ConnectionType;
+import org.monyhar.base.BaseSwitches;
+import org.monyhar.base.Callback;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.SysUtils;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.browser.device.ShadowDeviceConditions;
+import org.monyhar.components.background_task_scheduler.BackgroundTask;
+import org.monyhar.components.background_task_scheduler.BackgroundTaskScheduler;
+import org.monyhar.components.background_task_scheduler.BackgroundTaskSchedulerFactory;
+import org.monyhar.components.background_task_scheduler.NativeBackgroundTask;
+import org.monyhar.components.background_task_scheduler.TaskIds;
+import org.monyhar.components.background_task_scheduler.TaskInfo;
+import org.monyhar.components.background_task_scheduler.TaskParameters;
+import org.monyhar.net.ConnectionType;
 
 /**
  * Unit tests for PeriodicBackgroundSyncChromeWakeUpTask.

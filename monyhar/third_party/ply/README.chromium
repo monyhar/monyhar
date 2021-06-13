@@ -20,5 +20,5 @@ Sources           ply-3.11/ply/__init__.py
 The license is in LICENSE.
 
 Modifications made with initial commit:
-- Added the file README.chromium (this file)
+- Added the file README.monyhar (this file)
 - Applies license.patch

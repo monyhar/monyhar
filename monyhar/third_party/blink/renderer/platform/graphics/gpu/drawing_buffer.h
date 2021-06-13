@@ -38,7 +38,7 @@
 #include "cc/layers/texture_layer_client.h"
 #include "cc/resources/cross_thread_shared_bitmap.h"
 #include "cc/resources/shared_bitmap_id_registrar.h"
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "gpu/command_buffer/client/gles2_interface.h"
 #include "gpu/command_buffer/client/raster_interface.h"
 #include "gpu/command_buffer/common/mailbox.h"
@@ -648,9 +648,9 @@ class PLATFORM_EXPORT DrawingBuffer : public cc::TextureLayerClient,
   // In the case of OffscreenCanvas, we do not want to enable the
   // WebGLImageChromium flag, so we replace all the
   // RuntimeEnabledFeatures::WebGLImageChromiumEnabled() call with
-  // shouldUseChromiumImage() calls, and set m_chromiumImageUsage to
+  // shouldUseChromiumImage() calls, and set m_monyharImageUsage to
   // DisallowChromiumImage in the case of OffscreenCanvas.
-  ChromiumImageUsage chromium_image_usage_;
+  ChromiumImageUsage monyhar_image_usage_;
   bool ShouldUseChromiumImage();
 
   bool opengl_flip_y_extension_;

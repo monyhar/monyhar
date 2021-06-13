@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
 import android.Manifest;
 import android.annotation.TargetApi;
@@ -27,16 +27,16 @@ import android.util.Log;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.BuildInfo;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.CalledByNativeUnchecked;
-import org.chromium.base.annotations.MainDex;
-import org.chromium.base.compat.ApiHelperForM;
-import org.chromium.base.compat.ApiHelperForN;
-import org.chromium.base.compat.ApiHelperForP;
-import org.chromium.base.compat.ApiHelperForQ;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.CalledByNativeUnchecked;
+import org.monyhar.base.annotations.MainDex;
+import org.monyhar.base.compat.ApiHelperForM;
+import org.monyhar.base.compat.ApiHelperForN;
+import org.monyhar.base.compat.ApiHelperForP;
+import org.monyhar.base.compat.ApiHelperForQ;
 
 import java.io.FileDescriptor;
 import java.io.IOException;

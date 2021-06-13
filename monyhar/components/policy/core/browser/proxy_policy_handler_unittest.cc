@@ -76,10 +76,10 @@ class ProxyPolicyHandlerTest
 TEST_F(ProxyPolicyHandlerTest, ManualOptions) {
   PolicyMap policy;
   policy.Set(key::kProxyBypassList, POLICY_LEVEL_MANDATORY, POLICY_SCOPE_USER,
-             POLICY_SOURCE_CLOUD, base::Value("http://chromium.org/override"),
+             POLICY_SOURCE_CLOUD, base::Value("http://monyhar.org/override"),
              nullptr);
   policy.Set(key::kProxyServer, POLICY_LEVEL_MANDATORY, POLICY_SCOPE_USER,
-             POLICY_SOURCE_CLOUD, base::Value("chromium.org"), nullptr);
+             POLICY_SOURCE_CLOUD, base::Value("monyhar.org"), nullptr);
   policy.Set(
       key::kProxyServerMode, POLICY_LEVEL_MANDATORY, POLICY_SCOPE_USER,
       POLICY_SOURCE_CLOUD,
@@ -88,9 +88,9 @@ TEST_F(ProxyPolicyHandlerTest, ManualOptions) {
       nullptr);
   UpdateProviderPolicy(policy);
 
-  VerifyProxyPrefs("chromium.org",
+  VerifyProxyPrefs("monyhar.org",
                    std::string(),
-                   "http://chromium.org/override",
+                   "http://monyhar.org/override",
                    ProxyPrefs::MODE_FIXED_SERVERS);
 }
 
@@ -103,15 +103,15 @@ TEST_F(ProxyPolicyHandlerTest, ManualOptionsReversedApplyOrder) {
           ProxyPolicyHandler::PROXY_MANUALLY_CONFIGURED_PROXY_SERVER_MODE),
       nullptr);
   policy.Set(key::kProxyBypassList, POLICY_LEVEL_MANDATORY, POLICY_SCOPE_USER,
-             POLICY_SOURCE_CLOUD, base::Value("http://chromium.org/override"),
+             POLICY_SOURCE_CLOUD, base::Value("http://monyhar.org/override"),
              nullptr);
   policy.Set(key::kProxyServer, POLICY_LEVEL_MANDATORY, POLICY_SCOPE_USER,
-             POLICY_SOURCE_CLOUD, base::Value("chromium.org"), nullptr);
+             POLICY_SOURCE_CLOUD, base::Value("monyhar.org"), nullptr);
   UpdateProviderPolicy(policy);
 
-  VerifyProxyPrefs("chromium.org",
+  VerifyProxyPrefs("monyhar.org",
                    std::string(),
-                   "http://chromium.org/override",
+                   "http://monyhar.org/override",
                    ProxyPrefs::MODE_FIXED_SERVERS);
 }
 
@@ -264,10 +264,10 @@ TEST_F(ProxyPolicyHandlerTest, ProxyInvalid) {
              POLICY_SOURCE_CLOUD, base::Value("http://short.org/proxy.pac"),
              nullptr);
   policy.Set(key::kProxyBypassList, POLICY_LEVEL_MANDATORY, POLICY_SCOPE_USER,
-             POLICY_SOURCE_CLOUD, base::Value("http://chromium.org/override"),
+             POLICY_SOURCE_CLOUD, base::Value("http://monyhar.org/override"),
              nullptr);
   policy.Set(key::kProxyServer, POLICY_LEVEL_MANDATORY, POLICY_SCOPE_USER,
-             POLICY_SOURCE_CLOUD, base::Value("chromium.org"), nullptr);
+             POLICY_SOURCE_CLOUD, base::Value("monyhar.org"), nullptr);
   for (int i = 0; i < ProxyPolicyHandler::MODE_COUNT; ++i) {
     policy.Set(key::kProxyServerMode, POLICY_LEVEL_MANDATORY, POLICY_SCOPE_USER,
                POLICY_SOURCE_CLOUD, base::Value(i), nullptr);

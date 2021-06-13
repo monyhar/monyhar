@@ -270,7 +270,7 @@ ACTION_P2(OnGetServerInformation, server_name, server_version) {
   std::unique_ptr<dbus::Response> response = dbus::Response::CreateEmpty();
   dbus::MessageWriter writer(response.get());
   writer.AppendString(server_name);     // name
-  writer.AppendString("chromium");      // vendor
+  writer.AppendString("monyhar");      // vendor
   writer.AppendString(server_version);  // version
   writer.AppendString("1.2");           // spec_version
   return response;

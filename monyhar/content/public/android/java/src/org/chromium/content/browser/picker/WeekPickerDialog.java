@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.picker;
+package org.monyhar.content.browser.picker;
 
 import android.content.Context;
 
-import org.chromium.content.R;
+import org.monyhar.content.R;
 
 /**
  * A week picker dialog.

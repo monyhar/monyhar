@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -11,17 +11,17 @@ import android.view.KeyEvent;
 import android.view.KeyboardShortcutGroup;
 import android.view.KeyboardShortcutInfo;
 
-import org.chromium.base.annotations.VerifiesOnN;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.fullscreen.FullscreenManager;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.TabModel;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabModelUtils;
-import org.chromium.chrome.browser.toolbar.ToolbarManager;
-import org.chromium.components.browser_ui.widget.MenuOrKeyboardActionController;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.device.gamepad.GamepadList;
+import org.monyhar.base.annotations.VerifiesOnN;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.fullscreen.FullscreenManager;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.TabModel;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabModelUtils;
+import org.monyhar.chrome.browser.toolbar.ToolbarManager;
+import org.monyhar.components.browser_ui.widget.MenuOrKeyboardActionController;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.device.gamepad.GamepadList;
 
 import java.util.ArrayList;
 import java.util.List;

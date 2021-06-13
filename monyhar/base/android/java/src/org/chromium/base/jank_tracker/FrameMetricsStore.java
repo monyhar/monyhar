@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.jank_tracker;
+package org.monyhar.base.jank_tracker;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.build.BuildConfig;
+import org.monyhar.build.BuildConfig;
 
 import java.util.ArrayList;
 import java.util.HashMap;

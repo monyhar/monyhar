@@ -29,7 +29,7 @@ class UrlUtil {
   //
   // Note that username and password are not valid here. Path (/hello), query
   // (?world), and ref (#foo) are valid. For example:
-  // "https://chromium.org/pay".
+  // "https://monyhar.org/pay".
   static bool IsValidUrlBasedPaymentMethodIdentifier(const GURL& url);
 
   // Checks whether the given |url| is a valid origin for "supported_origins"
@@ -42,7 +42,7 @@ class UrlUtil {
   //
   // Note that username, password, path (/hello), query (?world), and ref (#foo)
   // are not valid here. Only scheme, hostname, and port number are allowed. For
-  // example: "https://chromium.org".
+  // example: "https://monyhar.org".
   static bool IsValidSupportedOrigin(const GURL& url);
 
   // Checks whether the given |url| is a valid URL for a payment method manifest
@@ -54,7 +54,7 @@ class UrlUtil {
   // - Localhost.
   // - Whitelisted via --unsafely-treat-insecure-origin-as-secure=<origin>.
   //
-  // For example: "https://chromium.org/pay/web-app-manifest.json".
+  // For example: "https://monyhar.org/pay/web-app-manifest.json".
   static bool IsValidManifestUrl(const GURL& url);
 
   // Checks whether the page at the given |url| should be allowed to use the web
@@ -79,7 +79,7 @@ class UrlUtil {
   // - Localhost.
   // - Whitelisted via --unsafely-treat-insecure-origin-as-secure=<origin>.
   //
-  // For example: "https://chromium.org/pay/confirm-payment.html"
+  // For example: "https://monyhar.org/pay/confirm-payment.html"
   static bool IsValidUrlInPaymentHandlerWindow(const GURL& url);
 
   // Checks whether the page at the given |url| would typically be used for

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.resources.statics;
+package org.monyhar.ui.resources.statics;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -11,9 +11,9 @@ import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.ui.resources.Resource;
-import org.chromium.ui.resources.ResourceFactory;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.ui.resources.Resource;
+import org.monyhar.ui.resources.ResourceFactory;
 
 /**
  * A representation of a static resource and all related information for drawing it.  In general

@@ -54,7 +54,7 @@ class Tracker : public KeyedService, public base::SupportsUserData {
   // enough times or not within the bounds of the configuration for a
   // base::Feature. NOT_READY is returned if the Tracker has not been
   // initialized yet before the call to GetTriggerState(...).
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.feature_engagement
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.feature_engagement
   enum class TriggerState : int {
     HAS_BEEN_DISPLAYED = 0,
     HAS_NOT_BEEN_DISPLAYED = 1,

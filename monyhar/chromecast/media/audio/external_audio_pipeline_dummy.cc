@@ -7,7 +7,7 @@
 
 #include "chromecast/public/media/external_audio_pipeline_shlib.h"
 
-// We redefine what is already available in chromium's base/logging.h because
+// We redefine what is already available in monyhar's base/logging.h because
 // we want to avoid having that dependency in dummy implementation. When OEMs
 // swap in their implementation it complains about missing symbols.
 #if !defined(NDEBUG) || defined(DCHECK_ALWAYS_ON)

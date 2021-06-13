@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feedback;
+package org.monyhar.chrome.browser.feedback;
 
 import android.graphics.Bitmap;
 
-import org.chromium.base.task.PostTask;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 /** A implementation of {@link ScreenshotSource} that returns back a {@link Bitmap} given to it. */
 class StaticScreenshotSource implements ScreenshotSource {

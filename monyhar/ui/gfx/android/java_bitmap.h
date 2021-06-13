@@ -17,7 +17,7 @@
 namespace gfx {
 
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.ui.gfx
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.ui.gfx
 // The order and values here match AndroidBitmapFormat, as verified
 // by static_asserts in java_bitmap.cc.
 enum BitmapFormat {

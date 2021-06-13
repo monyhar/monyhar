@@ -8,9 +8,9 @@ import("//build/config/android/rules.gni")
 android_library("aw_net_java_test_support") {
   testonly = true
   sources = [
-    "java/src/org/chromium/android_webview/test/AwEmbeddedTestServer.java",
-    "java/src/org/chromium/android_webview/test/AwEmbeddedTestServerImpl.java",
-    "java/src/org/chromium/android_webview/test/AwEmbeddedTestServerService.java",
+    "java/src/org/monyhar/android_webview/test/AwEmbeddedTestServer.java",
+    "java/src/org/monyhar/android_webview/test/AwEmbeddedTestServerImpl.java",
+    "java/src/org/monyhar/android_webview/test/AwEmbeddedTestServerService.java",
   ]
   deps = [
     "//base:base_java",
@@ -25,7 +25,7 @@ android_library("aw_net_java_test_support") {
 generate_jni("aw_net_jni_headers") {
   testonly = true
   sources = [
-    "java/src/org/chromium/android_webview/test/AwEmbeddedTestServerImpl.java",
+    "java/src/org/monyhar/android_webview/test/AwEmbeddedTestServerImpl.java",
   ]
 }
 

@@ -23,7 +23,7 @@ This document currently describes how to handle failures on the deterministic
 bots.
 
 There's also
-https://www.chromium.org/developers/testing/isolated-testing/deterministic-builds;
+https://www.monyhar.org/developers/testing/isolated-testing/deterministic-builds;
 over time all documentation over there will move to here.
 
 Handling failures on the deterministic bots
@@ -32,7 +32,7 @@ Handling failures on the deterministic bots
 This section describes what to do when `compare_build_artifacts` is failing on
 a bot.
 
-The deterministic bots make sure that building the same revision of chromium
+The deterministic bots make sure that building the same revision of monyhar
 always produces the same output.
 
 To analyze the failing step, it's useful to understand what the step is doing.
@@ -76,7 +76,7 @@ to not yet be deterministic; these are listed in
 deterministic bots turn red, you usually do *not* want to add an entry to this
 list, but figure out what introduced the nondeterminism and revert that.
 
-[1]: https://chromium.googlesource.com/chromium/src/+/HEAD/tools/determinism/deterministic_build_ignorelist.pyl
+[1]: https://monyhar.googlesource.com/monyhar/src/+/HEAD/tools/determinism/deterministic_build_ignorelist.pyl
 
 If only a few bytes are different, the script prints a diff of the hexdump
 of the two files. Most of the time, you can ignore this.
@@ -119,7 +119,7 @@ Things to do, in order of involvedness and effectiveness:
   and use e.g. `gsutil.py cp gs://chrome-determinism/Windows\
   deterministic/9998/deterministic_build_diffs.tgz .` to copy one archive to
   your workstation. You can then look at the diffs in more detail. See
-  https://bugs.chromium.org/p/chromium/issues/detail?id=985285#c6 for an
+  https://bugs.monyhar.org/p/monyhar/issues/detail?id=985285#c6 for an
   example.
 
 - Try to reproduce the problem locally. First, set up two build directories

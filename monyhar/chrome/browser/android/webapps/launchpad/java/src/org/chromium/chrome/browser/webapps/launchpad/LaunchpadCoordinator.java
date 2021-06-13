@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps.launchpad;
+package org.monyhar.chrome.browser.webapps.launchpad;
 
 import android.app.Activity;
 import android.view.MenuItem;
@@ -12,9 +12,9 @@ import android.view.ViewGroup;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.ui.modaldialog.ModalDialogManager;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
 
 import java.util.List;
 

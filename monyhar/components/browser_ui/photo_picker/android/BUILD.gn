@@ -20,25 +20,25 @@ source_set("android") {
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/components/browser_ui/photo_picker/BitmapScalerTask.java",
-    "java/src/org/chromium/components/browser_ui/photo_picker/BitmapUtils.java",
-    "java/src/org/chromium/components/browser_ui/photo_picker/DecodeVideoTask.java",
-    "java/src/org/chromium/components/browser_ui/photo_picker/DecoderServiceHost.java",
-    "java/src/org/chromium/components/browser_ui/photo_picker/FileEnumWorkerTask.java",
-    "java/src/org/chromium/components/browser_ui/photo_picker/ImageDecoder.java",
-    "java/src/org/chromium/components/browser_ui/photo_picker/PhotoPickerDelegateBase.java",
-    "java/src/org/chromium/components/browser_ui/photo_picker/PhotoPickerDialog.java",
-    "java/src/org/chromium/components/browser_ui/photo_picker/PhotoPickerFeatures.java",
-    "java/src/org/chromium/components/browser_ui/photo_picker/PhotoPickerToolbar.java",
-    "java/src/org/chromium/components/browser_ui/photo_picker/PickerAdapter.java",
-    "java/src/org/chromium/components/browser_ui/photo_picker/PickerBitmap.java",
-    "java/src/org/chromium/components/browser_ui/photo_picker/PickerBitmapView.java",
-    "java/src/org/chromium/components/browser_ui/photo_picker/PickerBitmapViewHolder.java",
-    "java/src/org/chromium/components/browser_ui/photo_picker/PickerCategoryView.java",
-    "java/src/org/chromium/components/browser_ui/photo_picker/PickerVideoPlayer.java",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/BitmapScalerTask.java",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/BitmapUtils.java",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/DecodeVideoTask.java",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/DecoderServiceHost.java",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/FileEnumWorkerTask.java",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/ImageDecoder.java",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/PhotoPickerDelegateBase.java",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/PhotoPickerDialog.java",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/PhotoPickerFeatures.java",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/PhotoPickerToolbar.java",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/PickerAdapter.java",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/PickerBitmap.java",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/PickerBitmapView.java",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/PickerBitmapViewHolder.java",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/PickerCategoryView.java",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/PickerVideoPlayer.java",
   ]
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
-  resources_package = "org.chromium.components.browser_ui.photo_picker"
+  resources_package = "org.monyhar.components.browser_ui.photo_picker"
   deps = [
     ":java_resources",
     "//base:base_java",
@@ -59,17 +59,17 @@ android_library("java") {
 
 generate_jni("photo_picker_jni_headers") {
   sources = [
-    "java/src/org/chromium/components/browser_ui/photo_picker/ImageDecoder.java",
-    "java/src/org/chromium/components/browser_ui/photo_picker/PhotoPickerFeatures.java",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/ImageDecoder.java",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/PhotoPickerFeatures.java",
   ]
 }
 
 android_aidl("photo_picker_aidl") {
   import_include =
-      [ "java/src/org/chromium/components/browser_ui/photo_picker" ]
+      [ "java/src/org/monyhar/components/browser_ui/photo_picker" ]
   sources = [
-    "java/src/org/chromium/components/browser_ui/photo_picker/IDecoderService.aidl",
-    "java/src/org/chromium/components/browser_ui/photo_picker/IDecoderServiceCallback.aidl",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/IDecoderService.aidl",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/IDecoderServiceCallback.aidl",
   ]
 }
 
@@ -112,8 +112,8 @@ java_library("junit") {
   bypass_platform_checks = true
   testonly = true
   sources = [
-    "java/src/org/chromium/components/browser_ui/photo_picker/FileEnumWorkerTaskTest.java",
-    "java/src/org/chromium/components/browser_ui/photo_picker/PickerBitmapViewTest.java",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/FileEnumWorkerTaskTest.java",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/PickerBitmapViewTest.java",
   ]
   deps = [
     ":java",
@@ -135,10 +135,10 @@ android_library("javatests") {
   testonly = true
 
   sources = [
-    "java/src/org/chromium/components/browser_ui/photo_picker/DecoderServiceHostTest.java",
-    "java/src/org/chromium/components/browser_ui/photo_picker/ImageDecoderTest.java",
-    "java/src/org/chromium/components/browser_ui/photo_picker/PhotoPickerDialogTest.java",
-    "java/src/org/chromium/components/browser_ui/photo_picker/TestImageDecoderService.java",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/DecoderServiceHostTest.java",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/ImageDecoderTest.java",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/PhotoPickerDialogTest.java",
+    "java/src/org/monyhar/components/browser_ui/photo_picker/TestImageDecoderService.java",
   ]
   deps = [
     ":java",
@@ -163,5 +163,5 @@ android_library("javatests") {
     "//ui/android:ui_java",
     "//ui/android:ui_java_test_support",
   ]
-  resources_package = "org.chromium.components.browser_ui.photo_picker.test"
+  resources_package = "org.monyhar.components.browser_ui.photo_picker.test"
 }

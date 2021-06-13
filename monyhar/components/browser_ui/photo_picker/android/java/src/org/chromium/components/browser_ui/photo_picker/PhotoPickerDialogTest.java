@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.photo_picker;
+package org.monyhar.components.browser_ui.photo_picker;
 
 import android.content.ContentResolver;
 import android.content.Intent;
@@ -28,25 +28,25 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 
-import org.chromium.base.MathUtils;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.MinAndroidSdkLevel;
-import org.chromium.base.test.util.UrlUtils;
-import org.chromium.components.browser_ui.widget.RecyclerViewTestUtils;
-import org.chromium.components.browser_ui.widget.selectable_list.SelectionDelegate;
-import org.chromium.components.browser_ui.widget.selectable_list.SelectionDelegate.SelectionObserver;
-import org.chromium.content_public.browser.test.NativeLibraryTestUtils;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.content_public.browser.test.util.TouchCommon;
-import org.chromium.ui.base.ActivityWindowAndroid;
-import org.chromium.ui.base.PhotoPickerListener;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.test.util.DisableAnimationsTestRule;
-import org.chromium.ui.test.util.DummyUiActivityTestCase;
-import org.chromium.ui.test.util.RenderTestRule;
+import org.monyhar.base.MathUtils;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.MinAndroidSdkLevel;
+import org.monyhar.base.test.util.UrlUtils;
+import org.monyhar.components.browser_ui.widget.RecyclerViewTestUtils;
+import org.monyhar.components.browser_ui.widget.selectable_list.SelectionDelegate;
+import org.monyhar.components.browser_ui.widget.selectable_list.SelectionDelegate.SelectionObserver;
+import org.monyhar.content_public.browser.test.NativeLibraryTestUtils;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.content_public.browser.test.util.TouchCommon;
+import org.monyhar.ui.base.ActivityWindowAndroid;
+import org.monyhar.ui.base.PhotoPickerListener;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.test.util.DisableAnimationsTestRule;
+import org.monyhar.ui.test.util.DummyUiActivityTestCase;
+import org.monyhar.ui.test.util.RenderTestRule;
 
 import java.io.File;
 import java.util.ArrayList;

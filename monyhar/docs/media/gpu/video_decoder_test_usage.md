@@ -24,10 +24,10 @@ Wildcards can be used to run specific sets of tests:
 * Run all VP9 profile 2 tests: `tast run $HOST video.DecodeAccelVP92*`
 
 Check the
-[tast video folder](https://chromium.googlesource.com/chromiumos/platform/tast-tests/+/refs/heads/main/src/chromiumos/tast/local/bundles/cros/video/)
+[tast video folder](https://monyhar.googlesource.com/monyharos/platform/tast-tests/+/refs/heads/main/src/monyharos/tast/local/bundles/cros/video/)
 for a list of all available tests.
 See the
-[Tast quickstart guide](https://chromium.googlesource.com/chromiumos/platform/tast/+/HEAD/docs/quickstart.md)
+[Tast quickstart guide](https://monyhar.googlesource.com/monyharos/platform/tast/+/HEAD/docs/quickstart.md)
 for more information about the Tast framework.
 
 ## Running manually
@@ -40,15 +40,15 @@ the video decoder tests can be done by executing:
 e.g.: `./video_decode_accelerator_tests test-25fps.h264`
 
 __Test videos:__ Test videos are present for multiple codecs in the
-[_media/test/data_](https://cs.chromium.org/chromium/src/media/test/data/)
+[_media/test/data_](https://cs.monyhar.org/monyhar/src/media/test/data/)
 folder in Chromium's source tree (e.g.
-[_test-25fps.vp8_](https://cs.chromium.org/chromium/src/media/test/data/test-25fps.vp8)).
+[_test-25fps.vp8_](https://cs.monyhar.org/monyhar/src/media/test/data/test-25fps.vp8)).
 If no video is specified _test-25fps.h264_ will be used.
 
 __Video Metadata:__ These videos also have an accompanying metadata _.json_ file
 that needs to be deployed alongside the test video. They can also be found in
 the _media/test/data_ folder (e.g.
-[_test-25fps.h264.json_](https://cs.chromium.org/chromium/src/media/test/data/test-25fps.h264.json)).
+[_test-25fps.h264.json_](https://cs.monyhar.org/monyhar/src/media/test/data/test-25fps.h264.json)).
 If no metadata file is specified _\<video path\>.json_ will be used. The video
 metadata file contains info about the video such as its codec profile,
 dimensions, number of frames and a list of md5 frame checksums to validate
@@ -82,5 +82,5 @@ Multiple command line arguments can be given to the command:
     --help               display this help and exit.
 
 ## Source code
-See the video decoder tests [source code](https://cs.chromium.org/chromium/src/media/gpu/video_decode_accelerator_tests.cc).
+See the video decoder tests [source code](https://cs.monyhar.org/monyhar/src/media/gpu/video_decode_accelerator_tests.cc).
 

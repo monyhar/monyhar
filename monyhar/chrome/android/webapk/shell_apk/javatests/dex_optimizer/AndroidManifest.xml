@@ -4,12 +4,12 @@
      found in the LICENSE file.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.chromium.webapk.shell_apk.test.dex_optimizer"
+    package="org.monyhar.webapk.shell_apk.test.dex_optimizer"
     android:versionName="1.0" >
 
     <application android:label="DexOptimizer">
         <service
-            android:name="org.chromium.webapk.shell_apk.test.dex_optimizer.DexOptimizerServiceImpl"
+            android:name="org.monyhar.webapk.shell_apk.test.dex_optimizer.DexOptimizerServiceImpl"
             android:exported="true">
         </service>
     </application>

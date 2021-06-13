@@ -23,32 +23,32 @@ performance/resource costs. The API boundary initially will be semi-stable: it
 will tolerate 1-2 milestones of version skew. We may allow larger amounts of
 skew in the future.
 
-Both binaries are built out of the chromium git repository. However, the
+Both binaries are built out of the monyhar git repository. However, the
 binaries might be built at different versions. For example, the version of
 lacros built from the M-101 branch might run on top of the ash version built
 from the M-100 branch.
 
 Lacros can be imagined as "Linux chrome with more Wayland support". Lacros uses
-[ozone](https://chromium.googlesource.com/chromium/src.git/+/main/ui/ozone)
+[ozone](https://monyhar.googlesource.com/monyhar/src.git/+/main/ui/ozone)
 as an abstraction layer for graphics and event handling. Ozone has a "backend"
 with client-side support for the Wayland compositor protocol.
 
 Chrome OS has a Wayland server implementation called
-[exosphere](https://chromium.googlesource.com/chromium/src.git/+/main/components/exo).
+[exosphere](https://monyhar.googlesource.com/monyhar/src.git/+/main/components/exo).
 It is used by ARC (to run Android apps) and Crostini (to run Linux apps).
 
 Lacros will use exo as the Wayland server for graphics and event handling. Where
 possible we use stable Wayland protocols. We also share Wayland protocol
 extensions with ARC and Crostini (e.g.
-[zaura-shell](https://chromium.googlesource.com/chromium/src.git/+/main/components/exo/wayland/protocol/aura-shell.xml).
+[zaura-shell](https://monyhar.googlesource.com/monyhar/src.git/+/main/components/exo/wayland/protocol/aura-shell.xml).
 Higher-level features (e.g. file picking) use Mojo IPC.
 
 We call the new Mojo API surface "crosapi". It's similar in concept to Win32 or
 Cocoa, but much smaller. It's also mostly asynchronous for performance reasons.
 The API lives in
-[//chromeos/crosapi](https://chromium.googlesource.com/chromium/src.git/+/main/chromeos/crosapi).
+[//chromeos/crosapi](https://monyhar.googlesource.com/monyhar/src.git/+/main/chromeos/crosapi).
 The ash-side implementation lives in
-[//chrome/browser/ash/crosapi](https://chromium.googlesource.com/chromium/src.git/+/main/chrome/browser/ash/crosapi).
+[//chrome/browser/ash/crosapi](https://monyhar.googlesource.com/monyhar/src.git/+/main/chrome/browser/ash/crosapi).
 
 Code can be conditionally compiled into lacros via
 BUILDFLAG(IS_CHROMEOS_LACROS).

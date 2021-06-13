@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@1.11.cr0
-package: chromium/third_party/android_deps/libs/org_codehaus_plexus_plexus_interpolation
+package: monyhar/third_party/android_deps/libs/org_codehaus_plexus_plexus_interpolation
 description: "Plexus Interpolation API"
 data:
 - file: plexus-interpolation-1.11.jar

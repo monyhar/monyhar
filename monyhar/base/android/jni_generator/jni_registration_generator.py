@@ -90,14 +90,14 @@ def _Generate(java_file_paths,
             srcjar,
             '%s.java' % jni_generator.ProxyHelpers.GetQualifiedClass(True),
             data=CreateProxyJavaFromDict(combined_dict, proxy_opts))
-        # org/chromium/base/natives/GEN_JNI.java
+        # org/monyhar/base/natives/GEN_JNI.java
         build_utils.AddToZipHermetic(
             srcjar,
             '%s.java' % jni_generator.ProxyHelpers.GetQualifiedClass(False),
             data=CreateProxyJavaFromDict(
                 combined_dict, proxy_opts, forwarding=True))
       else:
-        # org/chromium/base/natives/GEN_JNI.java
+        # org/monyhar/base/natives/GEN_JNI.java
         build_utils.AddToZipHermetic(
             srcjar,
             '%s.java' % jni_generator.ProxyHelpers.GetQualifiedClass(False),

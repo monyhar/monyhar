@@ -28,7 +28,7 @@ function test() {
 
     function injectInlineScriptUsingDocumentWrite(isolated) {
       // Note the the behavior of document.write is quite unusual currently.
-      // See crrev.com/c/chromium/src/+/2236957/4/third_party/blink/web_tests/http/tests/security/isolatedWorld/resources/bypass-main-world-csp-for-inline-script.js#33
+      // See crrev.com/c/monyhar/src/+/2236957/4/third_party/blink/web_tests/http/tests/security/isolatedWorld/resources/bypass-main-world-csp-for-inline-script.js#33
       // for more details.
       var isolatedStr = isolated ? 'isolated world' : 'main world';
       var iframe = document.createElement('iframe');

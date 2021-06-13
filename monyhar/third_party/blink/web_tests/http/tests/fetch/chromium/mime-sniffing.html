@@ -3,7 +3,7 @@
 <script src = "/resources/testharnessreport.js"></script>
 <script>
 promise_test(() => {
-  return fetch('/fetch/chromium/resources/mime-sniffing.php').then(res => {
+  return fetch('/fetch/monyhar/resources/mime-sniffing.php').then(res => {
       return res.blob();
     }).then(blob => {
       assert_equals(blob.type, 'unknown/unknown');

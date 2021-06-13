@@ -108,16 +108,16 @@ window.runTests = function(log) {
   run.test("AC", '1 + 2 = [3] 4 A [[_ _ 0]]');
 
   run.test("back", '1 + 2 < [_ + _] < [_ _ _] < [_ _ 0]');
-  // TODO(dharcourt@chromium.org): The previous lines should be:
+  // TODO(dharcourt@monyhar.org): The previous lines should be:
   //   '1 + 2 < [_ + _] < [_ _ 0] < [_ _ 0]'
-  // TODO(dharcourt@chromium.org): Test more AC, C, back
+  // TODO(dharcourt@monyhar.org): Test more AC, C, back
 
   run.test("Miscellaneous Test A",
            '2 [_ _ 2] + [[2 _ 2][_ + _]] = [[2 _ 2][_ + _][][4 _ 4]]' +
            '          + [[2 _ 2][_ + _][][4 _ 4][_ + _]]' +
            '          = [[2 _ 2][_ + _][][4 _ 4][_ + _][][8 _ 8]]' +
            '          = [[2 _ 2][_ + _][][4 _ 4][_ + _][][8 _ 8][][12 _ 12]]');
-  // TODO(dharcourt@chromium.org): The previous lines should be:
+  // TODO(dharcourt@monyhar.org): The previous lines should be:
   //     '2 [_ _ 2] + [[2 _ 2][_ + _]] = [[2 _ 2][_ + 2][][4 _ 4]]' +
   //     '          + [[2 _ 2][_ + 2][][4 _ 4][_ + _]]' +
   //     '          = [[2 _ 2][_ + 2][][4 _ 4][_ + 4][][8 _ 8]]' +

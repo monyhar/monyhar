@@ -124,8 +124,8 @@ component("boringssl") {
   public_configs = [ ":external_config" ]
   configs += [ ":internal_config" ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 
   if (is_nacl) {
     deps += [ "//native_client_sdk/src/libraries/nacl_io" ]
@@ -137,7 +137,7 @@ component("boringssl") {
   }
 }
 
-if (build_with_chromium) {
+if (build_with_monyhar) {
   # These targets are named "_tests" rather than "_test" to avoid colliding with
   # a historical "boringssl_ssl_test" target. This works around a bug with the
   # iOS build rules.
@@ -158,10 +158,10 @@ if (build_with_chromium) {
       "//testing/gtest",
     ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
     configs += [
       ":internal_config",
-      "//build/config/compiler:no_chromium_code",
+      "//build/config/compiler:no_monyhar_code",
     ]
 
     # Chromium infrastructure does not support GTest, only the //base wrapper.
@@ -172,8 +172,8 @@ if (build_with_chromium) {
       "src/crypto/test/malloc.cc",
     ]
     sources += [
-      "gtest_main_chromium.cc",
-      "test_data_chromium.cc",
+      "gtest_main_monyhar.cc",
+      "test_data_monyhar.cc",
     ]
     deps += [ "//base/test:test_support" ]
 
@@ -190,10 +190,10 @@ if (build_with_chromium) {
       "//testing/gtest",
     ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
     configs += [
       ":internal_config",
-      "//build/config/compiler:no_chromium_code",
+      "//build/config/compiler:no_monyhar_code",
     ]
 
     # Chromium infrastructure does not support GTest, only the //base wrapper.
@@ -203,7 +203,7 @@ if (build_with_chromium) {
       # //base includes its own conflicting malloc shim.
       "src/crypto/test/malloc.cc",
     ]
-    sources += [ "gtest_main_chromium.cc" ]
+    sources += [ "gtest_main_monyhar.cc" ]
     deps += [ "//base/test:test_support" ]
   }
 
@@ -233,8 +233,8 @@ if (build_with_chromium) {
     ]
     configs += [ ":internal_config" ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
 
     if (is_nacl) {
       deps += [ "//native_client_sdk/src/libraries/nacl_io" ]
@@ -297,8 +297,8 @@ if (build_with_chromium) {
     ]
     configs += [ ":internal_config" ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
 
     if (is_nacl) {
       deps += [ "//native_client_sdk/src/libraries/nacl_io" ]

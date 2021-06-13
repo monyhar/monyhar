@@ -4,8 +4,8 @@
 
 source_set("signin") {
   sources = [
-    "chromium_signin_resources_provider.h",
-    "chromium_signin_resources_provider.mm",
+    "monyhar_signin_resources_provider.h",
+    "monyhar_signin_resources_provider.mm",
   ]
   deps = [
     "//base",

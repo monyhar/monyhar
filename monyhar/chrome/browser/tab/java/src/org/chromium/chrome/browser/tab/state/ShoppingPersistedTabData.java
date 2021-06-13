@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab.state;
+package org.monyhar.chrome.browser.tab.state;
 
 import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
@@ -10,30 +10,30 @@ import androidx.annotation.VisibleForTesting;
 
 import com.google.protobuf.InvalidProtocolBufferException;
 
-import org.chromium.base.Callback;
-import org.chromium.base.Log;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.supplier.ObservableSupplierImpl;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.flags.BooleanCachedFieldTrialParameter;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.IntCachedFieldTrialParameter;
-import org.chromium.chrome.browser.optimization_guide.OptimizationGuideBridgeFactory;
-import org.chromium.chrome.browser.page_annotations.BuyableProductPageAnnotation;
-import org.chromium.chrome.browser.page_annotations.PageAnnotation;
-import org.chromium.chrome.browser.page_annotations.PageAnnotationUtils;
-import org.chromium.chrome.browser.page_annotations.PageAnnotationsServiceFactory;
-import org.chromium.chrome.browser.page_annotations.ProductPriceUpdatePageAnnotation;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.proto.PriceTracking.BuyableProduct;
-import org.chromium.chrome.browser.tab.proto.PriceTracking.PriceTrackingData;
-import org.chromium.chrome.browser.tab.proto.PriceTracking.ProductPriceUpdate;
-import org.chromium.chrome.browser.tab.proto.ShoppingPersistedTabData.ShoppingPersistedTabDataProto;
-import org.chromium.components.optimization_guide.OptimizationGuideDecision;
-import org.chromium.components.optimization_guide.proto.HintsProto;
-import org.chromium.components.payments.CurrencyFormatter;
-import org.chromium.url.GURL;
+import org.monyhar.base.Callback;
+import org.monyhar.base.Log;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.supplier.ObservableSupplierImpl;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.flags.BooleanCachedFieldTrialParameter;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.IntCachedFieldTrialParameter;
+import org.monyhar.chrome.browser.optimization_guide.OptimizationGuideBridgeFactory;
+import org.monyhar.chrome.browser.page_annotations.BuyableProductPageAnnotation;
+import org.monyhar.chrome.browser.page_annotations.PageAnnotation;
+import org.monyhar.chrome.browser.page_annotations.PageAnnotationUtils;
+import org.monyhar.chrome.browser.page_annotations.PageAnnotationsServiceFactory;
+import org.monyhar.chrome.browser.page_annotations.ProductPriceUpdatePageAnnotation;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.proto.PriceTracking.BuyableProduct;
+import org.monyhar.chrome.browser.tab.proto.PriceTracking.PriceTrackingData;
+import org.monyhar.chrome.browser.tab.proto.PriceTracking.ProductPriceUpdate;
+import org.monyhar.chrome.browser.tab.proto.ShoppingPersistedTabData.ShoppingPersistedTabDataProto;
+import org.monyhar.components.optimization_guide.OptimizationGuideDecision;
+import org.monyhar.components.optimization_guide.proto.HintsProto;
+import org.monyhar.components.payments.CurrencyFormatter;
+import org.monyhar.url.GURL;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

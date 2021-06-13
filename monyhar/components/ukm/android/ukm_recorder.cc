@@ -13,7 +13,7 @@
 
 namespace metrics {
 
-// Called by Java org.chromium.chrome.browser.metrics.UkmRecorder.
+// Called by Java org.monyhar.chrome.browser.metrics.UkmRecorder.
 static void JNI_UkmRecorder_RecordEventWithBooleanMetric(
     JNIEnv* env,
     const base::android::JavaParamRef<jobject>& j_web_contents,
@@ -29,7 +29,7 @@ static void JNI_UkmRecorder_RecordEventWithBooleanMetric(
   builder.Record(ukm::UkmRecorder::Get());
 }
 
-// Called by Java org.chromium.chrome.browser.metrics.UkmRecorder.
+// Called by Java org.monyhar.chrome.browser.metrics.UkmRecorder.
 static void JNI_UkmRecorder_RecordEventWithIntegerMetric(
     JNIEnv* env,
     const base::android::JavaParamRef<jobject>& j_web_contents,

@@ -1,4 +1,4 @@
 monorail: {
   component: "Blink>NFC"
 }
-team_email: "device-dev@chromium.org"
+team_email: "device-dev@monyhar.org"

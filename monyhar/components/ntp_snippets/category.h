@@ -17,7 +17,7 @@ namespace ntp_snippets {
 // NOTE: These are persisted, so don't reorder or remove values, and insert new
 // values only in the appropriate places marked below.
 // On Android builds, a Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.ntp.snippets
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.ntp.snippets
 enum class KnownCategories {
   // Pages recently downloaded during normal navigation.
   RECENT_TABS_DEPRECATED,

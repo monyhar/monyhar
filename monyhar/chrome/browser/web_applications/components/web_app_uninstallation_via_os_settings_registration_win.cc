@@ -83,7 +83,7 @@ class UninstallationViaOsSettingsHelper {
     // e.g. uninstall_commandline
     // "C:\Users\account\AppData\Local\Microsoft\Chromium\
     //        Application\chrome.exe"
-    // --user-data-dir=c:\users\account\appdata\local\chromium\
+    // --user-data-dir=c:\users\account\appdata\local\monyhar\
     //        CustomUserData (optional)
     // --profile-directory=Default
     // --uninstall-app-id=dadckofbdkccdemmkofcgkcbpjbnafgf

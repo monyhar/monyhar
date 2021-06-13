@@ -20,7 +20,7 @@ namespace android {
 // C++ side.
 //
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.net
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.net
 enum CertVerifyStatusAndroid {
   // Certificate is trusted.
   CERT_VERIFY_STATUS_ANDROID_OK = 0,

@@ -33,7 +33,7 @@ data:
   - file: %s
   - file: %s
 """
-CIPD_DATA['package'] = 'chromium/android_webview/tools/cts_archive'
+CIPD_DATA['package'] = 'monyhar/android_webview/tools/cts_archive'
 CIPD_DATA['file1'] = 'arch1/platform1/file1.zip'
 CIPD_DATA['file1_arch'] = 'arch1'
 CIPD_DATA['file1_platform'] = 'platform1'
@@ -129,7 +129,7 @@ SUITES_DATA['template'] = """{
           'shards': 2,
           'cipd_packages': [
             {
-              "cipd_package": 'chromium/android_webview/tools/cts_archive',
+              "cipd_package": 'monyhar/android_webview/tools/cts_archive',
               'location': 'android_webview/tools/cts_archive',
               'revision': '%s',
             }
@@ -143,7 +143,7 @@ SUITES_DATA['template'] = """{
           'shards': 2,
           'cipd_packages': [
             {
-              "cipd_package": 'chromium/android_webview/tools/cts_archive',
+              "cipd_package": 'monyhar/android_webview/tools/cts_archive',
               'location': 'android_webview/tools/cts_archive',
               'revision': '%s',
             }

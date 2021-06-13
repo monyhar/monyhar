@@ -22,7 +22,7 @@ from devil.android.sdk import version_codes
 from devil.utils import logging_common
 
 sys.path.append(os.path.join(_SRC_ROOT, 'build', 'android'))
-import devil_chromium
+import devil_monyhar
 
 _SCRIPT_PATH = os.path.abspath(
     os.path.join(
@@ -114,7 +114,7 @@ def main(raw_args):
     args.verbose += 1
 
   logging_common.InitializeLogging(args)
-  devil_chromium.Initialize(adb_path=args.adb)
+  devil_monyhar.Initialize(adb_path=args.adb)
 
   with Asan(args):
     if args.command:

@@ -14,7 +14,7 @@ and inter-process boundaries.
 
 This document provides a detailed guide to bindings API usage with example code
 snippets. For a detailed API references please consult the headers in
-[//mojo/public/cpp/bindings](https://cs.chromium.org/chromium/src/mojo/public/cpp/bindings/README.md).
+[//mojo/public/cpp/bindings](https://cs.monyhar.org/monyhar/src/mojo/public/cpp/bindings/README.md).
 
 For a simplified guide targeted at Chromium developers, see [this
 link](/docs/mojo_and_services.md).
@@ -163,7 +163,7 @@ mojo::PendingReceiver<sample::mojom::Logger> receiver(std::move(pipe.handle1));
 ```
 
 That's pretty verbose, but the C++ Bindings library provides a more convenient
-way to accomplish the same thing. [remote.h](https://cs.chromium.org/chromium/src/mojo/public/cpp/bindings/remote.h)
+way to accomplish the same thing. [remote.h](https://cs.monyhar.org/monyhar/src/mojo/public/cpp/bindings/remote.h)
 defines a `BindNewPipeAndPassReceiver` method:
 
 ``` cpp
@@ -447,16 +447,16 @@ on how the `Remote<T>` is held:
 2. The consumer doesn't own the `Remote<T>`: there are two helpers
    depending on the behavior that the caller wants. If the caller wants to
    ensure that an error handler is run, then
-   [**`mojo::WrapCallbackWithDropHandler`**](https://cs.chromium.org/chromium/src/mojo/public/cpp/bindings/callback_helpers.h?l=46)
+   [**`mojo::WrapCallbackWithDropHandler`**](https://cs.monyhar.org/monyhar/src/mojo/public/cpp/bindings/callback_helpers.h?l=46)
    should be used. If the caller wants the callback to always be run, then
-   [**`mojo::WrapCallbackWithDefaultInvokeIfNotRun`**](https://cs.chromium.org/chromium/src/mojo/public/cpp/bindings/callback_helpers.h?l=40)
+   [**`mojo::WrapCallbackWithDefaultInvokeIfNotRun`**](https://cs.monyhar.org/monyhar/src/mojo/public/cpp/bindings/callback_helpers.h?l=40)
    helper should be used. With both of these helpers, usual callback care should
    be followed to ensure that the callbacks don't run after the consumer is
    destructed (e.g. because the owner of the `Remote<T>` outlives the
    consumer). This includes using
-   [**`base::WeakPtr`**](https://cs.chromium.org/chromium/src/base/memory/weak_ptr.h?l=5)
+   [**`base::WeakPtr`**](https://cs.monyhar.org/monyhar/src/base/memory/weak_ptr.h?l=5)
    or
-   [**`base::RefCounted`**](https://cs.chromium.org/chromium/src/base/memory/ref_counted.h?l=246).
+   [**`base::RefCounted`**](https://cs.monyhar.org/monyhar/src/base/memory/ref_counted.h?l=246).
    It should also be noted that with these helpers, the callbacks could be run
    synchronously while the Remote<T> is reset or destroyed.
 
@@ -871,7 +871,7 @@ pipes.
 A **self-owned receiver** exists as a standalone object which owns its interface
 implementation and automatically cleans itself up when its bound interface
 endpoint detects an error. The
-[**`MakeSelfOwnedReceiver`**](https://cs.chromium.org/chromium/src/mojo/public/cpp/bindings/self_owned_receiver.h)
+[**`MakeSelfOwnedReceiver`**](https://cs.monyhar.org/monyhar/src/mojo/public/cpp/bindings/self_owned_receiver.h)
 function is used to create such a receiver.
 .
 
@@ -903,7 +903,7 @@ Now as long as `logger` remains open somewhere in the system, the bound
 ### Receiver Sets
 
 Sometimes it's useful to share a single implementation instance with multiple
-clients. [**`ReceiverSet`**](https://cs.chromium.org/chromium/src/mojo/public/cpp/bindings/receiver_set.h)
+clients. [**`ReceiverSet`**](https://cs.monyhar.org/monyhar/src/mojo/public/cpp/bindings/receiver_set.h)
 makes this easy. Consider the Mojom:
 
 ``` cpp
@@ -951,7 +951,7 @@ class LogManager : public system::mojom::LoggerProvider,
 
 Similar to the `ReceiverSet` above, sometimes it's useful to maintain a set of
 `Remote`s for *e.g.* a set of clients observing some event.
-[**`RemoteSet`**](https://cs.chromium.org/chromium/src/mojo/public/cpp/bindings/remote_set.h)
+[**`RemoteSet`**](https://cs.monyhar.org/monyhar/src/mojo/public/cpp/bindings/remote_set.h)
 is here to help. Take the Mojom:
 
 ``` cpp
@@ -1293,7 +1293,7 @@ class Canvas {
 ```
 
 However, the Chromium tree already defines a native
-[`gfx::Rect`](https://cs.chromium.org/chromium/src/ui/gfx/geometry/rect.h) which
+[`gfx::Rect`](https://cs.monyhar.org/monyhar/src/ui/gfx/geometry/rect.h) which
 is equivalent in meaning but which also has useful helper methods. Instead of
 manually converting between a `gfx::Rect` and the Mojom-generated `RectPtr` at
 every message boundary, wouldn't it be nice if the Mojom bindings generator
@@ -1313,7 +1313,7 @@ The correct answer is, "Yes! That would be nice!" And fortunately, it can!
 In order to teach generated bindings code how to serialize an arbitrary native
 type `T` as an arbitrary Mojom type `mojom::U`, we need to define an appropriate
 specialization of the
-[`mojo::StructTraits`](https://cs.chromium.org/chromium/src/mojo/public/cpp/bindings/struct_traits.h)
+[`mojo::StructTraits`](https://cs.monyhar.org/monyhar/src/mojo/public/cpp/bindings/struct_traits.h)
 template.
 
 A valid specialization of `StructTraits` MUST define the following static
@@ -1455,7 +1455,7 @@ mojom("mojom") {
 ```
 
 See typemap documentation in
-[mojom.gni](https://cs.chromium.org/chromium/src/mojo/public/tools/bindings/mojom.gni)
+[mojom.gni](https://cs.monyhar.org/monyhar/src/mojo/public/tools/bindings/mojom.gni)
 for details on the above definition and other supported parameters.
 
 With this extra configuration present, any mojom references to `gfx.mojom.Rect`
@@ -1640,7 +1640,7 @@ Generated `ReadFoo` methods always convert `multi_word_field_name` fields to
 By now you may have noticed that additional C++ sources are generated when a
 Mojom is processed. These exist due to type mapping, and the source files we
 refer to throughout this docuemnt (namely `foo.mojom.cc` and `foo.mojom.h`) are
-really only one **variant** (the *default* or *chromium* variant) of the C++
+really only one **variant** (the *default* or *monyhar* variant) of the C++
 bindings for a given Mojom file.
 
 The only other variant currently defined in the tree is the *blink* variant,

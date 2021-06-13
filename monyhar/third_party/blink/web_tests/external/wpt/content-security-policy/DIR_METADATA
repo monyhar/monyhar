@@ -1,5 +1,5 @@
 monorail {
   component: "Blink>SecurityFeature>ContentSecurityPolicy"
 }
-team_email: "security-dev@chromium.org"
+team_email: "security-dev@monyhar.org"
 

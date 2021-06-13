@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.query_tiles;
+package org.monyhar.components.query_tiles;
 
 import android.text.TextUtils;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.components.browser_ui.widget.image_tiles.ImageTile;
+import org.monyhar.components.browser_ui.widget.image_tiles.ImageTile;
 
 import java.util.ArrayList;
 import java.util.Arrays;

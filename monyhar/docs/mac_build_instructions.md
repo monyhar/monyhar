@@ -13,7 +13,7 @@ Are you a Google employee? See
 ## System requirements
 
 *   A Mac running 10.15.4+, Intel or Arm.
-    ([More details about Arm Macs](https://chromium.googlesource.com/chromium/src.git/+/main/docs/mac_arm64.md).)
+    ([More details about Arm Macs](https://monyhar.googlesource.com/monyhar/src.git/+/main/docs/mac_arm64.md).)
 *   [Xcode](https://developer.apple.com/xcode/) 12.2+. This version of Xcode
     comes with ...
 *   The macOS 11.0 SDK. Run
@@ -24,7 +24,7 @@ Are you a Google employee? See
 
     to check whether you have it. Building with a newer SDK usually works too
     (please fix it if it doesn't), but the releases
-    [currently use Xcode 12.2](https://source.chromium.org/search?q=MAC_BINARIES_LABEL&ss=chromium)
+    [currently use Xcode 12.2](https://source.monyhar.org/search?q=MAC_BINARIES_LABEL&ss=monyhar)
     and the macOS 11.0 SDK.
 
 ## Install `depot_tools`
@@ -32,7 +32,7 @@ Are you a Google employee? See
 Clone the `depot_tools` repository:
 
 ```shell
-$ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+$ git clone https://monyhar.googlesource.com/monyhar/tools/depot_tools.git
 ```
 
 Add `depot_tools` to the end of your PATH (you will probably want to put this in
@@ -57,23 +57,23 @@ In System Preferences, check that "Energy Saver" -> "Power Adapter" ->
 checked so that your laptop doesn't go to sleep and interrupt the long network
 connection needed here.
 
-Create a `chromium` directory for the checkout and change to it (you can call
+Create a `monyhar` directory for the checkout and change to it (you can call
 this whatever you like and put it wherever you like, as long as the full path
 has no spaces):
 
 ```shell
-$ mkdir chromium && cd chromium
+$ mkdir monyhar && cd monyhar
 ```
 
 Run the `fetch` tool from `depot_tools` to check out the code and its
 dependencies.
 
 ```shell
-$ fetch chromium
+$ fetch monyhar
 ```
 
 If you don't need the full repo history, you can save time by using
-`fetch --no-history chromium`. You can call `git fetch --unshallow` to retrieve
+`fetch --no-history monyhar`. You can call `git fetch --unshallow` to retrieve
 the full history later.
 
 Expect the command to take 30 minutes on even a fast connection, and many
@@ -88,7 +88,7 @@ $ cd src
 ```
 
 *Optional*: You can also [install API
-keys](https://www.chromium.org/developers/how-tos/api-keys) if you want your
+keys](https://www.monyhar.org/developers/how-tos/api-keys) if you want your
 build to talk to some Google services, but this is not necessary for most
 development and testing purposes.
 
@@ -108,7 +108,7 @@ $ gn gen out/Default
 * You can replace `Default` with another name, but
   it should be a subdirectory of `out`.
 * For other build arguments, including release settings, see [GN build
-  configuration](https://www.chromium.org/developers/gn-build-configuration).
+  configuration](https://www.monyhar.org/developers/gn-build-configuration).
   The default will be a debug component build matching the current host
   operating system and CPU.
 * For more info on GN, run `gn help` on the command line or read the
@@ -251,9 +251,9 @@ Versions Browser". When this option is checked, Xcode adds
 `--NSDocumentRevisionsDebugMode YES` to the launch arguments, and the `YES`
 gets interpreted as a URL to open.
 
-If you have problems building, join us in `#chromium` on `irc.freenode.net` and
+If you have problems building, join us in `#monyhar` on `irc.freenode.net` and
 ask there. Be sure that the
-[waterfall](https://build.chromium.org/buildbot/waterfall/) is green and the
+[waterfall](https://build.monyhar.org/buildbot/waterfall/) is green and the
 tree is open before checking out. This will increase your chances of success.
 
 ### Improving performance of `git status`

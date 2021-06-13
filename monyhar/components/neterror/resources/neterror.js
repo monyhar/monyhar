@@ -112,7 +112,7 @@ function search(baseSearchUrl) {
 }
 
 // Implements button clicks.  This function is needed during the transition
-// between implementing these in trunk chromium and implementing them in
+// between implementing these in trunk monyhar and implementing them in
 // iOS.
 function reloadButtonClick(url) {
   if (window.errorPageController) {

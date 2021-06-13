@@ -23,7 +23,7 @@ This file describes the enumerations used in metrics data.  It is used
 along with histograms.xml to describe the histogram data collected by Chrome.
 
 For best practices on writing enumerations descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md#Enum-Histograms
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md#Enum-Histograms
 
 Please pretty-print and validate your edits by running the pretty_print.py
 and validate_format.py scripts in the same directory as this file before
@@ -4441,7 +4441,7 @@ others/histograms.xml -->
 <!--
   The alias of `enum AttestationStatus` defined in
   `system_api/dbus/attestation/interface.proto` in
-  `chromiumos/platform2` repository.
+  `monyharos/platform2` repository.
 -->
 
   <int value="0" label="STATUS_SUCCESS"/>
@@ -14959,7 +14959,7 @@ Called by update_net_error_codes.py.-->
   <summary>
     List of currently defined Cr50 flash log event types. The latest and
     greatest set can be found in
-    https://chromium.googlesource.com/chromiumos/platform/ec/+/refs/heads/main/include/flash_log.h
+    https://monyhar.googlesource.com/monyharos/platform/ec/+/refs/heads/main/include/flash_log.h
     (enum flash_event_type and enum nvmem_failure_type). Note that NVMEM errors
     are logged as subevents of flash log event 5, we register them offset by
     200.
@@ -15001,7 +15001,7 @@ Called by update_net_error_codes.py.-->
 <enum name="CrasClientType">
   <summary>
     List of the client type of CRAS. The list can be found in
-    https://chromium.googlesource.com/chromiumos/third_party/adhd/+/main/cras/src/common/cras_types.h
+    https://monyhar.googlesource.com/monyharos/third_party/adhd/+/main/cras/src/common/cras_types.h
     (enum CRAS_CLIENT_TYPE).
   </summary>
   <int value="0" label="CRAS_CLIENT_TYPE_UNKNOWN">Unknown client.</int>
@@ -15025,7 +15025,7 @@ Called by update_net_error_codes.py.-->
 <enum name="CrasDeviceType">
   <summary>
     List of the device type of CRAS. The list can be found in
-    https://chromium.googlesource.com/chromiumos/third_party/adhd/+/main/cras/src/server/cras_server_metrics.c
+    https://monyhar.googlesource.com/monyharos/third_party/adhd/+/main/cras/src/server/cras_server_metrics.c
     (enum CRAS_METRICS_DEVICE_TYPE).
   </summary>
   <int value="0" label="CRAS_METRICS_DEVICE_INTERNAL_SPEAKER"/>
@@ -15208,7 +15208,7 @@ to ensure that the crash string is shown properly on the user-facing crash UI.
   <summary>
     List of known battery indicator supports in Bluetooth Hands-free profile.
     This list should be aligned with CRAS:
-    https://chromium.googlesource.com/chromiumos/third_party/adhd/+/main/cras/src/server/cras_hfp_slc.h
+    https://monyhar.googlesource.com/monyharos/third_party/adhd/+/main/cras/src/server/cras_hfp_slc.h
   </summary>
   <int value="0" label="CRAS_HFP_BATTERY_INDICATOR_NONE"/>
   <int value="1" label="CRAS_HFP_BATTERY_INDICATOR_HFP"/>
@@ -15224,7 +15224,7 @@ to ensure that the crash string is shown properly on the user-facing crash UI.
   <summary>
     List of codec ids used for SCO audio, in Bluetooth Hands-free profile. This
     list should be aligned with CRAS:
-    https://chromium.googlesource.com/chromiumos/third_party/adhd/+/main/cras/src/server/cras_hfp_slc.h
+    https://monyhar.googlesource.com/monyharos/third_party/adhd/+/main/cras/src/server/cras_hfp_slc.h
   </summary>
   <int value="0" label="HFP_CODEC_UNUSED"/>
   <int value="1" label="HFP_CODEC_ID_CVSD"/>
@@ -15235,7 +15235,7 @@ to ensure that the crash string is shown properly on the user-facing crash UI.
   <summary>
     List of results(success or error code) of setting up a SCO connection for
     Bluetooth Hands-free profile. This list should be aligned with CRAS:
-    https://chromium.googlesource.com/chromiumos/third_party/adhd/+/main/cras/src/server/cras_server_metrics.h
+    https://monyhar.googlesource.com/monyharos/third_party/adhd/+/main/cras/src/server/cras_server_metrics.h
   </summary>
   <int value="0" label="SKT_SUCCESS"/>
   <int value="1" label="SKT_CONNECTION_ERROR"/>
@@ -37732,7 +37732,7 @@ Called by update_permissions_policy_enum.py.-->
   <summary>
     Types of action taken in response to Google Play Services user-recoverable
     errors. See subclasses of UserRecoverableErrorHandler in
-    org.chromium.chrome.browser.externalauth.ExternalAuthUtils for more
+    org.monyhar.chrome.browser.externalauth.ExternalAuthUtils for more
     information.
   </summary>
   <int value="0" label="SILENT"/>
@@ -38641,7 +38641,7 @@ Called by update_gpu_driver_bug_workaround_entries.py.-->
 <enum name="GPUsetIsAcceleratedCompositingActive">
   <summary>
     Combinations of input parameter active and previous active state set in
-    third_party/WebKit/WebKit/chromium/src/ChromiumBridge.cpp
+    third_party/WebKit/WebKit/monyhar/src/ChromiumBridge.cpp
   </summary>
   <int value="0" label="inactive, was inactive"/>
   <int value="1" label="inactive, was active"/>
@@ -38874,7 +38874,7 @@ Called by update_gpu_driver_bug_workaround_entries.py.-->
 <enum name="HardwareVerifierQualificationStatus">
   <summary>
     List of the possible qualification status of a component. This is defined in
-    https://chromium.googlesource.com/chromiumos/platform2/+/refs/heads/main/hardware_verifier/proto/hardware_verifier.proto
+    https://monyhar.googlesource.com/monyharos/platform2/+/refs/heads/main/hardware_verifier/proto/hardware_verifier.proto
     (enum QualificationStatus).
   </summary>
   <int value="0" label="UNQUALIFIED">Unqualified</int>
@@ -40402,7 +40402,7 @@ Called by update_gpu_driver_bug_workaround_entries.py.-->
 <enum name="IE7LookupResultStatus">
   <obsolete>
     Deprecated as of 07/2018. The corresponding metric was deleted in
-    https://chromium-review.googlesource.com/c/chromium/src/+/1131495.
+    https://monyhar-review.googlesource.com/c/monyhar/src/+/1131495.
   </obsolete>
   <int value="0" label="No stored passwords from IE7 found."/>
   <int value="1" label="Some stored passwords from IE7 found."/>
@@ -40985,7 +40985,7 @@ Called by update_gpu_driver_bug_workaround_entries.py.-->
     (i.e. extension with ID "jkghodnilhceideoidjikpgommlajknk" and defined in
     google_xkb_manifest.json [1]), although InputMethod.ID2 histogram is
     recorded for open-source Chromium OS and third-party IME extensions as well.
-    [1] https://source.chromium.org/chromium/chromium/src/+/main:chrome/browser/resources/chromeos/input_method/google_xkb_manifest.json?q=google_xkb_manifest.json
+    [1] https://source.monyhar.org/monyhar/monyhar/src/+/main:chrome/browser/resources/chromeos/input_method/google_xkb_manifest.json?q=google_xkb_manifest.json
   -->
 
   <int value="-2082426075" label="xkb:cz:qwerty:cze"/>
@@ -72694,7 +72694,7 @@ https://www.dmtf.org/sites/default/files/standards/documents/DSP0134_2.7.1.pdf
 <enum name="SharingLongScreenshotsBitmapGenerationStatus">
 <!--
   SharingLongScreenshotsBitmapGenerationStatus must be kept in sync with BitmapGenerationStatus defined
-  in /chrome/browser/share/android/java/src/org/chromium/chrome/browser/share/long_screenshots/LongScreenshotsMetrics.java
+  in /chrome/browser/share/android/java/src/org/monyhar/chrome/browser/share/long_screenshots/LongScreenshotsMetrics.java
 -->
 
   <int value="0" label="Unknown"/>
@@ -72712,7 +72712,7 @@ https://www.dmtf.org/sites/default/files/standards/documents/DSP0134_2.7.1.pdf
 <enum name="SharingLongScreenshotsEvent">
 <!--
   SharingLongScreenshotsEvent must be kept in sync with SharingLongScreenshotsEvent defined
-  in /chrome/browser/share/android/java/src/org/chromium/chrome/browser/share/long_screenshots/LongScreenshotsMetrics.java
+  in /chrome/browser/share/android/java/src/org/monyhar/chrome/browser/share/long_screenshots/LongScreenshotsMetrics.java
 -->
 
   <int value="0" label="Dialog Open"/>
@@ -72758,7 +72758,7 @@ https://www.dmtf.org/sites/default/files/standards/documents/DSP0134_2.7.1.pdf
 <enum name="SharingScreenshotAction">
 <!--
   SharingScreenshotAction must be kept in sync with SharingScreenshotAction defined
-  in /clank/browser/image_editor/internal/java/src/org/chromium/chrome/browser/image_editor/ImageEditorMetrics.java
+  in /clank/browser/image_editor/internal/java/src/org/monyhar/chrome/browser/image_editor/ImageEditorMetrics.java
 -->
 
   <int value="0" label="Crop tool selected"/>
@@ -72781,7 +72781,7 @@ https://www.dmtf.org/sites/default/files/standards/documents/DSP0134_2.7.1.pdf
 <enum name="SharingScreenshotFallbackAction">
 <!--
   SharingScreenshotFallbackAction must be kept in sync with SharingScreenshotAction defined
-  in /chrome/browser/share/android/java/src/org/chromium/chrome/browser/share/screenshot/ScreenshotShareSheetMetrics.java
+  in /chrome/browser/share/android/java/src/org/monyhar/chrome/browser/share/screenshot/ScreenshotShareSheetMetrics.java
 -->
 
   <int value="0" label="Screenshot Edit"/>
@@ -80611,7 +80611,7 @@ Full version information for the fingerprint enum values:
   <int value="18764319" label="webstore_installer"/>
   <int value="19185953" label="offline_prefetch"/>
   <int value="20053290" label="cryptauth_find_eligible_for_promotion"/>
-  <int value="20153177" label="quic_chromium_packet_writer"/>
+  <int value="20153177" label="quic_monyhar_packet_writer"/>
   <int value="21145003" label="extension_crx_fetcher"/>
   <int value="21785164" label="intranet_redirect_detector"/>
   <int value="22096011" label="test_partial"/>
@@ -80731,7 +80731,7 @@ Full version information for the fingerprint enum values:
   <int value="84575287" label="background_performance_tracer"/>
   <int value="84889397" label="cryptauth_enrollment_flow_setup"/>
   <int value="87558948" label="cast_message_handler"/>
-  <int value="87635401" label="quic_chromium_incoming_session"/>
+  <int value="87635401" label="quic_monyhar_incoming_session"/>
   <int value="87775794" label="adb_client_socket"/>
   <int value="88754904" label="captive_portal_service"/>
   <int value="88863520" label="autofill_query"/>
@@ -82410,8 +82410,8 @@ Full version information for the fingerprint enum values:
   <int value="1" label="Variant emoji from the emoji picker"/>
   <int value="2" label="Base emoji from the popup"/>
   <int value="3" label="Variant emoji from the popup"/>
-  <int value="4" label="Base emoji from the chromium emoji picker"/>
-  <int value="5" label="Variant emoji from the chromium emoji picker"/>
+  <int value="4" label="Base emoji from the monyhar emoji picker"/>
+  <int value="5" label="Variant emoji from the monyhar emoji picker"/>
 </enum>
 
 <enum name="VirtualKeyboardErrorTypeHashes">

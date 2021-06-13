@@ -4,7 +4,7 @@
 
 # The GN arg `strip_absolute_paths_from_debug_symbols = 1` uses relative paths
 # for debug symbols. This confuses lldb. We explicitly set the source-map to
-# point at the root directory of the chromium checkout.
+# point at the root directory of the monyhar checkout.
 import os
 import lldb
 this_dir = os.path.dirname(os.path.abspath(__file__))

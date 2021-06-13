@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui.android.webid;
+package org.monyhar.chrome.browser.ui.android.webid;
 
 import android.view.View;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetContent;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetContent;
 
 /**
  * This view renders content that gets displayed inside the bottom sheet. This

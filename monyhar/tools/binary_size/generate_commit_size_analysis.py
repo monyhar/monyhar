@@ -28,22 +28,22 @@ def _copy_files_to_staging_dir(files_to_copy, make_staging_path):
     shutil.copy(filename, make_staging_path(filename))
 
 
-def _generate_resource_sizes(to_resource_sizes_py, make_chromium_output_path,
+def _generate_resource_sizes(to_resource_sizes_py, make_monyhar_output_path,
                              make_staging_path):
   """Creates results-chart.json file in staging_dir"""
   cmd = [
       _RESOURCE_SIZES_PATH,
-      make_chromium_output_path(to_resource_sizes_py['apk_name']),
+      make_monyhar_output_path(to_resource_sizes_py['apk_name']),
       '--output-format=chartjson',
-      '--chromium-output-directory',
-      make_chromium_output_path(),
+      '--monyhar-output-directory',
+      make_monyhar_output_path(),
       '--output-dir',
       make_staging_path(),
   ]
   FORWARDED_PARAMS = [
-      ('--trichrome-library', make_chromium_output_path, 'trichrome_library'),
-      ('--trichrome-chrome', make_chromium_output_path, 'trichrome_chrome'),
-      ('--trichrome-webview', make_chromium_output_path, 'trichrome_webview'),
+      ('--trichrome-library', make_monyhar_output_path, 'trichrome_library'),
+      ('--trichrome-chrome', make_monyhar_output_path, 'trichrome_chrome'),
+      ('--trichrome-webview', make_monyhar_output_path, 'trichrome_webview'),
   ]
   for switch, fun, key in FORWARDED_PARAMS:
     if key in to_resource_sizes_py:
@@ -51,11 +51,11 @@ def _generate_resource_sizes(to_resource_sizes_py, make_chromium_output_path,
   subprocess.run(cmd, check=True)
 
 
-def _generate_supersize_archive(supersize_input_file, make_chromium_output_path,
+def _generate_supersize_archive(supersize_input_file, make_monyhar_output_path,
                                 make_staging_path):
   """Creates a .size file for the given .apk or .minimal.apks"""
   subprocess.run([_CLANG_UPDATE_PATH, '--package=objdump'], check=True)
-  supersize_input_path = make_chromium_output_path(supersize_input_file)
+  supersize_input_path = make_monyhar_output_path(supersize_input_file)
   size_path = make_staging_path(supersize_input_file) + '.size'
 
   supersize_script_path = os.path.join(_BINARY_SIZE_DIR, 'supersize')
@@ -76,7 +76,7 @@ def _generate_supersize_archive(supersize_input_file, make_chromium_output_path,
 def main():
   parser = argparse.ArgumentParser()
 
-  # A size config JSON specifies files relative to --chromium-output-directory.
+  # A size config JSON specifies files relative to --monyhar-output-directory.
   # Its fields are:
   # * mapping_files: A list of .mapping files, to be copied to --staging-dir for
   #   SuperSize and trybot_commit_size_checker.py (indirectly). SuperSize
@@ -97,7 +97,7 @@ def main():
                       help='Path to JSON file with configs for binary size '
                       'measurement.')
   parser.add_argument(
-      '--chromium-output-directory',
+      '--monyhar-output-directory',
       required=True,
       help='Location of the build artifacts.',
   )
@@ -115,10 +115,10 @@ def main():
   mapping_files = config['mapping_files']
   supersize_input_file = config['supersize_input_file']
 
-  def make_chromium_output_path(path_rel_to_output=None):
+  def make_monyhar_output_path(path_rel_to_output=None):
     if path_rel_to_output is None:
-      return args.chromium_output_directory
-    return os.path.join(args.chromium_output_directory, path_rel_to_output)
+      return args.monyhar_output_directory
+    return os.path.join(args.monyhar_output_directory, path_rel_to_output)
 
   # N.B. os.path.basename() usage.
   def make_staging_path(path_rel_to_output=None):
@@ -126,22 +126,22 @@ def main():
       return args.staging_dir
     return os.path.join(args.staging_dir, os.path.basename(path_rel_to_output))
 
-  files_to_copy = [make_chromium_output_path(f) for f in mapping_files]
+  files_to_copy = [make_monyhar_output_path(f) for f in mapping_files]
   # Copy size config JSON and .ssargs to staging dir to save settings used.
   if args.size_config_json:
     files_to_copy.append(args.size_config_json)
   if supersize_input_file.endswith('.ssargs'):
-    files_to_copy.append(make_chromium_output_path(supersize_input_file))
+    files_to_copy.append(make_monyhar_output_path(supersize_input_file))
   _copy_files_to_staging_dir(files_to_copy, make_staging_path)
 
   _generate_resource_sizes(
       to_resource_sizes_py,
-      make_chromium_output_path,
+      make_monyhar_output_path,
       make_staging_path,
   )
   _generate_supersize_archive(
       supersize_input_file,
-      make_chromium_output_path,
+      make_monyhar_output_path,
       make_staging_path,
   )
 

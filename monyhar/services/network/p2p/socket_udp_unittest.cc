@@ -468,7 +468,7 @@ TEST_F(P2PSocketUdpTest, ThrottleAfterLimitAfterReceive) {
 }
 
 // The fake clock mechanism used for this test doesn't work in component builds.
-// See: https://bugs.chromium.org/p/webrtc/issues/detail?id=6490
+// See: https://bugs.monyhar.org/p/webrtc/issues/detail?id=6490
 #if defined(COMPONENT_BUILD)
 #define MAYBE_ThrottlingStopsAtExpectedTimes \
   DISABLED_ThrottlingStopsAtExpectedTimes

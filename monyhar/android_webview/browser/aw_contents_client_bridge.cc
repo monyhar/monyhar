@@ -383,7 +383,7 @@ bool AwContentsClientBridge::ShouldOverrideUrlLoading(const std::u16string& url,
   *ignore_navigation = Java_AwContentsClientBridge_shouldOverrideUrlLoading(
       env, obj, jurl, has_user_gesture, is_redirect, is_main_frame);
   if (HasException(env)) {
-    // Tell the chromium message loop to not perform any tasks after the current
+    // Tell the monyhar message loop to not perform any tasks after the current
     // one - we want to make sure we return to Java cleanly without first making
     // any new JNI calls.
     base::CurrentUIThread::Get()->Abort();

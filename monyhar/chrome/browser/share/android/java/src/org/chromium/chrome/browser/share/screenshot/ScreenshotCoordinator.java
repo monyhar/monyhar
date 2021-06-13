@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.screenshot;
+package org.monyhar.chrome.browser.share.screenshot;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.image_editor.ImageEditorDialogCoordinator;
-import org.chromium.chrome.browser.modules.ModuleInstallUi;
-import org.chromium.chrome.browser.share.share_sheet.ChromeOptionShareCallback;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.modules.image_editor.ImageEditorModuleProvider;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.image_editor.ImageEditorDialogCoordinator;
+import org.monyhar.chrome.browser.modules.ModuleInstallUi;
+import org.monyhar.chrome.browser.share.share_sheet.ChromeOptionShareCallback;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.modules.image_editor.ImageEditorModuleProvider;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
 
 /**
  * Handles the screenshot action in the Sharing Hub and launches the screenshot editor.

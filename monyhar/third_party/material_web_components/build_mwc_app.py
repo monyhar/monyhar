@@ -34,7 +34,7 @@ _CWD = os.getcwd()  # typically out/<gn_name>/.
 _BASE_EXCLUDES = []
 _URL_MAPPINGS = []
 _MWC_PATH = os.path.join(_SRC_PATH, 'third_party', 'material_web_components',
-                         'components-chromium', 'node_modules')
+                         'components-monyhar', 'node_modules')
 
 sys.path.append(os.path.join(_SRC_PATH, 'third_party', 'node'))
 import node

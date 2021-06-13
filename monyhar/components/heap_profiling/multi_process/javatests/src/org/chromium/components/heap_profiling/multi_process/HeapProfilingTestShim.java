@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.heap_profiling.multi_process;
+package org.monyhar.components.heap_profiling.multi_process;
 
-import org.chromium.base.annotations.MainDex;
+import org.monyhar.base.annotations.MainDex;
 
 /**
  * Provides direct access to heap_profiling_test_shim, which in turn forwards to

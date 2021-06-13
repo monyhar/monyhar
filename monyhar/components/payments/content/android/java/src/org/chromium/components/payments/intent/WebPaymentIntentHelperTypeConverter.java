@@ -2,23 +2,23 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.payments.intent;
+package org.monyhar.components.payments.intent;
 
 import android.os.Bundle;
 import android.text.TextUtils;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.CollectionUtil;
-import org.chromium.payments.mojom.AddressErrors;
-import org.chromium.payments.mojom.PaymentCurrencyAmount;
-import org.chromium.payments.mojom.PaymentDetailsModifier;
-import org.chromium.payments.mojom.PaymentItem;
-import org.chromium.payments.mojom.PaymentMethodData;
-import org.chromium.payments.mojom.PaymentOptions;
-import org.chromium.payments.mojom.PaymentRequestDetailsUpdate;
-import org.chromium.payments.mojom.PaymentShippingOption;
-import org.chromium.payments.mojom.PaymentShippingType;
+import org.monyhar.base.CollectionUtil;
+import org.monyhar.payments.mojom.AddressErrors;
+import org.monyhar.payments.mojom.PaymentCurrencyAmount;
+import org.monyhar.payments.mojom.PaymentDetailsModifier;
+import org.monyhar.payments.mojom.PaymentItem;
+import org.monyhar.payments.mojom.PaymentMethodData;
+import org.monyhar.payments.mojom.PaymentOptions;
+import org.monyhar.payments.mojom.PaymentRequestDetailsUpdate;
+import org.monyhar.payments.mojom.PaymentShippingOption;
+import org.monyhar.payments.mojom.PaymentShippingType;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -28,7 +28,7 @@ import java.util.Map;
 
 /**
  * This class defines the utility functions that convert the payment info types in
- * org.chromium.payments.mojom to their counterparts in WebPaymentIntentHelperType.
+ * org.monyhar.payments.mojom to their counterparts in WebPaymentIntentHelperType.
  */
 public final class WebPaymentIntentHelperTypeConverter {
     @Nullable

@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.crash.browser;
+package org.monyhar.components.crash.browser;
 
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.annotations.UsedByReflection;
-import org.chromium.build.NativeLibraries;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.annotations.UsedByReflection;
+import org.monyhar.build.NativeLibraries;
 
 @JNINamespace("crashpad")
 final class CrashpadMain {

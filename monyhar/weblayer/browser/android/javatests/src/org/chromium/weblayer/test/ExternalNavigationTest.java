@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer.test;
+package org.monyhar.weblayer.test;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -24,16 +24,16 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.weblayer.Browser;
-import org.chromium.weblayer.NavigateParams;
-import org.chromium.weblayer.Navigation;
-import org.chromium.weblayer.NavigationCallback;
-import org.chromium.weblayer.Tab;
-import org.chromium.weblayer.TabListCallback;
-import org.chromium.weblayer.shell.InstrumentationActivity;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.weblayer.Browser;
+import org.monyhar.weblayer.NavigateParams;
+import org.monyhar.weblayer.Navigation;
+import org.monyhar.weblayer.NavigationCallback;
+import org.monyhar.weblayer.Tab;
+import org.monyhar.weblayer.TabListCallback;
+import org.monyhar.weblayer.shell.InstrumentationActivity;
 
 /**
  * Tests handling of external intents.

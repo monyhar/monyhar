@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices;
+package org.monyhar.chrome.browser.browserservices;
 
 import android.os.SystemClock;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.browserservices.verification.OriginVerifier;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.browserservices.verification.OriginVerifier;
 
 /**
  * Class to contain metrics recording constants and behaviour for Browser Services.

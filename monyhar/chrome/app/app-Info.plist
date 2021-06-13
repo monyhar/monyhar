@@ -169,7 +169,7 @@
 			<string>Viewer</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>org.chromium.extension</string>
+				<string>org.monyhar.extension</string>
 			</array>
 		</dict>
 		<dict>
@@ -259,7 +259,7 @@
 			<key>UTTypeDescription</key>
 			<string>Chromium Extra</string>
 			<key>UTTypeIdentifier</key>
-			<string>org.chromium.extension</string>
+			<string>org.monyhar.extension</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>

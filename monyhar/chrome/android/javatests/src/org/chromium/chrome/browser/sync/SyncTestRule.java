@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sync;
+package org.monyhar.chrome.browser.sync;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -25,26 +25,26 @@ import org.junit.Assert;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.base.Promise;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.autofill.PersonalDataManager;
-import org.chromium.chrome.browser.autofill.PersonalDataManager.CreditCard;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.signin.services.UnifiedConsentServiceBridge;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.browser.signin.AccountManagerTestRule;
-import org.chromium.chrome.test.util.browser.signin.SigninTestUtil;
-import org.chromium.chrome.test.util.browser.sync.SyncTestUtil;
-import org.chromium.components.signin.base.CoreAccountInfo;
-import org.chromium.components.sync.ModelType;
-import org.chromium.components.sync.protocol.AutofillWalletSpecifics;
-import org.chromium.components.sync.protocol.EntitySpecifics;
-import org.chromium.components.sync.protocol.SyncEntity;
-import org.chromium.components.sync.protocol.WalletMaskedCreditCard;
-import org.chromium.content_public.browser.test.NativeLibraryTestUtils;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.Promise;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager.CreditCard;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.signin.services.UnifiedConsentServiceBridge;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.browser.signin.AccountManagerTestRule;
+import org.monyhar.chrome.test.util.browser.signin.SigninTestUtil;
+import org.monyhar.chrome.test.util.browser.sync.SyncTestUtil;
+import org.monyhar.components.signin.base.CoreAccountInfo;
+import org.monyhar.components.sync.ModelType;
+import org.monyhar.components.sync.protocol.AutofillWalletSpecifics;
+import org.monyhar.components.sync.protocol.EntitySpecifics;
+import org.monyhar.components.sync.protocol.SyncEntity;
+import org.monyhar.components.sync.protocol.WalletMaskedCreditCard;
+import org.monyhar.content_public.browser.test.NativeLibraryTestUtils;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.Arrays;
 import java.util.Collections;

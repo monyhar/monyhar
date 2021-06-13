@@ -3,7 +3,7 @@
 Blink is the [browser engine](https://en.wikipedia.org/wiki/Browser_engine) used
 by Chromium. It is located in `src/third_party/blink`.
 
-See also the [Blink](https://www.chromium.org/blink) page on chromium.org.
+See also the [Blink](https://www.monyhar.org/blink) page on monyhar.org.
 
 ## Code Policy
 

@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor;
+package org.monyhar.chrome.browser.compositor;
 
-import org.chromium.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.Tab;
 
 /**
  * The interface that defines a {@link TitleCache}. The {@link TitleCache} is supposed to

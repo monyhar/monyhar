@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.view.Gravity;
 import android.view.View;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.components.embedder_support.view.ContentView;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.components.embedder_support.view.ContentView;
+import org.monyhar.ui.widget.Toast;
 
 /**
  * FullscreenToast is responsible for showing toast when fullscreen mode is entered. As the embedder

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr;
+package org.monyhar.chrome.browser.vr;
 
 import android.app.Activity;
 import android.app.ActivityManager;
@@ -32,37 +32,37 @@ import com.google.vr.ndk.base.AndroidCompat;
 import com.google.vr.ndk.base.DaydreamApi;
 import com.google.vr.ndk.base.GvrUiLayout;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.Log;
-import org.chromium.base.PackageUtils;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ApplicationLifetime;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.customtabs.CustomTabActivity;
-import org.chromium.chrome.browser.feedback.HelpAndFeedbackLauncherImpl;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.infobar.InfoBarIdentifier;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabUtils;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.ui.messages.infobar.SimpleConfirmInfoBarBuilder;
-import org.chromium.chrome.browser.webapps.WebappActivity;
-import org.chromium.content_public.browser.ScreenOrientationDelegate;
-import org.chromium.content_public.browser.ScreenOrientationProvider;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.PackageUtils;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ApplicationLifetime;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivity;
+import org.monyhar.chrome.browser.feedback.HelpAndFeedbackLauncherImpl;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.infobar.InfoBarIdentifier;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabUtils;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.ui.messages.infobar.SimpleConfirmInfoBarBuilder;
+import org.monyhar.chrome.browser.webapps.WebappActivity;
+import org.monyhar.content_public.browser.ScreenOrientationDelegate;
+import org.monyhar.content_public.browser.ScreenOrientationProvider;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -96,7 +96,7 @@ public class VrShellDelegate
     }
 
     private static final String VR_ENTRY_RESULT_ACTION =
-            "org.chromium.chrome.browser.vr.VrEntryResult";
+            "org.monyhar.chrome.browser.vr.VrEntryResult";
 
     private static final long REENTER_VR_TIMEOUT_MS = 1000;
 
@@ -759,11 +759,11 @@ public class VrShellDelegate
 
         SimpleConfirmInfoBarBuilder.create(tab.getWebContents(), listener,
                 InfoBarIdentifier.VR_FEEDBACK_INFOBAR_ANDROID, tab.getContext(),
-                org.chromium.chrome.vr.R.drawable.vr_services,
+                org.monyhar.chrome.vr.R.drawable.vr_services,
                 ContextUtils.getApplicationContext().getString(
-                        org.chromium.chrome.vr.R.string.vr_shell_feedback_infobar_description),
+                        org.monyhar.chrome.vr.R.string.vr_shell_feedback_infobar_description),
                 ContextUtils.getApplicationContext().getString(
-                        org.chromium.chrome.vr.R.string.vr_shell_feedback_infobar_feedback_button),
+                        org.monyhar.chrome.vr.R.string.vr_shell_feedback_infobar_feedback_button),
                 tab.getContext().getString(R.string.no_thanks), null /* linkText */,
                 true /* autoExpire  */);
     }
@@ -795,7 +795,7 @@ public class VrShellDelegate
                 // TestVrShellDelegate after startup discards the existing VrShellDelegate instance
                 // that's in use, which is bad. So, in those cases, create a TestVrShellDelegate
                 // instead of the production version.
-                Class clazz = Class.forName("org.chromium.chrome.browser.vr.TestVrShellDelegate");
+                Class clazz = Class.forName("org.monyhar.chrome.browser.vr.TestVrShellDelegate");
                 Method method = clazz.getMethod("createTestVrShellDelegate", ChromeActivity.class);
                 method.invoke(null, activity);
             } catch (Exception e) {

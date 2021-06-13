@@ -92,7 +92,7 @@ interface FrameWidget {
   // Focused window is the window that receives keyboard input.
   // The focused window is always or is always contained by the Active window.
   // Active window is the one that contains the focused element.
-  // https://www.chromium.org/developers/design-documents/aura/focus-and-activation
+  // https://www.monyhar.org/developers/design-documents/aura/focus-and-activation
   SetActive(bool active);
 
   // Only valid for sub frame local roots.

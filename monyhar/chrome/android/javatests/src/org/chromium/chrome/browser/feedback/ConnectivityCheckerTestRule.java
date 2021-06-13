@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feedback;
+package org.monyhar.chrome.browser.feedback;
 
 import android.support.test.InstrumentationRegistry;
 
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.chrome.test.ChromeBrowserTestRule;
-import org.chromium.net.test.EmbeddedTestServer;
+import org.monyhar.chrome.test.ChromeBrowserTestRule;
+import org.monyhar.net.test.EmbeddedTestServer;
 
 /**
  * Base class for tests related to checking connectivity.

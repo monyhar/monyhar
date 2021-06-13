@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml
-package: chromium/third_party/android_build_tools/art
+package: monyhar/third_party/android_build_tools/art
 description: Android ART build utilities
 data:
   - file: dexlayout

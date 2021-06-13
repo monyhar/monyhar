@@ -820,7 +820,7 @@
 <translation id="3986705137476756801">暫時關閉即時字幕</translation>
 <translation id="3987405730340719549">Chrome 判斷這可能是偽造或詐騙網站。
 
-    如果您認為系統不應顯示此訊息，請前往 https://bugs.chromium.org/p/chromium/issues/entry?template=Safety+Tips+Appeals。</translation>
+    如果您認為系統不應顯示此訊息，請前往 https://bugs.monyhar.org/p/monyhar/issues/entry?template=Safety+Tips+Appeals。</translation>
 <translation id="3987940399970879459">小於 1 MB</translation>
 <translation id="3990250421422698716">撞頁偏移</translation>
 <translation id="3996311196211510766">網站 <ph name="ORIGIN" /> 指定所有收到的要求都必須套用來源政策，但目前無法套用此政策。</translation>
@@ -1329,7 +1329,7 @@
 <translation id="5851548754964597211">分頁清單</translation>
 <translation id="5855253129151731373">此網站的主機名稱與 <ph name="LOOKALIKE_DOMAIN" /> 相似。攻擊者有時會在網域名稱中加入難以辨識的細微變更來仿冒網站。
 
-    如果您認為系統不應顯示此訊息，請前往 https://bugs.chromium.org/p/chromium/issues/entry?template=Safety+Tips+Appeals。</translation>
+    如果您認為系統不應顯示此訊息，請前往 https://bugs.monyhar.org/p/monyhar/issues/entry?template=Safety+Tips+Appeals。</translation>
 <translation id="5860033963881614850">關閉</translation>
 <translation id="5862579898803147654">堆疊器 8</translation>
 <translation id="5863847714970149516">接下來的頁面可能會向您收取費用</translation>

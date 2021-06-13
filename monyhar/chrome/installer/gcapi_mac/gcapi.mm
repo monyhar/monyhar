@@ -43,7 +43,7 @@ NSString* const kUserMasterPrefsPath =
     @"~~/Library/Application Support/Google/Chrome/"
      "Google Chrome Master Preferences";
 
-// Condensed from chromium's base/mac/mac_util.mm.
+// Condensed from monyhar's base/mac/mac_util.mm.
 bool IsOSXVersionSupported() {
   // On 10.6, Gestalt() was observed to be able to spawn threads (see
   // http://crbug.com/53200). Don't call Gestalt().

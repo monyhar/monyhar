@@ -452,15 +452,15 @@ void CheckClientDownloadRequestBase::SendRequest() {
               "This request is triggered when a download is about to complete, "
               "the download is not allowlisted, and its file extension is "
               "supported by download protection service (e.g. executables, "
-              "archives). Please refer to https://cs.chromium.org/chromium/src/"
+              "archives). Please refer to https://cs.monyhar.org/monyhar/src/"
               "chrome/browser/resources/safe_browsing/"
               "download_file_types.asciipb for the complete list of supported "
               "files."
             data:
               "URL of the file to be downloaded, its referrer chain, digest "
               "and other features extracted from the downloaded file. Refer to "
-              "ClientDownloadRequest message in https://cs.chromium.org/"
-              "chromium/src/components/safe_browsing/csd.proto for all "
+              "ClientDownloadRequest message in https://cs.monyhar.org/"
+              "monyhar/src/components/safe_browsing/csd.proto for all "
               "submitted features."
             destination: GOOGLE_OWNED_SERVICE
           }

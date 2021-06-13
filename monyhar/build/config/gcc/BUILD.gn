@@ -11,8 +11,8 @@ import("//build/toolchain/toolchain.gni")
 declare_args() {
   # When non empty, overrides the target rpath value. This allows a user to
   # make a Chromium build where binaries and shared libraries are meant to be
-  # installed into separate directories, like /usr/bin/chromium and
-  # /usr/lib/chromium for instance. It is useful when a build system that
+  # installed into separate directories, like /usr/bin/monyhar and
+  # /usr/lib/monyhar for instance. It is useful when a build system that
   # generates a whole target root filesystem (like Yocto) is used on top of gn,
   # especially when cross-compiling.
   # Note: this gn arg is similar to gyp target_rpath generator flag.

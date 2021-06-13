@@ -27,7 +27,7 @@ LoginDatabase::EncryptionResult LoginDatabase::DecryptedString(
   // Changing that for all clients of OSCrypt could have too broad an impact,
   // therefore to allow platform-independent data files for LoginDatabase
   // tests, the special handling of the empty string is added below instead.
-  // See also https://codereview.chromium.org/2291123008/#msg14 for a
+  // See also https://codereview.monyhar.org/2291123008/#msg14 for a
   // discussion.
   if (cipher_text.empty()) {
     plain_text->clear();

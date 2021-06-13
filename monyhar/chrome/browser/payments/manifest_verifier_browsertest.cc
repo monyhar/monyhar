@@ -60,7 +60,7 @@ class ManifestVerifierBrowserTest : public InProcessBrowserTest {
         Profile::FromBrowserContext(context),
         ServiceAccessType::EXPLICIT_ACCESS);
 
-    ManifestVerifier verifier(url::Origin::Create(GURL("https://chromium.org")),
+    ManifestVerifier verifier(url::Origin::Create(GURL("https://monyhar.org")),
                               web_contents, downloader.get(), parser.get(),
                               cache.get());
 

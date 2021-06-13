@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.shared.ui;
+package org.monyhar.chrome.browser.feed.shared.ui;
 
 import android.content.Context;
 import android.content.res.Resources.Theme;
@@ -14,10 +14,10 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.swiperefreshlayout.widget.CircularProgressDrawable;
 
-import org.chromium.base.FeatureList;
-import org.chromium.base.TraceEvent;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.base.FeatureList;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
 
 /** View that shows a Material themed spinner. */
 public class MaterialSpinnerView extends AppCompatImageView {

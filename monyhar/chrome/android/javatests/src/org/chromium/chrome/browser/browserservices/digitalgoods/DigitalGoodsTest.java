@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.digitalgoods;
+package org.monyhar.chrome.browser.browserservices.digitalgoods;
 
 import static org.junit.Assert.assertEquals;
 
-import static org.chromium.chrome.browser.browserservices.TestTrustedWebActivityService.COMMAND_SET_RESPONSE;
-import static org.chromium.chrome.browser.browserservices.TestTrustedWebActivityService.SET_RESPONSE_BUNDLE;
-import static org.chromium.chrome.browser.browserservices.TestTrustedWebActivityService.SET_RESPONSE_NAME;
-import static org.chromium.chrome.browser.browserservices.digitalgoods.AcknowledgeConverter.RESPONSE_ACKNOWLEDGE;
+import static org.monyhar.chrome.browser.browserservices.TestTrustedWebActivityService.COMMAND_SET_RESPONSE;
+import static org.monyhar.chrome.browser.browserservices.TestTrustedWebActivityService.SET_RESPONSE_BUNDLE;
+import static org.monyhar.chrome.browser.browserservices.TestTrustedWebActivityService.SET_RESPONSE_NAME;
+import static org.monyhar.chrome.browser.browserservices.digitalgoods.AcknowledgeConverter.RESPONSE_ACKNOWLEDGE;
 
 import android.net.Uri;
 import android.os.Build;
@@ -27,26 +27,26 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.chrome.browser.ChromeApplicationImpl;
-import org.chromium.chrome.browser.browserservices.TrustedWebActivityClient;
-import org.chromium.chrome.browser.customtabs.CustomTabActivityTestRule;
-import org.chromium.chrome.browser.customtabs.CustomTabsTestUtils;
-import org.chromium.chrome.browser.dependency_injection.ChromeAppComponent;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.payments.PaymentRequestTestRule;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.components.embedder_support.util.Origin;
-import org.chromium.net.test.EmbeddedTestServer;
-import org.chromium.net.test.ServerCertificate;
-import org.chromium.payments.mojom.DigitalGoods.GetDetailsResponse;
-import org.chromium.payments.mojom.ItemDetails;
-import org.chromium.ui.test.util.UiDisableIf;
-import org.chromium.url.GURL;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.chrome.browser.ChromeApplicationImpl;
+import org.monyhar.chrome.browser.browserservices.TrustedWebActivityClient;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivityTestRule;
+import org.monyhar.chrome.browser.customtabs.CustomTabsTestUtils;
+import org.monyhar.chrome.browser.dependency_injection.ChromeAppComponent;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.payments.PaymentRequestTestRule;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.components.embedder_support.util.Origin;
+import org.monyhar.net.test.EmbeddedTestServer;
+import org.monyhar.net.test.ServerCertificate;
+import org.monyhar.payments.mojom.DigitalGoods.GetDetailsResponse;
+import org.monyhar.payments.mojom.ItemDetails;
+import org.monyhar.ui.test.util.UiDisableIf;
+import org.monyhar.url.GURL;
 
 import java.util.concurrent.TimeoutException;
 
@@ -75,7 +75,7 @@ public class DigitalGoodsTest {
 
         ChromeAppComponent component = ChromeApplicationImpl.getComponent();
         component.resolveTwaPermissionManager().addDelegateApp(
-                Origin.createOrThrow(TWA_SERVICE_SCOPE), "org.chromium.chrome.tests.support");
+                Origin.createOrThrow(TWA_SERVICE_SCOPE), "org.monyhar.chrome.tests.support");
         mClient = component.resolveTrustedWebActivityClient();
 
         // TWAs only work with HTTPS.

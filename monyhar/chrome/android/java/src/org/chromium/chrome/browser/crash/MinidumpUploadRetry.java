@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.crash;
+package org.monyhar.chrome.browser.crash;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
 
-import org.chromium.base.NonThreadSafe;
-import org.chromium.base.task.PostTask;
-import org.chromium.components.minidump_uploader.util.CrashReportingPermissionManager;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.net.ConnectionType;
-import org.chromium.net.NetworkChangeNotifier;
+import org.monyhar.base.NonThreadSafe;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.components.minidump_uploader.util.CrashReportingPermissionManager;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.net.ConnectionType;
+import org.monyhar.net.NetworkChangeNotifier;
 
 /**
  * This class listens to network changes and determine when it would good to

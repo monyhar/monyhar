@@ -30,7 +30,7 @@
 #include "base/logging.h"
 #include "base/native_library.h"
 
-// The constants used in chromium. SLInterfaceID is actually a pointer to
+// The constants used in monyhar. SLInterfaceID is actually a pointer to
 // SLInterfaceID_. Those symbols are defined as extern symbols in the OpenSLES
 // headers. They will be initialized to their correct values when the library is
 // loaded.

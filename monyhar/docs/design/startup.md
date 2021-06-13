@@ -29,7 +29,7 @@ loads `chrome.dll`, does some other random stuff (XXX: why?) and calls
 Mac is also packaged as a framework and an executable, but they're linked
 together: `main()` calls `ChromeMain()` directly.  There is also a second entry
 point, in
-[`chrome_main_app_mode_mac.mm`](https://cs.chromium.org/chromium/src/chrome/app_shim/chrome_main_app_mode_mac.mm),
+[`chrome_main_app_mode_mac.mm`](https://cs.monyhar.org/monyhar/src/chrome/app_shim/chrome_main_app_mode_mac.mm),
 for app mode shortcuts: "On Mac, one can't make shortcuts with command-line
 arguments. Instead, we produce small app bundles which locate the Chromium
 framework and load it, passing the appropriate

@@ -226,7 +226,7 @@ void SafeBrowsingServiceImpl::IOThreadEnabler::StartSafeBrowsingDBManager() {
 #if BUILDFLAG(GOOGLE_CHROME_BRANDING)
   client_name = "googlechrome";
 #else
-  client_name = "chromium";
+  client_name = "monyhar";
 #endif
 
   safe_browsing::V4ProtocolConfig config = safe_browsing::GetV4ProtocolConfig(

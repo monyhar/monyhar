@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.partnercustomizations;
+package org.monyhar.chrome.test.partnercustomizations;
 
 import android.content.ContentProvider;
 import android.content.ContentValues;
@@ -16,7 +16,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 
-import org.chromium.base.annotations.MainDex;
+import org.monyhar.base.annotations.MainDex;
 
 /**
  * PartnerBrowserCustomizationsProvider example for testing.

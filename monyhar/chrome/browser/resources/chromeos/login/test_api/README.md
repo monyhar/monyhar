@@ -10,4 +10,4 @@ The following tests use this API:
   `src/third_party/autotest/files/client/common_lib/cros/enrollment.py` and
   files under `src/third_party/autotest/files/client/site_tests/`.
 * Tast tests, located in ChromiumOS under `src/platform/tast-tests/`, mostly
-  under `src/platform/tast-tests/src/chromiumos/tast/local/bundles/cros/`.
+  under `src/platform/tast-tests/src/monyharos/tast/local/bundles/cros/`.

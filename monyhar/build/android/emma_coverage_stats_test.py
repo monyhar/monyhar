@@ -52,12 +52,12 @@ class _EmmaHtmlParserTest(unittest.TestCase):
             '</TR>'
             '<TR CLASS="o">'
               '<TD><A HREF="_files/0.html"'
-              '>org.chromium.chrome.browser</A></TD>'
+              '>org.monyhar.chrome.browser</A></TD>'
               '<TD CLASS="h">0%   (0/3)</TD>'
             '</TR>'
             '<TR>'
               '<TD><A HREF="_files/1.html"'
-              '>org.chromium.chrome.browser.tabmodel</A></TD>'
+              '>org.monyhar.chrome.browser.tabmodel</A></TD>'
               '<TD CLASS="h">0%   (0/8)</TD>'
             '</TR>'
           '</TABLE>'
@@ -197,19 +197,19 @@ class _EmmaHtmlParserTest(unittest.TestCase):
 
   def testGetPackageNameToEmmaFileDict_basic(self):
     expected_dict = {
-      'org.chromium.chrome.browser.AccessibilityUtil.java':
+      'org.monyhar.chrome.browser.AccessibilityUtil.java':
       'fake/dir/_files/23.html',
-      'org.chromium.chrome.browser.ContextualMenuBar.java':
+      'org.monyhar.chrome.browser.ContextualMenuBar.java':
       'fake/dir/_files/22.html',
-      'org.chromium.chrome.browser.tabmodel.IntentHelper.java':
+      'org.monyhar.chrome.browser.tabmodel.IntentHelper.java':
       'fake/dir/_files/1e.html',
-      'org.chromium.chrome.browser.ContentSetting.java':
+      'org.monyhar.chrome.browser.ContentSetting.java':
       'fake/dir/_files/1f.html',
-      'org.chromium.chrome.browser.DevToolsServer.java':
+      'org.monyhar.chrome.browser.DevToolsServer.java':
       'fake/dir/_files/20.html',
-      'org.chromium.chrome.browser.NavigationPopup.java':
+      'org.monyhar.chrome.browser.NavigationPopup.java':
       'fake/dir/_files/24.html',
-      'org.chromium.chrome.browser.FileProviderHelper.java':
+      'org.monyhar.chrome.browser.FileProviderHelper.java':
       'fake/dir/_files/21.html'}
 
     read_values = [self.index_html, self.package_1_class_list_html,
@@ -341,12 +341,12 @@ class _EmmaCoverageStatsTest(unittest.TestCase):
 
   def testGetPackageNameFromFile_basic(self):
     test_file_text = """// Test Copyright
-    package org.chromium.chrome.browser;
+    package org.monyhar.chrome.browser;
     import android.graphics.RectF;"""
     result_package, _ = MockOpenForFunction(
         emma_coverage_stats._EmmaCoverageStats.GetPackageNameFromFile,
         [test_file_text], file_path='/path/to/file/File.java')
-    self.assertEqual(result_package, 'org.chromium.chrome.browser.File.java')
+    self.assertEqual(result_package, 'org.monyhar.chrome.browser.File.java')
 
   def testGetPackageNameFromFile_noPackageStatement(self):
     result_package, _ = MockOpenForFunction(

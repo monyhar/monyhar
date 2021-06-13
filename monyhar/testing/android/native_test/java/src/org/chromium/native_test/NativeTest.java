@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.native_test;
+package org.monyhar.native_test;
 
 import android.app.Activity;
 import android.content.Context;
@@ -14,11 +14,11 @@ import android.os.Handler;
 import android.os.Process;
 import android.system.Os;
 
-import org.chromium.base.Log;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.test.util.UrlUtils;
-import org.chromium.build.gtest_apk.NativeTestIntent;
-import org.chromium.test.reporter.TestStatusReporter;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.test.util.UrlUtils;
+import org.monyhar.build.gtest_apk.NativeTestIntent;
+import org.monyhar.test.reporter.TestStatusReporter;
 
 import java.io.File;
 

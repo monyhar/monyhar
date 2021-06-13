@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.os.Bundle;
 import android.os.RemoteException;
@@ -13,16 +13,16 @@ import androidx.annotation.Nullable;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import org.chromium.base.Log;
-import org.chromium.base.PathUtils;
-import org.chromium.base.TraceEvent;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.components.crash.browser.ChildProcessCrashObserver;
-import org.chromium.components.minidump_uploader.CrashFileManager;
-import org.chromium.components.minidump_uploader.MinidumpUploader;
-import org.chromium.weblayer_private.interfaces.ICrashReporterController;
-import org.chromium.weblayer_private.interfaces.ICrashReporterControllerClient;
-import org.chromium.weblayer_private.interfaces.StrictModeWorkaround;
+import org.monyhar.base.Log;
+import org.monyhar.base.PathUtils;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.components.crash.browser.ChildProcessCrashObserver;
+import org.monyhar.components.minidump_uploader.CrashFileManager;
+import org.monyhar.components.minidump_uploader.MinidumpUploader;
+import org.monyhar.weblayer_private.interfaces.ICrashReporterController;
+import org.monyhar.weblayer_private.interfaces.ICrashReporterControllerClient;
+import org.monyhar.weblayer_private.interfaces.StrictModeWorkaround;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -35,7 +35,7 @@ import java.util.Map;
 /**
  * Provides the implementation of the API for managing captured crash reports.
  *
- * @see org.chromium.weblayer.CrashReporterController
+ * @see org.monyhar.weblayer.CrashReporterController
  */
 public final class CrashReporterControllerImpl extends ICrashReporterController.Stub {
     private static final String TAG = "CrashReporter";

@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private.permissions;
+package org.monyhar.weblayer_private.permissions;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.permissions.AndroidPermissionRequester;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.permissions.AndroidPermissionRequester;
+import org.monyhar.ui.base.WindowAndroid;
 
 /** Util functions to request Android permissions for a content setting. */
 @JNINamespace("weblayer")

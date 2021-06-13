@@ -8,7 +8,7 @@
 namespace net {
 
 // On Android, a Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.net
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.net
 // GENERATED_JAVA_CLASS_NAME_OVERRIDE: NetworkQualityObservationSource
 // GENERATED_JAVA_PREFIX_TO_STRIP: NETWORK_QUALITY_OBSERVATION_SOURCE_
 enum NetworkQualityObservationSource {

@@ -33,7 +33,7 @@ TEST_F(ContentCapabilitiesManifestTest, AllowSubdomainWildcards) {
   EXPECT_TRUE(info.url_patterns.MatchesURL(GURL("https://bar.example.com/")));
   EXPECT_TRUE(
       info.url_patterns.MatchesURL(GURL("https://foo.bar.example.com/")));
-  EXPECT_FALSE(info.url_patterns.MatchesURL(GURL("https://chromium.org/")));
+  EXPECT_FALSE(info.url_patterns.MatchesURL(GURL("https://monyhar.org/")));
 }
 
 TEST_F(ContentCapabilitiesManifestTest, RejectedAllHosts) {

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting;
+package org.monyhar.chromoting;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -13,8 +13,8 @@ import android.net.Uri;
 import android.text.TextUtils;
 import android.util.Base64;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
 
 import java.security.SecureRandom;
 import java.util.ArrayList;

@@ -223,7 +223,7 @@ goog.events.MouseWheelHandler.smartScale_ = function(
   //
   // Detailed discussion:
   //   https://bugs.webkit.org/show_bug.cgi?id=29601
-  //   http://trac.webkit.org/browser/trunk/WebKit/chromium/src/mac/WebInputEventFactory.mm#L1063
+  //   http://trac.webkit.org/browser/trunk/WebKit/monyhar/src/mac/WebInputEventFactory.mm#L1063
   if (goog.userAgent.WEBKIT && (goog.userAgent.MAC || goog.userAgent.LINUX) &&
       (mouseWheelDelta % scaleFactor) != 0) {
     return mouseWheelDelta;

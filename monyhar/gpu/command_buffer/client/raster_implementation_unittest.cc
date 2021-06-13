@@ -7,7 +7,7 @@
 #include "gpu/command_buffer/client/raster_implementation.h"
 
 #include <GLES2/gl2.h>
-#include <GLES2/gl2extchromium.h>
+#include <GLES2/gl2extmonyhar.h>
 
 #include <stddef.h>
 #include <stdint.h>
@@ -115,7 +115,7 @@ class RasterImplementationTest : public testing::Test {
       capabilities_.max_texture_size = kMaxTextureSize;
       capabilities_.num_compressed_texture_formats =
           kNumCompressedTextureFormats;
-      capabilities_.bind_generates_resource_chromium =
+      capabilities_.bind_generates_resource_monyhar =
           bind_generates_resource_service ? 1 : 0;
       capabilities_.sync_query = sync_query;
       EXPECT_CALL(*gpu_control_, GetCapabilities())

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.media_router.caf;
+package org.monyhar.components.media_router.caf;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
@@ -12,7 +12,7 @@ import com.google.android.gms.cast.Cast;
 import com.google.android.gms.cast.CastDevice;
 import com.google.android.gms.cast.framework.CastSession;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 import java.util.ArrayList;
 import java.util.HashSet;

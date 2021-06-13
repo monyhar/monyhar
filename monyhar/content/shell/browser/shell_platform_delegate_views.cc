@@ -367,7 +367,7 @@ void ShellPlatformDelegate::CreatePlatformWindow(
   views::Widget::InitParams params;
   params.bounds = gfx::Rect(initial_size);
   params.delegate = delegate.release();
-  params.wm_class_class = "chromium-content_shell";
+  params.wm_class_class = "monyhar-content_shell";
   params.wm_class_name = params.wm_class_class;
   shell_data.window_widget->Init(std::move(params));
 #endif

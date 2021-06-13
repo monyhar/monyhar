@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-[JavaPackage="org.chromium.mojo.native_types"]
+[JavaPackage="org.monyhar.mojo.native_types"]
 module mojo.native;
 
 enum SerializedHandleType {

@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments.ui;
+package org.monyhar.chrome.browser.payments.ui;
 
-import static org.chromium.chrome.browser.payments.ui.PaymentRequestSection.EDIT_BUTTON_GONE;
+import static org.monyhar.chrome.browser.payments.ui.PaymentRequestSection.EDIT_BUTTON_GONE;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -34,34 +34,34 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.core.view.ViewCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.Callback;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.autofill.prefeditor.EditorDialog;
-import org.chromium.chrome.browser.autofill.prefeditor.EditorObserverForTest;
-import org.chromium.chrome.browser.lifecycle.PauseResumeWithNativeObserver;
-import org.chromium.chrome.browser.payments.ShippingStrings;
-import org.chromium.chrome.browser.payments.ui.PaymentRequestSection.LineItemBreakdownSection;
-import org.chromium.chrome.browser.payments.ui.PaymentRequestSection.OptionSection;
-import org.chromium.chrome.browser.payments.ui.PaymentRequestSection.SectionSeparator;
-import org.chromium.chrome.browser.payments.ui.PaymentUiService.PaymentUisShowStateReconciler;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.signin.services.IdentityServicesProvider;
-import org.chromium.chrome.browser.version.ChromeVersionInfo;
-import org.chromium.components.autofill.EditableOption;
-import org.chromium.components.browser_ui.widget.FadingEdgeScrollView;
-import org.chromium.components.browser_ui.widget.animation.FocusAnimator;
-import org.chromium.components.browser_ui.widget.animation.Interpolators;
-import org.chromium.components.payments.PaymentApp;
-import org.chromium.components.payments.PaymentAppType;
-import org.chromium.components.payments.PaymentFeatureList;
-import org.chromium.components.signin.base.CoreAccountInfo;
-import org.chromium.components.signin.identitymanager.ConsentLevel;
-import org.chromium.components.signin.identitymanager.IdentityManager;
-import org.chromium.ui.text.NoUnderlineClickableSpan;
-import org.chromium.ui.text.SpanApplier;
-import org.chromium.ui.text.SpanApplier.SpanInfo;
-import org.chromium.ui.widget.TextViewWithClickableSpans;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.autofill.prefeditor.EditorDialog;
+import org.monyhar.chrome.browser.autofill.prefeditor.EditorObserverForTest;
+import org.monyhar.chrome.browser.lifecycle.PauseResumeWithNativeObserver;
+import org.monyhar.chrome.browser.payments.ShippingStrings;
+import org.monyhar.chrome.browser.payments.ui.PaymentRequestSection.LineItemBreakdownSection;
+import org.monyhar.chrome.browser.payments.ui.PaymentRequestSection.OptionSection;
+import org.monyhar.chrome.browser.payments.ui.PaymentRequestSection.SectionSeparator;
+import org.monyhar.chrome.browser.payments.ui.PaymentUiService.PaymentUisShowStateReconciler;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.signin.services.IdentityServicesProvider;
+import org.monyhar.chrome.browser.version.ChromeVersionInfo;
+import org.monyhar.components.autofill.EditableOption;
+import org.monyhar.components.browser_ui.widget.FadingEdgeScrollView;
+import org.monyhar.components.browser_ui.widget.animation.FocusAnimator;
+import org.monyhar.components.browser_ui.widget.animation.Interpolators;
+import org.monyhar.components.payments.PaymentApp;
+import org.monyhar.components.payments.PaymentAppType;
+import org.monyhar.components.payments.PaymentFeatureList;
+import org.monyhar.components.signin.base.CoreAccountInfo;
+import org.monyhar.components.signin.identitymanager.ConsentLevel;
+import org.monyhar.components.signin.identitymanager.IdentityManager;
+import org.monyhar.ui.text.NoUnderlineClickableSpan;
+import org.monyhar.ui.text.SpanApplier;
+import org.monyhar.ui.text.SpanApplier.SpanInfo;
+import org.monyhar.ui.widget.TextViewWithClickableSpans;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -357,7 +357,7 @@ public class PaymentRequestUI implements DimmingDialog.OnDismissListener, View.O
      * @param origin                The origin (https://tools.ietf.org/html/rfc6454) to show under
      *                              the title. For example, "https://shop.momandpop.com". If the
      *                              origin is too long for the UI, it should elide according to:
-     * https://www.chromium.org/Home/chromium-security/enamel#TOC-Eliding-Origin-Names-And-Hostnames
+     * https://www.monyhar.org/Home/monyhar-security/enamel#TOC-Eliding-Origin-Names-And-Hostnames
      * @param securityLevel   The security level of the page that invoked PaymentRequest.
      * @param shippingStrings The string resource identifiers to use in the shipping sections.
      * @param profile         The current profile that creates the PaymentRequestUI.

@@ -1,6 +1,6 @@
 file://media/OWNERS
-sergeyu@chromium.org
-tommi@chromium.org
+sergeyu@monyhar.org
+tommi@monyhar.org
 
 # ChromeSpeechRecognitionClient
 per-file chrome_speech_recognition_client*=evliu@google.com

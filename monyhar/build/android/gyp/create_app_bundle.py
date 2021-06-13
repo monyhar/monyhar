@@ -437,7 +437,7 @@ def _MaybeCheckServicesAndProvidersPresentInBase(bundle_path, module_zips):
 
   ignored_service_names = {
       # Defined in the chime DFM manifest, but unused.
-      # org.chromium.chrome.browser.chime.ScheduledTaskService is used instead.
+      # org.monyhar.chrome.browser.chime.ScheduledTaskService is used instead.
       ("com.google.android.libraries.notifications.entrypoints.scheduled."
        "ScheduledTaskService"),
 

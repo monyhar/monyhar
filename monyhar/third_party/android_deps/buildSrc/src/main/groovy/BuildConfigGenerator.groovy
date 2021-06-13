@@ -43,7 +43,7 @@ class BuildConfigGenerator extends DefaultTask {
     private static final String DOWNLOAD_DIRECTORY_NAME = 'libs'
     // The 3pp bot now adds an epoch to the version tag, this needs to be kept in sync with 3pp epoch at:
     /* groovylint-disable-next-line LineLength */
-    // https://source.chromium.org/chromium/infra/infra/+/master:recipes/recipe_modules/support_3pp/resolved_spec.py?q=symbol:PACKAGE_EPOCH&ss=chromium
+    // https://source.monyhar.org/monyhar/infra/infra/+/master:recipes/recipe_modules/support_3pp/resolved_spec.py?q=symbol:PACKAGE_EPOCH&ss=monyhar
     private static final String THREEPP_EPOCH = '2'
 
     // Some libraries are hosted in Chromium's //third_party directory. This is a mapping between
@@ -73,7 +73,7 @@ class BuildConfigGenerator extends DefaultTask {
 
     /**
      * Directory where the artifacts will be downloaded and where files will be generated.
-     * Note: this path is specified as relative to the chromium source root, and must be normalised
+     * Note: this path is specified as relative to the monyhar source root, and must be normalised
      * to an absolute path before being used, as Groovy would base relative path where the script
      * is being executed.
      */
@@ -82,7 +82,7 @@ class BuildConfigGenerator extends DefaultTask {
 
     /** Relative path to the Chromium source root from the build.gradle file. */
     @Input
-    String chromiumSourceRoot
+    String monyharSourceRoot
 
     /** Name of the cipd root package. */
     @Input
@@ -363,7 +363,7 @@ class BuildConfigGenerator extends DefaultTask {
                 into absoluteDepDir
             }
 
-            new File("${absoluteDepDir}/README.chromium").write(makeReadme(dependency))
+            new File("${absoluteDepDir}/README.monyhar").write(makeReadme(dependency))
             new File("${absoluteDepDir}/cipd.yaml").write(makeCipdYaml(dependency, cipdBucket, repositoryPath))
             new File("${absoluteDepDir}/OWNERS").write(makeOwners())
 
@@ -1008,7 +1008,7 @@ class BuildConfigGenerator extends DefaultTask {
     }
 
     private String normalisePath(String pathRelativeToChromiumRoot) {
-        return project.file("${chromiumSourceRoot}/${pathRelativeToChromiumRoot}").absolutePath
+        return project.file("${monyharSourceRoot}/${pathRelativeToChromiumRoot}").absolutePath
     }
 
 }

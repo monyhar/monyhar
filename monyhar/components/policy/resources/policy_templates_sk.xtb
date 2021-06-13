@@ -97,7 +97,7 @@ servera, pretože objekty GPO sa znova sťahujú pri každom načítaní pravidi
 
       Ak toto pravidlo nastavíte, <ph name="PRODUCT_NAME" /> bude používať zadaný adresár bez ohľadu na to, či používateľ uviedol príznak „--disk-cache-dir“. Ak chcete zabrániť strate dát alebo iným neočakávaných chybám, nemali by ste v rámci tohto pravidla nastaviť hlavný adresár zväzku alebo adresár používaný na iné účely, pretože <ph name="PRODUCT_NAME" /> spravuje jeho obsah.
 
-      Zoznam premenných, ktoré sa dajú použiť, nájdete na adrese https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Zoznam premenných, ktoré sa dajú použiť, nájdete na adrese https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Ak toto pravidlo ponecháte nenastavené, použije sa predvolený adresár vyrovnávacej pamäte a používateľ ho bude môcť prepísať zadaním príznaku „--disk-cache-dir“ do príkazového riadka.</translation>
 <translation id="113521240853905588">Konfiguruje jazyky, ktoré môže <ph name="PRODUCT_OS_NAME" /> používať ako preferované.
@@ -472,7 +472,7 @@ Ak je toto nastavenie zakázané alebo nie je nakonfigurované, nebudú môcť p
 <translation id="1852294065645015766">Povoliť automatické prehrávanie médií</translation>
 <translation id="1857152770025485173">Toto pravidlo bráni používateľom načítať webové stránky zo zoznamu zakázaných webových adries. Zoznam zakázaných adries obsahuje vzory webových adries. Tie určujú, ktoré webové adresy budú zakázané.
 
-      Vzor webovej adresy musí byť formátovaný v súlade s pokynmi na https://www.chromium.org/administrators/url-blacklist-filter-format.
+      Vzor webovej adresy musí byť formátovaný v súlade s pokynmi na https://www.monyhar.org/administrators/url-blacklist-filter-format.
 
       Výnimky môžu byť definované v pravidle zoznamu povolených webových adries. Počet záznamov v týchto pravidlách je obmedzený na 1 000. Všetky ďalšie záznamy sa budú ignorovať.
 
@@ -515,7 +515,7 @@ Ak je toto nastavenie zakázané alebo nie je nakonfigurované, nebudú môcť p
 
       Ak pravidlo nie je nakonfigurované, nahlasovanie metrík a diagnostických údajov bude zakázané v nespravovaných zariadeniach a povolené v spravovaných zariadeniach.</translation>
 <translation id="1907431809333268751">Nastavuje zoznam podnikových prihlasovacích webových adries (iba schémy HTTP a HTTPS). Na týchto webových adresách sa bude zaznamenávať digitálny odtlačok hesla, ktorý sa použije na rozpoznanie opätovného použitia hesla.
-      Na to, aby <ph name="PRODUCT_NAME" /> správne zaznamenával digitálne odtlačky hesiel, musia prihlasovacie stránky dodržiavať pokyny uvedené na https://www.chromium.org/developers/design-documents/create-amazing-password-forms.
+      Na to, aby <ph name="PRODUCT_NAME" /> správne zaznamenával digitálne odtlačky hesiel, musia prihlasovacie stránky dodržiavať pokyny uvedené na https://www.monyhar.org/developers/design-documents/create-amazing-password-forms.
 
       Ak toto nastavenie povolíte, služba ochrany hesla zaznamená digitálny odtlačok hesla na týchto webových adresách na účely rozpoznania opätovného použitia hesla.
       Ak toto nastavenie zakážete alebo nenastavíte, služba ochrany hesla bude zaznamenávať iba digitálne odtlačky hesiel na https://accounts.google.com.
@@ -817,7 +817,7 @@ Ak je toto nastavenie zakázané alebo nie je nakonfigurované, nebudú môcť p
 
       Toto pravidlo umožňuje, aby certifikáty názvov hostiteľov na uvedených webových adresách neboli zverejňované prostredníctvom pravidla transparentnosti certifikátov. Umožňuje to ďalšie používanie certifikátov, ktoré by boli inak nedôveryhodné, pretože neboli správne zverejnené. Sťažuje to však zistenie zneužitých certifikátov takýchto hostiteľov.
 
-      Vzor webovej adresy je formátovaný v súlade s pokynmi na adrese https://www.chromium.org/administrators/url-blacklist-filter-format. Pretože sú však certifikáty platné pre daný názov hostiteľa nezávisle od schémy, portu alebo cesty, používa sa iba časť webovej adresy s názvom hostiteľa. Hostitelia so zástupnými znakmi nie sú podporovaní.
+      Vzor webovej adresy je formátovaný v súlade s pokynmi na adrese https://www.monyhar.org/administrators/url-blacklist-filter-format. Pretože sú však certifikáty platné pre daný názov hostiteľa nezávisle od schémy, portu alebo cesty, používa sa iba časť webovej adresy s názvom hostiteľa. Hostitelia so zástupnými znakmi nie sú podporovaní.
 
       Ak nie je toto pravidlo nastavené, všetky certifikáty, ktoré majú povinnosť byť zverejnené prostredníctvom pravidla transparentnosti certifikátov a ktoré túto povinnosť nedodržia, budú považované za nedôveryhodné.</translation>
 <translation id="2488010520405124654">Povoliť zobrazenie výzvy na konfiguráciu siete v režime offline.
@@ -1513,7 +1513,7 @@ Ak je toto nastavenie zakázané alebo nie je nakonfigurované, nebudú môcť p
 
       Ak nastavíte toto pravidlo, prehliadač <ph name="PRODUCT_NAME" /> bude používať zadaný adresár bez ohľadu na to, či používateľ určil takýto adresár alebo povolil príznak na zobrazenie výzvy na zadanie umiestnenia pre stiahnuté položky pri každom sťahovaní.
 
-      Zoznam premenných, ktoré sa dajú použiť, nájdete na adrese https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Zoznam premenných, ktoré sa dajú použiť, nájdete na adrese https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Ak toto pravidlo nenastavíte, použije sa predvolený adresár pre stiahnuté súbory a používateľ ho bude môcť zmeniť.</translation>
 <translation id="3805659594028420438">Povolí rozšírenie pre certifikáty TLS typu domain-bound (ktorého podpora bola ukončená)</translation>
@@ -1604,7 +1604,7 @@ Ak je toto nastavenie zakázané alebo nie je nakonfigurované, nebudú môcť p
 
       Ak toto pravidlo nenastavíte, <ph name="PRODUCT_NAME" /> bude používať obvyklý predvolený adresár (podľa konkrétnej platformy).
 
-      Zoznam premenných, ktoré sa dajú použiť, nájdete na adrese https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.</translation>
+      Zoznam premenných, ktoré sa dajú použiť, nájdete na adrese https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.</translation>
 <translation id="3911737181201537215">Na zaznamenávanie do denníkov vykonávané systémom Android nemá toto pravidlo žiaden vplyv.</translation>
 <translation id="391531815696899618">Ak je toto pravidlo nastavené na hodnotu True, zakazuje synchronizáciu aplikácie Súbory systému <ph name="PRODUCT_OS_NAME" /> s Diskom Google. V takom prípade sa na Disk Google nenahrajú žiadne údaje.
 
@@ -1800,7 +1800,7 @@ Ak je toto nastavenie zakázané alebo nie je nakonfigurované, nebudú môcť p
 
       Ak toto pravidlo nastavíte a je povolené pravidlo <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" />, <ph name="PRODUCT_NAME" /> bude na ukladanie roamingových kópií profilov používať stanovený adresár. Ak pravidlo <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> nie je povolené alebo nastavené, hodnota uložená v tomto pravidle sa nepoužije.
 
-      Zoznam premenných, ktoré sa dajú použiť, nájdete na https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Zoznam premenných, ktoré sa dajú použiť, nájdete na https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Ak toto pravidlo nie je nastavené, použije sa predvolená cesta roamingového profilu.</translation>
 <translation id="4239720644496144453">V prípade aplikácií pre Android sa nepoužíva vyrovnávacia pamäť. Ak si viacero používateľov nainštaluje rovnakú aplikáciu pre Android, stiahne sa nanovo pre každého používateľa.</translation>
@@ -2002,7 +2002,7 @@ Ak je toto nastavenie zakázané alebo nie je nakonfigurované, nebudú môcť p
 
           Ak toto pravidlo nenastavíte, bude pre všetky webové stránky použitý predvolený vykresľovací modul (ako je určené pravidlom „ChromeFrameRendererSettings“).
 
-          Príklady vzorov nájdete na adrese http://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Príklady vzorov nájdete na adrese http://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="467449052039111439">Otvoriť zoznam webových adries</translation>
 <translation id="4674871290487541952">Povoliť nezabezpečené algoritmy počas kontrol integrity aktualizácií a inštalácií rozšírení</translation>
 <translation id="4680936297850947973">Podpora bola ukončená vo verzii M68. Použite radšej pravidlo DefaultPopupsSetting.
@@ -2634,7 +2634,7 @@ Ak toto nastavenie zakážete, v okne správcu hesiel nebude možné zobraziť 
 
       Ak toto pravidlo nastavíte, prehliadač <ph name="PRODUCT_FRAME_NAME" /> bude používať zadaný adresár.
 
-      Zoznam premenných, ktoré sa dajú použiť, nájdete na adrese http://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Zoznam premenných, ktoré sa dajú použiť, nájdete na adrese http://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Ak toto pravidlo nenastavíte, použije sa predvolený adresár profilu.</translation>
 <translation id="5826047473100157858">Určuje, či môže používateľ v prehliadači <ph name="PRODUCT_NAME" /> otvoriť stránky v režime Inkognito.
@@ -3210,7 +3210,7 @@ Ak toto pravidlo nastavíte na hodnotu True, vstavaný klient DNS sa použije (p
 
       Ak toto pravidlo nastavíte, <ph name="PRODUCT_NAME" /> bude používať zadaný adresár bez ohľadu na to, či používateľ uviedol príznak „--user-data-dir“. Ak chcete zabrániť strate dát alebo iným neočakávaných chybám, nemali by ste v rámci tohto pravidla nastaviť hlavný adresár zväzku alebo adresár používaný na iné účely, pretože <ph name="PRODUCT_NAME" /> spravuje jeho obsah.
 
-      Zoznam premenných, ktoré sa dajú použiť, nájdete na adrese https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Zoznam premenných, ktoré sa dajú použiť, nájdete na adrese https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Ak toto pravidlo ponecháte nenastavené, použije sa predvolený adresár vyrovnávacej pamäte a používateľ ho bude môcť prepísať zadaním príznaku „--user-data-dir“ do príkazového riadka.</translation>
 <translation id="7027785306666625591">Konfiguruje správu napájania v systéme <ph name="PRODUCT_OS_NAME" />.
@@ -4001,7 +4001,7 @@ Platí to pre všetky skripty PAC bez ohľadu na ich pôvod (vrátane tých, kto
 
           Ak toto pravidlo nenastavíte, pre všetky webové stránky sa použije predvolený vykresľovací modul (ako je určené pravidlom „ChromeFrameRendererSettings“).
 
-          Príklady vzorov nájdete na adrese http://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Príklady vzorov nájdete na adrese http://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="8489964335640955763">PluginVm</translation>
 <translation id="8493645415242333585">Zakázať ukladanie histórie prehliadača</translation>
 <translation id="8499172469244085141">Predvolené nastavenia (používatelia ich môžu nahradiť)</translation>

@@ -151,7 +151,7 @@ class TriggerScriptCoordinatorTest : public testing::Test {
 
 TEST_F(TriggerScriptCoordinatorTest, StartSendsOnlyApprovedFields) {
   std::map<std::string, std::string> input_script_params{
-      {"USER_EMAIL", "should.not.be.sent@chromium.org"},
+      {"USER_EMAIL", "should.not.be.sent@monyhar.org"},
       {"keyA", "valueA"},
       {"DEBUG_BUNDLE_ID", "bundle_id"},
       {"DEBUG_SOCKET_ID", "socket_id"},

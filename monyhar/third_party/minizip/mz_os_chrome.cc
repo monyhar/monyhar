@@ -4,7 +4,7 @@
 
 #include "base/rand_util.h"
 
-// This file provides chromium-specific implementations of platform abstraction
+// This file provides monyhar-specific implementations of platform abstraction
 // functions used by minizip. Minizip provides a POSIX-compatible implementation
 // in mz_os_posix.c, but pnacl-newlib has an insufficent POSIX layer such that
 // mz_os_posix.c cannot be used.

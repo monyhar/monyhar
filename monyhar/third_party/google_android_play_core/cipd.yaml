@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml
-package: chromium/third_party/android_deps/libs/com_google_android_play_core_verification
+package: monyhar/third_party/android_deps/libs/com_google_android_play_core_verification
 description: ""
 data:
 - file: core-1.6.4.aar

@@ -29,7 +29,7 @@ def PrintUsage():
 
 Examples:
   python checklicenses.py
-  python checklicenses.py --root ~/chromium/src third_party""")
+  python checklicenses.py --root ~/monyhar/src third_party""")
 
 
 ALLOWLISTED_LICENSES = [
@@ -163,7 +163,7 @@ PATH_SPECIFIC_ALLOWLISTED_LICENSES = {
         'UNKNOWN',
     ],
 
-    # https://bugs.chromium.org/p/swiftshader/issues/detail?id=1
+    # https://bugs.monyhar.org/p/swiftshader/issues/detail?id=1
     'third_party/swiftshader': [
         'UNKNOWN',
     ],
@@ -712,7 +712,7 @@ def check_licenses(options, args):
             (error['filename'], error['license']))
     print("\nFAILED\n")
     print("Please read", end=' ')
-    print("http://www.chromium.org/developers/adding-3rd-party-libraries")
+    print("http://www.monyhar.org/developers/adding-3rd-party-libraries")
     print("for more info how to handle the failure.")
     print()
     print("Please respect OWNERS of checklicenses.py. Changes violating")

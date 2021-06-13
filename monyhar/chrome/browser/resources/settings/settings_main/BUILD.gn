@@ -21,7 +21,7 @@ js_library("settings_main") {
     "../about_page:about_page",
     "../about_page:about_page_browser_proxy",
     "../basic_page:basic_page",
-    "//third_party/polymer/v3_0/components-chromium/iron-a11y-announcer:iron-a11y-announcer",
+    "//third_party/polymer/v3_0/components-monyhar/iron-a11y-announcer:iron-a11y-announcer",
     "//ui/webui/resources/js:assert.m",
     "//ui/webui/resources/js:load_time_data.m",
   ]

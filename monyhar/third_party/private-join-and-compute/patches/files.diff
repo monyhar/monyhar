@@ -1,6 +1,6 @@
 Only in /tmp/private-join-and-compute.original: BUILD
 Only in third_party/private-join-and-compute: BUILD.gn
-Only in third_party/private-join-and-compute: chromium_patch.h
+Only in third_party/private-join-and-compute: monyhar_patch.h
 Only in /tmp/private-join-and-compute.original: client.cc
 Only in /tmp/private-join-and-compute.original: client_impl.cc
 Only in /tmp/private-join-and-compute.original: client_impl.h
@@ -40,7 +40,7 @@ Only in /tmp/private-join-and-compute.original: private_join_and_compute_rpc_imp
 Only in /tmp/private-join-and-compute.original: private_join_and_compute_rpc_impl.h
 Only in /tmp/private-join-and-compute.original: protocol_client.h
 Only in /tmp/private-join-and-compute.original: protocol_server.h
-Only in third_party/private-join-and-compute: README.chromium
+Only in third_party/private-join-and-compute: README.monyhar
 Only in /tmp/private-join-and-compute.original: server.cc
 Only in /tmp/private-join-and-compute.original: server_impl.cc
 Only in /tmp/private-join-and-compute.original: server_impl.h

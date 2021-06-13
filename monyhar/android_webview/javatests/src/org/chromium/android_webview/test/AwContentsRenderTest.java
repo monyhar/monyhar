@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
 import android.graphics.Bitmap;
 import android.graphics.Color;
@@ -17,14 +17,14 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.AwContents;
-import org.chromium.android_webview.AwContents.VisualStateCallback;
-import org.chromium.android_webview.test.util.GraphicsTestUtils;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.UrlUtils;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.content_public.common.ContentUrlConstants;
+import org.monyhar.android_webview.AwContents;
+import org.monyhar.android_webview.AwContents.VisualStateCallback;
+import org.monyhar.android_webview.test.util.GraphicsTestUtils;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.UrlUtils;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.content_public.common.ContentUrlConstants;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;

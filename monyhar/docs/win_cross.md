@@ -43,7 +43,7 @@ builds ([.asm bug](https://crbug.com/762167)).
 fails with an error:
 
     Please follow the instructions at
-    https://chromium.googlesource.com/chromium/src/+/HEAD/docs/win_cross.md
+    https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/win_cross.md
 
 then you may need to re-authenticate via:
 
@@ -76,7 +76,7 @@ setting `DEPOT_TOOLS_WIN_TOOLCHAIN_BASE_URL` and running `gclient sync`:
     gclient sync
     ...
     Running hooks:  17% (11/64) win_toolchain
-    ________ running '/usr/bin/python src/build/vs_toolchain.py update --force' in <chromium dir>
+    ________ running '/usr/bin/python src/build/vs_toolchain.py update --force' in <monyhar dir>
     Windows toolchain out of date or doesn't exist, updating (Pro)...
     current_hashes:
     desired_hash: <toolchain hash>
@@ -109,6 +109,6 @@ You can run the Windows binaries you built on swarming, like so:
 See the contents of run-swarmed.py for how to do this manually.
 
 The
-[linux-win_cross-rel](https://ci.chromium.org/p/chromium/builders/luci.chromium.ci/linux-win_cross-rel/)
+[linux-win_cross-rel](https://ci.monyhar.org/p/monyhar/builders/luci.monyhar.ci/linux-win_cross-rel/)
 buildbot does 64-bit release cross builds, and also runs tests. You can look at
 it to get an idea of which tests pass in the cross build.

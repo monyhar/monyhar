@@ -6,10 +6,10 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/components/browser_ui/modaldialog/AppModalPresenter.java",
-    "java/src/org/chromium/components/browser_ui/modaldialog/ModalDialogView.java",
-    "java/src/org/chromium/components/browser_ui/modaldialog/ModalDialogViewBinder.java",
-    "java/src/org/chromium/components/browser_ui/modaldialog/TabModalPresenter.java",
+    "java/src/org/monyhar/components/browser_ui/modaldialog/AppModalPresenter.java",
+    "java/src/org/monyhar/components/browser_ui/modaldialog/ModalDialogView.java",
+    "java/src/org/monyhar/components/browser_ui/modaldialog/ModalDialogViewBinder.java",
+    "java/src/org/monyhar/components/browser_ui/modaldialog/TabModalPresenter.java",
   ]
 
   deps = [
@@ -21,7 +21,7 @@ android_library("java") {
     "//third_party/androidx:androidx_annotation_annotation_java",
     "//ui/android:ui_java",
   ]
-  resources_package = "org.chromium.components.browser_ui.modaldialog"
+  resources_package = "org.monyhar.components.browser_ui.modaldialog"
 }
 
 android_resources("java_resources") {
@@ -45,9 +45,9 @@ android_library("javatests") {
   testonly = true
 
   sources = [
-    "java/src/org/chromium/components/browser_ui/modaldialog/AppModalPresenterTest.java",
-    "java/src/org/chromium/components/browser_ui/modaldialog/ModalDialogTestUtils.java",
-    "java/src/org/chromium/components/browser_ui/modaldialog/ModalDialogViewTest.java",
+    "java/src/org/monyhar/components/browser_ui/modaldialog/AppModalPresenterTest.java",
+    "java/src/org/monyhar/components/browser_ui/modaldialog/ModalDialogTestUtils.java",
+    "java/src/org/monyhar/components/browser_ui/modaldialog/ModalDialogViewTest.java",
   ]
 
   deps = [
@@ -67,7 +67,7 @@ android_library("javatests") {
     "//ui/android:ui_java",
     "//ui/android:ui_java_test_support",
   ]
-  resources_package = "org.chromium.components.browser_ui.modaldialog.test"
+  resources_package = "org.monyhar.components.browser_ui.modaldialog.test"
 }
 
 android_resources("java_test_resources") {

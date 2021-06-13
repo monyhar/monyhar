@@ -7,7 +7,7 @@
 Generates Java code to declare SPLINE_POSITION and SPLINE_TIME as precomputed
 array.
 
-Run this and paste the output into //chrome/android/java/src/org/chromium/
+Run this and paste the output into //chrome/android/java/src/org/monyhar/
 chrome/browser/compositor/layouts/phone/stack/StackScroller.java
 """
 
@@ -18,7 +18,7 @@ import sys
 
 def Main():
     # Keep these in sync with the values in //chrome/android/java/src/org/
-    # chromium/chrome/browser/compositor/layouts/phone/stack/StackScroller.java
+    # monyhar/chrome/browser/compositor/layouts/phone/stack/StackScroller.java
     NB_SAMPLES = 100
     INFLEXION = 0.35  # Tension lines cross at (INFLEXION, 1)
 

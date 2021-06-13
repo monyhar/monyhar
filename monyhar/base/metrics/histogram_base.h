@@ -46,7 +46,7 @@ enum HistogramType {
 
 // Controls the verbosity of the information when the histogram is serialized to
 // a JSON.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.base.metrics
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.base.metrics
 enum JSONVerbosityLevel {
   // The histogram is completely serialized.
   JSON_VERBOSITY_LEVEL_FULL,

@@ -6,7 +6,7 @@
  -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="org.chromium.chromecast.shell">
+          package="org.monyhar.chromecast.shell">
 
     <uses-sdk android:minSdkVersion="21"/>
 
@@ -15,7 +15,7 @@
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
     <application android:icon="@mipmap/app_icon">
-        <activity android:name="org.chromium.chromecast.shell.CastWebContentsActivity"
+        <activity android:name="org.monyhar.chromecast.shell.CastWebContentsActivity"
                   android:theme="@style/CastShellTheme"
                   android:exported="true"
                   android:hardwareAccelerated="true"
@@ -33,22 +33,22 @@
         <!-- The following service entries exist in order to allow us to
              start more than one sandboxed process. -->
         {% set num_sandboxed_services = 40 %}
-        <meta-data android:name="org.chromium.content.browser.NUM_SANDBOXED_SERVICES"
+        <meta-data android:name="org.monyhar.content.browser.NUM_SANDBOXED_SERVICES"
                    android:value="{{ num_sandboxed_services }}"/>
 
         {% for i in range(num_sandboxed_services) %}
-        <service android:name="org.chromium.content.app.SandboxedProcessService{{ i }}"
+        <service android:name="org.monyhar.content.app.SandboxedProcessService{{ i }}"
                  android:process=":sandboxed_process{{ i }}"
                  android:isolatedProcess="true"
                  android:exported="false" />
         {% endfor %}
 
         {% set num_privileged_services = 5 %}
-        <meta-data android:name="org.chromium.content.browser.NUM_PRIVILEGED_SERVICES"
+        <meta-data android:name="org.monyhar.content.browser.NUM_PRIVILEGED_SERVICES"
                    android:value="{{ num_privileged_services }}"/>
 
         {% for i in range(num_privileged_services) %}
-        <service android:name="org.chromium.content.app.PrivilegedProcessService{{ i }}"
+        <service android:name="org.monyhar.content.app.PrivilegedProcessService{{ i }}"
                  android:process=":privileged_process{{ i }}"
                  android:isolatedProcess="false"
                  android:exported="false" />

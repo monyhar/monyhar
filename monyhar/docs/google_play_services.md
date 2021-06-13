@@ -42,4 +42,4 @@ passes, it might fail on the internal bots and result in the CL getting
 reverted, so please make sure the APIs are available to the bots before
 submitting.
 
-[bug_link]:https://bugs.chromium.org/p/chromium/issues/entry?labels=Restrict-View-Google,pri-1,Hotlist-GooglePlayServices&owner=agrieve@chromium.org&os=Android
+[bug_link]:https://bugs.monyhar.org/p/monyhar/issues/entry?labels=Restrict-View-Google,pri-1,Hotlist-GooglePlayServices&owner=agrieve@monyhar.org&os=Android

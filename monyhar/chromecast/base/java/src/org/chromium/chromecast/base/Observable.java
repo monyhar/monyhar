@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.base;
+package org.monyhar.chromecast.base;
 
-import org.chromium.base.Function;
+import org.monyhar.base.Function;
 
 /**
  * Interface for Observable state.

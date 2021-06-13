@@ -7,9 +7,9 @@ bootstrap CrOS services' Mojo connection.
 
 ## Bootstrap a new CrOS service
 
-D-Bus Mojo Connection Service lives in [//chrome/browser/chromeos/dbus/mojo_connection_service_provider.h](https://chromium.googlesource.com/chromium/src.git/+/main/chrome/browser/chromeos/dbus/mojo_connection_service_provider.h).
+D-Bus Mojo Connection Service lives in [//chrome/browser/chromeos/dbus/mojo_connection_service_provider.h](https://monyhar.googlesource.com/monyhar/src.git/+/main/chrome/browser/chromeos/dbus/mojo_connection_service_provider.h).
 
-Follow the example of CrOS Sensors' [changelist](https://chromium-review.googlesource.com/c/chromium/src/+/2352298).
+Follow the example of CrOS Sensors' [changelist](https://monyhar-review.googlesource.com/c/monyhar/src/+/2352298).
 
 ### Steps to Add a usage for a CrOS process with a new D-Bus method:
 1. Add a method name in both CrOS platform and Chrome.
@@ -17,9 +17,9 @@ Follow the example of CrOS Sensors' [changelist](https://chromium-review.googles
 2. Add the busconfig policy in [MojoConnectionService.conf].
 3. Upon a D-Bus request coming from the CrOS service, pass one endpoint of the
    generated Mojo pipe to the component in Chrome that needs a Mojo channel to
-   the CrOS service. Ex: [RegisterServer](https://chromium-review.googlesource.com/c/chromium/src/+/2352298/16/chrome/browser/chromeos/dbus/mojo_connection_service_provider.cc#74) in CrOS Sensors' usage.
+   the CrOS service. Ex: [RegisterServer](https://monyhar-review.googlesource.com/c/monyhar/src/+/2352298/16/chrome/browser/chromeos/dbus/mojo_connection_service_provider.cc#74) in CrOS Sensors' usage.
 4. Respond to the D-Bus request with the other endpoint of the generated Mojo
-   pipe. (Recommend: use the helper function [SendResponse](https://chromium-review.googlesource.com/c/chromium/src/+/2352298/16/chrome/browser/chromeos/dbus/mojo_connection_service_provider.h#75))
+   pipe. (Recommend: use the helper function [SendResponse](https://monyhar-review.googlesource.com/c/monyhar/src/+/2352298/16/chrome/browser/chromeos/dbus/mojo_connection_service_provider.h#75))
 
 The Mojo pipe can also be generated in the CrOS process, and pass the endpoint
 of it as the D-Bus argument to the service provider, instead of allowing Chrome
@@ -47,4 +47,4 @@ be enough for multi-login situations and handling failures. The arguments can
 also be used to determine if Chromium should accept the request, and which Mojo
 interface should be used to establish the Mojo channel.
 
-[MojoConnectionService.conf]: https://chromium.googlesource.com/chromium/src.git/+/main/chrome/browser/chromeos/dbus/org.chromium.MojoConnectionService.conf
+[MojoConnectionService.conf]: https://monyhar.googlesource.com/monyhar/src.git/+/main/chrome/browser/chromeos/dbus/org.monyhar.MojoConnectionService.conf

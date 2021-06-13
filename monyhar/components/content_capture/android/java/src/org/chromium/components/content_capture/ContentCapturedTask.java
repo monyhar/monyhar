@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.content_capture;
+package org.monyhar.components.content_capture;
 
 import android.view.autofill.AutofillId;
 
-import org.chromium.components.content_capture.PlatformSession.PlatformSessionData;
+import org.monyhar.components.content_capture.PlatformSession.PlatformSessionData;
 
 /**
  * The task to notify platform of the captured content

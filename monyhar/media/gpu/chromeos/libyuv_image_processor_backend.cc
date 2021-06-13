@@ -20,7 +20,7 @@ namespace media {
 
 namespace {
 
-// TODO(https://bugs.chromium.org/p/libyuv/issues/detail?id=840): Remove
+// TODO(https://bugs.monyhar.org/p/libyuv/issues/detail?id=840): Remove
 // this once libyuv implements NV12Rotate() and use the libyuv::NV12Rotate().
 bool NV12Rotate(uint8_t* tmp_buffer,
                 const uint8_t* src_y,

@@ -143,7 +143,7 @@ bool FidoAttestationStatement::
     IsAttestationCertificateInappropriatelyIdentifying() const {
   // An attestation certificate is considered inappropriately identifying if it
   // contains a common name of "FT FIDO 0100". See "Inadequately batched
-  // attestation certificates" on https://www.chromium.org/security-keys
+  // attestation certificates" on https://www.monyhar.org/security-keys
   for (const auto& der_bytes : x509_certificates_) {
     if (IsCertificateInappropriatelyIdentifying(der_bytes)) {
       return true;

@@ -23,7 +23,7 @@ class JniDirectoryService {
  public:
   // TODO(rkjnsn): Update error codes to better align with those returned by the
   // new gRPC API.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chromoting.jni
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chromoting.jni
   // GENERATED_JAVA_CLASS_NAME_OVERRIDE: DirectoryServiceRequestError
   enum class RequestError : int {
     AUTH_FAILED = 0,

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments;
+package org.monyhar.chrome.browser.payments;
 
 import android.support.test.InstrumentationRegistry;
 
@@ -13,13 +13,13 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.autofill.PersonalDataManager.AutofillProfile;
-import org.chromium.chrome.browser.payments.ui.ContactDetailsSection;
-import org.chromium.chrome.browser.payments.ui.SectionInformation;
-import org.chromium.chrome.test.ChromeBrowserTestRule;
-import org.chromium.components.autofill.EditableOption;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager.AutofillProfile;
+import org.monyhar.chrome.browser.payments.ui.ContactDetailsSection;
+import org.monyhar.chrome.browser.payments.ui.SectionInformation;
+import org.monyhar.chrome.test.ChromeBrowserTestRule;
+import org.monyhar.components.autofill.EditableOption;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr;
+package org.monyhar.chrome.browser.vr;
 
-import org.chromium.base.BundleUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.modules.ModuleInstallUi;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.module_installer.engine.InstallListener;
-import org.chromium.ui.vr.VrModeObserver;
+import org.monyhar.base.BundleUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.modules.ModuleInstallUi;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.module_installer.engine.InstallListener;
+import org.monyhar.ui.vr.VrModeObserver;
 
 import java.util.ArrayList;
 import java.util.List;

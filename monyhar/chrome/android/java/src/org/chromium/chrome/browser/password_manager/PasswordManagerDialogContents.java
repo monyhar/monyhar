@@ -1,13 +1,13 @@
 // Copyright 2019 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.chrome.browser.password_manager;
+package org.monyhar.chrome.browser.password_manager;
 
 import androidx.annotation.IdRes;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
-import org.chromium.ui.modaldialog.ModalDialogManager;
+import org.monyhar.base.Callback;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
 
 /**
  * Class containing all data that customizes the contents displayed in the dialog.

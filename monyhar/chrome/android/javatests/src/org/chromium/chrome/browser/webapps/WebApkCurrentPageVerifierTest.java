@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps;
+package org.monyhar.chrome.browser.webapps;
 
 import static org.junit.Assert.assertEquals;
 
@@ -13,15 +13,15 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.browserservices.intents.WebappExtras;
-import org.chromium.chrome.browser.browserservices.ui.controller.CurrentPageVerifier.VerificationStatus;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.util.browser.webapps.WebApkIntentDataProviderBuilder;
-import org.chromium.net.test.EmbeddedTestServer;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.browserservices.intents.WebappExtras;
+import org.monyhar.chrome.browser.browserservices.ui.controller.CurrentPageVerifier.VerificationStatus;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.util.browser.webapps.WebApkIntentDataProviderBuilder;
+import org.monyhar.net.test.EmbeddedTestServer;
 
 /**
  * Tests the {@link CurrentPageVerifier} integration with WebAPK Activity.
@@ -41,7 +41,7 @@ public final class WebApkCurrentPageVerifierTest {
 
     private WebappActivity launchWebApk(String url) {
         BrowserServicesIntentDataProvider intentDataProvider =
-                new WebApkIntentDataProviderBuilder("org.chromium.webapk.random", url).build();
+                new WebApkIntentDataProviderBuilder("org.monyhar.webapk.random", url).build();
         return mActivityTestRule.startWebApkActivity(intentDataProvider);
     }
 

@@ -14,12 +14,12 @@
 
 import("crashpad_buildconfig.gni")
 
-if (crashpad_is_in_chromium) {
+if (crashpad_is_in_monyhar) {
   import("//testing/test.gni")
 } else {
   template("test") {
     if (crashpad_is_ios) {
-      import("//third_party/mini_chromium/mini_chromium/build/ios/rules.gni")
+      import("//third_party/mini_monyhar/mini_monyhar/build/ios/rules.gni")
 
       _launch_image_bundle_target = target_name + "_launch_image"
       bundle_data(_launch_image_bundle_target) {

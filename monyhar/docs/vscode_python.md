@@ -2,7 +2,7 @@
 
 ## Before You Begin
 
-1. Patch in [this CL](https://chromium-review.googlesource.com/c/chromium/src/+/2466896).
+1. Patch in [this CL](https://monyhar-review.googlesource.com/c/monyhar/src/+/2466896).
 2. Run gclient sync.
 
 ## Via SSH

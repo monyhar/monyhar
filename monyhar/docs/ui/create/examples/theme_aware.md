@@ -38,7 +38,7 @@ such as how to lay out UI elements and how to customize them.
 ## Run the example
 
 The example code is in the file
-[`ui/views/examples/colored_dialog_example.cc`](https://source.chromium.org/chromium/chromium/src/+/main:ui/views/examples/colored_dialog_example.cc)
+[`ui/views/examples/colored_dialog_example.cc`](https://source.monyhar.org/monyhar/monyhar/src/+/main:ui/views/examples/colored_dialog_example.cc)
 and its corresponding header file. You can run it on Windows or Linux via
 the `views_examples` application. Change the path accordingly based on your
 platform and building environment:
@@ -183,5 +183,5 @@ $ out\Default\views_examples
 ```
 
 For more in-depth recommendations on working with colors in Views, read
-[Best Practice: Colors](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/ui/learn/bestpractices/colors.md).
+[Best Practice: Colors](https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/ui/learn/bestpractices/colors.md).
 

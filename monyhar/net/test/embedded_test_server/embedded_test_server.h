@@ -117,7 +117,7 @@ class EmbeddedTestServer {
   };
 
   // A Java counterpart will be generated for this enum.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.net.test
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.net.test
   enum ServerCertificate {
     CERT_OK,
 

@@ -9,9 +9,9 @@ the Web Animations API (e.g. `element.animate()`) to Javascript.
 ## Contacts
 
 * [Animations OWNERS](
-https://cs.chromium.org/search?&q=file:blink/renderer/core/animation/OWNERS)
+https://cs.monyhar.org/search?&q=file:blink/renderer/core/animation/OWNERS)
 * [Chromium #animations channel on Slack](
-https://chromium.slack.com#animations)
+https://monyhar.slack.com#animations)
 
 ## Specifications implemented
 
@@ -32,7 +32,7 @@ subtree: CSS animations, CSS transitions, and web animations. These animation
 types are largely differentiated by their creation mechanism, but also have
 differences in behavior such as rules for composite ordering. Nonetheless, all
 three animation types share a common base class ([Animation](
-https://cs.chromium.org/search/?q=class:blink::Animation$)) with the majority
+https://cs.monyhar.org/search/?q=class:blink::Animation$)) with the majority
 of the code being common to all three animation types.
 
 ### CSS animation
@@ -69,17 +69,17 @@ detailed explanation of the animation shorthand property and its longhand
 counterparts can be found on the [MDN > CSS > animation](
 https://developer.mozilla.org/en-US/docs/Web/CSS/animation) page.
 
-[CSS Animations](https://cs.chromium.org/search?&q=class:blink::CSSAnimation$)
+[CSS Animations](https://cs.monyhar.org/search?&q=class:blink::CSSAnimation$)
 are created during style update in a multi-stage process. Keyframe models for
 pending animations are created in [CalculateAnimationUpdate](
-https://cs.chromium.org/search?lang=cc&q=function:CSSAnimations::CalculateAnimationUpdate
+https://cs.monyhar.org/search?lang=cc&q=function:CSSAnimations::CalculateAnimationUpdate
 ), which in turn calls [CreateKeyframeEffectModel](
-https://cs.chromium.org/search?lang=cc&q=function:CreateKeyframeEffectModel%20file:css_animations.cc
+https://cs.monyhar.org/search?lang=cc&q=function:CreateKeyframeEffectModel%20file:css_animations.cc
 ). The algorithm for constructing keyframes for a CSS animation is outlined in
 [css-animations-2/#keyframes](https://drafts.csswg.org/css-animations-2/#keyframes).
 New animations are constructed for the pending animations in
 [MaybeApplyPendingUpdate](
-https://cs.chromium.org/search?lang=cc&q=function:CSSAnimations::MaybeApplyPendingUpdate
+https://cs.monyhar.org/search?lang=cc&q=function:CSSAnimations::MaybeApplyPendingUpdate
 ). This method also handles updating the timing model of existing CSS animations
 or canceling CSS animations.
 
@@ -88,14 +88,14 @@ https://www.w3.org/TR/web-animations-1/#animation-effect-phases-and-states)
  of a CSS animation may result in firing one or more [AnimationEvent](
 https://developer.mozilla.org/en-US/docs/Web/API/AnimationEvent)s. Each CSS
 animation has an associated [AnimationEventDelegate](
-https://cs.chromium.org/search?lang=cc&q=class:AnimationEventDelegate) with an
+https://cs.monyhar.org/search?lang=cc&q=class:AnimationEventDelegate) with an
 [OnEventCondition](
-https://cs.chromium.org/search?lang=cc&q=function:AnimationEventDelegate::OnEventCondition) method,
+https://cs.monyhar.org/search?lang=cc&q=function:AnimationEventDelegate::OnEventCondition) method,
 which handles dispatching of these events.
 
 The [CSSAnimation interface](
-https://cs.chromium.org/search?q=file:css_animation.idl) extends the
-[Animation interface](https://cs.chromium.org/search?q=file:animation.idl) to
+https://cs.monyhar.org/search?q=file:css_animation.idl) extends the
+[Animation interface](https://cs.monyhar.org/search?q=file:animation.idl) to
 include an animationName property, which indicated the name of the keyframes
 rule associated with the animation. Note that this association may be broken
 by interacting with the animation via the web-animation API.
@@ -123,23 +123,23 @@ background color. A more detailed description of the transition property and its
 longhand counterparts can be found on the [MDN > CSS > Transitions](
 https://developer.mozilla.org/en-US/docs/Web/CSS/transition) page.
 
-[CSS Transitions](https://cs.chromium.org/search?&q=class:blink::CSSTransition$)
+[CSS Transitions](https://cs.monyhar.org/search?&q=class:blink::CSSTransition$)
 are created during style update in a multi-stage process. Keyframe models for
 pending animations are created in [CalculateTransitionUpdate](
-https://cs.chromium.org/search?lang=cc&q=function:CSSAnimations::CalculateTransitionUpdate$), which
+https://cs.monyhar.org/search?lang=cc&q=function:CSSAnimations::CalculateTransitionUpdate$), which
 iterates over names in transition-property calling
-[CalculateTransitionUpdateForProperty](https://cs.chromium.org/search?lang=cc&q=function:CSSAnimations::CalculateTransitionUpdateForProperty)
+[CalculateTransitionUpdateForProperty](https://cs.monyhar.org/search?lang=cc&q=function:CSSAnimations::CalculateTransitionUpdateForProperty)
 for each property. If there is already an active transition for the property
 and the value of the property changes, the transition is retargeted to the new
 end point. When retargeting an animation, the current position is used as a
 starting point, which is calculated by applying active animations with an
 updated timestamp to the underlying style in [CalculateBeforeChangeStyle](
-https://cs.chromium.org/search?lang=cc&q=function:CSSAnimations::CalculateBeforeChangeStyle
+https://cs.monyhar.org/search?lang=cc&q=function:CSSAnimations::CalculateBeforeChangeStyle
 ). The before-change style is lazy evaluated to avoid unnecessary work when no
 transition updates are required, and is computed at most once per element per
 non-animation style update. New transitions are constructed for the pending
 transitions in [MaybeApplyPendingUpdate](
-https://cs.chromium.org/search?lang=cc&q=function:CSSAnimations::MaybeApplyPendingUpdate
+https://cs.monyhar.org/search?lang=cc&q=function:CSSAnimations::MaybeApplyPendingUpdate
 ). This method handles constructing new transitions, retargeting active
 transitions, and canceling finished transitions.
 
@@ -148,14 +148,14 @@ https://www.w3.org/TR/web-animations-1/#animation-effect-phases-and-states)
 of a CSS transition may result in firing one or more [TransitionEvent](
 https://developer.mozilla.org/en-US/docs/Web/API/TransitionEvent)s. Each CSS
 transition has an associated [TransitionEventDelegate](
-https://cs.chromium.org/search?lang=cc&q=class:TransitionEventDelegate) with an
+https://cs.monyhar.org/search?lang=cc&q=class:TransitionEventDelegate) with an
 [OnEventCondition](
-https://cs.chromium.org/search?lang=cc&q=function:TransitionEventDelegate::OnEventCondition) method,
+https://cs.monyhar.org/search?lang=cc&q=function:TransitionEventDelegate::OnEventCondition) method,
 which handles dispatching of these events.
 
 The [CSSTransition interface](
-https://cs.chromium.org/search?q=file:css_transition.idl) extends the
-[Animation interface](https://cs.chromium.org/search?q=file:animation.idl) to
+https://cs.monyhar.org/search?q=file:css_transition.idl) extends the
+[Animation interface](https://cs.monyhar.org/search?q=file:animation.idl) to
 include an transitionProperty property, which indicated the name of the property
 being transitioned. Note that this association may be broken by interacting with
 the transition via the web-animation API.
@@ -164,7 +164,7 @@ the transition via the web-animation API.
 
 Web animations are programmatically created in JavaScript via calls to
 [Element.animate](
-https://cs.chromium.org/search?q=function:Animatable::Animate). Similar to
+https://cs.monyhar.org/search?q=function:Animatable::Animate). Similar to
 CSS animations, web-animations require a set of keyframes; however, the
 representation of the keyframes is expressed as a list or object in JavaScript.
 For example:
@@ -280,25 +280,25 @@ overview of the web animation model.
 
 Points of interest in the Blink code base:
 * [timing_calculations.h](
-https://cs.chromium.org/search?q=file:core/animation/timing_calculations.h):
+https://cs.monyhar.org/search?q=file:core/animation/timing_calculations.h):
 contains static helper functions for various timing calculations used in the
 animation model such as determining the phase of the animation, iteration
 progress and transformed progress.
 * [AnimationEffect::UpdateInheritedTime](
-https://cs.chromium.org/search?q=function:blink::AnimationEffect::UpdateInheritedTime):
+https://cs.monyhar.org/search?q=function:blink::AnimationEffect::UpdateInheritedTime):
 applies the web animation model and dispatches animation/transition events.
 * [InterpolationEffect::GetActiveInterpolations](
-https://cs.chromium.org/search?q=function:blink::InterpolationEffect::GetActiveInterpolations):
+https://cs.monyhar.org/search?q=function:blink::InterpolationEffect::GetActiveInterpolations):
 creates a list of active interpolations by determining keyframe-pairs that bound
 the iteration progress and determining the 'local' progress between keyframes.
 If a timing function is specified for the interpolation, it is applied when
 computing the 'local' progress.
 * [KeyframeEffect::ApplyEffects](
-https://cs.chromium.org/search?q=function:blink::KeyframeEffect::ApplyEffects):
+https://cs.monyhar.org/search?q=function:blink::KeyframeEffect::ApplyEffects):
 Samples the keyframe effect, adding it to the effect stack if necessary and
 signaling that an animation style recalc is needed if the sampled value changed.
 * [Animation::Update](
-https://cs.chromium.org/search?q=function:blink::Animation::Update):
+https://cs.monyhar.org/search?q=function:blink::Animation::Update):
 Called in response to ticking the animation timeline or to revalidate outdated
 animations. In addition to applying the web animation model via
 UpdateInheritedTime, this method determines if the animation is finished.
@@ -833,45 +833,45 @@ the current value of the effect stack up to an including the animation.
    ```
 
 [Animation interface]: https://drafts.csswg.org/web-animations/#the-animation-interface
-[Animation object]: https://cs.chromium.org/search/?q=class:blink::Animation$
+[Animation object]: https://cs.monyhar.org/search/?q=class:blink::Animation$
 [timeline]: https://drafts.csswg.org/web-animations/#timelines
 [Timelines]: https://drafts.csswg.org/web-animations/#timelines
 [default document timeline]: https://drafts.csswg.org/web-animations/#the-documents-default-timeline
-[AnimationEffect::EventDelegate]: https://cs.chromium.org/search?lang=cc&q=class:AnimationEffect::EventDelegate$
-[Animation constructor]:  https://cs.chromium.org/search/?q=function:blink::Animation::Animation$
-[id attribute]: https://cs.chromium.org/search/?q=function:blink::Animation::(setI|i)d$
-[effect attribute]: https://cs.chromium.org/search/?q=function:blink::Animation::(setE|e)ffect$
-[readonly timeline attribute]: https://cs.chromium.org/search/?q=function:blink::Animation::timeline$
-[startTime attribute]: https://cs.chromium.org/search/?q=function:blink::(CSS|)Animation::(setS|s)tartTime$
-[currentTime attribute]: https://cs.chromium.org/search/?q=function:blink::Animation::(setC|c)urrentTime$
-[playbackRate attribute]: https://cs.chromium.org/search/?q=function:blink::Animation::(setP|p)laybackRate$
-[readonly playState attribute]:  https://cs.chromium.org/search/?q=function:blink::Animation::playState$
-[readonly replaceState attribute]: https://cs.chromium.org/search/?q=function:blink::Animation::replaceState$
-[readonly pending attribute]: https://cs.chromium.org/search/?q=function:blink::(CSS|)Animation::pending$
-[readonly ready attribute]: https://cs.chromium.org/search/?q=function:blink::Animation::ready$
-[readonly finished attribute]: https://cs.chromium.org/search/?q=function:blink::Animation::finished$
-[onfinished attribute]: https://cs.chromium.org/search/?q=file:animation.h+DEFINE_ATTRIBUTE_EVENT_LISTENER
-[oncancel attribute]: https://cs.chromium.org/search/?q=file:animation.h+DEFINE_ATTRIBUTE_EVENT_LISTENER
-[onremove attribute]: https://cs.chromium.org/search/?q=file:animation.h+DEFINE_ATTRIBUTE_EVENT_LISTENER
-[cancel nethod]: https://cs.chromium.org/search/?q=function:blink::Animation::cancel$
-[finish method]: https://cs.chromium.org/search/?q=function:blink::Animation::finish$
-[play method]: https://cs.chromium.org/search/?q=function:blink::Animation::play$
-[pause nethod]: https://cs.chromium.org/search/?q=function:blink::Animation::pause$
-[updatePlaybackRate nethod]: https://cs.chromium.org/search/?q=function:blink::Animation::updatePlaybackRate$
-[reverse method]: https://cs.chromium.org/search/?q=function:blink::Animation::reverse$
-[persist method]: https://cs.chromium.org/search/?q=function:blink::Animation::persist$
-[commitStyles method]: https://cs.chromium.org/search/?q=function:blink::Animation::commitStyles$
-[Animation::SetCompositorPending]: https://cs.chromium.org/search/?q=function:blink::Animation::SetCompositorPending$
-[PendingAnimations::Update]: https://cs.chromium.org/search/?q=function:blink::PendingAnimations::Update$
-[Animation::UpdateFinishedState]: https://cs.chromium.org/search/?q=function:blink::Animation::UpdateFinishedState$
-[Animation::AsyncFinishMicrotask]: https://cs.chromium.org/search/?q=function:blink::Animation::AsyncFinishMicrotask$
-[PendingAnimations::NotifyCompositorAnimationStarted]: https://cs.chromium.org/search/?q=function:blink::PendingAnimations::NotifyCompositorAnimationStarted$
-[Animation::NotifyReady]: https://cs.chromium.org/search/?q=function:blink::Animation::NotifyReady$
-[Animation::CommitPendingPlay]: https://cs.chromium.org/search/?q=function:blink::Animation::CommitPendingPlay$
-[Animation::CommitPendingPause]: https://cs.chromium.org/search/?q=function:blink::Animation::CommitPendingPause$
-[Animation::IsReplaceable]: https://cs.chromium.org/search/?q=function:blink::Animation::IsReplaceable$
-[AnimationTimeline::RemoveReplacedAnimations]: https://cs.chromium.org/search/?q=function:blink::AnimationTimeline::RemoveReplacedAnimation$
-[Animation::RemoveReplacedAnimation]: https://cs.chromium.org/search/?q=function:blink::Animation::RemoveReplacedAnimation$
+[AnimationEffect::EventDelegate]: https://cs.monyhar.org/search?lang=cc&q=class:AnimationEffect::EventDelegate$
+[Animation constructor]:  https://cs.monyhar.org/search/?q=function:blink::Animation::Animation$
+[id attribute]: https://cs.monyhar.org/search/?q=function:blink::Animation::(setI|i)d$
+[effect attribute]: https://cs.monyhar.org/search/?q=function:blink::Animation::(setE|e)ffect$
+[readonly timeline attribute]: https://cs.monyhar.org/search/?q=function:blink::Animation::timeline$
+[startTime attribute]: https://cs.monyhar.org/search/?q=function:blink::(CSS|)Animation::(setS|s)tartTime$
+[currentTime attribute]: https://cs.monyhar.org/search/?q=function:blink::Animation::(setC|c)urrentTime$
+[playbackRate attribute]: https://cs.monyhar.org/search/?q=function:blink::Animation::(setP|p)laybackRate$
+[readonly playState attribute]:  https://cs.monyhar.org/search/?q=function:blink::Animation::playState$
+[readonly replaceState attribute]: https://cs.monyhar.org/search/?q=function:blink::Animation::replaceState$
+[readonly pending attribute]: https://cs.monyhar.org/search/?q=function:blink::(CSS|)Animation::pending$
+[readonly ready attribute]: https://cs.monyhar.org/search/?q=function:blink::Animation::ready$
+[readonly finished attribute]: https://cs.monyhar.org/search/?q=function:blink::Animation::finished$
+[onfinished attribute]: https://cs.monyhar.org/search/?q=file:animation.h+DEFINE_ATTRIBUTE_EVENT_LISTENER
+[oncancel attribute]: https://cs.monyhar.org/search/?q=file:animation.h+DEFINE_ATTRIBUTE_EVENT_LISTENER
+[onremove attribute]: https://cs.monyhar.org/search/?q=file:animation.h+DEFINE_ATTRIBUTE_EVENT_LISTENER
+[cancel nethod]: https://cs.monyhar.org/search/?q=function:blink::Animation::cancel$
+[finish method]: https://cs.monyhar.org/search/?q=function:blink::Animation::finish$
+[play method]: https://cs.monyhar.org/search/?q=function:blink::Animation::play$
+[pause nethod]: https://cs.monyhar.org/search/?q=function:blink::Animation::pause$
+[updatePlaybackRate nethod]: https://cs.monyhar.org/search/?q=function:blink::Animation::updatePlaybackRate$
+[reverse method]: https://cs.monyhar.org/search/?q=function:blink::Animation::reverse$
+[persist method]: https://cs.monyhar.org/search/?q=function:blink::Animation::persist$
+[commitStyles method]: https://cs.monyhar.org/search/?q=function:blink::Animation::commitStyles$
+[Animation::SetCompositorPending]: https://cs.monyhar.org/search/?q=function:blink::Animation::SetCompositorPending$
+[PendingAnimations::Update]: https://cs.monyhar.org/search/?q=function:blink::PendingAnimations::Update$
+[Animation::UpdateFinishedState]: https://cs.monyhar.org/search/?q=function:blink::Animation::UpdateFinishedState$
+[Animation::AsyncFinishMicrotask]: https://cs.monyhar.org/search/?q=function:blink::Animation::AsyncFinishMicrotask$
+[PendingAnimations::NotifyCompositorAnimationStarted]: https://cs.monyhar.org/search/?q=function:blink::PendingAnimations::NotifyCompositorAnimationStarted$
+[Animation::NotifyReady]: https://cs.monyhar.org/search/?q=function:blink::Animation::NotifyReady$
+[Animation::CommitPendingPlay]: https://cs.monyhar.org/search/?q=function:blink::Animation::CommitPendingPlay$
+[Animation::CommitPendingPause]: https://cs.monyhar.org/search/?q=function:blink::Animation::CommitPendingPause$
+[Animation::IsReplaceable]: https://cs.monyhar.org/search/?q=function:blink::Animation::IsReplaceable$
+[AnimationTimeline::RemoveReplacedAnimations]: https://cs.monyhar.org/search/?q=function:blink::AnimationTimeline::RemoveReplacedAnimation$
+[Animation::RemoveReplacedAnimation]: https://cs.monyhar.org/search/?q=function:blink::Animation::RemoveReplacedAnimation$
 [microtask checkpoint]: https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide
 
 
@@ -982,12 +982,12 @@ of the web-animation API takes precedence over CSS.
    assert_equals(animation.effect.getTiming().duration, 2000);
    ```
 
-[AnimationEffect interface]: https://cs.chromium.org/search/?q=file:core/animation/animation_effect.idl
-[getTiming method]: https://cs.chromium.org/search/?q=function:blink::AnimationEffect::getTiming$
-[getComputedTiming method]: https://cs.chromium.org/search/?q=function:blink::AnimationEffect::getComputedTiming$
-[updateTiming method]: https://cs.chromium.org/search/?q=function:blink::AnimationEffect::updateTiming$
-[EffectTiming]: https://cs.chromium.org/search/?q=class:blink::EffectTiming$
-[ComputedEffectTiming]: https://cs.chromium.org/search/?q=class:blink::ComputedEffectTiming$
+[AnimationEffect interface]: https://cs.monyhar.org/search/?q=file:core/animation/animation_effect.idl
+[getTiming method]: https://cs.monyhar.org/search/?q=function:blink::AnimationEffect::getTiming$
+[getComputedTiming method]: https://cs.monyhar.org/search/?q=function:blink::AnimationEffect::getComputedTiming$
+[updateTiming method]: https://cs.monyhar.org/search/?q=function:blink::AnimationEffect::updateTiming$
+[EffectTiming]: https://cs.monyhar.org/search/?q=class:blink::EffectTiming$
+[ComputedEffectTiming]: https://cs.monyhar.org/search/?q=class:blink::ComputedEffectTiming$
 [transformed progress]: https://drafts.csswg.org/web-animations/#calculating-the-transformed-progress
 
 
@@ -1057,20 +1057,20 @@ other than the one specified in CssTransition.transitionProperty. In the event
 of transition retargeting, the transition's current time is used for computing
 the current progress even if no longer transitioning the property.
 
-[KeyframeEffect interface]: https://cs.chromium.org/search/?q=file:core/animation/keyframe_effect.idl
-[KeyframeEffect object]: https://cs.chromium.org/search/?q=class:blink::KeyframeEffect$
-[KeyframeEffect constructor]: https://cs.chromium.org/search/?q=function:blink::KeyframeEffect::Create$
-[target attribute]: https://cs.chromium.org/search/?q=function:blink::KeyframeEffect::(setT|t)arget$
-[pseudoElement attribute]: https://cs.chromium.org/search/?q=function:blink::KeyframeEffect::(setP|p)seudoElement$
-[composite attribute]: https://cs.chromium.org/search/?q=function:blink::KeyframeEffect::(setC|c)omposite$
-[getKeyframes method]: https://cs.chromium.org/search/?q=function:blink::KeyframeEffect::getKeyframes$
-[setKeyframes method]: https://cs.chromium.org/search/?q=function:blink::KeyframeEffect::setKeyframes$
+[KeyframeEffect interface]: https://cs.monyhar.org/search/?q=file:core/animation/keyframe_effect.idl
+[KeyframeEffect object]: https://cs.monyhar.org/search/?q=class:blink::KeyframeEffect$
+[KeyframeEffect constructor]: https://cs.monyhar.org/search/?q=function:blink::KeyframeEffect::Create$
+[target attribute]: https://cs.monyhar.org/search/?q=function:blink::KeyframeEffect::(setT|t)arget$
+[pseudoElement attribute]: https://cs.monyhar.org/search/?q=function:blink::KeyframeEffect::(setP|p)seudoElement$
+[composite attribute]: https://cs.monyhar.org/search/?q=function:blink::KeyframeEffect::(setC|c)omposite$
+[getKeyframes method]: https://cs.monyhar.org/search/?q=function:blink::KeyframeEffect::getKeyframes$
+[setKeyframes method]: https://cs.monyhar.org/search/?q=function:blink::KeyframeEffect::setKeyframes$
 [KeyframeEffectOptions]: https://drafts.csswg.org/web-animations/#the-keyframeeffectoptions-dictionary
-[TransitionKeyframes]: https://cs.chromium.org/search/?q=class:blink::TransitionKeyframe$
-[StringKeyframes]: https://cs.chromium.org/search/?q=class:blink::StringKeyframe$
-[KeyframeEffectModel]: https://cs.chromium.org/search/?q=class:blink::KeyframeEffectModel$
-[CssKeyframeEffectModel]: https://cs.chromium.org/search/?q=class:blink::CssKeyframeEffectModel$
-[getComputedKeyframes]: https://cs.chromium.org/search/?q=function:blink::(CSS|)KeyframeEffectModel(Base|)::getComputedKeyframes$
+[TransitionKeyframes]: https://cs.monyhar.org/search/?q=class:blink::TransitionKeyframe$
+[StringKeyframes]: https://cs.monyhar.org/search/?q=class:blink::StringKeyframe$
+[KeyframeEffectModel]: https://cs.monyhar.org/search/?q=class:blink::KeyframeEffectModel$
+[CssKeyframeEffectModel]: https://cs.monyhar.org/search/?q=class:blink::CssKeyframeEffectModel$
+[getComputedKeyframes]: https://cs.monyhar.org/search/?q=function:blink::(CSS|)KeyframeEffectModel(Base|)::getComputedKeyframes$
 
 ### AnimationTimeline / DocumentTimeline
 
@@ -1092,7 +1092,7 @@ flagging and removing replaced animations, and 4) retrieving a list of active
 animations in support of getAnimations calls.
 
 * **[currentTime attribute](
-https://cs.chromium.org/search/?q=function:blink::AnimationTimeline::currentTime$)**:
+https://cs.monyhar.org/search/?q=function:blink::AnimationTimeline::currentTime$)**:
 gets the current time for the timeline or null if unresolved. The current time
 may be relative to a time origin in the case of a monotonically increasing
 timeline or proportional to the scroll position in the case of a non-monotonic
@@ -1102,7 +1102,7 @@ remain fixed. This restriction ensures consistent behavior if multiple calls to
 fetch the currentTime are performed within a script.
 
 * **[phase attribute](
-https://cs.chromium.org/search/?q=function:blink::AnimationTimeline::phase$
+https://cs.monyhar.org/search/?q=function:blink::AnimationTimeline::phase$
 )**: gets the phase of a timeline. A timeline that is not associated with the
 active document is in the 'inactive' phase. A DocumentTimeline has an additional
 constraint that the time origin needs to be initialized for the timeline to be
@@ -1111,7 +1111,7 @@ currentTime.
 
 [AnimationTimeline interface]: https://drafts.csswg.org/web-animations/#the-animationtimeline-interface
 [DocumentTimeline interface]: hhttps://drafts.csswg.org/web-animations/#the-documenttimeline-interface
-[AnimationTimeline class]: https://cs.chromium.org/search/?q=class:blink::AnimationTimeline$
+[AnimationTimeline class]: https://cs.monyhar.org/search/?q=class:blink::AnimationTimeline$
 
 TODO: Document ScrollTimeline
 
@@ -1124,7 +1124,7 @@ CSS rules. An alternate timeline may be used by calling the Animation
 constructor rather than Element.animate to create the animation.
 
 * **[timeline](
-https://cs.chromium.org/search/?q=function:blink::Document::Timeline$)**: the
+https://cs.monyhar.org/search/?q=function:blink::Document::Timeline$)**: the
 default document timeline.
 
 
@@ -1134,13 +1134,13 @@ Documents and ShadowRoots support an API call to retrieve all animations
 associated with the document or shadow root.
 
 * **[getAnimations](
-https://cs.chromium.org/search/?q=function:blink::DocumentOrShadowRoot::getAnimations$)**: retrieves the list of all active animations associated with the document
+https://cs.monyhar.org/search/?q=function:blink::DocumentOrShadowRoot::getAnimations$)**: retrieves the list of all active animations associated with the document
 in composite ordering. See Animatable.getAnimations for a brief overview of
 composite ordering. DocumentOrShadowRoot::getAnimations calls
 [DocumentAnimations::getAnimations][], which walks the timelines associated with
 the document and extracts the active ones.
 
-[DocumentAnimations::getAnimations]: https://cs.chromium.org/search/?q=function:blink::DocumentAnimations::getAnimations$
+[DocumentAnimations::getAnimations]: https://cs.monyhar.org/search/?q=function:blink::DocumentAnimations::getAnimations$
 
 
 ## The interpolation stack
@@ -1335,17 +1335,17 @@ property flushes all previous effects for the property.  The other modes are
 'add' and 'accumulate'. If either of these options is used, both the old and
 new effect are included in the set.
 
-[CSSInterpolationType]: https://cs.chromium.org/search/?q=class:blink::CSSInterpolationType$
-[InterpolableValue]: https://cs.chromium.org/search/?q=class:blink::InterpolableValue$
-[InterpolableFilter]: https://cs.chromium.org/search/?q=class:blink::InterpolableFilter$
-[CSSFilterListInterpolationType]: https://cs.chromium.org/search/?q=class:blink::CSSFilterListInterpolationType$
-[EffectStack]: https://cs.chromium.org/search/?q=class:blink::EffectStack$
-[PageAnimator::ServiceScriptedAnimations]: https://cs.chromium.org/search/?q=function:blink::PageAnimator::ServiceScriptedAnimations$
-[DocumentAnimations::UpdateAnimationTimingForAnimationFrame]: https://cs.chromium.org/search/?q=function:blink::DocumentAnimations::UpdateAnimationTimingForAnimationFrame$
-[AnimationTimeline::ServiceAnimations]: https://cs.chromium.org/search/?q=function:blink::AnimationTimeline::ServiceAnimations$
-[Animation::Update]: https://cs.chromium.org/search/?q=function:blink::Animation::Update$
-[KeyframeEffect::ApplyEffect]: https://cs.chromium.org/search/?q=function:blink::KeyframeEffect::ApplyEffects$
-[EffectStack::ActiveInterpolations]: https://cs.chromium.org/search/?q=function:blink::EffectStack::ActiveInterpolations$
+[CSSInterpolationType]: https://cs.monyhar.org/search/?q=class:blink::CSSInterpolationType$
+[InterpolableValue]: https://cs.monyhar.org/search/?q=class:blink::InterpolableValue$
+[InterpolableFilter]: https://cs.monyhar.org/search/?q=class:blink::InterpolableFilter$
+[CSSFilterListInterpolationType]: https://cs.monyhar.org/search/?q=class:blink::CSSFilterListInterpolationType$
+[EffectStack]: https://cs.monyhar.org/search/?q=class:blink::EffectStack$
+[PageAnimator::ServiceScriptedAnimations]: https://cs.monyhar.org/search/?q=function:blink::PageAnimator::ServiceScriptedAnimations$
+[DocumentAnimations::UpdateAnimationTimingForAnimationFrame]: https://cs.monyhar.org/search/?q=function:blink::DocumentAnimations::UpdateAnimationTimingForAnimationFrame$
+[AnimationTimeline::ServiceAnimations]: https://cs.monyhar.org/search/?q=function:blink::AnimationTimeline::ServiceAnimations$
+[Animation::Update]: https://cs.monyhar.org/search/?q=function:blink::Animation::Update$
+[KeyframeEffect::ApplyEffect]: https://cs.monyhar.org/search/?q=function:blink::KeyframeEffect::ApplyEffects$
+[EffectStack::ActiveInterpolations]: https://cs.monyhar.org/search/?q=function:blink::EffectStack::ActiveInterpolations$
 [css-transforms-1 - interpolations of matrices]: https://www.w3.org/TR/css-transforms-1/#matrix-interpolation
 [css-transforms-2 - interpolations of 3d matrices]: https://www.w3.org/TR/css-transforms-2/#interpolation-of-3d-matrices
 [css-transforms-1 - interpolations of transforms]: https://www.w3.org/TR/css-transforms-1/#interpolation-of-transforms
@@ -1373,16 +1373,16 @@ The Blink animation engine interacts with Blink/Chrome in the following ways:
     to the animation engine which gets [applied later][].
 
 [CSS cascade]: https://www.w3.org/TR/css-cascade-3/#cascade-origin
-[ComputedStyle]: https://cs.chromium.org/search/?q=class:blink::ComputedStyle$
-[ResolveStyle()]: https://cs.chromium.org/search/?q=function:StyleResolver::ResolveStyle
-[ApplyAnimatedStandardProperties()]: https://cs.chromium.org/?type=cs&q=function:StyleResolver::ApplyAnimatedStandardProperties
-[ApplyAnimatedCustomProperties()]: https://cs.chromium.org/?type=cs&q=function:ApplyAnimatedCustomProperties
+[ComputedStyle]: https://cs.monyhar.org/search/?q=class:blink::ComputedStyle$
+[ResolveStyle()]: https://cs.monyhar.org/search/?q=function:StyleResolver::ResolveStyle
+[ApplyAnimatedStandardProperties()]: https://cs.monyhar.org/?type=cs&q=function:StyleResolver::ApplyAnimatedStandardProperties
+[ApplyAnimatedCustomProperties()]: https://cs.monyhar.org/?type=cs&q=function:ApplyAnimatedCustomProperties
 [variable references]: https://www.w3.org/TR/css-variables-1/#using-variables
-[CalculateAnimationUpdate()]: https://cs.chromium.org/search/?q=function:CSSAnimations::CalculateAnimationUpdate
-[CalculateTransitionUpdate()]: https://cs.chromium.org/search/?q=function:CSSAnimations::CalculateTransitionUpdate
-[MaybeApplyPendingUpdate()]: https://cs.chromium.org/search/?q=function:CSSAnimations::MaybeApplyPendingUpdate
-[set of mutations]: https://cs.chromium.org/search/?q=class:CSSAnimationUpdate
-[applied later]: https://cs.chromium.org/search/?q=function:Element::StyleForLayoutObject+MaybeApplyPendingUpdate
+[CalculateAnimationUpdate()]: https://cs.monyhar.org/search/?q=function:CSSAnimations::CalculateAnimationUpdate
+[CalculateTransitionUpdate()]: https://cs.monyhar.org/search/?q=function:CSSAnimations::CalculateTransitionUpdate
+[MaybeApplyPendingUpdate()]: https://cs.monyhar.org/search/?q=function:CSSAnimations::MaybeApplyPendingUpdate
+[set of mutations]: https://cs.monyhar.org/search/?q=class:CSSAnimationUpdate
+[applied later]: https://cs.monyhar.org/search/?q=function:Element::StyleForLayoutObject+MaybeApplyPendingUpdate
 
 *   ### [Chromium's Compositor](../../../../../cc/README.md)
 
@@ -1436,21 +1436,21 @@ The Blink animation engine interacts with Blink/Chrome in the following ways:
     important to ensure its output accurately reflects the compositor animation
     output.
 
-[CheckCanStartAnimationOnCompositor()]: https://cs.chromium.org/search/?q=file:animation.h+function:CheckCanStartAnimationOnCompositor
-[FailureCodes]: https://cs.chromium.org/search/?q=return%5Cs%2B(CompositorAnimations::)?FailureCode
-[cc::AnimationPlayer]: https://cs.chromium.org/search/?q=file:src/cc/animation/animation_player.h+class:AnimationPlayer
-[PendingAnimations]: https://cs.chromium.org/search/?q=file:pending_animations.h+class:PendingAnimations
-[Animation::PreCommit()]: https://cs.chromium.org/search/?q=file:animation.h+function:PreCommit
-[CompositorAnimationDelegate]: https://cs.chromium.org/search/?q=file:compositor_animation_delegate.h
-[CompositedLayerMapping::UpdateGraphicsLayerGeometry()]: https://cs.chromium.org/search/?q=file:composited_layer_mapping.h+function:UpdateGraphicsLayerGeometry
-[FragmentPaintPropertyTreeBuilder::UpdateTransform()]: https://cs.chromium.org/search/?q=class:FragmentPaintPropertyTreeBuilder+function:UpdateTransform
-[FragmentPaintPropertyTreeBuilder::UpdateEffect()]: https://cs.chromium.org/search/?q=class:FragmentPaintPropertyTreeBuilder+function:UpdateEffect
-[FragmentPaintPropertyTreeBuilder::UpdateFilter()]: https://cs.chromium.org/search/?q=class:FragmentPaintPropertyTreeBuilder+function:UpdateFilter
-[BlinkGenPropertyTrees mode]: https://chromium.googlesource.com/chromium/src/+/HEAD/third_party/blink/renderer/core/paint/README.md
+[CheckCanStartAnimationOnCompositor()]: https://cs.monyhar.org/search/?q=file:animation.h+function:CheckCanStartAnimationOnCompositor
+[FailureCodes]: https://cs.monyhar.org/search/?q=return%5Cs%2B(CompositorAnimations::)?FailureCode
+[cc::AnimationPlayer]: https://cs.monyhar.org/search/?q=file:src/cc/animation/animation_player.h+class:AnimationPlayer
+[PendingAnimations]: https://cs.monyhar.org/search/?q=file:pending_animations.h+class:PendingAnimations
+[Animation::PreCommit()]: https://cs.monyhar.org/search/?q=file:animation.h+function:PreCommit
+[CompositorAnimationDelegate]: https://cs.monyhar.org/search/?q=file:compositor_animation_delegate.h
+[CompositedLayerMapping::UpdateGraphicsLayerGeometry()]: https://cs.monyhar.org/search/?q=file:composited_layer_mapping.h+function:UpdateGraphicsLayerGeometry
+[FragmentPaintPropertyTreeBuilder::UpdateTransform()]: https://cs.monyhar.org/search/?q=class:FragmentPaintPropertyTreeBuilder+function:UpdateTransform
+[FragmentPaintPropertyTreeBuilder::UpdateEffect()]: https://cs.monyhar.org/search/?q=class:FragmentPaintPropertyTreeBuilder+function:UpdateEffect
+[FragmentPaintPropertyTreeBuilder::UpdateFilter()]: https://cs.monyhar.org/search/?q=class:FragmentPaintPropertyTreeBuilder+function:UpdateFilter
+[BlinkGenPropertyTrees mode]: https://monyhar.googlesource.com/monyhar/src/+/HEAD/third_party/blink/renderer/core/paint/README.md
 
 *   ### Javascript
 
-    [EffectInput](https://cs.chromium.org/chromium/src/third_party/blink/renderer/core/animation/effect_input.cc)
+    [EffectInput](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/core/animation/effect_input.cc)
     contains the helper functions that are used to
     [process a keyframe argument](https://drafts.csswg.org/web-animations/#processing-a-keyframes-argument)
     which can take an argument of either object or array form.
@@ -1467,7 +1467,7 @@ The Blink animation engine interacts with Blink/Chrome in the following ways:
     animation without having any effect on the underlying animation or its
     listeners.
 
-[InspectorAnimationAgent]: https://cs.chromium.org/chromium/src/third_party/blink/renderer/core/inspector/InspectorAnimationAgent.h
+[InspectorAnimationAgent]: https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/core/inspector/InspectorAnimationAgent.h
 
 *   ### SVG
 
@@ -1525,10 +1525,10 @@ animation.startTime = 6000;  // 6 seconds
             `transform: rotate(200deg)` so it computes the current effect to be
             `transfrom: rotate(40deg)`.
 
-[Animation]: https://cs.chromium.org/search/?q=class:blink::Animation$
-[AnimationEffect]: https://cs.chromium.org/search/?q=class:blink::AnimationEffect$
-[DocumentTimeline]: https://cs.chromium.org/search/?q=class:blink::DocumentTimeline$
-[EffectStack]: https://cs.chromium.org/search/?q=class:blink::EffectStack
+[Animation]: https://cs.monyhar.org/search/?q=class:blink::Animation$
+[AnimationEffect]: https://cs.monyhar.org/search/?q=class:blink::AnimationEffect$
+[DocumentTimeline]: https://cs.monyhar.org/search/?q=class:blink::DocumentTimeline$
+[EffectStack]: https://cs.monyhar.org/search/?q=class:blink::EffectStack
 
 ### Lifecycle of an Animation
 
@@ -1559,7 +1559,7 @@ resolution can cause style to get dirtied, this is currently a
 [code health bug](http://crbug.com/492887).
 
 [Lifecycle]: images/lifecycle.png
-[SampledEffect]: https://cs.chromium.org/search/?q=class:blink::SampledEffect
+[SampledEffect]: https://cs.monyhar.org/search/?q=class:blink::SampledEffect
 
 ### [KeyframeEffect][]
 
@@ -1618,13 +1618,13 @@ other specs (for example Javascript callback based effects).
             `transform: 'rotate(0deg)'` to `transform: 'rotate(360deg)'` that
             applied from 0% to 100%.
 
-[Element]: https://cs.chromium.org/search/?q=class:blink::Element$
-[KeyframeGroupMap]: https://cs.chromium.org/search/?q=class:blink::KeyframeEffectModelBase+KeyframeGroupMap
-[PropertySpecificKeyframe]: https://cs.chromium.org/search/?q=class:blink::Keyframe::PropertySpecificKeyframe
-[KeyframeEffect]: https://cs.chromium.org/search/?q=class:blink::KeyframeEffect$
-[KeyframeEffectModel]: https://cs.chromium.org/search/?q=class:blink::KeyframeEffectModelBase$
-[Timing]: https://cs.chromium.org/search/?q=class:blink::Timing$
-[UpdateInheritedTime()]: https://cs.chromium.org/search/?q=function:%5CbAnimationEffect::UpdateInheritedTime
+[Element]: https://cs.monyhar.org/search/?q=class:blink::Element$
+[KeyframeGroupMap]: https://cs.monyhar.org/search/?q=class:blink::KeyframeEffectModelBase+KeyframeGroupMap
+[PropertySpecificKeyframe]: https://cs.monyhar.org/search/?q=class:blink::Keyframe::PropertySpecificKeyframe
+[KeyframeEffect]: https://cs.monyhar.org/search/?q=class:blink::KeyframeEffect$
+[KeyframeEffectModel]: https://cs.monyhar.org/search/?q=class:blink::KeyframeEffectModelBase$
+[Timing]: https://cs.monyhar.org/search/?q=class:blink::Timing$
+[UpdateInheritedTime()]: https://cs.monyhar.org/search/?q=function:%5CbAnimationEffect::UpdateInheritedTime
 
 #### Lifecycle of an [Interpolation][]
 
@@ -1652,14 +1652,14 @@ to an animated element's [ComputedStyle][].
 4.   TODO(alancutter): Describe what happens in processing a stack of
      interpolations.
 
-[AdoptActiveInterpolations]: https://cs.chromium.org/search/?q=AdoptActiveInterpolations%5Cw%2B
-[animation-tainted-processing]: https://cs.chromium.org/search/?q=function:blink::StyleBuilder::ApplyProperty+animation_tainted
-[CalculateTransitionUpdateForProperty()]: https://cs.chromium.org/search/?q=function:blink::CSSAnimations::CalculateTransitionUpdateForProperty
-[ElementAnimations]: https://cs.chromium.org/search/?q=class:blink::ElementAnimations
-[EnsureInterpolationEffectPopulated()]: https://cs.chromium.org/search/?q=function:KeyframeEffectModelBase::EnsureInterpolationEffectPopulated
-[Interpolation]: https://cs.chromium.org/search/?q=class:blink::Interpolation$
-[InterpolationEffect]: https://cs.chromium.org/search/?q=class:blink::InterpolationEffect
-[Sample()]: https://cs.chromium.org/search/?q=function:KeyframeEffectModelBase::Sample
+[AdoptActiveInterpolations]: https://cs.monyhar.org/search/?q=AdoptActiveInterpolations%5Cw%2B
+[animation-tainted-processing]: https://cs.monyhar.org/search/?q=function:blink::StyleBuilder::ApplyProperty+animation_tainted
+[CalculateTransitionUpdateForProperty()]: https://cs.monyhar.org/search/?q=function:blink::CSSAnimations::CalculateTransitionUpdateForProperty
+[ElementAnimations]: https://cs.monyhar.org/search/?q=class:blink::ElementAnimations
+[EnsureInterpolationEffectPopulated()]: https://cs.monyhar.org/search/?q=function:KeyframeEffectModelBase::EnsureInterpolationEffectPopulated
+[Interpolation]: https://cs.monyhar.org/search/?q=class:blink::Interpolation$
+[InterpolationEffect]: https://cs.monyhar.org/search/?q=class:blink::InterpolationEffect
+[Sample()]: https://cs.monyhar.org/search/?q=function:KeyframeEffectModelBase::Sample
 
 ## Testing pointers
 
@@ -1682,9 +1682,9 @@ to end testing but either when testing chrome specific features (i.e.
 non-standardized) such as compositing or when the test requires access to chrome
 internal features not easily tested by web-platform-tests.
 
-[web-animations-tests]: https://cs.chromium.org/chromium/src/third_party/blink/web_tests/external/wpt/web-animations/
+[web-animations-tests]: https://cs.monyhar.org/monyhar/src/third_party/blink/web_tests/external/wpt/web-animations/
 [Writing web platform tests]: ../../../../../docs/testing/web_platform_tests.md#Writing-tests
-[third_party/blink/web_tests]: https://cs.chromium.org/chromium/src/third_party/blink/web_tests/animations/
+[third_party/blink/web_tests]: https://cs.monyhar.org/monyhar/src/third_party/blink/web_tests/animations/
 
 ### Unit testing
 
@@ -1693,9 +1693,9 @@ manually construct an instance of your object to [extending RenderingTest][]
 where you can load HTML, [enable compositing][] if necessary, and run assertions
 about the state.
 
-[extending Test]: https://cs.chromium.org/search/?q=public%5C+testing::Test+file:core%5C/animation&sq=package:chromium&type=cs
-[extending RenderingTest]: https://cs.chromium.org/search/?q=public%5C+RenderingTest+file:core%5C/animation&type=cs
-[enable compositing]: https://cs.chromium.org/chromium/src/third_party/blink/renderer/core/animation/compositor_animations_test.cc?type=cs&sq=package:chromium&q=file:core%5C/animation%5C/.*test%5C.cpp+EnableCompositing
+[extending Test]: https://cs.monyhar.org/search/?q=public%5C+testing::Test+file:core%5C/animation&sq=package:monyhar&type=cs
+[extending RenderingTest]: https://cs.monyhar.org/search/?q=public%5C+RenderingTest+file:core%5C/animation&type=cs
+[enable compositing]: https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/core/animation/compositor_animations_test.cc?type=cs&sq=package:monyhar&q=file:core%5C/animation%5C/.*test%5C.cpp+EnableCompositing
 
 ## Ongoing work
 
@@ -1715,4 +1715,4 @@ web animation but it allows the animation itself to be highly customized in
 Javascript by providing an `animate` callback. These animations run inside an
 isolated worklet global scope.
 
-[WorkletAnimation]: https://cs.chromium.org/search/?q=file:animationworklet/worklet_animation.h+class:WorkletAnimation
+[WorkletAnimation]: https://cs.monyhar.org/search/?q=file:animationworklet/worklet_animation.h+class:WorkletAnimation

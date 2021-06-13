@@ -22,7 +22,7 @@ class PathManager(object):
     generated code, e.g. #include "third_party/blink/renderer/...", while
     absolute paths are represented in a platform-specific style so that it works
     well with a platform-specific notion, e.g. a drive letter in Windows path
-    such as "C:\\chromium\\src\\...".
+    such as "C:\\monyhar\\src\\...".
 
     About output files, there are two cases.
     - cross-components case:

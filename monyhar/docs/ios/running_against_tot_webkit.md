@@ -29,7 +29,7 @@ distant past.
 ```
 solutions = [
   {
-    "url": "https://chromium.googlesource.com/chromium/src.git",
+    "url": "https://monyhar.googlesource.com/monyhar/src.git",
     "name": "src",
 
     "custom_vars": {

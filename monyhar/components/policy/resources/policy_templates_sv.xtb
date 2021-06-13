@@ -111,7 +111,7 @@
 
       Om du ställer in den här policyn använder <ph name="PRODUCT_NAME" /> den angivna katalogen oavsett om användaren har angett flaggan --disk-cache-dir eller inte. Undvik dataförlust och andra oväntade fel genom att inte ställa in den här policyn på en volyms rotkatalog eller på en katalog som används i andra syften eftersom <ph name="PRODUCT_NAME" /> hanterar dess innehåll.
 
-      En lista över variabler som kan användas finns på https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      En lista över variabler som kan användas finns på https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Om den här policyn inte ställs in används standardkatalogen för cacheminnet och användaren kan åsidosätta den med kommandoradsflaggan --disk-cache-dir.</translation>
 <translation id="113521240853905588">Konfigurerar vilka språk som kan användas som föredragna språk <ph name="PRODUCT_OS_NAME" />.
@@ -498,7 +498,7 @@
 <translation id="1852294065645015766">Tillåt automatisk uppspelning av media</translation>
 <translation id="1857152770025485173">Principen förhindrar att användaren läser in webbsidor från svartlistade webbadresser. Svartlistan är en lista med webbadressmönster som anger vilka webbadresser som inte är tillåtna.
 
-      Webbadressmönstret ska ha det format som anges i https://www.chromium.org/administrators/url-blacklist-filter-format.
+      Webbadressmönstret ska ha det format som anges i https://www.monyhar.org/administrators/url-blacklist-filter-format.
 
       Undantag kan definieras i principen för vitlistade webbadresser. De här principerna kan innehålla högst 1000 poster. Alla poster utöver det ignoreras.
 
@@ -541,7 +541,7 @@
 
       Om principen inte har konfigurerats inaktiveras rapporteringen av statistik och diagnostisk data på enheter som inte hanteras men aktiveras på hanterade enheter.</translation>
 <translation id="1907431809333268751">Konfigurera listan med webbadresser för företagsinloggning (endast HTTP- och HTTPS-protokoll). Lösenordets fingeravtryck registreras på dessa webbadresser och används för att identifiera återanvändning av lösenord.
-      För att <ph name="PRODUCT_NAME" /> ska kunna registrera fingeravtryck för lösenord korrekt måste inloggningssidorna följa riktlinjerna på https://www.chromium.org/developers/design-documents/create-amazing-password-forms.
+      För att <ph name="PRODUCT_NAME" /> ska kunna registrera fingeravtryck för lösenord korrekt måste inloggningssidorna följa riktlinjerna på https://www.monyhar.org/developers/design-documents/create-amazing-password-forms.
 
       Om den här inställningen är aktiverad registrerar tjänsten för lösenordsskydd fingeravtryck för lösenord på dessa webbadresser för att identifiera återanvändning av lösenord.
       Om inställningen är inaktiverad eller inte inställd registrerar tjänsten för lösenordsskydd bara fingeravtryck för lösenord på https://accounts.google.com.
@@ -843,7 +843,7 @@
 
       Principen gör så att certifikaten för värdnamnen i de angivna webbadresserna inte lämnas ut via Certifikattransparens. Detta gör det möjligt att fortsätta använda certifikat som annars skulle vara opålitliga eftersom de inte lämnades ut ordentligt. Men det blir svårare att upptäcka felaktigt utfärdade certifikat för dessa värdar.
 
-      Ett webbadressmönster formateras så här: https://www.chromium.org/administrators/url-blacklist-filter-format. Men eftersom certifikat gäller för ett visst värdnamn, oberoende av systemet, porten eller sökvägen, tas endast hänsyn till den delen av webbadressen som utgörs av värdnamnet. Jokervärdar stöds inte.
+      Ett webbadressmönster formateras så här: https://www.monyhar.org/administrators/url-blacklist-filter-format. Men eftersom certifikat gäller för ett visst värdnamn, oberoende av systemet, porten eller sökvägen, tas endast hänsyn till den delen av webbadressen som utgörs av värdnamnet. Jokervärdar stöds inte.
 
       Om principen inte har angetts betraktas alla certifikat som måste lämnas ut via Certifikattransparens som opålitliga om de inte lämnas ut enligt principen Certifikattransparens.</translation>
 <translation id="2488010520405124654">Aktivera uppmaning att konfigurera nätverk om enheten är offline.
@@ -1540,7 +1540,7 @@
 
       Om principen har ställts in används den angivna katalogen i <ph name="PRODUCT_NAME" /> oavsett om användaren har angett en katalog eller aktiverat flaggan för att bli tillfrågad om nedladdningsplats varje gång.
 
-      En lista med variabler som kan användas finns på https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      En lista med variabler som kan användas finns på https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Om principen inte har ställts in används standardplatsen för nedladdningar och användaren kan ändra inställningen.</translation>
 <translation id="3805659594028420438">Aktivera domänbundna TLS-certifikattillägg (föråldrad)</translation>
@@ -1631,7 +1631,7 @@
 
       Om principen inte anges används standardkatalogen för nedladdning (för den aktuella plattformen) i <ph name="PRODUCT_NAME" />.
 
-      En lista med variabler som kan användas finns på https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.</translation>
+      En lista med variabler som kan användas finns på https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.</translation>
 <translation id="3911737181201537215">Den här principen har ingen inverkan på loggningen i Android.</translation>
 <translation id="391531815696899618">När inställningen här är Sant inaktiveras Google Drive-synkronisering i appen Filer i <ph name="PRODUCT_OS_NAME" />. Då överförs ingen data till Google Drive.
 
@@ -1824,7 +1824,7 @@
 
       Om den här principen ställs in lagrar <ph name="PRODUCT_NAME" /> roamingkopian av profilerna i den angivna katalogen förutsatt att principen <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> har aktiverats. Om principen <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> har inaktiverats eller inte ställs in används inte värdet som har lagrats i principen.
 
-      På https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables finns en lista över de variabler som kan användas.
+      På https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables finns en lista över de variabler som kan användas.
 
       Om den här principen inte anges används standardroamingprofilens sökväg.</translation>
 <translation id="4239720644496144453">Cacheminnet används inte för Android-appar. Om flera användare installerar samma Android-app laddas den ned på nytt varje gång.</translation>
@@ -2026,7 +2026,7 @@
 
           Om principen inte har ställts in används standardrenderaren för alla webbplatser enligt specifikationen i principen ChromeFrameRendererSettings.
 
-          Exempel på mönster finns på https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Exempel på mönster finns på https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="467449052039111439">Öppna följande sidor</translation>
 <translation id="4674871290487541952">Tillåt osäkra algoritmer vid integritetskontrollen när tillägg uppdateras och installeras.</translation>
 <translation id="4680936297850947973">Har fasats ut i M68. Använd DefaultPopupsSetting i stället.
@@ -2676,7 +2676,7 @@
 
       Om principen har ställts in används den angivna katalogen i <ph name="PRODUCT_FRAME_NAME" />.
 
-      En lista med variabler som kan användas finns på https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      En lista med variabler som kan användas finns på https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Om inget har ställts in används profilens standardkatalog.</translation>
 <translation id="5826047473100157858">Policyn anger om användaren får öppna sidor i inkognitoläge i <ph name="PRODUCT_NAME" />.
@@ -3259,7 +3259,7 @@
 
       Om du ställer in den här policyn använder <ph name="PRODUCT_NAME" /> den angivna katalogen, oavsett om användare har angett flaggan --user-data-dir eller inte. Undvik dataförlust eller oväntade fel genom att inte ställa in den här policyn på volymens rotkatalog eller på en katalog som används i andra syften eftersom <ph name="PRODUCT_NAME" /> hanterar dess innehåll.
 
-      En lista över de variabler som kan användas finns på https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      En lista över de variabler som kan användas finns på https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Om den här policyn inte ställs in används profilens standardsökväg och användaren kan åsidosätta den med kommandoradsflaggan --user-data-dir.</translation>
 <translation id="7027785306666625591">Konfigurera energihantering i <ph name="PRODUCT_OS_NAME" />.
@@ -4057,7 +4057,7 @@ Det rekommenderade sättet att konfigurera principer på när du använder Windo
 
           Om principen inte har ställts in används standardrenderaren för alla webbplatser enligt specifikationen i principen ChromeFrameRendererSettings.
 
-          Exempel på mönster finns på https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Exempel på mönster finns på https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="8489964335640955763">PluginVm</translation>
 <translation id="8493645415242333585">Spara inte webbhistorik</translation>
 <translation id="8499172469244085141">Standardinställningar (kan åsidosättas av användare)</translation>

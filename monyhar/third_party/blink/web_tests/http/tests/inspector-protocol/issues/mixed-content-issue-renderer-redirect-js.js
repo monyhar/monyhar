@@ -11,7 +11,7 @@
     <script src='https://devtools.test:8443/inspector-protocol/resources/redirect-mixed-content-script.php'></script>
   `)
   const issue = await issuePromise;
-  // TODO(chromium:1190808): The test doesn't currently output the requestId but it actually should.
+  // TODO(monyhar:1190808): The test doesn't currently output the requestId but it actually should.
   //     Remove this TODO and rebaseline the test once the bug is fixed.
   testRunner.log(issue.params, "Inspector issue: ", ["frameId", "requestId"]);
   testRunner.completeTest();

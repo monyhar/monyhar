@@ -41,9 +41,9 @@ post non-**UI** thread calls to the **UI** thread, and block if needed.
 Because Chromium initialization identifies the thread as the UI thread, parts of
 this solution runs before Chromium is initialized. The implementation is in the
 android webview glue layer, specifically in
-[WebViewChromium](../glue/java/src/com/android/webview/chromium/WebViewChromium.java)
-and [WebViewChromiumFactoryProvider](../glue/java/src/com/android/webview/chromium/WebViewChromiumFactoryProvider.java).
-The idea is hold off initializing chromium until a **view** thread is identified.
+[WebViewChromium](../glue/java/src/com/android/webview/monyhar/WebViewChromium.java)
+and [WebViewChromiumFactoryProvider](../glue/java/src/com/android/webview/monyhar/WebViewChromiumFactoryProvider.java).
+The idea is hold off initializing monyhar until a **view** thread is identified.
 
 **View** thread can be identified by certain View methods. For example,
 [onAttachedToWindow](http://developer.android.com/reference/android/view/View.html#onAttachedToWindow())

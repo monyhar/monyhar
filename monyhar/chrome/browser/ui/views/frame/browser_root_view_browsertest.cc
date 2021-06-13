@@ -30,7 +30,7 @@ class BrowserRootViewBrowserTest : public InProcessBrowserTest {
 // Clear drop info after performing drop. http://crbug.com/838791
 IN_PROC_BROWSER_TEST_F(BrowserRootViewBrowserTest, ClearDropInfo) {
   ui::OSExchangeData data;
-  data.SetURL(GURL("http://www.chromium.org/"), std::u16string());
+  data.SetURL(GURL("http://www.monyhar.org/"), std::u16string());
   ui::DropTargetEvent event(data, gfx::PointF(), gfx::PointF(),
                             ui::DragDropTypes::DRAG_COPY);
 
@@ -56,7 +56,7 @@ IN_PROC_BROWSER_TEST_F(BrowserRootViewBrowserTest, PlainString) {
 // http://crbug.com/1001942
 IN_PROC_BROWSER_TEST_F(BrowserRootViewBrowserTest, ClearDropTarget) {
   ui::OSExchangeData data;
-  data.SetURL(GURL("http://www.chromium.org/"), std::u16string());
+  data.SetURL(GURL("http://www.monyhar.org/"), std::u16string());
   ui::DropTargetEvent event(data, gfx::PointF(), gfx::PointF(),
                             ui::DragDropTypes::DRAG_COPY);
 
@@ -70,7 +70,7 @@ IN_PROC_BROWSER_TEST_F(BrowserRootViewBrowserTest, ClearDropTarget) {
 // Drop is performed when drop callback is run.
 IN_PROC_BROWSER_TEST_F(BrowserRootViewBrowserTest, RunDropCallback) {
   ui::OSExchangeData data;
-  data.SetURL(GURL("http://www.chromium.org/"), std::u16string());
+  data.SetURL(GURL("http://www.monyhar.org/"), std::u16string());
   ui::DropTargetEvent event(data, gfx::PointF(), gfx::PointF(),
                             ui::DragDropTypes::DRAG_COPY);
 

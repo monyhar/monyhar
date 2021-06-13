@@ -3,11 +3,11 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
 
-<org.chromium.chrome.browser.tasks.tab_management.TabSelectionEditorToolbar
+<org.monyhar.chrome.browser.tasks.tab_management.TabSelectionEditorToolbar
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <org.chromium.ui.widget.ButtonCompat
+    <org.monyhar.ui.widget.ButtonCompat
         android:id="@+id/action_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,4 +15,4 @@
         android:enabled="false"
         android:text="@string/tab_selection_editor_group"
         style="@style/TextButton.Inverse" />
-</org.chromium.chrome.browser.tasks.tab_management.TabSelectionEditorToolbar>
+</org.monyhar.chrome.browser.tasks.tab_management.TabSelectionEditorToolbar>

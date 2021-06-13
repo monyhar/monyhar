@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.payments;
+package org.monyhar.components.payments;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -13,12 +13,12 @@ import android.text.TextUtils;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
-import org.chromium.components.payments.PaymentManifestVerifier.ManifestVerifyCallback;
-import org.chromium.components.payments.intent.WebPaymentIntentHelper;
-import org.chromium.payments.mojom.PaymentDetailsModifier;
-import org.chromium.payments.mojom.PaymentMethodData;
-import org.chromium.url.GURL;
+import org.monyhar.base.Log;
+import org.monyhar.components.payments.PaymentManifestVerifier.ManifestVerifyCallback;
+import org.monyhar.components.payments.intent.WebPaymentIntentHelper;
+import org.monyhar.payments.mojom.PaymentDetailsModifier;
+import org.monyhar.payments.mojom.PaymentMethodData;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -44,25 +44,25 @@ public class AndroidPaymentAppFinder implements ManifestVerifyCallback {
 
     /** The name of the intent for the service to check whether an app is ready to pay. */
     public static final String ACTION_IS_READY_TO_PAY =
-            "org.chromium.intent.action.IS_READY_TO_PAY";
+            "org.monyhar.intent.action.IS_READY_TO_PAY";
 
     /**
      * Meta data name of an app's supported payment method names.
      */
     public static final String META_DATA_NAME_OF_PAYMENT_METHOD_NAMES =
-            "org.chromium.payment_method_names";
+            "org.monyhar.payment_method_names";
 
     /**
      * Meta data name of an app's supported default payment method name.
      */
     public static final String META_DATA_NAME_OF_DEFAULT_PAYMENT_METHOD_NAME =
-            "org.chromium.default_payment_method_name";
+            "org.monyhar.default_payment_method_name";
 
     /**
      * Meta data name of an app's supported delegations' list.
      */
     public static final String META_DATA_NAME_OF_SUPPORTED_DELEGATIONS =
-            "org.chromium.payment_supported_delegations";
+            "org.monyhar.payment_supported_delegations";
 
     private final Set<GURL> mUrlPaymentMethods = new HashSet<>();
     private final PaymentManifestDownloader mDownloader;

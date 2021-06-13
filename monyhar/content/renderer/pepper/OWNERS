@@ -1,10 +1,10 @@
-bbudge@chromium.org
-raymes@chromium.org
+bbudge@monyhar.org
+raymes@monyhar.org
 
-per-file plugin_power_saver*=tommycli@chromium.org
-per-file usb_key_code_*=garykac@chromium.org
-per-file usb_key_code_*=wez@chromium.org
+per-file plugin_power_saver*=tommycli@monyhar.org
+per-file usb_key_code_*=garykac@monyhar.org
+per-file usb_key_code_*=wez@monyhar.org
 
 # WebSocket
-per-file *websocket*=ricea@chromium.org
-per-file *websocket*=yhirano@chromium.org
+per-file *websocket*=ricea@monyhar.org
+per-file *websocket*=yhirano@monyhar.org

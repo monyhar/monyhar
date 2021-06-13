@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.keyboard_accessory.sheet_component;
+package org.monyhar.chrome.browser.keyboard_accessory.sheet_component;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,9 +13,9 @@ import androidx.annotation.Nullable;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import org.chromium.chrome.browser.keyboard_accessory.data.KeyboardAccessoryData.Tab;
-import org.chromium.ui.modelutil.ListModel;
-import org.chromium.ui.modelutil.ListModelChangeProcessor;
+import org.monyhar.chrome.browser.keyboard_accessory.data.KeyboardAccessoryData.Tab;
+import org.monyhar.ui.modelutil.ListModel;
+import org.monyhar.ui.modelutil.ListModelChangeProcessor;
 
 import java.util.HashMap;
 import java.util.Map;

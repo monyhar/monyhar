@@ -2,9 +2,9 @@
 # Copyright 2020 The Chromium Authors. All rights reserved.
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
-"""Script for updating the project settings for a chromium branch.
+"""Script for updating the project settings for a monyhar branch.
 
-To initialize a new chromium branch, run the following from the root of
+To initialize a new monyhar branch, run the following from the root of
 the repo (where MM is the milestone number and BBBB is the branch
 number):
 ```
@@ -26,7 +26,7 @@ INFRA_CONFIG_DIR = os.path.abspath(os.path.join(__file__, '..', '..'))
 def parse_args(args=None, *, parser_type=None):
   parser_type = parser_type or argparse.ArgumentParser
   parser = parser_type(
-      description='Update the project settings for a chromium branch')
+      description='Update the project settings for a monyhar branch')
   parser.set_defaults(func=None)
   parser.add_argument('--settings-json',
                       help='Path to the settings.json file',
@@ -63,7 +63,7 @@ def parse_args(args=None, *, parser_type=None):
 
 def initial_settings(milestone, branch):
   settings = dict(
-      project=f'chromium-m{milestone}',
+      project=f'monyhar-m{milestone}',
       project_title=f'Chromium M{milestone}',
       is_main=False,
       is_lts_branch=False,

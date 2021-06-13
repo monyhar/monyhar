@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer.test;
+package org.monyhar.weblayer.test;
 
 import androidx.test.filters.SmallTest;
 
@@ -11,12 +11,12 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.weblayer.NewTabCallback;
-import org.chromium.weblayer.Tab;
-import org.chromium.weblayer.shell.InstrumentationActivity;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.weblayer.NewTabCallback;
+import org.monyhar.weblayer.Tab;
+import org.monyhar.weblayer.shell.InstrumentationActivity;
 
 /**
  * Tests that NewTabCallback methods are invoked as expected.

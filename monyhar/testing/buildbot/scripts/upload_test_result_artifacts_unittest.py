@@ -208,7 +208,7 @@ class UploadTestResultArtifactsTest(unittest.TestCase):
             }
           }
         },
-        'artifact_permanent_location': 'gs://chromium-test-artifacts/sha1',
+        'artifact_permanent_location': 'gs://monyhar-test-artifacts/sha1',
     })
     mkd_patch.assert_called_once_with(prefix='upload_test_artifacts')
     digest_patch.assert_called_once_with('/tmp/foo.txt')
@@ -280,7 +280,7 @@ class UploadTestResultArtifactsTest(unittest.TestCase):
             }
           },
         },
-        'artifact_permanent_location': 'gs://chromium-test-artifacts/sha1',
+        'artifact_permanent_location': 'gs://monyhar-test-artifacts/sha1',
     })
     mkd_patch.assert_called_once_with(prefix='upload_test_artifacts')
     digest_patch.assert_has_calls([

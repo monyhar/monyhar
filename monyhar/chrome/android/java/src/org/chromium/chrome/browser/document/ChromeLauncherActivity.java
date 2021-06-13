@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.document;
+package org.monyhar.chrome.browser.document;
 
 import android.app.Activity;
 import android.os.Bundle;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.TraceEvent;
-import org.chromium.chrome.browser.LaunchIntentDispatcher;
-import org.chromium.chrome.browser.vr.VrModuleProvider;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.chrome.browser.LaunchIntentDispatcher;
+import org.monyhar.chrome.browser.vr.VrModuleProvider;
 
 /**
  * Dispatches incoming intents to the appropriate activity based on the current configuration and

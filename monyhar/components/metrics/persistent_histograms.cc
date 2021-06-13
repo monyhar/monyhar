@@ -261,7 +261,7 @@ void InstantiatePersistentHistograms(const base::FilePath& metrics_dir,
 #if defined(OS_LINUX) || BUILDFLAG(IS_CHROMEOS_LACROS)
   // Linux kernel 4.4.0.* shows a huge number of SIGBUS crashes with persistent
   // histograms enabled using a mapped file.  Change this to use local memory.
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=753741
+  // https://bugs.monyhar.org/p/monyhar/issues/detail?id=753741
   if (mode == kMappedFile) {
     int major, minor, bugfix;
     base::SysInfo::OperatingSystemVersionNumbers(&major, &minor, &bugfix);

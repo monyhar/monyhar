@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab;
+package org.monyhar.chrome.browser.tab;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -10,7 +10,7 @@ import android.view.Gravity;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 
-import org.chromium.ui.widget.ButtonCompat;
+import org.monyhar.ui.widget.ButtonCompat;
 
 /**
  * View that handles orientation changes for Sad Tab / Crashed Renderer page.

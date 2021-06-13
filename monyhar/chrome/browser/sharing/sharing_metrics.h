@@ -17,7 +17,7 @@ enum class SharingDeviceRegistrationResult;
 // These values are logged to UMA. Entries should not be renumbered and numeric
 // values should never be reused. Please keep in sync with
 // "SharingDialogType" in src/tools/metrics/histograms/enums.xml.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.sharing
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.sharing
 enum class SharingDialogType {
   kDialogWithDevicesMaybeApps = 0,
   kDialogWithoutDevicesWithApp = 1,

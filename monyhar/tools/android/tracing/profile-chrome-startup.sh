@@ -212,8 +212,8 @@ case $browser in
     stable)
     browser_package="com.android.chrome"
     ;;
-    chromium)
-    browser_package="org.chromium.chrome"
+    monyhar)
+    browser_package="org.monyhar.chrome"
     ;;
     *)
     echo "Unknown browser $browser"
@@ -279,7 +279,7 @@ if [ ! -z "$taburl" ]; then
     $adb shell "am force-stop $browser_package"
     $adb shell "rm -f /data/data/$browser_package/app_tabs/0/tab*"
     $adb shell "am start -a android.intent.action.VIEW \
-                    -n $browser_package/org.chromium.chrome.browser.ChromeTabbedActivity \
+                    -n $browser_package/org.monyhar.chrome.browser.ChromeTabbedActivity \
                     -d $taburl"
     sleep 5
     $adb shell "am start -a android.intent.action.MAIN -c android.intent.category.HOME"

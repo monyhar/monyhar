@@ -1,5 +1,5 @@
-khorimoto@chromium.org
-zentaro@chromium.org
+khorimoto@monyhar.org
+zentaro@monyhar.org
 
 per-file *.mojom=set noparent
 per-file *.mojom=file://ipc/SECURITY_OWNERS

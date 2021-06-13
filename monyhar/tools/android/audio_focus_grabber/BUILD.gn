@@ -17,8 +17,8 @@ android_apk("audio_focus_grabber_apk") {
   ]
 
   sources = [
-    "java/src/org/chromium/tools/audio_focus_grabber/AudioFocusGrabberActivity.java",
-    "java/src/org/chromium/tools/audio_focus_grabber/AudioFocusGrabberListenerService.java",
+    "java/src/org/monyhar/tools/audio_focus_grabber/AudioFocusGrabberActivity.java",
+    "java/src/org/monyhar/tools/audio_focus_grabber/AudioFocusGrabberListenerService.java",
   ]
 }
 

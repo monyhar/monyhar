@@ -60,7 +60,7 @@ class WebServiceWorkerContextClient;
 //
 // This implements WebServiceWorkerContextProxy, which connects ServiceWorker's
 // WorkerGlobalScope and embedder/chrome, and implements ServiceWorker-specific
-// events/upcall methods that are to be called by embedder/chromium, e.g.
+// events/upcall methods that are to be called by embedder/monyhar, e.g.
 // onfetch.
 //
 // An instance of this class is supposed to outlive until

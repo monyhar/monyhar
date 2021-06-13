@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private.interfaces;
+package org.monyhar.weblayer_private.interfaces;
 
 /** Keys for remote media service intent extras. */
 public interface RemoteMediaServiceConstants {
@@ -13,7 +13,7 @@ public interface RemoteMediaServiceConstants {
     // AndroidManifest.xml should have a meta-data tag with this name and value of false. The
     // default is true, i.e. enabled.
     // TODO(crbug.com/1148410): remove this.
-    String FEATURE_ENABLED_KEY = "org.chromium.weblayer.ENABLE_REMOTE_MEDIA";
+    String FEATURE_ENABLED_KEY = "org.monyhar.weblayer.ENABLE_REMOTE_MEDIA";
 
     // Used internally by WebLayer as a key to the various values of remote media service
     // notification IDs.

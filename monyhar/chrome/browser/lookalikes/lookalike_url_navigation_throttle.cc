@@ -105,7 +105,7 @@ ThrottleCheckResult LookalikeUrlNavigationThrottle::WillProcessResponse() {
                            interstitial_params.redirect_chain)) {
     CHECK(interstitial_params.url.SchemeIsHTTPOrHTTPS());
     // See
-    // https://groups.google.com/a/chromium.org/forum/#!topic/chromium-dev/plIZV3Rkzok
+    // https://groups.google.com/a/monyhar.org/forum/#!topic/monyhar-dev/plIZV3Rkzok
     // for why this is OK. Assume interstitial reloads are always browser
     // initiated.
     handle->GetWebContents()->OpenURL(content::OpenURLParams(

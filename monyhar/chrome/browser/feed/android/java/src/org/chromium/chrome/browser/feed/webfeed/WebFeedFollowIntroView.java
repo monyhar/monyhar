@@ -2,26 +2,26 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.webfeed;
+package org.monyhar.chrome.browser.feed.webfeed;
 
 import android.app.Activity;
 import android.graphics.Rect;
 import android.os.Handler;
 import android.view.View;
 
-import org.chromium.chrome.browser.preferences.Pref;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.ui.appmenu.AppMenuHandler;
-import org.chromium.chrome.browser.util.ChromeAccessibilityUtil;
-import org.chromium.components.browser_ui.widget.highlight.ViewHighlighter;
-import org.chromium.components.browser_ui.widget.textbubble.ClickableTextBubble;
-import org.chromium.components.browser_ui.widget.textbubble.TextBubble;
-import org.chromium.components.feature_engagement.FeatureConstants;
-import org.chromium.components.feature_engagement.Tracker;
-import org.chromium.components.prefs.PrefService;
-import org.chromium.components.user_prefs.UserPrefs;
-import org.chromium.ui.widget.LoadingView;
-import org.chromium.ui.widget.ViewRectProvider;
+import org.monyhar.chrome.browser.preferences.Pref;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.ui.appmenu.AppMenuHandler;
+import org.monyhar.chrome.browser.util.ChromeAccessibilityUtil;
+import org.monyhar.components.browser_ui.widget.highlight.ViewHighlighter;
+import org.monyhar.components.browser_ui.widget.textbubble.ClickableTextBubble;
+import org.monyhar.components.browser_ui.widget.textbubble.TextBubble;
+import org.monyhar.components.feature_engagement.FeatureConstants;
+import org.monyhar.components.feature_engagement.Tracker;
+import org.monyhar.components.prefs.PrefService;
+import org.monyhar.components.user_prefs.UserPrefs;
+import org.monyhar.ui.widget.LoadingView;
+import org.monyhar.ui.widget.ViewRectProvider;
 
 /**
  * Manages the view of the WebFeed follow intro.

@@ -6,7 +6,7 @@
 
 // page_navigator.h is a widely included header. Try not to raise this limit
 // unless necessary. See
-// https://chromium.googlesource.com/chromium/src/+/HEAD/docs/wmax_tokens.md
+// https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/wmax_tokens.md
 #pragma clang max_tokens_here 1150000
 
 #include "content/browser/renderer_host/navigation_request.h"

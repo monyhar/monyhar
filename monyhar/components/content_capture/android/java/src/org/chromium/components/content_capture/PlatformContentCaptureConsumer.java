@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.content_capture;
+package org.monyhar.components.content_capture;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -10,9 +10,9 @@ import android.os.Build;
 import android.view.View;
 import android.view.ViewStructure;
 
-import org.chromium.base.annotations.VerifiesOnQ;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.annotations.VerifiesOnQ;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * This class receive captured content and send it to framework in non-UI

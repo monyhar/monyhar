@@ -2,24 +2,24 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.impl;
+package org.monyhar.net.impl;
 
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeClassQualifiedName;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.net.BidirectionalStream;
-import org.chromium.net.CallbackException;
-import org.chromium.net.CronetException;
-import org.chromium.net.ExperimentalBidirectionalStream;
-import org.chromium.net.NetworkException;
-import org.chromium.net.RequestFinishedInfo;
-import org.chromium.net.RequestPriority;
-import org.chromium.net.UrlResponseInfo;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeClassQualifiedName;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.net.BidirectionalStream;
+import org.monyhar.net.CallbackException;
+import org.monyhar.net.CronetException;
+import org.monyhar.net.ExperimentalBidirectionalStream;
+import org.monyhar.net.NetworkException;
+import org.monyhar.net.RequestFinishedInfo;
+import org.monyhar.net.RequestPriority;
+import org.monyhar.net.UrlResponseInfo;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

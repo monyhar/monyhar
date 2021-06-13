@@ -25,7 +25,7 @@ class Util:
 
   @staticmethod
   def hash_name(name):
-    # This must match the hash function in chromium's
+    # This must match the hash function in monyhar's
     # //base/metrics/metric_hashes.cc. >Q means 8 bytes, big endian.
     name = name.encode('utf-8')
     md5 = hashlib.md5(name)
@@ -43,7 +43,7 @@ class Util:
      - the name of the event itself
      - the name of the event's project, to avoid collisions with events of the
        same name in other projects
-     - an identifier that this comes from chromium, to avoid collisions with
+     - an identifier that this comes from monyhar, to avoid collisions with
        events and projects of the same name defined in cros's structured.xml
 
     This must use sanitized names for the project and event.

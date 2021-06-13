@@ -8,7 +8,7 @@
 namespace content {
 
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.content_public.common
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.content_public.common
 enum ConsoleMessageLevel {
   CONSOLE_MESSAGE_LEVEL_VERBOSE,
   CONSOLE_MESSAGE_LEVEL_INFO,

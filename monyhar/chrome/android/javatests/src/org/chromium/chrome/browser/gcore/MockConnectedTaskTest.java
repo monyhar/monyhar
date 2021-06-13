@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.gcore;
+package org.monyhar.chrome.browser.gcore;
 
 import androidx.test.filters.SmallTest;
 
@@ -10,9 +10,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.test.gcore.MockChromeGoogleApiClient;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.test.gcore.MockChromeGoogleApiClient;
 
 /** Tests for {@link ConnectedTask} */
 @RunWith(BaseJUnit4ClassRunner.class)

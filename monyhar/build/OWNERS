@@ -1,25 +1,25 @@
 set noparent
-# NOTE: keep this in sync with lsc-owners-override@chromium.org owners
-agrieve@chromium.org
-brucedawson@chromium.org
+# NOTE: keep this in sync with lsc-owners-override@monyhar.org owners
+agrieve@monyhar.org
+brucedawson@monyhar.org
 dpranke@google.com
-jochen@chromium.org
-thakis@chromium.org
-thomasanderson@chromium.org
-tikuta@chromium.org
+jochen@monyhar.org
+thakis@monyhar.org
+thomasanderson@monyhar.org
+tikuta@monyhar.org
 
 # Clang build config changes:
-hans@chromium.org
+hans@monyhar.org
 
 # For java build changes:
-wnwen@chromium.org
+wnwen@monyhar.org
 
-# NOTE: keep this in sync with lsc-owners-override@chromium.org owners
+# NOTE: keep this in sync with lsc-owners-override@monyhar.org owners
 
 per-file .gitignore=*
 per-file check_gn_headers_whitelist.txt=*
-per-file mac_toolchain.py=erikchen@chromium.org
-per-file mac_toolchain.py=justincohen@chromium.org
+per-file mac_toolchain.py=erikchen@monyhar.org
+per-file mac_toolchain.py=justincohen@monyhar.org
 per-file whitespace_file.txt=*
 per-file OWNERS.status=*
 per-file OWNERS.setnoparent=set noparent

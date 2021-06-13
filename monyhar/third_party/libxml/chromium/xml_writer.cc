@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#include "third_party/libxml/chromium/xml_writer.h"
+#include "third_party/libxml/monyhar/xml_writer.h"
 
 #include <libxml/xmlwriter.h>
 
-#include "third_party/libxml/chromium/libxml_utils.h"
+#include "third_party/libxml/monyhar/libxml_utils.h"
 
 XmlWriter::XmlWriter() : writer_(nullptr), buffer_(nullptr) {}
 

@@ -28,7 +28,7 @@ shouldBeFalse('input.checkValidity()');
 var clonedInputNext = input.cloneNode();
 shouldBeFalse('clonedInputNext.checkValidity()');
 
-//select  (http://code.google.com/p/chromium/issues/detail?id=461412)
+//select  (http://code.google.com/p/monyhar/issues/detail?id=461412)
 var select = document.createElement('select');
 select.innerHTML = "<option>Volvo</option><option>Saab</option><option>Opel</option>";
 select.required = true;
@@ -40,7 +40,7 @@ shouldBeTrue('clonedSelect.checkValidity()');
 var clonedSelectDeep = select.cloneNode(true);
 shouldBeTrue('clonedSelectDeep.checkValidity()');
 
-// TextArea (http://code.google.com/p/chromium/issues/detail?id=461414)
+// TextArea (http://code.google.com/p/monyhar/issues/detail?id=461414)
 var textarea = document.createElement('textarea');
 textarea.required = true;
 textarea.value = "a";

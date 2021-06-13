@@ -14,7 +14,7 @@ RUN apt-get update && apt-get upgrade -y && \
     apt-get install -y curl build-essential python
 
 RUN echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections && \
-    curl 'https://chromium.googlesource.com/chromium/src/+/master/build/install-build-deps.sh?format=TEXT' | \
+    curl 'https://monyhar.googlesource.com/monyhar/src/+/master/build/install-build-deps.sh?format=TEXT' | \
     base64 -d | bash -s -- --no-prompt --no-chromeos-fonts --syms
 
 COPY run.sh /bin

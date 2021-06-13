@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.features.start_surface;
+package org.monyhar.chrome.features.start_surface;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
@@ -15,7 +15,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import static org.chromium.chrome.browser.tasks.ReturnToChromeExperimentsUtil.TAB_SWITCHER_ON_RETURN_MS;
+import static org.monyhar.chrome.browser.tasks.ReturnToChromeExperimentsUtil.TAB_SWITCHER_ON_RETURN_MS;
 
 import android.content.Intent;
 
@@ -26,24 +26,24 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.params.ParameterAnnotations;
-import org.chromium.base.test.params.ParameterAnnotations.UseRunnerDelegate;
-import org.chromium.base.test.params.ParameterSet;
-import org.chromium.base.test.params.ParameterizedRunner;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.Restriction;
-import org.chromium.chrome.browser.flags.CachedFeatureFlags;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.tasks.ReturnToChromeExperimentsUtil;
-import org.chromium.chrome.start_surface.R;
-import org.chromium.chrome.test.ChromeActivityTestRule;
-import org.chromium.chrome.test.ChromeJUnit4RunnerDelegate;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.browser.Features.EnableFeatures;
-import org.chromium.ui.test.util.UiRestriction;
+import org.monyhar.base.test.params.ParameterAnnotations;
+import org.monyhar.base.test.params.ParameterAnnotations.UseRunnerDelegate;
+import org.monyhar.base.test.params.ParameterSet;
+import org.monyhar.base.test.params.ParameterizedRunner;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.Restriction;
+import org.monyhar.chrome.browser.flags.CachedFeatureFlags;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.tasks.ReturnToChromeExperimentsUtil;
+import org.monyhar.chrome.start_surface.R;
+import org.monyhar.chrome.test.ChromeActivityTestRule;
+import org.monyhar.chrome.test.ChromeJUnit4RunnerDelegate;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.browser.Features.EnableFeatures;
+import org.monyhar.ui.test.util.UiRestriction;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -86,7 +86,7 @@ public class StartSurfaceNoTabsTest {
     /**
      * Only launch Chrome without waiting for a current tab.
      * This test could not use {@link ChromeActivityTestRule#startMainActivityFromLauncher()}
-     * because of its {@link org.chromium.chrome.browser.tab.Tab} dependency.
+     * because of its {@link org.monyhar.chrome.browser.tab.Tab} dependency.
      */
     private void startMainActivityFromLauncher() {
         Intent intent = new Intent(Intent.ACTION_MAIN);
@@ -122,15 +122,15 @@ public class StartSurfaceNoTabsTest {
 
         onView(withId(R.id.primary_tasks_surface_view)).check(matches(isDisplayed()));
         onView(withId(R.id.search_box_text)).check(matches(isDisplayed()));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.mv_tiles_container))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.mv_tiles_container))
                 .check(matches(isDisplayed()));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.tab_switcher_title))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.tab_switcher_title))
                 .check(matches(withEffectiveVisibility(GONE)));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.carousel_tab_switcher_container))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.carousel_tab_switcher_container))
                 .check(matches(withEffectiveVisibility(GONE)));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.more_tabs))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.more_tabs))
                 .check(matches(withEffectiveVisibility(GONE)));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.tasks_surface_body))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.tasks_surface_body))
                 .check(matches(isDisplayed()));
         onView(withId(R.id.start_tab_switcher_button))
                 .check(matches(withEffectiveVisibility(GONE)));
@@ -151,17 +151,17 @@ public class StartSurfaceNoTabsTest {
 
         onView(withId(R.id.primary_tasks_surface_view)).check(matches(isDisplayed()));
         onView(withId(R.id.search_box_text)).check(matches(isDisplayed()));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.mv_tiles_container))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.mv_tiles_container))
                 .check(matches(withEffectiveVisibility(GONE)));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.tab_switcher_title))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.tab_switcher_title))
                 .check(matches(withEffectiveVisibility(GONE)));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.carousel_tab_switcher_container))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.carousel_tab_switcher_container))
                 .check(matches(withEffectiveVisibility(GONE)));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.single_tab_view))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.single_tab_view))
                 .check(matches(withEffectiveVisibility(GONE)));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.more_tabs))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.more_tabs))
                 .check(matches(withEffectiveVisibility(GONE)));
-        onView(withId(org.chromium.chrome.tab_ui.R.id.tasks_surface_body))
+        onView(withId(org.monyhar.chrome.tab_ui.R.id.tasks_surface_body))
                 .check(matches(isDisplayed()));
     }
 }

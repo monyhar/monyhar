@@ -10,7 +10,7 @@ SCRIPT_DIR="$(cd $(dirname $0) && pwd)"
 cd ${SCRIPT_DIR}
 
 OUT_DIR=out
-NACLPORTS_URL=https://chromium.googlesource.com/external/naclports.git
+NACLPORTS_URL=https://monyhar.googlesource.com/external/naclports.git
 NACLPORTS_REV=e53078c33d99b0b3cbadbbbbb92cccf7a48d5dc1
 NACLPORTS_DIR=${OUT_DIR}/naclports
 

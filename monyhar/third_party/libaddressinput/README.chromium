@@ -12,14 +12,14 @@ Description:
 This library lets you enter, validate, and display an address with correct
 semantics for many countries around the world. The library uses the serialized
 validation rules from a Google-managed server (without SLA) at
-https://chromium-i18n.appspot.com/ssl-aggregate-address/. The library is used in
+https://monyhar-i18n.appspot.com/ssl-aggregate-address/. The library is used in
 PaymentRequest and autofill.
 
 Local Modifications:
-- Use Chrome's version of JSON reader in chromium/json.cc.
-- Use Chrome's version of loose string comparison in chromium/string_compare.cc.
+- Use Chrome's version of JSON reader in monyhar/json.cc.
+- Use Chrome's version of loose string comparison in monyhar/string_compare.cc.
 - fuzz/: Added fuzz targets.
-- Use base/check_op.h in chromium/input_suggester.cc.
+- Use base/check_op.h in monyhar/input_suggester.cc.
 
 Note:
 

@@ -24,7 +24,7 @@
 namespace {
 
 const char kIframeHostName[] = "about:srcdoc";
-const char kTestHostName[] = "https://chromium.test/";
+const char kTestHostName[] = "https://monyhar.test/";
 
 class FakeJavaScriptConsoleFeatureDelegate
     : public JavaScriptConsoleFeatureDelegate {

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.styles;
+package org.monyhar.chrome.browser.omnibox.styles;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -11,8 +11,8 @@ import android.util.TypedValue;
 import androidx.annotation.DrawableRes;
 import androidx.core.content.ContextCompat;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.night_mode.NightModeUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.night_mode.NightModeUtils;
 
 /** Provides resources specific to Omnibox. */
 public class OmniboxResourceProvider {

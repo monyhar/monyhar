@@ -6,7 +6,7 @@
 
 #include <GLES2/gl2.h>
 #include <GLES2/gl2ext.h>
-#include <GLES2/gl2extchromium.h>
+#include <GLES2/gl2extmonyhar.h>
 #include <GLES3/gl3.h>
 #include <stddef.h>
 #include <stdint.h>
@@ -1313,7 +1313,7 @@ void RasterImplementation::RasterCHROMIUM(const cc::DisplayItemList* list,
                                           bool requires_clear,
                                           size_t* max_op_size_hint) {
   TRACE_EVENT1("gpu", "RasterImplementation::RasterCHROMIUM",
-               "raster_chromium_id", ++raster_chromium_id_);
+               "raster_monyhar_id", ++raster_monyhar_id_);
   DCHECK(max_op_size_hint);
 
   if (std::abs(post_scale.x()) < std::numeric_limits<float>::epsilon() ||

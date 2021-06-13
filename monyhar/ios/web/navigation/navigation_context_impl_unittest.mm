@@ -26,7 +26,7 @@ const char kRawResponseHeaders[] = "HTTP/1.1 200 OK\0"
 class NavigationContextImplTest : public PlatformTest {
  protected:
   NavigationContextImplTest()
-      : url_("https://chromium.test"),
+      : url_("https://monyhar.test"),
         response_headers_(new net::HttpResponseHeaders(
             std::string(kRawResponseHeaders, sizeof(kRawResponseHeaders)))) {}
 

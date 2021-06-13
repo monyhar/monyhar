@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.trigger_scripts;
+package org.monyhar.chrome.browser.autofill_assistant.trigger_scripts;
 
 import android.content.Context;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.autofill_assistant.AssistantCoordinator;
-import org.chromium.chrome.browser.autofill_assistant.AssistantDependenciesImpl;
-import org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiController;
-import org.chromium.chrome.browser.autofill_assistant.carousel.AssistantChip;
-import org.chromium.chrome.browser.autofill_assistant.header.AssistantHeaderModel;
-import org.chromium.chrome.browser.feedback.HelpAndFeedbackLauncherImpl;
-import org.chromium.chrome.browser.tab.TabUtils;
-import org.chromium.ui.KeyboardVisibilityDelegate;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.autofill_assistant.AssistantCoordinator;
+import org.monyhar.chrome.browser.autofill_assistant.AssistantDependenciesImpl;
+import org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiController;
+import org.monyhar.chrome.browser.autofill_assistant.carousel.AssistantChip;
+import org.monyhar.chrome.browser.autofill_assistant.header.AssistantHeaderModel;
+import org.monyhar.chrome.browser.feedback.HelpAndFeedbackLauncherImpl;
+import org.monyhar.chrome.browser.tab.TabUtils;
+import org.monyhar.ui.KeyboardVisibilityDelegate;
 
 import java.util.List;
 

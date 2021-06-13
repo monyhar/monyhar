@@ -213,7 +213,7 @@ scoped_refptr<SimpleFontData> FontCache::PlatformFallbackFontForCharacter(
   substitute_font_weight = [font_manager weightOfFont:substitute_font];
 
   // TODO(eae): Remove once skia supports bold emoji. See
-  // https://bugs.chromium.org/p/skia/issues/detail?id=4904
+  // https://bugs.monyhar.org/p/skia/issues/detail?id=4904
   // Bold emoji look the same as normal emoji, so syntheticBold isn't needed.
   bool synthetic_bold =
       IsAppKitFontWeightBold(weight) &&
@@ -283,7 +283,7 @@ std::unique_ptr<FontPlatformData> FontCache::CreateFontPlatformData(
   NSInteger app_kit_weight = ToAppKitFontWeight(font_description.Weight());
 
   // TODO(eae): Remove once skia supports bold emoji. See
-  // https://bugs.chromium.org/p/skia/issues/detail?id=4904
+  // https://bugs.monyhar.org/p/skia/issues/detail?id=4904
   // Bold emoji look the same as normal emoji, so syntheticBold isn't needed.
   bool synthetic_bold = [platform_font.familyName isEqual:@"Apple Color Emoji"]
                             ? false

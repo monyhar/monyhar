@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test.common.crash;
+package org.monyhar.android_webview.test.common.crash;
 
 import org.hamcrest.BaseMatcher;
 import org.hamcrest.Description;
 
-import org.chromium.android_webview.common.crash.CrashInfo;
+import org.monyhar.android_webview.common.crash.CrashInfo;
 
 import java.util.Locale;
 import java.util.Objects;

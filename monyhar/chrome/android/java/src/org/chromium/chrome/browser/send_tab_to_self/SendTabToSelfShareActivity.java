@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.send_tab_to_self;
+package org.monyhar.chrome.browser.send_tab_to_self;
 
-import org.chromium.chrome.browser.ChromeAccessorActivity;
-import org.chromium.chrome.browser.share.send_tab_to_self.SendTabToSelfAndroidBridge;
-import org.chromium.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.ChromeAccessorActivity;
+import org.monyhar.chrome.browser.share.send_tab_to_self.SendTabToSelfAndroidBridge;
+import org.monyhar.chrome.browser.tab.Tab;
 
 /**
  * A simple activity that allows Chrome to expose send tab to self as an option in the share menu.

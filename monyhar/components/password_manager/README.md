@@ -1,6 +1,6 @@
 # Password Manager
 
-The password manager is [a component layered](https://sites.google.com/a/chromium.org/dev/developers/design-documents/layered-components-design).
+The password manager is [a component layered](https://sites.google.com/a/monyhar.org/dev/developers/design-documents/layered-components-design).
 
 This means that the code is spread out through the following directories:
 - ./core/: Essentials, not depending on any other layers. All other layers may
@@ -12,7 +12,7 @@ This means that the code is spread out through the following directories:
 NOTE: Some embedder specific code must not be part of content (e.g. UI specific
 code) and located in
 - /chrome/browser/password_manager/
-- /chrome/android/java/src/org/chromium/chrome/browser/password_manager/
+- /chrome/android/java/src/org/monyhar/chrome/browser/password_manager/
 - /ios/chrome/browser/passwords/
 ***
 
@@ -23,7 +23,7 @@ simplicity, it shows the concrete instances in case of Chrome on desktop. In
 reality there exist further abstractions, e.g. the
 [`ChromePasswordManagerClient`] is the Chrome-specific implementation of the
 [`PasswordManagerClient`] interface. The [`ContentPasswordManagerDriver`] is the
-[content](https://www.chromium.org/developers/content-module) specific
+[content](https://www.monyhar.org/developers/content-module) specific
 implementation of the `*::PasswordManagerDriver` interfaces.
 
 
@@ -104,14 +104,14 @@ Here is a summary of the core responsibilities of the classes and interfaces:
 
   This is actually a collection of two interfaces named
   `*::PasswordManagerDriver`. The first one ([`mojom::PasswordManagerDriver`])
-  is a [mojo](https://chromium.googlesource.com/chromium/src/+/main/mojo/)
+  is a [mojo](https://monyhar.googlesource.com/monyhar/src/+/main/mojo/)
   interface that allows renderers to talk to the browser. The second one
   ([`password_manager::PasswordManagerDriver`]) allows the browser to talk to
   renderers.
 
   * [`ContentPasswordManagerDriver`]
 
-    This is the [content](https://www.chromium.org/developers/content-module)
+    This is the [content](https://www.monyhar.org/developers/content-module)
     specific implementation of the `PasswordManagerDriver` interfaces.
 
   * [`IOSChromePasswordManagerDriver`]
@@ -143,23 +143,23 @@ Here is a summary of the core responsibilities of the classes and interfaces:
 
   This implements the [`mojom::PasswordGenerationAgent`] interface.
 
-[`AutofillAgent`]: https://cs.chromium.org/search?q=file:/autofill_agent.h$
-[`ChromePasswordManagerClient`]: https://cs.chromium.org/search?q=file:/chrome_password_manager_client.h$
-[`ContentPasswordManagerDriver`]: https://cs.chromium.org/search?q=file:/content_password_manager_driver.h$
-[`IOSChromePasswordManagerClient`]: https://cs.chromium.org/search?q=file:/ios_chrome_password_manager_client.h$
-[`IOSChromePasswordManagerDriver`]: https://cs.chromium.org/search?q=file:/ios_chrome_password_manager_driver.h$
-[`mojom::AutofillAgent`]: https://cs.chromium.org/search?q=file:autofill_agent.mojom+"interface+AutofillAgent"
-[`mojom::PasswordAutofillAgent`]: https://cs.chromium.org/search?q=file:autofill_agent.mojom+"interface+PasswordAutofillAgent"
-[`mojom::PasswordGenerationAgent`]: https://cs.chromium.org/search?q=file:autofill_agent.mojom+"interface+PasswordGenerationAgent"
-[`mojom::PasswordManagerDriver`]: https://cs.chromium.org/search?q=file:autofill_driver.mojom+"interface+PasswordManagerDriver"
-[`PasswordFormManager`]: https://cs.chromium.org/search?q=file:/password_form_manager.h$
-[`password_manager::PasswordManagerDriver`]: https://cs.chromium.org/search?q=file:/password_manager_driver.h$
-[`password_manager::PasswordManagerDriver`]: https://cs.chromium.org/search?q=file:/password_manager_driver.h$
-[`PasswordAutofillAgent`]: https://cs.chromium.org/search?q=file:/password_autofill_agent.h$
-[`PasswordFormManager`]: https://cs.chromium.org/search?q=file:/password_form_manager.h$
-[`PasswordGenerationAgent`]: https://cs.chromium.org/search?q=file:/password_generation_agent.h$
-[`PasswordManager`]: https://cs.chromium.org/search?q=file:/password_manager.h$
-[`PasswordManagerClient`]: https://cs.chromium.org/search?q=file:/password_manager_client.h$
-[`StubPasswordManagerClient`]: https://cs.chromium.org/search?q=file:/stub_password_manager_client.h$
-[`StubPasswordManagerDriver`]: https://cs.chromium.org/search?q=file:/stub_password_manager_driver.h$
-[`WebViewPasswordManagerClient`]: https://cs.chromium.org/search?q=file:/web_view_password_manager_client.h$
+[`AutofillAgent`]: https://cs.monyhar.org/search?q=file:/autofill_agent.h$
+[`ChromePasswordManagerClient`]: https://cs.monyhar.org/search?q=file:/chrome_password_manager_client.h$
+[`ContentPasswordManagerDriver`]: https://cs.monyhar.org/search?q=file:/content_password_manager_driver.h$
+[`IOSChromePasswordManagerClient`]: https://cs.monyhar.org/search?q=file:/ios_chrome_password_manager_client.h$
+[`IOSChromePasswordManagerDriver`]: https://cs.monyhar.org/search?q=file:/ios_chrome_password_manager_driver.h$
+[`mojom::AutofillAgent`]: https://cs.monyhar.org/search?q=file:autofill_agent.mojom+"interface+AutofillAgent"
+[`mojom::PasswordAutofillAgent`]: https://cs.monyhar.org/search?q=file:autofill_agent.mojom+"interface+PasswordAutofillAgent"
+[`mojom::PasswordGenerationAgent`]: https://cs.monyhar.org/search?q=file:autofill_agent.mojom+"interface+PasswordGenerationAgent"
+[`mojom::PasswordManagerDriver`]: https://cs.monyhar.org/search?q=file:autofill_driver.mojom+"interface+PasswordManagerDriver"
+[`PasswordFormManager`]: https://cs.monyhar.org/search?q=file:/password_form_manager.h$
+[`password_manager::PasswordManagerDriver`]: https://cs.monyhar.org/search?q=file:/password_manager_driver.h$
+[`password_manager::PasswordManagerDriver`]: https://cs.monyhar.org/search?q=file:/password_manager_driver.h$
+[`PasswordAutofillAgent`]: https://cs.monyhar.org/search?q=file:/password_autofill_agent.h$
+[`PasswordFormManager`]: https://cs.monyhar.org/search?q=file:/password_form_manager.h$
+[`PasswordGenerationAgent`]: https://cs.monyhar.org/search?q=file:/password_generation_agent.h$
+[`PasswordManager`]: https://cs.monyhar.org/search?q=file:/password_manager.h$
+[`PasswordManagerClient`]: https://cs.monyhar.org/search?q=file:/password_manager_client.h$
+[`StubPasswordManagerClient`]: https://cs.monyhar.org/search?q=file:/stub_password_manager_client.h$
+[`StubPasswordManagerDriver`]: https://cs.monyhar.org/search?q=file:/stub_password_manager_driver.h$
+[`WebViewPasswordManagerClient`]: https://cs.monyhar.org/search?q=file:/web_view_password_manager_client.h$

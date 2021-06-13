@@ -163,7 +163,7 @@ class WebTestFinder(object):
 
     def _read_filter_files(self, filenames, test_path_separator):
         # TODO(crbug.com/794783)
-        # https://bit.ly/chromium-test-runner-api says "A test should be run
+        # https://bit.ly/monyhar-test-runner-api says "A test should be run
         # only if it would be RUN when EVERY flag is evaluated individually.
         # A test should be SKIPPED if it would be skipped if ANY flag was
         # evaluated individually."
@@ -333,8 +333,8 @@ def filter_tests(tests, filters):
     """Returns a filtered list of tests to run.
 
     The test-filtering semantics are documented in
-    https://bit.ly/chromium-test-runner-api and
-    https://bit.ly/chromium-test-list-format, but are as follows:
+    https://bit.ly/monyhar-test-runner-api and
+    https://bit.ly/monyhar-test-list-format, but are as follows:
 
     Each filter is a list of glob expressions, with each expression optionally
     prefixed by a "-". If the glob starts with a "-", it is a negative glob,

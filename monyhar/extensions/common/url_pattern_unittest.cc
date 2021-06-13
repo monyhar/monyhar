@@ -1145,7 +1145,7 @@ TEST(ExtensionURLPatternTest, Intersection) {
       // No intersection.
       {"*://*/foo", "*://*/bar", ""},
       {"http://*/*", "https://*/*", ""},
-      {"*://*.com/*", "https://chromium.org/*", ""},
+      {"*://*.com/*", "https://monyhar.org/*", ""},
 
       // File URLs.
       {"file:///usr/me", "file:///*", "file:///usr/me"},

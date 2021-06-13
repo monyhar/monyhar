@@ -4,7 +4,7 @@
 
 """Top-level presubmit script for external/wpt.
 
-See https://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See https://dev.monyhar.org/developers/how-tos/depottools/presubmit-scripts
 for more details about the presubmit API built into depot_tools.
 """
 
@@ -96,7 +96,7 @@ def _DontModifyIDLFiles(input_api, output_api):
     return [
         output_api.PresubmitPromptWarning(
             'This CL touches generated IDL files. Manual modifications to these files will\n'
-            'likely be overwritten upstream; please contact ecosystem-infra@chromium.org if\n'
+            'likely be overwritten upstream; please contact ecosystem-infra@monyhar.org if\n'
             'you wish to change them. Files:',
             items=idl_files)
     ]

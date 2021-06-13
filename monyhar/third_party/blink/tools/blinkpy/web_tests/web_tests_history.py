@@ -86,7 +86,7 @@ class HistoryChecker(object):
             if commit.time < self.BLINK_FORK_TIME:
                 before_fork += 1
                 if ('google.com' in commit.author) or \
-                        ('chromium.org' in commit.author):
+                        ('monyhar.org' in commit.author):
                     before_fork_googlers += 1
         if before_fork == 0:
             return "%s\t[OK] created after fork" % path

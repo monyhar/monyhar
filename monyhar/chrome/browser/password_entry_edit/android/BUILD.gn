@@ -24,15 +24,15 @@ source_set("android") {
 }
 
 generate_jni("jni_headers") {
-  sources = [ "internal/java/src/org/chromium/chrome/browser/password_entry_edit/CredentialEditBridge.java" ]
+  sources = [ "internal/java/src/org/monyhar/chrome/browser/password_entry_edit/CredentialEditBridge.java" ]
 }
 
 android_library("java") {
   sources = [
-    "//chrome/browser/password_entry_edit/android/java/src/org/chromium/chrome/browser/password_entry_edit/BlockedCredentialFragmentView.java",
-    "//chrome/browser/password_entry_edit/android/java/src/org/chromium/chrome/browser/password_entry_edit/CredentialEditFragmentView.java",
-    "//chrome/browser/password_entry_edit/android/java/src/org/chromium/chrome/browser/password_entry_edit/CredentialEntryFragmentViewBase.java",
-    "//chrome/browser/password_entry_edit/android/java/src/org/chromium/chrome/browser/password_entry_edit/FederatedCredentialFragmentView.java",
+    "//chrome/browser/password_entry_edit/android/java/src/org/monyhar/chrome/browser/password_entry_edit/BlockedCredentialFragmentView.java",
+    "//chrome/browser/password_entry_edit/android/java/src/org/monyhar/chrome/browser/password_entry_edit/CredentialEditFragmentView.java",
+    "//chrome/browser/password_entry_edit/android/java/src/org/monyhar/chrome/browser/password_entry_edit/CredentialEntryFragmentViewBase.java",
+    "//chrome/browser/password_entry_edit/android/java/src/org/monyhar/chrome/browser/password_entry_edit/FederatedCredentialFragmentView.java",
   ]
 
   deps = [
@@ -44,7 +44,7 @@ android_library("java") {
     "//ui/android:ui_no_recycler_view_java",
   ]
 
-  resources_package = "org.chromium.chrome.browser.password_entry_edit"
+  resources_package = "org.monyhar.chrome.browser.password_entry_edit"
 }
 
 android_resources("java_resources") {
@@ -73,5 +73,5 @@ android_library_factory("factory_java") {
 
   # This internal file will be replaced by a generated file so the resulting
   # android_library target does not actually depend on this internal file.
-  sources = [ "//chrome/browser/password_entry_edit/android/internal/java/src/org/chromium/chrome/browser/password_entry_edit/CredentialEditUiFactory.java" ]
+  sources = [ "//chrome/browser/password_entry_edit/android/internal/java/src/org/monyhar/chrome/browser/password_entry_edit/CredentialEditUiFactory.java" ]
 }

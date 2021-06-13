@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant;
+package org.monyhar.chrome.browser.autofill_assistant;
 
-import org.chromium.base.CommandLine;
-import org.chromium.chrome.browser.password_manager.PasswordStoreCredential;
-import org.chromium.url.GURL;
+import org.monyhar.base.CommandLine;
+import org.monyhar.chrome.browser.password_manager.PasswordStoreCredential;
+import org.monyhar.url.GURL;
 
 /**
  * Class that stores parameters for password change integration tests.

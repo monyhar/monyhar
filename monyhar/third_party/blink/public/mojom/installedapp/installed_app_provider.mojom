@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-[JavaPackage="org.chromium.installedapp.mojom"]
+[JavaPackage="org.monyhar.installedapp.mojom"]
 module blink.mojom;
 
 import "third_party/blink/public/mojom/installedapp/related_application.mojom";

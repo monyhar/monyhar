@@ -12,14 +12,14 @@ android_library("java") {
   ]
 
   sources = [
-    "java/src/org/chromium/chrome/browser/ui/appmenu/AppMenu.java",
-    "java/src/org/chromium/chrome/browser/ui/appmenu/AppMenuAdapter.java",
-    "java/src/org/chromium/chrome/browser/ui/appmenu/AppMenuButtonHelperImpl.java",
-    "java/src/org/chromium/chrome/browser/ui/appmenu/AppMenuCoordinatorFactory.java",
-    "java/src/org/chromium/chrome/browser/ui/appmenu/AppMenuCoordinatorImpl.java",
-    "java/src/org/chromium/chrome/browser/ui/appmenu/AppMenuDragHelper.java",
-    "java/src/org/chromium/chrome/browser/ui/appmenu/AppMenuHandlerImpl.java",
-    "java/src/org/chromium/chrome/browser/ui/appmenu/AppMenuItemIcon.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/AppMenu.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/AppMenuAdapter.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/AppMenuButtonHelperImpl.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/AppMenuCoordinatorFactory.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/AppMenuCoordinatorImpl.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/AppMenuDragHelper.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/AppMenuHandlerImpl.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/AppMenuItemIcon.java",
   ]
 
   deps = [
@@ -34,7 +34,7 @@ android_library("java") {
     "//third_party/androidx:androidx_appcompat_appcompat_resources_java",
     "//ui/android:ui_java",
   ]
-  resources_package = "org.chromium.chrome.browser.ui.appmenu.internal"
+  resources_package = "org.monyhar.chrome.browser.ui.appmenu.internal"
 }
 
 android_resources("java_resources") {
@@ -59,13 +59,13 @@ android_resources("java_resources") {
 android_library("javatests") {
   testonly = true
 
-  resources_package = "org.chromium.chrome.browser.ui.appmenu.test"
+  resources_package = "org.monyhar.chrome.browser.ui.appmenu.test"
   sources = [
-    "java/src/org/chromium/chrome/browser/ui/appmenu/AppMenuAdapterRenderTest.java",
-    "java/src/org/chromium/chrome/browser/ui/appmenu/AppMenuAdapterTest.java",
-    "java/src/org/chromium/chrome/browser/ui/appmenu/AppMenuTest.java",
-    "java/src/org/chromium/chrome/browser/ui/appmenu/TestAppMenuDelegate.java",
-    "java/src/org/chromium/chrome/browser/ui/appmenu/TestAppMenuPropertiesDelegate.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/AppMenuAdapterRenderTest.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/AppMenuAdapterTest.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/AppMenuTest.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/TestAppMenuDelegate.java",
+    "java/src/org/monyhar/chrome/browser/ui/appmenu/TestAppMenuPropertiesDelegate.java",
   ]
   deps = [
     ":java",
@@ -116,7 +116,7 @@ java_library("junit") {
   # Skip platform checks since Robolectric depends on requires_android targets.
   bypass_platform_checks = true
   testonly = true
-  sources = [ "java/src/org/chromium/chrome/browser/ui/appmenu/AppMenuPopupPositionTest.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/ui/appmenu/AppMenuPopupPositionTest.java" ]
   deps = [
     ":java",
     "//base:base_junit_test_support",

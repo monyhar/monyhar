@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.infobar;
+package org.monyhar.chrome.browser.infobar;
 
 import android.graphics.Bitmap;
 import android.text.SpannableString;
@@ -11,10 +11,10 @@ import android.text.Spanned;
 
 import androidx.annotation.ColorRes;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.components.infobars.ConfirmInfoBar;
-import org.chromium.components.infobars.InfoBarLayout;
-import org.chromium.ui.text.NoUnderlineClickableSpan;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.components.infobars.ConfirmInfoBar;
+import org.monyhar.components.infobars.InfoBarLayout;
+import org.monyhar.ui.text.NoUnderlineClickableSpan;
 
 /**
  * An infobar to present a Safety Tip. This is a thin vineer over standard ConfirmInfoBar to provide

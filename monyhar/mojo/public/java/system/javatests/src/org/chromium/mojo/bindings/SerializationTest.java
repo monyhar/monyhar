@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo.bindings;
+package org.monyhar.mojo.bindings;
 
 import androidx.test.filters.SmallTest;
 
@@ -10,15 +10,15 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.mojo.HandleMock;
-import org.chromium.mojo.bindings.test.mojom.mojo.Struct1;
-import org.chromium.mojo.bindings.test.mojom.mojo.Struct2;
-import org.chromium.mojo.bindings.test.mojom.mojo.Struct3;
-import org.chromium.mojo.bindings.test.mojom.mojo.Struct4;
-import org.chromium.mojo.bindings.test.mojom.mojo.Struct5;
-import org.chromium.mojo.bindings.test.mojom.mojo.Struct6;
-import org.chromium.mojo.bindings.test.mojom.mojo.StructOfNullables;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.mojo.HandleMock;
+import org.monyhar.mojo.bindings.test.mojom.mojo.Struct1;
+import org.monyhar.mojo.bindings.test.mojom.mojo.Struct2;
+import org.monyhar.mojo.bindings.test.mojom.mojo.Struct3;
+import org.monyhar.mojo.bindings.test.mojom.mojo.Struct4;
+import org.monyhar.mojo.bindings.test.mojom.mojo.Struct5;
+import org.monyhar.mojo.bindings.test.mojom.mojo.Struct6;
+import org.monyhar.mojo.bindings.test.mojom.mojo.StructOfNullables;
 
 import java.nio.ByteBuffer;
 

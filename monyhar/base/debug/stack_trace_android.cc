@@ -83,7 +83,7 @@ size_t CollectStackTrace(void** trace, size_t count) {
 
 void StackTrace::PrintWithPrefix(const char* prefix_string) const {
   std::string backtrace = ToStringWithPrefix(prefix_string);
-  __android_log_write(ANDROID_LOG_ERROR, "chromium", backtrace.c_str());
+  __android_log_write(ANDROID_LOG_ERROR, "monyhar", backtrace.c_str());
 }
 
 // NOTE: Native libraries in APKs are stripped before installing. Print out the
@@ -101,10 +101,10 @@ void StackTrace::OutputToStreamWithPrefix(std::ostream* os,
   base::ThreadRestrictions::ScopedAllowIO allow_io;
   if (!ReadProcMaps(&proc_maps)) {
     __android_log_write(
-        ANDROID_LOG_ERROR, "chromium", "Failed to read /proc/self/maps");
+        ANDROID_LOG_ERROR, "monyhar", "Failed to read /proc/self/maps");
   } else if (!ParseProcMaps(proc_maps, &regions)) {
     __android_log_write(
-        ANDROID_LOG_ERROR, "chromium", "Failed to parse /proc/self/maps");
+        ANDROID_LOG_ERROR, "monyhar", "Failed to parse /proc/self/maps");
   }
 
   for (size_t i = 0; i < count_; ++i) {

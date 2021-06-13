@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.offlinepages;
+package org.monyhar.chrome.browser.offlinepages;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
 
 /**
  * Data class representing an underlying request to save a page later.
  */
 @JNINamespace("offline_pages::android")
 public class SavePageRequest {
-    // Int representation of the org.chromium.components.offlinepages.RequestState enum.
+    // Int representation of the org.monyhar.components.offlinepages.RequestState enum.
     private int mRequestState;
     private long mRequestId;
     private String mUrl;
@@ -28,7 +28,7 @@ public class SavePageRequest {
      * on its own.
      *
      * @param savePageResult Result of the saving. Uses
-     *     {@see org.chromium.components.offlinepages.RequestState} enum.
+     *     {@see org.monyhar.components.offlinepages.RequestState} enum.
      * @param requestId The unique ID of the request.
      * @param url The URL to download
      * @param clientIdNamespace a String that will be the namespace of the client ID of this

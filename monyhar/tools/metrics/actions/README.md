@@ -4,8 +4,8 @@ This document covers the best practices on using user actions in code and
 documenting them for the dashboard. User actions come with only a name and
 a timestamp. They are best used when you care about a sequence—which actions
 happen in what order. If you don't care about the order, you should be using
-[histograms](https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md)
-(likely [enumerated histograms](https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md#Enum-Histograms)).
+[histograms](https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md)
+(likely [enumerated histograms](https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md#Enum-Histograms)).
 
 Often, you want both user actions and histogram logging in your code. They
 enable different analyses. They're complementary.
@@ -15,7 +15,7 @@ enable different analyses. They're complementary.
 ## Coding (emitting to user actions)
 
 Generally you should call `base::RecordAction()`, which is defined in
-[user_metrics.h](https://cs.chromium.org/chromium/src/base/metrics/user_metrics.h).
+[user_metrics.h](https://cs.monyhar.org/monyhar/src/base/metrics/user_metrics.h).
 
 
 ### Emit at a high level, not deep in the implementation
@@ -109,7 +109,7 @@ existing user actions (see [advice above](#Try-to-avoid-redundant-emits)) and
 not emitted excessively (see [advice above](#Do-not-emit-excessively)).
 
 In addition to testing interactively, unit tests can check the number of times a
-user action was emitted. See [user_action_tester.h](https://cs.chromium.org/chromium/src/base/test/metrics/user_action_tester.h)
+user action was emitted. See [user_action_tester.h](https://cs.monyhar.org/monyhar/src/base/test/metrics/user_action_tester.h)
 for details.
 
 ## Interpreting the resulting data
@@ -166,7 +166,7 @@ Each user action needs owners, who are the current expert on the metric. Owners
 are responsible for answering questions about the metric, handling any
 maintenance tasks, and deprecating the metric if it has outlived its usefulness.
 If you are using a metric heavily and understand it intimately, feel free to add
-yourself as an owner. @chromium.org email addresses are preferred.
+yourself as an owner. @monyhar.org email addresses are preferred.
 
 The primary owner must be an individual, who is ultimately responsible for the
 metric. It's a best practice to list multiple owners, which makes it less likely

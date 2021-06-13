@@ -242,7 +242,7 @@ void ObtainDefaultObservations(
 
 // Typical HTTP RTT value corresponding to a given WebEffectiveConnectionType
 // value. Taken from
-// https://cs.chromium.org/chromium/src/net/nqe/network_quality_estimator_params.cc.
+// https://cs.monyhar.org/monyhar/src/net/nqe/network_quality_estimator_params.cc.
 const base::TimeDelta kTypicalHttpRttEffectiveConnectionType
     [net::EFFECTIVE_CONNECTION_TYPE_LAST] = {
         base::TimeDelta::FromMilliseconds(0),
@@ -254,7 +254,7 @@ const base::TimeDelta kTypicalHttpRttEffectiveConnectionType
 
 // Typical downlink throughput (in Mbps) value corresponding to a given
 // WebEffectiveConnectionType value. Taken from
-// https://cs.chromium.org/chromium/src/net/nqe/network_quality_estimator_params.cc.
+// https://cs.monyhar.org/monyhar/src/net/nqe/network_quality_estimator_params.cc.
 const int32_t kTypicalDownlinkKbpsEffectiveConnectionType
     [net::EFFECTIVE_CONNECTION_TYPE_LAST] = {0, 0, 40, 75, 400, 1600};
 

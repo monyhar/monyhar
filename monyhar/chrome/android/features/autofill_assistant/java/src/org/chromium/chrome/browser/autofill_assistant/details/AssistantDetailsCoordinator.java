@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.details;
+package org.monyhar.chrome.browser.autofill_assistant.details;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -16,8 +16,8 @@ import androidx.appcompat.content.res.AppCompatResources;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcher;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcher;
 
 /**
  * Coordinator responsible for showing details.

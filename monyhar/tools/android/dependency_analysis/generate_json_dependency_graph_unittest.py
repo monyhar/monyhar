@@ -31,19 +31,19 @@ class TestHelperFunctions(unittest.TestCase):
         """Tests that the helper identifies a valid Chromium class name."""
         self.assertTrue(
             generate_json_dependency_graph.class_is_interesting(
-                'org.chromium.chrome.browser.Foo'))
+                'org.monyhar.chrome.browser.Foo'))
 
     def test_class_is_interesting_longer(self):
         """Tests that the helper identifies a valid Chromium class name."""
         self.assertTrue(
             generate_json_dependency_graph.class_is_interesting(
-                'org.chromium.chrome.browser.foo.Bar'))
+                'org.monyhar.chrome.browser.foo.Bar'))
 
     def test_class_is_interesting_negative(self):
         """Tests that the helper ignores a non-Chromium class name."""
         self.assertFalse(
             generate_json_dependency_graph.class_is_interesting(
-                'org.notchromium.chrome.browser.Foo'))
+                'org.notmonyhar.chrome.browser.Foo'))
 
     def test_class_is_interesting_not_interesting(self):
         """Tests that the helper ignores a builtin class name."""
@@ -121,20 +121,20 @@ class TestJavaClassJdepsParser(unittest.TestCase):
         """Tests that new nodes + edges are added after a successful parse."""
         self.parser.parse_line(
             self.BUILD_TARGET,
-            'org.chromium.a -> org.chromium.b org.chromium.c')
+            'org.monyhar.a -> org.monyhar.b org.monyhar.c')
         self.assertEqual(self.parser.graph.num_nodes, 2)
         self.assertEqual(self.parser.graph.num_edges, 1)
 
     def test_parse_line_not_interesting(self):
         """Tests that a dependency on an uninteresting class adds a node only
             for the origin class."""
-        self.parser.parse_line(self.BUILD_TARGET, 'org.chromium.a -> b c')
+        self.parser.parse_line(self.BUILD_TARGET, 'org.monyhar.a -> b c')
         self.assertEqual(self.parser.graph.num_nodes, 1)
         self.assertEqual(self.parser.graph.num_edges, 0)
 
     def test_parse_line_too_short(self):
         """Tests that nothing is changed if the line is too short."""
-        self.parser.parse_line(self.BUILD_TARGET, 'org.chromium.a -> b')
+        self.parser.parse_line(self.BUILD_TARGET, 'org.monyhar.a -> b')
         self.assertEqual(self.parser.graph.num_nodes, 0)
         self.assertEqual(self.parser.graph.num_edges, 0)
 
@@ -143,7 +143,7 @@ class TestJavaClassJdepsParser(unittest.TestCase):
             as the second class.
         """
         self.parser.parse_line(self.BUILD_TARGET,
-                               'org.chromium.a -> not found')
+                               'org.monyhar.a -> not found')
         self.assertEqual(self.parser.graph.num_nodes, 0)
         self.assertEqual(self.parser.graph.num_edges, 0)
 

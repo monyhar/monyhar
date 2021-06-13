@@ -21,7 +21,7 @@ void OmniboxURLLoaderThrottle::AppendThrottleIfNeeded(
 
   // Don't add the URL loader throttle if there's no header to report. This is a
   // minor optimization, and also prevents some noisy DCHECKs from failing in
-  // tests: https://cs.chromium.org/search/?q=crbug.com/845683
+  // tests: https://cs.monyhar.org/search/?q=crbug.com/845683
   const std::string header = GetHeaderValue();
   if (header.empty())
     return;

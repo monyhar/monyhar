@@ -232,7 +232,7 @@ class NavigationRequestTest : public RenderViewHostImplTestHarness {
 // Checks that the request_context_type is properly set.
 // Note: can be extended to cover more internal members.
 TEST_F(NavigationRequestTest, SimpleDataChecksRedirectAndProcess) {
-  const GURL kUrl1 = GURL("http://chromium.org");
+  const GURL kUrl1 = GURL("http://monyhar.org");
   const GURL kUrl2 = GURL("http://google.com");
   auto navigation =
       NavigationSimulatorImpl::CreateRendererInitiated(kUrl1, main_rfh());
@@ -263,7 +263,7 @@ TEST_F(NavigationRequestTest, SimpleDataChecksRedirectAndProcess) {
 }
 
 TEST_F(NavigationRequestTest, SimpleDataCheckNoRedirect) {
-  const GURL kUrl = GURL("http://chromium.org");
+  const GURL kUrl = GURL("http://monyhar.org");
   auto navigation =
       NavigationSimulatorImpl::CreateRendererInitiated(kUrl, main_rfh());
   navigation->Start();
@@ -278,7 +278,7 @@ TEST_F(NavigationRequestTest, SimpleDataCheckNoRedirect) {
 }
 
 TEST_F(NavigationRequestTest, SimpleDataChecksFailure) {
-  const GURL kUrl = GURL("http://chromium.org");
+  const GURL kUrl = GURL("http://monyhar.org");
   auto navigation =
       NavigationSimulatorImpl::CreateRendererInitiated(kUrl, main_rfh());
   navigation->Start();
@@ -431,7 +431,7 @@ TEST_F(NavigationRequestTest, WillFailRequestSetsSSLInfo) {
   ssl_info.cert_status = net::CERT_STATUS_AUTHORITY_INVALID;
   ssl_info.connection_status = connection_status;
 
-  const GURL kUrl = GURL("https://chromium.org");
+  const GURL kUrl = GURL("https://monyhar.org");
   auto navigation =
       NavigationSimulatorImpl::CreateRendererInitiated(kUrl, main_rfh());
   navigation->SetSSLInfo(ssl_info);
@@ -491,7 +491,7 @@ TEST_F(NavigationRequestTest, WillFailRequestCanAccessRenderFrameHost) {
   ContentBrowserClient* old_browser_client =
       SetBrowserClientForTesting(client.get());
 
-  const GURL kUrl = GURL("http://chromium.org");
+  const GURL kUrl = GURL("http://monyhar.org");
   auto navigation =
       NavigationSimulatorImpl::CreateRendererInitiated(kUrl, main_rfh());
   navigation->SetAutoAdvance(false);
@@ -516,9 +516,9 @@ TEST_F(NavigationRequestTest, PolicyContainerInheritance) {
   } cases[]{{"about:blank", true},
             {"data:text/plain,hello", true},
             {"file://local", false},
-            {"http://chromium.org", false}};
+            {"http://monyhar.org", false}};
 
-  const GURL kUrl1 = GURL("http://chromium.org");
+  const GURL kUrl1 = GURL("http://monyhar.org");
   auto navigation =
       NavigationSimulatorImpl::CreateRendererInitiated(kUrl1, main_rfh());
   navigation->Commit();
@@ -560,7 +560,7 @@ TEST_F(NavigationRequestTest, PolicyContainerInheritance) {
 
 TEST_F(NavigationRequestTest, DnsAliasesCanBeAccessed) {
   // Create simulated NavigationRequest for the URL, which has aliases.
-  const GURL kUrl = GURL("http://chromium.org");
+  const GURL kUrl = GURL("http://monyhar.org");
   auto navigation =
       NavigationSimulatorImpl::CreateRendererInitiated(kUrl, main_rfh());
   std::vector<std::string> dns_aliases({"alias1", "alias2"});
@@ -586,7 +586,7 @@ TEST_F(NavigationRequestTest, DnsAliasesCanBeAccessed) {
 TEST_F(NavigationRequestTest, NoDnsAliases) {
   // Create simulated NavigationRequest for the URL, which does not
   // have aliases. (Note the empty alias list.)
-  const GURL kUrl = GURL("http://chromium.org");
+  const GURL kUrl = GURL("http://monyhar.org");
   auto navigation =
       NavigationSimulatorImpl::CreateRendererInitiated(kUrl, main_rfh());
   std::vector<std::string> dns_aliases;

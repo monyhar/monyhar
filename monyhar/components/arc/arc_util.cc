@@ -321,7 +321,7 @@ absl::optional<int> GetWindowTaskId(const aura::Window* window) {
 
 absl::optional<int> GetTaskIdFromWindowAppId(const std::string& app_id) {
   int task_id;
-  if (std::sscanf(app_id.c_str(), "org.chromium.arc.%d", &task_id) != 1)
+  if (std::sscanf(app_id.c_str(), "org.monyhar.arc.%d", &task_id) != 1)
     return absl::nullopt;
   return task_id;
 }
@@ -337,7 +337,7 @@ absl::optional<int> GetWindowSessionId(const aura::Window* window) {
 
 absl::optional<int> GetSessionIdFromWindowAppId(const std::string& app_id) {
   int session_id;
-  if (std::sscanf(app_id.c_str(), "org.chromium.arc.session.%d", &session_id) !=
+  if (std::sscanf(app_id.c_str(), "org.monyhar.arc.session.%d", &session_id) !=
       1) {
     return absl::nullopt;
   }

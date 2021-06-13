@@ -29,8 +29,8 @@ void IntSetToWorkarounds(const std::vector<int32_t>& enabled_workarounds,
   if (workarounds->max_texture_size_limit_4096)
     workarounds->max_texture_size = 4096;
 
-  if (workarounds->max_copy_texture_chromium_size_1048576)
-    workarounds->max_copy_texture_chromium_size = 1048576;
+  if (workarounds->max_copy_texture_monyhar_size_1048576)
+    workarounds->max_copy_texture_monyhar_size = 1048576;
 
   if (workarounds->max_3d_array_texture_size_1024)
     workarounds->max_3d_array_texture_size = 1024;
@@ -76,8 +76,8 @@ void GpuDriverBugWorkarounds::Append(const GpuDriverBugWorkarounds& extra) {
 #undef GPU_OP
 
   max_texture_size = LowerMax(max_texture_size, extra.max_texture_size);
-  max_copy_texture_chromium_size = LowerMax(
-      max_copy_texture_chromium_size, extra.max_copy_texture_chromium_size);
+  max_copy_texture_monyhar_size = LowerMax(
+      max_copy_texture_monyhar_size, extra.max_copy_texture_monyhar_size);
   max_3d_array_texture_size =
       LowerMax(max_3d_array_texture_size, extra.max_3d_array_texture_size);
 }

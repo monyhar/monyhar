@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.bookmarks;
+package org.monyhar.chrome.browser.bookmarks;
 
 import android.app.ActivityManager;
 import android.content.ComponentName;
@@ -17,25 +17,25 @@ import androidx.annotation.VisibleForTesting;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.AdapterDataObserver;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.ObserverList;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.bookmarks.BookmarkBridge.BookmarkItem;
-import org.chromium.chrome.browser.bookmarks.BookmarkBridge.BookmarkModelObserver;
-import org.chromium.chrome.browser.partnerbookmarks.PartnerBookmarksReader;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
-import org.chromium.chrome.browser.ui.native_page.BasicNativePage;
-import org.chromium.components.bookmarks.BookmarkId;
-import org.chromium.components.bookmarks.BookmarkType;
-import org.chromium.components.browser_ui.util.ConversionUtils;
-import org.chromium.components.browser_ui.widget.dragreorder.DragStateDelegate;
-import org.chromium.components.browser_ui.widget.selectable_list.SelectableListLayout;
-import org.chromium.components.browser_ui.widget.selectable_list.SelectableListToolbar.SearchDelegate;
-import org.chromium.components.browser_ui.widget.selectable_list.SelectionDelegate;
-import org.chromium.components.favicon.LargeIconBridge;
-import org.chromium.url.GURL;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.bookmarks.BookmarkBridge.BookmarkItem;
+import org.monyhar.chrome.browser.bookmarks.BookmarkBridge.BookmarkModelObserver;
+import org.monyhar.chrome.browser.partnerbookmarks.PartnerBookmarksReader;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.chrome.browser.ui.native_page.BasicNativePage;
+import org.monyhar.components.bookmarks.BookmarkId;
+import org.monyhar.components.bookmarks.BookmarkType;
+import org.monyhar.components.browser_ui.util.ConversionUtils;
+import org.monyhar.components.browser_ui.widget.dragreorder.DragStateDelegate;
+import org.monyhar.components.browser_ui.widget.selectable_list.SelectableListLayout;
+import org.monyhar.components.browser_ui.widget.selectable_list.SelectableListToolbar.SearchDelegate;
+import org.monyhar.components.browser_ui.widget.selectable_list.SelectionDelegate;
+import org.monyhar.components.favicon.LargeIconBridge;
+import org.monyhar.url.GURL;
 
 import java.util.Stack;
 

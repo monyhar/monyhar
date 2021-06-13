@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import android.content.Context;
 import android.graphics.Color;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.browser.browserservices.intents.ColorProvider;
-import org.chromium.components.browser_ui.styles.ChromeColors;
+import org.monyhar.chrome.browser.browserservices.intents.ColorProvider;
+import org.monyhar.components.browser_ui.styles.ChromeColors;
 
 /**
  * ColorProvider implementation used for incognito profiles.

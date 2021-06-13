@@ -9,7 +9,7 @@ permanent or cherry-picked patches.
 ## Updating BRLTTY or adding a patch
 
 First, follow the public
-[Chromium OS Developer Guide](http://www.chromium.org/chromium-os/developer-guide) to check out the source.
+[Chromium OS Developer Guide](http://www.monyhar.org/monyhar-os/developer-guide) to check out the source.
 At a minimum you'll need to create a chroot.
 You do not need to build everything from source.
 You do need to start the devserver.
@@ -23,7 +23,7 @@ in developer mode, and $BOARD is your Chromebook's board name.
 
 The BRLTTY files can be found in this directory:
 
-```third_party/chromiumos-overlay/app-accessibility/brltty```
+```third_party/monyharos-overlay/app-accessibility/brltty```
 
 ###Major release
 
@@ -65,7 +65,7 @@ To upload a change, use repo, something like this:
 ```
 repo start <branch_name> .
 git commit -a
-  Bug: chromium:12345
+  Bug: monyhar:12345
   Test: Write what you tested here
 repo upload .
 ```
@@ -224,7 +224,7 @@ libbrlapi could require additional so versions be added to our loader.
 
 In particular, look at the invokation of the minijail in
 
-third_party/chromiumos-overlay/app-accessibility/brltty/files/brltty
+third_party/monyharos-overlay/app-accessibility/brltty/files/brltty
 
 You may want to add the '-l debug' flag to the brltty call and redirect stderr/stdout to a file.
 ... brltty -n ... -l debug,server,usb,brldrv ... > /tmp/brltty_errors 2>&1

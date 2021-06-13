@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo.bindings;
+package org.monyhar.mojo.bindings;
 
-import org.chromium.mojo.system.Core;
-import org.chromium.mojo.system.MessagePipeHandle;
-import org.chromium.mojo.system.MessagePipeHandle.ReadMessageResult;
-import org.chromium.mojo.system.MojoException;
-import org.chromium.mojo.system.MojoResult;
-import org.chromium.mojo.system.ResultAnd;
-import org.chromium.mojo.system.Watcher;
+import org.monyhar.mojo.system.Core;
+import org.monyhar.mojo.system.MessagePipeHandle;
+import org.monyhar.mojo.system.MessagePipeHandle.ReadMessageResult;
+import org.monyhar.mojo.system.MojoException;
+import org.monyhar.mojo.system.MojoResult;
+import org.monyhar.mojo.system.ResultAnd;
+import org.monyhar.mojo.system.Watcher;
 
 import java.nio.ByteBuffer;
 
@@ -107,7 +107,7 @@ public class Connector implements MessageReceiver, HandleOwner<MessagePipeHandle
      * Pass the owned handle of the connector. After this, the connector is disconnected. It cannot
      * accept new message and it isn't listening to the handle anymore.
      *
-     * @see org.chromium.mojo.bindings.HandleOwner#passHandle()
+     * @see org.monyhar.mojo.bindings.HandleOwner#passHandle()
      */
     @Override
     public MessagePipeHandle passHandle() {
@@ -135,7 +135,7 @@ public class Connector implements MessageReceiver, HandleOwner<MessagePipeHandle
 
     private class WatcherCallback implements Watcher.Callback {
         /**
-         * @see org.chromium.mojo.system.Watcher.Callback#onResult(int)
+         * @see org.monyhar.mojo.system.Watcher.Callback#onResult(int)
          */
         @Override
         public void onResult(int result) {
@@ -145,7 +145,7 @@ public class Connector implements MessageReceiver, HandleOwner<MessagePipeHandle
     }
 
     /**
-     * @see org.chromium.mojo.system.Watcher.Callback#onResult(int)
+     * @see org.monyhar.mojo.system.Watcher.Callback#onResult(int)
      */
     private void onWatcherResult(int result) {
         if (result == MojoResult.OK) {

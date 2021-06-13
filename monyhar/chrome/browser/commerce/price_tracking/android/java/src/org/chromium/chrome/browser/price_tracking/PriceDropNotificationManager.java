@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.price_tracking;
+package org.monyhar.chrome.browser.price_tracking;
 
 import android.annotation.TargetApi;
 import android.app.Notification;
@@ -18,23 +18,23 @@ import android.provider.Settings;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.ShortcutHelper;
-import org.chromium.chrome.browser.document.ChromeLauncherActivity;
-import org.chromium.chrome.browser.notifications.NotificationIntentInterceptor;
-import org.chromium.chrome.browser.notifications.NotificationUmaTracker;
-import org.chromium.chrome.browser.notifications.channels.ChromeChannelDefinitions;
-import org.chromium.chrome.browser.subscriptions.CommerceSubscription;
-import org.chromium.chrome.browser.subscriptions.CommerceSubscription.CommerceSubscriptionType;
-import org.chromium.chrome.browser.subscriptions.CommerceSubscription.SubscriptionManagementType;
-import org.chromium.chrome.browser.subscriptions.CommerceSubscription.TrackingIdType;
-import org.chromium.chrome.browser.subscriptions.CommerceSubscriptionsServiceFactory;
-import org.chromium.chrome.browser.subscriptions.SubscriptionsManagerImpl;
-import org.chromium.chrome.browser.tasks.tab_management.PriceTrackingUtilities;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxy;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxyImpl;
-import org.chromium.components.browser_ui.notifications.channels.ChannelsInitializer;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.ShortcutHelper;
+import org.monyhar.chrome.browser.document.ChromeLauncherActivity;
+import org.monyhar.chrome.browser.notifications.NotificationIntentInterceptor;
+import org.monyhar.chrome.browser.notifications.NotificationUmaTracker;
+import org.monyhar.chrome.browser.notifications.channels.ChromeChannelDefinitions;
+import org.monyhar.chrome.browser.subscriptions.CommerceSubscription;
+import org.monyhar.chrome.browser.subscriptions.CommerceSubscription.CommerceSubscriptionType;
+import org.monyhar.chrome.browser.subscriptions.CommerceSubscription.SubscriptionManagementType;
+import org.monyhar.chrome.browser.subscriptions.CommerceSubscription.TrackingIdType;
+import org.monyhar.chrome.browser.subscriptions.CommerceSubscriptionsServiceFactory;
+import org.monyhar.chrome.browser.subscriptions.SubscriptionsManagerImpl;
+import org.monyhar.chrome.browser.tasks.tab_management.PriceTrackingUtilities;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxy;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxyImpl;
+import org.monyhar.components.browser_ui.notifications.channels.ChannelsInitializer;
 
 /**
  * Manage price drop notifications.

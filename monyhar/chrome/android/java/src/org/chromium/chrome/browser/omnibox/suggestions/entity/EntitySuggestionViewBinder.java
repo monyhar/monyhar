@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.entity;
+package org.monyhar.chrome.browser.omnibox.suggestions.entity;
 
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.TextView;
 
-import org.chromium.chrome.R;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.chrome.R;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /** A mechanism binding EntitySuggestion properties to its view. */
 public class EntitySuggestionViewBinder {

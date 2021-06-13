@@ -22,9 +22,9 @@ using nsurlprotectionspace_util::MessageForHTTPAuth;
 namespace {
 
 // Test hostnames and URL origins.
-NSString* const kTestHost = @"chromium.org";
-NSString* const kTestHttpOrigin = @"http://chromium.org";
-NSString* const kTestHttpsOrigin = @"https://chromium.org:80";
+NSString* const kTestHost = @"monyhar.org";
+NSString* const kTestHttpOrigin = @"http://monyhar.org";
+NSString* const kTestHttpsOrigin = @"https://monyhar.org:80";
 
 // Returns protection space for the given |host|, |protocol| and |port|.
 NSURLProtectionSpace* GetProtectionSpaceForHost(NSString* host,
@@ -81,7 +81,7 @@ TEST_F(NSURLProtectionSpaceUtilTest, ShowForSocksProxy) {
   ASSERT_TRUE(CanShow(protectionSpace));
 
   // Expecting the following text:
-  // The proxy chromium.org requires a username and password.
+  // The proxy monyhar.org requires a username and password.
   // Your connection to this site is not private.
   NSString* expectedText =
       [NSString stringWithFormat:@"%@ %@",
@@ -102,7 +102,7 @@ TEST_F(NSURLProtectionSpaceUtilTest, ShowForHttpProxy) {
   ASSERT_TRUE(CanShow(protectionSpace));
 
   // Expecting the following text:
-  // The proxy http://chromium.org requires a username and password.
+  // The proxy http://monyhar.org requires a username and password.
   // Your connection to this site is not private.
   NSString* expectedText =
       [NSString stringWithFormat:@"%@ %@",
@@ -125,7 +125,7 @@ TEST_F(NSURLProtectionSpaceUtilTest, ShowForHttpsProxy) {
   // HTTPS Proxy protection space reports itself as unsecure
   // (crbug.com/629570).
   // Expecting the following text:
-  // The proxy https://chromium.org requires a username and password.
+  // The proxy https://monyhar.org requires a username and password.
   // Your connection to this site is not private.
   expectedText = [NSString
       stringWithFormat:@"%@ %@",
@@ -145,7 +145,7 @@ TEST_F(NSURLProtectionSpaceUtilTest, ShowForHttpServer) {
   ASSERT_TRUE(CanShow(protectionSpace));
 
   // Expecting the following text:
-  // http://chromium.org requires a username and password.
+  // http://monyhar.org requires a username and password.
   NSString* expectedText =
       [NSString stringWithFormat:@"%@ %@",
                                  l10n_util::GetNSStringF(
@@ -164,7 +164,7 @@ TEST_F(NSURLProtectionSpaceUtilTest, ShowForHttpsServer) {
   ASSERT_TRUE(CanShow(protectionSpace));
 
   // Expecting the following text:
-  // https://chromium.org:80 requires a username and password.
+  // https://monyhar.org:80 requires a username and password.
   NSString* expectedText = l10n_util::GetNSStringF(
       IDS_LOGIN_DIALOG_AUTHORITY, base::SysNSStringToUTF16(kTestHttpsOrigin));
   EXPECT_NSEQ(expectedText, MessageForHTTPAuth(protectionSpace));

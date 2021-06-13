@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting;
+package org.monyhar.chromoting;
 
 import android.app.Activity;
 import android.content.Context;
@@ -18,7 +18,7 @@ import android.view.MenuItem;
 
 import androidx.core.content.ContextCompat;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 /** Utility methods for chromoting code. */
 public abstract class ChromotingUtil {

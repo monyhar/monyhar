@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@2.30.cr0
-package: chromium/third_party/android_deps/libs/com_google_dagger_dagger
+package: monyhar/third_party/android_deps/libs/com_google_dagger_dagger
 description: "Dagger"
 data:
 - file: dagger-2.30.jar

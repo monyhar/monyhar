@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.async_image;
+package org.monyhar.components.browser_ui.widget.async_image;
 
 import android.annotation.TargetApi;
 import android.graphics.drawable.Animatable;
@@ -94,7 +94,7 @@ public class AutoAnimatorDrawable extends DrawableWrapper {
     }
 
     private static void animatedDrawableHelper(
-            @Nullable Drawable drawable, org.chromium.base.Callback<Animatable> consumer) {
+            @Nullable Drawable drawable, org.monyhar.base.Callback<Animatable> consumer) {
         if (drawable == null) return;
 
         if (drawable instanceof Animatable) {

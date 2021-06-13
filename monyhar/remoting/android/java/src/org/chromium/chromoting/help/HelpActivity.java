@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting.help;
+package org.monyhar.chromoting.help;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -24,9 +24,9 @@ import android.webkit.WebViewClient;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import org.chromium.chromoting.ChromotingUtil;
-import org.chromium.chromoting.R;
-import org.chromium.ui.UiUtils;
+import org.monyhar.chromoting.ChromotingUtil;
+import org.monyhar.chromoting.R;
+import org.monyhar.ui.UiUtils;
 
 /**
  * The Activity for showing the Help screen.

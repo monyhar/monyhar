@@ -5,27 +5,27 @@
 # code base. Please reach out to owners of top-level directories instead.
 file://ENG_REVIEW_OWNERS
 
-per-file .clang-format=thakis@chromium.org
+per-file .clang-format=thakis@monyhar.org
 per-file .clang-tidy=file://styleguide/c++/OWNERS
 per-file .eslintrc.js=file://tools/web_dev_style/OWNERS
 per-file .gitattributes=*
 per-file .gitignore=*
-per-file .git-blame-ignore-revs=mgiuca@chromium.org
-per-file .git-blame-ignore-revs=thakis@chromium.org
-per-file .gn=estaab@chromium.org
+per-file .git-blame-ignore-revs=mgiuca@monyhar.org
+per-file .git-blame-ignore-revs=thakis@monyhar.org
+per-file .gn=estaab@monyhar.org
 per-file .vpython*=dpranke@google.com
-per-file .vpython*=iannucci@chromium.org
+per-file .vpython*=iannucci@monyhar.org
 per-file .yapfignore=*
 per-file AUTHORS=*
 per-file CODE_OF_CONDUCT.md=dpranke@google.com
-per-file CODE_OF_CONDUCT.md=benhenry@chromium.org
-per-file CODE_OF_CONDUCT.md=ellyjones@chromium.org
+per-file CODE_OF_CONDUCT.md=benhenry@monyhar.org
+per-file CODE_OF_CONDUCT.md=ellyjones@monyhar.org
 per-file DEPS=*
-per-file PRESUBMIT*.py=agrieve@chromium.org  # For .pydeps changes
-per-file PRESUBMIT*.py=dcheng@chromium.org
+per-file PRESUBMIT*.py=agrieve@monyhar.org  # For .pydeps changes
+per-file PRESUBMIT*.py=dcheng@monyhar.org
 per-file PRESUBMIT*.py=dpranke@google.com
-per-file PRESUBMIT*.py=jochen@chromium.org
-per-file PRESUBMIT*.py=wnwen@chromium.org  # For .pydeps changes
+per-file PRESUBMIT*.py=jochen@monyhar.org
+per-file PRESUBMIT*.py=wnwen@monyhar.org  # For .pydeps changes
 per-file README.md=*
 per-file WATCHLISTS=*
 per-file *.pydeps=file://build/OWNERS

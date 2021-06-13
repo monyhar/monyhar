@@ -584,7 +584,7 @@ The header files are in:
 * ARM glibc toolchain: ``toolchain/<platform>_arm_glibc/arm-nacl/include``
 
 Many other libraries have been ported for use with Native Client; for more
-information, see the `webports <https://chromium.googlesource.com/webports>`_
+information, see the `webports <https://monyhar.googlesource.com/webports>`_
 project. If you port an open-source library for your own use, we recommend
 adding it to webports.
 
@@ -637,7 +637,7 @@ libppapi_simple.a
     paths, the tools won't find third-party libraries you use in your
     non-Native-Client development. If you want to use a specific third-party
     library for Native Client development, look for it in `webports
-    <https://chromium.googlesource.com/webports>`_, or port the library yourself.
+    <https://monyhar.googlesource.com/webports>`_, or port the library yourself.
   * The order in which you list libraries in your build commands is important,
     since the linker searches and processes libraries in the order in which they
     are specified. See the ``\*_LDFLAGS`` variables in the Makefiles of the SDK

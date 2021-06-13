@@ -323,7 +323,7 @@ goog.events.BrowserEvent.prototype.init = function(e, opt_currentTarget) {
       this.offsetY = (e.layerY !== undefined) ? e.layerY : e.offsetY;
     } else {
       // Webkit emits a lame warning whenever layerX/layerY is accessed.
-      // http://code.google.com/p/chromium/issues/detail?id=101733
+      // http://code.google.com/p/monyhar/issues/detail?id=101733
       this.offsetX = (goog.userAgent.WEBKIT || e.offsetX !== undefined) ?
           e.offsetX :
           e.layerX;

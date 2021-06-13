@@ -72,7 +72,7 @@ class LaunchElevatedProcessThreadDelegate
     // STA.
     //
     // The code that calls ShellExecuteEx was inspired by
-    // https://cs-staging.chromium.org/webrtc/src/base/process/launch.h?l=261
+    // https://cs-staging.monyhar.org/webrtc/src/base/process/launch.h?l=261
     base::win::ScopedCOMInitializer scoped_com_initializer;
     if (!scoped_com_initializer.Succeeded()) {
       PLOG(ERROR) << "Failed to initialize COM when launching elevated process";

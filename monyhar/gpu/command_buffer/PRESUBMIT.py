@@ -3,7 +3,7 @@
 # found in the LICENSE file.
 """Enforces command buffer autogen matches script output.
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See http://dev.monyhar.org/developers/how-tos/depottools/presubmit-scripts
 for more details on the presubmit API built into depot_tools.
 """
 
@@ -15,7 +15,7 @@ def _IsGLES2CmdBufferFile(affected_file):
   if filename in [
       'build_cmd_buffer_lib.py', 'build_gles2_cmd_buffer.py',
       'gles2_cmd_buffer_functions.txt', 'gl2.h', 'gl2ext.h', 'gl3.h', 'gl31.h',
-      'gl2chromium.h', 'gl2extchromium.h'
+      'gl2monyhar.h', 'gl2extmonyhar.h'
   ]:
     return True
 

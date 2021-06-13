@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@17.2.0.cr0
-package: chromium/third_party/android_deps/libs/com_google_android_gms_play_services_tasks
+package: monyhar/third_party/android_deps/libs/com_google_android_gms_play_services_tasks
 description: "play-services-tasks"
 data:
 - file: play-services-tasks-17.2.0.aar

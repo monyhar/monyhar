@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 // Copied and modified from
-// https://chromium.googlesource.com/chromium/src/+/a3f9d4fac81fc86065d867ab08fa4912ddf662c7/headless/public/util/error_reporter.cc
+// https://monyhar.googlesource.com/monyhar/src/+/a3f9d4fac81fc86065d867ab08fa4912ddf662c7/headless/public/util/error_reporter.cc
 // Modifications include namespace.
 
 #include "components/autofill_assistant/browser/devtools/error_reporter.h"

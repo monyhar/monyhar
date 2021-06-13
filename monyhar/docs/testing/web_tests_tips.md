@@ -185,7 +185,7 @@ defaults for unopinionated developers. When writing web tests for a new part
 of the codebase, you can minimize review latency by taking a look at existing
 tests, and pay particular attention to these issues. Also beware of per-project
 style guides, such as the
-[ServiceWorker Tests Style guide](https://www.chromium.org/blink/serviceworker/testing).
+[ServiceWorker Tests Style guide](https://www.monyhar.org/blink/serviceworker/testing).
 
 ### Baseline
 

@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.services.gcm;
+package org.monyhar.chrome.browser.services.gcm;
 
 import android.annotation.SuppressLint;
 
-import org.chromium.chrome.browser.base.SplitCompatGcmListenerService;
-import org.chromium.chrome.browser.base.SplitCompatUtils;
+import org.monyhar.chrome.browser.base.SplitCompatGcmListenerService;
+import org.monyhar.chrome.browser.base.SplitCompatUtils;
 
 /**
  * See {@link ChromeGcmListenerServiceImpl}.
@@ -17,6 +17,6 @@ import org.chromium.chrome.browser.base.SplitCompatUtils;
 public class ChromeGcmListenerService extends SplitCompatGcmListenerService {
     public ChromeGcmListenerService() {
         super(SplitCompatUtils.getIdentifierName(
-                "org.chromium.chrome.browser.services.gcm.ChromeGcmListenerServiceImpl"));
+                "org.monyhar.chrome.browser.services.gcm.ChromeGcmListenerServiceImpl"));
     }
 }

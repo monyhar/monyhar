@@ -15,7 +15,7 @@ luci.bucket(
             roles = acl.BUILDBUCKET_TRIGGERER,
             users = [
                 "luci-scheduler-dev@appspot.gserviceaccount.com",
-                "chromium-ci-builder-dev@chops-service-accounts.iam.gserviceaccount.com",
+                "monyhar-ci-builder-dev@chops-service-accounts.iam.gserviceaccount.com",
             ],
         ),
         acl.entry(
@@ -26,25 +26,25 @@ luci.bucket(
 )
 
 luci.gitiles_poller(
-    name = "chromium-gitiles-trigger",
+    name = "monyhar-gitiles-trigger",
     bucket = "ci",
-    repo = "https://chromium.googlesource.com/chromium/src",
+    repo = "https://monyhar.googlesource.com/monyhar/src",
 )
 
 luci.recipe.defaults.cipd_package.set(
-    "infra/recipe_bundles/chromium.googlesource.com/chromium/tools/build",
+    "infra/recipe_bundles/monyhar.googlesource.com/monyhar/tools/build",
 )
 
 defaults.bucket.set("ci")
 defaults.build_numbers.set(True)
-defaults.builder_group.set("chromium.dev")
+defaults.builder_group.set("monyhar.dev")
 defaults.builderless.set(None)
 defaults.cpu.set(cpu.X86_64)
 defaults.executable.set(luci.recipe(name = "swarming/staging"))
 defaults.execution_timeout.set(3 * time.hour)
 defaults.os.set(os.LINUX_BIONIC_SWITCH_TO_DEFAULT)
 defaults.service_account.set(
-    "chromium-ci-builder-dev@chops-service-accounts.iam.gserviceaccount.com",
+    "monyhar-ci-builder-dev@chops-service-accounts.iam.gserviceaccount.com",
 )
 defaults.swarming_tags.set(["vpython:native-python-wrapper"])
 
@@ -52,12 +52,12 @@ def ci_builder(*, name, resultdb_bigquery_exports = None, **kwargs):
     resultdb_bigquery_exports = resultdb_bigquery_exports or []
     resultdb_bigquery_exports.append(
         resultdb.export_test_results(
-            bq_table = "luci-resultdb-dev.chromium.ci_test_results",
+            bq_table = "luci-resultdb-dev.monyhar.ci_test_results",
         ),
     )
     return builder(
         name = name,
-        triggered_by = ["chromium-gitiles-trigger"],
+        triggered_by = ["monyhar-gitiles-trigger"],
         resultdb_bigquery_exports = resultdb_bigquery_exports,
         isolated_server = "https://isolateserver-dev.appspot.com",
         goma_backend = goma.backend.RBE_PROD,
@@ -78,7 +78,7 @@ ci_builder(
     description_html = "Test description. <b>Test HTML</b>.",
     resultdb_bigquery_exports = [
         resultdb.export_text_artifacts(
-            bq_table = "luci-resultdb-dev.chromium.ci_text_artifacts",
+            bq_table = "luci-resultdb-dev.monyhar.ci_text_artifacts",
         ),
     ],
 )
@@ -98,7 +98,7 @@ ci_builder(
 
 def ci_builder_staging(**kwargs):
     return ci_builder(
-        swarming_host = "chromium-swarm-staging.appspot.com",
+        swarming_host = "monyhar-swarm-staging.appspot.com",
         **kwargs
     )
 

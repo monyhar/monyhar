@@ -13,7 +13,7 @@
         android:summary="@string/video_previews_summary"
         app:allowDividerBelow="false" />
 
-    <org.chromium.chrome.browser.feed.settings.RadioButtonGroupVideoPreviewsPreference
+    <org.monyhar.chrome.browser.feed.settings.RadioButtonGroupVideoPreviewsPreference
         android:key="video_previews_pref"
         app:allowDividerBelow="false" />
 

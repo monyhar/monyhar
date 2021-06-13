@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.qrcode.scan_tab;
+package org.monyhar.chrome.browser.share.qrcode.scan_tab;
 
 import android.app.admin.DevicePolicyManager;
 import android.content.Context;
@@ -14,7 +14,7 @@ import android.os.Looper;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
-import org.chromium.ui.display.DisplayAndroid;
+import org.monyhar.ui.display.DisplayAndroid;
 
 /** CameraPreview class controls camera and camera previews. */
 public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback {

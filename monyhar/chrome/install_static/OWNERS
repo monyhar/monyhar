@@ -1,5 +1,5 @@
-gab@chromium.org
-grt@chromium.org
-robertshield@chromium.org
+gab@monyhar.org
+grt@monyhar.org
+robertshield@monyhar.org
 
 per-file policy_path_parser.*=file://chrome/browser/policy/OWNERS

@@ -14,7 +14,7 @@ The following steps are involved:
 
 * Run Python script `release_notes.py` to generate release notes. It requires
   one command line argument, which is the full
-  [4-part version number](https://www.chromium.org/developers/version-numbers)
+  [4-part version number](https://www.monyhar.org/developers/version-numbers)
   of the new release.
   The script is hardcoded to read ~/Download/chromedriver-issues.csv,
   and save the resulting file in notes.txt in the current directory.

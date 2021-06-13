@@ -8,8 +8,8 @@ import("//build/config/android/rules.gni")
 android_library("weblayer_public_javatests") {
   testonly = true
   sources = [
-    "org/chromium/weblayer/ObserverListTest.java",
-    "org/chromium/weblayer/WebViewCompatibilityHelperTest.java",
+    "org/monyhar/weblayer/ObserverListTest.java",
+    "org/monyhar/weblayer/WebViewCompatibilityHelperTest.java",
   ]
   deps = [
     "//base:base_java",

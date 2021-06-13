@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.header;
+package org.monyhar.chrome.browser.omnibox.suggestions.header;
 
 import android.content.Context;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.omnibox.suggestions.DropdownItemProcessor;
-import org.chromium.chrome.browser.omnibox.suggestions.OmniboxSuggestionUiType;
-import org.chromium.chrome.browser.omnibox.suggestions.SuggestionHost;
-import org.chromium.chrome.browser.omnibox.suggestions.UrlBarDelegate;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.omnibox.suggestions.DropdownItemProcessor;
+import org.monyhar.chrome.browser.omnibox.suggestions.OmniboxSuggestionUiType;
+import org.monyhar.chrome.browser.omnibox.suggestions.SuggestionHost;
+import org.monyhar.chrome.browser.omnibox.suggestions.UrlBarDelegate;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /** A class that handles model and view creation for the suggestion headers. */
 public class HeaderProcessor implements DropdownItemProcessor {

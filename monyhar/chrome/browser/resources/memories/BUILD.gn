@@ -22,9 +22,9 @@ js_library("app") {
     ":page_thumbnail",
     ":router",
     "//chrome/browser/ui/webui/memories:mojo_bindings_webui_js",
-    "//third_party/polymer/v3_0/components-chromium/iron-list",
-    "//third_party/polymer/v3_0/components-chromium/iron-scroll-threshold",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-list",
+    "//third_party/polymer/v3_0/components-monyhar/iron-scroll-threshold",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_button:cr_button.m",
     "//ui/webui/resources/cr_elements/cr_dialog:cr_dialog.m",
     "//ui/webui/resources/cr_elements/cr_lazy_render:cr_lazy_render.m",
@@ -55,21 +55,21 @@ js_library("memory_card") {
     ":top_visit",
     ":utils",
     "//components/history_clusters/core:mojo_bindings_webui_js",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//url/mojom:url_mojom_origin_webui_js",
   ]
 }
 
 js_library("memory_tile") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//url/mojom:url_mojom_origin_webui_js",
   ]
 }
 
 js_library("page_favicon") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:icon.m",
     "//url/mojom:url_mojom_origin_webui_js",
   ]
@@ -78,21 +78,21 @@ js_library("page_favicon") {
 js_library("page_thumbnail") {
   deps = [
     "//components/history_clusters/core:mojo_bindings_webui_js",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//url/mojom:url_mojom_origin_webui_js",
   ]
 }
 
 js_library("router") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
 js_library("search_query") {
   deps = [
     "//components/history_clusters/core:mojo_bindings_webui_js",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -100,8 +100,8 @@ js_library("top_visit") {
   deps = [
     ":visit_row",
     "//components/history_clusters/core:mojo_bindings_webui_js",
-    "//third_party/polymer/v3_0/components-chromium/iron-collapse:iron-collapse",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-collapse:iron-collapse",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_expand_button:cr_expand_button.m",
   ]
 }
@@ -115,7 +115,7 @@ js_library("visit_row") {
     ":page_favicon",
     ":utils",
     "//components/history_clusters/core:mojo_bindings_webui_js",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_action_menu:cr_action_menu.m",
     "//ui/webui/resources/cr_elements/cr_lazy_render:cr_lazy_render.m",
     "//ui/webui/resources/js:load_time_data.m",

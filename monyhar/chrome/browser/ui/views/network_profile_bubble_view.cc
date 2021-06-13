@@ -11,7 +11,7 @@
 #include "chrome/browser/ui/views/toolbar/browser_app_menu_button.h"
 #include "chrome/browser/ui/views/toolbar/toolbar_view.h"
 #include "chrome/common/pref_names.h"
-#include "chrome/grit/chromium_strings.h"
+#include "chrome/grit/monyhar_strings.h"
 #include "chrome/grit/generated_resources.h"
 #include "components/prefs/pref_service.h"
 #include "components/strings/grit/components_strings.h"
@@ -97,7 +97,7 @@ void NetworkProfileBubbleView::LinkClicked(const ui::Event& event) {
   WindowOpenDisposition disposition = ui::DispositionFromEventFlags(
       event.flags(), WindowOpenDisposition::NEW_FOREGROUND_TAB);
   content::OpenURLParams params(
-      GURL("https://sites.google.com/a/chromium.org/dev/administrators/"
+      GURL("https://sites.google.com/a/monyhar.org/dev/administrators/"
            "common-problems-and-solutions#network_profile"),
       content::Referrer(), disposition, ui::PAGE_TRANSITION_LINK, false);
   navigator_->OpenURL(params);

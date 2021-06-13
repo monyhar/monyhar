@@ -4,7 +4,7 @@
 
 syntax = "proto2";
 option optimize_for = LITE_RUNTIME;
-option java_package = "org.chromium.components.optimization_guide.proto";
+option java_package = "org.monyhar.components.optimization_guide.proto";
 option java_outer_classname = "PushNotificationProto";
 
 package optimization_guide.proto;

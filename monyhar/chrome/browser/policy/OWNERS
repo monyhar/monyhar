@@ -1,15 +1,15 @@
-anqing@chromium.org
-emaxx@chromium.org
-nicolaso@chromium.org
-pastarmovj@chromium.org
-pmarko@chromium.org
-poromov@chromium.org
-rsorokin@chromium.org
-ydago@chromium.org
-zmin@chromium.org
+anqing@monyhar.org
+emaxx@monyhar.org
+nicolaso@monyhar.org
+pastarmovj@monyhar.org
+pmarko@monyhar.org
+poromov@monyhar.org
+rsorokin@monyhar.org
+ydago@monyhar.org
+zmin@monyhar.org
 
-per-file *browser_dm_token_storage*=rogerta@chromium.org
-per-file *browser_dm_token_storage*=zmin@chromium.org
+per-file *browser_dm_token_storage*=rogerta@monyhar.org
+per-file *browser_dm_token_storage*=zmin@monyhar.org
 
-per-file chrome_browser_cloud_management*=rogerta@chromium.org
-per-file chrome_browser_cloud_management*=zmin@chromium.org
+per-file chrome_browser_cloud_management*=rogerta@monyhar.org
+per-file chrome_browser_cloud_management*=zmin@monyhar.org

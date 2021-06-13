@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.settings;
+package org.monyhar.components.browser_ui.settings;
 
 import android.app.Activity;
 import android.content.Context;
@@ -22,7 +22,7 @@ import androidx.appcompat.content.res.AppCompatResources;
 import androidx.appcompat.widget.ActionMenuView;
 import androidx.preference.PreferenceFragmentCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
 
 /**
  * A helper class for Settings.

@@ -28,8 +28,8 @@ if (!use_system_libwayland) {
       "src/src/wayland-util.h",
     ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
 
     public_configs = [ ":wayland_config" ]
   }
@@ -43,9 +43,9 @@ if (!use_system_libwayland) {
 
     deps = [ ":wayland_util" ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
     configs += [
-      "//build/config/compiler:no_chromium_code",
+      "//build/config/compiler:no_monyhar_code",
       "//build/config/linux/libffi",
       ":wayland_config",
     ]
@@ -56,8 +56,8 @@ if (!use_system_libwayland) {
 
     deps = [ ":wayland_util" ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
 
     public_configs = [ ":wayland_config" ]
   }
@@ -78,9 +78,9 @@ if (!use_system_libwayland) {
       ":wayland_util",
     ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
     configs += [
-      "//build/config/compiler:no_chromium_code",
+      "//build/config/compiler:no_monyhar_code",
       "//build/config/linux/libffi",
     ]
 
@@ -99,9 +99,9 @@ if (!use_system_libwayland) {
       ":wayland_util",
     ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
     configs += [
-      "//build/config/compiler:no_chromium_code",
+      "//build/config/compiler:no_monyhar_code",
       "//build/config/linux/libffi",
     ]
 
@@ -118,8 +118,8 @@ if (!use_system_libwayland) {
 
     deps = [ ":wayland_util" ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
 
     public_configs = [ ":wayland_config" ]
   }
@@ -135,8 +135,8 @@ if (!use_system_libwayland) {
       "src/cursor/xcursor.h",
     ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
 
     public_configs = [ ":wayland_config" ]
   }
@@ -160,9 +160,9 @@ if (!use_system_wayland_scanner) {
       "//third_party/expat:expat",
     ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
     configs += [
-      "//build/config/compiler:no_chromium_code",
+      "//build/config/compiler:no_monyhar_code",
       ":wayland_scanner_config",
     ]
   }

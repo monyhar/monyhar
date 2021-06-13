@@ -3,7 +3,7 @@
 # found in the LICENSE file.
 
 exec("./goma.star")
-exec("./consoles/chromium.goma.star")
-exec("./consoles/chromium.goma.fyi.star")
+exec("./consoles/monyhar.goma.star")
+exec("./consoles/monyhar.goma.fyi.star")
 exec("./consoles/goma.latest.star")
-exec("./consoles/luci.chromium.goma.star")
+exec("./consoles/luci.monyhar.goma.star")

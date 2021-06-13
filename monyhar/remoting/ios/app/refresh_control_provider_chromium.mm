@@ -6,7 +6,7 @@
 #error "This file requires ARC support."
 #endif
 
-#import "remoting/ios/app/refresh_control_provider_chromium.h"
+#import "remoting/ios/app/refresh_control_provider_monyhar.h"
 
 #import "remoting/ios/app/remoting_theme.h"
 

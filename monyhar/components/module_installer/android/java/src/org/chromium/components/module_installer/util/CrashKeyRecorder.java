@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.module_installer.util;
+package org.monyhar.components.module_installer.util;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;
@@ -13,10 +13,10 @@ import android.text.TextUtils;
 import com.google.android.play.core.splitinstall.SplitInstallManager;
 import com.google.android.play.core.splitinstall.SplitInstallManagerFactory;
 
-import org.chromium.base.BuildInfo;
-import org.chromium.base.ContextUtils;
-import org.chromium.components.crash.CrashKeyIndex;
-import org.chromium.components.crash.CrashKeys;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.components.crash.CrashKeyIndex;
+import org.monyhar.components.crash.CrashKeys;
 
 import java.util.Arrays;
 import java.util.Set;

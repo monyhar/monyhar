@@ -26,7 +26,7 @@ namespace chromeos {
 // API code, where it is used to request explicit access to USB peripherals
 // which the user the browser runs under normally wouldn't have access to. For
 // more details on the permission broker see:
-// http://git.chromium.org/gitweb/?p=chromiumos/platform/permission_broker.git
+// http://git.monyhar.org/gitweb/?p=monyharos/platform/permission_broker.git
 class COMPONENT_EXPORT(PERMISSION_BROKER) PermissionBrokerClient {
  public:
   // The ResultCallback's boolean parameter represents the result of the

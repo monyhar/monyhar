@@ -52,7 +52,7 @@ template("inspector_protocol_generate") {
 
     args = [
       "--jinja_dir",
-      rebase_path("//third_party/", root_build_dir),  # jinja is in chromium's
+      rebase_path("//third_party/", root_build_dir),  # jinja is in monyhar's
                                                       # third_party
 
       "--output_base",

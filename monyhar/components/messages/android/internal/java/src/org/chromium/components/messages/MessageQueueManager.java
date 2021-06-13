@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.messages;
+package org.monyhar.components.messages;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.components.messages.MessageScopeChange.ChangeType;
-import org.chromium.ui.util.TokenHolder;
+import org.monyhar.components.messages.MessageScopeChange.ChangeType;
+import org.monyhar.ui.util.TokenHolder;
 
 import java.util.ArrayList;
 import java.util.HashMap;

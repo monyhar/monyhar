@@ -100,7 +100,7 @@ _NON_STATIC_NATIVES_REGEX = re.compile(
     r'(?P<name>native\w+)\((?P<params>.*?)\);\n', re.DOTALL)
 _NATIVE_PTR_REGEX = re.compile(r'\s*long native.*')
 
-JNI_IMPORT_STRING = 'import org.chromium.base.annotations.NativeMethods;'
+JNI_IMPORT_STRING = 'import org.monyhar.base.annotations.NativeMethods;'
 IMPORT_REGEX = re.compile(r'^import .*?;', re.MULTILINE)
 
 PICKLE_LOCATION = './jni_ref_pickle'
@@ -121,16 +121,16 @@ def build_method_declaration(return_type, name, params, annotations, comments):
   return out
 
 
-def add_chromium_import_to_java_file(contents, import_string):
+def add_monyhar_import_to_java_file(contents, import_string):
   # Just in cases there are no imports default to after the package statement.
   import_insert = contents.find(';') + 1
 
-  # Insert in alphabetical order into org.chromium. This assumes
-  # that all files will contain some org.chromium import.
+  # Insert in alphabetical order into org.monyhar. This assumes
+  # that all files will contain some org.monyhar import.
   for match in IMPORT_REGEX.finditer(contents):
     import_name = match.group()
 
-    if not 'import org.chromium' in import_name:
+    if not 'import org.monyhar' in import_name:
       continue
     if import_name > import_insert:
       import_insert = match.start()
@@ -294,7 +294,7 @@ def convert_file_to_proxy_natives(java_file_name, dry=False, verbose=True):
       print('%s has no static natives.', java_file_name)
     return
 
-  contents = add_chromium_import_to_java_file(contents, JNI_IMPORT_STRING)
+  contents = add_monyhar_import_to_java_file(contents, JNI_IMPORT_STRING)
 
   # Extract comments and annotations above native methods.
   native_map = {}

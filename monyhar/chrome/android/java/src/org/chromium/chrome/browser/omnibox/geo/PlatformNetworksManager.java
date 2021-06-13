@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.geo;
+package org.monyhar.chrome.browser.omnibox.geo;
 
 import android.Manifest;
 import android.content.Context;
@@ -33,14 +33,14 @@ import android.telephony.TelephonyManager;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.BuildInfo;
-import org.chromium.base.Callback;
-import org.chromium.base.compat.ApiHelperForQ;
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.browser.omnibox.geo.VisibleNetworks.VisibleCell;
-import org.chromium.chrome.browser.omnibox.geo.VisibleNetworks.VisibleWifi;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.Callback;
+import org.monyhar.base.compat.ApiHelperForQ;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.browser.omnibox.geo.VisibleNetworks.VisibleCell;
+import org.monyhar.chrome.browser.omnibox.geo.VisibleNetworks.VisibleWifi;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 import java.util.Collections;
 import java.util.HashSet;

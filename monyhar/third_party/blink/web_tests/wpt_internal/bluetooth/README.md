@@ -98,7 +98,7 @@ More details can be found in `generate.py` and `generate_test.py`.
 
 # Resources and Documentation
 
-Mailing list: web-bluetooth@chromium.org
+Mailing list: web-bluetooth@monyhar.org
 
 Bug tracker: [Blink>Bluetooth]
 
@@ -108,4 +108,4 @@ Bug tracker: [Blink>Bluetooth]
 * [Web Bluetooth Test API Dependencies]
 * [web-platform-tests Bluetooth README]
 
-[Blink>Bluetooth]: https://bugs.chromium.org/p/chromium/issues/list?q=component%3ABlink%3EBluetooth&can=2
+[Blink>Bluetooth]: https://bugs.monyhar.org/p/monyhar/issues/list?q=component%3ABlink%3EBluetooth&can=2

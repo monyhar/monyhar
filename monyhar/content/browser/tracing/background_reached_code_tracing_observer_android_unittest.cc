@@ -58,7 +58,7 @@ std::unique_ptr<BackgroundTracingConfigImpl> GetReachedCodeConfig() {
   dict.Set("configs", std::move(rules_list));
   dict.SetString(
       "enabled_data_sources",
-      "org.chromium.trace_metadata,org.chromium.reached_code_profiler");
+      "org.monyhar.trace_metadata,org.monyhar.reached_code_profiler");
   dict.SetString("category", "CUSTOM");
   dict.SetString("custom_categories", "-*");
   auto config = BackgroundTracingConfigImpl::ReactiveFromDict(&dict);
@@ -73,7 +73,7 @@ void TestReachedCodeRuleExists(const BackgroundTracingConfigImpl& config,
     ASSERT_TRUE(rule);
     EXPECT_EQ(30, rule->GetTraceDelay());
     EXPECT_FALSE(rule->stop_tracing_on_repeated_reactive());
-    EXPECT_EQ("org.chromium.trace_metadata,org.chromium.reached_code_profiler",
+    EXPECT_EQ("org.monyhar.trace_metadata,org.monyhar.reached_code_profiler",
               config.enabled_data_sources());
   } else {
     EXPECT_FALSE(rule);

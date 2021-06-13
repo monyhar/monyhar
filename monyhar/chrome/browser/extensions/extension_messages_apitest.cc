@@ -335,12 +335,12 @@ class ExternallyConnectableMessagingTest : public MessagingApiTest {
     return embedded_test_server()->GetURL(path).ReplaceComponents(replacements);
   }
 
-  GURL chromium_org_url() {
-    return GetURLForPath("www.chromium.org", "/chromium.org.html");
+  GURL monyhar_org_url() {
+    return GetURLForPath("www.monyhar.org", "/monyhar.org.html");
   }
 
   GURL popup_opener_url() {
-    return GetURLForPath("www.chromium.org", "/popup_opener.html");
+    return GetURLForPath("www.monyhar.org", "/popup_opener.html");
   }
 
   GURL google_com_url() {
@@ -351,10 +351,10 @@ class ExternallyConnectableMessagingTest : public MessagingApiTest {
     scoped_refptr<const Extension> extension = LoadExtensionIntoDir(
         &web_connectable_dir_extension_,
         base::StringPrintf("{"
-                           "  \"name\": \"chromium_connectable\","
+                           "  \"name\": \"monyhar_connectable\","
                            "  %s,"
                            "  \"externally_connectable\": {"
-                           "    \"matches\": [\"*://*.chromium.org:*/*\"]"
+                           "    \"matches\": [\"*://*.monyhar.org:*/*\"]"
                            "  }"
                            "}",
                            common_manifest()));
@@ -373,7 +373,7 @@ class ExternallyConnectableMessagingTest : public MessagingApiTest {
                              "    }"
                              "  },"
                              "  \"externally_connectable\": {"
-                             "    \"matches\": [\"*://*.chromium.org:*/*\"]"
+                             "    \"matches\": [\"*://*.monyhar.org:*/*\"]"
                              "  },"
                              "  \"manifest_version\": 2,"
                              "  \"name\": \"app_connectable\","
@@ -408,7 +408,7 @@ class ExternallyConnectableMessagingTest : public MessagingApiTest {
         LoadExtensionIntoDir(&hosted_app_dir_,
                              base::StringPrintf(
                                  "{"
-                                 "  \"name\": \"chromium_hosted_app\","
+                                 "  \"name\": \"monyhar_hosted_app\","
                                  "  \"version\": \"1.0\","
                                  "  \"manifest_version\": 2,"
                                  "  \"app\": {"
@@ -418,8 +418,8 @@ class ExternallyConnectableMessagingTest : public MessagingApiTest {
                                  "    }\n"
                                  "  }\n"
                                  "}",
-                                 chromium_org_url().spec().c_str(),
-                                 chromium_org_url().spec().c_str()));
+                                 monyhar_org_url().spec().c_str(),
+                                 monyhar_org_url().spec().c_str()));
     CHECK(hosted_app.get());
     return hosted_app;
   }
@@ -481,10 +481,10 @@ class ExternallyConnectableMessagingTest : public MessagingApiTest {
   std::string connectable_with_tls_channel_id_manifest() {
     return base::StringPrintf(
         "{"
-        "  \"name\": \"chromium_connectable_with_tls_channel_id\","
+        "  \"name\": \"monyhar_connectable_with_tls_channel_id\","
         "  %s,"
         "  \"externally_connectable\": {"
-        "    \"matches\": [\"*://*.chromium.org:*/*\"],"
+        "    \"matches\": [\"*://*.monyhar.org:*/*\"],"
         "    \"accepts_tls_channel_id\": true"
         "  }"
         "}",
@@ -525,7 +525,7 @@ IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest, NotInstalled) {
                            .Build())
           .Build();
 
-  ui_test_utils::NavigateToURL(browser(), chromium_org_url());
+  ui_test_utils::NavigateToURL(browser(), monyhar_org_url());
   EXPECT_EQ(NAMESPACE_NOT_DEFINED,
             CanConnectAndSendMessagesToMainFrame(extension.get()));
   EXPECT_FALSE(AreAnyNonWebApisDefinedForMainFrame());
@@ -543,27 +543,27 @@ IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest, NotInstalled) {
 // Tests two extensions on the same sites: one web connectable, one not.
 IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest,
                        WebConnectableAndNotConnectable) {
-  // Install the web connectable extension. chromium.org can connect to it,
+  // Install the web connectable extension. monyhar.org can connect to it,
   // google.com can't.
-  scoped_refptr<const Extension> chromium_connectable =
+  scoped_refptr<const Extension> monyhar_connectable =
       LoadChromiumConnectableExtension();
 
-  ui_test_utils::NavigateToURL(browser(), chromium_org_url());
+  ui_test_utils::NavigateToURL(browser(), monyhar_org_url());
   EXPECT_EQ(OK,
-            CanConnectAndSendMessagesToMainFrame(chromium_connectable.get()));
+            CanConnectAndSendMessagesToMainFrame(monyhar_connectable.get()));
   EXPECT_FALSE(AreAnyNonWebApisDefinedForMainFrame());
 
   ui_test_utils::NavigateToURL(browser(), google_com_url());
   EXPECT_EQ(NAMESPACE_NOT_DEFINED,
-            CanConnectAndSendMessagesToMainFrame(chromium_connectable.get()));
+            CanConnectAndSendMessagesToMainFrame(monyhar_connectable.get()));
   EXPECT_FALSE(AreAnyNonWebApisDefinedForMainFrame());
 
   // Install the non-connectable extension. Nothing can connect to it.
   scoped_refptr<const Extension> not_connectable =
       LoadNotConnectableExtension();
 
-  ui_test_utils::NavigateToURL(browser(), chromium_org_url());
-  // Namespace will be defined here because |chromium_connectable| can connect
+  ui_test_utils::NavigateToURL(browser(), monyhar_org_url());
+  // Namespace will be defined here because |monyhar_connectable| can connect
   // to it - so this will be the "cannot establish connection" error.
   EXPECT_EQ(COULD_NOT_ESTABLISH_CONNECTION_ERROR,
             CanConnectAndSendMessagesToMainFrame(not_connectable.get()));
@@ -579,82 +579,82 @@ IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest,
 IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest,
                        DISABLED_BackgroundPageClosesOnMessageReceipt) {
   // Install the web connectable extension.
-  scoped_refptr<const Extension> chromium_connectable =
+  scoped_refptr<const Extension> monyhar_connectable =
       LoadChromiumConnectableExtension();
 
-  ui_test_utils::NavigateToURL(browser(), chromium_org_url());
+  ui_test_utils::NavigateToURL(browser(), monyhar_org_url());
   // If the background page closes after receipt of the message, it will still
   // reply to this message...
   EXPECT_EQ(OK,
-            CanConnectAndSendMessagesToMainFrame(chromium_connectable.get(),
+            CanConnectAndSendMessagesToMainFrame(monyhar_connectable.get(),
                                                  close_background_message()));
   // and be re-opened by receipt of a subsequent message.
   EXPECT_EQ(OK,
-            CanConnectAndSendMessagesToMainFrame(chromium_connectable.get()));
+            CanConnectAndSendMessagesToMainFrame(monyhar_connectable.get()));
 }
 
 // Tests a web connectable extension that doesn't receive TLS channel id.
 IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest,
                        WebConnectableWithoutTlsChannelId) {
-  // Install the web connectable extension. chromium.org can connect to it,
+  // Install the web connectable extension. monyhar.org can connect to it,
   // google.com can't.
-  scoped_refptr<const Extension> chromium_connectable =
+  scoped_refptr<const Extension> monyhar_connectable =
       LoadChromiumConnectableExtension();
-  ASSERT_TRUE(chromium_connectable.get());
+  ASSERT_TRUE(monyhar_connectable.get());
 
-  ui_test_utils::NavigateToURL(browser(), chromium_org_url());
+  ui_test_utils::NavigateToURL(browser(), monyhar_org_url());
   // The web connectable extension doesn't request the TLS channel ID, so it
   // doesn't get it, whether or not the page asks for it.
   EXPECT_EQ(std::string(),
-            GetTlsChannelIdFromPortConnect(chromium_connectable.get(), false));
+            GetTlsChannelIdFromPortConnect(monyhar_connectable.get(), false));
   EXPECT_EQ(std::string(),
-            GetTlsChannelIdFromSendMessage(chromium_connectable.get(), true));
+            GetTlsChannelIdFromSendMessage(monyhar_connectable.get(), true));
   EXPECT_EQ(std::string(),
-            GetTlsChannelIdFromPortConnect(chromium_connectable.get(), false));
+            GetTlsChannelIdFromPortConnect(monyhar_connectable.get(), false));
   EXPECT_EQ(std::string(),
-            GetTlsChannelIdFromSendMessage(chromium_connectable.get(), true));
+            GetTlsChannelIdFromSendMessage(monyhar_connectable.get(), true));
 }
 
 // Tests a web connectable extension that receives TLS channel id with a site
 // that can't connect to it.
 IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest,
                        WebConnectableWithTlsChannelIdWithNonMatchingSite) {
-  scoped_refptr<const Extension> chromium_connectable =
+  scoped_refptr<const Extension> monyhar_connectable =
       LoadChromiumConnectableExtensionWithTlsChannelId();
-  ASSERT_TRUE(chromium_connectable.get());
+  ASSERT_TRUE(monyhar_connectable.get());
 
   ui_test_utils::NavigateToURL(browser(), google_com_url());
   // The extension requests the TLS channel ID, but it doesn't get it for a
   // site that can't connect to it, regardless of whether the page asks for it.
   EXPECT_EQ(base::NumberToString(NAMESPACE_NOT_DEFINED),
-            GetTlsChannelIdFromPortConnect(chromium_connectable.get(), false));
+            GetTlsChannelIdFromPortConnect(monyhar_connectable.get(), false));
   EXPECT_EQ(base::NumberToString(NAMESPACE_NOT_DEFINED),
-            GetTlsChannelIdFromSendMessage(chromium_connectable.get(), true));
+            GetTlsChannelIdFromSendMessage(monyhar_connectable.get(), true));
   EXPECT_EQ(base::NumberToString(NAMESPACE_NOT_DEFINED),
-            GetTlsChannelIdFromPortConnect(chromium_connectable.get(), false));
+            GetTlsChannelIdFromPortConnect(monyhar_connectable.get(), false));
   EXPECT_EQ(base::NumberToString(NAMESPACE_NOT_DEFINED),
-            GetTlsChannelIdFromSendMessage(chromium_connectable.get(), true));
+            GetTlsChannelIdFromSendMessage(monyhar_connectable.get(), true));
 }
 
 // Tests a web connectable extension that receives TLS channel id on a site
 // that can connect to it, but with no TLS channel ID having been generated.
 IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest,
                        WebConnectableWithTlsChannelIdWithEmptyTlsChannelId) {
-  scoped_refptr<const Extension> chromium_connectable =
+  scoped_refptr<const Extension> monyhar_connectable =
       LoadChromiumConnectableExtensionWithTlsChannelId();
-  ASSERT_TRUE(chromium_connectable.get());
+  ASSERT_TRUE(monyhar_connectable.get());
 
-  ui_test_utils::NavigateToURL(browser(), chromium_org_url());
+  ui_test_utils::NavigateToURL(browser(), monyhar_org_url());
 
   // Since the extension requests the TLS channel ID, it gets it for a site that
   // can connect to it, but only if the page also asks to include it.
   EXPECT_EQ(std::string(),
-            GetTlsChannelIdFromPortConnect(chromium_connectable.get(), false));
+            GetTlsChannelIdFromPortConnect(monyhar_connectable.get(), false));
   EXPECT_EQ(std::string(),
-            GetTlsChannelIdFromSendMessage(chromium_connectable.get(), false));
+            GetTlsChannelIdFromSendMessage(monyhar_connectable.get(), false));
   // If the page does ask for it, it isn't empty.
   std::string tls_channel_id =
-      GetTlsChannelIdFromPortConnect(chromium_connectable.get(), true);
+      GetTlsChannelIdFromPortConnect(monyhar_connectable.get(), true);
   // Because the TLS channel ID has never been generated for this domain,
   // no TLS channel ID is reported.
   EXPECT_EQ(std::string(), tls_channel_id);
@@ -666,21 +666,21 @@ IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest,
 IN_PROC_BROWSER_TEST_F(
     ExternallyConnectableMessagingTest,
     DISABLED_WebConnectableWithEmptyTlsChannelIdAndClosedBackgroundPage) {
-  scoped_refptr<const Extension> chromium_connectable =
+  scoped_refptr<const Extension> monyhar_connectable =
       LoadChromiumConnectableExtensionWithTlsChannelId();
 
-  ui_test_utils::NavigateToURL(browser(), chromium_org_url());
+  ui_test_utils::NavigateToURL(browser(), monyhar_org_url());
   // If the page does ask for it, it isn't empty, even if the background page
   // closes upon receipt of the connect.
   std::string tls_channel_id = GetTlsChannelIdFromPortConnect(
-      chromium_connectable.get(), true, close_background_message());
+      monyhar_connectable.get(), true, close_background_message());
   // Because the TLS channel ID has never been generated for this domain,
   // no TLS channel ID is reported.
   EXPECT_EQ(std::string(), tls_channel_id);
   // A subsequent connect will still succeed, even if the background page was
   // previously closed.
   tls_channel_id =
-      GetTlsChannelIdFromPortConnect(chromium_connectable.get(), true);
+      GetTlsChannelIdFromPortConnect(monyhar_connectable.get(), true);
   // And the empty value is still retrieved.
   EXPECT_EQ(std::string(), tls_channel_id);
 }
@@ -692,24 +692,24 @@ IN_PROC_BROWSER_TEST_F(
 // host.
 IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest,
                        EnablingAndDisabling) {
-  scoped_refptr<const Extension> chromium_connectable =
+  scoped_refptr<const Extension> monyhar_connectable =
       LoadChromiumConnectableExtension();
   scoped_refptr<const Extension> not_connectable =
       LoadNotConnectableExtension();
 
-  ui_test_utils::NavigateToURL(browser(), chromium_org_url());
+  ui_test_utils::NavigateToURL(browser(), monyhar_org_url());
   EXPECT_EQ(OK,
-            CanConnectAndSendMessagesToMainFrame(chromium_connectable.get()));
+            CanConnectAndSendMessagesToMainFrame(monyhar_connectable.get()));
   EXPECT_EQ(COULD_NOT_ESTABLISH_CONNECTION_ERROR,
             CanConnectAndSendMessagesToMainFrame(not_connectable.get()));
 
-  DisableExtension(chromium_connectable->id());
+  DisableExtension(monyhar_connectable->id());
   EXPECT_EQ(COULD_NOT_ESTABLISH_CONNECTION_ERROR,
-            CanConnectAndSendMessagesToMainFrame(chromium_connectable.get()));
+            CanConnectAndSendMessagesToMainFrame(monyhar_connectable.get()));
 
-  EnableExtension(chromium_connectable->id());
+  EnableExtension(monyhar_connectable->id());
   EXPECT_EQ(OK,
-            CanConnectAndSendMessagesToMainFrame(chromium_connectable.get()));
+            CanConnectAndSendMessagesToMainFrame(monyhar_connectable.get()));
   EXPECT_EQ(COULD_NOT_ESTABLISH_CONNECTION_ERROR,
             CanConnectAndSendMessagesToMainFrame(not_connectable.get()));
 }
@@ -729,7 +729,7 @@ IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest,
 
   Browser* incognito_browser = OpenURLOffTheRecord(
       profile()->GetPrimaryOTRProfile(/*create_if_needed=*/true),
-      chromium_org_url());
+      monyhar_org_url());
   content::RenderFrameHost* incognito_frame = incognito_browser->
       tab_strip_model()->GetActiveWebContents()->GetMainFrame();
 
@@ -764,7 +764,7 @@ IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest,
 
   Browser* incognito_browser = OpenURLOffTheRecord(
       profile()->GetPrimaryOTRProfile(/*create_if_needed=*/true),
-      chromium_org_url());
+      monyhar_org_url());
   content::RenderFrameHost* incognito_frame =
       incognito_browser->tab_strip_model()
           ->GetActiveWebContents()
@@ -817,7 +817,7 @@ IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest,
 
   Browser* incognito_browser = OpenURLOffTheRecord(
       profile()->GetPrimaryOTRProfile(/*create_if_needed=*/true),
-      chromium_org_url());
+      monyhar_org_url());
   content::RenderFrameHost* incognito_frame =
       incognito_browser->tab_strip_model()
           ->GetActiveWebContents()
@@ -848,7 +848,7 @@ IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest,
 
   Browser* incognito_browser = OpenURLOffTheRecord(
       profile()->GetPrimaryOTRProfile(/*create_if_needed=*/true),
-      chromium_org_url());
+      monyhar_org_url());
   content::RenderFrameHost* incognito_frame = incognito_browser->
       tab_strip_model()->GetActiveWebContents()->GetMainFrame();
 
@@ -883,10 +883,10 @@ IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest,
   scoped_refptr<const Extension> app = LoadChromiumConnectableApp();
   ASSERT_TRUE(app->is_platform_app());
 
-  // Open an incognito browser with two tabs displaying "chromium.org".
+  // Open an incognito browser with two tabs displaying "monyhar.org".
   Browser* incognito_browser = OpenURLOffTheRecord(
       profile()->GetPrimaryOTRProfile(/*create_if_needed=*/true),
-      chromium_org_url());
+      monyhar_org_url());
   content::RenderFrameHost* incognito_frame1 =
       incognito_browser->tab_strip_model()
           ->GetActiveWebContents()
@@ -897,7 +897,7 @@ IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest,
 
   CHECK(OpenURLOffTheRecord(
             profile()->GetPrimaryOTRProfile(/*create_if_needed=*/true),
-            chromium_org_url()) == incognito_browser);
+            monyhar_org_url()) == incognito_browser);
   content::RenderFrameHost* incognito_frame2 =
       incognito_browser->tab_strip_model()
           ->GetActiveWebContents()
@@ -926,7 +926,7 @@ IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest,
     IncognitoConnectability::ScopedAlertTracker alert_tracker(
         IncognitoConnectability::ScopedAlertTracker::ALWAYS_ALLOW);
 
-    ui_test_utils::NavigateToURL(incognito_browser, chromium_org_url());
+    ui_test_utils::NavigateToURL(incognito_browser, monyhar_org_url());
     incognito_frame2 = incognito_browser->tab_strip_model()
                            ->GetActiveWebContents()
                            ->GetMainFrame();
@@ -944,7 +944,7 @@ IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest, IllegalArguments) {
   // Tests that malformed arguments to connect() don't crash.
   // Regression test for crbug.com/472700.
   LoadChromiumConnectableExtension();
-  ui_test_utils::NavigateToURL(browser(), chromium_org_url());
+  ui_test_utils::NavigateToURL(browser(), monyhar_org_url());
   bool result;
   CHECK(content::ExecuteScriptAndExtractBool(
       browser()->tab_strip_model()->GetActiveWebContents(),
@@ -959,7 +959,7 @@ IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest,
 
   Browser* incognito_browser = OpenURLOffTheRecord(
       profile()->GetPrimaryOTRProfile(/*create_if_needed=*/true),
-      chromium_org_url());
+      monyhar_org_url());
   content::RenderFrameHost* incognito_frame =
       incognito_browser->tab_strip_model()
           ->GetActiveWebContents()
@@ -1007,7 +1007,7 @@ IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest,
             CanConnectAndSendMessagesToMainFrame(extension.get()));
   EXPECT_FALSE(AreAnyNonWebApisDefinedForMainFrame());
 
-  ASSERT_TRUE(AppendIframe(chromium_org_url()));
+  ASSERT_TRUE(AppendIframe(monyhar_org_url()));
 
   EXPECT_EQ(OK, CanConnectAndSendMessagesToIFrame(extension.get()));
   EXPECT_FALSE(AreAnyNonWebApisDefinedForIFrame());
@@ -1019,7 +1019,7 @@ IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest,
                        FromIframeWithoutPermission) {
   scoped_refptr<const Extension> extension = LoadChromiumConnectableExtension();
 
-  ui_test_utils::NavigateToURL(browser(), chromium_org_url());
+  ui_test_utils::NavigateToURL(browser(), monyhar_org_url());
   EXPECT_EQ(OK, CanConnectAndSendMessagesToMainFrame(extension.get()));
   EXPECT_FALSE(AreAnyNonWebApisDefinedForMainFrame());
 
@@ -1036,22 +1036,22 @@ IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest, FromPopup) {
 
   scoped_refptr<const Extension> extension = LoadChromiumConnectableExtension();
 
-  // This will let us wait for the chromium.org.html page to load in a popup.
+  // This will let us wait for the monyhar.org.html page to load in a popup.
   ui_test_utils::UrlLoadObserver url_observer(
-      chromium_org_url(), content::NotificationService::AllSources());
+      monyhar_org_url(), content::NotificationService::AllSources());
 
-  // The page at popup_opener_url() should open chromium_org_url() as a popup.
+  // The page at popup_opener_url() should open monyhar_org_url() as a popup.
   ui_test_utils::NavigateToURL(browser(), popup_opener_url());
   url_observer.Wait();
 
-  // Find the WebContents that committed the chromium_org_url().
+  // Find the WebContents that committed the monyhar_org_url().
   // TODO(devlin) - it would be nice if UrlLoadObserver handled this for
   // us, which it could pretty easily do.
   content::WebContents* popup_contents = nullptr;
   for (int i = 0; i < browser()->tab_strip_model()->count(); i++) {
     content::WebContents* contents =
         browser()->tab_strip_model()->GetWebContentsAt(i);
-    if (contents->GetLastCommittedURL() == chromium_org_url()) {
+    if (contents->GetLastCommittedURL() == monyhar_org_url()) {
       popup_contents = contents;
       break;
     }
@@ -1085,19 +1085,19 @@ IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTestNoChannelID,
                        TlsChannelIdEmptyWhenDisabled) {
   std::string expected_tls_channel_id_value;
 
-  scoped_refptr<const Extension> chromium_connectable =
+  scoped_refptr<const Extension> monyhar_connectable =
       LoadChromiumConnectableExtensionWithTlsChannelId();
-  ASSERT_TRUE(chromium_connectable.get());
+  ASSERT_TRUE(monyhar_connectable.get());
 
-  ui_test_utils::NavigateToURL(browser(), chromium_org_url());
+  ui_test_utils::NavigateToURL(browser(), monyhar_org_url());
 
   // Check that both connect and sendMessage don't report a Channel ID.
   std::string tls_channel_id_from_port_connect =
-      GetTlsChannelIdFromPortConnect(chromium_connectable.get(), true);
+      GetTlsChannelIdFromPortConnect(monyhar_connectable.get(), true);
   EXPECT_EQ(0u, tls_channel_id_from_port_connect.size());
 
   std::string tls_channel_id_from_send_message =
-      GetTlsChannelIdFromSendMessage(chromium_connectable.get(), true);
+      GetTlsChannelIdFromSendMessage(monyhar_connectable.get(), true);
   EXPECT_EQ(0u, tls_channel_id_from_send_message.size());
 }
 
@@ -1109,19 +1109,19 @@ IN_PROC_BROWSER_TEST_F(
     DISABLED_WebConnectableWithNonEmptyTlsChannelIdAndClosedBackgroundPage) {
   std::string expected_tls_channel_id_value;
 
-  scoped_refptr<const Extension> chromium_connectable =
+  scoped_refptr<const Extension> monyhar_connectable =
       LoadChromiumConnectableExtensionWithTlsChannelId();
 
-  ui_test_utils::NavigateToURL(browser(), chromium_org_url());
+  ui_test_utils::NavigateToURL(browser(), monyhar_org_url());
   // If the page does ask for it, it isn't empty, even if the background page
   // closes upon receipt of the connect.
   std::string tls_channel_id = GetTlsChannelIdFromPortConnect(
-      chromium_connectable.get(), true, close_background_message());
+      monyhar_connectable.get(), true, close_background_message());
   EXPECT_EQ(expected_tls_channel_id_value, tls_channel_id);
   // A subsequent connect will still succeed, even if the background page was
   // previously closed.
   tls_channel_id =
-      GetTlsChannelIdFromPortConnect(chromium_connectable.get(), true);
+      GetTlsChannelIdFromPortConnect(monyhar_connectable.get(), true);
   // And the expected value is still retrieved.
   EXPECT_EQ(expected_tls_channel_id_value, tls_channel_id);
 }
@@ -1184,7 +1184,7 @@ IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest, HostedAppOnWebsite) {
   scoped_refptr<const Extension> app = LoadChromiumHostedApp();
 
   // The presence of the hosted app shouldn't give the ability to send messages.
-  ui_test_utils::NavigateToURL(browser(), chromium_org_url());
+  ui_test_utils::NavigateToURL(browser(), monyhar_org_url());
   EXPECT_EQ(NAMESPACE_NOT_DEFINED,
             CanConnectAndSendMessagesToMainFrame(app.get()));
   EXPECT_FALSE(AreAnyNonWebApisDefinedForMainFrame());
@@ -1201,7 +1201,7 @@ IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest, HostedAppOnWebsite) {
 // This is a regression test for http://crbug.com/326250#c12.
 IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest,
                        InvalidExtensionIDFromHostedApp) {
-  // The presence of the chromium hosted app triggers this bug. The chromium
+  // The presence of the monyhar hosted app triggers this bug. The monyhar
   // connectable extension needs to be installed to set up the runtime bindings.
   LoadChromiumHostedApp();
   LoadChromiumConnectableExtension();
@@ -1216,7 +1216,7 @@ IN_PROC_BROWSER_TEST_F(ExternallyConnectableMessagingTest,
                            .Build())
           .Build();
 
-  ui_test_utils::NavigateToURL(browser(), chromium_org_url());
+  ui_test_utils::NavigateToURL(browser(), monyhar_org_url());
   EXPECT_EQ(COULD_NOT_ESTABLISH_CONNECTION_ERROR,
             CanConnectAndSendMessagesToMainFrame(invalid.get()));
 }

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.externalnav;
+package org.monyhar.chrome.browser.externalnav;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -15,22 +15,22 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.Function;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.instantapps.InstantAppsHandler;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.external_intents.ExternalNavigationDelegate.IntentToAutofillAllowingAppResult;
-import org.chromium.components.external_intents.ExternalNavigationHandler;
-import org.chromium.components.external_intents.ExternalNavigationParams;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.url.GURL;
-import org.chromium.url.Origin;
+import org.monyhar.base.Function;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.instantapps.InstantAppsHandler;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.external_intents.ExternalNavigationDelegate.IntentToAutofillAllowingAppResult;
+import org.monyhar.components.external_intents.ExternalNavigationHandler;
+import org.monyhar.components.external_intents.ExternalNavigationParams;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.url.GURL;
+import org.monyhar.url.Origin;
 
 /**
  * Instrumentation tests for {@link ExternalNavigationHandler}.
@@ -43,18 +43,18 @@ import org.chromium.url.Origin;
         public class ExternalNavigationDelegateImplTest {
     private static final String AUTOFILL_ASSISTANT_INTENT_URL =
             "intent://www.example.com#Intent;scheme=https;"
-            + "B.org.chromium.chrome.browser.autofill_assistant.ENABLED=true;"
-            + "B.org.chromium.chrome.browser.autofill_assistant.START_IMMEDIATELY=true;"
-            + "S.org.chromium.chrome.browser.autofill_assistant.ORIGINAL_DEEPLINK="
+            + "B.org.monyhar.chrome.browser.autofill_assistant.ENABLED=true;"
+            + "B.org.monyhar.chrome.browser.autofill_assistant.START_IMMEDIATELY=true;"
+            + "S.org.monyhar.chrome.browser.autofill_assistant.ORIGINAL_DEEPLINK="
             + Uri.encode("https://www.example.com") + ";"
             + "S." + ExternalNavigationHandler.EXTRA_BROWSER_FALLBACK_URL + "="
             + Uri.encode("https://www.example.com") + ";end";
     private static final String AUTOFILL_ASSISTANT_APP_OVERRIDE_INTENT_URL =
             "intent://www.example.com#Intent;scheme=https;"
-            + "B.org.chromium.chrome.browser.autofill_assistant.ENABLED=true;"
-            + "B.org.chromium.chrome.browser.autofill_assistant.START_IMMEDIATELY=true;"
-            + "S.org.chromium.chrome.browser.autofill_assistant.ALLOW_APP=true;"
-            + "S.org.chromium.chrome.browser.autofill_assistant.ORIGINAL_DEEPLINK="
+            + "B.org.monyhar.chrome.browser.autofill_assistant.ENABLED=true;"
+            + "B.org.monyhar.chrome.browser.autofill_assistant.START_IMMEDIATELY=true;"
+            + "S.org.monyhar.chrome.browser.autofill_assistant.ALLOW_APP=true;"
+            + "S.org.monyhar.chrome.browser.autofill_assistant.ORIGINAL_DEEPLINK="
             + Uri.encode("https://www.example.com") + ";"
             + "S." + ExternalNavigationHandler.EXTRA_BROWSER_FALLBACK_URL + "="
             + Uri.encode("https://www.example.com") + ";end";

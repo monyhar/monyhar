@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webapk.shell_apk.h2o;
+package org.monyhar.webapk.shell_apk.h2o;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -13,10 +13,10 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
 
-import org.chromium.webapk.lib.common.WebApkConstants;
-import org.chromium.webapk.shell_apk.HostBrowserLauncher;
-import org.chromium.webapk.shell_apk.HostBrowserLauncherParams;
-import org.chromium.webapk.shell_apk.WebApkSharedPreferences;
+import org.monyhar.webapk.lib.common.WebApkConstants;
+import org.monyhar.webapk.shell_apk.HostBrowserLauncher;
+import org.monyhar.webapk.shell_apk.HostBrowserLauncherParams;
+import org.monyhar.webapk.shell_apk.WebApkSharedPreferences;
 
 /** Contains methods for launching host browser where ShellAPK shows the splash screen. */
 public class H2OLauncher {

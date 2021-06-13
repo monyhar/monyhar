@@ -6,96 +6,96 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/download/home/DownloadManagerCoordinatorFactory.java",
-    "java/src/org/chromium/chrome/browser/download/home/DownloadManagerCoordinatorImpl.java",
-    "java/src/org/chromium/chrome/browser/download/home/OfflineItemSource.java",
-    "java/src/org/chromium/chrome/browser/download/home/StableIds.java",
-    "java/src/org/chromium/chrome/browser/download/home/empty/EmptyCoordinator.java",
-    "java/src/org/chromium/chrome/browser/download/home/empty/EmptyProperties.java",
-    "java/src/org/chromium/chrome/browser/download/home/empty/EmptyView.java",
-    "java/src/org/chromium/chrome/browser/download/home/empty/EmptyViewBinder.java",
-    "java/src/org/chromium/chrome/browser/download/home/filter/DeleteUndoOfflineItemFilter.java",
-    "java/src/org/chromium/chrome/browser/download/home/filter/FilterChipsProvider.java",
-    "java/src/org/chromium/chrome/browser/download/home/filter/FilterCoordinator.java",
-    "java/src/org/chromium/chrome/browser/download/home/filter/FilterProperties.java",
-    "java/src/org/chromium/chrome/browser/download/home/filter/FilterView.java",
-    "java/src/org/chromium/chrome/browser/download/home/filter/FilterViewBinder.java",
-    "java/src/org/chromium/chrome/browser/download/home/filter/Filters.java",
-    "java/src/org/chromium/chrome/browser/download/home/filter/InvalidStateOfflineItemFilter.java",
-    "java/src/org/chromium/chrome/browser/download/home/filter/OffTheRecordOfflineItemFilter.java",
-    "java/src/org/chromium/chrome/browser/download/home/filter/OfflineItemFilter.java",
-    "java/src/org/chromium/chrome/browser/download/home/filter/OfflineItemFilterObserver.java",
-    "java/src/org/chromium/chrome/browser/download/home/filter/OfflineItemFilterSource.java",
-    "java/src/org/chromium/chrome/browser/download/home/filter/SearchOfflineItemFilter.java",
-    "java/src/org/chromium/chrome/browser/download/home/filter/TypeOfflineItemFilter.java",
-    "java/src/org/chromium/chrome/browser/download/home/glue/OfflineContentProviderGlue.java",
-    "java/src/org/chromium/chrome/browser/download/home/glue/ThumbnailRequestGlue.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/BatchListModel.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/DateOrderedListCoordinator.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/DateOrderedListMediator.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/DateOrderedListView.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/DateOrderedListViewAdapter.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/DecoratedListItemModel.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/ItemUtils.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/ListItem.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/ListItemModel.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/ListProperties.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/ListPropertyViewBinder.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/ListUtils.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/ShareUtils.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/UiUtils.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/holder/AudioViewHolder.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/holder/CardDividerBottomViewHolder.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/holder/CardDividerMiddleViewHolder.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/holder/CardDividerTopViewHolder.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/holder/CardFooterViewHolder.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/holder/CardHeaderViewHolder.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/holder/CustomViewHolder.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/holder/GenericViewHolder.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/holder/ImageViewHolder.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/holder/InProgressGenericViewHolder.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/holder/InProgressImageViewHolder.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/holder/InProgressVideoViewHolder.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/holder/InProgressViewHolder.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/holder/ListItemViewHolder.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/holder/OfflineItemViewHolder.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/holder/PaginationViewHolder.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/holder/PrefetchArticleViewHolder.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/holder/PrefetchGroupedItemViewHolder.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/holder/SectionTitleViewHolder.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/holder/VideoViewHolder.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/mutator/CardPaginator.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/mutator/DateLabelAdder.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/mutator/DateListPaginator.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/mutator/DateOrderedListMutator.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/mutator/DateSorter.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/mutator/DateSorterForCards.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/mutator/GroupCardLabelAdder.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/mutator/ListConsumer.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/mutator/ListItemPropertySetter.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/mutator/ListMutationController.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/mutator/NoopLabelAdder.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/mutator/PrefetchListPaginator.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/mutator/ScoreComparator.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/view/AspectRatioFrameLayout.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/view/CircularProgressView.java",
-    "java/src/org/chromium/chrome/browser/download/home/metrics/FileExtensions.java",
-    "java/src/org/chromium/chrome/browser/download/home/metrics/FilterChangeLogger.java",
-    "java/src/org/chromium/chrome/browser/download/home/metrics/OfflineItemStartupLogger.java",
-    "java/src/org/chromium/chrome/browser/download/home/metrics/UmaUtils.java",
-    "java/src/org/chromium/chrome/browser/download/home/rename/RenameDialogCoordinator.java",
-    "java/src/org/chromium/chrome/browser/download/home/rename/RenameDialogCustomView.java",
-    "java/src/org/chromium/chrome/browser/download/home/rename/RenameDialogManager.java",
-    "java/src/org/chromium/chrome/browser/download/home/rename/RenameExtensionDialogCoordinator.java",
-    "java/src/org/chromium/chrome/browser/download/home/rename/RenameUtils.java",
-    "java/src/org/chromium/chrome/browser/download/home/snackbars/DeleteUndoCoordinator.java",
-    "java/src/org/chromium/chrome/browser/download/home/snackbars/UndoUiUtils.java",
-    "java/src/org/chromium/chrome/browser/download/home/storage/StorageCoordinator.java",
-    "java/src/org/chromium/chrome/browser/download/home/storage/StorageSummaryProvider.java",
-    "java/src/org/chromium/chrome/browser/download/home/toolbar/DownloadHomeToolbar.java",
-    "java/src/org/chromium/chrome/browser/download/home/toolbar/ToolbarCoordinator.java",
-    "java/src/org/chromium/chrome/browser/download/home/toolbar/ToolbarUtils.java",
-    "java/src/org/chromium/chrome/browser/download/home/view/SelectionView.java",
+    "java/src/org/monyhar/chrome/browser/download/home/DownloadManagerCoordinatorFactory.java",
+    "java/src/org/monyhar/chrome/browser/download/home/DownloadManagerCoordinatorImpl.java",
+    "java/src/org/monyhar/chrome/browser/download/home/OfflineItemSource.java",
+    "java/src/org/monyhar/chrome/browser/download/home/StableIds.java",
+    "java/src/org/monyhar/chrome/browser/download/home/empty/EmptyCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/download/home/empty/EmptyProperties.java",
+    "java/src/org/monyhar/chrome/browser/download/home/empty/EmptyView.java",
+    "java/src/org/monyhar/chrome/browser/download/home/empty/EmptyViewBinder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/filter/DeleteUndoOfflineItemFilter.java",
+    "java/src/org/monyhar/chrome/browser/download/home/filter/FilterChipsProvider.java",
+    "java/src/org/monyhar/chrome/browser/download/home/filter/FilterCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/download/home/filter/FilterProperties.java",
+    "java/src/org/monyhar/chrome/browser/download/home/filter/FilterView.java",
+    "java/src/org/monyhar/chrome/browser/download/home/filter/FilterViewBinder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/filter/Filters.java",
+    "java/src/org/monyhar/chrome/browser/download/home/filter/InvalidStateOfflineItemFilter.java",
+    "java/src/org/monyhar/chrome/browser/download/home/filter/OffTheRecordOfflineItemFilter.java",
+    "java/src/org/monyhar/chrome/browser/download/home/filter/OfflineItemFilter.java",
+    "java/src/org/monyhar/chrome/browser/download/home/filter/OfflineItemFilterObserver.java",
+    "java/src/org/monyhar/chrome/browser/download/home/filter/OfflineItemFilterSource.java",
+    "java/src/org/monyhar/chrome/browser/download/home/filter/SearchOfflineItemFilter.java",
+    "java/src/org/monyhar/chrome/browser/download/home/filter/TypeOfflineItemFilter.java",
+    "java/src/org/monyhar/chrome/browser/download/home/glue/OfflineContentProviderGlue.java",
+    "java/src/org/monyhar/chrome/browser/download/home/glue/ThumbnailRequestGlue.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/BatchListModel.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/DateOrderedListCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/DateOrderedListMediator.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/DateOrderedListView.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/DateOrderedListViewAdapter.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/DecoratedListItemModel.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/ItemUtils.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/ListItem.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/ListItemModel.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/ListProperties.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/ListPropertyViewBinder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/ListUtils.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/ShareUtils.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/UiUtils.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/holder/AudioViewHolder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/holder/CardDividerBottomViewHolder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/holder/CardDividerMiddleViewHolder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/holder/CardDividerTopViewHolder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/holder/CardFooterViewHolder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/holder/CardHeaderViewHolder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/holder/CustomViewHolder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/holder/GenericViewHolder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/holder/ImageViewHolder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/holder/InProgressGenericViewHolder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/holder/InProgressImageViewHolder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/holder/InProgressVideoViewHolder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/holder/InProgressViewHolder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/holder/ListItemViewHolder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/holder/OfflineItemViewHolder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/holder/PaginationViewHolder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/holder/PrefetchArticleViewHolder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/holder/PrefetchGroupedItemViewHolder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/holder/SectionTitleViewHolder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/holder/VideoViewHolder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/mutator/CardPaginator.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/mutator/DateLabelAdder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/mutator/DateListPaginator.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/mutator/DateOrderedListMutator.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/mutator/DateSorter.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/mutator/DateSorterForCards.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/mutator/GroupCardLabelAdder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/mutator/ListConsumer.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/mutator/ListItemPropertySetter.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/mutator/ListMutationController.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/mutator/NoopLabelAdder.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/mutator/PrefetchListPaginator.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/mutator/ScoreComparator.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/view/AspectRatioFrameLayout.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/view/CircularProgressView.java",
+    "java/src/org/monyhar/chrome/browser/download/home/metrics/FileExtensions.java",
+    "java/src/org/monyhar/chrome/browser/download/home/metrics/FilterChangeLogger.java",
+    "java/src/org/monyhar/chrome/browser/download/home/metrics/OfflineItemStartupLogger.java",
+    "java/src/org/monyhar/chrome/browser/download/home/metrics/UmaUtils.java",
+    "java/src/org/monyhar/chrome/browser/download/home/rename/RenameDialogCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/download/home/rename/RenameDialogCustomView.java",
+    "java/src/org/monyhar/chrome/browser/download/home/rename/RenameDialogManager.java",
+    "java/src/org/monyhar/chrome/browser/download/home/rename/RenameExtensionDialogCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/download/home/rename/RenameUtils.java",
+    "java/src/org/monyhar/chrome/browser/download/home/snackbars/DeleteUndoCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/download/home/snackbars/UndoUiUtils.java",
+    "java/src/org/monyhar/chrome/browser/download/home/storage/StorageCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/download/home/storage/StorageSummaryProvider.java",
+    "java/src/org/monyhar/chrome/browser/download/home/toolbar/DownloadHomeToolbar.java",
+    "java/src/org/monyhar/chrome/browser/download/home/toolbar/ToolbarCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/download/home/toolbar/ToolbarUtils.java",
+    "java/src/org/monyhar/chrome/browser/download/home/view/SelectionView.java",
   ]
 
   deps = [
@@ -128,11 +128,11 @@ android_library("java") {
   ]
 
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
-  resources_package = "org.chromium.chrome.browser.download.internal"
+  resources_package = "org.monyhar.chrome.browser.download.internal"
 }
 
 generate_jni("jni_headers") {
-  sources = [ "java/src/org/chromium/chrome/browser/download/home/rename/RenameUtils.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/download/home/rename/RenameUtils.java" ]
 }
 
 android_resources("java_resources") {
@@ -196,9 +196,9 @@ android_resources("java_resources") {
 android_library("javatests") {
   testonly = true
   sources = [
-    "java/src/org/chromium/chrome/browser/download/home/DownloadActivityV2Test.java",
-    "java/src/org/chromium/chrome/browser/download/home/StubbedOfflineContentProvider.java",
-    "java/src/org/chromium/chrome/browser/download/home/StubbedProvider.java",
+    "java/src/org/monyhar/chrome/browser/download/home/DownloadActivityV2Test.java",
+    "java/src/org/monyhar/chrome/browser/download/home/StubbedOfflineContentProvider.java",
+    "java/src/org/monyhar/chrome/browser/download/home/StubbedProvider.java",
   ]
 
   deps = [
@@ -237,7 +237,7 @@ android_library("javatests") {
     "//ui/android:ui_java_test_support",
   ]
 
-  resources_package = "org.chromium.chrome.browser.download.internal"
+  resources_package = "org.monyhar.chrome.browser.download.internal"
 }
 
 android_library("junit") {
@@ -245,15 +245,15 @@ android_library("junit") {
   bypass_platform_checks = true
   testonly = true
   sources = [
-    "java/src/org/chromium/chrome/browser/download/home/filter/DeleteUndoOfflineItemFilterTest.java",
-    "java/src/org/chromium/chrome/browser/download/home/filter/FiltersTest.java",
-    "java/src/org/chromium/chrome/browser/download/home/filter/OffTheRecordOfflineItemFilterTest.java",
-    "java/src/org/chromium/chrome/browser/download/home/filter/OfflineItemFilterTest.java",
-    "java/src/org/chromium/chrome/browser/download/home/filter/SearchOfflineItemFilterTest.java",
-    "java/src/org/chromium/chrome/browser/download/home/filter/TypeOfflineItemFilterTest.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/DateOrderedListMutatorTest.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/ItemUtilsTest.java",
-    "java/src/org/chromium/chrome/browser/download/home/list/ShareUtilsTest.java",
+    "java/src/org/monyhar/chrome/browser/download/home/filter/DeleteUndoOfflineItemFilterTest.java",
+    "java/src/org/monyhar/chrome/browser/download/home/filter/FiltersTest.java",
+    "java/src/org/monyhar/chrome/browser/download/home/filter/OffTheRecordOfflineItemFilterTest.java",
+    "java/src/org/monyhar/chrome/browser/download/home/filter/OfflineItemFilterTest.java",
+    "java/src/org/monyhar/chrome/browser/download/home/filter/SearchOfflineItemFilterTest.java",
+    "java/src/org/monyhar/chrome/browser/download/home/filter/TypeOfflineItemFilterTest.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/DateOrderedListMutatorTest.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/ItemUtilsTest.java",
+    "java/src/org/monyhar/chrome/browser/download/home/list/ShareUtilsTest.java",
   ]
 
   deps = [
@@ -273,7 +273,7 @@ android_library("junit") {
     "//ui/android:ui_full_java",
   ]
 
-  resources_package = "org.chromium.chrome.browser.download.internal"
+  resources_package = "org.monyhar.chrome.browser.download.internal"
 }
 
 source_set("android") {

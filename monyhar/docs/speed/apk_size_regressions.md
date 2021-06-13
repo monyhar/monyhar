@@ -18,7 +18,7 @@
 
 ### Monochrome.minimal.apks Alerts (Multiple Commits or Rolls)
 
- * Bisects [will not help you](https://bugs.chromium.org/p/chromium/issues/detail?id=678338).
+ * Bisects [will not help you](https://bugs.monyhar.org/p/monyhar/issues/detail?id=678338).
  * For rolls, you can sometimes guess the commit(s) that caused the regression
    by looking at the `android-binary-size` trybot result for the roll commit.
  * For V8 rolls, try checking the [V8 size graph](https://chromeperf.appspot.com/report?sid=59435a74c93b42599af4b02e2b3df765faef4685eb015f8aaaf2ecf7f4afb29c)
@@ -34,7 +34,7 @@
      tools/binary_size/diagnose_bloat.py AFTER_GIT_REV --reference-rev BEFORE_GIT_REV --all [--subrepo v8] [--apply-patch AFTER_GIT_REV]
 
  * You can usually find the before and after revs in the roll commit message
-([example](https://chromium.googlesource.com/chromium/src/+/10c40fd863f4ae106650bba93b845f25c9b733b1))
+([example](https://monyhar.googlesource.com/monyhar/src/+/10c40fd863f4ae106650bba93b845f25c9b733b1))
     * You may need to click through for the list of changes to find the actual
       first commit hash since some rollers (e.g. v8's) use an extra commit for
       tagging. In the linked example `BEFORE_GIT_REV` would actually be
@@ -64,10 +64,10 @@ Otherwise, file a bug (TODO: [Make this template automatic](https://github.com/c
 > Link to size graph:
 > [https://chromeperf.appspot.com/report?sid=6269078068c45a41e23f5ee257da65d3f02da342849cdf3bde6aed0d5c61e450&num_points=10&rev=**$CRREV**](https://chromeperf.appspot.com/report?sid=6269078068c45a41e23f5ee257da65d3f02da342849cdf3bde6aed0d5c61e450&num_points=10&rev=480214)<br>
 > Link to trybot result:
-> [https://ci.chromium.org/p/chromium/builders/luci.chromium.try/android-binary-size/**$TRYJOB_NUMBER**](https://ci.chromium.org/p/chromium/builders/luci.chromium.try/android-binary-size/11111)
+> [https://ci.monyhar.org/p/monyhar/builders/luci.monyhar.try/android-binary-size/**$TRYJOB_NUMBER**](https://ci.monyhar.org/p/monyhar/builders/luci.monyhar.try/android-binary-size/11111)
 >
 > Debugging size regressions is documented at:
-> https://chromium.googlesource.com/chromium/src/+/main/docs/speed/apk_size_regressions.md#Debugging-Apk-Size-Increase
+> https://monyhar.googlesource.com/monyhar/src/+/main/docs/speed/apk_size_regressions.md#Debugging-Apk-Size-Increase
 >
 > Based on the trybot result: **20kb of native code, 8kb of pngs. *(or some other explanation as to what caused the growth).***
 >
@@ -85,7 +85,7 @@ Otherwise, file a bug (TODO: [Make this template automatic](https://github.com/c
 
 * If the regression is >50kb, add ReleaseBlock-Stable **M-##** (next branch cut).*
 * If the regression was caused by a non-Googler, assign it to the closest Googler
-  to the patch (e.g. reviewer). The size graphs are [not public](https://bugs.chromium.org/p/chromium/issues/detail?id=962483).
+  to the patch (e.g. reviewer). The size graphs are [not public](https://bugs.monyhar.org/p/monyhar/issues/detail?id=962483).
 
 # Debugging Apk Size Increase
 
@@ -132,7 +132,7 @@ and [calendar](https://calendar.google.com/calendar/embed?src=c_188b8oq5puj67tl3
 ## Step 1: Check Work Queue Daily
 
  * Bugs requiring sheriffs to take a look at are labeled `Performance-Sheriff`
-   and `Performance-Size` [here](https://bugs.chromium.org/p/chromium/issues/list?q=label:Performance-Sheriff%20label:Performance-Size&sort=-modified).
+   and `Performance-Size` [here](https://bugs.monyhar.org/p/monyhar/issues/list?q=label:Performance-Sheriff%20label:Performance-Size&sort=-modified).
  * After resolving the bug by finding an owner or debugging or commenting,
    remove the `Performance-Sheriff` label.
  * Process for Chrome OS bugs is at [go/cros-image-size-triage](https://goto.google.com/cros-image-size-triage).
@@ -145,4 +145,4 @@ and [calendar](https://calendar.google.com/calendar/embed?src=c_188b8oq5puj67tl3
  * Deal with alerts as outlined above.
 
 ## Step 3: Ping / Clear out Old Regression Bugs
- * https://bugs.chromium.org/p/chromium/issues/list?can=2&q=label%3DPerformance-Size+type%3DBug-Regression+resource_sizes
+ * https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=label%3DPerformance-Size+type%3DBug-Regression+resource_sizes

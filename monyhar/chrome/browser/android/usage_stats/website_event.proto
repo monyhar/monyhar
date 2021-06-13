@@ -8,7 +8,7 @@ option optimize_for = LITE_RUNTIME;
 
 package usage_stats;
 
-option java_package = "org.chromium.chrome.browser.usage_stats";
+option java_package = "org.monyhar.chrome.browser.usage_stats";
 option java_outer_classname = "WebsiteEventProtos";
 
 message WebsiteEvent {

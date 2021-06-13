@@ -15,7 +15,7 @@ from blinkpy.common.path_finder import RELATIVE_WEB_TESTS
 from blinkpy.common.system.executive_mock import MockCall
 from blinkpy.common.system.executive_mock import MockExecutive
 from blinkpy.common.system.log_testing import LoggingTestCase
-from blinkpy.w3c.chromium_commit_mock import MockChromiumCommit
+from blinkpy.w3c.monyhar_commit_mock import MockChromiumCommit
 from blinkpy.w3c.local_wpt import LocalWPT
 from blinkpy.w3c.local_wpt_mock import MockLocalWPT
 from blinkpy.w3c.test_importer import TestImporter, ROTATIONS_URL, SHERIFF_EMAIL_FALLBACK, RUBBER_STAMPER_BOT
@@ -142,7 +142,7 @@ class TestImporterTest(LoggingTestCase):
             'bot for CR+1 and commit.\n',
             'INFO: If the rubber-stamper bot rejects the CL, you either need '
             'to modify the benign file patterns, or manually CR+1 and land the '
-            'import yourself if it touches code files. See https://chromium.'
+            'import yourself if it touches code files. See https://monyhar.'
             'googlesource.com/infra/infra/+/refs/heads/main/go/src/infra/'
             'appengine/rubber-stamper/README.md\n',
             'INFO: Update completed.\n',
@@ -209,7 +209,7 @@ class TestImporterTest(LoggingTestCase):
             'bot for CR+1 and commit.\n',
             'INFO: If the rubber-stamper bot rejects the CL, you either need '
             'to modify the benign file patterns, or manually CR+1 and land the '
-            'import yourself if it touches code files. See https://chromium.'
+            'import yourself if it touches code files. See https://monyhar.'
             'googlesource.com/infra/infra/+/refs/heads/main/go/src/infra/'
             'appengine/rubber-stamper/README.md\n',
             'ERROR: Cannot submit CL; aborting.\n',
@@ -298,7 +298,7 @@ class TestImporterTest(LoggingTestCase):
             'bot for CR+1 and commit.\n',
             'INFO: If the rubber-stamper bot rejects the CL, you either need '
             'to modify the benign file patterns, or manually CR+1 and land the '
-            'import yourself if it touches code files. See https://chromium.'
+            'import yourself if it touches code files. See https://monyhar.'
             'googlesource.com/infra/infra/+/refs/heads/main/go/src/infra/'
             'appengine/rubber-stamper/README.md\n',
             'ERROR: Cannot submit CL; aborting.\n',
@@ -381,11 +381,11 @@ class TestImporterTest(LoggingTestCase):
             MOCK_WEB_TESTS + 'W3CImportExpectations', '')
         host.filesystem.write_text_file(
             MOCK_WEB_TESTS + 'external/wpt/foo/OWNERS',
-            'someone@chromium.org\n')
+            'someone@monyhar.org\n')
         importer = self._get_test_importer(host)
-        importer.chromium_git.changed_files = lambda: [RELATIVE_WEB_TESTS + 'external/wpt/foo/x.html']
+        importer.monyhar_git.changed_files = lambda: [RELATIVE_WEB_TESTS + 'external/wpt/foo/x.html']
         self.assertEqual(importer.get_directory_owners(),
-                         {('someone@chromium.org', ): ['external/wpt/foo']})
+                         {('someone@monyhar.org', ): ['external/wpt/foo']})
 
     def test_get_directory_owners_no_changed_files(self):
         host = self.mock_host()
@@ -393,7 +393,7 @@ class TestImporterTest(LoggingTestCase):
             MOCK_WEB_TESTS + 'W3CImportExpectations', '')
         host.filesystem.write_text_file(
             MOCK_WEB_TESTS + 'external/wpt/foo/OWNERS',
-            'someone@chromium.org\n')
+            'someone@monyhar.org\n')
         importer = self._get_test_importer(host)
         self.assertEqual(importer.get_directory_owners(), {})
 
@@ -403,7 +403,7 @@ class TestImporterTest(LoggingTestCase):
         host = self.mock_host()
         importer = self._get_test_importer(host)
         importer._commit_changes('dummy message')
-        self.assertEqual(importer.chromium_git.local_commits(),
+        self.assertEqual(importer.monyhar_git.local_commits(),
                          [['dummy message']])
 
     def test_commit_message(self):
@@ -424,11 +424,11 @@ class TestImporterTest(LoggingTestCase):
             'expectations for those tests; if this CL is large and causes\n'
             'a few new failures, please fix the failures by adding new\n'
             'lines to TestExpectations rather than reverting. See:\n'
-            'https://chromium.googlesource.com'
-            '/chromium/src/+/main/docs/testing/web_platform_tests.md\n\n'
+            'https://monyhar.googlesource.com'
+            '/monyhar/src/+/main/docs/testing/web_platform_tests.md\n\n'
             'NOAUTOREVERT=true\n'
             'No-Export: true\n'
-            'Cq-Include-Trybots: luci.chromium.try:linux-wpt-identity-fyi-rel,'
+            'Cq-Include-Trybots: luci.monyhar.try:linux-wpt-identity-fyi-rel,'
             'linux-wpt-input-fyi-rel')
         print host.executive.calls
         self.assertEqual(host.executive.calls,
@@ -448,16 +448,16 @@ class TestImporterTest(LoggingTestCase):
         importer = self._get_test_importer(host)
         description = importer._cl_description(
             directory_owners={
-                ('someone@chromium.org', ):
+                ('someone@monyhar.org', ):
                 ['external/wpt/foo', 'external/wpt/bar'],
-                ('x@chromium.org', 'y@chromium.org'): ['external/wpt/baz'],
+                ('x@monyhar.org', 'y@monyhar.org'): ['external/wpt/baz'],
             })
         self.assertIn(
             'Directory owners for changes in this CL:\n'
-            'someone@chromium.org:\n'
+            'someone@monyhar.org:\n'
             '  external/wpt/foo\n'
             '  external/wpt/bar\n'
-            'x@chromium.org, y@chromium.org:\n'
+            'x@monyhar.org, y@monyhar.org:\n'
             '  external/wpt/baz\n\n', description)
 
     def test_sheriff_email_no_response_uses_backup(self):
@@ -507,12 +507,12 @@ class TestImporterTest(LoggingTestCase):
     def test_sheriff_email(self):
         host = self.mock_host()
         host.web.urls[ROTATIONS_URL] = json.dumps({
-            'emails': ['current-sheriff@chromium.org'],
+            'emails': ['current-sheriff@monyhar.org'],
             'updated_unix_timestamp':
             '1591108191',
         })
         importer = self._get_test_importer(host)
-        self.assertEqual('current-sheriff@chromium.org',
+        self.assertEqual('current-sheriff@monyhar.org',
                          importer.sheriff_email())
         self.assertLog([])
 
@@ -525,18 +525,18 @@ class TestImporterTest(LoggingTestCase):
             MOCK_WEB_TESTS + 'external/wpt/MANIFEST.json', '{}')
         importer._generate_manifest()
         self.assertEqual(host.executive.calls, [MANIFEST_INSTALL_CMD] * 2)
-        self.assertEqual(importer.chromium_git.added_paths,
+        self.assertEqual(importer.monyhar_git.added_paths,
                          {MOCK_WEB_TESTS + 'external/' + BASE_MANIFEST_NAME})
 
     def test_only_wpt_manifest_changed(self):
         host = self.mock_host()
         importer = self._get_test_importer(host)
-        importer.chromium_git.changed_files = lambda: [
+        importer.monyhar_git.changed_files = lambda: [
             RELATIVE_WEB_TESTS + 'external/' + BASE_MANIFEST_NAME,
             RELATIVE_WEB_TESTS + 'external/wpt/foo/x.html']
         self.assertFalse(importer._only_wpt_manifest_changed())
 
-        importer.chromium_git.changed_files = lambda: [
+        importer.monyhar_git.changed_files = lambda: [
             RELATIVE_WEB_TESTS + 'external/' + BASE_MANIFEST_NAME]
         self.assertTrue(importer._only_wpt_manifest_changed())
 

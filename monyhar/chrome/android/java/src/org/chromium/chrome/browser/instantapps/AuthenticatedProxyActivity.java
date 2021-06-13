@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.instantapps;
+package org.monyhar.chrome.browser.instantapps;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -17,7 +17,7 @@ public class AuthenticatedProxyActivity extends Activity {
      * The intent extra we expect to receive with the intent that we want to forward.
      */
     public static final String AUTHENTICATED_INTENT_EXTRA =
-            "org.chromium.chrome.browser.instantapps.AUTH_INTENT";
+            "org.monyhar.chrome.browser.instantapps.AUTH_INTENT";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

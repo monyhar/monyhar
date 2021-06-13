@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private.interfaces;
+package org.monyhar.weblayer_private.interfaces;
 
 /** Keys for the Bundle of arguments with which SettingsFragments are created. */
 public interface SettingsFragmentArgs {
-    String ACTIVITY_CLASS_NAME = "org.chromium.weblayer.SettingsActivity";
+    String ACTIVITY_CLASS_NAME = "org.monyhar.weblayer.SettingsActivity";
 
     // Argument names
     String PROFILE_NAME = "profile_name";

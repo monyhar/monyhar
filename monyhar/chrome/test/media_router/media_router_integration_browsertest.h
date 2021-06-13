@@ -167,7 +167,7 @@ class MediaRouterIntegrationBrowserTest : public InProcessBrowserTest {
  private:
   // Get the full path of the resource file.
   // |relative_path|: The relative path to
-  //                  <chromium src>/out/<build config>/media_router/
+  //                  <monyhar src>/out/<build config>/media_router/
   //                  browser_test_resources/
   base::FilePath GetResourceFile(
       base::FilePath::StringPieceType relative_path) const;

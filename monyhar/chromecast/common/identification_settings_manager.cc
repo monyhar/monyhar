@@ -39,7 +39,7 @@ const char kImageDataURI[] =
 const char kCssDataURI[] = "data:text/css,";
 
 // Known image file extensions. Referenced from
-// chromium/src/net/base/mime_util.cc for mimetypes equal to image.
+// monyhar/src/net/base/mime_util.cc for mimetypes equal to image.
 const char* kImageFileExtensions[] = {
     "avif",   ".bmp", ".gif", ".ico",  ".jfif", ".jpeg", ".jpg",  ".pjp",
     ".pjpeg", ".png", ".svg", ".svgz", ".tif",  ".tiff", ".webp", ".xbm",

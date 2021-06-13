@@ -13,7 +13,7 @@ There are two ways to use Headless Chromium:
 (Linux-only for now):
 
 ```
-$ chrome --headless --remote-debugging-port=9222 https://chromium.org
+$ chrome --headless --remote-debugging-port=9222 https://monyhar.org
 ```
 
 Currently you'll also need to use `--disable-gpu` to avoid an error from a
@@ -61,7 +61,7 @@ application. This approach is otherwise similar to controlling the browser over
 a DevTools connection, but it provides more customization points, e.g., for
 networking and [mojo services](https://docs.google.com/document/d/1Fr6_DJH6OK9rG3-ibMvRPTNnHsAXPk0VzxxiuJDSK3M/edit#heading=h.qh0udvlk963d).
 
-[Headless Example](https://cs.chromium.org/chromium/src/headless/app/headless_example.cc)
+[Headless Example](https://cs.monyhar.org/monyhar/src/headless/app/headless_example.cc)
 is a small sample application which demonstrates the use of the headless C++
 API. It loads a web page and outputs the resulting DOM. To run it, first
 initialize a headless build configuration:
@@ -84,7 +84,7 @@ After the build completes, the example can be run with the following command:
 $ out/Debug/headless_example https://www.google.com
 ```
 
-[Headless Shell](https://cs.chromium.org/chromium/src/headless/app/headless_shell.cc)
+[Headless Shell](https://cs.monyhar.org/monyhar/src/headless/app/headless_shell.cc)
 is a more capable headless application. For instance, it supports remote
 debugging with the [DevTools](https://developer.chrome.com/devtools) protocol.
 To do this, start the application with an argument specifying the debugging
@@ -125,11 +125,11 @@ web pages. Its main classes are:
 
 ## Resources and Documentation
 
-Mailing list: [headless-dev@chromium.org](https://groups.google.com/a/chromium.org/forum/#!forum/headless-dev)
+Mailing list: [headless-dev@monyhar.org](https://groups.google.com/a/monyhar.org/forum/#!forum/headless-dev)
 
-Bug tracker: [Internals>Headless](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=component%3AInternals%3EHeadless)
+Bug tracker: [Internals>Headless](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=component%3AInternals%3EHeadless)
 
-[File a new bug](https://bugs.chromium.org/p/chromium/issues/entry?components=Internals%3EHeadless) ([bit.ly/2pP6SBb](https://bit.ly/2pP6SBb))
+[File a new bug](https://bugs.monyhar.org/p/monyhar/issues/entry?components=Internals%3EHeadless) ([bit.ly/2pP6SBb](https://bit.ly/2pP6SBb))
 
 * [Runtime headless mode on Windows OS](https://docs.google.com/document/d/12c3bSEbmpeGevuyFHcvEKw9br6CkFJSS2saQynBjIzE)
 * [BeginFrame sequence numbers + acknowledgements](https://docs.google.com/document/d/1nxaunQ0cYWxhtS6Zzfwa99nae74F7gxanbuT5JRpI6Y/edit#)

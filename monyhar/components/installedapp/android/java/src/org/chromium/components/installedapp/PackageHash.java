@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.installedapp;
+package org.monyhar.components.installedapp;
 
 import android.util.SparseArray;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.ByteArrayGenerator;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.components.embedder_support.browser_context.BrowserContextHandle;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.ByteArrayGenerator;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.components.embedder_support.browser_context.BrowserContextHandle;
 
 import java.io.IOException;
 import java.security.GeneralSecurityException;

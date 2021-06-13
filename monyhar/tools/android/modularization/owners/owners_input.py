@@ -14,17 +14,17 @@ _IGNORED_FOLDERS = ('out', 'third_party', 'clank', 'build/linux',
 _KNOWN_FOLDERS = [
     r'^chrome\/browser\/(.*)\/android$', r'^chrome\/browser\/android\/(.*)$',
     r'^chrome\/android\/(.*)$',
-    r'^chrome\/android\/java\/src\/org\/chromium\/chrome\/browser\/(.*)$',
+    r'^chrome\/android\/java\/src\/org\/monyhar\/chrome\/browser\/(.*)$',
     r'^chrome\/android\/features\/(.*)$',
-    r'^chrome\/android\/javatests\/src\/org\/chromium\/chrome\/browser\/(.*)$',
-    r'^chrome\/android\/native_java_unittests\/src\/org\/chromium\/chrome\/browser\/(.*)$',
-    r'^chrome\/android\/junit\/src\/org\/chromium\/chrome\/browser\/(.*)$',
+    r'^chrome\/android\/javatests\/src\/org\/monyhar\/chrome\/browser\/(.*)$',
+    r'^chrome\/android\/native_java_unittests\/src\/org\/monyhar\/chrome\/browser\/(.*)$',
+    r'^chrome\/android\/junit\/src\/org\/monyhar\/chrome\/browser\/(.*)$',
     r'^components\/(.*)\/android$',
-    r'^content\/public\/android\/java\/src\/org\/chromium\/content\/browser\/(.*)$'
+    r'^content\/public\/android\/java\/src\/org\/monyhar\/content\/browser\/(.*)$'
 ]
 
 
-def get_android_folders(chromium_root: str,
+def get_android_folders(monyhar_root: str,
                         limit_to_dir: str) -> List[owners_data.RequestedPath]:
   '''Get all directories containing `android/` in their path.
 
@@ -38,9 +38,9 @@ def get_android_folders(chromium_root: str,
   android_folders = []
   android_folders_found = set()
 
-  for full_root, dirs, _ in os.walk(chromium_root):
-    assert full_root.startswith(chromium_root)
-    root = full_root[len(chromium_root) + 1:]
+  for full_root, dirs, _ in os.walk(monyhar_root):
+    assert full_root.startswith(monyhar_root)
+    root = full_root[len(monyhar_root) + 1:]
     if root.startswith(_IGNORED_FOLDERS):
       continue
     if limit_to_dir and not root.startswith(limit_to_dir):

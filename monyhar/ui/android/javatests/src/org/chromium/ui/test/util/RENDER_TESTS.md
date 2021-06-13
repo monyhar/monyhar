@@ -35,7 +35,7 @@ So, unless you're working on an internal repo or otherwise expect results to
 be marked as internal-only, the public link should be fine.
 
 Once on the triage page, make sure you are logged in at the top-right.
-Currently, only @google.com and @chromium.org accounts work, but other domains
+Currently, only @google.com and @monyhar.org accounts work, but other domains
 such as @opera.com can be allowed if requested. Any domain that can log into
 using the Google login flow (e.g. what's used to log into crbug.com) should be
 able to be allowed. @microsoft.com accounts are supposed to work, but currently
@@ -85,8 +85,8 @@ golden images must come from either trybots or CI bots.
 ### Writing the test
 
 To write a new test, start with the example in the javadoc for
-[RenderTestRule](https://cs.chromium.org/chromium/src/ui/android/javatests/src/org/chromium/ui/test/util/RenderTestRule.java)
-or [ChromeRenderTestRule](https://cs.chromium.org/chromium/src/chrome/test/android/javatests/src/org/chromium/chrome/test/util/ChromeRenderTestRule.java).
+[RenderTestRule](https://cs.monyhar.org/monyhar/src/ui/android/javatests/src/org/monyhar/ui/test/util/RenderTestRule.java)
+or [ChromeRenderTestRule](https://cs.monyhar.org/monyhar/src/chrome/test/android/javatests/src/org/monyhar/chrome/test/util/ChromeRenderTestRule.java).
 
 You will need to decide whether you want your test results to be public
 (viewable by anyone) or internal (only viewable by Googlers) and call

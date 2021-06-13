@@ -2,12 +2,12 @@ include_rules = [
   "+chrome/browser/image_fetcher",
   "+chrome/browser/profiles/android",
   "+chrome/browser/tab/java",
-  "+components/embedder_support/android/java/src/org/chromium/components/embedder_support",
-  "+components/omnibox/browser/android/java/src/org/chromium/components/omnibox",
-  "+components/payments/content/android/java/src/org/chromium/components/payments",
-  "+components/search_engines/android/java/src/org/chromium/components/search_engines",
-  "+components/security_state/content/android/java/src/org/chromium/components/security_state",
+  "+components/embedder_support/android/java/src/org/monyhar/components/embedder_support",
+  "+components/omnibox/browser/android/java/src/org/monyhar/components/omnibox",
+  "+components/payments/content/android/java/src/org/monyhar/components/payments",
+  "+components/search_engines/android/java/src/org/monyhar/components/search_engines",
+  "+components/security_state/content/android/java/src/org/monyhar/components/security_state",
 
   "-content/public/android/java",
-  "+content/public/android/java/src/org/chromium/content_public",
+  "+content/public/android/java/src/org/monyhar/content_public",
 ]

@@ -183,7 +183,7 @@ chrome.test.runTests([
   },
 
   async function disallowedPermission() {
-    const query = {url: 'http://chromium.org/*'};
+    const query = {url: 'http://monyhar.org/*'};
     const tab = await getSingleTab(query);
     await chrome.test.assertPromiseRejects(
         chrome.scripting.insertCSS({

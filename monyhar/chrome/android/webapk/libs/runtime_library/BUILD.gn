@@ -14,9 +14,9 @@ import("//chrome/android/webapk/libs/runtime_library_version.gni")
 runtime_library_dex_asset_name = "webapk$runtime_library_version.dex"
 
 android_aidl("webapk_service_aidl") {
-  import_include = [ "src/org/chromium/webapk/lib/runtime_library" ]
-  interface_file = "src/org/chromium/webapk/lib/runtime_library/common.aidl"
-  sources = [ "src/org/chromium/webapk/lib/runtime_library/IWebApkApi.aidl" ]
+  import_include = [ "src/org/monyhar/webapk/lib/runtime_library" ]
+  interface_file = "src/org/monyhar/webapk/lib/runtime_library/common.aidl"
+  sources = [ "src/org/monyhar/webapk/lib/runtime_library/IWebApkApi.aidl" ]
 }
 
 # A standalone jar for the aidl's generated java files so that multiple places
@@ -30,7 +30,7 @@ android_library("webapk_service_aidl_java") {
 android_library("runtime_library_for_assets_java") {
   jacoco_never_instrument = true
   sources =
-      [ "src/org/chromium/webapk/lib/runtime_library/WebApkServiceImpl.java" ]
+      [ "src/org/monyhar/webapk/lib/runtime_library/WebApkServiceImpl.java" ]
   srcjar_deps = [ ":webapk_service_aidl" ]
   deps = [ "//third_party/androidx:androidx_core_core_java" ]
 }
@@ -38,7 +38,7 @@ android_library("runtime_library_for_assets_java") {
 # The subset of runtime_library_from_assets_java needed for tests.
 android_library("runtime_library_for_tests_java") {
   sources =
-      [ "src/org/chromium/webapk/lib/runtime_library/WebApkServiceImpl.java" ]
+      [ "src/org/monyhar/webapk/lib/runtime_library/WebApkServiceImpl.java" ]
   deps = [
     ":webapk_service_aidl_java",
     "//third_party/androidx:androidx_core_core_java",
@@ -50,8 +50,8 @@ dist_dex("webapk_runtime_library") {
   proguard_enabled = true
   proguard_configs = [
     "runtime_library.proguard.flags",
-    "//base/android/proguard/chromium_code.flags",
-    "//base/android/proguard/chromium_apk.flags",
+    "//base/android/proguard/monyhar_code.flags",
+    "//base/android/proguard/monyhar_apk.flags",
   ]
   output = "$target_out_dir/$runtime_library_dex_asset_name"
 }
@@ -69,7 +69,7 @@ android_assets("runtime_library_assets") {
 
 android_library("runtime_library_javatests") {
   testonly = true
-  sources = [ "javatests/src/org/chromium/webapk/lib/runtime_library/WebApkServiceImplTest.java" ]
+  sources = [ "javatests/src/org/monyhar/webapk/lib/runtime_library/WebApkServiceImplTest.java" ]
   deps = [
     ":runtime_library_for_tests_java",
     ":webapk_service_aidl_java",

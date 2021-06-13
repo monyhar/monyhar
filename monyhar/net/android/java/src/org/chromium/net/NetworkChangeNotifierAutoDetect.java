@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
 import static android.net.ConnectivityManager.TYPE_VPN;
 import static android.net.NetworkCapabilities.NET_CAPABILITY_INTERNET;
@@ -33,14 +33,14 @@ import android.telephony.TelephonyManager;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApplicationState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.compat.ApiHelperForM;
-import org.chromium.base.compat.ApiHelperForO;
-import org.chromium.base.compat.ApiHelperForP;
-import org.chromium.build.BuildConfig;
+import org.monyhar.base.ApplicationState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.compat.ApiHelperForM;
+import org.monyhar.base.compat.ApiHelperForO;
+import org.monyhar.base.compat.ApiHelperForP;
+import org.monyhar.build.BuildConfig;
 
 import java.io.IOException;
 import java.net.Socket;

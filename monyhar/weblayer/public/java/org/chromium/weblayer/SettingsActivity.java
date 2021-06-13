@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer;
+package org.monyhar.weblayer;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,7 +13,7 @@ import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import org.chromium.weblayer_private.interfaces.SettingsIntentHelper;
+import org.monyhar.weblayer_private.interfaces.SettingsIntentHelper;
 
 /**
  * An Activity that displays a Settings UI for WebLayer.

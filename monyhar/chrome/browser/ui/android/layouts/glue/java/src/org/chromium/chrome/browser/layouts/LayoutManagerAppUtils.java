@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.layouts;
+package org.monyhar.chrome.browser.layouts;
 
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.ui.base.WindowAndroid;
 
 /** A class used by app code to manage an instance of the {@link LayoutManager}. */
 public class LayoutManagerAppUtils {

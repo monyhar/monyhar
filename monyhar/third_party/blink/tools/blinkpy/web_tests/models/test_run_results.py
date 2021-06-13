@@ -387,16 +387,16 @@ def summarize_results(port_obj,
 
     # Don't do this by default since it takes >100ms.
     # It's only used for rebaselining and uploading data to the flakiness dashboard.
-    results['chromium_revision'] = ''
+    results['monyhar_revision'] = ''
     if port_obj.get_option('builder_name'):
         path = port_obj.repository_path()
         git = port_obj.host.git(path=path)
         if git:
-            results['chromium_revision'] = str(git.commit_position(path))
+            results['monyhar_revision'] = str(git.commit_position(path))
         else:
             _log.warning(
-                'Failed to determine chromium commit position for %s, '
-                'leaving "chromium_revision" key blank in full_results.json.',
+                'Failed to determine monyhar commit position for %s, '
+                'leaving "monyhar_revision" key blank in full_results.json.',
                 path)
 
     return results

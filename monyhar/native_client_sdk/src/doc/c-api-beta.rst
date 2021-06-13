@@ -82,13 +82,13 @@ run in Chrome 60 or higher.
 
   * `PPB_OpenGLES2 <pepper_beta/c/struct_p_p_b___open_g_l_e_s2__1__0.html>`__
 
-  * `PPB_OpenGLES2ChromiumEnableFeature <pepper_beta/c/struct_p_p_b___open_g_l_e_s2_chromium_enable_feature.html>`__
+  * `PPB_OpenGLES2ChromiumEnableFeature <pepper_beta/c/struct_p_p_b___open_g_l_e_s2_monyhar_enable_feature.html>`__
 
-  * `PPB_OpenGLES2ChromiumEnableFeature <pepper_beta/c/struct_p_p_b___open_g_l_e_s2_chromium_enable_feature__1__0.html>`__
+  * `PPB_OpenGLES2ChromiumEnableFeature <pepper_beta/c/struct_p_p_b___open_g_l_e_s2_monyhar_enable_feature__1__0.html>`__
 
-  * `PPB_OpenGLES2ChromiumMapSub <pepper_beta/c/struct_p_p_b___open_g_l_e_s2_chromium_map_sub.html>`__
+  * `PPB_OpenGLES2ChromiumMapSub <pepper_beta/c/struct_p_p_b___open_g_l_e_s2_monyhar_map_sub.html>`__
 
-  * `PPB_OpenGLES2ChromiumMapSub <pepper_beta/c/struct_p_p_b___open_g_l_e_s2_chromium_map_sub__1__0.html>`__
+  * `PPB_OpenGLES2ChromiumMapSub <pepper_beta/c/struct_p_p_b___open_g_l_e_s2_monyhar_map_sub__1__0.html>`__
 
   * `PPB_OpenGLES2FramebufferBlit <pepper_beta/c/struct_p_p_b___open_g_l_e_s2_framebuffer_blit.html>`__
 

@@ -223,8 +223,8 @@ copy("common_packaging_files") {
     ]
   } else {
     sources += [
-      "common/chromium-browser/chromium-browser.appdata.xml",
-      "common/chromium-browser/chromium-browser.info",
+      "common/monyhar-browser/monyhar-browser.appdata.xml",
+      "common/monyhar-browser/monyhar-browser.info",
     ]
   }
 
@@ -370,7 +370,7 @@ template("linux_package") {
   if (is_chrome_branded) {
     package = "google-chrome"
   } else {
-    package = "chromium-browser"
+    package = "monyhar-browser"
   }
 
   deb_target_name = "${target_name}_deb"
@@ -482,7 +482,7 @@ template("linux_package") {
           "snap/snapcraft.yaml.in",
         ]
         if (!is_chrome_branded) {
-          package = "chromium"
+          package = "monyhar"
         }
         if (current_cpu == "x86") {
           snap_arch = "i386"

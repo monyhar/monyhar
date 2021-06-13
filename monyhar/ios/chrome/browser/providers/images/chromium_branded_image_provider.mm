@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#import "ios/chrome/browser/providers/images/chromium_branded_image_provider.h"
+#import "ios/chrome/browser/providers/images/monyhar_branded_image_provider.h"
 
 #import <UIKit/UIKit.h>
 
@@ -55,17 +55,17 @@ UIImage* ChromiumBrandedImageProvider::GetDownloadGoogleDriveImage() {
 }
 
 UIImage* ChromiumBrandedImageProvider::GetStaySafePromoImage() {
-  return [UIImage imageNamed:@"chromium_stay_safe"];
+  return [UIImage imageNamed:@"monyhar_stay_safe"];
 }
 
 UIImage* ChromiumBrandedImageProvider::GetMadeForIOSPromoImage() {
-  return [UIImage imageNamed:@"chromium_ios_made"];
+  return [UIImage imageNamed:@"monyhar_ios_made"];
 }
 
 UIImage* ChromiumBrandedImageProvider::GetMadeForIPadOSPromoImage() {
-  return [UIImage imageNamed:@"chromium_ipados_made"];
+  return [UIImage imageNamed:@"monyhar_ipados_made"];
 }
 
 UIImage* ChromiumBrandedImageProvider::GetNonModalPromoImage() {
-  return [UIImage imageNamed:@"chromium_non_default_promo"];
+  return [UIImage imageNamed:@"monyhar_non_default_promo"];
 }

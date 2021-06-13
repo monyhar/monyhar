@@ -18,8 +18,8 @@ class Bus;
 
 namespace chromeos {
 
-// ArcQuotaClient is used to communicate with the org.chromium.ArcQuota
-// interface within org.chromium.UserDataAuth service exposed by cryptohomed.
+// ArcQuotaClient is used to communicate with the org.monyhar.ArcQuota
+// interface within org.monyhar.UserDataAuth service exposed by cryptohomed.
 // All method should be called from the origin thread (UI thread) which
 // initializes the DBusThreadManager instance.
 class COMPONENT_EXPORT(USERDATAAUTH_CLIENT) ArcQuotaClient {

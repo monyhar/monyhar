@@ -31,7 +31,7 @@ class _AccessibilityStory(system_health_story.SystemHealthStory):
 class AccessibilityScrollingCodeSearchStory2018(_AccessibilityStory):
   """Tests scrolling an element within a page."""
   NAME = 'browse_accessibility:tech:codesearch:2018'
-  URL = 'https://cs.chromium.org/chromium/src/ui/accessibility/platform/ax_platform_node_mac.mm'
+  URL = 'https://cs.monyhar.org/monyhar/src/ui/accessibility/platform/ax_platform_node_mac.mm'
   TAGS = [story_tags.ACCESSIBILITY, story_tags.SCROLL, story_tags.YEAR_2018]
 
   def RunNavigateSteps(self, action_runner):

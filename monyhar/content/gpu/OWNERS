@@ -1,5 +1,5 @@
-kbr@chromium.org
-zmo@chromium.org
+kbr@monyhar.org
+zmo@monyhar.org
 
 # For security review.
 per-file browser_exposed_gpu_interfaces.*=set noparent

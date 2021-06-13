@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.share;
+package org.monyhar.components.browser_ui.share;
 
 import android.content.ComponentName;
 import android.net.Uri;
@@ -11,8 +11,8 @@ import android.text.TextUtils;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.components.dom_distiller.core.DomDistillerUrlUtils;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.components.dom_distiller.core.DomDistillerUrlUtils;
+import org.monyhar.ui.base.WindowAndroid;
 
 import java.util.ArrayList;
 

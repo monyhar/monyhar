@@ -52,7 +52,7 @@ TEST_F(NavigationManagerUtilTest, GetCommittedItemWithUniqueID) {
           /*web_state=*/nullptr, GURL::EmptyGURL(),
           /*has_user_gesture=*/false, ui::PAGE_TRANSITION_TYPED,
           /*is_renderer_initiated=*/false);
-  manager_->AddPendingItem(GURL("http://chromium.org"), Referrer(),
+  manager_->AddPendingItem(GURL("http://monyhar.org"), Referrer(),
                            ui::PAGE_TRANSITION_TYPED,
                            web::NavigationInitiationType::BROWSER_INITIATED,
                            /*is_post_navigation=*/false,
@@ -65,7 +65,7 @@ TEST_F(NavigationManagerUtilTest, GetCommittedItemWithUniqueID) {
   EXPECT_EQ(-1, GetCommittedItemIndexWithUniqueID(manager_.get(), unique_id));
 
   // Commit that pending item.
-  [mock_wk_list_ setCurrentURL:@"http://chromium.org"];
+  [mock_wk_list_ setCurrentURL:@"http://monyhar.org"];
   manager_->CommitPendingItem();
   EXPECT_EQ(item, GetCommittedItemWithUniqueID(manager_.get(), unique_id));
   EXPECT_EQ(item, GetItemWithUniqueID(manager_.get(), context.get()));

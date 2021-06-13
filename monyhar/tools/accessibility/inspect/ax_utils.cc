@@ -8,7 +8,7 @@
 
 char kActiveTabSwitch[] = "active-tab";
 char kChromeSwitch[] = "chrome";
-char kChromiumSwitch[] = "chromium";
+char kChromiumSwitch[] = "monyhar";
 char kFirefoxSwitch[] = "firefox";
 char kEdgeSwitch[] = "edge";
 char kPatternSwitch[] = "pattern";
@@ -22,7 +22,7 @@ void PrintHelpForTreeSelectors() {
   printf("  --pattern\ttitle of an application to dump accessible tree for\n");
   printf("  pre-defined application selectors to dump accessible tree for:\n");
   printf("    --chrome\tChrome browser\n");
-  printf("    --chromium\tChromium browser\n");
+  printf("    --monyhar\tChromium browser\n");
 #if defined(WINDOWS)
   printf("    --edge\tEdge browser\n");
 #endif

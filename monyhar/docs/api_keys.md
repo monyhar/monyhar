@@ -24,13 +24,13 @@ Chromium, or at runtime using environment variables.
 
 ## Acquiring Keys
 
-1.  Make sure you are a member of chromium-dev@chromium.org (you can choose
+1.  Make sure you are a member of monyhar-dev@monyhar.org (you can choose
     not to receive mail).
     *** note
     **Note:** the APIs below are only visible to people subscribed to that group.
     ***
 1.  Make sure you are logged in with the Google account associated with the email
-    address that you used to subscribe to chromium-dev.
+    address that you used to subscribe to monyhar-dev.
 1.  Go to https://cloud.google.com/console
 1.  _optional_  You may add other members of your organization or team on the Team
     tab.
@@ -131,7 +131,7 @@ OAuth 2.0 token gives access to various Google services that handle user data
 OAuth 2.0 token is restricted. This means that signing in to Chromium is
 restricted (as the OAuth 2.0 token cannot be generated). In order to sign in to
 Chromium builds, please add your test account to
-google-browser-signin-testaccounts@chromium.org (accounts in this group are
+google-browser-signin-testaccounts@monyhar.org (accounts in this group are
 allowed to get access tokens bypassing the restriction above).
 
 *** note
@@ -161,4 +161,4 @@ implementation uses restricted APIs.
 
 A prototype CL for Chromium embedders might use to replace the implementation
 with one not dependent upon private APIs can be found attached to
-[this post](https://groups.google.com/a/chromium.org/g/embedder-dev/c/tGCJ3QNVzYE).
+[this post](https://groups.google.com/a/monyhar.org/g/embedder-dev/c/tGCJ3QNVzYE).

@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.history;
+package org.monyhar.chrome.browser.history;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.ui.base.DeviceFormFactor;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.ui.base.DeviceFormFactor;
 
 /**
  * Utility methods for the browsing history manager.

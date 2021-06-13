@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sync;
+package org.monyhar.chrome.browser.sync;
 
 import android.app.PendingIntent;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Promise;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.AppHooks;
-import org.chromium.components.signin.base.CoreAccountInfo;
+import org.monyhar.base.Promise;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.AppHooks;
+import org.monyhar.components.signin.base.CoreAccountInfo;
 
 import java.util.Collections;
 import java.util.List;

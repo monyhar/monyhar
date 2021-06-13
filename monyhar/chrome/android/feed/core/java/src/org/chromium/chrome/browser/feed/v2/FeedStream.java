@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.v2;
+package org.monyhar.chrome.browser.feed.v2;
 
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
@@ -16,58 +16,58 @@ import androidx.annotation.VisibleForTesting;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.base.Callback;
-import org.chromium.base.Function;
-import org.chromium.base.Log;
-import org.chromium.base.ObserverList;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.base.supplier.ObservableSupplierImpl;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.browser.feed.FeedServiceBridge;
-import org.chromium.chrome.browser.feed.FeedSurfaceMediator;
-import org.chromium.chrome.browser.feed.NtpListContentManager;
-import org.chromium.chrome.browser.feed.NtpListContentManager.FeedContentMetadata;
-import org.chromium.chrome.browser.feed.shared.ScrollTracker;
-import org.chromium.chrome.browser.feed.shared.stream.Stream;
-import org.chromium.chrome.browser.feedback.HelpAndFeedbackLauncher;
-import org.chromium.chrome.browser.feedback.HelpAndFeedbackLauncherImpl;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.native_page.NativePageNavigationDelegate;
-import org.chromium.chrome.browser.ntp.NewTabPageUma;
-import org.chromium.chrome.browser.ntp.snippets.SectionType;
-import org.chromium.chrome.browser.offlinepages.OfflinePageBridge;
-import org.chromium.chrome.browser.offlinepages.RequestCoordinatorBridge;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.share.ChromeShareExtras;
-import org.chromium.chrome.browser.share.ShareDelegate;
-import org.chromium.chrome.browser.suggestions.NavigationRecorder;
-import org.chromium.chrome.browser.suggestions.SuggestionsConfig;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.ui.messages.snackbar.Snackbar;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
-import org.chromium.chrome.browser.xsurface.FeedActionsHandler;
-import org.chromium.chrome.browser.xsurface.FeedLaunchReliabilityLogger;
-import org.chromium.chrome.browser.xsurface.HybridListRenderer;
-import org.chromium.chrome.browser.xsurface.SurfaceActionsHandler;
-import org.chromium.chrome.browser.xsurface.SurfaceScope;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetContent;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.components.browser_ui.share.ShareParams;
-import org.chromium.components.browser_ui.widget.animation.Interpolators;
-import org.chromium.components.feed.proto.FeedUiProto;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.content_public.common.Referrer;
-import org.chromium.ui.base.PageTransition;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.display.DisplayAndroid;
-import org.chromium.url.GURL;
+import org.monyhar.base.Callback;
+import org.monyhar.base.Function;
+import org.monyhar.base.Log;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.base.supplier.ObservableSupplierImpl;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.browser.feed.FeedServiceBridge;
+import org.monyhar.chrome.browser.feed.FeedSurfaceMediator;
+import org.monyhar.chrome.browser.feed.NtpListContentManager;
+import org.monyhar.chrome.browser.feed.NtpListContentManager.FeedContentMetadata;
+import org.monyhar.chrome.browser.feed.shared.ScrollTracker;
+import org.monyhar.chrome.browser.feed.shared.stream.Stream;
+import org.monyhar.chrome.browser.feedback.HelpAndFeedbackLauncher;
+import org.monyhar.chrome.browser.feedback.HelpAndFeedbackLauncherImpl;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.native_page.NativePageNavigationDelegate;
+import org.monyhar.chrome.browser.ntp.NewTabPageUma;
+import org.monyhar.chrome.browser.ntp.snippets.SectionType;
+import org.monyhar.chrome.browser.offlinepages.OfflinePageBridge;
+import org.monyhar.chrome.browser.offlinepages.RequestCoordinatorBridge;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.share.ChromeShareExtras;
+import org.monyhar.chrome.browser.share.ShareDelegate;
+import org.monyhar.chrome.browser.suggestions.NavigationRecorder;
+import org.monyhar.chrome.browser.suggestions.SuggestionsConfig;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.ui.messages.snackbar.Snackbar;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.chrome.browser.xsurface.FeedActionsHandler;
+import org.monyhar.chrome.browser.xsurface.FeedLaunchReliabilityLogger;
+import org.monyhar.chrome.browser.xsurface.HybridListRenderer;
+import org.monyhar.chrome.browser.xsurface.SurfaceActionsHandler;
+import org.monyhar.chrome.browser.xsurface.SurfaceScope;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetContent;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.components.browser_ui.share.ShareParams;
+import org.monyhar.components.browser_ui.widget.animation.Interpolators;
+import org.monyhar.components.feed.proto.FeedUiProto;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.content_public.common.Referrer;
+import org.monyhar.ui.base.PageTransition;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.display.DisplayAndroid;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -96,7 +96,7 @@ public class FeedStream implements Stream {
                     mMakeGURL.apply(url), getSliceIdFromView(actionSourceView));
             NewTabPageUma.recordAction(NewTabPageUma.ACTION_OPENED_SNIPPET);
 
-            openUrl(url, org.chromium.ui.mojom.WindowOpenDisposition.CURRENT_TAB);
+            openUrl(url, org.monyhar.ui.mojom.WindowOpenDisposition.CURRENT_TAB);
 
             // Attempts to load more content if needed.
             maybeLoadMore();
@@ -109,7 +109,7 @@ public class FeedStream implements Stream {
                     mMakeGURL.apply(url), getSliceIdFromView(actionSourceView));
             NewTabPageUma.recordAction(NewTabPageUma.ACTION_OPENED_SNIPPET);
 
-            openUrl(url, org.chromium.ui.mojom.WindowOpenDisposition.NEW_BACKGROUND_TAB);
+            openUrl(url, org.monyhar.ui.mojom.WindowOpenDisposition.NEW_BACKGROUND_TAB);
 
             // Attempts to load more content if needed.
             maybeLoadMore();
@@ -122,7 +122,7 @@ public class FeedStream implements Stream {
                     FeedUserActionType.TAPPED_OPEN_IN_NEW_INCOGNITO_TAB);
             NewTabPageUma.recordAction(NewTabPageUma.ACTION_OPENED_SNIPPET);
 
-            openUrl(url, org.chromium.ui.mojom.WindowOpenDisposition.OFF_THE_RECORD);
+            openUrl(url, org.monyhar.ui.mojom.WindowOpenDisposition.OFF_THE_RECORD);
 
             // Attempts to load more content if needed.
             maybeLoadMore();
@@ -210,12 +210,12 @@ public class FeedStream implements Stream {
                     SuggestionsConfig.getReferrerUrl(ChromeFeatureList.INTEREST_FEED_V2),
                     // WARNING: ReferrerPolicy.ALWAYS is assumed by other Chrome code for NTP
                     // tiles to set consider_for_ntp_most_visited.
-                    org.chromium.network.mojom.ReferrerPolicy.ALWAYS));
+                    org.monyhar.network.mojom.ReferrerPolicy.ALWAYS));
             Tab tab = mNavigationDelegate.openUrl(disposition, params);
 
             boolean inNewTab = (disposition
-                            == org.chromium.ui.mojom.WindowOpenDisposition.NEW_BACKGROUND_TAB
-                    || disposition == org.chromium.ui.mojom.WindowOpenDisposition.OFF_THE_RECORD);
+                            == org.monyhar.ui.mojom.WindowOpenDisposition.NEW_BACKGROUND_TAB
+                    || disposition == org.monyhar.ui.mojom.WindowOpenDisposition.OFF_THE_RECORD);
 
             if (tab != null) {
                 tab.addObserver(new FeedTabNavigationObserver(inNewTab));
@@ -797,21 +797,21 @@ public class FeedStream implements Stream {
                 return null;
             }
             return new NtpListContentManager.NativeViewContent(
-                    sliceId, org.chromium.chrome.R.layout.feed_spinner);
+                    sliceId, org.monyhar.chrome.R.layout.feed_spinner);
         }
         assert slice.hasZeroStateSlice();
         if (!mIsInterestFeed) {
             return new NtpListContentManager.NativeViewContent(
-                    sliceId, org.chromium.chrome.R.layout.following_empty_state);
+                    sliceId, org.monyhar.chrome.R.layout.following_empty_state);
         }
         if (slice.getZeroStateSlice().getType() == FeedUiProto.ZeroStateSlice.Type.CANT_REFRESH) {
             return new NtpListContentManager.NativeViewContent(
-                    sliceId, org.chromium.chrome.R.layout.no_connection);
+                    sliceId, org.monyhar.chrome.R.layout.no_connection);
         }
         assert slice.getZeroStateSlice().getType()
                 == FeedUiProto.ZeroStateSlice.Type.NO_CARDS_AVAILABLE;
         return new NtpListContentManager.NativeViewContent(
-                sliceId, org.chromium.chrome.R.layout.no_content_v2);
+                sliceId, org.monyhar.chrome.R.layout.no_content_v2);
     }
 
     private void updateContentsInPlace(

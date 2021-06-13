@@ -186,16 +186,16 @@ GREYElementInteraction* CellWithMatcher(id<GREYMatcher> matcher) {
   [NewTabPageAppInterface addSuggestionNumber:2];
 
   // Check that the first suggestion is still displayed.
-  [CellWithMatcher(grey_accessibilityID(@"http://chromium.org/1"))
+  [CellWithMatcher(grey_accessibilityID(@"http://monyhar.org/1"))
       assertWithMatcher:grey_notNil()];
 
   // Reload the page using the tools menu.
   [ChromeEarlGreyUI reload];
 
   // Check that the first suggestion is no longer displayed.
-  [CellWithMatcher(grey_accessibilityID(@"http://chromium.org/1"))
+  [CellWithMatcher(grey_accessibilityID(@"http://monyhar.org/1"))
       assertWithMatcher:grey_nil()];
-  [CellWithMatcher(grey_accessibilityID(@"http://chromium.org/2"))
+  [CellWithMatcher(grey_accessibilityID(@"http://monyhar.org/2"))
       assertWithMatcher:grey_notNil()];
 }
 
@@ -247,7 +247,7 @@ GREYElementInteraction* CellWithMatcher(id<GREYMatcher> matcher) {
   // Check that the first items are visible as the collection should be
   // scrolled.
   [[EarlGrey
-      selectElementWithMatcher:grey_accessibilityID(@"http://chromium.org/3")]
+      selectElementWithMatcher:grey_accessibilityID(@"http://monyhar.org/3")]
       assertWithMatcher:grey_sufficientlyVisible()];
 }
 

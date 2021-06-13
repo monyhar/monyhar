@@ -82,7 +82,7 @@ void RecordOpenType(ArcIntentHelperOpenType type) {
 
 // static
 const char ArcIntentHelperBridge::kArcIntentHelperPackageName[] =
-    "org.chromium.arc.intent_helper";
+    "org.monyhar.arc.intent_helper";
 
 // static
 ArcIntentHelperBridge* ArcIntentHelperBridge::GetForBrowserContext(
@@ -431,14 +431,14 @@ void ArcIntentHelperBridge::SendNewCaptureBroadcast(bool is_video,
   }
 
   std::string action =
-      is_video ? "org.chromium.arc.intent_helper.ACTION_SEND_NEW_VIDEO"
-               : "org.chromium.arc.intent_helper.ACTION_SEND_NEW_PICTURE";
+      is_video ? "org.monyhar.arc.intent_helper.ACTION_SEND_NEW_VIDEO"
+               : "org.monyhar.arc.intent_helper.ACTION_SEND_NEW_PICTURE";
   base::DictionaryValue value;
   value.SetString("file_path", file_path);
   std::string extras;
   base::JSONWriter::Write(value, &extras);
 
-  instance->SendBroadcast(action, "org.chromium.arc.intent_helper",
+  instance->SendBroadcast(action, "org.monyhar.arc.intent_helper",
                           /*cls=*/std::string(), extras);
 }
 

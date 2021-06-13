@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting;
+package org.monyhar.chromoting;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -11,11 +11,11 @@ import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 import android.view.ViewConfiguration;
 
-import org.chromium.chromoting.InputState.DetectedAction;
-import org.chromium.chromoting.InputState.StartAction;
+import org.monyhar.chromoting.InputState.DetectedAction;
+import org.monyhar.chromoting.InputState.StartAction;
 
 /**
- * A combination of existing Android and chromium motion and touch detectors, and provide a set of
+ * A combination of existing Android and monyhar motion and touch detectors, and provide a set of
  * {@link Event} when each kind of touch behavior has been detected.
  */
 public final class InputMonitor

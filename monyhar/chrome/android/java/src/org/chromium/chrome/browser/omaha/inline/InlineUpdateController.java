@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omaha.inline;
+package org.monyhar.chrome.browser.omaha.inline;
 
 import android.app.Activity;
 import android.content.Intent;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.browser.omaha.UpdateStatusProvider;
+import org.monyhar.chrome.browser.omaha.UpdateStatusProvider;
 
 /**
  * Helper for gluing interactions with the Play store's AppUpdateManager with Chrome.  This

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo.system;
+package org.monyhar.mojo.system;
 
 import java.nio.ByteBuffer;
 import java.util.List;
@@ -133,7 +133,7 @@ public interface MessagePipeHandle extends Handle {
     }
 
     /**
-     * @see org.chromium.mojo.system.Handle#pass()
+     * @see org.monyhar.mojo.system.Handle#pass()
      */
     @Override
     public MessagePipeHandle pass();

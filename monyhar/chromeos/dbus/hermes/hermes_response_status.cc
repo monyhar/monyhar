@@ -8,34 +8,34 @@ namespace chromeos {
 
 HermesResponseStatus HermesResponseStatusFromErrorName(
     const std::string& error_name) {
-  if (error_name == "org.chromium.Hermes.Error.AlreadyDisabled") {
+  if (error_name == "org.monyhar.Hermes.Error.AlreadyDisabled") {
     return HermesResponseStatus::kErrorAlreadyDisabled;
   }
-  if (error_name == "org.chromium.Hermes.Error.AlreadyEnabled") {
+  if (error_name == "org.monyhar.Hermes.Error.AlreadyEnabled") {
     return HermesResponseStatus::kErrorAlreadyEnabled;
   }
-  if (error_name == "org.chromium.Hermes.Error.InvalidActivationCode") {
+  if (error_name == "org.monyhar.Hermes.Error.InvalidActivationCode") {
     return HermesResponseStatus::kErrorInvalidActivationCode;
   }
-  if (error_name == "org.chromium.Hermes.Error.InvalidIccid") {
+  if (error_name == "org.monyhar.Hermes.Error.InvalidIccid") {
     return HermesResponseStatus::kErrorInvalidIccid;
   }
-  if (error_name == "org.chromium.Hermes.Error.InvalidParameter") {
+  if (error_name == "org.monyhar.Hermes.Error.InvalidParameter") {
     return HermesResponseStatus::kErrorInvalidParameter;
   }
-  if (error_name == "org.chromium.Hermes.Error.NeedConfirmationCode") {
+  if (error_name == "org.monyhar.Hermes.Error.NeedConfirmationCode") {
     return HermesResponseStatus::kErrorNeedConfirmationCode;
   }
-  if (error_name == "org.chromium.Hermes.Error.SendNotificationFailure") {
+  if (error_name == "org.monyhar.Hermes.Error.SendNotificationFailure") {
     return HermesResponseStatus::kErrorSendNotificationFailure;
   }
-  if (error_name == "org.chromium.Hermes.Error.TestProfileInProd") {
+  if (error_name == "org.monyhar.Hermes.Error.TestProfileInProd") {
     return HermesResponseStatus::kErrorTestProfileInProd;
   }
-  if (error_name == "org.chromium.Hermes.Error.Unsupported") {
+  if (error_name == "org.monyhar.Hermes.Error.Unsupported") {
     return HermesResponseStatus::kErrorUnsupported;
   }
-  if (error_name == "org.chromium.Hermes.Error.WrongState") {
+  if (error_name == "org.monyhar.Hermes.Error.WrongState") {
     return HermesResponseStatus::kErrorWrongState;
   }
 

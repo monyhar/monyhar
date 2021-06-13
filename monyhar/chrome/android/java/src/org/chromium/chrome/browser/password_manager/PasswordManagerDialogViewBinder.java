@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_manager;
+package org.monyhar.chrome.browser.password_manager;
 
-import static org.chromium.chrome.browser.password_manager.PasswordManagerDialogProperties.DETAILS;
-import static org.chromium.chrome.browser.password_manager.PasswordManagerDialogProperties.HELP_BUTTON_CALLBACK;
-import static org.chromium.chrome.browser.password_manager.PasswordManagerDialogProperties.ILLUSTRATION;
-import static org.chromium.chrome.browser.password_manager.PasswordManagerDialogProperties.ILLUSTRATION_VISIBLE;
-import static org.chromium.chrome.browser.password_manager.PasswordManagerDialogProperties.TITLE;
+import static org.monyhar.chrome.browser.password_manager.PasswordManagerDialogProperties.DETAILS;
+import static org.monyhar.chrome.browser.password_manager.PasswordManagerDialogProperties.HELP_BUTTON_CALLBACK;
+import static org.monyhar.chrome.browser.password_manager.PasswordManagerDialogProperties.ILLUSTRATION;
+import static org.monyhar.chrome.browser.password_manager.PasswordManagerDialogProperties.ILLUSTRATION_VISIBLE;
+import static org.monyhar.chrome.browser.password_manager.PasswordManagerDialogProperties.TITLE;
 
 import android.view.View;
 
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * Class responsible for binding the model and the view.

@@ -29,7 +29,7 @@ std::u16string GetDefaultSearchEngineName(TemplateURLService* service) {
   if (!default_provider) {
     // TODO(cpu): bug 1187517. It is possible to have no default provider.
     // returning an empty string is a stopgap measure for the crash
-    // http://code.google.com/p/chromium/issues/detail?id=2573
+    // http://code.google.com/p/monyhar/issues/detail?id=2573
     return std::u16string();
   }
   return default_provider->short_name();

@@ -15,13 +15,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <org.chromium.components.embedder_support.delegate.ColorPickerAdvanced
+        <org.monyhar.components.embedder_support.delegate.ColorPickerAdvanced
             android:id="@+id/color_picker_advanced"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </ScrollView>
 
-    <org.chromium.components.embedder_support.delegate.ColorPickerSimple
+    <org.monyhar.components.embedder_support.delegate.ColorPickerSimple
         android:id="@+id/color_picker_simple"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
         android:padding="1px"
         android:background="@drawable/color_picker_border" />
 
-    <org.chromium.ui.widget.ButtonCompat
+    <org.monyhar.ui.widget.ButtonCompat
         android:id="@+id/more_colors_button"
         style="@style/TextButton"
         android:layout_marginTop="16dp"

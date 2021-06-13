@@ -6,7 +6,7 @@
 
 The main interest in extended attributes are their _semantics_: Blink implements many more extended attributes than the Web IDL standard, to specify various behavior.
 
-The authoritative list of allowed extended attributes and values is [bindings/IDLExtendedAttributes.txt](https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/bindings/IDLExtendedAttributes.txt). This is complete but not necessarily precise (there may be unused extended attributes or values), since validation is run on build, but coverage isn't checked.
+The authoritative list of allowed extended attributes and values is [bindings/IDLExtendedAttributes.txt](https://source.monyhar.org/monyhar/monyhar/src/+/main:third_party/blink/renderer/bindings/IDLExtendedAttributes.txt). This is complete but not necessarily precise (there may be unused extended attributes or values), since validation is run on build, but coverage isn't checked.
 
 Syntactically, Blink IDL extended attributes differ from standard Web IDL extended attributes in a few ways:
 
@@ -59,7 +59,7 @@ Extended attributes mostly work normally on overloaded methods, affecting only t
 While `[DeprecateAs]`, `[MeasureAs]` only affect callback for non-overloaded methods, the logging code is instead put in the method itself for overloaded methods, so these can be placed on the method to log in question.
 ***
 
-Extended attributes that affect the callback must be on the _last_ overloaded method, though it is safest to put them on all the overloaded methods, for consistency (and in case they are rearranged or deleted). The source is [bindings/templates/methods.cpp](https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/bindings/templates/methods.cpp), and currently there are no extended attribute that affect the callback (even for overloaded methods).
+Extended attributes that affect the callback must be on the _last_ overloaded method, though it is safest to put them on all the overloaded methods, for consistency (and in case they are rearranged or deleted). The source is [bindings/templates/methods.cpp](https://source.monyhar.org/monyhar/monyhar/src/+/main:third_party/blink/renderer/bindings/templates/methods.cpp), and currently there are no extended attribute that affect the callback (even for overloaded methods).
 
 ### Special operations (methods)
 
@@ -126,7 +126,7 @@ Extended attributes on members of an interface mixin work as normal. However, on
 
 ### Inheritance
 
-Extended attributes are generally not inherited: only extended attributes on the interface itself are consulted. However, there are a handful of extended attributes that are inherited (applying them to an ancestor interface applies them to the descendants). These are extended attributes that affect memory management, and currently consists of `[ActiveScriptWrappable]`; the up-to-date list is [compute_dependencies.INHERITED_EXTENDED_ATTRIBUTES](https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/bindings/scripts/compute_interfaces_info_overall.py?q=INHERITED_EXTENDED_ATTRIBUTES&ss=chromium).
+Extended attributes are generally not inherited: only extended attributes on the interface itself are consulted. However, there are a handful of extended attributes that are inherited (applying them to an ancestor interface applies them to the descendants). These are extended attributes that affect memory management, and currently consists of `[ActiveScriptWrappable]`; the up-to-date list is [compute_dependencies.INHERITED_EXTENDED_ATTRIBUTES](https://source.monyhar.org/monyhar/monyhar/src/+/main:third_party/blink/renderer/bindings/scripts/compute_interfaces_info_overall.py?q=INHERITED_EXTENDED_ATTRIBUTES&ss=monyhar).
 
 ## Standard Web IDL Extended Attributes
 
@@ -976,8 +976,8 @@ v8::Local<v8::Value> V8XXX::CallAsFunctionCallback(const v8::Arguments& args) {
 
 Summary: Denotes an API that exposes data that folks on the internet find useful for fingerprinting.
 
-Attributes and methods marked as `[HighEntropy]` are known to be practically useful for [identifying particular clients](https://dev.chromium.org/Home/chromium-security/client-identification-mechanisms) on the web today.
-Both methods and attribute/constant getters annotated with this attribute are wired up to [`Dactyloscoper::Record`](https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/core/frame/dactyloscoper.cc&q=Dactyloscoper::Record) for additional processing.
+Attributes and methods marked as `[HighEntropy]` are known to be practically useful for [identifying particular clients](https://dev.monyhar.org/Home/monyhar-security/client-identification-mechanisms) on the web today.
+Both methods and attribute/constant getters annotated with this attribute are wired up to [`Dactyloscoper::Record`](https://source.monyhar.org/monyhar/monyhar/src/+/main:third_party/blink/renderer/core/frame/dactyloscoper.cc&q=Dactyloscoper::Record) for additional processing.
 
 This attribute must be accompanied by either `[Measure]` or `[MeasureAs]`.
 
@@ -1009,7 +1009,7 @@ Usage: `[DeprecateAs]` can be specified on methods, attributes, and constants.
     [DeprecateAs=DeprecatedPrefixedConstant] const short DEPRECATED_PREFIXED_CONSTANT = 1;
 ```
 
-The deprecation message shown on the console can be specified via the [Deprecation::GetDeprecationInfo](https://source.chromium.org/chromium/chromium/src/+/master:third_party/blink/renderer/core/frame/deprecation.cc;l=194) method.
+The deprecation message shown on the console can be specified via the [Deprecation::GetDeprecationInfo](https://source.monyhar.org/monyhar/monyhar/src/+/master:third_party/blink/renderer/core/frame/deprecation.cc;l=194) method.
 
 ### [DoNotTestNewObject] _(m)_
 
@@ -1027,7 +1027,7 @@ Usage: `[Measure]` can be specified on interfaces, methods, attributes, and cons
 
 (_deprecated_) When specified on an interface usage of the constructor will be measured. This behavior could be changed in the future. Specify `[Measure]` on constructor operations instead.
 
-The generated feature name must be added to `WebFeature` (in [blink/public/mojom/web_feature/web_feature.mojom](https://source.chromium.org/chromium/chromium/src/+/master:third_party/blink/public/mojom/web_feature/web_feature.mojom)).
+The generated feature name must be added to `WebFeature` (in [blink/public/mojom/web_feature/web_feature.mojom](https://source.monyhar.org/monyhar/monyhar/src/+/master:third_party/blink/public/mojom/web_feature/web_feature.mojom)).
 
 ```webidl
 [Measure] attribute Node interestingAttribute;
@@ -1044,7 +1044,7 @@ Usage: `[MeasureAs]` can be specified on interfaces, methods, attributes, and co
 
 (_deprecated_) Specifying `[MeasureAs]` on interfaces is deprecated. Specify `[MeasureAs]` on constructor operations instead.
 
-The value must match one of the enumeration values in `WebFeature` (in [blink/public/mojom/web_feature/web_feature.mojom](https://source.chromium.org/chromium/chromium/src/+/master:third_party/blink/public/mojom/web_feature/web_feature.mojom)).
+The value must match one of the enumeration values in `WebFeature` (in [blink/public/mojom/web_feature/web_feature.mojom](https://source.monyhar.org/monyhar/monyhar/src/+/master:third_party/blink/public/mojom/web_feature/web_feature.mojom)).
 
 ```webidl
 [MeasureAs=AttributeWeAreInterestedIn] attribute Node interestingAttribute;
@@ -1251,7 +1251,7 @@ Non-empty string values specified by `[ReflectOnly]` must be added to
 
 Summary: `[RuntimeEnabled]` wraps the generated code with `if (RuntimeEnabledFeatures::FeatureNameEnabled) { ...code... }`.
 
-Usage: `[RuntimeEnabled=FeatureName]`. FeatureName must be included in [runtime\_enabled\_features.json5](https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/platform/runtime_enabled_features.json5).
+Usage: `[RuntimeEnabled=FeatureName]`. FeatureName must be included in [runtime\_enabled\_features.json5](https://source.monyhar.org/monyhar/monyhar/src/+/main:third_party/blink/renderer/platform/runtime_enabled_features.json5).
 
 ```webidl
 [
@@ -1267,7 +1267,7 @@ foo(long x);
 [RuntimeEnabled=FeatureName] foo(long x, long y);
 ```
 
-For more information, see [RuntimeEnabledFeatures](https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/platform/runtime_enabled_features.json5).
+For more information, see [RuntimeEnabledFeatures](https://source.monyhar.org/monyhar/monyhar/src/+/main:third_party/blink/renderer/platform/runtime_enabled_features.json5).
 
 ### [SaveSameObject] _(a)_
 
@@ -1630,7 +1630,7 @@ In case of `func2(...)` which adds `[DefaultValue=Undefined]`, if JavaScript cal
 
 ### [DirectSocketEnabled] _(a, i, m)_
 
-Summary: Interfaces and interface members with a `DirectSocketEnabled` extended attribute are exposed only inside contexts whose [cross-origin isolated capability](https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-cross-origin-isolated-capability) is enabled, and when the [kDirectSocket](https://source.chromium.org/chromium/chromium/src/+/main:content/public/common/content_features.cc;drc=25b97f298830b78a443fd7cdfd0b3e190817d1dd;l=556) feature flag is enabled.
+Summary: Interfaces and interface members with a `DirectSocketEnabled` extended attribute are exposed only inside contexts whose [cross-origin isolated capability](https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-cross-origin-isolated-capability) is enabled, and when the [kDirectSocket](https://source.monyhar.org/monyhar/monyhar/src/+/main:content/public/common/content_features.cc;drc=25b97f298830b78a443fd7cdfd0b3e190817d1dd;l=556) feature flag is enabled.
 
 Note that it's likely for these requirements to shift over time: <https://crbug.com/1206150>.
 

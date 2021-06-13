@@ -3,12 +3,12 @@
 # found in the LICENSE file.
 
 # Following these steps to create/update the CIPD package:
-# 1. Checkout origin/master of chromium/src and pull the latest revision.
+# 1. Checkout origin/master of monyhar/src and pull the latest revision.
 # 2. Get the latest commit hash.
 # 3. Run `gclient sync` to make sure catapult is up to date.
 # 4. Run the following command to create CIPD package:
 #    $ cipd create --pkg-def cipd.yaml -tag src_version:<latest commit hash>
-package: chromium/tools/android/avd
+package: monyhar/tools/android/avd
 description: One single package for running `tools/android/avd/avd.py`
 root: ../../../../
 data:

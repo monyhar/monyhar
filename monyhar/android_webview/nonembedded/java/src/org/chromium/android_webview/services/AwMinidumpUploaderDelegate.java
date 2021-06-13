@@ -2,24 +2,24 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.services;
+package org.monyhar.android_webview.services;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.android_webview.common.PlatformServiceBridge;
-import org.chromium.android_webview.common.crash.SystemWideCrashDirectories;
-import org.chromium.base.BaseSwitches;
-import org.chromium.base.CommandLine;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.ThreadUtils;
-import org.chromium.components.minidump_uploader.MinidumpUploaderDelegate;
-import org.chromium.components.minidump_uploader.util.CrashReportingPermissionManager;
-import org.chromium.components.minidump_uploader.util.NetworkPermissionUtil;
-import org.chromium.components.version_info.Channel;
-import org.chromium.components.version_info.VersionConstants;
+import org.monyhar.android_webview.common.PlatformServiceBridge;
+import org.monyhar.android_webview.common.crash.SystemWideCrashDirectories;
+import org.monyhar.base.BaseSwitches;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.components.minidump_uploader.MinidumpUploaderDelegate;
+import org.monyhar.components.minidump_uploader.util.CrashReportingPermissionManager;
+import org.monyhar.components.minidump_uploader.util.NetworkPermissionUtil;
+import org.monyhar.components.version_info.Channel;
+import org.monyhar.components.version_info.VersionConstants;
 
 import java.io.File;
 import java.util.Random;

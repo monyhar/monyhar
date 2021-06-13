@@ -7,11 +7,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <!-- Text describing Metrics Settings. -->
-    <org.chromium.components.browser_ui.settings.TextMessagePreference
+    <org.monyhar.components.browser_ui.settings.TextMessagePreference
         android:title="@string/metrics_settings_description"
         app:allowDividerBelow="false" />
 
-    <org.chromium.chrome.browser.metrics_settings.RadioButtonGroupMetricsPreference
+    <org.monyhar.chrome.browser.metrics_settings.RadioButtonGroupMetricsPreference
         android:key="metrics_radio_button_group"
         android:selectable="false"
         app:allowDividerAbove="false"

@@ -5,8 +5,8 @@
 import("//ui/webui/resources/tools/js_modulizer.gni")
 
 common_auto_imports = [
-  "third_party/polymer/v1_0/components-chromium/iron-a11y-announcer/iron-a11y-announcer.html|IronA11yAnnouncer",
-  "third_party/polymer/v1_0/components-chromium/paper-behaviors/paper-ripple-behavior.html|PaperRippleBehavior",
+  "third_party/polymer/v1_0/components-monyhar/iron-a11y-announcer/iron-a11y-announcer.html|IronA11yAnnouncer",
+  "third_party/polymer/v1_0/components-monyhar/paper-behaviors/paper-ripple-behavior.html|PaperRippleBehavior",
   "ui/webui/resources/cr_elements/cr_scrollable_behavior.html|CrScrollableBehavior",
   "ui/webui/resources/cr_elements/cr_radio_button/cr_radio_button_behavior.html|CrRadioButtonBehavior",
   "ui/webui/resources/cr_elements/find_shortcut_behavior.html|FindShortcutBehavior",

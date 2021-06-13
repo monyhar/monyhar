@@ -1093,8 +1093,8 @@ const COLUMNS = [
       ['fromPrevious'], OutputBooleanProperty),
   new Column(
       ['Tran'],
-      'https://cs.chromium.org/chromium/src/ui/base/page_transition_types.h' +
-          '?q=page_transition_types.h&sq=package:chromium&dr=CSs&l=14',
+      'https://cs.monyhar.org/monyhar/src/ui/base/page_transition_types.h' +
+          '?q=page_transition_types.h&sq=package:monyhar&dr=CSs&l=14',
       'transition', false, 'Transition\nHow the user got to the result.',
       ['transition'], OutputTextProperty),
   new Column(
@@ -1118,7 +1118,7 @@ const COLUMNS = [
       ['duplicates'], OutputTextProperty),
   new Column(
       ['pi'],
-      'https://source.chromium.org/chromium/chromium/src/+/main:components/omnibox/browser/omnibox_pedal_concepts.h;l=19;drc=c741e070dbfcc33b2369e7a5131be87c7b21bb99',
+      'https://source.monyhar.org/monyhar/monyhar/src/+/main:components/omnibox/browser/omnibox_pedal_concepts.h;l=19;drc=c741e070dbfcc33b2369e7a5131be87c7b21bb99',
       'pedalId', false, 'Pedal ID\nThe ID of attached Pedal, or zero if none.',
       ['pedalId'], OutputTextProperty),
   new Column(

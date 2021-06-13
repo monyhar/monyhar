@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.background_task_scheduler;
+package org.monyhar.components.background_task_scheduler;
 
 /**
  * Generic factory interface to inject into {@link BackgroundTaskSchedulerFactory}.

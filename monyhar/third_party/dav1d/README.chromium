@@ -18,7 +18,7 @@ of the checkout to upstream. Then you need to update the configuration files
 and source listing.
 
 First have clang (//third_party/llvm-build/Release+Asserts/bin), clang-cl
-(https://chromium.googlesource.com/chromium/src/+/lkgr/docs/win_cross.md),
+(https://monyhar.googlesource.com/monyhar/src/+/lkgr/docs/win_cross.md),
 and meson v0.55 or higher (https://github.com/mesonbuild/meson/releases) in
 your path. Then you can run ./generate_configs.py
 

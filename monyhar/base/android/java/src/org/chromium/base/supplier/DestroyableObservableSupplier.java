@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.supplier;
+package org.monyhar.base.supplier;
 
-import org.chromium.base.lifetime.Destroyable;
+import org.monyhar.base.lifetime.Destroyable;
 
 /**
  * An {@link ObservableSupplier} that may be destroyed by anyone with a reference to the object.

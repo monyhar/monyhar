@@ -2,7 +2,7 @@ Directory of scripts needed for troopering.
 
 #### Mass cancelling builds and tasks
 
-If you're cancelling builds because of a bad chromium/src revision, use the
+If you're cancelling builds because of a bad monyhar/src revision, use the
 `find_bad_builds.py` script. Example:
 
 ```
@@ -16,8 +16,8 @@ To cancel many builds at once use the following command:
 
 ```
 # Cancel scheduled builds in bucket "bucket".
-bb ls -id -status scheduled chromium/bucket | bb cancel -reason unnecessary
+bb ls -id -status scheduled monyhar/bucket | bb cancel -reason unnecessary
 
 # Cancel started builds for CI builder "builder".
-bb ls -id -status started chromium/ci/builder | bb cancel -reason "bad builds"
+bb ls -id -status started monyhar/ci/builder | bb cancel -reason "bad builds"
 ```

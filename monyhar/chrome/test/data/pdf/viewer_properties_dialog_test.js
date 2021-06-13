@@ -52,7 +52,7 @@ const tests = [
      ['title', 'Sample PDF Document Info'],
      ['author', 'Chromium Authors'],
      ['subject', 'Testing'],
-     ['keywords', 'testing,chromium,pdfium,document,info'],
+     ['keywords', 'testing,monyhar,pdfium,document,info'],
      ['created', '2/5/20, 7:39:12 AM'],
      ['modified', '2/6/20, 1:42:34 AM'],
      ['application', 'Your Preferred Text Editor'],

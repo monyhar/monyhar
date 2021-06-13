@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview;
+package org.monyhar.android_webview;
 
 import android.annotation.SuppressLint;
 import android.graphics.Matrix;
 import android.graphics.Rect;
 import android.view.View;
 
-import org.chromium.base.Log;
-import org.chromium.blink.mojom.DisplayMode;
+import org.monyhar.base.Log;
+import org.monyhar.blink.mojom.DisplayMode;
 
 /**
  * Display mode controller for WebView.

@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.media;
+package org.monyhar.components.browser_ui.media;
 
 import android.util.SparseArray;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.supplier.Supplier;
+import org.monyhar.base.supplier.Supplier;
 
 /**
  * A class that manages the services/notifications for various media types.

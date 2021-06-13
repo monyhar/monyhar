@@ -23,7 +23,7 @@ struct ContentProtectionWindowStatus {
 // media/mojo/mojom/output_protection.mojom.
 // The input parameter |window_id| should be obtained from
 // PlatformWindow::GetWindowUniqueId(). A typical format might be:
-// "org.chromium.lacros.9A82A161B2A0B9BADF75E9BB958B9FCB"
+// "org.monyhar.lacros.9A82A161B2A0B9BADF75E9BB958B9FCB"
 //
 // Note that the Window abstraction, and its corresponding |window_id| are
 // communicated over Wayland IPC. There's no synchronization between Wayland and

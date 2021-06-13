@@ -22,7 +22,7 @@ from owners_file_tags import parse, uniform_path_format
 
 
 DEFAULT_MAPPING_URL = \
-    'https://storage.googleapis.com/chromium-owners/component_map.json'
+    'https://storage.googleapis.com/monyhar-owners/component_map.json'
 
 # Represent tags that may be found in OWNERS files.
 _COMPONENT = 'COMPONENT'
@@ -30,8 +30,8 @@ _TEAM = 'TEAM'
 
 # Represents the pattern of a line that contains a TEAM or COMPONENT tag. Note
 # that matching lines may not have valid formatting. For example, if {} is
-# replaced with TEAM, the line ' #TEAMS :some-team@chromium.org' matches the
-# pattern; however, the correct formatting is '# TEAM: some-team@chromium.org'.
+# replaced with TEAM, the line ' #TEAMS :some-team@monyhar.org' matches the
+# pattern; however, the correct formatting is '# TEAM: some-team@monyhar.org'.
 LINE_PATTERN = '.*#\s*{}.*:.*'
 
 def _get_entries(lines, tag):
@@ -41,7 +41,7 @@ def _get_entries(lines, tag):
 
   Args:
     lines: A list of lines from which to extract information, e.g.
-      ['liz@google.com', '# COMPONENT: UI', '# TEAM: ui-team@chromium.org'].
+      ['liz@google.com', '# COMPONENT: UI', '# TEAM: ui-team@monyhar.org'].
     tag: The string tag denoting the entry for which to extract information,
       e.g. 'COMPONENT'.
 
@@ -210,8 +210,8 @@ def main():
                 to be relative to the root directory if --root is used.
 
 Examples:
-  python %prog --root /home/<user>/chromium/src/ tools/OWNERS v8/OWNERS
-  python %prog /home/<user>/chromium/src/tools/OWNERS
+  python %prog --root /home/<user>/monyhar/src/ tools/OWNERS v8/OWNERS
+  python %prog /home/<user>/monyhar/src/tools/OWNERS
   python %prog ./OWNERS
   """
 

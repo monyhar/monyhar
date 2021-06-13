@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.contextualsearch;
+package org.monyhar.chrome.browser.contextualsearch;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -23,8 +23,8 @@ import org.junit.runners.BlockJUnit4ClassRunner;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.JniMocker;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.JniMocker;
 
 /**
  * Tests parts of the ContextualSearchContext class.

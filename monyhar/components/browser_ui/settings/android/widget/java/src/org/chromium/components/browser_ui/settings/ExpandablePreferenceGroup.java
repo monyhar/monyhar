@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.settings;
+package org.monyhar.components.browser_ui.settings;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -14,8 +14,8 @@ import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.preference.PreferenceGroup;
 import androidx.preference.PreferenceViewHolder;
 
-import org.chromium.ui.drawable.StateListDrawableBuilder;
-import org.chromium.ui.widget.CheckableImageView;
+import org.monyhar.ui.drawable.StateListDrawableBuilder;
+import org.monyhar.ui.widget.CheckableImageView;
 
 /**
  * A preference category that can be in either expanded or collapsed state. It shows expand/collapse

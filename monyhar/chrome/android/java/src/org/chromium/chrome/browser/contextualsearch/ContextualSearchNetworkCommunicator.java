@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.contextualsearch;
+package org.monyhar.chrome.browser.contextualsearch;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.url.GURL;
+import org.monyhar.url.GURL;
 
 /**
  * An interface for network communication between the Contextual Search client and server.

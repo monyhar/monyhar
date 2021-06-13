@@ -212,7 +212,7 @@ IN_PROC_BROWSER_TEST_F(MojoSandboxTest, NotIsProcessSandboxed) {
   ASSERT_TRUE(maybe_is_sandboxed.has_value());
 #if defined(OS_ANDROID)
   // Android does not support unsandboxed utility processes. See
-  // org.chromium.content.browser.ChildProcessLauncherHelperImpl#createAndStart
+  // org.monyhar.content.browser.ChildProcessLauncherHelperImpl#createAndStart
   EXPECT_TRUE(maybe_is_sandboxed.value());
 #else
   // If the content_browsertests is launched with --no-sandbox, that will

@@ -38,10 +38,10 @@ dependencies {
 }
 
 task setUpRepository(type: BuildConfigGenerator) {
-    // Paths are relative to the chromium source root.
+    // Paths are relative to the monyhar source root.
     repositoryPath 'third_party/android_deps_autorolled'
-    chromiumSourceRoot '../..'
-    cipdBucket 'chromium'
+    monyharSourceRoot '../..'
+    cipdBucket 'monyhar'
     internalTargetVisibility = [ '//third_party/android_deps:*', ':*' ]
     ignoreDEPS = true
 }

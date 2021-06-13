@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_shell_apk;
+package org.monyhar.content_shell_apk;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,16 +12,16 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.widget.Toast;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.MemoryPressureListener;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.library_loader.LibraryProcessType;
-import org.chromium.content_public.browser.BrowserStartupController;
-import org.chromium.content_public.browser.DeviceUtils;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_shell.Shell;
-import org.chromium.content_shell.ShellManager;
-import org.chromium.ui.base.ActivityWindowAndroid;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.MemoryPressureListener;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.library_loader.LibraryProcessType;
+import org.monyhar.content_public.browser.BrowserStartupController;
+import org.monyhar.content_public.browser.DeviceUtils;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_shell.Shell;
+import org.monyhar.content_shell.ShellManager;
+import org.monyhar.ui.base.ActivityWindowAndroid;
 
 /**
  * Activity for managing the Content Shell.

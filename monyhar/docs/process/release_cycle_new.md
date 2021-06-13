@@ -28,7 +28,7 @@ via enterprise policies.
 Biweekly updates (called refreshes) are shipped to both the stable and extended
 stable channels to deploy security fixes (alongside selected, low-risk
 regression fixes) and keep Chrome's
-[patch gap](https://groups.google.com/a/chromium.org/g/security-dev/c/fbiuFbW07vI)
+[patch gap](https://groups.google.com/a/monyhar.org/g/security-dev/c/fbiuFbW07vI)
 short.
 
 ## Release Cycle
@@ -41,7 +41,7 @@ milestone proceeds through our release cycle:
   above, though it is visible in the [channel lifecycle](#channel-lifecycle)
   below.
 * You can find specific dates for each milestone's development checkpoints on
-  our [release calendar](https://chromiumdash.appspot.com/schedule).
+  our [release calendar](https://monyhardash.appspot.com/schedule).
 * Some dates will vary between different platforms; see the release calendar
   for specifics dates for each platform.
 * Feature freeze and branch point dates are fixed, but release dates are

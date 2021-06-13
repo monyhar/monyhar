@@ -155,7 +155,7 @@ enum class ExecutionMode {
 
 // Pretty printers for gtest and CHECK. Declared here to avoid ODR violations.
 // See explanation at
-// https://groups.google.com/a/chromium.org/d/msg/chromium-dev/i_wOTsE5Z6g/jhtqTY6fCwAJ.
+// https://groups.google.com/a/monyhar.org/d/msg/monyhar-dev/i_wOTsE5Z6g/jhtqTY6fCwAJ.
 
 std::ostream& operator<<(std::ostream& stream, ChromePromptValue mode);
 

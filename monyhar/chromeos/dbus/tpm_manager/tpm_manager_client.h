@@ -16,11 +16,11 @@ class Bus;
 
 namespace chromeos {
 
-// TpmManagerClient is used to communicate with the org.chromium.TpmManager
+// TpmManagerClient is used to communicate with the org.monyhar.TpmManager
 // service. All method should be called from the origin thread (UI thread) which
 // initializes the DBusThreadManager instance.
 // For more information, please see
-// "chromium/src/third_party/cros_system_api/dbus/tpm_manager" for detailed
+// "monyhar/src/third_party/cros_system_api/dbus/tpm_manager" for detailed
 // definitions of the D-Bus methods and their arguments.
 class COMPONENT_EXPORT(CHROMEOS_DBUS_TPM_MANAGER) TpmManagerClient {
  public:

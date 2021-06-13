@@ -14,7 +14,7 @@ namespace weblayer {
 // WARNING: only a subset of these are used if OnlyExpandTopControlsAtPageTop
 // is true.
 //
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.weblayer_private
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.weblayer_private
 // GENERATED_JAVA_CLASS_NAME_OVERRIDE: ImplControlsVisibilityReason
 enum class ControlsVisibilityReason {
   // Browser controls are hidden when fullscreen is active.

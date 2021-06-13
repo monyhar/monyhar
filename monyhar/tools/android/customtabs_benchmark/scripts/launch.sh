@@ -6,7 +6,7 @@
 
 set -x
 
-PACKAGE_NAME="org.chromium.customtabs.test"
+PACKAGE_NAME="org.monyhar.customtabs.test"
 URL=$1
 USE_WEBVIEW=$2
 WARMUP=$3

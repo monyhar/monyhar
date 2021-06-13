@@ -83,7 +83,7 @@ AutofillProfile TestDataCreator::CreateBasicTestAddress() {
   AutofillProfile profile;
   profile.SetInfo(NAME_FULL, u"John McTester", app_locale_);
   profile.SetInfo(COMPANY_NAME, u"Test Inc.", app_locale_);
-  profile.SetInfo(EMAIL_ADDRESS, u"jmctester@fake.chromium.org", app_locale_);
+  profile.SetInfo(EMAIL_ADDRESS, u"jmctester@fake.monyhar.org", app_locale_);
   profile.SetInfo(ADDRESS_HOME_LINE1, u"123 Invented Street", app_locale_);
   profile.SetInfo(ADDRESS_HOME_LINE2, u"Suite A", app_locale_);
   profile.SetInfo(ADDRESS_HOME_CITY, u"Mountain View", app_locale_);
@@ -105,7 +105,7 @@ AutofillProfile TestDataCreator::CreateDisusedTestAddress() {
                       "%" PRIu64 " Inc.",
                       use_date.ToDeltaSinceWindowsEpoch().InMicroseconds())),
                   app_locale_);
-  profile.SetInfo(EMAIL_ADDRESS, u"polly.disused@fake.chromium.org",
+  profile.SetInfo(EMAIL_ADDRESS, u"polly.disused@fake.monyhar.org",
                   app_locale_);
   profile.SetInfo(ADDRESS_HOME_LINE1, u"456 Disused Lane", app_locale_);
   profile.SetInfo(ADDRESS_HOME_LINE2, u"Apt. B", app_locale_);
@@ -128,7 +128,7 @@ AutofillProfile TestDataCreator::CreateDisusedDeletableTestAddress() {
                       "%" PRIu64 " Inc.",
                       use_date.ToDeltaSinceWindowsEpoch().InMicroseconds())),
                   app_locale_);
-  profile.SetInfo(EMAIL_ADDRESS, u"polly.deletable@fake.chromium.org",
+  profile.SetInfo(EMAIL_ADDRESS, u"polly.deletable@fake.monyhar.org",
                   app_locale_);
   profile.SetInfo(ADDRESS_HOME_LINE1, u"459 Deletable Lane", app_locale_);
   profile.SetInfo(ADDRESS_HOME_LINE2, u"Apt. B", app_locale_);

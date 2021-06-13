@@ -27,7 +27,7 @@ class DebugDaemonClient;
 // Conservative -> Hyper-Threading disabled.
 // Performance -> Hyper-Threading enabled.
 // For more information on why H/T is configurable, see
-// https://www.chromium.org/chromium-os/mds-on-chromeos
+// https://www.monyhar.org/monyhar-os/mds-on-chromeos
 //
 class SchedulerConfigurationManager : public SchedulerConfigurationManagerBase {
  public:

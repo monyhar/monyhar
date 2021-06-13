@@ -17,7 +17,7 @@
 
 namespace chromeos {
 
-// Tracks the state associated with a single attempt to log in to chromium OS.
+// Tracks the state associated with a single attempt to log in to monyhar OS.
 // Enforces that methods are only called on the UI thread.
 class COMPONENT_EXPORT(CHROMEOS_LOGIN_AUTH) AuthAttemptState
     : public base::SupportsWeakPtr<AuthAttemptState> {

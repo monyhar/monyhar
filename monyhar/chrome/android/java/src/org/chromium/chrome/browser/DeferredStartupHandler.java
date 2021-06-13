@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.os.Handler;
 import android.os.Looper;
 
-import org.chromium.base.ThreadUtils;
+import org.monyhar.base.ThreadUtils;
 
 import java.util.LinkedList;
 import java.util.Queue;

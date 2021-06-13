@@ -8,13 +8,13 @@
     android:layout_width="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionLayout
+    <org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionLayout
         android:id="@+id/test_radio_button_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <!-- RadioButtonWithDescription - With icon and primary, without description. -->
-        <org.chromium.components.browser_ui.widget.RadioButtonWithDescription
+        <org.monyhar.components.browser_ui.widget.RadioButtonWithDescription
               android:id="@+id/icon_primary_only"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
               app:primaryText="@string/test_string" />
 
         <!-- RadioButtonWithDescription - With icon, primary and description. -->
-        <org.chromium.components.browser_ui.widget.RadioButtonWithDescription
+        <org.monyhar.components.browser_ui.widget.RadioButtonWithDescription
             android:id="@+id/icon_primary_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -31,7 +31,7 @@
             app:descriptionText="@string/test_string" />
 
         <!-- RadioButtonWithDescription - With background override. -->
-        <org.chromium.components.browser_ui.widget.RadioButtonWithDescription
+        <org.monyhar.components.browser_ui.widget.RadioButtonWithDescription
             android:id="@+id/icon_bg_override"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -40,5 +40,5 @@
             app:primaryText="@string/test_string"
             app:descriptionText="@string/test_string" />
 
-    </org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionLayout>
+    </org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionLayout>
 </FrameLayout>

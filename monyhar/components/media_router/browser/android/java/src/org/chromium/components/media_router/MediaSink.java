@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.media_router;
+package org.monyhar.components.media_router;
 
 import androidx.annotation.Nullable;
 import androidx.mediarouter.media.MediaRouter;
@@ -14,7 +14,7 @@ import com.google.android.gms.cast.CastDevice;
  * A common descriptor of a device that can present some URI.
  */
 public class MediaSink {
-    private static final String CAST_SINK_URN_PREFIX = "urn:x-org.chromium:media:sink:cast-";
+    private static final String CAST_SINK_URN_PREFIX = "urn:x-org.monyhar:media:sink:cast-";
     private final String mId;
     private final String mName;
     private final CastDevice mDevice;

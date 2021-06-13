@@ -70,14 +70,14 @@ template("test") {
     _use_default_launcher =
         !defined(invoker.use_default_launcher) || invoker.use_default_launcher
     if (!defined(invoker.use_raw_android_executable)) {
-      # Checkouts where build_with_chromium == false often have a custom GN
+      # Checkouts where build_with_monyhar == false often have a custom GN
       # template wrapper around test() which sets use_default_launcher == false.
       # Set the _use_raw_android_executable default so that test() targets which
       # do not use the custom wrapper
       # (1) Do not cause "gn gen" to fail
-      # (2) Do not need to be moved into if(build_with_chromium) block.
+      # (2) Do not need to be moved into if(build_with_monyhar) block.
       _use_raw_android_executable =
-          !build_with_chromium && _use_default_launcher
+          !build_with_monyhar && _use_default_launcher
     } else {
       not_needed([ "_use_default_launcher" ])
       _use_raw_android_executable = invoker.use_raw_android_executable
@@ -438,7 +438,7 @@ template("test") {
     target(ios_test_target_type, _test_target) {
       testonly = true
 
-      if (force_xctest && build_with_chromium) {
+      if (force_xctest && build_with_monyhar) {
         xctest_module_target = "//base/test:google_test_runner"
       }
 

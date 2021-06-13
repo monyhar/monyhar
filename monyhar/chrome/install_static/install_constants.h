@@ -31,7 +31,7 @@ enum class ChannelStrategy {
 
 // A POD-struct defining constants for a brand's install mode. A brand has one
 // primary and one or more secondary install modes. Refer to kInstallModes in
-// chromium_install_modes.cc and google_chrome_install_modes.cc for examples of
+// monyhar_install_modes.cc and google_chrome_install_modes.cc for examples of
 // typical mode definitions.
 struct InstallConstants {
   // The size (in bytes) of this structure. This serves to verify that all

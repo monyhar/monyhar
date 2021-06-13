@@ -18,5 +18,5 @@ Local Modifications:
    https://github.com/google/closure-compiler/tree/master/contrib/externs
  - Add mising assert.notStrictEqual
  - Add missing export of chai.expect
- - Applied chromium.patch so that chai.js can run within a d8 shell, which is
+ - Applied monyhar.patch so that chai.js can run within a d8 shell, which is
    used in unit_tests

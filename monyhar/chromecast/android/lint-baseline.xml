@@ -7,7 +7,7 @@
         errorLine1="    private static final String DEVICE_NAME_SETTING_KEY = Settings.Global.DEVICE_NAME;"
         errorLine2="                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="../../chromecast/base/java/src/org/chromium/chromecast/base/CastSettingsManager.java"
+            file="../../chromecast/base/java/src/org/monyhar/chromecast/base/CastSettingsManager.java"
             line="37"
             column="59"/>
     </issue>
@@ -18,7 +18,7 @@
         errorLine1="                                        .inflate(R.layout.cast_web_contents_activity, null);"
         errorLine2="                                                                                      ~~~~">
         <location
-            file="../../chromecast/browser/android/apk/src/org/chromium/chromecast/shell/CastWebContentsFragment.java"
+            file="../../chromecast/browser/android/apk/src/org/monyhar/chromecast/shell/CastWebContentsFragment.java"
             line="68"
             column="87"/>
     </issue>
@@ -29,7 +29,7 @@
         errorLine1="                        .inflate(R.layout.cast_web_contents_activity, null),"
         errorLine2="                                                                      ~~~~">
         <location
-            file="../../chromecast/browser/android/apk/src/org/chromium/chromecast/shell/CastWebContentsView.java"
+            file="../../chromecast/browser/android/apk/src/org/monyhar/chromecast/shell/CastWebContentsView.java"
             line="50"
             column="71"/>
     </issue>
@@ -37,7 +37,7 @@
     <issue
         id="MissingVersion"
         message="Should set `android:versionCode` to specify the application version"
-        errorLine1="&lt;manifest package=&quot;org.chromium.chromecast.shell&quot; xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine1="&lt;manifest package=&quot;org.monyhar.chromecast.shell&quot; xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
         errorLine2=" ~~~~~~~~">
         <location
             file="gen/chromecast/cast_shell_apk__lint/gen/cast_shell_manifest/AndroidManifest.xml"
@@ -48,7 +48,7 @@
     <issue
         id="MissingVersion"
         message="Should set `android:versionName` to specify the application version"
-        errorLine1="&lt;manifest package=&quot;org.chromium.chromecast.shell&quot; xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine1="&lt;manifest package=&quot;org.monyhar.chromecast.shell&quot; xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
         errorLine2=" ~~~~~~~~">
         <location
             file="gen/chromecast/cast_shell_apk__lint/gen/cast_shell_manifest/AndroidManifest.xml"

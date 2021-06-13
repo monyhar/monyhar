@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,9 +10,9 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
-import org.chromium.base.process_launcher.ChildConnectionAllocator;
-import org.chromium.base.process_launcher.ChildProcessConnection;
+import org.monyhar.base.Log;
+import org.monyhar.base.process_launcher.ChildConnectionAllocator;
+import org.monyhar.base.process_launcher.ChildProcessConnection;
 
 /**
  * This class is used to create a single spare ChildProcessConnection (usually early on during

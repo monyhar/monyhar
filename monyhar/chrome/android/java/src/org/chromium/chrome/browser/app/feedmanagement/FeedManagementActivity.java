@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.app.feedmanagement;
+package org.monyhar.chrome.browser.app.feedmanagement;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
-import org.chromium.base.Log;
-import org.chromium.chrome.browser.SnackbarActivity;
-import org.chromium.chrome.browser.app.followmanagement.FollowManagementActivity;
-import org.chromium.chrome.browser.feed.feedmanagement.FeedManagementCoordinator;
-import org.chromium.chrome.browser.feed.feedmanagement.FeedManagementMediator;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.browser.SnackbarActivity;
+import org.monyhar.chrome.browser.app.followmanagement.FollowManagementActivity;
+import org.monyhar.chrome.browser.feed.feedmanagement.FeedManagementCoordinator;
+import org.monyhar.chrome.browser.feed.feedmanagement.FeedManagementMediator;
 
 /**
  * Activity for managing feed and webfeed settings on the new tab page.

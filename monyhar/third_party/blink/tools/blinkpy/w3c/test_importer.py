@@ -22,7 +22,7 @@ from blinkpy.common.path_finder import PathFinder
 from blinkpy.common.system.executive import ScriptError
 from blinkpy.common.system.log_utils import configure_logging
 from blinkpy.w3c.android_wpt_expectations_updater import AndroidWPTExpectationsUpdater
-from blinkpy.w3c.chromium_exportable_commits import exportable_commits_over_last_n_commits
+from blinkpy.w3c.monyhar_exportable_commits import exportable_commits_over_last_n_commits
 from blinkpy.w3c.common import read_credentials, is_testharness_baseline, is_file_exportable, WPT_GH_URL
 from blinkpy.w3c.directory_owners_extractor import DirectoryOwnersExtractor
 from blinkpy.w3c.import_notifier import ImportNotifier
@@ -54,7 +54,7 @@ class TestImporter(object):
         self.executive = host.executive
         self.fs = host.filesystem
         self.finder = PathFinder(self.fs)
-        self.chromium_git = self.host.git(self.finder.chromium_base())
+        self.monyhar_git = self.host.git(self.finder.monyhar_base())
         self.dest_path = self.finder.path_from_web_tests('external', 'wpt')
 
         # A common.net.git_cl.GitCL instance.
@@ -116,7 +116,7 @@ class TestImporter(object):
             _log.warning('You have not set your GitHub credentials. This '
                          'script may fail with a network error when making '
                          'an API request to GitHub.')
-            _log.warning('See https://chromium.googlesource.com/chromium/src'
+            _log.warning('See https://monyhar.googlesource.com/monyhar/src'
                          '/+/main/docs/testing/web_platform_tests.md'
                          '#GitHub-credentials for instructions on how to set '
                          'your credentials up.')
@@ -126,7 +126,7 @@ class TestImporter(object):
             self.host, auth_refresh_token_json=options.auth_refresh_token_json)
 
         _log.debug('Noting the current Chromium revision.')
-        chromium_revision = self.chromium_git.latest_git_commit()
+        monyhar_revision = self.monyhar_git.latest_git_commit()
 
         # Instantiate Git after local_wpt.fetch() to make sure the path exists.
         local_wpt = LocalWPT(self.host, gh_token=gh_token)
@@ -143,10 +143,10 @@ class TestImporter(object):
         import_commit = 'wpt@%s' % self.wpt_revision
 
         _log.info('Importing %s to Chromium %s', import_commit,
-                  chromium_revision)
+                  monyhar_revision)
 
         if options.ignore_exportable_commits:
-            commit_message = self._commit_message(chromium_revision,
+            commit_message = self._commit_message(monyhar_revision,
                                                   import_commit)
         else:
             commits = self.apply_exportable_commits_locally(local_wpt)
@@ -155,7 +155,7 @@ class TestImporter(object):
                 _log.error('Aborting import to prevent clobbering commits.')
                 return 1
             commit_message = self._commit_message(
-                chromium_revision,
+                monyhar_revision,
                 import_commit,
                 locally_applied_commits=commits)
 
@@ -166,7 +166,7 @@ class TestImporter(object):
         test_copier.do_import()
 
         # TODO(robertma): Implement `add --all` in Git (it is different from `commit --all`).
-        self.chromium_git.run(['add', '--all', self.dest_path])
+        self.monyhar_git.run(['add', '--all', self.dest_path])
 
         # Remove expectations for tests that were deleted and rename tests in
         # expectations for renamed tests. This requires the old WPT manifest, so
@@ -178,7 +178,7 @@ class TestImporter(object):
         # TODO(crbug.com/800570 robertma): Re-enable it once we fix the bug.
         # self._delete_orphaned_baselines()
 
-        if not self.chromium_git.has_working_directory_changes():
+        if not self.monyhar_git.has_working_directory_changes():
             _log.info('Done: no changes to import.')
             return 0
 
@@ -186,7 +186,7 @@ class TestImporter(object):
             _log.info('Only manifest was updated; skipping the import.')
             return 0
 
-        with self._expectations_updater.prepare_smoke_tests(self.chromium_git):
+        with self._expectations_updater.prepare_smoke_tests(self.monyhar_git):
             self._commit_changes(commit_message)
             _log.info('Changes imported and committed.')
 
@@ -243,7 +243,7 @@ class TestImporter(object):
         if try_results and self.git_cl.some_failed(try_results):
             self.fetch_new_expectations_and_baselines()
             self.fetch_wpt_override_expectations()
-            if self.chromium_git.has_working_directory_changes():
+            if self.monyhar_git.has_working_directory_changes():
                 self._generate_manifest()
                 message = 'Update test expectations and baselines.'
                 self._commit_changes(message)
@@ -287,7 +287,7 @@ class TestImporter(object):
         _log.info(
             'If the rubber-stamper bot rejects the CL, you either need to '
             'modify the benign file patterns, or manually CR+1 and land the '
-            'import yourself if it touches code files. See https://chromium.'
+            'import yourself if it touches code files. See https://monyhar.'
             'googlesource.com/infra/infra/+/refs/heads/main/go/src/infra/'
             'appengine/rubber-stamper/README.md')
 
@@ -358,11 +358,11 @@ class TestImporter(object):
         return parser.parse_args(argv)
 
     def checkout_is_okay(self):
-        if self.chromium_git.has_working_directory_changes():
+        if self.monyhar_git.has_working_directory_changes():
             _log.warning('Checkout is dirty; aborting.')
             return False
         # TODO(robertma): Add a method in Git to query a range of commits.
-        local_commits = self.chromium_git.run(
+        local_commits = self.monyhar_git.run(
             ['log', '--oneline', 'origin/main..HEAD'])
         if local_commits:
             _log.warning('Checkout has local commits before import.')
@@ -391,7 +391,7 @@ class TestImporter(object):
             _log.info('Subject: %s', commit.subject().strip())
             # Log a note about the corresponding PR.
             # This might not be necessary, and could potentially be removed.
-            pull_request = self.wpt_github.pr_for_chromium_commit(commit)
+            pull_request = self.wpt_github.pr_for_monyhar_commit(commit)
             if pull_request:
                 _log.info('PR: %spull/%d', WPT_GH_URL, pull_request.number)
             else:
@@ -436,7 +436,7 @@ class TestImporter(object):
         manifest_base_path = self.fs.normpath(
             self.fs.join(self.dest_path, '..', BASE_MANIFEST_NAME))
         self.copyfile(manifest_path, manifest_base_path)
-        self.chromium_git.add_list([manifest_base_path])
+        self.monyhar_git.add_list([manifest_base_path])
 
     def _clear_out_dest_path(self):
         """Removes all files that are synced with upstream from Chromium WPT.
@@ -446,7 +446,7 @@ class TestImporter(object):
         """
         _log.info('Cleaning out tests from %s.', self.dest_path)
         should_remove = lambda fs, dirname, basename: (
-            is_file_exportable(fs.relpath(fs.join(dirname, basename), self.finder.chromium_base())))
+            is_file_exportable(fs.relpath(fs.join(dirname, basename), self.finder.monyhar_base())))
         files_to_delete = self.fs.files_under(
             self.dest_path, file_filter=should_remove)
         for subpath in files_to_delete:
@@ -454,21 +454,21 @@ class TestImporter(object):
 
     def _commit_changes(self, commit_message):
         _log.info('Committing changes.')
-        self.chromium_git.commit_locally_with_message(commit_message)
+        self.monyhar_git.commit_locally_with_message(commit_message)
 
     def _only_wpt_manifest_changed(self):
-        changed_files = self.chromium_git.changed_files()
+        changed_files = self.monyhar_git.changed_files()
         wpt_base_manifest = self.fs.relpath(
             self.fs.join(self.dest_path, '..', BASE_MANIFEST_NAME),
-            self.finder.chromium_base())
+            self.finder.monyhar_base())
         return changed_files == [wpt_base_manifest]
 
     def _commit_message(self,
-                        chromium_commit_sha,
+                        monyhar_commit_sha,
                         import_commit_sha,
                         locally_applied_commits=None):
         message = 'Import {}\n\nUsing wpt-import in Chromium {}.\n'.format(
-            import_commit_sha, chromium_commit_sha)
+            import_commit_sha, monyhar_commit_sha)
         if locally_applied_commits:
             message += 'With Chromium commits locally applied on WPT:\n'
             message += '\n'.join(
@@ -548,7 +548,7 @@ class TestImporter(object):
     def get_directory_owners(self):
         """Returns a mapping of email addresses to owners of changed tests."""
         _log.info('Gathering directory owners emails to CC.')
-        changed_files = self.chromium_git.changed_files()
+        changed_files = self.monyhar_git.changed_files()
         extractor = DirectoryOwnersExtractor(self.host)
         return extractor.list_owners(changed_files)
 
@@ -559,14 +559,14 @@ class TestImporter(object):
             directory_owners: A dict of tuples of owner names to lists of directories.
         """
         # TODO(robertma): Add a method in Git for getting the commit body.
-        description = self.chromium_git.run(['log', '-1', '--format=%B'])
+        description = self.monyhar_git.run(['log', '-1', '--format=%B'])
         description += (
             'Note to sheriffs: This CL imports external tests and adds\n'
             'expectations for those tests; if this CL is large and causes\n'
             'a few new failures, please fix the failures by adding new\n'
             'lines to TestExpectations rather than reverting. See:\n'
-            'https://chromium.googlesource.com'
-            '/chromium/src/+/main/docs/testing/web_platform_tests.md\n\n')
+            'https://monyhar.googlesource.com'
+            '/monyhar/src/+/main/docs/testing/web_platform_tests.md\n\n')
 
         if directory_owners:
             description += self._format_directory_owners(
@@ -584,9 +584,9 @@ class TestImporter(object):
         # changes or infrastructure changes from upstream.
         #
         # If this starts blocking the importer unnecessarily, revert
-        # https://chromium-review.googlesource.com/c/chromium/src/+/2451504
+        # https://monyhar-review.googlesource.com/c/monyhar/src/+/2451504
         description += (
-            'Cq-Include-Trybots: luci.chromium.try:linux-wpt-identity-fyi-rel,'
+            'Cq-Include-Trybots: luci.monyhar.try:linux-wpt-identity-fyi-rel,'
             'linux-wpt-input-fyi-rel')
 
         return description
@@ -655,8 +655,8 @@ class TestImporter(object):
     def _get_last_imported_wpt_revision(self):
         """Finds the last imported WPT revision."""
         # TODO(robertma): Only match commit subjects.
-        output = self.chromium_git.most_recent_log_matching(
-            '^Import wpt@', self.finder.chromium_base())
+        output = self.monyhar_git.most_recent_log_matching(
+            '^Import wpt@', self.finder.monyhar_base())
         # No line-start anchor (^) below because of the formatting of output.
         result = re.search(r'Import wpt@(\w+)', output)
         if result:
@@ -670,7 +670,7 @@ class TestImporter(object):
         issue = self.git_cl.run(['status', '--field=id']).strip()
         patchset = self.git_cl.run(['status', '--field=patch']).strip()
         # Construct the notifier here so that any errors won't affect the import.
-        notifier = ImportNotifier(self.host, self.chromium_git, local_wpt)
+        notifier = ImportNotifier(self.host, self.monyhar_git, local_wpt)
         notifier.main(
             self.last_wpt_revision,
             self.wpt_revision,

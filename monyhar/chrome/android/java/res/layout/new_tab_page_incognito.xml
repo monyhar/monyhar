@@ -3,7 +3,7 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
 
-<org.chromium.chrome.browser.ntp.IncognitoNewTabPageView
+<org.monyhar.chrome.browser.ntp.IncognitoNewTabPageView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/ntp_content"
     android:layout_width="match_parent"
@@ -12,7 +12,7 @@
     android:focusableInTouchMode="true"
     android:contentDescription="@string/accessibility_new_incognito_tab_page">
 
-    <org.chromium.chrome.browser.ntp.NewTabPageScrollView
+    <org.monyhar.chrome.browser.ntp.NewTabPageScrollView
         android:id="@+id/ntp_scrollview"
         android:background="@color/ntp_bg_incognito"
         android:layout_width="match_parent"
@@ -23,6 +23,6 @@
 
         <include layout="@layout/incognito_description_layout" />
 
-    </org.chromium.chrome.browser.ntp.NewTabPageScrollView>
+    </org.monyhar.chrome.browser.ntp.NewTabPageScrollView>
 
-</org.chromium.chrome.browser.ntp.IncognitoNewTabPageView>
+</org.monyhar.chrome.browser.ntp.IncognitoNewTabPageView>

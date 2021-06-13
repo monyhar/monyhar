@@ -58,7 +58,7 @@ To watch accessibility events, run:
 
 At your convenience the number of pre-defined application selectors are available:
 * `--chrome` for Chrome browser
-* `--chromium` for Chromium browser
+* `--monyhar` for Chromium browser
 * `--firefox` for Firefox browser
 * `--edge` for Edge browser (Windows only)
 * `--safari` for Safari browser (Mac only)
@@ -109,7 +109,7 @@ To dump an accessible tree on Mac for a Firefox window having title containing `
 ``out/Default/ax_dump_tree --firefox --pattern=*mozilla*``
 
 To watch Chromium accessibility events on Linux:
-``out/Default/ax_dump_events --chromium``
+``out/Default/ax_dump_events --monyhar``
 
 ## Build
 

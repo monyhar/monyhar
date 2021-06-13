@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.urlconnection;
+package org.monyhar.net.urlconnection;
 
-import org.chromium.net.ExperimentalCronetEngine;
+import org.monyhar.net.ExperimentalCronetEngine;
 
 import java.io.IOException;
 import java.net.Proxy;
@@ -18,7 +18,7 @@ import java.net.URLStreamHandler;
  *
  * CronetHttpURLStreamHandler streamHandler = new CronetHttpURLStreamHandler(myContext);
  * HttpURLConnection connection = (HttpURLConnection)streamHandler.openConnection(
- *         new URL("http://chromium.org"));</pre>
+ *         new URL("http://monyhar.org"));</pre>
  * <b>Note:</b> Cronet's {@code HttpURLConnection} implementation is subject to some limitations
  * listed {@link CronetURLStreamHandlerFactory here}.
  */

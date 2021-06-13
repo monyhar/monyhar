@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant;
+package org.monyhar.chrome.browser.autofill_assistant;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -20,13 +20,13 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.not;
 
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.checkElementExists;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.fullyCovers;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.getAbsoluteBoundingRect;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.startAutofillAssistant;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.tapElement;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntil;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilViewMatchesCondition;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.checkElementExists;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.fullyCovers;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.getAbsoluteBoundingRect;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.startAutofillAssistant;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.tapElement;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntil;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilViewMatchesCondition;
 
 import android.support.test.InstrumentationRegistry;
 
@@ -39,31 +39,31 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.base.test.util.FlakyTest;
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.autofill_assistant.proto.ActionProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ChipProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ClientSettingsProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ClientSettingsProto.IntegrationTestSettings;
-import org.chromium.chrome.browser.autofill_assistant.proto.CollectUserDataProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ElementAreaProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ElementAreaProto.Rectangle;
-import org.chromium.chrome.browser.autofill_assistant.proto.SelectorProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ShowCastProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.SupportedScriptProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.SupportedScriptProto.PresentationProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.TextInputProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.TextInputProto.InputType;
-import org.chromium.chrome.browser.autofill_assistant.proto.TextInputSectionProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.UserFormSectionProto;
-import org.chromium.chrome.browser.customtabs.CustomTabActivityTestRule;
-import org.chromium.chrome.browser.customtabs.CustomTabsTestUtils;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.util.ChromeAccessibilityUtil;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.base.test.util.FlakyTest;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ActionProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ChipProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ClientSettingsProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ClientSettingsProto.IntegrationTestSettings;
+import org.monyhar.chrome.browser.autofill_assistant.proto.CollectUserDataProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ElementAreaProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ElementAreaProto.Rectangle;
+import org.monyhar.chrome.browser.autofill_assistant.proto.SelectorProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ShowCastProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.SupportedScriptProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.SupportedScriptProto.PresentationProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.TextInputProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.TextInputProto.InputType;
+import org.monyhar.chrome.browser.autofill_assistant.proto.TextInputSectionProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.UserFormSectionProto;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivityTestRule;
+import org.monyhar.chrome.browser.customtabs.CustomTabsTestUtils;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.util.ChromeAccessibilityUtil;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -256,7 +256,7 @@ public class AutofillAssistantAccessibilityIntegrationTest {
         onView(withText("Title 1")).check(matches(isDisplayed()));
         onView(withText("Title 20")).check(matches(not(isDisplayed())));
         assertThat(checkElementExists(mTestRule.getWebContents(), "touch_area_one"), is(true));
-        onView(withId(org.chromium.components.browser_ui.bottomsheet.R.id.bottom_sheet_content))
+        onView(withId(org.monyhar.components.browser_ui.bottomsheet.R.id.bottom_sheet_content))
                 .check(matches(fullyCovers(getAbsoluteBoundingRect(mTestRule, "touch_area_one"))));
 
         // Enabling accessibility restricts the height, the element can now be tapped and will be
@@ -264,7 +264,7 @@ public class AutofillAssistantAccessibilityIntegrationTest {
         setAccessibilityEnabledForTesting(true);
         assertThat(checkElementExists(mTestRule.getWebContents(), "touch_area_one"), is(true));
         waitUntilViewMatchesCondition(
-                withId(org.chromium.components.browser_ui.bottomsheet.R.id.bottom_sheet_content),
+                withId(org.monyhar.components.browser_ui.bottomsheet.R.id.bottom_sheet_content),
                 not(fullyCovers(getAbsoluteBoundingRect(mTestRule, "touch_area_one"))));
         tapElement(mTestRule, "touch_area_one");
         waitUntil(() -> !checkElementExists(mTestRule.getWebContents(), "touch_area_one"));
@@ -274,14 +274,14 @@ public class AutofillAssistantAccessibilityIntegrationTest {
         setAccessibilityEnabledForTesting(false);
         assertThat(checkElementExists(mTestRule.getWebContents(), "touch_area_four"), is(true));
         waitUntilViewMatchesCondition(
-                withId(org.chromium.components.browser_ui.bottomsheet.R.id.bottom_sheet_content),
+                withId(org.monyhar.components.browser_ui.bottomsheet.R.id.bottom_sheet_content),
                 fullyCovers(getAbsoluteBoundingRect(mTestRule, "touch_area_four")));
 
         // Enabling accessibility again to make sure element can actually be removed.
         setAccessibilityEnabledForTesting(true);
         assertThat(checkElementExists(mTestRule.getWebContents(), "touch_area_four"), is(true));
         waitUntilViewMatchesCondition(
-                withId(org.chromium.components.browser_ui.bottomsheet.R.id.bottom_sheet_content),
+                withId(org.monyhar.components.browser_ui.bottomsheet.R.id.bottom_sheet_content),
                 not(fullyCovers(getAbsoluteBoundingRect(mTestRule, "touch_area_four"))));
         tapElement(mTestRule, "touch_area_four");
         waitUntil(() -> !checkElementExists(mTestRule.getWebContents(), "touch_area_four"));

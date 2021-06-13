@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.query_tiles;
+package org.monyhar.chrome.browser.query_tiles;
 
 import android.text.TextUtils;
 import android.view.View;
@@ -14,10 +14,10 @@ import androidx.test.espresso.matcher.BoundedMatcher;
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 
-import org.chromium.chrome.R;
-import org.chromium.components.browser_ui.widget.image_tiles.ImageTile;
-import org.chromium.components.query_tiles.QueryTile;
-import org.chromium.ui.widget.ChipView;
+import org.monyhar.chrome.R;
+import org.monyhar.components.browser_ui.widget.image_tiles.ImageTile;
+import org.monyhar.components.query_tiles.QueryTile;
+import org.monyhar.ui.widget.ChipView;
 
 /** Helper {@link Matcher}s to validate the Query Tiles UI. */
 final class TileMatchers {

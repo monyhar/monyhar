@@ -151,7 +151,7 @@ class PaintPreviewBaseServiceTest
         rejection_policy_key_.get(),
         base::BindRepeating(&BuildServiceWithRejectionPolicy));
     content::NavigationSimulator::NavigateAndCommitFromBrowser(
-        web_contents(), GURL("https://www.chromium.org"));
+        web_contents(), GURL("https://www.monyhar.org"));
   }
 
   void OverrideInterface(MockPaintPreviewRecorder* service) {

@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sync;
+package org.monyhar.chrome.browser.sync;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.chrome.test.util.browser.signin.AccountManagerTestRule;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.chrome.test.util.browser.signin.AccountManagerTestRule;
 
 /**
  * Utility class for sign-in functionalities in native Sync browser tests.

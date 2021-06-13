@@ -33,7 +33,7 @@ class JavaScriptDialogOverlayTest
     : public testing::TestWithParam<web::JavaScriptDialogType> {
  protected:
   JavaScriptDialogOverlayTest()
-      : url_("http://www.chromium.test"),
+      : url_("http://www.monyhar.test"),
         message_(@"message"),
         default_text_field_value_(@"default_text_field_value") {}
 

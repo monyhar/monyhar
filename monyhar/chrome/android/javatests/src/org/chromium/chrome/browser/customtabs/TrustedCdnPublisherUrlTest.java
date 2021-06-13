@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import android.app.Activity;
 import android.app.Instrumentation;
@@ -29,41 +29,41 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.CommandLine;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.test.util.AnnotationRule;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.firstrun.FirstRunStatus;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.offlinepages.ClientId;
-import org.chromium.chrome.browser.offlinepages.OfflinePageBridge;
-import org.chromium.chrome.browser.omnibox.UrlBar;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TrustedCdn;
-import org.chromium.chrome.browser.test.ScreenShooter;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.util.ChromeRenderTestRule;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.offlinepages.SavePageResult;
-import org.chromium.components.url_formatter.SchemeDisplay;
-import org.chromium.components.url_formatter.UrlFormatter;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.content_public.browser.test.util.TestTouchUtils;
-import org.chromium.net.NetworkChangeNotifier;
-import org.chromium.net.test.util.TestWebServer;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.test.util.AnnotationRule;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.firstrun.FirstRunStatus;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.offlinepages.ClientId;
+import org.monyhar.chrome.browser.offlinepages.OfflinePageBridge;
+import org.monyhar.chrome.browser.omnibox.UrlBar;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TrustedCdn;
+import org.monyhar.chrome.browser.test.ScreenShooter;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.util.ChromeRenderTestRule;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.offlinepages.SavePageResult;
+import org.monyhar.components.url_formatter.SchemeDisplay;
+import org.monyhar.components.url_formatter.UrlFormatter;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.content_public.browser.test.util.TestTouchUtils;
+import org.monyhar.net.NetworkChangeNotifier;
+import org.monyhar.net.test.util.TestWebServer;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -141,7 +141,7 @@ public class TrustedCdnPublisherUrlTest {
     @DisabledTest // Disabled for flakiness! See http://crbug.com/851950
     public void testHttps() throws Exception {
         runTrustedCdnPublisherUrlTest("https://www.example.com/test", "com.example.test",
-                "example.com", org.chromium.chrome.R.drawable.omnibox_https_valid);
+                "example.com", org.monyhar.chrome.R.drawable.omnibox_https_valid);
         mScreenShooter.shoot("trustedPublisherUrlHttps");
     }
 
@@ -153,7 +153,7 @@ public class TrustedCdnPublisherUrlTest {
     @DisabledTest // Disabled for flakiness! See http://crbug.com/847341
     public void testHttp() throws Exception {
         runTrustedCdnPublisherUrlTest("http://example.com/test", "com.example.test", "example.com",
-                org.chromium.chrome.R.drawable.omnibox_info);
+                org.monyhar.chrome.R.drawable.omnibox_info);
         mScreenShooter.shoot("trustedPublisherUrlHttp");
     }
 
@@ -168,12 +168,12 @@ public class TrustedCdnPublisherUrlTest {
                 + "\u0629\u002d\u0627\u0644\u0623\u062a\u0635\u0627\u0644\u0627\u062a\u002e\u0645"
                 + "\u0635\u0631\u202c\u200e";
         runTrustedCdnPublisherUrlTest("http://xn--4gbrim.xn----rmckbbajlc6dj7bxne2c.xn--wgbh1c/",
-                "com.example.test", publisher, org.chromium.chrome.R.drawable.omnibox_info);
+                "com.example.test", publisher, org.monyhar.chrome.R.drawable.omnibox_info);
         mScreenShooter.shoot("trustedPublisherUrlRtl");
     }
 
     private int getDefaultSecurityIcon() {
-        return org.chromium.chrome.R.drawable.omnibox_info;
+        return org.monyhar.chrome.R.drawable.omnibox_info;
     }
 
     @Test
@@ -416,7 +416,7 @@ public class TrustedCdnPublisherUrlTest {
         if (expectedSecurityIcon == 0) {
             Assert.assertEquals(View.INVISIBLE, securityButton.getVisibility());
         } else {
-            Assert.assertEquals(org.chromium.chrome.R.drawable.omnibox_info, expectedSecurityIcon);
+            Assert.assertEquals(org.monyhar.chrome.R.drawable.omnibox_info, expectedSecurityIcon);
             Assert.assertEquals(View.VISIBLE, securityButton.getVisibility());
 
             ColorStateList colorStateList =

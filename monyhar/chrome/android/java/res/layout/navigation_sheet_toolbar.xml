@@ -2,7 +2,7 @@
 <!-- Copyright 2019 The Chromium Authors. All rights reserved.
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
-<org.chromium.ui.widget.OptimizedFrameLayout
+<org.monyhar.ui.widget.OptimizedFrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -16,4 +16,4 @@
         android:layout_centerHorizontal="true"
         android:importantForAccessibility="no"
         android:src="@drawable/drag_handlebar" />
-</org.chromium.ui.widget.OptimizedFrameLayout>
+</org.monyhar.ui.widget.OptimizedFrameLayout>

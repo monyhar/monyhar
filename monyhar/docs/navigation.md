@@ -166,4 +166,4 @@ cases like same-document navigations, about:blank, etc. They are also not run in
 page-activation navigations, such as activating a prerendered page or restoring
 a page from the back-forward cache.
 
-[WebContentsObserver]: https://source.chromium.org/chromium/chromium/src/+/main:content/public/browser/web_contents_observer.h
+[WebContentsObserver]: https://source.monyhar.org/monyhar/monyhar/src/+/main:content/public/browser/web_contents_observer.h

@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.offlinepages;
+package org.monyhar.chrome.browser.offlinepages;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.device.DeviceConditions;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.device.DeviceConditions;
 
 /** Class allowing for mocking out calls to BackgroundSchedulerBridge.  */
 public class BackgroundSchedulerProcessor {

@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.signin.ui.account_picker;
+package org.monyhar.chrome.browser.signin.ui.account_picker;
 
 import androidx.annotation.MainThread;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.chrome.browser.signin.ui.R;
-import org.chromium.chrome.browser.signin.ui.account_picker.AccountPickerProperties.AddAccountRowProperties;
-import org.chromium.chrome.browser.signin.ui.account_picker.AccountPickerProperties.ItemType;
-import org.chromium.ui.modelutil.LayoutViewBuilder;
-import org.chromium.ui.modelutil.MVCListAdapter;
-import org.chromium.ui.modelutil.SimpleRecyclerViewAdapter;
+import org.monyhar.chrome.browser.signin.ui.R;
+import org.monyhar.chrome.browser.signin.ui.account_picker.AccountPickerProperties.AddAccountRowProperties;
+import org.monyhar.chrome.browser.signin.ui.account_picker.AccountPickerProperties.ItemType;
+import org.monyhar.ui.modelutil.LayoutViewBuilder;
+import org.monyhar.ui.modelutil.MVCListAdapter;
+import org.monyhar.ui.modelutil.SimpleRecyclerViewAdapter;
 
 /**
  * The coordinator of account picker is the only public class in the account_picker package.

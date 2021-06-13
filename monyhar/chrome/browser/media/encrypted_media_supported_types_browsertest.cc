@@ -46,7 +46,7 @@
 namespace {
 
 const char kClearKey[] = "org.w3.clearkey";
-const char kExternalClearKey[] = "org.chromium.externalclearkey";
+const char kExternalClearKey[] = "org.monyhar.externalclearkey";
 const char kWidevine[] = "com.widevine.alpha";
 
 const char kAudioWebMMimeType[] = "audio/webm";
@@ -762,7 +762,7 @@ IN_PROC_BROWSER_TEST_F(EncryptedMediaSupportedTypesExternalClearKeyTest,
 IN_PROC_BROWSER_TEST_F(EncryptedMediaSupportedTypesExternalClearKeyTest,
                        InvalidKeySystems) {
   // Case sensitive.
-  EXPECT_UNSUPPORTED(IsSupportedByKeySystem("org.chromium.ExTeRnAlClEaRkEy",
+  EXPECT_UNSUPPORTED(IsSupportedByKeySystem("org.monyhar.ExTeRnAlClEaRkEy",
                                             kVideoWebMMimeType,
                                             video_webm_codecs()));
 
@@ -771,22 +771,22 @@ IN_PROC_BROWSER_TEST_F(EncryptedMediaSupportedTypesExternalClearKeyTest,
       IsSupportedByKeySystem("org.", kVideoWebMMimeType, video_webm_codecs()));
   EXPECT_UNSUPPORTED(
       IsSupportedByKeySystem("org", kVideoWebMMimeType, video_webm_codecs()));
-  EXPECT_UNSUPPORTED(IsSupportedByKeySystem("org.chromium", kVideoWebMMimeType,
+  EXPECT_UNSUPPORTED(IsSupportedByKeySystem("org.monyhar", kVideoWebMMimeType,
                                             video_webm_codecs()));
-  EXPECT_UNSUPPORTED(IsSupportedByKeySystem("org.chromium.", kVideoWebMMimeType,
+  EXPECT_UNSUPPORTED(IsSupportedByKeySystem("org.monyhar.", kVideoWebMMimeType,
                                             video_webm_codecs()));
 
   // Incomplete.
   EXPECT_UNSUPPORTED(IsSupportedByKeySystem(
-      "org.chromium.externalclearke", kVideoWebMMimeType, video_webm_codecs()));
+      "org.monyhar.externalclearke", kVideoWebMMimeType, video_webm_codecs()));
 
   // Extra character.
-  EXPECT_UNSUPPORTED(IsSupportedByKeySystem("org.chromium.externalclearkeyz",
+  EXPECT_UNSUPPORTED(IsSupportedByKeySystem("org.monyhar.externalclearkeyz",
                                             kVideoWebMMimeType,
                                             video_webm_codecs()));
 
   // There are no child key systems for External Clear Key.
-  EXPECT_UNSUPPORTED(IsSupportedByKeySystem("org.chromium.externalclearkey.foo",
+  EXPECT_UNSUPPORTED(IsSupportedByKeySystem("org.monyhar.externalclearkey.foo",
                                             kVideoWebMMimeType,
                                             video_webm_codecs()));
 }

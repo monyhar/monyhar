@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.media_router.caf;
+package org.monyhar.components.media_router.caf;
 
 import android.net.Uri;
 
@@ -11,7 +11,7 @@ import androidx.mediarouter.media.MediaRouteSelector;
 
 import com.google.android.gms.cast.CastMediaControlIntent;
 
-import org.chromium.components.media_router.MediaSource;
+import org.monyhar.components.media_router.MediaSource;
 
 import java.util.Arrays;
 import java.util.List;

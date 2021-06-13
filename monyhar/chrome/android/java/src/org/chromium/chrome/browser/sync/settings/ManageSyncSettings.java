@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sync.settings;
+package org.monyhar.chrome.browser.sync.settings;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -30,42 +30,42 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragmentCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.AppHooks;
-import org.chromium.chrome.browser.SyncFirstSetupCompleteSource;
-import org.chromium.chrome.browser.autofill.PersonalDataManager;
-import org.chromium.chrome.browser.feedback.HelpAndFeedbackLauncherImpl;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.profiles.ProfileAccountManagementMetrics;
-import org.chromium.chrome.browser.settings.ChromeManagedPreferenceDelegate;
-import org.chromium.chrome.browser.settings.SettingsActivity;
-import org.chromium.chrome.browser.signin.services.IdentityServicesProvider;
-import org.chromium.chrome.browser.signin.services.SigninManager;
-import org.chromium.chrome.browser.signin.services.SigninMetricsUtils;
-import org.chromium.chrome.browser.signin.services.UnifiedConsentServiceBridge;
-import org.chromium.chrome.browser.signin.ui.SignOutDialogFragment;
-import org.chromium.chrome.browser.sync.SyncService;
-import org.chromium.chrome.browser.sync.TrustedVaultClient;
-import org.chromium.chrome.browser.sync.settings.SyncSettingsUtils.SyncError;
-import org.chromium.chrome.browser.sync.ui.PassphraseCreationDialogFragment;
-import org.chromium.chrome.browser.sync.ui.PassphraseDialogFragment;
-import org.chromium.chrome.browser.sync.ui.PassphraseTypeDialogFragment;
-import org.chromium.components.browser_ui.settings.ChromeSwitchPreference;
-import org.chromium.components.browser_ui.settings.SettingsUtils;
-import org.chromium.components.signin.AccountManagerFacadeProvider;
-import org.chromium.components.signin.GAIAServiceType;
-import org.chromium.components.signin.base.CoreAccountInfo;
-import org.chromium.components.signin.identitymanager.ConsentLevel;
-import org.chromium.components.signin.metrics.SignoutReason;
-import org.chromium.components.sync.ModelType;
-import org.chromium.components.sync.PassphraseType;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.ui.widget.ButtonCompat;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.AppHooks;
+import org.monyhar.chrome.browser.SyncFirstSetupCompleteSource;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager;
+import org.monyhar.chrome.browser.feedback.HelpAndFeedbackLauncherImpl;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.profiles.ProfileAccountManagementMetrics;
+import org.monyhar.chrome.browser.settings.ChromeManagedPreferenceDelegate;
+import org.monyhar.chrome.browser.settings.SettingsActivity;
+import org.monyhar.chrome.browser.signin.services.IdentityServicesProvider;
+import org.monyhar.chrome.browser.signin.services.SigninManager;
+import org.monyhar.chrome.browser.signin.services.SigninMetricsUtils;
+import org.monyhar.chrome.browser.signin.services.UnifiedConsentServiceBridge;
+import org.monyhar.chrome.browser.signin.ui.SignOutDialogFragment;
+import org.monyhar.chrome.browser.sync.SyncService;
+import org.monyhar.chrome.browser.sync.TrustedVaultClient;
+import org.monyhar.chrome.browser.sync.settings.SyncSettingsUtils.SyncError;
+import org.monyhar.chrome.browser.sync.ui.PassphraseCreationDialogFragment;
+import org.monyhar.chrome.browser.sync.ui.PassphraseDialogFragment;
+import org.monyhar.chrome.browser.sync.ui.PassphraseTypeDialogFragment;
+import org.monyhar.components.browser_ui.settings.ChromeSwitchPreference;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.components.signin.AccountManagerFacadeProvider;
+import org.monyhar.components.signin.GAIAServiceType;
+import org.monyhar.components.signin.base.CoreAccountInfo;
+import org.monyhar.components.signin.identitymanager.ConsentLevel;
+import org.monyhar.components.signin.metrics.SignoutReason;
+import org.monyhar.components.sync.ModelType;
+import org.monyhar.components.sync.PassphraseType;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.ui.widget.ButtonCompat;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -747,7 +747,7 @@ public class ManageSyncSettings extends PreferenceFragmentCompat
         RecordUserAction.record("Signin_Signin_CancelAdvancedSyncSettings");
         IdentityServicesProvider.get()
                 .getSigninManager(Profile.getLastUsedRegularProfile())
-                .signOut(org.chromium.components.signin.metrics.SignoutReason
+                .signOut(org.monyhar.components.signin.metrics.SignoutReason
                                  .USER_CLICKED_SIGNOUT_SETTINGS);
         getActivity().finish();
     }

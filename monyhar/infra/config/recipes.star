@@ -24,7 +24,7 @@ def _recipe_for_package(cipd_package):
     return recipe
 
 build_recipe = _recipe_for_package(
-    "infra/recipe_bundles/chromium.googlesource.com/chromium/tools/build",
+    "infra/recipe_bundles/monyhar.googlesource.com/monyhar/tools/build",
 )
 
 build_recipe(
@@ -40,11 +40,11 @@ build_recipe(
 )
 
 build_recipe(
-    name = "recipe:angle_chromium",
+    name = "recipe:angle_monyhar",
 )
 
 build_recipe(
-    name = "recipe:angle_chromium_trybot",
+    name = "recipe:angle_monyhar_trybot",
 )
 
 build_recipe(
@@ -69,58 +69,58 @@ build_recipe(
 )
 
 build_recipe(
-    name = "recipe:chromium",
+    name = "recipe:monyhar",
 )
 
 build_recipe(
-    name = "recipe:chromium/orchestrator",
+    name = "recipe:monyhar/orchestrator",
 )
 
 build_recipe(
-    name = "recipe:chromium/compilator",
+    name = "recipe:monyhar/compilator",
 )
 
 build_recipe(
-    name = "recipe:chromium_3pp",
+    name = "recipe:monyhar_3pp",
 )
 
 build_recipe(
-    name = "recipe:chromium_afl",
+    name = "recipe:monyhar_afl",
 )
 
 build_recipe(
-    name = "recipe:chromium_clang_coverage_tot",
+    name = "recipe:monyhar_clang_coverage_tot",
 )
 
 build_recipe(
-    name = "recipe:chromium_codesearch",
+    name = "recipe:monyhar_codesearch",
     use_bbagent = True,
 )
 
 build_recipe(
-    name = "recipe:chromium_export_metadata",
+    name = "recipe:monyhar_export_metadata",
     use_bbagent = True,
 )
 
 build_recipe(
-    name = "recipe:chromium_libfuzzer",
+    name = "recipe:monyhar_libfuzzer",
 )
 
 build_recipe(
-    name = "recipe:chromium_libfuzzer_trybot",
+    name = "recipe:monyhar_libfuzzer_trybot",
 )
 
 build_recipe(
-    name = "recipe:chromium_rts/create_model",
+    name = "recipe:monyhar_rts/create_model",
     use_bbagent = True,
 )
 
 build_recipe(
-    name = "recipe:chromium_trybot",
+    name = "recipe:monyhar_trybot",
 )
 
 build_recipe(
-    name = "recipe:chromium_upload_clang",
+    name = "recipe:monyhar_upload_clang",
 )
 
 build_recipe(
@@ -128,19 +128,19 @@ build_recipe(
 )
 
 build_recipe(
-    name = "recipe:findit/chromium/compile",
+    name = "recipe:findit/monyhar/compile",
 )
 
 build_recipe(
-    name = "recipe:findit/chromium/export_bot_db",
+    name = "recipe:findit/monyhar/export_bot_db",
 )
 
 build_recipe(
-    name = "recipe:findit/chromium/single_revision",
+    name = "recipe:findit/monyhar/single_revision",
 )
 
 build_recipe(
-    name = "recipe:findit/chromium/update_components",
+    name = "recipe:findit/monyhar/update_components",
 )
 
 build_recipe(
@@ -168,5 +168,5 @@ build_recipe(
 )
 
 build_recipe(
-    name = "recipe:webrtc/chromium_ios",
+    name = "recipe:webrtc/monyhar_ios",
 )

@@ -13,7 +13,7 @@ See below for how the process differs on ChromeOS.
 
 Shutdown starts when nothing keeps Chrome alive. Typically, this happens when
 all browser windows are closed, but other things can [keep Chrome
-alive](https://source.chromium.org/chromium/chromium/src/+/main:components/keep_alive_registry/keep_alive_types.h).
+alive](https://source.monyhar.org/monyhar/monyhar/src/+/main:components/keep_alive_registry/keep_alive_types.h).
 
 When nothing keeps Chrome alive, `BrowserProcessImpl::Unpin` asks the main
 thread's message loop to quit as soon as it no longer has tasks ready to run
@@ -99,7 +99,7 @@ content::BrowserMainRunnerImpl::Shutdown
 On ChromeOS, the ash browser is only supposed to exit when the user logs out.
 
 When the user logs out, the browser sends a `StopSession` message to the
-[session_manager](https://chromium.googlesource.com/chromiumos/platform2/+/refs/heads/main/login_manager/README.md).
+[session_manager](https://monyhar.googlesource.com/monyharos/platform2/+/refs/heads/main/login_manager/README.md).
 The session_manager then sends a SIGTERM to the main browser process to cause an
 exit. Once SIGTERM is received, it starts shutting down the main loop and
 cleaning up in the sequence described above.

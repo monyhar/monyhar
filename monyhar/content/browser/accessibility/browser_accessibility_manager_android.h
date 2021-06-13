@@ -17,7 +17,7 @@ class MotionEventAndroid;
 namespace content {
 
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.content.browser.accessibility
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.content.browser.accessibility
 enum ScrollDirection { FORWARD, BACKWARD, UP, DOWN, LEFT, RIGHT };
 
 // From android.view.accessibility.AccessibilityNodeInfo in Java:

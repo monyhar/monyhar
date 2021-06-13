@@ -115,7 +115,7 @@ TEST(PaintPreviewTrackerTest, TestAnnotateLinks) {
       base::UnguessableToken::Create();
   PaintPreviewTracker tracker(base::UnguessableToken::Create(), kEmbeddingToken,
                               true);
-  const GURL url_1("https://www.chromium.org");
+  const GURL url_1("https://www.monyhar.org");
   const auto rect_1 = SkRect::MakeXYWH(10, 20, 30, 40);
   tracker.AnnotateLink(url_1, rect_1);
 
@@ -142,7 +142,7 @@ TEST(PaintPreviewTrackerTest, TestAnnotateAndMoveLinks) {
       base::UnguessableToken::Create();
   PaintPreviewTracker tracker(base::UnguessableToken::Create(), kEmbeddingToken,
                               true);
-  const GURL url_1("https://www.chromium.org");
+  const GURL url_1("https://www.monyhar.org");
   const auto rect_1 = SkRect::MakeXYWH(10, 20, 30, 40);
   tracker.AnnotateLink(url_1, rect_1);
 
@@ -173,7 +173,7 @@ TEST(PaintPreviewTrackerTest, AnnotateLinksWithTransform) {
   PaintPreviewTracker tracker(base::UnguessableToken::Create(), kEmbeddingToken,
                               true);
 
-  const GURL url("http://www.chromium.org");
+  const GURL url("http://www.monyhar.org");
   const auto rect = SkRect::MakeXYWH(10, 20, 30, 40);
   tracker.AnnotateLink(url, rect);
 

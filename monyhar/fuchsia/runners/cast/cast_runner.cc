@@ -77,8 +77,8 @@ const uint16_t kEphemeralRemoteDebuggingPort = 0;
 // Application URL for the pseudo-component providing fuchsia.web.FrameHost.
 constexpr char kFrameHostComponentName[] = "cast:fuchsia.web.FrameHost";
 
-// Application URL for the pseudo-component providing chromium.cast.DataReset.
-constexpr char kDataResetComponentName[] = "cast:chromium.cast.DataReset";
+// Application URL for the pseudo-component providing monyhar.cast.DataReset.
+constexpr char kDataResetComponentName[] = "cast:monyhar.cast.DataReset";
 
 // Subdirectory used to stage persistent directories to be deleted upon next
 // startup.
@@ -227,9 +227,9 @@ class FrameHostComponent : public fuchsia::sys::ComponentController {
 };
 
 // TODO(crbug.com/1120914): Remove this once Component Framework v2 can be
-// used to route chromium.cast.DataReset capabilities cleanly.
+// used to route monyhar.cast.DataReset capabilities cleanly.
 class DataResetComponent : public fuchsia::sys::ComponentController,
-                           public chromium::cast::DataReset {
+                           public monyhar::cast::DataReset {
  public:
   // Creates a DataResetComponent with lifetime managed by |controller_request|.
   static void Start(base::OnceCallback<bool()> delete_persistent_data,
@@ -263,7 +263,7 @@ class DataResetComponent : public fuchsia::sys::ComponentController,
     delete this;
   }
 
-  // chromium::cast::DataReset interface.
+  // monyhar::cast::DataReset interface.
   void DeletePersistentData(DeletePersistentDataCallback callback) final {
     if (!delete_persistent_data_) {
       // Repeated requests to DeletePersistentData are not supported.
@@ -275,7 +275,7 @@ class DataResetComponent : public fuchsia::sys::ComponentController,
 
   base::OnceCallback<bool()> delete_persistent_data_;
   std::unique_ptr<base::StartupContext> startup_context_;
-  const base::ScopedServiceBinding<chromium::cast::DataReset>
+  const base::ScopedServiceBinding<monyhar::cast::DataReset>
       data_reset_handler_binding_;
   fidl::Binding<fuchsia::sys::ComponentController> binding_{this};
 };
@@ -622,7 +622,7 @@ CastRunner::GetIsolatedContextParamsForCastStreaming() {
 
 absl::optional<fuchsia::web::CreateContextParams>
 CastRunner::GetContextParamsForAppConfig(
-    chromium::cast::ApplicationConfig* app_config) {
+    monyhar::cast::ApplicationConfig* app_config) {
   absl::optional<fuchsia::web::CreateContextParams> params;
 
   if (IsAppConfigForCastStreaming(*app_config)) {
@@ -736,7 +736,7 @@ void CastRunner::StartComponentInternal(
   }
 
   // TODO(crbug.com/1120914): Remove this once Component Framework v2 can be
-  // used to route chromium.cast.DataReset capabilities cleanly.
+  // used to route monyhar.cast.DataReset capabilities cleanly.
   if (url.spec() == kDataResetComponentName) {
     DataResetComponent::Start(base::BindOnce(&CastRunner::DeletePersistentData,
                                              base::Unretained(this)),

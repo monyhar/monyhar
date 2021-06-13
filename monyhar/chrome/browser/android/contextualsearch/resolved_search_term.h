@@ -28,7 +28,7 @@
 // which encapsulates a server response for Contextual Search.
 
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.contextualsearch
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.contextualsearch
 enum QuickActionCategory {
   QUICK_ACTION_CATEGORY_NONE,
   QUICK_ACTION_CATEGORY_ADDRESS,

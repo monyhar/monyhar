@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.features.start_surface;
+package org.monyhar.chrome.features.start_surface;
 
 import static android.os.Build.VERSION_CODES.O_MR1;
 
@@ -31,23 +31,23 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
-import static org.chromium.base.test.util.CriteriaHelper.DEFAULT_MAX_TIME_TO_POLL;
-import static org.chromium.base.test.util.CriteriaHelper.DEFAULT_POLLING_INTERVAL;
-import static org.chromium.chrome.browser.tasks.tab_management.TabUiTestHelper.areAnimatorsEnabled;
-import static org.chromium.chrome.browser.tasks.tab_management.TabUiTestHelper.closeFirstTabInTabSwitcher;
-import static org.chromium.chrome.browser.tasks.tab_management.TabUiTestHelper.createTabGroup;
-import static org.chromium.chrome.browser.tasks.tab_management.TabUiTestHelper.createTabs;
-import static org.chromium.chrome.browser.tasks.tab_management.TabUiTestHelper.enterTabSwitcher;
-import static org.chromium.chrome.browser.tasks.tab_management.TabUiTestHelper.finishActivity;
-import static org.chromium.chrome.browser.tasks.tab_management.TabUiTestHelper.getSwipeToDismissAction;
-import static org.chromium.chrome.browser.tasks.tab_management.TabUiTestHelper.leaveTabSwitcher;
-import static org.chromium.chrome.browser.tasks.tab_management.TabUiTestHelper.mergeAllNormalTabsToAGroup;
-import static org.chromium.chrome.browser.tasks.tab_management.TabUiTestHelper.switchTabModel;
-import static org.chromium.chrome.browser.tasks.tab_management.TabUiTestHelper.verifyTabModelTabCount;
-import static org.chromium.chrome.browser.tasks.tab_management.TabUiTestHelper.verifyTabSwitcherCardCount;
-import static org.chromium.chrome.test.util.ViewUtils.onViewWaiting;
-import static org.chromium.chrome.test.util.ViewUtils.waitForView;
-import static org.chromium.components.embedder_support.util.UrlConstants.NTP_URL;
+import static org.monyhar.base.test.util.CriteriaHelper.DEFAULT_MAX_TIME_TO_POLL;
+import static org.monyhar.base.test.util.CriteriaHelper.DEFAULT_POLLING_INTERVAL;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabUiTestHelper.areAnimatorsEnabled;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabUiTestHelper.closeFirstTabInTabSwitcher;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabUiTestHelper.createTabGroup;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabUiTestHelper.createTabs;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabUiTestHelper.enterTabSwitcher;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabUiTestHelper.finishActivity;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabUiTestHelper.getSwipeToDismissAction;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabUiTestHelper.leaveTabSwitcher;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabUiTestHelper.mergeAllNormalTabsToAGroup;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabUiTestHelper.switchTabModel;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabUiTestHelper.verifyTabModelTabCount;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabUiTestHelper.verifyTabSwitcherCardCount;
+import static org.monyhar.chrome.test.util.ViewUtils.onViewWaiting;
+import static org.monyhar.chrome.test.util.ViewUtils.waitForView;
+import static org.monyhar.components.embedder_support.util.UrlConstants.NTP_URL;
 
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
@@ -79,71 +79,71 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.Callback;
-import org.chromium.base.GarbageCollectionTestUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.test.util.ApplicationTestUtils;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.FlakyTest;
-import org.chromium.base.test.util.MinAndroidSdkLevel;
-import org.chromium.base.test.util.Restriction;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.compositor.layouts.Layout;
-import org.chromium.chrome.browser.compositor.layouts.StaticLayout;
-import org.chromium.chrome.browser.compositor.layouts.content.TabContentManager;
-import org.chromium.chrome.browser.flags.CachedFeatureFlags;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.incognito.IncognitoUtils;
-import org.chromium.chrome.browser.night_mode.ChromeNightModeTestUtils;
-import org.chromium.chrome.browser.search_engines.TemplateUrlServiceFactory;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabLaunchType;
-import org.chromium.chrome.browser.tab.TabStateExtractor;
-import org.chromium.chrome.browser.tabmodel.TabCreator;
-import org.chromium.chrome.browser.tabmodel.TabModel;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorTabModelObserver;
-import org.chromium.chrome.browser.tasks.pseudotab.PseudoTab;
-import org.chromium.chrome.browser.tasks.pseudotab.TabAttributeCache;
-import org.chromium.chrome.browser.tasks.tab_groups.TabGroupModelFilter;
-import org.chromium.chrome.browser.tasks.tab_management.TabProperties;
-import org.chromium.chrome.browser.tasks.tab_management.TabSelectionEditorTestingRobot;
-import org.chromium.chrome.browser.tasks.tab_management.TabSuggestionMessageService;
-import org.chromium.chrome.browser.tasks.tab_management.TabSwitcher;
-import org.chromium.chrome.browser.tasks.tab_management.TabSwitcherCoordinator;
-import org.chromium.chrome.browser.tasks.tab_management.TabUiFeatureUtilities;
-import org.chromium.chrome.browser.tasks.tab_management.TabUiTestHelper;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
-import org.chromium.chrome.browser.undo_tab_close_snackbar.UndoBarController;
-import org.chromium.chrome.browser.util.ChromeAccessibilityUtil;
-import org.chromium.chrome.tab_ui.R;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.ActivityTestUtils;
-import org.chromium.chrome.test.util.ChromeRenderTestRule;
-import org.chromium.chrome.test.util.ChromeTabUtils;
-import org.chromium.chrome.test.util.MenuUtils;
-import org.chromium.chrome.test.util.OverviewModeBehaviorWatcher;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.chrome.test.util.browser.Features.DisableFeatures;
-import org.chromium.chrome.test.util.browser.Features.EnableFeatures;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.content_public.browser.test.util.WebContentsUtils;
-import org.chromium.net.test.EmbeddedTestServer;
-import org.chromium.ui.base.PageTransition;
-import org.chromium.ui.test.util.DisableAnimationsTestRule;
-import org.chromium.ui.test.util.UiRestriction;
-import org.chromium.ui.util.ColorUtils;
-import org.chromium.ui.widget.ChipView;
-import org.chromium.ui.widget.ChromeImageView;
-import org.chromium.ui.widget.ViewLookupCachingFrameLayout;
+import org.monyhar.base.Callback;
+import org.monyhar.base.GarbageCollectionTestUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.test.util.ApplicationTestUtils;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.FlakyTest;
+import org.monyhar.base.test.util.MinAndroidSdkLevel;
+import org.monyhar.base.test.util.Restriction;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.compositor.layouts.Layout;
+import org.monyhar.chrome.browser.compositor.layouts.StaticLayout;
+import org.monyhar.chrome.browser.compositor.layouts.content.TabContentManager;
+import org.monyhar.chrome.browser.flags.CachedFeatureFlags;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.incognito.IncognitoUtils;
+import org.monyhar.chrome.browser.night_mode.ChromeNightModeTestUtils;
+import org.monyhar.chrome.browser.search_engines.TemplateUrlServiceFactory;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabLaunchType;
+import org.monyhar.chrome.browser.tab.TabStateExtractor;
+import org.monyhar.chrome.browser.tabmodel.TabCreator;
+import org.monyhar.chrome.browser.tabmodel.TabModel;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorTabModelObserver;
+import org.monyhar.chrome.browser.tasks.pseudotab.PseudoTab;
+import org.monyhar.chrome.browser.tasks.pseudotab.TabAttributeCache;
+import org.monyhar.chrome.browser.tasks.tab_groups.TabGroupModelFilter;
+import org.monyhar.chrome.browser.tasks.tab_management.TabProperties;
+import org.monyhar.chrome.browser.tasks.tab_management.TabSelectionEditorTestingRobot;
+import org.monyhar.chrome.browser.tasks.tab_management.TabSuggestionMessageService;
+import org.monyhar.chrome.browser.tasks.tab_management.TabSwitcher;
+import org.monyhar.chrome.browser.tasks.tab_management.TabSwitcherCoordinator;
+import org.monyhar.chrome.browser.tasks.tab_management.TabUiFeatureUtilities;
+import org.monyhar.chrome.browser.tasks.tab_management.TabUiTestHelper;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.chrome.browser.undo_tab_close_snackbar.UndoBarController;
+import org.monyhar.chrome.browser.util.ChromeAccessibilityUtil;
+import org.monyhar.chrome.tab_ui.R;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.ActivityTestUtils;
+import org.monyhar.chrome.test.util.ChromeRenderTestRule;
+import org.monyhar.chrome.test.util.ChromeTabUtils;
+import org.monyhar.chrome.test.util.MenuUtils;
+import org.monyhar.chrome.test.util.OverviewModeBehaviorWatcher;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.chrome.test.util.browser.Features.DisableFeatures;
+import org.monyhar.chrome.test.util.browser.Features.EnableFeatures;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.content_public.browser.test.util.WebContentsUtils;
+import org.monyhar.net.test.EmbeddedTestServer;
+import org.monyhar.ui.base.PageTransition;
+import org.monyhar.ui.test.util.DisableAnimationsTestRule;
+import org.monyhar.ui.test.util.UiRestriction;
+import org.monyhar.ui.util.ColorUtils;
+import org.monyhar.ui.widget.ChipView;
+import org.monyhar.ui.widget.ChromeImageView;
+import org.monyhar.ui.widget.ViewLookupCachingFrameLayout;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -656,7 +656,7 @@ public class StartSurfaceLayoutTest {
         final int count = mTabListDelegate.getBitmapFetchCountForTesting();
         for (int i = 0; i < 3; i++) {
             MenuUtils.invokeCustomMenuActionSync(InstrumentationRegistry.getInstrumentation(),
-                    mActivityTestRule.getActivity(), org.chromium.chrome.R.id.new_tab_menu_id);
+                    mActivityTestRule.getActivity(), org.monyhar.chrome.R.id.new_tab_menu_id);
         }
         // Fetching might not happen instantly.
         Thread.sleep(1000);
@@ -681,7 +681,7 @@ public class StartSurfaceLayoutTest {
         final int count = mTabListDelegate.getBitmapFetchCountForTesting();
         for (int i = 0; i < 3; i++) {
             MenuUtils.invokeCustomMenuActionSync(InstrumentationRegistry.getInstrumentation(),
-                    mActivityTestRule.getActivity(), org.chromium.chrome.R.id.new_tab_menu_id);
+                    mActivityTestRule.getActivity(), org.monyhar.chrome.R.id.new_tab_menu_id);
         }
         // Fetching might not happen instantly.
         Thread.sleep(1000);
@@ -706,7 +706,7 @@ public class StartSurfaceLayoutTest {
         final int count = mTabListDelegate.getBitmapFetchCountForTesting();
         for (int i = 0; i < 3; i++) {
             MenuUtils.invokeCustomMenuActionSync(InstrumentationRegistry.getInstrumentation(),
-                    mActivityTestRule.getActivity(), org.chromium.chrome.R.id.new_tab_menu_id);
+                    mActivityTestRule.getActivity(), org.monyhar.chrome.R.id.new_tab_menu_id);
         }
         // Fetching might not happen instantly.
         Thread.sleep(1000);
@@ -2375,7 +2375,7 @@ public class StartSurfaceLayoutTest {
 
     private void verifyOnlyOneTabSuggestionMessageCardIsShowing() throws InterruptedException {
         String suggestionMessageTemplate = mActivityTestRule.getActivity().getString(
-                org.chromium.chrome.tab_ui.R.string.tab_suggestion_close_stale_message);
+                org.monyhar.chrome.tab_ui.R.string.tab_suggestion_close_stale_message);
         String suggestionMessage =
                 String.format(Locale.getDefault(), suggestionMessageTemplate, "3");
         prepareTabs(3, 0, mUrl);

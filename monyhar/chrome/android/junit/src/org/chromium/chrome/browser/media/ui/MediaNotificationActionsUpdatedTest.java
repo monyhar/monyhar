@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.media.ui;
+package org.monyhar.chrome.browser.media.ui;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.any;
@@ -16,10 +16,10 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.R;
-import org.chromium.components.browser_ui.media.MediaNotificationController;
-import org.chromium.media_session.mojom.MediaSessionAction;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.R;
+import org.monyhar.components.browser_ui.media.MediaNotificationController;
+import org.monyhar.media_session.mojom.MediaSessionAction;
 
 import java.util.HashSet;
 import java.util.Set;

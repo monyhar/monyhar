@@ -28,7 +28,7 @@ class PaymentHandlerHost;
 class PaymentApp {
  public:
   // The type of this app instance.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.payments
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.payments
   // GENERATED_JAVA_CLASS_NAME_OVERRIDE: PaymentAppType
   enum class Type {
     // Undefined type of payment app. Can be used for setting the default return

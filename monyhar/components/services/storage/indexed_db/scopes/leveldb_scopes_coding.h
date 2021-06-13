@@ -18,7 +18,7 @@ namespace content {
 namespace leveldb_scopes {
 
 // TODO(dmurph): Replace all of the 'static' keywords with 'inline' when
-// chromium is updated to C++17.
+// monyhar is updated to C++17.
 
 static constexpr uint8_t kGlobalMetadataByte = 0x00;
 static constexpr uint8_t kScopesMetadataByte = 0x01;

@@ -14,11 +14,11 @@ instead.
 
 | name | description |
 |------|-------------|
-| [memory-dev@chromium.org]() | Discussion group for all things memory related. Post docs, discuss bugs, etc., here. |
+| [memory-dev@monyhar.org]() | Discussion group for all things memory related. Post docs, discuss bugs, etc., here. |
 | chrome-memory@google.com | Google internal version of the above. Use sparingly. |
-| https://chromium.slack.com/messages/memory/ | Slack channel for real-time discussion with memory devs. Lots of C++ sadness too. |
-| crbug [Performance=Memory](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=Performance%3DMemory) label | Bucket with auto-filed and user-filed bugs. |
-| crbug [Stability=Memory](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=Stability%3DMemory) label | Tracks mostly OOM crashes. |
+| https://monyhar.slack.com/messages/memory/ | Slack channel for real-time discussion with memory devs. Lots of C++ sadness too. |
+| crbug [Performance=Memory](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=Performance%3DMemory) label | Bucket with auto-filed and user-filed bugs. |
+| crbug [Stability=Memory](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=Stability%3DMemory) label | Tracks mostly OOM crashes. |
 
 ## I have memory problem, what do I do?
 

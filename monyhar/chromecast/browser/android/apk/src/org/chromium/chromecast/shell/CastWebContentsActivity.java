@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.shell;
+package org.monyhar.chromecast.shell;
 
 import android.app.Activity;
 import android.content.Context;
@@ -22,14 +22,14 @@ import android.widget.FrameLayout;
 import androidx.annotation.Nullable;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
-import org.chromium.base.Log;
-import org.chromium.chromecast.base.Both;
-import org.chromium.chromecast.base.CastSwitches;
-import org.chromium.chromecast.base.Controller;
-import org.chromium.chromecast.base.Observable;
-import org.chromium.chromecast.base.Observers;
-import org.chromium.chromecast.base.Unit;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.Log;
+import org.monyhar.chromecast.base.Both;
+import org.monyhar.chromecast.base.CastSwitches;
+import org.monyhar.chromecast.base.Controller;
+import org.monyhar.chromecast.base.Observable;
+import org.monyhar.chromecast.base.Observers;
+import org.monyhar.chromecast.base.Unit;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * Activity for displaying a WebContents in CastShell.

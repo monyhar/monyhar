@@ -49,7 +49,7 @@ class PrCleanupToolTest(LoggingTestCase):
                     }
                 },
                 'owner': {
-                    'email': 'test@chromium.org'
+                    'email': 'test@monyhar.org'
                 },
             },
             api=pr_cleanup.gerrit)
@@ -89,7 +89,7 @@ class PrCleanupToolTest(LoggingTestCase):
                     }
                 },
                 'owner': {
-                    'email': 'test@chromium.org'
+                    'email': 'test@monyhar.org'
                 },
             },
             api=pr_cleanup.gerrit)
@@ -127,7 +127,7 @@ class PrCleanupToolTest(LoggingTestCase):
                     }
                 },
                 'owner': {
-                    'email': 'test@chromium.org'
+                    'email': 'test@monyhar.org'
                 },
             },
             api=pr_cleanup.gerrit)

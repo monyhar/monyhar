@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 //------------------------------------------------
-// Functions from libva protected content interface used in chromium code.
+// Functions from libva protected content interface used in monyhar code.
 //------------------------------------------------
 VAStatus vaCreateProtectedSession(VADisplay dpy, VAConfigID config_id, VAProtectedSessionID *protected_session);
 VAStatus vaDestroyProtectedSession(VADisplay dpy, VAProtectedSessionID protected_session);

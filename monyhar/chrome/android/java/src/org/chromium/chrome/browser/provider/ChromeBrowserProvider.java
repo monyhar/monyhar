@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.provider;
+package org.monyhar.chrome.browser.provider;
 
-import org.chromium.chrome.browser.base.SplitCompatContentProvider;
-import org.chromium.chrome.browser.base.SplitCompatUtils;
+import org.monyhar.chrome.browser.base.SplitCompatContentProvider;
+import org.monyhar.chrome.browser.base.SplitCompatUtils;
 
 /** See {@link ChromeBrowserProviderImpl}. */
 public class ChromeBrowserProvider extends SplitCompatContentProvider {
     public ChromeBrowserProvider() {
         super(SplitCompatUtils.getIdentifierName(
-                "org.chromium.chrome.browser.provider.ChromeBrowserProviderImpl"));
+                "org.monyhar.chrome.browser.provider.ChromeBrowserProviderImpl"));
     }
 }

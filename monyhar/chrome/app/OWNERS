@@ -3,13 +3,13 @@
 # a google employee then you also need to file a bug in which the
 # proposed strings have been approved.
 
-cpu@chromium.org
-grt@chromium.org
+cpu@monyhar.org
+grt@monyhar.org
 rockot@google.com
 
 per-file bookmarks_strings.grdp=*
 per-file chromeos_strings.grdp=*
-per-file chromium_strings.grd=*
+per-file monyhar_strings.grd=*
 per-file generated_resources.grd=*
 per-file google_chrome_strings.grd=*
 per-file extensions_strings.grdp=*
@@ -36,7 +36,7 @@ per-file profiles_strings.grdp=file://chrome/app/profiles_strings_grdp/OWNERS
 
 per-file *settings*strings*.grdp=file://chrome/browser/resources/settings/OWNERS
 
-per-file settings_chromium_strings.grdp=sauski@google.com
+per-file settings_monyhar_strings.grdp=sauski@google.com
 per-file settings_google_chrome_strings.grdp=sauski@google.com
 per-file settings_strings.grdp=sauski@google.com
 
@@ -51,11 +51,11 @@ per-file *.xtb=file://tools/translation/TRANSLATION_OWNERS
 
 per-file *.plist=file://chrome/browser/ui/cocoa/OWNERS
 
-per-file chrome_crash_reporter_client*=scottmg@chromium.org
-per-file chrome_crash_reporter_client*=rsesek@chromium.org
+per-file chrome_crash_reporter_client*=scottmg@monyhar.org
+per-file chrome_crash_reporter_client*=rsesek@monyhar.org
 
-per-file chrome_exe_main_mac.cc=kerrnel@chromium.org
-per-file chrome_exe_main_mac.cc=mark@chromium.org
+per-file chrome_exe_main_mac.cc=kerrnel@monyhar.org
+per-file chrome_exe_main_mac.cc=mark@monyhar.org
 
-per-file main_dll_loader_win.cc=brucedawson@chromium.org
-per-file main_dll_loader_win.cc=wfh@chromium.org
+per-file main_dll_loader_win.cc=brucedawson@monyhar.org
+per-file main_dll_loader_win.cc=wfh@monyhar.org

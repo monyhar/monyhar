@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.util.browser;
+package org.monyhar.chrome.test.util.browser;
 
 import android.annotation.TargetApi;
 import android.os.Build;
@@ -10,12 +10,12 @@ import android.os.Build;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.browser_ui.styles.ChromeColors;
-import org.chromium.ui.util.ColorUtils;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.browser_ui.styles.ChromeColors;
+import org.monyhar.ui.util.ColorUtils;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;

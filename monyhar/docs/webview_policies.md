@@ -14,7 +14,7 @@ to expose policy information. If developers want to change their app's behavior
 depending on that, they can [read them][2] as they have access to the
 App Restrictions.
 
-Please see the [Policy List on chromium.org][2] for more information and the
+Please see the [Policy List on monyhar.org][2] for more information and the
 list of supported policies.
 
 [3]: https://developer.android.com/training/enterprise/work-policy-ctrl.html#apply_restrictions

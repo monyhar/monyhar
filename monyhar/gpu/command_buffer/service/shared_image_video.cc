@@ -289,7 +289,7 @@ class SharedImageRepresentationVideoSkiaVk
       // image created here at [1] as well the fullfil image created via the
       // current function call are consistent and both are using
       // VK_IMAGE_TILING_OPTIMAL. [1] -
-      // https://cs.chromium.org/chromium/src/components/viz/service/display_embedder/skia_output_surface_impl.cc?rcl=db5ffd448ba5d66d9d3c5c099754e5067c752465&l=789.
+      // https://cs.monyhar.org/monyhar/src/components/viz/service/display_embedder/skia_output_surface_impl.cc?rcl=db5ffd448ba5d66d9d3c5c099754e5067c752465&l=789.
       DCHECK_EQ(static_cast<int32_t>(vulkan_image_->image_tiling()),
                 static_cast<int32_t>(VK_IMAGE_TILING_OPTIMAL));
 

@@ -1,8 +1,8 @@
 set noparent
-blundell@chromium.org
-jam@chromium.org
+blundell@monyhar.org
+jam@monyhar.org
 rockot@google.com
-sky@chromium.org
+sky@monyhar.org
 
 # For adding or removing languages.
-per-file *.grd=claudiomagni@chromium.org
+per-file *.grd=claudiomagni@monyhar.org

@@ -12,7 +12,7 @@
 class GURL;
 
 // WebApkUkmRecorder is the C++ counterpart of
-// org.chromium.chrome.browser.webapps's WebApkUkmRecorder in Java.
+// org.monyhar.chrome.browser.webapps's WebApkUkmRecorder in Java.
 // It contains static WebAPK UKM metrics-recording logic, and only
 // needs to be in a class so that it can be a friend of ukm::UkmRecorder.
 // All of the actual JNI goes through raw functions in webapk_ukm_recorder.cc to

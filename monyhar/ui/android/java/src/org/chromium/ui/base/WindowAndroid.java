@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.base;
+package org.monyhar.ui.base;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -30,26 +30,26 @@ import android.view.accessibility.AccessibilityManager;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.LifetimeAssert;
-import org.chromium.base.Log;
-import org.chromium.base.ObserverList;
-import org.chromium.base.PackageManagerUtils;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.UnownedUserDataHost;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.compat.ApiHelperForO;
-import org.chromium.base.compat.ApiHelperForOMR1;
-import org.chromium.ui.KeyboardVisibilityDelegate;
-import org.chromium.ui.display.DisplayAndroid;
-import org.chromium.ui.display.DisplayAndroid.DisplayAndroidObserver;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.LifetimeAssert;
+import org.monyhar.base.Log;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.PackageManagerUtils;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.UnownedUserDataHost;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.compat.ApiHelperForO;
+import org.monyhar.base.compat.ApiHelperForOMR1;
+import org.monyhar.ui.KeyboardVisibilityDelegate;
+import org.monyhar.ui.display.DisplayAndroid;
+import org.monyhar.ui.display.DisplayAndroid.DisplayAndroidObserver;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.widget.Toast;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;

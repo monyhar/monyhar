@@ -49,7 +49,7 @@ namespace {
 // 70%, down from over 290kb to under 85kb on ARM.
 //
 // For details, see:
-//   https://code.google.com/p/chromium/issues/detail?id=502299
+//   https://code.google.com/p/monyhar/issues/detail?id=502299
 //   https://llvm.org/svn/llvm-project/libcxxabi/trunk/src/cxa_demangle.cpp
 extern "C" char* __cxa_demangle(const char* mangled_name,
                                 char* buf,

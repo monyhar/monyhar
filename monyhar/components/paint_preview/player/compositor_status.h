@@ -11,7 +11,7 @@ namespace paint_preview {
 // entry for TabbedPaintPreviewCompositorFailureReason in enums.xml.
 
 // GENERATED_JAVA_ENUM_PACKAGE: (
-//   org.chromium.components.paintpreview.player)
+//   org.monyhar.components.paintpreview.player)
 enum class CompositorStatus : int {
   OK,
   URL_MISMATCH,

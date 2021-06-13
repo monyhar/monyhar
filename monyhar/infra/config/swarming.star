@@ -26,7 +26,7 @@ swarming.root_permissions()
 swarming.task_accounts(
     realm = "@root",  # i.e. inherit by all realms
     groups = [
-        "project-chromium-test-task-accounts",
+        "project-monyhar-test-task-accounts",
     ],
     users = [
         # TODO(crbug.com/793982): Migrate uses of this account to a dedicated
@@ -39,7 +39,7 @@ swarming.task_accounts(
 # LED users that can trigger tasks in *any* realm in *any* pool.
 #
 # This should be used relatively sparingly. Prefer to configure the permissions
-# more precisely. E.g. see "chromium-led-users" below.
+# more precisely. E.g. see "monyhar-led-users" below.
 swarming.task_triggerers(
     builder_realm = "@root",
     pool_realm = "@root",
@@ -53,7 +53,7 @@ swarming.task_triggerers(
 #
 # The tasks here are triggered via Buildbucket (which authenticates as
 # "project:<project that defines the bucket>"), so we enumerate projects
-# (besides "project:chromium" itself) that are allowed to use Chromium CI pools
+# (besides "project:monyhar" itself) that are allowed to use Chromium CI pools
 # in their Buildbucket configs (which are currently only per-milestone Chromium
 # projects).
 swarming.pool_realm(
@@ -65,7 +65,7 @@ swarming.task_triggerers(
     builder_realm = "ci",
     pool_realm = "pools/ci",
     users = [
-        "chromium-ci-builder@chops-service-accounts.iam.gserviceaccount.com",
+        "monyhar-ci-builder@chops-service-accounts.iam.gserviceaccount.com",
 
         # Used by Findit to re-run swarming tasks for bisection purposes.
         "findit-for-me@appspot.gserviceaccount.com",
@@ -85,7 +85,7 @@ swarming.task_triggerers(
     builder_realm = "try",
     pool_realm = "pools/try",
     groups = [
-        "chromium-led-users",
+        "monyhar-led-users",
     ],
     users = [
         # An account used by "Build Recipes Tester" builder infra/try bucket
@@ -102,9 +102,9 @@ swarming.pool_realm(
     name = "pools/tests",
     groups = [
         # Various Chromium CI and Try LUCI builders that trigger isolated tests.
-        "project-chromium-ci-task-accounts",
-        "project-chromium-findit-task-accounts",
-        "project-chromium-try-task-accounts",
+        "project-monyhar-ci-task-accounts",
+        "project-monyhar-findit-task-accounts",
+        "project-monyhar-try-task-accounts",
 
         # DevTools uses Chrome pools for Layout tests.
         "project-devtools-frontend-ci-task-accounts",
@@ -129,7 +129,7 @@ swarming.pool_realm(
         # Skia uses this pool directly.
         "skia-external-ct-skps@skia-swarming-bots.iam.gserviceaccount.com",
         # TODO(borenet): Remove the below after we're fully switched to Kitchen.
-        "chromium-swarm-bots@skia-swarming-bots.iam.gserviceaccount.com",
+        "monyhar-swarm-bots@skia-swarming-bots.iam.gserviceaccount.com",
     ],
 )
 
@@ -140,7 +140,7 @@ swarming.pool_realm(
 swarming.task_triggerers(
     builder_realm = "try",
     pool_realm = "pools/tests",
-    groups = ["project-chromium-tryjob-access"],
+    groups = ["project-monyhar-tryjob-access"],
 )
 
 # A separate realm for mac-arm64 bots, since they have different permissions.
@@ -148,7 +148,7 @@ swarming.pool_realm(
     name = "pools/tests-mac-arm64",
     groups = [
         # Allow CI builders (mac-arm64-rel-tests) to trigger tests.
-        "project-chromium-ci-task-accounts",
+        "project-monyhar-ci-task-accounts",
         # V8 *CI* is using these Macs, too.
         "project-v8-ci-task-accounts",
     ],
@@ -161,6 +161,6 @@ swarming.task_triggerers(
     groups = [
         # Allowlist of people working on the mac-arm64 project. Contact
         # srinivassista@ for access.
-        "project-chromium-mac-arm64-tests-access",
+        "project-monyhar-mac-arm64-tests-access",
     ],
 )

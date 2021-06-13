@@ -5,7 +5,7 @@ from benchmarks import blink_perf
 from telemetry import benchmark
 
 # pylint: disable=protected-access
-@benchmark.Info(emails=['cbiesinger@chromium.org'],
+@benchmark.Info(emails=['cbiesinger@monyhar.org'],
                 documentation_url='https://bit.ly/blink-perf-benchmarks')
 class BlinkPerfLayoutNg(blink_perf._BlinkPerfBenchmark):
   SUBDIR = 'layout'
@@ -19,7 +19,7 @@ class BlinkPerfLayoutNg(blink_perf._BlinkPerfBenchmark):
     return 'blink_perf.layout_ng'
 
 # pylint: disable=protected-access
-@benchmark.Info(emails=['cbiesinger@chromium.org'],
+@benchmark.Info(emails=['cbiesinger@monyhar.org'],
                 documentation_url='https://bit.ly/blink-perf-benchmarks')
 class BlinkPerfParserLayoutNg(blink_perf._BlinkPerfBenchmark):
   SUBDIR = 'parser'
@@ -33,7 +33,7 @@ class BlinkPerfParserLayoutNg(blink_perf._BlinkPerfBenchmark):
     return 'blink_perf.parser_layout_ng'
 
 # pylint: disable=protected-access
-@benchmark.Info(emails=['cbiesinger@chromium.org'],
+@benchmark.Info(emails=['cbiesinger@monyhar.org'],
                 documentation_url='https://bit.ly/blink-perf-benchmarks')
 class BlinkPerfPaintLayoutNg(blink_perf._BlinkPerfBenchmark):
   SUBDIR = 'paint'

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.paintpreview.player;
+package org.monyhar.components.paintpreview.player;
 
 import android.graphics.Bitmap;
 import android.graphics.Rect;
@@ -11,15 +11,15 @@ import android.text.TextUtils;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
-import org.chromium.base.SysUtils;
-import org.chromium.base.UnguessableToken;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.paint_preview.common.proto.PaintPreview.PaintPreviewProto;
-import org.chromium.components.paintpreview.browser.NativePaintPreviewServiceProvider;
-import org.chromium.url.GURL;
+import org.monyhar.base.Callback;
+import org.monyhar.base.SysUtils;
+import org.monyhar.base.UnguessableToken;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.paint_preview.common.proto.PaintPreview.PaintPreviewProto;
+import org.monyhar.components.paintpreview.browser.NativePaintPreviewServiceProvider;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.List;

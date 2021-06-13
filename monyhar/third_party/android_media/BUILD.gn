@@ -18,9 +18,9 @@ android_resources("android_media_resources") {
 }
 
 android_library("android_media_java") {
-  resources_package = "org.chromium.third_party.android.media"
+  resources_package = "org.monyhar.third_party.android.media"
   sources =
-      [ "java/src/org/chromium/third_party/android/media/MediaController.java" ]
+      [ "java/src/org/monyhar/third_party/android/media/MediaController.java" ]
   deps = [
     ":android_media_resources",
     "//third_party/android_deps:android_support_v7_appcompat_java",

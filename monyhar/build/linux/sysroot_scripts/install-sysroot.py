@@ -3,7 +3,7 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
-"""Install Debian sysroots for building chromium.
+"""Install Debian sysroots for building monyhar.
 """
 
 # The sysroot is needed to ensure that binaries that get built will run on
@@ -13,7 +13,7 @@
 
 # The sysroot image could be constructed from scratch based on the current state
 # of the Debian archive but for consistency we use a pre-built root image (we
-# don't want upstream changes to Debian to effect the chromium build until we
+# don't want upstream changes to Debian to effect the monyhar build until we
 # choose to pull them in). The images will normally need to be rebuilt every
 # time chrome's build dependencies are changed but should also be updated
 # periodically to include upstream security fixes from Debian.

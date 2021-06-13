@@ -48,8 +48,8 @@ source_set("unit_tests") {
 
 generate_jni("jni_headers") {
   sources = [
-    "java/src/org/chromium/components/paintpreview/player/PlayerCompositorDelegateImpl.java",
-    "java/src/org/chromium/components/paintpreview/player/accessibility/PlayerAccessibilitySnapshotHelper.java",
+    "java/src/org/monyhar/components/paintpreview/player/PlayerCompositorDelegateImpl.java",
+    "java/src/org/monyhar/components/paintpreview/player/accessibility/PlayerAccessibilitySnapshotHelper.java",
   ]
 }
 
@@ -57,34 +57,34 @@ android_library("java") {
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
 
   sources = [
-    "java/src/org/chromium/components/paintpreview/player/LinkClickHandler.java",
-    "java/src/org/chromium/components/paintpreview/player/OverscrollHandler.java",
-    "java/src/org/chromium/components/paintpreview/player/PaintPreviewFrame.java",
-    "java/src/org/chromium/components/paintpreview/player/PlayerCompositorDelegate.java",
-    "java/src/org/chromium/components/paintpreview/player/PlayerCompositorDelegateImpl.java",
-    "java/src/org/chromium/components/paintpreview/player/PlayerGestureListener.java",
-    "java/src/org/chromium/components/paintpreview/player/PlayerManager.java",
-    "java/src/org/chromium/components/paintpreview/player/PlayerSwipeRefreshHandler.java",
-    "java/src/org/chromium/components/paintpreview/player/PlayerUserActionRecorder.java",
-    "java/src/org/chromium/components/paintpreview/player/PlayerUserFrustrationDetector.java",
-    "java/src/org/chromium/components/paintpreview/player/accessibility/PlayerAccessibilityDelegate.java",
-    "java/src/org/chromium/components/paintpreview/player/accessibility/PlayerAccessibilitySnapshotHelper.java",
-    "java/src/org/chromium/components/paintpreview/player/frame/CompressibleBitmap.java",
-    "java/src/org/chromium/components/paintpreview/player/frame/PlayerFrameBitmapPainter.java",
-    "java/src/org/chromium/components/paintpreview/player/frame/PlayerFrameBitmapState.java",
-    "java/src/org/chromium/components/paintpreview/player/frame/PlayerFrameBitmapStateController.java",
-    "java/src/org/chromium/components/paintpreview/player/frame/PlayerFrameCoordinator.java",
-    "java/src/org/chromium/components/paintpreview/player/frame/PlayerFrameGestureDetector.java",
-    "java/src/org/chromium/components/paintpreview/player/frame/PlayerFrameGestureDetectorDelegate.java",
-    "java/src/org/chromium/components/paintpreview/player/frame/PlayerFrameMediator.java",
-    "java/src/org/chromium/components/paintpreview/player/frame/PlayerFrameMediatorDelegate.java",
-    "java/src/org/chromium/components/paintpreview/player/frame/PlayerFrameProperties.java",
-    "java/src/org/chromium/components/paintpreview/player/frame/PlayerFrameScaleController.java",
-    "java/src/org/chromium/components/paintpreview/player/frame/PlayerFrameScrollController.java",
-    "java/src/org/chromium/components/paintpreview/player/frame/PlayerFrameView.java",
-    "java/src/org/chromium/components/paintpreview/player/frame/PlayerFrameViewBinder.java",
-    "java/src/org/chromium/components/paintpreview/player/frame/PlayerFrameViewDelegate.java",
-    "java/src/org/chromium/components/paintpreview/player/frame/PlayerFrameViewport.java",
+    "java/src/org/monyhar/components/paintpreview/player/LinkClickHandler.java",
+    "java/src/org/monyhar/components/paintpreview/player/OverscrollHandler.java",
+    "java/src/org/monyhar/components/paintpreview/player/PaintPreviewFrame.java",
+    "java/src/org/monyhar/components/paintpreview/player/PlayerCompositorDelegate.java",
+    "java/src/org/monyhar/components/paintpreview/player/PlayerCompositorDelegateImpl.java",
+    "java/src/org/monyhar/components/paintpreview/player/PlayerGestureListener.java",
+    "java/src/org/monyhar/components/paintpreview/player/PlayerManager.java",
+    "java/src/org/monyhar/components/paintpreview/player/PlayerSwipeRefreshHandler.java",
+    "java/src/org/monyhar/components/paintpreview/player/PlayerUserActionRecorder.java",
+    "java/src/org/monyhar/components/paintpreview/player/PlayerUserFrustrationDetector.java",
+    "java/src/org/monyhar/components/paintpreview/player/accessibility/PlayerAccessibilityDelegate.java",
+    "java/src/org/monyhar/components/paintpreview/player/accessibility/PlayerAccessibilitySnapshotHelper.java",
+    "java/src/org/monyhar/components/paintpreview/player/frame/CompressibleBitmap.java",
+    "java/src/org/monyhar/components/paintpreview/player/frame/PlayerFrameBitmapPainter.java",
+    "java/src/org/monyhar/components/paintpreview/player/frame/PlayerFrameBitmapState.java",
+    "java/src/org/monyhar/components/paintpreview/player/frame/PlayerFrameBitmapStateController.java",
+    "java/src/org/monyhar/components/paintpreview/player/frame/PlayerFrameCoordinator.java",
+    "java/src/org/monyhar/components/paintpreview/player/frame/PlayerFrameGestureDetector.java",
+    "java/src/org/monyhar/components/paintpreview/player/frame/PlayerFrameGestureDetectorDelegate.java",
+    "java/src/org/monyhar/components/paintpreview/player/frame/PlayerFrameMediator.java",
+    "java/src/org/monyhar/components/paintpreview/player/frame/PlayerFrameMediatorDelegate.java",
+    "java/src/org/monyhar/components/paintpreview/player/frame/PlayerFrameProperties.java",
+    "java/src/org/monyhar/components/paintpreview/player/frame/PlayerFrameScaleController.java",
+    "java/src/org/monyhar/components/paintpreview/player/frame/PlayerFrameScrollController.java",
+    "java/src/org/monyhar/components/paintpreview/player/frame/PlayerFrameView.java",
+    "java/src/org/monyhar/components/paintpreview/player/frame/PlayerFrameViewBinder.java",
+    "java/src/org/monyhar/components/paintpreview/player/frame/PlayerFrameViewDelegate.java",
+    "java/src/org/monyhar/components/paintpreview/player/frame/PlayerFrameViewport.java",
   ]
 
   srcjar_deps = [ ":compositor_status_generated_enum" ]
@@ -107,9 +107,9 @@ android_library("player_java_test_support") {
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
 
   sources = [
-    "javatests/src/org/chromium/components/paintpreview/player/FrameData.java",
-    "javatests/src/org/chromium/components/paintpreview/player/PaintPreviewTestRule.java",
-    "javatests/src/org/chromium/components/paintpreview/player/PaintPreviewTestService.java",
+    "javatests/src/org/monyhar/components/paintpreview/player/FrameData.java",
+    "javatests/src/org/monyhar/components/paintpreview/player/PaintPreviewTestRule.java",
+    "javatests/src/org/monyhar/components/paintpreview/player/PaintPreviewTestService.java",
   ]
 
   deps = [
@@ -131,7 +131,7 @@ android_library("player_java_test_support") {
 android_library("javatests") {
   testonly = true
 
-  sources = [ "javatests/src/org/chromium/components/paintpreview/player/PaintPreviewPlayerTest.java" ]
+  sources = [ "javatests/src/org/monyhar/components/paintpreview/player/PaintPreviewPlayerTest.java" ]
   deps = [
     ":java",
     ":player_java_test_support",
@@ -154,7 +154,7 @@ android_library("javatests") {
 generate_jni("javatests_jni_headers") {
   testonly = true
 
-  sources = [ "javatests/src/org/chromium/components/paintpreview/player/PaintPreviewTestService.java" ]
+  sources = [ "javatests/src/org/monyhar/components/paintpreview/player/PaintPreviewTestService.java" ]
 }
 
 source_set("test_support") {
@@ -176,16 +176,16 @@ source_set("test_support") {
 
 junit_binary("paint_preview_junit_tests") {
   sources = [
-    "junit/src/org/chromium/components/paintpreview/player/PlayerManagerTest.java",
-    "junit/src/org/chromium/components/paintpreview/player/PlayerUserFrustrationDetectorTest.java",
-    "junit/src/org/chromium/components/paintpreview/player/frame/CompressibleBitmapTest.java",
-    "junit/src/org/chromium/components/paintpreview/player/frame/PaintPreviewCustomFlingingShadowScroller.java",
-    "junit/src/org/chromium/components/paintpreview/player/frame/PlayerFrameBitmapPainterTest.java",
-    "junit/src/org/chromium/components/paintpreview/player/frame/PlayerFrameCoordinatorTest.java",
-    "junit/src/org/chromium/components/paintpreview/player/frame/PlayerFrameMediatorTest.java",
-    "junit/src/org/chromium/components/paintpreview/player/frame/PlayerFrameScaleControllerTest.java",
-    "junit/src/org/chromium/components/paintpreview/player/frame/PlayerFrameScrollControllerTest.java",
-    "junit/src/org/chromium/components/paintpreview/player/frame/PlayerFrameViewportTest.java",
+    "junit/src/org/monyhar/components/paintpreview/player/PlayerManagerTest.java",
+    "junit/src/org/monyhar/components/paintpreview/player/PlayerUserFrustrationDetectorTest.java",
+    "junit/src/org/monyhar/components/paintpreview/player/frame/CompressibleBitmapTest.java",
+    "junit/src/org/monyhar/components/paintpreview/player/frame/PaintPreviewCustomFlingingShadowScroller.java",
+    "junit/src/org/monyhar/components/paintpreview/player/frame/PlayerFrameBitmapPainterTest.java",
+    "junit/src/org/monyhar/components/paintpreview/player/frame/PlayerFrameCoordinatorTest.java",
+    "junit/src/org/monyhar/components/paintpreview/player/frame/PlayerFrameMediatorTest.java",
+    "junit/src/org/monyhar/components/paintpreview/player/frame/PlayerFrameScaleControllerTest.java",
+    "junit/src/org/monyhar/components/paintpreview/player/frame/PlayerFrameScrollControllerTest.java",
+    "junit/src/org/monyhar/components/paintpreview/player/frame/PlayerFrameViewportTest.java",
   ]
   deps = [
     ":java",

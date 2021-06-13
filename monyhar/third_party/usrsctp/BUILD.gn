@@ -122,11 +122,11 @@ static_library("usrsctp") {
     # "SCTP_DEBUG", # Uncomment for SCTP debugging.
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
 
-    # These must be after no_chromium_code for warning flags to be ordered
+    # These must be after no_monyhar_code for warning flags to be ordered
     # correctly.
     "//build/config/compiler:no_incompatible_pointer_warnings",
     ":usrsctp_warnings",

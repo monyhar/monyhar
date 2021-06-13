@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.base;
+package org.monyhar.chrome.browser.base;
 
 import android.content.Context;
 
-import org.chromium.android_webview.nonembedded.WebViewApkApplication;
-import org.chromium.base.library_loader.LibraryProcessType;
-import org.chromium.chrome.browser.version.ChromeVersionInfo;
-import org.chromium.content_public.browser.ChildProcessCreationParams;
+import org.monyhar.android_webview.nonembedded.WebViewApkApplication;
+import org.monyhar.base.library_loader.LibraryProcessType;
+import org.monyhar.chrome.browser.version.ChromeVersionInfo;
+import org.monyhar.content_public.browser.ChildProcessCreationParams;
 
 /**
  * Application class to use for Monochrome when //chrome code is in an isolated split. See {@link
@@ -30,7 +30,7 @@ public class SplitMonochromeApplication extends SplitChromeApplication {
 
     public SplitMonochromeApplication() {
         super(SplitCompatUtils.getIdentifierName(
-                "org.chromium.chrome.browser.MonochromeApplicationImpl"));
+                "org.monyhar.chrome.browser.MonochromeApplicationImpl"));
     }
 
     @Override

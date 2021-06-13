@@ -319,7 +319,7 @@ const char* const kNormalisedKeyValue[] = {
 //   See https://github.com/w3c/webdriver/pull/1384.
 // * Replaced "OSLeft" and "OSRight" with "MetaLeft" and "MetaRight", to be
 //   compatible with Chrome.
-//   TODO(johnchen@chromium.org): Find a better way to handle this.
+//   TODO(johnchen@monyhar.org): Find a better way to handle this.
 const struct {
   char16_t key;
   char16_t alternate_key;

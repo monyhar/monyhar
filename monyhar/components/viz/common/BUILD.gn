@@ -435,14 +435,14 @@ if (is_android) {
   android_library("common_java") {
     deps = [ "//base:base_java" ]
     sources = [
-      "java/src/org/chromium/components/viz/common/VizSwitches.java",
-      "java/src/org/chromium/components/viz/common/display/DeJellyUtils.java",
+      "java/src/org/monyhar/components/viz/common/VizSwitches.java",
+      "java/src/org/monyhar/components/viz/common/display/DeJellyUtils.java",
     ]
   }
 
   generate_jni("common_jni_headers") {
     sources = [
-      "java/src/org/chromium/components/viz/common/display/DeJellyUtils.java",
+      "java/src/org/monyhar/components/viz/common/display/DeJellyUtils.java",
     ]
   }
 }

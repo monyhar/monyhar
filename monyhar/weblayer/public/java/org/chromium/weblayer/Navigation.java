@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer;
+package org.monyhar.weblayer;
 
 import android.net.Uri;
 import android.os.RemoteException;
@@ -10,9 +10,9 @@ import android.os.RemoteException;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.weblayer_private.interfaces.APICallException;
-import org.chromium.weblayer_private.interfaces.IClientNavigation;
-import org.chromium.weblayer_private.interfaces.INavigation;
+import org.monyhar.weblayer_private.interfaces.APICallException;
+import org.monyhar.weblayer_private.interfaces.IClientNavigation;
+import org.monyhar.weblayer_private.interfaces.INavigation;
 
 import java.util.ArrayList;
 import java.util.HashMap;

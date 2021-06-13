@@ -10,7 +10,7 @@ usage, only extensions listed in
 policy will be allowed to access this key via chrome.platformKeys and
 chrome.enterprise.platformKeys APIs. Key Usages are considered to be
 properties / metadata attached to keys themselves. This metadata was
-historically persisted in a chromium Preference, but is now being migrated to
+historically persisted in a monyhar Preference, but is now being migrated to
 the backing key store (which is implemented by the chaps daemon on Chrome OS).
 
 Usage of keys/certificates for network authentication and TLS client

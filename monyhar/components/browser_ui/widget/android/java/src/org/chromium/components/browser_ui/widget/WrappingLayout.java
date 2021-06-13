@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget;
+package org.monyhar.components.browser_ui.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -19,7 +19,7 @@ import java.util.ArrayList;
  * Accounts for padding set on self and margins on children, but uniform spacing between elements
  * can be set through attributes, e.g.:
  *
- *     <org.chromium.components.browser_ui.widget.WrappingLayout
+ *     <org.monyhar.components.browser_ui.widget.WrappingLayout
  *         android:id="@+id/wrapping_layout"
  *         android:layout_width="match_parent"
  *         android:layout_height="match_parent"

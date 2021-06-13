@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Search histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -27,8 +27,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <!-- expires-never: part of top-line metric (internal: go/chrome-browser-nsm) -->
 
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <owner>chrome-analysis-team@google.com</owner>
   <summary>
     Records whether the user opened the panel when it was shown. Recorded for
@@ -47,7 +47,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <!-- TODO(donnd): change expires_after to never once established and
        approved. -->
 
-  <owner>donnd@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
   <owner>contextual-search-eng@google.com</owner>
   <owner>related-searches-vteam@google.com</owner>
   <summary>
@@ -63,8 +63,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="ContextualSearchCardTag" expires_after="never">
 <!-- expires-never: tracks key server results returned to the user. -->
 
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The type of card returned in the Search Term Resolution Response from the
     server when a search is resolved in response to a Tap gesture that uses
@@ -77,8 +77,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="ContextualSearchCardTag" expires_after="never">
 <!-- expires-never: tracks key server results returned to the user. -->
 
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The type of card shown in the Bar when the panel has been opened. Recorded
     when the panel is closed. Implemented for Android.
@@ -87,8 +87,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearch.OutcomesDuration" units="days"
     expires_after="M75">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Records the duration of persisted outcomes between the time they were stored
     and the time that they were sent back to the server. Recorded when persisted
@@ -98,8 +98,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearch.Ranker.FeaturesAvailable"
     enum="Boolean" expires_after="M77">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Logs that the UX has entered a state where features are available to be
     recorded to Ranker. A value of true indicates that the available features
@@ -113,15 +113,15 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearch.Ranker.Model.Status"
     enum="RankerModelStatus" expires_after="M77">
-  <owner>donnd@chromium.org</owner>
-  <owner>charleszhao@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>charleszhao@monyhar.org</owner>
   <summary>Tracks the outcome of attempts to download a Ranker Model.</summary>
 </histogram>
 
 <histogram name="Search.ContextualSearch.Ranker.NotSuppressed.ResultsSeen"
     enum="ContextualSearchResultsSeen" expires_after="M77">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Records whether the user opened the panel when a tap was not suppressed by
     Ranker. Recorded when the UX is hidden. Implemented for Android.
@@ -130,8 +130,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearch.Ranker.Recorded" enum="Boolean"
     expires_after="M77">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Logs that features were recorded to Ranker and whether it was an outcome or
     not. Recorded when the UX is shown or hidden. Implemented for Android.
@@ -140,8 +140,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearch.Ranker.RecordedNative" enum="Boolean"
     expires_after="M77">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Logs that features were recorded to Ranker from native code and whether it
     was an outcome or not. Recorded when the UX is shown or hidden. Implemented
@@ -151,8 +151,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearch.Ranker.Suppressed" enum="Boolean"
     expires_after="M85">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Records Ranker's prediction about whether a tap should be suppressed or not.
     Recorded when the UX is hidden. Implemented for Android.
@@ -161,8 +161,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearch.Ranker.Timer.DownloadModel" units="ms"
     expires_after="M81">
-  <owner>charleszhao@chromium.org</owner>
-  <owner>donnd@chromium.org</owner>
+  <owner>charleszhao@monyhar.org</owner>
+  <owner>donnd@monyhar.org</owner>
   <summary>
     Time taken for the Ranker Model Loader to download its model from the
     configured URL, in ms.
@@ -171,8 +171,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearch.Ranker.Timer.ParseModel" units="ms"
     expires_after="M77">
-  <owner>charleszhao@chromium.org</owner>
-  <owner>donnd@chromium.org</owner>
+  <owner>charleszhao@monyhar.org</owner>
+  <owner>donnd@monyhar.org</owner>
   <summary>
     Time taken for the Ranker Model Loader to parse its model, in ms.
   </summary>
@@ -180,8 +180,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearch.Ranker.Timer.ReadModel" units="ms"
     expires_after="M85">
-  <owner>charleszhao@chromium.org</owner>
-  <owner>donnd@chromium.org</owner>
+  <owner>charleszhao@monyhar.org</owner>
+  <owner>donnd@monyhar.org</owner>
   <summary>
     Time taken for the Ranker Model Loader to read its model from local storage
     (cache), in ms.
@@ -190,8 +190,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearch.Ranker.Timer.WriteModel" units="ms"
     expires_after="M85">
-  <owner>charleszhao@chromium.org</owner>
-  <owner>donnd@chromium.org</owner>
+  <owner>charleszhao@monyhar.org</owner>
+  <owner>donnd@monyhar.org</owner>
   <summary>
     Time taken for the Ranker Model Loader to write its model to local storage,
     in ms.
@@ -200,8 +200,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearch.Ranker.WasAbleToPredict"
     enum="Boolean" expires_after="M77">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Records whether Ranker was able to make a prediction about tap suppression.
     Recorded when the UX is triggered by tap. Implemented for Android.
@@ -210,8 +210,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearch.Ranker.WouldSuppress.ResultsSeen"
     enum="ContextualSearchResultsSeen" expires_after="M77">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Records whether the user opened the panel when a tap would be suppressed by
     Ranker if suppression was enforced. Recorded when the UX is hidden.
@@ -221,8 +221,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearch.ResolveReceived" enum="Boolean"
     expires_after="M91">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Records that a resolve response was received from the server, and whether
     that was due to a Tap gesture or not (vs longpress). Recorded when the user
@@ -232,8 +232,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearch.ResolveRequested"
     enum="ContextualSearchGestureIsTap" expires_after="2021-08-09">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Records that a resolve request was sent to the server, and whether that was
     due to a Tap or not (vs longpress). Recorded when the user triggers the
@@ -243,8 +243,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearch.SelectionExpanded"
     enum="ContextualSearchGestureIsTap" expires_after="2021-10-10">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Records that a resolve request from the server caused the selection to be
     expanded, and whether that original selection was due to a Tap or not (vs
@@ -255,8 +255,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearch.Tap.ResultsSeen" enum="Boolean"
     expires_after="M77">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Records whether the user opened the panel when it was shown in response to a
     tap gesture, for all users. Recorded when the UX is hidden. Implemented for
@@ -266,8 +266,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearch.Tap.SyncEnabled.ResultsSeen"
     enum="Boolean" expires_after="M76">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Records whether the user opened the panel when it was shown for sync-enabled
     users only (this is an approximation for the population that logs to UKM).
@@ -278,8 +278,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearch.TranslationNeeded"
     enum="ContextualSearchGestureIsTap" expires_after="2021-10-25">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Records that a translation is needed for the current Contextual Search, and
     whether the selection was originally created by a Tap gesture. This is
@@ -291,7 +291,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearch.TranslationsOptInIPHShown"
     enum="BooleanPreviouslyShown" expires_after="2021-10-24">
-  <owner>donnd@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
   <owner>contextual-search-eng@google.com</owner>
   <summary>
     Records whether an IPH promoting the Opt-in for the Translations experiment
@@ -302,7 +302,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearch.TranslationsOptInIPHWorked"
     enum="BooleanOptedIn" expires_after="2021-10-25">
-  <owner>donnd@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
   <owner>contextual-search-eng@google.com</owner>
   <summary>
     Records whether the user actually did Opt-in right after seeing the IPH for
@@ -313,8 +313,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearch.UnifiedConsent.PreviouslyUndecided"
     enum="Boolean" expires_after="2019-01-30">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Records the previous state of the user's enabled preference to indicate
     whether they were decided or undecided about fully enabling this feature.
@@ -325,8 +325,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearch.UnifiedConsent.ThrottledRequests"
     enum="Boolean" expires_after="2019-01-30">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Records whether throttling for Unified Consent was done for all requests.
     Recorded when the user taps on text and the system would like the server to
@@ -338,8 +338,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearch.UnifiedConsent.ThrottleEligible"
     enum="Boolean" expires_after="2019-01-30">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Records whether this user had a request throttled or not when needed.
     Recorded when the user taps on text and the system would like the server to
@@ -351,8 +351,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchBarNoOverlap.PeekDuration" units="ms"
     expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The duration that the panel was peeking before being opened when triggered
     by a tap that was in a part of the screen where it overlaps the Bar. Logged
@@ -362,8 +362,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchBarOverlap"
     enum="ContextualSearchTapSuppression" expires_after="M77">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether a Tap was suppressed because the Bar overlapped the selection area.
     Implemented for Android.
@@ -372,8 +372,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchBarOverlap.PeekDuration" units="ms"
     expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The duration that the panel was peeking before being opened when triggered
     by a tap at the bottom of the screen where it overlaps the Bar. Logged when
@@ -383,8 +383,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchBarOverlapSeen"
     enum="ContextualSearchBarOverlapSeen" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether the Bar overlapped the selection area and whether the results were
     seen. Recorded when the UX is hidden. Implemented for Android.
@@ -393,8 +393,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchBasePageProtocol"
     enum="ContextualSearchBasePageProtocol" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The protocol of the base page, logged at the time that any Search Term
     Resolution Response is received.
@@ -405,8 +405,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="Boolean" expires_after="never">
 <!-- expires-never: key metric on usefulness of Touch to Search. -->
 
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether Contextual Cards data was shown in the Contextual Search Bar.
     Contextual Cards data is included with the search term resolution response.
@@ -416,8 +416,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchContextualCardsIntegration.ResultsSeen"
     enum="ContextualSearchResultsSeen" expires_after="M85">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether search results were seen as part of a Contextual Search when
     Contextual Cards data was shown. This indicates that the panel was opened.
@@ -427,8 +427,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchDurationBetweenTriggerAndScrollNotSeen"
     units="ms" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The duration between the panel being triggered and the panel being dismissed
     due to a scroll when search results were not seen. Implemented for Android.
@@ -439,8 +439,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchDurationBetweenTriggerAndScrollSeen"
     units="ms" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The duration between the panel being triggered and the panel being dismissed
     due to a scroll when search results were seen. Implemented for Android.
@@ -451,8 +451,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchDurationSeen" units="ms"
     expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The time from initiating to ending a contextual search, when results were
     seen as part of the search. Implemented for Android.
@@ -461,8 +461,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchDurationUnseen" units="ms"
     expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The time from initiating to ending a contextual search, when results were
     not seen as part of the search and the search did not end with the beginning
@@ -472,8 +472,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchDurationUnseenChained" units="ms"
     expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The time from initiating to ending a contextual search, when results were
     not seen as part of the search and the search ended with the beginning of
@@ -483,8 +483,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchEnterClosed"
     enum="ContextualSearchEnterClosedStateChange" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The details (previous state and reason) of the first entry into the closed
     panel state within a contextual search. Implemented for Android.
@@ -493,8 +493,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchEnterExpanded"
     enum="ContextualSearchEnterExpandedStateChange" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The details (previous state and reason) of the first entry into the expanded
     panel state within a contextual search. Implemented for Android.
@@ -503,8 +503,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchEnterMaximized"
     enum="ContextualSearchEnterMaximizedStateChange" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The details (previous state and reason) of the first entry into the
     maximized panel state within a contextual search. Implemented for Android.
@@ -513,8 +513,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchEnterPeeked"
     enum="ContextualSearchEnterPeekedStateChange" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The details (previous state and reason) of the first entry into the peeked
     panel state within a contextual search. Implemented for Android.
@@ -523,8 +523,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchEntitySeen"
     enum="ContextualSearchResultsSeen" expires_after="M77">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether search results were seen as part of a Contextual Search when a tap
     was on a word that we think is an entity. Recorded when Contextual Search is
@@ -534,8 +534,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchExitClosed"
     enum="ContextualSearchExitClosedStateChange" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The details (destination state and reason) of the first exit out of the
     closed panel state within a contextual search. Implemented for Android.
@@ -544,8 +544,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchExitExpanded"
     enum="ContextualSearchExitExpandedStateChange" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The details (destination state and reason) of the first exit out of the
     expanded panel state within a contextual search. Implemented for Android.
@@ -554,8 +554,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchExitMaximized"
     enum="ContextualSearchExitMaximizedStateChange" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The details (destination state and reason) of the first exit out of the
     maximized panel state within a contextual search. Implemented for Android.
@@ -564,8 +564,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchExitPeeked"
     enum="ContextualSearchExitPeekedStateChange" expires_after="M77">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The details (destination state and reason) of the first exit out of the
     peeked panel state within a contextual search. Implemented for Android.
@@ -574,8 +574,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchFallbackSearchRequestStatus"
     enum="ContextualSearchSearchRequestStatus" expires_after="M85">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The status of the Contextual Search fallback Search request. Implemented for
     Android.
@@ -584,8 +584,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchFirstRunFlowOutcome"
     enum="ContextualSearchPreferenceState" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The state of the Contextual Search Preference after the first run flow.
     Implemented for Android.
@@ -594,8 +594,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchFirstRunPanelSeen"
     enum="ContextualSearchFirstRunPanelSeen" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether the first run flow's panel was seen as part of a contextual search.
     Only logged when the user triggered the first run flow yet exited the search
@@ -605,9 +605,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchIPHShown" enum="Boolean"
     expires_after="M77">
-  <owner>donnd@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>mahmoudi@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The number of times the Contextual Search panel is opened, categorized by
     whether In-Product Help for Contextual Search was shown before. Logged when
@@ -617,8 +617,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchLiteralSearchDuration" units="ms"
     expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The time from starting a literal search until the results in the SERP start
     to become viewable. Applies only to prefetched requests. Implemented for
@@ -628,8 +628,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchLowPrioritySearchRequestStatus"
     enum="ContextualSearchSearchRequestStatus" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The status of the Contextual Search low priority Search request. Implemented
     for Android.
@@ -638,8 +638,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchMandatoryPromoOutcomeByGesture"
     enum="ContextualSearchOutcomeByGesture" expires_after="M85">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The outcome of the mandatory Promo broken down by original triggering
     gesture. Logged for each view of the promo. Implemented for Android.
@@ -648,8 +648,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchNormalPrioritySearchRequestStatus"
     enum="ContextualSearchSearchRequestStatus" expires_after="M77">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The status of the Contextual Search normal priority Search request.
     Implemented for Android.
@@ -658,8 +658,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchPanelOpenDuration" units="ms"
     expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The time from opening the panel beyond peek until the panel is closed.
     Implemented for Android.
@@ -668,9 +668,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchPanelOpenedIPHShown" enum="Boolean"
     expires_after="M77">
-  <owner>donnd@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>mahmoudi@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The number of times the Contextual Search panel is opened, categorized by
     whether In-Product Help for opening the panel was shown before. Logged when
@@ -682,8 +682,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="ContextualSearchPreferenceState" expires_after="never">
 <!-- expires-never: dashboard metric (internal: go/cs-metrics-dashboard) -->
 
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The state of the Contextual Search Preference. Can be logged multiple times.
     Used to determine the population size (user view). Logged whenever the
@@ -695,8 +695,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="ContextualSearchPreferenceState" expires_after="never">
 <!-- expires-never: dashboard metric (internal: go/cs-metrics-dashboard) -->
 
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The Contextual Search preference state after a modification from the
     preference menu. Implemented for Android.
@@ -705,8 +705,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchPrevious28DayCtr" units="%"
     expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The CTR from the previous 28 day period for each user, expressed as a
     percentage. Logged the first time the panel is closed in each new week.
@@ -716,8 +716,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchPrevious28DayImpressions" units="views"
     expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The number of user impressions of the Bar from the previous 28 day period.
     Logged the first time the panel is closed in each new week. Implemented for
@@ -727,8 +727,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchPreviousWeekCtr" units="%"
     expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The CTR from the previous week for each user, expressed as a percentage.
     Logged the first time the panel is closed in each new week. Implemented for
@@ -738,8 +738,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchPreviousWeekImpressions" units="views"
     expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The number of user impressions of the Bar from the previous week. Logged the
     first time the panel is closed in each new week. Implemented for Android.
@@ -748,8 +748,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchPromoOpenCount" units="opens"
     expires_after="M77">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The total count of times that the bar with the promo has been opened. Once
     the user decides, this counter is no longer updated.
@@ -758,8 +758,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchPromoOutcomeByGesture"
     enum="ContextualSearchOutcomeByGesture" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The outcome of the promo broken down by original triggering gesture. Logged
     for each view of the promo. Implemented for Android.
@@ -768,8 +768,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchPromoSeenByGesture"
     enum="ContextualSearchSeenByGesture" expires_after="M81">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether the promo was seen, broken down by original triggering gesture.
     Logged each time the promo was activated. Implemented for Android.
@@ -778,8 +778,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchPromoTapsBeforeFirstOpen" units="taps"
     expires_after="M81">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The historic number of taps that showed a peeking bar with the opt-out promo
     before the first time the user opened the panel.
@@ -788,8 +788,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchPromoTapsForNeverOpened" units="taps"
     expires_after="M77">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The historic number of taps that showed a peeking bar with the opt-out promo
     for users who have never opened the panel. This count may be limited by the
@@ -799,8 +799,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchPromoTapsRemaining" units="taps"
     expires_after="M77">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The number of remaining taps that can trigger the promo for this user.
     Implemented for Android.
@@ -809,8 +809,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchQuickActions.Category"
     enum="ContextualSearchQuickActionCategory" expires_after="2021-10-04">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The category of quick actions shown in the Contextual Search bar. Recorded
     when the quick action is set. Implemented for Android.
@@ -821,8 +821,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="BooleanClicked" expires_after="never">
 <!-- expires-never: indicates completion of a user journey. -->
 
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether a quick action in the Contextual Search bar was clicked, which
     activates the associated intent. Recorded when Contextual Search is
@@ -833,8 +833,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchQuickActions.IntentResolution"
     enum="ContextualSearchQuickActionIntentResolution" expires_after="M81">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether a Contextual Search quick action intent resolved to zero, one, or
     many apps. Recorded when the quick action intent URI is resolved.
@@ -844,8 +844,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchQuickActions.ResultsSeen"
     enum="ContextualSearchResultsSeen" expires_after="M81">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether search results were seen as part of a Contextual Search when a quick
     action was shown. Recorded when Contextual Search is dismissed. Implemented
@@ -855,8 +855,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchQuickActions.Shown" enum="BooleanShown"
     expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether a quick action was shown in the Contextual Search bar. Recorded when
     the quick action is set. Implemented for Android.
@@ -865,8 +865,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchQuickAnswerSeen"
     enum="ContextualSearchQuickAnswerSeen" expires_after="M77">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether a Quick Answer was activated, considered an answer, and seen.
     Implemented for Android.
@@ -875,8 +875,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchRecentScrollSuppression"
     enum="ContextualSearchTapSuppression" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether showing the Tap to Search UX in response to a Tap was suppressed by
     a recent scroll. Implemented for Android.
@@ -885,8 +885,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchResolutionDuration" units="ms"
     expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The time from starting a resolving search until the Search Term Resolves.
     Implemented for Android.
@@ -895,8 +895,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchResolvedSearchDuration" units="ms"
     expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The time from starting a resolving search until the results in the SERP
     start to become viewable. Applies only to prefetched requests. Implemented
@@ -906,8 +906,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchResolvedTermWords"
     enum="ContextualSearchResolvedTermWords" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether the search term was single or multi-word, logged at the time that
     any Search Term Resolution Response is received.
@@ -918,8 +918,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="ContextualSearchResultsSeen" expires_after="never">
 <!-- expires-never: dashboard metric (internal: go/cs-metrics-dashboard) -->
 
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether search results were seen as part of a contextual search. Implemented
     for Android.
@@ -930,8 +930,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="ContextualSearchSeenByGesture" expires_after="never">
 <!-- expires-never: dashboard metric (internal: go/cs-metrics-dashboard) -->
 
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether search results were seen, broken down by original triggering
     gesture. Only includes users that have enabled. Implemented for Android.
@@ -940,8 +940,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchScreenTopSuppressed"
     enum="ContextualSearchTapSuppression" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether Taps near the top of the screen was suppressed. Implemented for
     Android.
@@ -950,8 +950,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchSecondTapMlOverrideSeen" enum="Boolean"
     expires_after="M77">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether results were seen for a second tap that was allowed to override ML
     Tap Suppression. Recorded when the UX is hidden. Implemented for Android.
@@ -960,8 +960,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchSelectionLengthNotSeen" units="chars"
     expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The length of the triggering selection when search results were not seen.
     Only logged when contextual search is triggered due to a tap. Implemented
@@ -971,8 +971,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchSelectionLengthSeen" units="chars"
     expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The length of the triggering selection when search results were seen. Only
     logged when contextual search is triggered due to a tap. Implemented for
@@ -982,8 +982,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchSelectionLengthSuppression"
     enum="ContextualSearchTapSuppression" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether a Tap was suppressed because the selection length was less than the
     minimum selection length. Implemented for Android.
@@ -992,8 +992,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchSelectionValid"
     enum="ContextualSearchSelectionValid" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether a Contextual Search selection was valid. Implemented for Android.
   </summary>
@@ -1001,8 +1001,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchTapDurationNotSeen" units="ms"
     expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The duration of a tap that triggered a Contextual Search when the user does
     not open the panel. Implemented for Android. Logged when the panel closes
@@ -1012,8 +1012,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchTapDurationSeen" units="ms"
     expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The duration of a tap that triggered a Contextual Search when the user does
     open the panel. Implemented for Android. Logged when the panel closes after
@@ -1023,9 +1023,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchTapIPHShown" enum="Boolean"
     expires_after="M77">
-  <owner>donnd@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>mahmoudi@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The number of times the Contextual Search is triggered by tapping,
     categorized by whether In-Product Help for tapping was shown before. Logged
@@ -1035,8 +1035,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchTapLongDurationSeen"
     enum="ContextualSearchResultsSeen" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether results were seen for a Tap that was of long duration. Recorded when
     the UX is hidden. Implemented for Android.
@@ -1045,8 +1045,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchTapLongWordSeen"
     enum="ContextualSearchResultsSeen" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether results were seen for a Tap that was on a word considered long.
     Recorded when the UX is hidden. Implemented for Android.
@@ -1055,8 +1055,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchTapOnWordMiddleSeen"
     enum="ContextualSearchResultsSeen" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether results were seen for a Tap that was on the middle part of a word.
     Recorded when the UX is hidden. Implemented for Android.
@@ -1065,8 +1065,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchTapShortDurationSeen"
     enum="ContextualSearchResultsSeen" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether results were seen for a Tap that was of short duration. Recorded
     when the UX is hidden. Implemented for Android.
@@ -1075,8 +1075,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchTapShortWordSeen"
     enum="ContextualSearchResultsSeen" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether results were seen for a Tap that was on a word considered short.
     Recorded when the UX is hidden. Implemented for Android.
@@ -1085,8 +1085,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchTapsSinceOpenDecided" units="taps"
     expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The count of taps that showed a peeking bar without the opt-out promo since
     this user has last opened the panel.
@@ -1095,8 +1095,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchTapsSinceOpenUndecided" units="taps"
     expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The count of taps that showed a peeking bar with the opt-out promo since
     this user has last opened the panel.
@@ -1106,8 +1106,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Search.ContextualSearchTapSuppressionSeen.AnyHeuristicSatisfied"
     enum="ContextualSearchSuppressionResultsSeen" expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Whether results were seen for a Tap and whether any suppression heuristic
     was satisifed. Recorded when the UX is still shown (suppression not enabled,
@@ -1117,8 +1117,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchTimeToSearch" units="ms"
     expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The time between tapping on a word and performing a search. Implemented for
     Android.
@@ -1127,8 +1127,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchTopLocationNotSeen" units="dps"
     expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The DPs count histogram for Taps that were not seen. Implemented for
     Android.
@@ -1137,8 +1137,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchTopLocationSeen" units="dps"
     expires_after="M72">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The DPs count histogram for Taps that were seen. Implemented for Android.
   </summary>
@@ -1146,8 +1146,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.ContextualSearchTranslateCondition" enum="Boolean"
     expires_after="M77">
-  <owner>donnd@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     For each contextual search that is triggered by tap, records whether the
     translation conditions are met. Implemented for Android.
@@ -1156,7 +1156,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.DefaultSearchChangeOrigin"
     enum="DefaultSearchChangeOrigin" expires_after="M81">
-  <owner>mathp@chromium.org</owner>
+  <owner>mathp@monyhar.org</owner>
   <summary>
     The origin/cause of a change to the default search provider.
   </summary>
@@ -1164,8 +1164,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.DefaultSearchProviderType"
     enum="OmniboxSearchEngineType" expires_after="2021-10-31">
-  <owner>mpearson@chromium.org</owner>
-  <owner>csharp@chromium.org</owner>
+  <owner>mpearson@monyhar.org</owner>
+  <owner>csharp@monyhar.org</owner>
   <summary>
     The type of the default search engine that is loaded when a profile is
     opened or after a profile reset. Note that at least one profile is opened on
@@ -1176,7 +1176,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.GsaAccountChangeNotificationSource"
     enum="GsaAccountChangeNotificationSource" expires_after="M77">
-  <owner>lizeb@chromium.org</owner>
+  <owner>lizeb@monyhar.org</owner>
   <summary>
     On Android, when GSA tells Chrome about an account change, what is the
     notification mechanism used, which is either the service connection, or a
@@ -1186,7 +1186,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.GsaBroadcastsAccountChanges"
     enum="BooleanAccountChange" expires_after="M77">
-  <owner>lizeb@chromium.org</owner>
+  <owner>lizeb@monyhar.org</owner>
   <summary>
     On Android, whether GSA tells Chrome about account changes through the
     service or through a broadcast. This is reported at most once per Chrome
@@ -1196,8 +1196,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.HistoryReport.DeltaFile.LastSeqNo" units="count"
     expires_after="M71">
-  <owner>wychen@chromium.org</owner>
-  <owner>yusufo@chromium.org</owner>
+  <owner>wychen@monyhar.org</owner>
+  <owner>yusufo@monyhar.org</owner>
   <summary>
     The last sequential number in the delta file for Icing. This is measured on
     cold start.
@@ -1206,8 +1206,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.HistoryReport.DeltaFile.LevelDBEntries" units="entries"
     expires_after="2019-06-01">
-  <owner>wychen@chromium.org</owner>
-  <owner>yusufo@chromium.org</owner>
+  <owner>wychen@monyhar.org</owner>
+  <owner>yusufo@monyhar.org</owner>
   <summary>
     The number of entries in the delta file level DB for Icing. This is measured
     on cold start.
@@ -1216,8 +1216,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.HistoryReport.UsageReportsBuffer.LevelDBEntries"
     units="entries" expires_after="2019-06-01">
-  <owner>wychen@chromium.org</owner>
-  <owner>yusufo@chromium.org</owner>
+  <owner>wychen@monyhar.org</owner>
+  <owner>yusufo@monyhar.org</owner>
   <summary>
     The number of entries in the usage report level DB for Icing. This is
     measured on cold start.
@@ -1226,7 +1226,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.IcingContextReportingStatus"
     enum="IcingContextReportingStatus" expires_after="M77">
-  <owner>donnd@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
   <summary>
     Records the reason why a context report to Icing failed, every time Chrome
     attemps to record the current context (tab switching, navigations, etc).
@@ -1237,8 +1237,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.iOS.SelectDefaultSearchEngine"
     enum="OmniboxSearchEngineType" expires_after="2022-02-04">
-  <owner>sczs@chromium.org</owner>
-  <owner>gambard@chromium.org</owner>
+  <owner>sczs@monyhar.org</owner>
+  <owner>gambard@monyhar.org</owner>
   <summary>
     When an iOS user changes the default search engine in chrome Settings,
     records the search engine's type.
@@ -1247,7 +1247,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.PartnershipSearchPerformed" enum="SearchEntryPoint"
     expires_after="M85">
-  <owner>yusufo@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
   <summary>
     The entry point used for all searches performed under partnership after the
     Android search engine promo dialog was shown. This is a dialog prompting the
@@ -1260,7 +1260,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="BooleanAvailable" expires_after="M94">
 <!-- Name completed by histogram_suffixes name="TileUiSurface" -->
 
-  <owner>shaktisahu@chromium.org</owner>
+  <owner>shaktisahu@monyhar.org</owner>
   <owner>chrome-upboarding-eng@google.com</owner>
   <summary>
     Indicates whether or not a bitmap could be shown for a tile.
@@ -1271,7 +1271,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="M94">
 <!-- Name completed by histogram_suffixes name="TileUiSurface" -->
 
-  <owner>shaktisahu@chromium.org</owner>
+  <owner>shaktisahu@monyhar.org</owner>
   <owner>chrome-upboarding-eng@google.com</owner>
   <summary>
     Records the time taken to fetch a bitmap for a tile when a bitmap could be
@@ -1282,7 +1282,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.QueryTiles.Fetcher.FirstFlowDuration" units="hours"
     expires_after="M94">
-  <owner>qinmin@chromium.org</owner>
+  <owner>qinmin@monyhar.org</owner>
   <owner>chrome-upboarding-eng@google.com</owner>
   <summary>
     Records duration from time when first task scheduled to time the fetch task
@@ -1292,28 +1292,28 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.QueryTiles.Fetcher.Start" units="hours"
     expires_after="M94">
-  <owner>qinmin@chromium.org</owner>
+  <owner>qinmin@monyhar.org</owner>
   <owner>chrome-upboarding-eng@google.com</owner>
   <summary>Records the hour (0-23) when the TileFetcher task starts.</summary>
 </histogram>
 
 <histogram name="Search.QueryTiles.FetcherHttpResponseCode"
     enum="HttpResponseCode" expires_after="2021-10-25">
-  <owner>qinmin@chromium.org</owner>
+  <owner>qinmin@monyhar.org</owner>
   <owner>chrome-upboarding-eng@google.com</owner>
   <summary>Records the HTTP response code get from TileFetcher.</summary>
 </histogram>
 
 <histogram name="Search.QueryTiles.FetcherNetErrorCode" enum="NetErrorCodes"
     expires_after="2021-08-09">
-  <owner>qinmin@chromium.org</owner>
+  <owner>qinmin@monyhar.org</owner>
   <owner>chrome-upboarding-eng@google.com</owner>
   <summary>Records the net error code get from TileFetcher.</summary>
 </histogram>
 
 <histogram name="Search.QueryTiles.Group.PruneReason"
     enum="QueryTilesGroupPruneReason" expires_after="M94">
-  <owner>qinmin@chromium.org</owner>
+  <owner>qinmin@monyhar.org</owner>
   <owner>chrome-upboarding-eng@google.com</owner>
   <summary>
     Records the reasons caused the tile group pruned in TileManager.
@@ -1322,7 +1322,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.QueryTiles.GroupStatus" enum="QueryTilesGroupStatus"
     expires_after="2021-08-22">
-  <owner>qinmin@chromium.org</owner>
+  <owner>qinmin@monyhar.org</owner>
   <owner>chrome-upboarding-eng@google.com</owner>
   <summary>
     Records the TileManager status after initialized and loaded completed.
@@ -1331,7 +1331,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.QueryTiles.ImagePreloadingEvent"
     enum="QueryTilesImageLoadingEvent" expires_after="2022-04-01">
-  <owner>xingliu@chromium.org</owner>
+  <owner>xingliu@monyhar.org</owner>
   <owner>chrome-upboarding-eng@google.com</owner>
   <summary>
     Records the image preloading events when the query tile images are fetched
@@ -1343,7 +1343,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     units="ms" expires_after="M94">
 <!-- Name completed by histogram_suffixes name="TileUiSurface" -->
 
-  <owner>shaktisahu@chromium.org</owner>
+  <owner>shaktisahu@monyhar.org</owner>
   <owner>chrome-upboarding-eng@google.com</owner>
   <summary>
     Records the time taken by the bitmap request for a tile when no bitmap could
@@ -1354,7 +1354,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.QueryTiles.NTP.Chip.SearchClicked" units="index"
     expires_after="2021-11-07">
-  <owner>shaktisahu@chromium.org</owner>
+  <owner>shaktisahu@monyhar.org</owner>
   <owner>chrome-upboarding-eng@google.com</owner>
   <summary>
     Records the index of the query tile chip that was clicked from the fake
@@ -1364,7 +1364,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.QueryTiles.RequestStatus"
     enum="QueryTilesRequestStatus" expires_after="M94">
-  <owner>qinmin@chromium.org</owner>
+  <owner>qinmin@monyhar.org</owner>
   <owner>chrome-upboarding-eng@google.com</owner>
   <summary>
     Records the TileFetcher status after request send to server and response
@@ -1376,7 +1376,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="M95">
 <!-- Name completed by histogram_suffixes name="TileUiSurface" -->
 
-  <owner>shaktisahu@chromium.org</owner>
+  <owner>shaktisahu@monyhar.org</owner>
   <owner>chrome-upboarding-eng@google.com</owner>
   <summary>
     Records the index of the tile that was clicked. The index refers to the
@@ -1388,7 +1388,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="BooleanIsTopLevel" expires_after="M95">
 <!-- Name completed by histogram_suffixes name="TileUiSurface" -->
 
-  <owner>shaktisahu@chromium.org</owner>
+  <owner>shaktisahu@monyhar.org</owner>
   <owner>chrome-upboarding-eng@google.com</owner>
   <summary>Indicates whether the tile clicked was a top level tile.</summary>
 </histogram>
@@ -1397,7 +1397,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="M94">
 <!-- Name completed by histogram_suffixes name="TileUiSurface" -->
 
-  <owner>shaktisahu@chromium.org</owner>
+  <owner>shaktisahu@monyhar.org</owner>
   <owner>chrome-upboarding-eng@google.com</owner>
   <summary>
     Indicates the number of tiles displayed in the UI after the backend was
@@ -1407,7 +1407,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.QueryTiles.TilesFitPerRow" units="tiles"
     expires_after="M94">
-  <owner>shaktisahu@chromium.org</owner>
+  <owner>shaktisahu@monyhar.org</owner>
   <owner>chrome-upboarding-eng@google.com</owner>
   <summary>
     Records the number of tiles per row that can be fit into the screen in the
@@ -1416,7 +1416,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Search.QueryTiles.TileWidth" units="dp" expires_after="M94">
-  <owner>shaktisahu@chromium.org</owner>
+  <owner>shaktisahu@monyhar.org</owner>
   <owner>chrome-upboarding-eng@google.com</owner>
   <summary>
     Records the width of a single query tile when shown in the carousel.
@@ -1425,7 +1425,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.QueryTiles.TrendingTileEvent" enum="TrendingTileEvent"
     expires_after="M94">
-  <owner>qinmin@chromium.org</owner>
+  <owner>qinmin@monyhar.org</owner>
   <owner>chrome-upboarding-eng@google.com</owner>
   <summary>
     Records events related to trending tiles, including display, removal and
@@ -1435,7 +1435,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.RelatedSearches.AllUserPermissions"
     enum="ContextualSearchPermissions" expires_after="2021-10-17">
-  <owner>donnd@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
   <owner>related-searches-vteam@google.com</owner>
   <summary>
     Enumerates all users by the permissions needed in order to use the Related
@@ -1449,7 +1449,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.RelatedSearches.CTR" enum="BooleanClicked"
     expires_after="M95">
-  <owner>donnd@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
   <owner>related-searches-vteam@google.com</owner>
   <summary>
     Records the click through rate for Related Searches. This is the rate that
@@ -1463,7 +1463,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.RelatedSearches.NumberOfSuggestionsClicked"
     units="selected" expires_after="M95">
-  <owner>donnd@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
   <owner>related-searches-vteam@google.com</owner>
   <summary>
     The number of suggestions that were chosen by the user in a bottom-sheet
@@ -1474,7 +1474,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.RelatedSearches.QualifiedUsers" enum="Boolean"
     expires_after="2021-10-17">
-  <owner>donnd@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
   <owner>related-searches-vteam@google.com</owner>
   <summary>
     Records true for every user that is qualified for the Related Searches
@@ -1489,7 +1489,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.RelatedSearches.SelectedCarouselIndex" units="position"
     expires_after="M95">
-  <owner>donnd@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
   <owner>related-searches-vteam@google.com</owner>
   <summary>
     The display position index for a chip in the carousel when it was selected
@@ -1500,7 +1500,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.RelatedSearches.SelectedSuggestionIndex"
     units="position" expires_after="M95">
-  <owner>donnd@chromium.org</owner>
+  <owner>donnd@monyhar.org</owner>
   <owner>related-searches-vteam@google.com</owner>
   <summary>
     The display position index for a suggestion when it was selected by the
@@ -1515,7 +1515,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="OmniboxSearchEngineType" expires_after="M81">
 <!-- Name completed by histogram_suffixes name="SearchEnginePromoOrdering" and name="SearchEnginePromoDeviceType" -->
 
-  <owner>yusufo@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
   <summary>
     The search engines listed in the options for search engine promo. This is an
     Android specific dialog prompting the user to pick a default search engine.
@@ -1526,7 +1526,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.SearchEngineSelectionInPromoDialog"
     enum="OmniboxSearchEngineType" expires_after="M81">
-  <owner>yusufo@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
   <summary>
     The search engine selected by the user from the search engine promo. This is
     an Android specific dialog prompting the user to pick a default search
@@ -1537,7 +1537,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.SearchWidgetUseAndDeviceInfo"
     enum="SearchWidgetUseInfo" expires_after="2020-02-16">
-  <owner>yusufo@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
   <summary>
     The current state for search widget use and whether the device is a
     partnership device related with the Android Search Widget. Collected on
@@ -1547,7 +1547,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Search.TemplateURL.Events" enum="SearchTemplateURLEvent"
     expires_after="2021-12-05">
-  <owner>tommycli@chromium.org</owner>
+  <owner>tommycli@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     Records when TemplateURL encounters specific events, particularly during
@@ -1559,13 +1559,13 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="SearchAnswer.AnswerVisibleTime" units="ms"
     expires_after="2021-09-01">
-  <owner>mmourgos@chromium.org</owner>
-  <owner>newcomer@chromium.org</owner>
+  <owner>mmourgos@monyhar.org</owner>
+  <owner>newcomer@monyhar.org</owner>
   <summary>Time between showing and hiding the answer card.</summary>
 </histogram>
 
 <histogram name="SearchAnswer.LoadingTime" units="ms" expires_after="M85">
-  <owner>newcomer@chromium.org</owner>
+  <owner>newcomer@monyhar.org</owner>
   <summary>
     Time between sending an answer server request and the end of loading of the
     answer card. Failed requests and requests not returning an answer are not
@@ -1574,7 +1574,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="SearchAnswer.NavigationTime" units="ms" expires_after="M85">
-  <owner>newcomer@chromium.org</owner>
+  <owner>newcomer@monyhar.org</owner>
   <summary>
     Time between sending an answer server request and successful finish of
     navigation. Failed requests and requests not returning an answer are not
@@ -1584,13 +1584,13 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="SearchAnswer.RequestResult" enum="SearchAnswerRequestResult"
     expires_after="M85">
-  <owner>newcomer@chromium.org</owner>
+  <owner>newcomer@monyhar.org</owner>
   <summary>Result of a answer server request.</summary>
 </histogram>
 
 <histogram name="SearchAnswer.ResizeAfterLoadTime" units="ms"
     expires_after="M85">
-  <owner>newcomer@chromium.org</owner>
+  <owner>newcomer@monyhar.org</owner>
   <summary>
     Time between successfully loading an answer card request and updating its
     preferred size. There might be no or more than one size update per card

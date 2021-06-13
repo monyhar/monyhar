@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.features.start_surface;
+package org.monyhar.chrome.features.start_surface;
 
 import static android.content.res.Configuration.ORIENTATION_LANDSCAPE;
 
@@ -30,8 +30,8 @@ import static org.hamcrest.Matchers.notNullValue;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import static org.chromium.chrome.test.util.ViewUtils.onViewWaiting;
-import static org.chromium.chrome.test.util.ViewUtils.waitForView;
+import static org.monyhar.chrome.test.util.ViewUtils.onViewWaiting;
+import static org.monyhar.chrome.test.util.ViewUtils.waitForView;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -61,65 +61,65 @@ import org.junit.Test;
 import org.junit.rules.ErrorCollector;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.BaseSwitches;
-import org.chromium.base.Callback;
-import org.chromium.base.CommandLine;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.MathUtils;
-import org.chromium.base.NativeLibraryLoadedStatus;
-import org.chromium.base.SysUtils;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.Restriction;
-import org.chromium.build.BuildConfig;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.compositor.layouts.Layout;
-import org.chromium.chrome.browser.compositor.layouts.LayoutManagerChromePhone;
-import org.chromium.chrome.browser.compositor.layouts.LayoutManagerChromeTablet;
-import org.chromium.chrome.browser.compositor.layouts.StaticLayout;
-import org.chromium.chrome.browser.compositor.layouts.content.TabContentManager;
-import org.chromium.chrome.browser.device.DeviceClassManager;
-import org.chromium.chrome.browser.flags.CachedFeatureFlags;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.homepage.HomepageManager;
-import org.chromium.chrome.browser.omnibox.UrlBar;
-import org.chromium.chrome.browser.preferences.Pref;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.suggestions.SiteSuggestion;
-import org.chromium.chrome.browser.suggestions.mostvisited.MostVisitedSitesMetadataUtils;
-import org.chromium.chrome.browser.suggestions.tile.Tile;
-import org.chromium.chrome.browser.tabmodel.TabModelFilter;
-import org.chromium.chrome.browser.tasks.ReturnToChromeExperimentsUtil;
-import org.chromium.chrome.browser.tasks.pseudotab.PseudoTab;
-import org.chromium.chrome.browser.tasks.pseudotab.TabAttributeCache;
-import org.chromium.chrome.browser.tasks.tab_management.TabUiFeatureUtilities;
-import org.chromium.chrome.browser.tasks.tab_management.TabUiTestHelper;
-import org.chromium.chrome.browser.toolbar.ToolbarDataProvider;
-import org.chromium.chrome.browser.toolbar.top.StartSurfaceToolbarCoordinator;
-import org.chromium.chrome.browser.toolbar.top.TopToolbarCoordinator;
-import org.chromium.chrome.browser.util.ChromeAccessibilityUtil;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.R;
-import org.chromium.chrome.test.util.ActivityTestUtils;
-import org.chromium.chrome.test.util.ChromeRenderTestRule;
-import org.chromium.chrome.test.util.ViewUtils;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.chrome.test.util.browser.Features.DisableFeatures;
-import org.chromium.chrome.test.util.browser.Features.EnableFeatures;
-import org.chromium.chrome.test.util.browser.suggestions.SuggestionsDependenciesRule;
-import org.chromium.chrome.test.util.browser.suggestions.mostvisited.FakeMostVisitedSites;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.components.user_prefs.UserPrefs;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.ui.test.util.UiRestriction;
+import org.monyhar.base.BaseSwitches;
+import org.monyhar.base.Callback;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.MathUtils;
+import org.monyhar.base.NativeLibraryLoadedStatus;
+import org.monyhar.base.SysUtils;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.Restriction;
+import org.monyhar.build.BuildConfig;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.compositor.layouts.Layout;
+import org.monyhar.chrome.browser.compositor.layouts.LayoutManagerChromePhone;
+import org.monyhar.chrome.browser.compositor.layouts.LayoutManagerChromeTablet;
+import org.monyhar.chrome.browser.compositor.layouts.StaticLayout;
+import org.monyhar.chrome.browser.compositor.layouts.content.TabContentManager;
+import org.monyhar.chrome.browser.device.DeviceClassManager;
+import org.monyhar.chrome.browser.flags.CachedFeatureFlags;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.homepage.HomepageManager;
+import org.monyhar.chrome.browser.omnibox.UrlBar;
+import org.monyhar.chrome.browser.preferences.Pref;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.suggestions.SiteSuggestion;
+import org.monyhar.chrome.browser.suggestions.mostvisited.MostVisitedSitesMetadataUtils;
+import org.monyhar.chrome.browser.suggestions.tile.Tile;
+import org.monyhar.chrome.browser.tabmodel.TabModelFilter;
+import org.monyhar.chrome.browser.tasks.ReturnToChromeExperimentsUtil;
+import org.monyhar.chrome.browser.tasks.pseudotab.PseudoTab;
+import org.monyhar.chrome.browser.tasks.pseudotab.TabAttributeCache;
+import org.monyhar.chrome.browser.tasks.tab_management.TabUiFeatureUtilities;
+import org.monyhar.chrome.browser.tasks.tab_management.TabUiTestHelper;
+import org.monyhar.chrome.browser.toolbar.ToolbarDataProvider;
+import org.monyhar.chrome.browser.toolbar.top.StartSurfaceToolbarCoordinator;
+import org.monyhar.chrome.browser.toolbar.top.TopToolbarCoordinator;
+import org.monyhar.chrome.browser.util.ChromeAccessibilityUtil;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.R;
+import org.monyhar.chrome.test.util.ActivityTestUtils;
+import org.monyhar.chrome.test.util.ChromeRenderTestRule;
+import org.monyhar.chrome.test.util.ViewUtils;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.chrome.test.util.browser.Features.DisableFeatures;
+import org.monyhar.chrome.test.util.browser.Features.EnableFeatures;
+import org.monyhar.chrome.test.util.browser.suggestions.SuggestionsDependenciesRule;
+import org.monyhar.chrome.test.util.browser.suggestions.mostvisited.FakeMostVisitedSites;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.user_prefs.UserPrefs;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.ui.test.util.UiRestriction;
 
 import java.io.File;
 import java.io.IOException;
@@ -753,7 +753,7 @@ public class InstantStartTest {
         mRenderTestRule.render(surface, "singlePane_floatingTopToolbar");
 
         // Focus the omnibox.
-        UrlBar urlBar = cta.findViewById(org.chromium.chrome.R.id.url_bar);
+        UrlBar urlBar = cta.findViewById(org.monyhar.chrome.R.id.url_bar);
         TestThreadUtils.runOnUiThreadBlocking((Runnable) urlBar::requestFocus);
         // Clear the focus.
         TestThreadUtils.runOnUiThreadBlocking(urlBar::clearFocus);
@@ -866,7 +866,7 @@ public class InstantStartTest {
         // Initializes native.
         startAndWaitNativeInitialization();
         onViewWaiting(
-                allOf(withId(org.chromium.chrome.start_surface.R.id.feed_stream_recycler_view),
+                allOf(withId(org.monyhar.chrome.start_surface.R.id.feed_stream_recycler_view),
                         isDisplayed()));
 
         cta.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
@@ -896,7 +896,7 @@ public class InstantStartTest {
         // Initializes native.
         startAndWaitNativeInitialization();
         onViewWaiting(
-                allOf(withId(org.chromium.chrome.start_surface.R.id.feed_stream_recycler_view),
+                allOf(withId(org.monyhar.chrome.start_surface.R.id.feed_stream_recycler_view),
                         isDisplayed()));
 
         // Rotate to landscape mode.
@@ -1064,16 +1064,16 @@ public class InstantStartTest {
         StartSurfaceTestUtils.waitForTabModel(cta);
         TabUiTestHelper.verifyTabModelTabCount(cta, 2, 0);
 
-        waitForView(withId(org.chromium.chrome.start_surface.R.id.search_box_text));
-        TextView urlBar = cta.findViewById(org.chromium.chrome.start_surface.R.id.url_bar);
+        waitForView(withId(org.monyhar.chrome.start_surface.R.id.search_box_text));
+        TextView urlBar = cta.findViewById(org.monyhar.chrome.start_surface.R.id.url_bar);
         CriteriaHelper.pollUiThread(
                 ()
                         -> StartSurfaceTestUtils.isKeyboardShown(mActivityTestRule)
                         && urlBar.isFocused(),
                 MAX_TIMEOUT_MS, CriteriaHelper.DEFAULT_POLLING_INTERVAL);
-        waitForView(withId(org.chromium.chrome.start_surface.R.id.voice_search_button));
+        waitForView(withId(org.monyhar.chrome.start_surface.R.id.voice_search_button));
         Assert.assertTrue(TextUtils.isEmpty(urlBar.getText()));
-        assertEquals(cta.findViewById(org.chromium.chrome.start_surface.R.id.toolbar_buttons)
+        assertEquals(cta.findViewById(org.monyhar.chrome.start_surface.R.id.toolbar_buttons)
                              .getVisibility(),
                 View.INVISIBLE);
         ToolbarDataProvider toolbarDataProvider =

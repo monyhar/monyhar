@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.webshare;
+package org.monyhar.components.browser_ui.webshare;
 
 import androidx.test.filters.SmallTest;
 
@@ -11,9 +11,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.blink.mojom.SerializedBlob;
-import org.chromium.webshare.mojom.SharedFile;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.blink.mojom.SerializedBlob;
+import org.monyhar.webshare.mojom.SharedFile;
 
 /**
  * Unit tests for {@link SharedFileCollator}.

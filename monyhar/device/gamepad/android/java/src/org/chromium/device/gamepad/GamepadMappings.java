@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.device.gamepad;
+package org.monyhar.device.gamepad;
 
 import android.os.Build;
 import android.view.InputDevice;
@@ -11,7 +11,7 @@ import android.view.MotionEvent;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.JNINamespace;
 
 import java.util.BitSet;
 

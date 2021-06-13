@@ -96,7 +96,7 @@ std::string GetReportUrl(
 // type that's returned to the clients of SafeBrowsing in Chromium.
 // These values are persisted to logs. Entries should not be renumbered and
 // numeric values should never be reused.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.safe_browsing
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.safe_browsing
 // GENERATED_JAVA_PREFIX_TO_STRIP: SB_THREAT_TYPE_
 enum SBThreatType {
   // This type can be used for lists that can be checked synchronously so a

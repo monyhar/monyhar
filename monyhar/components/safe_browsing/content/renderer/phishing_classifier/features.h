@@ -15,7 +15,7 @@
 //
 // We also use token features.  These features have a unique name that is
 // constructed from the URL or page contents that we are classifying, for
-// example, "UrlDomain=chromium".  These features are also always set to 1.0
+// example, "UrlDomain=monyhar".  These features are also always set to 1.0
 // if they are present.
 //
 // The intermediate storage of the features for a URL is a FeatureMap, which is

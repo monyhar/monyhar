@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr;
+package org.monyhar.chrome.browser.vr;
 
-import org.chromium.base.Log;
-import org.chromium.components.webxr.ArDelegate;
+import org.monyhar.base.Log;
+import org.monyhar.components.webxr.ArDelegate;
 
 /**
  * Class used to create ArDelegate instances.
@@ -38,7 +38,7 @@ public class ArDelegateProvider {
         if (sDelegateInitialized) return sDelegate;
 
         try {
-            sDelegate = (ArDelegate) Class.forName("org.chromium.chrome.browser.vr.ArDelegateImpl")
+            sDelegate = (ArDelegate) Class.forName("org.monyhar.chrome.browser.vr.ArDelegateImpl")
                                 .newInstance();
         } catch (ClassNotFoundException e) {
         } catch (InstantiationException e) {

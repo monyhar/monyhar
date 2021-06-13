@@ -22,11 +22,11 @@ frontend (which does not require project configuration).
 ### Setup
 
 1. Install the latest Qt Creator.
-2. Under chromium/src `gn gen out/Default --ide=qtcreator`.
+2. Under monyhar/src `gn gen out/Default --ide=qtcreator`.
 3. Start it with `qtcreator out/Default/qtcreator_project/all.creator`.
 4. Help - Plugins - check ClangCodeModel to enable std completion.
 
-It takes 3 minutes to parse all of chromium's C++ files on my workstation!!! And
+It takes 3 minutes to parse all of monyhar's C++ files on my workstation!!! And
 it does not block while parsing.
 
 #### Code Style
@@ -36,7 +36,7 @@ it does not block while parsing.
    Make sure to tick - Enable auto format on file save"
    Select ClangFormat as the tool
    Go to Clang Format tab
-   Change the Clang format command to: `$chromium_checkout_dir/src/buildtools/$os/clang-format`, and
+   Change the Clang format command to: `$monyhar_checkout_dir/src/buildtools/$os/clang-format`, and
    set `Use predefined style: file`. You can also set a keyboard shortcut
    for it.
 3. Tools - Options - C++ - Code Style, import this xml file.
@@ -108,7 +108,7 @@ standalone GDB or LLDB (macOS) frontend.**
 For macOS :
 1. Open the file you want to debug.
 2. Debug - Start Debugging - Attach to running Application, you may need to
-   open chromium's task manager to find the process id.
+   open monyhar's task manager to find the process id.
 
 For Linux :
 1. Tools - Options - Build & Run - Debuggers, make sure GDB is set.
@@ -116,7 +116,7 @@ For Linux :
    Linux).
 3. Open the file you want to debug.
 4. Debug - Start Debugging - Attach to running Application, you may need to
-   open chromium's task manager to find the process id.
+   open monyhar's task manager to find the process id.
 
 ### Tips, tricks, and troubleshooting
 
@@ -137,7 +137,7 @@ Ensure you are using GDB on Linux, not LLDB.
 
 Linux :
 See
-https://chromium.googlesource.com/chromium/src/+/main/docs/linux/debugging.md
+https://monyhar.googlesource.com/monyhar/src/+/main/docs/linux/debugging.md
 
 macOS :
-https://chromium.googlesource.com/chromium/src/+/main/docs/mac/debugging.md
+https://monyhar.googlesource.com/monyhar/src/+/main/docs/mac/debugging.md

@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private.resources;
+package org.monyhar.weblayer_private.resources;
 
-import org.chromium.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.CalledByNative;
 
 /**
  * Wrapper class for ResourceId so it can be called over JNI. Since ResourceId is a generated class

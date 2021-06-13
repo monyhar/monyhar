@@ -6,7 +6,7 @@
 <!-- package name must be unique. -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="org.chromium.android_webview.test.support">
+    package="org.monyhar.android_webview.test.support">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -15,11 +15,11 @@
 
         <uses-library android:name="android.test.runner" />
 
-        <service android:name="org.chromium.android_webview.test.AwEmbeddedTestServerService"
+        <service android:name="org.monyhar.android_webview.test.AwEmbeddedTestServerService"
                 android:exported="true"
                 tools:ignore="ExportedService">
             <intent-filter>
-                <action android:name="org.chromium.net.test.EMBEDDED_TEST_SERVER_SERVICE" />
+                <action android:name="org.monyhar.net.test.EMBEDDED_TEST_SERVER_SERVICE" />
             </intent-filter>
         </service>
 

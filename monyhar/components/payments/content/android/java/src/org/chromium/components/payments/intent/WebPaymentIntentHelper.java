@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.payments.intent;
+package org.monyhar.components.payments.intent;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -13,14 +13,14 @@ import android.util.JsonWriter;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.components.payments.Address;
-import org.chromium.components.payments.ErrorStrings;
-import org.chromium.components.payments.PayerData;
-import org.chromium.components.payments.intent.WebPaymentIntentHelperType.PaymentDetailsModifier;
-import org.chromium.components.payments.intent.WebPaymentIntentHelperType.PaymentItem;
-import org.chromium.components.payments.intent.WebPaymentIntentHelperType.PaymentMethodData;
-import org.chromium.components.payments.intent.WebPaymentIntentHelperType.PaymentOptions;
-import org.chromium.components.payments.intent.WebPaymentIntentHelperType.PaymentShippingOption;
+import org.monyhar.components.payments.Address;
+import org.monyhar.components.payments.ErrorStrings;
+import org.monyhar.components.payments.PayerData;
+import org.monyhar.components.payments.intent.WebPaymentIntentHelperType.PaymentDetailsModifier;
+import org.monyhar.components.payments.intent.WebPaymentIntentHelperType.PaymentItem;
+import org.monyhar.components.payments.intent.WebPaymentIntentHelperType.PaymentMethodData;
+import org.monyhar.components.payments.intent.WebPaymentIntentHelperType.PaymentOptions;
+import org.monyhar.components.payments.intent.WebPaymentIntentHelperType.PaymentShippingOption;
 
 import java.io.IOException;
 import java.io.StringWriter;
@@ -34,7 +34,7 @@ import java.util.Map;
  */
 public class WebPaymentIntentHelper {
     /** The action name for the Pay Intent. */
-    public static final String ACTION_PAY = "org.chromium.intent.action.PAY";
+    public static final String ACTION_PAY = "org.monyhar.intent.action.PAY";
 
     // Freshest parameters sent to the payment app.
     public static final String EXTRA_CERTIFICATE = "certificate";

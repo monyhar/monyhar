@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feedback;
+package org.monyhar.chrome.browser.feedback;
 
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.variations.VariationsAssociatedData;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.variations.VariationsAssociatedData;
 
 import java.util.Map;
 

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.media;
+package org.monyhar.components.browser_ui.media;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -16,29 +16,29 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.SysUtils;
-import org.chromium.components.browser_ui.media.MediaSessionUma.MediaSessionActionSource;
-import org.chromium.components.embedder_support.browser_context.BrowserContextHandle;
-import org.chromium.components.favicon.LargeIconBridge;
-import org.chromium.components.url_formatter.UrlFormatter;
-import org.chromium.content_public.browser.MediaSession;
-import org.chromium.content_public.browser.MediaSessionObserver;
-import org.chromium.content_public.browser.NavigationHandle;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.WebContentsObserver;
-import org.chromium.media_session.mojom.MediaSessionAction;
-import org.chromium.services.media_session.MediaImage;
-import org.chromium.services.media_session.MediaMetadata;
-import org.chromium.services.media_session.MediaPosition;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.url.GURL;
+import org.monyhar.base.SysUtils;
+import org.monyhar.components.browser_ui.media.MediaSessionUma.MediaSessionActionSource;
+import org.monyhar.components.embedder_support.browser_context.BrowserContextHandle;
+import org.monyhar.components.favicon.LargeIconBridge;
+import org.monyhar.components.url_formatter.UrlFormatter;
+import org.monyhar.content_public.browser.MediaSession;
+import org.monyhar.content_public.browser.MediaSessionObserver;
+import org.monyhar.content_public.browser.NavigationHandle;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.WebContentsObserver;
+import org.monyhar.media_session.mojom.MediaSessionAction;
+import org.monyhar.services.media_session.MediaImage;
+import org.monyhar.services.media_session.MediaMetadata;
+import org.monyhar.services.media_session.MediaPosition;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.url.GURL;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
 /**
- * Glue code that relays events from the {@link org.chromium.content.browser.MediaSession} for a
+ * Glue code that relays events from the {@link org.monyhar.content.browser.MediaSession} for a
  * WebContents to a delegate (ultimately, to {@link MediaNotificationController}).
  */
 public class MediaSessionHelper implements MediaImageCallback {

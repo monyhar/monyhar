@@ -13,7 +13,7 @@ namespace mojo {
 namespace test {
 
 // An implementation of a hypothetical Rect type specifically for consumers in
-// in Blink. Unlike the Chromium variant (see rect_chromium.h) this does not
+// in Blink. Unlike the Chromium variant (see rect_monyhar.h) this does not
 // support negative origin coordinates and is not copyable.
 class RectBlink {
  public:

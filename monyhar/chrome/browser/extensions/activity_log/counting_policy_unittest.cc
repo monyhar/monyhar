@@ -1059,7 +1059,7 @@ TEST_F(CountingPolicyTest, DeleteDatabase) {
 
   // The following code tests that the caches of url and string tables were
   // cleared by the deletion above.
-  // https://code.google.com/p/chromium/issues/detail?id=341674.
+  // https://code.google.com/p/monyhar/issues/detail?id=341674.
   action =
       new Action("punky", mock_clock_.Now(), Action::ACTION_DOM_ACCESS, "lets");
   action->mutable_args()->AppendString("vamoose");

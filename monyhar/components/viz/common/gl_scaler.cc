@@ -11,8 +11,8 @@
 
 #include "base/logging.h"
 #include "components/viz/common/gpu/context_provider.h"
-#include "gpu/GLES2/gl2chromium.h"
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2monyhar.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "ui/gfx/color_transform.h"
 #include "ui/gfx/geometry/rect_conversions.h"
 

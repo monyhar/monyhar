@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.background_task_scheduler.internal;
+package org.monyhar.components.background_task_scheduler.internal;
 
 import android.content.Context;
 
-import org.chromium.components.background_task_scheduler.TaskInfo;
+import org.monyhar.components.background_task_scheduler.TaskInfo;
 
 /**
  * The internal representation of a {@link BackgroundTaskScheduler} to make it possible to use

@@ -12,4 +12,4 @@ centralized location.
 
 Merge scripts are documented here:
 
-https://cs.chromium.org/search/?q=file:swarming/api.py+%22*+merge:%22&type=cs
+https://cs.monyhar.org/search/?q=file:swarming/api.py+%22*+merge:%22&type=cs

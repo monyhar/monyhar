@@ -14,17 +14,17 @@ behavioral features, such as web accessible resources or event pages.
 ## Files
 
 There are four different feature files used:
-* [\_api\_features](https://chromium.googlesource.com/chromium/src/+/main/chrome/common/extensions/api/_api_features.json):
+* [\_api\_features](https://monyhar.googlesource.com/monyhar/src/+/main/chrome/common/extensions/api/_api_features.json):
 Specifies the requirements for API availability. If an extension doesn't satisfy
 the requirements, the API will not be accessible in the extension's code.
-* [\_permission\_features](https://chromium.googlesource.com/chromium/src/+/main/chrome/common/extensions/api/_permission_features.json):
+* [\_permission\_features](https://monyhar.googlesource.com/monyhar/src/+/main/chrome/common/extensions/api/_permission_features.json):
 Specifies the requirements for permission availability. If an extension doesn't
 satisfy the requirements, the permission will not be granted and the extension
 will have an install warning.
-* [\_manifest\_features](https://chromium.googlesource.com/chromium/src/+/main/chrome/common/extensions/api/_manifest_features.json):
+* [\_manifest\_features](https://monyhar.googlesource.com/monyhar/src/+/main/chrome/common/extensions/api/_manifest_features.json):
 Specifies the requirements for manifest entry availability. If an extension
 doesn't satisfy the requirements, the extension will fail to load with an error.
-* [\_behavior\_features](https://chromium.googlesource.com/chromium/src/+/main/extensions/common/api/_behavior_features.json):
+* [\_behavior\_features](https://monyhar.googlesource.com/monyhar/src/+/main/extensions/common/api/_behavior_features.json):
 Specifies the requirements for miscellaneous extension behaviors. This should
 typically not be used.
 
@@ -195,7 +195,7 @@ preceeding '--').
 The `feature_flag` property specifies the name of a `base::Feature` flag that
 must be enabled for the feature to be available. This can be used to implement a
 remote kill switch for the feature. These feature flags should be defined at
-[feature_flags.cc](https://source.chromium.org/chromium/chromium/src/+/main:extensions/common/features/feature_flags.cc).
+[feature_flags.cc](https://source.monyhar.org/monyhar/monyhar/src/+/main:extensions/common/features/feature_flags.cc).
 
 Accepted value is a single string for the feature flag.
 
@@ -404,7 +404,7 @@ to secure APIs.
 
 Traditionally, only pages with a top-level extension frame (with a
 `chrome-extension://` scheme), extension popups, and app windows were blessed
-extension contexts. With [site isolation](https://www.chromium.org/developers/design-documents/site-isolation),
+extension contexts. With [site isolation](https://www.monyhar.org/developers/design-documents/site-isolation),
 extension frames running in web pages are also considered blessed extension
 contexts, since they are running in the extension process (rather than in the
 same process as the web page).
@@ -453,7 +453,7 @@ The `unblessed_extension` context refers to a JavaScript context for an
 extension frame that is embedded in an external page, like a web page, and
 runs in the same process as the embedder. Given the limited separation between
 the (untrusted) embedder and the extension frame, relatively few features are
-exposed in these contexts. Note that with [site isolation](https://www.chromium.org/developers/design-documents/site-isolation),
+exposed in these contexts. Note that with [site isolation](https://www.monyhar.org/developers/design-documents/site-isolation),
 extension frames (even those embedded in web pages) run in the trusted
 extension process, and become blessed extension contexts.
 

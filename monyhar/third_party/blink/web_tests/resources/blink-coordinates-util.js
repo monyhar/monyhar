@@ -2,7 +2,7 @@
   Methods for working with the blink coordinate spaces.
 
   For the blink definitions of coordinate spaces and pixel scales:
-  https://www.chromium.org/developers/design-documents/blink-coordinate-spaces
+  https://www.monyhar.org/developers/design-documents/blink-coordinate-spaces
 
   For the CSS definitions:
   https://rbyers.github.io/inputCoords.html

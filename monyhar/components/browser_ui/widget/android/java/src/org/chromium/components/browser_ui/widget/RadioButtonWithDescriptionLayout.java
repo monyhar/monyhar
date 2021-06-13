@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget;
+package org.monyhar.components.browser_ui.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -12,7 +12,7 @@ import android.widget.RadioGroup;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.ui.base.ViewUtils;
+import org.monyhar.ui.base.ViewUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,16 +37,16 @@ import java.util.List;
  * RadioButtonWithDescription, RadioButtonWithDescriptionAndAuxButton and/or
  * RadioButtonWithEditText children. For example:
  * <pre>{@code
- *  <org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionLayout
+ *  <org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionLayout
  *       android:layout_width="match_parent"
  *       android:layout_height="match_parent" >
- *       <org.chromium.components.browser_ui.widget.RadioButtonWithDescription
+ *       <org.monyhar.components.browser_ui.widget.RadioButtonWithDescription
  *           ... />
- *       <org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionAndAuxButton
+ *       <org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionAndAuxButton
  *           ... />
- *       <org.chromium.components.browser_ui.widget.RadioButtonWithEditText
+ *       <org.monyhar.components.browser_ui.widget.RadioButtonWithEditText
  *           ... />
- *   </org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionLayout>
+ *   </org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionLayout>
  * }</pre>
  * </p>
  */

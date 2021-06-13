@@ -217,7 +217,7 @@ TEST_F(PasswordControllerJsTest,
   NSString* result = [NSString
       stringWithFormat:
           @"[{\"name\":\"login_form\",\"origin\":\"%s\",\"action\":\"https://"
-          @"chromium.test/generic_submit\",\"name_attribute\":\"login_form\","
+          @"monyhar.test/generic_submit\",\"name_attribute\":\"login_form\","
           @"\"id_attribute\":\"\",\"unique_renderer_id\":\"1\","
           @"\"frame_id\":\"%s\","
           @"\"fields\":[{"
@@ -280,7 +280,7 @@ TEST_F(PasswordControllerJsTest,
           @"\"should_autocomplete\":true,\"is_focusable\":true,"
           @"\"max_length\":524288,\"is_checkable\":false,\"value\":\"\","
           @"\"label\":\"Password:\"}]},{\"name\":\"login_form2\",\"origin\":"
-          @"\"https://chromium.test/\",\"action\":\"https://chromium.test/"
+          @"\"https://monyhar.test/\",\"action\":\"https://monyhar.test/"
           @"generic_s2\",\"name_attribute\":\"login_form2\","
           @"\"id_attribute\":\"\",\"unique_renderer_id\":\"4\","
           @"\"frame_id\":\"%s\","
@@ -429,7 +429,7 @@ TEST_F(PasswordControllerJsTest, TouchendAsSubmissionIndicator) {
   std::string mainFrameID = main_frame->GetFrameId();
   NSString* expected_command = [NSString
       stringWithFormat:
-          @"{\"name\":\"login_form\",\"origin\":\"https://chromium.test/"
+          @"{\"name\":\"login_form\",\"origin\":\"https://monyhar.test/"
           @"\",\"action\":\"%s\",\"name_attribute\":\"login_form\","
           @"\"id_attribute\":\"login_form\",\"unique_renderer_id\":\"1\","
           @"\"frame_id\":\"%s\","

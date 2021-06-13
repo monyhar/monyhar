@@ -2,7 +2,7 @@
   // Note!
   // You can set the value used for ${config:chrome.outputDir} in your settings.json
   // file with a line like:
-  // "chrome.outputDir": "/path/to/chromium/src/out/Debug",
+  // "chrome.outputDir": "/path/to/monyhar/src/out/Debug",
   "version": "2.0.0",
   "runner": "terminal",
   // The default problem matcher matches build output, which is useful for most tasks.
@@ -54,9 +54,9 @@
       "description": "Chrome output directory:",
       // Configure this to point to all the output directories you use.
       "options": [
-        "/path/to/chromium/src/out/pc",
-        "/path/to/chromium/src/out/Debug",
-        "/path/to/chromium/src/out/Debug_x86"
+        "/path/to/monyhar/src/out/pc",
+        "/path/to/monyhar/src/out/Debug",
+        "/path/to/monyhar/src/out/Debug_x86"
       ]
     }
   ],

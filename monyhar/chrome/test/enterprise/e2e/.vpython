@@ -6,12 +6,12 @@
 # running the test scripts.
 #
 # More information:
-# https://chromium.googlesource.com/infra/infra/+/main/doc/users/vpython.md
+# https://monyhar.googlesource.com/infra/infra/+/main/doc/users/vpython.md
 python_version: "2.7"
 
 wheel: <
   name: "infra/celab/celab/windows-amd64"
-  # Source: https://ci.chromium.org/p/celab/builders/ci/Windows/b8863242163218578192
+  # Source: https://ci.monyhar.org/p/celab/builders/ci/Windows/b8863242163218578192
   version: "IQHknf30R2DyRmnCQ9PWQToO1x-rS7ecoTeaDqncGmoC"
 >
 

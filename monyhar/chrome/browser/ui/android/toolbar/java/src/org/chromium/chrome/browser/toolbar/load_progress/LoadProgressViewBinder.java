@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar.load_progress;
+package org.monyhar.chrome.browser.toolbar.load_progress;
 
-import org.chromium.chrome.browser.toolbar.ToolbarProgressBar;
-import org.chromium.chrome.browser.toolbar.load_progress.LoadProgressProperties.CompletionState;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.chrome.browser.toolbar.ToolbarProgressBar;
+import org.monyhar.chrome.browser.toolbar.load_progress.LoadProgressProperties.CompletionState;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * View binder for the load progress bar. Adjusts view properties on ToolbarProgressBar in response

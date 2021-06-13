@@ -2,30 +2,30 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.video_tutorials.player;
+package org.monyhar.chrome.browser.video_tutorials.player;
 
 import android.content.Context;
 import android.graphics.Color;
 import android.util.Pair;
 import android.view.View;
 
-import org.chromium.base.Callback;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.video_tutorials.LanguageInfoProvider;
-import org.chromium.chrome.browser.video_tutorials.PlaybackStateObserver;
-import org.chromium.chrome.browser.video_tutorials.R;
-import org.chromium.chrome.browser.video_tutorials.Tutorial;
-import org.chromium.chrome.browser.video_tutorials.VideoTutorialService;
-import org.chromium.chrome.browser.video_tutorials.languages.LanguagePickerCoordinator;
-import org.chromium.components.embedder_support.delegate.WebContentsDelegateAndroid;
-import org.chromium.components.embedder_support.view.ContentView;
-import org.chromium.components.thinwebview.ThinWebView;
-import org.chromium.components.thinwebview.ThinWebViewConstraints;
-import org.chromium.components.thinwebview.ThinWebViewFactory;
-import org.chromium.content_public.browser.MediaSession;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.base.Callback;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.video_tutorials.LanguageInfoProvider;
+import org.monyhar.chrome.browser.video_tutorials.PlaybackStateObserver;
+import org.monyhar.chrome.browser.video_tutorials.R;
+import org.monyhar.chrome.browser.video_tutorials.Tutorial;
+import org.monyhar.chrome.browser.video_tutorials.VideoTutorialService;
+import org.monyhar.chrome.browser.video_tutorials.languages.LanguagePickerCoordinator;
+import org.monyhar.components.embedder_support.delegate.WebContentsDelegateAndroid;
+import org.monyhar.components.embedder_support.view.ContentView;
+import org.monyhar.components.thinwebview.ThinWebView;
+import org.monyhar.components.thinwebview.ThinWebViewConstraints;
+import org.monyhar.components.thinwebview.ThinWebViewFactory;
+import org.monyhar.content_public.browser.MediaSession;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
 
 /**
  * The top level coordinator for the video player.

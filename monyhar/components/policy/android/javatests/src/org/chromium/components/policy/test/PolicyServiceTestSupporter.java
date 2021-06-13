@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.policy.test;
+package org.monyhar.components.policy.test;
 
 import static org.mockito.ArgumentMatchers.argThat;
 import static org.mockito.Mockito.any;
@@ -11,10 +11,10 @@ import static org.mockito.Mockito.times;
 import org.junit.Assert;
 import org.mockito.Mockito;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.components.policy.PolicyMap;
-import org.chromium.components.policy.PolicyService;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.components.policy.PolicyMap;
+import org.monyhar.components.policy.PolicyService;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test.services;
+package org.monyhar.android_webview.test.services;
 
-import static org.chromium.android_webview.test.OnlyRunIn.ProcessMode.SINGLE_PROCESS;
+import static org.monyhar.android_webview.test.OnlyRunIn.ProcessMode.SINGLE_PROCESS;
 
 import android.os.ParcelFileDescriptor;
 
@@ -15,26 +15,26 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.common.PlatformServiceBridge;
-import org.chromium.android_webview.common.crash.SystemWideCrashDirectories;
-import org.chromium.android_webview.services.AwMinidumpUploaderDelegate;
-import org.chromium.android_webview.services.AwMinidumpUploaderDelegate.SamplingDelegate;
-import org.chromium.android_webview.services.CrashReceiverService;
-import org.chromium.android_webview.test.AwJUnit4ClassRunner;
-import org.chromium.android_webview.test.OnlyRunIn;
-import org.chromium.base.Callback;
-import org.chromium.base.FileUtils;
-import org.chromium.base.ThreadUtils;
-import org.chromium.components.minidump_uploader.CrashFileManager;
-import org.chromium.components.minidump_uploader.CrashTestRule;
-import org.chromium.components.minidump_uploader.CrashTestRule.MockCrashReportingPermissionManager;
-import org.chromium.components.minidump_uploader.MinidumpUploadJob;
-import org.chromium.components.minidump_uploader.MinidumpUploadJobImpl;
-import org.chromium.components.minidump_uploader.MinidumpUploadTestUtility;
-import org.chromium.components.minidump_uploader.MinidumpUploaderDelegate;
-import org.chromium.components.minidump_uploader.TestMinidumpUploadJobImpl;
-import org.chromium.components.minidump_uploader.util.CrashReportingPermissionManager;
-import org.chromium.components.version_info.Channel;
+import org.monyhar.android_webview.common.PlatformServiceBridge;
+import org.monyhar.android_webview.common.crash.SystemWideCrashDirectories;
+import org.monyhar.android_webview.services.AwMinidumpUploaderDelegate;
+import org.monyhar.android_webview.services.AwMinidumpUploaderDelegate.SamplingDelegate;
+import org.monyhar.android_webview.services.CrashReceiverService;
+import org.monyhar.android_webview.test.AwJUnit4ClassRunner;
+import org.monyhar.android_webview.test.OnlyRunIn;
+import org.monyhar.base.Callback;
+import org.monyhar.base.FileUtils;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.components.minidump_uploader.CrashFileManager;
+import org.monyhar.components.minidump_uploader.CrashTestRule;
+import org.monyhar.components.minidump_uploader.CrashTestRule.MockCrashReportingPermissionManager;
+import org.monyhar.components.minidump_uploader.MinidumpUploadJob;
+import org.monyhar.components.minidump_uploader.MinidumpUploadJobImpl;
+import org.monyhar.components.minidump_uploader.MinidumpUploadTestUtility;
+import org.monyhar.components.minidump_uploader.MinidumpUploaderDelegate;
+import org.monyhar.components.minidump_uploader.TestMinidumpUploadJobImpl;
+import org.monyhar.components.minidump_uploader.util.CrashReportingPermissionManager;
+import org.monyhar.components.version_info.Channel;
 
 import java.io.File;
 import java.io.FileInputStream;

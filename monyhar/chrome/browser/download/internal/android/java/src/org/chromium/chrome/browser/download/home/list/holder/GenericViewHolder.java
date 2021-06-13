@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.home.list.holder;
+package org.monyhar.chrome.browser.download.home.list.holder;
 
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
@@ -16,12 +16,12 @@ import androidx.annotation.DrawableRes;
 import androidx.core.graphics.drawable.RoundedBitmapDrawable;
 import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.browser.download.home.list.ListItem;
-import org.chromium.chrome.browser.download.home.list.UiUtils;
-import org.chromium.chrome.browser.download.internal.R;
-import org.chromium.components.offline_items_collection.OfflineItemVisuals;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.browser.download.home.list.ListItem;
+import org.monyhar.chrome.browser.download.home.list.UiUtils;
+import org.monyhar.chrome.browser.download.internal.R;
+import org.monyhar.components.offline_items_collection.OfflineItemVisuals;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  *  A {@link RecyclerView.ViewHolder} specifically meant to display a generic {@code OfflineItem}.
@@ -63,7 +63,7 @@ public class GenericViewHolder extends OfflineItemViewHolder {
         if (iconId != mGenericIconId) {
             mGenericIconId = iconId;
 
-            Drawable drawable = org.chromium.ui.UiUtils.getTintedDrawable(
+            Drawable drawable = org.monyhar.ui.UiUtils.getTintedDrawable(
                     itemView.getContext(), iconId, R.color.default_icon_color_tint_list);
 
             mThumbnail.setUnavailableDrawable(drawable);

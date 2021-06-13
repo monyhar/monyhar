@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.module_installer.builder;
+package org.monyhar.components.module_installer.builder;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.doReturn;
@@ -16,9 +16,9 @@ import org.mockito.InOrder;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.components.module_installer.engine.InstallEngine;
-import org.chromium.components.module_installer.engine.InstallListener;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.components.module_installer.engine.InstallEngine;
+import org.monyhar.components.module_installer.engine.InstallListener;
 
 /**
  * Test suite for the Module class.

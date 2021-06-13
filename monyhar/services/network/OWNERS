@@ -1,28 +1,28 @@
 # If you're adding a new feature or modifying non-trivial amount of code
 # in Network Service, please consider sharing the design idea/doc with
-# network-service-dev@chromium.org beforehand.
+# network-service-dev@monyhar.org beforehand.
 
-cduvall@chromium.org
-ericorth@chromium.org
-falken@chromium.org
-jam@chromium.org
-kinuko@chromium.org
-mmenke@chromium.org
-morlovich@chromium.org
-reillyg@chromium.org
-rmcelrath@chromium.org
-toyoshim@chromium.org
-tsepez@chromium.org
-yhirano@chromium.org
+cduvall@monyhar.org
+ericorth@monyhar.org
+falken@monyhar.org
+jam@monyhar.org
+kinuko@monyhar.org
+mmenke@monyhar.org
+morlovich@monyhar.org
+reillyg@monyhar.org
+rmcelrath@monyhar.org
+toyoshim@monyhar.org
+tsepez@monyhar.org
+yhirano@monyhar.org
 
 # Files and features related to component:Internals>Sandbox>SiteIsolation:
-per-file cross_origin_read_blocking*=creis@chromium.org
-per-file cross_origin_read_blocking*=lukasza@chromium.org
-per-file sec_header_helpers*=creis@chromium.org
-per-file sec_header_helpers*=lukasza@chromium.org
-per-file sec_header_helpers*=mkwst@chromium.org
+per-file cross_origin_read_blocking*=creis@monyhar.org
+per-file cross_origin_read_blocking*=lukasza@monyhar.org
+per-file sec_header_helpers*=creis@monyhar.org
+per-file sec_header_helpers*=lukasza@monyhar.org
+per-file sec_header_helpers*=mkwst@monyhar.org
 
-per-file expect_ct_reporter*=estark@chromium.org
+per-file expect_ct_reporter*=estark@monyhar.org
 
 per-file cert_verifier_with_trust_anchors*=file://chromeos/policy/OWNERS
 
@@ -38,8 +38,8 @@ per-file BUILD.gn=file://services/network/resource_scheduler/OWNERS
 per-file BUILD.gn=file://services/network/sct_auditing/OWNERS
 
 # Content Security Policy
-per-file content_security_policy*=lfg@chromium.org
-per-file content_security_policy*=nasko@chromium.org
+per-file content_security_policy*=lfg@monyhar.org
+per-file content_security_policy*=nasko@monyhar.org
 
 # Cookies
 per-file *cookie*=file://net/cookies/OWNERS

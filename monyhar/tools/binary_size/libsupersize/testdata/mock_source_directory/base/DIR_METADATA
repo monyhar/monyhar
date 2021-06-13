@@ -1,6 +1,6 @@
 monorail {
-  project: "chromium"
+  project: "monyhar"
   component: "Blink>Internal"
 }
-team_email: "team@chromium.org"
+team_email: "team@monyhar.org"
 os: LINUX

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.display_cutout;
+package org.monyhar.chrome.browser.display_cutout;
 
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.reset;
@@ -26,16 +26,16 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.blink.mojom.ViewportFit;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.tab.TabImpl;
-import org.chromium.chrome.browser.tab.TabObserver;
-import org.chromium.chrome.browser.tab.TabSelectionType;
-import org.chromium.components.browser_ui.display_cutout.DisplayCutoutController;
-import org.chromium.components.browser_ui.widget.InsetObserverView;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.testing.local.LocalRobolectricTestRunner;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.blink.mojom.ViewportFit;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.tab.TabImpl;
+import org.monyhar.chrome.browser.tab.TabObserver;
+import org.monyhar.chrome.browser.tab.TabSelectionType;
+import org.monyhar.components.browser_ui.display_cutout.DisplayCutoutController;
+import org.monyhar.components.browser_ui.widget.InsetObserverView;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.ui.base.WindowAndroid;
 
 import java.lang.ref.WeakReference;
 

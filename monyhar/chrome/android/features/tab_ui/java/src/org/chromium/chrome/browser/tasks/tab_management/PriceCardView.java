@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
 import android.content.Context;
 import android.graphics.Paint;
@@ -12,7 +12,7 @@ import android.view.LayoutInflater;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import org.chromium.chrome.tab_ui.R;
+import org.monyhar.chrome.tab_ui.R;
 
 /**
  * Contains pricing information relating to a shopping offer website.  Currently only

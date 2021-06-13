@@ -63,7 +63,7 @@ using SystemMemoryInfoCallback =
 // Upstart Job Description
 struct JobDesc {
   // Explicit ctor/dtor declaration is necessary for complex struct. See
-  // https://cs.chromium.org/chromium/src/tools/clang/plugins/FindBadConstructsConsumer.cpp
+  // https://cs.monyhar.org/monyhar/src/tools/clang/plugins/FindBadConstructsConsumer.cpp
   JobDesc(const std::string& job_name,
           UpstartOperation operation,
           const std::vector<std::string>& environment);

@@ -44,7 +44,7 @@ _VALID_ANNOTATIONS = set(_DEFAULT_ANNOTATIONS +
                          _EXCLUDE_UNLESS_REQUESTED_ANNOTATIONS)
 
 _TEST_LIST_JUNIT4_RUNNERS = [
-    'org.chromium.base.test.BaseChromiumAndroidJUnitRunner']
+    'org.monyhar.base.test.BaseChromiumAndroidJUnitRunner']
 
 _SKIP_PARAMETERIZATION = 'SkipCommandLineParameterization'
 _PARAMETERIZED_COMMAND_LINE_FLAGS = 'ParameterizedCommandLineFlags'
@@ -619,10 +619,10 @@ class InstrumentationTestInstance(test_instance.TestInstance):
     all_instrumentations = self._test_apk.GetAllInstrumentations()
     all_junit3_runner_classes = [
         x for x in all_instrumentations if ('0xffffffff' in x.get(
-            'chromium-junit3', ''))]
+            'monyhar-junit3', ''))]
     all_junit4_runner_classes = [
         x for x in all_instrumentations if ('0xffffffff' not in x.get(
-            'chromium-junit3', ''))]
+            'monyhar-junit3', ''))]
 
     if len(all_junit3_runner_classes) > 1:
       logging.warning('This test apk has more than one JUnit3 instrumentation')

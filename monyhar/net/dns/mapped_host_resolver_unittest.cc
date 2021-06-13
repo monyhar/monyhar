@@ -88,8 +88,8 @@ TEST(MappedHostResolverTest, Inclusion) {
   // Remap "*.org" to "proxy:99".
   EXPECT_TRUE(resolver->AddRuleFromString("Map *.org proxy:99"));
 
-  // Try resolving "chromium.org:61". Should be remapped to "proxy:99".
-  request = resolver->CreateRequest(HostPortPair("chromium.org", 61),
+  // Try resolving "monyhar.org:61". Should be remapped to "proxy:99".
+  request = resolver->CreateRequest(HostPortPair("monyhar.org", 61),
                                     NetworkIsolationKey(), NetLogWithSource(),
                                     absl::nullopt);
   rv = request->Start(callback.callback());

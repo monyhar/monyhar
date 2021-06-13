@@ -6,12 +6,12 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/browser_controls/BrowserControlsMarginSupplier.java",
-    "java/src/org/chromium/chrome/browser/browser_controls/BrowserControlsSizer.java",
-    "java/src/org/chromium/chrome/browser/browser_controls/BrowserControlsStateProvider.java",
-    "java/src/org/chromium/chrome/browser/browser_controls/BrowserControlsUtils.java",
-    "java/src/org/chromium/chrome/browser/browser_controls/BrowserControlsVisibilityManager.java",
-    "java/src/org/chromium/chrome/browser/browser_controls/BrowserStateBrowserControlsVisibilityDelegate.java",
+    "java/src/org/monyhar/chrome/browser/browser_controls/BrowserControlsMarginSupplier.java",
+    "java/src/org/monyhar/chrome/browser/browser_controls/BrowserControlsSizer.java",
+    "java/src/org/monyhar/chrome/browser/browser_controls/BrowserControlsStateProvider.java",
+    "java/src/org/monyhar/chrome/browser/browser_controls/BrowserControlsUtils.java",
+    "java/src/org/monyhar/chrome/browser/browser_controls/BrowserControlsVisibilityManager.java",
+    "java/src/org/monyhar/chrome/browser/browser_controls/BrowserStateBrowserControlsVisibilityDelegate.java",
   ]
 
   deps = [
@@ -29,7 +29,7 @@ java_library("junit") {
   # Skip platform checks since Robolectric depends on requires_android targets.
   bypass_platform_checks = true
   testonly = true
-  sources = [ "java/src/org/chromium/chrome/browser/browser_controls/BrowserStateBrowserControlsVisibilityDelegateTest.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/browser_controls/BrowserStateBrowserControlsVisibilityDelegateTest.java" ]
   deps = [
     ":java",
     "//base:base_java",

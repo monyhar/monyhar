@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.devui;
+package org.monyhar.android_webview.devui;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -35,21 +35,21 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.annotation.WorkerThread;
 
-import org.chromium.android_webview.common.DeveloperModeUtils;
-import org.chromium.android_webview.common.PlatformServiceBridge;
-import org.chromium.android_webview.common.crash.CrashInfo;
-import org.chromium.android_webview.common.crash.CrashInfo.UploadState;
-import org.chromium.android_webview.common.crash.CrashUploadUtil;
-import org.chromium.android_webview.devui.util.CrashBugUrlFactory;
-import org.chromium.android_webview.devui.util.WebViewCrashInfoCollector;
-import org.chromium.base.BaseSwitches;
-import org.chromium.base.CommandLine;
-import org.chromium.base.Log;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.components.version_info.Channel;
-import org.chromium.components.version_info.VersionConstants;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.android_webview.common.DeveloperModeUtils;
+import org.monyhar.android_webview.common.PlatformServiceBridge;
+import org.monyhar.android_webview.common.crash.CrashInfo;
+import org.monyhar.android_webview.common.crash.CrashInfo.UploadState;
+import org.monyhar.android_webview.common.crash.CrashUploadUtil;
+import org.monyhar.android_webview.devui.util.CrashBugUrlFactory;
+import org.monyhar.android_webview.devui.util.WebViewCrashInfoCollector;
+import org.monyhar.base.BaseSwitches;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.Log;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.components.version_info.Channel;
+import org.monyhar.components.version_info.VersionConstants;
+import org.monyhar.ui.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Date;

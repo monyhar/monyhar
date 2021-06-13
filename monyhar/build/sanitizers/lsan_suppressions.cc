@@ -5,13 +5,13 @@
 // This file contains the default suppressions for LeakSanitizer.
 // You can also pass additional suppressions via LSAN_OPTIONS:
 // LSAN_OPTIONS=suppressions=/path/to/suppressions. Please refer to
-// http://dev.chromium.org/developers/testing/leaksanitizer for more info.
+// http://dev.monyhar.org/developers/testing/leaksanitizer for more info.
 
 #if defined(LEAK_SANITIZER)
 
 // Please make sure the code below declares a single string variable
 // kLSanDefaultSuppressions which contains LSan suppressions delimited by
-// newlines. See http://dev.chromium.org/developers/testing/leaksanitizer
+// newlines. See http://dev.monyhar.org/developers/testing/leaksanitizer
 // for the instructions on writing suppressions.
 char kLSanDefaultSuppressions[] =
     // Intentional leak used as sanity test for Valgrind/memcheck.

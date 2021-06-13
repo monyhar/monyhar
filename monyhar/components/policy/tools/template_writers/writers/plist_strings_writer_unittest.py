@@ -32,7 +32,7 @@ class PListStringsWriterUnittest(writer_unittest_common.WriterUnittestCommon):
         }
       }'''
     output = self.GetOutput(policy_json, {
-        '_chromium': '1',
+        '_monyhar': '1',
         'mac_bundle_id': 'com.example.Test'
     }, 'plist_strings')
     expected_output = ('Chromium.pfm_title = "Chromium";\n'
@@ -55,11 +55,11 @@ class PListStringsWriterUnittest(writer_unittest_common.WriterUnittestCommon):
       }'''
     output = self.GetOutput(
         policy_json, {
-            '_chromium': '1',
+            '_monyhar': '1',
             'mac_bundle_id': 'com.example.Test',
             'version': '39.0.0.0'
         }, 'plist_strings')
-    expected_output = ('/* chromium version: 39.0.0.0 */\n'
+    expected_output = ('/* monyhar version: 39.0.0.0 */\n'
                        'Chromium.pfm_title = "Chromium";\n'
                        'Chromium.pfm_description = "Chromium preferen\\"ces";')
     self.assertEquals(output.strip(), expected_output.strip())
@@ -137,7 +137,7 @@ With a newline.""",
         }
       }'''
     output = self.GetOutput(policy_json, {
-        '_chromium': '1',
+        '_monyhar': '1',
         'mac_bundle_id': 'com.example.Test'
     }, 'plist_strings')
     expected_output = ('Chromium.pfm_title = "Chromium";\n'
@@ -182,7 +182,7 @@ With a newline.""",
         }
       }'''
     output = self.GetOutput(policy_json, {
-        '_chromium': '1',
+        '_monyhar': '1',
         'mac_bundle_id': 'com.example.Test'
     }, 'plist_strings')
     expected_output = ('Chromium.pfm_title = "Chromium";\n'
@@ -239,7 +239,7 @@ With a newline.""",
         }
       }'''
     output = self.GetOutput(policy_json, {
-        '_chromium': '1',
+        '_monyhar': '1',
         'mac_bundle_id': 'com.example.Test'
     }, 'plist_strings')
     expected_output = ('Chromium.pfm_title = "Chromium";\n'

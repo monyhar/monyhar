@@ -5,9 +5,9 @@
 load("//console-header.star", "HEADER")
 
 luci.console_view(
-    name = "chromium.webrtc",
+    name = "monyhar.webrtc",
     header = HEADER,
-    repo = "https://chromium.googlesource.com/chromium/src",
+    repo = "https://monyhar.googlesource.com/monyhar/src",
     entries = [
         luci.console_view_entry(
             builder = "webrtc/WebRTC Chromium Android Builder",

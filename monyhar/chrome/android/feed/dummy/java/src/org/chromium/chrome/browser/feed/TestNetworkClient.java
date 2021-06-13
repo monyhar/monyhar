@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed;
+package org.monyhar.chrome.browser.feed;
 
 import androidx.annotation.VisibleForTesting;
 
 /**
  * A network client that returns configurable responses
- *  modified from org.chromium.chrome.browser.feed.library.mocknetworkclient.MockServerNetworkClient
+ *  modified from org.monyhar.chrome.browser.feed.library.mocknetworkclient.MockServerNetworkClient
  */
 public class TestNetworkClient {
     public TestNetworkClient() {}

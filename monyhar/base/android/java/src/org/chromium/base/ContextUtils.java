@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base;
+package org.monyhar.base;
 
 import android.app.Activity;
 import android.app.Application;
@@ -17,9 +17,9 @@ import android.preference.PreferenceManager;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.compat.ApiHelperForM;
-import org.chromium.build.BuildConfig;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.compat.ApiHelperForM;
+import org.monyhar.build.BuildConfig;
 
 /**
  * This class provides Android application context related utility methods.
@@ -142,7 +142,7 @@ public class ContextUtils {
         return Process.isIsolated();
     }
 
-    /** @return The name of the current process. E.g. "org.chromium.chrome:privileged_process0". */
+    /** @return The name of the current process. E.g. "org.monyhar.chrome:privileged_process0". */
     public static String getProcessName() {
         return ApiCompatibilityUtils.getProcessName();
     }

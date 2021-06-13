@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feedback;
+package org.monyhar.chrome.browser.feedback;
 
 import android.os.Build;
 import android.util.Pair;
 
-import org.chromium.base.CollectionUtil;
-import org.chromium.base.ContextUtils;
-import org.chromium.ui.base.DeviceFormFactor;
+import org.monyhar.base.CollectionUtil;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.ui.base.DeviceFormFactor;
 
 import java.util.Map;
 

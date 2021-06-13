@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.blink.mojom.Authenticator;
-import org.chromium.components.webauthn.AuthenticatorFactory;
-import org.chromium.content_public.browser.InterfaceRegistrar;
-import org.chromium.content_public.browser.RenderFrameHost;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.installedapp.mojom.InstalledAppProvider;
-import org.chromium.payments.mojom.PaymentRequest;
-import org.chromium.services.service_manager.InterfaceRegistry;
-import org.chromium.weblayer_private.payments.WebLayerPaymentRequestFactory;
-import org.chromium.webshare.mojom.ShareService;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.blink.mojom.Authenticator;
+import org.monyhar.components.webauthn.AuthenticatorFactory;
+import org.monyhar.content_public.browser.InterfaceRegistrar;
+import org.monyhar.content_public.browser.RenderFrameHost;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.installedapp.mojom.InstalledAppProvider;
+import org.monyhar.payments.mojom.PaymentRequest;
+import org.monyhar.services.service_manager.InterfaceRegistry;
+import org.monyhar.weblayer_private.payments.WebLayerPaymentRequestFactory;
+import org.monyhar.webshare.mojom.ShareService;
 
 /**
  * Registers Java implementations of mojo interfaces.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.embedder_support.util;
+package org.monyhar.components.embedder_support.util;
 
 import android.net.Uri;
 import android.text.TextUtils;
@@ -10,13 +10,13 @@ import android.text.TextUtils;
 import androidx.annotation.NonNull;
 import androidx.core.text.BidiFormatter;
 
-import org.chromium.base.CollectionUtil;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.url_formatter.UrlFormatter;
-import org.chromium.content_public.common.ContentUrlConstants;
-import org.chromium.net.GURLUtils;
-import org.chromium.url.GURL;
+import org.monyhar.base.CollectionUtil;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.url_formatter.UrlFormatter;
+import org.monyhar.content_public.common.ContentUrlConstants;
+import org.monyhar.net.GURLUtils;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -158,7 +158,7 @@ public class UrlUtilities {
      * If {@code includePrivateRegistries} is marked as true, then private domain registries (like
      * appspot.com) are considered "effective TLDs" -- all subdomains of appspot.com would be
      * considered distinct (effective TLD = ".appspot.com" + 1).
-     * This means that http://chromiumreview.appspot.com and http://example.appspot.com would not
+     * This means that http://monyharreview.appspot.com and http://example.appspot.com would not
      * belong to the same host.
      * If {@code includePrivateRegistries} is false, all subdomains of appspot.com
      * would be considered to be the same domain (TLD = ".com" + 1).

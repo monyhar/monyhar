@@ -16,7 +16,7 @@ class Bus;
 
 namespace chromeos {
 
-// U2FClient is used to communicate with the org.chromium.U2F service. The
+// U2FClient is used to communicate with the org.monyhar.U2F service. The
 // browser uses the U2F service to interface with the ChromeOS WebAuthn platform
 // authenticator.
 class COMPONENT_EXPORT(CHROMEOS_DBUS_U2F) U2FClient {

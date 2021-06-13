@@ -120,7 +120,7 @@ class ChromeNavigationBrowserTest : public InProcessBrowserTest {
 };
 
 #if defined(OS_LINUX) || defined(OS_CHROMEOS)
-// Fails on chromium.memory/Linux Chromium OS ASan LSan:
+// Fails on monyhar.memory/Linux Chromium OS ASan LSan:
 // https://crbug.com/897879
 #define MAYBE_TransientEntryPreservedOnMultipleNavigationsDuringInterstitial \
   DISABLED_TransientEntryPreservedOnMultipleNavigationsDuringInterstitial

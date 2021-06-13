@@ -5,8 +5,8 @@ This page aims to be a repository of useful links that people may find useful.
 
 ## Build Status
 
-* https://ci.chromium.org/p/chromium/g/main/console: Main build console
-* https://chromium-status.appspot.com/status_viewer: Tree uptime stats
+* https://ci.monyhar.org/p/monyhar/g/main/console: Main build console
+* https://monyhar-status.appspot.com/status_viewer: Tree uptime stats
 
 ## For Sheriffs
 
@@ -18,11 +18,11 @@ This page aims to be a repository of useful links that people may find useful.
 
 ## Source Information
 
-* https://cs.chromium.org/: Code search
-* https://chromium.googlesource.com/chromium/src/: Gitiles source code browser
-* https://chromium.googlesource.com/chromium/src/+log/b6cfa6a..9a2e0a8?pretty=fuller: Git changelog
+* https://cs.monyhar.org/: Code search
+* https://monyhar.googlesource.com/monyhar/src/: Gitiles source code browser
+* https://monyhar.googlesource.com/monyhar/src/+log/b6cfa6a..9a2e0a8?pretty=fuller: Git changelog
 
 ## Communication
 
-* [Chromium Developers List chromium-dev@](https://groups.google.com/a/chromium.org/group/chromium-dev/topics)
-* [Chromium Users List chromium-discuss@](https://groups.google.com/a/chromium.org/group/chromium-discuss/topics)
+* [Chromium Developers List monyhar-dev@](https://groups.google.com/a/monyhar.org/group/monyhar-dev/topics)
+* [Chromium Users List monyhar-discuss@](https://groups.google.com/a/monyhar.org/group/monyhar-discuss/topics)

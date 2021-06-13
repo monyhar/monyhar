@@ -24,7 +24,7 @@ import tempfile
 import zipfile
 import zlib
 
-import devil_chromium
+import devil_monyhar
 from devil.android.sdk import build_tools
 from devil.utils import cmd_helper
 from devil.utils import lazy
@@ -825,7 +825,7 @@ def main():
       default=20 * 1024,
       help='Minimum byte size of displayed pak resources.')
   argparser.add_argument(
-      '--chromium-output-directory',
+      '--monyhar-output-directory',
       dest='out_dir',
       type=os.path.realpath,
       help='Location of the build artifacts.')
@@ -875,7 +875,7 @@ def main():
       '--trichrome-library', help='Path to Trichrome Library .apk')
   args = argparser.parse_args()
 
-  devil_chromium.Initialize(output_directory=args.out_dir)
+  devil_monyhar.Initialize(output_directory=args.out_dir)
 
   # TODO(bsheedy): Remove this once uses of --chartjson have been removed.
   if args.chartjson:

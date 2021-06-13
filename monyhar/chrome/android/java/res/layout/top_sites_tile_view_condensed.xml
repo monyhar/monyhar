@@ -4,7 +4,7 @@
      found in the LICENSE file. -->
 
 <!-- An icon tile. -->
-<org.chromium.chrome.browser.suggestions.tile.TopSitesTileView
+<org.monyhar.chrome.browser.suggestions.tile.TopSitesTileView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="@dimen/tile_view_width_condensed"
@@ -50,7 +50,7 @@
         android:contentDescription="@string/accessibility_ntp_offline_badge"
         app:srcCompat="@drawable/ic_offline_pin_blue_white" />
 
-    <org.chromium.ui.widget.TextViewWithLeading
+    <org.monyhar.ui.widget.TextViewWithLeading
         android:id="@+id/tile_view_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -60,4 +60,4 @@
         android:lines="2"
         android:textAppearance="@style/TextAppearance.TextSmall.Secondary"
         app:leading="@dimen/text_size_small_leading"/>
-</org.chromium.chrome.browser.suggestions.tile.TopSitesTileView>
+</org.monyhar.chrome.browser.suggestions.tile.TopSitesTileView>

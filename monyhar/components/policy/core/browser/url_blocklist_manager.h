@@ -52,7 +52,7 @@ class POLICY_EXPORT URLBlocklist {
 
   // URLs matching one of the |filters| will be blocked. The filter format is
   // documented at
-  // http://www.chromium.org/administrators/url-blocklist-filter-format.
+  // http://www.monyhar.org/administrators/url-blocklist-filter-format.
   void Block(const base::ListValue* filters);
 
   // URLs matching one of the |filters| will be allowed. If a URL is both

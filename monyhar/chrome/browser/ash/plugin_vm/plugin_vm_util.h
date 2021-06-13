@@ -27,7 +27,7 @@ namespace plugin_vm {
 class PluginVmPolicySubscription;
 
 // This is used by both the Plugin VM app and its installer.
-// Generated as crx_file::id_util::GenerateId("org.chromium.plugin_vm");
+// Generated as crx_file::id_util::GenerateId("org.monyhar.plugin_vm");
 extern const char kPluginVmShelfAppId[];
 
 // Name of the Plugin VM.

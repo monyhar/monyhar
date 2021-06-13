@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.supplier;
+package org.monyhar.base.supplier;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
-import org.chromium.base.Promise;
-import org.chromium.base.ThreadUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.base.Promise;
+import org.monyhar.base.ThreadUtils;
 
 /**
  * Concrete implementation of {@link OneshotSupplier} to be used by classes owning a

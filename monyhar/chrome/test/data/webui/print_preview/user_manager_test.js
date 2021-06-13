@@ -26,8 +26,8 @@ suite('UserManagerTest', function() {
   /** @type {?CloudPrintInterface} */
   let cloudPrintInterface = null;
 
-  const account1 = 'foo@chromium.org';
-  const account2 = 'bar@chromium.org';
+  const account1 = 'foo@monyhar.org';
+  const account2 = 'bar@monyhar.org';
 
   /** @override */
   suiteSetup(function() {

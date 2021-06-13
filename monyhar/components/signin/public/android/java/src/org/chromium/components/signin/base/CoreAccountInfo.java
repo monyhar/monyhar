@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.signin.base;
+package org.monyhar.components.signin.base;
 
 import android.accounts.Account;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.components.signin.AccountUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.components.signin.AccountUtils;
 
 /**
  * Structure storing the core information about a Google account that is always known. The {@link

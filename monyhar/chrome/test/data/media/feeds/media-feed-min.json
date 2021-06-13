@@ -91,7 +91,7 @@
         "@type": "ImageObject",
         "width": 1113,
         "height": 245,
-        "url": "https://beccahughes.github.io/media/media-feeds/chromium_logo_white.png",
+        "url": "https://beccahughes.github.io/media/media-feeds/monyhar_logo_white.png",
         "additionalProperty": {
           "@type": "PropertyValue",
           "name": "contentAttributes",
@@ -101,7 +101,7 @@
         "@type": "ImageObject",
         "width": 600,
         "height": 315,
-        "url": "https://beccahughes.github.io/media/media-feeds/chromium_card.png",
+        "url": "https://beccahughes.github.io/media/media-feeds/monyhar_card.png",
         "additionalProperty": {
           "@type": "PropertyValue",
           "name": "contentAttributes",

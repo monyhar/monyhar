@@ -179,7 +179,7 @@ class AdmWriter(gpo_editor_writer.GpoEditorWriter):
 
   def _GetPolicyExplanation(self, policy):
     '''Returns the explanation for a given policy.
-    Includes a link to the relevant documentation on chromium.org.
+    Includes a link to the relevant documentation on monyhar.org.
     '''
     policy_desc = policy.get('desc')
     reference_url = POLICY_LIST_URL + policy['name']

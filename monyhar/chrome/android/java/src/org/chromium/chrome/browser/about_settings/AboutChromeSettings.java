@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.about_settings;
+package org.monyhar.chrome.browser.about_settings;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;
@@ -13,11 +13,11 @@ import android.text.format.DateUtils;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.tracing.settings.DeveloperSettings;
-import org.chromium.chrome.browser.version.ChromeVersionInfo;
-import org.chromium.components.browser_ui.settings.SettingsUtils;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.tracing.settings.DeveloperSettings;
+import org.monyhar.chrome.browser.version.ChromeVersionInfo;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.ui.widget.Toast;
 
 import java.util.Calendar;
 

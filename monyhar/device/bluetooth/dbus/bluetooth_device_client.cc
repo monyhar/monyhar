@@ -171,9 +171,9 @@ bool ReadRecordsFromMessage(dbus::MessageReader* reader,
 }  // namespace
 
 const char BluetoothDeviceClient::kNoResponseError[] =
-    "org.chromium.Error.NoResponse";
+    "org.monyhar.Error.NoResponse";
 const char BluetoothDeviceClient::kUnknownDeviceError[] =
-    "org.chromium.Error.UnknownDevice";
+    "org.monyhar.Error.UnknownDevice";
 
 const char BluetoothDeviceClient::kTypeBredr[] = "BR/EDR";
 const char BluetoothDeviceClient::kTypeLe[] = "LE";

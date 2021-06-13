@@ -2,22 +2,22 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private.media;
+package org.monyhar.weblayer_private.media;
 
 import android.app.Service;
 import android.content.Intent;
 import android.support.v4.media.session.MediaSessionCompat;
 
-import org.chromium.components.browser_ui.media.MediaNotificationController;
-import org.chromium.components.browser_ui.media.MediaNotificationInfo;
-import org.chromium.components.browser_ui.media.MediaNotificationManager;
-import org.chromium.components.browser_ui.media.MediaSessionHelper;
-import org.chromium.components.browser_ui.notifications.NotificationWrapper;
-import org.chromium.components.browser_ui.notifications.NotificationWrapperBuilder;
-import org.chromium.components.embedder_support.browser_context.BrowserContextHandle;
-import org.chromium.weblayer_private.IntentUtils;
-import org.chromium.weblayer_private.TabImpl;
-import org.chromium.weblayer_private.WebLayerImpl;
+import org.monyhar.components.browser_ui.media.MediaNotificationController;
+import org.monyhar.components.browser_ui.media.MediaNotificationInfo;
+import org.monyhar.components.browser_ui.media.MediaNotificationManager;
+import org.monyhar.components.browser_ui.media.MediaSessionHelper;
+import org.monyhar.components.browser_ui.notifications.NotificationWrapper;
+import org.monyhar.components.browser_ui.notifications.NotificationWrapperBuilder;
+import org.monyhar.components.embedder_support.browser_context.BrowserContextHandle;
+import org.monyhar.weblayer_private.IntentUtils;
+import org.monyhar.weblayer_private.TabImpl;
+import org.monyhar.weblayer_private.WebLayerImpl;
 
 /**
  * A glue class for MediaSession.
@@ -89,7 +89,7 @@ public class MediaSessionManager {
 
         @Override
         public String getNotificationGroupName() {
-            return "org.chromium.weblayer.MediaSession";
+            return "org.monyhar.weblayer.MediaSession";
         }
 
         @Override

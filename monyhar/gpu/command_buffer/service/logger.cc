@@ -33,7 +33,7 @@ void Logger::LogMessage(
   if (log_message_count_ < kMaxLogMessages || disable_gl_error_limit_) {
     std::string prefixed_msg(std::string("[") + GetLogPrefix() + "]" + msg);
     ++log_message_count_;
-    // LOG this unless logging is turned off as any chromium code that
+    // LOG this unless logging is turned off as any monyhar code that
     // generates these errors probably has a bug.
     if (log_synthesized_gl_errors_) {
       ::logging::LogMessage(

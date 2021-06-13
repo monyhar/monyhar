@@ -8,7 +8,7 @@ determine the relevant component, and to forward the bug to a component OWNER.
 ## Understanding the heap dump summary
 
 The opening comment of [Issue
-834033](https://bugs.chromium.org/p/chromium/issues/detail?id=834033) contains a
+834033](https://bugs.monyhar.org/p/monyhar/issues/detail?id=834033) contains a
 heap dump summary. The highlights are:
 
 * 315723 calls to malloc without corresponding call to free.
@@ -102,9 +102,9 @@ SkBitmap::tryAllocPixels(SkImageInfo const&, unsigned long)
 
 Next, we three 3 frames with the prefix `sk`. Searching for
 `sk_malloc_flags` on
-[codesearch](https://cs.chromium.org/search/?q=sk_malloc_flags&sq=package:chromium&type=cs)
+[codesearch](https://cs.monyhar.org/search/?q=sk_malloc_flags&sq=package:monyhar&type=cs)
 reveals that the component is `third_party/skia`. Looking at the
-[README](https://cs.chromium.org/chromium/src/third_party/skia/README) reveals
+[README](https://cs.monyhar.org/monyhar/src/third_party/skia/README) reveals
 that Skia is a 2D graphics library.
 
 ```

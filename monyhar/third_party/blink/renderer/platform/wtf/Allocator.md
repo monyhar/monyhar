@@ -162,4 +162,4 @@ void func() {
 Note that these macros are inherited. See a comment in wtf/allocator.h
 for more details about the relationship between the macros and Oilpan.
 
-If you have any question, ask oilpan-reviews@chromium.org.
+If you have any question, ask oilpan-reviews@monyhar.org.

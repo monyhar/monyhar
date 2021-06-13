@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.share;
+package org.monyhar.components.browser_ui.share;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -35,14 +35,14 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.app.AlertDialog;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.PackageManagerUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.components.browser_ui.share.ShareParams.TargetChosenCallback;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.base.WindowAndroid.IntentCallback;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.PackageManagerUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.components.browser_ui.share.ShareParams.TargetChosenCallback;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.base.WindowAndroid.IntentCallback;
 
 import java.util.Collections;
 import java.util.List;
@@ -69,7 +69,7 @@ public class ShareHelper {
     }
 
     /** The task ID of the activity that triggered the share action. */
-    public static final String EXTRA_TASK_ID = "org.chromium.chrome.extra.TASK_ID";
+    public static final String EXTRA_TASK_ID = "org.monyhar.chrome.extra.TASK_ID";
 
     private static final String EXTRA_SHARE_SCREENSHOT_AS_STREAM = "share_screenshot_as_stream";
 

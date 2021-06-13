@@ -22,7 +22,7 @@ namespace device {
 class BluetoothUUID;
 
 // BluetoothDeviceAndroid along with its owned Java class
-// org.chromium.device.bluetooth.ChromeBluetoothDevice implement
+// org.monyhar.device.bluetooth.ChromeBluetoothDevice implement
 // BluetoothDevice.
 class DEVICE_BLUETOOTH_EXPORT BluetoothDeviceAndroid final
     : public BluetoothDevice {
@@ -120,7 +120,7 @@ class DEVICE_BLUETOOTH_EXPORT BluetoothDeviceAndroid final
       absl::optional<device::BluetoothUUID> service_uuid) override;
   void DisconnectGatt() override;
 
-  // Java object org.chromium.device.bluetooth.ChromeBluetoothDevice.
+  // Java object org.monyhar.device.bluetooth.ChromeBluetoothDevice.
   base::android::ScopedJavaGlobalRef<jobject> j_device_;
 
   bool gatt_connected_ = false;

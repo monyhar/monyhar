@@ -72,30 +72,30 @@ void SetRuntimeFeatureDefaultsForPlatform(
 #endif
 
 #if defined(OS_MAC)
-  const bool enable_canvas_2d_image_chromium =
+  const bool enable_canvas_2d_image_monyhar =
       command_line.HasSwitch(
           blink::switches::kEnableGpuMemoryBufferCompositorResources) &&
       !command_line.HasSwitch(switches::kDisable2dCanvasImageChromium) &&
       !command_line.HasSwitch(switches::kDisableGpu) &&
       base::FeatureList::IsEnabled(features::kCanvas2DImageChromium);
 #else
-  constexpr bool enable_canvas_2d_image_chromium = false;
+  constexpr bool enable_canvas_2d_image_monyhar = false;
 #endif
   WebRuntimeFeatures::EnableCanvas2dImageChromium(
-      enable_canvas_2d_image_chromium);
+      enable_canvas_2d_image_monyhar);
 
 #if defined(OS_MAC)
-  const bool enable_web_gl_image_chromium =
+  const bool enable_web_gl_image_monyhar =
       command_line.HasSwitch(
           blink::switches::kEnableGpuMemoryBufferCompositorResources) &&
       !command_line.HasSwitch(switches::kDisableWebGLImageChromium) &&
       !command_line.HasSwitch(switches::kDisableGpu) &&
       base::FeatureList::IsEnabled(features::kWebGLImageChromium);
 #else
-  const bool enable_web_gl_image_chromium =
+  const bool enable_web_gl_image_monyhar =
       command_line.HasSwitch(switches::kEnableWebGLImageChromium);
 #endif
-  WebRuntimeFeatures::EnableWebGLImageChromium(enable_web_gl_image_chromium);
+  WebRuntimeFeatures::EnableWebGLImageChromium(enable_web_gl_image_monyhar);
 
 #if defined(OS_ANDROID)
   if (command_line.HasSwitch(switches::kDisableMediaSessionAPI))
@@ -154,24 +154,24 @@ enum RuntimeFeatureEnableOptions {
 
 template <typename T>
 // Helper class that describes the desired actions for the runtime feature
-// depending on a check for chromium base::Feature.
+// depending on a check for monyhar base::Feature.
 struct RuntimeFeatureToChromiumFeatureMap {
   // This can be either an enabler function defined in web_runtime_features.cc
   // or the string name of the feature in runtime_enabled_features.json5.
   T feature_enabler;
-  // The chromium base::Feature to check.
-  const base::Feature& chromium_feature;
+  // The monyhar base::Feature to check.
+  const base::Feature& monyhar_feature;
   const RuntimeFeatureEnableOptions option = kDefault;
 };
 
 template <typename Enabler>
-void SetRuntimeFeatureFromChromiumFeature(const base::Feature& chromium_feature,
+void SetRuntimeFeatureFromChromiumFeature(const base::Feature& monyhar_feature,
                                           RuntimeFeatureEnableOptions option,
                                           const Enabler& enabler) {
   using FeatureList = base::FeatureList;
-  const bool feature_enabled = FeatureList::IsEnabled(chromium_feature);
+  const bool feature_enabled = FeatureList::IsEnabled(monyhar_feature);
   const bool is_overridden =
-      FeatureList::GetInstance()->IsFeatureOverridden(chromium_feature.name);
+      FeatureList::GetInstance()->IsFeatureOverridden(monyhar_feature.name);
   switch (option) {
     case kSetOnlyIfOverridden:
       if (is_overridden)
@@ -333,7 +333,7 @@ void SetRuntimeFeaturesFromChromiumFeatures() {
   };
   for (const auto& mapping : blinkFeatureToBaseFeatureMapping) {
     SetRuntimeFeatureFromChromiumFeature(
-        mapping.chromium_feature, mapping.option, mapping.feature_enabler);
+        mapping.monyhar_feature, mapping.option, mapping.feature_enabler);
   }
 
   // TODO(crbug/832393): Cleanup the inconsistency between custom WRF enabler
@@ -405,7 +405,7 @@ void SetRuntimeFeaturesFromChromiumFeatures() {
       };
   for (const auto& mapping : runtimeFeatureNameToChromiumFeatureMapping) {
     SetRuntimeFeatureFromChromiumFeature(
-        mapping.chromium_feature, mapping.option, [&mapping](bool enabled) {
+        mapping.monyhar_feature, mapping.option, [&mapping](bool enabled) {
           wf::EnableFeatureFromString(mapping.feature_enabler, enabled);
         });
   }
@@ -429,7 +429,7 @@ void SetRuntimeFeaturesFromCommandLine(const base::CommandLine& command_line) {
   // SwitchToFeatureMap entry to the initializer list below.
   // Note: command line switches are now discouraged, please consider
   // using base::Feature instead.
-  // https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/configuration.md#switches
+  // https://monyhar.googlesource.com/monyhar/src/+/refs/heads/main/docs/configuration.md#switches
   using wrf = WebRuntimeFeatures;
   const SwitchToFeatureMap switchToFeatureMapping[] = {
       // Stable Features

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.paintpreview.player;
+package org.monyhar.components.paintpreview.player;
 
 import android.graphics.Rect;
 import android.os.Build;
@@ -24,15 +24,15 @@ import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.task.PostTask;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.ui.test.util.DummyUiActivityTestCase;
-import org.chromium.url.GURL;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.ui.test.util.DummyUiActivityTestCase;
+import org.monyhar.url.GURL;
 
 import java.util.List;
 
@@ -44,7 +44,7 @@ public class PaintPreviewPlayerTest extends DummyUiActivityTestCase {
     private static final long TIMEOUT_MS = 5000;
 
     private static final String TEST_DIRECTORY_KEY = "test_dir";
-    private static final String TEST_URL = "https://www.chromium.org";
+    private static final String TEST_URL = "https://www.monyhar.org";
     private static final String TEST_IN_VIEWPORT_LINK_URL = "http://www.google.com/";
     private static final String TEST_OUT_OF_VIEWPORT_LINK_URL = "http://example.com/";
     private final Rect mInViewportLinkRect = new Rect(700, 650, 900, 700);

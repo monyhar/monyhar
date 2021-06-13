@@ -11,7 +11,7 @@
     android:layout_height="match_parent"
     android:paddingTop="@dimen/tab_strip_height" >
 
-    <org.chromium.chrome.browser.ntp.NativePageRootFrameLayout
+    <org.monyhar.chrome.browser.ntp.NativePageRootFrameLayout
         android:id="@+id/recent_tabs_root"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
         android:focusable="true"
         android:focusableInTouchMode="true" >
 
-        <org.chromium.chrome.browser.ntp.RecentTabsExpandableListView
+        <org.monyhar.chrome.browser.ntp.RecentTabsExpandableListView
             android:id="@+id/odp_listview"
             android:paddingTop="@dimen/recent_tabs_group_view_vertical_padding"
             android:layout_height="match_parent"
@@ -32,5 +32,5 @@
             android:listSelector="@android:color/transparent"
             android:scrollbarStyle="outsideOverlay" />
 
-    </org.chromium.chrome.browser.ntp.NativePageRootFrameLayout>
+    </org.monyhar.chrome.browser.ntp.NativePageRootFrameLayout>
 </FrameLayout>

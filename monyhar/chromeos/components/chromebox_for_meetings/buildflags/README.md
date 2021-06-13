@@ -8,7 +8,7 @@ command gn args --list out/some-directory (the directory passed to gn args is
 
 ## is_cfm (BUILDFLAG(PLATFORM_CFM))
 
-Flag for building chromium for CfM devices.
+Flag for building monyhar for CfM devices.
 
 ### Query Flag
 ```bash
@@ -23,7 +23,7 @@ $ Editor will open add is_cfm=true save and exit
 ### Alt: EnrollmentRequisitionManager
 
 We can alternatively use the EnrollmentRequisitionManager to determine if
-chromium is running a CfM enabled Platform in source code
+monyhar is running a CfM enabled Platform in source code
 
 ```cpp
 policy::EnrollmentRequisitionManager::IsRemoraRequisition();

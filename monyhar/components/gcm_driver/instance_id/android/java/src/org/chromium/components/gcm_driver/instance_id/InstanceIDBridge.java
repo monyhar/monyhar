@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.gcm_driver.instance_id;
+package org.monyhar.components.gcm_driver.instance_id;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.components.gcm_driver.InstanceIDFlags;
-import org.chromium.components.gcm_driver.LazySubscriptionsManager;
-import org.chromium.components.gcm_driver.SubscriptionFlagManager;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.components.gcm_driver.InstanceIDFlags;
+import org.monyhar.components.gcm_driver.LazySubscriptionsManager;
+import org.monyhar.components.gcm_driver.SubscriptionFlagManager;
 
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;

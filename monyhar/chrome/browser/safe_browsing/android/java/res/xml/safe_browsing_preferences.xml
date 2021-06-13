@@ -6,10 +6,10 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <org.chromium.components.browser_ui.settings.TextMessagePreference
+    <org.monyhar.components.browser_ui.settings.TextMessagePreference
         android:key="text_managed" />
 
-    <org.chromium.chrome.browser.safe_browsing.settings.RadioButtonGroupSafeBrowsingPreference
+    <org.monyhar.chrome.browser.safe_browsing.settings.RadioButtonGroupSafeBrowsingPreference
         android:key="safe_browsing_radio_button_group"
         android:selectable="false"
         app:allowDividerAbove="false"

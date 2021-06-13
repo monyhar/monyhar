@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.devui.util;
+package org.monyhar.android_webview.devui.util;
 
 import android.content.Intent;
 import android.content.pm.PackageInfo;
@@ -11,8 +11,8 @@ import android.os.Build;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.android_webview.common.crash.CrashInfo;
-import org.chromium.base.ContextUtils;
+import org.monyhar.android_webview.common.crash.CrashInfo;
+import org.monyhar.base.ContextUtils;
 
 import java.util.Locale;
 
@@ -66,14 +66,14 @@ public class CrashBugUrlFactory {
     }
 
     /**
-     * Build a report uri to open an issue on https://bugs.chromium.org/p/chromium/issues/entry.
+     * Build a report uri to open an issue on https://bugs.monyhar.org/p/monyhar/issues/entry.
      * It uses WebView Bugs Template and overrides labels and description fields.
      */
     public Uri getReportUri() {
         return new Uri.Builder()
                 .scheme("https")
-                .authority("bugs.chromium.org")
-                .path("/p/chromium/issues/entry")
+                .authority("bugs.monyhar.org")
+                .path("/p/monyhar/issues/entry")
                 .appendQueryParameter("template", "Webview+Bugs")
                 .appendQueryParameter("description", getDescription())
                 .appendQueryParameter("labels", getLabels())

@@ -1,12 +1,12 @@
-package org.chromium.base.task.test;
+package org.monyhar.base.task.test;
 
 import org.robolectric.annotation.Implementation;
 import org.robolectric.annotation.Implements;
 import org.robolectric.annotation.RealObject;
 import org.robolectric.shadows.ShadowApplication;
 
-import org.chromium.base.task.AsyncTask;
-import org.chromium.base.task.BackgroundOnlyAsyncTask;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.base.task.BackgroundOnlyAsyncTask;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.CancellationException;

@@ -20,7 +20,7 @@
 // source-compatible interface is provided on top of the older Breakpad
 // storage mechanism.
 //
-// See https://cs.chromium.org/chromium/src/docs/debugging_with_crash_keys.md
+// See https://cs.monyhar.org/monyhar/src/docs/debugging_with_crash_keys.md
 // for more information on using this.
 #if BUILDFLAG(USE_CRASHPAD_ANNOTATION) || BUILDFLAG(USE_COMBINED_ANNOTATIONS)
 #include "third_party/crashpad/crashpad/client/annotation.h"  // nogncheck

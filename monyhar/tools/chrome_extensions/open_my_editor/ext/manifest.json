@@ -20,7 +20,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://chromium-review.googlesource.com/*"
+        "https://monyhar-review.googlesource.com/*"
       ],
       "js": [
         "gr-content.js"
@@ -28,7 +28,7 @@
     },
     {
       "matches": [
-        "https://cs.chromium.org/chromium/src/*"
+        "https://cs.monyhar.org/monyhar/src/*"
       ],
       "js": [
         "cs-content.js"
@@ -36,7 +36,7 @@
     },
     {
       "matches": [
-        "https://codereview.chromium.org/*"
+        "https://codereview.monyhar.org/*"
       ],
       "js": [
         "cr-content.js"

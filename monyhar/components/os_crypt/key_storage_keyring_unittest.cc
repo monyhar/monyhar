@@ -18,7 +18,7 @@ namespace {
 #if BUILDFLAG(GOOGLE_CHROME_BRANDING)
 const char kApplicationName[] = "chrome";
 #else
-const char kApplicationName[] = "chromium";
+const char kApplicationName[] = "monyhar";
 #endif
 
 // Replaces some of GnomeKeyringLoader's methods with mocked ones.
@@ -130,7 +130,7 @@ class GnomeKeyringTest : public testing::Test {
 };
 
 GnomeKeyringTest::GnomeKeyringTest()
-    : task_runner_(new base::TestSimpleTaskRunner()), keyring_(task_runner_, "chromium") {
+    : task_runner_(new base::TestSimpleTaskRunner()), keyring_(task_runner_, "monyhar") {
   MockGnomeKeyringLoader::ResetForOSCrypt();
 }
 

@@ -50,7 +50,7 @@ hardware.
 Unit tests using the gadget can be run manually with a hardware "gadget". These
 unit tests all call [UsbTestGadget::Claim].
 
-[UsbTestGadget::Claim]: https://cs.chromium.org/search/?q=UsbTestGadget::Claim&type=cs
+[UsbTestGadget::Claim]: https://cs.monyhar.org/search/?q=UsbTestGadget::Claim&type=cs
 
 
 ### Manual Testing

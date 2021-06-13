@@ -2,26 +2,26 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant;
+package org.monyhar.chrome.browser.autofill_assistant;
 
 import android.content.Context;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.chrome.browser.ActivityTabProvider;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsStateProvider;
-import org.chromium.chrome.browser.compositor.CompositorViewHolder;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.components.module_installer.builder.ModuleInterface;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.ActivityKeyboardVisibilityDelegate;
-import org.chromium.ui.base.ApplicationViewportInsetSupplier;
+import org.monyhar.chrome.browser.ActivityTabProvider;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsStateProvider;
+import org.monyhar.chrome.browser.compositor.CompositorViewHolder;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.components.module_installer.builder.ModuleInterface;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.ActivityKeyboardVisibilityDelegate;
+import org.monyhar.ui.base.ApplicationViewportInsetSupplier;
 
 /**
  * Interface between base module and assistant DFM.
  */
 @ModuleInterface(module = "autofill_assistant",
-        impl = "org.chromium.chrome.browser.autofill_assistant.AutofillAssistantModuleEntryImpl")
+        impl = "org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantModuleEntryImpl")
 public interface AutofillAssistantModuleEntry {
     /**
      * Creates a concrete {@code AssistantDependencies} object. Its contents are opaque to the

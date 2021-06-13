@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.app.Activity;
 import android.view.View;
@@ -10,15 +10,15 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.compositor.CompositorViewHolder;
-import org.chromium.chrome.browser.infobar.InfoBarIdentifier;
-import org.chromium.chrome.browser.keyboard_accessory.ManualFillingComponent;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.ui.messages.infobar.SimpleConfirmInfoBarBuilder;
-import org.chromium.ui.base.ActivityKeyboardVisibilityDelegate;
-import org.chromium.ui.base.ActivityWindowAndroid;
-import org.chromium.ui.modaldialog.ModalDialogManager;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.compositor.CompositorViewHolder;
+import org.monyhar.chrome.browser.infobar.InfoBarIdentifier;
+import org.monyhar.chrome.browser.keyboard_accessory.ManualFillingComponent;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.ui.messages.infobar.SimpleConfirmInfoBarBuilder;
+import org.monyhar.ui.base.ActivityKeyboardVisibilityDelegate;
+import org.monyhar.ui.base.ActivityWindowAndroid;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
 
 import java.lang.ref.WeakReference;
 

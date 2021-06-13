@@ -252,10 +252,10 @@ AudioConfig DecoderConfigAdapter::ToCastAudioConfig(
 }
 
 // static
-#define STATIC_ASSERT_MATCHING_ENUM(chromium_name, chromecast_name)          \
-  static_assert(static_cast<int>(::media::VideoColorSpace::chromium_name) == \
+#define STATIC_ASSERT_MATCHING_ENUM(monyhar_name, chromecast_name)          \
+  static_assert(static_cast<int>(::media::VideoColorSpace::monyhar_name) == \
                     static_cast<int>(::chromecast::media::chromecast_name),  \
-                "mismatching status enum values: " #chromium_name)
+                "mismatching status enum values: " #monyhar_name)
 
 STATIC_ASSERT_MATCHING_ENUM(PrimaryID::BT709, PrimaryID::BT709);
 STATIC_ASSERT_MATCHING_ENUM(PrimaryID::UNSPECIFIED, PrimaryID::UNSPECIFIED);
@@ -300,10 +300,10 @@ STATIC_ASSERT_MATCHING_ENUM(MatrixID::BT2020_NCL, MatrixID::BT2020_NCL);
 STATIC_ASSERT_MATCHING_ENUM(MatrixID::BT2020_CL, MatrixID::BT2020_CL);
 STATIC_ASSERT_MATCHING_ENUM(MatrixID::YDZDX, MatrixID::YDZDX);
 
-#define STATIC_ASSERT_MATCHING_ENUM2(chromium_name, chromecast_name)        \
-  static_assert(static_cast<int>(::gfx::ColorSpace::chromium_name) ==       \
+#define STATIC_ASSERT_MATCHING_ENUM2(monyhar_name, chromecast_name)        \
+  static_assert(static_cast<int>(::gfx::ColorSpace::monyhar_name) ==       \
                     static_cast<int>(::chromecast::media::chromecast_name), \
-                "mismatching status enum values: " #chromium_name)
+                "mismatching status enum values: " #monyhar_name)
 
 STATIC_ASSERT_MATCHING_ENUM2(RangeID::INVALID, RangeID::INVALID);
 STATIC_ASSERT_MATCHING_ENUM2(RangeID::LIMITED, RangeID::LIMITED);

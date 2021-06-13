@@ -4,13 +4,13 @@
 # found in the LICENSE file.
 
 # Lint as: python3
-"""The tool converts a textpb into a binary proto using chromium protoc binary.
+"""The tool converts a textpb into a binary proto using monyhar protoc binary.
 
 Make sure you have absl-py installed via 'python3 -m pip install absl-py'.
 
 Usage example:
     python3 ./textpb_to_binarypb.py
-    --chromium_path ~/chromium/src
+    --monyhar_path ~/monyhar/src
     --output_file /tmp/binary.pb
     --source_file /tmp/original.textpb
 """
@@ -29,7 +29,7 @@ from absl import flags
 DEFAULT_MESSAGE = 'feedwire.Response'
 
 FLAGS = flags.FLAGS
-flags.DEFINE_string('chromium_path', '', 'The path of your chromium depot.')
+flags.DEFINE_string('monyhar_path', '', 'The path of your monyhar depot.')
 flags.DEFINE_string(
     'output_file',
     '',
@@ -57,7 +57,7 @@ def read_input():
 
 def text_to_binary():
   encoded = protoc_util.encode_proto(read_input(), FLAGS.message,
-                                     FLAGS.chromium_path,
+                                     FLAGS.monyhar_path,
                                      COMPONENT_FEED_PROTO_PATH)
 
   if FLAGS.output_format == 'base64':
@@ -72,7 +72,7 @@ def text_to_binary():
 
 def binary_to_text():
   encoded = protoc_util.decode_proto(read_input(), FLAGS.message,
-                                     FLAGS.chromium_path,
+                                     FLAGS.monyhar_path,
                                      COMPONENT_FEED_PROTO_PATH)
 
   if FLAGS.output_file:
@@ -84,8 +84,8 @@ def binary_to_text():
 def main(argv):
   if len(argv) > 1:
     raise app.UsageError('Too many arguments. Unknown: ' + ' '.join(argv[1:]))
-  if not FLAGS.chromium_path:
-    raise app.UsageError('chromium_path flag must be set.')
+  if not FLAGS.monyhar_path:
+    raise app.UsageError('monyhar_path flag must be set.')
   if FLAGS.direction != 'forward' and FLAGS.direction != 'reverse':
     raise app.UsageError('direction must be forward or reverse')
 

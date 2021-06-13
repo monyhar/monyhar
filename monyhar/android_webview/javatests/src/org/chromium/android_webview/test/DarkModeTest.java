@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
 import androidx.test.filters.SmallTest;
 
@@ -12,10 +12,10 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.AwContents;
-import org.chromium.android_webview.AwSettings;
-import org.chromium.android_webview.settings.ForceDarkBehavior;
-import org.chromium.android_webview.settings.ForceDarkMode;
+import org.monyhar.android_webview.AwContents;
+import org.monyhar.android_webview.AwSettings;
+import org.monyhar.android_webview.settings.ForceDarkBehavior;
+import org.monyhar.android_webview.settings.ForceDarkMode;
 
 /**
  * Tests dark-mode related data are correctly passed to blink.

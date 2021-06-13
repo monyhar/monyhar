@@ -162,9 +162,9 @@ BluetoothAdapterClient::Error::Error(const std::string& name,
     : name(name), message(message) {}
 
 const char BluetoothAdapterClient::kNoResponseError[] =
-    "org.chromium.Error.NoResponse";
+    "org.monyhar.Error.NoResponse";
 const char BluetoothAdapterClient::kUnknownAdapterError[] =
-    "org.chromium.Error.UnknownAdapter";
+    "org.monyhar.Error.UnknownAdapter";
 
 BluetoothAdapterClient::Properties::Properties(
     dbus::ObjectProxy* object_proxy,

@@ -294,8 +294,8 @@ Next steps
   </devguide/devcycle/running>`, and :doc:`Debugging pages
   </devguide/devcycle/debugging>` for information about how to build, run, and
   debug Native Client applications.
-* Check the `webports <https://chromium.googlesource.com/webports>`_ project to
+* Check the `webports <https://monyhar.googlesource.com/webports>`_ project to
   see what libraries have been ported for use with Native Client. If you port an
   open-source library for your own use, we recommend adding it to webports
   (see `How to check code into webports
-  <https://chromium.googlesource.com/webports/+/main/CONTRIBUTING.md>`_).
+  <https://monyhar.googlesource.com/webports/+/main/CONTRIBUTING.md>`_).

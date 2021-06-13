@@ -150,5 +150,5 @@ This is the basic principle:
 ### Miscellaneous resources.
 - [Demo page](https://rahul8805.github.io/DemoPages/BouncyMoon.html)
 - [Lightning talk](https://www.youtube.com/watch?v=FOCHCuGA_MA&t=1150s)
-- [input-dev thread](https://groups.google.com/a/chromium.org/forum/#!topic/input-dev/6ACOSDoAik4)
+- [input-dev thread](https://groups.google.com/a/monyhar.org/forum/#!topic/input-dev/6ACOSDoAik4)
 - [Full design doc](https://docs.google.com/document/d/1JqykSXnCkqwA1E3bUhhIi-IgEvM9HZdKtIu_S4Ncm6o/edit#heading=h.agf18oiankjh)

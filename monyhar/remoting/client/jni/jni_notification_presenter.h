@@ -16,7 +16,7 @@
 
 namespace remoting {
 
-// C++ counterpart for org.chromium.chromoting.jni.NotificationPresenter.
+// C++ counterpart for org.monyhar.chromoting.jni.NotificationPresenter.
 class JniNotificationPresenter final {
  public:
   explicit JniNotificationPresenter(

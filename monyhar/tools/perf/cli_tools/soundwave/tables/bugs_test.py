@@ -21,9 +21,9 @@ class TestBugs(unittest.TestCase):
                 'updated': '2018-04-12T06:38:34',
                 'state': 'closed',
                 'status': 'Fixed',
-                'author': 'foo@chromium.org',
-                'owner': 'bar@chromium.org',
-                'cc': ['baz@chromium.org', 'foo@chromium.org'],
+                'author': 'foo@monyhar.org',
+                'owner': 'bar@monyhar.org',
+                'cc': ['baz@monyhar.org', 'foo@monyhar.org'],
                 'components': [],
                 'labels': ['Perf-Regression', 'Foo>Label'],
             }
@@ -37,7 +37,7 @@ class TestBugs(unittest.TestCase):
     self.assertEqual(bug['published'], datetime.datetime(
         year=2018, month=4, day=9, hour=17, minute=1, second=9))
     self.assertEqual(bug['status'], 'Fixed')
-    self.assertEqual(bug['cc'], 'baz@chromium.org,foo@chromium.org')
+    self.assertEqual(bug['cc'], 'baz@monyhar.org,foo@monyhar.org')
     self.assertEqual(bug['components'], None)
 
   def testDataFrameFromJson_noBugs(self):

@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.util;
+package org.monyhar.chrome.test.util;
 
 import android.app.Instrumentation;
 
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.compositor.layouts.components.CompositorButton;
-import org.chromium.chrome.browser.compositor.overlays.strip.StripLayoutHelper;
-import org.chromium.chrome.browser.compositor.overlays.strip.StripLayoutHelperManager;
-import org.chromium.chrome.browser.compositor.overlays.strip.StripLayoutTab;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.compositor.layouts.components.CompositorButton;
+import org.monyhar.chrome.browser.compositor.overlays.strip.StripLayoutHelper;
+import org.monyhar.chrome.browser.compositor.overlays.strip.StripLayoutHelperManager;
+import org.monyhar.chrome.browser.compositor.overlays.strip.StripLayoutTab;
 
 /**
  * A utility class that contains methods generic to all TabStrip test classes.

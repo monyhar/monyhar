@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.image_fetcher;
+package org.monyhar.chrome.browser.image_fetcher;
 
 import static org.junit.Assume.assumeFalse;
 import static org.mockito.ArgumentMatchers.any;
@@ -29,10 +29,10 @@ import org.mockito.MockitoAnnotations;
 import org.mockito.invocation.InvocationOnMock;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.Callback;
-import org.chromium.base.DiscardableReferencePool;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.components.browser_ui.util.BitmapCache;
+import org.monyhar.base.Callback;
+import org.monyhar.base.DiscardableReferencePool;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.components.browser_ui.util.BitmapCache;
 
 import jp.tomorrowkey.android.gifplayer.BaseGifImage;
 

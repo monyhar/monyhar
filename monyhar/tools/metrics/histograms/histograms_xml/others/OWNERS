@@ -1,22 +1,22 @@
 # When sending a CL with metrics for review, if a member of
 # METRIC_REVIEWER_OWNERS is a good choice of reviewer, please send the CL to
-# them. Otherwise, send the CL to chromium-metrics-reviews@google.com. Googlers
-# can read more about chromium-metrics-reviews@google.com at go/gwsq-gerrit.
+# them. Otherwise, send the CL to monyhar-metrics-reviews@google.com. Googlers
+# can read more about monyhar-metrics-reviews@google.com at go/gwsq-gerrit.
 per-file histograms.xml=file://tools/metrics/histograms/histograms_xml/METRIC_REVIEWER_OWNERS
 
 # For the Discarding.* and PerformanceMonitor.* histograms:
-sebmarchand@chromium.org
+sebmarchand@monyhar.org
 # For display, mouse, and input related histograms.
-zentaro@chromium.org
+zentaro@monyhar.org
 # For the TrustedWebActivity.* histograms:
-eirage@chromium.org
+eirage@monyhar.org
 # For the Graphics.Smoothness.* histograms:
-xidachen@chromium.org
+xidachen@monyhar.org
 # For Conversions.* histograms:
-johnidel@chromium.org
+johnidel@monyhar.org
 # For SharedHighlights.* histograms:
-sebsg@chromium.org
+sebsg@monyhar.org
 # For Compositor*, Gpu.*, Graphics* and Viz.* histograms:
-jonross@chromium.org
+jonross@monyhar.org
 # For Privacy* and WebsiteSettings.* histograms:
-dullweber@chromium.org
+dullweber@monyhar.org

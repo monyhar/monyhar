@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.smoke;
+package org.monyhar.net.smoke;
 
 import android.content.Context;
 
 import org.json.JSONObject;
 
-import org.chromium.net.ExperimentalCronetEngine;
+import org.monyhar.net.ExperimentalCronetEngine;
 
 import java.io.File;
 

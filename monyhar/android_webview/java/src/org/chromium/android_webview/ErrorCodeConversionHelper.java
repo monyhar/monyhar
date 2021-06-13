@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview;
+package org.monyhar.android_webview;
 
-import org.chromium.net.NetError;
+import org.monyhar.net.NetError;
 
 /**
  * This is a helper class to map native error code about loading a page to Android specific ones.

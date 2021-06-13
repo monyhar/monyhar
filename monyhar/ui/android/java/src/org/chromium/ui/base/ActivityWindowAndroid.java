@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.base;
+package org.monyhar.ui.base;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -13,9 +13,9 @@ import android.content.IntentSender.SendIntentException;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ContextUtils;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ContextUtils;
 
 import java.lang.ref.WeakReference;
 

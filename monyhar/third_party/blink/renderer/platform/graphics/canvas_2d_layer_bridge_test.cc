@@ -40,7 +40,7 @@
 #include "components/viz/test/test_context_provider.h"
 #include "components/viz/test/test_gles2_interface.h"
 #include "components/viz/test/test_gpu_memory_buffer_manager.h"
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "gpu/command_buffer/client/gles2_interface.h"
 #include "gpu/command_buffer/common/capabilities.h"
 #include "gpu/command_buffer/common/gpu_memory_buffer_support.h"
@@ -712,7 +712,7 @@ TEST_F(Canvas2DLayerBridgeTest, DISABLED_PrepareMailboxWhileHibernating)
 }
 
 TEST_F(Canvas2DLayerBridgeTest, ResourceRecycling) {
-  ScopedCanvas2dImageChromiumForTest canvas_2d_image_chromium(true);
+  ScopedCanvas2dImageChromiumForTest canvas_2d_image_monyhar(true);
   const_cast<gpu::Capabilities&>(SharedGpuContext::ContextProviderWrapper()
                                      ->ContextProvider()
                                      ->GetCapabilities())
@@ -751,7 +751,7 @@ TEST_F(Canvas2DLayerBridgeTest, ResourceRecycling) {
 }
 
 TEST_F(Canvas2DLayerBridgeTest, NoResourceRecyclingWhenPageHidden) {
-  ScopedCanvas2dImageChromiumForTest canvas_2d_image_chromium(true);
+  ScopedCanvas2dImageChromiumForTest canvas_2d_image_monyhar(true);
   const_cast<gpu::Capabilities&>(SharedGpuContext::ContextProviderWrapper()
                                      ->ContextProvider()
                                      ->GetCapabilities())
@@ -789,7 +789,7 @@ TEST_F(Canvas2DLayerBridgeTest, NoResourceRecyclingWhenPageHidden) {
 }
 
 TEST_F(Canvas2DLayerBridgeTest, ReleaseResourcesAfterBridgeDestroyed) {
-  ScopedCanvas2dImageChromiumForTest canvas_2d_image_chromium(true);
+  ScopedCanvas2dImageChromiumForTest canvas_2d_image_monyhar(true);
   const_cast<gpu::Capabilities&>(SharedGpuContext::ContextProviderWrapper()
                                      ->ContextProvider()
                                      ->GetCapabilities())

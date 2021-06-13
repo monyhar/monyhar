@@ -321,7 +321,7 @@ bool PaintLayer::PaintsWithFilters() const {
     return false;
 
   if (!RuntimeEnabledFeatures::CompositeAfterPaintEnabled()) {
-    // https://code.google.com/p/chromium/issues/detail?id=343759
+    // https://code.google.com/p/monyhar/issues/detail?id=343759
     DisableCompositingQueryAsserts disabler;
     return !GetCompositedLayerMapping() ||
            GetCompositingState() != kPaintsIntoOwnBacking;

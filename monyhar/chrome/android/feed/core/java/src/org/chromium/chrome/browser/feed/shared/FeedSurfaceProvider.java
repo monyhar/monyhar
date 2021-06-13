@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.shared;
+package org.monyhar.chrome.browser.feed.shared;
 
 import android.graphics.Canvas;
 import android.view.View;
 
-import org.chromium.chrome.browser.native_page.ContextMenuManager;
-import org.chromium.chrome.browser.ntp.NewTabPageLayout;
-import org.chromium.components.browser_ui.widget.displaystyle.UiConfig;
+import org.monyhar.chrome.browser.native_page.ContextMenuManager;
+import org.monyhar.chrome.browser.ntp.NewTabPageLayout;
+import org.monyhar.components.browser_ui.widget.displaystyle.UiConfig;
 
 /**
  * Provides a surface that displays a list of interest feeds.

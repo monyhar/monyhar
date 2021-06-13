@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.content_capture;
+package org.monyhar.components.content_capture;
 
 import android.annotation.TargetApi;
 import android.os.Build;
@@ -12,7 +12,7 @@ import android.view.autofill.AutofillId;
 import android.view.contentcapture.ContentCaptureSession;
 import android.widget.Checkable;
 
-import org.chromium.base.annotations.VerifiesOnQ;
+import org.monyhar.base.annotations.VerifiesOnQ;
 
 import java.util.HashMap;
 

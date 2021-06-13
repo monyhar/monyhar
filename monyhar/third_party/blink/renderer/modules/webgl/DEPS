@@ -1,7 +1,7 @@
 include_rules = [
     "+base/containers/mru_cache.h",
     "+device/vr/public/mojom/vr_service.mojom-blink.h",
-    "+gpu/GLES2/gl2extchromium.h",
+    "+gpu/GLES2/gl2extmonyhar.h",
     "+gpu/command_buffer/client/gles2_interface.h",
     "+gpu/command_buffer/client/raster_interface.h",
     "+gpu/command_buffer/common/capabilities.h",

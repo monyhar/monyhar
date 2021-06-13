@@ -2,7 +2,7 @@
 
 This document aims to provide a brief overview of the different concepts in Mojo
 and how they work together.  For more details about more complex and/or
-Chrome-specific Mojo use cases, please consult [Intro to Mojo & Services](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/mojo_and_services.md).
+Chrome-specific Mojo use cases, please consult [Intro to Mojo & Services](https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/mojo_and_services.md).
 
 [TOC]
 
@@ -164,6 +164,6 @@ mojo::Receiver<math::mojom::MathImpl> receiver = ...;
 mojo::PendingReceiver<math::mojom::MathImpl> pending_receiver = receiver.Unbind();
 ```
 
-[mojo-idl]: https://chromium.googlesource.com/chromium/src/+/main/mojo/public/tools/bindings/README.md
-[gn-template]: https://cs.chromium.org/chromium/src/mojo/public/tools/bindings/mojom.gni
-[message-pipe]: https://cs.chromium.org/chromium/src/mojo/public/cpp/system/message_pipe.h
+[mojo-idl]: https://monyhar.googlesource.com/monyhar/src/+/main/mojo/public/tools/bindings/README.md
+[gn-template]: https://cs.monyhar.org/monyhar/src/mojo/public/tools/bindings/mojom.gni
+[message-pipe]: https://cs.monyhar.org/monyhar/src/mojo/public/cpp/system/message_pipe.h

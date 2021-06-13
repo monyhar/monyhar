@@ -8,7 +8,7 @@ JavaScript to run as part of WPT.
 at different stages of implementation, and it is more useful to pin a particular
 revision of the CTS rather than use the latest version.)
 
-An autoroller (https://autoroll.skia.org/r/webgpu-cts-chromium-autoroll) rolls the WebGPU
+An autoroller (https://autoroll.skia.org/r/webgpu-cts-monyhar-autoroll) rolls the WebGPU
 CTS into Chromium regularly. Part of the roll requires regenerating a few files which the
 autoroller attempts to do.
 1. `third_party/webgpu-cts/ts_sources.txt` is a generated file which tells GN the list of Typescript

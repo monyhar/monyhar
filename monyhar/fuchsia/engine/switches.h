@@ -21,7 +21,7 @@ extern const char kIncognito[];
 // Enables PlayReady CDM and specifies the corresponding key system string.
 extern const char kPlayreadyKeySystem[];
 
-// Enables publishing of a chromium.internal.DevToolsConnector service by
+// Enables publishing of a monyhar.internal.DevToolsConnector service by
 // WebEngine instances, to allow debug-mode DevTools usage, for testing.
 extern const char kEnableRemoteDebugMode[];
 

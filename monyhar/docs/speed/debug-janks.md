@@ -10,7 +10,7 @@ you can do this.
 
 The best way to debug a janky scroll/animation is to collect a trace during the
 event. There are detailed instructions for doing this
-[here](http://www.chromium.org/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs),
+[here](http://www.monyhar.org/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs),
 but briefly, to collect a trace:
 
 *   Close as many tabs/windows as possible. When a trace is collected, it
@@ -193,5 +193,5 @@ display-compositor gets delayed (notice the long `WaitForSwap` trace-event), and
 finally happens at `J`.
 
 _Still have more questions? Please feel free to send questions to
-[graphics-dev@chromium.org](mailto:graphics-dev@chromium.org)._
+[graphics-dev@monyhar.org](mailto:graphics-dev@monyhar.org)._
 

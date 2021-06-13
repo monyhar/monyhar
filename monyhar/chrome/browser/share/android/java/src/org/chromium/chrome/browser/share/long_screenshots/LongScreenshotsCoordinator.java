@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.long_screenshots;
+package org.monyhar.chrome.browser.share.long_screenshots;
 
 import android.app.Activity;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.paint_preview.PaintPreviewCompositorUtils;
-import org.chromium.chrome.browser.share.long_screenshots.bitmap_generation.EntryManager;
-import org.chromium.chrome.browser.share.screenshot.ScreenshotCoordinator;
-import org.chromium.chrome.browser.share.share_sheet.ChromeOptionShareCallback;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.modules.image_editor.ImageEditorModuleProvider;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.paint_preview.PaintPreviewCompositorUtils;
+import org.monyhar.chrome.browser.share.long_screenshots.bitmap_generation.EntryManager;
+import org.monyhar.chrome.browser.share.screenshot.ScreenshotCoordinator;
+import org.monyhar.chrome.browser.share.share_sheet.ChromeOptionShareCallback;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.modules.image_editor.ImageEditorModuleProvider;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.ui.widget.Toast;
 
 /**
  * Handles the long screenshot action in the Sharing Hub and launches the screenshot editor.

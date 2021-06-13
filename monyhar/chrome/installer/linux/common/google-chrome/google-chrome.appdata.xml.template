@@ -2,7 +2,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
   <id>@@PACKAGE@@.desktop</id>
-  <update_contact>chromium-dev@chromium.org</update_contact>
+  <update_contact>monyhar-dev@monyhar.org</update_contact>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>Freeware under Google Chrome Terms of Service</project_license>
   <name>@@MENUNAME@@</name>

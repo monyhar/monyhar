@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.testing.local;
+package org.monyhar.testing.local;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -31,7 +31,7 @@ public class GtestLoggerTest {
         loggerUnderTest.testStarted(
                 Description.createTestDescription(GtestLoggerTest.class, "testTestStarted"));
         Assert.assertEquals(
-                "[ RUN      ] org.chromium.testing.local.GtestLoggerTest.testTestStarted\n",
+                "[ RUN      ] org.monyhar.testing.local.GtestLoggerTest.testTestStarted\n",
                 actual.toString());
     }
 
@@ -43,7 +43,7 @@ public class GtestLoggerTest {
                 Description.createTestDescription(GtestLoggerTest.class, "testTestFinishedPassed"),
                 true, 123);
         Assert.assertEquals(
-                "[       OK ] org.chromium.testing.local.GtestLoggerTest.testTestFinishedPassed"
+                "[       OK ] org.monyhar.testing.local.GtestLoggerTest.testTestFinishedPassed"
                         + " (123 ms)\n",
                 actual.toString());
     }
@@ -56,7 +56,7 @@ public class GtestLoggerTest {
                 Description.createTestDescription(GtestLoggerTest.class, "testTestFinishedPassed"),
                 false, 123);
         Assert.assertEquals(
-                "[   FAILED ] org.chromium.testing.local.GtestLoggerTest.testTestFinishedPassed"
+                "[   FAILED ] org.monyhar.testing.local.GtestLoggerTest.testTestFinishedPassed"
                         + " (123 ms)\n",
                 actual.toString());
     }
@@ -68,7 +68,7 @@ public class GtestLoggerTest {
         loggerUnderTest.testCaseStarted(
                 Description.createSuiteDescription(GtestLoggerTest.class), 456);
         Assert.assertEquals(
-                "[----------] Run 456 test cases from org.chromium.testing.local.GtestLoggerTest\n",
+                "[----------] Run 456 test cases from org.monyhar.testing.local.GtestLoggerTest\n",
                 actual.toString());
     }
 
@@ -79,7 +79,7 @@ public class GtestLoggerTest {
         loggerUnderTest.testCaseFinished(
                 Description.createSuiteDescription(GtestLoggerTest.class), 456, 123);
         Assert.assertEquals(
-                "[----------] Run 456 test cases from org.chromium.testing.local.GtestLoggerTest"
+                "[----------] Run 456 test cases from org.monyhar.testing.local.GtestLoggerTest"
                         + " (123 ms)\n\n",
                 actual.toString());
     }
@@ -124,9 +124,9 @@ public class GtestLoggerTest {
                         + "[==========] 1234 tests ran. (4312 ms total)\n"
                         + "[  PASSED  ] 1232 tests.\n"
                         + "[  FAILED  ] 2 tests.\n"
-                        + "[  FAILED  ] org.chromium.testing.local.GtestLoggerTest"
+                        + "[  FAILED  ] org.monyhar.testing.local.GtestLoggerTest"
                         + ".testTestRunFinishedNoFailures\n"
-                        + "[  FAILED  ] org.chromium.testing.local.GtestLoggerTest"
+                        + "[  FAILED  ] org.monyhar.testing.local.GtestLoggerTest"
                         + ".testTestRunFinishedWithFailures\n"
                         + "\n",
                 actual.toString());

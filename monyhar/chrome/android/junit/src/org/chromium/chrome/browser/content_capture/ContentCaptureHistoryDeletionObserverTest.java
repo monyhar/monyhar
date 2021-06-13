@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.content_capture;
+package org.monyhar.chrome.browser.content_capture;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
@@ -18,9 +18,9 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.history.HistoryDeletionInfo;
-import org.chromium.components.content_capture.PlatformContentCaptureController;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.history.HistoryDeletionInfo;
+import org.monyhar.components.content_capture.PlatformContentCaptureController;
 
 /**
  * Unit tests for the ContentCaptureHistoryDeletionObserver.

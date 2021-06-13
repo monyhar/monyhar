@@ -39,7 +39,7 @@ so on. The waterfalls we’re interested in are:
     *   These bots build with top of tree ANGLE rather than the `DEPS` version.
     *   The [ANGLE tryservers] help ensure that these bots stay green. However,
         it is possible that due to ANGLE changes these bots may be red while
-        the chromium.gpu bots are green.
+        the monyhar.gpu bots are green.
     *   The [ANGLE Wrangler] is on-call to help resolve ANGLE-related breakage
         on this watefall.
     *   To determine if a different ANGLE revision was used between two builds,
@@ -52,16 +52,16 @@ so on. The waterfalls we’re interested in are:
         Regressions should mostly be handled by the [ANGLE Wrangler], but some
         failures fall into Pixel Wrangler's domain, for example, WebGL failures
         due to Chromium-side and WebGL-side changes on
-        linux-swangle-chromium-x64, mac-swangle-chromium-x64 and
-        win-swangle-chromium-x86 bots.
+        linux-swangle-monyhar-x64, mac-swangle-monyhar-x64 and
+        win-swangle-monyhar-x86 bots.
 
 <!-- TODO(kainino): update link when the page is migrated -->
-[Tour of the Chromium Buildbot Waterfall]: http://www.chromium.org/developers/testing/chromium-build-infrastructure/tour-of-the-chromium-buildbot
-[Chromium GPU]: https://ci.chromium.org/p/chromium/g/chromium.gpu/console?reload=120
-[Chromium GPU FYI]: https://ci.chromium.org/p/chromium/g/chromium.gpu.fyi/console?reload=120
-[Chromium SwANGLE]: https://ci.chromium.org/p/chromium/g/chromium.swangle/console?reload=120
-[ANGLE tryservers]: https://build.chromium.org/p/tryserver.chromium.angle/waterfall
-[ANGLE Wrangler]: https://chromium.googlesource.com/angle/angle/+/main/infra/ANGLEWrangling.md
+[Tour of the Chromium Buildbot Waterfall]: http://www.monyhar.org/developers/testing/monyhar-build-infrastructure/tour-of-the-monyhar-buildbot
+[Chromium GPU]: https://ci.monyhar.org/p/monyhar/g/monyhar.gpu/console?reload=120
+[Chromium GPU FYI]: https://ci.monyhar.org/p/monyhar/g/monyhar.gpu.fyi/console?reload=120
+[Chromium SwANGLE]: https://ci.monyhar.org/p/monyhar/g/monyhar.swangle/console?reload=120
+[ANGLE tryservers]: https://build.monyhar.org/p/tryserver.monyhar.angle/waterfall
+[ANGLE Wrangler]: https://monyhar.googlesource.com/angle/angle/+/main/infra/ANGLEWrangling.md
 
 ## Test Suites
 
@@ -82,13 +82,13 @@ test the code that is actually shipped. As of this writing, the tests included:
     *   Stress tests of the screenshot functionality other tests use:
         `screenshot_sync_integration_test.py`
 *   `angle_unittests`: see `src/third_party/angle/src/tests/BUILD.gn`
-*   drawElements tests (on the chromium.gpu.fyi waterfall): see
+*   drawElements tests (on the monyhar.gpu.fyi waterfall): see
     `src/third_party/angle/src/tests/BUILD.gn`
 *   `gles2_conform_test` (requires internal sources): see
     `src/gpu/gles2_conform_support/BUILD.gn`
 *   `gl_tests`: see `src/gpu/BUILD.gn`
 *   `gl_unittests`: see `src/ui/gl/BUILD.gn`
-*   `rendering_representative_perf_tests` (on the chromium.gpu.fyi waterfall):
+*   `rendering_representative_perf_tests` (on the monyhar.gpu.fyi waterfall):
     see `src/chrome/test/BUILD.gn`
 
 And more. See
@@ -106,7 +106,7 @@ Additionally, the Release bots run:
 
 More details about the bots' setup can be found on the [GPU Testing] page.
 
-[GPU Testing]: https://sites.google.com/a/chromium.org/dev/developers/testing/gpu-testing
+[GPU Testing]: https://sites.google.com/a/monyhar.org/dev/developers/testing/gpu-testing
 
 ## Wrangling
 
@@ -162,8 +162,8 @@ shift, and a calendar appointment.
         pixel wrangler's attention, so it's easy to find relevant bugs when
         handing off shifts.
     1.  Study the regression range carefully. Use drover to revert any CLs
-        which break the chromium.gpu bots. Use your judgment about
-        chromium.gpu.fyi, since not all bots are covered by trybots. In the
+        which break the monyhar.gpu bots. Use your judgment about
+        monyhar.gpu.fyi, since not all bots are covered by trybots. In the
         revert message, provide a clear description of what broke, links to
         failing builds, and excerpts of the failure logs, because the build
         logs expire after a few days.
@@ -185,9 +185,9 @@ shift, and a calendar appointment.
         waterfall, but instead run as part of the regular tryjobs on the
         Chromium waterfalls. The GPU tests run as part of the following
         tryservers' jobs:
-        1.  `[linux-rel]` on the [luci.chromium.try] waterfall
-        1.  `[mac-rel]` on the [luci.chromium.try] waterfall
-        1.  `[win7-rel]` on the [luci.chromium.try] waterfall
+        1.  `[linux-rel]` on the [luci.monyhar.try] waterfall
+        1.  `[mac-rel]` on the [luci.monyhar.try] waterfall
+        1.  `[win7-rel]` on the [luci.monyhar.try] waterfall
     1.  The best tool to use to quickly find flakiness on the tryservers is the
         new [Chromium Try Flakes] tool. Look for the names of GPU tests (like
         maps_pixel_test) as well as the test machines (e.g. mac-rel). If you
@@ -231,7 +231,7 @@ shift, and a calendar appointment.
            page, which will be the triage page for every untriaged image
            produced by the CL being tested.
     1. Ensure you are signed in to the Gold server the links take you to (both
-       @google.com and @chromium.org accounts work).
+       @google.com and @monyhar.org accounts work).
     1. Triage images on those pages (typically by approving them, but you can
        mark them as negative if it is an image that should not be produced). In
        the case of a negative image, a bug should be filed on
@@ -278,25 +278,25 @@ shift, and a calendar appointment.
 1.  For the remaining Gtest-style tests, use the [`DISABLED_`
     modifier][gtest-DISABLED] to suppress any failures if necessary.
 
-[Sheriff-O-Matic]: https://sheriff-o-matic.appspot.com/chromium.gpu
-[trim culprit cls]: https://source.chromium.org/chromium/chromium/src/+/main:content/test/gpu/trim_culprit_cls.py
-[tree sheriffing page]: https://sites.google.com/a/chromium.org/dev/developers/tree-sheriffs
-[linux-rel]: https://ci.chromium.org/p/chromium/builders/luci.chromium.try/linux-rel
-[luci.chromium.try]: https://ci.chromium.org/p/chromium/g/luci.chromium.try/builders
-[mac-rel]: https://ci.chromium.org/p/chromium/builders/luci.chromium.try/mac-rel
-[tryserver.chromium.mac]: https://ci.chromium.org/p/chromium/g/tryserver.chromium.mac/builders
+[Sheriff-O-Matic]: https://sheriff-o-matic.appspot.com/monyhar.gpu
+[trim culprit cls]: https://source.monyhar.org/monyhar/monyhar/src/+/main:content/test/gpu/trim_culprit_cls.py
+[tree sheriffing page]: https://sites.google.com/a/monyhar.org/dev/developers/tree-sheriffs
+[linux-rel]: https://ci.monyhar.org/p/monyhar/builders/luci.monyhar.try/linux-rel
+[luci.monyhar.try]: https://ci.monyhar.org/p/monyhar/g/luci.monyhar.try/builders
+[mac-rel]: https://ci.monyhar.org/p/monyhar/builders/luci.monyhar.try/mac-rel
+[tryserver.monyhar.mac]: https://ci.monyhar.org/p/monyhar/g/tryserver.monyhar.mac/builders
 [win7-rel]:
-https://ci.chromium.org/p/chromium/builders/luci.chromium.try/win7-rel
-[tryserver.chromium.win]: https://ci.chromium.org/p/chromium/g/tryserver.chromium.win/builders
-[Chromium Try Flakes]: http://chromium-try-flakes.appspot.com/
-<!-- TODO(kainino): link doesn't work, but is still included from chromium-swarm homepage so not removing it now -->
-[Swarming Server Stats]: https://chromium-swarm.appspot.com/stats
+https://ci.monyhar.org/p/monyhar/builders/luci.monyhar.try/win7-rel
+[tryserver.monyhar.win]: https://ci.monyhar.org/p/monyhar/g/tryserver.monyhar.win/builders
+[Chromium Try Flakes]: http://monyhar-try-flakes.appspot.com/
+<!-- TODO(kainino): link doesn't work, but is still included from monyhar-swarm homepage so not removing it now -->
+[Swarming Server Stats]: https://monyhar-swarm.appspot.com/stats
 [gold less common failures]: gpu_pixel_testing_with_gold.md#Triaging-Less-Common-Failures
 [Chrome Internal GPU Pixel Wrangling Instructions]: https://sites.google.com/a/google.com/client3d/documents/chrome-internal-gpu-pixel-wrangling-instructions
-[src/content/test/gpu/gpu_tests/test_expectations]: https://chromium.googlesource.com/chromium/src/+/main/content/test/gpu/gpu_tests/test_expectations
-[webgl_conformance_expectations.txt]: https://chromium.googlesource.com/chromium/src/+/main/content/test/gpu/gpu_tests/test_expectations/webgl_conformance_expectations.txt
-[gpu_process_expectations.txt]: https://chromium.googlesource.com/chromium/src/+/main/content/test/gpu/gpu_tests/test_expectations/gpu_process_expectations.txt
-[pixel_expectations.txt]: https://chromium.googlesource.com/chromium/src/+/main/content/test/gpu/gpu_tests/test_expectations/pixel_expectations.txt
+[src/content/test/gpu/gpu_tests/test_expectations]: https://monyhar.googlesource.com/monyhar/src/+/main/content/test/gpu/gpu_tests/test_expectations
+[webgl_conformance_expectations.txt]: https://monyhar.googlesource.com/monyhar/src/+/main/content/test/gpu/gpu_tests/test_expectations/webgl_conformance_expectations.txt
+[gpu_process_expectations.txt]: https://monyhar.googlesource.com/monyhar/src/+/main/content/test/gpu/gpu_tests/test_expectations/gpu_process_expectations.txt
+[pixel_expectations.txt]: https://monyhar.googlesource.com/monyhar/src/+/main/content/test/gpu/gpu_tests/test_expectations/pixel_expectations.txt
 [stamping out flakiness]: gpu_testing.md#Stamping-out-Flakiness
 [gtest-DISABLED]: https://github.com/google/googletest/blob/master/googletest/docs/AdvancedGuide.md#temporarily-disabling-tests
 [rendering_representative_perf_tests]: ../testing/rendering_representative_perf_tests.md#Updating-Expectations
@@ -319,7 +319,7 @@ https://ci.chromium.org/p/chromium/builders/luci.chromium.try/win7-rel
     `content/test/gpu/run_gpu_integration_test.py`.
     Also see the [telemetry documentation].
 
-[telemetry documentation]: https://cs.chromium.org/chromium/src/third_party/catapult/telemetry/docs/run_benchmarks_locally.md
+[telemetry documentation]: https://cs.monyhar.org/monyhar/src/third_party/catapult/telemetry/docs/run_benchmarks_locally.md
 
 ## Modifying the GPU Pixel Wrangling Rotation
 

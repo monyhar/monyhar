@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -23,36 +23,36 @@ import androidx.browser.customtabs.CustomTabsIntent;
 import androidx.browser.customtabs.CustomTabsSessionToken;
 import androidx.browser.customtabs.TrustedWebUtils;
 
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.CommandLine;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.PackageManagerUtils;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.app.video_tutorials.VideoTutorialShareHelper;
-import org.chromium.chrome.browser.attribution_reporting.AttributionIntentHandler;
-import org.chromium.chrome.browser.attribution_reporting.AttributionIntentHandlerFactory;
-import org.chromium.chrome.browser.browserservices.SessionDataHolder;
-import org.chromium.chrome.browser.browserservices.ui.splashscreen.trustedwebactivity.TwaSplashController;
-import org.chromium.chrome.browser.customtabs.CustomTabActivity;
-import org.chromium.chrome.browser.customtabs.CustomTabsConnection;
-import org.chromium.chrome.browser.firstrun.FirstRunFlowSequencer;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.instantapps.InstantAppsHandler;
-import org.chromium.chrome.browser.multiwindow.MultiWindowUtils;
-import org.chromium.chrome.browser.notifications.NotificationPlatformBridge;
-import org.chromium.chrome.browser.partnercustomizations.PartnerBrowserCustomizations;
-import org.chromium.chrome.browser.searchwidget.SearchActivity;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.translate.TranslateIntentHandler;
-import org.chromium.chrome.browser.vr.VrModuleProvider;
-import org.chromium.chrome.browser.webapps.WebappLauncherActivity;
-import org.chromium.components.browser_ui.media.MediaNotificationUma;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.ui.widget.Toast;
-import org.chromium.url.Origin;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.PackageManagerUtils;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.app.video_tutorials.VideoTutorialShareHelper;
+import org.monyhar.chrome.browser.attribution_reporting.AttributionIntentHandler;
+import org.monyhar.chrome.browser.attribution_reporting.AttributionIntentHandlerFactory;
+import org.monyhar.chrome.browser.browserservices.SessionDataHolder;
+import org.monyhar.chrome.browser.browserservices.ui.splashscreen.trustedwebactivity.TwaSplashController;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivity;
+import org.monyhar.chrome.browser.customtabs.CustomTabsConnection;
+import org.monyhar.chrome.browser.firstrun.FirstRunFlowSequencer;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.instantapps.InstantAppsHandler;
+import org.monyhar.chrome.browser.multiwindow.MultiWindowUtils;
+import org.monyhar.chrome.browser.notifications.NotificationPlatformBridge;
+import org.monyhar.chrome.browser.partnercustomizations.PartnerBrowserCustomizations;
+import org.monyhar.chrome.browser.searchwidget.SearchActivity;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.translate.TranslateIntentHandler;
+import org.monyhar.chrome.browser.vr.VrModuleProvider;
+import org.monyhar.chrome.browser.webapps.WebappLauncherActivity;
+import org.monyhar.components.browser_ui.media.MediaNotificationUma;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.ui.widget.Toast;
+import org.monyhar.url.Origin;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -463,7 +463,7 @@ public class LaunchIntentDispatcher implements IntentHandler.IntentHandlerDelega
         } catch (SecurityException ex) {
             if (isContentScheme) {
                 Toast.makeText(mActivity,
-                             org.chromium.chrome.R.string.external_app_restricted_access_error,
+                             org.monyhar.chrome.R.string.external_app_restricted_access_error,
                              Toast.LENGTH_LONG)
                         .show();
             } else {

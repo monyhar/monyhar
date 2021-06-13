@@ -5,7 +5,7 @@
   "description": "apitest for popups",
   "browser_action": {
       "default_title": "grow",
-      "default_icon": "chromium.png",
+      "default_icon": "monyhar.png",
       "default_popup": "popup.html"
   }
 }

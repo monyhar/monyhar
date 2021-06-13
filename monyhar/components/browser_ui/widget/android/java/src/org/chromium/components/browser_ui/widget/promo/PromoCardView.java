@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.promo;
+package org.monyhar.components.browser_ui.widget.promo;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -12,8 +12,8 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.components.browser_ui.widget.R;
-import org.chromium.ui.widget.ButtonCompat;
+import org.monyhar.components.browser_ui.widget.R;
+import org.monyhar.ui.widget.ButtonCompat;
 
 /**
  * A promo card view that contains an image view in the top center, a block of short description,

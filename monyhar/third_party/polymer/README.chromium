@@ -26,7 +26,7 @@ becomes smaller and better over time.
 technologies called the Polymer.
 
 Local Modifications:
-- Applied modifications that can be found in v1_0/chromium.patch.
+- Applied modifications that can be found in v1_0/monyhar.patch.
 - All inline JavaScript blocks are extracted from Polymer HTML elements to
 external JS files. This version of the Polymer is used in a web UI, where CSP
 forbids an execution of inline scripts. The extraction was made with the help of
@@ -46,7 +46,7 @@ the Crisper tool (https://github.com/PolymerLabs/crisper).
   responsible for polyfylling :dir() CSS rules, because it causes a performance
   regression (and it is unnecessary), see crbug.com/899603 for more context.
 
-To restore a content of the 'components-chromium' directory from scratch, run
+To restore a content of the 'components-monyhar' directory from scratch, run
 ./v1_0/reproduce.sh on a Linux machine.
 
 Note on Bower:
@@ -58,5 +58,5 @@ Also be sure that you listed all the added packages in bower.json.
 
 Polymer 3 notes
 Polymer 3 resides under v3_0/, and uses NPM instead of Bower. To restore the
-contents of the 'components-chromium' directory from scratch, run
+contents of the 'components-monyhar' directory from scratch, run
 ./v3_0/reproduce.sh on a Linux machine.

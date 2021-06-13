@@ -2,28 +2,28 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tracing;
+package org.monyhar.chrome.browser.tracing;
 
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.base.task.PostTask;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 /**
  * Service that handles the actions on tracing notifications.
  */
 public class TracingNotificationServiceImpl extends TracingNotificationService.Impl {
     private static final String ACTION_STOP_RECORDING =
-            "org.chromium.chrome.browser.tracing.STOP_RECORDING";
+            "org.monyhar.chrome.browser.tracing.STOP_RECORDING";
 
     private static final String ACTION_DISCARD_TRACE =
-            "org.chromium.chrome.browser.tracing.DISCARD_TRACE";
+            "org.monyhar.chrome.browser.tracing.DISCARD_TRACE";
 
     private static final String ACTION_SHARE_TRACE =
-            "org.chromium.chrome.browser.tracing.SHARE_TRACE";
+            "org.monyhar.chrome.browser.tracing.SHARE_TRACE";
 
     /**
      * Get the intent to send to stop a trace recording.

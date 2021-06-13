@@ -20,7 +20,7 @@ function checkIsDefined(prop) {
 }
 
 var id = 'mnkdjmfihjjihdfnnoiojdccnnfkajpd';
-var host = 'https://' + id + '.chromiumapp.org';
+var host = 'https://' + id + '.monyharapp.org';
 
 chrome.test.runTests([
 

@@ -166,6 +166,6 @@ logic.
 ### What about ____?
 
 Please post questions to
-[`chromium-mojo@chromium.org`](https://groups.google.com/a/chromium.org/forum/#!forum/chromium-mojo)!
+[`monyhar-mojo@monyhar.org`](https://groups.google.com/a/monyhar.org/forum/#!forum/monyhar-mojo)!
 The list is quite responsive.
 

@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.merchant_viewer;
+package org.monyhar.chrome.browser.merchant_viewer;
 
 import android.os.Handler;
 import android.util.Pair;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ThreadUtils;
-import org.chromium.chrome.browser.merchant_viewer.MerchantTrustMetrics.MessageClearReason;
-import org.chromium.components.messages.DismissReason;
-import org.chromium.components.messages.MessageDispatcher;
-import org.chromium.components.messages.MessageScopeType;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.chrome.browser.merchant_viewer.MerchantTrustMetrics.MessageClearReason;
+import org.monyhar.components.messages.DismissReason;
+import org.monyhar.components.messages.MessageDispatcher;
+import org.monyhar.components.messages.MessageScopeType;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /** Abstracts the logic needed to schedule a message using {@link MessageDispatcher} framework. */
 public class MerchantTrustMessageScheduler {

@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.process_launcher;
+package org.monyhar.base.process_launcher;
 
 import android.os.Bundle;
 
-import org.chromium.base.process_launcher.IParentProcess;
+import org.monyhar.base.process_launcher.IParentProcess;
 
 interface IChildProcessService {
   // |clazz| identifies the ClassLoader of the caller.

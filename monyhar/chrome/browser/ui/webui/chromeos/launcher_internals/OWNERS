@@ -1,6 +1,6 @@
-tby@chromium.org
-thanhdng@chromium.org
-wrong@chromium.org
+tby@monyhar.org
+thanhdng@monyhar.org
+wrong@monyhar.org
 
 per-file *.mojom=set noparent
 per-file *.mojom=file://ipc/SECURITY_OWNERS

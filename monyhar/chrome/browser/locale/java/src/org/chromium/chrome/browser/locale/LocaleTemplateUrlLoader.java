@@ -2,8 +2,8 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.locale;
-import org.chromium.base.annotations.NativeMethods;
+package org.monyhar.chrome.browser.locale;
+import org.monyhar.base.annotations.NativeMethods;
 
 /**
  * A loader class for changes of template url in a given special locale. This is a JNI bridge and

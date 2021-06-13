@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.externalnav;
+package org.monyhar.chrome.browser.externalnav;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -14,8 +14,8 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.chrome.browser.externalnav.IntentWithRequestMetadataHandler.RequestMetadata;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.browser.externalnav.IntentWithRequestMetadataHandler.RequestMetadata;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
 
 /**
  * Instrumentation tests for {@link IntentWithRequestMetadataHandler}.

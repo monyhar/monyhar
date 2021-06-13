@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_browsertests_apk;
+package org.monyhar.android_browsertests_apk;
 
 import android.content.Intent;
 
-import org.chromium.base.test.util.UrlUtils;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.content_public.browser.BrowserStartupController;
-import org.chromium.native_test.NativeBrowserTest;
-import org.chromium.native_test.NativeTest;
+import org.monyhar.base.test.util.UrlUtils;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.content_public.browser.BrowserStartupController;
+import org.monyhar.native_test.NativeBrowserTest;
+import org.monyhar.native_test.NativeTest;
 
 import java.io.File;
 

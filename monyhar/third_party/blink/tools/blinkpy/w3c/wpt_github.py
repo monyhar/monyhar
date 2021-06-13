@@ -220,7 +220,7 @@ class WPTGitHub(object):
             state=item['state'],
             labels=labels)
 
-    def recent_failing_chromium_exports(self):
+    def recent_failing_monyhar_exports(self):
         """Fetches open PRs with an export label, failing status, and updated
         within the last month.
 
@@ -245,7 +245,7 @@ class WPTGitHub(object):
             if response.status_code == 200:
                 if response.data['incomplete_results']:
                     raise GitHubError('complete results', 'incomplete results',
-                                      'fetch failing open chromium exports',
+                                      'fetch failing open monyhar exports',
                                       path)
 
                 prs = [
@@ -255,7 +255,7 @@ class WPTGitHub(object):
                 failing_prs += prs
             else:
                 raise GitHubError(200, response.status_code,
-                                  'fetch failing open chromium exports', path)
+                                  'fetch failing open monyhar exports', path)
             path = self.extract_link_next(response.getheader('Link'))
 
         _log.info('Fetched %d PRs from GitHub.', len(failing_prs))
@@ -418,11 +418,11 @@ class WPTGitHub(object):
             raise GitHubError(204, response.status_code,
                               'delete remote branch %s' % remote_branch_name)
 
-    def pr_for_chromium_commit(self, chromium_commit):
+    def pr_for_monyhar_commit(self, monyhar_commit):
         """Returns a PR corresponding to the given ChromiumCommit, or None."""
         # We rely on Change-Id because Gerrit returns ToT+1 as the commit
         # positions for in-flight CLs, whereas Change-Id is permanent.
-        return self.pr_with_change_id(chromium_commit.change_id())
+        return self.pr_with_change_id(monyhar_commit.change_id())
 
     def pr_with_change_id(self, target_change_id):
         for pull_request in self.all_pull_requests():

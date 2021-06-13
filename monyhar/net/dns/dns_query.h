@@ -103,8 +103,8 @@ class NET_EXPORT_PRIVATE DnsQuery {
 
   bool ReadHeader(base::BigEndianReader* reader, dns_protocol::Header* out);
   // After read, |out| is in the DNS format, e.g.
-  // "\x03""www""\x08""chromium""\x03""com""\x00". Use DNSDomainToString to
-  // convert to the dotted format "www.chromium.com" with no trailing dot.
+  // "\x03""www""\x08""monyhar""\x03""com""\x00". Use DNSDomainToString to
+  // convert to the dotted format "www.monyhar.com" with no trailing dot.
   bool ReadName(base::BigEndianReader* reader, std::string* out);
 
   // Size of the DNS name (*NOT* hostname) we are trying to resolve; used

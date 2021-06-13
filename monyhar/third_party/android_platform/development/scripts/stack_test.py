@@ -17,7 +17,7 @@ sys.path.insert(
     1,
     os.path.join(
         os.path.dirname(__file__), '..', '..', '..', '..', 'build', 'android'))
-import devil_chromium
+import devil_monyhar
 from pylib import constants
 
 sys.path.insert(1,

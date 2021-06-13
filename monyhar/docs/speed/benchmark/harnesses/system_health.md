@@ -37,7 +37,7 @@ the confidence that their improvement on the suite matters to real users.
 
 To achieve this goal, just simulating user’s activities on the web is not
 enough. We also partner with
-[chrome-speed-metrics](https://groups.google.com/a/chromium.org/forum/#!forum/speed-metrics-dev)
+[chrome-speed-metrics](https://groups.google.com/a/monyhar.org/forum/#!forum/speed-metrics-dev)
 team to track key user metrics on our user stories.
 
 
@@ -67,7 +67,7 @@ There are few groups of stories:
 
 ## What is the structure of a System Health story?
 A System Health story is a subclass of
-[SystemHealthStory](https://cs.chromium.org/chromium/src/tools/perf/page_sets/system_health/system_health_story.py?l=44&rcl=d5f1f0821489a8311dc437fc6b70ac0b0d72b28b), for example:
+[SystemHealthStory](https://cs.monyhar.org/monyhar/src/tools/perf/page_sets/system_health/system_health_story.py?l=44&rcl=d5f1f0821489a8311dc437fc6b70ac0b0d72b28b), for example:
 ```
 class NewSystemHealthStory(SystemHealthStory):
   NAME = 'case:group:page:2018'
@@ -92,7 +92,7 @@ The name must have the following structure:
     file.
     Benchmarks using the System Health story set can specify which cases they want to
     include (see
-    [SystemHealthStorySet](https://cs.chromium.org/chromium/src/tools/perf/page_sets/system_health/system_health_stories.py?l=16&rcl=e3eb21e24dbe0530356003fd9f9a8a94fb91d00b)).
+    [SystemHealthStorySet](https://cs.monyhar.org/monyhar/src/tools/perf/page_sets/system_health/system_health_stories.py?l=16&rcl=e3eb21e24dbe0530356003fd9f9a8a94fb91d00b)).
 2.  **Group** (social, news, tools, …). General category to which the page
     (item 3) belongs.
 3.  **Page** (google, facebook, nytimes, …). The name of the individual page. In

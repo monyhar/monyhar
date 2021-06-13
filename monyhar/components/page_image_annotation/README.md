@@ -7,5 +7,5 @@ in Chromium. This library enables use of the service with webpages; for example,
 by tracking images on webpages and sending their pixel data to the service.
 
 This is a layered component
-(https://sites.google.com/a/chromium.org/dev/developers/design-documents/layered-components-design)
+(https://sites.google.com/a/monyhar.org/dev/developers/design-documents/layered-components-design)
 which allows it to be shared cleanly on iOS.

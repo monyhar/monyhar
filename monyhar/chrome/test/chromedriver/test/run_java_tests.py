@@ -48,7 +48,7 @@ def _Run(java_tests_src_dir, test_filter, ready_to_run_tests,
   if chrome_path:
     if util.IsLinux() and android_package_key is None:
       # Workaround for crbug.com/611886 and
-      # https://bugs.chromium.org/p/chromedriver/issues/detail?id=1695
+      # https://bugs.monyhar.org/p/chromedriver/issues/detail?id=1695
       chrome_wrapper_path = os.path.join(java_tests_src_dir,
                                          'chrome-wrapper-no-sandbox')
       with open(chrome_wrapper_path, 'w') as f:
@@ -239,7 +239,7 @@ def main():
 
     if (not os.path.exists(java_tests_src_dir) or
         not os.listdir(java_tests_src_dir)):
-      java_tests_url = ('https://chromium.googlesource.com/chromium/deps'
+      java_tests_url = ('https://monyhar.googlesource.com/monyhar/deps'
                         '/webdriver')
       print ('"%s" is empty or it doesn\'t exist. ' % java_tests_src_dir +
              'Need to map ' + java_tests_url + ' to '

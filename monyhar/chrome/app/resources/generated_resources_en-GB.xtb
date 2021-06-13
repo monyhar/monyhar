@@ -6270,7 +6270,7 @@ and Ctrl+Alt+Brightness down to zoom out.</translation>
     <ph name="BR" />
     <ph name="BR" />
     For more information about the debugging features, see:<ph name="BR" />
-    https://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-features
+    https://www.monyhar.org/monyhar-os/how-tos-and-troubleshooting/debugging-features
     <ph name="BR" />
     <ph name="BR" />
     <ph name="BEGIN_BOLD" />Note:<ph name="END_BOLD" /> The system will reboot during the process.</translation>

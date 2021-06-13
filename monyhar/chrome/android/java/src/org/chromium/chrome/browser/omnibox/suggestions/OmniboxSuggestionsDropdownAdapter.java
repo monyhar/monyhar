@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions;
+package org.monyhar.chrome.browser.omnibox.suggestions;
 
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,9 +11,9 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.LayoutManager;
 
-import org.chromium.base.TraceEvent;
-import org.chromium.ui.modelutil.MVCListAdapter.ModelList;
-import org.chromium.ui.modelutil.SimpleRecyclerViewAdapter;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.ui.modelutil.MVCListAdapter.ModelList;
+import org.monyhar.ui.modelutil.SimpleRecyclerViewAdapter;
 
 /** ModelListAdapter for OmniboxSuggestionsDropdown (RecyclerView version). */
 class OmniboxSuggestionsDropdownAdapter extends SimpleRecyclerViewAdapter {

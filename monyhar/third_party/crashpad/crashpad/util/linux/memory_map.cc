@@ -343,7 +343,7 @@ std::unique_ptr<MemoryMap::Iterator> MemoryMap::FindFilePossibleMmapStarts(
   // mapping named "/dev/ashmem/RELRO:<libname>" where <libname> is the base
   // library name (e.g. libchrome.so) sans any preceding path that may be
   // present in other mappings for the library.
-  // https://crashpad.chromium.org/bug/253
+  // https://crashpad.monyhar.org/bug/253
   static constexpr char kRelro[] = "/dev/ashmem/RELRO:";
   if (mapping.name.compare(0, strlen(kRelro), kRelro, 0, strlen(kRelro)) == 0) {
     // The kernel appends "(deleted)" to ashmem mappings because there isn't

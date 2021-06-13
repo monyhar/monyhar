@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.task;
+package org.monyhar.base.task;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.collection.IsIterableContainingInOrder.contains;
@@ -19,8 +19,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.task.SchedulerTestHelpers;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.task.SchedulerTestHelpers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +30,7 @@ import java.util.List;
  *
  * Note due to layering concerns we can't test post native functionality in a
  * base javatest. Instead see:
- * content/public/android/javatests/src/org/chromium/content/browser/scheduler/
+ * content/public/android/javatests/src/org/monyhar/content/browser/scheduler/
  * NativePostTaskTest.java
  */
 @RunWith(BaseJUnit4ClassRunner.class)

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.gcm_driver;
+package org.monyhar.components.gcm_driver;
 
 import android.app.PendingIntent;
 import android.content.Intent;
@@ -14,9 +14,9 @@ import android.os.Messenger;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.PackageUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.PackageUtils;
 
 import java.io.IOException;
 import java.util.concurrent.BlockingQueue;

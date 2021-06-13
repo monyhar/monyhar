@@ -22,7 +22,7 @@ TEMPLATE_HEADER = """\
 """
 
 TEMPLATE_HEADER_WITH_VERSION = """\
-// chromium version: 39.0.0.0
+// monyhar version: 39.0.0.0
 // Policy template for Linux.
 // Uncomment the policies you wish to activate and change their values to
 // something useful for your case. The provided values are for reference only
@@ -66,7 +66,7 @@ class JsonWriterUnittest(writer_unittest_common.WriterUnittestCommon):
           "placeholders": [],
           "messages": {},
         }'''
-    output = self.GetOutput(policy_json, {'_chromium': '1'}, 'json')
+    output = self.GetOutput(policy_json, {'_monyhar': '1'}, 'json')
     expected_output = TEMPLATE_HEADER + '}'
     self.CompareOutputs(output, expected_output)
 
@@ -80,7 +80,7 @@ class JsonWriterUnittest(writer_unittest_common.WriterUnittestCommon):
           "messages": {},
         }'''
     output = self.GetOutput(policy_json, {
-        '_chromium': '1',
+        '_monyhar': '1',
         'version': '39.0.0.0'
     }, 'json')
     expected_output = TEMPLATE_HEADER_WITH_VERSION + '}'
@@ -164,7 +164,7 @@ class JsonWriterUnittest(writer_unittest_common.WriterUnittestCommon):
           "placeholders": [],
           "messages": {},
         }'''
-    output = self.GetOutput(policy_json, {'_chromium': '1'}, 'json')
+    output = self.GetOutput(policy_json, {'_monyhar': '1'}, 'json')
     expected_output = (
         TEMPLATE_HEADER + '  // Example String Policy\n' + HEADER_DELIMETER +
         '  // Example String Policy\n\n'
@@ -190,7 +190,7 @@ class JsonWriterUnittest(writer_unittest_common.WriterUnittestCommon):
           "placeholders": [],
           "messages": {},
         }'''
-    output = self.GetOutput(policy_json, {'_chromium': '1'}, 'json')
+    output = self.GetOutput(policy_json, {'_monyhar': '1'}, 'json')
     expected_output = (
         TEMPLATE_HEADER + '  // Example Int Policy\n' + HEADER_DELIMETER +
         '  // Example Int Policy\n\n'
@@ -278,7 +278,7 @@ class JsonWriterUnittest(writer_unittest_common.WriterUnittestCommon):
           "placeholders": [],
           "messages": {},
         }'''
-    output = self.GetOutput(policy_json, {'_chromium': '1'}, 'json')
+    output = self.GetOutput(policy_json, {'_monyhar': '1'}, 'json')
     expected_output = (
         TEMPLATE_HEADER + '  // Example List\n' + HEADER_DELIMETER +
         '  // Example List\n\n'
@@ -310,7 +310,7 @@ class JsonWriterUnittest(writer_unittest_common.WriterUnittestCommon):
           "placeholders": [],
           "messages": {},
         }'''
-    output = self.GetOutput(policy_json, {'_chromium': '1'}, 'json')
+    output = self.GetOutput(policy_json, {'_monyhar': '1'}, 'json')
     expected_output = (
         TEMPLATE_HEADER + '  // Example List\n' + HEADER_DELIMETER +
         '  // Example List\n\n'
@@ -346,7 +346,7 @@ class JsonWriterUnittest(writer_unittest_common.WriterUnittestCommon):
           "placeholders": [],
           "messages": %s,
         }''' % MESSAGES
-    output = self.GetOutput(policy_json, {'_chromium': '1'}, 'json')
+    output = self.GetOutput(policy_json, {'_monyhar': '1'}, 'json')
     expected_output = (
         TEMPLATE_HEADER + '  // Example Dictionary Policy\n' + HEADER_DELIMETER
         + '  // Example Dictionary Policy See '
@@ -379,7 +379,7 @@ class JsonWriterUnittest(writer_unittest_common.WriterUnittestCommon):
           "placeholders": [],
           "messages": %s,
         }''' % (str(example), MESSAGES)
-    output = self.GetOutput(policy_json, {'_chromium': '1'}, 'json')
+    output = self.GetOutput(policy_json, {'_monyhar': '1'}, 'json')
     expected_output = (
         TEMPLATE_HEADER + '  // Example External Policy\n' + HEADER_DELIMETER +
         '  // Example External Policy See '
@@ -408,7 +408,7 @@ class JsonWriterUnittest(writer_unittest_common.WriterUnittestCommon):
           "placeholders": [],
           "messages": {},
         }'''
-    output = self.GetOutput(policy_json, {'_chromium': '1'}, 'json')
+    output = self.GetOutput(policy_json, {'_monyhar': '1'}, 'json')
     expected_output = TEMPLATE_HEADER + '}'
     self.CompareOutputs(output, expected_output)
 
@@ -445,7 +445,7 @@ class JsonWriterUnittest(writer_unittest_common.WriterUnittestCommon):
           "placeholders": [],
           "messages": {},
         }'''
-    output = self.GetOutput(policy_json, {'_chromium': '1'}, 'json')
+    output = self.GetOutput(policy_json, {'_monyhar': '1'}, 'json')
     expected_output = (
         TEMPLATE_HEADER + '  // Policy One\n' + HEADER_DELIMETER +
         '  // Policy One\n\n'

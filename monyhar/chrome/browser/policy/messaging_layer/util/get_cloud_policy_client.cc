@@ -38,7 +38,7 @@ namespace {
 // policy::CloudPolicyClient is retrieved in two different ways for ChromeOS and
 // non-ChromeOS browsers. This function should be called on the UI thread, and
 // if it isn't will recall itself to do so.
-// TODO(chromium:1078512) Wrap CloudPolicyClient in a new object so that its
+// TODO(monyhar:1078512) Wrap CloudPolicyClient in a new object so that its
 // methods and retrieval are accessed on the correct thread.
 void GetCloudPolicyClient(
     base::OnceCallback<void(StatusOr<policy::CloudPolicyClient*>)>

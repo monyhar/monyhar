@@ -99,7 +99,7 @@ class SafeBrowsingQueryManagerTest
 
 // Tests a query for a safe URL.
 TEST_P(SafeBrowsingQueryManagerTest, SafeURLQuery) {
-  GURL url("http://chromium.test");
+  GURL url("http://monyhar.test");
   EXPECT_CALL(observer_, SafeBrowsingQueryFinished(manager(), _, _))
       .WillOnce(VerifyQueryFinished(url, http_method_, navigation_item_id_,
                                     /*is_url_safe=*/true));
@@ -227,7 +227,7 @@ class SafeBrowsingQueryManagerWebStateDestructionTest
 
 // Tests that a query for a safe URL doesn't cause a crash.
 TEST_P(SafeBrowsingQueryManagerWebStateDestructionTest, SafeURLQuery) {
-  GURL url("http://chromium.test");
+  GURL url("http://monyhar.test");
   // Start a URL check query for the safe URL and run the runloop until the
   // result is received.
   manager()->StartQuery(

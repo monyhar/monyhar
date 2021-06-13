@@ -17,12 +17,12 @@ config("leveldb_config") {
 }
 
 leveldb_sources = [
-  "env_chromium.cc",
-  "env_chromium.h",
+  "env_monyhar.cc",
+  "env_monyhar.h",
   "leveldb_chrome.cc",
   "leveldb_chrome.h",
-  "port/port_chromium.cc",
-  "port/port_chromium.h",
+  "port/port_monyhar.cc",
+  "port/port_monyhar.h",
   "src/db/builder.cc",
   "src/db/builder.h",
   "src/db/db_impl.cc",
@@ -116,8 +116,8 @@ config("leveldb_component_config") {
 component("leveldatabase") {
   sources = leveldb_sources
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 
   public_configs = [
     ":leveldb_config",
@@ -156,8 +156,8 @@ static_library("leveldb_static") {
   ]
   sources = leveldb_sources
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 
   public_configs = [ ":leveldb_config" ]
 
@@ -183,8 +183,8 @@ static_library("leveldb_static") {
 }
 
 if (!is_ios && !is_android) {
-  test("env_chromium_unittests") {
-    sources = [ "env_chromium_unittest.cc" ]
+  test("env_monyhar_unittests") {
+    sources = [ "env_monyhar_unittest.cc" ]
     deps = [
       ":leveldatabase",
       "//base/test:test_support",
@@ -203,8 +203,8 @@ if (!is_ios && !is_android) {
       "src/util/testutil.h",
     ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
 
     public_deps = [
       ":leveldb_static",
@@ -216,22 +216,22 @@ if (!is_ios && !is_android) {
 
   test("leveldb_arena_test") {
     sources = [ "src/util/arena_test.cc" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     deps = [ ":leveldb_testutil" ]
   }
 
   test("leveldb_bloom_test") {
     sources = [ "src/util/bloom_test.cc" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     deps = [ ":leveldb_testutil" ]
   }
 
   test("leveldb_cache_test") {
     sources = [ "src/util/cache_test.cc" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     deps = [ ":leveldb_testutil" ]
 
     if (is_win) {
@@ -243,32 +243,32 @@ if (!is_ios && !is_android) {
 
   test("leveldb_corruption_test") {
     sources = [ "src/db/corruption_test.cc" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     deps = [ ":leveldb_testutil" ]
   }
 
   test("leveldb_crc32c_test") {
     sources = [ "src/util/crc32c_test.cc" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     deps = [ ":leveldb_testutil" ]
   }
 
   test("leveldb_db_bench") {
     sources = [ "src/benchmarks/db_bench.cc" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     deps = [ ":leveldb_testutil" ]
   }
 
   # The google/banchmark third_party dependency is optional, and only
-  # available if specified. See third_party/google_benchmark/README.chromium.
+  # available if specified. See third_party/google_benchmark/README.monyhar.
   if (enable_google_benchmarks) {
     test("leveldb_db_test") {
       sources = [ "src/db/db_test.cc" ]
-      configs -= [ "//build/config/compiler:chromium_code" ]
-      configs += [ "//build/config/compiler:no_chromium_code" ]
+      configs -= [ "//build/config/compiler:monyhar_code" ]
+      configs += [ "//build/config/compiler:no_monyhar_code" ]
       deps = [
         ":leveldb_testutil",
         "//third_party/google_benchmark",
@@ -278,15 +278,15 @@ if (!is_ios && !is_android) {
 
   test("leveldb_dbformat_test") {
     sources = [ "src/db/dbformat_test.cc" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     deps = [ ":leveldb_testutil" ]
   }
 
   test("leveldb_env_test") {
     sources = [ "src/util/env_test.cc" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     deps = [ ":leveldb_testutil" ]
 
     if (is_win) {
@@ -296,29 +296,29 @@ if (!is_ios && !is_android) {
 
   test("leveldb_filename_test") {
     sources = [ "src/db/filename_test.cc" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     deps = [ ":leveldb_testutil" ]
   }
 
   test("leveldb_filter_block_test") {
     sources = [ "src/table/filter_block_test.cc" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     deps = [ ":leveldb_testutil" ]
   }
 
   executable("leveldb_leveldbutil") {
     sources = [ "src/db/leveldbutil.cc" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     deps = [ ":leveldb_static" ]
   }
 
   test("leveldb_log_test") {
     sources = [ "src/db/log_test.cc" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     deps = [ ":leveldb_testutil" ]
 
     if (is_win) {
@@ -331,36 +331,36 @@ if (!is_ios && !is_android) {
 
   test("leveldb_skiplist_test") {
     sources = [ "src/db/skiplist_test.cc" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     deps = [ ":leveldb_testutil" ]
   }
 
   test("leveldb_table_test") {
     sources = [ "src/table/table_test.cc" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     deps = [ ":leveldb_testutil" ]
   }
 
   test("leveldb_version_edit_test") {
     sources = [ "src/db/version_edit_test.cc" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     deps = [ ":leveldb_testutil" ]
   }
 
   test("leveldb_write_batch_test") {
     sources = [ "src/db/write_batch_test.cc" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     deps = [ ":leveldb_testutil" ]
   }
 
   group("leveldb_test_targets") {
     testonly = true
     deps = [
-      ":env_chromium_unittests",
+      ":env_monyhar_unittests",
       ":leveldb_arena_test",
       ":leveldb_bloom_test",
       ":leveldb_cache_test",

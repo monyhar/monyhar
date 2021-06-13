@@ -11,7 +11,7 @@ usage() {
   echo "directory, with appropriate boilerplate modifications for use in"
   echo "Chromium."
   echo ""
-  echo "CROS_SRC_DIR: Path to Chromium OS source, e.g. ~/chromiumos/src."
+  echo "CROS_SRC_DIR: Path to Chromium OS source, e.g. ~/monyharos/src."
 }
 
 CROS_SRC_DIR="$1"

@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.util;
+package org.monyhar.chrome.test.util;
 
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.browser.ntp.RecentTabsPage;
-import org.chromium.chrome.browser.tab.Tab;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.browser.ntp.RecentTabsPage;
+import org.monyhar.chrome.browser.tab.Tab;
 
 /**
  * Utilities for testing the RecentTabsPage.

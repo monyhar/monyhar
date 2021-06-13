@@ -1,1 +1,1 @@
-See [Chromium OS Glossary](https://chromium.googlesource.com/chromiumos/docs/+/main/glossary.md)
+See [Chromium OS Glossary](https://monyhar.googlesource.com/monyharos/docs/+/main/glossary.md)

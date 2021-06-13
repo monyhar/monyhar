@@ -35,7 +35,7 @@ namespace remoting {
 namespace {
 
 const char kStanzaId[] = "123";
-const char kNamespace[] = "chromium:testns";
+const char kNamespace[] = "monyhar:testns";
 const char kNamespacePrefix[] = "tes";
 const char kBodyTag[] = "test";
 const char kType[] = "get";

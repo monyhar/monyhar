@@ -387,8 +387,8 @@ if (internal_gles2_conform_tests) {
     sources += get_target_outputs(":generate_gles2_conform_embedded_data")
 
     # Do not apply Chromium code rules to this third-party code.
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
 
     defines = [
       "GTF_API=GTF_GLES20",

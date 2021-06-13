@@ -161,7 +161,7 @@ enum PasswordProtectionTrigger {
 // These values are persisted to logs. Entries should not be renumbered and
 // numeric values should never be reused.
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.safe_browsing
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.safe_browsing
 enum SafeBrowsingState {
   // The user is not opted into Safe Browsing.
   NO_SAFE_BROWSING = 0,

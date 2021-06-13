@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@1.5.15.cr0
-package: chromium/third_party/android_deps/libs/org_codehaus_plexus_plexus_utils
+package: monyhar/third_party/android_deps/libs/org_codehaus_plexus_plexus_utils
 description: "Plexus Common Utilities"
 data:
 - file: plexus-utils-1.5.15.jar

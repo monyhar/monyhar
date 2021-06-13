@@ -17,7 +17,7 @@ chrome.rtcPrivate.onLaunch.addListener(function(launchData) {
       ', data = ' + launchData.intent.data);
     var data = launchData.intent.data;
     var type = launchData.intent.type;
-    if (type != 'application/vnd.chromium.contact' ||
+    if (type != 'application/vnd.monyhar.contact' ||
         data.name != 'Test Contact' ||
         data.phone.length != 2 ||
         data.phone[0] != '(555) 111-2222' ||

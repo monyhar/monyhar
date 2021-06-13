@@ -32,7 +32,7 @@ android_aar_prebuilt("gvr_common_java") {
   aar_path = "src/libraries/sdk-common-1.130.0.aar"
   proguard_configs = [
     "src/proguard-gvr.txt",
-    "proguard-gvr-chromium.txt",
+    "proguard-gvr-monyhar.txt",
   ]
   ignore_native_libraries = true
   deps = [ "//third_party/android_protobuf:protobuf_nano_javalib" ]

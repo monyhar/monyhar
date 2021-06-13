@@ -2,25 +2,25 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.resources;
+package org.monyhar.ui.resources;
 
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.util.SparseArray;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.MainDex;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.display.DisplayAndroid;
-import org.chromium.ui.resources.ResourceLoader.ResourceLoaderCallback;
-import org.chromium.ui.resources.dynamics.BitmapDynamicResource;
-import org.chromium.ui.resources.dynamics.DynamicResource;
-import org.chromium.ui.resources.dynamics.DynamicResourceLoader;
-import org.chromium.ui.resources.statics.StaticResourceLoader;
-import org.chromium.ui.resources.system.SystemResourceLoader;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.MainDex;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.display.DisplayAndroid;
+import org.monyhar.ui.resources.ResourceLoader.ResourceLoaderCallback;
+import org.monyhar.ui.resources.dynamics.BitmapDynamicResource;
+import org.monyhar.ui.resources.dynamics.DynamicResource;
+import org.monyhar.ui.resources.dynamics.DynamicResourceLoader;
+import org.monyhar.ui.resources.statics.StaticResourceLoader;
+import org.monyhar.ui.resources.system.SystemResourceLoader;
 
 /**
  * The Java component of a manager for all static resources to be loaded and used by CC layers.

@@ -16,20 +16,20 @@
         android:focusable="true"
         android:focusableInTouchMode="true" />
 
-    <org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionLayout
+    <org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionLayout
         android:id="@+id/test_radio_button_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <!-- RadioButtonWithDescription - With primary, without description. -->
-        <org.chromium.components.browser_ui.widget.RadioButtonWithDescription
+        <org.monyhar.components.browser_ui.widget.RadioButtonWithDescription
               android:id="@+id/test_radio_description_1"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               app:primaryText="@string/test_primary_1" />
 
         <!-- RadioButtonWithDescription - With primary and description. -->
-        <org.chromium.components.browser_ui.widget.RadioButtonWithDescription
+        <org.monyhar.components.browser_ui.widget.RadioButtonWithDescription
             android:id="@+id/test_radio_description_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
             app:descriptionText="@string/test_desc_2" />
 
         <!-- RadioButtonWithDescription - With primary, without description. -->
-        <org.chromium.components.browser_ui.widget.RadioButtonWithEditText
+        <org.monyhar.components.browser_ui.widget.RadioButtonWithEditText
             android:id="@+id/test_radio_edit_text_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
             app:primaryText="@string/test_primary_3" />
 
         <!-- RadioButtonWithDescription - With primary and description. -->
-        <org.chromium.components.browser_ui.widget.RadioButtonWithEditText
+        <org.monyhar.components.browser_ui.widget.RadioButtonWithEditText
             android:id="@+id/test_radio_edit_text_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -62,11 +62,11 @@
             app:descriptionText="@string/test_desc_4" />
 
         <!-- RadioButtonWithDescriptionAndAuxButton - With primary and description. -->
-        <org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionAndAuxButton
+        <org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionAndAuxButton
             android:id="@+id/test_radio_description_and_aux_button_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:primaryText="Test Primary 5"
             app:descriptionText="Test Description 5" />
-    </org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionLayout>
+    </org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionLayout>
 </FrameLayout>

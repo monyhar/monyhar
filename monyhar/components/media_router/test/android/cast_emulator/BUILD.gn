@@ -6,18 +6,18 @@ import("//build/config/android/config.gni")
 import("//build/config/android/rules.gni")
 
 android_library("cast_emulator_java") {
-  chromium_code = true
+  monyhar_code = true
 
   sources = [
-    "src/org/chromium/components/media_router/cast_emulator/RoutePublisher.java",
-    "src/org/chromium/components/media_router/cast_emulator/TestMediaRouteProvider.java",
-    "src/org/chromium/components/media_router/cast_emulator/TestMediaRouteProviderService.java",
-    "src/org/chromium/components/media_router/cast_emulator/remote/DummyPlayer.java",
-    "src/org/chromium/components/media_router/cast_emulator/remote/LocalSessionManager.java",
-    "src/org/chromium/components/media_router/cast_emulator/remote/MediaItem.java",
-    "src/org/chromium/components/media_router/cast_emulator/remote/RemotePlaybackRoutePublisher.java",
-    "src/org/chromium/components/media_router/cast_emulator/remote/RemoteSessionManager.java",
-    "src/org/chromium/components/media_router/cast_emulator/router/DummyRoutePublisher.java",
+    "src/org/monyhar/components/media_router/cast_emulator/RoutePublisher.java",
+    "src/org/monyhar/components/media_router/cast_emulator/TestMediaRouteProvider.java",
+    "src/org/monyhar/components/media_router/cast_emulator/TestMediaRouteProviderService.java",
+    "src/org/monyhar/components/media_router/cast_emulator/remote/DummyPlayer.java",
+    "src/org/monyhar/components/media_router/cast_emulator/remote/LocalSessionManager.java",
+    "src/org/monyhar/components/media_router/cast_emulator/remote/MediaItem.java",
+    "src/org/monyhar/components/media_router/cast_emulator/remote/RemotePlaybackRoutePublisher.java",
+    "src/org/monyhar/components/media_router/cast_emulator/remote/RemoteSessionManager.java",
+    "src/org/monyhar/components/media_router/cast_emulator/router/DummyRoutePublisher.java",
   ]
   deps = [
     "$google_play_services_package:google_play_services_cast_java",

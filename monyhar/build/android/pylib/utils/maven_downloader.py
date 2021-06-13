@@ -10,7 +10,7 @@ import shutil
 import sys
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
-import devil_chromium  # pylint: disable=unused-import
+import devil_monyhar  # pylint: disable=unused-import
 from devil.utils import cmd_helper
 from devil.utils import parallelizer
 

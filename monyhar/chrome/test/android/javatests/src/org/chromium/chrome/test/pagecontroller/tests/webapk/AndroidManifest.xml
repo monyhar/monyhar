@@ -6,7 +6,7 @@
 
 <manifest
       xmlns:android="http://schemas.android.com/apk/res/android"
-      package="org.chromium.chrome.test.pagecontroller.tests.webapk">
+      package="org.monyhar.chrome.test.pagecontroller.tests.webapk">
 
     <uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -18,7 +18,7 @@
         <uses-library android:name="android.test.runner" />
     </application>
 
-    <instrumentation android:name="org.chromium.base.test.BaseChromiumAndroidJUnitRunner"
-        android:targetPackage="org.chromium.chrome"
-        android:label="Runner for org.chromium.chrome.test.webapk"/>
+    <instrumentation android:name="org.monyhar.base.test.BaseChromiumAndroidJUnitRunner"
+        android:targetPackage="org.monyhar.chrome"
+        android:label="Runner for org.monyhar.chrome.test.webapk"/>
 </manifest>

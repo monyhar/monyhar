@@ -136,8 +136,8 @@ source_set("common") {
   }
   include_dirs = openh264_common_include_dirs
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
   configs += [ ":config" ]
   deps = []
   if (use_assembler) {
@@ -162,8 +162,8 @@ source_set("processing") {
   }
   include_dirs = openh264_processing_include_dirs
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
   configs += [ ":config" ]
   deps = [ ":common" ]
   if (use_assembler) {
@@ -179,8 +179,8 @@ source_set("encoder") {
   }
   include_dirs = openh264_encoder_include_dirs
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
   configs += [ ":config" ]
 
   # TODO: Remove after fixing always-true condition

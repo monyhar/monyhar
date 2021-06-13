@@ -9,7 +9,7 @@ created to better support non-Latin alphabets for web users around the globe.
 
 Different characters from different (or even the same!) languages can look very
 similar. We’ve seen
-[reports](https://bugs.chromium.org/p/chromium/issues/detail?id=683314) of
+[reports](https://bugs.monyhar.org/p/monyhar/issues/detail?id=683314) of
 proof-of-concept attacks. These are called [homograph
 attacks](https://en.wikipedia.org/wiki/IDN_homograph_attack). For example, the
 Latin "a" looks a lot like the Cyrillic "а", so someone could register
@@ -114,9 +114,9 @@ confusable is detected, show punycode.
 confusables](http://unicode.org/reports/tr39/#Whole_Script_Confusables): If all
 the letters in a given label belong to a set of whole-script-confusable letters
 in one of the [whole-script-confusable
-scripts](https://cs.chromium.org/chromium/src/components/url_formatter/spoof_checks/idn_spoof_checker.cc?type=cs&q=kWholeScriptConfusables&sq=package:chromium)
+scripts](https://cs.monyhar.org/monyhar/src/components/url_formatter/spoof_checks/idn_spoof_checker.cc?type=cs&q=kWholeScriptConfusables&sq=package:monyhar)
 and if the hostname doesn't have a corresponding
-[allowed top-level-domain](https://cs.chromium.org/chromium/src/components/url_formatter/spoof_checks/idn_spoof_checker.h?type=cs&q=allowed_tlds)
+[allowed top-level-domain](https://cs.monyhar.org/monyhar/src/components/url_formatter/spoof_checks/idn_spoof_checker.h?type=cs&q=allowed_tlds)
 for that script, show punycode.
 **Example for Cyrillic:**
 The first label in hostname `аррӏе.com` (`xn--80ak6aa92e.com`) is all [Cyrillic
@@ -126,11 +126,11 @@ known to host a large number of Cyrillic domains (e.g. `ru`, `su`, `pyc`, `ua`).
 Show it in punycode.
 
 11. If the label contains only [digits and digit
-spoofs](https://cs.chromium.org/chromium/src/components/url_formatter/spoof_checks/idn_spoof_checker.cc?type=cs&q=IsDigitLookalike),
+spoofs](https://cs.monyhar.org/monyhar/src/components/url_formatter/spoof_checks/idn_spoof_checker.cc?type=cs&q=IsDigitLookalike),
 show punycode.
 
 12. If the label matches a [dangerous
-pattern](https://cs.chromium.org/chromium/src/components/url_formatter/spoof_checks/idn_spoof_checker.cc?type=cs&g=0&l=422),
+pattern](https://cs.monyhar.org/monyhar/src/components/url_formatter/spoof_checks/idn_spoof_checker.cc?type=cs&g=0&l=422),
 show punycode.
 
 13. If the [skeleton](http://unicode.org/reports/tr39/#def-skeleton) of the
@@ -142,9 +142,9 @@ Otherwise, show Unicode.
 
 This is implemented by `IDNToUnicodeOneComponent()` and `IsIDNComponentSafe()`
 in
-[`components/url_formatter/url_formatter.cc`](https://cs.chromium.org/search/?q=components/url_formatter/url_formatter.cc)
+[`components/url_formatter/url_formatter.cc`](https://cs.monyhar.org/search/?q=components/url_formatter/url_formatter.cc)
 and `IDNSpoofChecker` class in
-[`components/url_formatter/spoof_checks/idn_spoof_checker.cc`](https://cs.chromium.org/chromium/src/components/url_formatter/spoof_checks/idn_spoof_checker.cc).
+[`components/url_formatter/spoof_checks/idn_spoof_checker.cc`](https://cs.monyhar.org/monyhar/src/components/url_formatter/spoof_checks/idn_spoof_checker.cc).
 
 ## Additional Protections
 
@@ -166,10 +166,10 @@ details).
 3. If the hostname of the navigation has at least a medium site engagement
 score, allow the navigation. Site engagement score is assigned to sites by the
 [Site Engagement
-Service](https://www.chromium.org/developers/design-documents/site-engagement).
+Service](https://www.monyhar.org/developers/design-documents/site-engagement).
 
 4. If the hostname of the navigation is in
-[`domains.list`](https://cs.chromium.org/chromium/src/components/url_formatter/spoof_checks/top_domains/domains.list),
+[`domains.list`](https://cs.monyhar.org/monyhar/src/components/url_formatter/spoof_checks/top_domains/domains.list),
 allow the navigation.
 
 5. If the user previously allowed the hostname of the navigation by clicking

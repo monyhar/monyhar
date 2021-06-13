@@ -106,7 +106,7 @@ dependencies {
     compile 'javax.inject:javax.inject:1'
 
     // Used by R8 to desugar library functions.
-    // See instructions in //third_party/r8/README.chromium for how to
+    // See instructions in //third_party/r8/README.monyhar for how to
     // update desugar_jdk_libs.json (needed when changing this version).
     compile 'com.android.tools:desugar_jdk_libs:1.1.1'
     compile 'com.android.tools:desugar_jdk_libs_configuration:1.1.1'
@@ -176,9 +176,9 @@ dependencies {
 }
 
 task setUpRepository(type: BuildConfigGenerator) {
-    // Paths are relative to the chromium source root.
+    // Paths are relative to the monyhar source root.
     repositoryPath 'third_party/android_deps'
-    chromiumSourceRoot '../..'
-    cipdBucket 'chromium'
+    monyharSourceRoot '../..'
+    cipdBucket 'monyhar'
     internalTargetVisibility = [ ':*', '//third_party/androidx:*' ]
 }

@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.util;
+package org.monyhar.chrome.test.util;
 
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.components.infobars.InfoBarAnimationListener;
-import org.chromium.components.infobars.InfoBarUiItem;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.components.infobars.InfoBarAnimationListener;
+import org.monyhar.components.infobars.InfoBarUiItem;
 
 import java.util.concurrent.TimeoutException;
 

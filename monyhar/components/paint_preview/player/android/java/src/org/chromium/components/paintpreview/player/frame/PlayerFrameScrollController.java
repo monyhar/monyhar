@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.paintpreview.player.frame;
+package org.monyhar.components.paintpreview.player.frame;
 
 import android.graphics.Rect;
 import android.os.Handler;
@@ -11,7 +11,7 @@ import android.widget.OverScroller;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.components.paintpreview.player.OverscrollHandler;
+import org.monyhar.components.paintpreview.player.OverscrollHandler;
 
 /**
  * Handles scrolling of a frame for the paint preview player.

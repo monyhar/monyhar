@@ -30,7 +30,7 @@ end that causes the test to fail.
 At the moment bisect_web_test_ordering.py only allows you to find tests that
 fail due to a previous test running. It's a small change to the script to make
 it work for tests that pass due to a previous test running (i.e. to figure out
-which test it depends on running before it). Contact ojan@chromium if you're
+which test it depends on running before it). Contact ojan@monyhar if you're
 interested in adding that feature to the script.
 ***
 

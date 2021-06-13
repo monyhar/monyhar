@@ -21,7 +21,7 @@ def parse_options():
     parser.add_option(
         "--root_src_dir",
         type="string",
-        help='root directory of chromium project, i.e. "//"')
+        help='root directory of monyhar project, i.e. "//"')
     parser.add_option(
         "--root_gen_dir",
         type="string",

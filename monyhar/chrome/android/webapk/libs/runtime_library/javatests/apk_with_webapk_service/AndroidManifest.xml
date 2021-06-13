@@ -5,10 +5,10 @@
 
 <!-- package name must be unique. -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.chromium.webapk.lib.runtime_library.test.apk_with_webapk_service">
+    package="org.monyhar.webapk.lib.runtime_library.test.apk_with_webapk_service">
 
     <application>
-        <service android:name="org.chromium.webapk.lib.runtime_library.test.TestWebApkServiceImplWrapper"
+        <service android:name="org.monyhar.webapk.lib.runtime_library.test.TestWebApkServiceImplWrapper"
             android:exported="true">
         </service>
     </application>

@@ -1,5 +1,5 @@
 From 715afeb52a0c6aca1c7fcbe8c7302f20a1a2ed1a Mon Sep 17 00:00:00 2001
-From: Caleb Raitto <caraitto@chromium.org>
+From: Caleb Raitto <caraitto@monyhar.org>
 Date: Wed, 9 Dec 2020 15:37:30 -0500
 Subject: [PATCH] Import a copy of V8's fdlibm fork into Chromium
  //third_party.
@@ -26,15 +26,15 @@ entry in V8 to help with this.
 
 Due to presubmit requirements, this is *not* a pristine import --
 changes made from upstream to add build support and functionality
-necessary for Web Audio are present in the commit patch in the chromium/
+necessary for Web Audio are present in the commit patch in the monyhar/
 subdirectory. A summary of these changes is also present in
-README.chromium.
+README.monyhar.
 
 Bug:1145192
 ---
  third_party/fdlibm/BUILD.gn           | 12 +++++
  third_party/fdlibm/DEPS               |  6 +++
- third_party/fdlibm/README.chromium    | 10 ++++
+ third_party/fdlibm/README.monyhar    | 10 ++++
  third_party/fdlibm/ieee754.cc         | 69 +++++++++++++++----------
  third_party/fdlibm/ieee754.h          | 73 +++++++++++++++------------
  third_party/fdlibm/overflowing-math.h | 16 +++---
@@ -72,16 +72,16 @@ index 000000000000..a94f56d77fbf
 +    "+base/macros.h",
 +    "+build/build_config.h",
 +]
-diff --git a/third_party/fdlibm/README.chromium b/third_party/fdlibm/README.chromium
+diff --git a/third_party/fdlibm/README.monyhar b/third_party/fdlibm/README.monyhar
 index eb45e2ab9438..48b3ab4bc6cc 100644
---- a/third_party/fdlibm/README.chromium
-+++ b/third_party/fdlibm/README.chromium
+--- a/third_party/fdlibm/README.monyhar
++++ b/third_party/fdlibm/README.monyhar
 @@ -13,3 +13,13 @@ This library is a copy of that V8 library intended for use in Chromium.
  
  This library may be useful when mathematical consistency across OS platforms is
  desired.
 +
-+The initial commit is not a pristine import -- the patch in the chromium/
++The initial commit is not a pristine import -- the patch in the monyhar/
 +subdirectory documents the changes made to the original sources.
 +
 +Changes from V8 upstream:

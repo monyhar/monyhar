@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments.ui;
+package org.monyhar.chrome.browser.payments.ui;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import org.chromium.chrome.R;
+import org.monyhar.chrome.R;
 
 /** This class represents a bar to display at the bottom of the payment request UI. */
 public class PaymentRequestBottomBar extends ViewGroup {

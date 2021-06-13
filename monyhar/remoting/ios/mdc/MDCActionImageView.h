@@ -6,7 +6,7 @@
 #define REMOTING_IOS_MDC_MDCACTIONIMAGEVIEW_H_
 
 // TODO(nicholss): Currently working on getting this into MDC for iOS, at that
-// time we will remove this version from chromium.
+// time we will remove this version from monyhar.
 
 #import <UIKit/UIKit.h>
 

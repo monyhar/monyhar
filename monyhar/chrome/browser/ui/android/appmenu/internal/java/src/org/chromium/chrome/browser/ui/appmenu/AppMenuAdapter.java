@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui.appmenu;
+package org.monyhar.chrome.browser.ui.appmenu;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -25,16 +25,16 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.content.res.AppCompatResources;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.browser.ui.appmenu.internal.R;
-import org.chromium.components.browser_ui.widget.highlight.ViewHighlighter;
-import org.chromium.components.browser_ui.widget.highlight.ViewHighlighter.HighlightParams;
-import org.chromium.components.browser_ui.widget.highlight.ViewHighlighter.HighlightShape;
-import org.chromium.components.browser_ui.widget.text.TextViewWithCompoundDrawables;
-import org.chromium.ui.base.LocalizationUtils;
-import org.chromium.ui.interpolators.BakedBezierInterpolator;
-import org.chromium.ui.widget.ChromeImageButton;
-import org.chromium.ui.widget.ChromeImageView;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.browser.ui.appmenu.internal.R;
+import org.monyhar.components.browser_ui.widget.highlight.ViewHighlighter;
+import org.monyhar.components.browser_ui.widget.highlight.ViewHighlighter.HighlightParams;
+import org.monyhar.components.browser_ui.widget.highlight.ViewHighlighter.HighlightShape;
+import org.monyhar.components.browser_ui.widget.text.TextViewWithCompoundDrawables;
+import org.monyhar.ui.base.LocalizationUtils;
+import org.monyhar.ui.interpolators.BakedBezierInterpolator;
+import org.monyhar.ui.widget.ChromeImageButton;
+import org.monyhar.ui.widget.ChromeImageView;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

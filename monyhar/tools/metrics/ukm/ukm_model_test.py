@@ -14,13 +14,13 @@ PRETTY_XML = """
 <ukm-configuration>
 
 <event name="Event1">
-  <owner>owner@chromium.org</owner>
-  <owner>anotherowner@chromium.org</owner>
+  <owner>owner@monyhar.org</owner>
+  <owner>anotherowner@monyhar.org</owner>
   <summary>
     Event1 summary.
   </summary>
   <metric name="Metric1">
-    <owner>owner2@chromium.org</owner>
+    <owner>owner2@monyhar.org</owner>
     <summary>
       Metric1 summary.
     </summary>
@@ -55,7 +55,7 @@ UNPRETTIFIED_XML = """
 <event name="Event1">
 <metric name="Metric3"/>
 <metric name="Metric1">
-  <owner>owner2@chromium.org</owner>
+  <owner>owner2@monyhar.org</owner>
   <summary>
     Metric1 summary.
   </summary>
@@ -79,8 +79,8 @@ UNPRETTIFIED_XML = """
         </metric>
 
   <summary>Event1 summary.</summary>
-  <owner>owner@chromium.org</owner>
-  <owner>anotherowner@chromium.org</owner>
+  <owner>owner@monyhar.org</owner>
+  <owner>anotherowner@monyhar.org</owner>
 
 </event>
 </ukm-configuration>

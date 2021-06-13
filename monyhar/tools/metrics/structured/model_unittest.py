@@ -44,8 +44,8 @@ class ModelTest(unittest.TestCase):
     xml = """\
           <structured-metrics>
           <project name="ProjectOne">
-            <owner>test1@chromium.org</owner>
-            <owner>test2@chromium.org</owner>
+            <owner>test1@monyhar.org</owner>
+            <owner>test2@monyhar.org</owner>
             <id>none</id>
             <summary> Test project. </summary>
 
@@ -68,7 +68,7 @@ class ModelTest(unittest.TestCase):
           </project>
 
           <project name="ProjectTwo">
-            <owner>test@chromium.org</owner>
+            <owner>test@monyhar.org</owner>
             <id>uma</id>
             <summary> Test project. </summary>
 
@@ -86,9 +86,9 @@ class ModelTest(unittest.TestCase):
     self.assertEqual(len(data.projects), 2)
     project_one, project_two = data.projects
     self.assert_project(project_one, 'ProjectOne', 'none', 'Test project.',
-                        ('test1@chromium.org', 'test2@chromium.org'))
+                        ('test1@monyhar.org', 'test2@monyhar.org'))
     self.assert_project(project_two, 'ProjectTwo', 'uma', 'Test project.',
-                        ('test@chromium.org', ))
+                        ('test@monyhar.org', ))
 
     self.assertEqual(len(project_one.events), 2)
     self.assertEqual(len(project_two.events), 1)
@@ -146,7 +146,7 @@ class ModelTest(unittest.TestCase):
     self.assert_model_raises("""\
         <structured-metrics>
         <project name="MyProject">
-          <owner>test@chromium.org</owner>
+          <owner>test@monyhar.org</owner>
           <summary> Test project. </summary>
           <event name="MyEvent">
             <summary> Test event. </summary>
@@ -161,7 +161,7 @@ class ModelTest(unittest.TestCase):
     self.assert_model_raises("""\
         <structured-metrics>
         <project name="MyProject">
-          <owner>test@chromium.org</owner>
+          <owner>test@monyhar.org</owner>
           <id>invalid value</id>
           <summary> Test project. </summary>
           <event name="MyEvent">
@@ -178,7 +178,7 @@ class ModelTest(unittest.TestCase):
     self.assert_model_raises("""\
         <structured-metrics>
         <project name="MyProject">
-          <owner>test@chromium.org</owner>
+          <owner>test@monyhar.org</owner>
           <id>none</id>
           <summary> Test project. </summary>
           <event name="MyEvent">
@@ -194,7 +194,7 @@ class ModelTest(unittest.TestCase):
     self.assert_model_raises("""\
         <structured-metrics>
         <project name="MyProject">
-          <owner>test@chromium.org</owner>
+          <owner>test@monyhar.org</owner>
           <id>none</id>
           <summary> Test project. </summary>
           <event name="MyEvent">
@@ -210,7 +210,7 @@ class ModelTest(unittest.TestCase):
     self.assert_model_raises("""\
         <structured-metrics>
         <project name="MyProject">
-          <owner>test@chromium.org</owner>
+          <owner>test@monyhar.org</owner>
           <id>none</id>
           <summary> Test project. </summary>
           <summary> Test project. </summary>

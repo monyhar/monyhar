@@ -43,7 +43,7 @@ js_library("navigation_selector_test") {
   deps = [
     "../..:chai_assert",
     "//ash/content/common/resources:navigation_selector",
-    "//third_party/polymer/v3_0/components-chromium/iron-collapse:iron-collapse",
+    "//third_party/polymer/v3_0/components-monyhar/iron-collapse:iron-collapse",
   ]
 }
 

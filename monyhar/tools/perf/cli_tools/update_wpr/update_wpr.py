@@ -36,7 +36,7 @@ HISTOGRAM2CSV = os.path.join(
 RUN_BENCHMARK = os.path.join(SRC_ROOT, 'tools', 'perf', 'run_benchmark')
 DATA_DIR = os.path.join(SRC_ROOT, 'tools', 'perf', 'page_sets', 'data')
 RECORD_WPR = os.path.join(SRC_ROOT, 'tools', 'perf', 'record_wpr')
-DEFAULT_REVIEWERS = ['johnchen@chromium.org']
+DEFAULT_REVIEWERS = ['johnchen@monyhar.org']
 MISSING_RESOURCE_RE = re.compile(
     r'\[network\]: Failed to load resource: the server responded with a status '
     r'of 404 \(\) ([^\s]+)')

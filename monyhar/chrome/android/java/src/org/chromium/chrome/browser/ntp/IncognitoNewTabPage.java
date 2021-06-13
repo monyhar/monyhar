@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ntp;
+package org.monyhar.chrome.browser.ntp;
 
 import android.app.Activity;
 import android.graphics.Canvas;
@@ -13,17 +13,17 @@ import android.widget.TextView;
 import androidx.annotation.VisibleForTesting;
 import androidx.core.view.ViewCompat;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.compositor.layouts.content.InvalidationAwareThumbnailProvider;
-import org.chromium.chrome.browser.feedback.HelpAndFeedbackLauncherImpl;
-import org.chromium.chrome.browser.ntp.IncognitoNewTabPageView.IncognitoNewTabPageManager;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.ui.native_page.BasicNativePage;
-import org.chromium.chrome.browser.ui.native_page.NativePageHost;
-import org.chromium.chrome.browser.vr.VrModuleProvider;
-import org.chromium.components.content_settings.CookieControlsEnforcement;
-import org.chromium.components.embedder_support.util.UrlConstants;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.compositor.layouts.content.InvalidationAwareThumbnailProvider;
+import org.monyhar.chrome.browser.feedback.HelpAndFeedbackLauncherImpl;
+import org.monyhar.chrome.browser.ntp.IncognitoNewTabPageView.IncognitoNewTabPageManager;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.ui.native_page.BasicNativePage;
+import org.monyhar.chrome.browser.ui.native_page.NativePageHost;
+import org.monyhar.chrome.browser.vr.VrModuleProvider;
+import org.monyhar.components.content_settings.CookieControlsEnforcement;
+import org.monyhar.components.embedder_support.util.UrlConstants;
 
 /**
  * Provides functionality when the user interacts with the Incognito NTP.

@@ -9,8 +9,8 @@ Unified Sync and Storage (USS). There is also the deprecated [SyncableService
 API] (aka Directory), which as of mid-2019 is still used by several legacy model
 types, but "wrapped into" USS (see [SyncableServiceBasedBridge]).
 
-[SyncableService API]: https://www.chromium.org/developers/design-documents/sync/syncable-service-api
-[SyncableServiceBasedBridge]: https://cs.chromium.org/chromium/src/components/sync/model/syncable_service_based_bridge.h
+[SyncableService API]: https://www.monyhar.org/developers/design-documents/sync/syncable-service-api
+[SyncableServiceBasedBridge]: https://cs.monyhar.org/monyhar/src/components/sync/model/syncable_service_based_bridge.h
 
 [TOC]
 
@@ -39,10 +39,10 @@ merge of remote and local data, and for incremental changes coming from sync.
 storage mechanism. Note that it is typically implemented on a per-storage basis,
 not a per-type basis.
 
-[Bridge]: https://cs.chromium.org/chromium/src/components/sync/model/model_type_sync_bridge.h
-[KeyedService]: https://cs.chromium.org/chromium/src/components/keyed_service/core/keyed_service.h
-[MTCP]: https://cs.chromium.org/chromium/src/components/sync/model/model_type_change_processor.h
-[MCL]: https://cs.chromium.org/chromium/src/components/sync/model/metadata_change_list.h
+[Bridge]: https://cs.monyhar.org/monyhar/src/components/sync/model/model_type_sync_bridge.h
+[KeyedService]: https://cs.monyhar.org/monyhar/src/components/keyed_service/core/keyed_service.h
+[MTCP]: https://cs.monyhar.org/monyhar/src/components/sync/model/model_type_change_processor.h
+[MCL]: https://cs.monyhar.org/monyhar/src/components/sync/model/metadata_change_list.h
 
 ## Data
 
@@ -55,8 +55,8 @@ generic [`EntitySpecifics`][EntitySpecifics] proto. This is the form that all
 communications with sync will use. This proto form of the model data is referred
 to as the specifics.
 
-[TypedUrlSpecifics]: https://cs.chromium.org/chromium/src/components/sync/protocol/typed_url_specifics.proto
-[EntitySpecifics]: https://cs.chromium.org/search/?q="message+EntitySpecifics"+file:sync.proto
+[TypedUrlSpecifics]: https://cs.monyhar.org/monyhar/src/components/sync/protocol/typed_url_specifics.proto
+[EntitySpecifics]: https://cs.monyhar.org/search/?q="message+EntitySpecifics"+file:sync.proto
 
 ### Identifiers
 
@@ -81,7 +81,7 @@ to add one (e.g. a GUID, though be wary as they have the potential to conflict).
 While the hash gets written to disk as part of the metadata, the tag itself is
 never persisted locally.
 
-[EntityData]: https://cs.chromium.org/chromium/src/components/sync/engine/entity_data.h
+[EntityData]: https://cs.monyhar.org/monyhar/src/components/sync/engine/entity_data.h
 
 ## Storage
 
@@ -98,8 +98,8 @@ change processor writes metadata through this interface when changes occur, and
 the bridge simply has to ensure it gets passed along to the store and written
 along with the data changes.
 
-[EntityMetadata]: https://cs.chromium.org/chromium/src/components/sync/protocol/entity_metadata.proto
-[ModelTypeState]: https://cs.chromium.org/chromium/src/components/sync/protocol/model_type_state.proto
+[EntityMetadata]: https://cs.monyhar.org/monyhar/src/components/sync/protocol/entity_metadata.proto
+[ModelTypeState]: https://cs.monyhar.org/monyhar/src/components/sync/protocol/model_type_state.proto
 
 ### ModelTypeStore
 
@@ -118,10 +118,10 @@ can share the same LevelDB backend just by specifying the same path and task
 runner. Sync already has a backend it uses for DeviceInfo that can be shared by
 other types via the [`ModelTypeStoreService`][StoreService].
 
-[Store]: https://cs.chromium.org/chromium/src/components/sync/model/model_type_store.h
+[Store]: https://cs.monyhar.org/monyhar/src/components/sync/model/model_type_store.h
 [LevelDB]: https://github.com/google/leveldb/blob/master/doc/index.md
-[WriteBatch]: https://cs.chromium.org/search/?q="class+WriteBatch"+file:model_type_store_base.h
-[StoreService]: https://cs.chromium.org/chromium/src/components/sync/model/model_type_store_service.h
+[WriteBatch]: https://cs.monyhar.org/search/?q="class+WriteBatch"+file:model_type_store_base.h
+[StoreService]: https://cs.monyhar.org/monyhar/src/components/sync/model/model_type_store_service.h
 
 ## Implementing ModelTypeSyncBridge
 
@@ -138,7 +138,7 @@ independent, there is no need to wait for the sync engine to start before
 changes can be made. This prevents the need for an expensive association step in
 the initialization.
 
-[ModelReadyToSync]: https://cs.chromium.org/search/?q=ModelReadyToSync+file:/model_type_change_processor.h
+[ModelReadyToSync]: https://cs.monyhar.org/search/?q=ModelReadyToSync+file:/model_type_change_processor.h
 
 ### MergeSyncData
 
@@ -171,7 +171,7 @@ starts and merge is called. Since tombstones are not provided for merge, this
 can result in reviving the entity if it had been deleted on another client in
 the meantime.
 
-[Put]: https://cs.chromium.org/search/?q=Put+file:/model_type_change_processor.h
+[Put]: https://cs.monyhar.org/search/?q=Put+file:/model_type_change_processor.h
 
 ### ApplySyncChanges
 
@@ -210,8 +210,8 @@ for the same entity comes from another client. In this case, the bridge’s
 defaults to having the remote version overwrite the local version unless the
 remote version is a tombstone, in which case the local version wins.
 
-[EntityChange]: https://cs.chromium.org/chromium/src/components/sync/model/entity_change.h
-[ResolveConflict]: https://cs.chromium.org/search/?q=ResolveConflict+file:/model_type_sync_bridge.h
+[EntityChange]: https://cs.monyhar.org/monyhar/src/components/sync/model/entity_change.h
+[ResolveConflict]: https://cs.monyhar.org/search/?q=ResolveConflict+file:/model_type_sync_bridge.h
 
 ### Local changes
 
@@ -250,8 +250,8 @@ with a non-null `MetadataChangeList` parameter. All the metadata will be cleared
 from the store (if possible), and the type will be started again from scratch on
 the next client restart.
 
-[ReportError]: https://cs.chromium.org/search/?q=ReportError+file:/model_type_change_processor.h
-[ModelError]: https://cs.chromium.org/chromium/src/components/sync/model/model_error.h
+[ReportError]: https://cs.monyhar.org/search/?q=ReportError+file:/model_type_change_processor.h
+[ModelError]: https://cs.monyhar.org/monyhar/src/components/sync/model/model_error.h
 
 ## Sync Integration Checklist
 
@@ -276,22 +276,22 @@ the next client restart.
 *   Add to the `SyncModelTypes` enum in [`enums.xml`][enums] and to the
     `SyncModelType` suffix in [`histograms.xml`][histograms].
 
-[protocol]: https://cs.chromium.org/chromium/src/components/sync/protocol/
-[ModelType]: https://cs.chromium.org/chromium/src/components/sync/base/model_type.h
-[info_map]: https://cs.chromium.org/search/?q="kModelTypeInfoMap%5B%5D"+file:model_type.cc
-[conversions]: https://cs.chromium.org/chromium/src/components/sync/protocol/proto_value_conversions.h
-[ModelTypeController]: https://cs.chromium.org/chromium/src/components/sync/driver/model_type_controller.h
-[CreateCommonDataTypeControllers]: https://cs.chromium.org/search/?q="ProfileSyncComponentsFactoryImpl::CreateCommonDataTypeControllers"
-[CreateDataTypeControllers]: https://cs.chromium.org/search/?q="ChromeSyncClient::CreateDataTypeControllers"
-[SyncServiceFactory]: https://cs.chromium.org/search/?q=:SyncServiceFactory%5C(%5C)
-[NigoriSpecifics]: https://cs.chromium.org/chromium/src/components/sync/protocol/nigori_specifics.proto
-[UserSelectableType]: https://cs.chromium.org/chromium/src/components/sync/base/user_selectable_type.h?type=cs&q="enum+class+UserSelectableType"
-[pref_names]: https://cs.chromium.org/chromium/src/components/sync/base/pref_names.h
-[GetPrefName]: https://cs.chromium.org/search/?q=GetPrefNameForType+file:sync_prefs.cc
-[GetUserSelectableTypeInfo]: https://cs.chromium.org/chromium/src/components/sync/base/user_selectable_type.cc?type=cs&q="UserSelectableTypeInfo+GetUserSelectableTypeInfo"+f:components/sync/base/user_selectable_type.cc
-[enums]: https://cs.chromium.org/chromium/src/tools/metrics/histograms/enums.xml
-[histograms]: https://cs.chromium.org/chromium/src/tools/metrics/histograms/histograms.xml
-[DataTypeHistogram]: https://cs.chromium.org/chromium/src/components/sync/base/data_type_histogram.h
+[protocol]: https://cs.monyhar.org/monyhar/src/components/sync/protocol/
+[ModelType]: https://cs.monyhar.org/monyhar/src/components/sync/base/model_type.h
+[info_map]: https://cs.monyhar.org/search/?q="kModelTypeInfoMap%5B%5D"+file:model_type.cc
+[conversions]: https://cs.monyhar.org/monyhar/src/components/sync/protocol/proto_value_conversions.h
+[ModelTypeController]: https://cs.monyhar.org/monyhar/src/components/sync/driver/model_type_controller.h
+[CreateCommonDataTypeControllers]: https://cs.monyhar.org/search/?q="ProfileSyncComponentsFactoryImpl::CreateCommonDataTypeControllers"
+[CreateDataTypeControllers]: https://cs.monyhar.org/search/?q="ChromeSyncClient::CreateDataTypeControllers"
+[SyncServiceFactory]: https://cs.monyhar.org/search/?q=:SyncServiceFactory%5C(%5C)
+[NigoriSpecifics]: https://cs.monyhar.org/monyhar/src/components/sync/protocol/nigori_specifics.proto
+[UserSelectableType]: https://cs.monyhar.org/monyhar/src/components/sync/base/user_selectable_type.h?type=cs&q="enum+class+UserSelectableType"
+[pref_names]: https://cs.monyhar.org/monyhar/src/components/sync/base/pref_names.h
+[GetPrefName]: https://cs.monyhar.org/search/?q=GetPrefNameForType+file:sync_prefs.cc
+[GetUserSelectableTypeInfo]: https://cs.monyhar.org/monyhar/src/components/sync/base/user_selectable_type.cc?type=cs&q="UserSelectableTypeInfo+GetUserSelectableTypeInfo"+f:components/sync/base/user_selectable_type.cc
+[enums]: https://cs.monyhar.org/monyhar/src/tools/metrics/histograms/enums.xml
+[histograms]: https://cs.monyhar.org/monyhar/src/tools/metrics/histograms/histograms.xml
+[DataTypeHistogram]: https://cs.monyhar.org/monyhar/src/components/sync/base/data_type_histogram.h
 
 ## Testing
 
@@ -299,4 +299,4 @@ The [`TwoClientTypedUrlsSyncTest`][UssTest] suite is probably a good place to st
 for integration testing. Especially note the use of a `StatusChangeChecker` to
 wait for events to happen.
 
-[UssTest]: https://cs.chromium.org/chromium/src/chrome/browser/sync/test/integration/two_client_typed_urls_sync_test.cc
+[UssTest]: https://cs.monyhar.org/monyhar/src/chrome/browser/sync/test/integration/two_client_typed_urls_sync_test.cc

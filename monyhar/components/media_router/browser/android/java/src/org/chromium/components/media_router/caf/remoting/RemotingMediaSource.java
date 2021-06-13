@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.media_router.caf.remoting;
+package org.monyhar.components.media_router.caf.remoting;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
@@ -15,9 +15,9 @@ import androidx.mediarouter.media.MediaRouteSelector;
 
 import com.google.android.gms.cast.CastMediaControlIntent;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.components.media_router.MediaSource;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.components.media_router.MediaSource;
 
 import java.io.UnsupportedEncodingException;
 
@@ -35,7 +35,7 @@ public class RemotingMediaSource implements MediaSource {
     // Needs to be in sync with AndroidManifest meta-data key (used both by Clank and WebLayer
     // clients).
     private static final String REMOTE_PLAYBACK_APP_ID_KEY =
-            "org.chromium.content.browser.REMOTE_PLAYBACK_APP_ID";
+            "org.monyhar.content.browser.REMOTE_PLAYBACK_APP_ID";
 
     /**
      * The Cast application id.

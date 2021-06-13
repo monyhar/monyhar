@@ -7,7 +7,7 @@
   <!-- package name must be unique so suffix with "tests" so package loader
        doesn't ignore this. -->
   <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="org.chromium.cronet_sample_apk.tests">
+      package="org.monyhar.cronet_sample_apk.tests">
     <uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
     <!-- We add an application tag here just so that we can indicate that this
          package needs to link against the android.test library, which is
@@ -16,6 +16,6 @@
         <uses-library android:name="android.test.runner" />
     </application>
     <instrumentation android:name="android.support.test.runner.AndroidJUnitRunner"
-        android:targetPackage="org.chromium.cronet_sample_apk"
-        android:label="Tests for org.chromium.cronet_sample_apk"/>
+        android:targetPackage="org.monyhar.cronet_sample_apk"
+        android:label="Tests for org.monyhar.cronet_sample_apk"/>
 </manifest>

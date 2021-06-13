@@ -1,5 +1,5 @@
 # If changing network error strings, please visit go/chrome-neterror-strings
-# (Google internal) or contact edwardjung@chromium.org and rachelis@chromium.org
-per-file error_page_strings.grdp=edwardjung@chromium.org
+# (Google internal) or contact edwardjung@monyhar.org and rachelis@monyhar.org
+per-file error_page_strings.grdp=edwardjung@monyhar.org
 
 file://net/OWNERS

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.search_engines.settings;
+package org.monyhar.chrome.browser.search_engines.settings;
 
 import android.os.Bundle;
 import android.view.View;
@@ -11,8 +11,8 @@ import android.widget.ListView;
 import androidx.annotation.VisibleForTesting;
 import androidx.fragment.app.ListFragment;
 
-import org.chromium.chrome.browser.search_engines.R;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.chrome.browser.search_engines.R;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
 
 /**
  * A preference fragment for selecting a default search engine.

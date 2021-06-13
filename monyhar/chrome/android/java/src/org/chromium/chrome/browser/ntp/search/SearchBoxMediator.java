@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ntp.search;
+package org.monyhar.chrome.browser.ntp.search;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -16,26 +16,26 @@ import android.view.ViewGroup;
 import androidx.annotation.ColorInt;
 import androidx.core.graphics.drawable.RoundedBitmapDrawable;
 
-import org.chromium.chrome.browser.gsa.GSAState;
-import org.chromium.chrome.browser.lens.LensController;
-import org.chromium.chrome.browser.lens.LensEntryPoint;
-import org.chromium.chrome.browser.lens.LensIntentParams;
-import org.chromium.chrome.browser.lens.LensQueryParams;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.lifecycle.DestroyObserver;
-import org.chromium.chrome.browser.lifecycle.NativeInitObserver;
-import org.chromium.chrome.browser.omnibox.voice.AssistantVoiceSearchService;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.search_engines.TemplateUrlServiceFactory;
-import org.chromium.chrome.browser.signin.services.IdentityServicesProvider;
-import org.chromium.components.browser_ui.styles.ChromeColors;
-import org.chromium.components.externalauth.ExternalAuthUtils;
-import org.chromium.components.signin.AccountManagerFacadeProvider;
-import org.chromium.ui.base.ViewUtils;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.chrome.browser.gsa.GSAState;
+import org.monyhar.chrome.browser.lens.LensController;
+import org.monyhar.chrome.browser.lens.LensEntryPoint;
+import org.monyhar.chrome.browser.lens.LensIntentParams;
+import org.monyhar.chrome.browser.lens.LensQueryParams;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.lifecycle.DestroyObserver;
+import org.monyhar.chrome.browser.lifecycle.NativeInitObserver;
+import org.monyhar.chrome.browser.omnibox.voice.AssistantVoiceSearchService;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.search_engines.TemplateUrlServiceFactory;
+import org.monyhar.chrome.browser.signin.services.IdentityServicesProvider;
+import org.monyhar.components.browser_ui.styles.ChromeColors;
+import org.monyhar.components.externalauth.ExternalAuthUtils;
+import org.monyhar.components.signin.AccountManagerFacadeProvider;
+import org.monyhar.ui.base.ViewUtils;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
 
 import java.util.ArrayList;
 import java.util.List;

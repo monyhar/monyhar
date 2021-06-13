@@ -27,7 +27,7 @@ NET_EXPORT extern const char kEffectiveConnectionType4G[];
 // connection is metered or not. For example, an unmetered slow connection may
 // have EFFECTIVE_CONNECTION_TYPE_SLOW_2G as its effective connection type. The
 // effective connection type enums are be in increasing order of quality.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.net
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.net
 // GENERATED_JAVA_PREFIX_TO_STRIP: EFFECTIVE_CONNECTION_
 enum EffectiveConnectionType {
   // Effective connection type reported when the network quality is unknown.

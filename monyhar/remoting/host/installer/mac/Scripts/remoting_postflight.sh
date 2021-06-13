@@ -7,10 +7,10 @@
 # Version = @@VERSION@@
 
 HELPERTOOLS=/Library/PrivilegedHelperTools
-SERVICE_NAME=org.chromium.chromoting
+SERVICE_NAME=org.monyhar.chromoting
 CONFIG_FILE="$HELPERTOOLS/$SERVICE_NAME.json"
 OLD_SCRIPT_FILE="$HELPERTOOLS/$SERVICE_NAME.me2me.sh"
-PLIST=/Library/LaunchAgents/org.chromium.chromoting.plist
+PLIST=/Library/LaunchAgents/org.monyhar.chromoting.plist
 PAM_CONFIG=/etc/pam.d/chrome-remote-desktop
 ENABLED_FILE="$HELPERTOOLS/$SERVICE_NAME.me2me_enabled"
 ENABLED_FILE_BACKUP="$ENABLED_FILE.backup"

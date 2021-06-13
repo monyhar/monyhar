@@ -18,7 +18,7 @@
         android:layout_width="1dp"
         android:layout_height="match_parent"
         style="@style/VerticalDivider" />
-    <org.chromium.ui.widget.ChromeImageButton
+    <org.monyhar.ui.widget.ChromeImageButton
         android:id="@+id/expand_arrow"
         android:layout_height="match_parent"
         android:layout_width="wrap_content"

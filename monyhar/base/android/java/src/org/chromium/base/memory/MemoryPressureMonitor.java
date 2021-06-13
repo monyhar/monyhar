@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.memory;
+package org.monyhar.base.memory;
 
 import android.app.ActivityManager;
 import android.content.ComponentCallbacks2;
@@ -11,13 +11,13 @@ import android.os.SystemClock;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.MemoryPressureLevel;
-import org.chromium.base.MemoryPressureListener;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.MainDex;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.supplier.Supplier;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.MemoryPressureLevel;
+import org.monyhar.base.MemoryPressureListener;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.MainDex;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.supplier.Supplier;
 
 import java.util.concurrent.TimeUnit;
 

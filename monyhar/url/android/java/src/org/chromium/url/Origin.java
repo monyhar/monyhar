@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.url;
+package org.monyhar.url;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
 
 import java.nio.ByteBuffer;
 
@@ -13,17 +13,17 @@ import java.nio.ByteBuffer;
 @JNINamespace("url")
 public class Origin {
     // The internal representation of the origin that should never be used directly.
-    private final org.chromium.url.internal.mojom.Origin mInternal;
+    private final org.monyhar.url.internal.mojom.Origin mInternal;
 
     /**
      * This convenience constructor provides a way to wrap
-     * `org.chromium.url.internal.mojom.Origin`s, which are provided by Mojo-generated
+     * `org.monyhar.url.internal.mojom.Origin`s, which are provided by Mojo-generated
      * code but not intended for direct use (see crbug.com/1156866).
      *
      * @return An `Origin` providing user-friendly access to the origin represented by
      *         `mojoOrigin`.
      */
-    public Origin(org.chromium.url.internal.mojom.Origin mojoOrigin) {
+    public Origin(org.monyhar.url.internal.mojom.Origin mojoOrigin) {
         mInternal = mojoOrigin;
     }
 
@@ -59,6 +59,6 @@ public class Origin {
 
     @CalledByNative
     private Origin(ByteBuffer byteBuffer) {
-        mInternal = org.chromium.url.internal.mojom.Origin.deserialize(byteBuffer);
+        mInternal = org.monyhar.url.internal.mojom.Origin.deserialize(byteBuffer);
     }
 }

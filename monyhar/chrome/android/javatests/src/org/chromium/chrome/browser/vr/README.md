@@ -16,10 +16,10 @@
 If you are reproducing an issue with the AR tests, run
 `export DOWNLOAD_VR_TEST_APKS=1 && gclient runhooks` in order to get the
 playback datasets that are necessary. This requires authentication, run
-`gsutil.py config` [documentation](https://chromium.googlesource.com/chromiumos/docs/+/main/gsutil.md) 
+`gsutil.py config` [documentation](https://monyhar.googlesource.com/monyharos/docs/+/main/gsutil.md) 
 to set this up if necessary.
 
-**NOTE** The message "Main  Unable to find package info for org.chromium.chrome"
+**NOTE** The message "Main  Unable to find package info for org.monyhar.chrome"
          is usually displayed when the test package is being installed and does
          not indicate any problem.
 
@@ -186,10 +186,10 @@ See [adding_new_tests.md][adding_new_tests].
 
 [webxr_spec]: https://immersive-web.github.io/webxr-samples/explainer.html
 [shared_prefs_dir]:
-https://chromium.googlesource.com/chromium/src/+/main/chrome/android/shared_preference_files/test
-[html_dir]: https://chromium.googlesource.com/chromium/src/+/main/chrome/test/data/xr/e2e_test_files
-[vr_test_apks]: https://chromium.googlesource.com/chromium/src/+/main/third_party/gvr-android-sdk/test-apks
-[vr_test_libraries]: https://chromium.googlesource.com/chromium/src/+/main/third_party/gvr-android-sdk/test-libraries
-[ar_test_apks]: https://chromium.googlesource.com/chromium/src/+/main/third_party/arcore-android-sdk/test-apks
+https://monyhar.googlesource.com/monyhar/src/+/main/chrome/android/shared_preference_files/test
+[html_dir]: https://monyhar.googlesource.com/monyhar/src/+/main/chrome/test/data/xr/e2e_test_files
+[vr_test_apks]: https://monyhar.googlesource.com/monyhar/src/+/main/third_party/gvr-android-sdk/test-apks
+[vr_test_libraries]: https://monyhar.googlesource.com/monyhar/src/+/main/third_party/gvr-android-sdk/test-libraries
+[ar_test_apks]: https://monyhar.googlesource.com/monyhar/src/+/main/third_party/arcore-android-sdk/test-apks
 [adding_new_tests]:
-https://chromium.googlesource.com/chromium/src/+/main/chrome/android/javatests/src/org/chromium/chrome/browser/vr/adding_new_tests.md
+https://monyhar.googlesource.com/monyhar/src/+/main/chrome/android/javatests/src/org/monyhar/chrome/browser/vr/adding_new_tests.md

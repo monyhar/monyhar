@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox;
+package org.monyhar.chrome.browser.omnibox;
 
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.browser.omnibox.voice.VoiceRecognitionHandler;
-import org.chromium.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.omnibox.voice.VoiceRecognitionHandler;
+import org.monyhar.chrome.browser.tab.Tab;
 
 /**
  * Container that holds the {@link UrlBar} and SSL state related with the current {@link Tab}.

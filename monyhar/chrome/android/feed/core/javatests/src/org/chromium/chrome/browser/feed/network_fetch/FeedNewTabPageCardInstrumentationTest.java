@@ -14,19 +14,19 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.ChromeRenderTestRule;
-import org.chromium.chrome.test.util.NewTabPageTestUtils;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.chrome.test.util.browser.WPRArchiveDirectory;
-import org.chromium.components.embedder_support.util.UrlConstants;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.ChromeRenderTestRule;
+import org.monyhar.chrome.test.util.NewTabPageTestUtils;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.chrome.test.util.browser.WPRArchiveDirectory;
+import org.monyhar.components.embedder_support.util.UrlConstants;
 
 import java.io.IOException;
 
@@ -57,7 +57,7 @@ public final class FeedNewTabPageCardInstrumentationTest {
     @DisabledTest(message = "https://crbug.com/1166575")
     @MediumTest
     @Feature({"FeedNewTabPage", "WPRRecordReplayTest", "RenderTest"})
-    @WPRArchiveDirectory("chrome/android/feed/core/javatests/src/org/chromium/chrome/"
+    @WPRArchiveDirectory("chrome/android/feed/core/javatests/src/org/monyhar/chrome/"
             + "browser/feed/wpr_tests")
     public void
     launchNTP_withMultipleFeedCardsRendered() throws IOException, InterruptedException {

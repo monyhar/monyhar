@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.payments;
+package org.monyhar.components.payments;
 
 import android.os.Bundle;
 
@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 import java.util.regex.Pattern;
 
 /**
- * An immutable class that mirrors org.chromium.payments.mojom.PaymentAddress.
+ * An immutable class that mirrors org.monyhar.payments.mojom.PaymentAddress.
  * https://w3c.github.io/payment-request/#paymentaddress-interface
  */
 public class Address {

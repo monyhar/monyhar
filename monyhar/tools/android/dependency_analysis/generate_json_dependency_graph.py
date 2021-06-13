@@ -24,7 +24,7 @@ DEFAULT_ROOT_TARGET = 'chrome/android:monochrome_public_bundle'
 
 def class_is_interesting(name: str):
     """Checks if a jdeps class is a class we are actually interested in."""
-    if name.startswith('org.chromium.'):
+    if name.startswith('org.monyhar.'):
         return True
     return False
 
@@ -172,7 +172,7 @@ def main():
                             help='Root build target.')
     arg_parser.add_argument('-d',
                             '--checkout-dir',
-                            help='Path to the chromium checkout directory.')
+                            help='Path to the monyhar checkout directory.')
     arg_parser.add_argument('-j',
                             '--jdeps-path',
                             help='Path to the jdeps executable.')

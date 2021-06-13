@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant;
+package org.monyhar.chrome.browser.autofill_assistant;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -14,13 +14,13 @@ import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.checkElementExists;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.checkElementOnScreen;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.getBitmapFromView;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.startAutofillAssistant;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.tapElement;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntil;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilViewMatchesCondition;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.checkElementExists;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.checkElementOnScreen;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.getBitmapFromView;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.startAutofillAssistant;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.tapElement;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntil;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitUntilViewMatchesCondition;
 
 import android.support.test.InstrumentationRegistry;
 import android.view.View;
@@ -33,31 +33,31 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.FlakyTest;
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.autofill_assistant.proto.ActionProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.BitmapDrawableProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ChipProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ClientDimensionProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ClientSettingsProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ConfigureUiStateProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ConfigureUiStateProto.OverlayBehavior;
-import org.chromium.chrome.browser.autofill_assistant.proto.DrawableProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ElementAreaProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ElementAreaProto.Rectangle;
-import org.chromium.chrome.browser.autofill_assistant.proto.OverlayImageProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.PromptProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.PromptProto.Choice;
-import org.chromium.chrome.browser.autofill_assistant.proto.SelectorProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.ShowCastProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.SupportedScriptProto;
-import org.chromium.chrome.browser.autofill_assistant.proto.SupportedScriptProto.PresentationProto;
-import org.chromium.chrome.browser.customtabs.CustomTabActivityTestRule;
-import org.chromium.chrome.browser.customtabs.CustomTabsTestUtils;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.FlakyTest;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ActionProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.BitmapDrawableProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ChipProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ClientDimensionProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ClientSettingsProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ConfigureUiStateProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ConfigureUiStateProto.OverlayBehavior;
+import org.monyhar.chrome.browser.autofill_assistant.proto.DrawableProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ElementAreaProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ElementAreaProto.Rectangle;
+import org.monyhar.chrome.browser.autofill_assistant.proto.OverlayImageProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.PromptProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.PromptProto.Choice;
+import org.monyhar.chrome.browser.autofill_assistant.proto.SelectorProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.ShowCastProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.SupportedScriptProto;
+import org.monyhar.chrome.browser.autofill_assistant.proto.SupportedScriptProto.PresentationProto;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivityTestRule;
+import org.monyhar.chrome.browser.customtabs.CustomTabsTestUtils;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.content_public.browser.WebContents;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -378,7 +378,7 @@ public class AutofillAssistantOverlayIntegrationTest {
                                          .setMessage("Overlay present")
                                          .addChoices(Choice.newBuilder().setChip(
                                                  ChipProto.newBuilder()
-                                                         .setType(org.chromium.chrome.browser
+                                                         .setType(org.monyhar.chrome.browser
                                                                           .autofill_assistant.proto
                                                                           .ChipType.DONE_ACTION)
                                                          .setText("Hide"))))
@@ -393,7 +393,7 @@ public class AutofillAssistantOverlayIntegrationTest {
                                          .setMessage("Overlay hidden")
                                          .addChoices(Choice.newBuilder().setChip(
                                                  ChipProto.newBuilder()
-                                                         .setType(org.chromium.chrome.browser
+                                                         .setType(org.monyhar.chrome.browser
                                                                           .autofill_assistant.proto
                                                                           .ChipType.DONE_ACTION)
                                                          .setText("Default"))))

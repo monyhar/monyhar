@@ -85,7 +85,7 @@ BASE_EXPORT bool SetClsidForPropertyStore(IPropertyStore* property_store,
                                           const CLSID& property_clsid_value);
 
 // Sets the application id in given IPropertyStore. The function is intended
-// for tagging application/chromium shortcut, browser window and jump list for
+// for tagging application/monyhar shortcut, browser window and jump list for
 // Win7.
 BASE_EXPORT bool SetAppIdForPropertyStore(IPropertyStore* property_store,
                                           const wchar_t* app_id);

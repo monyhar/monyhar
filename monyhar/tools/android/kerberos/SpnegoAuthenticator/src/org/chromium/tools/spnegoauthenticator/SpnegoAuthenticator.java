@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.tools.spnegoauthenticator;
+package org.monyhar.tools.spnegoauthenticator;
 
 import android.accounts.AbstractAccountAuthenticator;
 import android.accounts.Account;
@@ -16,8 +16,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
-import org.chromium.base.Log;
-import org.chromium.net.HttpNegotiateConstants;
+import org.monyhar.base.Log;
+import org.monyhar.net.HttpNegotiateConstants;
 
 import java.util.Arrays;
 

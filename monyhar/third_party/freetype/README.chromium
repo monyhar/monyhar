@@ -16,9 +16,9 @@ font format support for OpenType Variations on older OS versions.
 
 How to update:
 1. Find the desired commit in
-   https://chromium.googlesource.com/chromium/src/third_party/freetype2/ .
+   https://monyhar.googlesource.com/monyhar/src/third_party/freetype2/ .
    If such a commit does not yet exist, branch from the appropriate point with
-   a branch name like "chromium/android/VER-X-X-X-updates" depending on the
+   a branch name like "monyhar/android/VER-X-X-X-updates" depending on the
    FreeType tag being branched and commit changes there.
 2. Update BUILD.gn to reflect any changes.
 3. Merge the new src/include/freetype/config/ftoption.h into

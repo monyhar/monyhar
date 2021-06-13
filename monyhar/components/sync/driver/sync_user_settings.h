@@ -16,7 +16,7 @@
 
 namespace syncer {
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser
 // These values are persisted to logs. Entries should not be renumbered and
 // numeric values should never be reused.
 enum class SyncFirstSetupCompleteSource {

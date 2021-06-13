@@ -37,7 +37,7 @@ if (is_android) {
     executable = "run_benchmark"
     wrapper_script = "$root_build_dir/bin/run_benchmark"
     executable_args = [
-      "--chromium-output-directory",
+      "--monyhar-output-directory",
       "@WrappedPath(.)",
     ]
   }

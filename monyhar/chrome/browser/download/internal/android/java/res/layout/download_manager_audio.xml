@@ -12,7 +12,7 @@
     android:layout_height="114dp"
     android:background="@drawable/hairline_border_card_background">
 
-    <org.chromium.components.browser_ui.widget.async_image.AsyncImageView
+    <org.monyhar.components.browser_ui.widget.async_image.AsyncImageView
         android:id="@+id/thumbnail"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -62,7 +62,7 @@
         android:textAppearance="@style/TextAppearance.TextSmall.Secondary"
         android:textAlignment="viewStart" />
 
-    <org.chromium.ui.widget.ChromeImageView
+    <org.monyhar.ui.widget.ChromeImageView
         android:id="@+id/media_button"
         style="@style/InlineOfflineIconStyle"
         android:layout_alignBottom="@id/timestamp"
@@ -88,7 +88,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_gravity="fill">
-        <org.chromium.chrome.browser.download.home.view.SelectionView
+        <org.monyhar.chrome.browser.download.home.view.SelectionView
             android:id="@+id/selection"
             android:layout_width="24dp"
             android:layout_height="24dp"

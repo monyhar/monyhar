@@ -82,7 +82,7 @@ ram (aka Working Set) a processes uses. However, they do NOT release swap
 meaning they will not help prevent OOM scenarios.
 
 Designing a freelist structure that conflates this behavior (see this
-[PartitionAlloc bug](https://bugs.chromium.org/p/chromium/issues/detail?id=726077))
+[PartitionAlloc bug](https://bugs.monyhar.org/p/monyhar/issues/detail?id=726077))
 will result in a system that only truly reduces resource usage on Unix-like
 systems.
 

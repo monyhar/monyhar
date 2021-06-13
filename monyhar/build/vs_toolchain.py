@@ -21,7 +21,7 @@ from gn_helpers import ToGNString
 
 # VS 2019 16.61 with 10.0.19041 SDK, and 10.0.17134 version of
 # d3dcompiler_47.dll, with ARM64 libraries and UWP support.
-# See go/chromium-msvc-toolchain for instructions about how to update the
+# See go/monyhar-msvc-toolchain for instructions about how to update the
 # toolchain.
 #
 # When updating the toolchain, consider the following areas impacted by the

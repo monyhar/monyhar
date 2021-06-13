@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.widget;
+package org.monyhar.ui.widget;
 
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
@@ -19,8 +19,8 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import org.chromium.base.SysUtils;
-import org.chromium.ui.R;
+import org.monyhar.base.SysUtils;
+import org.monyhar.ui.R;
 
 /**
  * Toast wrapper, makes sure toasts are not HW accelerated on low-end devices and presented

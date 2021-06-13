@@ -5,7 +5,7 @@
       "isolated-cache-storage"
     ],
     "services": [
-      "chromium.cast.ApplicationConfigManager",
+      "monyhar.cast.ApplicationConfigManager",
       "fuchsia.accessibility.semantics.SemanticsManager",
       "fuchsia.camera3.DeviceWatcher",
       "fuchsia.device.NameProvider",

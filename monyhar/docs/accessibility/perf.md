@@ -3,17 +3,17 @@
 Accessibility support can have a negative impact on performance, so it is
 important to test for regressions and to improve performance over time. This can
 be done with Chromium's performance testing framework,
-[Telemetry](https://chromium.googlesource.com/catapult/+/HEAD/telemetry/README.md).
+[Telemetry](https://monyhar.googlesource.com/catapult/+/HEAD/telemetry/README.md).
 
 The metrics for accessibility are defined in
-[third_party/catapult/tracing/tracing/metrics/accessibility_metric.html](https://cs.chromium.org/chromium/src/third_party/catapult/tracing/tracing/metrics/accessibility_metric.html).
+[third_party/catapult/tracing/tracing/metrics/accessibility_metric.html](https://cs.monyhar.org/monyhar/src/third_party/catapult/tracing/tracing/metrics/accessibility_metric.html).
 
 ## Stories
 
 A story is a url to load and actions to take on that page.
 
 Accessibility stories are defined in
-[tools/perf/page_sets/system_health/accessibility_stories.py](https://cs.chromium.org/chromium/src/tools/perf/page_sets/system_health/accessibility_stories.py).
+[tools/perf/page_sets/system_health/accessibility_stories.py](https://cs.monyhar.org/monyhar/src/tools/perf/page_sets/system_health/accessibility_stories.py).
 If a particular web page seems slow, you may add a new story here to track its
 performance.
 
@@ -54,15 +54,15 @@ tools/perf/record_wpr desktop_system_health_story_set \
 ```
 
 Running this will upload the web page replay data captured and modify
-[tools/perf/page_sets/data/system_health_desktop.json](https://cs.chromium.org/chromium/src/tools/perf/page_sets/data/system_health_desktop.json),
+[tools/perf/page_sets/data/system_health_desktop.json](https://cs.monyhar.org/monyhar/src/tools/perf/page_sets/data/system_health_desktop.json),
 which should be submitted as part of your changelist. For more information, see
-[Record a page set](https://sites.google.com/a/chromium.org/dev/developers/telemetry/record_a_page_set).
+[Record a page set](https://sites.google.com/a/monyhar.org/dev/developers/telemetry/record_a_page_set).
 
 ## Blink Perf
 
 Blink perf tests are microbenchmarks that track the performance of a small
 function or operation in isolation. You can find these tests in
-[third_party/blink/perf_tests/accessibility/](https://cs.chromium.org/chromium/src/third_party/blink/perf_tests/accessibility/).
+[third_party/blink/perf_tests/accessibility/](https://cs.monyhar.org/monyhar/src/third_party/blink/perf_tests/accessibility/).
 
 To run these tests locally on your own compiled Chrome:
 

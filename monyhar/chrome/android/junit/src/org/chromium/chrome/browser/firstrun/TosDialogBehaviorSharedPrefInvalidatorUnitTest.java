@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.firstrun;
+package org.monyhar.chrome.browser.firstrun;
 
 import static org.mockito.ArgumentMatchers.any;
 
@@ -20,11 +20,11 @@ import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.Callback;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.policy.PolicyServiceFactory;
-import org.chromium.components.policy.PolicyService;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.policy.PolicyServiceFactory;
+import org.monyhar.components.policy.PolicyService;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /** Unit test for {@link TosDialogBehaviorSharedPrefInvalidator}. */
 @RunWith(BaseRobolectricTestRunner.class)

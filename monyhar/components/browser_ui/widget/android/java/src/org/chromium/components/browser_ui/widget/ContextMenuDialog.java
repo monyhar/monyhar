@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget;
+package org.monyhar.components.browser_ui.widget;
 
 import android.app.Activity;
 import android.graphics.Color;
@@ -21,10 +21,10 @@ import android.widget.FrameLayout;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.components.browser_ui.widget.animation.Interpolators;
-import org.chromium.ui.widget.AnchoredPopupWindow;
-import org.chromium.ui.widget.RectProvider;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.components.browser_ui.widget.animation.Interpolators;
+import org.monyhar.ui.widget.AnchoredPopupWindow;
+import org.monyhar.ui.widget.RectProvider;
 
 /**
  * ContextMenuDialog is a subclass of AlwaysDismissedDialog that ensures that the proper scale

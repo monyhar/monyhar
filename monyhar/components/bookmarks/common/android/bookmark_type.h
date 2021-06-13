@@ -10,7 +10,7 @@ namespace bookmarks {
 // A Java counterpart will be generated for this enum.
 // New enum values should only be added to the end of the enum and no values
 // should be modified or reused, as this is reported via UMA.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.bookmarks
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.bookmarks
 enum BookmarkType {
   BOOKMARK_TYPE_NORMAL,
   BOOKMARK_TYPE_PARTNER,

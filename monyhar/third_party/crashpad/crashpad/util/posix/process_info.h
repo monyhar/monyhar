@@ -173,7 +173,7 @@ class ProcessInfo {
   // const methods. These are always InitializationState-protected so that
   // multiple successive calls will always produce the same return value and out
   // parameters. This is necessary for intergration with the Snapshot interface.
-  // See https://crashpad.chromium.org/bug/9.
+  // See https://crashpad.monyhar.org/bug/9.
   PtraceConnection* connection_;
   std::set<gid_t> supplementary_groups_;
   mutable timeval start_time_;

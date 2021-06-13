@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.attribution_reporting;
+package org.monyhar.chrome.browser.attribution_reporting;
 
 import android.os.Build;
 import android.view.KeyEvent;
@@ -14,10 +14,10 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.test.util.Manual;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.ui.test.util.DummyUiActivityTestCase;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.test.util.Manual;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.ui.test.util.DummyUiActivityTestCase;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicReference;

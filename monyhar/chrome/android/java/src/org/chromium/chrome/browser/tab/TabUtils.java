@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab;
+package org.monyhar.chrome.browser.tab;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,13 +13,13 @@ import android.view.Display;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ApplicationStatus;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.DeviceFormFactor;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.display.DisplayAndroidManager;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.DeviceFormFactor;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.display.DisplayAndroidManager;
 
 /**
  * Collection of utility methods that operates on Tab.

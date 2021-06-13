@@ -23,7 +23,7 @@ namespace arc {
 namespace {
 
 constexpr char kUserSessionActiveBroadcastAction[] =
-    "org.chromium.arc.intent_helper.USER_SESSION_ACTIVE";
+    "org.monyhar.arc.intent_helper.USER_SESSION_ACTIVE";
 
 // Returns the number of |broadcasts| having the USER_SESSION_ACTIVE action.
 int CountBroadcasts(

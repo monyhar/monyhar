@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.suggestions;
+package org.monyhar.chrome.browser.suggestions;
 
 import android.app.Activity;
 
-import org.chromium.chrome.browser.native_page.NativePageNavigationDelegateImpl;
-import org.chromium.chrome.browser.ntp.NewTabPageUma;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.ui.native_page.NativePageHost;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.ui.base.PageTransition;
-import org.chromium.ui.mojom.WindowOpenDisposition;
+import org.monyhar.chrome.browser.native_page.NativePageNavigationDelegateImpl;
+import org.monyhar.chrome.browser.ntp.NewTabPageUma;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.ui.native_page.NativePageHost;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.ui.base.PageTransition;
+import org.monyhar.ui.mojom.WindowOpenDisposition;
 
 /**
  * Extension of {@link NativePageNavigationDelegate} with suggestions-specific methods.

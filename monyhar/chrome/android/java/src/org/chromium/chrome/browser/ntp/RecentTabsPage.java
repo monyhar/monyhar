@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ntp;
+package org.monyhar.chrome.browser.ntp;
 
 import android.app.Activity;
 import android.content.res.Resources;
@@ -15,14 +15,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsStateProvider;
-import org.chromium.chrome.browser.compositor.layouts.content.InvalidationAwareThumbnailProvider;
-import org.chromium.chrome.browser.ui.native_page.NativePage;
-import org.chromium.chrome.browser.ui.native_page.NativePageHost;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.ui.base.DeviceFormFactor;
-import org.chromium.ui.base.ViewUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsStateProvider;
+import org.monyhar.chrome.browser.compositor.layouts.content.InvalidationAwareThumbnailProvider;
+import org.monyhar.chrome.browser.ui.native_page.NativePage;
+import org.monyhar.chrome.browser.ui.native_page.NativePageHost;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.ui.base.DeviceFormFactor;
+import org.monyhar.ui.base.ViewUtils;
 
 /**
  * The native recent tabs page. Lists recently closed tabs, open windows and tabs from the user's

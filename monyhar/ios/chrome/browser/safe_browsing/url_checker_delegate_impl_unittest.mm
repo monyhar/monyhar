@@ -79,7 +79,7 @@ class UrlCheckerDelegateImplTest : public PlatformTest {
   UnsafeResource CreateUnsafeResource(
       UnsafeResourceCallbackState* callback_state) {
     UnsafeResource resource;
-    resource.url = GURL("http://www.chromium.test");
+    resource.url = GURL("http://www.monyhar.test");
     resource.callback_thread = task_environment_.GetMainThreadTaskRunner();
     resource.callback =
         base::BindRepeating(&PopulateCallbackState, callback_state);

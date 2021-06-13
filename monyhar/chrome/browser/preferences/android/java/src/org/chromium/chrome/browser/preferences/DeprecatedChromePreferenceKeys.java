@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.preferences;
+package org.monyhar.chrome.browser.preferences;
 
-import org.chromium.base.annotations.CheckDiscard;
+import org.monyhar.base.annotations.CheckDiscard;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -57,7 +57,7 @@ public class DeprecatedChromePreferenceKeys {
                 "chrome_home_survey_info_bar_displayed",
                 "chrome_home_user_enabled",
                 "chrome_modern_design_enabled",
-                "chromium.invalidations.uuid",
+                "monyhar.invalidations.uuid",
                 "click_to_call_open_dialer_directly",
                 "crash_dump_upload",
                 "crash_dump_upload_no_cellular",

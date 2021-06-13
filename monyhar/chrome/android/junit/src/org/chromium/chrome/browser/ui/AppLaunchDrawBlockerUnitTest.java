@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui;
+package org.monyhar.chrome.browser.ui;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -13,8 +13,8 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import static org.chromium.chrome.browser.ui.AppLaunchDrawBlocker.APP_LAUNCH_BLOCK_DRAW_ACCURACY_UMA;
-import static org.chromium.chrome.browser.ui.AppLaunchDrawBlocker.APP_LAUNCH_BLOCK_DRAW_DURATION_UMA;
+import static org.monyhar.chrome.browser.ui.AppLaunchDrawBlocker.APP_LAUNCH_BLOCK_DRAW_ACCURACY_UMA;
+import static org.monyhar.chrome.browser.ui.AppLaunchDrawBlocker.APP_LAUNCH_BLOCK_DRAW_DURATION_UMA;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -40,27 +40,27 @@ import org.robolectric.annotation.LooperMode;
 import org.robolectric.annotation.LooperMode.Mode;
 import org.robolectric.shadows.ShadowSystemClock;
 
-import org.chromium.base.metrics.test.ShadowRecordHistogram;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.lifecycle.InflationObserver;
-import org.chromium.chrome.browser.lifecycle.LifecycleObserver;
-import org.chromium.chrome.browser.lifecycle.StartStopWithNativeObserver;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.search_engines.TemplateUrlServiceFactory;
-import org.chromium.chrome.browser.search_engines.TemplateUrlServiceFactoryJni;
-import org.chromium.chrome.browser.tabmodel.TabPersistentStore.ActiveTabState;
-import org.chromium.chrome.browser.tasks.ReturnToChromeExperimentsUtil;
-import org.chromium.chrome.browser.ui.AppLaunchDrawBlocker.BlockDrawForInitialTabAccuracy;
-import org.chromium.chrome.features.start_surface.StartSurfaceConfiguration;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.chrome.test.util.browser.Features.EnableFeatures;
+import org.monyhar.base.metrics.test.ShadowRecordHistogram;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.lifecycle.InflationObserver;
+import org.monyhar.chrome.browser.lifecycle.LifecycleObserver;
+import org.monyhar.chrome.browser.lifecycle.StartStopWithNativeObserver;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.search_engines.TemplateUrlServiceFactory;
+import org.monyhar.chrome.browser.search_engines.TemplateUrlServiceFactoryJni;
+import org.monyhar.chrome.browser.tabmodel.TabPersistentStore.ActiveTabState;
+import org.monyhar.chrome.browser.tasks.ReturnToChromeExperimentsUtil;
+import org.monyhar.chrome.browser.ui.AppLaunchDrawBlocker.BlockDrawForInitialTabAccuracy;
+import org.monyhar.chrome.features.start_surface.StartSurfaceConfiguration;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.chrome.test.util.browser.Features.EnableFeatures;
 
 import java.util.List;
 

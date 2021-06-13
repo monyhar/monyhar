@@ -22,7 +22,7 @@
 #include "chrome/browser/ui/views/chrome_layout_provider.h"
 #include "chrome/common/pref_names.h"
 #include "chrome/common/url_constants.h"
-#include "chrome/grit/chromium_strings.h"
+#include "chrome/grit/monyhar_strings.h"
 #include "chrome/grit/generated_resources.h"
 #include "components/prefs/pref_service.h"
 #include "ui/base/l10n/l10n_util.h"
@@ -102,7 +102,7 @@ task_manager::TaskManagerTableModel* TaskManagerView::Show(Browser* browser) {
 #if BUILDFLAG(IS_CHROMEOS_ASH)
   aura::Window* window = g_task_manager_view->GetWidget()->GetNativeWindow();
   // An app id for task manager windows, also used to identify the shelf item.
-  // Generated as crx_file::id_util::GenerateId("org.chromium.taskmanager")
+  // Generated as crx_file::id_util::GenerateId("org.monyhar.taskmanager")
   static constexpr char kTaskManagerId[] = "ijaigheoohcacdnplfbdimmcfldnnhdi";
   const ash::ShelfID shelf_id(kTaskManagerId);
   window->SetProperty(ash::kShelfIDKey, shelf_id.Serialize());

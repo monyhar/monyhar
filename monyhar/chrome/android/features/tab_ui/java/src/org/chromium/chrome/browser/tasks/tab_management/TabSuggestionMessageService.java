@@ -2,26 +2,26 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
-import static org.chromium.chrome.browser.tasks.tab_management.suggestions.TabSuggestionFeedback.TabSuggestionResponse.ACCEPTED;
-import static org.chromium.chrome.browser.tasks.tab_management.suggestions.TabSuggestionFeedback.TabSuggestionResponse.DISMISSED;
-import static org.chromium.chrome.browser.tasks.tab_management.suggestions.TabSuggestionFeedback.TabSuggestionResponse.NOT_CONSIDERED;
+import static org.monyhar.chrome.browser.tasks.tab_management.suggestions.TabSuggestionFeedback.TabSuggestionResponse.ACCEPTED;
+import static org.monyhar.chrome.browser.tasks.tab_management.suggestions.TabSuggestionFeedback.TabSuggestionResponse.DISMISSED;
+import static org.monyhar.chrome.browser.tasks.tab_management.suggestions.TabSuggestionFeedback.TabSuggestionResponse.NOT_CONSIDERED;
 
 import android.content.Context;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.TabModelFilter;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tasks.tab_management.suggestions.TabContext;
-import org.chromium.chrome.browser.tasks.tab_management.suggestions.TabSuggestion;
-import org.chromium.chrome.browser.tasks.tab_management.suggestions.TabSuggestionFeedback;
-import org.chromium.chrome.browser.tasks.tab_management.suggestions.TabSuggestionsObserver;
-import org.chromium.chrome.tab_ui.R;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.TabModelFilter;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tasks.tab_management.suggestions.TabContext;
+import org.monyhar.chrome.browser.tasks.tab_management.suggestions.TabSuggestion;
+import org.monyhar.chrome.browser.tasks.tab_management.suggestions.TabSuggestionFeedback;
+import org.monyhar.chrome.browser.tasks.tab_management.suggestions.TabSuggestionsObserver;
+import org.monyhar.chrome.tab_ui.R;
 
 import java.util.ArrayList;
 import java.util.HashSet;

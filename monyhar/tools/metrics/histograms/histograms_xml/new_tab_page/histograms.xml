@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of NewTabPage histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -23,8 +23,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ActionAndroid2" enum="NewTabPageActionAndroid2"
     expires_after="2021-11-07">
-  <owner>twellington@chromium.org</owner>
-  <owner>finkm@chromium.org</owner>
+  <owner>twellington@monyhar.org</owner>
+  <owner>finkm@monyhar.org</owner>
   <summary>
     Actions taken from the new tab page on Android. These actions may navigate
     away from the NTP (e.g. searching in the omnibox or opening a bookmark), but
@@ -35,8 +35,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ActioniOS" enum="NewTabPageActioniOS"
     expires_after="2021-10-10">
-  <owner>justincohen@chromium.org</owner>
-  <owner>gambard@chromium.org</owner>
+  <owner>justincohen@monyhar.org</owner>
+  <owner>gambard@monyhar.org</owner>
   <summary>
     Actions taken by users from the new tab page on iOS. These actions may
     navigate away from the NTP (e.g. searching in the omnibox or opening a
@@ -56,8 +56,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.BackgroundService.Collections.RequestLatency"
     units="ms" expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     The time it took until a request from the New Tab Page for Backdrop
@@ -67,8 +67,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.BackgroundService.Images.RequestLatency" units="ms"
     expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     The time it took until a request from the New Tab Page for Backdrop Images
@@ -81,7 +81,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Never recorded. Marked obsolete 01/2021.
   </obsolete>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <summary>
     The time it took until a request from the New Tab Page for the next Backdrop
     Image in a collection was served. The duration is measured from time the
@@ -91,8 +91,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.Carts.CartCount" units="count"
     expires_after="2021-12-05">
-  <owner>wychen@chromium.org</owner>
-  <owner>yuezhanggg@chromium.org</owner>
+  <owner>wychen@monyhar.org</owner>
+  <owner>yuezhanggg@monyhar.org</owner>
   <owner>chrome-shopping@google.com</owner>
   <summary>
     Logged when the cart module is created. The value is equal to the initial
@@ -102,8 +102,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.Carts.ClickCart" units="index"
     expires_after="2021-08-01">
-  <owner>wychen@chromium.org</owner>
-  <owner>yuezhanggg@chromium.org</owner>
+  <owner>wychen@monyhar.org</owner>
+  <owner>yuezhanggg@monyhar.org</owner>
   <owner>chrome-shopping@google.com</owner>
   <summary>
     Logged when a user clicks on a cart in the cart module. The value is equal
@@ -112,8 +112,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="NewTabPage.Click" enum="NTPElement" expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Logged when the NTP was clicked. Only logged on the 1P NTP. Be aware that
@@ -125,8 +125,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.ArticlesListVisible"
     enum="BooleanVisible" expires_after="2021-11-07">
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: Whether article suggestions on New Tab Page are set visible by user
     on startup and when the visibility is changed.
@@ -135,16 +135,16 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.ArtificialDelay" enum="Boolean"
     expires_after="M90">
-  <owner>skym@chromium.org</owner>
-  <owner>carlosk@chromium.org</owner>
+  <owner>skym@monyhar.org</owner>
+  <owner>carlosk@monyhar.org</owner>
   <summary>Android: Loading of Zine was artifically delayed</summary>
 </histogram>
 
 <histogram name="NewTabPage.ContentSuggestions.BackgroundFetchTrigger"
     enum="BackgroundFetchTrigger" expires_after="2021-10-25">
-  <owner>carlosk@chromium.org</owner>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>carlosk@monyhar.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The type of trigger that caused a background fetch of NTP content
     suggestions from a suggestion server. Every background fetch is recorded.
@@ -153,9 +153,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.CategoryDismissed"
     enum="ContentSuggestionsCategory" expires_after="M90">
-  <owner>carlosk@chromium.org</owner>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>carlosk@monyhar.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: A category of content suggestions that was dismissed (by swiping
     away its empty state card).
@@ -164,9 +164,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.CountOnNtpOpenedIfVisible"
     units="units" expires_after="2021-06-20">
-  <owner>carlosk@chromium.org</owner>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>carlosk@monyhar.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The number of suggestion cards that were available at the time an
     NTP was opened. Only visible categories (i.e. which can be seen by the user
@@ -177,9 +177,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="NewTabPage.ContentSuggestions.CountOnNtpOpenedIfVisible.Articles.Prefetched.Offline2"
     units="suggestions" expires_after="M90">
-  <owner>carlosk@chromium.org</owner>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>carlosk@monyhar.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The number of prefetched suggestion cards that were available in
     Articles category if it was visible at the time an NTP was opened and the
@@ -191,9 +191,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.DismissedUnvisited"
     units="index" expires_after="2021-11-21">
-  <owner>carlosk@chromium.org</owner>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>carlosk@monyhar.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The position of a suggestion card on the NTP that is dismissed,
     typically by swiping it away. The suggestion had a URL that was NOT visited
@@ -206,9 +206,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.DismissedVisited" units="index"
     expires_after="2021-07-18">
-  <owner>carlosk@chromium.org</owner>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>carlosk@monyhar.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The position of a suggestion card on the NTP that is dismissed,
     typically by swiping it away. The suggestion had a URL that was visited
@@ -221,8 +221,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.MenuOpened" units="index"
     expires_after="2021-11-14">
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The position of a suggestion card whose long-press menu was opened,
     analogous to NewTabPage.ContentSuggestions.Opened.
@@ -231,9 +231,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.MenuOpenedAge" units="ms"
     expires_after="M90">
-  <owner>carlosk@chromium.org</owner>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>carlosk@monyhar.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The age of a suggestion card on the NTP whose long-press menu was
     opened, analogous to NewTabPage.ContentSuggestions.OpenedAge.
@@ -242,7 +242,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.MenuOpenedScoreNormalized"
     enum="NormalizedScore" expires_after="M85">
-  <owner>tschumann@chromium.org</owner>
+  <owner>tschumann@monyhar.org</owner>
   <summary>
     Android: The relevance score of a suggestion card on the NTP whose
     long-press menu was opened, analogous to
@@ -256,8 +256,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.MoreButtonClicked" units="index"
     expires_after="2021-11-07">
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The position of a &quot;More&quot; suggestion card that was clicked
     on the NTP. A card is considered shown when at least 2/3 of its height is
@@ -271,8 +271,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.MoreButtonShown" units="index"
     expires_after="2021-07-01">
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The position of a &quot;More&quot; suggestion card that was shown
     on the NTP. A card is considered shown when at least 2/3 of its height is
@@ -286,7 +286,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.MovedUpCategoryNewIndex"
     units="index" expires_after="M85">
-  <owner>vitaliii@chromium.org</owner>
+  <owner>vitaliii@monyhar.org</owner>
   <summary>
     Android: The new index of a category on the NTP after it has been moved up
     due to a click. The index of a category, which has been overtaken, is not
@@ -299,7 +299,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.Notifications.Actions"
     enum="ContentSuggestionsNotificationsAction" expires_after="M85">
-  <owner>zea@chromium.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>
     Android: The number of actions taken on displayed notifications, either
     user-initiated (tapping to open or swiping to dismiss), or automatic (hiding
@@ -309,7 +309,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.Notifications.AutoOptOuts"
     enum="ContentSuggestionsNotificationsOptOut" expires_after="M85">
-  <owner>zea@chromium.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>
     Android: The number of times a user opted out, keyed by method: IMPLICIT
     (user ignored enough notifications consecutively that we think they're not
@@ -319,7 +319,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.Notifications.Impressions"
     enum="ContentSuggestionsNotificationsImpression" expires_after="M85">
-  <owner>zea@chromium.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>
     Android: The number of notifications that were shown, keyed by category. One
     bucket counts the server-provided ARTICLES category; the other counts
@@ -329,9 +329,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.OpenDisposition"
     enum="WindowOpenDisposition" expires_after="M90">
-  <owner>carlosk@chromium.org</owner>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>carlosk@monyhar.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: How an article linked from a suggestion card on the NTP was opened
     (e.g. plain click, open in new tab, open in incognito).
@@ -344,8 +344,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
      metric as long as we have a feed, and it will be removed with the
      feed code if the feed is ever removed. -->
 
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The position of the For-You card on the NTP, that is clicked
     through to the host website of the content. We track the position the card
@@ -359,9 +359,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="NewTabPage.ContentSuggestions.Opened.Articles.Prefetched.Offline"
     units="index" expires_after="M90">
-  <owner>carlosk@chromium.org</owner>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>carlosk@monyhar.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The position of the prefetched suggestion card on the NTP, that is
     clicked through to the host website of the content, when the user is
@@ -375,9 +375,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.OpenedAge" units="ms"
     expires_after="2021-10-25">
-  <owner>carlosk@chromium.org</owner>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>carlosk@monyhar.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The age of a suggestion card on the NTP that is clicked through to
     the host website of the content. The age is measured from the moment the
@@ -387,7 +387,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.OpenedCategoryIndex"
     units="index" expires_after="M77">
-  <owner>vitaliii@chromium.org</owner>
+  <owner>vitaliii@monyhar.org</owner>
   <summary>
     Android: The index of a category on the NTP, whose suggestion card is
     clicked through to the host website of the content. This tracked index can
@@ -399,7 +399,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.OpenedScoreNormalized"
     enum="NormalizedScore" expires_after="M85">
-  <owner>tschumann@chromium.org</owner>
+  <owner>tschumann@monyhar.org</owner>
   <summary>
     Android: The score of a suggestion card on the NTP that is clicked through
     to the host website of the content. The recorded score is from the moment
@@ -413,9 +413,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.Preferences.RemoteSuggestions"
     enum="BooleanEnabled" expires_after="2021-10-25">
-  <owner>carlosk@chromium.org</owner>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>carlosk@monyhar.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Whether content suggestions from the remote service are enabled. It is
     recored at startup. Note: This histogram is not specific to the New Tab
@@ -425,7 +425,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.SectionCountOnNtpOpened"
     units="sections" expires_after="M77">
-  <owner>vitaliii@chromium.org</owner>
+  <owner>vitaliii@monyhar.org</owner>
   <summary>
     Android: The number of suggestion sections that were shown at the time an
     NTP was opened. All shown sections (including empty ones) are counted.
@@ -438,8 +438,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
        metric as long as we have a feed, and it will be removed with
        the feed code if the feed is ever removed. -->
 
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The position of a For-You card that was shown on the NTP. A card is
     considered shown when at least 2/3 of its height is visible on the screen.
@@ -454,9 +454,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="NewTabPage.ContentSuggestions.Shown.Articles.Prefetched.Offline2"
     units="index" expires_after="M90">
-  <owner>carlosk@chromium.org</owner>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>carlosk@monyhar.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The position of a prefetched suggestion card that was shown on the
     NTP when offline. Analogous to NewTabPage.ContentSuggestions.Shown. That is
@@ -473,8 +473,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.ShownAge" units="ms"
     expires_after="2021-11-07">
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The age of a suggestion card that was shown on the NTP. A card is
     considered shown when at least 2/3 of its height is visible on the screen.
@@ -484,7 +484,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.ShownScoreNormalized"
     enum="NormalizedScore" expires_after="M85">
-  <owner>tschumann@chromium.org</owner>
+  <owner>tschumann@monyhar.org</owner>
   <summary>
     Android: The score of a suggestion card that was shown on the NTP. A card is
     considered shown when at least 2/3 of its height is visible on the screen.
@@ -498,9 +498,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.TimeSinceSuggestionFetched"
     units="ms" expires_after="2021-10-25">
-  <owner>carlosk@chromium.org</owner>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>carlosk@monyhar.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The time since the displayed content suggestions was fetched.
     Recorded when the user looks at content suggestions on the NTP. The metric
@@ -511,9 +511,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram base="true"
     name="NewTabPage.ContentSuggestions.TimeUntilFirstShownTrigger" units="ms"
     expires_after="2021-10-25">
-  <owner>carlosk@chromium.org</owner>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>carlosk@monyhar.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The time since the last fetch, recorded upon the first on-shown
     fetch trigger. The first on-shown trigger does not necessarily cause a fetch
@@ -528,9 +528,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram base="true"
     name="NewTabPage.ContentSuggestions.TimeUntilFirstStartupTrigger"
     units="ms" expires_after="2021-08-22">
-  <owner>carlosk@chromium.org</owner>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>carlosk@monyhar.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The time since the last fetch, recorded upon the first startup
     fetch trigger. The first startup trigger does not necessarily cause a fetch
@@ -545,9 +545,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram base="true"
     name="NewTabPage.ContentSuggestions.TimeUntilPersistentFetch" units="ms"
     expires_after="M90">
-  <owner>carlosk@chromium.org</owner>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>carlosk@monyhar.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The time since the last fetch, recorded upon a persistent fetch.
     This is used to understand what are the real persistent fetching intervals
@@ -557,9 +557,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="NewTabPage.ContentSuggestions.TimeUntilSoftFetch"
     units="ms" expires_after="M90">
-  <owner>carlosk@chromium.org</owner>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>carlosk@monyhar.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The time since the last fetch, recorded upon a soft fetch. This is
     used to understand what are the real soft fetching intervals in the wild.
@@ -569,9 +569,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram base="true"
     name="NewTabPage.ContentSuggestions.TimeUntilStartupFetch" units="ms"
     expires_after="M90">
-  <owner>carlosk@chromium.org</owner>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>carlosk@monyhar.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The time since the last fetch, recorded upon a startup fetch. This
     is used to understand what are the real soft fetching intervals in the wild.
@@ -580,9 +580,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.UsageTimeLocal" units="units"
     expires_after="2021-10-25">
-  <owner>carlosk@chromium.org</owner>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>carlosk@monyhar.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The time of day (in the local timezone) when the user used content
     suggestions. Recorded for example when the user scrolls to the articles
@@ -592,8 +592,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ContentSuggestions.VisitDuration" units="ms"
     expires_after="2021-07-01">
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: Time spent reading the page linked by an opened suggestion card.
     Exit conditions include the tab not being in the foreground or starting a
@@ -603,7 +603,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.CryptidRenderResult" enum="CryptidRenderResult"
     expires_after="2021-11-21">
-  <owner>tmartino@chromium.org</owner>
+  <owner>tmartino@monyhar.org</owner>
   <owner>chrome-creation@google.com</owner>
   <summary>
     Tracks the outcome of Probabilistic Cryptid Rendering (succeeded, failed, or
@@ -615,8 +615,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: part of top-line metric (internal: go/chrome-browser-nsm) -->
 
-  <owner>dbeam@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>dbeam@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-analysis-team@google.com</owner>
   <summary>
     Customization actions performed by the user on the New Tab Page; logged as
@@ -630,8 +630,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.CustomizeChromeBackgroundAction"
     enum="NTPCustomizeChromeBackgroundAction" expires_after="2021-08-29">
-  <owner>dbeam@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>dbeam@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <summary>
     Captures the actions performed when configuring a 'Chrome background' image
     on the New Tab Page. Since most actions are sequential, this may indicate
@@ -641,8 +641,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.Customized" enum="NTPCustomizedFeatures"
     expires_after="2021-11-14">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     The New Tab Page features that have been customized by the user; logged per
@@ -652,8 +652,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.CustomizedShortcuts"
     enum="NTPCustomizedShortcutSettings" expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     The New Tab Page shortcut settings that can be customized by the user,
@@ -664,8 +664,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.CustomizeLocalImageBackgroundAction"
     enum="NTPCustomizeLocalImageBackgroundAction" expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Captures the actions performed when uploading a local image as the
@@ -676,8 +676,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.CustomizeShortcutAction"
     enum="NTPCustomizeShortcutAction" expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Captures the actions performed when configuring shortcuts on the New Tab
@@ -687,8 +687,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.Drive.FileClick" units="index"
     expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>aee@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>aee@monyhar.org</owner>
   <owner>andrevincent@google.com</owner>
   <summary>
     Logged when a user clicks on a file within the Drive Module. The index is
@@ -698,7 +698,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.Languages.UILanguageRatioInTwoTopLanguages"
     units="%" expires_after="M77">
-  <owner>jkrcal@chromium.org</owner>
+  <owner>jkrcal@monyhar.org</owner>
   <summary>
     Android: Percentage of how much in browsing is the UI language of Chrome
     used compared to overall use of the two top languages that are reported to
@@ -713,8 +713,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   </obsolete>
   <owner>yusuyoutube@google.com</owner>
   <owner>benwgold@google.com</owner>
-  <owner>fgorski@chromium.org</owner>
-  <owner>wylieb@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
+  <owner>wylieb@monyhar.org</owner>
   <owner>lens-chrome@google.com</owner>
   <summary>
     Whether the user supports the camera assisted search with Google Lens and if
@@ -730,8 +730,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   </obsolete>
   <owner>yusuyoutube@google.com</owner>
   <owner>benwgold@google.com</owner>
-  <owner>fgorski@chromium.org</owner>
-  <owner>wylieb@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
+  <owner>wylieb@monyhar.org</owner>
   <owner>lens-chrome@google.com</owner>
   <summary>
     Logged the elapsed time between the time when user enters the Google Lens
@@ -746,8 +746,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   </obsolete>
   <owner>yusuyoutube@google.com</owner>
   <owner>benwgold@google.com</owner>
-  <owner>fgorski@chromium.org</owner>
-  <owner>wylieb@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
+  <owner>wylieb@monyhar.org</owner>
   <owner>lens-chrome@google.com</owner>
   <summary>
     Whether the user supports the camera assisted search with Google Lens and if
@@ -757,8 +757,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="NewTabPage.LoadTime" units="ms" expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Histogram of the time, in milliseconds, it took for the NTP to load all of
@@ -770,8 +770,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: part of top-line metric (internal: go/chrome-browser-nsm) -->
 
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-analysis-team@google.com</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
@@ -784,8 +784,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.LogoDownloadOutcome"
     enum="NewTabPageLogoDownloadOutcome" expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Outcome of downloading search provider's logos. It measures whether
@@ -795,8 +795,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.LogoDownloadTime" units="ms"
     expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     The amount of time it took to download the static logo. This includes
@@ -808,8 +808,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.LogoImageDownloaded" enum="BooleanFromHTTPCache"
     expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     A logo image (static or CTA) was downloaded. Recorded only when the image
@@ -819,8 +819,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.LogoShown" enum="NewTabPageLogoShown"
     expires_after="2021-11-14">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     The number of static logos and animated logos shown to users. Note that the
@@ -831,8 +831,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.LogoShownTime2" units="ms"
     expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     The amount of time between opening an NTP and the logo appearing. Only
@@ -842,7 +842,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.MainUi.ShownTime" units="ms"
     expires_after="2021-11-12">
-  <owner>tiborg@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Records the time until the top-level ntp-app Custom Element's |ready|
@@ -853,8 +853,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.MobileIsUserOnline" enum="Boolean"
     expires_after="M85">
-  <owner>fserb@chromium.org</owner>
-  <owner>zmin@chromium.org</owner>
+  <owner>fserb@monyhar.org</owner>
+  <owner>zmin@monyhar.org</owner>
   <summary>
     Record the network status when a new tab page is opened. True if user is
     online and false for offline.
@@ -863,8 +863,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.Modules.DataRequest" enum="NtpModules"
     expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Records hashes associated with NTP modules. Logged when an NTP module makes
@@ -877,7 +877,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="NewTabPage.Modules.Disabled{Interaction}" enum="NtpModules"
     expires_after="2022-01-01">
   <owner>danielms@google.com</owner>
-  <owner>tiborg@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Logged when a module was disabled by {Interaction}. Only logged on the 1P
@@ -895,8 +895,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.Modules.Dismissed" units="count"
     expires_after="2021-12-05">
-  <owner>mahmadi@chromium.org</owner>
-  <owner>tiborg@chromium.org</owner>
+  <owner>mahmadi@monyhar.org</owner>
+  <owner>tiborg@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Records the dismissed modules. This is recorded when the user explicitly
@@ -909,7 +909,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram base="true" name="NewTabPage.Modules.EnabledOnNTPLoad"
     enum="BooleanEnabled" expires_after="2022-01-01">
   <owner>danielms@google.com</owner>
-  <owner>tiborg@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Logs for each NTP module whether it was enabled after the NTP has
@@ -922,7 +922,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="NewTabPage.Modules.Enabled{Interaction}" enum="NtpModules"
     expires_after="2022-01-01">
   <owner>danielms@google.com</owner>
-  <owner>tiborg@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Logged when a module was enabled by {Interaction}. Only logged on the 1P
@@ -940,7 +940,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="NewTabPage.Modules.Hover" enum="NtpModules"
     expires_after="2022-01-01">
   <owner>danielms@google.com</owner>
-  <owner>tiborg@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Logged when the user hovers on a module. Only logged once per NTP and
@@ -952,8 +952,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.Modules.Impression" units="ms"
     expires_after="2021-11-07">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Histogram of the time, in milliseconds since navigation start, it took until
@@ -967,7 +967,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="NewTabPage.Modules.ImpressionRatio" units="perdecage"
     expires_after="2022-01-01">
   <owner>danielms@google.com</owner>
-  <owner>tiborg@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Records the maximum amount that any (base histogram) or a particular (sub
@@ -987,7 +987,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="NewTabPage.Modules.LoadDuration" units="ms"
     expires_after="2022-01-01">
   <owner>danielms@google.com</owner>
-  <owner>tiborg@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Histogram of the time in milliseconds it took for an NTP module to load.
@@ -996,8 +996,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.Modules.Loaded" units="ms"
     expires_after="2021-11-07">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Histogram of the time, in milliseconds since navigation start, it took until
@@ -1007,8 +1007,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.Modules.Restored" units="count"
     expires_after="2021-12-05">
-  <owner>mahmadi@chromium.org</owner>
-  <owner>tiborg@chromium.org</owner>
+  <owner>mahmadi@monyhar.org</owner>
+  <owner>tiborg@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Records the restord modules. This is recorded when the user explicitly
@@ -1020,8 +1020,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.Modules.ShownTime" units="ms"
     expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Histogram of the time, in milliseconds since navigation start, it took until
@@ -1031,8 +1031,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.Modules.Usage" units="count"
     expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Emitted each time a user action within an NTP module launches a module's
@@ -1043,8 +1043,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.Modules.VisibleOnNTPLoad" enum="BooleanVisible"
     expires_after="2021-10-25">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>Logs whether the NTP modules are visible at NTP load.</summary>
 </histogram>
@@ -1053,10 +1053,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: part of top-line metric (internal: go/chrome-browser-nsm) -->
 
-  <owner>justincohen@chromium.org</owner>
-  <owner>mastiz@chromium.org</owner>
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>justincohen@monyhar.org</owner>
+  <owner>mastiz@monyhar.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-analysis-team@google.com</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
@@ -1079,8 +1079,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.MostVisitedAge" units="seconds"
     expires_after="2021-08-09">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     The age of the data at click time, that is, the elapsed time since the
@@ -1089,7 +1089,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="NewTabPage.MostVisitedTime" units="ms" expires_after="M77">
-  <owner>treib@chromium.org</owner>
+  <owner>treib@monyhar.org</owner>
   <summary>
     The time from the New Tab page being shown until the user to clicked on a
     most visited tile. Only recorded if the user clicked on a tile, as opposed
@@ -1099,8 +1099,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.NumberOfTiles" units="units"
     expires_after="2021-11-14">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     The number of tiles that are on the NTP, no matter if they are thumbnails,
@@ -1116,8 +1116,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.OneGoogleBar.RequestLatency" units="ms"
     expires_after="2021-11-21">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     The time it took until a request from the New Tab page for the OneGoogleBar
@@ -1127,8 +1127,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.OneGoogleBar.ShownTime" units="ms"
     expires_after="2021-11-14">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Histogram of the time, in milliseconds since navigation start, it took until
@@ -1138,7 +1138,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.Promo.EnhancedProtectionPromo"
     enum="AndroidEnhancedProtectionPromoAction" expires_after="2021-11-07">
-  <owner>bdea@chromium.org</owner>
+  <owner>bdea@monyhar.org</owner>
   <owner>chrome-safebrowsing-core@google.com</owner>
   <summary>
     Records events related to the Safe Browsing Enhanced Protection promo card
@@ -1149,7 +1149,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="NewTabPage.Promo.EnhancedProtectionPromo.ImpressionUntilAction"
     units="units" expires_after="2021-11-14">
-  <owner>bdea@chromium.org</owner>
+  <owner>bdea@monyhar.org</owner>
   <owner>chrome-safebrowsing-core@google.com</owner>
   <summary>
     The number of times that the Safe Browsing Enhanced Protection promo was
@@ -1161,7 +1161,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="NewTabPage.Promo.EnhancedProtectionPromo.ImpressionUntilDismissal"
     units="units" expires_after="2021-11-21">
-  <owner>bdea@chromium.org</owner>
+  <owner>bdea@monyhar.org</owner>
   <owner>chrome-safebrowsing-core@google.com</owner>
   <summary>
     The number of times that the Safe Browsing Enhanced Protection promo was
@@ -1175,8 +1175,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in January 2021.
   </obsolete>
-  <owner>wenyufu@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>wenyufu@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     Records events related to the homepage promo card on the new tab page.
     Recorded for Android only.
@@ -1188,8 +1188,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in January 2021.
   </obsolete>
-  <owner>wenyufu@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>wenyufu@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The number of times that the homepage promo was shown to the user before
     they took action. Recorded when the user accepts the homepage promo.
@@ -1202,8 +1202,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in January 2021.
   </obsolete>
-  <owner>wenyufu@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>wenyufu@monyhar.org</owner>
+  <owner>twellington@monyhar.org</owner>
   <summary>
     The number of times that the homepage promo was shown to the user before it
     was manually dismissed. Recorded when the user dismisses the promo. Recorded
@@ -1215,8 +1215,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: part of top-line metric (internal: go/chrome-browser-nsm) -->
 
-  <owner>dbeam@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>dbeam@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-analysis-team@google.com</owner>
   <summary>
     Emitted each time a promo linked is clicked on the local NTP.
@@ -1228,7 +1228,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.Promos.PromoBrowserCommand"
     enum="PromoBrowserCommandEnum" expires_after="2022-01-01">
-  <owner>mahmadi@chromium.org</owner>
+  <owner>mahmadi@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Logs how many times various promo browser commands are executed. Triggered
@@ -1239,8 +1239,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.Promos.RequestLatency2" units="ms"
     expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     The time it took until a request from the New Tab page for the middle slot
@@ -1250,8 +1250,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.Promos.ShownTime" units="ms"
     expires_after="2021-11-14">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Histogram of the time, in milliseconds since navigation start, it took until
@@ -1262,8 +1262,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.Realbox.CharTypedToRepaintLatency.ToPaint"
     units="ms" expires_after="2022-01-01">
-  <owner>mahmadi@chromium.org</owner>
-  <owner>tommycli@chromium.org</owner>
+  <owner>mahmadi@monyhar.org</owner>
+  <owner>tommycli@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Records the time taken between a keystroke being typed in the NTP realbox
@@ -1277,8 +1277,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.RecipeTasks.RecipeClick" units="index"
     expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Logged when a user clicked on a recipe in the recipe tasks module. The value
@@ -1288,8 +1288,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.RecipeTasks.RecipeDownloadCount" units="recipes"
     expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     The number of recipe search links in the primary shopping task (top-ranked,
@@ -1301,8 +1301,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.RecipeTasks.RelatedSearchClick" units="index"
     expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Logged when a user clicked on a related search pill in the recipe tasks
@@ -1312,8 +1312,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.RecipeTasks.RelatedSearchDownloadCount"
     units="count" expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     The number of related search links in the primary recipe task (top-ranked,
@@ -1328,7 +1328,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in 05 2021.
   </obsolete>
-  <owner>mahmadi@chromium.org</owner>
+  <owner>mahmadi@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     The number of normalized search queries extracted from the in-memory URL DB
@@ -1343,7 +1343,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in 05 2021.
   </obsolete>
-  <owner>mahmadi@chromium.org</owner>
+  <owner>mahmadi@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     The length of time it takes to extract normalized search queries from the
@@ -1355,8 +1355,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.RequestThrottler.PerDay" units="requests"
     expires_after="2021-07-01">
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Records how many background requests of the given type the browser tried to
     perform each day where the type is specified by the _suffix of the
@@ -1370,8 +1370,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.RequestThrottler.PerDayInteractive"
     units="requests" expires_after="2021-07-01">
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Records how many interactive requests of the given type the browser tried to
     perform each day where the type is specified by the _suffix of the
@@ -1385,8 +1385,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.RequestThrottler.RequestStatus"
     enum="NtpRequestThrottlerStatus" expires_after="2021-07-01">
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Records the status w.r.t. the quota for all requests of the given type. The
     type of request is specified by the _suffix of the histogram.
@@ -1395,9 +1395,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.SearchAvailableLoadTime2.ColdStart" units="ms"
     expires_after="2021-10-10">
-  <owner>fgorski@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
   <owner>ender@google.com</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <summary>
     The time until the search box became available on the NTP in a cold start.
     It's a cold start if the native library is not already loaded and
@@ -1407,9 +1407,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.SearchAvailableLoadTime2.WarmStart" units="ms"
     expires_after="2021-10-10">
-  <owner>fgorski@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
   <owner>ender@google.com</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <summary>
     The time until the search box became available on the NTP in a warm start.
     It's a warm start if the native library is already loaded and initialized at
@@ -1422,8 +1422,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: part of top-line metric (internal: go/chrome-browser-nsm) -->
 
-  <owner>dbeam@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>dbeam@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-analysis-team@google.com</owner>
   <summary>
     The index of the search suggestion tile that was clicked on the local NTP.
@@ -1435,8 +1435,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.SearchSuggestions.RequestLatencyV2" units="ms"
     expires_after="M82">
-  <owner>dbeam@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>dbeam@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <summary>
     The time it took until a request from the New Tab page for the search
     suggestions script was served. Recorded only on the local NTP.
@@ -1445,8 +1445,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.SearchSuggestions.RequestStatusV2"
     enum="NTPSearchSuggestionsRequestStatus" expires_after="M82">
-  <owner>dbeam@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>dbeam@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <summary>
     Whether a request was made for search suggestions on NTP load; and if a
     request was not made, the reason why.
@@ -1455,8 +1455,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.SearchSuggestions.ShownCount" units="units"
     expires_after="M82">
-  <owner>dbeam@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>dbeam@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <summary>
     The number of search suggestion tiles that were shown on the local NTP.
   </summary>
@@ -1464,8 +1464,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ShoppingTasks.ProductClick" units="index"
     expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Logged when a user clicked on a product in the shopping tasks module. The
@@ -1475,8 +1475,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ShoppingTasks.ProductDownloadCount"
     units="products" expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     The number of product search links in the primary shopping task (top-ranked,
@@ -1488,8 +1488,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ShoppingTasks.RelatedSearchClick" units="index"
     expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Logged when a user clicked on a related search pill in the shopping tasks
@@ -1499,8 +1499,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.ShoppingTasks.RelatedSearchDownloadCount"
     units="count" expires_after="2021-10-17">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     The number of related search links in the primary shopping task (top-ranked,
@@ -1515,8 +1515,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in October 2020.
   </obsolete>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The time it took to load the database of persisted content
     suggestions. Recorded only when the database is loaded successfully.
@@ -1528,8 +1528,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in October 2020.
   </obsolete>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The state of the RemoteSuggestionsProvider. Recorded when the state
     changes, typically once at startup and rarely afterwards, e.g. on database
@@ -1542,8 +1542,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in October 2020.
   </obsolete>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Response or error codes encountered when attempting to fetch snippets.
   </summary>
@@ -1554,8 +1554,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in October 2020.
   </obsolete>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Result of attempting a fetch, logged once per issued trigger.
   </summary>
@@ -1565,8 +1565,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in October 2020.
   </obsolete>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Time spent fetching snippets. Only recorded for fetch attempts that resulted
     in an actual network request.
@@ -1578,8 +1578,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in October 2020.
   </obsolete>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Records the time of the day in minutes when a snippets background fetch was
     initiated. Counts minutes since midnight UTC.
@@ -1591,8 +1591,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in October 2020.
   </obsolete>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Records the time of the day in minutes when a snippets background fetch was
     initiated. Counts minutes since midnight local time.
@@ -1601,7 +1601,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.Snippets.IncompleteSnippetsAfterFetch"
     enum="Boolean" expires_after="M85">
-  <owner>maybelle@chromium.org</owner>
+  <owner>maybelle@monyhar.org</owner>
   <summary>
     Whether we discarded any of the snippets after fetching them due to having
     incomplete metadata.
@@ -1613,8 +1613,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in October 2020.
   </obsolete>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The number of snippet articles available to show on the NTP, logged
     once every time the list is updated.
@@ -1626,8 +1626,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in October 2020.
   </obsolete>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The number of valid snippet articles fetched from the server,
     logged every time a fetch finishes successfully.
@@ -1639,8 +1639,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in October 2020.
   </obsolete>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The number of snippet articles discarded by the user, logged every
     time the list is updated resulting in an empty list (all articles
@@ -1653,8 +1653,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in October 2020.
   </obsolete>
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     The number of snippets that we discard per fetch due to having incomplete
     data.
@@ -1663,8 +1663,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.SuggestionsImpression" enum="MostVisitedTileIndex"
     expires_after="2021-11-21">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Histogram for impressions on the various most visited tiles. The value is
@@ -1674,8 +1674,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.SuggestionsImpressionAge" units="seconds"
     expires_after="2021-08-09">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     The age of the data at impression time, that is, the elapsed time since the
@@ -1690,8 +1690,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   </obsolete>
   <owner>yusuyoutube@google.com</owner>
   <owner>benwgold@google.com</owner>
-  <owner>fgorski@chromium.org</owner>
-  <owner>wylieb@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
+  <owner>wylieb@monyhar.org</owner>
   <owner>lens-chrome@google.com</owner>
   <summary>
     Whether the user supports the camera assisted search with Google Lens and if
@@ -1708,8 +1708,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   </obsolete>
   <owner>yusuyoutube@google.com</owner>
   <owner>benwgold@google.com</owner>
-  <owner>fgorski@chromium.org</owner>
-  <owner>wylieb@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
+  <owner>wylieb@monyhar.org</owner>
   <owner>lens-chrome@google.com</owner>
   <summary>
     Logged the elapsed time between the time when user enters the Google Lens
@@ -1724,8 +1724,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   </obsolete>
   <owner>yusuyoutube@google.com</owner>
   <owner>benwgold@google.com</owner>
-  <owner>fgorski@chromium.org</owner>
-  <owner>wylieb@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
+  <owner>wylieb@monyhar.org</owner>
   <owner>lens-chrome@google.com</owner>
   <summary>
     Whether the user supports the camera assisted search with Google Lens and if
@@ -1738,8 +1738,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="M94">
   <owner>yusuyoutube@google.com</owner>
   <owner>benwgold@google.com</owner>
-  <owner>fgorski@chromium.org</owner>
-  <owner>wylieb@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
+  <owner>wylieb@monyhar.org</owner>
   <owner>lens-chrome@google.com</owner>
   <summary>
     Logs the elapsed time between the time when user enters the Google Lens and
@@ -1750,8 +1750,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.TileFaviconType" enum="FaviconType"
     expires_after="M90">
-  <owner>dbeam@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>dbeam@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <summary>
     The favicon type that was chosen to represent a most visited tile displayed
     on the new tab page, logged at impression time. Note that these values don't
@@ -1762,8 +1762,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.TileFaviconTypeClicked" enum="FaviconType"
     expires_after="M90">
-  <owner>dbeam@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>dbeam@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <summary>
     The favicon type that was chosen to represent a most visited tile displayed
     on the new tab page, logged when a tile is clicked. Note that these values
@@ -1774,7 +1774,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.TileOfflineAvailable" enum="MostVisitedTileIndex"
     expires_after="M77">
-  <owner>treib@chromium.org</owner>
+  <owner>treib@monyhar.org</owner>
   <summary>
     The number of times a tile was available offline, per tile index - compare
     to the NewTabPage.SuggestionsImpression.* histograms. This is recorded when
@@ -1784,8 +1784,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.TileTitle" enum="NTPTileTitleSource"
     expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Records the source of the title for each most visited tiled displayed when
@@ -1796,7 +1796,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="NewTabPage.TileTitleClicked" enum="NTPTileTitleSource"
     expires_after="2022-01-01">
   <owner>danielms@google.com</owner>
-  <owner>tiborg@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Records the source for the name a most visited tile showed when the user
@@ -1806,8 +1806,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.TileType" enum="NTPTileVisualType"
     expires_after="2021-10-25">
-  <owner>dbeam@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>dbeam@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <summary>
     The visual type of each most visited tile displayed on the new tab page,
     e.g. actual thumbnail or placeholder thumbnail. This is recorded for each
@@ -1817,8 +1817,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.TileTypeClicked" enum="NTPTileVisualType"
     expires_after="2021-10-25">
-  <owner>dbeam@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>dbeam@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <summary>
     The visual type of the most visited item that the user clicked on, e.g.
     actual thumbnail or placeholder thumbnail.
@@ -1827,8 +1827,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.TimeSinceLastNTP" units="ms"
     expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Logged when a 1P NTP starts loading. Logs the time since the last time a 1P
@@ -1842,9 +1842,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="NewTabPage.TimeSpent" units="ms" expires_after="2021-11-07">
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
-  <owner>olivierrobin@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
+  <owner>olivierrobin@monyhar.org</owner>
   <summary>
     The time spent on the new tab page as measured from when it was loaded or
     last brought to the foreground until it was navigated away from or hidden.
@@ -1856,8 +1856,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="M94">
   <owner>yusuyoutube@google.com</owner>
   <owner>benwgold@google.com</owner>
-  <owner>fgorski@chromium.org</owner>
-  <owner>wylieb@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
+  <owner>wylieb@monyhar.org</owner>
   <owner>lens-chrome@google.com</owner>
   <summary>
     Logs the elapsed time between the time when user enters the Google Lens and
@@ -1868,8 +1868,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.TimeToFirstDraw2" units="ms"
     expires_after="2021-07-01">
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     The time from when a new tab page is created until the first pre-draw call
     on the root view containing the search provider logo (if available), fake
@@ -1882,8 +1882,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.URLState" enum="NewTabURLState"
     expires_after="2022-01-01">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Records the status of the New Tab page URL when an NTP is opened.
@@ -1892,8 +1892,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.UserClassifier.AverageHoursToOpenNTP" units="hours"
     expires_after="2021-09-05">
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The estimated average number of hours between two successive times
     when a new tab page is opened. Recorded after each opening of a NTP (and
@@ -1903,8 +1903,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.UserClassifier.AverageHoursToShowSuggestions"
     units="hours" expires_after="2021-09-05">
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The estimated average number of hours between two successive times
     when the list of content suggestions on a new tab page is shown (i.e. when
@@ -1915,8 +1915,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.UserClassifier.AverageHoursToUseSuggestions"
     units="hours" expires_after="2021-11-07">
-  <owner>freedjm@chromium.org</owner>
-  <owner>feed@chromium.org</owner>
+  <owner>freedjm@monyhar.org</owner>
+  <owner>feed@monyhar.org</owner>
   <summary>
     Android: The estimated average number of hours between two successive times
     when the user opens a content suggestion or clicks on the &quot;More&quot;
@@ -1927,8 +1927,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="NewTabPage.VoiceActions" enum="NewTabPageVoiceAction"
     expires_after="2021-11-14">
-  <owner>tiborg@chromium.org</owner>
-  <owner>yyushkina@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
+  <owner>yyushkina@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Actions taken by users of Voice Search on the local New Tab Page on Desktop.
@@ -1941,7 +1941,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="NewTabPage.VoiceErrors" enum="NewTabPageVoiceError"
     expires_after="2022-01-01">
   <owner>danielms@google.com</owner>
-  <owner>tiborg@chromium.org</owner>
+  <owner>tiborg@monyhar.org</owner>
   <owner>chrome-desktop-ntp@google.com</owner>
   <summary>
     Errors that occur during Voice Search use on the local New Tab Page on

@@ -216,7 +216,7 @@ bool ContentMainDelegateImpl::BasicStartupComplete(int* exit_code) {
   }
 
   if (GetApplicationMetadataAsBoolean(
-          "org.chromium.weblayer.ENABLE_LOGGING_OF_JS_CONSOLE_MESSAGES",
+          "org.monyhar.weblayer.ENABLE_LOGGING_OF_JS_CONSOLE_MESSAGES",
           /*default_value=*/false)) {
     enabled_features.push_back(features::kLogJsConsoleMessages);
   }

@@ -1,7 +1,7 @@
 monorail {
   component: "Blink>SecurityFeature>SanitizerAPI"
 }
-team_email: "security-dev@chromium.org"
+team_email: "security-dev@monyhar.org"
 wpt {
   notify: YES
 }

@@ -9,7 +9,7 @@
 pushd "$(dirname "$0")" > /dev/null
 
 REWRITE_IMPORTS_SCRIPT='../../../../third_party/material_web_components/rewrite_imports.js'
-MWC_DIR='../../../../third_party/material_web_components/components-chromium/node_modules'
+MWC_DIR='../../../../third_party/material_web_components/components-monyhar/node_modules'
 NODE_DIR='../../../third_party/node/'
 
 $NODE_DIR/node_modules/typescript/bin/tsc

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base;
+package org.monyhar.base;
 
 import android.app.PendingIntent;
 import android.content.ActivityNotFoundException;
@@ -24,7 +24,7 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.core.app.BundleCompat;
 
-import org.chromium.base.compat.ApiHelperForM;
+import org.monyhar.base.compat.ApiHelperForM;
 
 import java.io.Serializable;
 import java.util.ArrayList;

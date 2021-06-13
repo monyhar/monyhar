@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox;
+package org.monyhar.chrome.browser.omnibox;
 
 import android.content.res.Resources;
 import android.support.test.InstrumentationRegistry;
@@ -18,19 +18,19 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.test.UiThreadTest;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.test.ChromeBrowserTestRule;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.components.omnibox.OmniboxUrlEmphasizer;
-import org.chromium.components.omnibox.OmniboxUrlEmphasizer.UrlEmphasisColorSpan;
-import org.chromium.components.omnibox.OmniboxUrlEmphasizer.UrlEmphasisSecurityErrorSpan;
-import org.chromium.components.omnibox.OmniboxUrlEmphasizer.UrlEmphasisSpan;
-import org.chromium.components.security_state.ConnectionSecurityLevel;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.test.UiThreadTest;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.test.ChromeBrowserTestRule;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.components.omnibox.OmniboxUrlEmphasizer;
+import org.monyhar.components.omnibox.OmniboxUrlEmphasizer.UrlEmphasisColorSpan;
+import org.monyhar.components.omnibox.OmniboxUrlEmphasizer.UrlEmphasisSecurityErrorSpan;
+import org.monyhar.components.omnibox.OmniboxUrlEmphasizer.UrlEmphasisSpan;
+import org.monyhar.components.security_state.ConnectionSecurityLevel;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.Arrays;
 import java.util.Comparator;

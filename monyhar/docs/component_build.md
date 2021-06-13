@@ -14,7 +14,7 @@ program load-time performance.
 
 The component build is currently the default for debug non-iOS builds (it
 doesn’t work for iOS). You can force it on for release builds using the
-[GN build arg](https://www.chromium.org/developers/gn-build-configuration):
+[GN build arg](https://www.monyhar.org/developers/gn-build-configuration):
 
 ```python
 is_component_build = true
@@ -104,7 +104,7 @@ still use this pattern for exports. New components should use
 `base/component_export.h` as described above.
 
 Write a header with the name `<component_name>_export.h`. Copy an [existing
-one](https://cs.chromium.org/chromium/src/ipc/ipc_export.h)
+one](https://cs.monyhar.org/monyhar/src/ipc/ipc_export.h)
 and update the macro names. It will key off of two macros:
 
   * `COMPONENT_BUILD`: A globally defined preprocessor definition set when the

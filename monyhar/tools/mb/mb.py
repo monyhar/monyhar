@@ -82,10 +82,10 @@ def main(args):
 
 class MetaBuildWrapper(object):
   def __init__(self):
-    self.chromium_src_dir = CHROMIUM_SRC_DIR
-    self.default_config = os.path.join(self.chromium_src_dir, 'tools', 'mb',
+    self.monyhar_src_dir = CHROMIUM_SRC_DIR
+    self.default_config = os.path.join(self.monyhar_src_dir, 'tools', 'mb',
                                        'mb_config.pyl')
-    self.default_isolate_map = os.path.join(self.chromium_src_dir, 'testing',
+    self.default_isolate_map = os.path.join(self.monyhar_src_dir, 'testing',
                                             'buildbot', 'gn_isolate_map.pyl')
     self.executable = sys.executable
     self.platform = sys.platform
@@ -113,7 +113,7 @@ class MetaBuildWrapper(object):
 
     banned_from_rts_map = json.loads(
         self.ReadFile(
-            self.PathJoin(self.chromium_src_dir, 'tools', 'mb',
+            self.PathJoin(self.monyhar_src_dir, 'tools', 'mb',
                           'rts_banned_suites.json')))
     self.banned_from_rts.update(banned_from_rts_map.get('*', set()))
 
@@ -350,7 +350,7 @@ class MetaBuildWrapper(object):
         '\n'
         'Examples:\n'
         '\n'
-        '  % tools/mb/mb.py run -m chromium.linux -b "Linux Builder" \\\n'
+        '  % tools/mb/mb.py run -m monyhar.linux -b "Linux Builder" \\\n'
         '    //out/Default content_browsertests\n'
         '\n'
         '  % tools/mb/mb.py run out/Default content_browsertests\n'
@@ -470,9 +470,9 @@ class MetaBuildWrapper(object):
 
   def RtsSelect(self):
     model_dir = self.PathJoin(
-        self.chromium_src_dir, 'testing', 'rts', self._CipdPlatform())
+        self.monyhar_src_dir, 'testing', 'rts', self._CipdPlatform())
 
-    exe = self.PathJoin(model_dir, 'rts-chromium')
+    exe = self.PathJoin(model_dir, 'rts-monyhar')
     if self.platform == 'win32':
       exe += '.exe'
 
@@ -480,7 +480,7 @@ class MetaBuildWrapper(object):
        exe, 'select',
       '-model-dir', model_dir, \
       '-out', self.PathJoin(self.ToAbsPath(self.args.path), self.rts_out_dir),
-      '-checkout', self.chromium_src_dir,
+      '-checkout', self.monyhar_src_dir,
     ]
     if self.args.rts_target_change_recall:
       if (self.args.rts_target_change_recall < 0
@@ -554,7 +554,7 @@ class MetaBuildWrapper(object):
       if not self.args.force:
         return 1
 
-    json_path = self.PathJoin(self.chromium_src_dir, 'out.json')
+    json_path = self.PathJoin(self.monyhar_src_dir, 'out.json')
     try:
       ret, out, err = self.Run(
         ['git', 'cl', 'issue', '--json=out.json'], force_verbose=False)
@@ -591,8 +591,8 @@ class MetaBuildWrapper(object):
     try:
       result = LedResult(None, run_cmd).then(
         # TODO(martiniss): maybe don't always assume the bucket?
-        'led', 'get-builder', 'luci.chromium.try:%s' % self.args.builder).then(
-        'led', 'edit', '-r', 'chromium_trybot_experimental',
+        'led', 'get-builder', 'luci.monyhar.try:%s' % self.args.builder).then(
+        'led', 'edit', '-r', 'monyhar_trybot_experimental',
           '-p', 'tests=["%s"]' % ninja_target).then(
         'led', 'edit-system', '--tag=purpose:user-debug-mb-try').then(
         'led', 'edit-cr-cl', issue_data['issue_url']).then(
@@ -637,7 +637,7 @@ class MetaBuildWrapper(object):
     try:
       zip_dir = self.TempDir()
       remap_cmd = [
-          self.PathJoin(self.chromium_src_dir, 'tools', 'luci-go',
+          self.PathJoin(self.monyhar_src_dir, 'tools', 'luci-go',
                         self.isolate_exe), 'remap', '-i',
           self.PathJoin(self.args.path, self.args.target + '.isolate'),
           '-outdir', zip_dir
@@ -656,8 +656,8 @@ class MetaBuildWrapper(object):
         self.RemoveDirectory(zip_dir)
 
   def _RunUnderSwarming(self, build_dir, target, isolate_cmd):
-    cas_instance = 'chromium-swarm'
-    swarming_server = 'chromium-swarm.appspot.com'
+    cas_instance = 'monyhar-swarm'
+    swarming_server = 'monyhar-swarm.appspot.com'
     # TODO(dpranke): Look up the information for the target in
     # the //testing/buildbot.json file, if possible, so that we
     # can determine the isolate target, command line, and additional
@@ -671,7 +671,7 @@ class MetaBuildWrapper(object):
     archive_json_path = self.ToSrcRelPath(
         '%s/%s.archive.json' % (build_dir, target))
     cmd = [
-        self.PathJoin(self.chromium_src_dir, 'tools', 'luci-go',
+        self.PathJoin(self.monyhar_src_dir, 'tools', 'luci-go',
                       self.isolate_exe),
         'archive',
         '-i',
@@ -758,7 +758,7 @@ class MetaBuildWrapper(object):
 
   def _RunLocallyIsolated(self, build_dir, target):
     cmd = [
-        self.PathJoin(self.chromium_src_dir, 'tools', 'luci-go',
+        self.PathJoin(self.monyhar_src_dir, 'tools', 'luci-go',
                       self.isolate_exe),
         'run',
         '-i',
@@ -783,7 +783,7 @@ class MetaBuildWrapper(object):
     else:
       raise MBErr('unrecognized platform string "%s"' % self.platform)
 
-    return [('pool', 'chromium.tests'),
+    return [('pool', 'monyhar.tests'),
             ('cpu', 'x86-64'),
             os_dim]
 
@@ -964,7 +964,7 @@ class MetaBuildWrapper(object):
   def ReadIOSBotConfig(self):
     if not self.args.builder_group or not self.args.builder:
       return {}
-    path = self.PathJoin(self.chromium_src_dir, 'ios', 'build', 'bots',
+    path = self.PathJoin(self.monyhar_src_dir, 'ios', 'build', 'bots',
                          self.args.builder_group, self.args.builder + '.json')
     if not self.Exists(path):
       return {}
@@ -1333,7 +1333,7 @@ class MetaBuildWrapper(object):
       return ret
 
     ret, _, _ = self.Run([
-        self.PathJoin(self.chromium_src_dir, 'tools', 'luci-go',
+        self.PathJoin(self.monyhar_src_dir, 'tools', 'luci-go',
                       self.isolate_exe),
         'check',
         '-i',
@@ -1448,7 +1448,7 @@ class MetaBuildWrapper(object):
           '--isolate',
           self.ToSrcRelPath('%s/%s.isolate' % (build_dir, target)),
         ],
-        'dir': self.chromium_src_dir,
+        'dir': self.monyhar_src_dir,
         'version': 1,
       },
       isolate_path + 'd.gen.json',
@@ -1487,7 +1487,7 @@ class MetaBuildWrapper(object):
     else:
       subdir, exe = 'win', 'gn.exe'
 
-    gn_path = self.PathJoin(self.chromium_src_dir, 'buildtools', subdir, exe)
+    gn_path = self.PathJoin(self.monyhar_src_dir, 'buildtools', subdir, exe)
     cmd = [gn_path, subcommand]
     if self.args.root:
       cmd += ['--root=' + self.args.root]
@@ -1694,7 +1694,7 @@ class MetaBuildWrapper(object):
     return cmdline, extra_files
 
   def ToAbsPath(self, build_path, *comps):
-    return self.PathJoin(self.chromium_src_dir,
+    return self.PathJoin(self.monyhar_src_dir,
                          self.ToSrcRelPath(build_path),
                          *comps)
 
@@ -1702,7 +1702,7 @@ class MetaBuildWrapper(object):
     """Returns a relative path from the top of the repo."""
     if path.startswith('//'):
       return path[2:].replace('/', self.sep)
-    return self.RelPath(path, self.chromium_src_dir)
+    return self.RelPath(path, self.monyhar_src_dir)
 
   def RunGNAnalyze(self, vals):
     # Analyze runs before 'gn gen' now, so we need to run gn gen
@@ -1923,12 +1923,12 @@ class MetaBuildWrapper(object):
 
   def Call(self, cmd, env=None, buffer_output=True, stdin=None):
     if buffer_output:
-      p = subprocess.Popen(cmd, shell=False, cwd=self.chromium_src_dir,
+      p = subprocess.Popen(cmd, shell=False, cwd=self.monyhar_src_dir,
                            stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                            env=env, stdin=subprocess.PIPE)
       out, err = p.communicate(input=stdin)
     else:
-      p = subprocess.Popen(cmd, shell=False, cwd=self.chromium_src_dir,
+      p = subprocess.Popen(cmd, shell=False, cwd=self.monyhar_src_dir,
                            env=env)
       p.wait()
       out = err = ''
@@ -1996,7 +1996,7 @@ class MetaBuildWrapper(object):
 
   def RemoveDirectory(self, abs_path):
     if self.platform == 'win32':
-      # In other places in chromium, we often have to retry this command
+      # In other places in monyhar, we often have to retry this command
       # because we're worried about other processes still holding on to
       # file handles, but when MB is invoked, it will be early enough in the
       # build that their should be no other processes to interfere. We

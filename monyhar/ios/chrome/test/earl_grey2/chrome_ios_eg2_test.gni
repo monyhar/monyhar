@@ -45,7 +45,7 @@ template("chrome_ios_eg2_test_app_host") {
       }
       args = [
         "--breakpad=$breakpad_enabled_as_int",
-        "--branding=$chromium_short_name",
+        "--branding=$monyhar_short_name",
         "--version-overrides=MINOR=9999",
       ]
     }
@@ -117,7 +117,7 @@ template("chrome_ios_eg2_test_app_host") {
       extra_substitutions = []
     }
     extra_substitutions += [
-      "CHROMIUM_HANDOFF_ID=$chromium_handoff_id",
+      "CHROMIUM_HANDOFF_ID=$monyhar_handoff_id",
       "CHROMIUM_SHORT_NAME=$target_name",
       "CHROMIUM_URL_SCHEME_1=$url_unsecure_scheme",
       "CHROMIUM_URL_SCHEME_2=$url_secure_scheme",
@@ -125,7 +125,7 @@ template("chrome_ios_eg2_test_app_host") {
       "CHROMIUM_URL_CHANNEL_SCHEME=$url_channel_scheme",
       "EG_MAIN_APPLICATION_DELEGATE=$_eg_main_application_delegate",
       "SSOAUTH_URL_SCHEME=$url_ssoauth_scheme",
-      "CONTENT_WIDGET_EXTENSION_BUNDLE_ID=$chromium_bundle_id.ContentTodayExtension",
+      "CONTENT_WIDGET_EXTENSION_BUNDLE_ID=$monyhar_bundle_id.ContentTodayExtension",
       "CHROMIUM_BUNDLE_ID=gtest.$target_name",
       "IOS_MOVE_TAB_ACTIVITY_TYPE=$ios_move_tab_activity_type",
     ]

@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.qrcode;
+package org.monyhar.chrome.browser.share.qrcode;
 
 import android.app.Activity;
 import android.app.FragmentManager;
 
-import org.chromium.ui.base.AndroidPermissionDelegate;
+import org.monyhar.ui.base.AndroidPermissionDelegate;
 
 /**
  * Creates and represents the QrCode main UI.

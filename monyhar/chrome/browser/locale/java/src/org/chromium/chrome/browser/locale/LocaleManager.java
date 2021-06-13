@@ -2,22 +2,22 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.locale;
+package org.monyhar.chrome.browser.locale;
 
 import android.app.Activity;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.chrome.browser.search_engines.DefaultSearchEngineDialogHelper;
-import org.chromium.chrome.browser.search_engines.SearchEnginePromoType;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.search_engines.TemplateUrl;
-import org.chromium.ui.base.PageTransition;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.chrome.browser.search_engines.DefaultSearchEngineDialogHelper;
+import org.monyhar.chrome.browser.search_engines.SearchEnginePromoType;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.search_engines.TemplateUrl;
+import org.monyhar.ui.base.PageTransition;
 
 import java.util.List;
 

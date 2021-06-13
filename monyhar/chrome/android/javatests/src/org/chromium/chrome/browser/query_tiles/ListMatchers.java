@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.query_tiles;
+package org.monyhar.chrome.browser.query_tiles;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 
-import static org.chromium.chrome.browser.query_tiles.TileMatchers.withTile;
-import static org.chromium.chrome.browser.query_tiles.ViewActions.scrollTo;
+import static org.monyhar.chrome.browser.query_tiles.TileMatchers.withTile;
+import static org.monyhar.chrome.browser.query_tiles.ViewActions.scrollTo;
 
 import android.view.View;
 
@@ -19,7 +19,7 @@ import androidx.test.espresso.matcher.BoundedMatcher;
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 
-import org.chromium.components.browser_ui.widget.image_tiles.ImageTile;
+import org.monyhar.components.browser_ui.widget.image_tiles.ImageTile;
 
 import java.util.List;
 

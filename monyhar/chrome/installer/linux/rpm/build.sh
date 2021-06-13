@@ -131,7 +131,7 @@ usage() {
   echo "                      [-f] [-o 'dir'] -t target_os"
   echo "-a arch     rpm package architecture"
   echo "-c channel  the package channel (unstable, beta, stable)"
-  echo "-d brand    either chromium or google_chrome"
+  echo "-d brand    either monyhar or google_chrome"
   echo "-f          indicates that this is an official build"
   echo "-h          this help message"
   echo "-o dir      package output directory [${OUTPUTDIR}]"
@@ -229,7 +229,7 @@ get_version_info
 if [ "$BRANDING" = "google_chrome" ]; then
   source "${OUTPUTDIR}/installer/common/google-chrome.info"
 else
-  source "${OUTPUTDIR}/installer/common/chromium-browser.info"
+  source "${OUTPUTDIR}/installer/common/monyhar-browser.info"
 fi
 eval $(sed -e "s/^\([^=]\+\)=\(.*\)$/export \1='\2'/" \
   "${OUTPUTDIR}/installer/theme/BRANDING")

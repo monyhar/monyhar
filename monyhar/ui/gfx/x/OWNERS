@@ -1,4 +1,4 @@
-thomasanderson@chromium.org
+thomasanderson@monyhar.org
 
 # Adding new atoms is allowed without OWNERS review.
 per-file x11_atom_cache.cc=*

@@ -415,7 +415,7 @@ class UnfavoredWidgetsTest(unittest.TestCase):
         '   android:text="@string/welcome"',
         '   android:color="@color/modern_purple_300"',
         '/>',
-        '<org.chromium.ui.widget.ButtonCompat',
+        '<org.monyhar.ui.widget.ButtonCompat',
         '   android:id="@+id/action_button"',
         '/>'
     ]

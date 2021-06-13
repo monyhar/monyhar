@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting.jni;
+package org.monyhar.chromoting.jni;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chromoting.Preconditions;
-import org.chromium.chromoting.base.OAuthTokenFetcher;
-import org.chromium.chromoting.base.OAuthTokenFetcher.Callback;
-import org.chromium.chromoting.base.OAuthTokenFetcher.Error;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chromoting.Preconditions;
+import org.monyhar.chromoting.base.OAuthTokenFetcher;
+import org.monyhar.chromoting.base.OAuthTokenFetcher.Callback;
+import org.monyhar.chromoting.base.OAuthTokenFetcher.Error;
 
 /**
  * The Java implementation of the JniOAuthTokenGetter class. Used by C++ code to request OAuth

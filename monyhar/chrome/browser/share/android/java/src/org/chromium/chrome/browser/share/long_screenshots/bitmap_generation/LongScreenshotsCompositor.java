@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.long_screenshots.bitmap_generation;
+package org.monyhar.chrome.browser.share.long_screenshots.bitmap_generation;
 
 import android.graphics.Bitmap;
 import android.graphics.Rect;
@@ -11,14 +11,14 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.UnguessableToken;
-import org.chromium.components.paint_preview.common.proto.PaintPreview.PaintPreviewProto;
-import org.chromium.components.paintpreview.browser.NativePaintPreviewServiceProvider;
-import org.chromium.components.paintpreview.player.CompositorStatus;
-import org.chromium.components.paintpreview.player.PlayerCompositorDelegate;
-import org.chromium.components.paintpreview.player.PlayerCompositorDelegateImpl;
-import org.chromium.url.GURL;
+import org.monyhar.base.Callback;
+import org.monyhar.base.UnguessableToken;
+import org.monyhar.components.paint_preview.common.proto.PaintPreview.PaintPreviewProto;
+import org.monyhar.components.paintpreview.browser.NativePaintPreviewServiceProvider;
+import org.monyhar.components.paintpreview.player.CompositorStatus;
+import org.monyhar.components.paintpreview.player.PlayerCompositorDelegate;
+import org.monyhar.components.paintpreview.player.PlayerCompositorDelegateImpl;
+import org.monyhar.url.GURL;
 
 /**
  * Compositor for LongScreenshots. Responsible for calling into Freeze-dried tabs to composite the

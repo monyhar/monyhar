@@ -3,14 +3,14 @@
 // found in the LICENSE file.
 
 // Configure:
-// # tools/mb/mb.py gen -m chromium.fuzz -b 'Libfuzzer Upload Linux ASan'  out/libfuzzer
+// # tools/mb/mb.py gen -m monyhar.fuzz -b 'Libfuzzer Upload Linux ASan'  out/libfuzzer
 // Build:
 // # autoninja -C out/libfuzzer content_security_policy_util_fuzzer
 // Run:
 // # ./out/libfuzzer/content_security_policy_util_fuzzer
 //
 // For more details, see
-// https://chromium.googlesource.com/chromium/src/+/main/testing/libfuzzer/README.md
+// https://monyhar.googlesource.com/monyhar/src/+/main/testing/libfuzzer/README.md
 
 #include "base/at_exit.h"
 #include "base/command_line.h"

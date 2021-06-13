@@ -8,7 +8,7 @@
 
 # COEP used not to be enabled on Webview.
 # TODO(arthursonzogni): COEP has now been enabled:
-# https://chromium-review.googlesource.com/c/chromium/src/+/2485507
+# https://monyhar-review.googlesource.com/c/monyhar/src/+/2485507
 # Check again those tests. They might pass.
 crbug.com/1140432 external/wpt/html/cross-origin-embedder-policy/blob.https.html [ Failure Pass ]
 crbug.com/1140432 external/wpt/html/cross-origin-embedder-policy/cache-storage-reporting-document.https.html [ Pass Timeout ]
@@ -696,7 +696,7 @@ crbug.com/1050754 external/wpt/cookie-store/serviceworker_cookiechange_eventhand
 crbug.com/1050754 external/wpt/cookie-store/serviceworker_cookiechange_eventhandler_single_subscription.tentative.https.any.serviceworker.html [ Failure Pass ]
 crbug.com/1050754 external/wpt/cookie-store/serviceworker_oncookiechange_eventhandler_single_subscription.tentative.https.any.serviceworker.html [ Failure Pass ]
 crbug.com/1050754 external/wpt/cookies/domain/domain-attribute-missing.sub.html [ Failure Pass ]
-crbug.com/1050754 external/wpt/cookies/http-state/chromium-tests.html [ Failure Pass ]
+crbug.com/1050754 external/wpt/cookies/http-state/monyhar-tests.html [ Failure Pass ]
 crbug.com/1050754 external/wpt/cookies/http-state/domain-tests.html [ Failure Pass ]
 crbug.com/1050754 external/wpt/cookies/http-state/mozilla-tests.html [ Failure Pass ]
 crbug.com/1050754 external/wpt/cookies/http-state/name-tests.html [ Failure Pass ]

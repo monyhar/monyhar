@@ -2,24 +2,24 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.app.Activity;
 import android.os.SystemClock;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.components.external_intents.AuthenticatorNavigationInterceptor;
-import org.chromium.components.external_intents.ExternalNavigationHandler;
-import org.chromium.components.external_intents.ExternalNavigationHandler.OverrideUrlLoadingAsyncActionType;
-import org.chromium.components.external_intents.ExternalNavigationHandler.OverrideUrlLoadingResult;
-import org.chromium.components.external_intents.ExternalNavigationHandler.OverrideUrlLoadingResultType;
-import org.chromium.components.external_intents.InterceptNavigationDelegateClient;
-import org.chromium.components.external_intents.InterceptNavigationDelegateImpl;
-import org.chromium.components.external_intents.RedirectHandler;
-import org.chromium.components.navigation_interception.NavigationParams;
-import org.chromium.content_public.browser.NavigationHandle;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.WebContentsObserver;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.components.external_intents.AuthenticatorNavigationInterceptor;
+import org.monyhar.components.external_intents.ExternalNavigationHandler;
+import org.monyhar.components.external_intents.ExternalNavigationHandler.OverrideUrlLoadingAsyncActionType;
+import org.monyhar.components.external_intents.ExternalNavigationHandler.OverrideUrlLoadingResult;
+import org.monyhar.components.external_intents.ExternalNavigationHandler.OverrideUrlLoadingResultType;
+import org.monyhar.components.external_intents.InterceptNavigationDelegateClient;
+import org.monyhar.components.external_intents.InterceptNavigationDelegateImpl;
+import org.monyhar.components.external_intents.RedirectHandler;
+import org.monyhar.components.navigation_interception.NavigationParams;
+import org.monyhar.content_public.browser.NavigationHandle;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.WebContentsObserver;
 
 /**
  * Class that provides embedder-level information to InterceptNavigationDelegateImpl based off a

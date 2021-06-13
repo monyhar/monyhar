@@ -9,7 +9,7 @@ per-machine install into `%ProgramFiles%`. Per-user installs are blocked if a
 per-machine install is already present.
 
 If installation is failing for some reason, you can see why in
-`%TMP%\chromium_installer.log`. Include `--verbose-logging` on the command line
+`%TMP%\monyhar_installer.log`. Include `--verbose-logging` on the command line
 to make the log very verbose (and possibly informative).
 
 ## Google Chrome

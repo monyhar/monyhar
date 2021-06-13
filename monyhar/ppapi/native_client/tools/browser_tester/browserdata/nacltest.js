@@ -487,7 +487,7 @@ function outputFile(name, data, onload, onerror) {
 // Webkit Bug Workaround
 // THIS SHOULD BE REMOVED WHEN Webkit IS FIXED
 // http://code.google.com/p/nativeclient/issues/detail?id=2428
-// http://code.google.com/p/chromium/issues/detail?id=103588
+// http://code.google.com/p/monyhar/issues/detail?id=103588
 
 function ForcePluginLoadOnTimeout(elem, tester, timeout) {
   tester.log('Registering ForcePluginLoadOnTimeout ' +

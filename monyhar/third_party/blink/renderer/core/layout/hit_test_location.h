@@ -44,7 +44,7 @@ class CORE_EXPORT HitTestLocation {
   // enabled; otherwise in dip scaled by page_scale), Which means the points
   // should already applied page_scale_factor, but not page_zoom_factor and
   // scroll offset. See:
-  // http://www.chromium.org/developers/design-documents/blink-coordinate-spaces
+  // http://www.monyhar.org/developers/design-documents/blink-coordinate-spaces
   HitTestLocation();
   explicit HitTestLocation(const PhysicalOffset&);
   explicit HitTestLocation(const IntPoint&);

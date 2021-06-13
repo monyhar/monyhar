@@ -428,9 +428,9 @@ GtkCssContext AppendCssNodeToStyleContext(GtkCssContext context,
     }
   }
 
-  // Always add a "chromium" class so that themes can style chromium
+  // Always add a "monyhar" class so that themes can style monyhar
   // widgets specially if they want to.
-  classes.push_back("chromium");
+  classes.push_back("monyhar");
 
   float scale = std::round(GetDeviceScaleFactor());
 
@@ -453,7 +453,7 @@ GtkCssContext GetStyleContextFromCss(const std::string& css_selector) {
 
 SkColor GetBgColorFromStyleContext(GtkCssContext context) {
   // Backgrounds are more general than solid colors (eg. gradients),
-  // but chromium requires us to boil this down to one color.  We
+  // but monyhar requires us to boil this down to one color.  We
   // cannot use the background-color here because some themes leave it
   // set to a garbage color because a background-image will cover it
   // anyway.  So we instead render the background into a 24x24 bitmap,
@@ -913,7 +913,7 @@ absl::optional<SkColor> SkColorFromColorId(ui::ColorId color_id) {
     case ui::kColorButtonForegroundDisabled:
       return GetFgColor("GtkButton#button.text-button:disabled GtkLabel#label");
     // TODO(thomasanderson): Add this once this CL lands:
-    // https://chromium-review.googlesource.com/c/chromium/src/+/2053144
+    // https://monyhar-review.googlesource.com/c/monyhar/src/+/2053144
     // case ui::kColorId_ButtonHoverColor:
     //   return GetBgColor("GtkButton#button:hover");
 
@@ -937,7 +937,7 @@ absl::optional<SkColor> SkColorFromColorId(ui::ColorId color_id) {
     case ui::kColorButtonBorder:
       return GetBorderColor("GtkButton#button.text-button");
     // TODO(thomasanderson): Add this once this CL lands:
-    // https://chromium-review.googlesource.com/c/chromium/src/+/2053144
+    // https://monyhar-review.googlesource.com/c/monyhar/src/+/2053144
     // case ui::kColorId_ProminentButtonHoverColor:
     //   return GetBgColor(
     //       "GtkTreeView#treeview.view "

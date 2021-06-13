@@ -116,7 +116,7 @@ enum class IOSMainThreadFreezeDetectionNotRunningAfterReportBlock {
         removeObjectForKey:@(kNsUserDefaultKeyLastSessionInfo)];
     _delay = kFreezeDetectionDelay;
     _freezeDetectionQueue = dispatch_queue_create(
-        "org.chromium.freeze_detection", DISPATCH_QUEUE_SERIAL);
+        "org.monyhar.freeze_detection", DISPATCH_QUEUE_SERIAL);
     NSString* cacheDirectory = NSSearchPathForDirectoriesInDomains(
         NSCachesDirectory, NSUserDomainMask, YES)[0];
 

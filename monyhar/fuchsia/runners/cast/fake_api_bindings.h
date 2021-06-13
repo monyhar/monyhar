@@ -12,10 +12,10 @@
 #include "base/callback.h"
 #include "base/containers/flat_map.h"
 #include "base/strings/string_piece.h"
-#include "fuchsia/fidl/chromium/cast/cpp/fidl.h"
+#include "fuchsia/fidl/monyhar/cast/cpp/fidl.h"
 
 // Simple implementation of the ApiBindings service, for use by tests.
-class FakeApiBindingsImpl : public chromium::cast::ApiBindings {
+class FakeApiBindingsImpl : public monyhar::cast::ApiBindings {
  public:
   FakeApiBindingsImpl();
   ~FakeApiBindingsImpl() override;
@@ -30,19 +30,19 @@ class FakeApiBindingsImpl : public chromium::cast::ApiBindings {
       base::StringPiece name);
 
   // Sets the list of bindings which will be returned by GetAll().
-  void set_bindings(std::vector<chromium::cast::ApiBinding> bindings) {
+  void set_bindings(std::vector<monyhar::cast::ApiBinding> bindings) {
     bindings_ = std::move(bindings);
   }
 
  private:
-  // chromium::cast::ApiBindings implementation.
+  // monyhar::cast::ApiBindings implementation.
   void GetAll(GetAllCallback callback) override;
   void Connect(
       std::string name,
       fidl::InterfaceHandle<fuchsia::web::MessagePort> message_port) override;
 
   // Bindings to return from GetAll().
-  std::vector<chromium::cast::ApiBinding> bindings_;
+  std::vector<monyhar::cast::ApiBinding> bindings_;
 
   // Holds ports received via Connect(), for tests to take by calling
   // RunAndReturnConnectedPort(). Uses std::less<> as the comparator so that

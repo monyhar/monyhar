@@ -63,7 +63,7 @@ const char* kTestFilePath =
     ":*.testImageExtractorWithOneAttribute"
     ":*.testImageExtractorWithSettingDimension";
 const char* kRunJsTestsJs =
-    "(function() {return org.chromium.distiller.JsTestEntry.run();})();";
+    "(function() {return org.monyhar.distiller.JsTestEntry.run();})();";
 
 class DomDistillerJsTest : public content::ContentBrowserTest {
  public:
@@ -182,7 +182,7 @@ IN_PROC_BROWSER_TEST_F(DomDistillerJsTest, MAYBE_RunJsTests) {
     ASSERT_TRUE(console_log);
     VLOG(0) << "Console log:\n" << *console_log;
     VLOG(0) << "\n\n"
-        "More info at third_party/dom_distiller_js/README.chromium.\n"
+        "More info at third_party/dom_distiller_js/README.monyhar.\n"
         "To disable tests, modify the filter parameter in |kTestFilePath|,\n"
         "in gtest_filter syntax.\n\n";
   }

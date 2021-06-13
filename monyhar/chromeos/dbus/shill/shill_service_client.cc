@@ -37,7 +37,7 @@ void OnGetDictionaryError(const std::string& method_name,
                           DBusMethodCallback<base::Value> callback,
                           const std::string& error_name,
                           const std::string& error_message) {
-  const std::string log_string = "Failed to call org.chromium.shill.Service." +
+  const std::string log_string = "Failed to call org.monyhar.shill.Service." +
                                  method_name + " for: " + service_path.value() +
                                  ": " + error_name + ": " + error_message;
 

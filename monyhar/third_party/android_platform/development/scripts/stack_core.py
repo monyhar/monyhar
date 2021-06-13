@@ -75,7 +75,7 @@ _TRACE_LINE = re.compile(
 )
 
 # Matches lines emitted by src/base/debug/stack_trace_android.cc, like:
-#   #00 0x7324d92d /data/app-lib/org.chromium.native_test-1/libbase.cr.so+0x0006992d
+#   #00 0x7324d92d /data/app-lib/org.monyhar.native_test-1/libbase.cr.so+0x0006992d
 # This pattern includes the unused named capture groups <symbol_present> and
 # <symbol_name> so that it can interoperate with the |_TRACE_LINE| regex.
 _DEBUG_TRACE_LINE = re.compile('(.*)(?P<frame>\#[0-9]+ 0x[0-9a-f]{8,16}) '

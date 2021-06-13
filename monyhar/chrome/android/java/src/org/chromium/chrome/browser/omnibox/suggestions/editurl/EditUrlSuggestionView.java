@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.editurl;
+package org.monyhar.chrome.browser.omnibox.suggestions.editurl;
 
 import android.content.Context;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.omnibox.suggestions.base.BaseSuggestionView;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.omnibox.suggestions.base.BaseSuggestionView;
 
 /**
  * Container view for Search-Ready Omnibox suggestions.

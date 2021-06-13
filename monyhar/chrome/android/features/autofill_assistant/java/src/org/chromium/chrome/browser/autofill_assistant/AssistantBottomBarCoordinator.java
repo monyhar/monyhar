@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant;
+package org.monyhar.chrome.browser.autofill_assistant;
 
 import android.app.Activity;
 import android.transition.ChangeBounds;
@@ -17,38 +17,38 @@ import android.widget.ScrollView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
-import org.chromium.base.supplier.ObservableSupplierImpl;
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.autofill_assistant.carousel.AssistantActionsCarouselCoordinator;
-import org.chromium.chrome.browser.autofill_assistant.carousel.AssistantCarouselModel;
-import org.chromium.chrome.browser.autofill_assistant.details.AssistantDetailsCoordinator;
-import org.chromium.chrome.browser.autofill_assistant.form.AssistantFormCoordinator;
-import org.chromium.chrome.browser.autofill_assistant.form.AssistantFormModel;
-import org.chromium.chrome.browser.autofill_assistant.generic_ui.AssistantGenericUiCoordinator;
-import org.chromium.chrome.browser.autofill_assistant.generic_ui.AssistantGenericUiModel;
-import org.chromium.chrome.browser.autofill_assistant.header.AssistantHeaderCoordinator;
-import org.chromium.chrome.browser.autofill_assistant.header.AssistantHeaderModel;
-import org.chromium.chrome.browser.autofill_assistant.infobox.AssistantInfoBoxCoordinator;
-import org.chromium.chrome.browser.autofill_assistant.overlay.AssistantOverlayCoordinator;
-import org.chromium.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataCoordinator;
-import org.chromium.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataModel;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsStateProvider;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcherConfig;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcherFactory;
-import org.chromium.chrome.browser.ui.TabObscuringHandler;
-import org.chromium.chrome.browser.util.ChromeAccessibilityUtil;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetContent;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController.SheetState;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController.StateChangeReason;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetObserver;
-import org.chromium.components.browser_ui.bottomsheet.EmptyBottomSheetObserver;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.ApplicationViewportInsetSupplier;
-import org.chromium.ui.util.TokenHolder;
+import org.monyhar.base.Callback;
+import org.monyhar.base.supplier.ObservableSupplierImpl;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.autofill_assistant.carousel.AssistantActionsCarouselCoordinator;
+import org.monyhar.chrome.browser.autofill_assistant.carousel.AssistantCarouselModel;
+import org.monyhar.chrome.browser.autofill_assistant.details.AssistantDetailsCoordinator;
+import org.monyhar.chrome.browser.autofill_assistant.form.AssistantFormCoordinator;
+import org.monyhar.chrome.browser.autofill_assistant.form.AssistantFormModel;
+import org.monyhar.chrome.browser.autofill_assistant.generic_ui.AssistantGenericUiCoordinator;
+import org.monyhar.chrome.browser.autofill_assistant.generic_ui.AssistantGenericUiModel;
+import org.monyhar.chrome.browser.autofill_assistant.header.AssistantHeaderCoordinator;
+import org.monyhar.chrome.browser.autofill_assistant.header.AssistantHeaderModel;
+import org.monyhar.chrome.browser.autofill_assistant.infobox.AssistantInfoBoxCoordinator;
+import org.monyhar.chrome.browser.autofill_assistant.overlay.AssistantOverlayCoordinator;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataCoordinator;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataModel;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsStateProvider;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcherConfig;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcherFactory;
+import org.monyhar.chrome.browser.ui.TabObscuringHandler;
+import org.monyhar.chrome.browser.util.ChromeAccessibilityUtil;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetContent;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController.SheetState;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController.StateChangeReason;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetObserver;
+import org.monyhar.components.browser_ui.bottomsheet.EmptyBottomSheetObserver;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.ApplicationViewportInsetSupplier;
+import org.monyhar.ui.util.TokenHolder;
 
 /**
  * Coordinator responsible for the Autofill Assistant bottom bar.

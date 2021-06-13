@@ -237,9 +237,9 @@ operating system APIs directly.
 
 If you're unfamiliar with Chrome's multi-process architecture, see
 [this blog post introducing the concept](
-https://blog.chromium.org/2008/09/multi-process-architecture.html) or
-[the design doc on chromium.org](
-https://www.chromium.org/developers/design-documents/multi-process-architecture)
+https://blog.monyhar.org/2008/09/multi-process-architecture.html) or
+[the design doc on monyhar.org](
+https://www.monyhar.org/developers/design-documents/multi-process-architecture)
 for an intro.
 
 Chromium's multi-process architecture means that we can't implement
@@ -510,32 +510,32 @@ which is renderer-side code, and in JavaScript by the [automation API]. The API
 is defined by [automation.idl], which must be kept synchronized with
 [ax_enums.mojom].
 
-[ax.mojom.AXActionData]: https://source.chromium.org/chromium/chromium/src/+/main:ui/accessibility/mojom/ax_action_data.mojom;l=13
-[ax.mojom.RenderAccessibilityHost::HandleAXEvents()]: https://source.chromium.org/chromium/chromium/src/+/main:content/common/render_accessibility.mojom;l=47
-[ax.mojom.RenderAccessibility.PerformAction()]: https://source.chromium.org/chromium/chromium/src/+/main:content/common/render_accessibility.mojom;l=86
-[AutomationInternalCustomBindings]: https://cs.chromium.org/chromium/src/extensions/renderer/api/automation/automation_internal_custom_bindings.h
-[AXContentNodeData]: https://cs.chromium.org/chromium/src/content/common/ax_content_node_data.h
-[AXLayoutObject]: https://cs.chromium.org/chromium/src/third_party/blink/renderer/modules/accessibility/ax_layout_object.h
-[AXNodeObject]: https://cs.chromium.org/chromium/src/third_party/blink/renderer/modules/accessibility/ax_node_object.h
-[AXObject]: https://cs.chromium.org/chromium/src/third_party/blink/renderer/modules/accessibility/ax_object.h
-[AXObjectImpl]: https://cs.chromium.org/chromium/src/third_party/blink/renderer/modules/accessibility/ax_object_impl.h
-[AXObjectCacheImpl]: https://cs.chromium.org/chromium/src/third_party/blink/renderer/modules/accessibility/ax_object_cache_impl.h
-[AXPlatformNode]: https://cs.chromium.org/chromium/src/ui/accessibility/platform/ax_platform_node.h
-[AXTreeSerializer]: https://cs.chromium.org/chromium/src/ui/accessibility/ax_tree_serializer.h
-[BlinkAXTreeSource]: https://cs.chromium.org/chromium/src/content/renderer/accessibility/blink_ax_tree_source.h
-[BrowserAccessibility]: https://cs.chromium.org/chromium/src/content/browser/accessibility/browser_accessibility.h
-[BrowserAccessibilityDelegate]: https://cs.chromium.org/chromium/src/content/browser/accessibility/browser_accessibility_manager.h?sq=package:chromium&l=64
-[BrowserAccessibilityManager]: https://cs.chromium.org/chromium/src/content/browser/accessibility/browser_accessibility_manager.h
-[LayoutObject]: https://cs.chromium.org/chromium/src/third_party/blink/renderer/core/layout/layout_object.h
-[ViewAccessibility]: https://cs.chromium.org/chromium/src/ui/views/accessibility/view_accessibility.h
-[Node]: https://cs.chromium.org/chromium/src/third_party/blink/renderer/core/dom/node.h
-[RenderAccessibilityImpl]: https://cs.chromium.org/chromium/src/content/renderer/accessibility/render_accessibility_impl.h
-[RenderAccessibilityManager]: https://source.chromium.org/chromium/chromium/src/+/main:content/renderer/accessibility/render_accessibility_manager.h
-[RenderFrameHostImpl]: https://cs.chromium.org/chromium/src/content/browser/renderer_host/render_frame_host_impl.h
-[ui::AXNodeData]: https://cs.chromium.org/chromium/src/ui/accessibility/ax_node_data.h
-[WebAXObject]: https://cs.chromium.org/chromium/src/third_party/blink/public/web/web_ax_object.h
-[automation API]: https://cs.chromium.org/chromium/src/chrome/renderer/resources/extensions/automation
-[automation.idl]: https://cs.chromium.org/chromium/src/extensions/common/api/automation.idl
-[ax_enums.mojom]: https://cs.chromium.org/chromium/src/ui/accessibility/ax_enums.mojom
+[ax.mojom.AXActionData]: https://source.monyhar.org/monyhar/monyhar/src/+/main:ui/accessibility/mojom/ax_action_data.mojom;l=13
+[ax.mojom.RenderAccessibilityHost::HandleAXEvents()]: https://source.monyhar.org/monyhar/monyhar/src/+/main:content/common/render_accessibility.mojom;l=47
+[ax.mojom.RenderAccessibility.PerformAction()]: https://source.monyhar.org/monyhar/monyhar/src/+/main:content/common/render_accessibility.mojom;l=86
+[AutomationInternalCustomBindings]: https://cs.monyhar.org/monyhar/src/extensions/renderer/api/automation/automation_internal_custom_bindings.h
+[AXContentNodeData]: https://cs.monyhar.org/monyhar/src/content/common/ax_content_node_data.h
+[AXLayoutObject]: https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/modules/accessibility/ax_layout_object.h
+[AXNodeObject]: https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/modules/accessibility/ax_node_object.h
+[AXObject]: https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/modules/accessibility/ax_object.h
+[AXObjectImpl]: https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/modules/accessibility/ax_object_impl.h
+[AXObjectCacheImpl]: https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/modules/accessibility/ax_object_cache_impl.h
+[AXPlatformNode]: https://cs.monyhar.org/monyhar/src/ui/accessibility/platform/ax_platform_node.h
+[AXTreeSerializer]: https://cs.monyhar.org/monyhar/src/ui/accessibility/ax_tree_serializer.h
+[BlinkAXTreeSource]: https://cs.monyhar.org/monyhar/src/content/renderer/accessibility/blink_ax_tree_source.h
+[BrowserAccessibility]: https://cs.monyhar.org/monyhar/src/content/browser/accessibility/browser_accessibility.h
+[BrowserAccessibilityDelegate]: https://cs.monyhar.org/monyhar/src/content/browser/accessibility/browser_accessibility_manager.h?sq=package:monyhar&l=64
+[BrowserAccessibilityManager]: https://cs.monyhar.org/monyhar/src/content/browser/accessibility/browser_accessibility_manager.h
+[LayoutObject]: https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/core/layout/layout_object.h
+[ViewAccessibility]: https://cs.monyhar.org/monyhar/src/ui/views/accessibility/view_accessibility.h
+[Node]: https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/core/dom/node.h
+[RenderAccessibilityImpl]: https://cs.monyhar.org/monyhar/src/content/renderer/accessibility/render_accessibility_impl.h
+[RenderAccessibilityManager]: https://source.monyhar.org/monyhar/monyhar/src/+/main:content/renderer/accessibility/render_accessibility_manager.h
+[RenderFrameHostImpl]: https://cs.monyhar.org/monyhar/src/content/browser/renderer_host/render_frame_host_impl.h
+[ui::AXNodeData]: https://cs.monyhar.org/monyhar/src/ui/accessibility/ax_node_data.h
+[WebAXObject]: https://cs.monyhar.org/monyhar/src/third_party/blink/public/web/web_ax_object.h
+[automation API]: https://cs.monyhar.org/monyhar/src/chrome/renderer/resources/extensions/automation
+[automation.idl]: https://cs.monyhar.org/monyhar/src/extensions/common/api/automation.idl
+[ax_enums.mojom]: https://cs.monyhar.org/monyhar/src/ui/accessibility/ax_enums.mojom
 [chrome.automation API]: https://developer.chrome.com/extensions/automation
-[webui-js]: https://cs.chromium.org/chromium/src/ui/webui/resources/js/cr/ui/
+[webui-js]: https://cs.monyhar.org/monyhar/src/ui/webui/resources/js/cr/ui/

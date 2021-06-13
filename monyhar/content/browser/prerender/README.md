@@ -3,7 +3,7 @@ This directory contains the experimental Prerender2 implementation
 `blink::features::kPrerender2` flag.
 
 If you're interested in relevant code changes, join the
-prerendering-reviews@chromium.org group.
+prerendering-reviews@monyhar.org group.
 
 # Summary
 

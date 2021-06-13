@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.test.util;
+package org.monyhar.ui.test.util;
 
 import android.support.test.runner.lifecycle.Stage;
 
@@ -13,8 +13,8 @@ import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.base.test.BaseActivityTestRule;
-import org.chromium.base.test.util.ApplicationTestUtils;
+import org.monyhar.base.test.BaseActivityTestRule;
+import org.monyhar.base.test.util.ApplicationTestUtils;
 
 /**
  * Test case to instrument DummyUiActivity for UI testing scenarios.

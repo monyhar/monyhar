@@ -4,7 +4,7 @@ pre-built binary in a Google Cloud Storage bucket and retrieve it via gclient
 hooks.
 
 To roll new versions of the binaries, you need to have write access to the
-chromium-tools-traffic_annotation bucket. If you don't, contact the OWNERS list
+monyhar-tools-traffic_annotation bucket. If you don't, contact the OWNERS list
 in this folder, otherwise run:
 
 # On Linux:
@@ -22,7 +22,7 @@ cp -p out/Default/traffic_annotation_auditor \
 strip tools/traffic_annotation/bin/linux64/traffic_annotation_auditor
 
 third_party/depot_tools/upload_to_google_storage.py \
-    -b chromium-tools-traffic_annotation \
+    -b monyhar-tools-traffic_annotation \
     tools/traffic_annotation/bin/linux64/traffic_annotation_auditor
 sed -i '/^LASTCHANGE=/d' tools/traffic_annotation/bin/README.md
 cat build/util/LASTCHANGE >> tools/traffic_annotation/bin/README.md
@@ -44,7 +44,7 @@ cp -p out/Default/traffic_annotation_auditor.exe ^
     tools/traffic_annotation/bin/win32
 
 python third_party/depot_tools/upload_to_google_storage.py ^
-    -b chromium-tools-traffic_annotation ^
+    -b monyhar-tools-traffic_annotation ^
     tools/traffic_annotation/bin/win32/traffic_annotation_auditor.exe
 sed -i "/^LASTCHANGE=/d" tools/traffic_annotation/bin/README.md
 cat build/util/LASTCHANGE >> tools/traffic_annotation/bin/README.md

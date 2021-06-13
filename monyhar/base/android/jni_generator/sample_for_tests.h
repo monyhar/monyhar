@@ -46,13 +46,13 @@ namespace android {
 //  if (is_android) {
 //    generate_jni("jni_headers") {
 //      sources = [
-//        "java/src/org/chromium/example/jni_generator/SampleForTests.java",
+//        "java/src/org/monyhar/example/jni_generator/SampleForTests.java",
 //      ]
 //    }
 //    android_library("java") {
 //      sources = [
-//        "java/src/org/chromium/example/jni_generator/SampleForTests.java",
-//        "java/src/org/chromium/example/jni_generator/NonJniFile.java",
+//        "java/src/org/monyhar/example/jni_generator/SampleForTests.java",
+//        "java/src/org/monyhar/example/jni_generator/NonJniFile.java",
 //      ]
 //    }
 //  }

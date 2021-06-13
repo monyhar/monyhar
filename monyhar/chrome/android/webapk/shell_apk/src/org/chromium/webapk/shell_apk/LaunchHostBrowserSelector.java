@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webapk.shell_apk;
+package org.monyhar.webapk.shell_apk;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -14,7 +14,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 
-import org.chromium.components.webapk.lib.common.WebApkMetaDataKeys;
+import org.monyhar.components.webapk.lib.common.WebApkMetaDataKeys;
 
 import java.util.Map;
 

@@ -14,7 +14,7 @@ This can be passed out and extracted into c:\mini_installer_tests and go through
 the README.
 
 chromedriver.exe can be obtained one of two ways. Either download it from
-http://chromedriver.chromium.org/downloads. It can also be built locally, but
+http://chromedriver.monyhar.org/downloads. It can also be built locally, but
 if you do this make sure you are not building as components else you will
 have to copy some dlls to the chromedriver.exe dir.
 

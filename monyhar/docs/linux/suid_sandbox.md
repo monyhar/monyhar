@@ -1,7 +1,7 @@
 # Linux `SUID` Sandbox
 
 *IMPORTANT NOTE: The Linux SUID sandbox is almost but not completely removed.
-See https://bugs.chromium.org/p/chromium/issues/detail?id=598454
+See https://bugs.monyhar.org/p/monyhar/issues/detail?id=598454
 This page is mostly out-of-date.*
 
 With [r20110](https://crrev.com/20110), Chromium on Linux can now sandbox its
@@ -126,4 +126,4 @@ Chromium binary somewhere else you need to modify this string.
 *   [LinuxSUIDSandboxDevelopment](suid_sandbox_development.md)
 *   [LinuxSandboxing](sandboxing.md)
 *   General information on Chromium sandboxing:
-    https://dev.chromium.org/developers/design-documents/sandbox
+    https://dev.monyhar.org/developers/design-documents/sandbox

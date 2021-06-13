@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.common.crash;
+package org.monyhar.android_webview.common.crash;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
 
 /**
  * A helper class for WebView-specific handling of Java crashes.
@@ -16,7 +16,7 @@ import org.chromium.base.annotations.JNINamespace;
 public class AwCrashReporterClient {
     // The filename prefix used by Chromium proguarding, which we use to
     // recognise stack frames that reference WebView.
-    private static final String CHROMIUM_PREFIX = "chromium-";
+    private static final String CHROMIUM_PREFIX = "monyhar-";
 
     /**
      * Determine if a Throwable should be reported to the crash reporting mechanism.
@@ -36,7 +36,7 @@ public class AwCrashReporterClient {
         for (StackTraceElement frame : t.getStackTrace()) {
             if (frame.getClassName().startsWith("android.webkit.")
                     || frame.getClassName().startsWith("com.android.webview.")
-                    || frame.getClassName().startsWith("org.chromium.")
+                    || frame.getClassName().startsWith("org.monyhar.")
                     || (frame.getFileName() != null
                             && frame.getFileName().startsWith(CHROMIUM_PREFIX))) {
                 return true;

@@ -670,7 +670,7 @@ IN_PROC_BROWSER_TEST_P(MHTMLGenerationTest,
 }
 
 // Test suite that allows testing --site-per-process against cross-site frames.
-// See http://dev.chromium.org/developers/design-documents/site-isolation.
+// See http://dev.monyhar.org/developers/design-documents/site-isolation.
 class MHTMLGenerationSitePerProcessTest : public MHTMLGenerationTest {
  public:
   MHTMLGenerationSitePerProcessTest() {}

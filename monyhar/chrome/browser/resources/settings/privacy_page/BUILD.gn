@@ -41,7 +41,7 @@ js_library("cookies_page") {
     "../prefs:prefs_behavior",
     "../site_settings:site_list",
     "../site_settings:site_settings_prefs_browser_proxy",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
     "//ui/webui/resources/js:web_ui_listener_behavior.m",
   ]
@@ -49,7 +49,7 @@ js_library("cookies_page") {
 
 js_library("collapse_radio_button") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_radio_button:cr_radio_button_behavior.m",
     "//ui/webui/resources/cr_elements/policy:cr_policy_indicator_behavior.m",
   ]
@@ -60,7 +60,7 @@ js_library("secure_dns") {
     ":privacy_page_browser_proxy",
     "..:i18n_setup",
     "../prefs:prefs_behavior",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:web_ui_listener_behavior.m",
   ]
 }
@@ -69,13 +69,13 @@ js_library("secure_dns_input") {
   deps = [
     ":privacy_page_browser_proxy",
     "..:i18n_setup",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
 js_library("disable_safebrowsing_dialog") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_dialog:cr_dialog.m",
   ]
 }
@@ -84,7 +84,7 @@ js_library("do_not_track_toggle") {
   deps = [
     "..:metrics_browser_proxy",
     "../controls:settings_toggle_button",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js/cr/ui:focus_without_ink.m",
   ]
 }
@@ -98,7 +98,7 @@ js_library("personalization_options") {
     "../people_page:signout_dialog",
     "../people_page:sync_browser_proxy",
     "../prefs:prefs_behavior",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:web_ui_listener_behavior.m",
   ]
 }
@@ -117,7 +117,7 @@ js_library("privacy_page") {
     "../site_settings:constants",
     "../site_settings:site_data_details_subpage",
     "../site_settings:site_settings_prefs_browser_proxy",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
     "//ui/webui/resources/js:i18n_behavior.m",
     "//ui/webui/resources/js:web_ui_listener_behavior.m",
@@ -133,8 +133,8 @@ js_library("security_keys_bio_enroll_dialog") {
   deps = [
     ":security_keys_browser_proxy",
     ":security_keys_pin_field",
-    "//third_party/polymer/v3_0/components-chromium/iron-a11y-announcer",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-a11y-announcer",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_fingerprint:cr_fingerprint_progress_arc.m",
     "//ui/webui/resources/js:assert.m",
     "//ui/webui/resources/js:i18n_behavior.m",
@@ -150,7 +150,7 @@ js_library("security_keys_credential_management_dialog") {
   deps = [
     ":security_keys_browser_proxy",
     ":security_keys_pin_field",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
     "//ui/webui/resources/js:i18n_behavior.m",
     "//ui/webui/resources/js:web_ui_listener_behavior.m",
@@ -159,8 +159,8 @@ js_library("security_keys_credential_management_dialog") {
 
 js_library("security_keys_pin_field") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/iron-a11y-announcer",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-a11y-announcer",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
 }
@@ -168,7 +168,7 @@ js_library("security_keys_pin_field") {
 js_library("security_keys_reset_dialog") {
   deps = [
     ":security_keys_browser_proxy",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
 }
@@ -176,8 +176,8 @@ js_library("security_keys_reset_dialog") {
 js_library("security_keys_set_pin_dialog") {
   deps = [
     ":security_keys_browser_proxy",
-    "//third_party/polymer/v3_0/components-chromium/iron-a11y-announcer",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-a11y-announcer",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
     "//ui/webui/resources/js:plural_string_proxy",
   ]
@@ -186,7 +186,7 @@ js_library("security_keys_set_pin_dialog") {
 js_library("security_keys_subpage") {
   deps = [
     "..:i18n_setup",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
   ]
 }
@@ -200,7 +200,7 @@ js_library("security_page") {
     "..:route",
     "..:router",
     "../prefs:prefs_behavior",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
     "//ui/webui/resources/js/cr/ui:focus_without_ink.m",
   ]

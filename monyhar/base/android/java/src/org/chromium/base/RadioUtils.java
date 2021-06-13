@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base;
+package org.monyhar.base;
 
 import android.Manifest;
 import android.annotation.TargetApi;
@@ -16,10 +16,10 @@ import android.os.Process;
 import android.telephony.SignalStrength;
 import android.telephony.TelephonyManager;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.compat.ApiHelperForM;
-import org.chromium.base.compat.ApiHelperForP;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.compat.ApiHelperForM;
+import org.monyhar.base.compat.ApiHelperForP;
 
 /**
  * Exposes radio related information about the current device.

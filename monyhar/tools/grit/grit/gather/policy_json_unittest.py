@@ -49,7 +49,7 @@ class PolicyJsonUnittest(unittest.TestCase):
         "      'owners': ['foo@bar.com'],"
         "      'supported_on': ['chrome.*:8-'],"
         "      'features': {'dynamic_refresh': 1},"
-        "      'example_value': 'http://chromium.org',"
+        "      'example_value': 'http://monyhar.org',"
         "      'caption': 'nothing special 1',"
         "      'desc': 'nothing special 2',"
         "      'label': 'nothing special 3',"
@@ -283,7 +283,7 @@ with a newline?''',
         "messages": {}
 }"""
     gatherer = policy_json.PolicyJson(StringIO(original))
-    gatherer.SetDefines({'_chromium': True})
+    gatherer.SetDefines({'_monyhar': True})
     gatherer.Parse()
     self.failUnless(len(gatherer.GetCliques()) == 1)
     expected = json.loads(re.sub('<ph.*ph>', 'Chromium', original))

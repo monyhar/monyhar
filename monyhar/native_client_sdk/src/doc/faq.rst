@@ -589,7 +589,7 @@ Here are ways to resolve some common problems that can prevent loading:
 .. _experimental development environment which runs within NaCl: https://www.youtube.com/watch?v=OzNuzBDEWzk&list=PLOU2XLYxmsIIwGK7v7jg3gQvIAWJzdat_
 .. _introduction to GCC: https://www.google.com/search?q=gcc+introduction
 .. _Mono port: https://github.com/elijahtaylor/mono
-.. _webports includes Lua, Python and Ruby: https://chromium.googlesource.com/webports
+.. _webports includes Lua, Python and Ruby: https://monyhar.googlesource.com/webports
 .. _Halide: http://halide-lang.org/
 .. _GHC: http://www.haskell.org/ghc/docs/latest/html/users_guide/code-generators.html
 .. _flang: https://flang-gsoc.blogspot.ie/2013/09/end-of-gsoc-report.html
@@ -597,10 +597,10 @@ Here are ways to resolve some common problems that can prevent loading:
 .. _Rust: http://www.rust-lang.org/
 .. _Go: https://golang.org
 .. _native-client-discuss: https://groups.google.com/group/native-client-discuss
-.. _deprecated in Chrome: http://blog.chromium.org/2013/09/saying-goodbye-to-our-old-friend-npapi.html
+.. _deprecated in Chrome: http://blog.monyhar.org/2013/09/saying-goodbye-to-our-old-friend-npapi.html
 .. _OpenGL ES 2.0: https://www.khronos.org/opengles/
-.. _GLES2 file: https://source.chromium.org/chromium/chromium/src/+/HEAD:ppapi/lib/gl/gles2/gles2.c
+.. _GLES2 file: https://source.monyhar.org/monyhar/monyhar/src/+/HEAD:ppapi/lib/gl/gles2/gles2.c
 .. _Google Chrome privacy policy: https://www.google.com/chrome/intl/en/privacy.html
 .. _Google Chrome Terms of Service: https://www.google.com/chrome/intl/en/eula_text.html
-.. _webports: https://chromium.googlesource.com/webports
+.. _webports: https://monyhar.googlesource.com/webports
 .. _CORS: http://en.wikipedia.org/wiki/Cross-origin_resource_sharing

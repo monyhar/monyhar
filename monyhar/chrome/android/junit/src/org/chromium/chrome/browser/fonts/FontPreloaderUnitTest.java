@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.fonts;
+package org.monyhar.chrome.browser.fonts;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsInAnyOrder;
@@ -30,9 +30,9 @@ import org.robolectric.annotation.LooperMode.Mode;
 import org.robolectric.annotation.Resetter;
 import org.robolectric.shadows.ShadowSystemClock;
 
-import org.chromium.base.metrics.test.ShadowRecordHistogram;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.fonts.FontPreloaderUnitTest.ShadowResourcesCompat;
+import org.monyhar.base.metrics.test.ShadowRecordHistogram;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.fonts.FontPreloaderUnitTest.ShadowResourcesCompat;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,9 +46,9 @@ import java.util.List;
                 ShadowRecordHistogram.class})
 @LooperMode(Mode.PAUSED)
 public class FontPreloaderUnitTest {
-    private static final Integer[] FONTS = {org.chromium.chrome.R.font.chrome_google_sans,
-            org.chromium.chrome.R.font.chrome_google_sans_medium,
-            org.chromium.chrome.R.font.chrome_google_sans_bold};
+    private static final Integer[] FONTS = {org.monyhar.chrome.R.font.chrome_google_sans,
+            org.monyhar.chrome.R.font.chrome_google_sans_medium,
+            org.monyhar.chrome.R.font.chrome_google_sans_bold};
     private static final String AFTER_ON_CREATE =
             "Android.Fonts.TimeToRetrieveDownloadableFontsAfterOnCreate";
     private static final String AFTER_INFLATION =

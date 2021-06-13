@@ -3,7 +3,7 @@
 # found in the LICENSE file.
 """Top-level presubmit script for dependency_analysis.
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See http://dev.monyhar.org/developers/how-tos/depottools/presubmit-scripts
 for more details on the presubmit API built into depot_tools.
 """
 

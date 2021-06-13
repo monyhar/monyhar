@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.devui.util;
+package org.monyhar.android_webview.devui.util;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.android_webview.common.crash.CrashInfo;
-import org.chromium.android_webview.common.crash.SystemWideCrashDirectories;
-import org.chromium.base.Log;
-import org.chromium.components.minidump_uploader.CrashFileManager;
+import org.monyhar.android_webview.common.crash.CrashInfo;
+import org.monyhar.android_webview.common.crash.SystemWideCrashDirectories;
+import org.monyhar.base.Log;
+import org.monyhar.components.minidump_uploader.CrashFileManager;
 
 import java.io.File;
 import java.io.FileWriter;

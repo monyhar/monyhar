@@ -1,6 +1,6 @@
 Only in /tmp/private-join-and-compute.original: BUILD
 Only in third_party/private-join-and-compute/src: BUILD.gn
-Only in third_party/private-join-and-compute/src: chromium_patch.h
+Only in third_party/private-join-and-compute/src: monyhar_patch.h
 Only in /tmp/private-join-and-compute.original: client.cc
 Only in /tmp/private-join-and-compute.original: client_impl.cc
 Only in /tmp/private-join-and-compute.original: client_impl.h
@@ -22,7 +22,7 @@ diff -ur --strip-trailing-cr /tmp/private-join-and-compute.original/crypto/big_n
 -#include "crypto/context.h"
 -#include "crypto/openssl.inc"
 -#include "util/status.inc"
-+#include "third_party/private-join-and-compute/src/chromium_patch.h"
++#include "third_party/private-join-and-compute/src/monyhar_patch.h"
 +#include "third_party/private-join-and-compute/src/crypto/context.h"
 +#include "third_party/private-join-and-compute/src/crypto/openssl.inc"
 +#include "third_party/private-join-and-compute/src/util/status.inc"
@@ -65,7 +65,7 @@ diff -ur --strip-trailing-cr /tmp/private-join-and-compute.original/crypto/conte
 -#if defined(OS_NACL)
 -#include "privacy/blinders/cpp/nacl_context.h"
 -#endif
-+#include "third_party/private-join-and-compute/src/chromium_patch.h"
++#include "third_party/private-join-and-compute/src/monyhar_patch.h"
  
  namespace private_join_and_compute {
  
@@ -79,7 +79,7 @@ diff -ur --strip-trailing-cr /tmp/private-join-and-compute.original/crypto/conte
 -#include "glog/logging.h"
 -#include "crypto/big_num.h"
 -#include "crypto/openssl.inc"
-+#include "third_party/private-join-and-compute/src/chromium_patch.h"
++#include "third_party/private-join-and-compute/src/monyhar_patch.h"
 +#include "third_party/private-join-and-compute/src/crypto/big_num.h"
 +#include "third_party/private-join-and-compute/src/crypto/openssl.inc"
  
@@ -271,7 +271,7 @@ diff -ur --strip-trailing-cr /tmp/private-join-and-compute.original/crypto/ec_po
 -#include "crypto/openssl.inc"
 -#include "util/status.inc"
 -#include "absl/strings/str_cat.h"
-+#include "third_party/private-join-and-compute/src/chromium_patch.h"
++#include "third_party/private-join-and-compute/src/monyhar_patch.h"
 +#include "third_party/private-join-and-compute/src/crypto/big_num.h"
 +#include "third_party/private-join-and-compute/src/crypto/context.h"
 +#include "third_party/private-join-and-compute/src/crypto/openssl.inc"
@@ -445,7 +445,7 @@ diff -ur --strip-trailing-cr /tmp/private-join-and-compute.original/util/status_
 -#include "absl/base/port.h"
 -#include "util/status.h"
 -#include "util/statusor.h"
-+#include "third_party/private-join-and-compute/src/chromium_patch.h"
++#include "third_party/private-join-and-compute/src/monyhar_patch.h"
 +#include "third_party/private-join-and-compute/src/util/status.h"
 +#include "third_party/private-join-and-compute/src/util/statusor.h"
  
@@ -472,7 +472,7 @@ diff -ur --strip-trailing-cr /tmp/private-join-and-compute.original/util/statuso
  
 -#include "glog/logging.h"
 -#include "util/status.h"
-+#include "third_party/private-join-and-compute/src/chromium_patch.h"
++#include "third_party/private-join-and-compute/src/monyhar_patch.h"
 +#include "third_party/private-join-and-compute/src/util/status.h"
  
  namespace private_join_and_compute {

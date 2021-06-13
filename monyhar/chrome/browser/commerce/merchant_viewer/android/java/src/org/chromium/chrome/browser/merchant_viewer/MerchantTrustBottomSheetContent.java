@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.merchant_viewer;
+package org.monyhar.chrome.browser.merchant_viewer;
 
 import android.view.View;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.tab_ui.R;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetContent;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.tab_ui.R;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetContent;
 
 /**
  * An implementation of {@link BottomSheetContent} for the merchant trust bottom sheet experience.

@@ -46,7 +46,7 @@ namespace web {
 
 namespace {
 
-const char kUrl[] = "chromium://download.test/";
+const char kUrl[] = "monyhar://download.test/";
 const char kContentDisposition[] = "attachment; filename=file.test";
 const char kMimeType[] = "application/pdf";
 NSString* const kHttpMethod = @"POST";

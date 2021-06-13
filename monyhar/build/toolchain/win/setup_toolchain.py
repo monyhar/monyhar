@@ -73,8 +73,8 @@ def _DetectVisualStudioPath():
   """
 
   # Use the code in build/vs_toolchain.py to avoid duplicating code.
-  chromium_dir = os.path.abspath(os.path.join(SCRIPT_DIR, '..', '..', '..'))
-  sys.path.append(os.path.join(chromium_dir, 'build'))
+  monyhar_dir = os.path.abspath(os.path.join(SCRIPT_DIR, '..', '..', '..'))
+  sys.path.append(os.path.join(monyhar_dir, 'build'))
   import vs_toolchain
   return vs_toolchain.DetectVisualStudioPath()
 

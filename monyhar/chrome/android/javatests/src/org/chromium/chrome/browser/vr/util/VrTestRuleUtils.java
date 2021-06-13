@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr.util;
+package org.monyhar.chrome.browser.vr.util;
 
 import android.content.Intent;
 import android.os.SystemClock;
@@ -15,17 +15,17 @@ import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.base.BundleUtils;
-import org.chromium.base.test.BundleTestRule;
-import org.chromium.base.test.params.ParameterSet;
-import org.chromium.chrome.browser.vr.TestVrShellDelegate;
-import org.chromium.chrome.browser.vr.VrFeedbackStatus;
-import org.chromium.chrome.browser.vr.VrIntentDelegate;
-import org.chromium.chrome.browser.vr.rules.ChromeTabbedActivityVrTestRule;
-import org.chromium.chrome.browser.vr.rules.CustomTabActivityVrTestRule;
-import org.chromium.chrome.browser.vr.rules.VrActivityRestrictionRule;
-import org.chromium.chrome.browser.vr.rules.VrTestRule;
-import org.chromium.chrome.browser.vr.rules.WebappActivityVrTestRule;
+import org.monyhar.base.BundleUtils;
+import org.monyhar.base.test.BundleTestRule;
+import org.monyhar.base.test.params.ParameterSet;
+import org.monyhar.chrome.browser.vr.TestVrShellDelegate;
+import org.monyhar.chrome.browser.vr.VrFeedbackStatus;
+import org.monyhar.chrome.browser.vr.VrIntentDelegate;
+import org.monyhar.chrome.browser.vr.rules.ChromeTabbedActivityVrTestRule;
+import org.monyhar.chrome.browser.vr.rules.CustomTabActivityVrTestRule;
+import org.monyhar.chrome.browser.vr.rules.VrActivityRestrictionRule;
+import org.monyhar.chrome.browser.vr.rules.VrTestRule;
+import org.monyhar.chrome.browser.vr.rules.WebappActivityVrTestRule;
 
 import java.util.ArrayList;
 import java.util.concurrent.Callable;

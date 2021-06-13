@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo.bindings;
+package org.monyhar.mojo.bindings;
 
 import androidx.test.filters.SmallTest;
 
@@ -12,19 +12,19 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.mojo.MojoTestRule;
-import org.chromium.mojo.bindings.BindingsTestUtils.CapturingErrorHandler;
-import org.chromium.mojo.bindings.test.mojom.imported.ImportedInterface;
-import org.chromium.mojo.bindings.test.mojom.sample.Factory;
-import org.chromium.mojo.bindings.test.mojom.sample.NamedObject;
-import org.chromium.mojo.bindings.test.mojom.sample.NamedObject.GetNameResponse;
-import org.chromium.mojo.bindings.test.mojom.sample.Request;
-import org.chromium.mojo.bindings.test.mojom.sample.Response;
-import org.chromium.mojo.system.DataPipe.ConsumerHandle;
-import org.chromium.mojo.system.MessagePipeHandle;
-import org.chromium.mojo.system.Pair;
-import org.chromium.mojo.system.impl.CoreImpl;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.mojo.MojoTestRule;
+import org.monyhar.mojo.bindings.BindingsTestUtils.CapturingErrorHandler;
+import org.monyhar.mojo.bindings.test.mojom.imported.ImportedInterface;
+import org.monyhar.mojo.bindings.test.mojom.sample.Factory;
+import org.monyhar.mojo.bindings.test.mojom.sample.NamedObject;
+import org.monyhar.mojo.bindings.test.mojom.sample.NamedObject.GetNameResponse;
+import org.monyhar.mojo.bindings.test.mojom.sample.Request;
+import org.monyhar.mojo.bindings.test.mojom.sample.Response;
+import org.monyhar.mojo.system.DataPipe.ConsumerHandle;
+import org.monyhar.mojo.system.MessagePipeHandle;
+import org.monyhar.mojo.system.Pair;
+import org.monyhar.mojo.system.impl.CoreImpl;
 
 import java.io.Closeable;
 import java.util.ArrayList;
@@ -50,7 +50,7 @@ public class InterfacesTest {
         private String mName = "";
 
         /**
-         * @see org.chromium.mojo.bindings.Interface#close()
+         * @see org.monyhar.mojo.bindings.Interface#close()
          */
         @Override
         public void close() {}
@@ -112,7 +112,7 @@ public class InterfacesTest {
         }
 
         /**
-         * @see org.chromium.mojo.bindings.Interface#close()
+         * @see org.monyhar.mojo.bindings.Interface#close()
          */
         @Override
         public void close() {

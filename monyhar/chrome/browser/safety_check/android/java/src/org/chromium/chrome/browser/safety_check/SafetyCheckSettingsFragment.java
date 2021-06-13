@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.safety_check;
+package org.monyhar.chrome.browser.safety_check;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,8 +14,8 @@ import android.widget.TextView;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 
-import org.chromium.components.browser_ui.settings.SettingsUtils;
-import org.chromium.ui.widget.ButtonCompat;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.ui.widget.ButtonCompat;
 
 /**
  * Settings fragment containing Safety check. This class represents a View in the MVC paradigm.

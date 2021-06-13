@@ -56,7 +56,7 @@
 #endif
 
 // NOTE: For more information about the objects and files in this directory,
-// view: http://dev.chromium.org/developers/design-documents/browser-window
+// view: http://dev.monyhar.org/developers/design-documents/browser-window
 
 class AccessibilityFocusHighlight;
 class BookmarkBarView;

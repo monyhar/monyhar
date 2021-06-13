@@ -78,9 +78,9 @@ SKIP_GN_ISOLATE_MAP_TARGETS = {
     'chrome_official_builder',
     'chrome_official_builder_no_unittests',
     'chrome_sandbox',
-    'chromium_builder_asan',
-    'chromium_builder_perf',
-    'chromiumos_preflight',
+    'monyhar_builder_asan',
+    'monyhar_builder_perf',
+    'monyharos_preflight',
     'linux_symbols',
     'mini_installer',
     'previous_version_mini_installer',
@@ -193,7 +193,7 @@ SKIP_GN_ISOLATE_MAP_TARGETS = {
     'chrome_apk',
     'system_webview_google_apk',
 
-    # These are used by https://www.chromium.org/developers/cluster-telemetry.
+    # These are used by https://www.monyhar.org/developers/cluster-telemetry.
     'ct_telemetry_perf_tests_without_chrome',
 }
 

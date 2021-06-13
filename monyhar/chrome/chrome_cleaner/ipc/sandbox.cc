@@ -68,7 +68,7 @@ scoped_refptr<sandbox::TargetPolicy> GetSandboxPolicy(
 #ifdef NDEBUG
   // Chromium ignores failures on this function but logs a warning. Do the same
   // here.
-  // https://chromium.googlesource.com/chromium/src/+/b6a4ff86c730756a73d63cc882ef818fb7818a53/content/common/sandbox_win.cc#420
+  // https://monyhar.googlesource.com/monyhar/src/+/b6a4ff86c730756a73d63cc882ef818fb7818a53/content/common/sandbox_win.cc#420
   // TODO(crbug.com/893740): SetAlternateDesktop can cause DCHECK's in unit
   // tests if called more than once. Until we get to the bottom of why, it's
   // only enabled in release builds.

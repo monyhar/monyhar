@@ -347,7 +347,7 @@ $FXSave:
   ; Free the stack space used for the temporary fxsave area.
   lea esp, [ebp-8]
 
-  ; TODO(mark): AVX/xsave support. https://crashpad.chromium.org/bug/58
+  ; TODO(mark): AVX/xsave support. https://crashpad.monyhar.org/bug/58
 
 $FXSaveDone:
   ; fnsave reinitializes the FPU with an implicit finit operation, so use frstor
@@ -485,7 +485,7 @@ CAPTURECONTEXT_SYMBOL proc frame
   ; declared as 16-byte-aligned, which is correct for this operation.
   fxsave [rcx.CONTEXT].c_FltSave
 
-  ; TODO(mark): AVX/xsave support. https://crashpad.chromium.org/bug/58
+  ; TODO(mark): AVX/xsave support. https://crashpad.monyhar.org/bug/58
 
   ; The register parameter home address fields aren’t used, so zero them out.
   mov [rcx.CONTEXT].c_P1Home, 0

@@ -22,7 +22,7 @@ constexpr size_t kMaxVectorPreallocateSize = 10000;
 }  // namespace
 
 const char BookmarkNodeData::kClipboardFormatString[] =
-    "chromium/x-bookmark-entries";
+    "monyhar/x-bookmark-entries";
 #endif
 
 BookmarkNodeData::Element::Element() : is_url(false), id_(0) {

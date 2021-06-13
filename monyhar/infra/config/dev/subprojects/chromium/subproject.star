@@ -3,4 +3,4 @@
 # found in the LICENSE file.
 
 exec("./ci.star")
-exec("./consoles/chromium.swarm.star")
+exec("./consoles/monyhar.swarm.star")

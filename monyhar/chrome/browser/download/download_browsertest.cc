@@ -1553,7 +1553,7 @@ IN_PROC_BROWSER_TEST_F(DownloadTest, MimeTypesToShowNotDownload) {
     //   Safari 3.2: Download
     // We choose to match Firefox due to the lot of complains
     // from the users if css files are downloaded:
-    // http://code.google.com/p/chromium/issues/detail?id=7192
+    // http://code.google.com/p/monyhar/issues/detail?id=7192
     "text/css",
     "text/javascript",
     "text/plain",

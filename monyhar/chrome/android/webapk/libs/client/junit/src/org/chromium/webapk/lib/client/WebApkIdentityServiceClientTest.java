@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webapk.lib.client;
+package org.monyhar.webapk.lib.client;
 
 import android.content.ComponentName;
 import android.os.Bundle;
@@ -19,22 +19,22 @@ import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowApplication;
 import org.robolectric.shadows.ShadowLooper;
 
-import org.chromium.base.task.PostTask;
-import org.chromium.base.task.TaskTraits;
-import org.chromium.components.webapk.lib.common.WebApkMetaDataKeys;
-import org.chromium.testing.local.LocalRobolectricTestRunner;
-import org.chromium.webapk.lib.common.identity_service.IIdentityService;
-import org.chromium.webapk.test.WebApkTestHelper;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.task.TaskTraits;
+import org.monyhar.components.webapk.lib.common.WebApkMetaDataKeys;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.webapk.lib.common.identity_service.IIdentityService;
+import org.monyhar.webapk.test.WebApkTestHelper;
 
 /**
- * Unit tests for {@link org.chromium.webapk.lib.client.WebApkIdentityServiceClient}.
+ * Unit tests for {@link org.monyhar.webapk.lib.client.WebApkIdentityServiceClient}.
  */
 @RunWith(LocalRobolectricTestRunner.class)
 @Config(manifest = Config.NONE)
 public class WebApkIdentityServiceClientTest {
-    static final String BROWSER_PACKAGE_NAME = "org.chromium.test";
+    static final String BROWSER_PACKAGE_NAME = "org.monyhar.test";
 
-    private static final String WEBAPK_PACKAGE_NAME = "org.chromium.webapk.test_package";
+    private static final String WEBAPK_PACKAGE_NAME = "org.monyhar.webapk.test_package";
     private static final String ANOTHER_BROWSER_PACKAGE_NAME = "another.browser";
     private ShadowApplication mShadowApplication;
 

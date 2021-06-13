@@ -1,6 +1,6 @@
 # This restriction is in place so that new third-party libraries go through
 # full third-party review:
-# https://chromium.googlesource.com/chromium/src.git/+/master/docs/adding_to_third_party.md#Get-a-review
+# https://monyhar.googlesource.com/monyhar/src.git/+/master/docs/adding_to_third_party.md#Get-a-review
 set noparent
 file://third_party/OWNERS
 

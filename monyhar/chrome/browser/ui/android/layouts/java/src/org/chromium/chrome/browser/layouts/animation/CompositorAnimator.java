@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.layouts.animation;
+package org.monyhar.chrome.browser.layouts.animation;
 
-import static org.chromium.base.ContextUtils.getApplicationContext;
+import static org.monyhar.base.ContextUtils.getApplicationContext;
 
 import android.animation.Animator;
 import android.animation.TimeInterpolator;
@@ -16,12 +16,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
-import org.chromium.base.ObserverList;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.components.browser_ui.widget.animation.Interpolators;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModel.WritableFloatPropertyKey;
+import org.monyhar.base.Log;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.components.browser_ui.widget.animation.Interpolators;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModel.WritableFloatPropertyKey;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

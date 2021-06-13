@@ -2,26 +2,26 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.pagecontroller.rules;
+package org.monyhar.chrome.test.pagecontroller.rules;
 
 import android.support.test.InstrumentationRegistry;
 
 import org.junit.rules.ExternalResource;
 
-import org.chromium.base.Log;
-import org.chromium.chrome.test.pagecontroller.controllers.PageController;
-import org.chromium.chrome.test.pagecontroller.controllers.first_run.DataSaverController;
-import org.chromium.chrome.test.pagecontroller.controllers.first_run.SyncConfirmationViewPageController;
-import org.chromium.chrome.test.pagecontroller.controllers.first_run.TOSController;
-import org.chromium.chrome.test.pagecontroller.controllers.ntp.NewTabPageController;
-import org.chromium.chrome.test.pagecontroller.utils.UiAutomatorUtils;
-import org.chromium.chrome.test.pagecontroller.utils.UiLocationException;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.test.pagecontroller.controllers.PageController;
+import org.monyhar.chrome.test.pagecontroller.controllers.first_run.DataSaverController;
+import org.monyhar.chrome.test.pagecontroller.controllers.first_run.SyncConfirmationViewPageController;
+import org.monyhar.chrome.test.pagecontroller.controllers.first_run.TOSController;
+import org.monyhar.chrome.test.pagecontroller.controllers.ntp.NewTabPageController;
+import org.monyhar.chrome.test.pagecontroller.utils.UiAutomatorUtils;
+import org.monyhar.chrome.test.pagecontroller.utils.UiLocationException;
 
 /**
  * Test rule that provides access to a Chrome application.
  */
 public class ChromeUiApplicationTestRule extends ExternalResource {
-    public static final String PACKAGE_NAME_ARG = "org.chromium.chrome.test.pagecontroller.rules."
+    public static final String PACKAGE_NAME_ARG = "org.monyhar.chrome.test.pagecontroller.rules."
             + "ChromeUiApplicationTestRule.PackageUnderTest";
     private static final String TAG = "ChromeUiAppTR";
 

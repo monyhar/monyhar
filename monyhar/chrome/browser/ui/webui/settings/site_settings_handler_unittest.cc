@@ -1943,7 +1943,7 @@ constexpr char kUsbPolicySetting[] = R"(
     [
       {
         "devices": [{ "vendor_id": 6353, "product_id": 5678 }],
-        "urls": ["https://chromium.org"]
+        "urls": ["https://monyhar.org"]
       }, {
         "devices": [{ "vendor_id": 6353 }],
         "urls": ["https://google.com,https://android.com"]
@@ -1961,7 +1961,7 @@ constexpr char kUsbPolicySetting[] = R"(
 class SiteSettingsHandlerChooserExceptionTest : public SiteSettingsHandlerTest {
  protected:
   const GURL kAndroidUrl{"https://android.com"};
-  const GURL kChromiumUrl{"https://chromium.org"};
+  const GURL kChromiumUrl{"https://monyhar.org"};
   const GURL kGoogleUrl{"https://google.com"};
   const GURL kWebUIUrl{"chrome://test"};
 

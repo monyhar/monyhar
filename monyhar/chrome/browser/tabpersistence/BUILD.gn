@@ -5,7 +5,7 @@
 import("//build/config/android/rules.gni")
 
 android_library("java") {
-  sources = [ "android/java/src/org/chromium/chrome/browser/tabpersistence/TabStateDirectory.java" ]
+  sources = [ "android/java/src/org/monyhar/chrome/browser/tabpersistence/TabStateDirectory.java" ]
   deps = [
     "//base:base_java",
     "//third_party/androidx:androidx_annotation_annotation_java",

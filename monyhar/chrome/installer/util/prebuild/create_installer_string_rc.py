@@ -50,7 +50,7 @@ MODE_SPECIFIC_STRINGS = {
       'IDS_APP_SHORTCUTS_SUBDIR_NAME_DEV',
       'IDS_APP_SHORTCUTS_SUBDIR_NAME_CANARY',
     ],
-    'chromium': [
+    'monyhar': [
       'IDS_APP_SHORTCUTS_SUBDIR_NAME',
     ],
   },
@@ -61,7 +61,7 @@ MODE_SPECIFIC_STRINGS = {
       'IDS_INBOUND_MDNS_RULE_DESCRIPTION_DEV',
       'IDS_INBOUND_MDNS_RULE_DESCRIPTION_CANARY',
     ],
-    'chromium': [
+    'monyhar': [
       'IDS_INBOUND_MDNS_RULE_DESCRIPTION',
     ],
   },
@@ -72,7 +72,7 @@ MODE_SPECIFIC_STRINGS = {
       'IDS_INBOUND_MDNS_RULE_NAME_DEV',
       'IDS_INBOUND_MDNS_RULE_NAME_CANARY',
     ],
-    'chromium': [
+    'monyhar': [
       'IDS_INBOUND_MDNS_RULE_NAME',
     ],
   },
@@ -87,7 +87,7 @@ MODE_SPECIFIC_STRINGS = {
       'IDS_SHORTCUT_NAME_DEV',
       'IDS_SXS_SHORTCUT_NAME',
     ],
-    'chromium': [
+    'monyhar': [
       'IDS_PRODUCT_NAME',
     ],
   },

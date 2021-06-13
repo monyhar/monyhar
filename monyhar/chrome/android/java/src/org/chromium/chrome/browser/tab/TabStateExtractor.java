@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab;
+package org.monyhar.chrome.browser.tab;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.browser.tab.state.CriticalPersistedTabData;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.common.Referrer;
+import org.monyhar.chrome.browser.tab.state.CriticalPersistedTabData;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.common.Referrer;
 
 import java.nio.ByteBuffer;
 import java.util.HashMap;

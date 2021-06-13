@@ -18,7 +18,7 @@
 #endif
 
 // Barebones TLS implementation for use in PartitionAlloc. This doesn't use the
-// general chromium TLS handling to avoid dependencies, but more importantly
+// general monyhar TLS handling to avoid dependencies, but more importantly
 // because it allocates memory.
 namespace base {
 namespace internal {

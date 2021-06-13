@@ -1,5 +1,5 @@
 This test documents Blink's web-exposed CSS properties.
-All changes to this list should go through Blink's feature review process: http://www.chromium.org/blink#new-features
+All changes to this list should go through Blink's feature review process: http://www.monyhar.org/blink#new-features
 
 [LONGHANDS]
     -webkit-app-region

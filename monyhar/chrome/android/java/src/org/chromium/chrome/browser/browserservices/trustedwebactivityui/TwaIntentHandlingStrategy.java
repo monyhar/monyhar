@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.trustedwebactivityui;
+package org.monyhar.chrome.browser.browserservices.trustedwebactivityui;
 
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.browserservices.trustedwebactivityui.sharing.TwaSharingController;
-import org.chromium.chrome.browser.customtabs.content.CustomTabIntentHandlingStrategy;
-import org.chromium.chrome.browser.customtabs.content.DefaultCustomTabIntentHandlingStrategy;
-import org.chromium.chrome.browser.dependency_injection.ActivityScope;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.browserservices.trustedwebactivityui.sharing.TwaSharingController;
+import org.monyhar.chrome.browser.customtabs.content.CustomTabIntentHandlingStrategy;
+import org.monyhar.chrome.browser.customtabs.content.DefaultCustomTabIntentHandlingStrategy;
+import org.monyhar.chrome.browser.dependency_injection.ActivityScope;
 
 import javax.inject.Inject;
 

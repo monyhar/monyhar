@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks;
+package org.monyhar.chrome.browser.tasks;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -13,10 +13,10 @@ import android.widget.LinearLayout;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.browser.suggestions.SiteSuggestion;
-import org.chromium.chrome.browser.suggestions.tile.SuggestionsTileView;
-import org.chromium.chrome.browser.suggestions.tile.Tile;
-import org.chromium.components.browser_ui.widget.tile.TileView;
+import org.monyhar.chrome.browser.suggestions.SiteSuggestion;
+import org.monyhar.chrome.browser.suggestions.tile.SuggestionsTileView;
+import org.monyhar.chrome.browser.suggestions.tile.Tile;
+import org.monyhar.components.browser_ui.widget.tile.TileView;
 
 /**
  * The layout for the container of MV tiles on the Start surface.
@@ -33,11 +33,11 @@ public class MvTilesLayout extends LinearLayout {
 
         Resources resources = mContext.getResources();
         mTileViewPaddingEdgePortrait = resources.getDimensionPixelSize(
-                org.chromium.chrome.R.dimen.tile_view_padding_edge_portrait);
+                org.monyhar.chrome.R.dimen.tile_view_padding_edge_portrait);
         mTileViewPaddingPortrait = resources.getDimensionPixelSize(
-                org.chromium.chrome.R.dimen.tile_view_padding_portrait);
+                org.monyhar.chrome.R.dimen.tile_view_padding_portrait);
         mTileViewPaddingLandscape = resources.getDimensionPixelSize(
-                org.chromium.chrome.R.dimen.tile_view_padding_landscape);
+                org.monyhar.chrome.R.dimen.tile_view_padding_landscape);
     }
 
     @Override

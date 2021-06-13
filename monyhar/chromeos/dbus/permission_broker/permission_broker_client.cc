@@ -36,7 +36,7 @@ namespace chromeos {
 
 namespace {
 
-const char kNoResponseError[] = "org.chromium.Error.NoResponse";
+const char kNoResponseError[] = "org.monyhar.Error.NoResponse";
 
 PermissionBrokerClient* g_instance = nullptr;
 

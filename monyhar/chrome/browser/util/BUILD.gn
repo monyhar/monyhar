@@ -6,14 +6,14 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "android/java/src/org/chromium/chrome/browser/util/AndroidTaskUtils.java",
-    "android/java/src/org/chromium/chrome/browser/util/ChromeAccessibilityUtil.java",
-    "android/java/src/org/chromium/chrome/browser/util/ChromeFileProvider.java",
-    "android/java/src/org/chromium/chrome/browser/util/FileSizeUtil.java",
-    "android/java/src/org/chromium/chrome/browser/util/HashUtil.java",
-    "android/java/src/org/chromium/chrome/browser/util/KeyNavigationUtil.java",
-    "android/java/src/org/chromium/chrome/browser/util/PlatformUtil.java",
-    "android/java/src/org/chromium/chrome/browser/util/VoiceRecognitionUtil.java",
+    "android/java/src/org/monyhar/chrome/browser/util/AndroidTaskUtils.java",
+    "android/java/src/org/monyhar/chrome/browser/util/ChromeAccessibilityUtil.java",
+    "android/java/src/org/monyhar/chrome/browser/util/ChromeFileProvider.java",
+    "android/java/src/org/monyhar/chrome/browser/util/FileSizeUtil.java",
+    "android/java/src/org/monyhar/chrome/browser/util/HashUtil.java",
+    "android/java/src/org/monyhar/chrome/browser/util/KeyNavigationUtil.java",
+    "android/java/src/org/monyhar/chrome/browser/util/PlatformUtil.java",
+    "android/java/src/org/monyhar/chrome/browser/util/VoiceRecognitionUtil.java",
   ]
   deps = [
     "//base:base_java",
@@ -29,15 +29,15 @@ android_library("java") {
 
 generate_jni("jni_headers") {
   sources =
-      [ "android/java/src/org/chromium/chrome/browser/util/PlatformUtil.java" ]
+      [ "android/java/src/org/monyhar/chrome/browser/util/PlatformUtil.java" ]
 }
 
 android_library("javatests") {
   testonly = true
   sources = [
-    "android/java/src/org/chromium/chrome/browser/util/ChromeFileProviderTest.java",
-    "android/java/src/org/chromium/chrome/browser/util/HashUtilTest.java",
-    "android/java/src/org/chromium/chrome/browser/util/VoiceRecognitionUtilTest.java",
+    "android/java/src/org/monyhar/chrome/browser/util/ChromeFileProviderTest.java",
+    "android/java/src/org/monyhar/chrome/browser/util/HashUtilTest.java",
+    "android/java/src/org/monyhar/chrome/browser/util/VoiceRecognitionUtilTest.java",
   ]
   deps = [
     ":java",

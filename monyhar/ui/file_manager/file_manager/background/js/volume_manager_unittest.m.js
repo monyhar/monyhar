@@ -116,7 +116,7 @@ export function setUp() {
       source: VolumeManagerCommon.Source.SYSTEM
     },
     {
-      volumeId: 'drive:drive-foobar%40chromium.org-hash',
+      volumeId: 'drive:drive-foobar%40monyhar.org-hash',
       volumeLabel: '',
       volumeType: VolumeManagerCommon.VolumeType.DRIVE,
       isReadOnly: false,
@@ -138,8 +138,8 @@ export function setUp() {
   ];
   chrome.fileManagerPrivate.fileSystemMap_ = {
     'download:Downloads': new MockFileSystem('download:Downloads'),
-    'drive:drive-foobar%40chromium.org-hash':
-        new MockFileSystem('drive:drive-foobar%40chromium.org-hash'),
+    'drive:drive-foobar%40monyhar.org-hash':
+        new MockFileSystem('drive:drive-foobar%40monyhar.org-hash'),
     'android_files:0': new MockFileSystem('android_files:0')
   };
 
@@ -163,7 +163,7 @@ export function tearDown() {
  */
 function getMockProfile() {
   return {
-    displayName: 'foobar@chromium.org',
+    displayName: 'foobar@monyhar.org',
     isCurrentProfile: true,
     profileId: ''
   };
@@ -266,7 +266,7 @@ export function testGetCurrentProfileVolumeInfo(callback) {
             VolumeManagerCommon.VolumeType.DRIVE);
 
         assertEquals(
-            'drive:drive-foobar%40chromium.org-hash', volumeInfo.volumeId);
+            'drive:drive-foobar%40monyhar.org-hash', volumeInfo.volumeId);
         assertEquals(
             VolumeManagerCommon.VolumeType.DRIVE, volumeInfo.volumeType);
       }),
@@ -288,7 +288,7 @@ export function testGetLocationInfo(callback) {
         assertFalse(downloadLocationInfo.isRootEntry);
 
         const driveEntry = MockFileEntry.create(
-            new MockFileSystem('drive:drive-foobar%40chromium.org-hash'),
+            new MockFileSystem('drive:drive-foobar%40monyhar.org-hash'),
             '/root');
         const driveLocationInfo = volumeManager.getLocationInfo(driveEntry);
         assertEquals(
@@ -298,7 +298,7 @@ export function testGetLocationInfo(callback) {
         assertTrue(driveLocationInfo.isRootEntry);
 
         const teamDrivesGrandRoot = MockFileEntry.create(
-            new MockFileSystem('drive:drive-foobar%40chromium.org-hash'),
+            new MockFileSystem('drive:drive-foobar%40monyhar.org-hash'),
             '/team_drives');
         const teamDrivesGrandRootLocationInfo =
             volumeManager.getLocationInfo(teamDrivesGrandRoot);
@@ -310,7 +310,7 @@ export function testGetLocationInfo(callback) {
         assertTrue(teamDrivesGrandRootLocationInfo.isRootEntry);
 
         const teamDrive = MockFileEntry.create(
-            new MockFileSystem('drive:drive-foobar%40chromium.org-hash'),
+            new MockFileSystem('drive:drive-foobar%40monyhar.org-hash'),
             '/team_drives/MyTeamDrive');
         const teamDriveLocationInfo = volumeManager.getLocationInfo(teamDrive);
         assertEquals(
@@ -321,7 +321,7 @@ export function testGetLocationInfo(callback) {
         assertTrue(teamDriveLocationInfo.isRootEntry);
 
         const driveFilesByIdDirectoryEntry = MockDirectoryEntry.create(
-            new MockFileSystem('drive:drive-foobar%40chromium.org-hash'),
+            new MockFileSystem('drive:drive-foobar%40monyhar.org-hash'),
             '/.files-by-id/123');
         const driveFilesByIdDirectoryLocationInfo =
             volumeManager.getLocationInfo(driveFilesByIdDirectoryEntry);
@@ -333,7 +333,7 @@ export function testGetLocationInfo(callback) {
         assertFalse(driveFilesByIdDirectoryLocationInfo.isRootEntry);
 
         const driveFilesByIdEntry = MockFileEntry.create(
-            new MockFileSystem('drive:drive-foobar%40chromium.org-hash'),
+            new MockFileSystem('drive:drive-foobar%40monyhar.org-hash'),
             '/.files-by-id/123/foo.txt');
         const driveFilesByIdLocationInfo =
             volumeManager.getLocationInfo(driveFilesByIdEntry);
@@ -346,7 +346,7 @@ export function testGetLocationInfo(callback) {
 
         const driveShortcutTargetsByIdDirectoryEntry =
             MockDirectoryEntry.create(
-                new MockFileSystem('drive:drive-foobar%40chromium.org-hash'),
+                new MockFileSystem('drive:drive-foobar%40monyhar.org-hash'),
                 '/.shortcut-targets-by-id/abcdef');
         const driveShortcutTargetsByIdDirectoryLocationInfo =
             volumeManager.getLocationInfo(
@@ -360,7 +360,7 @@ export function testGetLocationInfo(callback) {
         assertFalse(driveShortcutTargetsByIdDirectoryLocationInfo.isRootEntry);
 
         const driveShortcutTargetsByIdEntry = MockDirectoryEntry.create(
-            new MockFileSystem('drive:drive-foobar%40chromium.org-hash'),
+            new MockFileSystem('drive:drive-foobar%40monyhar.org-hash'),
             '/.shortcut-targets-by-id/abcdef/foo');
         const driveShortcutTargetsByIdLocationInfo =
             volumeManager.getLocationInfo(driveShortcutTargetsByIdEntry);
@@ -386,7 +386,7 @@ export function testGetLocationInfo(callback) {
         assertFalse(androidSubFolderLocationInfo.isRootEntry);
 
         const computersGrandRoot = MockFileEntry.create(
-            new MockFileSystem('drive:drive-foobar%40chromium.org-hash'),
+            new MockFileSystem('drive:drive-foobar%40monyhar.org-hash'),
             '/Computers');
         const computersGrandRootLocationInfo =
             volumeManager.getLocationInfo(computersGrandRoot);
@@ -398,7 +398,7 @@ export function testGetLocationInfo(callback) {
         assertTrue(computersGrandRootLocationInfo.isRootEntry);
 
         const computer = MockFileEntry.create(
-            new MockFileSystem('drive:drive-foobar%40chromium.org-hash'),
+            new MockFileSystem('drive:drive-foobar%40monyhar.org-hash'),
             '/Computers/MyComputer');
         const computerLocationInfo = volumeManager.getLocationInfo(computer);
         assertEquals(
@@ -459,7 +459,7 @@ export function testDriveMountedDuringInitialization(callback) {
       eventType: 'mount',
       status: 'success',
       volumeMetadata: {
-        volumeId: 'drive:drive-foobar%40chromium.org-hash',
+        volumeId: 'drive:drive-foobar%40monyhar.org-hash',
         volumeType: VolumeManagerCommon.VolumeType.DRIVE,
         sourcePath: '/drive',
         profile: getMockProfile()

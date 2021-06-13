@@ -537,7 +537,7 @@ Value FunSubstringAfter::Evaluate(EvaluationContext& context) const {
 
 // Returns |value| clamped to the range [lo, hi].
 // TODO(dominicc): Replace with std::clamp when C++17 is allowed
-// per <https://chromium-cpp.appspot.com/>
+// per <https://monyhar-cpp.appspot.com/>
 static double Clamp(const double value, const double lo, const double hi) {
   return std::min(hi, std::max(lo, value));
 }

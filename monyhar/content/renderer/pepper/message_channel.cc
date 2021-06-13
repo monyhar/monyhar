@@ -320,7 +320,7 @@ void MessageChannel::PostBlockingMessageToNative(gin::Arguments* args) {
   // plugin does this, because it will break the ordering of the messages
   // arriving at the plugin.
   // TODO(dmichael): Fix this.
-  // See https://code.google.com/p/chromium/issues/detail?id=367896#c4
+  // See https://code.google.com/p/monyhar/issues/detail?id=367896#c4
   if (!plugin_message_queue_.empty()) {
     try_catch.ThrowException(
         "Failed to convert parameter synchronously, because a prior "

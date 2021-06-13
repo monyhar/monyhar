@@ -337,7 +337,7 @@ TEST_F(ShelfContextMenuTest, ArcLauncherMenusCheck) {
   EXPECT_FALSE(IsItemPresentInMenu(menu.get(), ash::MENU_CLOSE));
 
   // ARC app is running.
-  std::string window_app_id1("org.chromium.arc.1");
+  std::string window_app_id1("org.monyhar.arc.1");
   CreateArcWindow(window_app_id1);
   arc_test().app_instance()->SendTaskCreated(1, arc_test().fake_apps()[0],
                                              std::string());
@@ -361,7 +361,7 @@ TEST_F(ShelfContextMenuTest, ArcLauncherMenusCheck) {
   // ARC non-launchable app is running.
   const std::string app_id2 = ArcAppTest::GetAppId(arc_test().fake_apps()[1]);
   const std::string app_name2 = arc_test().fake_apps()[1].name;
-  std::string window_app_id2("org.chromium.arc.2");
+  std::string window_app_id2("org.monyhar.arc.2");
   CreateArcWindow(window_app_id2);
   arc_test().app_instance()->SendTaskCreated(2, arc_test().fake_apps()[1],
                                              std::string());
@@ -390,7 +390,7 @@ TEST_F(ShelfContextMenuTest, ArcLauncherMenusCheck) {
   // Shelf group context menu.
   std::vector<arc::mojom::ShortcutInfo> shortcuts = arc_test().fake_shortcuts();
   shortcuts[0].intent_uri +=
-      ";S.org.chromium.arc.shelf_group_id=arc_test_shelf_group;end";
+      ";S.org.monyhar.arc.shelf_group_id=arc_test_shelf_group;end";
   arc_test().app_instance()->SendInstallShortcuts(shortcuts);
   app_service_test().WaitForAppService();
   const std::string app_id3 =
@@ -403,7 +403,7 @@ TEST_F(ShelfContextMenuTest, ArcLauncherMenusCheck) {
   for (uint32_t i = 0; i < apps_to_test_in_shelf_group; ++i) {
     const uint32_t task_id = 3 + i;
     std::string window_app_id3 =
-        base::StringPrintf("org.chromium.arc.%d", task_id);
+        base::StringPrintf("org.monyhar.arc.%d", task_id);
     CreateArcWindow(window_app_id3);
     arc_test().app_instance()->SendTaskCreated(
         task_id, arc_test().fake_apps()[2], shortcuts[0].intent_uri);

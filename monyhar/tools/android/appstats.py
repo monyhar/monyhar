@@ -23,7 +23,7 @@ from devil.android import device_errors
 from devil.android import device_utils
 
 sys.path.append(os.path.join(_SRC_PATH, 'build', 'android'))
-import devil_chromium
+import devil_monyhar
 
 class Utils(object):
   """A helper class to hold various utility methods."""
@@ -934,7 +934,7 @@ def main(argv):
   if not args.show_net and not args.show_mem:
     args.show_mem = True
 
-  devil_chromium.Initialize()
+  devil_monyhar.Initialize()
 
   curses.setupterm()
 

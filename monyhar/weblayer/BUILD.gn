@@ -59,10 +59,10 @@ if (is_android) {
                               [ "components_strings_{{source_name_part}}.pak" ])
   }
 
-  grit("generate_components_chromium_strings") {
-    source = "../components/components_chromium_strings.grd"
+  grit("generate_components_monyhar_strings") {
+    source = "../components/components_monyhar_strings.grd"
 
-    # components_chromium_strings contains Chromium-specific strings. WebLayer
+    # components_monyhar_strings contains Chromium-specific strings. WebLayer
     # will never display most of them, so we try to limit the included
     # strings.
     allowlist = rebase_path("grit_strings_allowlist.txt", root_build_dir)
@@ -71,10 +71,10 @@ if (is_android) {
       "-w",
       allowlist,
     ]
-    outputs = [ "grit/components_chromium_strings.h" ] +
+    outputs = [ "grit/components_monyhar_strings.h" ] +
               process_file_template(
                   locales_with_pseudolocales,
-                  [ "components_chromium_strings_{{source_name_part}}.pak" ])
+                  [ "components_monyhar_strings_{{source_name_part}}.pak" ])
   }
 
   repack_locales("weblayer_locales") {
@@ -82,11 +82,11 @@ if (is_android) {
     output_locales = locales
     source_patterns = [
       "${root_gen_dir}/components/strings/components_locale_settings_",
-      "${root_gen_dir}/weblayer/components_chromium_strings_",
+      "${root_gen_dir}/weblayer/components_monyhar_strings_",
       "${root_gen_dir}/weblayer/components_strings_",
     ]
     deps = [
-      ":generate_components_chromium_strings",
+      ":generate_components_monyhar_strings",
       ":generate_components_strings",
       "//components/strings:components_locale_settings",
     ]

@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.device.battery;
+package org.monyhar.device.battery;
 
-import org.chromium.base.Log;
-import org.chromium.device.mojom.BatteryMonitor;
-import org.chromium.device.mojom.BatteryStatus;
-import org.chromium.mojo.system.MojoException;
+import org.monyhar.base.Log;
+import org.monyhar.device.mojom.BatteryMonitor;
+import org.monyhar.device.mojom.BatteryStatus;
+import org.monyhar.mojo.system.MojoException;
 
 /**
  * Android implementation of the battery monitor interface defined in

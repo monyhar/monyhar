@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.infobar;
+package org.monyhar.chrome.browser.infobar;
 
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -16,28 +16,28 @@ import androidx.core.content.ContextCompat;
 
 import com.google.android.material.tabs.TabLayout;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.preferences.Pref;
-import org.chromium.chrome.browser.preferences.PrefChangeRegistrar;
-import org.chromium.chrome.browser.preferences.PrefChangeRegistrar.PrefObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.ui.messages.snackbar.Snackbar;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager.SnackbarController;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManagerProvider;
-import org.chromium.components.infobars.InfoBar;
-import org.chromium.components.infobars.InfoBarCompactLayout;
-import org.chromium.components.translate.TranslateFeatureList;
-import org.chromium.components.translate.TranslateMenu;
-import org.chromium.components.translate.TranslateMenuHelper;
-import org.chromium.components.translate.TranslateOption;
-import org.chromium.components.translate.TranslateOptions;
-import org.chromium.components.translate.TranslateTabLayout;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.preferences.Pref;
+import org.monyhar.chrome.browser.preferences.PrefChangeRegistrar;
+import org.monyhar.chrome.browser.preferences.PrefChangeRegistrar.PrefObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.ui.messages.snackbar.Snackbar;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager.SnackbarController;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManagerProvider;
+import org.monyhar.components.infobars.InfoBar;
+import org.monyhar.components.infobars.InfoBarCompactLayout;
+import org.monyhar.components.translate.TranslateFeatureList;
+import org.monyhar.components.translate.TranslateMenu;
+import org.monyhar.components.translate.TranslateMenuHelper;
+import org.monyhar.components.translate.TranslateOption;
+import org.monyhar.components.translate.TranslateOptions;
+import org.monyhar.components.translate.TranslateTabLayout;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.widget.Toast;
 
 /**
  * Java version of the compact translate infobar.

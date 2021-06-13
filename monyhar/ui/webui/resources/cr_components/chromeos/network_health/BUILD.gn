@@ -25,7 +25,7 @@ js_library("network_health_summary.m") {
   sources = [ "$root_gen_dir/ui/webui/resources/cr_components/chromeos/network_health/network_health_summary.m.js" ]
   deps = [
     ":network_health_mojo.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_components/chromeos/network:onc_mojo",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
@@ -41,7 +41,7 @@ js_library("network_health_mojo.m") {
 js_library("network_health_container.m") {
   sources = [ "$root_gen_dir/ui/webui/resources/cr_components/chromeos/network_health/network_health_container.m.js" ]
   deps =
-      [ "//third_party/polymer/v3_0/components-chromium/iron-icon:iron-icon" ]
+      [ "//third_party/polymer/v3_0/components-monyhar/iron-icon:iron-icon" ]
   extra_deps = [ ":network_health_container_module" ]
 }
 
@@ -52,7 +52,7 @@ js_library("network_diagnostics.m") {
     ":network_diagnostics_types.m",
     ":routine_group.m",
     "//chromeos/services/network_health/public/mojom:mojom_js_library_for_compile",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
   extra_deps = [ ":network_diagnostics_module" ]
@@ -76,7 +76,7 @@ js_library("routine_group.m") {
     ":network_diagnostics_mojo.m",
     ":network_diagnostics_types.m",
     ":network_health_container.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
   extra_deps = [ ":routine_group_module" ]

@@ -9,7 +9,7 @@ Googlers can find the internal documentation here: http://go/videostack-chromepe
 The media benchmarking harness consists of the
 [media story set](../../../../tools/perf/page_sets/media_cases.py),
 and the [media
-metric](https://chromium.googlesource.com/catapult.git/+/HEAD/tracing/tracing/metrics/media_metric.html).
+metric](https://monyhar.googlesource.com/catapult.git/+/HEAD/tracing/tracing/metrics/media_metric.html).
 Those two elements are brought together by the
 [media benchmark](../../../../tools/perf/benchmarks/media.py).
 

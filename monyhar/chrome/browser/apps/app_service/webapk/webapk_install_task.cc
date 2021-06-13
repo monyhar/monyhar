@@ -46,7 +46,7 @@ namespace {
 // The MIME type of the POST data sent to the server.
 constexpr char kProtoMimeType[] = "application/x-protobuf";
 
-constexpr char kRequesterPackageName[] = "org.chromium.arc.webapk";
+constexpr char kRequesterPackageName[] = "org.monyhar.arc.webapk";
 
 constexpr char kAbiListPropertyName[] = "ro.product.cpu.abilist";
 

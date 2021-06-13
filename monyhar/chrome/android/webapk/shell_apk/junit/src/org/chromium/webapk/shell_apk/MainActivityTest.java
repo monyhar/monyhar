@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webapk.shell_apk;
+package org.monyhar.webapk.shell_apk;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -18,11 +18,11 @@ import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowApplication;
 
-import org.chromium.components.webapk.lib.common.WebApkMetaDataKeys;
-import org.chromium.testing.local.LocalRobolectricTestRunner;
-import org.chromium.webapk.lib.common.WebApkConstants;
-import org.chromium.webapk.shell_apk.h2o.H2OMainActivity;
-import org.chromium.webapk.test.WebApkTestHelper;
+import org.monyhar.components.webapk.lib.common.WebApkMetaDataKeys;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.webapk.lib.common.WebApkConstants;
+import org.monyhar.webapk.shell_apk.h2o.H2OMainActivity;
+import org.monyhar.webapk.test.WebApkTestHelper;
 
 /** Unit tests for {@link MainActivity}.
  *

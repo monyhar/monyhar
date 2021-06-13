@@ -1,7 +1,7 @@
 # Autoplay of HTMLMediaElements
 
 Autoplay is the concept of playing media elements without user gesture. The
-policy that defines when autoplay is allowed is defined [here](https://www.chromium.org/audio-video/autoplay).
+policy that defines when autoplay is allowed is defined [here](https://www.monyhar.org/audio-video/autoplay).
 The autoplay logic follows the
 [HTML spec](https://html.spec.whatwg.org/multipage/embedded-content.html#media-elements).
 

@@ -1,14 +1,14 @@
 // Copyright 2020 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.android_webview.metrics;
+package org.monyhar.android_webview.metrics;
 
 import android.os.Bundle;
 
-import org.chromium.android_webview.proto.MetricsBridgeRecords.HistogramRecord;
-import org.chromium.android_webview.proto.MetricsBridgeRecords.HistogramRecord.RecordType;
-import org.chromium.base.Log;
-import org.chromium.base.metrics.UmaRecorderHolder;
+import org.monyhar.android_webview.proto.MetricsBridgeRecords.HistogramRecord;
+import org.monyhar.android_webview.proto.MetricsBridgeRecords.HistogramRecord.RecordType;
+import org.monyhar.base.Log;
+import org.monyhar.base.metrics.UmaRecorderHolder;
 
 /**
  * Replay the recorded method calls recorded by {@link AwProcessUmaRecorder}.
@@ -20,7 +20,7 @@ public class AwNonembeddedUmaReplayer {
 
     /**
      * Extract method arguments from the given {@link HistogramRecord} and call
-     * {@link org.chromium.base.metrics.UmaRecorder#recordBooleanHistogram}.
+     * {@link org.monyhar.base.metrics.UmaRecorder#recordBooleanHistogram}.
      */
     private static void replayBooleanHistogram(HistogramRecord proto) {
         assert proto.getRecordType() == RecordType.HISTOGRAM_BOOLEAN;
@@ -37,7 +37,7 @@ public class AwNonembeddedUmaReplayer {
 
     /**
      * Extract method arguments from the given {@link HistogramRecord} and call
-     * {@link org.chromium.base.metrics.UmaRecorder#recordExponentialHistogram}.
+     * {@link org.monyhar.base.metrics.UmaRecorder#recordExponentialHistogram}.
      */
     private static void replayExponentialHistogram(HistogramRecord proto) {
         assert proto.getRecordType() == RecordType.HISTOGRAM_EXPONENTIAL;
@@ -48,7 +48,7 @@ public class AwNonembeddedUmaReplayer {
 
     /**
      * Extract method arguments from the given {@link HistogramRecord} and call
-     * {@link org.chromium.base.metrics.UmaRecorder#recordLinearHistogram}.
+     * {@link org.monyhar.base.metrics.UmaRecorder#recordLinearHistogram}.
      */
     private static void replayLinearHistogram(HistogramRecord proto) {
         assert proto.getRecordType() == RecordType.HISTOGRAM_LINEAR;
@@ -59,7 +59,7 @@ public class AwNonembeddedUmaReplayer {
 
     /**
      * Extract method arguments from the given {@link HistogramRecord} and call
-     * {@link org.chromium.base.metrics.UmaRecorder#recordSparseHistogram}.
+     * {@link org.monyhar.base.metrics.UmaRecorder#recordSparseHistogram}.
      */
     private static void replaySparseHistogram(HistogramRecord proto) {
         assert proto.getRecordType() == RecordType.HISTOGRAM_SPARSE;
@@ -69,7 +69,7 @@ public class AwNonembeddedUmaReplayer {
 
     /**
      * Extract method arguments from the given {@link HistogramRecord} and call
-     * {@link org.chromium.base.metrics.UmaRecorder#recordUserAction}.
+     * {@link org.monyhar.base.metrics.UmaRecorder#recordUserAction}.
      */
     private static void replayUserAction(HistogramRecord proto) {
         assert proto.getRecordType() == RecordType.USER_ACTION;

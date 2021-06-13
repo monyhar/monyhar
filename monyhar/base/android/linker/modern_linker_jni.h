@@ -8,7 +8,7 @@
 #include <jni.h>
 #include <link.h>
 
-namespace chromium_android_linker {
+namespace monyhar_android_linker {
 
 class String;
 
@@ -18,7 +18,7 @@ class String;
 // These values are persisted to logs. Entries should not be renumbered and
 // numeric values should never be reused. Must be kept in sync with the enum
 // in enums.xml. A java @IntDef is generated from this.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.base.library_loader
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.base.library_loader
 enum class RelroSharingStatus {
   NOT_ATTEMPTED = 0,
   SHARED = 1,
@@ -167,6 +167,6 @@ class NativeLibInfo {
 // On success, returns true.
 extern bool ModernLinkerJNIInit(JavaVM* vm, JNIEnv* env);
 
-}  // namespace chromium_android_linker
+}  // namespace monyhar_android_linker
 
 #endif  // BASE_ANDROID_LINKER_MODERN_LINKER_JNI_H_

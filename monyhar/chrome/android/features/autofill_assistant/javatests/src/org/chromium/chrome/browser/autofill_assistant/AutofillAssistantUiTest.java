@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant;
+package org.monyhar.chrome.browser.autofill_assistant;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
@@ -37,27 +37,27 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.UrlUtils;
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.autofill_assistant.carousel.AssistantActionsCarouselCoordinator;
-import org.chromium.chrome.browser.autofill_assistant.carousel.AssistantCarouselModel;
-import org.chromium.chrome.browser.autofill_assistant.carousel.AssistantChip;
-import org.chromium.chrome.browser.autofill_assistant.details.AssistantDetails;
-import org.chromium.chrome.browser.autofill_assistant.header.AssistantHeaderModel;
-import org.chromium.chrome.browser.autofill_assistant.infobox.AssistantInfoBox;
-import org.chromium.chrome.browser.autofill_assistant.infobox.AssistantInfoBoxModel;
-import org.chromium.chrome.browser.autofill_assistant.overlay.AssistantOverlayModel;
-import org.chromium.chrome.browser.autofill_assistant.overlay.AssistantOverlayState;
-import org.chromium.chrome.browser.customtabs.CustomTabActivity;
-import org.chromium.chrome.browser.customtabs.CustomTabActivityTestRule;
-import org.chromium.chrome.browser.customtabs.CustomTabsTestUtils;
-import org.chromium.chrome.browser.firstrun.FirstRunStatus;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.net.test.EmbeddedTestServer;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.UrlUtils;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.autofill_assistant.carousel.AssistantActionsCarouselCoordinator;
+import org.monyhar.chrome.browser.autofill_assistant.carousel.AssistantCarouselModel;
+import org.monyhar.chrome.browser.autofill_assistant.carousel.AssistantChip;
+import org.monyhar.chrome.browser.autofill_assistant.details.AssistantDetails;
+import org.monyhar.chrome.browser.autofill_assistant.header.AssistantHeaderModel;
+import org.monyhar.chrome.browser.autofill_assistant.infobox.AssistantInfoBox;
+import org.monyhar.chrome.browser.autofill_assistant.infobox.AssistantInfoBoxModel;
+import org.monyhar.chrome.browser.autofill_assistant.overlay.AssistantOverlayModel;
+import org.monyhar.chrome.browser.autofill_assistant.overlay.AssistantOverlayState;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivity;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivityTestRule;
+import org.monyhar.chrome.browser.customtabs.CustomTabsTestUtils;
+import org.monyhar.chrome.browser.firstrun.FirstRunStatus;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.net.test.EmbeddedTestServer;
 
 import java.util.Arrays;
 import java.util.List;

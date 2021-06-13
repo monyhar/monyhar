@@ -83,7 +83,7 @@ BASE_EXPORT int64_t TimeValToMicroseconds(const struct timeval& tv);
 // To obtain consistent memory metrics, use the memory_instrumentation service.
 //
 // For further documentation on memory, see
-// https://chromium.googlesource.com/chromium/src/+/HEAD/docs/README.md#Memory
+// https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/README.md#Memory
 class BASE_EXPORT ProcessMetrics {
  public:
   ~ProcessMetrics();

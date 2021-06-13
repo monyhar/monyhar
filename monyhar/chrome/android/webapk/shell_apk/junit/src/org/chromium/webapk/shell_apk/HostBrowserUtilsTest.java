@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webapk.shell_apk;
+package org.monyhar.webapk.shell_apk;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -19,9 +19,9 @@ import org.robolectric.ParameterizedRobolectricTestRunner.Parameters;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 
-import org.chromium.components.webapk.lib.common.WebApkMetaDataKeys;
-import org.chromium.testing.local.LocalRobolectricTestRunner;
-import org.chromium.webapk.test.WebApkTestHelper;
+import org.monyhar.components.webapk.lib.common.WebApkMetaDataKeys;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.webapk.test.WebApkTestHelper;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

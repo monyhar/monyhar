@@ -1,6 +1,6 @@
 # 103 Early Hints
 
-Contact: early-hints-experiment@chromium.org
+Contact: early-hints-experiment@monyhar.org
 
 [103 Early Hints](https://httpwg.org/specs/rfc8297.html) is the new HTTP status
 code used for preloading subresources earlier. In general, browsers cannot

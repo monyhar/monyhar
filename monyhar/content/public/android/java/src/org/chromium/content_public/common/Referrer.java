@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.common;
+package org.monyhar.content_public.common;
 
 /**
  * Container that holds together a referrer URL along with the referrer policy set on the

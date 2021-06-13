@@ -2,23 +2,23 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import android.os.Bundle;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.library_loader.LibraryProcessType;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.library_loader.LibraryProcessType;
 
 /**
  * Implementation of the interface {@link ChildProcessCreationParams}.
  */
 public class ChildProcessCreationParamsImpl {
     private static final String EXTRA_LIBRARY_PROCESS_TYPE =
-            "org.chromium.content.common.child_service_params.library_process_type";
+            "org.monyhar.content.common.child_service_params.library_process_type";
     private static final String PRIVILEGED_SERVICES_NAME =
-            "org.chromium.content.app.PrivilegedProcessService";
+            "org.monyhar.content.app.PrivilegedProcessService";
     private static final String SANDBOXED_SERVICES_NAME =
-            "org.chromium.content.app.SandboxedProcessService";
+            "org.monyhar.content.app.SandboxedProcessService";
 
     // Members should all be immutable to avoid worrying about thread safety.
     private static String sPackageNameForPrivilegedService;

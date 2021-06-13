@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.permissions.nfc;
+package org.monyhar.components.permissions.nfc;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -16,14 +16,14 @@ import android.widget.TextView;
 import androidx.annotation.VisibleForTesting;
 import androidx.core.widget.TextViewCompat;
 
-import org.chromium.base.task.PostTask;
-import org.chromium.components.permissions.R;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.modaldialog.DialogDismissalCause;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.modaldialog.ModalDialogProperties;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.components.permissions.R;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.modaldialog.DialogDismissalCause;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.modaldialog.ModalDialogProperties;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * Implements a modal dialog that prompts the user about turning on the NFC adapter on the system

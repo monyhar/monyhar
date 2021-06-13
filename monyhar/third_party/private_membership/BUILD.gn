@@ -18,7 +18,7 @@ config("private_membership_config") {
     # corresponding directory tree with generated files needs to be added too.
     # Note: this path does not change depending on the current target, e.g.
     # it is always "//gen/third_party/private_membership/src" when building with Chromium.
-    # See also: http://cs.chromium.org/?q=%5C"default_include_dirs
+    # See also: http://cs.monyhar.org/?q=%5C"default_include_dirs
     # https://gn.googlesource.com/gn/+/master/docs/reference.md#target_gen_dir"
     target_gen_dir,
   ]
@@ -38,8 +38,8 @@ proto_library("private_membership_proto") {
 if (is_chromeos_ash) {
   source_set("private_membership") {
     public_configs = [ ":private_membership_config" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     public = [
       "src/internal/aes_ctr_256_with_fixed_iv.h",
       "src/internal/constants.h",
@@ -82,8 +82,8 @@ if (is_chromeos_ash) {
   test("private_membership_unittests") {
     testonly = true
     public_configs = [ ":private_membership_config" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     public = [ "src/internal/testing/constants.h" ]
     sources = [
       "src/internal/aes_ctr_256_with_fixed_iv_test.cc",

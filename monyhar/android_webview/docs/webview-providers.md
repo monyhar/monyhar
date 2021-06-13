@@ -137,7 +137,7 @@ decided to use `targetSdkVersion` as a proxy for this:
 
 In the Chromium repo, we configure this in GN args by setting
 `android_sdk_release = "x"`, where "x" is the lowercase codename letter of the
-desired OS version. Upstream chromium code usually only supports the latest
+desired OS version. Upstream monyhar code usually only supports the latest
 public Android version, so you should use that value for all public Android OS
 versions. Googlers building with the internal repository may be able to override
 this to target the current pre-release Android version.
@@ -165,7 +165,7 @@ you're trying to install a really old WebView official build.
 
 Because WebView is implemented partially in C++, the Android framework must load
 its native library. On L, the native library must be called
-`libwebviewchromium.so`. Starting with M and above, the native library must be
+`libwebviewmonyhar.so`. Starting with M and above, the native library must be
 declared by the `com.android.webview.WebViewLibrary` metadata tag in
 `AndroidManifest.xml`. See [Loading native code with RELRO
 sharing](how-does-loading-work.md#Loading-native-code-with-RELRO-sharing) for

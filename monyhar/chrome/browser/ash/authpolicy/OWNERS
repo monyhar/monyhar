@@ -2,6 +2,6 @@
 # structural changes, use usual OWNERS rules.
 per-file BUILD.gn=*
 
-rsorokin@chromium.org
-fsandrade@chromium.org
-tomdobro@chromium.org
+rsorokin@monyhar.org
+fsandrade@monyhar.org
+tomdobro@monyhar.org

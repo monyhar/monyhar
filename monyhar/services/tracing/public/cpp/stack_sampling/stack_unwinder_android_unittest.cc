@@ -140,7 +140,7 @@ TEST_F(StackUnwinderTest, JNIMarkerConsistent) {
   asm volatile("mov %0, sp" : "=r"(sp));
   asm volatile("mov %0, pc" : "=r"(pc));
   marker.Init<base::android::MethodID::TYPE_STATIC>(
-      env, org_chromium_tracing_UnwindTestHelper_clazz(env),
+      env, org_monyhar_tracing_UnwindTestHelper_clazz(env),
       "blockCurrentThread", "()V", &method);
 
   EXPECT_EQ(marker.sp, sp);

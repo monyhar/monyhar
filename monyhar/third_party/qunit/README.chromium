@@ -32,5 +32,5 @@ testing.
 Local Modifications:
 No Modifications is made to src/qunit.js.
 src/browser_test_harness.js is added to enable running the QUnit test suite on
-try bots using the chromium browser test infrastructure.  It also automatically
+try bots using the monyhar browser test infrastructure.  It also automatically
 fails a test case if it doesn't return within a timeout of 5 seconds.

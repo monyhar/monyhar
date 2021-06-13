@@ -19,7 +19,7 @@ sys.path.append(
 import google_api_keys
 
 
-PACKAGE = 'org.chromium.chrome'
+PACKAGE = 'org.monyhar.chrome'
 CLASSNAME = 'GoogleAPIKeys'
 
 

@@ -31,7 +31,7 @@ UI related code.
 [chrome/browser/query_tiles](../../chrome/browser/query_tiles)
 include service factory and background task client code.
 
-[components/browser_ui/widget/image_tiles](../browser_ui/widget/android/java/src/org/chromium/components/browser_ui/widget/image_tiles/)
+[components/browser_ui/widget/image_tiles](../browser_ui/widget/android/java/src/org/monyhar/components/browser_ui/widget/image_tiles/)
 Generic widget representing image tiles carousel.
 
 `TileService` - Public interface for query tile service.

@@ -3,5 +3,5 @@ include_rules = [
   "+components/keyed_service",
   "+components/leveldb_proto",
   "+components/thin_webview/java",
-  "+content/public/android/java/src/org/chromium/content_public",
+  "+content/public/android/java/src/org/monyhar/content_public",
 ]

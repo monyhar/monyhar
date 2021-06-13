@@ -15,12 +15,12 @@
     'machines': {
       'chromeos-arm-generic-cfi-thin-lto-chrome': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
       },
       'chromeos-betty-pi-arc-cfi-thin-lto-chrome': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
         'test_suites': {
           'gtest_tests': 'chromeos_browser_integration_tests',
@@ -31,7 +31,7 @@
       },
       'chromeos-betty-pi-arc-chrome': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
         'mixins': [
           'chromeos-betty',
@@ -43,7 +43,7 @@
       },
       'chromeos-betty-pi-arc-chrome-lts': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
         'mixins': [
           'chromeos-betty',
@@ -55,7 +55,7 @@
       },
       'chromeos-eve-chrome': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
         'test_suites': {
           'gtest_tests': 'chromeos_device_gtests',
@@ -74,7 +74,7 @@
       },
       'chromeos-eve-chrome-lts': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
         'test_suites': {
           'gtest_tests': 'chromeos_device_gtests',
@@ -93,7 +93,7 @@
       },
       'chromeos-kevin-chrome': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
         'test_suites': {
           'gtest_tests': 'chromeos_device_gtests',
@@ -112,7 +112,7 @@
       },
       'chromeos-kevin-chrome-lts': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
         'test_suites': {
           'gtest_tests': 'chromeos_device_gtests',
@@ -260,8 +260,8 @@
     },
   },
   {
-    'name': 'chromium',
-    'mixins': ['chromium-tester-service-account'],
+    'name': 'monyhar',
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       'android-archive-dbg': {
         'additional_compile_targets': [
@@ -376,8 +376,8 @@
     }
   },
   {
-    'name': 'chromium.android',
-    'mixins': ['chromium-tester-service-account'],
+    'name': 'monyhar.android',
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       'Android ASAN (dbg)': {
         'additional_compile_targets': [
@@ -483,7 +483,7 @@
           'microdump_stackwalk',
         ],
         'test_suites': {
-          'junit_tests': 'chromium_junit_tests',
+          'junit_tests': 'monyhar_junit_tests',
         },
       },
       'Android arm64 Builder (dbg)': {
@@ -648,7 +648,7 @@
         ],
         'test_suites': {
           'gtest_tests': 'android_lollipop_marshmallow_gtests',
-          'junit_tests': 'chromium_junit_tests',
+          'junit_tests': 'monyhar_junit_tests',
           'isolated_scripts': 'monochrome_public_apk_checker_isolated_script',
         },
         'os_type': 'android',
@@ -842,7 +842,7 @@
           'monochrome_static_initializers',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_android_gtests',
+          'gtest_tests': 'monyhar_android_gtests',
         },
         'os_type': 'android',
       },
@@ -859,7 +859,7 @@
         ],
         'test_suites': {
           'gtest_tests': 'android_lollipop_marshmallow_gtests',
-          'junit_tests': 'chromium_junit_tests',
+          'junit_tests': 'monyhar_junit_tests',
           'isolated_scripts': 'marshmallow_pie_isolated_scripts',
         },
         'os_type': 'android',
@@ -877,7 +877,7 @@
         ],
         'test_suites': {
           'gtest_tests': 'android_lollipop_marshmallow_coverage_gtests',
-          'junit_tests': 'chromium_junit_tests',
+          'junit_tests': 'monyhar_junit_tests',
           'isolated_scripts': 'marshmallow_pie_isolated_scripts',
         },
         'os_type': 'android',
@@ -936,7 +936,7 @@
           'validate_expectations',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_android_gtests',
+          'gtest_tests': 'monyhar_android_gtests',
           # TODO(crbug.com/1111436): Re-enable this if/when additional capacity
           # has been deployed.
           #'isolated_scripts': 'marshmallow_nougat_pie_isolated_scripts_with_proguard',
@@ -1030,8 +1030,8 @@
     },
   },
   {
-    'name': 'chromium.android.fyi',
-    'mixins': ['chromium-tester-service-account'],
+    'name': 'monyhar.android.fyi',
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       'Android ASAN (dbg) (reclient)': {
         'additional_compile_targets': [
@@ -1152,10 +1152,10 @@
     },
   },
   {
-    'name': 'chromium.angle',
+    'name': 'monyhar.angle',
     'forbid_script_tests': True,
     'mixins': [
-      'chromium-tester-service-account',
+      'monyhar-tester-service-account',
       'swarming_containment_auto',
     ],
     'machines': {
@@ -1171,9 +1171,9 @@
           'gtest_tests': 'gpu_angle_android_gtests',
         },
       },
-      'android-angle-chromium-arm64-builder': {},
-      'android-angle-chromium-arm64-nexus5x': {
-        'browser_config': 'android-chromium',
+      'android-angle-monyhar-arm64-builder': {},
+      'android-angle-monyhar-arm64-nexus5x': {
+        'browser_config': 'android-monyhar',
         'os_type': 'android',
         'mixins': [
           'enable_resultdb',
@@ -1207,8 +1207,8 @@
         },
       },
       'linux-angle-builder': {},
-      'linux-angle-chromium-builder': {},
-      'linux-angle-chromium-intel': {
+      'linux-angle-monyhar-builder': {},
+      'linux-angle-monyhar-intel': {
         'os_type': 'linux',
         'browser_config': 'release',
         'mixins': [
@@ -1219,7 +1219,7 @@
           'gpu_telemetry_tests': 'gpu_angle_linux_telemetry_tests',
         },
       },
-      'linux-angle-chromium-nvidia': {
+      'linux-angle-monyhar-nvidia': {
         'os_type': 'linux',
         'browser_config': 'release',
         'mixins': [
@@ -1258,7 +1258,7 @@
         },
       },
       'mac-angle-builder': {},
-      'mac-angle-chromium-amd': {
+      'mac-angle-monyhar-amd': {
         'os_type': 'mac',
         'browser_config': 'release',
         'mixins': [
@@ -1269,8 +1269,8 @@
           'gpu_telemetry_tests': 'gpu_angle_mac_telemetry_tests',
         },
       },
-      'mac-angle-chromium-builder': {},
-      'mac-angle-chromium-intel': {
+      'mac-angle-monyhar-builder': {},
+      'mac-angle-monyhar-intel': {
         'os_type': 'mac',
         'browser_config': 'release',
         'mixins': [
@@ -1300,11 +1300,11 @@
           'gtest_tests': 'gpu_angle_gtests',
         },
       },
-      'win-angle-chromium-x64-builder': {},
-      'win-angle-chromium-x86-builder': {},
+      'win-angle-monyhar-x64-builder': {},
+      'win-angle-monyhar-x86-builder': {},
       'win-angle-x64-builder': {},
       'win-angle-x86-builder': {},
-      'win10-angle-chromium-x64-intel': {
+      'win10-angle-monyhar-x64-intel': {
         'os_type': 'win',
         'browser_config': 'release_x64',
         'mixins': [
@@ -1314,7 +1314,7 @@
           'gpu_telemetry_tests': 'gpu_angle_win_intel_nvidia_telemetry_tests',
         },
       },
-      'win10-angle-chromium-x64-nvidia': {
+      'win10-angle-monyhar-x64-nvidia': {
         'os_type': 'win',
         'browser_config': 'release_x64',
         'mixins': [
@@ -1342,7 +1342,7 @@
           'gtest_tests': 'gpu_angle_win_nvidia_gtests',
         },
       },
-      'win7-angle-chromium-x86-amd': {
+      'win7-angle-monyhar-x86-amd': {
         'os_type': 'win',
         'browser_config': 'release',
         'mixins': [
@@ -1373,8 +1373,8 @@
     },
   },
   {
-    'name': 'chromium.chromiumos',
-    'mixins': ['chromium-tester-service-account'],
+    'name': 'monyhar.monyharos',
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       'Linux ChromiumOS Full': {
         'additional_compile_targets': [
@@ -1411,17 +1411,17 @@
       },
       'chromeos-amd64-generic-asan-rel': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
       },
       'chromeos-amd64-generic-cfi-thin-lto-rel': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
       },
       'chromeos-amd64-generic-dbg': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
       },
       'chromeos-amd64-generic-lacros-dbg': {
@@ -1431,7 +1431,7 @@
       },
       'chromeos-amd64-generic-rel': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
         'browser_config': 'cros-chrome',
         'mixins': [
@@ -1446,17 +1446,17 @@
       },
       'chromeos-arm-generic-dbg': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
       },
       'chromeos-arm-generic-rel': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
       },
       'chromeos-kevin-rel': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
         'mixins': [
           'chromeos-kevin',
@@ -1487,10 +1487,10 @@
         ],
         'os_type': 'chromeos'
       },
-      'linux-ash-chromium-generator-rel': {
+      'linux-ash-monyhar-generator-rel': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
-          'gen_linux_ash_chromium_cipd_yaml',
+          'monyharos_preflight',
+          'gen_linux_ash_monyhar_cipd_yaml',
         ],
       },
       'linux-cfm-rel': {
@@ -1558,12 +1558,12 @@
     },
   },
   {
-    'name': 'chromium.clang',
-    'mixins': ['chromium-tester-service-account'],
+    'name': 'monyhar.clang',
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       'CFI Linux CF': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'CFI Linux ToT': {
@@ -1571,7 +1571,7 @@
           'linux-xenial',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_linux_and_gl_gtests',
+          'gtest_tests': 'monyhar_linux_and_gl_gtests',
         },
       },
       'CrWinAsan': {
@@ -1580,10 +1580,10 @@
           'win10',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_win_gtests',
+          'gtest_tests': 'monyhar_win_gtests',
         },
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'CrWinAsan(dll)': {
@@ -1592,10 +1592,10 @@
           'win10',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_win_gtests',
+          'gtest_tests': 'monyhar_win_gtests',
         },
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'ToTAndroid': {
@@ -1609,8 +1609,8 @@
         ],
         # This mirrors 'android-lollipop-arm-rel'.
         'test_suites': {
-          'gtest_tests': 'chromium_android_gtests',
-          'junit_tests': 'chromium_junit_tests',
+          'gtest_tests': 'monyhar_android_gtests',
+          'junit_tests': 'monyhar_junit_tests',
           'isolated_scripts': 'monochrome_public_apk_checker_isolated_script_and_sizes',
         },
         'os_type': 'android',
@@ -1646,8 +1646,8 @@
       },
       'ToTAndroidASan': {
         'test_suites': {
-          'gtest_tests': 'chromium_android_asan_gtests',
-          'junit_tests': 'chromium_android_asan_junit_tests',
+          'gtest_tests': 'monyhar_android_asan_gtests',
+          'junit_tests': 'monyhar_android_asan_junit_tests',
         },
         'mixins': [
           'enable_resultdb'
@@ -1712,7 +1712,7 @@
           'linux-xenial',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_linux_gtests',
+          'gtest_tests': 'monyhar_linux_gtests',
           'isolated_scripts': 'chrome_sizes',
         },
         'additional_compile_targets': [
@@ -1735,7 +1735,7 @@
           'all',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_linux_gtests',
+          'gtest_tests': 'monyhar_linux_gtests',
           'isolated_scripts': 'chrome_sizes',
         },
         'args': [
@@ -1758,7 +1758,7 @@
           'all',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_linux_gtests',
+          'gtest_tests': 'monyhar_linux_gtests',
           'isolated_scripts': 'chrome_sizes',
         },
       },
@@ -1769,7 +1769,7 @@
           'linux-xenial',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_linux_gtests',
+          'gtest_tests': 'monyhar_linux_gtests',
           'isolated_scripts': 'chrome_sizes',
         },
         'additional_compile_targets': [
@@ -1784,7 +1784,7 @@
           'all',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_linux_gtests',
+          'gtest_tests': 'monyhar_linux_gtests',
           'isolated_scripts': 'chrome_sizes',
         },
       },
@@ -1796,7 +1796,7 @@
           'all',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_linux_gtests',
+          'gtest_tests': 'monyhar_linux_gtests',
           'isolated_scripts': 'chrome_sizes',
         },
       },
@@ -1810,7 +1810,7 @@
         'test_suites': {
           # no "_and_gl":gl_unittests doesn't pass yet,
           # https://crbug.com/815183
-          'gtest_tests': 'chromium_linux_gtests',
+          'gtest_tests': 'monyhar_linux_gtests',
           'isolated_scripts': 'chrome_sizes',
         },
       },
@@ -1819,8 +1819,8 @@
           'mac_x64',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_mac_gtests',
-          'isolated_scripts': 'chromium_mac_rel_isolated_scripts_and_sizes',
+          'gtest_tests': 'monyhar_mac_gtests',
+          'isolated_scripts': 'monyhar_mac_rel_isolated_scripts_and_sizes',
         },
         'additional_compile_targets': [
           'all',
@@ -1842,13 +1842,13 @@
           'mac_x64',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_mac_gtests',
+          'gtest_tests': 'monyhar_mac_gtests',
         },
         'args': [
           '--test-launcher-print-test-stdio=always',
         ],
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       # Used on an internal builder.
@@ -1858,8 +1858,8 @@
           'mac_x64',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_mac_gtests',
-          'isolated_scripts': 'chromium_mac_rel_isolated_scripts_and_sizes',
+          'gtest_tests': 'monyhar_mac_gtests',
+          'isolated_scripts': 'monyhar_mac_rel_isolated_scripts_and_sizes',
         },
         'additional_compile_targets': [
           'all',
@@ -1868,7 +1868,7 @@
       'ToTWin': {
         'mixins': ['chrome-tester-service-account'],
         'test_suites': {
-          'gtest_tests': 'chromium_win_gtests',
+          'gtest_tests': 'monyhar_win_gtests',
           'isolated_scripts': 'win_specific_isolated_scripts_and_sizes',
         },
         'additional_compile_targets': [
@@ -1877,7 +1877,7 @@
       },
       'ToTWin(dbg)': {
         'test_suites': {
-          'gtest_tests': 'chromium_win_gtests',
+          'gtest_tests': 'monyhar_win_gtests',
           # Doesn't run win_specific_isolated_scripts because the mini
           # installer isn't hooked up in 32-bit debug builds.
           'isolated_scripts': 'chrome_sizes',
@@ -1888,7 +1888,7 @@
       },
       'ToTWin(dll)': {
         'test_suites': {
-          'gtest_tests': 'chromium_win_gtests',
+          'gtest_tests': 'monyhar_win_gtests',
           'isolated_scripts': 'win_specific_isolated_scripts_and_sizes',
         },
         'additional_compile_targets': [
@@ -1901,7 +1901,7 @@
           'x86-64',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_win_gtests',
+          'gtest_tests': 'monyhar_win_gtests',
           'isolated_scripts': 'win_specific_isolated_scripts_and_sizes',
         },
         'additional_compile_targets': [
@@ -1914,7 +1914,7 @@
           'win10',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_win_gtests',
+          'gtest_tests': 'monyhar_win_gtests',
           'isolated_scripts': 'win_specific_isolated_scripts_and_sizes',
         },
         'additional_compile_targets': [
@@ -1927,7 +1927,7 @@
           'win10',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_win_gtests',
+          'gtest_tests': 'monyhar_win_gtests',
           'isolated_scripts': 'win_specific_isolated_scripts_and_sizes',
         },
         'additional_compile_targets': [
@@ -1941,7 +1941,7 @@
       },
       'ToTWinCFI': {
         'test_suites': {
-          'gtest_tests': 'chromium_win_gtests',
+          'gtest_tests': 'monyhar_win_gtests',
           'isolated_scripts': 'win_specific_isolated_scripts',
         },
         'additional_compile_targets': [
@@ -1950,7 +1950,7 @@
       },
       'ToTWinCFI64': {
         'test_suites': {
-          'gtest_tests': 'chromium_win_gtests',
+          'gtest_tests': 'monyhar_win_gtests',
           'isolated_scripts': 'win_specific_isolated_scripts',
         },
         'additional_compile_targets': [
@@ -1962,7 +1962,7 @@
           'chrome-tester-service-account',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_win_gtests',
+          'gtest_tests': 'monyhar_win_gtests',
           'isolated_scripts': 'win_specific_isolated_scripts_and_sizes',
         },
         'additional_compile_targets': [
@@ -1974,7 +1974,7 @@
           'chrome-tester-service-account',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_win_gtests',
+          'gtest_tests': 'monyhar_win_gtests',
           'isolated_scripts': 'win_specific_isolated_scripts_and_sizes',
         },
         'additional_compile_targets': [
@@ -2036,7 +2036,7 @@
           'win10',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_win_gtests',
+          'gtest_tests': 'monyhar_win_gtests',
         },
         'additional_compile_targets': [
           'all',
@@ -2045,8 +2045,8 @@
     },
   },
   {
-    'name': 'chromium.dawn',
-    'mixins': ['chromium-tester-service-account'],
+    'name': 'monyhar.dawn',
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       'Dawn Linux x64 Builder' : {},
       'Dawn Linux x64 DEPS Builder' : {},
@@ -2247,8 +2247,8 @@
     }
   },
   {
-    'name': 'chromium.dev',
-    'mixins': ['chromium-tester-dev-service-account'],
+    'name': 'monyhar.dev',
+    'mixins': ['monyhar-tester-dev-service-account'],
     'machines': {
       'android-lollipop-arm-rel-swarming': {
         'mixins': [
@@ -2257,7 +2257,7 @@
           'enable_resultdb',
         ],
         'test_suites': {
-           'gtest_tests': 'chromium_swarm_android_gtests',
+           'gtest_tests': 'monyhar_swarm_android_gtests',
         },
         'swarming': {
           'expiration': 10800,
@@ -2269,7 +2269,7 @@
           'enable_resultdb',
         ],
         'test_suites': {
-           'gtest_tests': 'chromium_swarm_android_gtests',
+           'gtest_tests': 'monyhar_swarm_android_gtests',
         },
         'swarming': {
           'dimension_sets': [
@@ -2288,7 +2288,7 @@
           'linux-bionic',
         ],
         'test_suites': {
-           'gtest_tests': 'chromium_swarm_linux_gtests',
+           'gtest_tests': 'monyhar_swarm_linux_gtests',
         },
       },
       'linux-rel-swarming-staging': {
@@ -2296,7 +2296,7 @@
           'linux-xenial',
         ],
         'test_suites': {
-           'gtest_tests': 'chromium_swarm_linux_gtests',
+           'gtest_tests': 'monyhar_swarm_linux_gtests',
         },
       },
       'mac-rel-swarming': {
@@ -2304,26 +2304,26 @@
           'mac_x64',
         ],
         'test_suites': {
-           'gtest_tests': 'chromium_swarm_desktop_gtests',
+           'gtest_tests': 'monyhar_swarm_desktop_gtests',
         },
       },
       'win-rel-swarming': {
         'test_suites': {
-           'gtest_tests': 'chromium_swarm_desktop_gtests',
+           'gtest_tests': 'monyhar_swarm_desktop_gtests',
         },
       },
       'win-rel-swarming-staging': {
         'test_suites': {
-           'gtest_tests': 'chromium_swarm_desktop_gtests',
+           'gtest_tests': 'monyhar_swarm_desktop_gtests',
         },
       },
     },
   },
   {
-    'name': 'chromium.devtools-frontend',
-    'mixins': ['chromium-tester-service-account'],
+    'name': 'monyhar.devtools-frontend',
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
-      'DevTools Linux (chromium)': {
+      'DevTools Linux (monyhar)': {
         'mixins': [
           'linux-bionic',
         ],
@@ -2336,108 +2336,108 @@
     },
   },
   {
-    'name': 'chromium.fuzz',
-    'mixins': ['chromium-tester-service-account'],
+    'name': 'monyhar.fuzz',
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       'ASAN Debug': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'ASAN Release': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'ASAN Release Media': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'ASan Debug (32-bit x86 with V8-ARM)': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'ASan Release (32-bit x86 with V8-ARM)': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'ASan Release Media (32-bit x86 with V8-ARM)': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'ChromiumOS ASAN Release': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'MSAN Release (chained origins)': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'MSAN Release (no origins)': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'Mac ASAN Release': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'Mac ASAN Release Media': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'TSAN Debug': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'TSAN Release': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'UBSan Release': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'UBSan vptr Release': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'Win ASan Release': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'Win ASan Release Media': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
     },
   },
   {
-    'name': 'chromium.fyi',
-    'mixins': ['chromium-tester-service-account'],
+    'name': 'monyhar.fyi',
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       'ASAN Debug (reclient)': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'Linux Builder (core-32) (goma)': {
         # Copied from
-        # https://source.chromium.org/chromium/chromium/src/+/main:testing/buildbot/waterfalls.pyl;l=4844-4854;drc=75f767e92e86611728189739fb26f4e2cdf212d9
+        # https://source.monyhar.org/monyhar/monyhar/src/+/main:testing/buildbot/waterfalls.pyl;l=4844-4854;drc=75f767e92e86611728189739fb26f4e2cdf212d9
         'mixins': [
           'isolate_profile_data',
         ],
@@ -2447,7 +2447,7 @@
       },
       'Linux Builder (core-32) (reclient)': {
         # Copied from
-        # https://source.chromium.org/chromium/chromium/src/+/main:testing/buildbot/waterfalls.pyl;l=4844-4854;drc=75f767e92e86611728189739fb26f4e2cdf212d9
+        # https://source.monyhar.org/monyhar/monyhar/src/+/main:testing/buildbot/waterfalls.pyl;l=4844-4854;drc=75f767e92e86611728189739fb26f4e2cdf212d9
         'mixins': [
           'isolate_profile_data',
         ],
@@ -2457,7 +2457,7 @@
       },
       'Linux Builder (core-32) (runsc) (reclient)': {
         # Copied from
-        # https://source.chromium.org/chromium/chromium/src/+/main:testing/buildbot/waterfalls.pyl;l=4844-4854;drc=75f767e92e86611728189739fb26f4e2cdf212d9
+        # https://source.monyhar.org/monyhar/monyhar/src/+/main:testing/buildbot/waterfalls.pyl;l=4844-4854;drc=75f767e92e86611728189739fb26f4e2cdf212d9
         'mixins': [
           'isolate_profile_data',
         ],
@@ -2467,7 +2467,7 @@
       },
       'Linux Builder (deps-cache) (reclient)': {
         # Copied from
-        # https://source.chromium.org/chromium/chromium/src/+/main:testing/buildbot/waterfalls.pyl;l=4844-4854;drc=75f767e92e86611728189739fb26f4e2cdf212d9
+        # https://source.monyhar.org/monyhar/monyhar/src/+/main:testing/buildbot/waterfalls.pyl;l=4844-4854;drc=75f767e92e86611728189739fb26f4e2cdf212d9
         'mixins': [
           'isolate_profile_data',
         ],
@@ -2475,12 +2475,12 @@
           'all'
         ],
         'test_suites': {
-          'scripts': 'chromium_linux_scripts',
+          'scripts': 'monyhar_linux_scripts',
         }
       },
       'Linux Builder (j-500) (n2) (reclient)': {
         # Copied from
-        # https://source.chromium.org/chromium/chromium/src/+/main:testing/buildbot/waterfalls.pyl;l=4844-4854;drc=75f767e92e86611728189739fb26f4e2cdf212d9
+        # https://source.monyhar.org/monyhar/monyhar/src/+/main:testing/buildbot/waterfalls.pyl;l=4844-4854;drc=75f767e92e86611728189739fb26f4e2cdf212d9
         'mixins': [
           'isolate_profile_data',
         ],
@@ -2490,7 +2490,7 @@
       },
       'Linux Builder (j-500) (reclient)': {
         # Copied from
-        # https://source.chromium.org/chromium/chromium/src/+/main:testing/buildbot/waterfalls.pyl;l=4844-4854;drc=75f767e92e86611728189739fb26f4e2cdf212d9
+        # https://source.monyhar.org/monyhar/monyhar/src/+/main:testing/buildbot/waterfalls.pyl;l=4844-4854;drc=75f767e92e86611728189739fb26f4e2cdf212d9
         'mixins': [
           'isolate_profile_data',
         ],
@@ -2515,7 +2515,7 @@
           'all',
         ],
         'test_suites': {
-          'scripts': 'chromium_mac_scripts',
+          'scripts': 'monyhar_mac_scripts',
         }
       },
       'Site Isolation Android': {
@@ -2541,47 +2541,47 @@
       },
       'TSAN Debug (reclient)': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'TSAN Release (core-32) (goma)': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'TSAN Release (core-32) (reclient)': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'TSAN Release (deps-cache) (reclient)': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'TSAN Release (deps-cache-full-files) (reclient)': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'TSAN Release (j-250) (reclient)': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'TSAN Release (reclient)': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'TSAN Release (runsc-exp) (reclient)': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'UBSan Release (reclient)': {
         'additional_compile_targets': [
-          'chromium_builder_asan',
+          'monyhar_builder_asan',
         ],
       },
       'VR Linux': {
@@ -2593,7 +2593,7 @@
           'vr_common_perftests',
         ],
         'test_suites': {
-          'gtest_tests': 'vr_platform_specific_chromium_gtests',
+          'gtest_tests': 'vr_platform_specific_monyhar_gtests',
         },
       },
       'VR Linux (reclient)': {
@@ -2605,7 +2605,7 @@
           'vr_common_perftests',
         ],
         'test_suites': {
-          'gtest_tests': 'vr_platform_specific_chromium_gtests',
+          'gtest_tests': 'vr_platform_specific_monyhar_gtests',
         },
       },
       'WebKit Linux composite_after_paint Dummy Builder': {
@@ -2619,7 +2619,7 @@
           'hard_timeout': 900,
         },
         'test_suites': {
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
       },
       'WebKit Linux layout_ng_disabled Builder': {
@@ -2634,38 +2634,38 @@
         },
         'test_suites': {
           'gtest_tests': 'layout_ng_gtests',
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
       },
       'Win 10 Fast Ring': {
         'test_suites': {
-          'gtest_tests': 'chromium_win_gtests',
+          'gtest_tests': 'monyhar_win_gtests',
         },
         'use_swarming': False,
       },
       'Win x64 Builder (reclient)': {
         # Copied from
-        # https://source.chromium.org/chromium/chromium/src/+/7b147a6777cb32d6a12e1716c61a0ed50dc1229a:testing/buildbot/waterfalls.pyl;l=6023-6030
+        # https://source.monyhar.org/monyhar/monyhar/src/+/7b147a6777cb32d6a12e1716c61a0ed50dc1229a:testing/buildbot/waterfalls.pyl;l=6023-6030
         'additional_compile_targets': [
           'pdf_fuzzers'
         ],
         'test_suites': {
-          'scripts': 'chromium_win_scripts',
+          'scripts': 'monyhar_win_scripts',
         },
       },
       'Win x64 Builder (reclient)(cross)': {
         # Copied from
-        # https://source.chromium.org/chromium/chromium/src/+/7b147a6777cb32d6a12e1716c61a0ed50dc1229a:testing/buildbot/waterfalls.pyl;l=6023-6030
+        # https://source.monyhar.org/monyhar/monyhar/src/+/7b147a6777cb32d6a12e1716c61a0ed50dc1229a:testing/buildbot/waterfalls.pyl;l=6023-6030
         'additional_compile_targets': [
           'pdf_fuzzers'
         ],
         'test_suites': {
-          'scripts': 'chromium_win_scripts',
+          'scripts': 'monyhar_win_scripts',
         },
       },
       'android-backuprefptr-arm-fyi-rel': {
         'test_suites': {
-          'gtest_tests': 'chromium_android_gtests',
+          'gtest_tests': 'monyhar_android_gtests',
         },
         'mixins': [
           'enable_resultdb',
@@ -2676,7 +2676,7 @@
       },
       'android-backuprefptr-arm64-fyi-rel': {
         'test_suites': {
-          'gtest_tests': 'chromium_android_gtests',
+          'gtest_tests': 'monyhar_android_gtests',
         },
         'mixins': [
           'enable_resultdb',
@@ -2694,7 +2694,7 @@
         ],
         'test_suites': {
           'gtest_tests': 'android_lollipop_marshmallow_coverage_gtests',
-          'junit_tests': 'chromium_junit_tests',
+          'junit_tests': 'monyhar_junit_tests',
         },
         'os_type': 'android',
       },
@@ -2706,14 +2706,14 @@
           'walleye',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_android_gtests',
+          'gtest_tests': 'monyhar_android_gtests',
         },
         'use_swarming': True,
         'os_type': 'android',
       },
       'chromeos-amd64-generic-rel-dchecks': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
         'browser_config': 'cros-chrome',
         'mixins': [
@@ -2980,7 +2980,7 @@
           'scripts': 'test_traffic_annotation_auditor_script',
         },
       },
-      'linux-ash-chromium-builder-fyi-rel': {
+      'linux-ash-monyhar-builder-fyi-rel': {
         'additional_compile_targets': [
           'chrome',
           'test_ash_chrome',
@@ -2988,7 +2988,7 @@
       },
       'linux-backuprefptr-x64-fyi-rel': {
         'test_suites': {
-          'gtest_tests': 'chromium_linux_gtests',
+          'gtest_tests': 'monyhar_linux_gtests',
         },
         'mixins': [
           'linux-bionic',
@@ -3003,8 +3003,8 @@
           'all',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_gtests',
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'gtest_tests': 'monyhar_gtests',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
       },
       'linux-blink-heap-concurrent-marking-tsan-rel': {
@@ -3012,7 +3012,7 @@
           'linux-bionic',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_gtests',
+          'gtest_tests': 'monyhar_gtests',
         },
         'gtest_args': [
           '--enable-features=BlinkHeapConcurrentMarking',
@@ -3023,8 +3023,8 @@
           'linux-bionic',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_gtests',
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'gtest_tests': 'monyhar_gtests',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
       },
       'linux-blink-optional-highdpi-rel-dummy': {
@@ -3032,7 +3032,7 @@
           'linux-bionic',
         ],
         'test_suites': {
-          'isolated_scripts': 'chromium_web_tests_high_dpi_isolated_scripts',
+          'isolated_scripts': 'monyhar_web_tests_high_dpi_isolated_scripts',
         },
       },
       'linux-blink-rel-dummy': {
@@ -3040,7 +3040,7 @@
           'linux-bionic',
         ],
         'test_suites': {
-          'isolated_scripts': 'chromium_web_tests_and_wpt_webdriver_isolated_scripts',
+          'isolated_scripts': 'monyhar_web_tests_and_wpt_webdriver_isolated_scripts',
         },
       },
       'linux-blink-v8-oilpan': {
@@ -3048,8 +3048,8 @@
           'linux-bionic',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_gtests',
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'gtest_tests': 'monyhar_gtests',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
       },
       'linux-chromeos-code-coverage': {
@@ -3073,21 +3073,21 @@
           'gtest_tests': 'js_code_coverage_browser_tests'
         },
       },
-      'linux-chromium-tests-staging-builder': {
+      'linux-monyhar-tests-staging-builder': {
         'additional_compile_targets': [
           'all',
         ],
         'test_suites': {
-          'scripts': 'chromium_linux_scripts',
+          'scripts': 'monyhar_linux_scripts',
         },
       },
-      'linux-chromium-tests-staging-tests': {
+      'linux-monyhar-tests-staging-tests': {
         'mixins': [
           'linux-bionic',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_linux_gtests',
-          'isolated_scripts': 'chromium_linux_rel_isolated_scripts',
+          'gtest_tests': 'monyhar_linux_gtests',
+          'isolated_scripts': 'monyhar_linux_rel_isolated_scripts',
         },
       },
       'linux-code-coverage': {
@@ -3096,9 +3096,9 @@
           'linux-bionic',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_linux_gtests',
-          'isolated_scripts': 'chromium_linux_rel_isolated_scripts',
-          'scripts': 'chromium_linux_scripts',
+          'gtest_tests': 'monyhar_linux_gtests',
+          'isolated_scripts': 'monyhar_linux_rel_isolated_scripts',
+          'scripts': 'monyhar_linux_scripts',
         },
       },
       'linux-example-builder': {
@@ -3199,8 +3199,8 @@
             'mac_arm64_apple_dtk_experimental',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_mac_gtests_no_nacl_no_nocompile',
-          'isolated_scripts': 'chromium_mac_rel_isolated_scripts',
+          'gtest_tests': 'monyhar_mac_gtests_no_nacl_no_nocompile',
+          'isolated_scripts': 'monyhar_mac_rel_isolated_scripts',
         },
       },
       'mac-code-coverage': {
@@ -3209,7 +3209,7 @@
           'mac_10.13',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_mac_gtests',
+          'gtest_tests': 'monyhar_mac_gtests',
         },
       },
       'mac-hermetic-upgrade-rel': {
@@ -3224,8 +3224,8 @@
           'mac_11_beta_x64',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_mac_gtests_no_nacl',
-          'isolated_scripts': 'chromium_mac_rel_isolated_scripts',
+          'gtest_tests': 'monyhar_mac_gtests_no_nacl',
+          'isolated_scripts': 'monyhar_mac_rel_isolated_scripts',
         },
       },
       'mac-paeverywhere-x64-fyi-dbg': {
@@ -3255,11 +3255,11 @@
       },
       'mac10.12-blink-rel-dummy': {
         'test_suites': {
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
         'swarming': {
           'dimension_sets': [
-            { # This should match Mac10.12 Tests on chromium.mac.
+            { # This should match Mac10.12 Tests on monyhar.mac.
               'cpu': 'x86-64',
               'gpu': '8086:0a2e',
               'hidpi': '0',
@@ -3273,7 +3273,7 @@
           'dimension_sets': [
             {
               # This matches the dimensions for "Chromium Mac10.13" in
-              # chromium_fyi.py.
+              # monyhar_fyi.py.
               'cpu': 'x86-64',
               'gpu': '8086:0a2e',
               'hidpi': '0',
@@ -3283,7 +3283,7 @@
           'hard_timeout': 900,
         },
         'test_suites': {
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
       },
       'mac10.14-blink-rel-dummy': {
@@ -3294,7 +3294,7 @@
           'hard_timeout': 900,
         },
         'test_suites': {
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
       },
       'mac10.15-blink-rel-dummy': {
@@ -3302,7 +3302,7 @@
           'dimension_sets': [
             {
               # This matches the dimensions for "Chromium Mac10.15" in
-              # chromium_fyi.py.
+              # monyhar_fyi.py.
               'cpu': 'x86-64',
               'gpu': '8086:0a2e',
               'hidpi': '0',
@@ -3312,7 +3312,7 @@
           'hard_timeout': 900,
         },
         'test_suites': {
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
       },
       'mac11.0-blink-rel-dummy': {
@@ -3320,7 +3320,7 @@
             'mac_11_x64',
         ],
         'test_suites': {
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
       },
       'win-annotator-rel': {
@@ -3330,7 +3330,7 @@
       },
       'win-backuprefptr-x64-fyi-rel': {
         'test_suites': {
-          'gtest_tests': 'chromium_win_gtests',
+          'gtest_tests': 'monyhar_win_gtests',
         },
         'mixins': [
           'win10',
@@ -3339,7 +3339,7 @@
       },
       'win-backuprefptr-x86-fyi-rel': {
         'test_suites': {
-          'gtest_tests': 'chromium_win_gtests',
+          'gtest_tests': 'monyhar_win_gtests',
         },
         'mixins': [
           'win10',
@@ -3369,7 +3369,7 @@
           'hard_timeout': 900,
         },
         'test_suites': {
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
       },
       'win10-code-coverage': {
@@ -3377,7 +3377,7 @@
           'isolate_profile_data',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_win_gtests',
+          'gtest_tests': 'monyhar_win_gtests',
         },
       },
       'win7-blink-rel-dummy': {
@@ -3390,14 +3390,14 @@
           'hard_timeout': 900,
         },
         'test_suites': {
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
       },
     },
   },
   {
-    'name': 'chromium.goma',
-    'mixins': ['chromium-tester-service-account'],
+    'name': 'monyhar.goma',
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       'Chromium Android ARM 32-bit Goma RBE ToT': {
         'additional_compile_targets': [
@@ -3510,19 +3510,19 @@
       # chromeos-amd64-generic-rel.
       'chromeos-amd64-generic-rel-goma-rbe-staging': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
       },
       'chromeos-amd64-generic-rel-goma-rbe-tot': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
       },
     },
   },
   {
-    'name': 'chromium.goma.fyi',
-    'mixins': ['chromium-tester-service-account'],
+    'name': 'monyhar.goma.fyi',
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       'Mac Builder (dbg) Goma RBE Canary (clobber)': {
         'additional_compile_targets': [
@@ -3565,12 +3565,12 @@
       # chromeos-amd64-generic-rel.
       'chromeos-amd64-generic-rel-goma-rbe-canary': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
       },
       'chromeos-amd64-generic-rel-goma-rbe-latest': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
       },
       'ios-device-goma-rbe-canary-clobber': {
@@ -3650,15 +3650,15 @@
     },
   },
   {
-    'name': 'chromium.gpu',
+    'name': 'monyhar.gpu',
     'forbid_script_tests': True,
     'mixins': [
-      'chromium-tester-service-account',
+      'monyhar-tester-service-account',
       'swarming_containment_auto',
     ],
     'machines': {
       'Android Release (Nexus 5X)': {
-        'browser_config': 'android-chromium',
+        'browser_config': 'android-monyhar',
         'os_type': 'android',
         'skip_merge_script': True,
         'mixins': [
@@ -3768,16 +3768,16 @@
     },
   },
   {
-    'name': 'chromium.gpu.fyi',
+    'name': 'monyhar.gpu.fyi',
     'forbid_script_tests': True,
     'mixins': [
-      'chromium-tester-service-account',
+      'monyhar-tester-service-account',
       'swarming_containment_auto',
     ],
     'machines': {
       # BEGIN Fake builder used as mirror targets for ANGLE's GPU tryservers
       'ANGLE GPU Android Release (Nexus 5X)': {
-        'browser_config': 'android-chromium',
+        'browser_config': 'android-monyhar',
         'os_type': 'android',
         'skip_merge_script': True,
         'mixins': [
@@ -3814,7 +3814,7 @@
       },
       # END Fake builder used as mirror targets for ANGLE's GPU tryservers
       'Android FYI Release (NVIDIA Shield TV)': {
-        'browser_config': 'android-chromium',
+        'browser_config': 'android-monyhar',
         'os_type': 'android',
         'skip_merge_script': True,
         'mixins': [
@@ -3829,7 +3829,7 @@
         },
       },
       'Android FYI Release (Nexus 5)': {
-        'browser_config': 'android-chromium',
+        'browser_config': 'android-monyhar',
         'os_type': 'android',
         'skip_merge_script': True,
         'mixins': [
@@ -3844,7 +3844,7 @@
         },
       },
       'Android FYI Release (Nexus 5X)': {
-        'browser_config': 'android-chromium',
+        'browser_config': 'android-monyhar',
         'os_type': 'android',
         'skip_merge_script': True,
         'mixins': [
@@ -3860,7 +3860,7 @@
         },
       },
       'Android FYI Release (Nexus 6)': {
-        'browser_config': 'android-chromium',
+        'browser_config': 'android-monyhar',
         'os_type': 'android',
         'skip_merge_script': True,
         'mixins': [
@@ -3875,7 +3875,7 @@
         },
       },
       'Android FYI Release (Nexus 9)': {
-        'browser_config': 'android-chromium',
+        'browser_config': 'android-monyhar',
         'os_type': 'android',
         'skip_merge_script': True,
         'mixins': [
@@ -3890,7 +3890,7 @@
         },
       },
       'Android FYI Release (Pixel 2)': {
-        'browser_config': 'android-chromium',
+        'browser_config': 'android-monyhar',
         'os_type': 'android',
         'skip_merge_script': True,
         'mixins': [
@@ -3905,7 +3905,7 @@
         },
       },
       'Android FYI Release (Pixel 4)': {
-        'browser_config': 'android-chromium',
+        'browser_config': 'android-monyhar',
         'os_type': 'android',
         'skip_merge_script': True,
         'mixins': [
@@ -3921,7 +3921,7 @@
       },
       'Android FYI SkiaRenderer GL (Nexus 5X)': {
         'os_type': 'android',
-        'browser_config': 'android-chromium',
+        'browser_config': 'android-monyhar',
         'skip_merge_script': True,
         'mixins': [
           'enable_resultdb',
@@ -3934,7 +3934,7 @@
       },
       'Android FYI SkiaRenderer Vulkan (Pixel 2)': {
         'os_type': 'android',
-        'browser_config': 'android-chromium',
+        'browser_config': 'android-monyhar',
         'skip_merge_script': True,
         'mixins': [
           'enable_resultdb',
@@ -3959,7 +3959,7 @@
       },
       'ChromeOS FYI Release (amd64-generic)': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
         'browser_config': 'cros-chrome',
         'os_type': 'chromeos',
@@ -3974,7 +3974,7 @@
       },
       'ChromeOS FYI Release (kevin)': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
         'browser_config': 'cros-chrome',
         'os_type': 'chromeos',
@@ -4358,7 +4358,7 @@
         # desktop trybots.
       },
       'Optional Android Release (Pixel 4)': {
-        'browser_config': 'android-chromium',
+        'browser_config': 'android-monyhar',
         'os_type': 'android',
         'skip_merge_script': True,
         'mixins': [
@@ -4644,15 +4644,15 @@
           {
             'gpu': '10de:1cb3-23.21.14.1195',
             'os': 'Windows-2008ServerR2-SP1',
-            'pool': 'chromium.tests.gpu',
+            'pool': 'monyhar.tests.gpu',
           },
         ],
       },
     },
   },
   {
-    'name': 'chromium.linux',
-    'mixins': ['chromium-tester-service-account'],
+    'name': 'monyhar.linux',
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       'Cast Audio Linux': {
         'mixins': [
@@ -4663,7 +4663,7 @@
           'cast_test_lists',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_linux_cast_audio_gtests',
+          'gtest_tests': 'monyhar_linux_cast_audio_gtests',
         },
       },
       'Cast Linux': {
@@ -4675,7 +4675,7 @@
           'cast_test_lists',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_linux_cast_video_gtests',
+          'gtest_tests': 'monyhar_linux_cast_video_gtests',
         },
       },
       'Cast Linux Debug': {
@@ -4739,7 +4739,7 @@
           'all'
         ],
         'test_suites': {
-          'scripts': 'chromium_linux_scripts',
+          'scripts': 'monyhar_linux_scripts',
         }
       },
       'Linux Builder (dbg)': {
@@ -4807,8 +4807,8 @@
           'linux-bionic',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_linux_gtests',
-          'isolated_scripts': 'chromium_linux_rel_isolated_scripts',
+          'gtest_tests': 'monyhar_linux_gtests',
+          'isolated_scripts': 'monyhar_linux_rel_isolated_scripts',
         },
       },
       'Linux Tests (dbg)(1)': {
@@ -4816,8 +4816,8 @@
           'linux-bionic',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_linux_gtests',
-          'isolated_scripts': 'chromium_linux_dbg_isolated_scripts',
+          'gtest_tests': 'monyhar_linux_gtests',
+          'isolated_scripts': 'monyhar_linux_dbg_isolated_scripts',
         },
       },
       # For documentation, see //services/network/README.md.
@@ -4850,7 +4850,7 @@
         ],
         'test_suites': {
           'gtest_tests': 'bfcache_linux_gtests',
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
       },
       'linux-bionic-rel': {
@@ -4858,9 +4858,9 @@
           'linux-bionic',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_linux_gtests',
-          'isolated_scripts': 'chromium_linux_rel_isolated_scripts',
-          'scripts': 'chromium_linux_scripts',
+          'gtest_tests': 'monyhar_linux_gtests',
+          'isolated_scripts': 'monyhar_linux_rel_isolated_scripts',
+          'scripts': 'monyhar_linux_scripts',
         },
       },
       'linux-extended-tracing-rel': {
@@ -4883,9 +4883,9 @@
           'linux-trusty',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_linux_gtests',
-          'isolated_scripts': 'chromium_linux_rel_isolated_scripts',
-          'scripts': 'chromium_linux_scripts',
+          'gtest_tests': 'monyhar_linux_gtests',
+          'isolated_scripts': 'monyhar_linux_rel_isolated_scripts',
+          'scripts': 'monyhar_linux_scripts',
         },
       },
       'linux-xenial-rel': {
@@ -4893,23 +4893,23 @@
           'linux-xenial',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_linux_gtests',
-          'isolated_scripts': 'chromium_linux_rel_isolated_scripts',
-          'scripts': 'chromium_linux_scripts',
+          'gtest_tests': 'monyhar_linux_gtests',
+          'isolated_scripts': 'monyhar_linux_rel_isolated_scripts',
+          'scripts': 'monyhar_linux_scripts',
         },
       },
     },
   },
   {
-    'name': 'chromium.mac',
-    'mixins': ['chromium-tester-service-account'],
+    'name': 'monyhar.mac',
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       'Mac Builder': {
         'additional_compile_targets': [
           'all',
         ],
         'test_suites': {
-          'scripts': 'chromium_mac_scripts',
+          'scripts': 'monyhar_mac_scripts',
         },
       },
       'Mac Builder (dbg)': {
@@ -4922,8 +4922,8 @@
             'mac_10.11',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_mac_gtests_no_nacl',
-          'isolated_scripts': 'chromium_mac_rel_isolated_scripts',
+          'gtest_tests': 'monyhar_mac_gtests_no_nacl',
+          'isolated_scripts': 'monyhar_mac_rel_isolated_scripts',
         },
       },
       'Mac10.12 Tests': {
@@ -4931,8 +4931,8 @@
             'mac_mini_10.12',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_mac_gtests_no_nacl',
-          'isolated_scripts': 'chromium_mac_rel_isolated_scripts',
+          'gtest_tests': 'monyhar_mac_gtests_no_nacl',
+          'isolated_scripts': 'monyhar_mac_rel_isolated_scripts',
         },
       },
       'Mac10.13 Tests': {
@@ -4940,8 +4940,8 @@
             'mac_10.13',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_mac_gtests_no_nacl',
-          'isolated_scripts': 'chromium_mac_rel_isolated_scripts',
+          'gtest_tests': 'monyhar_mac_gtests_no_nacl',
+          'isolated_scripts': 'monyhar_mac_rel_isolated_scripts',
         },
       },
       'Mac10.14 Tests': {
@@ -4949,8 +4949,8 @@
             'mac_10.14',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_mac_gtests_no_nacl',
-          'isolated_scripts': 'chromium_mac_rel_isolated_scripts',
+          'gtest_tests': 'monyhar_mac_gtests_no_nacl',
+          'isolated_scripts': 'monyhar_mac_rel_isolated_scripts',
         },
       },
       'Mac10.15 Tests': {
@@ -4959,8 +4959,8 @@
             'mac_10.15',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_mac_gtests_no_nacl',
-          'isolated_scripts': 'chromium_mac_rel_isolated_scripts',
+          'gtest_tests': 'monyhar_mac_gtests_no_nacl',
+          'isolated_scripts': 'monyhar_mac_rel_isolated_scripts',
         },
       },
       'Mac10.15 Tests (dbg)': {
@@ -4968,8 +4968,8 @@
             'mac_10.15',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_mac_gtests',
-          'isolated_scripts': 'chromium_dbg_isolated_scripts',
+          'gtest_tests': 'monyhar_mac_gtests',
+          'isolated_scripts': 'monyhar_dbg_isolated_scripts',
         },
       },
       'Mac11 Tests': {
@@ -4977,8 +4977,8 @@
             'mac_11_x64',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_mac_gtests_no_nacl',
-          'isolated_scripts': 'chromium_mac_rel_isolated_scripts',
+          'gtest_tests': 'monyhar_mac_gtests_no_nacl',
+          'isolated_scripts': 'monyhar_mac_rel_isolated_scripts',
         },
       },
       'ios-device': {
@@ -5044,15 +5044,15 @@
     },
   },
   {
-    'name': 'chromium.memory',
-    'mixins': ['chromium-tester-service-account'],
+    'name': 'monyhar.memory',
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       'Linux ASan LSan Tests (1)': {
         'mixins': [
           'linux-bionic',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_linux_and_gl_gtests',
+          'gtest_tests': 'monyhar_linux_and_gl_gtests',
         },
         'args': [
           '--test-launcher-print-test-stdio=always',
@@ -5063,7 +5063,7 @@
           'linux-xenial',
         ],
         'test_suites': {
-          'gtest_tests': 'sandboxed_chromium_memory_linux_gtests',
+          'gtest_tests': 'sandboxed_monyhar_memory_linux_gtests',
         },
         'args': [
           '--test-launcher-print-test-stdio=always',
@@ -5074,7 +5074,7 @@
           'linux-bionic',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_linux_and_gl_gtests',
+          'gtest_tests': 'monyhar_linux_and_gl_gtests',
         },
       },
       'Linux Chromium OS ASan LSan Tests (1)': {
@@ -5108,7 +5108,7 @@
           'x86-64',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_linux_and_gl_gtests',
+          'gtest_tests': 'monyhar_linux_and_gl_gtests',
         },
         'args': [
           '--test-launcher-print-test-stdio=always',
@@ -5120,7 +5120,7 @@
           'linux-bionic',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_linux_and_gl_and_vulkan_gtests',
+          'gtest_tests': 'monyhar_linux_and_gl_and_vulkan_gtests',
         },
         'args': [
           '--test-launcher-print-test-stdio=always',
@@ -5131,7 +5131,7 @@
           'linux-bionic',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_linux_and_gl_and_vulkan_gtests',
+          'gtest_tests': 'monyhar_linux_and_gl_and_vulkan_gtests',
         },
         'args': [
           '--test-launcher-print-test-stdio=always',
@@ -5142,7 +5142,7 @@
           'mac_x64',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_mac_gtests',
+          'gtest_tests': 'monyhar_mac_gtests',
         },
         'args': [
           '--test-launcher-print-test-stdio=always',
@@ -5153,7 +5153,7 @@
           'linux-xenial',
         ],
         'test_suites': {
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
       },
       'WebKit Linux Leak': {
@@ -5161,7 +5161,7 @@
           'linux-bionic',
         ],
         'test_suites': {
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
         'additional_compile_targets': [
           'blink_tests',
@@ -5172,12 +5172,12 @@
           'linux-bionic',
         ],
         'test_suites': {
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
       },
       'android-asan': {
         'test_suites': {
-          'gtest_tests': 'chromium_android_gtests',
+          'gtest_tests': 'monyhar_android_gtests',
         },
         'mixins': [
           'enable_resultdb',
@@ -5193,12 +5193,12 @@
         'test_suites': {
           # no "_and_gl":gl_unittests doesn't pass yet,
           # https://crbug.com/815183
-          'gtest_tests': 'chromium_linux_gtests',
+          'gtest_tests': 'monyhar_linux_gtests',
         },
       },
       'win-asan': {
         'test_suites': {
-          'gtest_tests': 'chromium_win_gtests',
+          'gtest_tests': 'monyhar_win_gtests',
         },
         'swarming': {
           'dimension_sets': [
@@ -5211,8 +5211,8 @@
     },
   },
   {
-    'name': 'chromium.mojo',
-    'mixins': ['chromium-tester-service-account'],
+    'name': 'monyhar.mojo',
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       'Mojo Android': {
         'swarming': {
@@ -5232,7 +5232,7 @@
       },
       'Mojo ChromiumOS': {
         'test_suites': {
-          'gtest_tests': 'mojo_chromiumos_fyi_gtests',
+          'gtest_tests': 'mojo_monyharos_fyi_gtests',
         },
       },
       'Mojo Linux': {
@@ -5256,12 +5256,12 @@
     },
   },
   {
-    'name': 'chromium.reclient.fyi',
-    'mixins': ['chromium-tester-service-account'],
+    'name': 'monyhar.reclient.fyi',
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       'Linux Builder Re-Client Staging': {
         # Copied from
-        # https://source.chromium.org/chromium/chromium/src/+/main:testing/buildbot/waterfalls.pyl;l=4844-4854;drc=75f767e92e86611728189739fb26f4e2cdf212d9
+        # https://source.monyhar.org/monyhar/monyhar/src/+/main:testing/buildbot/waterfalls.pyl;l=4844-4854;drc=75f767e92e86611728189739fb26f4e2cdf212d9
         'mixins': [
           'isolate_profile_data',
         ],
@@ -5272,10 +5272,10 @@
     },
   },
   {
-    'name': 'chromium.swangle',
-    'mixins': ['chromium-tester-service-account'],
+    'name': 'monyhar.swangle',
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
-      'linux-swangle-chromium-x64' : {
+      'linux-swangle-monyhar-x64' : {
         'os_type': 'linux',
         'browser_config': 'release',
         'mixins': [
@@ -5331,7 +5331,7 @@
           'gtest_tests': 'swangle_gtests',
         },
       },
-      'mac-swangle-chromium-x64' : {
+      'mac-swangle-monyhar-x64' : {
         'os_type': 'mac',
         'browser_config': 'release',
         'mixins': [
@@ -5341,7 +5341,7 @@
           'gpu_telemetry_tests': 'gpu_swangle_telemetry_tests',
         },
       },
-      'win-swangle-chromium-x86' : {
+      'win-swangle-monyhar-x86' : {
         'os_type': 'win',
         'browser_config': 'release',
         'mixins': [
@@ -5414,15 +5414,15 @@
     },
   },
   {
-    'name': 'chromium.updater',
-    'mixins': ['chromium-tester-service-account'],
+    'name': 'monyhar.updater',
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       'mac-arm64-updater-tester-dbg': {
         'swarming': {
           'dimension_sets': [
             {
               'cpu': 'arm-64',
-              'pool': 'chromium.updater.mac',
+              'pool': 'monyhar.updater.mac',
               'os': 'Mac-11',
             }
           ]
@@ -5436,7 +5436,7 @@
           'dimension_sets': [
             {
               'cpu': 'arm-64',
-              'pool': 'chromium.updater.mac',
+              'pool': 'monyhar.updater.mac',
               'os': 'Mac-11',
             }
           ]
@@ -5453,7 +5453,7 @@
           'dimension_sets': [
             {
               'cpu': 'x86-64',
-              'pool': 'chromium.updater.mac',
+              'pool': 'monyhar.updater.mac',
               'os': 'Mac-10.11',
             }
           ]
@@ -5467,7 +5467,7 @@
           'dimension_sets': [
             {
               'cpu': 'x86-64',
-              'pool': 'chromium.updater.mac',
+              'pool': 'monyhar.updater.mac',
               'os': 'Mac-10.11',
             }
           ]
@@ -5481,7 +5481,7 @@
           'dimension_sets': [
             {
               'cpu': 'x86-64',
-              'pool': 'chromium.updater.mac',
+              'pool': 'monyhar.updater.mac',
               'os': 'Mac-10.12',
             }
           ]
@@ -5495,7 +5495,7 @@
           'dimension_sets': [
             {
               'cpu': 'x86-64',
-              'pool': 'chromium.updater.mac',
+              'pool': 'monyhar.updater.mac',
               'os': 'Mac-10.12',
             }
           ]
@@ -5509,7 +5509,7 @@
           'dimension_sets': [
             {
               'cpu': 'x86-64',
-              'pool': 'chromium.updater.mac',
+              'pool': 'monyhar.updater.mac',
               'os': 'Mac-10.13',
             }
           ]
@@ -5523,7 +5523,7 @@
           'dimension_sets': [
             {
               'cpu': 'x86-64',
-              'pool': 'chromium.updater.mac',
+              'pool': 'monyhar.updater.mac',
               'os': 'Mac-10.13',
             }
           ]
@@ -5537,7 +5537,7 @@
           'dimension_sets': [
             {
               'cpu': 'x86-64',
-              'pool': 'chromium.updater.mac',
+              'pool': 'monyhar.updater.mac',
               'os': 'Mac-10.14',
             }
           ]
@@ -5551,7 +5551,7 @@
           'dimension_sets': [
             {
               'cpu': 'x86-64',
-              'pool': 'chromium.updater.mac',
+              'pool': 'monyhar.updater.mac',
               'os': 'Mac-10.14',
             }
           ]
@@ -5565,7 +5565,7 @@
           'dimension_sets': [
             {
               'cpu': 'x86-64',
-              'pool': 'chromium.updater.mac',
+              'pool': 'monyhar.updater.mac',
               'os': 'Mac-10.15',
             }
           ]
@@ -5579,7 +5579,7 @@
           'dimension_sets': [
             {
               'cpu': 'x86-64',
-              'pool': 'chromium.updater.mac',
+              'pool': 'monyhar.updater.mac',
               'os': 'Mac-10.15',
             }
           ]
@@ -5593,7 +5593,7 @@
           'dimension_sets': [
             {
               'cpu': 'x86-64',
-              'pool': 'chromium.updater.mac',
+              'pool': 'monyhar.updater.mac',
               'os': 'Mac-11',
             }
           ]
@@ -5607,7 +5607,7 @@
           'dimension_sets': [
             {
               'cpu': 'x86-64',
-              'pool': 'chromium.updater.mac',
+              'pool': 'monyhar.updater.mac',
               'os': 'Mac-11',
             }
           ]
@@ -5712,8 +5712,8 @@
     }
   },
   {
-    'name': 'chromium.webrtc',
-    'mixins': ['chromium-tester-service-account'],
+    'name': 'monyhar.webrtc',
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       'WebRTC Chromium Android Builder': {},
       'WebRTC Chromium Android Tester': {
@@ -5737,10 +5737,10 @@
           # deprecated in perf dashboard, we add perf_builder_name_alias
           # field to replace perf-id, keeping the metrics in perf dashboard
           # consistent.
-          'chromium-webrtc-rel-linux',
+          'monyhar-webrtc-rel-linux',
         ],
         'test_suites': {
-          'gtest_tests': 'webrtc_chromium_tests_with_baremetal_tests',
+          'gtest_tests': 'webrtc_monyhar_tests_with_baremetal_tests',
         },
       },
       'WebRTC Chromium Mac Builder': {
@@ -5751,11 +5751,11 @@
       },
       'WebRTC Chromium Mac Tester': {
         'mixins': [
-          'chromium-webrtc-rel-mac',
+          'monyhar-webrtc-rel-mac',
           'mac_x64',
         ],
         'test_suites': {
-          'gtest_tests': 'webrtc_chromium_tests_with_baremetal_tests',
+          'gtest_tests': 'webrtc_monyhar_tests_with_baremetal_tests',
         },
       },
       'WebRTC Chromium Win Builder': {
@@ -5766,33 +5766,33 @@
       },
       'WebRTC Chromium Win10 Tester': {
         'mixins': [
-          'chromium-webrtc-rel-win10',
+          'monyhar-webrtc-rel-win10',
         ],
         'test_suites': {
-          'gtest_tests': 'webrtc_chromium_tests_with_baremetal_tests',
+          'gtest_tests': 'webrtc_monyhar_tests_with_baremetal_tests',
         },
       },
       'WebRTC Chromium Win7 Tester': {
         'mixins': [
-          'chromium-webrtc-rel-7',
+          'monyhar-webrtc-rel-7',
         ],
         'test_suites': {
-          'gtest_tests': 'webrtc_chromium_tests_with_baremetal_tests',
+          'gtest_tests': 'webrtc_monyhar_tests_with_baremetal_tests',
         },
       },
       'WebRTC Chromium Win8 Tester': {
         'mixins': [
-          'chromium-webrtc-rel-win8',
+          'monyhar-webrtc-rel-win8',
         ],
         'test_suites': {
-          'gtest_tests': 'webrtc_chromium_tests_with_baremetal_tests',
+          'gtest_tests': 'webrtc_monyhar_tests_with_baremetal_tests',
         },
       },
     },
   },
   {
-    'name': 'chromium.webrtc.fyi',
-    'mixins': ['chromium-tester-service-account'],
+    'name': 'monyhar.webrtc.fyi',
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       # For builders, specify targets if the builder has no associated
       # tester (if it does, it will build what the tester needs).
@@ -5814,7 +5814,7 @@
           'hammerhead',
         ],
         'test_suites': {
-          'gtest_tests': 'webrtc_chromium_simple_gtests',
+          'gtest_tests': 'webrtc_monyhar_simple_gtests',
         },
       },
       'WebRTC Chromium FYI Android Tests (dbg) (M Nexus5X)': {
@@ -5824,7 +5824,7 @@
           'bullhead',
         ],
         'test_suites': {
-          'gtest_tests': 'webrtc_chromium_simple_gtests',
+          'gtest_tests': 'webrtc_monyhar_simple_gtests',
         },
       },
       'WebRTC Chromium FYI Linux Builder (dbg)': {
@@ -5843,7 +5843,7 @@
           'linux-xenial',
         ],
         'test_suites': {
-          'gtest_tests': 'webrtc_chromium_gtests',
+          'gtest_tests': 'webrtc_monyhar_gtests',
         },
       },
       'WebRTC Chromium FYI Mac Builder (dbg)': {
@@ -5861,7 +5861,7 @@
           'mac_mini_10.12',
         ],
         'test_suites': {
-          'gtest_tests': 'webrtc_chromium_gtests',
+          'gtest_tests': 'webrtc_monyhar_gtests',
         },
       },
       'WebRTC Chromium FYI Win Builder (dbg)': {
@@ -5880,7 +5880,7 @@
           'win10',
         ],
         'test_suites': {
-          'gtest_tests': 'webrtc_chromium_gtests',
+          'gtest_tests': 'webrtc_monyhar_gtests',
         },
       },
       'WebRTC Chromium FYI Win7 Tester': {
@@ -5889,7 +5889,7 @@
           'win7',
         ],
         'test_suites': {
-          'gtest_tests': 'webrtc_chromium_gtests',
+          'gtest_tests': 'webrtc_monyhar_gtests',
         },
       },
       'WebRTC Chromium FYI Win8 Tester': {
@@ -5898,27 +5898,27 @@
           'win8',
         ],
         'test_suites': {
-          'gtest_tests': 'webrtc_chromium_gtests',
+          'gtest_tests': 'webrtc_monyhar_gtests',
         },
       },
     },
   },
   {
-    'name': 'chromium.win',
-    'mixins': ['chromium-tester-service-account'],
+    'name': 'monyhar.win',
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       'WebKit Win10': {
         'mixins': [
             'win10',
         ],
         'test_suites': {
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
       },
       'Win 7 Tests x64 (1)': {
         'test_suites': {
-          'gtest_tests': 'chromium_win_gtests',
-          'isolated_scripts': 'chromium_win_rel_isolated_scripts',
+          'gtest_tests': 'monyhar_win_gtests',
+          'isolated_scripts': 'monyhar_win_rel_isolated_scripts',
         },
       },
       # 'Win Builder' and 'Win x64 Builder' should have the same set of
@@ -5928,7 +5928,7 @@
           'pdf_fuzzers'
         ],
         'test_suites': {
-          'scripts': 'chromium_win_scripts',
+          'scripts': 'monyhar_win_scripts',
         },
       },
       'Win x64 Builder': {
@@ -5936,7 +5936,7 @@
           'pdf_fuzzers'
         ],
         'test_suites': {
-          'scripts': 'chromium_win_scripts',
+          'scripts': 'monyhar_win_scripts',
         },
       },
       # 'Win10 Tests x64' and 'Win7 Tests (1)' should have the same set of
@@ -5949,8 +5949,8 @@
           'isolate_profile_data',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_win10_gtests',
-          'isolated_scripts': 'chromium_win_rel_isolated_scripts',
+          'gtest_tests': 'monyhar_win10_gtests',
+          'isolated_scripts': 'monyhar_win_rel_isolated_scripts',
         },
       },
       'Win10 Tests x64 (dbg)': {
@@ -5959,8 +5959,8 @@
           'win10',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_win_gtests',
-          'isolated_scripts': 'chromium_win_dbg_isolated_scripts',
+          'gtest_tests': 'monyhar_win_gtests',
+          'isolated_scripts': 'monyhar_win_dbg_isolated_scripts',
         },
       },
       'Win7 (32) Tests': {
@@ -5974,21 +5974,21 @@
       },
       'Win7 Tests (1)': {
         'test_suites': {
-          'gtest_tests': 'chromium_win_gtests',
-          'isolated_scripts': 'chromium_win_rel_isolated_scripts',
+          'gtest_tests': 'monyhar_win_gtests',
+          'isolated_scripts': 'monyhar_win_rel_isolated_scripts',
         },
       },
       'Win7 Tests (dbg)(1)': {
         'test_suites': {
-          'gtest_tests': 'chromium_win_gtests',
-          'isolated_scripts': 'chromium_dbg_isolated_scripts',
+          'gtest_tests': 'monyhar_win_gtests',
+          'isolated_scripts': 'monyhar_dbg_isolated_scripts',
         },
       },
     },
   },
   {
     'name': 'client.devtools-frontend.integration',
-    'mixins': ['chromium-tester-service-account'],
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       'DevTools Linux': {
         'mixins': [
@@ -6003,9 +6003,9 @@
     },
   },
   {
-    'name': 'client.openscreen.chromium',
+    'name': 'client.openscreen.monyhar',
     'machines': {
-      'chromium_linux64_debug': {
+      'monyhar_linux64_debug': {
         'additional_compile_targets': [
           'chrome/browser/media/router',
           'chrome/browser/media/router:openscreen_unittests',
@@ -6021,7 +6021,7 @@
           'components/openscreen_platform',
         ],
       },
-      'chromium_mac_debug': {
+      'monyhar_mac_debug': {
         'additional_compile_targets': [
           'chrome/browser/media/router',
           'chrome/browser/media/router:openscreen_unittests',
@@ -6044,8 +6044,8 @@
     'machines': {},
   },
   {
-    'name': 'client.v8.chromium',
-    'mixins': ['chromium-tester-service-account'],
+    'name': 'client.v8.monyhar',
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       'Linux - Future': {
         'mixins': [
@@ -6053,8 +6053,8 @@
         ],
         'additional_compile_targets': ['all'],
         'test_suites': {
-          'gtest_tests': 'client_v8_chromium_gtests',
-          'isolated_scripts': 'client_v8_chromium_isolated_scripts',
+          'gtest_tests': 'client_v8_monyhar_gtests',
+          'isolated_scripts': 'client_v8_monyhar_isolated_scripts',
         },
       },
       'Linux - Future (dbg)': {
@@ -6063,8 +6063,8 @@
         ],
         'additional_compile_targets': ['all'],
         'test_suites': {
-          'gtest_tests': 'client_v8_chromium_gtests',
-          'isolated_scripts': 'client_v8_chromium_isolated_scripts',
+          'gtest_tests': 'client_v8_monyhar_gtests',
+          'isolated_scripts': 'client_v8_monyhar_isolated_scripts',
         },
       },
       'Linux V8 API Stability': {
@@ -6074,10 +6074,10 @@
   },
   {
     'name': 'client.v8.fyi',
-    'mixins': ['chromium-tester-service-account'],
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       'Android V8 FYI Release (Nexus 5X)': {
-        'browser_config': 'android-chromium',
+        'browser_config': 'android-monyhar',
         'os_type': 'android',
         'skip_merge_script': True,
         'mixins': [
@@ -6140,7 +6140,7 @@
         'additional_compile_targets': ['blink_tests'],
         'test_suites': {
           'gtest_tests': 'blink_unittests',
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
       },
       'V8 Blink Linux Debug': {
@@ -6150,7 +6150,7 @@
         'additional_compile_targets': ['blink_tests'],
         'test_suites': {
           'gtest_tests': 'blink_unittests',
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
       },
       'V8 Blink Linux Future': {
@@ -6160,7 +6160,7 @@
         'additional_compile_targets': ['blink_tests'],
         'test_suites': {
           'gtest_tests': 'blink_unittests',
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
       },
       'V8 Blink Mac': {
@@ -6175,7 +6175,7 @@
         'additional_compile_targets': ['blink_tests'],
         'test_suites': {
           'gtest_tests': 'blink_unittests',
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
       },
       'V8 Blink Win': {
@@ -6184,7 +6184,7 @@
         ],
         'additional_compile_targets': ['blink_tests'],
         'test_suites': {
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
       },
       'V8 Linux GN': {
@@ -6260,7 +6260,7 @@
     'machines': {
       'chromeos-betty-arc-r-chrome': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
         'test_suites': {
           'gtest_tests': 'chromeos_browser_integration_tests',
@@ -6289,7 +6289,7 @@
       },
       'chromeos-betty-pi-arc-chrome-dchecks': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
         'mixins': [
           'chromeos-betty',
@@ -6301,7 +6301,7 @@
       },
       'chromeos-eve-arc-r-chrome': {
         'additional_compile_targets': [
-          'chromiumos_preflight',
+          'monyharos_preflight',
         ],
         'test_suites': {
           'gtest_tests': 'chromeos_device_gtests',
@@ -6337,8 +6337,8 @@
     },
   },
   {
-    'name': 'tryserver.chromium.android',
-    'mixins': ['chromium-tester-service-account'],
+    'name': 'tryserver.monyhar.android',
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       'android-opus-arm-rel': {
         'mixins': [
@@ -6356,16 +6356,16 @@
           'hammerhead',
         ],
         'test_suites': {
-          'gtest_tests': 'chromium_android_webkit_gtests',
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'gtest_tests': 'monyhar_android_webkit_gtests',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
         'os_type': 'android',
       },
     },
   },
   {
-    'name': 'tryserver.chromium.linux',
-    'mixins': ['chromium-tester-service-account'],
+    'name': 'tryserver.monyhar.linux',
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       'linux-autofill-assistant': {
         'additional_compile_targets': [
@@ -6383,7 +6383,7 @@
           'linux-bionic',
         ],
         'test_suites': {
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
       },
       'linux-layout-tests-edit-ng': {
@@ -6394,14 +6394,14 @@
           'linux-xenial',
         ],
         'test_suites': {
-          'isolated_scripts': 'chromium_webkit_isolated_scripts',
+          'isolated_scripts': 'monyhar_webkit_isolated_scripts',
         },
       },
     },
   },
   {
     'name': 'tryserver.devtools-frontend',
-    'mixins': ['chromium-tester-service-account'],
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
       'devtools_frontend_linux_blink_light_rel': {
         'mixins': [
@@ -6424,9 +6424,9 @@
   },
   {
     'name': 'tryserver.webrtc',
-    'mixins': ['chromium-tester-service-account'],
+    'mixins': ['monyhar-tester-service-account'],
     'machines': {
-      'android_chromium_compile': {
+      'android_monyhar_compile': {
         'additional_compile_targets': [
           'blink_unittests',
           'capture_unittests',
@@ -6436,18 +6436,7 @@
           'remoting_unittests',
         ],
       },
-      'linux_chromium_compile': {
-        'additional_compile_targets': [
-          'blink_unittests',
-          'browser_tests',
-          'capture_unittests',
-          'content_browsertests',
-          'content_unittests',
-          'jingle_unittests',
-          'remoting_unittests',
-        ],
-      },
-      'linux_chromium_compile_dbg': {
+      'linux_monyhar_compile': {
         'additional_compile_targets': [
           'blink_unittests',
           'browser_tests',
@@ -6458,7 +6447,7 @@
           'remoting_unittests',
         ],
       },
-      'mac_chromium_compile': {
+      'linux_monyhar_compile_dbg': {
         'additional_compile_targets': [
           'blink_unittests',
           'browser_tests',
@@ -6469,7 +6458,7 @@
           'remoting_unittests',
         ],
       },
-      'win_chromium_compile': {
+      'mac_monyhar_compile': {
         'additional_compile_targets': [
           'blink_unittests',
           'browser_tests',
@@ -6480,7 +6469,18 @@
           'remoting_unittests',
         ],
       },
-      'win_chromium_compile_dbg': {
+      'win_monyhar_compile': {
+        'additional_compile_targets': [
+          'blink_unittests',
+          'browser_tests',
+          'capture_unittests',
+          'content_browsertests',
+          'content_unittests',
+          'jingle_unittests',
+          'remoting_unittests',
+        ],
+      },
+      'win_monyhar_compile_dbg': {
         'additional_compile_targets': [
           'blink_unittests',
           'browser_tests',

@@ -7,7 +7,7 @@
 # pylint: disable=line-too-long
 #
 # For more on the tags, see
-# https://source.chromium.org/chromium/infra/infra/+/main:go/src/go.chromium.org/luci/resultdb/sink/proto/v1/location_tag.proto
+# https://source.monyhar.org/monyhar/infra/infra/+/main:go/src/go.monyhar.org/luci/resultdb/sink/proto/v1/location_tag.proto
 #
 # pylint: enable=line-too-long
 
@@ -37,7 +37,7 @@ def main():
     'location-tags',
     '-out', args.out,
     '-root', SRC_DIR,
-    '-repo', 'https://chromium.googlesource.com/chromium/src',
+    '-repo', 'https://monyhar.googlesource.com/monyhar/src',
     ])
 
 if __name__ == '__main__':

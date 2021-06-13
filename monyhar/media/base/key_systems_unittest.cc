@@ -35,7 +35,7 @@ const char kUsesAes[] = "x-org.example.usesaes";
 const char kExternal[] = "x-com.example.external";
 
 const char kClearKey[] = "org.w3.clearkey";
-const char kExternalClearKey[] = "org.chromium.externalclearkey";
+const char kExternalClearKey[] = "org.monyhar.externalclearkey";
 
 const char kAudioWebM[] = "audio/webm";
 const char kVideoWebM[] = "video/webm";

@@ -36,7 +36,7 @@ import threading
 
 from blinkpy.common import exit_codes
 from blinkpy.common.path_finder import WEB_TESTS_LAST_COMPONENT
-from blinkpy.common.path_finder import get_chromium_src_dir
+from blinkpy.common.path_finder import get_monyhar_src_dir
 from blinkpy.web_tests.port import base
 from blinkpy.web_tests.port import driver
 from blinkpy.web_tests.port import factory
@@ -55,7 +55,7 @@ symbolizer = None
 # Imports Fuchsia runner modules. This is done dynamically only when FuchsiaPort
 # is instantiated to avoid dependency on Fuchsia runner on other platforms.
 def _import_fuchsia_runner():
-    sys.path.insert(0, os.path.join(get_chromium_src_dir(), 'build/fuchsia'))
+    sys.path.insert(0, os.path.join(get_monyhar_src_dir(), 'build/fuchsia'))
 
     # pylint: disable=import-error
     # pylint: disable=invalid-name
@@ -316,7 +316,7 @@ class FuchsiaPort(base.Port):
         additional_dirs[WEB_TESTS_PATH_PREFIX] = self.web_tests_dir()
         additional_dirs['/gen'] = self.generated_sources_directory()
         additional_dirs['/third_party/blink'] = \
-            self._path_from_chromium_base('third_party', 'blink')
+            self._path_from_monyhar_base('third_party', 'blink')
         super(FuchsiaPort, self).start_http_server(additional_dirs,
                                                    number_of_drivers)
 

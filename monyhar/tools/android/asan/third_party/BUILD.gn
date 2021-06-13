@@ -38,7 +38,7 @@ generate_wrapper("asan_device_setup") {
   data += _lib_paths
 
   data_deps = [
-    "//build/android:devil_chromium_py",
+    "//build/android:devil_monyhar_py",
     "//third_party/catapult/devil",
   ]
 

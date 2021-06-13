@@ -147,7 +147,7 @@ AppCacheURLLoader* AppCacheRequestHandler::MaybeLoadFallbackForRedirect(
   // misinterpret the rules for the new target and cause unnecessary
   // fallbacks/errors, therefore it is better to give up on app-caching in this
   // case. More information in https://crbug.com/141114 and the discussion at
-  // https://chromiumcodereview.appspot.com/10829356.
+  // https://monyharcodereview.appspot.com/10829356.
   if (!maybe_load_resource_executed_)
     return nullptr;
   if (request_->GetURL().GetOrigin() == location.GetOrigin())
@@ -204,7 +204,7 @@ AppCacheURLLoader* AppCacheRequestHandler::MaybeLoadFallbackForResponse(
 
     // Servers can override the fallback behavior with a response header.
     const std::string kFallbackOverrideHeader(
-        "x-chromium-appcache-fallback-override");
+        "x-monyhar-appcache-fallback-override");
     const std::string kFallbackOverrideValue(
         "disallow-fallback");
     std::string header_value;

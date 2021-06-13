@@ -52,7 +52,7 @@ function versionSplit(version) {
 ```
 
 See also:
-[the design doc](https://docs.google.com/a/chromium.org/document/d/1Ee9ggmp6U-lM-w9WmxN5cSLkK9B5YAq14939Woo-JY0/edit).
+[the design doc](https://docs.google.com/a/monyhar.org/document/d/1Ee9ggmp6U-lM-w9WmxN5cSLkK9B5YAq14939Woo-JY0/edit).
 
 ## Typechecking Your Javascript
 
@@ -116,7 +116,7 @@ js_library("make_things_pretty") {
 
 You can locally test that your code compiles on Linux or Mac.  This requires
 [Java](http://www.oracle.com/technetwork/java/javase/downloads/index.html) and a
-[Chrome checkout](https://www.chromium.org/developers/how-tos/get-the-code) (i.e.
+[Chrome checkout](https://www.monyhar.org/developers/how-tos/get-the-code) (i.e.
 python, depot_tools). Note: on Ubuntu, you can probably just run `sudo apt-get
 install openjdk-7-jre`.
 
@@ -147,7 +147,7 @@ In our example code, this error should appear:
 
 ```
 (ERROR) Error in: ui/makes_things_pretty.js
-## /my/home/chromium/src/ui/makes_things_pretty.js:1: ERROR - initializing variable
+## /my/home/monyhar/src/ui/makes_things_pretty.js:1: ERROR - initializing variable
 ## found   : string
 ## required: number
 ## /** @type {number} */ var mensa = wit + 50;
@@ -165,7 +165,7 @@ Hooray! We can catch type errors in JavaScript!
 * Leave all closure targets below other kinds of targets becaure they’re less ‘important’
 
 See also:
-[Closure Compilation with GN](https://docs.google.com/a/chromium.org/document/d/1Ee9ggmp6U-lM-w9WmxN5cSLkK9B5YAq14939Woo-JY0/edit).
+[Closure Compilation with GN](https://docs.google.com/a/monyhar.org/document/d/1Ee9ggmp6U-lM-w9WmxN5cSLkK9B5YAq14939Woo-JY0/edit).
 
 ## Trying your change
 

@@ -1,6 +1,6 @@
 # Block Layout #
 
-This document can be viewed in formatted form [here](https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/renderer/core/layout/ng/BlockLayout.md).
+This document can be viewed in formatted form [here](https://monyhar.googlesource.com/monyhar/src/+/master/third_party/blink/renderer/core/layout/ng/BlockLayout.md).
 
 ## BFC & BFC Offsets ##
 
@@ -13,7 +13,7 @@ below) and floats do not intrude, the exclusion space is completely separate.
 
 Our block layout implementation is based on the principle that children place
 *themselves* within the block formatting context. This information is
-communicated with the optional [NGLayoutResult::BfcOffset](https://cs.chromium.org/chromium/src/third_party/blink/renderer/core/layout/ng/ng_layout_result.h).
+communicated with the optional [NGLayoutResult::BfcOffset](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/core/layout/ng/ng_layout_result.h).
 
 A child's BFCOffset is optional as empty blocks cannot place themselves within
 the BFC. They may be affected by siblings.
@@ -69,7 +69,7 @@ FloatsBFCOffset.
 ---
 
 Once a float is positioned, everything else float related is handled by the
-[ExclusionSpace](https://cs.chromium.org/chromium/src/third_party/blink/renderer/core/layout/ng/ng_exclusion_space.h).
+[ExclusionSpace](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/core/layout/ng/ng_exclusion_space.h).
 
 Mutating the exclusion space only happens by adding additional exclusions.
 

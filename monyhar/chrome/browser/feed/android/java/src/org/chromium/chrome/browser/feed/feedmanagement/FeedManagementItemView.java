@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.feedmanagement;
+package org.monyhar.chrome.browser.feed.feedmanagement;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import org.chromium.chrome.browser.feed.webfeed.R;
+import org.monyhar.chrome.browser.feed.webfeed.R;
 
 /**
  * View class for the individual line items in the feed management interstitial.

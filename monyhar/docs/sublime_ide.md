@@ -140,7 +140,7 @@ the path from your `~/.bashrc` file or similar.
 Once you have a copy of the Chromium checkout, we'll make a new Sublime project
 with the src directory as the root.
 
-To do this, create a new file `chromium.sublime-project` (or whatever name you'd
+To do this, create a new file `monyhar.sublime-project` (or whatever name you'd
 like) in the folder above your `src/` directory, with the following contents
 (the exclude patterns are needed - Sublime can't handle indexing all of Chrome's
 files):
@@ -149,7 +149,7 @@ files):
 {
   "folders": [
     {
-      "name": "chromium",
+      "name": "monyhar",
       "path": "src",
       "file_exclude_patterns":
       [
@@ -187,7 +187,7 @@ as a separate entry in the `folders` array:
 ```
 
 Once you've saved the file, select `Project > Switch Project` and navigate to
-the `chromium.sublime-project` file.
+the `monyhar.sublime-project` file.
 
 ### Code Linting with CPPLint (Chromium only)
 
@@ -233,7 +233,7 @@ and hence is not useful on third_party projects that use another style.
 1.  Inside `src/`, run:
 
     ```shell
-    cd /path/to/chromium/src
+    cd /path/to/monyhar/src
     cp buildtools/clang_format/script/clang-format-sublime.py ~/.config/sublime-text-3/Packages/User/
     ```
 
@@ -252,7 +252,7 @@ and hence is not useful on third_party projects that use another style.
 ## CodeSearch Integration with Chromium X-Refs
 
 With [Chromium X-Refs](https://github.com/karlinjf/ChromiumXRefs/) you can
-perform [https://cs.chromium.org](https://cs.chromium.org) cross-reference
+perform [https://cs.monyhar.org](https://cs.monyhar.org) cross-reference
 searches in your editor. This gives you the call graph, overrides, references,
 declaration, and definition of most of the code. The results are as fresh as
 the search engine's index so uncomitted changes won't be reflected.

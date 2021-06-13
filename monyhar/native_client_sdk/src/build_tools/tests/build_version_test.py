@@ -44,9 +44,9 @@ class TestCase(unittest.TestCase):
 [NaCl SDK] Update build_sdk.py to display Cr-Commit-Position in README.
 
 BUG=none
-R=bradnelson@google.com, bradnelson@chromium.org
+R=bradnelson@google.com, bradnelson@monyhar.org
 
-Review URL: https://codereview.chromium.org/495423010
+Review URL: https://codereview.monyhar.org/495423010
 
 Cr-Commit-Position: refs/heads/master@{#292480}"""
     self.mockGitCommand(ProcInfo(0, output))
@@ -61,9 +61,9 @@ ae4b444a0aa09a1fa73e59b180d7d957b9a36bf2
 [NaCl SDK] Update build_sdk.py to display Cr-Commit-Position in README.
 
 BUG=none
-R=bradnelson@google.com, bradnelson@chromium.org
+R=bradnelson@google.com, bradnelson@monyhar.org
 
-Review URL: https://codereview.chromium.org/495423010
+Review URL: https://codereview.monyhar.org/495423010
 
 Cr-Commit-Position: refs/heads/master@{#292480}"""
     self.mockGitCommand(ProcInfo(0, output0), ProcInfo(0, output1))

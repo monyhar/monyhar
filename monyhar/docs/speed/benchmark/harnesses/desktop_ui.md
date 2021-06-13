@@ -2,7 +2,7 @@
 
 ## Overview
 
-Desktop UI Benchmark is used to measure and monitor Desktop UI performance based on the [Telemetry](https://chromium.googlesource.com/catapult/+/HEAD/telemetry/README.md) framework.
+Desktop UI Benchmark is used to measure and monitor Desktop UI performance based on the [Telemetry](https://monyhar.googlesource.com/catapult/+/HEAD/telemetry/README.md) framework.
 It captures important metrics such as
 
 * Initial load time

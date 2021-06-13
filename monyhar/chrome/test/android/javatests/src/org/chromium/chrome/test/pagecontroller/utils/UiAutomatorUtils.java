@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.pagecontroller.utils;
+package org.monyhar.chrome.test.pagecontroller.utils;
 
 import android.content.Context;
 import android.content.Intent;
@@ -18,7 +18,7 @@ import android.support.test.uiautomator.UiObject2;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 import java.io.BufferedReader;
 import java.io.File;

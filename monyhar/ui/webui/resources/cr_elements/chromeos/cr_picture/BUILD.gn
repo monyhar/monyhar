@@ -27,7 +27,7 @@ js_library("cr_picture_list") {
   deps = [
     ":cr_picture_types",
     ":png",
-    "//third_party/polymer/v1_0/components-chromium/iron-selector:iron-selector-extracted",
+    "//third_party/polymer/v1_0/components-monyhar/iron-selector:iron-selector-extracted",
     "//ui/webui/resources/js:assert",
   ]
 }
@@ -131,7 +131,7 @@ js_library("cr_picture_list.m") {
   deps = [
     ":cr_picture_types.m",
     ":png.m",
-    "//third_party/polymer/v3_0/components-chromium/iron-selector:iron-selector",
+    "//third_party/polymer/v3_0/components-monyhar/iron-selector:iron-selector",
     "//ui/webui/resources/js:assert.m",
   ]
   extra_deps = [ ":cr_picture_list_module" ]

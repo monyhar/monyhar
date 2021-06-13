@@ -12,7 +12,7 @@ This script creates a temporary build directory, where it will, for each
 of the dependencies specified in `build.gradle`, take care of the following:
 
   - Download the library
-  - Generate a README.chromium file
+  - Generate a README.monyhar file
   - Download the LICENSE
   - Generate a GN target in BUILD.gn
   - Generate .info files for AAR libraries
@@ -58,16 +58,16 @@ Full steps to add a new third party library or update existing libraries:
    [`//docs/adding_to_third_party.md`][docs_link] for the review.
 
 If you are updating any of the gms dependencies, please ensure that the license
-file that they use, explained in the [README.chromium][readme_chromium_link] is
+file that they use, explained in the [README.monyhar][readme_monyhar_link] is
 up-to-date with the one on android's [website][android_sdk_link], last updated
 date is at the bottom.
 
-[3pp_bot]: https://ci.chromium.org/p/chromium/builders/ci/3pp-linux-amd64-packager
+[3pp_bot]: https://ci.monyhar.org/p/monyhar/builders/ci/3pp-linux-amd64-packager
 [cipd_and_3pp_doc]: ../../docs/cipd_and_3pp.md
 [owners_link]: http://go/android-deps-owners
 [docs_link]: ../../docs/adding_to_third_party.md
 [android_sdk_link]: https://developer.android.com/studio/terms
-[readme_chromium_link]: ./README.chromium
+[readme_monyhar_link]: ./README.monyhar
 
 ### Implementation notes:
 The script invokes a Gradle plugin to leverage its dependency resolution

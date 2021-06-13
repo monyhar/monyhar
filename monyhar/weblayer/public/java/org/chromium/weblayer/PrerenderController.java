@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer;
+package org.monyhar.weblayer;
 
 import android.net.Uri;
 import android.os.RemoteException;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.weblayer_private.interfaces.APICallException;
-import org.chromium.weblayer_private.interfaces.IPrerenderController;
-import org.chromium.weblayer_private.interfaces.IProfile;
+import org.monyhar.weblayer_private.interfaces.APICallException;
+import org.monyhar.weblayer_private.interfaces.IPrerenderController;
+import org.monyhar.weblayer_private.interfaces.IProfile;
 
 /**
  * PrerenderController enables prerendering of urls.
@@ -50,7 +50,7 @@ public class PrerenderController {
      * On low end devices or when the device has too many renderers running and prerender is
      * considered expensive, we do preconnect instead. Preconnect involves creating connections with
      * the server without actually fetching any resources. For more information on preconnect, see
-     * https://www.chromium.org/developers/design-documents/network-stack/preconnect.
+     * https://www.monyhar.org/developers/design-documents/network-stack/preconnect.
      * @param uri The uri to prerender.
      */
     public void schedulePrerender(@NonNull Uri uri) {

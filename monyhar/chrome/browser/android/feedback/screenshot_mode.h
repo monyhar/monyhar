@@ -8,7 +8,7 @@
 namespace chrome {
 namespace android {
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.feedback
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.feedback
 enum ScreenshotMode {
   // The screenshot mode will be decided based on the activity's state.
   DEFAULT = 0,

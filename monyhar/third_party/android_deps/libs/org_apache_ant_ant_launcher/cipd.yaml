@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@1.8.0.cr0
-package: chromium/third_party/android_deps/libs/org_apache_ant_ant_launcher
+package: monyhar/third_party/android_deps/libs/org_apache_ant_ant_launcher
 description: "ant-launcher"
 data:
 - file: ant-launcher-1.8.0.jar

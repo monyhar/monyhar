@@ -711,7 +711,7 @@ class GLES2_IMPL_EXPORT GLES2Implementation : public GLES2Interface,
 
   base::queue<int32_t> swap_buffers_tokens_;
 
-  ExtensionStatus chromium_framebuffer_multisample_;
+  ExtensionStatus monyhar_framebuffer_multisample_;
 
   GLStaticState static_state_;
   ClientContextState state_;

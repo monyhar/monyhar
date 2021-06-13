@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui.default_browser_promo;
+package org.monyhar.chrome.browser.ui.default_browser_promo;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -10,8 +10,8 @@ import android.app.role.RoleManager;
 import android.content.Context;
 import android.content.Intent;
 
-import org.chromium.chrome.browser.ui.default_browser_promo.DefaultBrowserPromoUtils.DefaultBrowserState;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.chrome.browser.ui.default_browser_promo.DefaultBrowserPromoUtils.DefaultBrowserState;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Manage all types of default browser promo dialogs and listen to the activity state change to

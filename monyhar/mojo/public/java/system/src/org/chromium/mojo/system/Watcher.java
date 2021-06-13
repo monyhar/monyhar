@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo.system;
+package org.monyhar.mojo.system;
 
-import org.chromium.mojo.system.Core.HandleSignals;
+import org.monyhar.mojo.system.Core.HandleSignals;
 
 /**
  * Watches a handle for signals being satisfied.

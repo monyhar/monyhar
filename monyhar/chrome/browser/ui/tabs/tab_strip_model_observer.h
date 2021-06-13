@@ -55,7 +55,7 @@ class TabStripModelChange {
 
   // Base class for all changes.
   // TODO(dfried): would love to change this whole thing into a std::variant,
-  // but C++17 features are not yet approved for use in chromium.
+  // but C++17 features are not yet approved for use in monyhar.
   struct Delta {
     virtual ~Delta() = default;
 

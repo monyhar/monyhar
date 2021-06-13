@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.followmanagement;
+package org.monyhar.chrome.browser.feed.followmanagement;
 
 import android.view.View;
 
-import org.chromium.base.Log;
-import org.chromium.chrome.browser.feed.webfeed.R;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.browser.feed.webfeed.R;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 class FollowManagementItemViewBinder {
     private static final String TAG = "FMItemViewBinder";

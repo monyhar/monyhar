@@ -1,9 +1,9 @@
 # Device Motion / Orientation API related
-per-file DeviceSensorsTest.java=timvolodine@chromium.org
+per-file DeviceSensorsTest.java=timvolodine@monyhar.org
 
 # Media Session API related
-per-file MediaSession*.java=steimel@chromium.org
+per-file MediaSession*.java=steimel@monyhar.org
 
 # Java Bridge
-per-file JavaBridge*=michaelbai@chromium.org
-per-file JavaBridge*=torne@chromium.org
+per-file JavaBridge*=michaelbai@monyhar.org
+per-file JavaBridge*=torne@monyhar.org

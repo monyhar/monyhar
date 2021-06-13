@@ -146,7 +146,7 @@ TEST_F(OSExchangeDataTest, TestFileToURLConversion) {
 
 TEST_F(OSExchangeDataTest, TestPickledData) {
   const ClipboardFormatType kTestFormat =
-      ClipboardFormatType::GetType("application/vnd.chromium.test");
+      ClipboardFormatType::GetType("application/vnd.monyhar.test");
 
   base::Pickle saved_pickle;
   saved_pickle.WriteInt(1);

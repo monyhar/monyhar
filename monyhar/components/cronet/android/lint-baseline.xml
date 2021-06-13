@@ -18,7 +18,7 @@
         errorLine1="        return mWrapped.getInstalledPackages(flags);"
         errorLine2="                        ~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="../../third_party/android_sdk/public/extras/chromium/support/src/org/chromium/android/support/PackageManagerWrapper.java"
+            file="../../third_party/android_sdk/public/extras/monyhar/support/src/org/monyhar/android/support/PackageManagerWrapper.java"
             line="115"
             column="25"/>
     </issue>
@@ -29,7 +29,7 @@
         errorLine1="        return mWrapped.getInstalledApplications(flags);"
         errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="../../third_party/android_sdk/public/extras/chromium/support/src/org/chromium/android/support/PackageManagerWrapper.java"
+            file="../../third_party/android_sdk/public/extras/monyhar/support/src/org/monyhar/android/support/PackageManagerWrapper.java"
             line="210"
             column="25"/>
     </issue>
@@ -40,7 +40,7 @@
         errorLine1="        return mWrapped.queryIntentActivities(intent, flags);"
         errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="../../third_party/android_sdk/public/extras/chromium/support/src/org/chromium/android/support/PackageManagerWrapper.java"
+            file="../../third_party/android_sdk/public/extras/monyhar/support/src/org/monyhar/android/support/PackageManagerWrapper.java"
             line="240"
             column="25"/>
     </issue>
@@ -51,7 +51,7 @@
         errorLine1="        return mWrapped.queryBroadcastReceivers(intent, flags);"
         errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="../../third_party/android_sdk/public/extras/chromium/support/src/org/chromium/android/support/PackageManagerWrapper.java"
+            file="../../third_party/android_sdk/public/extras/monyhar/support/src/org/monyhar/android/support/PackageManagerWrapper.java"
             line="251"
             column="25"/>
     </issue>
@@ -62,7 +62,7 @@
         errorLine1="        return mWrapped.queryIntentServices(intent, flags);"
         errorLine2="                        ~~~~~~~~~~~~~~~~~~~">
         <location
-            file="../../third_party/android_sdk/public/extras/chromium/support/src/org/chromium/android/support/PackageManagerWrapper.java"
+            file="../../third_party/android_sdk/public/extras/monyhar/support/src/org/monyhar/android/support/PackageManagerWrapper.java"
             line="261"
             column="25"/>
     </issue>
@@ -73,7 +73,7 @@
         errorLine1="        return mWrapped.queryContentProviders(processName, uid, flags);"
         errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="../../third_party/android_sdk/public/extras/chromium/support/src/org/chromium/android/support/PackageManagerWrapper.java"
+            file="../../third_party/android_sdk/public/extras/monyhar/support/src/org/monyhar/android/support/PackageManagerWrapper.java"
             line="276"
             column="25"/>
     </issue>

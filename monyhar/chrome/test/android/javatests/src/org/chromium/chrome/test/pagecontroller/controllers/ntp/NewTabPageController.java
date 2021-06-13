@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.pagecontroller.controllers.ntp;
+package org.monyhar.chrome.test.pagecontroller.controllers.ntp;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.test.pagecontroller.controllers.PageController;
-import org.chromium.chrome.test.pagecontroller.controllers.tabswitcher.TabSwitcherController;
-import org.chromium.chrome.test.pagecontroller.controllers.urlpage.UrlPage;
-import org.chromium.chrome.test.pagecontroller.utils.IUi2Locator;
-import org.chromium.chrome.test.pagecontroller.utils.Ui2Locators;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.test.pagecontroller.controllers.PageController;
+import org.monyhar.chrome.test.pagecontroller.controllers.tabswitcher.TabSwitcherController;
+import org.monyhar.chrome.test.pagecontroller.controllers.urlpage.UrlPage;
+import org.monyhar.chrome.test.pagecontroller.utils.IUi2Locator;
+import org.monyhar.chrome.test.pagecontroller.utils.Ui2Locators;
 
 /**
  * New Tab Page Page Controller, handles either Feed or Zine implementations.

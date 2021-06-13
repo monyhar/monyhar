@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.base;
+package org.monyhar.ui.base;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -19,8 +19,8 @@ import org.robolectric.Shadows;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowMimeTypeMap;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
 
 import java.io.File;
 import java.io.IOException;
@@ -181,7 +181,7 @@ public class SelectFileDialogTest {
         SelectFileDialog selectFileDialog = new SelectFileDialog(0);
 
         // Obtain the data directory for RoboElectric. It should look something like:
-        //   /tmp/robolectric-Method_[testName][number]/org.chromium.test.ui-dataDir
+        //   /tmp/robolectric-Method_[testName][number]/org.monyhar.test.ui-dataDir
         // ... where [testName] is the name of this test function and [number] is a unique id.
         String dataDir =
                 ContextCompat.getDataDir(ContextUtils.getApplicationContext()).getCanonicalPath();

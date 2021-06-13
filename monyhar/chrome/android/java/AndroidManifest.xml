@@ -167,17 +167,17 @@ by a child template that "extends" this file.
 
     <!-- Set android:largeHeap to "true" to allow more than the default
          Java heap limit (32Mb on Nexus S, 48Mb on Xoom). -->
-      <application android:name="{% block application_name %}org.chromium.chrome.browser.base.SplitChromeApplication{% endblock %}"
+      <application android:name="{% block application_name %}org.monyhar.chrome.browser.base.SplitChromeApplication{% endblock %}"
         android:icon="@drawable/ic_launcher"
         android:roundIcon="@drawable/ic_launcher_round"
         android:label="{% block application_label %}@string/app_name{% endblock %}"
         android:largeHeap="false"
         android:manageSpaceActivity="@string/manage_space_activity"
         android:supportsRtl="true"
-        android:zygotePreloadName="org.chromium.content.app.ZygotePreload"
+        android:zygotePreloadName="org.monyhar.content.app.ZygotePreload"
         {% if backup_key is defined %}
         android:allowBackup="true"
-        android:backupAgent="org.chromium.chrome.browser.ChromeBackupAgent"
+        android:backupAgent="org.monyhar.chrome.browser.ChromeBackupAgent"
         android:fullBackupOnly="false"
         android:restoreAnyVersion="true"
         {% else %}
@@ -185,7 +185,7 @@ by a child template that "extends" this file.
         {% endif %}
         android:networkSecurityConfig="@xml/network_security_config"
         android:allowAudioPlaybackCapture="false"
-        android:appComponentFactory="org.chromium.chrome.browser.base.SplitCompatAppComponentFactory"
+        android:appComponentFactory="org.monyhar.chrome.browser.base.SplitCompatAppComponentFactory"
         {% block extra_application_attributes %}{% endblock %}>
 
       {% macro application_definitions() %}
@@ -195,7 +195,7 @@ by a child template that "extends" this file.
              Since this activity (shown in the launcher) and the application
              (shown in Android's Settings/Apps list) share the same label, we
              do not specify one here to allow it to inherit from the app. -->
-        <activity android:name="org.chromium.chrome.browser.document.ChromeLauncherActivity"
+        <activity android:name="org.monyhar.chrome.browser.document.ChromeLauncherActivity"
             android:theme="@style/LauncherTheme"
             android:relinquishTaskIdentity="true"
             android:taskAffinity=""
@@ -203,7 +203,7 @@ by a child template that "extends" this file.
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|mcc|mnc|screenLayout|smallestScreenSize|uiMode|density">
         </activity>
         <activity-alias android:name="com.google.android.apps.chrome.IntentDispatcher"
-            android:targetActivity="org.chromium.chrome.browser.document.ChromeLauncherActivity"
+            android:targetActivity="org.monyhar.chrome.browser.document.ChromeLauncherActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -332,18 +332,18 @@ by a child template that "extends" this file.
                 android:resource="@xml/searchable" />
         </activity-alias>
         <activity-alias android:name="com.google.android.apps.chrome.TranslateDispatcher"
-            android:targetActivity="org.chromium.chrome.browser.document.ChromeLauncherActivity"
+            android:targetActivity="org.monyhar.chrome.browser.document.ChromeLauncherActivity"
             android:exported="true"
             {% if channel == 'stable' %}
             android:permission="{{ manifest_package }}.permission.TRANSLATE"
             {% endif %} >
             <intent-filter>
-                <action android:name="org.chromium.chrome.browser.translate.TRANSLATE_TAB" />
+                <action android:name="org.monyhar.chrome.browser.translate.TRANSLATE_TAB" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity-alias>
 
-        <activity android:name="org.chromium.chrome.browser.media.MediaLauncherActivity"
+        <activity android:name="org.monyhar.chrome.browser.media.MediaLauncherActivity"
             android:theme="@android:style/Theme.NoDisplay"
             android:excludeFromRecents="true"
             android:exported="true"
@@ -359,7 +359,7 @@ by a child template that "extends" this file.
             </intent-filter>
         </activity>
 
-        <activity android:name="org.chromium.chrome.browser.media.PictureInPictureActivity"
+        <activity android:name="org.monyhar.chrome.browser.media.PictureInPictureActivity"
                   android:exported="false"
                   android:noHistory="true"
                   android:theme="@style/Theme.Chromium.Activity"
@@ -373,8 +373,8 @@ by a child template that "extends" this file.
              without disabling video and image handling. We need this because there are memory
              restrictions for music players on Android Go, so we want to only handle video and
              images in that case. -->
-        <activity-alias android:name="org.chromium.chrome.browser.media.AudioLauncherActivity"
-            android:targetActivity="org.chromium.chrome.browser.media.MediaLauncherActivity"
+        <activity-alias android:name="org.monyhar.chrome.browser.media.AudioLauncherActivity"
+            android:targetActivity="org.monyhar.chrome.browser.media.MediaLauncherActivity"
             android:theme="@android:style/Theme.NoDisplay"
             android:excludeFromRecents="true"
             android:exported="true"
@@ -389,38 +389,38 @@ by a child template that "extends" this file.
             </intent-filter>
         </activity-alias>
 
-        <activity android:name="org.chromium.chrome.browser.LauncherShortcutActivity"
+        <activity android:name="org.monyhar.chrome.browser.LauncherShortcutActivity"
             android:theme="@android:style/Theme.NoDisplay"
             android:taskAffinity=""
             android:excludeFromRecents="true"
             android:exported="false" />
 
-        <activity android:name="org.chromium.chrome.browser.incognito.IncognitoTabLauncher"
+        <activity android:name="org.monyhar.chrome.browser.incognito.IncognitoTabLauncher"
             android:theme="@android:style/Theme.NoDisplay"
             android:taskAffinity=""
             android:enabled="false"
             android:excludeFromRecents="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="org.chromium.chrome.browser.incognito.OPEN_PRIVATE_TAB" />
+                <action android:name="org.monyhar.chrome.browser.incognito.OPEN_PRIVATE_TAB" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
-        <activity android:name="org.chromium.chrome.browser.app.reengagement.ReengagementActivity"
+        <activity android:name="org.monyhar.chrome.browser.app.reengagement.ReengagementActivity"
             android:theme="@android:style/Theme.Translucent"
             android:taskAffinity=""
             android:excludeFromRecents="true"
             android:exported="false" />
 
-        <receiver android:name="org.chromium.chrome.browser.sharing.click_to_call.ClickToCallMessageHandler$PhoneUnlockedReceiver" android:exported="true">
+        <receiver android:name="org.monyhar.chrome.browser.sharing.click_to_call.ClickToCallMessageHandler$PhoneUnlockedReceiver" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.USER_PRESENT" />
             </intent-filter>
         </receiver>
 
         <!-- Upgrade related -->
-        <receiver android:name="org.chromium.chrome.browser.upgrade.PackageReplacedBroadcastReceiver"
+        <receiver android:name="org.monyhar.chrome.browser.upgrade.PackageReplacedBroadcastReceiver"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
@@ -428,7 +428,7 @@ by a child template that "extends" this file.
         </receiver>
 
         <!-- Locale related -->
-        <receiver android:name="org.chromium.chrome.browser.notifications.channels.LocaleChangedBroadcastReceiver"
+        <receiver android:name="org.monyhar.chrome.browser.notifications.channels.LocaleChangedBroadcastReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.LOCALE_CHANGED" />
@@ -436,7 +436,7 @@ by a child template that "extends" this file.
         </receiver>
 
         <!-- Custom Tabs -->
-        <activity android:name="org.chromium.chrome.browser.customtabs.CustomTabActivity"
+        <activity android:name="org.monyhar.chrome.browser.customtabs.CustomTabActivity"
             android:theme="@style/Theme.Chromium.Activity"
             android:exported="false"
             {{ self.chrome_activity_common() }}
@@ -445,7 +445,7 @@ by a child template that "extends" this file.
             {{ self.supports_vr() }}
             {{ self.extra_web_rendering_activity_definitions() }}
         </activity>
-        <activity android:name="org.chromium.chrome.browser.customtabs.TranslucentCustomTabActivity"
+        <activity android:name="org.monyhar.chrome.browser.customtabs.TranslucentCustomTabActivity"
                   android:theme="@style/Theme.Chromium.Activity.FakeTranslucent"
                   android:exported="false"
             {{ self.chrome_activity_common() }}
@@ -455,7 +455,7 @@ by a child template that "extends" this file.
             {{ self.extra_web_rendering_activity_definitions() }}
         </activity>
         <!-- ChromeTabbedActivity related -->
-        <activity android:name="org.chromium.chrome.browser.ChromeTabbedActivity"
+        <activity android:name="org.monyhar.chrome.browser.ChromeTabbedActivity"
             android:theme="@style/Theme.Chromium.TabbedMode"
             android:exported="true"
             android:launchMode="singleTask"
@@ -478,7 +478,7 @@ by a child template that "extends" this file.
             -->
             {% block supports_vr %}
             <intent-filter>
-                <action android:name="org.chromium.chrome.browser.dummy.action" />
+                <action android:name="org.monyhar.chrome.browser.dummy.action" />
                 <category android:name="com.google.intent.category.DAYDREAM" />
                 <category android:name="com.google.intent.category.CARDBOARD" />
             </intent-filter>
@@ -488,7 +488,7 @@ by a child template that "extends" this file.
             {% endblock %}
         </activity>
         <activity-alias android:name="com.google.android.apps.chrome.Main"
-            android:targetActivity="org.chromium.chrome.browser.ChromeTabbedActivity"
+            android:targetActivity="org.monyhar.chrome.browser.ChromeTabbedActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -505,7 +505,7 @@ by a child template that "extends" this file.
             {{ self.supports_vr() }}
             {{ self.extra_web_rendering_activity_definitions() }}
         </activity-alias>
-        <activity android:name="org.chromium.chrome.browser.ChromeTabbedActivity2"
+        <activity android:name="org.monyhar.chrome.browser.ChromeTabbedActivity2"
             android:theme="@style/Theme.Chromium.TabbedMode"
             android:exported="false"
             android:taskAffinity="{{ manifest_package }}.ChromeTabbedActivity2"
@@ -516,7 +516,7 @@ by a child template that "extends" this file.
             {{ self.supports_vr() }}
             {{ self.extra_web_rendering_activity_definitions() }}
         </activity>
-        <activity android:name="org.chromium.chrome.browser.multiwindow.MultiInstanceChromeTabbedActivity"
+        <activity android:name="org.monyhar.chrome.browser.multiwindow.MultiInstanceChromeTabbedActivity"
             android:theme="@style/Theme.Chromium.TabbedMode"
             android:exported="false"
             {{ self.chrome_activity_common() }}>
@@ -527,21 +527,21 @@ by a child template that "extends" this file.
             TODO(crbug.com/1093292): investigate why
             @android:style/Theme.NoDisplay can't be used here.
         -->
-        <activity android:name="org.chromium.chrome.browser.sync.ui.TrustedVaultKeyRetrievalProxyActivity"
+        <activity android:name="org.monyhar.chrome.browser.sync.ui.TrustedVaultKeyRetrievalProxyActivity"
             android:theme="@style/Theme.MaterialComponents"
             android:excludeFromRecents="true"
             android:exported="false">
         </activity>
-        <activity android:name="org.chromium.chrome.browser.sync.ui.PassphraseActivity"
+        <activity android:name="org.monyhar.chrome.browser.sync.ui.PassphraseActivity"
             android:theme="@style/Theme.Chromium.Activity"
             android:autoRemoveFromRecents="true">
         </activity>
-        <activity android:name="org.chromium.chrome.browser.firstrun.LightweightFirstRunActivity"
+        <activity android:name="org.monyhar.chrome.browser.firstrun.LightweightFirstRunActivity"
             android:theme="@style/Theme.Chromium.AlertDialog.NoActionBar"
             android:launchMode="singleInstance"
             {{ self.first_run_activity_common() }}>
         </activity>
-        <activity android:name="org.chromium.chrome.browser.firstrun.FirstRunActivity"
+        <activity android:name="org.monyhar.chrome.browser.firstrun.FirstRunActivity"
             android:theme="@style/Theme.Chromium.DialogWhenLarge"
             android:launchMode="singleTop"
             {% block first_run_activity_common %}
@@ -552,13 +552,13 @@ by a child template that "extends" this file.
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|mcc|mnc|screenLayout|smallestScreenSize"
             {% endblock %}>
         </activity>
-        <activity android:name="org.chromium.chrome.browser.firstrun.TabbedModeFirstRunActivity"
+        <activity android:name="org.monyhar.chrome.browser.firstrun.TabbedModeFirstRunActivity"
             android:theme="@style/Theme.Chromium.TabbedMode"
             android:launchMode="singleTop"
             {{ self.first_run_activity_common() }}>
         </activity>
         {% if enable_vr == "true" %}
-        <activity android:name="org.chromium.chrome.browser.vr.VrFirstRunActivity"
+        <activity android:name="org.monyhar.chrome.browser.vr.VrFirstRunActivity"
             android:exported="false"
             android:launchMode="singleInstance"
             android:theme="@style/VrActivityTheme"
@@ -568,30 +568,30 @@ by a child template that "extends" this file.
             {{ self.supports_vr() }}
         </activity>
         {% endif %}
-        <activity android:name="org.chromium.chrome.browser.signin.SyncConsentActivity"
+        <activity android:name="org.monyhar.chrome.browser.signin.SyncConsentActivity"
             android:theme="@style/Theme.Chromium.DialogWhenLarge"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|mcc|mnc|screenLayout|smallestScreenSize"
             android:exported="false">
         </activity>
-        <activity android:name="org.chromium.chrome.browser.settings.SettingsActivity"
+        <activity android:name="org.monyhar.chrome.browser.settings.SettingsActivity"
             android:theme="@style/Theme.Chromium.Settings"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|mcc|mnc|screenLayout|smallestScreenSize"
             android:label="@string/settings"
             android:exported="false">
         </activity>
-        <activity android:name="org.chromium.chrome.browser.site_settings.ManageSpaceActivity"
+        <activity android:name="org.monyhar.chrome.browser.site_settings.ManageSpaceActivity"
             android:theme="@style/Theme.Chromium.Settings.ManageSpace"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|mcc|mnc|screenLayout|smallestScreenSize"
             android:label="@string/storage_management_activity_label"
             android:exported="false">
         </activity>
-        <activity android:name="org.chromium.chrome.browser.bookmarks.BookmarkActivity"
+        <activity android:name="org.monyhar.chrome.browser.bookmarks.BookmarkActivity"
             android:theme="@style/Theme.Chromium.Activity.Fullscreen"
             android:exported="false"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|mcc|mnc|screenLayout|smallestScreenSize">
         </activity>
-        <activity android:name="org.chromium.chrome.browser.bookmarks.BookmarkAddActivity"
+        <activity android:name="org.monyhar.chrome.browser.bookmarks.BookmarkAddActivity"
             android:theme="@android:style/Theme.NoDisplay"
             android:excludeFromRecents="true"
             android:windowSoftInputMode="stateHidden"
@@ -602,19 +602,19 @@ by a child template that "extends" this file.
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="org.chromium.chrome.browser.bookmarks.BookmarkEditActivity"
+        <activity android:name="org.monyhar.chrome.browser.bookmarks.BookmarkEditActivity"
             android:theme="@style/Theme.Chromium.DialogWhenLarge"
             android:windowSoftInputMode="stateHidden"
             android:exported="false"
             android:label="@string/edit_bookmark"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|mcc|mnc|screenLayout|smallestScreenSize">
         </activity>
-        <activity android:name="org.chromium.chrome.browser.bookmarks.BookmarkAddEditFolderActivity"
+        <activity android:name="org.monyhar.chrome.browser.bookmarks.BookmarkAddEditFolderActivity"
             android:theme="@style/Theme.Chromium.DialogWhenLarge"
             android:exported="false"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|mcc|mnc|screenLayout|smallestScreenSize">
         </activity>
-        <activity android:name="org.chromium.chrome.browser.bookmarks.BookmarkFolderSelectActivity"
+        <activity android:name="org.monyhar.chrome.browser.bookmarks.BookmarkFolderSelectActivity"
             android:theme="@style/Theme.Chromium.DialogWhenLarge"
             android:windowSoftInputMode="stateAlwaysHidden"
             android:label="@string/bookmark_choose_folder"
@@ -623,14 +623,14 @@ by a child template that "extends" this file.
         </activity>
 
         <!-- Activities for video tutorials. -->
-        <activity android:name="org.chromium.chrome.browser.app.video_tutorials.VideoTutorialListActivity"
+        <activity android:name="org.monyhar.chrome.browser.app.video_tutorials.VideoTutorialListActivity"
             android:theme="@style/Theme.Chromium.Activity.Fullscreen"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|mcc|mnc|screenLayout|smallestScreenSize"
             android:exported="false">
         </activity>
 
         <!-- Activities for downloads. -->
-        <activity android:name="org.chromium.chrome.browser.download.DownloadActivity"
+        <activity android:name="org.monyhar.chrome.browser.download.DownloadActivity"
             android:theme="@style/Theme.Chromium.Activity.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
             android:exported="false"
@@ -638,25 +638,25 @@ by a child template that "extends" this file.
         </activity>
 
         <!-- Activities for feed. -->
-        <activity android:name="org.chromium.chrome.browser.app.feedmanagement.FeedManagementActivity"
+        <activity android:name="org.monyhar.chrome.browser.app.feedmanagement.FeedManagementActivity"
             android:theme="@style/Theme.Chromium.Activity.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
             android:exported="false"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|mcc|mnc|screenLayout|smallestScreenSize">
         </activity>
-        <activity android:name="org.chromium.chrome.browser.app.followmanagement.FollowManagementActivity"
+        <activity android:name="org.monyhar.chrome.browser.app.followmanagement.FollowManagementActivity"
             android:theme="@style/Theme.Chromium.Activity.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
             android:exported="false"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|mcc|mnc|screenLayout|smallestScreenSize">
             <intent-filter>
-                <action android:name="org.chromium.chrome.browser.app.followmanagement.FollowManagementActivity.ACTIVATE" />
+                <action android:name="org.monyhar.chrome.browser.app.followmanagement.FollowManagementActivity.ACTIVATE" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
         <!-- Activities for video tutorials. -->
-        <activity android:name="org.chromium.chrome.browser.app.video_tutorials.VideoPlayerActivity"
+        <activity android:name="org.monyhar.chrome.browser.app.video_tutorials.VideoPlayerActivity"
             android:theme="@style/Theme.Chromium.Activity.Fullscreen"
             android:screenOrientation="portrait"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|mcc|mnc|screenLayout|smallestScreenSize"
@@ -666,7 +666,7 @@ by a child template that "extends" this file.
         </activity>
 
         <!-- Activities for history. -->
-        <activity android:name="org.chromium.chrome.browser.history.HistoryActivity"
+        <activity android:name="org.monyhar.chrome.browser.history.HistoryActivity"
             android:theme="@style/Theme.Chromium.Activity.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
             android:exported="false"
@@ -674,7 +674,7 @@ by a child template that "extends" this file.
         </activity>
 
         <!-- Activities for app launcher. -->
-        <activity android:name="org.chromium.chrome.browser.webapps.launchpad.LaunchpadActivity"
+        <activity android:name="org.monyhar.chrome.browser.webapps.launchpad.LaunchpadActivity"
             android:theme="@style/Theme.Chromium.Activity.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
             android:exported="false"
@@ -687,7 +687,7 @@ by a child template that "extends" this file.
                                that users don't have any instances of the original Activity still
                                running.
         -->
-        <activity android:name="org.chromium.chrome.browser.webapps.WebappLauncherActivity"
+        <activity android:name="org.monyhar.chrome.browser.webapps.WebappLauncherActivity"
             android:theme="@android:style/Theme.NoDisplay"
             android:taskAffinity=""
             android:excludeFromRecents="true"
@@ -703,18 +703,18 @@ by a child template that "extends" this file.
         </activity>
         <!-- Non-exported alias that only Chrome can launch to verify shortcut intent comes from
              Chrome (ShortcutManager on O+ launches under the shortcut creator's uid). -->
-        <activity-alias android:name="org.chromium.chrome.browser.webapps.SecureWebAppLauncher"
-            android:targetActivity="org.chromium.chrome.browser.webapps.WebappLauncherActivity"
+        <activity-alias android:name="org.monyhar.chrome.browser.webapps.SecureWebAppLauncher"
+            android:targetActivity="org.monyhar.chrome.browser.webapps.WebappLauncherActivity"
             android:exported="false">
             <intent-filter>
-                <action android:name="org.chromium.chrome.browser.webapps.WebappManager.ACTION_START_SECURE_WEBAPP" />
+                <action android:name="org.monyhar.chrome.browser.webapps.WebappManager.ACTION_START_SECURE_WEBAPP" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity-alias>
         <activity-alias android:name="com.google.android.apps.chrome.webapps.WebappManager"
-            android:targetActivity="org.chromium.chrome.browser.webapps.WebappLauncherActivity">
+            android:targetActivity="org.monyhar.chrome.browser.webapps.WebappLauncherActivity">
         </activity-alias>
-        <activity android:name="org.chromium.chrome.browser.webapps.WebappActivity"
+        <activity android:name="org.monyhar.chrome.browser.webapps.WebappActivity"
             android:theme="@style/Theme.Chromium.Webapp"
             android:label="@string/webapp_activity_title"
             android:launchMode="singleTop"
@@ -728,12 +728,12 @@ by a child template that "extends" this file.
             {{ self.extra_web_rendering_activity_definitions() }}
         </activity>
         <activity-alias android:name="com.google.android.apps.chrome.webapps.WebappActivity"
-            android:targetActivity="org.chromium.chrome.browser.webapps.WebappActivity"
+            android:targetActivity="org.monyhar.chrome.browser.webapps.WebappActivity"
             android:label="@string/webapp_activity_title"
             {{ self.supports_video_persistence() }} >
         </activity-alias>
         <!-- Activities for WebAPKs. -->
-        <activity android:name="org.chromium.chrome.browser.webapps.SameTaskWebApkActivity"
+        <activity android:name="org.monyhar.chrome.browser.webapps.SameTaskWebApkActivity"
             android:theme="@style/Theme.Chromium.Webapp.Translucent"
             android:label="@string/webapp_activity_title"
             android:exported="false"
@@ -745,16 +745,16 @@ by a child template that "extends" this file.
             {{ self.extra_web_rendering_activity_definitions() }}
         </activity>
 
-        <activity android:name="org.chromium.chrome.browser.webapps.ActivateWebApkActivity"
+        <activity android:name="org.monyhar.chrome.browser.webapps.ActivateWebApkActivity"
             android:theme="@android:style/Theme.NoDisplay"
             android:exported="true">
             <intent-filter>
-                <action android:name="org.chromium.chrome.browser.webapps.ActivateWebApkActivity.ACTIVATE" />
+                <action android:name="org.monyhar.chrome.browser.webapps.ActivateWebApkActivity.ACTIVATE" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
-        <activity android:name="org.chromium.components.media_router.caf.remoting.CafExpandedControllerActivity"
+        <activity android:name="org.monyhar.components.media_router.caf.remoting.CafExpandedControllerActivity"
             android:theme="@style/Theme.Chromium.Activity"
             android:label="Chrome.CafExpandedControllerActivity"
             android:hardwareAccelerated="true"
@@ -765,7 +765,7 @@ by a child template that "extends" this file.
         </activity>
 
         <!-- This activity is used to restart the main Chrome process.  Should never be exported. -->
-        <activity android:name="org.chromium.chrome.browser.BrowserRestartActivity"
+        <activity android:name="org.monyhar.chrome.browser.BrowserRestartActivity"
             android:launchMode="singleInstance"
             android:exported="false"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
@@ -775,7 +775,7 @@ by a child template that "extends" this file.
 
         <!-- This activity is to expose the print option via the generic Android share action. -->
         <activity
-            android:name="org.chromium.chrome.browser.printing.PrintShareActivity"
+            android:name="org.monyhar.chrome.browser.printing.PrintShareActivity"
             android:icon="@drawable/sharing_print"
             android:label="@string/print_share_activity_title"
             android:enabled="false"
@@ -794,7 +794,7 @@ by a child template that "extends" this file.
         </activity>
 
         <activity
-            android:name="org.chromium.chrome.browser.send_tab_to_self.SendTabToSelfShareActivity"
+            android:name="org.monyhar.chrome.browser.send_tab_to_self.SendTabToSelfShareActivity"
             android:icon="@drawable/ic_launcher"
             android:label="@string/send_tab_to_self_share_activity_title"
             android:enabled="false"
@@ -811,7 +811,7 @@ by a child template that "extends" this file.
         </activity>
 
         <activity
-            android:name="org.chromium.chrome.browser.sharing.shared_clipboard.SharedClipboardShareActivity"
+            android:name="org.monyhar.chrome.browser.sharing.shared_clipboard.SharedClipboardShareActivity"
             android:icon="@drawable/ic_devices_48dp"
             android:label="@string/shared_clipboard_share_activity_title"
             android:enabled="false"
@@ -829,7 +829,7 @@ by a child template that "extends" this file.
 
         <!-- Activity for dispatching intents to Instant Apps. -->
         <activity
-            android:name="org.chromium.chrome.browser.instantapps.AuthenticatedProxyActivity"
+            android:name="org.monyhar.chrome.browser.instantapps.AuthenticatedProxyActivity"
             android:exported="false"
             android:theme="@android:style/Theme.NoDisplay"
             android:noHistory="true"
@@ -837,7 +837,7 @@ by a child template that "extends" this file.
         </activity>
 
         <activity
-            android:name="org.chromium.chrome.browser.vr.VrCancelAnimationActivity"
+            android:name="org.monyhar.chrome.browser.vr.VrCancelAnimationActivity"
             android:exported="false"
             android:theme="@android:style/Theme.NoDisplay"
             android:noHistory="true"
@@ -850,7 +850,7 @@ by a child template that "extends" this file.
         </activity>
 
         <!-- Components for Trusted Web Activities -->
-        <receiver android:name="org.chromium.chrome.browser.browserservices.ClientAppBroadcastReceiver"
+        <receiver android:name="org.monyhar.chrome.browser.browserservices.ClientAppBroadcastReceiver"
             android:exported="true">
             <intent-filter>
                 <data android:scheme="package" />
@@ -859,17 +859,17 @@ by a child template that "extends" this file.
             </intent-filter>
             {% if channel in ['default'] %}
             <intent-filter>
-                <action android:name="org.chromium.chrome.browser.browserservices.ClientAppBroadcastReceiver.DEBUG" />
+                <action android:name="org.monyhar.chrome.browser.browserservices.ClientAppBroadcastReceiver.DEBUG" />
             </intent-filter>
             {% endif %}
         </receiver>
 
-        <activity android:name="org.chromium.chrome.browser.browserservices.ClearDataDialogActivity"
+        <activity android:name="org.monyhar.chrome.browser.browserservices.ClearDataDialogActivity"
             android:theme="@style/Theme.Chromium.ClearDataDialogActivity"
             android:exported="false"/>
 
         <activity
-            android:name="org.chromium.chrome.browser.browserservices.ManageTrustedWebActivityDataActivity"
+            android:name="org.monyhar.chrome.browser.browserservices.ManageTrustedWebActivityDataActivity"
             android:theme="@style/Theme.Chromium.Activity.Fullscreen.Transparent"
             android:exported="true">
             <intent-filter>
@@ -884,7 +884,7 @@ by a child template that "extends" this file.
             </intent-filter>
         </activity>
 
-        <activity android:name="org.chromium.chrome.browser.webauth.authenticator.CableAuthenticatorActivity"
+        <activity android:name="org.monyhar.chrome.browser.webauth.authenticator.CableAuthenticatorActivity"
             android:theme="@style/Theme.Chromium.Activity.Fullscreen"
             android:label="@string/cablev2_activity_title"
             android:permission="com.google.android.gms.auth.cryptauth.permission.CABLEV2_SERVER_LINK"
@@ -902,24 +902,24 @@ by a child template that "extends" this file.
         </activity>
 
         <receiver
-            android:name="org.chromium.chrome.browser.browserservices.ui.trustedwebactivity.DisclosureAcceptanceBroadcastReceiver"
+            android:name="org.monyhar.chrome.browser.browserservices.ui.trustedwebactivity.DisclosureAcceptanceBroadcastReceiver"
             android:exported="false" />
 
         <!-- Service for decoding images in a sandboxed process. -->
         <service
             android:description="@string/decoder_description"
-            android:name="org.chromium.chrome.browser.photo_picker.DecoderService"
+            android:name="org.monyhar.chrome.browser.photo_picker.DecoderService"
             android:exported="false"
             android:isolatedProcess="true"
             android:process=":decoder_service" />
 
         <!-- Download foreground service -->
-        <service android:name="org.chromium.chrome.browser.download.DownloadForegroundService"
+        <service android:name="org.monyhar.chrome.browser.download.DownloadForegroundService"
             android:exported="false">
         </service>
 
         <!-- Download broadcast manager service -->
-        <service android:name="org.chromium.chrome.browser.download.DownloadBroadcastManager"
+        <service android:name="org.monyhar.chrome.browser.download.DownloadBroadcastManager"
             android:exported="false">
         </service>
 
@@ -935,28 +935,28 @@ by a child template that "extends" this file.
                 android:name="android.appwidget.provider"
                 android:resource="@xml/bookmark_widget_info" />
         </receiver>
-        <service android:name="org.chromium.chrome.browser.bookmarkswidget.BookmarkWidgetService"
+        <service android:name="org.monyhar.chrome.browser.bookmarkswidget.BookmarkWidgetService"
             android:permission="android.permission.BIND_REMOTEVIEWS"
             android:exported="false" />
-        <receiver android:name="org.chromium.chrome.browser.bookmarkswidget.BookmarkWidgetProxy"
+        <receiver android:name="org.monyhar.chrome.browser.bookmarkswidget.BookmarkWidgetProxy"
             android:exported="false" />
 
         <!-- Search widget -->
         <receiver
-                android:name="org.chromium.chrome.browser.searchwidget.SearchWidgetProvider"
+                android:name="org.monyhar.chrome.browser.searchwidget.SearchWidgetProvider"
                 android:label="@string/search_widget_title"
                 android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
             <intent-filter>
-                <action android:name="org.chromium.chrome.browser.searchwidget.START_TEXT_QUERY" />
+                <action android:name="org.monyhar.chrome.browser.searchwidget.START_TEXT_QUERY" />
             </intent-filter>
             <intent-filter>
-                <action android:name="org.chromium.chrome.browser.searchwidget.START_VOICE_QUERY" />
+                <action android:name="org.monyhar.chrome.browser.searchwidget.START_VOICE_QUERY" />
             </intent-filter>
             <intent-filter>
-                <action android:name="org.chromium.chrome.browser.searchwidget.UPDATE_ALL_WIDGETS" />
+                <action android:name="org.monyhar.chrome.browser.searchwidget.UPDATE_ALL_WIDGETS" />
             </intent-filter>
             <meta-data
                     android:name="android.appwidget.provider"
@@ -964,7 +964,7 @@ by a child template that "extends" this file.
         </receiver>
 
         <!-- Search Activity -->
-        <activity android:name="org.chromium.chrome.browser.searchwidget.SearchActivity"
+        <activity android:name="org.monyhar.chrome.browser.searchwidget.SearchActivity"
             android:theme="@style/Theme.Chromium.SearchActivity"
             android:label="Search"
             android:exported="false"
@@ -985,42 +985,42 @@ by a child template that "extends" this file.
             </intent-filter>
         </service>
         <!-- GcmListenerService for messages from GCM. -->
-        <service android:name="org.chromium.chrome.browser.services.gcm.ChromeGcmListenerService"
+        <service android:name="org.monyhar.chrome.browser.services.gcm.ChromeGcmListenerService"
             android:exported="false" >
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name="org.chromium.chrome.browser.services.gcm.GCMBackgroundService"
+        <service android:name="org.monyhar.chrome.browser.services.gcm.GCMBackgroundService"
             android:exported="false"/>
-        <service android:name="org.chromium.chrome.browser.services.gcm.InvalidationGcmUpstreamSender"
+        <service android:name="org.monyhar.chrome.browser.services.gcm.InvalidationGcmUpstreamSender"
             android:exported="false"/>
 
         <!-- Android Notification service listener -->
-        <service android:name="org.chromium.chrome.browser.notifications.NotificationService"
+        <service android:name="org.monyhar.chrome.browser.notifications.NotificationService"
             android:exported="false"/>
-        <receiver android:name="org.chromium.chrome.browser.notifications.NotificationService$Receiver"
+        <receiver android:name="org.monyhar.chrome.browser.notifications.NotificationService$Receiver"
             android:exported="false"/>
-        <receiver android:name="org.chromium.chrome.browser.notifications.NotificationServiceImpl$Receiver"
+        <receiver android:name="org.monyhar.chrome.browser.notifications.NotificationServiceImpl$Receiver"
             android:exported="false">
             <intent-filter>
-                <action android:name="org.chromium.chrome.browser.notifications.CLICK_NOTIFICATION" />
-                <action android:name="org.chromium.chrome.browser.notifications.CLOSE_NOTIFICATION" />
+                <action android:name="org.monyhar.chrome.browser.notifications.CLICK_NOTIFICATION" />
+                <action android:name="org.monyhar.chrome.browser.notifications.CLOSE_NOTIFICATION" />
             </intent-filter>
         </receiver>
 
         <!-- Android Notification job service -->
-        <service android:name="org.chromium.chrome.browser.notifications.NotificationJobService"
+        <service android:name="org.monyhar.chrome.browser.notifications.NotificationJobService"
             android:exported="false"
             android:permission="android.permission.BIND_JOB_SERVICE"/>
 
         <!-- Background Task Scheduler job service -->
-        <service android:name="org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService"
+        <service android:name="org.monyhar.components.background_task_scheduler.internal.BackgroundTaskJobService"
             android:exported="false"
             android:permission="android.permission.BIND_JOB_SERVICE"/>
 
         <!-- Background Task Scheduler GCM task service -->
-        <service android:name="org.chromium.components.background_task_scheduler.internal.BackgroundTaskGcmTaskService"
+        <service android:name="org.monyhar.components.background_task_scheduler.internal.BackgroundTaskGcmTaskService"
             android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE"
             android:exported="true">
             <intent-filter>
@@ -1029,11 +1029,11 @@ by a child template that "extends" this file.
         </service>
 
         <!-- Background Task Scheduler alarm receiver -->
-        <receiver android:name="org.chromium.components.background_task_scheduler.internal.BackgroundTaskBroadcastReceiver"
+        <receiver android:name="org.monyhar.components.background_task_scheduler.internal.BackgroundTaskBroadcastReceiver"
             android:exported="false" />
 
         <!-- GcmTaskService implementation to wake Chrome on scheduled events -->
-        <service android:name="org.chromium.chrome.browser.ChromeBackgroundService"
+        <service android:name="org.monyhar.chrome.browser.ChromeBackgroundService"
             android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE"
             android:exported="true">
             <intent-filter>
@@ -1041,10 +1041,10 @@ by a child template that "extends" this file.
             </intent-filter>
         </service>
 
-        <service android:name="org.chromium.chrome.browser.prerender.ChromePrerenderService"
+        <service android:name="org.monyhar.chrome.browser.prerender.ChromePrerenderService"
             android:exported="true"
             tools:ignore="ExportedService" />
-        <service android:name="org.chromium.chrome.browser.customtabs.CustomTabsConnectionService"
+        <service android:name="org.monyhar.chrome.browser.customtabs.CustomTabsConnectionService"
             android:exported="true"
             tools:ignore="ExportedService">
             <intent-filter>
@@ -1062,36 +1062,36 @@ by a child template that "extends" this file.
         <service android:name="androidx.browser.customtabs.PostMessageService" />
 
         <!-- Crash reporting services. -->
-        <service android:name="org.chromium.chrome.browser.crash.ChromeMinidumpUploadJobService"
+        <service android:name="org.monyhar.chrome.browser.crash.ChromeMinidumpUploadJobService"
                  android:permission="android.permission.BIND_JOB_SERVICE"
                  android:exported="false"/>
-        <service android:name="org.chromium.chrome.browser.crash.MinidumpUploadService"
+        <service android:name="org.monyhar.chrome.browser.crash.MinidumpUploadService"
             android:exported="false"/>
 
-        <service android:name="org.chromium.chrome.browser.omaha.OmahaClient"
+        <service android:name="org.monyhar.chrome.browser.omaha.OmahaClient"
             android:exported="false"/>
-        <service android:name="org.chromium.chrome.browser.incognito.IncognitoNotificationService"
+        <service android:name="org.monyhar.chrome.browser.incognito.IncognitoNotificationService"
             android:exported="false"/>
 
         <!-- Service used by payment apps to notify the browser about changes in user selected
              payment method, shipping address, or shipping option. -->
         <service
-            android:name="org.chromium.components.payments.PaymentDetailsUpdateService"
+            android:name="org.monyhar.components.payments.PaymentDetailsUpdateService"
             android:exported="true"
             tools:ignore="ExportedService">
             <intent-filter>
-              <action android:name="org.chromium.intent.action.UPDATE_PAYMENT_DETAILS" />
+              <action android:name="org.monyhar.intent.action.UPDATE_PAYMENT_DETAILS" />
             </intent-filter>
         </service>
 
-        <receiver android:name="org.chromium.chrome.browser.announcement.AnnouncementNotificationManager$Receiver"
+        <receiver android:name="org.monyhar.chrome.browser.announcement.AnnouncementNotificationManager$Receiver"
             android:exported="false"/>
 
-        <receiver android:name="org.chromium.chrome.browser.notifications.NotificationIntentInterceptor$Receiver"
+        <receiver android:name="org.monyhar.chrome.browser.notifications.NotificationIntentInterceptor$Receiver"
             android:exported="false"/>
 
         <activity
-            android:name="org.chromium.chrome.browser.notifications.NotificationIntentInterceptor$TrampolineActivity"
+            android:name="org.monyhar.chrome.browser.notifications.NotificationIntentInterceptor$TrampolineActivity"
             android:theme="@android:style/Theme.NoDisplay"
             android:exported="false"
             android:autoRemoveFromRecents="true"
@@ -1099,61 +1099,61 @@ by a child template that "extends" this file.
             android:documentLaunchMode="always"
             android:noHistory="true"/>
 
-        <receiver android:name="org.chromium.chrome.browser.notifications.scheduler.DisplayAgent$Receiver"
+        <receiver android:name="org.monyhar.chrome.browser.notifications.scheduler.DisplayAgent$Receiver"
             android:exported="false"/>
 
-        <receiver android:name="org.chromium.chrome.browser.app.send_tab_to_self.SendTabToSelfNotificationReceiver"
+        <receiver android:name="org.monyhar.chrome.browser.app.send_tab_to_self.SendTabToSelfNotificationReceiver"
             android:exported="false"/>
 
-        <receiver android:name="org.chromium.chrome.browser.customtabs.CustomTabsShareBroadcastReceiver"
+        <receiver android:name="org.monyhar.chrome.browser.customtabs.CustomTabsShareBroadcastReceiver"
             android:exported="false"/>
 
-        <receiver android:name="org.chromium.chrome.browser.sharing.click_to_call.ClickToCallMessageHandler$TapReceiver"
+        <receiver android:name="org.monyhar.chrome.browser.sharing.click_to_call.ClickToCallMessageHandler$TapReceiver"
             android:exported="false"/>
-        <receiver android:name="org.chromium.chrome.browser.sharing.shared_clipboard.SharedClipboardMessageHandler$TapReceiver"
+        <receiver android:name="org.monyhar.chrome.browser.sharing.shared_clipboard.SharedClipboardMessageHandler$TapReceiver"
             android:exported="false"/>
-        <receiver android:name="org.chromium.chrome.browser.sharing.shared_clipboard.SharedClipboardMessageHandler$TryAgainReceiver"
+        <receiver android:name="org.monyhar.chrome.browser.sharing.shared_clipboard.SharedClipboardMessageHandler$TryAgainReceiver"
             android:exported="false"/>
-        <receiver android:name="org.chromium.chrome.browser.sharing.sms_fetcher.SmsFetcherMessageHandler$NotificationReceiver"
-            android:exported="false"/>
-
-        <receiver android:name="org.chromium.chrome.browser.offlinepages.AutoFetchNotifier$CompleteNotificationReceiver"
-            android:exported="false"/>
-        <receiver android:name="org.chromium.chrome.browser.offlinepages.AutoFetchNotifier$InProgressCancelReceiver"
+        <receiver android:name="org.monyhar.chrome.browser.sharing.sms_fetcher.SmsFetcherMessageHandler$NotificationReceiver"
             android:exported="false"/>
 
-        <service android:name="org.chromium.chrome.browser.media.MediaCaptureNotificationService"
+        <receiver android:name="org.monyhar.chrome.browser.offlinepages.AutoFetchNotifier$CompleteNotificationReceiver"
             android:exported="false"/>
-        <service android:name="org.chromium.chrome.browser.media.ui.ChromeMediaNotificationControllerServices$PlaybackListenerService"
+        <receiver android:name="org.monyhar.chrome.browser.offlinepages.AutoFetchNotifier$InProgressCancelReceiver"
+            android:exported="false"/>
+
+        <service android:name="org.monyhar.chrome.browser.media.MediaCaptureNotificationService"
+            android:exported="false"/>
+        <service android:name="org.monyhar.chrome.browser.media.ui.ChromeMediaNotificationControllerServices$PlaybackListenerService"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_BUTTON" />
             </intent-filter>
         </service>
-        <service android:name="org.chromium.chrome.browser.media.ui.ChromeMediaNotificationControllerServices$PresentationListenerService"
+        <service android:name="org.monyhar.chrome.browser.media.ui.ChromeMediaNotificationControllerServices$PresentationListenerService"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_BUTTON" />
             </intent-filter>
         </service>
-        <service android:name="org.chromium.chrome.browser.media.ui.ChromeMediaNotificationControllerServices$CastListenerService"
+        <service android:name="org.monyhar.chrome.browser.media.ui.ChromeMediaNotificationControllerServices$CastListenerService"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_BUTTON" />
             </intent-filter>
         </service>
 
-        <service android:name="org.chromium.chrome.browser.tracing.TracingNotificationService"
+        <service android:name="org.monyhar.chrome.browser.tracing.TracingNotificationService"
             android:exported="false"/>
 
-        <receiver android:name="org.chromium.chrome.browser.omaha.UpdateNotificationController$UpdateNotificationReceiver"
+        <receiver android:name="org.monyhar.chrome.browser.omaha.UpdateNotificationController$UpdateNotificationReceiver"
             android:exported="false"/>
 
-        <meta-data android:name="org.chromium.content.browser.SMART_CLIP_PROVIDER"
-            android:value="org.chromium.content_public.browser.SmartClipProvider"/>
+        <meta-data android:name="org.monyhar.content.browser.SMART_CLIP_PROVIDER"
+            android:value="org.monyhar.content_public.browser.SmartClipProvider"/>
 
         <activity
-            android:name="org.chromium.chrome.browser.test_dummy.TestDummyActivity"
+            android:name="org.monyhar.chrome.browser.test_dummy.TestDummyActivity"
             android:excludeFromRecents="true"
             android:exported="true"
             android:noHistory="true"
@@ -1174,11 +1174,11 @@ by a child template that "extends" this file.
       <!-- NOTE: If you change the value of "android:process" for the below services,
            you also need to update kHelperProcessExecutableName in chrome_constants.cc. -->
       {% set num_sandboxed_services = 40 %}
-      <meta-data android:name="org.chromium.content.browser.NUM_SANDBOXED_SERVICES"
+      <meta-data android:name="org.monyhar.content.browser.NUM_SANDBOXED_SERVICES"
           android:value="{{ num_sandboxed_services }}"/>
 
       {% for i in range(num_sandboxed_services) %}
-      <service android:name="org.chromium.content.app.SandboxedProcessService{{ i }}"
+      <service android:name="org.monyhar.content.app.SandboxedProcessService{{ i }}"
           android:process=":sandboxed_process{{ i }}"
           android:permission="{{ manifest_package }}.permission.CHILD_SERVICE"
           android:isolatedProcess="true"
@@ -1194,12 +1194,12 @@ by a child template that "extends" this file.
       {% endfor %}
 
       {% set num_privileged_services = 5 %}
-      <meta-data android:name="org.chromium.content.browser.NUM_PRIVILEGED_SERVICES"
+      <meta-data android:name="org.monyhar.content.browser.NUM_PRIVILEGED_SERVICES"
           android:value="{{ num_privileged_services }}"/>
 
       {% for i in range(num_privileged_services) %}
       {% set privileged_process_name = ':privileged_process%d' % i %}
-      <service android:name="org.chromium.content.app.PrivilegedProcessService{{ i }}"
+      <service android:name="org.monyhar.content.app.PrivilegedProcessService{{ i }}"
           android:process="{{ privileged_process_name }}"
           android:permission="{{ manifest_package }}.permission.CHILD_SERVICE"
           android:isolatedProcess="false"
@@ -1245,11 +1245,11 @@ by a child template that "extends" this file.
       <meta-data
           android:name=
           "com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
-          android:value="org.chromium.components.media_router.caf.CastOptionsProvider"/>
+          android:value="org.monyhar.components.media_router.caf.CastOptionsProvider"/>
 
       <!-- These providers are declared in the base module to give the chrome
            split preloader more time to work. -->
-      <provider android:name="org.chromium.chrome.browser.util.ChromeFileProvider"
+      <provider android:name="org.monyhar.chrome.browser.util.ChromeFileProvider"
           android:authorities="{{ manifest_package }}.FileProvider"
           android:exported="false"
           android:grantUriPermissions="true">
@@ -1257,7 +1257,7 @@ by a child template that "extends" this file.
               android:resource="@xml/file_paths" />
       </provider>
 
-      <provider android:name="org.chromium.chrome.browser.download.DownloadFileProvider"
+      <provider android:name="org.monyhar.chrome.browser.download.DownloadFileProvider"
           android:authorities="{{ manifest_package }}.DownloadFileProvider"
           android:exported="false"
           android:grantUriPermissions="true">
@@ -1274,7 +1274,7 @@ by a child template that "extends" this file.
       </provider>
 
       <!-- Provider for chrome data. -->
-      <provider android:name="org.chromium.chrome.browser.provider.ChromeBrowserProvider"
+      <provider android:name="org.monyhar.chrome.browser.provider.ChromeBrowserProvider"
           android:authorities="{{ manifest_package }}.ChromeBrowserProvider;{{ manifest_package }}.browser;{{ manifest_package }}"
           android:exported="true">
           <path-permission android:path="/bookmarks/search_suggest_query"
@@ -1283,7 +1283,7 @@ by a child template that "extends" this file.
 
       <!-- Provider for App to Web impression attribution.
            TODO(https://crbug.com/1210171): Gate this provider behind a custom permission? -->
-      <provider android:name="org.chromium.chrome.browser.attribution_reporting.AttributionReportingProvider"
+      <provider android:name="org.monyhar.chrome.browser.attribution_reporting.AttributionReportingProvider"
           android:authorities="{{ manifest_package }}.AttributionReporting"
           android:exported="true"
           tools:ignore="ExportedContentProvider">

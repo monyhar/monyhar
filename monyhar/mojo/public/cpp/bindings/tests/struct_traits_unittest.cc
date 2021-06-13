@@ -11,7 +11,7 @@
 #include "mojo/public/cpp/bindings/receiver_set.h"
 #include "mojo/public/cpp/bindings/remote.h"
 #include "mojo/public/cpp/bindings/tests/rect_blink.h"
-#include "mojo/public/cpp/bindings/tests/rect_chromium.h"
+#include "mojo/public/cpp/bindings/tests/rect_monyhar.h"
 #include "mojo/public/cpp/bindings/tests/struct_with_traits_impl.h"
 #include "mojo/public/cpp/bindings/tests/struct_with_traits_impl_traits.h"
 #include "mojo/public/cpp/bindings/tests/variant_test_util.h"
@@ -117,11 +117,11 @@ class StructTraitsTest : public testing::Test,
 
  protected:
   void BindToChromiumService(PendingReceiver<RectService> receiver) {
-    chromium_receivers_.Add(&chromium_service_, std::move(receiver));
+    monyhar_receivers_.Add(&monyhar_service_, std::move(receiver));
   }
   void BindToChromiumService(PendingReceiver<blink::RectService> receiver) {
-    chromium_receivers_.Add(
-        &chromium_service_,
+    monyhar_receivers_.Add(
+        &monyhar_service_,
         ConvertPendingReceiver<RectService>(std::move(receiver)));
   }
 
@@ -189,8 +189,8 @@ class StructTraitsTest : public testing::Test,
 
   base::test::SingleThreadTaskEnvironment task_environment_;
 
-  ChromiumRectServiceImpl chromium_service_;
-  ReceiverSet<RectService> chromium_receivers_;
+  ChromiumRectServiceImpl monyhar_service_;
+  ReceiverSet<RectService> monyhar_receivers_;
 
   BlinkRectServiceImpl blink_service_;
   ReceiverSet<blink::RectService> blink_receivers_;
@@ -201,19 +201,19 @@ class StructTraitsTest : public testing::Test,
 }  // namespace
 
 TEST_F(StructTraitsTest, ChromiumProxyToChromiumService) {
-  Remote<RectService> chromium_proxy;
-  BindToChromiumService(chromium_proxy.BindNewPipeAndPassReceiver());
+  Remote<RectService> monyhar_proxy;
+  BindToChromiumService(monyhar_proxy.BindNewPipeAndPassReceiver());
   {
     base::RunLoop loop;
-    chromium_proxy->AddRect(RectChromium(1, 1, 4, 5));
-    chromium_proxy->AddRect(RectChromium(-1, -1, 2, 2));
-    chromium_proxy->GetLargestRect(
+    monyhar_proxy->AddRect(RectChromium(1, 1, 4, 5));
+    monyhar_proxy->AddRect(RectChromium(-1, -1, 2, 2));
+    monyhar_proxy->GetLargestRect(
         ExpectResult(RectChromium(1, 1, 4, 5), loop.QuitClosure()));
     loop.Run();
   }
   {
     base::RunLoop loop;
-    chromium_proxy->PassSharedRect(
+    monyhar_proxy->PassSharedRect(
         {1, 2, 3, 4},
         ExpectResult(SharedRect({1, 2, 3, 4}), loop.QuitClosure()));
     loop.Run();
@@ -221,19 +221,19 @@ TEST_F(StructTraitsTest, ChromiumProxyToChromiumService) {
 }
 
 TEST_F(StructTraitsTest, ChromiumToBlinkService) {
-  Remote<RectService> chromium_proxy;
-  BindToBlinkService(chromium_proxy.BindNewPipeAndPassReceiver());
+  Remote<RectService> monyhar_proxy;
+  BindToBlinkService(monyhar_proxy.BindNewPipeAndPassReceiver());
   {
     base::RunLoop loop;
-    chromium_proxy->AddRect(RectChromium(1, 1, 4, 5));
-    chromium_proxy->AddRect(RectChromium(2, 2, 5, 5));
-    chromium_proxy->GetLargestRect(
+    monyhar_proxy->AddRect(RectChromium(1, 1, 4, 5));
+    monyhar_proxy->AddRect(RectChromium(2, 2, 5, 5));
+    monyhar_proxy->GetLargestRect(
         ExpectResult(RectChromium(2, 2, 5, 5), loop.QuitClosure()));
     loop.Run();
   }
   {
     base::RunLoop loop;
-    chromium_proxy->PassSharedRect(
+    monyhar_proxy->PassSharedRect(
         {1, 2, 3, 4},
         ExpectResult(SharedRect({1, 2, 3, 4}), loop.QuitClosure()));
     loop.Run();
@@ -242,9 +242,9 @@ TEST_F(StructTraitsTest, ChromiumToBlinkService) {
   // deserializer rejects negative origins.
   {
     base::RunLoop loop;
-    ExpectError(&chromium_proxy, loop.QuitClosure());
-    chromium_proxy->AddRect(RectChromium(-1, -1, 2, 2));
-    chromium_proxy->GetLargestRect(
+    ExpectError(&monyhar_proxy, loop.QuitClosure());
+    monyhar_proxy->AddRect(RectChromium(-1, -1, 2, 2));
+    monyhar_proxy->GetLargestRect(
         Fail<RectChromium>("The pipe should have been closed."));
     loop.Run();
   }

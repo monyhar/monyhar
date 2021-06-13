@@ -44,7 +44,7 @@ js_library("add_site_dialog") {
   deps = [
     ":constants",
     ":site_settings_behavior",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_dialog:cr_dialog.m",
     "//ui/webui/resources/js:assert.m",
     "//ui/webui/resources/js:web_ui_listener_behavior.m",
@@ -60,8 +60,8 @@ js_library("all_sites") {
     "..:global_scroll_target_behavior",
     "..:router",
     "..:settings_routes",
-    "//third_party/polymer/v3_0/components-chromium/iron-list",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-list",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_action_menu:cr_action_menu.m",
     "//ui/webui/resources/js:i18n_behavior.m",
     "//ui/webui/resources/js:load_time_data.m",
@@ -79,7 +79,7 @@ js_library("category_default_setting") {
     ":constants",
     ":site_settings_behavior",
     "..:route",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
     "//ui/webui/resources/js:load_time_data.m",
     "//ui/webui/resources/js:web_ui_listener_behavior.m",
@@ -91,7 +91,7 @@ js_library("category_setting_exceptions") {
   deps = [
     ":constants",
     ":site_settings_behavior",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:web_ui_listener_behavior.m",
   ]
   externs_list = [ "$externs_path/settings_private.js" ]
@@ -102,7 +102,7 @@ js_library("chooser_exception_list") {
     ":chooser_exception_list_entry",
     ":site_settings_behavior",
     ":site_settings_prefs_browser_proxy",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:i18n_behavior.m",
     "//ui/webui/resources/js:list_property_update_behavior.m",
     "//ui/webui/resources/js:web_ui_listener_behavior.m",
@@ -115,7 +115,7 @@ js_library("chooser_exception_list_entry") {
     ":site_list_entry",
     ":site_settings_behavior",
     ":site_settings_prefs_browser_proxy",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   externs_list = [ "$externs_path/settings_private.js" ]
 }
@@ -131,7 +131,7 @@ js_library("edit_exception_dialog") {
   deps = [
     ":constants",
     ":site_settings_prefs_browser_proxy",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_dialog:cr_dialog.m",
     "//ui/webui/resources/cr_elements/cr_input:cr_input.m",
   ]
@@ -148,14 +148,14 @@ js_library("media_picker") {
   deps = [
     ":site_settings_behavior",
     ":site_settings_prefs_browser_proxy",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:web_ui_listener_behavior.m",
   ]
 }
 
 js_library("pdf_documents") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -164,7 +164,7 @@ js_library("protocol_handlers") {
     ":site_settings_behavior",
 
     # Must be included on all platforms to satisfy closure compiler.
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_action_menu:cr_action_menu.m",
     "//ui/webui/resources/js:web_ui_listener_behavior.m",
   ]
@@ -176,7 +176,7 @@ js_library("settings_category_default_radio_group") {
     ":site_settings_behavior",
     "../controls:settings_radio_group",
     "../privacy_page:collapse_radio_button",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
     "//ui/webui/resources/js:load_time_data.m",
   ]
@@ -190,8 +190,8 @@ js_library("site_data") {
     "..:global_scroll_target_behavior",
     "..:metrics_browser_proxy",
     "..:route",
-    "//third_party/polymer/v3_0/components-chromium/iron-list:iron-list",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-list:iron-list",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_search_field:cr_search_field",
     "//ui/webui/resources/js:assert.m",
     "//ui/webui/resources/js:cr.m",
@@ -208,8 +208,8 @@ js_library("site_data_details_subpage") {
     "..:metrics_browser_proxy",
     "..:route",
     "..:router",
-    "//third_party/polymer/v3_0/components-chromium/iron-list:iron-list",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-list:iron-list",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:load_time_data.m",
     "//ui/webui/resources/js:web_ui_listener_behavior.m",
   ]
@@ -245,7 +245,7 @@ js_library("site_details_permission") {
   deps = [
     ":constants",
     ":site_settings_behavior",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
     "//ui/webui/resources/js:i18n_behavior.m",
     "//ui/webui/resources/js:load_time_data.m",
@@ -261,8 +261,8 @@ js_library("site_entry") {
     ":site_settings_prefs_browser_proxy",
     "..:route",
     "..:router",
-    "//third_party/polymer/v3_0/components-chromium/iron-collapse:iron-collapse",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-collapse:iron-collapse",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_lazy_render:cr_lazy_render.m",
     "//ui/webui/resources/js:assert.m",
     "//ui/webui/resources/js:load_time_data.m",
@@ -279,8 +279,8 @@ js_library("site_list") {
     ":site_list_entry",
     ":site_settings_behavior",
     ":site_settings_prefs_browser_proxy",
-    "//third_party/polymer/v3_0/components-chromium/paper-tooltip:paper-tooltip",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/paper-tooltip:paper-tooltip",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_action_menu:cr_action_menu.m",
     "//ui/webui/resources/js:assert.m",
     "//ui/webui/resources/js:list_property_update_behavior.m",
@@ -296,7 +296,7 @@ js_library("site_list_entry") {
     ":site_settings_behavior",
     "..:route",
     "..:router",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/policy:cr_policy_pref_indicator.m",
     "//ui/webui/resources/js/cr/ui:focus_row_behavior.m",
   ]
@@ -329,7 +329,7 @@ js_library("zoom_levels") {
   deps = [
     ":site_settings_behavior",
     ":site_settings_prefs_browser_proxy",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:list_property_update_behavior.m",
     "//ui/webui/resources/js:web_ui_listener_behavior.m",
   ]

@@ -18,11 +18,11 @@ android_apk("spnego_authenticator_apk") {
   ]
 
   sources = [
-    "src/org/chromium/tools/spnegoauthenticator/AccountData.java",
-    "src/org/chromium/tools/spnegoauthenticator/Constants.java",
-    "src/org/chromium/tools/spnegoauthenticator/SpnegoAuthenticator.java",
-    "src/org/chromium/tools/spnegoauthenticator/SpnegoAuthenticatorActivity.java",
-    "src/org/chromium/tools/spnegoauthenticator/SpnegoAuthenticatorService.java",
+    "src/org/monyhar/tools/spnegoauthenticator/AccountData.java",
+    "src/org/monyhar/tools/spnegoauthenticator/Constants.java",
+    "src/org/monyhar/tools/spnegoauthenticator/SpnegoAuthenticator.java",
+    "src/org/monyhar/tools/spnegoauthenticator/SpnegoAuthenticatorActivity.java",
+    "src/org/monyhar/tools/spnegoauthenticator/SpnegoAuthenticatorService.java",
   ]
 }
 

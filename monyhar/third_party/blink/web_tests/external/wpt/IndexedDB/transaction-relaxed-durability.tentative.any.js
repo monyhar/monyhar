@@ -5,7 +5,7 @@
  * This file contains the webplatform smoke tests for the optional
  * durability parameter of the IndexedDB transaction API.
  *
- * @author enne@chromium.org
+ * @author enne@monyhar.org
  */
 
 // Smoke test optional parameter on IndexedDB.transaction.

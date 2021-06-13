@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab;
+package org.monyhar.chrome.browser.tab;
 
-import org.chromium.base.UserData;
-import org.chromium.components.external_intents.InterceptNavigationDelegateImpl;
+import org.monyhar.base.UserData;
+import org.monyhar.components.external_intents.InterceptNavigationDelegateImpl;
 
 /**
  * Class that glues InterceptNavigationDelegateImpl objects to Tabs.

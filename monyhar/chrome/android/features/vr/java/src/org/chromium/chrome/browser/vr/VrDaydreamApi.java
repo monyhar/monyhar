@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr;
+package org.monyhar.chrome.browser.vr;
 
 import android.app.Activity;
 import android.app.PendingIntent;
@@ -11,8 +11,8 @@ import android.content.Intent;
 import com.google.vr.ndk.base.DaydreamApi;
 import com.google.vr.ndk.base.GvrApi;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.StrictModeContext;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.StrictModeContext;
 
 /**
  * A wrapper for DaydreamApi.

@@ -26,9 +26,9 @@ namespace chromeos {
 //
 // ShouldDeferScreenDim:
 // % dbus-send --system --type=method_call --print-reply
-//     --dest=org.chromium.MlDecisionService
-//     /org/chromium/MlDecisionService
-//     org.chromium.MlDecisionService.ShouldDeferScreenDim
+//     --dest=org.monyhar.MlDecisionService
+//     /org/monyhar/MlDecisionService
+//     org.monyhar.MlDecisionService.ShouldDeferScreenDim
 //     boolean: true or false
 //
 // % (True means smart dim decides to defer the imminent screen dimming.)

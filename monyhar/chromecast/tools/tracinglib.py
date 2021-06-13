@@ -225,7 +225,7 @@ class TracingBackend(object):
     self._included_categories = []
     self._excluded_categories = []
 
-    # See TraceConfigCategoryFilter::InitializeFromString in chromium.
+    # See TraceConfigCategoryFilter::InitializeFromString in monyhar.
     categories = (token.strip() for token in custom_categories.split(','))
     for category in categories:
       if not category:

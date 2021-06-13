@@ -906,7 +906,7 @@ TEST_P(PasswordProtectionServiceBaseTest, VerifyCanGetReputationOfURL) {
 
   // Main frame URL is anything else.
   EXPECT_TRUE(PasswordProtectionService::CanGetReputationOfURL(
-      GURL("http://www.chromium.org")));
+      GURL("http://www.monyhar.org")));
 }
 
 TEST_P(PasswordProtectionServiceBaseTest, TestNoRequestSentForAllowlistedURL) {

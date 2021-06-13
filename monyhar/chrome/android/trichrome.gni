@@ -15,7 +15,7 @@ if (!defined(default_trichrome_certdigest)) {
 
 declare_args() {
   # The package name for the Trichrome static shared library on Android.
-  trichrome_library_package = "org.chromium.trichromelibrary"
+  trichrome_library_package = "org.monyhar.trichromelibrary"
 
   # The SHA256 certificate digest for the Trichrome static shared library on
   # Android. You can use "apksigner verify --print-certs" on the signed APK to
@@ -179,8 +179,8 @@ template("trichrome_library_apk_tmpl") {
     if (!is_java_debug) {
       proguard_enabled = true
       proguard_configs = [
-        "//base/android/proguard/chromium_apk.flags",
-        "//base/android/proguard/chromium_code.flags",
+        "//base/android/proguard/monyhar_apk.flags",
+        "//base/android/proguard/monyhar_code.flags",
         "//chrome/android/proguard/trichrome.flags",
       ]
       if (trichrome_synchronized_proguard) {

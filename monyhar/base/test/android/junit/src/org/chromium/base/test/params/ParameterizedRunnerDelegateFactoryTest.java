@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.test.params;
+package org.monyhar.base.test.params;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -12,8 +12,8 @@ import org.junit.runners.model.FrameworkMethod;
 import org.junit.runners.model.InitializationError;
 import org.junit.runners.model.TestClass;
 
-import org.chromium.base.test.params.ParameterAnnotations.UseMethodParameter;
-import org.chromium.base.test.params.ParameterizedRunnerDelegateFactory.ParameterizedRunnerDelegateInstantiationException;
+import org.monyhar.base.test.params.ParameterAnnotations.UseMethodParameter;
+import org.monyhar.base.test.params.ParameterizedRunnerDelegateFactory.ParameterizedRunnerDelegateInstantiationException;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;
@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Test for org.chromium.base.test.params.ParameterizedRunnerDelegateFactory
+ * Test for org.monyhar.base.test.params.ParameterizedRunnerDelegateFactory
  */
 @RunWith(BlockJUnit4ClassRunner.class)
 public class ParameterizedRunnerDelegateFactoryTest {

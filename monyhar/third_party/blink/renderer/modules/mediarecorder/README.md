@@ -9,7 +9,7 @@ Encoding video uses hardware accelerated capabilities where possible: check
 
 [W3C MediaStream Recording API]: https://w3c.github.io/mediacapture-record/
 [CanIUse]: http://caniuse.com/#feat=mediarecorder
-[Encode Accelerator Implementation Status]: https://github.com/yellowdoge/mediacapture-record-implementation-status/blob/master/chromium.md
+[Encode Accelerator Implementation Status]: https://github.com/yellowdoge/mediacapture-record-implementation-status/blob/master/monyhar.md
 
 ## API Mechanics
 
@@ -49,7 +49,7 @@ can be flushed using `requestData()` or `stop()`.  `event.data` contains the
 recorded `Blob`.
 
 [`MediaRecorderOptions`]: https://w3c.github.io/mediacapture-record/#mediarecorderoptions-section
-[isTypeSupported()]: https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/web_tests/fast/mediarecorder/MediaRecorder-isTypeSupported.html
+[isTypeSupported()]: https://monyhar.googlesource.com/monyhar/src/+/master/third_party/blink/web_tests/fast/mediarecorder/MediaRecorder-isTypeSupported.html
 
 ## Implementation in Chromium
 
@@ -62,8 +62,8 @@ to get the job done.  All this is illustrated in the [diagram] below.
 
 [MediaRecorder class]: https://w3c.github.io/mediacapture-record/#mediarecorder-api
 [`MediaRecorder()`]: (https://w3c.github.io/mediacapture-record/#mediarecorder-constructor)
-[`MediaRecorderHandler`]: (https://chromium.googlesource.com/chromium/src/+/master/content/renderer/media_recorder/media_recorder_handler.h)
-[`VideoTrackRecorder`]: https://chromium.googlesource.com/chromium/src/+/master/content/renderer/media_recorder/video_track_recorder.h
+[`MediaRecorderHandler`]: (https://monyhar.googlesource.com/monyhar/src/+/master/content/renderer/media_recorder/media_recorder_handler.h)
+[`VideoTrackRecorder`]: https://monyhar.googlesource.com/monyhar/src/+/master/content/renderer/media_recorder/video_track_recorder.h
 [diagram]: http://ibb.co/mLK4Y5
 
 ![MediaRecorder classes](http://preview.ibb.co/j1RjY5/DD_Media_Capabilities_Encoding.png)
@@ -94,9 +94,9 @@ Media Recorder web tests are located in [web_tests/fast/mediarecorder], and
 [web_tests/external/mediacapture-record], unittests in [content] and [media]
 and [browsertests].
 
-[web_tests/fast/mediarecorder]: https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/web_tests/fast/mediarecorder/
-[web_tests/external/mediacapture-record]: https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/web_tests/external/wpt/mediacapture-record/
-[content]: https://chromium.googlesource.com/chromium/src/+/master/content/renderer/media_recorder/
-[media]: https://chromium.googlesource.com/chromium/src/+/master/media/muxers
-[browsertests]: https://chromium.googlesource.com/chromium/src/+/master/content/browser/webrtc/webrtc_media_recorder_browsertest.cc
+[web_tests/fast/mediarecorder]: https://monyhar.googlesource.com/monyhar/src/+/master/third_party/blink/web_tests/fast/mediarecorder/
+[web_tests/external/mediacapture-record]: https://monyhar.googlesource.com/monyhar/src/+/master/third_party/blink/web_tests/external/wpt/mediacapture-record/
+[content]: https://monyhar.googlesource.com/monyhar/src/+/master/content/renderer/media_recorder/
+[media]: https://monyhar.googlesource.com/monyhar/src/+/master/media/muxers
+[browsertests]: https://monyhar.googlesource.com/monyhar/src/+/master/content/browser/webrtc/webrtc_media_recorder_browsertest.cc
 

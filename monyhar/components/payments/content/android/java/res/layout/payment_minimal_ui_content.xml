@@ -120,7 +120,7 @@
         android:textAppearance="@style/TextAppearance.TextSmall.Secondary"/>
 
     <!-- "Pay" button. -->
-    <org.chromium.ui.widget.ButtonCompat
+    <org.monyhar.ui.widget.ButtonCompat
         android:id="@+id/pay_button"
         android:layout_alignParentEnd="true"
         android:layout_below="@id/account_balance"

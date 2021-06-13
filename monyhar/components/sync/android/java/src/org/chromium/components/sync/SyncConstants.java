@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.sync;
+package org.monyhar.components.sync;
 
-/** This class stores constants that need to be in org.chromium.components.sync. */
+/** This class stores constants that need to be in org.monyhar.components.sync. */
 public final class SyncConstants {
     // This should always have the same value as GaiaConstants::kChromeSyncOAuth2Scope.
     public static final String CHROME_SYNC_OAUTH2_SCOPE =

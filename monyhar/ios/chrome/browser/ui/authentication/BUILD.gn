@@ -74,7 +74,7 @@ source_set("authentication") {
   if (is_chrome_branded) {
     deps += [ "resources:signin_promo_logo_chrome_color" ]
   } else {
-    deps += [ "resources:signin_promo_logo_chromium_color" ]
+    deps += [ "resources:signin_promo_logo_monyhar_color" ]
   }
   frameworks = [
     "CoreGraphics.framework",

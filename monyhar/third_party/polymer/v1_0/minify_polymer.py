@@ -21,14 +21,14 @@ sys.path.append(_HERE_PATH)
 import extract_inline_scripts
 
 def main():
-  polymer_dir = os.path.join(_HERE_PATH, 'components-chromium', 'polymer2')
+  polymer_dir = os.path.join(_HERE_PATH, 'components-monyhar', 'polymer2')
   # Final HTML bundle.
   polymer_html = os.path.join(polymer_dir, 'polymer.html')
   # Final JS bundle.
   polymer_js = os.path.join(polymer_dir, 'polymer-extracted.js')
 
   # Move the entire checkout to a temp location.
-  tmp_dir = os.path.join(_HERE_PATH, 'components-chromium', 'polymer2temp')
+  tmp_dir = os.path.join(_HERE_PATH, 'components-monyhar', 'polymer2temp')
   if os.path.exists(tmp_dir):
     shutil.rmtree(tmp_dir)
   shutil.move(polymer_dir, tmp_dir)
@@ -67,8 +67,8 @@ def main():
     shutil.move(os.path.join(tmp_dir, 'bower.json'), polymer_dir)
     shutil.move(os.path.join(tmp_dir, 'LICENSE.txt'), polymer_dir)
   finally:
-    # Delete component-chromium/shadycss since it ends up in the bundle.
-    shutil.rmtree(os.path.join(_HERE_PATH, 'components-chromium', 'shadycss'))
+    # Delete component-monyhar/shadycss since it ends up in the bundle.
+    shutil.rmtree(os.path.join(_HERE_PATH, 'components-monyhar', 'shadycss'))
     shutil.rmtree(tmp_dir)
 
 if __name__ == '__main__':

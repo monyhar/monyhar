@@ -27,7 +27,7 @@
   </message>
 
   <!-- Internal page summary strings -->
-  <!-- Note: IDS_PAGE_INFO_INTERNAL_PAGE would be here, but it is in components_{chromium,google_chrome}_strings.grd because it uses the browser name. -->
+  <!-- Note: IDS_PAGE_INFO_INTERNAL_PAGE would be here, but it is in components_{monyhar,google_chrome}_strings.grd because it uses the browser name. -->
   <message name="IDS_PAGE_INFO_EXTENSION_PAGE" desc="Message to display in the page info bubble when the page you are on is a chrome-extension:// page. This refers to Chrome extensions.">
     You're viewing an extension page
   </message>

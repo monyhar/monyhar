@@ -26,7 +26,7 @@
 
     <application android:label="{{ application_label|default('Android System WebView') }}"
                  android:icon="@{{manifest_package|default('com.android.webview')}}:drawable/icon_webview"
-                 android:name="{{ application_name|default('org.chromium.android_webview.nonembedded.WebViewApkApplication') }}"
+                 android:name="{{ application_name|default('org.monyhar.android_webview.nonembedded.WebViewApkApplication') }}"
                  android:multiArch="true"
                  {{ use32bitAbi|default('android:use32bitAbi="true"') }}
                  android:extractNativeLibs="{{ trichrome_library is not defined }}">
@@ -38,14 +38,14 @@
             <!-- WebView Developer UI Activities. If you change these Activities, please update
                  android_webview/test/shell/AndroidManifest.xml as well. -->
             <!--suppress HardcodedText -->
-            <activity android:name="org.chromium.android_webview.devui.MainActivity"
+            <activity android:name="org.monyhar.android_webview.devui.MainActivity"
                       android:windowSoftInputMode="adjustPan"
                       android:visibleToInstantApps="true"
                       android:label="WebView DevTools"
                       android:icon="@drawable/icon_webview"
                       android:theme="@style/Theme.DevUi.DayNight"
                       android:launchMode="singleTask"
-                      android:taskAffinity="{{ manifest_package }}.org.chromium.android_webview.devui" {# Explicit taskAffinity to distinguish from monochrome browser task. #}
+                      android:taskAffinity="{{ manifest_package }}.org.monyhar.android_webview.devui" {# Explicit taskAffinity to distinguish from monochrome browser task. #}
                       android:process=":webview_apk"  {# Explicit process required for monochrome compatibility. #}
                       android:exported="true">
                 <intent-filter>
@@ -56,14 +56,14 @@
             <!-- Don't actually try to launch with this alias: it only exists so we can query its enabled state. -->
             <!-- If you change this component make sure to update the corresponding copy in
                  test/shell/AndroidManifest.xml -->
-            <activity-alias android:name="org.chromium.android_webview.devui.DeveloperModeState"
-                      android:targetActivity="org.chromium.android_webview.devui.MainActivity"
+            <activity-alias android:name="org.monyhar.android_webview.devui.DeveloperModeState"
+                      android:targetActivity="org.monyhar.android_webview.devui.MainActivity"
                       android:visibleToInstantApps="true"
                       android:enabled="false"
                       android:process=":webview_apk" />  {# Explicit process required for monochrome compatibility. #}
             <!-- End of WebView Developer UI Activities -->
 
-            <activity android:name="org.chromium.android_webview.nonembedded.LicenseActivity"
+            <activity android:name="org.monyhar.android_webview.nonembedded.LicenseActivity"
                       android:label="@string/license_activity_title"
                       android:process=":webview_apk"  {# Explicit process required for monochrome compatibility. #}
                       android:exported="true">
@@ -74,7 +74,7 @@
                 <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                            android:value="true" />
             </activity>
-            <provider android:name="org.chromium.android_webview.nonembedded.LicenseContentProvider"
+            <provider android:name="org.monyhar.android_webview.nonembedded.LicenseContentProvider"
                       android:exported="true"
                       android:authorities="{{ manifest_package }}.LicenseContentProvider"
                       android:grantUriPermissions="true"
@@ -83,7 +83,7 @@
             <!-- Disabled by default, enabled at runtime by Developer UI. -->
             <!-- If you change this component make sure to update the corresponding copy in
                  test/shell/AndroidManifest.xml-->
-            <provider android:name="org.chromium.android_webview.services.DeveloperModeContentProvider"
+            <provider android:name="org.monyhar.android_webview.services.DeveloperModeContentProvider"
                       android:visibleToInstantApps="true"
                       android:exported="true"
                       android:authorities="{{ manifest_package }}.DeveloperModeContentProvider"
@@ -102,53 +102,53 @@
                 <!-- These have a separate android:process so that they can
                      run in Monochrome with a different value for
                      PathUtils.getDataDirectory() from Chrome. -->
-                <service android:name="org.chromium.android_webview.services.VariationsSeedServer"
+                <service android:name="org.monyhar.android_webview.services.VariationsSeedServer"
                          android:exported="true"
                          android:process=":webview_service"  {# Explicit process required for monochrome compatibility. #}
                          tools:ignore="ExportedService" />
-                <service android:name="org.chromium.android_webview.services.AwVariationsSeedFetcher"
+                <service android:name="org.monyhar.android_webview.services.AwVariationsSeedFetcher"
                          android:permission="android.permission.BIND_JOB_SERVICE"
                          android:exported="false"
                          android:process=":webview_service" />  {# Explicit process required for monochrome compatibility. #}
-                <service android:name="org.chromium.android_webview.services.CrashReceiverService"
+                <service android:name="org.monyhar.android_webview.services.CrashReceiverService"
                          android:exported="true"
                          android:process=":webview_service"  {# Explicit process required for monochrome compatibility. #}
                          tools:ignore="ExportedService" />
-                <service android:name="org.chromium.android_webview.services.AwMinidumpUploadJobService"
+                <service android:name="org.monyhar.android_webview.services.AwMinidumpUploadJobService"
                          android:permission="android.permission.BIND_JOB_SERVICE"
                          android:exported="true"
                          android:process=":webview_service" />  {# Explicit process required for monochrome compatibility. #}
-                <service android:name="org.chromium.android_webview.services.DeveloperUiService"
+                <service android:name="org.monyhar.android_webview.services.DeveloperUiService"
                          android:exported="true"
                          android:process=":webview_service"  {# Explicit process required for monochrome compatibility. #}
                          tools:ignore="ExportedService" />
-                <service android:name="org.chromium.android_webview.services.MetricsBridgeService"
+                <service android:name="org.monyhar.android_webview.services.MetricsBridgeService"
                          android:exported="true"
                          android:visibleToInstantApps="true"
                          android:process=":webview_service"  {# Explicit process required for monochrome compatibility. #}
                          tools:ignore="ExportedService" />
                 <!-- This service runs inside webview_apk process because it loads native -->
-                <service android:name="org.chromium.android_webview.nonembedded.AwComponentUpdateService"
+                <service android:name="org.monyhar.android_webview.nonembedded.AwComponentUpdateService"
                          android:permission="android.permission.BIND_JOB_SERVICE"
                          android:exported="false"
                          android:process=":webview_apk"/>  {# Explicit process required for monochrome compatibility. #}
-                <service android:name="org.chromium.android_webview.services.ComponentsProviderService"
+                <service android:name="org.monyhar.android_webview.services.ComponentsProviderService"
                          android:exported="true"
                          android:visibleToInstantApps="true"
                          android:process=":webview_service"  {# Explicit process required for monochrome compatibility. #}
                          tools:ignore="ExportedService" />
             {% endif %}
         {% endmacro %}
-        {{ common(manifest_package|default('com.android.webview'), library|default('libwebviewchromium.so')) }}
+        {{ common(manifest_package|default('com.android.webview'), library|default('libwebviewmonyhar.so')) }}
         {% if donor_package is defined %}
             <meta-data android:name="com.android.webview.WebViewDonorPackage"
                        android:value="{{ donor_package }}" />
         {% endif %}
         {% set num_sandboxed_services = 40 %}
-        <meta-data android:name="org.chromium.content.browser.NUM_SANDBOXED_SERVICES"
+        <meta-data android:name="org.monyhar.content.browser.NUM_SANDBOXED_SERVICES"
                    android:value="{{ num_sandboxed_services }}" />
         {% for i in range(num_sandboxed_services) %}
-            <service android:name="org.chromium.content.app.SandboxedProcessService{{ i }}"
+            <service android:name="org.monyhar.content.app.SandboxedProcessService{{ i }}"
                      android:process=":sandboxed_process{{ i }}"
                      android:isolatedProcess="true"
                      android:exported="true"
@@ -156,7 +156,7 @@
                      tools:ignore="ExportedService"
                      android:visibleToInstantApps="true" />
         {% endfor %}
-        <meta-data android:name="org.chromium.content.browser.NUM_PRIVILEGED_SERVICES"
+        <meta-data android:name="org.monyhar.content.browser.NUM_PRIVILEGED_SERVICES"
                    android:value="0" />
         {% if trichrome_library is defined %}
         <uses-static-library

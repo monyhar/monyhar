@@ -3,7 +3,7 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
 
-<org.chromium.ui.widget.OptimizedFrameLayout
+<org.monyhar.ui.widget.OptimizedFrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,7 +11,7 @@
     android:layout_height="match_parent"
     android:background="@color/default_bg_color_elev_0" >
 
-    <org.chromium.components.browser_ui.widget.selectable_list.SelectableListLayout
+    <org.monyhar.components.browser_ui.widget.selectable_list.SelectableListLayout
         android:id="@+id/selectable_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -33,7 +33,7 @@
         app:srcCompat="@drawable/zoom_in"
         android:visibility="gone"/>
 
-    <org.chromium.components.browser_ui.photo_picker.PickerVideoPlayer
+    <org.monyhar.components.browser_ui.photo_picker.PickerVideoPlayer
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/playback_container"
@@ -41,4 +41,4 @@
         android:clickable="true"
         android:elevation="6dp"
         android:visibility="gone" />
-</org.chromium.ui.widget.OptimizedFrameLayout>
+</org.monyhar.ui.widget.OptimizedFrameLayout>

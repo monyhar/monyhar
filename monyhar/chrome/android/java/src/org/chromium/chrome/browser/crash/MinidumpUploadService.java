@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.crash;
+package org.monyhar.chrome.browser.crash;
 
-import org.chromium.chrome.browser.base.SplitCompatIntentService;
-import org.chromium.chrome.browser.base.SplitCompatUtils;
+import org.monyhar.chrome.browser.base.SplitCompatIntentService;
+import org.monyhar.chrome.browser.base.SplitCompatUtils;
 
 /** See {@link MinidumpUploadServiceImpl}. */
 public class MinidumpUploadService extends SplitCompatIntentService {
@@ -13,7 +13,7 @@ public class MinidumpUploadService extends SplitCompatIntentService {
 
     public MinidumpUploadService() {
         super(SplitCompatUtils.getIdentifierName(
-                      "org.chromium.chrome.browser.crash.MinidumpUploadServiceImpl"),
+                      "org.monyhar.chrome.browser.crash.MinidumpUploadServiceImpl"),
                 TAG);
     }
 }

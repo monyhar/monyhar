@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#include "net/quic/quic_chromium_client_session.h"
+#include "net/quic/quic_monyhar_client_session.h"
 
 #include "base/base64.h"
 #include "base/bind.h"
@@ -25,14 +25,14 @@
 #include "net/log/net_log_source.h"
 #include "net/log/test_net_log.h"
 #include "net/quic/address_utils.h"
-#include "net/quic/crypto/proof_verifier_chromium.h"
+#include "net/quic/crypto/proof_verifier_monyhar.h"
 #include "net/quic/mock_crypto_client_stream_factory.h"
 #include "net/quic/mock_quic_data.h"
-#include "net/quic/quic_chromium_alarm_factory.h"
-#include "net/quic/quic_chromium_client_session_peer.h"
-#include "net/quic/quic_chromium_connection_helper.h"
-#include "net/quic/quic_chromium_packet_reader.h"
-#include "net/quic/quic_chromium_packet_writer.h"
+#include "net/quic/quic_monyhar_alarm_factory.h"
+#include "net/quic/quic_monyhar_client_session_peer.h"
+#include "net/quic/quic_monyhar_connection_helper.h"
+#include "net/quic/quic_monyhar_packet_reader.h"
+#include "net/quic/quic_monyhar_packet_writer.h"
 #include "net/quic/quic_connectivity_monitor.h"
 #include "net/quic/quic_crypto_client_config_handle.h"
 #include "net/quic/quic_crypto_client_stream_factory.h"

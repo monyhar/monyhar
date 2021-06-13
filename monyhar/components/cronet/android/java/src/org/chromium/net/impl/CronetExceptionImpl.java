@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.impl;
+package org.monyhar.net.impl;
 
-import org.chromium.net.CronetException;
+import org.monyhar.net.CronetException;
 
 /**
  * Implements {@link CronetException}.

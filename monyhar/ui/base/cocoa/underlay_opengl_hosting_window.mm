@@ -18,7 +18,7 @@
   // - It breaks Expose: <http://sourceforge.net/projects/heat-meteo/forums/forum/268087/topic/4582610>
   //
   // This is a banned practice
-  // <http://www.chromium.org/developers/coding-style/cocoa-dos-and-donts>. Do
+  // <http://www.monyhar.org/developers/coding-style/cocoa-dos-and-donts>. Do
   // not do this. Use kWindowSizeDeterminedLater in
   // ui/base/cocoa/window_size_constants.h instead.
   //

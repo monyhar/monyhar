@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.photo_picker;
+package org.monyhar.components.browser_ui.photo_picker;
 
 import android.Manifest;
 import android.content.ContentResolver;
@@ -14,11 +14,11 @@ import android.os.Build;
 import android.os.Environment;
 import android.provider.MediaStore;
 
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.net.MimeTypeFilter;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.net.MimeTypeFilter;
+import org.monyhar.ui.base.WindowAndroid;
 
 import java.io.File;
 import java.util.ArrayList;

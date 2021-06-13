@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar;
+package org.monyhar.chrome.browser.toolbar;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.browser.omnibox.NewTabPageDelegate;
-import org.chromium.chrome.browser.omnibox.UrlBarData;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.omnibox.NewTabPageDelegate;
+import org.monyhar.chrome.browser.omnibox.UrlBarData;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tab.Tab;
 
 /**
  * Defines the data that is exposed to properly render the Toolbar.
@@ -54,7 +54,7 @@ public interface ToolbarDataProvider {
     Profile getProfile();
 
     /**
-     * @return The contents of the {@link org.chromium.chrome.browser.omnibox.UrlBar}.
+     * @return The contents of the {@link org.monyhar.chrome.browser.omnibox.UrlBar}.
      */
     UrlBarData getUrlBarData();
 

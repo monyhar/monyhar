@@ -711,7 +711,7 @@ GLenum Framebuffer::IsPossiblyComplete(const FeatureInfo* feature_info) const {
   uint32_t colorbufferSize = 0;
   bool colorbufferSizeValid = false;
   const bool kSamplesMustMatch = feature_info->IsWebGLContext() ||
-      !feature_info->feature_flags().chromium_framebuffer_mixed_samples;
+      !feature_info->feature_flags().monyhar_framebuffer_mixed_samples;
 
   for (AttachmentMap::const_iterator it = attachments_.begin();
        it != attachments_.end(); ++it) {

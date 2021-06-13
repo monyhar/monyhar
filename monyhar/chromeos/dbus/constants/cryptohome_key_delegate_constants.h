@@ -10,10 +10,10 @@
 namespace cryptohome {
 
 // Name and path of the D-Bus service that is run by Chrome and implements the
-// org.chromium.CryptohomeKeyDelegateInterface interface. See the interface
+// org.monyhar.CryptohomeKeyDelegateInterface interface. See the interface
 // definition in the Chrome OS repo in
 // src/platform2/cryptohome/dbus_bindings/
-//   org.chromium.CryptohomeKeyDelegateInterface.xml .
+//   org.monyhar.CryptohomeKeyDelegateInterface.xml .
 COMPONENT_EXPORT(CHROMEOS_DBUS_CONSTANTS)
 extern const char kCryptohomeKeyDelegateServiceName[];
 COMPONENT_EXPORT(CHROMEOS_DBUS_CONSTANTS)

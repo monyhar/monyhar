@@ -41,7 +41,7 @@ namespace {
 const char kTestID[] = "test_id";
 const char kTestChallenge[] = "test_challenge";
 const char kTestCertificate[] = "test_certificate";
-const char kTestEmail[] = "test_email@chromium.org";
+const char kTestEmail[] = "test_email@monyhar.org";
 const char kTestURL[] = "http://mytestdomain/test";
 
 class FakeDelegate : public PlatformVerificationFlow::Delegate {

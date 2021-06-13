@@ -505,7 +505,7 @@ class RebaselineCLTest(BaseTestCase, LoggingTestCase):
         # the given builders.
         self.command.trigger_try_jobs(['MOCK Try Linux', 'MOCK Try Win'])
         self.assertEqual(self.command.git_cl.calls, [[
-            'git', 'cl', 'try', '-B', 'luci.chromium.try', '-b',
+            'git', 'cl', 'try', '-B', 'luci.monyhar.try', '-b',
             'MOCK Try Linux', '-b', 'MOCK Try Win'
         ]])
         self.assertLog([

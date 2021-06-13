@@ -70,7 +70,7 @@ std::string ComputeGuidFromBytes(base::span<const uint8_t> bytes) {
       bytes[14], bytes[15]);
 }
 
-// Bookmarks created before 2015 (https://codereview.chromium.org/1136953013)
+// Bookmarks created before 2015 (https://codereview.monyhar.org/1136953013)
 // have an originator client item ID that is NOT a GUID. Hence, an alternative
 // method must be used to infer a GUID deterministically from a combination of
 // sync fields that is known to be a) immutable and b) unique per synced

@@ -9,9 +9,9 @@
         android:icon="@drawable/shortcut_newtab"
         android:shortcutShortLabel="@string/menu_new_tab" >
         <intent
-            android:action="chromium.shortcut.action.OPEN_NEW_TAB"
+            android:action="monyhar.shortcut.action.OPEN_NEW_TAB"
             android:targetPackage="{{manifest_package}}"
-            android:targetClass="org.chromium.chrome.browser.LauncherShortcutActivity" >
+            android:targetClass="org.monyhar.chrome.browser.LauncherShortcutActivity" >
         </intent>
     </shortcut>
 
@@ -23,9 +23,9 @@
         android:shortcutLongLabel="@string/menu_new_incognito_tab"
         android:shortcutDisabledMessage="@string/disabled_incognito_launcher_shortcut_message" >
         <intent
-            android:action="chromium.shortcut.action.OPEN_NEW_INCOGNITO_TAB"
+            android:action="monyhar.shortcut.action.OPEN_NEW_INCOGNITO_TAB"
             android:targetPackage="{{manifest_package}}"
-            android:targetClass="org.chromium.chrome.browser.LauncherShortcutActivity" >
+            android:targetClass="org.monyhar.chrome.browser.LauncherShortcutActivity" >
         </intent>
     </shortcut>
 </shortcuts>

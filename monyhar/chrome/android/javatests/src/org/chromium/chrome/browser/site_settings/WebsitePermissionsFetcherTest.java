@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.site_settings;
+package org.monyhar.chrome.browser.site_settings;
 
-import static org.chromium.components.browser_ui.site_settings.WebsitePreferenceBridge.SITE_WILDCARD;
+import static org.monyhar.components.browser_ui.site_settings.WebsitePreferenceBridge.SITE_WILDCARD;
 
 import android.util.Pair;
 
@@ -16,33 +16,33 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.Callback;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.chrome.browser.browsing_data.BrowsingDataBridge;
-import org.chromium.chrome.browser.browsing_data.BrowsingDataType;
-import org.chromium.chrome.browser.browsing_data.TimePeriod;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.test.ChromeBrowserTestRule;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.components.browser_ui.site_settings.ChosenObjectInfo;
-import org.chromium.components.browser_ui.site_settings.ContentSettingException;
-import org.chromium.components.browser_ui.site_settings.LocalStorageInfo;
-import org.chromium.components.browser_ui.site_settings.PermissionInfo;
-import org.chromium.components.browser_ui.site_settings.SiteSettingsCategory;
-import org.chromium.components.browser_ui.site_settings.StorageInfo;
-import org.chromium.components.browser_ui.site_settings.Website;
-import org.chromium.components.browser_ui.site_settings.WebsiteAddress;
-import org.chromium.components.browser_ui.site_settings.WebsitePermissionsFetcher;
-import org.chromium.components.browser_ui.site_settings.WebsitePreferenceBridge;
-import org.chromium.components.browser_ui.site_settings.WebsitePreferenceBridgeJni;
-import org.chromium.components.content_settings.ContentSettingValues;
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.components.embedder_support.browser_context.BrowserContextHandle;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.chrome.browser.browsing_data.BrowsingDataBridge;
+import org.monyhar.chrome.browser.browsing_data.BrowsingDataType;
+import org.monyhar.chrome.browser.browsing_data.TimePeriod;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.test.ChromeBrowserTestRule;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.components.browser_ui.site_settings.ChosenObjectInfo;
+import org.monyhar.components.browser_ui.site_settings.ContentSettingException;
+import org.monyhar.components.browser_ui.site_settings.LocalStorageInfo;
+import org.monyhar.components.browser_ui.site_settings.PermissionInfo;
+import org.monyhar.components.browser_ui.site_settings.SiteSettingsCategory;
+import org.monyhar.components.browser_ui.site_settings.StorageInfo;
+import org.monyhar.components.browser_ui.site_settings.Website;
+import org.monyhar.components.browser_ui.site_settings.WebsiteAddress;
+import org.monyhar.components.browser_ui.site_settings.WebsitePermissionsFetcher;
+import org.monyhar.components.browser_ui.site_settings.WebsitePreferenceBridge;
+import org.monyhar.components.browser_ui.site_settings.WebsitePreferenceBridgeJni;
+import org.monyhar.components.content_settings.ContentSettingValues;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.components.embedder_support.browser_context.BrowserContextHandle;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -610,18 +610,18 @@ public class WebsitePermissionsFetcherTest {
         fetcher.setWebsitePreferenceBridgeForTesting(websitePreferenceBridge);
 
         String googleOrigin = "https://google.com";
-        String chromiumOrigin = "https://chromium.org";
+        String monyharOrigin = "https://monyhar.org";
         String exampleOrigin = "https://example.com";
 
         websitePreferenceBridge.addPermissionInfo(new PermissionInfo(
                 ContentSettingsType.GEOLOCATION, googleOrigin, SITE_WILDCARD, false));
         websitePreferenceBridge.addPermissionInfo(new PermissionInfo(
-                ContentSettingsType.GEOLOCATION, chromiumOrigin, SITE_WILDCARD, false));
+                ContentSettingsType.GEOLOCATION, monyharOrigin, SITE_WILDCARD, false));
 
         Website expectedGoogleWebsite =
                 new Website(WebsiteAddress.create(googleOrigin), WebsiteAddress.create(null));
         Website expectedChromiumWebsite =
-                new Website(WebsiteAddress.create(chromiumOrigin), WebsiteAddress.create(null));
+                new Website(WebsiteAddress.create(monyharOrigin), WebsiteAddress.create(null));
 
         fetcher.fetchAllPreferences((sites) -> {
             Assert.assertEquals(2, sites.size());
@@ -845,13 +845,13 @@ public class WebsitePermissionsFetcherTest {
         fetcher.setWebsitePreferenceBridgeForTesting(websitePreferenceBridge);
 
         String googleOrigin = "https://google.com";
-        String chromiumOrigin = "https://chromium.org";
+        String monyharOrigin = "https://monyhar.org";
         int storageSize = 256;
         StorageInfo fakeStorageInfo = new StorageInfo(googleOrigin, 0, storageSize);
         LocalStorageInfo fakeLocalStorageInfo =
                 new LocalStorageInfo(googleOrigin, storageSize, false);
         LocalStorageInfo fakeImportantLocalStorageInfo =
-                new LocalStorageInfo(chromiumOrigin, storageSize, true);
+                new LocalStorageInfo(monyharOrigin, storageSize, true);
 
         websitePreferenceBridge.addStorageInfo(fakeStorageInfo);
         websitePreferenceBridge.addLocalStorageInfoMapEntry(fakeLocalStorageInfo);
@@ -897,7 +897,7 @@ public class WebsitePermissionsFetcherTest {
                             Assert.assertEquals(fakeStorageInfo.getHost(), storageInfo.getHost());
 
                             Assert.assertNull(site.getLocalStorageInfo());
-                        } else if (site.getAddress().matches(chromiumOrigin)) {
+                        } else if (site.getAddress().matches(monyharOrigin)) {
                             List<StorageInfo> storageInfos = site.getStorageInfo();
                             Assert.assertEquals(0, storageInfos.size());
 

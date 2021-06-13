@@ -9,7 +9,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://*.chromium.org/*"],
+      "matches": ["*://*.monyhar.org/*"],
       "js": ["./cs1.js", "/cs2.js"]
     }
   ],

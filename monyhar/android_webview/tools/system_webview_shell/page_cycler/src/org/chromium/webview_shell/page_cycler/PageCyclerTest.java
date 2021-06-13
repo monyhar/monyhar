@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webview_shell.page_cycler;
+package org.monyhar.webview_shell.page_cycler;
 
 import android.support.test.InstrumentationRegistry;
 import android.webkit.WebSettings;
@@ -17,16 +17,16 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseActivityTestRule;
-import org.chromium.base.test.params.BaseJUnit4RunnerDelegate;
-import org.chromium.base.test.params.ParameterAnnotations.UseMethodParameter;
-import org.chromium.base.test.params.ParameterAnnotations.UseRunnerDelegate;
-import org.chromium.base.test.params.ParameterProvider;
-import org.chromium.base.test.params.ParameterSet;
-import org.chromium.base.test.params.ParameterizedRunner;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.Restriction;
-import org.chromium.webview_shell.PageCyclerTestActivity;
+import org.monyhar.base.test.BaseActivityTestRule;
+import org.monyhar.base.test.params.BaseJUnit4RunnerDelegate;
+import org.monyhar.base.test.params.ParameterAnnotations.UseMethodParameter;
+import org.monyhar.base.test.params.ParameterAnnotations.UseRunnerDelegate;
+import org.monyhar.base.test.params.ParameterProvider;
+import org.monyhar.base.test.params.ParameterSet;
+import org.monyhar.base.test.params.ParameterizedRunner;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.Restriction;
+import org.monyhar.webview_shell.PageCyclerTestActivity;
 
 import java.util.Arrays;
 import java.util.List;

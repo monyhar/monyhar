@@ -1,17 +1,17 @@
 // Copyright 2020 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.chrome.browser.feed.v2;
+package org.monyhar.chrome.browser.feed.v2;
 
 import com.google.protobuf.CodedOutputStream;
 
-import org.chromium.base.Log;
-import org.chromium.base.test.util.UrlUtils;
-import org.chromium.chrome.browser.preferences.Pref;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.user_prefs.UserPrefs;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.net.test.util.WebServer;
+import org.monyhar.base.Log;
+import org.monyhar.base.test.util.UrlUtils;
+import org.monyhar.chrome.browser.preferences.Pref;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.user_prefs.UserPrefs;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.net.test.util.WebServer;
 
 import java.io.IOException;
 import java.io.OutputStream;

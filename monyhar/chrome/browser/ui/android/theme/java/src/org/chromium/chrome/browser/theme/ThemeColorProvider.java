@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.theme;
+package org.monyhar.chrome.browser.theme;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -10,8 +10,8 @@ import android.content.res.ColorStateList;
 import androidx.annotation.ColorInt;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ObserverList;
-import org.chromium.ui.util.ColorUtils;
+import org.monyhar.base.ObserverList;
+import org.monyhar.ui.util.ColorUtils;
 
 /**
  * An abstract class that provides the current theme color.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.process_launcher;
+package org.monyhar.base.process_launcher;
 
 import android.content.Context;
 import android.content.Intent;
@@ -43,7 +43,7 @@ public interface ChildProcessServiceDelegate {
      * Preloading is automatically done during library loading, but can also be called explicitly
      * to speed up the loading. See {@link LibraryLoader.preloadNow}.
      * @param packageName The package name the library should be preloaded with (i.e.
-     * org.chromium.chrome).
+     * org.monyhar.chrome).
      */
     void preloadNativeLibrary(String packageName);
 

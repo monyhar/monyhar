@@ -26,15 +26,15 @@ android_library("java") {
   ]
 
   sources = [
-    "java/src/org/chromium/chrome/browser/ui/android/webid/AccountSelectionBottomSheetContent.java",
-    "java/src/org/chromium/chrome/browser/ui/android/webid/AccountSelectionBridge.java",
-    "java/src/org/chromium/chrome/browser/ui/android/webid/AccountSelectionCoordinator.java",
-    "java/src/org/chromium/chrome/browser/ui/android/webid/AccountSelectionMediator.java",
-    "java/src/org/chromium/chrome/browser/ui/android/webid/AccountSelectionProperties.java",
-    "java/src/org/chromium/chrome/browser/ui/android/webid/AccountSelectionViewBinder.java",
+    "java/src/org/monyhar/chrome/browser/ui/android/webid/AccountSelectionBottomSheetContent.java",
+    "java/src/org/monyhar/chrome/browser/ui/android/webid/AccountSelectionBridge.java",
+    "java/src/org/monyhar/chrome/browser/ui/android/webid/AccountSelectionCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/ui/android/webid/AccountSelectionMediator.java",
+    "java/src/org/monyhar/chrome/browser/ui/android/webid/AccountSelectionProperties.java",
+    "java/src/org/monyhar/chrome/browser/ui/android/webid/AccountSelectionViewBinder.java",
   ]
 
-  resources_package = "org.chromium.chrome.browser.ui.android.webid"
+  resources_package = "org.monyhar.chrome.browser.ui.android.webid"
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
 }
 
@@ -57,7 +57,7 @@ java_library("junit") {
 
   testonly = true
 
-  sources = [ "java/src/org/chromium/chrome/browser/ui/android/webid/AccountSelectionControllerTest.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/ui/android/webid/AccountSelectionControllerTest.java" ]
 
   deps = [
     ":java",
@@ -81,8 +81,8 @@ android_library("javatests") {
   testonly = true
 
   sources = [
-    "java/src/org/chromium/chrome/browser/ui/android/webid/AccountSelectionIntegrationTest.java",
-    "java/src/org/chromium/chrome/browser/ui/android/webid/AccountSelectionViewTest.java",
+    "java/src/org/monyhar/chrome/browser/ui/android/webid/AccountSelectionIntegrationTest.java",
+    "java/src/org/monyhar/chrome/browser/ui/android/webid/AccountSelectionViewTest.java",
   ]
 
   deps = [

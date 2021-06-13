@@ -38,7 +38,7 @@ defaults.builderless.set(True)
 defaults.ssd.set(True)
 defaults.configure_kitchen.set(True)
 defaults.execution_timeout.set(8 * time.hour)
-defaults.pool.set("luci.chromium.findit")
+defaults.pool.set("luci.monyhar.findit")
 defaults.service_account.set("findit-builder@chops-service-accounts.iam.gserviceaccount.com")
 defaults.swarming_tags.set(["vpython:native-python-wrapper"])
 
@@ -55,7 +55,7 @@ defaults.caches.set([
 # longer overridable with Buildbucket V2
 builder(
     name = "findit-rerun",
-    executable = "recipe:findit/chromium/single_revision",
+    executable = "recipe:findit/monyhar/single_revision",
     goma_backend = goma.backend.RBE_PROD,
 )
 
@@ -72,13 +72,13 @@ builder(
     # Findit app specifies these for each build it schedules. The reason why
     # we specify them here is to pass validation of the buildbucket config.
     # Also, to illustrate the typical use case of this bucket.
-    executable = "recipe:findit/chromium/compile",
+    executable = "recipe:findit/monyhar/compile",
     goma_backend = goma.backend.RBE_PROD,
 )
 
 builder(
-    name = "linux_chromium_bot_db_exporter",
-    executable = "recipe:findit/chromium/export_bot_db",
+    name = "linux_monyhar_bot_db_exporter",
+    executable = "recipe:findit/monyhar/export_bot_db",
     os = os.LINUX_XENIAL_OR_BIONIC_SWITCH_TO_DEFAULT,
     properties = {
         "gs_bucket": "findit-for-me",

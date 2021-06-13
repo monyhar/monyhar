@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.language.settings;
+package org.monyhar.chrome.browser.language.settings;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -22,11 +22,11 @@ import androidx.core.view.ViewCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
-import org.chromium.chrome.browser.language.R;
-import org.chromium.components.browser_ui.widget.dragreorder.DragReorderableListAdapter;
-import org.chromium.components.browser_ui.widget.dragreorder.DragStateDelegate;
-import org.chromium.components.browser_ui.widget.listmenu.ListMenuButton;
-import org.chromium.components.browser_ui.widget.listmenu.ListMenuButtonDelegate;
+import org.monyhar.chrome.browser.language.R;
+import org.monyhar.components.browser_ui.widget.dragreorder.DragReorderableListAdapter;
+import org.monyhar.components.browser_ui.widget.dragreorder.DragStateDelegate;
+import org.monyhar.components.browser_ui.widget.listmenu.ListMenuButton;
+import org.monyhar.components.browser_ui.widget.listmenu.ListMenuButtonDelegate;
 
 import java.util.ArrayList;
 import java.util.Collection;

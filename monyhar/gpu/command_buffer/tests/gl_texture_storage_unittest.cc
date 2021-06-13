@@ -6,7 +6,7 @@
 #include <GLES2/gl2ext.h>
 #include <stdint.h>
 
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "gpu/command_buffer/tests/gl_manager.h"
 #include "gpu/command_buffer/tests/gl_test_utils.h"
 #include "gpu/command_buffer/tests/texture_image_factory.h"
@@ -94,7 +94,7 @@ class TextureStorageTest : public testing::Test {
     const GLubyte* extensions = glGetString(GL_EXTENSIONS);
     ext_texture_storage_available_ = strstr(
         reinterpret_cast<const char*>(extensions), "GL_EXT_texture_storage");
-    chromium_texture_storage_image_available_ =
+    monyhar_texture_storage_image_available_ =
         strstr(reinterpret_cast<const char*>(extensions),
                "GL_CHROMIUM_texture_storage_image");
   }
@@ -106,7 +106,7 @@ class TextureStorageTest : public testing::Test {
   GLuint tex_ = 0;
   GLuint fbo_ = 0;
   bool ext_texture_storage_available_ = false;
-  bool chromium_texture_storage_image_available_ = false;
+  bool monyhar_texture_storage_image_available_ = false;
 };
 
 TEST_F(TextureStorageTest, CorrectPixels) {
@@ -225,7 +225,7 @@ TEST_F(TextureStorageTest, InternalFormatBleedingToTexImage) {
 }
 
 TEST_F(TextureStorageTest, CorrectImagePixels) {
-  if (!chromium_texture_storage_image_available_)
+  if (!monyhar_texture_storage_image_available_)
     return;
 
   glTexStorage2DImageCHROMIUM(GL_TEXTURE_2D, GL_RGBA8_OES, GL_SCANOUT_CHROMIUM,

@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.intents;
+package org.monyhar.chrome.browser.browserservices.intents;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.components.webapps.ShortcutSource;
+import org.monyhar.components.webapps.ShortcutSource;
 
 /**
  * Stores webapp specific information on behalf of {@link BrowserServicesIntentDataProvider}.

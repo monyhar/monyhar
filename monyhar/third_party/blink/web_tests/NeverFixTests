@@ -14,14 +14,14 @@
 # This file should only include tests that we never want to run.
 # There should only be the following categories of tests here:
 #   1. Tests of the test harness (run_web_tests.py) itself.
-#   2. Tests enabled by chromium embedders (e.g. Opera).
+#   2. Tests enabled by monyhar embedders (e.g. Opera).
 #   3. Tests that apply to some platforms but not others.
 #   4. Tests that are too slow in Debug and so we only want to skip them in Debug.
 #   5. Tests that crash due to resource limitations on some platforms or in Debug.
 #   6. Tests that fail due to Debug rendering variations from Release behavior.
 #   7. Tests that are not meant to be run automatically (manual tests).
 #   8. Tests that are automatically imported but not intended to be run.
-# https://chromium.googlesource.com/chromium/src/+/master/docs/testing/web_test_expectations.md
+# https://monyhar.googlesource.com/monyhar/src/+/master/docs/testing/web_test_expectations.md
 
 # Perf tests are really slow in debug builds and there are few benefits in running them.
 [ Debug ] http/tests/perf/* [ Skip ]
@@ -97,8 +97,8 @@ fast/harness/results.html [ Skip ]
 [ Win ] editing/input/linux_ltr_composition_underline.html [ Skip ]
 [ Mac ] editing/input/linux_rtl_composition_underline.html [ Skip ]
 [ Win ] editing/input/linux_rtl_composition_underline.html [ Skip ]
-[ Mac ] virtual/text-antialias/chromium-linux-fontconfig-renderstyle.html [ Skip ]
-[ Win ] virtual/text-antialias/chromium-linux-fontconfig-renderstyle.html [ Skip ]
+[ Mac ] virtual/text-antialias/monyhar-linux-fontconfig-renderstyle.html [ Skip ]
+[ Win ] virtual/text-antialias/monyhar-linux-fontconfig-renderstyle.html [ Skip ]
 [ Mac ] virtual/text-antialias/international/arabic-vertical-offset.html [ Skip ]
 [ Win ] virtual/text-antialias/international/arabic-vertical-offset.html [ Skip ]
 [ Mac ] virtual/text-antialias/international/complex-joining-using-gpos.html [ Skip ]

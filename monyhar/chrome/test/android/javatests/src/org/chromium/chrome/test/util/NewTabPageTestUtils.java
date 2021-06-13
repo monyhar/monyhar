@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.util;
+package org.monyhar.chrome.test.util;
 
 import org.hamcrest.Matchers;
 
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.browser.ntp.IncognitoNewTabPage;
-import org.chromium.chrome.browser.ntp.NewTabPage;
-import org.chromium.chrome.browser.suggestions.SiteSuggestion;
-import org.chromium.chrome.browser.suggestions.tile.TileSectionType;
-import org.chromium.chrome.browser.suggestions.tile.TileSource;
-import org.chromium.chrome.browser.suggestions.tile.TileTitleSource;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.net.test.EmbeddedTestServer;
-import org.chromium.url.GURL;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.browser.ntp.IncognitoNewTabPage;
+import org.monyhar.chrome.browser.ntp.NewTabPage;
+import org.monyhar.chrome.browser.suggestions.SiteSuggestion;
+import org.monyhar.chrome.browser.suggestions.tile.TileSectionType;
+import org.monyhar.chrome.browser.suggestions.tile.TileSource;
+import org.monyhar.chrome.browser.suggestions.tile.TileTitleSource;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.net.test.EmbeddedTestServer;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.Date;

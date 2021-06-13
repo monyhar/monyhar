@@ -227,7 +227,7 @@ suite('ModelSettingsAvailabilityTest', function() {
     });
 
     // Google Drive always has an unavailableValue of true.
-    model.set('destination', getGoogleDriveDestination('foo@chromium.org'));
+    model.set('destination', getGoogleDriveDestination('foo@monyhar.org'));
     const capabilities =
         getCddTemplate(Destination.GooglePromotedId.DOCS).capabilities;
     delete capabilities.printer.color;

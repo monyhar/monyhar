@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.safe_browsing;
+package org.monyhar.android_webview.safe_browsing;
 
 import android.os.Build;
 import android.webkit.WebViewClient;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.components.safe_browsing.SBThreatType;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.components.safe_browsing.SBThreatType;
 
 /**
  * This is a helper class to map native SafeBrowsingActions and SAFE_BROWSING_THREATs to the
@@ -42,11 +42,11 @@ public final class AwSafeBrowsingConversionHelper {
      * Converts the threat type value from SafeBrowsing code to the WebViewClient constant.
      *
      * <p class="note"><b>Note:</b> this output may depend upon the embedding application's {@code
-     * targetSdk} value if {@code chromiumThreatType} refers to a threat type added after {@link
+     * targetSdk} value if {@code monyharThreatType} refers to a threat type added after {@link
      * Build.VERSION_CODES#O_MR1} (when we added the original Safe Browisng threat type constants).
      */
-    public static int convertThreatType(int chromiumThreatType) {
-        switch (chromiumThreatType) {
+    public static int convertThreatType(int monyharThreatType) {
+        switch (monyharThreatType) {
             case SBThreatType.URL_MALWARE:
                 return SAFE_BROWSING_THREAT_MALWARE;
             case SBThreatType.URL_PHISHING:

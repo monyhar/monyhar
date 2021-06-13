@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.shape_detection;
+package org.monyhar.shape_detection;
 
 import android.graphics.Bitmap;
 
 import com.google.android.gms.vision.Frame;
 
-import org.chromium.mojo_base.BigBufferUtil;
+import org.monyhar.mojo_base.BigBufferUtil;
 
 import java.nio.ByteBuffer;
 
@@ -16,7 +16,7 @@ import java.nio.ByteBuffer;
  * Utility class to convert a Bitmap to a GMS core YUV Frame.
  */
 public class BitmapUtils {
-    public static Bitmap convertToBitmap(org.chromium.skia.mojom.BitmapN32 bitmapData) {
+    public static Bitmap convertToBitmap(org.monyhar.skia.mojom.BitmapN32 bitmapData) {
         // A null BitmapN32 has null pixelData. Otherwise, BitmapN32 always has
         // a valid N32 (aka RGBA_8888 or BGRA_8888 depending on the build
         // config) colorType.
@@ -44,7 +44,7 @@ public class BitmapUtils {
         }
     }
 
-    public static Frame convertToFrame(org.chromium.skia.mojom.BitmapN32 bitmapData) {
+    public static Frame convertToFrame(org.monyhar.skia.mojom.BitmapN32 bitmapData) {
         Bitmap bitmap = convertToBitmap(bitmapData);
         if (bitmap == null) {
             return null;

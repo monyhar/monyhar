@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.offline_items_collection.bridges;
+package org.monyhar.components.offline_items_collection.bridges;
 
 import org.junit.Assert;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.components.offline_items_collection.FailState;
-import org.chromium.components.offline_items_collection.OfflineItem;
-import org.chromium.components.offline_items_collection.OfflineItemFilter;
-import org.chromium.components.offline_items_collection.OfflineItemState;
-import org.chromium.components.offline_items_collection.PendingState;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.components.offline_items_collection.FailState;
+import org.monyhar.components.offline_items_collection.OfflineItem;
+import org.monyhar.components.offline_items_collection.OfflineItemFilter;
+import org.monyhar.components.offline_items_collection.OfflineItemState;
+import org.monyhar.components.offline_items_collection.PendingState;
 
 /**
  * Unit test to verify {@link OfflineItemBridge} can create {@link OfflineItem} correctly through

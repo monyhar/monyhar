@@ -1,6 +1,6 @@
 This directory contains files copied from the build repo:
- - https://chromium.googlesource.com/chromium/tools/build.git
- - svn://svn.chromium.org/chrome/trunk/tools/build
+ - https://monyhar.googlesource.com/monyhar/tools/build.git
+ - svn://svn.monyhar.org/chrome/trunk/tools/build
 
 The revision is:
  - 353c0efac75463c521763f601bcbdfffc8b291a8 (git)
@@ -16,5 +16,5 @@ The ultimate goal is to get rid of this code. No new pieces of infrastructure
 should be using it. It's only here for already existing pieces that we need
 to keep running.
 
-Please see https://code.google.com/p/chromium/issues/detail?id=506498
+Please see https://code.google.com/p/monyhar/issues/detail?id=506498
 for more context.

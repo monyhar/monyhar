@@ -76,7 +76,7 @@ class ApiBindingsClientTest : public cr_fuchsia::WebEngineBrowserTest {
   fuchsia::web::FramePtr frame_;
   std::unique_ptr<NamedMessagePortConnectorFuchsia> connector_;
   FakeApiBindingsImpl api_service_;
-  fidl::Binding<chromium::cast::ApiBindings> api_service_binding_;
+  fidl::Binding<monyhar::cast::ApiBindings> api_service_binding_;
   std::unique_ptr<ApiBindingsClient> client_;
   cr_fuchsia::TestNavigationListener navigation_listener_;
   fuchsia::web::NavigationControllerPtr controller_;
@@ -89,8 +89,8 @@ class ApiBindingsClientTest : public cr_fuchsia::WebEngineBrowserTest {
 // sender.
 IN_PROC_BROWSER_TEST_F(ApiBindingsClientTest, EndToEnd) {
   // Define the injected bindings.
-  std::vector<chromium::cast::ApiBinding> binding_list;
-  chromium::cast::ApiBinding echo_binding;
+  std::vector<monyhar::cast::ApiBinding> binding_list;
+  monyhar::cast::ApiBinding echo_binding;
   echo_binding.set_before_load_script(cr_fuchsia::MemBufferFromString(
       "window.echo = cast.__platform__.PortConnector.bind('echoService');",
       "test"));

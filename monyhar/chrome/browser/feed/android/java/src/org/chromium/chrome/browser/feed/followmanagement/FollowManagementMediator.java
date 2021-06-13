@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.followmanagement;
+package org.monyhar.chrome.browser.feed.followmanagement;
 
-import static org.chromium.chrome.browser.feed.webfeed.WebFeedSubscriptionRequestStatus.SUCCESS;
+import static org.monyhar.chrome.browser.feed.webfeed.WebFeedSubscriptionRequestStatus.SUCCESS;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -15,18 +15,18 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView.Adapter;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.feed.webfeed.R;
-import org.chromium.chrome.browser.feed.webfeed.WebFeedBridge;
-import org.chromium.chrome.browser.feed.webfeed.WebFeedBridge.WebFeedMetadata;
-import org.chromium.chrome.browser.feed.webfeed.WebFeedSubscriptionStatus;
-import org.chromium.components.browser_ui.widget.RoundedIconGenerator;
-import org.chromium.components.favicon.IconType;
-import org.chromium.components.favicon.LargeIconBridge;
-import org.chromium.ui.modelutil.MVCListAdapter.ModelList;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.SimpleRecyclerViewAdapter;
-import org.chromium.url.GURL;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.feed.webfeed.R;
+import org.monyhar.chrome.browser.feed.webfeed.WebFeedBridge;
+import org.monyhar.chrome.browser.feed.webfeed.WebFeedBridge.WebFeedMetadata;
+import org.monyhar.chrome.browser.feed.webfeed.WebFeedSubscriptionStatus;
+import org.monyhar.components.browser_ui.widget.RoundedIconGenerator;
+import org.monyhar.components.favicon.IconType;
+import org.monyhar.components.favicon.LargeIconBridge;
+import org.monyhar.ui.modelutil.MVCListAdapter.ModelList;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.SimpleRecyclerViewAdapter;
+import org.monyhar.url.GURL;
 
 import java.util.List;
 

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.status;
+package org.monyhar.chrome.browser.omnibox.status;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -16,33 +16,33 @@ import androidx.annotation.DrawableRes;
 import androidx.annotation.StringRes;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.MathUtils;
-import org.chromium.base.supplier.OneshotSupplier;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.omnibox.LocationBarDataProvider;
-import org.chromium.chrome.browser.omnibox.SearchEngineLogoUtils;
-import org.chromium.chrome.browser.omnibox.UrlBarEditingTextStateProvider;
-import org.chromium.chrome.browser.omnibox.status.StatusProperties.PermissionIconResource;
-import org.chromium.chrome.browser.omnibox.status.StatusProperties.StatusIconResource;
-import org.chromium.chrome.browser.omnibox.status.StatusView.IconTransitionType;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.theme.ThemeUtils;
-import org.chromium.components.browser_ui.site_settings.ContentSettingsResources;
-import org.chromium.components.browser_ui.site_settings.SingleWebsiteSettings;
-import org.chromium.components.content_settings.ContentSettingValues;
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.components.page_info.PageInfoDiscoverabilityMetrics;
-import org.chromium.components.page_info.PageInfoDiscoverabilityMetrics.DiscoverabilityAction;
-import org.chromium.components.page_info.PageInfoFeatures;
-import org.chromium.components.permissions.PermissionDialogController;
-import org.chromium.components.search_engines.TemplateUrlService;
-import org.chromium.components.search_engines.TemplateUrlService.TemplateUrlServiceObserver;
-import org.chromium.components.security_state.ConnectionSecurityLevel;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.Callback;
+import org.monyhar.base.MathUtils;
+import org.monyhar.base.supplier.OneshotSupplier;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.omnibox.LocationBarDataProvider;
+import org.monyhar.chrome.browser.omnibox.SearchEngineLogoUtils;
+import org.monyhar.chrome.browser.omnibox.UrlBarEditingTextStateProvider;
+import org.monyhar.chrome.browser.omnibox.status.StatusProperties.PermissionIconResource;
+import org.monyhar.chrome.browser.omnibox.status.StatusProperties.StatusIconResource;
+import org.monyhar.chrome.browser.omnibox.status.StatusView.IconTransitionType;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.theme.ThemeUtils;
+import org.monyhar.components.browser_ui.site_settings.ContentSettingsResources;
+import org.monyhar.components.browser_ui.site_settings.SingleWebsiteSettings;
+import org.monyhar.components.content_settings.ContentSettingValues;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.components.page_info.PageInfoDiscoverabilityMetrics;
+import org.monyhar.components.page_info.PageInfoDiscoverabilityMetrics.DiscoverabilityAction;
+import org.monyhar.components.page_info.PageInfoFeatures;
+import org.monyhar.components.permissions.PermissionDialogController;
+import org.monyhar.components.search_engines.TemplateUrlService;
+import org.monyhar.components.search_engines.TemplateUrlService.TemplateUrlServiceObserver;
+import org.monyhar.components.security_state.ConnectionSecurityLevel;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * Contains the controller logic of the Status component.

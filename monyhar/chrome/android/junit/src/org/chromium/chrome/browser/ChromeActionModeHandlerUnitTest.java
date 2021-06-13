@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -26,16 +26,16 @@ import org.robolectric.annotation.Config;
 import org.robolectric.fakes.RoboMenu;
 import org.robolectric.shadows.ShadowPackageManager;
 
-import org.chromium.base.Callback;
-import org.chromium.base.PackageManagerUtils;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.firstrun.FirstRunStatus;
-import org.chromium.chrome.browser.locale.LocaleManager;
-import org.chromium.chrome.browser.locale.LocaleManagerDelegate;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.content.R;
-import org.chromium.content_public.browser.ActionModeCallbackHelper;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.Callback;
+import org.monyhar.base.PackageManagerUtils;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.firstrun.FirstRunStatus;
+import org.monyhar.chrome.browser.locale.LocaleManager;
+import org.monyhar.chrome.browser.locale.LocaleManagerDelegate;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.content.R;
+import org.monyhar.content_public.browser.ActionModeCallbackHelper;
+import org.monyhar.content_public.browser.WebContents;
 
 import java.util.ArrayList;
 import java.util.Collections;

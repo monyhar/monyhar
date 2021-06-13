@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@0.2.cr0
-package: chromium/third_party/android_deps/libs/net_ltgt_gradle_incap_incap
+package: monyhar/third_party/android_deps/libs/net_ltgt_gradle_incap_incap
 description: "net.ltgt.gradle.incap:incap"
 data:
 - file: incap-0.2.jar

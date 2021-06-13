@@ -18,7 +18,7 @@
 #include "components/infobars/core/infobar_manager.h"
 #include "components/sessions/core/tab_restore_service.h"
 #include "components/sessions/ios/ios_restore_live_tab.h"
-#include "components/strings/grit/components_chromium_strings.h"
+#include "components/strings/grit/components_monyhar_strings.h"
 #include "components/strings/grit/components_google_chrome_strings.h"
 #include "components/strings/grit/components_strings.h"
 #include "ios/chrome/browser/browser_state/chrome_browser_state.h"

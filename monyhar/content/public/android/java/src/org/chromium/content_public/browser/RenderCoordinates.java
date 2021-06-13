@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.browser;
+package org.monyhar.content_public.browser;
 
-import org.chromium.content.browser.RenderCoordinatesImpl;
+import org.monyhar.content.browser.RenderCoordinatesImpl;
 
 /**
  * Provides dimension/coordinate information of the view rendered by content layer.

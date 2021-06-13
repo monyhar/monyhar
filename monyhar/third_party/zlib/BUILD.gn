@@ -4,7 +4,7 @@
 
 import("//build/config/compiler/compiler.gni")
 
-if (build_with_chromium) {
+if (build_with_monyhar) {
   import("//testing/test.gni")
 }
 
@@ -184,8 +184,8 @@ source_set("zlib_inflate_chunk_simd") {
 
   # Needed for MSVC, which is still supported by V8 and PDFium. zlib uses K&R C
   # style function declarations, which triggers warning C4131.
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 
   public_configs = [ ":zlib_inflate_chunk_simd_config" ]
 
@@ -342,15 +342,15 @@ component("zlib") {
     }
   }
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 
   public_configs = [ ":zlib_config" ]
 
   configs += [
     ":zlib_internal_config",
 
-    # Must be after no_chromium_code for warning flags to be ordered correctly.
+    # Must be after no_monyhar_code for warning flags to be ordered correctly.
     ":zlib_warnings",
   ]
 
@@ -393,13 +393,13 @@ static_library("minizip") {
 
   deps = [ ":zlib" ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 
   public_configs = [ ":zlib_config" ]
 
   configs += [
-    # Must be after no_chromium_code for warning flags to be ordered correctly.
+    # Must be after no_monyhar_code for warning flags to be ordered correctly.
     ":minizip_warnings",
   ]
 }
@@ -415,8 +415,8 @@ executable("zlib_bench") {
 
   deps = [ ":zlib" ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 }
 
 if (!is_win || target_os != "winuwp") {
@@ -436,8 +436,8 @@ if (!is_win || target_os != "winuwp") {
 
     deps = [ ":minizip" ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
   }
 
   executable("miniunz_bin") {
@@ -456,12 +456,12 @@ if (!is_win || target_os != "winuwp") {
 
     deps = [ ":minizip" ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
   }
 }
 
-if (build_with_chromium) {
+if (build_with_monyhar) {
   test("zlib_unittests") {
     testonly = true
 

@@ -97,7 +97,7 @@ For mer informasjon om sikkert innhold, se https://www.w3.org/TR/secure-contexts
 
       Hvis du angir denne regelen, bruker <ph name="PRODUCT_NAME" /> den oppgitte katalogen uavhengig av om brukeren har spesifisert flagget «--disk-cache-dir» eller ikke. For å unngå tap av data eller andre uventede feil skal ikke denne regelen settes til rotkatalogen for et volum eller til en katalog som brukes til andre formål, fordi <ph name="PRODUCT_NAME" /> administrerer innholdet.
 
-      Se https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables for en liste over variabler som kan brukes.
+      Se https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables for en liste over variabler som kan brukes.
 
       Hvis denne regelen ikke blir angitt, brukes bufferkatalogen, og brukeren kan overstyre den med kommandolinjeflagget «--disk-cache-dir».</translation>
 <translation id="113521240853905588">Konfigurerer hvilke språk som kan brukes av <ph name="PRODUCT_OS_NAME" /> som foretrukket språk.
@@ -480,7 +480,7 @@ For mer informasjon om sikkert innhold, se https://www.w3.org/TR/secure-contexts
 <translation id="1852294065645015766">Tillat automatisk avspilling av medier</translation>
 <translation id="1857152770025485173">Denne regelen hindrer at brukerne kan laste inn nettsider fra svartelistede nettadresser. Svartelisten inneholder nettadressemønstre som spesifiserer hvilke nettadresser som svartelistes.
 
-      Nettadressemønstre må formateres i samsvar med https://www.chromium.org/administrators/url-blacklist-filter-format.
+      Nettadressemønstre må formateres i samsvar med https://www.monyhar.org/administrators/url-blacklist-filter-format.
 
       Unntak kan spesifiseres i regelen for godkjenning av nettadresser. Disse reglene er begrenset til 1000 oppføringer, og eventuelle oppføringer som overskrider dette, ignoreres.
 
@@ -521,7 +521,7 @@ For mer informasjon om sikkert innhold, se https://www.w3.org/TR/secure-contexts
 
       Hvis den ikke er konfigurert, er rapportering av beregninger og diagnostikkdata deaktivert på ikke-administrerte enheter og aktivert på administrerte enheter.</translation>
 <translation id="1907431809333268751">Konfigurer listen over nettadresser for bedriftspålogging (bare HTTP og HTTPS). Fingeravtrykkene til passord registreres på disse nettadressene. Dette gjøres for å oppdage om de samme passordene også blir brukt andre steder.
-      For at <ph name="PRODUCT_NAME" /> skal kunne fange opp fingeravtrykkene til passord, må du passe på at påloggingssidene følger retningslinjene på https://www.chromium.org/developers/design-documents/create-amazing-password-forms.
+      For at <ph name="PRODUCT_NAME" /> skal kunne fange opp fingeravtrykkene til passord, må du passe på at påloggingssidene følger retningslinjene på https://www.monyhar.org/developers/design-documents/create-amazing-password-forms.
 
       Hvis denne innstillingen er slått på, registrerer tjenesten for passordbeskyttelse fingeravtrykkene til passord på disse nettadressene. Dette gjøres for å oppdage om de samme passordene også blir brukt andre steder.
       Hvis denne innstillingen er slått av eller ikke er angitt, registrerer tjenesten for passordbeskyttelse bare fingeravtrykkene til passord på https://accounts.google.com.
@@ -816,7 +816,7 @@ For mer informasjon om sikkert innhold, se https://www.w3.org/TR/secure-contexts
 
       Denne regelen tillater at sertifikater for vertsnavnene i de angitte nettadressene ikke vises i henhold til regelen om sertifikatåpenhet. Dermed kan sertifikater som ellers hadde blitt vurdert som upålitelige (fordi de ikke er tilstrekkelig vist offentlig), fortsatt brukes. Dette gjør det vanskeligere for verter å oppdage sertifikater som ikke er korrekt utstedt.
 
-      Et nettadressemønster formateres i henhold til https://www.chromium.org/administrators/url-blacklist-filter-format. Bare vertsnavn-delen av nettadressen vurderes, ettersom sertifikater er gyldige for et gitt vertsnavn uavhengig av skjema, port eller bane. Verter som er angitt med jokertegn, støttes ikke.
+      Et nettadressemønster formateres i henhold til https://www.monyhar.org/administrators/url-blacklist-filter-format. Bare vertsnavn-delen av nettadressen vurderes, ettersom sertifikater er gyldige for et gitt vertsnavn uavhengig av skjema, port eller bane. Verter som er angitt med jokertegn, støttes ikke.
 
       Hvis denne regelen ikke er angitt, behandles alle sertifikater som skal vises i henhold til regelen om sertifikatåpenhet, som upålitelige hvis de ikke vises i henhold til regelen om sertifikatåpenhet.</translation>
 <translation id="2488010520405124654">Aktiver melding om nettverkskonfigurasjon når du er uten nett.
@@ -1502,7 +1502,7 @@ For mer informasjon om sikkert innhold, se https://www.w3.org/TR/secure-contexts
 
       Hvis du angir denne regelen, bruker <ph name="PRODUCT_NAME" /> den oppgitte katalogen uansett om brukeren har angitt en annen katalog eller slått på flagget for å velge lagringsplass for hver nedlasting.
 
-      Gå til https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables for å se en liste over variabler som kan brukes.
+      Gå til https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables for å se en liste over variabler som kan brukes.
 
       Hvis du ikke angir denne regelen, brukes standardkatalogen for nedlasting. Brukeren kan i så fall endre denne katalogen.</translation>
 <translation id="3805659594028420438">Aktiver TLS-domenebetingede sertifikatutvidelser (foreldet)</translation>
@@ -1591,7 +1591,7 @@ For mer informasjon om sikkert innhold, se https://www.w3.org/TR/secure-contexts
 
       Hvis du ikke angir denne regelen, bruker <ph name="PRODUCT_NAME" /> den vanlige standardkatalogen (plattformspesifikk).
 
-      Se https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables for en liste over variabler som kan brukes.</translation>
+      Se https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables for en liste over variabler som kan brukes.</translation>
 <translation id="3911737181201537215">Denne regelen har ingen innvirkning på loggføring i Android.</translation>
 <translation id="391531815696899618">Slår av Google Disk-synkronisering i Filer-appen for <ph name="PRODUCT_OS_NAME" /> ved bruk av mobiltilkobling når den har verdien true (sann). I disse tilfellene lastes ikke noen data opp til Google Disk.
 
@@ -1795,7 +1795,7 @@ For mer informasjon om sikkert innhold, se https://www.w3.org/TR/secure-contexts
 
       Hvis du angir denne regelen og regelen <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> er slått på, bruker <ph name="PRODUCT_NAME" /> den angitte katalogen til å lagre roaming-kopien av profilene. Hvis regelen <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> er slått av eller ikke er angitt, brukes ikke verdien som er lagret i denne regelen.
 
-      Du kan se en liste over variablene som kan brukes, på https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Du kan se en liste over variablene som kan brukes, på https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Hvis denne regelen ikke er angitt, brukes standardbanen for roaming-profiler.</translation>
 <translation id="4239720644496144453">Bufferen brukes ikke til Android-apper. Hvis flere brukere installerer den samme Android-appen, blir den lastet ned på nytt for hver bruker.</translation>
@@ -1996,7 +1996,7 @@ Verdiene for denne regelen og WebUsbAllowDevicesForUrls-regelen slås sammen.</t
 
           Hvis denne regelen ikke er angitt, brukes standardgjengivelsen for alle nettsteder, som angitt i regelen «ChromeFrameRendererSettings».
 
-          Du finner eksempelmønstre på https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Du finner eksempelmønstre på https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="467449052039111439">Åpne en liste over nettadresser</translation>
 <translation id="4674871290487541952">Tillat usikre algoritmer i integritetssjekker ved installering og oppdatering av utvidelser</translation>
 <translation id="4680936297850947973">Avviklet i M68. Bruk DefaultPopupsSetting i stedet.
@@ -2630,7 +2630,7 @@ Verdiene for denne regelen og DeviceWebUsbAllowDevicesForUrls-regelen slås samm
 
       Hvis du angir denne regelen, bruker <ph name="PRODUCT_FRAME_NAME" /> den oppgitte katalogen.
 
-      Gå til https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables for å se en liste over variabler som kan brukes.
+      Gå til https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables for å se en liste over variabler som kan brukes.
 
       Hvis du ikke angir denne innstillingen, brukes standardkatalogen for profiler.</translation>
 <translation id="5826047473100157858">Angir om brukeren kan åpne sider i inkognitomodus i <ph name="PRODUCT_NAME" />.
@@ -3204,7 +3204,7 @@ Minneinformasjon blir uansett rapportert til siden, uavhengig av verdien for alt
 
       Hvis du angir denne regelen, bruker <ph name="PRODUCT_NAME" /> den oppgitte katalogen uavhengig av om brukeren har spesifisert flagget «--disk-cache-dir» eller ikke. For å unngå tap av data eller andre uventede feil skal ikke denne regelen settes til rotkatalogen for et volum eller til en katalog som brukes til andre formål, fordi <ph name="PRODUCT_NAME" /> administrerer innholdet.
 
-      Se https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables for en liste over variabler som kan brukes.
+      Se https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables for en liste over variabler som kan brukes.
 
       Hvis denne regelen ikke blir angitt, brukes bufferkatalogen, og brukeren kan overstyre den med kommandolinjeflagget «--disk-cache-dir».</translation>
 <translation id="7027785306666625591">Konfigurer strømstyring i <ph name="PRODUCT_OS_NAME" />.
@@ -3988,7 +3988,7 @@ Vi anbefaler å konfigurere regler på Windows via GPO, men tildeling av regler 
 
           Hvis denne regelen ikke er angitt, brukes standardgjengivelsen for alle nettsteder, slik den er angitt i regelen «ChromeFrameRendererSettings».
 
-          Du finner eksempelmønstre på https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Du finner eksempelmønstre på https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="8489964335640955763">PluginVm</translation>
 <translation id="8493645415242333585">Deaktiver lagring av nettleserlogg</translation>
 <translation id="8499172469244085141">Standardinnstillinger (kan overstyres av brukere)</translation>

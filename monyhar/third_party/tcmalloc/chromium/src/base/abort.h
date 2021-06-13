@@ -5,7 +5,7 @@
 // ---
 // On some platforms abort() is implemented in a way that Chrome's crash
 // reporter treats it as a normal exit. See issue:
-// http://code.google.com/p/chromium/issues/detail?id=118665
+// http://code.google.com/p/monyhar/issues/detail?id=118665
 // So we replace abort with a segmentation fault, then crash reporter can
 // always detect.
 

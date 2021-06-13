@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments;
+package org.monyhar.chrome.browser.payments;
 
 import androidx.collection.ArrayMap;
 
-import org.chromium.components.payments.MethodStrings;
-import org.chromium.components.payments.PaymentFeatureList;
-import org.chromium.components.payments.SkipToGPayHelper;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.payments.mojom.PaymentMethodData;
+import org.monyhar.components.payments.MethodStrings;
+import org.monyhar.components.payments.PaymentFeatureList;
+import org.monyhar.components.payments.SkipToGPayHelper;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.payments.mojom.PaymentMethodData;
 
 import java.util.Map;
 

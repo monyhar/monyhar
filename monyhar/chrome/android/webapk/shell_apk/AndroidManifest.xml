@@ -43,7 +43,7 @@
         android:label="@string/short_name"
         android:allowBackup="false"
         android:supportsRtl="true">
-        <activity android:name="org.chromium.webapk.shell_apk.h2o.H2OTransparentLauncherActivity"
+        <activity android:name="org.monyhar.webapk.shell_apk.h2o.H2OTransparentLauncherActivity"
                   android:theme="@android:style/Theme.Translucent.NoTitleBar"
                   android:excludeFromRecents="true"
                   android:exported="true"
@@ -64,11 +64,11 @@
             {{{raw_intent_filters}}}
          </activity>
 
-        <activity android:name="org.chromium.webapk.shell_apk.ManageDataLauncherActivity"
+        <activity android:name="org.monyhar.webapk.shell_apk.ManageDataLauncherActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar">
         </activity>
 
-        <activity android:name="org.chromium.webapk.shell_apk.h2o.H2OOpaqueMainActivity"
+        <activity android:name="org.monyhar.webapk.shell_apk.h2o.H2OOpaqueMainActivity"
                   android:theme="@style/SplashTheme"
                   android:relinquishTaskIdentity="true"
                   android:screenOrientation="{{{android_orientation}}}"
@@ -80,15 +80,15 @@
             </intent-filter>
             <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts" />
         </activity>
-        <activity android:name="org.chromium.webapk.shell_apk.h2o.SplashActivity"
+        <activity android:name="org.monyhar.webapk.shell_apk.h2o.SplashActivity"
                   android:theme="@style/SplashTheme"
                   android:screenOrientation="{{{android_orientation}}}"
                   android:launchMode="singleTask">
         </activity>
-        <provider android:name="org.chromium.webapk.shell_apk.h2o.SplashContentProvider"
+        <provider android:name="org.monyhar.webapk.shell_apk.h2o.SplashContentProvider"
                   android:authorities="{{manifest_package}}.SplashContentProvider"
                   android:exported="true" />
-        <activity android:name="org.chromium.webapk.shell_apk.h2o.H2OMainActivity"
+        <activity android:name="org.monyhar.webapk.shell_apk.h2o.H2OMainActivity"
                   android:theme="@android:style/Theme.Translucent.NoTitleBar"
                   android:exported="true"
                   android:enabled="[[#use_new_splash]]@bool/transparent_main_activity_enabled_default[[/use_new_splash]][[^use_new_splash]]true[[/use_new_splash]]"
@@ -101,17 +101,17 @@
         </activity>
 
         {{#share_template}}
-        <activity-alias android:name="org.chromium.webapk.shell_apk.ShareActivity{{{index}}}"
+        <activity-alias android:name="org.monyhar.webapk.shell_apk.ShareActivity{{{index}}}"
                   android:label="{{{title}}}"
                   android:exported="true"
-                  android:targetActivity="org.chromium.webapk.shell_apk.h2o.H2OTransparentLauncherActivity">
-          <meta-data android:name="org.chromium.webapk.shell_apk.shareAction" android:value="{{{action}}}" />
-          <meta-data android:name="org.chromium.webapk.shell_apk.shareMethod" android:value="{{{method}}}" />
-          <meta-data android:name="org.chromium.webapk.shell_apk.shareParamTitle" android:value="{{{param_title}}}" />
-          <meta-data android:name="org.chromium.webapk.shell_apk.shareParamText" android:value="{{{param_text}}}" />
-          <meta-data android:name="org.chromium.webapk.shell_apk.shareParamUrl" android:value="{{{param_url}}}" />
+                  android:targetActivity="org.monyhar.webapk.shell_apk.h2o.H2OTransparentLauncherActivity">
+          <meta-data android:name="org.monyhar.webapk.shell_apk.shareAction" android:value="{{{action}}}" />
+          <meta-data android:name="org.monyhar.webapk.shell_apk.shareMethod" android:value="{{{method}}}" />
+          <meta-data android:name="org.monyhar.webapk.shell_apk.shareParamTitle" android:value="{{{param_title}}}" />
+          <meta-data android:name="org.monyhar.webapk.shell_apk.shareParamText" android:value="{{{param_text}}}" />
+          <meta-data android:name="org.monyhar.webapk.shell_apk.shareParamUrl" android:value="{{{param_url}}}" />
           {{#enctype}}
-          <meta-data android:name="org.chromium.webapk.shell_apk.shareEnctype" android:value="{{{enctype}}}" />
+          <meta-data android:name="org.monyhar.webapk.shell_apk.shareEnctype" android:value="{{{enctype}}}" />
           {{/enctype}}
           {{^is_file_upload}}
           <intent-filter>
@@ -122,8 +122,8 @@
           {{/is_file_upload}}
           {{#is_file_upload}}
           {{^is_file_upload_param_empty}}
-          <meta-data android:name="org.chromium.webapk.shell_apk.shareParamNames" android:value="{{{param_names}}}" />
-          <meta-data android:name="org.chromium.webapk.shell_apk.shareParamAccepts" android:value="{{{param_accepts}}}" />
+          <meta-data android:name="org.monyhar.webapk.shell_apk.shareParamNames" android:value="{{{param_names}}}" />
+          <meta-data android:name="org.monyhar.webapk.shell_apk.shareParamAccepts" android:value="{{{param_accepts}}}" />
           {{/is_file_upload_param_empty}}
           <intent-filter>
             <action android:name="android.intent.action.SEND" />
@@ -138,43 +138,43 @@
           {{/is_file_upload}}
         </activity-alias>
         {{/share_template}}
-        <meta-data android:name="org.chromium.webapk.shell_apk.shellApkVersion" android:value="[[ shell_apk_version ]]" />
+        <meta-data android:name="org.monyhar.webapk.shell_apk.shellApkVersion" android:value="[[ shell_apk_version ]]" />
         {{#bound_webapk}}
-        <meta-data android:name="org.chromium.webapk.shell_apk.runtimeHost" android:value="{{{runtime_host}}}" />
-        <meta-data android:name="org.chromium.webapk.shell_apk.runtimeHostApplicationName" android:value="{{{runtime_host_application_name}}}" />
+        <meta-data android:name="org.monyhar.webapk.shell_apk.runtimeHost" android:value="{{{runtime_host}}}" />
+        <meta-data android:name="org.monyhar.webapk.shell_apk.runtimeHostApplicationName" android:value="{{{runtime_host_application_name}}}" />
         {{/bound_webapk}}
-        <meta-data android:name="org.chromium.webapk.shell_apk.startUrl" android:value="{{{start_url}}}" />
+        <meta-data android:name="org.monyhar.webapk.shell_apk.startUrl" android:value="{{{start_url}}}" />
         {{#logged_intent_url_param}}
-        <meta-data android:name="org.chromium.webapk.shell_apk.loggedIntentUrlParam" android:value="{{{logged_intent_url_param}}}" />
+        <meta-data android:name="org.monyhar.webapk.shell_apk.loggedIntentUrlParam" android:value="{{{logged_intent_url_param}}}" />
         {{/logged_intent_url_param}}
-        <meta-data android:name="org.chromium.webapk.shell_apk.scope" android:value="{{{scope_url}}}" />
-        <meta-data android:name="org.chromium.webapk.shell_apk.displayMode" android:value="{{{display_mode}}}" />
-        <meta-data android:name="org.chromium.webapk.shell_apk.orientation" android:value="{{{orientation}}}" />
-        <meta-data android:name="org.chromium.webapk.shell_apk.themeColor" android:value="{{{theme_color}}}" />
+        <meta-data android:name="org.monyhar.webapk.shell_apk.scope" android:value="{{{scope_url}}}" />
+        <meta-data android:name="org.monyhar.webapk.shell_apk.displayMode" android:value="{{{display_mode}}}" />
+        <meta-data android:name="org.monyhar.webapk.shell_apk.orientation" android:value="{{{orientation}}}" />
+        <meta-data android:name="org.monyhar.webapk.shell_apk.themeColor" android:value="{{{theme_color}}}" />
 
         <!-- Empty if the Web Manifest does not provide a background color. -->
-        <meta-data android:name="org.chromium.webapk.shell_apk.backgroundColor" android:value="{{{background_color}}}" />
+        <meta-data android:name="org.monyhar.webapk.shell_apk.backgroundColor" android:value="{{{background_color}}}" />
 
-        <meta-data android:name="org.chromium.webapk.shell_apk.defaultBackgroundColorId" android:resource="@color/webapp_default_bg" />
-        <meta-data android:name="org.chromium.webapk.shell_apk.iconId" android:resource="@mipmap/app_icon" />
+        <meta-data android:name="org.monyhar.webapk.shell_apk.defaultBackgroundColorId" android:resource="@color/webapp_default_bg" />
+        <meta-data android:name="org.monyhar.webapk.shell_apk.iconId" android:resource="@mipmap/app_icon" />
         {{#has_maskable_icon}}
-        <meta-data android:name="org.chromium.webapk.shell_apk.maskableIconId" android:resource="@mipmap/maskable_app_icon"/>
+        <meta-data android:name="org.monyhar.webapk.shell_apk.maskableIconId" android:resource="@mipmap/maskable_app_icon"/>
         {{/has_maskable_icon}}
-        <meta-data android:name="org.chromium.webapk.shell_apk.splashId" android:resource="@drawable/splash_icon" />
-        <meta-data android:name="org.chromium.webapk.shell_apk.isSplashIconMaskableBooleanId" android:resource="@bool/is_splash_icon_maskable"/>
-        <meta-data android:name="org.chromium.webapk.shell_apk.distributor" android:value="{{{distributor}}}" />
+        <meta-data android:name="org.monyhar.webapk.shell_apk.splashId" android:resource="@drawable/splash_icon" />
+        <meta-data android:name="org.monyhar.webapk.shell_apk.isSplashIconMaskableBooleanId" android:resource="@bool/is_splash_icon_maskable"/>
+        <meta-data android:name="org.monyhar.webapk.shell_apk.distributor" android:value="{{{distributor}}}" />
 
         {{!  Hashes of icons should be taken of the icons as they are available on the web. The icon
              bytes should not be transformed (e.g. decoded / encoded) prior to taking the hash.
         }}
-        <meta-data android:name="org.chromium.webapk.shell_apk.iconUrlsAndIconMurmur2Hashes" android:value="{{{icon_urls_and_icon_murmur2_hashes}}}" />
+        <meta-data android:name="org.monyhar.webapk.shell_apk.iconUrlsAndIconMurmur2Hashes" android:value="{{{icon_urls_and_icon_murmur2_hashes}}}" />
 
-        <meta-data android:name="org.chromium.webapk.shell_apk.webManifestUrl" android:value="{{{web_manifest_url}}}" />
+        <meta-data android:name="org.monyhar.webapk.shell_apk.webManifestUrl" android:value="{{{web_manifest_url}}}" />
 
-        <meta-data android:name="org.chromium.webapk.shell_apk.isNewStyleWebApk" android:value="[[ use_new_splash ]]" />
-        <meta-data android:name="org.chromium.webapk.shell_apk.enableSiteSettingsShortcut" android:value="{{{enable_site_settings_shortcut}}}" />
+        <meta-data android:name="org.monyhar.webapk.shell_apk.isNewStyleWebApk" android:value="[[ use_new_splash ]]" />
+        <meta-data android:name="org.monyhar.webapk.shell_apk.enableSiteSettingsShortcut" android:value="{{{enable_site_settings_shortcut}}}" />
         <service
-            android:name="org.chromium.webapk.shell_apk.WebApkServiceFactory"
+            android:name="org.monyhar.webapk.shell_apk.WebApkServiceFactory"
             android:exported="true"
             tools:ignore="ExportedService">
             <intent-filter>
@@ -183,7 +183,7 @@
             </intent-filter>
         </service>
         <service
-            android:name="org.chromium.webapk.shell_apk.IdentityService"
+            android:name="org.monyhar.webapk.shell_apk.IdentityService"
             android:exported="true"
             tools:ignore="ExportedService">
             <intent-filter>

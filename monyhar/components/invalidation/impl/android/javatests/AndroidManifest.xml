@@ -5,9 +5,9 @@
 <!-- package name must be unique -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="org.chromium.components.invalidation">
+    package="org.monyhar.components.invalidation">
     <application>
-      <service android:name="org.chromium.components.invalidation.TestableInvalidationClientService"
+      <service android:name="org.monyhar.components.invalidation.TestableInvalidationClientService"
         android:exported="false" />
     </application>
 </manifest>

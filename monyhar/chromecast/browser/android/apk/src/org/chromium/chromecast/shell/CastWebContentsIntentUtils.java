@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.shell;
+package org.monyhar.chromecast.shell;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,9 +11,9 @@ import android.os.Bundle;
 
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * Utils for creating and handling intents used by {@link CastWebContentsComponent} and

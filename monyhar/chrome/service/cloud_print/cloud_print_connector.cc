@@ -568,7 +568,7 @@ void CloudPrintConnector::OnPrinterDelete(const std::string& printer_id) {
 
   // TODO(gene): We probably should not try indefinitely here. Just once or
   // twice should be enough.
-  // Bug: http://code.google.com/p/chromium/issues/detail?id=101850
+  // Bug: http://code.google.com/p/monyhar/issues/detail?id=101850
   GURL url = GetUrlForPrinterDelete(
       settings_.server_url(), printer_id, "printer_deleted");
   StartGetRequest(url,

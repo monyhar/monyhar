@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.generic_ui;
+package org.monyhar.chrome.browser.autofill_assistant.generic_ui;
 
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
 
 /**
  * This class is responsible for pushing updates to the Autofill Assistant generic UI view. These

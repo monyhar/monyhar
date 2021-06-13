@@ -151,7 +151,7 @@ def _LoadBuildVars(output_directory):
 def GetSrcRootFromOutputDirectory(output_directory):
   """Returns the source root directory from output directory.
 
-  Typical case: '/.../chromium/src/out/Release' -> '/.../chromium/src/'.
+  Typical case: '/.../monyhar/src/out/Release' -> '/.../monyhar/src/'.
   Heuristic: Look for .gn in the current and successive parent directories.
 
   Args:

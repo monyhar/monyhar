@@ -259,9 +259,9 @@ bool EditingBehavior::ShouldInsertCharacter(const KeyboardEvent& event) const {
   // Alt key would be used to insert alternative character, so we should let
   // through. Also note that Ctrl-Alt combination equals to AltGr key which is
   // also used to insert alternative character.
-  // http://code.google.com/p/chromium/issues/detail?id=10846
+  // http://code.google.com/p/monyhar/issues/detail?id=10846
   // Windows sets both alt and meta are on when "Alt" key pressed.
-  // http://code.google.com/p/chromium/issues/detail?id=2215
+  // http://code.google.com/p/monyhar/issues/detail?id=2215
   // Also, we should not rely on an assumption that keyboards don't
   // send ASCII characters when pressing a control key on Windows,
   // which may be configured to do it so by user.

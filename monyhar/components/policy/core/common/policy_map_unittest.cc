@@ -376,7 +376,7 @@ TEST_F(PolicyMapTest, MergeFrom) {
 
   PolicyMap b;
   b.Set(kTestPolicyName1, POLICY_LEVEL_MANDATORY, POLICY_SCOPE_MACHINE,
-        POLICY_SOURCE_CLOUD, base::Value("chromium.org"), nullptr);
+        POLICY_SOURCE_CLOUD, base::Value("monyhar.org"), nullptr);
   b.Set(kTestPolicyName2, POLICY_LEVEL_MANDATORY, POLICY_SCOPE_MACHINE,
         POLICY_SOURCE_CLOUD, base::Value(false), nullptr);
   b.Set(kTestPolicyName3, POLICY_LEVEL_MANDATORY, POLICY_SCOPE_MACHINE,
@@ -406,7 +406,7 @@ TEST_F(PolicyMapTest, MergeFrom) {
   PolicyMap c;
   // POLICY_SCOPE_MACHINE over POLICY_SCOPE_USER.
   c.Set(kTestPolicyName1, POLICY_LEVEL_MANDATORY, POLICY_SCOPE_MACHINE,
-        POLICY_SOURCE_CLOUD, base::Value("chromium.org"), nullptr);
+        POLICY_SOURCE_CLOUD, base::Value("monyhar.org"), nullptr);
   c.GetMutable(kTestPolicyName1)
       ->AddMessage(PolicyMap::MessageType::kWarning,
                    IDS_POLICY_CONFLICT_DIFF_VALUE);

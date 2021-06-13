@@ -56,9 +56,9 @@ toc:
     - title: "PPB_OpenGLES2"
       path: /native-client/${folder}/pepperc/struct_p_p_b___open_g_l_e_s2
     - title: "PPB_OpenGLES2ChromiumEnableFeature"
-      path: /native-client/${folder}/pepperc/struct_p_p_b___open_g_l_e_s2_chromium_enable_feature
+      path: /native-client/${folder}/pepperc/struct_p_p_b___open_g_l_e_s2_monyhar_enable_feature
     - title: "PPB_OpenGLES2ChromiumMapSub"
-      path: /native-client/${folder}/pepperc/struct_p_p_b___open_g_l_e_s2_chromium_map_sub
+      path: /native-client/${folder}/pepperc/struct_p_p_b___open_g_l_e_s2_monyhar_map_sub
     - title: "PPB_OpenGLES2FramebufferBlit"
       path: /native-client/${folder}/pepperc/struct_p_p_b___open_g_l_e_s2_framebuffer_blit
     - title: "PPB_OpenGLES2FramebufferMultisample"

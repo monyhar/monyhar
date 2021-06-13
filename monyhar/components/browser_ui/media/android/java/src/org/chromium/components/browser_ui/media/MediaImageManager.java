@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.media;
+package org.monyhar.components.browser_ui.media;
 
 import android.graphics.Bitmap;
 import android.graphics.Rect;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.FileUtils;
-import org.chromium.content_public.browser.ImageDownloadCallback;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.services.media_session.MediaImage;
-import org.chromium.url.GURL;
+import org.monyhar.base.FileUtils;
+import org.monyhar.content_public.browser.ImageDownloadCallback;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.services.media_session.MediaImage;
+import org.monyhar.url.GURL;
 
 import java.util.Iterator;
 import java.util.List;

@@ -307,7 +307,7 @@ class Bits {
   static uint32 Log2FloorNonZero64(uint64 n) {
     // Older versions of clang run into an instruction-selection failure when
     // it encounters __builtin_clzll:
-    // https://bugs.chromium.org/p/nativeclient/issues/detail?id=4395
+    // https://bugs.monyhar.org/p/nativeclient/issues/detail?id=4395
     // This includes arm-nacl-clang and clang in older Android NDK versions.
     // To work around this, when we build with those we use the portable
     // implementation instead.

@@ -56,7 +56,7 @@
                 android:ellipsize="none" />
         </LinearLayout>
 
-        <org.chromium.ui.widget.ChromeImageView
+        <org.monyhar.ui.widget.ChromeImageView
             android:id="@+id/details_image"
             android:layout_width="@dimen/autofill_assistant_details_image_size"
             android:layout_height="@dimen/autofill_assistant_details_image_size"

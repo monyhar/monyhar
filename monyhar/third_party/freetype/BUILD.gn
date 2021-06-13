@@ -149,8 +149,8 @@ source_set("freetype_source") {
   } else {
     configs += [ "//third_party/harfbuzz-ng:harfbuzz_config" ]
   }
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
   configs += [ "//build/config/sanitizers:cfi_icall_generalize_pointers" ]
   configs += [ ":freetype-warnings" ]
 

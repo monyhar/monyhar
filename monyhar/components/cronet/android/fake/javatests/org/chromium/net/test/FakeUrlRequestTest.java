@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.test;
+package org.monyhar.net.test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -11,8 +11,8 @@ import static org.junit.Assert.fail;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.times;
 
-import static org.chromium.net.CronetTestRule.assertContains;
-import static org.chromium.net.TestUrlRequestCallback.ResponseStep.ON_CANCELED;
+import static org.monyhar.net.CronetTestRule.assertContains;
+import static org.monyhar.net.TestUrlRequestCallback.ResponseStep.ON_CANCELED;
 
 import android.content.Context;
 import android.os.ConditionVariable;
@@ -27,19 +27,19 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.net.CronetEngine;
-import org.chromium.net.CronetException;
-import org.chromium.net.InlineExecutionProhibitedException;
-import org.chromium.net.TestUploadDataProvider;
-import org.chromium.net.TestUrlRequestCallback;
-import org.chromium.net.UploadDataProvider;
-import org.chromium.net.UploadDataProviders;
-import org.chromium.net.UploadDataSink;
-import org.chromium.net.UrlRequest;
-import org.chromium.net.UrlRequest.Status;
-import org.chromium.net.UrlRequest.StatusListener;
-import org.chromium.net.UrlResponseInfo;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.net.CronetEngine;
+import org.monyhar.net.CronetException;
+import org.monyhar.net.InlineExecutionProhibitedException;
+import org.monyhar.net.TestUploadDataProvider;
+import org.monyhar.net.TestUrlRequestCallback;
+import org.monyhar.net.UploadDataProvider;
+import org.monyhar.net.UploadDataProviders;
+import org.monyhar.net.UploadDataSink;
+import org.monyhar.net.UrlRequest;
+import org.monyhar.net.UrlRequest.Status;
+import org.monyhar.net.UrlRequest.StatusListener;
+import org.monyhar.net.UrlResponseInfo;
 
 import java.io.IOException;
 import java.net.URI;
@@ -1606,23 +1606,23 @@ public class FakeUrlRequestTest {
 
     private static class StubCallback extends UrlRequest.Callback {
         @Override
-        public void onRedirectReceived(org.chromium.net.UrlRequest urlRequest,
+        public void onRedirectReceived(org.monyhar.net.UrlRequest urlRequest,
                 UrlResponseInfo urlResponseInfo, String s) {}
 
         @Override
         public void onResponseStarted(
-                org.chromium.net.UrlRequest urlRequest, UrlResponseInfo urlResponseInfo) {}
+                org.monyhar.net.UrlRequest urlRequest, UrlResponseInfo urlResponseInfo) {}
 
         @Override
-        public void onReadCompleted(org.chromium.net.UrlRequest urlRequest,
+        public void onReadCompleted(org.monyhar.net.UrlRequest urlRequest,
                 UrlResponseInfo urlResponseInfo, ByteBuffer byteBuffer) {}
 
         @Override
         public void onSucceeded(
-                org.chromium.net.UrlRequest urlRequest, UrlResponseInfo urlResponseInfo) {}
+                org.monyhar.net.UrlRequest urlRequest, UrlResponseInfo urlResponseInfo) {}
 
         @Override
-        public void onFailed(org.chromium.net.UrlRequest urlRequest,
+        public void onFailed(org.monyhar.net.UrlRequest urlRequest,
                 UrlResponseInfo urlResponseInfo, CronetException e) {}
     }
 }

@@ -89,21 +89,21 @@ source_set("unit_tests") {
 if (is_android) {
   android_library("core_java") {
     sources = [
-      "android/java/src/org/chromium/components/offline_items_collection/ContentId.java",
-      "android/java/src/org/chromium/components/offline_items_collection/LegacyHelpers.java",
-      "android/java/src/org/chromium/components/offline_items_collection/OfflineContentAggregatorBridge.java",
-      "android/java/src/org/chromium/components/offline_items_collection/OfflineContentProvider.java",
-      "android/java/src/org/chromium/components/offline_items_collection/OfflineItem.java",
-      "android/java/src/org/chromium/components/offline_items_collection/OfflineItemSchedule.java",
-      "android/java/src/org/chromium/components/offline_items_collection/OfflineItemShareInfo.java",
-      "android/java/src/org/chromium/components/offline_items_collection/OfflineItemVisuals.java",
-      "android/java/src/org/chromium/components/offline_items_collection/OpenParams.java",
-      "android/java/src/org/chromium/components/offline_items_collection/ShareCallback.java",
-      "android/java/src/org/chromium/components/offline_items_collection/UpdateDelta.java",
-      "android/java/src/org/chromium/components/offline_items_collection/VisualsCallback.java",
-      "android/java/src/org/chromium/components/offline_items_collection/bridges/OfflineItemBridge.java",
-      "android/java/src/org/chromium/components/offline_items_collection/bridges/OfflineItemShareInfoBridge.java",
-      "android/java/src/org/chromium/components/offline_items_collection/bridges/OfflineItemVisualsBridge.java",
+      "android/java/src/org/monyhar/components/offline_items_collection/ContentId.java",
+      "android/java/src/org/monyhar/components/offline_items_collection/LegacyHelpers.java",
+      "android/java/src/org/monyhar/components/offline_items_collection/OfflineContentAggregatorBridge.java",
+      "android/java/src/org/monyhar/components/offline_items_collection/OfflineContentProvider.java",
+      "android/java/src/org/monyhar/components/offline_items_collection/OfflineItem.java",
+      "android/java/src/org/monyhar/components/offline_items_collection/OfflineItemSchedule.java",
+      "android/java/src/org/monyhar/components/offline_items_collection/OfflineItemShareInfo.java",
+      "android/java/src/org/monyhar/components/offline_items_collection/OfflineItemVisuals.java",
+      "android/java/src/org/monyhar/components/offline_items_collection/OpenParams.java",
+      "android/java/src/org/monyhar/components/offline_items_collection/ShareCallback.java",
+      "android/java/src/org/monyhar/components/offline_items_collection/UpdateDelta.java",
+      "android/java/src/org/monyhar/components/offline_items_collection/VisualsCallback.java",
+      "android/java/src/org/monyhar/components/offline_items_collection/bridges/OfflineItemBridge.java",
+      "android/java/src/org/monyhar/components/offline_items_collection/bridges/OfflineItemShareInfoBridge.java",
+      "android/java/src/org/monyhar/components/offline_items_collection/bridges/OfflineItemVisualsBridge.java",
     ]
     annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
 
@@ -119,10 +119,10 @@ if (is_android) {
     visibility = [ ":*" ]
 
     sources = [
-      "android/java/src/org/chromium/components/offline_items_collection/OfflineContentAggregatorBridge.java",
-      "android/java/src/org/chromium/components/offline_items_collection/bridges/OfflineItemBridge.java",
-      "android/java/src/org/chromium/components/offline_items_collection/bridges/OfflineItemShareInfoBridge.java",
-      "android/java/src/org/chromium/components/offline_items_collection/bridges/OfflineItemVisualsBridge.java",
+      "android/java/src/org/monyhar/components/offline_items_collection/OfflineContentAggregatorBridge.java",
+      "android/java/src/org/monyhar/components/offline_items_collection/bridges/OfflineItemBridge.java",
+      "android/java/src/org/monyhar/components/offline_items_collection/bridges/OfflineItemShareInfoBridge.java",
+      "android/java/src/org/monyhar/components/offline_items_collection/bridges/OfflineItemVisualsBridge.java",
     ]
   }
 
@@ -148,13 +148,13 @@ if (is_android) {
       "//third_party/junit",
     ]
 
-    sources = [ "android/native_java_unittests/src/org/chromium/components/offline_items_collection/bridges/OfflineItemBridgeUnitTest.java" ]
+    sources = [ "android/native_java_unittests/src/org/monyhar/components/offline_items_collection/bridges/OfflineItemBridgeUnitTest.java" ]
 
     annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
   }
 
   generate_jni("native_j_unittests_jni_headers") {
     testonly = true
-    sources = [ "android/native_java_unittests/src/org/chromium/components/offline_items_collection/bridges/OfflineItemBridgeUnitTest.java" ]
+    sources = [ "android/native_java_unittests/src/org/monyhar/components/offline_items_collection/bridges/OfflineItemBridgeUnitTest.java" ]
   }
 }

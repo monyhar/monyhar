@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.image_descriptions;
+package org.monyhar.chrome.browser.image_descriptions;
 
 import android.os.Bundle;
 
@@ -10,9 +10,9 @@ import androidx.annotation.Nullable;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.browser_ui.settings.ChromeSwitchPreference;
-import org.chromium.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.browser_ui.settings.ChromeSwitchPreference;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
 
 /**
  * Fragment for the "Image Descriptions" settings sub-page under Settings > Accessibility. This page

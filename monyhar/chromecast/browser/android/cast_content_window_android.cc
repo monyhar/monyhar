@@ -35,7 +35,7 @@ base::android::ScopedJavaLocalRef<jobject> CreateJavaWindow(
 constexpr char kContextInteractionId[] = "interactionId";
 constexpr char kContextConversationId[] = "conversationId";
 constexpr char kGestureConsumedCallbackClassName[] =
-    "org/chromium/chromecast/shell/"
+    "org/monyhar/chromecast/shell/"
     "CastWebContentsComponent$GestureHandledCallback";
 
 // Wraps the JNI gesture consumption handled callback for invocation from C++.

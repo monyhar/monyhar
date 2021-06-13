@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import android.annotation.SuppressLint;
 import android.content.ComponentName;
@@ -17,16 +17,16 @@ import android.speech.RecognitionService;
 import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.PackageUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.blink.mojom.SpeechRecognitionErrorCode;
-import org.chromium.content.R;
-import org.chromium.content_public.browser.SpeechRecognition;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.PackageUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.blink.mojom.SpeechRecognitionErrorCode;
+import org.monyhar.content.R;
+import org.monyhar.content_public.browser.SpeechRecognition;
+import org.monyhar.ui.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;

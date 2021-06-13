@@ -1,11 +1,11 @@
 set noparent
-blundell@chromium.org
-caitkp@chromium.org
-jochen@chromium.org
-tedchoc@chromium.org
+blundell@monyhar.org
+caitkp@monyhar.org
+jochen@monyhar.org
+tedchoc@monyhar.org
 
 # For build configuration things and simple changes.
-thakis@chromium.org
+thakis@monyhar.org
 
 per-file arc_strings.grdp=file://components/arc/OWNERS
 per-file android_system_error_page_strings.grdp=file://components/android_system_error_page/OWNERS
@@ -58,7 +58,7 @@ per-file .eslintrc.js=file://ui/webui/PLATFORM_OWNERS
 per-file PRESUBMIT.py=file://ui/webui/PLATFORM_OWNERS
 
 # For adding or removing languages.
-per-file *.grd=claudiomagni@chromium.org
+per-file *.grd=claudiomagni@monyhar.org
 
 # Translation artifacts:
 per-file *.xtb=file://tools/translation/TRANSLATION_OWNERS

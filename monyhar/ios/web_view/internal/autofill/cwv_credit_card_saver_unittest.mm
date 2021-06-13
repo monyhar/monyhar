@@ -43,7 +43,7 @@ TEST_F(CWVCreditCardSaverTest, Initialization) {
   autofill::LegalMessageLines legal_message_lines = {
       autofill::TestLegalMessageLine("Test line 1",
                                      {autofill::LegalMessageLine::Link(
-                                         5, 9, "http://www.chromium.org/")})};
+                                         5, 9, "http://www.monyhar.org/")})};
   autofill::AutofillClient::UploadSaveCardPromptCallback callback;
 
   CWVCreditCardSaver* credit_card_saver =
@@ -61,7 +61,7 @@ TEST_F(CWVCreditCardSaverTest, Initialization) {
   id link = [legal_message attribute:NSLinkAttributeName
                              atIndex:5
                       effectiveRange:&range];
-  EXPECT_NSEQ([NSURL URLWithString:@"http://www.chromium.org/"], link);
+  EXPECT_NSEQ([NSURL URLWithString:@"http://www.monyhar.org/"], link);
   EXPECT_TRUE(NSEqualRanges(NSMakeRange(5, 4), range));
 }
 

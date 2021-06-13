@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo.bindings;
+package org.monyhar.mojo.bindings;
 
 import android.annotation.SuppressLint;
 
-import org.chromium.mojo.system.Core;
-import org.chromium.mojo.system.MessagePipeHandle;
-import org.chromium.mojo.system.Watcher;
+import org.monyhar.mojo.system.Core;
+import org.monyhar.mojo.system.MessagePipeHandle;
+import org.monyhar.mojo.system.Watcher;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -136,7 +136,7 @@ public class RouterImpl implements Router {
     }
 
     /**
-     * @see org.chromium.mojo.bindings.Router#start()
+     * @see org.monyhar.mojo.bindings.Router#start()
      */
     @Override
     public void start() {
@@ -189,7 +189,7 @@ public class RouterImpl implements Router {
     }
 
     /**
-     * @see org.chromium.mojo.bindings.HandleOwner#passHandle()
+     * @see org.monyhar.mojo.bindings.HandleOwner#passHandle()
      */
     @Override
     public MessagePipeHandle passHandle() {

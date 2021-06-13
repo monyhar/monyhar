@@ -16,7 +16,7 @@ You can check which Android image you have on your device with the following:
 
 ```sh
 # If you don't have `adb` in your path, you can source this file to use
-# the copy from chromium's Android SDK.
+# the copy from monyhar's Android SDK.
 $ source build/android/envsetup.sh
 
 # If this outputs "userdebug" or "eng" then you're OK! If this outputs "user"
@@ -34,7 +34,7 @@ version, a physical device is usually unnecessary. An `x86` emulator should be
 easier to setup.
 ***
 
-You can generally follow chromium's [Android
+You can generally follow monyhar's [Android
 emulator](/docs/android_emulator.md) instructions. You should choose a **Google
 APIs** image. The AOSP-based image will also work, but imposes additional
 developer hurdles. Note that you shouldn't use a **Google Play** image for

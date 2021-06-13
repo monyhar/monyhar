@@ -433,7 +433,7 @@ TEST_F(FramebufferInfoTest, AttachRenderbuffer) {
 
   // Change samples.
   ASSERT_FALSE(
-      feature_info_->feature_flags().chromium_framebuffer_mixed_samples);
+      feature_info_->feature_flags().monyhar_framebuffer_mixed_samples);
   renderbuffer_manager_->SetInfoAndInvalidate(renderbuffer5, kDifferentSamples5,
                                               kFormat5, kWidth5, kHeight5);
   EXPECT_EQ(static_cast<GLenum>(GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE),

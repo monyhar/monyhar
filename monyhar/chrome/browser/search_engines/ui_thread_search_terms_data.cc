@@ -55,7 +55,7 @@ std::u16string UIThreadSearchTermsData::GetRlzParameterValue(
   std::u16string rlz_string;
 #if BUILDFLAG(ENABLE_RLZ)
   // For organic brandcodes do not use rlz at all. Empty brandcode usually
-  // means a chromium install. This is ok.
+  // means a monyhar install. This is ok.
   std::string brand;
   if (google_brand::GetBrand(&brand) && !google_brand::IsOrganic(brand)) {
     // This call will return false the first time(s) it is called until the

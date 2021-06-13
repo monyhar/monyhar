@@ -1,5 +1,5 @@
 monorail {
   component: "UI>Browser>Mobile"
 }
-team_email: "chrome-android-app@chromium.org"
+team_email: "chrome-android-app@monyhar.org"
 os: ANDROID

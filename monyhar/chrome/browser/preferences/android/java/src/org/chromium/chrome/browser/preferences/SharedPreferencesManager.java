@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.preferences;
+package org.monyhar.chrome.browser.preferences;
 
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
@@ -10,9 +10,9 @@ import android.content.SharedPreferences.Editor;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.StrictModeContext;
-import org.chromium.build.BuildConfig;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.build.BuildConfig;
 
 import java.util.Collections;
 import java.util.HashMap;

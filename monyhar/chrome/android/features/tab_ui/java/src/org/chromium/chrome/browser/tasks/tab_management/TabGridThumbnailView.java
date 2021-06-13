@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
 import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
 import android.util.AttributeSet;
 
-import org.chromium.base.MathUtils;
-import org.chromium.chrome.features.start_surface.StartSurfaceConfiguration;
-import org.chromium.components.browser_ui.widget.RoundedCornerImageView;
+import org.monyhar.base.MathUtils;
+import org.monyhar.chrome.features.start_surface.StartSurfaceConfiguration;
+import org.monyhar.components.browser_ui.widget.RoundedCornerImageView;
 
 /**
  * A specialized {@link RoundedCornerImageView} that allows to set a width and height aspect ratio

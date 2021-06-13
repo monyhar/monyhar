@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.status_indicator;
+package org.monyhar.chrome.browser.status_indicator;
 
 import android.content.res.ColorStateList;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.TextView;
 
-import org.chromium.chrome.R;
-import org.chromium.components.browser_ui.widget.ViewResourceFrameLayout;
-import org.chromium.components.browser_ui.widget.text.TextViewWithCompoundDrawables;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.chrome.R;
+import org.monyhar.components.browser_ui.widget.ViewResourceFrameLayout;
+import org.monyhar.components.browser_ui.widget.text.TextViewWithCompoundDrawables;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 class StatusIndicatorViewBinder {
     /**

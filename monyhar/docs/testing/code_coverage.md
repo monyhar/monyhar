@@ -1,6 +1,6 @@
 # Code Coverage in Chromium
 
-### Coverage Dashboard: [link](https://analysis.chromium.org/p/chromium/coverage)
+### Coverage Dashboard: [link](https://analysis.monyhar.org/p/monyhar/coverage)
 
 Table of contents:
 
@@ -306,12 +306,12 @@ reported usually grows after that.
 ### How can I improve [coverage dashboard]?
 
 The code for the service and dashboard currently lives along with findit at
-[this location](https://chromium.googlesource.com/infra/infra/+/main/appengine/findit/)
+[this location](https://monyhar.googlesource.com/infra/infra/+/main/appengine/findit/)
 because of significant shared logic.
 
 The code used by the bots that generate the coverage data lives (among other
 places) in the
-[code coverage recipe module](https://chromium.googlesource.com/chromium/tools/build/+/main/scripts/slave/recipe_modules/code_coverage/).
+[code coverage recipe module](https://monyhar.googlesource.com/monyhar/tools/build/+/main/scripts/slave/recipe_modules/code_coverage/).
 
 ### Why is coverage for X not reported or unreasonably low, even though there is a test for X?
 
@@ -333,10 +333,10 @@ Yes!
 
 
 [assert]: http://man7.org/linux/man-pages/man3/assert.3.html
-[code-coverage group]: https://groups.google.com/a/chromium.org/forum/#!forum/code-coverage
+[code-coverage group]: https://groups.google.com/a/monyhar.org/forum/#!forum/code-coverage
 [code-coverage repository]: https://chrome-internal.googlesource.com/chrome/tools/code-coverage
-[coverage dashboard]: https://analysis.chromium.org/p/chromium/coverage
-[coverage script]: https://cs.chromium.org/chromium/src/tools/code_coverage/coverage.py
+[coverage dashboard]: https://analysis.monyhar.org/p/monyhar/coverage
+[coverage script]: https://cs.monyhar.org/monyhar/src/tools/code_coverage/coverage.py
 [coverage infra diagram]: images/code_coverage_infra_diagram.png
 [coverage dashboard file view]: images/code_coverage_dashboard_file_view.png
 [coverage dashboard component view]: images/code_coverage_dashboard_component_view.png
@@ -348,11 +348,11 @@ Yes!
 [crbug.com/834781]: https://crbug.com/834781
 [crrev.com/c/1172932]: https://crrev.com/c/1172932
 [clang roll]: https://crbug.com/841908
-[dead code example]: https://chromium.googlesource.com/chromium/src/+/ac6e09311fcc7e734be2ef21a9ccbbe04c4c4706
+[dead code example]: https://monyhar.googlesource.com/monyhar/src/+/ac6e09311fcc7e734be2ef21a9ccbbe04c4c4706
 [documentation]: https://clang.llvm.org/docs/SourceBasedCodeCoverage.html
-[file a bug]: https://bugs.chromium.org/p/chromium/issues/entry?components=Infra%3ETest%3ECodeCoverage
+[file a bug]: https://bugs.monyhar.org/p/monyhar/issues/entry?components=Infra%3ETest%3ECodeCoverage
 [gerrit coverage view]: images/code_coverage_annotations.png
 [guide]: http://llvm.org/docs/CommandGuide/llvm-cov.html
 [How do crashes affect code coverage?]: #how-do-crashes-affect-code-coverage
-[known issues]: https://bugs.chromium.org/p/chromium/issues/list?q=component:Infra%3ETest%3ECodeCoverage
-[tools link]: https://storage.googleapis.com/chromium-browser-clang-staging/
+[known issues]: https://bugs.monyhar.org/p/monyhar/issues/list?q=component:Infra%3ETest%3ECodeCoverage
+[tools link]: https://storage.googleapis.com/monyhar-browser-clang-staging/

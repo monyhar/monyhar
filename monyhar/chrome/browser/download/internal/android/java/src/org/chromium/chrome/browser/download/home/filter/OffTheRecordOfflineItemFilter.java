@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.home.filter;
+package org.monyhar.chrome.browser.download.home.filter;
 
-import org.chromium.chrome.browser.profiles.OTRProfileID;
-import org.chromium.components.offline_items_collection.OfflineItem;
+import org.monyhar.chrome.browser.profiles.OTRProfileID;
+import org.monyhar.components.offline_items_collection.OfflineItem;
 
 /**
  * A {@link OfflineItemFilter} responsible for pruning out off the record items if we are not

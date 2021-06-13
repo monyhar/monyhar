@@ -19,7 +19,7 @@ ChildProcessLogger::~ChildProcessLogger() = default;
 
 bool ChildProcessLogger::Initialize() {
   // Adapted from
-  // https://cs.chromium.org/chromium/src/sandbox/win/src/handle_inheritance_test.cc
+  // https://cs.monyhar.org/monyhar/src/sandbox/win/src/handle_inheritance_test.cc
   if (!temp_dir_.CreateUniqueTempDir()) {
     PLOG(ERROR) << "Could not create temp dir for child stdout";
     return false;

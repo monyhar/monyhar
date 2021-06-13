@@ -21,7 +21,7 @@
       'target_name': 'crashpad_tool_support',
       'type': 'static_library',
       'dependencies': [
-        '../third_party/mini_chromium/mini_chromium.gyp:base',
+        '../third_party/mini_monyhar/mini_monyhar.gyp:base',
       ],
       'include_dirs': [
         '..',
@@ -38,7 +38,7 @@
         'crashpad_tool_support',
         '../client/client.gyp:crashpad_client',
         '../compat/compat.gyp:crashpad_compat',
-        '../third_party/mini_chromium/mini_chromium.gyp:base',
+        '../third_party/mini_monyhar/mini_monyhar.gyp:base',
         '../util/util.gyp:crashpad_util',
       ],
       'include_dirs': [
@@ -54,7 +54,7 @@
       'dependencies': [
         'crashpad_tool_support',
         '../compat/compat.gyp:crashpad_compat',
-        '../third_party/mini_chromium/mini_chromium.gyp:base',
+        '../third_party/mini_monyhar/mini_monyhar.gyp:base',
         '../util/util.gyp:crashpad_util',
       ],
       'include_dirs': [
@@ -72,7 +72,7 @@
         '../compat/compat.gyp:crashpad_compat',
         '../minidump/minidump.gyp:crashpad_minidump',
         '../snapshot/snapshot.gyp:crashpad_snapshot',
-        '../third_party/mini_chromium/mini_chromium.gyp:base',
+        '../third_party/mini_monyhar/mini_monyhar.gyp:base',
         '../util/util.gyp:crashpad_util',
       ],
       'include_dirs': [
@@ -130,7 +130,7 @@
           'dependencies': [
             'crashpad_tool_support',
             '../compat/compat.gyp:crashpad_compat',
-            '../third_party/mini_chromium/mini_chromium.gyp:base',
+            '../third_party/mini_monyhar/mini_monyhar.gyp:base',
             '../util/util.gyp:crashpad_util',
           ],
           'include_dirs': [
@@ -146,7 +146,7 @@
           'dependencies': [
             'crashpad_tool_support',
             '../compat/compat.gyp:crashpad_compat',
-            '../third_party/mini_chromium/mini_chromium.gyp:base',
+            '../third_party/mini_monyhar/mini_monyhar.gyp:base',
             '../util/util.gyp:crashpad_util',
           ],
           'include_dirs': [
@@ -170,7 +170,7 @@
           'dependencies': [
             'crashpad_tool_support',
             '../compat/compat.gyp:crashpad_compat',
-            '../third_party/mini_chromium/mini_chromium.gyp:base',
+            '../third_party/mini_monyhar/mini_monyhar.gyp:base',
             '../util/util.gyp:crashpad_util',
           ],
           'include_dirs': [
@@ -193,7 +193,7 @@
             'crashpad_tool_support',
             '../client/client.gyp:crashpad_client',
             '../compat/compat.gyp:crashpad_compat',
-            '../third_party/mini_chromium/mini_chromium.gyp:base',
+            '../third_party/mini_monyhar/mini_monyhar.gyp:base',
             '../util/util.gyp:crashpad_util',
           ],
           'include_dirs': [

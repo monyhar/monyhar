@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Login histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -43,7 +43,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Login.BrowserShutdownTime" units="ms"
     expires_after="2021-10-10">
-  <owner>xiyuan@chromium.org</owner>
+  <owner>xiyuan@monyhar.org</owner>
   <summary>
     Tracks the browser process shutdown time from when SIGTERM is sent to the
     browser process to when the browser process group exits (or gets killed by
@@ -53,8 +53,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Login.ConsumerNewUsersAllowed" enum="LoginConsumerWhitelist"
     expires_after="M77">
-  <owner>cmasone@chromium.org</owner>
-  <owner>sumit@chromium.org</owner>
+  <owner>cmasone@monyhar.org</owner>
+  <owner>sumit@monyhar.org</owner>
   <summary>
     Chrome OS histogram tracking, per consumer sign-in, whether the device owner
     is allowing arbitrary accounts to be used on the device, or only those on a
@@ -66,8 +66,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: monitors 'black screen on login' user experience. -->
 
-  <owner>alemate@chromium.org</owner>
-  <owner>rsorokin@chromium.org</owner>
+  <owner>alemate@monyhar.org</owner>
+  <owner>rsorokin@monyhar.org</owner>
   <summary>
     A set of chrome flags that triggered browser restart on Chrome OS after user
     sign in. Chrome needs to be restarted if the device owner set of flags is
@@ -78,13 +78,13 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Login.FailureReason" enum="LoginFailureReason"
     expires_after="2021-10-17">
-  <owner>achuith@chromium.org</owner>
+  <owner>achuith@monyhar.org</owner>
   <summary>Chrome OS login failure reason.</summary>
 </histogram>
 
 <histogram name="Login.LeastUsedAccountDays" units="days" expires_after="M77">
-  <owner>achuith@chromium.org</owner>
-  <owner>omrilio@chromium.org</owner>
+  <owner>achuith@monyhar.org</owner>
+  <owner>omrilio@monyhar.org</owner>
   <summary>
     Chrome OS histogram that keeps track of the days since the least frequently
     used account signed in. Reported on every boot and once a day after that.
@@ -93,8 +93,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Login.MountNamespaceCreationSuccess" enum="Boolean"
     expires_after="2021-10-10">
-  <owner>betuls@chromium.org</owner>
-  <owner>jorgelo@chromium.org</owner>
+  <owner>betuls@monyhar.org</owner>
+  <owner>jorgelo@monyhar.org</owner>
   <owner>chromeos-security-core@google.com</owner>
   <summary>
     Mount Namespace creation success status. Reported every time user signs in.
@@ -103,13 +103,13 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Login.NewUserPriorityPrefsSyncResult"
     enum="NewUserPriorityPrefsSyncResult" expires_after="M85">
-  <owner>alemate@chromium.org</owner>
+  <owner>alemate@monyhar.org</owner>
   <summary>Records whether a new user's priority prefs sync timed out.</summary>
 </histogram>
 
 <histogram name="Login.NewUserPriorityPrefsSyncTime" units="ms"
     expires_after="M85">
-  <owner>alemate@chromium.org</owner>
+  <owner>alemate@monyhar.org</owner>
   <summary>
     Time spent waiting for priority preferences to sync after new user sign in.
     The operation will time out after 10s.
@@ -121,7 +121,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in M88.
   </obsolete>
-  <owner>rsorokin@chromium.org</owner>
+  <owner>rsorokin@monyhar.org</owner>
   <owner>cros-oac@google.com</owner>
   <summary>
     On offline login failure, records whether it is for an existing user.
@@ -130,7 +130,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Login.OfflineLoginWithHiddenUserPods"
     enum="ChromeOSHiddenUserPodsOfflineLogin" expires_after="M95">
-  <owner>mslus@chromium.org</owner>
+  <owner>mslus@monyhar.org</owner>
   <owner>chromeos-commercial-identity@google.com</owner>
   <summary>
     Records offline login attempts with user pods hidden on the login screen.
@@ -139,7 +139,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Login.OfflineSuccess.Attempts" units="units"
     expires_after="2021-11-21">
-  <owner>rsorokin@chromium.org</owner>
+  <owner>rsorokin@monyhar.org</owner>
   <owner>cros-oac@google.com</owner>
   <summary>
     On offline login success, records number of attempts, including success.
@@ -148,8 +148,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Login.PageLoad.DetectionType" enum="LoginDetectionType"
     expires_after="2021-11-30">
-  <owner>rajendrant@chromium.org</owner>
-  <owner>mcrouse@chromium.org</owner>
+  <owner>rajendrant@monyhar.org</owner>
+  <owner>mcrouse@monyhar.org</owner>
   <summary>
     Type of login detected for a page load based on different heuristics.
     Recorded once per page load.
@@ -158,7 +158,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Login.PasswordChanged.ReauthReason" enum="LoginReauthReasons"
     expires_after="2021-11-21">
-  <owner>rsorokin@chromium.org</owner>
+  <owner>rsorokin@monyhar.org</owner>
   <owner>cros-oac@google.com</owner>
   <summary>
     Tracks the reason why a user was sent through the GAIA re-auth flow which
@@ -168,8 +168,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Login.PasswordChangeFlow" enum="LoginPasswordChangeFlow"
     expires_after="2021-10-10">
-  <owner>xiyuan@chromium.org</owner>
-  <owner>omrilio@chromium.org</owner>
+  <owner>xiyuan@monyhar.org</owner>
+  <owner>omrilio@monyhar.org</owner>
   <summary>
     Records the UI flow after a possible password change is detected.
   </summary>
@@ -177,7 +177,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Login.PasswordNotChanged.ReauthReason"
     enum="LoginReauthReasons" expires_after="2021-11-21">
-  <owner>rsorokin@chromium.org</owner>
+  <owner>rsorokin@monyhar.org</owner>
   <owner>cros-oac@google.com</owner>
   <summary>
     Tracks the reason why a user was sent through the GAIA re-auth flow which
@@ -187,8 +187,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Login.PasswordStoreSites.InitializedBeforeQuery"
     enum="Boolean" expires_after="2021-11-30">
-  <owner>rajendrant@chromium.org</owner>
-  <owner>mcrouse@chromium.org</owner>
+  <owner>rajendrant@monyhar.org</owner>
+  <owner>mcrouse@monyhar.org</owner>
   <summary>
     Records whether the passworded sites list is initialized when the query for
     sites happens. This is used to measure how many queries happened before the
@@ -199,14 +199,14 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Login.PolicyFilesStatePerBoot" enum="LoginPolicyFilesState"
     expires_after="M81">
-  <owner>cmasone@chromium.org</owner>
+  <owner>cmasone@monyhar.org</owner>
   <summary>The state of Chrome OS owner key and device policy files.</summary>
 </histogram>
 
 <histogram name="Login.PromptToCompleteLoginTime" units="ms"
     expires_after="2021-11-14">
-  <owner>rsorokin@chromium.org</owner>
-  <owner>achuith@chromium.org</owner>
+  <owner>rsorokin@monyhar.org</owner>
+  <owner>achuith@monyhar.org</owner>
   <owner>cros-oac@google.com</owner>
   <summary>
     Time from first display of the login prompt until the user completes signing
@@ -216,8 +216,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Login.PromptToLoginTime" units="ms" expires_after="2021-11-21">
   <owner>elijahtaylor@google.com</owner>
-  <owner>yusukes@chromium.org</owner>
-  <owner>rsorokin@chromium.org</owner>
+  <owner>yusukes@monyhar.org</owner>
+  <owner>rsorokin@monyhar.org</owner>
   <owner>cros-oac@google.com</owner>
   <summary>
     Time from first display of the login prompt until the existing user
@@ -227,7 +227,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Login.SessionExitType" enum="LoginSessionExitType"
     expires_after="2021-10-24">
-  <owner>iby@chromium.org</owner>
+  <owner>iby@monyhar.org</owner>
   <summary>
     Tracks whether a ChromeOS user was logged out because Chrome repeatedly
     crashed.
@@ -236,20 +236,20 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Login.StateKeyGenerationStatus"
     enum="LoginStateKeyGenerationStatus" expires_after="M77">
-  <owner>mnissler@chromium.org</owner>
+  <owner>mnissler@monyhar.org</owner>
   <summary>Result of a state key generation operation.</summary>
 </histogram>
 
 <histogram name="Login.SuccessReason" enum="LoginSuccessReason"
     expires_after="2021-10-25">
-  <owner>achuith@chromium.org</owner>
+  <owner>achuith@monyhar.org</owner>
   <summary>Chrome OS login success reason.</summary>
 </histogram>
 
 <histogram name="Login.SwitchToFeatureFlagMappingStatus"
     enum="LoginFeatureFlagMappingStatus" expires_after="2021-11-30">
-  <owner>mnissler@chromium.org</owner>
-  <owner>xiyuan@chromium.org</owner>
+  <owner>mnissler@monyhar.org</owner>
+  <owner>xiyuan@monyhar.org</owner>
   <summary>
     Tracks whether switches were mapped to feature flags in session_manager for
     compatibility. session_manager does this and emits UMA samples when
@@ -261,7 +261,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Login.TokenCheckResponseTime" units="ms"
     expires_after="2021-10-10">
-  <owner>rsorokin@chromium.org</owner>
+  <owner>rsorokin@monyhar.org</owner>
   <owner>cros-oac@google.com</owner>
   <summary>
     Time between sending a request to, and receiving a reply from, GAIA token
@@ -272,8 +272,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Login.TokenObtainResponseTime" units="ms"
     expires_after="2021-04-01">
   <owner>raleksandrov@google.com</owner>
-  <owner>antrim@chromium.org</owner>
-  <owner>rsorokin@chromium.org</owner>
+  <owner>antrim@monyhar.org</owner>
+  <owner>rsorokin@monyhar.org</owner>
   <owner>cros-oac@google.com</owner>
   <summary>
     Time between sending a request to, and receiving a reply from, GAIA token
@@ -283,8 +283,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Login.UsersActive28Days" units="users"
     expires_after="2021-11-07">
-  <owner>alemate@chromium.org</owner>
-  <owner>achuith@chromium.org</owner>
+  <owner>alemate@monyhar.org</owner>
+  <owner>achuith@monyhar.org</owner>
   <summary>
     Chrome OS histogram that keeps track of number of users who have logged in
     in the last 28 days. Reported on every boot and once a day after that.
@@ -293,8 +293,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Login.UsersActiveDaily" units="users"
     expires_after="2021-11-07">
-  <owner>alemate@chromium.org</owner>
-  <owner>achuith@chromium.org</owner>
+  <owner>alemate@monyhar.org</owner>
+  <owner>achuith@monyhar.org</owner>
   <summary>
     Chrome OS histogram that keeps track of number of users who have logged in
     in the last day. Reported on every boot and once a day after that.
@@ -303,8 +303,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Login.UsersActiveWeekly" units="users"
     expires_after="2021-10-10">
-  <owner>alemate@chromium.org</owner>
-  <owner>achuith@chromium.org</owner>
+  <owner>alemate@monyhar.org</owner>
+  <owner>achuith@monyhar.org</owner>
   <summary>
     Chrome OS histogram that keeps track of number of users who have logged in
     in the last 7 days. Reported on every boot and once a day after that.
@@ -313,8 +313,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Login.UsersActiveWeekly.Percent" units="%"
     expires_after="2020-12-01">
-  <owner>alemate@chromium.org</owner>
-  <owner>achuith@chromium.org</owner>
+  <owner>alemate@monyhar.org</owner>
+  <owner>achuith@monyhar.org</owner>
   <summary>
     Chrome OS histogram that keeps track of percentage of local users who have
     logged in in the last 7 days. Reported on every boot and once a day after
@@ -324,7 +324,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Login.UserType" enum="LoginUserType"
     expires_after="2021-10-17">
-  <owner>cmasone@chromium.org</owner>
+  <owner>cmasone@monyhar.org</owner>
   <summary>
     Chrome OS histogram that keeps track of the way a user logs in and whether
     Chrome OS is running normal or developer mode.

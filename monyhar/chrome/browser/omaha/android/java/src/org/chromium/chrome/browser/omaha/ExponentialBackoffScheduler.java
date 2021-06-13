@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omaha;
+package org.monyhar.chrome.browser.omaha;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -12,8 +12,8 @@ import android.content.SharedPreferences;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.base.Log;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.Log;
 
 import java.util.Date;
 import java.util.Random;
@@ -40,7 +40,7 @@ import javax.annotation.concurrent.NotThreadSafe;
 @NotThreadSafe
 public class ExponentialBackoffScheduler {
     // TODO(crbug.com/1131415): remove and use OmahaBase.TAG when OmahaBase.java is modularized.
-    // Used in various org.chromium.chrome.browser.omaha files.
+    // Used in various org.monyhar.chrome.browser.omaha files.
     static final String TAG = "omaha";
 
     private static final String PREFERENCE_DELAY = "delay";

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.settings;
+package org.monyhar.chrome.browser.settings;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,9 +14,9 @@ import androidx.fragment.app.Fragment;
 
 import org.junit.Assert;
 
-import org.chromium.base.test.BaseActivityTestRule;
-import org.chromium.base.test.util.ApplicationTestUtils;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.base.test.BaseActivityTestRule;
+import org.monyhar.base.test.util.ApplicationTestUtils;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
 
 /**
  * Activity test rule that launch {@link SettingsActivity} in tests.

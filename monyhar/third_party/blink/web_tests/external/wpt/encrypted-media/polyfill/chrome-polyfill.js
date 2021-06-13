@@ -4,7 +4,7 @@
 
         if ( ( /chrome\/([0-9]*)\./.exec( navigator.userAgent.toLowerCase() )[1] | 0 ) < 54 ) {
 
-            // Work around https://bugs.chromium.org/p/chromium/issues/detail?id=622956
+            // Work around https://bugs.monyhar.org/p/monyhar/issues/detail?id=622956
             // Chrome does not fire the empty keystatuschange event when a session is closed
             var _mediaKeySessionClose = MediaKeySession.prototype.close;
             var _mediaKeySessionKeyStatusesGetter = Object.getOwnPropertyDescriptor( MediaKeySession.prototype, 'keyStatuses' ).get;

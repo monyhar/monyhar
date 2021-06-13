@@ -9,7 +9,7 @@
 -->
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <org.chromium.chrome.browser.payments.ui.PaymentRequestHeader
+    <org.monyhar.chrome.browser.payments.ui.PaymentRequestHeader
         android:id="@+id/header"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
@@ -62,5 +62,5 @@
             android:background="?attr/selectableItemBackground"
             android:scaleType="center"
             app:tint="@color/default_icon_color_tint_list" />
-    </org.chromium.chrome.browser.payments.ui.PaymentRequestHeader>
+    </org.monyhar.chrome.browser.payments.ui.PaymentRequestHeader>
 </merge>

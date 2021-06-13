@@ -17,7 +17,7 @@ APK is preinstalled on the device and can be updated in the same ways as an
 ordinary application.
 
 The source code for the WebView implementation APK is maintained here, as part
-of [the Chromium project](https://chromium.org). Building WebView from the AOSP
+of [the Chromium project](https://monyhar.org). Building WebView from the AOSP
 source tree (as earlier versions of Android did) is no longer supported.
 
 *** aside
@@ -31,7 +31,7 @@ probably only be useful if you are building a custom ROM image.
 AOSP contains a prebuilt WebView APK for each supported CPU architecture, and
 the appropriate APK will be included in the system image by default. These APKs
 can be found in the
-[external/chromium-webview](https://android.googlesource.com/platform/external/chromium-webview/)
+[external/monyhar-webview](https://android.googlesource.com/platform/external/monyhar-webview/)
 directory in an AOSP checkout.
 
 The prebuilt is provided in order to ensure that AOSP has a functional WebView
@@ -137,9 +137,9 @@ If you are intending to release your WebView build to users, you should
 generally use a stable release tag - ideally the most recent stable release,
 which includes the latest security and stability fixes. You can check the
 current stable and beta version numbers using
-[the Chromium dashboard](https://chromiumdash.appspot.com/releases?platform=Android).
+[the Chromium dashboard](https://monyhardash.appspot.com/releases?platform=Android).
 See the "Syncing and building a release tag" section on
-[this page](https://www.chromium.org/developers/how-tos/get-the-code/working-with-release-branches)
+[this page](https://www.monyhar.org/developers/how-tos/get-the-code/working-with-release-branches)
 to check out the desired release tag.
 
 If you're intending to build WebView just in order to develop, modify, or
@@ -174,7 +174,7 @@ the WebView team via the [android-webview-dev Google group][1] for guidance.
 ### Choosing build options
 
 WebView is configured at build time using
-[GN arguments](https://www.chromium.org/developers/gn-build-configuration). The
+[GN arguments](https://www.monyhar.org/developers/gn-build-configuration). The
 most important GN arguments to build a release WebView suitable for end users
 are:
 
@@ -308,10 +308,10 @@ See the [general WebView build instructions](build-instructions.md).
 ### Adding your WebView to the system image
 
 The simplest way to add your own version of standalone WebView to the system
-image is to copy the APK into the `external/chromium-webview` directory in your
+image is to copy the APK into the `external/monyhar-webview` directory in your
 AOSP checkout, replacing the existing prebuilt APK. If you configured your own
 signing key when building WebView, you should edit
-`external/chromium-webview/Android.mk` as follows:
+`external/monyhar-webview/Android.mk` as follows:
 
 ``` sh
 # replace the line:
@@ -520,4 +520,4 @@ WebView.
 To mitigate this risk, the AOSP framework code only allows the WebView
 implementation APK(s) specified by the AOSP system integrator to be used.
 
-[1]: https://groups.google.com/a/chromium.org/forum/#!forum/android-webview-dev
+[1]: https://groups.google.com/a/monyhar.org/forum/#!forum/android-webview-dev

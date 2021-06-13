@@ -103,9 +103,9 @@ static_library("shared") {
 
   deps = [ "//third_party/wayland:wayland_client" ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":weston_config",
   ]
 }
@@ -122,9 +122,9 @@ static_library("cairo_shared") {
     "//third_party/libpng",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":weston_config",
     "//build/config/linux/pangocairo",
   ]
@@ -191,9 +191,9 @@ static_library("libweston") {
     "//third_party/wayland-protocols:xdg_output_protocol",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":weston_config",
     ":xkbcommon",
   ]
@@ -233,9 +233,9 @@ shared_library("gl_renderer") {
     "//third_party/wayland-protocols:linux_dmabuf_protocol",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":weston_config",
     ":xkbcommon",
   ]
@@ -266,11 +266,11 @@ shared_library("wayland_backend") {
     "//third_party/wayland-protocols:xdg_shell_protocol",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
     ":wayland_cursor",
     ":wayland_egl",
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":weston_config",
     ":xkbcommon",
   ]
@@ -297,9 +297,9 @@ shared_library("headless_backend") {
     "//third_party/wayland-protocols:presentation_time_protocol",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":weston_config",
   ]
 }
@@ -323,9 +323,9 @@ static_library("libweston_desktop") {
     "//third_party/wayland-protocols:xdg_shell_protocol",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":weston_config",
     ":pixman",
   ]
@@ -352,9 +352,9 @@ shared_library("compositor") {
     "//third_party/wayland-protocols:text_input_protocol",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":libevdev",
     ":libinput",
     ":weston_config",
@@ -374,10 +374,10 @@ static_library("toytoolkit") {
     "//third_party/wayland-protocols:xdg_shell_protocol",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
     ":wayland_cursor",
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":weston_config",
     ":xkbcommon",
   ]
@@ -396,9 +396,9 @@ shared_library("weston_test") {
     "//third_party/wayland-protocols:weston_test",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":weston_config",
   ]
 
@@ -424,9 +424,9 @@ executable("weston_keyboard") {
     "//third_party/wayland-protocols:text_input_protocol",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":weston_config",
   ]
 }
@@ -444,9 +444,9 @@ executable("weston_screenshooter") {
     ":weston_screenshooter_protocol",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":weston_config",
   ]
 }
@@ -464,9 +464,9 @@ executable("weston_desktop_shell") {
     ":weston_desktop_shell_protocol",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":weston_config",
   ]
 }
@@ -492,9 +492,9 @@ shared_library("desktop_shell") {
     "//third_party/wayland-protocols:input_method_protocol",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":weston_config",
   ]
 }

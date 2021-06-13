@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.settings;
+package org.monyhar.chrome.browser.feed.settings;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -11,11 +11,11 @@ import android.widget.RadioGroup;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.feed.VideoPreviewsType;
-import org.chromium.chrome.browser.feed.webfeed.R;
-import org.chromium.components.browser_ui.widget.RadioButtonWithDescription;
-import org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionLayout;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.feed.VideoPreviewsType;
+import org.monyhar.chrome.browser.feed.webfeed.R;
+import org.monyhar.components.browser_ui.widget.RadioButtonWithDescription;
+import org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionLayout;
 
 import java.util.ArrayList;
 import java.util.Collections;

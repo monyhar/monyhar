@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer.test;
+package org.monyhar.weblayer.test;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -29,11 +29,11 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.weblayer.SettingsTestUtils;
-import org.chromium.weblayer.SiteSettingsActivity;
-import org.chromium.weblayer.TestWebLayer;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.weblayer.SettingsTestUtils;
+import org.monyhar.weblayer.SiteSettingsActivity;
+import org.monyhar.weblayer.TestWebLayer;
 
 /**
  * Tests the behavior of the Site Settings UI.
@@ -90,7 +90,7 @@ public class SiteSettingsTest {
     public void testAdBlockingSiteSettingPageLaunches() throws InterruptedException {
         // The setting for ad blocking is below the fold on the main site settings page, and it's
         // challenging to scroll to it. Launch directly to the category instead. See the discussion
-        // on https://chromium-review.googlesource.com/c/chromium/src/+/2673520 for further details.
+        // on https://monyhar-review.googlesource.com/c/monyhar/src/+/2673520 for further details.
         // Note that this means that this test unfortunately doesn't verify that the Ads setting is
         // actually present on the main site settings page.
         mSettingsTestRule.launchActivity(

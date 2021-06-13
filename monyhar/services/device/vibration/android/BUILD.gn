@@ -7,14 +7,14 @@ import("//build/config/android/rules.gni")
 
 generate_jni("vibration_jni_headers") {
   sources =
-      [ "java/src/org/chromium/device/vibration/VibrationManagerImpl.java" ]
+      [ "java/src/org/monyhar/device/vibration/VibrationManagerImpl.java" ]
 }
 
 android_library("vibration_manager_java") {
   visibility = [ "//services/device:*" ]
 
   sources =
-      [ "java/src/org/chromium/device/vibration/VibrationManagerImpl.java" ]
+      [ "java/src/org/monyhar/device/vibration/VibrationManagerImpl.java" ]
 
   deps = [
     "//base:base_java",

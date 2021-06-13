@@ -23,7 +23,7 @@
       'dependencies': [
         '../compat/compat.gyp:crashpad_compat',
         '../snapshot/snapshot.gyp:crashpad_snapshot',
-        '../third_party/mini_chromium/mini_chromium.gyp:base',
+        '../third_party/mini_monyhar/mini_monyhar.gyp:base',
         '../util/util.gyp:crashpad_util',
       ],
       'export_dependent_settings': [

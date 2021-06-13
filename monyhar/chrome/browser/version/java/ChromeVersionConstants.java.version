@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.version;
+package org.monyhar.chrome.browser.version;
 
-import org.chromium.components.version_info.VersionConstants;
+import org.monyhar.components.version_info.VersionConstants;
 
 // Constants specific to Chrome. Common constants are in VersionConstants.
 public class ChromeVersionConstants extends VersionConstants {

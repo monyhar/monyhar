@@ -71,7 +71,7 @@ ERRORPRONE_WARNINGS_TO_DISABLE = [
     'ThreadJoinLoop',
     # Low priority corner cases with String.split.
     # Linking Guava and using Splitter was rejected
-    # in the https://chromium-review.googlesource.com/c/chromium/src/+/871630.
+    # in the https://monyhar-review.googlesource.com/c/monyhar/src/+/871630.
     'StringSplitter',
     # Preferred to use another method since it propagates exceptions better.
     'ClassNewInstance',
@@ -248,8 +248,8 @@ def _ProcessJavaFileForInfo(java_file):
 class _InfoFileContext(object):
   """Manages the creation of the class->source file .info file."""
 
-  def __init__(self, chromium_code, excluded_globs):
-    self._chromium_code = chromium_code
+  def __init__(self, monyhar_code, excluded_globs):
+    self._monyhar_code = monyhar_code
     self._excluded_globs = excluded_globs
     # Map of .java path -> .srcjar/nested/path.java.
     self._srcjar_files = {}
@@ -289,9 +289,9 @@ class _InfoFileContext(object):
       # Skip aidl srcjars since they don't indent code correctly.
       if '_aidl.srcjar' in source:
         continue
-      assert not self._chromium_code or len(class_names) == 1, (
+      assert not self._monyhar_code or len(class_names) == 1, (
           'Chromium java files must only have one class: {}'.format(source))
-      if self._chromium_code:
+      if self._monyhar_code:
         # This check is not necessary but nice to check this somewhere.
         self._CheckPathMatchesClassName(java_file, package_name, class_names[0])
 
@@ -411,7 +411,7 @@ def _RunCompiler(options, javac_cmd, java_files, classpath, jar_path,
       # Delete any stale files in the generated directory. The purpose of
       # options.generated_dir is for codesearch.
       shutil.rmtree(options.generated_dir, True)
-      info_file_context = _InfoFileContext(options.chromium_code,
+      info_file_context = _InfoFileContext(options.monyhar_code,
                                            options.jar_info_exclude_globs)
     else:
       input_srcjars_dir = os.path.join(temp_dir, 'input_srcjars')
@@ -464,7 +464,7 @@ def _RunCompiler(options, javac_cmd, java_files, classpath, jar_path,
       logging.debug('Build command %s', cmd)
       start = time.time()
       build_utils.CheckOutput(cmd,
-                              print_stdout=options.chromium_code,
+                              print_stdout=options.monyhar_code,
                               stdout_filter=process_javac_output_partial,
                               stderr_filter=process_javac_output_partial,
                               fail_on_output=options.warnings_as_errors)
@@ -532,10 +532,10 @@ def _ParseOptions(argv):
       '--jar-info-exclude-globs',
       help='GN list of exclude globs to filter from generated .info files.')
   parser.add_option(
-      '--chromium-code',
+      '--monyhar-code',
       type='int',
       help='Whether code being compiled should be built with stricter '
-      'warnings for chromium code.')
+      'warnings for monyhar code.')
   parser.add_option(
       '--gomacc-path', help='When set, prefix javac command with gomacc')
   parser.add_option(

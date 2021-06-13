@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#include "net/quic/quic_chromium_client_session.h"
+#include "net/quic/quic_monyhar_client_session.h"
 
 #include <memory>
 #include <utility>
@@ -36,9 +36,9 @@
 #include "net/log/net_log_event_type.h"
 #include "net/log/net_log_source_type.h"
 #include "net/quic/address_utils.h"
-#include "net/quic/crypto/proof_verifier_chromium.h"
-#include "net/quic/quic_chromium_connection_helper.h"
-#include "net/quic/quic_chromium_packet_writer.h"
+#include "net/quic/crypto/proof_verifier_monyhar.h"
+#include "net/quic/quic_monyhar_connection_helper.h"
+#include "net/quic/quic_monyhar_packet_writer.h"
 #include "net/quic/quic_connectivity_probing_manager.h"
 #include "net/quic/quic_crypto_client_stream_factory.h"
 #include "net/quic/quic_server_info.h"
@@ -1596,7 +1596,7 @@ QuicChromiumClientStream* QuicChromiumClientSession::CreateIncomingStream(
     return nullptr;
   }
   net::NetworkTrafficAnnotationTag traffic_annotation =
-      net::DefineNetworkTrafficAnnotation("quic_chromium_incoming_session", R"(
+      net::DefineNetworkTrafficAnnotation("quic_monyhar_incoming_session", R"(
       semantics {
         sender: "Quic Chromium Client Session"
         description:
@@ -1624,7 +1624,7 @@ QuicChromiumClientStream* QuicChromiumClientSession::CreateIncomingStream(
     quic::PendingStream* pending) {
   net::NetworkTrafficAnnotationTag traffic_annotation =
       net::DefineNetworkTrafficAnnotation(
-          "quic_chromium_incoming_pending_session", R"(
+          "quic_monyhar_incoming_pending_session", R"(
       semantics {
         sender: "Quic Chromium Client Session Pending Stream"
         description:
@@ -2855,14 +2855,14 @@ void QuicChromiumClientSession::OnProofValid(
 
 void QuicChromiumClientSession::OnProofVerifyDetailsAvailable(
     const quic::ProofVerifyDetails& verify_details) {
-  const ProofVerifyDetailsChromium* verify_details_chromium =
+  const ProofVerifyDetailsChromium* verify_details_monyhar =
       reinterpret_cast<const ProofVerifyDetailsChromium*>(&verify_details);
   cert_verify_result_ = std::make_unique<CertVerifyResult>(
-      verify_details_chromium->cert_verify_result);
-  pinning_failure_log_ = verify_details_chromium->pinning_failure_log;
+      verify_details_monyhar->cert_verify_result);
+  pinning_failure_log_ = verify_details_monyhar->pinning_failure_log;
   logger_->OnCertificateVerified(*cert_verify_result_);
-  pkp_bypassed_ = verify_details_chromium->pkp_bypassed;
-  is_fatal_cert_error_ = verify_details_chromium->is_fatal_cert_error;
+  pkp_bypassed_ = verify_details_monyhar->pkp_bypassed;
+  is_fatal_cert_error_ = verify_details_monyhar->is_fatal_cert_error;
 }
 
 void QuicChromiumClientSession::StartReading() {

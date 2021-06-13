@@ -74,7 +74,7 @@ def FindPythonDependencies(module_path):
 
       # This check is done after the logging/printing above to make sure that
       # we also print out the dependency edges that include python packages
-      # that are not in chromium.
+      # that are not in monyhar.
       if not path.IsSubpath(module_path, path_util.GetChromiumSrcDir()):
         continue
 

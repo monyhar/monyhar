@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download;
+package org.monyhar.chrome.browser.download;
 
 import android.app.Activity;
 import android.app.DownloadManager;
@@ -18,50 +18,50 @@ import android.text.TextUtils;
 import androidx.annotation.MainThread;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ContentUriUtils;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.FileUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.download.items.OfflineContentAggregatorFactory;
-import org.chromium.chrome.browser.feature_engagement.TrackerFactory;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.media.MediaViewerUtils;
-import org.chromium.chrome.browser.offlinepages.DownloadUiActionFlags;
-import org.chromium.chrome.browser.offlinepages.OfflinePageBridge;
-import org.chromium.chrome.browser.offlinepages.OfflinePageOrigin;
-import org.chromium.chrome.browser.offlinepages.OfflinePageUtils;
-import org.chromium.chrome.browser.offlinepages.downloads.OfflinePageDownloadBridge;
-import org.chromium.chrome.browser.profiles.OTRProfileID;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.profiles.ProfileKey;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabLaunchType;
-import org.chromium.chrome.browser.tabmodel.document.TabDelegate;
-import org.chromium.chrome.browser.util.ChromeAccessibilityUtil;
-import org.chromium.components.download.DownloadState;
-import org.chromium.components.download.ResumeMode;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.components.feature_engagement.EventConstants;
-import org.chromium.components.feature_engagement.Tracker;
-import org.chromium.components.offline_items_collection.ContentId;
-import org.chromium.components.offline_items_collection.FailState;
-import org.chromium.components.offline_items_collection.LaunchLocation;
-import org.chromium.components.offline_items_collection.LegacyHelpers;
-import org.chromium.components.offline_items_collection.OfflineItem;
-import org.chromium.components.offline_items_collection.OpenParams;
-import org.chromium.content_public.browser.BrowserStartupController;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.ui.base.DeviceFormFactor;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ContentUriUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.FileUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.download.items.OfflineContentAggregatorFactory;
+import org.monyhar.chrome.browser.feature_engagement.TrackerFactory;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.media.MediaViewerUtils;
+import org.monyhar.chrome.browser.offlinepages.DownloadUiActionFlags;
+import org.monyhar.chrome.browser.offlinepages.OfflinePageBridge;
+import org.monyhar.chrome.browser.offlinepages.OfflinePageOrigin;
+import org.monyhar.chrome.browser.offlinepages.OfflinePageUtils;
+import org.monyhar.chrome.browser.offlinepages.downloads.OfflinePageDownloadBridge;
+import org.monyhar.chrome.browser.profiles.OTRProfileID;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.profiles.ProfileKey;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabLaunchType;
+import org.monyhar.chrome.browser.tabmodel.document.TabDelegate;
+import org.monyhar.chrome.browser.util.ChromeAccessibilityUtil;
+import org.monyhar.components.download.DownloadState;
+import org.monyhar.components.download.ResumeMode;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.feature_engagement.EventConstants;
+import org.monyhar.components.feature_engagement.Tracker;
+import org.monyhar.components.offline_items_collection.ContentId;
+import org.monyhar.components.offline_items_collection.FailState;
+import org.monyhar.components.offline_items_collection.LaunchLocation;
+import org.monyhar.components.offline_items_collection.LegacyHelpers;
+import org.monyhar.components.offline_items_collection.OfflineItem;
+import org.monyhar.components.offline_items_collection.OpenParams;
+import org.monyhar.content_public.browser.BrowserStartupController;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.ui.base.DeviceFormFactor;
+import org.monyhar.ui.widget.Toast;
 
 import java.io.File;
 
@@ -72,11 +72,11 @@ public class DownloadUtils {
     private static final String TAG = "download";
 
     private static final String EXTRA_OTR_PROFILE_ID =
-            "org.chromium.chrome.browser.download.OTR_PROFILE_ID";
+            "org.monyhar.chrome.browser.download.OTR_PROFILE_ID";
     private static final String MIME_TYPE_ZIP = "application/zip";
     private static final String DOCUMENTS_UI_PACKAGE_NAME = "com.android.documentsui";
     public static final String EXTRA_SHOW_PREFETCHED_CONTENT =
-            "org.chromium.chrome.browser.download.SHOW_PREFETCHED_CONTENT";
+            "org.monyhar.chrome.browser.download.SHOW_PREFETCHED_CONTENT";
 
     /**
      * Displays the download manager UI. Note the UI is different on tablets and on phones.

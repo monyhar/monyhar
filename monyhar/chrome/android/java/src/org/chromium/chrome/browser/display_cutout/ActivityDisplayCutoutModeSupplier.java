@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.display_cutout;
+package org.monyhar.chrome.browser.display_cutout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.UnownedUserDataKey;
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.base.supplier.UnownedUserDataSupplier;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.UnownedUserDataKey;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.base.supplier.UnownedUserDataSupplier;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Provides activity-wide display cutout mode override.
@@ -19,7 +19,7 @@ import org.chromium.ui.base.WindowAndroid;
  * attached to WindowAndroid prior to the first tab getting attached to WindowAndroid.
  */
 public class ActivityDisplayCutoutModeSupplier extends UnownedUserDataSupplier<Integer> {
-    /** The key for accessing this object on an {@link org.chromium.base.UnownedUserDataHost}. */
+    /** The key for accessing this object on an {@link org.monyhar.base.UnownedUserDataHost}. */
     private static final UnownedUserDataKey<ActivityDisplayCutoutModeSupplier> KEY =
             new UnownedUserDataKey<>(ActivityDisplayCutoutModeSupplier.class);
 

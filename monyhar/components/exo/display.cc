@@ -27,7 +27,7 @@
 #include "ui/wm/core/coordinate_conversion.h"
 
 #if defined(USE_OZONE)
-#include <GLES2/gl2extchromium.h>
+#include <GLES2/gl2extmonyhar.h>
 #include "components/exo/buffer.h"
 #include "gpu/command_buffer/common/gpu_memory_buffer_support.h"
 #include "gpu/ipc/common/gpu_memory_buffer_impl_native_pixmap.h"

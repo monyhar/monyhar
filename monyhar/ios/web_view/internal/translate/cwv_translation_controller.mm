@@ -28,7 +28,7 @@
 #endif
 
 NSErrorDomain const CWVTranslationErrorDomain =
-    @"org.chromium.chromewebview.TranslationErrorDomain";
+    @"org.monyhar.chromewebview.TranslationErrorDomain";
 
 namespace {
 // Converts a |translate::TranslateErrors::Type| to a |CWVTranslationError|.

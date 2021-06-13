@@ -29,9 +29,9 @@ void BindingsManagerFuchsia::AddBinding(base::StringPiece binding_name,
 
 void BindingsManagerFuchsia::GetAll(GetAllCallback callback) {
   // Build a list of binding scripts and send it to the client.
-  std::vector<chromium::cast::ApiBinding> bindings_vector;
+  std::vector<monyhar::cast::ApiBinding> bindings_vector;
   for (auto& bindings_name_and_buffer : bindings_) {
-    chromium::cast::ApiBinding binding_cloned;
+    monyhar::cast::ApiBinding binding_cloned;
     zx_status_t status;
     status = bindings_name_and_buffer.second.Clone(
         binding_cloned.mutable_before_load_script());

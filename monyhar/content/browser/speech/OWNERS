@@ -2,9 +2,9 @@
 file://third_party/blink/renderer/modules/speech/OWNERS
 
 # Text-to-speech
-per-file *tts_*=dmazzoni@chromium.org
-per-file *tts_*=dtseng@chromium.org
-per-file *tts_*=katie@chromium.org
-per-file *speech_synthesis_*=dmazzoni@chromium.org
-per-file *speech_synthesis_*=dtseng@chromium.org
-per-file *speech_synthesis_*=katie@chromium.org
+per-file *tts_*=dmazzoni@monyhar.org
+per-file *tts_*=dtseng@monyhar.org
+per-file *tts_*=katie@monyhar.org
+per-file *speech_synthesis_*=dmazzoni@monyhar.org
+per-file *speech_synthesis_*=dtseng@monyhar.org
+per-file *speech_synthesis_*=katie@monyhar.org

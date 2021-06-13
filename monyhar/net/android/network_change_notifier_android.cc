@@ -78,7 +78,7 @@ namespace net {
 // Expose kInvalidNetworkHandle out to Java as NetId.INVALID. The notion of
 // a NetID is an Android framework one, see android.net.Network.netId.
 // NetworkChangeNotifierAndroid implements NetworkHandle to simply be the NetID.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.net
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.net
 enum NetId {
   // Cannot use |kInvalidNetworkHandle| here as the Java generator fails,
   // instead enforce their equality with CHECK in

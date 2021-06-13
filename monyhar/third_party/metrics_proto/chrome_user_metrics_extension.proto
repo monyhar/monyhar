@@ -5,7 +5,7 @@
 syntax = "proto2";
 
 option optimize_for = LITE_RUNTIME;
-option java_package = "org.chromium.components.metrics";
+option java_package = "org.monyhar.components.metrics";
 
 option java_outer_classname = "ChromeUserMetricsExtensionProtos";
 
@@ -62,7 +62,7 @@ message ChromeUserMetricsExtension {
   // all Chrome user profiles contained in this user data directory.
   // An id of 0 is reserved for test data (monitoring and internal testing) and
   // should normally be ignored in analysis of the data.
-  // [1] http://www.chromium.org/user-experience/user-data-directory
+  // [1] http://www.monyhar.org/user-experience/user-data-directory
   optional fixed64 client_id = 1;
 
   // The session id for this user.

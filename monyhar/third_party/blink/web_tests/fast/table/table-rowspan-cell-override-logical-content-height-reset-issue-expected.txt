@@ -1,2 +1,2 @@
-Test for chromium bug : 445253. Setting rowspan=2 on the table cell causes the whole table to resize again and again.
+Test for monyhar bug : 445253. Setting rowspan=2 on the table cell causes the whole table to resize again and again.
 PASS

@@ -55,7 +55,7 @@ export function makeInfoView(browserBridge) {
           // from the Chrome version string "Chrome/0.0.0.0".
           revisionIdentifier = clientInfo.version.split('/')[1];
         }
-        return `https://chromium.googlesource.com/chromium/src/+/${
+        return `https://monyhar.googlesource.com/monyhar/src/+/${
             revisionIdentifier}/${filepath}`;
       }
 

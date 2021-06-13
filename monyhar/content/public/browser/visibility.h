@@ -8,7 +8,7 @@
 namespace content {
 
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.content_public.browser
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.content_public.browser
 enum class Visibility {
   // The view is not part of any window (e.g. a non-active tab) or is part of a
   // window that is minimized or hidden (Cmd+H).

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.compat;
+package org.monyhar.base.compat;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -28,7 +28,7 @@ import android.view.ViewConfiguration;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import org.chromium.base.annotations.VerifiesOnM;
+import org.monyhar.base.annotations.VerifiesOnM;
 
 /**
  * Utility class to use new APIs that were added in M (API level 23). These need to exist in a

@@ -121,7 +121,7 @@ js_type_check("closure_compile_module") {
 js_library("button_bar.m") {
   sources = [ "$root_gen_dir/ui/webui/resources/cr_components/chromeos/multidevice_setup/button_bar.m.js" ]
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   extra_deps = [ ":button_bar_module" ]
 }

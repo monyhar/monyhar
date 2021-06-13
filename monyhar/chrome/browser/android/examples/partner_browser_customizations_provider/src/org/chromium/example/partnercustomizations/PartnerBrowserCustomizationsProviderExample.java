@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 // Package path can be changed, but should match <manifest package="..."> in AndroidManifest.xml.
-package org.chromium.example.partnercustomizations;
+package org.monyhar.example.partnercustomizations;
 
 import android.content.ContentProvider;
 import android.content.ContentValues;

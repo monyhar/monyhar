@@ -31,4 +31,4 @@
 //! href="files.html">Files</a> (includes macros).
 //!
 //! Additional documentation is available at the <a
-//! href="https://crashpad.chromium.org/">Crashpad home page</a>.
+//! href="https://crashpad.monyhar.org/">Crashpad home page</a>.

@@ -87,7 +87,7 @@ var listener = {
         // upon initial page load. Since the handler is run manually in init(),
         // this would cause Chrome to run it twise. Currently the only
         // workaround seems to be to set the handler after the initial page load
-        // http://code.google.com/p/chromium/issues/detail?id=63040
+        // http://code.google.com/p/monyhar/issues/detail?id=63040
         setTimeout(function() {
           window.onpopstate = onchange;
         }, 500);

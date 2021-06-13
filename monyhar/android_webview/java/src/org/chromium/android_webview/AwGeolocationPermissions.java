@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview;
+package org.monyhar.android_webview;
 
 import android.content.SharedPreferences;
 
-import org.chromium.net.GURLUtils;
+import org.monyhar.net.GURLUtils;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -97,7 +97,7 @@ public final class AwGeolocationPermissions {
     /**
      * Asynchronous method to get if an origin set to be allowed.
      */
-    public void getAllowed(String origin, final org.chromium.base.Callback<Boolean> callback) {
+    public void getAllowed(String origin, final org.monyhar.base.Callback<Boolean> callback) {
         final boolean finalAllowed = isOriginAllowed(origin);
         AwThreadUtils.postToUiThreadLooper(callback.bind(finalAllowed));
     }
@@ -105,7 +105,7 @@ public final class AwGeolocationPermissions {
     /**
      * Async method to get the domains currently allowed or denied.
      */
-    public void getOrigins(final org.chromium.base.Callback<Set<String>> callback) {
+    public void getOrigins(final org.monyhar.base.Callback<Set<String>> callback) {
         final Set<String> origins = new HashSet<String>();
         for (String name : mSharedPreferences.getAll().keySet()) {
             if (name.startsWith(PREF_PREFIX)) {

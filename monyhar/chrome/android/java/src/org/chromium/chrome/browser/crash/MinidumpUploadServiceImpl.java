@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.crash;
+package org.monyhar.chrome.browser.crash;
 
 import android.annotation.SuppressLint;
 import android.app.job.JobInfo;
@@ -15,24 +15,24 @@ import android.os.Process;
 import androidx.annotation.StringDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApplicationState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ApplicationStatus.ApplicationStateListener;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.StreamUtil;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.privacy.settings.PrivacyPreferencesManagerImpl;
-import org.chromium.components.background_task_scheduler.TaskIds;
-import org.chromium.components.crash.browser.ProcessExitReasonFromSystem;
-import org.chromium.components.minidump_uploader.CrashFileManager;
-import org.chromium.components.minidump_uploader.MinidumpUploadCallable;
-import org.chromium.components.minidump_uploader.MinidumpUploadCallable.MinidumpUploadStatus;
-import org.chromium.components.minidump_uploader.MinidumpUploadJobService;
-import org.chromium.components.minidump_uploader.util.CrashReportingPermissionManager;
+import org.monyhar.base.ApplicationState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ApplicationStatus.ApplicationStateListener;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.StreamUtil;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.privacy.settings.PrivacyPreferencesManagerImpl;
+import org.monyhar.components.background_task_scheduler.TaskIds;
+import org.monyhar.components.crash.browser.ProcessExitReasonFromSystem;
+import org.monyhar.components.minidump_uploader.CrashFileManager;
+import org.monyhar.components.minidump_uploader.MinidumpUploadCallable;
+import org.monyhar.components.minidump_uploader.MinidumpUploadCallable.MinidumpUploadStatus;
+import org.monyhar.components.minidump_uploader.MinidumpUploadJobService;
+import org.monyhar.components.minidump_uploader.util.CrashReportingPermissionManager;
 
 import java.io.BufferedReader;
 import java.io.File;

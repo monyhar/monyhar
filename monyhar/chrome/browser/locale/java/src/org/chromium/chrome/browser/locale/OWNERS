@@ -2,4 +2,4 @@
 # around this code.
 set noparent
 
-file://chrome/android/java/src/org/chromium/chrome/browser/searchwidget/COMPLIANCE_OWNERS
+file://chrome/android/java/src/org/monyhar/chrome/browser/searchwidget/COMPLIANCE_OWNERS

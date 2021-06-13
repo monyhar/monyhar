@@ -25,7 +25,7 @@ if util.IsLinux():
   from devil.android import forwarder
 
   sys.path.insert(0, os.path.join(chrome_paths.GetSrc(), 'build', 'android'))
-  import devil_chromium
+  import devil_monyhar
 
 ANDROID_TEST_HTTP_PORT = 2311
 ANDROID_TEST_HTTPS_PORT = 2411
@@ -105,7 +105,7 @@ class AndroidTestEnvironment(DesktopTestEnvironment):
 
   # override
   def GlobalSetUp(self):
-    devil_chromium.Initialize()
+    devil_monyhar.Initialize()
 
     os.putenv('TEST_HTTP_PORT', str(ANDROID_TEST_HTTP_PORT))
     os.putenv('TEST_HTTPS_PORT', str(ANDROID_TEST_HTTPS_PORT))

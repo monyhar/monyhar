@@ -17,8 +17,8 @@ FLAGS=$1
 TMP_FILE=`tempfile`
 
 # Pull the file from the device.
-adb shell run-as org.chromium.chromoting cat \
-  /data/data/org.chromium.chromoting/shared_prefs/Chromoting.xml > $TMP_FILE
+adb shell run-as org.monyhar.chromoting cat \
+  /data/data/org.monyhar.chromoting/shared_prefs/Chromoting.xml > $TMP_FILE
 
 # Remove flags parameter if it's already there.
 sed -i '/<string name=\"flags\">/d' $TMP_FILE
@@ -43,7 +43,7 @@ done
 FILE_CONTENT="`cat $TMP_FILE`"
 FILE_CONTENT="${FILE_CONTENT//\'/\'}"
 FILE_CONTENT="${FILE_CONTENT//\"/\\\\\\\"}"
-adb shell run-as org.chromium.chromoting sh -c "echo \\\"${FILE_CONTENT}\\\" > \
-     /data/data/org.chromium.chromoting/shared_prefs/Chromoting.xml"
+adb shell run-as org.monyhar.chromoting sh -c "echo \\\"${FILE_CONTENT}\\\" > \
+     /data/data/org.monyhar.chromoting/shared_prefs/Chromoting.xml"
 
 rm $TMP_FILE

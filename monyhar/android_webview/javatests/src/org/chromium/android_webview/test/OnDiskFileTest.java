@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -14,11 +14,11 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.AwContents;
-import org.chromium.android_webview.AwCookieManager;
-import org.chromium.base.FileUtils;
-import org.chromium.base.test.util.Feature;
-import org.chromium.net.test.util.TestWebServer;
+import org.monyhar.android_webview.AwContents;
+import org.monyhar.android_webview.AwCookieManager;
+import org.monyhar.base.FileUtils;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.net.test.util.TestWebServer;
 
 import java.io.File;
 

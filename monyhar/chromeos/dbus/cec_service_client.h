@@ -14,7 +14,7 @@
 
 namespace chromeos {
 
-// CecServiceClient is used to communicate with org.chromium.CecService.
+// CecServiceClient is used to communicate with org.monyhar.CecService.
 //
 // CecService offers a small subset of HDMI CEC capabilities focused on power
 // management of connected displays.

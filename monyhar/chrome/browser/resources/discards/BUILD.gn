@@ -25,7 +25,7 @@ js_library("discards") {
 
 js_library("discards_main") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -34,7 +34,7 @@ js_library("database_tab") {
     ":discards",
     ":sorted_table_behavior",
     "//chrome/browser/ui/webui/discards:mojo_bindings_webui_js",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
   ]
 }
@@ -44,7 +44,7 @@ js_library("discards_tab") {
     ":discards",
     ":sorted_table_behavior",
     "//chrome/browser/ui/webui/discards:mojo_bindings_webui_js",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
     "//ui/webui/resources/js:icon.m",
   ]
@@ -53,7 +53,7 @@ js_library("discards_tab") {
 js_library("graph_tab_template") {
   deps = [
     "//chrome/browser/ui/webui/discards:mojo_bindings_webui_js",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 

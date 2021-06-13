@@ -1758,8 +1758,8 @@ _FUNCTION_INFO = {
   'BlitFramebufferCHROMIUM': {
     'decoder_func': 'DoBlitFramebufferCHROMIUM',
     'unit_test': False,
-    'extension': 'chromium_framebuffer_multisample',
-    'extension_flag': 'chromium_framebuffer_multisample',
+    'extension': 'monyhar_framebuffer_multisample',
+    'extension_flag': 'monyhar_framebuffer_multisample',
     'pepper_interface': 'FramebufferBlit',
     'pepper_name': 'BlitFramebufferEXT',
     'defer_reads': True,
@@ -1882,7 +1882,7 @@ _FUNCTION_INFO = {
     'state': 'CoverageModulationCHROMIUM',
     'decoder_func': 'glCoverageModulationNV',
     'extension': 'CHROMIUM_framebuffer_mixed_samples',
-    'extension_flag': 'chromium_framebuffer_mixed_samples',
+    'extension_flag': 'monyhar_framebuffer_mixed_samples',
   },
   'CreateAndConsumeTextureCHROMIUM': {
     'type': 'NoCommand',
@@ -3133,8 +3133,8 @@ _FUNCTION_INFO = {
     'decoder_func': 'DoRenderbufferStorageMultisampleCHROMIUM',
     'gl_test_func': 'glRenderbufferStorageMultisampleCHROMIUM',
     'unit_test': False,
-    'extension': 'chromium_framebuffer_multisample',
-    'extension_flag': 'chromium_framebuffer_multisample',
+    'extension': 'monyhar_framebuffer_multisample',
+    'extension_flag': 'monyhar_framebuffer_multisample',
     'pepper_interface': 'FramebufferMultisample',
     'pepper_name': 'RenderbufferStorageMultisampleEXT',
     'trace_level': 1,
@@ -3947,7 +3947,7 @@ _FUNCTION_INFO = {
     'client_test': False,
     'cmd_args': 'GLuint url_bucket_id',
     'extension': True,
-    'chromium': True,
+    'monyhar': True,
   },
   'DiscardFramebufferEXT': {
     'type': 'PUTn',
@@ -4058,7 +4058,7 @@ _FUNCTION_INFO = {
     'decoder_func': 'DoTexStorage2DImageCHROMIUM',
     'unit_test': False,
     'extension': 'CHROMIUM_texture_storage_image',
-    'extension_flag': 'chromium_texture_storage_image',
+    'extension_flag': 'monyhar_texture_storage_image',
   },
   'SetColorSpaceMetadataCHROMIUM': {
     'type': 'Custom',
@@ -4088,7 +4088,7 @@ _FUNCTION_INFO = {
     'type': 'Custom',
     'cmd_args': 'GLuint gpu_fence_id',
     'extension': 'CHROMIUM_gpu_fence',
-    'extension_flag': 'chromium_gpu_fence',
+    'extension_flag': 'monyhar_gpu_fence',
     'internal': True,
   },
   'CreateClientGpuFenceCHROMIUM': {
@@ -4097,19 +4097,19 @@ _FUNCTION_INFO = {
     'cmd_args': 'ClientGpuFence source',
     'result': ['GLuint'],
     'extension': 'CHROMIUM_gpu_fence',
-    'extension_flag': 'chromium_gpu_fence',
+    'extension_flag': 'monyhar_gpu_fence',
   },
   'WaitGpuFenceCHROMIUM': {
     'type': 'Custom',
     'cmd_args': 'GLuint gpu_fence_id',
     'extension': 'CHROMIUM_gpu_fence',
-    'extension_flag': 'chromium_gpu_fence',
+    'extension_flag': 'monyhar_gpu_fence',
   },
   'DestroyGpuFenceCHROMIUM': {
     'type': 'Custom',
     'cmd_args': 'GLuint gpu_fence_id',
     'extension': 'CHROMIUM_gpu_fence',
-    'extension_flag': 'chromium_gpu_fence',
+    'extension_flag': 'monyhar_gpu_fence',
   },
   'UnpremultiplyAndDitherCopyCHROMIUM': {
     'decoder_func': 'DoUnpremultiplyAndDitherCopyCHROMIUM',
@@ -4206,13 +4206,13 @@ def main(argv):
   parser = OptionParser()
   parser.add_option(
       "--output-dir",
-      help="Output directory for generated files. Defaults to chromium root "
+      help="Output directory for generated files. Defaults to monyhar root "
       "directory.")
   parser.add_option(
       "-v", "--verbose", action="store_true", help="Verbose logging output.")
   parser.add_option(
       "-c", "--check", action="store_true",
-      help="Check if output files match generated files in chromium root "
+      help="Check if output files match generated files in monyhar root "
       "directory.  Use this in PRESUBMIT scripts with --output-dir.")
 
   (options, _) = parser.parse_args(args=argv)
@@ -4249,19 +4249,19 @@ def main(argv):
   script_dir = os.path.dirname(os.path.abspath(__file__))
   assert script_dir.endswith(os.path.normpath("src/gpu/command_buffer"))
   # os.path.join doesn't do the right thing with relative paths.
-  chromium_root_dir = os.path.abspath(script_dir + "/../..")
+  monyhar_root_dir = os.path.abspath(script_dir + "/../..")
 
   # Support generating files under gen/ and for PRESUBMIT.
   if options.output_dir:
     output_dir = options.output_dir
   else:
-    output_dir = chromium_root_dir
+    output_dir = monyhar_root_dir
   os.chdir(output_dir)
 
   build_cmd_buffer_lib.InitializePrefix("GLES2")
   gen = build_cmd_buffer_lib.GLGenerator(
       options.verbose, "2014", _FUNCTION_INFO, _NAMED_TYPE_INFO,
-      chromium_root_dir)
+      monyhar_root_dir)
   gen.ParseGLH("gpu/command_buffer/gles2_cmd_buffer_functions.txt")
 
   gen.WritePepperGLES2Interface("ppapi/api/ppb_opengles2.idl", False)
@@ -4322,10 +4322,10 @@ def main(argv):
     "gpu/command_buffer/common/gles2_cmd_utils_autogen.h")
   gen.WriteCommonUtilsImpl(
     "gpu/command_buffer/common/gles2_cmd_utils_implementation_autogen.h")
-  gen.WriteGLES2Header("gpu/GLES2/gl2chromium_autogen.h")
+  gen.WriteGLES2Header("gpu/GLES2/gl2monyhar_autogen.h")
 
   build_cmd_buffer_lib.Format(gen.generated_cpp_filenames, output_dir,
-                              chromium_root_dir)
+                              monyhar_root_dir)
 
   if gen.errors > 0:
     print "build_gles2_cmd_buffer.py: Failed with %d errors" % gen.errors
@@ -4335,7 +4335,7 @@ def main(argv):
   if options.check:
     for filename in gen.generated_cpp_filenames:
       if not filecmp.cmp(os.path.join(output_dir, filename),
-                         os.path.join(chromium_root_dir, filename)):
+                         os.path.join(monyhar_root_dir, filename)):
         check_failed_filenames.append(filename)
 
   if len(check_failed_filenames) > 0:

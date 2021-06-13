@@ -3,7 +3,7 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
 
-<org.chromium.components.messages.MessageBannerView
+<org.monyhar.components.messages.MessageBannerView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/message_banner"
@@ -55,7 +55,7 @@
     </LinearLayout>
 
     <!--  Content description is set programmatically according to secondary button icon. -->
-    <org.chromium.components.browser_ui.widget.listmenu.ListMenuButton
+    <org.monyhar.components.browser_ui.widget.listmenu.ListMenuButton
         android:id="@+id/message_secondary_button"
         app:tint="@color/default_icon_color_secondary"
         android:paddingStart="@dimen/message_icon_padding"
@@ -77,7 +77,7 @@
         android:layout_width="1dp"
         android:layout_height="24dp" />
 
-    <org.chromium.ui.widget.ButtonCompat
+    <org.monyhar.ui.widget.ButtonCompat
         style="@style/TextButton"
         android:id="@+id/message_primary_button"
         app:verticalInset="0dp"
@@ -89,4 +89,4 @@
         android:layout_height="match_parent"
         android:layout_gravity="center_vertical"
         android:visibility="gone" />
-</org.chromium.components.messages.MessageBannerView>
+</org.monyhar.components.messages.MessageBannerView>

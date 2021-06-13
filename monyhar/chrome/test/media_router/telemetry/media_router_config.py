@@ -14,14 +14,14 @@ sys.path.append(os.path.join(os.path.dirname(__file__),
 sys.path.append(os.path.join(os.path.dirname(__file__),
                                  os.pardir, 'internal'))
 
-from chrome_telemetry_build import chromium_config
+from chrome_telemetry_build import monyhar_config
 from core import path_util
 
 _top_level_dir = os.path.dirname(os.path.realpath(__file__))
 
 
 def Config(benchmark_subdirs):
-  return chromium_config.ChromiumConfig(
+  return monyhar_config.ChromiumConfig(
       top_level_dir=_top_level_dir,
       benchmark_dirs=[os.path.join(_top_level_dir, subdir)
                       for subdir in benchmark_subdirs])

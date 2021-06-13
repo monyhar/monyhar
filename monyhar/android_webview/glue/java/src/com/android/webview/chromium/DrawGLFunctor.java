@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package com.android.webview.chromium;
+package com.android.webview.monyhar;
 
 import android.graphics.Canvas;
 import android.os.Build;
 import android.view.View;
 
-import com.android.webview.chromium.WebViewDelegateFactory.WebViewDelegate;
+import com.android.webview.monyhar.WebViewDelegateFactory.WebViewDelegate;
 
-import org.chromium.android_webview.AwContents;
-import org.chromium.base.annotations.JniIgnoreNatives;
+import org.monyhar.android_webview.AwContents;
+import org.monyhar.base.annotations.JniIgnoreNatives;
 
 /**
  * Simple Java abstraction and wrapper for the native DrawGLFunctor flow.

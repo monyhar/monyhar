@@ -1,6 +1,6 @@
 include_rules = [
-  "+chrome/android/java/src/org/chromium/chrome/browser/FileProviderHelper.java",
-  "+chrome/browser/share/android/java/src/org/chromium/chrome/browser/share/clipboard/ClipboardImageFileProvider.java",
+  "+chrome/android/java/src/org/monyhar/chrome/browser/FileProviderHelper.java",
+  "+chrome/browser/share/android/java/src/org/monyhar/chrome/browser/share/clipboard/ClipboardImageFileProvider.java",
   "+components/dom_distiller/core/android",
   "+content/public/android",
   "+content/public/test/android/javatests",
@@ -10,6 +10,6 @@ include_rules = [
 specific_include_rules = {
   "ShareImageFileUtils\.java": [
     # TODO(crbug.com/470582): remove this exemption.
-    "+base/android/java/src/org/chromium/base/ApplicationStatus.java",
+    "+base/android/java/src/org/monyhar/base/ApplicationStatus.java",
   ]
 }

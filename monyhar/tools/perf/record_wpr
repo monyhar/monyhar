@@ -4,7 +4,7 @@
 # found in the LICENSE file.
 import sys
 
-from chrome_telemetry_build import chromium_config
+from chrome_telemetry_build import monyhar_config
 from core import path_util
 path_util.AddTelemetryToPath()
 
@@ -12,7 +12,7 @@ from telemetry import record_wpr
 
 
 if __name__ == '__main__':
-  config = chromium_config.ChromiumConfig(
+  config = monyhar_config.ChromiumConfig(
       benchmark_dirs=[path_util.GetOfficialBenchmarksDir()],
       top_level_dir=path_util.GetPerfDir())
   sys.exit(record_wpr.Main(environment=config))

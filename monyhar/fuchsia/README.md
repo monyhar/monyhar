@@ -118,7 +118,7 @@ To build and run `web_runner`, follow these steps:
 5. Launch a webpage.
 
     ```bash
-    $ tiles_ctl add https://www.chromium.org/
+    $ tiles_ctl add https://www.monyhar.org/
     ```
 
 6. Press Alt-Esc to switch back to graphical view if needed. The browser

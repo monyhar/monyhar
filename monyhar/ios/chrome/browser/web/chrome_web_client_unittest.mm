@@ -62,7 +62,7 @@ using base::test::ios::kWaitForActionTimeout;
 using base::test::ios::WaitUntilConditionOrTimeout;
 
 namespace {
-const char kTestUrl[] = "http://chromium.test";
+const char kTestUrl[] = "http://monyhar.test";
 
 // Error used to test PrepareErrorPage method.
 NSError* CreateTestError() {
@@ -309,7 +309,7 @@ TEST_F(ChromeWebClientTest, PrepareErrorPageForSafeBrowsingError) {
 
   security_interstitials::UnsafeResource resource;
   resource.threat_type = safe_browsing::SB_THREAT_TYPE_URL_PHISHING;
-  resource.url = GURL("http://www.chromium.test");
+  resource.url = GURL("http://www.monyhar.test");
   resource.request_destination = network::mojom::RequestDestination::kDocument;
   resource.web_state_getter = web_state.CreateDefaultGetter();
   SafeBrowsingUrlAllowList::FromWebState(&web_state)

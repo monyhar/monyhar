@@ -7,7 +7,7 @@ a few notes to help with debugging.
 [TOC]
 
 <!-- TODO(kainino): update link if the page moves -->
-[GPU Command Buffer]: https://sites.google.com/a/chromium.org/dev/developers/design-documents/gpu-command-buffer
+[GPU Command Buffer]: https://sites.google.com/a/monyhar.org/dev/developers/design-documents/gpu-command-buffer
 
 ## Renderer Process Code
 
@@ -76,7 +76,7 @@ Change that `#if 0` to `#if 1`, build a debug build, then run in a debugger.
 The debugger will break when any renderer code sees a GL error, and you should
 be able to examine the call stack to find the issue.
 
-[gles2_implementation.h]: https://chromium.googlesource.com/chromium/src/+/main/gpu/command_buffer/client/gles2_implementation.h
+[gles2_implementation.h]: https://monyhar.googlesource.com/monyhar/src/+/main/gpu/command_buffer/client/gles2_implementation.h
 
 ### Labeling your calls
 
@@ -116,7 +116,7 @@ server to serve it like `python -m SimpleHTTPServer`. Then
 
 On Linux this works for me:
 
-*   `out/Debug/chromium --no-sandbox --renderer-cmd-prefix="xterm -e gdb
+*   `out/Debug/monyhar --no-sandbox --renderer-cmd-prefix="xterm -e gdb
     --args" http://localhost:8000/page-to-repro.html`
 
 On OSX this works for me:
@@ -208,7 +208,7 @@ This will print the name of each GPU command before it is executed.
 
 ### Debugging in the GPU Process
 
-Given the multi-processness of chromium it can be hard to debug both sides.
+Given the multi-processness of monyhar it can be hard to debug both sides.
 Turning on all the logging and having a small test case is useful. One minor
 suggestion, if you have some idea where the bug is happening a call to some
 obscure gl function like `glHint()` can give you a place to catch a command
@@ -220,7 +220,7 @@ To actually debug the GPU process:
 
 On Linux this works for me:
 
-*   `out/Debug/chromium --no-sandbox --gpu-launcher="xterm -e gdb --args"
+*   `out/Debug/monyhar --no-sandbox --gpu-launcher="xterm -e gdb --args"
     http://localhost:8000/page-to-repro.html`
 
 On OSX this works for me:
@@ -262,4 +262,4 @@ printf("elapsedTime = %f\n", end - start);
 
 **will not** give you meaningful results.
 
-[Trace Event Profiling]: https://sites.google.com/a/chromium.org/dev/developers/how-tos/trace-event-profiling-tool
+[Trace Event Profiling]: https://sites.google.com/a/monyhar.org/dev/developers/how-tos/trace-event-profiling-tool

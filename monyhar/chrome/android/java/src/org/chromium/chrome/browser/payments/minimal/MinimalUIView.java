@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments.minimal;
+package org.monyhar.chrome.browser.payments.minimal;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,8 +13,8 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.R;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetContent;
+import org.monyhar.chrome.R;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetContent;
 
 /** Payment minimal UI. */
 /* package */ class MinimalUIView implements BottomSheetContent {

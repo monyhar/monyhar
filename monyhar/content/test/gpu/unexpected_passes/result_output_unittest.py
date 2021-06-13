@@ -53,7 +53,7 @@ class ConvertUnmatchedResultsToStringDictUnittest(unittest.TestCase):
         'foo': {
             'builder': {
                 None: [
-                    'Got "Failure" on http://ci.chromium.org/b/build_id with '
+                    'Got "Failure" on http://ci.monyhar.org/b/build_id with '
                     'tags []',
                 ],
             },
@@ -75,7 +75,7 @@ class ConvertUnmatchedResultsToStringDictUnittest(unittest.TestCase):
         'foo': {
             'builder': {
                 'step_name': [
-                    'Got "Failure" on http://ci.chromium.org/b/build_id with '
+                    'Got "Failure" on http://ci.monyhar.org/b/build_id with '
                     'tags [win intel]',
                 ]
             }
@@ -230,7 +230,7 @@ class HtmlToFileUnittest(fake_filesystem_unittest.TestCase):
       <div class="content">
         <button type="button" class="collapsible_group">some_pass (1/2)</button>
         <div class="content">
-          <p><a href="http://ci.chromium.org/b/build_id0">http://ci.chromium.org/b/build_id0</a></p>
+          <p><a href="http://ci.monyhar.org/b/build_id0">http://ci.monyhar.org/b/build_id0</a></p>
         </div>
       </div>
     </div>
@@ -248,12 +248,12 @@ class HtmlToFileUnittest(fake_filesystem_unittest.TestCase):
         'foo': {
             'builder': {
                 None: [
-                    'Expected "" on http://ci.chromium.org/b/build_id, got '
+                    'Expected "" on http://ci.monyhar.org/b/build_id, got '
                     '"Failure" with tags []',
                 ],
                 'step_name': [
                     'Expected "Failure RetryOnFailure" on '
-                    'http://ci.chromium.org/b/build_id, got '
+                    'http://ci.monyhar.org/b/build_id, got '
                     '"Failure" with tags [win intel]',
                 ]
             },
@@ -276,13 +276,13 @@ class HtmlToFileUnittest(fake_filesystem_unittest.TestCase):
         """\
     <button type="button" class="collapsible_group">None</button>
     <div class="content">
-      <p>Expected "" on <a href="http://ci.chromium.org/b/build_id">http://ci.chromium.org/b/build_id</a>, got "Failure" with tags []</p>
+      <p>Expected "" on <a href="http://ci.monyhar.org/b/build_id">http://ci.monyhar.org/b/build_id</a>, got "Failure" with tags []</p>
     </div>
 """,
         """\
     <button type="button" class="collapsible_group">step_name</button>
     <div class="content">
-      <p>Expected "Failure RetryOnFailure" on <a href="http://ci.chromium.org/b/build_id">http://ci.chromium.org/b/build_id</a>, got "Failure" with tags [win intel]</p>
+      <p>Expected "Failure RetryOnFailure" on <a href="http://ci.monyhar.org/b/build_id">http://ci.monyhar.org/b/build_id</a>, got "Failure" with tags [win intel]</p>
     </div>
 """,
     ]
@@ -332,7 +332,7 @@ foo
         all_pass (2/2)
       Partially passed in the following
         some_pass (1/2)
-          http://ci.chromium.org/b/build_id0
+          http://ci.monyhar.org/b/build_id0
 """
     with open(self._filepath) as f:
       self.assertEqual(f.read(), expected_output)
@@ -343,12 +343,12 @@ foo
         'foo': {
             'builder': {
                 None: [
-                    'Expected "" on http://ci.chromium.org/b/build_id, got '
+                    'Expected "" on http://ci.monyhar.org/b/build_id, got '
                     '"Failure" with tags []',
                 ],
                 'step_name': [
                     'Expected "Failure RetryOnFailure" on '
-                    'http://ci.chromium.org/b/build_id, got '
+                    'http://ci.monyhar.org/b/build_id, got '
                     '"Failure" with tags [win intel]',
                 ]
             },
@@ -365,11 +365,11 @@ foo
     values = [
         """
     None
-      Expected "" on http://ci.chromium.org/b/build_id, got "Failure" with tags []\
+      Expected "" on http://ci.monyhar.org/b/build_id, got "Failure" with tags []\
 """,
         """
     step_name
-      Expected "Failure RetryOnFailure" on http://ci.chromium.org/b/build_id, got "Failure" with tags [win intel]\
+      Expected "Failure RetryOnFailure" on http://ci.monyhar.org/b/build_id, got "Failure" with tags [win intel]\
 """,
     ]
     expected_output = CreateTextOutputPermutations(expected_template, values)

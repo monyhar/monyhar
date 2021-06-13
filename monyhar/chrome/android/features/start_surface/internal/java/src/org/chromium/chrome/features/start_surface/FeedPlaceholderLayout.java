@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.features.start_surface;
+package org.monyhar.chrome.features.start_surface;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -17,10 +17,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import org.chromium.chrome.browser.feed.FeedSurfaceCoordinator;
-import org.chromium.chrome.start_surface.R;
-import org.chromium.components.browser_ui.widget.displaystyle.UiConfig;
-import org.chromium.components.browser_ui.widget.displaystyle.ViewResizer;
+import org.monyhar.chrome.browser.feed.FeedSurfaceCoordinator;
+import org.monyhar.chrome.start_surface.R;
+import org.monyhar.components.browser_ui.widget.displaystyle.UiConfig;
+import org.monyhar.components.browser_ui.widget.displaystyle.ViewResizer;
 
 /**
  * A {@link LinearLayout} that shows loading placeholder for Feed cards.

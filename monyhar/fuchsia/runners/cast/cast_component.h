@@ -18,7 +18,7 @@
 #include "base/fuchsia/startup_context.h"
 #include "base/message_loop/message_pump_for_io.h"
 #include "base/message_loop/message_pump_fuchsia.h"
-#include "fuchsia/fidl/chromium/cast/cpp/fidl.h"
+#include "fuchsia/fidl/monyhar/cast/cpp/fidl.h"
 #include "fuchsia/runners/cast/api_bindings_client.h"
 #include "fuchsia/runners/cast/application_controller_impl.h"
 #include "fuchsia/runners/cast/named_message_port_connector_fuchsia.h"
@@ -51,13 +51,13 @@ class CastComponent : public WebComponent,
 
     // Parameters initialized synchronously.
     std::unique_ptr<cr_fuchsia::AgentManager> agent_manager;
-    chromium::cast::UrlRequestRewriteRulesProviderPtr
+    monyhar::cast::UrlRequestRewriteRulesProviderPtr
         url_rewrite_rules_provider;
 
     // Parameters asynchronously initialized by PendingCastComponent.
     std::unique_ptr<ApiBindingsClient> api_bindings_client;
-    chromium::cast::ApplicationConfig application_config;
-    fidl::InterfaceHandle<chromium::cast::ApplicationContext>
+    monyhar::cast::ApplicationConfig application_config;
+    fidl::InterfaceHandle<monyhar::cast::ApplicationContext>
         application_context;
     absl::optional<std::vector<fuchsia::web::UrlRequestRewriteRule>>
         initial_url_rewrite_rules;
@@ -122,15 +122,15 @@ class CastComponent : public WebComponent,
   base::OnceClosure on_destroyed_;
 
   std::unique_ptr<cr_fuchsia::AgentManager> agent_manager_;
-  chromium::cast::ApplicationConfig application_config_;
-  chromium::cast::UrlRequestRewriteRulesProviderPtr url_rewrite_rules_provider_;
+  monyhar::cast::ApplicationConfig application_config_;
+  monyhar::cast::UrlRequestRewriteRulesProviderPtr url_rewrite_rules_provider_;
   std::vector<fuchsia::web::UrlRequestRewriteRule> initial_url_rewrite_rules_;
 
   bool constructor_active_ = false;
   std::unique_ptr<NamedMessagePortConnectorFuchsia> connector_;
   std::unique_ptr<ApiBindingsClient> api_bindings_client_;
   std::unique_ptr<ApplicationControllerImpl> application_controller_;
-  chromium::cast::ApplicationContextPtr application_context_;
+  monyhar::cast::ApplicationContextPtr application_context_;
   uint64_t media_session_id_ = 0;
   zx::eventpair headless_view_token_;
   base::MessagePumpForIO::ZxHandleWatchController headless_disconnect_watch_;

@@ -33,9 +33,9 @@ class WebStateMock : public web::FakeWebState {
 class U2FControllerTest : public PlatformTest {
  protected:
   U2FControllerTest() : _U2FController([[U2FController alloc] init]) {
-    url::AddStandardScheme("chromium", url::SCHEME_WITH_HOST);
+    url::AddStandardScheme("monyhar", url::SCHEME_WITH_HOST);
     [[ChromeAppConstants sharedInstance]
-        setCallbackSchemeForTesting:@"chromium"];
+        setCallbackSchemeForTesting:@"monyhar"];
   }
 
   // Get the requestUUID NSString from a properly formatted U2F XCallback GURL.
@@ -97,7 +97,7 @@ TEST_F(U2FControllerTest, XCallbackFromRequestURLWithCorrectFlowTest) {
 TEST_F(U2FControllerTest, XCallbackFromRequestURLWithDuplicatedParamsTest) {
   // Test when request is legal but contains duplicated parameters.
   GURL duplicatedParamsRequestURL(
-      "chromium://u2f-callback?isU2F=0&tabID=1&requestUUID=2"
+      "monyhar://u2f-callback?isU2F=0&tabID=1&requestUUID=2"
       "&data=abc&def%26ghi");
   GURL originURL("https://accounts.google.com");
   GURL tabURL("https://accounts.google.com");
@@ -172,7 +172,7 @@ TEST_F(U2FControllerTest, EvaluateU2FResultFromU2FURLWithCorrectFlowTest) {
 
   // Test when U2F callback has correct information, Tab URL has not changed and
   // is trusted.
-  GURL correctRequestUUIDURL("chromium://u2f-callback?requestUUID=" +
+  GURL correctRequestUUIDURL("monyhar://u2f-callback?requestUUID=" +
                              base::SysNSStringToUTF8(requestUUIDString) +
                              "&tabID=" + base::SysNSStringToUTF8(tabID));
   EXPECT_CALL(webState, ExecuteJavaScript(testing::_)).Times(1);
@@ -197,7 +197,7 @@ TEST_F(U2FControllerTest, EvaluateU2FResultFromU2FURLWithReplayAttackTest) {
 
   // Test when U2F callback has correct information, Tab URL has not changed and
   // is trusted.
-  GURL correctRequestUUIDURL("chromium://u2f-callback?requestUUID=" +
+  GURL correctRequestUUIDURL("monyhar://u2f-callback?requestUUID=" +
                              base::SysNSStringToUTF8(requestUUIDString) +
                              "&tabID=" + base::SysNSStringToUTF8(tabID));
   EXPECT_CALL(webState, ExecuteJavaScript(testing::_)).Times(1);
@@ -227,21 +227,21 @@ TEST_F(U2FControllerTest, EvaluateU2FResultFromU2FURLWithBadURLFormatTest) {
   webState.SetCurrentURL(tabURL);
 
   // Test when U2F callback has no requestUUID info.
-  GURL noRequestUUIDURL("chromium://u2f-callback?tabID=" +
+  GURL noRequestUUIDURL("monyhar://u2f-callback?tabID=" +
                         base::SysNSStringToUTF8(tabID));
   EXPECT_CALL(webState, ExecuteJavaScript(testing::_)).Times(0);
   [_U2FController evaluateU2FResultFromU2FURL:noRequestUUIDURL
                                      webState:&webState];
 
   // Test when U2F callback has wrong requestUUID value.
-  GURL wrongRequestUUIDURL("chromium://u2f-callback?requestUUID=123&tabID=" +
+  GURL wrongRequestUUIDURL("monyhar://u2f-callback?requestUUID=123&tabID=" +
                            base::SysNSStringToUTF8(tabID));
   EXPECT_CALL(webState, ExecuteJavaScript(testing::_)).Times(0);
   [_U2FController evaluateU2FResultFromU2FURL:wrongRequestUUIDURL
                                      webState:&webState];
 
   // Test when U2F callback hostname is unexpected.
-  GURL wrongHostnameURL("chromium://evil-callback?requestUUID=" +
+  GURL wrongHostnameURL("monyhar://evil-callback?requestUUID=" +
                         base::SysNSStringToUTF8(requestUUIDString) + "&tabID=" +
                         base::SysNSStringToUTF8(tabID));
   EXPECT_CALL(webState, ExecuteJavaScript(testing::_)).Times(0);
@@ -265,7 +265,7 @@ TEST_F(U2FControllerTest, EvaluateU2FResultFromU2FURLWithBadTabStateTest) {
   // Test when U2F callback has correct information but Tab URL changed.
   webState.SetTrustLevel(web::URLVerificationTrustLevel::kAbsolute);
   webState.SetCurrentURL(GURL("http://www.dummy.com"));
-  GURL correctRequestUUIDURL("chromium://u2f-callback?requestUUID=" +
+  GURL correctRequestUUIDURL("monyhar://u2f-callback?requestUUID=" +
                              base::SysNSStringToUTF8(requestUUIDString) +
                              "&tabID=" + base::SysNSStringToUTF8(tabID));
   [_U2FController evaluateU2FResultFromU2FURL:correctRequestUUIDURL
@@ -280,7 +280,7 @@ TEST_F(U2FControllerTest, EvaluateU2FResultFromU2FURLWithBadTabStateTest) {
                                                   tabURL:tabURL
                                                    tabID:tabID];
   requestUUIDString = this->requestUUIDFromXCallbackURL(XCallbackURL);
-  correctRequestUUIDURL = GURL("chromium://u2f-callback?requestUUID=" +
+  correctRequestUUIDURL = GURL("monyhar://u2f-callback?requestUUID=" +
                                base::SysNSStringToUTF8(requestUUIDString) +
                                "&tabID=" + base::SysNSStringToUTF8(tabID));
   EXPECT_CALL(webState, ExecuteJavaScript(testing::_)).Times(0);

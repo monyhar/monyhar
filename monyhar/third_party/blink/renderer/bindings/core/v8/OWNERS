@@ -1,4 +1,4 @@
-per-file binding_security*=dtapuska@chromium.org
-per-file script_source_.*=leszeks@chromium.org
-per-file script_streamer.*=leszeks@chromium.org
-per-file v8_wasm_response_extensions.*=ahaas@chromium.org
+per-file binding_security*=dtapuska@monyhar.org
+per-file script_source_.*=leszeks@monyhar.org
+per-file script_streamer.*=leszeks@monyhar.org
+per-file v8_wasm_response_extensions.*=ahaas@monyhar.org

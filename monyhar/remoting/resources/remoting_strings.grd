@@ -892,9 +892,9 @@ If '<ph name="SERVICE_SCRIPT_NAME">$3<ex>ChromeRemoteDesktopHost</ex></ph>' is a
         <message name="IDS_SCREEN_RECORDING_PERMISSION_DIALOG_BODY_TEXT" desc="The body text that asks the user to grant the 'Screen Recording' permission to the Chrome Remote Desktop service. Mac-only, OS 10.15 and later.">
 To use <ph name="PRODUCT_NAME">$1<ex>Chrome Remote Desktop</ex></ph>, you need to grant the 'Screen Recording' permission so that the screen contents on this Mac can be sent to the remote machine.
 
-To grant this permission, click '<ph name="BUTTON_NAME">$2<ex>Open Screen Recording Preferences</ex></ph>' below to open the 'Screen Recording' preferences pane and then check the box next to '<ph name="SERVICE_SCRIPT_NAME">$3<ex>org.chromium.chromoting.me2me.sh</ex></ph>'.
+To grant this permission, click '<ph name="BUTTON_NAME">$2<ex>Open Screen Recording Preferences</ex></ph>' below to open the 'Screen Recording' preferences pane and then check the box next to '<ph name="SERVICE_SCRIPT_NAME">$3<ex>org.monyhar.chromoting.me2me.sh</ex></ph>'.
 
-If '<ph name="SERVICE_SCRIPT_NAME">$3<ex>org.chromium.chromoting.me2me.sh</ex></ph>' is already checked, uncheck it and then check it again.
+If '<ph name="SERVICE_SCRIPT_NAME">$3<ex>org.monyhar.chromoting.me2me.sh</ex></ph>' is already checked, uncheck it and then check it again.
         </message>
         <message name="IDS_SCREEN_RECORDING_PERMISSION_DIALOG_OPEN_BUTTON" desc="The text on the button in the permissions dialog that takes the user to the 'Screen Recording' preferences panel. Mac-only, OS 10.15 and later.">
           Open Screen Recording Preferences

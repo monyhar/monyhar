@@ -122,7 +122,7 @@ class PerfPlatform(object):
 
   @property
   def builder_url(self):
-    return ('https://ci.chromium.org/p/chrome/builders/ci/%s' %
+    return ('https://ci.monyhar.org/p/chrome/builders/ci/%s' %
             six.moves.urllib.parse.quote(self._name))
 
 

@@ -1,7 +1,7 @@
 monorail {
   component: "Blink>Canvas"
 }
-team_email: "paint-dev@chromium.org"
+team_email: "paint-dev@monyhar.org"
 wpt {
   notify: YES
 }

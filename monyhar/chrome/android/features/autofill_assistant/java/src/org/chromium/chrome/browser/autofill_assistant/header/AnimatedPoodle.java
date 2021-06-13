@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.header;
+package org.monyhar.chrome.browser.autofill_assistant.header;
 
 import android.content.Context;
 import android.view.View;
@@ -11,7 +11,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.content.res.AppCompatResources;
 
-import org.chromium.chrome.autofill_assistant.poodle.R;
+import org.monyhar.chrome.autofill_assistant.poodle.R;
 
 /**
  * Represents a poodle that can be animated. This default implementation is a static poodle, the

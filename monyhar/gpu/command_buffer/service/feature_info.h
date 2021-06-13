@@ -44,13 +44,13 @@ class GPU_GLES2_EXPORT FeatureInfo : public base::RefCounted<FeatureInfo> {
     // Use glBlitFramebuffer() and glRenderbufferStorageMultisample() with
     // GL_EXT_framebuffer_multisample-style semantics (as opposed to
     // GL_EXT_multisampled_render_to_texture semantics).
-    bool chromium_framebuffer_multisample = false;
-    bool chromium_sync_query = false;
+    bool monyhar_framebuffer_multisample = false;
+    bool monyhar_sync_query = false;
     bool multisampled_render_to_texture = false;
     // Use the IMG GLenum values rather than EXT.
     bool use_img_for_multisampled_render_to_texture = false;
-    bool chromium_screen_space_antialiasing = false;
-    bool use_chromium_screen_space_antialiasing_via_shaders = false;
+    bool monyhar_screen_space_antialiasing = false;
+    bool use_monyhar_screen_space_antialiasing_via_shaders = false;
     bool oes_standard_derivatives = false;
     bool oes_egl_image_external = false;
     bool oes_egl_image_external_essl3 = false;
@@ -90,20 +90,20 @@ class GPU_GLES2_EXPORT FeatureInfo : public base::RefCounted<FeatureInfo> {
     bool ext_discard_framebuffer = false;
     bool angle_depth_texture = false;
     bool is_swiftshader_for_webgl = false;
-    bool chromium_texture_filtering_hint = false;
+    bool monyhar_texture_filtering_hint = false;
     bool angle_texture_usage = false;
     bool ext_texture_storage = false;
-    bool chromium_raster_transport = false;
-    bool chromium_framebuffer_mixed_samples = false;
+    bool monyhar_raster_transport = false;
+    bool monyhar_framebuffer_mixed_samples = false;
     bool blend_equation_advanced = false;
     bool blend_equation_advanced_coherent = false;
     bool ext_texture_rg = false;
     bool ext_texture_norm16 = false;
-    bool chromium_image_ycbcr_420v = false;
-    bool chromium_image_ycbcr_422 = false;
-    bool chromium_image_ar30 = false;
-    bool chromium_image_ab30 = false;
-    bool chromium_image_ycbcr_p010 = false;
+    bool monyhar_image_ycbcr_420v = false;
+    bool monyhar_image_ycbcr_422 = false;
+    bool monyhar_image_ar30 = false;
+    bool monyhar_image_ab30 = false;
+    bool monyhar_image_ycbcr_p010 = false;
     bool emulate_primitive_restart_fixed_index = false;
     bool ext_render_buffer_format_bgra8888 = false;
     bool ext_multisample_compatibility = false;
@@ -111,16 +111,16 @@ class GPU_GLES2_EXPORT FeatureInfo : public base::RefCounted<FeatureInfo> {
     bool ext_read_format_bgra = false;
     bool desktop_srgb_support = false;
     bool arb_es3_compatibility = false;
-    bool chromium_color_buffer_float_rgb = false;
-    bool chromium_color_buffer_float_rgba = false;
+    bool monyhar_color_buffer_float_rgb = false;
+    bool monyhar_color_buffer_float_rgba = false;
     bool angle_robust_client_memory = false;
     bool khr_debug = false;
-    bool chromium_bind_generates_resource = false;
+    bool monyhar_bind_generates_resource = false;
     bool angle_webgl_compatibility = false;
     bool ext_srgb_write_control = false;
     bool ext_srgb = false;
-    bool chromium_copy_texture = false;
-    bool chromium_copy_compressed_texture = false;
+    bool monyhar_copy_texture = false;
+    bool monyhar_copy_compressed_texture = false;
     bool ext_disjoint_timer_query = false;
     bool angle_client_arrays = false;
     bool angle_request_extension = false;
@@ -130,9 +130,9 @@ class GPU_GLES2_EXPORT FeatureInfo : public base::RefCounted<FeatureInfo> {
     bool oes_rgb8_rgba8 = false;
     bool angle_robust_resource_initialization = false;
     bool nv_fence = false;
-    bool chromium_texture_storage_image = false;
+    bool monyhar_texture_storage_image = false;
     bool ext_window_rectangles = false;
-    bool chromium_gpu_fence = false;
+    bool monyhar_gpu_fence = false;
     bool unpremultiply_and_dither_copy = false;
     bool separate_stencil_ref_mask_writemask = false;
     bool mesa_framebuffer_flip_y = false;
@@ -144,7 +144,7 @@ class GPU_GLES2_EXPORT FeatureInfo : public base::RefCounted<FeatureInfo> {
     bool nv_internalformat_sample_query = false;
     bool amd_framebuffer_multisample_advanced = false;
     bool ext_float_blend = false;
-    bool chromium_completion_query = false;
+    bool monyhar_completion_query = false;
     bool oes_fbo_render_mipmap = false;
     bool webgl_draw_instanced_base_vertex_base_instance = false;
     bool webgl_multi_draw_instanced_base_vertex_base_instance = false;

@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.example.jni_generator;
+package org.monyhar.example.jni_generator;
 
-import org.chromium.base.annotations.NativeMethods;
+import org.monyhar.base.annotations.NativeMethods;
 
 /**
  * Sample class that uses the JNI annotation processor for static methods.

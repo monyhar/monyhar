@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.metrics_settings;
+package org.monyhar.chrome.browser.metrics_settings;
 
 import android.os.Bundle;
 
 import androidx.preference.PreferenceFragmentCompat;
 
-import org.chromium.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
 
 /**
  * Settings fragment for metrics. This class represents a View in the MVC paradigm.

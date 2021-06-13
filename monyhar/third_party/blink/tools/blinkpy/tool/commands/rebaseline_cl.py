@@ -384,7 +384,7 @@ class RebaselineCL(AbstractParallelRebaselineCommand):
         """Returns the relative path from the repo root to the web tests."""
         finder = PathFinder(self._tool.filesystem)
         return self._tool.filesystem.relpath(
-            finder.web_tests_dir(), finder.path_from_chromium_base()) + '/'
+            finder.web_tests_dir(), finder.path_from_monyhar_base()) + '/'
 
     def _tests_to_rebaseline(self, build, web_test_results):
         """Fetches a list of tests that should be rebaselined for some build.

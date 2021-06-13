@@ -1,12 +1,12 @@
 # Primary OWNERS
-jimmyxgong@chromium.org
-joonbug@chromium.org
+jimmyxgong@monyhar.org
+joonbug@monyhar.org
 
 # Backup OWNERS
-zentaro@chromium.org
-afakhry@chromium.org
-iby@chromium.org
-mutexlox@chromium.org
+zentaro@monyhar.org
+afakhry@monyhar.org
+iby@monyhar.org
+mutexlox@monyhar.org
 
-per-file redaction_tool*=iby@chromium.org
-per-file redaction_tool*=mutexlox@chromium.org
+per-file redaction_tool*=iby@monyhar.org
+per-file redaction_tool*=mutexlox@monyhar.org

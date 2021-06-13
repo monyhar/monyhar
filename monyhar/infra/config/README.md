@@ -2,17 +2,17 @@
 set up in
 https://chrome-internal.googlesource.com/infradata/config/+/refs/heads/master/configs/luci-config/projects.cfg
 
-This directory contains chromium project-wide configurations
+This directory contains monyhar project-wide configurations
 for Chrome Operations services.
 For example, [cr-buildbucket.cfg](generated/cr-buildbucket.cfg) defines
 builders.
 
 Currently active version can be checked at
-https://luci-config.appspot.com/#/projects/chromium .
+https://luci-config.appspot.com/#/projects/monyhar .
 
 The configuration is written using starlark, which is executed using lucicfg to
 generate the raw cfg files located in [generated](generated). See
-https://chromium.googlesource.com/infra/luci/luci-go/+/HEAD/lucicfg/doc/README.md
+https://monyhar.googlesource.com/infra/luci/luci-go/+/HEAD/lucicfg/doc/README.md
 for more information on lucicfg/starlark.
 
 The starlark configuration is rooted in `main.star` and `dev.star`, which
@@ -21,7 +21,7 @@ configuration files. A presubmit check enforces that the generated files are
 kept in sync with the output of the starlark configuration.
 
 The configuration rooted at [main.star](main.star) defines the LUCI services
-configuration for the chromium project on the production instance of LUCI. The
+configuration for the monyhar project on the production instance of LUCI. The
 configuration is responsible for generating the raw configuration files that do
 not end in -dev.cfg as well as the markdown file
 [cq-builders.md](generated/cq-builders.md). Starlark files in the following
@@ -40,6 +40,6 @@ directories are consumed by the configuration:
   outages.
 
 The configuration rooted at [dev.star](dev.star) defines the LUCI services
-configuration for the chromium project on the dev instance of LUCI. This
+configuration for the monyhar project on the dev instance of LUCI. This
 configuration consumes starlark files under the dev directory and is responsible
 for generating the raw configuration files ending in -dev.cfg.

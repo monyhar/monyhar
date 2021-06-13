@@ -154,10 +154,10 @@ class PerfBenchmarkTest(unittest.TestCase):
     options = options_for_unittests.GetCopy()
     options.browser_options.browser_type = 'reference'
 
-    # Careful, do not parse the command line flag for 'chromium-output-dir', as
+    # Careful, do not parse the command line flag for 'monyhar-output-dir', as
     # that sets the global os environment variable CHROMIUM_OUTPUT_DIR,
     # affecting other tests. See http://crbug.com/843994.
-    options.chromium_output_dir = self._output_dir
+    options.monyhar_output_dir = self._output_dir
 
     benchmark.CustomizeOptions(options)
     self._ExpectAdTaggingProfileFiles(options.browser_options, False)
@@ -168,10 +168,10 @@ class PerfBenchmarkTest(unittest.TestCase):
     benchmark = perf_benchmark.PerfBenchmark()
     options = options_for_unittests.GetCopy()
 
-    # Careful, do not parse the command line flag for 'chromium-output-dir', as
+    # Careful, do not parse the command line flag for 'monyhar-output-dir', as
     # that sets the global os environment variable CHROMIUM_OUTPUT_DIR,
     # affecting other tests. See http://crbug.com/843994.
-    options.chromium_output_dir = self._output_dir
+    options.monyhar_output_dir = self._output_dir
 
     benchmark.CustomizeOptions(options)
     self._ExpectAdTaggingProfileFiles(options.browser_options, True)
@@ -194,8 +194,8 @@ class PerfBenchmarkTest(unittest.TestCase):
     options = options_for_unittests.GetCopy()
     options.chrome_root = self._chrome_root
 
-    # android-chromium is special cased to search for anything.
-    options.browser_options.browser_type = "android-chromium"
+    # android-monyhar is special cased to search for anything.
+    options.browser_options.browser_type = "android-monyhar"
 
     benchmark.CustomizeOptions(options)
     self._ExpectAdTaggingProfileFiles(options.browser_options, True)
@@ -236,7 +236,7 @@ class PerfBenchmarkTest(unittest.TestCase):
 
     benchmark = perf_benchmark.PerfBenchmark()
     options = options_for_unittests.GetCopy()
-    options.chromium_output_dir = self._output_dir
+    options.monyhar_output_dir = self._output_dir
 
     # Should fail due to invalid JSON.
     with self.assertRaises(ValueError):

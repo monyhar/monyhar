@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.media_router;
+package org.monyhar.components.media_router;
 
 import com.google.android.gms.cast.CastDevice;
 import com.google.android.gms.cast.RemoteMediaPlayer;
 
-import org.chromium.components.browser_ui.media.MediaNotificationInfo;
-import org.chromium.services.media_session.MediaMetadata;
+import org.monyhar.components.browser_ui.media.MediaNotificationInfo;
+import org.monyhar.services.media_session.MediaMetadata;
 
 /**
  * Helper class that implements functions useful to all CastSession types.

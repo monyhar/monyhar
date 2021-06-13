@@ -65,7 +65,7 @@ class InfoBarDelegate {
   // KEEP IN SYNC WITH THE InfoBarIdentifier ENUM IN enums.xml.
   // NEW VALUES MUST BE APPENDED AND AVOID CHANGING ANY PRE-EXISTING VALUES.
   // A Java counterpart will be generated for this enum.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.infobar
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.infobar
   enum InfoBarIdentifier {
     INVALID = -1,
     TEST_INFOBAR = 0,

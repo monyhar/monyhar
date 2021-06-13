@@ -2,29 +2,29 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.v2;
+package org.monyhar.chrome.browser.feed.v2;
 
 import android.content.Context;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.BundleUtils;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.task.TaskTraits;
-import org.chromium.chrome.GoogleAPIKeys;
-import org.chromium.chrome.browser.base.SplitCompatUtils;
-import org.chromium.chrome.browser.feed.FeedImageFetchClient;
-import org.chromium.chrome.browser.feed.FeedServiceBridge;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.privacy.settings.PrivacyPreferencesManager;
-import org.chromium.chrome.browser.privacy.settings.PrivacyPreferencesManagerImpl;
-import org.chromium.chrome.browser.version.ChromeVersionInfo;
-import org.chromium.chrome.browser.xsurface.ImageFetchClient;
-import org.chromium.chrome.browser.xsurface.PersistentKeyValueCache;
-import org.chromium.chrome.browser.xsurface.ProcessScopeDependencyProvider;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.base.BundleUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.task.TaskTraits;
+import org.monyhar.chrome.GoogleAPIKeys;
+import org.monyhar.chrome.browser.base.SplitCompatUtils;
+import org.monyhar.chrome.browser.feed.FeedImageFetchClient;
+import org.monyhar.chrome.browser.feed.FeedServiceBridge;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.privacy.settings.PrivacyPreferencesManager;
+import org.monyhar.chrome.browser.privacy.settings.PrivacyPreferencesManagerImpl;
+import org.monyhar.chrome.browser.version.ChromeVersionInfo;
+import org.monyhar.chrome.browser.xsurface.ImageFetchClient;
+import org.monyhar.chrome.browser.xsurface.PersistentKeyValueCache;
+import org.monyhar.chrome.browser.xsurface.ProcessScopeDependencyProvider;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 /**
  * Provides logging and context for all surfaces.

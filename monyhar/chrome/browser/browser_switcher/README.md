@@ -13,7 +13,7 @@ Setup instructions for administrators can be found
 ## Configuration
 
 The policies in the [BrowserSwitcher
-group](https://www.chromium.org/administrators/policy-list-3#BrowserSwitcher)
+group](https://www.monyhar.org/administrators/policy-list-3#BrowserSwitcher)
 let admins configure this feature, to decide which URLs should open in Chrome
 and which should open in the alternate browser.
 
@@ -31,24 +31,24 @@ There are 2 types of rules for LBS:
 These rules can be applied from 3 different sources:
 
 * Directly, with Chrome policies:
-  [BrowserSwitcherUrlList](https://www.chromium.org/administrators/policy-list-3#BrowserSwitcherUrlList)
+  [BrowserSwitcherUrlList](https://www.monyhar.org/administrators/policy-list-3#BrowserSwitcherUrlList)
   and
-  [BrowserSwitcherUrlGreylist](https://www.chromium.org/administrators/policy-list-3#BrowserSwitcherUrlGreylist)
+  [BrowserSwitcherUrlGreylist](https://www.monyhar.org/administrators/policy-list-3#BrowserSwitcherUrlGreylist)
   control the sitelist and the greylist, respectively.
 
 * EMIE site list: IE/Edge can be
   [configured](https://docs.microsoft.com/en-us/internet-explorer/ie11-deploy-guide/turn-on-enterprise-mode-and-use-a-site-list)
   to open websites in IE, with a certain renderer version. BrowserSwitcher can
   share the same rules IE uses, using the
-  [BrowserSwitcherUseIeSitelist](https://www.chromium.org/administrators/policy-list-3#BrowserSwitcherUseIeSitelist)
+  [BrowserSwitcherUseIeSitelist](https://www.monyhar.org/administrators/policy-list-3#BrowserSwitcherUseIeSitelist)
   policy. The rules are specified as a URL, that points to an XML file that
   Chrome downloads.
 
 * Other XML site list: Specifies a URL to an XML file (like the EMIE site list),
   but the rules aren't shared with IE. These rules are controlled by the
-  [BrowserSwitcherExternalSitelistUrl](https://www.chromium.org/administrators/policy-list-3#BrowserSwitcherExternalSitelistUrl)
+  [BrowserSwitcherExternalSitelistUrl](https://www.monyhar.org/administrators/policy-list-3#BrowserSwitcherExternalSitelistUrl)
   and
-  [BrowserSwitcherExternalGreylistUrl](https://www.chromium.org/administrators/policy-list-3#BrowserSwitcherExternalGreylistUrl)
+  [BrowserSwitcherExternalGreylistUrl](https://www.monyhar.org/administrators/policy-list-3#BrowserSwitcherExternalGreylistUrl)
   policies.
 
 If rules from multiple sources are present, they are combined into one

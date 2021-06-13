@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.support_lib_glue;
+package org.monyhar.support_lib_glue;
 
-import org.chromium.android_webview.AwSupportLibIsomorphic;
-import org.chromium.support_lib_boundary.IsomorphicObjectBoundaryInterface;
+import org.monyhar.android_webview.AwSupportLibIsomorphic;
+import org.monyhar.support_lib_boundary.IsomorphicObjectBoundaryInterface;
 
 import java.util.concurrent.Callable;
 

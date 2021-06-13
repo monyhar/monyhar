@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments.test_support;
+package org.monyhar.chrome.browser.payments.test_support;
 
 import org.mockito.Mockito;
 
-import org.chromium.chrome.browser.payments.ui.PaymentUiService;
-import org.chromium.components.payments.PaymentApp;
+import org.monyhar.chrome.browser.payments.ui.PaymentUiService;
+import org.monyhar.components.payments.PaymentApp;
 
 import java.util.ArrayList;
 import java.util.List;

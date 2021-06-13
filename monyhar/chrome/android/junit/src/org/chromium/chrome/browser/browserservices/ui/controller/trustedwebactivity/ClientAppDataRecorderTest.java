@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.ui.controller.trustedwebactivity;
+package org.monyhar.chrome.browser.browserservices.ui.controller.trustedwebactivity;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyInt;
@@ -27,11 +27,11 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.browserservices.ClientAppDataRegister;
-import org.chromium.components.embedder_support.util.Origin;
-import org.chromium.components.embedder_support.util.ShadowUrlUtilities;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.browserservices.ClientAppDataRegister;
+import org.monyhar.components.embedder_support.util.Origin;
+import org.monyhar.components.embedder_support.util.ShadowUrlUtilities;
 
 /**
  * Tests for {@link ClientAppDataRecorder}.

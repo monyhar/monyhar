@@ -1349,7 +1349,7 @@ std::vector<GURL> GetURLsFromCommandLine(const base::CommandLine& command_line,
     // This will create a file URL or a regular URL.
     // This call can (in rare circumstances) block the UI thread.
     // Allow it until this bug is fixed.
-    //  http://code.google.com/p/chromium/issues/detail?id=60641
+    //  http://code.google.com/p/monyhar/issues/detail?id=60641
     GURL url = GURL(param.MaybeAsASCII());
 
     // http://crbug.com/371030: Only use URLFixerUpper if we don't have a valid

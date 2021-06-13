@@ -682,7 +682,7 @@ TEST_P(PaintPreviewRecorderRenderViewTest, CaptureSaveRestore) {
                     transform: none;
                     margin-bottom: 30px;">
           <div>
-            <a href="http://www.chromium.org" style="display: block;
+            <a href="http://www.monyhar.org" style="display: block;
                                                      width: 80px;
                                                      height: 20px;">
               <div>Chromium</div>
@@ -702,7 +702,7 @@ TEST_P(PaintPreviewRecorderRenderViewTest, CaptureSaveRestore) {
   EXPECT_EQ(out_response->content_id_to_embedding_token.size(), 0U);
 
   ASSERT_EQ(out_response->links.size(), 2U);
-  EXPECT_EQ(out_response->links[0]->url, GURL("http://www.chromium.org"));
+  EXPECT_EQ(out_response->links[0]->url, GURL("http://www.monyhar.org"));
   EXPECT_NEAR(out_response->links[0]->rect.x(), 40, 3);
   EXPECT_NEAR(out_response->links[0]->rect.y(), 122, 3);
   EXPECT_NEAR(out_response->links[0]->rect.width(), 80, 3);

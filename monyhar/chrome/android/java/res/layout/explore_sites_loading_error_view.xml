@@ -18,7 +18,7 @@
         android:layout_marginBottom="@dimen/explore_sites_error_image_margin_bottom"
         android:layout_marginHorizontal="@dimen/explore_sites_page_padding"
         android:contentDescription="@string/explore_sites_loading_error" />
-    <org.chromium.ui.widget.TextViewWithLeading
+    <org.monyhar.ui.widget.TextViewWithLeading
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="start"
@@ -27,7 +27,7 @@
         android:layout_marginBottom="@dimen/explore_sites_page_padding"
         android:textAppearance="@style/TextAppearance.Headline.Primary"
         app:leading="@dimen/headline_size_leading" />
-    <org.chromium.ui.widget.TextViewWithLeading
+    <org.monyhar.ui.widget.TextViewWithLeading
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="start"
@@ -35,7 +35,7 @@
         android:text="@string/explore_sites_loading_error_next_steps_tag"
         android:textAppearance="@style/TextAppearance.TextSmall.Primary"
         app:leading="@dimen/text_size_small_leading" />
-    <org.chromium.ui.widget.TextViewWithLeading
+    <org.monyhar.ui.widget.TextViewWithLeading
         android:id="@+id/error_view_next_steps"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

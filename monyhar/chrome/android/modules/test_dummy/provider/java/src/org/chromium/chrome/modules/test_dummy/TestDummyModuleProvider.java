@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.modules.test_dummy;
+package org.monyhar.chrome.modules.test_dummy;
 
-import org.chromium.components.module_installer.engine.InstallListener;
+import org.monyhar.components.module_installer.engine.InstallListener;
 
 /** Installs and loads the test dummy module. */
 public class TestDummyModuleProvider {

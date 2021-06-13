@@ -31,7 +31,7 @@ class ProxyInfo;
 // take precedence over the manual ones.
 //
 // For more details see:
-// http://www.chromium.org/developers/design-documents/network-stack/proxy-settings-fallback
+// http://www.monyhar.org/developers/design-documents/network-stack/proxy-settings-fallback
 class NET_EXPORT ProxyConfig {
  public:
   // ProxyRules describes the "manual" proxy settings.

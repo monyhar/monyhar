@@ -10,13 +10,13 @@
 #include <vector>
 
 #include "base/macros.h"
-#include "fuchsia/fidl/chromium/cast/cpp/fidl.h"
+#include "fuchsia/fidl/monyhar/cast/cpp/fidl.h"
 #include "url/gurl.h"
 
 // Test cast.ApplicationConfigManager implementation which maps a test Cast
 // AppId to a URL.
 class FakeApplicationConfigManager
-    : public chromium::cast::ApplicationConfigManager {
+    : public monyhar::cast::ApplicationConfigManager {
  public:
   // Default agent url used for all applications.
   static const char kFakeAgentUrl[];
@@ -27,20 +27,20 @@ class FakeApplicationConfigManager
   // Creates a config for a dummy application with the specified |id| and |url|.
   // Callers should updated the returned config as necessary and then register
   // the app by calling AddAppConfig().
-  static chromium::cast::ApplicationConfig CreateConfig(const std::string& id,
+  static monyhar::cast::ApplicationConfig CreateConfig(const std::string& id,
                                                         const GURL& url);
 
   // Adds |app_config| to the list of apps.
-  void AddAppConfig(chromium::cast::ApplicationConfig app_config);
+  void AddAppConfig(monyhar::cast::ApplicationConfig app_config);
 
   // Associates a Cast application |id| with the |url|.
   void AddApp(const std::string& id, const GURL& url);
 
-  // chromium::cast::ApplicationConfigManager interface.
+  // monyhar::cast::ApplicationConfigManager interface.
   void GetConfig(std::string id, GetConfigCallback config_callback) override;
 
  private:
-  std::map<std::string, chromium::cast::ApplicationConfig> id_to_config_;
+  std::map<std::string, monyhar::cast::ApplicationConfig> id_to_config_;
 
   DISALLOW_COPY_AND_ASSIGN(FakeApplicationConfigManager);
 };

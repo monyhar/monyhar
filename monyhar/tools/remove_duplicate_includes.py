@@ -5,7 +5,7 @@
 
 """This script will search through the target folder specified and try to find
 duplicate includes from h and cc files, and remove them from the cc files. The
-current/working directory needs to be chromium_checkout/src/ when this tool is
+current/working directory needs to be monyhar_checkout/src/ when this tool is
 run.
 
 Usage: remove_duplicate_includes.py --dry-run components/foo components/bar

@@ -1,5 +1,5 @@
 monorail {
   component: "Blink>Media>Session"
 }
-team_email: "media-dev@chromium.org"
+team_email: "media-dev@monyhar.org"
 

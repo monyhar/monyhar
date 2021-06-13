@@ -2457,8 +2457,8 @@ void DXVAVideoDecodeAccelerator::DecodeInternal(
   // TODO(ananta)
   // Do some more investigation into whether it is possible to get the MFT
   // decoder to emit an output packet for every input packet.
-  // http://code.google.com/p/chromium/issues/detail?id=108121
-  // http://code.google.com/p/chromium/issues/detail?id=150925
+  // http://code.google.com/p/monyhar/issues/detail?id=108121
+  // http://code.google.com/p/monyhar/issues/detail?id=150925
   main_thread_task_runner_->PostTask(
       FROM_HERE,
       base::BindOnce(&DXVAVideoDecodeAccelerator::NotifyInputBufferRead,

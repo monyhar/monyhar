@@ -10,7 +10,7 @@ import webapp2
 import base64
 
 """A simple appengine app that hosts .html files in src/styleguide/c++ from
-chromium's git repo."""
+monyhar's git repo."""
 
 
 class MainHandler(webapp2.RequestHandler):
@@ -20,7 +20,7 @@ class MainHandler(webapp2.RequestHandler):
         return handler.get("c++11.html")
 
 
-BASE = 'https://chromium.googlesource.com/chromium/src.git/' \
+BASE = 'https://monyhar.googlesource.com/monyhar/src.git/' \
        '+/master/styleguide/c++/%s?format=TEXT'
 class GitilesMirrorHandler(webapp2.RequestHandler):
     def get(self, resource):

@@ -48,9 +48,9 @@ namespace {
 // have to be in sync with the ones used in ArcInputMethodManagerService.java on
 // the container side. Otherwise, the picker dialog might pop up unexpectedly.
 constexpr char kPackageForOpeningArcImeSettingsPage[] =
-    "org.chromium.arc.applauncher";
+    "org.monyhar.arc.applauncher";
 constexpr char kActivityForOpeningArcImeSettingsPage[] =
-    "org.chromium.arc.applauncher.InputMethodSettingsActivity";
+    "org.monyhar.arc.applauncher.InputMethodSettingsActivity";
 
 // Size of device icons in DIPs.
 constexpr int kDeviceIconSize = 16;
@@ -204,7 +204,7 @@ mojom::IntentInfoPtr CreateIntentInfo(const GURL& url, bool ui_bypassed) {
   // Create an intent with action VIEW, the |url| we are redirecting the user to
   // and a flag that tells whether or not the user interacted with the picker UI
   arc::mojom::IntentInfoPtr intent = arc::mojom::IntentInfo::New();
-  constexpr char kArcIntentActionView[] = "org.chromium.arc.intent.action.VIEW";
+  constexpr char kArcIntentActionView[] = "org.monyhar.arc.intent.action.VIEW";
   intent->action = kArcIntentActionView;
   intent->data = url.spec();
   intent->ui_bypassed = ui_bypassed;

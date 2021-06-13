@@ -173,7 +173,7 @@ class MachOImageSymbolTableReaderInitializer {
           // ld::tool::SymbolTableAtom<>::addGlobal(). Indirect symbols are not
           // currently supported by this symbol table reader, so ignore them
           // without failing or logging a message when encountering them. See
-          // https://groups.google.com/a/chromium.org/d/topic/crashpad-dev/k7QkLwO71Zo
+          // https://groups.google.com/a/monyhar.org/d/topic/crashpad-dev/k7QkLwO71Zo
           valid_symbol = symbol_type == N_INDR;
         }
       } else {

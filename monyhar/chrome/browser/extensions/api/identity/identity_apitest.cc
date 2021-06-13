@@ -3321,12 +3321,12 @@ IN_PROC_BROWSER_TEST_F(LaunchWebAuthFlowFunctionTest, NonInteractiveSuccess) {
   std::unique_ptr<base::Value> value(utils::RunFunctionAndReturnSingleResult(
       function.get(),
       "[{\"interactive\": false,"
-      "\"url\": \"https://abcdefghij.chromiumapp.org/callback#test\"}]",
+      "\"url\": \"https://abcdefghij.monyharapp.org/callback#test\"}]",
       browser()));
 
   std::string url;
   EXPECT_TRUE(value->GetAsString(&url));
-  EXPECT_EQ(std::string("https://abcdefghij.chromiumapp.org/callback#test"),
+  EXPECT_EQ(std::string("https://abcdefghij.monyharapp.org/callback#test"),
             url);
 }
 
@@ -3342,12 +3342,12 @@ IN_PROC_BROWSER_TEST_F(LaunchWebAuthFlowFunctionTest,
   std::unique_ptr<base::Value> value(utils::RunFunctionAndReturnSingleResult(
       function.get(),
       "[{\"interactive\": true,"
-      "\"url\": \"https://abcdefghij.chromiumapp.org/callback#test\"}]",
+      "\"url\": \"https://abcdefghij.monyharapp.org/callback#test\"}]",
       browser()));
 
   std::string url;
   EXPECT_TRUE(value->GetAsString(&url));
-  EXPECT_EQ(std::string("https://abcdefghij.chromiumapp.org/callback#test"),
+  EXPECT_EQ(std::string("https://abcdefghij.monyharapp.org/callback#test"),
             url);
 }
 
@@ -3357,7 +3357,7 @@ IN_PROC_BROWSER_TEST_F(LaunchWebAuthFlowFunctionTest,
   https_server.ServeFilesFromSourceDirectory(
       "chrome/test/data/extensions/api_test/identity");
   ASSERT_TRUE(https_server.Start());
-  GURL auth_url(https_server.GetURL("/redirect_to_chromiumapp.html"));
+  GURL auth_url(https_server.GetURL("/redirect_to_monyharapp.html"));
 
   scoped_refptr<IdentityLaunchWebAuthFlowFunction> function(
       new IdentityLaunchWebAuthFlowFunction());
@@ -3373,7 +3373,7 @@ IN_PROC_BROWSER_TEST_F(LaunchWebAuthFlowFunctionTest,
 
   std::string url;
   EXPECT_TRUE(value->GetAsString(&url));
-  EXPECT_EQ(std::string("https://abcdefghij.chromiumapp.org/callback#test"),
+  EXPECT_EQ(std::string("https://abcdefghij.monyharapp.org/callback#test"),
             url);
 }
 

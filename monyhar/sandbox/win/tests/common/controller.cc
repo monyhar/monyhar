@@ -333,7 +333,7 @@ int DispatchCall(int argc, wchar_t **argv) {
     base::win::ScopedHandle scoped_handle(raw_handle);
     if (!scoped_handle.IsValid())
       return SBOX_TEST_INVALID_PARAMETER;
-    // Then convert to the low-level chromium region.
+    // Then convert to the low-level monyhar region.
     base::subtle::PlatformSharedMemoryRegion platform_region =
         base::subtle::PlatformSharedMemoryRegion::Take(
             std::move(scoped_handle),

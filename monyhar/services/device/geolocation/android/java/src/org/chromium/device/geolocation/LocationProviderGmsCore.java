@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.device.geolocation;
+package org.monyhar.device.geolocation;
 
 import android.content.Context;
 import android.location.Location;
@@ -17,10 +17,10 @@ import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.components.location.LocationUtils;
-import org.chromium.gms.ChromiumPlayServicesAvailability;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.components.location.LocationUtils;
+import org.monyhar.gms.ChromiumPlayServicesAvailability;
 
 /**
  * This is a LocationProvider using Google Play Services.

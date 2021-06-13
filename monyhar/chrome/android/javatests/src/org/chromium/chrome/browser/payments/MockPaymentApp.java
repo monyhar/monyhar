@@ -2,23 +2,23 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments;
+package org.monyhar.chrome.browser.payments;
 
 import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.task.PostTask;
-import org.chromium.components.payments.PaymentApp;
-import org.chromium.components.payments.PaymentAppType;
-import org.chromium.components.payments.SupportedDelegations;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.payments.mojom.PaymentDetailsModifier;
-import org.chromium.payments.mojom.PaymentItem;
-import org.chromium.payments.mojom.PaymentMethodData;
-import org.chromium.payments.mojom.PaymentOptions;
-import org.chromium.payments.mojom.PaymentShippingOption;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.components.payments.PaymentApp;
+import org.monyhar.components.payments.PaymentAppType;
+import org.monyhar.components.payments.SupportedDelegations;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.payments.mojom.PaymentDetailsModifier;
+import org.monyhar.payments.mojom.PaymentItem;
+import org.monyhar.payments.mojom.PaymentMethodData;
+import org.monyhar.payments.mojom.PaymentOptions;
+import org.monyhar.payments.mojom.PaymentShippingOption;
 
 import java.util.Arrays;
 import java.util.HashSet;

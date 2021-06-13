@@ -28,7 +28,7 @@
 #include "net/test/embedded_test_server/embedded_test_server.h"
 
 // Turn these tests off on Mac while we collect data on windows server crashes
-// on mac chromium builders.
+// on mac monyhar builders.
 // http://crbug.com/653353
 #if !defined(OS_MAC)
 

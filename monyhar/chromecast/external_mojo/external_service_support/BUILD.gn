@@ -124,10 +124,10 @@ source_set("standalone_service_main") {
   public_deps = [ ":service_process" ]
 }
 
-source_set("chromium_service") {
+source_set("monyhar_service") {
   sources = [
-    "chromium_service.cc",
-    "chromium_service.h",
+    "monyhar_service.cc",
+    "monyhar_service.h",
   ]
   deps = [
     ":external_service",

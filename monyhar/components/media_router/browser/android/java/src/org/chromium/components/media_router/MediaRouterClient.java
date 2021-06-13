@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.media_router;
+package org.monyhar.components.media_router;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -10,8 +10,8 @@ import android.content.Intent;
 
 import androidx.fragment.app.FragmentManager;
 
-import org.chromium.components.browser_ui.media.MediaNotificationInfo;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.components.browser_ui.media.MediaNotificationInfo;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * An abstraction that allows embedders to implement behavior needed by shared Media Router code.

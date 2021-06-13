@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.media_router.caf.remoting;
+package org.monyhar.components.media_router.caf.remoting;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -17,11 +17,11 @@ import android.widget.TextView;
 import androidx.fragment.app.FragmentActivity;
 import androidx.mediarouter.app.MediaRouteButton;
 
-import org.chromium.components.browser_ui.media.MediaNotificationUma;
-import org.chromium.components.media_router.MediaRouteUmaRecorder;
-import org.chromium.components.media_router.R;
-import org.chromium.components.media_router.caf.BaseSessionController;
-import org.chromium.third_party.android.media.MediaController;
+import org.monyhar.components.browser_ui.media.MediaNotificationUma;
+import org.monyhar.components.media_router.MediaRouteUmaRecorder;
+import org.monyhar.components.media_router.R;
+import org.monyhar.components.media_router.caf.BaseSessionController;
+import org.monyhar.third_party.android.media.MediaController;
 
 /**
  * The activity that's opened by clicking the video flinging (casting) notification.

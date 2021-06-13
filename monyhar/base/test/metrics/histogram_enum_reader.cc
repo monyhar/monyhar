@@ -10,7 +10,7 @@
 #include "base/strings/string_number_conversions.h"
 #include "testing/gtest/include/gtest/gtest.h"
 #include "third_party/abseil-cpp/absl/types/optional.h"
-#include "third_party/libxml/chromium/xml_reader.h"
+#include "third_party/libxml/monyhar/xml_reader.h"
 
 namespace base {
 namespace {

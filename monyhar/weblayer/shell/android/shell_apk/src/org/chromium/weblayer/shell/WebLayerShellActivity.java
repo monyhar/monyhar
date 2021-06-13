@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer.shell;
+package org.monyhar.weblayer.shell;
 
 import static android.util.Patterns.WEB_URL;
 
@@ -47,32 +47,32 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.base.compat.ApiHelperForR;
-import org.chromium.weblayer.Browser;
-import org.chromium.weblayer.BrowsingDataType;
-import org.chromium.weblayer.ContextMenuParams;
-import org.chromium.weblayer.DarkModeStrategy;
-import org.chromium.weblayer.ErrorPageCallback;
-import org.chromium.weblayer.FaviconCallback;
-import org.chromium.weblayer.FaviconFetcher;
-import org.chromium.weblayer.FindInPageCallback;
-import org.chromium.weblayer.FullscreenCallback;
-import org.chromium.weblayer.NavigateParams;
-import org.chromium.weblayer.NavigationCallback;
-import org.chromium.weblayer.NavigationController;
-import org.chromium.weblayer.NewTabCallback;
-import org.chromium.weblayer.NewTabType;
-import org.chromium.weblayer.OpenUrlCallback;
-import org.chromium.weblayer.Profile;
-import org.chromium.weblayer.SiteSettingsActivity;
-import org.chromium.weblayer.Tab;
-import org.chromium.weblayer.TabCallback;
-import org.chromium.weblayer.TabListCallback;
-import org.chromium.weblayer.UnsupportedVersionException;
-import org.chromium.weblayer.UrlBarOptions;
-import org.chromium.weblayer.UserIdentityCallback;
-import org.chromium.weblayer.WebLayer;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.compat.ApiHelperForR;
+import org.monyhar.weblayer.Browser;
+import org.monyhar.weblayer.BrowsingDataType;
+import org.monyhar.weblayer.ContextMenuParams;
+import org.monyhar.weblayer.DarkModeStrategy;
+import org.monyhar.weblayer.ErrorPageCallback;
+import org.monyhar.weblayer.FaviconCallback;
+import org.monyhar.weblayer.FaviconFetcher;
+import org.monyhar.weblayer.FindInPageCallback;
+import org.monyhar.weblayer.FullscreenCallback;
+import org.monyhar.weblayer.NavigateParams;
+import org.monyhar.weblayer.NavigationCallback;
+import org.monyhar.weblayer.NavigationController;
+import org.monyhar.weblayer.NewTabCallback;
+import org.monyhar.weblayer.NewTabType;
+import org.monyhar.weblayer.OpenUrlCallback;
+import org.monyhar.weblayer.Profile;
+import org.monyhar.weblayer.SiteSettingsActivity;
+import org.monyhar.weblayer.Tab;
+import org.monyhar.weblayer.TabCallback;
+import org.monyhar.weblayer.TabListCallback;
+import org.monyhar.weblayer.UnsupportedVersionException;
+import org.monyhar.weblayer.UrlBarOptions;
+import org.monyhar.weblayer.UserIdentityCallback;
+import org.monyhar.weblayer.WebLayer;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;

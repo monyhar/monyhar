@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.modaldialog;
+package org.monyhar.chrome.browser.modaldialog;
 
 import android.app.Activity;
 import android.content.res.Resources;
@@ -13,31 +13,31 @@ import android.view.ViewStub;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.cc.input.BrowserControlsState;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsStateProvider;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsUtils;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsVisibilityManager;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanel;
-import org.chromium.chrome.browser.contextualsearch.ContextualSearchManager;
-import org.chromium.chrome.browser.fullscreen.FullscreenManager;
-import org.chromium.chrome.browser.omnibox.OmniboxFocusReason;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabAttributeKeys;
-import org.chromium.chrome.browser.tab.TabAttributes;
-import org.chromium.chrome.browser.tab.TabBrowserControlsConstraintsHelper;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.toolbar.ToolbarManager;
-import org.chromium.chrome.browser.ui.TabObscuringHandler;
-import org.chromium.chrome.browser.vr.ArDelegateProvider;
-import org.chromium.components.browser_ui.modaldialog.TabModalPresenter;
-import org.chromium.components.browser_ui.util.BrowserControlsVisibilityDelegate;
-import org.chromium.components.webxr.ArDelegate;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.UiUtils;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.util.TokenHolder;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.cc.input.BrowserControlsState;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsStateProvider;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsUtils;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsVisibilityManager;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanel;
+import org.monyhar.chrome.browser.contextualsearch.ContextualSearchManager;
+import org.monyhar.chrome.browser.fullscreen.FullscreenManager;
+import org.monyhar.chrome.browser.omnibox.OmniboxFocusReason;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabAttributeKeys;
+import org.monyhar.chrome.browser.tab.TabAttributes;
+import org.monyhar.chrome.browser.tab.TabBrowserControlsConstraintsHelper;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.toolbar.ToolbarManager;
+import org.monyhar.chrome.browser.ui.TabObscuringHandler;
+import org.monyhar.chrome.browser.vr.ArDelegateProvider;
+import org.monyhar.components.browser_ui.modaldialog.TabModalPresenter;
+import org.monyhar.components.browser_ui.util.BrowserControlsVisibilityDelegate;
+import org.monyhar.components.webxr.ArDelegate;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.UiUtils;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.util.TokenHolder;
 
 /**
  * This presenter creates tab modality by blocking interaction with select UI elements while a

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Initially copied from
-# https://git.launchpad.net/~chromium-team/chromium-browser/+git/snap-from-source/tree/launcher/chromium.launcher?h=stable
+# https://git.launchpad.net/~monyhar-team/monyhar-browser/+git/snap-from-source/tree/launcher/monyhar.launcher?h=stable
 
 REALHOME=$(getent passwd $(id -u) | cut -d ':' -f 6)
 

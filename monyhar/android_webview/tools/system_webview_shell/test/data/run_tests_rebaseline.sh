@@ -31,8 +31,8 @@ else
   SCRIPT_BUILD_DIR="$1"
 fi
 
-PACKAGE_NAME="org.chromium.webview_shell.test"
-DEVICE_WEBVIEW_TEST_PATH="/sdcard/chromium_tests_root/android_webview/tools/"
+PACKAGE_NAME="org.monyhar.webview_shell.test"
+DEVICE_WEBVIEW_TEST_PATH="/sdcard/monyhar_tests_root/android_webview/tools/"
 DEVICE_WEBVIEW_TEST_PATH+="system_webview_shell/test/data/"
 RUNNER=$SCRIPT_BUILD_DIR"bin/run_system_webview_shell_layout_test_apk"
 

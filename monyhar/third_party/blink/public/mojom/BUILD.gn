@@ -1257,7 +1257,7 @@ mojom("web_bluetooth_mojo_bindings") {
     },
   ]
 
-  # The chromium variant must be linked with content and use the same export
+  # The monyhar variant must be linked with content and use the same export
   # settings in component build because of the WebBluetoothDeviceId typemap
   # inside content.
   export_class_attribute = "BLINK_COMMON_EXPORT"
@@ -1324,7 +1324,7 @@ mojom_component("script_type_mojo_bindings") {
 }
 
 # The web_feature_mojo_bindings is separated from the rest of the mojom files
-# because the chromium typemap for blink mojo_bindings has private content
+# because the monyhar typemap for blink mojo_bindings has private content
 # dependencies.
 mojom_component("web_feature_mojo_bindings") {
   generate_java = true
@@ -1348,7 +1348,7 @@ mojom("embedded_frame_sink_mojo_bindings") {
 
   component_output_prefix = "blink_embedded_frame_sink_mojo_bindings"
 
-  # The chromium variant must be linked with content and use the same export
+  # The monyhar variant must be linked with content and use the same export
   # settings in component build.
   export_class_attribute = "CONTENT_EXPORT"
   export_define = "CONTENT_IMPLEMENTATION=1"

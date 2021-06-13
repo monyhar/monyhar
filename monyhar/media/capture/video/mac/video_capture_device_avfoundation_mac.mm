@@ -167,7 +167,7 @@ AVCaptureDeviceFormat* FindBestCaptureFormat(
   if ((self = [super init])) {
     _mainThreadTaskRunner = base::ThreadTaskRunnerHandle::Get();
     _sampleQueue.reset(
-        dispatch_queue_create("org.chromium.VideoCaptureDeviceAVFoundation."
+        dispatch_queue_create("org.monyhar.VideoCaptureDeviceAVFoundation."
                               "SampleDeliveryDispatchQueue",
                               DISPATCH_QUEUE_SERIAL),
         base::scoped_policy::ASSUME);

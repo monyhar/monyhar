@@ -33,7 +33,7 @@
 #include "net/http/http_stream_factory.h"
 #include "net/log/net_log_with_source.h"
 #include "net/quic/network_connection.h"
-#include "net/quic/quic_chromium_client_session.h"
+#include "net/quic/quic_monyhar_client_session.h"
 #include "net/quic/quic_clock_skew_detector.h"
 #include "net/quic/quic_connectivity_monitor.h"
 #include "net/quic/quic_context.h"

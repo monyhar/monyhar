@@ -12,14 +12,14 @@
     <ignore regexp="remoting/android/host/res/layout/main.xml"/>
   </issue>
   <issue id="HandlerLeak">
-    <ignore regexp="remoting/android/java/src/org/chromium/chromoting/TapGestureDetector.java"/>
+    <ignore regexp="remoting/android/java/src/org/monyhar/chromoting/TapGestureDetector.java"/>
   </issue>
   <issue id="HardcodedText" severity="Error">
     <ignore regexp="remoting/android/host/res/layout/main.xml"/>
   </issue>
   <issue id="MissingSuperCall" severity="Error">
     <!-- TODO(wnwen): File bug to fix -->
-    <ignore regexp="remoting/android/java/src/org/chromium/chromoting/Chromoting.java"/>
+    <ignore regexp="remoting/android/java/src/org/monyhar/chromoting/Chromoting.java"/>
   </issue>
   <issue id="MissingTranslation">
     <ignore regexp="remoting/resources/strings_java.resources.zip"/>

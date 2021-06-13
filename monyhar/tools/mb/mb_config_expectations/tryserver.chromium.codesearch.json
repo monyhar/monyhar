@@ -11,7 +11,7 @@
       "use_goma": true
     }
   },
-  "gen-chromiumos-try": {
+  "gen-monyharos-try": {
     "gn_args": {
       "clang_use_chrome_plugins": false,
       "enable_kythe_annotations": true,

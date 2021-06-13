@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.gsa;
+package org.monyhar.chrome.browser.gsa;
 
 import android.annotation.SuppressLint;
 import android.content.ComponentName;
@@ -17,8 +17,8 @@ import android.os.Messenger;
 import android.os.RemoteException;
 import android.util.Log;
 
-import org.chromium.base.Callback;
-import org.chromium.base.metrics.RecordHistogram;
+import org.monyhar.base.Callback;
+import org.monyhar.base.metrics.RecordHistogram;
 
 /**
  * A simple client that connects and talks to the GSAService using Messages.

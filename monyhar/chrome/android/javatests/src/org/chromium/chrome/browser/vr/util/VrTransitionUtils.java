@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr.util;
+package org.monyhar.chrome.browser.vr.util;
 
-import static org.chromium.chrome.browser.vr.XrTestFramework.POLL_CHECK_INTERVAL_SHORT_MS;
-import static org.chromium.chrome.browser.vr.XrTestFramework.POLL_TIMEOUT_LONG_MS;
+import static org.monyhar.chrome.browser.vr.XrTestFramework.POLL_CHECK_INTERVAL_SHORT_MS;
+import static org.monyhar.chrome.browser.vr.XrTestFramework.POLL_TIMEOUT_LONG_MS;
 
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.browser.vr.TestVrShellDelegate;
-import org.chromium.chrome.browser.vr.VrShellDelegate;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.browser.vr.TestVrShellDelegate;
+import org.monyhar.chrome.browser.vr.VrShellDelegate;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /**
  * Class containing utility functions for transitioning between different

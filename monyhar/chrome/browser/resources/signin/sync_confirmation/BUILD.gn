@@ -25,7 +25,7 @@ js_library("sync_confirmation") {
 js_library("sync_confirmation_app") {
   deps = [
     ":sync_confirmation_browser_proxy",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
     "//ui/webui/resources/js:load_time_data.m",
     "//ui/webui/resources/js:web_ui_listener_behavior.m",
@@ -43,7 +43,7 @@ js_library("sync_confirmation_browser_proxy") {
 js_library("sync_disabled_confirmation_app") {
   deps = [
     ":sync_confirmation_browser_proxy",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
   ]
 }

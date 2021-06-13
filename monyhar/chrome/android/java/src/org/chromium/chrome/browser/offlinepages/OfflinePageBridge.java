@@ -2,29 +2,29 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.offlinepages;
+package org.monyhar.chrome.browser.offlinepages;
 
 import android.text.TextUtils;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.ObserverList;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.profiles.ProfileKey;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorSupplier;
-import org.chromium.components.offline_items_collection.LaunchLocation;
-import org.chromium.components.offlinepages.DeletePageResult;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.url.GURL;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.profiles.ProfileKey;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorSupplier;
+import org.monyhar.components.offline_items_collection.LaunchLocation;
+import org.monyhar.components.offlinepages.DeletePageResult;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -80,7 +80,7 @@ public class OfflinePageBridge {
     public static OfflinePageBridge getForProfileKey(ProfileKey profileKey) {
         ThreadUtils.assertOnUiThread();
 
-        return org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
+        return org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
                 .getOfflinePageBridgeForProfileKey(profileKey);
     }
 
@@ -92,7 +92,7 @@ public class OfflinePageBridge {
          * Delivers result of saving a page.
          *
          * @param savePageResult Result of the saving. Uses {@see
-         *         org.chromium.components.offlinepages.SavePageResult} enum.
+         *         org.monyhar.components.offlinepages.SavePageResult} enum.
          * @param url URL of the saved page.
          * @see OfflinePageBridge#savePage(WebContents, ClientId, OfflinePageOrigin,
          *         SavePageCallback)
@@ -144,7 +144,7 @@ public class OfflinePageBridge {
      * @return True if an offline copy of the given URL can be saved.
      */
     public static boolean canSavePage(GURL url) {
-        return org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get().canSavePage(url);
+        return org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get().canSavePage(url);
     }
 
     /**
@@ -180,7 +180,7 @@ public class OfflinePageBridge {
     @VisibleForTesting
     public void getAllPages(final Callback<List<OfflinePageItem>> callback) {
         List<OfflinePageItem> result = new ArrayList<>();
-        org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get().getAllPages(
+        org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get().getAllPages(
                 mNativeOfflinePageBridge, OfflinePageBridge.this, result, callback);
     }
 
@@ -203,7 +203,7 @@ public class OfflinePageBridge {
         }
 
         List<OfflinePageItem> result = new ArrayList<>();
-        org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get().getPagesByClientId(
+        org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get().getPagesByClientId(
                 mNativeOfflinePageBridge, OfflinePageBridge.this, result, namespaces, ids,
                 callback);
     }
@@ -216,7 +216,7 @@ public class OfflinePageBridge {
      */
     public void getPagesByRequestOrigin(String origin, Callback<List<OfflinePageItem>> callback) {
         List<OfflinePageItem> result = new ArrayList<>();
-        org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get().getPagesByRequestOrigin(
+        org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get().getPagesByRequestOrigin(
                 mNativeOfflinePageBridge, OfflinePageBridge.this, result, origin, callback);
     }
 
@@ -231,7 +231,7 @@ public class OfflinePageBridge {
     public void getPagesByNamespace(
             final String namespace, final Callback<List<OfflinePageItem>> callback) {
         List<OfflinePageItem> result = new ArrayList<>();
-        org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get().getPagesByNamespace(
+        org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get().getPagesByNamespace(
                 mNativeOfflinePageBridge, OfflinePageBridge.this, result, namespace, callback);
     }
 
@@ -245,7 +245,7 @@ public class OfflinePageBridge {
      */
     public void selectPageForOnlineUrl(
             GURL onlineUrl, int tabId, Callback<OfflinePageItem> callback) {
-        org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get().selectPageForOnlineUrl(
+        org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get().selectPageForOnlineUrl(
                 mNativeOfflinePageBridge, OfflinePageBridge.this, onlineUrl, tabId, callback);
     }
 
@@ -257,7 +257,7 @@ public class OfflinePageBridge {
      *         pass back <code>null</code> if not.
      */
     public void getPageByOfflineId(final long offlineId, final Callback<OfflinePageItem> callback) {
-        org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get().getPageByOfflineId(
+        org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get().getPageByOfflineId(
                 mNativeOfflinePageBridge, OfflinePageBridge.this, offlineId, callback);
     }
 
@@ -300,7 +300,7 @@ public class OfflinePageBridge {
         assert webContents != null;
         assert origin != null;
 
-        org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get().savePage(
+        org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get().savePage(
                 mNativeOfflinePageBridge, OfflinePageBridge.this, callback, webContents,
                 clientId.getNamespace(), clientId.getId(), origin.encodeAsJsonString());
     }
@@ -336,7 +336,7 @@ public class OfflinePageBridge {
             ids[i] = clientIds.get(i).getId();
         }
 
-        org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get().deletePagesByClientId(
+        org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get().deletePagesByClientId(
                 mNativeOfflinePageBridge, OfflinePageBridge.this, namespaces, ids, callback);
     }
 
@@ -358,7 +358,7 @@ public class OfflinePageBridge {
             ids[i] = clientIds.get(i).getId();
         }
 
-        org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
+        org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
                 .deletePagesByClientIdAndOrigin(mNativeOfflinePageBridge, OfflinePageBridge.this,
                         namespaces, ids, origin.encodeAsJsonString(), callback);
     }
@@ -383,7 +383,7 @@ public class OfflinePageBridge {
         for (int i = 0; i < offlineIdList.size(); i++) {
             offlineIds[i] = offlineIdList.get(i).longValue();
         }
-        org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get().deletePagesByOfflineId(
+        org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get().deletePagesByOfflineId(
                 mNativeOfflinePageBridge, OfflinePageBridge.this, offlineIds, callback);
     }
 
@@ -394,7 +394,7 @@ public class OfflinePageBridge {
      *         the new path of the file.
      */
     public void publishInternalPageByOfflineId(long offlineId, Callback<String> publishedCallback) {
-        org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
+        org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
                 .publishInternalPageByOfflineId(mNativeOfflinePageBridge, OfflinePageBridge.this,
                         offlineId, publishedCallback);
     }
@@ -405,7 +405,7 @@ public class OfflinePageBridge {
      * @param publishedCallback Function to call when publishing is done.
      */
     public void publishInternalPageByGuid(String guid, Callback<String> publishedCallback) {
-        org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
+        org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
                 .publishInternalPageByGuid(
                         mNativeOfflinePageBridge, OfflinePageBridge.this, guid, publishedCallback);
     }
@@ -423,7 +423,7 @@ public class OfflinePageBridge {
      * @return The extra request header string.
      */
     public String getOfflinePageHeaderForReload(WebContents webContents) {
-        return org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
+        return org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
                 .getOfflinePageHeaderForReload(
                         mNativeOfflinePageBridge, OfflinePageBridge.this, webContents);
     }
@@ -433,7 +433,7 @@ public class OfflinePageBridge {
      * @return True if an offline preview is being shown.
      */
     public boolean isShowingOfflinePreview(WebContents webContents) {
-        return org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
+        return org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
                 .isShowingOfflinePreview(
                         mNativeOfflinePageBridge, OfflinePageBridge.this, webContents);
     }
@@ -443,14 +443,14 @@ public class OfflinePageBridge {
      * @return True if download button is being shown in the error page.
      */
     public boolean isShowingDownloadButtonInErrorPage(WebContents webContents) {
-        return org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
+        return org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
                 .isShowingDownloadButtonInErrorPage(
                         mNativeOfflinePageBridge, OfflinePageBridge.this, webContents);
     }
 
     /** Tells the native side that the tab of |webContents| will be closed. */
     void willCloseTab(WebContents webContents) {
-        org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get().willCloseTab(
+        org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get().willCloseTab(
                 mNativeOfflinePageBridge, OfflinePageBridge.this, webContents);
     }
 
@@ -481,7 +481,7 @@ public class OfflinePageBridge {
      */
     public void scheduleDownload(WebContents webContents, String nameSpace, String url,
             int uiAction, OfflinePageOrigin origin) {
-        org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get().scheduleDownload(
+        org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get().scheduleDownload(
                 mNativeOfflinePageBridge, OfflinePageBridge.this, webContents, nameSpace, url,
                 uiAction, origin.encodeAsJsonString());
     }
@@ -492,7 +492,7 @@ public class OfflinePageBridge {
      * @return True if the offline page is opened.
      */
     public boolean isOfflinePage(WebContents webContents) {
-        return org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get().isOfflinePage(
+        return org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get().isOfflinePage(
                 mNativeOfflinePageBridge, OfflinePageBridge.this, webContents);
     }
 
@@ -502,7 +502,7 @@ public class OfflinePageBridge {
      * @return true if the page is in a temporary namespace.
      */
     public boolean isTemporaryNamespace(String nameSpace) {
-        return org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
+        return org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
                 .isTemporaryNamespace(mNativeOfflinePageBridge, OfflinePageBridge.this, nameSpace);
     }
 
@@ -512,7 +512,7 @@ public class OfflinePageBridge {
      * @return True if the file is in a private directory.
      */
     public boolean isInPrivateDirectory(String filePath) {
-        return org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
+        return org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
                 .isInPrivateDirectory(mNativeOfflinePageBridge, OfflinePageBridge.this, filePath);
     }
 
@@ -523,7 +523,7 @@ public class OfflinePageBridge {
      */
     @Nullable
     public OfflinePageItem getOfflinePage(WebContents webContents) {
-        return org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get().getOfflinePage(
+        return org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get().getOfflinePage(
                 mNativeOfflinePageBridge, OfflinePageBridge.this, webContents);
     }
 
@@ -539,7 +539,7 @@ public class OfflinePageBridge {
      */
     public void getLoadUrlParamsByOfflineId(
             long offlineId, @LaunchLocation int location, Callback<LoadUrlParams> callback) {
-        org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
+        org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
                 .getLoadUrlParamsByOfflineId(mNativeOfflinePageBridge, OfflinePageBridge.this,
                         offlineId, location, callback);
     }
@@ -552,7 +552,7 @@ public class OfflinePageBridge {
      */
     public void getLoadUrlParamsForOpeningMhtmlFileOrContent(
             String url, Callback<LoadUrlParams> callback) {
-        org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
+        org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
                 .getLoadUrlParamsForOpeningMhtmlFileOrContent(
                         mNativeOfflinePageBridge, OfflinePageBridge.this, url, callback);
     }
@@ -563,7 +563,7 @@ public class OfflinePageBridge {
      * @return True if a trusted offline page is shown.
      */
     public boolean isShowingTrustedOfflinePage(WebContents webContents) {
-        return org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
+        return org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
                 .isShowingTrustedOfflinePage(
                         mNativeOfflinePageBridge, OfflinePageBridge.this, webContents);
     }
@@ -575,7 +575,7 @@ public class OfflinePageBridge {
      * @param callback Callback to notify the result.
      */
     public void acquireFileAccessPermission(WebContents webContents, Callback<Boolean> callback) {
-        org.chromium.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
+        org.monyhar.chrome.browser.offlinepages.OfflinePageBridgeJni.get()
                 .acquireFileAccessPermission(
                         mNativeOfflinePageBridge, OfflinePageBridge.this, webContents, callback);
     }

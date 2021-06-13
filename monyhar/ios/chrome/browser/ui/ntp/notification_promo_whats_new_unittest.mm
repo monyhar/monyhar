@@ -16,7 +16,7 @@
 #include "components/prefs/testing_pref_service.h"
 #include "components/variations/variations_associated_data.h"
 #include "ios/chrome/browser/notification_promo.h"
-#include "ios/chrome/grit/ios_chromium_strings.h"
+#include "ios/chrome/grit/ios_monyhar_strings.h"
 #include "ios/public/provider/chrome/browser/images/branded_image_icon_types.h"
 #include "testing/platform_test.h"
 #include "ui/base/l10n/l10n_util.h"
@@ -136,15 +136,15 @@ TEST_F(NotificationPromoWhatsNewTest, NotificationPromoCommandTest) {
 // Test that a url-based, valid promo is shown with the correct text and icon.
 TEST_F(NotificationPromoWhatsNewTest, NotificationPromoURLTest) {
   Init("3 Aug 1999 9:26:06 GMT", "3 Aug 2199 9:26:06 GMT", "moveToDockTip", "0",
-       "url", "http://blog.chromium.org", "", "TestURLPromo", "", "0", "0");
+       "url", "http://blog.monyhar.org", "", "TestURLPromo", "", "0", "0");
   RunTests(l10n_util::GetStringUTF8(IDS_IOS_MOVE_TO_DOCK_TIP), "url",
-           "http://blog.chromium.org/", "", WHATS_NEW_INFO, true);
+           "http://blog.monyhar.org/", "", WHATS_NEW_INFO, true);
 }
 
 // Test that a promo without a valid promo type is not shown.
 TEST_F(NotificationPromoWhatsNewTest, NotificationPromoNoTypeTest) {
   Init("3 Aug 1999 9:26:06 GMT", "3 Aug 2199 9:26:06 GMT", "moveToDockTip", "0",
-       "invalid type", "http://blog.chromium.org", "", "TestPromo", "", "0",
+       "invalid type", "http://blog.monyhar.org", "", "TestPromo", "", "0",
        "0");
   EXPECT_FALSE(promo_.CanShow());
 }
@@ -174,14 +174,14 @@ TEST_F(NotificationPromoWhatsNewTest, NotificationPromoInvalidCommandTest) {
 // Test that a promo without a metric name is not shown.
 TEST_F(NotificationPromoWhatsNewTest, NotificationPromoNoMetricTest) {
   Init("3 Aug 1999 9:26:06 GMT", "3 Aug 2199 9:26:06 GMT", "moveToDockTip", "0",
-       "url", "http://blog.chromium.org", "", "", "", "0", "0");
+       "url", "http://blog.monyhar.org", "", "", "", "0", "0");
   EXPECT_FALSE(promo_.CanShow());
 }
 
 // Test that if no localized text is found, the promo is not shown.
 TEST_F(NotificationPromoWhatsNewTest, NotificationPromoNoLocalizedTextTest) {
   Init("3 Aug 1999 9:26:06 GMT", "3 Aug 2199 9:26:06 GMT", "TEST BAD STRING",
-       "0", "url", "http://blog.chromium.org", "", "TestURLPromo", "", "0",
+       "0", "url", "http://blog.monyhar.org", "", "TestURLPromo", "", "0",
        "0");
   EXPECT_FALSE(promo_.CanShow());
 }

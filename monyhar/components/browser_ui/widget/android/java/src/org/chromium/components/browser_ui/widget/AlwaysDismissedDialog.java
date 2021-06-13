@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget;
+package org.monyhar.components.browser_ui.widget;
 
 import android.app.Activity;
 import android.app.Dialog;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationStatus;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationStatus;
 
 /**
  * Dialog subclass that ensures that dismiss() is called, even if the dialog is implicitly dismissed

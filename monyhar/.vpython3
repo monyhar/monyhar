@@ -1,7 +1,7 @@
 # This is a vpython "spec" file.
 #
 # It describes patterns for python wheel dependencies of the python scripts in
-# the chromium repo, particularly for dependencies that have compiled components
+# the monyhar repo, particularly for dependencies that have compiled components
 # (since pure-python dependencies can be easily vendored into third_party).
 #
 # When vpython is invoked, it finds this file and builds a python VirtualEnv,
@@ -9,7 +9,7 @@
 # CIPD (the "Chrome Infrastructure Package Deployer" service). Unlike `pip`,
 # this never requires the end-user machine to have a working python extension
 # compilation environment. All of these packages are built using:
-#   https://chromium.googlesource.com/infra/infra/+/main/infra/tools/dockerbuild/
+#   https://monyhar.googlesource.com/infra/infra/+/main/infra/tools/dockerbuild/
 #
 # All python scripts in the repo share this same spec, to avoid dependency
 # fragmentation.
@@ -20,7 +20,7 @@
 #   vpython path/to/script.py some --arguments
 #
 # Read more about `vpython` and how to modify this file here:
-#   https://chromium.googlesource.com/infra/infra/+/main/doc/users/vpython.md
+#   https://monyhar.googlesource.com/infra/infra/+/main/doc/users/vpython.md
 
 python_version: "3.8"
 # Used by:

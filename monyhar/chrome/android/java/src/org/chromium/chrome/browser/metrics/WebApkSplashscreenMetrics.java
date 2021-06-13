@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.metrics;
+package org.monyhar.chrome.browser.metrics;
 
-import org.chromium.chrome.browser.browserservices.ui.splashscreen.SplashscreenObserver;
+import org.monyhar.chrome.browser.browserservices.ui.splashscreen.SplashscreenObserver;
 
 /**
  * This class records cold start WebApk splashscreen metrics starting from the launch of the WebAPK

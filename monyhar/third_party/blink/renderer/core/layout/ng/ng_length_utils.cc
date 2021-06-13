@@ -867,7 +867,7 @@ LogicalSize ComputeReplacedSize(const NGBlockNode& node,
     // Replaced elements in quirks-mode resolve their min/max block-sizes
     // against a different size than the main size. See:
     //  - https://www.w3.org/TR/CSS21/visudet.html#min-max-heights
-    //  - https://bugs.chromium.org/p/chromium/issues/detail?id=385877
+    //  - https://bugs.monyhar.org/p/monyhar/issues/detail?id=385877
     // For the history on this behavior. Fortunately if this is the case we can
     // just use the given available size to resolve these sizes against.
     const LayoutUnit min_max_percentage_resolution_size =

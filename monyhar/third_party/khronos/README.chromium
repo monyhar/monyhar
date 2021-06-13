@@ -23,7 +23,7 @@ and not here.
 noninclude/GL/glext.h
  - Added missing function prototypes and enums for GL_KHR_robustness
 GLES2/gl2.h
- - Added include of gl2chromium.h
+ - Added include of gl2monyhar.h
 GLES2/gl2ext.h
  - Chromium-specific define to account for issues in gles2_conform_test,
    see http://crbug.com/329708.

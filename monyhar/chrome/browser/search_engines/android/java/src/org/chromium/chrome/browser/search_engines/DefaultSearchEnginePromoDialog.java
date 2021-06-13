@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.search_engines;
+package org.monyhar.chrome.browser.search_engines;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -13,10 +13,10 @@ import android.widget.Button;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.components.browser_ui.widget.PromoDialog;
-import org.chromium.components.browser_ui.widget.RadioButtonLayout;
+import org.monyhar.base.Callback;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.components.browser_ui.widget.PromoDialog;
+import org.monyhar.components.browser_ui.widget.RadioButtonLayout;
 
 /** A dialog that forces the user to choose a default search engine. */
 public class DefaultSearchEnginePromoDialog extends PromoDialog {

@@ -1,5 +1,5 @@
 From bdf452c322b92b47b217b7a425f26fe9c4c21aeb Mon Sep 17 00:00:00 2001
-From: Takuto Ikuta <tikuta@chromium.org>
+From: Takuto Ikuta <tikuta@monyhar.org>
 Date: Mon, 24 May 2021 17:09:21 +0900
 Subject: [PATCH] jinja2: make compiled template deterministic for python3
 

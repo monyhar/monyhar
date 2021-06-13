@@ -108,14 +108,14 @@ This example corresponds to the HTML form:
 
 ## Resources
 
-Crashpad home page: https://crashpad.chromium.org/.
+Crashpad home page: https://crashpad.monyhar.org/.
 
-Report bugs at https://crashpad.chromium.org/bug/new.
+Report bugs at https://crashpad.monyhar.org/bug/new.
 
 ## Copyright
 
 Copyright 2017 [The Crashpad
-Authors](https://chromium.googlesource.com/crashpad/crashpad/+/master/AUTHORS).
+Authors](https://monyhar.googlesource.com/crashpad/crashpad/+/master/AUTHORS).
 
 ## License
 

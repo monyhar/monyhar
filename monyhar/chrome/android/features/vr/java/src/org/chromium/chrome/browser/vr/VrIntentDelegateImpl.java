@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr;
+package org.monyhar.chrome.browser.vr;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,7 +13,7 @@ import com.google.vr.ndk.base.DaydreamApi;
  * {@link VrIntentDelegate} implementation if the VR module is available.
  */
 /* package */ class VrIntentDelegateImpl extends VrIntentDelegate {
-    /* package */ static final String VR_FRE_INTENT_EXTRA = "org.chromium.chrome.browser.vr.VR_FRE";
+    /* package */ static final String VR_FRE_INTENT_EXTRA = "org.monyhar.chrome.browser.vr.VR_FRE";
 
     @Override
     public Intent setupVrFreIntent(Context context, Intent freIntent) {

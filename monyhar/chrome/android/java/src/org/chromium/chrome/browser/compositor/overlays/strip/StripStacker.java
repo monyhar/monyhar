@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.overlays.strip;
+package org.monyhar.chrome.browser.compositor.overlays.strip;
 
-import org.chromium.base.MathUtils;
-import org.chromium.chrome.browser.compositor.layouts.Layout;
+import org.monyhar.base.MathUtils;
+import org.monyhar.chrome.browser.compositor.layouts.Layout;
 
 /**
  * An interface that defines how to stack tabs and how they should look visually.  This lets

@@ -1,5 +1,5 @@
 
-package org.chromium.chromecast.shell;
+package org.monyhar.chromecast.shell;
 
 public class BuildConfig {
 

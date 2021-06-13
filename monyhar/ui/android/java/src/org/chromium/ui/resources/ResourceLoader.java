@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.resources;
+package org.monyhar.ui.resources;
 
 /**
  * A class responsible for loading {@link Resource}s for the {@link ResourceManager}.

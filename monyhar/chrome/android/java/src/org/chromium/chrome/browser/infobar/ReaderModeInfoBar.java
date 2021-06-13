@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.infobar;
+package org.monyhar.chrome.browser.infobar;
 
 import static android.view.View.IMPORTANT_FOR_ACCESSIBILITY_NO;
 
@@ -14,15 +14,15 @@ import android.widget.TextView;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.dom_distiller.ReaderModeManager;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.browser_ui.widget.text.AccessibleTextView;
-import org.chromium.components.infobars.InfoBar;
-import org.chromium.components.infobars.InfoBarCompactLayout;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.dom_distiller.ReaderModeManager;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.browser_ui.widget.text.AccessibleTextView;
+import org.monyhar.components.infobars.InfoBar;
+import org.monyhar.components.infobars.InfoBarCompactLayout;
 
 /** This is the InfoBar implementation of the Reader Mode UI. */
 public class ReaderModeInfoBar extends InfoBar {

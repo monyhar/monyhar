@@ -22,7 +22,7 @@ constexpr char kTestShelfGroupId[] = "some_shelf_group";
 constexpr char kIntentWithShelfGroupId[] =
     "#Intent;launchFlags=0x18001000;"
     "component=com.test.app/com.test.app.some.activity;"
-    "S.org.chromium.arc.shelf_group_id=some_shelf_group;end";
+    "S.org.monyhar.arc.shelf_group_id=some_shelf_group;end";
 
 std::string GetPlayStoreInitialLaunchIntent() {
   return arc::GetLaunchIntent(arc::kPlayStorePackage, arc::kPlayStoreActivity,
@@ -73,7 +73,7 @@ TEST_F(ArcAppUtilsTest, LaunchIntent) {
                 arc::Intent::FLAG_ACTIVITY_LAUNCH_ADJACENT);
   ASSERT_EQ(intent2.extra_params().size(), 1U);
   EXPECT_TRUE(intent2.HasExtraParam(
-      "S.org.chromium.arc.shelf_group_id=some_shelf_group"));
+      "S.org.monyhar.arc.shelf_group_id=some_shelf_group"));
 }
 
 TEST_F(ArcAppUtilsTest, ShelfGroupId) {

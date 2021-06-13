@@ -28,7 +28,7 @@ that have been published to the beta track. The Play Store updates users to the
 APK with the highest `versionCode` among eligible tracks.
 
 Google publishes an APK of Android System WebView to the beta track based on the
-[same release cycle](https://chromiumdash.appspot.com/schedule) as Chrome Beta. 
+[same release cycle](https://monyhardash.appspot.com/schedule) as Chrome Beta. 
 
 Similarly, builds of Chrome for "Dev" channel releases include a build of
 WebView which gets published to an alpha track. Only users belonging to specific
@@ -86,7 +86,7 @@ use.
 
 Trichrome WebView APKs (of all channels) have a `versionCode` value with a final
 digit of 3 ([to match Trichrome Chrome's
-`versionCode`](https://cs.chromium.org/chromium/src/build/util/android_chrome_version.py)).
+`versionCode`](https://cs.monyhar.org/monyhar/src/build/util/android_chrome_version.py)).
 
 Users may choose to opt into the beta program for Android System WebView
 (com.google.android.webview), but it will have no effect on Android Q, as the
@@ -104,4 +104,4 @@ update deltas.
 
 - [Try out WebView beta](/android_webview/docs/prerelease.md)
 - [Chrome Release
-  Channels](https://www.chromium.org/getting-involved/dev-channel)
+  Channels](https://www.monyhar.org/getting-involved/dev-channel)

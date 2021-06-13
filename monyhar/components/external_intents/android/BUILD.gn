@@ -6,15 +6,15 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/components/external_intents/AuthenticatorNavigationInterceptor.java",
-    "java/src/org/chromium/components/external_intents/ExternalIntentsFeatures.java",
-    "java/src/org/chromium/components/external_intents/ExternalIntentsSwitches.java",
-    "java/src/org/chromium/components/external_intents/ExternalNavigationDelegate.java",
-    "java/src/org/chromium/components/external_intents/ExternalNavigationHandler.java",
-    "java/src/org/chromium/components/external_intents/ExternalNavigationParams.java",
-    "java/src/org/chromium/components/external_intents/InterceptNavigationDelegateClient.java",
-    "java/src/org/chromium/components/external_intents/InterceptNavigationDelegateImpl.java",
-    "java/src/org/chromium/components/external_intents/RedirectHandler.java",
+    "java/src/org/monyhar/components/external_intents/AuthenticatorNavigationInterceptor.java",
+    "java/src/org/monyhar/components/external_intents/ExternalIntentsFeatures.java",
+    "java/src/org/monyhar/components/external_intents/ExternalIntentsSwitches.java",
+    "java/src/org/monyhar/components/external_intents/ExternalNavigationDelegate.java",
+    "java/src/org/monyhar/components/external_intents/ExternalNavigationHandler.java",
+    "java/src/org/monyhar/components/external_intents/ExternalNavigationParams.java",
+    "java/src/org/monyhar/components/external_intents/InterceptNavigationDelegateClient.java",
+    "java/src/org/monyhar/components/external_intents/InterceptNavigationDelegateImpl.java",
+    "java/src/org/monyhar/components/external_intents/RedirectHandler.java",
   ]
 
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
@@ -33,7 +33,7 @@ android_library("java") {
     "//url:gurl_java",
     "//url:origin_java",
   ]
-  resources_package = "org.chromium.components.external_intents"
+  resources_package = "org.monyhar.components.external_intents"
 }
 
 android_resources("java_resources") {
@@ -46,8 +46,8 @@ android_resources("java_resources") {
 
 generate_jni("jni_headers") {
   sources = [
-    "java/src/org/chromium/components/external_intents/ExternalIntentsFeatures.java",
-    "java/src/org/chromium/components/external_intents/InterceptNavigationDelegateImpl.java",
+    "java/src/org/monyhar/components/external_intents/ExternalIntentsFeatures.java",
+    "java/src/org/monyhar/components/external_intents/InterceptNavigationDelegateImpl.java",
   ]
 }
 
@@ -70,8 +70,8 @@ android_library("javatests") {
   testonly = true
 
   sources = [
-    "javatests/src/org/chromium/components/external_intents/ExternalNavigationHandlerTest.java",
-    "javatests/src/org/chromium/components/external_intents/RedirectHandlerTest.java",
+    "javatests/src/org/monyhar/components/external_intents/ExternalNavigationHandlerTest.java",
+    "javatests/src/org/monyhar/components/external_intents/RedirectHandlerTest.java",
   ]
   deps = [
     ":java",

@@ -11,7 +11,7 @@ namespace ui {
 // handle orientation on java and native side.
 
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.ui.touch_selection
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.ui.touch_selection
 enum class TouchHandleOrientation {
   LEFT,
   CENTER,

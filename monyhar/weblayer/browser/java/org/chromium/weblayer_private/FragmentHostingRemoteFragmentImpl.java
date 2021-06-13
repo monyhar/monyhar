@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.content.Context;
 import android.content.ContextWrapper;
@@ -20,8 +20,8 @@ import androidx.fragment.app.FragmentController;
 import androidx.fragment.app.FragmentHostCallback;
 import androidx.fragment.app.FragmentManager;
 
-import org.chromium.weblayer_private.interfaces.IRemoteFragmentClient;
-import org.chromium.weblayer_private.interfaces.StrictModeWorkaround;
+import org.monyhar.weblayer_private.interfaces.IRemoteFragmentClient;
+import org.monyhar.weblayer_private.interfaces.StrictModeWorkaround;
 
 import java.lang.reflect.Constructor;
 

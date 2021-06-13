@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr.mock;
+package org.monyhar.chrome.browser.vr.mock;
 
-import org.chromium.chrome.browser.vr.VrCoreVersionChecker;
+import org.monyhar.chrome.browser.vr.VrCoreVersionChecker;
 
 /**
  * Mock version of VrCoreVersionCheckerImpl that allows setting of the return

@@ -196,7 +196,7 @@ class ChromesiteBuilder(StandaloneHTMLBuilder):
     # if self.chromesite_production_mode:
     #   # We decided to keep the manual _book.yaml for now;
     #   # The code for auto-generating YAML TOCs from index.rst was removed in
-    #   # https://codereview.chromium.org/57923006/
+    #   # https://codereview.monyhar.org/57923006/
     #   self.info(bold('generating YAML table-of-contents... '))
     #   subs = { 'version': PEPPER_VERSION }
     #   with open(os.path.join(self.env.srcdir, '_book.yaml')) as in_f:

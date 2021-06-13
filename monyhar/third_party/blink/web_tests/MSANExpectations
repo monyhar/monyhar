@@ -5,7 +5,7 @@
 # This file is used for tests that only need to be suppressed on
 # the Chromium Blink MSan bots.
 # Further documentation:
-# https://chromium.googlesource.com/chromium/src/+/master/docs/testing/web_test_expectations.md
+# https://monyhar.googlesource.com/monyhar/src/+/master/docs/testing/web_test_expectations.md
 
 # Those stress V8's simulator, making them very slow under MSan.
 crbug.com/420198 [ Linux ] fast/js/regress/* [ Skip ]
@@ -77,7 +77,7 @@ crbug.com/902685 [ Linux ] http/tests/devtools/isolated-code-cache/cross-origin-
 crbug.com/803276 inspector-protocol/memory/sampling-native-profile.js [ Skip ]
 crbug.com/803276 inspector-protocol/memory/sampling-native-snapshot.js [ Skip ]
 
-# The following test is flaky and timing out on chromium.webkit/WebKit Linux Trusty MSAN.
+# The following test is flaky and timing out on monyhar.webkit/WebKit Linux Trusty MSAN.
 crbug.com/851497 http/tests/devtools/tracing/timeline-style/timeline-style-recalc-all-invalidator-types.js [ Pass Timeout ]
 
 crbug.com/862750 [ Linux ] inspector-protocol/memory/sampling-native-profile-blink-gc.js [ Pass Crash ]

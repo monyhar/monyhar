@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.base;
+package org.monyhar.ui.base;
 
 import android.app.KeyguardManager;
 import android.content.BroadcastReceiver;
@@ -12,9 +12,9 @@ import android.content.IntentFilter;
 import android.os.PowerManager;
 import android.os.SystemClock;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
 
 import java.util.concurrent.TimeUnit;
 

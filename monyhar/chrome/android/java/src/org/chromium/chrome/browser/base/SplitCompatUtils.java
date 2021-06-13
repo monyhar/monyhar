@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.base;
+package org.monyhar.chrome.browser.base;
 
 import android.content.Context;
 import android.content.ContextWrapper;
@@ -12,9 +12,9 @@ import androidx.collection.ArraySet;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentFactory;
 
-import org.chromium.base.BundleUtils;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.annotations.IdentifierNameString;
+import org.monyhar.base.BundleUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.annotations.IdentifierNameString;
 
 /** Utils for compatibility with isolated splits. */
 public class SplitCompatUtils {

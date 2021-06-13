@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.page_info;
+package org.monyhar.components.page_info;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -12,15 +12,15 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.FragmentManager;
 
-import org.chromium.base.Callback;
-import org.chromium.base.Consumer;
-import org.chromium.components.browser_ui.site_settings.SiteSettingsDelegate;
-import org.chromium.components.content_settings.CookieControlsBridge;
-import org.chromium.components.content_settings.CookieControlsObserver;
-import org.chromium.components.embedder_support.browser_context.BrowserContextHandle;
-import org.chromium.components.omnibox.AutocompleteSchemeClassifier;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.url.GURL;
+import org.monyhar.base.Callback;
+import org.monyhar.base.Consumer;
+import org.monyhar.components.browser_ui.site_settings.SiteSettingsDelegate;
+import org.monyhar.components.content_settings.CookieControlsBridge;
+import org.monyhar.components.content_settings.CookieControlsObserver;
+import org.monyhar.components.embedder_support.browser_context.BrowserContextHandle;
+import org.monyhar.components.omnibox.AutocompleteSchemeClassifier;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.url.GURL;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

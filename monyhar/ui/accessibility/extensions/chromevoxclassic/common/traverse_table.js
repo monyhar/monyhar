@@ -987,7 +987,7 @@ cvox.TraverseTable.prototype.getRow = function() {
  *     2) Null if the table does not contain a summary attribute.
  */
 cvox.TraverseTable.prototype.summaryText = function() {
-  // see http://code.google.com/p/chromium/issues/detail?id=46567
+  // see http://code.google.com/p/monyhar/issues/detail?id=46567
   // for information why this is necessary
   if (!this.activeTable_.hasAttribute('summary')) {
     return null;

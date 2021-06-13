@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omaha;
+package org.monyhar.chrome.browser.omaha;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -12,12 +12,12 @@ import android.text.format.DateUtils;
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.StreamUtil;
-import org.chromium.base.ThreadUtils;
-import org.chromium.chrome.browser.version.ChromeVersionInfo;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.StreamUtil;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.chrome.browser.version.ChromeVersionInfo;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
@@ -55,7 +55,7 @@ import java.util.Date;
  * http://docs.google.com/a/google.com/document/d/1scTCovqASf5ktkOeVj8wFRkWTCeDYw2LrOBNn05CDB0/edit
  */
 public class OmahaBase {
-    // Used in various org.chromium.chrome.browser.omaha files.
+    // Used in various org.monyhar.chrome.browser.omaha files.
     static final String TAG = "omaha";
 
     /** Version config data structure. */
@@ -118,7 +118,7 @@ public class OmahaBase {
 
     /** Deprecated; kept around to cancel alarms set for OmahaClient pre-M58. */
     private static final String ACTION_REGISTER_REQUEST =
-            "org.chromium.chrome.browser.omaha.ACTION_REGISTER_REQUEST";
+            "org.monyhar.chrome.browser.omaha.ACTION_REGISTER_REQUEST";
 
     // Delays between events.
     static final long MS_POST_BASE_DELAY = DateUtils.HOUR_IN_MILLIS;

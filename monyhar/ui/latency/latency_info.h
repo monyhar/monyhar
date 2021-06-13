@@ -38,7 +38,7 @@ class LatencyInfoDataView;
 // When adding new components, please update
 // //third_party/perfetto/protos/perfetto/trace/track_event/chrome_latency_info.proto
 // so both this and the internal versions can be kept up to date. Or reach out
-// to tracing@chromium.org so we can assist.
+// to tracing@monyhar.org so we can assist.
 enum LatencyComponentType {
   // ---------------------------BEGIN COMPONENT-------------------------------
   // BEGIN COMPONENT is when we show the latency begin in chrome://tracing.

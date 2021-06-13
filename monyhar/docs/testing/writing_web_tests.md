@@ -15,7 +15,7 @@ Web tests should be used to accomplish one of the following goals:
    get better. This is very much in line with our goal to move the Web forward.
 2. When a Blink feature cannot be tested using the tools provided by WPT, and
    cannot be easily covered by
-   [C++ unit tests](https://cs.chromium.org/chromium/src/third_party/blink/renderer/web/tests/?q=webframetest&sq=package:chromium&type=cs),
+   [C++ unit tests](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/web/tests/?q=webframetest&sq=package:monyhar&type=cs),
    the feature must be covered by web tests, to avoid unexpected regressions.
    These tests will use Blink-specific testing APIs that are only available in
    [content_shell](./web_tests_in_content_shell.md).
@@ -25,7 +25,7 @@ If you know that Blink web tests are upstreamed to other projects, such as
 [test262](https://github.com/tc39/test262), please update this document. Most
 importantly, our guidelines should to make it easy for our tests to be
 upstreamed. The
-[blink-dev mailing list](https://groups.google.com/a/chromium.org/forum/#!forum/blink-dev)
+[blink-dev mailing list](https://groups.google.com/a/monyhar.org/forum/#!forum/blink-dev)
 will be happy to help you harmonize our current guidelines with communal test
 repositories.
 ***
@@ -80,7 +80,7 @@ to the WPT project. To this end, tests should follow the
 
 There is no style guide that applies to all web tests. However, some projects
 have adopted style guides, such as the
-[ServiceWorker Tests Style guide](https://www.chromium.org/blink/serviceworker/testing).
+[ServiceWorker Tests Style guide](https://www.monyhar.org/blink/serviceworker/testing).
 
 Our [document on web tests tips](./web_tests_tips.md) summarizes the most
 important WPT guidelines and highlights some JavaScript concepts that are worth
@@ -335,9 +335,9 @@ cd src/third_party/blink/tools
 ```
 
 The web tests will be served from `http://127.0.0.1:8000`. For example, to
-run the test `http/tests/serviceworker/chromium/service-worker-allowed.html`,
+run the test `http/tests/serviceworker/monyhar/service-worker-allowed.html`,
 navigate to
-`http://127.0.0.1:8000/serviceworker/chromium/service-worker-allowed.html`. Some
+`http://127.0.0.1:8000/serviceworker/monyhar/service-worker-allowed.html`. Some
 tests will behave differently if you go to 127.0.0.1 instead of localhost, so
 use 127.0.0.1.
 
@@ -421,7 +421,7 @@ The reference page, which must be named `ol-reversed-expected.html`, is below.
 *** promo
 The method for pointing out a test's reference page is still in flux, and is
 being discussed on
-[blink-dev](https://groups.google.com/a/chromium.org/d/topic/blink-dev/XsR6PKRrS1E/discussion).
+[blink-dev](https://groups.google.com/a/monyhar.org/d/topic/blink-dev/XsR6PKRrS1E/discussion).
 ***
 
 ## Pixel Tests
@@ -461,7 +461,7 @@ without creating scrollbars.
 
 *** promo
 The recommendation of using Ahem in pixel tests is being discussed on
-[blink-dev](https://groups.google.com/a/chromium.org/d/topic/blink-dev/XsR6PKRrS1E/discussion).
+[blink-dev](https://groups.google.com/a/monyhar.org/d/topic/blink-dev/XsR6PKRrS1E/discussion).
 ***
 
 The following snippet includes the Ahem font in a web test.

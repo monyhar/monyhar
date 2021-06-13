@@ -11,7 +11,7 @@ namespace syncer {
 // back a UMA histogram and should be treated as append-only.
 //
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.sync
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.sync
 enum StopSource {
   // Deprecated: PROFILE_DESTRUCTION = 0,
   SIGN_OUT = 1,              // The user signed out of Chrome.

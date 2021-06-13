@@ -12,7 +12,7 @@ import os
 import subprocess
 import sys
 
-from chrome_telemetry_build import chromium_config
+from chrome_telemetry_build import monyhar_config
 from core import path_util
 path_util.AddTelemetryToPath()
 
@@ -23,9 +23,9 @@ def main():
   telemetry_test_config = os.path.join(
       path_util.GetTelemetryDir(), 'telemetry',
       'telemetry_unittest_deps.json')
-  project_config = chromium_config.ChromiumConfig(
+  project_config = monyhar_config.ChromiumConfig(
       top_level_dir=path_util.GetTelemetryDir(),
-      client_configs=[chromium_config.CLIENT_CONFIG_PATH, telemetry_test_config]
+      client_configs=[monyhar_config.CLIENT_CONFIG_PATH, telemetry_test_config]
   )
   return unittest_runner.Run(
       project_config, disable_cloud_storage_io_during_test=True)

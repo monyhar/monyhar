@@ -38,7 +38,7 @@ constexpr base::TimeDelta kCheckPeriod = base::TimeDelta::FromSeconds(1);
 // window class prefix.
 bool IsChromeWindow(HWND window) {
   // The substring used to identify if a window belongs to Chrome. See also
-  // https://cs.chromium.org/chromium/src/ui/gfx/win/window_impl.cc?q=Chrome_WidgetWin_
+  // https://cs.monyhar.org/monyhar/src/ui/gfx/win/window_impl.cc?q=Chrome_WidgetWin_
   static constexpr wchar_t kChromeWindowClassPrefix[] = L"Chrome_WidgetWin_";
 
   if (!window)

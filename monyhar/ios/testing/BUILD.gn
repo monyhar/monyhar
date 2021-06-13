@@ -103,8 +103,8 @@ bundle_data("http_server_bundle_data") {
   sources = [
     "data/http_server_files/autofill_smoke_test.html",
     "data/http_server_files/browsing_prevent_default_test_page.html",
-    "data/http_server_files/chromium_logo.png",
-    "data/http_server_files/chromium_logo_page.html",
+    "data/http_server_files/monyhar_logo.png",
+    "data/http_server_files/monyhar_logo_page.html",
     "data/http_server_files/complex_document.pdf",
     "data/http_server_files/console.html",
     "data/http_server_files/console_with_iframe.html",

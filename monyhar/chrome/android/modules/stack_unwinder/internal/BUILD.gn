@@ -6,7 +6,7 @@ import("//build/config/android/rules.gni")
 import("//chrome/android/modules/buildflags.gni")
 
 android_library("java") {
-  sources = [ "java/src/org/chromium/chrome/modules/stack_unwinder/StackUnwinderModuleContentsImpl.java" ]
+  sources = [ "java/src/org/monyhar/chrome/modules/stack_unwinder/StackUnwinderModuleContentsImpl.java" ]
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
   deps = [
     "//base:base_java",
@@ -15,7 +15,7 @@ android_library("java") {
 }
 
 generate_jni("jni_headers") {
-  sources = [ "java/src/org/chromium/chrome/modules/stack_unwinder/StackUnwinderModuleContentsImpl.java" ]
+  sources = [ "java/src/org/monyhar/chrome/modules/stack_unwinder/StackUnwinderModuleContentsImpl.java" ]
 }
 
 generate_jni_registration("jni_registration") {

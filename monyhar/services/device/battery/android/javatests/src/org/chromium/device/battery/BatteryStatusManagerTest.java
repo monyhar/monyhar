@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.device.battery;
+package org.monyhar.device.battery;
 
 import android.content.Intent;
 import android.os.BatteryManager;
@@ -14,8 +14,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.device.mojom.BatteryStatus;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.device.mojom.BatteryStatus;
 
 /**
  * Test suite for BatteryStatusManager.

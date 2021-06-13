@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.webfeed;
+package org.monyhar.chrome.browser.feed.webfeed;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.url.GURL;
+import org.monyhar.base.Callback;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +24,7 @@ import java.util.List;
 public class WebFeedBridge {
     // Access to JNI test hooks for other libraries. This can go away once more Feed code is
     // migrated to chrome/browser/feed.
-    public static org.chromium.base.JniStaticTestMocker<WebFeedBridge.Natives>
+    public static org.monyhar.base.JniStaticTestMocker<WebFeedBridge.Natives>
     getTestHooksForTesting() {
         return WebFeedBridgeJni.TEST_HOOKS;
     }

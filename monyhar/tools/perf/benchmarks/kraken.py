@@ -10,7 +10,7 @@ import page_sets
 from benchmarks import press
 
 
-@benchmark.Info(emails=['hablich@chromium.org'],
+@benchmark.Info(emails=['hablich@monyhar.org'],
                 component='Blink>JavaScript')
 class Kraken(press._PressBenchmark): # pylint: disable=protected-access
   """Mozilla's Kraken JavaScript benchmark.

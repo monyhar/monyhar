@@ -14,7 +14,7 @@ template("chromecast_resource_sizes_test") {
 
     deps = [ "//chromecast/resource_sizes:chromecast_resource_sizes_py" ]
     executable_args = [
-      "--chromium-output-directory",
+      "--monyhar-output-directory",
       "@WrappedPath(.)",
     ]
   }

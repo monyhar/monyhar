@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webauth.authenticator;
+package org.monyhar.chrome.browser.webauth.authenticator;
 
 import android.app.ActivityManager;
 import android.content.Intent;
@@ -15,12 +15,12 @@ import android.util.Base64;
 
 import androidx.fragment.app.Fragment;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.Log;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ChromeBaseAppCompatActivity;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
-import org.chromium.chrome.browser.webauthn.CableAuthenticatorModuleProvider;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ChromeBaseAppCompatActivity;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.chrome.browser.webauthn.CableAuthenticatorModuleProvider;
 
 /**
  * Phone as a Security Key activity.
@@ -41,7 +41,7 @@ public class CableAuthenticatorActivity extends ChromeBaseAppCompatActivity {
     static final String USB_ACCESSORY_ATTACHED =
             "android.hardware.usb.action.USB_ACCESSORY_ATTACHED";
     static final String SERVER_LINK_EXTRA =
-            "org.chromium.chrome.browser.webauth.authenticator.ServerLink";
+            "org.monyhar.chrome.browser.webauth.authenticator.ServerLink";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

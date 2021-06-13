@@ -28,14 +28,14 @@ def SymbolizeLogcat(logcat, dest, symbolizer, abi):
   Build fingerprint: 'google/shamu/shamu:7.1.1/NMF20B/3370:userdebug/dev-keys'
   Revision: '0'
   ABI: 'arm'
-  pid: 28936, tid: 28936, name: chromium.chrome  >>> org.chromium.chrome <<<
+  pid: 28936, tid: 28936, name: monyhar.chrome  >>> org.monyhar.chrome <<<
   signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
   Abort message: '[FATAL:debug_urls.cc(151)] Check failed: false.
-  #00 0x63e16c41 /data/app/org.chromium.chrome-1/lib/arm/libchrome.so+0x0006cc4
-  #01 0x63f19be3 /data/app/org.chromium.chrome-1/lib/arm/libchrome.so+0x0016fbe
-  #02 0x63f19737 /data/app/org.chromium.chrome-1/lib/arm/libchrome.so+0x0016f73
-  #03 0x63f18ddf /data/app/org.chromium.chrome-1/lib/arm/libchrome.so+0x0016edd
-  #04 0x63f18b79 /data/app/org.chromium.chrome-1/lib/arm/libchrome.so+0x0016eb7
+  #00 0x63e16c41 /data/app/org.monyhar.chrome-1/lib/arm/libchrome.so+0x0006cc4
+  #01 0x63f19be3 /data/app/org.monyhar.chrome-1/lib/arm/libchrome.so+0x0016fbe
+  #02 0x63f19737 /data/app/org.monyhar.chrome-1/lib/arm/libchrome.so+0x0016f73
+  #03 0x63f18ddf /data/app/org.monyhar.chrome-1/lib/arm/libchrome.so+0x0016edd
+  #04 0x63f18b79 /data/app/org.monyhar.chrome-1/lib/arm/libchrome.so+0x0016eb7
   #05 0xab53f319 /system/lib/libart.so+0x000a3319
   #06
      r0 00000000  r1 00007108  r2 00000006  r3 00000008
@@ -49,12 +49,12 @@ def SymbolizeLogcat(logcat, dest, symbolizer, abi):
      #02 pc 0001d635  /system/lib/libc.so (raise+10)
      #03 pc 00019181  /system/lib/libc.so (__libc_android_abort+34)
      #04 pc 00017048  /system/lib/libc.so (abort+4)
-     #05 pc 00948605  /data/app/org.chromium.chrome-1/lib/arm/libchrome.so
-     #06 pc 002c9f73  /data/app/org.chromium.chrome-1/lib/arm/libchrome.so
-     #07 pc 003ccbe1  /data/app/org.chromium.chrome-1/lib/arm/libchrome.so
-     #08 pc 003cc735  /data/app/org.chromium.chrome-1/lib/arm/libchrome.so
-     #09 pc 003cbddf  /data/app/org.chromium.chrome-1/lib/arm/libchrome.so
-     #10 pc 003cbb77  /data/app/org.chromium.chrome-1/lib/arm/libchrome.so
+     #05 pc 00948605  /data/app/org.monyhar.chrome-1/lib/arm/libchrome.so
+     #06 pc 002c9f73  /data/app/org.monyhar.chrome-1/lib/arm/libchrome.so
+     #07 pc 003ccbe1  /data/app/org.monyhar.chrome-1/lib/arm/libchrome.so
+     #08 pc 003cc735  /data/app/org.monyhar.chrome-1/lib/arm/libchrome.so
+     #09 pc 003cbddf  /data/app/org.monyhar.chrome-1/lib/arm/libchrome.so
+     #10 pc 003cbb77  /data/app/org.monyhar.chrome-1/lib/arm/libchrome.so
   """
 
   with open(logcat) as logcat_file:

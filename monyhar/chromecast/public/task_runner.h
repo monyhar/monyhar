@@ -26,7 +26,7 @@ class TaskRunner {
 
   // This class is intended for use with base callback type. A template has been
   // used to avoid introducing a hard dependency on Chromium base. It is used to
-  // convert a chromium-style callback to a Task as defined above.
+  // convert a monyhar-style callback to a Task as defined above.
   template <typename T>
   class CallbackTask : public Task {
    public:

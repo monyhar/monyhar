@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed;
+package org.monyhar.chrome.browser.feed;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,11 +13,11 @@ import android.widget.FrameLayout;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.xsurface.ListContentManager;
-import org.chromium.chrome.browser.xsurface.ListContentManagerObserver;
-import org.chromium.ui.UiUtils;
-import org.chromium.url.GURL;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.xsurface.ListContentManager;
+import org.monyhar.chrome.browser.xsurface.ListContentManagerObserver;
+import org.monyhar.ui.UiUtils;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.Collections;

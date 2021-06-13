@@ -38,7 +38,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t* data, size_t size) {
   payments::ErrorLogger log;
   log.DisableInTest();
   payments::PaymentManifestParser::ParsePaymentMethodManifestIntoVectors(
-      GURL("https://chromium.org/pmm.json"), std::move(value), log,
+      GURL("https://monyhar.org/pmm.json"), std::move(value), log,
       &web_app_manifest_urls, &supported_origins);
   return 0;
 }

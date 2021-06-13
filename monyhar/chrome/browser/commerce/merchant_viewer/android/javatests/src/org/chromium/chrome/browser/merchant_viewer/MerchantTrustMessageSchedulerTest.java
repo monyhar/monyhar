@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.merchant_viewer;
+package org.monyhar.chrome.browser.merchant_viewer;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyLong;
@@ -27,14 +27,14 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.merchant_viewer.MerchantTrustMetrics.MessageClearReason;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.messages.DismissReason;
-import org.chromium.components.messages.MessageDispatcher;
-import org.chromium.components.messages.MessageScopeType;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.merchant_viewer.MerchantTrustMetrics.MessageClearReason;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.messages.DismissReason;
+import org.monyhar.components.messages.MessageDispatcher;
+import org.monyhar.components.messages.MessageScopeType;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.util.concurrent.TimeoutException;
 

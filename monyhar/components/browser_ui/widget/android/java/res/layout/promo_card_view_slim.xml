@@ -3,7 +3,7 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
 
-<org.chromium.components.browser_ui.widget.promo.PromoCardView
+<org.monyhar.components.browser_ui.widget.promo.PromoCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -23,7 +23,7 @@
       android:scaleType="fitCenter"
       android:importantForAccessibility="no" />
 
-  <org.chromium.ui.widget.TextViewWithLeading
+  <org.monyhar.ui.widget.TextViewWithLeading
       android:id="@+id/promo_title"
       android:layout_width="0dp"
       android:layout_weight="1"
@@ -33,7 +33,7 @@
       android:textAppearance="@style/TextAppearance.TextMedium.Primary"
       app:leading="@dimen/text_size_medium_leading" />
 
-  <org.chromium.ui.widget.ButtonCompat
+  <org.monyhar.ui.widget.ButtonCompat
       android:id="@+id/promo_primary_button"
       android:layout_width="wrap_content"
       android:maxWidth="@dimen/promo_slim_button_max_width"
@@ -42,4 +42,4 @@
       android:singleLine="true"
       android:layout_gravity="center|end"
       style="@style/TextButton" />
-</org.chromium.components.browser_ui.widget.promo.PromoCardView>
+</org.monyhar.components.browser_ui.widget.promo.PromoCardView>

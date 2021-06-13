@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.utils;
+package org.monyhar.utils;
 
 import android.app.Activity;
 import android.content.Context;
@@ -20,7 +20,7 @@ public class ContextUtils {
     /**
      * Extract the {@link Activity} if the given {@link Context} either is or wraps one.
      *
-     * Copied from //base/android/java/src/org/chromium/base/ContextUtils.java
+     * Copied from //base/android/java/src/org/monyhar/base/ContextUtils.java
      *
      * @param context The context to check.
      * @return Extracted activity if it exists, otherwise null.

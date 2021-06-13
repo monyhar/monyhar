@@ -3,7 +3,7 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
 
-<org.chromium.components.browser_ui.modaldialog.ModalDialogView
+<org.monyhar.components.browser_ui.modaldialog.ModalDialogView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -15,7 +15,7 @@
     <include layout="@layout/modal_dialog_title"
         android:id="@+id/title_container" />
 
-    <org.chromium.components.browser_ui.widget.FadingEdgeScrollView
+    <org.monyhar.components.browser_ui.widget.FadingEdgeScrollView
         android:id="@+id/modal_dialog_scroll_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -31,7 +31,7 @@
                 android:id="@+id/scrollable_title_container"
                 android:visibility="gone" />
 
-            <org.chromium.ui.widget.TextViewWithLeading
+            <org.monyhar.ui.widget.TextViewWithLeading
                 android:id="@+id/message"
                 android:textAppearance="@style/TextAppearance.TextMedium.Secondary"
                 app:leading="20sp"
@@ -39,7 +39,7 @@
 
         </LinearLayout>
 
-    </org.chromium.components.browser_ui.widget.FadingEdgeScrollView>
+    </org.monyhar.components.browser_ui.widget.FadingEdgeScrollView>
 
     <FrameLayout
         android:id="@+id/custom"
@@ -48,7 +48,7 @@
         android:layout_weight="1"
         android:visibility="gone" />
 
-    <org.chromium.components.browser_ui.widget.DualControlLayout
+    <org.monyhar.components.browser_ui.widget.DualControlLayout
         android:id="@+id/button_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -59,18 +59,18 @@
         app:stackedMargin="@dimen/button_bar_stacked_margin"
         app:buttonAlignment="end">
 
-        <org.chromium.ui.widget.ButtonCompat
+        <org.monyhar.ui.widget.ButtonCompat
             android:id="@+id/positive_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="?attr/buttonBarPositiveButtonStyle" />
 
-        <org.chromium.ui.widget.ButtonCompat
+        <org.monyhar.ui.widget.ButtonCompat
             android:id="@+id/negative_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="?attr/buttonBarNegativeButtonStyle" />
 
-    </org.chromium.components.browser_ui.widget.DualControlLayout>
+    </org.monyhar.components.browser_ui.widget.DualControlLayout>
 
-</org.chromium.components.browser_ui.modaldialog.ModalDialogView>
+</org.monyhar.components.browser_ui.modaldialog.ModalDialogView>

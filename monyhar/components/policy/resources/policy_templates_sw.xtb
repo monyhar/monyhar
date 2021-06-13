@@ -98,7 +98,7 @@
 
       Ukiweka sera hii, <ph name="PRODUCT_NAME" /> itatumia saraka iliyotolewa bila kujali kama mtumiaji amebainisha ripoti ya '--disk-cache-dir' au la. Ili kuepuka kupoteza data au hitilafu zisizotarajiwa, sera hii haipaswi kuwekwa kuwa thamani ya kipeo cha saraka au kwenye saraka iliyotumiwa kwa madhumuni mengine, kwa sababu <ph name="PRODUCT_NAME" /> hudhibiti maudhui yake.
 
-      Angalia https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables upate orodha ya aina zinazoweza kutumiwa.
+      Angalia https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables upate orodha ya aina zinazoweza kutumiwa.
 
       Sera hii isipowekwa saraka ya akiba chaguomsingi itatumiwa na mtumiaji ataweza kuibatilisha kwa amri ya ripoti ya mstari ya '--disk-cache-dir'.</translation>
 <translation id="113521240853905588">Huweka mipangilio ya lugha zinazoweza kutumiwa kama lugha zinazopendelewa na <ph name="PRODUCT_OS_NAME" />.
@@ -476,7 +476,7 @@ itabadilishwa na data ya hoja za utafutaji za kweli.
 <translation id="1852294065645015766">Ruhusu maudhui yacheze kiotomatiki</translation>
 <translation id="1857152770025485173">Sera hii humzuia mtumiaji kupakia kurasa za wavuti kutoka kwenye URL zisizoidhinishwa. Orodha ya URL zisizoidhinishwa hutoa orodha ya ruwaza za URL ambazo hubainisha URL zitakazoondolewa kwenye orodha ya URL zilizoidhinishwa.
 
-      Lazima URL iundwe kulingana na https://www.chromium.org/administrators/url-blacklist-filter-format.
+      Lazima URL iundwe kulingana na https://www.monyhar.org/administrators/url-blacklist-filter-format.
 
       Vipengee visivyofuata kanuni vinaweza kufafanuliwa katika sera ya URL zilizoidhinishwa. Sera hizi hazizidi vipengee 1000; vipengee vitakavyofuata vitapuuzwa.
 
@@ -519,7 +519,7 @@ itabadilishwa na data ya hoja za utafutaji za kweli.
 
       Kama hujaweka mipangilio ya sera hii, kipengele cha kuripoti vipimo na data ya uchunguzi kitazimwa kwenye vifaa visivyodhibitiwa na kuwashwa kwenye vifaa vinavyodhibitiwa.</translation>
 <translation id="1907431809333268751">Weka mipangilio ya orodha ya URL za kuingia katika akaunti ya biashara (Mifumo ya HTTP na HTTPS pekee). Alama bainifu ya nenosiri itarekodiwa kwenye URL hizi na kutumika katika utambuzi wa kutumia nenosiri tena.
-      Ili <ph name="PRODUCT_NAME" /> irekodi alama bainifu za nenosiri kwa usahihi, tafadhali hakikisha kuwa kurasa za kuingia katika akaunti zinafuata mwongozo kwenye https://www.chromium.org/developers/design-documents/create-amazing-password-forms.
+      Ili <ph name="PRODUCT_NAME" /> irekodi alama bainifu za nenosiri kwa usahihi, tafadhali hakikisha kuwa kurasa za kuingia katika akaunti zinafuata mwongozo kwenye https://www.monyhar.org/developers/design-documents/create-amazing-password-forms.
 
       Kama mipangilio hii imewashwa, basi huduma ya ulinzi wa manenosiri itarekodi alama bainifu ya nenosiri kwenye URL hizi kwa madhumuni ya utambuzi wa kutumia nenosiri tena.
       Ikiwa mipangilio hii imezimwa au haijawekwa, basi huduma ya ulinzi wa manenosiri itarekodi alama bainifu ya nenosiri kwenye https://accounts.google.com.
@@ -815,7 +815,7 @@ Ikiwa sera imewekwa kuwa sivyo au haijawekwa, matukio hayatarekodiwa.</translati
 
       Sera hii huruhusu vyeti vya majina ya wapangishaji katika URL zilizobainishwa visifichuliwe kupitia Uwazi wa Cheti. Hii huruhusu vyeti visivyoaminika, kwa sababu havikufichuliwa hadharani ipasavyo, viendelee kutumiwa, lakini hufanya ugunduzi wa vyeti vilivyotumiwa vibaya kuwa mgumu kwa wapangishaji hao.
 
-      Ruwaza ya URL huundwa kulingana na https://www.chromium.org/administrators/url-blacklist-filter-format. Hata hivyo, kwa sababu vyeti ni sahihi kwa jina maalum la mpangishaji ambayo haitegemei utaratibu, mlango, au njia, ni sehemu ya jina la mpangishaji wa URL ambayo hutumika pekee. Wapangishaji wa herufi wakilishi hawatumiki.
+      Ruwaza ya URL huundwa kulingana na https://www.monyhar.org/administrators/url-blacklist-filter-format. Hata hivyo, kwa sababu vyeti ni sahihi kwa jina maalum la mpangishaji ambayo haitegemei utaratibu, mlango, au njia, ni sehemu ya jina la mpangishaji wa URL ambayo hutumika pekee. Wapangishaji wa herufi wakilishi hawatumiki.
 
       Sera hii isipowekwa, cheti chochote kinachopaswa kuonyeshwa kupitia Uwazi wa Cheti kitachukuliwa kuwa kisichoaminika kama hakitaonyeshwa kulingana na sera ya Uwazi wa Cheti.</translation>
 <translation id="2488010520405124654">Washa ombi la usanidi wa mtandao inapokuwa nje ya mtandao. 
@@ -1514,7 +1514,7 @@ Sera hii isipowekwa, mtumiaji bado anaweza kusakinisha kiendelezi chochote katik
 
       Ukiweka sera hii, <ph name="PRODUCT_NAME" /> itatumia saraka iliyotolewa bila kujali iwapo mtumiaji amebainisha moja au amewasha alamisho ya kuchochewa kwa eneo la upakuaji kila wakati.
 
-      Angalia https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables kwa orodha ya vigezo ambavyo vinaweza kutumiwa.
+      Angalia https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables kwa orodha ya vigezo ambavyo vinaweza kutumiwa.
 
       Ikiwa sera hii itasalia bila kuwekwa saraka chaguomsingi ya upakuaji itatumiwa na mtumiaji ataweza kuibadilisha.</translation>
 <translation id="3805659594028420438">Washa kiendelezi cha vyeti vilivyo katika kikoa cha TLS (kimekosolewa)</translation>
@@ -1605,7 +1605,7 @@ Sera hii isipowekwa, mtumiaji bado anaweza kusakinisha kiendelezi chochote katik
 
       Kama hutaweka sera hii, <ph name="PRODUCT_NAME" /> itatumia saraka chaguomsingi ya kawaida (inayolenga mfumo mahususi).
 
-     Ili kupata orodha ya vigezo vinavyoweza kutumika, angalia https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.</translation>
+     Ili kupata orodha ya vigezo vinavyoweza kutumika, angalia https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.</translation>
 <translation id="3911737181201537215">Sera hii haiathiri uwekaji kumbukumbu wa Android.</translation>
 <translation id="391531815696899618">Huzima usawazishaji wa Hifadhi ya Google katika programu ya Faili ya <ph name="PRODUCT_OS_NAME" /> unapowekwa kuwa Ndivyo. Kwa hivyo, hakuna data inayopakiwa kwenye Hifadhi ya Google.
 
@@ -1806,7 +1806,7 @@ Thamani ya sera inapaswa kubainishwa katika sekunde. Thamani huwekwa pamoja ili 
 
       Ukiweka mipangilio hii, <ph name="PRODUCT_NAME" /> itatumia saraka unayoweka ili kuhifadhi nakala ya kutumia mitandao ya ng'ambo katika wasifu ikiwa sera ya <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> imewashwa. Ikiwa sera ya <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> imezimwa au imeachwa bila kuwekwa, thamani iliyohifadhiwa katika sera hii haitumiki.
 
-      Angalia https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables ili uone orodha ya vipengee vinavyoweza kutumika.
+      Angalia https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables ili uone orodha ya vipengee vinavyoweza kutumika.
 
       Sera hii ikiachwa bila kuwekwa, njia chaguomsingi ya wasifu wa kutumia mitandao ya ng'ambo itatumika.</translation>
 <translation id="4239720644496144453">Akiba hii haitumiwi na programu za Android. Ikiwa watumiaji wengi watasakinisha programu sawa ya Android, itapakuliwa upya kwa kila mtumiaji.</translation>
@@ -2007,7 +2007,7 @@ Sera hii ikiwekwa kuwa sivyo au isiwekwe, kibodi itatoa amri za vitufe vya media
 
           Ikiwa sera hii haitawekwa kionyeshi chaguomsingi kitatumiwa kwa tovuti zote kama ilivyobainishwa na sera ya 'ChromeFrameRendererSettings'.
 
-          Kwa mifano ya ruwaza angalia https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Kwa mifano ya ruwaza angalia https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="467449052039111439">Fungua orodha ya URL</translation>
 <translation id="4674871290487541952">Ruhusu algoriti zisizo salama katika ukaguzi wa mabadiliko ya data kwenye masasisho na usakinishaji wa viendelezi</translation>
 <translation id="4680936297850947973">Sera iliacha kuendesha huduma katika toleo la M68. Badala yake tumia DefaultPopupsSetting.
@@ -2649,7 +2649,7 @@ Sera hii ikiwekwa kuwa ndivyo au isipowekwa, kipindi cha mgeni kinachodhibitiwa 
 
       Ukiweka sera hii, <ph name="PRODUCT_FRAME_NAME" /> itatumia saraka iliyotolewa.
 
-      Angalia https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables kwa orodha ya vigezo vinavyoweza kutumiwa.
+      Angalia https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables kwa orodha ya vigezo vinavyoweza kutumiwa.
 
       Ikiwa mipangilio hii itasalia bila kuwekwa saraka chaguomsingi ya wasifu itatumiwa.</translation>
 <translation id="5826047473100157858">Hubainisha iwapo mtumiaji anaweza kufungua kurasa katika hali Fiche kwenye <ph name="PRODUCT_NAME" />.
@@ -3224,7 +3224,7 @@ Ikiwa sera haijawekwa, mtumiaji ataweza kubadilisha mipangilio hii.
 
       Ukiweka sera hii, <ph name="PRODUCT_NAME" /> itatumia saraka iliyotolewa bila kujali iwapo mtumiaji amebainisha ripoti ya '--user-data-dir' au la. Ili kuepuka kupoteza data au hitilafu zisizotarajiwa sera hii haipaswi kuwekwa kuwa thamani ya kipeo cha saraka au saraka iliyotumiwa kwa madhumuni mengine, kwa sababu <ph name="PRODUCT_NAME" /> inadhibiti maudhui yake.
 
-      Angalia https://www.chromium.org/administrators/policy-list-3/user-data-directory upate orodha ya aina zinazoweza kutumiwa.
+      Angalia https://www.monyhar.org/administrators/policy-list-3/user-data-directory upate orodha ya aina zinazoweza kutumiwa.
 
       Sera hii isipowekwa njia ya wasifu chaguomsingi itatumiwa na mtumiaji ataweza kuibatilisha kwa amri ya ripoti ya mstari ya '--disk-cache-dir'.</translation>
 <translation id="7027785306666625591">Sanidi udhibiti wa nishati katika <ph name="PRODUCT_OS_NAME" />.
@@ -3999,7 +3999,7 @@ Njia inayopendekezwa ya kuweka mipangilio ya sera kwenye Windows ni kupitia GPO,
 
           Ikiwa sera hii haitawekwa kionyeshi chaguomsingi kitatumiwa kwa tovuti zote kama ilivyobainishwa na sera ya 'ChromeFrameRendererSettings'.
 
-          Kwa mifano ya ruwaza angalia https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Kwa mifano ya ruwaza angalia https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="8489964335640955763">PluginVm</translation>
 <translation id="8493645415242333585">Lemaza kuhifadhi historia ya kivinjari</translation>
 <translation id="8499172469244085141">Mipangilio ya Chaguo-Msingi (watumiaji wanaweza kubadilisha)</translation>

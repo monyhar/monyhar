@@ -28,7 +28,7 @@ include_rules = [
     "+net/third_party/quiche/src/quic",
     "+net/third_party/quiche/src/common",
     "+net/net_buildflags.h",
-    "+net/quic/chromium",
+    "+net/quic/monyhar",
     "+net/quic",
     "+net/test",
     "+services/metrics/public/cpp/ukm_builders.h",

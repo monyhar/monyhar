@@ -26,11 +26,11 @@ To update, use the build-apache-mac.sh script.
    /path/to/build-apache-mac.sh
 
 The files will be placed in the out directory. Copy these over and upload the
-executables and DLLs to Google Storage, to the chromium-apache-mac bucket.
+executables and DLLs to Google Storage, to the monyhar-apache-mac bucket.
 See http://g.co/bugatrooper in order to get permission to upload. Upload all
 binaries with:
 
-  find bin lib libexec -type f -not -name '*.sha1' | upload_to_google_storage.py --bucket chromium-apache-mac -
+  find bin lib libexec -type f -not -name '*.sha1' | upload_to_google_storage.py --bucket monyhar-apache-mac -
 
 Optionally, prune the files that were uploaded and run gclient runhooks to
 verify that they are re-downloaded. Remember to clean up any temp files used in

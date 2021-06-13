@@ -17,6 +17,6 @@ create {
 }
 
 upload {
-  pkg_prefix: "chromium/third_party/jdk"
+  pkg_prefix: "monyhar/third_party/jdk"
   universal: true
 }

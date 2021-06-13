@@ -240,7 +240,7 @@ A request object has the following members:
      *   "fuchsia": Fuchsia.
      *   "linux": Linux.
      *   "mac": macOS.
-     *   "openbsd": OpenBSD. TODO(waffles@chromium.org): Also FreeBSD?
+     *   "openbsd": OpenBSD. TODO(waffles@monyhar.org): Also FreeBSD?
      *   "win": Windows.
  *   `@updater`: A string identifying the client software (e.g. "Omaha",
      "Chrome", "Chrome Extension Updater"). Default: "".
@@ -310,7 +310,7 @@ is running within. It has the following members:
      values:
      *   "android": Android.
      *   "chromeos": Chrome OS.
-     *   "chromiumos": Chromium OS.
+     *   "monyharos": Chromium OS.
      *   "dragonfly": DragonFly BSD.
      *   "freebsd": FreeBSD.
      *   "ios": Apple iOS.
@@ -804,7 +804,7 @@ attmpted as part of this update session. All events have the following members:
      meaning of an error code may depend on the error category. 0 always means
      "no error" (success).
      *   Additional values may exist in
-         (update_client_errors.h)[https://cs.chromium.org/chromium/src/components/update_client/update_client_errors.h]
+         (update_client_errors.h)[https://cs.monyhar.org/monyhar/src/components/update_client/update_client_errors.h]
  *   `extracode1`: Additional numeric information about the operation's result.
      The meaning of an extra code depends on the error category and error code.
      Default: 0.

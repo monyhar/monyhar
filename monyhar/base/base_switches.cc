@@ -75,7 +75,7 @@ const char kProfilingAtStart[] = "profiling-at-start";
 const char kProfilingFile[] = "profiling-file";
 
 // Controls whether profile data is periodically flushed to a file. Normally
-// the data gets written on exit but cases exist where chromium doesn't exit
+// the data gets written on exit but cases exist where monyhar doesn't exit
 // cleanly (especially when using single-process). A time in seconds can be
 // specified.
 const char kProfilingFlush[] = "profiling-flush";

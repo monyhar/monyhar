@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget;
+package org.monyhar.components.browser_ui.widget;
 
 import android.util.Pair;
 import android.view.LayoutInflater;
@@ -16,10 +16,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.Adapter;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
-import org.chromium.base.Log;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.base.task.BackgroundOnlyAsyncTask;
-import org.chromium.components.browser_ui.util.date.StringUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.base.task.BackgroundOnlyAsyncTask;
+import org.monyhar.components.browser_ui.util.date.StringUtils;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

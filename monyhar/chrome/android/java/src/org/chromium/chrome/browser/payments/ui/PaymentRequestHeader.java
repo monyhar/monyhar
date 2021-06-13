@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments.ui;
+package org.monyhar.chrome.browser.payments.ui;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -15,14 +15,14 @@ import android.widget.TextView;
 
 import androidx.annotation.ColorInt;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.omnibox.ChromeAutocompleteSchemeClassifier;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.browser_ui.widget.TintedDrawable;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.components.omnibox.OmniboxUrlEmphasizer;
-import org.chromium.ui.util.ColorUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.omnibox.ChromeAutocompleteSchemeClassifier;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.browser_ui.widget.TintedDrawable;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.omnibox.OmniboxUrlEmphasizer;
+import org.monyhar.ui.util.ColorUtils;
 
 /** This class represents a bar to display at the top of the payment request UI. */
 public class PaymentRequestHeader extends FrameLayout {

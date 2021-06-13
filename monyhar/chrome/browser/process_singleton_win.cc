@@ -33,7 +33,7 @@
 #include "chrome/common/chrome_paths.h"
 #include "chrome/common/chrome_paths_internal.h"
 #include "chrome/common/chrome_switches.h"
-#include "chrome/grit/chromium_strings.h"
+#include "chrome/grit/monyhar_strings.h"
 #include "content/public/common/result_codes.h"
 #include "net/base/escape.h"
 #include "ui/base/l10n/l10n_util.h"
@@ -231,7 +231,7 @@ void TerminateProcessWithHistograms(const base::Process& process,
 // Microsoft's Softricity virtualization breaks the sandbox processes.
 // So, if we detect the Softricity DLL we use WMI Win32_Process.Create to
 // break out of the virtualization environment.
-// http://code.google.com/p/chromium/issues/detail?id=43650
+// http://code.google.com/p/monyhar/issues/detail?id=43650
 bool ProcessSingleton::EscapeVirtualization(
     const base::FilePath& user_data_dir) {
   if (::GetModuleHandle(L"sftldr_wow64.dll") ||

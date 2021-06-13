@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.lens;
+package org.monyhar.chrome.browser.lens;
 
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.policy.PolicyCache;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.policy.PolicyCache;
 
 /**
  * Provides Lens policy utility functions.

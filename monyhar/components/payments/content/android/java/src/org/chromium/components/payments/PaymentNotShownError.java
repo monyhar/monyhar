@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.payments;
+package org.monyhar.components.payments;
 
-import org.chromium.payments.mojom.PaymentErrorReason;
+import org.monyhar.payments.mojom.PaymentErrorReason;
 
 /** The error of payment UIs not being shown. */
 public class PaymentNotShownError {

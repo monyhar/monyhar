@@ -53,7 +53,7 @@ TEST_F(SocketTest, Accept) {
   socklen_t len = 0;
 
   // accept() should allow NULL args for addr and len
-  // https://code.google.com/p/chromium/issues/detail?id=442164
+  // https://code.google.com/p/monyhar/issues/detail?id=442164
   // EXPECT_LT(ki_accept(123, NULL, &len), 0);
   // EXPECT_EQ(errno, EFAULT);
   // EXPECT_LT(ki_accept(123, &addr, NULL), 0);

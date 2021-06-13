@@ -387,7 +387,7 @@ __gCrWeb.message['routeMessage'] = function(encryptedMessageDetails,
   for (var i = 0; i < framecount; i++) {
     window.frames[i].postMessage(
       {
-        type: 'org.chromium.encryptedMessage',
+        type: 'org.monyhar.encryptedMessage',
         message_payload: encryptedMessageDetails,
         function_payload: encryptedFunctionDetails,
         target_frame_id: target_frame_id
@@ -432,7 +432,7 @@ __gCrWeb.message['getExistingFrames'] = function() {
   var framecount = window['frames']['length'];
   for (var i = 0; i < framecount; i++) {
     window.frames[i].postMessage(
-        {type: 'org.chromium.registerForFrameMessaging',},
+        {type: 'org.monyhar.registerForFrameMessaging',},
         '*'
     );
   }

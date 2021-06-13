@@ -5,7 +5,7 @@ To enable this feature, use the command line flag --enable-dom-distiller.
 It may also help to use a new user profile --user-data-dir=<directory>
 
 The DOM Distiller is a layered component. See:
-http://www.chromium.org/developers/design-documents/layered-components-design
+http://www.monyhar.org/developers/design-documents/layered-components-design
 
 Folder structure:
 

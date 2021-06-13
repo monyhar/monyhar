@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.accessibility_tab_switcher;
+package org.monyhar.chrome.browser.accessibility_tab_switcher;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -30,14 +30,14 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.content.res.AppCompatResources;
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.annotations.UsedByReflection;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabFavicon;
-import org.chromium.chrome.browser.tab.TabObserver;
-import org.chromium.components.browser_ui.styles.ChromeColors;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.annotations.UsedByReflection;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabFavicon;
+import org.monyhar.chrome.browser.tab.TabObserver;
+import org.monyhar.components.browser_ui.styles.ChromeColors;
 
 /**
  * A widget that shows a single row of the {@link AccessibilityTabModelListView} list.

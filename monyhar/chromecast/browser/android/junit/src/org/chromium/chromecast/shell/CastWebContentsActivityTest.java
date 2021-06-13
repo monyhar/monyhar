@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.shell;
+package org.monyhar.chromecast.shell;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
@@ -36,9 +36,9 @@ import org.robolectric.annotation.Implements;
 import org.robolectric.shadow.api.Shadow;
 import org.robolectric.shadows.ShadowActivity;
 
-import org.chromium.chromecast.base.Observable;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.chromecast.base.Observable;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
 
 /**
  * Tests for CastWebContentsActivity.

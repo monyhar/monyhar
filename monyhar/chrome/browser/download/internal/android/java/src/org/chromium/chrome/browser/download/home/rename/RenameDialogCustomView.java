@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.home.rename;
+package org.monyhar.chrome.browser.download.home.rename;
 
 import static android.content.Context.INPUT_METHOD_SERVICE;
 
@@ -17,11 +17,11 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.download.internal.R;
-import org.chromium.components.browser_ui.widget.text.AlertDialogEditText;
-import org.chromium.components.offline_items_collection.RenameResult;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.download.internal.R;
+import org.monyhar.components.browser_ui.widget.text.AlertDialogEditText;
+import org.monyhar.components.offline_items_collection.RenameResult;
 
 /**
  * Content View of dialog in Download Home that allows users to rename a downloaded file.

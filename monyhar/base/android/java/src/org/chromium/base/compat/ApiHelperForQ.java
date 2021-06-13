@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.compat;
+package org.monyhar.base.compat;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -22,9 +22,9 @@ import android.telephony.CellInfo;
 import android.telephony.TelephonyManager;
 import android.view.MotionEvent;
 
-import org.chromium.base.Callback;
-import org.chromium.base.annotations.VerifiesOnQ;
-import org.chromium.base.task.AsyncTask;
+import org.monyhar.base.Callback;
+import org.monyhar.base.annotations.VerifiesOnQ;
+import org.monyhar.base.task.AsyncTask;
 
 import java.io.IOException;
 import java.io.InputStream;

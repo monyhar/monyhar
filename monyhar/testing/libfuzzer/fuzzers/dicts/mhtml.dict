@@ -4,7 +4,7 @@
 
 # This file contains several basic MHTML syntax elements based on
 # 1) rfc2557
-# 2) test files from chromium/third_party/WebKit/LayoutTests/mhtml
+# 2) test files from monyhar/third_party/WebKit/LayoutTests/mhtml
 # 3) suggestions from manual runs of libFuzzer
 
 line_ending_1="\x0D\x0A"

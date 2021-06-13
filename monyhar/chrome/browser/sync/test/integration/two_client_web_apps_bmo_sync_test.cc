@@ -224,7 +224,7 @@ IN_PROC_BROWSER_TEST_F(TwoClientWebAppsBMOSyncTest,
   ASSERT_TRUE(SetupClients());
   WebApplicationInfo info;
   info.title = u"Test name";
-  info.start_url = GURL("http://www.chromium.org/path");
+  info.start_url = GURL("http://www.monyhar.org/path");
 
   // Install web app to both profiles.
   AppId app_id = InstallApp(info, GetProfile(0));
@@ -265,7 +265,7 @@ IN_PROC_BROWSER_TEST_F(TwoClientWebAppsBMOSyncTest,
 
   WebApplicationInfo info;
   info.title = u"Test name";
-  info.start_url = GURL("http://www.chromium.org/path");
+  info.start_url = GURL("http://www.monyhar.org/path");
   info.open_as_window = true;
 
   // Install web app to both profiles.

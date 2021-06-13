@@ -17,7 +17,7 @@ INVALID_LOCAL_METRIC_FIELD_ERROR = (
   'Invalid index field specification in ukm metric %(event)s:%(metric)s, the '
   'following metrics are used as index fields but are not configured to '
   'support it: [%(invalid_metrics)s]\n\n'
-  'See https://chromium.googlesource.com/chromium/src.git/+/main/services/'
+  'See https://monyhar.googlesource.com/monyhar/src.git/+/main/services/'
   'metrics/ukm_api.md#aggregation-by-metrics-in-the-same-event for '
   'instructions on how to configure them.')
 
@@ -113,7 +113,7 @@ class UkmXmlValidation(object):
 
         for email in owner_node.childNodes:
           # Check <owner> tag's content is an email address, not a username.
-          if not ('@chromium.org' in email.data or '@google.com' in email.data):
+          if not ('@monyhar.org' in email.data or '@google.com' in email.data):
             errors.append("<owner> tag for event '%s' expects a Chromium or "
                           "Google email address." % event_name)
 

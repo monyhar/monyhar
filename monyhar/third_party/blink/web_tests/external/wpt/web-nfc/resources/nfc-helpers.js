@@ -11,7 +11,7 @@
 async function loadChromiumResources() {
   await loadScript('/resources/testdriver.js');
   await loadScript('/resources/testdriver-vendor.js');
-  await import('/resources/chromium/nfc-mock.js');
+  await import('/resources/monyhar/nfc-mock.js');
 }
 
 async function initialize_nfc_tests() {

@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.user_data;
+package org.monyhar.chrome.browser.autofill_assistant.user_data;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.browser.autofill_assistant.AssistantInfoPopup;
-import org.chromium.components.autofill.EditableOption;
+import org.monyhar.chrome.browser.autofill_assistant.AssistantInfoPopup;
+import org.monyhar.components.autofill.EditableOption;
 
 /**
  * Represents a single login choice.

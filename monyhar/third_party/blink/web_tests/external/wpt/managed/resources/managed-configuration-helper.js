@@ -12,7 +12,7 @@
 let fakeManagedConfigurationService = undefined;
 
 async function loadChromiumResources() {
-  await import('/resources/chromium/mock-managed-config.js');
+  await import('/resources/monyhar/mock-managed-config.js');
 }
 
 // User Agents must provide their own implementation of `ManagedConfigTest`,

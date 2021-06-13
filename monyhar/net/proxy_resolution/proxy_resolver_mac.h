@@ -17,7 +17,7 @@ namespace net {
 // Implementation of ProxyResolverFactory that uses the Mac CFProxySupport to
 // implement proxies.
 // TODO(kapishnikov): make ProxyResolverMac async as per
-// https://bugs.chromium.org/p/chromium/issues/detail?id=166387#c95
+// https://bugs.monyhar.org/p/monyhar/issues/detail?id=166387#c95
 class NET_EXPORT ProxyResolverFactoryMac : public ProxyResolverFactory {
  public:
   ProxyResolverFactoryMac();

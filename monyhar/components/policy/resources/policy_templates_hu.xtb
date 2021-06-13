@@ -108,7 +108,7 @@
 
       Ha beállítja ezt a házirendet, a <ph name="PRODUCT_NAME" /> a megadott könyvtárat fogja használni, függetlenül attól, hogy a felhasználó megadta-e a „--disk-cache-dir” jelölőt. Az adatvesztés és más váratlan hibák elkerülése érdekében a házirendben ne állítsa be meghajtó gyökérkönyvtárát vagy más célokra használt könyvtárat, mert az itt lévő tartalmakat a <ph name="PRODUCT_NAME" /> kezeli.
 
-      A használható változók listáját a következő webhelyen nézheti meg: https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      A használható változók listáját a következő webhelyen nézheti meg: https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Ha nem állítja be a házirendet, a böngésző az alapértelmezett gyorsítótárkönyvtárat fogja használni, amelyet a felhasználó felülbírálhat a „--disk-cache-dir” parancssori jelölővel.</translation>
 <translation id="113521240853905588">Konfigurálja a <ph name="PRODUCT_OS_NAME" /> által előnyben részesítettként használható nyelveket.
@@ -493,7 +493,7 @@
 <translation id="1852294065645015766">A médiatartalmak automatikus lejátszásának engedélyezése</translation>
 <translation id="1857152770025485173">Ez a házirend megakadályozza, hogy a felhasználó betöltse a tiltólistán szereplő URL-ekhez tartozó weboldalakat. A tiltólistán lévő URL-eket a böngésző letiltja.
 
-      Az URL-eket a következő oldalon leírtak szerint kell formázni: https://www.chromium.org/administrators/url-blacklist-filter-format.
+      Az URL-eket a következő oldalon leírtak szerint kell formázni: https://www.monyhar.org/administrators/url-blacklist-filter-format.
 
       Kivételeket az URL-ek engedélyezőlistájára vonatkozó házirendben lehet megadni. Ezekben a házirendekben legfeljebb ezer bejegyzés szerepelhet. A további bejegyzéseket figyelmen kívül hagyja a böngésző.
 
@@ -530,7 +530,7 @@
 
       Ha nincs beállítva, akkor a rendszer letiltja a használati és diagnosztikai adatok jelentését a nem felügyelt eszközökön, míg engedélyezi a felügyelt eszközökön.</translation>
 <translation id="1907431809333268751">A vállalati bejelentkezési URL-címek listájának konfigurálása (csak HTTP és HTTPS protokollokkal). A böngésző rögzíti a jelszó ujjlenyomatát ezeken az URL-címeken, és felhasználja a jelszó-újrafelhasználás észleléséhez.
-      Annak érdekében, hogy a <ph name="PRODUCT_NAME" /> megfelelően tudja rögzíteni a jelszavak ujjlenyomatait, gondoskodjon arról, hogy a bejelentkezési oldal megfeleljen a https://www.chromium.org/developers/design-documents/create-amazing-password-forms oldalon leírt irányelveknek.
+      Annak érdekében, hogy a <ph name="PRODUCT_NAME" /> megfelelően tudja rögzíteni a jelszavak ujjlenyomatait, gondoskodjon arról, hogy a bejelentkezési oldal megfeleljen a https://www.monyhar.org/developers/design-documents/create-amazing-password-forms oldalon leírt irányelveknek.
 
       Ha a beállítás aktiválva van, a jelszóvédelmi szolgáltatás rögzíti az ezeken az URL-eken megadott jelszavak ujjlenyomatait a jelszó-újrafelhasználás észlelése céljából.
       Ha a beállítás le van tiltva, vagy ha nincs beállítva, akkor a jelszóvédelmi szolgáltatás csak a https://accounts.google.com webhelyen rögzíti a jelszavak ujjlenyomatait.
@@ -828,7 +828,7 @@
 
       A házirend lehetővé teszi a tanúsítványok számára, hogy a megadott URL-ekben található gazdagépneveket ne osszák meg A tanúsítványok átláthatósága keretrendszeren keresztül. Ez lehetővé teszi a tanúsítványok számára, amelyek egyébként a nem megfelelő nyilvánosságra hozatal miatt nem megbízhatónak minősülnének, hogy továbbra is használják őket, de az adott gazdagépek számára megnehezíti a hibásan kiadott tanúsítványok felismerését.
 
-      Az URL-minták formázása a https://www.chromium.org/administrators/url-blacklist-filter-format szerint történik. Mivel azonban a tanúsítványok a sémától, porttól vagy elérési úttól függő adott gazdagépnévre érvényesek, a rendszer csak az URL gazdagépnévi részét veszi figyelembe. A helyettesítő karakterrel megadott gazdagépek nem támogatottak.
+      Az URL-minták formázása a https://www.monyhar.org/administrators/url-blacklist-filter-format szerint történik. Mivel azonban a tanúsítványok a sémától, porttól vagy elérési úttól függő adott gazdagépnévre érvényesek, a rendszer csak az URL gazdagépnévi részét veszi figyelembe. A helyettesítő karakterrel megadott gazdagépek nem támogatottak.
 
       Ha nincs beállítva ez a házirend, akkor a rendszer minden olyan tanúsítványt, amelyet A tanúsítványok átláthatósága keretrendszeren keresztül kellett volna közzétenni, nem megbízhatóként kezel, ha azt nem A tanúsítványok átláthatósága keretrendszer házirendje alapján tették közzé.</translation>
 <translation id="2488010520405124654">Hálózati konfigurációs értesítés offline állapotban való megjelenítésének engedélyezése.
@@ -1507,7 +1507,7 @@
 
       Ha beállítja ezt a házirendet, a(z) <ph name="PRODUCT_NAME" /> a megadott mappát fogja használni attól függetlenül, hogy a felhasználó kiválasztott-e egyet, vagy engedélyezte-e azt a jelölőt, amely alapján a rendszer minden alkalommal megkérdezi a letöltés helyét.
 
-      A használható változók listáját lásd a https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables címen.
+      A használható változók listáját lásd a https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables címen.
 
       Ha nincs beállítva ez a házirend, akkor az alkalmazás az alapértelmezett letöltési mappát használja, de ezt a felhasználó módosítani tudja.</translation>
 <translation id="3805659594028420438">TLS-domainhez kötött tanúsítványbővítmények engedélyezése (elavult)</translation>
@@ -1593,7 +1593,7 @@ Ha a házirend értéke hamis, a böngésző nem jelenti a kioszkmunkamenet info
 
       Ha nem állítja be a házirendet, a <ph name="PRODUCT_NAME" /> a szokásos (operációs rendszertől függő) alapértelmezett könyvtárat fogja használni.
 
-      A használható változók listáját itt tekintheti meg: https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.</translation>
+      A használható változók listáját itt tekintheti meg: https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.</translation>
 <translation id="3911737181201537215">A házirend nem vonatkozik az Android által végzett naplózásra.</translation>
 <translation id="391531815696899618">Igaz érték esetén letiltja a Google Drive szinkronizálását a <ph name="PRODUCT_OS_NAME" /> Fájlok alkalmazásában. Ebben az esetben nem lesznek feltöltve adatok a Google Drive-ra.
 
@@ -1794,7 +1794,7 @@ Ha a házirend értéke hamis, a böngésző nem jelenti a kioszkmunkamenet info
 
       Ha beállítja ezt a házirendet, a <ph name="PRODUCT_NAME" /> a megadott címtárat használja a profilok barangolási példányának tárolására, ha a <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> házirend engedélyezve van. Ha a <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> házirend le van tiltva, vagy ha nincs beállítva, az ebben a házirendben tárolt értéket nem használja a rendszer.
 
-      A használható változók listáját a https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables weboldalon találja.
+      A használható változók listáját a https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables weboldalon találja.
 
       Ha a házirend nincs beállítva, a rendszer a barangolási profil alapértelmezett elérési útját használja.</translation>
 <translation id="4239720644496144453">Az Android-alkalmazások nem használják a gyorsítótárat. Ha több felhasználó telepíti ugyanazt az Android-alkalmazást, akkor az mindegyik felhasználó számára újonnan töltődik le.</translation>
@@ -1988,7 +1988,7 @@ Ha a házirend értéke hamis, a böngésző nem jelenti a kioszkmunkamenet info
 
           Ha a házirend nincs beállítva, akkor a rendszer a „ChromeFrameRendererSettings” házirendben meghatározott alapértelmezett megjelenítőt használja valamennyi webhely esetében.
 
-          Példamintákért lásd a következő címet: https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Példamintákért lásd a következő címet: https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="467449052039111439">Nyisson meg egy URL-listát</translation>
 <translation id="4674871290487541952">Nem biztonságos algoritmusok engedélyezése a bővítmények frissítésekor és telepítésekor történő integritás-ellenőrzéseknél</translation>
 <translation id="4680936297850947973">Megszűnt az M68-as verzióban. Használja helyette a DefaultPopupsSetting házirendet.
@@ -2614,7 +2614,7 @@ Ha a házirend értéke hamis, a böngésző nem jelenti a kioszkmunkamenet info
 
       Ha beállítja ezt a házirendet, a(z) <ph name="PRODUCT_FRAME_NAME" /> a megadott mappát fogja használni.
 
-      A használható változók listájáért lásd: https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      A használható változók listájáért lásd: https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Ha nincs megadva ez a beállítás, akkor az alkalmazás a profil alapértelmezett mappáját használja.</translation>
 <translation id="5826047473100157858">Meghatározza, hogy a felhasználó megnyithat-e oldalakat inkognitó módban a(z) <ph name="PRODUCT_NAME" /> böngészőben. Ha az "Engedélyezve" lehetőség van kiválasztva, vagy ha a házirend beállítatlanul marad, az oldalakat meg lehet nyitni inkognitómódban. Ha a "Letiltva" lehetőség van kiválasztva, az oldalakat nem lehet megnyitni inkognitómódban. Ha a "Kényszerített" lehetőség van kiválasztva, az oldalakat CSAK inkognitómódban lehet megnyitni.</translation>
@@ -3180,7 +3180,7 @@ Ha az irányelv igaz értékre van beállítva, akkor a rendszer a beépített D
 
       Ha beállítja ezt a házirendet, a <ph name="PRODUCT_NAME" /> a megadott könyvtárat fogja használni, függetlenül attól, hogy a felhasználó megadta-e a „--user-data-dir” jelölőt. Az adatvesztés és más váratlan hibák elkerülése érdekében a házirendben ne állítsa be meghajtó gyökérkönyvtárát vagy más célokra használt könyvtárat, mert az itt lévő tartalmakat a <ph name="PRODUCT_NAME" /> kezeli.
 
-      A használható változók listáját a következő webhelyen nézheti meg: https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      A használható változók listáját a következő webhelyen nézheti meg: https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Ha nem állítja be a házirendet, a böngésző az alapértelmezett profilkönyvtárat fogja használni, amelyet a felhasználó felülbírálhat a „--user-data-dir” parancssori jelölővel.</translation>
 <translation id="7027785306666625591">Az energiagazdálkodás beállítása a <ph name="PRODUCT_OS_NAME" /> rendszerben.
@@ -3957,7 +3957,7 @@ A házirend konfigurálásának ajánlott módja Windows rendszerben a GPO, noha
 
           Ha nincs konfigurálva ez a házirend, akkor a rendszer a „ChromeFrameRendererSettings” házirend által meghatározott alapértelmezett megjelenítőt használja valamennyi webhely esetében.
 
-          Példamintákat a következő helyen talál: https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Példamintákat a következő helyen talál: https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="8489964335640955763">PluginVm</translation>
 <translation id="8493645415242333585">Böngészési előzmények mentésének tiltása</translation>
 <translation id="8499172469244085141">Alapértelmezett beállítások (a felhasználók felülbírálhatják)</translation>

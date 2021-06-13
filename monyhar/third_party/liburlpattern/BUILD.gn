@@ -12,7 +12,7 @@ component("liburlpattern") {
     "//third_party/icu:icu",
   ]
 
-  # Note, also update the local modifications in README.chromium.
+  # Note, also update the local modifications in README.monyhar.
   sources = [
     "options.h",
     "parse.cc",
@@ -34,7 +34,7 @@ test("liburlpattern_unittests") {
     "//third_party/abseil-cpp:absl",
   ]
 
-  # Note, also update the local modifications in README.chromium.
+  # Note, also update the local modifications in README.monyhar.
   sources = [
     "parse_unittest.cc",
     "pattern_unittest.cc",

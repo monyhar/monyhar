@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.site_settings;
+package org.monyhar.components.browser_ui.site_settings;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -20,12 +20,12 @@ import android.os.Build;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.FeatureList;
-import org.chromium.base.ThreadUtils;
-import org.chromium.components.browser_ui.settings.SettingsUtils;
-import org.chromium.components.content_settings.ContentSettingValues;
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.device.DeviceFeatureList;
+import org.monyhar.base.FeatureList;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.components.content_settings.ContentSettingValues;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.device.DeviceFeatureList;
 
 import java.util.HashMap;
 import java.util.Map;

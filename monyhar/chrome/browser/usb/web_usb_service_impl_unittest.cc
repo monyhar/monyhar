@@ -52,7 +52,7 @@ using device::mojom::UsbDeviceManagerClient;
 namespace {
 
 const char kDefaultTestUrl[] = "https://www.google.com/";
-const char kCrossOriginTestUrl[] = "https://www.chromium.org";
+const char kCrossOriginTestUrl[] = "https://www.monyhar.org";
 
 ACTION_P2(ExpectGuidAndThen, expected_guid, callback) {
   ASSERT_TRUE(arg0);

@@ -2,7 +2,7 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 #
-# Fake build.ninja file used by ../chromium.ycm_extra_conf_unittest.py
+# Fake build.ninja file used by ../monyhar.ycm_extra_conf_unittest.py
 
 cxx = ../../fake-clang++
 cxx2 = echo ../../fake-clang++

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.test;
+package org.monyhar.net.test;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -16,10 +16,10 @@ import androidx.annotation.GuardedBy;
 
 import org.junit.Assert;
 
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.net.X509Util;
-import org.chromium.net.test.util.CertTestUtil;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.net.X509Util;
+import org.monyhar.net.test.util.CertTestUtil;
 
 import java.io.File;
 
@@ -42,7 +42,7 @@ public class EmbeddedTestServer {
     private static final String TAG = "TestServer";
 
     private static final String EMBEDDED_TEST_SERVER_SERVICE =
-            "org.chromium.net.test.EMBEDDED_TEST_SERVER_SERVICE";
+            "org.monyhar.net.test.EMBEDDED_TEST_SERVER_SERVICE";
     private static final long SERVICE_CONNECTION_WAIT_INTERVAL_MS = 5000;
 
     @GuardedBy("mImplMonitor")
@@ -190,7 +190,7 @@ public class EmbeddedTestServer {
      */
     protected void setIntentClassName(Intent intent) {
         intent.setClassName(
-                "org.chromium.net.test.support", "org.chromium.net.test.EmbeddedTestServerService");
+                "org.monyhar.net.test.support", "org.monyhar.net.test.EmbeddedTestServerService");
     }
 
     /** Add the default handlers and serve files from the provided directory relative to the

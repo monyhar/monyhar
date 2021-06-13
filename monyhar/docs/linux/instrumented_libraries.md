@@ -86,7 +86,7 @@ export PATH=/home/thomasanderson/dev/depot_tools/:$PATH
 Change to your src directory:
 
 ```shell
-cd /home/thomasanderson/dev/chromium/src
+cd /home/thomasanderson/dev/monyhar/src
 ```
 
 Install library packages:
@@ -104,7 +104,7 @@ third_party/instrumented_libraries/scripts/build_and_package.py --parallel -j $(
 
 ## Uploading the libraries
 
-This requires write permission on the `chromium-instrumented-libraries` GCS
+This requires write permission on the `monyhar-instrumented-libraries` GCS
 bucket. `dpranke@` can grant access.
 
 ```shell
@@ -118,8 +118,8 @@ sudo chown -R `whoami`:`groups | awk '{print $1;}'` *.tgz out/Instrumented-*
 mv *.tgz third_party/instrumented_libraries/binaries
 
 # Upload.
-upload_to_google_storage.py -b chromium-instrumented-libraries third_party/instrumented_libraries/binaries/msan-chained-origins-trusty.tgz
-upload_to_google_storage.py -b chromium-instrumented-libraries third_party/instrumented_libraries/binaries/msan-no-origins-trusty.tgz
+upload_to_google_storage.py -b monyhar-instrumented-libraries third_party/instrumented_libraries/binaries/msan-chained-origins-trusty.tgz
+upload_to_google_storage.py -b monyhar-instrumented-libraries third_party/instrumented_libraries/binaries/msan-no-origins-trusty.tgz
 ```
 
 ## Testing and uploading a CL
@@ -132,5 +132,5 @@ When uploading a CL, make sure to add the following in the description so that
 the MSAN bot will run on the CQ:
 
 ```
-CQ_INCLUDE_TRYBOTS=luci.chromium.try:linux_chromium_msan_rel_ng
+CQ_INCLUDE_TRYBOTS=luci.monyhar.try:linux_monyhar_msan_rel_ng
 ```

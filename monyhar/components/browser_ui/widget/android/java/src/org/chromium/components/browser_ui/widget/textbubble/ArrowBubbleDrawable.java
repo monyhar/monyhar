@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.textbubble;
+package org.monyhar.components.browser_ui.widget.textbubble;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -19,7 +19,7 @@ import android.graphics.drawable.shapes.RoundRectShape;
 import androidx.annotation.ColorInt;
 import androidx.core.graphics.drawable.DrawableCompat;
 
-import org.chromium.components.browser_ui.widget.R;
+import org.monyhar.components.browser_ui.widget.R;
 
 /**
  * A {@link Drawable} that is a bubble with an arrow pointing out of either the top or bottom.

@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Compositing histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -26,8 +26,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Expired Dec 2020.
   </obsolete>
-  <owner>flackr@chromium.org</owner>
-  <owner>input-dev@chromium.org</owner>
+  <owner>flackr@monyhar.org</owner>
+  <owner>input-dev@monyhar.org</owner>
   <summary>
     Time spent finding the closest matching layer to a given point whenever we
     do hit testing on LayerTreeImpl (in a browser process).
@@ -42,8 +42,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Browser.LayersUpdateTime" units="microseconds"
     expires_after="2021-10-31">
-  <owner>schenney@chromium.org</owner>
-  <owner>animations-dev@chromium.org</owner>
+  <owner>schenney@monyhar.org</owner>
+  <owner>animations-dev@monyhar.org</owner>
   <summary>
     Time spent updating layers, in microseconds. Recorded when layers are
     updated (in a browser process).
@@ -58,8 +58,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Browser.LayerTreeImpl.CalculateDrawPropertiesUs"
     units="microseconds" expires_after="2021-10-31">
-  <owner>schenney@chromium.org</owner>
-  <owner>paint-dev@chromium.org</owner>
+  <owner>schenney@monyhar.org</owner>
+  <owner>paint-dev@monyhar.org</owner>
   <summary>
     Time spent updating layer draw properties, in microseconds. Recorded when a
     LayerTreeImpl's draw properties are updated (in a browser process).
@@ -74,8 +74,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Browser.NumActiveLayers" units="layers"
     expires_after="2021-12-05">
-  <owner>schenney@chromium.org</owner>
-  <owner>paint-dev@chromium.org</owner>
+  <owner>schenney@monyhar.org</owner>
+  <owner>paint-dev@monyhar.org</owner>
   <summary>
     The number of layers in the active tree for each compositor frame. This is
     logged once per frame, before the frame is drawn (in a browser process).
@@ -84,8 +84,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Browser.NumActivePictureLayers" units="layers"
     expires_after="2021-08-09">
-  <owner>schenney@chromium.org</owner>
-  <owner>paint-dev@chromium.org</owner>
+  <owner>schenney@monyhar.org</owner>
+  <owner>paint-dev@monyhar.org</owner>
   <summary>
     The number of PictureLayers in the active tree for each compositor frame.
     This is logged once per frame, before the frame is drawn (in a browser
@@ -95,8 +95,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Browser.NumRenderSurfaces" units="surfaces"
     expires_after="2021-10-17">
-  <owner>schenney@chromium.org</owner>
-  <owner>paint-dev@chromium.org</owner>
+  <owner>schenney@monyhar.org</owner>
+  <owner>paint-dev@monyhar.org</owner>
   <summary>
     The number of render surfaces in the render surface layer list. Recorded
     each time the render surface layer list is constructed (in a browser
@@ -106,8 +106,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.ColorGamut" enum="ColorGamut"
     expires_after="2021-12-05">
-  <owner>cblume@chromium.org</owner>
-  <owner>khushalsagar@chromium.org</owner>
+  <owner>cblume@monyhar.org</owner>
+  <owner>khushalsagar@monyhar.org</owner>
   <summary>
     Every time a frame is presented, record the generalized color gamut of that
     frame.
@@ -119,8 +119,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Expired Oct 2020
   </obsolete>
-  <owner>kylechar@chromium.org</owner>
-  <owner>sadrul@chromium.org</owner>
+  <owner>kylechar@monyhar.org</owner>
+  <owner>sadrul@monyhar.org</owner>
   <summary>
     Recorded for each OnBeginFrame() message that could potentially be sent to a
     CompositorFrameSinkClient. The value indicates if the message was sent to
@@ -130,7 +130,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.CopyFromSurfaceTime" units="ms"
     expires_after="2018-08-30">
-  <owner>wychen@chromium.org</owner>
+  <owner>wychen@monyhar.org</owner>
   <summary>
     The turn around time taken for the async readback of pixels is measured
     here. This should be marked as obsolete once some tests no longer rely on
@@ -140,7 +140,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.DirectRenderer.GL.DrawFrameUs"
     units="microseconds" expires_after="2021-10-17">
-  <owner>weiliangc@chromium.org</owner>
+  <owner>weiliangc@monyhar.org</owner>
   <summary>
     Time spent drawing of composited layers by GLRenderer, in microseconds. This
     is logged once per frame, when a frame should be drawn.
@@ -155,8 +155,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.DirectRenderer.OverlayProcessingUs"
     units="microseconds" expires_after="2021-10-01">
-  <owner>khaslett@chromium.org</owner>
-  <owner>kylechar@chromium.org</owner>
+  <owner>khaslett@monyhar.org</owner>
+  <owner>kylechar@monyhar.org</owner>
   <summary>
     Time spent processing quads to see which can be replaced with overlays. This
     is logged once per frame, when a frame should be drawn.
@@ -171,8 +171,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.DirectRenderer.PartialSwap.ExtraDamage" units="%"
     expires_after="2021-08-09">
-  <owner>vasilyt@chromium.org</owner>
-  <owner>backer@chromium.org</owner>
+  <owner>vasilyt@monyhar.org</owner>
+  <owner>backer@monyhar.org</owner>
   <summary>
     The area of the display damage that was added to current frame damage after
     all adjustments, including FrameBufferDamage from buffer queue and render
@@ -186,8 +186,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.DirectRenderer.PartialSwap.FrameBufferDamage"
     units="%" expires_after="2021-08-15">
-  <owner>vasilyt@chromium.org</owner>
-  <owner>backer@chromium.org</owner>
+  <owner>vasilyt@monyhar.org</owner>
+  <owner>backer@monyhar.org</owner>
   <summary>
     The area of the display that was damaged since previous draw to this frame
     buffer.
@@ -200,8 +200,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.DirectRenderer.PartialSwap.RootDamage" units="%"
     expires_after="2021-08-09">
-  <owner>vasilyt@chromium.org</owner>
-  <owner>backer@chromium.org</owner>
+  <owner>vasilyt@monyhar.org</owner>
+  <owner>backer@monyhar.org</owner>
   <summary>
     The area of the display that was damaged in current frame.
 
@@ -212,8 +212,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.DirectRenderer.PartialSwap.TotalDamage" units="%"
     expires_after="2021-08-09">
-  <owner>vasilyt@chromium.org</owner>
-  <owner>backer@chromium.org</owner>
+  <owner>vasilyt@monyhar.org</owner>
+  <owner>backer@monyhar.org</owner>
   <summary>
     The total area of the display that will be redrawn this frame.
 
@@ -224,7 +224,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.DirectRenderer.Software.DrawFrameUs"
     units="microseconds" expires_after="2021-08-09">
-  <owner>weiliangc@chromium.org</owner>
+  <owner>weiliangc@monyhar.org</owner>
   <summary>
     Time spent drawing of composited layers by SoftwareRenderer, in
     microseconds. This is logged once per frame, when a frame should be drawn.
@@ -239,8 +239,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.DirectRenderer.VK.DrawFrameUs"
     units="microseconds" expires_after="2020-11-29">
-  <owner>penghuang@chromium.org</owner>
-  <owner>backer@chromium.org</owner>
+  <owner>penghuang@monyhar.org</owner>
+  <owner>backer@monyhar.org</owner>
   <summary>
     Time spent drawing of composited layers by SkiaRenderer with Vulkan backend,
     in microseconds. This is logged once per frame, when a frame should be
@@ -256,8 +256,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Display.Draw.Occlusion.Calculation.Time"
     units="microseconds" expires_after="2021-12-05">
-  <owner>yiyix@chromium.org</owner>
-  <owner>chromeos-gfx@chromium.org</owner>
+  <owner>yiyix@monyhar.org</owner>
+  <owner>chromeos-gfx@monyhar.org</owner>
   <summary>
     Time spent to remove invisible quads from the quad_list in CompositorFrame.
 
@@ -271,7 +271,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Display.Draw.Occlusion.Drawing.Area.Saved2"
     units="px" expires_after="M77">
-  <owner>yiyix@chromium.org</owner>
+  <owner>yiyix@monyhar.org</owner>
   <summary>
     It records the total drawing area skipped to show on screen as a result of
     applying draw occlusion. This is logged once per frame, when the frame is
@@ -281,7 +281,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Display.Draw.Occlusion.Percentage.Saved" units="%"
     expires_after="M77">
-  <owner>yiyix@chromium.org</owner>
+  <owner>yiyix@monyhar.org</owner>
   <summary>
     It records the percentage of total area drawing skipped by draw occlusion of
     the total area of damage rects in a compositor frame. This is logged once
@@ -291,8 +291,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Display.DrawToSwapUs" units="microseconds"
     expires_after="2021-11-21">
-  <owner>backer@chromium.org</owner>
-  <owner>rjkroege@chromium.org</owner>
+  <owner>backer@monyhar.org</owner>
+  <owner>rjkroege@monyhar.org</owner>
   <summary>
     This is logged once per frame, if the output surface provides timing
     information. It measures the time from the display compositor starting a
@@ -304,8 +304,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Display.DrmOverlayManager.CacheHit" enum="Boolean"
     expires_after="2020-09-01">
-  <owner>samans@chromium.org</owner>
-  <owner>rjkroege@chromium.org</owner>
+  <owner>samans@monyhar.org</owner>
+  <owner>rjkroege@monyhar.org</owner>
   <summary>
     Indicates whether DrmOverlayManager was able to find the overlay
     configuration in its cache. Recorded when DrmOverlayManager is asked to
@@ -316,8 +316,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Compositing.Display.DrmOverlayManager.TotalTestBufferMemorySize"
     units="KB" expires_after="2020-09-01">
-  <owner>samans@chromium.org</owner>
-  <owner>rjkroege@chromium.org</owner>
+  <owner>samans@monyhar.org</owner>
+  <owner>rjkroege@monyhar.org</owner>
   <summary>
     The amount of memory allocated for the purpose of performing a pageflip
     test. Recorded every time DRM thread is asked to validate an overlay
@@ -327,8 +327,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Display.FlattenedRenderPassCount" units="units"
     expires_after="2021-11-21">
-  <owner>backer@chromium.org</owner>
-  <owner>rjkroege@chromium.org</owner>
+  <owner>backer@monyhar.org</owner>
+  <owner>rjkroege@monyhar.org</owner>
   <summary>
     This is logged once per frame. It is the number of renderer passes after
     flattening all possible render passes. If the value is more than one, then
@@ -340,8 +340,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Compositing.Display.OverlayProcessorOzone.IsCandidateSharedImage"
     enum="Boolean" expires_after="2021-09-19">
-  <owner>samans@chromium.org</owner>
-  <owner>rjkroege@chromium.org</owner>
+  <owner>samans@monyhar.org</owner>
+  <owner>rjkroege@monyhar.org</owner>
   <summary>
     Indicates whether the OverlayCandidate passed to
     OverlayCandidateValidatorOzone is backed by a SharedImage (as opposed to a
@@ -352,8 +352,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Display.OverlayProcessorOzone.SharedImageExists"
     enum="Boolean" expires_after="2021-09-19">
-  <owner>samans@chromium.org</owner>
-  <owner>rjkroege@chromium.org</owner>
+  <owner>samans@monyhar.org</owner>
+  <owner>rjkroege@monyhar.org</owner>
   <summary>
     Indicates whether the SharedImage corresponding to the OverlayCandidate was
     found. Reported for every OverlayCandidate that is backed by a SharedImage.
@@ -362,8 +362,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Display.VizDependencyResolvedToGpuStartedDrawUs"
     units="microseconds" expires_after="2021-08-22">
-  <owner>vasilyt@chromium.org</owner>
-  <owner>backer@chromium.org</owner>
+  <owner>vasilyt@monyhar.org</owner>
+  <owner>backer@monyhar.org</owner>
   <summary>
     This is logged once per frame, if the output surface provides timing
     information. It measures delta between the time when display compositor draw
@@ -375,8 +375,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Display.VizScheduledDrawToDependencyResolvedUs"
     units="microseconds" expires_after="2021-08-22">
-  <owner>vasilyt@chromium.org</owner>
-  <owner>backer@chromium.org</owner>
+  <owner>vasilyt@monyhar.org</owner>
+  <owner>backer@monyhar.org</owner>
   <summary>
     This is logged once per frame if the output surface provides timing
     information. It measures delta between the time when display compositor
@@ -389,8 +389,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Display.VizScheduledDrawToGpuStartedDrawUs"
     units="microseconds" expires_after="2021-10-25">
-  <owner>vasilyt@chromium.org</owner>
-  <owner>backer@chromium.org</owner>
+  <owner>vasilyt@monyhar.org</owner>
+  <owner>backer@monyhar.org</owner>
   <summary>
     This is logged once per frame if the output surface provides timing
     information. It measures delta between the time when display compositor
@@ -402,7 +402,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Renderer.CALayerResult" enum="CALayerResult"
     expires_after="2020-04-19">
-  <owner>ccameron@chromium.org</owner>
+  <owner>ccameron@monyhar.org</owner>
   <summary>
     The outcome of attempting to replace all renderer tiles with CALayers.
     Either success, or the first reason why a DrawQuad couldn't be replaced by a
@@ -412,8 +412,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Renderer.GPUMemoryForTilingsInKb" units="Kb"
     expires_after="M99">
-  <owner>pdr@chromium.org</owner>
-  <owner>paint-dev@chromium.org</owner>
+  <owner>pdr@monyhar.org</owner>
+  <owner>paint-dev@monyhar.org</owner>
   <summary>
     The GPU memory allocated for tilings (in a renderer process), summed over
     all picture layers. Emitted once per drawing. Nothing is recorded if there
@@ -429,8 +429,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Expired Dec 2020.
   </obsolete>
-  <owner>flackr@chromium.org</owner>
-  <owner>input-dev@chromium.org</owner>
+  <owner>flackr@monyhar.org</owner>
+  <owner>input-dev@monyhar.org</owner>
   <summary>
     Time spent finding the closest matching layer to a given point whenever we
     do hit testing on LayerTreeImpl (in a renderer process).
@@ -446,8 +446,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Compositing.Renderer.LayerSkippedForDrawPropertiesDueToBackface"
     units="boolean" expires_after="M94">
-  <owner>chrishtr@chromium.org</owner>
-  <owner>paint-dev@chromium.org</owner>
+  <owner>chrishtr@monyhar.org</owner>
+  <owner>paint-dev@monyhar.org</owner>
   <summary>
     Records whether layer draw properties updates were skipped due to the layer
     being back-facing and not being double-sided, but were otherwise going to be
@@ -457,8 +457,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Renderer.LayersUpdateTime" units="microseconds"
     expires_after="2021-12-05">
-  <owner>schenney@chromium.org</owner>
-  <owner>paint-dev@chromium.org</owner>
+  <owner>schenney@monyhar.org</owner>
+  <owner>paint-dev@monyhar.org</owner>
   <summary>
     Time spent updating layers, in microseconds. Recorded when layers are
     updated (in a renderer process).
@@ -473,8 +473,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Renderer.LayerTreeImpl.CalculateDrawPropertiesUs"
     units="microseconds" expires_after="M81">
-  <owner>schenney@chromium.org</owner>
-  <owner>paint-dev@chromium.org</owner>
+  <owner>schenney@monyhar.org</owner>
+  <owner>paint-dev@monyhar.org</owner>
   <summary>
     Time spent updating layer draw properties, in microseconds. Recorded when a
     LayerTreeImpl's draw properties are updated (in a renderer process).
@@ -489,8 +489,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Renderer.LayerUpdateSkippedDueToBackface"
     units="boolean" expires_after="2021-10-25">
-  <owner>chrishtr@chromium.org</owner>
-  <owner>paint-dev@chromium.org</owner>
+  <owner>chrishtr@monyhar.org</owner>
+  <owner>paint-dev@monyhar.org</owner>
   <summary>
     Records whether a layer update was skipped due to the layer being
     back-facing and not being double-sided, but was otherwise going to be
@@ -500,8 +500,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Renderer.LCDTextDisallowedReasonKPixels"
     enum="LCDTextDisallowedReason" expires_after="2021-08-09">
-  <owner>wangxianzhu@chromium.org</owner>
-  <owner>paint-dev@chromium.org</owner>
+  <owner>wangxianzhu@monyhar.org</owner>
+  <owner>paint-dev@monyhar.org</owner>
   <summary>
     Records the approximate kilo-pixels covered by text drawing operations by
     LCD-text disallowed reasons. Hence the histogram value for each reason is
@@ -513,8 +513,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Renderer.LCDTextDisallowedReasonLayers"
     enum="LCDTextDisallowedReason" expires_after="2021-08-09">
-  <owner>wangxianzhu@chromium.org</owner>
-  <owner>paint-dev@chromium.org</owner>
+  <owner>wangxianzhu@monyhar.org</owner>
+  <owner>paint-dev@monyhar.org</owner>
   <summary>
     Records the number of layers containing text by LCD-text disallowed reasons.
     Recorded along with Compositing.Renderer.LCDTextDisallowedReasonKPixels.
@@ -523,8 +523,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Renderer.NumActiveLayers" units="layers"
     expires_after="2021-12-05">
-  <owner>schenney@chromium.org</owner>
-  <owner>paint-dev@chromium.org</owner>
+  <owner>schenney@monyhar.org</owner>
+  <owner>paint-dev@monyhar.org</owner>
   <summary>
     The number of layers in the active tree for each compositor frame. This is
     logged once per frame, before the frame is drawn (in a renderer process).
@@ -533,8 +533,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Renderer.NumActivePictureLayers" units="layers"
     expires_after="2021-12-05">
-  <owner>schenney@chromium.org</owner>
-  <owner>paint-dev@chromium.org</owner>
+  <owner>schenney@monyhar.org</owner>
+  <owner>paint-dev@monyhar.org</owner>
   <summary>
     The number of PictureLayers in the active tree for each compositor frame.
     This is logged once per frame, before the frame is drawn (in a renderer
@@ -544,8 +544,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.Renderer.NumRenderSurfaces" units="surfaces"
     expires_after="2021-10-10">
-  <owner>schenney@chromium.org</owner>
-  <owner>paint-dev@chromium.org</owner>
+  <owner>schenney@monyhar.org</owner>
+  <owner>paint-dev@monyhar.org</owner>
   <summary>
     The number of render surfaces in the render surface layer list. Recorded
     each time the render surface layer list is constructed (in a renderer
@@ -556,7 +556,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Compositing.RenderPass.AppendQuadData.CheckerboardedNeedRasterContentArea"
     units="pixels/frame" expires_after="2020-04-19">
-  <owner>weiliangc@chromium.org</owner>
+  <owner>weiliangc@monyhar.org</owner>
   <summary>
     Checkerboarded area, in number of pixels, that has recording but does not
     have time to finish rastering yet. A sample is recorded everytime a frame is
@@ -567,7 +567,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Compositing.RenderPass.AppendQuadData.CheckerboardedNoRecordingContentArea"
     units="pixels/frame" expires_after="M82">
-  <owner>weiliangc@chromium.org</owner>
+  <owner>weiliangc@monyhar.org</owner>
   <summary>
     Checkerboarded area, in number of pixels, that has no recording to raster
     from. A sample is recorded everytime a frame is drawn while a scroll is in
@@ -577,7 +577,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.RenderPass.AppendQuadData.NumIncompleteTiles"
     units="units" expires_after="M81">
-  <owner>weiliangc@chromium.org</owner>
+  <owner>weiliangc@monyhar.org</owner>
   <summary>
     Keeps track of number of incomplete tiles in a drawn compositor frame while
     scrolling. This is a rough measurement of ugliness during user interaction.
@@ -588,7 +588,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.RenderPass.AppendQuadData.NumMissingTiles"
     units="units" expires_after="M81">
-  <owner>weiliangc@chromium.org</owner>
+  <owner>weiliangc@monyhar.org</owner>
   <summary>
     Keeps track of number of missing tiles in a drawn compositor frame while
     scrolling. This is a rough measurement of ugliness during user interaction.
@@ -600,8 +600,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="Compositing.ResourcePoolMemoryUsage" units="MB"
     expires_after="2021-11-07">
-  <owner>sunnyps@chromium.org</owner>
-  <owner>graphics-dev@chromium.org</owner>
+  <owner>sunnyps@monyhar.org</owner>
+  <owner>graphics-dev@monyhar.org</owner>
   <summary>
     Size of the in-use portion of the ResourcePool for CC layer tree. Recorded
     each time resources are reclaimed after tile work completes.
@@ -610,7 +610,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.SurfaceAggregator.AggregateUs"
     units="microseconds" expires_after="2021-11-07">
-  <owner>weiliangc@chromium.org</owner>
+  <owner>weiliangc@monyhar.org</owner>
   <summary>
     Time spent aggregating compositor frames from different surfaces in
     microseconds. This is logged once per frame.
@@ -625,8 +625,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.SurfaceAggregator.CopiedSurfaceCount"
     units="surfaces" expires_after="2021-09-05">
-  <owner>kylechar@chromium.org</owner>
-  <owner>jonross@chromium.org</owner>
+  <owner>kylechar@monyhar.org</owner>
+  <owner>jonross@monyhar.org</owner>
   <summary>
     The number of surfaces where the active CompositorFrame was copied into the
     AggregateFrame during surface aggregation. This is logged once per frame.
@@ -635,8 +635,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.SurfaceAggregator.CopyUs" units="microseconds"
     expires_after="2021-09-05">
-  <owner>kylechar@chromium.org</owner>
-  <owner>jonross@chromium.org</owner>
+  <owner>kylechar@monyhar.org</owner>
+  <owner>jonross@monyhar.org</owner>
   <summary>
     Time spent copying quads during surface aggregation. This is a subset of the
     time recorded for Compositing.SurfaceAggregator.AggregateUs and is logged
@@ -649,8 +649,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.SurfaceAggregator.DeclareResourceCount"
     units="resources" expires_after="2021-09-05">
-  <owner>kylechar@chromium.org</owner>
-  <owner>jonross@chromium.org</owner>
+  <owner>kylechar@monyhar.org</owner>
+  <owner>jonross@monyhar.org</owner>
   <summary>
     The number of TransferableResources processed while declaring resources as
     used during surface aggregation. This is logged once per frame.
@@ -659,8 +659,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.SurfaceAggregator.DeclareResourcesUs"
     units="microseconds" expires_after="2021-09-05">
-  <owner>kylechar@chromium.org</owner>
-  <owner>jonross@chromium.org</owner>
+  <owner>kylechar@monyhar.org</owner>
+  <owner>jonross@monyhar.org</owner>
   <summary>
     Time spent declaring resources as used during surface aggregation. This is a
     subset of the time recorded for Compositing.SurfaceAggregator.AggregateUs
@@ -673,8 +673,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.SurfaceAggregator.FrameContainsVideo"
     enum="TypeOfVideoInFrame" expires_after="2021-10-04">
-  <owner>vikassoni@chromium.org</owner>
-  <owner>khushalsagar@chromium.org</owner>
+  <owner>vikassoni@monyhar.org</owner>
+  <owner>khushalsagar@monyhar.org</owner>
   <summary>
     Whether an aggregated frame contains video or not. This metric will be used
     to analyze the percentage of displayed frame with video. This metric will be
@@ -684,8 +684,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.SurfaceAggregator.PrewalkedSurfaceCount"
     units="surfaces" expires_after="2021-09-05">
-  <owner>kylechar@chromium.org</owner>
-  <owner>jonross@chromium.org</owner>
+  <owner>kylechar@monyhar.org</owner>
+  <owner>jonross@monyhar.org</owner>
   <summary>
     The number of surfaces that were looked at during the prewalk phase of
     surface aggregation. This is logged once per frame.
@@ -694,8 +694,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Compositing.SurfaceAggregator.PrewalkUs" units="microseconds"
     expires_after="2021-09-05">
-  <owner>kylechar@chromium.org</owner>
-  <owner>jonross@chromium.org</owner>
+  <owner>kylechar@monyhar.org</owner>
+  <owner>jonross@monyhar.org</owner>
   <summary>
     Time spent doing prewalk during surface aggregation. This is a subset of the
     time recorded for Compositing.SurfaceAggregator.AggregateUs and is logged
@@ -711,8 +711,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Expired October 2020.
   </obsolete>
-  <owner>jonross@chromium.org</owner>
-  <owner>kylechar@chromium.org</owner>
+  <owner>jonross@monyhar.org</owner>
+  <owner>kylechar@monyhar.org</owner>
   <summary>
     The amount of time it took for a Surface with unresolved dependencies to
     activate. Note that some activations may be triggered due to a deadline
@@ -725,8 +725,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Expired October 2020.
   </obsolete>
-  <owner>jonross@chromium.org</owner>
-  <owner>kylechar@chromium.org</owner>
+  <owner>jonross@monyhar.org</owner>
+  <owner>kylechar@monyhar.org</owner>
   <summary>
     Tracks the number of alive surfaces after each garbage collection operation.
   </summary>

@@ -89,12 +89,12 @@ func updateReadme() {
 	sedCmd := exec.Command("sed", "-E", "-i.back", "-e",
 		fmt.Sprintf("s/^(Date:)[[:space:]]+.*$/\\1 %s/", date), "-e",
 		fmt.Sprintf("s/^(Commit:)[[:space:]]+[a-f0-9]{40}/\\1 %s/", hash),
-		"README.chromium")
+		"README.monyhar")
 	if err := sedCmd.Run(); err != nil {
 		panic(fmt.Sprintf("failed to execute sed command: %v %v", sedCmd, err))
 	}
 
-	rmCmd := exec.Command("rm", "README.chromium.back")
+	rmCmd := exec.Command("rm", "README.monyhar.back")
 	if rmCmd.Run() != nil {
 		panic(fmt.Sprintf("failed to execute rm command: %v", err))
 	}

@@ -70,8 +70,8 @@ def _milestone_details(*, project, ref):
 
 # The milestone names and branch numbers of branches that we have builders
 # running for (including milestone-specific projects)
-# Branch numbers and milestones can be viewed in the chromium column at
-# https://chromiumdash.appspot.com/releases
+# Branch numbers and milestones can be viewed in the monyhar column at
+# https://monyhardash.appspot.com/releases
 # The 3rd portion of the version number is the branch number for the associated
 # milestone
 ACTIVE_MILESTONES = {

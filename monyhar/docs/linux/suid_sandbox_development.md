@@ -1,7 +1,7 @@
 # Linux SUID Sandbox Development
 
 *IMPORTANT NOTE: The Linux SUID sandbox is almost but not completely removed.
-See https://bugs.chromium.org/p/chromium/issues/detail?id=598454
+See https://bugs.monyhar.org/p/monyhar/issues/detail?id=598454
 This page is mostly out-of-date.*
 
 For context see [LinuxSUIDSandbox](suid_sandbox.md)
@@ -67,7 +67,7 @@ If you are certain that you don't want the setuid sandbox, use
 `--disable-setuid-sandbox`. There should be very few cases like this. So if
 you're not absolutely sure, run with the setuid sandbox.
 
-## Installation instructions for "[Raw builds of Chromium](https://commondatastorage.googleapis.com/chromium-browser-continuous/index.html)"
+## Installation instructions for "[Raw builds of Chromium](https://commondatastorage.googleapis.com/monyhar-browser-continuous/index.html)"
 
 If you're using a "raw" build of Chromium, do the following:
 

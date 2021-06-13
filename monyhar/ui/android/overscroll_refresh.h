@@ -11,7 +11,7 @@
 #include "ui/gfx/geometry/vector2d_f.h"
 
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.ui
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.ui
 enum OverscrollAction { NONE = 0, PULL_TO_REFRESH = 1, HISTORY_NAVIGATION = 2 };
 
 namespace cc {

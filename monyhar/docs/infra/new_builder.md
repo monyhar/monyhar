@@ -7,13 +7,13 @@ on Chromium builders, but parts may be applicable to other projects.
 
 ## TL;DR
 
-For a typical chromium builder using the chromium recipe, you'll need to file a
+For a typical monyhar builder using the monyhar recipe, you'll need to file a
 bug for tracking purposes, acquire a host, and then land **three** CLs:
 
-1. in [infradata/config][16], modifying `chromium.star`.
-2. in [chromium/tools/build][17], modifying the chromium\_tests\_builder\_config
+1. in [infradata/config][16], modifying `monyhar.star`.
+2. in [monyhar/tools/build][17], modifying the monyhar\_tests\_builder\_config
    configuration.
-3. in [chromium/src][18], modifying all of the following:
+3. in [monyhar/src][18], modifying all of the following:
     1. LUCI service configurations in `//infra/config`
     2. Compile configuration in `//tools/mb`
     3. Test configuration in `//testing/buildbot`
@@ -29,7 +29,7 @@ non-CQ try builders are called "optional" try builders.
 
 Try builders normally pick up their configuration from a "mirrored" (i.e.,
 matching) CI builder (the mapping is set in [trybots.py][25] in the
-chromium\_tests recipe configuration) and run the exact same things.  However,
+monyhar\_tests recipe configuration) and run the exact same things.  However,
 they can be configured to use slightly different GN args (usually to enable
 DCHECKs on release builders) and (rarely) to run different tests or run them
 with different flags. [ We enable dchecks on the release builders as a
@@ -62,7 +62,7 @@ All CQ builders *must* have mirrored CI builders.
 
 ## Pick a name and a builder group
 
-Your new builder's name should follow the [chromium builder naming scheme][3].
+Your new builder's name should follow the [monyhar builder naming scheme][3].
 
 Builders are put into builder groups, with the group acting as part of the key
 used for looking up configuration for the builder in various places. Builders
@@ -70,16 +70,16 @@ are also grouped within Milo UI pages according to the builder group. Builder
 groups are somewhat arbitrary, but there are some builder groups with
 significance:
 
-* `chromium.$OS` - These are builder groups for builders that provide testing
+* `monyhar.$OS` - These are builder groups for builders that provide testing
   coverage for a specific OS. These builders are watched by the main sheriff
   rotation so they must be in a state where builds generally succeed.
-* `chromium` - This is a builder group for builders that produce archived builds
+* `monyhar` - This is a builder group for builders that produce archived builds
   for each OS. These builders are watched by the main sheriff rotation.
-* `chromium.fyi` - This is a catch-all builder group for FYI builders (builders
+* `monyhar.fyi` - This is a catch-all builder group for FYI builders (builders
   that do not have a formal sheriff rotation). Avoid using this, instead add
   to/create an OS-specific FYI builder group if you are testing an OS-specific
-  configuration (e.g. `chromium.android.fyi`) or a feature/team-specific builder
-  group (e.g. `chromium.updater`).
+  configuration (e.g. `monyhar.android.fyi`) or a feature/team-specific builder
+  group (e.g. `monyhar.updater`).
 
 > **Note:** If you're creating a try builder, its name should match the name of
 > the CI builder it mirrors. The builder group for the try builder should
@@ -104,25 +104,25 @@ the hardware to be used by your builder.
 ## Recipe configuration
 
 Recipes tell your builder what to do. Many require some degree of
-per-builder configuration outside of the chromium repo, though the
+per-builder configuration outside of the monyhar repo, though the
 specifics vary. The recipe you use depends on what you want your
 builder to do.
 
-For typical chromium compile and/or test builders, the chromium and
-chromium\_trybot recipes should be sufficient.
+For typical monyhar compile and/or test builders, the monyhar and
+monyhar\_trybot recipes should be sufficient.
 
-To configure a chromium CI builder, you'll want to add a config block to the
-file in [recipe\_modules/chromium\_tests\_builder\_config][5] corresponding to
+To configure a monyhar CI builder, you'll want to add a config block to the
+file in [recipe\_modules/monyhar\_tests\_builder\_config][5] corresponding to
 your new builder's builder group. The format is somewhat in flux and is not very
 consistent among the different builder groups, but something like this should
 suffice:
 
 ``` py
 'your-new-builder': builder_spec.BuilderSpec.create(
-  chromium_config='chromium',
-  gclient_config='chromium',
-  chromium_apply_config=['mb', 'ninja_confirm_noop'],
-  chromium_config_kwargs={
+  monyhar_config='monyhar',
+  gclient_config='monyhar',
+  monyhar_apply_config=['mb', 'ninja_confirm_noop'],
+  monyhar_config_kwargs={
     'BUILD_CONFIG': 'Release', # or 'Debug', as appropriate
     'TARGET_BITS': 64, # or 32, for some mobile builders
   },
@@ -134,7 +134,7 @@ suffice:
 )
 ```
 
-For chromium try builders, you'll also want to set up mirroring.
+For monyhar try builders, you'll also want to set up mirroring.
 You can do so by adding your new try builder to [trybots.py][21].
 
 A typical entry will just reference the matching CI builder, e.g.:
@@ -143,18 +143,18 @@ A typical entry will just reference the matching CI builder, e.g.:
 TRYBOTS = try_spec.TryDatabase.create({
   # ...
 
-  'tryserver.chromium.example': {
+  'tryserver.monyhar.example': {
       # If you want to build and test the same targets as one
       # CI builder, you can just do this:
       'your-new-builder': try_spec.TrySpec.create_for_single_mirror(
-          builder_group='chromium.example',
+          builder_group='monyhar.example',
           buildername='your-new-builder',
       ),
 
       # If you want to build the same targets as one CI builder
       # but not test anything, you can do this:
       'your-new-compile-builder': try_spec.TrySpec.create_for_single_mirror(
-          builder_group='chromium.example',
+          builder_group='monyhar.example',
           buildername='your-new-builder',
           analyze_mode='compile',
       ),
@@ -162,7 +162,7 @@ TRYBOTS = try_spec.TryDatabase.create({
       # If you want to build and test the same targets as a builder/tester
       # CI pair, you can do this:
       'your-new-tester': try_spec.TrySpec.create_for_single_mirror(
-          builder_group='chromium.example',
+          builder_group='monyhar.example',
           buildername='your-new-builder',
           tester='your-new-tester',
       ),
@@ -176,12 +176,12 @@ TRYBOTS = try_spec.TryDatabase.create({
 
 ## Chromium configuration
 
-Lastly, you need to configure a variety of things in the chromium repo.
+Lastly, you need to configure a variety of things in the monyhar repo.
 It's generally ok to land all of them in a single CL.
 
 ### LUCI services
 
-LUCI services used by chromium are configured in [//infra/config][6].
+LUCI services used by monyhar are configured in [//infra/config][6].
 
 The configuration is written in Starlark and used to generate Protobuf files
 which are also checked in to the repo.
@@ -212,7 +212,7 @@ Most builders are defined using the builder function from [builders.star][24]
 dimensions and properties and provides a unified interface for setting
 module-level defaults.
 
-A typical chromium builder won't need to configure much; module-level defaults
+A typical monyhar builder won't need to configure much; module-level defaults
 apply values that are widely used for the bucket (e.g. bucket and executable).
 
 Each builder group has a function (sometimes multiple) defined that can be used
@@ -243,7 +243,7 @@ Milo's configuration schema is [here][9].
 
 Each console has a corresponding `.star` file that defines the console.
 
-A typical chromium builder should be added to one or two consoles
+A typical monyhar builder should be added to one or two consoles
 at most: one corresponding to its builder group, and possibly the main
 console.
 
@@ -312,7 +312,7 @@ To trigger builders when changes are landed on a repo, a poller needs to be
 defined. The poller defines the repo and refs to watch and triggers builders
 when changes land on one of the watched refs.
 
-Pollers are already defined for all of the active refs within chromium/src. The
+Pollers are already defined for all of the active refs within monyhar/src. The
 modules for the `ci` bucket and its release branch counterparts are written such
 that builders will be triggered by the appropriate poller by default. Setting
 the `triggered_by` field on a builder will disable this default behavior.
@@ -367,9 +367,9 @@ generally be restricted to builders that are watched by a sheriffing rotation.
 ##### Setting main_console_view (CI builder)
 
 A value should usually be passed to the `main_console_view` argument if the
-builder is in one of the builder groups that is watched by the main chromium
-sheriff rotation (*chromium*, *chromium.win*, *chromium.mac*, *chromium.linux*,
-*chromium.chromiumos* and *chromium.memory*).
+builder is in one of the builder groups that is watched by the main monyhar
+sheriff rotation (*monyhar*, *monyhar.win*, *monyhar.mac*, *monyhar.linux*,
+*monyhar.monyharos* and *monyhar.memory*).
 
 ##### Setting cq_mirror_console_view (CI builder)
 
@@ -378,23 +378,23 @@ builder is the mirror of a non-experimental try builder on the CQ.
 
 ### Recipe-specific configurations
 
-#### chromium & chromium\_trybot
+#### monyhar & monyhar\_trybot
 
-The build and test configurations used by the main `chromium` and
-`chromium_trybot` recipes are stored src-side:
+The build and test configurations used by the main `monyhar` and
+`monyhar_trybot` recipes are stored src-side:
 
-* **Build configuration**: the gn configuration used by chromium
+* **Build configuration**: the gn configuration used by monyhar
 recipe builders is handled by [MB][13]. MB's configuration is documented
 [here][14]. You only need to modify it if your new builder will be
 compiling.
 
-* **Test configuration**: the test configuration used by chromium
+* **Test configuration**: the test configuration used by monyhar
 recipe builders is in a group of `.pyl` and derived `.json` files
 in `//testing/buildbot`. The format is described [here][15].
 
 ### Branched builders
 
-Active chromium branches have CI and CQ set up that is a subset of the
+Active monyhar branches have CI and CQ set up that is a subset of the
 configuration for trunk. The exact subset depends on the stage of the branch
 (beta/stable vs. a long-term channel). Most builders do not need to be branched;
 on trunk we run tests for not-yet-supported features and configurations.
@@ -416,30 +416,30 @@ the branch.
 
 If you're in need of further assistance, if you're not sure about
 one or more steps, or if you found this documentation lacking, please
-reach out to infra-dev@chromium.org or [file a bug][19]!
+reach out to infra-dev@monyhar.org or [file a bug][19]!
 
 [1]: http://go/file-chrome-resource-bug
-[3]: https://bit.ly/chromium-build-naming
-[4]: http://go/chromium-hardware
-[5]: https://chromium.googlesource.com/chromium/tools/build/+/HEAD/recipes/recipe_modules/chromium_tests_builder_config
+[3]: https://bit.ly/monyhar-build-naming
+[4]: http://go/monyhar-hardware
+[5]: https://monyhar.googlesource.com/monyhar/tools/build/+/HEAD/recipes/recipe_modules/monyhar_tests_builder_config
 [6]: /infra/config
 [7]: https://luci-config.appspot.com/schemas/projects:cr-buildbucket.cfg
 [8]: /infra/config/generated/cr-buildbucket.cfg
 [9]: http://luci-config.appspot.com/schemas/projects:luci-milo.cfg
 [10]: /infra/config/generated/luci-milo.cfg
-[11]: https://chromium.googlesource.com/infra/luci/luci-go/+/HEAD/scheduler/appengine/messages/config.proto
+[11]: https://monyhar.googlesource.com/infra/luci/luci-go/+/HEAD/scheduler/appengine/messages/config.proto
 [12]: /infra/config/generated/luci-scheduler.cfg
 [13]: /tools/mb/README.md
 [14]: /tools/mb/docs/user_guide.md#the-mb_config_pyl-config-file
 [15]: /testing/buildbot/README.md
 [16]: https://chrome-internal.googlesource.com/infradata/config
-[17]: https://chromium.googlesource.com/chromium/tools/build
+[17]: https://monyhar.googlesource.com/monyhar/tools/build
 [18]: /
 [19]: https://g.co/bugatrooper
-[20]: https://chromium.googlesource.com/infra/luci/luci-py/+/HEAD/appengine/swarming/proto/bots.proto
-[21]: https://chromium.googlesource.com/chromium/tools/build/+/HEAD/recipes/recipe_modules/chromium_tests_builder_config/trybots.py
+[20]: https://monyhar.googlesource.com/infra/luci/luci-py/+/HEAD/appengine/swarming/proto/bots.proto
+[21]: https://monyhar.googlesource.com/monyhar/tools/build/+/HEAD/recipes/recipe_modules/monyhar_tests_builder_config/trybots.py
 [22]: /infra/config/main.star
-[23]: /infra/config/subprojects/chromium
+[23]: /infra/config/subprojects/monyhar
 [24]: /infra/config/lib/builders.star
-[25]: https://source.chromium.org/chromium/chromium/tools/build/+/main:recipes/recipe_modules/chromium_tests_builder_config/trybots.py
+[25]: https://source.monyhar.org/monyhar/monyhar/tools/build/+/main:recipes/recipe_modules/monyhar_tests_builder_config/trybots.py
 [26]: /infra/config/generated/cq-builders.md

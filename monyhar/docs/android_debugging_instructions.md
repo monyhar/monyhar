@@ -20,9 +20,9 @@ out/Default/bin/chrome_public_apk launch --args='--disable-fre' 'data:text/html;
 ```
 
 ## Logging
-[Chromium logging from LOG(INFO)](https://chromium.googlesource.com/chromium/src/+/main/docs/android_logging.md)
+[Chromium logging from LOG(INFO)](https://monyhar.googlesource.com/monyhar/src/+/main/docs/android_logging.md)
 etc., is directed to the Android logcat logging facility. You can filter the
-messages, e.g. view chromium verbose logging, everything else at warning level
+messages, e.g. view monyhar verbose logging, everything else at warning level
 with:
 
 ```shell
@@ -124,7 +124,7 @@ Do you need "set solib-search-path" or "set sysroot"?
 Failed to read a valid object file image from memory.
 ```
 
-If you have ever run an ASAN build of chromium on the device, you may get
+If you have ever run an ASAN build of monyhar on the device, you may get
 an error like the following when you start up gdb:
 ```
 /tmp/<username>-adb-gdb-tmp-<pid>/gdb.init:11: Error in sourced command file:
@@ -214,7 +214,7 @@ When debugging a failing test on the build waterfall, you can find the mapping
 file as follows:
 
 1. Open buildbot page for the failing build (e.g.,
-   https://ci.chromium.org/p/chrome/builders/ci/android-go-perf/1234).
+   https://ci.monyhar.org/p/chrome/builders/ci/android-go-perf/1234).
 2. Open the swarming page for the failing shard (e.g., shard #3).
 3. Click on "Isolated Inputs" to locate the files the shard used to run the
    test.
@@ -262,7 +262,7 @@ That command will cause the test process to wait until a debugger is attached.
 To attach a debugger:
 
 ```shell
-build/android/adb_gdb --output-directory=out/Default --package-name=org.chromium.native_test
+build/android/adb_gdb --output-directory=out/Default --package-name=org.monyhar.native_test
 ```
 
 After attaching gdb to the process you can use it normally. For example:

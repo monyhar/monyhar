@@ -11,7 +11,7 @@ BrowserFragmentImpl. It should be used to reference anything associated with the
 instance, embedder-specific resources, like Color resources which are resolved according to the
 theme of the embedding activity.
 
-[link1]: https://source.chromium.org/chromium/chromium/src/+/6c336f4d55231595c038756f58a9e61d416a9c8f:weblayer/browser/java/org/chromium/weblayer_private/BrowserFragmentImpl.java;bpv=1;bpt=1
+[link1]: https://source.monyhar.org/monyhar/monyhar/src/+/6c336f4d55231595c038756f58a9e61d416a9c8f:weblayer/browser/java/org/monyhar/weblayer_private/BrowserFragmentImpl.java;bpv=1;bpt=1
 
 ## WebLayer's Activity Context
 
@@ -21,7 +21,7 @@ context go to the WebView or WebLayer support APK and not the embedder's APK. Th
 is what's returned by [`BrowserImpl.getContext()`][link2]. Use this when referencing WebLayer specific
 resources. This is expected to be the most common use case.
 
-[link2]: https://source.chromium.org/chromium/chromium/src/+/main:weblayer/browser/java/org/chromium/weblayer_private/BrowserImpl.java?q=f:browserimpl%20getContext&ss=chromium%2Fchromium%2Fsrc
+[link2]: https://source.monyhar.org/monyhar/monyhar/src/+/main:weblayer/browser/java/org/monyhar/weblayer_private/BrowserImpl.java?q=f:browserimpl%20getContext&ss=monyhar%2Fmonyhar%2Fsrc
 
 ## Embedder's Application Context
 
@@ -33,4 +33,4 @@ reference WebLayer-specific resources. This is what's returned by
 It shouldn't be downcast to Application (or any subclass thereof) since it's wrapped in a
 ContextWrapper.
 
-[link3]: https://source.chromium.org/chromium/chromium/src/+/main:base/android/java/src/org/chromium/base/ContextUtils.java?q=f:base%2FContextUtils%20getApplicationContext()&ss=chromium%2Fchromium%2Fsrc
+[link3]: https://source.monyhar.org/monyhar/monyhar/src/+/main:base/android/java/src/org/monyhar/base/ContextUtils.java?q=f:base%2FContextUtils%20getApplicationContext()&ss=monyhar%2Fmonyhar%2Fsrc

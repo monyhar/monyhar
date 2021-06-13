@@ -10,7 +10,7 @@ revision=9a84af84d3fa62b230569cf1d3abf69cc7c576e2
 cd $(dirname $0)
 
 rm -rf logdog
-git clone https://chromium.googlesource.com/infra/luci/luci-py/client/libs/logdog
+git clone https://monyhar.googlesource.com/infra/luci/luci-py/client/libs/logdog
 (
     cd logdog
     git checkout $revision
@@ -19,10 +19,10 @@ git clone https://chromium.googlesource.com/infra/luci/luci-py/client/libs/logdo
     rm -rf .git tests
 )
 
-cat <<EOF > README.chromium
+cat <<EOF > README.monyhar
 Name: logdog
 Short Name: logdog
-URL: https://chromium.googlesource.com/infra/luci/luci-py/client/libs/logdog
+URL: https://monyhar.googlesource.com/infra/luci/luci-py/client/libs/logdog
 Version: $revision
 Revision: $revision
 License: Apache 2.0

@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs.content;
+package org.monyhar.chrome.browser.customtabs.content;
 
 import android.text.TextUtils;
 
-import org.chromium.base.annotations.RemovableInRelease;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.customtabs.CustomTabNavigationEventObserver;
-import org.chromium.chrome.browser.customtabs.CustomTabObserver;
-import org.chromium.chrome.browser.dependency_injection.ActivityScope;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.url.GURL;
+import org.monyhar.base.annotations.RemovableInRelease;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.customtabs.CustomTabNavigationEventObserver;
+import org.monyhar.chrome.browser.customtabs.CustomTabObserver;
+import org.monyhar.chrome.browser.dependency_injection.ActivityScope;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.url.GURL;
 
 import javax.inject.Inject;
 

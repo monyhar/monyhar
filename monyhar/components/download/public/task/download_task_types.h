@@ -8,7 +8,7 @@
 namespace download {
 
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.download
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.download
 enum class DownloadTaskType {
   // Task to invoke download service to take various download actions.
   DOWNLOAD_TASK = 0,

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
 import android.annotation.SuppressLint;
 import android.os.Build;
@@ -18,11 +18,11 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.AwContents;
-import org.chromium.android_webview.test.util.JSUtils;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.MinAndroidSdkLevel;
-import org.chromium.net.test.EmbeddedTestServer;
+import org.monyhar.android_webview.AwContents;
+import org.monyhar.android_webview.test.util.JSUtils;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.MinAndroidSdkLevel;
+import org.monyhar.net.test.EmbeddedTestServer;
 
 import java.util.Locale;
 import java.util.regex.Pattern;

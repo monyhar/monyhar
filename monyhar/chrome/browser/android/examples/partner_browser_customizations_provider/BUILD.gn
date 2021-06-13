@@ -14,14 +14,14 @@ android_resources("partner_browser_customizations_example_apk_resources") {
 
 android_apk("partner_browser_customizations_example_apk") {
   sources = [
-    "src/org/chromium/example/partnercustomizations/PartnerBookmarksProviderExample.java",
-    "src/org/chromium/example/partnercustomizations/PartnerBrowserCustomizationsProviderExample.java",
+    "src/org/monyhar/example/partnercustomizations/PartnerBookmarksProviderExample.java",
+    "src/org/monyhar/example/partnercustomizations/PartnerBrowserCustomizationsProviderExample.java",
   ]
   android_manifest = "AndroidManifest.xml"
   min_sdk_version = 21
   target_sdk_version = 21
   apk_name = "PartnerCustomizationProviderExample"
   deps = [ ":partner_browser_customizations_example_apk_resources" ]
-  chromium_code = false
+  monyhar_code = false
   never_incremental = true
 }

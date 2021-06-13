@@ -76,7 +76,7 @@ if (!is_android) {
       "//third_party/protobuf:protobuf_full",
     ]
 
-    if (!enable_chromium_runtime_cast_renderer ||
+    if (!enable_monyhar_runtime_cast_renderer ||
         chromecast_branding == "public") {
       sources += [ "cast_runtime_audio_channel_endpoint_simple.cc" ]
     }

@@ -1,24 +1,24 @@
 # OWNERS specializing in graphics code.
 
-chrishtr@chromium.org
-flackr@chromium.org
-fmalita@chromium.org
-fserb@chromium.org
-jbroman@chromium.org
-juanmihd@chromium.org
-kbr@chromium.org
-pdr@chromium.org
-schenney@chromium.org
-senorblanco@chromium.org
-vollick@chromium.org
+chrishtr@monyhar.org
+flackr@monyhar.org
+fmalita@monyhar.org
+fserb@monyhar.org
+jbroman@monyhar.org
+juanmihd@monyhar.org
+kbr@monyhar.org
+pdr@monyhar.org
+schenney@monyhar.org
+senorblanco@monyhar.org
+vollick@monyhar.org
 
 # For surface ID propagation and synchronization
-jonross@chromium.org
+jonross@monyhar.org
 
 # lowLatency canvas
-mcasas@chromium.org
+mcasas@monyhar.org
 
 # Video SurfaceLayer functionality.
 per-file video_frame*=file://media/OWNERS
-per-file video_frame*=lethalantidote@chromium.org
+per-file video_frame*=lethalantidote@monyhar.org
 per-file surface_layer_bridge*=file://media/OWNERS

@@ -796,7 +796,7 @@ void OobeUI::GetLocalizedStrings(base::DictionaryValue* localized_strings) {
 #if BUILDFLAG(GOOGLE_CHROME_BRANDING)
   localized_strings->SetString("buildType", "chrome");
 #else
-  localized_strings->SetString("buildType", "chromium");
+  localized_strings->SetString("buildType", "monyhar");
 #endif
 
   bool keyboard_driven_oobe =

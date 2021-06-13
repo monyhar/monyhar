@@ -26,12 +26,12 @@ Contents:
     To generate the atoms using the code found in selenium tree:
       $ git clone https://github.com/SeleniumHQ/selenium.git
       $ cd selenium
-      $ git apply <chromium_dir>/src/third_party/webdriver/patch.diff
+      $ git apply <monyhar_dir>/src/third_party/webdriver/patch.diff
       $ bazel build javascript/chrome-driver/...
       $ cp bazel-bin/javascript/chrome-driver/atoms.h \
-           <chromium_dir>/src/third_party/webdriver/atoms.h
+           <monyhar_dir>/src/third_party/webdriver/atoms.h
       $ cp bazel-bin/javascript/chrome-driver/atoms.cc \
-           <chromium_dir>/src/third_party/webdriver/atoms.cc
+           <monyhar_dir>/src/third_party/webdriver/atoms.cc
 
     The atoms.h/cc files are only used directly in the chrome version of
     webdriver found under the path src/chrome/test/chromedriver.
@@ -41,7 +41,7 @@ Contents:
 
     If the patch.diff fails to apply, rerun with --reject. Review the output and
     manually merge the failed changes. Regenerate the patch when finished:
-    $ git diff > <chromium_dir>/src/third_party/webdriver/patch.diff
+    $ git diff > <monyhar_dir>/src/third_party/webdriver/patch.diff
 
 Local Modifications:
 - Applied changes in patch.diff to the selenium tree prior to building the atoms.

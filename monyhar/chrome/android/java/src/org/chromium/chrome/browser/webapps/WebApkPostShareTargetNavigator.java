@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps;
+package org.monyhar.chrome.browser.webapps;
 
 import androidx.browser.trusted.sharing.ShareData;
 
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.browserservices.intents.WebApkShareTarget;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.browserservices.intents.WebApkShareTarget;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * Perform navigation for share target with POST request.

@@ -8,7 +8,7 @@
 
 #include "base/bind.h"
 #include "base/numerics/safe_conversions.h"
-#include "components/update_client/net/network_chromium.h"
+#include "components/update_client/net/network_monyhar.h"
 #include "net/base/load_flags.h"
 #include "net/http/http_response_headers.h"
 #include "net/traffic_annotation/network_traffic_annotation.h"

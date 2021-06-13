@@ -32,7 +32,7 @@ void ThreadGroupNativeMac::StartImpl() {
       priority_hint_ == ThreadPriority::NORMAL ? QOS_CLASS_USER_INITIATED
                                                : QOS_CLASS_BACKGROUND,
       /*relative_priority=*/-1);
-  queue_.reset(dispatch_queue_create("org.chromium.base.ThreadPool.ThreadGroup",
+  queue_.reset(dispatch_queue_create("org.monyhar.base.ThreadPool.ThreadGroup",
                                      attributes));
   group_.reset(dispatch_group_create());
 }

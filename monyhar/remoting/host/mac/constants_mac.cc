@@ -8,7 +8,7 @@
 
 namespace remoting {
 
-#define SERVICE_NAME "org.chromium.chromoting"
+#define SERVICE_NAME "org.monyhar.chromoting"
 
 #define APPLICATIONS_DIR "/Applications/"
 #define HELPER_TOOLS_DIR "/Library/PrivilegedHelperTools/"

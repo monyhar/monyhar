@@ -18,7 +18,7 @@
         android:layout_marginEnd="@dimen/editor_dialog_section_large_spacing"
         style="@style/VerticalDivider" />
 
-    <org.chromium.ui.widget.ChromeImageView
+    <org.monyhar.ui.widget.ChromeImageView
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_gravity="center_vertical"

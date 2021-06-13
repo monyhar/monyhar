@@ -5,7 +5,7 @@
 import("//build/config/android/rules.gni")
 
 android_library("canary_lib_java") {
-  sources = [ "src/org/chromium/webapk/shell_apk/test/canary/Canary.java" ]
+  sources = [ "src/org/monyhar/webapk/shell_apk/test/canary/Canary.java" ]
 }
 
 dist_dex("canary_dex") {
@@ -14,7 +14,7 @@ dist_dex("canary_dex") {
 }
 
 android_library("canary_lib2_java") {
-  sources = [ "src/org/chromium/webapk/shell_apk/test/canary/Canary2.java" ]
+  sources = [ "src/org/monyhar/webapk/shell_apk/test/canary/Canary2.java" ]
 }
 
 dist_dex("canary2_dex") {

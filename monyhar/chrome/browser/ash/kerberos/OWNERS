@@ -3,9 +3,9 @@
 per-file BUILD.gn=*
 
 # Current owners (prefer)
-fsandrade@chromium.org
-tomdobro@chromium.org
+fsandrade@monyhar.org
+tomdobro@monyhar.org
 
 # Previous owners (ask if current owners are not available)
 # Commented out so automatic tools don't prefer.
-# ljusten@chromium.org
+# ljusten@monyhar.org

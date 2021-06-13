@@ -28,7 +28,7 @@ const char* FakeEulaMixin::kOfflineEULAWarning =
     // See IDS_TERMS_HTML for the complete text.
     "Google Chrome and Chrome OS Additional Terms of Service";
 #else
-    // Placeholder text in terms_chromium.html.
+    // Placeholder text in terms_monyhar.html.
     "In official builds this space will show the terms of service.";
 #endif
 

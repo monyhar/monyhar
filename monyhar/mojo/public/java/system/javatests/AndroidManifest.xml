@@ -6,7 +6,7 @@
        doesn't ignore this. -->
   <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:tools="http://schemas.android.com/tools"
-      package="org.chromium.mojo.tests">
+      package="org.monyhar.mojo.tests">
 
     <uses-permission android:name="android.permission.INJECT_EVENTS"
         tools:ignore="ProtectedPermissions"/>
@@ -20,8 +20,8 @@
         <uses-library android:name="android.test.runner" />
     </application>
 
-    <instrumentation android:name="org.chromium.base.test.BaseChromiumAndroidJUnitRunner"
-        android:targetPackage="org.chromium.mojo.tests"
-        android:label="Tests for org.chromium.mojo"/>
+    <instrumentation android:name="org.monyhar.base.test.BaseChromiumAndroidJUnitRunner"
+        android:targetPackage="org.monyhar.mojo.tests"
+        android:label="Tests for org.monyhar.mojo"/>
 
 </manifest>

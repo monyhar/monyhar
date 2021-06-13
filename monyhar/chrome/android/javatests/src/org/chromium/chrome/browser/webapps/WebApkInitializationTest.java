@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps;
+package org.monyhar.chrome.browser.webapps;
 
 import static org.junit.Assert.assertTrue;
 
@@ -14,20 +14,20 @@ import org.junit.rules.RuleChain;
 import org.junit.rules.TestRule;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.browserservices.ui.SharedActivityCoordinator;
-import org.chromium.chrome.browser.browserservices.ui.controller.webapps.WebappDisclosureController;
-import org.chromium.chrome.browser.customtabs.CustomTabOrientationController;
-import org.chromium.chrome.browser.dependency_injection.ChromeActivityCommonsModule;
-import org.chromium.chrome.browser.dependency_injection.ModuleOverridesRule;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.lifecycle.LifecycleObserver;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.util.browser.webapps.WebApkIntentDataProviderBuilder;
-import org.chromium.net.test.EmbeddedTestServer;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.browserservices.ui.SharedActivityCoordinator;
+import org.monyhar.chrome.browser.browserservices.ui.controller.webapps.WebappDisclosureController;
+import org.monyhar.chrome.browser.customtabs.CustomTabOrientationController;
+import org.monyhar.chrome.browser.dependency_injection.ChromeActivityCommonsModule;
+import org.monyhar.chrome.browser.dependency_injection.ModuleOverridesRule;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.lifecycle.LifecycleObserver;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.util.browser.webapps.WebApkIntentDataProviderBuilder;
+import org.monyhar.net.test.EmbeddedTestServer;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -137,7 +137,7 @@ public class WebApkInitializationTest {
         EmbeddedTestServer embeddedTestServer =
                 mActivityRule.getEmbeddedTestServerRule().getServer();
         WebApkIntentDataProviderBuilder intentDataProviderBuilder =
-                new WebApkIntentDataProviderBuilder("org.chromium.webapk.for.testing",
+                new WebApkIntentDataProviderBuilder("org.monyhar.webapk.for.testing",
                         embeddedTestServer.getURL(
                                 "/chrome/test/data/banners/manifest_test_page.html"));
         mActivityRule.startWebApkActivity(intentDataProviderBuilder.build());

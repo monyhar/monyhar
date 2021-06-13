@@ -13,18 +13,18 @@
 {% endblock %}
 
 {% block extra_application_definitions_for_test %}
-        <provider android:name="org.chromium.chrome.test.TestContentProvider"
-            android:authorities="org.chromium.chrome.test.TestContentProvider"
+        <provider android:name="org.monyhar.chrome.test.TestContentProvider"
+            android:authorities="org.monyhar.chrome.test.TestContentProvider"
             android:exported="true" />
 
-        <provider android:name="org.chromium.chrome.test.partnercustomizations.TestPartnerBrowserCustomizationsProvider"
-            android:authorities="org.chromium.chrome.test.partnercustomizations.TestPartnerBrowserCustomizationsProvider"
+        <provider android:name="org.monyhar.chrome.test.partnercustomizations.TestPartnerBrowserCustomizationsProvider"
+            android:authorities="org.monyhar.chrome.test.partnercustomizations.TestPartnerBrowserCustomizationsProvider"
             android:exported="true" />
-        <provider android:name="org.chromium.chrome.test.partnercustomizations.TestPartnerBrowserCustomizationsDelayedProvider"
-            android:authorities="org.chromium.chrome.test.partnercustomizations.TestPartnerBrowserCustomizationsDelayedProvider"
+        <provider android:name="org.monyhar.chrome.test.partnercustomizations.TestPartnerBrowserCustomizationsDelayedProvider"
+            android:authorities="org.monyhar.chrome.test.partnercustomizations.TestPartnerBrowserCustomizationsDelayedProvider"
             android:exported="true" />
 
-        <activity android:name="org.chromium.chrome.browser.customtabs.CustomTabExternalNavigationTest$DummyActivityForSpecialScheme"
+        <activity android:name="org.monyhar.chrome.browser.customtabs.CustomTabExternalNavigationTest$DummyActivityForSpecialScheme"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -34,7 +34,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="org.chromium.chrome.browser.customtabs.CustomTabExternalNavigationTest$DummyActivityForHttp"
+        <activity android:name="org.monyhar.chrome.browser.customtabs.CustomTabExternalNavigationTest$DummyActivityForHttp"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -44,21 +44,21 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="org.chromium.chrome.browser.sync.SyncTestRule$DummyKeyRetrievalActivity"
+        <activity android:name="org.monyhar.chrome.browser.sync.SyncTestRule$DummyKeyRetrievalActivity"
             android:exported="true"/>
 
-        <activity android:name="org.chromium.chrome.browser.browserservices.TestTrustedWebActivityService"
+        <activity android:name="org.monyhar.chrome.browser.browserservices.TestTrustedWebActivityService"
             android:exported="true"/>
 
-        <activity android:name="org.chromium.test.broker.OnDeviceInstrumentationBroker"
+        <activity android:name="org.monyhar.test.broker.OnDeviceInstrumentationBroker"
             android:exported="true"/>
 
-        <activity android:name="org.chromium.ui.test.util.DummyUiActivity"
+        <activity android:name="org.monyhar.ui.test.util.DummyUiActivity"
             android:theme="@style/Theme.Chromium.Activity"
             android:exported="true"/>
 
         <service
-            android:name="org.chromium.components.browser_ui.photo_picker.TestImageDecoderService"
+            android:name="org.monyhar.components.browser_ui.photo_picker.TestImageDecoderService"
             android:exported="false"
             android:isolatedProcess="true"
             android:process=":decoder_service" />
@@ -73,7 +73,7 @@ android:requestLegacyExternalStorage="true"
 {% endblock %}
 
 {% block extra_root_definitions %}
-    <instrumentation android:name="org.chromium.base.test.BaseChromiumAndroidJUnitRunner"
+    <instrumentation android:name="org.monyhar.base.test.BaseChromiumAndroidJUnitRunner"
         android:targetPackage="{{manifest_package}}"
         android:label="Tests for {{manifest_package}}"/>
 {% endblock %}

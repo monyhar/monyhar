@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.app.Activity;
 import android.content.Context;
@@ -12,9 +12,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Px;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.init.SingleWindowKeyboardVisibilityDelegate;
-import org.chromium.chrome.browser.keyboard_accessory.ManualFillingComponent;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.init.SingleWindowKeyboardVisibilityDelegate;
+import org.monyhar.chrome.browser.keyboard_accessory.ManualFillingComponent;
 
 import java.lang.ref.WeakReference;
 

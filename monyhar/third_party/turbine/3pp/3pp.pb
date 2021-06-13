@@ -6,11 +6,11 @@ create {
   }
 
   build {
-    dep: "chromium/third_party/jdk"
+    dep: "monyhar/third_party/jdk"
   }
 }
 
 upload {
-  pkg_prefix: "chromium/third_party"
+  pkg_prefix: "monyhar/third_party"
   universal: true
 }

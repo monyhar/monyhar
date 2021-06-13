@@ -414,8 +414,8 @@ source_set("test_support") {
 if (is_android) {
   generate_jni("device_service_jni_headers") {
     sources = [
-      "android/java/src/org/chromium/services/device/InterfaceRegistrar.java",
-      "public/java/src/org/chromium/device/DeviceFeatureList.java",
+      "android/java/src/org/monyhar/services/device/InterfaceRegistrar.java",
+      "public/java/src/org/monyhar/device/DeviceFeatureList.java",
     ]
   }
 
@@ -432,7 +432,7 @@ if (is_android) {
       "//services:*",
     ]
     sources = [
-      "android/java/src/org/chromium/services/device/InterfaceRegistrar.java",
+      "android/java/src/org/monyhar/services/device/InterfaceRegistrar.java",
     ]
     deps = [
       "//base:base_java",

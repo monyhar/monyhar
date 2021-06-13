@@ -43,9 +43,9 @@ static_library("ced") {
     "src/util/string_util.h",
     "src/util/varsetter.h",
   ]
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":ced_config_private",
   ]
 

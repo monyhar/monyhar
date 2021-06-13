@@ -6,8 +6,8 @@ import("//build/config/android/rules.gni")
 
 generate_jni("jni_headers") {
   sources = [
-    "java/src/org/chromium/chrome/browser/feedback/ProcessIdFeedbackSource.java",
-    "java/src/org/chromium/chrome/browser/feedback/SystemInfoFeedbackSource.java",
+    "java/src/org/monyhar/chrome/browser/feedback/ProcessIdFeedbackSource.java",
+    "java/src/org/monyhar/chrome/browser/feedback/SystemInfoFeedbackSource.java",
   ]
 }
 
@@ -27,26 +27,26 @@ source_set("android") {
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/feedback/AsyncFeedbackSource.java",
-    "java/src/org/chromium/chrome/browser/feedback/AsyncFeedbackSourceAdapter.java",
-    "java/src/org/chromium/chrome/browser/feedback/DeviceInfoFeedbackSource.java",
-    "java/src/org/chromium/chrome/browser/feedback/FeedbackCollector.java",
-    "java/src/org/chromium/chrome/browser/feedback/FeedbackContextFeedbackSource.java",
-    "java/src/org/chromium/chrome/browser/feedback/FeedbackReporter.java",
-    "java/src/org/chromium/chrome/browser/feedback/FeedbackSource.java",
-    "java/src/org/chromium/chrome/browser/feedback/FragmentHelpAndFeedbackLauncher.java",
-    "java/src/org/chromium/chrome/browser/feedback/HelpAndFeedbackLauncher.java",
-    "java/src/org/chromium/chrome/browser/feedback/HistogramFeedbackSource.java",
-    "java/src/org/chromium/chrome/browser/feedback/IMEFeedbackSource.java",
-    "java/src/org/chromium/chrome/browser/feedback/InterestFeedFeedbackSource.java",
-    "java/src/org/chromium/chrome/browser/feedback/LowEndDeviceFeedbackSource.java",
-    "java/src/org/chromium/chrome/browser/feedback/PermissionFeedbackSource.java",
-    "java/src/org/chromium/chrome/browser/feedback/ProcessIdFeedbackSource.java",
-    "java/src/org/chromium/chrome/browser/feedback/ScreenshotSource.java",
-    "java/src/org/chromium/chrome/browser/feedback/StaticScreenshotSource.java",
-    "java/src/org/chromium/chrome/browser/feedback/SystemInfoFeedbackSource.java",
-    "java/src/org/chromium/chrome/browser/feedback/UrlFeedbackSource.java",
-    "java/src/org/chromium/chrome/browser/feedback/VariationsFeedbackSource.java",
+    "java/src/org/monyhar/chrome/browser/feedback/AsyncFeedbackSource.java",
+    "java/src/org/monyhar/chrome/browser/feedback/AsyncFeedbackSourceAdapter.java",
+    "java/src/org/monyhar/chrome/browser/feedback/DeviceInfoFeedbackSource.java",
+    "java/src/org/monyhar/chrome/browser/feedback/FeedbackCollector.java",
+    "java/src/org/monyhar/chrome/browser/feedback/FeedbackContextFeedbackSource.java",
+    "java/src/org/monyhar/chrome/browser/feedback/FeedbackReporter.java",
+    "java/src/org/monyhar/chrome/browser/feedback/FeedbackSource.java",
+    "java/src/org/monyhar/chrome/browser/feedback/FragmentHelpAndFeedbackLauncher.java",
+    "java/src/org/monyhar/chrome/browser/feedback/HelpAndFeedbackLauncher.java",
+    "java/src/org/monyhar/chrome/browser/feedback/HistogramFeedbackSource.java",
+    "java/src/org/monyhar/chrome/browser/feedback/IMEFeedbackSource.java",
+    "java/src/org/monyhar/chrome/browser/feedback/InterestFeedFeedbackSource.java",
+    "java/src/org/monyhar/chrome/browser/feedback/LowEndDeviceFeedbackSource.java",
+    "java/src/org/monyhar/chrome/browser/feedback/PermissionFeedbackSource.java",
+    "java/src/org/monyhar/chrome/browser/feedback/ProcessIdFeedbackSource.java",
+    "java/src/org/monyhar/chrome/browser/feedback/ScreenshotSource.java",
+    "java/src/org/monyhar/chrome/browser/feedback/StaticScreenshotSource.java",
+    "java/src/org/monyhar/chrome/browser/feedback/SystemInfoFeedbackSource.java",
+    "java/src/org/monyhar/chrome/browser/feedback/UrlFeedbackSource.java",
+    "java/src/org/monyhar/chrome/browser/feedback/VariationsFeedbackSource.java",
   ]
   deps = [
     ":java_resources",
@@ -60,7 +60,7 @@ android_library("java") {
     "//ui/android:ui_no_recycler_view_java",
   ]
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
-  resources_package = "org.chromium.chrome.browser.feedback"
+  resources_package = "org.monyhar.chrome.browser.feedback"
 }
 
 android_resources("java_resources") {

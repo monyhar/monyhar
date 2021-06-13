@@ -28,15 +28,15 @@ import("//build/config/android/rules.gni")
 # Example:
 #   android_library_factory("foo_java") {
 #     sources = [
-#       "android/org/chromium/foo/FooFactory.java",
+#       "android/org/monyhar/foo/FooFactory.java",
 #     ]
 #     deps = [
 #       ":foo_public_interface"
 #     ]
 #   }
 #
-#   //android/org/chromium/foo/FooFactory.java:
-#   package org.chromium.foo;
+#   //android/org/monyhar/foo/FooFactory.java:
+#   package org.monyhar.foo;
 #   public class FooFactory {
 #     private FooFactory () {}
 #
@@ -45,8 +45,8 @@ import("//build/config/android/rules.gni")
 #     }
 #   }
 #
-#   //out/Default/.../generated/org/chromium/foo/FooFactory.java:
-#   package org.chromium.foo;
+#   //out/Default/.../generated/org/monyhar/foo/FooFactory.java:
+#   package org.monyhar.foo;
 #   public class FooFactory {
 #     private FooFactory () {}
 #
@@ -55,9 +55,9 @@ import("//build/config/android/rules.gni")
 #     }
 #   }
 #
-#   //android/org/chromium/foo/FooImpl.java:
-#   package org.chromium.foo;
-#   import org.chromium.foo.internal.Parameter;
+#   //android/org/monyhar/foo/FooImpl.java:
+#   package org.monyhar.foo;
+#   import org.monyhar.foo.internal.Parameter;
 #   public class FooImpl implements Foo {
 #     FooImpl(Parameter parameter) {}
 #

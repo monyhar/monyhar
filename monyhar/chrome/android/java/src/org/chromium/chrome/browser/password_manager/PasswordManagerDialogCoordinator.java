@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_manager;
+package org.monyhar.chrome.browser.password_manager;
 
-import static org.chromium.chrome.browser.password_manager.PasswordManagerDialogProperties.DETAILS;
-import static org.chromium.chrome.browser.password_manager.PasswordManagerDialogProperties.HELP_BUTTON_CALLBACK;
-import static org.chromium.chrome.browser.password_manager.PasswordManagerDialogProperties.ILLUSTRATION;
-import static org.chromium.chrome.browser.password_manager.PasswordManagerDialogProperties.TITLE;
+import static org.monyhar.chrome.browser.password_manager.PasswordManagerDialogProperties.DETAILS;
+import static org.monyhar.chrome.browser.password_manager.PasswordManagerDialogProperties.HELP_BUTTON_CALLBACK;
+import static org.monyhar.chrome.browser.password_manager.PasswordManagerDialogProperties.ILLUSTRATION;
+import static org.monyhar.chrome.browser.password_manager.PasswordManagerDialogProperties.TITLE;
 
 import android.content.Context;
 import android.graphics.Typeface;
@@ -19,14 +19,14 @@ import android.view.View;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsStateProvider;
-import org.chromium.chrome.browser.password_manager.PasswordManagerDialogContents.BoldRange;
-import org.chromium.ui.modaldialog.DialogDismissalCause;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.modaldialog.ModalDialogProperties;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsStateProvider;
+import org.monyhar.chrome.browser.password_manager.PasswordManagerDialogContents.BoldRange;
+import org.monyhar.ui.modaldialog.DialogDismissalCause;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.modaldialog.ModalDialogProperties;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
 
 /**
  * The coordinator for the password manager illustration modal dialog. Manages the sub-component

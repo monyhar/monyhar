@@ -21,10 +21,10 @@ source_set("android") {
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/password_edit_dialog/PasswordEditDialogBridge.java",
-    "java/src/org/chromium/chrome/browser/password_edit_dialog/PasswordEditDialogCoordinator.java",
-    "java/src/org/chromium/chrome/browser/password_edit_dialog/PasswordEditDialogProperties.java",
-    "java/src/org/chromium/chrome/browser/password_edit_dialog/PasswordEditDialogView.java",
+    "java/src/org/monyhar/chrome/browser/password_edit_dialog/PasswordEditDialogBridge.java",
+    "java/src/org/monyhar/chrome/browser/password_edit_dialog/PasswordEditDialogCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/password_edit_dialog/PasswordEditDialogProperties.java",
+    "java/src/org/monyhar/chrome/browser/password_edit_dialog/PasswordEditDialogView.java",
   ]
 
   deps = [
@@ -35,11 +35,11 @@ android_library("java") {
   ]
 
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
-  resources_package = "org.chromium.chrome.browser.password_edit_dialog"
+  resources_package = "org.monyhar.chrome.browser.password_edit_dialog"
 }
 
 generate_jni("jni_headers") {
-  sources = [ "java/src/org/chromium/chrome/browser/password_edit_dialog/PasswordEditDialogBridge.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/password_edit_dialog/PasswordEditDialogBridge.java" ]
 }
 
 android_resources("java_resources") {
@@ -58,7 +58,7 @@ java_library("junit") {
   # Skip platform checks since Robolectric depends on requires_android targets.
   bypass_platform_checks = true
   testonly = true
-  sources = [ "java/src/org/chromium/chrome/browser/password_edit_dialog/PasswordEditDialogTest.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/password_edit_dialog/PasswordEditDialogTest.java" ]
 
   deps = [
     ":java",
@@ -76,7 +76,7 @@ java_library("junit") {
 android_library("javatests") {
   testonly = true
 
-  sources = [ "java/src/org/chromium/chrome/browser/password_edit_dialog/PasswordEditDialogViewTest.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/password_edit_dialog/PasswordEditDialogViewTest.java" ]
 
   deps = [
     ":java",

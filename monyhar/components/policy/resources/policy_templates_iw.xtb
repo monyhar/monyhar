@@ -102,7 +102,7 @@
 
       אם תגדיר את המדיניות הזאת, <ph name="PRODUCT_NAME" /> ישתמש בסיפריה שהוגדרה בין אם המשתמש ציין את הסימן '--disk-cache-dir' u ובין אם לא. כדי להימנע מאובדן נתונים או שגיאות בלתי צפויות אחרות, רצוי לא להגדיר את המדיניות הזאת לספריית הבסיס של אמצעי האחסון או לספריה המשמשת למטרות אחרות, מכיוון ש-<ph name="PRODUCT_NAME" /> מנהל את התוכן שלה.
 
-      היכנס לכתובת https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables לקבלת רשימת משתנים שבהם ניתן להשתמש.
+      היכנס לכתובת https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables לקבלת רשימת משתנים שבהם ניתן להשתמש.
 
       אם המדיניות הזאת נותרת ללא הגדרה, ייעשה שימוש בספריית ברירת המחדל של המטמון והמשתמש יוכל לבטל אותה באמצעות סימון שורת הפקודה '--disk-cache-dir'.</translation>
 <translation id="113521240853905588">המדיניות הזו מגדירה את השפות שיכולות לשמש כשפות מועדפות במערכת ההפעלה <ph name="PRODUCT_OS_NAME" />.
@@ -485,7 +485,7 @@
 <translation id="1852294065645015766">אישור להפעלה אוטומטית של מדיה</translation>
 <translation id="1857152770025485173">המדיניות הזו מונעת מהמשתמשים לטעון דפי אינטרנט מכתובות URL שנמצאות ברשימה שחורה. הרשימה השחורה כוללת רשימה של דפוסי כתובות URL שמציינים אילו כתובות URL יתווספו לרשימה השחורה.
 
-      העיצוב של דפוסי כתובות URL חייב להתאים להוראות בכתובת https://www.chromium.org/administrators/url-blacklist-filter-format.
+      העיצוב של דפוסי כתובות URL חייב להתאים להוראות בכתובת https://www.monyhar.org/administrators/url-blacklist-filter-format.
 
       ניתן להגדיר חריגות במדיניות רשימת ההיתרים של כתובות URL. כללי המדיניות האלה מוגבלים ל-1,000 רשומות. המערכת תתעלם מרשומות נוספות.
 
@@ -522,7 +522,7 @@
 
       אם המדיניות לא מוגדרת, הדיווח של מדדים ונתוני אבחון יושבת במכשירים שאינם מנוהלים ויופעל במכשירים מנוהלים.</translation>
 <translation id="1907431809333268751">המדיניות הזו מגדירה את הרשימה של כתובות URL ארגוניות לכניסה (סכימות של HTTP ו-HTTPS). טביעת האצבע של הסיסמה תתועד בכתובות ה-URL האלה ותשמש כדי לזהות שימוש חוזר בסיסמה.
-      כדי לאפשר ל-<ph name="PRODUCT_NAME" /> לתעד בצורה נכונה טביעות אצבע של סיסמאות, יש לוודא שדפי הכניסה תואמים לכללים בכתובת https://www.chromium.org/developers/design-documents/create-amazing-password-forms.
+      כדי לאפשר ל-<ph name="PRODUCT_NAME" /> לתעד בצורה נכונה טביעות אצבע של סיסמאות, יש לוודא שדפי הכניסה תואמים לכללים בכתובת https://www.monyhar.org/developers/design-documents/create-amazing-password-forms.
 
       אם ההגדרה הזו מופעלת, שירות הגנת הסיסמאות יתעד את טביעת האצבע של הסיסמה כדי לזהות שימוש חוזר בסיסמאות.
       אם ההגדרה הזו מושבתת או לא מוגדרת, שירות הגנת הסיסמאות יתעד טביעות אצבע של סיסמאות רק ב-https://accounts.google.com.
@@ -820,7 +820,7 @@
 
 המדיניות הזו מאפשרת מצב שבו אישורים של שמות מארחים בכתובות ה-URL הרשומות לא ייחשפו דרך 'שקיפות אישורים'. כך ניתן להמשיך להשתמש באישורים שבמקרים רגילים לא ייחשבו כמהימנים, מפני שלא נחשפו כראוי באופן ציבורי, אך מצב זה מקשה על זיהוי אישורים שהונפקו לאותם מארחים בצורה לא תקינה.
 
-תבנית URL מעוצבת בהתאם ל-https://www.chromium.org/administrators/url-blacklist-filter-format. עם זאת, מפני שתוקף האישורים הוא לשם מארח נתון, ללא קשר לסכימה, ליציאה או לנתיב, רק החלק של שם המארח בכתובת האתר מובא בחשבון. אין תמיכה בשמות כלליים של מארחים.
+תבנית URL מעוצבת בהתאם ל-https://www.monyhar.org/administrators/url-blacklist-filter-format. עם זאת, מפני שתוקף האישורים הוא לשם מארח נתון, ללא קשר לסכימה, ליציאה או לנתיב, רק החלק של שם המארח בכתובת האתר מובא בחשבון. אין תמיכה בשמות כלליים של מארחים.
 
 אם המדיניות הזו אינה מוגדרת, כל אישור שיש לחשוף דרך 'שקיפות אישורים' ייחשב כבלתי מהימן אם הוא לא נחשף בהתאם למדיניות של 'שקיפות אישורים'.</translation>
 <translation id="2488010520405124654">הפעלה של בקשה לתצורת רשת במצב לא מקוון.
@@ -1499,7 +1499,7 @@
 
       אם תגדיר מדיניות זו, <ph name="PRODUCT_NAME" /> ישתמש בספריה שצוינה, בין אם המשתמש ציין ספריה ובין אם המשתמש הפעיל את הסימון לבקשת מיקום הורדה בכל פעם.
 
-      בכתובת https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables תוכל לעיין ברשימת משתנים שניתן להשתמש בהם.
+      בכתובת https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables תוכל לעיין ברשימת משתנים שניתן להשתמש בהם.
 
       אם לא תגדיר מדיניות זו כלל, ייעשה שימוש בספריית ברירת המחדל של ההורדות והמשתמש יוכל לשנות אותה.</translation>
 <translation id="3805659594028420438">הפעל תוסף אישורים המאוגד לדומיין TLS (יצא משימוש)</translation>
@@ -1586,7 +1586,7 @@
 
       אם המדיניות הזו לא מוגדרת, <ph name="PRODUCT_NAME" /> ישתמש בספרייה שמוגדרת בו כברירת מחדל (בהתאם לפלטפורמה)
 
-      בכתובת https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables אפשר למצוא רשימת משתנים שבהם אפשר להשתמש.</translation>
+      בכתובת https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables אפשר למצוא רשימת משתנים שבהם אפשר להשתמש.</translation>
 <translation id="3911737181201537215">אין למדיניות הזו השפעה על הרישום ש-Android מבצע ביומן.</translation>
 <translation id="391531815696899618">מבטלת את הסנכרון של Google Drive ביישום ה'קבצים' של <ph name="PRODUCT_OS_NAME" /> כשמוגדר כ-true. במקרה זה, נתונים אינם מועלים ל- Google Drive.
 
@@ -1789,7 +1789,7 @@
 
       אם המדיניות הזו מוגדרת, הספריה שסופקה משמשת את <ph name="PRODUCT_NAME" /> כדי לאחסן את העותק הנודד של הפרופילים, אם המדיניות <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> הופעלה. אם המדיניות <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> מושבתת או לא מוגדרת, המערכת לא משתמשת בערך שמאוחסן במדיניות הזו.
 
-      רשימת משתנים שניתן להשתמש בהם זמינה בכתובת https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      רשימת משתנים שניתן להשתמש בהם זמינה בכתובת https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       אם המדיניות לא מוגדרת, המערכת משתמשת בנתיב ברירת המחדל של הפרופיל הנודד.</translation>
 <translation id="4239720644496144453">אפליקציות Android אינן משתמשות בקובץ השמור. אם מספר משתמשים יתקינו את אותה אפליקציית Android, תתבצע הורדה חוזרת שלה בשביל כל משתמש.</translation>
@@ -1984,7 +1984,7 @@
 
    אם מדיניות זו לא תוגדר, המערכת תשתמש במעבד המוגדר כברירת מחדל עבור כל האתרים כמפורט במדיניות 'ChromeFrameRendererSettings'.
 
-   כדי לראות דפוסים לדוגמה, עבור לכתובת https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+   כדי לראות דפוסים לדוגמה, עבור לכתובת https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="467449052039111439">פתח רשימה של כתובות אתר</translation>
 <translation id="4674871290487541952">מתן הרשאה לאלגוריתמים לא מאובטחים בבדיקות תקינות עבור עדכונים והתקנות של תוספים</translation>
 <translation id="4680936297850947973">הוצאה משימוש ב-M68. במקום זאת, יש להשתמש ב-DefaultPopupsSetting.
@@ -2602,7 +2602,7 @@
 
       אם תגדיר מדיניות זו, <ph name="PRODUCT_FRAME_NAME" /> ישתמש בספריה שצוינה.
 
-      בכתובת https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables תוכל לעיין ברשימת משתנים שניתן להשתמש בהם.
+      בכתובת https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables תוכל לעיין ברשימת משתנים שניתן להשתמש בהם.
 
       אם לא תגדיר מדיניות זו כלל, ייעשה שימוש בספריה של פרופיל ברירת המחדל.</translation>
 <translation id="5826047473100157858">מציין אם המשתמש יכול לפתוח דפים במצב גלישה בסתר ב-<ph name="PRODUCT_NAME" />. אם נבחרת האפשרות 'הפיכה לפעיל' או שהמדיניות לא מוגדרת, ייתכן שהדפים ייפתחו במצב גלישה בסתר. אם נבחרת האפשרות 'השבתה', ייתכן שהדפים לא ייפתחו במצב גלישה בסתר. אם נבחרת האפשרות 'אכיפה', ייתכן שהדפים יפתחו רק במצב גלישה בסתר.</translation>
@@ -3164,7 +3164,7 @@
 
       אם תגדיר את המדיניות הזאת, <ph name="PRODUCT_NAME" /> ישתמש בסיפריה שהוגדרה בין אם המשתמש ציין את הסימן '--user-data-dir' ובין אם לא. כדי להימנע מאובדן נתונים או שגיאות בלתי צפויות אחרות, רצוי לא להגדיר את המדיניות הזאת לספריית הבסיס של אמצעי האחסון או לספריה המשמשת למטרות אחרות, מכיוון ש-<ph name="PRODUCT_NAME" /> מנהל את התוכן שלה.
 
-      היכנס לכתובת https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables לקבלת רשימת משתנים שבהם ניתן להשתמש.
+      היכנס לכתובת https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables לקבלת רשימת משתנים שבהם ניתן להשתמש.
 
       אם המדיניות הזאת נותרת ללא הגדרה, ייעשה שימוש בנתיב ברירת המחדל של הפרופיל והמשתמש יוכל לבטל אותה באמצעות סימון שורת הפקודה '--user-data-dir'.</translation>
 <translation id="7027785306666625591">הגדר את ניהול צריכת החשמל ב-<ph name="PRODUCT_OS_NAME" />.
@@ -3934,7 +3934,7 @@
 
    אם מדיניות זו לא תוגדר, המערכת תשתמש במעבד המוגדר כברירת מחדל עבור כל האתרים כמפורט במדיניות 'ChromeFrameRendererSettings'.
 
-   כדי לראות דפוסים לדוגמה, עבור לכתובת http://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+   כדי לראות דפוסים לדוגמה, עבור לכתובת http://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="8489964335640955763">PluginVm</translation>
 <translation id="8493645415242333585">השבת שמירה של היסטוריית דפדפן</translation>
 <translation id="8499172469244085141">הגדרות ברירת מחדל (המשתמשים יכולים לעקוף אותן)</translation>

@@ -48,7 +48,7 @@ _TESTER_NOOP_JOBS = [scheduler_pb.Job(
     acl_sets = ["ci"],
     acls = [scheduler_pb.Acl(
         role = scheduler_pb.Acl.TRIGGERER,
-        granted_to = "chromium-ci-builder@chops-service-accounts.iam.gserviceaccount.com",
+        granted_to = "monyhar-ci-builder@chops-service-accounts.iam.gserviceaccount.com",
     )],
     noop = scheduler_pb.NoopTask(),
 ) for builder, selector in _NON_BRANCHED_TESTERS.items() if branches.matches(selector)]

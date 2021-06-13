@@ -314,7 +314,7 @@ js_library("list_property_update_behavior.m") {
     "$root_gen_dir/ui/webui/resources/js/list_property_update_behavior.m.js",
   ]
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   extra_deps = [ ":modulize_local" ]
 }

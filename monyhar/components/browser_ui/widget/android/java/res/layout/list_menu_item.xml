@@ -13,7 +13,7 @@
     style="@style/ListMenuItemStyle"
     android:minHeight="?android:attr/listPreferredItemHeightSmall" >
 
-    <org.chromium.ui.widget.ChromeImageView
+    <org.monyhar.ui.widget.ChromeImageView
         android:id="@+id/menu_item_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
         android:singleLine="false"
         android:textAppearance="@style/TextAppearance.ListMenuItem" />
 
-    <org.chromium.ui.widget.ChromeImageView
+    <org.monyhar.ui.widget.ChromeImageView
         android:id="@+id/menu_item_end_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

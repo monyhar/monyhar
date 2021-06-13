@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
-import static org.chromium.android_webview.test.AwActivityTestRule.WAIT_TIMEOUT_MS;
+import static org.monyhar.android_webview.test.AwActivityTestRule.WAIT_TIMEOUT_MS;
 
 import android.util.Pair;
 
@@ -17,14 +17,14 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.AwContents;
-import org.chromium.android_webview.AwContentsClient.AwWebResourceRequest;
-import org.chromium.android_webview.test.util.AwTestTouchUtils;
-import org.chromium.android_webview.test.util.CommonResources;
-import org.chromium.base.test.util.Feature;
-import org.chromium.components.embedder_support.util.WebResourceResponseInfo;
-import org.chromium.content_public.browser.test.util.TestCallbackHelperContainer;
-import org.chromium.net.test.util.TestWebServer;
+import org.monyhar.android_webview.AwContents;
+import org.monyhar.android_webview.AwContentsClient.AwWebResourceRequest;
+import org.monyhar.android_webview.test.util.AwTestTouchUtils;
+import org.monyhar.android_webview.test.util.CommonResources;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.components.embedder_support.util.WebResourceResponseInfo;
+import org.monyhar.content_public.browser.test.util.TestCallbackHelperContainer;
+import org.monyhar.net.test.util.TestWebServer;
 
 import java.util.ArrayList;
 import java.util.List;

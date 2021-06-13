@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omaha.notification;
+package org.monyhar.chrome.browser.omaha.notification;
 
-import static org.chromium.chrome.browser.omaha.UpdateConfigs.getUpdateNotificationInterval;
-import static org.chromium.chrome.browser.omaha.UpdateConfigs.getUpdateNotificationTextBody;
-import static org.chromium.chrome.browser.omaha.UpdateConfigs.getUpdateNotificationTitle;
-import static org.chromium.chrome.browser.omaha.UpdateConfigs.isUpdateNotificationEnabled;
-import static org.chromium.chrome.browser.omaha.UpdateStatusProvider.UpdateState.INLINE_UPDATE_AVAILABLE;
-import static org.chromium.chrome.browser.omaha.UpdateStatusProvider.UpdateState.UPDATE_AVAILABLE;
+import static org.monyhar.chrome.browser.omaha.UpdateConfigs.getUpdateNotificationInterval;
+import static org.monyhar.chrome.browser.omaha.UpdateConfigs.getUpdateNotificationTextBody;
+import static org.monyhar.chrome.browser.omaha.UpdateConfigs.getUpdateNotificationTitle;
+import static org.monyhar.chrome.browser.omaha.UpdateConfigs.isUpdateNotificationEnabled;
+import static org.monyhar.chrome.browser.omaha.UpdateStatusProvider.UpdateState.INLINE_UPDATE_AVAILABLE;
+import static org.monyhar.chrome.browser.omaha.UpdateStatusProvider.UpdateState.UPDATE_AVAILABLE;
 
 import android.app.Activity;
 import android.app.PendingIntent;
@@ -20,28 +20,28 @@ import android.content.SharedPreferences;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.init.BrowserParts;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
-import org.chromium.chrome.browser.init.EmptyBrowserParts;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.lifecycle.DestroyObserver;
-import org.chromium.chrome.browser.notifications.NotificationConstants;
-import org.chromium.chrome.browser.notifications.NotificationUmaTracker;
-import org.chromium.chrome.browser.notifications.NotificationWrapperBuilderFactory;
-import org.chromium.chrome.browser.notifications.channels.ChromeChannelDefinitions;
-import org.chromium.chrome.browser.omaha.OmahaBase;
-import org.chromium.chrome.browser.omaha.UpdateStatusProvider;
-import org.chromium.chrome.browser.omaha.UpdateStatusProvider.UpdateStatus;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxy;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxyImpl;
-import org.chromium.components.browser_ui.notifications.NotificationMetadata;
-import org.chromium.components.browser_ui.notifications.NotificationWrapper;
-import org.chromium.components.browser_ui.notifications.NotificationWrapperBuilder;
-import org.chromium.components.browser_ui.notifications.PendingIntentProvider;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.init.BrowserParts;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.chrome.browser.init.EmptyBrowserParts;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.lifecycle.DestroyObserver;
+import org.monyhar.chrome.browser.notifications.NotificationConstants;
+import org.monyhar.chrome.browser.notifications.NotificationUmaTracker;
+import org.monyhar.chrome.browser.notifications.NotificationWrapperBuilderFactory;
+import org.monyhar.chrome.browser.notifications.channels.ChromeChannelDefinitions;
+import org.monyhar.chrome.browser.omaha.OmahaBase;
+import org.monyhar.chrome.browser.omaha.UpdateStatusProvider;
+import org.monyhar.chrome.browser.omaha.UpdateStatusProvider.UpdateStatus;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxy;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxyImpl;
+import org.monyhar.components.browser_ui.notifications.NotificationMetadata;
+import org.monyhar.components.browser_ui.notifications.NotificationWrapper;
+import org.monyhar.components.browser_ui.notifications.NotificationWrapperBuilder;
+import org.monyhar.components.browser_ui.notifications.PendingIntentProvider;
 
 /**
  * Class supports to build and to send update notification every three weeks if new Chrome version
@@ -52,11 +52,11 @@ public class UpdateNotificationControllerImpl
         implements UpdateNotificationController, DestroyObserver {
     private static final String TAG = "UpdateNotif";
     private static final String INLINE_UPDATE_NOTIFICATION_RECEIVED_EXTRA =
-            "org.chromium.chrome.browser.omaha.inline_update_notification_received_extra";
+            "org.monyhar.chrome.browser.omaha.inline_update_notification_received_extra";
     private static final String UPDATE_NOTIFICATION_STATE_EXTRA =
-            "org.chromium.chrome.browser.omaha.update_notification_state_extra";
+            "org.monyhar.chrome.browser.omaha.update_notification_state_extra";
     private static final String UPDATE_NOTIFICATION_TAG =
-            "org.chromium.chrome.browser.omaha.update_notification_tag";
+            "org.monyhar.chrome.browser.omaha.update_notification_tag";
     public static final String PREF_LAST_TIME_UPDATE_NOTIFICATION_KEY =
             "pref_last_timestamp_update_notification_pushed_key";
     private final Callback<UpdateStatusProvider.UpdateStatus> mObserver = status -> {

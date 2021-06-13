@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.shell;
+package org.monyhar.chromecast.shell;
 
 import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.eq;
@@ -34,10 +34,10 @@ import org.robolectric.Shadows;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowActivity;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chromecast.shell.CastWebContentsComponent.StartParams;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chromecast.shell.CastWebContentsComponent.StartParams;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * Tests for CastWebContentsComponent.

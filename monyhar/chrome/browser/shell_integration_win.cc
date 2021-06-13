@@ -874,10 +874,10 @@ int MigrateShortcutsInPathInternal(const base::FilePath& chrome_exe,
 
     // Clear dual_mode property from any shortcuts that previously had it (it
     // was only ever installed on shortcuts with the
-    // |default_chromium_model_id|).
-    std::wstring default_chromium_model_id(
+    // |default_monyhar_model_id|).
+    std::wstring default_monyhar_model_id(
         ShellUtil::GetBrowserModelId(is_per_user_install));
-    if (expected_app_id == default_chromium_model_id) {
+    if (expected_app_id == default_monyhar_model_id) {
       propvariant.Reset();
       if (property_store->GetValue(PKEY_AppUserModel_IsDualMode,
                                    propvariant.Receive()) != S_OK) {

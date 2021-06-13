@@ -9,7 +9,7 @@ java_library("components_autofill_junit_tests") {
   # Platform checks are broken for Robolectric. See https://crbug.com/1071638.
   bypass_platform_checks = true
   testonly = true
-  sources = [ "src/org/chromium/components/autofill/AutofillProviderTest.java" ]
+  sources = [ "src/org/monyhar/components/autofill/AutofillProviderTest.java" ]
   deps = [
     "//base:base_java_test_support",
     "//base:base_junit_test_support",

@@ -161,7 +161,7 @@ TEST_F(ChromeDataExchangeDelegateTest, GetDataTransferEndpointType) {
   // Plugin VM:
   aura::Window* plugin_vm_toplevel = aura::test::CreateTestWindowWithDelegate(
       &delegate_, 0, gfx::Rect(), nullptr);
-  exo::SetShellApplicationId(plugin_vm_toplevel, "org.chromium.plugin_vm_ui");
+  exo::SetShellApplicationId(plugin_vm_toplevel, "org.monyhar.plugin_vm_ui");
   ASSERT_TRUE(plugin_vm::IsPluginVmAppWindow(plugin_vm_toplevel));
   aura::Window* plugin_vm_window =
       aura::test::CreateTestWindowWithBounds(gfx::Rect(), plugin_vm_toplevel);
@@ -313,7 +313,7 @@ TEST_F(ChromeDataExchangeDelegateTest, SendFileInfoConvertPaths) {
                                       base::BindOnce(&CaptureUTF16, &data));
   task_environment_.RunUntilIdle();
   EXPECT_EQ(
-      "content://org.chromium.arc.volumeprovider/"
+      "content://org.monyhar.arc.volumeprovider/"
       "0000000000000000000000000000CAFEF00D2019/file1",
       data);
 
@@ -322,10 +322,10 @@ TEST_F(ChromeDataExchangeDelegateTest, SendFileInfoConvertPaths) {
                                       base::BindOnce(&CaptureUTF16, &data));
   task_environment_.RunUntilIdle();
   EXPECT_EQ(
-      "content://org.chromium.arc.volumeprovider/"
+      "content://org.monyhar.arc.volumeprovider/"
       "0000000000000000000000000000CAFEF00D2019/file1"
       "\r\n"
-      "content://org.chromium.arc.volumeprovider/"
+      "content://org.monyhar.arc.volumeprovider/"
       "0000000000000000000000000000CAFEF00D2019/file2",
       data);
 

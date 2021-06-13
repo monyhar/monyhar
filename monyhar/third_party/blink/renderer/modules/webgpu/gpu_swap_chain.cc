@@ -128,7 +128,7 @@ scoped_refptr<CanvasResource> GPUSwapChain::ExportCanvasResource() {
 // gpu_swap_chain.idl
 GPUTexture* GPUSwapChain::getCurrentTexture() {
   if (!swap_buffers_) {
-    // TODO(cwallez@chromium.org) return an error texture.
+    // TODO(cwallez@monyhar.org) return an error texture.
     return nullptr;
   }
 
@@ -147,7 +147,7 @@ GPUTexture* GPUSwapChain::getCurrentTexture() {
 
   // A negative size indicates we're on the deprecated path which automatically
   // adjusts to the canvas width/height attributes.
-  // TODO(bajones@chromium.org): Remove automatic path after deprecation period.
+  // TODO(bajones@monyhar.org): Remove automatic path after deprecation period.
   IntSize texture_size = size_.Width() >= 0 ? size_ : context_->CanvasSize();
   WGPUTexture dawn_client_texture = swap_buffers_->GetNewTexture(texture_size);
   DCHECK(dawn_client_texture);

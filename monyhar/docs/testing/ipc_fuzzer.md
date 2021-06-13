@@ -62,4 +62,4 @@ uses `FuzzTraits<Type>` to mutate ipcdumps or generate them out of thin air.
 
 ## Problems, questions, suggestions
 
-Send them to mbarbella@chromium.org.
+Send them to mbarbella@monyhar.org.

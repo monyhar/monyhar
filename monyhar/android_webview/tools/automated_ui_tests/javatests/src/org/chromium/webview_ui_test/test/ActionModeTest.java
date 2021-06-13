@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webview_ui_test.test;
+package org.monyhar.webview_ui_test.test;
 
 import static androidx.test.espresso.Espresso.onData;
 import static androidx.test.espresso.Espresso.onView;
@@ -41,7 +41,7 @@ import static org.hamcrest.core.AnyOf.anyOf;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assume.assumeTrue;
 
-import static org.chromium.base.test.util.ScalableTimeout.scaleTimeout;
+import static org.monyhar.base.test.util.ScalableTimeout.scaleTimeout;
 
 import android.app.Activity;
 import android.app.Instrumentation;
@@ -74,12 +74,12 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.webview_ui_test.R;
-import org.chromium.webview_ui_test.WebViewUiTestActivity;
-import org.chromium.webview_ui_test.test.util.UseLayout;
-import org.chromium.webview_ui_test.test.util.WebViewUiTestRule;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.webview_ui_test.R;
+import org.monyhar.webview_ui_test.WebViewUiTestActivity;
+import org.monyhar.webview_ui_test.test.util.UseLayout;
+import org.monyhar.webview_ui_test.test.util.WebViewUiTestRule;
 
 /**
  * Tests for WebView ActionMode.
@@ -183,7 +183,7 @@ public class ActionModeTest {
         clickPopupAction(WEB_SEARCH_ACTION);
         intended(allOf(hasAction(Intent.ACTION_WEB_SEARCH),
                 hasExtras(allOf(hasEntry("com.android.browser.application_id",
-                                         "org.chromium.webview_ui_test"),
+                                         "org.monyhar.webview_ui_test"),
                                 hasEntry("query", "world"),
                                 hasEntry("new_search", true)))));
         assertNoUnverifiedIntents();

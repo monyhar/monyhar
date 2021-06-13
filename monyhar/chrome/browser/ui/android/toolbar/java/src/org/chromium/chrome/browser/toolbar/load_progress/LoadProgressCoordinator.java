@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar.load_progress;
+package org.monyhar.chrome.browser.toolbar.load_progress;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.toolbar.ToolbarProgressBar;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.toolbar.ToolbarProgressBar;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
 
 /**
  * Coordinator for the load progress bar. Owns all progress bar sub-components.

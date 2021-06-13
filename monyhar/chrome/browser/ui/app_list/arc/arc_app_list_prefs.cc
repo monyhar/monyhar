@@ -2133,7 +2133,7 @@ ArcAppListPrefs::AppInfo::AppInfo(
 
 ArcAppListPrefs::AppInfo::AppInfo(const AppInfo& other) = default;
 
-// Need to add explicit destructor for chromium style checker error:
+// Need to add explicit destructor for monyhar style checker error:
 // Complex class/struct needs an explicit out-of-line destructor
 ArcAppListPrefs::AppInfo::~AppInfo() = default;
 
@@ -2173,7 +2173,7 @@ ArcAppListPrefs::PackageInfo::PackageInfo(
       vpn_provider(vpn_provider),
       permissions(std::move(permissions)) {}
 
-// Need to add explicit destructor for chromium style checker error:
+// Need to add explicit destructor for monyhar style checker error:
 // Complex class/struct needs an explicit out-of-line destructor
 ArcAppListPrefs::PackageInfo::~PackageInfo() = default;
 

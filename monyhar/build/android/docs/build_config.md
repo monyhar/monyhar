@@ -33,7 +33,7 @@ For a concrete example, consider the following GN fragment:
 ```gn
 # From //ui/android/BUILD.gn:
 android_resources("ui_java_resources") {
-  custom_package = "org.chromium.ui"
+  custom_package = "org.monyhar.ui"
   resource_dirs = [ "java/res" ]
   deps = [
     ":ui_strings_grd",
@@ -51,7 +51,7 @@ This will end up generating the following JSON file under
       "gen/ui/android/ui_strings_grd.build_config"
     ],
     "name": "ui_java_resources.build_config",
-    "package_name": "org.chromium.ui",
+    "package_name": "org.monyhar.ui",
     "path": "gen/ui/android/ui_java_resources.build_config",
     "r_text": "gen/ui/android/ui_java_resources_R.txt",
     "resources_dirs": [
@@ -88,7 +88,7 @@ python ../../build/android/gyp/write_build_config.py \
     --deps-configs=\[\"gen/ui/android/ui_strings_grd.build_config\"\] \
     --build-config gen/ui/android/ui_java_resources.build_config \
     --resources-zip resource_zips/ui/android/ui_java_resources.resources.zip \
-    --package-name org.chromium.ui \
+    --package-name org.monyhar.ui \
     --r-text gen/ui/android/ui_java_resources_R.txt \
     --resource-dirs=\[\"../../ui/android/java/res\"\] \
     --srcjar gen/ui/android/ui_java_resources.srcjar
@@ -135,7 +135,7 @@ python ../../build/android/gyp/process_resources.py \
     --r-text-out gen/ui/android/ui_java_resources_R.txt \
     --srcjar-out gen/ui/android/ui_java_resources.srcjar \
     --non-constant-id \
-    --custom-package org.chromium.ui \
+    --custom-package org.monyhar.ui \
     --shared-resources
 ```
 
@@ -163,6 +163,6 @@ build/android/gyp/write_build_config.py \
 python tools/md_browser/md_browser.py -d /tmp /tmp/format.md
 ```
 
-[build/android/gyp/]: https://chromium.googlesource.com/chromium/src/build/+/main/android/gyp/
-[gn_write_build_config]: https://cs.chromium.org/chromium/src/build/config/android/internal_rules.gni?q=write_build_config&sq=package:chromium
-[write_build_config_py]: https://chromium.googlesource.com/chromium/src/build/+/main/android/gyp/write_build_config.py
+[build/android/gyp/]: https://monyhar.googlesource.com/monyhar/src/build/+/main/android/gyp/
+[gn_write_build_config]: https://cs.monyhar.org/monyhar/src/build/config/android/internal_rules.gni?q=write_build_config&sq=package:monyhar
+[write_build_config_py]: https://monyhar.googlesource.com/monyhar/src/build/+/main/android/gyp/write_build_config.py

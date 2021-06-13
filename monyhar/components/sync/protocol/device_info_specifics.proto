@@ -10,7 +10,7 @@
 syntax = "proto2";
 
 option java_multiple_files = true;
-option java_package = "org.chromium.components.sync.protocol";
+option java_package = "org.monyhar.components.sync.protocol";
 
 option optimize_for = LITE_RUNTIME;
 
@@ -196,7 +196,7 @@ message PhoneAsASecurityKeySpecificFields {
 }
 
 message ChromeVersionInfo {
-  // Version number as per https://www.chromium.org/developers/version-numbers.
+  // Version number as per https://www.monyhar.org/developers/version-numbers.
   optional string version_number = 1;
 }
 

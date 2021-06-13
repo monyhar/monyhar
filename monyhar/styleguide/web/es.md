@@ -20,7 +20,7 @@ This doc extends the [style guide](web.md#JavaScript) by specifying which new
 features of ES2015 and beyond are allowed in Chromium.
 
 You can propose changing the status of a feature by sending an email to
-chromium-dev@chromium.org. Include a short blurb on what the feature is and why
+monyhar-dev@monyhar.org. Include a short blurb on what the feature is and why
 you think it should or should not be allowed, along with links to any relevant
 previous discussion. If the list arrives at some consensus, send a codereview
 to change this file accordingly, linking to your discussion thread.
@@ -76,7 +76,7 @@ window.addEventListener('scroll', (event) => {
 **Documentation:** [link](https://tc39.github.io/ecma262/#sec-arrow-function-definitions)
 
 **Discussion Notes / Link to Thread:**
-[link](https://groups.google.com/a/chromium.org/forum/#!topic/chromium-dev/iJrC4PVSfoU)
+[link](https://groups.google.com/a/monyhar.org/forum/#!topic/monyhar-dev/iJrC4PVSfoU)
 
 ---
 
@@ -141,7 +141,7 @@ keyTracker.key2;  // '2 keys created!'
 
 **Documentation:** [link](https://tc39.github.io/ecma262/#sec-proxy-object-internal-methods-and-internal-slots)
 
-**Discussion Notes / Link to Thread:** [link](https://groups.google.com/a/chromium.org/g/chromium-dev/c/-vdPXELXCx4/m/gXfP5vpVBwAJ)
+**Discussion Notes / Link to Thread:** [link](https://groups.google.com/a/monyhar.org/g/monyhar-dev/c/-vdPXELXCx4/m/gXfP5vpVBwAJ)
 
 ---
 
@@ -178,7 +178,7 @@ class Rectangle extends Shape {
 **Documentation:** [link](https://tc39.github.io/ecma262/#sec-class-definitions)
 
 **Discussion Notes / Link to Thread:**
-https://groups.google.com/a/chromium.org/d/msg/chromium-dev/S1h-0m2ohOw/jyaiMGDlCwAJ
+https://groups.google.com/a/monyhar.org/d/msg/monyhar-dev/S1h-0m2ohOw/jyaiMGDlCwAJ
 
 ---
 
@@ -263,7 +263,7 @@ frobber.isFrobbing = false;  // Works.
 
 **See also:** [Object.freeze()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze)
 
-**Discussion Notes / Link to Thread:** [link](https://groups.google.com/a/chromium.org/d/msg/chromium-dev/MJhTok8Usr8/XCrkisaBBQAJ)
+**Discussion Notes / Link to Thread:** [link](https://groups.google.com/a/monyhar.org/d/msg/monyhar-dev/MJhTok8Usr8/XCrkisaBBQAJ)
 
 ---
 
@@ -305,7 +305,7 @@ function f() {
 
 **Documentation:** [link](https://tc39.github.io/ecma262/#sec-let-and-const-declarations)
 
-**Discussion Notes / Link to Thread:** [link](https://groups.google.com/a/chromium.org/d/msg/chromium-dev/MJhTok8Usr8/XCrkisaBBQAJ)
+**Discussion Notes / Link to Thread:** [link](https://groups.google.com/a/monyhar.org/d/msg/monyhar-dev/MJhTok8Usr8/XCrkisaBBQAJ)
 
 ---
 
@@ -330,7 +330,7 @@ const a2 = Array.of(7);
 
 **Documentation:** [link](https://tc39.github.io/ecma262/#sec-properties-of-the-array-constructor)
 
-**Discussion Notes / Link to Thread:** [link](https://groups.google.com/a/chromium.org/d/msg/chromium-dev/d_2zUYQZJTg/-_PSji_OAQAJ)
+**Discussion Notes / Link to Thread:** [link](https://groups.google.com/a/monyhar.org/d/msg/monyhar-dev/d_2zUYQZJTg/-_PSji_OAQAJ)
 
 ---
 
@@ -350,7 +350,7 @@ const a2 = Array.of(7);
 
 **Documentation:** [link](https://tc39.github.io/ecma262/#sec-isfinite-number)
 
-**Discussion Notes / Link to Thread:** [link](https://groups.google.com/a/chromium.org/d/msg/chromium-dev/d_2zUYQZJTg/-_PSji_OAQAJ)
+**Discussion Notes / Link to Thread:** [link](https://groups.google.com/a/monyhar.org/d/msg/monyhar-dev/d_2zUYQZJTg/-_PSji_OAQAJ)
 
 ---
 
@@ -375,7 +375,7 @@ Object.is(-0, +0)  // false, btw: -0 === +0 is true
 
 **Documentation:** [link](https://tc39.github.io/ecma262/#sec-properties-of-the-object-constructor)
 
-**Discussion Notes / Link to Thread:** [link](https://groups.google.com/a/chromium.org/d/msg/chromium-dev/d_2zUYQZJTg/-_PSji_OAQAJ)
+**Discussion Notes / Link to Thread:** [link](https://groups.google.com/a/monyhar.org/d/msg/monyhar-dev/d_2zUYQZJTg/-_PSji_OAQAJ)
 
 ---
 
@@ -397,7 +397,7 @@ for (const n of fibonacci) {
 **Documentation:** [link1](https://tc39.github.io/ecma262/#sec-for-in-and-for-of-statements)
 [link2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
 
-**Discussion Notes / Link to Thread:** [link](https://groups.google.com/a/chromium.org/d/msg/chromium-dev/d_2zUYQZJTg/-_PSji_OAQAJ)
+**Discussion Notes / Link to Thread:** [link](https://groups.google.com/a/monyhar.org/d/msg/monyhar-dev/d_2zUYQZJTg/-_PSji_OAQAJ)
 
 ---
 
@@ -447,7 +447,7 @@ var chars = [...str];  // ['f', 'o', 'o']
 
 **Documentation:** [link](http://www.ecma-international.org/ecma-262/6.0/#sec-argument-lists-runtime-semantics-argumentlistevaluation)
 
-**Discussion Notes / Link to Thread:** [link](https://groups.google.com/a/chromium.org/forum/#!topic/chromium-dev/LqP4AniIs8c)
+**Discussion Notes / Link to Thread:** [link](https://groups.google.com/a/monyhar.org/forum/#!topic/monyhar-dev/LqP4AniIs8c)
 
 ---
 
@@ -471,7 +471,7 @@ usesRestParams('a', 'b', 1, 2, 3);
 
 **Documentation:** [link](http://www.ecma-international.org/ecma-262/6.0/#sec-function-definitions)
 
-**Discussion Notes / Link to Thread:** [link](https://groups.google.com/a/chromium.org/forum/#!topic/chromium-dev/LqP4AniIs8c)
+**Discussion Notes / Link to Thread:** [link](https://groups.google.com/a/monyhar.org/forum/#!topic/monyhar-dev/LqP4AniIs8c)
 
 ---
 
@@ -522,7 +522,7 @@ const [one, ...rest] = [1, 2, 3];
 
 **Documentation:** [link](http://www.ecma-international.org/ecma-262/6.0/#sec-destructuring-assignment)
 
-**Discussion Notes / Link to Thread:** [link](https://groups.google.com/a/chromium.org/d/topic/chromium-dev/mwFnj7MTzgU)
+**Discussion Notes / Link to Thread:** [link](https://groups.google.com/a/monyhar.org/d/topic/monyhar-dev/mwFnj7MTzgU)
 
 ---
 
@@ -546,7 +546,7 @@ import {getArea, width, height} from './lib/rect.js';
 
 **Discussion Notes / Link to Thread:**
 Dynamic Import [link](https://v8.dev/features/dynamic-import) are not allowed
-yet, see separate entry in the [Features To Be Discussed](##es2015-support-in-chromium-features-to-be-discussed)
+yet, see separate entry in the [Features To Be Discussed](##es2015-support-in-monyhar-features-to-be-discussed)
 section.
 
 ---
@@ -586,7 +586,7 @@ console.log(clearSky.clouds());  // 0
 [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)
 
 **Discussion Notes / Link to Thread:**
-https://groups.google.com/a/chromium.org/d/msg/chromium-dev/RqOdTlxuGVg/M7I0CTryDQAJ
+https://groups.google.com/a/monyhar.org/d/msg/monyhar-dev/RqOdTlxuGVg/M7I0CTryDQAJ
 
 Note: clang-format has some issues formatting complex computed property names.
 
@@ -1029,7 +1029,7 @@ f1();
 
 **Documentation:** [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)
 
-**Discussion Notes / Link to Thread:** [link](https://groups.google.com/a/chromium.org/forum/?utm_medium=email&utm_source=footer#!msg/chromium-dev/KCGiv5vGeEQ/u-gl1pRGAAAJ)
+**Discussion Notes / Link to Thread:** [link](https://groups.google.com/a/monyhar.org/forum/?utm_medium=email&utm_source=footer#!msg/monyhar-dev/KCGiv5vGeEQ/u-gl1pRGAAAJ)
 
 ---
 

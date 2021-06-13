@@ -1,7 +1,7 @@
-dom@chromium.org
-falken@chromium.org
-kinuko@chromium.org
-nhiroki@chromium.org
+dom@monyhar.org
+falken@monyhar.org
+kinuko@monyhar.org
+nhiroki@monyhar.org
 
 per-file *.mojom=set noparent
 per-file *.mojom=file://ipc/SECURITY_OWNERS

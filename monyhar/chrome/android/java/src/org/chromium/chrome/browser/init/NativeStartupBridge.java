@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.init;
+package org.monyhar.chrome.browser.init;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.task.PostTask;
-import org.chromium.content_public.browser.BrowserStartupController;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.content_public.browser.BrowserStartupController;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 /**
  * A class for native code to request full browser start when running in minimal browser mode.

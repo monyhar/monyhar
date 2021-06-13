@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.signin.identitymanager;
+package org.monyhar.components.signin.identitymanager;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
@@ -19,9 +19,9 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.components.signin.base.AccountInfo;
-import org.chromium.components.signin.base.CoreAccountId;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.components.signin.base.AccountInfo;
+import org.monyhar.components.signin.base.CoreAccountId;
 
 /**
  * Unit tests for {@link AccountInfoServiceImpl}.

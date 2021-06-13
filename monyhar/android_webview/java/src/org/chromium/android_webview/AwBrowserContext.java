@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview;
+package org.monyhar.android_webview;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.android_webview.common.PlatformServiceBridge;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.memory.MemoryPressureMonitor;
-import org.chromium.content_public.browser.ContentViewStatics;
+import org.monyhar.android_webview.common.PlatformServiceBridge;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.memory.MemoryPressureMonitor;
+import org.monyhar.content_public.browser.ContentViewStatics;
 
 /**
  * Java side of the Browser Context: contains all the java side objects needed to host one

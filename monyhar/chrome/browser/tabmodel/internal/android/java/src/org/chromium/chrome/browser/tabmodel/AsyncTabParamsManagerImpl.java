@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tabmodel;
+package org.monyhar.chrome.browser.tabmodel;
 
 import android.util.SparseArray;
 
-import org.chromium.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.Tab;
 
 /**
  * Data that will be used later when a tab is opened via an intent. Often only the necessary

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting.base;
+package org.monyhar.chromoting.base;
 
 import android.accounts.Account;
 import android.app.Activity;
@@ -16,9 +16,9 @@ import com.google.android.gms.auth.GoogleAuthException;
 import com.google.android.gms.auth.GoogleAuthUtil;
 import com.google.android.gms.auth.UserRecoverableAuthException;
 
-import org.chromium.base.task.PostTask;
-import org.chromium.base.task.TaskRunner;
-import org.chromium.base.task.TaskTraits;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.task.TaskRunner;
+import org.monyhar.base.task.TaskTraits;
 
 import java.io.IOException;
 import java.lang.annotation.Retention;

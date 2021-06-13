@@ -411,9 +411,9 @@ IN_PROC_BROWSER_TEST_F(PasswordManagerSyncTest, ChooseDestinationStore) {
     // again. This is because the password manager is "smart" and prefers
     // user-typed values (including autofilled-on-pageload ones) over
     // script-provided values, see
-    // https://cs.chromium.org/chromium/src/components/autofill/content/renderer/form_autofill_util.cc?rcl=e38f0c99fe45ef81bd09d97f235c3dee64e2bd9f&l=1749
+    // https://cs.monyhar.org/monyhar/src/components/autofill/content/renderer/form_autofill_util.cc?rcl=e38f0c99fe45ef81bd09d97f235c3dee64e2bd9f&l=1749
     // and
-    // https://cs.chromium.org/chromium/src/components/autofill/content/renderer/password_autofill_agent.cc?rcl=63830d3f4b7f5fceec9609d83cf909d0cad04bb2&l=1855
+    // https://cs.monyhar.org/monyhar/src/components/autofill/content/renderer/password_autofill_agent.cc?rcl=63830d3f4b7f5fceec9609d83cf909d0cad04bb2&l=1855
     // Some PasswordManager browser tests work around this by disabling
     // autofill on pageload, see PasswordManagerBrowserTestWithAutofillDisabled.
     // NavigateToFile(web_contents, "/password/password_form.html");

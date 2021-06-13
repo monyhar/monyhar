@@ -10,23 +10,23 @@
 # parts of content even before being a content/OWNER.
 #
 # For public questions directed to OWNERS, you can send email
-# to content-owners@chromium.org.
+# to content-owners@monyhar.org.
 
 set noparent
-# NOTE: keep this in sync with lsc-owners-override@chromium.org owners
-alexmos@chromium.org
-arthursonzogni@chromium.org
-avi@chromium.org
-clamy@chromium.org
-creis@chromium.org
-dgozman@chromium.org
-falken@chromium.org
-jam@chromium.org
-jochen@chromium.org
-kinuko@chromium.org
-nasko@chromium.org
-pfeldman@chromium.org
-# NOTE: keep this in sync with lsc-owners-override@chromium.org owners
+# NOTE: keep this in sync with lsc-owners-override@monyhar.org owners
+alexmos@monyhar.org
+arthursonzogni@monyhar.org
+avi@monyhar.org
+clamy@monyhar.org
+creis@monyhar.org
+dgozman@monyhar.org
+falken@monyhar.org
+jam@monyhar.org
+jochen@monyhar.org
+kinuko@monyhar.org
+nasko@monyhar.org
+pfeldman@monyhar.org
+# NOTE: keep this in sync with lsc-owners-override@monyhar.org owners
 
 # per-file rules:
 # These are for the common case of adding or renaming files. If you're doing
@@ -34,26 +34,26 @@ pfeldman@chromium.org
 per-file BUILD.gn=*
 
 # For threading (BrowserThread, BrowserMainLoop, ThreadPool, etc.)
-per-file *browser_main_loop*=gab@chromium.org
-per-file *browser_task_environment*=gab@chromium.org
-per-file *browser_thread*=gab@chromium.org
+per-file *browser_main_loop*=gab@monyhar.org
+per-file *browser_task_environment*=gab@monyhar.org
+per-file *browser_thread*=gab@monyhar.org
 
 # For Fuchsia-specific changes:
 per-file *_fuchsia*=file://build/fuchsia/OWNERS
 
 # For Mac-specific changes:
-per-file *_mac.*=ellyjones@chromium.org
-per-file *_mac.*=mark@chromium.org
-per-file *_mac.*=rsesek@chromium.org
-per-file *_mac.*=tapted@chromium.org
-per-file *_mac_*=ellyjones@chromium.org
-per-file *_mac_*=mark@chromium.org
-per-file *_mac_*=rsesek@chromium.org
-per-file *_mac_*=tapted@chromium.org
-per-file *.mm=ellyjones@chromium.org
-per-file *.mm=mark@chromium.org
-per-file *.mm=rsesek@chromium.org
-per-file *.mm=tapted@chromium.org
+per-file *_mac.*=ellyjones@monyhar.org
+per-file *_mac.*=mark@monyhar.org
+per-file *_mac.*=rsesek@monyhar.org
+per-file *_mac.*=tapted@monyhar.org
+per-file *_mac_*=ellyjones@monyhar.org
+per-file *_mac_*=mark@monyhar.org
+per-file *_mac_*=rsesek@monyhar.org
+per-file *_mac_*=tapted@monyhar.org
+per-file *.mm=ellyjones@monyhar.org
+per-file *.mm=mark@monyhar.org
+per-file *.mm=rsesek@monyhar.org
+per-file *.mm=tapted@monyhar.org
 
 # Translation artifacts:
 per-file *.xtb=file://tools/translation/TRANSLATION_OWNERS

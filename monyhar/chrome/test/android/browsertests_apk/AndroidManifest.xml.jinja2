@@ -8,7 +8,7 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="org.chromium.android_browsertests_apk">
+    package="org.monyhar.android_browsertests_apk">
 
     <uses-feature android:glEsVersion="0x00020000" />
 
@@ -42,7 +42,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="org.chromium.chrome.browser.media.MediaLauncherActivity"
+        <activity android:name="org.monyhar.chrome.browser.media.MediaLauncherActivity"
                   android:theme="@android:style/Theme.NoDisplay"
                   android:excludeFromRecents="true"
                   android:exported="true"
@@ -58,8 +58,8 @@
             <data android:scheme="content" />
           </intent-filter>
         </activity>
-        <activity-alias android:name="org.chromium.chrome.browser.media.AudioLauncherActivity"
-                        android:targetActivity="org.chromium.chrome.browser.media.MediaLauncherActivity"
+        <activity-alias android:name="org.monyhar.chrome.browser.media.AudioLauncherActivity"
+                        android:targetActivity="org.monyhar.chrome.browser.media.MediaLauncherActivity"
                         android:theme="@android:style/Theme.NoDisplay"
                         android:excludeFromRecents="true"
                         android:exported="true"
@@ -74,20 +74,20 @@
           </intent-filter>
         </activity-alias>
 
-        <activity android:name="org.chromium.chrome.browser.incognito.IncognitoTabLauncher"
+        <activity android:name="org.monyhar.chrome.browser.incognito.IncognitoTabLauncher"
                   android:theme="@android:style/Theme.NoDisplay"
                   android:taskAffinity=""
                   android:enabled="false"
                   android:excludeFromRecents="true"
                   android:exported="true">
           <intent-filter>
-            <action android:name="org.chromium.chrome.browser.incognito.OPEN_PRIVATE_TAB" />
+            <action android:name="org.monyhar.chrome.browser.incognito.OPEN_PRIVATE_TAB" />
             <category android:name="android.intent.category.DEFAULT" />
           </intent-filter>
         </activity>
 
         <activity
-          android:name="org.chromium.chrome.browser.sharing.shared_clipboard.SharedClipboardShareActivity"
+          android:name="org.monyhar.chrome.browser.sharing.shared_clipboard.SharedClipboardShareActivity"
           android:icon="@drawable/ic_devices_48dp"
           android:label="@string/shared_clipboard_share_activity_title"
           android:enabled="false"
@@ -103,11 +103,11 @@
           </intent-filter>
         </activity>
 
-        <service android:name="org.chromium.components.background_task_scheduler.BackgroundTaskJobService"
+        <service android:name="org.monyhar.components.background_task_scheduler.BackgroundTaskJobService"
                  android:exported="false"
                  android:permission="android.permission.BIND_JOB_SERVICE"/>
 
-        <service android:name="org.chromium.chrome.browser.crash.ChromeMinidumpUploadJobService"
+        <service android:name="org.monyhar.chrome.browser.crash.ChromeMinidumpUploadJobService"
                  android:permission="android.permission.BIND_JOB_SERVICE"
                  android:exported="false"/>
 
@@ -117,30 +117,30 @@
         <!-- NOTE: If you change the values of "android:process" for any of the below services,
              you also need to update kHelperProcessExecutableName in chrome_constants.cc. -->
         {% set num_sandboxed_services = 40 %}
-        <meta-data android:name="org.chromium.content.browser.NUM_SANDBOXED_SERVICES"
+        <meta-data android:name="org.monyhar.content.browser.NUM_SANDBOXED_SERVICES"
                    android:value="{{ num_sandboxed_services }}"/>
 
         {% for i in range(num_sandboxed_services) %}
-        <service android:name="org.chromium.content.app.SandboxedProcessService{{ i }}"
+        <service android:name="org.monyhar.content.app.SandboxedProcessService{{ i }}"
                  android:process=":sandboxed_process{{ i }}"
                  android:isolatedProcess="true"
                  android:exported="false" />
         {% endfor %}
 
         {% set num_privileged_services = 5 %}
-        <meta-data android:name="org.chromium.content.browser.NUM_PRIVILEGED_SERVICES"
+        <meta-data android:name="org.monyhar.content.browser.NUM_PRIVILEGED_SERVICES"
                    android:value="{{ num_privileged_services }}"/>
 
         {% for i in range(num_privileged_services) %}
-        <service android:name="org.chromium.content.app.PrivilegedProcessService{{ i }}"
+        <service android:name="org.monyhar.content.app.PrivilegedProcessService{{ i }}"
                  android:process=":privileged_process{{ i }}"
                  android:isolatedProcess="false"
                  android:exported="false" />
         {% endfor %}
     </application>
 
-    <instrumentation android:name="org.chromium.android_browsertests_apk.ChromeBrowserTestsInstrumentationTestRunner"
+    <instrumentation android:name="org.monyhar.android_browsertests_apk.ChromeBrowserTestsInstrumentationTestRunner"
             android:label="ChromeBrowserTests"
-            android:targetPackage="org.chromium.android_browsertests_apk"
-            chromium-junit3="true"/>
+            android:targetPackage="org.monyhar.android_browsertests_apk"
+            monyhar-junit3="true"/>
 </manifest>

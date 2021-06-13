@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webview_shell;
+package org.monyhar.webview_shell;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,8 +12,8 @@ import android.webkit.WebView;
 
 import androidx.webkit.WebViewClientCompat;
 
-import org.chromium.base.Log;
-import org.chromium.base.MemoryPressureListener;
+import org.monyhar.base.Log;
+import org.monyhar.base.MemoryPressureListener;
 
 /**
  * This activity is designed for sending memory pressure signals for testing WebView.

@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.content_creation.notes.bridges;
+package org.monyhar.components.content_creation.notes.bridges;
 
-import org.chromium.base.Callback;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.content_creation.notes.NoteService;
-import org.chromium.components.content_creation.notes.models.NoteTemplate;
+import org.monyhar.base.Callback;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.content_creation.notes.NoteService;
+import org.monyhar.components.content_creation.notes.models.NoteTemplate;
 
 import java.util.List;
 

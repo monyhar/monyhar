@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.remoteobjects;
+package org.monyhar.content.browser.remoteobjects;
 
 import static org.hamcrest.Matchers.isIn;
 import static org.hamcrest.Matchers.not;
@@ -14,15 +14,15 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Feature;
-import org.chromium.blink.mojom.RemoteObject;
-import org.chromium.mojo.MojoTestRule;
-import org.chromium.mojo.bindings.ConnectionErrorHandler;
-import org.chromium.mojo.bindings.InterfaceRequest;
-import org.chromium.mojo.system.MojoException;
-import org.chromium.mojo.system.Pair;
-import org.chromium.mojo.system.impl.CoreImpl;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.blink.mojom.RemoteObject;
+import org.monyhar.mojo.MojoTestRule;
+import org.monyhar.mojo.bindings.ConnectionErrorHandler;
+import org.monyhar.mojo.bindings.InterfaceRequest;
+import org.monyhar.mojo.system.MojoException;
+import org.monyhar.mojo.system.Pair;
+import org.monyhar.mojo.system.impl.CoreImpl;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

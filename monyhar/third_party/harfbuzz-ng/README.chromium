@@ -23,12 +23,12 @@ HarfBuzz' src directory, a step in the script will fail and you should edit the
 BUILD.gn file accordingly and continue the roll manually.
 
 Chromium-local cherry picks or patches can be done by pushing new branches to
-refs/heads/chromium/ of [1]. The set of HarfBuzz OWNERS has write rights to this
+refs/heads/monyhar/ of [1]. The set of HarfBuzz OWNERS has write rights to this
 part of the tree. We suggest to follow a pattern of naming branches needed for
-Chromium revisions by the chromium milestone number. For example, if a
-cherry-pick is needed for M65, push to "refs/heads/chromium/m65" and reference
+Chromium revisions by the monyhar milestone number. For example, if a
+cherry-pick is needed for M65, push to "refs/heads/monyhar/m65" and reference
 the new commit in DEPS. Take a look at
-https://chromium-review.googlesource.com/c/chromium/src/+/937502 for an example.
+https://monyhar-review.googlesource.com/c/monyhar/src/+/937502 for an example.
 
 Currently we are intentionally not building the following files from
 HarfBuzz. Specifically, we are not building hb-coretext any longer, as we rely

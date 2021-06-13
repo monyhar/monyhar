@@ -923,7 +923,7 @@ IN_PROC_BROWSER_TEST_P(SitePerProcessBrowserTest,
   scroll_event.SetPositionInWidget(1, 1);
   // Use precise pixels to keep these events off the animated scroll pathways,
   // which currently break this test.
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=710513
+  // https://bugs.monyhar.org/p/monyhar/issues/detail?id=710513
   scroll_event.delta_units = ui::ScrollGranularity::kScrollByPrecisePixel;
   scroll_event.delta_x = 0.0f;
   scroll_event.delta_y = -5.0f;

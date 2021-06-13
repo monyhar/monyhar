@@ -1,27 +1,27 @@
 {
     "86": {
         "name": "m86",
-        "project": "chromium-m86",
+        "project": "monyhar-m86",
         "ref": "refs/branch-heads/4240"
     },
     "88": {
         "name": "m88",
-        "project": "chromium-m88",
+        "project": "monyhar-m88",
         "ref": "refs/branch-heads/4324"
     },
     "90": {
         "name": "m90",
-        "project": "chromium-m90",
+        "project": "monyhar-m90",
         "ref": "refs/branch-heads/4430"
     },
     "91": {
         "name": "m91",
-        "project": "chromium-m91",
+        "project": "monyhar-m91",
         "ref": "refs/branch-heads/4472"
     },
     "92": {
         "name": "m92",
-        "project": "chromium-m92",
+        "project": "monyhar-m92",
         "ref": "refs/branch-heads/4515"
     }
 }

@@ -1,7 +1,7 @@
-afakhry@chromium.org
-jimmyxgong@chromium.org
-wutao@chromium.org
-zentaro@chromium.org
+afakhry@monyhar.org
+jimmyxgong@monyhar.org
+wutao@monyhar.org
+zentaro@monyhar.org
 
 # For adding or removing languages.
-per-file *.grd=claudiomagni@chromium.org
+per-file *.grd=claudiomagni@monyhar.org

@@ -16,7 +16,7 @@ tests can freely rely on these assumptions being true:
    declarations.
    <!-- unicode-bidi: isolate should be required; we currently don't
    assume this because Chrome and Safari are yet to ship this: see
-   https://bugs.chromium.org/p/chromium/issues/detail?id=296863 and
+   https://bugs.monyhar.org/p/monyhar/issues/detail?id=296863 and
    https://bugs.webkit.org/show_bug.cgi?id=65617 -->
  * The HTML `span` element is assigned `display: inline;` and no other
    property declaration.

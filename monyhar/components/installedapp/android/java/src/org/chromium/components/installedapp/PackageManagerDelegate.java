@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.installedapp;
+package org.monyhar.components.installedapp;
 
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
@@ -10,7 +10,7 @@ import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
 
-import org.chromium.base.ContextUtils;
+import org.monyhar.base.ContextUtils;
 
 /**
  * A wrapper around the PackageManager that may be overridden for testing.

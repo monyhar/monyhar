@@ -8,7 +8,7 @@ compared with the historical upper limit described in [`src/testing/scripts/repr
 
 These tests are currently running on CQ on:
 * mac-rel
-* win10_chromium_x64_rel_ng
+* win10_monyhar_x64_rel_ng
 
 [TOC]
 
@@ -18,7 +18,7 @@ The representative perf tests runs a set of stories and measures the `frame_time
 The common reasons of failure are (1) the measured value is higher than the expected value and (2) crashes while running the tests.
 
 In the case of difference between values, a message would be logged in the output of the test explaining so.
-Example:`animometer_webgl_attrib_arrays higher average frame_times(21.095) compared to upper limit (17.062)` ([Link to the task](https://chromium-swarm.appspot.com/task?d=true&id=4a92ea7a6b40d010))
+Example:`animometer_webgl_attrib_arrays higher average frame_times(21.095) compared to upper limit (17.062)` ([Link to the task](https://monyhar-swarm.appspot.com/task?d=true&id=4a92ea7a6b40d010))
 This means that the animometer_webgl_attrib_arrays story has the average frame_times of 21 ms and the recorded upper limit for the story (in the tested platform) is 17 ms.
 
 In these cases the failed story will be ran three more times to make sure that this has not been a flake, and the new result (average of three runs) will be reported in the same format.
@@ -73,7 +73,7 @@ To do so find the story under the affected platform in [`src/testing/scripts/rep
     },
 }
 ```
-*[Example Cl](https://chromium-review.googlesource.com/c/chromium/src/+/2208294)*
+*[Example Cl](https://monyhar-review.googlesource.com/c/monyhar/src/+/2208294)*
 
 
 ## Maintaining Representative Performance Tests

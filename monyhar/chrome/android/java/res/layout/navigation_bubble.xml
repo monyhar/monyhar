@@ -4,7 +4,7 @@
      found in the LICENSE file.
  -->
 
-<org.chromium.chrome.browser.gesturenav.NavigationBubble
+<org.monyhar.chrome.browser.gesturenav.NavigationBubble
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:minHeight="@dimen/navigation_bubble_size"
@@ -14,7 +14,7 @@
     android:animateLayoutChanges="true"
     android:orientation="horizontal">
 
-    <org.chromium.ui.widget.ChromeImageView
+    <org.monyhar.ui.widget.ChromeImageView
         android:id="@+id/navigation_bubble_arrow"
         android:layout_width="@dimen/navigation_bubble_arrow_size"
         android:layout_height="@dimen/navigation_bubble_arrow_size"
@@ -36,4 +36,4 @@
         android:paddingBottom="@dimen/navigation_bubble_text_bottom_padding"
         android:visibility="gone"
         android:maxLines="1" />
-</org.chromium.chrome.browser.gesturenav.NavigationBubble>
+</org.monyhar.chrome.browser.gesturenav.NavigationBubble>

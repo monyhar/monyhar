@@ -28,9 +28,9 @@ GITHUB_COMMIT_PREFIX = WPT_GH_URL + 'commit/'
 SHORT_GERRIT_PREFIX = 'https://crrev.com/c/'
 
 class ImportNotifier(object):
-    def __init__(self, host, chromium_git, local_wpt):
+    def __init__(self, host, monyhar_git, local_wpt):
         self.host = host
-        self.git = chromium_git
+        self.git = monyhar_git
         self.local_wpt = local_wpt
 
         self._monorail_api = MonorailAPI
@@ -224,7 +224,7 @@ class ImportNotifier(object):
         description = (prologue + failure_list + expectations_statement +
                        range_statement)
 
-        bug = MonorailIssue.new_chromium_issue(
+        bug = MonorailIssue.new_monyhar_issue(
             summary,
             description,
             cc=[],
@@ -287,12 +287,12 @@ class ImportNotifier(object):
             commit_list = self.format_commit_list(imported_commits,
                                                   full_directory)
 
-            links_list = '\n[0]: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/testing/web_test_expectations.md\n'
+            links_list = '\n[0]: https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/testing/web_test_expectations.md\n'
 
             description = (prologue + failure_list + expectations_statement +
                            range_statement + commit_list + links_list)
 
-            bug = MonorailIssue.new_chromium_issue(summary,
+            bug = MonorailIssue.new_monyhar_issue(summary,
                                                    description,
                                                    cc,
                                                    components,

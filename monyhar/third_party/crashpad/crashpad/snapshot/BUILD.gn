@@ -15,7 +15,7 @@
 import("../build/crashpad_buildconfig.gni")
 import("../build/crashpad_fuzzer_test.gni")
 
-if (crashpad_is_in_chromium) {
+if (crashpad_is_in_monyhar) {
   import("//build/config/compiler/compiler.gni")
 }
 
@@ -245,7 +245,7 @@ crashpad_static_library("snapshot") {
     "../client:common",
     "../compat",
     "../minidump:format",
-    "../third_party/mini_chromium:base",
+    "../third_party/mini_monyhar:base",
     "../util",
   ]
 
@@ -267,7 +267,7 @@ static_library("context") {
   public_configs = [ "..:crashpad_config" ]
 
   deps = [
-    "../third_party/mini_chromium:base",
+    "../third_party/mini_monyhar:base",
     "../util",
   ]
 
@@ -282,7 +282,7 @@ if (crashpad_is_linux) {
 
     deps = [
       ":snapshot",
-      "../third_party/mini_chromium:base",
+      "../third_party/mini_monyhar:base",
       "../util:util",
     ]
     seed_corpus = "elf/elf_image_reader_fuzzer_corpus"
@@ -317,7 +317,7 @@ static_library("test_support") {
 
   deps = [
     "../compat",
-    "../third_party/mini_chromium:base",
+    "../third_party/mini_monyhar:base",
     "../util",
   ]
 
@@ -400,7 +400,7 @@ source_set("snapshot_test") {
   } else if (!crashpad_is_fuchsia) {
     # Timezones are currently non-functional on Fuchsia:
     # https://fuchsia.googlesource.com/zircon/+/master/third_party/ulib/musl/src/time/__tz.c#9
-    # https://crashpad.chromium.org/bug/196. Relevant upstream bugs are ZX-337
+    # https://crashpad.monyhar.org/bug/196. Relevant upstream bugs are ZX-337
     # and ZX-1731.
     sources += [ "posix/timezone_test.cc" ]
   }
@@ -425,7 +425,7 @@ source_set("snapshot_test") {
     "../minidump:format",
     "../test",
     "../third_party/googletest:googletest",
-    "../third_party/mini_chromium:base",
+    "../third_party/mini_monyhar:base",
     "../util",
   ]
 
@@ -476,7 +476,7 @@ crashpad_loadable_module("crashpad_snapshot_test_module") {
   sources = [ "crashpad_info_client_options_test_module.cc" ]
   deps = [
     "../client",
-    "../third_party/mini_chromium:base",
+    "../third_party/mini_monyhar:base",
   ]
 }
 
@@ -491,7 +491,7 @@ crashpad_loadable_module("crashpad_snapshot_test_module_large") {
   }
 
   defines = [ "CRASHPAD_INFO_SIZE_TEST_MODULE_LARGE" ]
-  deps += [ "../third_party/mini_chromium:base" ]
+  deps += [ "../third_party/mini_monyhar:base" ]
 }
 
 crashpad_loadable_module("crashpad_snapshot_test_module_small") {
@@ -505,7 +505,7 @@ crashpad_loadable_module("crashpad_snapshot_test_module_small") {
   }
 
   defines = [ "CRASHPAD_INFO_SIZE_TEST_MODULE_SMALL" ]
-  deps += [ "../third_party/mini_chromium:base" ]
+  deps += [ "../third_party/mini_monyhar:base" ]
 }
 
 if ((crashpad_is_linux || crashpad_is_android || crashpad_is_fuchsia) &&
@@ -540,7 +540,7 @@ if (crashpad_is_win) {
     deps = [
       "../client",
       "../compat",
-      "../third_party/mini_chromium:base",
+      "../third_party/mini_monyhar:base",
     ]
   }
 
@@ -550,7 +550,7 @@ if (crashpad_is_win) {
     deps = [
       "../client",
       "../compat",
-      "../third_party/mini_chromium:base",
+      "../third_party/mini_monyhar:base",
       "../util",
     ]
   }
@@ -561,7 +561,7 @@ if (crashpad_is_win) {
     deps = [
       "../client",
       "../compat",
-      "../third_party/mini_chromium:base",
+      "../third_party/mini_monyhar:base",
       "../util",
     ]
   }
@@ -572,7 +572,7 @@ if (crashpad_is_win) {
     deps = [
       "../client",
       "../compat",
-      "../third_party/mini_chromium:base",
+      "../third_party/mini_monyhar:base",
     ]
   }
 
@@ -582,10 +582,10 @@ if (crashpad_is_win) {
     deps = [
       "../client",
       "../compat",
-      "../third_party/mini_chromium:base",
+      "../third_party/mini_monyhar:base",
       "../util",
     ]
-    if (crashpad_is_in_chromium) {
+    if (crashpad_is_in_monyhar) {
       if (symbol_level == 0) {
         # The tests that use this executable rely on at least minimal debug
         # info.
@@ -600,9 +600,9 @@ if (crashpad_is_win) {
     sources = [ "win/crashpad_snapshot_test_image_reader_module.cc" ]
     deps = [
       "../client",
-      "../third_party/mini_chromium:base",
+      "../third_party/mini_monyhar:base",
     ]
-    if (crashpad_is_in_chromium) {
+    if (crashpad_is_in_monyhar) {
       if (symbol_level == 0) {
         # The tests that use this module rely on at least minimal debug info.
         remove_configs = [ "//build/config/compiler:default_symbols" ]

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices;
+package org.monyhar.chrome.browser.browserservices;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -13,9 +13,9 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.app.AppCompatActivity;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ChromeApplicationImpl;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ChromeApplicationImpl;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -27,10 +27,10 @@ import java.util.List;
  * cleared.
  */
 public class ClearDataDialogActivity extends AppCompatActivity {
-    private static final String EXTRA_APP_NAME = "org.chromium.chrome.extra.app_name";
-    private static final String EXTRA_DOMAINS = "org.chromium.chrome.extra.domains";
-    private static final String EXTRA_ORIGINS = "org.chromium.chrome.extra.origins";
-    private static final String EXTRA_APP_UNINSTALLED = "org.chromium.chrome.extra.app_uninstalled";
+    private static final String EXTRA_APP_NAME = "org.monyhar.chrome.extra.app_name";
+    private static final String EXTRA_DOMAINS = "org.monyhar.chrome.extra.domains";
+    private static final String EXTRA_ORIGINS = "org.monyhar.chrome.extra.origins";
+    private static final String EXTRA_APP_UNINSTALLED = "org.monyhar.chrome.extra.app_uninstalled";
 
     /**
      * Creates an intent for launching this activity for the TWA client app that was uninstalled or

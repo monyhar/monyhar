@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.paint_preview;
+package org.monyhar.chrome.browser.paint_preview;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -13,20 +13,20 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.UserData;
-import org.chromium.chrome.browser.browser_controls.BrowserStateBrowserControlsVisibilityDelegate;
-import org.chromium.chrome.browser.paint_preview.services.PaintPreviewTabService;
-import org.chromium.chrome.browser.paint_preview.services.PaintPreviewTabServiceFactory;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabHidingType;
-import org.chromium.chrome.browser.tab.TabObserver;
-import org.chromium.chrome.browser.tab.TabViewProvider;
-import org.chromium.components.browser_ui.styles.ChromeColors;
-import org.chromium.components.paintpreview.player.PlayerManager;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.util.TokenHolder;
+import org.monyhar.base.Callback;
+import org.monyhar.base.UserData;
+import org.monyhar.chrome.browser.browser_controls.BrowserStateBrowserControlsVisibilityDelegate;
+import org.monyhar.chrome.browser.paint_preview.services.PaintPreviewTabService;
+import org.monyhar.chrome.browser.paint_preview.services.PaintPreviewTabServiceFactory;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabHidingType;
+import org.monyhar.chrome.browser.tab.TabObserver;
+import org.monyhar.chrome.browser.tab.TabViewProvider;
+import org.monyhar.components.browser_ui.styles.ChromeColors;
+import org.monyhar.components.paintpreview.player.PlayerManager;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.util.TokenHolder;
 
 /**
  * Responsible for checking for and displaying Paint Previews that are associated with a

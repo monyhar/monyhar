@@ -259,7 +259,7 @@ var CrSettingsMainPageV3Test = class extends CrSettingsV3BrowserTest {
 
 // Copied from Polymer 2 version of tests:
 // Times out on Windows Tests (dbg). See https://crbug.com/651296.
-// Times out / crashes on chromium.linux/Linux Tests (dbg) crbug.com/667882
+// Times out / crashes on monyhar.linux/Linux Tests (dbg) crbug.com/667882
 // Flaky everywhere crbug.com/1197768
 TEST_F('CrSettingsMainPageV3Test', 'DISABLED_MainPageV3', function() {
   mocha.run();

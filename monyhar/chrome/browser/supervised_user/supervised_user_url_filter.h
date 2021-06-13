@@ -49,7 +49,7 @@ class SupervisedUserURLFilter {
   // TODO(crbug/1152622): Investigate whether FilteringBehavior::WARN is in
   // use. If it is not in use, remove it.
   // A Java counterpart will be generated for this enum.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.superviseduser
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.superviseduser
   enum FilteringBehavior {
     ALLOW,
     WARN,

@@ -6,16 +6,16 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <org.chromium.components.browser_ui.settings.TextMessagePreference
+    <org.monyhar.components.browser_ui.settings.TextMessagePreference
         android:key="cookie_summary"
         android:layout="@layout/page_info_summary" />
 
-    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+    <org.monyhar.components.browser_ui.settings.ChromeSwitchPreference
         android:key="cookie_switch"
         android:persistent="false"
         android:title="@string/page_info_cookies_block" />
 
-    <org.chromium.components.browser_ui.settings.ChromeImageViewPreference
+    <org.monyhar.components.browser_ui.settings.ChromeImageViewPreference
         android:key="cookie_in_use" />
 
 </PreferenceScreen>

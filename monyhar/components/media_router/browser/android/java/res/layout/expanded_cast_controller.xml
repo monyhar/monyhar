@@ -32,10 +32,10 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:textAppearance="@style/TextAppearance.CastScreenTitle"/>
-    <org.chromium.third_party.android.media.MediaController
+    <org.monyhar.third_party.android.media.MediaController
         android:id="@+id/cast_media_controller"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom">
-    </org.chromium.third_party.android.media.MediaController>
+    </org.monyhar.third_party.android.media.MediaController>
 </FrameLayout>

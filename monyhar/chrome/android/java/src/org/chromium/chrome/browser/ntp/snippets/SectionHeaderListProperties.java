@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ntp.snippets;
+package org.monyhar.chrome.browser.ntp.snippets;
 
-import org.chromium.components.browser_ui.widget.listmenu.ListMenu;
-import org.chromium.ui.modelutil.MVCListAdapter;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyListModel;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.components.browser_ui.widget.listmenu.ListMenu;
+import org.monyhar.ui.modelutil.MVCListAdapter;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyListModel;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * Properties for a list of {@link SectionHeaderProperties} models.

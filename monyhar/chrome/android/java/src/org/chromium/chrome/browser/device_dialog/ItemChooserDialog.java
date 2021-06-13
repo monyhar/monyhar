@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.device_dialog;
+package org.monyhar.chrome.browser.device_dialog;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -26,10 +26,10 @@ import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.MathUtils;
-import org.chromium.chrome.R;
-import org.chromium.ui.base.DeviceFormFactor;
-import org.chromium.ui.widget.TextViewWithClickableSpans;
+import org.monyhar.base.MathUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.ui.base.DeviceFormFactor;
+import org.monyhar.ui.widget.TextViewWithClickableSpans;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

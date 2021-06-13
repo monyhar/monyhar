@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.directactions;
+package org.monyhar.chrome.browser.directactions;
 
 import androidx.annotation.Nullable;
 
@@ -10,9 +10,9 @@ import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.chrome.browser.AppHooks;
-import org.chromium.chrome.browser.AppHooksImpl;
-import org.chromium.chrome.test.ChromeActivityTestRule;
+import org.monyhar.chrome.browser.AppHooks;
+import org.monyhar.chrome.browser.AppHooksImpl;
+import org.monyhar.chrome.test.ChromeActivityTestRule;
 
 import java.util.function.Consumer;
 

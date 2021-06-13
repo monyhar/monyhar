@@ -11,7 +11,7 @@
 
 <article>
   <div class="box" draggable="true">
-    <a class="dragged" href="https://www.chromium.org">
+    <a class="dragged" href="https://www.monyhar.org">
       Drag Me - drag the text, not the box
     </a>
   </div>
@@ -24,7 +24,7 @@
 
 promise_test((t) => {
   return runLinkDraggingTest(t, {
-    dragStartUriList: 'https://www.chromium.org/',
+    dragStartUriList: 'https://www.monyhar.org/',
     dragStartTypes: ['text/html', 'text/plain', 'text/uri-list'],
   });
 }, 'Dragging a link inside a div with draggable="true"');

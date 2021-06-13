@@ -11,14 +11,14 @@ android_library("java") {
   ]
 
   sources = [
-    "java/src/org/chromium/chrome/browser/password_entry_edit/BlockedCredentialViewBinder.java",
-    "java/src/org/chromium/chrome/browser/password_entry_edit/CredentialEditBridge.java",
-    "java/src/org/chromium/chrome/browser/password_entry_edit/CredentialEditCoordinator.java",
-    "java/src/org/chromium/chrome/browser/password_entry_edit/CredentialEditMediator.java",
-    "java/src/org/chromium/chrome/browser/password_entry_edit/CredentialEditProperties.java",
-    "java/src/org/chromium/chrome/browser/password_entry_edit/CredentialEditUiFactory.java",
-    "java/src/org/chromium/chrome/browser/password_entry_edit/CredentialEditViewBinder.java",
-    "java/src/org/chromium/chrome/browser/password_entry_edit/FederatedCredentialViewBinder.java",
+    "java/src/org/monyhar/chrome/browser/password_entry_edit/BlockedCredentialViewBinder.java",
+    "java/src/org/monyhar/chrome/browser/password_entry_edit/CredentialEditBridge.java",
+    "java/src/org/monyhar/chrome/browser/password_entry_edit/CredentialEditCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/password_entry_edit/CredentialEditMediator.java",
+    "java/src/org/monyhar/chrome/browser/password_entry_edit/CredentialEditProperties.java",
+    "java/src/org/monyhar/chrome/browser/password_entry_edit/CredentialEditUiFactory.java",
+    "java/src/org/monyhar/chrome/browser/password_entry_edit/CredentialEditViewBinder.java",
+    "java/src/org/monyhar/chrome/browser/password_entry_edit/FederatedCredentialViewBinder.java",
   ]
 
   deps = [
@@ -40,7 +40,7 @@ android_library("junit") {
   # Skip platform checks since Robolectric depends on requires_android targets.
   bypass_platform_checks = true
   testonly = true
-  sources = [ "java/src/org/chromium/chrome/browser/password_entry_edit/CredentialEditControllerTest.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/password_entry_edit/CredentialEditControllerTest.java" ]
 
   deps = [
     ":java",
@@ -59,7 +59,7 @@ android_library("junit") {
 
 android_library("javatests") {
   testonly = true
-  sources = [ "java/src/org/chromium/chrome/browser/password_entry_edit/CredentialEditViewTest.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/password_entry_edit/CredentialEditViewTest.java" ]
 
   deps = [
     ":java",

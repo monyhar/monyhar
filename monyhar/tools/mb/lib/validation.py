@@ -56,12 +56,12 @@ def CheckAllConfigsAndMixinsReferenced(errs, all_configs, configs, mixins):
 
 
 def EnsureNoProprietaryMixins(errs, builder_groups, configs, mixins):
-  """If we're checking the Chromium config, check that the 'chromium' bots
+  """If we're checking the Chromium config, check that the 'monyhar' bots
   which build public artifacts do not include the chrome_with_codecs mixin.
   """
-  if 'chromium' in builder_groups:
-    for builder in builder_groups['chromium']:
-      config = builder_groups['chromium'][builder]
+  if 'monyhar' in builder_groups:
+    for builder in builder_groups['monyhar']:
+      config = builder_groups['monyhar'][builder]
 
       def RecurseMixins(current_mixin):
         if current_mixin == 'chrome_with_codecs':
@@ -76,7 +76,7 @@ def EnsureNoProprietaryMixins(errs, builder_groups, configs, mixins):
       for mixin in configs[config]:
         RecurseMixins(mixin)
   else:
-    errs.append('Missing "chromium" builder_group. Please update this '
+    errs.append('Missing "monyhar" builder_group. Please update this '
                 'proprietary codecs check with the name of the builder_group '
                 'responsible for public build artifacts.')
 

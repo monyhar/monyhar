@@ -158,12 +158,12 @@ link) or contact either bsheedy@ or bialpio@ for instructions.
 
 Once you have your playback dataset (.mp4 file), simply place it in
 `//chrome/test/data/xr/ar_playback_datasets/` and upload it using
-`upload_to_google_storage.py` to the `chromium-ar-test-apks/playback_datasets`
+`upload_to_google_storage.py` to the `monyhar-ar-test-apks/playback_datasets`
 bucket.
 
 
-[xr_instrumentation_deep_dive]: https://chromium.googlesource.com/chromium/src/+/main/chrome/android/javatests/src/org/chromium/chrome/browser/vr/xr_instrumentation_deep_dive.md
-[webxr_vr_transition_test]: https://chromium.googlesource.com/chromium/src/+/main/chrome/android/javatests/src/org/chromium/chrome/browser/vr/WebXrVrTransitionTest.java
-[webxr_vr_transition_test_html]: https://chromium.googlesource.com/chromium/src/+/main/chrome/test/data/xr/e2e_test_files/html/test_non_immersive_stops_during_immersive.html
-[vr_browser_transition_test]: https://chromium.googlesource.com/chromium/src/+/main/chrome/android/javatests/src/org/chromium/chrome/browser/vr/VrBrowserTransitionTest.java
-[build_gn]: https://chromium.googlesource.com/chromium/src/+/main/chrome/android/BUILD.gn
+[xr_instrumentation_deep_dive]: https://monyhar.googlesource.com/monyhar/src/+/main/chrome/android/javatests/src/org/monyhar/chrome/browser/vr/xr_instrumentation_deep_dive.md
+[webxr_vr_transition_test]: https://monyhar.googlesource.com/monyhar/src/+/main/chrome/android/javatests/src/org/monyhar/chrome/browser/vr/WebXrVrTransitionTest.java
+[webxr_vr_transition_test_html]: https://monyhar.googlesource.com/monyhar/src/+/main/chrome/test/data/xr/e2e_test_files/html/test_non_immersive_stops_during_immersive.html
+[vr_browser_transition_test]: https://monyhar.googlesource.com/monyhar/src/+/main/chrome/android/javatests/src/org/monyhar/chrome/browser/vr/VrBrowserTransitionTest.java
+[build_gn]: https://monyhar.googlesource.com/monyhar/src/+/main/chrome/android/BUILD.gn

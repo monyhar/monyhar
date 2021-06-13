@@ -126,7 +126,7 @@ class ProfileMetrics {
   // on Android.
   //
   // A Java counterpart will be generated for this enum.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.profiles
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.profiles
   // GENERATED_JAVA_CLASS_NAME_OVERRIDE: ProfileAccountManagementMetrics
   // GENERATED_JAVA_PREFIX_TO_STRIP: PROFILE_ANDROID_ACCOUNT_MANAGEMENT_MENU_
   enum ProfileAndroidAccountManagementMenu {

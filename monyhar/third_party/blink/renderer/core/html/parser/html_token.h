@@ -138,7 +138,7 @@ class HTMLToken {
     Range& MutableValueRange() { return value_range_; }
 
    private:
-    // TODO(chromium:1204030): Do a more rigorous study and select a
+    // TODO(monyhar:1204030): Do a more rigorous study and select a
     // better-informed inline capacity.
     LiteralBuffer<UChar, 32> name_;
     LiteralBuffer<UChar, 32> value_;
@@ -151,7 +151,7 @@ class HTMLToken {
   // By using an inline capacity of 256, we avoid spilling over into an malloced
   // buffer approximately 99% of the time based on a non-scientific browse
   // around a number of popular web sites on 23 May 2013.
-  // TODO(chromium:1204030): Do a more rigorous study and select a
+  // TODO(monyhar:1204030): Do a more rigorous study and select a
   // better-informed inline capacity.
   typedef LiteralBuffer<UChar, 256> DataVector;
 

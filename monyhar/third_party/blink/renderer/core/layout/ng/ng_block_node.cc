@@ -1227,7 +1227,7 @@ void NGBlockNode::PlaceChildrenInFlowThread(
   //
   // This rather complex piece of machinery is described to some extent in the
   // design document for legacy multicol:
-  // https://www.chromium.org/developers/design-documents/multi-column-layout
+  // https://www.monyhar.org/developers/design-documents/multi-column-layout
 
   NGBoxStrut border_scrollbar_padding = ComputeBorders(space, *this) +
                                         ComputeScrollbars(space, *this) +

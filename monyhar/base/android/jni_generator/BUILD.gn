@@ -9,15 +9,15 @@ _registration_header = "$target_gen_dir/sample_jni_registration.h"
 
 generate_jni("jni_sample_header") {
   sources = [
-    "java/src/org/chromium/example/jni_generator/SampleForAnnotationProcessor.java",
-    "java/src/org/chromium/example/jni_generator/SampleForTests.java",
+    "java/src/org/monyhar/example/jni_generator/SampleForAnnotationProcessor.java",
+    "java/src/org/monyhar/example/jni_generator/SampleForTests.java",
   ]
 }
 
 android_library("jni_sample_java") {
   sources = [
-    "java/src/org/chromium/example/jni_generator/SampleForAnnotationProcessor.java",
-    "java/src/org/chromium/example/jni_generator/SampleForTests.java",
+    "java/src/org/monyhar/example/jni_generator/SampleForAnnotationProcessor.java",
+    "java/src/org/monyhar/example/jni_generator/SampleForTests.java",
   ]
 
   deps = [ "//base:base_java" ]
@@ -26,7 +26,7 @@ android_library("jni_sample_java") {
 }
 
 android_library("jni_annotation_sample_java") {
-  sources = [ "java/src/org/chromium/example/jni_generator/SampleForAnnotationProcessor.java" ]
+  sources = [ "java/src/org/monyhar/example/jni_generator/SampleForAnnotationProcessor.java" ]
 
   deps = [ "//base:base_java" ]
 
@@ -78,15 +78,15 @@ group("jni_generator_tests") {
 
 java_annotation_processor("jni_processor") {
   sources = [
-    "java/src/org/chromium/jni_generator/JniProcessor.java",
+    "java/src/org/monyhar/jni_generator/JniProcessor.java",
 
     # Avoids a circular dependency with base:base_java. This is okay because
     # no target should ever expect to package an annotation processor.
-    "//base/android/java/src/org/chromium/base/annotations/CheckDiscard.java",
-    "//base/android/java/src/org/chromium/base/annotations/MainDex.java",
+    "//base/android/java/src/org/monyhar/base/annotations/CheckDiscard.java",
+    "//base/android/java/src/org/monyhar/base/annotations/MainDex.java",
   ]
 
-  main_class = "org.chromium.jni_generator.JniProcessor"
+  main_class = "org.monyhar.jni_generator.JniProcessor"
 
   annotation_processor_deps =
       [ "//third_party/android_deps:auto_service_processor" ]

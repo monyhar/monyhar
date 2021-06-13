@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices;
+package org.monyhar.chrome.browser.browserservices;
 
 import android.content.ComponentName;
 import android.net.Uri;
@@ -19,14 +19,14 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.task.PostTask;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.chrome.browser.ChromeApplicationImpl;
-import org.chromium.chrome.browser.dependency_injection.ChromeAppComponent;
-import org.chromium.components.embedder_support.util.Origin;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.chrome.browser.ChromeApplicationImpl;
+import org.monyhar.chrome.browser.dependency_injection.ChromeAppComponent;
+import org.monyhar.components.embedder_support.util.Origin;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 import java.util.concurrent.TimeoutException;
 
@@ -49,7 +49,7 @@ public class TrustedWebActivityClientLocationDelegationTest {
     private static final Uri SCOPE = Uri.parse("https://www.example.com/notifications");
     private static final Origin ORIGIN = Origin.create(SCOPE);
 
-    private static final String TEST_SUPPORT_PACKAGE = "org.chromium.chrome.tests.support";
+    private static final String TEST_SUPPORT_PACKAGE = "org.monyhar.chrome.tests.support";
 
     private static final String EXTRA_NEW_LOCATION_AVAILABLE_CALLBACK = "onNewLocationAvailable";
     private static final String EXTRA_NEW_LOCATION_ERROR_CALLBACK = "onNewLocationError";

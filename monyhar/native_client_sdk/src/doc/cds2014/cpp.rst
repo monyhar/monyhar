@@ -139,7 +139,7 @@ and run a NaCl application that uses PPAPI.
 2D graphics is fun, but now you're ready to check out the wealth of
 other
 `PPAPI interfaces available
-<https://src.chromium.org/viewvc/chrome/trunk/src/ppapi/cpp/>`_.
+<https://src.monyhar.org/viewvc/chrome/trunk/src/ppapi/cpp/>`_.
 
 While our in-browser environment is rapidly evolving
 to become a complete development solution,

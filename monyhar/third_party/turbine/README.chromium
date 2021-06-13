@@ -15,12 +15,12 @@ it in GN, so we are using a prebuilt jar encapsulating all of its dependencies.
 
 Update Instructions:
 * Find the latest instance from:
-  https://chrome-infra-packages.appspot.com/p/chromium/third_party/turbine/+/
+  https://chrome-infra-packages.appspot.com/p/monyhar/third_party/turbine/+/
   * These instances are uploaded by the build bot:
-    https://ci.chromium.org/p/chromium/builders/ci/3pp-linux-amd64-packager
+    https://ci.monyhar.org/p/monyhar/builders/ci/3pp-linux-amd64-packager
     * The bot autoruns every 6 hours. Ping a trooper or a clank build core dev
       to trigger it if you need it sooner:
-      https://luci-scheduler.appspot.com/jobs/chromium/3pp-linux-amd64-packager
+      https://luci-scheduler.appspot.com/jobs/monyhar/3pp-linux-amd64-packager
 * Copy this instance ID to the turbine entry in //DEPS.
 * Update this file with the new version string for that instance and submit.
   * We mostly care about the string after @ and before .crX as it's the revision

@@ -8,12 +8,12 @@ import logging
 from urllib2 import HTTPError
 
 from blinkpy.common.net.network_transaction import NetworkTimeout
-from blinkpy.w3c.chromium_commit import ChromiumCommit
-from blinkpy.w3c.chromium_finder import absolute_chromium_dir
+from blinkpy.w3c.monyhar_commit import ChromiumCommit
+from blinkpy.w3c.monyhar_finder import absolute_monyhar_dir
 from blinkpy.w3c.common import CHROMIUM_WPT_DIR, is_file_exportable
 
 _log = logging.getLogger(__name__)
-URL_BASE = 'https://chromium-review.googlesource.com'
+URL_BASE = 'https://monyhar-review.googlesource.com'
 # https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html#query-options
 QUERY_OPTIONS = 'o=CURRENT_FILES&o=CURRENT_REVISION&o=COMMIT_FOOTERS&o=DETAILED_ACCOUNTS'
 
@@ -21,7 +21,7 @@ QUERY_OPTIONS = 'o=CURRENT_FILES&o=CURRENT_REVISION&o=COMMIT_FOOTERS&o=DETAILED_
 class GerritAPI(object):
     """A utility class for the Chromium code review API.
 
-    Wraps the API for Chromium's Gerrit instance at chromium-review.googlesource.com.
+    Wraps the API for Chromium's Gerrit instance at monyhar-review.googlesource.com.
     """
 
     def __init__(self, host, user, token):
@@ -67,7 +67,7 @@ class GerritAPI(object):
 
     def query_cl(self, change_id, query_options=QUERY_OPTIONS):
         """Queries a commit information from Gerrit."""
-        path = '/changes/chromium%2Fsrc~main~{}?{}'.format(
+        path = '/changes/monyhar%2Fsrc~main~{}?{}'.format(
             change_id, query_options)
         try:
             cl_data = self.get(path, return_none_on_404=True)
@@ -81,7 +81,7 @@ class GerritAPI(object):
         return cl
 
     def query_exportable_open_cls(self, limit=500):
-        path = ('/changes/?q=project:\"chromium/src\"+branch:main+is:open+'
+        path = ('/changes/?q=project:\"monyhar/src\"+branch:main+is:open+'
                 '-is:wip&{}&n={}').format(QUERY_OPTIONS, limit)
         # The underlying host.web.get_binary() automatically retries until it
         # times out, at which point NetworkTimeout is raised.
@@ -163,7 +163,7 @@ class GerritCL(object):
                     self.change_id, e.code))
 
     def is_exportable(self):
-        # TODO(robertma): Consolidate with the related part in chromium_exportable_commits.py.
+        # TODO(robertma): Consolidate with the related part in monyhar_exportable_commits.py.
 
         try:
             files = self.current_revision['files'].keys()
@@ -208,7 +208,7 @@ class GerritCL(object):
         Returns:
             A ChromiumCommit object (the fetched commit).
         """
-        git = host.git(absolute_chromium_dir(host))
+        git = host.git(absolute_monyhar_dir(host))
         url = self.current_revision['fetch']['http']['url']
         ref = self.current_revision['fetch']['http']['ref']
         git.run(['fetch', url, ref])

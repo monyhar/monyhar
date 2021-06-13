@@ -1077,7 +1077,7 @@ ScriptPromise MediaCapabilities::GetEmeSupport(
   DCHECK(execution_context);
 
   // See context here:
-  // https://sites.google.com/a/chromium.org/dev/Home/chromium-security/deprecating-permissions-in-cross-origin-iframes
+  // https://sites.google.com/a/monyhar.org/dev/Home/monyhar-security/deprecating-permissions-in-cross-origin-iframes
   if (!execution_context->IsFeatureEnabled(
           mojom::blink::PermissionsPolicyFeature::kEncryptedMedia,
           ReportOptions::kReportOnFailure)) {

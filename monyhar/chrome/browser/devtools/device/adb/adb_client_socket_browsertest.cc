@@ -77,9 +77,9 @@ class AdbClientSocketTest : public InProcessBrowserTest,
         FindBrowserByDisplayName(browsers, "Chrome Beta");
     ASSERT_TRUE(chrome_beta.get());
 
-    scoped_refptr<DevToolsAndroidBridge::RemoteBrowser> chromium =
+    scoped_refptr<DevToolsAndroidBridge::RemoteBrowser> monyhar =
         FindBrowserByDisplayName(browsers, "Chromium");
-    ASSERT_FALSE(chromium.get());
+    ASSERT_FALSE(monyhar.get());
 
     scoped_refptr<DevToolsAndroidBridge::RemoteBrowser> webview =
         FindBrowserByDisplayName(browsers, "WebView in com.sample.feed");
@@ -132,7 +132,7 @@ class AdbClientSocketTest : public InProcessBrowserTest,
     ASSERT_NE(0U, webview_target_0->GetDescription().size());
     ASSERT_NE(0U, webview_target_1->GetDescription().size());
 
-    ASSERT_EQ(GURL("http://www.chromium.org/"),
+    ASSERT_EQ(GURL("http://www.monyhar.org/"),
                    chrome_target->GetURL());
     ASSERT_EQ("The Chromium Projects",
               chrome_target->GetTitle());

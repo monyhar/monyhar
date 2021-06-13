@@ -35,7 +35,7 @@ class _DummyBenchmark(perf_benchmark.PerfBenchmark):
 
 
 @benchmark.Info(
-    emails=['johnchen@chromium.org', 'wenbinzhang@google.com'],
+    emails=['johnchen@monyhar.org', 'wenbinzhang@google.com'],
     component='Test>Telemetry')
 class DummyBenchmarkOne(_DummyBenchmark):
   """A low noise benchmark with mean=100 & std=1."""
@@ -49,7 +49,7 @@ class DummyBenchmarkOne(_DummyBenchmark):
 
 
 @benchmark.Info(
-    emails=['johnchen@chromium.org', 'wenbinzhang@google.com'],
+    emails=['johnchen@monyhar.org', 'wenbinzhang@google.com'],
     component='Test>Telemetry')
 class DummyBenchmarkTwo(_DummyBenchmark):
   """A noisy benchmark with mean=50 & std=20."""

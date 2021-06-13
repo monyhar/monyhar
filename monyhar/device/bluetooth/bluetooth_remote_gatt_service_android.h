@@ -22,7 +22,7 @@ class BluetoothAdapterAndroid;
 class BluetoothDeviceAndroid;
 
 // BluetoothRemoteGattServiceAndroid along with its owned Java class
-// org.chromium.device.bluetooth.ChromeBluetoothRemoteGattService implement
+// org.monyhar.device.bluetooth.ChromeBluetoothRemoteGattService implement
 // BluetoothRemoteGattService.
 class DEVICE_BLUETOOTH_EXPORT BluetoothRemoteGattServiceAndroid
     : public device::BluetoothRemoteGattService {
@@ -93,7 +93,7 @@ class DEVICE_BLUETOOTH_EXPORT BluetoothRemoteGattServiceAndroid
   // Populates |characteristics_| from Java objects if necessary.
   void EnsureCharacteristicsCreated() const;
 
-  // Java object org.chromium.device.bluetooth.ChromeBluetoothRemoteGattService.
+  // Java object org.monyhar.device.bluetooth.ChromeBluetoothRemoteGattService.
   base::android::ScopedJavaGlobalRef<jobject> j_service_;
 
   // The adapter associated with this service. It's ok to store a raw pointer

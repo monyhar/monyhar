@@ -14,7 +14,7 @@ The install engine is a wrapper around Play Core's
 that performs extra setup such as
 [SplitCompat](https://developer.android.com/guide/app-bundle/playcore#access_downloaded_modules),
 collects metrics and provides
-[fake install](android/java/src/org/chromium/components/module_installer/engine/FakeEngine.java).
+[fake install](android/java/src/org/monyhar/components/module_installer/engine/FakeEngine.java).
 You can install a module by name with the following code snippet:
 
 ```java
@@ -35,16 +35,16 @@ on first module access and determines whether a module is installed. The module
 builder uses the install engine in the back. It primarily provides the following
 building blocks:
 
-* [`@ModuleInterface`](android/java/src/org/chromium/components/module_installer/builder/ModuleInterface.java)
+* [`@ModuleInterface`](android/java/src/org/monyhar/components/module_installer/builder/ModuleInterface.java)
   to annotate the entry point of your module. Using this with the
   [`module_interface_processor`](android/BUILD.gn) will create a module class
   such as `FooModule` that lets you install and load a module. See
-  [`Module`](android/java/src/org/chromium/components/module_installer/builder/Module.java)
+  [`Module`](android/java/src/org/monyhar/components/module_installer/builder/Module.java)
   for its interface.
 
-* [`Module`](android/java/src/org/chromium/components/module_installer/builder/Module.java)
+* [`Module`](android/java/src/org/monyhar/components/module_installer/builder/Module.java)
   needs to be able to retrieve a
-  [`ModuleDescriptor`](android/java/src/org/chromium/components/module_installer/builder/ModuleDescriptor.java)
+  [`ModuleDescriptor`](android/java/src/org/monyhar/components/module_installer/builder/ModuleDescriptor.java)
   implementation for each module via reflection. You can create such an
   implementation with the [`module_desc_java`](android/module_desc_java.gni)
   template.

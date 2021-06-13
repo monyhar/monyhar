@@ -211,7 +211,7 @@ bool FeaturePromoControllerViews::MaybeShowPromoImpl(
 
   // Temporarily turn off IPH in incognito as a concern was raised that
   // the IPH backend ignores incognito and writes to the parent profile.
-  // See https://bugs.chromium.org/p/chromium/issues/detail?id=1128728#c30
+  // See https://bugs.monyhar.org/p/monyhar/issues/detail?id=1128728#c30
   if (browser_view_->GetProfile()->IsIncognitoProfile())
     return false;
 

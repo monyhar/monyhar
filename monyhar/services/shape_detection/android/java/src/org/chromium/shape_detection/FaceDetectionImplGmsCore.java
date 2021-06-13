@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.shape_detection;
+package org.monyhar.shape_detection;
 
 import android.graphics.PointF;
 import android.util.SparseArray;
@@ -12,14 +12,14 @@ import com.google.android.gms.vision.face.Face;
 import com.google.android.gms.vision.face.FaceDetector;
 import com.google.android.gms.vision.face.Landmark;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.gfx.mojom.RectF;
-import org.chromium.mojo.system.MojoException;
-import org.chromium.shape_detection.mojom.FaceDetection;
-import org.chromium.shape_detection.mojom.FaceDetectionResult;
-import org.chromium.shape_detection.mojom.FaceDetectorOptions;
-import org.chromium.shape_detection.mojom.LandmarkType;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.gfx.mojom.RectF;
+import org.monyhar.mojo.system.MojoException;
+import org.monyhar.shape_detection.mojom.FaceDetection;
+import org.monyhar.shape_detection.mojom.FaceDetectionResult;
+import org.monyhar.shape_detection.mojom.FaceDetectorOptions;
+import org.monyhar.shape_detection.mojom.LandmarkType;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,7 +59,7 @@ public class FaceDetectionImplGmsCore implements FaceDetection {
     }
 
     @Override
-    public void detect(org.chromium.skia.mojom.BitmapN32 bitmapData, DetectResponse callback) {
+    public void detect(org.monyhar.skia.mojom.BitmapN32 bitmapData, DetectResponse callback) {
         // The vision library will be downloaded the first time the API is used
         // on the device; this happens "fast", but it might have not completed,
         // bail in this case.
@@ -97,8 +97,8 @@ public class FaceDetectionImplGmsCore implements FaceDetection {
             faceArray[i].boundingBox.height = face.getHeight();
 
             final List<Landmark> landmarks = face.getLandmarks();
-            ArrayList<org.chromium.shape_detection.mojom.Landmark> mojoLandmarks =
-                    new ArrayList<org.chromium.shape_detection.mojom.Landmark>(landmarks.size());
+            ArrayList<org.monyhar.shape_detection.mojom.Landmark> mojoLandmarks =
+                    new ArrayList<org.monyhar.shape_detection.mojom.Landmark>(landmarks.size());
 
             for (int j = 0; j < landmarks.size(); j++) {
                 final Landmark landmark = landmarks.get(j);
@@ -109,10 +109,10 @@ public class FaceDetectionImplGmsCore implements FaceDetection {
                     continue;
                 }
 
-                org.chromium.shape_detection.mojom.Landmark mojoLandmark =
-                        new org.chromium.shape_detection.mojom.Landmark();
-                mojoLandmark.locations = new org.chromium.gfx.mojom.PointF[1];
-                mojoLandmark.locations[0] = new org.chromium.gfx.mojom.PointF();
+                org.monyhar.shape_detection.mojom.Landmark mojoLandmark =
+                        new org.monyhar.shape_detection.mojom.Landmark();
+                mojoLandmark.locations = new org.monyhar.gfx.mojom.PointF[1];
+                mojoLandmark.locations[0] = new org.monyhar.gfx.mojom.PointF();
                 mojoLandmark.locations[0].x = landmark.getPosition().x;
                 mojoLandmark.locations[0].y = landmark.getPosition().y;
 
@@ -129,7 +129,7 @@ public class FaceDetectionImplGmsCore implements FaceDetection {
                 mojoLandmarks.add(mojoLandmark);
             }
             faceArray[i].landmarks = mojoLandmarks.toArray(
-                    new org.chromium.shape_detection.mojom.Landmark[mojoLandmarks.size()]);
+                    new org.monyhar.shape_detection.mojom.Landmark[mojoLandmarks.size()]);
         }
         callback.call(faceArray);
     }

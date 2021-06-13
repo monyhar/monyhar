@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.util.browser;
+package org.monyhar.chrome.test.util.browser;
 
-import org.chromium.components.location.LocationUtils;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.components.location.LocationUtils;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /**
  * Methods for testing location-related features.

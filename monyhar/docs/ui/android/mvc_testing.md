@@ -40,8 +40,8 @@ Ideally, the Mediator should be testable using Robolectric on the host machine (
 
 ### Good examples of Mediator/Test pairs:
 
- * [TabListMediator](/chrome/android/features/tab_ui/java/src/org/chromium/chrome/browser/tasks/tab_management/TabListMediator.java) / [TabListMediatorUnitTest](/chrome/android/features/tab_ui/junit/src/org/chromium/chrome/browser/tasks/tab_management/TabListMediatorUnitTest.java)
- * [TabSwitcherMediator](/chrome/android/features/tab_ui/java/src/org/chromium/chrome/browser/tasks/tab_management/TabSwitcherMediator.java) / [TabSwitcherMediatorUnitTest](/chrome/android/features/tab_ui/junit/src/org/chromium/chrome/browser/tasks/tab_management/TabSwitcherMediatorUnitTest.java)
+ * [TabListMediator](/chrome/android/features/tab_ui/java/src/org/monyhar/chrome/browser/tasks/tab_management/TabListMediator.java) / [TabListMediatorUnitTest](/chrome/android/features/tab_ui/junit/src/org/monyhar/chrome/browser/tasks/tab_management/TabListMediatorUnitTest.java)
+ * [TabSwitcherMediator](/chrome/android/features/tab_ui/java/src/org/monyhar/chrome/browser/tasks/tab_management/TabSwitcherMediator.java) / [TabSwitcherMediatorUnitTest](/chrome/android/features/tab_ui/junit/src/org/monyhar/chrome/browser/tasks/tab_management/TabSwitcherMediatorUnitTest.java)
 
 
 ## Testing your View
@@ -50,13 +50,13 @@ The View/ViewBinder should be tested as an independent unit.
 
 ### Best practices for testability for your View:
 
- * Tests for UI should be based on the [DummyUiActivity](/ui/android/javatests/src/org/chromium/ui/test/util/DummyUiActivity.java).  This activity does not have any dependencies on the Chrome browser and allows you to test your UI in isolation.  This ensures you are not competing against other Chrome tasks and can write a test that is much faster and less flaky than legacy UI instrumentation tests.
- * When adding tests for your UI component, add a [RenderTest](/ui/android/javatests/src/org/chromium/ui/test/util/RENDER_TESTS.md) to ensure the UI is consistent from release to release unless you explicitly changed it.
+ * Tests for UI should be based on the [DummyUiActivity](/ui/android/javatests/src/org/monyhar/ui/test/util/DummyUiActivity.java).  This activity does not have any dependencies on the Chrome browser and allows you to test your UI in isolation.  This ensures you are not competing against other Chrome tasks and can write a test that is much faster and less flaky than legacy UI instrumentation tests.
+ * When adding tests for your UI component, add a [RenderTest](/ui/android/javatests/src/org/monyhar/ui/test/util/RENDER_TESTS.md) to ensure the UI is consistent from release to release unless you explicitly changed it.
 
 ### Useful helpers / Links
 
- * To test a single View/ViewBinder normally used in a RecyclerView, this PropertyModelChangeProcessor.ViewBinder implementation, [TestRecyclerViewSimpleViewBinder.java](/chrome/android/features/tab_ui/javatests/src/org/chromium/chrome/browser/tasks/tab_management/TestRecyclerViewSimpleViewBinder.java), allows to test individual UI element without needing to build a full RecyclerView.
+ * To test a single View/ViewBinder normally used in a RecyclerView, this PropertyModelChangeProcessor.ViewBinder implementation, [TestRecyclerViewSimpleViewBinder.java](/chrome/android/features/tab_ui/javatests/src/org/monyhar/chrome/browser/tasks/tab_management/TestRecyclerViewSimpleViewBinder.java), allows to test individual UI element without needing to build a full RecyclerView.
 
 ### Good examples of View/Test pairs:
- * [TabGridViewBinder](/chrome/android/features/tab_ui/java/src/org/chromium/chrome/browser/tasks/tab_management/TabGridViewBinder.java), [TabStripViewBinder](/chrome/android/features/tab_ui/java/src/org/chromium/chrome/browser/tasks/tab_management/TabStripViewBinder.java) / [TabListViewHolderTest](/chrome/android/features/tab_ui/javatests/src/org/chromium/chrome/browser/tasks/tab_management/TabListViewHolderTest.java)
+ * [TabGridViewBinder](/chrome/android/features/tab_ui/java/src/org/monyhar/chrome/browser/tasks/tab_management/TabGridViewBinder.java), [TabStripViewBinder](/chrome/android/features/tab_ui/java/src/org/monyhar/chrome/browser/tasks/tab_management/TabStripViewBinder.java) / [TabListViewHolderTest](/chrome/android/features/tab_ui/javatests/src/org/monyhar/chrome/browser/tasks/tab_management/TabListViewHolderTest.java)
 

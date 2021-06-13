@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.paintpreview.player.frame;
+package org.monyhar.components.paintpreview.player.frame;
 
 import android.content.Context;
 import android.graphics.Point;
@@ -14,13 +14,13 @@ import android.widget.OverScroller;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.UnguessableToken;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.components.paintpreview.player.OverscrollHandler;
-import org.chromium.components.paintpreview.player.PlayerCompositorDelegate;
-import org.chromium.components.paintpreview.player.PlayerGestureListener;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.base.UnguessableToken;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.components.paintpreview.player.OverscrollHandler;
+import org.monyhar.components.paintpreview.player.PlayerCompositorDelegate;
+import org.monyhar.components.paintpreview.player.PlayerGestureListener;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
 
 import java.util.ArrayList;
 import java.util.List;

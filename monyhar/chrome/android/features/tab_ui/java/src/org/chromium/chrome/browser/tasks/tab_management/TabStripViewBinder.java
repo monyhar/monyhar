@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
-import static org.chromium.chrome.browser.tasks.tab_management.TabListFaviconProvider.FAVICON_BACKGROUND_DEFAULT_ALPHA;
-import static org.chromium.chrome.browser.tasks.tab_management.TabListFaviconProvider.FAVICON_BACKGROUND_SELECTED_ALPHA;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabListFaviconProvider.FAVICON_BACKGROUND_DEFAULT_ALPHA;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabListFaviconProvider.FAVICON_BACKGROUND_SELECTED_ALPHA;
 
 import android.graphics.drawable.Drawable;
 import android.view.ViewGroup;
@@ -16,13 +16,13 @@ import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.core.view.ViewCompat;
 
-import org.chromium.chrome.tab_ui.R;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.widget.ViewLookupCachingFrameLayout;
+import org.monyhar.chrome.tab_ui.R;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.widget.ViewLookupCachingFrameLayout;
 
 /**
- * {@link org.chromium.ui.modelutil.SimpleRecyclerViewMcp.ViewBinder} for tab strip.
+ * {@link org.monyhar.ui.modelutil.SimpleRecyclerViewMcp.ViewBinder} for tab strip.
  */
 class TabStripViewBinder {
     /**

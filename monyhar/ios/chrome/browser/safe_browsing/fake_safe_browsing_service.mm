@@ -17,7 +17,7 @@
 
 namespace {
 // A SafeBrowsingUrlCheckerImpl that treats all URLs as safe, unless they have
-// host safe.browsing.unsafe.chromium.test.
+// host safe.browsing.unsafe.monyhar.test.
 class FakeSafeBrowsingUrlCheckerImpl
     : public safe_browsing::SafeBrowsingUrlCheckerImpl {
  public:
@@ -54,7 +54,7 @@ class FakeSafeBrowsingUrlCheckerImpl
 
 // static
 const std::string FakeSafeBrowsingService::kUnsafeHost =
-    "safe.browsing.unsafe.chromium.test";
+    "safe.browsing.unsafe.monyhar.test";
 
 FakeSafeBrowsingService::FakeSafeBrowsingService() = default;
 

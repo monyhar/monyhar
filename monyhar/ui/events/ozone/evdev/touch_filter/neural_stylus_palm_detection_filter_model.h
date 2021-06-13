@@ -14,7 +14,7 @@
 namespace ui {
 
 struct COMPONENT_EXPORT(EVDEV) NeuralStylusPalmDetectionFilterModelConfig {
-  // Explicit constructor to make chromium style happy.
+  // Explicit constructor to make monyhar style happy.
   NeuralStylusPalmDetectionFilterModelConfig();
   NeuralStylusPalmDetectionFilterModelConfig(
       const NeuralStylusPalmDetectionFilterModelConfig& other);

@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml
-package: chromium/third_party/espresso
+package: monyhar/third_party/espresso
 description: espresso Java library
 data:
   - file: lib/espresso-contrib-release-no-dep.jar

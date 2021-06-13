@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Renderer histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -26,7 +26,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Expired in M86.
   </obsolete>
-  <owner>hartmanng@chromium.org</owner>
+  <owner>hartmanng@monyhar.org</owner>
   <summary>
     Total count of the number of RenderLayers which are scrollable areas, need
     to be promoted to stacking containers, and will use composited scrolling.
@@ -39,7 +39,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Renderer.DelegatedInkTrail.LatencyImprovement.{Renderer}.{Prediction}"
     units="ms" expires_after="M95">
-  <owner>jonross@chromium.org</owner>
+  <owner>jonross@monyhar.org</owner>
   <owner>mabian@microsoft.com</owner>
   <summary>
     The latency improvement provided by the delegated ink trail API, both with
@@ -61,7 +61,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Renderer.DelegatedInkTrail.LatencyImprovementWithPrediction.Experiment{Number}"
     units="ms" expires_after="M95">
-  <owner>jonross@chromium.org</owner>
+  <owner>jonross@monyhar.org</owner>
   <owner>mabian@microsoft.com</owner>
   <summary>
     The latency improvement provided by predicting extra delegated ink points
@@ -82,7 +82,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Renderer.DelegatedInkTrail.Prediction.WrongDirection"
     enum="BooleanDirection" expires_after="M95">
-  <owner>jonross@chromium.org</owner>
+  <owner>jonross@monyhar.org</owner>
   <owner>mabian@microsoft.com</owner>
   <summary>
     Boolean that indicates whether the prediction is in the same direction as
@@ -93,7 +93,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Renderer.DelegatedInkTrail.Prediction.{Direction}Prediction"
     units="pixels" expires_after="M95">
-  <owner>jonross@chromium.org</owner>
+  <owner>jonross@monyhar.org</owner>
   <owner>mabian@microsoft.com</owner>
   <summary>
     {Direction}shoot distance in pixels between a predicted point and the
@@ -107,7 +107,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Renderer.DelegatedInkTrail.Prediction.{Type}Jitter"
     units="pixels" expires_after="M95">
-  <owner>jonross@chromium.org</owner>
+  <owner>jonross@monyhar.org</owner>
   <owner>mabian@microsoft.com</owner>
   <summary>
     Euclidean distance in pixels between two successive variations of delegated
@@ -124,7 +124,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Renderer.DelegatedInkTrail.PredictionExperiment{Number}.WrongDirection"
     enum="BooleanDirection" expires_after="M95">
-  <owner>jonross@chromium.org</owner>
+  <owner>jonross@monyhar.org</owner>
   <owner>mabian@microsoft.com</owner>
   <summary>
     Whether the prediction is in the same direction as the real trajectory at
@@ -144,7 +144,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Renderer.DelegatedInkTrail.PredictionExperiment{Number}.{Direction}Prediction"
     units="pixels" expires_after="M95">
-  <owner>jonross@chromium.org</owner>
+  <owner>jonross@monyhar.org</owner>
   <owner>mabian@microsoft.com</owner>
   <summary>
     {Direction}-shoot distance in pixels between a predicted point and the
@@ -168,7 +168,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Renderer.DelegatedInkTrail.PredictionExperiment{Number}.{Type}Jitter"
     units="pixels" expires_after="M95">
-  <owner>jonross@chromium.org</owner>
+  <owner>jonross@monyhar.org</owner>
   <owner>mabian@microsoft.com</owner>
   <summary>
     Euclidean distance in pixels between two successive variations of delegated
@@ -195,7 +195,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Expired in M85, removed in M88.
   </obsolete>
-  <owner>avi@chromium.org</owner>
+  <owner>avi@monyhar.org</owner>
   <summary>
     The length of time render processes are hung, in milliseconds. Note that
     because technically speaking render processes are &quot;hung&quot; from the
@@ -208,7 +208,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Renderer.Hung.MobileInfoBar.UserEvent"
     enum="MobileHungRendererInfoBarEvent" expires_after="M85">
-  <owner>dfalcantara@chromium.org</owner>
+  <owner>dfalcantara@monyhar.org</owner>
   <summary>
     Android: Records the terminal event associated with a hung renderer infobar.
     This includes both the explicit user actions as well as implicit dismissals,
@@ -219,7 +219,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Renderer.OnReceiveResponseToOnStartLoadingResponseBody"
     units="ms" expires_after="M85">
-  <owner>falken@chromium.org</owner>
+  <owner>falken@monyhar.org</owner>
   <owner>chrome-loading@google.com</owner>
   <summary>
     Time between the two messages OnReceiveResponse and
@@ -231,9 +231,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Renderer.PaintPreview.Capture.MainFrameBlinkCaptureDuration"
     units="ms" expires_after="2021-10-31">
-  <owner>ckitagawa@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>fredmello@chromium.org</owner>
+  <owner>ckitagawa@monyhar.org</owner>
+  <owner>mahmoudi@monyhar.org</owner>
+  <owner>fredmello@monyhar.org</owner>
   <summary>
     Records the number of milliseconds spent blocking Blink's main thread while
     capturing the main frame.
@@ -242,9 +242,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Renderer.PaintPreview.Capture.MainFrameSuccess"
     enum="BooleanSuccess" expires_after="2021-08-29">
-  <owner>ckitagawa@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>fredmello@chromium.org</owner>
+  <owner>ckitagawa@monyhar.org</owner>
+  <owner>mahmoudi@monyhar.org</owner>
+  <owner>fredmello@monyhar.org</owner>
   <summary>
     Records a boolean indicating whether a capture for the main frame succeeded.
   </summary>
@@ -252,9 +252,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Renderer.PaintPreview.Capture.SubframeBlinkCaptureDuration"
     units="ms" expires_after="2021-10-31">
-  <owner>ckitagawa@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>fredmello@chromium.org</owner>
+  <owner>ckitagawa@monyhar.org</owner>
+  <owner>mahmoudi@monyhar.org</owner>
+  <owner>fredmello@monyhar.org</owner>
   <summary>
     Records the number of milliseconds spent blocking Blink's main thread while
     capturing a subframe.
@@ -263,9 +263,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Renderer.PaintPreview.Capture.SubframeSuccess"
     enum="BooleanSuccess" expires_after="2021-06-27">
-  <owner>ckitagawa@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>fredmello@chromium.org</owner>
+  <owner>ckitagawa@monyhar.org</owner>
+  <owner>mahmoudi@monyhar.org</owner>
+  <owner>fredmello@monyhar.org</owner>
   <summary>
     Records a boolean indicating whether a capture for a subframe succeeded.
   </summary>
@@ -273,8 +273,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Renderer.ProcessLifetime.{Resolution}" units="ms"
     expires_after="2021-08-29">
-  <owner>olivierli@chromium.org</owner>
-  <owner>catan-team@chromium.org</owner>
+  <owner>olivierli@monyhar.org</owner>
+  <owner>catan-team@monyhar.org</owner>
   <summary>
     The total time for which a renderer process was live. Recorded when the
     browser identifies the process as having gone away.
@@ -287,8 +287,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Renderer.TotalCPUUse{Lifetime}" units="ms"
     expires_after="2022-05-06">
-  <owner>olivierli@chromium.org</owner>
-  <owner>catan-team@chromium.org</owner>
+  <owner>olivierli@monyhar.org</owner>
+  <owner>catan-team@monyhar.org</owner>
   <summary>
     Total CPU utilization of a renderer, read just before the process is about
     to go away. Total CPU time can exceed the total process lifetime. This is
@@ -307,7 +307,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Renderer.ViewportZoomBugCount" enum="BooleanHit"
     expires_after="M77">
-  <owner>kkhorimoto@chromium.org</owner>
+  <owner>kkhorimoto@monyhar.org</owner>
   <summary>
     [iOS] A boolean that is used to indicate that the WebKit rendering bug in
     http://crbug.com/583231 has occurred. This occurs when a page with no
@@ -317,8 +317,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="RendererScheduler.IPC.FrameVisibility" enum="Boolean"
     expires_after="M85">
-  <owner>altimin@chromium.org</owner>
-  <owner>lpy@chromium.org</owner>
+  <owner>altimin@monyhar.org</owner>
+  <owner>lpy@monyhar.org</owner>
   <summary>
     This boolean keeps track the count of the visibility change of a frame.
     Recorded every time when the visibility of a frame is changed.
@@ -329,8 +329,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     units="ms" expires_after="2021-10-10">
 <!-- Name completed by histogram_suffixes name="RendererScheduler.QueueType" -->
 
-  <owner>kdillon@chromium.org</owner>
-  <owner>shaseley@chromium.org</owner>
+  <owner>kdillon@monyhar.org</owner>
+  <owner>shaseley@monyhar.org</owner>
   <summary>
     Tracks the queueing time of tasks on the main thread of the renderer broken
     down by queue type. Reported when the task is completed.
@@ -341,12 +341,12 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="RendererScheduler.RendererMainThreadLoad5" units="%"
     expires_after="M95">
-  <owner>altimin@chromium.org</owner>
+  <owner>altimin@monyhar.org</owner>
   <summary>
     Renderer main thread load (percentage of time spent in tasks), reported in
     one second chunks.
 
-    See http://bit.ly/chromium-renderer-main-thread-load-metric for details.
+    See http://bit.ly/monyhar-renderer-main-thread-load-metric for details.
 
     This metric is emitted when the renderer main thread task is completed or
     renderer is backgrounded or foregrounded, at most once per second per
@@ -356,8 +356,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="RendererScheduler.ResourceLoadingTaskCountPerNetPriority"
     enum="NetRequestPriority" expires_after="M77">
-  <owner>farahcharab@chromium.org</owner>
-  <owner>altimin@chromium.org</owner>
+  <owner>farahcharab@monyhar.org</owner>
+  <owner>altimin@monyhar.org</owner>
   <summary>
     Used to track the number of resource loading tasks split by net priority.
     Recorded each time the resource's request priority is changed.
@@ -366,8 +366,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="RendererScheduler.ResourceLoadingTaskCountPerPriority"
     enum="TaskQueuePriority" expires_after="M77">
-  <owner>farahcharab@chromium.org</owner>
-  <owner>altimin@chromium.org</owner>
+  <owner>farahcharab@monyhar.org</owner>
+  <owner>altimin@monyhar.org</owner>
   <summary>
     Used to track the number of resource loading tasks split by execution
     priority. Recorded each time a task is executed.
@@ -379,7 +379,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in M92.
   </obsolete>
-  <owner>altimin@chromium.org</owner>
+  <owner>altimin@monyhar.org</owner>
   <summary>
     The number of completed renderer tasks split per frame type. Used to monitor
     usage of each type of frame. Reported each time when task is completed.
@@ -391,7 +391,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="RendererScheduler.TaskCountPerFrameType.HasSafePoint"
     enum="RendererSchedulerFrameType2" expires_after="2021-04-01">
-  <owner>altimin@chromium.org</owner>
+  <owner>altimin@monyhar.org</owner>
   <owner>tasak@google.com</owner>
   <summary>
     The number of completed renderer tasks which have safepoints, split per
@@ -408,7 +408,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in M92.
   </obsolete>
-  <owner>altimin@chromium.org</owner>
+  <owner>altimin@monyhar.org</owner>
   <summary>
     The number of completed renderer tasks split per task queue type. Used to
     monitor usage of each type of task queue. Reported each time when task is
@@ -421,7 +421,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="RendererScheduler.TaskCPUDurationPerTaskType2.DedicatedWorker"
     enum="RendererSchedulerTaskType" expires_after="M85">
-  <owner>altimin@chromium.org</owner>
+  <owner>altimin@monyhar.org</owner>
   <summary>
     Total duration (reported in full seconds) of dedicated worker tasks (thread
     time) split by per thread type. Note that partial seconds are rounded
@@ -440,7 +440,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in M92.
   </obsolete>
-  <owner>altimin@chromium.org</owner>
+  <owner>altimin@monyhar.org</owner>
   <summary>
     Total cpu time (reported in full seconds) of renderer tasks split by per
     thread type. Note that partial seconds are rounded up/down so that they
@@ -461,7 +461,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="RendererScheduler.TaskDurationPerFrameOriginType2"
     enum="RendererSchedulerFrameOriginType" expires_after="M85">
-  <owner>altimin@chromium.org</owner>
+  <owner>altimin@monyhar.org</owner>
   <summary>
     Total cpu time (reported in full seconds) of renderer tasks split by per
     frame origin type (main frame vs same-origin frame vs cross-origin frame).
@@ -479,7 +479,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in M92.
   </obsolete>
-  <owner>altimin@chromium.org</owner>
+  <owner>altimin@monyhar.org</owner>
   <summary>
     Total duration (reported in full seconds) of renderer per-frame tasks split
     per frame type. Note that partial seconds are rounded up/down so that they
@@ -499,8 +499,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in M92.
   </obsolete>
-  <owner>altimin@chromium.org</owner>
-  <owner>scheduler-dev@chromium.org</owner>
+  <owner>altimin@monyhar.org</owner>
+  <owner>scheduler-dev@monyhar.org</owner>
   <summary>
     Total duration (reported in full seconds) of renderer tasks split per task
     queue type. Note that partial seconds are rounded up/down so that they
@@ -517,8 +517,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="RendererScheduler.TaskDurationPerTaskType2"
     enum="RendererSchedulerTaskType" expires_after="M95">
-  <owner>altimin@chromium.org</owner>
-  <owner>hajimehoshi@chromium.org</owner>
+  <owner>altimin@monyhar.org</owner>
+  <owner>hajimehoshi@monyhar.org</owner>
   <summary>
     Total duration (reported in full seconds) of renderer per-frame tasks split
     per task type. Note that partial seconds are rounded up/down so that they
@@ -535,7 +535,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="RendererScheduler.TaskDurationPerTaskType2.DedicatedWorker"
     enum="RendererSchedulerTaskType" expires_after="M77">
-  <owner>altimin@chromium.org</owner>
+  <owner>altimin@monyhar.org</owner>
   <summary>
     Total duration (repored in full seconds) of dedicated worker tasks (wall
     time) split by per thread type. Note that partial seconds are rounded
@@ -551,8 +551,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="RendererScheduler.TaskDurationPerThreadType2"
     enum="RendererSchedulerThreadType" expires_after="M85">
-  <owner>altimin@chromium.org</owner>
-  <owner>lpy@chromium.org</owner>
+  <owner>altimin@monyhar.org</owner>
+  <owner>lpy@monyhar.org</owner>
   <summary>
     Total duration (reported in full seconds) of renderer tasks split by per
     thread type. Note that partial seconds are rounded up/down so that they
@@ -572,8 +572,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in M92.
   </obsolete>
-  <owner>altimin@chromium.org</owner>
-  <owner>farahcharab@chromium.org</owner>
+  <owner>altimin@monyhar.org</owner>
+  <owner>farahcharab@monyhar.org</owner>
   <summary>
     Total duration (reported in full seconds) of renderer main thread tasks
     split by scheduler use case. Note that partial seconds are rounded up/down
@@ -590,7 +590,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="RendererScheduler.TasksWithSafepoints.SafepointCount"
     units="count" expires_after="2021-04-01">
   <owner>tasak@google.com</owner>
-  <owner>keishi@chromium.org</owner>
+  <owner>keishi@monyhar.org</owner>
   <summary>
     Number of safepoints (defined by cooperative scheduling manager) inside a
     single non-nested task executed on the main thread of a renderer process.
@@ -601,7 +601,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="RendererScheduler.TasksWithSafepoints.TaskSliceTime"
     units="ms" expires_after="2021-04-01">
   <owner>tasak@google.com</owner>
-  <owner>keishi@chromium.org</owner>
+  <owner>keishi@monyhar.org</owner>
   <summary>
     The duration of every task slices. The non-nested task executed in main
     thread of the renderer process scheduler is split into slices by the
@@ -617,7 +617,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="RendererScheduler.TasksWithSafepoints.TaskTime"
     units="microseconds" expires_after="2021-04-01">
   <owner>tasak@google.com</owner>
-  <owner>keishi@chromium.org</owner>
+  <owner>keishi@monyhar.org</owner>
   <summary>
     The duration of every non-nested task executed in main thread of the
     renderer process which has more than one safepoint. This is recorded when
@@ -630,8 +630,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="RendererScheduler.TaskTime2" units="microseconds"
     expires_after="never">
-  <owner>sunyunjia@chromium.org</owner>
-  <owner>altimin@chromium.org</owner>
+  <owner>sunyunjia@monyhar.org</owner>
+  <owner>altimin@monyhar.org</owner>
   <summary>
     The duration of every task queued in the _renderer_ scheduler to see the
     distribution of the task duration.
@@ -649,8 +649,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="RendererScheduler.UpdateForSameDocumentNavigationCount"
     enum="SinglePageAppNavigationType" expires_after="M85">
-  <owner>npm@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>npm@monyhar.org</owner>
+  <owner>speed-metrics-dev@monyhar.org</owner>
   <summary>
     The count of same-document-navigations split by whether it is the
     same-document backward/forward navigation, history API navigation, or other
@@ -660,7 +660,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="RendererScheduler.WebFramesPerScheduler" units="web frames"
     expires_after="M77">
-  <owner>altimin@chromium.org</owner>
+  <owner>altimin@monyhar.org</owner>
   <summary>
     Number of web frame schedulers per renderer scheduler. Recorded once per
     navigation.
@@ -669,7 +669,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="RendererScheduler.WebViewsPerScheduler" units="web views"
     expires_after="M77">
-  <owner>altimin@chromium.org</owner>
+  <owner>altimin@monyhar.org</owner>
   <summary>
     Number of web view schedulers per renderer scheduler. Recorded once per
     navigation.
@@ -677,7 +677,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="RendererSyncIPC.ElapsedTime" units="ms" expires_after="M85">
-  <owner>ppi@chromium.org</owner>
+  <owner>ppi@monyhar.org</owner>
   <summary>
     Roundtrip times for synchronous IPC calls from the renderer to browser.
   </summary>

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -26,23 +26,23 @@ import androidx.browser.customtabs.CustomTabsService.Relation;
 import androidx.browser.customtabs.CustomTabsSessionToken;
 import androidx.browser.customtabs.PostMessageServiceConnection;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.browserservices.BrowserServicesMetrics;
-import org.chromium.chrome.browser.browserservices.PostMessageHandler;
-import org.chromium.chrome.browser.browserservices.verification.OriginVerifier;
-import org.chromium.chrome.browser.browserservices.verification.OriginVerifier.OriginVerificationListener;
-import org.chromium.chrome.browser.browserservices.verification.OriginVerifierFactory;
-import org.chromium.chrome.browser.browserservices.verification.OriginVerifierFactoryImpl;
-import org.chromium.components.embedder_support.util.Origin;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.components.installedapp.InstalledAppProviderImpl;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.common.Referrer;
-import org.chromium.url.URI;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.browserservices.BrowserServicesMetrics;
+import org.monyhar.chrome.browser.browserservices.PostMessageHandler;
+import org.monyhar.chrome.browser.browserservices.verification.OriginVerifier;
+import org.monyhar.chrome.browser.browserservices.verification.OriginVerifier.OriginVerificationListener;
+import org.monyhar.chrome.browser.browserservices.verification.OriginVerifierFactory;
+import org.monyhar.chrome.browser.browserservices.verification.OriginVerifierFactoryImpl;
+import org.monyhar.components.embedder_support.util.Origin;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.components.installedapp.InstalledAppProviderImpl;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.common.Referrer;
+import org.monyhar.url.URI;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

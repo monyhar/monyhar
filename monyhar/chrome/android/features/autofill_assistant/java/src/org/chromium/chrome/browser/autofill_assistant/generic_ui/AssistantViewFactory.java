@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.generic_ui;
+package org.monyhar.chrome.browser.autofill_assistant.generic_ui;
 
-import static org.chromium.chrome.browser.autofill_assistant.AssistantAccessibilityUtils.setAccessibility;
+import static org.monyhar.chrome.browser.autofill_assistant.AssistantAccessibilityUtils.setAccessibility;
 
 import android.content.Context;
 import android.text.Editable;
@@ -16,16 +16,16 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.chrome.browser.autofill.prefeditor.EditorFieldModel;
-import org.chromium.chrome.browser.autofill.prefeditor.EditorTextField;
-import org.chromium.chrome.browser.autofill_assistant.AssistantChevronStyle;
-import org.chromium.chrome.browser.autofill_assistant.LayoutUtils;
-import org.chromium.chrome.browser.autofill_assistant.user_data.AssistantVerticalExpander;
-import org.chromium.chrome.browser.autofill_assistant.user_data.AssistantVerticalExpanderAccordion;
-import org.chromium.ui.widget.ChromeImageView;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.chrome.browser.autofill.prefeditor.EditorFieldModel;
+import org.monyhar.chrome.browser.autofill.prefeditor.EditorTextField;
+import org.monyhar.chrome.browser.autofill_assistant.AssistantChevronStyle;
+import org.monyhar.chrome.browser.autofill_assistant.LayoutUtils;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantVerticalExpander;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantVerticalExpanderAccordion;
+import org.monyhar.ui.widget.ChromeImageView;
 
 /** Generic view factory. */
 @JNINamespace("autofill_assistant")
@@ -117,7 +117,7 @@ public class AssistantViewFactory {
     @CalledByNative
     public static View createDividerView(Context context, String identifier) {
         View divider = LayoutUtils.createInflater(context).inflate(
-                org.chromium.chrome.autofill_assistant.R.layout
+                org.monyhar.chrome.autofill_assistant.R.layout
                         .autofill_assistant_payment_request_section_divider,
                 null, false);
         divider.setTag(identifier);

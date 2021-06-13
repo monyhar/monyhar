@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.library_loader;
+package org.monyhar.base.library_loader;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.base.Log;
-import org.chromium.base.annotations.JniIgnoreNatives;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.JniIgnoreNatives;
 
 import javax.annotation.concurrent.GuardedBy;
 

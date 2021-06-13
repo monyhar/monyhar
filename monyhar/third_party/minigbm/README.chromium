@@ -1,6 +1,6 @@
 Name: minigbm
 Short Name: minigbm
-URL: https://chromium.googlesource.com/chromiumos/platform/minigbm
+URL: https://monyhar.googlesource.com/monyharos/platform/minigbm
 Version: 0
 License: BSD
 License File: LICENSE

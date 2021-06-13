@@ -15,7 +15,7 @@ import pyatspi
 
 # Helper function to check application name
 def AppNameFinder(name):
-  if (name.lower().find('chromium') !=0 and
+  if (name.lower().find('monyhar') !=0 and
       name.lower().find('chrome') !=0 and
       name.lower().find('google chrome') != 0):
     return False

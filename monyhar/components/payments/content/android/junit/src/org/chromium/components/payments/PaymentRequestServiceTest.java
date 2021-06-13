@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.payments;
+package org.monyhar.components.payments;
 
 import android.graphics.drawable.Drawable;
 
@@ -21,19 +21,19 @@ import org.robolectric.annotation.Implementation;
 import org.robolectric.annotation.Implements;
 import org.robolectric.annotation.Resetter;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.Feature;
-import org.chromium.components.payments.test_support.PaymentRequestServiceBuilder;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.mojo.system.MojoException;
-import org.chromium.payments.mojom.PayerDetail;
-import org.chromium.payments.mojom.PaymentAddress;
-import org.chromium.payments.mojom.PaymentDetails;
-import org.chromium.payments.mojom.PaymentErrorReason;
-import org.chromium.payments.mojom.PaymentMethodData;
-import org.chromium.payments.mojom.PaymentOptions;
-import org.chromium.payments.mojom.PaymentRequestClient;
-import org.chromium.payments.mojom.PaymentResponse;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.components.payments.test_support.PaymentRequestServiceBuilder;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.mojo.system.MojoException;
+import org.monyhar.payments.mojom.PayerDetail;
+import org.monyhar.payments.mojom.PaymentAddress;
+import org.monyhar.payments.mojom.PaymentDetails;
+import org.monyhar.payments.mojom.PaymentErrorReason;
+import org.monyhar.payments.mojom.PaymentMethodData;
+import org.monyhar.payments.mojom.PaymentOptions;
+import org.monyhar.payments.mojom.PaymentRequestClient;
+import org.monyhar.payments.mojom.PaymentResponse;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -131,7 +131,7 @@ public class PaymentRequestServiceTest implements PaymentRequestClient {
                     @Override
                     public Set<String> getInstrumentMethodNames() {
                         Set<String> names = new HashSet<>();
-                        names.add("https://www.chromium.org");
+                        names.add("https://www.monyhar.org");
                         return names;
                     }
 

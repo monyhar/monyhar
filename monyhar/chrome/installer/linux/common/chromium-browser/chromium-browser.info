@@ -3,19 +3,19 @@
 # found in the LICENSE file.
 #
 # This file provides common configuration information for building
-# chromium-browser packages for various platforms.
+# monyhar-browser packages for various platforms.
 
 # Base name of the package.
-PACKAGE="chromium-browser"
+PACKAGE="monyhar-browser"
 
 # Base name of the snap package
-SNAPNAME="chromium"
+SNAPNAME="monyhar"
 
 # Filename of the main executable (for generating launcher scripts, etc.)
 PROGNAME=chrome
 
 # Base directory for package installation.
-INSTALLDIR=/opt/chromium.org/chromium
+INSTALLDIR=/opt/monyhar.org/monyhar
 
 # Display string for desktop menu/icon.
 MENUNAME="Chromium Web Browser"
@@ -29,5 +29,5 @@ FULLDESC="Chromium is a browser that combines a minimal design with sophisticate
 # Package maintainer information.
 # TODO(mmoss) Setup a mailbox for this address
 MAINTNAME="Chromium Linux Team"
-MAINTMAIL="chromium-linux-packager@chromium.org"
-PRODUCTURL="http://www.chromium.org/"
+MAINTMAIL="monyhar-linux-packager@monyhar.org"
+PRODUCTURL="http://www.monyhar.org/"

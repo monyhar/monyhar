@@ -84,8 +84,8 @@ message FoilUwSData {
 //
 // Next tag: 4.
 message CommitInfo {
-  // The commit of the root chromium repository.
-  optional string chromium_commit = 1;
+  // The commit of the root monyhar repository.
+  optional string monyhar_commit = 1;
 
   // The commit of the src-internal repository.
   optional string src_internal_commit = 2;

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui.system;
+package org.monyhar.chrome.browser.ui.system;
 
 import android.content.res.Resources;
 import android.graphics.Color;
@@ -13,29 +13,29 @@ import android.view.Window;
 import androidx.annotation.ColorInt;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.CallbackController;
-import org.chromium.base.supplier.OneshotSupplier;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ActivityTabProvider;
-import org.chromium.chrome.browser.compositor.layouts.EmptyOverviewModeObserver;
-import org.chromium.chrome.browser.compositor.layouts.OverviewModeBehavior;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.lifecycle.DestroyObserver;
-import org.chromium.chrome.browser.ntp.NewTabPage;
-import org.chromium.chrome.browser.status_indicator.StatusIndicatorCoordinator;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabSelectionType;
-import org.chromium.chrome.browser.tabmodel.TabModel;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabModelSelectorObserver;
-import org.chromium.chrome.browser.theme.TopUiThemeColorProvider;
-import org.chromium.chrome.browser.toolbar.ToolbarColors;
-import org.chromium.chrome.browser.toolbar.top.TopToolbarCoordinator;
-import org.chromium.components.browser_ui.styles.ChromeColors;
-import org.chromium.ui.UiUtils;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.util.ColorUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.CallbackController;
+import org.monyhar.base.supplier.OneshotSupplier;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ActivityTabProvider;
+import org.monyhar.chrome.browser.compositor.layouts.EmptyOverviewModeObserver;
+import org.monyhar.chrome.browser.compositor.layouts.OverviewModeBehavior;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.lifecycle.DestroyObserver;
+import org.monyhar.chrome.browser.ntp.NewTabPage;
+import org.monyhar.chrome.browser.status_indicator.StatusIndicatorCoordinator;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabSelectionType;
+import org.monyhar.chrome.browser.tabmodel.TabModel;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelectorObserver;
+import org.monyhar.chrome.browser.theme.TopUiThemeColorProvider;
+import org.monyhar.chrome.browser.toolbar.ToolbarColors;
+import org.monyhar.chrome.browser.toolbar.top.TopToolbarCoordinator;
+import org.monyhar.components.browser_ui.styles.ChromeColors;
+import org.monyhar.ui.UiUtils;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.util.ColorUtils;
 
 /**
  * Maintains the status bar color for a {@link Window}.

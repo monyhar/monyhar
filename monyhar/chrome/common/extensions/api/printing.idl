@@ -68,7 +68,7 @@ namespace printing {
     PrinterSource source;
 
     // The flag which shows whether the printer fits
-    // <a href="https://chromium.org/administrators/policy-list-3#DefaultPrinterSelection">
+    // <a href="https://monyhar.org/administrators/policy-list-3#DefaultPrinterSelection">
     // DefaultPrinterSelection</a> rules.
     // Note that several printers could be flagged.
     boolean isDefault;

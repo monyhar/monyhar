@@ -12,7 +12,7 @@ namespace android {
 
 namespace traffic_stats {
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.net
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.net
 enum TrafficStatsError {
   // Value returned by AndroidTrafficStats APIs when a valid value is
   // unavailable.

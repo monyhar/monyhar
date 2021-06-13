@@ -69,7 +69,7 @@ webgpu_videos_mxn.html?import_texture_api=0
 ## Video Files
 
 The following videos are recorded and converted to the needed configurations
-by magchen@chromium.org.
+by magchen@monyhar.org.
 
 ### VP9
 #### teddy1_vp9_640x360_30fps.webm

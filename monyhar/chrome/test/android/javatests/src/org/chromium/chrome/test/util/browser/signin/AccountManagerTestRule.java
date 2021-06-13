@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.util.browser.signin;
+package org.monyhar.chrome.test.util.browser.signin;
 
 import android.accounts.Account;
 import android.graphics.Bitmap;
@@ -16,16 +16,16 @@ import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.chrome.browser.sync.SyncService;
-import org.chromium.components.signin.AccountManagerFacadeProvider;
-import org.chromium.components.signin.AccountUtils;
-import org.chromium.components.signin.ProfileDataSource;
-import org.chromium.components.signin.base.CoreAccountInfo;
-import org.chromium.components.signin.test.util.FakeAccountManagerFacade;
-import org.chromium.components.signin.test.util.FakeProfileDataSource;
-import org.chromium.components.signin.test.util.R;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.chrome.browser.sync.SyncService;
+import org.monyhar.components.signin.AccountManagerFacadeProvider;
+import org.monyhar.components.signin.AccountUtils;
+import org.monyhar.components.signin.ProfileDataSource;
+import org.monyhar.components.signin.base.CoreAccountInfo;
+import org.monyhar.components.signin.test.util.FakeAccountManagerFacade;
+import org.monyhar.components.signin.test.util.FakeProfileDataSource;
+import org.monyhar.components.signin.test.util.R;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /**
  * This test rule mocks AccountManagerFacade and manages sign-in/sign-out.

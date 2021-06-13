@@ -22,7 +22,7 @@ namespace weblayer {
 bool BackgroundFetchDelegateFactory::IsEnabled() {
 #if defined(OS_ANDROID)
   static bool enabled = GetApplicationMetadataAsBoolean(
-      "org.chromium.weblayer.ENABLE_BACKGROUND_FETCH",
+      "org.monyhar.weblayer.ENABLE_BACKGROUND_FETCH",
       /*defaultValue=*/false);
   return enabled;
 #else

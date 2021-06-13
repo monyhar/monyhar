@@ -52,7 +52,7 @@ Status JavaScriptDialogManager::HandleDialog(bool accept,
   Status status = client_->SendCommand("Page.handleJavaScriptDialog", params);
   if (status.IsError()) {
     // Retry once to work around
-    // https://bugs.chromium.org/p/chromedriver/issues/detail?id=1500
+    // https://bugs.monyhar.org/p/chromedriver/issues/detail?id=1500
     status = client_->SendCommand("Page.handleJavaScriptDialog", params);
     if (status.IsError())
       return status;

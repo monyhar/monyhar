@@ -12,7 +12,7 @@ namespace offline_items_collection {
 // Warning: These enumeration values are saved to a database, enumeration values
 // should not be changed.
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.offline_items_collection
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.offline_items_collection
 enum class FailState {
   // Enum for reason OfflineItem failed to download.
   NO_FAILURE,       // Download did not fail.

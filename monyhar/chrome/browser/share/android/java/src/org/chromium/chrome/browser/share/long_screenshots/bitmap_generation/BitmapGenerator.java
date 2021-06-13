@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.long_screenshots.bitmap_generation;
+package org.monyhar.chrome.browser.share.long_screenshots.bitmap_generation;
 
 import android.graphics.Bitmap;
 import android.graphics.Rect;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.share.long_screenshots.LongScreenshotsMetrics;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.paint_preview.common.proto.PaintPreview.PaintPreviewProto;
-import org.chromium.components.paintpreview.player.CompositorStatus;
-import org.chromium.url.GURL;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.share.long_screenshots.LongScreenshotsMetrics;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.paint_preview.common.proto.PaintPreview.PaintPreviewProto;
+import org.monyhar.components.paintpreview.player.CompositorStatus;
+import org.monyhar.url.GURL;
 
 /**
  * Class responsible for processing the initial request, calling {@link LongScreenshotsTab} service

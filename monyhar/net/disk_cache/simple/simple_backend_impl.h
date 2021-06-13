@@ -38,7 +38,7 @@ namespace disk_cache {
 // SimpleBackendImpl is a new cache backend that stores entries in individual
 // files.
 // See
-// http://www.chromium.org/developers/design-documents/network-stack/disk-cache/very-simple-backend
+// http://www.monyhar.org/developers/design-documents/network-stack/disk-cache/very-simple-backend
 //
 // The SimpleBackendImpl provides safe iteration; mutating entries during
 // iteration cannot cause a crash. It is undefined whether entries created or

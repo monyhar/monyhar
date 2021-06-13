@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
 import android.content.BroadcastReceiver;
 import android.content.Intent;
@@ -19,13 +19,13 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.AwContents;
-import org.chromium.android_webview.AwContentsStatics;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.test.util.AdvancedMockContext;
-import org.chromium.base.test.util.Feature;
-import org.chromium.content_public.browser.ContentViewStatics;
-import org.chromium.net.ProxyChangeListener;
+import org.monyhar.android_webview.AwContents;
+import org.monyhar.android_webview.AwContentsStatics;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.test.util.AdvancedMockContext;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.content_public.browser.ContentViewStatics;
+import org.monyhar.net.ProxyChangeListener;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;

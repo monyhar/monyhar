@@ -15,7 +15,7 @@ namespace updates {
 
 // Some of these are also existing in Java side, please refer:
 // src/chrome/android/java/src/org/
-// chromium/chrome/browser/omaha/UpdateConfigs.java
+// monyhar/chrome/browser/omaha/UpdateConfigs.java
 
 // Configure the update notification enable/disable switch.
 constexpr char kUpdateNotificationStateParamName[] =

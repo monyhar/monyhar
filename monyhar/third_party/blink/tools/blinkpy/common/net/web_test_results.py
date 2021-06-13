@@ -134,9 +134,9 @@ class WebTestResults(object):
 
         return cls(json_dict, step_name=step_name)
 
-    def __init__(self, parsed_json, chromium_revision=None, step_name=None):
+    def __init__(self, parsed_json, monyhar_revision=None, step_name=None):
         self._results = parsed_json
-        self._chromium_revision = chromium_revision
+        self._monyhar_revision = monyhar_revision
         self._step_name = step_name
 
     def step_name(self):
@@ -149,9 +149,9 @@ class WebTestResults(object):
         return self._results['builder_name']
 
     @memoized
-    def chromium_revision(self, git=None):
+    def monyhar_revision(self, git=None):
         """Returns the revision of the results in commit position number format."""
-        revision = self._chromium_revision or self._results['chromium_revision']
+        revision = self._monyhar_revision or self._results['monyhar_revision']
         if not revision.isdigit():
             assert git, 'git is required if the original revision is a git hash.'
             revision = git.commit_position_from_git_commit(revision)

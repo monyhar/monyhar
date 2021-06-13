@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private.settings;
+package org.monyhar.weblayer_private.settings;
 
 import android.content.Context;
 import android.content.Intent;
@@ -16,26 +16,26 @@ import android.view.ViewGroup;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 
-import org.chromium.components.browser_ui.settings.SettingsUtils;
-import org.chromium.components.browser_ui.site_settings.AllSiteSettings;
-import org.chromium.components.browser_ui.site_settings.SingleCategorySettings;
-import org.chromium.components.browser_ui.site_settings.SingleWebsiteSettings;
-import org.chromium.components.browser_ui.site_settings.SiteSettings;
-import org.chromium.components.browser_ui.site_settings.SiteSettingsPreferenceFragment;
-import org.chromium.components.browser_ui.site_settings.Website;
-import org.chromium.components.browser_ui.site_settings.WebsiteAddress;
-import org.chromium.components.embedder_support.application.ClassLoaderContextWrapperFactory;
-import org.chromium.weblayer_private.FragmentHostingRemoteFragmentImpl;
-import org.chromium.weblayer_private.ProfileImpl;
-import org.chromium.weblayer_private.ProfileManager;
-import org.chromium.weblayer_private.R;
-import org.chromium.weblayer_private.interfaces.IRemoteFragment;
-import org.chromium.weblayer_private.interfaces.IRemoteFragmentClient;
-import org.chromium.weblayer_private.interfaces.ISettingsFragment;
-import org.chromium.weblayer_private.interfaces.ISiteSettingsFragment;
-import org.chromium.weblayer_private.interfaces.SettingsFragmentArgs;
-import org.chromium.weblayer_private.interfaces.SettingsIntentHelper;
-import org.chromium.weblayer_private.interfaces.StrictModeWorkaround;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.components.browser_ui.site_settings.AllSiteSettings;
+import org.monyhar.components.browser_ui.site_settings.SingleCategorySettings;
+import org.monyhar.components.browser_ui.site_settings.SingleWebsiteSettings;
+import org.monyhar.components.browser_ui.site_settings.SiteSettings;
+import org.monyhar.components.browser_ui.site_settings.SiteSettingsPreferenceFragment;
+import org.monyhar.components.browser_ui.site_settings.Website;
+import org.monyhar.components.browser_ui.site_settings.WebsiteAddress;
+import org.monyhar.components.embedder_support.application.ClassLoaderContextWrapperFactory;
+import org.monyhar.weblayer_private.FragmentHostingRemoteFragmentImpl;
+import org.monyhar.weblayer_private.ProfileImpl;
+import org.monyhar.weblayer_private.ProfileManager;
+import org.monyhar.weblayer_private.R;
+import org.monyhar.weblayer_private.interfaces.IRemoteFragment;
+import org.monyhar.weblayer_private.interfaces.IRemoteFragmentClient;
+import org.monyhar.weblayer_private.interfaces.ISettingsFragment;
+import org.monyhar.weblayer_private.interfaces.ISiteSettingsFragment;
+import org.monyhar.weblayer_private.interfaces.SettingsFragmentArgs;
+import org.monyhar.weblayer_private.interfaces.SettingsIntentHelper;
+import org.monyhar.weblayer_private.interfaces.StrictModeWorkaround;
 
 /**
  * WebLayer's implementation of the client library's SettingsFragment.

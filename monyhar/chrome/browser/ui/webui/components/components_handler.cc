@@ -54,7 +54,7 @@ void ComponentsHandler::HandleRequestComponentsData(
 // This function is called when user presses button from html UI.
 // TODO(shrikant): We need to make this button available based on current
 // state e.g. If component state is currently updating then we need to disable
-// button. (https://code.google.com/p/chromium/issues/detail?id=272540)
+// button. (https://code.google.com/p/monyhar/issues/detail?id=272540)
 void ComponentsHandler::HandleCheckUpdate(const base::ListValue* args) {
   if (args->GetSize() != 1) {
     NOTREACHED();

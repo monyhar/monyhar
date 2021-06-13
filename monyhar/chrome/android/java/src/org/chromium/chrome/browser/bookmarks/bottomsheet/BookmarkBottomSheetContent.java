@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.bookmarks.bottomsheet;
+package org.monyhar.chrome.browser.bookmarks.bottomsheet;
 
 import android.view.View;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.R;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetContent;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.R;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetContent;
 
 /**
  * Bookmark bottom sheet's implementation of {@link BottomSheetContent}.

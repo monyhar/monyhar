@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices;
+package org.monyhar.chrome.browser.browserservices;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -15,29 +15,29 @@ import androidx.test.filters.MediumTest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.Matchers;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.components.webapk.lib.client.WebApkValidator;
-import org.chromium.webapk.lib.common.WebApkConstants;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.Matchers;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.components.webapk.lib.client.WebApkValidator;
+import org.monyhar.webapk.lib.common.WebApkConstants;
 
 /**
  * Instrumentation tests for launching site settings for WebApks.
  * Site settings are added as a dynamic android shortcut.
  * The shortcut launches a {@link ManageTrustedWebActivityDataActivity}
- * intent that validates the WebApk and launches the chromium SettingsActivity.
+ * intent that validates the WebApk and launches the monyhar SettingsActivity.
  */
 @RunWith(ChromeJUnit4ClassRunner.class)
 @CommandLineFlags.Add({ChromeSwitches.DISABLE_FIRST_RUN_EXPERIENCE})
 public class ManageTrustedWebActivityDataActivityTest {
     private static final String SETTINGS_ACTIVITY_NAME =
-            "org.chromium.chrome.browser.settings.SettingsActivity";
+            "org.monyhar.chrome.browser.settings.SettingsActivity";
     private static final String WEBAPK_TEST_URL = "https://pwa-directory.appspot.com/";
-    private static final String TEST_PACKAGE_NAME = "org.chromium.webapk.test";
+    private static final String TEST_PACKAGE_NAME = "org.monyhar.webapk.test";
 
     @Test
     @MediumTest

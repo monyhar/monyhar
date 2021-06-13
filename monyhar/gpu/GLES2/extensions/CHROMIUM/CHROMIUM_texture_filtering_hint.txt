@@ -14,7 +14,7 @@ Contributors
 
 Contact
 
-    Alexis Hetu, Google Inc. (sugoi 'at' chromium 'dot' org)
+    Alexis Hetu, Google Inc. (sugoi 'at' monyhar 'dot' org)
 
 Version
 

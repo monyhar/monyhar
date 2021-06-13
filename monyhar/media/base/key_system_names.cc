@@ -7,7 +7,7 @@
 namespace media {
 
 const char kClearKey[] = "org.w3.clearkey";
-const char kExternalClearKey[] = "org.chromium.externalclearkey";
+const char kExternalClearKey[] = "org.monyhar.externalclearkey";
 
 bool IsClearKey(const std::string& key_system) {
   return key_system == kClearKey;

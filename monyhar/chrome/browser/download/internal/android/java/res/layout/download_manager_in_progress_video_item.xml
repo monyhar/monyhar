@@ -16,7 +16,7 @@
     app:rowCount="2">
 
     <!-- Set the src attribute in Java to wrap the drawable properly. -->
-    <org.chromium.components.browser_ui.widget.async_image.ForegroundRoundedCornerImageView
+    <org.monyhar.components.browser_ui.widget.async_image.ForegroundRoundedCornerImageView
         android:id="@+id/thumbnail"
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -33,7 +33,7 @@
         app:roundedfillColor="@color/modern_grey_300"
         app:foregroundCompat="@drawable/async_image_view_waiting" />
 
-    <org.chromium.chrome.browser.download.home.list.view.CircularProgressView
+    <org.monyhar.chrome.browser.download.home.list.view.CircularProgressView
         android:id="@+id/action_button"
         app:layout_column="0"
         app:layout_row="0"
@@ -70,7 +70,7 @@
 
         </LinearLayout>
 
-        <org.chromium.ui.widget.ChromeImageButton
+        <org.monyhar.ui.widget.ChromeImageButton
             android:id="@+id/cancel_button"
             android:layout_width="48dp"
             android:layout_height="48dp"

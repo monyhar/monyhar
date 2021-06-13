@@ -95,8 +95,8 @@ class PopularSitesTest : public ::testing::Test {
         },
         kChromium{
             {kTitle, "The Chromium Project"},
-            {kUrl, "https://www.chromium.org/"},
-            {kFaviconUrl, "https://www.chromium.org/favicon.ico"},
+            {kUrl, "https://www.monyhar.org/"},
+            {kFaviconUrl, "https://www.monyhar.org/favicon.ico"},
             // No "title_source" (like in v5 or earlier). Defaults to TITLE_TAG.
         },
         prefs_(new sync_preferences::TestingPrefServiceSyncable()),
@@ -277,10 +277,10 @@ TEST_F(PopularSitesTest, Fallback) {
   EXPECT_THAT(sites[0].favicon_url, URLEq(""));
   EXPECT_THAT(sites[0].title_source, Eq(TileTitleSource::MANIFEST));
   EXPECT_THAT(sites[1].title, Str16Eq("The Chromium Project"));
-  EXPECT_THAT(sites[1].url, URLEq("https://www.chromium.org/"));
+  EXPECT_THAT(sites[1].url, URLEq("https://www.monyhar.org/"));
   EXPECT_THAT(sites[1].large_icon_url, URLEq(""));
   EXPECT_THAT(sites[1].favicon_url,
-              URLEq("https://www.chromium.org/favicon.ico"));
+              URLEq("https://www.monyhar.org/favicon.ico"));
   // Fall back to TITLE_TAG if there is no "title_source". Version 5 or before
   // haven't had this property and get titles from <title> tags exclusively.
   EXPECT_THAT(sites[1].title_source, Eq(TileTitleSource::TITLE_TAG));
@@ -408,7 +408,7 @@ TEST_F(PopularSitesTest, DoesntUseCachedFileIfDownloadForced) {
       {kChromium});
   EXPECT_THAT(FetchPopularSites(/*force_download=*/true, &sites),
               Eq(absl::optional<bool>(true)));
-  EXPECT_THAT(sites[0].url, URLEq("https://www.chromium.org/"));
+  EXPECT_THAT(sites[0].url, URLEq("https://www.monyhar.org/"));
 }
 
 TEST_F(PopularSitesTest, DoesntUseCacheWithDeprecatedVersion) {
@@ -431,7 +431,7 @@ TEST_F(PopularSitesTest, DoesntUseCacheWithDeprecatedVersion) {
       {{SectionType::PERSONALIZED, {kChromium}}});
   EXPECT_THAT(FetchPopularSites(/*force_download=*/false, &sites),
               Eq(absl::optional<bool>(true)));
-  EXPECT_THAT(sites[0].url, URLEq("https://www.chromium.org/"));
+  EXPECT_THAT(sites[0].url, URLEq("https://www.monyhar.org/"));
   EXPECT_THAT(prefs_->GetInteger(prefs::kPopularSitesVersionPref), Eq(6));
 }
 
@@ -445,7 +445,7 @@ TEST_F(PopularSitesTest, FallsBackToDefaultParserIfVersionContainsNoNumber) {
   EXPECT_THAT(FetchPopularSites(/*force_download=*/false, &sites),
               Eq(absl::optional<bool>(true)));
   ASSERT_THAT(sites.size(), Eq(1u));
-  EXPECT_THAT(sites[0].url, URLEq("https://www.chromium.org/"));
+  EXPECT_THAT(sites[0].url, URLEq("https://www.monyhar.org/"));
 }
 
 TEST_F(PopularSitesTest, RefetchesAfterCountryMoved) {
@@ -468,7 +468,7 @@ TEST_F(PopularSitesTest, RefetchesAfterCountryMoved) {
   SetCountryAndVersion("ZX", "5");
   EXPECT_THAT(FetchPopularSites(/*force_download=*/false, &sites),
               absl::optional<bool>(true));
-  EXPECT_THAT(sites[0].url, URLEq("https://www.chromium.org/"));
+  EXPECT_THAT(sites[0].url, URLEq("https://www.monyhar.org/"));
 }
 
 TEST_F(PopularSitesTest, DoesntCacheInvalidFile) {
@@ -491,7 +491,7 @@ TEST_F(PopularSitesTest, DoesntCacheInvalidFile) {
   EXPECT_THAT(FetchPopularSites(/*force_download=*/false, &sites),
               Eq(absl::optional<bool>(true)));
   ASSERT_THAT(sites.size(), Eq(1u));
-  EXPECT_THAT(sites[0].url, URLEq("https://www.chromium.org/"));
+  EXPECT_THAT(sites[0].url, URLEq("https://www.monyhar.org/"));
 }
 
 TEST_F(PopularSitesTest, RefetchesAfterFallback) {
@@ -516,7 +516,7 @@ TEST_F(PopularSitesTest, RefetchesAfterFallback) {
   EXPECT_THAT(FetchPopularSites(/*force_download=*/false, &sites),
               Eq(absl::optional<bool>(true)));
   ASSERT_THAT(sites.size(), Eq(1u));
-  EXPECT_THAT(sites[0].url, URLEq("https://www.chromium.org/"));
+  EXPECT_THAT(sites[0].url, URLEq("https://www.monyhar.org/"));
 }
 
 TEST_F(PopularSitesTest, ShouldOverrideDirectory) {

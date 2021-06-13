@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.history;
+package org.monyhar.chrome.browser.history;
 
 import android.os.Bundle;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.SnackbarActivity;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.SnackbarActivity;
 
 /**
  * Activity for displaying the browsing history manager.

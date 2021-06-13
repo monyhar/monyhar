@@ -339,7 +339,7 @@ struct NetworkContextParams {
   bool enable_certificate_reporting = false;
 
   // True if the "Certificate Transparency in Chrome" policy (see
-  // https://github.com/chromium/ct-policy/blob/master/ct_policy.md) should
+  // https://github.com/monyhar/ct-policy/blob/master/ct_policy.md) should
   // be enforced for certificates and connections.
   //
   // See //net/docs/certificate-transparency.md before setting this flag to

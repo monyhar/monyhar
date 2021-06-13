@@ -51,5 +51,5 @@ Web Bluetooth implementation details are tested at several layers:
 
 See: [Class Diagram of Web Bluetooth through Bluetooth Android][Class]
 
-[Class]: https://sites.google.com/a/chromium.org/dev/developers/design-documents/bluetooth-design-docs/web-bluetooth-through-bluetooth-android-class-diagram
+[Class]: https://sites.google.com/a/monyhar.org/dev/developers/design-documents/bluetooth-design-docs/web-bluetooth-through-bluetooth-android-class-diagram
 

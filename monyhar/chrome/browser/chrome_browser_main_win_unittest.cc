@@ -92,6 +92,6 @@ TEST(ChromeBrowserMainWinTest, GetRestartCommand) {
 TEST(ChromeBrowserMainWinTest, RegisterRestart) {
   const base::CommandLine command_line = base::CommandLine::FromString(
       L"chrome.exe --enable-features=Exp2 --enable-foo -- "
-      L"http://www.chromium.org");
+      L"http://www.monyhar.org");
   ChromeBrowserMainPartsWin::RegisterApplicationRestart(command_line);
 }

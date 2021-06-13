@@ -16,7 +16,7 @@ class TemplateWriter(object):
       platforms: List of platforms for which this writer can write policies.
       config: A dictionary of information required to generate the template.
         It contains some key-value pairs, including the following examples:
-          'build': 'chrome' or 'chromium'
+          'build': 'chrome' or 'monyhar'
           'branding': 'Google Chrome' or 'Chromium'
           'mac_bundle_id': The Mac bundle id of Chrome. (Only set when building
             for Mac.)

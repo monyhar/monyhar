@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.thinwebview.internal;
+package org.monyhar.components.thinwebview.internal;
 
 import android.content.Context;
 import android.graphics.PixelFormat;
@@ -13,12 +13,12 @@ import android.view.SurfaceView;
 import android.view.TextureView;
 import android.view.View;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.thinwebview.CompositorView;
-import org.chromium.components.thinwebview.ThinWebViewConstraints;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.thinwebview.CompositorView;
+import org.monyhar.components.thinwebview.ThinWebViewConstraints;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * An android view backed by a {@link Surface} that is able to display a cc::Layer. Either, a {@link

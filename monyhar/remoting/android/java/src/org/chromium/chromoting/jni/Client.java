@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting.jni;
+package org.monyhar.chromoting.jni;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chromoting.CapabilityManager;
-import org.chromium.chromoting.InputStub;
-import org.chromium.chromoting.Preconditions;
-import org.chromium.chromoting.RenderStub;
-import org.chromium.chromoting.SessionAuthenticator;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chromoting.CapabilityManager;
+import org.monyhar.chromoting.InputStub;
+import org.monyhar.chromoting.Preconditions;
+import org.monyhar.chromoting.RenderStub;
+import org.monyhar.chromoting.SessionAuthenticator;
 
 /**
  * Class to manage a client connection to the host. This class controls the lifetime of the

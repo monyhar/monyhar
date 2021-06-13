@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.v2;
+package org.monyhar.chrome.browser.feed.v2;
 
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.hamcrest.Matchers;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.HashMap;
 import java.util.Map;

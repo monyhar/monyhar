@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs.features;
+package org.monyhar.chrome.browser.customtabs.features;
 
 import android.content.res.Resources;
 import android.os.Build;
 import android.view.Window;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.ui.UiUtils;
-import org.chromium.ui.util.ColorUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.ui.UiUtils;
+import org.monyhar.ui.util.ColorUtils;
 
 /**
  * Configures the system navigation bar while a Custom Tab activity is running.
@@ -32,7 +32,7 @@ public class CustomTabNavigationBarController {
                 intentDataProvider.getColorProvider().getNavigationBarDividerColor();
 
         int lightBackgroundDividerColor = ApiCompatibilityUtils.getColor(
-                resources, org.chromium.chrome.R.color.black_alpha_12);
+                resources, org.monyhar.chrome.R.color.black_alpha_12);
 
         boolean needsDarkButtons = navigationBarColor != null
                 && !ColorUtils.shouldUseLightForegroundOnBackground(navigationBarColor);

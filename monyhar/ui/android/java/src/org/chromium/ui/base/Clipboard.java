@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.base;
+package org.monyhar.ui.base;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -28,24 +28,24 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.BuildInfo;
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.compat.ApiHelperForO;
-import org.chromium.base.compat.ApiHelperForP;
-import org.chromium.base.compat.ApiHelperForS;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.components.url_formatter.UrlFormatter;
-import org.chromium.ui.R;
-import org.chromium.ui.widget.Toast;
-import org.chromium.url.GURL;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.compat.ApiHelperForO;
+import org.monyhar.base.compat.ApiHelperForP;
+import org.monyhar.base.compat.ApiHelperForS;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.components.url_formatter.UrlFormatter;
+import org.monyhar.ui.R;
+import org.monyhar.ui.widget.Toast;
+import org.monyhar.url.GURL;
 
 import java.io.IOException;
 import java.util.List;

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.dialogs;
+package org.monyhar.chrome.browser.download.dialogs;
 
 import android.content.Context;
 import android.graphics.Typeface;
@@ -22,14 +22,14 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.browser.download.DownloadLaterPromptStatus;
-import org.chromium.chrome.browser.download.R;
-import org.chromium.components.browser_ui.widget.RadioButtonWithDescription;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.text.NoUnderlineClickableSpan;
-import org.chromium.ui.text.SpanApplier;
-import org.chromium.ui.text.SpanApplier.SpanInfo;
+import org.monyhar.chrome.browser.download.DownloadLaterPromptStatus;
+import org.monyhar.chrome.browser.download.R;
+import org.monyhar.components.browser_ui.widget.RadioButtonWithDescription;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.text.NoUnderlineClickableSpan;
+import org.monyhar.ui.text.SpanApplier;
+import org.monyhar.ui.text.SpanApplier.SpanInfo;
 
 /**
  * The custom view in the download later dialog.

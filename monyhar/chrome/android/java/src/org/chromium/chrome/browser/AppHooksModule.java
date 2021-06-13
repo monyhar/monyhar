@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
-import org.chromium.chrome.browser.customtabs.CustomTabsConnection;
-import org.chromium.chrome.browser.dependency_injection.ModuleFactoryOverrides;
-import org.chromium.chrome.browser.multiwindow.MultiWindowUtils;
-import org.chromium.components.externalauth.ExternalAuthUtils;
+import org.monyhar.chrome.browser.customtabs.CustomTabsConnection;
+import org.monyhar.chrome.browser.dependency_injection.ModuleFactoryOverrides;
+import org.monyhar.chrome.browser.multiwindow.MultiWindowUtils;
+import org.monyhar.components.externalauth.ExternalAuthUtils;
 
 import dagger.Module;
 import dagger.Provides;

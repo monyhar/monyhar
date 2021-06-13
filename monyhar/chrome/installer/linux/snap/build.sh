@@ -40,7 +40,7 @@ source ${OUTPUTDIR}/installer/common/installer.include
 if [ "$SNAPNAME" = "google-chrome" ]; then
   source "${OUTPUTDIR}/installer/common/google-chrome.info"
 else
-  source "${OUTPUTDIR}/installer/common/chromium-browser.info"
+  source "${OUTPUTDIR}/installer/common/monyhar-browser.info"
 fi
 
 prep_staging_common

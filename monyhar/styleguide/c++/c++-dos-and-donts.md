@@ -24,9 +24,9 @@ Dynamic initialization of function-scope static variables is **thread-safe** in
 Chromium (per standard C++11 behavior). Before 2017, this was thread-unsafe, and
 base::LazyInstance was widely used. This is no longer necessary.
 Background can be found in
-[this thread](https://groups.google.com/a/chromium.org/forum/#!msg/chromium-dev/p6h3HC8Wro4/HHBMg7fYiMYJ)
+[this thread](https://groups.google.com/a/monyhar.org/forum/#!msg/monyhar-dev/p6h3HC8Wro4/HHBMg7fYiMYJ)
 and
-[this thread](https://groups.google.com/a/chromium.org/d/topic/cxx/j5rFewBzSBQ/discussion).
+[this thread](https://groups.google.com/a/monyhar.org/d/topic/cxx/j5rFewBzSBQ/discussion).
 
 ```cpp
 void foo() {
@@ -147,7 +147,7 @@ declaration.
 When possible, avoid bare `new` by using
 [`std::make_unique<T>(...)`](http://en.cppreference.com/w/cpp/memory/unique_ptr/make_unique)
 and
-[`base::MakeRefCounted<T>(...)`](https://source.chromium.org/chromium/chromium/src/+/main:base/memory/scoped_refptr.h;l=98;drc=f8c5bd9d40969f02ddeb3e6c7bdb83029a99ca63):
+[`base::MakeRefCounted<T>(...)`](https://source.monyhar.org/monyhar/monyhar/src/+/main:base/memory/scoped_refptr.h;l=98;drc=f8c5bd9d40969f02ddeb3e6c7bdb83029a99ca63):
 
 ```cpp
 // BAD: bare call to new; for refcounted types, not compatible with one-based
@@ -292,5 +292,5 @@ cross-references for that symbol.
 ## Named namespaces
 
 Named namespaces are discouraged in top-level embedders (e.g., `chrome/`). See
-[this thread](https://groups.google.com/a/chromium.org/d/msg/chromium-dev/8ROncnL1t4k/J7uJMCQ8BwAJ)
+[this thread](https://groups.google.com/a/monyhar.org/d/msg/monyhar-dev/8ROncnL1t4k/J7uJMCQ8BwAJ)
 for background and discussion.

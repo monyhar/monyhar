@@ -1,17 +1,17 @@
 // Copyright 2020 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.chrome.browser.safe_browsing;
+package org.monyhar.chrome.browser.safe_browsing;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.fullscreen.BrowserControlsManagerSupplier;
-import org.chromium.chrome.browser.password_manager.PasswordManagerDialogContents;
-import org.chromium.chrome.browser.password_manager.PasswordManagerDialogCoordinator;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.modaldialog.DialogDismissalCause;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.fullscreen.BrowserControlsManagerSupplier;
+import org.monyhar.chrome.browser.password_manager.PasswordManagerDialogContents;
+import org.monyhar.chrome.browser.password_manager.PasswordManagerDialogCoordinator;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.modaldialog.DialogDismissalCause;
 
 import java.lang.ref.WeakReference;
 

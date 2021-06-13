@@ -2,5 +2,5 @@
 per-file lib/builders.star=file://infra/config/groups/ios/OWNERS
 
 # iOS owners for builder configs.
-per-file subprojects/chromium/ci.star=file://infra/config/groups/ios/OWNERS
-per-file subprojects/chromium/try.star=file://infra/config/groups/ios/OWNERS
+per-file subprojects/monyhar/ci.star=file://infra/config/groups/ios/OWNERS
+per-file subprojects/monyhar/try.star=file://infra/config/groups/ios/OWNERS

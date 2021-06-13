@@ -1603,13 +1603,13 @@ ios_framework_bundle("material_components_ios") {
   ]
 
   configs -= [
-    "//build/config/compiler:chromium_code",
+    "//build/config/compiler:monyhar_code",
     "//build/config/gcc:symbol_visibility_hidden",
   ]
   configs += [
     ":config",
     "//build/config/compiler:enable_arc",
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     "//build/config/gcc:symbol_visibility_default",
 
     # material_components_ios internally uses deprecated methods.

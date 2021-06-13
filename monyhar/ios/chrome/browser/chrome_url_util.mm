@@ -57,7 +57,7 @@ bool IsHandledProtocol(const std::string& scheme) {
 - (NSString*)bundleURLScheme {
   if (!_callbackScheme) {
     NSSet* allowableSchemes =
-        [NSSet setWithObjects:@"googlechrome", @"chromium",
+        [NSSet setWithObjects:@"googlechrome", @"monyhar",
                               @"ios-chrome-unittests.http", nil];
     NSArray* schemes = [self allBundleURLSchemes];
     for (NSString* scheme in schemes) {

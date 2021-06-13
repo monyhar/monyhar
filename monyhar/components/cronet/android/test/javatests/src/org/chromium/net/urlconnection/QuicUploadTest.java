@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.urlconnection;
+package org.monyhar.net.urlconnection;
 
 import static org.junit.Assert.assertEquals;
 
-import static org.chromium.net.CronetTestRule.getContext;
+import static org.monyhar.net.CronetTestRule.getContext;
 
 import android.support.test.runner.AndroidJUnit4;
 
@@ -18,13 +18,13 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.Feature;
-import org.chromium.net.CronetEngine;
-import org.chromium.net.CronetTestRule;
-import org.chromium.net.CronetTestRule.OnlyRunNativeCronet;
-import org.chromium.net.CronetTestUtil;
-import org.chromium.net.ExperimentalCronetEngine;
-import org.chromium.net.QuicTestServer;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.net.CronetEngine;
+import org.monyhar.net.CronetTestRule;
+import org.monyhar.net.CronetTestRule.OnlyRunNativeCronet;
+import org.monyhar.net.CronetTestUtil;
+import org.monyhar.net.ExperimentalCronetEngine;
+import org.monyhar.net.QuicTestServer;
 
 import java.io.OutputStream;
 import java.net.HttpURLConnection;

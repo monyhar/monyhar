@@ -56,7 +56,7 @@ void GetAvailableUpdateModes(
 // Checks if there's a TPM firmware update available. Calls the callback
 // |completion| with the result. Result is true if there's an update available
 // and the SRK (Storage Root Key) is vulnerable, false otherwise. More
-// information: https://www.chromium.org/chromium-os/tpm_firmware_update Note:
+// information: https://www.monyhar.org/monyhar-os/tpm_firmware_update Note:
 // This method doesn't check if policy allows TPM firmware updates. Note: This
 // method doesn't consider the case where the firmware is updated but the SRK is
 // still vulnerable.

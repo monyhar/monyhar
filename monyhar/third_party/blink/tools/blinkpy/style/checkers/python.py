@@ -80,10 +80,10 @@ class PythonChecker(object):
             finder.path_from_blink_source('build', 'scripts'),
             get_blinkpy_thirdparty_dir(),
             finder.path_from_blink_source('bindings', 'scripts'),
-            finder.path_from_chromium_base('build', 'android'),
-            finder.path_from_chromium_base('third_party'),  # for jinja2
-            finder.path_from_chromium_base('third_party', 'catapult', 'devil'),
-            finder.path_from_chromium_base('tools'),
+            finder.path_from_monyhar_base('build', 'android'),
+            finder.path_from_monyhar_base('third_party'),  # for jinja2
+            finder.path_from_monyhar_base('third_party', 'catapult', 'devil'),
+            finder.path_from_monyhar_base('tools'),
         ])
         return executive.run_command([
             sys.executable,

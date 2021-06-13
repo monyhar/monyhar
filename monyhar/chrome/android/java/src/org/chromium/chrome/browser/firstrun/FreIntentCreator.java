@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.firstrun;
+package org.monyhar.chrome.browser.firstrun;
 
 import android.app.Activity;
 import android.app.PendingIntent;
@@ -15,15 +15,15 @@ import android.text.TextUtils;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.IntentUtils;
-import org.chromium.chrome.browser.AppHooks;
-import org.chromium.chrome.browser.LaunchIntentDispatcher;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.browserservices.intents.WebApkExtras;
-import org.chromium.chrome.browser.browserservices.intents.WebappExtras;
-import org.chromium.chrome.browser.webapps.WebappLauncherActivity;
-import org.chromium.ui.base.DeviceFormFactor;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.chrome.browser.AppHooks;
+import org.monyhar.chrome.browser.LaunchIntentDispatcher;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.browserservices.intents.WebApkExtras;
+import org.monyhar.chrome.browser.browserservices.intents.WebappExtras;
+import org.monyhar.chrome.browser.webapps.WebappLauncherActivity;
+import org.monyhar.ui.base.DeviceFormFactor;
 
 /**
  * This class makes a decision what FRE type to launch and creates a corresponding intent. Should be
@@ -189,6 +189,6 @@ public class FreIntentCreator {
         TypedArray a = caller.obtainStyledAttributes(new int[] {android.R.attr.windowBackground});
         int backgroundResourceId = a.getResourceId(0 /* index */, 0);
         a.recycle();
-        return (backgroundResourceId == org.chromium.chrome.R.drawable.window_background);
+        return (backgroundResourceId == org.monyhar.chrome.R.drawable.window_background);
     }
 }

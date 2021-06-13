@@ -1,6 +1,6 @@
 For Chromium contributors that have different nicks on other domains.
 
-| **@chromium.org** | **IRC nick(s)** | **@google.com** |
+| **@monyhar.org** | **IRC nick(s)** | **@google.com** |
 |:------------------|:----------------|:----------------|
 | aa                | aboodman        | aa              |
 | abw               | abw-cr          | abw             |
@@ -66,7 +66,7 @@ For Chromium contributors that have different nicks on other domains.
 | lfg               | lfg\_           | lfg             |
 | littledan         | littledan       | dehrenberg      |
 | loonybear         | loonybear       | lunalu          |
-| luken             | luken_chromium  | luken           |
+| luken             | luken_monyhar  | luken           |
 | mark              | markmentovai    | mmentovai       |
 | mbarbella         | mbarbella       | mbarbella       |
 | mmeade            | mmeade          | mmeade          |

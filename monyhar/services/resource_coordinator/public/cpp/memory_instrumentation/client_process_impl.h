@@ -87,7 +87,7 @@ class COMPONENT_EXPORT(RESOURCE_COORDINATOR_PUBLIC_MEMORY_INSTRUMENTATION)
   // to complete before running the OS calculations. The key to this map is the
   // dump_guid of that RequestChromeMemoryDumpCallback, the value a vector of
   // callbacks to calculate and run. For more details, see
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=812346#c16.
+  // https://bugs.monyhar.org/p/monyhar/issues/detail?id=812346#c16.
   std::map<uint64_t, std::vector<OSMemoryDumpArgs>>
       delayed_os_memory_dump_callbacks_;
   absl::optional<uint64_t> most_recent_chrome_memory_dump_guid_;

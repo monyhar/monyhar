@@ -111,7 +111,7 @@ template("chrome_bundle") {
       module_desc = _module_desc
       version_name = chrome_version_name
       uncompress_shared_libraries =
-          invoker.is_monochrome_or_trichrome || chromium_linker_supported
+          invoker.is_monochrome_or_trichrome || monyhar_linker_supported
 
       # Each module needs a unique resource package ID so that we don't have ID
       # collisions between feature modules.

@@ -103,7 +103,7 @@ class ApacheHTTP(server_base.ServerBase):
             '-c', 'Alias /js-test-resources "%s/resources"' % test_dir,
             '-c', 'Alias /geolocation-api/js-test-resources "%s/geolocation-api/resources"' % test_dir,
             # TODO(509038): To be removed after bluetooth tests are ported to WPT.
-            '-c', 'Alias /resources/chromium "%s/external/wpt/resources/chromium"' % test_dir,
+            '-c', 'Alias /resources/monyhar "%s/external/wpt/resources/monyhar"' % test_dir,
             '-c', 'Alias /resources/testharness.js "%s/resources/testharness.js"' % test_dir,
             '-c', 'Alias /resources/testharnessreport.js "%s/resources/testharnessreport.js"' % test_dir,
             '-c', 'Alias /resources/testdriver.js "%s/resources/testdriver.js"' % test_dir,

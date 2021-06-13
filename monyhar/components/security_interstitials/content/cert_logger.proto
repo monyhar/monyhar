@@ -15,7 +15,7 @@
 // done on the client's input data.
 //
 // This should be kept in sync with the internal Google copy when updated.
-// Contact security-enamel@chromium.org if you have questions.
+// Contact security-enamel@monyhar.org if you have questions.
 
 syntax = "proto2";
 

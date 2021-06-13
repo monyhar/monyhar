@@ -1213,7 +1213,7 @@ void DocumentLoader::HandleResponse() {
   application_cache_host_->DidReceiveResponseForMainResource(response_);
 
   if (response_.CurrentRequestUrl().ProtocolIs("ftp") &&
-      response_.MimeType() == "text/vnd.chromium.ftp-dir") {
+      response_.MimeType() == "text/vnd.monyhar.ftp-dir") {
     if (response_.CurrentRequestUrl().Query() == "raw") {
       // Interpret the FTP LIST command result as text.
       response_.SetMimeType("text/plain");

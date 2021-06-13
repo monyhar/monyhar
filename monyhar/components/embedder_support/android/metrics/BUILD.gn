@@ -35,8 +35,8 @@ static_library("metrics") {
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/components/metrics/AndroidMetricsLogUploader.java",
-    "java/src/org/chromium/components/metrics/AndroidMetricsServiceClient.java",
+    "java/src/org/monyhar/components/metrics/AndroidMetricsLogUploader.java",
+    "java/src/org/monyhar/components/metrics/AndroidMetricsServiceClient.java",
   ]
 
   deps = [ "//base:base_java" ]
@@ -45,8 +45,8 @@ android_library("java") {
 
 generate_jni("jni") {
   sources = [
-    "java/src/org/chromium/components/metrics/AndroidMetricsLogUploader.java",
-    "java/src/org/chromium/components/metrics/AndroidMetricsServiceClient.java",
+    "java/src/org/monyhar/components/metrics/AndroidMetricsLogUploader.java",
+    "java/src/org/monyhar/components/metrics/AndroidMetricsServiceClient.java",
   ]
 }
 

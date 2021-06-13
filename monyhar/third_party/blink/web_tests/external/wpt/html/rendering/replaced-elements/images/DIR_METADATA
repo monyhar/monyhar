@@ -1,7 +1,7 @@
 monorail {
   component: "Blink>Layout"
 }
-team_email: "layout-dev@chromium.org"
+team_email: "layout-dev@monyhar.org"
 wpt {
   notify: YES
 }

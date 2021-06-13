@@ -30,7 +30,7 @@
 # pylint: disable=relative-import
 """Generate template values for an interface.
 
-Design doc: http://www.chromium.org/developers/design-documents/idl-compiler
+Design doc: http://www.monyhar.org/developers/design-documents/idl-compiler
 """
 import os
 import sys

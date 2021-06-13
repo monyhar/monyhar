@@ -26,7 +26,7 @@ _SRC_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 def ComputePythonDependencies():
   """Gets the paths of imported non-system python modules.
 
-  A path is assumed to be a "system" import if it is outside of chromium's
+  A path is assumed to be a "system" import if it is outside of monyhar's
   src/. The paths will be relative to the current directory.
   """
   module_paths = (m.__file__ for m in sys.modules.values()

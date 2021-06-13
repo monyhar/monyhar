@@ -38,31 +38,31 @@ PACKAGE_INFO.update({
                        'com.google.android.apps.mediashell.MediaShellActivity',
                        'castshell-command-line', None),
     'android_webview_shell':
-    chrome.PackageInfo('org.chromium.android_webview.shell',
-                       'org.chromium.android_webview.shell.AwShellActivity',
+    chrome.PackageInfo('org.monyhar.android_webview.shell',
+                       'org.monyhar.android_webview.shell.AwShellActivity',
                        'android-webview-command-line', None),
     'gtest':
-    chrome.PackageInfo('org.chromium.native_test',
-                       'org.chromium.native_test.NativeUnitTestActivity',
+    chrome.PackageInfo('org.monyhar.native_test',
+                       'org.monyhar.native_test.NativeUnitTestActivity',
                        'chrome-native-tests-command-line', None),
     'android_browsertests':
-    chrome.PackageInfo('org.chromium.android_browsertests_apk',
-                       ('org.chromium.android_browsertests_apk' +
+    chrome.PackageInfo('org.monyhar.android_browsertests_apk',
+                       ('org.monyhar.android_browsertests_apk' +
                         '.ChromeBrowserTestsActivity'),
                        'chrome-native-tests-command-line', None),
     'components_browsertests':
-    chrome.PackageInfo('org.chromium.components_browsertests_apk',
-                       ('org.chromium.components_browsertests_apk' +
+    chrome.PackageInfo('org.monyhar.components_browsertests_apk',
+                       ('org.monyhar.components_browsertests_apk' +
                         '.ComponentsBrowserTestsActivity'),
                        'chrome-native-tests-command-line', None),
     'content_browsertests':
     chrome.PackageInfo(
-        'org.chromium.content_browsertests_apk',
-        'org.chromium.content_browsertests_apk.ContentBrowserTestsActivity',
+        'org.monyhar.content_browsertests_apk',
+        'org.monyhar.content_browsertests_apk.ContentBrowserTestsActivity',
         'chrome-native-tests-command-line', None),
     'chromedriver_webview_shell':
-    chrome.PackageInfo('org.chromium.chromedriver_webview_shell',
-                       'org.chromium.chromedriver_webview_shell.Main', None,
+    chrome.PackageInfo('org.monyhar.chromedriver_webview_shell',
+                       'org.monyhar.chromedriver_webview_shell.Main', None,
                        None),
     'android_webview_cts':
     chrome.PackageInfo('com.android.webview',
@@ -73,17 +73,17 @@ PACKAGE_INFO.update({
                        'com.android.cts.webkit.WebViewStartupCtsActivity',
                        'webview-command-line', None),
     'android_system_webview_shell':
-    chrome.PackageInfo('org.chromium.webview_shell',
-                       'org.chromium.webview_shell.WebViewBrowserActivity',
+    chrome.PackageInfo('org.monyhar.webview_shell',
+                       'org.monyhar.webview_shell.WebViewBrowserActivity',
                        'webview-command-line', None),
     'android_webview_ui_test':
-    chrome.PackageInfo('org.chromium.webview_ui_test',
-                       'org.chromium.webview_ui_test.WebViewUiTestActivity',
+    chrome.PackageInfo('org.monyhar.webview_ui_test',
+                       'org.monyhar.webview_ui_test.WebViewUiTestActivity',
                        'webview-command-line', None),
     'weblayer_browsertests':
     chrome.PackageInfo(
-        'org.chromium.weblayer_browsertests_apk',
-        'org.chromium.weblayer_browsertests_apk.WebLayerBrowserTestsActivity',
+        'org.monyhar.weblayer_browsertests_apk',
+        'org.monyhar.weblayer_browsertests_apk.WebLayerBrowserTestsActivity',
         'chrome-native-tests-command-line', None),
 })
 
@@ -136,7 +136,7 @@ DEVICE_LOCAL_PROPERTIES_PATH = '/data/local.prop'
 # that they will be symbolized, and disable signal handlers because they
 # interfere with the breakpad and sandbox tests.
 # This value is duplicated in
-# base/android/java/src/org/chromium/base/library_loader/LibraryLoader.java
+# base/android/java/src/org/monyhar/base/library_loader/LibraryLoader.java
 UBSAN_OPTIONS = (
     'print_stacktrace=1 stack_trace_format=\'#%n pc %o %m\' '
     'handle_segv=0 handle_sigbus=0 handle_sigfpe=0')
@@ -181,17 +181,17 @@ def SetBuildType(build_type):
         to implement their --release and --debug command-line options.
 
         When writing a new script, consider supporting an --output-dir or
-        --chromium-output-dir option instead, and calling SetOutputDirectory()
+        --monyhar-output-dir option instead, and calling SetOutputDirectory()
         instead.
 
   NOTE: If CHROMIUM_OUTPUT_DIR if defined, or if SetOutputDirectory() was
   called previously, this will be completely ignored.
   """
-  chromium_output_dir = os.environ.get('CHROMIUM_OUTPUT_DIR')
-  if chromium_output_dir:
+  monyhar_output_dir = os.environ.get('CHROMIUM_OUTPUT_DIR')
+  if monyhar_output_dir:
     logging.warning(
         'SetBuildType("%s") ignored since CHROMIUM_OUTPUT_DIR is already '
-        'defined as (%s)', build_type, chromium_output_dir)
+        'defined as (%s)', build_type, monyhar_output_dir)
   os.environ['BUILDTYPE'] = build_type
 
 
@@ -200,7 +200,7 @@ def SetOutputDirectory(output_directory):
 
   This must be called early by scripts that rely on GetOutDirectory() or
   CheckOutputDirectory(). Typically by providing an --output-dir or
-  --chromium-output-dir option.
+  --monyhar-output-dir option.
   """
   os.environ['CHROMIUM_OUTPUT_DIR'] = output_directory
 

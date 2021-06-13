@@ -7,7 +7,7 @@
  -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.chromium.content_browsertests_apk">
+    package="org.monyhar.content_browsertests_apk">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -39,27 +39,27 @@
         <!-- NOTE: If you change the values of "android:process" for any of the below services,
              you also need to update kHelperProcessExecutableName in chrome_constants.cc. -->
         {% set num_sandboxed_services = 40 %}
-        <meta-data android:name="org.chromium.content.browser.NUM_SANDBOXED_SERVICES"
+        <meta-data android:name="org.monyhar.content.browser.NUM_SANDBOXED_SERVICES"
                    android:value="{{ num_sandboxed_services }}"/>
         {% for i in range(num_sandboxed_services) %}
-        <service android:name="org.chromium.content.app.SandboxedProcessService{{ i }}"
+        <service android:name="org.monyhar.content.app.SandboxedProcessService{{ i }}"
                  android:process=":sandboxed_process{{ i }}"
                  android:isolatedProcess="true"
                  android:exported="false" />
         {% endfor %}
 
         {% set num_privileged_services = 5 %}
-        <meta-data android:name="org.chromium.content.browser.NUM_PRIVILEGED_SERVICES"
+        <meta-data android:name="org.monyhar.content.browser.NUM_PRIVILEGED_SERVICES"
                    android:value="{{ num_privileged_services }}"/>
         {% for i in range(num_privileged_services) %}
-        <service android:name="org.chromium.content.app.PrivilegedProcessService{{ i }}"
+        <service android:name="org.monyhar.content.app.PrivilegedProcessService{{ i }}"
                  android:process=":privileged_process{{ i }}"
                  android:isolatedProcess="false"
                  android:exported="false" />
         {% endfor %}
 
         <provider android:name="androidx.core.content.FileProvider"
-            android:authorities="org.chromium.content_browsertests_apk.FileProvider"
+            android:authorities="org.monyhar.content_browsertests_apk.FileProvider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
@@ -67,8 +67,8 @@
         </provider>
     </application>
 
-    <instrumentation android:name="org.chromium.build.gtest_apk.NativeTestInstrumentationTestRunner"
+    <instrumentation android:name="org.monyhar.build.gtest_apk.NativeTestInstrumentationTestRunner"
             android:label="ContentBrowserTests"
-            android:targetPackage="org.chromium.content_browsertests_apk"
-            chromium-junit3="true"/>
+            android:targetPackage="org.monyhar.content_browsertests_apk"
+            monyhar-junit3="true"/>
 </manifest>

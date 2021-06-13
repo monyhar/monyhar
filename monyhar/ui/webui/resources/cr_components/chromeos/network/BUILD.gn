@@ -328,7 +328,7 @@ js_library("cr_policy_network_behavior_mojo.m") {
   deps = [
     "../../../cr_elements/policy:cr_policy_indicator_behavior.m",
     "//chromeos/services/network_config/public/mojom:mojom_js_library_for_compile",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   extra_deps = [ ":modulize" ]
 }
@@ -339,7 +339,7 @@ js_library("cr_policy_network_indicator_mojo.m") {
     ":cr_policy_network_behavior_mojo.m",
     ":onc_mojo",
     "../../../cr_elements/policy:cr_policy_indicator_behavior.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   extra_deps = [ ":cr_policy_network_indicator_mojo_module" ]
 }
@@ -350,7 +350,7 @@ js_library("network_apnlist.m") {
     ":network_property_list_mojo.m",
     ":network_shared_css.m",
     ":onc_mojo.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_button:cr_button.m",
     "//ui/webui/resources/cr_elements/policy:cr_tooltip_icon.m",
     "//ui/webui/resources/js:assert.m",
@@ -366,8 +366,8 @@ js_library("network_choose_mobile.m") {
   deps = [
     ":network_shared_css.m",
     "//chromeos/services/network_config/public/mojom:mojom_js_library_for_compile",
-    "//third_party/polymer/v3_0/components-chromium/iron-flex-layout:iron-flex-layout",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-flex-layout:iron-flex-layout",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_button:cr_button.m",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
@@ -385,10 +385,10 @@ js_library("network_config.m") {
     ":network_password_input.m",
     ":network_shared_css.m",
     "//chrome/browser/ui/webui/settings/chromeos/search:mojo_bindings_js_library_for_compile",
-    "//third_party/polymer/v3_0/components-chromium/iron-flex-layout:iron-flex-layout",
-    "//third_party/polymer/v3_0/components-chromium/iron-icon:iron-icon",
-    "//third_party/polymer/v3_0/components-chromium/paper-spinner:paper-spinner-lite",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-flex-layout:iron-flex-layout",
+    "//third_party/polymer/v3_0/components-monyhar/iron-icon:iron-icon",
+    "//third_party/polymer/v3_0/components-monyhar/paper-spinner:paper-spinner-lite",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_dialog:cr_dialog.m",
     "//ui/webui/resources/cr_elements/cr_toggle:cr_toggle.m",
     "//ui/webui/resources/cr_elements/policy:cr_policy_indicator.m",
@@ -410,7 +410,7 @@ js_library("network_config_input.m") {
     ":cr_policy_network_indicator_mojo.m",
     ":network_config_element_behavior.m",
     ":network_shared_css.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_input:cr_input.m",
   ]
   extra_deps = [ ":network_config_input_module" ]
@@ -423,7 +423,7 @@ js_library("network_config_select.m") {
     ":cr_policy_network_indicator_mojo.m",
     ":network_config_element_behavior.m",
     ":network_shared_css.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/policy:cr_tooltip_icon.m",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
@@ -437,7 +437,7 @@ js_library("network_config_toggle.m") {
     ":cr_policy_network_indicator_mojo.m",
     ":network_config_element_behavior.m",
     ":network_shared_css.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_toggle:cr_toggle.m",
   ]
   extra_deps = [ ":network_config_toggle_module" ]
@@ -447,7 +447,7 @@ js_library("network_icon.m") {
   sources = [ "$root_gen_dir/ui/webui/resources/cr_components/chromeos/network/network_icon.m.js" ]
   deps = [
     ":onc_mojo.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
@@ -461,7 +461,7 @@ js_library("network_ip_config.m") {
     ":network_property_list_mojo.m",
     ":network_shared_css.m",
     ":onc_mojo.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_toggle:cr_toggle.m",
     "//ui/webui/resources/cr_elements/policy:cr_policy_indicator.m",
   ]
@@ -474,8 +474,8 @@ js_library("network_list.m") {
     ":network_list_item.m",
     ":network_list_types.m",
     ":onc_mojo.m",
-    "//third_party/polymer/v3_0/components-chromium/iron-list:iron-list",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-list:iron-list",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements:cr_scrollable_behavior.m",
     "//ui/webui/resources/js:list_property_update_behavior.m",
   ]
@@ -489,8 +489,8 @@ js_library("network_list_item.m") {
     ":mojo_interface_provider.m",
     ":network_list_types.m",
     ":onc_mojo.m",
-    "//third_party/polymer/v3_0/components-chromium/paper-spinner:paper-spinner-lite",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/paper-spinner:paper-spinner-lite",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_components/chromeos/cellular_setup:cellular_types.m",
     "//ui/webui/resources/js/cr/ui:focus_row_behavior.m",
   ]
@@ -517,8 +517,8 @@ js_library("network_nameservers.m") {
   deps = [
     ":cr_policy_network_behavior_mojo.m",
     ":network_shared_css.m",
-    "//third_party/polymer/v3_0/components-chromium/iron-flex-layout:iron-flex-layout",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-flex-layout:iron-flex-layout",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_input:cr_input.m",
     "//ui/webui/resources/cr_elements/cr_radio_button:cr_radio_button.m",
     "//ui/webui/resources/cr_elements/cr_radio_group:cr_radio_group.m",
@@ -535,7 +535,7 @@ js_library("network_password_input.m") {
     ":cr_policy_network_indicator_mojo.m",
     ":network_config_element_behavior.m",
     ":network_shared_css.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_icon_button:cr_icon_button.m",
     "//ui/webui/resources/cr_elements/cr_input:cr_input.m",
     "//ui/webui/resources/js:i18n_behavior.m",
@@ -550,7 +550,7 @@ js_library("network_property_list_mojo.m") {
     ":cr_policy_network_indicator_mojo.m",
     ":network_shared_css.m",
     ":onc_mojo.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_input:cr_input.m",
     "//ui/webui/resources/js:assert.m",
   ]
@@ -565,8 +565,8 @@ js_library("network_proxy.m") {
     ":network_proxy_input.m",
     ":network_shared_css.m",
     ":onc_mojo.m",
-    "//third_party/polymer/v3_0/components-chromium/iron-flex-layout:iron-flex-layout-classes",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-flex-layout:iron-flex-layout-classes",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_button:cr_button.m",
     "//ui/webui/resources/cr_elements/cr_input:cr_input.m",
     "//ui/webui/resources/cr_elements/cr_toggle:cr_toggle.m",
@@ -580,8 +580,8 @@ js_library("network_proxy_exclusions.m") {
   sources = [ "$root_gen_dir/ui/webui/resources/cr_components/chromeos/network/network_proxy_exclusions.m.js" ]
   deps = [
     ":network_shared_css.m",
-    "//third_party/polymer/v3_0/components-chromium/iron-flex-layout:iron-flex-layout-classes",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-flex-layout:iron-flex-layout-classes",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_icon_button:cr_icon_button.m",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
@@ -593,7 +593,7 @@ js_library("network_proxy_input.m") {
   deps = [
     ":network_shared_css.m",
     ":onc_mojo.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_input:cr_input.m",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]
@@ -607,8 +607,8 @@ js_library("network_select.m") {
     ":network_list_types.m",
     ":network_listener_behavior.m",
     ":onc_mojo.m",
-    "//third_party/polymer/v3_0/components-chromium/paper-progress:paper-progress",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/paper-progress:paper-progress",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   extra_deps = [ ":network_select_module" ]
 }
@@ -630,9 +630,9 @@ js_library("network_siminfo.m") {
     ":network_shared_css.m",
     ":onc_mojo.m",
     ":sim_lock_dialogs.m",
-    "//third_party/polymer/v3_0/components-chromium/iron-flex-layout:iron-flex-layout-classes",
-    "//third_party/polymer/v3_0/components-chromium/iron-icon:iron-icon",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-flex-layout:iron-flex-layout-classes",
+    "//third_party/polymer/v3_0/components-monyhar/iron-icon:iron-icon",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_button:cr_button.m",
     "//ui/webui/resources/cr_elements/cr_toggle:cr_toggle.m",
     "//ui/webui/resources/js:assert.m",
@@ -668,9 +668,9 @@ js_library("sim_lock_dialogs.m") {
     ":network_password_input.m",
     ":network_shared_css.m",
     ":onc_mojo.m",
-    "//third_party/polymer/v3_0/components-chromium/iron-flex-layout:iron-flex-layout-classes",
-    "//third_party/polymer/v3_0/components-chromium/iron-icon:iron-icon",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-flex-layout:iron-flex-layout-classes",
+    "//third_party/polymer/v3_0/components-monyhar/iron-icon:iron-icon",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_button:cr_button.m",
     "//ui/webui/resources/cr_elements/cr_dialog:cr_dialog.m",
     "//ui/webui/resources/cr_elements/cr_toggle:cr_toggle.m",

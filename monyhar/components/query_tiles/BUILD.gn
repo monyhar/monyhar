@@ -76,7 +76,7 @@ source_set("factory") {
 if (is_android) {
   android_library("query_tile_java") {
     sources = [
-      "android/java/src/org/chromium/components/query_tiles/QueryTile.java",
+      "android/java/src/org/monyhar/components/query_tiles/QueryTile.java",
     ]
 
     deps = [
@@ -87,11 +87,11 @@ if (is_android) {
 
   android_library("public_java") {
     sources = [
-      "android/java/src/org/chromium/components/query_tiles/QueryTileConstants.java",
-      "android/java/src/org/chromium/components/query_tiles/TileProvider.java",
-      "android/java/src/org/chromium/components/query_tiles/TileUmaLogger.java",
-      "android/java/src/org/chromium/components/query_tiles/bridges/TileConversionBridge.java",
-      "android/java/src/org/chromium/components/query_tiles/bridges/TileProviderBridge.java",
+      "android/java/src/org/monyhar/components/query_tiles/QueryTileConstants.java",
+      "android/java/src/org/monyhar/components/query_tiles/TileProvider.java",
+      "android/java/src/org/monyhar/components/query_tiles/TileUmaLogger.java",
+      "android/java/src/org/monyhar/components/query_tiles/bridges/TileConversionBridge.java",
+      "android/java/src/org/monyhar/components/query_tiles/bridges/TileProviderBridge.java",
     ]
 
     deps = [
@@ -109,13 +109,13 @@ if (is_android) {
     visibility = [ ":*" ]
 
     sources = [
-      "android/java/src/org/chromium/components/query_tiles/bridges/TileConversionBridge.java",
-      "android/java/src/org/chromium/components/query_tiles/bridges/TileProviderBridge.java",
+      "android/java/src/org/monyhar/components/query_tiles/bridges/TileConversionBridge.java",
+      "android/java/src/org/monyhar/components/query_tiles/bridges/TileProviderBridge.java",
     ]
   }
 
   android_library("test_support_java") {
-    sources = [ "android/java/src/org/chromium/components/query_tiles/TestTileProvider.java" ]
+    sources = [ "android/java/src/org/monyhar/components/query_tiles/TestTileProvider.java" ]
 
     deps = [
       ":java",
@@ -126,7 +126,7 @@ if (is_android) {
   android_library("query_tiles_junit_tests") {
     bypass_platform_checks = true
     testonly = true
-    sources = [ "android/java/src/org/chromium/components/query_tiles/TileUmaLoggerTest.java" ]
+    sources = [ "android/java/src/org/monyhar/components/query_tiles/TileUmaLoggerTest.java" ]
 
     deps = [
       ":java",

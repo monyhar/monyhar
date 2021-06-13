@@ -986,7 +986,7 @@ index bd0fd2e51a3bb..12be61c3f581c 100644
  
  
 -/**
-- * @see https://cs.chromium.org/chromium/src/chrome/common/extensions/api/input_method_private.json
+- * @see https://cs.monyhar.org/monyhar/src/chrome/common/extensions/api/input_method_private.json
 - */
 -chrome.inputMethodPrivate = {};
 -

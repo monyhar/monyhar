@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.omnibox;
+package org.monyhar.components.omnibox;
 
 import android.content.res.Resources;
 import android.text.Spannable;
@@ -11,10 +11,10 @@ import android.text.style.StrikethroughSpan;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.components.security_state.ConnectionSecurityLevel;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.security_state.ConnectionSecurityLevel;
 
 import java.util.Locale;
 

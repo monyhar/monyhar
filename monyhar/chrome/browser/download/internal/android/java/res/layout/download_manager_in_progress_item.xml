@@ -16,7 +16,7 @@
     app:columnCount="3"
     app:rowCount="2">
 
-    <org.chromium.chrome.browser.download.home.list.view.CircularProgressView
+    <org.monyhar.chrome.browser.download.home.list.view.CircularProgressView
         android:id="@+id/action_button"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
@@ -43,7 +43,7 @@
         app:layout_row="1"
         app:layout_gravity="fill_horizontal" />
 
-    <org.chromium.ui.widget.ChromeImageButton
+    <org.monyhar.ui.widget.ChromeImageButton
         android:id="@+id/cancel_button"
         android:layout_width="48dp"
         android:layout_height="48dp"

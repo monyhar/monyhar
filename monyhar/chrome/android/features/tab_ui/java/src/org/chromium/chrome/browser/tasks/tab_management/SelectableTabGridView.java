@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -15,8 +15,8 @@ import android.widget.ImageView;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat;
 
-import org.chromium.chrome.tab_ui.R;
-import org.chromium.components.browser_ui.widget.selectable_list.SelectableItemView;
+import org.monyhar.chrome.tab_ui.R;
+import org.monyhar.components.browser_ui.widget.selectable_list.SelectableItemView;
 
 /**
  * Holds the view for a selectable tab grid.

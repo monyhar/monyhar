@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.carousel;
+package org.monyhar.chrome.browser.autofill_assistant.carousel;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -18,8 +18,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.OrientationHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.autofill_assistant.R;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.autofill_assistant.R;
 
 /**
  * Decoration added to the actions carousel that add offsets to each action to have the right inner

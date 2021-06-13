@@ -17,7 +17,7 @@ If you need more advanced test control, please use the runner located at
 //third_party/wpt_tools/wpt/wpt.
 
 Here's the mapping [isolate script flag] : [wpt flag]
---isolated-script-test-output : --log-chromium
+--isolated-script-test-output : --log-monyhar
 --total-shards : --total-chunks
 --shard-index : -- this-chunk
 """
@@ -58,7 +58,7 @@ if BLINK_TOOLS_DIR not in sys.path:
 if BUILD_ANDROID not in sys.path:
   sys.path.append(BUILD_ANDROID)
 
-import devil_chromium
+import devil_monyhar
 
 from blinkpy.web_tests.port.android import (
     PRODUCTS, PRODUCTS_TO_EXPECTATION_FILE_PATHS, ANDROID_WEBLAYER,
@@ -305,8 +305,8 @@ class WPTAndroidAdapter(wpt_common.BaseWptScriptAdapter):
 
 class WPTWeblayerAdapter(WPTAndroidAdapter):
 
-  WEBLAYER_SHELL_PKG = 'org.chromium.weblayer.shell'
-  WEBLAYER_SUPPORT_PKG = 'org.chromium.weblayer.support'
+  WEBLAYER_SHELL_PKG = 'org.monyhar.weblayer.shell'
+  WEBLAYER_SUPPORT_PKG = 'org.monyhar.weblayer.support'
 
   @contextlib.contextmanager
   def _install_apks(self):
@@ -350,7 +350,7 @@ class WPTWebviewAdapter(WPTAndroidAdapter):
       self.system_webview_shell_pkg = apk_helper.GetPackageName(
           self.options.system_webview_shell)
     else:
-      self.system_webview_shell_pkg = 'org.chromium.webview_shell'
+      self.system_webview_shell_pkg = 'org.monyhar.webview_shell'
 
   @contextlib.contextmanager
   def _install_apks(self):
@@ -512,7 +512,7 @@ def add_emulator_args(parser):
 
 
 def main():
-  devil_chromium.Initialize()
+  devil_monyhar.Initialize()
 
   usage = '%(prog)s --product={' + ','.join(PRODUCTS) + '} ...'
   product_parser = argparse.ArgumentParser(

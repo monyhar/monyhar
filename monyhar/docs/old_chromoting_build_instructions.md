@@ -14,8 +14,8 @@ pre-built copy of Chromium (or Chrome) installed on your development computer.
 Before you can compile the code, you must obtain an API key to allow it to
 access the federated Chrome Remote Desktop API.
 
-1.  Join the chromium-dev list, which can be found at
-    https://groups.google.com/a/chromium.org/forum/#!forum/chromium-dev. (This
+1.  Join the monyhar-dev list, which can be found at
+    https://groups.google.com/a/monyhar.org/forum/#!forum/monyhar-dev. (This
     step is required in order to gain access to the Chromoting API.)
 1.  Visit the Google APIs console at https://code.google.com/apis/console.
     1.  Use the `API Project` dropdown to create a new project with a name of
@@ -38,9 +38,9 @@ build using the API keys you just generated.
 
 1.  [Install the build dependencies](linux/build_instructions_prerequisites.md).
 1.  Install the depot\_tools utilities, a process that is documented at
-    https://dev.chromium.org/developers/how-tos/install-depot-tools.
+    https://dev.monyhar.org/developers/how-tos/install-depot-tools.
 1.  Download the Chromium source code by running:
-    `$ fetch chromium --nosvn=True`
+    `$ fetch monyhar --nosvn=True`
 
 ## Build and install the Linux host service
 
@@ -71,7 +71,7 @@ being distributed.
     `Enable remote connections`.
     1.  If the Web app doesn't properly detect the host process, you may need to
         create a symlink to help the plugin find the native messaging host:
-        `$ sudo ln -s /etc/opt/chrome /etc/chromium`
+        `$ sudo ln -s /etc/opt/chrome /etc/monyhar`
 
 (NB: If you compile the host service from source and expect to configure it
 using the browser extension, you must also compile the latter from source.
@@ -114,7 +114,7 @@ source because no official version is being distributed.
 
 1.  Follow all the instructions under the `Getting the code` and
     `Install prerequisites` sections of:
-    https://www.chromium.org/developers/how-tos/android-build-instructions
+    https://www.monyhar.org/developers/how-tos/android-build-instructions
 1.  Move into the `src/` directory that contains your checkout of the Chromium
     code.
 1.  Build the Android app: `$ autoninja -C out/Release remoting_apk`

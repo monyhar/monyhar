@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.base;
+package org.monyhar.ui.base;
 
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -14,8 +14,8 @@ import android.os.Process;
 import android.text.TextUtils;
 import android.util.SparseArray;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.ContextUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.ContextUtils;
 
 import java.util.HashMap;
 import java.util.Map;

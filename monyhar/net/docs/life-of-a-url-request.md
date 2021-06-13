@@ -157,7 +157,7 @@ not trusted to set, for security and privacy reasons.
 
 One such field is the net::IsolationInfo field, which includes:
 * A net::NetworkIsolationKey, which is used to enforce the
-[privacy sandbox](https://www.chromium.org/Home/chromium-privacy/privacy-sandbox)
+[privacy sandbox](https://www.monyhar.org/Home/monyhar-privacy/privacy-sandbox)
 in the network stack, separating network resources used by different sites in
 order to protect against tracking a user across sites.
 * A net::SiteForCookies, which is used to determine which site to send SameSite

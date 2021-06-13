@@ -7,7 +7,7 @@
   await TestRunner.loadModule('console'); await TestRunner.loadTestModule('console_test_runner');
   await TestRunner.showPanel('console');
   await TestRunner.loadHTML(`
-      <a href="http://chromium.org"></a>
+      <a href="http://monyhar.org"></a>
       <p id="test"></p>
   `);
 

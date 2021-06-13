@@ -273,7 +273,7 @@ Dump](../memory-infra/heap_profiler.md#how-to-obtain-a-heap-dump-m66_linux_macos
 ## Working with Minidumps
 
 [See this
-page.](https://sites.google.com/a/chromium.org/dev/developers/crash-reports)
+page.](https://sites.google.com/a/monyhar.org/dev/developers/crash-reports)
 
 ## Disabling ReportCrash
 

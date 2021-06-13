@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.embedder_support.util;
+package org.monyhar.components.embedder_support.util;
 
 import android.net.Uri;
 
@@ -10,13 +10,13 @@ import androidx.annotation.Nullable;
 
 /**
  * A class to canonically represent a HTTP or HTTPS web origin in Java. In comparison to
- * {@link org.chromium.net.GURLUtils#getOrigin} it can be used before native is loaded and lets us
+ * {@link org.monyhar.net.GURLUtils#getOrigin} it can be used before native is loaded and lets us
  * ensure conversion to an origin has been done with the type system.
  *
- * {@link #toString()} does <b>not</b> match {@link org.chromium.net.GURLUtils#getOrigin}. The
+ * {@link #toString()} does <b>not</b> match {@link org.monyhar.net.GURLUtils#getOrigin}. The
  * latter will return a String with a trailing "/". Not having a trailing slash matches RFC
  * behaviour (https://tools.ietf.org/html/rfc6454), it seems that
- * {@link org.chromium.net.GURLUtils#getOrigin} adds it as a bug, but as its result is saved to
+ * {@link org.monyhar.net.GURLUtils#getOrigin} adds it as a bug, but as its result is saved to
  * user's Android Preferences, it is not trivial to change.
  */
 public class Origin {

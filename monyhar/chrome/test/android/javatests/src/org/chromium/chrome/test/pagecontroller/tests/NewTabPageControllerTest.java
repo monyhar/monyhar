@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.pagecontroller.tests;
+package org.monyhar.chrome.test.pagecontroller.tests;
 
 import static org.junit.Assert.assertTrue;
 
@@ -19,13 +19,13 @@ import org.junit.rules.RuleChain;
 import org.junit.rules.TestRule;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.chrome.test.pagecontroller.controllers.ntp.ChromeMenu;
-import org.chromium.chrome.test.pagecontroller.controllers.ntp.NewTabPageController;
-import org.chromium.chrome.test.pagecontroller.controllers.urlpage.UrlPage;
-import org.chromium.chrome.test.pagecontroller.rules.ChromeUiApplicationTestRule;
-import org.chromium.chrome.test.pagecontroller.rules.ChromeUiAutomatorTestRule;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.chrome.test.pagecontroller.controllers.ntp.ChromeMenu;
+import org.monyhar.chrome.test.pagecontroller.controllers.ntp.NewTabPageController;
+import org.monyhar.chrome.test.pagecontroller.controllers.urlpage.UrlPage;
+import org.monyhar.chrome.test.pagecontroller.rules.ChromeUiApplicationTestRule;
+import org.monyhar.chrome.test.pagecontroller.rules.ChromeUiAutomatorTestRule;
 
 /**
  * Tests for the NewTabPageController.

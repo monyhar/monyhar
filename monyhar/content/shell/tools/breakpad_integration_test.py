@@ -24,8 +24,8 @@ TOP_SRC_DIR = os.path.join(os.path.dirname(__file__), '..', '..', '..')
 
 try:
   sys.path.append(os.path.join(TOP_SRC_DIR, 'build', 'android'))
-  import devil_chromium
-  devil_chromium.Initialize()
+  import devil_monyhar
+  devil_monyhar.Initialize()
 
   from pylib.constants import host_paths
   if host_paths.DEVIL_PATH not in sys.path:
@@ -42,7 +42,7 @@ except:
 CONCURRENT_TASKS=4
 BREAKPAD_TOOLS_DIR = os.path.join(
   TOP_SRC_DIR, 'components', 'crash', 'content', 'tools')
-ANDROID_CRASH_DIR = '/data/data/org.chromium.content_shell_apk/cache'
+ANDROID_CRASH_DIR = '/data/data/org.monyhar.content_shell_apk/cache'
 
 
 def GetDevice():

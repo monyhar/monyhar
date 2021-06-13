@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview;
+package org.monyhar.android_webview;
 
-import org.chromium.net.NetworkChangeNotifierAutoDetect;
+import org.monyhar.net.NetworkChangeNotifierAutoDetect;
 
 /**
  * Registration policy to make sure we only listen to network changes when

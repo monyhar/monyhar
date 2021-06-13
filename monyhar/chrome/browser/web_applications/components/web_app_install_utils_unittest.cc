@@ -44,14 +44,14 @@ TEST(WebAppInstallUtils, UpdateWebAppInfoFromManifest) {
 
   WebApplicationInfo web_app_info;
   web_app_info.title = kAlternativeAppTitle;
-  web_app_info.start_url = GURL("http://www.notchromium.org");
+  web_app_info.start_url = GURL("http://www.notmonyhar.org");
   WebApplicationIconInfo info;
   const GURL kAppIcon1("fav1.png");
   info.url = kAppIcon1;
   web_app_info.icon_infos.push_back(info);
 
   blink::Manifest manifest;
-  const GURL kAppUrl("http://www.chromium.org/index.html");
+  const GURL kAppUrl("http://www.monyhar.org/index.html");
   manifest.start_url = kAppUrl;
   manifest.scope = kAppUrl.GetWithoutFilename();
   manifest.short_name = kAppShortName;
@@ -85,7 +85,7 @@ TEST(WebAppInstallUtils, UpdateWebAppInfoFromManifest) {
     manifest.note_taking = note_taking;
   }
 
-  const GURL kAppManifestUrl("http://www.chromium.org/manifest.json");
+  const GURL kAppManifestUrl("http://www.monyhar.org/manifest.json");
   UpdateWebAppInfoFromManifest(manifest, kAppManifestUrl, &web_app_info);
   EXPECT_EQ(kAppShortName, web_app_info.title);
   EXPECT_EQ(kAppUrl, web_app_info.start_url);
@@ -177,7 +177,7 @@ TEST(WebAppInstallUtils, UpdateWebAppInfoFromManifest_EmptyName) {
   manifest.short_name = kAppShortName;
 
   UpdateWebAppInfoFromManifest(
-      manifest, GURL("http://www.chromium.org/manifest.json"), &web_app_info);
+      manifest, GURL("http://www.monyhar.org/manifest.json"), &web_app_info);
   EXPECT_EQ(kAppShortName, web_app_info.title);
 }
 
@@ -198,7 +198,7 @@ TEST(WebAppInstallUtils, UpdateWebAppInfoFromManifest_MaskableIcon) {
   WebApplicationInfo web_app_info;
 
   UpdateWebAppInfoFromManifest(
-      manifest, GURL("http://www.chromium.org/manifest.json"), &web_app_info);
+      manifest, GURL("http://www.monyhar.org/manifest.json"), &web_app_info);
   EXPECT_EQ(4u, web_app_info.icon_infos.size());
   std::map<IconPurpose, int> purpose_to_count;
   for (const auto& icon_info : web_app_info.icon_infos) {
@@ -223,7 +223,7 @@ TEST(WebAppInstallUtils,
   web_app_info.icon_infos.push_back(icon_info);
 
   UpdateWebAppInfoFromManifest(
-      manifest, GURL("http://www.chromium.org/manifest.json"), &web_app_info);
+      manifest, GURL("http://www.monyhar.org/manifest.json"), &web_app_info);
   // Metadata icons are replaced by manifest icon.
   EXPECT_EQ(1U, web_app_info.icon_infos.size());
 }
@@ -250,7 +250,7 @@ TEST(WebAppInstallUtils, UpdateWebAppInfoFromManifest_ShareTarget) {
     manifest.share_target = std::move(share_target);
   }
 
-  const GURL kAppManifestUrl("http://www.chromium.org/manifest.json");
+  const GURL kAppManifestUrl("http://www.monyhar.org/manifest.json");
   UpdateWebAppInfoFromManifest(manifest, kAppManifestUrl, &web_app_info);
 
   {
@@ -309,13 +309,13 @@ TEST(WebAppInstallUtils, UpdateWebAppInfoFromManifestWithShortcuts) {
 
   WebApplicationInfo web_app_info;
   web_app_info.title = kAlternativeAppTitle;
-  web_app_info.start_url = GURL("http://www.notchromium.org");
+  web_app_info.start_url = GURL("http://www.notmonyhar.org");
   WebApplicationIconInfo info;
   const GURL kAppIcon1("fav1.png");
   info.url = kAppIcon1;
   web_app_info.icon_infos.push_back(info);
 
-  const GURL kShortcutItemUrl("http://www.chromium.org/shortcuts/action");
+  const GURL kShortcutItemUrl("http://www.monyhar.org/shortcuts/action");
   for (int i = 0; i < 4; ++i) {
     WebApplicationShortcutsMenuItemInfo shortcuts_menu_item_info;
     WebApplicationShortcutsMenuItemInfo::Icon icon;
@@ -323,7 +323,7 @@ TEST(WebAppInstallUtils, UpdateWebAppInfoFromManifestWithShortcuts) {
         kShortcutItemName + base::NumberToString16(i + 1);
     shortcuts_menu_item_info.url = kShortcutItemUrl;
 
-    icon.url = GURL("http://www.chromium.org/shortcuts/icon1.png");
+    icon.url = GURL("http://www.monyhar.org/shortcuts/icon1.png");
     icon.square_size_px = kIconSize;
 
     IconPurpose purpose = kIconPurposes[i % kIconPurposes.size()];
@@ -334,7 +334,7 @@ TEST(WebAppInstallUtils, UpdateWebAppInfoFromManifestWithShortcuts) {
   }
 
   blink::Manifest manifest;
-  const GURL kAppUrl("http://www.chromium.org/index.html");
+  const GURL kAppUrl("http://www.monyhar.org/index.html");
   manifest.start_url = kAppUrl;
   manifest.scope = kAppUrl.GetWithoutFilename();
   manifest.short_name = kAppShortName;
@@ -363,7 +363,7 @@ TEST(WebAppInstallUtils, UpdateWebAppInfoFromManifestWithShortcuts) {
   }
   WebApplicationInfo web_app_info_original{web_app_info};
 
-  const GURL kAppManifestUrl("http://www.chromium.org/manifest.json");
+  const GURL kAppManifestUrl("http://www.monyhar.org/manifest.json");
   UpdateWebAppInfoFromManifest(manifest, kAppManifestUrl, &web_app_info);
   EXPECT_EQ(kAppShortName, web_app_info.title);
   EXPECT_EQ(kAppUrl, web_app_info.start_url);
@@ -407,7 +407,7 @@ TEST(WebAppInstallUtils, UpdateWebAppInfoFromManifestWithShortcuts) {
   shortcut_item.name = std::u16string(kShortcutItemName) + u"4";
   shortcut_item.url = kShortcutItemUrl;
 
-  const GURL kIconUrl2("http://www.chromium.org/shortcuts/icon2.png");
+  const GURL kIconUrl2("http://www.monyhar.org/shortcuts/icon2.png");
   icon.src = kIconUrl2;
   icon.sizes.emplace_back(10, 10);
   icon.purpose = {Purpose::ANY};
@@ -417,7 +417,7 @@ TEST(WebAppInstallUtils, UpdateWebAppInfoFromManifestWithShortcuts) {
 
   shortcut_item.name = std::u16string(kShortcutItemName) + u"5";
 
-  const GURL kIconUrl3("http://www.chromium.org/shortcuts/icon3.png");
+  const GURL kIconUrl3("http://www.monyhar.org/shortcuts/icon3.png");
   icon.src = kIconUrl3;
   icon.purpose = {Purpose::MASKABLE, Purpose::MONOCHROME};
 
@@ -498,7 +498,7 @@ TEST(WebAppInstallUtils, UpdateWebAppInfoFromManifestTooManyIcons) {
   WebApplicationInfo web_app_info;
 
   UpdateWebAppInfoFromManifest(
-      manifest, GURL("http://www.chromium.org/manifest.json"), &web_app_info);
+      manifest, GURL("http://www.monyhar.org/manifest.json"), &web_app_info);
   EXPECT_EQ(20U, web_app_info.icon_infos.size());
 }
 
@@ -511,10 +511,10 @@ TEST(WebAppInstallUtils, UpdateWebAppInfoFromManifestTooManyShortcutIcons) {
   for (unsigned int i = 0; i < kNumTestIcons; ++i) {
     blink::Manifest::ShortcutItem shortcut_item;
     shortcut_item.name = kShortcutItemName + base::NumberToString16(i);
-    shortcut_item.url = GURL("http://www.chromium.org/shortcuts/action");
+    shortcut_item.url = GURL("http://www.monyhar.org/shortcuts/action");
 
     blink::Manifest::ImageResource icon;
-    icon.src = GURL("http://www.chromium.org/shortcuts/icon1.png");
+    icon.src = GURL("http://www.monyhar.org/shortcuts/icon1.png");
     icon.sizes.emplace_back(i, i);
     icon.purpose.emplace_back(IconPurpose::ANY);
     shortcut_item.icons.push_back(std::move(icon));
@@ -523,7 +523,7 @@ TEST(WebAppInstallUtils, UpdateWebAppInfoFromManifestTooManyShortcutIcons) {
   }
   WebApplicationInfo web_app_info;
   UpdateWebAppInfoFromManifest(
-      manifest, GURL("http://www.chromium.org/manifest.json"), &web_app_info);
+      manifest, GURL("http://www.monyhar.org/manifest.json"), &web_app_info);
 
   std::vector<WebApplicationShortcutsMenuItemInfo::Icon> all_icons;
   for (const auto& shortcut : web_app_info.shortcuts_menu_item_infos) {
@@ -550,7 +550,7 @@ TEST(WebAppInstallUtils, UpdateWebAppInfoFromManifestIconsTooLarge) {
 
   WebApplicationInfo web_app_info;
   UpdateWebAppInfoFromManifest(
-      manifest, GURL("http://www.chromium.org/manifest.json"), &web_app_info);
+      manifest, GURL("http://www.monyhar.org/manifest.json"), &web_app_info);
 
   EXPECT_EQ(10U, web_app_info.icon_infos.size());
   for (const WebApplicationIconInfo& icon : web_app_info.icon_infos) {
@@ -567,10 +567,10 @@ TEST(WebAppInstallUtils, UpdateWebAppInfoFromManifestShortcutIconsTooLarge) {
   for (int i = 1; i <= 20; ++i) {
     blink::Manifest::ShortcutItem shortcut_item;
     shortcut_item.name = kShortcutItemName + base::NumberToString16(i);
-    shortcut_item.url = GURL("http://www.chromium.org/shortcuts/action");
+    shortcut_item.url = GURL("http://www.monyhar.org/shortcuts/action");
 
     blink::Manifest::ImageResource icon;
-    icon.src = GURL("http://www.chromium.org/shortcuts/icon1.png");
+    icon.src = GURL("http://www.monyhar.org/shortcuts/icon1.png");
     icon.purpose.push_back(Purpose::ANY);
     const int size = i * 100;
     icon.sizes.emplace_back(size, size);
@@ -580,7 +580,7 @@ TEST(WebAppInstallUtils, UpdateWebAppInfoFromManifestShortcutIconsTooLarge) {
   }
   WebApplicationInfo web_app_info;
   UpdateWebAppInfoFromManifest(
-      manifest, GURL("http://www.chromium.org/manifest.json"), &web_app_info);
+      manifest, GURL("http://www.monyhar.org/manifest.json"), &web_app_info);
 
   std::vector<WebApplicationShortcutsMenuItemInfo::Icon> all_icons;
   for (const auto& shortcut : web_app_info.shortcuts_menu_item_infos) {
@@ -598,12 +598,12 @@ TEST(WebAppInstallUtils, PopulateShortcutItemIcons) {
   WebApplicationInfo web_app_info;
   WebApplicationShortcutsMenuItemInfo::Icon icon;
 
-  const GURL kIconUrl1("http://www.chromium.org/shortcuts/icon1.png");
+  const GURL kIconUrl1("http://www.monyhar.org/shortcuts/icon1.png");
   {
     WebApplicationShortcutsMenuItemInfo shortcut_item;
     std::vector<WebApplicationShortcutsMenuItemInfo::Icon> shortcut_icon_infos;
     shortcut_item.name = std::u16string(kShortcutItemName) + u"1";
-    shortcut_item.url = GURL("http://www.chromium.org/shortcuts/action");
+    shortcut_item.url = GURL("http://www.monyhar.org/shortcuts/action");
     icon.url = kIconUrl1;
     icon.square_size_px = kIconSize;
     shortcut_icon_infos.push_back(icon);
@@ -612,7 +612,7 @@ TEST(WebAppInstallUtils, PopulateShortcutItemIcons) {
     web_app_info.shortcuts_menu_item_infos.push_back(std::move(shortcut_item));
   }
 
-  const GURL kIconUrl2("http://www.chromium.org/shortcuts/icon2.png");
+  const GURL kIconUrl2("http://www.monyhar.org/shortcuts/icon2.png");
   {
     WebApplicationShortcutsMenuItemInfo shortcut_item;
     std::vector<WebApplicationShortcutsMenuItemInfo::Icon> shortcut_icon_infos;
@@ -635,7 +635,7 @@ TEST(WebAppInstallUtils, PopulateShortcutItemIcons) {
     std::vector<SkBitmap> bmp3 = {CreateSquareIcon(32, SK_ColorRED)};
     icons_map.emplace(kIconUrl1, bmp1);
     icons_map.emplace(kIconUrl2, bmp2);
-    icons_map.emplace(GURL("http://www.chromium.org/shortcuts/icon3.png"),
+    icons_map.emplace(GURL("http://www.monyhar.org/shortcuts/icon3.png"),
                       bmp3);
     PopulateShortcutItemIcons(&web_app_info, &icons_map);
   }
@@ -655,9 +655,9 @@ TEST(WebAppInstallUtils, PopulateShortcutItemIconsNoShortcutIcons) {
   std::vector<SkBitmap> bmp1 = {CreateSquareIcon(32, SK_ColorWHITE)};
   std::vector<SkBitmap> bmp2 = {CreateSquareIcon(32, SK_ColorBLUE)};
   std::vector<SkBitmap> bmp3 = {CreateSquareIcon(32, SK_ColorRED)};
-  icons_map.emplace(GURL("http://www.chromium.org/shortcuts/icon1.png"), bmp1);
-  icons_map.emplace(GURL("http://www.chromium.org/shortcuts/icon2.png"), bmp2);
-  icons_map.emplace(GURL("http://www.chromium.org/shortcuts/icon3.png"), bmp3);
+  icons_map.emplace(GURL("http://www.monyhar.org/shortcuts/icon1.png"), bmp1);
+  icons_map.emplace(GURL("http://www.monyhar.org/shortcuts/icon2.png"), bmp2);
+  icons_map.emplace(GURL("http://www.monyhar.org/shortcuts/icon3.png"), bmp3);
 
   PopulateShortcutItemIcons(&web_app_info, &icons_map);
 
@@ -678,7 +678,7 @@ TEST(WebAppInstallUtils,
 
   IconsMap icons_map;
   std::vector<SkBitmap> bmp1 = {CreateSquareIcon(32, SK_ColorWHITE)};
-  icons_map.emplace(GURL("http://www.chromium.org/shortcuts/icon1.png"), bmp1);
+  icons_map.emplace(GURL("http://www.monyhar.org/shortcuts/icon1.png"), bmp1);
   FilterAndResizeIconsGenerateMissing(&web_app_info, &icons_map);
 
   EXPECT_EQ(SizesToGenerate().size(), web_app_info.icon_bitmaps.any.size());
@@ -693,10 +693,10 @@ TEST(WebAppInstallUtils,
 TEST(WebAppInstallUtils, FilterAndResizeIconsGenerateMissing_MaskableIcons) {
   // Construct |icons_map| to pass to FilterAndResizeIconsGenerateMissing().
   IconsMap icons_map;
-  const GURL kIconUrl1("http://www.chromium.org/shortcuts/icon1.png");
+  const GURL kIconUrl1("http://www.monyhar.org/shortcuts/icon1.png");
   std::vector<SkBitmap> bmp1 = {CreateSquareIcon(32, SK_ColorWHITE)};
   icons_map.emplace(kIconUrl1, bmp1);
-  const GURL kIconUrl2("http://www.chromium.org/shortcuts/icon2.png");
+  const GURL kIconUrl2("http://www.monyhar.org/shortcuts/icon2.png");
   std::vector<SkBitmap> bmp2 = {CreateSquareIcon(64, SK_ColorBLUE)};
   icons_map.emplace(kIconUrl2, bmp2);
 
@@ -731,7 +731,7 @@ TEST(WebAppInstallUtils,
      FilterAndResizeIconsGenerateMissing_MaskableIconsOnly) {
   // Construct |icons_map| to pass to FilterAndResizeIconsGenerateMissing().
   IconsMap icons_map;
-  const GURL kIconUrl1("http://www.chromium.org/shortcuts/icon1.png");
+  const GURL kIconUrl1("http://www.monyhar.org/shortcuts/icon1.png");
   std::vector<SkBitmap> bmp1 = {CreateSquareIcon(32, SK_ColorWHITE)};
   icons_map.emplace(kIconUrl1, bmp1);
 
@@ -773,7 +773,7 @@ TEST(WebAppInstallUtils,
 
   IconsMap icons_map;
   std::vector<SkBitmap> bmp1 = {CreateSquareIcon(32, SK_ColorWHITE)};
-  icons_map.emplace(GURL("http://www.chromium.org/shortcuts/icon1.png"), bmp1);
+  icons_map.emplace(GURL("http://www.monyhar.org/shortcuts/icon1.png"), bmp1);
   FilterAndResizeIconsGenerateMissing(&web_app_info, &icons_map);
 
   // Expect to fall back to using icon from icons_map.
@@ -792,10 +792,10 @@ TEST(WebAppInstallUtils, FilterAndResizeIconsGenerateMissingWithShortcutIcons) {
 
   // Construct |icons_map| to pass to FilterAndResizeIconsGenerateMissing().
   IconsMap icons_map;
-  const GURL kIconUrl1("http://www.chromium.org/shortcuts/icon1.png");
+  const GURL kIconUrl1("http://www.monyhar.org/shortcuts/icon1.png");
   std::vector<SkBitmap> bmp1 = {CreateSquareIcon(32, SK_ColorWHITE)};
   icons_map.emplace(kIconUrl1, bmp1);
-  const GURL kIconUrl2("http://www.chromium.org/shortcuts/icon2.png");
+  const GURL kIconUrl2("http://www.monyhar.org/shortcuts/icon2.png");
   std::vector<SkBitmap> bmp2 = {CreateSquareIcon(kIconSize, SK_ColorBLUE)};
   icons_map.emplace(kIconUrl2, bmp2);
 
@@ -812,7 +812,7 @@ TEST(WebAppInstallUtils, FilterAndResizeIconsGenerateMissingWithShortcutIcons) {
   WebApplicationShortcutsMenuItemInfo shortcuts_menu_item_info;
   shortcuts_menu_item_info.name = kShortcutItemName;
   shortcuts_menu_item_info.url =
-      GURL("http://www.chromium.org/shortcuts/action");
+      GURL("http://www.monyhar.org/shortcuts/action");
   // Construct |icon| to add to |shortcuts_menu_item_info.shortcut_icon_infos|.
   WebApplicationShortcutsMenuItemInfo::Icon icon;
   icon.url = kIconUrl2;

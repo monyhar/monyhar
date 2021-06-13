@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.messages;
+package org.monyhar.components.messages;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -18,17 +18,17 @@ import android.widget.TextView;
 import androidx.annotation.ColorInt;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.components.browser_ui.widget.BoundedLinearLayout;
-import org.chromium.components.browser_ui.widget.gesture.SwipeGestureListener;
-import org.chromium.components.browser_ui.widget.gesture.SwipeGestureListener.SwipeHandler;
-import org.chromium.components.browser_ui.widget.listmenu.BasicListMenu;
-import org.chromium.components.browser_ui.widget.listmenu.ListMenu;
-import org.chromium.components.browser_ui.widget.listmenu.ListMenuButton;
-import org.chromium.components.browser_ui.widget.listmenu.ListMenuButtonDelegate;
-import org.chromium.components.browser_ui.widget.listmenu.ListMenuItemProperties;
-import org.chromium.ui.modelutil.MVCListAdapter;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.components.browser_ui.widget.BoundedLinearLayout;
+import org.monyhar.components.browser_ui.widget.gesture.SwipeGestureListener;
+import org.monyhar.components.browser_ui.widget.gesture.SwipeGestureListener.SwipeHandler;
+import org.monyhar.components.browser_ui.widget.listmenu.BasicListMenu;
+import org.monyhar.components.browser_ui.widget.listmenu.ListMenu;
+import org.monyhar.components.browser_ui.widget.listmenu.ListMenuButton;
+import org.monyhar.components.browser_ui.widget.listmenu.ListMenuButtonDelegate;
+import org.monyhar.components.browser_ui.widget.listmenu.ListMenuItemProperties;
+import org.monyhar.ui.modelutil.MVCListAdapter;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * View representing the message banner.

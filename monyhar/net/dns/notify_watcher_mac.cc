@@ -17,7 +17,7 @@ namespace {
 
 // Registers a dummy file descriptor to workaround a bug in libnotify
 // in macOS 10.12
-// See https://bugs.chromium.org/p/chromium/issues/detail?id=783148.
+// See https://bugs.monyhar.org/p/monyhar/issues/detail?id=783148.
 class NotifyFileDescriptorsGlobalsHolder {
  public:
   NotifyFileDescriptorsGlobalsHolder() {

@@ -56,11 +56,11 @@ def add_disused_address(cursor):
                       use_count=13,
                       use_date=timestamp,
                       date_modified=timestamp,
-                      origin='https://test.chromium.org',
+                      origin='https://test.monyhar.org',
                       language_code='en')
   name_data = dict(guid=guid, first_name='John', middle_name='Quincy',
                    last_name='Disused', full_name='John Quincy Disused')
-  email_data = dict(guid=guid, email='disused@fake.chromium.org')
+  email_data = dict(guid=guid, email='disused@fake.monyhar.org')
   phone_data = dict(guid=guid, number='800-555-0173')
   insert(cursor, _AUTOFILL_PROFILE_TABLE, profile_data)
   insert(cursor, _AUTOFILL_PROFILE_NAMES_TABLE, name_data)

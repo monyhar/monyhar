@@ -6,7 +6,7 @@
 """A tool for interacting with .pak files.
 
 For details on the pak file format, see:
-https://dev.chromium.org/developers/design-documents/linuxresourcesandlocalizedstrings
+https://dev.monyhar.org/developers/design-documents/linuxresourcesandlocalizedstrings
 """
 
 from __future__ import print_function

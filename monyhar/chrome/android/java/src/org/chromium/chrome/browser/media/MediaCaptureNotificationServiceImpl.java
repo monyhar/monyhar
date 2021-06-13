@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.media;
+package org.monyhar.chrome.browser.media;
 
 import android.app.PendingIntent;
 import android.content.Context;
@@ -12,28 +12,28 @@ import android.util.SparseIntArray;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.app.tabmodel.TabWindowManagerSingleton;
-import org.chromium.chrome.browser.notifications.NotificationUmaTracker;
-import org.chromium.chrome.browser.notifications.NotificationWrapperBuilderFactory;
-import org.chromium.chrome.browser.notifications.channels.ChromeChannelDefinitions;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.ui.MediaCaptureOverlayController;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxy;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxyImpl;
-import org.chromium.components.browser_ui.notifications.NotificationMetadata;
-import org.chromium.components.browser_ui.notifications.NotificationWrapper;
-import org.chromium.components.browser_ui.notifications.NotificationWrapperBuilder;
-import org.chromium.components.browser_ui.notifications.PendingIntentProvider;
-import org.chromium.components.webrtc.MediaCaptureNotificationUtil;
-import org.chromium.components.webrtc.MediaCaptureNotificationUtil.MediaType;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.url.GURL;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.app.tabmodel.TabWindowManagerSingleton;
+import org.monyhar.chrome.browser.notifications.NotificationUmaTracker;
+import org.monyhar.chrome.browser.notifications.NotificationWrapperBuilderFactory;
+import org.monyhar.chrome.browser.notifications.channels.ChromeChannelDefinitions;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.ui.MediaCaptureOverlayController;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxy;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxyImpl;
+import org.monyhar.components.browser_ui.notifications.NotificationMetadata;
+import org.monyhar.components.browser_ui.notifications.NotificationWrapper;
+import org.monyhar.components.browser_ui.notifications.NotificationWrapperBuilder;
+import org.monyhar.components.browser_ui.notifications.PendingIntentProvider;
+import org.monyhar.components.webrtc.MediaCaptureNotificationUtil;
+import org.monyhar.components.webrtc.MediaCaptureNotificationUtil.MediaType;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.url.GURL;
 
 import java.util.HashSet;
 import java.util.Iterator;
@@ -44,9 +44,9 @@ import java.util.Set;
  */
 public class MediaCaptureNotificationServiceImpl extends MediaCaptureNotificationService.Impl {
     private static final String ACTION_MEDIA_CAPTURE_UPDATE =
-            "org.chromium.chrome.browser.media.SCREEN_CAPTURE_UPDATE";
+            "org.monyhar.chrome.browser.media.SCREEN_CAPTURE_UPDATE";
     private static final String ACTION_SCREEN_CAPTURE_STOP =
-            "org.chromium.chrome.browser.media.SCREEN_CAPTURE_STOP";
+            "org.monyhar.chrome.browser.media.SCREEN_CAPTURE_STOP";
 
     private static final String NOTIFICATION_NAMESPACE = "MediaCaptureNotificationService";
 

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.geo;
+package org.monyhar.chrome.browser.omnibox.geo;
 
 import android.Manifest;
 import android.content.Context;
@@ -16,8 +16,8 @@ import android.os.Process;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.ThreadUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.ThreadUtils;
 
 /**
  * Keeps track of the device's location, allowing synchronous location requests.

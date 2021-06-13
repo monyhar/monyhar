@@ -105,10 +105,10 @@ int CrashReporterMain() {
   DCHECK(command_line->HasSwitch(kCrashHandlerSwitch));
 
   // Disable rate-limiting until this is fixed:
-  //   https://bugs.chromium.org/p/crashpad/issues/detail?id=23
+  //   https://bugs.monyhar.org/p/crashpad/issues/detail?id=23
   command_line->AppendSwitch(kNoRateLimitSwitch);
 
-  // Because of https://bugs.chromium.org/p/crashpad/issues/detail?id=82,
+  // Because of https://bugs.monyhar.org/p/crashpad/issues/detail?id=82,
   // Crashpad fails on the presence of flags it doesn't handle.
   command_line->RemoveSwitch(kCrashHandlerSwitch);
   command_line->RemoveSwitch(kSystemSwitch);

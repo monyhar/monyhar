@@ -122,7 +122,7 @@ class WebFeedPageInformation {
 };
 std::ostream& operator<<(std::ostream& os, const WebFeedPageInformation& value);
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.feed.webfeed
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.feed.webfeed
 enum class WebFeedSubscriptionStatus {
   kUnknown = 0,
   kSubscribed = 1,
@@ -153,7 +153,7 @@ struct WebFeedMetadata {
 };
 std::ostream& operator<<(std::ostream& out, const WebFeedMetadata& value);
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.feed.webfeed
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.feed.webfeed
 enum class WebFeedSubscriptionRequestStatus {
   kUnknown = 0,
   kSuccess = 1,

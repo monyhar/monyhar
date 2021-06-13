@@ -64,7 +64,7 @@ anyone outside of Google.
 At this point, you can generate a list of commits with a single command:
 
 ```
-$ python3 team-milestone-stats.py <path-to-chromium-src> <target-milestone> --html --file
+$ python3 team-milestone-stats.py <path-to-monyhar-src> <target-milestone> --html --file
 ```
 
 The above command will run a script to generate a list of accessibility-related

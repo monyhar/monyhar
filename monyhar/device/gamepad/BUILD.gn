@@ -191,14 +191,14 @@ static_library("test_helpers") {
 if (is_android) {
   generate_jni("jni_headers") {
     sources =
-        [ "android/java/src/org/chromium/device/gamepad/GamepadList.java" ]
+        [ "android/java/src/org/monyhar/device/gamepad/GamepadList.java" ]
   }
 
   android_library("java") {
     sources = [
-      "android/java/src/org/chromium/device/gamepad/GamepadDevice.java",
-      "android/java/src/org/chromium/device/gamepad/GamepadList.java",
-      "android/java/src/org/chromium/device/gamepad/GamepadMappings.java",
+      "android/java/src/org/monyhar/device/gamepad/GamepadDevice.java",
+      "android/java/src/org/monyhar/device/gamepad/GamepadList.java",
+      "android/java/src/org/monyhar/device/gamepad/GamepadMappings.java",
     ]
     deps = [
       "//base:base_java",

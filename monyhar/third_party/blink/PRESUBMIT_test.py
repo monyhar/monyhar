@@ -40,12 +40,12 @@ class PresubmitTest(unittest.TestCase):
         check_blink_style.py on non-test files.
         """
         diff_file_blink_h = ['some diff']
-        diff_file_chromium_h = ['another diff']
+        diff_file_monyhar_h = ['another diff']
         diff_file_test_expectations = ['more diff']
         mock_input_api = MockInputApi()
         mock_input_api.files = [
             MockAffectedFile('file_blink.h', diff_file_blink_h),
-            MockAffectedFile('file_chromium.h', diff_file_chromium_h),
+            MockAffectedFile('file_monyhar.h', diff_file_monyhar_h),
             MockAffectedFile('web_tests/TestExpectations',
                              diff_file_test_expectations)
         ]
@@ -64,8 +64,8 @@ class PresubmitTest(unittest.TestCase):
         """This verifies that CheckChangeOnUpload will skip calling
         check_blink_style.py if the affected file list is empty.
         """
-        diff_file_chromium1_h = ['some diff']
-        diff_file_chromium2_h = ['another diff']
+        diff_file_monyhar1_h = ['some diff']
+        diff_file_monyhar2_h = ['another diff']
         diff_file_layout_test_html = ['more diff']
         mock_input_api = MockInputApi()
         mock_input_api.files = []
@@ -76,13 +76,13 @@ class PresubmitTest(unittest.TestCase):
 
     def test_FilterPaths(self):
         """This verifies that _FilterPaths removes expected paths."""
-        diff_file_chromium1_h = ['some diff']
+        diff_file_monyhar1_h = ['some diff']
         diff_web_tests_html = ['more diff']
         diff_presubmit = ['morer diff']
         diff_test_expectations = ['morest diff']
         mock_input_api = MockInputApi()
         mock_input_api.files = [
-            MockAffectedFile('file_chromium1.h', diff_file_chromium1_h),
+            MockAffectedFile('file_monyhar1.h', diff_file_monyhar1_h),
             MockAffectedFile('web_tests/some_tests.html', diff_web_tests_html),
             MockAffectedFile('web_tests/TestExpectations',
                              diff_test_expectations),
@@ -93,7 +93,7 @@ class PresubmitTest(unittest.TestCase):
         filtered = PRESUBMIT._FilterPaths(mock_input_api)
         self.assertEqual(2, len(filtered))
         self.assertEqual(
-            mock_input_api.os_path.join('..', '..', 'file_chromium1.h'),
+            mock_input_api.os_path.join('..', '..', 'file_monyhar1.h'),
             filtered[0])
         self.assertEqual(
             mock_input_api.os_path.join('..', '..',

@@ -5,7 +5,7 @@ It's very simple to get started with ERC; just do the following:
 1.  Optional: Sign up at freenode.net to claim your nickname.
 1.  M-x
 1.  erc (and accept default for the first couple of items)
-1.  /join #chromium
+1.  /join #monyhar
 
 You may notice the following problems:
 

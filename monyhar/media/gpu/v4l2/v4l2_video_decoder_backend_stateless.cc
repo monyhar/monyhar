@@ -26,7 +26,7 @@
 #include "media/gpu/v4l2/v4l2_h264_accelerator_legacy.h"
 #include "media/gpu/v4l2/v4l2_vp8_accelerator.h"
 #include "media/gpu/v4l2/v4l2_vp8_accelerator_legacy.h"
-#include "media/gpu/v4l2/v4l2_vp9_accelerator_chromium.h"
+#include "media/gpu/v4l2/v4l2_vp9_accelerator_monyhar.h"
 #include "media/gpu/v4l2/v4l2_vp9_accelerator_legacy.h"
 
 namespace media {

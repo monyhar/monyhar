@@ -22,7 +22,7 @@ inline base::TimeTicks ToTraceTimestamp(double seconds) {
   return base::TimeTicks() + base::TimeDelta::FromSecondsD(seconds);
 }
 
-// This is to avoid error of passing a chromium time internal value.
+// This is to avoid error of passing a monyhar time internal value.
 void ToTraceTimestamp(int64_t);
 
 PLATFORM_EXPORT void EnableTracing(const String& category_filter);

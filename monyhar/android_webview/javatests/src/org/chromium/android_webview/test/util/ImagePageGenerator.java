@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test.util;
+package org.monyhar.android_webview.test.util;
 
-import org.chromium.net.test.util.TestWebServer;
+import org.monyhar.net.test.util.TestWebServer;
 
 /**
  * The purpose of the generator is to provide a sequence of distinct images to

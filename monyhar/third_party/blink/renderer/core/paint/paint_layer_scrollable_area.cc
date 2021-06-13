@@ -639,7 +639,7 @@ void PaintLayerScrollableArea::InvalidatePaintForScrollOffsetChange() {
   }
 
   // TODO(chrishtr): remove this slow path once crbug.com/906885 is fixed.
-  // See also https://bugs.chromium.org/p/chromium/issues/detail?id=903287#c10.
+  // See also https://bugs.monyhar.org/p/monyhar/issues/detail?id=903287#c10.
   if (Layer()->EnclosingPaginationLayer())
     box->SetSubtreeShouldCheckForPaintInvalidation();
 

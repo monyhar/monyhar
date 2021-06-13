@@ -13,7 +13,7 @@
 # limitations under the License.
 
 vars = {
-  'chromium_git': 'https://chromium.googlesource.com',
+  'monyhar_git': 'https://monyhar.googlesource.com',
   'pull_linux_clang': False,
   'pull_win_toolchain': False,
   # Controls whether crashpad/build/ios/setup-ios-gn.py is run as part of
@@ -24,30 +24,30 @@ vars = {
 
 deps = {
   'buildtools':
-      Var('chromium_git') + '/chromium/src/buildtools.git@' +
+      Var('monyhar_git') + '/monyhar/src/buildtools.git@' +
       '9e121212d42be62a7cce38072f925f8398d11e49',
   'crashpad/third_party/edo/edo': {
-      'url': Var('chromium_git') + '/external/github.com/google/eDistantObject.git@' +
+      'url': Var('monyhar_git') + '/external/github.com/google/eDistantObject.git@' +
       '6ffbf833173f53fcd06ecf08670a95cc01c01f72',
       'condition': 'checkout_ios',
   },
   'crashpad/third_party/googletest/googletest':
-      Var('chromium_git') + '/external/github.com/google/googletest@' +
+      Var('monyhar_git') + '/external/github.com/google/googletest@' +
       '11da093e0477185dbd78abaaa9f99db15be498d0',
   'crashpad/third_party/gyp/gyp':
-      Var('chromium_git') + '/external/gyp@' +
+      Var('monyhar_git') + '/external/gyp@' +
       '8bee09f4a57807136593ddc906b0b213c21f9014',
   'crashpad/third_party/lss/lss':
-      Var('chromium_git') + '/linux-syscall-support.git@' +
+      Var('monyhar_git') + '/linux-syscall-support.git@' +
       '7bde79cc274d06451bf65ae82c012a5d3e476b5a',
-  'crashpad/third_party/mini_chromium/mini_chromium':
-      Var('chromium_git') + '/chromium/mini_chromium@' +
+  'crashpad/third_party/mini_monyhar/mini_monyhar':
+      Var('monyhar_git') + '/monyhar/mini_monyhar@' +
       'c0c965a19b442c2ecc38d5c4a90e23ac8b69b804',
   'crashpad/third_party/libfuzzer/src':
-      Var('chromium_git') + '/chromium/llvm-project/compiler-rt/lib/fuzzer.git@' +
+      Var('monyhar_git') + '/monyhar/llvm-project/compiler-rt/lib/fuzzer.git@' +
       'fda403cf93ecb8792cb1d061564d89a6553ca020',
   'crashpad/third_party/zlib/zlib':
-      Var('chromium_git') + '/chromium/src/third_party/zlib@' +
+      Var('monyhar_git') + '/monyhar/src/third_party/zlib@' +
       '13dc246a58e4b72104d35f9b1809af95221ebda7',
 
   # CIPD packages below.
@@ -126,7 +126,7 @@ hooks = [
       'download_from_google_storage',
       '--no_resume',
       '--no_auth',
-      '--bucket=chromium-clang-format',
+      '--bucket=monyhar-clang-format',
       '--sha1_file',
       'buildtools/mac/clang-format.sha1',
     ],
@@ -139,7 +139,7 @@ hooks = [
       'download_from_google_storage',
       '--no_resume',
       '--no_auth',
-      '--bucket=chromium-clang-format',
+      '--bucket=monyhar-clang-format',
       '--sha1_file',
       'buildtools/linux64/clang-format.sha1',
     ],
@@ -152,7 +152,7 @@ hooks = [
       'download_from_google_storage',
       '--no_resume',
       '--no_auth',
-      '--bucket=chromium-clang-format',
+      '--bucket=monyhar-clang-format',
       '--sha1_file',
       'buildtools/win/clang-format.exe.sha1',
     ],

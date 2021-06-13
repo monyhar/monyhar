@@ -12,7 +12,7 @@ Requires:
     http://selenium-python.readthedocs.org/
 
   - ChromeDriver
-    https://sites.google.com/a/chromium.org/chromedriver/downloads
+    https://sites.google.com/a/monyhar.org/chromedriver/downloads
     The ChromeDriver executable must be available on the search PATH.
 
   - Chrome

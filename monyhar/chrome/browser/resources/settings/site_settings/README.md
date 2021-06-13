@@ -13,17 +13,17 @@ Behind the scenes, these are simple "html" pages using the
 [polymer](https://www.polymer-project.org/) JavaScript library.
 
 All content settings pages live under this folder and under the
-[../site_settings_page](https://cs.chromium.org/chromium/src/chrome/browser/resources/settings/site_settings_page/)
+[../site_settings_page](https://cs.monyhar.org/monyhar/src/chrome/browser/resources/settings/site_settings_page/)
 folder. Arguably, the most important pages are:
 
-*   [site_settings_page.html](https://cs.chromium.org/chromium/src/chrome/browser/resources/settings/site_settings_page/site_settings_page.html?type=cs&g=0)
+*   [site_settings_page.html](https://cs.monyhar.org/monyhar/src/chrome/browser/resources/settings/site_settings_page/site_settings_page.html?type=cs&g=0)
     is the main settings page (`chrome://settings/content`).
-*   [all_sites.html](https://cs.chromium.org/chromium/src/chrome/browser/resources/settings/site_settings/all_sites.html)
+*   [all_sites.html](https://cs.monyhar.org/monyhar/src/chrome/browser/resources/settings/site_settings/all_sites.html)
     lists all sites that have any relevant information to the users
     (`chrome://settings/content/all`).
-*   [category_default_setting.html](https://cs.chromium.org/chromium/src/chrome/browser/resources/settings/site_settings/category_default_setting.html?g=0)
+*   [category_default_setting.html](https://cs.monyhar.org/monyhar/src/chrome/browser/resources/settings/site_settings/category_default_setting.html?g=0)
     is used to show some particular settings category (e.g. "location").
-*   [site_details.html](https://cs.chromium.org/chromium/src/chrome/browser/resources/settings/site_settings/site_details.html?type=cs&g=0)
+*   [site_details.html](https://cs.monyhar.org/monyhar/src/chrome/browser/resources/settings/site_settings/site_details.html?type=cs&g=0)
     displays a detailed page for a particular origin.
 
 Here are some common patterns/coding practices/tips that you might find useful:
@@ -61,7 +61,7 @@ localized to the language settings of the user. Examples:
 ```
 
 The string ids are mapped in
-[settings_localized_strings_provider.cc](https://cs.chromium.org/chromium/src/chrome/browser/ui/webui/settings/settings_localized_strings_provider.cc)
+[settings_localized_strings_provider.cc](https://cs.monyhar.org/monyhar/src/chrome/browser/ui/webui/settings/settings_localized_strings_provider.cc)
 to `IDS_` chrome resource strings ids.
 
 ## Updating prefs
@@ -93,11 +93,11 @@ make use of the `this.browserProxy` object which allows you to communicate with
 the browser.
 
 The class is declared in
-[site_settings_prefs_browser_proxy.js](https://cs.chromium.org/chromium/src/chrome/browser/resources/settings/site_settings/site_settings_prefs_browser_proxy.js)
+[site_settings_prefs_browser_proxy.js](https://cs.monyhar.org/monyhar/src/chrome/browser/resources/settings/site_settings/site_settings_prefs_browser_proxy.js)
 and the browser implementation resides in
-[site_settings_handler.h](https://cs.chromium.org/chromium/src/chrome/browser/ui/webui/settings/site_settings_handler.h?type=cs&g=0).
+[site_settings_handler.h](https://cs.monyhar.org/monyhar/src/chrome/browser/ui/webui/settings/site_settings_handler.h?type=cs&g=0).
 Make sure to
-[register](https://cs.chromium.org/chromium/src/chrome/browser/ui/webui/settings/site_settings_handler.cc?type=cs&g=0&l=341)
+[register](https://cs.monyhar.org/monyhar/src/chrome/browser/ui/webui/settings/site_settings_handler.cc?type=cs&g=0&l=341)
 your message so that everything is properly bound.
 
 ## Hide specific sections

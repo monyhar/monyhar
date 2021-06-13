@@ -11,7 +11,7 @@
 #include "base/macros.h"
 #include "components/cast/message_port/message_port.h"
 #include "components/cast/named_message_port_connector/named_message_port_connector.h"
-#include "fuchsia/fidl/chromium/cast/cpp/fidl.h"
+#include "fuchsia/fidl/monyhar/cast/cpp/fidl.h"
 #include "third_party/abseil-cpp/absl/types/optional.h"
 
 // Injects scripts received from the ApiBindings service, and provides connected
@@ -23,7 +23,7 @@ class ApiBindingsClient {
   // have been received, or on failure. The caller should use HasBindings()
   // to verify that bindings were received, and may then use AttachToFrame().
   ApiBindingsClient(
-      fidl::InterfaceHandle<chromium::cast::ApiBindings> bindings_service,
+      fidl::InterfaceHandle<monyhar::cast::ApiBindings> bindings_service,
       base::OnceClosure on_initialization_complete);
   ~ApiBindingsClient();
 
@@ -51,12 +51,12 @@ class ApiBindingsClient {
 
  private:
   // Called when ApiBindings::GetAll() has responded.
-  void OnBindingsReceived(std::vector<chromium::cast::ApiBinding> bindings);
+  void OnBindingsReceived(std::vector<monyhar::cast::ApiBinding> bindings);
 
-  absl::optional<std::vector<chromium::cast::ApiBinding>> bindings_;
+  absl::optional<std::vector<monyhar::cast::ApiBinding>> bindings_;
   fuchsia::web::Frame* frame_ = nullptr;
   cast_api_bindings::NamedMessagePortConnector* connector_ = nullptr;
-  chromium::cast::ApiBindingsPtr bindings_service_;
+  monyhar::cast::ApiBindingsPtr bindings_service_;
   base::OnceClosure on_initialization_complete_;
 
   DISALLOW_COPY_AND_ASSIGN(ApiBindingsClient);

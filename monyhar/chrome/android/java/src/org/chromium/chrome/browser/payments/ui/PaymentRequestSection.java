@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments.ui;
+package org.monyhar.chrome.browser.payments.ui;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -34,14 +34,14 @@ import androidx.annotation.VisibleForTesting;
 import androidx.core.view.MarginLayoutParamsCompat;
 import androidx.gridlayout.widget.GridLayout;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.R;
-import org.chromium.components.autofill.EditableOption;
-import org.chromium.components.browser_ui.widget.DualControlLayout;
-import org.chromium.components.browser_ui.widget.TintedDrawable;
-import org.chromium.components.browser_ui.widget.animation.Interpolators;
-import org.chromium.ui.HorizontalListDividerDrawable;
-import org.chromium.ui.UiUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.components.autofill.EditableOption;
+import org.monyhar.components.browser_ui.widget.DualControlLayout;
+import org.monyhar.components.browser_ui.widget.TintedDrawable;
+import org.monyhar.components.browser_ui.widget.animation.Interpolators;
+import org.monyhar.ui.HorizontalListDividerDrawable;
+import org.monyhar.ui.UiUtils;
 
 import java.util.ArrayList;
 import java.util.List;

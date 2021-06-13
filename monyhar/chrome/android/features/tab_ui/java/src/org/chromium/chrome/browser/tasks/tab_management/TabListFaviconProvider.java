@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -15,14 +15,14 @@ import android.graphics.drawable.LayerDrawable;
 import androidx.annotation.ColorInt;
 import androidx.appcompat.content.res.AppCompatResources;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.ui.favicon.FaviconHelper;
-import org.chromium.chrome.browser.ui.favicon.FaviconUtils;
-import org.chromium.chrome.browser.ui.native_page.NativePage;
-import org.chromium.chrome.tab_ui.R;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.ui.base.ViewUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.ui.favicon.FaviconHelper;
+import org.monyhar.chrome.browser.ui.favicon.FaviconUtils;
+import org.monyhar.chrome.browser.ui.native_page.NativePage;
+import org.monyhar.chrome.tab_ui.R;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.ui.base.ViewUtils;
 
 import java.util.List;
 

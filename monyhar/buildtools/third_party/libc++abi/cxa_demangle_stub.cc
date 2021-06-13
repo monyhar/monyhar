@@ -13,7 +13,7 @@ extern "C"
 //   https://llvm.org/svn/llvm-project/libcxxabi/trunk/src/cxa_demangle.cpp
 _LIBCXXABI_FUNC_VIS
 // This is a weak symbol to let android_crazy_linker override it in
-// //base/android/linker:chromium_android_linker.
+// //base/android/linker:monyhar_android_linker.
 _LIBCXXABI_WEAK char* __cxa_demangle(const char* mangled_name,
                                      char* buf,
                                      size_t* n,

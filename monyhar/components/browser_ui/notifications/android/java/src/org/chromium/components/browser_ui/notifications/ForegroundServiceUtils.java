@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.notifications;
+package org.monyhar.components.browser_ui.notifications;
 
 import android.app.Notification;
 import android.app.Service;
@@ -13,9 +13,9 @@ import androidx.annotation.VisibleForTesting;
 import androidx.core.app.ServiceCompat;
 import androidx.core.content.ContextCompat;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.compat.ApiHelperForQ;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.compat.ApiHelperForQ;
 
 /**
  * Utility functions that call into Android foreground service related API, and provides

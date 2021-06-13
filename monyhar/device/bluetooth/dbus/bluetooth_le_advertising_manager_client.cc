@@ -17,7 +17,7 @@
 namespace bluez {
 
 const char BluetoothLEAdvertisingManagerClient::kNoResponseError[] =
-    "org.chromium.Error.NoResponse";
+    "org.monyhar.Error.NoResponse";
 
 // The BluetoothAdvertisementManagerClient implementation used in production.
 class BluetoothAdvertisementManagerClientImpl

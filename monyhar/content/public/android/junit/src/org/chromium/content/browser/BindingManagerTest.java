@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import static android.content.ComponentCallbacks2.TRIM_MEMORY_RUNNING_CRITICAL;
 import static android.content.ComponentCallbacks2.TRIM_MEMORY_RUNNING_LOW;
@@ -22,10 +22,10 @@ import org.robolectric.Robolectric;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowLooper;
 
-import org.chromium.base.process_launcher.ChildProcessConnection;
-import org.chromium.base.process_launcher.TestChildProcessConnection;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.Feature;
+import org.monyhar.base.process_launcher.ChildProcessConnection;
+import org.monyhar.base.process_launcher.TestChildProcessConnection;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.Feature;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,7 +43,7 @@ public class BindingManagerTest {
     private static ChildProcessConnection createTestChildProcessConnection(
             int pid, BindingManager manager, List<ChildProcessConnection> iterable) {
         TestChildProcessConnection connection = new TestChildProcessConnection(
-                new ComponentName("org.chromium.test", "TestService"),
+                new ComponentName("org.monyhar.test", "TestService"),
                 false /* bindToCallerCheck */, false /* bindAsExternalService */,
                 null /* serviceBundle */);
         connection.setPid(pid);

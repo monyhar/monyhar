@@ -1,7 +1,7 @@
 # When sending a CL with metrics for review, if a member of
 # METRIC_REVIEWER_OWNERS is a good choice of reviewer, please send the CL to
-# them. Otherwise, send the CL to chromium-metrics-reviews@google.com. Googlers
-# can read more about chromium-metrics-reviews@google.com at go/gwsq-gerrit.
+# them. Otherwise, send the CL to monyhar-metrics-reviews@google.com. Googlers
+# can read more about monyhar-metrics-reviews@google.com at go/gwsq-gerrit.
 per-file actions.xml=file://base/metrics/OWNERS
 per-file actions.xml=file://tools/metrics/histograms/histograms_xml/METRIC_REVIEWER_OWNERS
 

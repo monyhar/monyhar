@@ -50,22 +50,22 @@ TEST(PrinterConfigurationTest, ParseTrailingSlash) {
 
 TEST(PrinterConfigurationTest, ParseUriHostNameAndPort) {
   chromeos::Printer printer;
-  EXPECT_TRUE(printer.SetUri("ipp://chromium.org:8"));
+  EXPECT_TRUE(printer.SetUri("ipp://monyhar.org:8"));
   EXPECT_EQ(printer.uri().GetPort(), 8);
-  EXPECT_EQ(printer.uri().GetHost(), "chromium.org");
+  EXPECT_EQ(printer.uri().GetHost(), "monyhar.org");
 }
 
 TEST(PrinterConfigurationTest, ParseUriPathNoPort) {
   chromeos::Printer printer;
-  EXPECT_TRUE(printer.SetUri("ipps://chromium.org/printers/printprint"));
-  EXPECT_EQ(printer.uri().GetHost(), "chromium.org");
+  EXPECT_TRUE(printer.SetUri("ipps://monyhar.org/printers/printprint"));
+  EXPECT_EQ(printer.uri().GetHost(), "monyhar.org");
   EXPECT_EQ(printer.uri().GetPathEncodedAsString(), "/printers/printprint");
 }
 
 TEST(PrinterConfigurationTest, ParseUriSubdomainQueueAndPort) {
   chromeos::Printer printer;
-  EXPECT_TRUE(printer.SetUri("ipp://codesearch.chromium.org:1234/ipp/print"));
-  EXPECT_EQ(printer.uri().GetHost(), "codesearch.chromium.org");
+  EXPECT_TRUE(printer.SetUri("ipp://codesearch.monyhar.org:1234/ipp/print"));
+  EXPECT_EQ(printer.uri().GetHost(), "codesearch.monyhar.org");
   EXPECT_EQ(printer.uri().GetPort(), 1234);
   EXPECT_EQ(printer.uri().GetPathEncodedAsString(), "/ipp/print");
 }

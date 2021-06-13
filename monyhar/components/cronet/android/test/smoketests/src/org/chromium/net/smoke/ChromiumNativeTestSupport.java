@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.smoke;
+package org.monyhar.net.smoke;
 
 import android.content.Context;
 
 import org.json.JSONObject;
 
-import org.chromium.base.Log;
-import org.chromium.net.CronetTestUtil;
-import org.chromium.net.ExperimentalCronetEngine;
+import org.monyhar.base.Log;
+import org.monyhar.net.CronetTestUtil;
+import org.monyhar.net.ExperimentalCronetEngine;
 
 /**
  * Provides support for tests that depend on QUIC and HTTP2 servers.
@@ -55,7 +55,7 @@ class ChromiumNativeTestSupport extends ChromiumPlatformOnlyTestSupport {
     @Override
     public void installMockCertVerifierForTesting(ExperimentalCronetEngine.Builder builder) {
         CronetTestUtil.setMockCertVerifierForTesting(
-                builder, org.chromium.net.QuicTestServer.createMockCertVerifier());
+                builder, org.monyhar.net.QuicTestServer.createMockCertVerifier());
     }
 
     @Override
@@ -72,18 +72,18 @@ class ChromiumNativeTestSupport extends ChromiumPlatformOnlyTestSupport {
 
         @Override
         public boolean start() {
-            org.chromium.net.QuicTestServer.startQuicTestServer(mContext);
+            org.monyhar.net.QuicTestServer.startQuicTestServer(mContext);
             return true;
         }
 
         @Override
         public void shutdown() {
-            org.chromium.net.QuicTestServer.shutdownQuicTestServer();
+            org.monyhar.net.QuicTestServer.shutdownQuicTestServer();
         }
 
         @Override
         public String getSuccessURL() {
-            return org.chromium.net.QuicTestServer.getServerURL() + "/simple.txt";
+            return org.monyhar.net.QuicTestServer.getServerURL() + "/simple.txt";
         }
     }
 
@@ -97,7 +97,7 @@ class ChromiumNativeTestSupport extends ChromiumPlatformOnlyTestSupport {
         @Override
         public boolean start() {
             try {
-                return org.chromium.net.Http2TestServer.startHttp2TestServer(
+                return org.monyhar.net.Http2TestServer.startHttp2TestServer(
                         mContext, SERVER_CERT_PEM, SERVER_KEY_PKCS8_PEM);
             } catch (Exception e) {
                 Log.e(TAG, "Exception during Http2TestServer start", e);
@@ -108,7 +108,7 @@ class ChromiumNativeTestSupport extends ChromiumPlatformOnlyTestSupport {
         @Override
         public void shutdown() {
             try {
-                org.chromium.net.Http2TestServer.shutdownHttp2TestServer();
+                org.monyhar.net.Http2TestServer.shutdownHttp2TestServer();
             } catch (Exception e) {
                 Log.e(TAG, "Exception during Http2TestServer shutdown", e);
             }
@@ -116,7 +116,7 @@ class ChromiumNativeTestSupport extends ChromiumPlatformOnlyTestSupport {
 
         @Override
         public String getSuccessURL() {
-            return org.chromium.net.Http2TestServer.getEchoMethodUrl();
+            return org.monyhar.net.Http2TestServer.getEchoMethodUrl();
         }
     }
 }

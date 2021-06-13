@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.widget;
+package org.monyhar.ui.widget;
 
 import android.animation.AnimatorInflater;
 import android.animation.StateListAnimator;
@@ -15,7 +15,7 @@ import android.view.ContextThemeWrapper;
 import androidx.annotation.StyleRes;
 import androidx.appcompat.widget.AppCompatButton;
 
-import org.chromium.ui.R;
+import org.monyhar.ui.R;
 
 /**
  * A Material-styled button with a customizable background color. On L devices, this is a true
@@ -27,7 +27,7 @@ import org.chromium.ui.R;
  *
  * Create a button in XML:
  *
- *   <org.chromium.ui.widget.ButtonCompat
+ *   <org.monyhar.ui.widget.ButtonCompat
  *       android:layout_width="wrap_content"
  *       android:layout_height="wrap_content"
  *       android:text="Click me"

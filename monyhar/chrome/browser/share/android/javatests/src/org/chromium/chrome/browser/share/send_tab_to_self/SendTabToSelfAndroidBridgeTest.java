@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.send_tab_to_self;
+package org.monyhar.chrome.browser.share.send_tab_to_self;
 
 import static org.mockito.AdditionalAnswers.answerVoid;
 import static org.mockito.Mockito.any;
@@ -24,11 +24,11 @@ import org.mockito.MockitoAnnotations;
 import org.mockito.stubbing.VoidAnswer2;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.share.send_tab_to_self.TargetDeviceInfo.DeviceType;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.share.send_tab_to_self.TargetDeviceInfo.DeviceType;
+import org.monyhar.content_public.browser.WebContents;
 
 import java.util.Arrays;
 import java.util.List;

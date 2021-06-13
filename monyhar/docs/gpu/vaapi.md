@@ -14,9 +14,9 @@ ChromeOS is a downstream client via the [libva] package, with packaged backends
 for e.g. both [Intel] and [AMD].
 
 [VaAPI GitHub repository]: https://github.com/intel/libva
-[libva]: https://chromium.googlesource.com/chromiumos/overlays/chromiumos-overlay/+/main/x11-libs/libva/
-[Intel]: https://chromium.googlesource.com/chromiumos/overlays/chromiumos-overlay/+/main/x11-libs/libva-intel-driver/
-[AMD]: https://chromium.googlesource.com/chromiumos/overlays/chromiumos-overlay/+/main/media-libs/libva-amdgpu-driver/
+[libva]: https://monyhar.googlesource.com/monyharos/overlays/monyharos-overlay/+/main/x11-libs/libva/
+[Intel]: https://monyhar.googlesource.com/monyharos/overlays/monyharos-overlay/+/main/x11-libs/libva-intel-driver/
+[AMD]: https://monyhar.googlesource.com/monyharos/overlays/monyharos-overlay/+/main/media-libs/libva-amdgpu-driver/
 
 ## Tracing VaAPI video decoding
 
@@ -45,7 +45,7 @@ PictureBuffers are created by the "client" but allocated and filled in by the
 VaVDA. `K` is unrelated to both `M` and `N`.
 ***
 
-[VaVDA]: https://cs.chromium.org/chromium/src/media/gpu/vaapi/vaapi_video_decode_accelerator.h?type=cs&q=vaapivideodecodeaccelerator&sq=package:chromium&g=0&l=57
+[VaVDA]: https://cs.monyhar.org/monyhar/src/media/gpu/vaapi/vaapi_video_decode_accelerator.h?type=cs&q=vaapivideodecodeaccelerator&sq=package:monyhar&g=0&l=57
 
 ### Tracing memory consumption
 
@@ -76,13 +76,13 @@ CPU, power and memory consumption (see [crbug.com/822346]).
   directly on the client's PictureBuffers, `M = 0`, and the `gpu/vaapi/decoder`
   category is not present in the GPU MemoryInfra.
 
-[MemoryInfra]: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/memory-infra/README.md#memoryinfra
-[difference between `effective_size` and `size`]: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/memory-infra#effective_size-vs_size
+[MemoryInfra]: https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/memory-infra/README.md#memoryinfra
+[difference between `effective_size` and `size`]: https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/memory-infra#effective_size-vs_size
 [GPU Memory Tracing]: ../memory-infra/probe-gpu.md
-[Memory Dump Provider]: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/memory-infra/adding_memory_infra_tracing.md
-[`|decode_using_client_picture_buffers_|`]: https://cs.chromium.org/search/?q=decode_using_client_picture_buffers_&sq=package:chromium&type=cs
+[Memory Dump Provider]: https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/memory-infra/adding_memory_infra_tracing.md
+[`|decode_using_client_picture_buffers_|`]: https://cs.monyhar.org/search/?q=decode_using_client_picture_buffers_&sq=package:monyhar&type=cs
 [crbug.com/822346]: https://crbug.com/822346
-[`GetNumReferenceFrames()`]: https://cs.chromium.org/search/?q=GetNumReferenceFrames+file:%5Esrc/media/gpu/+package:%5Echromium$+file:%5C.cc&type=cs
+[`GetNumReferenceFrames()`]: https://cs.monyhar.org/search/?q=GetNumReferenceFrames+file:%5Esrc/media/gpu/+package:%5Emonyhar$+file:%5C.cc&type=cs
 
 #### PictureBuffers accountancy
 
@@ -102,7 +102,7 @@ the desired `context_group` can be tricky.
 ![](https://i.imgur.com/3tJThzL.png)
 
 [crbug.com/514914]: https://crbug.com/514914
-[the probe-gpu example]: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/memory-infra/probe-gpu.md#example
+[the probe-gpu example]: https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/memory-infra/probe-gpu.md#example
 [crbug.com/721674]: https://crbug.com/721674
 
 ### Tracing power consumption
@@ -141,7 +141,7 @@ As can be seen, `pkg` ~= `pp0` + `pp1` + 1W, this extra watt is the cost of all
 the associated silicon, e.g. bridges, bus controllers, caches, and the media
 processing engine.
 
-[`dump_intel_rapl_consumption`]: https://chromium.googlesource.com/chromiumos/platform2/+/main/power_manager/tools/dump_intel_rapl_consumption.cc
+[`dump_intel_rapl_consumption`]: https://monyhar.googlesource.com/monyharos/platform2/+/main/power_manager/tools/dump_intel_rapl_consumption.cc
 [video]: https://commons.wikimedia.org/wiki/File:Big_Buck_Bunny_4K.webm
 [go/power-consumption-meas-in-intel]: http://go/power-consumption-meas-in-intel
 
@@ -160,7 +160,7 @@ and under Debian systems ([vainfo]). `vainfo` will try to load the appropriate
 backend driver for the system and/or GPUs and fail if it cannot find/load it.
 
 [libva-utils]: https://github.com/intel/libva-utils
-[media-video/libva-utils]: https://chromium.googlesource.com/chromiumos/overlays/chromiumos-overlay/+/main/media-video/libva-utils
+[media-video/libva-utils]: https://monyhar.googlesource.com/monyharos/overlays/monyharos-overlay/+/main/media-video/libva-utils
 [vainfo]: https://packages.debian.org/sid/main/vainfo
 
 ### <a name="verify-vaapi"></a> Verify the VaAPI supports and/or uses a given codec
@@ -224,6 +224,6 @@ non-sandboxed mode.
 Refer to the [previous section](#verify-vaapi) to verify support and use of
 the VaAPI.
 
-[docs/linux/hw_video_decode.md]: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/linux/hw_video_decode.md
-[Linux build setup]: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/linux/build_instructions.md
-[Setting up the build]: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/linux/build_instructions.md#setting-up-the-build
+[docs/linux/hw_video_decode.md]: https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/linux/hw_video_decode.md
+[Linux build setup]: https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/linux/build_instructions.md
+[Setting up the build]: https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/linux/build_instructions.md#setting-up-the-build

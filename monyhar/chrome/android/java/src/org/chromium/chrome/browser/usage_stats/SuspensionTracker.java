@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.usage_stats;
+package org.monyhar.chrome.browser.usage_stats;
 
-import org.chromium.base.Function;
-import org.chromium.base.Promise;
+import org.monyhar.base.Function;
+import org.monyhar.base.Promise;
 
 import java.util.ArrayList;
 import java.util.List;

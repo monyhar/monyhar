@@ -1,5 +1,5 @@
 From 59477dae6f2c68f0ebd9ccca18e737b67408bc11 Mon Sep 17 00:00:00 2001
-From: Tom Anderson <thomasanderson@chromium.org>
+From: Tom Anderson <thomasanderson@monyhar.org>
 Date: Wed, 8 Jan 2020 10:55:20 -0800
 Subject: [PATCH 1/2] dkpg-shlibdeps: Add option to ignore weak undefined
  symbols

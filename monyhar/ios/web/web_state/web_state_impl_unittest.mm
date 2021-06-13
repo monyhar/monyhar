@@ -285,7 +285,7 @@ TEST_F(WebStateImplTest, ObserverTest) {
 
   // Test that FaviconUrlUpdated() is called.
   ASSERT_FALSE(observer->update_favicon_url_candidates_info());
-  web::FaviconURL favicon_url(GURL("https://chromium.test/"),
+  web::FaviconURL favicon_url(GURL("https://monyhar.test/"),
                               web::FaviconURL::IconType::kTouchIcon,
                               {gfx::Size(5, 6)});
   web_state_->OnFaviconUrlUpdated({favicon_url});
@@ -447,7 +447,7 @@ TEST_F(WebStateImplTest, DelegateTest) {
             delegate.last_close_web_state_request()->web_state);
 
   // Test that OpenURLFromWebState() is called without a virtual URL.
-  WebState::OpenURLParams params(GURL("https://chromium.test/"), Referrer(),
+  WebState::OpenURLParams params(GURL("https://monyhar.test/"), Referrer(),
                                  WindowOpenDisposition::CURRENT_TAB,
                                  ui::PAGE_TRANSITION_LINK, true);
   EXPECT_FALSE(delegate.last_open_url_request());
@@ -468,7 +468,7 @@ TEST_F(WebStateImplTest, DelegateTest) {
 
   // Test that OpenURLFromWebState() is called with a virtual URL.
   params = WebState::OpenURLParams(
-      GURL("https://chromium.test/"), GURL("https://virtual.chromium.test/"),
+      GURL("https://monyhar.test/"), GURL("https://virtual.monyhar.test/"),
       Referrer(), WindowOpenDisposition::CURRENT_TAB, ui::PAGE_TRANSITION_LINK,
       true);
   web_state_->OpenURL(params);
@@ -965,7 +965,7 @@ TEST_F(WebStateImplTest, FaviconUpdateForSameDocumentNavigations) {
 
   // Callback is called when icons were fetched.
   observer = std::make_unique<FakeWebStateObserver>(web_state_.get());
-  web::FaviconURL favicon_url(GURL("https://chromium.test/"),
+  web::FaviconURL favicon_url(GURL("https://monyhar.test/"),
                               web::FaviconURL::IconType::kTouchIcon,
                               {gfx::Size(5, 6)});
   web_state_->OnFaviconUrlUpdated({favicon_url});
@@ -1049,9 +1049,9 @@ TEST_F(WebStateImplTest, NoUncommittedRestoreSession) {
 }
 
 TEST_F(WebStateImplTest, BuildStorageDuringRestore) {
-  GURL urls[3] = {GURL("https://chromium.test/1"),
-                  GURL("https://chromium.test/2"),
-                  GURL("https://chromium.test/3")};
+  GURL urls[3] = {GURL("https://monyhar.test/1"),
+                  GURL("https://monyhar.test/2"),
+                  GURL("https://monyhar.test/3")};
   std::vector<std::unique_ptr<NavigationItem>> items;
   for (size_t index = 0; index < base::size(urls); ++index) {
     items.push_back(NavigationItem::Create());
@@ -1254,9 +1254,9 @@ TEST_F(WebStateImplTest, VisibilitychangeEventFired) {
 // Tests that WebState sessionState data doesn't load things with unsafe
 // restore.
 TEST_F(WebStateImplTest, DISABLED_MixedSafeUnsafeRestore) {
-  GURL urls[3] = {GURL("https://chromium.test/1"),
-                  GURL("https://chromium.test/2"),
-                  GURL("https://chromium.test/3")};
+  GURL urls[3] = {GURL("https://monyhar.test/1"),
+                  GURL("https://monyhar.test/2"),
+                  GURL("https://monyhar.test/3")};
   std::vector<std::unique_ptr<NavigationItem>> items;
   for (size_t index = 0; index < base::size(urls); ++index) {
     items.push_back(NavigationItem::Create());

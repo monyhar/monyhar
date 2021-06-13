@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.policy;
+package org.monyhar.chrome.browser.policy;
 
 /**
  * Delegate for cloud management functions implemented downstream for Google Chrome.

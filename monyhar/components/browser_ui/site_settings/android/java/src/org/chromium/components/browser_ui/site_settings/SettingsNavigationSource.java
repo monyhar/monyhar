@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.site_settings;
+package org.monyhar.components.browser_ui.site_settings;
 
 import androidx.annotation.IntDef;
 
@@ -25,5 +25,5 @@ public @interface SettingsNavigationSource {
     int NUM_ENTRIES = 3;
 
     // The key of the intent extra that is used for passing around the source.
-    String EXTRA_KEY = "org.chromium.chrome.preferences.navigation_source";
+    String EXTRA_KEY = "org.monyhar.chrome.preferences.navigation_source";
 }

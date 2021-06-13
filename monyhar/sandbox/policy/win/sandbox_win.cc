@@ -63,7 +63,7 @@ BrokerServices* g_broker_services = NULL;
 // versions of the dll name only if the dll has an extension.
 // For more information about how this list is generated, and how to get off
 // of it, see:
-// https://sites.google.com/a/chromium.org/dev/Home/third-party-developers
+// https://sites.google.com/a/monyhar.org/dev/Home/third-party-developers
 const wchar_t* const kTroublesomeDlls[] = {
     L"adialhk.dll",                // Kaspersky Internet Security.
     L"acpiz.dll",                  // Unknown.
@@ -490,7 +490,7 @@ NtQueryObject g_QueryObject = NULL;
 
 static const char* kDuplicateHandleWarning =
     "You are attempting to duplicate a privileged handle into a sandboxed"
-    " process.\n Please contact security@chromium.org for assistance.";
+    " process.\n Please contact security@monyhar.org for assistance.";
 
 void CheckDuplicateHandle(HANDLE handle) {
   // Get the object type (32 characters is safe; current max is 14).

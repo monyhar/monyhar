@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
 import android.graphics.Bitmap;
 import android.graphics.Picture;
@@ -13,21 +13,21 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 
-import org.chromium.android_webview.AwConsoleMessage;
-import org.chromium.android_webview.AwContentsClient;
-import org.chromium.android_webview.AwContentsClientBridge;
-import org.chromium.android_webview.AwGeolocationPermissions;
-import org.chromium.android_webview.AwHttpAuthHandler;
-import org.chromium.android_webview.AwRenderProcess;
-import org.chromium.android_webview.AwRenderProcessGoneDetail;
-import org.chromium.android_webview.JsPromptResultReceiver;
-import org.chromium.android_webview.JsResultReceiver;
-import org.chromium.android_webview.SafeBrowsingAction;
-import org.chromium.android_webview.permission.AwPermissionRequest;
-import org.chromium.android_webview.safe_browsing.AwSafeBrowsingResponse;
-import org.chromium.base.Callback;
-import org.chromium.base.ThreadUtils;
-import org.chromium.components.embedder_support.util.WebResourceResponseInfo;
+import org.monyhar.android_webview.AwConsoleMessage;
+import org.monyhar.android_webview.AwContentsClient;
+import org.monyhar.android_webview.AwContentsClientBridge;
+import org.monyhar.android_webview.AwGeolocationPermissions;
+import org.monyhar.android_webview.AwHttpAuthHandler;
+import org.monyhar.android_webview.AwRenderProcess;
+import org.monyhar.android_webview.AwRenderProcessGoneDetail;
+import org.monyhar.android_webview.JsPromptResultReceiver;
+import org.monyhar.android_webview.JsResultReceiver;
+import org.monyhar.android_webview.SafeBrowsingAction;
+import org.monyhar.android_webview.permission.AwPermissionRequest;
+import org.monyhar.android_webview.safe_browsing.AwSafeBrowsingResponse;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.components.embedder_support.util.WebResourceResponseInfo;
 
 import java.security.Principal;
 

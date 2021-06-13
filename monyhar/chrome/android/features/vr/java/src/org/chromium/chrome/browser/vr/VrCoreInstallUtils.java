@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr;
+package org.monyhar.chrome.browser.vr;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,15 +12,15 @@ import androidx.annotation.VisibleForTesting;
 
 import com.google.vr.ndk.base.DaydreamApi;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.infobar.InfoBarIdentifier;
-import org.chromium.chrome.browser.ui.messages.infobar.SimpleConfirmInfoBarBuilder;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.infobar.InfoBarIdentifier;
+import org.monyhar.chrome.browser.ui.messages.infobar.SimpleConfirmInfoBarBuilder;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Manages logic around VrCore Installation and Versioning
@@ -184,14 +184,14 @@ public class VrCoreInstallUtils {
         if (vrCoreCompatibility == VrCoreVersionChecker.VrCoreCompatibility.VR_NOT_AVAILABLE) {
             // Supported, but not installed. Ask user to install instead of upgrade.
             infobarText = ContextUtils.getApplicationContext().getString(
-                    org.chromium.chrome.vr.R.string.vr_services_check_infobar_install_text);
+                    org.monyhar.chrome.vr.R.string.vr_services_check_infobar_install_text);
             buttonText = ContextUtils.getApplicationContext().getString(
-                    org.chromium.chrome.vr.R.string.vr_services_check_infobar_install_button);
+                    org.monyhar.chrome.vr.R.string.vr_services_check_infobar_install_button);
         } else if (vrCoreCompatibility == VrCoreVersionChecker.VrCoreCompatibility.VR_OUT_OF_DATE) {
             infobarText = ContextUtils.getApplicationContext().getString(
-                    org.chromium.chrome.vr.R.string.vr_services_check_infobar_update_text);
+                    org.monyhar.chrome.vr.R.string.vr_services_check_infobar_update_text);
             buttonText = ContextUtils.getApplicationContext().getString(
-                    org.chromium.chrome.vr.R.string.vr_services_check_infobar_update_button);
+                    org.monyhar.chrome.vr.R.string.vr_services_check_infobar_update_button);
         } else {
             Log.e(TAG, "Unknown VrCore compatibility: " + vrCoreCompatibility);
             return;
@@ -220,7 +220,7 @@ public class VrCoreInstallUtils {
         };
         SimpleConfirmInfoBarBuilder.create(webContents, listener,
                 InfoBarIdentifier.VR_SERVICES_UPGRADE_ANDROID, activity,
-                org.chromium.chrome.vr.R.drawable.vr_services, infobarText, buttonText, null, null,
+                org.monyhar.chrome.vr.R.drawable.vr_services, infobarText, buttonText, null, null,
                 true);
     }
 

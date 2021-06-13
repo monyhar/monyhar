@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 // This is a no-compile test suite.
-// http://dev.chromium.org/developers/testing/no-compile-tests
+// http://dev.monyhar.org/developers/testing/no-compile-tests
 
 #include "base/types/pass_key.h"
 

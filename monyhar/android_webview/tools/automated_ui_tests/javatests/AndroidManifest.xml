@@ -6,7 +6,7 @@
 
 <manifest
       xmlns:android="http://schemas.android.com/apk/res/android"
-      package="org.chromium.webview_ui_test.test">
+      package="org.monyhar.webview_ui_test.test">
 
     <uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
 
@@ -17,7 +17,7 @@
         <uses-library android:name="android.test.runner" />
     </application>
 
-    <instrumentation android:name="org.chromium.base.test.BaseChromiumAndroidJUnitRunner"
-        android:targetPackage="org.chromium.webview_ui_test"
-        android:label="Tests for org.chromium.webview_ui_test"/>
+    <instrumentation android:name="org.monyhar.base.test.BaseChromiumAndroidJUnitRunner"
+        android:targetPackage="org.monyhar.webview_ui_test"
+        android:label="Tests for org.monyhar.webview_ui_test"/>
 </manifest>

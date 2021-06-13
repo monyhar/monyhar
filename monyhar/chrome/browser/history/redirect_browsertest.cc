@@ -119,7 +119,7 @@ IN_PROC_BROWSER_TEST_F(RedirectTest, Client) {
             browser()->tab_strip_model()->GetActiveWebContents()->GetURL());
 }
 
-// http://code.google.com/p/chromium/issues/detail?id=62772
+// http://code.google.com/p/monyhar/issues/detail?id=62772
 IN_PROC_BROWSER_TEST_F(RedirectTest, ClientEmptyReferer) {
   ASSERT_TRUE(embedded_test_server()->Start());
 

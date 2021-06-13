@@ -3,7 +3,7 @@
      xmlns:xlink="http://www.w3.org/1999/xlink"
      width="800" height="600" viewBox="0 0 800 600">
   <metadata>
-    <h:link rel="author" title="Philip Rogers" href="mailto:pdr@chromium.org"/>
+    <h:link rel="author" title="Philip Rogers" href="mailto:pdr@monyhar.org"/>
     <h:link rel="help" href="https://www.w3.org/TR/SVG11/single-page.html#render-RenderingOrder"/>
     <h:link rel="match" href="clip-path-filter-order-ref.svg"/>
     <h:meta name="assert" content="Clip path should apply after filtering."/>

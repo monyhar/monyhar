@@ -16,7 +16,7 @@
 namespace {
 
 // The MIME type for the clipboard format for BrowserActionDragData.
-const char kClipboardFormatString[] = "chromium/x-browser-actions";
+const char kClipboardFormatString[] = "monyhar/x-browser-actions";
 
 }
 

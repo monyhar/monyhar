@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.messages;
+package org.monyhar.components.messages;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyInt;
@@ -20,14 +20,14 @@ import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Mockito;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.components.messages.MessageScopeChange.ChangeType;
-import org.chromium.content_public.browser.LoadCommittedDetails;
-import org.chromium.content_public.browser.NavigationController;
-import org.chromium.content_public.browser.NavigationEntry;
-import org.chromium.content_public.browser.WebContentsObserver;
-import org.chromium.content_public.browser.test.mock.MockWebContents;
-import org.chromium.ui.base.PageTransition;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.components.messages.MessageScopeChange.ChangeType;
+import org.monyhar.content_public.browser.LoadCommittedDetails;
+import org.monyhar.content_public.browser.NavigationController;
+import org.monyhar.content_public.browser.NavigationEntry;
+import org.monyhar.content_public.browser.WebContentsObserver;
+import org.monyhar.content_public.browser.test.mock.MockWebContents;
+import org.monyhar.ui.base.PageTransition;
 
 /**
  * A test for {@link ScopeChangeController}.

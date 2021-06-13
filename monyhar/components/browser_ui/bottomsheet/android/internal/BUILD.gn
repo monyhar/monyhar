@@ -13,11 +13,11 @@ android_library("java") {
   ]
 
   sources = [
-    "java/src/org/chromium/components/browser_ui/bottomsheet/BottomSheet.java",
-    "java/src/org/chromium/components/browser_ui/bottomsheet/BottomSheetControllerFactory.java",
-    "java/src/org/chromium/components/browser_ui/bottomsheet/BottomSheetControllerImpl.java",
-    "java/src/org/chromium/components/browser_ui/bottomsheet/BottomSheetSwipeDetector.java",
-    "java/src/org/chromium/components/browser_ui/bottomsheet/TouchRestrictingFrameLayout.java",
+    "java/src/org/monyhar/components/browser_ui/bottomsheet/BottomSheet.java",
+    "java/src/org/monyhar/components/browser_ui/bottomsheet/BottomSheetControllerFactory.java",
+    "java/src/org/monyhar/components/browser_ui/bottomsheet/BottomSheetControllerImpl.java",
+    "java/src/org/monyhar/components/browser_ui/bottomsheet/BottomSheetSwipeDetector.java",
+    "java/src/org/monyhar/components/browser_ui/bottomsheet/TouchRestrictingFrameLayout.java",
   ]
 
   deps = [
@@ -30,13 +30,13 @@ android_library("java") {
     "//third_party/androidx:androidx_annotation_annotation_java",
     "//ui/android:ui_java",
   ]
-  resources_package = "org.chromium.components.browser_ui.bottomsheet.internal"
+  resources_package = "org.monyhar.components.browser_ui.bottomsheet.internal"
 }
 
 android_library("junit_tests") {
   bypass_platform_checks = true
   testonly = true
-  sources = [ "java/src/org/chromium/components/browser_ui/bottomsheet/BottomSheetSwipeDetectorTest.java" ]
+  sources = [ "java/src/org/monyhar/components/browser_ui/bottomsheet/BottomSheetSwipeDetectorTest.java" ]
   deps = [
     ":java",
     "//base:base_java",
@@ -50,7 +50,7 @@ android_library("junit_tests") {
 android_library("javatests") {
   testonly = true
 
-  sources = [ "java/src/org/chromium/components/browser_ui/bottomsheet/BottomSheetObserverTest.java" ]
+  sources = [ "java/src/org/monyhar/components/browser_ui/bottomsheet/BottomSheetObserverTest.java" ]
 
   deps = [
     ":java",

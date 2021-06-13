@@ -63,8 +63,8 @@ PNaCl
   on `native-client-dev`_. We are working on improvements and adding
   new targets.
 
-.. _`code generation bug on ARM`: https://code.google.com/p/chromium/issues/detail?id=460432
-.. _`Subzero translator`: https://chromium.googlesource.com/native_client/pnacl-subzero/+/main/README.rst
+.. _`code generation bug on ARM`: https://code.google.com/p/monyhar/issues/detail?id=460432
+.. _`Subzero translator`: https://monyhar.googlesource.com/native_client/pnacl-subzero/+/main/README.rst
 .. _`native-client-dev`: https://groups.google.com/forum/#!forum/native-client-dev
 
 Pepper
@@ -270,11 +270,11 @@ PNaCl in Chrome 30 Dev channel (01 Aug 2013)
   30 (currently in the Dev channel). Apps and sites built with PNaCl can run in
   Chrome 30 without an explicit flag.
 * See `Introduction to Portable Native Client
-  <http://www.chromium.org/nativeclient/pnacl/introduction-to-portable-native-client>`_
+  <http://www.monyhar.org/nativeclient/pnacl/introduction-to-portable-native-client>`_
   for information on developing for PNaCl. More documentation will be available
   soon.
 * Please note that the `PNaCl bitcode ABI
-  <http://www.chromium.org/nativeclient/pnacl/bitcode-abi>`_ may still change
+  <http://www.monyhar.org/nativeclient/pnacl/bitcode-abi>`_ may still change
   before the official public release; if you're developing a PNaCl-based
   application, be sure to build your code with the latest version of the Native
   Client SDK.
@@ -738,11 +738,11 @@ Windows SDK
   include the above resources (library source files and pre-built libraries)
   for Mac and Linux systems. To build and debug a trusted plugin on Mac and
   Linux systems, you need to `get the Chromium code
-  <http://dev.chromium.org/developers/how-tos/get-the-code>`_ and then follow
+  <http://dev.monyhar.org/developers/how-tos/get-the-code>`_ and then follow
   the `Mac instructions
-  <http://www.chromium.org/nativeclient/how-tos/debugging-documentation/debugging-a-trusted-plugin/trusted-debugging-on-mac>`_
+  <http://www.monyhar.org/nativeclient/how-tos/debugging-documentation/debugging-a-trusted-plugin/trusted-debugging-on-mac>`_
   or `Linux instructions
-  <http://www.chromium.org/nativeclient/how-tos/debugging-documentation/debugging-a-trusted-plugin/debugging-a-trusted-plugin-on-linux>`_.
+  <http://www.monyhar.org/nativeclient/how-tos/debugging-documentation/debugging-a-trusted-plugin/debugging-a-trusted-plugin-on-linux>`_.
   In the future, the SDK will include resources for hosted development on Mac
   and Linux as well as Windows.
 

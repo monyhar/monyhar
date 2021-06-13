@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer;
+package org.monyhar.weblayer;
 
 import android.os.Bundle;
 import android.util.AndroidRuntimeException;
@@ -12,7 +12,7 @@ import android.view.View.OnLongClickListener;
 import androidx.annotation.ColorRes;
 import androidx.annotation.NonNull;
 
-import org.chromium.weblayer_private.interfaces.UrlBarOptionsKeys;
+import org.monyhar.weblayer_private.interfaces.UrlBarOptionsKeys;
 
 /**
  * Class containing options to tweak the URL bar.

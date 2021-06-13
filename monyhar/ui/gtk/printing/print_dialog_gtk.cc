@@ -250,7 +250,7 @@ void PrintDialogGtk::UpdateSettings(
     // The resolution attribute (case-insensitive) has decent coverage
     // in the CUPS PPD API (Resolution, SetResolution, JCLResolution,
     // CNRes_PGP). See
-    // https://chromium.googlesource.com/chromiumos/third_party/cups/+/49a182a4c42d/cups/mark.c#266
+    // https://monyhar.googlesource.com/monyharos/third_party/cups/+/49a182a4c42d/cups/mark.c#266
     // for more information.
     //
     // Many PPDs use pdftopdf directly to generate the print data and pdftopdf

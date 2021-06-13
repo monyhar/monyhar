@@ -77,9 +77,9 @@ def _CompareApiDumpForFiles(input_api, output_api, aidl_files):
   build_android_dir = os.path.join(repo_root, 'build', 'android')
   sys.path.append(build_android_dir)
   sys.path.append(os.path.join(repo_root, 'third_party', 'catapult', 'devil'))
-  import devil_chromium
+  import devil_monyhar
   from devil.android.sdk import build_tools
-  devil_chromium.Initialize()
+  devil_monyhar.Initialize()
 
   aidl_tool_path = build_tools.GetPath('aidl')
   if not os.path.exists(aidl_tool_path):

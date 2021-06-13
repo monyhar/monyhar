@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.device.nfc;
+package org.monyhar.device.nfc;
 
 import android.app.Activity;
 
-import org.chromium.base.Callback;
+import org.monyhar.base.Callback;
 
 /** Interface that allows the NFC implementation to access the Activity associated with a given
  * client. |hostId| is the same ID passed in NFCProvider::GetNFCForHost().

@@ -1,7 +1,7 @@
 // Copyright 2021 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.components.browser_ui.widget.textbubble;
+package org.monyhar.components.browser_ui.widget.textbubble;
 
 import android.content.Context;
 import android.view.View;
@@ -9,9 +9,9 @@ import android.view.View;
 import androidx.annotation.DrawableRes;
 import androidx.annotation.StringRes;
 
-import org.chromium.components.browser_ui.widget.R;
-import org.chromium.ui.widget.LoadingView;
-import org.chromium.ui.widget.RectProvider;
+import org.monyhar.components.browser_ui.widget.R;
+import org.monyhar.ui.widget.LoadingView;
+import org.monyhar.ui.widget.RectProvider;
 
 /**
  * UI component that handles showing a clickable text callout bubble.

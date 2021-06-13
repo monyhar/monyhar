@@ -54,10 +54,10 @@ CHROME_DBUS_EXPORT void AddBlockingSentMethodCall(const std::string& service,
 // of detail to show: one line per service, per interface, or per method.
 // If |show_per_minute| is true include per minute stats.
 // Example output for SHOW_METHOD, FORMAT_TOTALS:
-//   org.chromium.Mtpd.EnumerateStorage: Sent: 100
-//   org.chromium.Mtpd.MTPStorageSignal: Received: 20
+//   org.monyhar.Mtpd.EnumerateStorage: Sent: 100
+//   org.monyhar.Mtpd.MTPStorageSignal: Received: 20
 // Example output for SHOW_INTERFACE, FORMAT_ALL:
-//   org.chromium.Mtpd: Sent: 100 (10/min) Received: 20 (2/min)
+//   org.monyhar.Mtpd: Sent: 100 (10/min) Received: 20 (2/min)
 CHROME_DBUS_EXPORT std::string GetAsString(ShowInString show,
                                            FormatString format);
 

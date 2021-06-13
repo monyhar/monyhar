@@ -96,7 +96,7 @@ class UpdateCTS(object):
 
     Args:
       work_dir: Directory used to download and stage cipd updates
-      repo_root: Repository root (e.g. /path/to/chromium/src) to base
+      repo_root: Repository root (e.g. /path/to/monyhar/src) to base
                  all configuration files
     """
     self._work_dir = os.path.abspath(work_dir)
@@ -285,7 +285,7 @@ class UpdateCTS(object):
       vf.write(new_cipd_version)
 
   def update_repository(self):
-    """Update chromium checkout with changes for this update.
+    """Update monyhar checkout with changes for this update.
 
     After this is called, git add -u && git commit && git cl upload
     will still be needed to generate the CL.

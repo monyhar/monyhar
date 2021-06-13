@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed;
+package org.monyhar.chrome.browser.feed;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.browser.feed.v2.FeedServiceBridgeDelegateImpl;
-import org.chromium.chrome.browser.xsurface.ProcessScope;
+import org.monyhar.chrome.browser.feed.v2.FeedServiceBridgeDelegateImpl;
+import org.monyhar.chrome.browser.xsurface.ProcessScope;
 
 import java.util.ArrayList;
 import java.util.HashSet;

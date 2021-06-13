@@ -3,7 +3,7 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
 
-<org.chromium.components.browser_ui.widget.promo.PromoCardView
+<org.monyhar.components.browser_ui.widget.promo.PromoCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -37,7 +37,7 @@
         android:layout_marginStart="@dimen/promo_compact_header_margin_vertical"
         android:orientation="vertical">
 
-      <org.chromium.ui.widget.TextViewWithLeading
+      <org.monyhar.ui.widget.TextViewWithLeading
           android:id="@+id/promo_title"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
           android:layout_marginBottom="@dimen/promo_between_text_margin"
           app:leading="@dimen/text_size_large_leading"/>
 
-      <org.chromium.ui.widget.TextViewWithLeading
+      <org.monyhar.ui.widget.TextViewWithLeading
           android:id="@+id/promo_description"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
@@ -54,13 +54,13 @@
     </LinearLayout>
   </LinearLayout>
 
-  <org.chromium.components.browser_ui.widget.DualControlLayout
+  <org.monyhar.components.browser_ui.widget.DualControlLayout
       android:id="@+id/promo_button_group"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       app:buttonAlignment="end">
 
-    <org.chromium.ui.widget.ButtonCompat
+    <org.monyhar.ui.widget.ButtonCompat
         android:id="@+id/promo_primary_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -69,7 +69,7 @@
         android:layout_gravity="top|end"
         style="@style/FilledButton.Flat" />
 
-    <org.chromium.ui.widget.ButtonCompat
+    <org.monyhar.ui.widget.ButtonCompat
         android:id="@+id/promo_secondary_button"
         style="@style/TextButton"
         android:layout_width="wrap_content"
@@ -77,5 +77,5 @@
         android:ellipsize="end"
         android:singleLine="true"/>
 
-  </org.chromium.components.browser_ui.widget.DualControlLayout>
-</org.chromium.components.browser_ui.widget.promo.PromoCardView>
+  </org.monyhar.components.browser_ui.widget.DualControlLayout>
+</org.monyhar.components.browser_ui.widget.promo.PromoCardView>

@@ -103,8 +103,8 @@ class SharedImageBackingFactoryGLTextureTestBase
     supports_etc1_ =
         feature_info->validators()->compressed_texture_format.IsValid(
             GL_ETC1_RGB8_OES);
-    supports_ar30_ = feature_info->feature_flags().chromium_image_ar30;
-    supports_ab30_ = feature_info->feature_flags().chromium_image_ab30;
+    supports_ar30_ = feature_info->feature_flags().monyhar_image_ar30;
+    supports_ab30_ = feature_info->feature_flags().monyhar_image_ab30;
 
     GpuPreferences preferences;
     preferences.use_passthrough_cmd_decoder = use_passthrough();

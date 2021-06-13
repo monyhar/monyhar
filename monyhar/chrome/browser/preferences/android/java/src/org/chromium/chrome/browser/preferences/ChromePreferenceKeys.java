@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.preferences;
+package org.monyhar.chrome.browser.preferences;
 
-import org.chromium.base.annotations.CheckDiscard;
+import org.monyhar.base.annotations.CheckDiscard;
 
 import java.util.Arrays;
 import java.util.List;
@@ -385,7 +385,7 @@ public final class ChromePreferenceKeys {
     public static final String DOWNLOAD_AUTO_RESUMPTION_ATTEMPT_LEFT = "ResumptionAttemptLeft";
     public static final String DOWNLOAD_FOREGROUND_SERVICE_OBSERVERS = "ForegroundServiceObservers";
     public static final String DOWNLOAD_IS_DOWNLOAD_HOME_ENABLED =
-            "org.chromium.chrome.browser.download.IS_DOWNLOAD_HOME_ENABLED";
+            "org.monyhar.chrome.browser.download.IS_DOWNLOAD_HOME_ENABLED";
     public static final String DOWNLOAD_NEXT_DOWNLOAD_NOTIFICATION_ID =
             "NextDownloadNotificationId";
     public static final String DOWNLOAD_PENDING_DOWNLOAD_NOTIFICATIONS =
@@ -704,7 +704,7 @@ public final class ChromePreferenceKeys {
 
     /**
      * Key prefix for base promo component. Used in {@link
-     * org.chromium.components.browser_ui.widget.promo.PromoCardCoordinator} to store related state
+     * org.monyhar.components.browser_ui.widget.promo.PromoCardCoordinator} to store related state
      * or statistics.
      */
     public static final KeyPrefix PROMO_IS_DISMISSED =
@@ -759,11 +759,11 @@ public final class ChromePreferenceKeys {
             "search_engine_choice_requested_timestamp";
 
     public static final String SEARCH_WIDGET_IS_VOICE_SEARCH_AVAILABLE =
-            "org.chromium.chrome.browser.searchwidget.IS_VOICE_SEARCH_AVAILABLE";
+            "org.monyhar.chrome.browser.searchwidget.IS_VOICE_SEARCH_AVAILABLE";
     public static final String SEARCH_WIDGET_NUM_CONSECUTIVE_CRASHES =
-            "org.chromium.chrome.browser.searchwidget.NUM_CONSECUTIVE_CRASHES";
+            "org.monyhar.chrome.browser.searchwidget.NUM_CONSECUTIVE_CRASHES";
     public static final String SEARCH_WIDGET_SEARCH_ENGINE_SHORTNAME =
-            "org.chromium.chrome.browser.searchwidget.SEARCH_ENGINE_SHORTNAME";
+            "org.monyhar.chrome.browser.searchwidget.SEARCH_ENGINE_SHORTNAME";
 
     // Tracks which GUIDs there is an active notification for.
     public static final String SEND_TAB_TO_SELF_ACTIVE_NOTIFICATIONS =
@@ -776,7 +776,7 @@ public final class ChromePreferenceKeys {
     public static final String SETTINGS_DEVELOPER_TRACING_MODE = "tracing_mode";
 
     public static final String SETTINGS_PRIVACY_OTHER_FORMS_OF_HISTORY_DIALOG_SHOWN =
-            "org.chromium.chrome.browser.settings.privacy."
+            "org.monyhar.chrome.browser.settings.privacy."
             + "PREF_OTHER_FORMS_OF_HISTORY_DIALOG_SHOWN";
 
     /** Stores the timestamp of the last performed Safety check. */
@@ -853,17 +853,17 @@ public final class ChromePreferenceKeys {
             "ChromeTabbedActivity.BackgroundTimeMs";
 
     public static final String TABMODEL_ACTIVE_TAB_ID =
-            "org.chromium.chrome.browser.tabmodel.TabPersistentStore.ACTIVE_TAB_ID";
+            "org.monyhar.chrome.browser.tabmodel.TabPersistentStore.ACTIVE_TAB_ID";
     public static final String TABMODEL_HAS_COMPUTED_MAX_ID =
-            "org.chromium.chrome.browser.tabmodel.TabPersistentStore.HAS_COMPUTED_MAX_ID";
+            "org.monyhar.chrome.browser.tabmodel.TabPersistentStore.HAS_COMPUTED_MAX_ID";
     public static final String TABMODEL_HAS_RUN_FILE_MIGRATION =
-            "org.chromium.chrome.browser.tabmodel.TabPersistentStore.HAS_RUN_FILE_MIGRATION";
+            "org.monyhar.chrome.browser.tabmodel.TabPersistentStore.HAS_RUN_FILE_MIGRATION";
     public static final String TABMODEL_HAS_RUN_MULTI_INSTANCE_FILE_MIGRATION =
-            "org.chromium.chrome.browser.tabmodel.TabPersistentStore."
+            "org.monyhar.chrome.browser.tabmodel.TabPersistentStore."
             + "HAS_RUN_MULTI_INSTANCE_FILE_MIGRATION";
 
     public static final String TAB_ID_MANAGER_NEXT_ID =
-            "org.chromium.chrome.browser.tab.TabIdManager.NEXT_ID";
+            "org.monyhar.chrome.browser.tab.TabIdManager.NEXT_ID";
 
     public static final String TOS_ACKED_ACCOUNTS = "ToS acknowledged accounts";
 
@@ -909,14 +909,14 @@ public final class ChromePreferenceKeys {
      * Name of the shared preference for the version number of the dynamically loaded dex.
      */
     public static final String WEBAPK_EXTRACTED_DEX_VERSION =
-            "org.chromium.chrome.browser.webapps.extracted_dex_version";
+            "org.monyhar.chrome.browser.webapps.extracted_dex_version";
 
     /**
      * Name of the shared preference for the Android OS version at the time that the dex was last
      * extracted from Chrome's assets and optimized.
      */
     public static final String WEBAPK_LAST_SDK_VERSION =
-            "org.chromium.chrome.browser.webapps.last_sdk_version";
+            "org.monyhar.chrome.browser.webapps.last_sdk_version";
 
     /** Key for deferred recording of list of uninstalled WebAPK packages. */
     public static final String WEBAPK_UNINSTALLED_PACKAGES = "webapk_uninstalled_packages";

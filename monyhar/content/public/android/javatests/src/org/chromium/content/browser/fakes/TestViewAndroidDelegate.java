@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.fakes;
+package org.monyhar.content.browser.fakes;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.ui.base.ViewAndroidDelegate;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.ui.base.ViewAndroidDelegate;
 
 /**
  * Mimics the Chrome TestViewAndroidDelegate in chrome/browser/tab for use in tests,

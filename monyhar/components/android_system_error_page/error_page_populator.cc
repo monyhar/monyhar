@@ -20,7 +20,7 @@ namespace android_system_error_page {
 
 namespace {
 constexpr char kThrottledErrorDescription[] =
-    "Request throttled. Visit http://dev.chromium.org/throttling for more "
+    "Request throttled. Visit http://dev.monyhar.org/throttling for more "
     "information.";
 }  // namespace
 

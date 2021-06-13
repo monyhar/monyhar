@@ -2,7 +2,7 @@ import {TextDetection, TextDetectionReceiver} from '/gen/services/shape_detectio
 
 self.TextDetectionTest = (() => {
   // Class that mocks TextDetection interface defined in
-  // https://cs.chromium.org/chromium/src/services/shape_detection/public/mojom/textdetection.mojom
+  // https://cs.monyhar.org/monyhar/src/services/shape_detection/public/mojom/textdetection.mojom
   class MockTextDetection {
     constructor() {
       this.receiver_ = new TextDetectionReceiver(this);

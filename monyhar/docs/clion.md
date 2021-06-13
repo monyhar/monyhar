@@ -3,7 +3,7 @@
 CLion is an IDE
 
 Prerequisite:
-[Checking out and building the chromium code base](README.md#Checking-Out-and-Building)
+[Checking out and building the monyhar code base](README.md#Checking-Out-and-Building)
 
 [TOC]
 
@@ -39,7 +39,7 @@ Prerequisite:
 
 ## Chromium in CLion
 1. Import project
-    - At the startup dialog, select `Import Project` and select your `chromium`
+    - At the startup dialog, select `Import Project` and select your `monyhar`
       directory; this should be the parent directory to `src`. Selecting `src`
       instead would result in some CLion IDE files appearing in your repository.
 1. (Optional) Modify the `CMakeLists.txt` file
@@ -58,7 +58,7 @@ Prerequisite:
        completion, navigation, etc. The file should now look like:
        ```
        cmake_minimum_required(VERSION 3.10)
-       project(chromium)
+       project(monyhar)
 
        set(CMAKE_CXX_STANDARD 14)
 
@@ -66,7 +66,7 @@ Prerequisite:
        include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src/out/Default/gen)
        include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src/third_party/googletest/src/googletest/include)
 
-       add_executable(chromium src/components/omnibox/browser/document_provider.cc)
+       add_executable(monyhar src/components/omnibox/browser/document_provider.cc)
        ```
 
 ## Building, Running, and Debugging within CLion

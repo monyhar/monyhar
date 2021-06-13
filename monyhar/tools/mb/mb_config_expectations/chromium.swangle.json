@@ -1,5 +1,5 @@
 {
-  "linux-swangle-chromium-x64": {
+  "linux-swangle-monyhar-x64": {
     "gn_args": {
       "dcheck_always_on": true,
       "ffmpeg_branding": "Chrome",
@@ -40,7 +40,7 @@
       "use_goma": true
     }
   },
-  "mac-swangle-chromium-x64": {
+  "mac-swangle-monyhar-x64": {
     "gn_args": {
       "dcheck_always_on": true,
       "ffmpeg_branding": "Chrome",
@@ -51,7 +51,7 @@
       "use_goma": true
     }
   },
-  "win-swangle-chromium-x86": {
+  "win-swangle-monyhar-x86": {
     "gn_args": {
       "dcheck_always_on": true,
       "enable_resource_allowlist_generation": true,

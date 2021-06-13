@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.lifecycle;
+package org.monyhar.chrome.browser.lifecycle;
 
 import android.content.Intent;
 
@@ -13,7 +13,7 @@ import android.content.Intent;
 public interface ActivityResultWithNativeObserver extends LifecycleObserver {
     /**
      * Called when {@link
-     * org.chromium.chrome.browser.init.AsyncInitializationActivity#onActivityResult(int, int,
+     * org.monyhar.chrome.browser.init.AsyncInitializationActivity#onActivityResult(int, int,
      * Intent)} is called.
      */
     void onActivityResultWithNative(int requestCode, int resultCode, Intent data);

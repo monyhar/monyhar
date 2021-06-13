@@ -28,7 +28,7 @@ class ChromiumConfig(project_config.ProjectConfig):
     if default_chrome_root is None:
       default_chrome_root = path_util.GetChromiumSrcDir()
     # Some android utilities in Catapult expect a java binary available on PATH,
-    # so place chromium's heremetic JDK on PATH if we have it checked out.
+    # so place monyhar's heremetic JDK on PATH if we have it checked out.
     if os.path.exists(host_paths.JAVA_PATH):
       os.environ['PATH'] = (host_paths.JAVA_PATH + os.pathsep +
                             os.environ['PATH'])

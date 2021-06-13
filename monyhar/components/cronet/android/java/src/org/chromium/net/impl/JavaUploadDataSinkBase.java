@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.impl;
+package org.monyhar.net.impl;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.net.UploadDataProvider;
-import org.chromium.net.UploadDataSink;
+import org.monyhar.net.UploadDataProvider;
+import org.monyhar.net.UploadDataSink;
 
 import java.io.IOException;
 import java.lang.annotation.Retention;

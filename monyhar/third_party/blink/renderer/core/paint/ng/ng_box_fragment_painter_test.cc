@@ -111,7 +111,7 @@ TEST_P(NGBoxFragmentPainterTest, AddUrlRects) {
     <!DOCTYPE html>
     <div>
       <p>
-        <a href="https://www.chromium.org">Chromium</a>
+        <a href="https://www.monyhar.org">Chromium</a>
       </p>
       <p>
         <a href="https://www.wikipedia.org">Wikipedia</a>
@@ -143,7 +143,7 @@ TEST_P(NGBoxFragmentPainterTest, AddUrlRects) {
   std::vector<GURL> links;
   ExtractLinks(record.get(), &links);
   ASSERT_EQ(links.size(), 2U);
-  EXPECT_EQ(links[0].spec(), "https://www.chromium.org/");
+  EXPECT_EQ(links[0].spec(), "https://www.monyhar.org/");
   EXPECT_EQ(links[1].spec(), "https://www.wikipedia.org/");
 }
 

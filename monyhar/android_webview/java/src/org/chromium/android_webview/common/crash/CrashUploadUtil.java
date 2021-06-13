@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.common.crash;
+package org.monyhar.android_webview.common.crash;
 
 import android.app.job.JobInfo;
 import android.content.ComponentName;
@@ -13,12 +13,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.UiThread;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.android_webview.common.services.ServiceNames;
-import org.chromium.base.Log;
-import org.chromium.components.background_task_scheduler.TaskIds;
-import org.chromium.components.minidump_uploader.CrashFileManager;
-import org.chromium.components.minidump_uploader.MinidumpUploadJobService;
-import org.chromium.components.minidump_uploader.util.NetworkPermissionUtil;
+import org.monyhar.android_webview.common.services.ServiceNames;
+import org.monyhar.base.Log;
+import org.monyhar.components.background_task_scheduler.TaskIds;
+import org.monyhar.components.minidump_uploader.CrashFileManager;
+import org.monyhar.components.minidump_uploader.MinidumpUploadJobService;
+import org.monyhar.components.minidump_uploader.util.NetworkPermissionUtil;
 
 import java.io.File;
 

@@ -134,10 +134,10 @@ used to create (or for singletons, retrieve) instances of all the other required
 classes.
 
 * On L - N, the class loaded by reflection is called
-`com.android.webview.chromium.WebViewChromiumFactoryProvider`.
+`com.android.webview.monyhar.WebViewChromiumFactoryProvider`.
 
 * On O+, the class is called
-`com.android.webview.chromium.WebViewChromiumFactoryProviderForO` (or `ForP`,
+`com.android.webview.monyhar.WebViewChromiumFactoryProviderForO` (or `ForP`,
 `ForQ`, etc). This was made version-specific to avoid cases where using an
 outdated version of WebView on a newer version of Android would crash in
 unpredictable ways when new APIs were called - instead, loading will always fail
@@ -158,7 +158,7 @@ there are any splits, which causes a duplicate classloader to be created when
 a renderer actually starts up; this results in a crash (as it tries to load the
 native library twice, which is forbidden). We work around this in the WebView
 code by
-[using reflection early in initialization](/android_webview/glue/java/src/com/android/webview/chromium/SplitApkWorkaround.java).
+[using reflection early in initialization](/android_webview/glue/java/src/com/android/webview/monyhar/SplitApkWorkaround.java).
 
 ## Loading native code with RELRO sharing
 
@@ -232,7 +232,7 @@ continue - the RELRO data will not be shared in this process.
 This does not make the JVM aware of the library, and does not call `JNI_OnLoad`;
 we are only loading it as a generic native library at this point.
 
-* Android L: The native library must be called `libwebviewchromium.so` and must
+* Android L: The native library must be called `libwebviewmonyhar.so` and must
 have been extracted to disk by `PackageManager` at install time to the normal
 location where apps' shared libraries are extracted. Loading the library
 directly from the APK is not supported: the system linker only gained the

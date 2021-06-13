@@ -21,7 +21,7 @@ def main(argv):
   chrome_options = webdriver.ChromeOptions()
   chrome_options.add_argument("--force-renderer-accessibility")
   #Always set useAutomationExtension as false to avoid failing launch Chrome
-  #https://bugs.chromium.org/p/chromedriver/issues/detail?id=2930
+  #https://bugs.monyhar.org/p/chromedriver/issues/detail?id=2930
   chrome_options.add_experimental_option("useAutomationExtension", False)
   driver = test_util.create_chrome_webdriver(chrome_options=chrome_options)
   app = Application(backend="uia")

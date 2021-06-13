@@ -9,7 +9,7 @@ namespace blink {
 
 // This mode corrensponds to inputmode
 // https://html.spec.whatwg.org/#attr-fe-inputmode
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.blink_public.web
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.blink_public.web
 // GENERATED_JAVA_PREFIX_TO_STRIP: WebTextInputMode
 enum WebTextInputMode {
   kWebTextInputModeDefault,

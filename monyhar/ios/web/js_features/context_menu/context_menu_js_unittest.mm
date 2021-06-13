@@ -39,7 +39,7 @@ namespace {
 const char kRequestId[] = "UNIQUE_IDENTIFIER";
 
 // The base url for loaded web pages.
-const char kTestUrl[] = "https://chromium.test/";
+const char kTestUrl[] = "https://monyhar.test/";
 
 // A point in the web view's coordinate space on the link returned by
 // |GetHtmlForLink()|.

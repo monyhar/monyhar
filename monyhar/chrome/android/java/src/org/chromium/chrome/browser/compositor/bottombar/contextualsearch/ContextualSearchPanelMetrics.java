@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.bottombar.contextualsearch;
+package org.monyhar.chrome.browser.compositor.bottombar.contextualsearch;
 
-import org.chromium.base.TimeUtils;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanel.PanelState;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanel.StateChangeReason;
-import org.chromium.chrome.browser.contextualsearch.ContextualSearchHeuristics;
-import org.chromium.chrome.browser.contextualsearch.ContextualSearchIPH;
-import org.chromium.chrome.browser.contextualsearch.ContextualSearchInteractionRecorder;
-import org.chromium.chrome.browser.contextualsearch.ContextualSearchUma;
-import org.chromium.chrome.browser.contextualsearch.EngagementSuppression;
-import org.chromium.chrome.browser.contextualsearch.QuickActionCategory;
-import org.chromium.chrome.browser.contextualsearch.ResolvedSearchTerm;
-import org.chromium.chrome.browser.profiles.Profile;
+import org.monyhar.base.TimeUtils;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanel.PanelState;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanel.StateChangeReason;
+import org.monyhar.chrome.browser.contextualsearch.ContextualSearchHeuristics;
+import org.monyhar.chrome.browser.contextualsearch.ContextualSearchIPH;
+import org.monyhar.chrome.browser.contextualsearch.ContextualSearchInteractionRecorder;
+import org.monyhar.chrome.browser.contextualsearch.ContextualSearchUma;
+import org.monyhar.chrome.browser.contextualsearch.EngagementSuppression;
+import org.monyhar.chrome.browser.contextualsearch.QuickActionCategory;
+import org.monyhar.chrome.browser.contextualsearch.ResolvedSearchTerm;
+import org.monyhar.chrome.browser.profiles.Profile;
 
 /**
  * This class is responsible for all the logging triggered by activity of the

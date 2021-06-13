@@ -16,7 +16,7 @@ namespace vr {
 
 class VrModuleProvider;
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.vr
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.vr
 enum class VrSupportLevel : int {
   kVrDisabled = 0,
   kVrNeedsUpdate = 1,  // VR Support is available, but needs update.

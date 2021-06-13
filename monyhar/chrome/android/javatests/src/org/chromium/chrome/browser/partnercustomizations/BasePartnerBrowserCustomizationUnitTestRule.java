@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.partnercustomizations;
+package org.monyhar.chrome.browser.partnercustomizations;
 
 import android.content.Context;
 import android.content.ContextWrapper;
@@ -13,8 +13,8 @@ import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.chrome.test.partnercustomizations.TestPartnerBrowserCustomizationsDelayedProvider;
-import org.chromium.chrome.test.partnercustomizations.TestPartnerBrowserCustomizationsProvider;
+import org.monyhar.chrome.test.partnercustomizations.TestPartnerBrowserCustomizationsDelayedProvider;
+import org.monyhar.chrome.test.partnercustomizations.TestPartnerBrowserCustomizationsProvider;
 
 import java.util.concurrent.Semaphore;
 

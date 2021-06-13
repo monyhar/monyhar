@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components_browsertests_apk;
+package org.monyhar.components_browsertests_apk;
 
 import android.os.Bundle;
 
-import org.chromium.base.test.util.UrlUtils;
-import org.chromium.content_shell.browsertests.ContentShellBrowserTestActivity;
+import org.monyhar.base.test.util.UrlUtils;
+import org.monyhar.content_shell.browsertests.ContentShellBrowserTestActivity;
 
 import java.io.File;
 

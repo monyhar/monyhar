@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webshare;
+package org.monyhar.chrome.browser.webshare;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.share.ChromeShareExtras;
-import org.chromium.chrome.browser.share.ShareDelegate;
-import org.chromium.chrome.browser.share.ShareDelegate.ShareOrigin;
-import org.chromium.chrome.browser.share.ShareDelegateSupplier;
-import org.chromium.components.browser_ui.share.ShareParams;
-import org.chromium.components.browser_ui.webshare.ShareServiceImpl;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.services.service_manager.InterfaceFactory;
-import org.chromium.webshare.mojom.ShareService;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.share.ChromeShareExtras;
+import org.monyhar.chrome.browser.share.ShareDelegate;
+import org.monyhar.chrome.browser.share.ShareDelegate.ShareOrigin;
+import org.monyhar.chrome.browser.share.ShareDelegateSupplier;
+import org.monyhar.components.browser_ui.share.ShareParams;
+import org.monyhar.components.browser_ui.webshare.ShareServiceImpl;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.services.service_manager.InterfaceFactory;
+import org.monyhar.webshare.mojom.ShareService;
 
 /**
  * Factory that creates instances of ShareService.

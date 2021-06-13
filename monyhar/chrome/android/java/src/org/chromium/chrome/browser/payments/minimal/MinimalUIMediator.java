@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments.minimal;
+package org.monyhar.chrome.browser.payments.minimal;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
@@ -18,20 +18,20 @@ import android.view.View.OnClickListener;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.payments.minimal.MinimalUICoordinator.CompleteAndCloseObserver;
-import org.chromium.chrome.browser.payments.minimal.MinimalUICoordinator.ConfirmObserver;
-import org.chromium.chrome.browser.payments.minimal.MinimalUICoordinator.DismissObserver;
-import org.chromium.chrome.browser.payments.minimal.MinimalUICoordinator.ErrorAndCloseObserver;
-import org.chromium.chrome.browser.payments.minimal.MinimalUICoordinator.ReadyObserver;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetContent;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController.SheetState;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController.StateChangeReason;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetObserver;
-import org.chromium.components.payments.PackageManagerDelegate;
-import org.chromium.components.payments.PaymentApp;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.payments.minimal.MinimalUICoordinator.CompleteAndCloseObserver;
+import org.monyhar.chrome.browser.payments.minimal.MinimalUICoordinator.ConfirmObserver;
+import org.monyhar.chrome.browser.payments.minimal.MinimalUICoordinator.DismissObserver;
+import org.monyhar.chrome.browser.payments.minimal.MinimalUICoordinator.ErrorAndCloseObserver;
+import org.monyhar.chrome.browser.payments.minimal.MinimalUICoordinator.ReadyObserver;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetContent;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController.SheetState;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController.StateChangeReason;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetObserver;
+import org.monyhar.components.payments.PackageManagerDelegate;
+import org.monyhar.components.payments.PaymentApp;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * Payment minimal UI mediator, which is responsible for the interaction with the backend: the

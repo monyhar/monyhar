@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.accessibility.captioning;
+package org.monyhar.content.browser.accessibility.captioning;
 
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -13,7 +13,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
 
 /**
   * Test suite to ensure that platform settings are translated to CSS appropriately

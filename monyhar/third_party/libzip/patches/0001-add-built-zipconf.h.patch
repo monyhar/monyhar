@@ -1,5 +1,5 @@
 From a944ceb9e95664e0590771b769b455bf7e0382c9 Mon Sep 17 00:00:00 2001
-From: Michael Crouse <mcrouse@chromium.org>
+From: Michael Crouse <mcrouse@monyhar.org>
 Date: Tue, 5 Jan 2021 09:10:20 -0800
 Subject: [PATCH] add built zipconf.h
 

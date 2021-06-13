@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.verification;
+package org.monyhar.chrome.browser.browserservices.verification;
 
-import org.chromium.components.embedder_support.util.Origin;
+import org.monyhar.components.embedder_support.util.Origin;
 
 /**
  * This is a plain-old-data class to store a Digital Asset Link relationship [1].

@@ -357,7 +357,7 @@ class IdentityTestEnvironment : public IdentityManager::DiagnosticsObserver,
   // NOTE: This constructor is for usage only in the special case of embedder
   // unittests that must use the IdentityManager instance associated with the
   // Profile. If you think you have another use case for it, contact
-  // blundell@chromium.org.
+  // blundell@monyhar.org.
   IdentityTestEnvironment(IdentityManager* identity_manager,
                           SigninClient* signin_client);
 

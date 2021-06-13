@@ -5,7 +5,7 @@
 import("//build/config/android/rules.gni")
 import("//chrome/android/features/android_library_factory_tmpl.gni")
 
-_factory_sources = [ "java/src/org/chromium/chrome/browser/keyboard_accessory/ManualFillingComponentFactory.java" ]
+_factory_sources = [ "java/src/org/monyhar/chrome/browser/keyboard_accessory/ManualFillingComponentFactory.java" ]
 
 android_library_factory("public_java") {
   # These deps will be inherited by the resulting android_library target.

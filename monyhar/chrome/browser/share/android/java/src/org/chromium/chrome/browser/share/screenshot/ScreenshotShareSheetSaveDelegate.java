@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.screenshot;
+package org.monyhar.chrome.browser.share.screenshot;
 
 import android.Manifest.permission;
 import android.app.Activity;
@@ -17,11 +17,11 @@ import android.provider.Settings;
 import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.app.AlertDialog;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.download.DownloadController;
-import org.chromium.chrome.browser.share.BitmapDownloadRequest;
-import org.chromium.ui.base.AndroidPermissionDelegate;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.download.DownloadController;
+import org.monyhar.chrome.browser.share.BitmapDownloadRequest;
+import org.monyhar.ui.base.AndroidPermissionDelegate;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.text.DateFormat;
 import java.util.Date;

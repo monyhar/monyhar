@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share;
+package org.monyhar.chrome.browser.share;
 
 import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
@@ -22,29 +22,29 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.PackageManagerUtils;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.lens.LensController;
-import org.chromium.chrome.browser.lens.LensEntryPoint;
-import org.chromium.chrome.browser.lens.LensIntentParams;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.browser_ui.share.ShareParams;
-import org.chromium.components.browser_ui.share.ShareParams.TargetChosenCallback;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.url.GURL;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.PackageManagerUtils;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.lens.LensController;
+import org.monyhar.chrome.browser.lens.LensEntryPoint;
+import org.monyhar.chrome.browser.lens.LensIntentParams;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.browser_ui.share.ShareParams;
+import org.monyhar.components.browser_ui.share.ShareParams.TargetChosenCallback;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.url.GURL;
 
 import java.util.List;
 
 /**
  * A helper class that provides additional Chrome-specific share functionality.
  */
-public class ShareHelper extends org.chromium.components.browser_ui.share.ShareHelper {
+public class ShareHelper extends org.monyhar.components.browser_ui.share.ShareHelper {
     private static boolean sIgnoreActivityNotFoundException;
 
     private ShareHelper() {}

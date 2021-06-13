@@ -6,7 +6,7 @@
      found in the LICENSE file.
 -->
 
-<org.chromium.chrome.browser.accessibility_tab_switcher.AccessibilityTabModelWrapper
+<org.monyhar.chrome.browser.accessibility_tab_switcher.AccessibilityTabModelWrapper
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -17,7 +17,7 @@
     android:divider="@drawable/accessibility_tab_switcher_divider"
     android:showDividers="middle">
 
-    <org.chromium.chrome.browser.accessibility_tab_switcher.AccessibilityTabModelListView
+    <org.monyhar.chrome.browser.accessibility_tab_switcher.AccessibilityTabModelListView
         android:id="@+id/list_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -54,7 +54,7 @@
         android:id="@+id/button_wrapper"
         android:visibility="gone">
 
-        <org.chromium.ui.widget.ChromeImageButton
+        <org.monyhar.ui.widget.ChromeImageButton
             android:id="@+id/standard_tabs_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
             android:layout_gravity="center_vertical"
             android:background="#292929" />
 
-        <org.chromium.ui.widget.ChromeImageButton
+        <org.monyhar.ui.widget.ChromeImageButton
             android:id="@+id/incognito_tabs_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -82,4 +82,4 @@
             android:contentDescription="@string/accessibility_tab_switcher_incognito_stack"
             style="?android:attr/borderlessButtonStyle" />
     </LinearLayout>
-</org.chromium.chrome.browser.accessibility_tab_switcher.AccessibilityTabModelWrapper>
+</org.monyhar.chrome.browser.accessibility_tab_switcher.AccessibilityTabModelWrapper>

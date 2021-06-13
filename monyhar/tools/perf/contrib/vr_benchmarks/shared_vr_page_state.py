@@ -139,10 +139,10 @@ class AndroidSharedVrPageState(_SharedVrPageState):
 
   def _InstallNfcApk(self):
     """Installs the APK that allows VR tests to simulate a headset NFC scan."""
-    chromium_root = path_util.GetChromiumSrcDir()
+    monyhar_root = path_util.GetChromiumSrcDir()
     # Find the most recently build APK
     candidate_apks = []
-    for build_path in util.GetBuildDirectories(chromium_root):
+    for build_path in util.GetBuildDirectories(monyhar_root):
       apk_path = os.path.join(build_path, 'apks', 'VrNfcSimulator.apk')
       if os.path.exists(apk_path):
         last_changed = os.path.getmtime(apk_path)
@@ -153,7 +153,7 @@ class AndroidSharedVrPageState(_SharedVrPageState):
           'Could not find VrNfcSimulator.apk in a build output directory')
     newest_apk_path = sorted(candidate_apks)[-1][1]
     self.platform.InstallApplication(
-        os.path.join(chromium_root, newest_apk_path))
+        os.path.join(monyhar_root, newest_apk_path))
 
   def _InstallKeyboardApk(self):
     """Installs the VR Keyboard APK."""

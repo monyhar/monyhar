@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant;
+package org.monyhar.chrome.browser.autofill_assistant;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
@@ -15,11 +15,11 @@ import static org.hamcrest.Matchers.notNullValue;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.checkElementExists;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.getBoundingRectForElement;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.getViewport;
-import static org.chromium.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitForElementRemoved;
-import static org.chromium.content_public.browser.test.util.TestThreadUtils.runOnUiThreadBlocking;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.checkElementExists;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.getBoundingRectForElement;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.getViewport;
+import static org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantUiTestUtil.waitForElementRemoved;
+import static org.monyhar.content_public.browser.test.util.TestThreadUtils.runOnUiThreadBlocking;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -37,19 +37,19 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.autofill_assistant.overlay.AssistantOverlayCoordinator;
-import org.chromium.chrome.browser.autofill_assistant.overlay.AssistantOverlayImage;
-import org.chromium.chrome.browser.autofill_assistant.overlay.AssistantOverlayModel;
-import org.chromium.chrome.browser.autofill_assistant.overlay.AssistantOverlayState;
-import org.chromium.chrome.browser.customtabs.CustomTabActivityTestRule;
-import org.chromium.chrome.browser.customtabs.CustomTabsTestUtils;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.test.util.TestCallbackHelperContainer;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.autofill_assistant.overlay.AssistantOverlayCoordinator;
+import org.monyhar.chrome.browser.autofill_assistant.overlay.AssistantOverlayImage;
+import org.monyhar.chrome.browser.autofill_assistant.overlay.AssistantOverlayModel;
+import org.monyhar.chrome.browser.autofill_assistant.overlay.AssistantOverlayState;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivityTestRule;
+import org.monyhar.chrome.browser.customtabs.CustomTabsTestUtils;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.test.util.TestCallbackHelperContainer;
 
 import java.util.Collections;
 import java.util.concurrent.ExecutionException;
@@ -87,7 +87,7 @@ public class AutofillAssistantOverlayUiTest {
             throws ExecutionException {
         return createCoordinator(model,
                 BitmapFactory.decodeResource(mTestRule.getActivity().getResources(),
-                        org.chromium.chrome.autofill_assistant.R.drawable.btn_close));
+                        org.monyhar.chrome.autofill_assistant.R.drawable.btn_close));
     }
 
     /** Creates a coordinator for use in UI tests with a custom overlay image. */
@@ -222,7 +222,7 @@ public class AutofillAssistantOverlayUiTest {
     public void testOverlayImageDoesNotCrashIfValid() throws Exception {
         AssistantOverlayModel model = new AssistantOverlayModel();
         Bitmap bitmap = BitmapFactory.decodeResource(mTestRule.getActivity().getResources(),
-                org.chromium.chrome.autofill_assistant.R.drawable.btn_close);
+                org.monyhar.chrome.autofill_assistant.R.drawable.btn_close);
         assertThat(bitmap, notNullValue());
         AssistantOverlayCoordinator coordinator =
                 createCoordinator(model, /* overlayImage = */ bitmap);

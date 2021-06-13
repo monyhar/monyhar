@@ -175,7 +175,7 @@ http_archive(
 
 http_archive(
     name = "libyuv",
-    urls = ["https://chromium.googlesource.com/libyuv/libyuv/+archive/6d603ec3f57dafddc424ef895e5d903915e94ba6.tar.gz"],
+    urls = ["https://monyhar.googlesource.com/libyuv/libyuv/+archive/6d603ec3f57dafddc424ef895e5d903915e94ba6.tar.gz"],
     # Adding the constrain of sha256 and strip_prefix will cause failure.
     # It seems that the downloaded libyuv was different every time, so that
     # the specified sha256 and strip_prefix cannot match.

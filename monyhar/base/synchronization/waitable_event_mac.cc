@@ -253,7 +253,7 @@ size_t WaitableEvent::WaitMany(WaitableEvent** raw_waitables, size_t count) {
     // scheduled on the serial |queue|. The first one to be invoked will
     // signal the |semaphore| that this method will wait on.
     ScopedDispatchObject<dispatch_queue_t> queue(dispatch_queue_create(
-        "org.chromium.base.WaitableEvent.WaitMany", DISPATCH_QUEUE_SERIAL));
+        "org.monyhar.base.WaitableEvent.WaitMany", DISPATCH_QUEUE_SERIAL));
     ScopedDispatchObject<dispatch_semaphore_t> semaphore(
         dispatch_semaphore_create(0));
 

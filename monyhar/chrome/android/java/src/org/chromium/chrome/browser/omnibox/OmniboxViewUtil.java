@@ -2,8 +2,8 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox;
-import org.chromium.base.annotations.NativeMethods;
+package org.monyhar.chrome.browser.omnibox;
+import org.monyhar.base.annotations.NativeMethods;
 
 /**
  * Utilities for the Omnibox view component.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.metrics;
+package org.monyhar.base.metrics;
 
 /** Common interface for code recording UMA metrics. */
 public interface UmaRecorder {
@@ -12,7 +12,7 @@ public interface UmaRecorder {
     /**
      * Records a single sample of a histogram with exponentially scaled buckets. See
      * {@link
-     * https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md#count-histograms}
+     * https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md#count-histograms}
      * <p>
      * This is the default histogram type used by "counts", "times" and "memory" histograms in
      * {@code base/metrics/histogram_functions.h}
@@ -28,7 +28,7 @@ public interface UmaRecorder {
     /**
      * Records a single sample of a histogram with evenly spaced buckets. See
      * {@link
-     * https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md#percentage-or-ratio-histograms}
+     * https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md#percentage-or-ratio-histograms}
      * <p>
      * This histogram type is best suited for recording enums, percentages and ratios.
      *
@@ -44,13 +44,13 @@ public interface UmaRecorder {
     /**
      * Records a single sample of a sparse histogram. See
      * {@link
-     * https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md#when-to-use-sparse-histograms}
+     * https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md#when-to-use-sparse-histograms}
      */
     void recordSparseHistogram(String name, int sample);
 
     /**
      * Records a user action. Action names must be documented in {@code actions.xml}. See {@link
-     * https://source.chromium.org/chromium/chromium/src/+/main:tools/metrics/actions/README.md}
+     * https://source.monyhar.org/monyhar/monyhar/src/+/main:tools/metrics/actions/README.md}
      *
      * @param name Name of the user action.
      * @param elapsedRealtimeMillis Value of {@link android.os.SystemClock.elapsedRealtime()} when

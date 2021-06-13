@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_entry_edit;
+package org.monyhar.chrome.browser.password_entry_edit;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertEquals;
@@ -18,22 +18,22 @@ import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditMediator.BLOCKED_CREDENTIAL_ACTION_HISTOGRAM;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEditError.DUPLICATE_USERNAME;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEditError.EMPTY_PASSWORD;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditMediator.EDIT_ERROR_HISTOGRAM;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditMediator.FEDERATED_CREDENTIAL_ACTION_HISTOGRAM;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditMediator.SAVED_PASSWORD_ACTION_HISTOGRAM;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.ALL_KEYS;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.DUPLICATE_USERNAME_ERROR;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.EMPTY_PASSWORD_ERROR;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.FEDERATION_ORIGIN;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.PASSWORD;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.PASSWORD_VISIBLE;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.UI_ACTION_HANDLER;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.UI_DISMISSED_BY_NATIVE;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.URL_OR_APP;
-import static org.chromium.chrome.browser.password_entry_edit.CredentialEditProperties.USERNAME;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditMediator.BLOCKED_CREDENTIAL_ACTION_HISTOGRAM;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEditError.DUPLICATE_USERNAME;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEditError.EMPTY_PASSWORD;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditMediator.EDIT_ERROR_HISTOGRAM;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditMediator.FEDERATED_CREDENTIAL_ACTION_HISTOGRAM;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditMediator.SAVED_PASSWORD_ACTION_HISTOGRAM;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.ALL_KEYS;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.DUPLICATE_USERNAME_ERROR;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.EMPTY_PASSWORD_ERROR;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.FEDERATION_ORIGIN;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.PASSWORD;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.PASSWORD_VISIBLE;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.UI_ACTION_HANDLER;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.UI_DISMISSED_BY_NATIVE;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.URL_OR_APP;
+import static org.monyhar.chrome.browser.password_entry_edit.CredentialEditProperties.USERNAME;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -49,16 +49,16 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.Callback;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.test.ShadowRecordHistogram;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.password_entry_edit.CredentialEditCoordinator.CredentialActionDelegate;
-import org.chromium.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEntryAction;
-import org.chromium.chrome.browser.password_manager.ConfirmationDialogHelper;
-import org.chromium.chrome.browser.password_manager.settings.PasswordAccessReauthenticationHelper;
-import org.chromium.chrome.browser.password_manager.settings.PasswordAccessReauthenticationHelper.ReauthReason;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.Callback;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.test.ShadowRecordHistogram;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.password_entry_edit.CredentialEditCoordinator.CredentialActionDelegate;
+import org.monyhar.chrome.browser.password_entry_edit.CredentialEditMediator.CredentialEntryAction;
+import org.monyhar.chrome.browser.password_manager.ConfirmationDialogHelper;
+import org.monyhar.chrome.browser.password_manager.settings.PasswordAccessReauthenticationHelper;
+import org.monyhar.chrome.browser.password_manager.settings.PasswordAccessReauthenticationHelper.ReauthReason;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * Tests verifying that the credential edit mediator modifies the model correctly.

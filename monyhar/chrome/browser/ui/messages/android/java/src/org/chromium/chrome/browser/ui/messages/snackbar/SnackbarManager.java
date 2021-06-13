@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui.messages.snackbar;
+package org.monyhar.chrome.browser.ui.messages.snackbar;
 
 import android.app.Activity;
 import android.os.Handler;
@@ -13,13 +13,13 @@ import android.view.ViewGroup;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ApplicationStatus.ActivityStateListener;
-import org.chromium.base.UnownedUserData;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.util.ChromeAccessibilityUtil;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ApplicationStatus.ActivityStateListener;
+import org.monyhar.base.UnownedUserData;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.util.ChromeAccessibilityUtil;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Manager for the snackbar showing at the bottom of activity. There should be only one

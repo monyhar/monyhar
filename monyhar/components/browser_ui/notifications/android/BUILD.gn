@@ -6,17 +6,17 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/components/browser_ui/notifications/ForegroundServiceUtils.java",
-    "java/src/org/chromium/components/browser_ui/notifications/NotificationManagerProxy.java",
-    "java/src/org/chromium/components/browser_ui/notifications/NotificationManagerProxyImpl.java",
-    "java/src/org/chromium/components/browser_ui/notifications/NotificationMetadata.java",
-    "java/src/org/chromium/components/browser_ui/notifications/NotificationWrapper.java",
-    "java/src/org/chromium/components/browser_ui/notifications/NotificationWrapperBuilder.java",
-    "java/src/org/chromium/components/browser_ui/notifications/NotificationWrapperCompatBuilder.java",
-    "java/src/org/chromium/components/browser_ui/notifications/NotificationWrapperStandardBuilder.java",
-    "java/src/org/chromium/components/browser_ui/notifications/PendingIntentProvider.java",
-    "java/src/org/chromium/components/browser_ui/notifications/channels/ChannelDefinitions.java",
-    "java/src/org/chromium/components/browser_ui/notifications/channels/ChannelsInitializer.java",
+    "java/src/org/monyhar/components/browser_ui/notifications/ForegroundServiceUtils.java",
+    "java/src/org/monyhar/components/browser_ui/notifications/NotificationManagerProxy.java",
+    "java/src/org/monyhar/components/browser_ui/notifications/NotificationManagerProxyImpl.java",
+    "java/src/org/monyhar/components/browser_ui/notifications/NotificationMetadata.java",
+    "java/src/org/monyhar/components/browser_ui/notifications/NotificationWrapper.java",
+    "java/src/org/monyhar/components/browser_ui/notifications/NotificationWrapperBuilder.java",
+    "java/src/org/monyhar/components/browser_ui/notifications/NotificationWrapperCompatBuilder.java",
+    "java/src/org/monyhar/components/browser_ui/notifications/NotificationWrapperStandardBuilder.java",
+    "java/src/org/monyhar/components/browser_ui/notifications/PendingIntentProvider.java",
+    "java/src/org/monyhar/components/browser_ui/notifications/channels/ChannelDefinitions.java",
+    "java/src/org/monyhar/components/browser_ui/notifications/channels/ChannelsInitializer.java",
   ]
 
   deps = [
@@ -30,7 +30,7 @@ android_library("java") {
 android_library("test_support_java") {
   testonly = true
 
-  sources = [ "java/src/org/chromium/components/browser_ui/notifications/MockNotificationManagerProxy.java" ]
+  sources = [ "java/src/org/monyhar/components/browser_ui/notifications/MockNotificationManagerProxy.java" ]
   deps = [
     ":java",
     "//content/public/test/android:content_java_test_support",

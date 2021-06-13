@@ -128,7 +128,7 @@ js_library("emoji_picker") {
     ":events",
     ":store",
     ":types",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/js:assert.m",
   ]
   externs_list = [ "$externs_path/chrome_send.js" ]
@@ -145,7 +145,7 @@ js_library("emoji_group_button") {
   deps = [
     ":events",
     ":icons",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_icon_button:cr_icon_button.m",
   ]
 }
@@ -154,7 +154,7 @@ js_library("emoji_group") {
   deps = [
     ":emoji_button",
     ":types",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -163,7 +163,7 @@ js_library("emoji_button") {
     ":emoji_variants",
     ":events",
     ":types",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -171,22 +171,22 @@ js_library("emoji_variants") {
   # technically depends on :emoji_button, but that causes circular dependency.
   deps = [
     ":types",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
 js_library("emoji_search") {
   deps = [
     ":types",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_search_field:cr_search_field",
   ]
 }
 
 js_library("icons") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/iron-iconset-svg",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-iconset-svg",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 

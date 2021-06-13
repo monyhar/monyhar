@@ -1,6 +1,6 @@
 {
  "compilerOptions": {
-  "baseUrl": "../../../third_party/material_web_components/components-chromium/node_modules/",
+  "baseUrl": "../../../third_party/material_web_components/components-monyhar/node_modules/",
   "target": "es2017",
     "module": "es2020",
     "moduleResolution": "node",

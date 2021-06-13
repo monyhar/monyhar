@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui.appmenu;
+package org.monyhar.chrome.browser.ui.appmenu;
 
 /**
  * An interface that may be used to block the app menu from showing (e.g. when other conflicting UI

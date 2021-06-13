@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.webapps.installable;
+package org.monyhar.components.webapps.installable;
 
 import static android.view.View.IMPORTANT_FOR_ACCESSIBILITY_NO;
 
@@ -13,15 +13,15 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.browser_ui.widget.text.AccessibleTextView;
-import org.chromium.components.infobars.InfoBar;
-import org.chromium.components.infobars.InfoBarCompactLayout;
-import org.chromium.components.infobars.R;
-import org.chromium.components.webapps.WebappsIconUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.browser_ui.widget.text.AccessibleTextView;
+import org.monyhar.components.infobars.InfoBar;
+import org.monyhar.components.infobars.InfoBarCompactLayout;
+import org.monyhar.components.infobars.R;
+import org.monyhar.components.webapps.WebappsIconUtils;
 
 /**
  * An ambient infobar to tell the user that the current site they are visiting is a PWA.

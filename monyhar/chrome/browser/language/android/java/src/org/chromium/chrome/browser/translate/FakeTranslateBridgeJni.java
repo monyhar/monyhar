@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.translate;
+package org.monyhar.chrome.browser.translate;
 
-import org.chromium.chrome.browser.language.settings.LanguageItem;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.chrome.browser.language.settings.LanguageItem;
+import org.monyhar.content_public.browser.WebContents;
 
 import java.util.ArrayList;
 import java.util.Arrays;

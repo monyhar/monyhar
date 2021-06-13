@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed;
+package org.monyhar.chrome.browser.feed;
 
 import static org.mockito.AdditionalMatchers.or;
 import static org.mockito.ArgumentMatchers.any;
@@ -14,9 +14,9 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import static org.chromium.chrome.browser.tab.TabHidingType.CHANGED_TABS;
-import static org.chromium.chrome.browser.tab.TabSelectionType.FROM_NEW;
-import static org.chromium.chrome.browser.tab.TabSelectionType.FROM_USER;
+import static org.monyhar.chrome.browser.tab.TabHidingType.CHANGED_TABS;
+import static org.monyhar.chrome.browser.tab.TabSelectionType.FROM_NEW;
+import static org.monyhar.chrome.browser.tab.TabSelectionType.FROM_USER;
 
 import android.app.Activity;
 import android.support.test.filters.SmallTest;
@@ -31,14 +31,14 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.feed.shared.stream.Stream;
-import org.chromium.chrome.browser.preferences.Pref;
-import org.chromium.chrome.browser.tab.TabHidingType;
-import org.chromium.chrome.browser.tab.TabImpl;
-import org.chromium.components.prefs.PrefService;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.feed.shared.stream.Stream;
+import org.monyhar.chrome.browser.preferences.Pref;
+import org.monyhar.chrome.browser.tab.TabHidingType;
+import org.monyhar.chrome.browser.tab.TabImpl;
+import org.monyhar.components.prefs.PrefService;
 
 /**
  * Unit tests for {@link FeedSurfaceLifecycleManager}.

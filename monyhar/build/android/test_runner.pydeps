@@ -136,7 +136,7 @@
 ../util/lib/common/chrome_test_server_spawner.py
 ../util/lib/common/unittest_util.py
 convert_dex_profile.py
-devil_chromium.py
+devil_monyhar.py
 gyp/dex.py
 gyp/util/__init__.py
 gyp/util/build_utils.py

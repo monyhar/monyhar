@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.thinwebview.internal;
+package org.monyhar.components.thinwebview.internal;
 
 import android.content.Context;
 import android.view.View;
@@ -11,17 +11,17 @@ import android.widget.FrameLayout;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.annotations.DoNotInline;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.embedder_support.delegate.WebContentsDelegateAndroid;
-import org.chromium.components.thinwebview.CompositorView;
-import org.chromium.components.thinwebview.ThinWebView;
-import org.chromium.components.thinwebview.ThinWebViewConstraints;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.ActivityWindowAndroid;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.annotations.DoNotInline;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.embedder_support.delegate.WebContentsDelegateAndroid;
+import org.monyhar.components.thinwebview.CompositorView;
+import org.monyhar.components.thinwebview.ThinWebView;
+import org.monyhar.components.thinwebview.ThinWebViewConstraints;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.ActivityWindowAndroid;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * An android view backed by a {@link Surface} that is able to display a live {@link WebContents}.

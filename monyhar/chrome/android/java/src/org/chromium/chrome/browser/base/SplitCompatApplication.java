@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.base;
+package org.monyhar.chrome.browser.base;
 
 import android.app.Application;
 import android.content.Context;
@@ -14,36 +14,36 @@ import android.os.Bundle;
 
 import androidx.annotation.CallSuper;
 
-import org.chromium.base.ApplicationState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.BuildInfo;
-import org.chromium.base.BundleUtils;
-import org.chromium.base.CommandLineInitUtil;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.EarlyTraceEvent;
-import org.chromium.base.JNIUtils;
-import org.chromium.base.LocaleUtils;
-import org.chromium.base.Log;
-import org.chromium.base.PathUtils;
-import org.chromium.base.TraceEvent;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.library_loader.LibraryProcessType;
-import org.chromium.base.memory.MemoryPressureMonitor;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.build.BuildConfig;
-import org.chromium.chrome.browser.ProductConfig;
-import org.chromium.chrome.browser.crash.ApplicationStatusTracker;
-import org.chromium.chrome.browser.crash.FirebaseConfig;
-import org.chromium.chrome.browser.crash.PureJavaExceptionHandler;
-import org.chromium.chrome.browser.flags.CachedFeatureFlags;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.language.GlobalAppLocaleController;
-import org.chromium.chrome.browser.metrics.UmaUtils;
-import org.chromium.components.embedder_support.application.FontPreloadingWorkaround;
-import org.chromium.components.module_installer.util.ModuleUtil;
-import org.chromium.components.version_info.VersionConstants;
-import org.chromium.ui.base.ResourceBundle;
+import org.monyhar.base.ApplicationState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.BundleUtils;
+import org.monyhar.base.CommandLineInitUtil;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.EarlyTraceEvent;
+import org.monyhar.base.JNIUtils;
+import org.monyhar.base.LocaleUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.PathUtils;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.library_loader.LibraryProcessType;
+import org.monyhar.base.memory.MemoryPressureMonitor;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.build.BuildConfig;
+import org.monyhar.chrome.browser.ProductConfig;
+import org.monyhar.chrome.browser.crash.ApplicationStatusTracker;
+import org.monyhar.chrome.browser.crash.FirebaseConfig;
+import org.monyhar.chrome.browser.crash.PureJavaExceptionHandler;
+import org.monyhar.chrome.browser.flags.CachedFeatureFlags;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.language.GlobalAppLocaleController;
+import org.monyhar.chrome.browser.metrics.UmaUtils;
+import org.monyhar.components.embedder_support.application.FontPreloadingWorkaround;
+import org.monyhar.components.module_installer.util.ModuleUtil;
+import org.monyhar.components.version_info.VersionConstants;
+import org.monyhar.ui.base.ResourceBundle;
 
 /**
  * Application base class which will call through to the given {@link Impl}. Application classes

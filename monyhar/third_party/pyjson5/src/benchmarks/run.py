@@ -32,8 +32,8 @@ import json5  # pylint: disable=wrong-import-position
 ALL_BENCHMARKS = (
     'ios-simulator.json',
     'mb_config.json',
-    'chromium.linux.json',
-    'chromium.perf.json',
+    'monyhar.linux.json',
+    'monyhar.perf.json',
 )
 
 

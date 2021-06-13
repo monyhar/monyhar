@@ -232,7 +232,7 @@ TYPED_TEST_P(LuciTestResultTypedTest, Variant) {
              "variant":{"param/instantiation":"%s"}
            }
          })";
-  // Note that chromium has RTTI disabled. As a result, type_param() and
+  // Note that monyhar has RTTI disabled. As a result, type_param() and
   // GetTypeName<> always returns a generic "<type>".
   const std::string expected_json =
       base::StringPrintf(json_template.c_str(), type_param_name.c_str(),

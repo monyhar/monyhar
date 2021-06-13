@@ -6,7 +6,7 @@
      found in the LICENSE file.
  -->
 
-<org.chromium.content_shell.Shell
+<org.monyhar.content_shell.Shell
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
@@ -52,4 +52,4 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
-</org.chromium.content_shell.Shell>
+</org.monyhar.content_shell.Shell>

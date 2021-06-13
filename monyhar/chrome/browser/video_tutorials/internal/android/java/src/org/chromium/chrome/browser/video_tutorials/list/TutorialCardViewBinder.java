@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.video_tutorials.list;
+package org.monyhar.chrome.browser.video_tutorials.list;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import org.chromium.chrome.browser.video_tutorials.R;
-import org.chromium.components.browser_ui.widget.async_image.AsyncImageView;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.chrome.browser.video_tutorials.R;
+import org.monyhar.components.browser_ui.widget.async_image.AsyncImageView;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * This class is responsible for building and binding the video tutorial card.

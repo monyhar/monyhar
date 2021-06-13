@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting;
+package org.monyhar.chromoting;
 
 import android.app.Activity;
 import android.content.DialogInterface;
@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 
-import org.chromium.chromoting.jni.Client;
+import org.monyhar.chromoting.jni.Client;
 
 /**
  * This class performs the user-interaction needed to authenticate the session connection. This

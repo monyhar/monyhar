@@ -40,7 +40,7 @@ communicates with - each platform has its own implementation.
 The following diagram shows the ISensor based Chromium backend
 implementation on Windows:
 
-![Current Chromium Sensor Backend](chromium_sensor_backend_windows_isensor.png)
+![Current Chromium Sensor Backend](monyhar_sensor_backend_windows_isensor.png)
 
 The implementation contains three main classes:
 
@@ -58,7 +58,7 @@ The implementation contains three main classes:
 
 The following diagram shows the typical usage flow:
 
-![Current Chromium Sensor Backend Flow](chromium_sensor_backend_windows_isensor_flow.png)
+![Current Chromium Sensor Backend Flow](monyhar_sensor_backend_windows_isensor_flow.png)
 
 Support for the SensorTypes defined by the Mojo interface
 on Windows is summarized below:

@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
-import static org.chromium.net.CronetTestRule.SERVER_CERT_PEM;
-import static org.chromium.net.CronetTestRule.SERVER_KEY_PKCS8_PEM;
-import static org.chromium.net.CronetTestRule.getContext;
-import static org.chromium.net.CronetTestRule.getTestStorage;
+import static org.monyhar.net.CronetTestRule.SERVER_CERT_PEM;
+import static org.monyhar.net.CronetTestRule.SERVER_KEY_PKCS8_PEM;
+import static org.monyhar.net.CronetTestRule.getContext;
+import static org.monyhar.net.CronetTestRule.getTestStorage;
 
 import android.support.test.runner.AndroidJUnit4;
 
@@ -25,9 +25,9 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.Feature;
-import org.chromium.net.CronetTestRule.OnlyRunNativeCronet;
-import org.chromium.net.test.util.CertTestUtil;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.net.CronetTestRule.OnlyRunNativeCronet;
+import org.monyhar.net.test.util.CertTestUtil;
 
 import java.io.ByteArrayInputStream;
 import java.security.cert.CertificateFactory;

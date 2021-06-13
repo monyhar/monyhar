@@ -43,7 +43,7 @@ namespace media_router {
 namespace {
 // Command line argument to specify receiver,
 const char kReceiver[] = "receiver";
-// The path relative to <chromium src>/out/<build config> for media router
+// The path relative to <monyhar src>/out/<build config> for media router
 // browser test resources.
 const base::FilePath::StringPieceType kResourcePath =
     FILE_PATH_LITERAL("media_router/browser_test_resources/");

@@ -41,7 +41,7 @@ class GitCLTest(unittest.TestCase):
         self.assertEqual(host.executive.calls, [['git', 'cl', 'issue']])
 
     def test_trigger_try_jobs_with_list(self):
-        # When no bucket is specified, luci.chromium.try is used by
+        # When no bucket is specified, luci.monyhar.try is used by
         # default. Besides, `git cl try` invocations are grouped by buckets.
         host = MockHost()
         git_cl = GitCL(host, auth_refresh_token_json='token.json')
@@ -50,12 +50,12 @@ class GitCLTest(unittest.TestCase):
         ])
         self.assertEqual(host.executive.calls, [
             [
-                'git', 'cl', 'try', '-B', 'luci.chromium.try', '-b',
+                'git', 'cl', 'try', '-B', 'luci.monyhar.try', '-b',
                 'fake_blink_try_linux', '-b', 'fake_blink_try_win',
                 '--auth-refresh-token-json', 'token.json'
             ],
             [
-                'git', 'cl', 'try', '-B', 'luci.chromium.android', '-b',
+                'git', 'cl', 'try', '-B', 'luci.monyhar.android', '-b',
                 'android_blink_rel', '--auth-refresh-token-json', 'token.json'
             ],
         ])
@@ -68,7 +68,7 @@ class GitCLTest(unittest.TestCase):
             frozenset(['fake_blink_try_linux', 'fake_blink_try_win']))
         self.assertEqual(host.executive.calls, [
             [
-                'git', 'cl', 'try', '-B', 'luci.chromium.try', '-b',
+                'git', 'cl', 'try', '-B', 'luci.monyhar.try', '-b',
                 'fake_blink_try_linux', '-b', 'fake_blink_try_win',
                 '--auth-refresh-token-json', 'token.json'
             ],

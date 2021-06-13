@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.bookmarks;
+package org.monyhar.chrome.browser.bookmarks;
 
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import org.chromium.base.Log;
-import org.chromium.chrome.R;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.R;
+import org.monyhar.ui.widget.Toast;
 
 /**
  * This feature is no longer supported. TODO(twellington): remove this entirely Android L is no

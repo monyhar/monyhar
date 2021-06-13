@@ -13,7 +13,7 @@ import {DivView} from './view.js';
  * This UI allows a user to query and update the browser's list of per-domain
  * security policies. These policies include:
  * - HSTS: HTTPS Strict Transport Security. A way for sites to elect to always
- *   use HTTPS. See http://dev.chromium.org/sts
+ *   use HTTPS. See http://dev.monyhar.org/sts
  * - Expect-CT. A way for sites to elect to always require valid Certificate
  *   Transparency information to be present. See
  *   https://tools.ietf.org/html/draft-ietf-httpbis-expect-ct-01

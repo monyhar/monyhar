@@ -128,7 +128,7 @@ TEST_F(PRegParserTest, TestParseFile) {
   SetString(&expected, "HomepageLocation", "http://www.example.com");
   SetInteger(&expected, "RestoreOnStartup", 4);
   std::unique_ptr<RegistryDict> startup_urls(new RegistryDict());
-  SetString(startup_urls.get(), "1", "http://www.chromium.org");
+  SetString(startup_urls.get(), "1", "http://www.monyhar.org");
   SetString(startup_urls.get(), "2", "http://www.example.com");
   expected.SetKey("RestoreOnStartupURLs", std::move(startup_urls));
   SetInteger(&expected, "ShowHomeButton", 1);

@@ -15,8 +15,8 @@
 #include "net/base/load_timing_info.h"
 #include "net/base/net_export.h"
 #include "net/http/bidirectional_stream_impl.h"
-#include "net/quic/quic_chromium_client_session.h"
-#include "net/quic/quic_chromium_client_stream.h"
+#include "net/quic/quic_monyhar_client_session.h"
+#include "net/quic/quic_monyhar_client_stream.h"
 #include "net/third_party/quiche/src/spdy/core/spdy_header_block.h"
 
 namespace base {

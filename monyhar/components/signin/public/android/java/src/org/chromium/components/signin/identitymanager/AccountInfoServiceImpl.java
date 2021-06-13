@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.signin.identitymanager;
+package org.monyhar.components.signin.identitymanager;
 
 import androidx.annotation.GuardedBy;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ObserverList;
-import org.chromium.base.Promise;
-import org.chromium.components.signin.base.AccountInfo;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.Promise;
+import org.monyhar.components.signin.base.AccountInfo;
 
 /**
  * This class handles the {@link AccountInfo} fetch on Java side.

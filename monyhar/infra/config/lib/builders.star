@@ -5,7 +5,7 @@
 """Library for defining builders.
 
 The `builder` function defined in this module simplifies setting all of the
-dimensions and many of the properties used for chromium builders by providing
+dimensions and many of the properties used for monyhar builders by providing
 direct arguments for them rather than requiring them to appear as part of a
 dict. This simplifies creating wrapper functions that need to fix or override
 the default value of specific dimensions or property fields without having to
@@ -112,15 +112,15 @@ os = struct(
 goma = struct(
     backend = struct(
         RBE_PROD = {
-            "server_host": "goma.chromium.org",
+            "server_host": "goma.monyhar.org",
             "rpc_extra_params": "?prod",
         },
         RBE_STAGING = {
-            "server_host": "staging-goma.chromium.org",
+            "server_host": "staging-goma.monyhar.org",
             "rpc_extra_params": "?staging",
         },
         RBE_TOT = {
-            "server_host": "staging-goma.chromium.org",
+            "server_host": "staging-goma.monyhar.org",
             "rpc_extra_params": "?tot",
         },
     ),
@@ -187,14 +187,14 @@ _DEFAULT_BUILDERLESS_OS_CATEGORIES = [os_category.LINUX]
 # setting ssd:0 dimension
 _EXCLUDE_BUILDERLESS_SSD_OS_CATEGORIES = [os_category.MAC]
 
-def _chromium_tests_property(*, project_trigger_overrides):
-    chromium_tests = {}
+def _monyhar_tests_property(*, project_trigger_overrides):
+    monyhar_tests = {}
 
     project_trigger_overrides = defaults.get_value("project_trigger_overrides", project_trigger_overrides)
     if project_trigger_overrides:
-        chromium_tests["project_trigger_overrides"] = project_trigger_overrides
+        monyhar_tests["project_trigger_overrides"] = project_trigger_overrides
 
-    return chromium_tests or None
+    return monyhar_tests or None
 
 def _goma_property(*, goma_backend, goma_debug, goma_enable_ats, goma_jobs):
     goma_properties = {}
@@ -273,7 +273,7 @@ def _reclient_property(*, instance, service, jobs, rewrapper_env):
     instance = defaults.get_value("reclient_instance", instance)
     if instance:
         reclient["instance"] = instance
-        reclient["metrics_project"] = "chromium-reclient-metrics"
+        reclient["metrics_project"] = "monyhar-reclient-metrics"
     service = defaults.get_value("reclient_service", service)
     if service:
         reclient["service"] = service
@@ -387,7 +387,7 @@ def builder(
     attribute with a `lucicfg.var` for all of the fields defined here as well as
     all of the parameters of `luci.builder` that support module-level defaults.
 
-    See https://chromium.googlesource.com/infra/luci/luci-go/+/refs/heads/master/lucicfg/doc/README.md#luci.builder
+    See https://monyhar.googlesource.com/infra/luci/luci-go/+/refs/heads/master/lucicfg/doc/README.md#luci.builder
     for more information.
 
     Arguments:
@@ -596,7 +596,7 @@ def builder(
     # TODO(crbug.com/1143122): remove this.
     experiments = experiments or {}
     if os and os.category in (os_category.MAC, os_category.WINDOWS):
-        experiments["chromium.chromium_tests.use_rbe_cas"] = 100
+        experiments["monyhar.monyhar_tests.use_rbe_cas"] = 100
     kwargs["experiments"] = experiments
 
     configure_kitchen = defaults.get_value("configure_kitchen", configure_kitchen)
@@ -608,11 +608,11 @@ def builder(
         if defaults.get_value("kitchen_emulate_gce", kitchen_emulate_gce):
             properties["$kitchen"]["emulate_gce"] = True
 
-    chromium_tests = _chromium_tests_property(
+    monyhar_tests = _monyhar_tests_property(
         project_trigger_overrides = project_trigger_overrides,
     )
-    if chromium_tests != None:
-        properties["$build/chromium_tests"] = chromium_tests
+    if monyhar_tests != None:
+        properties["$build/monyhar_tests"] = monyhar_tests
 
     goma_enable_ats = defaults.get_value("goma_enable_ats", goma_enable_ats)
 

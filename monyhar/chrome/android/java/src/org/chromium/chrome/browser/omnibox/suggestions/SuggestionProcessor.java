@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions;
+package org.monyhar.chrome.browser.omnibox.suggestions;
 
-import org.chromium.components.omnibox.AutocompleteMatch;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.components.omnibox.AutocompleteMatch;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * A processor of omnibox suggestions. Implementers are provided the opportunity to analyze a

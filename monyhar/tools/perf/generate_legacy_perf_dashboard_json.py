@@ -4,7 +4,7 @@
 # found in the LICENSE file.
 
 """ Generates legacy perf dashboard json from non-telemetry based perf tests.
-Taken from chromium/build/scripts/slave/performance_log_processory.py
+Taken from monyhar/build/scripts/slave/performance_log_processory.py
 (https://goo.gl/03SQRk)
 """
 

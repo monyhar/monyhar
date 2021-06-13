@@ -39,7 +39,7 @@ class NET_EXPORT NetworkChangeNotifier {
   // http://w3c.github.io/netinfo/.
   //
   // A Java counterpart will be generated for this enum.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.net
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.net
   //
   // New enum values should only be added to the end of the enum and no values
   // should be modified or reused, as this is reported via UMA.
@@ -64,7 +64,7 @@ class NET_EXPORT NetworkChangeNotifier {
   // added to the end.
   //
   // A Java counterpart will be generated for this enum.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.net
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.net
   //
   // TODO(crbug.com/1127134): Introduce subtypes for 5G networks once they can
   // be detected.

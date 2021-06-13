@@ -16,7 +16,7 @@ function wait_load() {
 
 function wait_paints() {
   // As of 2017-04-05, the Chromium web browser exhibits a rendering bug
-  // (https://bugs.chromium.org/p/chromium/issues/detail?id=708757) that
+  // (https://bugs.monyhar.org/p/monyhar/issues/detail?id=708757) that
   // produces instability during screen capture. The following use of
   // `requestAnimationFrame` is intended as a short-term workaround, though
   // it is not guaranteed to resolve the issue.

@@ -234,7 +234,7 @@ TEST_F(SecurityOriginTest, CanRequest) {
 
 TEST_F(SecurityOriginTest, CanRequestWithAllowListedAccess) {
   scoped_refptr<const SecurityOrigin> origin =
-      SecurityOrigin::CreateFromString("https://chromium.org");
+      SecurityOrigin::CreateFromString("https://monyhar.org");
   const blink::KURL url("https://example.com");
 
   EXPECT_FALSE(origin->CanRequest(url));
@@ -250,7 +250,7 @@ TEST_F(SecurityOriginTest, CanRequestWithAllowListedAccess) {
 
 TEST_F(SecurityOriginTest, CannotRequestWithBlockListedAccess) {
   scoped_refptr<const SecurityOrigin> origin =
-      SecurityOrigin::CreateFromString("https://chromium.org");
+      SecurityOrigin::CreateFromString("https://monyhar.org");
   const blink::KURL allowed_url("https://test.example.com");
   const blink::KURL blocked_url("https://example.com");
 
@@ -275,7 +275,7 @@ TEST_F(SecurityOriginTest, CannotRequestWithBlockListedAccess) {
 
 TEST_F(SecurityOriginTest, CanRequestWithMoreSpecificAllowList) {
   scoped_refptr<const SecurityOrigin> origin =
-      SecurityOrigin::CreateFromString("https://chromium.org");
+      SecurityOrigin::CreateFromString("https://monyhar.org");
   const blink::KURL allowed_url("https://test.example.com");
   const blink::KURL blocked_url("https://example.com");
 
@@ -300,7 +300,7 @@ TEST_F(SecurityOriginTest, CanRequestWithMoreSpecificAllowList) {
 
 TEST_F(SecurityOriginTest, CanRequestWithPortSpecificAllowList) {
   scoped_refptr<const SecurityOrigin> origin =
-      SecurityOrigin::CreateFromString("https://chromium.org");
+      SecurityOrigin::CreateFromString("https://monyhar.org");
   SecurityPolicy::AddOriginAccessAllowListEntry(
       *origin, "https", "test1.example.com", 443,
       network::mojom::CorsDomainMatchMode::kAllowSubdomains,
@@ -323,7 +323,7 @@ TEST_F(SecurityOriginTest, CanRequestWithPortSpecificAllowList) {
 
 TEST_F(SecurityOriginTest, PunycodeNotUnicode) {
   scoped_refptr<const SecurityOrigin> origin =
-      SecurityOrigin::CreateFromString("https://chromium.org");
+      SecurityOrigin::CreateFromString("https://monyhar.org");
   const blink::KURL unicode_url("https://☃.net/");
   const blink::KURL punycode_url("https://xn--n3h.net/");
 

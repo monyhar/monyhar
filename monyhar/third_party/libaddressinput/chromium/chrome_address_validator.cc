@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#include "third_party/libaddressinput/chromium/chrome_address_validator.h"
+#include "third_party/libaddressinput/monyhar/chrome_address_validator.h"
 
 #include <cmath>
 
@@ -11,8 +11,8 @@
 #include "base/location.h"
 #include "base/single_thread_task_runner.h"
 #include "base/threading/thread_task_runner_handle.h"
-#include "third_party/libaddressinput/chromium/addressinput_util.h"
-#include "third_party/libaddressinput/chromium/input_suggester.h"
+#include "third_party/libaddressinput/monyhar/addressinput_util.h"
+#include "third_party/libaddressinput/monyhar/input_suggester.h"
 #include "third_party/libaddressinput/src/cpp/include/libaddressinput/address_data.h"
 #include "third_party/libaddressinput/src/cpp/include/libaddressinput/address_normalizer.h"
 #include "third_party/libaddressinput/src/cpp/include/libaddressinput/source.h"

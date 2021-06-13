@@ -63,10 +63,10 @@ class GetCiBuildersUnittest(fake_filesystem_unittest.TestCase):
     }
 
     self.CreateFile(os.path.join(builders.TESTING_BUILDBOT_DIR,
-                                 'chromium.gpu.json'),
+                                 'monyhar.gpu.json'),
                     contents=json.dumps(gpu_json))
     self.CreateFile(os.path.join(builders.TESTING_BUILDBOT_DIR,
-                                 'chromium.gpu.fyi.json'),
+                                 'monyhar.gpu.fyi.json'),
                     contents=json.dumps(gpu_fyi_json))
 
     gpu_builders = builders.GetCiBuilders('webgl_conformance')
@@ -114,7 +114,7 @@ class GetCiBuildersUnittest(fake_filesystem_unittest.TestCase):
     }
 
     self.CreateFile(os.path.join(builders.TESTING_BUILDBOT_DIR,
-                                 'chromium.json'),
+                                 'monyhar.json'),
                     contents=json.dumps(gpu_json))
 
     gpu_builders = builders.GetCiBuilders('webgl_conformance')

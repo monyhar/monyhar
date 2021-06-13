@@ -1026,7 +1026,7 @@ bool ProxyConfigServiceLinux::Delegate::GetProxyFromSettings(
 
   // gsettings settings do not appear to distinguish between SOCKS version. We
   // default to version 5. For more information on this policy decision, see:
-  // http://code.google.com/p/chromium/issues/detail?id=55912#c2
+  // http://code.google.com/p/monyhar/issues/detail?id=55912#c2
   ProxyServer::Scheme scheme = (host_key == SettingGetter::PROXY_SOCKS_HOST) ?
       ProxyServer::SCHEME_SOCKS5 : ProxyServer::SCHEME_HTTP;
   host = FixupProxyHostScheme(scheme, host);

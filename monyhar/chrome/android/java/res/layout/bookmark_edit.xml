@@ -21,7 +21,7 @@
             android:layout_marginStart="16dp"
             android:orientation="vertical" >
 
-            <org.chromium.chrome.browser.bookmarks.BookmarkTextInputLayout
+            <org.monyhar.chrome.browser.bookmarks.BookmarkTextInputLayout
                 android:id="@+id/title_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
                     android:imeOptions="flagNoExtractUi"
                     android:inputType="textCapSentences|textAutoCorrect"
                     android:singleLine="true" />
-            </org.chromium.chrome.browser.bookmarks.BookmarkTextInputLayout>
+            </org.monyhar.chrome.browser.bookmarks.BookmarkTextInputLayout>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -54,7 +54,7 @@
                 android:layout_marginEnd="3dp"
                 android:textAppearance="@style/TextAppearance.BookmarkEditFolderName" />
 
-            <org.chromium.chrome.browser.bookmarks.BookmarkTextInputLayout
+            <org.monyhar.chrome.browser.bookmarks.BookmarkTextInputLayout
                 android:id="@+id/url_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -68,7 +68,7 @@
                     android:imeOptions="flagNoExtractUi"
                     android:inputType="textUri"
                     android:singleLine="true" />
-            </org.chromium.chrome.browser.bookmarks.BookmarkTextInputLayout>
+            </org.monyhar.chrome.browser.bookmarks.BookmarkTextInputLayout>
         </LinearLayout>
     </ScrollView>
 

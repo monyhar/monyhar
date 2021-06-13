@@ -95,7 +95,7 @@ for master.
 Since not all waterfall bots have a trybot counterpart that can be relied upon
 to catch newly produced images before a CL is committed, it is likely that a
 change that produces new goldens on the CQ will end up making some of the
-waterfall bots red for a bit, particularly those on chromium.gpu.fyi. They will
+waterfall bots red for a bit, particularly those on monyhar.gpu.fyi. They will
 remain red until the new images are triaged as positive or the tests stop
 producing the untriaged images. So, it is best to keep an eye out for a few
 hours after your CL is committed for any new images from the waterfall bots that
@@ -134,7 +134,7 @@ for an image to be untriaged but not show up on the front page of the Gold
 instance (for details, see [this crbug comment][untriaged non tot comment]). To
 see all such images, visit [this link][untriaged non tot].
 
-[untriaged non tot comment]: https://bugs.chromium.org/p/skia/issues/detail?id=9189#c4
+[untriaged non tot comment]: https://bugs.monyhar.org/p/skia/issues/detail?id=9189#c4
 [untriaged non tot]: https://chrome-gpu-gold.skia.org/search?fdiffmax=-1&fref=false&frgbamax=255&frgbamin=0&head=false&include=false&limit=50&master=false&match=name&metric=combined&neg=false&offset=0&pos=false&query=source_type%3Dchrome-gpu&sort=desc&unt=true
 
 ### Finding A Failed Build
@@ -170,7 +170,7 @@ ping kjlubick@ with a link to the filed bug to help speed up triaging. Include
 as much detail as possible, such as a links to the failed swarming task and
 the triage link for the problematic image.
 
-[skia crbug]: https://bugs.chromium.org/p/skia
+[skia crbug]: https://bugs.monyhar.org/p/skia
 
 ## Inexact Matching
 
@@ -236,11 +236,11 @@ up in the tags of one of the instances for the [CIPD package][goldctl package]
 7. Update the [revision in DEPS][goldctl deps entry] to be the merged CL's
 revision
 
-[infra repo]: https://chromium.googlesource.com/infra/infra/
-[deps yaml]: https://chromium.googlesource.com/infra/infra/+/91333d832a4d871b4219580dfb874b49a97e6da4/go/deps.yaml#432
-[sample roll cl]: https://chromium-review.googlesource.com/c/infra/infra/+/1493426
+[infra repo]: https://monyhar.googlesource.com/infra/infra/
+[deps yaml]: https://monyhar.googlesource.com/infra/infra/+/91333d832a4d871b4219580dfb874b49a97e6da4/go/deps.yaml#432
+[sample roll cl]: https://monyhar-review.googlesource.com/c/infra/infra/+/1493426
 [goldctl package]: https://chrome-infra-packages.appspot.com/p/skia/tools/goldctl/linux-amd64/+/
-[goldctl deps entry]: https://chromium.googlesource.com/chromium/src/+/6b7213a45382f01ac0a2efec1015545bd051da89/DEPS#1304
+[goldctl deps entry]: https://monyhar.googlesource.com/monyhar/src/+/6b7213a45382f01ac0a2efec1015545bd051da89/DEPS#1304
 
 If you want to make sure that `goldctl` builds after the update before
 committing (e.g. to ensure that no extra third party dependencies were added),

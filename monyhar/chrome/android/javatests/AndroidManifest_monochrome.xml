@@ -13,7 +13,7 @@
 {% endblock %}
 
 {% block extra_root_definitions %}
-    <instrumentation android:name="org.chromium.base.test.BaseChromiumAndroidJUnitRunner"
+    <instrumentation android:name="org.monyhar.base.test.BaseChromiumAndroidJUnitRunner"
         android:targetPackage="{{manifest_package}}"
         android:label="Tests for {{manifest_package}}"/>
 {% endblock %}
@@ -28,5 +28,5 @@ android:requestLegacyExternalStorage="true"
 
 {% block base_application_definitions %}
     <meta-data android:name="com.google.ar.core.session_settings"
-      android:value="dataset_path,/sdcard/chromium_tests_root/chrome/test/data/xr/dataset.mp4"/>
+      android:value="dataset_path,/sdcard/monyhar_tests_root/chrome/test/data/xr/dataset.mp4"/>
 {% endblock %}

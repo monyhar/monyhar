@@ -6,7 +6,7 @@ syntax = "proto2";
 option optimize_for = LITE_RUNTIME;
 
 package offline_pages.proto;
-option java_package = "org.chromium.components.offline_pages.core.prefetch.proto";
+option java_package = "org.monyhar.components.offline_pages.core.prefetch.proto";
 
 import "status.proto";
 

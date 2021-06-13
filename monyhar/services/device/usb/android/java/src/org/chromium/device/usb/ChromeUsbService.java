@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.device.usb;
+package org.monyhar.device.usb;
 
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
@@ -13,12 +13,12 @@ import android.hardware.usb.UsbDevice;
 import android.hardware.usb.UsbDeviceConnection;
 import android.hardware.usb.UsbManager;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
 
 import java.util.HashMap;
 
@@ -31,7 +31,7 @@ import java.util.HashMap;
 @JNINamespace("device")
 final class ChromeUsbService {
     private static final String TAG = "Usb";
-    private static final String ACTION_USB_PERMISSION = "org.chromium.device.ACTION_USB_PERMISSION";
+    private static final String ACTION_USB_PERMISSION = "org.monyhar.device.ACTION_USB_PERMISSION";
 
     long mUsbServiceAndroid;
     UsbManager mUsbManager;

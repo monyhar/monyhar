@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.dom_distiller;
+package org.monyhar.chrome.browser.dom_distiller;
 
 import android.content.Context;
 import android.graphics.Typeface;
@@ -22,11 +22,11 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.dom_distiller.core.DistilledPagePrefs;
-import org.chromium.dom_distiller.mojom.FontFamily;
-import org.chromium.dom_distiller.mojom.Theme;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.dom_distiller.core.DistilledPagePrefs;
+import org.monyhar.dom_distiller.mojom.FontFamily;
+import org.monyhar.dom_distiller.mojom.Theme;
 
 import java.text.NumberFormat;
 import java.util.HashMap;

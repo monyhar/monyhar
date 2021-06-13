@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.device.geolocation;
+package org.monyhar.device.geolocation;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
@@ -31,8 +31,8 @@ import org.robolectric.shadow.api.Shadow;
 import org.robolectric.shadows.ShadowLocationManager;
 import org.robolectric.shadows.ShadowLog; // remove me ?
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.test.util.Feature;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.test.util.Feature;
 
 import java.util.Arrays;
 import java.util.Collection;

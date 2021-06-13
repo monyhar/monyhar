@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base;
+package org.monyhar.base;
 
 import androidx.test.filters.SmallTest;
 
@@ -10,8 +10,8 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.build.BuildConfig;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.build.BuildConfig;
 
 /**
  * Test that ensures Java asserts are working.

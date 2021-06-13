@@ -103,7 +103,7 @@ TEST_F(CrostiniShelfUtilsTest,
   });
 
   // App is found using wm app_id.
-  EXPECT_EQ(GetShelfAppId({.app_id = "org.chromium.termina.wmclass.cool.app"}),
+  EXPECT_EQ(GetShelfAppId({.app_id = "org.monyhar.termina.wmclass.cool.app"}),
             GenAppId({.desktop_file_id = "cool.app"}));
 
   // App is found using app_id.
@@ -117,7 +117,7 @@ TEST_F(CrostiniShelfUtilsTest, GetCrostiniShelfAppIdIgnoresWindowAppIdsCase) {
   });
 
   // App is found using capitalized App.
-  EXPECT_EQ(GetShelfAppId({.app_id = "org.chromium.termina.wmclass.App"}),
+  EXPECT_EQ(GetShelfAppId({.app_id = "org.monyhar.termina.wmclass.App"}),
             GenAppId({.desktop_file_id = "app"}));
 }
 
@@ -130,8 +130,8 @@ TEST_F(
   });
 
   // Neither app is found, as they can't be disambiguated.
-  EXPECT_EQ(GetShelfAppId({.app_id = "org.chromium.termina.wmclass.super"}),
-            "crostini:org.chromium.termina.wmclass.super");
+  EXPECT_EQ(GetShelfAppId({.app_id = "org.monyhar.termina.wmclass.super"}),
+            "crostini:org.monyhar.termina.wmclass.super");
 }
 
 TEST_F(CrostiniShelfUtilsTest,
@@ -139,11 +139,11 @@ TEST_F(CrostiniShelfUtilsTest,
   SetGuestOsRegistry({});
 
   EXPECT_EQ(
-      GetShelfAppId({.app_id = "org.chromium.termina.wmclientleader.1234"}),
-      "crostini:org.chromium.termina.wmclientleader.1234");
+      GetShelfAppId({.app_id = "org.monyhar.termina.wmclientleader.1234"}),
+      "crostini:org.monyhar.termina.wmclientleader.1234");
 
-  EXPECT_EQ(GetShelfAppId({.app_id = "org.chromium.termina.xid.654321"}),
-            "crostini:org.chromium.termina.xid.654321");
+  EXPECT_EQ(GetShelfAppId({.app_id = "org.monyhar.termina.xid.654321"}),
+            "crostini:org.monyhar.termina.xid.654321");
 
   EXPECT_EQ(GetShelfAppId({.app_id = "fancy.app"}), "crostini:fancy.app");
 }
@@ -155,7 +155,7 @@ TEST_F(CrostiniShelfUtilsTest,
   });
 
   // App is found using it's startup_wm_class.
-  EXPECT_EQ(GetShelfAppId({.app_id = "org.chromium.termina.wmclass.app_start"}),
+  EXPECT_EQ(GetShelfAppId({.app_id = "org.monyhar.termina.wmclass.app_start"}),
             GenAppId({.desktop_file_id = "app"}));
 }
 
@@ -168,8 +168,8 @@ TEST_F(
   });
 
   // Neither app is found, as they can't be disambiguated.
-  EXPECT_EQ(GetShelfAppId({.app_id = "org.chromium.termina.wmclass.app2"}),
-            "crostini:org.chromium.termina.wmclass.app2");
+  EXPECT_EQ(GetShelfAppId({.app_id = "org.monyhar.termina.wmclass.app2"}),
+            "crostini:org.monyhar.termina.wmclass.app2");
 }
 
 TEST_F(CrostiniShelfUtilsTest,
@@ -200,7 +200,7 @@ TEST_F(CrostiniShelfUtilsTest, GetCrostiniShelfAppIdCanFindAppsByName) {
   });
 
   // App found by app_name: "name".
-  EXPECT_EQ(GetShelfAppId({.app_id = "org.chromium.termina.wmclass.name"}),
+  EXPECT_EQ(GetShelfAppId({.app_id = "org.monyhar.termina.wmclass.name"}),
             GenAppId({.desktop_file_id = "app"}));
 }
 
@@ -214,8 +214,8 @@ TEST_F(CrostiniShelfUtilsTest,
   });
 
   // No app is found.
-  EXPECT_EQ(GetShelfAppId({.app_id = "org.chromium.termina.wmclass.name"}),
-            "crostini:org.chromium.termina.wmclass.name");
+  EXPECT_EQ(GetShelfAppId({.app_id = "org.monyhar.termina.wmclass.name"}),
+            "crostini:org.monyhar.termina.wmclass.name");
 
   // Two apps with the same name, where one is no_display.
   SetGuestOsRegistry({
@@ -226,7 +226,7 @@ TEST_F(CrostiniShelfUtilsTest,
   });
 
   // The app without no_display set is found.
-  EXPECT_EQ(GetShelfAppId({.app_id = "org.chromium.termina.wmclass.name"}),
+  EXPECT_EQ(GetShelfAppId({.app_id = "org.monyhar.termina.wmclass.name"}),
             GenAppId({.desktop_file_id = "app"}));
 }
 

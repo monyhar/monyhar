@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.browser;
+package org.monyhar.content_public.browser;
 
 import android.graphics.Bitmap;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.url.GURL;
+import org.monyhar.url.GURL;
 
 /**
  * Represents one entry in the navigation history of a page.

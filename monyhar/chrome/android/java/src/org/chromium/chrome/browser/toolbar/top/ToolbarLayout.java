@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar.top;
+package org.monyhar.chrome.browser.toolbar.top;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -22,35 +22,35 @@ import androidx.annotation.CallSuper;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ObserverList;
-import org.chromium.base.TraceEvent;
-import org.chromium.base.supplier.BooleanSupplier;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.findinpage.FindToolbar;
-import org.chromium.chrome.browser.omnibox.LocationBar;
-import org.chromium.chrome.browser.omnibox.LocationBarCoordinator;
-import org.chromium.chrome.browser.omnibox.NewTabPageDelegate;
-import org.chromium.chrome.browser.omnibox.OmniboxFocusReason;
-import org.chromium.chrome.browser.omnibox.UrlBarData;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.theme.ThemeColorProvider;
-import org.chromium.chrome.browser.theme.ThemeColorProvider.ThemeColorObserver;
-import org.chromium.chrome.browser.theme.ThemeColorProvider.TintObserver;
-import org.chromium.chrome.browser.theme.ThemeUtils;
-import org.chromium.chrome.browser.toolbar.ButtonData;
-import org.chromium.chrome.browser.toolbar.HomeButton;
-import org.chromium.chrome.browser.toolbar.TabCountProvider;
-import org.chromium.chrome.browser.toolbar.ToolbarDataProvider;
-import org.chromium.chrome.browser.toolbar.ToolbarProgressBar;
-import org.chromium.chrome.browser.toolbar.ToolbarTabController;
-import org.chromium.chrome.browser.toolbar.menu_button.MenuButtonCoordinator;
-import org.chromium.chrome.browser.toolbar.top.TopToolbarCoordinator.UrlExpansionObserver;
-import org.chromium.chrome.browser.ui.appmenu.AppMenuButtonHelper;
-import org.chromium.ui.UiUtils;
-import org.chromium.ui.base.ViewUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.base.supplier.BooleanSupplier;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.findinpage.FindToolbar;
+import org.monyhar.chrome.browser.omnibox.LocationBar;
+import org.monyhar.chrome.browser.omnibox.LocationBarCoordinator;
+import org.monyhar.chrome.browser.omnibox.NewTabPageDelegate;
+import org.monyhar.chrome.browser.omnibox.OmniboxFocusReason;
+import org.monyhar.chrome.browser.omnibox.UrlBarData;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.theme.ThemeColorProvider;
+import org.monyhar.chrome.browser.theme.ThemeColorProvider.ThemeColorObserver;
+import org.monyhar.chrome.browser.theme.ThemeColorProvider.TintObserver;
+import org.monyhar.chrome.browser.theme.ThemeUtils;
+import org.monyhar.chrome.browser.toolbar.ButtonData;
+import org.monyhar.chrome.browser.toolbar.HomeButton;
+import org.monyhar.chrome.browser.toolbar.TabCountProvider;
+import org.monyhar.chrome.browser.toolbar.ToolbarDataProvider;
+import org.monyhar.chrome.browser.toolbar.ToolbarProgressBar;
+import org.monyhar.chrome.browser.toolbar.ToolbarTabController;
+import org.monyhar.chrome.browser.toolbar.menu_button.MenuButtonCoordinator;
+import org.monyhar.chrome.browser.toolbar.top.TopToolbarCoordinator.UrlExpansionObserver;
+import org.monyhar.chrome.browser.ui.appmenu.AppMenuButtonHelper;
+import org.monyhar.ui.UiUtils;
+import org.monyhar.ui.base.ViewUtils;
 
 /**
  * Layout class that contains the base shared logic for manipulating the toolbar component. For

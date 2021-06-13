@@ -79,7 +79,7 @@ BluetoothAdvertisementBlueZ::BluetoothAdvertisementBlueZ(
   std::string GuidString = base::GenerateGUID();
   base::RemoveChars(GuidString, "-", &GuidString);
   dbus::ObjectPath advertisement_object_path =
-      dbus::ObjectPath("/org/chromium/bluetooth_advertisement/" + GuidString);
+      dbus::ObjectPath("/org/monyhar/bluetooth_advertisement/" + GuidString);
 
   DCHECK(bluez::BluezDBusManager::Get());
   provider_ = bluez::BluetoothLEAdvertisementServiceProvider::Create(

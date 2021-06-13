@@ -87,8 +87,8 @@ TEST_F(FormActivityTabHelperTest, TestObserverDocumentSubmitted) {
 
   std::string mainFrameID = main_frame->GetFrameId();
   const std::string kTestFormData =
-      std::string("[{\"name\":\"form-name\",\"origin\":\"https://chromium.test/"
-                  "\",\"action\":\"https://chromium.test/\","
+      std::string("[{\"name\":\"form-name\",\"origin\":\"https://monyhar.test/"
+                  "\",\"action\":\"https://monyhar.test/\","
                   "\"name_attribute\":\"form-name\",\"id_attribute\":\"\","
                   "\"unique_renderer_id\":\"1\",\"frame_id\":\"") +
       mainFrameID + std::string("\"}]");
@@ -128,8 +128,8 @@ TEST_F(FormActivityTabHelperTest, TestFormSubmittedHook) {
 
   std::string mainFrameID = main_frame->GetFrameId();
   const std::string kTestFormData =
-      std::string("[{\"name\":\"form-name\",\"origin\":\"https://chromium.test/"
-                  "\",\"action\":\"https://chromium.test/\","
+      std::string("[{\"name\":\"form-name\",\"origin\":\"https://monyhar.test/"
+                  "\",\"action\":\"https://monyhar.test/\","
                   "\"name_attribute\":\"form-name\",\"id_attribute\":\"form\","
                   "\"unique_renderer_id\":\"1\",\"frame_id\":\"") +
       mainFrameID + std::string("\"}]");

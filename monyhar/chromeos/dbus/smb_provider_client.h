@@ -20,7 +20,7 @@
 
 namespace chromeos {
 
-// SmbProviderClient is used to communicate with the org.chromium.SmbProvider
+// SmbProviderClient is used to communicate with the org.monyhar.SmbProvider
 // service. All methods should be called from the origin thread (UI thread)
 // which initializes the DBusThreadManager instance.
 class COMPONENT_EXPORT(CHROMEOS_DBUS) SmbProviderClient

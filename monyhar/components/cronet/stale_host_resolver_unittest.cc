@@ -679,7 +679,7 @@ TEST_F(StaleHostResolverTest, CreatedByContext) {
       // the cache.
       false,
       // Storage path for http cache and cookie storage.
-      "/data/data/org.chromium.net/app_cronet_test/test_storage",
+      "/data/data/org.monyhar.net/app_cronet_test/test_storage",
       // Accept-Language request header field.
       "foreign-language",
       // User-Agent request header field.

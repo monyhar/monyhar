@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webapk.lib.client;
+package org.monyhar.webapk.lib.client;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
@@ -13,9 +13,9 @@ import android.os.RemoteException;
 import android.text.TextUtils;
 import android.util.Log;
 
-import org.chromium.base.task.TaskTraits;
-import org.chromium.components.webapk.lib.common.WebApkMetaDataKeys;
-import org.chromium.webapk.lib.common.identity_service.IIdentityService;
+import org.monyhar.base.task.TaskTraits;
+import org.monyhar.components.webapk.lib.common.WebApkMetaDataKeys;
+import org.monyhar.webapk.lib.common.identity_service.IIdentityService;
 
 /**
  * Provides APIs for browsers to communicate with WebAPK Identity services. Each WebAPK has its own

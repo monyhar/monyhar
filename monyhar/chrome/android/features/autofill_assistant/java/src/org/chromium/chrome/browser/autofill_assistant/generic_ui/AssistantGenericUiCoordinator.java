@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.generic_ui;
+package org.monyhar.chrome.browser.autofill_assistant.generic_ui;
 
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-import org.chromium.chrome.browser.autofill_assistant.generic_ui.AssistantGenericUiViewBinder.ViewHolder;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.chrome.browser.autofill_assistant.generic_ui.AssistantGenericUiViewBinder.ViewHolder;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
 
 /**
  * Java-side coordinator for the GenericUI client action.

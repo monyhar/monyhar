@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.permissions;
+package org.monyhar.components.permissions;
 
 import android.app.Activity;
 import android.content.pm.PackageManager;
@@ -12,14 +12,14 @@ import android.widget.TextView;
 
 import androidx.annotation.StringRes;
 
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.ui.base.PermissionCallback;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.modaldialog.DialogDismissalCause;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.modaldialog.ModalDialogManagerHolder;
-import org.chromium.ui.modaldialog.ModalDialogProperties;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.ui.base.PermissionCallback;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.modaldialog.DialogDismissalCause;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.modaldialog.ModalDialogManagerHolder;
+import org.monyhar.ui.modaldialog.ModalDialogProperties;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.background_sync;
+package org.monyhar.chrome.browser.background_sync;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.components.externalauth.ExternalAuthUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.components.externalauth.ExternalAuthUtils;
 
 /**
  * Used to check whether Google Play Services version on the device is as

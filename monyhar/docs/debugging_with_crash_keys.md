@@ -10,7 +10,7 @@ key logging system is a generic method to help do that.
 
 ## High-Level Overview
 
-The core of the crash key logging system is in [//components/crash/core/common/crash_key.h](https://cs.chromium.org/chromium/src/components/crash/core/common/crash_key.h),
+The core of the crash key logging system is in [//components/crash/core/common/crash_key.h](https://cs.monyhar.org/monyhar/src/components/crash/core/common/crash_key.h),
 which declares a `crash_reporter::CrashKeyString` class. Every crash key has
 an associated value maximum length and a string name to identify it. The maximum
 length is specified as a template parameter in order to allocate that amount of
@@ -23,7 +23,7 @@ And if the process subsequently crashes, the name-value tuple is uploaded as
 POST form-multipart data when the crash report minidump is uploaded to the
 Google crash reporting system. (The data therefore are only accessible to those
 with access to crash reports internally at Google). For platforms that use
-[Crashpad](https://crashpad.chromium.org) as the crash reporting platform, the
+[Crashpad](https://crashpad.monyhar.org) as the crash reporting platform, the
 crash keys are also stored in the minidump file itself. For platforms that use
 Breakpad, the keys are only available at upload.
 
@@ -35,9 +35,9 @@ information, etc.
 ## Redaction
 
 Beware that certain on certain platforms (e.g. Android Webview) we
-[sanitize the stack in the dump](https://cs.chromium.org/chromium/src/third_party/crashpad/crashpad/snapshot/sanitized/memory_snapshot_sanitized.h)
+[sanitize the stack in the dump](https://cs.monyhar.org/monyhar/src/third_party/crashpad/crashpad/snapshot/sanitized/memory_snapshot_sanitized.h)
 and only crash keys on an
-[allowlist](https://cs.chromium.org/chromium/src/android_webview/common/crash_reporter/crash_keys.cc)
+[allowlist](https://cs.monyhar.org/monyhar/src/android_webview/common/crash_reporter/crash_keys.cc)
 will be captured.
 
 ## Getting Started with a Single Key-Value Pair
@@ -122,7 +122,7 @@ If this crash key is more permanent, then there is an alternate API in //base
 that can be used. This API is used by the //content module to set its permanent
 crash key information. Note however that the base-level API is more limited in
 terms of features and flexibility. See the header documentation in
-[//base/debug/crash_logging.h](https://cs.chromium.org/chromium/src/base/debug/crash_logging.h)
+[//base/debug/crash_logging.h](https://cs.monyhar.org/monyhar/src/base/debug/crash_logging.h)
 for usage examples.
 
 ## Advanced Topics: Stack Traces
@@ -155,7 +155,7 @@ function in crash_logging.h:
 
 Unlike with the previous example, a stack trace will just be a string of
 hexadecimal addresses. To turn the addresses back into symbols use,
-<http://go/crsym> (internal instance of <https://github.com/chromium/crsym/>).
+<http://go/crsym> (internal instance of <https://github.com/monyhar/crsym/>).
 Using the **Crash Key** input type, give it a crash report ID and the name of
 your crash key. Crsym will then fetch the symbol data from the internal crash
 processing backends and return a formatted, symbolized stack trace.

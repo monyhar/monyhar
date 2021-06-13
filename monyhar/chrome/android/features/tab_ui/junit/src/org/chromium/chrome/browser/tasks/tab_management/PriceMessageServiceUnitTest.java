@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -27,14 +27,14 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.price_tracking.PriceDropNotificationManager;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.state.ShoppingPersistedTabData;
-import org.chromium.chrome.browser.tasks.tab_management.MessageService.MessageType;
-import org.chromium.chrome.browser.tasks.tab_management.PriceMessageService.PriceMessageType;
-import org.chromium.chrome.browser.tasks.tab_management.PriceMessageService.PriceTabData;
-import org.chromium.chrome.test.util.browser.Features;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.price_tracking.PriceDropNotificationManager;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.state.ShoppingPersistedTabData;
+import org.monyhar.chrome.browser.tasks.tab_management.MessageService.MessageType;
+import org.monyhar.chrome.browser.tasks.tab_management.PriceMessageService.PriceMessageType;
+import org.monyhar.chrome.browser.tasks.tab_management.PriceMessageService.PriceTabData;
+import org.monyhar.chrome.test.util.browser.Features;
 
 /**
  * Unit tests for {@link PriceMessageService}.

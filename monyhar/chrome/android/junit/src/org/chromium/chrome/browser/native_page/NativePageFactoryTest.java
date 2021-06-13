@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.native_page;
+package org.monyhar.chrome.browser.native_page;
 
-import static org.chromium.chrome.browser.ui.native_page.NativePageTest.INVALID_URLS;
-import static org.chromium.chrome.browser.ui.native_page.NativePageTest.VALID_URLS;
-import static org.chromium.chrome.browser.ui.native_page.NativePageTest.isValidInIncognito;
+import static org.monyhar.chrome.browser.ui.native_page.NativePageTest.INVALID_URLS;
+import static org.monyhar.chrome.browser.ui.native_page.NativePageTest.VALID_URLS;
+import static org.monyhar.chrome.browser.ui.native_page.NativePageTest.isValidInIncognito;
 
 import android.view.View;
 
@@ -16,12 +16,12 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.ui.native_page.NativePage;
-import org.chromium.chrome.browser.ui.native_page.NativePage.NativePageType;
-import org.chromium.chrome.browser.ui.native_page.NativePageTest.UrlCombo;
-import org.chromium.components.embedder_support.util.UrlConstants;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.ui.native_page.NativePage;
+import org.monyhar.chrome.browser.ui.native_page.NativePage.NativePageType;
+import org.monyhar.chrome.browser.ui.native_page.NativePageTest.UrlCombo;
+import org.monyhar.components.embedder_support.util.UrlConstants;
 
 /**
  * Tests public methods in NativePageFactory.

@@ -2374,7 +2374,7 @@ IN_PROC_BROWSER_TEST_F(DevToolsTest, MAYBE_TestOpenInNewTabFilter) {
       {"blob:chrome://inspect", "about:blank"},
       {self_filesystem_url, self_filesystem_url},
       {"filesystem:chrome://inspect", "about:blank"},
-      {"view-source:http://chromium.org", "about:blank"},
+      {"view-source:http://monyhar.org", "about:blank"},
       {"file:///", "about:blank"},
       {"about://gpu", "about:blank"},
       {"chrome://gpu", "about:blank"},

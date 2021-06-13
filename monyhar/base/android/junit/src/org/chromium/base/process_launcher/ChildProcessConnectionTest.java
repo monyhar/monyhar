@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.process_launcher;
+package org.monyhar.base.process_launcher;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
@@ -39,8 +39,8 @@ import org.mockito.stubbing.Answer;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowLooper;
 
-import org.chromium.base.ChildBindingState;
-import org.chromium.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.ChildBindingState;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
 
 import java.util.ArrayList;
 
@@ -173,7 +173,7 @@ public class ChildProcessConnectionTest {
 
     private ChildProcessConnection createTestConnection(boolean bindToCaller,
             boolean bindAsExternalService, Bundle serviceBundle, boolean useFallback) {
-        String packageName = "org.chromium.test";
+        String packageName = "org.monyhar.test";
         String serviceName = "TestService";
         String fallbackServiceName = "TestFallbackService";
         return new ChildProcessConnection(null /* context */,
@@ -197,11 +197,11 @@ public class ChildProcessConnectionTest {
     @Test
     public void testServiceBundle() {
         Bundle serviceBundle = new Bundle();
-        final String intKey = "org.chromium.myInt";
+        final String intKey = "org.monyhar.myInt";
         final int intValue = 34;
         final int defaultValue = -1;
         serviceBundle.putInt(intKey, intValue);
-        String stringKey = "org.chromium.myString";
+        String stringKey = "org.monyhar.myString";
         String stringValue = "thirty four";
         serviceBundle.putString(stringKey, stringValue);
 
@@ -510,7 +510,7 @@ public class ChildProcessConnectionTest {
     @Test
     public void testFallback() throws RemoteException {
         Bundle serviceBundle = new Bundle();
-        final String intKey = "org.chromium.myInt";
+        final String intKey = "org.monyhar.myInt";
         final int intValue = 34;
         serviceBundle.putInt(intKey, intValue);
 

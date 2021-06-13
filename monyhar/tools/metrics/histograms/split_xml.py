@@ -28,11 +28,11 @@ This file is used to generate a comprehensive list of %s
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
 Please send CLs to individuals in the OWNERS file in the same directory as this
 xml file. If no OWNERS file exists, then send the CL to
-chromium-metrics-reviews@google.com.
+monyhar-metrics-reviews@google.com.
 """
 # Number of times that splitting of histograms will be carried out.
 TARGET_DEPTH = 1

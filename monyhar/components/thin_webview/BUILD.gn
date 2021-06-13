@@ -16,9 +16,9 @@ source_set("thin_webview") {
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/components/thinwebview/CompositorView.java",
-    "java/src/org/chromium/components/thinwebview/ThinWebView.java",
-    "java/src/org/chromium/components/thinwebview/ThinWebViewConstraints.java",
+    "java/src/org/monyhar/components/thinwebview/CompositorView.java",
+    "java/src/org/monyhar/components/thinwebview/ThinWebView.java",
+    "java/src/org/monyhar/components/thinwebview/ThinWebViewConstraints.java",
   ]
 
   deps = [
@@ -32,8 +32,8 @@ android_library("java") {
 
 android_library("factory_java") {
   sources = [
-    "java/src/org/chromium/components/thinwebview/CompositorViewFactory.java",
-    "java/src/org/chromium/components/thinwebview/ThinWebViewFactory.java",
+    "java/src/org/monyhar/components/thinwebview/CompositorViewFactory.java",
+    "java/src/org/monyhar/components/thinwebview/ThinWebViewFactory.java",
   ]
 
   deps = [

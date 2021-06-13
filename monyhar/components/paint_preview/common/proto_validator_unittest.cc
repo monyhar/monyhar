@@ -28,7 +28,7 @@ PaintPreviewProto CreatePopulatedValidProto() {
   root_frame->set_file_path("/foo/bar");
 
   auto* link = root_frame->add_links();
-  link->set_url("https://www.chromium.org/");
+  link->set_url("https://www.monyhar.org/");
 
   auto* rect = link->mutable_rect();
   rect->set_x(1);

@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.long_screenshots.bitmap_generation;
+package org.monyhar.chrome.browser.share.long_screenshots.bitmap_generation;
 
 import android.content.Context;
 import android.graphics.Rect;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.content_public.browser.RenderCoordinates;
-import org.chromium.ui.display.DisplayAndroid;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.content_public.browser.RenderCoordinates;
+import org.monyhar.ui.display.DisplayAndroid;
 
 /**
  * Responsible for calculating and tracking the bounds of the capture and composited

@@ -4,7 +4,7 @@
 
 """Top-level presubmit script for src/components/cronet.
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See http://dev.monyhar.org/developers/how-tos/depottools/presubmit-scripts
 for more details about the presubmit API built into depot_tools.
 """
 
@@ -18,35 +18,35 @@ def _PyLintChecks(input_api, output_api):
 
 def _GetPathsToPrepend(input_api):
   current_dir = input_api.PresubmitLocalPath()
-  chromium_src_dir = input_api.os_path.join(current_dir, '..', '..')
+  monyhar_src_dir = input_api.os_path.join(current_dir, '..', '..')
   return [
-    input_api.os_path.join(chromium_src_dir, 'components'),
-    input_api.os_path.join(chromium_src_dir, 'tools', 'perf'),
-    input_api.os_path.join(chromium_src_dir, 'build', 'android'),
-    input_api.os_path.join(chromium_src_dir, 'build', 'android', 'gyp'),
-    input_api.os_path.join(chromium_src_dir,
+    input_api.os_path.join(monyhar_src_dir, 'components'),
+    input_api.os_path.join(monyhar_src_dir, 'tools', 'perf'),
+    input_api.os_path.join(monyhar_src_dir, 'build', 'android'),
+    input_api.os_path.join(monyhar_src_dir, 'build', 'android', 'gyp'),
+    input_api.os_path.join(monyhar_src_dir,
         'mojo', 'public', 'tools', 'bindings', 'pylib'),
-    input_api.os_path.join(chromium_src_dir, 'net', 'tools', 'net_docs'),
-    input_api.os_path.join(chromium_src_dir, 'tools'),
-    input_api.os_path.join(chromium_src_dir, 'third_party'),
-    input_api.os_path.join(chromium_src_dir,
+    input_api.os_path.join(monyhar_src_dir, 'net', 'tools', 'net_docs'),
+    input_api.os_path.join(monyhar_src_dir, 'tools'),
+    input_api.os_path.join(monyhar_src_dir, 'third_party'),
+    input_api.os_path.join(monyhar_src_dir,
         'third_party', 'catapult', 'telemetry'),
-    input_api.os_path.join(chromium_src_dir,
+    input_api.os_path.join(monyhar_src_dir,
         'third_party', 'catapult', 'devil'),
-    input_api.os_path.join(chromium_src_dir,
+    input_api.os_path.join(monyhar_src_dir,
         'third_party', 'catapult', 'common', 'py_utils'),
   ]
 
 
 def _PackageChecks(input_api, output_api):
-  """Verify API classes are in org.chromium.net package, and implementation
-  classes are not in org.chromium.net package."""
+  """Verify API classes are in org.monyhar.net package, and implementation
+  classes are not in org.monyhar.net package."""
   api_file_pattern = input_api.re.compile(
       r'^components/cronet/android/api/.*\.(java|template)$')
   impl_file_pattern = input_api.re.compile(
       r'^components/cronet/android/java/.*\.(java|template)$')
-  api_package_pattern = input_api.re.compile(r'^package (?!org.chromium.net;)')
-  impl_package_pattern = input_api.re.compile(r'^package org.chromium.net;')
+  api_package_pattern = input_api.re.compile(r'^package (?!org.monyhar.net;)')
+  impl_package_pattern = input_api.re.compile(r'^package org.monyhar.net;')
 
   source_filter = lambda path: input_api.FilterSourceFile(path,
       files_to_check=[r'^components/cronet/android/.*\.(java|template)$'])
@@ -66,8 +66,8 @@ def _PackageChecks(input_api, output_api):
 
   if problems:
     return [output_api.PresubmitError(
-        'API classes must be in org.chromium.net package, and implementation\n'
-        'classes must not be in org.chromium.net package.',
+        'API classes must be in org.monyhar.net package, and implementation\n'
+        'classes must not be in org.monyhar.net package.',
         problems)]
   else:
     return []

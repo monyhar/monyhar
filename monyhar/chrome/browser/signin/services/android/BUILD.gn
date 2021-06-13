@@ -6,23 +6,23 @@ import("//build/config/android/rules.gni")
 
 generate_jni("jni_headers") {
   sources = [
-    "java/src/org/chromium/chrome/browser/signin/services/IdentityServicesProvider.java",
-    "java/src/org/chromium/chrome/browser/signin/services/SigninMetricsUtils.java",
-    "java/src/org/chromium/chrome/browser/signin/services/UnifiedConsentServiceBridge.java",
-    "java/src/org/chromium/chrome/browser/signin/services/WebSigninBridge.java",
+    "java/src/org/monyhar/chrome/browser/signin/services/IdentityServicesProvider.java",
+    "java/src/org/monyhar/chrome/browser/signin/services/SigninMetricsUtils.java",
+    "java/src/org/monyhar/chrome/browser/signin/services/UnifiedConsentServiceBridge.java",
+    "java/src/org/monyhar/chrome/browser/signin/services/WebSigninBridge.java",
   ]
 }
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/signin/services/DisplayableProfileData.java",
-    "java/src/org/chromium/chrome/browser/signin/services/IdentityServicesProvider.java",
-    "java/src/org/chromium/chrome/browser/signin/services/ProfileDataCache.java",
-    "java/src/org/chromium/chrome/browser/signin/services/SigninManager.java",
-    "java/src/org/chromium/chrome/browser/signin/services/SigninMetricsUtils.java",
-    "java/src/org/chromium/chrome/browser/signin/services/SigninPreferencesManager.java",
-    "java/src/org/chromium/chrome/browser/signin/services/UnifiedConsentServiceBridge.java",
-    "java/src/org/chromium/chrome/browser/signin/services/WebSigninBridge.java",
+    "java/src/org/monyhar/chrome/browser/signin/services/DisplayableProfileData.java",
+    "java/src/org/monyhar/chrome/browser/signin/services/IdentityServicesProvider.java",
+    "java/src/org/monyhar/chrome/browser/signin/services/ProfileDataCache.java",
+    "java/src/org/monyhar/chrome/browser/signin/services/SigninManager.java",
+    "java/src/org/monyhar/chrome/browser/signin/services/SigninMetricsUtils.java",
+    "java/src/org/monyhar/chrome/browser/signin/services/SigninPreferencesManager.java",
+    "java/src/org/monyhar/chrome/browser/signin/services/UnifiedConsentServiceBridge.java",
+    "java/src/org/monyhar/chrome/browser/signin/services/WebSigninBridge.java",
   ]
   deps = [
     ":java_resources",
@@ -37,7 +37,7 @@ android_library("java") {
     "//third_party/androidx:androidx_appcompat_appcompat_resources_java",
   ]
   srcjar_deps = [ "//chrome/browser/profiles:profile_metrics_enum_java" ]
-  resources_package = "org.chromium.chrome.browser.signin.services"
+  resources_package = "org.monyhar.chrome.browser.signin.services"
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
 }
 
@@ -51,8 +51,8 @@ android_resources("java_resources") {
 android_library("javatests") {
   testonly = true
   sources = [
-    "java/src/org/chromium/chrome/browser/signin/services/ProfileDataCacheRenderTest.java",
-    "java/src/org/chromium/chrome/browser/signin/services/ProfileDataCacheWithBadgeRenderTest.java",
+    "java/src/org/monyhar/chrome/browser/signin/services/ProfileDataCacheRenderTest.java",
+    "java/src/org/monyhar/chrome/browser/signin/services/ProfileDataCacheWithBadgeRenderTest.java",
   ]
   deps = [
     ":java",
@@ -77,9 +77,9 @@ android_library("junit") {
   bypass_platform_checks = true
   testonly = true
   sources = [
-    "junit/src/org/chromium/chrome/browser/signin/services/ProfileDataCacheUnitTest.java",
-    "junit/src/org/chromium/chrome/browser/signin/services/SigninMetricsUtilsTest.java",
-    "junit/src/org/chromium/chrome/browser/signin/services/WebSigninBridgeTest.java",
+    "junit/src/org/monyhar/chrome/browser/signin/services/ProfileDataCacheUnitTest.java",
+    "junit/src/org/monyhar/chrome/browser/signin/services/SigninMetricsUtilsTest.java",
+    "junit/src/org/monyhar/chrome/browser/signin/services/WebSigninBridgeTest.java",
   ]
   deps = [
     ":java",

@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.site_settings;
+package org.monyhar.components.browser_ui.site_settings;
 
 import androidx.preference.Preference;
 
-import org.chromium.components.browser_ui.settings.ManagedPreferenceDelegate;
+import org.monyhar.components.browser_ui.settings.ManagedPreferenceDelegate;
 
 /**
  * A ManagedPreferenceDelegate that forwards all method calls to a base ManagedPreferenceDelegate

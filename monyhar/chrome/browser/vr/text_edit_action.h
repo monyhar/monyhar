@@ -12,7 +12,7 @@
 
 namespace vr {
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.vr
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.vr
 enum TextEditActionType {
   CLEAR_COMPOSING_TEXT,
   COMMIT_TEXT,

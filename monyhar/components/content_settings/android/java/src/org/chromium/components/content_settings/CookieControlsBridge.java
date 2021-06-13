@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.content_settings;
+package org.monyhar.components.content_settings;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.embedder_support.browser_context.BrowserContextHandle;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.embedder_support.browser_context.BrowserContextHandle;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * Communicates between CookieControlsController (C++ backend) and PageInfoView (Java UI).

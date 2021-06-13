@@ -30,7 +30,7 @@ TEST(BrowserPolicyConnectorTest, IsNonEnterpriseUser) {
   // List of example emails that are potential enterprise users.
   static const char* kEnterpriseUsers[] = {
     "foo@google.com",
-    "chrome_rules@chromium.org",
+    "chrome_rules@monyhar.org",
     "user@hotmail.enterprise.com",
   };
 

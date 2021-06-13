@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.uid;
+package org.monyhar.chrome.browser.uid;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -11,7 +11,7 @@ import android.provider.Settings;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.browser.util.HashUtil;
+import org.monyhar.chrome.browser.util.HashUtil;
 
 /**
  * Unique identificator implementation that uses the Settings.Secure.ANDROID_ID field and MD5

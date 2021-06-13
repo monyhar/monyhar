@@ -331,7 +331,7 @@ class WPTManifest(object):
     def generate_manifest(port, dest_path):
         """Generates MANIFEST.json on the specified directory."""
         wpt_exec_path = PathFinder(
-            port.host.filesystem).path_from_chromium_base(
+            port.host.filesystem).path_from_monyhar_base(
                 'third_party', 'wpt_tools', 'wpt', 'wpt')
         cmd = [
             port.python3_command(), wpt_exec_path, 'manifest', '-v',

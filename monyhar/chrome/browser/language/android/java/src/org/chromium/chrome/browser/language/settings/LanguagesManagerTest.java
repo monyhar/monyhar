@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.language.settings;
+package org.monyhar.chrome.browser.language.settings;
 
 import android.text.TextUtils;
 
@@ -15,14 +15,14 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.language.AppLocaleUtils;
-import org.chromium.chrome.browser.translate.FakeTranslateBridgeJni;
-import org.chromium.chrome.browser.translate.TranslateBridge;
-import org.chromium.chrome.browser.translate.TranslateBridgeJni;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.language.AppLocaleUtils;
+import org.monyhar.chrome.browser.translate.FakeTranslateBridgeJni;
+import org.monyhar.chrome.browser.translate.TranslateBridge;
+import org.monyhar.chrome.browser.translate.TranslateBridgeJni;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
 
 import java.util.ArrayList;
 import java.util.Arrays;

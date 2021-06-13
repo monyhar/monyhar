@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.usage_stats;
+package org.monyhar.chrome.browser.usage_stats;
 
-import org.chromium.base.Function;
-import org.chromium.base.Promise;
-import org.chromium.chrome.browser.usage_stats.WebsiteEventProtos.Timestamp;
+import org.monyhar.base.Function;
+import org.monyhar.base.Promise;
+import org.monyhar.chrome.browser.usage_stats.WebsiteEventProtos.Timestamp;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
- * In-memory store of {@link org.chromium.chrome.browser.usage_stats.WebsiteEvent} objects.
+ * In-memory store of {@link org.monyhar.chrome.browser.usage_stats.WebsiteEvent} objects.
  * Allows for addition of events and querying for all events in a time interval.
  */
 public class EventTracker {

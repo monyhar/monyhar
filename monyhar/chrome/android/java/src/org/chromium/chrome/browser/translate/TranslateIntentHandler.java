@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.translate;
+package org.monyhar.chrome.browser.translate;
 
 import android.content.Intent;
 import android.text.TextUtils;
@@ -10,13 +10,13 @@ import android.text.TextUtils;
 import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.FeatureList;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.IntentHandler.IntentHandlerDelegate;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.tab.Tab;
+import org.monyhar.base.FeatureList;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.IntentHandler.IntentHandlerDelegate;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.tab.Tab;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -29,7 +29,7 @@ public class TranslateIntentHandler {
      * An intent to signal that Chrome should start translating the current foreground tab.
      */
     public static final String ACTION_TRANSLATE_TAB =
-            "org.chromium.chrome.browser.translate.TRANSLATE_TAB";
+            "org.monyhar.chrome.browser.translate.TRANSLATE_TAB";
 
     /**
      * The activity-alias that all TRANSLATE_TAB intents must be sent to.

@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.thinwebview;
+package org.monyhar.components.thinwebview;
 
 import android.content.Context;
 
-import org.chromium.components.thinwebview.internal.ThinWebViewImpl;
+import org.monyhar.components.thinwebview.internal.ThinWebViewImpl;
 
 /**
  * Factory for creating a {@link ThinWebView}.

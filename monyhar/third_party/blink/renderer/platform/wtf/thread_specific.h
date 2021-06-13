@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2008 Apple Inc. All rights reserved.
- * Copyright (C) 2009 Jian Li <jianli@chromium.org>
+ * Copyright (C) 2009 Jian Li <jianli@monyhar.org>
  * Copyright (C) 2012 Patrick Gansterer <paroga@paroga.com>
  *
  * Redistribution and use in source and binary forms, with or without

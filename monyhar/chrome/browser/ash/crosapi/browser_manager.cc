@@ -542,7 +542,7 @@ void BrowserManager::StartWithLogFile(
                                    "--enable-oop-rasterization",
                                    "--lang=" + locale,
                                    "--enable-crashpad",
-                                   "--enable-webgl-image-chromium",
+                                   "--enable-webgl-image-monyhar",
                                    "--breakpad-dump-location=" + crash_dir};
 
   // CrAS is the default audio server in Chrome OS.

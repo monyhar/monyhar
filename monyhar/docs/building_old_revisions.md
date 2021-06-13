@@ -13,7 +13,7 @@ directory.
 
 Check out a version of depot_tools from around the same time as the target
 revision. Since `gclient` auto-updates depot_tools, be sure to
-[disable depot_tools auto-update](https://dev.chromium.org/developers/how-tos/depottools#TOC-Disabling-auto-update)
+[disable depot_tools auto-update](https://dev.monyhar.org/developers/how-tos/depottools#TOC-Disabling-auto-update)
 before continuing by setting the environment variable `DEPOT_TOOLS_UPDATE=0`.
 
 ```shell
@@ -63,8 +63,8 @@ continuing:
 
 ```shell
 $ git remote get-url origin
-https://chromium.googlesource.com/chromium/deps/opus.git
-$ git remote set-url origin https://chromium.googlesource.com/chromium/src.git
+https://monyhar.googlesource.com/monyhar/deps/opus.git
+$ git remote set-url origin https://monyhar.googlesource.com/monyhar/src.git
 $ git fetch origin
 ```
 

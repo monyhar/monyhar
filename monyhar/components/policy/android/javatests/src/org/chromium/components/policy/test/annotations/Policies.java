@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.policy.test.annotations;
+package org.monyhar.components.policy.test.annotations;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,12 +12,12 @@ import androidx.annotation.VisibleForTesting;
 import org.junit.Assert;
 import org.junit.runners.model.FrameworkMethod;
 
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.test.BaseJUnit4ClassRunner.TestHook;
-import org.chromium.components.policy.AbstractAppRestrictionsProvider;
-import org.chromium.components.policy.CombinedPolicyProvider;
-import org.chromium.components.policy.test.PolicyData;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.test.BaseJUnit4ClassRunner.TestHook;
+import org.monyhar.components.policy.AbstractAppRestrictionsProvider;
+import org.monyhar.components.policy.CombinedPolicyProvider;
+import org.monyhar.components.policy.test.PolicyData;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;

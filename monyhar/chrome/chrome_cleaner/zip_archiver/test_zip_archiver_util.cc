@@ -40,7 +40,7 @@ const int64_t kReadBufferSize = 4096;
 
 // The |day_of_week| in |base::Time::Exploded| won't be set correctly.
 // TODO(veranika): This is copied from
-// https://cs.chromium.org/chromium/src/chrome/browser/resources/chromeos/zip_archiver/cpp/volume_archive_minizip.cc.
+// https://cs.monyhar.org/monyhar/src/chrome/browser/resources/chromeos/zip_archiver/cpp/volume_archive_minizip.cc.
 // It would be better to move it to //base.
 base::Time::Exploded ExplodeDosTime(const uint32_t dos_time) {
   base::Time::Exploded time_part;

@@ -5,7 +5,7 @@
 #ifndef FUCHSIA_RUNNERS_CAST_PENDING_CAST_COMPONENT_H_
 #define FUCHSIA_RUNNERS_CAST_PENDING_CAST_COMPONENT_H_
 
-#include <chromium/cast/cpp/fidl.h>
+#include <monyhar/cast/cpp/fidl.h>
 #include <fuchsia/sys/cpp/fidl.h>
 #include <lib/fidl/cpp/interface_request.h>
 #include <memory>
@@ -54,7 +54,7 @@ class PendingCastComponent {
 
   // Handlers for completing initialization of some |params_| fields.
   void OnApplicationConfigReceived(
-      chromium::cast::ApplicationConfig app_config);
+      monyhar::cast::ApplicationConfig app_config);
   void OnApiBindingsInitialized();
 
   // Passes |params_| to |delegate_| if they are complete, to use to launch the
@@ -72,8 +72,8 @@ class PendingCastComponent {
   CastComponent::Params params_;
 
   // Used to receive the media session Id and ApplicationConfig.
-  chromium::cast::ApplicationContextPtr application_context_;
-  chromium::cast::ApplicationConfigManagerPtr application_config_manager_;
+  monyhar::cast::ApplicationContextPtr application_context_;
+  monyhar::cast::ApplicationConfigManagerPtr application_config_manager_;
 };
 
 #endif  // FUCHSIA_RUNNERS_CAST_PENDING_CAST_COMPONENT_H_

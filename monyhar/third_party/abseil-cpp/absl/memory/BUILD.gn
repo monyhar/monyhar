@@ -17,7 +17,7 @@ absl_source_set("memory_test") {
 
   # TODO(https://crbug.com/1116473): memory_test.cc fails to build in
   # standalone ANGLE on Windows
-  if (!build_with_chromium && !is_win) {
+  if (!build_with_monyhar && !is_win) {
     sources = [ "memory_test.cc" ]
     deps = [
       ":memory",

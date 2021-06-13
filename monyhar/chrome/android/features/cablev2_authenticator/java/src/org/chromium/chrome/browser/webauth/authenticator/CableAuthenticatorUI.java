@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webauth.authenticator;
+package org.monyhar.chrome.browser.webauth.authenticator;
 
 import android.Manifest.permission;
 import android.annotation.SuppressLint;
@@ -34,13 +34,13 @@ import androidx.fragment.app.Fragment;
 import androidx.vectordrawable.graphics.drawable.Animatable2Compat;
 import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat;
 
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.task.PostTask;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.ui.base.ActivityAndroidPermissionDelegate;
-import org.chromium.ui.base.AndroidPermissionDelegate;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.ui.base.ActivityAndroidPermissionDelegate;
+import org.monyhar.ui.base.AndroidPermissionDelegate;
+import org.monyhar.ui.widget.Toast;
 
 import java.lang.ref.WeakReference;
 
@@ -64,17 +64,17 @@ public class CableAuthenticatorUI
     // for before being replaced with a prompt to connect via USB cable.
     private static final int USB_PROMPT_TIMEOUT_SECS = 20;
 
-    private static final String FCM_EXTRA = "org.chromium.chrome.modules.cablev2_authenticator.FCM";
+    private static final String FCM_EXTRA = "org.monyhar.chrome.modules.cablev2_authenticator.FCM";
     private static final String EVENT_EXTRA =
-            "org.chromium.chrome.modules.cablev2_authenticator.EVENT";
+            "org.monyhar.chrome.modules.cablev2_authenticator.EVENT";
     private static final String NETWORK_CONTEXT_EXTRA =
-            "org.chromium.chrome.modules.cablev2_authenticator.NetworkContext";
+            "org.monyhar.chrome.modules.cablev2_authenticator.NetworkContext";
     private static final String REGISTRATION_EXTRA =
-            "org.chromium.chrome.modules.cablev2_authenticator.Registration";
+            "org.monyhar.chrome.modules.cablev2_authenticator.Registration";
     private static final String SECRET_EXTRA =
-            "org.chromium.chrome.modules.cablev2_authenticator.Secret";
+            "org.monyhar.chrome.modules.cablev2_authenticator.Secret";
     private static final String SERVER_LINK_EXTRA =
-            "org.chromium.chrome.browser.webauth.authenticator.ServerLink";
+            "org.monyhar.chrome.browser.webauth.authenticator.ServerLink";
 
     // These entries duplicate some of the enum values from
     // device::cablev2::authenticator::Platform::Error. They must be kept in

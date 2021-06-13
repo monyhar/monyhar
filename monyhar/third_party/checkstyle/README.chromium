@@ -22,5 +22,5 @@ Update instructions (requires @google.com account):
 - Update the version in this file
 - Before submitting the change, verify presubmit works fine by:
   1) modifying a Java file and including it in the patch
-  2) running the chromium_presubmit trybot in the CQ on the patch
+  2) running the monyhar_presubmit trybot in the CQ on the patch
   3) reverting the Java file change

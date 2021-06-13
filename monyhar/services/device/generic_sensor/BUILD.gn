@@ -153,8 +153,8 @@ source_set("generic_sensor") {
 
 if (is_android) {
   device_sensors_jni_sources = [
-    "android/java/src/org/chromium/device/sensors/PlatformSensor.java",
-    "android/java/src/org/chromium/device/sensors/PlatformSensorProvider.java",
+    "android/java/src/org/monyhar/device/sensors/PlatformSensor.java",
+    "android/java/src/org/monyhar/device/sensors/PlatformSensorProvider.java",
   ]
 
   generate_jni("jni_headers") {

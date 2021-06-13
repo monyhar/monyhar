@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webauthn;
+package org.monyhar.chrome.browser.webauthn;
 
 import android.annotation.TargetApi;
 import android.app.KeyguardManager;
@@ -25,14 +25,14 @@ import androidx.core.app.NotificationManagerCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.notifications.NotificationConstants;
-import org.chromium.chrome.browser.notifications.NotificationWrapperBuilderFactory;
-import org.chromium.chrome.browser.notifications.channels.ChromeChannelDefinitions;
-import org.chromium.chrome.modules.cablev2_authenticator.Cablev2AuthenticatorModule;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.notifications.NotificationConstants;
+import org.monyhar.chrome.browser.notifications.NotificationWrapperBuilderFactory;
+import org.monyhar.chrome.browser.notifications.channels.ChromeChannelDefinitions;
+import org.monyhar.chrome.modules.cablev2_authenticator.Cablev2AuthenticatorModule;
 
 /**
  * Provides a UI that attempts to install the caBLEv2 Authenticator module. If already installed, or
@@ -55,13 +55,13 @@ public class CableAuthenticatorModuleProvider extends Fragment {
     // is passed (as a long) in the arguments {@link Bundle} to the {@link
     // Fragment} in the module.
     private static final String NETWORK_CONTEXT_KEY =
-            "org.chromium.chrome.modules.cablev2_authenticator.NetworkContext";
+            "org.monyhar.chrome.modules.cablev2_authenticator.NetworkContext";
     private static final String REGISTRATION_KEY =
-            "org.chromium.chrome.modules.cablev2_authenticator.Registration";
+            "org.monyhar.chrome.modules.cablev2_authenticator.Registration";
     private static final String ACTIVITY_CLASS_NAME =
-            "org.chromium.chrome.browser.webauth.authenticator.CableAuthenticatorActivity";
+            "org.monyhar.chrome.browser.webauth.authenticator.CableAuthenticatorActivity";
     private static final String SECRET_KEY =
-            "org.chromium.chrome.modules.cablev2_authenticator.Secret";
+            "org.monyhar.chrome.modules.cablev2_authenticator.Secret";
 
     @Override
     public View onCreateView(
@@ -130,9 +130,9 @@ public class CableAuthenticatorModuleProvider extends Fragment {
 
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         Bundle bundle = new Bundle();
-        bundle.putBoolean("org.chromium.chrome.modules.cablev2_authenticator.FCM", true);
+        bundle.putBoolean("org.monyhar.chrome.modules.cablev2_authenticator.FCM", true);
         bundle.putByteArray(
-                "org.chromium.chrome.modules.cablev2_authenticator.EVENT", serializedEvent);
+                "org.monyhar.chrome.modules.cablev2_authenticator.EVENT", serializedEvent);
         intent.putExtra("show_fragment_args", bundle);
         // Notifications must have a process-global ID. We never use this, but it prevents multiple
         // notifications from existing at once.

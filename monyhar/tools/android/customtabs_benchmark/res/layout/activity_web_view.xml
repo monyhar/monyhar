@@ -9,7 +9,7 @@
     android:id="@+id/activity_web_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.chromium.customtabs.test.WebViewActivity"
+    tools:context="org.monyhar.customtabs.test.WebViewActivity"
     android:orientation="vertical">
 
     <ProgressBar

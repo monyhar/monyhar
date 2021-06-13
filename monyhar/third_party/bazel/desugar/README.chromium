@@ -39,7 +39,7 @@ Update instructions (requires @google.com account for uploading):
 * Perform a sanity check of chrome_public_apk:
     ninja chrome_public_apk
     bin/chrome_public_apk run
-* Update this README.chromium (Version)
+* Update this README.monyhar (Version)
 * Upload new jar to CIPD:
     cd third_party/bazel
     cipd create --pkg-def cipd.yaml

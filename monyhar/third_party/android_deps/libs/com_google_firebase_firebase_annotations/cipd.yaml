@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@16.0.0.cr0
-package: chromium/third_party/android_deps/libs/com_google_firebase_firebase_annotations
+package: monyhar/third_party/android_deps/libs/com_google_firebase_firebase_annotations
 description: "firebase-annotations"
 data:
 - file: firebase-annotations-16.0.0.jar

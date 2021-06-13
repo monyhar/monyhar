@@ -112,7 +112,7 @@ Note that tests are sharded across all attached devices unless explicitly told
 to do otherwise by `-d/--device`.
 
 The commands used by the buildbots are printed in the logs. Look at
-https://build.chromium.org/ to duplicate the same test command as a particular
+https://build.monyhar.org/ to duplicate the same test command as a particular
 builder.
 
 ### INSTALL\_FAILED\_CONTAINER\_ERROR or INSTALL\_FAILED\_INSUFFICIENT\_STORAGE
@@ -181,7 +181,7 @@ ninja -C out/Default chrome_junit_tests
 out/Default/bin/run_chrome_junit_tests
 
 # Run a subset of tests. You might need to pass the package name for some tests.
-out/Default/bin/run_chrome_junit_tests -f "org.chromium.chrome.browser.media.*"
+out/Default/bin/run_chrome_junit_tests -f "org.monyhar.chrome.browser.media.*"
 ```
 
 ### Debugging
@@ -283,8 +283,8 @@ See [Web Tests](web_tests.md).
 
 ## Running GPU tests
 
-(e.g. the "Android Debug (Nexus 7)" bot on the chromium.gpu waterfall)
+(e.g. the "Android Debug (Nexus 7)" bot on the monyhar.gpu waterfall)
 
-See https://www.chromium.org/developers/testing/gpu-testing for details. Use
+See https://www.monyhar.org/developers/testing/gpu-testing for details. Use
 `--browser=android-content-shell`. Examine the stdio from the test invocation on
 the bots to see arguments to pass to `src/content/test/gpu/run_gpu_test.py`.

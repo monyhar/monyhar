@@ -9,8 +9,8 @@ config("neon_2_sse_include") {
 source_set("neon_2_sse") {
   public = [ "src/NEON_2_SSE.h" ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 
   public_configs = [ ":neon_2_sse_include" ]
 }

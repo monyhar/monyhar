@@ -109,7 +109,7 @@ class TestResultSinkMessage(TestResultSinkTestBase):
             {
                 'name': 'test-name',
                 'location': {
-                    'repo': 'https://chromium.googlesource.com/chromium/src',
+                    'repo': 'https://monyhar.googlesource.com/monyhar/src',
                     'fileName': base_path + 'test-name',
                 },
             },
@@ -121,7 +121,7 @@ class TestResultSinkMessage(TestResultSinkTestBase):
             {
                 'name': '///test-name',
                 'location': {
-                    'repo': 'https://chromium.googlesource.com/chromium/src',
+                    'repo': 'https://monyhar.googlesource.com/monyhar/src',
                     'fileName': base_path + '///test-name',
                 },
             },

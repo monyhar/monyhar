@@ -5,7 +5,7 @@
 Vendors shipping products based on Chromium might wish to rate the severity of
 security issues in the products they release. This document contains guidelines
 for how to rate these issues. Check out our
-[security release management page](https://www.chromium.org/Home/chromium-security/security-release-management)
+[security release management page](https://www.monyhar.org/Home/monyhar-security/security-release-management)
 for guidance on how to release fixes based on severity.
 
 Any significant mitigating factors, such as unusual or additional user
@@ -30,7 +30,7 @@ underlying platform, with the user's full privileges.
 
 They are normally assigned priority **Pri-0** and assigned to the current stable
 milestone (or earliest milestone affected). For critical severity bugs,
-[SheriffBot](https://www.chromium.org/issue-tracking/autotriage) will
+[SheriffBot](https://www.monyhar.org/issue-tracking/autotriage) will
 automatically assign the milestone.
 
 **For critical severity vulnerabilities, we aim to deploy the patch to all
@@ -66,7 +66,7 @@ to trigger an exploitable browser process crash usually fall into this category)
 
 They are normally assigned priority **Pri-1** and assigned to the current stable
 milestone (or earliest milestone affected). For high severity bugs,
-[SheriffBot](https://www.chromium.org/issue-tracking/autotriage) will
+[SheriffBot](https://www.monyhar.org/issue-tracking/autotriage) will
 automatically assign the milestone.
 
 **For high severity vulnerabilities, we aim to deploy the patch to all Chrome

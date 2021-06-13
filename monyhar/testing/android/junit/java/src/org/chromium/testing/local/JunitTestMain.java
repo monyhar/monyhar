@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.testing.local;
+package org.monyhar.testing.local;
 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Request;
@@ -21,7 +21,7 @@ import java.util.regex.Pattern;
  *  provided filter configurations.
  */
 public final class JunitTestMain {
-    /** Enforced by {@link org.chromium.tools.errorprone.plugin.TestClassNameCheck}. */
+    /** Enforced by {@link org.monyhar.tools.errorprone.plugin.TestClassNameCheck}. */
     private static final String TEST_CLASS_FILE_END = "Test.class";
     private static final String CLASS_FILE_EXT = ".class";
     private static final Pattern COLON = Pattern.compile(":");

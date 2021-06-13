@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments;
+package org.monyhar.chrome.browser.payments;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -22,27 +22,27 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
-import org.chromium.chrome.test.util.browser.Features.EnableFeatures;
-import org.chromium.components.payments.Address;
-import org.chromium.components.payments.ErrorStrings;
-import org.chromium.components.payments.IPaymentDetailsUpdateService;
-import org.chromium.components.payments.IPaymentDetailsUpdateServiceCallback;
-import org.chromium.components.payments.PaymentDetailsUpdateService;
-import org.chromium.components.payments.PaymentDetailsUpdateServiceHelper;
-import org.chromium.components.payments.PaymentFeatureList;
-import org.chromium.components.payments.PaymentRequestUpdateEventListener;
-import org.chromium.components.payments.intent.WebPaymentIntentHelperType.PaymentCurrencyAmount;
-import org.chromium.components.payments.intent.WebPaymentIntentHelperType.PaymentHandlerMethodData;
-import org.chromium.components.payments.intent.WebPaymentIntentHelperType.PaymentRequestDetailsUpdate;
-import org.chromium.components.payments.intent.WebPaymentIntentHelperType.PaymentShippingOption;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.payments.mojom.PaymentAddress;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.test.util.browser.Features.EnableFeatures;
+import org.monyhar.components.payments.Address;
+import org.monyhar.components.payments.ErrorStrings;
+import org.monyhar.components.payments.IPaymentDetailsUpdateService;
+import org.monyhar.components.payments.IPaymentDetailsUpdateServiceCallback;
+import org.monyhar.components.payments.PaymentDetailsUpdateService;
+import org.monyhar.components.payments.PaymentDetailsUpdateServiceHelper;
+import org.monyhar.components.payments.PaymentFeatureList;
+import org.monyhar.components.payments.PaymentRequestUpdateEventListener;
+import org.monyhar.components.payments.intent.WebPaymentIntentHelperType.PaymentCurrencyAmount;
+import org.monyhar.components.payments.intent.WebPaymentIntentHelperType.PaymentHandlerMethodData;
+import org.monyhar.components.payments.intent.WebPaymentIntentHelperType.PaymentRequestDetailsUpdate;
+import org.monyhar.components.payments.intent.WebPaymentIntentHelperType.PaymentShippingOption;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.payments.mojom.PaymentAddress;
 
 import java.util.ArrayList;
 import java.util.List;

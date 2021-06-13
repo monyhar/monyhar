@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.webauthn;
+package org.monyhar.components.webauthn;
 
-import org.chromium.blink.mojom.Authenticator;
-import org.chromium.content_public.browser.ContentFeatureList;
-import org.chromium.content_public.browser.RenderFrameHost;
-import org.chromium.services.service_manager.InterfaceFactory;
+import org.monyhar.blink.mojom.Authenticator;
+import org.monyhar.content_public.browser.ContentFeatureList;
+import org.monyhar.content_public.browser.RenderFrameHost;
+import org.monyhar.services.service_manager.InterfaceFactory;
 
 /**
  * Factory class registered to create Authenticators upon request.

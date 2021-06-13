@@ -17,9 +17,9 @@ source_set("android") {
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/components/installedapp/InstalledAppProviderImpl.java",
-    "java/src/org/chromium/components/installedapp/PackageHash.java",
-    "java/src/org/chromium/components/installedapp/PackageManagerDelegate.java",
+    "java/src/org/monyhar/components/installedapp/InstalledAppProviderImpl.java",
+    "java/src/org/monyhar/components/installedapp/PackageHash.java",
+    "java/src/org/monyhar/components/installedapp/PackageManagerDelegate.java",
   ]
 
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
@@ -39,15 +39,15 @@ android_library("java") {
 
 generate_jni("jni_headers") {
   sources = [
-    "java/src/org/chromium/components/installedapp/InstalledAppProviderImpl.java",
-    "java/src/org/chromium/components/installedapp/PackageHash.java",
+    "java/src/org/monyhar/components/installedapp/InstalledAppProviderImpl.java",
+    "java/src/org/monyhar/components/installedapp/PackageHash.java",
   ]
 }
 
 android_library("javatests") {
   testonly = true
 
-  sources = [ "java/src/org/chromium/components/installedapp/InstalledAppProviderTest.java" ]
+  sources = [ "java/src/org/monyhar/components/installedapp/InstalledAppProviderTest.java" ]
   deps = [
     ":java",
     "//base:base_java",
@@ -69,7 +69,7 @@ java_library("junit") {
   bypass_platform_checks = true
   testonly = true
   sources =
-      [ "java/src/org/chromium/components/installedapp/PackageHashTest.java" ]
+      [ "java/src/org/monyhar/components/installedapp/PackageHashTest.java" ]
   deps = [
     ":java",
     "//base:base_java",

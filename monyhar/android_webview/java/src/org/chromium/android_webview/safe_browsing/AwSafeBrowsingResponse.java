@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.safe_browsing;
+package org.monyhar.android_webview.safe_browsing;
 
 /**
  * Container to hold the application's response to WebViewClient#onSafeBrowsingHit().

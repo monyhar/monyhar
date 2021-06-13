@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
@@ -14,9 +14,9 @@ import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-import static org.chromium.chrome.browser.tasks.tab_management.suggestions.TabSuggestionFeedback.TabSuggestionResponse.ACCEPTED;
-import static org.chromium.chrome.browser.tasks.tab_management.suggestions.TabSuggestionFeedback.TabSuggestionResponse.DISMISSED;
-import static org.chromium.chrome.browser.tasks.tab_management.suggestions.TabSuggestionFeedback.TabSuggestionResponse.NOT_CONSIDERED;
+import static org.monyhar.chrome.browser.tasks.tab_management.suggestions.TabSuggestionFeedback.TabSuggestionResponse.ACCEPTED;
+import static org.monyhar.chrome.browser.tasks.tab_management.suggestions.TabSuggestionFeedback.TabSuggestionResponse.DISMISSED;
+import static org.monyhar.chrome.browser.tasks.tab_management.suggestions.TabSuggestionFeedback.TabSuggestionResponse.NOT_CONSIDERED;
 
 import android.content.Context;
 
@@ -31,19 +31,19 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.Callback;
-import org.chromium.base.test.util.JniMocker;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.profiles.ProfileJni;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.TabModel;
-import org.chromium.chrome.browser.tabmodel.TabModelFilterProvider;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tasks.tab_groups.TabGroupModelFilter;
-import org.chromium.chrome.browser.tasks.tab_management.suggestions.TabContext;
-import org.chromium.chrome.browser.tasks.tab_management.suggestions.TabSuggestion;
-import org.chromium.chrome.browser.tasks.tab_management.suggestions.TabSuggestionFeedback;
-import org.chromium.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.base.Callback;
+import org.monyhar.base.test.util.JniMocker;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.profiles.ProfileJni;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.TabModel;
+import org.monyhar.chrome.browser.tabmodel.TabModelFilterProvider;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tasks.tab_groups.TabGroupModelFilter;
+import org.monyhar.chrome.browser.tasks.tab_management.suggestions.TabContext;
+import org.monyhar.chrome.browser.tasks.tab_management.suggestions.TabSuggestion;
+import org.monyhar.chrome.browser.tasks.tab_management.suggestions.TabSuggestionFeedback;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -67,9 +67,9 @@ public class TabSuggestionMessageServiceUnitTest {
     private static final int TAB3_ROOT_ID = TAB2_ID;
 
     private static final int CLOSE_SUGGESTION_ACTION_BUTTON_RESOURCE_ID =
-            org.chromium.chrome.tab_ui.R.string.tab_suggestion_close_tab_action_button;
+            org.monyhar.chrome.tab_ui.R.string.tab_suggestion_close_tab_action_button;
     private static final int GROUP_SUGGESTION_ACTION_BUTTON_RESOURCE_ID =
-            org.chromium.chrome.tab_ui.R.string.tab_selection_editor_group;
+            org.monyhar.chrome.tab_ui.R.string.tab_selection_editor_group;
 
     private Tab mTab1;
     private Tab mTab2;

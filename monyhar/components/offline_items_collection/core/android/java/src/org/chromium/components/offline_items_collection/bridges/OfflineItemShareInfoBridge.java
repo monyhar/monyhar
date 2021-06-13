@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.offline_items_collection.bridges;
+package org.monyhar.components.offline_items_collection.bridges;
 
 import android.net.Uri;
 import android.text.TextUtils;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.components.offline_items_collection.OfflineItemShareInfo;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.components.offline_items_collection.OfflineItemShareInfo;
 
 /**
  * The Java counterpart to the C++ class OfflineItemShareInfoBridge

@@ -3,7 +3,7 @@
 A watchlist is a mechanism that allows a developer (a "watcher") to watch over
 portions of code that the watcher is interested in. A watcher will be cc-ed on
 changes that modify that portion of code, thereby giving that watcher an
-opportunity to make comments on chromium-review.googlesource.com even before the
+opportunity to make comments on monyhar-review.googlesource.com even before the
 change is committed.
 
 **Important :** As watchlists are processed locally when uploading using `git cl
@@ -30,7 +30,7 @@ repository. A typical `WATCHLISTS` file looks like:
     },
   },
   'WATCHLISTS': {
-    'valgrind': ['nirnimesh@chromium.org', 'dank@chromium.org'],
+    'valgrind': ['nirnimesh@monyhar.org', 'dank@monyhar.org'],
   },
 }
 ```
@@ -41,7 +41,7 @@ In this case, watchlists named `valgrind` and `mac` are defined in
 
 In the example above, whenever a new changeset is created that refers to any
 file in `tools/valgrind/`, the `'valgrind'` watchlist will be triggered and
-`nirnimesh@chromium.org` & `dank@chromium.org` will be cc-ed to the changeset
+`nirnimesh@monyhar.org` & `dank@monyhar.org` will be cc-ed to the changeset
 for review. A regular expression can be used as the matching pattern. Matches
 are determined using python's `re.search()` function call, so matching `A_WORD`
 is the same as matching `.*A_WORD.*`.
@@ -72,5 +72,5 @@ To override watchlist processing, use `git cl upload` with `--bypass-hooks`.
 
 [//]: # (the reference link section should be alphabetically sorted)
 [skia-autoroller]: https://skia.googlesource.com/buildbot/+/HEAD/autoroll/README.md
-[crbug-982198]: https://bugs.chromium.org/p/chromium/issues/detail?id=982198
+[crbug-982198]: https://bugs.monyhar.org/p/monyhar/issues/detail?id=982198
 [roller-configs]: https://skia.googlesource.com/buildbot/+/HEAD/autoroll/config

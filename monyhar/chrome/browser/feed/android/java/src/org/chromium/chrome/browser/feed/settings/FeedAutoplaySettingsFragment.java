@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.settings;
+package org.monyhar.chrome.browser.feed.settings;
 
 import android.os.Bundle;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 
-import org.chromium.chrome.browser.feed.FeedServiceBridge;
-import org.chromium.chrome.browser.feed.webfeed.R;
-import org.chromium.components.browser_ui.settings.FragmentSettingsLauncher;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.chrome.browser.feed.FeedServiceBridge;
+import org.monyhar.chrome.browser.feed.webfeed.R;
+import org.monyhar.components.browser_ui.settings.FragmentSettingsLauncher;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
 
 /**
  * Fragment containing Safe Browsing settings.

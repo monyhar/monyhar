@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.user_data.additional_sections;
+package org.monyhar.chrome.browser.autofill_assistant.user_data.additional_sections;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,15 +13,15 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.autofill_assistant.AssistantChevronStyle;
-import org.chromium.chrome.browser.autofill_assistant.AssistantTextUtils;
-import org.chromium.chrome.browser.autofill_assistant.LayoutUtils;
-import org.chromium.chrome.browser.autofill_assistant.generic_ui.AssistantValue;
-import org.chromium.chrome.browser.autofill_assistant.user_data.AssistantVerticalExpander;
-import org.chromium.content.browser.input.PopupItemType;
-import org.chromium.content.browser.input.SelectPopupDialog;
-import org.chromium.content.browser.input.SelectPopupItem;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.autofill_assistant.AssistantChevronStyle;
+import org.monyhar.chrome.browser.autofill_assistant.AssistantTextUtils;
+import org.monyhar.chrome.browser.autofill_assistant.LayoutUtils;
+import org.monyhar.chrome.browser.autofill_assistant.generic_ui.AssistantValue;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantVerticalExpander;
+import org.monyhar.content.browser.input.PopupItemType;
+import org.monyhar.content.browser.input.SelectPopupDialog;
+import org.monyhar.content.browser.input.SelectPopupItem;
 
 import java.util.ArrayList;
 import java.util.List;

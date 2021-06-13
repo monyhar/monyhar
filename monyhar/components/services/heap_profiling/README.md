@@ -14,5 +14,5 @@ There are two main entities:
 
 Heap dumps are emitted in traces with the "memory-infra" category enabled. This
 is coordinated by the (memory_instrumentation
-service)[https://cs.chromium.org/chromium/src/services/resource_coordinator/public/mojom/memory_instrumentation/memory_instrumentation.mojom].
+service)[https://cs.monyhar.org/monyhar/src/services/resource_coordinator/public/mojom/memory_instrumentation/memory_instrumentation.mojom].
 See the HeapProfiler and HeapProfilerHelper interfaces.

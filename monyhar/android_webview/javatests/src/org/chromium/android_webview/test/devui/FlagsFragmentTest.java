@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test.devui;
+package org.monyhar.android_webview.test.devui;
 
 import static androidx.test.espresso.Espresso.onData;
 import static androidx.test.espresso.Espresso.onView;
@@ -25,7 +25,7 @@ import static org.hamcrest.Matchers.lessThan;
 import static org.hamcrest.Matchers.not;
 import static org.hamcrest.collection.IsMapContaining.hasEntry;
 
-import static org.chromium.android_webview.test.devui.DeveloperUiTestUtils.withCount;
+import static org.monyhar.android_webview.test.devui.DeveloperUiTestUtils.withCount;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -52,19 +52,19 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.common.AwSwitches;
-import org.chromium.android_webview.common.DeveloperModeUtils;
-import org.chromium.android_webview.common.Flag;
-import org.chromium.android_webview.devui.FlagsFragment;
-import org.chromium.android_webview.devui.MainActivity;
-import org.chromium.android_webview.devui.R;
-import org.chromium.android_webview.services.DeveloperUiService;
-import org.chromium.android_webview.test.AwJUnit4ClassRunner;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.test.BaseActivityTestRule;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.Feature;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.android_webview.common.AwSwitches;
+import org.monyhar.android_webview.common.DeveloperModeUtils;
+import org.monyhar.android_webview.common.Flag;
+import org.monyhar.android_webview.devui.FlagsFragment;
+import org.monyhar.android_webview.devui.MainActivity;
+import org.monyhar.android_webview.devui.R;
+import org.monyhar.android_webview.services.DeveloperUiService;
+import org.monyhar.android_webview.test.AwJUnit4ClassRunner;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.test.BaseActivityTestRule;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 import java.util.Map;
 

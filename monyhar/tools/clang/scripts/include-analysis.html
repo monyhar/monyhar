@@ -100,7 +100,7 @@
 
 <p>File size does not correlate perfectly with compile time, but can serve as a rough guide to what files are slow to compile.</p>
 
-<p>Analysis by <a href="https://source.chromium.org/chromium/chromium/src/+/HEAD:tools/clang/scripts/analyze_includes.py">analyze_includes.py</a>.</p>
+<p>Analysis by <a href="https://source.monyhar.org/monyhar/monyhar/src/+/HEAD:tools/clang/scripts/analyze_includes.py">analyze_includes.py</a>.</p>
 
 <script>
 "use strict";
@@ -213,7 +213,7 @@ function buildFilesTable() {
 <td>${rank + 1}</td>
 <td>
   <a href="#${changedStateHash({filter: '^' + regexEscape(data.files[i] + '$')})}">${data.files[i]}</a>
-  [<a href="https://source.chromium.org/chromium/chromium/src/+/HEAD:${data.files[i]}">cs</a>]
+  [<a href="https://source.monyhar.org/monyhar/monyhar/src/+/HEAD:${data.files[i]}">cs</a>]
 </td>
 <td>${fmt(data.sizes[i])}</td> <td>${(100 * data.sizes[i] / totFileSize).toFixed(2)}&nbsp;%</td>
 <td>${fmt(data.tsizes[i])}</td> <td>${(100 * data.tsizes[i] / totBuildSize).toFixed(2)}&nbsp;%</td>
@@ -272,11 +272,11 @@ function buildEdgesTable() {
 <td>${edgeNum + 1}</td>
 <td>
   <a href="#${changedStateHash({view: 'files', filter: '^' + regexEscape(data.files[src]) + '$'})}">${data.files[src]}</a>
-  [<a href="https://source.chromium.org/chromium/chromium/src/+/HEAD:${data.files[src]}">cs</a>]
+  [<a href="https://source.monyhar.org/monyhar/monyhar/src/+/HEAD:${data.files[src]}">cs</a>]
 </td>
 <td>
   <a href="#${changedStateHash({view: 'files', filter: '^' + regexEscape(data.files[dst]) + '$'})}">${data.files[dst]}</a>
-  [<a href="https://source.chromium.org/chromium/chromium/src/+/HEAD:${data.files[dst]}">cs</a>]
+  [<a href="https://source.monyhar.org/monyhar/monyhar/src/+/HEAD:${data.files[dst]}">cs</a>]
 </td>
 <td>${fmt(size)}</td> <td>${(100 * size / totBuildSize).toFixed(2)}&nbsp;%</td>
 </tr>

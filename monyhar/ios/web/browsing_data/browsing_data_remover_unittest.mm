@@ -47,7 +47,7 @@ bool AddCookie() {
     NSHTTPCookiePath : @"path",
     NSHTTPCookieName : @"cookieName",
     NSHTTPCookieValue : @"value",
-    NSHTTPCookieOriginURL : @"http://chromium.org"
+    NSHTTPCookieOriginURL : @"http://monyhar.org"
   }];
 
   __block bool cookie_set = false;

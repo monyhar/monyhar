@@ -215,7 +215,7 @@ if (is_win) {
 }
 
 if (is_mac || is_android) {
-  # We build a chromium-specific crashpad_handler executable so that we can
+  # We build a monyhar-specific crashpad_handler executable so that we can
   # define custom UserStreamDataSources.
   executable("chrome_crashpad_handler") {
     sources = [ "chrome_crashpad_handler.cc" ]

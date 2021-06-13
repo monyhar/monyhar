@@ -2,11 +2,11 @@
 
 This document describes the state of Chromium on Apple Silicon Macs.
 
-There's a [bot](https://ci.chromium.org/p/chromium/builders/ci/mac-arm64-rel)
+There's a [bot](https://ci.monyhar.org/p/monyhar/builders/ci/mac-arm64-rel)
 that builds for Arm. It cross-builds on an Intel machine.
 
 There's also a [tester
-bot](https://ci.chromium.org/p/chromium/builders/ci/mac-arm64-rel-tests)
+bot](https://ci.monyhar.org/p/monyhar/builders/ci/mac-arm64-rel-tests)
 that continuously runs tests. Most tests pass.
 
 ## Building _for_ Arm Macs
@@ -36,7 +36,7 @@ After that, it should start fine.
 
 As an alternative to building locally, changes can be submitted to the opt-in
 [mac-arm64-rel
-trybot](https://ci.chromium.org/p/chromium/builders/try/mac-arm64-rel). A small
+trybot](https://ci.monyhar.org/p/monyhar/builders/try/mac-arm64-rel). A small
 number of [swarming bots](https://goto.corp.google.com/run-on-dtk) are also
 available for Googlers to run tests on.
 
@@ -90,7 +90,7 @@ presubmits don't yet work, and **you need to use
 hermetic versions for now.)
 
 Other than that, checking out and building (with goma too) should just work.
-You should be able to run `fetch chromium` normally, and then build, using
+You should be able to run `fetch monyhar` normally, and then build, using
 `gn`, `ninja` etc like normal.
 
 gtest-based binaries should build, run, and mostly pass. Web tests probably

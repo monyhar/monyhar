@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.task;
+package org.monyhar.base.task;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +18,7 @@ import java.util.concurrent.atomic.AtomicReferenceArray;
 import javax.annotation.concurrent.GuardedBy;
 
 /**
- * Java interface to the native chromium scheduler.  Note tasks can be posted before native
+ * Java interface to the native monyhar scheduler.  Note tasks can be posted before native
  * initialization, but task prioritization is extremely limited. Once the native scheduler
  * is ready, tasks will be migrated over.
  */
@@ -129,7 +129,7 @@ public class PostTask {
      * Use this only for trivial tasks as it ignores task priorities.
      *
      * @deprecated In tests, use {@link
-     *         org.chromium.content_public.browser.test.util.TestThreadUtils#runOnUiThreadBlocking(Runnable)
+     *         org.monyhar.content_public.browser.test.util.TestThreadUtils#runOnUiThreadBlocking(Runnable)
      *         TestThreadUtils.runOnUiThreadBlocking(Runnable)} instead. Non-test usage is heavily
      *         discouraged. For non-tests, use callbacks rather than blocking threads. If you
      * absolutely must block the thread, use FutureTask.get().
@@ -153,7 +153,7 @@ public class PostTask {
      * Use this only for trivial tasks as it ignores task priorities.
      *
      * @deprecated In tests, use {@link
-     *         org.chromium.content_public.browser.test.util.TestThreadUtils#runOnUiThreadBlocking(Runnable)
+     *         org.monyhar.content_public.browser.test.util.TestThreadUtils#runOnUiThreadBlocking(Runnable)
      *         TestThreadUtils.runOnUiThreadBlocking(Runnable)} instead. Non-test usage is heavily
      *         discouraged. For non-tests, use callbacks rather than blocking threads. If you
      * absolutely must block the thread, use FutureTask.get().

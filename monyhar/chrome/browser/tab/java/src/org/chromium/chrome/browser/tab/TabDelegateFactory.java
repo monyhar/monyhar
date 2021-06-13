@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab;
+package org.monyhar.chrome.browser.tab;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.browser.contextmenu.ContextMenuPopulatorFactory;
-import org.chromium.chrome.browser.ui.native_page.NativePage;
-import org.chromium.components.browser_ui.util.BrowserControlsVisibilityDelegate;
-import org.chromium.components.embedder_support.delegate.WebContentsDelegateAndroid;
-import org.chromium.components.external_intents.ExternalNavigationHandler;
-import org.chromium.components.navigation_interception.InterceptNavigationDelegate;
+import org.monyhar.chrome.browser.contextmenu.ContextMenuPopulatorFactory;
+import org.monyhar.chrome.browser.ui.native_page.NativePage;
+import org.monyhar.components.browser_ui.util.BrowserControlsVisibilityDelegate;
+import org.monyhar.components.embedder_support.delegate.WebContentsDelegateAndroid;
+import org.monyhar.components.external_intents.ExternalNavigationHandler;
+import org.monyhar.components.navigation_interception.InterceptNavigationDelegate;
 
 /**
  * An interface for factory to create {@link Tab} related delegates.

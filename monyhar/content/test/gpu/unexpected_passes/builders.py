@@ -40,7 +40,7 @@ for suffix in android_browser_types.TELEMETRY_ANDROID_BROWSER_TARGET_SUFFIXES:
 # Go from try -> CI then reverse the mapping so that there's less of a chance of
 # typos being introduced in the repeated trybot names.
 FAKE_TRY_BUILDERS = {
-    # chromium.gpu.fyi
+    # monyhar.gpu.fyi
     'android_angle_rel_ng': [
         'ANGLE GPU Android Release (Nexus 5X)',
     ],
@@ -209,7 +209,7 @@ def _GetMirroredBuildersForCiBuilder(ci_builder):
   mirrored = bb_json.get('output', {}).get('properties',
                                            {}).get('mirrored_builders', [])
   # The mirror names from Buildbucket include the group separated by :, e.g.
-  # tryserver.chromium.android:gpu-fyi-try-android-m-nexus-5x-64, so only grab
+  # tryserver.monyhar.android:gpu-fyi-try-android-m-nexus-5x-64, so only grab
   # the builder name.
   for mirror in mirrored:
     split = mirror.split(':')
@@ -239,7 +239,7 @@ def _GetBuildbucketOutputForCiBuilder(ci_builder):
       '-1',
       '-status',
       'ended',
-      'chromium/ci/%s' % ci_builder,
+      'monyhar/ci/%s' % ci_builder,
   ],
                        stdout=subprocess.PIPE)
   # Use the ID to get the most recent build.

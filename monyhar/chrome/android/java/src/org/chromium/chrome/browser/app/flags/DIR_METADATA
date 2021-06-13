@@ -1,4 +1,4 @@
 monorail {
   component: "Internals>Flags"
 }
-team_email: "clank-modularization@chromium.org"
+team_email: "clank-modularization@monyhar.org"

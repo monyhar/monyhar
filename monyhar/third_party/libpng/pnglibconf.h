@@ -136,8 +136,8 @@
 #define PNG_zTXt_SUPPORTED
 /* end of options */
 
-/* chromium options */
-/* These are PNG options that chromium chooses to explicitly disable */
+/* monyhar options */
+/* These are PNG options that monyhar chooses to explicitly disable */
 /*#undef PNG_BUILD_GRAYSCALE_PALETTE_SUPPORTED*/
 /*#undef PNG_CHECK_FOR_INVALID_INDEX_SUPPORTED*/
 /*#undef PNG_CONSOLE_IO_SUPPORTED*/
@@ -188,7 +188,7 @@
 /*#undef PNG_sCAL_SUPPORTED*/
 /*#undef PNG_sPLT_SUPPORTED*/
 /*#undef PNG_tIME_SUPPORTED*/
-/* end of chromium options */
+/* end of monyhar options */
 
 /* default settings */
 /* These are PNG settings that match the default in scripts/pnglibconf.dfa */
@@ -218,20 +218,20 @@
 #define PNG_sRGB_PROFILE_CHECKS 2
 /* end of default settings */
 
-/* chromium settings */
-/* These are PNG setting that chromium has modified */
+/* monyhar settings */
+/* These are PNG setting that monyhar has modified */
 /* crbug.com/117369 */
 #define PNG_USER_CHUNK_CACHE_MAX 128
 #define PNG_USER_CHUNK_MALLOC_MAX 4000000L
-/* end of chromium settings */
+/* end of monyhar settings */
 
-/* chromium prefixing */
+/* monyhar prefixing */
 /*
  * This is necessary to build multiple copies of libpng.  We need this while pdfium builds
  * its own copy of libpng.
  */
 #define PNG_PREFIX
 #include "pngprefix.h"
-/* end of chromium prefixing */
+/* end of monyhar prefixing */
 
 #endif /* PNGLCONF_H */

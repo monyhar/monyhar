@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.bookmarks;
+package org.monyhar.components.bookmarks;
 
 import android.text.TextUtils;
 import android.util.Log;
 
-import org.chromium.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.CalledByNative;
 
 /**
  * Simple object representing the bookmark id.

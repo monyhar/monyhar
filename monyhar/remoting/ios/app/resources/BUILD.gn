@@ -70,18 +70,18 @@ imageset("launchscreen_brand_name") {
 
 appiconset("remoting_icons") {
   sources = [
-    "chromium/AppIcon.appiconset/Contents.json",
-    "chromium/AppIcon.appiconset/Icon-1024.png",
-    "chromium/AppIcon.appiconset/Icon-120.png",
-    "chromium/AppIcon.appiconset/Icon-152.png",
-    "chromium/AppIcon.appiconset/Icon-167.png",
-    "chromium/AppIcon.appiconset/Icon-180.png",
-    "chromium/AppIcon.appiconset/Icon-29.png",
-    "chromium/AppIcon.appiconset/Icon-40.png",
-    "chromium/AppIcon.appiconset/Icon-58.png",
-    "chromium/AppIcon.appiconset/Icon-76.png",
-    "chromium/AppIcon.appiconset/Icon-80.png",
-    "chromium/AppIcon.appiconset/Icon-87.png",
+    "monyhar/AppIcon.appiconset/Contents.json",
+    "monyhar/AppIcon.appiconset/Icon-1024.png",
+    "monyhar/AppIcon.appiconset/Icon-120.png",
+    "monyhar/AppIcon.appiconset/Icon-152.png",
+    "monyhar/AppIcon.appiconset/Icon-167.png",
+    "monyhar/AppIcon.appiconset/Icon-180.png",
+    "monyhar/AppIcon.appiconset/Icon-29.png",
+    "monyhar/AppIcon.appiconset/Icon-40.png",
+    "monyhar/AppIcon.appiconset/Icon-58.png",
+    "monyhar/AppIcon.appiconset/Icon-76.png",
+    "monyhar/AppIcon.appiconset/Icon-80.png",
+    "monyhar/AppIcon.appiconset/Icon-87.png",
   ]
 }
 

@@ -14,5 +14,5 @@ Local Modifications:
 - Replaced CRLF line endings with LF line endings in text files.
 - Removed files that are not needed by Chromium, see rsync_exclude.txt.
 
-To restore the contents of the 'components-chromium' directory from scratch, run
+To restore the contents of the 'components-monyhar' directory from scratch, run
 ./reproduce.sh on a Linux machine.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -17,13 +17,13 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.browser.tab.state.ShoppingPersistedTabData;
-import org.chromium.chrome.browser.util.ChromeAccessibilityUtil;
-import org.chromium.chrome.tab_ui.R;
-import org.chromium.components.browser_ui.widget.textbubble.TextBubble;
-import org.chromium.ui.widget.ButtonCompat;
-import org.chromium.ui.widget.ChromeImageView;
-import org.chromium.ui.widget.ViewRectProvider;
+import org.monyhar.chrome.browser.tab.state.ShoppingPersistedTabData;
+import org.monyhar.chrome.browser.util.ChromeAccessibilityUtil;
+import org.monyhar.chrome.tab_ui.R;
+import org.monyhar.components.browser_ui.widget.textbubble.TextBubble;
+import org.monyhar.ui.widget.ButtonCompat;
+import org.monyhar.ui.widget.ChromeImageView;
+import org.monyhar.ui.widget.ViewRectProvider;
 
 import java.lang.ref.WeakReference;
 

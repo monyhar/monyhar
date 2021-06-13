@@ -138,8 +138,8 @@ class Handler(SimpleHTTPServer.SimpleHTTPRequestHandler):
 
     # strip off the repo and branch info, if present, for compatibility
     # with gitiles.
-    if path.startswith('/chromium/src/+/master'):
-      path = path[len('/chromium/src/+/master'):]
+    if path.startswith('/monyhar/src/+/master'):
+      path = path[len('/monyhar/src/+/master'):]
 
     full_path = os.path.normpath(os.path.join(self.server.top_level, path[1:]))
 

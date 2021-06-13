@@ -20,7 +20,7 @@ class TestDataFrames(unittest.TestCase):
     sample_data = {
         'masters': [
             {
-                'name': 'chromium.perf',
+                'name': 'monyhar.perf',
                 'tests': {
                     'all_platforms_test': {
                         'builders': [
@@ -43,7 +43,7 @@ class TestDataFrames(unittest.TestCase):
                 }
             },
             {
-                'name': 'chromium.perf.fyi',
+                'name': 'monyhar.perf.fyi',
                 'tests': {
                     'mobile_test': {
                         'builders': [
@@ -56,9 +56,9 @@ class TestDataFrames(unittest.TestCase):
     }
     df = frames.BuildersDataFrame(sample_data)
     # Poke and check a few simple facts about our sample data.
-    # There are two masters: chromium.perf, chromium.perf.fyi.
+    # There are two masters: monyhar.perf, monyhar.perf.fyi.
     self.assertItemsEqual(
-        df['master'].unique(), ['chromium.perf', 'chromium.perf.fyi'])
+        df['master'].unique(), ['monyhar.perf', 'monyhar.perf.fyi'])
     # The 'desktop_test' runs on desktop builders only.
     self.assertItemsEqual(
         df[df['test_type'] == 'desktop_test']['builder'].unique(),
@@ -67,10 +67,10 @@ class TestDataFrames(unittest.TestCase):
     self.assertItemsEqual(
         df[df['test_type'] == 'mobile_test']['builder'].unique(),
         ['my-android-bot', 'my-new-android-bot'])
-    # The new android bot is on the chromium.perf.fyi waterfall.
+    # The new android bot is on the monyhar.perf.fyi waterfall.
     self.assertItemsEqual(
         df[df['builder'] == 'my-new-android-bot']['master'].unique(),
-        ['chromium.perf.fyi'])
+        ['monyhar.perf.fyi'])
 
   def testRunLengthDecode(self):
     encoded = [[3, 'F'], [4, 'P'], [2, 'F']]

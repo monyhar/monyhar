@@ -102,8 +102,8 @@ class HistoryBridgeTest : public ::testing::Test {
 };
 
 TEST_F(HistoryBridgeTest, DeleteAll) {
-  AddPage(GURL("https://www.chromium.org/"));
-  AddPage(GURL("https://test.chromium.org/"));
+  AddPage(GURL("https://www.monyhar.org/"));
+  AddPage(GURL("https://test.monyhar.org/"));
 
   DeleteAllHistory();
   deleter()->WaitForDelete();
@@ -111,10 +111,10 @@ TEST_F(HistoryBridgeTest, DeleteAll) {
 }
 
 TEST_F(HistoryBridgeTest, DeleteURLs) {
-  const GURL kTestUrlA("https://www.chromium.org/");
+  const GURL kTestUrlA("https://www.monyhar.org/");
   const base::Time now = base::Time::Now();
   AddPage(kTestUrlA, now - base::TimeDelta::FromSeconds(2));
-  AddPage(GURL("https://test.chromium.org/"),
+  AddPage(GURL("https://test.monyhar.org/"),
           now - base::TimeDelta::FromSeconds(1));
 
   service()->DeleteURLs({kTestUrlA});
@@ -125,9 +125,9 @@ TEST_F(HistoryBridgeTest, DeleteURLs) {
 
 TEST_F(HistoryBridgeTest, DeleteTimeInterval) {
   const base::Time now = base::Time::Now();
-  AddPage(GURL("https://www.chromium.org/a"),
+  AddPage(GURL("https://www.monyhar.org/a"),
           now - base::TimeDelta::FromSeconds(2));
-  AddPage(GURL("https://www.chromium.org/b"),
+  AddPage(GURL("https://www.monyhar.org/b"),
           now - base::TimeDelta::FromSeconds(1));
 
   DeleteHistoryBetween(now - base::TimeDelta::FromSeconds(3), now);
@@ -139,8 +139,8 @@ TEST_F(HistoryBridgeTest, DeleteTimeInterval) {
 }
 
 TEST_F(HistoryBridgeTest, OnlyOriginsAreDeleted) {
-  const GURL kTestURL("https://www.chromium.org/abc");
-  const GURL kStrippedTestURL("https://www.chromium.org/");
+  const GURL kTestURL("https://www.monyhar.org/abc");
+  const GURL kStrippedTestURL("https://www.monyhar.org/");
   AddPage(kTestURL);
   DeleteHistoryForURL(kTestURL);
   deleter()->WaitForDelete();

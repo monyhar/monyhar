@@ -9,7 +9,7 @@
 
 #include "base/memory/ref_counted.h"
 #include "gpu/command_buffer/common/command_buffer.h"
-#include "ppapi/c/dev/ppb_gles_chromium_texture_mapping_dev.h"
+#include "ppapi/c/dev/ppb_gles_monyhar_texture_mapping_dev.h"
 #include "ppapi/c/ppb_graphics_3d.h"
 #include "ppapi/thunk/ppapi_thunk_export.h"
 

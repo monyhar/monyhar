@@ -57,7 +57,7 @@ js_library("cr_policy_indicator.m") {
   sources = [ "$root_gen_dir/ui/webui/resources/cr_elements/policy/cr_policy_indicator.m.js" ]
   deps = [
     ":cr_policy_indicator_behavior.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   extra_deps = [ ":cr_policy_indicator_module" ]
 }
@@ -78,7 +78,7 @@ js_library("cr_policy_pref_indicator.m") {
   sources = [ "$root_gen_dir/ui/webui/resources/cr_elements/policy/cr_policy_pref_indicator.m.js" ]
   deps = [
     ":cr_policy_indicator_behavior.m",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   externs_list = [ "$externs_path/settings_private.js" ]
   extra_deps = [ ":cr_policy_pref_indicator_module" ]
@@ -89,7 +89,7 @@ js_library("cr_tooltip_icon.m") {
     "$root_gen_dir/ui/webui/resources/cr_elements/policy/cr_tooltip_icon.m.js",
   ]
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   extra_deps = [ ":cr_tooltip_icon_module" ]
 }

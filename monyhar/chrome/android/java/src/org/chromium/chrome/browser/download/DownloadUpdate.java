@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download;
+package org.monyhar.chrome.browser.download;
 
 import android.graphics.Bitmap;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.browser.profiles.OTRProfileID;
-import org.chromium.components.offline_items_collection.ContentId;
-import org.chromium.components.offline_items_collection.FailState;
-import org.chromium.components.offline_items_collection.OfflineItem.Progress;
-import org.chromium.components.offline_items_collection.PendingState;
+import org.monyhar.chrome.browser.profiles.OTRProfileID;
+import org.monyhar.components.offline_items_collection.ContentId;
+import org.monyhar.components.offline_items_collection.FailState;
+import org.monyhar.components.offline_items_collection.OfflineItem.Progress;
+import org.monyhar.components.offline_items_collection.PendingState;
 
 /**
  * Class representing information relating to an update in download status.

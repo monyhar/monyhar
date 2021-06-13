@@ -18,5 +18,5 @@ forcibly exported from the other DLL. This works relatively cleanly for function
 import/export, however it cannot work for data export.
 
 Some more details can be found on the initial commit of the `split_link` script
-https://src.chromium.org/viewvc/chrome?revision=200049&view=revision and the
+https://src.monyhar.org/viewvc/chrome?revision=200049&view=revision and the
 associated bugs: https://crbug.com/237249 https://crbug.com/237267.

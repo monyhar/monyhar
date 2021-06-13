@@ -73,7 +73,7 @@ const base::FilePath::CharType kSwReporterExeName[] =
     FILE_PATH_LITERAL("software_reporter_tool.exe");
 
 // SwReporter is normally only registered in official builds.  However, to
-// enable testing in chromium build bots, test code can set this to true.
+// enable testing in monyhar build bots, test code can set this to true.
 #if BUILDFLAG(GOOGLE_CHROME_BRANDING)
 bool is_sw_reporter_enabled = true;
 #else

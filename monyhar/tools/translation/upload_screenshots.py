@@ -48,7 +48,7 @@ TRANSLATION_EXPECTATIONS_PATH = os.path.join('tools', 'gritsettings',
 
 # URL of the bucket used for storing screenshots.
 # This is writable by @google.com accounts, readable by everyone.
-BUCKET_URL = 'gs://chromium-translation-screenshots'
+BUCKET_URL = 'gs://monyhar-translation-screenshots'
 
 if sys.platform.startswith('win'):
   # Use the |git.bat| in the depot_tools/ on Windows.

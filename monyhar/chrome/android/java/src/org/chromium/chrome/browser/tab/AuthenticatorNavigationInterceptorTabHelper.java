@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab;
+package org.monyhar.chrome.browser.tab;
 
-import org.chromium.components.external_intents.AuthenticatorNavigationInterceptor;
+import org.monyhar.components.external_intents.AuthenticatorNavigationInterceptor;
 
 /**
  * Temporary wrapper to isolate downstream from the exact API surfaces used to get an

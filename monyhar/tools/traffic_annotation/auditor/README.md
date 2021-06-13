@@ -1,6 +1,6 @@
 # Network Traffic Annotation Auditor
 This binary runs extractor.py for extraction of Network Traffic Annotations
-from chromium source code, collects and summarizes its outputs, and performs
+from monyhar source code, collects and summarizes its outputs, and performs
 tests and maintenance.
 Please see `docs/network_traffic_annotations.md` for an introduction to network
 traffic annotations.
@@ -21,7 +21,7 @@ The binary for this file is checked out into
 Windows platforms now and will be extended to other platforms later.
 
 ## Running
-Before running, you need to build the COMPLETE chromium and pass the build path
+Before running, you need to build the COMPLETE monyhar and pass the build path
 to the executable.
 
 ## Safe List

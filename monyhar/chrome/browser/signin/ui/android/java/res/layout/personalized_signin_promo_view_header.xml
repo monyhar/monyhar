@@ -16,7 +16,7 @@
         tools:ignore="ContentDescription"
         android:scaleType="fitCenter"/>
 
-    <org.chromium.ui.widget.ChromeImageButton
+    <org.monyhar.ui.widget.ChromeImageButton
         android:id="@+id/signin_promo_close_button"
         android:layout_width="24dp"
         android:layout_height="24dp"

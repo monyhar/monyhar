@@ -14,7 +14,7 @@
 #include "build/build_config.h"
 
 // Class to connect native calls to
-// org.chromium.chrome.browser.enterprise.util.EnterpriseInfo. This class is
+// org.monyhar.chrome.browser.enterprise.util.EnterpriseInfo. This class is
 // only usable for Android and is only built for Android.
 
 // Only use from the UI Thread.
@@ -35,7 +35,7 @@ class AndroidEnterpriseInfo {
   }
 
   // Request the owned state from
-  // org.chromium.chrome.browser.enterprise.util.EnterpriseInfo and notify
+  // org.monyhar.chrome.browser.enterprise.util.EnterpriseInfo and notify
   // |callback| when the request is complete. |callback| is added to a list of
   // callbacks and they are notified in the order they were received. Use from
   // the UI thread.

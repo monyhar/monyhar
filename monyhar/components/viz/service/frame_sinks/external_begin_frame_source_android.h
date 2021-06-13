@@ -15,7 +15,7 @@
 namespace viz {
 
 // An implementation of ExternalBeginFrameSource which is driven by VSync
-// signals coming from org.chromium.ui.VSyncMonitor.
+// signals coming from org.monyhar.ui.VSyncMonitor.
 class VIZ_SERVICE_EXPORT ExternalBeginFrameSourceAndroid
     : public ExternalBeginFrameSource,
       public ExternalBeginFrameSourceClient {

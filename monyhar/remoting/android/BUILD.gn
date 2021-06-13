@@ -12,13 +12,13 @@ import("//remoting/tools/build/remoting_localize.gni")
 
 generate_jni("jni_headers") {
   sources = [
-    "java/src/org/chromium/chromoting/jni/Client.java",
-    "java/src/org/chromium/chromoting/jni/DirectoryService.java",
-    "java/src/org/chromium/chromoting/jni/GlDisplay.java",
-    "java/src/org/chromium/chromoting/jni/JniInterface.java",
-    "java/src/org/chromium/chromoting/jni/JniOAuthTokenGetter.java",
-    "java/src/org/chromium/chromoting/jni/NotificationPresenter.java",
-    "java/src/org/chromium/chromoting/jni/TouchEventData.java",
+    "java/src/org/monyhar/chromoting/jni/Client.java",
+    "java/src/org/monyhar/chromoting/jni/DirectoryService.java",
+    "java/src/org/monyhar/chromoting/jni/GlDisplay.java",
+    "java/src/org/monyhar/chromoting/jni/JniInterface.java",
+    "java/src/org/monyhar/chromoting/jni/JniOAuthTokenGetter.java",
+    "java/src/org/monyhar/chromoting/jni/NotificationPresenter.java",
+    "java/src/org/monyhar/chromoting/jni/TouchEventData.java",
   ]
 }
 
@@ -150,7 +150,7 @@ remoting_apk_tmpl("remoting_apk") {
   lint_suppressions_file = "lint-suppressions.xml"
 
   apk_name = "Chromoting"
-  sources = [ "//remoting/android/apk/src/org/chromium/chromoting/RemotingApplication.java" ]
+  sources = [ "//remoting/android/apk/src/org/monyhar/chromoting/RemotingApplication.java" ]
   deps = [
     ":remoting_android_client_java",
     "//base:base_java",
@@ -171,14 +171,14 @@ instrumentation_test_apk("remoting_test_apk") {
   apk_name = "ChromotingTest"
   apk_under_test = ":remoting_apk"
   sources = [
-    "javatests/src/org/chromium/chromoting/EventTest.java",
-    "javatests/src/org/chromium/chromoting/MockInputStub.java",
-    "javatests/src/org/chromium/chromoting/SwipePinchDetectorTest.java",
-    "javatests/src/org/chromium/chromoting/TapGestureDetectorTest.java",
-    "javatests/src/org/chromium/chromoting/TouchEventBuilder.java",
-    "javatests/src/org/chromium/chromoting/TouchEventGenerator.java",
-    "javatests/src/org/chromium/chromoting/TouchInputStrategyTest.java",
-    "javatests/src/org/chromium/chromoting/test/util/MutableReference.java",
+    "javatests/src/org/monyhar/chromoting/EventTest.java",
+    "javatests/src/org/monyhar/chromoting/MockInputStub.java",
+    "javatests/src/org/monyhar/chromoting/SwipePinchDetectorTest.java",
+    "javatests/src/org/monyhar/chromoting/TapGestureDetectorTest.java",
+    "javatests/src/org/monyhar/chromoting/TouchEventBuilder.java",
+    "javatests/src/org/monyhar/chromoting/TouchEventGenerator.java",
+    "javatests/src/org/monyhar/chromoting/TouchInputStrategyTest.java",
+    "javatests/src/org/monyhar/chromoting/test/util/MutableReference.java",
   ]
   deps = [
     ":remoting_android_client_java",

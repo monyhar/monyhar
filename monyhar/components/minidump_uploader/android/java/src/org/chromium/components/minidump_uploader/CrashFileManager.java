@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.minidump_uploader;
+package org.monyhar.components.minidump_uploader;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 import java.io.File;
 import java.io.FileDescriptor;
@@ -599,7 +599,7 @@ public class CrashFileManager {
      * Extracts crash local ID from crash file name.
      *
      * ID is the last part of the file name. e.g. {@code
-     * chromium-renderer-minidump-f297dbcba7a2d0bb.dump.try2} has local ID of {@code
+     * monyhar-renderer-minidump-f297dbcba7a2d0bb.dump.try2} has local ID of {@code
      * f297dbcba7a2d0bb}.
      *
      * @param fileName Crash File name.

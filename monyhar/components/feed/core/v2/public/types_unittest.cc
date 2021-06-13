@@ -96,8 +96,8 @@ TEST(DebugStreamData, FailsDeserializationGracefully) {
 
 TEST(WebFeedPageInformation, SetUrlStripsFragment) {
   WebFeedPageInformation info;
-  info.SetUrl(GURL("https://chromium.org#1"));
-  EXPECT_EQ(GURL("https://chromium.org"), info.url());
+  info.SetUrl(GURL("https://monyhar.org#1"));
+  EXPECT_EQ(GURL("https://monyhar.org"), info.url());
 }
 
 }  // namespace feed

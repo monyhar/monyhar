@@ -41,7 +41,7 @@ from blinkpy.common.host import Host
 from blinkpy.web_tests.models.test_expectations import TestExpectationParser
 
 # FIXME: Make this a direct request to Monorail.
-GOOGLE_CODE_URL = 'https://www.googleapis.com/projecthosting/v2/projects/chromium/issues/%s?key=AIzaSyDgCqT1Dt5AZWLHo4QJjyMHaCjhnFacGF0'
+GOOGLE_CODE_URL = 'https://www.googleapis.com/projecthosting/v2/projects/monyhar/issues/%s?key=AIzaSyDgCqT1Dt5AZWLHo4QJjyMHaCjhnFacGF0'
 CRBUG_PREFIX = 'crbug.com/'
 CSV_ROW_HEADERS = [
     'crbug link', 'test file', 'days since last update', 'owner', 'status'

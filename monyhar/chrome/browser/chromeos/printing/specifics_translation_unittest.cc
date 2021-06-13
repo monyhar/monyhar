@@ -19,7 +19,7 @@ constexpr char kDescription[] = "The green one";
 constexpr char kManufacturer[] = "Manufacturer";
 constexpr char kModel[] = "MODEL";
 constexpr char kMakeAndModel[] = "Manufacturer MODEL";
-constexpr char kUri[] = "ipps://notaprinter.chromium.org:123/ipp/print";
+constexpr char kUri[] = "ipps://notaprinter.monyhar.org:123/ipp/print";
 constexpr char kUuid[] = "UUIDUUIDUUID";
 const base::Time kUpdateTime = base::Time::FromInternalValue(22114455660000);
 

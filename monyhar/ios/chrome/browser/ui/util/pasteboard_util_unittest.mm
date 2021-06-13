@@ -19,7 +19,7 @@
 namespace {
 
 const char kTestText[] = "Some test text";
-const char kTestURL[] = "https://www.chromium.org/";
+const char kTestURL[] = "https://www.monyhar.org/";
 
 class PasteboardUtilTest : public PlatformTest {
  public:

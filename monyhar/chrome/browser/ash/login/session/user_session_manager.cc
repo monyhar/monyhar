@@ -1266,7 +1266,7 @@ void UserSessionManager::PrepareProfile(const base::FilePath& profile_path) {
   const bool is_demo_session = false;
 
   // TODO(nkostylev): Figure out whether demo session is using the right profile
-  // path or not. See https://codereview.chromium.org/171423009
+  // path or not. See https://codereview.monyhar.org/171423009
   g_browser_process->profile_manager()->CreateProfileAsync(
       profile_path,
       base::BindRepeating(&UserSessionManager::OnProfileCreated, AsWeakPtr(),

@@ -181,7 +181,7 @@ TEST_F(PDFiumPageLinkTest, TestAnnotLinkGeneration) {
       {253,
        18,
        {{242, 455, 1, 18}, {242, 472, 1, 15}},
-       "https://cs.chromium.org"},
+       "https://cs.monyhar.org"},
       {-1, 0, {{58, 926, 28, 27}}, "https://www.google.com"}};
   if (UsingTestFonts()) {
     expected_links[0].bounding_rects[0] = {99, 436, 236, 14};

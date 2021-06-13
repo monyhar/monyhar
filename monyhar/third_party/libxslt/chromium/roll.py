@@ -14,10 +14,10 @@ import tempfile
 
 # How to patch libxslt in Chromium:
 #
-# 1. Write a .patch file and add it to third_party/libxslt/chromium.
-# 2. Apply the patch in src: patch -p1 <../chromium/foo.patch
+# 1. Write a .patch file and add it to third_party/libxslt/monyhar.
+# 2. Apply the patch in src: patch -p1 <../monyhar/foo.patch
 # 3. Add the patch to the list of patches in this file.
-# 4. Update README.chromium with the provenance of the patch.
+# 4. Update README.monyhar with the provenance of the patch.
 # 5. Upload a change with the modified documentation, roll script,
 #    patch, applied patch and any other relevant changes like
 #    regression tests. Go through the usual review and commit process.
@@ -44,23 +44,23 @@ import tempfile
 #    This will be the upstream version of libxslt you are rolling to.
 #
 # 2. On Linux, in the Chromium src director:
-#    a. third_party/libxslt/chromium/roll.py --linux /path/to/libxslt
+#    a. third_party/libxslt/monyhar/roll.py --linux /path/to/libxslt
 #
 #    If this fails, it may be a patch no longer applies. Reset to
 #    head; modify the patch files, this script, and
-#    README.chromium; then commit the result and run it again.
+#    README.monyhar; then commit the result and run it again.
 #
 #    b. Upload a Cl but do not start review
 #
 # 2. On Windows, in the Chromium src directory:
 #    a. git cl patch <Gerrit Issue ID>
-#    b. third_party\libxslt\chromium\roll.py --win32
+#    b. third_party\libxslt\monyhar\roll.py --win32
 #    c. git cl upload
 #
 # 3. On Mac, in the Chromium src directory:
 #    a. git cl patch <Gerrit Issue ID>
-#    b. third_party/libxslt/chromium/roll.py --mac
-#    c. Make and commit any final changes to README.chromium, BUILD.gn, etc.
+#    b. third_party/libxslt/monyhar/roll.py --mac
+#    c. Make and commit any final changes to README.monyhar, BUILD.gn, etc.
 #    d. Complete the code review process as usual: git cl upload -d;
 #       git cl try-results; etc.
 
@@ -279,7 +279,7 @@ def prepare_libxslt_distribution(src_path, libxslt_repo_path, temp_dir):
             print('applying %s' % patch)
             subprocess.check_call(
                 'patch -p1 --fuzz=0 < %s' % os.path.join(
-                    src_path, THIRD_PARTY_LIBXSLT_SRC, '..', 'chromium', patch),
+                    src_path, THIRD_PARTY_LIBXSLT_SRC, '..', 'monyhar', patch),
                 shell=True)
     with WorkingDir(temp_config_path):
         subprocess.check_call(['../src/autogen.sh'] + XSLT_CONFIGURE_OPTIONS +
@@ -316,8 +316,8 @@ def roll_libxslt_linux(src_path, repo_path):
             shutil.rmtree(temp_dir)
 
         with WorkingDir(THIRD_PARTY_LIBXSLT_SRC):
-            # Write the commit ID into the README.chromium file
-            sed_in_place('../README.chromium',
+            # Write the commit ID into the README.monyhar file
+            sed_in_place('../README.monyhar',
                          's/Version: .*$/Version: %s/' % commit)
             check_copying()
 

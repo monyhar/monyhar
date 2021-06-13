@@ -1397,7 +1397,7 @@ void PrintRenderFrameHelper::PrintFrameContent(
 
   // Printing embedded pdf plugin has been broken since pdf plugin viewer was
   // moved out-of-process
-  // (https://bugs.chromium.org/p/chromium/issues/detail?id=464269). So don't
+  // (https://bugs.monyhar.org/p/monyhar/issues/detail?id=464269). So don't
   // try to handle pdf plugin element until that bug is fixed.
   {
     TRACE_EVENT0("print", "PrintRenderFrameHelper::PrintFrameContent");

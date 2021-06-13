@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.example.jni_generator;
+package org.monyhar.example.jni_generator;
 
 import android.graphics.Rect;
 
-import org.chromium.base.annotations.AccessedByNative;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.CalledByNativeUnchecked;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeClassQualifiedName;
-import org.chromium.base.annotations.NativeMethods;
+import org.monyhar.base.annotations.AccessedByNative;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.CalledByNativeUnchecked;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeClassQualifiedName;
+import org.monyhar.base.annotations.NativeMethods;
 
 import java.util.ArrayList;
 import java.util.Iterator;

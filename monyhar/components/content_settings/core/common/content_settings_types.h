@@ -13,7 +13,7 @@
 // When adding/removing values from this enum, be sure to update the
 // kHistogramValue array in content_settings.cc as well.
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.content_settings
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.content_settings
 enum class ContentSettingsType : int32_t {
   // "DEFAULT" is only used as an argument to the Content Settings Window
   // opener; there it means "whatever was last shown".

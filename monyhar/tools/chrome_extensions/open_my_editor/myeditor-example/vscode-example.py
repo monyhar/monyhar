@@ -13,7 +13,7 @@ import argparse
 import os
 import sh
 
-CHROMIUM_ROOT = os.environ['HOME'] + "/workspace/chromium/src"
+CHROMIUM_ROOT = os.environ['HOME'] + "/workspace/monyhar/src"
 
 os.chdir(CHROMIUM_ROOT)
 

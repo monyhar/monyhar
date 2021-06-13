@@ -356,7 +356,7 @@ cr.define('cr.ui', function() {
 var Oobe = cr.ui.Oobe;
 
 // Allow selection events on components with editable text (password field)
-// bug (http://code.google.com/p/chromium/issues/detail?id=125863)
+// bug (http://code.google.com/p/monyhar/issues/detail?id=125863)
 disableTextSelectAndDrag(function(e) {
   var src = e.target;
   return src instanceof HTMLTextAreaElement ||

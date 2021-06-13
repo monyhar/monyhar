@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps;
+package org.monyhar.chrome.browser.webapps;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -17,17 +17,17 @@ import android.os.RemoteException;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.chrome.browser.browserservices.intents.WebApkExtras;
-import org.chromium.chrome.browser.metrics.WebApkUma;
-import org.chromium.chrome.browser.notifications.NotificationBuilderBase;
-import org.chromium.chrome.browser.notifications.NotificationUmaTracker;
-import org.chromium.chrome.browser.notifications.channels.ChromeChannelDefinitions;
-import org.chromium.components.browser_ui.notifications.NotificationMetadata;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.webapk.lib.client.WebApkServiceConnectionManager;
-import org.chromium.webapk.lib.runtime_library.IWebApkApi;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.browser.browserservices.intents.WebApkExtras;
+import org.monyhar.chrome.browser.metrics.WebApkUma;
+import org.monyhar.chrome.browser.notifications.NotificationBuilderBase;
+import org.monyhar.chrome.browser.notifications.NotificationUmaTracker;
+import org.monyhar.chrome.browser.notifications.channels.ChromeChannelDefinitions;
+import org.monyhar.components.browser_ui.notifications.NotificationMetadata;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.webapk.lib.client.WebApkServiceConnectionManager;
+import org.monyhar.webapk.lib.runtime_library.IWebApkApi;
 
 /**
  * Provides APIs for browsers to communicate with WebAPK services. Each WebAPK has its own "WebAPK
@@ -96,7 +96,7 @@ public class WebApkServiceClient {
                         notificationBuilder.setChannelId(
                                 ChromeChannelDefinitions.CHANNEL_ID_WEBAPKS);
                         channelName = ContextUtils.getApplicationContext().getString(
-                                org.chromium.chrome.R.string.webapk_notification_channel_name);
+                                org.monyhar.chrome.R.string.webapk_notification_channel_name);
                     }
                     NotificationMetadata metadata = new NotificationMetadata(
                             NotificationUmaTracker.SystemNotificationType.WEBAPK, platformTag,

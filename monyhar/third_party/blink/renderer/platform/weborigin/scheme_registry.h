@@ -156,7 +156,7 @@ class PLATFORM_EXPORT SchemeRegistry {
   static bool SchemeSupportsWasmEvalCSP(const String& scheme);
 
   // Schemes that represent browser extensions.
-  // TODO(chromium:1197375) Reconsider usages of this category. Are there
+  // TODO(monyhar:1197375) Reconsider usages of this category. Are there
   // meaningful ways to define more abstract permissions or requirements that
   // could be used instead?
   static void RegisterURLSchemeAsExtension(const String& scheme);
@@ -164,7 +164,7 @@ class PLATFORM_EXPORT SchemeRegistry {
   static bool IsExtensionScheme(const String& scheme);
 
   // Schemes that represent trusted browser UI.
-  // TODO(chromium:1197375) Reconsider usages of this category. Are there
+  // TODO(monyhar:1197375) Reconsider usages of this category. Are there
   // meaningful ways to define more abstract permissions or requirements that
   // could be used instead?
   static void RegisterURLSchemeAsWebUI(const String& scheme);

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.base;
+package org.monyhar.chrome.browser.omnibox.suggestions.base;
 
 import static org.mockito.Mockito.anyInt;
 import static org.mockito.Mockito.inOrder;
@@ -28,14 +28,14 @@ import org.mockito.MockitoAnnotations;
 import org.robolectric.Robolectric;
 import org.robolectric.annotation.Config;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.omnibox.styles.OmniboxTheme;
-import org.chromium.chrome.browser.omnibox.suggestions.SuggestionCommonProperties;
-import org.chromium.chrome.browser.omnibox.suggestions.base.BaseSuggestionViewProperties.Action;
-import org.chromium.components.browser_ui.widget.RoundedCornerImageView;
-import org.chromium.testing.local.LocalRobolectricTestRunner;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.omnibox.styles.OmniboxTheme;
+import org.monyhar.chrome.browser.omnibox.suggestions.SuggestionCommonProperties;
+import org.monyhar.chrome.browser.omnibox.suggestions.base.BaseSuggestionViewProperties.Action;
+import org.monyhar.components.browser_ui.widget.RoundedCornerImageView;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
 
 import java.util.Arrays;
 import java.util.List;

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
 import android.graphics.Rect;
 import android.net.Uri;
@@ -18,19 +18,19 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.AwContents;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Feature;
-import org.chromium.components.content_capture.ContentCaptureConsumer;
-import org.chromium.components.content_capture.ContentCaptureData;
-import org.chromium.components.content_capture.ContentCaptureDataBase;
-import org.chromium.components.content_capture.ContentCaptureFrame;
-import org.chromium.components.content_capture.FrameSession;
-import org.chromium.components.content_capture.OnscreenContentProvider;
-import org.chromium.components.content_capture.UrlAllowlist;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.net.test.util.TestWebServer;
+import org.monyhar.android_webview.AwContents;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.components.content_capture.ContentCaptureConsumer;
+import org.monyhar.components.content_capture.ContentCaptureData;
+import org.monyhar.components.content_capture.ContentCaptureDataBase;
+import org.monyhar.components.content_capture.ContentCaptureFrame;
+import org.monyhar.components.content_capture.FrameSession;
+import org.monyhar.components.content_capture.OnscreenContentProvider;
+import org.monyhar.components.content_capture.UrlAllowlist;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.net.test.util.TestWebServer;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -720,7 +720,7 @@ public class AwContentCaptureTest {
                 + "<p>world</p>"
                 + "</body></html>";
         final String url = mWebServer.setResponse(MAIN_FRAME_FILE, response, null);
-        mSecondConsumer.setAllowURL("www.chromium.org");
+        mSecondConsumer.setAllowURL("www.monyhar.org");
         runAndVerifyCallbacks(() -> {
             loadUrlSync(url);
         }, toIntArray(TestAwContentCaptureConsumer.CONTENT_CAPTURED));

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting;
+package org.monyhar.chromoting;
 
 import android.app.Activity;
 import android.app.DownloadManager;
@@ -15,7 +15,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Environment;
 
-import org.chromium.base.ContextUtils;
+import org.monyhar.base.ContextUtils;
 
 import java.io.File;
 import java.util.HashSet;

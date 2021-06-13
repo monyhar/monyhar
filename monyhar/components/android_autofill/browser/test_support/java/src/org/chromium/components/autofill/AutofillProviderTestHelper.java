@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.autofill;
+package org.monyhar.components.autofill;
 
 import android.annotation.TargetApi;
 import android.os.Build;
 
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.annotations.VerifiesOnO;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.annotations.VerifiesOnO;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * The help class for Autofill Provider test to access the native code.

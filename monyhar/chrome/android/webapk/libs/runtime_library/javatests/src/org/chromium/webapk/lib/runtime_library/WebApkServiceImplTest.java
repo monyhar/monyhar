@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webapk.lib.runtime_library;
+package org.monyhar.webapk.lib.runtime_library;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -20,18 +20,18 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.CallbackHelper;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.CallbackHelper;
 
 /**
- * Instrumentation tests for {@link org.chromium.webapk.WebApkServiceImpl}.
+ * Instrumentation tests for {@link org.monyhar.webapk.WebApkServiceImpl}.
  */
 @RunWith(BaseJUnit4ClassRunner.class)
 public class WebApkServiceImplTest {
     private static final String APK_WITH_WEBAPK_SERVICE_PACKAGE =
-            "org.chromium.webapk.lib.runtime_library.test.apk_with_webapk_service";
+            "org.monyhar.webapk.lib.runtime_library.test.apk_with_webapk_service";
     private static final String WEBAPK_SERVICE_IMPL_WRAPPER_CLASS_NAME =
-            "org.chromium.webapk.lib.runtime_library.test.TestWebApkServiceImplWrapper";
+            "org.monyhar.webapk.lib.runtime_library.test.TestWebApkServiceImplWrapper";
 
     private static final int SMALL_ICON_ID = 1229;
 

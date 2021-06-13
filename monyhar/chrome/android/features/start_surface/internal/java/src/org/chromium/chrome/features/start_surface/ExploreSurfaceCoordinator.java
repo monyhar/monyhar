@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.features.start_surface;
+package org.monyhar.chrome.features.start_surface;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -11,26 +11,26 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.feed.FeedLaunchReliabilityLoggingState;
-import org.chromium.chrome.browser.feed.FeedSurfaceCoordinator;
-import org.chromium.chrome.browser.feed.FeedSurfaceLifecycleManager;
-import org.chromium.chrome.browser.feed.shared.FeedSurfaceDelegate;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.ntp.NewTabPageLaunchOrigin;
-import org.chromium.chrome.browser.ntp.ScrollableContainerDelegate;
-import org.chromium.chrome.browser.ntp.snippets.SectionHeaderView;
-import org.chromium.chrome.browser.privacy.settings.PrivacyPreferencesManagerImpl;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.share.ShareDelegate;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
-import org.chromium.chrome.start_surface.R;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.feed.FeedLaunchReliabilityLoggingState;
+import org.monyhar.chrome.browser.feed.FeedSurfaceCoordinator;
+import org.monyhar.chrome.browser.feed.FeedSurfaceLifecycleManager;
+import org.monyhar.chrome.browser.feed.shared.FeedSurfaceDelegate;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.ntp.NewTabPageLaunchOrigin;
+import org.monyhar.chrome.browser.ntp.ScrollableContainerDelegate;
+import org.monyhar.chrome.browser.ntp.snippets.SectionHeaderView;
+import org.monyhar.chrome.browser.privacy.settings.PrivacyPreferencesManagerImpl;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.share.ShareDelegate;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.chrome.start_surface.R;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
 
 /** The coordinator to control the explore surface. */
 class ExploreSurfaceCoordinator implements FeedSurfaceDelegate {
@@ -163,10 +163,10 @@ class ExploreSurfaceCoordinator implements FeedSurfaceDelegate {
             LayoutInflater inflater = LayoutInflater.from(mActivity);
             if (ChromeFeatureList.isEnabled(ChromeFeatureList.WEB_FEED)) {
                 sectionHeaderView = (SectionHeaderView) inflater.inflate(
-                        org.chromium.chrome.R.layout.new_tab_page_multi_feed_header, null, false);
+                        org.monyhar.chrome.R.layout.new_tab_page_multi_feed_header, null, false);
             } else {
                 sectionHeaderView = (SectionHeaderView) inflater.inflate(
-                        org.chromium.chrome.R.layout.new_tab_page_feed_v2_expandable_header, null,
+                        org.monyhar.chrome.R.layout.new_tab_page_feed_v2_expandable_header, null,
                         false);
             }
         }

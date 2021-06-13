@@ -1,7 +1,7 @@
 monorail {
   component: "Blink>WebXR"
 }
-team_email: "xr-dev@chromium.org"
+team_email: "xr-dev@monyhar.org"
 wpt {
   notify: YES
 }

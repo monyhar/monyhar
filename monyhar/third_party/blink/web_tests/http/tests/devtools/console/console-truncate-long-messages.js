@@ -25,8 +25,8 @@
   await TestRunner.evaluateInPagePromise(`console.log("%c" + "a".repeat(${overMaxLength}), "color: green")`);
   await TestRunner.evaluateInPagePromise(`console.log("foo %s %o bar", "a".repeat(${overMaxLength}), {a: 1})`);
   await TestRunner.evaluateInPagePromise(`console.log({a: 1}, "a".repeat(${overMaxLength}), {b: 1})`);
-  await TestRunner.evaluateInPagePromise(`console.log("a".repeat(${overMaxLength}), "https://chromium.org")`);
-  await TestRunner.evaluateInPagePromise(`console.log("https://chromium.org", "a".repeat(${overMaxLength}))`);
+  await TestRunner.evaluateInPagePromise(`console.log("a".repeat(${overMaxLength}), "https://monyhar.org")`);
+  await TestRunner.evaluateInPagePromise(`console.log("https://monyhar.org", "a".repeat(${overMaxLength}))`);
   await TestRunner.evaluateInPagePromise(`console.log(RegExp("a".repeat(${overMaxLength})))`);
   await TestRunner.evaluateInPagePromise(`console.log(Symbol("a".repeat(${overMaxLength})))`);
   await TestRunner.evaluateInPagePromise(`console.log(["a".repeat(${overMaxLength})])`);

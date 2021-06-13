@@ -3,7 +3,7 @@ Fetch API LayoutTests README
 This directory contains Fetch API layout tests.
 Tests should conform to Service Worker Testing style[1].
 
-1: http://www.chromium.org/blink/serviceworker/testing
+1: http://www.monyhar.org/blink/serviceworker/testing
 
 # generator.py
 

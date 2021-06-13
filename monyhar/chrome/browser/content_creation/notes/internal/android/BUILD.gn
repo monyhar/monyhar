@@ -13,18 +13,18 @@ android_library("java") {
   ]
 
   sources = [
-    "java/src/org/chromium/chrome/browser/content_creation/notes/NoteCreationCoordinatorFactory.java",
-    "java/src/org/chromium/chrome/browser/content_creation/notes/NoteCreationCoordinatorImpl.java",
-    "java/src/org/chromium/chrome/browser/content_creation/notes/NoteCreationDialog.java",
-    "java/src/org/chromium/chrome/browser/content_creation/notes/NoteCreationMediator.java",
-    "java/src/org/chromium/chrome/browser/content_creation/notes/NoteProperties.java",
-    "java/src/org/chromium/chrome/browser/content_creation/notes/NoteServiceFactory.java",
-    "java/src/org/chromium/chrome/browser/content_creation/notes/fonts/GoogleFontService.java",
-    "java/src/org/chromium/chrome/browser/content_creation/notes/fonts/TypefaceRequest.java",
-    "java/src/org/chromium/chrome/browser/content_creation/notes/fonts/TypefaceResponse.java",
-    "java/src/org/chromium/chrome/browser/content_creation/notes/top_bar/TopBarCoordinator.java",
-    "java/src/org/chromium/chrome/browser/content_creation/notes/top_bar/TopBarDelegate.java",
-    "java/src/org/chromium/chrome/browser/content_creation/notes/top_bar/TopBarView.java",
+    "java/src/org/monyhar/chrome/browser/content_creation/notes/NoteCreationCoordinatorFactory.java",
+    "java/src/org/monyhar/chrome/browser/content_creation/notes/NoteCreationCoordinatorImpl.java",
+    "java/src/org/monyhar/chrome/browser/content_creation/notes/NoteCreationDialog.java",
+    "java/src/org/monyhar/chrome/browser/content_creation/notes/NoteCreationMediator.java",
+    "java/src/org/monyhar/chrome/browser/content_creation/notes/NoteProperties.java",
+    "java/src/org/monyhar/chrome/browser/content_creation/notes/NoteServiceFactory.java",
+    "java/src/org/monyhar/chrome/browser/content_creation/notes/fonts/GoogleFontService.java",
+    "java/src/org/monyhar/chrome/browser/content_creation/notes/fonts/TypefaceRequest.java",
+    "java/src/org/monyhar/chrome/browser/content_creation/notes/fonts/TypefaceResponse.java",
+    "java/src/org/monyhar/chrome/browser/content_creation/notes/top_bar/TopBarCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/content_creation/notes/top_bar/TopBarDelegate.java",
+    "java/src/org/monyhar/chrome/browser/content_creation/notes/top_bar/TopBarView.java",
   ]
 
   deps = [
@@ -42,7 +42,7 @@ android_library("java") {
     "//third_party/android_deps:android_support_v7_appcompat_java",
     "//ui/android:ui_java",
   ]
-  resources_package = "org.chromium.chrome.browser.content_creation.internal"
+  resources_package = "org.monyhar.chrome.browser.content_creation.internal"
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
 }
 
@@ -52,7 +52,7 @@ generate_jni("jni_headers") {
     "//chrome/browser/content_creation/notes/internal:*",
   ]
 
-  sources = [ "java/src/org/chromium/chrome/browser/content_creation/notes/NoteServiceFactory.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/content_creation/notes/NoteServiceFactory.java" ]
 }
 
 android_resources("java_resources") {
@@ -68,7 +68,7 @@ android_resources("java_resources") {
 
 android_library("javatests") {
   testonly = true
-  sources = [ "java/src/org/chromium/chrome/browser/content_creation/notes/fonts/TypefaceRequestTest.java" ]
+  sources = [ "java/src/org/monyhar/chrome/browser/content_creation/notes/fonts/TypefaceRequestTest.java" ]
   deps = [
     ":java",
     "//base:base_java",

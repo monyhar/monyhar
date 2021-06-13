@@ -302,7 +302,7 @@ def _MakeBuildStatusUrl(project, buildbucket, buildername, buildnumber):
     project = 'chrome'
   if not buildbucket:
     buildbucket = 'ci'
-  return 'https://ci.chromium.org/ui/p/%s/builders/%s/%s/%s' % (
+  return 'https://ci.monyhar.org/ui/p/%s/builders/%s/%s/%s' % (
       six.moves.urllib.parse.quote(project),
       six.moves.urllib.parse.quote(buildbucket),
       six.moves.urllib.parse.quote(buildername),
@@ -349,13 +349,13 @@ def _RevisionNumberColumns(data, prefix):
     revision = int(data['rev'])
     if revision and 300000 < revision < 1000000:
       # Assume that revision is the commit position number for the master
-      # branch in the chromium/src repo.
+      # branch in the monyhar/src repo.
       revision_supplemental_columns[prefix + 'commit_pos'] = revision
   except ValueError:
     # The dashboard requires ordered integer revision numbers. If the revision
     # is not an integer, assume it's a git hash and send a timestamp.
     revision = _GetTimestamp()
-    revision_supplemental_columns[prefix + 'chromium'] = data['rev']
+    revision_supplemental_columns[prefix + 'monyhar'] = data['rev']
 
   # An explicit data['point_id'] overrides the default behavior.
   if 'point_id' in data:
@@ -368,7 +368,7 @@ def _RevisionNumberColumns(data, prefix):
 
   # If possible, also send the git hash.
   if 'git_revision' in data and data['git_revision'] != 'undefined':
-    revision_supplemental_columns[prefix + 'chromium'] = data['git_revision']
+    revision_supplemental_columns[prefix + 'monyhar'] = data['git_revision']
 
   return revision, revision_supplemental_columns
 

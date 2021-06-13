@@ -29,7 +29,7 @@ Example:
   },
   "google/chromeos/user" : {
     "mandatory" : {
-      "HomepageLocation" : "http://www.chromium.org",
+      "HomepageLocation" : "http://www.monyhar.org",
       "IncognitoEnabled" : false
     },
      "recommended" : {
@@ -38,7 +38,7 @@ Example:
   },
   "google/chromeos/publicaccount/user@example.com" : {
     "mandatory" : {
-      "HomepageLocation" : "http://www.chromium.org"
+      "HomepageLocation" : "http://www.monyhar.org"
     },
      "recommended" : {
     }
@@ -111,7 +111,7 @@ except ImportError:
 # pyopenssl is only reliably available on Chrome OS builds.
 # This is currently OK because policy_testserver.py's support for certificate
 # provisioning is only used in Tast test for now.
-# TODO(https://bugs.chromium.org/p/chromium/issues/detail?id=1101729): Switch
+# TODO(https://bugs.monyhar.org/p/monyhar/issues/detail?id=1101729): Switch
 # to issuing certificates in the test..
 try:
     from OpenSSL import crypto

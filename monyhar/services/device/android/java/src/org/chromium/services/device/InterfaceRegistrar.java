@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.services.device;
+package org.monyhar.services.device;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.device.battery.BatteryMonitorFactory;
-import org.chromium.device.mojom.BatteryMonitor;
-import org.chromium.device.mojom.NfcProvider;
-import org.chromium.device.mojom.VibrationManager;
-import org.chromium.device.nfc.NfcDelegate;
-import org.chromium.device.nfc.NfcProviderImpl;
-import org.chromium.device.vibration.VibrationManagerImpl;
-import org.chromium.mojo.system.impl.CoreImpl;
-import org.chromium.services.service_manager.InterfaceRegistry;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.device.battery.BatteryMonitorFactory;
+import org.monyhar.device.mojom.BatteryMonitor;
+import org.monyhar.device.mojom.NfcProvider;
+import org.monyhar.device.mojom.VibrationManager;
+import org.monyhar.device.nfc.NfcDelegate;
+import org.monyhar.device.nfc.NfcProviderImpl;
+import org.monyhar.device.vibration.VibrationManagerImpl;
+import org.monyhar.mojo.system.impl.CoreImpl;
+import org.monyhar.services.service_manager.InterfaceRegistry;
 
 @JNINamespace("device")
 class InterfaceRegistrar {

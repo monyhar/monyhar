@@ -2,7 +2,7 @@ import {FillLightMode, ImageCapture, ImageCaptureReceiver, MeteringMode, RedEyeR
 
 self.ImageCaptureTest = (() => {
   // Class that mocks ImageCapture interface defined in
-  // https://cs.chromium.org/chromium/src/media/capture/mojom/image_capture.mojom
+  // https://cs.monyhar.org/monyhar/src/media/capture/mojom/image_capture.mojom
   class MockImageCapture {
     constructor() {
       this.interceptor_ =

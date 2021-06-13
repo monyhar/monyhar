@@ -109,7 +109,7 @@
 
       Jos otat tämän käytännön käyttöön, <ph name="PRODUCT_NAME" /> käyttää määritettyä hakemistoa, vaikka käyttäjä antaisi --disk-cache-dir-komennon. Älä määritä käytännön arvoksi juurihakemistoa tai muihin tarkoituksiin käytettävää hakemistoa, sillä <ph name="PRODUCT_NAME" /> hallinnoi sen sisältöä ja seurauksena voi olla tietojen katoamista tai muita odottamattomia ongelmia.
 
-      Katso mahdollisten muuttujien luettelo osoitteesta https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Katso mahdollisten muuttujien luettelo osoitteesta https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Jos tätä käytäntöä ei määritetä, välimuistin oletushakemistoa käytetään ja käyttäjä voi ohittaa tämän antamalla komentorivillä komennon --disk-cache-dir.</translation>
 <translation id="113521240853905588">Määrittää kielet, joita <ph name="PRODUCT_OS_NAME" /> voi käyttää ensisijaisina kielinä.
@@ -495,7 +495,7 @@
 <translation id="1852294065645015766">Salli mediasisällön automaattinen toisto</translation>
 <translation id="1857152770025485173">Tämä käytäntö estää käyttäjää lataamasta verkkosivuja, joiden URL-osoitteet on lisätty mustalle listalle. Musta lista sisältää URL-osoitemalleja, joita käytetään estettävien URL-osoitteiden määrittämiseen.
 
-      URL-osoitemallit tulee muotoilla täällä olevien ohjeiden mukaisesti: https://www.chromium.org/administrators/url-blacklist-filter-format.
+      URL-osoitemallit tulee muotoilla täällä olevien ohjeiden mukaisesti: https://www.monyhar.org/administrators/url-blacklist-filter-format.
 
       Voit määritellä poikkeuksia käyttämällä sallittujen URL-osoitteiden luettelon käytäntöä. Voit lisätä näihin käytäntöihin enintään 1 000 merkintää, ja tämän rajan ylittävät merkinnät ohitetaan.
 
@@ -532,7 +532,7 @@
 
       Jos käytäntöä ei ole määritetty, käyttötilastojen ja diagnostiikkadatan raportointi poistetaan käytöstä hallinnoimattomilla laitteilla, ja se otetaan käyttöön hallinnoiduilla laitteilla.</translation>
 <translation id="1907431809333268751">Määritä yrityksen kirjautumis-URL-osoitteiden luettelo (vain HTTP- ja HTTPS-mallit). Näillä sivuilla tallennetaan salasanojen tunnisteita, joiden avulla tarkistetaan, onko salasanoja käytetty aiemmin.
-      Jotta <ph name="PRODUCT_NAME" /> voi tallentaa salasanojen tunnisteet oikein, varmista, että kirjautumissivusi seuraavat täällä olevia ohjeita: https://www.chromium.org/developers/design-documents/create-amazing-password-forms.
+      Jotta <ph name="PRODUCT_NAME" /> voi tallentaa salasanojen tunnisteet oikein, varmista, että kirjautumissivusi seuraavat täällä olevia ohjeita: https://www.monyhar.org/developers/design-documents/create-amazing-password-forms.
 
       Jos tämä asetus on käytössä, salasanojen suojauspalvelu tallentaa näissä URL-osoitteissa salasanojen tunnisteita, joiden avulla tarkistetaan, onko salasanoja käytetty aiemmin.
       Jos tämä asetus on poistettu käytöstä tai sitä ei ole määritetty, salasanojen suojauspalvelu tallentaa salasanojen tunnisteita vain osoitteessa https://accounts.google.com.
@@ -830,7 +830,7 @@
 
       Tähän käytäntöön listattujen URL-osoitteiden isäntänimien ei tarvitse luovuttaa tietoja Certificate Transparency ‑menettelyllä. Tämän seurauksena myös sellaisia varmenteita, jotka estettäisiin puutteellisten tietojen vuoksi, voidaan jatkossa käyttää. Samalla näiden isäntänimien vilpillisesti myönnettyjen varmenteiden tunnistaminen vaikeutuu.
 
-      Luettelon URL-osoitteiden muotoa kuvaillaan osoitteessa https://www.chromium.org/administrators/url-blacklist-filter-format. Koska varmenteet koskevat isäntänimeä alkuosasta, portista tai polusta huolimatta, vain URL-osoitteen isäntänimi-osio huomioidaan. Isäntänimessä ei voi käyttää jokerimerkkiä.
+      Luettelon URL-osoitteiden muotoa kuvaillaan osoitteessa https://www.monyhar.org/administrators/url-blacklist-filter-format. Koska varmenteet koskevat isäntänimeä alkuosasta, portista tai polusta huolimatta, vain URL-osoitteen isäntänimi-osio huomioidaan. Isäntänimessä ei voi käyttää jokerimerkkiä.
 
       Jos tätä käytäntöä ei aseteta, varmennetta ei pidetä koskaan luotettavana, jos siltä vaaditaan Certificate Transparency ‑tietojen antamista, mutta tietoja ei ole annettu Certificate Transparency ‑käytännön mukaisesti.</translation>
 <translation id="2488010520405124654">Ota käyttöön verkon määrityskehote offline-tilassa.
@@ -1510,7 +1510,7 @@ Jos asetus ei ole käytössä, käyttäjät eivät voi ottaa välityspalvelinta 
 
       Jos määrität tämän käytännön, <ph name="PRODUCT_NAME" /> käyttää annettua hakemistoa huolimatta siitä, onko käyttäjä määrittänyt hakemiston tai asettanut sovelluksen kysymään aina latausten tallennussijaintia.
 
-      Osoitteessa http://www.chromium.org/administrators/policy-list-3/user-data-directory-variables näet luettelon muuttujista, joita voit käyttää.
+      Osoitteessa http://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables näet luettelon muuttujista, joita voit käyttää.
 
       Jos tätä käytäntöä ei ole määritetty, käytetään oletuslataushakemistoa, ja käyttäjä voi halutessaan vaihtaa hakemistoa.</translation>
 <translation id="3805659594028420438">Ota käyttöön TLS domain-bound -varmennelaajennus (vanhentunut)</translation>
@@ -1599,7 +1599,7 @@ Jos asetus ei ole käytössä, käyttäjät eivät voi ottaa välityspalvelinta 
 
       Jos et ota tätä käytäntöä käyttöön, <ph name="PRODUCT_NAME" /> käyttää tavallista oletushakemistoaan (käyttöympäristökohtainen).
 
-      Osoitteessa https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables on lista käytettävissä olevista muuttujista.</translation>
+      Osoitteessa https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables on lista käytettävissä olevista muuttujista.</translation>
 <translation id="3911737181201537215">Tällä käytännöllä ei ole vaikutusta Androidin tekemään lokikirjaukseen.</translation>
 <translation id="391531815696899618">Jos arvo on tosi, Google Driven synkronointi tuotteen <ph name="PRODUCT_OS_NAME" /> Tiedostot-sovelluksen kanssa poistetaan käytöstä. Tällöin mitään tietoja ei lähetetä Google Driveen.
 
@@ -1801,7 +1801,7 @@ Jos asetus ei ole käytössä, käyttäjät eivät voi ottaa välityspalvelinta 
 
       Jos tämä käytäntö on määritetty, <ph name="PRODUCT_NAME" /> käyttää valittua hakemistoa profiilien roaming-kopioiden tallentamiseen, kun <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" />-käytäntö on käytössä. Jos <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" />-käytäntö on poistettu käytöstä tai sitä ei ole määritetty, tälle käytännölle määritettyä arvoa ei käytetä.
 
-      Löydät luettelon käytettävissä olevista muuttujista täältä: https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Löydät luettelon käytettävissä olevista muuttujista täältä: https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Jos tätä käytäntöä ei ole määritetty, roaming-profiilien oletuspolku otetaan käyttöön.</translation>
 <translation id="4239720644496144453">Välmuistia ei käytetä Android-sovelluksille. Jos useat käyttäjät asentavat saman Android-sovelluksen, se ladataan uudelleen jokaiselle käyttäjälle.</translation>
@@ -1995,7 +1995,7 @@ Jos asetus ei ole käytössä, käyttäjät eivät voi ottaa välityspalvelinta 
 
            Jos käytäntöä ei ole määritetty, kaikki sivustot piirretään näytölle ChromeFrameRendererSettings-käytännön näytölle piirtämisen oletusmäärityksien mukaan.
 
-          Esimerkkimalleja on osoitteessa http://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Esimerkkimalleja on osoitteessa http://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="467449052039111439">Avaa seuraavat sivut:</translation>
 <translation id="4674871290487541952">Salli suojaamattomat algoritmit laajennuspäivitysten ja ‑asennusten aitoustarkistuksissa</translation>
 <translation id="4680936297850947973">Poistettu käytöstä M68:ssa. Ota sen sijaan käyttöön DefaultPopupsSetting.
@@ -2621,7 +2621,7 @@ Jos käytäntöä ei määritetä, käyttäjät voivat valita, tuleeko hylly pii
 
       Jos määrität tämän käytännön, <ph name="PRODUCT_FRAME_NAME" /> käyttää annettua hakemistoa.
 
-      Osoitteessa http://www.chromium.org/administrators/policy-list-3/user-data-directory-variables näet luettelon muuttujista, joita voit käyttää.
+      Osoitteessa http://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables näet luettelon muuttujista, joita voit käyttää.
 
       Jos tätä käytäntöä ei ole määritetty, käytetään oletusprofiilin hakemistoa.</translation>
 <translation id="5826047473100157858">Määrittää, voiko käyttäjä avata sivuja incognito-tilassa tuotteessa <ph name="PRODUCT_NAME" />. Jos "Käytössä" on valittu tai käytäntöä ei ole määritetty, sivuja voi avata incognito-tilassa. Jos "Ei käytössä" on valittu, sivuja ei voi avata incognito-tilassa. Jos "Pakotettu" on valittu, sivuja voidaan avata VAIN incognito-tilassa.</translation>
@@ -3182,7 +3182,7 @@ Jos tätä käytäntöä ei ole määritetty, käytetään oletusarvoa (32).</tr
 
       Jos otat tämän käytännön käyttöön, <ph name="PRODUCT_NAME" /> käyttää määritettyä hakemistoa, vaikka käyttäjä antaisi --user-data-dir-komennon. Älä määritä käytännön arvoksi juurihakemistoa tai muihin tarkoituksiin käytettävää hakemistoa, sillä <ph name="PRODUCT_NAME" /> hallinnoi sen sisältöä ja seurauksena voi olla tietojen katoamista tai muita odottamattomia ongelmia.
 
-      Katso mahdollisten muuttujien luettelo osoitteesta https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Katso mahdollisten muuttujien luettelo osoitteesta https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Jos tätä käytäntöä ei määritetä, käytetään profiilin oletuspolkua ja käyttäjä voi ohittaa tämän antamalla komentorivillä komennon --user-data-dir.</translation>
 <translation id="7027785306666625591">Määritä tuotteen <ph name="PRODUCT_OS_NAME" /> virranhallinta.
@@ -3956,7 +3956,7 @@ Suosittelemme määrittämään käytännöt Windowsissa ryhmäkäytäntöobjekt
  
           Jos käytäntöä ei ole määritetty, kaikki sivustot piirretään näytölle ChromeFrameRendererSettings-käytännön näytölle piirtämisen oletusmäärityksien mukaan.
  
-          Esimerkkimalleja on osoitteessa http://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Esimerkkimalleja on osoitteessa http://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="8489964335640955763">PluginVm</translation>
 <translation id="8493645415242333585">Poista selainhistorian tallentaminen käytöstä</translation>
 <translation id="8499172469244085141">Oletusasetukset (käyttäjät voivat ohittaa)</translation>

@@ -6,8 +6,8 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "src/org/chromium/components/webapk/lib/common/WebApkConstants.java",
-    "src/org/chromium/components/webapk/lib/common/WebApkMetaDataKeys.java",
+    "src/org/monyhar/components/webapk/lib/common/WebApkConstants.java",
+    "src/org/monyhar/components/webapk/lib/common/WebApkMetaDataKeys.java",
   ]
 }
 

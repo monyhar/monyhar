@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Cookie histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -26,8 +26,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed Jan 2021: no longer needed since crbug.com/907610 is now fixed.
   </obsolete>
-  <owner>chlily@chromium.org</owner>
-  <owner>morlovich@chromium.org</owner>
+  <owner>chlily@monyhar.org</owner>
+  <owner>morlovich@monyhar.org</owner>
   <summary>
     Records the abbreviated 2-digit year number used in a cookie's expiration
     date. Emitted when parsing a cookie with an Expires attribute that specifies
@@ -37,7 +37,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.BackingStoreUpdateResults" enum="BackingStoreResults"
     expires_after="M82">
-  <owner>morlovich@chromium.org</owner>
+  <owner>morlovich@monyhar.org</owner>
   <summary>
     Whether or not updates to the backing store succeeded or failed, recorded
     every update.
@@ -46,7 +46,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.CommitProblem" enum="CookieCommitProblem"
     expires_after="2021-10-17">
-  <owner>morlovich@chromium.org</owner>
+  <owner>morlovich@monyhar.org</owner>
   <summary>
     Recorded when a problem occurs trying to commit changes to the cookie store
     back to disk, in the SQLite store.
@@ -55,8 +55,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.ControlCharacterTruncation" enum="Boolean"
     expires_after="2022-05-31">
-  <owner>bingler@chromium.org</owner>
-  <owner>chlily@chromium.org</owner>
+  <owner>bingler@monyhar.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <summary>
     Whether or not a cookie's name or value was truncated due to a terminating
     control chracter (0x00 NUL, 0x0A LF, or 0x0D CR). E.x.
@@ -67,7 +67,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.CookiePrefix" enum="CookiePrefix"
     expires_after="2021-10-24">
-  <owner>estark@chromium.org</owner>
+  <owner>estark@monyhar.org</owner>
   <summary>
     Number of times a cookie was set with a name prefixed by
     &quot;__Secure-&quot; or &quot;__Host-&quot; (prefixes reserved by
@@ -77,7 +77,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.CookiePrefixBlocked" enum="CookiePrefix"
     expires_after="2020-03-08">
-  <owner>estark@chromium.org</owner>
+  <owner>estark@monyhar.org</owner>
   <summary>
     Number of times a cookie was set with a name prefixed by
     &quot;__Secure-&quot; or &quot;__Host-&quot; that violate cookie prefix
@@ -91,8 +91,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.CookieSchemeRequestScheme" enum="CookieRequestScheme"
     expires_after="2021-10-25">
-  <owner>bingler@chromium.org</owner>
-  <owner>chlily@chromium.org</owner>
+  <owner>bingler@monyhar.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <summary>
     The scheme a cookie was set by and the scheme of the request that the cookie
     was sent to. This is recorded once per cookie each time a URL request has
@@ -102,7 +102,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.CookieSourceScheme" enum="CookieSourceScheme"
     expires_after="2021-10-24">
-  <owner>estark@chromium.org</owner>
+  <owner>estark@monyhar.org</owner>
   <summary>
     For each cookie added to the store, record whether its source URL has a
     cryptographic scheme, broken down by Secure and not Secure.
@@ -111,8 +111,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.CookieSourceSchemeName" enum="CookieSourceSchemeName"
     expires_after="2021-12-31">
-  <owner>bingler@chromium.org</owner>
-  <owner>chlily@chromium.org</owner>
+  <owner>bingler@monyhar.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <summary>
     For each cookie added to the store, record the source URL's scheme. Schemes
     we're unfamiliar with will be put into the &quot;Other Scheme&quot; bucket.
@@ -121,7 +121,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.CorruptMetaTable" units="units"
     expires_after="2021-06-25">
-  <owner>chlily@chromium.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <summary>
     Records the detection of a corrupted meta table. See http://crbug.com/111376
     .
@@ -130,8 +130,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.CorruptMetaTableRecoveryFailed" units="units"
     expires_after="2021-06-25">
-  <owner>chlily@chromium.org</owner>
-  <owner>morlovich@chromium.org</owner>
+  <owner>chlily@monyhar.org</owner>
+  <owner>morlovich@monyhar.org</owner>
   <summary>
     Records a failure to recover a corrupted meta table. See
     http://crbug.com/111376 .
@@ -142,8 +142,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed Feb 2021 in favor of Cookie.Count2, which has a wider range.
   </obsolete>
-  <owner>chlily@chromium.org</owner>
-  <owner>morlovich@chromium.org</owner>
+  <owner>chlily@monyhar.org</owner>
+  <owner>morlovich@monyhar.org</owner>
   <summary>
     Number of cookies in the store (recorded every 10 minutes of active browsing
     time)
@@ -151,8 +151,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Cookie.Count2" units="units" expires_after="2021-12-05">
-  <owner>chlily@chromium.org</owner>
-  <owner>morlovich@chromium.org</owner>
+  <owner>chlily@monyhar.org</owner>
+  <owner>morlovich@monyhar.org</owner>
   <summary>
     Number of cookies in the store (recorded every 10 minutes of active browsing
     time), with a wider range than Cookie.Count.
@@ -160,8 +160,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Cookie.DomainSet" enum="Boolean" expires_after="2021-11-18">
-  <owner>bingler@chromium.org</owner>
-  <owner>chlily@chromium.org</owner>
+  <owner>bingler@monyhar.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <summary>
     Was a cookie set with a Domain attribute.
 
@@ -175,28 +175,28 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     Removed Oct 2020 in favor of two new histograms to divide into Secure and
     non-Secure cookies.
   </obsolete>
-  <owner>battre@chromium.org</owner>
+  <owner>battre@monyhar.org</owner>
   <summary>Number of minutes until cookie expires when set.</summary>
 </histogram>
 
 <histogram name="Cookie.ExpirationDurationMinutesNonSecure" units="minutes"
     expires_after="2021-10-31">
-  <owner>kaustubhag@chromium.org</owner>
-  <owner>chlily@chromium.org</owner>
+  <owner>kaustubhag@monyhar.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <summary>Number of minutes until non-Secure cookie expires when set.</summary>
 </histogram>
 
 <histogram name="Cookie.ExpirationDurationMinutesSecure" units="minutes"
     expires_after="2021-10-31">
-  <owner>kaustubhag@chromium.org</owner>
-  <owner>chlily@chromium.org</owner>
+  <owner>kaustubhag@monyhar.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <summary>Number of minutes until Secure cookie expires when set.</summary>
 </histogram>
 
 <histogram name="Cookie.FirstPartySetsContextType.{AccessMedium}.{AccessType}"
     enum="FirstPartySetsContextType" expires_after="2022-05-01">
-  <owner>cfredric@chromium.org</owner>
-  <owner>kaustubhag@chromium.org</owner>
+  <owner>cfredric@monyhar.org</owner>
+  <owner>kaustubhag@monyhar.org</owner>
   <summary>
     The &quot;type&quot; of each context when cookies are {AccessType} via
     {AccessMedium}, w.r.t. First-Party Sets.
@@ -216,7 +216,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Cookie.HeaderLength" units="bytes" expires_after="2020-09-13">
-  <owner>mkwst@chromium.org</owner>
+  <owner>mkwst@monyhar.org</owner>
   <summary>
     The size of each outgoing request's 'Cookie' header field's value, in bytes.
   </summary>
@@ -224,8 +224,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.IncludedRequestEffectiveSameSite"
     enum="CookieEffectiveSameSite" expires_after="2021-10-25">
-  <owner>bingler@chromium.org</owner>
-  <owner>chlily@chromium.org</owner>
+  <owner>bingler@monyhar.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <summary>
     The value of the effective samesite for cookies that will be included in a
     request. Logged once per successful inclusion.
@@ -234,8 +234,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.IncludedResponseEffectiveSameSite"
     enum="CookieEffectiveSameSite" expires_after="2021-10-25">
-  <owner>bingler@chromium.org</owner>
-  <owner>chlily@chromium.org</owner>
+  <owner>bingler@monyhar.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <summary>
     The value of the effective samesite for cookies that will be accepted from a
     response. Logged once per successful inclusion.
@@ -244,8 +244,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.IsSamePartyValid" enum="BooleanValid"
     expires_after="2021-11-01">
-  <owner>chlily@chromium.org</owner>
-  <owner>kaustubhag@chromium.org</owner>
+  <owner>chlily@monyhar.org</owner>
+  <owner>kaustubhag@monyhar.org</owner>
   <summary>
     If a cookie had the SameParty attribute, this histogram logs whether it was
     used correctly (i.e., also had Secure and did not have SameSite=Strict).
@@ -256,8 +256,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.KillDatabaseResult" enum="BooleanSuccess"
     expires_after="2020-11-08">
-  <owner>morlovich@chromium.org</owner>
-  <owner>chlily@chromium.org</owner>
+  <owner>morlovich@monyhar.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <summary>
     Whether killing the database because it was corrupted beyond repair
     succeeded.
@@ -266,8 +266,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.Length.{Attribute}" units="bytes"
     expires_after="2021-11-13">
-  <owner>chlily@chromium.org</owner>
-  <owner>miketaylr@chromium.org</owner>
+  <owner>chlily@monyhar.org</owner>
+  <owner>miketaylr@monyhar.org</owner>
   <summary>
     The length in bytes of a cookie's {Attribute}. This is recorded upon parsing
     a cookie from a string, regardless of whether the cookie is ultimately
@@ -283,7 +283,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.LoadProblem" enum="CookieLoadProblem"
     expires_after="2021-10-17">
-  <owner>morlovich@chromium.org</owner>
+  <owner>morlovich@monyhar.org</owner>
   <summary>
     Recorded when a problem is recorded when loading the persistent cookie
     store.
@@ -292,8 +292,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.MigratedEncryptionKeySuccess" enum="BooleanSuccess"
     expires_after="M92">
-  <owner>wfh@chromium.org</owner>
-  <owner>pwnall@chromium.org</owner>
+  <owner>wfh@monyhar.org</owner>
+  <owner>pwnall@monyhar.org</owner>
   <summary>
     Whether the migration of encryption key for the sqlite persistent cookie
     store on Windows was successful or not. This happened when moving from
@@ -305,8 +305,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.NumDomainPurgedKeys" units="keys"
     expires_after="2021-12-05">
-  <owner>chlily@chromium.org</owner>
-  <owner>kaustubhag@chromium.org</owner>
+  <owner>chlily@monyhar.org</owner>
+  <owner>kaustubhag@monyhar.org</owner>
   <summary>
     Records the number of distinct keys (eTLD+1's) that have experienced
     eviction of a non-expired cookie due to reaching the max number of cookies
@@ -318,8 +318,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Cookie.NumKeys" units="keys" expires_after="2021-12-05">
-  <owner>chlily@chromium.org</owner>
-  <owner>kaustubhag@chromium.org</owner>
+  <owner>chlily@monyhar.org</owner>
+  <owner>kaustubhag@monyhar.org</owner>
   <summary>
     Records the number of distinct keys (eTLD+1's) that have any stored cookies
     (which may or may not be expired). Recorded every 10 minutes of active
@@ -329,8 +329,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.PerFirstPartySetCount" units="cookies"
     expires_after="2022-01-05">
-  <owner>cfredric@chromium.org</owner>
-  <owner>chlily@chromium.org</owner>
+  <owner>cfredric@monyhar.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <summary>
     This histogram records, for each (nontrivial) First-Party Set, the number of
     cookies in the cookie store that belong to a member or owner of that set.
@@ -340,8 +340,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.Port.OmniboxURLNavigation.Localhost"
     enum="InterestingCookiePorts" expires_after="2021-11-04">
-  <owner>bingler@chromium.org</owner>
-  <owner>chlily@chromium.org</owner>
+  <owner>bingler@monyhar.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <summary>
     The port of the destination for a URL omnibox navigation when the
     destination is localhost. Excludes navigations that are effectively reloads.
@@ -361,8 +361,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.Port.OmniboxURLNavigation.RemoteHost"
     enum="InterestingCookiePorts" expires_after="2021-11-04">
-  <owner>bingler@chromium.org</owner>
-  <owner>chlily@chromium.org</owner>
+  <owner>bingler@monyhar.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <summary>
     The port of the destination for a URL omnibox navigation when the
     destination is anything but localhost. Excludes navigations that are
@@ -382,8 +382,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.Port.Read.{HostType}" enum="InterestingCookiePorts"
     expires_after="2021-11-18">
-  <owner>bingler@chromium.org</owner>
-  <owner>chlily@chromium.org</owner>
+  <owner>bingler@monyhar.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <summary>
     This is the port a cookie is being read by: For network access via HTTP(S)
     this value is the port of the origin the request is being sent to. For
@@ -404,8 +404,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.Port.ReadDiffersFromSet.{HostType}"
     enum="CookieSentToSamePort" expires_after="2021-11-18">
-  <owner>bingler@chromium.org</owner>
-  <owner>chlily@chromium.org</owner>
+  <owner>bingler@monyhar.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <summary>
     This records if a cookie is being read by the same port value that set it
     (the source port). See Cookie.Port.Set.* and Cookie.Port.Read.* for more
@@ -435,8 +435,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.Port.Set.{HostType}" enum="InterestingCookiePorts"
     expires_after="2021-11-18">
-  <owner>bingler@chromium.org</owner>
-  <owner>chlily@chromium.org</owner>
+  <owner>bingler@monyhar.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <summary>
     This is the port a cookie is being set by: For network access via HTTP(S)
     this value is the port of the origin the response is being recieved from.
@@ -458,7 +458,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.PriorityBlockingTime" units="ms"
     expires_after="2020-05-10">
-  <owner>pwnall@chromium.org</owner>
+  <owner>pwnall@monyhar.org</owner>
   <summary>
     This histogram records the total duration of time during which at least one
     web request was blocked waiting for the cookie store to load. If no requests
@@ -469,7 +469,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Cookie.PriorityLoadCount" units="units" expires_after="M77">
-  <owner>pwnall@chromium.org</owner>
+  <owner>pwnall@monyhar.org</owner>
   <summary>
     The number of distinct Effective Top-Level Domains Plus One (ETLD+1, i.e.,
     google.com, bbc.co.uk) for which a priority cookie load occurred.
@@ -478,8 +478,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.RequestSameSiteContext" enum="SameSiteCookieContext"
     expires_after="2021-10-25">
-  <owner>chlily@chromium.org</owner>
-  <owner>morlovich@chromium.org</owner>
+  <owner>chlily@monyhar.org</owner>
+  <owner>morlovich@monyhar.org</owner>
   <summary>
     The same-site context of a request, i.e. the relationship between the
     request and the navigational environment. Logged on every request to access
@@ -489,8 +489,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.SameParty.ReadExclusionDecidedBySameParty"
     enum="Boolean" expires_after="2022-01-06">
-  <owner>cfredric@chromium.org</owner>
-  <owner>chlily@chromium.org</owner>
+  <owner>cfredric@monyhar.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <summary>
     This histogram records whether enforcement of the SameParty attribute was
     the only reason for a cookie's exclusion (from a read).
@@ -499,8 +499,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.SameParty.SetExclusionDecidedBySameParty"
     enum="Boolean" expires_after="2022-01-06">
-  <owner>cfredric@chromium.org</owner>
-  <owner>chlily@chromium.org</owner>
+  <owner>cfredric@monyhar.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <summary>
     This histogram records whether enforcement of the SameParty attribute was
     the only reason for a cookie's exclusion (from a write).
@@ -509,8 +509,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.SamePartyCookieSameSiteAttributeValue"
     enum="CookieSameSiteString" expires_after="2021-11-01">
-  <owner>chlily@chromium.org</owner>
-  <owner>kaustubhag@chromium.org</owner>
+  <owner>chlily@monyhar.org</owner>
+  <owner>kaustubhag@monyhar.org</owner>
   <summary>
     The value of a SameParty cookie's SameSite attribute, if any. This is logged
     once per attempt to create a SameParty cookie, regardless of success, upon
@@ -520,8 +520,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.SamePartyReadIncluded.InclusionUnderSameSite"
     enum="BooleanIncluded" expires_after="2022-01-05">
-  <owner>cfredric@chromium.org</owner>
-  <owner>chlily@chromium.org</owner>
+  <owner>cfredric@monyhar.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <summary>
     This histogram records, for each cookie with the SameParty attribute that is
     read, whether the access would have been allowed by the cookie's SameSite
@@ -531,8 +531,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.SamePartyReadIncluded.IsHTTP" enum="BooleanHTTPVsJS"
     expires_after="2022-01-05">
-  <owner>cfredric@chromium.org</owner>
-  <owner>chlily@chromium.org</owner>
+  <owner>cfredric@monyhar.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <summary>
     This histogram records, for each cookie with the SameParty attribute that is
     read, whether the access was over HTTP/HTTPS (as opposed to JS).
@@ -541,8 +541,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.SamePartyReadIncluded.PartyContextSize"
     units="registrable domains" expires_after="2022-01-05">
-  <owner>cfredric@chromium.org</owner>
-  <owner>chlily@chromium.org</owner>
+  <owner>cfredric@monyhar.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <summary>
     This histogram records, for each cookie with the SameParty attribute that is
     read, how large the party-context was. I.e., how many distinct registrable
@@ -553,8 +553,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.SamePartySetIncluded.InclusionUnderSameSite"
     enum="BooleanIncluded" expires_after="2022-01-05">
-  <owner>cfredric@chromium.org</owner>
-  <owner>chlily@chromium.org</owner>
+  <owner>cfredric@monyhar.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <summary>
     This histogram records, for each cookie with the SameParty attribute that is
     set, whether the access would have been allowed by the cookie's SameSite
@@ -564,8 +564,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.SamePartySetIncluded.IsHTTP" enum="BooleanHTTPVsJS"
     expires_after="2022-01-05">
-  <owner>cfredric@chromium.org</owner>
-  <owner>chlily@chromium.org</owner>
+  <owner>cfredric@monyhar.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <summary>
     This histogram records, for each cookie that is set with the SameParty
     attribute, whether the access was over HTTP/HTTPS (as opposed to JS).
@@ -574,8 +574,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.SamePartySetIncluded.PartyContextSize"
     units="registrable domains" expires_after="2022-01-05">
-  <owner>cfredric@chromium.org</owner>
-  <owner>chlily@chromium.org</owner>
+  <owner>cfredric@monyhar.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <summary>
     This histogram records, for each cookie that is set with the SameParty
     attribute, how large the party-context was. I.e., how many distinct
@@ -586,8 +586,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.SameSiteAttributeValue" enum="CookieSameSiteString"
     expires_after="2021-11-01">
-  <owner>chlily@chromium.org</owner>
-  <owner>bingler@chromium.org</owner>
+  <owner>chlily@monyhar.org</owner>
+  <owner>bingler@monyhar.org</owner>
   <summary>
     The value of the cookie's SameSite attribute, if any. This is logged once
     per created cookie, upon parsing of the SameSite attribute from a string.
@@ -596,8 +596,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.SameSiteContextAffectedByBugfix1166211"
     enum="BooleanAffected" expires_after="2021-10-17">
-  <owner>chlily@chromium.org</owner>
-  <owner>miketaylr@chromium.org</owner>
+  <owner>chlily@monyhar.org</owner>
+  <owner>miketaylr@monyhar.org</owner>
   <summary>
     Whether the SameSite context was affected by the fix for crbug.com/1166211,
     i.e. whether it would have been laxly same-site before the fix but is
@@ -613,8 +613,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Cookie.SameSiteContextDowngradeRequest"
     enum="SameSiteCookieContextBreakingDowngradeWithSecureness"
     expires_after="2021-11-07">
-  <owner>bingler@chromium.org</owner>
-  <owner>kaustubhag@chromium.org</owner>
+  <owner>bingler@monyhar.org</owner>
+  <owner>kaustubhag@monyhar.org</owner>
   <summary>
     The type of breaking same-site context downgrade a cookie is experiencing
     along with the secureness of the origin that we're attempting to send the
@@ -630,8 +630,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Cookie.SameSiteContextDowngradeResponse"
     enum="SameSiteCookieContextBreakingDowngradeWithSecureness"
     expires_after="2021-11-07">
-  <owner>bingler@chromium.org</owner>
-  <owner>kaustubhag@chromium.org</owner>
+  <owner>bingler@monyhar.org</owner>
+  <owner>kaustubhag@monyhar.org</owner>
   <summary>
     The type of breaking same-site context downgrade a cookie is experiencing
     along with the secureness of the origin that is attempting to set the
@@ -646,8 +646,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.SameSiteCookieInclusionChangedByBugfix1166211"
     enum="BooleanChanged" expires_after="2021-10-17">
-  <owner>chlily@chromium.org</owner>
-  <owner>miketaylr@chromium.org</owner>
+  <owner>chlily@monyhar.org</owner>
+  <owner>miketaylr@monyhar.org</owner>
   <summary>
     Whether a cookie was excluded solely due to the fix for crbug.com/1166211,
     i.e. whether it would have been included before the fix but is excluded
@@ -662,8 +662,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.SameSiteNoneIsSecure" enum="Boolean"
     expires_after="2021-10-25">
-  <owner>chlily@chromium.org</owner>
-  <owner>morlovich@chromium.org</owner>
+  <owner>chlily@monyhar.org</owner>
+  <owner>morlovich@monyhar.org</owner>
   <summary>
     If a cookie was SameSite=None, this records whether or not it was Secure.
     Logged once per attempt to set a SameSite=None cookie.
@@ -675,8 +675,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed Jan 2021 for cleanup: crbug.com/1165039
   </obsolete>
-  <owner>chlily@chromium.org</owner>
-  <owner>morlovich@chromium.org</owner>
+  <owner>chlily@monyhar.org</owner>
+  <owner>morlovich@monyhar.org</owner>
   <summary>
     If a cookie had an unspecified SameSite attribute, this records what mode it
     was treated as, i.e. what the effective SameSite mode is. Logged once per
@@ -687,7 +687,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.Startup.NumberOfCookiesDeleted" units="units"
     expires_after="2021-03-07">
-  <owner>erikchen@chromium.org</owner>
+  <owner>erikchen@monyhar.org</owner>
   <summary>
     The number of session cookies deleted on startup. This metric is emitted
     even if no cookies are deleted. This metric is not emitted if session
@@ -697,7 +697,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.Startup.TimeSpentDeletingCookies" units="ms"
     expires_after="2020-03-08">
-  <owner>erikchen@chromium.org</owner>
+  <owner>erikchen@monyhar.org</owner>
   <summary>
     The amount of time required to delete session cookies on startup. This
     metric is emitted even if no cookies are deleted. This metric is not emitted
@@ -707,7 +707,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.TimeBlockedOnLoad" units="ms"
     expires_after="2021-10-10">
-  <owner>nharper@chromium.org</owner>
+  <owner>nharper@monyhar.org</owner>
   <summary>
     The amount of time (ms) between the cookie store load starting and
     completing.
@@ -716,7 +716,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.TimeDatabaseMigrationToV10" units="ms"
     expires_after="2020-04-05">
-  <owner>pwnall@chromium.org</owner>
+  <owner>pwnall@monyhar.org</owner>
   <summary>
     The amount of time (ms) to migrate a v9 cookie database to v10.
   </summary>
@@ -724,8 +724,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.TimeDatabaseMigrationToV11" units="ms"
     expires_after="2020-10-17">
-  <owner>chlily@chromium.org</owner>
-  <owner>morlovich@chromium.org</owner>
+  <owner>chlily@monyhar.org</owner>
+  <owner>morlovich@monyhar.org</owner>
   <summary>
     The amount of time (ms) to migrate a v10 cookie database to v11. Migration
     occurs upon first startup of a browser version with v11 database code.
@@ -734,8 +734,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.TimeDatabaseMigrationToV12" units="ms"
     expires_after="2020-11-20">
-  <owner>chlily@chromium.org</owner>
-  <owner>morlovich@chromium.org</owner>
+  <owner>chlily@monyhar.org</owner>
+  <owner>morlovich@monyhar.org</owner>
   <summary>
     The amount of time (ms) to migrate a v11 cookie database to v12. Migration
     occurs upon first startup of a browser version with v12 database code.
@@ -744,8 +744,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.TimeDatabaseMigrationToV13Failure" units="ms"
     expires_after="2021-10-30">
-  <owner>chlily@chromium.org</owner>
-  <owner>morlovich@chromium.org</owner>
+  <owner>chlily@monyhar.org</owner>
+  <owner>morlovich@monyhar.org</owner>
   <summary>
     The amount of time (ms) to migrate a v12 cookie database to v13, in the case
     when migration fails. Migration occurs upon first startup of a browser
@@ -755,8 +755,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.TimeDatabaseMigrationToV13Success" units="ms"
     expires_after="2021-10-30">
-  <owner>chlily@chromium.org</owner>
-  <owner>morlovich@chromium.org</owner>
+  <owner>chlily@monyhar.org</owner>
+  <owner>morlovich@monyhar.org</owner>
   <summary>
     The amount of time (ms) to migrate a v12 cookie database to v13, in the case
     when migration succeeds. Migration occurs upon first startup of a browser
@@ -766,9 +766,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.TimeDatabaseMigrationToV14" units="ms"
     expires_after="2021-11-07">
-  <owner>wfh@chromium.org</owner>
-  <owner>chlily@chromium.org</owner>
-  <owner>morlovich@chromium.org</owner>
+  <owner>wfh@monyhar.org</owner>
+  <owner>chlily@monyhar.org</owner>
+  <owner>morlovich@monyhar.org</owner>
   <summary>
     The amount of time (ms) to migrate a v13 cookie database to v14. Migration
     occurs upon first startup of a browser version with v14 database code.
@@ -777,18 +777,18 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.TimeDatabaseMigrationToV9" units="ms"
     expires_after="2018-08-30">
-  <owner>erikchen@chromium.org</owner>
+  <owner>erikchen@monyhar.org</owner>
   <summary>The amount of time (ms) to migrate a v8 database to v9.</summary>
 </histogram>
 
 <histogram name="Cookie.TimeInitializeDB" units="ms" expires_after="2021-10-25">
-  <owner>chlily@chromium.org</owner>
+  <owner>chlily@monyhar.org</owner>
   <owner>src/net/cookies/OWNERS</owner>
   <summary>The amount of time (ms) to initialize the cookies database.</summary>
 </histogram>
 
 <histogram name="Cookie.TimeKeyLoadDBQueueWait" units="ms" expires_after="M81">
-  <owner>pwnall@chromium.org</owner>
+  <owner>pwnall@monyhar.org</owner>
   <summary>
     This histogram records the wall-clock delay between a priority load task
     being posted to the DB-thread and its execution.
@@ -797,7 +797,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.TimeKeyLoadTotalWait" units="ms"
     expires_after="2020-05-17">
-  <owner>erikchen@chromium.org</owner>
+  <owner>erikchen@monyhar.org</owner>
   <summary>
     This histogram records the the total amount of time spent fetching the
     cookies associated with an eTLD+1 from disk, including time spent waiting in
@@ -806,7 +806,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Cookie.TimeLoad" units="ms" expires_after="2020-11-01">
-  <owner>pwnall@chromium.org</owner>
+  <owner>pwnall@monyhar.org</owner>
   <summary>
     This histogram records the sum of the durations of all initial tasks loading
     cookies from the database.
@@ -815,7 +815,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Cookie.TimeLoadDBQueueWait" units="ms"
     expires_after="2018-08-30">
-  <owner>erikchen@chromium.org</owner>
+  <owner>erikchen@monyhar.org</owner>
   <summary>
     This histogram records the wall-clock delay between the Load task being
     posted to the DB-thread and its execution.
@@ -823,7 +823,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Cookie.Type" enum="CookieType" expires_after="2021-10-17">
-  <owner>mkwst@chromium.org</owner>
+  <owner>mkwst@monyhar.org</owner>
   <summary>For each cookie added to the store, record it's type(s).</summary>
 </histogram>
 

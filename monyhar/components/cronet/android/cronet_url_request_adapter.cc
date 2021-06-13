@@ -78,7 +78,7 @@ static jlong JNI_CronetUrlRequest_CreateRequestAdapter(
 
   GURL url(base::android::ConvertJavaStringToUTF8(env, jurl_string));
 
-  VLOG(1) << "New chromium network request_adapter: "
+  VLOG(1) << "New monyhar network request_adapter: "
           << url.possibly_invalid_spec();
 
   CronetURLRequestAdapter* adapter = new CronetURLRequestAdapter(

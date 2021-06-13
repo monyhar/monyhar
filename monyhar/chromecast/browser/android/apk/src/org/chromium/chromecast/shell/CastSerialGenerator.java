@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.shell;
+package org.monyhar.chromecast.shell;
 
 import android.content.SharedPreferences;
 import android.util.Base64;
 
-import org.chromium.base.ContextUtils;
+import org.monyhar.base.ContextUtils;
 
 import java.security.SecureRandom;
 

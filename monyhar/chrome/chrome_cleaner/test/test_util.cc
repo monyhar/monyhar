@@ -119,7 +119,7 @@ int RunChromeCleanerTestSuite(int argc,
 #if BUILDFLAG(IS_INTERNAL_CHROME_CLEANER_BUILD)
   // The tests will run with the internal engine, which takes longer.
   // IS_INTERNAL_CHROME_CLEANER_BUILD is only set on the Chrome Cleaner
-  // builders, not the chromium builders, so this will not slow down the
+  // builders, not the monyhar builders, so this will not slow down the
   // general commit queue.
   constexpr base::TimeDelta kInternalTimeout = base::TimeDelta::FromMinutes(10);
   base::CommandLine::ForCurrentProcess()->AppendSwitchASCII(

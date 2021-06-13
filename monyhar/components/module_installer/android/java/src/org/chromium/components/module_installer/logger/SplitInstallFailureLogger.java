@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.module_installer.logger;
+package org.monyhar.components.module_installer.logger;
 
 import com.google.android.play.core.splitinstall.model.SplitInstallErrorCode;
 
-import org.chromium.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordHistogram;
 
 class SplitInstallFailureLogger {
     // FeatureModuleInstallStatus defined in //tools/metrics/histograms/enums.xml.

@@ -22,12 +22,12 @@ CHROMIUM_SRC = os.path.abspath(os.path.join(THIS_DIR, '..', '..', '..', '..'))
 def _GetReplayTestDirectories():
   directories = [
       os.path.join(CHROMIUM_SRC, 'chrome', 'android', 'feed', 'core',
-                   'javatests', 'src', 'org', 'chromium', 'chrome', 'browser',
+                   'javatests', 'src', 'org', 'monyhar', 'chrome', 'browser',
                    'feed', 'wpr_tests'),
   ]
 
   internal_dir = os.path.join(CHROMIUM_SRC, 'clank', 'javatests', 'src', 'org',
-                              'chromium', 'chrome', 'browser', 'wprtests',
+                              'monyhar', 'chrome', 'browser', 'wprtests',
                               'replays')
   if os.path.isdir(internal_dir):
     directories.append(internal_dir)

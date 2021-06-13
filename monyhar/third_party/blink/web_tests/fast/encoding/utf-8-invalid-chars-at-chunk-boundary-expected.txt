@@ -1,4 +1,4 @@
-Regression test for https://bugs.chromium.org/p/chromium/issues/detail?id=773320 - invalid byte sequences split between two chunks.
+Regression test for https://bugs.monyhar.org/p/monyhar/issues/detail?id=773320 - invalid byte sequences split between two chunks.
 
 Length: 3 char: 88 char: 65533 char: 89
 Length: 3 char: 88 char: 65533 char: 89

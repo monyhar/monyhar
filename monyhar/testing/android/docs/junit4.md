@@ -2,7 +2,7 @@
 
 As of Android 24 (N), JUnit3 style javatests have been deprecated for the new
 JUnit4-based [Android Testing Support Library][1].
-We are in the process of changing all instrumentation tests in chromium to
+We are in the process of changing all instrumentation tests in monyhar to
 JUnit4 style. This doc explains the differences between JUnit3 and JUnit4
 instrumentation tests and how to write or convert them.
 
@@ -16,13 +16,13 @@ instrumentation tests and how to write or convert them.
 | Test methods | methods named with test prefix                      | methods annotated with @Test             |
 | Set up       | setUp() method                                      | public method annotated with @Before     |
 | Tear down    | tearDown() method                                   | public method annotated with @After      |
-| Test runner  | declared within test apk AndroidManifest.xml        | Must specify `chromium-junit4:"true"`    |
+| Test runner  | declared within test apk AndroidManifest.xml        | Must specify `monyhar-junit4:"true"`    |
 | Class runner | N/A                                                 | @RunWith(XClassRunner.class)             |
 | Assertion    | Extends from junit.framework.Assert, inherited APIs | Use static methods from org.junit.Assert |
 
 > Please note that during the migration, we support running JUnit3 and JUnit4
 > tests in the same apk. This requires two tags, one each for JUnit3 and JUnit4.
-> The tag for the JUnit4 runner must specify `chromium-junit4:"true"`
+> The tag for the JUnit4 runner must specify `monyhar-junit4:"true"`
 > ([Example][2])
 
 -   **Other JUnit4 features**:
@@ -111,7 +111,7 @@ public class TestClass {
         Our test runner will run JUnit4 tests with JUnit4 runner and JUnit3
         tests with non-JUnit4 runner.
 1.  Refactor TestBase class to a TestRule class.
-    ([example CL](https://codereview.chromium.org/2632043002))
+    ([example CL](https://codereview.monyhar.org/2632043002))
     -   +yolandyan will do this part, however, if you did refactoring yourself,
         please add him as a reviewer for your CL and enjoy his eternal appreciation!
 1.  Use [auto migrate script][5] to or manually convert all JUnit3 tests to
@@ -259,7 +259,7 @@ The CommandLineFlags annonations are more fully documented in the [CommandLineFl
     -   A: Yes. During the migration, we plan to maintain a 1:1 mapping between
         the test base classes and TestRules (e.g. ContentShellTestBase to
         ContentShellTestRule in this
-        [CL](https://codereview.chromium.org/2632043002)).
+        [CL](https://codereview.monyhar.org/2632043002)).
         This allows the auto convert script to replace API calls in any
         JUnit3 tests. After the migration, we plan to refactor the TestRules to
         be more modular.
@@ -273,15 +273,15 @@ If you have any other questions, feel free to report in [this bug][7].
 - [Crbug for JUnit3 to JUnit4 migration][7]
 
 [1]: https://developer.android.com/topic/libraries/testing-support-library/index.html
-[2]: https://cs.chromium.org/chromium/src/android_webview/tools/system_webview_shell/layout_tests/AndroidManifest.xml?l=36
+[2]: https://cs.monyhar.org/monyhar/src/android_webview/tools/system_webview_shell/layout_tests/AndroidManifest.xml?l=36
 [3]: http://junit.org/junit4/javadoc/4.12/org/junit/rules/TestRule.html
 [4]: https://developer.android.com/reference/android/support/test/rule/ActivityTestRule.html
-[5]: https://github.com/yoland68/chromium-junit-auto-migrate
+[5]: https://github.com/yoland68/monyhar-junit-auto-migrate
 [6]: http://github.com/skyisle/android-test-kit/issues/121
-[7]: https://bugs.chromium.org/p/chromium/issues/detail?id=640116
+[7]: https://bugs.monyhar.org/p/monyhar/issues/detail?id=640116
 [8]: http://junit.org/junit4/javadoc/4.12/org/junit/rules/RuleChain.html
 [9]: https://developer.android.com/reference/android/app/Instrumentation.html#runOnMainSync(java.lang.Runnable)
 [10]: https://developer.android.com/reference/android/support/test/rule/UiThreadTestRule.html#runOnUiThread(java.lang.Runnable)
-[11]: /chrome/test/android/javatests/src/org/chromium/chrome/test/BottomSheetTestRule.java
-[12]: https://bugs.chromium.org/p/chromium/issues/detail?id=734553
-[13]: /base/test/android/javatests/src/org/chromium/base/test/util/CommandLineFlags.java
+[11]: /chrome/test/android/javatests/src/org/monyhar/chrome/test/BottomSheetTestRule.java
+[12]: https://bugs.monyhar.org/p/monyhar/issues/detail?id=734553
+[13]: /base/test/android/javatests/src/org/monyhar/base/test/util/CommandLineFlags.java

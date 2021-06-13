@@ -76,7 +76,7 @@ More details can be found in `generate.py` and `generate_test.py`.
 
 ## Chromium Implementation
 The Chromium implementation is provided by
-`../resources/chromium/web-bluetooth-test.js`.
+`../resources/monyhar/web-bluetooth-test.js`.
 
 The Chromium implementation is not included in stable Chrome builds since it
 would add too much to the binary size. On Chromium infrastructure, it is run
@@ -94,7 +94,7 @@ infrastructure.
 For more implementation details, see the [Web Bluetooth Service README].
 
 [Web Bluetooth Service README]:
-https://chromium.googlesource.com/chromium/src.git/+/master/content/browser/bluetooth/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/master/content/browser/bluetooth/README.md
 
 # Resources and Documentation
 
@@ -110,10 +110,10 @@ file an issue with the implementor's bug tracker.
 
 ## Chromium
 
-Mailing list: web-bluetooth@chromium.org
+Mailing list: web-bluetooth@monyhar.org
 
 Bug tracker: [Blink>Bluetooth]
 
 * [Web Bluetooth Service README]
 
-[Blink>Bluetooth]: https://bugs.chromium.org/p/chromium/issues/list?q=component%3ABlink%3EBluetooth&can=2
+[Blink>Bluetooth]: https://bugs.monyhar.org/p/monyhar/issues/list?q=component%3ABlink%3EBluetooth&can=2

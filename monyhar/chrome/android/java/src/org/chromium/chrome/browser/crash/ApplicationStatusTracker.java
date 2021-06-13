@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.crash;
+package org.monyhar.chrome.browser.crash;
 
-import org.chromium.base.ApplicationState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ThreadUtils;
-import org.chromium.components.crash.CrashKeyIndex;
-import org.chromium.components.crash.CrashKeys;
+import org.monyhar.base.ApplicationState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.components.crash.CrashKeyIndex;
+import org.monyhar.components.crash.CrashKeys;
 
 /**
  * This class updates crash keys when the application state changes.

@@ -1,6 +1,6 @@
 Name: logdog
 Short Name: logdog
-URL: https://chromium.googlesource.com/infra/luci/luci-py/client/libs/logdog
+URL: https://monyhar.googlesource.com/infra/luci/luci-py/client/libs/logdog
 Version: 9a84af84d3fa62b230569cf1d3abf69cc7c576e2
 Revision: 9a84af84d3fa62b230569cf1d3abf69cc7c576e2
 License: Apache 2.0

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.explore_sites;
+package org.monyhar.chrome.browser.explore_sites;
 
 import android.content.Context;
 import android.text.SpannableString;
@@ -11,20 +11,20 @@ import android.text.SpannableStringBuilder;
 import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.native_page.ContextMenuManager;
-import org.chromium.chrome.browser.native_page.NativePageNavigationDelegate;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.browser_ui.widget.RoundedIconGenerator;
-import org.chromium.ui.modelutil.ForwardingListObservable;
-import org.chromium.ui.modelutil.ListObservable.ListObserver;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyObservable;
-import org.chromium.ui.modelutil.RecyclerViewAdapter;
-import org.chromium.ui.widget.ChromeBulletSpan;
-import org.chromium.ui.widget.LoadingView;
-import org.chromium.ui.widget.TextViewWithLeading;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.native_page.ContextMenuManager;
+import org.monyhar.chrome.browser.native_page.NativePageNavigationDelegate;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.browser_ui.widget.RoundedIconGenerator;
+import org.monyhar.ui.modelutil.ForwardingListObservable;
+import org.monyhar.ui.modelutil.ListObservable.ListObserver;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyObservable;
+import org.monyhar.ui.modelutil.RecyclerViewAdapter;
+import org.monyhar.ui.widget.ChromeBulletSpan;
+import org.monyhar.ui.widget.LoadingView;
+import org.monyhar.ui.widget.TextViewWithLeading;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

@@ -261,7 +261,7 @@ goog.events.EventType = {
   COMPOSITIONEND: 'compositionend',
 
   // The beforeinput event is initially only supported in Safari. See
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=342670 for Chrome
+  // https://bugs.monyhar.org/p/monyhar/issues/detail?id=342670 for Chrome
   // implementation tracking.
   BEFOREINPUT: 'beforeinput',
 

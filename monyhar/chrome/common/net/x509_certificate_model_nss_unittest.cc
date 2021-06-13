@@ -99,7 +99,7 @@ TEST_F(X509CertificateModelTest, GetExtensions) {
 
   {
     net::ScopedCERTCertificate cert(net::ImportCERTCertificateFromFile(
-        net::GetTestCertsDirectory(), "foaf.me.chromium-test-cert.der"));
+        net::GetTestCertsDirectory(), "foaf.me.monyhar-test-cert.der"));
     ASSERT_TRUE(cert.get());
 
     x509_certificate_model::Extensions extensions;

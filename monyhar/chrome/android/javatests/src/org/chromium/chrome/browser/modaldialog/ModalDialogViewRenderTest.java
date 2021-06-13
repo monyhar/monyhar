@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.modaldialog;
+package org.monyhar.chrome.browser.modaldialog;
 
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
@@ -25,21 +25,21 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.params.ParameterAnnotations;
-import org.chromium.base.test.params.ParameterSet;
-import org.chromium.base.test.params.ParameterizedRunner;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.test.ChromeJUnit4RunnerDelegate;
-import org.chromium.components.browser_ui.modaldialog.ModalDialogTestUtils;
-import org.chromium.components.browser_ui.modaldialog.ModalDialogView;
-import org.chromium.components.browser_ui.modaldialog.test.R;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.ui.UiUtils;
-import org.chromium.ui.modaldialog.ModalDialogProperties;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.test.util.DummyUiActivityTestCase;
-import org.chromium.ui.test.util.NightModeTestUtils;
-import org.chromium.ui.test.util.RenderTestRule;
+import org.monyhar.base.test.params.ParameterAnnotations;
+import org.monyhar.base.test.params.ParameterSet;
+import org.monyhar.base.test.params.ParameterizedRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.test.ChromeJUnit4RunnerDelegate;
+import org.monyhar.components.browser_ui.modaldialog.ModalDialogTestUtils;
+import org.monyhar.components.browser_ui.modaldialog.ModalDialogView;
+import org.monyhar.components.browser_ui.modaldialog.test.R;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.ui.UiUtils;
+import org.monyhar.ui.modaldialog.ModalDialogProperties;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.test.util.DummyUiActivityTestCase;
+import org.monyhar.ui.test.util.NightModeTestUtils;
+import org.monyhar.ui.test.util.RenderTestRule;
 
 import java.io.IOException;
 import java.util.Collections;
@@ -109,7 +109,7 @@ public class ModalDialogViewRenderTest extends DummyUiActivityTestCase {
     public void testRender_TitleAndTitleIcon() throws IOException {
         setUpViews(R.style.Theme_Chromium_ModalDialog_TextPrimaryButton);
         final Drawable icon = UiUtils.getTintedDrawable(
-                getActivity(), org.chromium.chrome.R.drawable.ic_add, R.color.default_icon_color);
+                getActivity(), org.monyhar.chrome.R.drawable.ic_add, R.color.default_icon_color);
         createModel(mModelBuilder.with(ModalDialogProperties.TITLE, mResources, R.string.title)
                             .with(ModalDialogProperties.TITLE_ICON, icon));
         mRenderTestRule.render(mModalDialogView, "title_and_title_icon");

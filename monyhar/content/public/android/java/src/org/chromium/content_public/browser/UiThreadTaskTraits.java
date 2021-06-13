@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.browser;
+package org.monyhar.content_public.browser;
 
-import org.chromium.base.task.TaskTraits;
-import org.chromium.content.browser.UiThreadTaskTraitsImpl;
+import org.monyhar.base.task.TaskTraits;
+import org.monyhar.content.browser.UiThreadTaskTraitsImpl;
 
 /**
  * Traits for tasks that need to run on the Browser UI thread. Keep in sync with

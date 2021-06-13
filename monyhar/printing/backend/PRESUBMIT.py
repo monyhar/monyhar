@@ -5,7 +5,7 @@
 """
 Presubmit script for the printing backend.
 
-See https://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See https://dev.monyhar.org/developers/how-tos/depottools/presubmit-scripts
 for more details about the presubmit API.
 """
 

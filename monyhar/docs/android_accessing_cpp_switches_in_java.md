@@ -18,7 +18,7 @@ template file. The template file must be specified in the GN target.
     // Use of this source code is governed by a BSD-style license that can be
     // found in the LICENSE file.
 
-    package org.chromium.foo;
+    package org.monyhar.foo;
 
     // Be sure to escape any curly braces in your template by doubling as
     // follows.
@@ -61,7 +61,7 @@ template file. The template file must be specified in the GN target.
     }
     ```
 
-3. The generated file `out/Default/gen/.../org/chromium/foo/FooSwitches.java`
+3. The generated file `out/Default/gen/.../org/monyhar/foo/FooSwitches.java`
    would contain:
 
     ```java
@@ -69,7 +69,7 @@ template file. The template file must be specified in the GN target.
     // Use of this source code is governed by a BSD-style license that can be
     // found in the LICENSE file.
 
-    package org.chromium.foo;
+    package org.monyhar.foo;
 
     /**
      * Contains command line switches that are specific to the foo project.
@@ -101,8 +101,8 @@ template file. The template file must be specified in the GN target.
 
 ## Code
 * [Generator
-code](https://cs.chromium.org/chromium/src/build/android/gyp/java_cpp_strings.py?dr=C&sq=package:chromium)
+code](https://cs.monyhar.org/monyhar/src/build/android/gyp/java_cpp_strings.py?dr=C&sq=package:monyhar)
 and
-[Tests](https://cs.chromium.org/chromium/src/build/android/gyp/java_cpp_strings_tests.py?dr=C&sq=package:chromium)
+[Tests](https://cs.monyhar.org/monyhar/src/build/android/gyp/java_cpp_strings_tests.py?dr=C&sq=package:monyhar)
 * [GN
-template](https://cs.chromium.org/chromium/src/build/config/android/rules.gni?sq=package:chromium&dr=C)
+template](https://cs.monyhar.org/monyhar/src/build/config/android/rules.gni?sq=package:monyhar&dr=C)

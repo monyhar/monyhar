@@ -6,8 +6,8 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/metrics_settings/MetricsSettingsFragment.java",
-    "java/src/org/chromium/chrome/browser/metrics_settings/RadioButtonGroupMetricsPreference.java",
+    "java/src/org/monyhar/chrome/browser/metrics_settings/MetricsSettingsFragment.java",
+    "java/src/org/monyhar/chrome/browser/metrics_settings/RadioButtonGroupMetricsPreference.java",
   ]
   deps = [
     ":java_resources",
@@ -15,7 +15,7 @@ android_library("java") {
     "//third_party/androidx:androidx_fragment_fragment_java",
     "//third_party/androidx:androidx_preference_preference_java",
   ]
-  resources_package = "org.chromium.chrome.browser.metrics_settings"
+  resources_package = "org.monyhar.chrome.browser.metrics_settings"
 }
 
 android_resources("java_resources") {

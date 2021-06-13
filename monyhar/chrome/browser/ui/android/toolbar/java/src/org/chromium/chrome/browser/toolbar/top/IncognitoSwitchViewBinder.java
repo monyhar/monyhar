@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar.top;
+package org.monyhar.chrome.browser.toolbar.top;
 
-import static org.chromium.chrome.browser.toolbar.top.IncognitoSwitchProperties.IS_INCOGNITO;
-import static org.chromium.chrome.browser.toolbar.top.IncognitoSwitchProperties.IS_VISIBLE;
+import static org.monyhar.chrome.browser.toolbar.top.IncognitoSwitchProperties.IS_INCOGNITO;
+import static org.monyhar.chrome.browser.toolbar.top.IncognitoSwitchProperties.IS_VISIBLE;
 
 import android.view.View;
 import android.widget.Switch;
 
-import org.chromium.chrome.browser.toolbar.R;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.chrome.browser.toolbar.R;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * This class is responsible for pushing updates to the Android view of the incognito switch. These

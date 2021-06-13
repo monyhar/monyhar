@@ -11,84 +11,84 @@ from blinkpy.w3c.monorail import MonorailAPI, MonorailIssue
 class MonorailIssueTest(unittest.TestCase):
     def test_init_succeeds(self):
         # Minimum example.
-        MonorailIssue('chromium', summary='test', status='Untriaged')
+        MonorailIssue('monyhar', summary='test', status='Untriaged')
         # All fields.
         MonorailIssue(
-            'chromium',
+            'monyhar',
             summary='test',
             status='Untriaged',
             description='body',
-            cc=['foo@chromium.org'],
+            cc=['foo@monyhar.org'],
             labels=['Flaky'],
             components=['Infra'])
 
     def test_init_fills_project_id(self):
-        issue = MonorailIssue('chromium', summary='test', status='Untriaged')
-        self.assertEqual(issue.body['projectId'], 'chromium')
+        issue = MonorailIssue('monyhar', summary='test', status='Untriaged')
+        self.assertEqual(issue.body['projectId'], 'monyhar')
 
     def test_unicode(self):
         issue = MonorailIssue(
-            'chromium',
+            'monyhar',
             summary=u'test',
             status='Untriaged',
             description=u'ABC~‾¥≈¤･・•∙·☼★星🌟星★☼·∙•・･¤≈¥‾~XYZ',
-            cc=['foo@chromium.org', 'bar@chromium.org'],
+            cc=['foo@monyhar.org', 'bar@monyhar.org'],
             labels=['Flaky'],
             components=['Infra'])
         self.assertEqual(type(unicode(issue)), unicode)
         self.assertEqual(
             unicode(issue),
-            (u'Monorail issue in project chromium\n'
+            (u'Monorail issue in project monyhar\n'
              u'Summary: test\n'
              u'Status: Untriaged\n'
-             u'CC: foo@chromium.org, bar@chromium.org\n'
+             u'CC: foo@monyhar.org, bar@monyhar.org\n'
              u'Components: Infra\n'
              u'Labels: Flaky\n'
              u'Description:\nABC~‾¥≈¤･・•∙·☼★星🌟星★☼·∙•・･¤≈¥‾~XYZ\n'))
 
     def test_init_unknown_fields(self):
         with self.assertRaises(AssertionError):
-            MonorailIssue('chromium', component='foo')
+            MonorailIssue('monyhar', component='foo')
 
     def test_init_missing_required_fields(self):
         with self.assertRaises(AssertionError):
             MonorailIssue('', summary='test', status='Untriaged')
         with self.assertRaises(AssertionError):
-            MonorailIssue('chromium', summary='', status='Untriaged')
+            MonorailIssue('monyhar', summary='', status='Untriaged')
         with self.assertRaises(AssertionError):
-            MonorailIssue('chromium', summary='test', status='')
+            MonorailIssue('monyhar', summary='test', status='')
 
     def test_init_unknown_status(self):
         with self.assertRaises(AssertionError):
-            MonorailIssue('chromium', summary='test', status='unknown')
+            MonorailIssue('monyhar', summary='test', status='unknown')
 
     def test_init_string_passed_for_list_fields(self):
         with self.assertRaises(AssertionError):
             MonorailIssue(
-                'chromium',
+                'monyhar',
                 summary='test',
                 status='Untriaged',
-                cc='foo@chromium.org')
+                cc='foo@monyhar.org')
         with self.assertRaises(AssertionError):
             MonorailIssue(
-                'chromium',
+                'monyhar',
                 summary='test',
                 status='Untriaged',
                 components='Infra')
         with self.assertRaises(AssertionError):
             MonorailIssue(
-                'chromium', summary='test', status='Untriaged', labels='Flaky')
+                'monyhar', summary='test', status='Untriaged', labels='Flaky')
 
-    def test_new_chromium_issue(self):
-        issue = MonorailIssue.new_chromium_issue('test',
+    def test_new_monyhar_issue(self):
+        issue = MonorailIssue.new_monyhar_issue('test',
                                                  description='body',
-                                                 cc=['foo@chromium.org'],
+                                                 cc=['foo@monyhar.org'],
                                                  components=['Infra'],
                                                  labels=['Test-WebTest'])
-        self.assertEqual(issue.project_id, 'chromium')
+        self.assertEqual(issue.project_id, 'monyhar')
         self.assertEqual(issue.body['summary'], 'test')
         self.assertEqual(issue.body['description'], 'body')
-        self.assertEqual(issue.body['cc'], ['foo@chromium.org'])
+        self.assertEqual(issue.body['cc'], ['foo@monyhar.org'])
         self.assertEqual(issue.body['components'], ['Infra'])
         self.assertEqual(issue.body['labels'],
                          ['Pri-3', 'Type-Bug', 'Test-WebTest'])
@@ -102,15 +102,15 @@ class MonorailAPITest(unittest.TestCase):
     def test_fix_cc_field_in_body(self):
         original_body = {
             'summary': 'test bug',
-            'cc': ['foo@chromium.org', 'bar@chromium.org']
+            'cc': ['foo@monyhar.org', 'bar@monyhar.org']
         }
         # pylint: disable=protected-access
         self.assertEqual(
             MonorailAPI._fix_cc_in_body(original_body), {
                 'summary': 'test bug',
                 'cc': [{
-                    'name': 'foo@chromium.org'
+                    'name': 'foo@monyhar.org'
                 }, {
-                    'name': 'bar@chromium.org'
+                    'name': 'bar@monyhar.org'
                 }]
             })

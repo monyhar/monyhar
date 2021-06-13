@@ -52,7 +52,7 @@ class InstanceID {
   };
 
   // Flags to be used to create a token. These might be platform specific.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.gcm_driver
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.gcm_driver
   // GENERATED_JAVA_CLASS_NAME_OVERRIDE: InstanceIDFlags
   enum class Flags {
     // Whether delivery of received messages should be deferred until there is a

@@ -122,7 +122,7 @@ class InterceptNavigationThrottleTest
   std::unique_ptr<MockInterceptCallbackReceiver> mock_callback_receiver_;
 };
 
-// TODO(https://crbug.com/1009359): Fix flakes on win10_chromium_x64_rel_ng and
+// TODO(https://crbug.com/1009359): Fix flakes on win10_monyhar_x64_rel_ng and
 // re-enable this test.
 #if defined(OS_WIN)
 #define MAYBE_RequestCompletesIfNavigationNotIgnored \
@@ -144,7 +144,7 @@ TEST_P(InterceptNavigationThrottleTest,
   EXPECT_EQ(NavigationThrottle::PROCEED, result);
 }
 
-// TODO(https://crbug.com/1010187): Fix flakes on win10_chromium_x64_rel_ng and
+// TODO(https://crbug.com/1010187): Fix flakes on win10_monyhar_x64_rel_ng and
 // re-enable this test.
 #if defined(OS_WIN)
 #define MAYBE_RequestCancelledIfNavigationIgnored \

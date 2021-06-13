@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.modules.dev_ui;
+package org.monyhar.chrome.modules.dev_ui;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.module_installer.engine.InstallListener;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.module_installer.engine.InstallListener;
 
 /** {@link InstallListener} implementation that uses JNI to propagate install signal to native. */
 @JNINamespace("dev_ui")

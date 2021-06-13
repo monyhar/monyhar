@@ -252,7 +252,7 @@ bool AwMainDelegate::BasicStartupComplete(int* exit_code) {
     features.EnableIfNotSet(::features::kDisableDeJelly);
 
     // COOP is not supported on WebView yet. See:
-    // https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/XBKAGb2_7uAi.
+    // https://groups.google.com/a/monyhar.org/forum/#!topic/blink-dev/XBKAGb2_7uAi.
     features.DisableIfNotSet(network::features::kCrossOriginOpenerPolicy);
 
     features.DisableIfNotSet(::features::kInstalledApp);

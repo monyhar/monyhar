@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.library_loader;
+package org.monyhar.base.library_loader;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -18,24 +18,24 @@ import androidx.annotation.IntDef;
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.BaseSwitches;
-import org.chromium.base.CommandLine;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.JNIUtils;
-import org.chromium.base.Log;
-import org.chromium.base.NativeLibraryLoadedStatus;
-import org.chromium.base.NativeLibraryLoadedStatus.NativeLibraryLoadedStatusProvider;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.TraceEvent;
-import org.chromium.base.annotations.CheckDiscard;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.MainDex;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.compat.ApiHelperForM;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.UmaRecorderHolder;
-import org.chromium.build.BuildConfig;
-import org.chromium.build.NativeLibraries;
+import org.monyhar.base.BaseSwitches;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.JNIUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.NativeLibraryLoadedStatus;
+import org.monyhar.base.NativeLibraryLoadedStatus.NativeLibraryLoadedStatusProvider;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.base.annotations.CheckDiscard;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.MainDex;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.compat.ApiHelperForM;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.UmaRecorderHolder;
+import org.monyhar.build.BuildConfig;
+import org.monyhar.build.NativeLibraries;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -256,7 +256,7 @@ public class LibraryLoader {
     }
 
     /**
-     * Call this method to determine if the chromium project must load the library
+     * Call this method to determine if the monyhar project must load the library
      * directly from a zip file.
      */
     private static boolean isInZipFile() {
@@ -292,7 +292,7 @@ public class LibraryLoader {
 
     /**
      * Set native library preloader, if set, the NativeLibraryPreloader.loadLibrary will be invoked
-     * before calling System.loadLibrary, this only applies when not using the chromium linker.
+     * before calling System.loadLibrary, this only applies when not using the monyhar linker.
      *
      * @param loader the NativeLibraryPreloader, it shall only be set once and before the
      *               native library is loaded.
@@ -311,7 +311,7 @@ public class LibraryLoader {
      * Must be called before loading the library. Since this function is called extremely early on
      * in startup, locking is not required.
      *
-     * @param useChromiumLinker Whether to use a chromium linker.
+     * @param useChromiumLinker Whether to use a monyhar linker.
      * @param useModernLinker Given that one of the Chromium linkers is used, whether to use
      *                        ModernLinker instead of the LegacyLinker.
      */
@@ -675,7 +675,7 @@ public class LibraryLoader {
 
             if (useChromiumLinker() && !inZygote) {
                 Log.d(TAG, "Loading with the Chromium linker.");
-                // See base/android/linker/config.gni, the chromium linker is only enabled when
+                // See base/android/linker/config.gni, the monyhar linker is only enabled when
                 // we have a single library.
                 assert NativeLibraries.LIBRARIES.length == 1;
                 String library = NativeLibraries.LIBRARIES[0];

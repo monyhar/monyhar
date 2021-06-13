@@ -18,8 +18,8 @@ js_library("os_settings_menu.m") {
   deps = [
     "..:os_route.m",
     "../..:router",
-    "//third_party/polymer/v3_0/components-chromium/iron-collapse:iron-collapse",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-collapse:iron-collapse",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   extra_deps = [ ":os_settings_menu_module" ]
 }

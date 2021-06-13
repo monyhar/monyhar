@@ -21,7 +21,7 @@ any of the following:
   * POSIX file descriptor (POSIX systems only)
 
 See the
-[header](https://cs.chromium.org/src/mojo/public/cpp/platform/platform_handle.h)
+[header](https://cs.monyhar.org/src/mojo/public/cpp/platform/platform_handle.h)
 for more details.
 
 ## Platform Channels
@@ -35,7 +35,7 @@ as **local** and the other **remote**, the intention being that the remote
 endpoint will be transferred to another process in the system.
 
 See the
-[header](https://cs.chromium.org/src/mojo/public/cpp/platform/platform_channel.h)
+[header](https://cs.monyhar.org/src/mojo/public/cpp/platform/platform_channel.h)
 for more details. See the
 [Invitations](/mojo/public/cpp/system/README.md#Invitations) documentation for
 an example of using `PlatformChannel` with an invitation to bootstrap IPC

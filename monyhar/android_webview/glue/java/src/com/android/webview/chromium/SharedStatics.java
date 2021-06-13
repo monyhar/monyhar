@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package com.android.webview.chromium;
+package com.android.webview.monyhar;
 
 import android.app.ActivityManager;
 import android.content.Context;
@@ -10,17 +10,17 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Looper;
 
-import org.chromium.android_webview.AwContentsClient;
-import org.chromium.android_webview.AwContentsStatics;
-import org.chromium.android_webview.AwDevToolsServer;
-import org.chromium.android_webview.AwSettings;
-import org.chromium.base.BuildInfo;
-import org.chromium.base.Callback;
-import org.chromium.base.MemoryPressureLevel;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.memory.MemoryPressureMonitor;
-import org.chromium.base.task.PostTask;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.android_webview.AwContentsClient;
+import org.monyhar.android_webview.AwContentsStatics;
+import org.monyhar.android_webview.AwDevToolsServer;
+import org.monyhar.android_webview.AwSettings;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.Callback;
+import org.monyhar.base.MemoryPressureLevel;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.memory.MemoryPressureMonitor;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 import java.util.List;
 

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.nonembedded;
+package org.monyhar.android_webview.nonembedded;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -10,7 +10,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 /**
  * Activity for displaying WebView OSS licenses.

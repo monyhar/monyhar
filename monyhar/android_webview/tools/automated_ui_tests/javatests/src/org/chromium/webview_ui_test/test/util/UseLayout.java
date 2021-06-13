@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webview_ui_test.test.util;
+package org.monyhar.webview_ui_test.test.util;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

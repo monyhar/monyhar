@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo.bindings;
+package org.monyhar.mojo.bindings;
 
-import org.chromium.mojo.system.Handle;
-import org.chromium.mojo.system.MessagePipeHandle;
+import org.monyhar.mojo.system.Handle;
+import org.monyhar.mojo.system.MessagePipeHandle;
 
 import java.nio.ByteBuffer;
 import java.util.List;

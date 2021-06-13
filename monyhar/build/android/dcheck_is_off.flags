@@ -4,14 +4,14 @@
 
 # Contains flags that are applied only when ENABLE_DCHECK=false.
 
--checkdiscard @org.chromium.base.annotations.CheckDiscard class ** {
+-checkdiscard @org.monyhar.base.annotations.CheckDiscard class ** {
   *;
 }
 -checkdiscard class ** {
-  @org.chromium.base.annotations.CheckDiscard *;
+  @org.monyhar.base.annotations.CheckDiscard *;
 }
 
 # Ensure @RemovableInRelease actually works.
 -checkdiscard class ** {
-  @org.chromium.base.annotations.RemovableInRelease *;
+  @org.monyhar.base.annotations.RemovableInRelease *;
 }

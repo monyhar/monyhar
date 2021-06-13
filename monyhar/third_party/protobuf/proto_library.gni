@@ -408,7 +408,7 @@ template("proto_library") {
       }
     }
 
-    # System protoc is not used so it's necessary to build a chromium one.
+    # System protoc is not used so it's necessary to build a monyhar one.
     inputs = [ _protoc_path ]
     deps = [ _protoc_label ]
 

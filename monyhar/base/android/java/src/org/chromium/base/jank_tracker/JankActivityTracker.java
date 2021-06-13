@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.jank_tracker;
+package org.monyhar.base.jank_tracker;
 
 import android.app.Activity;
 import android.os.Build.VERSION_CODES;
 
 import androidx.annotation.RequiresApi;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ApplicationStatus.ActivityStateListener;
-import org.chromium.base.ThreadUtils.ThreadChecker;
-import org.chromium.base.lifetime.DestroyChecker;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ApplicationStatus.ActivityStateListener;
+import org.monyhar.base.ThreadUtils.ThreadChecker;
+import org.monyhar.base.lifetime.DestroyChecker;
 
 import java.lang.ref.WeakReference;
 

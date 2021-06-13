@@ -14,7 +14,7 @@
 #include "base/values.h"
 #include "extensions/browser/value_store/value_store.h"
 #include "third_party/abseil-cpp/absl/types/optional.h"
-#include "third_party/leveldatabase/env_chromium.h"
+#include "third_party/leveldatabase/env_monyhar.h"
 #include "third_party/leveldatabase/src/include/leveldb/db.h"
 
 namespace leveldb {

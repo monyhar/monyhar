@@ -6,7 +6,7 @@ import("//build/config/android/android_nocompile.gni")
 import("//build/config/android/rules.gni")
 import("nocompile_sources.gni")
 
-empty_java = "../src/org/chromium/tools/errorprone/plugin/Empty.java"
+empty_java = "../src/org/monyhar/tools/errorprone/plugin/Empty.java"
 
 android_library("no_redundant_field_init_check_int_test_java") {
   testonly = true

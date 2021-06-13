@@ -31,7 +31,7 @@ class ManualFillingViewInterface {
   // TODO(crbug.com/902425): Remove this once AccessorySheetData is used on the
   //                         frontend to represent data to present.
   // GENERATED_JAVA_ENUM_PACKAGE: (
-  //   org.chromium.chrome.browser.autofill.keyboard_accessory)
+  //   org.monyhar.chrome.browser.autofill.keyboard_accessory)
   // GENERATED_JAVA_CLASS_NAME_OVERRIDE: ItemType
   enum class Type {
     // An item in title style to purely to display text. Non-interactive.

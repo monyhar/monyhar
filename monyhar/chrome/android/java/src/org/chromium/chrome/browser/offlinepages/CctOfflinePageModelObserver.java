@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.offlinepages;
+package org.monyhar.chrome.browser.offlinepages;
 
 import android.app.PendingIntent;
 import android.content.Context;
@@ -11,11 +11,11 @@ import android.os.Bundle;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.chrome.browser.AppHooks;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.chrome.browser.AppHooks;
 
 /**
  * Java-side handler for Offline page model changes.
@@ -27,11 +27,11 @@ public class CctOfflinePageModelObserver {
     private static final String TAG = "CctModelObserver";
     // Key for pending intent used by receivers to verify origin.
     private static final String ORIGIN_VERIFICATION_KEY =
-            "org.chromium.chrome.extra.CHROME_NAME_PENDING_INTENT";
+            "org.monyhar.chrome.extra.CHROME_NAME_PENDING_INTENT";
 
     // Key for bundle which stores information about the page changed.
     @VisibleForTesting
-    static final String PAGE_INFO_KEY = "org.chromium.chrome.extra.OFFLINE_PAGE_INFO";
+    static final String PAGE_INFO_KEY = "org.monyhar.chrome.extra.OFFLINE_PAGE_INFO";
     // Key within page info bundle for whether the page was added (true) or removed (false).
     @VisibleForTesting
     static final String IS_NEW_KEY = "is_new";
@@ -41,7 +41,7 @@ public class CctOfflinePageModelObserver {
     // Broadcast action.
     @VisibleForTesting
     static final String ACTION_OFFLINE_PAGES_UPDATED =
-            "org.chromium.chrome.browser.offlinepages.OFFLINE_PAGES_CHANGED";
+            "org.monyhar.chrome.browser.offlinepages.OFFLINE_PAGES_CHANGED";
 
     @CalledByNative
     @VisibleForTesting

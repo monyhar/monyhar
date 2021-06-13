@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.home.list;
+package org.monyhar.chrome.browser.download.home.list;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -11,23 +11,23 @@ import android.text.format.Formatter;
 
 import androidx.annotation.DrawableRes;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.MathUtils;
-import org.chromium.chrome.browser.download.StringUtils;
-import org.chromium.chrome.browser.download.home.filter.Filters;
-import org.chromium.chrome.browser.download.home.list.view.CircularProgressView;
-import org.chromium.chrome.browser.download.home.list.view.CircularProgressView.UiState;
-import org.chromium.chrome.browser.download.internal.R;
-import org.chromium.components.browser_ui.util.date.CalendarFactory;
-import org.chromium.components.browser_ui.util.date.CalendarUtils;
-import org.chromium.components.offline_items_collection.LegacyHelpers;
-import org.chromium.components.offline_items_collection.OfflineItem;
-import org.chromium.components.offline_items_collection.OfflineItem.Progress;
-import org.chromium.components.offline_items_collection.OfflineItemFilter;
-import org.chromium.components.offline_items_collection.OfflineItemProgressUnit;
-import org.chromium.components.offline_items_collection.OfflineItemState;
-import org.chromium.components.url_formatter.SchemeDisplay;
-import org.chromium.components.url_formatter.UrlFormatter;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.MathUtils;
+import org.monyhar.chrome.browser.download.StringUtils;
+import org.monyhar.chrome.browser.download.home.filter.Filters;
+import org.monyhar.chrome.browser.download.home.list.view.CircularProgressView;
+import org.monyhar.chrome.browser.download.home.list.view.CircularProgressView.UiState;
+import org.monyhar.chrome.browser.download.internal.R;
+import org.monyhar.components.browser_ui.util.date.CalendarFactory;
+import org.monyhar.components.browser_ui.util.date.CalendarUtils;
+import org.monyhar.components.offline_items_collection.LegacyHelpers;
+import org.monyhar.components.offline_items_collection.OfflineItem;
+import org.monyhar.components.offline_items_collection.OfflineItem.Progress;
+import org.monyhar.components.offline_items_collection.OfflineItemFilter;
+import org.monyhar.components.offline_items_collection.OfflineItemProgressUnit;
+import org.monyhar.components.offline_items_collection.OfflineItemState;
+import org.monyhar.components.url_formatter.SchemeDisplay;
+import org.monyhar.components.url_formatter.UrlFormatter;
 
 import java.util.Calendar;
 import java.util.Date;

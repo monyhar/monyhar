@@ -11,7 +11,7 @@ namespace metrics {
 // These values are persisted to logs. Entries should not be renumbered and
 // numeric values should never be reused. Must be kept in sync with the enum
 // in enums.xml. A java IntDef@ is generated from this.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.keyboard_accessory
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.keyboard_accessory
 enum class AccessoryBarContents {
   NO_CONTENTS = 0,   // Increased if none of the other buckets increases.
   ANY_CONTENTS = 1,  // Increased if least one of the other buckets increases.
@@ -25,7 +25,7 @@ enum class AccessoryBarContents {
 // These values are persisted to logs. Entries should not be renumbered and
 // numeric values should never be reused. Must be kept in sync with the enum
 // in enums.xml. A java IntDef@ is generated from this.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.keyboard_accessory
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.keyboard_accessory
 enum class AccessorySheetTrigger {
   ANY_CLOSE = 0,     // Increased for every closure - manual or not.
   MANUAL_CLOSE = 1,  // Increased for every user-triggered closure.
@@ -37,7 +37,7 @@ enum class AccessorySheetTrigger {
 // These values are persisted to logs. Entries should not be renumbered and
 // numeric values should never be reused. Must be kept in sync with the enum
 // in enums.xml. A java IntDef@ is generated from this.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.keyboard_accessory
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.keyboard_accessory
 enum class AccessorySuggestionType {
   USERNAME = 0,
   PASSWORD = 1,

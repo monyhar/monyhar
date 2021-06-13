@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.app.Service;
 import android.content.Context;
@@ -31,69 +31,69 @@ import androidx.core.content.FileProvider;
 
 import dalvik.system.DexFile;
 
-import org.chromium.base.BuildInfo;
-import org.chromium.base.BundleUtils;
-import org.chromium.base.CommandLine;
-import org.chromium.base.ContentUriUtils;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.FileUtils;
-import org.chromium.base.Log;
-import org.chromium.base.PathUtils;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.TraceEvent;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.compat.ApiHelperForO;
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.library_loader.LibraryProcessType;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.base.task.BackgroundOnlyAsyncTask;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.task.TaskTraits;
-import org.chromium.components.browser_ui.contacts_picker.ContactsPickerDialog;
-import org.chromium.components.browser_ui.photo_picker.DecoderServiceHost;
-import org.chromium.components.browser_ui.photo_picker.ImageDecoder;
-import org.chromium.components.browser_ui.photo_picker.PhotoPickerDelegateBase;
-import org.chromium.components.browser_ui.photo_picker.PhotoPickerDialog;
-import org.chromium.components.embedder_support.application.ClassLoaderContextWrapperFactory;
-import org.chromium.components.embedder_support.application.FirebaseConfig;
-import org.chromium.components.embedder_support.util.Origin;
-import org.chromium.components.payments.PaymentDetailsUpdateService;
-import org.chromium.content_public.browser.BrowserStartupController;
-import org.chromium.content_public.browser.ChildProcessCreationParams;
-import org.chromium.content_public.browser.ChildProcessLauncherHelper;
-import org.chromium.content_public.browser.ContactsPicker;
-import org.chromium.content_public.browser.ContactsPickerListener;
-import org.chromium.content_public.browser.DeviceUtils;
-import org.chromium.content_public.browser.SelectionPopupController;
-import org.chromium.net.NetworkChangeNotifier;
-import org.chromium.ui.base.PhotoPicker;
-import org.chromium.ui.base.PhotoPickerListener;
-import org.chromium.ui.base.ResourceBundle;
-import org.chromium.ui.base.SelectFileDialog;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.weblayer_private.interfaces.APICallException;
-import org.chromium.weblayer_private.interfaces.IBrowserFragment;
-import org.chromium.weblayer_private.interfaces.ICrashReporterController;
-import org.chromium.weblayer_private.interfaces.IMediaRouteDialogFragment;
-import org.chromium.weblayer_private.interfaces.IObjectWrapper;
-import org.chromium.weblayer_private.interfaces.IProfile;
-import org.chromium.weblayer_private.interfaces.IRemoteFragmentClient;
-import org.chromium.weblayer_private.interfaces.ISettingsFragment;
-import org.chromium.weblayer_private.interfaces.ISiteSettingsFragment;
-import org.chromium.weblayer_private.interfaces.IWebLayer;
-import org.chromium.weblayer_private.interfaces.IWebLayerClient;
-import org.chromium.weblayer_private.interfaces.ObjectWrapper;
-import org.chromium.weblayer_private.interfaces.StrictModeWorkaround;
-import org.chromium.weblayer_private.media.MediaRouteDialogFragmentImpl;
-import org.chromium.weblayer_private.media.MediaRouterClientImpl;
-import org.chromium.weblayer_private.media.MediaSessionManager;
-import org.chromium.weblayer_private.media.MediaStreamManager;
-import org.chromium.weblayer_private.metrics.MetricsServiceClient;
-import org.chromium.weblayer_private.metrics.UmaUtils;
-import org.chromium.weblayer_private.settings.SettingsFragmentImpl;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.BundleUtils;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.ContentUriUtils;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.FileUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.PathUtils;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.compat.ApiHelperForO;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.library_loader.LibraryProcessType;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.base.task.BackgroundOnlyAsyncTask;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.task.TaskTraits;
+import org.monyhar.components.browser_ui.contacts_picker.ContactsPickerDialog;
+import org.monyhar.components.browser_ui.photo_picker.DecoderServiceHost;
+import org.monyhar.components.browser_ui.photo_picker.ImageDecoder;
+import org.monyhar.components.browser_ui.photo_picker.PhotoPickerDelegateBase;
+import org.monyhar.components.browser_ui.photo_picker.PhotoPickerDialog;
+import org.monyhar.components.embedder_support.application.ClassLoaderContextWrapperFactory;
+import org.monyhar.components.embedder_support.application.FirebaseConfig;
+import org.monyhar.components.embedder_support.util.Origin;
+import org.monyhar.components.payments.PaymentDetailsUpdateService;
+import org.monyhar.content_public.browser.BrowserStartupController;
+import org.monyhar.content_public.browser.ChildProcessCreationParams;
+import org.monyhar.content_public.browser.ChildProcessLauncherHelper;
+import org.monyhar.content_public.browser.ContactsPicker;
+import org.monyhar.content_public.browser.ContactsPickerListener;
+import org.monyhar.content_public.browser.DeviceUtils;
+import org.monyhar.content_public.browser.SelectionPopupController;
+import org.monyhar.net.NetworkChangeNotifier;
+import org.monyhar.ui.base.PhotoPicker;
+import org.monyhar.ui.base.PhotoPickerListener;
+import org.monyhar.ui.base.ResourceBundle;
+import org.monyhar.ui.base.SelectFileDialog;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.weblayer_private.interfaces.APICallException;
+import org.monyhar.weblayer_private.interfaces.IBrowserFragment;
+import org.monyhar.weblayer_private.interfaces.ICrashReporterController;
+import org.monyhar.weblayer_private.interfaces.IMediaRouteDialogFragment;
+import org.monyhar.weblayer_private.interfaces.IObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.IProfile;
+import org.monyhar.weblayer_private.interfaces.IRemoteFragmentClient;
+import org.monyhar.weblayer_private.interfaces.ISettingsFragment;
+import org.monyhar.weblayer_private.interfaces.ISiteSettingsFragment;
+import org.monyhar.weblayer_private.interfaces.IWebLayer;
+import org.monyhar.weblayer_private.interfaces.IWebLayerClient;
+import org.monyhar.weblayer_private.interfaces.ObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.StrictModeWorkaround;
+import org.monyhar.weblayer_private.media.MediaRouteDialogFragmentImpl;
+import org.monyhar.weblayer_private.media.MediaRouterClientImpl;
+import org.monyhar.weblayer_private.media.MediaSessionManager;
+import org.monyhar.weblayer_private.media.MediaStreamManager;
+import org.monyhar.weblayer_private.metrics.MetricsServiceClient;
+import org.monyhar.weblayer_private.metrics.UmaUtils;
+import org.monyhar.weblayer_private.settings.SettingsFragmentImpl;
 
 import java.io.File;
 import java.io.IOException;
@@ -122,10 +122,10 @@ public final class WebLayerImpl extends IWebLayer.Stub {
     // current WebView implementation. This is only intended for testing, and does not enforce any
     // signature requirements on the implementation, nor does it use the production code path to
     // load the code. Do not set this in production APKs!
-    private static final String PACKAGE_MANIFEST_KEY = "org.chromium.weblayer.WebLayerPackage";
+    private static final String PACKAGE_MANIFEST_KEY = "org.monyhar.weblayer.WebLayerPackage";
     // SharedPreferences key storing the versionCode of the most recently loaded WebLayer library.
     public static final String PREF_LAST_VERSION_CODE =
-            "org.chromium.weblayer.last_version_code_used";
+            "org.monyhar.weblayer.last_version_code_used";
 
     // The required package ID for WebLayer when loaded as a shared library, hardcoded in the
     // resources. If this value changes make sure to change _SHARED_LIBRARY_HARDCODED_ID in
@@ -145,7 +145,7 @@ public final class WebLayerImpl extends IWebLayer.Stub {
     private static class FileProviderHelper implements ContentUriUtils.FileProviderUtil {
         // Keep this variable in sync with the value defined in AndroidManifest.xml.
         private static final String API_AUTHORITY_SUFFIX =
-                ".org.chromium.weblayer.client.FileProvider";
+                ".org.monyhar.weblayer.client.FileProvider";
 
         @Override
         public Uri getContentUriFromFile(File file) {
@@ -681,7 +681,7 @@ public final class WebLayerImpl extends IWebLayer.Stub {
 
         // TODO: The call to onResourcesLoaded() can be slow, we may need to parallelize this with
         // other expensive startup tasks.
-        org.chromium.base.R.onResourcesLoaded(lightPackageId);
+        org.monyhar.base.R.onResourcesLoaded(lightPackageId);
 
         // Wrap the app context so that it can be used to load WebLayer implementation classes.
         appContext = ClassLoaderContextWrapperFactory.get(appContext);
@@ -788,10 +788,10 @@ public final class WebLayerImpl extends IWebLayer.Stub {
         final boolean ignoreVisibilityForImportance = false;
         final String privilegedServicesPackageName = appContext.getPackageName();
         final String privilegedServicesName =
-                "org.chromium.weblayer.ChildProcessService$Privileged";
+                "org.monyhar.weblayer.ChildProcessService$Privileged";
 
         String sandboxedServicesPackageName = appContext.getPackageName();
-        String sandboxedServicesName = "org.chromium.weblayer.ChildProcessService$Sandboxed";
+        String sandboxedServicesName = "org.monyhar.weblayer.ChildProcessService$Sandboxed";
         boolean isExternalService = false;
         boolean loadedFromWebView = wasLoadedFromWebView(appContext);
         if (loadedFromWebView && supportsBindingToWebViewService(appContext, implPackageName)) {
@@ -899,7 +899,7 @@ public final class WebLayerImpl extends IWebLayer.Stub {
         // violations in some situations.
         try (StrictModeContext ignored = StrictModeContext.allowDiskReads()) {
             Class<?> webViewChromiumFactoryProviderClass =
-                    Class.forName("com.android.webview.chromium.WebViewChromiumFactoryProvider",
+                    Class.forName("com.android.webview.monyhar.WebViewChromiumFactoryProvider",
                             true, webViewClassLoader);
             Method setter = webViewChromiumFactoryProviderClass.getDeclaredMethod(
                     "setWebLayerRunningInSameProcess");

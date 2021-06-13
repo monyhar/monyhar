@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.layouts.eventfilter;
+package org.monyhar.chrome.browser.compositor.layouts.eventfilter;
 
 import android.content.Context;
 import android.view.GestureDetector;
@@ -13,11 +13,11 @@ import android.view.ViewGroup;
 import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanel;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanel.PanelState;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanelManager;
-import org.chromium.components.browser_ui.widget.gesture.SwipeGestureListener;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanel;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanel.PanelState;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanelManager;
+import org.monyhar.components.browser_ui.widget.gesture.SwipeGestureListener;
+import org.monyhar.content_public.browser.WebContents;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

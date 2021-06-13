@@ -4,11 +4,11 @@
        in the LICENSE file. -->
   <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:tools="http://schemas.android.com/tools"
-      package="org.chromium.chrome.tests.support">
+      package="org.monyhar.chrome.tests.support">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <application>
-        <activity android:name="org.chromium.chrome.browser.browserservices.ActivityWithDeepLink">
+        <activity android:name="org.monyhar.chrome.browser.browserservices.ActivityWithDeepLink">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT" />
@@ -18,14 +18,14 @@
             </intent-filter>
         </activity>
 
-        <service android:name="org.chromium.chrome.browser.browserservices.TestTrustedWebActivityService"
+        <service android:name="org.monyhar.chrome.browser.browserservices.TestTrustedWebActivityService"
                 android:exported="true">
             <intent-filter>
                 <action android:name="android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </service>
-        <service android:name="org.chromium.chrome.browser.browserservices.MessengerService"
+        <service android:name="org.monyhar.chrome.browser.browserservices.MessengerService"
                 android:exported="true"/>
     </application>
 </manifest>

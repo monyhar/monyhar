@@ -142,7 +142,7 @@ webapk::WebApk_UpdateReason ConvertUpdateReasonToProtoEnum(
 
 // Get Chrome's current ABI. It depends on whether Chrome is running as a 32 bit
 // app or 64 bit, and the device's cpu architecture as well. Note: please keep
-// this function stay in sync with |chromium_android_linker::GetCpuAbi()|.
+// this function stay in sync with |monyhar_android_linker::GetCpuAbi()|.
 std::string getCurrentAbi() {
 #if defined(__arm__) && defined(__ARM_ARCH_7A__)
   return "armeabi-v7a";

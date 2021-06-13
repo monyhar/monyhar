@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.contacts_picker;
+package org.monyhar.components.browser_ui.contacts_picker;
 
 import android.content.Context;
 import android.text.style.StyleSpan;
@@ -13,8 +13,8 @@ import android.widget.CompoundButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import org.chromium.ui.text.SpanApplier;
-import org.chromium.ui.widget.ChipView;
+import org.monyhar.ui.text.SpanApplier;
+import org.monyhar.ui.widget.ChipView;
 
 import java.text.NumberFormat;
 

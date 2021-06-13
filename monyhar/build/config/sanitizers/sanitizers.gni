@@ -76,7 +76,7 @@ declare_args() {
   use_cfi_recover = false
 
   # Compile for fuzzing with LLVM LibFuzzer.
-  # See http://www.chromium.org/developers/testing/libfuzzer
+  # See http://www.monyhar.org/developers/testing/libfuzzer
   use_libfuzzer = false
 
   # Compile for fuzzing with AFL.

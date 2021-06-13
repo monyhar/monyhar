@@ -118,11 +118,11 @@ template("system_webview_apk_or_module_tmpl") {
       shared_resources = true
 
       if (!android_64bit_target_cpu || !_pure_32_bit) {
-        shared_libraries = [ "//android_webview:libwebviewchromium" ]
+        shared_libraries = [ "//android_webview:libwebviewmonyhar" ]
         _include_primary_support = true
       }
       if (android_64bit_target_cpu) {
-        secondary_abi_shared_libraries = [ "//android_webview:libwebviewchromium($android_secondary_abi_toolchain)" ]
+        secondary_abi_shared_libraries = [ "//android_webview:libwebviewmonyhar($android_secondary_abi_toolchain)" ]
         _include_secondary_support = true
       }
       deps += [ "//third_party/icu:icu_assets" ]
@@ -158,9 +158,9 @@ template("system_webview_apk_or_module_tmpl") {
       ]
       loadable_modules = [ "$root_out_dir/libcrashpad_handler_trampoline.so" ]
       if (webview_includes_weblayer) {
-        deps += [ "//base/android/linker:chromium_android_linker" ]
+        deps += [ "//base/android/linker:monyhar_android_linker" ]
         loadable_modules +=
-            [ "$root_out_dir/libchromium_android_linker$shlib_extension" ]
+            [ "$root_out_dir/libmonyhar_android_linker$shlib_extension" ]
       }
     }
     if (_include_secondary_support) {
@@ -173,9 +173,9 @@ template("system_webview_apk_or_module_tmpl") {
       secondary_abi_loadable_modules =
           [ "$_secondary_out_dir/libcrashpad_handler_trampoline.so" ]
       if (webview_includes_weblayer) {
-        deps += [ "//base/android/linker:chromium_android_linker($android_secondary_abi_toolchain)" ]
+        deps += [ "//base/android/linker:monyhar_android_linker($android_secondary_abi_toolchain)" ]
         secondary_abi_loadable_modules +=
-            [ "$_secondary_out_dir/libchromium_android_linker$shlib_extension" ]
+            [ "$_secondary_out_dir/libmonyhar_android_linker$shlib_extension" ]
       }
     }
 
@@ -206,8 +206,8 @@ template("system_webview_apk_or_module_tmpl") {
       }
       proguard_configs += [
         "//android_webview/nonembedded/java/proguard.flags",
-        "//base/android/proguard/chromium_apk.flags",
-        "//base/android/proguard/chromium_code.flags",
+        "//base/android/proguard/monyhar_apk.flags",
+        "//base/android/proguard/monyhar_code.flags",
       ]
       png_to_webp = true
     }

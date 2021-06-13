@@ -12,5 +12,5 @@ More information about the team can be found
 [here](http://go/autofill-assistant-internal).
 
 ## Contact
-The bug component is [UI>Browser>Autofill>Assistant](https://bugs.chromium.org/p/chromium/issues/list?q=component:UI%3EBrowser%3EAutofill%3EAssistant)
+The bug component is [UI>Browser>Autofill>Assistant](https://bugs.monyhar.org/p/monyhar/issues/list?q=component:UI%3EBrowser%3EAutofill%3EAssistant)
 and the team email `autofill_assistant@google.com`.

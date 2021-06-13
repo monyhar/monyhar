@@ -41,20 +41,20 @@ file://ui/android/java/res/LAYOUT_OWNERS
 # on policy definitions (for example, Google's cloud management tools for
 # Chrome and Chrome OS).
 # The rules are documented at:
-# https://sites.google.com/a/chromium.org/dev/developers/how-tos/enterprise/adding-new-policies
+# https://sites.google.com/a/monyhar.org/dev/developers/how-tos/enterprise/adding-new-policies
 file://components/policy/resources/ENTERPRISE_POLICY_OWNERS
 
 # This restriction is in place due to the complicated compliance regulations
 # around this code.
-file://chrome/android/java/src/org/chromium/chrome/browser/searchwidget/COMPLIANCE_OWNERS
+file://chrome/android/java/src/org/monyhar/chrome/browser/searchwidget/COMPLIANCE_OWNERS
 
 # Notification channels appear in system UI and are persisted forever by
 # Android, so should not be added or removed lightly, and the proper
 # deprecation and versioning steps must be taken when doing so.
-file://chrome/browser/notifications/android/java/src/org/chromium/chrome/browser/notifications/channels/NOTIFICATION_CHANNEL_OWNERS
+file://chrome/browser/notifications/android/java/src/org/monyhar/chrome/browser/notifications/channels/NOTIFICATION_CHANNEL_OWNERS
 
 # The Weblayer API is supposed to be stable and will be used outside of the
-# chromium repository.
+# monyhar repository.
 file://weblayer/API_OWNERS
 
 # New features for lock/login UI on Chrome OS need to work stably in all corner

@@ -7,14 +7,14 @@ import sys
 
 # Add //tools/perf/ to system path.
 sys.path.append(os.path.join(os.path.dirname(__file__), os.pardir, os.pardir))
-from chrome_telemetry_build import chromium_config
+from chrome_telemetry_build import monyhar_config
 
 from core import benchmark_runner
 from core import path_util
 
 
 def main():
-  config = chromium_config.ChromiumConfig(
+  config = monyhar_config.ChromiumConfig(
       benchmark_dirs=[path_util.GetOfficialBenchmarksDir(),
                       path_util.GetContribDir()],
       top_level_dir=path_util.GetPerfDir(),

@@ -163,7 +163,7 @@ class Volume {
   // As a minus this would require ugly synchronization between the main thread
   // and the function that is executed on worker_ construction. Current
   // implementation is simimlar to examples in $NACL_SDK_ROOT and according to
-  // https://chromiumcodereview.appspot.com/lint_patch/issue10790078_24001_25013
+  // https://monyharcodereview.appspot.com/lint_patch/issue10790078_24001_25013
   // it should be safe (see TODO(dmichael)). That's because both worker_ and
   // callback_factory_ will be alive during the life of Volume and deleting a
   // Volume is permitted only if there are no requests in progress on

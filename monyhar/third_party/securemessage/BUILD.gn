@@ -19,8 +19,8 @@ source_set("securemessage_openssl") {
   public_deps = [ ":securemessage" ]
   deps = [ "//third_party/boringssl" ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 }
 
 source_set("securemessage") {
@@ -42,8 +42,8 @@ source_set("securemessage") {
     "src/cpp/include/securemessage/util.h",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 }
 
 # The c++ protobuf specific code is separated out from the common code in order
@@ -71,6 +71,6 @@ source_set("securemessage_cpp_protobuf") {
     "proto",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 }

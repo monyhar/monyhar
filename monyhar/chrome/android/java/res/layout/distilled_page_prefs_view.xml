@@ -5,7 +5,7 @@
      found in the LICENSE file.
 -->
 
-<org.chromium.chrome.browser.dom_distiller.DistilledPagePrefsView
+<org.monyhar.chrome.browser.dom_distiller.DistilledPagePrefsView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -89,4 +89,4 @@
 
     </LinearLayout>
 
-</org.chromium.chrome.browser.dom_distiller.DistilledPagePrefsView>
+</org.monyhar.chrome.browser.dom_distiller.DistilledPagePrefsView>

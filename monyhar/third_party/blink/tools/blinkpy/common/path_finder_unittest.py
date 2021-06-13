@@ -10,14 +10,14 @@ from blinkpy.common.system.filesystem_mock import MockFileSystem
 
 
 class TestPathFinder(unittest.TestCase):
-    def test_chromium_base(self):
+    def test_monyhar_base(self):
         finder = PathFinder(MockFileSystem())
-        self.assertEqual(finder.chromium_base(), '/mock-checkout')
+        self.assertEqual(finder.monyhar_base(), '/mock-checkout')
 
-    def test_path_from_chromium_base(self):
+    def test_path_from_monyhar_base(self):
         finder = PathFinder(MockFileSystem())
         self.assertEqual(
-            finder.path_from_chromium_base('foo', 'bar.baz'),
+            finder.path_from_monyhar_base('foo', 'bar.baz'),
             '/mock-checkout/foo/bar.baz')
 
     def test_web_tests_dir(self):

@@ -33,7 +33,7 @@ mimetypes.add_type('image/svg+xml', '.svg')
 # webm video type is not always available if mimetype package is outdated.
 mimetypes.add_type('video/webm', '.webm')
 
-DIST_DEFAULT = 'chromium'
+DIST_DEFAULT = 'monyhar'
 DIST_ENV_VAR = 'CHROMIUM_BUILD'
 DIST_SUBSTR = '%DISTRIBUTION%'
 

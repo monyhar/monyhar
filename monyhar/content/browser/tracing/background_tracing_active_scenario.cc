@@ -467,7 +467,7 @@ void BackgroundTracingActiveScenario::AbortScenario() {
     // send a trigger into the system tracing so that we can tell the time the
     // scenario stopped.
     tracing::PerfettoTracedProcess::Get()->ActivateSystemTriggers(
-        {"org.chromium.background_tracing.scenario_aborted"});
+        {"org.monyhar.background_tracing.scenario_aborted"});
   } else {
     // Setting the kAborted state will cause |this| to be destroyed.
     SetState(State::kAborted);

@@ -111,7 +111,7 @@
 
       Kung itinakda mo ang patakarang ito, gagamitin ng <ph name="PRODUCT_NAME" /> ang ibinigay na direktoryo tinukoy man ng user o hindi ang flag na '--disk-cache-dir'. Upang maiwasan ang pagkawala ng data o iba pang mga hindi inaasahang error, hindi dapat itakda ang patakarang ito sa pangunahing direktoryo ng volume o sa isang direktoryong ginamit para sa iba pang mga layunin, dahil pinamamahalaan ng <ph name="PRODUCT_NAME" /> ang mga content nito.
 
-      Tingnan ang https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables para sa listahan ng mga variable na maaaring gamitin.
+      Tingnan ang https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables para sa listahan ng mga variable na maaaring gamitin.
 
       Kung iniwang hindi nakatakda ang patakarang ito, gagamitin ang default na direktoryo ng cache at magagawa itong i-override ng user gamit ang command line flag na '--disk-cache-dir'.</translation>
 <translation id="113521240853905588">Kino-configure ang mga wikang maaaring gamitin bilang mga mas gustong wika ng <ph name="PRODUCT_OS_NAME" />.
@@ -496,7 +496,7 @@
 <translation id="1852294065645015766">Payagan ang pag-autoplay ng media</translation>
 <translation id="1857152770025485173">Pinipigilan ng patakarang ito ang user sa pag-load ng mga web page mula sa mga naka-blacklist na URL. Nagbibigay ang blacklist ng listahan ng mga pattern ng URL na tumutukoy kung aling mga URL ang iba-blacklist.
 
-      Dapat na naka-format ang pattern ng URL ayon sa https://www.chromium.org/administrators/url-blacklist-filter-format.
+      Dapat na naka-format ang pattern ng URL ayon sa https://www.monyhar.org/administrators/url-blacklist-filter-format.
 
       Maaaring tumukoy ng mga exception sa patakaran sa pag-whitelist ng URL. Limitado sa 1000 entry ang mga patakarang ito; babalewalain ang mga entry na lalampas dito.
 
@@ -539,7 +539,7 @@
 
       Kung hindi iko-configure, idi-disable ang pag-uulat ng mga sukatan at diagnostic na data sa mga hindi pinamamahalaang device at ie-enable ito sa mga pinamamahalaang device.</translation>
 <translation id="1907431809333268751">Nagko-configure sa listahan ng mga pang-enterprise na URL sa pag-log in (HTTP at HTTPS na scheme lang). Kukuha ng fingerprint ng password sa mga URL na ito, at gagamitin ito para sa pagtukoy ng naulit na paggamit ng password.
-      Para makuha nang wasto ng <ph name="PRODUCT_NAME" /> ang mga fingerprint ng password, pakitiyak na sumusunod ang iyong mga page sa pag-log in sa mga alituntunin sa https://www.chromium.org/developers/design-documents/create-amazing-password-forms.
+      Para makuha nang wasto ng <ph name="PRODUCT_NAME" /> ang mga fingerprint ng password, pakitiyak na sumusunod ang iyong mga page sa pag-log in sa mga alituntunin sa https://www.monyhar.org/developers/design-documents/create-amazing-password-forms.
 
       Kung naka-enable ang setting na ito, kukuha ng fingerprint ng password ang serbisyo ng proteksyon sa password sa mga URL na ito para sa pagtukoy ng umulit na paggamit ng password.
       Kung naka-disable o hindi nakatakda ang setting na ito, sa https://accounts.google.com lang kukuha ng fingerprint ng password ang serbisyo ng proteksyon sa password.
@@ -841,7 +841,7 @@
 
       Pinapayagan ng patakarang ito na hindi ihayag ang mga certificate para sa mga hostname sa mga natukoy na URL sa pamamagitan ng Transparency ng Certificate. Nagbibigay-daan ito sa mga certificate, na maaaring maituring na hindi mapagkakatiwalaan dahil hindi maayos na naihayag sa publiko, upang patuloy na magamit, ngunit mas nagiging mahirap na matukoy ang mga certificate na hindi nagamit nang maayos para sa mga host na iyon.
 
-      Naka-format ang isang pattern ng URL alinsunod sa https://www.chromium.org/administrators/url-blacklist-filter-format. Gayunpaman, dahil may bisa ang mga certificate para sa naturang hostname na hiwalay sa scheme, port o path, ang bahagi ng hostname lang ng URL ang kinikilala. Hindi sinusuportahan ang mga wildcard host.
+      Naka-format ang isang pattern ng URL alinsunod sa https://www.monyhar.org/administrators/url-blacklist-filter-format. Gayunpaman, dahil may bisa ang mga certificate para sa naturang hostname na hiwalay sa scheme, port o path, ang bahagi ng hostname lang ng URL ang kinikilala. Hindi sinusuportahan ang mga wildcard host.
 
       Kung hindi nakatakda ang patakarang ito, ang anumang certificate na kinakailangang ihayag sa pamamagitan ng Transparency ng Certificate ay ituturing na hindi pinagkakatiwalaan kung hindi ito inihayag alinsunod sa patakaran sa Transparency ng Certificate.</translation>
 <translation id="2488010520405124654">I-enable ang prompt ng configuration ng network kapag offline.
@@ -1538,7 +1538,7 @@
 
       Kung itatakda mo ang patakarang ito, gagamitin ng <ph name="PRODUCT_NAME" /> ang ibinigay na direktoryo, tumukoy man ang user ng isa o na-enable niya ang flag upang ma-prompt para sa lokasyon ng download sa bawat pagkakataon.
 
-      Tingnan ang https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables para sa isang listahan ng mga variable na magagamit.
+      Tingnan ang https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables para sa isang listahan ng mga variable na magagamit.
 
       Kung hinayaang hindi nakatakda ang patakarang ito, gagamitin ang default na direktoryo ng download at magagawa itong baguhin ng user.</translation>
 <translation id="3805659594028420438">I-enable ang extension ng TLS domain-bound na mga certificate (hindi na ginagamit)</translation>
@@ -1629,7 +1629,7 @@
 
       Kung hindi mo itatakda ang patakarang ito, gagamitin ng <ph name="PRODUCT_NAME" /> ang karaniwang default na directory nito (partikular sa platform).
 
-      Tingnan ang https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables para sa isang listahan ng mga magagamit na variable.</translation>
+      Tingnan ang https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables para sa isang listahan ng mga magagamit na variable.</translation>
 <translation id="3911737181201537215">Walang epekto ang patakarang ito sa pag-log na ginawa ng Android.</translation>
 <translation id="391531815696899618">Dini-disable ang pagsi-sync ng Google Drive sa <ph name="PRODUCT_OS_NAME" /> Files app kapag nakatakda sa True. Sa sitwasyong iyon, walang data na maa-upload sa Google Drive.
 
@@ -1831,7 +1831,7 @@
 
       Kung itatakda mo ang patakarang ito, gagamitin ng <ph name="PRODUCT_NAME" /> ang ibinigay na directory para i-store ang roaming na kopya ng mga profile kung na-enable ang patakarang <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" />. Kung idi-disable o hahayaang hindi nakatakda ang patakarang <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" />, hindi gagamitin ang value na naka-store sa patakarang ito.
 
-      Tingnan ang https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables para sa listahan ng mga variable na puwedeng gamitin.
+      Tingnan ang https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables para sa listahan ng mga variable na puwedeng gamitin.
 
       Kung hahayaang hindi nakatakda ang patakarang ito, gagamitin ang default na path ng roaming profile.</translation>
 <translation id="4239720644496144453">Hindi ginagamit ang cache para sa mga Android app. Kung ii-install ng maraming user ang parehong Android app, ida-download itong muli para sa bawat user.</translation>
@@ -2033,7 +2033,7 @@
 
           Kung hindi nakatakda ang patakarang ito, gagamitin ang default na tagapag-render para sa lahat ng site tulad ng tinukoy sa patakarang 'ChromeFrameRendererSettings.'
 
-          Para sa mga halimbawang pattern, tingnan ang https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Para sa mga halimbawang pattern, tingnan ang https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="467449052039111439">Magbukas ng listahan ng mga URL</translation>
 <translation id="4674871290487541952">Payagan ang mga hindi secure na algorithm sa mga integrity check sa mga pag-update at pag-install ng extension</translation>
 <translation id="4680936297850947973">Hindi na ginagamit sa M68. Gamitin na lang ang DefaultPopupsSetting.
@@ -2677,7 +2677,7 @@ lumagpas na sa partikular na haba ng panahon ang oras na hindi ito nagamit.
 
       Kung itatakda mo ang patakarang ito, gagamitin ng <ph name="PRODUCT_FRAME_NAME" /> ang ibinigay na direktoryo.
 
-      Tingnan ang https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables para sa isang listahan ng mga variable na magagamit.
+      Tingnan ang https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables para sa isang listahan ng mga variable na magagamit.
 
       Kung hinayaang hindi nakatakda ang setting na ito, gagamitin ang default na direktoryo ng profile.</translation>
 <translation id="5826047473100157858">Tinutukoy kung maaaring buksan ng user o hindi ang mga pahina sa mode na Incognito sa <ph name="PRODUCT_NAME" />.
@@ -3259,7 +3259,7 @@ lumagpas na sa partikular na haba ng panahon ang oras na hindi ito nagamit.
 
       Kung itinakda mo ang patakarang ito, gagamitin ng <ph name="PRODUCT_NAME" /> ang ibinigay na direktoryo tinukoy man ng user o hindi ang flag na '--user-data-dir'. Upang maiwasan ang pagkawala ng data o iba pang mga hindi inaasahang error, hindi dapat itakda ang patakarang ito sa pangunahing direktoryo ng volume o sa isang direktoryong ginamit para sa iba pang mga layunin, dahil pinamamahalaan ng <ph name="PRODUCT_NAME" /> ang mga content nito.
 
-      Tingnan ang https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables para sa listahan ng mga variable na maaaring gamitin.
+      Tingnan ang https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables para sa listahan ng mga variable na maaaring gamitin.
 
       Kung iniwang hindi nakatakda ang patakarang ito, gagamitin ang default na path ng profile at magagawa itong i-override ng user gamit ang command line flag na '--user-data-dir'.</translation>
 <translation id="7027785306666625591">I-configure ang pamamahala ng power sa <ph name="PRODUCT_OS_NAME" />.
@@ -4057,7 +4057,7 @@ Ang inirerekomendang paraan upang mag-configure ng patakaran sa Windows ay sa pa
 
           Kung hindi nakatakda ang patakarang ito, gagamitin ang default na tagapag-render para sa lahat ng site tulad ng tinukoy sa patakarang 'ChromeFrameRendererSettings.'
 
-          Para sa mga halimbawang pattern, tingnan ang https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Para sa mga halimbawang pattern, tingnan ang https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="8489964335640955763">PluginVm</translation>
 <translation id="8493645415242333585">Huwag paganahin ang pag-save ng kasaysayan ng browser</translation>
 <translation id="8499172469244085141">Mga Default na Setting (maaaring i-override ng mga user)</translation>

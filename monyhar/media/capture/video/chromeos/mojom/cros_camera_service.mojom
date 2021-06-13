@@ -15,7 +15,7 @@ import "mojo/public/mojom/base/unguessable_token.mojom";
 
 // CameraClientType indicates the type of a CameraHalClient.
 // It should be kept in sync with the ChromeOSCameraClientType enum in
-// tools/metrics/histograms/enums.xml in chromium.
+// tools/metrics/histograms/enums.xml in monyhar.
 [Extensible]
 enum CameraClientType{
   UNKNOWN = 0,

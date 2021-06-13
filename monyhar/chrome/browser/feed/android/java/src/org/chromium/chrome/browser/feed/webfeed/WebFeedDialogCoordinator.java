@@ -2,22 +2,22 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.webfeed;
+package org.monyhar.chrome.browser.feed.webfeed;
 
-import static org.chromium.chrome.browser.feed.webfeed.WebFeedDialogProperties.DETAILS;
-import static org.chromium.chrome.browser.feed.webfeed.WebFeedDialogProperties.ILLUSTRATION;
-import static org.chromium.chrome.browser.feed.webfeed.WebFeedDialogProperties.TITLE;
+import static org.monyhar.chrome.browser.feed.webfeed.WebFeedDialogProperties.DETAILS;
+import static org.monyhar.chrome.browser.feed.webfeed.WebFeedDialogProperties.ILLUSTRATION;
+import static org.monyhar.chrome.browser.feed.webfeed.WebFeedDialogProperties.TITLE;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.feed.webfeed.WebFeedSnackbarController.FeedLauncher;
-import org.chromium.ui.modaldialog.DialogDismissalCause;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.feed.webfeed.WebFeedSnackbarController.FeedLauncher;
+import org.monyhar.ui.modaldialog.DialogDismissalCause;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
 
 /**
  * The coordinator for the WebFeed modal dialog.

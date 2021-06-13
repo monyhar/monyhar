@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.metrics;
+package org.monyhar.base.metrics;
 
 import androidx.test.filters.SmallTest;
 
@@ -11,9 +11,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.library_loader.LibraryLoader;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.MetricsUtils.HistogramDelta;
+import org.monyhar.base.library_loader.LibraryLoader;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.MetricsUtils.HistogramDelta;
 
 /**
  * Tests for the Java API for recording UMA histograms.

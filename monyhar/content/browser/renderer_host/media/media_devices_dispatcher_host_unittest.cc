@@ -616,7 +616,7 @@ TEST_P(MediaDevicesDispatcherHostTest,
   auto config = blink::mojom::CaptureHandleConfig::New();
   config->all_origins_permitted = true;
   config->permitted_origins = {
-      url::Origin::Create(GURL("https://chromium.org:123"))};
+      url::Origin::Create(GURL("https://monyhar.org:123"))};
   EXPECT_CALL(
       *this, MockOnBadMessage(kProcessId,
                               bad_message::MDDH_INVALID_ALL_ORIGINS_PERMITTED));
@@ -626,7 +626,7 @@ TEST_P(MediaDevicesDispatcherHostTest,
 TEST_P(MediaDevicesDispatcherHostTest, SetCaptureHandleConfigWithBadOrigin) {
   auto config = blink::mojom::CaptureHandleConfig::New();
   config->permitted_origins = {
-      url::Origin::Create(GURL("https://chromium.org:999999"))  // Invalid.
+      url::Origin::Create(GURL("https://monyhar.org:999999"))  // Invalid.
   };
   EXPECT_CALL(
       *this,
@@ -640,7 +640,7 @@ TEST_P(MediaDevicesDispatcherHostTest,
   // Valid (and max-length) handle.
   config->capture_handle = MaxLengthCaptureHandle();
   config->permitted_origins = {
-      url::Origin::Create(GURL("https://chromium.org:123")),
+      url::Origin::Create(GURL("https://monyhar.org:123")),
       url::Origin::Create(GURL("ftp://google.com:321"))};
   EXPECT_CALL(*this, MockOnBadMessage(_, _)).Times(0);
   ExpectOnCaptureHandleConfigAccepted(kProcessId, kRenderId, config->Clone());
@@ -652,7 +652,7 @@ TEST_P(MediaDevicesDispatcherHostTest,
   auto config = blink::mojom::CaptureHandleConfig::New();
   config->capture_handle = u"0123456789abcdef";
   config->permitted_origins = {
-      url::Origin::Create(GURL("https://chromium.org:123")),
+      url::Origin::Create(GURL("https://monyhar.org:123")),
       url::Origin::Create(GURL("ftp://google.com:321"))};
   EXPECT_CALL(*this, MockOnBadMessage(_, _)).Times(0);
   ExpectOnCaptureHandleConfigAccepted(kProcessId, kRenderId, config->Clone());

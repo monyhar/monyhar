@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
 import android.content.Context;
 import android.os.ConditionVariable;
 
 import org.junit.Assert;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeClassQualifiedName;
-import org.chromium.net.impl.CronetUrlRequestContext;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeClassQualifiedName;
+import org.monyhar.net.impl.CronetUrlRequestContext;
 
 /**
  * A wrapper class on top of the native net::UploadDataStream. This class is

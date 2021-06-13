@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.carousel;
+package org.monyhar.chrome.browser.omnibox.suggestions.carousel;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -15,10 +15,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.ItemDecoration;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.omnibox.suggestions.header.HeaderView;
-import org.chromium.chrome.browser.util.KeyNavigationUtil;
-import org.chromium.ui.modelutil.SimpleRecyclerViewAdapter;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.omnibox.suggestions.header.HeaderView;
+import org.monyhar.chrome.browser.util.KeyNavigationUtil;
+import org.monyhar.ui.modelutil.SimpleRecyclerViewAdapter;
 
 /**
  * View for Carousel Suggestions.

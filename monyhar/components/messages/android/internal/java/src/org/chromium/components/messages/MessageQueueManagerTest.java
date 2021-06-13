@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.messages;
+package org.monyhar.components.messages;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyBoolean;
@@ -27,14 +27,14 @@ import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.metrics.test.ShadowRecordHistogram;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.components.messages.MessageScopeChange.ChangeType;
-import org.chromium.content_public.browser.Visibility;
-import org.chromium.content_public.browser.test.mock.MockWebContents;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.metrics.test.ShadowRecordHistogram;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.components.messages.MessageScopeChange.ChangeType;
+import org.monyhar.content_public.browser.Visibility;
+import org.monyhar.content_public.browser.test.mock.MockWebContents;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Unit tests for MessageQueueManager.

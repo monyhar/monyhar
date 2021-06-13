@@ -37,7 +37,7 @@ def FetchItemIds(tags, limit):
   """
 
   query = [
-      SWARMING_PATH, 'tasks', '-S', 'chromium-swarm.appspot.com', '-limit',
+      SWARMING_PATH, 'tasks', '-S', 'monyhar-swarm.appspot.com', '-limit',
       str(limit), '-state=COMPLETED', '-field', 'items(task_id)', '-tag',
       'builder_group:{builder_group}'.format(**tags), '-tag',
       'os:{os}'.format(**tags), '-tag',
@@ -60,7 +60,7 @@ def FetchItemData(task_id, benchmark, index, temp_dir):
     A data_frame containing the averages and confidence interval ranges.
   """
   query = [
-      SWARMING_PATH, 'collect', '-S', 'chromium-swarm.appspot.com',
+      SWARMING_PATH, 'collect', '-S', 'monyhar-swarm.appspot.com',
       '-output-dir', temp_dir, '-perf', task_id
   ]
   try:

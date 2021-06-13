@@ -47,7 +47,7 @@ namespace blink {
 // This class decodes video for WebRTC using a media::VideoDecoderStream.
 //
 // VideoDecoderStream is used by almost all non-WebRTC video decoding in
-// chromium.  It handles selecting the decoder implementation, including between
+// monyhar.  It handles selecting the decoder implementation, including between
 // hardware and software implementations.  It also provides fallback / fall-
 // forward between implementations if needed for config changes.
 //

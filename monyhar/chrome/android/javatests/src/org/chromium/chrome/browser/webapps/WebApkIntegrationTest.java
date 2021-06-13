@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps;
+package org.monyhar.chrome.browser.webapps;
 
 import static org.junit.Assert.assertEquals;
 
@@ -20,21 +20,21 @@ import org.junit.Test;
 import org.junit.rules.RuleChain;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.FlakyTest;
-import org.chromium.chrome.browser.flags.ActivityType;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.test.MockCertVerifierRuleAndroid;
-import org.chromium.chrome.test.ChromeActivityTestRule;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.util.ChromeTabUtils;
-import org.chromium.components.webapk.lib.client.WebApkValidator;
-import org.chromium.content_public.browser.test.util.JavaScriptUtils;
-import org.chromium.content_public.common.ContentSwitches;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.FlakyTest;
+import org.monyhar.chrome.browser.flags.ActivityType;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.test.MockCertVerifierRuleAndroid;
+import org.monyhar.chrome.test.ChromeActivityTestRule;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.util.ChromeTabUtils;
+import org.monyhar.components.webapk.lib.client.WebApkValidator;
+import org.monyhar.content_public.browser.test.util.JavaScriptUtils;
+import org.monyhar.content_public.common.ContentSwitches;
 
 import java.util.concurrent.TimeoutException;
 
@@ -74,7 +74,7 @@ public class WebApkIntegrationTest {
         String pageUrl = "https://pwa-directory.appspot.com/defaultresponse";
 
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(pageUrl));
-        intent.setPackage("org.chromium.webapk.test");
+        intent.setPackage("org.monyhar.webapk.test");
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
         InstrumentationRegistry.getTargetContext().startActivity(intent);
@@ -97,7 +97,7 @@ public class WebApkIntegrationTest {
         final String expectedShareUrl = "https://pwa-directory.appspot.com/echoall";
 
         Intent intent = new Intent(Intent.ACTION_SEND);
-        intent.setPackage("org.chromium.webapk.test");
+        intent.setPackage("org.monyhar.webapk.test");
         intent.setType("text/plain");
         intent.putExtra(Intent.EXTRA_SUBJECT, sharedSubject);
         intent.putExtra(Intent.EXTRA_TEXT, sharedText);

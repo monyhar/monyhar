@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar.top;
+package org.monyhar.chrome.browser.toolbar.top;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -11,13 +11,13 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.TraceEvent;
-import org.chromium.chrome.browser.toolbar.R;
-import org.chromium.chrome.browser.toolbar.TabCountProvider;
-import org.chromium.chrome.browser.toolbar.TabSwitcherDrawable;
-import org.chromium.components.browser_ui.widget.highlight.PulseDrawable;
-import org.chromium.components.browser_ui.widget.listmenu.ListMenuButton;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.chrome.browser.toolbar.R;
+import org.monyhar.chrome.browser.toolbar.TabCountProvider;
+import org.monyhar.chrome.browser.toolbar.TabSwitcherDrawable;
+import org.monyhar.components.browser_ui.widget.highlight.PulseDrawable;
+import org.monyhar.components.browser_ui.widget.listmenu.ListMenuButton;
+import org.monyhar.ui.widget.Toast;
 
 /**
  * A button displaying the number of open tabs. Clicking the button toggles the tab switcher view.

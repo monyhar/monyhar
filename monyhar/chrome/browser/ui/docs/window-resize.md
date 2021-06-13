@@ -22,7 +22,7 @@ https://crbug.com/837247
 ---
 ## BrowserWindow.Resize.Duration
 * units: milliseconds
-* owners: sadrul@chromium.org, mustash-team@google.com
+* owners: sadrul@monyhar.org, mustash-team@google.com
 * added: 2018-01-01
 * expires: 2018-08-31
 * os: windows
@@ -33,7 +33,7 @@ Duration of an interactive resize from start to end. Measured only on Windows.
 ---
 ## BrowserWindow.Resize.StepBoundsChange
 * units: pixels
-* owners: sadrul@chromium.org
+* owners: sadrul@monyhar.org
 * added: 2018-01-01
 * expires: 2018-08-31
 * os: windows
@@ -45,7 +45,7 @@ Measured only on Windows.
 ---
 ## BrowserWindow.Resize.StepCount
 * units: steps
-* owners: sadrul@chromium.org
+* owners: sadrul@monyhar.org
 * added: 2018-01-01
 * expires: 2018-08-31
 * os: windows
@@ -57,7 +57,7 @@ end. Measured only on Windows.
 ---
 ## BrowserWindow.Resize.StepInterval
 * units: milliseconds
-* owners: sadrul@chromium.org
+* owners: sadrul@monyhar.org
 * added: 2018-01-01
 * expires: 2018-08-31
 * os: windows

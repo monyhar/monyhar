@@ -21,11 +21,11 @@ setuptools.setup(
         'six >= 1.10',
     ],
     author='The Chromium Authors',
-    author_email='chromium-dev@chromium.org',
+    author_email='monyhar-dev@monyhar.org',
     description=('Google Resource and Internationalization Tool for managing '
                  'translations & resource files'),
     license='BSD-3',
-    url='https://chromium.googlesource.com/chromium/src/tools/grit/',
+    url='https://monyhar.googlesource.com/monyhar/src/tools/grit/',
     classifiers=[
         'Development Status :: 6 - Mature',
         'Environment :: Console',

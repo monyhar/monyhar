@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.bottombar.contextualsearch;
+package org.monyhar.chrome.browser.compositor.bottombar.contextualsearch;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.content.Context;
 import android.view.ViewGroup;
 
-import org.chromium.base.MathUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanel;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanelAnimation;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanelInflater;
-import org.chromium.chrome.browser.layouts.animation.CompositorAnimator;
-import org.chromium.ui.resources.dynamics.DynamicResourceLoader;
+import org.monyhar.base.MathUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanel;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanelAnimation;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanelInflater;
+import org.monyhar.chrome.browser.layouts.animation.CompositorAnimator;
+import org.monyhar.ui.resources.dynamics.DynamicResourceLoader;
 
 /**
  * Controls the Search Bar Banner, which presents a banner above the Bar.

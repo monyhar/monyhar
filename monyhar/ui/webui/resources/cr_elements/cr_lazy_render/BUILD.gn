@@ -30,7 +30,7 @@ js_type_check("closure_compile_module") {
 js_library("cr_lazy_render.m") {
   sources = [ "$root_gen_dir/ui/webui/resources/cr_elements/cr_lazy_render/cr_lazy_render.m.js" ]
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   extra_deps = [ ":cr_lazy_render_module" ]
 }

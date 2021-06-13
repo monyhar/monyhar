@@ -22,5 +22,5 @@ shift
 out="$base_dir/$id.txt"
 mkdir -p "$base_dir"
 tools/luci-go/swarming collect -task-output-stdout=console \
-    -S chromium-swarm.appspot.com "$id" > "$out"
+    -S monyhar-swarm.appspot.com "$id" > "$out"
 echo "$out"

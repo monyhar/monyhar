@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps.launchpad;
+package org.monyhar.chrome.browser.webapps.launchpad;
 
 import static org.mockito.Mockito.mock;
 
@@ -21,11 +21,11 @@ import org.mockito.junit.MockitoRule;
 import org.robolectric.Robolectric;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.supplier.ObservableSupplierImpl;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.ui.modaldialog.ModalDialogManager;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.supplier.ObservableSupplierImpl;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -65,7 +65,7 @@ public class LaunchpadCoordinatorTest {
     @Before
     public void setUp() {
         mActivity = Robolectric.buildActivity(Activity.class).setup().get();
-        mActivity.setTheme(org.chromium.chrome.R.style.Theme_MaterialComponents);
+        mActivity.setTheme(org.monyhar.chrome.R.style.Theme_MaterialComponents);
     }
 
     private LaunchpadCoordinator createCoordinator(boolean isSeparateActivity) {

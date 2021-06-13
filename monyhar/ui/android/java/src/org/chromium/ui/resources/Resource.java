@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.resources;
+package org.monyhar.ui.resources;
 
 import android.graphics.Bitmap;
 import android.graphics.Rect;
 
-import org.chromium.ui.resources.statics.NinePatchData;
+import org.monyhar.ui.resources.statics.NinePatchData;
 
 /**
  * A basic resource interface that all assets must use to be exposed to the CC layer as

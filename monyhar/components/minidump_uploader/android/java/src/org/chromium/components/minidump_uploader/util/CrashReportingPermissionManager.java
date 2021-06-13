@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.minidump_uploader.util;
+package org.monyhar.components.minidump_uploader.util;
 
 /**
  * Interface for crash reporting permissions.
@@ -10,7 +10,7 @@ package org.chromium.components.minidump_uploader.util;
 public interface CrashReportingPermissionManager {
     /**
      * Checks whether this client is in-sample for usage metrics and crash reporting. See
-     * {@link org.chromium.chrome.browser.metrics.UmaUtils#isClientInMetricsSample} for details.
+     * {@link org.monyhar.chrome.browser.metrics.UmaUtils#isClientInMetricsSample} for details.
      *
      * @returns boolean Whether client is in-sample.
      */

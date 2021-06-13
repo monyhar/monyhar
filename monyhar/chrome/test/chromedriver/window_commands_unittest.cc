@@ -282,7 +282,7 @@ class AddCookieWebView : public StubWebView {
 }  // namespace
 
 TEST(WindowCommandsTest, ExecuteAddCookie_Valid) {
-  AddCookieWebView webview = AddCookieWebView("http://chromium.org");
+  AddCookieWebView webview = AddCookieWebView("http://monyhar.org");
   base::DictionaryValue params;
   std::unique_ptr<base::DictionaryValue> cookie_params =
       std::make_unique<base::DictionaryValue>();
@@ -297,7 +297,7 @@ TEST(WindowCommandsTest, ExecuteAddCookie_Valid) {
 }
 
 TEST(WindowCommandsTest, ExecuteAddCookie_NameMissing) {
-  AddCookieWebView webview = AddCookieWebView("http://chromium.org");
+  AddCookieWebView webview = AddCookieWebView("http://monyhar.org");
   base::DictionaryValue params;
   std::unique_ptr<base::DictionaryValue> cookie_params =
       std::make_unique<base::DictionaryValue>();
@@ -313,7 +313,7 @@ TEST(WindowCommandsTest, ExecuteAddCookie_NameMissing) {
 }
 
 TEST(WindowCommandsTest, ExecuteAddCookie_MissingValue) {
-  AddCookieWebView webview = AddCookieWebView("http://chromium.org");
+  AddCookieWebView webview = AddCookieWebView("http://monyhar.org");
   base::DictionaryValue params;
   std::unique_ptr<base::DictionaryValue> cookie_params =
       std::make_unique<base::DictionaryValue>();
@@ -329,7 +329,7 @@ TEST(WindowCommandsTest, ExecuteAddCookie_MissingValue) {
 }
 
 TEST(WindowCommandsTest, ExecuteAddCookie_DomainInvalid) {
-  AddCookieWebView webview = AddCookieWebView("file://chromium.org");
+  AddCookieWebView webview = AddCookieWebView("file://monyhar.org");
   base::DictionaryValue params;
   std::unique_ptr<base::DictionaryValue> cookie_params =
       std::make_unique<base::DictionaryValue>();
@@ -344,7 +344,7 @@ TEST(WindowCommandsTest, ExecuteAddCookie_DomainInvalid) {
 }
 
 TEST(WindowCommandsTest, ExecuteAddCookie_SameSiteEmpty) {
-  AddCookieWebView webview = AddCookieWebView("https://chromium.org");
+  AddCookieWebView webview = AddCookieWebView("https://monyhar.org");
   base::DictionaryValue params;
   std::unique_ptr<base::DictionaryValue> cookie_params =
       std::make_unique<base::DictionaryValue>();
@@ -359,7 +359,7 @@ TEST(WindowCommandsTest, ExecuteAddCookie_SameSiteEmpty) {
 }
 
 TEST(WindowCommandsTest, ExecuteAddCookie_SameSiteNotSet) {
-  AddCookieWebView webview = AddCookieWebView("ftp://chromium.org");
+  AddCookieWebView webview = AddCookieWebView("ftp://monyhar.org");
   base::DictionaryValue params;
   std::unique_ptr<base::DictionaryValue> cookie_params =
       std::make_unique<base::DictionaryValue>();

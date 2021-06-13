@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar;
+package org.monyhar.chrome.browser.toolbar;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -26,16 +26,16 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.supplier.ObservableSupplierImpl;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.homepage.HomepageManager;
-import org.chromium.chrome.browser.homepage.HomepageTestRule;
-import org.chromium.chrome.browser.homepage.settings.HomepageSettings;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.util.browser.Features;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.ui.test.util.DummyUiActivityTestCase;
+import org.monyhar.base.supplier.ObservableSupplierImpl;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.homepage.HomepageManager;
+import org.monyhar.chrome.browser.homepage.HomepageTestRule;
+import org.monyhar.chrome.browser.homepage.settings.HomepageSettings;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.util.browser.Features;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.ui.test.util.DummyUiActivityTestCase;
 
 /**
  * Test related to {@link HomeButton}.
@@ -70,7 +70,7 @@ public class HomeButtonTest extends DummyUiActivityTestCase {
 
         // Set the default test status for homepage button tests.
         // By default, the homepage is <b>enabled</b> and with customized URL.
-        mHomepageTestRule.useCustomizedHomepageForTest("https://www.chromium.org/");
+        mHomepageTestRule.useCustomizedHomepageForTest("https://www.monyhar.org/");
 
         TestThreadUtils.runOnUiThreadBlocking(() -> {
             FrameLayout content = new FrameLayout(getActivity());

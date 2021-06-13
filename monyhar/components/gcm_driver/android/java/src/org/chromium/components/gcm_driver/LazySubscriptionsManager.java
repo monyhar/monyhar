@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.gcm_driver;
+package org.monyhar.components.gcm_driver;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -13,9 +13,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.StrictModeContext;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.StrictModeContext;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -34,7 +34,7 @@ public class LazySubscriptionsManager {
     private static final String SUBSCRIPTIONS_WITH_PERSISTED_MESSAGES_KEY =
             "subscriptions_with_persisted_messages";
     private static final String PREF_PACKAGE =
-            "org.chromium.components.gcm_driver.lazy_subscriptions";
+            "org.monyhar.components.gcm_driver.lazy_subscriptions";
     private static final String INVALIDATION_APP_ID = "com.google.chrome.fcm.invalidations";
     private static final String INVALIDATION_SENDER_ID = "8181035976";
 

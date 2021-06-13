@@ -193,7 +193,7 @@ Even discovering the full set of UI present for each platform in Chrome is
     *    A `DialogBrowserTest` for every descendant of `views::DialogDelegate`.
 
 *   Automatically generate screenshots (for each platform, in various languages)
-    *    Build upon [CL 2008283002](https://codereview.chromium.org/2008283002/)
+    *    Build upon [CL 2008283002](https://codereview.monyhar.org/2008283002/)
 
 *   (maybe) Try removing the subprocess
     *    Probably requires altering the browser_test suite code directly rather
@@ -282,8 +282,8 @@ SUCCESS: all tests passed.
  */
 ```
 
-[chrome/browser/ui/test/test_browser_ui.h]: https://cs.chromium.org/chromium/src/chrome/browser/ui/test/test_browser_ui.h
-[chrome/browser/ui/test/test_browser_dialog.h]: https://cs.chromium.org/chromium/src/chrome/browser/ui/test/test_browser_dialog.h
-[chrome/browser/ui/ask_google_for_suggestions_dialog_browsertest.cc]: https://cs.chromium.org/chromium/src/chrome/browser/ui/ask_google_for_suggestions_dialog_browsertest.cc?l=18&q=ShowUi
-[chrome/browser/infobars/infobars_browsertest.cc]: https://cs.chromium.org/chromium/src/chrome/browser/infobars/infobars_browsertest.cc?l=134&q=UiBrowserTest
-[ExtensionBrowserTest]: https://cs.chromium.org/chromium/src/chrome/browser/extensions/extension_browsertest.h?q=extensionbrowsertest&l=40
+[chrome/browser/ui/test/test_browser_ui.h]: https://cs.monyhar.org/monyhar/src/chrome/browser/ui/test/test_browser_ui.h
+[chrome/browser/ui/test/test_browser_dialog.h]: https://cs.monyhar.org/monyhar/src/chrome/browser/ui/test/test_browser_dialog.h
+[chrome/browser/ui/ask_google_for_suggestions_dialog_browsertest.cc]: https://cs.monyhar.org/monyhar/src/chrome/browser/ui/ask_google_for_suggestions_dialog_browsertest.cc?l=18&q=ShowUi
+[chrome/browser/infobars/infobars_browsertest.cc]: https://cs.monyhar.org/monyhar/src/chrome/browser/infobars/infobars_browsertest.cc?l=134&q=UiBrowserTest
+[ExtensionBrowserTest]: https://cs.monyhar.org/monyhar/src/chrome/browser/extensions/extension_browsertest.h?q=extensionbrowsertest&l=40

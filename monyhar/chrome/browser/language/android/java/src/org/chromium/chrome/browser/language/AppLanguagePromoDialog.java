@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.language;
+package org.monyhar.chrome.browser.language;
 
 import android.app.Activity;
 import android.content.res.Resources;
@@ -17,16 +17,16 @@ import androidx.annotation.IntDef;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.language.settings.LanguageItem;
-import org.chromium.chrome.browser.language.settings.LanguagesManager;
-import org.chromium.chrome.browser.translate.TranslateBridge;
-import org.chromium.components.language.GeoLanguageProviderBridge;
-import org.chromium.ui.modaldialog.DialogDismissalCause;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.modaldialog.ModalDialogProperties;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.language.settings.LanguageItem;
+import org.monyhar.chrome.browser.language.settings.LanguagesManager;
+import org.monyhar.chrome.browser.translate.TranslateBridge;
+import org.monyhar.components.language.GeoLanguageProviderBridge;
+import org.monyhar.ui.modaldialog.DialogDismissalCause;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.modaldialog.ModalDialogProperties;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

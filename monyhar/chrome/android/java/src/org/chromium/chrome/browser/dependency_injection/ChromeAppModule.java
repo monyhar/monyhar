@@ -2,26 +2,26 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.dependency_injection;
+package org.monyhar.chrome.browser.dependency_injection;
 
-import static org.chromium.chrome.browser.dependency_injection.ChromeCommonQualifiers.APP_CONTEXT;
-import static org.chromium.chrome.browser.dependency_injection.ChromeCommonQualifiers.LAST_USED_REGULAR_PROFILE;
+import static org.monyhar.chrome.browser.dependency_injection.ChromeCommonQualifiers.APP_CONTEXT;
+import static org.monyhar.chrome.browser.dependency_injection.ChromeCommonQualifiers.LAST_USED_REGULAR_PROFILE;
 
 import android.content.Context;
 
 import androidx.browser.trusted.TrustedWebActivityServiceConnectionPool;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.chrome.browser.WarmupManager;
-import org.chromium.chrome.browser.app.tabmodel.AsyncTabParamsManagerSingleton;
-import org.chromium.chrome.browser.browserservices.permissiondelegation.TrustedWebActivityPermissionStore;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
-import org.chromium.chrome.browser.night_mode.SystemNightModeMonitor;
-import org.chromium.chrome.browser.notifications.channels.SiteChannelsManager;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tabmodel.AsyncTabParamsManager;
-import org.chromium.chrome.browser.webapps.WebappRegistry;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.chrome.browser.WarmupManager;
+import org.monyhar.chrome.browser.app.tabmodel.AsyncTabParamsManagerSingleton;
+import org.monyhar.chrome.browser.browserservices.permissiondelegation.TrustedWebActivityPermissionStore;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.chrome.browser.night_mode.SystemNightModeMonitor;
+import org.monyhar.chrome.browser.notifications.channels.SiteChannelsManager;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tabmodel.AsyncTabParamsManager;
+import org.monyhar.chrome.browser.webapps.WebappRegistry;
 
 import javax.inject.Named;
 import javax.inject.Singleton;

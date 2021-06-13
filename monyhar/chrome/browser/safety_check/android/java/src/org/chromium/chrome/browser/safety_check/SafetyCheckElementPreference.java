@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.safety_check;
+package org.monyhar.chrome.browser.safety_check;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -12,8 +12,8 @@ import android.widget.ImageView;
 import androidx.annotation.DrawableRes;
 import androidx.preference.PreferenceViewHolder;
 
-import org.chromium.base.Callback;
-import org.chromium.components.browser_ui.settings.ChromeBasePreference;
+import org.monyhar.base.Callback;
+import org.monyhar.components.browser_ui.settings.ChromeBasePreference;
 
 /**
  * A {@link Preference} for each Safety check element. In addition to the

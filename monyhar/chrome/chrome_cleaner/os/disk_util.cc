@@ -636,7 +636,7 @@ void GetLayeredServiceProviders(const LayeredServiceProviderAPI& lsp_api,
 }
 
 // Code adapted from:
-// https://cs.chromium.org/chromium/src/chrome/installer/setup/setup_util.cc
+// https://cs.monyhar.org/monyhar/src/chrome/installer/setup/setup_util.cc
 bool DeleteFileFromTempProcess(const base::FilePath& path,
                                uint32_t delay_before_delete_ms,
                                base::win::ScopedHandle* process_handle) {

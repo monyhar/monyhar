@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.night_mode;
+package org.monyhar.chrome.browser.night_mode;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -13,9 +13,9 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import static org.chromium.base.ApplicationState.HAS_RUNNING_ACTIVITIES;
-import static org.chromium.base.ApplicationState.HAS_STOPPED_ACTIVITIES;
-import static org.chromium.chrome.browser.preferences.ChromePreferenceKeys.UI_THEME_SETTING;
+import static org.monyhar.base.ApplicationState.HAS_RUNNING_ACTIVITIES;
+import static org.monyhar.base.ApplicationState.HAS_STOPPED_ACTIVITIES;
+import static org.monyhar.chrome.browser.preferences.ChromePreferenceKeys.UI_THEME_SETTING;
 
 import android.os.Build;
 
@@ -28,9 +28,9 @@ import org.mockito.MockitoAnnotations;
 import org.mockito.stubbing.VoidAnswer1;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
 
 /**
  * Unit tests for {@link GlobalNightModeStateController}.

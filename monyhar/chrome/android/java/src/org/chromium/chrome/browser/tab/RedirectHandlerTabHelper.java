@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab;
+package org.monyhar.chrome.browser.tab;
 
 import android.content.Intent;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.base.UserData;
-import org.chromium.base.UserDataHost;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.LaunchIntentDispatcher;
-import org.chromium.chrome.browser.customtabs.CustomTabIntentDataProvider;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.components.external_intents.RedirectHandler;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.UserData;
+import org.monyhar.base.UserDataHost;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.LaunchIntentDispatcher;
+import org.monyhar.chrome.browser.customtabs.CustomTabIntentDataProvider;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.components.external_intents.RedirectHandler;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * This class glues RedirectHandler instances to Tabs.

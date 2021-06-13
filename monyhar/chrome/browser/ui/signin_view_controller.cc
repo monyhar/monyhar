@@ -285,7 +285,7 @@ void SigninViewController::ShowDiceSigninTab(
     DCHECK(google_apis::HasOAuthClientConfigured())
         << "You must configure the OAuth client ID and client secret in order "
            "to sign in to Chromium. See instruction at "
-           "https://www.chromium.org/developers/how-tos/api-keys";
+           "https://www.monyhar.org/developers/how-tos/api-keys";
 
     // Account consistency mode does not support signing in to Chrome due to
     // some other unexpected reason. Signing in to Chrome is not supported.

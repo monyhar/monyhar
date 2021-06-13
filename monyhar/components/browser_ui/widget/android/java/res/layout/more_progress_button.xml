@@ -3,13 +3,13 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
 
-<org.chromium.components.browser_ui.widget.MoreProgressButton
+<org.monyhar.components.browser_ui.widget.MoreProgressButton
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:focusable="false">
-    <org.chromium.ui.widget.ButtonCompat
+    <org.monyhar.ui.widget.ButtonCompat
         style="@style/ListActionButton"
         android:id="@+id/action_button"
         android:layout_width="wrap_content"
@@ -22,4 +22,4 @@
         android:id="@+id/progress_spinner"
         layout="@layout/indeterminate_progress_view" />
 
-</org.chromium.components.browser_ui.widget.MoreProgressButton>
+</org.monyhar.components.browser_ui.widget.MoreProgressButton>

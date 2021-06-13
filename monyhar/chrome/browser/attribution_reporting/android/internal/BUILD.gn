@@ -2,11 +2,11 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/attribution_reporting/AttributionIntentHandlerFactory.java",
-    "java/src/org/chromium/chrome/browser/attribution_reporting/AttributionIntentHandlerImpl.java",
-    "java/src/org/chromium/chrome/browser/attribution_reporting/AttributionReportingProviderImpl.java",
-    "java/src/org/chromium/chrome/browser/attribution_reporting/InputEventValidator.java",
-    "java/src/org/chromium/chrome/browser/attribution_reporting/NoopAttributionIntentHandler.java",
+    "java/src/org/monyhar/chrome/browser/attribution_reporting/AttributionIntentHandlerFactory.java",
+    "java/src/org/monyhar/chrome/browser/attribution_reporting/AttributionIntentHandlerImpl.java",
+    "java/src/org/monyhar/chrome/browser/attribution_reporting/AttributionReportingProviderImpl.java",
+    "java/src/org/monyhar/chrome/browser/attribution_reporting/InputEventValidator.java",
+    "java/src/org/monyhar/chrome/browser/attribution_reporting/NoopAttributionIntentHandler.java",
   ]
   deps = [
     "//base:base_java",
@@ -23,9 +23,9 @@ android_library("junit_tests") {
   testonly = true
 
   sources = [
-    "java/src/org/chromium/chrome/browser/attribution_reporting/AttributionIntentHandlerImplTest.java",
+    "java/src/org/monyhar/chrome/browser/attribution_reporting/AttributionIntentHandlerImplTest.java",
     # TODO(https://crbug.com/1198308): Compile and run this test suite once Robolectric supports R.
-    # "java/src/org/chromium/chrome/browser/attribution_reporting/InputEventValidatorTest.java",
+    # "java/src/org/monyhar/chrome/browser/attribution_reporting/InputEventValidatorTest.java",
   ]
 
   deps = [
@@ -44,8 +44,8 @@ android_library("junit_tests") {
 android_library("javatests") {
   testonly = true
   sources = [
-    "java/src/org/chromium/chrome/browser/attribution_reporting/AttributionReportingProviderImplTest.java",
-    "java/src/org/chromium/chrome/browser/attribution_reporting/InputEventValidatorManualTest.java",
+    "java/src/org/monyhar/chrome/browser/attribution_reporting/AttributionReportingProviderImplTest.java",
+    "java/src/org/monyhar/chrome/browser/attribution_reporting/InputEventValidatorManualTest.java",
   ]
 
   deps = [

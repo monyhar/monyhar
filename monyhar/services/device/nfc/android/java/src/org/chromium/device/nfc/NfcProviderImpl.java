@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.device.nfc;
+package org.monyhar.device.nfc;
 
-import org.chromium.device.mojom.Nfc;
-import org.chromium.device.mojom.NfcProvider;
-import org.chromium.mojo.bindings.InterfaceRequest;
-import org.chromium.mojo.system.MojoException;
-import org.chromium.services.service_manager.InterfaceFactory;
+import org.monyhar.device.mojom.Nfc;
+import org.monyhar.device.mojom.NfcProvider;
+import org.monyhar.mojo.bindings.InterfaceRequest;
+import org.monyhar.mojo.system.MojoException;
+import org.monyhar.services.service_manager.InterfaceFactory;
 
 /**
  * Android implementation of the NfcProvider Mojo interface.

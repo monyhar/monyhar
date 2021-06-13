@@ -49,7 +49,7 @@ tempfile filter_file
 cat << EOF > ${filter_file}
 google.patch
 update_google_patch.sh
-README.chromium
+README.monyhar
 EOF
 
 # List of all files changed relative to upstream in current branch.

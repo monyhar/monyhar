@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.modelutil;
+package org.monyhar.ui.modelutil;
 
-import org.chromium.ui.modelutil.PropertyObservable.PropertyObserver;
+import org.monyhar.ui.modelutil.PropertyObservable.PropertyObserver;
 
 /**
  * A model change processor for use with a {@link PropertyObservable} model. The

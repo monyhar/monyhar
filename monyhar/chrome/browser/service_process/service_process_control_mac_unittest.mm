@@ -13,7 +13,7 @@
 #include "testing/gtest/include/gtest/gtest.h"
 
 TEST(ServiceProcessControlMac, TestJobSubmitRemove) {
-  NSString* label_ns = @"com.chromium.ServiceProcessStateFileManipulationTest";
+  NSString* label_ns = @"com.monyhar.ServiceProcessStateFileManipulationTest";
   std::string label(label_ns.UTF8String);
 
   // If the job is loaded or running, remove it.

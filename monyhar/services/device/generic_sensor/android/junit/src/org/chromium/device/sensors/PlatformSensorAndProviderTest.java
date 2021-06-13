@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.device.sensors;
+package org.monyhar.device.sensors;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -36,10 +36,10 @@ import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.Feature;
-import org.chromium.device.mojom.ReportingMode;
-import org.chromium.device.mojom.SensorType;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.device.mojom.ReportingMode;
+import org.monyhar.device.mojom.SensorType;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import android.app.Activity;
 import android.app.PendingIntent;
@@ -32,20 +32,20 @@ import androidx.browser.trusted.TrustedWebActivityIntentBuilder;
 import androidx.browser.trusted.sharing.ShareData;
 import androidx.browser.trusted.sharing.ShareTarget;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.base.Log;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.browserservices.intents.ColorProvider;
-import org.chromium.chrome.browser.browserservices.intents.CustomButtonParams;
-import org.chromium.chrome.browser.flags.ActivityType;
-import org.chromium.chrome.browser.version.ChromeVersionInfo;
-import org.chromium.components.browser_ui.widget.TintedDrawable;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.device.mojom.ScreenOrientationLockType;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.browserservices.intents.ColorProvider;
+import org.monyhar.chrome.browser.browserservices.intents.CustomButtonParams;
+import org.monyhar.chrome.browser.flags.ActivityType;
+import org.monyhar.chrome.browser.version.ChromeVersionInfo;
+import org.monyhar.components.browser_ui.widget.TintedDrawable;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.device.mojom.ScreenOrientationLockType;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -100,34 +100,34 @@ public class CustomTabIntentDataProvider extends BrowserServicesIntentDataProvid
 
     /** URL that should be loaded in place of the URL passed along in the data. */
     public static final String EXTRA_MEDIA_VIEWER_URL =
-            "org.chromium.chrome.browser.customtabs.MEDIA_VIEWER_URL";
+            "org.monyhar.chrome.browser.customtabs.MEDIA_VIEWER_URL";
 
     /** Extra that enables embedded media experience. */
     public static final String EXTRA_ENABLE_EMBEDDED_MEDIA_EXPERIENCE =
-            "org.chromium.chrome.browser.customtabs.EXTRA_ENABLE_EMBEDDED_MEDIA_EXPERIENCE";
+            "org.monyhar.chrome.browser.customtabs.EXTRA_ENABLE_EMBEDDED_MEDIA_EXPERIENCE";
 
     /** Indicates the type of UI Custom Tab should use. */
     public static final String EXTRA_UI_TYPE =
-            "org.chromium.chrome.browser.customtabs.EXTRA_UI_TYPE";
+            "org.monyhar.chrome.browser.customtabs.EXTRA_UI_TYPE";
 
     /** Extra that defines the initial background color (RGB color stored as an integer). */
     public static final String EXTRA_INITIAL_BACKGROUND_COLOR =
-            "org.chromium.chrome.browser.customtabs.EXTRA_INITIAL_BACKGROUND_COLOR";
+            "org.monyhar.chrome.browser.customtabs.EXTRA_INITIAL_BACKGROUND_COLOR";
 
     /** Extra that enables the client to disable the star button in menu. */
     public static final String EXTRA_DISABLE_STAR_BUTTON =
-            "org.chromium.chrome.browser.customtabs.EXTRA_DISABLE_STAR_BUTTON";
+            "org.monyhar.chrome.browser.customtabs.EXTRA_DISABLE_STAR_BUTTON";
 
     /** Extra that enables the client to disable the download button in menu. */
     public static final String EXTRA_DISABLE_DOWNLOAD_BUTTON =
-            "org.chromium.chrome.browser.customtabs.EXTRA_DISABLE_DOWNLOAD_BUTTON";
+            "org.monyhar.chrome.browser.customtabs.EXTRA_DISABLE_DOWNLOAD_BUTTON";
 
     /**
      * Indicates the source where the Custom Tab is launched. The value is defined as
      * {@link LaunchSourceType}.
      */
     public static final String EXTRA_BROWSER_LAUNCH_SOURCE =
-            "org.chromium.chrome.browser.customtabs.EXTRA_BROWSER_LAUNCH_SOURCE";
+            "org.monyhar.chrome.browser.customtabs.EXTRA_BROWSER_LAUNCH_SOURCE";
 
     // TODO(yusufo): Move this to CustomTabsIntent.
     /** Signals custom tabs to favor sending initial urls to external handler apps if possible. */
@@ -157,7 +157,7 @@ public class CustomTabIntentDataProvider extends BrowserServicesIntentDataProvid
     // Extra whose value is an array of ints that is supplied to
     // SyntheticTrialRegistry::RegisterExternalExperiments().
     public static final String EXPERIMENT_IDS =
-            "org.chromium.chrome.browser.customtabs.AGA_EXPERIMENT_IDS";
+            "org.monyhar.chrome.browser.customtabs.AGA_EXPERIMENT_IDS";
 
     private final Intent mIntent;
     private final CustomTabsSessionToken mSession;

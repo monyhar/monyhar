@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.selection;
+package org.monyhar.content.browser.selection;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -31,39 +31,39 @@ import android.view.textclassifier.TextClassifier;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.BuildInfo;
-import org.chromium.base.Log;
-import org.chromium.base.PackageManagerUtils;
-import org.chromium.base.UserData;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.compat.ApiHelperForM;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.content.R;
-import org.chromium.content.browser.ContentApiHelperForM;
-import org.chromium.content.browser.ContentClassFactory;
-import org.chromium.content.browser.GestureListenerManagerImpl;
-import org.chromium.content.browser.PopupController;
-import org.chromium.content.browser.PopupController.HideablePopup;
-import org.chromium.content.browser.WindowEventObserver;
-import org.chromium.content.browser.WindowEventObserverManager;
-import org.chromium.content.browser.input.ImeAdapterImpl;
-import org.chromium.content.browser.webcontents.WebContentsImpl;
-import org.chromium.content.browser.webcontents.WebContentsImpl.UserDataFactory;
-import org.chromium.content_public.browser.ActionModeCallbackHelper;
-import org.chromium.content_public.browser.ImeEventObserver;
-import org.chromium.content_public.browser.SelectionClient;
-import org.chromium.content_public.browser.SelectionPopupController;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.Clipboard;
-import org.chromium.ui.base.DeviceFormFactor;
-import org.chromium.ui.base.MenuSourceType;
-import org.chromium.ui.base.ViewAndroidDelegate;
-import org.chromium.ui.base.ViewAndroidDelegate.ContainerViewObserver;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.touch_selection.SelectionEventType;
-import org.chromium.ui.touch_selection.TouchSelectionDraggableType;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.Log;
+import org.monyhar.base.PackageManagerUtils;
+import org.monyhar.base.UserData;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.compat.ApiHelperForM;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.content.R;
+import org.monyhar.content.browser.ContentApiHelperForM;
+import org.monyhar.content.browser.ContentClassFactory;
+import org.monyhar.content.browser.GestureListenerManagerImpl;
+import org.monyhar.content.browser.PopupController;
+import org.monyhar.content.browser.PopupController.HideablePopup;
+import org.monyhar.content.browser.WindowEventObserver;
+import org.monyhar.content.browser.WindowEventObserverManager;
+import org.monyhar.content.browser.input.ImeAdapterImpl;
+import org.monyhar.content.browser.webcontents.WebContentsImpl;
+import org.monyhar.content.browser.webcontents.WebContentsImpl.UserDataFactory;
+import org.monyhar.content_public.browser.ActionModeCallbackHelper;
+import org.monyhar.content_public.browser.ImeEventObserver;
+import org.monyhar.content_public.browser.SelectionClient;
+import org.monyhar.content_public.browser.SelectionPopupController;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.Clipboard;
+import org.monyhar.ui.base.DeviceFormFactor;
+import org.monyhar.ui.base.MenuSourceType;
+import org.monyhar.ui.base.ViewAndroidDelegate;
+import org.monyhar.ui.base.ViewAndroidDelegate.ContainerViewObserver;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.touch_selection.SelectionEventType;
+import org.monyhar.ui.touch_selection.TouchSelectionDraggableType;
 
 import java.util.List;
 

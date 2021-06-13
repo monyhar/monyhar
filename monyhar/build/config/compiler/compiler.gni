@@ -85,8 +85,8 @@ declare_args() {
 
   # Whether an error should be raised on attempts to make debug builds with
   # is_component_build=false. Very large debug symbols can have unwanted side
-  # effects so this is enforced by default for chromium.
-  forbid_non_component_debug_builds = build_with_chromium
+  # effects so this is enforced by default for monyhar.
+  forbid_non_component_debug_builds = build_with_monyhar
 
   # Exclude unwind tables by default for official builds as unwinding can be
   # done from stack dumps produced by Crashpad at a later time "offline" in the
@@ -105,7 +105,7 @@ declare_args() {
   # Technology (CET). If Windows version and hardware supports the feature and
   # it's enabled by OS then additional validation of return address will be
   # performed as mitigation against Return-oriented programming (ROP).
-  # https://chromium.googlesource.com/chromium/src/+/main/docs/design/sandbox.md#cet-shadow-stack
+  # https://monyhar.googlesource.com/monyhar/src/+/main/docs/design/sandbox.md#cet-shadow-stack
   enable_cet_shadow_stack = target_cpu == "x64"
 }
 
@@ -216,7 +216,7 @@ declare_args() {
 # results independent of the checkout and build directory names, which
 # in turn is important for goma compile hit rate.
 # Setting this to true may make it harder to debug binaries on Linux, see
-# https://chromium.googlesource.com/chromium/src/+/main/docs/linux/debugging.md#Source-level-debug-with-fdebug_compilation_dir
+# https://monyhar.googlesource.com/monyhar/src/+/main/docs/linux/debugging.md#Source-level-debug-with-fdebug_compilation_dir
 # It's not clear if the crash server will correctly handle dSYMs with relative
 # paths, so we disable this feature for official benefit. The main benefit is
 # deterministic builds to reduce compile times, so this is less relevant for

@@ -11,16 +11,16 @@ your testing needs.
 ## File Organization
 
 [codelabsolution](codelabsolution]: Solutions for the [code lab](#code-lab).
-[controllers](https://cs.chromium.org/chromium/src/chrome/test/android/javatests/src/org/chromium/chrome/test/pagecontroller/controllers/): Contains all the Page Controllers.<br/>
-[rules](https://cs.chromium.org/chromium/src/chrome/test/android/javatests/src/org/chromium/chrome/test/pagecontroller/rules/): Junit Test Rules that provide access to the Page Controllers in a
+[controllers](https://cs.monyhar.org/monyhar/src/chrome/test/android/javatests/src/org/monyhar/chrome/test/pagecontroller/controllers/): Contains all the Page Controllers.<br/>
+[rules](https://cs.monyhar.org/monyhar/src/chrome/test/android/javatests/src/org/monyhar/chrome/test/pagecontroller/rules/): Junit Test Rules that provide access to the Page Controllers in a
 test case.<br/>
-[tests](https://cs.chromium.org/chromium/src/chrome/test/android/javatests/src/org/chromium/chrome/test/pagecontroller/tests/): Tests for the Page Controllers themselves.<br/>
-[utils](https://cs.chromium.org/chromium/src/chrome/test/android/javatests/src/org/chromium/chrome/test/pagecontroller/utils/): Utility classes that are useful for writing Page Controllers.<br/>
+[tests](https://cs.monyhar.org/monyhar/src/chrome/test/android/javatests/src/org/monyhar/chrome/test/pagecontroller/tests/): Tests for the Page Controllers themselves.<br/>
+[utils](https://cs.monyhar.org/monyhar/src/chrome/test/android/javatests/src/org/monyhar/chrome/test/pagecontroller/utils/): Utility classes that are useful for writing Page Controllers.<br/>
 
 
 ## Using IDEs
 IDEs will make writing tests and maintaining Page Controllers much easier with online documentation and code completion.  See the [setup
-guide](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/README.md#integrated-development-environment-ide_set-up-guides).
+guide](https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/README.md#integrated-development-environment-ide_set-up-guides).
 
 
 ## Code Lab
@@ -38,10 +38,10 @@ android_library("chrome_java_test_pagecontroller") {
   testonly = true
   sources = [
   ...
-    "javatests/src/org/chromium/chrome/test/pagecontroller/controllers/android/PermissionDialog.java",
-+   "javatests/src/org/chromium/chrome/test/pagecontroller/controllers/codelab/SearchEngineSelectionControllerForCodelab.java",
-+   "javatests/src/org/chromium/chrome/test/pagecontroller/controllers/codelab/SettingsControllerForCodelab.java",
-    "javatests/src/org/chromium/chrome/test/pagecontroller/controllers/first_run/DataSaverController.java",
+    "javatests/src/org/monyhar/chrome/test/pagecontroller/controllers/android/PermissionDialog.java",
++   "javatests/src/org/monyhar/chrome/test/pagecontroller/controllers/codelab/SearchEngineSelectionControllerForCodelab.java",
++   "javatests/src/org/monyhar/chrome/test/pagecontroller/controllers/codelab/SettingsControllerForCodelab.java",
+    "javatests/src/org/monyhar/chrome/test/pagecontroller/controllers/first_run/DataSaverController.java",
   ...
   ]
 ```
@@ -79,7 +79,7 @@ out/Debug/bin/run_chrome_java_test_pagecontroller_codelab --num-retries 0 --loca
 
 ## Writing Testcases
 
-See the [ExampleTest](https://cs.chromium.org/chromium/src/chrome/test/android/javatests/src/org/chromium/chrome/test/pagecontroller/tests/ExampleTest.java).
+See the [ExampleTest](https://cs.monyhar.org/monyhar/src/chrome/test/android/javatests/src/org/monyhar/chrome/test/pagecontroller/tests/ExampleTest.java).
 
 ## Creating + Updating Page Controllers
 
@@ -100,7 +100,7 @@ class CoolNewPageController extends PageController {
     private static final IUi2Locator LOCATOR_COOL_BUTTON = Ui2Locators.withAnyResEntry(R.id.cool_button_v1, R.id.cool_button_v2);
 
     public CoolerPageController clickButton() {
-        // [UiAutomatorUtils.click](https://cs.chromium.org/chromium/src/chrome/test/android/javatests/src/org/chromium/chrome/test/pagecontroller/utils/UiAutomatorUtils.java?q=click) operates on UI elements via IUi2Locators.
+        // [UiAutomatorUtils.click](https://cs.monyhar.org/monyhar/src/chrome/test/android/javatests/src/org/monyhar/chrome/test/pagecontroller/utils/UiAutomatorUtils.java?q=click) operates on UI elements via IUi2Locators.
         // In general, methods that operate on IUi2Locators will throw if that
         // locator could not find an UI elements on the page.
         // UiAutomatorUtils has retry functionality with a configurable timeout,
@@ -131,7 +131,7 @@ R.string.* entries to use in the Page Controllers.  Prefer to construct locators
 with these resources, for example:
 
 ```
-import org.chromium.chrome.R;
+import org.monyhar.chrome.R;
 ...
 IUi2Locator LOCATOR_TAB_SWITCHER_BUTTON = Ui2Locators.withResEntries(R.id.tab_switcher_button);
 
@@ -148,14 +148,14 @@ If you are not too sure about the correct resource / string ids to use, see if y
 
  - [Android Layout inspector](https://developer.android.com/studio/debug/layout-inspector): This is useful to find out the resource ids (click an element, then expand the properties list, under mID).  To see strings, expand the text folder, see the mText field.  Note that this is the literal string, not the string resource id (see strings grd file below).
 
- - The res directory: Search in [chrome/android/java/res/](https://cs.chromium.org/chromium/src/chrome/android/java/res/) directory for resource ids and string ids.  They are defined there and then auto generated (@+id/xyz -> R.id.xyz)
+ - The res directory: Search in [chrome/android/java/res/](https://cs.monyhar.org/monyhar/src/chrome/android/java/res/) directory for resource ids and string ids.  They are defined there and then auto generated (@+id/xyz -> R.id.xyz)
 
  - Search the strings grd file with
-   [search_strings.py](https://cs.chromium.org/chromium/src/tools/android/pagecontroller/search_strings.py).
+   [search_strings.py](https://cs.monyhar.org/monyhar/src/tools/android/pagecontroller/search_strings.py).
 
-   [android_chrome_strings.grd](https://cs.chromium.org/chromium/src/chrome/browser/ui/android/strings/android_chrome_strings.grd) contains the list of strings used in Clank.
+   [android_chrome_strings.grd](https://cs.monyhar.org/monyhar/src/chrome/browser/ui/android/strings/android_chrome_strings.grd) contains the list of strings used in Clank.
    The entries are transformed into android strings using the name attribute by dropping the IDS_ prefix and converting the rest into lower case.  For example: IDS_MENU_BOOKMARKS -> R.string.menu_bookmarks.  There may be several string matching what's displayed but with different ids, be sure to read the "desc" field in the grd file and also the java source code for the UI to pick the right one.
 
- - The Clank java source code: [src/chrome/android/java/src/org/chromium/chrome/browser/](https://cs.chromium.org/chromium/src/chrome/android/java/src/org/chromium/chrome/browser/)
+ - The Clank java source code: [src/chrome/android/java/src/org/monyhar/chrome/browser/](https://cs.monyhar.org/monyhar/src/chrome/android/java/src/org/monyhar/chrome/browser/)
 
  Search for ids and strings discovered in the previous steps to see how they are used.

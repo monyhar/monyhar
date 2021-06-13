@@ -6,7 +6,7 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/modules/cablev2_authenticator/Module.java",
+    "java/src/org/monyhar/chrome/modules/cablev2_authenticator/Module.java",
   ]
   deps = [
     "//base:base_java",

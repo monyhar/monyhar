@@ -100,7 +100,7 @@ class CORE_EXPORT MediaSourceAttachment
   virtual void Close(MediaSourceTracer* tracer) = 0;
 
   // 'Internal' in these methods doesn't mean private, it means that they are
-  // internal to chromium and are not exposed to JavaScript.
+  // internal to monyhar and are not exposed to JavaScript.
   virtual WebTimeRanges BufferedInternal(MediaSourceTracer* tracer) const = 0;
   virtual WebTimeRanges SeekableInternal(MediaSourceTracer* tracer) const = 0;
 

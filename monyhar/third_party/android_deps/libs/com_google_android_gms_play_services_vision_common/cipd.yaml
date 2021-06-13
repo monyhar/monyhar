@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@18.0.0.cr0
-package: chromium/third_party/android_deps/libs/com_google_android_gms_play_services_vision_common
+package: monyhar/third_party/android_deps/libs/com_google_android_gms_play_services_vision_common
 description: "play-services-vision-common"
 data:
 - file: play-services-vision-common-18.0.0.aar

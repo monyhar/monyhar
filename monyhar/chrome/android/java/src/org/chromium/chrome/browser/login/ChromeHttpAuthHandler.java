@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.login;
+package org.monyhar.chrome.browser.login;
 
 import android.app.Activity;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabHidingType;
-import org.chromium.components.browser_ui.http_auth.LoginPrompt;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabHidingType;
+import org.monyhar.components.browser_ui.http_auth.LoginPrompt;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Represents an HTTP authentication request to be handled by the UI.
@@ -56,7 +56,7 @@ public class ChromeHttpAuthHandler extends EmptyTabObserver implements LoginProm
     // ---------------------------------------------
 
     // Note on legacy useHttpAuthUsernamePassword() method:
-    // For reference, the existing WebView (when using the chromium stack) returns true here
+    // For reference, the existing WebView (when using the monyhar stack) returns true here
     // iff this is the first auth challenge attempt for this connection.
     // (see WebUrlLoaderClient::authRequired call to didReceiveAuthenticationChallenge)
     // In ChromeHttpAuthHandler this mechanism is superseded by the

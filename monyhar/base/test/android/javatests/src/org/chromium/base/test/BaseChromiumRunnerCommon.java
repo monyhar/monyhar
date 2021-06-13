@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.test;
+package org.monyhar.base.test;
 
 import android.content.Context;
 import android.content.ContextWrapper;
@@ -12,9 +12,9 @@ import android.content.pm.PackageManager;
 
 import androidx.core.content.ContextCompat;
 
-import org.chromium.android.support.PackageManagerWrapper;
-import org.chromium.base.Log;
-import org.chromium.base.annotations.MainDex;
+import org.monyhar.android.support.PackageManagerWrapper;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.MainDex;
 
 import java.io.File;
 import java.io.IOException;

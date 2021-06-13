@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.layouts.components;
+package org.monyhar.chrome.browser.compositor.layouts.components;
 
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.RectF;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.layouts.animation.FloatProperty;
-import org.chromium.chrome.browser.layouts.components.VirtualView;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.layouts.animation.FloatProperty;
+import org.monyhar.chrome.browser.layouts.components.VirtualView;
 
 /**
  * {@link CompositorButton} keeps track of state for buttons that are rendered
@@ -19,7 +19,7 @@ import org.chromium.chrome.browser.layouts.components.VirtualView;
 public class CompositorButton implements VirtualView {
     /**
      * A property that can be used with a
-     * {@link org.chromium.chrome.browser.compositor.animation.CompositorAnimator}.
+     * {@link org.monyhar.chrome.browser.compositor.animation.CompositorAnimator}.
      */
     public static final FloatProperty<CompositorButton> OPACITY =
             new FloatProperty<CompositorButton>("opacity") {

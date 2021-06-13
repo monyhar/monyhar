@@ -10,9 +10,9 @@
 
 namespace {
 constexpr char kRouteId1[] =
-    "urn:x-org.chromium:media:route:1/cast-sink1/http://foo.com";
+    "urn:x-org.monyhar:media:route:1/cast-sink1/http://foo.com";
 constexpr char kRouteId2[] =
-    "urn:x-org.chromium:media:route:2/cast-sink2/http://foo.com";
+    "urn:x-org.monyhar:media:route:2/cast-sink2/http://foo.com";
 constexpr char kPresentationUrl[] = "http://www.example.com/presentation.html";
 }  // namespace
 
@@ -65,15 +65,15 @@ TEST(MediaRouteTest, TestParsingMediaRouteId) {
   EXPECT_EQ(MediaRoute::GetPresentationIdFromMediaRouteId("InvalidRouteId"),
             "");
   EXPECT_EQ(MediaRoute::GetPresentationIdFromMediaRouteId(
-                "urn:x-org.chromium:media:route:1/cast-sink1"),
+                "urn:x-org.monyhar:media:route:1/cast-sink1"),
             "");
   EXPECT_EQ(MediaRoute::GetSinkIdFromMediaRouteId("InvalidRouteId"), "");
   EXPECT_EQ(MediaRoute::GetSinkIdFromMediaRouteId(
-                "urn:x-org.chromium:media:route:1/cast-sink1"),
+                "urn:x-org.monyhar:media:route:1/cast-sink1"),
             "");
   EXPECT_EQ(MediaRoute::GetMediaSourceIdFromMediaRouteId("InvalidRouteId"), "");
   EXPECT_EQ(MediaRoute::GetMediaSourceIdFromMediaRouteId(
-                "urn:x-org.chromium:media:route:1/cast-sink1"),
+                "urn:x-org.monyhar:media:route:1/cast-sink1"),
             "");
 }
 

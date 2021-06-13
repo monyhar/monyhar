@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webapk.shell_apk;
+package org.monyhar.webapk.shell_apk;
 
 import android.app.Service;
 import android.content.Context;
@@ -29,7 +29,7 @@ public class WebApkServiceFactory extends Service {
      * Name of the class with IBinder API implementation.
      */
     private static final String WEBAPK_SERVICE_IMPL_CLASS_NAME =
-            "org.chromium.webapk.lib.runtime_library.WebApkServiceImpl";
+            "org.monyhar.webapk.lib.runtime_library.WebApkServiceImpl";
 
     /**
      * Key for passing id of icon to represent WebAPK notifications in status bar.

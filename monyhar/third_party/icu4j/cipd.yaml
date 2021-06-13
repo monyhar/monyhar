@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:$(cat version.txt)
-package: chromium/third_party/icu4j
+package: monyhar/third_party/icu4j
 description: icu4j Java library
 data:
   - file: lib/icu4j.jar

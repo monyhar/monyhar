@@ -4,7 +4,7 @@
 
 module chromeos.cfm.mojom;
 
-// Interface defined by chromium specifically for the ChromeboxForMeetings
+// Interface defined by monyhar specifically for the ChromeboxForMeetings
 // platform to query relevant device system and policy information.
 interface MeetDevicesInfo {
   // Adds a DevicePolicyObserver for policy info change events.

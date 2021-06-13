@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.paintpreview.player.accessibility;
+package org.monyhar.components.paintpreview.player.accessibility;
 
 import android.graphics.Rect;
 import android.os.Handler;
 import android.util.Size;
 import android.view.View;
 
-import org.chromium.components.paintpreview.player.frame.PlayerFrameCoordinator;
-import org.chromium.components.paintpreview.player.frame.PlayerFrameViewport;
-import org.chromium.content.browser.accessibility.AccessibilityDelegate;
-import org.chromium.content_public.browser.AccessibilitySnapshotCallback;
-import org.chromium.content_public.browser.AccessibilitySnapshotNode;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.components.paintpreview.player.frame.PlayerFrameCoordinator;
+import org.monyhar.components.paintpreview.player.frame.PlayerFrameViewport;
+import org.monyhar.content.browser.accessibility.AccessibilityDelegate;
+import org.monyhar.content_public.browser.AccessibilitySnapshotCallback;
+import org.monyhar.content_public.browser.AccessibilitySnapshotNode;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * Implementation of {@link AccessibilityDelegate} based on the Paint Preview Player.

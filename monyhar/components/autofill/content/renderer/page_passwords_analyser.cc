@@ -430,7 +430,7 @@ void AnalyseForm(const FormInputCollection& form_input_collection,
 
 }  // namespace
 
-// Out-of-line definitions to keep [chromium-style] happy.
+// Out-of-line definitions to keep [monyhar-style] happy.
 PagePasswordsAnalyser::PagePasswordsAnalyser() {}
 
 PagePasswordsAnalyser::~PagePasswordsAnalyser() {}

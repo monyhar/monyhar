@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps;
+package org.monyhar.chrome.browser.webapps;
 
 import android.app.Activity;
 import android.text.TextUtils;
 
-import org.chromium.base.ApplicationStatus;
-import org.chromium.chrome.browser.browserservices.intents.WebappExtras;
-import org.chromium.chrome.browser.customtabs.BaseCustomTabActivity;
-import org.chromium.chrome.browser.tab.Tab;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.chrome.browser.browserservices.intents.WebappExtras;
+import org.monyhar.chrome.browser.customtabs.BaseCustomTabActivity;
+import org.monyhar.chrome.browser.tab.Tab;
 
 import java.lang.ref.WeakReference;
 

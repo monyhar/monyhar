@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.external_intents;
+package org.monyhar.components.external_intents;
 
 import android.content.ComponentName;
 import android.content.Intent;
@@ -11,10 +11,10 @@ import android.os.SystemClock;
 import android.provider.Browser;
 import android.text.TextUtils;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.PackageManagerUtils;
-import org.chromium.ui.base.PageTransition;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.PackageManagerUtils;
+import org.monyhar.ui.base.PageTransition;
 
 import java.util.HashSet;
 import java.util.List;

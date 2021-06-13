@@ -96,7 +96,7 @@ def CreateTestResults(test_status, timestamp):
   """Create test results data to write to JSON test results file.
 
   The JSON data format is defined in
-  https://chromium.googlesource.com/chromium/src/+/main/docs/testing/json_test_results_format.md
+  https://monyhar.googlesource.com/monyhar/src/+/main/docs/testing/json_test_results_format.md
   """
 
   results = {

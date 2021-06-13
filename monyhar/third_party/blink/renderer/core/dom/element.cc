@@ -5348,7 +5348,7 @@ scoped_refptr<ComputedStyle> Element::StyleForPseudoElement(
   if (is_before_or_after) {
     const ComputedStyle* layout_parent_style = request.parent_override;
     if (layout_parent_style->Display() == EDisplay::kContents) {
-      // TODO(futhark@chromium.org): Calling getComputedStyle for elements
+      // TODO(futhark@monyhar.org): Calling getComputedStyle for elements
       // outside the flat tree should return empty styles, but currently we do
       // not. See issue https://crbug.com/831568. We can replace the if-test
       // with DCHECK(layout_parent) when that issue is fixed.

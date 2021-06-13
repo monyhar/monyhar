@@ -45,7 +45,7 @@ TEST_F(ClientContextTest, Initialize) {
   EXPECT_CALL(mock_client_, GetScreenOrientation())
       .WillOnce(Return(ClientContextProto::PORTRAIT));
   EXPECT_CALL(mock_client_, GetChromeSignedInEmailAddress())
-      .WillOnce(Return("john.doe@chromium.org"));
+      .WillOnce(Return("john.doe@monyhar.org"));
   EXPECT_CALL(mock_client_, IsAccessibilityEnabled()).WillOnce(Return(true));
 
   ClientContextImpl client_context(&mock_client_);
@@ -79,7 +79,7 @@ TEST_F(ClientContextTest, UpdateWithTriggerContext) {
   // Calls expected when the constructor is called.
   EXPECT_CALL(mock_client_, IsAccessibilityEnabled()).WillOnce(Return(false));
   EXPECT_CALL(mock_client_, GetChromeSignedInEmailAddress())
-      .WillOnce(Return("john.doe@chromium.org"));
+      .WillOnce(Return("john.doe@monyhar.org"));
   EXPECT_CALL(mock_client_, GetWindowSize())
       .WillOnce(Return(std::make_pair(0, 0)));
   EXPECT_CALL(mock_client_, GetScreenOrientation())
@@ -97,7 +97,7 @@ TEST_F(ClientContextTest, UpdateWithTriggerContext) {
       .WillOnce(Return(ClientContextProto::LANDSCAPE));
   client_context.Update(
       {std::make_unique<ScriptParameters>(std::map<std::string, std::string>{
-           {"USER_EMAIL", "example@chromium.org"}}),
+           {"USER_EMAIL", "example@monyhar.org"}}),
        /* exp = */ "1,2,3",
        /* is_cct = */ true,
        /* onboarding_shown = */ true,
@@ -149,7 +149,7 @@ TEST_F(ClientContextTest, WindowSizeIsClearedIfNoLongerAvailable) {
 
 TEST_F(ClientContextTest, AccountMatching) {
   EXPECT_CALL(mock_client_, GetChromeSignedInEmailAddress())
-      .WillRepeatedly(Return("john.doe@chromium.org"));
+      .WillRepeatedly(Return("john.doe@monyhar.org"));
 
   ClientContextImpl client_context(&mock_client_);
   EXPECT_THAT(client_context.AsProto().accounts_matching_status(),
@@ -157,7 +157,7 @@ TEST_F(ClientContextTest, AccountMatching) {
 
   client_context.Update(
       {std::make_unique<ScriptParameters>(std::map<std::string, std::string>{
-           {"USER_EMAIL", "john.doe@chromium.org"}}),
+           {"USER_EMAIL", "john.doe@monyhar.org"}}),
        /* exp = */ std::string(),
        /* is_cct = */ false,
        /* onboarding_shown = */ false,
@@ -169,7 +169,7 @@ TEST_F(ClientContextTest, AccountMatching) {
 
   client_context.Update(
       {std::make_unique<ScriptParameters>(std::map<std::string, std::string>{
-           {"USER_EMAIL", "lisa.doe@chromium.org"}}),
+           {"USER_EMAIL", "lisa.doe@monyhar.org"}}),
        /* exp = */ std::string(),
        /* is_cct = */ false,
        /* onboarding_shown = */ false,
@@ -189,7 +189,7 @@ TEST_F(ClientContextTest, SignedInStatus) {
               Eq(ClientContextProto::NOT_SIGNED_IN));
 
   EXPECT_CALL(mock_client_, GetChromeSignedInEmailAddress())
-      .WillOnce(Return("john.doe@chromium.org"));
+      .WillOnce(Return("john.doe@monyhar.org"));
   ClientContextImpl client_context_b(&mock_client_);
   EXPECT_THAT(client_context_b.AsProto().signed_into_chrome_status(),
               Eq(ClientContextProto::SIGNED_IN));

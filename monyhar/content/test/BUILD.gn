@@ -963,16 +963,16 @@ if (is_android) {
 
   generate_jni("content_browsertests_jni_headers") {
     testonly = true
-    sources = [ "//content/public/android/javatests/src/org/chromium/content/browser/fakes/TestViewAndroidDelegate.java" ]
+    sources = [ "//content/public/android/javatests/src/org/monyhar/content/browser/fakes/TestViewAndroidDelegate.java" ]
   }
 
   android_library("content_browsertests_java") {
     testonly = true
-    resources_package = "org.chromium.content_browsertests_apk"
+    resources_package = "org.monyhar.content_browsertests_apk"
     sources = [
-      "../shell/android/browsertests_apk/src/org/chromium/content_browsertests_apk/ContentBrowserTestsActivity.java",
-      "../shell/android/browsertests_apk/src/org/chromium/content_browsertests_apk/ContentBrowserTestsApplication.java",
-      "//content/public/android/javatests/src/org/chromium/content/browser/fakes/TestViewAndroidDelegate.java",
+      "../shell/android/browsertests_apk/src/org/monyhar/content_browsertests_apk/ContentBrowserTestsActivity.java",
+      "../shell/android/browsertests_apk/src/org/monyhar/content_browsertests_apk/ContentBrowserTestsApplication.java",
+      "//content/public/android/javatests/src/org/monyhar/content/browser/fakes/TestViewAndroidDelegate.java",
     ]
     deps = [
       ":content_browsertests_manifest",
@@ -2774,8 +2774,8 @@ group("test_buildbucket_api_gpu_use_cases") {
 
 if (is_android) {
   content_java_sources_needing_jni = [
-    "//content/public/android/javatests/src/org/chromium/content/browser/sms/SmsProviderFakes.java",
-    "//content/public/android/javatests/src/org/chromium/content/browser/fakes/TestViewAndroidDelegate.java",
+    "//content/public/android/javatests/src/org/monyhar/content/browser/sms/SmsProviderFakes.java",
+    "//content/public/android/javatests/src/org/monyhar/content/browser/fakes/TestViewAndroidDelegate.java",
   ]
 
   generate_jni("content_unittests_jni_headers") {

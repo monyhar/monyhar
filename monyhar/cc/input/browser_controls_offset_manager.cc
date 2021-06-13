@@ -22,7 +22,7 @@
 namespace cc {
 namespace {
 // These constants were chosen empirically for their visually pleasant behavior.
-// Contact tedchoc@chromium.org for questions about changing these values.
+// Contact tedchoc@monyhar.org for questions about changing these values.
 const int64_t kShowHideMaxDurationMs = 200;
 // TODO(sinansahin): Temporary value, pending UX guidance probably.
 const int64_t kHeightChangeDurationMs = 200;

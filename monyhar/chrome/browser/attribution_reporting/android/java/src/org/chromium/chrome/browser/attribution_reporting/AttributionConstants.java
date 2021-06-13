@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.attribution_reporting;
+package org.monyhar.chrome.browser.attribution_reporting;
 
 /** Public constants for the attribution_reporting module. */
 public class AttributionConstants {

@@ -28,23 +28,23 @@ void ExpectEither(const std::string& expected1,
 TEST_F(PathUtilsTest, TestGetDataDirectory) {
   // The string comes from the Java side and depends on the APK
   // we are running in. Assumes that we are packaged in
-  // org.chromium.native_test
+  // org.monyhar.native_test
   FilePath path;
   GetDataDirectory(&path);
 
-  ExpectEither("/data/data/org.chromium.native_test/app_chrome",
-               "/data/user/0/org.chromium.native_test/app_chrome",
+  ExpectEither("/data/data/org.monyhar.native_test/app_chrome",
+               "/data/user/0/org.monyhar.native_test/app_chrome",
                path.value());
 }
 
 TEST_F(PathUtilsTest, TestGetCacheDirectory) {
   // The string comes from the Java side and depends on the APK
   // we are running in. Assumes that we are packaged in
-  // org.chromium.native_test
+  // org.monyhar.native_test
   FilePath path;
   GetCacheDirectory(&path);
-  ExpectEither("/data/data/org.chromium.native_test/cache",
-               "/data/user/0/org.chromium.native_test/cache",
+  ExpectEither("/data/data/org.monyhar.native_test/cache",
+               "/data/user/0/org.monyhar.native_test/cache",
                path.value());
 }
 

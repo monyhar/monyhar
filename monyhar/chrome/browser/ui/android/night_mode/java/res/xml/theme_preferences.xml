@@ -4,6 +4,6 @@
      found in the LICENSE file. -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <org.chromium.chrome.browser.night_mode.settings.RadioButtonGroupThemePreference
+    <org.monyhar.chrome.browser.night_mode.settings.RadioButtonGroupThemePreference
         android:key="ui_theme_pref" />
 </PreferenceScreen>

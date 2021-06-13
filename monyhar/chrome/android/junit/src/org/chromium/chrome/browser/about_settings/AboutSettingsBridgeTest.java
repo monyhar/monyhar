@@ -4,7 +4,7 @@
 
 // generate_java_test.py
 
-package org.chromium.chrome.browser.about_settings;
+package org.monyhar.chrome.browser.about_settings;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.doReturn;
@@ -17,8 +17,8 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.JniMocker;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.JniMocker;
 
 /** Unit tests for {@link AboutSettingsBridge}. */
 @RunWith(BaseRobolectricTestRunner.class)

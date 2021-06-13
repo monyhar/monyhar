@@ -13,32 +13,32 @@
     android:focusable="false"
     android:orientation="vertical">
 
-    <org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionLayout
+    <org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionLayout
         android:id="@+id/radio_button_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
 
-        <org.chromium.components.browser_ui.widget.RadioButtonWithDescription
+        <org.monyhar.components.browser_ui.widget.RadioButtonWithDescription
             android:id="@+id/allowed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="?android:attr/listPreferredItemPaddingStart"
             app:primaryText="@string/website_settings_category_allowed" />
 
-        <org.chromium.components.browser_ui.widget.RadioButtonWithDescription
+        <org.monyhar.components.browser_ui.widget.RadioButtonWithDescription
             android:id="@+id/ask"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="?android:attr/listPreferredItemPaddingStart"
             app:primaryText="@string/website_settings_category_ask" />
 
-        <org.chromium.components.browser_ui.widget.RadioButtonWithDescription
+        <org.monyhar.components.browser_ui.widget.RadioButtonWithDescription
             android:id="@+id/blocked"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="?android:attr/listPreferredItemPaddingStart"
             app:primaryText="@string/website_settings_category_blocked" />
 
-    </org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionLayout>
+    </org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionLayout>
 </LinearLayout>

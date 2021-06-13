@@ -6,8 +6,8 @@
 
 module chromeos.cfm.mojom;
 
-// Interface defined by chromium specifically for the ChromeboxForMeetings
-// platform to leverage required chromium services/APIS.
+// Interface defined by monyhar specifically for the ChromeboxForMeetings
+// platform to leverage required monyhar services/APIS.
 interface CfmBrowser {
   // Returns a persistent representation of active FieldTrial information, which
   // can be used to replicate the current state of the experimentation framework

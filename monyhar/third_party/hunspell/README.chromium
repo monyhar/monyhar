@@ -40,4 +40,4 @@ steps, or simply run update_google_patch.sh from the commandline.
 All dictionaries used by Chromium has been checked in to the
 'third_party/hunspell_dictionaries' directory. They have several additions over
 the default myspell/hunspell dictionaries.
-(See 'third_party/hunspell_dictionaries/README.chromium' for their details.)
+(See 'third_party/hunspell_dictionaries/README.monyhar' for their details.)

@@ -12,20 +12,20 @@ PRETTY_XML = """
 <actions>
 
 <action name="Action1">
-  <owner>owner@chromium.org</owner>
+  <owner>owner@monyhar.org</owner>
   <description>Description1</description>
 </action>
 
 <action name="Action2" not_user_triggered="true">
   <obsolete>Obsolete text</obsolete>
-  <owner>owner@chromium.org</owner>
+  <owner>owner@monyhar.org</owner>
   <description>Description2</description>
 </action>
 
 <action name="Action3">
   <obsolete>Obsolete text</obsolete>
-  <owner>owner@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner@monyhar.org</owner>
+  <owner>owner2@monyhar.org</owner>
   <description>Description3</description>
 </action>
 
@@ -48,20 +48,20 @@ XML_WITH_WRONG_INDENT = """
 <actions>
 
   <action name="Action1">
-    <owner>owner@chromium.org</owner>
+    <owner>owner@monyhar.org</owner>
     <description>Description1</description>
   </action>
 
 <action name="Action2" not_user_triggered="true">
     <obsolete>Obsolete text</obsolete>
-    <owner>owner@chromium.org</owner>
+    <owner>owner@monyhar.org</owner>
     <description>Description2</description>
 </action>
 
 <action name="Action3">
 <obsolete>Obsolete text</obsolete>
-<owner>owner@chromium.org</owner>
-<owner>owner2@chromium.org</owner>
+<owner>owner@monyhar.org</owner>
+<owner>owner2@monyhar.org</owner>
 <description>Description3</description>
 </action>
 
@@ -85,7 +85,7 @@ XML_WITH_WRONG_SINGLELINE = """
 
 <action name="Action1">
   <owner>
-    owner@chromium.org
+    owner@monyhar.org
   </owner>
   <description>Description1</description>
 </action>
@@ -94,14 +94,14 @@ XML_WITH_WRONG_SINGLELINE = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>owner@chromium.org</owner>
+  <owner>owner@monyhar.org</owner>
   <description>Description2</description>
 </action>
 
 <action name="Action3">
   <obsolete>Obsolete text</obsolete>
-  <owner>owner@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner@monyhar.org</owner>
+  <owner>owner2@monyhar.org</owner>
   <description>
     Description3
   </description>
@@ -125,20 +125,20 @@ XML_WITH_WRONG_SINGLELINE = """
 XML_WITH_WRONG_LINE_BREAK = """
 <actions>
 <action name="Action1">
-  <owner>owner@chromium.org</owner>
+  <owner>owner@monyhar.org</owner>
   <description>Description1</description>
 </action>
 
 <action name="Action2" not_user_triggered="true">
   <obsolete>Obsolete text</obsolete>
-  <owner>owner@chromium.org</owner>
+  <owner>owner@monyhar.org</owner>
   <description>Description2</description>
 </action>
 <action name="Action3">
   <obsolete>Obsolete text</obsolete>
-  <owner>owner@chromium.org</owner>
+  <owner>owner@monyhar.org</owner>
 
-  <owner>owner2@chromium.org</owner>
+  <owner>owner2@monyhar.org</owner>
   <description>Description3</description>
 </action>
 
@@ -162,19 +162,19 @@ XML_WITH_WRONG_ORDER = """
 
 <action name="Action2" not_user_triggered="true">
   <obsolete>Obsolete text</obsolete>
-  <owner>owner@chromium.org</owner>
+  <owner>owner@monyhar.org</owner>
   <description>Description2</description>
 </action>
 
 <action name="Action1">
-  <owner>owner@chromium.org</owner>
+  <owner>owner@monyhar.org</owner>
   <description>Description1</description>
 </action>
 
 <action name="Action3">
   <obsolete>Obsolete text</obsolete>
-  <owner>owner@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner@monyhar.org</owner>
+  <owner>owner2@monyhar.org</owner>
   <description>Description3</description>
 </action>
 
@@ -198,20 +198,20 @@ XML_WITH_WRONG_CHILDREN_ORDER = """
 
 <action name="Action1">
   <description>Description1</description>
-  <owner>owner@chromium.org</owner>
+  <owner>owner@monyhar.org</owner>
 </action>
 
 <action name="Action2" not_user_triggered="true">
-  <owner>owner@chromium.org</owner>
+  <owner>owner@monyhar.org</owner>
   <obsolete>Obsolete text</obsolete>
   <description>Description2</description>
 </action>
 
 <action name="Action3">
   <obsolete>Obsolete text</obsolete>
-  <owner>owner@chromium.org</owner>
+  <owner>owner@monyhar.org</owner>
   <description>Description3</description>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner2@monyhar.org</owner>
 </action>
 
 <action-suffix separator="." ordering="suffix">
@@ -233,20 +233,20 @@ XML_WITH_WRONG_ATTRIBUTE_ORDER = """
 <actions>
 
 <action name="Action1">
-  <owner>owner@chromium.org</owner>
+  <owner>owner@monyhar.org</owner>
   <description>Description1</description>
 </action>
 
 <action not_user_triggered="true" name="Action2">
   <obsolete>Obsolete text</obsolete>
-  <owner>owner@chromium.org</owner>
+  <owner>owner@monyhar.org</owner>
   <description>Description2</description>
 </action>
 
 <action name="Action3">
   <obsolete>Obsolete text</obsolete>
-  <owner>owner@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner@monyhar.org</owner>
+  <owner>owner2@monyhar.org</owner>
   <description>Description3</description>
 </action>
 

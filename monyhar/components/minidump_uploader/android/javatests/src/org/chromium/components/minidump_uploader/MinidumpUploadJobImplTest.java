@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.minidump_uploader;
+package org.monyhar.components.minidump_uploader;
 
 import androidx.test.filters.MediumTest;
 
@@ -11,13 +11,13 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.components.minidump_uploader.CrashTestRule.MockCrashReportingPermissionManager;
-import org.chromium.components.minidump_uploader.MinidumpUploaderTest.TestHttpURLConnection;
-import org.chromium.components.minidump_uploader.MinidumpUploaderTest.TestHttpURLConnectionFactory;
-import org.chromium.components.minidump_uploader.util.CrashReportingPermissionManager;
-import org.chromium.components.minidump_uploader.util.HttpURLConnectionFactory;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.components.minidump_uploader.CrashTestRule.MockCrashReportingPermissionManager;
+import org.monyhar.components.minidump_uploader.MinidumpUploaderTest.TestHttpURLConnection;
+import org.monyhar.components.minidump_uploader.MinidumpUploaderTest.TestHttpURLConnectionFactory;
+import org.monyhar.components.minidump_uploader.util.CrashReportingPermissionManager;
+import org.monyhar.components.minidump_uploader.util.HttpURLConnectionFactory;
 
 import java.io.File;
 import java.io.IOException;

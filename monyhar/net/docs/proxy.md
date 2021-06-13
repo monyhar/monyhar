@@ -151,8 +151,8 @@ Specifying an HTTPS proxy is generally not possible through system proxy
 settings. Instead, one must use either a PAC script or a Chrome proxy setting
 (command line, extension, or policy).
 
-See the dev.chromium.org document on [secure web
-proxies](http://dev.chromium.org/developers/design-documents/secure-web-proxy)
+See the dev.monyhar.org document on [secure web
+proxies](http://dev.monyhar.org/developers/design-documents/secure-web-proxy)
 for tips on how to run and test against an HTTPS proxy.
 
 ### SOCKSv4 proxy scheme
@@ -217,7 +217,7 @@ is secure, and connection limits are less restrictive.
 Support for QUIC proxies in Chrome is currently experimental and not
 ready for production use. In particular, sending https:// and wss://
 URLs through a QUIC proxy is [disabled by
-default](https://bugs.chromium.org/p/chromium/issues/detail?id=969859).
+default](https://bugs.monyhar.org/p/monyhar/issues/detail?id=969859).
 
 Another caveat is that QUIC does not currently support
 client certificates since it does not use a TLS
@@ -534,7 +534,7 @@ Why apply implicit proxy bypass rules in the first place? Certainly there are
 considerations around ergonomics and user expectation, but the bigger problem
 is security. Since the web platform treats `localhost` as a secure origin, the
 ability to proxy it grants extra powers. This is [especially
-problematic](https://bugs.chromium.org/p/chromium/issues/detail?id=899126) when
+problematic](https://bugs.monyhar.org/p/monyhar/issues/detail?id=899126) when
 proxy settings are externally controllable, as when using PAC scripts.
 
 Historical support in Chrome:
@@ -630,7 +630,7 @@ fallback)
 
 Prior to M67, Chrome would consider failures establishing a
 CONNECT tunnel as an error eligible for proxy fallback. This policy [resulted
-in problems](https://bugs.chromium.org/p/chromium/issues/detail?id=680837) for
+in problems](https://bugs.monyhar.org/p/monyhar/issues/detail?id=680837) for
 deployments whose HTTP proxies intentionally failed certain https:// requests,
 since that necessitates inducing a failure during the CONNECT tunnel
 establishment. The problem would occur when a working proxy fallback option
@@ -638,12 +638,12 @@ like DIRECT was given, since the failing proxy would then be marked as bad.
 
 Currently there are no options to configure proxy fallback (including disabling
 the caching of bad proxies). Future versions of Chrome may [remove caching
-of bad proxies](https://bugs.chromium.org/p/chromium/issues/detail?id=936130)
+of bad proxies](https://bugs.monyhar.org/p/monyhar/issues/detail?id=936130)
 to make fallback predictable.
 
 To investigate issues relating to proxy fallback, one can [collect a NetLog
 dump using
-chrome://net-export/](https://dev.chromium.org/for-testers/providing-network-details).
+chrome://net-export/](https://dev.monyhar.org/for-testers/providing-network-details).
 These logs can then be loaded with the [NetLog
 viewer](https://netlog-viewer.appspot.com/).
 
@@ -704,7 +704,7 @@ FindProxyForURL('https://www.example.com/', 'example.com')
 
 Stripping the path and query from the `url` is a departure from the original
 Netscape implementation of PAC. It was introduced in Chrome 52 for [security
-reasons](https://bugs.chromium.org/p/chromium/issues/detail?id=593759).
+reasons](https://bugs.monyhar.org/p/monyhar/issues/detail?id=593759).
 
 There is currently no option to turn off sanitization of URLs passed to PAC
 scripts (removed in Chrome 75).
@@ -713,7 +713,7 @@ The sanitization of http:// URLs currently has a different policy, and does not
 strip query and path portions of the URL. That said, users are advised not to
 depend on reading the query/path portion of any URL
 type, since future versions of Chrome may [deprecate that
-capability](https://bugs.chromium.org/p/chromium/issues/detail?id=882536) in
+capability](https://bugs.monyhar.org/p/monyhar/issues/detail?id=882536) in
 favor of a consistent policy.
 
 ## Resolving client's IP address within a PAC script using myIpAddress()
@@ -801,7 +801,7 @@ that would be used to route to the public internet.
 As an API, `myIpAddressEx()` offers more flexibility since it can return
 multiple IP addresses. However Chrome's implementation restricts which IPs a
 PAC script can see [due to privacy
-concerns](https://bugs.chromium.org/p/chromium/issues/detail?id=905366). So
+concerns](https://bugs.monyhar.org/p/monyhar/issues/detail?id=905366). So
 using `myIpAddressEx()` is not as powerful as enumerating all the host's IPs,
 and may not address all use-cases.
 
@@ -827,7 +827,7 @@ platforms:
   is quite different (and most `browser_tests` are not run on Android either).
 
 * [WebView does not use Chrome's PAC
-  resolver](https://bugs.chromium.org/p/chromium/issues/detail?id=989667).
+  resolver](https://bugs.monyhar.org/p/monyhar/issues/detail?id=989667).
   Instead Android WebView uses the Android system's PAC resolver, which is less
   optimized and uses an old build of V8. When the system is configured to use
   PAC, Android WebView's net code will see the proxy settings as being a
@@ -929,7 +929,7 @@ However in practice, Chrome does not enforce the mime type.
 Issues in proxy resolution are best investigated using a Net Log.
 
 A good starting point is to follow the [general instructions for
-net-export](https://www.chromium.org/for-testers/providing-network-details),
+net-export](https://www.monyhar.org/for-testers/providing-network-details),
 *and while the Net Log is being captured perform these steps*:
 
 1. Reproduce the failure (ex: load a URL that fails)
@@ -981,7 +981,7 @@ _capture ended_.
 Skim through the Import tab and look for relevant command line flags and active
 field trials. A find-in-page for `proxy` is a good starting point. Be on the lookout for
 [`--winhttp-proxy-resolver`](#winhttp_proxy_resolver-command-line-switch) which
-has [known problems](https://bugs.chromium.org/p/chromium/issues/detail?id=644030).
+has [known problems](https://bugs.monyhar.org/p/monyhar/issues/detail?id=644030).
 
 ### Events tab
 
@@ -995,7 +995,7 @@ The most relevant events have either `PROXY_`, `PAC_`, or
 `WPAD_` in their names. You can also try filtering for each of those.
 
 Documentation on specific events is available in
-[net_log_event_type_list.h](https://chromium.googlesource.com/chromium/src/+/HEAD/net/log/net_log_event_type_list.h).
+[net_log_event_type_list.h](https://monyhar.googlesource.com/monyhar/src/+/HEAD/net/log/net_log_event_type_list.h).
 
 Network change events can also be key to understanding proxy issues. After
 switching networks (ex VPN), the effective proxy settings, as well as content
@@ -1049,7 +1049,7 @@ to use the system libraries for *one narrow part of proxy resolution*: evaluatin
 a given PAC script.
 
 Use of this flag is NOT a supported mode, and has [known
-problems](https://bugs.chromium.org/p/chromium/issues/detail?id=644030): It
+problems](https://bugs.monyhar.org/p/monyhar/issues/detail?id=644030): It
 can break Chrome extensions (`chrome.proxy` API), the interpretation of
 Proxy policies, hurt performance, and doesn't ensure full fidelity
 interpretation of system proxy settings.
@@ -1059,11 +1059,11 @@ smilar meaning on other platforms (macOS), despite its Windows-specific naming.
 
 This flag was historically exposed for debugging, and to mitigate unresolved
 policy differences in PAC execution. In the future this switch [will be
-removed](https://bugs.chromium.org/p/chromium/issues/detail?id=644030).
+removed](https://bugs.monyhar.org/p/monyhar/issues/detail?id=644030).
 
 Although Chrome would like full fidelity with Windows proxy settings, there are
 limits to those integrations. Dependencies like NRPT for proxy
 resolution necessitate using Windows proxy resolution libraries directly
 instead of Chrome's. We hope these less common use cases will be fully
 addressed by [this
-feature](https://bugs.chromium.org/p/chromium/issues/detail?id=1032820)
+feature](https://bugs.monyhar.org/p/monyhar/issues/detail?id=1032820)

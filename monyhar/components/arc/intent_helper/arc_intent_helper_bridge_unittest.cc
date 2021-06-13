@@ -283,7 +283,7 @@ TEST_F(ArcIntentHelperTest, TestMultipleFilters) {
   std::vector<IntentFilter> array;
   array.emplace_back(GetIntentFilter("www.google.com", kPackageName));
   array.emplace_back(GetIntentFilter("www.google.co.uk", kPackageName));
-  array.emplace_back(GetIntentFilter("dev.chromium.org", kPackageName));
+  array.emplace_back(GetIntentFilter("dev.monyhar.org", kPackageName));
   instance_->OnIntentFiltersUpdated(std::move(array));
 
   EXPECT_FALSE(instance_->ShouldChromeHandleUrl(GURL("http://www.google.com")));
@@ -294,9 +294,9 @@ TEST_F(ArcIntentHelperTest, TestMultipleFilters) {
   EXPECT_FALSE(
       instance_->ShouldChromeHandleUrl(GURL("https://www.google.co.uk")));
   EXPECT_FALSE(
-      instance_->ShouldChromeHandleUrl(GURL("http://dev.chromium.org")));
+      instance_->ShouldChromeHandleUrl(GURL("http://dev.monyhar.org")));
   EXPECT_FALSE(
-      instance_->ShouldChromeHandleUrl(GURL("https://dev.chromium.org")));
+      instance_->ShouldChromeHandleUrl(GURL("https://dev.monyhar.org")));
 
   EXPECT_TRUE(instance_->ShouldChromeHandleUrl(GURL("http://www.android.com")));
 }
@@ -318,12 +318,12 @@ TEST_F(ArcIntentHelperTest, TestNonHttp) {
 TEST_F(ArcIntentHelperTest, TestMultipleUpdate) {
   std::vector<IntentFilter> array;
   array.emplace_back(GetIntentFilter("www.google.com", kPackageName));
-  array.emplace_back(GetIntentFilter("dev.chromium.org", kPackageName));
+  array.emplace_back(GetIntentFilter("dev.monyhar.org", kPackageName));
   instance_->OnIntentFiltersUpdated(std::move(array));
 
   std::vector<IntentFilter> array2;
   array2.emplace_back(GetIntentFilter("www.google.co.uk", kPackageName));
-  array2.emplace_back(GetIntentFilter("dev.chromium.org", kPackageName));
+  array2.emplace_back(GetIntentFilter("dev.monyhar.org", kPackageName));
   array2.emplace_back(GetIntentFilter("www.android.com", kPackageName));
   instance_->OnIntentFiltersUpdated(std::move(array2));
 
@@ -334,9 +334,9 @@ TEST_F(ArcIntentHelperTest, TestMultipleUpdate) {
   EXPECT_FALSE(
       instance_->ShouldChromeHandleUrl(GURL("https://www.google.co.uk")));
   EXPECT_FALSE(
-      instance_->ShouldChromeHandleUrl(GURL("http://dev.chromium.org")));
+      instance_->ShouldChromeHandleUrl(GURL("http://dev.monyhar.org")));
   EXPECT_FALSE(
-      instance_->ShouldChromeHandleUrl(GURL("https://dev.chromium.org")));
+      instance_->ShouldChromeHandleUrl(GURL("https://dev.monyhar.org")));
   EXPECT_FALSE(
       instance_->ShouldChromeHandleUrl(GURL("http://www.android.com")));
   EXPECT_FALSE(
@@ -355,7 +355,7 @@ TEST_F(ArcIntentHelperTest, TestIntentHelperAppIsNotAValidCandidate) {
   // is not always the last package checked in the ShouldChromeHandleUrl
   // filter matching logic. This is to ensure this unit test tests the package
   // name checking logic properly.
-  array.emplace_back(GetIntentFilter("dev.chromium.org", "z.package.name"));
+  array.emplace_back(GetIntentFilter("dev.monyhar.org", "z.package.name"));
   instance_->OnIntentFiltersUpdated(std::move(array));
 
   EXPECT_TRUE(instance_->ShouldChromeHandleUrl(GURL("http://www.google.com")));
@@ -364,9 +364,9 @@ TEST_F(ArcIntentHelperTest, TestIntentHelperAppIsNotAValidCandidate) {
   EXPECT_TRUE(
       instance_->ShouldChromeHandleUrl(GURL("https://www.android.com")));
   EXPECT_FALSE(
-      instance_->ShouldChromeHandleUrl(GURL("http://dev.chromium.org")));
+      instance_->ShouldChromeHandleUrl(GURL("http://dev.monyhar.org")));
   EXPECT_FALSE(
-      instance_->ShouldChromeHandleUrl(GURL("https://dev.chromium.org")));
+      instance_->ShouldChromeHandleUrl(GURL("https://dev.monyhar.org")));
 }
 
 // Tests that OnOpenUrl opens the URL in Chrome browser.

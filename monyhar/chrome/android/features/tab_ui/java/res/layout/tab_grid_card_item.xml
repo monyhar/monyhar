@@ -5,14 +5,14 @@
 <!-- TODO(crbug/928388): Handle elevation for KitKat.-->
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
        xmlns:app="http://schemas.android.com/apk/res-auto">
-    <org.chromium.ui.widget.ChromeImageView
+    <org.monyhar.ui.widget.ChromeImageView
         android:id="@+id/background_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/hovered_tab_grid_card_background"
         android:layout_margin="8dp"
         android:visibility="gone"/>
-    <org.chromium.ui.widget.ChromeImageView
+    <org.monyhar.ui.widget.ChromeImageView
         android:id="@+id/selected_view_below_lollipop"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -51,7 +51,7 @@
                 android:ellipsize="none"
                 android:singleLine="true"
                 android:textAppearance="@style/TextAppearance.TextMediumThick.Primary"/>
-            <org.chromium.chrome.browser.tasks.tab_management.TabGridThumbnailView
+            <org.monyhar.chrome.browser.tasks.tab_management.TabGridThumbnailView
                 android:id="@+id/tab_thumbnail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
                 android:src="@color/thumbnail_placeholder_on_primary_bg"
                 app:cornerRadiusBottomStart="@dimen/tab_list_card_radius"
                 app:cornerRadiusBottomEnd="@dimen/tab_list_card_radius"/>
-            <org.chromium.chrome.browser.tasks.tab_management.PriceCardView
+            <org.monyhar.chrome.browser.tasks.tab_management.PriceCardView
                 android:id="@+id/price_info_box_outer"
                 android:layout_below="@id/tab_title"
                 android:background="@drawable/price_card_scrim"
@@ -71,7 +71,7 @@
                 android:layout_height="56dp"
                 android:visibility="gone"/>
             <!-- TODO(crbug/1198288): Make decision on duplication of PriceCardView code.-->
-            <org.chromium.chrome.browser.tasks.tab_management.StoreHoursCardView
+            <org.monyhar.chrome.browser.tasks.tab_management.StoreHoursCardView
                 android:id="@+id/store_hours_box_outer"
                 android:layout_below="@id/tab_title"
                 android:background="@drawable/price_card_scrim"
@@ -83,7 +83,7 @@
                 style="@style/HorizontalDivider"
                 android:layout_below="@id/tab_title"
                 android:background="@color/divider_line_bg_color"/>
-            <org.chromium.ui.widget.ButtonCompat
+            <org.monyhar.ui.widget.ButtonCompat
                 android:id="@+id/create_group_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
                 android:text="@string/tabswitcher_create_group"
                 android:visibility="gone"
                 style="@style/FilledButton"/>
-            <org.chromium.ui.widget.ChipView
+            <org.monyhar.ui.widget.ChipView
                 android:id="@+id/page_info_button"
                 android:gravity="center"
                 android:layout_height="wrap_content"
@@ -106,7 +106,7 @@
                 android:visibility="gone"
                 style="@style/SearchShortcutChip" />
         </RelativeLayout>
-        <org.chromium.ui.widget.ChromeImageView
+        <org.monyhar.ui.widget.ChromeImageView
             android:id="@+id/action_button"
             android:layout_width="48dp"
             android:layout_height="48dp"

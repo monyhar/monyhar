@@ -1,8 +1,8 @@
 set noparent
-dcheng@chromium.org
-oksamyt@chromium.org
+dcheng@monyhar.org
+oksamyt@monyhar.org
 rockot@google.com
-rsesek@chromium.org
+rsesek@monyhar.org
 
 # For Fuchsia-specific changes:
 per-file *_fuchsia*=file://build/fuchsia/OWNERS

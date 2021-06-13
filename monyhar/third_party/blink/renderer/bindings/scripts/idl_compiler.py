@@ -28,7 +28,7 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 """Compile an .idl file to Blink V8 bindings (.h and .cpp files).
 
-Design doc: https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/renderer/bindings/IDLCompiler.md
+Design doc: https://monyhar.googlesource.com/monyhar/src/+/master/third_party/blink/renderer/bindings/IDLCompiler.md
 """
 
 import abc

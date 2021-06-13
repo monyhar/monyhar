@@ -1,5 +1,5 @@
 # chrome_cleaner is built into a separate executable and should not inherit
-# rules from chromium.
+# rules from monyhar.
 noparent = True
 
 include_rules = [

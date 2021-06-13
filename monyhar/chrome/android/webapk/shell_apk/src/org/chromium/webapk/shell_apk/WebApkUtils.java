@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webapk.shell_apk;
+package org.monyhar.webapk.shell_apk;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -32,7 +32,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
 
-import org.chromium.components.webapk.lib.common.WebApkMetaDataKeys;
+import org.monyhar.components.webapk.lib.common.WebApkMetaDataKeys;
 
 import java.util.ArrayList;
 import java.util.HashMap;

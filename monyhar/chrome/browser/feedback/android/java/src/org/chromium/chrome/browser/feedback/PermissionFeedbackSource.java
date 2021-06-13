@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feedback;
+package org.monyhar.chrome.browser.feedback;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;
@@ -11,8 +11,8 @@ import android.content.pm.PackageManager.NameNotFoundException;
 import android.text.TextUtils;
 import android.util.Pair;
 
-import org.chromium.base.CollectionUtil;
-import org.chromium.base.ContextUtils;
+import org.monyhar.base.CollectionUtil;
+import org.monyhar.base.ContextUtils;
 
 import java.util.Map;
 

@@ -2,7 +2,7 @@
 <!-- Copyright 2016 The Chromium Authors. All rights reserved.
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
-<org.chromium.chrome.browser.signin.SyncPromoView
+<org.monyhar.chrome.browser.signin.SyncPromoView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
@@ -39,7 +39,7 @@
             android:gravity="center_vertical"
             android:orientation="horizontal" >
 
-            <org.chromium.ui.widget.ButtonCompat
+            <org.monyhar.ui.widget.ButtonCompat
                 android:id="@+id/sign_in"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -48,4 +48,4 @@
 
     </LinearLayout>
 
-</org.chromium.chrome.browser.signin.SyncPromoView>
+</org.monyhar.chrome.browser.signin.SyncPromoView>

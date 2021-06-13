@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.verification;
+package org.monyhar.chrome.browser.browserservices.verification;
 
 import androidx.annotation.Nullable;
 import androidx.browser.customtabs.CustomTabsService;
 
-import org.chromium.components.externalauth.ExternalAuthUtils;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.components.externalauth.ExternalAuthUtils;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * A factory that creates instances of {@link OriginVerifier}.

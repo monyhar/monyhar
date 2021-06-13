@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-[JavaPackage="org.chromium.mojo.bindings.interfacecontrol"]
+[JavaPackage="org.monyhar.mojo.bindings.interfacecontrol"]
 module mojo.interface_control;
 
 // For each user-defined interface, some control functions are provided by the

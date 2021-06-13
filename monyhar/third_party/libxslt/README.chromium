@@ -10,4 +10,4 @@ Description:
 
 libxslt from libxml.org.
 
-Modifications: Apply the patches in chromium/*.patch
+Modifications: Apply the patches in monyhar/*.patch

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.jank_tracker;
+package org.monyhar.base.jank_tracker;
 
 import static org.mockito.Mockito.verify;
 
@@ -17,7 +17,7 @@ import org.mockito.MockitoAnnotations;
 import org.robolectric.shadow.api.Shadow;
 import org.robolectric.shadows.ShadowLooper;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
 
 /**
  *  Tests for JankReportingScheduler.

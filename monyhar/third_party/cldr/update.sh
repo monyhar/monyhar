@@ -14,7 +14,7 @@
 # CLDR release to checkout. See http://cldr.unicode.org/index/downloads
 CLDR_URL='http://unicode.org/Public/cldr/38.1/cldr-common-38.1.zip'
 # To update the CLDR files, change this URL and also update the Version
-# field in README.chromium. Then run this script and commit the changes.
+# field in README.monyhar. Then run this script and commit the changes.
 
 # Set working directory and terminate on error.
 set -e

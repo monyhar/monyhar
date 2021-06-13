@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments.test_support;
+package org.monyhar.chrome.browser.payments.test_support;
 
 import androidx.annotation.Nullable;
 
@@ -10,8 +10,8 @@ import org.robolectric.annotation.Implementation;
 import org.robolectric.annotation.Implements;
 import org.robolectric.annotation.Resetter;
 
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.content_public.browser.WebContents;
 
 /** The shadow of Profile. */
 @Implements(Profile.class)

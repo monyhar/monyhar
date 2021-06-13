@@ -1,10 +1,10 @@
-ellyjones@chromium.org
-msw@chromium.org
-pbos@chromium.org
-pkasting@chromium.org
-sky@chromium.org
-tapted@chromium.org
-dfried@chromium.org
+ellyjones@monyhar.org
+msw@monyhar.org
+pbos@monyhar.org
+pkasting@monyhar.org
+sky@monyhar.org
+tapted@monyhar.org
+dfried@monyhar.org
 # NOTE: Do not use the above owners when you're in a subdirectory that has
 # OWNERS file. Prefer these instead as these OWNERS will be more familiar, and
 # to load balance. Only use the above for subdirectories when doing refactorings
@@ -14,7 +14,7 @@ dfried@chromium.org
 # structural changes, use usual OWNERS rules.
 per-file BUILD.gn=*
 
-per-file tab_helpers.*=avi@chromium.org
+per-file tab_helpers.*=avi@monyhar.org
 
 # Instant/Search files.
 per-file browser_instant_controller*=file://chrome/browser/search/OWNERS

@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.util.date;
+package org.monyhar.components.browser_ui.util.date;
 
 import android.content.Context;
 import android.text.format.DateUtils;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.components.browser_ui.util.R;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.components.browser_ui.util.R;
 
 import java.util.Calendar;
 import java.util.Date;

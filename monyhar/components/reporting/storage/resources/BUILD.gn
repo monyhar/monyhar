@@ -20,7 +20,7 @@ static_library("resource_interface") {
 
 # All unit tests are built as part of the //components:components_unittests
 # target and must be one targets named "unit_tests".
-# TODO(chromium:1169835) These tests can't be run on iOS until they are updated.
+# TODO(monyhar:1169835) These tests can't be run on iOS until they are updated.
 source_set("unit_tests") {
   testonly = true
   sources = [ "resource_interface_unittest.cc" ]

@@ -27,7 +27,7 @@
 
 [APS2]: android_native_libraries.md#Packed-Relocations
 [RELR]: https://reviews.llvm.org/D48247
-[cros]: https://chromium-review.googlesource.com/c/chromiumos/overlays/chromiumos-overlay/+/1210982
+[cros]: https://monyhar-review.googlesource.com/c/monyharos/overlays/monyharos-overlay/+/1210982
 
 ### Windows Relocations (PE Format)
  * For PE files, relocaitons are stored in per-code-page
@@ -49,7 +49,7 @@
        [not yet enabled][relr_bug].
      * Chrome on Windows (x64) has `.relocs` sections that sum to 620KiB.
 
-[relr_bug]: https://bugs.chromium.org/p/chromium/issues/detail?id=895194
+[relr_bug]: https://bugs.monyhar.org/p/monyhar/issues/detail?id=895194
 
 ### Memory Overhead
  * On Windows, there is [almost no memory overhead] from relocations.

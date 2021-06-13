@@ -4,11 +4,11 @@
 
 """Presubmit script for metrics_proto.
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See http://dev.monyhar.org/developers/how-tos/depottools/presubmit-scripts
 for more details on the presubmit API built into gcl.
 """
 
-README = 'README.chromium'
+README = 'README.monyhar'
 
 
 def IsMetricsProtoPath(input_api, path):

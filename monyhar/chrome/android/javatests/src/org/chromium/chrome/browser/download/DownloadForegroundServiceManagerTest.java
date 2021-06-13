@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download;
+package org.monyhar.chrome.browser.download;
 
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertFalse;
 import static junit.framework.Assert.assertTrue;
 
-import static org.chromium.chrome.browser.notifications.NotificationConstants.DEFAULT_NOTIFICATION_ID;
+import static org.monyhar.chrome.browser.notifications.NotificationConstants.DEFAULT_NOTIFICATION_ID;
 
 import android.app.Notification;
 import android.content.Context;
@@ -20,14 +20,14 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.UiThreadTest;
-import org.chromium.base.test.util.AdvancedMockContext;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.notifications.NotificationWrapperBuilderFactory;
-import org.chromium.chrome.browser.notifications.channels.ChromeChannelDefinitions;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.test.UiThreadTest;
+import org.monyhar.base.test.util.AdvancedMockContext;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.notifications.NotificationWrapperBuilderFactory;
+import org.monyhar.chrome.browser.notifications.channels.ChromeChannelDefinitions;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /**
  * Test for DownloadForegroundServiceManager.
@@ -123,7 +123,7 @@ public final class DownloadForegroundServiceManagerTest {
                             .createNotificationWrapperBuilder(true /* preferCompat */,
                                     ChromeChannelDefinitions.ChannelId.DOWNLOADS)
                             .setSmallIcon(
-                                    org.chromium.chrome.R.drawable.ic_file_download_white_24dp)
+                                    org.monyhar.chrome.R.drawable.ic_file_download_white_24dp)
                             .setContentTitle(FAKE_NOTIFICATION_CHANNEL)
                             .setContentText(FAKE_NOTIFICATION_CHANNEL)
                             .build();

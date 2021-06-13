@@ -6,4 +6,4 @@ query_parser is not allowed to depend on content/, because it is used by iOS.
 If dependences on content/ need to be added to query_parser, it will have to be
 made into a layered component. See [1] for more information.
 
-1: http://www.chromium.org/developers/design-documents/layered-components-design
+1: http://www.monyhar.org/developers/design-documents/layered-components-design

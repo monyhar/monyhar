@@ -9,7 +9,7 @@
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <org.chromium.components.browser_ui.widget.RadioButtonWithEditText
+    <org.monyhar.components.browser_ui.widget.RadioButtonWithEditText
         android:id="@+id/test_radio_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

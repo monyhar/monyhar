@@ -1,10 +1,10 @@
 # Speech recognition
-tommi@chromium.org
+tommi@monyhar.org
 
 # Text-to-speech
-per-file *tts_*=dmazzoni@chromium.org
-per-file *tts_*=dtseng@chromium.org
-per-file *tts_*=katie@chromium.org
+per-file *tts_*=dmazzoni@monyhar.org
+per-file *tts_*=dtseng@monyhar.org
+per-file *tts_*=katie@monyhar.org
 
 # Speech recognition service
 per-file *speech_recognition_*=evliu@google.com

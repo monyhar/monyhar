@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.impl;
+package org.monyhar.net.impl;
 
-import org.chromium.net.QuicException;
+import org.monyhar.net.QuicException;
 
 /**
  * Implements {@link QuicException}.
@@ -18,11 +18,11 @@ public class QuicExceptionImpl extends QuicException {
      *
      * @param message explanation of failure.
      * @param netErrorCode Error code from
-     * <a href=https://chromium.googlesource.com/chromium/src/+/main/net/base/net_error_list.h>
+     * <a href=https://monyhar.googlesource.com/monyhar/src/+/main/net/base/net_error_list.h>
      * this list</a>.
-     * @param quicDetailedErrorCode Detailed <a href="https://www.chromium.org/quic">QUIC</a> error
+     * @param quicDetailedErrorCode Detailed <a href="https://www.monyhar.org/quic">QUIC</a> error
      * code from <a
-     * href="https://cs.chromium.org/search/?q=symbol:%5CbQuicErrorCode%5Cb">
+     * href="https://cs.monyhar.org/search/?q=symbol:%5CbQuicErrorCode%5Cb">
      * QuicErrorCode</a>.
      */
     public QuicExceptionImpl(

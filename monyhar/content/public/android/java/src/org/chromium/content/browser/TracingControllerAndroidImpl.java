@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -12,16 +12,16 @@ import android.os.Environment;
 import android.text.TextUtils;
 import android.util.Pair;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.content.R;
-import org.chromium.content_public.browser.TracingControllerAndroid;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.content.R;
+import org.monyhar.content_public.browser.TracingControllerAndroid;
+import org.monyhar.ui.widget.Toast;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -38,9 +38,9 @@ import java.util.TimeZone;
  * If the host application registers this class's BroadcastReceiver, you can
  * also start and stop the tracer with a broadcast intent, as follows:
  * <ul>
- * <li>To start tracing: am broadcast -a org.chromium.content_shell_apk.GPU_PROFILER_START
+ * <li>To start tracing: am broadcast -a org.monyhar.content_shell_apk.GPU_PROFILER_START
  * <li>Add "-e file /foo/bar/xyzzy" to log trace data to a specific file.
- * <li>To stop tracing: am broadcast -a org.chromium.content_shell_apk.GPU_PROFILER_STOP
+ * <li>To stop tracing: am broadcast -a org.monyhar.content_shell_apk.GPU_PROFILER_STOP
  * </ul>
  * Note that the name of these intents change depending on which application
  * is being traced, but the general form is [app package name].GPU_PROFILER_{START,STOP}.

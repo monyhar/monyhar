@@ -12,7 +12,7 @@ include_rules = [
   "+crypto",  # Only used for tests.
 
   # Whitelist specific headers from //google_apis/gaia. Contact
-  # blundell@chromium.org if looking to add more.
+  # blundell@monyhar.org if looking to add more.
   "+google_apis/gaia/core_account_id.h",
   "+google_apis/gaia/gaia_constants.h",
   "+google_apis/gaia/gaia_oauth_client.h",

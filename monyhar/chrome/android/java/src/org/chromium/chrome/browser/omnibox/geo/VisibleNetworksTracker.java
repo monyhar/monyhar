@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.geo;
+package org.monyhar.chrome.browser.omnibox.geo;
 
 import android.content.Context;
 import android.os.SystemClock;
@@ -10,8 +10,8 @@ import android.os.SystemClock;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
-import org.chromium.base.ThreadUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.ThreadUtils;
 
 /**
  * VisibleNetworksTracker keeps track of the visible networks.

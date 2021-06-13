@@ -35,7 +35,7 @@ GURL StartUrl() {
 
 TEST(WebAppInstallationUtils, SetWebAppManifestFields_Summary) {
   WebApplicationInfo web_app_info;
-  web_app_info.start_url = GURL("https://www.chromium.org/index.html");
+  web_app_info.start_url = GURL("https://www.monyhar.org/index.html");
   web_app_info.scope = web_app_info.start_url.GetWithoutFilename();
   web_app_info.title = u"App Name";
   web_app_info.description = u"App Description";
@@ -46,7 +46,7 @@ TEST(WebAppInstallationUtils, SetWebAppManifestFields_Summary) {
   auto web_app = std::make_unique<WebApp>(app_id);
   SetWebAppManifestFields(web_app_info, *web_app);
 
-  EXPECT_EQ(web_app->scope(), GURL("https://www.chromium.org/"));
+  EXPECT_EQ(web_app->scope(), GURL("https://www.monyhar.org/"));
   EXPECT_EQ(web_app->name(), "App Name");
   EXPECT_EQ(web_app->description(), "App Description");
   EXPECT_TRUE(web_app->theme_color().has_value());

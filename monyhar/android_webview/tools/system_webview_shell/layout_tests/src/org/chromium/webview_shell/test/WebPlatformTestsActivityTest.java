@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webview_shell.test;
+package org.monyhar.webview_shell.test;
 
-import static org.chromium.base.test.util.ScalableTimeout.scaleTimeout;
+import static org.monyhar.base.test.util.ScalableTimeout.scaleTimeout;
 
 import android.os.Handler;
 import android.support.test.InstrumentationRegistry;
@@ -18,10 +18,10 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseActivityTestRule;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.FlakyTest;
-import org.chromium.webview_shell.WebPlatformTestsActivity;
+import org.monyhar.base.test.BaseActivityTestRule;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.FlakyTest;
+import org.monyhar.webview_shell.WebPlatformTestsActivity;
 
 import java.util.ArrayList;
 import java.util.concurrent.BlockingQueue;

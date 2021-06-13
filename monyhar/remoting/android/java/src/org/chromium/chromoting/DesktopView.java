@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting;
+package org.monyhar.chromoting;
 
 import android.content.Context;
 import android.text.InputType;
@@ -12,7 +12,7 @@ import android.view.SurfaceView;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 
-import org.chromium.chromoting.jni.Client;
+import org.monyhar.chromoting.jni.Client;
 
 /**
  * The class for viewing and interacting with a specific remote host.

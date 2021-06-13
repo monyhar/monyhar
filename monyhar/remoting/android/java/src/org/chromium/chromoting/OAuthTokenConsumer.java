@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting;
+package org.monyhar.chromoting;
 
 import android.content.Context;
 import android.os.Handler;
@@ -11,7 +11,7 @@ import android.os.Looper;
 import com.google.android.gms.auth.GoogleAuthException;
 import com.google.android.gms.auth.GoogleAuthUtil;
 
-import org.chromium.chromoting.base.OAuthTokenFetcher;
+import org.monyhar.chromoting.base.OAuthTokenFetcher;
 
 import java.io.IOException;
 

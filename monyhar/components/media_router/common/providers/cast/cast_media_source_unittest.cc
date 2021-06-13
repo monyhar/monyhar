@@ -130,7 +130,7 @@ TEST(CastMediaSourceTest, FromPresentationURL) {
 }
 
 TEST(CastMediaSourceTest, FromMirroringURN) {
-  MediaSource::Id source_id("urn:x-org.chromium.media:source:tab:5");
+  MediaSource::Id source_id("urn:x-org.monyhar.media:source:tab:5");
   std::unique_ptr<CastMediaSource> source =
       CastMediaSource::FromMediaSourceId(source_id);
   ASSERT_TRUE(source);
@@ -147,7 +147,7 @@ TEST(CastMediaSourceTest, FromMirroringURN) {
 }
 
 TEST(CastMediaSourceTest, FromDesktopUrn) {
-  MediaSource::Id source_id("urn:x-org.chromium.media:source:desktop:foo");
+  MediaSource::Id source_id("urn:x-org.monyhar.media:source:desktop:foo");
   std::unique_ptr<CastMediaSource> source =
       CastMediaSource::FromMediaSourceId(source_id);
   ASSERT_TRUE(source);

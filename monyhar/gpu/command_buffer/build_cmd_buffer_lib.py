@@ -23,8 +23,8 @@ _LICENSE = """// Copyright %s The Chromium Authors. All rights reserved.
 
 _DO_NOT_EDIT_WARNING = """// This file is auto-generated from
 // gpu/command_buffer/build_%s_cmd_buffer.py
-// It's formatted by clang-format using chromium coding style:
-//    clang-format -i -style=chromium filename
+// It's formatted by clang-format using monyhar coding style:
+//    clang-format -i -style=monyhar filename
 // DO NOT EDIT!
 
 """
@@ -183,7 +183,7 @@ _STATE_INFO = {
   'CoverageModulationCHROMIUM': {
     'type': 'Normal',
     'func': 'CoverageModulationNV',
-    'extension_flag': 'chromium_framebuffer_mixed_samples',
+    'extension_flag': 'monyhar_framebuffer_mixed_samples',
     'states': [
       { 'enum': 'GL_COVERAGE_MODULATION_CHROMIUM',
         'name': 'coverage_modulation',
@@ -450,7 +450,7 @@ _STATE_INFO = {
         'type': 'GLenum',
         'enum': 'GL_TEXTURE_FILTERING_HINT_CHROMIUM',
         'default': 'GL_NICEST',
-        'extension_flag': 'chromium_texture_filtering_hint'
+        'extension_flag': 'monyhar_texture_filtering_hint'
       }
     ],
   },
@@ -754,7 +754,7 @@ def ToGLExtensionString(extension_flag):
   if extension_flag == "oes_compressed_etc1_rgb8_texture":
     return "OES_compressed_ETC1_RGB8_texture" # Fixup inconsitency with rgb8,
                                               # unfortunate.
-  uppercase_words = [ 'img', 'ext', 'arb', 'chromium', 'oes', 'amd', 'bgra8888',
+  uppercase_words = [ 'img', 'ext', 'arb', 'monyhar', 'oes', 'amd', 'bgra8888',
                       'egl', 'atc', 'etc1', 'angle']
   parts = extension_flag.split('_')
   return "_".join(
@@ -6287,10 +6287,10 @@ class GLGenerator(object):
   _function_re = re.compile(r'^GL_APICALL(.*?)GL_APIENTRY (.*?) \((.*?)\);$')
 
   def __init__(self, verbose, year, function_info, named_type_info,
-               chromium_root_dir):
+               monyhar_root_dir):
     self.original_functions = []
     self.functions = []
-    self.chromium_root_dir = chromium_root_dir
+    self.monyhar_root_dir = monyhar_root_dir
     self.verbose = verbose
     self.year = year
     self.errors = 0
@@ -6360,7 +6360,7 @@ class GLGenerator(object):
 
   def ParseGLH(self, filename):
     """Parses the cmd_buffer_functions.txt file and extracts the functions"""
-    filename = os.path.join(self.chromium_root_dir, filename)
+    filename = os.path.join(self.monyhar_root_dir, filename)
     with open(filename, "r") as f:
       functions = f.read()
     for line in functions.splitlines():
@@ -7338,9 +7338,9 @@ extern const NameToFunc g_gles2_function_table[] = {
                   'third_party/khronos/GLES2/gl2ext.h',
                   'third_party/khronos/GLES3/gl3.h',
                   'third_party/khronos/GLES3/gl31.h',
-                  'gpu/GLES2/gl2chromium.h',
-                  'gpu/GLES2/gl2extchromium.h']:
-      fname = os.path.join(self.chromium_root_dir, fname)
+                  'gpu/GLES2/gl2monyhar.h',
+                  'gpu/GLES2/gl2extmonyhar.h']:
+      fname = os.path.join(self.monyhar_root_dir, fname)
       lines = open(fname).readlines()
       for line in lines:
         m = enum_re.match(line)
@@ -7572,13 +7572,13 @@ const size_t %(p)sUtil::enum_to_string_table_len_ =
     self.generated_cpp_filenames.append(filename)
 
 
-def Format(generated_files, output_dir, chromium_root_dir):
+def Format(generated_files, output_dir, monyhar_root_dir):
   """Format generated_files relative to output_dir using clang-format."""
   formatter = "third_party/depot_tools/clang-format"
   if platform.system() == "Windows":
     formatter = "third_party\\depot_tools\\clang-format.bat"
-  formatter = os.path.join(chromium_root_dir, formatter)
+  formatter = os.path.join(monyhar_root_dir, formatter)
   generated_files = map(lambda filename: os.path.join(output_dir, filename),
                         generated_files)
   for filename in generated_files:
-    call([formatter, "-i", "-style=chromium", filename], cwd=chromium_root_dir)
+    call([formatter, "-i", "-style=monyhar", filename], cwd=monyhar_root_dir)

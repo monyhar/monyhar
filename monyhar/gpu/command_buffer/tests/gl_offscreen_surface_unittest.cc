@@ -4,7 +4,7 @@
 
 #include <GLES2/gl2.h>
 #include <GLES2/gl2ext.h>
-#include <GLES2/gl2extchromium.h>
+#include <GLES2/gl2extmonyhar.h>
 #include <stdint.h>
 
 #include "gpu/command_buffer/tests/gl_manager.h"

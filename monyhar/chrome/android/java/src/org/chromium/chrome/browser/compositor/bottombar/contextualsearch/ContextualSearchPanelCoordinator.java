@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.bottombar.contextualsearch;
+package org.monyhar.chrome.browser.compositor.bottombar.contextualsearch;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -13,25 +13,25 @@ import android.widget.FrameLayout;
 import androidx.annotation.Nullable;
 import androidx.core.content.res.ResourcesCompat;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.WebContentsFactory;
-import org.chromium.chrome.browser.compositor.bottombar.OverlayPanel.PanelState;
-import org.chromium.chrome.browser.content.ContentUtils;
-import org.chromium.chrome.browser.contextualsearch.ContextualSearchManagementDelegate;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.version.ChromeVersionInfo;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController.SheetState;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetObserver;
-import org.chromium.components.browser_ui.bottomsheet.EmptyBottomSheetObserver;
-import org.chromium.components.embedder_support.view.ContentView;
-import org.chromium.components.thinwebview.ThinWebView;
-import org.chromium.components.thinwebview.ThinWebViewConstraints;
-import org.chromium.components.thinwebview.ThinWebViewFactory;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.ViewAndroidDelegate;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.WebContentsFactory;
+import org.monyhar.chrome.browser.compositor.bottombar.OverlayPanel.PanelState;
+import org.monyhar.chrome.browser.content.ContentUtils;
+import org.monyhar.chrome.browser.contextualsearch.ContextualSearchManagementDelegate;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.version.ChromeVersionInfo;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController.SheetState;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetObserver;
+import org.monyhar.components.browser_ui.bottomsheet.EmptyBottomSheetObserver;
+import org.monyhar.components.embedder_support.view.ContentView;
+import org.monyhar.components.thinwebview.ThinWebView;
+import org.monyhar.components.thinwebview.ThinWebViewConstraints;
+import org.monyhar.components.thinwebview.ThinWebViewFactory;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.ViewAndroidDelegate;
+import org.monyhar.ui.base.WindowAndroid;
 
 import java.util.List;
 
@@ -76,9 +76,9 @@ public class ContextualSearchPanelCoordinator implements ContextualSearchPanelIn
 
         final Resources resources = mContext.getResources();
         mToolbarHeightPx = resources.getDimensionPixelSize(
-                org.chromium.chrome.R.dimen.sheet_tab_toolbar_height);
+                org.monyhar.chrome.R.dimen.sheet_tab_toolbar_height);
         mFullHeightFraction = ResourcesCompat.getFloat(resources,
-                org.chromium.chrome.R.dimen.contextual_search_sheet_full_height_fraction);
+                org.monyhar.chrome.R.dimen.contextual_search_sheet_full_height_fraction);
     }
 
     private void createWebContents() {

@@ -13,7 +13,7 @@ label.
 
 ### File Structure
 The file structure of our component will be the following:
-* ./chrome/android/java/src/org/chromium/chrome/browser/simple_menu/
+* ./chrome/android/java/src/org/monyhar/chrome/browser/simple_menu/
   * [`SimpleMenuCoordinator.java`](#SimpleMenuCoordinator)
   * [`SimpleMenuMediator.java`](#SimpleMenuMediator)
   * [`SimpleMenuItemViewBinder.java`](#SimpleMenuItemViewBinder)
@@ -148,7 +148,7 @@ class SimpleMenuItemViewBinder {
     android:orientation="horizontal"
     android:background="@color/modern_primary_color">
 
-    <org.chromium.ui.widget.ChromeImageView
+    <org.monyhar.ui.widget.ChromeImageView
         android:id="@+id/simple_menu_icon"
         android:layout_width="18dp"
         android:layout_height="18dp"
@@ -165,6 +165,6 @@ class SimpleMenuItemViewBinder {
 </LinearLayout>
 ```
 
-[mvc_tutorial_link]:https://chromium.googlesource.com/chromium/src/+/HEAD/docs/ui/android/mvc_architecture_tutorial.md
-[mvc_recycler_view_tutorial]:https://chromium.googlesource.com/chromium/src/+/HEAD/docs/ui/android/mvc_simple_recycler_view_tutorial.md
+[mvc_tutorial_link]:https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/ui/android/mvc_architecture_tutorial.md
+[mvc_recycler_view_tutorial]:https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/ui/android/mvc_simple_recycler_view_tutorial.md
 

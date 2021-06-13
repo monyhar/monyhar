@@ -1,13 +1,13 @@
 noparent = True
 
 include_rules = [
-  "-chrome/android/java/src/org/chromium/chrome/browser",
-  "+base/android/java/src/org/chromium/base",
-  "+chrome/android/java/src/org/chromium/chrome/browser/toolbar",
-  "+chrome/android/java/src/org/chromium/chrome/browser/omnibox",
+  "-chrome/android/java/src/org/monyhar/chrome/browser",
+  "+base/android/java/src/org/monyhar/base",
+  "+chrome/android/java/src/org/monyhar/chrome/browser/toolbar",
+  "+chrome/android/java/src/org/monyhar/chrome/browser/omnibox",
   "+chrome/browser/ui/android/theme",
   "+components/browser_ui/widget/android/java",
-  "+ui/android/java/src/org/chromium/ui",
+  "+ui/android/java/src/org/monyhar/ui",
   "+url/android",
   "+chrome/browser/tabmodel/android/java",
   "+chrome/browser/ui/messages/android/java",
@@ -19,20 +19,20 @@ specific_include_rules = {
     "+chrome/android/features/tab_ui",
     "+chrome/android/features/vr",
     "+chrome/android/feed/core/java",
-    "+chrome/android/java/src/org/chromium/chrome/browser",
-    "-chrome/android/java/src/org/chromium/chrome/browser/app/ChromeActivity.java",
-    "-chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java",
+    "+chrome/android/java/src/org/monyhar/chrome/browser",
+    "-chrome/android/java/src/org/monyhar/chrome/browser/app/ChromeActivity.java",
+    "-chrome/android/java/src/org/monyhar/chrome/browser/ChromeTabbedActivity.java",
     "+chrome/browser/ui/android/toolbar",
   ],
   'ToolbarButtonInProductHelpController.java': [
-    "+chrome/android/java/src/org/chromium/chrome/browser",
-    "-chrome/android/java/src/org/chromium/chrome/browser/app/ChromeActivity.java",
-    "-chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java",
+    "+chrome/android/java/src/org/monyhar/chrome/browser",
+    "-chrome/android/java/src/org/monyhar/chrome/browser/app/ChromeActivity.java",
+    "-chrome/android/java/src/org/monyhar/chrome/browser/ChromeTabbedActivity.java",
   ],
   'LocationBarModel.java': [
-    "+chrome/android/features/start_surface/public/java/src/org/chromium/chrome/features/start_surface/StartSurfaceConfiguration.java",
+    "+chrome/android/features/start_surface/public/java/src/org/monyhar/chrome/features/start_surface/StartSurfaceConfiguration.java",
   ],
   'ToolbarControlContainer.java': [
-    "+chrome/browser/flags/android/java/src/org/chromium/chrome/browser/flags",
+    "+chrome/browser/flags/android/java/src/org/monyhar/chrome/browser/flags",
   ]
 }

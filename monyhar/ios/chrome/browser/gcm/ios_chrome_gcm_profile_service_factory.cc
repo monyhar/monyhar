@@ -76,7 +76,7 @@ std::string IOSChromeGCMProfileServiceFactory::GetProductCategoryForSubtypes() {
 #if BUILDFLAG(GOOGLE_CHROME_BRANDING)
   return "com.chrome.ios";
 #else
-  return "org.chromium.ios";
+  return "org.monyhar.ios";
 #endif
 }
 

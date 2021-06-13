@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab;
+package org.monyhar.chrome.browser.tab;
 
 import android.graphics.Color;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.ui.util.ColorUtils;
+import org.monyhar.ui.util.ColorUtils;
 
 /**
  * Object that contains the state of a tab, including its navigation history.

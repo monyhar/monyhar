@@ -50,7 +50,7 @@ copy("copy_signing") {
   deps = [ ":sign_config" ]
 
   adjusted_mac_signing_sources = mac_signing_sources - [
-                                   "signing/chromium_config.py",
+                                   "signing/monyhar_config.py",
                                    "signing/config_factory.py",
                                    "signing/parts.py",
                                    "signing/pipeline.py",

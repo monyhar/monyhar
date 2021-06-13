@@ -21,7 +21,7 @@ TEST_F(TableViewLinkHeaderFooterItemTest, LinkedLabel) {
   TableViewLinkHeaderFooterItem* item =
       [[TableViewLinkHeaderFooterItem alloc] initWithType:0];
   item.text = @"HeaderFooter text with BEGIN_LINKlinkEND_LINK";
-  item.urls = std::vector<GURL>{GURL("https://chromium.org")};
+  item.urls = std::vector<GURL>{GURL("https://monyhar.org")};
 
   id headerFooter = [[[item cellClass] alloc] init];
   ASSERT_TRUE(

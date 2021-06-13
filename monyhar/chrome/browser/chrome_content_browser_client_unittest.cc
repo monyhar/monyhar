@@ -110,7 +110,7 @@ TEST_F(ChromeContentBrowserClientWindowTest, OpenURL) {
   int previous_count = browser()->tab_strip_model()->count();
 
   GURL urls[] = { GURL("https://www.google.com"),
-                  GURL("https://www.chromium.org") };
+                  GURL("https://www.monyhar.org") };
 
   for (const GURL& url : urls) {
     content::OpenURLParams params(url, content::Referrer(),

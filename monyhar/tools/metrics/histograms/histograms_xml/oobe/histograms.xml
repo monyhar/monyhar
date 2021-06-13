@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of OOBE histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -33,8 +33,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="OOBE.BootToSignInCompleted" units="ms"
     expires_after="2021-10-10">
-  <owner>alemate@chromium.org</owner>
-  <owner>rsorokin@chromium.org</owner>
+  <owner>alemate@monyhar.org</owner>
+  <owner>rsorokin@monyhar.org</owner>
   <owner>cros-oac@google.com</owner>
   <summary>Time from the login screen start to user session start.</summary>
 </histogram>
@@ -93,8 +93,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <!-- expires-never: Core metric for monitoring initial Gaia loading regressions.
 -->
 
-  <owner>rsorokin@chromium.org</owner>
-  <owner>alemate@chromium.org</owner>
+  <owner>rsorokin@monyhar.org</owner>
+  <owner>alemate@monyhar.org</owner>
   <owner>cros-oac@google.com</owner>
   <summary>
     Time from acceptance of the EULA until the login screen is first displayed.
@@ -158,8 +158,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <!-- Name completed by histogram_suffixes
      name="GestureNavigationOOBEPage" -->
 
-  <owner>mmourgos@chromium.org</owner>
-  <owner>tbarzic@chromium.org</owner>
+  <owner>mmourgos@monyhar.org</owner>
+  <owner>tbarzic@monyhar.org</owner>
   <summary>
     Records the amount of time that each page within the gesture navigation OOBE
     screen is shown. Recorded when the gesture navigation oobe screen is
@@ -306,9 +306,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="OOBE.StepCompletionTime" units="ms" expires_after="never">
 <!-- expires-never: Core metric for monitoring OOBE flow regressions. -->
 
-  <owner>alemate@chromium.org</owner>
-  <owner>antrim@chromium.org</owner>
-  <owner>rsorokin@chromium.org</owner>
+  <owner>alemate@monyhar.org</owner>
+  <owner>antrim@monyhar.org</owner>
+  <owner>rsorokin@monyhar.org</owner>
   <owner>cros-oac@google.com</owner>
   <summary>Time spent on specific OOBE screen.</summary>
 </histogram>
@@ -333,7 +333,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="OOBE.SyncConsentScreen.Behavior" enum="SyncConsentBehavior"
     expires_after="2021-10-10">
-  <owner>jamescook@chromium.org</owner>
+  <owner>jamescook@monyhar.org</owner>
   <owner>cros-oac@google.com</owner>
   <summary>
     Whether the sync consent screen was shown, skipped with sync disabled, or
@@ -355,7 +355,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="OOBE.SyncConsentScreen.SyncEnabled" enum="BooleanEnabled"
     expires_after="2021-10-10">
-  <owner>jamescook@chromium.org</owner>
+  <owner>jamescook@monyhar.org</owner>
   <owner>cros-oac@google.com</owner>
   <summary>
     Final state of the sync service at the end of the sync consent OOBE step.
@@ -366,7 +366,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="OOBE.SyncConsentScreen.UserChoice"
     enum="SyncConsentUserChoice" expires_after="2021-10-10">
-  <owner>jamescook@chromium.org</owner>
+  <owner>jamescook@monyhar.org</owner>
   <owner>cros-oac@google.com</owner>
   <summary>
     Which button the user clicked on the out-of-box sync consent screen.
@@ -427,7 +427,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="OOBE.WebUI.LoadTime.FirstRun" units="ms"
     expires_after="2022-01-01">
-  <owner>rsorokin@chromium.org</owner>
+  <owner>rsorokin@monyhar.org</owner>
   <owner>cros-oac@google.com</owner>
   <summary>
     Time required for ChromeOS to load the First Run WebUI (i.e. out-of-box
@@ -437,7 +437,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="OOBE.WebUIToViewsSwitch.Duration" units="ms"
     expires_after="2021-11-21">
-  <owner>rsorokin@chromium.org</owner>
+  <owner>rsorokin@monyhar.org</owner>
   <owner>cros-oac@google.com</owner>
   <summary>
     Measures time spent by switch between WebUI and Views-based display hosts.

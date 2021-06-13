@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.smoke;
+package org.monyhar.net.smoke;
 
-import static org.chromium.net.smoke.CronetSmokeTestRule.assertJavaEngine;
+import static org.monyhar.net.smoke.CronetSmokeTestRule.assertJavaEngine;
 
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
@@ -17,9 +17,9 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 
-import org.chromium.net.CronetEngine;
-import org.chromium.net.CronetProvider;
-import org.chromium.net.ExperimentalCronetEngine;
+import org.monyhar.net.CronetEngine;
+import org.monyhar.net.CronetProvider;
+import org.monyhar.net.ExperimentalCronetEngine;
 
 import java.util.List;
 

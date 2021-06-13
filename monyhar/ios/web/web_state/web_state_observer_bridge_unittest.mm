@@ -66,7 +66,7 @@ TEST_F(WebStateObserverBridgeTest, WasHidden) {
 TEST_F(WebStateObserverBridgeTest, DidStartNavigation) {
   ASSERT_FALSE([observer_ didStartNavigationInfo]);
 
-  GURL url("https://chromium.test/");
+  GURL url("https://monyhar.test/");
   std::unique_ptr<web::NavigationContext> context =
       web::NavigationContextImpl::CreateNavigationContext(
           &fake_web_state_, url, /*has_user_gesture=*/true,
@@ -95,7 +95,7 @@ TEST_F(WebStateObserverBridgeTest, DidStartNavigation) {
 TEST_F(WebStateObserverBridgeTest, DidFinishNavigation) {
   ASSERT_FALSE([observer_ didFinishNavigationInfo]);
 
-  GURL url("https://chromium.test/");
+  GURL url("https://monyhar.test/");
   std::unique_ptr<web::NavigationContext> context =
       web::NavigationContextImpl::CreateNavigationContext(
           &fake_web_state_, url, /*has_user_gesture=*/true,
@@ -173,7 +173,7 @@ TEST_F(WebStateObserverBridgeTest, DidChangeVisibleSecurityState) {
 TEST_F(WebStateObserverBridgeTest, FaviconUrlUpdated) {
   ASSERT_FALSE([observer_ updateFaviconUrlCandidatesInfo]);
 
-  web::FaviconURL url(GURL("https://chromium.test/"),
+  web::FaviconURL url(GURL("https://monyhar.test/"),
                       web::FaviconURL::IconType::kTouchIcon, {gfx::Size(5, 6)});
 
   observer_bridge_.FaviconUrlUpdated(&fake_web_state_, {url});

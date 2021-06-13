@@ -1,13 +1,13 @@
-bajones@chromium.org
-geofflang@chromium.org
-vmiura@chromium.org
-zmo@chromium.org
-jdarpinian@chromium.org
+bajones@monyhar.org
+geofflang@monyhar.org
+vmiura@monyhar.org
+zmo@monyhar.org
+jdarpinian@monyhar.org
 
 # GPU memory buffer tests.
-per-file *gpu_memory_buffer*=dcastagna@chromium.org
+per-file *gpu_memory_buffer*=dcastagna@monyhar.org
 
 # For Dawn / WebGPU changes
-cwallez@chromium.org
-enga@chromium.org
-kainino@chromium.org
+cwallez@monyhar.org
+enga@monyhar.org
+kainino@monyhar.org

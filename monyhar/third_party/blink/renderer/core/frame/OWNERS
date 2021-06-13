@@ -1,6 +1,6 @@
-bokan@chromium.org
-dcheng@chromium.org
-japhet@chromium.org
+bokan@monyhar.org
+dcheng@monyhar.org
+japhet@monyhar.org
 
 per-file *_type_converter*.*=set noparent
 per-file *_type_converter*.*=file://ipc/SECURITY_OWNERS

@@ -60,16 +60,16 @@ source_set("factory") {
 if (is_android) {
   android_library("java") {
     sources = [
-      "android/java/src/org/chromium/chrome/browser/video_tutorials/Language.java",
-      "android/java/src/org/chromium/chrome/browser/video_tutorials/LanguageInfoProvider.java",
-      "android/java/src/org/chromium/chrome/browser/video_tutorials/Tutorial.java",
-      "android/java/src/org/chromium/chrome/browser/video_tutorials/VideoTutorialService.java",
-      "android/java/src/org/chromium/chrome/browser/video_tutorials/iph/VideoIPHCoordinator.java",
-      "android/java/src/org/chromium/chrome/browser/video_tutorials/iph/VideoTutorialIPHUtils.java",
-      "android/java/src/org/chromium/chrome/browser/video_tutorials/iph/VideoTutorialTryNowTracker.java",
-      "android/java/src/org/chromium/chrome/browser/video_tutorials/list/TutorialListCoordinator.java",
-      "android/java/src/org/chromium/chrome/browser/video_tutorials/metrics/VideoTutorialMetrics.java",
-      "android/java/src/org/chromium/chrome/browser/video_tutorials/player/VideoPlayerCoordinator.java",
+      "android/java/src/org/monyhar/chrome/browser/video_tutorials/Language.java",
+      "android/java/src/org/monyhar/chrome/browser/video_tutorials/LanguageInfoProvider.java",
+      "android/java/src/org/monyhar/chrome/browser/video_tutorials/Tutorial.java",
+      "android/java/src/org/monyhar/chrome/browser/video_tutorials/VideoTutorialService.java",
+      "android/java/src/org/monyhar/chrome/browser/video_tutorials/iph/VideoIPHCoordinator.java",
+      "android/java/src/org/monyhar/chrome/browser/video_tutorials/iph/VideoTutorialIPHUtils.java",
+      "android/java/src/org/monyhar/chrome/browser/video_tutorials/iph/VideoTutorialTryNowTracker.java",
+      "android/java/src/org/monyhar/chrome/browser/video_tutorials/list/TutorialListCoordinator.java",
+      "android/java/src/org/monyhar/chrome/browser/video_tutorials/metrics/VideoTutorialMetrics.java",
+      "android/java/src/org/monyhar/chrome/browser/video_tutorials/player/VideoPlayerCoordinator.java",
     ]
 
     deps = [
@@ -83,7 +83,7 @@ if (is_android) {
       "//ui/android:ui_java",
     ]
 
-    resources_package = "org.chromium.chrome.browser.video_tutorials"
+    resources_package = "org.monyhar.chrome.browser.video_tutorials"
     srcjar_deps = [ ":jni_enums" ]
   }
 
@@ -124,13 +124,13 @@ if (is_android) {
 
     # This internal file will be replaced by a generated file so the resulting
     # android_library target does not actually depend on this internal file.
-    sources = [ "internal/android/java/src/org/chromium/chrome/browser/video_tutorials/VideoTutorialServiceFactory.java" ]
+    sources = [ "internal/android/java/src/org/monyhar/chrome/browser/video_tutorials/VideoTutorialServiceFactory.java" ]
   }
 
   android_library("test_support_java") {
     sources = [
-      "android/java/src/org/chromium/chrome/browser/video_tutorials/test/TestImageFetcher.java",
-      "android/java/src/org/chromium/chrome/browser/video_tutorials/test/TestVideoTutorialService.java",
+      "android/java/src/org/monyhar/chrome/browser/video_tutorials/test/TestImageFetcher.java",
+      "android/java/src/org/monyhar/chrome/browser/video_tutorials/test/TestVideoTutorialService.java",
     ]
 
     deps = [

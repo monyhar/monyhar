@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of GCM histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -23,8 +23,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.AccountMappingMessageReceived" enum="BooleanReceived"
     expires_after="2021-10-31">
-  <owner>peter@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     Records that a message has been received from a delivery channel powered by
     the GCM account mappings.
@@ -33,15 +33,15 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.CheckinRequestStatus" enum="GCMCheckinRequestStatus"
     expires_after="M96">
-  <owner>peter@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>Status code of the outcome of a GCM checkin request.</summary>
 </histogram>
 
 <histogram name="GCM.CheckinRequestStatusNetError" enum="NetErrorCodes"
     expires_after="M96">
-  <owner>peter@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     Network error code for a GCM checkin request that failed because of a
     network error.
@@ -50,25 +50,25 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.ConnectionDisconnectErrorCode"
     enum="CombinedHttpResponseAndNetErrorCode" expires_after="M77">
-  <owner>zea@chromium.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>URL response and error codes from GCM disconnect events.</summary>
 </histogram>
 
 <histogram name="GCM.ConnectionEndpoint" enum="GCMEndpoints"
     expires_after="2018-08-30">
-  <owner>zea@chromium.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>Number of connections made to each specific MCS endpoint.</summary>
 </histogram>
 
 <histogram name="GCM.ConnectionFailureErrorCode"
     enum="CombinedHttpResponseAndNetErrorCode" expires_after="2018-08-30">
-  <owner>zea@chromium.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>URL response and error codes from GCM connection attempts.</summary>
 </histogram>
 
 <histogram name="GCM.ConnectionLatency" units="ms" expires_after="M88">
-  <owner>peter@chromium.org</owner>
-  <owner>zea@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>
     The time between the initiation of a connection and the successful
     completion of it.
@@ -77,13 +77,13 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.ConnectionResetReason" enum="GCMConnectionResetReason"
     expires_after="2018-08-30">
-  <owner>zea@chromium.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>Reasons for GCM connection resets.</summary>
 </histogram>
 
 <histogram name="GCM.ConnectionSuccessRate" enum="BooleanSuccess"
     expires_after="2018-08-30">
-  <owner>zea@chromium.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>
     GCM connection success rate. Does not take into account login success. See
     GCM.ConnectionFailureErrorCode for a breakdown of connection failure
@@ -92,7 +92,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="GCM.ConnectionUpTime" units="ms" expires_after="2018-08-30">
-  <owner>zea@chromium.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>
     Time (from login until reset) that a GCM connection was active.
   </summary>
@@ -100,8 +100,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.Crypto.CreateKeySuccessRate" enum="BooleanSuccess"
     expires_after="M88">
-  <owner>peter@chromium.org</owner>
-  <owner>zea@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>
     Success rate of writing new keying material to the GCM key store.
   </summary>
@@ -111,8 +111,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Used to monitor push encryption and debug issues. -->
 
-  <owner>peter@chromium.org</owner>
-  <owner>zea@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>
     Result of decryption on a received GCM message, which includes unencrypted
     messages, successfully decrypted messages and decryption failures.
@@ -121,8 +121,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.Crypto.EncryptMessageResult" enum="GCMEncryptionResult"
     expires_after="M92">
-  <owner>peter@chromium.org</owner>
-  <owner>alexchau@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
+  <owner>alexchau@monyhar.org</owner>
   <summary>
     Result of encryption of outgoing GCM message, which includes successfully
     encrypted messages and encryption failures.
@@ -131,9 +131,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.Crypto.GCMDatabaseUpgradeResult" enum="Boolean"
     expires_after="2021-07-21">
-  <owner>nator@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
-  <owner>rayankans@chromium.org</owner>
+  <owner>nator@monyhar.org</owner>
+  <owner>peter@monyhar.org</owner>
+  <owner>rayankans@monyhar.org</owner>
   <summary>
     Result of upgrading GCM Key Store Database from deprecated format to current
     format. We upgrade the GCM Key store when it first initialized, if it
@@ -144,8 +144,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.Crypto.GetKeySuccessRate" enum="BooleanSuccess"
     expires_after="M88">
-  <owner>peter@chromium.org</owner>
-  <owner>zea@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>
     Success rate of reading keying material from the GCM key store.
   </summary>
@@ -153,8 +153,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.Crypto.InitKeyStoreSuccessRate" enum="BooleanSuccess"
     expires_after="M94">
-  <owner>peter@chromium.org</owner>
-  <owner>zea@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>
     Success rate of initializing the LevelDB back-end of the GCM key store.
   </summary>
@@ -162,8 +162,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.Crypto.LoadKeyStoreSuccessRate" enum="BooleanSuccess"
     expires_after="M94">
-  <owner>peter@chromium.org</owner>
-  <owner>zea@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>
     Success rate of loading existing keying material in the GCM key store.
   </summary>
@@ -171,8 +171,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.Crypto.RemoveKeySuccessRate" enum="BooleanSuccess"
     expires_after="M94">
-  <owner>peter@chromium.org</owner>
-  <owner>zea@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>
     Success rate of removing keying material from the GCM key store.
   </summary>
@@ -181,16 +181,16 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="GCM.Database.Open" enum="LevelDBStatus" expires_after="never">
 <!-- expires-never: core storage metric; consumed in separate dashboard (go/chrome-storage-dashboard) -->
 
-  <owner>dmurph@chromium.org</owner>
-  <owner>pwnall@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
+  <owner>dmurph@monyhar.org</owner>
+  <owner>pwnall@monyhar.org</owner>
+  <owner>peter@monyhar.org</owner>
   <summary>The result of a database open attempt by the GCM store.</summary>
 </histogram>
 
 <histogram name="GCM.DataMessageReceived" enum="BooleanReceived"
     expires_after="M88">
-  <owner>peter@chromium.org</owner>
-  <owner>zea@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>
     Number of DATA_MESSAGE messages received from Google Cloud Messaging for
     which a matching registration exists. Recorded when processing the received
@@ -201,7 +201,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.DataMessageReceivedHasCollapseKey"
     enum="BooleanHasCollapseKey" expires_after="2018-08-30">
-  <owner>peter@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
   <summary>
     Records whether a non-empty collapse_key token is set for each received
     DATA_MESSAGE message from Google Cloud Messaging for which a matching
@@ -211,7 +211,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.DeletedMessagesReceived" units="messages"
     expires_after="2018-08-30">
-  <owner>peter@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
   <summary>
     For every DELETED_MESSAGES message received from Google Cloud Messaging
     (whether or not a matching registration exists), this records the provided
@@ -222,8 +222,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.DeliveredToAppHandler" enum="BooleanDelivered"
     expires_after="M92">
-  <owner>peter@chromium.org</owner>
-  <owner>mamir@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
+  <owner>mamir@monyhar.org</owner>
   <summary>
     Whether a received GCM message could be delivered to an app handler.
     Recorded for each received GCM message that didn't have encryption issues.
@@ -232,7 +232,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.HeartbeatMissedDelta" units="ms"
     expires_after="2018-08-30">
-  <owner>zea@chromium.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>
     If a heartbeat was missed, the time delta by which it was missed (in system
     time, not ticks).
@@ -240,8 +240,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="GCM.IncomingSendErrors" units="messages" expires_after="M94">
-  <owner>peter@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     Number of SEND_ERROR messages received from Google Cloud Messaging. Recorded
     when processing the received message.
@@ -250,13 +250,13 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.LoadStatus" enum="GCMLoadStatus"
     expires_after="2021-09-05">
-  <owner>peter@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>Status code of loading from the persistent GCM store.</summary>
 </histogram>
 
 <histogram name="GCM.NumThrottledApps" units="units" expires_after="M85">
-  <owner>zea@chromium.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>
     Number of applications hitting GCM per-app outstanding message limits at
     startup time.
@@ -265,8 +265,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.PendingConnectionEventsAtShutdown" units="events"
     expires_after="M96">
-  <owner>peter@chromium.org</owner>
-  <owner>knollr@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
+  <owner>knollr@monyhar.org</owner>
   <summary>
     Number of connection events which have not been sent to GCM. This is
     recorded only at the time of shutdown to capture the events which are being
@@ -277,9 +277,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.RegistrationCacheStatus" enum="GCMRegistrationCacheStatus"
     expires_after="2021-07-31">
-  <owner>nator@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
-  <owner>rayankans@chromium.org</owner>
+  <owner>nator@monyhar.org</owner>
+  <owner>peter@monyhar.org</owner>
+  <owner>rayankans@monyhar.org</owner>
   <summary>
     Reports the status of cached GCM registration. This is recorded when a new
     registration request is considered on the GCM client.
@@ -288,7 +288,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.RegistrationRequest" units="requests"
     expires_after="2018-08-30">
-  <owner>peter@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
   <summary>
     Number of registration requests sent to Google Cloud Messaging. Recorded
     immediately after the request has started.
@@ -297,8 +297,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.RegistrationRequest.NetErrorCode" enum="NetErrorCodes"
     expires_after="2021-04-11">
-  <owner>peter@chromium.org</owner>
-  <owner>platform-capabilities@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
+  <owner>platform-capabilities@monyhar.org</owner>
   <summary>
     Net error code from a GCM registration attempt. Recorded when URL loading
     completes.
@@ -307,7 +307,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.RegistrationRequestStatus"
     enum="GCMRegistrationRequestStatus" expires_after="2021-11-14">
-  <owner>peter@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
   <summary>
     Status code of the outcome of a GCM registration request. The Unknown error
     case was split up in M56 (merged mid-beta to M55) to separate out the
@@ -321,13 +321,13 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 10/2020 because there no longer was a need for the data.
   </obsolete>
-  <owner>jianli@chromium.org</owner>
+  <owner>jianli@monyhar.org</owner>
   <summary>Number of sender IDs specified in a registration request.</summary>
 </histogram>
 
 <histogram name="GCM.RemoveAccountMappingWhenLoading"
     enum="BooleanDeletedOrNot" expires_after="2020-11-30">
-  <owner>msarda@chromium.org</owner>
+  <owner>msarda@monyhar.org</owner>
   <owner>chrome-signin-team@google.com</owner>
   <summary>
     Number of times that account mapping entries are deleted from or kept in the
@@ -338,7 +338,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.ResetStoreError" enum="GCMResetStoreError"
     expires_after="M85">
-  <owner>zea@chromium.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>
     Reports the problem encountered when resetting the GCM store.
   </summary>
@@ -346,7 +346,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.RestoredIncomingMessages" units="units"
     expires_after="2018-08-30">
-  <owner>zea@chromium.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>
     Number of unacknowledged incoming messages restored from the persistent
     store at startup.
@@ -355,7 +355,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.RestoredOutgoingMessages" units="units"
     expires_after="2018-08-30">
-  <owner>zea@chromium.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>
     Number of pending outgoing messages restored from the persistent store at
     startup.
@@ -364,7 +364,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.RestoredRegistrations" units="units"
     expires_after="2018-08-30">
-  <owner>peter@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
   <summary>
     Number of registrations restored from the persistent store at startup.
   </summary>
@@ -372,7 +372,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.SendMessageStatus" enum="GCMSendMessageStatus"
     expires_after="2018-08-30">
-  <owner>peter@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
   <summary>
     Result of sending an upstream message through Google Cloud Messaging.
     Recorded when the message has either been queued, sent, or has been dropped
@@ -382,8 +382,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.SendWebPushMessagePayloadSize" units="units"
     expires_after="M96">
-  <owner>knollr@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
+  <owner>knollr@monyhar.org</owner>
+  <owner>peter@monyhar.org</owner>
   <summary>
     Size of web push messages payload. Recorded right before the message is
     sent.
@@ -392,8 +392,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.SendWebPushMessageResult" enum="SendWebPushMessageResult"
     expires_after="2021-10-10">
-  <owner>knollr@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
+  <owner>knollr@monyhar.org</owner>
+  <owner>peter@monyhar.org</owner>
   <summary>
     Result of sending web push messages. Recorded when the message has either
     been sent, or has been dropped because an error happened.
@@ -402,8 +402,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.SendWebPushMessageStatusCode"
     enum="CombinedHttpResponseAndNetErrorCode" expires_after="2021-08-09">
-  <owner>knollr@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
+  <owner>knollr@monyhar.org</owner>
+  <owner>peter@monyhar.org</owner>
   <summary>
     Result code from sending web push messages. Logs net::Error if it's not
     net::OK. Logs net::OK if response header is not present. Otherwise, logs
@@ -414,7 +414,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.StoreDestroySucceeded" enum="BooleanSuccess"
     expires_after="M85">
-  <owner>zea@chromium.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>
     Success indicates successfully destroying the GCM persistent store. Failure
     indicates a failure destroying the persistence store. GCM store will be
@@ -423,13 +423,13 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="GCM.StoreSizeKB" units="KB" expires_after="2018-08-30">
-  <owner>zea@chromium.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>Size of the GCM persistent store in kilobytes at startup.</summary>
 </histogram>
 
 <histogram name="GCM.StoreUpdateSucceeded" enum="BooleanSuccess"
     expires_after="2018-08-30">
-  <owner>zea@chromium.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>
     Success indicates successfully updating the GCM persistent store on message
     update. Failure indicates a failure updating the persistence store.
@@ -437,19 +437,19 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="GCM.SuspendTime" units="ms" expires_after="2018-08-30">
-  <owner>zea@chromium.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>Time elapsed from machine suspend until resume.</summary>
 </histogram>
 
 <histogram name="GCM.UnregistrationRequestStatus"
     enum="GCMUnregistrationRequestStatus" expires_after="M88">
-  <owner>peter@chromium.org</owner>
-  <owner>zea@chromium.org</owner>
+  <owner>peter@monyhar.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>Status code of the outcome of a GCM unregistration request.</summary>
 </histogram>
 
 <histogram name="GCM.UserSignedIn" enum="Boolean" expires_after="2021-03-28">
-  <owner>jianli@chromium.org</owner>
+  <owner>jianli@monyhar.org</owner>
   <summary>
     Indicates whether the user was signed in when GCM started up.
   </summary>
@@ -457,8 +457,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="GCM.WebPushReceived.DeviceState" enum="WebPushDeviceState"
     expires_after="2021-10-31">
-  <owner>knollr@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
+  <owner>knollr@monyhar.org</owner>
+  <owner>peter@monyhar.org</owner>
   <summary>
     Device state when receiving a web push message. Indicates if the message was
     sent with a high priority and if the device was in idle mode. Recorded when

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base;
+package org.monyhar.base;
 
 import android.app.Application;
 import android.content.ComponentCallbacks;
@@ -17,11 +17,11 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.AdvancedMockContext;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.AdvancedMockContext;
 
 /**
- * Tests for {@link org.chromium.base.test.util.AdvancedMockContext}.
+ * Tests for {@link org.monyhar.base.test.util.AdvancedMockContext}.
  */
 @RunWith(BaseJUnit4ClassRunner.class)
 public class AdvancedMockContextTest {

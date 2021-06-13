@@ -68,7 +68,7 @@ IN_PROC_BROWSER_TEST_F(BlobUrlBrowserTest, LinkToUniqueOriginBlob) {
 
 IN_PROC_BROWSER_TEST_F(BlobUrlBrowserTest, LinkToSameOriginBlob) {
   // Using an http page, click a link that opens a popup to a same-origin blob.
-  GURL url = embedded_test_server()->GetURL("chromium.org", "/title1.html");
+  GURL url = embedded_test_server()->GetURL("monyhar.org", "/title1.html");
   url::Origin origin = url::Origin::Create(url);
   EXPECT_TRUE(NavigateToURL(shell(), url));
 
@@ -97,7 +97,7 @@ IN_PROC_BROWSER_TEST_F(BlobUrlBrowserTest, LinkToSameOriginBlob) {
 IN_PROC_BROWSER_TEST_F(BlobUrlBrowserTest, LinkToSameOriginBlobWithAuthority) {
   // Using an http page, click a link that opens a popup to a same-origin blob
   // that has a spoofy authority section applied. This should be blocked.
-  GURL url = embedded_test_server()->GetURL("chromium.org", "/title1.html");
+  GURL url = embedded_test_server()->GetURL("monyhar.org", "/title1.html");
   url::Origin origin = url::Origin::Create(url);
   EXPECT_TRUE(NavigateToURL(shell(), url));
 
@@ -132,7 +132,7 @@ IN_PROC_BROWSER_TEST_F(BlobUrlBrowserTest, LinkToSameOriginBlobWithAuthority) {
 IN_PROC_BROWSER_TEST_F(BlobUrlBrowserTest, ReplaceStateToAddAuthorityToBlob) {
   // history.replaceState from a validly loaded blob URL shouldn't allow adding
   // an authority to the inner URL, which would be spoofy.
-  GURL url = embedded_test_server()->GetURL("chromium.org", "/title1.html");
+  GURL url = embedded_test_server()->GetURL("monyhar.org", "/title1.html");
   url::Origin origin = url::Origin::Create(url);
   EXPECT_TRUE(NavigateToURL(shell(), url));
 

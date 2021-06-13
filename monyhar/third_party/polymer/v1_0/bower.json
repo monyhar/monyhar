@@ -1,5 +1,5 @@
 {
-  "name": "chromium",
+  "name": "monyhar",
   "private": true,
   "dependencies": {
     "html-imports": "webcomponents/html-imports#1.2.0",

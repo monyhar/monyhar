@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.omnibox;
+package org.monyhar.components.omnibox;
 
 import androidx.annotation.DrawableRes;
 import androidx.annotation.StringRes;
 
-import org.chromium.components.security_state.ConnectionSecurityLevel;
+import org.monyhar.components.security_state.ConnectionSecurityLevel;
 
 /** Utility class to get security state info for the omnibox. */
 public class SecurityStatusIcon {

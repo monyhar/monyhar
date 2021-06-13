@@ -25,14 +25,14 @@ There are a number of different ways to do so:
     skip over tests. Examples include involve adding `DISABLED_` to the test
     method name for GTest-based tests, `@unittest.skip` for Python-based tests,
     or using the
-    [DisabledTest](../../base/test/android/javatests/src/org/chromium/base/test/DisabledTest.java)
+    [DisabledTest](../../base/test/android/javatests/src/org/monyhar/base/test/DisabledTest.java)
     annotation for JUnit-based Java tests.  In these cases, you don't run the
     test by default, but you can determine the list of disabled tests at
     runtime because the tests are present in the executable, and you may still
     be able to force the test to be run via a command-line flag.
 
 *   Fourth, for test frameworks that support
-    [expectations files or filter files](https://bit.ly/chromium-test-list-format),
+    [expectations files or filter files](https://bit.ly/monyhar-test-list-format),
     you can use them to decide what to run and what to skip. This moves
     the mechanisms out of the source code and into separate files; there are
     advantages and disadvantages to this. The main advantage is that it

@@ -13,10 +13,10 @@ This domain deals with memory use by Chrome on all platforms. Primary focus is t
 gracefully deal with situations where user is out of memory (OOM) and to manage
 memory for idle and backgrounded tabs.
 
- * [Mailing List](https://groups.google.com/a/chromium.org/forum/#!forum/memory-dev)
+ * [Mailing List](https://groups.google.com/a/monyhar.org/forum/#!forum/memory-dev)
  * Performance-Memory [Bug
-   Queue](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=Performance%3DMemory)
- * [Docs](https://chromium.googlesource.com/chromium/src/+/main/docs/memory)
+   Queue](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=Performance%3DMemory)
+ * [Docs](https://monyhar.googlesource.com/monyhar/src/+/main/docs/memory)
 
 ## Power
 
@@ -26,7 +26,7 @@ we would like to mitigate that. Increasing battery life, reducing users power
 bill, not burning laps/hands, and not making loud fan noises are all important
 benefits of this.
 
- * Primary Contact brucedawson@chromium.org
+ * Primary Contact brucedawson@monyhar.org
  * Power
    [Rotation](https://rotation.googleplex.com/#rotation?id=5428142711767040)
  * Rotation
@@ -34,7 +34,7 @@ benefits of this.
  * Power
    [Backlog](https://docs.google.com/spreadsheets/d/1VhU1aM6APdUN74NVPW98X3aqpQyJkxg1UJcvBidXaK8/edit)
  * Performance-Power [Bug
-   Queue](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=Performance%3DPower)
+   Queue](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=Performance%3DPower)
 
 ## Loading
 
@@ -42,9 +42,9 @@ The Loading domain focuses on the time between click to the time when you can
 interact with a website.
 
  * [Mailing
-   List](https://groups.google.com/a/chromium.org/forum/#!forum/loading-dev)
+   List](https://groups.google.com/a/monyhar.org/forum/#!forum/loading-dev)
  * Performance-Loading [Bug
-   Queue](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=Performance%3DLoading)
+   Queue](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=Performance%3DLoading)
 
 ## Responsiveness
 
@@ -52,7 +52,7 @@ Responsiveness domain focuses on making sure all websites have smooth transition
 by serving 60fps, and that the click to action time is not noticible.
 
  * Performance-Responsiveness [Bug
-   Queue](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=Performance%3DResponsiveness)
+   Queue](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=Performance%3DResponsiveness)
 
 ## Binary Size
 
@@ -62,9 +62,9 @@ real money. We also don't want to hog all of the disk space on low end phones.
 So we focus attention on making sure we don't include bits in our update that
 are not necessary for users.
 
- * [Mailing List](://groups.google.com/a/chromium.org/forum/#!forum/binary-size)
+ * [Mailing List](://groups.google.com/a/monyhar.org/forum/#!forum/binary-size)
  * Performance-Size [Bug
-   Queue](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=Performance%3DSize)
+   Queue](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=Performance%3DSize)
  * Description of [metrics](binary_size/metrics.md)
 
 ## Data Usage
@@ -74,7 +74,7 @@ downloaded? By looking at this, we can save user's cost of data, time to load,
 memory and power.
 
  * Performance-Data [Bug
-   Queue](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=Performance%3DData)
+   Queue](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=Performance%3DData)
 
 ## Startup, Omnibox, Browser UI, etc.
 
@@ -86,4 +86,4 @@ is fast and that the browser startup and session restore doesn't allow users to
 make coffee before they use the browser.
 
  * Performance-Browser [Bug
-   Queue](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=Performance%3DBrowser)
+   Queue](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=Performance%3DBrowser)

@@ -12,7 +12,7 @@ namespace ui {
 // defined in: third_party/WebKit/public/platform/WebTextInputType.h
 //
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.ui.base.ime
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.ui.base.ime
 enum TextInputType {
   // Input caret is not in an editable node, no input method shall be used.
   TEXT_INPUT_TYPE_NONE,

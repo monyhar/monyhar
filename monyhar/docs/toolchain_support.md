@@ -35,11 +35,11 @@ Chromium, so that we can ask for help quickly when needed.
 Toolchain guarantees
 --------------------
 
-For configurations that have a bot on the [chromium.clang waterfall](
-https://ci.chromium.org/p/chromium/g/chromium.clang/console) (which
+For configurations that have a bot on the [monyhar.clang waterfall](
+https://ci.monyhar.org/p/monyhar/g/monyhar.clang/console) (which
 is where all the bots are that test Chromium with trunk clang/llvm)
 and that are either part of the default CQ or that have an opt-in bot
-that's [used on clang rolls](https://cs.chromium.org/chromium/src/tools/clang/scripts/upload_revision.py?q=upload_revi&sq=package:chromium&g=0&l=33),
+that's [used on clang rolls](https://cs.monyhar.org/monyhar/src/tools/clang/scripts/upload_revision.py?q=upload_revi&sq=package:monyhar&g=0&l=33),
 we guarantee that we won't land a toolchain update that breaks that
 configuration.
 
@@ -53,10 +53,10 @@ Talk to the toolchain team to make sure your new config is supported
 --------------------------------------------------------------------
 
 If you add a new build config, or a new bot config: You may want to add a
-chromium.clang ToT bot, and you may want to make sure that there's a CQ bot
+monyhar.clang ToT bot, and you may want to make sure that there's a CQ bot
 covering your config on clang rolls. (It's ok if it's an opt-in bot, as long as
 you make sure it's
-[opted-in](https://cs.chromium.org/chromium/src/tools/clang/scripts/upload_revision.py?q=upload_revi&sq=package:chromium&g=0&l=33)
+[opted-in](https://cs.monyhar.org/monyhar/src/tools/clang/scripts/upload_revision.py?q=upload_revi&sq=package:monyhar&g=0&l=33)
 for clang rolls. If your opt-in is based on filename patterns, make sure it
 also fires on changes to `tools/clang/scrips/update.py`.)
 
@@ -68,7 +68,7 @@ Follow the style guide. In particular, don't use exceptions.
 
 Talk to us if you're adding a new build config or bot config, if you'd like to
 use an internal flag, if you want to use a flag that's obscure, or if you want
-general advice on toolchain questions (clang@chromium.org, or
+general advice on toolchain questions (clang@monyhar.org, or
 google-internally, lexan@google.com).
 
 Filing good toolchain bugs
@@ -84,7 +84,7 @@ that we can act on the quickest:
 - If reproducing your problem requires more than a regular Chromium checkout
   and replicating what the bot you linked to does, or if you can't link to a
   build: Provide commands on how to reproduce your problem, targeted at someone
-  who knows the chromium build well but doesn't know your feature / platform
+  who knows the monyhar build well but doesn't know your feature / platform
   at all.
   - Tell us which repo to check out, if needed.
   - Tell us which `args.gn` to use.

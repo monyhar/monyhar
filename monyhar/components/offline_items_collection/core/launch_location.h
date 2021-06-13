@@ -11,7 +11,7 @@ namespace offline_items_collection {
 
 // Indicates where the item is being launched.
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.offline_items_collection
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.offline_items_collection
 enum class LaunchLocation {
   // From Download home.
   DOWNLOAD_HOME,

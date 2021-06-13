@@ -6,11 +6,11 @@
 # pylint: disable=too-many-lines
 # pylint: disable=line-too-long
 
-"""Generates chromium.perf{,.fyi}.json from a set of condensed configs.
+"""Generates monyhar.perf{,.fyi}.json from a set of condensed configs.
 
 This file contains condensed configurations for the perf bots along with
 logic to inflate those into the full (unwieldy) configurations in
-//testing/buildbot that are consumed by the chromium recipe code.
+//testing/buildbot that are consumed by the monyhar recipe code.
 """
 
 from __future__ import print_function
@@ -149,7 +149,7 @@ FYI_BUILDERS = {
             'android_tools',
             'cc_perftests',
             'chrome_public_apk',
-            'chromium_builder_perf',
+            'monyhar_builder_perf',
             'gpu_perftests',
             'push_apps_to_background_apk',
             'system_webview_apk',
@@ -216,7 +216,7 @@ FYI_BUILDERS = {
             'android_tools',
             'cc_perftests',
             'chrome_public_apk',
-            'chromium_builder_perf',
+            'monyhar_builder_perf',
             'gpu_perftests',
             'push_apps_to_background_apk',
             'system_webview_apk',
@@ -282,13 +282,13 @@ FYI_BUILDERS = {
             'pool': 'chrome.tests.perf-fyi',
             'id': 'build370-a7',
             # TODO(crbug.com/971204): Explicitly set the gpu to None to make
-            # chromium_swarming recipe_module ignore this dimension.
+            # monyhar_swarming recipe_module ignore this dimension.
             'gpu': None,
             'os': 'Windows-10',
         },
     },
     'chromeos-kevin-builder-perf-fyi': {
-        'additional_compile_targets': ['chromium_builder_perf'],
+        'additional_compile_targets': ['monyhar_builder_perf'],
     },
     'chromeos-kevin-perf-fyi': {
         'tests': [
@@ -308,7 +308,7 @@ FYI_BUILDERS = {
         'dimension': {
             'pool': 'chrome.tests',
             # TODO(crbug.com/971204): Explicitly set the gpu to None to make
-            # chromium_swarming recipe_module ignore this dimension.
+            # monyhar_swarming recipe_module ignore this dimension.
             'gpu': None,
             'os': 'ChromeOS',
             'device_type': 'kevin',
@@ -317,13 +317,13 @@ FYI_BUILDERS = {
     'fuchsia-builder-perf-fyi': {
         'additional_compile_targets': [
             'web_engine_shell_pkg', 'http_pkg', 'cast_runner_pkg',
-            'web_runner_pkg', 'chromedriver', 'chromium_builder_perf'
+            'web_runner_pkg', 'chromedriver', 'monyhar_builder_perf'
         ],
     },
 }
 
-# These configurations are taken from chromium_perf.py in
-# build/scripts/slave/recipe_modules/chromium_tests and must be kept in sync
+# These configurations are taken from monyhar_perf.py in
+# build/scripts/slave/recipe_modules/monyhar_tests and must be kept in sync
 # to generate the correct json for each tester
 #
 # The dimensions in pinpoint configs, excluding the dimension "pool",
@@ -336,7 +336,7 @@ FYI_BUILDERS = {
 # ChromeDriver is archived together with Chrome for use in bisecting.
 # This can be used by Chrome test team, as well as by google3 teams for
 # bisecting Chrome builds with their web tests. For questions or to report
-# issues, please contact johnchen@chromium.org.
+# issues, please contact johnchen@monyhar.org.
 BUILDERS = {
     'android-builder-perf': {
         'additional_compile_targets': [
@@ -346,7 +346,7 @@ BUILDERS = {
             'android_tools',
             'cc_perftests',
             'chrome_public_apk',
-            'chromium_builder_perf',
+            'monyhar_builder_perf',
             'dump_syms',
             'gpu_perftests',
             'push_apps_to_background_apk',
@@ -406,7 +406,7 @@ BUILDERS = {
             'android_tools',
             'cc_perftests',
             'chrome_public_apk',
-            'chromium_builder_perf',
+            'monyhar_builder_perf',
             'gpu_perftests',
             'push_apps_to_background_apk',
             'system_webview_apk',
@@ -464,7 +464,7 @@ BUILDERS = {
         False,
     },
     'linux-builder-perf': {
-        'additional_compile_targets': ['chromedriver', 'chromium_builder_perf'],
+        'additional_compile_targets': ['chromedriver', 'monyhar_builder_perf'],
         'tests': [{
             'name': 'chrome_sizes',
             'isolate': 'chrome_sizes',
@@ -479,10 +479,10 @@ BUILDERS = {
         False,
     },
     'linux-builder-perf-rel': {
-        'additional_compile_targets': ['chromium_builder_perf'],
+        'additional_compile_targets': ['monyhar_builder_perf'],
     },
     'mac-builder-perf': {
-        'additional_compile_targets': ['chromedriver', 'chromium_builder_perf'],
+        'additional_compile_targets': ['chromedriver', 'monyhar_builder_perf'],
         'tests': [{
             'name': 'chrome_sizes',
             'isolate': 'chrome_sizes',
@@ -497,7 +497,7 @@ BUILDERS = {
         False,
     },
     'mac-arm-builder-perf': {
-        'additional_compile_targets': ['chromedriver', 'chromium_builder_perf'],
+        'additional_compile_targets': ['chromedriver', 'monyhar_builder_perf'],
         'tests': [{
             'name': 'chrome_sizes',
             'isolate': 'chrome_sizes',
@@ -512,7 +512,7 @@ BUILDERS = {
         False,
     },
     'win32-builder-perf': {
-        'additional_compile_targets': ['chromedriver', 'chromium_builder_perf'],
+        'additional_compile_targets': ['chromedriver', 'monyhar_builder_perf'],
         'tests': [{
             'name': 'chrome_sizes',
             'isolate': 'chrome_sizes',
@@ -527,7 +527,7 @@ BUILDERS = {
         False,
     },
     'win64-builder-perf': {
-        'additional_compile_targets': ['chromedriver', 'chromium_builder_perf'],
+        'additional_compile_targets': ['chromedriver', 'monyhar_builder_perf'],
         'tests': [{
             'name': 'chrome_sizes',
             'isolate': 'chrome_sizes',
@@ -999,7 +999,7 @@ BUILDERS = {
         'dimension': {
             'pool': 'chrome.tests.perf',
             # TODO(crbug.com/971204): Explicitly set the gpu to None to make
-            # chromium_swarming recipe_module ignore this dimension.
+            # monyhar_swarming recipe_module ignore this dimension.
             'gpu': None,
             'os': 'ChromeOS',
             'device_status': 'available',
@@ -1079,29 +1079,29 @@ class BenchmarkMetadata(object):
 GTEST_BENCHMARKS = {
     'base_perftests':
     BenchmarkMetadata(
-        'skyostil@chromium.org, gab@chromium.org', 'Internals>SequenceManager',
-        ('https://chromium.googlesource.com/chromium/src/+/HEAD/base/' +
+        'skyostil@monyhar.org, gab@monyhar.org', 'Internals>SequenceManager',
+        ('https://monyhar.googlesource.com/monyhar/src/+/HEAD/base/' +
          'README.md#performance-testing')),
     'gpu_perftests':
     BenchmarkMetadata(
-        'reveman@chromium.org, chrome-gpu-perf-owners@chromium.org',
+        'reveman@monyhar.org, chrome-gpu-perf-owners@monyhar.org',
         'Internals>GPU'),
     'tracing_perftests':
-    BenchmarkMetadata('eseckler@chromium.org, oysteine@chromium.org',
+    BenchmarkMetadata('eseckler@monyhar.org, oysteine@monyhar.org',
                       'Speed>Tracing'),
     'load_library_perf_tests':
-    BenchmarkMetadata('xhwang@chromium.org, jrummell@chromium.org',
+    BenchmarkMetadata('xhwang@monyhar.org, jrummell@monyhar.org',
                       'Internals>Media>Encrypted'),
     'performance_browser_tests':
-    BenchmarkMetadata('johnchen@chromium.org, jophba@chromium.org',
+    BenchmarkMetadata('johnchen@monyhar.org, jophba@monyhar.org',
                       'Internals>Media>ScreenCapture'),
     'views_perftests':
-    BenchmarkMetadata('tapted@chromium.org', 'Internals>Views'),
+    BenchmarkMetadata('tapted@monyhar.org', 'Internals>Views'),
     'components_perftests':
-    BenchmarkMetadata('csharrison@chromium.org'),
+    BenchmarkMetadata('csharrison@monyhar.org'),
     'dawn_perf_tests':
     BenchmarkMetadata(
-        'enga@chromium.org, chrome-gpu-perf-owners@chromium.org',
+        'enga@monyhar.org, chrome-gpu-perf-owners@monyhar.org',
         'Internals>GPU>Dawn',
         'https://dawn.googlesource.com/dawn/+/HEAD/src/tests/perf_tests/README.md'
     ),
@@ -1109,9 +1109,9 @@ GTEST_BENCHMARKS = {
 
 
 RESOURCE_SIZES_METADATA = BenchmarkMetadata(
-    'agrieve@chromium.org, jbudorick@chromium.org',
+    'agrieve@monyhar.org, jbudorick@monyhar.org',
     'Build',
-    ('https://chromium.googlesource.com/chromium/src/+/HEAD/'
+    ('https://monyhar.googlesource.com/monyhar/src/+/HEAD/'
      'tools/binary_size/README.md#resource_sizes_py'))
 
 
@@ -1130,10 +1130,10 @@ OTHER_BENCHMARKS = {
 OTHER_BENCHMARKS.update({
     'chrome_sizes':
     BenchmarkMetadata(
-        emails='heiserya@chromium.org, johnchen@chromium.org',
+        emails='heiserya@monyhar.org, johnchen@monyhar.org',
         component='Build',
         documentation_url=(
-            'https://chromium.googlesource.com/chromium/'
+            'https://monyhar.googlesource.com/monyhar/'
             'src/+/HEAD/tools/binary_size/README.md#resource_sizes_py'),
     ),
 })
@@ -1141,10 +1141,10 @@ OTHER_BENCHMARKS.update({
 OTHER_BENCHMARKS.update({
     'resource_sizes_chromecast':
     BenchmarkMetadata(
-        emails='juke@chromium.org, eliribble@chromium.org',
+        emails='juke@monyhar.org, eliribble@monyhar.org',
         component='Chromecast',
         documentation_url=(
-            'https://chromium.googlesource.com/chromium/'
+            'https://monyhar.googlesource.com/monyhar/'
             'src/+/HEAD/tools/binary_size/README.md#resource_sizes_py'),
     ),
 })
@@ -1152,10 +1152,10 @@ OTHER_BENCHMARKS.update({
 OTHER_BENCHMARKS.update({
     'resource_sizes_lacros_chrome':
     BenchmarkMetadata(
-        emails='erikchen@chromium.org, huangs@chromium.org',
+        emails='erikchen@monyhar.org, huangs@monyhar.org',
         component='OS>LaCrOS',
         documentation_url=(
-            'https://chromium.googlesource.com/chromium/'
+            'https://monyhar.googlesource.com/monyhar/'
             'src/+/HEAD/tools/binary_size/README.md#resource_sizes_py'),
     ),
 })
@@ -1423,7 +1423,7 @@ def generate_telemetry_args(tester_config, platform):
   elif 'browser' in tester_config:
     browser_name = 'exact'
   elif tester_config['platform'] == 'android':
-    browser_name = 'android-chromium'
+    browser_name = 'android-monyhar'
   elif tester_config['platform'].startswith('android-'):
     browser_name = tester_config['platform']
   elif tester_config['platform'] == 'chromeos':
@@ -1590,12 +1590,12 @@ def generate_builder_config(condensed_config, builder_name):
 
 # List of all updater functions and the file they generate. The updater
 # functions must return True on success and False otherwise. File paths are
-# relative to chromium src and should use posix path separators (i.e. '/').
+# relative to monyhar src and should use posix path separators (i.e. '/').
 ALL_UPDATERS_AND_FILES = [
-    (update_all_builders, 'testing/buildbot/chromium.perf.json'),
-    (update_all_fyi_builders, 'testing/buildbot/chromium.perf.fyi.json'),
+    (update_all_builders, 'testing/buildbot/monyhar.perf.json'),
+    (update_all_fyi_builders, 'testing/buildbot/monyhar.perf.fyi.json'),
     (update_all_calibration_builders,
-     'testing/buildbot/chromium.perf.calibration.json'),
+     'testing/buildbot/monyhar.perf.calibration.json'),
     (update_benchmark_csv, 'tools/perf/benchmark.csv'),
     (update_system_health_stories, 'tools/perf/system_health_stories.csv'),
     (update_labs_docs_md, 'docs/speed/perf_lab_platforms.md'),

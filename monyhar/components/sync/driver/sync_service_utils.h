@@ -15,7 +15,7 @@ class SyncService;
 // given consent to upload this data. Since this enum is used for logging
 // histograms, entries must not be removed or reordered.
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.sync
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.sync
 enum class UploadState {
   // Syncing is enabled in principle, but the sync service is not actually
   // active yet. Either it's still initializing (in which case we e.g. don't
@@ -39,7 +39,7 @@ enum class UploadState {
 
 // Used for UMA histogram, do not reorder. Represents the UI elements which
 // contain trusted vault error button.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.sync
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.sync
 enum class KeyRetrievalTriggerForUMA {
   // Settings pages, used on all platforms except ChromeOS.
   kSettings,

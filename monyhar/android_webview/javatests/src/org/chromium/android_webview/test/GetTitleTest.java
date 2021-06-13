@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
 import androidx.test.filters.SmallTest;
 
@@ -12,9 +12,9 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.AwContents;
-import org.chromium.base.test.util.Feature;
-import org.chromium.net.test.util.TestWebServer;
+import org.monyhar.android_webview.AwContents;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.net.test.util.TestWebServer;
 
 /**
  * A test suite for ContentView.getTitle().

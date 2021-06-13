@@ -4255,7 +4255,7 @@ bool SrcDocRewriter(GURL* url, BrowserContext* browser_context) {
 // subframe URL. Regression test for https://crbug.com/895065.
 TEST_F(NavigationControllerTest, NoURLRewriteForSubframes) {
   const GURL kUrl1("http://google.com");
-  const GURL kUrl2("http://chromium.org");
+  const GURL kUrl2("http://monyhar.org");
   const GURL kSrcDoc("about:srcdoc");
 
   // First, set up a handler that will rewrite srcdoc urls.

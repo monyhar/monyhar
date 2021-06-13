@@ -26,7 +26,7 @@
 #include "third_party/zlib/google/compression_utils.h"
 
 // For details of the file layout, see
-// http://dev.chromium.org/developers/design-documents/linuxresourcesandlocalizedstrings
+// http://dev.monyhar.org/developers/design-documents/linuxresourcesandlocalizedstrings
 
 namespace {
 

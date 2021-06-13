@@ -126,7 +126,7 @@ to use Python2, so when you're ready to test Python3, just delete that line.
 
 Some tests still need to be migrated to `script_test()`
 ([crbug.com/1208648](https://crbug.com/1208648)). The process for
-doing that is not yet well documented, so ask on python@chromium.org (or
+doing that is not yet well documented, so ask on python@monyhar.org (or
 ask dpranke@ directly).
 
 There is no general mechanism for migrating tests that are C++ executables
@@ -139,6 +139,6 @@ Presubmit checks are run using Python 2 by default. To run them using
 Python3, add the line `USE_PYTHON3 = True` to the PRESUBMIT.py file in
 question (effectively creating a global variable).
 
-[python2_action]: https://source.chromium.org/chromium/chromium/src/+/main:build/config/python.gni;l=68?q=python2_action%20file:python.gni&ss=chromium
-[script_test]: https://source.chromium.org/?q=script_test%20file:testing%2Ftest.gni&ss=chromium
-[vpython]: https://chromium.googlesource.com/infra/infra/+/refs/heads/main/doc/users/vpython.md
+[python2_action]: https://source.monyhar.org/monyhar/monyhar/src/+/main:build/config/python.gni;l=68?q=python2_action%20file:python.gni&ss=monyhar
+[script_test]: https://source.monyhar.org/?q=script_test%20file:testing%2Ftest.gni&ss=monyhar
+[vpython]: https://monyhar.googlesource.com/infra/infra/+/refs/heads/main/doc/users/vpython.md

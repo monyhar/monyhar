@@ -29,7 +29,7 @@ from jni_generator import ProxyHelpers
 
 _SCRIPT_NAME = 'base/android/jni_generator/jni_generator.py'
 _INCLUDES = ('base/android/jni_generator/jni_generator_helper.h')
-_JAVA_SRC_DIR = os.path.join('java', 'src', 'org', 'chromium', 'example',
+_JAVA_SRC_DIR = os.path.join('java', 'src', 'org', 'monyhar', 'example',
                              'jni_generator')
 
 # Set this environment variable in order to regenerate the golden text
@@ -229,7 +229,7 @@ class TestGenerator(BaseTest):
     private static native Throwable nativeMessWithJavaException(Throwable e);
     """
     jni_params = jni_generator.JniParams(
-        'org/chromium/example/jni_generator/SampleForTests')
+        'org/monyhar/example/jni_generator/SampleForTests')
     jni_params.ExtractImportsAndInnerClasses(test_data)
     natives = jni_generator.ExtractNatives(test_data, 'int')
     golden_natives = [
@@ -351,13 +351,13 @@ class TestGenerator(BaseTest):
             java_class_name=None)
     ]
     self.AssertListEquals(golden_natives, natives)
-    h1 = jni_generator.InlHeaderFileGenerator('', 'org/chromium/TestJni',
+    h1 = jni_generator.InlHeaderFileGenerator('', 'org/monyhar/TestJni',
                                               natives, [], [], jni_params,
                                               TestOptions())
     self.AssertGoldenTextEquals(h1.GetContent())
     h2 = jni_registration_generator.HeaderGenerator(
         '',
-        'org/chromium/TestJni',
+        'org/monyhar/TestJni',
         natives,
         jni_params,
         True,
@@ -386,7 +386,7 @@ class TestGenerator(BaseTest):
     ]
     self.AssertListEquals(golden_natives, natives)
     jni_params = jni_generator.JniParams('')
-    h = jni_generator.InlHeaderFileGenerator('', 'org/chromium/TestJni',
+    h = jni_generator.InlHeaderFileGenerator('', 'org/monyhar/TestJni',
                                              natives, [], [], jni_params,
                                              TestOptions())
     self.AssertGoldenTextEquals(h.GetContent())
@@ -419,7 +419,7 @@ class TestGenerator(BaseTest):
     ]
     self.AssertListEquals(golden_natives, natives)
     jni_params = jni_generator.JniParams('')
-    h = jni_generator.InlHeaderFileGenerator('', 'org/chromium/TestJni',
+    h = jni_generator.InlHeaderFileGenerator('', 'org/monyhar/TestJni',
                                              natives, [], [], jni_params,
                                              TestOptions())
     self.AssertGoldenTextEquals(h.GetContent())
@@ -451,14 +451,14 @@ class TestGenerator(BaseTest):
     ]
     self.AssertListEquals(golden_natives, natives)
     jni_params = jni_generator.JniParams('')
-    h = jni_generator.InlHeaderFileGenerator('', 'org/chromium/TestJni',
+    h = jni_generator.InlHeaderFileGenerator('', 'org/monyhar/TestJni',
                                              natives, [], [], jni_params,
                                              TestOptions())
     self.AssertGoldenTextEquals(h.GetContent())
 
     h2 = jni_registration_generator.HeaderGenerator(
         '',
-        'org/chromium/TestJni',
+        'org/monyhar/TestJni',
         natives,
         jni_params,
         True,
@@ -561,7 +561,7 @@ class TestGenerator(BaseTest):
     @CalledByNative
     public List<Bitmap.CompressFormat> getCompressFormatList();
     """
-    jni_params = jni_generator.JniParams('org/chromium/Foo')
+    jni_params = jni_generator.JniParams('org/monyhar/Foo')
     jni_params.ExtractImportsAndInnerClasses(test_data)
     called_by_natives = jni_generator.ExtractCalledByNatives(
         jni_params, test_data, always_mangle=False)
@@ -801,7 +801,7 @@ class TestGenerator(BaseTest):
         ),
     ]
     self.AssertListEquals(golden_called_by_natives, called_by_natives)
-    h = jni_generator.InlHeaderFileGenerator('', 'org/chromium/TestJni', [],
+    h = jni_generator.InlHeaderFileGenerator('', 'org/monyhar/TestJni', [],
                                              called_by_natives, [], jni_params,
                                              TestOptions())
     self.AssertGoldenTextEquals(h.GetContent())
@@ -829,16 +829,16 @@ scooby doo
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
-import org.chromium.base.BuildInfo;
+import org.monyhar.base.BuildInfo;
 """
     self.assertEqual(
-        'org/chromium/content/browser/Foo',
+        'org/monyhar/content/browser/Foo',
         jni_generator.ExtractFullyQualifiedJavaClassName(
-            'org/chromium/content/browser/Foo.java', contents))
+            'org/monyhar/content/browser/Foo.java', contents))
     self.assertEqual(
-        'org/chromium/content/browser/Foo',
+        'org/monyhar/content/browser/Foo',
         jni_generator.ExtractFullyQualifiedJavaClassName(
             'frameworks/Foo.java', contents))
     self.assertRaises(SyntaxError,
@@ -875,7 +875,7 @@ import org.chromium.base.BuildInfo;
       }
     }
     """
-    jni_params = jni_generator.JniParams('org/chromium/Foo')
+    jni_params = jni_generator.JniParams('org/monyhar/Foo')
     jni_params.ExtractImportsAndInnerClasses(test_data)
     called_by_natives = jni_generator.ExtractCalledByNatives(
         jni_params, test_data, always_mangle=True)
@@ -986,7 +986,7 @@ public class java.util.HashSet {
   def testJniSelfDocumentingExample(self):
     generated_text = self._CreateJniHeaderFromFile(
         os.path.join(_JAVA_SRC_DIR, 'SampleForTests.java'),
-        'org/chromium/example/jni_generator/SampleForTests')
+        'org/monyhar/example/jni_generator/SampleForTests')
     self.AssertGoldenTextEquals(
         generated_text, golden_file='SampleForTests_jni.golden')
 
@@ -1014,7 +1014,7 @@ public class java.util.HashSet {
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.app;
+package org.monyhar.content.app;
 
 import android.app.Service;
 import android.content.Context;
@@ -1030,16 +1030,16 @@ import android.view.Surface;
 
 import java.util.ArrayList;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.content.app.ContentMain;
-import org.chromium.content.browser.SandboxedProcessConnection;
-import org.chromium.content.common.ISandboxedProcessCallback;
-import org.chromium.content.common.ISandboxedProcessService;
-import org.chromium.content.common.WillNotRaise.AnException;
-import org.chromium.content.common.WillRaise.AnException;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.content.app.ContentMain;
+import org.monyhar.content.browser.SandboxedProcessConnection;
+import org.monyhar.content.common.ISandboxedProcessCallback;
+import org.monyhar.content.common.ISandboxedProcessService;
+import org.monyhar.content.common.WillNotRaise.AnException;
+import org.monyhar.content.common.WillRaise.AnException;
 
-import static org.chromium.Bar.Zoo;
+import static org.monyhar.Bar.Zoo;
 
 class Foo {
   public static class BookmarkNode implements Parcelable {
@@ -1048,16 +1048,16 @@ class Foo {
   }
 }
     """
-    jni_params = jni_generator.JniParams('org/chromium/content/app/Foo')
+    jni_params = jni_generator.JniParams('org/monyhar/content/app/Foo')
     jni_params.ExtractImportsAndInnerClasses(import_header)
-    self.assertTrue('Lorg/chromium/content/common/ISandboxedProcessService' in
+    self.assertTrue('Lorg/monyhar/content/common/ISandboxedProcessService' in
                     jni_params._imports)
-    self.assertTrue('Lorg/chromium/Bar/Zoo' in jni_params._imports)
-    self.assertTrue('Lorg/chromium/content/app/Foo$BookmarkNode' in jni_params.
+    self.assertTrue('Lorg/monyhar/Bar/Zoo' in jni_params._imports)
+    self.assertTrue('Lorg/monyhar/content/app/Foo$BookmarkNode' in jni_params.
                     _inner_classes)
-    self.assertTrue('Lorg/chromium/content/app/Foo$PasswordListObserver' in
+    self.assertTrue('Lorg/monyhar/content/app/Foo$PasswordListObserver' in
                     jni_params._inner_classes)
-    self.assertEqual('Lorg/chromium/content/app/ContentMain$Inner;',
+    self.assertEqual('Lorg/monyhar/content/app/ContentMain$Inner;',
                      jni_params.JavaToJni('ContentMain.Inner'))
     self.assertRaises(SyntaxError, jni_params.JavaToJni, 'AnException')
 
@@ -1088,7 +1088,7 @@ class Foo {
     ]
     self.AssertListEquals(golden_natives, natives)
     h = jni_generator.InlHeaderFileGenerator(
-        '', 'org/chromium/TestJni', natives, [], [], jni_params, test_options)
+        '', 'org/monyhar/TestJni', natives, [], [], jni_params, test_options)
     self.AssertGoldenTextEquals(h.GetContent())
 
   def testMainDexAnnotation(self):
@@ -1137,7 +1137,7 @@ class Foo {
 
   def testNativeExportsOnlyOption(self):
     test_data = """
-    package org.chromium.example.jni_generator;
+    package org.monyhar.example.jni_generator;
 
     /** The pointer to the native Test. */
     long nativeTest;
@@ -1169,12 +1169,12 @@ class Foo {
     options = TestOptions()
     options.native_exports_optional = False
     jni_from_java = jni_generator.JNIFromJavaSource(
-        test_data, 'org/chromium/example/jni_generator/SampleForTests', options)
+        test_data, 'org/monyhar/example/jni_generator/SampleForTests', options)
     self.AssertGoldenTextEquals(jni_from_java.GetContent())
 
   def testOuterInnerRaises(self):
     test_data = """
-    package org.chromium.media;
+    package org.monyhar.media;
 
     @CalledByNative
     static int getCaptureFormatWidth(VideoCapture.CaptureFormat format) {
@@ -1184,14 +1184,14 @@ class Foo {
 
     def willRaise():
       jni_generator.JNIFromJavaSource(test_data,
-                                      'org/chromium/media/VideoCaptureFactory',
+                                      'org/monyhar/media/VideoCaptureFactory',
                                       TestOptions())
 
     self.assertRaises(SyntaxError, willRaise)
 
   def testSingleJNIAdditionalImport(self):
     test_data = """
-    package org.chromium.foo;
+    package org.monyhar.foo;
 
     @JNIAdditionalImport(Bar.class)
     class Foo {
@@ -1204,13 +1204,13 @@ class Foo {
     }
     """
     jni_from_java = jni_generator.JNIFromJavaSource(test_data,
-                                                    'org/chromium/foo/Foo',
+                                                    'org/monyhar/foo/Foo',
                                                     TestOptions())
     self.AssertGoldenTextEquals(jni_from_java.GetContent())
 
   def testMultipleJNIAdditionalImport(self):
     test_data = """
-    package org.chromium.foo;
+    package org.monyhar.foo;
 
     @JNIAdditionalImport({Bar1.class, Bar2.class})
     class Foo {
@@ -1225,15 +1225,15 @@ class Foo {
     }
     """
     jni_from_java = jni_generator.JNIFromJavaSource(test_data,
-                                                    'org/chromium/foo/Foo',
+                                                    'org/monyhar/foo/Foo',
                                                     TestOptions())
     self.AssertGoldenTextEquals(jni_from_java.GetContent())
 
   def testTracing(self):
     test_data = """
-    package org.chromium.foo;
+    package org.monyhar.foo;
 
-    @JNINamespace("org::chromium_foo")
+    @JNINamespace("org::monyhar_foo")
     class Foo {
 
     @CalledByNative
@@ -1250,12 +1250,12 @@ class Foo {
     options_with_tracing = TestOptions()
     options_with_tracing.enable_tracing = True
     jni_from_java = jni_generator.JNIFromJavaSource(
-        test_data, 'org/chromium/foo/Foo', options_with_tracing)
+        test_data, 'org/monyhar/foo/Foo', options_with_tracing)
     self.AssertGoldenTextEquals(jni_from_java.GetContent())
 
   def testStaticBindingCaller(self):
     test_data = """
-    package org.chromium.foo;
+    package org.monyhar.foo;
 
     class Bar {
       static native void nativeShouldBindCaller(Object caller);
@@ -1269,7 +1269,7 @@ class Foo {
     """
 
     jni_from_java = jni_generator.JNIFromJavaSource(test_data,
-                                                    'org/chromium/foo/Foo',
+                                                    'org/monyhar/foo/Foo',
                                                     TestOptions())
     self.AssertGoldenTextEquals(jni_from_java.GetContent())
 
@@ -1278,7 +1278,7 @@ class Foo {
     opts.split_name = "sample"
     generated_text = self._CreateJniHeaderFromFile(
         os.path.join(_JAVA_SRC_DIR, 'SampleForTests.java'),
-        'org/chromium/example/jni_generator/SampleForTests', opts)
+        'org/monyhar/example/jni_generator/SampleForTests', opts)
     self.AssertGoldenTextEquals(
         generated_text, golden_file='SampleForTestsWithSplit_jni.golden')
 
@@ -1298,7 +1298,7 @@ class ProxyTestGenerator(BaseTest):
 
   def testProxyNativesWithNatives(self):
     test_data = """
-    package org.chromium.foo;
+    package org.monyhar.foo;
 
     class Foo {
 
@@ -1321,7 +1321,7 @@ class ProxyTestGenerator(BaseTest):
     options_with_tracing = TestOptions()
     options_with_tracing.enable_tracing = True
     jni_from_java = jni_generator.JNIFromJavaSource(
-        test_data, 'org/chromium/foo/Foo', options_with_tracing)
+        test_data, 'org/monyhar/foo/Foo', options_with_tracing)
     self.AssertGoldenTextEquals(jni_from_java.GetContent())
 
   def testEscapingProxyNatives(self):
@@ -1334,7 +1334,7 @@ class ProxyTestGenerator(BaseTest):
       }
     }
     """
-    qualified_clazz = 'org/chromium/example/SampleProxyJni'
+    qualified_clazz = 'org/monyhar/example/SampleProxyJni'
 
     natives = jni_generator.ProxyHelpers.ExtractStaticProxyNatives(
         qualified_clazz, test_data, 'long')
@@ -1347,7 +1347,7 @@ class ProxyTestGenerator(BaseTest):
             params=[],
             java_class_name=None,
             is_proxy=True,
-            proxy_name='org_chromium_example_SampleProxyJni_foo_1bar'),
+            proxy_name='org_monyhar_example_SampleProxyJni_foo_1bar'),
         NativeMethod(
             return_type='void',
             static=True,
@@ -1355,7 +1355,7 @@ class ProxyTestGenerator(BaseTest):
             params=[],
             java_class_name=None,
             is_proxy=True,
-            proxy_name='org_chromium_example_SampleProxyJni_foo_1_1bar'),
+            proxy_name='org_monyhar_example_SampleProxyJni_foo_1_1bar'),
     ]
 
     self.AssertListEquals(_RemoveHashedNames(natives), golden_natives)
@@ -1470,7 +1470,7 @@ class ProxyTestGenerator(BaseTest):
     }
     """
 
-    qualified_clazz = 'org/chromium/example/SampleProxyJni'
+    qualified_clazz = 'org/monyhar/example/SampleProxyJni'
 
     natives = jni_generator.ProxyHelpers.ExtractStaticProxyNatives(
         qualified_clazz, test_data, 'long')
@@ -1485,7 +1485,7 @@ class ProxyTestGenerator(BaseTest):
             params=[Param(datatype='long', name='nativePtr')],
             java_class_name=None,
             is_proxy=True,
-            proxy_name='org_chromium_example_SampleProxyJni_foo',
+            proxy_name='org_monyhar_example_SampleProxyJni_foo',
             ptr_type='long'),
         NativeMethod(
             return_type='int',
@@ -1497,7 +1497,7 @@ class ProxyTestGenerator(BaseTest):
             ],
             java_class_name=None,
             is_proxy=True,
-            proxy_name='org_chromium_example_SampleProxyJni_bar'),
+            proxy_name='org_monyhar_example_SampleProxyJni_bar'),
         NativeMethod(
             return_type='String',
             static=True,
@@ -1508,7 +1508,7 @@ class ProxyTestGenerator(BaseTest):
             ],
             java_class_name=None,
             is_proxy=True,
-            proxy_name='org_chromium_example_SampleProxyJni_foobar'),
+            proxy_name='org_monyhar_example_SampleProxyJni_foobar'),
     ]
     self.AssertListEquals(golden_natives, _RemoveHashedNames(natives))
     self.AssertListEquals(golden_natives,
@@ -1537,7 +1537,7 @@ class ProxyTestGenerator(BaseTest):
     path = os.path.join(_JAVA_SRC_DIR, 'SampleForAnnotationProcessor.java')
 
     generated_text = self._CreateJniHeaderFromFile(
-        path, 'org/chromium/example/jni_generator/SampleForAnnotationProcessor',
+        path, 'org/monyhar/example/jni_generator/SampleForAnnotationProcessor',
         opts)
     self.AssertGoldenTextEquals(
         generated_text,
@@ -1560,7 +1560,7 @@ class ProxyTestGenerator(BaseTest):
   def testProxyJniExample(self):
     generated_text = self._CreateJniHeaderFromFile(
         os.path.join(_JAVA_SRC_DIR, 'SampleForAnnotationProcessor.java'),
-        'org/chromium/example/jni_generator/SampleForAnnotationProcessor')
+        'org/monyhar/example/jni_generator/SampleForAnnotationProcessor')
     self.AssertGoldenTextEquals(
         generated_text, golden_file='SampleForAnnotationProcessor_jni.golden')
 
@@ -1584,7 +1584,7 @@ class ProxyTestGenerator(BaseTest):
 
   def testProxyTypeInfoPreserved(self):
     test_data = """
-    package org.chromium.foo;
+    package org.monyhar.foo;
 
     class Foo {
 
@@ -1597,7 +1597,7 @@ class ProxyTestGenerator(BaseTest):
           SomeJavaType[][] someObjects);
     }
     """
-    natives = ProxyHelpers.ExtractStaticProxyNatives('org/chromium/foo/FooJni',
+    natives = ProxyHelpers.ExtractStaticProxyNatives('org/monyhar/foo/FooJni',
                                                      test_data, 'long')
     golden_natives = [
         NativeMethod(
@@ -1607,7 +1607,7 @@ class ProxyTestGenerator(BaseTest):
             name='fooProxy',
             params=[Param(datatype='byte[][]', name='b')],
             is_proxy=True,
-            proxy_name='org_chromium_foo_FooJni_fooProxy'),
+            proxy_name='org_monyhar_foo_FooJni_fooProxy'),
         NativeMethod(
             static=True,
             java_class_name=None,
@@ -1618,7 +1618,7 @@ class ProxyTestGenerator(BaseTest):
                 Param(datatype='short', name='z')
             ],
             is_proxy=True,
-            proxy_name='org_chromium_foo_FooJni_barProxy'),
+            proxy_name='org_monyhar_foo_FooJni_barProxy'),
         NativeMethod(
             static=True,
             java_class_name=None,
@@ -1629,7 +1629,7 @@ class ProxyTestGenerator(BaseTest):
                 Param(datatype='int[][]', name='b')
             ],
             is_proxy=True,
-            proxy_name='org_chromium_foo_FooJni_foobarProxy'),
+            proxy_name='org_monyhar_foo_FooJni_foobarProxy'),
         NativeMethod(
             static=True,
             java_class_name=None,
@@ -1641,7 +1641,7 @@ class ProxyTestGenerator(BaseTest):
                 Param(datatype='Object[][]', name='someObjects')
             ],
             is_proxy=True,
-            proxy_name='org_chromium_foo_FooJni_bazProxy',
+            proxy_name='org_monyhar_foo_FooJni_bazProxy',
             ptr_type='long')
     ]
     self.AssertListEquals(golden_natives, _RemoveHashedNames(natives))

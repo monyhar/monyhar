@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.androidoverlay;
+package org.monyhar.content.browser.androidoverlay;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -32,9 +32,9 @@ import org.robolectric.shadows.ShadowDialog;
 import org.robolectric.shadows.ShadowPhoneWindow;
 import org.robolectric.shadows.ShadowSurfaceView;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.gfx.mojom.Rect;
-import org.chromium.media.mojom.AndroidOverlayConfig;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.gfx.mojom.Rect;
+import org.monyhar.media.mojom.AndroidOverlayConfig;
 
 /**
  * Tests for DialogOverlayCore.

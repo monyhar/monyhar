@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.bookmarkswidget;
+package org.monyhar.chrome.browser.bookmarkswidget;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-import org.chromium.chrome.browser.ShortcutHelper;
-import org.chromium.chrome.browser.document.ChromeLauncherActivity;
-import org.chromium.components.webapps.ShortcutSource;
+import org.monyhar.chrome.browser.ShortcutHelper;
+import org.monyhar.chrome.browser.document.ChromeLauncherActivity;
+import org.monyhar.components.webapps.ShortcutSource;
 
 /**
  * Proxy that responds to tapping on the Bookmarks widget.

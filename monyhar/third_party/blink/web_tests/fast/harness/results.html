@@ -270,13 +270,13 @@ p, h2, h3, h4 {
   Select format that works best for what you are trying to accomplish
   using "format" popup. Following formats are available:</p>
   <h4>1. Plain text</h4>
-  <pre>fast/forms/<a href="https://cs.chromium.org/chromium/src/third_party/blink/web_tests/fast/forms/validation-bubble-appearance-rtl-ui.html?q=validation-bubble-appearance-rtl-ui.html&dr">validation-bubble-appearance-rtl-ui.html</a></pre>
+  <pre>fast/forms/<a href="https://cs.monyhar.org/monyhar/src/third_party/blink/web_tests/fast/forms/validation-bubble-appearance-rtl-ui.html?q=validation-bubble-appearance-rtl-ui.html&dr">validation-bubble-appearance-rtl-ui.html</a></pre>
   <p>Plain text shows the test path.</p>
 
   <h4>2. TestExpectations</a></h4>
 <pre><a href="#">crbug.com/bug</a> layout/test/path/<a href="#">test.html</a> [ Status ]</pre>
   <p>TestExpectationsshow lines as they'd appear in <a
-    href="https://chromium.googlesource.com/chromium/src/+/master/docs/testing/web_test_expectations.md">TestExpectations</a> file.</p>
+    href="https://monyhar.googlesource.com/monyhar/src/+/master/docs/testing/web_test_expectations.md">TestExpectations</a> file.</p>
 
   <p>The interesting part here is [ Status ]. Inside TestExpectations file, [ Status ]
   can have multiple values, representing all expected results. For example:</p>
@@ -297,7 +297,7 @@ TestResult(TIMEOUT CRASH) + TextExpectation(Timeout Failure) => [ Failure <span 
   <h4>3. Crash site</h4>
   <pre>
 ### Crash site: Internals.cpp(3455)
-  editing/pasteboard/<a href="https://cs.chromium.org/chromium/src/third_party/blink/web_tests/editing/pasteboard/copy-paste-white-space.html?q=copy-paste-white-space.html&dr">copy-paste-white-space.html</a></pre>
+  editing/pasteboard/<a href="https://cs.monyhar.org/monyhar/src/third_party/blink/web_tests/editing/pasteboard/copy-paste-white-space.html?q=copy-paste-white-space.html&dr">copy-paste-white-space.html</a></pre>
   <p>Crash site groups "Crash" tests with similar stack traces together. For best results, use it while filtering only crashes.</p>
   <h4>4. Text mismatch</h4>
   <pre>
@@ -325,7 +325,7 @@ TestResult(TIMEOUT CRASH) + TextExpectation(Timeout Failure) => [ Failure <span 
   <h3>Flagging</h3>
   <p>Tests can be flagged by clicking on that square box on the right hand side. View all flagged tests with "Flagged" filter. "F" is the keyboard shortcut.
   <h3>Bugs</h3>
-  <p>If you are unhappy with results, please file a bug, or fix it <a href="https://cs.chromium.org/chromium/src/third_party/blink/web_tests/fast/harness/results.html">here</a>.</p>
+  <p>If you are unhappy with results, please file a bug, or fix it <a href="https://cs.monyhar.org/monyhar/src/third_party/blink/web_tests/fast/harness/results.html">here</a>.</p>
   <p><code>window.localStorage.setItem("testLocationOverride", "file://path/to/your/web_tests")</code> is a secret preference to redirect test links to a custom url.</p>
 </div>
 <div id="summary">
@@ -493,7 +493,7 @@ class Traversal {
 
 const PathParserGlobals = {
   layout_tests_dir: null,
-  chromium_revision: null
+  monyhar_revision: null
 };
 
 class PathParser {
@@ -547,12 +547,12 @@ class PathParser {
     } else if (location.toString().indexOf('file://') == 0) {
       // tests were run locally.
       return "../../../third_party/blink/web_tests";
-    } else if (PathParserGlobals.chromium_revision) {
+    } else if (PathParserGlobals.monyhar_revision) {
       // Existing crrev list is incorrect:  https://crbug.com/750347
-      let correctedRevision = PathParserGlobals.chromium_revision.replace("refs/heads/master@{#", "").replace("}", "");
+      let correctedRevision = PathParserGlobals.monyhar_revision.replace("refs/heads/master@{#", "").replace("}", "");
       return "https://crrev.com/" + correctedRevision + "/third_party/blink/web_tests";
     } else {
-      return "https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/web_tests";
+      return "https://monyhar.googlesource.com/monyhar/src/+/master/third_party/blink/web_tests";
     }
   }
 } // class PathParser
@@ -594,7 +594,7 @@ const Report = {
 
   printExpectation: (test, path, traversal) => {
     // TestExpectations file format is documented at:
-    // https://chromium.googlesource.com/chromium/src/+/master/docs/testing/web_test_expectations.md
+    // https://monyhar.googlesource.com/monyhar/src/+/master/docs/testing/web_test_expectations.md
 
     let pathParser = new PathParser(path);
     // Print directory header if this test's directory is different from the last.

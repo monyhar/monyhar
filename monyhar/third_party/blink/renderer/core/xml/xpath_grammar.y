@@ -27,7 +27,7 @@
 
 /* === NOTA BENE ===
  * If you modify this file, you must run bison to regenerate the corresponding
- * .cc and .h files. From chromium's root directory, run the following command
+ * .cc and .h files. From monyhar's root directory, run the following command
  * on a system with a modern version of bison (>= 3.4.1):
  *
  *   $ third_party/blink/renderer/build/scripts/rule_bison.py \

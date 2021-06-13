@@ -1,4 +1,4 @@
 include_rules = [
-  '+third_party/libaddressinput/chromium/chrome_metadata_source.h',
-  '+third_party/libaddressinput/chromium/chrome_storage_impl.h',
+  '+third_party/libaddressinput/monyhar/chrome_metadata_source.h',
+  '+third_party/libaddressinput/monyhar/chrome_storage_impl.h',
 ]

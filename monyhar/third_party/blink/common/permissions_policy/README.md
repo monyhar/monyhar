@@ -1,12 +1,12 @@
 ## Permissions Policy Guide (Previously Feature Policy)
-Permissions policy is the new name for feature policy with a new HTTP header which uses [structured header](https://httpwg.org/http-extensions/draft-ietf-httpbis-header-structure.html) syntax. Code currently under feature_policy directory in chromium repository has not been renamed yet.
+Permissions policy is the new name for feature policy with a new HTTP header which uses [structured header](https://httpwg.org/http-extensions/draft-ietf-httpbis-header-structure.html) syntax. Code currently under feature_policy directory in monyhar repository has not been renamed yet.
 
 ### How to add a new feature to permissions policy
 
 Permissions policy (see [spec](https://w3c.github.io/webappsec-permissions-policy/)) is a
 mechanism that allows developers to selectively enable and disable various
 [browser features an
-APIs](https://cs.chromium.org/chromium/src/third_party/blink/public/mojom/feature_policy/feature_policy.mojom)
+APIs](https://cs.monyhar.org/monyhar/src/third_party/blink/public/mojom/feature_policy/feature_policy.mojom)
 (e.g, "vibrate", "fullscreen", "usb", etc.). A permissions policy can be defined
 via a HTTP header and/or an iframe "allow" attribute.
 
@@ -117,6 +117,6 @@ Please add new tests to `third_party/blink/web_tests/external/wpt/document-polic
 
 #### Contacts
 For more questions, please feel free to reach out to:
-iclelland@chromium.org
+iclelland@monyhar.org
 chenleihu@google.com
 (Emerita: loonybear@)

@@ -18,7 +18,7 @@
 #include "components/viz/common/gl_scaler.h"
 #include "components/viz/common/gpu/context_provider.h"
 #include "components/viz/service/display/texture_deleter.h"
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "gpu/command_buffer/client/context_support.h"
 #include "gpu/command_buffer/client/gles2_interface.h"
 #include "gpu/command_buffer/client/shared_image_interface.h"

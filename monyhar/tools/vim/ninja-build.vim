@@ -27,7 +27,7 @@ def path_to_current_buffer():
 
 
 def path_to_source_root():
-  """Returns the absolute path to the chromium source root."""
+  """Returns the absolute path to the monyhar source root."""
   candidate = os.path.dirname(path_to_current_buffer())
   # This is a list of files that need to identify the src directory. The shorter
   # it is, the more likely it's wrong (checking for just "build/common.gypi"

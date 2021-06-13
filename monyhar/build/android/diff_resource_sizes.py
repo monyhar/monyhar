@@ -85,7 +85,7 @@ def AddIntermediateResults(chartjson, base_results, diff_results):
 
 
 def _CreateArgparser():
-  def chromium_path(arg):
+  def monyhar_path(arg):
     if arg.startswith('//'):
       return os.path.join(host_paths.DIR_SOURCE_ROOT, arg[2:])
     return arg
@@ -93,15 +93,15 @@ def _CreateArgparser():
   argparser = argparse.ArgumentParser(
       description='Diff resource sizes of two APKs. Arguments not listed here '
                   'will be passed on to both invocations of resource_sizes.py.')
-  argparser.add_argument('--chromium-output-directory-base',
+  argparser.add_argument('--monyhar-output-directory-base',
                          dest='out_dir_base',
-                         type=chromium_path,
+                         type=monyhar_path,
                          help='Location of the build artifacts for the base '
                               'APK, i.e. what the size increase/decrease will '
                               'be measured from.')
-  argparser.add_argument('--chromium-output-directory-diff',
+  argparser.add_argument('--monyhar-output-directory-diff',
                          dest='out_dir_diff',
-                         type=chromium_path,
+                         type=monyhar_path,
                          help='Location of the build artifacts for the diff '
                               'APK.')
   argparser.add_argument('--chartjson',
@@ -118,16 +118,16 @@ def _CreateArgparser():
                               'runs in the chartjson output.')
   argparser.add_argument('--output-dir',
                          default='.',
-                         type=chromium_path,
+                         type=monyhar_path,
                          help='Directory to save chartjson to.')
   argparser.add_argument('--base-apk',
                          required=True,
-                         type=chromium_path,
+                         type=monyhar_path,
                          help='Path to the base APK, i.e. what the size '
                               'increase/decrease will be measured from.')
   argparser.add_argument('--diff-apk',
                          required=True,
-                         type=chromium_path,
+                         type=monyhar_path,
                          help='Path to the diff APK, i.e. the APK whose size '
                               'increase/decrease will be measured against the '
                               'base APK.')
@@ -150,7 +150,7 @@ def main():
 
     base_args = shared_args + ['--output-dir', base_dir, args.base_apk]
     if args.out_dir_base:
-      base_args += ['--chromium-output-directory', args.out_dir_base]
+      base_args += ['--monyhar-output-directory', args.out_dir_base]
     try:
       subprocess.check_output(base_args, stderr=subprocess.STDOUT)
     except subprocess.CalledProcessError as e:
@@ -159,7 +159,7 @@ def main():
 
     diff_args = shared_args + ['--output-dir', diff_dir, args.diff_apk]
     if args.out_dir_diff:
-      diff_args += ['--chromium-output-directory', args.out_dir_diff]
+      diff_args += ['--monyhar-output-directory', args.out_dir_diff]
     try:
       subprocess.check_output(diff_args, stderr=subprocess.STDOUT)
     except subprocess.CalledProcessError as e:

@@ -1,8 +1,8 @@
 # Following reviewers should be able to review all code under //media/midi.
-# But it would be a good idea to involve {yukawa,agoode}@chromium.org if
+# But it would be a good idea to involve {yukawa,agoode}@monyhar.org if
 # they are the original author of files you are touching.
-toyoshim@chromium.org
-yhirano@chromium.org
+toyoshim@monyhar.org
+yhirano@monyhar.org
 
 per-file *.mojom=set noparent
 per-file *.mojom=file://ipc/SECURITY_OWNERS

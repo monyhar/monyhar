@@ -2,25 +2,25 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.framehost;
+package org.monyhar.content.browser.framehost;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
-import org.chromium.base.UnguessableToken;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.blink.mojom.AuthenticatorStatus;
-import org.chromium.content_public.browser.GlobalFrameRoutingId;
-import org.chromium.content_public.browser.PermissionsPolicyFeature;
-import org.chromium.content_public.browser.RenderFrameHost;
-import org.chromium.mojo.bindings.Interface;
-import org.chromium.mojo.bindings.InterfaceRequest;
-import org.chromium.mojo.system.Pair;
-import org.chromium.mojo.system.impl.CoreImpl;
-import org.chromium.url.GURL;
-import org.chromium.url.Origin;
+import org.monyhar.base.Callback;
+import org.monyhar.base.UnguessableToken;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.blink.mojom.AuthenticatorStatus;
+import org.monyhar.content_public.browser.GlobalFrameRoutingId;
+import org.monyhar.content_public.browser.PermissionsPolicyFeature;
+import org.monyhar.content_public.browser.RenderFrameHost;
+import org.monyhar.mojo.bindings.Interface;
+import org.monyhar.mojo.bindings.InterfaceRequest;
+import org.monyhar.mojo.system.Pair;
+import org.monyhar.mojo.system.impl.CoreImpl;
+import org.monyhar.url.GURL;
+import org.monyhar.url.Origin;
 
 /**
  * The RenderFrameHostImpl Java wrapper to allow communicating with the native RenderFrameHost

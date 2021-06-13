@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.followmanagement;
+package org.monyhar.chrome.browser.feed.followmanagement;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import org.chromium.chrome.browser.feed.webfeed.R;
+import org.monyhar.chrome.browser.feed.webfeed.R;
 
 /**
  * View class for the individual line items in the following management activity.

@@ -123,14 +123,14 @@ task exception port 0, mask 0x1c00 (CRASH|RESOURCE|GUARD), port 0x30b, behavior 
 
 ## Resources
 
-Crashpad home page: https://crashpad.chromium.org/.
+Crashpad home page: https://crashpad.monyhar.org/.
 
-Report bugs at https://crashpad.chromium.org/bug/new.
+Report bugs at https://crashpad.monyhar.org/bug/new.
 
 ## Copyright
 
 Copyright 2014 [The Crashpad
-Authors](https://chromium.googlesource.com/crashpad/crashpad/+/master/AUTHORS).
+Authors](https://monyhar.googlesource.com/crashpad/crashpad/+/master/AUTHORS).
 
 ## License
 

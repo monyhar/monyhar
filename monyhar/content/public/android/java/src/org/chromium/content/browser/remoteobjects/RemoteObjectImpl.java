@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.remoteobjects;
+package org.monyhar.content.browser.remoteobjects;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.blink.mojom.RemoteArrayType;
-import org.chromium.blink.mojom.RemoteInvocationArgument;
-import org.chromium.blink.mojom.RemoteInvocationError;
-import org.chromium.blink.mojom.RemoteInvocationResult;
-import org.chromium.blink.mojom.RemoteInvocationResultValue;
-import org.chromium.blink.mojom.RemoteObject;
-import org.chromium.blink.mojom.RemoteTypedArray;
-import org.chromium.blink.mojom.SingletonJavaScriptValue;
-import org.chromium.mojo.system.MojoException;
-import org.chromium.mojo_base.BigBufferUtil;
-import org.chromium.mojo_base.mojom.String16;
+import org.monyhar.blink.mojom.RemoteArrayType;
+import org.monyhar.blink.mojom.RemoteInvocationArgument;
+import org.monyhar.blink.mojom.RemoteInvocationError;
+import org.monyhar.blink.mojom.RemoteInvocationResult;
+import org.monyhar.blink.mojom.RemoteInvocationResultValue;
+import org.monyhar.blink.mojom.RemoteObject;
+import org.monyhar.blink.mojom.RemoteTypedArray;
+import org.monyhar.blink.mojom.SingletonJavaScriptValue;
+import org.monyhar.mojo.system.MojoException;
+import org.monyhar.mojo_base.BigBufferUtil;
+import org.monyhar.mojo_base.mojom.String16;
 
 import java.lang.annotation.Annotation;
 import java.lang.annotation.Retention;

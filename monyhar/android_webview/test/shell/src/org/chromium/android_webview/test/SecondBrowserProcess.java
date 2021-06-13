@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
 import android.app.Service;
 import android.content.Intent;
@@ -11,9 +11,9 @@ import android.os.IBinder;
 import android.os.Parcel;
 import android.os.Process;
 
-import org.chromium.android_webview.AwBrowserProcess;
-import org.chromium.android_webview.common.AwResource;
-import org.chromium.android_webview.shell.R;
+import org.monyhar.android_webview.AwBrowserProcess;
+import org.monyhar.android_webview.common.AwResource;
+import org.monyhar.android_webview.shell.R;
 
 /**
  * This is a service for imitating a second browser process in the application.

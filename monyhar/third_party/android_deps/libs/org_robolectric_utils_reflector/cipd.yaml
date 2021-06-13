@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@4.3.1.cr0
-package: chromium/third_party/android_deps/libs/org_robolectric_utils_reflector
+package: monyhar/third_party/android_deps/libs/org_robolectric_utils_reflector
 description: "reflector"
 data:
 - file: utils-reflector-4.3.1.jar

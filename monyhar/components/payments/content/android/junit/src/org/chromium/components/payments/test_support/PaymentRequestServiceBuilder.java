@@ -2,29 +2,29 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.payments.test_support;
+package org.monyhar.components.payments.test_support;
 
 import androidx.annotation.Nullable;
 
 import org.mockito.Mockito;
 
-import org.chromium.components.payments.BrowserPaymentRequest;
-import org.chromium.components.payments.JourneyLogger;
-import org.chromium.components.payments.PaymentAppService;
-import org.chromium.components.payments.PaymentRequestService;
-import org.chromium.components.payments.PaymentRequestService.Delegate;
-import org.chromium.components.payments.PaymentRequestSpec;
-import org.chromium.content_public.browser.RenderFrameHost;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.payments.mojom.PaymentCurrencyAmount;
-import org.chromium.payments.mojom.PaymentDetails;
-import org.chromium.payments.mojom.PaymentItem;
-import org.chromium.payments.mojom.PaymentMethodData;
-import org.chromium.payments.mojom.PaymentOptions;
-import org.chromium.payments.mojom.PaymentRequestClient;
-import org.chromium.url.GURL;
-import org.chromium.url.JUnitTestGURLs;
-import org.chromium.url.Origin;
+import org.monyhar.components.payments.BrowserPaymentRequest;
+import org.monyhar.components.payments.JourneyLogger;
+import org.monyhar.components.payments.PaymentAppService;
+import org.monyhar.components.payments.PaymentRequestService;
+import org.monyhar.components.payments.PaymentRequestService.Delegate;
+import org.monyhar.components.payments.PaymentRequestSpec;
+import org.monyhar.content_public.browser.RenderFrameHost;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.payments.mojom.PaymentCurrencyAmount;
+import org.monyhar.payments.mojom.PaymentDetails;
+import org.monyhar.payments.mojom.PaymentItem;
+import org.monyhar.payments.mojom.PaymentMethodData;
+import org.monyhar.payments.mojom.PaymentOptions;
+import org.monyhar.payments.mojom.PaymentRequestClient;
+import org.monyhar.url.GURL;
+import org.monyhar.url.JUnitTestGURLs;
+import org.monyhar.url.Origin;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -75,7 +75,7 @@ public class PaymentRequestServiceBuilder implements Delegate {
         mJourneyLogger = journeyLogger;
         mMethodData = new PaymentMethodData[1];
         mMethodData[0] = new PaymentMethodData();
-        mMethodData[0].supportedMethod = "https://www.chromium.org";
+        mMethodData[0].supportedMethod = "https://www.monyhar.org";
         mDetails = new PaymentDetails();
         mDetails.id = "testId";
         mDetails.total = new PaymentItem();

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.test.util;
+package org.monyhar.ui.test.util;
 
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -12,7 +12,7 @@ import androidx.annotation.IdRes;
 import androidx.annotation.LayoutRes;
 import androidx.appcompat.app.AppCompatActivity;
 
-import org.chromium.base.Callback;
+import org.monyhar.base.Callback;
 
 /** Dummy activity to test UI components without Chrome browser initialization and natives. */
 public class DummyUiActivity extends AppCompatActivity {

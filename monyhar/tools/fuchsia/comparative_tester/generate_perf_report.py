@@ -6,7 +6,7 @@
 executed and written some test data into the location specified by
 target_spec.py. It writes to results_dir and reads all present test info from
 raw_data_dir. Using this script should just be a matter of invoking it from
-chromium/src while raw test data exists in raw_data_dir."""
+monyhar/src while raw test data exists in raw_data_dir."""
 
 import json
 import logging

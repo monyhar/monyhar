@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private.payments.test_support;
+package org.monyhar.weblayer_private.payments.test_support;
 
 import android.content.Context;
 
@@ -10,26 +10,26 @@ import androidx.annotation.Nullable;
 
 import org.mockito.Mockito;
 
-import org.chromium.components.payments.BrowserPaymentRequest;
-import org.chromium.components.payments.JourneyLogger;
-import org.chromium.components.payments.MojoPaymentRequestGateKeeper;
-import org.chromium.components.payments.PaymentAppFactoryInterface;
-import org.chromium.components.payments.PaymentRequestService;
-import org.chromium.components.payments.PaymentRequestSpec;
-import org.chromium.content_public.browser.RenderFrameHost;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.payments.mojom.PaymentCurrencyAmount;
-import org.chromium.payments.mojom.PaymentDetails;
-import org.chromium.payments.mojom.PaymentItem;
-import org.chromium.payments.mojom.PaymentMethodData;
-import org.chromium.payments.mojom.PaymentOptions;
-import org.chromium.payments.mojom.PaymentRequest;
-import org.chromium.payments.mojom.PaymentRequestClient;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.url.GURL;
-import org.chromium.url.JUnitTestGURLs;
-import org.chromium.url.Origin;
-import org.chromium.weblayer_private.payments.WebLayerPaymentRequestService;
+import org.monyhar.components.payments.BrowserPaymentRequest;
+import org.monyhar.components.payments.JourneyLogger;
+import org.monyhar.components.payments.MojoPaymentRequestGateKeeper;
+import org.monyhar.components.payments.PaymentAppFactoryInterface;
+import org.monyhar.components.payments.PaymentRequestService;
+import org.monyhar.components.payments.PaymentRequestSpec;
+import org.monyhar.content_public.browser.RenderFrameHost;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.payments.mojom.PaymentCurrencyAmount;
+import org.monyhar.payments.mojom.PaymentDetails;
+import org.monyhar.payments.mojom.PaymentItem;
+import org.monyhar.payments.mojom.PaymentMethodData;
+import org.monyhar.payments.mojom.PaymentOptions;
+import org.monyhar.payments.mojom.PaymentRequest;
+import org.monyhar.payments.mojom.PaymentRequestClient;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.url.GURL;
+import org.monyhar.url.JUnitTestGURLs;
+import org.monyhar.url.Origin;
+import org.monyhar.weblayer_private.payments.WebLayerPaymentRequestService;
 
 import java.lang.ref.WeakReference;
 import java.util.Collection;
@@ -48,7 +48,7 @@ public class WebLayerPaymentRequestBuilder implements PaymentRequestService.Dele
     private final PaymentRequestSpec mSpec;
     private final boolean mGoogleBridgeEligible;
     private final PaymentOptions mOptions;
-    private String mSupportedMethod = "https://www.chromium.org";
+    private String mSupportedMethod = "https://www.monyhar.org";
 
     /**
      * Create a default builder.

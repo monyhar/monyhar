@@ -90,7 +90,7 @@ void ConvertToPointerTouchInfo(
     const TouchEventPoint& touch_point,
     POINTER_TOUCH_INFO* pointer_touch_info) {
   // TODO(zijiehe): Use GetFullscreenTopLeft() once
-  // https://chromium-review.googlesource.com/c/581951/ is submitted.
+  // https://monyhar-review.googlesource.com/c/581951/ is submitted.
   webrtc::DesktopVector top_left = webrtc::GetScreenRect(
       webrtc::kFullDesktopScreenId, std::wstring()).top_left();
   if (top_left.is_zero()) {

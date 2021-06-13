@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.mojo.bindings;
+package org.monyhar.mojo.bindings;
 
 import androidx.test.filters.SmallTest;
 
@@ -10,24 +10,24 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.mojo.HandleMock;
-import org.chromium.mojo.bindings.test.mojom.imported.Color;
-import org.chromium.mojo.bindings.test.mojom.imported.Point;
-import org.chromium.mojo.bindings.test.mojom.imported.Shape;
-import org.chromium.mojo.bindings.test.mojom.imported.Thing;
-import org.chromium.mojo.bindings.test.mojom.sample.Bar;
-import org.chromium.mojo.bindings.test.mojom.sample.Bar.Type;
-import org.chromium.mojo.bindings.test.mojom.sample.DefaultsTest;
-import org.chromium.mojo.bindings.test.mojom.sample.Enum;
-import org.chromium.mojo.bindings.test.mojom.sample.Foo;
-import org.chromium.mojo.bindings.test.mojom.sample.InterfaceConstants;
-import org.chromium.mojo.bindings.test.mojom.sample.SampleServiceConstants;
-import org.chromium.mojo.bindings.test.mojom.test_structs.EmptyStruct;
-import org.chromium.mojo.bindings.test.mojom.test_structs.Rect;
-import org.chromium.mojo.system.DataPipe.ConsumerHandle;
-import org.chromium.mojo.system.DataPipe.ProducerHandle;
-import org.chromium.mojo.system.MessagePipeHandle;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.mojo.HandleMock;
+import org.monyhar.mojo.bindings.test.mojom.imported.Color;
+import org.monyhar.mojo.bindings.test.mojom.imported.Point;
+import org.monyhar.mojo.bindings.test.mojom.imported.Shape;
+import org.monyhar.mojo.bindings.test.mojom.imported.Thing;
+import org.monyhar.mojo.bindings.test.mojom.sample.Bar;
+import org.monyhar.mojo.bindings.test.mojom.sample.Bar.Type;
+import org.monyhar.mojo.bindings.test.mojom.sample.DefaultsTest;
+import org.monyhar.mojo.bindings.test.mojom.sample.Enum;
+import org.monyhar.mojo.bindings.test.mojom.sample.Foo;
+import org.monyhar.mojo.bindings.test.mojom.sample.InterfaceConstants;
+import org.monyhar.mojo.bindings.test.mojom.sample.SampleServiceConstants;
+import org.monyhar.mojo.bindings.test.mojom.test_structs.EmptyStruct;
+import org.monyhar.mojo.bindings.test.mojom.test_structs.Rect;
+import org.monyhar.mojo.system.DataPipe.ConsumerHandle;
+import org.monyhar.mojo.system.DataPipe.ProducerHandle;
+import org.monyhar.mojo.system.MessagePipeHandle;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;

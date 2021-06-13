@@ -21,13 +21,13 @@
 namespace bookmarks {
 
 NSString* const kUTTypeChromiumBookmarkDictionaryList =
-    @"org.chromium.bookmark-dictionary-list";
+    @"org.monyhar.bookmark-dictionary-list";
 
 namespace {
 
 // UTI used to store profile path to determine which profile a set of bookmarks
 // came from.
-NSString* const kUTTypeChromiumProfilePath = @"org.chromium.profile-path";
+NSString* const kUTTypeChromiumProfilePath = @"org.monyhar.profile-path";
 
 // Internal bookmark ID for a bookmark node.  Used only when moving inside of
 // one profile.

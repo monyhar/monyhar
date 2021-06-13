@@ -13,7 +13,7 @@
 #endif
 
 // Define COMPILE_ASSERT using the implementation described in:
-// http://chromium.googlesource.com/chromium/src.git/+/539fc831/base/basictypes.h
+// http://monyhar.googlesource.com/monyhar/src.git/+/539fc831/base/basictypes.h
 #if __cplusplus >= 201103L
 
 #define COMPILE_ASSERT(expr, msg) static_assert(expr, #msg)

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.net.connectivitydetector;
+package org.monyhar.chrome.browser.net.connectivitydetector;
 
 import androidx.test.filters.MediumTest;
 
@@ -13,12 +13,12 @@ import org.junit.ClassRule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Batch;
-import org.chromium.content_public.browser.test.NativeLibraryTestUtils;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.net.NetworkChangeNotifier;
-import org.chromium.net.test.EmbeddedTestServerRule;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.content_public.browser.test.NativeLibraryTestUtils;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.net.NetworkChangeNotifier;
+import org.monyhar.net.test.EmbeddedTestServerRule;
 
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;

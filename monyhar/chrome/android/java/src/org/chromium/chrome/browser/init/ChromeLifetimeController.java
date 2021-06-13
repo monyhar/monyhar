@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.init;
+package org.monyhar.chrome.browser.init;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,12 +10,12 @@ import android.content.Intent;
 import android.os.Handler;
 import android.os.Looper;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.ThreadUtils;
-import org.chromium.chrome.browser.ApplicationLifetime;
-import org.chromium.chrome.browser.BrowserRestartActivity;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.chrome.browser.ApplicationLifetime;
+import org.monyhar.chrome.browser.BrowserRestartActivity;
 
 /**
  * Answers requests to kill and (potentially) restart Chrome's main browser process.

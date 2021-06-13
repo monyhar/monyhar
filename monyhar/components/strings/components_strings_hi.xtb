@@ -825,7 +825,7 @@
 <translation id="3986705137476756801">अभी के लिए लाइव कैप्शन की सुविधा बंद करें</translation>
 <translation id="3987405730340719549">Chrome के हिसाब से यह साइट नकली या धोखाधड़ी करने वाली हो सकती है.
 
-    अगर आपको लगता है कि ऐसा गलती से दिखाया गया है, तो कृपया https://bugs.chromium.org/p/chromium/issues/entry?template=Safety+Tips+Appeals पर जाएं.</translation>
+    अगर आपको लगता है कि ऐसा गलती से दिखाया गया है, तो कृपया https://bugs.monyhar.org/p/monyhar/issues/entry?template=Safety+Tips+Appeals पर जाएं.</translation>
 <translation id="3987940399970879459">एक एमबी से कम</translation>
 <translation id="3990250421422698716">जोग ऑफ़सेट</translation>
 <translation id="3996311196211510766">साइट <ph name="ORIGIN" /> ने यह अनुरोध किया है कि इसके सभी अनुरोधों पर
@@ -1339,7 +1339,7 @@
 <translation id="5851548754964597211">टैब सूची</translation>
 <translation id="5855253129151731373">इस साइट का होस्टनाम <ph name="LOOKALIKE_DOMAIN" /> से मिलता-जुलता है. हमलावर कभी-कभी डोमेन नाम में छोटे और नज़र न आने वाले बदलाव करके, साइटों की नकल कर लेते हैं.
 
-    अगर आपको लगता है कि ऐसा गलती से दिखाया गया है, तो कृपया https://bugs.chromium.org/p/chromium/issues/entry?template=Safety+Tips+Appeals पर जाएं.</translation>
+    अगर आपको लगता है कि ऐसा गलती से दिखाया गया है, तो कृपया https://bugs.monyhar.org/p/monyhar/issues/entry?template=Safety+Tips+Appeals पर जाएं.</translation>
 <translation id="5860033963881614850">बंद</translation>
 <translation id="5862579898803147654">स्टैकर 8</translation>
 <translation id="5863847714970149516">आगे आने वाला पेज आपसे शुल्क लेने की कोशिश कर सकता है</translation>

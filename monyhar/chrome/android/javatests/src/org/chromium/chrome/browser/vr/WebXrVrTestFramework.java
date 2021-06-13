@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr;
+package org.monyhar.chrome.browser.vr;
 
 import androidx.annotation.IntDef;
 
 import org.junit.Assert;
 
-import org.chromium.chrome.browser.vr.rules.VrTestRule;
-import org.chromium.chrome.browser.vr.util.PermissionUtils;
-import org.chromium.chrome.browser.vr.util.VrShellDelegateUtils;
-import org.chromium.chrome.test.ChromeActivityTestRule;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.chrome.browser.vr.rules.VrTestRule;
+import org.monyhar.chrome.browser.vr.util.PermissionUtils;
+import org.monyhar.chrome.browser.vr.util.VrShellDelegateUtils;
+import org.monyhar.chrome.test.ChromeActivityTestRule;
+import org.monyhar.content_public.browser.WebContents;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

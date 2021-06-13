@@ -87,7 +87,7 @@ js_library("nearby_share_high_visibility_page.m") {
   deps = [
     "../localized_link:localized_link",
     "//chrome/browser/resources/nearby_share/shared:nearby_page_template.m",
-    "//third_party/polymer/v3_0/components-chromium/iron-a11y-announcer:iron-a11y-announcer",
+    "//third_party/polymer/v3_0/components-monyhar/iron-a11y-announcer:iron-a11y-announcer",
     "//ui/webui/resources/cr_elements/cr_lottie:cr_lottie.m",
     "//ui/webui/resources/js:i18n_behavior.m",
   ]

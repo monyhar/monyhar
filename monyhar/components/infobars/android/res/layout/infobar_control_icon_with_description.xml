@@ -19,7 +19,7 @@
         android:scaleType="centerInside"
         tools:ignore="ContentDescription" />
 
-    <org.chromium.components.browser_ui.widget.DualControlLayout
+    <org.monyhar.components.browser_ui.widget.DualControlLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1" >
@@ -36,6 +36,6 @@
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.TextLarge.Secondary" />
 
-    </org.chromium.components.browser_ui.widget.DualControlLayout>
+    </org.monyhar.components.browser_ui.widget.DualControlLayout>
 
 </LinearLayout>

@@ -7,7 +7,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <org.chromium.components.browser_ui.widget.CoordinatorLayoutForPointer
+    <org.monyhar.components.browser_ui.widget.CoordinatorLayoutForPointer
         android:id="@+id/coordinator"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -42,7 +42,7 @@
             android:layout_height="match_parent"
             android:visibility="gone" />
 
-        <org.chromium.chrome.browser.ui.BottomContainer
+        <org.monyhar.chrome.browser.ui.BottomContainer
             android:id="@+id/bottom_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -119,7 +119,7 @@
             android:visibility="gone"
             android:layout="@layout/continuous_search_container"/>
 
-        <org.chromium.components.messages.MessageContainer
+        <org.monyhar.components.messages.MessageContainer
             android:id="@+id/message_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -155,7 +155,7 @@
             android:visibility="gone"
             android:clipChildren="false"/>
 
-    </org.chromium.components.browser_ui.widget.CoordinatorLayoutForPointer>
+    </org.monyhar.components.browser_ui.widget.CoordinatorLayoutForPointer>
 
     <!-- This empty view is used as the anchor for custom menu -->
     <View

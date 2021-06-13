@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Omnibox histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -23,7 +23,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.AnswerParseSuccess" enum="BooleanSuccess"
     expires_after="2021-10-31">
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     For each answer received in suggest responses, the number that are
@@ -33,7 +33,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.AnswerParseType" enum="SuggestionAnswerType"
     expires_after="2021-10-31">
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     The number of times each omnibox suggestion answer type (e.g., weather,
@@ -50,8 +50,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="2021-10-31">
 <!-- Name completed by histogram_suffixes name="Omnibox.BitmapFetchLatencyCacheSplit" -->
 
-  <owner>manukh@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>manukh@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     The time elapsed between the ChromeOmniboxClient requesting a suggestion's
@@ -65,9 +65,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.CharTypedToRepaintLatency" units="ms"
     expires_after="2021-10-31">
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
-  <owner>asvitkine@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
   <summary>
     Records the time taken between a keystroke being typed in the omnibox and
     the text being painted. If there are multiple keystrokes before a paint,
@@ -97,9 +97,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.CharTypedToRepaintLatency.InsertToPresent" units="ms"
     expires_after="2021-10-31">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
   <summary>
     A refinement of Omnibox.CharTypedToRepaintLatency metric. It measures the
     time between the first character insertion in a series that happen during a
@@ -113,9 +113,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.CharTypedToRepaintLatency.PaintToPresent" units="ms"
     expires_after="2021-06-30">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
   <summary>
     Records the time between when OnPaint() is called to the time the compositor
     reports pixels were successfully drawn to the screen. This a subset of the
@@ -125,9 +125,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.CharTypedToRepaintLatency.ToPaint" units="ms"
     expires_after="2021-10-31">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
   <summary>
     Records the time taken between a keystroke being typed in the omnibox and
     the time when we're ready to paint the omnibox. This is a breakdown
@@ -138,8 +138,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.ClipboardSuggestionRemovedAge" units="ms"
     expires_after="2021-09-01">
-  <owner>gangwu@chromium.org</owner>
-  <owner>fgorski@chromium.org</owner>
+  <owner>gangwu@monyhar.org</owner>
+  <owner>fgorski@monyhar.org</owner>
   <summary>
     Recorded every time the clipboard suggestion is removed from omnibox
     suggestion list and the system clipboard. The value indicates the estimated
@@ -149,8 +149,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.ClipboardSuggestionShownAge" units="ms"
     expires_after="2021-09-19">
-  <owner>gangwu@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>gangwu@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
   <summary>
     Recorded every time the omnibox is focussed and recent content from the
     user's clipboard is suggested. The value indicates the estimated age of the
@@ -167,8 +167,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.ClipboardSuggestionShownNumTimes" units="units"
     expires_after="2021-11-21">
-  <owner>gangwu@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>gangwu@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
   <summary>
     Recorded every time the omnibox is focussed and a recent content from the
     user's clipboard is suggested. The number emitted is the number of times the
@@ -197,8 +197,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.ClipboardSuggestionShownWithCurrentURL"
     enum="BooleanPresent" expires_after="M93">
-  <owner>gangwu@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>gangwu@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
   <summary>
     Recorded every time the omnibox is focussed and a recent content from the
     user's clipboard is suggested. The value indicates whether the current URL
@@ -222,8 +222,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.CutOrCopyAllText" units="count"
     expires_after="2021-10-31">
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     The number of cut or copy commands on all selected text in the omnibox.
@@ -233,10 +233,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.DocumentSuggest.Requests"
     enum="OmniboxDocumentSuggestRequests" expires_after="M95">
-  <owner>manukh@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>skare@chromium.org</owner>
+  <owner>manukh@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>skare@monyhar.org</owner>
   <summary>
     Counts the number of document suggest requests the omnibox sent, were
     invalidated, and were completed successfully.
@@ -245,10 +245,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.DocumentSuggest.ResultCount" units="count"
     expires_after="M95">
-  <owner>manukh@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>skare@chromium.org</owner>
+  <owner>manukh@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>skare@monyhar.org</owner>
   <summary>
     Number of results returned in each document suggestion reply. Logged for
     successful requests where the provider returned a parseable result set.
@@ -260,8 +260,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2020-10.
   </obsolete>
-  <owner>livvielin@chromium.org</owner>
-  <owner>tommycli@chromium.org</owner>
+  <owner>livvielin@monyhar.org</owner>
+  <owner>tommycli@monyhar.org</owner>
   <summary>
     The state of URL elision in the omnibox, e.g. URL default behavior,
     prevented by context menu option, or prevented by Chrome extension. This
@@ -275,8 +275,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.EnteredKeywordMode2" enum="OmniboxEnteredKeywordMode2"
     expires_after="2021-10-31">
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     The new enumeration of how many times users enter keyword hint mode
@@ -289,10 +289,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.FocusResultedInNavigation" enum="BooleanNavigated"
     expires_after="2021-10-31">
-  <owner>ender@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
-  <owner>tommycli@chromium.org</owner>
+  <owner>ender@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
+  <owner>tommycli@monyhar.org</owner>
   <summary>
     This records whether user initiated navigation after focusing the Omnibox
     versus switches focus elsewhere without navigating. This metric includes
@@ -310,8 +310,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Omnibox.FocusToEditTime" units="ms" expires_after="2021-06-30">
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     The length of time between when a user focused on the omnibox and first
@@ -321,8 +321,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.FocusToOpenTimeAnyPopupState3" units="ms"
     expires_after="2021-10-31">
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     The length of time between when a user focused on the omnibox and opened an
@@ -337,8 +337,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Omnibox.HoverTime" units="ms" expires_after="2021-10-31">
-  <owner>estark@chromium.org</owner>
-  <owner>carlosil@chromium.org</owner>
+  <owner>estark@monyhar.org</owner>
+  <owner>carlosil@monyhar.org</owner>
   <summary>
     The time duration that the user hovers the mouse over the omnibox before
     exiting the hover or focusing the omnibox. Whenever the user's mouse enters
@@ -353,9 +353,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2020-10.
   </obsolete>
-  <owner>ender@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>ender@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
   <owner>chrome-android-omnibox-team@google.com</owner>
   <summary>
     Records suggestions decorated with specific icon or favicon at the time the
@@ -372,8 +372,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.InputType" enum="OmniboxInputType"
     expires_after="2021-10-31">
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     The kind of input the user provided when using the omnibox to go somewhere.
@@ -390,8 +390,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.IsPasteAndGo" enum="Boolean"
     expires_after="2021-10-31">
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     Whether an omnibox interaction is a paste-and-search/paste-and-go action.
@@ -408,8 +408,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Omnibox.IsPopupOpen" enum="Boolean" expires_after="2021-10-31">
-  <owner>mpearson@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>mpearson@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     Whether the omnibox popup (a.k.a. dropdown) is open at the time the user
@@ -428,8 +428,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.JustDeletedText" enum="Boolean"
     expires_after="2021-10-31">
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     Whether the user deleted text immediately before selecting an omnibox
@@ -449,8 +449,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   </obsolete>
   <owner>yusuyoutube@google.com</owner>
   <owner>benwgold@google.com</owner>
-  <owner>fgorski@chromium.org</owner>
-  <owner>wylieb@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
+  <owner>wylieb@monyhar.org</owner>
   <owner>lens-chrome@google.com</owner>
   <summary>
     Whether the user supports the camera assisted search with Google Lens and if
@@ -465,8 +465,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   </obsolete>
   <owner>yusuyoutube@google.com</owner>
   <owner>benwgold@google.com</owner>
-  <owner>fgorski@chromium.org</owner>
-  <owner>wylieb@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
+  <owner>wylieb@monyhar.org</owner>
   <owner>lens-chrome@google.com</owner>
   <summary>
     Logged the elapsed time between the time when user enters the Google Lens
@@ -481,8 +481,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   </obsolete>
   <owner>yusuyoutube@google.com</owner>
   <owner>benwgold@google.com</owner>
-  <owner>fgorski@chromium.org</owner>
-  <owner>wylieb@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
+  <owner>wylieb@monyhar.org</owner>
   <owner>lens-chrome@google.com</owner>
   <summary>
     Whether the user supports the camera assisted search with Google Lens and if
@@ -493,8 +493,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.LocalHistoryZeroSuggest.AsyncDeleteTime" units="ms"
     expires_after="2022-01-01">
-  <owner>mahmadi@chromium.org</owner>
-  <owner>tommycli@chromium.org</owner>
+  <owner>mahmadi@monyhar.org</owner>
+  <owner>tommycli@monyhar.org</owner>
   <summary>
     The length of time it takes for the corresponding URLs that would produce a
     deleted match to be queried asynchronously and deleted. Triggered when user
@@ -504,8 +504,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.LocalHistoryZeroSuggest.SearchTermsExtractedCount"
     units="count" expires_after="2022-01-01">
-  <owner>mahmadi@chromium.org</owner>
-  <owner>tommycli@chromium.org</owner>
+  <owner>mahmadi@monyhar.org</owner>
+  <owner>tommycli@monyhar.org</owner>
   <summary>
     The number of search terms extracted from the keyword search terms database
     and examined (e.g., sorted) to produce local zero-prefix suggestions.
@@ -516,8 +516,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.LocalHistoryZeroSuggest.SearchTermsExtractionTime"
     units="ms" expires_after="2022-01-01">
-  <owner>mahmadi@chromium.org</owner>
-  <owner>tommycli@chromium.org</owner>
+  <owner>mahmadi@monyhar.org</owner>
+  <owner>tommycli@monyhar.org</owner>
   <summary>
     The length of time it takes to extract search terms from the keyword search
     terms database and examine (e.g., sort) them to produce local zero-prefix
@@ -527,8 +527,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.LocalHistoryZeroSuggest.SyncDeleteTime" units="ms"
     expires_after="2022-01-01">
-  <owner>mahmadi@chromium.org</owner>
-  <owner>tommycli@chromium.org</owner>
+  <owner>mahmadi@monyhar.org</owner>
+  <owner>tommycli@monyhar.org</owner>
   <summary>
     The length of time it takes to handle the deletion request for a match and
     to update the list of provider matches synchronously. Triggered when user
@@ -538,8 +538,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.MatchStability.AsyncMatchChange2" units="position"
     expires_after="2021-08-29">
-  <owner>tommycli@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>tommycli@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
   <summary>
     This tracks how unstable our matches are due to asynchronous updates.
     Whenever a dropdown position gets asynchronously set to a new match that's
@@ -568,8 +568,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.MatchStability.AsyncMatchChangedInAnyPosition"
     enum="BooleanChanged" expires_after="2021-10-31">
-  <owner>tommycli@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>tommycli@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
   <summary>
     This tracks how unstable our matches are due to asynchronous updates.
 
@@ -589,8 +589,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.NumEvents" enum="UsedOmnibox"
     expires_after="2021-06-30">
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     The number of times users used the omnibox to go somewhere.
@@ -604,8 +604,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.NumTypedTerms" units="terms"
     expires_after="2021-10-31">
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     The number of terms in the text the user entered in the omnibox when they
@@ -621,7 +621,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.OnDeviceHeadSuggest.AsyncQueryTime" units="ms"
     expires_after="2021-10-10">
-  <owner>cch@chromium.org</owner>
+  <owner>cch@monyhar.org</owner>
   <owner>suggest-2g@google.com</owner>
   <summary>
     Time it takes for omnibox on device head provider to fulfill the
@@ -631,7 +631,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.OnDeviceHeadSuggest.ResultCount" units="count"
     expires_after="2021-08-09">
-  <owner>cch@chromium.org</owner>
+  <owner>cch@monyhar.org</owner>
   <owner>suggest-2g@google.com</owner>
   <summary>
     The number of results returned by the on device head model which matches the
@@ -640,9 +640,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Omnibox.PaintTime" units="ms" expires_after="2021-10-31">
-  <owner>asvitkine@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>asvitkine@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
   <summary>
     Records the time to paint the omnibox contents. This is a subcomponent of
     Omnibox.CharTypedToRepaintLatency. Implemented on desktop platforms.
@@ -650,8 +650,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Omnibox.Paste" units="count" expires_after="2021-10-31">
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     The number of paste commands on the text in the omnibox. Reported every time
@@ -663,8 +663,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2021-01 due to redundancy with Omnibox.IsPasteAndGo.
   </obsolete>
-  <owner>mpearson@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>mpearson@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
   <summary>
     The number of paste-and-go commands on the text in the omnibox. Reported
     every time a paste-and-go command is done.
@@ -673,8 +673,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.PedalShown" enum="SuggestionPedalType"
     expires_after="2021-10-31">
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>orinj@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>orinj@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     Counts the type (concept ID) of omnibox pedals shown when the user used the
@@ -693,8 +693,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Omnibox.ProviderTime2" units="ms" expires_after="2021-10-31">
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     The length of time taken by the named provider&quot;s synchronous pass.
@@ -702,8 +702,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Omnibox.QueryTime2" units="ms" expires_after="2021-10-31">
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     Time it takes for the omnibox to become responsive to user input after the
@@ -714,7 +714,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.Search.OffTheRecord" enum="BooleanOffTheRecord"
     expires_after="2022-02-02">
-  <owner>rhalavati@chromium.org</owner>
+  <owner>rhalavati@monyhar.org</owner>
   <owner>chrome-incognito@google.com</owner>
   <summary>
     This histogram records the number of searches done from omnibox using
@@ -725,8 +725,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.SearchEngineType" enum="OmniboxSearchEngineType"
     expires_after="2021-10-31">
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     The type of search engine associated with a match opened from the omnibox.
@@ -735,7 +735,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.SearchPrefetch.PrefetchEligibilityReason"
     enum="SearchPrefetchEligibilityReason" expires_after="2021-10-31">
-  <owner>ryansturm@chromium.org</owner>
+  <owner>ryansturm@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     The reason that a search prefetch request from the autocomplete/omnibox
@@ -747,7 +747,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.SearchPrefetch.PrefetchFinalStatus"
     enum="SearchPrefetchFinalStatus" expires_after="2021-10-31">
-  <owner>ryansturm@chromium.org</owner>
+  <owner>ryansturm@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     The status of a Search Prefetch request when it is deleted by expiration or
@@ -757,7 +757,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.SearchPrefetch.PrefetchServingReason"
     enum="SearchPrefetchServingReason" expires_after="2021-10-31">
-  <owner>ryansturm@chromium.org</owner>
+  <owner>ryansturm@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     The reason that a navigation request could or could not serve a prefetch
@@ -767,8 +767,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.SearchProviderMatches" units="units"
     expires_after="2021-10-31">
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     The number of matches returned by SearchProvider. Emitted on every call to
@@ -779,8 +779,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.SelectedPosition" units="position"
     expires_after="2021-10-31">
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     The index of the item that the user selected in the omnibox popup (a.k.a.
@@ -802,8 +802,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2020-10.
   </obsolete>
-  <owner>livvielin@chromium.org</owner>
-  <owner>tommycli@chromium.org</owner>
+  <owner>livvielin@monyhar.org</owner>
+  <owner>tommycli@monyhar.org</owner>
   <summary>
     Tracks whether the context menu option to prevent URL elisions in the
     omnibox is enabled. Recorded when the pref is toggled.
@@ -812,8 +812,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.Start.WantAsyncMatches" enum="Boolean"
     expires_after="2021-10-31">
-  <owner>tommycli@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>tommycli@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
   <summary>
     Whether asynchronous matches are requested. Recorded every time
     AutocompleteController::Start() is called.
@@ -829,8 +829,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.SuggestionUsed.AnswerInSuggest"
     enum="SuggestionAnswerOptionalType" expires_after="2021-10-31">
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     Counts how often omnibox suggestions are used, and in the case an Answer
@@ -842,9 +842,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.SuggestionUsed.OfferedTabMatch" enum="BooleanOffered"
     expires_after="2021-11-21">
-  <owner>gangwu@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>gangwu@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
   <summary>
     Measures whether the suggestion that was selected by the user offered a tab
     match. A tab match occurs when the URL specified by the suggestion matches
@@ -865,8 +865,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.SuggestionUsed.Pedal" enum="SuggestionPedalType"
     expires_after="2021-10-31">
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>orinj@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>orinj@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     Counts how often omnibox pedals are used and records the type (concept ID)
@@ -883,8 +883,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Omnibox.SuggestionUsed.Search.Experimental.NavigationToFirstMeaningfulPaint"
     units="ms" expires_after="2021-10-31">
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     Measures the time from navigation start to first meaningful paint. Only
@@ -895,8 +895,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Omnibox.SuggestionUsed.Search.NavigationToFirstContentfulPaint"
     units="ms" expires_after="2021-10-31">
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     Measures the time from navigation start to first contentful paint. Only
@@ -906,9 +906,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.SuggestionUsed.SelectedTabMatch"
     enum="BooleanSelected" expires_after="2021-11-21">
-  <owner>gangwu@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>gangwu@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
   <summary>
     Measures whether the suggestion that was selected by the user offered a tab
     match and specifically that the user chose the tab match over normal
@@ -936,8 +936,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Omnibox.SuggestionUsed.URL.Experimental.NavigationToFirstMeaningfulPaint"
     units="ms" expires_after="2021-10-31">
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     Measures the time from navigation start to first meaningful paint. Only
@@ -947,8 +947,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.SuggestionUsed.URL.NavigationToFirstContentfulPaint"
     units="ms" expires_after="2021-10-31">
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     Measures the time from navigation start to first contentful paint. Only
@@ -958,9 +958,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.SuggestRequest.Failure.GoogleResponseTime" units="ms"
     expires_after="2021-10-31">
-  <owner>mpearson@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>cch@chromium.org</owner>
+  <owner>mpearson@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>cch@monyhar.org</owner>
   <summary>
     The time elapsed between the sending of a suggest request to Google until
     the time the request was returned with status==failed. Ignores requests that
@@ -970,9 +970,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.SuggestRequest.Success.GoogleResponseTime" units="ms"
     expires_after="2021-10-31">
-  <owner>mpearson@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>cch@chromium.org</owner>
+  <owner>mpearson@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>cch@monyhar.org</owner>
   <summary>
     The time elapsed between the sending of a suggest request to Google until
     the time the request was returned with status==success. Ignores requests
@@ -982,8 +982,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.SuggestRequest.Success.PrefetchImagesCount"
     units="count" expires_after="2021-10-31">
-  <owner>manukh@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>manukh@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     The number of images prefetched by the search provider on retrieving a
@@ -993,9 +993,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.SuggestRequests" enum="OmniboxSuggestRequests"
     expires_after="2021-10-31">
-  <owner>mpearson@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>cch@chromium.org</owner>
+  <owner>mpearson@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>cch@monyhar.org</owner>
   <summary>
     Counts about the number of suggest requests the omnibox sent, invalidated,
     and replies received.
@@ -1004,9 +1004,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.TabMatchTime" units="microseconds"
     expires_after="2021-10-31">
-  <owner>gangwu@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>gangwu@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     This histogram reports the amount of time it takes to match one set of
@@ -1037,8 +1037,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="M94">
   <owner>yusuyoutube@google.com</owner>
   <owner>benwgold@google.com</owner>
-  <owner>fgorski@chromium.org</owner>
-  <owner>wylieb@chromium.org</owner>
+  <owner>fgorski@monyhar.org</owner>
+  <owner>wylieb@monyhar.org</owner>
   <owner>lens-chrome@google.com</owner>
   <summary>
     Logs the elapsed time between the time when user enters the Google Lens and
@@ -1073,8 +1073,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.URLNavigationScheme" enum="NavigationScheme"
     expires_after="2021-10-31">
-  <owner>mpearson@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>mpearson@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     The scheme of the destination URL for the selected omnibox suggestion. This
@@ -1096,9 +1096,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 2021-01.
   </obsolete>
-  <owner>kenjibaheux@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>kenjibaheux@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
   <summary>
     Counts the number of times that the user text is cleared. IME users are
     sometimes in the situation that IME was unintentionally turned on and failed
@@ -1118,9 +1118,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Deprecated as of 03/2021. Code is removed.
   </obsolete>
-  <owner>etienneb@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>etienneb@monyhar.org</owner>
+  <owner>mpearson@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
   <summary>
     Time it takes for the omnibox to process the first user interaction after
     startup. This measures the time it takes to start all autocomplete providers
@@ -1132,8 +1132,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.ZeroSuggest.Eligible.OnFocusV2"
     enum="ZeroSuggestEligibleOnFocus" expires_after="2021-10-31">
-  <owner>mpearson@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>mpearson@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
   <summary>
     Whether the user has settings configured so that the current page URL can be
     sent to the suggest server to request contextual suggestions. For example,
@@ -1165,8 +1165,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.ZeroSuggest.Eligible.OnProfileOpen"
     enum="BooleanSupported" expires_after="2021-10-31">
-  <owner>mpearson@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>mpearson@monyhar.org</owner>
+  <owner>jdonnelly@monyhar.org</owner>
   <summary>
     Whether the user has settings configured so that the current page URL could
     be sent to the suggest server to request contextual suggestions. For
@@ -1192,8 +1192,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Omnibox.ZeroSuggestRequests" enum="OmniboxZeroSuggestRequests"
     expires_after="2021-10-31">
-  <owner>ender@chromium.org</owner>
-  <owner>tommycli@chromium.org</owner>
+  <owner>ender@monyhar.org</owner>
+  <owner>tommycli@monyhar.org</owner>
   <owner>chrome-omnibox-team@google.com</owner>
   <summary>
     Counts about the number of zero suggest requests (requests for suggestions

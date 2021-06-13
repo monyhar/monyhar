@@ -22,7 +22,7 @@ from util import build_utils
 from util import manifest_utils
 from util import resource_utils
 
-_INCREMENTAL_APP_NAME = 'org.chromium.incrementalinstall.BootstrapApplication'
+_INCREMENTAL_APP_NAME = 'org.monyhar.incrementalinstall.BootstrapApplication'
 _META_DATA_APP_NAME = 'incremental-install-real-app'
 _DEFAULT_APPLICATION_CLASS = 'android.app.Application'
 _META_DATA_INSTRUMENTATION_NAMES = [
@@ -31,7 +31,7 @@ _META_DATA_INSTRUMENTATION_NAMES = [
 ]
 _INCREMENTAL_INSTRUMENTATION_CLASSES = [
     'android.app.Instrumentation',
-    'org.chromium.incrementalinstall.SecondInstrumentation',
+    'org.monyhar.incrementalinstall.SecondInstrumentation',
 ]
 
 

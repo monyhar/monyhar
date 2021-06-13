@@ -128,7 +128,7 @@ declare_args() {
   use_system_crash_handler = false
 
   # True to use the Chromium runtime for cast rendering.
-  enable_chromium_runtime_cast_renderer = false
+  enable_monyhar_runtime_cast_renderer = false
 
   # True to link in alternate build targets for the Cast Media Runtime.
   enable_cast_media_runtime = false
@@ -152,7 +152,7 @@ if (chromecast_branding == "public") {
 # All locales supported by Cast builds. This provides a single point of
 # reference for all GN files referencing a locales list.
 # |locales_without_pseudolocales| is declared in //build/config/locales.gni.
-# See https://chromium-review.googlesource.com/488166/ for why we can't use
+# See https://monyhar-review.googlesource.com/488166/ for why we can't use
 # pseudolocales in chromecast.
 cast_locales = locales_without_pseudolocales
 

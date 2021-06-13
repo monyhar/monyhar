@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.provider;
+package org.monyhar.chrome.browser.provider;
 
 import android.app.SearchManager;
 import android.content.Intent;
 import android.database.AbstractCursor;
 import android.database.Cursor;
 
-import org.chromium.chrome.R;
+import org.monyhar.chrome.R;
 
 /**
  * For bookmarks/history suggestions, wrap the cursor returned in one that can feed

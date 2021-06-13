@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices;
+package org.monyhar.chrome.browser.browserservices;
 
 import android.app.Notification;
 import android.os.Bundle;
@@ -48,7 +48,7 @@ public class TestTrustedWebActivityService extends TrustedWebActivityService {
     public void onCreate() {
         super.onCreate();
 
-        Token chromeTestToken = Token.create("org.chromium.chrome.tests", getPackageManager());
+        Token chromeTestToken = Token.create("org.monyhar.chrome.tests", getPackageManager());
         mTokenStore.store(chromeTestToken);
     }
 

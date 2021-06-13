@@ -46,7 +46,7 @@
 #include "net/url_request/url_fetcher.h"
 #include "services/network/public/cpp/shared_url_loader_factory.h"
 #include "services/network/public/cpp/simple_url_loader.h"
-#include "third_party/libxml/chromium/xml_writer.h"
+#include "third_party/libxml/monyhar/xml_writer.h"
 #include "url/gurl.h"
 
 #if !defined(__has_feature) || !__has_feature(objc_arc)

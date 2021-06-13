@@ -16,7 +16,7 @@ namespace image_fetcher {
 // as ImageFetcherEvent. New values should be added at the end and things
 // should not be renumbered.
 // GENERATED_JAVA_ENUM_PACKAGE: (
-// org.chromium.chrome.browser.image_fetcher)
+// org.monyhar.chrome.browser.image_fetcher)
 enum class ImageFetcherEvent {
   kImageRequest = 0,
   kCacheHit = 1,

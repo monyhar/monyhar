@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.input;
+package org.monyhar.content.browser.input;
 
 import android.text.Editable;
 import android.text.InputType;
@@ -15,11 +15,11 @@ import android.view.inputmethod.EditorInfo;
 
 import androidx.core.view.inputmethod.EditorInfoCompat;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.blink_public.web.WebTextInputFlags;
-import org.chromium.blink_public.web.WebTextInputMode;
-import org.chromium.ui.base.ime.TextInputAction;
-import org.chromium.ui.base.ime.TextInputType;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.blink_public.web.WebTextInputFlags;
+import org.monyhar.blink_public.web.WebTextInputMode;
+import org.monyhar.ui.base.ime.TextInputAction;
+import org.monyhar.ui.base.ime.TextInputType;
 
 import java.util.Locale;
 

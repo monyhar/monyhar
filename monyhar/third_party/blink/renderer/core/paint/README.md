@@ -1,6 +1,6 @@
 <!---
   The live version of this document can be viewed at:
-  https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/renderer/core/paint/README.md
+  https://monyhar.googlesource.com/monyhar/src/+/master/third_party/blink/renderer/core/paint/README.md
 -->
 
 # renderer/core/paint
@@ -15,7 +15,7 @@ implemented, see
 [the platform paint README file](../../platform/graphics/paint/README.md).
 
 This code is owned by the
-[rendering team](https://www.chromium.org/teams/rendering).
+[rendering team](https://www.monyhar.org/teams/rendering).
 
 [TOC]
 

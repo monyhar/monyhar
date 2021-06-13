@@ -33,7 +33,7 @@ class GerritCLTest(unittest.TestCase):
         }
         gerrit_cl = GerritCL(data, MockGerritAPI())
         self.assertEqual(gerrit_cl.url,
-                         'https://chromium-review.googlesource.com/638250')
+                         'https://monyhar-review.googlesource.com/638250')
 
     def test_current_revision_description(self):
         data = {
@@ -45,7 +45,7 @@ class GerritCLTest(unittest.TestCase):
                 '1': {}
             },
             'owner': {
-                'email': 'test@chromium.org'
+                'email': 'test@monyhar.org'
             },
         }
         gerrit_cl = GerritCL(data, MockGerritAPI())
@@ -74,7 +74,7 @@ class GerritCLTest(unittest.TestCase):
                     'fetch': {
                         'http': {
                             'url':
-                            'https://chromium.googlesource.com/chromium/src',
+                            'https://monyhar.googlesource.com/monyhar/src',
                             'ref':
                             'refs/changes/50/638250/1'
                         }
@@ -82,7 +82,7 @@ class GerritCLTest(unittest.TestCase):
                 }
             },
             'owner': {
-                'email': 'test@chromium.org'
+                'email': 'test@monyhar.org'
             },
         }
         gerrit_cl = GerritCL(data, MockGerritAPI())
@@ -93,7 +93,7 @@ class GerritCLTest(unittest.TestCase):
         self.assertEqual(host.executive.calls,
                          [[
                              'git', 'fetch',
-                             'https://chromium.googlesource.com/chromium/src',
+                             'https://monyhar.googlesource.com/monyhar/src',
                              'refs/changes/50/638250/1'
                          ], ['git', 'rev-parse', 'FETCH_HEAD'],
                           [
@@ -107,7 +107,7 @@ class GerritCLTest(unittest.TestCase):
             'subject': 'fake subject',
             '_number': 638250,
             'owner': {
-                'email': 'test@chromium.org'
+                'email': 'test@monyhar.org'
             },
         }
         gerrit_cl = GerritCL(data, MockGerritAPI())
@@ -129,7 +129,7 @@ class GerritCLTest(unittest.TestCase):
                 }
             },
             'owner': {
-                'email': 'test@chromium.org'
+                'email': 'test@monyhar.org'
             },
         }
         gerrit_cl = GerritCL(data, MockGerritAPI())
@@ -150,7 +150,7 @@ class GerritCLTest(unittest.TestCase):
                 }
             },
             'owner': {
-                'email': 'test@chromium.org'
+                'email': 'test@monyhar.org'
             },
         }
         gerrit_cl = GerritCL(data, MockGerritAPI())
@@ -171,7 +171,7 @@ class GerritCLTest(unittest.TestCase):
                 }
             },
             'owner': {
-                'email': 'test@chromium.org'
+                'email': 'test@monyhar.org'
             },
         }
         gerrit_cl = GerritCL(data, MockGerritAPI())
@@ -192,7 +192,7 @@ class GerritCLTest(unittest.TestCase):
                 }
             },
             'owner': {
-                'email': 'test@chromium.org'
+                'email': 'test@monyhar.org'
             },
         }
         gerrit_cl = GerritCL(data, MockGerritAPI())
@@ -213,7 +213,7 @@ class GerritCLTest(unittest.TestCase):
                 }
             },
             'owner': {
-                'email': 'test@chromium.org'
+                'email': 'test@monyhar.org'
             },
         }
         gerrit_cl = GerritCL(data, MockGerritAPI())

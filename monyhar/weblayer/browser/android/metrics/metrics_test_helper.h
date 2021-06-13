@@ -18,7 +18,7 @@ class ProfileImpl;
 using OnLogsMetricsCallback =
     base::RepeatingCallback<void(metrics::ChromeUserMetricsExtension)>;
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.weblayer_private
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.weblayer_private
 // GENERATED_JAVA_CLASS_NAME_OVERRIDE: ConsentType
 enum class ConsentType {
   kConsent,

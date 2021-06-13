@@ -198,7 +198,7 @@ void ChromeClassTester::BuildBannedLists() {
   ignored_record_names_.emplace("PluginVersionInfo");
 
   // Measured performance improvement on cc_perftests. See
-  // https://codereview.chromium.org/11299290/
+  // https://codereview.monyhar.org/11299290/
   ignored_record_names_.emplace("QuadF");
 
   // Ignore IPC::NoParams bases, since these structs are generated via

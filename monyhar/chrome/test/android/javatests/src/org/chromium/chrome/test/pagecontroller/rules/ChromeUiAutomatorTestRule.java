@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.pagecontroller.rules;
+package org.monyhar.chrome.test.pagecontroller.rules;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -11,8 +11,8 @@ import android.graphics.BitmapFactory;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 
-import org.chromium.base.Log;
-import org.chromium.chrome.test.pagecontroller.utils.UiAutomatorUtils;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.test.pagecontroller.utils.UiAutomatorUtils;
 
 import java.io.File;
 import java.io.IOException;

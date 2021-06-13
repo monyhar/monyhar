@@ -15,7 +15,7 @@
 //
 // For best practices on deciding when to emit to a histogram and what form
 // the histogram should take, see
-// https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+// https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
 // All of these macros must be called with |name| as a runtime constant - it
 // doesn't have to literally be a constant, but it must be the same string on

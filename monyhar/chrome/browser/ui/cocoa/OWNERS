@@ -1,10 +1,10 @@
-avi@chromium.org
-ccameron@chromium.org
-ellyjones@chromium.org
-lgrey@chromium.org
-mark@chromium.org
-rsesek@chromium.org
-tapted@chromium.org
-thakis@chromium.org
+avi@monyhar.org
+ccameron@monyhar.org
+ellyjones@monyhar.org
+lgrey@monyhar.org
+mark@monyhar.org
+rsesek@monyhar.org
+tapted@monyhar.org
+thakis@monyhar.org
 
 per-file hung_renderer*=file://chrome/browser/ui/hung_renderer/OWNERS

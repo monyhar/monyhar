@@ -29,7 +29,7 @@ to be called when the associated context gets frozen and unfrozen.
 
 Contains Cross-Origin Resource Sharing (CORS) related files. Some functions
 in this directory will be removed once CORS support is moved to
-//services/network. Please contact {kinuko,toyoshim}@chromium.org when you need
+//services/network. Please contact {kinuko,toyoshim}@monyhar.org when you need
 to depend on this directory from new code.
 
 ### fetch

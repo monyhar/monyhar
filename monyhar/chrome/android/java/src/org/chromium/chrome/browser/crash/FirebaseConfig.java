@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.crash;
+package org.monyhar.chrome.browser.crash;
 
-import org.chromium.build.BuildConfig;
-import org.chromium.components.version_info.Channel;
-import org.chromium.components.version_info.VersionConstants;
+import org.monyhar.build.BuildConfig;
+import org.monyhar.components.version_info.Channel;
+import org.monyhar.components.version_info.VersionConstants;
 
 /**
  * Simple class containing build specific Firebase app IDs.

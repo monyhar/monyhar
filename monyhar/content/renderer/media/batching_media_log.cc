@@ -25,7 +25,7 @@ std::string ToJSON(const media::MediaLogRecord& event) {
   return params_json;
 }
 
-// Print an event to the chromium log.
+// Print an event to the monyhar log.
 // TODO(tmathmeyer) replace this with a log-only EventHandler.
 void Log(const media::MediaLogRecord& event) {
   if (event.type == media::MediaLogRecord::Type::kMediaStatus) {

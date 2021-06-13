@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.contacts_picker;
+package org.monyhar.components.browser_ui.contacts_picker;
 
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
@@ -10,8 +10,8 @@ import android.graphics.drawable.Drawable;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.blink.mojom.ContactIconBlob;
-import org.chromium.payments.mojom.PaymentAddress;
+import org.monyhar.blink.mojom.ContactIconBlob;
+import org.monyhar.payments.mojom.PaymentAddress;
 
 import java.util.ArrayList;
 import java.util.Arrays;

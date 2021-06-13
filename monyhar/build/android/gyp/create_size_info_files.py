@@ -64,8 +64,8 @@ def _MergePakInfoFiles(merged_path, pak_infos):
 
 
 def _FullJavaNameFromClassFilePath(path):
-  # Input:  base/android/java/src/org/chromium/Foo.class
-  # Output: base.android.java.src.org.chromium.Foo
+  # Input:  base/android/java/src/org/monyhar/Foo.class
+  # Output: base.android.java.src.org.monyhar.Foo
   if not path.endswith('.class'):
     return ''
   path = os.path.splitext(path)[0]

@@ -88,7 +88,7 @@ class WinParentalControlsValue {
   // Win10 where the APIs are not fully supported and may not always accurately
   // report such state.
   //
-  // TODO(ericorth@chromium.org): Detect |logging_required| configuration,
+  // TODO(ericorth@monyhar.org): Detect |logging_required| configuration,
   // rather than just web filtering.
   static void UpdateParentalControlsFromRegistry(
       WinParentalControls* controls) {

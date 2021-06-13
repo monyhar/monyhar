@@ -43,8 +43,8 @@ from nsfw_urls import nsfw_urls
 action = None
 allow_js = False
 additional_content_shell_flags = ""
-chromium_src_root = ""
-chromium_out_dir = ""
+monyhar_src_root = ""
+monyhar_out_dir = ""
 image_diff = ""
 content_shell = ""
 output_dir = ""
@@ -62,36 +62,36 @@ def MakeDirsIfNotExist(dir):
 
 
 def SetupPathsAndOut():
-  global chromium_src_root, chromium_out_dir, output_dir
+  global monyhar_src_root, monyhar_out_dir, output_dir
   global image_diff, content_shell
-  chromium_src_root = os.path.abspath(os.path.join(os.path.dirname(__file__),
+  monyhar_src_root = os.path.abspath(os.path.join(os.path.dirname(__file__),
                                                    os.pardir,
                                                    os.pardir))
   # Find out directory (might be out_linux for users of cr).
   for out_suffix in ["_linux", ""]:
-    out_dir = os.path.join(chromium_src_root, "out" + out_suffix)
+    out_dir = os.path.join(monyhar_src_root, "out" + out_suffix)
     if os.path.exists(out_dir):
-      chromium_out_dir = out_dir
+      monyhar_out_dir = out_dir
       break
-  if not chromium_out_dir:
+  if not monyhar_out_dir:
     return False
 
   this_script_name = "real_world_impact"
-  output_dir = os.path.join(chromium_out_dir,
+  output_dir = os.path.join(monyhar_out_dir,
                             "Release",
                             this_script_name)
   MakeDirsIfNotExist(output_dir)
 
-  image_diff = os.path.join(chromium_out_dir, "Release", "image_diff")
+  image_diff = os.path.join(monyhar_out_dir, "Release", "image_diff")
 
   if sys.platform == 'darwin':
-    content_shell = os.path.join(chromium_out_dir, "Release",
+    content_shell = os.path.join(monyhar_out_dir, "Release",
                     "Content Shell.app/Contents/MacOS/Content Shell")
   elif sys.platform.startswith('linux'):
-    content_shell = os.path.join(chromium_out_dir, "Release",
+    content_shell = os.path.join(monyhar_out_dir, "Release",
                     "content_shell")
   elif sys.platform.startswith('win'):
-    content_shell = os.path.join(chromium_out_dir, "Release",
+    content_shell = os.path.join(monyhar_out_dir, "Release",
                     "content_shell.exe")
   return True
 

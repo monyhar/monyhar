@@ -16,7 +16,7 @@ namespace media {
 
 // Audio content types for volume control. Each content type has a separate
 // volume and mute state.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chromecast.media
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chromecast.media
 enum class AudioContentType {
   kMedia,          // Normal audio playback; also used for system sound effects.
   kAlarm,          // Alarm sounds.

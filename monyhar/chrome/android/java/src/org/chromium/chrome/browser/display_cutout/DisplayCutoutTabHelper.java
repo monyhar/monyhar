@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.display_cutout;
+package org.monyhar.chrome.browser.display_cutout;
 
 import android.app.Activity;
 
@@ -10,20 +10,20 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.browser.trusted.TrustedWebActivityDisplayMode;
 
-import org.chromium.base.UserData;
-import org.chromium.base.UserDataHost;
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.customtabs.BaseCustomTabActivity;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabObserver;
-import org.chromium.chrome.browser.tab.TabSelectionType;
-import org.chromium.components.browser_ui.display_cutout.DisplayCutoutController;
-import org.chromium.components.browser_ui.widget.InsetObserverView;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.WebContentsObserver;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.UserData;
+import org.monyhar.base.UserDataHost;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.customtabs.BaseCustomTabActivity;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabObserver;
+import org.monyhar.chrome.browser.tab.TabSelectionType;
+import org.monyhar.components.browser_ui.display_cutout.DisplayCutoutController;
+import org.monyhar.components.browser_ui.widget.InsetObserverView;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.WebContentsObserver;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Wraps a {@link DisplayCutoutController} for a Chrome {@link Tab}.

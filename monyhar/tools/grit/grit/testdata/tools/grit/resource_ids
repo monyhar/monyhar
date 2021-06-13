@@ -56,8 +56,8 @@
     "includes": [6500],
   },
   # WebKit.grd can be in two different places depending on whether we are
-  # in a chromium checkout or a webkit-only checkout.
-  "third_party/WebKit/Source/WebKit/chromium/WebKit.grd": {
+  # in a monyhar checkout or a webkit-only checkout.
+  "third_party/WebKit/Source/WebKit/monyhar/WebKit.grd": {
     "includes": [7000],
   },
   "WebKit.grd": {
@@ -94,7 +94,7 @@
   # Chromium strings and Google Chrome strings must start at the same id.
   # We only use one file depending on whether we're building Chromium or
   # Google Chrome.
-  "chrome/app/chromium_strings.grd": {
+  "chrome/app/monyhar_strings.grd": {
     "messages": [10000],
   },
   "chrome/app/google_chrome_strings.grd": {

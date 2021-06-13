@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.signin.test.util;
+package org.monyhar.components.signin.test.util;
 
 import org.mockito.Mockito;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.components.signin.AccountManagerFacade;
-import org.chromium.components.signin.AccountManagerFacadeProvider;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.components.signin.AccountManagerFacade;
+import org.monyhar.components.signin.AccountManagerFacadeProvider;
 
 /**
  * Util class to set java AccountManagerFacade for native tests.

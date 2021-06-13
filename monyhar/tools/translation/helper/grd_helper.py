@@ -43,7 +43,7 @@ def GetGrdMessages(grd_path_or_string, dir_path):
       stop_after=None,
       first_ids_file=None,
       debug=False,
-      defines={'_chromium': 1},
+      defines={'_monyhar': 1},
       tags_to_ignore=set(TAGS_TO_IGNORE))
   return {
       msg.attrs['name']: msg

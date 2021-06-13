@@ -95,7 +95,7 @@ ScopedJavaLocalRef<jobjectArray> CreateJavaSavePageRequests(
     JNIEnv* env,
     const std::vector<std::unique_ptr<SavePageRequest>>& requests) {
   ScopedJavaLocalRef<jclass> save_page_request_clazz = base::android::GetClass(
-      env, "org/chromium/chrome/browser/offlinepages/SavePageRequest");
+      env, "org/monyhar/chrome/browser/offlinepages/SavePageRequest");
   jobjectArray joa = env->NewObjectArray(
       requests.size(), save_page_request_clazz.obj(), nullptr);
   base::android::CheckException(env);

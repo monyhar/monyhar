@@ -1435,7 +1435,7 @@ NavigationRequest::~NavigationRequest() {
   //
   // Note: Discarding the pending NavigationEntry is done before notifying the
   // navigation finished to the observers. One class is relying on this:
-  // org.chromium.chrome.browser.toolbar.ToolbarManager
+  // org.monyhar.chrome.browser.toolbar.ToolbarManager
   pending_entry_ref_.reset();
 
 #if defined(OS_ANDROID)
@@ -6204,7 +6204,7 @@ void NavigationRequest::ComputeSandboxFlagsToCommit(bool for_error) {
 void NavigationRequest::CheckStateTransition(NavigationState state) const {
 #if DCHECK_IS_ON()
   // See
-  // https://chromium.googlesource.com/chromium/src/+/HEAD/docs/navigation-request-navigation-state.png
+  // https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/navigation-request-navigation-state.png
   // clang-format off
   static const base::NoDestructor<StateTransitions<NavigationState>>
       transitions(StateTransitions<NavigationState>({

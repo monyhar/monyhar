@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share;
+package org.monyhar.chrome.browser.share;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.url.GURL;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.url.GURL;
 
 /**
  *  A collection of helper functions for sharing in a non static context.

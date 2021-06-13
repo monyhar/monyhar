@@ -24,7 +24,7 @@ std::string GetBaseDesktopName() {
 #if BUILDFLAG(GOOGLE_CHROME_BRANDING)
   return "google-chrome-service.desktop";
 #else  // BUILDFLAG(CHROMIUM_BRANDING)
-  return "chromium-service.desktop";
+  return "monyhar-service.desktop";
 #endif
 }
 }  // namespace

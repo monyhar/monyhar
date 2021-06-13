@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.translate;
+package org.monyhar.components.translate;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -18,8 +18,8 @@ import androidx.annotation.NonNull;
 
 import com.google.android.material.tabs.TabLayout;
 
-import org.chromium.base.StrictModeContext;
-import org.chromium.components.browser_ui.widget.animation.Interpolators;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.components.browser_ui.widget.animation.Interpolators;
 
 /**
  * TabLayout shown in the TranslateCompactInfoBar.

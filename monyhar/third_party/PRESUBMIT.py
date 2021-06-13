@@ -39,7 +39,7 @@ def LicenseIsCompatibleWithAndroid(input_api, license):
 
 def _CheckThirdPartyReadmesUpdated(input_api, output_api):
   """
-  Checks to make sure that README.chromium files are properly updated
+  Checks to make sure that README.monyhar files are properly updated
   when dependencies in third_party are modified.
   """
   readmes = []
@@ -67,12 +67,12 @@ def _CheckThirdPartyReadmesUpdated(input_api, output_api):
         not local_path.startswith('third_party' + input_api.os_path.sep +
                                   'webxr_test_pages' + input_api.os_path.sep)):
       files.append(f)
-      if local_path.endswith("README.chromium"):
+      if local_path.endswith("README.monyhar"):
         readmes.append(f)
   if files and not readmes:
     errors.append(output_api.PresubmitPromptWarning(
        'When updating or adding third party code the appropriate\n'
-       '\'README.chromium\' file should also be updated with the correct\n'
+       '\'README.monyhar\' file should also be updated with the correct\n'
        'version and package information.', files))
   if not readmes:
     return errors
@@ -110,27 +110,27 @@ def _CheckThirdPartyReadmesUpdated(input_api, output_api):
       errors.append(output_api.PresubmitError(
         'Third party README files should contain either a \'Short Name\' or\n'
         'a \'Name\' which is the name under which the package is\n'
-        'distributed. Check README.chromium.template for details.',
+        'distributed. Check README.monyhar.template for details.',
         [f]))
     if not version_pattern.search(contents):
       errors.append(output_api.PresubmitError(
         'Third party README files should contain a \'Version\' field.\n'
         'If the package is not versioned or the version is not known\n'
         'list the version as \'unknown\'.\n'
-        'Check README.chromium.template for details.',
+        'Check README.monyhar.template for details.',
         [f]))
     if not release_pattern.search(contents):
       errors.append(output_api.PresubmitError(
         'Third party README files should contain a \'Security Critical\'\n'
         'field. This field specifies whether the package is built with\n'
-        'Chromium. Check README.chromium.template for details.',
+        'Chromium. Check README.monyhar.template for details.',
         [f]))
     license_match = license_pattern.search(contents)
     if not license_match:
       errors.append(output_api.PresubmitError(
         'Third party README files should contain a \'License\' field.\n'
         'This field specifies the license used by the package. Check\n'
-        'README.chromium.template for details.',
+        'README.monyhar.template for details.',
         [f]))
     not_shipped_match = not_shipped_pattern.search(contents)
     android_compatible_match = (
@@ -141,7 +141,7 @@ def _CheckThirdPartyReadmesUpdated(input_api, output_api):
         'Cannot determine whether specified license is compatible with\n' +
         'the Android licensing requirements. Please check that the license\n' +
         'name is spelled according to third_party/PRESUBMIT.py. Please see\n' +
-        'README.chromium.template for details.',
+        'README.monyhar.template for details.',
         [f]))
   return errors
 

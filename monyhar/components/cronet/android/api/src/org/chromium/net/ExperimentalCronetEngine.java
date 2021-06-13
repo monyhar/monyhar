@@ -1,7 +1,7 @@
 // Copyright 2016 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.net;
+package org.monyhar.net;
 
 import android.content.Context;
 
@@ -260,7 +260,7 @@ public abstract class ExperimentalCronetEngine extends CronetEngine {
      * Once logging has stopped {@link #stopNetLog}, the data will be written
      * to netlog.json in {@code dirPath}. If logging is interrupted, you can
      * stitch the files found in .inprogress subdirectory manually using:
-     * https://chromium.googlesource.com/chromium/src/+/main/net/tools/stitch_net_log_files.py.
+     * https://monyhar.googlesource.com/monyhar/src/+/main/net/tools/stitch_net_log_files.py.
      * The log can be viewed using a Chrome browser navigated to chrome://net-internals/#import.
      * @param dirPath the directory where the netlog.json file will be created. dirPath must
      *            already exist. NetLog files must not exist in the directory. If actively

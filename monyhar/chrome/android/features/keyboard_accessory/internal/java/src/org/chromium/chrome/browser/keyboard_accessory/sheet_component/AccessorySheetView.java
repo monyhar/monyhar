@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.keyboard_accessory.sheet_component;
+package org.monyhar.chrome.browser.keyboard_accessory.sheet_component;
 
-import static org.chromium.ui.base.LocalizationUtils.isLayoutRtl;
+import static org.monyhar.ui.base.LocalizationUtils.isLayoutRtl;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -15,7 +15,7 @@ import android.widget.ImageView;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import org.chromium.chrome.browser.keyboard_accessory.R;
+import org.monyhar.chrome.browser.keyboard_accessory.R;
 
 /**
  * Displays the data provided by the {@link AccessorySheetViewBinder}.

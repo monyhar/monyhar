@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.init;
+package org.monyhar.chrome.browser.init;
 
 import android.app.Activity;
 import android.content.Context;
 import android.view.View;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.chrome.browser.multiwindow.MultiWindowUtils;
-import org.chromium.ui.base.ActivityKeyboardVisibilityDelegate;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.chrome.browser.multiwindow.MultiWindowUtils;
+import org.monyhar.ui.base.ActivityKeyboardVisibilityDelegate;
 
 import java.lang.ref.WeakReference;
 

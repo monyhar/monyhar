@@ -33,7 +33,7 @@ namespace arc {
 
 namespace {
 
-constexpr char kArcUrl[] = "content://org.chromium.foo/bar";
+constexpr char kArcUrl[] = "content://org.monyhar.foo/bar";
 constexpr char kData[] = "abcdef";
 constexpr char kMimeType[] = "application/octet-stream";
 

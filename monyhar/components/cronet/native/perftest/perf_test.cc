@@ -406,7 +406,7 @@ void PerfTest(const char* json_args) {
   base::AtExitManager exit_manager;
 
   // Initialize the benchmark environment. See
-  // https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/threading_and_tasks_testing.md#full-fledged-base_test_taskenvironment
+  // https://monyhar.googlesource.com/monyhar/src/+/refs/heads/main/docs/threading_and_tasks_testing.md#full-fledged-base_test_taskenvironment
   // for more details.
   base::test::TaskEnvironment task_environment;
 

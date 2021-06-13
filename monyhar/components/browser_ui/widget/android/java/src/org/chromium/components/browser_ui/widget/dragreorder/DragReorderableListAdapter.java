@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.dragreorder;
+package org.monyhar.components.browser_ui.widget.dragreorder;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -16,9 +16,9 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.ObserverList;
-import org.chromium.components.browser_ui.widget.R;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.ObserverList;
+import org.monyhar.components.browser_ui.widget.R;
 
 import java.util.Collections;
 import java.util.List;

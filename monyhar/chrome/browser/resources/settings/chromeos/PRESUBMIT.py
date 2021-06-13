@@ -32,8 +32,8 @@ def _CheckSemanticColors(input_api, output_api):
             'Please avoid using paper-colors and google-refresh-colors on ' +
             'Chrome OS.\n' + 'Allowed colors are listed in ' +
             'ui/webui/resources/css/cros_palette.json5.\n' +
-            'See https://crbug.com/1062154 or contact calamity@chromium.org ' +
-            'or ortuno@chromium.org for more information.',
+            'See https://crbug.com/1062154 or contact calamity@monyhar.org ' +
+            'or ortuno@monyhar.org for more information.',
             items=problems)
     ]
 

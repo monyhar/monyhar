@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.layouts.eventfilter;
+package org.monyhar.chrome.browser.compositor.layouts.eventfilter;
 
 import android.content.Context;
 import android.view.MotionEvent;
 
-import org.chromium.chrome.browser.layouts.EventFilter;
+import org.monyhar.chrome.browser.layouts.EventFilter;
 
 /**
  * A {@link BlackHoleEventFilter} eats all the events coming its way with no side effects.

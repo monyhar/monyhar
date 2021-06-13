@@ -23,7 +23,7 @@ import page_sets
 from benchmarks import press
 
 
-@benchmark.Info(emails=['hablich@chromium.org'],
+@benchmark.Info(emails=['hablich@monyhar.org'],
                 component='Blink>JavaScript')
 class Jetstream(press._PressBenchmark): # pylint: disable=protected-access
   @classmethod

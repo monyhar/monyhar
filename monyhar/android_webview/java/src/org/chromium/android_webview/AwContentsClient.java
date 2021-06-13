@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview;
+package org.monyhar.android_webview;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -22,16 +22,16 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.android_webview.permission.AwPermissionRequest;
-import org.chromium.android_webview.safe_browsing.AwSafeBrowsingResponse;
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.ScopedSysTraceEvent;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.components.embedder_support.util.WebResourceResponseInfo;
-import org.chromium.content_public.common.ContentUrlConstants;
+import org.monyhar.android_webview.permission.AwPermissionRequest;
+import org.monyhar.android_webview.safe_browsing.AwSafeBrowsingResponse;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.ScopedSysTraceEvent;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.embedder_support.util.WebResourceResponseInfo;
+import org.monyhar.content_public.common.ContentUrlConstants;
 
 import java.security.Principal;
 import java.util.HashMap;
@@ -157,7 +157,7 @@ public abstract class AwContentsClient {
     }
 
     /**
-     * Allow default implementations in chromium code.
+     * Allow default implementations in monyhar code.
      */
     public abstract boolean hasWebViewClient();
 

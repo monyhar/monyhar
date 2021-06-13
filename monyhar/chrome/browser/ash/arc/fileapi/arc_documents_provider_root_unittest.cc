@@ -82,7 +82,7 @@ struct RootSpec {
 //     dup.mp4       video/mp4   dup3-id
 //     dup.mp4       video/mp4   dup4-id
 //   ro-dir/         dir         ro-dir-id     // Read-only directory
-constexpr char kAuthority[] = "org.chromium.test";
+constexpr char kAuthority[] = "org.monyhar.test";
 
 // DocumentSpecs
 constexpr DocumentSpec kRootSpec{
@@ -222,9 +222,9 @@ FakeRoot ToRoot(const RootSpec& spec) {
 
 std::vector<FakeFile> AllFiles() {
   return {
-      FakeFile("content://org.chromium.test/document/size-file-id", "01234",
+      FakeFile("content://org.monyhar.test/document/size-file-id", "01234",
                "image/jpeg", FakeFile::Seekable::YES, -1),
-      FakeFile("content://org.chromium.test/document/size-pipe-id", "01234",
+      FakeFile("content://org.monyhar.test/document/size-pipe-id", "01234",
                "image/jpeg", FakeFile::Seekable::NO, -1),
   };
 }
@@ -1437,7 +1437,7 @@ TEST_F(ArcDocumentsProviderRootTest, ResolveToContentUrl) {
       base::BindOnce(
           [](base::RunLoop* run_loop, const GURL& url) {
             run_loop->Quit();
-            EXPECT_EQ(GURL("content://org.chromium.test/document/photo-id"),
+            EXPECT_EQ(GURL("content://org.monyhar.test/document/photo-id"),
                       url);
           },
           &run_loop));
@@ -1451,7 +1451,7 @@ TEST_F(ArcDocumentsProviderRootTest, ResolveToContentUrlRoot) {
       base::BindOnce(
           [](base::RunLoop* run_loop, const GURL& url) {
             run_loop->Quit();
-            EXPECT_EQ(GURL("content://org.chromium.test/document/root-id"),
+            EXPECT_EQ(GURL("content://org.monyhar.test/document/root-id"),
                       url);
           },
           &run_loop));
@@ -1479,7 +1479,7 @@ TEST_F(ArcDocumentsProviderRootTest, ResolveToContentUrlDups) {
       base::BindOnce(
           [](base::RunLoop* run_loop, const GURL& url) {
             run_loop->Quit();
-            EXPECT_EQ(GURL("content://org.chromium.test/document/dup3-id"),
+            EXPECT_EQ(GURL("content://org.monyhar.test/document/dup3-id"),
                       url);
           },
           &run_loop));

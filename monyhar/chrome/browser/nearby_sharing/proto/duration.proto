@@ -29,7 +29,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // Copied from
-// https://source.chromium.org/chromium/chromium/src/+/main:third_party/protobuf/src/google/protobuf/duration.proto;drc=f348ad39feaf27a5d557fcd8b309ba43410dfedd
+// https://source.monyhar.org/monyhar/monyhar/src/+/main:third_party/protobuf/src/google/protobuf/duration.proto;drc=f348ad39feaf27a5d557fcd8b309ba43410dfedd
 
 syntax = "proto3";
 

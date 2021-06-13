@@ -11,7 +11,7 @@ namespace content {
 // independent from visibility of its WebContents.
 // Values are listed in increasing importance.
 //
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.content_public.browser
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.content_public.browser
 enum class ChildProcessImportance {
   // NORMAL is the default value.
   NORMAL = 0,

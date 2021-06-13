@@ -81,7 +81,7 @@ constexpr net::NetworkTrafficAnnotationTag kCleanerReportTrafficAnnotation =
               "replaced with generic strings, but it is possible some metadata "
               "may contain personally identifiable information. The complete "
               "data specification is at "
-              "https://cs.chromium.org/chromium/src/chrome/chrome_cleaner/logging/proto/chrome_cleaner_report.proto."
+              "https://cs.monyhar.org/monyhar/src/chrome/chrome_cleaner/logging/proto/chrome_cleaner_report.proto."
             destination: GOOGLE_OWNED_SERVICE
           }
           policy {

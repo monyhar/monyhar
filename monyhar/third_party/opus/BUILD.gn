@@ -191,8 +191,8 @@ if (use_opus_x86_optimization) {
       "src/silk/x86/VQ_WMat_EC_sse4_1.c",
     ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs += [
       ":opus_private_config",
       ":opus_config",
@@ -379,9 +379,9 @@ static_library("opus") {
     "src/src/tansig_table.h",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":opus_private_config",
   ]
   public_configs = [ ":opus_config" ]
@@ -530,9 +530,9 @@ static_library("opus") {
 executable("opus_compare") {
   sources = [ "src/src/opus_compare.c" ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":opus_test_config",
   ]
 
@@ -545,9 +545,9 @@ executable("opus_compare") {
 executable("opus_demo") {
   sources = [ "src/src/opus_demo.c" ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":opus_test_config",
   ]
 
@@ -560,9 +560,9 @@ executable("opus_demo") {
 test("test_opus_api") {
   sources = [ "src/tests/test_opus_api.c" ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":opus_test_config",
     ":opus_test_no_nonnull_config",
   ]
@@ -576,9 +576,9 @@ test("test_opus_encode") {
     "src/tests/test_opus_encode.c",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":opus_test_config",
   ]
 
@@ -588,9 +588,9 @@ test("test_opus_encode") {
 test("test_opus_decode") {
   sources = [ "src/tests/test_opus_decode.c" ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":opus_test_config",
     ":opus_test_no_nonnull_config",
   ]
@@ -601,9 +601,9 @@ test("test_opus_decode") {
 test("test_opus_padding") {
   sources = [ "src/tests/test_opus_padding.c" ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     ":opus_test_config",
   ]
 

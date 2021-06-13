@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tabbed_mode;
+package org.monyhar.chrome.browser.tabbed_mode;
 
 import android.os.Build;
 import android.view.Window;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.base.supplier.OneshotSupplier;
-import org.chromium.chrome.browser.compositor.layouts.OverviewModeBehavior;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.base.supplier.OneshotSupplier;
+import org.monyhar.chrome.browser.compositor.layouts.OverviewModeBehavior;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
 
 /**
  * A UI coordinator that manages the system status bar and bottom navigation bar for

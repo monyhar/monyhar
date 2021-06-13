@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments;
+package org.monyhar.chrome.browser.payments;
 
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageInfo;
@@ -20,21 +20,21 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Batch;
-import org.chromium.chrome.test.ChromeBrowserTestRule;
-import org.chromium.components.payments.PackageManagerDelegate;
-import org.chromium.components.payments.PaymentManifestDownloader;
-import org.chromium.components.payments.PaymentManifestParser;
-import org.chromium.components.payments.PaymentManifestVerifier;
-import org.chromium.components.payments.PaymentManifestVerifier.ManifestVerifyCallback;
-import org.chromium.components.payments.PaymentManifestWebDataService;
-import org.chromium.components.payments.PaymentManifestWebDataService.PaymentManifestWebDataServiceCallback;
-import org.chromium.components.payments.WebAppManifestSection;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.test.NativeLibraryTestUtils;
-import org.chromium.url.GURL;
-import org.chromium.url.Origin;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.chrome.test.ChromeBrowserTestRule;
+import org.monyhar.components.payments.PackageManagerDelegate;
+import org.monyhar.components.payments.PaymentManifestDownloader;
+import org.monyhar.components.payments.PaymentManifestParser;
+import org.monyhar.components.payments.PaymentManifestVerifier;
+import org.monyhar.components.payments.PaymentManifestVerifier.ManifestVerifyCallback;
+import org.monyhar.components.payments.PaymentManifestWebDataService;
+import org.monyhar.components.payments.PaymentManifestWebDataService.PaymentManifestWebDataServiceCallback;
+import org.monyhar.components.payments.WebAppManifestSection;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.test.NativeLibraryTestUtils;
+import org.monyhar.url.GURL;
+import org.monyhar.url.Origin;
 
 import java.util.HashSet;
 import java.util.Set;

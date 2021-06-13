@@ -15,7 +15,7 @@
 //
 // For best practices on deciding when to emit to a histogram and what form
 // the histogram should take, see
-// https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+// https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
 // Functions for recording UMA histograms. These can be used for cases
 // when the histogram name is generated at runtime. The functionality is

@@ -5,7 +5,7 @@
 import("//build/config/android/rules.gni")
 
 android_library("java") {
-  sources = [ "android/java/src/org/chromium/chrome/browser/settings/ChromeManagedPreferenceDelegate.java" ]
+  sources = [ "android/java/src/org/monyhar/chrome/browser/settings/ChromeManagedPreferenceDelegate.java" ]
   deps = [
     "//chrome/browser/preferences:java",
     "//chrome/browser/profiles/android:java",
@@ -20,10 +20,10 @@ android_library("javatests") {
   testonly = true
 
   sources = [
-    "android/java/src/org/chromium/chrome/browser/settings/ChromeBasePreferenceTest.java",
-    "android/java/src/org/chromium/chrome/browser/settings/ChromeImageViewPreferenceTest.java",
-    "android/java/src/org/chromium/chrome/browser/settings/DummySettingsForTest.java",
-    "android/java/src/org/chromium/chrome/browser/settings/ManagedPreferencesUtilsTest.java",
+    "android/java/src/org/monyhar/chrome/browser/settings/ChromeBasePreferenceTest.java",
+    "android/java/src/org/monyhar/chrome/browser/settings/ChromeImageViewPreferenceTest.java",
+    "android/java/src/org/monyhar/chrome/browser/settings/DummySettingsForTest.java",
+    "android/java/src/org/monyhar/chrome/browser/settings/ManagedPreferencesUtilsTest.java",
   ]
 
   deps = [
@@ -49,7 +49,7 @@ android_library("javatests") {
 android_library("test_support_java") {
   testonly = true
 
-  sources = [ "android/java/src/org/chromium/chrome/browser/settings/SettingsActivityTestRule.java" ]
+  sources = [ "android/java/src/org/monyhar/chrome/browser/settings/SettingsActivityTestRule.java" ]
 
   deps = [
     "//base:base_java",

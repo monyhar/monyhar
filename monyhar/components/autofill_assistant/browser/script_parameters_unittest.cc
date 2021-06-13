@@ -89,7 +89,7 @@ TEST(ScriptParametersTest, TriggerScriptAllowList) {
 TEST(ScriptParametersTest, SpecialScriptParameters) {
   ScriptParameters parameters = {
       {{"ENABLED", "true"},
-       {"USER_EMAIL", "example@chromium.org"},
+       {"USER_EMAIL", "example@monyhar.org"},
        {"ORIGINAL_DEEPLINK", "https://www.example.com"},
        {"TRIGGER_SCRIPT_EXPERIMENT", "true"},
        {"START_IMMEDIATELY", "false"},
@@ -109,7 +109,7 @@ TEST(ScriptParametersTest, SpecialScriptParameters) {
        {"DETAILS_TOTAL_PRICE", "12"}}};
 
   EXPECT_THAT(parameters.GetEnabled(), Eq(true));
-  EXPECT_THAT(parameters.GetCallerEmail(), Eq("example@chromium.org"));
+  EXPECT_THAT(parameters.GetCallerEmail(), Eq("example@monyhar.org"));
   EXPECT_THAT(parameters.GetOriginalDeeplink(), Eq("https://www.example.com"));
   EXPECT_THAT(parameters.GetTriggerScriptExperiment(), Eq(true));
   EXPECT_THAT(parameters.GetStartImmediately(), Eq(false));

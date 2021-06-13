@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.input;
+package org.monyhar.content.browser.input;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -31,34 +31,34 @@ import android.view.inputmethod.InputMethodManager;
 import androidx.annotation.VisibleForTesting;
 import androidx.core.view.inputmethod.EditorInfoCompat;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.TraceEvent;
-import org.chromium.base.UserData;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.blink.mojom.EventType;
-import org.chromium.blink.mojom.FocusType;
-import org.chromium.blink_public.web.WebInputEventModifier;
-import org.chromium.blink_public.web.WebTextInputMode;
-import org.chromium.content.browser.WindowEventObserver;
-import org.chromium.content.browser.WindowEventObserverManager;
-import org.chromium.content.browser.picker.InputDialogContainer;
-import org.chromium.content.browser.webcontents.WebContentsImpl;
-import org.chromium.content.browser.webcontents.WebContentsImpl.UserDataFactory;
-import org.chromium.content_public.browser.ImeAdapter;
-import org.chromium.content_public.browser.ImeEventObserver;
-import org.chromium.content_public.browser.InputMethodManagerWrapper;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.ViewAndroidDelegate;
-import org.chromium.ui.base.ViewUtils;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.base.ime.TextInputAction;
-import org.chromium.ui.base.ime.TextInputType;
-import org.chromium.ui.mojom.VirtualKeyboardPolicy;
-import org.chromium.ui.mojom.VirtualKeyboardVisibilityRequest;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.TraceEvent;
+import org.monyhar.base.UserData;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.blink.mojom.EventType;
+import org.monyhar.blink.mojom.FocusType;
+import org.monyhar.blink_public.web.WebInputEventModifier;
+import org.monyhar.blink_public.web.WebTextInputMode;
+import org.monyhar.content.browser.WindowEventObserver;
+import org.monyhar.content.browser.WindowEventObserverManager;
+import org.monyhar.content.browser.picker.InputDialogContainer;
+import org.monyhar.content.browser.webcontents.WebContentsImpl;
+import org.monyhar.content.browser.webcontents.WebContentsImpl.UserDataFactory;
+import org.monyhar.content_public.browser.ImeAdapter;
+import org.monyhar.content_public.browser.ImeEventObserver;
+import org.monyhar.content_public.browser.InputMethodManagerWrapper;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.ViewAndroidDelegate;
+import org.monyhar.ui.base.ViewUtils;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.base.ime.TextInputAction;
+import org.monyhar.ui.base.ime.TextInputType;
+import org.monyhar.ui.mojom.VirtualKeyboardPolicy;
+import org.monyhar.ui.mojom.VirtualKeyboardVisibilityRequest;
 
 import java.lang.ref.WeakReference;
 import java.lang.reflect.InvocationTargetException;

@@ -37,7 +37,7 @@ const char kAdviseOnGclientSolution[] =
     "You also need to add this solution to your .gclient:\n"
     "{\n"
     "  \"name\"        : \"webrtc.DEPS\",\n"
-    "  \"url\"         : \"https://chromium.googlesource.com/chromium/deps/"
+    "  \"url\"         : \"https://monyhar.googlesource.com/monyhar/deps/"
     "webrtc/webrtc.DEPS\",\n"
     "}\n"
     "and run gclient sync. This will download the required ref files.";

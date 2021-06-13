@@ -358,28 +358,28 @@ bool SizedFormatAvailable(const FeatureInfo* feature_info,
     return true;
   }
 
-  if ((feature_info->feature_flags().chromium_image_ycbcr_420v &&
+  if ((feature_info->feature_flags().monyhar_image_ycbcr_420v &&
        internal_format == GL_RGB_YCBCR_420V_CHROMIUM) ||
-      (feature_info->feature_flags().chromium_image_ycbcr_p010 &&
+      (feature_info->feature_flags().monyhar_image_ycbcr_p010 &&
        internal_format == GL_RGB_YCBCR_P010_CHROMIUM) ||
-      (feature_info->feature_flags().chromium_image_ycbcr_422 &&
+      (feature_info->feature_flags().monyhar_image_ycbcr_422 &&
        internal_format == GL_RGB_YCBCR_422_CHROMIUM)) {
     return true;
   }
 
   if (internal_format == GL_RGB10_A2_EXT &&
-      (feature_info->feature_flags().chromium_image_ar30 ||
-       feature_info->feature_flags().chromium_image_ab30)) {
+      (feature_info->feature_flags().monyhar_image_ar30 ||
+       feature_info->feature_flags().monyhar_image_ab30)) {
     return true;
   }
 
   // TODO(dshwang): check if it's possible to remove
   // CHROMIUM_color_buffer_float_rgb. crbug.com/329605
-  if (feature_info->feature_flags().chromium_color_buffer_float_rgb &&
+  if (feature_info->feature_flags().monyhar_color_buffer_float_rgb &&
       internal_format == GL_RGB32F) {
     return true;
   }
-  if (feature_info->feature_flags().chromium_color_buffer_float_rgba &&
+  if (feature_info->feature_flags().monyhar_color_buffer_float_rgba &&
       internal_format == GL_RGBA32F) {
     return true;
   }

@@ -6,7 +6,7 @@ import("//build/config/dcheck_always_on.gni")
 import("//build/config/sanitizers/sanitizers.gni")
 import("//testing/libfuzzer/fuzzer_test.gni")
 import("//third_party/protobuf/proto_library.gni")
-import("//third_party/sqlite/sqlite_chromium_configuration_flags.gni")
+import("//third_party/sqlite/sqlite_monyhar_configuration_flags.gni")
 import("//third_party/sqlite/sqlite_common_configuration_flags.gni")
 import("//third_party/sqlite/sqlite_dev_configuration_flags.gni")
 
@@ -106,10 +106,10 @@ config("common_sqlite3_compile_options") {
 }
 
 # These options add SQLite features that we need in Chrome.
-config("chromium_sqlite3_compile_options") {
+config("monyhar_sqlite3_compile_options") {
   configs = [ ":common_sqlite3_compile_options" ]
 
-  defines = sqlite_chromium_configuration_flags
+  defines = sqlite_monyhar_configuration_flags
 }
 
 # These options add SQLite features that we need in developer tools.
@@ -162,7 +162,7 @@ config("sqlite_warnings") {
 }
 
 # Naming the library "sqlite3" can cause conflicts with the system library.
-component("chromium_sqlite3") {
+component("monyhar_sqlite3") {
   visibility = [ ":*" ]
 
   public = [ "sqlite3.h" ]
@@ -216,13 +216,13 @@ component("chromium_sqlite3") {
     "src/amalgamation",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    ":chromium_sqlite3_compile_options",
-    "//build/config/compiler:no_chromium_code",
+    ":monyhar_sqlite3_compile_options",
+    "//build/config/compiler:no_monyhar_code",
     "//build/config/sanitizers:cfi_icall_generalize_pointers",
 
-    # Must be after no_chromium_code for warning flags to be ordered correctly.
+    # Must be after no_monyhar_code for warning flags to be ordered correctly.
     ":sqlite_warnings",
   ]
 
@@ -241,7 +241,7 @@ component("chromium_sqlite3") {
   deps = [ "//third_party/icu" ]
 }
 
-# Similar to component("chromium_sqlite") above, but uses the developer tools
+# Similar to component("monyhar_sqlite") above, but uses the developer tools
 # options at config("dev_sqlite3_compile_options").
 component("dev_sqlite3") {
   visibility = [ ":*" ]
@@ -297,13 +297,13 @@ component("dev_sqlite3") {
     "src/amalgamation_dev",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
     ":dev_sqlite3_compile_options",
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     "//build/config/sanitizers:cfi_icall_generalize_pointers",
 
-    # Must be after no_chromium_code for warning flags to be ordered correctly.
+    # Must be after no_monyhar_code for warning flags to be ordered correctly.
     ":sqlite_warnings",
   ]
 
@@ -331,9 +331,9 @@ config("sqlite_export") {
 # This is used to allow the SQLITE_API definition to be different when
 # building sqlite3.c than it is when clients include sqlite3.h.
 group("sqlite") {
-  public_deps = [ ":chromium_sqlite3" ]
+  public_deps = [ ":monyhar_sqlite3" ]
   public_configs = [
-    ":chromium_sqlite3_compile_options",
+    ":monyhar_sqlite3_compile_options",
     ":sqlite_export",
   ]
 }
@@ -367,12 +367,12 @@ if (is_win || is_mac || is_linux || is_chromeos) {
       "//third_party/icu",
     ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
     configs += [
-      ":chromium_sqlite3_compile_options",
-      "//build/config/compiler:no_chromium_code",
+      ":monyhar_sqlite3_compile_options",
+      "//build/config/compiler:no_monyhar_code",
 
-      # Must be after no_chromium_code for warning flags to be ordered
+      # Must be after no_monyhar_code for warning flags to be ordered
       # correctly.
       ":sqlite_warnings",
     ]
@@ -400,12 +400,12 @@ if (is_win || is_mac || is_linux || is_chromeos) {
       "//third_party/icu",
     ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
     configs += [
       ":dev_sqlite3_compile_options",
-      "//build/config/compiler:no_chromium_code",
+      "//build/config/compiler:no_monyhar_code",
 
-      # Must be after no_chromium_code for warning flags to be ordered
+      # Must be after no_monyhar_code for warning flags to be ordered
       # correctly.
       ":sqlite_warnings",
     ]
@@ -431,11 +431,11 @@ source_set("sqlite3_lpm_fuzzer_core") {
   public_deps = [ ":sqlite3_lpm_fuzzer_input" ]
   configs += [
     ":sqlite_warnings",
-    ":chromium_sqlite3_compile_options",
+    ":monyhar_sqlite3_compile_options",
   ]
   all_dependent_configs = [
     ":lpm_fuzzer_omit_non_websql",
-    ":chromium_sqlite3_compile_options",
+    ":monyhar_sqlite3_compile_options",
   ]
 }
 

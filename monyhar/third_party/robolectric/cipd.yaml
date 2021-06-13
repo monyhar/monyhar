@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml
-package: chromium/third_party/robolectric
+package: monyhar/third_party/robolectric
 description: robolectric modified Android SDKs
 data:
   - file: lib/android-all-4.4_r1-robolectric-r2.jar

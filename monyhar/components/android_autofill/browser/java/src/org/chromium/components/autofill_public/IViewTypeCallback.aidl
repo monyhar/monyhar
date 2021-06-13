@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.autofill_public;
+package org.monyhar.components.autofill_public;
 
 import android.os.Bundle;
 
-import org.chromium.components.autofill_public.ViewType;
+import org.monyhar.components.autofill_public.ViewType;
 
 /**
  * The interface for AutofillHintsService to provide the type of view.

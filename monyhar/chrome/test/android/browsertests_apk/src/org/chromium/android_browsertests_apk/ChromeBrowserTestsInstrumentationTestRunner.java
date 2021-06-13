@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_browsertests_apk;
+package org.monyhar.android_browsertests_apk;
 
 import android.content.Intent;
 import android.net.Uri;
 
-import org.chromium.build.gtest_apk.NativeTestInstrumentationTestRunner;
-import org.chromium.content_public.common.ContentUrlConstants;
+import org.monyhar.build.gtest_apk.NativeTestInstrumentationTestRunner;
+import org.monyhar.content_public.common.ContentUrlConstants;
 
 /**
  * An Instrumentation for android_browsertests that includes chrome:blank in the intent.

@@ -14,6 +14,6 @@ Used for providing data to the Device Orientation API implementation.
 
 Local Modifications:
 The code was rewritten to follow Chromium code standards and practices
-(see the original code review at http://codereview.chromium.org/3169040/show)
+(see the original code review at http://codereview.monyhar.org/3169040/show)
 and completely new research was done on every mac laptop to obtain orientation
 information.

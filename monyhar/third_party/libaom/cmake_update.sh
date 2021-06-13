@@ -88,11 +88,11 @@ function update_readme {
   sed -E -i.bak \
     -e "s/^(Date:)[[:space:]]+.*$/\1 ${vals[0]}/" \
     -e "s/^(Commit:)[[:space:]]+[a-f0-9]{40}/\1 ${vals[1]}/" \
-    ${BASE}/README.chromium
-  rm ${BASE}/README.chromium.bak
+    ${BASE}/README.monyhar
+  rm ${BASE}/README.monyhar.bak
   cat <<EOF
 
-README.chromium updated with:
+README.monyhar updated with:
 Date: ${vals[0]}
 Commit: ${vals[1]}
 EOF

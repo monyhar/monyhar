@@ -18,7 +18,7 @@ namespace content {
 // example EXCEPTION_ACCESS_VIOLATION value is 0xC0000005.
 //
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.content_public.common
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.content_public.common
 //
 // IMPORTANT: This needs to stay in sync with <enum name="CrashExitCodes"> and
 // <enum name="WindowsExitCode"> in tools/metrics/histograms/enums.xml. Due to

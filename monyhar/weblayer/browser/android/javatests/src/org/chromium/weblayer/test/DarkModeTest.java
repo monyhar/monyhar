@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer.test;
+package org.monyhar.weblayer.test;
 
 import android.os.Bundle;
 
@@ -14,9 +14,9 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.weblayer.DarkModeStrategy;
-import org.chromium.weblayer.shell.InstrumentationActivity;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.weblayer.DarkModeStrategy;
+import org.monyhar.weblayer.shell.InstrumentationActivity;
 
 /**
  * Tests that dark mode is handled correctly.

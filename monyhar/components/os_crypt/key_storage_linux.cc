@@ -151,7 +151,7 @@ std::unique_ptr<KeyStorageLinux> KeyStorageLinux::CreateServiceInternal(
 #if BUILDFLAG(GOOGLE_CHROME_BRANDING)
   static const base::NoDestructor<std::string> kDefaultApplicationName("chrome");
 #else
-  static const base::NoDestructor<std::string> kDefaultApplicationName("chromium");
+  static const base::NoDestructor<std::string> kDefaultApplicationName("monyhar");
 #endif
 
   std::unique_ptr<KeyStorageLinux> key_storage;

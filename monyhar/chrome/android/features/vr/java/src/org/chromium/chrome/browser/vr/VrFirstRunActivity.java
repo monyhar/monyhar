@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr;
+package org.monyhar.chrome.browser.vr;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.base.metrics.RecordHistogram;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.metrics.RecordHistogram;
 
 /**
  * Handles the DOFF flow when Chrome is launched in VR mode and the FRE is not complete. This is

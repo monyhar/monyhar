@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.fullscreen;
+package org.monyhar.chrome.browser.fullscreen;
 
-import org.chromium.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.Tab;
 
 /**
  * An interface for observing fullscreen mode and exiting fullscreen mode.

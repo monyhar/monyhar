@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omaha;
+package org.monyhar.chrome.browser.omaha;
 
 import android.content.Context;
 import android.os.Build;
@@ -13,10 +13,10 @@ import androidx.annotation.VisibleForTesting;
 
 import org.xmlpull.v1.XmlSerializer;
 
-import org.chromium.base.BuildInfo;
-import org.chromium.chrome.browser.uid.SettingsSecureBasedIdentificationGenerator;
-import org.chromium.chrome.browser.uid.UniqueIdentificationGeneratorFactory;
-import org.chromium.ui.base.DeviceFormFactor;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.chrome.browser.uid.SettingsSecureBasedIdentificationGenerator;
+import org.monyhar.chrome.browser.uid.UniqueIdentificationGeneratorFactory;
+import org.monyhar.ui.base.DeviceFormFactor;
 
 import java.io.IOException;
 import java.io.StringWriter;

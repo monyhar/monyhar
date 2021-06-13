@@ -9,6 +9,6 @@
     "persistent": true
   },
   "externally_connectable": {
-    "matches": ["*://*.chromium.org/*"]
+    "matches": ["*://*.monyhar.org/*"]
   }
 }

@@ -51,9 +51,9 @@ def executor_kwargs(logger, test_type, test_environment, run_info_data,
     capabilities = executor_kwargs["capabilities"]
     # Note that for WebLayer, we launch a test shell and have the test shell use
     # WebLayer.
-    # https://cs.chromium.org/chromium/src/weblayer/shell/android/shell_apk/
+    # https://cs.monyhar.org/monyhar/src/weblayer/shell/android/shell_apk/
     capabilities["goog:chromeOptions"]["androidPackage"] = \
-        "org.chromium.weblayer.shell"
+        "org.monyhar.weblayer.shell"
     capabilities["goog:chromeOptions"]["androidActivity"] = ".WebLayerShellActivity"
     if kwargs.get('device_serial'):
         capabilities["goog:chromeOptions"]["androidDeviceSerial"] = kwargs['device_serial']

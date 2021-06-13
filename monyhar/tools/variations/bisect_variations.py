@@ -43,7 +43,7 @@ _CHROME_PATH_WIN = {
     "dev": r"Google\Chrome Dev\Application\chrome.exe",
     # The following two paths are relative to %LOCALAPPDATA%
     "canary": r"Google\Chrome SxS\Application\chrome.exe",
-    "chromium": r"Chromium\Application\chrome.exe",
+    "monyhar": r"Chromium\Application\chrome.exe",
 }
 
 _CHROME_PATH_MAC = {
@@ -58,7 +58,7 @@ _CHROME_PATH_LINUX = {
   "stable": r"/usr/bin/google-chrome",
   "beta": r"/usr/bin/google-chrome-beta",
   "dev": r"/usr/bin/google-chrome-unstable",
-  "chromium": r"/usr/bin/chromium",
+  "monyhar": r"/usr/bin/monyhar",
 }
 
 def _GetSupportedBrowserTypes():
@@ -76,7 +76,7 @@ def _LocateBrowser_Win(browser_type):
   """Locates browser executable path based on input browser type.
 
   Args:
-      browser_type: 'stable', 'beta', 'dev', 'canary', or 'chromium'.
+      browser_type: 'stable', 'beta', 'dev', 'canary', or 'monyhar'.
 
   Returns:
       Browser executable path.
@@ -85,7 +85,7 @@ def _LocateBrowser_Win(browser_type):
     return os.path.join(os.getenv('ProgramFiles(x86)'),
                         _CHROME_PATH_WIN[browser_type])
   else:
-    assert browser_type in ['canary', 'chromium']
+    assert browser_type in ['canary', 'monyhar']
     return os.path.join(os.getenv('LOCALAPPDATA'),
                         _CHROME_PATH_WIN[browser_type])
 

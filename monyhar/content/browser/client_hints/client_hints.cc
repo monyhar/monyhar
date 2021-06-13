@@ -252,7 +252,7 @@ void AddViewportWidthHeader(net::HttpRequestHeaders* headers,
   DCHECK(headers);
   DCHECK(context);
   // The default value on Android. See
-  // https://cs.chromium.org/chromium/src/third_party/WebKit/Source/core/css/viewportAndroid.css.
+  // https://cs.monyhar.org/monyhar/src/third_party/WebKit/Source/core/css/viewportAndroid.css.
   double viewport_width = 980;
 
 #if !defined(OS_ANDROID)

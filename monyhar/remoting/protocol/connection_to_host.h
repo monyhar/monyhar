@@ -34,7 +34,7 @@ class ConnectionToHost {
  public:
   // The UI implementations maintain corresponding definitions of this
   // enumeration in client_session.js and
-  // android/java/src/org/chromium/chromoting/jni/JniInterface.java. Be sure to
+  // android/java/src/org/monyhar/chromoting/jni/JniInterface.java. Be sure to
   // update these locations if you make any changes to the ordering.
   enum State {
     INITIALIZING,

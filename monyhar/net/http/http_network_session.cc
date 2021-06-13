@@ -27,7 +27,7 @@
 #include "net/http/http_stream_factory.h"
 #include "net/http/url_security_manager.h"
 #include "net/proxy_resolution/proxy_resolution_service.h"
-#include "net/quic/platform/impl/quic_chromium_clock.h"
+#include "net/quic/platform/impl/quic_monyhar_clock.h"
 #include "net/quic/quic_crypto_client_stream_factory.h"
 #include "net/quic/quic_stream_factory.h"
 #include "net/socket/client_socket_factory.h"

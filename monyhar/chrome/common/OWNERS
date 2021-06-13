@@ -35,24 +35,24 @@ per-file chrome_content_client.h=*
 per-file chrome_content_client_unittest.cc=*
 
 # Content settings
-per-file content_settings*=markusheintz@chromium.org
+per-file content_settings*=markusheintz@monyhar.org
 
 # Pepper files.
-per-file pepper_*=bbudge@chromium.org
-per-file pepper_*=raymes@chromium.org
+per-file pepper_*=bbudge@monyhar.org
+per-file pepper_*=raymes@monyhar.org
 
 # Other stuff.
-per-file autocomplete_match_type.*=mpearson@chromium.org
-per-file autocomplete_match_type.*=pkasting@chromium.org
-per-file autocomplete_match_type.*=sky@chromium.org
-per-file crash_keys*=rsesek@chromium.org
+per-file autocomplete_match_type.*=mpearson@monyhar.org
+per-file autocomplete_match_type.*=pkasting@monyhar.org
+per-file autocomplete_match_type.*=sky@monyhar.org
+per-file crash_keys*=rsesek@monyhar.org
 
 # WebUI. See also chrome/browser/ui/webui/OWNERS.
 per-file webui_url_constants.cc=file://ui/webui/PLATFORM_OWNERS
 per-file webui_url_constants.h=file://ui/webui/PLATFORM_OWNERS
 
 # Thread profiling
-per-file thread_profiler*=wittman@chromium.org
+per-file thread_profiler*=wittman@monyhar.org
 
 # Web Applications
 per-file web_application_info.*=file://chrome/browser/web_applications/OWNERS

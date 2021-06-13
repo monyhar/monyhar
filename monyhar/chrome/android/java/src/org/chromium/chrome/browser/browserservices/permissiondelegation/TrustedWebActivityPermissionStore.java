@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.permissiondelegation;
+package org.monyhar.chrome.browser.browserservices.permissiondelegation;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -13,10 +13,10 @@ import androidx.annotation.VisibleForTesting;
 import androidx.annotation.WorkerThread;
 import androidx.browser.trusted.Token;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.StrictModeContext;
-import org.chromium.components.content_settings.ContentSettingsType;
-import org.chromium.components.embedder_support.util.Origin;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.components.content_settings.ContentSettingsType;
+import org.monyhar.components.embedder_support.util.Origin;
 
 import java.util.Collections;
 import java.util.HashSet;
@@ -31,20 +31,20 @@ import java.util.Set;
  * - The permission state of the TWA that will be used for delegation.
  *
  * We did not use a similar technique to
- * {@link org.chromium.chrome.browser.webapps.WebappDataStorage}, because the data backing each
+ * {@link org.monyhar.chrome.browser.webapps.WebappDataStorage}, because the data backing each
  * WebappDataStore is stored in its own Preferences file, so while
- * {@link org.chromium.chrome.browser.webapps.WebappRegistry} is eagerly loaded when Chrome starts
+ * {@link org.monyhar.chrome.browser.webapps.WebappRegistry} is eagerly loaded when Chrome starts
  * up, we don't want the first permission check to cause loading separate Preferences files for
  * each installed TWA.
  *
  * A key difference between this class and the
- * {@link org.chromium.chrome.browser.browserservices.ClientAppDataRegister} is that the register
+ * {@link org.monyhar.chrome.browser.browserservices.ClientAppDataRegister} is that the register
  * stores data keyed by the client app, whereas this class stores data keyed by the origin. There
  * may be two client apps installed for the same origin, the ClientAppDataRegister will hold two
  * entries, whereas this class will hold one entry.
  *
  * Lifecycle: This class is designed to be owned by
- * {@link org.chromium.chrome.browser.webapps.WebappRegistry}, get it from there, don't create your
+ * {@link org.monyhar.chrome.browser.webapps.WebappRegistry}, get it from there, don't create your
  * own instance.
  * Thread safety: Is thread-safe (only operates on underlying SharedPreferences).
  * Native: Does not require native.

@@ -2,22 +2,22 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.datareduction;
+package org.monyhar.chrome.browser.datareduction;
 
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.view.View;
 
-import org.chromium.base.CommandLine;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.customtabs.CustomTabActivity;
-import org.chromium.chrome.browser.net.spdyproxy.DataReductionProxySettings;
-import org.chromium.components.browser_ui.widget.PromoDialog;
-import org.chromium.ui.text.NoUnderlineClickableSpan;
-import org.chromium.ui.text.SpanApplier;
-import org.chromium.ui.text.SpanApplier.SpanInfo;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.CommandLine;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivity;
+import org.monyhar.chrome.browser.net.spdyproxy.DataReductionProxySettings;
+import org.monyhar.components.browser_ui.widget.PromoDialog;
+import org.monyhar.ui.text.NoUnderlineClickableSpan;
+import org.monyhar.ui.text.SpanApplier;
+import org.monyhar.ui.text.SpanApplier.SpanInfo;
+import org.monyhar.ui.widget.Toast;
 
 /**
  * The promo screen encouraging users to enable Data Saver.

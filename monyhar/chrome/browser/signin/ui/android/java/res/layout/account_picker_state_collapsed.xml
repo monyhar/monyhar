@@ -40,7 +40,7 @@
 
     <include layout="@layout/account_picker_bottom_sheet_continue_button" />
 
-    <org.chromium.ui.widget.ButtonCompat
+    <org.monyhar.ui.widget.ButtonCompat
         android:id="@+id/account_picker_dismiss_button"
         style="@style/TextButton"
         android:layout_width="match_parent"

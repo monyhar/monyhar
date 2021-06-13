@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer.test;
+package org.monyhar.weblayer.test;
 
 import android.os.Bundle;
 import android.webkit.WebView;
@@ -15,11 +15,11 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.weblayer.shell.InstrumentationActivity;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.weblayer.shell.InstrumentationActivity;
 
 /**
  * Tests for compatibility with running WebView and WebLayer in the same process. These tests only

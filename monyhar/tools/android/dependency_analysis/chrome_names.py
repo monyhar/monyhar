@@ -7,7 +7,7 @@
 
 def shorten_class(class_name: str) -> str:
     """Returns a shortened version of the fully qualilied class name."""
-    return class_name.replace('org.chromium.',
+    return class_name.replace('org.monyhar.',
                               '.').replace('chrome.browser.', 'c.b.')
 
 

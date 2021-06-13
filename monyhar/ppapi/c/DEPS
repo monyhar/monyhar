@@ -1,4 +1,4 @@
-# ppapi/c should not be dependent on other parts of chromium; it should stay
+# ppapi/c should not be dependent on other parts of monyhar; it should stay
 # browser-neutral as much as possible.
 include_rules = [
   "-base",

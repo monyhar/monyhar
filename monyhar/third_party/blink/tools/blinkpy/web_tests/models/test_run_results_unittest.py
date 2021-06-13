@@ -273,7 +273,7 @@ class SummarizedResultsTest(unittest.TestCase):
         host = MockHost()
         self.port = host.port_factory.get(port_name='test')
 
-    def test_no_chromium_revision(self):
+    def test_no_monyhar_revision(self):
         summary = summarized_results(
             self.port, expected=False, passing=False, flaky=False)
         self.assertNotIn('revision', summary)
@@ -309,11 +309,11 @@ class SummarizedResultsTest(unittest.TestCase):
             'FAIL': 0,
         })
 
-    def test_chromium_revision(self):
+    def test_monyhar_revision(self):
         self.port._options.builder_name = 'dummy builder'
         summary = summarized_results(
             self.port, expected=False, passing=False, flaky=False)
-        self.assertNotEquals(summary['chromium_revision'], '')
+        self.assertNotEquals(summary['monyhar_revision'], '')
 
     def test_bug_entry(self):
         self.port._options.builder_name = 'dummy builder'

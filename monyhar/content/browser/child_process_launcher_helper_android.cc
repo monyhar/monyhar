@@ -120,7 +120,7 @@ ChildProcessLauncherHelper::LaunchProcessOnLauncherThread(
   DCHECK(file_count > 0);
 
   ScopedJavaLocalRef<jclass> j_file_info_class = base::android::GetClass(
-      env, "org/chromium/base/process_launcher/FileDescriptorInfo");
+      env, "org/monyhar/base/process_launcher/FileDescriptorInfo");
   ScopedJavaLocalRef<jobjectArray> j_file_infos(
       env, env->NewObjectArray(file_count, j_file_info_class.obj(), NULL));
   base::android::CheckException(env);

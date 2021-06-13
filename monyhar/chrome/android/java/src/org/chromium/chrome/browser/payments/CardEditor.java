@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments;
+package org.monyhar.chrome.browser.payments;
 
 import android.os.Handler;
 import android.text.SpannableStringBuilder;
@@ -13,27 +13,27 @@ import android.util.Pair;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.Callback;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.base.task.BackgroundOnlyAsyncTask;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.autofill.CreditCardScanner;
-import org.chromium.chrome.browser.autofill.PersonalDataManager;
-import org.chromium.chrome.browser.autofill.PersonalDataManager.AutofillProfile;
-import org.chromium.chrome.browser.autofill.PersonalDataManager.CreditCard;
-import org.chromium.chrome.browser.autofill.prefeditor.EditorBase;
-import org.chromium.chrome.browser.autofill.prefeditor.EditorFieldModel;
-import org.chromium.chrome.browser.autofill.prefeditor.EditorFieldModel.EditorFieldValidator;
-import org.chromium.chrome.browser.autofill.prefeditor.EditorFieldModel.EditorValueIconGenerator;
-import org.chromium.chrome.browser.autofill.prefeditor.EditorModel;
-import org.chromium.chrome.browser.autofill.settings.AutofillProfileBridge.DropdownKeyValue;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.components.payments.BasicCardUtils;
-import org.chromium.components.payments.MethodStrings;
-import org.chromium.components.payments.PaymentRequestService;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.payments.mojom.PaymentMethodData;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.base.task.BackgroundOnlyAsyncTask;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.autofill.CreditCardScanner;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager.AutofillProfile;
+import org.monyhar.chrome.browser.autofill.PersonalDataManager.CreditCard;
+import org.monyhar.chrome.browser.autofill.prefeditor.EditorBase;
+import org.monyhar.chrome.browser.autofill.prefeditor.EditorFieldModel;
+import org.monyhar.chrome.browser.autofill.prefeditor.EditorFieldModel.EditorFieldValidator;
+import org.monyhar.chrome.browser.autofill.prefeditor.EditorFieldModel.EditorValueIconGenerator;
+import org.monyhar.chrome.browser.autofill.prefeditor.EditorModel;
+import org.monyhar.chrome.browser.autofill.settings.AutofillProfileBridge.DropdownKeyValue;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.components.payments.BasicCardUtils;
+import org.monyhar.components.payments.MethodStrings;
+import org.monyhar.components.payments.PaymentRequestService;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.payments.mojom.PaymentMethodData;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -53,7 +53,7 @@ import java.util.concurrent.ExecutionException;
  * local cards can be edited. For server cards, only the billing address is editable.
  *
  * Note that this class is used by PaymentRequest only and will be removed when not needed any more.
- * Please use {@link org.chromium.chrome.browser.autofill.settings.CardEditor} instead.
+ * Please use {@link org.monyhar.chrome.browser.autofill.settings.CardEditor} instead.
  */
 @Deprecated
 public class CardEditor

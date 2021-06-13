@@ -32,7 +32,7 @@
 // significantly. If you run into this limit, try using forward declarations
 // instead of including more headers. If that is infeasible, adjust the limit.
 // For more info, see
-// https://chromium.googlesource.com/chromium/src/+/HEAD/docs/wmax_tokens.md
+// https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/wmax_tokens.md
 #pragma clang max_tokens_here 980000
 
 #include <memory>
@@ -6196,7 +6196,7 @@ void Document::SetEncodingData(const DocumentEncodingData& new_data) {
   encoding_data_ = new_data;
 
   // FIXME: Should be removed as part of
-  // https://code.google.com/p/chromium/issues/detail?id=319643
+  // https://code.google.com/p/monyhar/issues/detail?id=319643
   bool should_use_visual_ordering =
       encoding_data_.Encoding().UsesVisualOrdering();
   if (should_use_visual_ordering != visually_ordered_) {

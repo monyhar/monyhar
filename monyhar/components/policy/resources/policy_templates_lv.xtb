@@ -100,7 +100,7 @@
 
       Ja iestatīsiet šo politiku, <ph name="PRODUCT_NAME" /> izmantos nodrošināto direktoriju neatkarīgi no tā, vai lietotājs ir norādījis karodziņu “--disk-cache-dir”. Lai izvairītos no datu zuduma vai neparedzētām kļūdām, šai politikai nav jābūt iestatītai sējuma saknes direktorijā vai direktorijā, kas tiek izmantots citiem mērķiem, jo <ph name="PRODUCT_NAME" /> pārvalda tā saturu.
 
-      Izmantojamo mainīgo vērtību sarakstu skatiet šeit: https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Izmantojamo mainīgo vērtību sarakstu skatiet šeit: https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Ja šī politika nav iestatīta, tiks izmantots noklusējuma kešatmiņas direktorijs un lietotājs varēs to ignorēt, iestatot komandrindas karodziņu “--disk-cache-dir”.</translation>
 <translation id="113521240853905588">Konfigurē valodas, ko <ph name="PRODUCT_OS_NAME" /> var izmantot kā vēlamās valodas.
@@ -486,7 +486,7 @@
 <translation id="1852294065645015766">Multivides satura automātiskas atskaņošanas atļaušana</translation>
 <translation id="1857152770025485173">Šī politika neļauj lietotājam ielādēt tīmekļa lapas no vietrāžu URL melnā saraksta. Melnajā sarakstā ir URL modeļi, kas norāda, kuri URL tiks ievietoti melnajā sarakstā.
 
-      URL modelim ir jābūt formatētam atbilstoši šiem norādījumiem: https://www.chromium.org/administrators/url-blacklist-filter-format.
+      URL modelim ir jābūt formatētam atbilstoši šiem norādījumiem: https://www.monyhar.org/administrators/url-blacklist-filter-format.
 
       Izņēmumus var norādīt URL baltā saraksta politikā. Šajās politikās var iekļaut ne vairāk kā 1000 ierakstu; nākamie ieraksti tiks ignorēti.
 
@@ -529,7 +529,7 @@
 
       Ja politika nav konfigurēta, lietojuma un diagnostikas datu nosūtīšana tiks atspējota nepārvaldītās ierīcēs un iespējota pārvaldītās ierīcēs.</translation>
 <translation id="1907431809333268751">Konfigurē uzņēmuma pieteikšanās vietrāžu URL sarakstu (tikai HTTP un HTTPS shēmām). Šiem URL tiks tverts paroles ciparnospiedums, un tas tiks izmantots, lai noteiktu paroles atkārtotu izmantošanu.
-      Lai pārlūkprogramma <ph name="PRODUCT_NAME" /> varētu pareizi tvert paroles ciparnospiedumu, pieteikšanās lapai noteikti ir jāatbilst šeit norādītajām valdīnijām: https://www.chromium.org/developers/design-documents/create-amazing-password-forms.
+      Lai pārlūkprogramma <ph name="PRODUCT_NAME" /> varētu pareizi tvert paroles ciparnospiedumu, pieteikšanās lapai noteikti ir jāatbilst šeit norādītajām valdīnijām: https://www.monyhar.org/developers/design-documents/create-amazing-password-forms.
 
       Ja šis iestatījums ir iespējots, paroļu aizsardzības pakalpojums tver paroles ciparnospiedumu šajos URL, lai noteiktu paroles atkārtotu izmantošanu.
       Ja šis iestatījums ir atspējots vai nav iestatīts, paroles aizsardzības pakalpojums tver paroles ciparnospiedumu tikai vietnē https://accounts.google.com.
@@ -832,7 +832,7 @@
 
       Ar šo politiku tiek atļauts, ka saimniekdatoru nosaukumu sertifikāti norādītajos vietrāžos URL netiek atklāti, izmantojot Certificate Transparency. Tādējādi tiek atļauti sertifikāti, kas citādi būtu neuzticami, jo tie tika nepareizi publiski atklāti, lai turpinātu lietošanu, taču šādi ir grūtāk noteikt nepareizi izdotus sertifikātus šiem saimniekdatoriem.
 
-      URL šablons tiek formatēts atbilstoši šiem norādījumiem: https://www.chromium.org/administrators/url-blacklist-filter-format. Tomēr tiek ņemta vērā tikai saimniekdatora nosaukuma URL daļa, jo sertifikāti ir derīgi noteiktam saimniekdatora nosaukumam neatkarīgi no shēmas, porta vai ceļa. Saimniekdatoru aizstājējzīmes netiek pieņemtas.
+      URL šablons tiek formatēts atbilstoši šiem norādījumiem: https://www.monyhar.org/administrators/url-blacklist-filter-format. Tomēr tiek ņemta vērā tikai saimniekdatora nosaukuma URL daļa, jo sertifikāti ir derīgi noteiktam saimniekdatora nosaukumam neatkarīgi no shēmas, porta vai ceļa. Saimniekdatoru aizstājējzīmes netiek pieņemtas.
 
       Neesot iestatītai šai politikai, jebkurš sertifikāts, kura atklāšana tiek pieprasīta, izmantojot Certificate Transparency, tiks uzskatīts par neuzticamu, kad tas nav atklāts atbilstoši Certificate Transparency politikai.</translation>
 <translation id="2488010520405124654">Iespējot tīkla konfigurācijas uzvedni, kad dators darbojas bezsaistes režīmā.
@@ -1527,7 +1527,7 @@ Ja šim iestatījumam ir izvēlēta vērtība “Izslēgts” vai vērtība nav 
 
       Ja šī politika ir iestatīta, pārlūkā <ph name="PRODUCT_NAME" /> tiek lietots norādītais direktorijs neatkarīgi no tā, vai lietotājs ir norādījis direktoriju vai iespējojis karodziņu, lai ikreiz tiktu pieprasīts norādīt lejupielādes vietu.
 
-      Izmantojamo mainīgo sarakstu skatiet šeit: https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Izmantojamo mainīgo sarakstu skatiet šeit: https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Ja šī politika nav iestatīta, tiek lietots noklusējuma lejupielādes direktorijs un lietotājs to var mainīt.</translation>
 <translation id="3805659594028420438">TLS domēnam piesaistīto sertifikātu paplašinājumu iespējošana (vairs netiek izmantota)</translation>
@@ -1615,7 +1615,7 @@ Ja šai politikai ir iestatīta vērtība “Nepatiesa”, netiek sniegta inform
 
       Ja neiestatīsiet šo politiku, produktā <ph name="PRODUCT_NAME" /> tiks izmantots ierastais noklusējuma direktorijs (atkarīgs no konkrētas platformas).
 
-      Pieejamo mainīgo sarakstu skatiet vietnē https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.</translation>
+      Pieejamo mainīgo sarakstu skatiet vietnē https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.</translation>
 <translation id="3911737181201537215">Šī politika neietekmē datu reģistrēšanu Android lietotnēs.</translation>
 <translation id="391531815696899618">Tiek atspējota Google diska sinhronizēšana operētājsistēmas <ph name="PRODUCT_OS_NAME" /> lietotnē Faili, ja ir iestatīta vērtība Patiesa. Šajā gadījumā Google diskā netiek augšupielādēti dati.
 
@@ -1817,7 +1817,7 @@ Ja šai politikai ir iestatīta vērtība “Nepatiesa”, netiek sniegta inform
 
       Ja iestatīsiet šo politiku, <ph name="PRODUCT_NAME" /> izmantos norādīto direktoriju, lai glabātu profilu viesabonēšanas kopiju, ja politika <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> ir iespējota. Ja politika <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> ir atspējota vai nav iestatīta, šajā politikā saglabātā vērtība netiek izmantota.
 
-      Vietnē https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables ir sniegts izmantojamo mainīgo saraksts.
+      Vietnē https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables ir sniegts izmantojamo mainīgo saraksts.
 
       Ja šī politika netiks iestatīta, tiks izmantots viesabonēšanas profilu noklusējuma ceļš.</translation>
 <translation id="4239720644496144453">Android lietotnēs netiek izmantota kešatmiņa. Ja vairāki lietotāji instalē vienu Android lietotni, tā tiks no jauna lejupielādēta katram lietotājam.</translation>
@@ -2018,7 +2018,7 @@ Ja šai politikai ir iestatīta vērtība “Nepatiesa”, netiek sniegta inform
 
           Ja šī politika nav iestatīta, visām vietnēm tiks izmantots politikā ChromeFrameRendererSettings norādītais noklusējuma renderētājs.
 
-          Šablonu piemērus skatiet šeit: https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Šablonu piemērus skatiet šeit: https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="467449052039111439">Atvērt vietrāžu URL sarakstu</translation>
 <translation id="4674871290487541952">Paplašinājumu atjaunināšanas un instalēšanas integritātes pārbaudēs atļaut nedrošus algoritmus</translation>
 <translation id="4680936297850947973">Novecojis versijā M68. Tā vietā izmantojiet iestatījumu DefaultPopupsSetting.
@@ -2671,7 +2671,7 @@ Ja šai politikai ir iestatīta vērtība “Nepatiesa”, netiek sniegta inform
 
       Ja šī politika ir iestatīta, spraudnis <ph name="PRODUCT_FRAME_NAME" /> lieto norādīto direktoriju.
 
-      Izmantojamo mainīgo sarakstu skatiet šeit: https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Izmantojamo mainīgo sarakstu skatiet šeit: https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Ja šis iestatījums nav iestatīts, tiek lietots noklusējuma profila direktorijs.</translation>
 <translation id="5826047473100157858">Norāda, vai lietotājs ar <ph name="PRODUCT_NAME" /> var atvērt lapas inkognito režīmā.
@@ -3237,7 +3237,7 @@ Lietotāja fiziskās klātbūtnes noteikšanai tiek izmantota ierīces barošana
 
       Ja iestatīsiet šo politiku, <ph name="PRODUCT_NAME" /> izmantos nodrošināto direktoriju neatkarīgi no tā, vai lietotājs ir norādījis karodziņu “--user-data-dir”. Lai izvairītos no datu zaudējuma vai citām neparedzētām kļūdām, šai politikai nav jābūt iestatītai krājuma saknes direktorijam vai direktorijam, kas tiek izmantots citos nolūkos, jo <ph name="PRODUCT_NAME" /> pārvalda tā saturu.
 
-      Sarakstu ar izmantojamām mainīgajām vērtībām skatiet šeit: https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Sarakstu ar izmantojamām mainīgajām vērtībām skatiet šeit: https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Ja šī politika nav iestatīta, tiks izmantots noklusējuma profila ceļš un lietotājs varēs to ignorēt, izmantojot komandrindas karodziņu “--user-data-dir”.</translation>
 <translation id="7027785306666625591">Konfigurēt jaudas pārvaldību operētājsistēmā <ph name="PRODUCT_OS_NAME" />.
@@ -4033,7 +4033,7 @@ Operētājsistēmā Windows politikas konfigurēšanai ieteicams izmantot GPO, t
 
           Ja šī politika nav iestatīta, visām vietnēm tiks izmantots politikā ChromeFrameRendererSettings norādītais noklusējuma renderētājs.
 
-          Šablonu piemērus skatiet šeit: https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Šablonu piemērus skatiet šeit: https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="8489964335640955763">PluginVm</translation>
 <translation id="8493645415242333585">Atspējo pārlūkošanas vēstures saglabāšanu</translation>
 <translation id="8499172469244085141">Noklusējuma iestatījumi (lietotāji var ignorēt)</translation>

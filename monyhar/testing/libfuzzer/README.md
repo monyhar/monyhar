@@ -60,7 +60,7 @@ Started Guide].
 [AFL integration]: AFL_integration.md
 [Blackbox fuzzing]: https://google.github.io/clusterfuzz/setting-up-fuzzing/blackbox-fuzzing/
 [Bugs found in open-source projects]: http://llvm.org/docs/LibFuzzer.html#trophies
-[Bugs found in PDFium]: https://bugs.chromium.org/p/pdfium/issues/list?can=1&q=libfuzzer&colspec=ID+Type+Status+Priority+Milestone+Owner+Summary&cells=tiles
+[Bugs found in PDFium]: https://bugs.monyhar.org/p/pdfium/issues/list?can=1&q=libfuzzer&colspec=ID+Type+Status+Priority+Milestone+Owner+Summary&cells=tiles
 [ClusterFuzz]: https://clusterfuzz.com/
 [ClusterFuzz Stats]: https://clusterfuzz.com/fuzzer-stats/by-fuzzer/fuzzer/libFuzzer/job/libfuzzer_chrome_asan
 [Creating a fuzz target that expects a protobuf]: libprotobuf-mutator.md
@@ -70,11 +70,11 @@ Started Guide].
 [Getting Started Guide]: getting_started.md
 [Guided in-process fuzzing of Chrome components]: https://security.googleblog.com/2016/08/guided-in-process-fuzzing-of-chrome.html
 [Improving fuzz target efficiency]: efficient_fuzzing.md
-[Issues automatically filed]: https://bugs.chromium.org/p/chromium/issues/list?sort=-modified&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified&q=label%3AStability-LibFuzzer%2CStability-AFL%20label%3AClusterFuzz%20-status%3AWontFix%2CDuplicate&can=1
-[Issues filed manually]: https://bugs.chromium.org/p/chromium/issues/list?can=1&q=label%3AStability-LibFuzzer+-label%3AClusterFuzz&sort=-modified&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids
-[non-browser parts of Chrome OS]: https://chromium.googlesource.com/chromiumos/docs/+/main/testing/fuzzing.md
+[Issues automatically filed]: https://bugs.monyhar.org/p/monyhar/issues/list?sort=-modified&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified&q=label%3AStability-LibFuzzer%2CStability-AFL%20label%3AClusterFuzz%20-status%3AWontFix%2CDuplicate&can=1
+[Issues filed manually]: https://bugs.monyhar.org/p/monyhar/issues/list?can=1&q=label%3AStability-LibFuzzer+-label%3AClusterFuzz&sort=-modified&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids
+[non-browser parts of Chrome OS]: https://monyhar.googlesource.com/monyharos/docs/+/main/testing/fuzzing.md
 [Reproducing bugs]: reproducing.md
-[crbug.com/539572]: https://bugs.chromium.org/p/chromium/issues/detail?id=539572
+[crbug.com/539572]: https://bugs.monyhar.org/p/monyhar/issues/detail?id=539572
 [go/fuzzing-success]: https://goto.google.com/fuzzing-success
 [libFuzzer]: http://llvm.org/docs/LibFuzzer.html
 [libFuzzer integration]: libFuzzer_integration.md

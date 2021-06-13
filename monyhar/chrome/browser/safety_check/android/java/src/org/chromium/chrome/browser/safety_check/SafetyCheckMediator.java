@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.safety_check;
+package org.monyhar.chrome.browser.safety_check;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -15,30 +15,30 @@ import androidx.annotation.IntDef;
 import androidx.annotation.VisibleForTesting;
 import androidx.preference.Preference;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.metrics.RecordUserAction;
-import org.chromium.build.BuildConfig;
-import org.chromium.chrome.browser.password_check.CompromisedCredential;
-import org.chromium.chrome.browser.password_check.PasswordCheck;
-import org.chromium.chrome.browser.password_check.PasswordCheckFactory;
-import org.chromium.chrome.browser.password_check.PasswordCheckReferrer;
-import org.chromium.chrome.browser.password_check.PasswordCheckUIStatus;
-import org.chromium.chrome.browser.password_manager.ManagePasswordsReferrer;
-import org.chromium.chrome.browser.password_manager.PasswordManagerHelper;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.safe_browsing.metrics.SettingsAccessPoint;
-import org.chromium.chrome.browser.safe_browsing.settings.SafeBrowsingSettingsFragment;
-import org.chromium.chrome.browser.safety_check.SafetyCheckProperties.PasswordsState;
-import org.chromium.chrome.browser.safety_check.SafetyCheckProperties.SafeBrowsingState;
-import org.chromium.chrome.browser.safety_check.SafetyCheckProperties.UpdatesState;
-import org.chromium.chrome.browser.signin.ui.SyncConsentActivityLauncher;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.signin.metrics.SigninAccessPoint;
-import org.chromium.content_public.common.ContentUrlConstants;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.metrics.RecordUserAction;
+import org.monyhar.build.BuildConfig;
+import org.monyhar.chrome.browser.password_check.CompromisedCredential;
+import org.monyhar.chrome.browser.password_check.PasswordCheck;
+import org.monyhar.chrome.browser.password_check.PasswordCheckFactory;
+import org.monyhar.chrome.browser.password_check.PasswordCheckReferrer;
+import org.monyhar.chrome.browser.password_check.PasswordCheckUIStatus;
+import org.monyhar.chrome.browser.password_manager.ManagePasswordsReferrer;
+import org.monyhar.chrome.browser.password_manager.PasswordManagerHelper;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.safe_browsing.metrics.SettingsAccessPoint;
+import org.monyhar.chrome.browser.safe_browsing.settings.SafeBrowsingSettingsFragment;
+import org.monyhar.chrome.browser.safety_check.SafetyCheckProperties.PasswordsState;
+import org.monyhar.chrome.browser.safety_check.SafetyCheckProperties.SafeBrowsingState;
+import org.monyhar.chrome.browser.safety_check.SafetyCheckProperties.UpdatesState;
+import org.monyhar.chrome.browser.signin.ui.SyncConsentActivityLauncher;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.signin.metrics.SigninAccessPoint;
+import org.monyhar.content_public.common.ContentUrlConstants;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

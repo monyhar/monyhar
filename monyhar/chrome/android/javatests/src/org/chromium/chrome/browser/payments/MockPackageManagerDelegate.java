@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments;
+package org.monyhar.chrome.browser.payments;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -16,8 +16,8 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.components.payments.AndroidPaymentAppFinder;
-import org.chromium.components.payments.PackageManagerDelegate;
+import org.monyhar.components.payments.AndroidPaymentAppFinder;
+import org.monyhar.components.payments.PackageManagerDelegate;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.site_settings;
+package org.monyhar.components.browser_ui.site_settings;
 
-import static org.chromium.components.browser_ui.site_settings.WebsitePreferenceBridge.SITE_WILDCARD;
+import static org.monyhar.components.browser_ui.site_settings.WebsitePreferenceBridge.SITE_WILDCARD;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -26,8 +26,8 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.ui.KeyboardVisibilityDelegate;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.ui.KeyboardVisibilityDelegate;
 
 /**
  * A utility class for the UI recording exceptions to the blocked list for site

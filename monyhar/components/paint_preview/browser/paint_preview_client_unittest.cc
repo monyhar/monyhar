@@ -123,7 +123,7 @@ class PaintPreviewClientRenderViewHostTest
     content::RenderFrameHostTester::For(main_rfh())
         ->InitializeRenderFrameIfNeeded();
     content::NavigationSimulator::NavigateAndCommitFromBrowser(
-        web_contents(), GURL("https://www.chromium.org"));
+        web_contents(), GURL("https://www.monyhar.org"));
   }
 
   mojo::StructPtr<mojom::PaintPreviewCaptureResponse>

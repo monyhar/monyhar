@@ -1,4 +1,4 @@
-oshima@chromium.org
+oshima@monyhar.org
 
 # For WebUI related GN targets.
 per-file BUILD.gn=file://ui/webui/PLATFORM_OWNERS

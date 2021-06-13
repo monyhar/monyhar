@@ -24,12 +24,12 @@ if (is_android) {
   android_library("weblayer_browsertests_java") {
     testonly = true
     sources = [
-      "../shell/android/browsertests_apk/src/org/chromium/weblayer_browsertests_apk/WebLayerBrowserTestsActivity.java",
-      "../shell/android/browsertests_apk/src/org/chromium/weblayer_browsertests_apk/WebLayerBrowserTestsApplication.java",
-      "../shell/android/browsertests_apk/src/org/chromium/weblayer_private/AccessTokenFetchTestBridge.java",
-      "../shell/android/browsertests_apk/src/org/chromium/weblayer_private/GoogleAccountAccessTokenFetcherTestStub.java",
-      "../shell/android/browsertests_apk/src/org/chromium/weblayer_private/MetricsTestHelper.java",
-      "../shell/android/browsertests_apk/src/org/chromium/weblayer_private/TranslateTestBridge.java",
+      "../shell/android/browsertests_apk/src/org/monyhar/weblayer_browsertests_apk/WebLayerBrowserTestsActivity.java",
+      "../shell/android/browsertests_apk/src/org/monyhar/weblayer_browsertests_apk/WebLayerBrowserTestsApplication.java",
+      "../shell/android/browsertests_apk/src/org/monyhar/weblayer_private/AccessTokenFetchTestBridge.java",
+      "../shell/android/browsertests_apk/src/org/monyhar/weblayer_private/GoogleAccountAccessTokenFetcherTestStub.java",
+      "../shell/android/browsertests_apk/src/org/monyhar/weblayer_private/MetricsTestHelper.java",
+      "../shell/android/browsertests_apk/src/org/monyhar/weblayer_private/TranslateTestBridge.java",
     ]
     deps = [
       ":weblayer_browsertests_jni",
@@ -61,10 +61,10 @@ if (is_android) {
 
   generate_jni("weblayer_browsertests_jni") {
     sources = [
-      "../shell/android/browsertests_apk/src/org/chromium/weblayer_private/AccessTokenFetchTestBridge.java",
-      "../shell/android/browsertests_apk/src/org/chromium/weblayer_private/GoogleAccountAccessTokenFetcherTestStub.java",
-      "../shell/android/browsertests_apk/src/org/chromium/weblayer_private/MetricsTestHelper.java",
-      "../shell/android/browsertests_apk/src/org/chromium/weblayer_private/TranslateTestBridge.java",
+      "../shell/android/browsertests_apk/src/org/monyhar/weblayer_private/AccessTokenFetchTestBridge.java",
+      "../shell/android/browsertests_apk/src/org/monyhar/weblayer_private/GoogleAccountAccessTokenFetcherTestStub.java",
+      "../shell/android/browsertests_apk/src/org/monyhar/weblayer_private/MetricsTestHelper.java",
+      "../shell/android/browsertests_apk/src/org/monyhar/weblayer_private/TranslateTestBridge.java",
     ]
   }
 

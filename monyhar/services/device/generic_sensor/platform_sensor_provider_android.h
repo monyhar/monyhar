@@ -43,7 +43,7 @@ class PlatformSensorProviderAndroid : public PlatformSensorProvider {
       SensorReadingSharedBuffer* reading_buffer,
       CreateSensorCallback callback);
 
-  // Java object org.chromium.device.sensors.PlatformSensorProvider
+  // Java object org.monyhar.device.sensors.PlatformSensorProvider
   base::android::ScopedJavaGlobalRef<jobject> j_object_;
 
   DISALLOW_COPY_AND_ASSIGN(PlatformSensorProviderAndroid);

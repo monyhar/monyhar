@@ -20,7 +20,7 @@ if (is_android) {
 
 group("strings") {
   public_deps = [
-    ":components_chromium_strings",
+    ":components_monyhar_strings",
     ":components_google_chrome_strings",
     ":components_locale_settings",
     ":components_strings",
@@ -55,11 +55,11 @@ if (is_android) {
   }
 }
 
-grit("components_chromium_strings") {
-  source = "../components_chromium_strings.grd"
-  outputs = [ "grit/components_chromium_strings.h" ]
+grit("components_monyhar_strings") {
+  source = "../components_monyhar_strings.grd"
+  outputs = [ "grit/components_monyhar_strings.h" ]
   foreach(locale, locales_with_pseudolocales) {
-    outputs += [ "components_chromium_strings_$locale.pak" ]
+    outputs += [ "components_monyhar_strings_$locale.pak" ]
   }
 }
 

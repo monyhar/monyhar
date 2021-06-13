@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.browser;
+package org.monyhar.content_public.browser;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -11,8 +11,8 @@ import android.view.textclassifier.TextClassification;
 import android.view.textclassifier.TextClassifier;
 import android.view.textclassifier.TextSelection;
 
-import org.chromium.content.browser.selection.SmartSelectionClient;
-import org.chromium.ui.touch_selection.SelectionEventType;
+import org.monyhar.content.browser.selection.SmartSelectionClient;
+import org.monyhar.ui.touch_selection.SelectionEventType;
 
 import java.util.List;
 

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tracing.settings;
+package org.monyhar.chrome.browser.tracing.settings;
 
 import android.os.Bundle;
 
@@ -12,12 +12,12 @@ import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.tracing.TracingController;
-import org.chromium.chrome.browser.tracing.TracingNotificationManager;
-import org.chromium.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.tracing.TracingController;
+import org.monyhar.chrome.browser.tracing.TracingNotificationManager;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

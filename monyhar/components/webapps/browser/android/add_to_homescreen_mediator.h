@@ -28,7 +28,7 @@ struct ShortcutInfo;
 class AddToHomescreenInstaller;
 
 // AddToHomescreenMediator is the C++ counterpart of
-// org.chromium.components.webapps.addtohomescreen.AddToHomescreenMediator
+// org.monyhar.components.webapps.addtohomescreen.AddToHomescreenMediator
 // in Java. It uses AddToHomescreenInstaller for installing the current app.
 // This class is owned, constructed, and destroyed by its Java counter-part.
 class AddToHomescreenMediator : public AddToHomescreenDataFetcher::Observer {

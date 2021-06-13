@@ -2,7 +2,7 @@
 
 This README serves as an documentation entry point of Blink's text stack.
 
-It can be viewed in formatted form [here](https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/renderer/platform/fonts/README.md).
+It can be viewed in formatted form [here](https://monyhar.googlesource.com/monyhar/src/+/master/third_party/blink/renderer/platform/fonts/README.md).
 
 ## Overview ##
 
@@ -12,9 +12,9 @@ CSS-styled HTML text.
 
 The API methods
 in
-[font.h](https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/fonts/shaping/font.h) describe
+[font.h](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/platform/fonts/shaping/font.h) describe
 the interface between the layout code and the font
-code. [font.h](https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/fonts/shaping/font.h) provides
+code. [font.h](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/platform/fonts/shaping/font.h) provides
 API for mainly three kinds of requests coming from the layout and paint code:
 
   - Measuring text
@@ -38,23 +38,23 @@ From source HTML to visual output this roughly comprises the following stages:
 
 During
 the
-[style resolution](https://cs.chromium.org/chromium/src/third_party/blink/renderer/core/css/resolver/style_resolver.cc?type=cs&l=1028) stage
+[style resolution](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/core/css/resolver/style_resolver.cc?type=cs&l=1028) stage
 of
 layout
-[`ComputedStyle`](https://cs.chromium.org/chromium/src/third_party/blink/renderer/core/style/computed_style.h) objects
+[`ComputedStyle`](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/core/style/computed_style.h) objects
 are calculated for each element of the DOM tree. Each `ComputedStyle` will own
 a
-[`Font`](https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/fonts/font.h) and
+[`Font`](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/platform/fonts/font.h) and
 a
-[`FontDescription`](https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/fonts/font_description.cc) object.
+[`FontDescription`](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/platform/fonts/font_description.cc) object.
 For this to work, after CSS is parsed into the various specialized
 `CSSValue`-derived types, the `ConvertFont…` methods
 in
-[`style_builder_converter.cc`](https://cs.chromium.org/chromium/src/third_party/blink/renderer/core/css/resolver/style_builder_converter.cc) convert
+[`style_builder_converter.cc`](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/core/css/resolver/style_builder_converter.cc) convert
 from `CSSValue`s to `FontDescription` data structures. In the opposite
 direction, the `ValueForFont…` methods
 in
-[`computed_style_css_value_mapping.cc`](https://cs.chromium.org/chromium/src/third_party/blink/renderer/core/css/computed_style_css_value_mapping.cc) convert
+[`computed_style_css_value_mapping.cc`](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/core/css/computed_style_css_value_mapping.cc) convert
 back from `FontDescription` back to CSS values.
 
 Then, during style resolution, `FontBuilder::CreateFont` is called to update the
@@ -98,7 +98,7 @@ to perform a lookup. `CSSFontSelector` will in turn ask `FontFaceCache` to find
 a FontData object among the available web fonts. If there is already a match for
 `FontDescription` in the cache, this `FontData` object is returned. If not,
 the
-[`FontSelectionAlgorithm::IsBetterMatchForRequest`](https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/fonts/font_selection_algorithm.h?l=44) comparison
+[`FontSelectionAlgorithm::IsBetterMatchForRequest`](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/platform/fonts/font_selection_algorithm.h?l=44) comparison
 function is used to find the best match among the available web fonts. This
 comparison function implements
 the
@@ -109,10 +109,10 @@ a font from the system. To this end, it will query `FontCache`. `FontCache` is
 for system fonts what `FontFaceCache` is for web fonts. `FontCache` has
 OS/system specific implementations
 in
-[font_cache_skia.cc](https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/fonts/skia/font_cache_skia.cc),
-[font_cache_mac.mm](https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/fonts/mac/font_cache_mac.mm),
-[font_cache_linux.cc](https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/fonts/linux/font_cache_linux.cc),
-[font_cache_android.cc](https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/fonts/android/font_cache_android.cc) in
+[font_cache_skia.cc](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/platform/fonts/skia/font_cache_skia.cc),
+[font_cache_mac.mm](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/platform/fonts/mac/font_cache_mac.mm),
+[font_cache_linux.cc](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/platform/fonts/linux/font_cache_linux.cc),
+[font_cache_android.cc](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/platform/fonts/android/font_cache_android.cc) in
 order to perform system font lookups using the respective OS/system API.
 
 ## Excursion: Setting up Shaping
@@ -187,14 +187,14 @@ the set of available fonts at the time shaping for this word and its
 `FontDescription` was performed. This state is captured by computing a composite
 key off of the `FontFallbackList`
 in
-[`FontFallbackList::CompositeKey`](https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/fonts/font_fallback_list.cpp?l=186).
+[`FontFallbackList::CompositeKey`](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/platform/fonts/font_fallback_list.cpp?l=186).
 
 ### Accessing the Cache
 
-[`cachin_gword_shaper.h`](https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/fonts/shaping/caching_word_shaper.h) is
+[`cachin_gword_shaper.h`](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/platform/fonts/shaping/caching_word_shaper.h) is
 the entry point for retrieving shaping results through the word cache. It defers
 to
-[`caching_word_shape_iterator.h`](https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/fonts/shaping/caching_word_shape_iterator.h) for
+[`caching_word_shape_iterator.h`](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/platform/fonts/shaping/caching_word_shape_iterator.h) for
 word/space or CJK segmentation and responds to requests for a `TextRun`'s
 `Width()` or returns a `ShapeResultBuffer`containing a list of `ShapeResult`
 objects. If not found in the cache `ShapeResult` objects are produced by
@@ -206,17 +206,17 @@ accelerating caching layer between `Font` operations and `HarfBuzzShaper`.
 The section [Setting up Shaping](#excursion_setting-up-shaping) described the
 requirements for constant input requirements before shaping can be performed.
 
-[RunSegmenter](https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/fonts/shaping/run_segmenter.h) is
+[RunSegmenter](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/platform/fonts/shaping/run_segmenter.h) is
 the top level API for segmenting incoming text runs using sub-segmenters. It
 splits text by their Unicode script property
 (via
-[`ScriptRunIterator`](https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/fonts/script_run_iterator.h)),
+[`ScriptRunIterator`](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/platform/fonts/script_run_iterator.h)),
 orientation and direction — horizontal LTR/RTL, vertical LTR/RTL
 (via
-[`OrientationIterator`](https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/fonts/orientation_iterator.h)),
+[`OrientationIterator`](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/platform/fonts/orientation_iterator.h)),
 and emoji presentation attributes
 (via
-[`SymbolsIterator`](https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/fonts/symbols_iterator.h)).
+[`SymbolsIterator`](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/platform/fonts/symbols_iterator.h)).
 
 `RunSegmenter` is constructed from a text run in UTF-16 `UChar` format, then
 functions as an iterator returning sub-runs of constant script, emoji
@@ -227,8 +227,8 @@ shaping.
 
 The text shaping implementation is
 in
-[shaping/harfbuzz_shaper.h](https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/fonts/shaping/harfbuzz_shaper.h) and
-[shaping/harfbuzz_shaper.cc](https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/fonts/shaping/harfbuzz_shaper.cc)
+[shaping/harfbuzz_shaper.h](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/platform/fonts/shaping/harfbuzz_shaper.h) and
+[shaping/harfbuzz_shaper.cc](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/platform/fonts/shaping/harfbuzz_shaper.cc)
 
 Shaping text runs is split into several
 stages: [Run segmentation](#Run-Segmentation), shaping the initial segment
@@ -347,7 +347,7 @@ fill gaps from the secondary font and so on until there are no more so called
 fill such gaps. `FontFallbackIterator` is an iterator style API, which on
 calling `next()` will deliver the first suitable font to
 try. A
-[`FontFallbackList`](https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/fonts/font_fallback_list.h) is
+[`FontFallbackList`](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/platform/fonts/font_fallback_list.h) is
 the internal representation of fonts resolved from the CSS `font-family:`
 property. `FontFallbackList` attempts to resolve font family names from the CSS
 `font-family:` property in descending order. It tries to find them among the
@@ -361,7 +361,7 @@ the
 [CSS Fonts specification](https://drafts.csswg.org/css-fonts/#font-style-matching),
 which mandates to prioritize web fonts over system fonts. Some additional
 details can be found in
-[LocaleInFonts.md](https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/renderer/platform/fonts/LocaleInFonts.md#Installed-Font-Fallback).
+[LocaleInFonts.md](https://monyhar.googlesource.com/monyhar/src/+/master/third_party/blink/renderer/platform/fonts/LocaleInFonts.md#Installed-Font-Fallback).
 
 `FontFallbackIterator` is intialized with a `FontFallbackList` and starts
 retrieving fonts from this list as its first source for fonts. If during shaping
@@ -373,7 +373,7 @@ screen. In this situation, system font fallback is invoked, which means
 attempting to find a surrogate font which contains those glyphs that were
 missing so far.  To this end `FontFallbackIterator`
 calls
-[`FontCache::FallbackFontForCharacter()`](https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/fonts/font_cache.h?type=cs&q=fallbackFontForCharacter) in
+[`FontCache::FallbackFontForCharacter()`](https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/platform/fonts/font_cache.h?type=cs&q=fallbackFontForCharacter) in
 order to retrieve a font that has a glyph for the requested Unicode
 character. This means, beyond what is listed in `font-family` there are
 additional system fonts pulled in to the shaping process.

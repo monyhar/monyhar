@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps;
+package org.monyhar.chrome.browser.webapps;
 
 import android.database.Cursor;
 import android.net.Uri;
@@ -14,10 +14,10 @@ import androidx.browser.trusted.sharing.ShareData;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.StrictModeContext;
-import org.chromium.chrome.browser.browserservices.intents.WebApkShareTarget;
-import org.chromium.net.MimeTypeFilter;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.chrome.browser.browserservices.intents.WebApkShareTarget;
+import org.monyhar.net.MimeTypeFilter;
 
 import java.util.ArrayList;
 import java.util.Arrays;

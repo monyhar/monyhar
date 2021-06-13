@@ -19,72 +19,72 @@
 
 // Step 1: Forward declarations (classes).
 
-extern const char kClassPath_org_chromium_TestJni[];
+extern const char kClassPath_org_monyhar_TestJni[];
 
-extern const char kClassPath_org_chromium_TestJni_00024MyOtherInnerClass[];
-extern std::atomic<jclass> g_org_chromium_TestJni_clazz;
-#ifndef org_chromium_TestJni_clazz_defined
-#define org_chromium_TestJni_clazz_defined
-inline jclass org_chromium_TestJni_clazz(JNIEnv* env) {
-  return base::android::LazyGetClass(env, kClassPath_org_chromium_TestJni,
-      &g_org_chromium_TestJni_clazz);
+extern const char kClassPath_org_monyhar_TestJni_00024MyOtherInnerClass[];
+extern std::atomic<jclass> g_org_monyhar_TestJni_clazz;
+#ifndef org_monyhar_TestJni_clazz_defined
+#define org_monyhar_TestJni_clazz_defined
+inline jclass org_monyhar_TestJni_clazz(JNIEnv* env) {
+  return base::android::LazyGetClass(env, kClassPath_org_monyhar_TestJni,
+      &g_org_monyhar_TestJni_clazz);
 }
 #endif
-extern std::atomic<jclass> g_org_chromium_TestJni_00024MyOtherInnerClass_clazz;
-#ifndef org_chromium_TestJni_00024MyOtherInnerClass_clazz_defined
-#define org_chromium_TestJni_00024MyOtherInnerClass_clazz_defined
-inline jclass org_chromium_TestJni_00024MyOtherInnerClass_clazz(JNIEnv* env) {
-  return base::android::LazyGetClass(env, kClassPath_org_chromium_TestJni_00024MyOtherInnerClass,
-      &g_org_chromium_TestJni_00024MyOtherInnerClass_clazz);
+extern std::atomic<jclass> g_org_monyhar_TestJni_00024MyOtherInnerClass_clazz;
+#ifndef org_monyhar_TestJni_00024MyOtherInnerClass_clazz_defined
+#define org_monyhar_TestJni_00024MyOtherInnerClass_clazz_defined
+inline jclass org_monyhar_TestJni_00024MyOtherInnerClass_clazz(JNIEnv* env) {
+  return base::android::LazyGetClass(env, kClassPath_org_monyhar_TestJni_00024MyOtherInnerClass,
+      &g_org_monyhar_TestJni_00024MyOtherInnerClass_clazz);
 }
 #endif
 
 
 // Step 2: Forward declarations (methods).
 
-JNI_GENERATOR_EXPORT jint Java_org_chromium_TestJni_nativeInit(
+JNI_GENERATOR_EXPORT jint Java_org_monyhar_TestJni_nativeInit(
     JNIEnv* env,
     jobject jcaller);
-JNI_GENERATOR_EXPORT jint Java_org_chromium_TestJni_00024MyOtherInnerClass_nativeInit(
+JNI_GENERATOR_EXPORT jint Java_org_monyhar_TestJni_00024MyOtherInnerClass_nativeInit(
     JNIEnv* env,
     jobject jcaller);
 
 
 // Step 3: Method declarations.
 
-static const JNINativeMethod kMethods_org_chromium_TestJni[] = {
-    { "nativeInit", "()I", reinterpret_cast<void*>(Java_org_chromium_TestJni_nativeInit) },
+static const JNINativeMethod kMethods_org_monyhar_TestJni[] = {
+    { "nativeInit", "()I", reinterpret_cast<void*>(Java_org_monyhar_TestJni_nativeInit) },
 };
 
 
-static const JNINativeMethod kMethods_org_chromium_TestJni_00024MyOtherInnerClass[] = {
+static const JNINativeMethod kMethods_org_monyhar_TestJni_00024MyOtherInnerClass[] = {
     { "nativeInit", "()I",
-        reinterpret_cast<void*>(Java_org_chromium_TestJni_00024MyOtherInnerClass_nativeInit) },
+        reinterpret_cast<void*>(Java_org_monyhar_TestJni_00024MyOtherInnerClass_nativeInit) },
 };
 
 
-JNI_REGISTRATION_EXPORT bool RegisterNative_org_chromium_TestJni(JNIEnv* env) {
-  const int kMethods_org_chromium_TestJniSize =
-      base::size(kMethods_org_chromium_TestJni);
+JNI_REGISTRATION_EXPORT bool RegisterNative_org_monyhar_TestJni(JNIEnv* env) {
+  const int kMethods_org_monyhar_TestJniSize =
+      base::size(kMethods_org_monyhar_TestJni);
   if (env->RegisterNatives(
-      org_chromium_TestJni_clazz(env),
-      kMethods_org_chromium_TestJni,
-      kMethods_org_chromium_TestJniSize) < 0) {
+      org_monyhar_TestJni_clazz(env),
+      kMethods_org_monyhar_TestJni,
+      kMethods_org_monyhar_TestJniSize) < 0) {
     jni_generator::HandleRegistrationError(env,
-        org_chromium_TestJni_clazz(env),
+        org_monyhar_TestJni_clazz(env),
         __FILE__);
     return false;
   }
 
 
-  const int kMethods_org_chromium_TestJni_00024MyOtherInnerClassSize =
-      base::size(kMethods_org_chromium_TestJni_00024MyOtherInnerClass);
+  const int kMethods_org_monyhar_TestJni_00024MyOtherInnerClassSize =
+      base::size(kMethods_org_monyhar_TestJni_00024MyOtherInnerClass);
   if (env->RegisterNatives(
-      org_chromium_TestJni_00024MyOtherInnerClass_clazz(env),
-      kMethods_org_chromium_TestJni_00024MyOtherInnerClass,
-      kMethods_org_chromium_TestJni_00024MyOtherInnerClassSize) < 0) {
+      org_monyhar_TestJni_00024MyOtherInnerClass_clazz(env),
+      kMethods_org_monyhar_TestJni_00024MyOtherInnerClass,
+      kMethods_org_monyhar_TestJni_00024MyOtherInnerClassSize) < 0) {
     jni_generator::HandleRegistrationError(env,
-        org_chromium_TestJni_00024MyOtherInnerClass_clazz(env),
+        org_monyhar_TestJni_00024MyOtherInnerClass_clazz(env),
         __FILE__);
     return false;
   }
@@ -98,7 +98,7 @@ JNI_REGISTRATION_EXPORT bool RegisterNative_org_chromium_TestJni(JNIEnv* env) {
 namespace test {
 
 bool RegisterMainDexNatives(JNIEnv* env) {
-  if (!RegisterNative_org_chromium_TestJni(env))
+  if (!RegisterNative_org_monyhar_TestJni(env))
     return false;
 
   return true;

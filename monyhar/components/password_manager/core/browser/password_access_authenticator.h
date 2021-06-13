@@ -18,7 +18,7 @@ namespace password_manager {
 // through the settings page. It is used on all platforms but iOS and Android
 // (see //ios/chrome/browser/ui/settings/reauthentication_module.* for iOS and
 // PasswordEntryEditor.java and PasswordReauthenticationFragment.java in
-// chrome/android/java/src/org/chromium/chrome/browser/preferences/password/
+// chrome/android/java/src/org/monyhar/chrome/browser/preferences/password/
 // for Android).
 class PasswordAccessAuthenticator {
  public:

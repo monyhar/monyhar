@@ -12,7 +12,7 @@
 #include "services/network/test/test_url_loader_factory.h"
 
 // A fake SafeBrowsingService whose database treats URLs from host
-// safe.browsing.unsafe.chromium.test as unsafe, and treats all other URLs as
+// safe.browsing.unsafe.monyhar.test as unsafe, and treats all other URLs as
 // safe.
 class FakeSafeBrowsingService : public SafeBrowsingService {
  public:

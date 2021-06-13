@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webview_shell;
+package org.monyhar.webview_shell;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -55,10 +55,10 @@ import androidx.webkit.WebSettingsCompat;
 import androidx.webkit.WebViewClientCompat;
 import androidx.webkit.WebViewFeature;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.PackageManagerUtils;
-import org.chromium.base.StrictModeContext;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.PackageManagerUtils;
+import org.monyhar.base.StrictModeContext;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -123,7 +123,7 @@ public class WebViewBrowserActivity extends AppCompatActivity {
     private SparseArray<PermissionRequest> mPendingRequests = new SparseArray<PermissionRequest>();
     private int mNextRequestKey;
 
-    // Permit any number of slashes, since chromium seems to canonicalize bad values.
+    // Permit any number of slashes, since monyhar seems to canonicalize bad values.
     private static final Pattern FILE_ANDROID_ASSET_PATTERN =
             Pattern.compile("^file:///android_(asset|res)/.*");
 

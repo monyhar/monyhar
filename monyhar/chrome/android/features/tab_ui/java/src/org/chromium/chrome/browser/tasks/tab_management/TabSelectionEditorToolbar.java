@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -13,10 +13,10 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.PluralsRes;
 import androidx.appcompat.content.res.AppCompatResources;
 
-import org.chromium.chrome.tab_ui.R;
-import org.chromium.components.browser_ui.widget.NumberRollView;
-import org.chromium.components.browser_ui.widget.TintedDrawable;
-import org.chromium.components.browser_ui.widget.selectable_list.SelectableListToolbar;
+import org.monyhar.chrome.tab_ui.R;
+import org.monyhar.components.browser_ui.widget.NumberRollView;
+import org.monyhar.components.browser_ui.widget.TintedDrawable;
+import org.monyhar.components.browser_ui.widget.selectable_list.SelectableListToolbar;
 
 import java.util.Collections;
 import java.util.List;
@@ -47,9 +47,9 @@ class TabSelectionEditorToolbar extends SelectableListToolbar<Integer> {
 
     private void showNavigationButton() {
         TintedDrawable navigationIconDrawable = TintedDrawable.constructTintedDrawable(
-                getContext(), org.chromium.chrome.R.drawable.ic_arrow_back_white_24dp);
+                getContext(), org.monyhar.chrome.R.drawable.ic_arrow_back_white_24dp);
         ColorStateList lightIconColorList = AppCompatResources.getColorStateList(
-                getContext(), org.chromium.chrome.R.color.default_icon_color_inverse);
+                getContext(), org.monyhar.chrome.R.color.default_icon_color_inverse);
         navigationIconDrawable.setTint(lightIconColorList);
 
         setNavigationIcon(navigationIconDrawable);

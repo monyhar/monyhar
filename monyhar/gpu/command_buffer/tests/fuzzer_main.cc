@@ -376,7 +376,7 @@ class CommandBufferSetup {
     context_->MakeCurrent(surface_.get());
     GpuFeatureInfo gpu_feature_info;
 #if defined(GPU_FUZZER_USE_RASTER_DECODER)
-    // Cause feature_info's |chromium_raster_transport| to be enabled.
+    // Cause feature_info's |monyhar_raster_transport| to be enabled.
     gpu_feature_info.status_values[GPU_FEATURE_TYPE_OOP_RASTERIZATION] =
         kGpuFeatureStatusEnabled;
 #endif
@@ -430,7 +430,7 @@ class CommandBufferSetup {
     }
 
 #if defined(GPU_FUZZER_USE_RASTER_DECODER)
-    CHECK(feature_info->feature_flags().chromium_raster_transport);
+    CHECK(feature_info->feature_flags().monyhar_raster_transport);
     context_state_->MakeCurrent(nullptr);
     auto* context = context_state_->context();
     decoder_.reset(raster::RasterDecoder::Create(

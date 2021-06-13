@@ -52,7 +52,7 @@ std::vector<uint8_t> GetValidPolicyFetchResponseWithPerProfilePolicy() {
   em::CloudPolicySettings policy_proto;
   // HomepageLocation is a per_profile:True policy. See policy_templates.json
   // for details.
-  policy_proto.mutable_homepagelocation()->set_value("http://chromium.org");
+  policy_proto.mutable_homepagelocation()->set_value("http://monyhar.org");
   return GetValidPolicyFetchResponse(policy_proto);
 }
 
@@ -71,7 +71,7 @@ std::vector<uint8_t> GetValidPolicyFetchResponseWithAllPolicy() {
   policy_proto.mutable_taskmanagerendprocessenabled()->set_value(false);
   // HomepageLocation is a per_profile:True policy. See policy_templates.json
   // for details.
-  policy_proto.mutable_homepagelocation()->set_value("http://chromium.org");
+  policy_proto.mutable_homepagelocation()->set_value("http://monyhar.org");
   return GetValidPolicyFetchResponse(policy_proto);
 }
 

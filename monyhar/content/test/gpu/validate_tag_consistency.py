@@ -30,7 +30,7 @@ TAG_HEADER = """\
 # tags: [ desktop
 #         mobile ]
 # Browser
-# tags: [ android-chromium android-webview-instrumentation
+# tags: [ android-monyhar android-webview-instrumentation
 #         debug debug-x64
 #         release release-x64 ]
 # GPU

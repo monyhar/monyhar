@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant;
+package org.monyhar.chrome.browser.autofill_assistant;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.chrome.browser.autofill_assistant.carousel.AssistantCarouselModel;
-import org.chromium.chrome.browser.autofill_assistant.details.AssistantDetailsModel;
-import org.chromium.chrome.browser.autofill_assistant.form.AssistantFormModel;
-import org.chromium.chrome.browser.autofill_assistant.generic_ui.AssistantGenericUiModel;
-import org.chromium.chrome.browser.autofill_assistant.header.AssistantHeaderModel;
-import org.chromium.chrome.browser.autofill_assistant.infobox.AssistantInfoBoxModel;
-import org.chromium.chrome.browser.autofill_assistant.overlay.AssistantOverlayModel;
-import org.chromium.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataModel;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.chrome.browser.autofill_assistant.carousel.AssistantCarouselModel;
+import org.monyhar.chrome.browser.autofill_assistant.details.AssistantDetailsModel;
+import org.monyhar.chrome.browser.autofill_assistant.form.AssistantFormModel;
+import org.monyhar.chrome.browser.autofill_assistant.generic_ui.AssistantGenericUiModel;
+import org.monyhar.chrome.browser.autofill_assistant.header.AssistantHeaderModel;
+import org.monyhar.chrome.browser.autofill_assistant.infobox.AssistantInfoBoxModel;
+import org.monyhar.chrome.browser.autofill_assistant.overlay.AssistantOverlayModel;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataModel;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * State for the Autofill Assistant UI.

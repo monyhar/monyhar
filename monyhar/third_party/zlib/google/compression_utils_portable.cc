@@ -48,7 +48,7 @@ uint32_t GetGzipUncompressedSize(const Bytef* compressed_data, size_t length) {
 }
 
 // The number of window bits determines the type of wrapper to use - see
-// https://cs.chromium.org/chromium/src/third_party/zlib/zlib.h?l=566
+// https://cs.monyhar.org/monyhar/src/third_party/zlib/zlib.h?l=566
 inline int ZlibStreamWrapperType(WrapperType type) {
   if (type == ZLIB)  // zlib DEFLATE stream wrapper
     return MAX_WBITS;

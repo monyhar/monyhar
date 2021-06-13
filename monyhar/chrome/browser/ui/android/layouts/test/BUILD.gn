@@ -8,7 +8,7 @@ android_library("java") {
   testonly = true
 
   sources =
-      [ "java/src/org/chromium/chrome/browser/layouts/LayoutTestUtils.java" ]
+      [ "java/src/org/monyhar/chrome/browser/layouts/LayoutTestUtils.java" ]
 
   deps = [
     "..:java",

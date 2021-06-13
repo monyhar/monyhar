@@ -11,7 +11,7 @@
 syntax = "proto2";
 
 option java_multiple_files = true;
-option java_package = "org.chromium.components.sync.protocol";
+option java_package = "org.monyhar.components.sync.protocol";
 
 option optimize_for = LITE_RUNTIME;
 
@@ -87,7 +87,7 @@ message EntitySpecifics {
   // To add new datatype-specific fields to the protocol, extend
   // EntitySpecifics.  First, pick a non-colliding tag number by
   // picking a Cr-Commit-Position of one of your past commits
-  // to src.chromium.org.  Then, in a different protocol buffer
+  // to src.monyhar.org.  Then, in a different protocol buffer
   // definition, define your message type, and add an optional field
   // to the list below using the unique tag value you selected.
   //
@@ -233,7 +233,7 @@ message SyncEntity {
   //   Before then, server implementations would maintain a unique-within-parent
   //   value separate from its base, "non-unique" value.  Clients had not
   //   depended on the uniqueness of the property since November 2009; it was
-  //   removed from Chromium by http://codereview.chromium.org/371029 .
+  //   removed from Chromium by http://codereview.monyhar.org/371029 .
   // Present in both GetUpdatesResponse and CommitMessage.
   // WARNING: This field used to be required before M60. Any client before this
   // will fail to deserialize if this field is missing.
@@ -419,7 +419,7 @@ message SyncEntity {
 
 // This message contains diagnostic information used to correlate
 // commit-related traffic with extensions-related mutations to the
-// data models in chromium.  It plays no functional role in
+// data models in monyhar.  It plays no functional role in
 // processing this CommitMessage.
 message ChromiumExtensionsActivity {
   // The human-readable ID identifying the extension responsible

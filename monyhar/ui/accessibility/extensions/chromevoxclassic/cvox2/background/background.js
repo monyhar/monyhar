@@ -161,7 +161,7 @@ Background = function() {
 /**
  * @const {string}
  */
-Background.ISSUE_URL = 'https://code.google.com/p/chromium/issues/entry?' +
+Background.ISSUE_URL = 'https://code.google.com/p/monyhar/issues/entry?' +
     'labels=Type-Bug,Pri-2,cvox2,OS-Chrome&' +
     'components=UI>accessibility&' +
     'description=';

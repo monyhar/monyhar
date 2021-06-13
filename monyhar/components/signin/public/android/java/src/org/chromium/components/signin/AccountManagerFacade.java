@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.signin;
+package org.monyhar.components.signin;
 
 import android.accounts.Account;
 import android.accounts.AccountManager;
@@ -16,8 +16,8 @@ import androidx.annotation.WorkerThread;
 
 import com.google.common.base.Optional;
 
-import org.chromium.base.Callback;
-import org.chromium.base.Promise;
+import org.monyhar.base.Callback;
+import org.monyhar.base.Promise;
 
 import java.util.List;
 

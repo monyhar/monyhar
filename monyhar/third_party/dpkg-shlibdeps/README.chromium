@@ -18,7 +18,7 @@ Patches:
   Prevents weak undefined symbols from introducing hard dependencies. Upstream
   merge request:
   https://salsa.debian.org/thomasanderson-guest/dpkg/merge_requests/1
-- 0002-fix-compatibility-for-chromium.patch
+- 0002-fix-compatibility-for-monyhar.patch
   dpkg-shlibdeps.pl comes from dpkg-dev, which depends on libdpkg-perl that
   provides perl modules for eg. locating shared libraries and getting a list of
   symbols from them. The API of libdpkg-perl is not stable (but changes very

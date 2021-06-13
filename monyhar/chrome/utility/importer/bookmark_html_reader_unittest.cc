@@ -294,7 +294,7 @@ void BookmarkHTMLReaderTestWithData::ExpectSecondFirefox23Bookmark(
   EXPECT_EQ(base::Time::FromTimeT(1376102304), entry.creation_time);
   EXPECT_EQ(1U, entry.path.size());
   EXPECT_EQ(u"Chromium", entry.path.front());
-  EXPECT_EQ("https://code.google.com/p/chromium/issues/list", entry.url.spec());
+  EXPECT_EQ("https://code.google.com/p/monyhar/issues/list", entry.url.spec());
 }
 
 void BookmarkHTMLReaderTestWithData::ExpectThirdFirefox23Bookmark(
@@ -304,7 +304,7 @@ void BookmarkHTMLReaderTestWithData::ExpectThirdFirefox23Bookmark(
   EXPECT_EQ(base::Time::FromTimeT(1376102224), entry.creation_time);
   EXPECT_EQ(1U, entry.path.size());
   EXPECT_EQ(u"Chromium", entry.path.front());
-  EXPECT_EQ("http://code.google.com/p/chromium/codesearch", entry.url.spec());
+  EXPECT_EQ("http://code.google.com/p/monyhar/codesearch", entry.url.spec());
 }
 
 void BookmarkHTMLReaderTestWithData::ExpectFirstFirefoxBookmarkWithKeyword(

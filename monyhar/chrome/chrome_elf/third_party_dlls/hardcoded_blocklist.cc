@@ -16,7 +16,7 @@ constexpr size_t kDllBlocklistMaxSize = 64u;
 // if there is nothing else Chrome can do to prevent those crashes.
 // For more information about how this list is generated, and how to get off
 // of it, see:
-// https://sites.google.com/a/chromium.org/dev/Home/third-party-developers
+// https://sites.google.com/a/monyhar.org/dev/Home/third-party-developers
 const char* const kDllBlocklist[kDllBlocklistMaxSize] = {
     "949ba8b6a9.dll",           // Coupon Time.
     "activedetect32.dll",       // Lenovo One Key Theater.

@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.module_installer.util;
+package org.monyhar.components.module_installer.util;
 
-import org.chromium.base.BundleUtils;
-import org.chromium.components.module_installer.logger.SplitAvailabilityLogger;
+import org.monyhar.base.BundleUtils;
+import org.monyhar.components.module_installer.logger.SplitAvailabilityLogger;
 
 /**
  * Utilitary class (proxy) exposing DFM functionality to the broader application.

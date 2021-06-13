@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.pagecontroller.utils;
+package org.monyhar.chrome.test.pagecontroller.utils;
 
 import android.os.SystemClock;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 import java.util.Collections;
 import java.util.List;

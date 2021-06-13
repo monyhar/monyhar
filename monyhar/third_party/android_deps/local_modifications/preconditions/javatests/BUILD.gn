@@ -6,7 +6,7 @@ import("//build/config/android/rules.gni")
 
 android_library("javatests") {
   testonly = true
-  sources = [ "org/chromium/preconditions/PreconditionsTest.java" ]
+  sources = [ "org/monyhar/preconditions/PreconditionsTest.java" ]
   deps = [
     "$google_play_services_package:google_play_services_basement_java",
     "//base:base_java",

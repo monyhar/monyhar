@@ -12,5 +12,5 @@ include_rules = [
 
   # TODO(crbug.com/470582): ApplicationStatus should be moved to //chrome. In the
   # mean time, ban new usages.
-  "-base/android/java/src/org/chromium/base/ApplicationStatus.java",
+  "-base/android/java/src/org/monyhar/base/ApplicationStatus.java",
 ]

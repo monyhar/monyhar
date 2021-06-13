@@ -4,7 +4,7 @@
 
 /**
  * @fileoverview @externs
- * Externs file shipped into the chromium build to typecheck uncompiled, "pure"
+ * Externs file shipped into the monyhar build to typecheck uncompiled, "pure"
  * JavaScript used to interoperate with the open-source privileged WebUI.
  * TODO(b/142750452): Convert this file to ES6.
  */

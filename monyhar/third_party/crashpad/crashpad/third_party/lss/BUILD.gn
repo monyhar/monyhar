@@ -15,7 +15,7 @@
 import("../../build/crashpad_buildconfig.gni")
 
 config("lss_config") {
-  if (crashpad_is_in_chromium) {
+  if (crashpad_is_in_monyhar) {
     defines = [ "CRASHPAD_LSS_SOURCE_EXTERNAL" ]
   } else {
     defines = [ "CRASHPAD_LSS_SOURCE_EMBEDDED" ]

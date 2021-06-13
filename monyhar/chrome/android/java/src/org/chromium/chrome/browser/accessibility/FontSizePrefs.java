@@ -2,21 +2,21 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.accessibility;
+package org.monyhar.chrome.browser.accessibility;
 
 import android.annotation.SuppressLint;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.MathUtils;
-import org.chromium.base.ObserverList;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.MathUtils;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
 
 /**
  * Singleton class for accessing these font size-related preferences:
@@ -180,7 +180,7 @@ public class FontSizePrefs {
 
     private void recordUserFontPrefHistogram(String histogramName) {
         // User font size prefs range from 0.5 to 2.0 (50% to 200%) and can be updated in increments
-        // of 5% (see org.chromium.chrome.browser.accessibility.settings.TextScalePreference).
+        // of 5% (see org.monyhar.chrome.browser.accessibility.settings.TextScalePreference).
         int sample = (int) (FontSizePrefs.getInstance().getUserFontScaleFactor() * 100);
         assert sample >= 50 && sample <= 200 : "Unexpected font size pref";
         RecordHistogram.recordSparseHistogram(histogramName, sample);

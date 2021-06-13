@@ -7,21 +7,21 @@ include_rules = [
   "+components/crash/android/java",
   "+components/external_intents",
   "+components/infobars/android",
-  "+components/location/android/java/src/org/chromium/components/location",
+  "+components/location/android/java/src/org/monyhar/components/location",
   "+components/minidump_uploader",
   "+components/page_info/android/java",
   "+components/payments/content/android",
   "+components/webapk/android/libs",
   "+components/webauthn/android",
-  "+services/device/public/java/src/org/chromium/device/geolocation",
+  "+services/device/public/java/src/org/monyhar/device/geolocation",
 
   # WebLayerNotificationWrapperBuilder should be used for all notifications.
-  "-components/browser_ui/notifications/android/java/src/org/chromium/components/browser_ui/notifications/NotificationWrapperCompatBuilder.java",
-  "-components/browser_ui/notifications/android/java/src/org/chromium/components/browser_ui/notifications/NotificationWrapperStandardBuilder.java",
+  "-components/browser_ui/notifications/android/java/src/org/monyhar/components/browser_ui/notifications/NotificationWrapperCompatBuilder.java",
+  "-components/browser_ui/notifications/android/java/src/org/monyhar/components/browser_ui/notifications/NotificationWrapperStandardBuilder.java",
 ]
 specific_include_rules = {
   "WebLayerNotificationWrapperBuilder.java": [
-    "+components/browser_ui/notifications/android/java/src/org/chromium/components/browser_ui/notifications/NotificationWrapperCompatBuilder.java",
-    "+components/browser_ui/notifications/android/java/src/org/chromium/components/browser_ui/notifications/NotificationWrapperStandardBuilder.java",
+    "+components/browser_ui/notifications/android/java/src/org/monyhar/components/browser_ui/notifications/NotificationWrapperCompatBuilder.java",
+    "+components/browser_ui/notifications/android/java/src/org/monyhar/components/browser_ui/notifications/NotificationWrapperStandardBuilder.java",
   ]
 }

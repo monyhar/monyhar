@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.memory;
+package org.monyhar.base.memory;
 
-import org.chromium.base.MemoryPressureLevel;
+import org.monyhar.base.MemoryPressureLevel;
 
 /**
  * Memory pressure callback interface.

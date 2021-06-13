@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.infobars;
+package org.monyhar.components.infobars;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -26,13 +26,13 @@ import androidx.annotation.ColorRes;
 import androidx.annotation.Nullable;
 import androidx.appcompat.content.res.AppCompatResources;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.components.browser_ui.widget.DualControlLayout;
-import org.chromium.ui.UiUtils;
-import org.chromium.ui.text.NoUnderlineClickableSpan;
-import org.chromium.ui.widget.ButtonCompat;
-import org.chromium.ui.widget.ChromeImageButton;
-import org.chromium.ui.widget.ChromeImageView;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.components.browser_ui.widget.DualControlLayout;
+import org.monyhar.ui.UiUtils;
+import org.monyhar.ui.text.NoUnderlineClickableSpan;
+import org.monyhar.ui.widget.ButtonCompat;
+import org.monyhar.ui.widget.ChromeImageButton;
+import org.monyhar.ui.widget.ChromeImageView;
 
 import java.util.ArrayList;
 import java.util.List;

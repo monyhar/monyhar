@@ -40,7 +40,7 @@ class MilestonesIntgrationTest(unittest.TestCase):
     milestones = {
         '99': {
             'name': 'm99',
-            'project': 'chromium-m99',
+            'project': 'monyhar-m99',
             'ref': 'refs/branch-heads/AAAA',
         },
     }
@@ -58,12 +58,12 @@ class MilestonesIntgrationTest(unittest.TestCase):
     milestones = {
         '99': {
             'name': 'm99',
-            'project': 'chromium-m99',
+            'project': 'monyhar-m99',
             'ref': 'refs/branch-heads/AAAA',
         },
         '101': {
             'name': 'm101',
-            'project': 'chromium-m101',
+            'project': 'monyhar-m101',
             'ref': 'refs/branch-heads/BBBB',
         },
     }
@@ -83,17 +83,17 @@ class MilestonesIntgrationTest(unittest.TestCase):
         {
             "99": {
                 "name": "m99",
-                "project": "chromium-m99",
+                "project": "monyhar-m99",
                 "ref": "refs/branch-heads/AAAA"
             },
             "100": {
                 "name": "m100",
-                "project": "chromium-m100",
+                "project": "monyhar-m100",
                 "ref": "refs/branch-heads/CCCC"
             },
             "101": {
                 "name": "m101",
-                "project": "chromium-m101",
+                "project": "monyhar-m101",
                 "ref": "refs/branch-heads/BBBB"
             }
         }
@@ -120,17 +120,17 @@ class MilestonesIntgrationTest(unittest.TestCase):
     milestones = {
         '99': {
             'name': 'm99',
-            'project': 'chromium-m99',
+            'project': 'monyhar-m99',
             'ref': 'refs/branch-heads/AAAA',
         },
         '101': {
             'name': 'm101',
-            'project': 'chromium-m101',
+            'project': 'monyhar-m101',
             'ref': 'refs/branch-heads/BBBB',
         },
         '100': {
             'name': 'm100',
-            'project': 'chromium-m100',
+            'project': 'monyhar-m100',
             'ref': 'refs/branch-heads/CCCC'
         },
     }
@@ -149,12 +149,12 @@ class MilestonesIntgrationTest(unittest.TestCase):
         {
             "100": {
                 "name": "m100",
-                "project": "chromium-m100",
+                "project": "monyhar-m100",
                 "ref": "refs/branch-heads/CCCC"
             },
             "101": {
                 "name": "m101",
-                "project": "chromium-m101",
+                "project": "monyhar-m101",
                 "ref": "refs/branch-heads/BBBB"
             }
         }

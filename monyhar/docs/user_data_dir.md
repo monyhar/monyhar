@@ -27,15 +27,15 @@ Example (Windows):
 ## Default Location
 
 The default location of the user data directory is computed by
-[`chrome::GetDefaultUserDataDirectory`](https://cs.chromium.org/chromium/src/chrome/common/chrome_paths_internal.h?q=GetDefaultUserDataDirectory).
+[`chrome::GetDefaultUserDataDirectory`](https://cs.monyhar.org/monyhar/src/chrome/common/chrome_paths_internal.h?q=GetDefaultUserDataDirectory).
 
 Generally it varies by
 
 * OS platform,
-* branding ([Chrome vs. Chromium](chromium_browser_vs_google_chrome.md), based
+* branding ([Chrome vs. Chromium](monyhar_browser_vs_google_chrome.md), based
   on `is_chrome_branded` in [GN
-  args](https://www.chromium.org/developers/gn-build-configuration)), and
-* [release channel](https://www.chromium.org/getting-involved/dev-channel)
+  args](https://www.monyhar.org/developers/gn-build-configuration)), and
+* [release channel](https://www.monyhar.org/getting-involved/dev-channel)
   (stable / beta / dev / canary).
 
 ### Windows
@@ -48,7 +48,7 @@ The default location is in the local app data folder:
 * [Chromium] `%LOCALAPPDATA%\Chromium\User Data`
 
 (The canary channel suffix is determined using
-[`InstallConstants::install_suffix`](https://cs.chromium.org/chromium/src/chrome/install_static/install_constants.h?q=install_suffix).)
+[`InstallConstants::install_suffix`](https://cs.monyhar.org/monyhar/src/chrome/install_static/install_constants.h?q=install_suffix).)
 
 ### Mac OS X
 
@@ -69,10 +69,10 @@ The default location is in `~/.config`:
 * [Chrome Stable] `~/.config/google-chrome`
 * [Chrome Beta] `~/.config/google-chrome-beta`
 * [Chrome Dev] `~/.config/google-chrome-unstable`
-* [Chromium] `~/.config/chromium`
+* [Chromium] `~/.config/monyhar`
 
 (The beta and dev channel suffixes are determined from `$CHROME_VERSION_EXTRA`,
-which is passed by the [launch wrapper script](https://cs.chromium.org/chromium/src/chrome/installer/linux/common/wrapper?q=CHROME_VERSION_EXTRA).)
+which is passed by the [launch wrapper script](https://cs.monyhar.org/monyhar/src/chrome/installer/linux/common/wrapper?q=CHROME_VERSION_EXTRA).)
 
 The `~/.config` portion of the default location can be overridden by
 `$CHROME_CONFIG_HOME` (since M61) or by `$XDG_CONFIG_HOME`.

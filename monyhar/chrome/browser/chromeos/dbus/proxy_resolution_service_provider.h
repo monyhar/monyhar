@@ -36,7 +36,7 @@ namespace chromeos {
 //
 // The following method is exported:
 //
-// Interface: org.chromium.NetworkProxyServiceInterface
+// Interface: org.monyhar.NetworkProxyServiceInterface
 //            (kNetworkProxyServiceInterface)
 // Method: ResolveProxy (kNetworkProxyServiceResolveProxyMethod)
 // Parameters: string:source_url
@@ -51,9 +51,9 @@ namespace chromeos {
 // This service can be manually tested using dbus-send:
 //
 //   % dbus-send --system --type=method_call --print-reply
-//       --dest=org.chromium.NetworkProxyService
-//       /org/chromium/NetworkProxyService
-//       org.chromium.NetworkProxyServiceInterface.ResolveProxy
+//       --dest=org.monyhar.NetworkProxyService
+//       /org/monyhar/NetworkProxyService
+//       org.monyhar.NetworkProxyServiceInterface.ResolveProxy
 //       string:https://www.google.com/
 //
 class ProxyResolutionServiceProvider

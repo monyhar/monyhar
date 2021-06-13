@@ -126,18 +126,18 @@ if (is_android) {
 
   generate_jni("media_jni_headers") {
     sources = [
-      "java/src/org/chromium/media/AudioManagerAndroid.java",
-      "java/src/org/chromium/media/AudioTrackOutputStream.java",
-      "java/src/org/chromium/media/CodecProfileLevelList.java",
-      "java/src/org/chromium/media/HdrMetadata.java",
-      "java/src/org/chromium/media/MediaCodecBridge.java",
-      "java/src/org/chromium/media/MediaCodecBridgeBuilder.java",
-      "java/src/org/chromium/media/MediaCodecUtil.java",
-      "java/src/org/chromium/media/MediaDrmBridge.java",
-      "java/src/org/chromium/media/MediaDrmStorageBridge.java",
-      "java/src/org/chromium/media/MediaPlayerBridge.java",
-      "java/src/org/chromium/media/MediaPlayerListener.java",
-      "java/src/org/chromium/media/MediaServerCrashListener.java",
+      "java/src/org/monyhar/media/AudioManagerAndroid.java",
+      "java/src/org/monyhar/media/AudioTrackOutputStream.java",
+      "java/src/org/monyhar/media/CodecProfileLevelList.java",
+      "java/src/org/monyhar/media/HdrMetadata.java",
+      "java/src/org/monyhar/media/MediaCodecBridge.java",
+      "java/src/org/monyhar/media/MediaCodecBridgeBuilder.java",
+      "java/src/org/monyhar/media/MediaCodecUtil.java",
+      "java/src/org/monyhar/media/MediaDrmBridge.java",
+      "java/src/org/monyhar/media/MediaDrmStorageBridge.java",
+      "java/src/org/monyhar/media/MediaPlayerBridge.java",
+      "java/src/org/monyhar/media/MediaPlayerListener.java",
+      "java/src/org/monyhar/media/MediaServerCrashListener.java",
     ]
   }
 
@@ -170,41 +170,41 @@ if (is_android) {
       ":java_switches",
       "//media/base:java_enums",
     ]
-    resources_package = "org.chromium.media"
+    resources_package = "org.monyhar.media"
     sources = [
-      "java/src/org/chromium/media/AudioManagerAndroid.java",
-      "java/src/org/chromium/media/AudioTrackOutputStream.java",
-      "java/src/org/chromium/media/BitrateAdjuster.java",
-      "java/src/org/chromium/media/CodecProfileLevelList.java",
-      "java/src/org/chromium/media/HdrMetadata.java",
-      "java/src/org/chromium/media/MaxAnticipatedResolutionEstimator.java",
-      "java/src/org/chromium/media/MediaCodecBridge.java",
-      "java/src/org/chromium/media/MediaCodecBridgeBuilder.java",
-      "java/src/org/chromium/media/MediaCodecEncoder.java",
-      "java/src/org/chromium/media/MediaCodecUtil.java",
-      "java/src/org/chromium/media/MediaDrmBridge.java",
-      "java/src/org/chromium/media/MediaDrmSessionManager.java",
-      "java/src/org/chromium/media/MediaDrmStorageBridge.java",
-      "java/src/org/chromium/media/MediaFormatBuilder.java",
-      "java/src/org/chromium/media/MediaPlayerBridge.java",
-      "java/src/org/chromium/media/MediaPlayerListener.java",
-      "java/src/org/chromium/media/MediaServerCrashListener.java",
-      "java/src/org/chromium/media/ScreenResolutionUtil.java",
+      "java/src/org/monyhar/media/AudioManagerAndroid.java",
+      "java/src/org/monyhar/media/AudioTrackOutputStream.java",
+      "java/src/org/monyhar/media/BitrateAdjuster.java",
+      "java/src/org/monyhar/media/CodecProfileLevelList.java",
+      "java/src/org/monyhar/media/HdrMetadata.java",
+      "java/src/org/monyhar/media/MaxAnticipatedResolutionEstimator.java",
+      "java/src/org/monyhar/media/MediaCodecBridge.java",
+      "java/src/org/monyhar/media/MediaCodecBridgeBuilder.java",
+      "java/src/org/monyhar/media/MediaCodecEncoder.java",
+      "java/src/org/monyhar/media/MediaCodecUtil.java",
+      "java/src/org/monyhar/media/MediaDrmBridge.java",
+      "java/src/org/monyhar/media/MediaDrmSessionManager.java",
+      "java/src/org/monyhar/media/MediaDrmStorageBridge.java",
+      "java/src/org/monyhar/media/MediaFormatBuilder.java",
+      "java/src/org/monyhar/media/MediaPlayerBridge.java",
+      "java/src/org/monyhar/media/MediaPlayerListener.java",
+      "java/src/org/monyhar/media/MediaServerCrashListener.java",
+      "java/src/org/monyhar/media/ScreenResolutionUtil.java",
     ]
   }
 
   # TODO (b/146418831): Replace with androidx version
   android_library("display_java") {
-    sources = [ "java/src/org/chromium/media/DisplayCompat.java" ]
+    sources = [ "java/src/org/monyhar/media/DisplayCompat.java" ]
 
     deps = [ "//third_party/androidx:androidx_annotation_annotation_java" ]
   }
 
   junit_binary("media_base_junit_tests") {
     sources = [
-      "java/src/test/org/chromium/media/AudioTrackOutputStreamTest.java",
-      "java/src/test/org/chromium/media/BitrateAdjusterTest.java",
-      "java/src/test/org/chromium/media/MediaFormatBuilderTest.java",
+      "java/src/test/org/monyhar/media/AudioTrackOutputStreamTest.java",
+      "java/src/test/org/monyhar/media/BitrateAdjusterTest.java",
+      "java/src/test/org/monyhar/media/MediaFormatBuilderTest.java",
     ]
     deps = [
       ":media_java",

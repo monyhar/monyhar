@@ -39,7 +39,7 @@ $ ./build/android/adb_chrome_public_command_line --my-happy-flag-here
 
 ```
 
-Select chromium as the system debug app to pick up flags!:
+Select monyhar as the system debug app to pick up flags!:
    * Go to the `Developer Options` in Android Settings
    * Find the `Select debug app` option.
    * Select Chromium (after your first install)
@@ -54,7 +54,7 @@ in `about://version`.
 
 This seems to be the Android moral equivalent of the the `chrome` target on
 desktop. It builds the APK that you want to install on your phone to run your
-version of chromium.
+version of monyhar.
 
 
 ## Running logcat without going crazy.
@@ -64,13 +64,13 @@ Often you just want to look at stack traces and things from chrome logs. This
 can be filtered with a command like the following:
 
 ```
-adb logcat -s chromium:* ActivityManager:* WindowManager:* libc:* DEBUG:* System.err:*
+adb logcat -s monyhar:* ActivityManager:* WindowManager:* libc:* DEBUG:* System.err:*
 ```
 
 The `-s` silences everything that's not explicitly listed by default.
 `ActivityManager` shows the android life-cycle events for Chrome. `WindowManager`
 shows window changes. `libc` and `DEBUG` show stack traces. `System.err` is the
-Java interpretation of the C failures. And `chromium` is obviously the bulk of
+Java interpretation of the C failures. And `monyhar` is obviously the bulk of
 the interesting messages.
 
 ## Running telemetry (aka `./tools/perf/run_benchmark`)
@@ -92,5 +92,5 @@ nifty options to `--browser` like:
 --browser=android-chrome-beta
 --browser=android-chrome-dev
 --browser=android-chrome-canary
---browser=android-chrome-chromium
+--browser=android-chrome-monyhar
 ```

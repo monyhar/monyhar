@@ -15,7 +15,7 @@
 
 namespace media {
 
-// These chromium classes are the corresponding classes in webrtc project.
+// These monyhar classes are the corresponding classes in webrtc project.
 // See third_party/webrtc/api/video_codecs/video_encoder.h for the detail.
 
 struct MEDIA_EXPORT ResolutionBitrateLimit {

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.services;
+package org.monyhar.android_webview.services;
 
 import android.os.Handler;
 import android.os.HandlerThread;
@@ -10,9 +10,9 @@ import android.os.ParcelFileDescriptor;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.android_webview.common.variations.VariationsUtils;
-import org.chromium.base.Log;
-import org.chromium.components.variations.firstrun.VariationsSeedFetcher.SeedInfo;
+import org.monyhar.android_webview.common.variations.VariationsUtils;
+import org.monyhar.base.Log;
+import org.monyhar.components.variations.firstrun.VariationsSeedFetcher.SeedInfo;
 
 import java.io.File;
 import java.io.FileNotFoundException;

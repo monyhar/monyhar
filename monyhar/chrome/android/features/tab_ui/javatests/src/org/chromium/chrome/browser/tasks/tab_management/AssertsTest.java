@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
 import androidx.test.filters.SmallTest;
 
@@ -10,9 +10,9 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.build.BuildConfig;
-import org.chromium.chrome.browser.tasks.tab_groups.TabGroupUtils;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.build.BuildConfig;
+import org.monyhar.chrome.browser.tasks.tab_groups.TabGroupUtils;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
 
 /**
  * Test that ensures Java asserts are working in tab_management feature module.

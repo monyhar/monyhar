@@ -36,7 +36,7 @@
   ],
   'DATA': [
     'LICENSE',
-    'README.chromium',
+    'README.monyhar',
     'json_batchallocator.h',
     'json_internalarray.inl',
     'json_internalmap.inl',

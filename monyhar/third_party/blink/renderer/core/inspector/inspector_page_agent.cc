@@ -1208,7 +1208,7 @@ CreateGatedAPIFeaturesArray(LocalDOMWindow* window) {
     features->push_back(protocol::Page::GatedAPIFeaturesEnum::
                             SharedArrayBuffersTransferAllowed);
   }
-  // TODO(chromium:1139899): Report availablility of performance.measureMemory()
+  // TODO(monyhar:1139899): Report availablility of performance.measureMemory()
   // and performance.profile() once they are gated/available, respectively.
   return features;
 }

@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base;
+package org.monyhar.base;
 
 import android.text.TextUtils;
 import android.util.Patterns;
 
-import org.chromium.base.annotations.UsedByReflection;
+import org.monyhar.base.annotations.UsedByReflection;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -39,7 +39,7 @@ public class PiiElider {
             Pattern.compile("(" + HOST_NAME + "|" + IP_ADDRESS + ")");
 
     private static final Pattern LIKELY_EXCEPTION_LOG =
-            Pattern.compile("\\sat\\sorg\\.chromium\\.[^ ]+.");
+            Pattern.compile("\\sat\\sorg\\.monyhar\\.[^ ]+.");
 
     private static final Pattern WEB_URL =
             Pattern.compile("(?:\\b|^)((?:(http|https|Http|Https|rtsp|Rtsp):"
@@ -61,7 +61,7 @@ public class PiiElider {
 
     private static final Pattern CONSOLE_MSG = Pattern.compile("\\[\\w*:CONSOLE.*\\].*");
 
-    private static final String[] APP_NAMESPACE = new String[] {"org.chromium.", "com.google."};
+    private static final String[] APP_NAMESPACE = new String[] {"org.monyhar.", "com.google."};
 
     private static final String[] SYSTEM_NAMESPACE = new String[] {"android.accessibilityservice",
             "android.accounts", "android.animation", "android.annotation", "android.app",

@@ -15,7 +15,7 @@
 //    are already from privileged code (at least for now).
 //
 // See also
-// https://chromium-coverage.appspot.com/reports/763373_fuzzers_only/linux/chromium/src/components/cast_channel/report.html
+// https://monyhar-coverage.appspot.com/reports/763373_fuzzers_only/linux/monyhar/src/components/cast_channel/report.html
 // for fuzz test coverage.
 
 syntax = "proto2";

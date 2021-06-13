@@ -39,19 +39,19 @@ import tombstones
 
 _MAX_INLINE_FLAGS_LENGTH = 50  # Arbitrarily chosen.
 _EXTRA_COMMAND_LINE_FILE = (
-    'org.chromium.native_test.NativeTest.CommandLineFile')
+    'org.monyhar.native_test.NativeTest.CommandLineFile')
 _EXTRA_COMMAND_LINE_FLAGS = (
-    'org.chromium.native_test.NativeTest.CommandLineFlags')
+    'org.monyhar.native_test.NativeTest.CommandLineFlags')
 _EXTRA_COVERAGE_DEVICE_FILE = (
-    'org.chromium.native_test.NativeTest.CoverageDeviceFile')
+    'org.monyhar.native_test.NativeTest.CoverageDeviceFile')
 _EXTRA_STDOUT_FILE = (
-    'org.chromium.native_test.NativeTestInstrumentationTestRunner'
+    'org.monyhar.native_test.NativeTestInstrumentationTestRunner'
         '.StdoutFile')
 _EXTRA_TEST = (
-    'org.chromium.native_test.NativeTestInstrumentationTestRunner'
+    'org.monyhar.native_test.NativeTestInstrumentationTestRunner'
         '.Test')
 _EXTRA_TEST_LIST = (
-    'org.chromium.native_test.NativeTestInstrumentationTestRunner'
+    'org.monyhar.native_test.NativeTestInstrumentationTestRunner'
         '.TestList')
 
 _SECONDS_TO_NANOS = int(1e9)
@@ -252,7 +252,7 @@ class _ApkDelegate(object):
   def GetTestDataRoot(self, device):
     # pylint: disable=no-self-use
     return posixpath.join(device.GetExternalStoragePath(),
-                          'chromium_tests_root')
+                          'monyhar_tests_root')
 
   def Install(self, device):
     if self._test_apk_incremental_install_json:
@@ -380,7 +380,7 @@ class _ExeDelegate(object):
   def GetTestDataRoot(self, device):
     # pylint: disable=no-self-use
     # pylint: disable=unused-argument
-    return posixpath.join(constants.TEST_EXECUTABLE_DIR, 'chromium_tests_root')
+    return posixpath.join(constants.TEST_EXECUTABLE_DIR, 'monyhar_tests_root')
 
   def Install(self, device):
     # TODO(jbudorick): Look into merging this with normal data deps pushing if
@@ -654,7 +654,7 @@ class LocalDeviceGtestRun(local_device_test_run.LocalDeviceTestRun):
 
   def _UploadTestArtifacts(self, device, test_artifacts_dir):
     # TODO(jbudorick): Reconcile this with the output manager once
-    # https://codereview.chromium.org/2933993002/ lands.
+    # https://codereview.monyhar.org/2933993002/ lands.
     if test_artifacts_dir:
       with tempfile_ext.NamedTemporaryDirectory() as test_artifacts_host_dir:
         device.PullFile(test_artifacts_dir.name, test_artifacts_host_dir)

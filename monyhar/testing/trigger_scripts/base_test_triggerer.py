@@ -143,7 +143,7 @@ class BaseTestTriggerer(object):
   # swarming to its own object to make trigger logic more clear.
   def query_swarming(self, api, query_args, verbose,
                      limit='0',
-                     server='chromium-swarm.appspot.com'):
+                     server='monyhar-swarm.appspot.com'):
     try:
       temp_file = self.make_temp_file(prefix='base_trigger_dimensions',
                                       suffix='.json')

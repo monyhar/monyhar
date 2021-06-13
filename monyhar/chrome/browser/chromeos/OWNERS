@@ -2,17 +2,17 @@
 # structural changes, use usual OWNERS rules.
 per-file BUILD.gn=*
 
-achuith@chromium.org
-alemate@chromium.org
-jamescook@chromium.org
-khorimoto@chromium.org
-oshima@chromium.org
-satorux@chromium.org
-xiyuan@chromium.org
-per-file *active_directory*=rsorokin@chromium.org
-per-file *active_directory*=fsandrade@chromium.org
-per-file *active_directory*=tomdobro@chromium.org
-per-file tpm_firmware_update*=mnissler@chromium.org
+achuith@monyhar.org
+alemate@monyhar.org
+jamescook@monyhar.org
+khorimoto@monyhar.org
+oshima@monyhar.org
+satorux@monyhar.org
+xiyuan@monyhar.org
+per-file *active_directory*=rsorokin@monyhar.org
+per-file *active_directory*=fsandrade@monyhar.org
+per-file *active_directory*=tomdobro@monyhar.org
+per-file tpm_firmware_update*=mnissler@monyhar.org
 
 # Sandbox selection needs security review
 per-file service_sandbox_type.h=set noparent

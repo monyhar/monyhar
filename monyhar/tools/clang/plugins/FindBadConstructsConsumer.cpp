@@ -127,91 +127,91 @@ FindBadConstructsConsumer::FindBadConstructsConsumer(CompilerInstance& instance,
   // Messages for virtual methods.
   diag_method_requires_override_ = diagnostic().getCustomDiagID(
       getErrorLevel(),
-      "[chromium-style] Overriding method must be marked with 'override' or "
+      "[monyhar-style] Overriding method must be marked with 'override' or "
       "'final'.");
   diag_redundant_virtual_specifier_ = diagnostic().getCustomDiagID(
-      getErrorLevel(), "[chromium-style] %0 is redundant; %1 implies %0.");
+      getErrorLevel(), "[monyhar-style] %0 is redundant; %1 implies %0.");
   diag_will_be_redundant_virtual_specifier_ = diagnostic().getCustomDiagID(
-      getErrorLevel(), "[chromium-style] %0 will be redundant; %1 implies %0.");
+      getErrorLevel(), "[monyhar-style] %0 will be redundant; %1 implies %0.");
   // http://llvm.org/bugs/show_bug.cgi?id=21051 has been filed to make this a
   // Clang warning.
   diag_base_method_virtual_and_final_ = diagnostic().getCustomDiagID(
       getErrorLevel(),
-      "[chromium-style] The virtual method does not override anything and is "
+      "[monyhar-style] The virtual method does not override anything and is "
       "final; consider making it non-virtual.");
   diag_virtual_with_inline_body_ = diagnostic().getCustomDiagID(
       getErrorLevel(),
-      "[chromium-style] virtual methods with non-empty bodies shouldn't be "
+      "[monyhar-style] virtual methods with non-empty bodies shouldn't be "
       "declared inline.");
 
   // Messages for constructors.
   diag_no_explicit_ctor_ = diagnostic().getCustomDiagID(
       getErrorLevel(),
-      "[chromium-style] Complex class/struct needs an explicit out-of-line "
+      "[monyhar-style] Complex class/struct needs an explicit out-of-line "
       "constructor.");
   diag_no_explicit_copy_ctor_ = diagnostic().getCustomDiagID(
       getErrorLevel(),
-      "[chromium-style] Complex class/struct needs an explicit out-of-line "
+      "[monyhar-style] Complex class/struct needs an explicit out-of-line "
       "copy constructor.");
   diag_inline_complex_ctor_ = diagnostic().getCustomDiagID(
       getErrorLevel(),
-      "[chromium-style] Complex constructor has an inlined body.");
+      "[monyhar-style] Complex constructor has an inlined body.");
 
   // Messages for destructors.
   diag_no_explicit_dtor_ = diagnostic().getCustomDiagID(
       getErrorLevel(),
-      "[chromium-style] Complex class/struct needs an explicit out-of-line "
+      "[monyhar-style] Complex class/struct needs an explicit out-of-line "
       "destructor.");
   diag_inline_complex_dtor_ = diagnostic().getCustomDiagID(
       getErrorLevel(),
-      "[chromium-style] Complex destructor has an inline body.");
+      "[monyhar-style] Complex destructor has an inline body.");
 
   // Messages for refcounted objects.
   diag_refcounted_needs_explicit_dtor_ = diagnostic().getCustomDiagID(
       getErrorLevel(),
-      "[chromium-style] Classes that are ref-counted should have explicit "
+      "[monyhar-style] Classes that are ref-counted should have explicit "
       "destructors that are declared protected or private.");
   diag_refcounted_with_public_dtor_ = diagnostic().getCustomDiagID(
       getErrorLevel(),
-      "[chromium-style] Classes that are ref-counted should have "
+      "[monyhar-style] Classes that are ref-counted should have "
       "destructors that are declared protected or private.");
   diag_refcounted_with_protected_non_virtual_dtor_ =
       diagnostic().getCustomDiagID(
           getErrorLevel(),
-          "[chromium-style] Classes that are ref-counted and have non-private "
+          "[monyhar-style] Classes that are ref-counted and have non-private "
           "destructors should declare their destructor virtual.");
 
   // Miscellaneous messages.
   diag_weak_ptr_factory_order_ = diagnostic().getCustomDiagID(
       getErrorLevel(),
-      "[chromium-style] WeakPtrFactory members which refer to their outer "
+      "[monyhar-style] WeakPtrFactory members which refer to their outer "
       "class must be the last member in the outer class definition.");
   diag_bad_enum_max_value_ = diagnostic().getCustomDiagID(
       getErrorLevel(),
-      "[chromium-style] kMaxValue enumerator does not match max value %0 of "
+      "[monyhar-style] kMaxValue enumerator does not match max value %0 of "
       "other enumerators");
   diag_enum_max_value_unique_ = diagnostic().getCustomDiagID(
       getErrorLevel(),
-      "[chromium-style] kMaxValue enumerator should not have a unique value: "
+      "[monyhar-style] kMaxValue enumerator should not have a unique value: "
       "it should share the value of the highest enumerator");
   diag_auto_deduced_to_a_pointer_type_ =
       diagnostic().getCustomDiagID(getErrorLevel(),
-                                   "[chromium-style] auto variable type "
+                                   "[monyhar-style] auto variable type "
                                    "must not deduce to a raw pointer "
                                    "type.");
 
   // Registers notes to make it easier to interpret warnings.
   diag_note_inheritance_ = diagnostic().getCustomDiagID(
-      DiagnosticsEngine::Note, "[chromium-style] %0 inherits from %1 here");
+      DiagnosticsEngine::Note, "[monyhar-style] %0 inherits from %1 here");
   diag_note_implicit_dtor_ = diagnostic().getCustomDiagID(
       DiagnosticsEngine::Note,
-      "[chromium-style] No explicit destructor for %0 defined");
+      "[monyhar-style] No explicit destructor for %0 defined");
   diag_note_public_dtor_ = diagnostic().getCustomDiagID(
       DiagnosticsEngine::Note,
-      "[chromium-style] Public destructor declared here");
+      "[monyhar-style] Public destructor declared here");
   diag_note_protected_non_virtual_dtor_ = diagnostic().getCustomDiagID(
       DiagnosticsEngine::Note,
-      "[chromium-style] Protected non-virtual destructor declared here");
+      "[monyhar-style] Protected non-virtual destructor declared here");
 }
 
 void FindBadConstructsConsumer::Traverse(ASTContext& context) {

@@ -9,7 +9,7 @@ namespace crosapi {
 // The prefix for a Wayland app id for a Lacros browser window. The full ID is
 // suffixed with a serialized unguessable token unique to each window. The
 // trailing "." is intentional.
-const char kLacrosAppIdPrefix[] = "org.chromium.lacros.";
+const char kLacrosAppIdPrefix[] = "org.monyhar.lacros.";
 
 // The default user-data-directory for Lacros.
 // NOTE: This is security sensitive. The directory must be inside the encrypted

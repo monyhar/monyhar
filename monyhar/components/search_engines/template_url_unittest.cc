@@ -951,8 +951,8 @@ TEST_F(TemplateURLTest, SearchTermKeyLocation) {
        "", ""},
       {"http://blah/?foo=bar#x={searchTerms}&b=x", url::Parsed::REF, "/", "x",
        "", ""},
-      {"http://www.example.com/?q=chromium-{searchTerms}@chromium.org/info",
-       url::Parsed::QUERY, "/", "q", "chromium-", "@chromium.org/info"},
+      {"http://www.example.com/?q=monyhar-{searchTerms}@monyhar.org/info",
+       url::Parsed::QUERY, "/", "q", "monyhar-", "@monyhar.org/info"},
 
       // searchTerms is a key, not a value, so this should result in an empty
       // value.
@@ -1392,19 +1392,19 @@ TEST_F(TemplateURLTest, ExtractSearchTermsFromNonUTF8URL) {
 TEST_F(TemplateURLTest, ExtractSearchTermsWithPrefixAndSuffix) {
   TemplateURLData data;
   data.alternate_urls.push_back(
-      "http://www.example.com/?q=chromium-{searchTerms}@chromium.org");
+      "http://www.example.com/?q=monyhar-{searchTerms}@monyhar.org");
   data.alternate_urls.push_back(
-      "http://www.example.com/chromium-{searchTerms}@chromium.org/info");
+      "http://www.example.com/monyhar-{searchTerms}@monyhar.org/info");
   TemplateURL url(data);
   std::u16string result;
 
   EXPECT_TRUE(url.ExtractSearchTermsFromURL(
-      GURL("http://www.example.com/?q=chromium-dev@chromium.org"),
+      GURL("http://www.example.com/?q=monyhar-dev@monyhar.org"),
       search_terms_data_, &result));
   EXPECT_EQ(u"dev", result);
 
   EXPECT_TRUE(url.ExtractSearchTermsFromURL(
-      GURL("http://www.example.com/chromium-dev@chromium.org/info"),
+      GURL("http://www.example.com/monyhar-dev@monyhar.org/info"),
       search_terms_data_, &result));
   EXPECT_EQ(u"dev", result);
 

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab;
+package org.monyhar.chrome.browser.tab;
 
 import android.graphics.Rect;
 import android.util.SparseIntArray;
@@ -11,8 +11,8 @@ import android.widget.FrameLayout;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.supplier.DestroyableObservableSupplier;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsMarginSupplier;
+import org.monyhar.base.supplier.DestroyableObservableSupplier;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsMarginSupplier;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

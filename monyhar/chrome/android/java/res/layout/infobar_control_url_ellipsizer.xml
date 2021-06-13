@@ -18,7 +18,7 @@
         android:clickable="false"
         tools:text="https://" />
 
-    <org.chromium.chrome.browser.infobar.TextViewEllipsizerSafe
+    <org.monyhar.chrome.browser.infobar.TextViewEllipsizerSafe
         android:id="@+id/url_minus_scheme"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

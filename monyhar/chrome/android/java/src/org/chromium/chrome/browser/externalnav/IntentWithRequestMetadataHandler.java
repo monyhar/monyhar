@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.externalnav;
+package org.monyhar.chrome.browser.externalnav;
 
 import android.content.Intent;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.url.Origin;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.url.Origin;
 
 import java.security.SecureRandom;
 import java.util.Arrays;
@@ -29,7 +29,7 @@ public class IntentWithRequestMetadataHandler {
      * Extra to record the token associated with the URL request metadata.
      */
     public static final String EXTRA_REQUEST_METADATA_TOKEN =
-            "org.chromium.chrome.browser.request_metadata_token";
+            "org.monyhar.chrome.browser.request_metadata_token";
 
     private static final String TAG = "MetadataHandler";
 

@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of HangWatcher histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -34,8 +34,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="HangWatcher.IsThreadHung.{ProcessType}.{ThreadType}"
     enum="BooleanHung" expires_after="2021-10-23">
-  <owner>olivierli@chromium.org</owner>
-  <owner>catan-team@chromium.org</owner>
+  <owner>olivierli@monyhar.org</owner>
+  <owner>catan-team@monyhar.org</owner>
   <summary>
     Every 10 seconds, a boolean is recorded to this histogram to indicate
     whether the {ProcessType} {ThreadType} was hung. The thread is hung if the
@@ -54,8 +54,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Replaced by HangWatcher.IsThreadHung on 11-2020.
   </obsolete>
-  <owner>olivierli@chromium.org</owner>
-  <owner>catan-team@chromium.org</owner>
+  <owner>olivierli@monyhar.org</owner>
+  <owner>catan-team@monyhar.org</owner>
   <summary>
     HangWatcher is a class that periodically watches threads to see if they are
     making progress or if they are hung. This metric is recorded when the
@@ -75,8 +75,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="HangWatcher.SleepDrift.{ProcessType}" units="ms"
     expires_after="2021-10-23">
-  <owner>olivierli@chromium.org</owner>
-  <owner>catan-team@chromium.org</owner>
+  <owner>olivierli@monyhar.org</owner>
+  <owner>catan-team@monyhar.org</owner>
   <summary>
     HangWatcher is a class that periodically checks on watched threads to see if
     they are making progress or if they are hung. This metric is recorded when

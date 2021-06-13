@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share;
+package org.monyhar.chrome.browser.share;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.browser_ui.share.ShareParams;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.browser_ui.share.ShareParams;
 
 /**
  * Interface to expose sharing to external classes.

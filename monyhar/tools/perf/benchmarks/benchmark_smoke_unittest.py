@@ -13,7 +13,7 @@ import os
 import sys
 import unittest
 
-from chrome_telemetry_build import chromium_config
+from chrome_telemetry_build import monyhar_config
 
 from core import results_processor
 from core import testing
@@ -66,7 +66,7 @@ def SmokeTestGenerator(benchmark_class, num_pages=1):
           output_dir=temp_dir,
           benchmark_cls=benchmark_class,
           overrides={'story_shard_end_index': num_pages},
-          environment=chromium_config.GetDefaultChromiumConfig())
+          environment=monyhar_config.GetDefaultChromiumConfig())
       options.pageset_repeat = 1  # For smoke testing only run the page once.
       options.output_formats = ['histograms']
       options.max_values_per_test_case = MAX_VALUES_PER_TEST_CASE

@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.modules.test_dummy;
+package org.monyhar.chrome.modules.test_dummy;
 
-import org.chromium.base.annotations.UsedByReflection;
-import org.chromium.chrome.browser.test_dummy.TestDummy;
-import org.chromium.chrome.browser.test_dummy.TestDummyImpl;
+import org.monyhar.base.annotations.UsedByReflection;
+import org.monyhar.chrome.browser.test_dummy.TestDummy;
+import org.monyhar.chrome.browser.test_dummy.TestDummyImpl;
 
 /** Provides the test dummy implementation inside the test dummy module. */
 @UsedByReflection("TestDummyModule")

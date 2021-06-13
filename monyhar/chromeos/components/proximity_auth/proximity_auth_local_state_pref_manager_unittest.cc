@@ -30,7 +30,7 @@ const bool kIsChromeOSLoginEnabled2 = false;
 const bool kIsEasyUnlockAllowed2 = false;
 const bool kIsEasyUnlockEnabled2 = false;
 
-const char kUnknownUser[] = "tengs@chromium.org";
+const char kUnknownUser[] = "tengs@monyhar.org";
 const bool kIsChromeOSLoginEnabledDefault = false;
 const bool kIsEasyUnlockAllowedDefault = true;
 const bool kIsEasyUnlockEnabledDefault = false;

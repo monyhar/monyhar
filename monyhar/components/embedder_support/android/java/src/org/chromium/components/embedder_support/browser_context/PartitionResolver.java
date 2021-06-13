@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.embedder_support.browser_context;
+package org.monyhar.components.embedder_support.browser_context;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
-import org.chromium.components.embedder_support.simple_factory_key.SimpleFactoryKeyHandle;
+import org.monyhar.base.Callback;
+import org.monyhar.components.embedder_support.simple_factory_key.SimpleFactoryKeyHandle;
 
 /**
  * Interface to abstract embedder specific partition serialization logic. Partitions being the keys

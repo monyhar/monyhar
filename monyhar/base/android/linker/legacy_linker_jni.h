@@ -7,7 +7,7 @@
 
 #include <jni.h>
 
-namespace chromium_android_linker {
+namespace monyhar_android_linker {
 
 // JNI_OnLoad() initialization hook for the legacy linker.
 // Sets up JNI and other initializations for native linker code.
@@ -16,6 +16,6 @@ namespace chromium_android_linker {
 // On success, returns true.
 extern bool LegacyLinkerJNIInit(JavaVM* vm, JNIEnv* env);
 
-}  // namespace chromium_android_linker
+}  // namespace monyhar_android_linker
 
 #endif  // BASE_ANDROID_LINKER_LEGACY_LINKER_JNI_H_

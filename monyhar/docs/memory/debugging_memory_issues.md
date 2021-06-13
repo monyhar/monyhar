@@ -2,7 +2,7 @@
 
 This page is designed to help Chromium developers debug memory issues.
 
-When in doubt, reach out to memory-dev@chromium.org.
+When in doubt, reach out to memory-dev@monyhar.org.
 
 [TOC]
 
@@ -31,7 +31,7 @@ Repeat the above steps, but this time also [take a heap
 dump](#Taking-a-Heap-Dump). Confirm that the regression is also visible in the
 heap dump, and then compare the two heap dumps to find the difference. You can
 also use
-[diff_heap_profiler.py](https://cs.chromium.org/chromium/src/third_party/catapult/experimental/tracing/bin/diff_heap_profiler.py)
+[diff_heap_profiler.py](https://cs.monyhar.org/monyhar/src/third_party/catapult/experimental/tracing/bin/diff_heap_profiler.py)
 to perform the diff.
 
 ### Regression in Non-Malloc MemoryDumpProvider
@@ -49,7 +49,7 @@ MemoryDumpProvider regression.
     * On Windows, use SysInternal VMMap
     * On other OSes, use /proc/<pid\>/smaps.
 * The results should help diagnose what's happening. Contact the
-  memory-dev@chromium.org mailing list for more help.
+  memory-dev@monyhar.org mailing list for more help.
 
 ### No observed regression
 
@@ -78,7 +78,7 @@ link](/docs/memory/investigating_heap_dump_example.md).
   This interface surfaces all available information, but can be overwhelming and
   is usually unnecessary for investigating heap dumps.
     * Important note: Heap profiling in the field uses
-      [Poisson process sampling](https://bugs.chromium.org/p/chromium/issues/detail?id=810748)
+      [Poisson process sampling](https://bugs.monyhar.org/p/monyhar/issues/detail?id=810748)
       with a rate parameter of 10000. This means that for large/frequent allocations
       [e.g. >100 MB], the noise will be quite small [much less than 1%]. But
       there is noise so counts will not be exact.
@@ -90,10 +90,10 @@ link](/docs/memory/investigating_heap_dump_example.md).
 * The next thing to do is to determine whether the memory usage is intentional.
   Very rarely, components in Chrome legitimately need to use many 100s of MBs of
   memory. In this case, it's important to create a
-  [MemoryDumpProvider](https://cs.chromium.org/chromium/src/base/trace_event/memory_dump_provider.h)
+  [MemoryDumpProvider](https://cs.monyhar.org/monyhar/src/base/trace_event/memory_dump_provider.h)
   to report this memory usage, so that we have a better understanding of which
   components are using a lot of memory. For an example, see
-  [Issue 813046](https://bugs.chromium.org/p/chromium/issues/detail?id=813046).
+  [Issue 813046](https://bugs.monyhar.org/p/monyhar/issues/detail?id=813046).
 * Assuming the memory usage is not intentional, the next thing to do is to
   figure out what is causing the memory leak.
     * The most common cause is adding elements to a container with no limit.
@@ -101,14 +101,14 @@ link](/docs/memory/investigating_heap_dump_example.md).
       in the wild, and something breaks those assumptions. Or sometimes the code
       to clear the container is not called as frequently as expected [or at
       all]. [Example
-      1](https://bugs.chromium.org/p/chromium/issues/detail?id=798012). [Example
-      2](https://bugs.chromium.org/p/chromium/issues/detail?id=804440).
+      1](https://bugs.monyhar.org/p/monyhar/issues/detail?id=798012). [Example
+      2](https://bugs.monyhar.org/p/monyhar/issues/detail?id=804440).
     * Retain cycles for ref-counted objects.
-      [Example](https://bugs.chromium.org/p/chromium/issues/detail?id=814334#c23)
+      [Example](https://bugs.monyhar.org/p/monyhar/issues/detail?id=814334#c23)
     * Straight up leaks resulting from incorrect use of APIs. [Example
-      1](https://bugs.chromium.org/p/chromium/issues/detail?id=801702#c31).
+      1](https://bugs.monyhar.org/p/monyhar/issues/detail?id=801702#c31).
       [Example
-      2](https://bugs.chromium.org/p/chromium/issues/detail?id=814444#c17).
+      2](https://bugs.monyhar.org/p/monyhar/issues/detail?id=814444#c17).
 
 ## Taking a Heap Dump
 

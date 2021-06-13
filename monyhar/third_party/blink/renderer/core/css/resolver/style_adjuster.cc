@@ -881,7 +881,7 @@ void StyleAdjuster::AdjustComputedStyle(StyleResolverState& state,
       TextControlElement* text_control =
           ToTextControl(element->OwnerShadowHost());
       DCHECK(text_control);
-      // TODO(futhark@chromium.org): We force clipping text overflow for focused
+      // TODO(futhark@monyhar.org): We force clipping text overflow for focused
       // input elements since we don't want to render ellipsis during editing.
       // We should do this as a general solution which also includes
       // contenteditable elements being edited. The computed style should not

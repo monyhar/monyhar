@@ -1,5 +1,5 @@
 Name: V8 fork of fdlibm
-URL: source.chromium.org/chromium/chromium/src/+/master:v8/src/base/ieee754.cc
+URL: source.monyhar.org/monyhar/monyhar/src/+/master:v8/src/base/ieee754.cc
 Revision: c512d6173f33c6b8301d3fba9384edc9fc1f9e45
 Version: 0
 Security Critical: yes
@@ -14,7 +14,7 @@ This library is a copy of that V8 library intended for use in Chromium.
 This library may be useful when mathematical consistency across OS platforms is
 desired.
 
-The initial commit is not a pristine import -- the patch in the chromium/
+The initial commit is not a pristine import -- the patch in the monyhar/
 subdirectory documents the changes made to the original sources. This patch was
 produced via `git format-patch` and can be applied using `git am`.
 

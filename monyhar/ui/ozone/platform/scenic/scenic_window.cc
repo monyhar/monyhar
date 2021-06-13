@@ -42,7 +42,7 @@ ScenicWindow::ScenicWindow(ScenicWindowManager* window_manager,
             std::move(std::move(properties.view_token)),
             std::move(properties.view_ref_pair.control_ref),
             CloneViewRef(),
-            "chromium window"),
+            "monyhar window"),
       node_(&scenic_session_),
       input_node_(&scenic_session_),
       render_node_(&scenic_session_),
@@ -78,7 +78,7 @@ ScenicWindow::~ScenicWindow() {
 void ScenicWindow::AttachSurfaceView(
     fuchsia::ui::views::ViewHolderToken token) {
   surface_view_holder_ = std::make_unique<scenic::ViewHolder>(
-      &scenic_session_, std::move(token), "chromium window surface");
+      &scenic_session_, std::move(token), "monyhar window surface");
 
   // Configure the ViewHolder not to be focusable, or hit-testable, to ensure
   // that it cannot receive input.

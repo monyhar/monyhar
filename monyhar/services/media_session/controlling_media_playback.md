@@ -51,16 +51,16 @@ will be the top most controllable media session.
 # Audio Focus Observer
 
 The media session service can be accessed via Mojo and currently lives in the
-browser process. Clients can implement [AudioFocusObserver](https://cs.chromium.org/chromium/src/services/media_session/public/mojom/media_session.mojom)
-and add themselves as an observer using the [AudioFocusManager](https://cs.chromium.org/chromium/src/services/media_session/public/mojom/media_session.mojom)
+browser process. Clients can implement [AudioFocusObserver](https://cs.monyhar.org/monyhar/src/services/media_session/public/mojom/media_session.mojom)
+and add themselves as an observer using the [AudioFocusManager](https://cs.monyhar.org/monyhar/src/services/media_session/public/mojom/media_session.mojom)
 mojo API. The observer will then receive notifications when the active media
 session changes. This can be used to determine whether there is any current
 media playback.
 
 # Media Controller Manager
 
-The media session service also exposes a [MediaControllerManager](https://cs.chromium.org/chromium/src/services/media_session/public/mojom/media_controller.mojom)
-mojo API. This can be used to create a [MediaController](https://cs.chromium.org/chromium/src/services/media_session/public/mojom/media_controller.mojom)
+The media session service also exposes a [MediaControllerManager](https://cs.monyhar.org/monyhar/src/services/media_session/public/mojom/media_controller.mojom)
+mojo API. This can be used to create a [MediaController](https://cs.monyhar.org/monyhar/src/services/media_session/public/mojom/media_controller.mojom)
 instance. These can be used to control and observe a media session. This can
 be an individual media session or the active media session.
 
@@ -73,7 +73,7 @@ communication and should not be used for control.**.
 
 # Media Session Observer
 
-There is also a [MediaSessionObserver](https://cs.chromium.org/chromium/src/services/media_session/public/mojom/media_session.mojom)
+There is also a [MediaSessionObserver](https://cs.monyhar.org/monyhar/src/services/media_session/public/mojom/media_session.mojom)
 mojo API that clients can implement. They can then add themselves as an observer
 using the `AddObserver` call on the `MediaController` api. When an observer is
 added it will be flushed with all the latest information from the currently
@@ -85,9 +85,9 @@ the new active media session.
 
 # Testing
 
-There is a [MockMediaSession](https://cs.chromium.org/chromium/src/services/media_session/public/cpp/test/mock_media_session.h)
+There is a [MockMediaSession](https://cs.monyhar.org/monyhar/src/services/media_session/public/cpp/test/mock_media_session.h)
 C++ class that can be used for simulating a media session in unit tests. The
-[//services/media_session/public/cpp/test](https://cs.chromium.org/chromium/src/services/media_session/public/cpp/test/)
+[//services/media_session/public/cpp/test](https://cs.monyhar.org/monyhar/src/services/media_session/public/cpp/test/)
 directory also contains a number of other useful test utilities.
 
 # Current Media Session service integrations
@@ -99,4 +99,4 @@ a media session and request audio focus:
 * ARC++ apps (requires Android Pie)
 * Assistant
 
-Questions? - Feel free to reach out to beccahughes@chromium.org.
+Questions? - Feel free to reach out to beccahughes@monyhar.org.

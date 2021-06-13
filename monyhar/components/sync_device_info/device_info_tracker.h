@@ -14,7 +14,7 @@
 namespace syncer {
 
 // Interface for tracking synced DeviceInfo. This excludes sync-ing clients that
-// are not chromium-based.
+// are not monyhar-based.
 class DeviceInfoTracker {
  public:
   virtual ~DeviceInfoTracker() {}

@@ -60,10 +60,10 @@ using ::chromeos::system::TimezoneSettings;
 namespace {
 
 constexpr char kSetFontScaleAction[] =
-    "org.chromium.arc.intent_helper.SET_FONT_SCALE";
+    "org.monyhar.arc.intent_helper.SET_FONT_SCALE";
 constexpr char kSetPageZoomAction[] =
-    "org.chromium.arc.intent_helper.SET_PAGE_ZOOM";
-constexpr char kSetProxyAction[] = "org.chromium.arc.intent_helper.SET_PROXY";
+    "org.monyhar.arc.intent_helper.SET_PAGE_ZOOM";
+constexpr char kSetProxyAction[] = "org.monyhar.arc.intent_helper.SET_PROXY";
 
 constexpr char kArcProxyBypassListDelimiter[] = ",";
 
@@ -470,13 +470,13 @@ void ArcSettingsServiceImpl::SyncAppTimeSettings() {
 void ArcSettingsServiceImpl::SyncAccessibilityLargeMouseCursorEnabled() const {
   SendBoolPrefSettingsBroadcast(
       ash::prefs::kAccessibilityLargeCursorEnabled,
-      "org.chromium.arc.intent_helper.ACCESSIBILITY_LARGE_POINTER_ICON");
+      "org.monyhar.arc.intent_helper.ACCESSIBILITY_LARGE_POINTER_ICON");
 }
 
 void ArcSettingsServiceImpl::SyncAccessibilityVirtualKeyboardEnabled() const {
   SendBoolPrefSettingsBroadcast(
       ash::prefs::kAccessibilityVirtualKeyboardEnabled,
-      "org.chromium.arc.intent_helper.SET_SHOW_IME_WITH_HARD_KEYBOARD");
+      "org.monyhar.arc.intent_helper.SET_SHOW_IME_WITH_HARD_KEYBOARD");
 }
 
 void ArcSettingsServiceImpl::SyncBackupEnabled() const {
@@ -496,19 +496,19 @@ void ArcSettingsServiceImpl::SyncBackupEnabled() const {
 void ArcSettingsServiceImpl::SyncFocusHighlightEnabled() const {
   SendBoolPrefSettingsBroadcast(
       ash::prefs::kAccessibilityFocusHighlightEnabled,
-      "org.chromium.arc.intent_helper.SET_FOCUS_HIGHLIGHT_ENABLED");
+      "org.monyhar.arc.intent_helper.SET_FOCUS_HIGHLIGHT_ENABLED");
 }
 
 void ArcSettingsServiceImpl::SyncScreenMagnifierEnabled() const {
   SendBoolPrefSettingsBroadcast(
       ash::prefs::kAccessibilityScreenMagnifierEnabled,
-      "org.chromium.arc.intent_helper.SET_SCREEN_MAGNIFIER_ENABLED");
+      "org.monyhar.arc.intent_helper.SET_SCREEN_MAGNIFIER_ENABLED");
 }
 
 void ArcSettingsServiceImpl::SyncDockedMagnifierEnabled() const {
   SendBoolPrefSettingsBroadcast(
       ash::prefs::kDockedMagnifierEnabled,
-      "org.chromium.arc.intent_helper.SET_DOCKED_MAGNIFIER_ENABLED");
+      "org.monyhar.arc.intent_helper.SET_DOCKED_MAGNIFIER_ENABLED");
 }
 
 void ArcSettingsServiceImpl::SyncLocale() const {
@@ -526,13 +526,13 @@ void ArcSettingsServiceImpl::SyncLocale() const {
   GetLocaleAndPreferredLanguages(profile_, &locale, &preferred_languages);
   extras.SetString("locale", locale);
   extras.SetString("preferredLanguages", preferred_languages);
-  SendSettingsBroadcast("org.chromium.arc.intent_helper.SET_LOCALE", extras);
+  SendSettingsBroadcast("org.monyhar.arc.intent_helper.SET_LOCALE", extras);
 }
 
 void ArcSettingsServiceImpl::SyncLocationServiceEnabled() const {
   SendBoolPrefSettingsBroadcast(
       prefs::kArcLocationServiceEnabled,
-      "org.chromium.arc.intent_helper.SET_LOCATION_SERVICE_ENABLED");
+      "org.monyhar.arc.intent_helper.SET_LOCATION_SERVICE_ENABLED");
 }
 
 // TODO(b/159871128, hugobenichi, acostinas) The current implementation only
@@ -660,7 +660,7 @@ void ArcSettingsServiceImpl::SyncReportingConsent(bool initial_sync) const {
   }
   base::DictionaryValue extras;
   extras.SetBoolean("reportingConsent", consent);
-  SendSettingsBroadcast("org.chromium.arc.intent_helper.SET_REPORTING_CONSENT",
+  SendSettingsBroadcast("org.monyhar.arc.intent_helper.SET_REPORTING_CONSENT",
                         extras);
 }
 
@@ -679,19 +679,19 @@ void ArcSettingsServiceImpl::SyncPictureInPictureEnabled() const {
 void ArcSettingsServiceImpl::SyncSelectToSpeakEnabled() const {
   SendBoolPrefSettingsBroadcast(
       ash::prefs::kAccessibilitySelectToSpeakEnabled,
-      "org.chromium.arc.intent_helper.SET_SELECT_TO_SPEAK_ENABLED");
+      "org.monyhar.arc.intent_helper.SET_SELECT_TO_SPEAK_ENABLED");
 }
 
 void ArcSettingsServiceImpl::SyncSpokenFeedbackEnabled() const {
   SendBoolPrefSettingsBroadcast(
       ash::prefs::kAccessibilitySpokenFeedbackEnabled,
-      "org.chromium.arc.intent_helper.SET_SPOKEN_FEEDBACK_ENABLED");
+      "org.monyhar.arc.intent_helper.SET_SPOKEN_FEEDBACK_ENABLED");
 }
 
 void ArcSettingsServiceImpl::SyncSwitchAccessEnabled() const {
   SendBoolPrefSettingsBroadcast(
       ash::prefs::kAccessibilitySwitchAccessEnabled,
-      "org.chromium.arc.intent_helper.SET_SWITCH_ACCESS_ENABLED");
+      "org.monyhar.arc.intent_helper.SET_SWITCH_ACCESS_ENABLED");
 }
 
 void ArcSettingsServiceImpl::SyncTimeZone() const {
@@ -699,7 +699,7 @@ void ArcSettingsServiceImpl::SyncTimeZone() const {
   std::u16string timezoneID = timezone_settings->GetCurrentTimezoneID();
   base::DictionaryValue extras;
   extras.SetString("olsonTimeZone", timezoneID);
-  SendSettingsBroadcast("org.chromium.arc.intent_helper.SET_TIME_ZONE", extras);
+  SendSettingsBroadcast("org.monyhar.arc.intent_helper.SET_TIME_ZONE", extras);
 }
 
 void ArcSettingsServiceImpl::SyncTimeZoneByGeolocation() const {
@@ -710,7 +710,7 @@ void ArcSettingsServiceImpl::SyncTimeZoneByGeolocation() const {
                                 registrar_.prefs(), false) !=
                         chromeos::system::TimeZoneResolverManager::
                             TimeZoneResolveMethod::DISABLED);
-  SendSettingsBroadcast("org.chromium.arc.intent_helper.SET_AUTO_TIME_ZONE",
+  SendSettingsBroadcast("org.monyhar.arc.intent_helper.SET_AUTO_TIME_ZONE",
                         extras);
 }
 
@@ -722,7 +722,7 @@ void ArcSettingsServiceImpl::SyncUse24HourClock() const {
   bool use24HourClock = pref->GetValue()->GetBool();
   base::DictionaryValue extras;
   extras.SetBoolean("use24HourClock", use24HourClock);
-  SendSettingsBroadcast("org.chromium.arc.intent_helper.SET_USE_24_HOUR_CLOCK",
+  SendSettingsBroadcast("org.monyhar.arc.intent_helper.SET_USE_24_HOUR_CLOCK",
                         extras);
 }
 

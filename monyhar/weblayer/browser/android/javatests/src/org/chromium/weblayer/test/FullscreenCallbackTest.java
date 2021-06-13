@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer.test;
+package org.monyhar.weblayer.test;
 
 import android.os.Build;
 
@@ -13,12 +13,12 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.DisableIf;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.weblayer.Browser;
-import org.chromium.weblayer.BrowserControlsOffsetCallback;
-import org.chromium.weblayer.shell.InstrumentationActivity;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.DisableIf;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.weblayer.Browser;
+import org.monyhar.weblayer.BrowserControlsOffsetCallback;
+import org.monyhar.weblayer.shell.InstrumentationActivity;
 
 /**
  * Tests that FullscreenCallback methods are invoked as expected.

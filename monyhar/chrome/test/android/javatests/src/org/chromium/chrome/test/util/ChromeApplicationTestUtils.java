@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.util;
+package org.monyhar.chrome.test.util;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -14,16 +14,16 @@ import android.util.Pair;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.omaha.OmahaBase;
-import org.chromium.chrome.browser.omaha.VersionNumberGetter;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.content_public.browser.test.util.Coordinates;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.omaha.OmahaBase;
+import org.monyhar.chrome.browser.omaha.VersionNumberGetter;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.content_public.browser.test.util.Coordinates;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
-import static org.chromium.chrome.features.start_surface.StartSurfaceLayout.ZOOMING_DURATION;
+import static org.monyhar.chrome.features.start_surface.StartSurfaceLayout.ZOOMING_DURATION;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -36,15 +36,15 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.base.Log;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.tabmodel.TabModel;
-import org.chromium.chrome.tab_ui.R;
-import org.chromium.ui.interpolators.BakedBezierInterpolator;
-import org.chromium.ui.modelutil.SimpleRecyclerViewAdapter;
-import org.chromium.ui.resources.dynamics.DynamicResourceLoader;
-import org.chromium.ui.resources.dynamics.ViewResourceAdapter;
-import org.chromium.ui.widget.ViewLookupCachingFrameLayout;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.tabmodel.TabModel;
+import org.monyhar.chrome.tab_ui.R;
+import org.monyhar.ui.interpolators.BakedBezierInterpolator;
+import org.monyhar.ui.modelutil.SimpleRecyclerViewAdapter;
+import org.monyhar.ui.resources.dynamics.DynamicResourceLoader;
+import org.monyhar.ui.resources.dynamics.ViewResourceAdapter;
+import org.monyhar.ui.widget.ViewLookupCachingFrameLayout;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -223,7 +223,7 @@ class TabListRecyclerView
             Context context = getContext();
             mShadowImageView = new ImageView(context);
             mShadowImageView.setImageDrawable(AppCompatResources.getDrawable(
-                    context, org.chromium.chrome.R.drawable.modern_toolbar_shadow));
+                    context, org.monyhar.chrome.R.drawable.modern_toolbar_shadow));
             mShadowImageView.setScaleType(ImageView.ScaleType.FIT_XY);
             mShadowImageView.setTag(SHADOW_VIEW_TAG);
             Resources res = context.getResources();
@@ -232,7 +232,7 @@ class TabListRecyclerView
                 FrameLayout.LayoutParams params =
                         new FrameLayout.LayoutParams(LayoutParams.MATCH_PARENT,
                                 res.getDimensionPixelSize(
-                                        org.chromium.chrome.R.dimen.toolbar_shadow_height),
+                                        org.monyhar.chrome.R.dimen.toolbar_shadow_height),
                                 Gravity.TOP);
                 mShadowImageView.setLayoutParams(params);
                 mShadowImageView.setTranslationY(mShadowTopOffset);
@@ -247,7 +247,7 @@ class TabListRecyclerView
                 RelativeLayout.LayoutParams params =
                         new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                                 res.getDimensionPixelSize(
-                                        org.chromium.chrome.R.dimen.toolbar_shadow_height));
+                                        org.monyhar.chrome.R.dimen.toolbar_shadow_height));
                 params.addRule(RelativeLayout.BELOW, toolbar.getId());
                 parent.addView(mShadowImageView, params);
             }

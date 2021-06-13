@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@1.3.0.cr0
-package: chromium/third_party/android_deps/libs/com_googlecode_java_diff_utils_diffutils
+package: monyhar/third_party/android_deps/libs/com_googlecode_java_diff_utils_diffutils
 description: "java-diff-utils"
 data:
 - file: diffutils-1.3.0.jar

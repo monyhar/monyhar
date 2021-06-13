@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.content_capture;
+package org.monyhar.components.content_capture;
 
 import android.annotation.TargetApi;
 import android.os.Build;
@@ -12,7 +12,7 @@ import android.view.contentcapture.ContentCaptureSession;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.annotations.VerifiesOnQ;
+import org.monyhar.base.annotations.VerifiesOnQ;
 
 /**
  * The class to wrap ContentCapture platform APIs, catches the exception from platform, and

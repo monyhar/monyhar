@@ -127,4 +127,4 @@ display the sad tab.
 *   Visit the special URL `chrome://crash` to trigger a crash in the renderer
     process.
 *   A crash dump file should appear in the directory
-    `~/.config/chromium/Crash Reports`.
+    `~/.config/monyhar/Crash Reports`.

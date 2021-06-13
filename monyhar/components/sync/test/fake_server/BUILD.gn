@@ -48,7 +48,7 @@ static_library("fake_server") {
 if (is_android) {
   generate_jni("fake_server_jni") {
     testonly = true
-    sources = [ "//chrome/android/javatests/src/org/chromium/chrome/browser/sync/FakeServerHelper.java" ]
+    sources = [ "//chrome/android/javatests/src/org/monyhar/chrome/browser/sync/FakeServerHelper.java" ]
   }
 
   static_library("fake_server_android") {

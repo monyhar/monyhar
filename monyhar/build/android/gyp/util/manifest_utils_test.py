@@ -41,7 +41,7 @@ _TEST_MANIFEST = """\
     </activity>
     <!-- Should be made non-self-closing. -->
     <receiver android:exported="false" android:name="\
-org.chromium.chrome.browser.announcement.AnnouncementNotificationManager$Rcvr"/>
+org.monyhar.chrome.browser.announcement.AnnouncementNotificationManager$Rcvr"/>
   </application>
 </manifest>
 """
@@ -71,7 +71,7 @@ android:required="false" android:version="1"/>
     </activity>  # DIFF-ANCHOR: {activity_diff_anchor}
     <receiver  # DIFF-ANCHOR: ddab3320
         android:name=\
-"org.chromium.chrome.browser.announcement.AnnouncementNotificationManager$Rcvr"
+"org.monyhar.chrome.browser.announcement.AnnouncementNotificationManager$Rcvr"
         android:exported="false">
     </receiver>  # DIFF-ANCHOR: ddab3320
   </application>

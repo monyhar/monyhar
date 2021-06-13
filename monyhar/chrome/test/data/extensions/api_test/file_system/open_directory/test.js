@@ -23,7 +23,7 @@ chrome.test.runTests([
       reader.readEntries(chrome.test.callback(function(entries) {
         // On POSIX systems DIR_HOME is overridden for this test and
         // dotfiles may be created there, ignore them
-        // See https://codereview.chromium.org/200473002/ and
+        // See https://codereview.monyhar.org/200473002/ and
         // https://crrev.com/c/2858114.
         var testEntry;
         entries.forEach(function(entry) {

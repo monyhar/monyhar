@@ -14,7 +14,7 @@ namespace cellular_signal_strength {
 
 namespace {
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.net
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.net
 enum CellularSignalStrengthError {
   // Value returned by CellularSignalStrength APIs when a valid value is
   // unavailable. This value is same as INT32_MIN, but the following code uses

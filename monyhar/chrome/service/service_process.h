@@ -42,7 +42,7 @@ class NetworkChangeNotifier;
 // The ServiceProcess does not inherit from ChildProcess because this
 // process can live independently of the browser process.
 // ServiceProcess Design Notes
-// https://sites.google.com/a/chromium.org/dev/developers/design-documents/service-processes
+// https://sites.google.com/a/monyhar.org/dev/developers/design-documents/service-processes
 class ServiceProcess : public ServiceIPCServer::Client,
                        public cloud_print::CloudPrintProxy::Client,
                        public cloud_print::CloudPrintProxy::Provider {

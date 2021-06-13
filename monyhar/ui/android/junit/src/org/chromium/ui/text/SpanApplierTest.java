@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.text;
+package org.monyhar.ui.text;
 
 import android.text.SpannableString;
 import android.text.style.BulletSpan;
@@ -14,8 +14,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.ui.text.SpanApplier.SpanInfo;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.ui.text.SpanApplier.SpanInfo;
 
 /**
  * Tests public methods in SpanApplier.

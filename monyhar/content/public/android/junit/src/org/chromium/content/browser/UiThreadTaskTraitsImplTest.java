@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -13,9 +13,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.task.TaskTraits;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.content_public.browser.BrowserTaskType;
+import org.monyhar.base.task.TaskTraits;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.content_public.browser.BrowserTaskType;
 
 /**
  * Tests for {@link UiThreadTaskTraitsImpl}

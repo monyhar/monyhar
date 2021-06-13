@@ -10,9 +10,9 @@ but for performance coverage.
 
 ## Writing Tests
 Each test entry point is a HTML file written using
-[runner.js](https://chromium.googlesource.com/chromium/src/+/main/third_party/blink/perf_tests/resources/runner.js)
+[runner.js](https://monyhar.googlesource.com/monyhar/src/+/main/third_party/blink/perf_tests/resources/runner.js)
 testing framework. The test file is placed inside a sub folder of
-[blink/perf_tests/](https://chromium.googlesource.com/chromium/src/+/main/third_party/blink/perf_tests/)
+[blink/perf_tests/](https://monyhar.googlesource.com/monyhar/src/+/main/third_party/blink/perf_tests/)
 and is started by importing `runner.js` script into the document:
 ```
   <script src="../resources/runner.js"></script>
@@ -83,9 +83,9 @@ also compute the total CPU times for trace events  'A' & 'B' per `foo()` run:
 
 Example tracing synchronous tests:
 
-*   [append-child-measure-time.html](https://chromium.googlesource.com/chromium/src/+/main/third_party/blink/perf_tests/test_data/append-child-measure-time.html)
+*   [append-child-measure-time.html](https://monyhar.googlesource.com/monyhar/src/+/main/third_party/blink/perf_tests/test_data/append-child-measure-time.html)
 
-*   [simple-html-measure-page-load-time.html](https://chromium.googlesource.com/chromium/src/+/main/third_party/blink/perf_tests/test_data/simple-html-measure-page-load-time.html)
+*   [simple-html-measure-page-load-time.html](https://monyhar.googlesource.com/monyhar/src/+/main/third_party/blink/perf_tests/test_data/simple-html-measure-page-load-time.html)
 
 
 ### Asynchronous Perf Tests
@@ -143,9 +143,9 @@ example of synchronous tracing test above.
 
 Example of tracing asynchronous tests:
 
-[color-changes-measure-frame-time.html](https://chromium.googlesource.com/chromium/src/+/main/third_party/blink/perf_tests/test_data/color-changes-measure-frame-time.html)
+[color-changes-measure-frame-time.html](https://monyhar.googlesource.com/monyhar/src/+/main/third_party/blink/perf_tests/test_data/color-changes-measure-frame-time.html)
 
-[simple-blob-measure-async.html](https://chromium.googlesource.com/chromium/src/+/main/third_party/blink/perf_tests/test_data/simple-blob-measure-async.html)
+[simple-blob-measure-async.html](https://monyhar.googlesource.com/monyhar/src/+/main/third_party/blink/perf_tests/test_data/simple-blob-measure-async.html)
 
 
 ### Service Worker Perf Tests
@@ -153,7 +153,7 @@ You can also run perf tests in service workers. You need to trigger the test
 with `PerfTestRunner.startMeasureValuesInWorker()` in a page. Within the `run`
 method provided to this function, you can initialize a worker and ask the
 worker to run the workload by using `measureRunsPerSecond()` defined in
-[worker-test-helper.js](https://chromium.googlesource.com/chromium/src/+/main/third_party/blink/perf_tests/resources/worker-test-helper.js).
+[worker-test-helper.js](https://monyhar.googlesource.com/monyhar/src/+/main/third_party/blink/perf_tests/resources/worker-test-helper.js).
 
 `measureRunsPerSecond()` returns a promise which resolves to the test result.
 The worker should send the result back to the page, and the page records the
@@ -162,9 +162,9 @@ recorded, the test finishes.
 
 Here is an example for testing Cache Storage API of service workers:
 
-[cache-open-add-delete-10K-service-worker.html](https://chromium.googlesource.com/chromium/src/+/main/third_party/blink/perf_tests/service_worker/cache-open-add-delete-10K-service-worker.html)
+[cache-open-add-delete-10K-service-worker.html](https://monyhar.googlesource.com/monyhar/src/+/main/third_party/blink/perf_tests/service_worker/cache-open-add-delete-10K-service-worker.html)
 
-[cache-open-add-delete-10K-service-worker.js](https://chromium.googlesource.com/chromium/src/+/main/third_party/blink/perf_tests/service_worker/resources/cache-open-add-delete-10K-service-worker.js)
+[cache-open-add-delete-10K-service-worker.js](https://monyhar.googlesource.com/monyhar/src/+/main/third_party/blink/perf_tests/service_worker/resources/cache-open-add-delete-10K-service-worker.js)
 
 ## Running Tests
 
@@ -179,7 +179,7 @@ viewer won't be supported.
 There are several `blink_perf` benchmarks. You can see the full list in
 `third_party/blink/perf_tests` or by running
 `tools/perf/run_benchmark list | grep blink_perf`. If you want to run the
-`blink_perf.paint` benchmark and your current directory is `chromium/src/`, you
+`blink_perf.paint` benchmark and your current directory is `monyhar/src/`, you
 can run tests with:
 
 `./tools/perf/run_benchmark run blink_perf.paint [--story-filter=<test_file_name>]`

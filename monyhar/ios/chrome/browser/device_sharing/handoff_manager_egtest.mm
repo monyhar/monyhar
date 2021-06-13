@@ -91,7 +91,7 @@ void AssertHandoffURL(const GURL& gurl) {
 - (void)testMultipleSwitchingTabs {
   const GURL tab1URL = self.testServer->GetURL("/destination.html");
   const GURL tab2URL = self.testServer->GetURL("/pony.html");
-  const GURL tab3URL = self.testServer->GetURL("/chromium_logo_page.html");
+  const GURL tab3URL = self.testServer->GetURL("/monyhar_logo_page.html");
 
   // Sets up the state for 3 tabs.
   [ChromeEarlGrey loadURL:tab1URL];
@@ -115,7 +115,7 @@ void AssertHandoffURL(const GURL& gurl) {
 - (void)testSwitchBetweenNormalAndIncognitoTabs {
   const GURL tab1URL = self.testServer->GetURL("/destination.html");
   const GURL tab2URL = self.testServer->GetURL("/pony.html");
-  const GURL tab3URL = self.testServer->GetURL("/chromium_logo_page.html");
+  const GURL tab3URL = self.testServer->GetURL("/monyhar_logo_page.html");
 
   // Loads one page.
   [ChromeEarlGrey loadURL:tab1URL];

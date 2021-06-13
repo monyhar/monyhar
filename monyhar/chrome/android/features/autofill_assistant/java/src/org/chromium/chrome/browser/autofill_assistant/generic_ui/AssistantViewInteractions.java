@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.generic_ui;
+package org.monyhar.chrome.browser.autofill_assistant.generic_ui;
 
-import static org.chromium.chrome.browser.autofill_assistant.generic_ui.AssistantValue.isDateSingleton;
+import static org.monyhar.chrome.browser.autofill_assistant.generic_ui.AssistantValue.isDateSingleton;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -15,15 +15,15 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.chrome.browser.autofill.prefeditor.EditorTextField;
-import org.chromium.chrome.browser.autofill_assistant.AssistantTextUtils;
-import org.chromium.chrome.browser.autofill_assistant.user_data.AssistantDateTime;
-import org.chromium.content.browser.input.PopupItemType;
-import org.chromium.content.browser.input.SelectPopupDialog;
-import org.chromium.content.browser.input.SelectPopupItem;
-import org.chromium.content.browser.picker.InputDialogContainer;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.chrome.browser.autofill.prefeditor.EditorTextField;
+import org.monyhar.chrome.browser.autofill_assistant.AssistantTextUtils;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantDateTime;
+import org.monyhar.content.browser.input.PopupItemType;
+import org.monyhar.content.browser.input.SelectPopupDialog;
+import org.monyhar.content.browser.input.SelectPopupItem;
+import org.monyhar.content.browser.picker.InputDialogContainer;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -89,7 +89,7 @@ public class AssistantViewInteractions {
                     }
                 });
 
-        inputDialogContainer.showDialog(org.chromium.ui.base.ime.TextInputType.DATE,
+        inputDialogContainer.showDialog(org.monyhar.ui.base.ime.TextInputType.DATE,
                 initialDate != null ? initialDate.getDateTimes().get(0).getTimeInUtcMillis()
                                     : Double.NaN,
                 minDate.getDateTimes().get(0).getTimeInUtcMillis(),
@@ -142,7 +142,7 @@ public class AssistantViewInteractions {
             AssistantGenericUiDelegate delegate, String popupIdentifier) {
         new AlertDialog
                 .Builder(context,
-                        org.chromium.chrome.autofill_assistant.R.style.Theme_Chromium_AlertDialog)
+                        org.monyhar.chrome.autofill_assistant.R.style.Theme_Chromium_AlertDialog)
                 .setView(contentView)
                 .setOnDismissListener(unused -> delegate.onGenericPopupDismissed(popupIdentifier))
                 .show();

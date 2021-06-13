@@ -48,7 +48,7 @@ class WPTExpectationsUpdater(object):
         self.port = self.host.port_factory.get()
         self.finder = PathFinder(self.host.filesystem)
         self.git_cl = GitCL(host)
-        self.git = self.host.git(self.finder.chromium_base())
+        self.git = self.host.git(self.finder.monyhar_base())
         self.configs_with_no_results = []
         self.patchset = None
         self.wpt_manifests = (
@@ -781,7 +781,7 @@ class WPTExpectationsUpdater(object):
         return line_dict
 
     @contextlib.contextmanager
-    def prepare_smoke_tests(self, chromium_git):
+    def prepare_smoke_tests(self, monyhar_git):
         """List test cases that should be run by the smoke test builder
 
         Add new and modified test cases to WPT_SMOKE_TESTS_FILE,
@@ -819,7 +819,7 @@ class WPTExpectationsUpdater(object):
         finally:
             _log.info('Restore file WPTSmokeTestCases.')
             shutil.copyfile(self._saved_test_cases_file, WPT_SMOKE_TESTS_FILE)
-            chromium_git.commit_locally_with_message('Restore WPTSmokeTestCases')
+            monyhar_git.commit_locally_with_message('Restore WPTSmokeTestCases')
 
     def cleanup_test_expectations_files(self):
         """Removes deleted tests from expectations files.
@@ -970,7 +970,7 @@ class WPTExpectationsUpdater(object):
 
     def _relative_to_web_test_dir(self, path_relative_to_repo_root):
         """Returns a path that's relative to the web tests directory."""
-        abs_path = self.finder.path_from_chromium_base(
+        abs_path = self.finder.path_from_monyhar_base(
             path_relative_to_repo_root)
         if not abs_path.startswith(self.finder.web_tests_dir()):
             return None

@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@2.4.0.cr0
-package: chromium/third_party/android_deps/libs/com_google_errorprone_error_prone_check_api
+package: monyhar/third_party/android_deps/libs/com_google_errorprone_error_prone_check_api
 description: "error-prone check api"
 data:
 - file: error_prone_check_api-2.4.0.jar

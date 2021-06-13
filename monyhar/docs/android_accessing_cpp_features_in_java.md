@@ -20,7 +20,7 @@ This outputs Java String constants which represent the name of the
     // Use of this source code is governed by a BSD-style license that can be
     // found in the LICENSE file.
 
-    package org.chromium.foo;
+    package org.monyhar.foo;
 
     // Be sure to escape any curly braces in your template by doubling as
     // follows.
@@ -63,7 +63,7 @@ This outputs Java String constants which represent the name of the
     }
     ```
 
-3. The generated file `out/Default/gen/.../org/chromium/foo/FooFeatures.java`
+3. The generated file `out/Default/gen/.../org/monyhar/foo/FooFeatures.java`
    would contain:
 
     ```java
@@ -71,7 +71,7 @@ This outputs Java String constants which represent the name of the
     // Use of this source code is governed by a BSD-style license that can be
     // found in the LICENSE file.
 
-    package org.chromium.foo;
+    package org.monyhar.foo;
 
     // Be sure to escape any curly braces in your template by doubling as
     // follows.
@@ -104,7 +104,7 @@ may see an error like the following during compilation:
 
 ```
 ...
-org/chromium/foo/FooFeatures.java:41: error: duplicate declaration of field: MY_FEATURE
+org/monyhar/foo/FooFeatures.java:41: error: duplicate declaration of field: MY_FEATURE
     public static final String MY_FEATURE = "MyFeature";
 ```
 
@@ -143,7 +143,7 @@ const base::Feature kMyFeature{
 
 The standard pattern is to create a `FooFeatureList.java` class with an
 `isEnabled()` method (ex.
-[`ContentFeatureList`](/content/public/android/java/src/org/chromium/content_public/browser/ContentFeatureList.java)).
+[`ContentFeatureList`](/content/public/android/java/src/org/monyhar/content_public/browser/ContentFeatureList.java)).
 This should call into C++ (ex.
 [`content_feature_list`](/content/browser/android/content_feature_list.cc)),
 where a subset of features are exposed via the `kFeaturesExposedToJava` array.

@@ -3,26 +3,26 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.keyboard_accessory;
+package org.monyhar.chrome.browser.keyboard_accessory;
 
 import android.app.Activity;
 import android.util.SparseArray;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.keyboard_accessory.data.KeyboardAccessoryData.AccessorySheetData;
-import org.chromium.chrome.browser.keyboard_accessory.data.KeyboardAccessoryData.Action;
-import org.chromium.chrome.browser.keyboard_accessory.data.KeyboardAccessoryData.FooterCommand;
-import org.chromium.chrome.browser.keyboard_accessory.data.KeyboardAccessoryData.OptionToggle;
-import org.chromium.chrome.browser.keyboard_accessory.data.KeyboardAccessoryData.UserInfo;
-import org.chromium.chrome.browser.keyboard_accessory.data.PropertyProvider;
-import org.chromium.chrome.browser.keyboard_accessory.data.UserInfoField;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.Callback;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.keyboard_accessory.data.KeyboardAccessoryData.AccessorySheetData;
+import org.monyhar.chrome.browser.keyboard_accessory.data.KeyboardAccessoryData.Action;
+import org.monyhar.chrome.browser.keyboard_accessory.data.KeyboardAccessoryData.FooterCommand;
+import org.monyhar.chrome.browser.keyboard_accessory.data.KeyboardAccessoryData.OptionToggle;
+import org.monyhar.chrome.browser.keyboard_accessory.data.KeyboardAccessoryData.UserInfo;
+import org.monyhar.chrome.browser.keyboard_accessory.data.PropertyProvider;
+import org.monyhar.chrome.browser.keyboard_accessory.data.UserInfoField;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.WindowAndroid;
 
 class ManualFillingComponentBridge {
     private final SparseArray<PropertyProvider<AccessorySheetData>> mProviders =

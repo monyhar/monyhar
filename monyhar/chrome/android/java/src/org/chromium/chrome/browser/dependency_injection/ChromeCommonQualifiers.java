@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.dependency_injection;
+package org.monyhar.chrome.browser.dependency_injection;
 
 /**
  * Qualifiers that specify which particular instance of given type is provided or injected, in cases

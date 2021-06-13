@@ -267,8 +267,8 @@ LICENSE_AND_HEADER = """\
 //
 // This file is auto-generated from
 // gpu/vulkan/generate_bindings.py
-// It's formatted by clang-format using chromium coding style:
-//    clang-format -i -style=chromium filename
+// It's formatted by clang-format using monyhar coding style:
+//    clang-format -i -style=monyhar filename
 // DO NOT EDIT!
 
 """
@@ -622,7 +622,7 @@ def main(argv):
       "directory.")
   parser.add_option(
       "-c", "--check", action="store_true",
-      help="Check if output files match generated files in chromium root "
+      help="Check if output files match generated files in monyhar root "
       "directory. Use this in PRESUBMIT scripts with --output-dir.")
 
   (options, _) = parser.parse_args(args=argv)
@@ -637,7 +637,7 @@ def main(argv):
     formatter = "clang-format"
     if platform.system() == "Windows":
       formatter += ".bat"
-    call([formatter, "-i", "-style=chromium", filename])
+    call([formatter, "-i", "-style=monyhar", filename])
 
   header_file_name = 'vulkan_function_pointers.h'
   header_file = open(

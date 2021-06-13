@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
-import org.chromium.android_webview.test.TestAwContents.RenderProcessGoneObserver;
-import org.chromium.base.test.util.CallbackHelper;
+import org.monyhar.android_webview.test.TestAwContents.RenderProcessGoneObserver;
+import org.monyhar.base.test.util.CallbackHelper;
 
 import java.util.concurrent.TimeUnit;
 

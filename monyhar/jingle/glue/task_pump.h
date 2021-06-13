@@ -15,7 +15,7 @@
 
 namespace jingle_glue {
 
-// rtc::TaskRunner implementation that works on chromium threads.
+// rtc::TaskRunner implementation that works on monyhar threads.
 class TaskPump : public jingle_xmpp::TaskRunner {
  public:
   TaskPump();

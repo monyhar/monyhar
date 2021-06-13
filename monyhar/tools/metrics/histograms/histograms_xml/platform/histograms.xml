@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Platform histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -23,9 +23,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.AnyCrashesDaily" units="count per day"
     expires_after="2021-11-07">
-  <owner>grundler@chromium.org</owner>
-  <owner>groeck@chromium.org</owner>
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>grundler@monyhar.org</owner>
+  <owner>groeck@monyhar.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <summary>
     Count of crashes (user, kernel, and unclean shutdowns) during the previous
     day, or the most recent day the device was in use. Reported at most once a
@@ -35,9 +35,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.AnyCrashesWeekly" units="count per week"
     expires_after="2021-11-07">
-  <owner>grundler@chromium.org</owner>
-  <owner>groeck@chromium.org</owner>
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>grundler@monyhar.org</owner>
+  <owner>groeck@monyhar.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <summary>
     Count of crashes (user, kernel, and unclean shutdowns) during the previous
     epoch-week, or the most recent epoch-week the device was in use. Reported at
@@ -59,7 +59,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.BatteryAbsent" enum="BooleanAbsent"
     expires_after="M77">
-  <owner>cernekee@chromium.org</owner>
+  <owner>cernekee@monyhar.org</owner>
   <summary>
     Indicates whether the kernel's ACPI Smart Battery System driver logged an
     error trying to find the battery on boot.
@@ -68,8 +68,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.BootMode.DevSwitch"
     enum="Platform.BootMode.SwitchStatus" expires_after="2021-11-07">
-  <owner>mnissler@chromium.org</owner>
-  <owner>dossym@chromium.org</owner>
+  <owner>mnissler@monyhar.org</owner>
+  <owner>dossym@monyhar.org</owner>
   <summary>
     Indicates the status of the developer switch on Chrome OS hardware. The
     developer switch allows users to run their own code on the device.
@@ -78,8 +78,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.BootMode.FirmwareWriteProtect"
     enum="Platform.BootMode.FirmwareWriteProtect" expires_after="2021-11-07">
-  <owner>mnissler@chromium.org</owner>
-  <owner>dossym@chromium.org</owner>
+  <owner>mnissler@monyhar.org</owner>
+  <owner>dossym@monyhar.org</owner>
   <summary>
     On Chrome OS hardware, indicates whether flash write protection is enabled
     for the firmware indicated by the histogram suffix.
@@ -88,8 +88,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.BootMode.WriteProtectSwitch"
     enum="Platform.BootMode.SwitchStatus" expires_after="2021-09-05">
-  <owner>mnissler@chromium.org</owner>
-  <owner>dossym@chromium.org</owner>
+  <owner>mnissler@monyhar.org</owner>
+  <owner>dossym@monyhar.org</owner>
   <summary>
     Indicates the status of the hardware write protect switch on Chrome OS
     hardware. The write protect switch protects firmware from being rewritten.
@@ -98,7 +98,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.BootSectorsRead" units="units"
     expires_after="2021-07-02">
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <owner>chromeos-performance@google.com</owner>
   <summary>
     Chrome OS number of disk sectors read at boot from kernel start to
@@ -108,7 +108,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.BootSectorsWritten" units="units"
     expires_after="2021-07-02">
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <owner>chromeos-performance@google.com</owner>
   <summary>
     Chrome OS number of disk sectors written at boot from kernel start to
@@ -118,7 +118,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.Cast.MeminfoMemAvailable2" units="MiB"
     expires_after="2021-11-30">
-  <owner>halliwell@chromium.org</owner>
+  <owner>halliwell@monyhar.org</owner>
   <summary>
     /proc/meminfo's 'MemAvailable' in MiB. Collected every 5s on Cast devices
     with kernel version 3.14 and above and capped at 2000.
@@ -127,7 +127,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.Cast.MeminfoMemFreeDerived2" units="MiB"
     expires_after="2021-11-30">
-  <owner>halliwell@chromium.org</owner>
+  <owner>halliwell@monyhar.org</owner>
   <summary>
     Collect free + buffers + cache memory in MiB every 5s on Cast devices,
     capped at 2000.
@@ -136,7 +136,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.CompressedSwapSize" units="MB"
     expires_after="2021-11-07">
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <owner>chromeos-memory@google.com</owner>
   <summary>
     Chrome OS size of allocated swap area in megabytes (before compression)
@@ -145,7 +145,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.CpuFrequencyThermalScaling" units="%"
     expires_after="2021-11-07">
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <owner>chromeos-performance@google.com</owner>
   <summary>
     CPU frequency as percent of the baseline frequency, sampled every 30s. This
@@ -157,7 +157,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Platform.CpuUsage" units="%" expires_after="2021-07-02">
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <owner>cast-analytics@google.com</owner>
   <summary>
     Peak total (single core) CPU usage for the last sample interval. The sample
@@ -167,8 +167,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.Cr50.BoardIdFlags" enum="Cr50BoardIdFlags"
     expires_after="2021-10-18">
-  <owner>apronin@chromium.org</owner>
-  <owner>vbendeb@chromium.org</owner>
+  <owner>apronin@monyhar.org</owner>
+  <owner>vbendeb@monyhar.org</owner>
   <summary>
     A sparse histogram of values of Board ID flags programmed in H1 devices in
     the field. Board ID flags is a 32 bit field, and while there only are a few
@@ -178,9 +178,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.Cr50.BoardIdOfRlzMismatch" enum="Cr50CrosRlzCodes"
     expires_after="2021-12-05">
-  <owner>vbendeb@chromium.org</owner>
-  <owner>apronin@chromium.org</owner>
-  <owner>cros-hwsec+uma@chromium.org</owner>
+  <owner>vbendeb@monyhar.org</owner>
+  <owner>apronin@monyhar.org</owner>
+  <owner>cros-hwsec+uma@monyhar.org</owner>
   <summary>
     A sparse histogram of values indexed by 4 byte Board ID code programmed in
     H1 reported by devices where there is a mismatch between the RLZ code and
@@ -190,9 +190,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.Cr50.FlashLog" enum="Cr50FlashLogs"
     expires_after="2021-12-05">
-  <owner>apronin@chromium.org</owner>
-  <owner>vbendeb@chromium.org</owner>
-  <owner>cros-hwsec+uma@chromium.org</owner>
+  <owner>apronin@monyhar.org</owner>
+  <owner>vbendeb@monyhar.org</owner>
+  <owner>cros-hwsec+uma@monyhar.org</owner>
   <summary>
     A histogram of flash log event types collected from the H1 device. Log event
     type is an 8 bit value. This histogram does not allow to drill into
@@ -204,7 +204,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.Cr50.MatchingBoardId" enum="Cr50CrosRlzCodes"
     expires_after="M85">
-  <owner>vbendeb@chromium.org</owner>
+  <owner>vbendeb@monyhar.org</owner>
   <summary>
     A sparse histogram of values indexed by 4 byte Board ID code programmed in
     H1, reported by devices where there is no mismatch between the RLZ code and
@@ -214,9 +214,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.Cr50.RlzOfBoardIdMismatch" enum="Cr50CrosRlzCodes"
     expires_after="2021-11-28">
-  <owner>vbendeb@chromium.org</owner>
-  <owner>apronin@chromium.org</owner>
-  <owner>cros-hwsec+uma@chromium.org</owner>
+  <owner>vbendeb@monyhar.org</owner>
+  <owner>apronin@monyhar.org</owner>
+  <owner>cros-hwsec+uma@monyhar.org</owner>
   <summary>
     A sparse histogram of values indexed by 4 byte RLZ code reported by devices
     where there is a mismatch between the RLZ code and the Board ID value
@@ -227,8 +227,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.CrOS.CrashSenderRemoveReason"
     enum="CrosCrashSenderRemoveReason" expires_after="2021-10-10">
-  <owner>iby@chromium.org</owner>
-  <owner>mutexlox@chromium.org</owner>
+  <owner>iby@monyhar.org</owner>
+  <owner>mutexlox@monyhar.org</owner>
   <owner>cros-telemetry@google.com</owner>
   <summary>
     (Chrome OS only) An enum indicating the reasons for removal of crash reports
@@ -244,11 +244,11 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <!-- expires-never: Used by the core CrOS platform with individual buckets added
      and removed as makes sense. -->
 
-<!-- https://chromium.googlesource.com/chromiumos/platform2/+/HEAD/metrics/OWNERS -->
+<!-- https://monyhar.googlesource.com/monyharos/platform2/+/HEAD/metrics/OWNERS -->
 
-  <owner>iby@chromium.org</owner>
-  <owner>mutexlox@chromium.org</owner>
-  <owner>vapier@chromium.org</owner>
+  <owner>iby@monyhar.org</owner>
+  <owner>mutexlox@monyhar.org</owner>
+  <owner>vapier@monyhar.org</owner>
   <summary>
     Generic event of interest from Chrome OS. Intended mainly to help assess the
     frequency of rare error conditions.
@@ -257,8 +257,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.Crouton.Started" enum="Platform.Crouton.Started"
     expires_after="2021-10-04">
-  <owner>drinkcat@chromium.org</owner>
-  <owner>dnschneid@chromium.org</owner>
+  <owner>drinkcat@monyhar.org</owner>
+  <owner>dnschneid@monyhar.org</owner>
   <summary>
     Detects presence of /run/crouton, indicating that crouton has been started
     since the previous boot. Value 0/&quot;Total count&quot; is reported on
@@ -269,8 +269,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.CumulativeCpuTime" units="seconds"
     expires_after="M78">
-  <owner>semenzato@chromium.org</owner>
-  <owner>bsimonnet@chromium.org</owner>
+  <owner>semenzato@monyhar.org</owner>
+  <owner>bsimonnet@monyhar.org</owner>
   <summary>
     Total CPU time accumulated since the last version update. Reported at most
     once a day.
@@ -279,8 +279,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.CumulativeUseTime" units="seconds"
     expires_after="M77">
-  <owner>semenzato@chromium.org</owner>
-  <owner>bsimonnet@chromium.org</owner>
+  <owner>semenzato@monyhar.org</owner>
+  <owner>bsimonnet@monyhar.org</owner>
   <summary>
     Total use time (device ON and not asleep) since last version update.
     Reported at most once a day.
@@ -290,10 +290,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Platform.DailyUseTime" units="seconds" expires_after="never">
 <!-- expires-never: Used to assess Chrome OS platform stability. -->
 
-  <owner>semenzato@chromium.org</owner>
-  <owner>bsimonnet@chromium.org</owner>
-  <owner>mutexlox@chromium.org</owner>
-  <owner>iby@chromium.org</owner>
+  <owner>semenzato@monyhar.org</owner>
+  <owner>bsimonnet@monyhar.org</owner>
+  <owner>mutexlox@monyhar.org</owner>
+  <owner>iby@monyhar.org</owner>
   <owner>cros-telemetry@google.com</owner>
   <summary>
     Total use time (device ON and not asleep) in the previous day, or the most
@@ -303,8 +303,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.DetachableBase.ActivePercent" units="%"
     expires_after="2021-12-05">
-  <owner>drinkcat@chromium.org</owner>
-  <owner>fshao@chromium.org</owner>
+  <owner>drinkcat@monyhar.org</owner>
+  <owner>fshao@monyhar.org</owner>
   <owner>chromeos-kukui@google.com</owner>
   <summary>
     Ratio of time a detachable base keyboard is active, i.e. when the USB
@@ -315,8 +315,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.DetachableBase.AttachedOnBoot" enum="BooleanAttached"
     expires_after="2021-12-05">
-  <owner>drinkcat@chromium.org</owner>
-  <owner>fshao@chromium.org</owner>
+  <owner>drinkcat@monyhar.org</owner>
+  <owner>fshao@monyhar.org</owner>
   <owner>chromeos-kukui@google.com</owner>
   <summary>
     For devices with a detachable base: whether or not the base is connected on
@@ -326,16 +326,16 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.DetachableBase.PairResult"
     enum="DetachableBasePairResult" expires_after="2021-12-05">
-  <owner>drinkcat@chromium.org</owner>
-  <owner>fshao@chromium.org</owner>
+  <owner>drinkcat@monyhar.org</owner>
+  <owner>fshao@monyhar.org</owner>
   <owner>chromeos-kukui@google.com</owner>
   <summary>Result of a detachable base pair operation.</summary>
 </histogram>
 
 <histogram name="Platform.DetachableBase.PendingRWUpdate"
     enum="DetachableBasePendingRWUpdate" expires_after="2021-12-05">
-  <owner>drinkcat@chromium.org</owner>
-  <owner>fshao@chromium.org</owner>
+  <owner>drinkcat@monyhar.org</owner>
+  <owner>fshao@monyhar.org</owner>
   <owner>chromeos-kukui@google.com</owner>
   <summary>
     Detachable base firmware updates can be configured to only occur on boot. In
@@ -353,24 +353,24 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.DetachableBase.ROUpdateResult"
     enum="DetachableBaseROUpdateResult" expires_after="2021-11-14">
-  <owner>drinkcat@chromium.org</owner>
-  <owner>fshao@chromium.org</owner>
+  <owner>drinkcat@monyhar.org</owner>
+  <owner>fshao@monyhar.org</owner>
   <owner>chromeos-kukui@google.com</owner>
   <summary>Result of a detachable base RO firmware update.</summary>
 </histogram>
 
 <histogram name="Platform.DetachableBase.RWUpdateResult"
     enum="DetachableBaseRWUpdateResult" expires_after="2021-10-10">
-  <owner>drinkcat@chromium.org</owner>
-  <owner>fshao@chromium.org</owner>
+  <owner>drinkcat@monyhar.org</owner>
+  <owner>fshao@monyhar.org</owner>
   <owner>chromeos-kukui@google.com</owner>
   <summary>Result of a detachable base RW firmware update.</summary>
 </histogram>
 
 <histogram name="Platform.DiskUsage.NumUserHomeDirectories"
     units="home directories" expires_after="2021-08-01">
-  <owner>achuith@chromium.org</owner>
-  <owner>tls@chromium.org</owner>
+  <owner>achuith@monyhar.org</owner>
+  <owner>tls@monyhar.org</owner>
   <summary>
     Number of users home directories on the device. Logged once a day.
   </summary>
@@ -378,8 +378,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.DiskUsage.OldestUserOnDevice" units="units"
     expires_after="2021-08-01">
-  <owner>achuith@chromium.org</owner>
-  <owner>omrilio@chromium.org</owner>
+  <owner>achuith@monyhar.org</owner>
+  <owner>omrilio@monyhar.org</owner>
   <summary>
     Days since last login of the least recently user on device. Logged once a
     day, if disk usage is high.
@@ -388,8 +388,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.DiskUsage.UsersOnDevice" units="units"
     expires_after="M85">
-  <owner>achuith@chromium.org</owner>
-  <owner>omrilio@chromium.org</owner>
+  <owner>achuith@monyhar.org</owner>
+  <owner>omrilio@monyhar.org</owner>
   <summary>
     Number of user home dirs on device. Logged once a day, if disk usage is
     high.
@@ -415,7 +415,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.DlcService.InstallResult"
     enum="DlcService.InstallResult" expires_after="2021-08-29">
-  <owner>andrewlassalle@chromium.org</owner>
+  <owner>andrewlassalle@monyhar.org</owner>
   <owner>chromeos-core-services@google.com</owner>
   <summary>
     The result of an attempt to Install a DLC package. DLCs are ChromiumOS
@@ -425,7 +425,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.DlcService.UninstallResult"
     enum="DlcService.UninstallResult" expires_after="2021-08-29">
-  <owner>andrewlassalle@chromium.org</owner>
+  <owner>andrewlassalle@monyhar.org</owner>
   <owner>chromeos-core-services@google.com</owner>
   <summary>
     The result of an attempt to Uninstall a DLC package. DLCs are ChromiumOS
@@ -475,8 +475,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.IntelMaxMicroArchitecture"
     enum="IntelMaxMicroArchitecture" expires_after="2021-11-14">
-  <owner>fbarchard@chromium.org</owner>
-  <owner>pwnall@chromium.org</owner>
+  <owner>fbarchard@monyhar.org</owner>
+  <owner>pwnall@monyhar.org</owner>
   <summary>
     The maximum supported micro-architecture on an Intel platform. This value is
     logged at program start time.
@@ -485,9 +485,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.KernelCrashesDaily" units="count per day"
     expires_after="2021-11-07">
-  <owner>grundler@chromium.org</owner>
-  <owner>groeck@chromium.org</owner>
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>grundler@monyhar.org</owner>
+  <owner>groeck@monyhar.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <summary>
     Count of kernel crashes during the previous day, or the most recent day the
     device was in use. Reported at most once a day.
@@ -496,9 +496,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.KernelCrashesPerActiveYear" units="count per year"
     expires_after="2021-11-07">
-  <owner>grundler@chromium.org</owner>
-  <owner>groeck@chromium.org</owner>
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>grundler@monyhar.org</owner>
+  <owner>groeck@monyhar.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <summary>
     Count of kernel crashes since the last OS update, normalized as number of
     crashes per year of active use (active use = device is ON and not asleep).
@@ -508,9 +508,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.KernelCrashesPerCpuYear" units="count per CPU year"
     expires_after="2021-07-02">
-  <owner>grundler@chromium.org</owner>
-  <owner>groeck@chromium.org</owner>
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>grundler@monyhar.org</owner>
+  <owner>groeck@monyhar.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <summary>
     Count of kernel crashes since the last OS update, normalized as number
     crashes per year of CPU time. Reported daily.
@@ -519,9 +519,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.KernelCrashesSinceUpdate" units="count"
     expires_after="2021-07-02">
-  <owner>grundler@chromium.org</owner>
-  <owner>groeck@chromium.org</owner>
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>grundler@monyhar.org</owner>
+  <owner>groeck@monyhar.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <summary>
     Count of kernel crashes since the last OS update, reported daily.
   </summary>
@@ -529,9 +529,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.KernelCrashesWeekly" units="count per week"
     expires_after="2021-11-07">
-  <owner>grundler@chromium.org</owner>
-  <owner>groeck@chromium.org</owner>
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>grundler@monyhar.org</owner>
+  <owner>groeck@monyhar.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <summary>
     Count of kernel crashes during the previous epoch-week, or the most recent
     epoch-week the device was in use. Reported at most once a week. Epoch-weeks
@@ -541,9 +541,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.KernelCrashInterval" units="seconds"
     expires_after="2021-11-07">
-  <owner>grundler@chromium.org</owner>
-  <owner>groeck@chromium.org</owner>
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>grundler@monyhar.org</owner>
+  <owner>groeck@monyhar.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <summary>
     Time elapsed between the last two kernel crashes. Sent after every kernel
     crash.
@@ -552,8 +552,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.KmsVncMethod" enum="KmsVncMethodEnum"
     expires_after="2022-02-02">
-  <owner>uekawa@chromium.org</owner>
-  <owner>shaochuan@chromium.org</owner>
+  <owner>uekawa@monyhar.org</owner>
+  <owner>shaochuan@monyhar.org</owner>
   <summary>
     KmsVnc graphics method in use, depending on command line flags and
     auto-detected kernel graphics features. Recorded at start up of VNC server.
@@ -562,7 +562,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.LogicalCpuCount" units="units"
     expires_after="2021-11-07">
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <owner>chromeos-performance@google.com</owner>
   <summary>
     Number of logical processors. This includes Hyperthreaded cores.
@@ -583,9 +583,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Platform.Mem" units="%" expires_after="2021-07-02">
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>kouhei@chromium.org</owner>
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>hajimehoshi@monyhar.org</owner>
+  <owner>kouhei@monyhar.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <owner>chromeos-memory@google.com</owner>
   <summary>
     Various memory usage % of total memory on Chrome OS devices (snapshotted
@@ -594,9 +594,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Platform.Meminfo" units="KB" expires_after="2021-11-14">
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>kouhei@chromium.org</owner>
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>hajimehoshi@monyhar.org</owner>
+  <owner>kouhei@monyhar.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <owner>chromeos-memory@google.com</owner>
   <summary>
     Various memory usage amount on Chrome OS devices (snapshotted every 30s).
@@ -606,7 +606,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Platform.Memory.ARC" units="MiB" expires_after="2021-12-05">
 <!-- Name completed by histogram_suffixes name="ProcessMemoryType" -->
 
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <owner>chromeos-memory@google.com</owner>
   <summary>
     Memory usage of all ARC processes in Chrome OS, reported every 10 minutes.
@@ -617,7 +617,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="2021-12-05">
 <!-- Name completed by histogram_suffixes name="ProcessMemoryType" -->
 
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <owner>chromeos-memory@google.com</owner>
   <summary>
     Memory usage of browser and helper processes (excluding GPU process and
@@ -629,7 +629,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="2021-12-05">
 <!-- Name completed by histogram_suffixes name="ProcessMemoryType" -->
 
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <owner>chromeos-memory@google.com</owner>
   <summary>
     Memory usage of user-level daemons in Chrome OS, reported every 10 minutes.
@@ -639,7 +639,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Platform.Memory.Gpu" units="MiB" expires_after="2021-10-10">
 <!-- Name completed by histogram_suffixes name="ProcessMemoryType" -->
 
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <owner>chromeos-memory@google.com</owner>
   <summary>
     Memory usage of the GPU process in Chrome OS, reported every 10 minutes.
@@ -650,7 +650,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="2021-12-05">
 <!-- Name completed by histogram_suffixes name="ProcessMemoryType" -->
 
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <owner>chromeos-memory@google.com</owner>
   <summary>
     Memory usage of renderer processes in Chrome OS, reported every 10 minutes.
@@ -660,7 +660,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Platform.Memory.VMs" units="MiB" expires_after="2022-04-04">
 <!-- Name completed by histogram_suffixes name="ProcessMemoryType" -->
 
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <owner>chromeos-memory@google.com</owner>
   <summary>
     Memory usage of VMs (crostini) in Chrome OS, reported every 10 minutes.
@@ -668,8 +668,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Platform.MemuseAnon0" units="units" expires_after="M85">
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>kouhei@chromium.org</owner>
+  <owner>hajimehoshi@monyhar.org</owner>
+  <owner>kouhei@monyhar.org</owner>
   <summary>
     Chrome OS total anonymous memory (active + inactive) as % of total memory 1
     minute after boot.
@@ -677,8 +677,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Platform.MemuseAnon1" units="units" expires_after="M85">
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>kouhei@chromium.org</owner>
+  <owner>hajimehoshi@monyhar.org</owner>
+  <owner>kouhei@monyhar.org</owner>
   <summary>
     Chrome OS total anonymous memory (active + inactive) as % of total memory 5
     minutes after boot.
@@ -686,8 +686,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Platform.MemuseAnon2" units="units" expires_after="M85">
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>kouhei@chromium.org</owner>
+  <owner>hajimehoshi@monyhar.org</owner>
+  <owner>kouhei@monyhar.org</owner>
   <summary>
     Chrome OS total anonymous memory (active + inactive) as % of total memory 30
     minutes after boot.
@@ -695,8 +695,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Platform.MemuseAnon3" units="units" expires_after="M85">
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>kouhei@chromium.org</owner>
+  <owner>hajimehoshi@monyhar.org</owner>
+  <owner>kouhei@monyhar.org</owner>
   <summary>
     Chrome OS total anonymous memory (active + inactive) as % of total memory
     150 minutes after boot.
@@ -704,8 +704,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Platform.MemuseAnon4" units="units" expires_after="M85">
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>kouhei@chromium.org</owner>
+  <owner>hajimehoshi@monyhar.org</owner>
+  <owner>kouhei@monyhar.org</owner>
   <summary>
     Chrome OS total anonymous memory (active + inactive) as % of total memory
     750 minutes after boot.
@@ -714,9 +714,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.MountEncrypted.EncryptionKeyStatus"
     enum="MountEncryptedEncryptionKeyStatus" expires_after="2021-12-21">
-  <owner>apronin@chromium.org</owner>
-  <owner>mnissler@chromium.org</owner>
-  <owner>cros-hwsec+uma@chromium.org</owner>
+  <owner>apronin@monyhar.org</owner>
+  <owner>mnissler@monyhar.org</owner>
+  <owner>cros-hwsec+uma@monyhar.org</owner>
   <summary>
     File system encryption key status for the encrypted stateful file system on
     Chrome OS. The encryption key is the one that is used by the kernel to
@@ -726,9 +726,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.MountEncrypted.SystemKeyStatus"
     enum="MountEncryptedSystemKeyStatus" expires_after="2021-12-21">
-  <owner>apronin@chromium.org</owner>
-  <owner>mnissler@chromium.org</owner>
-  <owner>cros-hwsec+uma@chromium.org</owner>
+  <owner>apronin@monyhar.org</owner>
+  <owner>mnissler@monyhar.org</owner>
+  <owner>cros-hwsec+uma@monyhar.org</owner>
   <summary>
     Type/Origin of the system key used for the encrypted stateful file system on
     Chrome OS. This key is used to wrap the actual file system encryption key.
@@ -737,10 +737,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.MountEncrypted.TimeToTakeTpmOwnership" units="ms"
     expires_after="2021-12-31">
-  <owner>apronin@chromium.org</owner>
-  <owner>mnissler@chromium.org</owner>
+  <owner>apronin@monyhar.org</owner>
+  <owner>mnissler@monyhar.org</owner>
   <owner>cylai@google.com</owner>
-  <owner>cros-hwsec+uma@chromium.org</owner>
+  <owner>cros-hwsec+uma@monyhar.org</owner>
   <summary>
     The amount of time for Chrome OS mount-encrypted to take TPM ownership.
   </summary>
@@ -748,7 +748,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.PageFaultsLong" units="page faults/second"
     expires_after="2021-07-02">
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <owner>chromeos-memory@google.com</owner>
   <summary>
     Page faults per second averaged over 30s interval, sampled continuously.
@@ -757,7 +757,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.PageFaultsShort" units="page faults/second"
     expires_after="2021-07-02">
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <owner>chromeos-memory@google.com</owner>
   <summary>
     Page faults per second averaged over 1s interval, sampled every 30s.
@@ -784,8 +784,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.SATA.AvailableReservedSpace" units="%"
     expires_after="2021-12-05">
-  <owner>asavery@chromium.org</owner>
-  <owner>gwendal@chromium.org</owner>
+  <owner>asavery@monyhar.org</owner>
+  <owner>gwendal@monyhar.org</owner>
   <summary>
     The remaining reserved space (SMART 232). The value counts down typically
     from 100 to 0, sent at boot.
@@ -794,8 +794,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.SATA.LogicalSectorsRead" units="512-byte sectors"
     expires_after="2021-08-01">
-  <owner>asavery@chromium.org</owner>
-  <owner>gwendal@chromium.org</owner>
+  <owner>asavery@monyhar.org</owner>
+  <owner>gwendal@monyhar.org</owner>
   <summary>
     The total number of 512-byte sectors written during the lifetime of the
     device, sent at boot.
@@ -804,8 +804,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.SATA.LogicalSectorsWritten" units="512-byte sectors"
     expires_after="2021-08-01">
-  <owner>asavery@chromium.org</owner>
-  <owner>gwendal@chromium.org</owner>
+  <owner>asavery@monyhar.org</owner>
+  <owner>gwendal@monyhar.org</owner>
   <summary>
     The total number of 512-byte sectors written during the lifetime of the
     device, sent at boot.
@@ -814,8 +814,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.SATA.PercentageUsed" units="%"
     expires_after="2021-08-01">
-  <owner>asavery@chromium.org</owner>
-  <owner>gwendal@chromium.org</owner>
+  <owner>asavery@monyhar.org</owner>
+  <owner>gwendal@monyhar.org</owner>
   <summary>
     Percentage Used Endurance Indicator. A value of 0 indicates a new device, a
     value of 100 indicates the device is at the end of its lifespan as projected
@@ -854,8 +854,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.StatefulFreeSpace" units="MB"
     expires_after="2021-10-01">
-  <owner>jamescook@chromium.org</owner>
-  <owner>gwendal@chromium.org</owner>
+  <owner>jamescook@monyhar.org</owner>
+  <owner>gwendal@monyhar.org</owner>
   <summary>
     Chrome OS stateful partition space free. Sampled once daily.
   </summary>
@@ -863,8 +863,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.StatefulLifetimeWrites" units="GiB"
     expires_after="2021-10-25">
-  <owner>asavery@chromium.org</owner>
-  <owner>gwendal@chromium.org</owner>
+  <owner>asavery@monyhar.org</owner>
+  <owner>gwendal@monyhar.org</owner>
   <summary>
     Chrome OS stateful partition lifetime writes. Sampled once daily.
   </summary>
@@ -872,8 +872,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.StatefulTrim.TimeBetweenTrim" units="hours"
     expires_after="2021-06-08">
-  <owner>asavery@chromium.org</owner>
-  <owner>gwendal@chromium.org</owner>
+  <owner>asavery@monyhar.org</owner>
+  <owner>gwendal@monyhar.org</owner>
   <summary>
     The amount of time in hours since the last trim when chromeos-trim triggers
     a trim for the stateful partition. The chromeos-trim script is run daily,
@@ -885,8 +885,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.StatefulTrim.TrimmedAmount" units="MiB"
     expires_after="2021-06-08">
-  <owner>asavery@chromium.org</owner>
-  <owner>gwendal@chromium.org</owner>
+  <owner>asavery@monyhar.org</owner>
+  <owner>gwendal@monyhar.org</owner>
   <summary>
     The amount of data in the stateful partition that is erased when
     chromeos-trim triggers a trim. The chromeos-trim script is run daily, but a
@@ -897,15 +897,15 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Platform.StatefulUsage" units="%" expires_after="2021-12-05">
-  <owner>achuith@chromium.org</owner>
-  <owner>omrilio@chromium.org</owner>
+  <owner>achuith@monyhar.org</owner>
+  <owner>omrilio@monyhar.org</owner>
   <summary>Chrome OS stateful partition usage level.</summary>
 </histogram>
 
 <histogram name="Platform.StatefulUsedSpace" units="GB"
     expires_after="2030-08-29">
-  <owner>asavery@chromium.org</owner>
-  <owner>gwendal@chromium.org</owner>
+  <owner>asavery@monyhar.org</owner>
+  <owner>gwendal@monyhar.org</owner>
   <summary>
     Chrome OS stateful partition space used. Sampled once daily.
   </summary>
@@ -913,8 +913,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.StatefulWritesDaily" units="KiB"
     expires_after="2021-12-05">
-  <owner>asavery@chromium.org</owner>
-  <owner>gwendal@chromium.org</owner>
+  <owner>asavery@monyhar.org</owner>
+  <owner>gwendal@monyhar.org</owner>
   <summary>
     Chrome OS stateful partition KiB writes per day. Sampled once daily.
   </summary>
@@ -922,7 +922,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.Storage.Flash.BadBlocks" units="units"
     expires_after="M85">
-  <owner>dehrenberg@chromium.org</owner>
+  <owner>dehrenberg@monyhar.org</owner>
   <owner>cast-analytics@google.com</owner>
   <summary>
     The number of blocks marked bad in an MTD partition. This is relevant for
@@ -933,8 +933,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.Storage.Nvme.PercentageUsed" units="%"
     expires_after="2021-10-04">
-  <owner>asavery@chromium.org</owner>
-  <owner>gwendal@chromium.org</owner>
+  <owner>asavery@monyhar.org</owner>
+  <owner>gwendal@monyhar.org</owner>
   <summary>
     Vendor specific estimate of the percentage of NVM subsystem life used based
     on the actual usage and the manufacturer's prediction of NVM life. A value
@@ -946,8 +946,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.Storage.Ufs.LifeUsed" enum="EmmcLifeUsed"
     expires_after="2021-08-01">
-  <owner>asavery@chromium.org</owner>
-  <owner>gwendal@chromium.org</owner>
+  <owner>asavery@monyhar.org</owner>
+  <owner>gwendal@monyhar.org</owner>
   <summary>
     UFS Device life time estimation. This field provides an indication of the
     device life time based on the amount of performed program/erase cycles. The
@@ -956,14 +956,14 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Platform.SwapInDaily" units="pages" expires_after="2021-10-10">
-  <owner>asavery@chromium.org</owner>
+  <owner>asavery@monyhar.org</owner>
   <owner>chromeos-storage@google.com</owner>
   <summary>Number of pages swapped IN over a day, sampled daily.</summary>
 </histogram>
 
 <histogram name="Platform.SwapInLong" units="pages/second"
     expires_after="2021-11-07">
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <owner>chromeos-memory@google.com</owner>
   <summary>
     Average pages/second swapped IN over a 30s interval, sampled every 30s.
@@ -972,7 +972,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.SwapInShort" units="pages/second"
     expires_after="2021-07-02">
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <owner>chromeos-memory@google.com</owner>
   <summary>
     Average pages/second swapped IN over a 1s interval, sampled every 30s.
@@ -981,14 +981,14 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.SwapOutDaily" units="pages"
     expires_after="2021-12-05">
-  <owner>asavery@chromium.org</owner>
+  <owner>asavery@monyhar.org</owner>
   <owner>chromeos-storage@google.com</owner>
   <summary>Number of pages swapped OUT over a day, sampled daily.</summary>
 </histogram>
 
 <histogram name="Platform.SwapOutLong" units="pages/second"
     expires_after="2021-11-07">
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <owner>chromeos-memory@google.com</owner>
   <summary>
     Average pages/second swapped OUT over a 30s interval, sampled every 30s.
@@ -997,7 +997,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.SwapOutShort" units="pages/second"
     expires_after="2021-11-07">
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <owner>chromeos-memory@google.com</owner>
   <summary>
     Average pages/second swapped OUT over a 1s interval, sampled every 30s.
@@ -1006,7 +1006,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.Temperature.Sensor00" units="Celsius"
     expires_after="2021-10-31">
-  <owner>fletcherw@chromium.org</owner>
+  <owner>fletcherw@monyhar.org</owner>
   <summary>
     Temperature reading from EC temperature sensor 0 (TSR0) taken every 30s.
 
@@ -1016,7 +1016,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.Temperature.Sensor00.WhileSuspended" units="Celsius"
     expires_after="2019-06-01">
-  <owner>fletcherw@chromium.org</owner>
+  <owner>fletcherw@monyhar.org</owner>
   <summary>
     Temperature reading from EC temperature sensor 0 (TSR0) taken after resume
     from sufficiently long suspend.
@@ -1027,7 +1027,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.Temperature.Sensor01" units="Celsius"
     expires_after="2020-12-01">
-  <owner>fletcherw@chromium.org</owner>
+  <owner>fletcherw@monyhar.org</owner>
   <summary>
     Temperature reading from EC temperature sensor 1 (TSR1) taken every 30s.
 
@@ -1037,7 +1037,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.Temperature.Sensor01.WhileSuspended" units="Celsius"
     expires_after="2019-06-01">
-  <owner>fletcherw@chromium.org</owner>
+  <owner>fletcherw@monyhar.org</owner>
   <summary>
     Temperature reading from EC temperature sensor 1 (TSR1) taken after resume
     from sufficiently long suspend.
@@ -1048,7 +1048,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.Temperature.Sensor02" units="Celsius"
     expires_after="2021-10-31">
-  <owner>fletcherw@chromium.org</owner>
+  <owner>fletcherw@monyhar.org</owner>
   <summary>
     Temperature reading from EC temperature sensor 2 (TSR2) taken every 30s.
 
@@ -1058,7 +1058,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.Temperature.Sensor02.WhileSuspended" units="Celsius"
     expires_after="2019-06-01">
-  <owner>fletcherw@chromium.org</owner>
+  <owner>fletcherw@monyhar.org</owner>
   <summary>
     Temperature reading from EC temperature sensor 2 (TSR2) taken after resume
     from sufficiently long suspend.
@@ -1135,7 +1135,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.Thermal.Temperature.Cpu.0.WhileSuspended"
     units="Celsius" expires_after="2019-06-01">
-  <owner>fletcherw@chromium.org</owner>
+  <owner>fletcherw@monyhar.org</owner>
   <summary>
     Temperature reading at sensor 0 of the CPU collected when resuming from a
     sufficiently long suspend.
@@ -1159,7 +1159,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Platform.TPM.AuthErrorCode" enum="TPMResultCodeEnum"
     expires_after="2021-12-21">
   <owner>yich@google.com</owner>
-  <owner>cros-hwsec-userland-eng+uma@chromium.org</owner>
+  <owner>cros-hwsec-userland-eng+uma@monyhar.org</owner>
   <summary>
     Each sample is the result code of a TPM authorized command issued through
     tcsd. Success is 0. For the other error codes, see
@@ -1170,7 +1170,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Platform.TPM.AuthFailCommand.Auth2Fail"
     enum="TPM12CommandOrdinal" expires_after="2021-10-10">
   <owner>cylai@google.com</owner>
-  <owner>cros-hwsec-userland-eng+uma@chromium.org</owner>
+  <owner>cros-hwsec-userland-eng+uma@monyhar.org</owner>
   <summary>
     Reporting the TPM command ordinal that results in TPM_E_AUTH2FAIL code. Note
     that this is only applicable for TPM1.2.
@@ -1180,7 +1180,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Platform.TPM.AuthFailCommand.AuthFail"
     enum="TPM12CommandOrdinal" expires_after="2021-10-10">
   <owner>cylai@google.com</owner>
-  <owner>cros-hwsec-userland-eng+uma@chromium.org</owner>
+  <owner>cros-hwsec-userland-eng+uma@monyhar.org</owner>
   <summary>
     Reporting the TPM command ordinal that results in TPM_E_AUTHFAIL code. Note
     that this is only applicable for TPM1.2.
@@ -1189,8 +1189,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.TPM.DictionaryAttackCounter" units="units"
     expires_after="2021-12-05">
-  <owner>cylai@chromium.org</owner>
-  <owner>cros-hwsec-userland-eng+uma@chromium.org</owner>
+  <owner>cylai@monyhar.org</owner>
+  <owner>cros-hwsec-userland-eng+uma@monyhar.org</owner>
   <summary>
     Each sample is the value of the TPM dictionary attack counter reported at
     boot and hourly while running. Any non-zero value is unexpected.
@@ -1199,8 +1199,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.TPM.DictionaryAttackResetStatus"
     enum="CrosTPMDictionaryAttackResetStatusEnum" expires_after="2021-12-05">
-  <owner>cylai@chromium.org</owner>
-  <owner>cros-hwsec-userland-eng+uma@chromium.org</owner>
+  <owner>cylai@monyhar.org</owner>
+  <owner>cros-hwsec-userland-eng+uma@monyhar.org</owner>
   <summary>
     Each sample is the status of an hourly attempt to reset the TPM dictionary
     attack counter.
@@ -1210,7 +1210,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Platform.TPM.ErrorCode" enum="TPMResultCodeEnum"
     expires_after="2021-12-21">
   <owner>yich@google.com</owner>
-  <owner>cros-hwsec-userland-eng+uma@chromium.org</owner>
+  <owner>cros-hwsec-userland-eng+uma@monyhar.org</owner>
   <summary>
     Each sample is the result code of a TPM command issued through tcsd. Success
     is 0. For the other error codes, see /usr/include/tss/tpm_error.h.
@@ -1219,8 +1219,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.TPM.FirmwareUpdate.Attempts" units="attempts"
     expires_after="2021-11-07">
-  <owner>mnissler@chromium.org</owner>
-  <owner>cros-hwsec+uma@chromium.org</owner>
+  <owner>mnissler@monyhar.org</owner>
+  <owner>cros-hwsec+uma@monyhar.org</owner>
   <summary>
     Number of attempts until a successful TPM firmware update. This is the total
     sum of attempts, i.e. number of failed attempts + 1 for the final successful
@@ -1232,15 +1232,15 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.TPM.FirmwareUpdate.Result"
     enum="TPMFirmwareUpdateResult" expires_after="2021-11-07">
-  <owner>mnissler@chromium.org</owner>
-  <owner>cros-hwsec+uma@chromium.org</owner>
+  <owner>mnissler@monyhar.org</owner>
+  <owner>cros-hwsec+uma@monyhar.org</owner>
   <summary>Status of a complete TPM firmware update attempt.</summary>
 </histogram>
 
 <histogram name="Platform.TPM.FirmwareUpdate.Status"
     enum="TPMFirmwareUpdateStatus" expires_after="2021-07-01">
-  <owner>mnissler@chromium.org</owner>
-  <owner>cros-hwsec+uma@chromium.org</owner>
+  <owner>mnissler@monyhar.org</owner>
+  <owner>cros-hwsec+uma@monyhar.org</owner>
   <summary>Exit status of the TPM firmware updater script.</summary>
 </histogram>
 
@@ -1257,7 +1257,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="2021-10-08">
   <owner>yich@google.com</owner>
   <owner>cylai@google.com</owner>
-  <owner>cros-hwsec+uma@chromium.org</owner>
+  <owner>cros-hwsec+uma@monyhar.org</owner>
   <summary>
     The amount of time for Chrome OS to take TPM ownership. Recorded when
     tpm_manager takes the ownership of TPM.
@@ -1266,15 +1266,15 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.TPM.TpmManagerSecretStatus"
     enum="TpmManagerSecretStatus" expires_after="2021-09-01">
-  <owner>cylai@chromium.org</owner>
-  <owner>cros-hwsec+uma@chromium.org</owner>
+  <owner>cylai@monyhar.org</owner>
+  <owner>cros-hwsec+uma@monyhar.org</owner>
   <summary>The status of the secrets that tpm manager holds.</summary>
 </histogram>
 
 <histogram name="Platform.TPM.VersionFingerprint" enum="TPMVersionFingerprint"
     expires_after="2021-11-07">
-  <owner>mnissler@chromium.org</owner>
-  <owner>cros-hwsec+uma@chromium.org</owner>
+  <owner>mnissler@monyhar.org</owner>
+  <owner>cros-hwsec+uma@monyhar.org</owner>
   <summary>
     Indicates a fingerprint of hardware + firmware versions for the TPM chip
     present in a Chrome OS device.
@@ -1283,36 +1283,36 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.Trunks.FirstTimeoutReadingCommand"
     enum="TPMCommandCode" expires_after="2022-01-14">
-  <owner>chingkang@chromium.org</owner>
-  <owner>cros-hwsec+uma@chromium.org</owner>
+  <owner>chingkang@monyhar.org</owner>
+  <owner>cros-hwsec+uma@monyhar.org</owner>
   <summary>Command code of the first timeout reading TPM command</summary>
 </histogram>
 
 <histogram name="Platform.Trunks.FirstTimeoutReadingTime" units="seconds"
     expires_after="2022-01-14">
-  <owner>chingkang@chromium.org</owner>
-  <owner>cros-hwsec+uma@chromium.org</owner>
+  <owner>chingkang@monyhar.org</owner>
+  <owner>cros-hwsec+uma@monyhar.org</owner>
   <summary>System uptime when first timeout reading TPM command occurs</summary>
 </histogram>
 
 <histogram name="Platform.Trunks.FirstTimeoutWritingCommand"
     enum="TPMCommandCode" expires_after="2022-01-14">
-  <owner>chingkang@chromium.org</owner>
-  <owner>cros-hwsec+uma@chromium.org</owner>
+  <owner>chingkang@monyhar.org</owner>
+  <owner>cros-hwsec+uma@monyhar.org</owner>
   <summary>Command code of the first timeout writing TPM command</summary>
 </histogram>
 
 <histogram name="Platform.Trunks.FirstTimeoutWritingTime" units="seconds"
     expires_after="2022-01-14">
-  <owner>chingkang@chromium.org</owner>
-  <owner>cros-hwsec+uma@chromium.org</owner>
+  <owner>chingkang@monyhar.org</owner>
+  <owner>cros-hwsec+uma@monyhar.org</owner>
   <summary>System uptime when first timeout writing TPM command occurs</summary>
 </histogram>
 
 <histogram name="Platform.Trunks.TpmErrorCode" enum="TPMResponseCode"
     expires_after="2021-11-14">
   <owner>yich@google.com</owner>
-  <owner>cros-hwsec+uma@chromium.org</owner>
+  <owner>cros-hwsec+uma@monyhar.org</owner>
   <summary>
     Each sample is the result code of a TPM command issued through trunks. For
     the error codes, see src/platform2/trunks/tpm_generated.h.
@@ -1321,22 +1321,22 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.U2F.Command" enum="Cr50U2FCommands"
     expires_after="2021-12-21">
-  <owner>cylai@chromium.org</owner>
-  <owner>cros-hwsec-userland-eng+uma@chromium.org</owner>
+  <owner>cylai@monyhar.org</owner>
+  <owner>cros-hwsec-userland-eng+uma@monyhar.org</owner>
   <summary>Records occurrences of U2F commands sent to cr50.</summary>
 </histogram>
 
 <histogram name="Platform.U2F.LegacyCommand" enum="Cr50U2FCommands"
     expires_after="2021-12-21">
-  <owner>cylai@chromium.org</owner>
-  <owner>cros-hwsec-userland-eng+uma@chromium.org</owner>
+  <owner>cylai@monyhar.org</owner>
+  <owner>cros-hwsec-userland-eng+uma@monyhar.org</owner>
   <summary>Records occurrences of legacy U2F commands sent to cr50.</summary>
 </histogram>
 
 <histogram name="Platform.UnaggregatedUsageTime" units="seconds"
     expires_after="2022-01-08">
-  <owner>mutexlox@chromium.org</owner>
-  <owner>iby@chromium.org</owner>
+  <owner>mutexlox@monyhar.org</owner>
+  <owner>iby@monyhar.org</owner>
   <owner>cros-telemetry@google.com</owner>
   <summary>
     Use time (device ON and not asleep) in a particular period (approximately
@@ -1352,10 +1352,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Used to assess Chrome OS platform stability. -->
 
-  <owner>semenzato@chromium.org</owner>
-  <owner>bsimonnet@chromium.org</owner>
-  <owner>iby@chromium.org</owner>
-  <owner>mutexlox@chromium.org</owner>
+  <owner>semenzato@monyhar.org</owner>
+  <owner>bsimonnet@monyhar.org</owner>
+  <owner>iby@monyhar.org</owner>
+  <owner>mutexlox@monyhar.org</owner>
   <owner>cros-telemetry@google.com</owner>
   <summary>
     Count of crashes (unclean shutdown) during the previous day, or the most
@@ -1367,10 +1367,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Used to assess Chrome OS platform stability. -->
 
-  <owner>semenzato@chromium.org</owner>
-  <owner>bsimonnet@chromium.org</owner>
-  <owner>iby@chromium.org</owner>
-  <owner>mutexlox@chromium.org</owner>
+  <owner>semenzato@monyhar.org</owner>
+  <owner>bsimonnet@monyhar.org</owner>
+  <owner>iby@monyhar.org</owner>
+  <owner>mutexlox@monyhar.org</owner>
   <owner>cros-telemetry@google.com</owner>
   <summary>
     Count of crashes (user) during the previous day, or the most recent day the
@@ -1379,7 +1379,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Platform.Vpd.UnknownKeys" units="units" expires_after="M85">
-  <owner>tnagel@chromium.org</owner>
+  <owner>tnagel@monyhar.org</owner>
   <summary>
     Number of unknown RW_VPD entries on Chrome OS, sent once per boot.
   </summary>
@@ -1387,7 +1387,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.WiFiDeviceCount" units="wifi devices"
     expires_after="2021-12-01">
-  <owner>briannorris@chromium.org</owner>
+  <owner>briannorris@monyhar.org</owner>
   <owner>cros-network-metrics@google.com</owner>
   <summary>
     Sample collected 10s after boot, showing how many WiFi interfaces are
@@ -1397,8 +1397,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.WiFiDisapppearedFromPCI" units="units"
     expires_after="2021-12-01">
-  <owner>rajatja@chromium.org</owner>
-  <owner>briannorris@chromium.org</owner>
+  <owner>rajatja@monyhar.org</owner>
+  <owner>briannorris@monyhar.org</owner>
   <owner>chromeos-kernel-wifi@google.com</owner>
   <owner>cros-network-metrics@google.com</owner>
   <summary>
@@ -1412,8 +1412,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.WiFiStatusAfterForcedPCIRescan" enum="WiFiPCIStatus"
     expires_after="2021-12-01">
-  <owner>rajatja@chromium.org</owner>
-  <owner>briannorris@chromium.org</owner>
+  <owner>rajatja@monyhar.org</owner>
+  <owner>briannorris@monyhar.org</owner>
   <owner>cros-network-metrics@google.com</owner>
   <summary>
     Shows the WiFi status after the PCI bus is rescanned to recover WiFi. The UI
@@ -1442,7 +1442,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.ZramCompressedSize" units="MB"
     expires_after="2021-11-07">
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <owner>chromeos-memory@google.com</owner>
   <summary>
     Compressed swap size in megabytes. This is the actual amount of RAM used by
@@ -1452,7 +1452,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.ZramCompressionRatioPercent" units="%"
     expires_after="2021-11-07">
-  <owner>sonnyrao@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
   <owner>chromeos-memory@google.com</owner>
   <summary>
     The ratio of compressed memory (zram) before and after compression when the
@@ -1466,8 +1466,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.ZramIncompressiblePages" units="pages"
     expires_after="2021-03-06">
-  <owner>asavery@chromium.org</owner>
-  <owner>gwendal@chromium.org</owner>
+  <owner>asavery@monyhar.org</owner>
+  <owner>gwendal@monyhar.org</owner>
   <summary>
     Number of incompressible pages stored in zram. A large number suggests lower
     compression effectiveness. Snapshot every 30s.
@@ -1476,8 +1476,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.ZramIncompressibleRatioPercent.PostCompression"
     units="%" expires_after="2021-03-06">
-  <owner>asavery@chromium.org</owner>
-  <owner>gwendal@chromium.org</owner>
+  <owner>asavery@monyhar.org</owner>
+  <owner>gwendal@monyhar.org</owner>
   <summary>
     The fraction of compressed memory that consists of incompressible pages. We
     express this as a percentage (between 0% and 100%). Values close to 100%
@@ -1488,8 +1488,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Platform.ZramIncompressibleRatioPercent.PreCompression"
     units="%" expires_after="2021-03-06">
-  <owner>asavery@chromium.org</owner>
-  <owner>gwendal@chromium.org</owner>
+  <owner>asavery@monyhar.org</owner>
+  <owner>gwendal@monyhar.org</owner>
   <summary>
     The fraction of the uncompressed memory size that consists of incompressible
     pages. We express this as a percentage (between 0% and 100%). Values close
@@ -1530,8 +1530,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PlatformFile.UnknownErrors.Posix" enum="PopularOSErrno"
     expires_after="M95">
-  <owner>dmurph@chromium.org</owner>
-  <owner>pwnall@chromium.org</owner>
+  <owner>dmurph@monyhar.org</owner>
+  <owner>pwnall@monyhar.org</owner>
   <summary>
     Errors returned by CreateFile on POSIX that PlatformFileError doesn't yet
     support.
@@ -1540,8 +1540,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PlatformFile.UnknownErrors.Windows" enum="WinGetLastError"
     expires_after="M95">
-  <owner>dmurph@chromium.org</owner>
-  <owner>pwnall@chromium.org</owner>
+  <owner>dmurph@monyhar.org</owner>
+  <owner>pwnall@monyhar.org</owner>
   <summary>
     Errors returned by CreateFile on Windows that PlatformFileError doesn't yet
     support.
@@ -1550,8 +1550,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PlatformThread.Mac.AttemptedRealtimePeriod"
     units="microseconds" expires_after="2021-11-07">
-  <owner>olka@chromium.org</owner>
-  <owner>handellm@chromium.org</owner>
+  <owner>olka@monyhar.org</owner>
+  <owner>handellm@monyhar.org</owner>
   <summary>
     Realtime period the thread is attempted to be configured with. Zero means
     the default empirical configuration is used. Reported only on Mac.
@@ -1560,8 +1560,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PlatformThread.Mac.SucceededRealtimePeriod"
     units="microseconds" expires_after="2021-11-07">
-  <owner>olka@chromium.org</owner>
-  <owner>handellm@chromium.org</owner>
+  <owner>olka@monyhar.org</owner>
+  <owner>handellm@monyhar.org</owner>
   <summary>
     Realtime thread period logged if it was applied successfully. Zero means the
     default empirical configuration is used. Comparison with

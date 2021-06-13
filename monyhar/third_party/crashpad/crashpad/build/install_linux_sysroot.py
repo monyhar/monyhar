@@ -15,7 +15,7 @@
 # limitations under the License.
 
 # Various code adapted from:
-# https://cs.chromium.org/chromium/src/build/linux/sysroot_scripts/install-sysroot.py
+# https://cs.monyhar.org/monyhar/src/build/linux/sysroot_scripts/install-sysroot.py
 
 import os
 import shutil
@@ -26,7 +26,7 @@ import urllib.request
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Sysroot revision from:
-# https://cs.chromium.org/chromium/src/build/linux/sysroot_scripts/sysroots.json
+# https://cs.monyhar.org/monyhar/src/build/linux/sysroot_scripts/sysroots.json
 SERVER = 'https://commondatastorage.googleapis.com'
 PATH = 'chrome-linux-sysroot/toolchain'
 REVISION = '43a87bbebccad99325fdcf34166295b121ee15c7'

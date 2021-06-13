@@ -22,7 +22,7 @@
       'type': 'static_library',
       'dependencies': [
         '../compat/compat.gyp:crashpad_compat',
-        '../third_party/mini_chromium/mini_chromium.gyp:base',
+        '../third_party/mini_monyhar/mini_monyhar.gyp:base',
         '../third_party/zlib/zlib.gyp:zlib',
         '../third_party/lss/lss.gyp:lss',
       ],

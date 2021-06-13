@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.layouts.animation;
+package org.monyhar.chrome.browser.layouts.animation;
 
 import static org.junit.Assert.assertEquals;
 
@@ -19,9 +19,9 @@ import org.junit.runner.RunWith;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.MathUtils;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.CallbackHelper;
+import org.monyhar.base.MathUtils;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.CallbackHelper;
 
 import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicInteger;

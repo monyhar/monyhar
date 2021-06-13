@@ -91,7 +91,7 @@ class _Group:
 
 # List of disjoint build artifact groups for size tracking. This list should be
 # synched with lacros-amd64-generic-binary-size-rel builder contents (specified
-# in # //infra/config/subprojects/chromium/ci.star) and
+# in # //infra/config/subprojects/monyhar/ci.star) and
 # chromeos-amd64-generic-lacros-internal builder (specified in src-internal).
 _TRACKED_GROUPS = [
     _Group(paths=['chrome'],
@@ -298,7 +298,7 @@ def main():
   """Parses arguments and runs high level flows."""
   argparser = argparse.ArgumentParser(description='Writes LaCrOS size metrics.')
 
-  argparser.add_argument('--chromium-output-directory',
+  argparser.add_argument('--monyhar-output-directory',
                          dest='out_dir',
                          required=True,
                          type=os.path.realpath,

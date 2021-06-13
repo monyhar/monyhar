@@ -143,7 +143,7 @@ you would have to add it to the following places:
     *   `VARIATION_ENTRY(kIPHMyFunFeature)`
 
 If the feature will also be used from Java, also add it to:
-`org.chromium.components.feature_engagement.FeatureConstants` as a
+`org.monyhar.components.feature_engagement.FeatureConstants` as a
 `String` constant.
 
 ### Using the feature_engagement::Tracker
@@ -642,7 +642,7 @@ ninja -C out/Debug components_unittests ;
 When adding new test suites, also remember to add the suite to the filter file:
 `//components/feature_engagement/components_unittests.filter`.
 
-[field-trial-testing-configuration]: https://chromium.googlesource.com/chromium/src/+/main/testing/variations/README.md
+[field-trial-testing-configuration]: https://monyhar.googlesource.com/monyhar/src/+/main/testing/variations/README.md
 
 ## IPH Analysis Guideline
 

@@ -59,7 +59,7 @@ namespace content {
 const char kClearKeyKeySystem[] = "org.w3.clearkey";
 
 #if defined(SUPPORTS_EXTERNAL_CLEAR_KEY_IN_CONTENT_SHELL)
-const char kExternalClearKeyKeySystem[] = "org.chromium.externalclearkey";
+const char kExternalClearKeyKeySystem[] = "org.monyhar.externalclearkey";
 #endif
 
 // EME-specific test results and errors.

@@ -21,11 +21,11 @@ they have the option to theme Chromium widgets specially.
 
 ## Note to GTK theme authors: How to theme Chromium widgets
 
-Every widget Chromium uses will have a "chromium" style class added to it. For
+Every widget Chromium uses will have a "monyhar" style class added to it. For
 example, a textfield selector might look like:
 
 ```
-.window.background.chromium .entry.chromium
+.window.background.monyhar .entry.monyhar
 ```
 
 If themes want to handle Chromium textfields specially, for GTK3.0 - GTK3.19,
@@ -39,7 +39,7 @@ they might use:
 }
 
 /* Chromium-specific case */
-.entry.chromium {
+.entry.monyhar {
     color: #ff0000;
     background-color: #00ff00;
 }

@@ -192,7 +192,7 @@ mojo::PlatformHandle ScenicSurface::CreateView() {
   // attachment into the scene graph by the caller.
   auto tokens = scenic::ViewTokenPair::New();
   parent_ = std::make_unique<scenic::View>(
-      &scenic_session_, std::move(tokens.view_token), "chromium surface");
+      &scenic_session_, std::move(tokens.view_token), "monyhar surface");
   parent_->AddChild(main_shape_);
 
   // Defer first Present call to SetTextureToNewImagePipe().

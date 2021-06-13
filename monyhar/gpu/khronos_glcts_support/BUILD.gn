@@ -72,8 +72,8 @@ if (internal_khronos_glcts_tests) {
     ]
 
     configs += [ ":defaults_config" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs -= [ "//build/config/compiler:no_rtti" ]
     configs += [ "//build/config/compiler:rtti" ]
 
@@ -114,8 +114,8 @@ if (internal_khronos_glcts_tests) {
     deps = [ ":debase" ]
 
     configs += [ ":defaults_config" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs -= [ "//build/config/compiler:no_rtti" ]
     configs += [ "//build/config/compiler:rtti" ]
 
@@ -140,8 +140,8 @@ if (internal_khronos_glcts_tests) {
     deps = [ ":debase" ]
 
     configs += [ ":defaults_config" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs -= [ "//build/config/compiler:no_rtti" ]
     configs += [ "//build/config/compiler:rtti" ]
 
@@ -187,8 +187,8 @@ if (internal_khronos_glcts_tests) {
     ]
 
     configs += [ ":defaults_config" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs -= [ "//build/config/compiler:no_rtti" ]
     configs += [ "//build/config/compiler:rtti" ]
 
@@ -250,8 +250,8 @@ if (internal_khronos_glcts_tests) {
     ]
 
     configs += [ ":defaults_config" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs -= [ "//build/config/compiler:no_rtti" ]
     configs += [ "//build/config/compiler:rtti" ]
     configs -= [ "//build/config/compiler:no_exceptions" ]
@@ -299,8 +299,8 @@ if (internal_khronos_glcts_tests) {
     ]
 
     configs += [ ":defaults_config" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs -= [ "//build/config/compiler:no_rtti" ]
     configs += [ "//build/config/compiler:rtti" ]
 
@@ -385,8 +385,8 @@ if (internal_khronos_glcts_tests) {
         [ "//third_party/khronos_glcts/framework/delibs/libpng" ]  # png.hpp
 
     configs += [ ":defaults_config" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs -= [ "//build/config/compiler:no_rtti" ]
     configs += [ "//build/config/compiler:rtti" ]
     configs -= [ "//build/config/compiler:no_exceptions" ]
@@ -425,8 +425,8 @@ if (internal_khronos_glcts_tests) {
     ]
 
     configs += [ ":defaults_config" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs -= [ "//build/config/compiler:no_rtti" ]
     configs += [ "//build/config/compiler:rtti" ]
     configs -= [ "//build/config/compiler:no_exceptions" ]
@@ -481,8 +481,8 @@ if (internal_khronos_glcts_tests) {
     ]
 
     configs += [ ":defaults_config" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs -= [ "//build/config/compiler:no_rtti" ]
     configs += [ "//build/config/compiler:rtti" ]
     configs -= [ "//build/config/compiler:no_exceptions" ]
@@ -520,8 +520,8 @@ if (internal_khronos_glcts_tests) {
     include_dirs = [ "//third_party/khronos_glcts/framework/opengl" ]
 
     configs += [ ":defaults_config" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs -= [ "//build/config/compiler:no_rtti" ]
     configs += [ "//build/config/compiler:rtti" ]
     configs -= [ "//build/config/compiler:no_exceptions" ]
@@ -602,8 +602,8 @@ if (internal_khronos_glcts_tests) {
     ]
 
     configs += [ ":defaults_config" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs -= [ "//build/config/compiler:no_rtti" ]
     configs += [ "//build/config/compiler:rtti" ]
     configs -= [ "//build/config/compiler:no_exceptions" ]
@@ -638,8 +638,8 @@ if (internal_khronos_glcts_tests) {
     include_dirs = [ "//third_party/khronos_glcts/GTF_ES/glsl/GTF/Source" ]
 
     configs += [ ":defaults_config" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs -= [ "//build/config/compiler:no_rtti" ]
     configs += [ "//build/config/compiler:rtti" ]
     configs -= [ "//build/config/compiler:no_exceptions" ]
@@ -812,8 +812,8 @@ if (internal_khronos_glcts_tests) {
     ]
 
     configs += [ ":defaults_config" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs -= [ "//build/config/compiler:no_rtti" ]
     configs += [ "//build/config/compiler:rtti" ]
 
@@ -851,8 +851,8 @@ if (internal_khronos_glcts_tests) {
     ]
 
     configs += [ ":defaults_config" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs -= [ "//build/config/compiler:no_rtti" ]
     configs += [ "//build/config/compiler:rtti" ]
     configs -= [ "//build/config/compiler:no_exceptions" ]
@@ -880,8 +880,8 @@ if (internal_khronos_glcts_tests) {
     ]
 
     configs += [ ":defaults_config" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs -= [ "//build/config/compiler:no_rtti" ]
     configs += [ "//build/config/compiler:rtti" ]
     configs -= [ "//build/config/compiler:no_exceptions" ]
@@ -916,8 +916,8 @@ if (internal_khronos_glcts_tests) {
     ]
 
     configs += [ ":defaults_config" ]
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs -= [ "//build/config/compiler:no_exceptions" ]
     configs += [ "//build/config/compiler:exceptions" ]
   }

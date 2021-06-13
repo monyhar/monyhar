@@ -20,7 +20,7 @@
 #include "content/renderer/pepper/plugin_module.h"
 #include "content/renderer/render_thread_impl.h"
 #include "content/renderer/render_view_impl.h"
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "gpu/command_buffer/common/context_creation_attribs.h"
 #include "gpu/ipc/client/command_buffer_proxy_impl.h"
 #include "gpu/ipc/client/gpu_channel_host.h"
@@ -48,7 +48,7 @@ PPB_Graphics3D_Impl::PPB_Graphics3D_Impl(PP_Instance instance)
       bound_to_instance_(false),
       commit_pending_(false),
       has_alpha_(false),
-      use_image_chromium_(
+      use_image_monyhar_(
           !base::CommandLine::ForCurrentProcess()->HasSwitch(
               switches::kDisablePepper3DImageChromium) &&
           base::FeatureList::IsEnabled(features::kPepper3DImageChromium)) {}
@@ -177,11 +177,11 @@ int32_t PPB_Graphics3D_Impl::DoSwapBuffers(const gpu::SyncToken& sync_token,
     //
     // Don't need to check for NULL from GetPluginInstance since when we're
     // bound, we know our instance is valid.
-    bool is_overlay_candidate = use_image_chromium_;
+    bool is_overlay_candidate = use_image_monyhar_;
     // TODO(reveman): Get texture target from browser process.
     uint32_t target = GL_TEXTURE_2D;
 #if defined(OS_MAC)
-    if (use_image_chromium_)
+    if (use_image_monyhar_)
       target = GL_TEXTURE_RECTANGLE_ARB;
 #endif
     viz::TransferableResource resource = viz::TransferableResource::MakeGL(
@@ -243,7 +243,7 @@ bool PPB_Graphics3D_Impl::InitRaw(
   has_alpha_ = requested_attribs.alpha_size > 0;
 
   gpu::ContextCreationAttribs attrib_helper = requested_attribs;
-  attrib_helper.should_use_native_gmb_for_backbuffer = use_image_chromium_;
+  attrib_helper.should_use_native_gmb_for_backbuffer = use_image_monyhar_;
   attrib_helper.context_type = gpu::CONTEXT_TYPE_OPENGLES2;
 
   gpu::CommandBufferProxyImpl* share_buffer = nullptr;

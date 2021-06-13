@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.helloworld;
+package org.monyhar.helloworld;
 
 public class HelloWorldMain {
     public static void main(String[] args) {

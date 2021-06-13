@@ -57,7 +57,7 @@ Per-thread task runners include:
 - Default (deprecated)
 - Input task runner (semi-deprecated)
 
-New task runners might be added in the future; contact scheduler-dev@chromium.org
+New task runners might be added in the future; contact scheduler-dev@monyhar.org
 if you think you need a new one.
 
 ## ThreadTaskRunnerHandle::Get
@@ -91,7 +91,7 @@ Note that these tasks shouldn’t run javascript), kInternal\* task types should
 
 If you’re happy with the default scheduling policies, which should happen in the
 majority of cases, kInternalDefault task type should be used. Otherwise, reach out to
-scheduler-dev@chromium.org to discuss adding new task type for your needs.
+scheduler-dev@monyhar.org to discuss adding new task type for your needs.
 
 ## Scheduling policies
 

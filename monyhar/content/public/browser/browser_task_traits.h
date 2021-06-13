@@ -27,8 +27,8 @@ struct NonNestable {};
 // you want (it's implicit if you don't specify this trait). Only explicitly
 // specify this trait if you carefully isolated a set of tasks that have no
 // ordering requirements with anything else (in doubt, consult with
-// scheduler-dev@chromium.org).
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.content_public.browser
+// scheduler-dev@monyhar.org).
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.content_public.browser
 enum class BrowserTaskType {
   // A catch all for tasks that don't fit the types below.
   kDefault,

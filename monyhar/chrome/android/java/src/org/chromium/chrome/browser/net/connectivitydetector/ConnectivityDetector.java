@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.net.connectivitydetector;
+package org.monyhar.chrome.browser.net.connectivitydetector;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -17,14 +17,14 @@ import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.chrome.browser.content.ContentUtils;
-import org.chromium.net.ConnectionType;
-import org.chromium.net.NetworkChangeNotifier;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.chrome.browser.content.ContentUtils;
+import org.monyhar.net.ConnectionType;
+import org.monyhar.net.NetworkChangeNotifier;
 
 import java.io.IOException;
 import java.lang.annotation.Retention;

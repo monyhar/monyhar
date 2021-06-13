@@ -29,7 +29,7 @@ struct JavaLanguageInfoWrapper {
 class TranslateUtils {
  public:
   // A Java counterpart will be generated for this enum.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.translate
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.translate
   // GENERATED_JAVA_PREFIX_TO_STRIP:OPTION_
   enum TranslateOption {
     OPTION_SOURCE_CODE,

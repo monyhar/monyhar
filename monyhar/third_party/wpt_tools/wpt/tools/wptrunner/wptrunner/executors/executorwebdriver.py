@@ -51,7 +51,7 @@ class WebDriverBaseProtocolPart(BaseProtocolPart):
         try:
             self.webdriver.timeouts.script = timeout
         except client.WebDriverException:
-            # workaround https://bugs.chromium.org/p/chromedriver/issues/detail?id=2057
+            # workaround https://bugs.monyhar.org/p/chromedriver/issues/detail?id=2057
             body = {"type": "script", "ms": timeout * 1000}
             self.webdriver.send_session_command("POST", "timeouts", body)
 
@@ -208,7 +208,7 @@ class WebDriverSendKeysProtocolPart(SendKeysProtocolPart):
         try:
             return element.send_keys(keys)
         except client.UnknownErrorException as e:
-            # workaround https://bugs.chromium.org/p/chromedriver/issues/detail?id=1999
+            # workaround https://bugs.monyhar.org/p/chromedriver/issues/detail?id=1999
             if (e.http_status != 500 or
                 e.status_code != "unknown error"):
                 raise
@@ -376,7 +376,7 @@ class WebDriverRun(TimedRunner):
             if (isinstance(e, client.WebDriverException) and
                     e.http_status == 408 and
                     e.status_code == "asynchronous script timeout"):
-                # workaround for https://bugs.chromium.org/p/chromedriver/issues/detail?id=2001
+                # workaround for https://bugs.monyhar.org/p/chromedriver/issues/detail?id=2001
                 self.result = False, ("EXTERNAL-TIMEOUT", None)
             else:
                 message = str(getattr(e, "message", ""))

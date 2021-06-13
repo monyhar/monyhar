@@ -20,7 +20,7 @@ on performance.
 
 NOTE: Ensure that you're signed into Monorail.
 
-Use [this Monorail query](https://bugs.chromium.org/p/chromium/issues/list?sort=modified&q=label%3AChromeperf-Sheriff-NeedsAttention%2CChromeperf-Auto-NeedsAttention%20-has%3Aowner&can=2)
+Use [this Monorail query](https://bugs.monyhar.org/p/monyhar/issues/list?sort=modified&q=label%3AChromeperf-Sheriff-NeedsAttention%2CChromeperf-Auto-NeedsAttention%20-has%3Aowner&can=2)
 to find automatically triaged issues which need attention.
 
 NOTE: If the list of issues that need attention is empty, please jump ahead to
@@ -62,7 +62,7 @@ issues:
 ## Follow up on Performance Regressions
 
 Please spend any spare time driving down bugs from the [regression
-backlog](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=Performance%3DSheriff+Type%3ABug+modified-before%3Atoday-6&sort=-modified).
+backlog](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=Performance%3DSheriff+Type%3ABug+modified-before%3Atoday-6&sort=-modified).
 Treat these bugs as you would your own -- investigate the regressions, find out
 what the next step should be, and then move the bug along. Some possible next steps
 and questions to answer are:

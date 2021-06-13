@@ -8,7 +8,7 @@
 #include "components/strings/grit/components_strings.h"
 #import "ios/chrome/browser/ui/infobars/banners/infobar_banner_constants.h"
 #include "ios/chrome/browser/ui/ui_feature_flags.h"
-#include "ios/chrome/grit/ios_chromium_strings.h"
+#include "ios/chrome/grit/ios_monyhar_strings.h"
 #include "ios/chrome/grit/ios_strings.h"
 #import "ios/chrome/test/earl_grey/chrome_earl_grey.h"
 #import "ios/chrome/test/earl_grey/chrome_earl_grey_app_interface.h"

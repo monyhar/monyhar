@@ -9,7 +9,7 @@ namespace media {
 
 // Facing mode for video capture.
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.media
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.media
 enum VideoFacingMode {
   MEDIA_VIDEO_FACING_NONE = 0,
   MEDIA_VIDEO_FACING_USER,

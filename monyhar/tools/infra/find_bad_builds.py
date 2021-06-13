@@ -13,7 +13,7 @@ which executed with the original CL, but not the reverted CL.
 This script also has filter parameters for various attributes of builds, like
 build duration or project/bucket/builder.
 
-This script uses your chromium/src checkout, so you must keep it updated if you
+This script uses your monyhar/src checkout, so you must keep it updated if you
 want this to be able to cancel recent builds.
 """
 
@@ -94,7 +94,7 @@ def _assess_build(build, max_running_time, revisions_in_scope, builders):
 
 # FIXME: Could cache this on disk to make repeated calls to the script fast.
 def _fetch_build_revision(bid):
-  """Fetches the chromium/src revision checked out in the build.
+  """Fetches the monyhar/src revision checked out in the build.
 
   Args:
     bid: A buildbucket id.
@@ -102,7 +102,7 @@ def _fetch_build_revision(bid):
   Returns:
     The revision the build checked out, or None if either:
       * The build didn't run bot_update
-      * The build didn't check out chromium/src at all. Usually this happens due
+      * The build didn't check out monyhar/src at all. Usually this happens due
         to a patch error
   """
   bid = bid.strip()
@@ -124,7 +124,7 @@ def _fetch_build_revision(bid):
 
   src_manifest = contents['manifest']['src']
   assert src_manifest['repository'] == (
-      'https://chromium.googlesource.com/chromium/src.git')
+      'https://monyhar.googlesource.com/monyhar/src.git')
   rev = src_manifest['revision']
   logging.debug('build %s has revision %s', bid, rev)
   return rev
@@ -175,7 +175,7 @@ def _parse_args(raw_args):
       ' in the bucket, which is a bit slow. Specifying one builder is fast,'
       ' however.')
   parser.add_argument('--project',
-                      default='chromium',
+                      default='monyhar',
                       help='The buildbucket project to search for builds in.')
   parser.add_argument('--bucket',
                       default='try',
@@ -192,7 +192,7 @@ def _parse_args(raw_args):
   return args
 
 # FIXME: Add support for time based cancellations. This could be used for
-# issues which don't show up via chromium/src commits.
+# issues which don't show up via monyhar/src commits.
 def main(raw_args, print_fn):
   """Runs the script.
 

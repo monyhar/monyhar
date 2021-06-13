@@ -438,8 +438,8 @@ class ShaderTranslatorOutputVersionTest
 };
 
 // crbug.com/540543
-// https://bugs.chromium.org/p/angleproject/issues/detail?id=1276
-// https://bugs.chromium.org/p/angleproject/issues/detail?id=1277
+// https://bugs.monyhar.org/p/angleproject/issues/detail?id=1276
+// https://bugs.monyhar.org/p/angleproject/issues/detail?id=1277
 TEST_F(ShaderTranslatorOutputVersionTest, DISABLED_CompatibilityOutput) {
   ShBuiltInResources resources;
   sh::InitBuiltInResources(&resources);

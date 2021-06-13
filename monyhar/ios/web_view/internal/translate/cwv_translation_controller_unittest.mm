@@ -49,7 +49,7 @@ using testing::Return;
 namespace {
 NSString* const kTestFromLangCode = @"ja";
 NSString* const kTestToLangCode = @"en";
-NSString* const kTestPageHost = @"www.chromium.org";
+NSString* const kTestPageHost = @"www.monyhar.org";
 }  // namespace
 
 class MockWebViewTranslateClient : public WebViewTranslateClient {

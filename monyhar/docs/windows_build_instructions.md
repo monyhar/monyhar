@@ -124,25 +124,25 @@ First, configure Git:
 
 ```shell
 $ git config --global user.name "My Name"
-$ git config --global user.email "my-name@chromium.org"
+$ git config --global user.email "my-name@monyhar.org"
 $ git config --global core.autocrlf false
 $ git config --global core.filemode false
 $ git config --global branch.autosetuprebase always
 ```
 
-Create a `chromium` directory for the checkout and change to it (you can call
+Create a `monyhar` directory for the checkout and change to it (you can call
 this whatever you like and put it wherever you like, as
 long as the full path has no spaces):
 
 ```shell
-$ mkdir chromium && cd chromium
+$ mkdir monyhar && cd monyhar
 ```
 
 Run the `fetch` tool from `depot_tools` to check out the code and its
 dependencies.
 
 ```shell
-$ fetch chromium
+$ fetch monyhar
 ```
 
 If you don't want the full repo history, you can save a lot of time by
@@ -160,7 +160,7 @@ $ cd src
 ```
 
 *Optional*: You can also [install API
-keys](https://www.chromium.org/developers/how-tos/api-keys) if you want your
+keys](https://www.monyhar.org/developers/how-tos/api-keys) if you want your
 build to talk to some Google services, but this is not necessary for most
 development and testing purposes.
 
@@ -181,7 +181,7 @@ $ gn gen out/Default
   it should be a subdirectory of `out`.
 * For other build arguments, including release settings or using an alternate
   version of Visual Studio, see [GN build
-  configuration](https://www.chromium.org/developers/gn-build-configuration).
+  configuration](https://www.monyhar.org/developers/gn-build-configuration).
   The default will be a debug component build matching the current host
   operating system and CPU.
 * For more info on GN, run `gn help` on the command line or read the [quick
@@ -241,7 +241,7 @@ being a frequent culprit. Have you ensured that the entire Chromium src
 directory is excluded from antivirus scanning (on Google machines this means
 putting it in a ``src`` directory in the root of a drive)? Have you tried the
 different settings listed above, including different link settings and -j
-values? Have you asked on the chromium-dev mailing list to see if your build is
+values? Have you asked on the monyhar-dev mailing list to see if your build is
 slower than expected for your machine's specifications?
 
 The next step is to gather some data. If you set the ``NINJA_SUMMARIZE_BUILD``
@@ -394,7 +394,7 @@ Intellisense support.
 
 If you want to use Visual Studio Intellisense when developing Chromium, use the
 `--ide` command line argument to `gn gen` when you generate your output
-directory (as described on the [get the code](https://dev.chromium.org/developers/how-tos/get-the-code)
+directory (as described on the [get the code](https://dev.monyhar.org/developers/how-tos/get-the-code)
 page):
 
 ```shell
@@ -433,7 +433,7 @@ overhead of a multi-project solution file. Simply "open" your chrome.exe binary
 with `File->Open->Project/Solution`, or from a Visual Studio command prompt like
 so: `devenv /debugexe out\Debug\chrome.exe <your arguments>`. Many of Visual
 Studio's code exploration features will not work in this configuration, but by
-installing the [VsChromium Visual Studio Extension](https://chromium.github.io/vs-chromium/)
+installing the [VsChromium Visual Studio Extension](https://monyhar.github.io/vs-monyhar/)
 you can get the source code to appear in the solution explorer window along
 with other useful features such as code search. You can add multiple executables
 of interest (base_unittests.exe, browser_tests.exe) to your solution with

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer;
+package org.monyhar.weblayer;
 
 import androidx.annotation.IntDef;
 
@@ -19,31 +19,31 @@ public @interface LoadError {
     /**
      * Navigation completed successfully.
      */
-    int NO_ERROR = org.chromium.weblayer_private.interfaces.LoadError.NO_ERROR;
+    int NO_ERROR = org.monyhar.weblayer_private.interfaces.LoadError.NO_ERROR;
 
     /**
      * Server responded with 4xx status code.
      */
-    int HTTP_CLIENT_ERROR = org.chromium.weblayer_private.interfaces.LoadError.HTTP_CLIENT_ERROR;
+    int HTTP_CLIENT_ERROR = org.monyhar.weblayer_private.interfaces.LoadError.HTTP_CLIENT_ERROR;
     /**
      * Server responded with 5xx status code.
      */
-    int HTTP_SERVER_ERROR = org.chromium.weblayer_private.interfaces.LoadError.HTTP_SERVER_ERROR;
+    int HTTP_SERVER_ERROR = org.monyhar.weblayer_private.interfaces.LoadError.HTTP_SERVER_ERROR;
 
     /**
      * Certificate error.
      */
-    int SSL_ERROR = org.chromium.weblayer_private.interfaces.LoadError.SSL_ERROR;
+    int SSL_ERROR = org.monyhar.weblayer_private.interfaces.LoadError.SSL_ERROR;
 
     /**
      * Problem connecting to server.
      */
-    int CONNECTIVITY_ERROR = org.chromium.weblayer_private.interfaces.LoadError.CONNECTIVITY_ERROR;
+    int CONNECTIVITY_ERROR = org.monyhar.weblayer_private.interfaces.LoadError.CONNECTIVITY_ERROR;
 
     /**
      * An error not listed above or below occurred.
      */
-    int OTHER_ERROR = org.chromium.weblayer_private.interfaces.LoadError.OTHER_ERROR;
+    int OTHER_ERROR = org.monyhar.weblayer_private.interfaces.LoadError.OTHER_ERROR;
 
     /**
      * Safe browsing error.
@@ -51,5 +51,5 @@ public @interface LoadError {
      * @since 88
      */
     int SAFE_BROWSING_ERROR =
-            org.chromium.weblayer_private.interfaces.LoadError.SAFE_BROWSING_ERROR;
+            org.monyhar.weblayer_private.interfaces.LoadError.SAFE_BROWSING_ERROR;
 }

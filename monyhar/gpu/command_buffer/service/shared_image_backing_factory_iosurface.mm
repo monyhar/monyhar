@@ -163,7 +163,7 @@ class SharedImageRepresentationDawnIOSurface
   WGPUTexture texture_ = nullptr;
   WGPUTextureFormat wgpu_format_;
 
-  // TODO(cwallez@chromium.org): Load procs only once when the factory is
+  // TODO(cwallez@monyhar.org): Load procs only once when the factory is
   // created and pass a pointer to them around?
   DawnProcTable dawn_procs_;
 };

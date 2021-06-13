@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.display_cutout;
+package org.monyhar.components.browser_ui.display_cutout;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -14,13 +14,13 @@ import android.view.WindowManager.LayoutParams;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.blink.mojom.ViewportFit;
-import org.chromium.components.browser_ui.widget.InsetObserverView;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.WebContentsObserver;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.Callback;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.blink.mojom.ViewportFit;
+import org.monyhar.components.browser_ui.widget.InsetObserverView;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.WebContentsObserver;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Controls the display safe area for a {@link WebContents} and the cutout mode for an {@link

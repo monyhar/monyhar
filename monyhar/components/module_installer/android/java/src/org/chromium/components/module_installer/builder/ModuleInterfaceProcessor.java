@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.module_installer.builder;
+package org.monyhar.components.module_installer.builder;
 
 import com.google.auto.service.AutoService;
 import com.google.common.base.CaseFormat;
@@ -75,12 +75,12 @@ public class ModuleInterfaceProcessor extends AbstractProcessor {
                 CaseFormat.LOWER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, moduleName) + "Module");
         TypeName interfaceClassName = ClassName.get(moduleInterface);
         TypeName moduleClassName = ParameterizedTypeName.get(
-                ClassName.get("org.chromium.components.module_installer.builder", "Module"),
+                ClassName.get("org.monyhar.components.module_installer.builder", "Module"),
                 interfaceClassName);
         TypeName listenerInterface =
-                ClassName.get("org.chromium.components.module_installer.engine", "InstallListener");
+                ClassName.get("org.monyhar.components.module_installer.engine", "InstallListener");
         TypeName installEngineInterface =
-                ClassName.get("org.chromium.components.module_installer.engine", "InstallEngine");
+                ClassName.get("org.monyhar.components.module_installer.engine", "InstallEngine");
 
         FieldSpec module = FieldSpec.builder(moduleClassName, "sModule")
                                    .addModifiers(Modifier.PRIVATE, Modifier.STATIC, Modifier.FINAL)

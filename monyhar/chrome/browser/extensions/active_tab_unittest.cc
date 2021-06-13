@@ -301,16 +301,16 @@ TEST_F(ActiveTabTest, GrantToSinglePage) {
   EXPECT_TRUE(IsBlocked(extension_without_active_tab, google));
 
   // Navigating to a new URL should clear the active permissions.
-  GURL chromium("http://www.chromium.org");
-  NavigateAndCommit(chromium);
+  GURL monyhar("http://www.monyhar.org");
+  NavigateAndCommit(monyhar);
 
   EXPECT_TRUE(IsBlocked(extension, google));
   EXPECT_TRUE(IsBlocked(another_extension, google));
   EXPECT_TRUE(IsBlocked(extension_without_active_tab, google));
 
-  EXPECT_TRUE(IsBlocked(extension, chromium));
-  EXPECT_TRUE(IsBlocked(another_extension, chromium));
-  EXPECT_TRUE(IsBlocked(extension_without_active_tab, chromium));
+  EXPECT_TRUE(IsBlocked(extension, monyhar));
+  EXPECT_TRUE(IsBlocked(another_extension, monyhar));
+  EXPECT_TRUE(IsBlocked(extension_without_active_tab, monyhar));
 
   EXPECT_FALSE(HasTabsPermission(extension));
   EXPECT_FALSE(HasTabsPermission(another_extension));
@@ -327,9 +327,9 @@ TEST_F(ActiveTabTest, GrantToSinglePage) {
   EXPECT_TRUE(IsBlocked(another_extension, google));
   EXPECT_TRUE(IsBlocked(extension_without_active_tab, google));
 
-  EXPECT_TRUE(IsAllowed(extension, chromium));
-  EXPECT_TRUE(IsAllowed(another_extension, chromium));
-  EXPECT_TRUE(IsBlocked(extension_without_active_tab, chromium));
+  EXPECT_TRUE(IsAllowed(extension, monyhar));
+  EXPECT_TRUE(IsAllowed(another_extension, monyhar));
+  EXPECT_TRUE(IsBlocked(extension_without_active_tab, monyhar));
 
   // Should be able to go back to URLs that were previously cleared.
   NavigateAndCommit(google);
@@ -343,9 +343,9 @@ TEST_F(ActiveTabTest, GrantToSinglePage) {
   EXPECT_TRUE(IsAllowed(another_extension, google));
   EXPECT_TRUE(IsBlocked(extension_without_active_tab, google));
 
-  EXPECT_TRUE(IsBlocked(extension, chromium));
-  EXPECT_TRUE(IsBlocked(another_extension, chromium));
-  EXPECT_TRUE(IsBlocked(extension_without_active_tab, chromium));
+  EXPECT_TRUE(IsBlocked(extension, monyhar));
+  EXPECT_TRUE(IsBlocked(another_extension, monyhar));
+  EXPECT_TRUE(IsBlocked(extension_without_active_tab, monyhar));
 }
 
 TEST_F(ActiveTabTest, CapturingPagesWithActiveTab) {
@@ -433,33 +433,33 @@ TEST_F(ActiveTabTest, SameDocumentNavigations) {
   EXPECT_TRUE(IsAllowed(extension, google));
   EXPECT_TRUE(IsAllowed(extension, google_h1));
 
-  GURL chromium("http://www.chromium.org");
-  NavigateAndCommit(chromium);
+  GURL monyhar("http://www.monyhar.org");
+  NavigateAndCommit(monyhar);
 
   EXPECT_FALSE(IsAllowed(extension, google));
   EXPECT_FALSE(IsAllowed(extension, google_h1));
-  EXPECT_FALSE(IsAllowed(extension, chromium));
+  EXPECT_FALSE(IsAllowed(extension, monyhar));
 
   active_tab_permission_granter()->GrantIfRequested(extension.get());
 
   EXPECT_FALSE(IsAllowed(extension, google));
   EXPECT_FALSE(IsAllowed(extension, google_h1));
-  EXPECT_TRUE(IsAllowed(extension, chromium));
+  EXPECT_TRUE(IsAllowed(extension, monyhar));
 
-  GURL chromium_h1("http://www.chromium.org#h1");
-  NavigateAndCommit(chromium_h1);
+  GURL monyhar_h1("http://www.monyhar.org#h1");
+  NavigateAndCommit(monyhar_h1);
 
   EXPECT_FALSE(IsAllowed(extension, google));
   EXPECT_FALSE(IsAllowed(extension, google_h1));
-  EXPECT_TRUE(IsAllowed(extension, chromium));
-  EXPECT_TRUE(IsAllowed(extension, chromium_h1));
+  EXPECT_TRUE(IsAllowed(extension, monyhar));
+  EXPECT_TRUE(IsAllowed(extension, monyhar_h1));
 
   content::NavigationSimulator::Reload(web_contents());
 
   EXPECT_FALSE(IsAllowed(extension, google));
   EXPECT_FALSE(IsAllowed(extension, google_h1));
-  EXPECT_TRUE(IsAllowed(extension, chromium));
-  EXPECT_TRUE(IsAllowed(extension, chromium_h1));
+  EXPECT_TRUE(IsAllowed(extension, monyhar));
+  EXPECT_TRUE(IsAllowed(extension, monyhar_h1));
 }
 
 TEST_F(ActiveTabTest, ChromeUrlGrants) {

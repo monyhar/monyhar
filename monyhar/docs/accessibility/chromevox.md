@@ -76,7 +76,7 @@ line.
 ```
 
 This is also written in
-[Simple Chrome Workflow Doc](https://chromium.googlesource.com/chromiumos/docs/+/HEAD/simple_chrome_workflow.md#command_line-flags-and-environment-variables).
+[Simple Chrome Workflow Doc](https://monyhar.googlesource.com/monyharos/docs/+/HEAD/simple_chrome_workflow.md#command_line-flags-and-environment-variables).
 
 You need to ssh from your development device into your DUT forwarding port 9222
 to open ChromeVox extension background page in your dev device, for example
@@ -96,7 +96,7 @@ You may need to remove rootfs verification to write to `/etc/chrome_dev.conf`.
 ```
 
 See
-[Chromium OS Doc](https://chromium.googlesource.com/chromiumos/docs/+/HEAD/developer_mode.md#disable-verity)
+[Chromium OS Doc](https://monyhar.googlesource.com/monyharos/docs/+/HEAD/developer_mode.md#disable-verity)
 for more information about removing rootfs verification.
 
 ### Running tests

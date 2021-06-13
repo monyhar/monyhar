@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.component_updater;
+package org.monyhar.components.component_updater;
 
 import android.content.Context;
 
-import org.chromium.components.background_task_scheduler.NativeBackgroundTask;
-import org.chromium.components.background_task_scheduler.TaskIds;
-import org.chromium.components.background_task_scheduler.TaskParameters;
+import org.monyhar.components.background_task_scheduler.NativeBackgroundTask;
+import org.monyhar.components.background_task_scheduler.TaskIds;
+import org.monyhar.components.background_task_scheduler.TaskParameters;
 
 /** Task for initiating a component update. */
 public class UpdateTask extends NativeBackgroundTask {

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.screenshot;
+package org.monyhar.chrome.browser.share.screenshot;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
@@ -11,21 +11,21 @@ import android.graphics.Rect;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetController;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.ui.UiUtils;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetController;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.ui.UiUtils;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * A utility class to take a screenshot of an {@link Activity}.
  * TODO(crbug/1024586): Remove this temporary class and instead move
- * chrome/android/java/src/org/chromium/chrome/browser/feedback/ScreenshotTask.java.
+ * chrome/android/java/src/org/monyhar/chrome/browser/feedback/ScreenshotTask.java.
  */
 @JNINamespace("chrome::android")
 public final class EditorScreenshotTask implements EditorScreenshotSource {

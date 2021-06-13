@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.video_tutorials.list;
+package org.monyhar.chrome.browser.video_tutorials.list;
 
 import android.content.res.Configuration;
 import android.content.res.Resources;
@@ -18,19 +18,19 @@ import androidx.recyclerview.widget.RecyclerView.ItemDecoration;
 import androidx.recyclerview.widget.RecyclerView.OnScrollListener;
 import androidx.recyclerview.widget.RecyclerView.State;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.image_fetcher.ImageFetcher;
-import org.chromium.chrome.browser.video_tutorials.R;
-import org.chromium.chrome.browser.video_tutorials.Tutorial;
-import org.chromium.chrome.browser.video_tutorials.VideoTutorialService;
-import org.chromium.components.browser_ui.widget.FadingShadow;
-import org.chromium.components.browser_ui.widget.FadingShadowView;
-import org.chromium.components.browser_ui.widget.displaystyle.HorizontalDisplayStyle;
-import org.chromium.components.browser_ui.widget.displaystyle.UiConfig;
-import org.chromium.components.browser_ui.widget.displaystyle.UiConfig.DisplayStyle;
-import org.chromium.ui.modelutil.MVCListAdapter;
-import org.chromium.ui.modelutil.SimpleRecyclerViewAdapter;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.image_fetcher.ImageFetcher;
+import org.monyhar.chrome.browser.video_tutorials.R;
+import org.monyhar.chrome.browser.video_tutorials.Tutorial;
+import org.monyhar.chrome.browser.video_tutorials.VideoTutorialService;
+import org.monyhar.components.browser_ui.widget.FadingShadow;
+import org.monyhar.components.browser_ui.widget.FadingShadowView;
+import org.monyhar.components.browser_ui.widget.displaystyle.HorizontalDisplayStyle;
+import org.monyhar.components.browser_ui.widget.displaystyle.UiConfig;
+import org.monyhar.components.browser_ui.widget.displaystyle.UiConfig.DisplayStyle;
+import org.monyhar.ui.modelutil.MVCListAdapter;
+import org.monyhar.ui.modelutil.SimpleRecyclerViewAdapter;
 
 /**
  *  The top level coordinator for the video tutorials list UI.

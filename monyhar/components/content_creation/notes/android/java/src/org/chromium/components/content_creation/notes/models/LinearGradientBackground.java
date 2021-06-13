@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.content_creation.notes.models;
+package org.monyhar.components.content_creation.notes.models;
 
 import android.graphics.drawable.GradientDrawable;
 import android.view.View;

@@ -64,7 +64,7 @@ int dl_iterate_phdr(int (*cb)(dl_phdr_info* info, size_t size, void* data),
                     void* data) __attribute__((weak_import));
 }  // extern "C"
 
-namespace chromium_android_linker {
+namespace monyhar_android_linker {
 namespace {
 
 // Record of the Java VM passed to JNI_OnLoad().
@@ -654,7 +654,7 @@ bool NativeLibInfo::SharedMemoryFunctionsSupportedForTesting() {
 }
 
 JNI_GENERATOR_EXPORT jboolean
-Java_org_chromium_base_library_1loader_ModernLinker_nativeLoadLibrary(
+Java_org_monyhar_base_library_1loader_ModernLinker_nativeLoadLibrary(
     JNIEnv* env,
     jclass clazz,
     jstring jdlopen_ext_path,
@@ -677,7 +677,7 @@ Java_org_chromium_base_library_1loader_ModernLinker_nativeLoadLibrary(
 }
 
 JNI_GENERATOR_EXPORT jboolean
-Java_org_chromium_base_library_1loader_ModernLinker_nativeUseRelros(
+Java_org_monyhar_base_library_1loader_ModernLinker_nativeUseRelros(
     JNIEnv* env,
     jclass clazz,
     jobject lib_info_obj,
@@ -703,7 +703,7 @@ Java_org_chromium_base_library_1loader_ModernLinker_nativeUseRelros(
 }
 
 JNI_GENERATOR_EXPORT jint
-Java_org_chromium_base_library_1loader_ModernLinker_nativeGetRelroSharingResult(
+Java_org_monyhar_base_library_1loader_ModernLinker_nativeGetRelroSharingResult(
     JNIEnv* env,
     jclass clazz) {
   return static_cast<jint>(s_relro_sharing_status);
@@ -714,4 +714,4 @@ bool ModernLinkerJNIInit(JavaVM* vm, JNIEnv* env) {
   return true;
 }
 
-}  // namespace chromium_android_linker
+}  // namespace monyhar_android_linker

@@ -39,7 +39,7 @@ viz::DirectRenderer, which finally draws the entire composited browser contents.
 See //components/viz for more details on the display compositor.
 
 Design documents for the graphics stack can be found at
-[chromium-graphics](https://www.chromium.org/developers/design-documents/chromium-graphics).
+[monyhar-graphics](https://www.monyhar.org/developers/design-documents/monyhar-graphics).
 
 ## Other Docs
 
@@ -70,12 +70,12 @@ RenderPass has been drawn to.
 Chosen by cc's clients and can be used as a stable identifier across updates.
 For example, blink uses ElementIDs as a stable id for the object (opaque to cc)
 that is responsible for a composited animation. Some additional information in
-[element_id.h](https://codesearch.chromium.org/chromium/src/cc/paint/element_id.h)
+[element_id.h](https://codesearch.monyhar.org/monyhar/src/cc/paint/element_id.h)
 
 ### DirectRenderer
 An abstraction that provides an API for the Display to draw a fully-aggregated
 CompositorFrame to a physical output. Subclasses of it provide implementations
-for various backends, currently GL, Skia, or Software. See [viz::DirectRenderer](https://codesearch.chromium.org/chromium/src/components/viz/service/display/direct_renderer.h)
+for various backends, currently GL, Skia, or Software. See [viz::DirectRenderer](https://codesearch.monyhar.org/monyhar/src/components/viz/service/display/direct_renderer.h)
 for details.
 
 ### Layer
@@ -102,7 +102,7 @@ and [Blink Property Trees](https://docs.google.com/presentation/u/1/d/1ak7YVrJIT
 
 ### Display
 A controller class that takes CompositorFrames for each surface and draws them
-to a physical output. See [viz::Display](https://codesearch.chromium.org/chromium/src/components/viz/service/display/display.h)  for details.
+to a physical output. See [viz::Display](https://codesearch.monyhar.org/monyhar/src/components/viz/service/display/display.h)  for details.
 
 ### Draw
 Filling pixels in a physical output (technically could be to an offscreen

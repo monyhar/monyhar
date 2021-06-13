@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.base;
+package org.monyhar.ui.base;
 
 import android.content.res.Configuration;
 import android.view.View;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.LocaleUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.LocaleUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
 
 import java.util.Locale;
 
@@ -122,7 +122,7 @@ public class LocalizationUtils {
      *         be false for ("fil", "fi") (Filipino locale + Finish language)
      *         but true for ("en-US", "en") (USA locale + English language).
      */
-    public static boolean chromiumLocaleMatchesLanguage(String locale, String lang) {
+    public static boolean monyharLocaleMatchesLanguage(String locale, String lang) {
         return LocaleUtils.toLanguage(locale).equals(lang);
     }
 

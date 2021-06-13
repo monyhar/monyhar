@@ -43,7 +43,7 @@ class SuggestionAnswer {
   // sync).
   //
   // A Java counterpart will be generated for this enum.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.omnibox
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.omnibox
   enum AnswerType {
     ANSWER_TYPE_INVALID = 0,
     ANSWER_TYPE_DICTIONARY = 1,
@@ -72,7 +72,7 @@ class SuggestionAnswer {
   // The values are only used for answer results.
   //
   // A Java counterpart will be generated for this enum.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.omnibox
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.omnibox
   // GENERATED_JAVA_CLASS_NAME_OVERRIDE: AnswerTextType
   enum TextType {
     // Deprecated: ANSWER = 1,
@@ -108,7 +108,7 @@ class SuggestionAnswer {
   // every time render text is invalidated.
   //
   // A Java counterpart will be generated for this enum.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.omnibox
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.omnibox
   // GENERATED_JAVA_CLASS_NAME_OVERRIDE: AnswerTextStyle
   enum class TextStyle {
     NONE = 0,

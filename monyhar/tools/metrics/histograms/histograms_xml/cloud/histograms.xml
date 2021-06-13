@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Cloud histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -26,7 +26,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 06/2021. Cloud Print is no longer supported.
   </obsolete>
-  <owner>thestig@chromium.org</owner>
+  <owner>thestig@monyhar.org</owner>
   <summary>Event counts in CloudPrintAuth.</summary>
 </histogram>
 
@@ -35,7 +35,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 06/2021. Cloud Print is no longer supported.
   </obsolete>
-  <owner>thestig@chromium.org</owner>
+  <owner>thestig@monyhar.org</owner>
   <summary>The number of printers available for registration.</summary>
 </histogram>
 
@@ -44,7 +44,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 06/2021. Cloud Print is no longer supported.
   </obsolete>
-  <owner>thestig@chromium.org</owner>
+  <owner>thestig@monyhar.org</owner>
   <summary>
     The number of printers available for registration in Windows Service.
   </summary>
@@ -55,7 +55,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 06/2021. Cloud Print is no longer supported.
   </obsolete>
-  <owner>thestig@chromium.org</owner>
+  <owner>thestig@monyhar.org</owner>
   <summary>Event counts in PrinterJobHandler.</summary>
 </histogram>
 
@@ -64,7 +64,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 06/2021. Cloud Print is no longer supported.
   </obsolete>
-  <owner>thestig@chromium.org</owner>
+  <owner>thestig@monyhar.org</owner>
   <summary>The number of jobs successfully completed per hour.</summary>
 </histogram>
 
@@ -73,7 +73,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 06/2021. Cloud Print is no longer supported.
   </obsolete>
-  <owner>thestig@chromium.org</owner>
+  <owner>thestig@monyhar.org</owner>
   <summary>The number of jobs started per hour.</summary>
 </histogram>
 
@@ -82,7 +82,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 06/2021. Cloud Print is no longer supported.
   </obsolete>
-  <owner>thestig@chromium.org</owner>
+  <owner>thestig@monyhar.org</owner>
   <summary>Then number of job completion statuses.</summary>
 </histogram>
 
@@ -91,7 +91,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 06/2021. Cloud Print is no longer supported.
   </obsolete>
-  <owner>thestig@chromium.org</owner>
+  <owner>thestig@monyhar.org</owner>
   <summary>Event counts in PrintSystem.</summary>
 </histogram>
 
@@ -99,7 +99,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 06/2021. Cloud Print is no longer supported.
   </obsolete>
-  <owner>thestig@chromium.org</owner>
+  <owner>thestig@monyhar.org</owner>
   <summary>The amount of time needed to prepare job for spooling.</summary>
 </histogram>
 
@@ -108,7 +108,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 06/2021. Cloud Print is no longer supported.
   </obsolete>
-  <owner>thestig@chromium.org</owner>
+  <owner>thestig@monyhar.org</owner>
   <summary>The number of printers user has blacklisted.</summary>
 </histogram>
 
@@ -117,7 +117,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 06/2021. Cloud Print is no longer supported.
   </obsolete>
-  <owner>thestig@chromium.org</owner>
+  <owner>thestig@monyhar.org</owner>
   <summary>The number of printers user has whitelisted.</summary>
 </histogram>
 
@@ -125,7 +125,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 06/2021. Cloud Print is no longer supported.
   </obsolete>
-  <owner>thestig@chromium.org</owner>
+  <owner>thestig@monyhar.org</owner>
   <summary>The amount of time needed to finish print job.</summary>
 </histogram>
 
@@ -134,7 +134,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 06/2021. Cloud Print is no longer supported.
   </obsolete>
-  <owner>thestig@chromium.org</owner>
+  <owner>thestig@monyhar.org</owner>
   <summary>Event counts in ServiceProcessControl.</summary>
 </histogram>
 
@@ -143,7 +143,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 06/2021. Cloud Print is no longer supported.
   </obsolete>
-  <owner>thestig@chromium.org</owner>
+  <owner>thestig@monyhar.org</owner>
   <summary>Event counts in ServiceUtilityProcessHost.</summary>
 </histogram>
 
@@ -151,7 +151,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 06/2021. Cloud Print is no longer supported.
   </obsolete>
-  <owner>thestig@chromium.org</owner>
+  <owner>thestig@monyhar.org</owner>
   <summary>The amount of time needed to spool print job.</summary>
 </histogram>
 
@@ -160,7 +160,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 06/2021. Cloud Print is no longer supported.
   </obsolete>
-  <owner>thestig@chromium.org</owner>
+  <owner>thestig@monyhar.org</owner>
   <summary>The number of printers to unregister.</summary>
 </histogram>
 
@@ -169,7 +169,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 06/2021. Cloud Print is no longer supported.
   </obsolete>
-  <owner>thestig@chromium.org</owner>
+  <owner>thestig@monyhar.org</owner>
   <summary>The amount of data downloaded on cloud print request.</summary>
 </histogram>
 
@@ -178,7 +178,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 06/2021. Cloud Print is no longer supported.
   </obsolete>
-  <owner>thestig@chromium.org</owner>
+  <owner>thestig@monyhar.org</owner>
   <summary>The amount of time needed for cloud print request.</summary>
 </histogram>
 
@@ -187,7 +187,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 06/2021. Cloud Print is no longer supported.
   </obsolete>
-  <owner>thestig@chromium.org</owner>
+  <owner>thestig@monyhar.org</owner>
   <summary>Request counts to cloud print service.</summary>
 </histogram>
 
@@ -196,7 +196,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 06/2021. Cloud Print is no longer supported.
   </obsolete>
-  <owner>thestig@chromium.org</owner>
+  <owner>thestig@monyhar.org</owner>
   <summary>The number of retries used to complete cloud print request.</summary>
 </histogram>
 
@@ -205,7 +205,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 06/2021. Cloud Print is no longer supported.
   </obsolete>
-  <owner>thestig@chromium.org</owner>
+  <owner>thestig@monyhar.org</owner>
   <summary>The amount of data uploaded with cloud print request.</summary>
 </histogram>
 
@@ -213,7 +213,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 06/2021. Cloud Print is no longer supported.
   </obsolete>
-  <owner>thestig@chromium.org</owner>
+  <owner>thestig@monyhar.org</owner>
   <summary>Number of tries before successful ping. 99 means giving up.</summary>
 </histogram>
 

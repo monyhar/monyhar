@@ -55,7 +55,7 @@ using ::testing::ReturnRef;
 
 namespace {
 
-constexpr char kUserName[] = "test@chromium.org";
+constexpr char kUserName[] = "test@monyhar.org";
 
 constexpr char kScanForDlpAndMalware[] = R"(
 {

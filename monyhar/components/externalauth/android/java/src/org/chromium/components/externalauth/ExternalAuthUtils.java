@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.externalauth;
+package org.monyhar.components.externalauth;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -18,13 +18,13 @@ import androidx.annotation.WorkerThread;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.task.PostTask;
-import org.chromium.components.embedder_support.util.Origin;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.gms.ChromiumPlayServicesAvailability;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.components.embedder_support.util.Origin;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.gms.ChromiumPlayServicesAvailability;
 
 /**
  * Utility class for external authentication tools.

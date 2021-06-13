@@ -1,36 +1,36 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: ../../chrome/android/webapk/libs/runtime_library/src/org/chromium/webapk/lib/runtime_library/IWebApkApi.aidl
+ * Original file: ../../chrome/android/webapk/libs/runtime_library/src/org/monyhar/webapk/lib/runtime_library/IWebApkApi.aidl
  */
-package org.chromium.webapk.lib.runtime_library;
+package org.monyhar.webapk.lib.runtime_library;
 /**
  * Interface for communicating between WebAPK service and Chrome.
  */
 public interface IWebApkApi extends android.os.IInterface
 {
 /** Local-side IPC implementation stub class. */
-public static abstract class Stub extends android.os.Binder implements org.chromium.webapk.lib.runtime_library.IWebApkApi
+public static abstract class Stub extends android.os.Binder implements org.monyhar.webapk.lib.runtime_library.IWebApkApi
 {
-private static final java.lang.String DESCRIPTOR = "org.chromium.webapk.lib.runtime_library.IWebApkApi";
+private static final java.lang.String DESCRIPTOR = "org.monyhar.webapk.lib.runtime_library.IWebApkApi";
 /** Construct the stub at attach it to the interface. */
 public Stub()
 {
 this.attachInterface(this, DESCRIPTOR);
 }
 /**
- * Cast an IBinder object into an org.chromium.webapk.lib.runtime_library.IWebApkApi interface,
+ * Cast an IBinder object into an org.monyhar.webapk.lib.runtime_library.IWebApkApi interface,
  * generating a proxy if needed.
  */
-public static org.chromium.webapk.lib.runtime_library.IWebApkApi asInterface(android.os.IBinder obj)
+public static org.monyhar.webapk.lib.runtime_library.IWebApkApi asInterface(android.os.IBinder obj)
 {
 if ((obj==null)) {
 return null;
 }
 android.os.IInterface iin = obj.queryLocalInterface(DESCRIPTOR);
-if (((iin!=null)&&(iin instanceof org.chromium.webapk.lib.runtime_library.IWebApkApi))) {
-return ((org.chromium.webapk.lib.runtime_library.IWebApkApi)iin);
+if (((iin!=null)&&(iin instanceof org.monyhar.webapk.lib.runtime_library.IWebApkApi))) {
+return ((org.monyhar.webapk.lib.runtime_library.IWebApkApi)iin);
 }
-return new org.chromium.webapk.lib.runtime_library.IWebApkApi.Stub.Proxy(obj);
+return new org.monyhar.webapk.lib.runtime_library.IWebApkApi.Stub.Proxy(obj);
 }
 @Override public android.os.IBinder asBinder()
 {
@@ -113,7 +113,7 @@ return true;
 }
 return super.onTransact(code, data, reply, flags);
 }
-private static class Proxy implements org.chromium.webapk.lib.runtime_library.IWebApkApi
+private static class Proxy implements org.monyhar.webapk.lib.runtime_library.IWebApkApi
 {
 private android.os.IBinder mRemote;
 Proxy(android.os.IBinder remote)

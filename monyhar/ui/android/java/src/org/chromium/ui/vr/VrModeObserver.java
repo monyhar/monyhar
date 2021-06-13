@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.vr;
+package org.monyhar.ui.vr;
 
 /**
  * Used to observe changes to whether Chrome is currently being viewed in VR.

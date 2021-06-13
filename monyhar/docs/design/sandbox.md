@@ -18,7 +18,7 @@ confidential. The architecture and exact assurances that the sandbox provides
 are dependent on the operating system. This document covers the Windows
 implementation as well as the general design. The Linux implementation is
 described [here](../linux/sandboxing.md), the OSX implementation
-[here](http://dev.chromium.org/developers/design-documents/sandbox/osx-sandboxing-design).
+[here](http://dev.monyhar.org/developers/design-documents/sandbox/osx-sandboxing-design).
 
 If you don't feel like reading this whole document you can read the
 [Sandbox FAQ](sandbox_faq.md) instead. A
@@ -366,7 +366,7 @@ policies on the target process for enforcing security characteristics.
 
 * Available in Windows 10 2004 December Update.
 * Is not enabled in the renderer.  See
-[ticket](https://bugs.chromium.org/p/chromium/issues/detail?id=1136224),
+[ticket](https://bugs.monyhar.org/p/monyhar/issues/detail?id=1136224),
 [MSDN](https://docs.microsoft.com/en-us/cpp/build/reference/cetcompat?view=vs-2019).
 
 #### Disable Font Loading:
@@ -403,7 +403,7 @@ policies on the target process for enforcing security characteristics.
   `PROCESS_CREATION_CHILD_PROCESS_RESTRICTED` via `UpdateProcThreadAttribute()`.
 * This is an extra layer of defense, given that Job levels can be broken out of.
   See also:
-[ticket](https://bugs.chromium.org/p/project-zero/issues/detail?id=213&redir=1),
+[ticket](https://bugs.monyhar.org/p/project-zero/issues/detail?id=213&redir=1),
 [Project Zero blog](http://googleprojectzero.blogspot.co.uk/2015/05/in-console-able.html).
 
 ### Other caveats

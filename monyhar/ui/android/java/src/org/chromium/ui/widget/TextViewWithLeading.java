@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.widget;
+package org.monyhar.ui.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-import org.chromium.ui.R;
+import org.monyhar.ui.R;
 
 /**
  * A TextView with the added leading property.

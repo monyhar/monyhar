@@ -33,7 +33,7 @@ bool ReturnsValidPath(int dir_type) {
   // |result| is true and !path.empty() is the best we can do.
   bool check_path_exists = true;
 #if defined(OS_POSIX)
-  // If chromium has never been started on this account, the cache path may not
+  // If monyhar has never been started on this account, the cache path may not
   // exist.
   if (dir_type == DIR_CACHE)
     check_path_exists = false;

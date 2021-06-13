@@ -843,7 +843,7 @@ TEST_F(MDnsTest, TransactionWithCache) {
   StrictMock<MockListenerDelegate> delegate_irrelevant;
   std::unique_ptr<MDnsListener> listener_irrelevant =
       test_client_->CreateListener(dns_protocol::kTypeA,
-                                   "codereview.chromium.local",
+                                   "codereview.monyhar.local",
                                    &delegate_irrelevant);
 
   ASSERT_TRUE(listener_irrelevant->Start());
@@ -979,7 +979,7 @@ TEST_F(MDnsTest, TransactionReentrantDeleteFromCache) {
   StrictMock<MockListenerDelegate> delegate_irrelevant;
   std::unique_ptr<MDnsListener> listener_irrelevant =
       test_client_->CreateListener(dns_protocol::kTypeA,
-                                   "codereview.chromium.local",
+                                   "codereview.monyhar.local",
                                    &delegate_irrelevant);
   ASSERT_TRUE(listener_irrelevant->Start());
 

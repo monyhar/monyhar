@@ -59,8 +59,8 @@ struct GPU_GLES2_EXPORT DisallowedFeatures {
   DisallowedFeatures(const DisallowedFeatures&);
 
   void AllowExtensions() {
-    chromium_color_buffer_float_rgba = false;
-    chromium_color_buffer_float_rgb = false;
+    monyhar_color_buffer_float_rgba = false;
+    monyhar_color_buffer_float_rgb = false;
     ext_color_buffer_float = false;
     ext_color_buffer_half_float = false;
     ext_texture_filter_anisotropic = false;
@@ -76,8 +76,8 @@ struct GPU_GLES2_EXPORT DisallowedFeatures {
   }
 
   bool npot_support = false;
-  bool chromium_color_buffer_float_rgba = false;
-  bool chromium_color_buffer_float_rgb = false;
+  bool monyhar_color_buffer_float_rgba = false;
+  bool monyhar_color_buffer_float_rgb = false;
   bool ext_color_buffer_float = false;
   bool ext_color_buffer_half_float = false;
   bool ext_texture_filter_anisotropic = false;

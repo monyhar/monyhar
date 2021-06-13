@@ -3,7 +3,7 @@ OffscreenCanvas.commit(). Some parts (e.g, compositor frame submission
 mechanism, image resources) may remain unchanged in the future; some (3-way
 mojo communication) might be dropped and picked up in a different format later;
  some (e.g., frame dispatching rate) will become irrelevant in a future date,
-as a refactoring is done by [fserb@](mailto:fserb@chromium.org) due to
+as a refactoring is done by [fserb@](mailto:fserb@monyhar.org) due to
 specification change.
 
 # The General Mojo IPC Flow
@@ -235,7 +235,7 @@ OffscreenCanvasFrameDispatcher::DispatchFrame()).
 
 OffscreenCanvasFrameDispatcher has delegated all its resource management tasks
 to its OffscreenCanvasResourceProvider instance (which will be merged to
-CanvasResourceProvider soon by [junov@](mailto:junov@chromium.org)). This
+CanvasResourceProvider soon by [junov@](mailto:junov@monyhar.org)). This
 resource provider has two different methods in converting a StaticBitmapImage
 into a viz::TransferableResource, which is an essential component of a
 CompositorFrame. There are four scenarios here but there are only two ways of
@@ -343,7 +343,7 @@ do the actual dispatching:
 
 2. On the beginning of a BeginFrame signal.
 
-The latest plans, carried out by [fserb@](mailto:fserb@chromium.org), would be
+The latest plans, carried out by [fserb@](mailto:fserb@monyhar.org), would be
 to revamp the `commit()` design as follows:
 
 1. Keep the `commit()`, but drop its returned `Promise`. Make this `commit()` a

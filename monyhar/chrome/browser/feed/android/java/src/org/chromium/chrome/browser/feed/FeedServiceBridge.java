@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed;
+package org.monyhar.chrome.browser.feed;
 
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.os.Build;
 import android.util.DisplayMetrics;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeClassQualifiedName;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.xsurface.ImagePrefetcher;
-import org.chromium.chrome.browser.xsurface.ProcessScope;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeClassQualifiedName;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.xsurface.ImagePrefetcher;
+import org.monyhar.chrome.browser.xsurface.ProcessScope;
 
 import java.util.Locale;
 
@@ -26,7 +26,7 @@ import java.util.Locale;
 public final class FeedServiceBridge {
     // Access to JNI test hooks for other libraries. This can go away once more Feed code is
     // migrated to chrome/browser/feed.
-    public static org.chromium.base.JniStaticTestMocker<FeedServiceBridge.Natives>
+    public static org.monyhar.base.JniStaticTestMocker<FeedServiceBridge.Natives>
     getTestHooksForTesting() {
         return FeedServiceBridgeJni.TEST_HOOKS;
     }

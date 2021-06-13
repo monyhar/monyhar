@@ -5,10 +5,10 @@
 import("//build/config/android/rules.gni")
 
 _jni_sources = [
-  "java/src/org/chromium/components/crash/CrashKeys.java",
-  "java/src/org/chromium/components/crash/browser/ChildProcessCrashObserver.java",
-  "java/src/org/chromium/components/crash/browser/PackagePaths.java",
-  "java/src/org/chromium/components/crash/browser/ProcessExitReasonFromSystem.java",
+  "java/src/org/monyhar/components/crash/CrashKeys.java",
+  "java/src/org/monyhar/components/crash/browser/ChildProcessCrashObserver.java",
+  "java/src/org/monyhar/components/crash/browser/PackagePaths.java",
+  "java/src/org/monyhar/components/crash/browser/ProcessExitReasonFromSystem.java",
 ]
 
 generate_jni("jni_headers") {
@@ -52,7 +52,7 @@ source_set("unit_tests") {
 }
 
 _java_handler_jni_sources =
-    [ "java/src/org/chromium/components/crash/browser/CrashpadMain.java" ]
+    [ "java/src/org/monyhar/components/crash/browser/CrashpadMain.java" ]
 
 generate_jni("java_handler_jni_headers") {
   sources = _java_handler_jni_sources

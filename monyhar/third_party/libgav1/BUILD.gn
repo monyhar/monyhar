@@ -15,7 +15,7 @@ config("public_libgav1_config") {
   defines = [
     "LIBGAV1_MAX_BITDEPTH=10",
     "LIBGAV1_THREADPOOL_USE_STD_MUTEX",  # to avoid abseil dependency.
-    "LIBGAV1_ENABLE_LOGGING=0",  # to avoid debug log of libgav1 in chromium
+    "LIBGAV1_ENABLE_LOGGING=0",  # to avoid debug log of libgav1 in monyhar
                                  # debug build.
 
     # Don't let libgav1 export any symbols. Otherwise the verify_order step on
@@ -43,8 +43,8 @@ if (enable_libgav1_decoder || use_libgav1_parser) {
   # Separate from libgav1 because utils/constants.cc and dsp/constants.cc
   # generate the same object file, constants.o.
   source_set("libgav1_utils") {
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs += [ ":private_libgav1_config" ]
 
     public_configs = [ ":public_libgav1_config" ]
@@ -55,8 +55,8 @@ if (enable_libgav1_decoder || use_libgav1_parser) {
   # Separate from libgav1 because film_grain.cc and dsp/film_grain.cc
   # generate the same object file, film_grain.o.
   source_set("libgav1_dsp") {
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs += [ ":private_libgav1_config" ]
 
     deps = [
@@ -72,8 +72,8 @@ if (enable_libgav1_decoder || use_libgav1_parser) {
   # SSE4 sources are split to their own target as Chrome is currently built
   # with -msse3.
   source_set("libgav1_dsp_sse4") {
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs += [ ":private_libgav1_config" ]
 
     deps = [ ":libgav1_utils" ]
@@ -88,8 +88,8 @@ if (enable_libgav1_decoder || use_libgav1_parser) {
   }
 
   static_library("libgav1") {
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs += [ ":private_libgav1_config" ]
 
     public_configs = [ ":public_libgav1_config" ]

@@ -218,8 +218,8 @@ source_set("webgpu_sources") {
 
 component("gles2_utils") {
   sources = [
-    "gles2_cmd_copy_texture_chromium_utils.cc",
-    "gles2_cmd_copy_texture_chromium_utils.h",
+    "gles2_cmd_copy_texture_monyhar_utils.cc",
+    "gles2_cmd_copy_texture_monyhar_utils.h",
     "gles2_cmd_utils.cc",
     "gles2_cmd_utils.h",
     "gles2_utils_export.h",

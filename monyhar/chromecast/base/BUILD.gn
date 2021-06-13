@@ -314,36 +314,36 @@ process_version("cast_version") {
 if (is_android) {
   generate_jni("jni_headers") {
     sources = [
-      "java/src/org/chromium/chromecast/base/CastSettingsManager.java",
-      "java/src/org/chromium/chromecast/base/DumpstateWriter.java",
-      "java/src/org/chromium/chromecast/base/SystemTimeChangeNotifierAndroid.java",
+      "java/src/org/monyhar/chromecast/base/CastSettingsManager.java",
+      "java/src/org/monyhar/chromecast/base/DumpstateWriter.java",
+      "java/src/org/monyhar/chromecast/base/SystemTimeChangeNotifierAndroid.java",
     ]
   }
 
   android_library("base_java") {
     java_src_dir = "//chromecast/base/java/src"
     sources = [
-      "$java_src_dir/org/chromium/chromecast/base/BiConsumer.java",
-      "$java_src_dir/org/chromium/chromecast/base/BiFunction.java",
-      "$java_src_dir/org/chromium/chromecast/base/BiPredicate.java",
-      "$java_src_dir/org/chromium/chromecast/base/Both.java",
-      "$java_src_dir/org/chromium/chromecast/base/Controller.java",
-      "$java_src_dir/org/chromium/chromecast/base/Itertools.java",
-      "$java_src_dir/org/chromium/chromecast/base/Observable.java",
-      "$java_src_dir/org/chromium/chromecast/base/Observer.java",
-      "$java_src_dir/org/chromium/chromecast/base/Observers.java",
-      "$java_src_dir/org/chromium/chromecast/base/Predicate.java",
-      "$java_src_dir/org/chromium/chromecast/base/Scope.java",
-      "$java_src_dir/org/chromium/chromecast/base/Scopes.java",
-      "$java_src_dir/org/chromium/chromecast/base/Sequencer.java",
-      "$java_src_dir/org/chromium/chromecast/base/Subscription.java",
-      "$java_src_dir/org/chromium/chromecast/base/Unit.java",
+      "$java_src_dir/org/monyhar/chromecast/base/BiConsumer.java",
+      "$java_src_dir/org/monyhar/chromecast/base/BiFunction.java",
+      "$java_src_dir/org/monyhar/chromecast/base/BiPredicate.java",
+      "$java_src_dir/org/monyhar/chromecast/base/Both.java",
+      "$java_src_dir/org/monyhar/chromecast/base/Controller.java",
+      "$java_src_dir/org/monyhar/chromecast/base/Itertools.java",
+      "$java_src_dir/org/monyhar/chromecast/base/Observable.java",
+      "$java_src_dir/org/monyhar/chromecast/base/Observer.java",
+      "$java_src_dir/org/monyhar/chromecast/base/Observers.java",
+      "$java_src_dir/org/monyhar/chromecast/base/Predicate.java",
+      "$java_src_dir/org/monyhar/chromecast/base/Scope.java",
+      "$java_src_dir/org/monyhar/chromecast/base/Scopes.java",
+      "$java_src_dir/org/monyhar/chromecast/base/Sequencer.java",
+      "$java_src_dir/org/monyhar/chromecast/base/Subscription.java",
+      "$java_src_dir/org/monyhar/chromecast/base/Unit.java",
 
       # TODO(sanfin): Move these files to another target.
-      "$java_src_dir/org/chromium/chromecast/base/CastSettingsManager.java",
-      "$java_src_dir/org/chromium/chromecast/base/CastSwitches.java",
-      "$java_src_dir/org/chromium/chromecast/base/DumpstateWriter.java",
-      "$java_src_dir/org/chromium/chromecast/base/SystemTimeChangeNotifierAndroid.java",
+      "$java_src_dir/org/monyhar/chromecast/base/CastSettingsManager.java",
+      "$java_src_dir/org/monyhar/chromecast/base/CastSwitches.java",
+      "$java_src_dir/org/monyhar/chromecast/base/DumpstateWriter.java",
+      "$java_src_dir/org/monyhar/chromecast/base/SystemTimeChangeNotifierAndroid.java",
     ]
 
     deps = [
@@ -357,8 +357,8 @@ if (is_android) {
     java_test_dir = "//chromecast/base/java/test"
     testonly = true
     sources = [
-      "$java_test_dir/org/chromium/chromecast/base/Inheritance.java",
-      "$java_test_dir/org/chromium/chromecast/base/ReactiveRecorder.java",
+      "$java_test_dir/org/monyhar/chromecast/base/Inheritance.java",
+      "$java_test_dir/org/monyhar/chromecast/base/ReactiveRecorder.java",
     ]
     deps = [
       ":base_java",
@@ -370,21 +370,21 @@ if (is_android) {
   junit_binary("cast_base_junit_tests") {
     java_test_dir = "//chromecast/base/java/test"
     sources = [
-      "$java_test_dir/org/chromium/chromecast/base/BothTest.java",
-      "$java_test_dir/org/chromium/chromecast/base/CastSettingsManagerTest.java",
-      "$java_test_dir/org/chromium/chromecast/base/ControllerTest.java",
-      "$java_test_dir/org/chromium/chromecast/base/ItertoolsTest.java",
-      "$java_test_dir/org/chromium/chromecast/base/ObservableAndTest.java",
-      "$java_test_dir/org/chromium/chromecast/base/ObservableAndThenTest.java",
-      "$java_test_dir/org/chromium/chromecast/base/ObservableFilterTest.java",
-      "$java_test_dir/org/chromium/chromecast/base/ObservableFlatMapTest.java",
-      "$java_test_dir/org/chromium/chromecast/base/ObservableMapTest.java",
-      "$java_test_dir/org/chromium/chromecast/base/ObservableMiscellaneousTest.java",
-      "$java_test_dir/org/chromium/chromecast/base/ObservableNotTest.java",
-      "$java_test_dir/org/chromium/chromecast/base/ObserversTest.java",
-      "$java_test_dir/org/chromium/chromecast/base/ReactiveRecorderTest.java",
-      "$java_test_dir/org/chromium/chromecast/base/SequencerTest.java",
-      "$java_test_dir/org/chromium/chromecast/base/UnitTest.java",
+      "$java_test_dir/org/monyhar/chromecast/base/BothTest.java",
+      "$java_test_dir/org/monyhar/chromecast/base/CastSettingsManagerTest.java",
+      "$java_test_dir/org/monyhar/chromecast/base/ControllerTest.java",
+      "$java_test_dir/org/monyhar/chromecast/base/ItertoolsTest.java",
+      "$java_test_dir/org/monyhar/chromecast/base/ObservableAndTest.java",
+      "$java_test_dir/org/monyhar/chromecast/base/ObservableAndThenTest.java",
+      "$java_test_dir/org/monyhar/chromecast/base/ObservableFilterTest.java",
+      "$java_test_dir/org/monyhar/chromecast/base/ObservableFlatMapTest.java",
+      "$java_test_dir/org/monyhar/chromecast/base/ObservableMapTest.java",
+      "$java_test_dir/org/monyhar/chromecast/base/ObservableMiscellaneousTest.java",
+      "$java_test_dir/org/monyhar/chromecast/base/ObservableNotTest.java",
+      "$java_test_dir/org/monyhar/chromecast/base/ObserversTest.java",
+      "$java_test_dir/org/monyhar/chromecast/base/ReactiveRecorderTest.java",
+      "$java_test_dir/org/monyhar/chromecast/base/SequencerTest.java",
+      "$java_test_dir/org/monyhar/chromecast/base/UnitTest.java",
     ]
     deps = [
       ":base_java",

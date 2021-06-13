@@ -145,7 +145,7 @@ class PrefetchProxyPageLoadMetricsObserverTest
   TestPrefetchProxyPageLoadMetricsObserver* plm_observer_ = nullptr;
   page_load_metrics::mojom::PageLoadTiming timing_;
 
-  GURL navigation_url_{"https://chromium.org"};
+  GURL navigation_url_{"https://monyhar.org"};
   bool in_main_frame_ = true;
 
   DISALLOW_COPY_AND_ASSIGN(PrefetchProxyPageLoadMetricsObserverTest);

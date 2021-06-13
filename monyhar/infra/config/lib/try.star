@@ -47,12 +47,12 @@ def tryjob(
         enable_for_quick_run = False):
     """Specifies the details of a tryjob verifier.
 
-    See https://chromium.googlesource.com/infra/luci/luci-go/+/refs/heads/master/lucicfg/doc/README.md#luci.cq_tryjob_verifier
+    See https://monyhar.googlesource.com/infra/luci/luci-go/+/refs/heads/master/lucicfg/doc/README.md#luci.cq_tryjob_verifier
     for details on the most of the arguments.
 
     Arguments:
       add_default_excludes - A bool indicating whether to add exclude regexps
-        for certain directories that would have no impact when building chromium
+        for certain directories that would have no impact when building monyhar
         with the patch applied (docs, config files that don't take effect until
         landing, etc., see DEFAULT_EXCLUDE_REGEXPS).
 
@@ -112,26 +112,26 @@ def try_builder(
         specifying additional parameters for exporting test results to BigQuery.
         Will always upload to the following tables in addition to any tables
         specified by the list's elements:
-          luci-resultdb.chromium.try_test_results
-          luci-resultdb.chromium.gpu_try_test_results
+          luci-resultdb.monyhar.try_test_results
+          luci-resultdb.monyhar.gpu_try_test_results
     """
     if not branches.matches(branch_selector):
         return
 
-    # Enable "chromium.resultdb.result_sink" on try builders.
+    # Enable "monyhar.resultdb.result_sink" on try builders.
     experiments = experiments or {}
-    experiments.setdefault("chromium.resultdb.result_sink", 100)
-    experiments.setdefault("chromium.resultdb.result_sink.junit_tests", 100)
+    experiments.setdefault("monyhar.resultdb.result_sink", 100)
+    experiments.setdefault("monyhar.resultdb.result_sink.junit_tests", 100)
 
     # Migrate executable to bbagent incrementally.
     experiments.setdefault("luci.buildbucket.use_bbagent", 10)
 
     merged_resultdb_bigquery_exports = [
         resultdb.export_test_results(
-            bq_table = "luci-resultdb.chromium.try_test_results",
+            bq_table = "luci-resultdb.monyhar.try_test_results",
         ),
         resultdb.export_test_results(
-            bq_table = "luci-resultdb.chromium.gpu_try_test_results",
+            bq_table = "luci-resultdb.monyhar.gpu_try_test_results",
             predicate = resultdb.test_result_predicate(
                 # Only match the telemetry_gpu_integration_test and
                 # fuchsia_telemetry_gpu_integration_test targets.
@@ -230,49 +230,49 @@ def blink_mac_builder(
         **kwargs
     )
 
-def chromium_builder(*, name, **kwargs):
+def monyhar_builder(*, name, **kwargs):
     kwargs.setdefault("os", builders.os.LINUX_BIONIC_REMOVE)
     return try_builder(
         name = name,
-        builder_group = "tryserver.chromium",
+        builder_group = "tryserver.monyhar",
         builderless = True,
         goma_backend = builders.goma.backend.RBE_PROD,
         **kwargs
     )
 
-def chromium_android_builder(*, name, **kwargs):
+def monyhar_android_builder(*, name, **kwargs):
     kwargs.setdefault("os", os.LINUX_BIONIC_REMOVE)
     return try_builder(
         name = name,
-        builder_group = "tryserver.chromium.android",
+        builder_group = "tryserver.monyhar.android",
         goma_backend = builders.goma.backend.RBE_PROD,
         **kwargs
     )
 
-def chromium_angle_builder(*, name, **kwargs):
+def monyhar_angle_builder(*, name, **kwargs):
     return try_builder(
         name = name,
-        builder_group = "tryserver.chromium.angle",
+        builder_group = "tryserver.monyhar.angle",
         builderless = False,
         goma_backend = builders.goma.backend.RBE_PROD,
         goma_jobs = builders.goma.jobs.J150,
-        service_account = "chromium-try-gpu-builder@chops-service-accounts.iam.gserviceaccount.com",
+        service_account = "monyhar-try-gpu-builder@chops-service-accounts.iam.gserviceaccount.com",
         **kwargs
     )
 
-def chromium_angle_pinned_builder(*, name, **kwargs):
+def monyhar_angle_pinned_builder(*, name, **kwargs):
     return try_builder(
         name = name,
-        builder_group = "tryserver.chromium.angle",
+        builder_group = "tryserver.monyhar.angle",
         builderless = True,
-        executable = "recipe:angle_chromium_trybot",
+        executable = "recipe:angle_monyhar_trybot",
         goma_backend = builders.goma.backend.RBE_PROD,
-        service_account = "chromium-try-gpu-builder@chops-service-accounts.iam.gserviceaccount.com",
+        service_account = "monyhar-try-gpu-builder@chops-service-accounts.iam.gserviceaccount.com",
         **kwargs
     )
 
-def chromium_angle_mac_builder(*, name, **kwargs):
-    return chromium_angle_pinned_builder(
+def monyhar_angle_mac_builder(*, name, **kwargs):
+    return monyhar_angle_pinned_builder(
         name = name,
         cores = None,
         ssd = None,
@@ -280,43 +280,43 @@ def chromium_angle_mac_builder(*, name, **kwargs):
         **kwargs
     )
 
-def chromium_angle_ios_builder(*, name, **kwargs):
-    return chromium_angle_mac_builder(
+def monyhar_angle_ios_builder(*, name, **kwargs):
+    return monyhar_angle_mac_builder(
         name = name,
         xcode = builders.xcode.x12a7209,
         **kwargs
     )
 
-def chromium_chromiumos_builder(*, name, **kwargs):
+def monyhar_monyharos_builder(*, name, **kwargs):
     kwargs.setdefault("os", builders.os.LINUX_BIONIC_REMOVE)
     return try_builder(
         name = name,
-        builder_group = "tryserver.chromium.chromiumos",
+        builder_group = "tryserver.monyhar.monyharos",
         goma_backend = builders.goma.backend.RBE_PROD,
         **kwargs
     )
 
-def chromium_dawn_builder(*, name, **kwargs):
+def monyhar_dawn_builder(*, name, **kwargs):
     return try_builder(
         name = name,
-        builder_group = "tryserver.chromium.dawn",
+        builder_group = "tryserver.monyhar.dawn",
         builderless = False,
         cores = None,
         goma_backend = builders.goma.backend.RBE_PROD,
-        service_account = "chromium-try-gpu-builder@chops-service-accounts.iam.gserviceaccount.com",
+        service_account = "monyhar-try-gpu-builder@chops-service-accounts.iam.gserviceaccount.com",
         **kwargs
     )
 
-def chromium_linux_builder(*, name, goma_backend = builders.goma.backend.RBE_PROD, **kwargs):
+def monyhar_linux_builder(*, name, goma_backend = builders.goma.backend.RBE_PROD, **kwargs):
     kwargs.setdefault("os", builders.os.LINUX_BIONIC_REMOVE)
     return try_builder(
         name = name,
-        builder_group = "tryserver.chromium.linux",
+        builder_group = "tryserver.monyhar.linux",
         goma_backend = goma_backend,
         **kwargs
     )
 
-def chromium_mac_builder(
+def monyhar_mac_builder(
         *,
         name,
         builderless = True,
@@ -326,7 +326,7 @@ def chromium_mac_builder(
         **kwargs):
     return try_builder(
         name = name,
-        builder_group = "tryserver.chromium.mac",
+        builder_group = "tryserver.monyhar.mac",
         cores = cores,
         goma_backend = goma_backend,
         os = os,
@@ -335,17 +335,17 @@ def chromium_mac_builder(
         **kwargs
     )
 
-def chromium_mac_ios_builder(
+def monyhar_mac_ios_builder(
         *,
         name,
-        executable = "recipe:chromium_trybot",
+        executable = "recipe:monyhar_trybot",
         goma_backend = builders.goma.backend.RBE_PROD,
         os = builders.os.MAC_10_15_OR_11,
         xcode = builders.xcode.x12d4e,
         **kwargs):
     return try_builder(
         name = name,
-        builder_group = "tryserver.chromium.mac",
+        builder_group = "tryserver.monyhar.mac",
         cores = None,
         executable = executable,
         goma_backend = goma_backend,
@@ -354,28 +354,28 @@ def chromium_mac_ios_builder(
         **kwargs
     )
 
-def chromium_swangle_builder(*, name, pinned = True, **kwargs):
+def monyhar_swangle_builder(*, name, pinned = True, **kwargs):
     builder_args = dict(kwargs)
     builder_args.update(
         name = name,
-        builder_group = "tryserver.chromium.swangle",
+        builder_group = "tryserver.monyhar.swangle",
         builderless = True,
-        service_account = "chromium-try-gpu-builder@chops-service-accounts.iam.gserviceaccount.com",
+        service_account = "monyhar-try-gpu-builder@chops-service-accounts.iam.gserviceaccount.com",
     )
     if pinned:
-        builder_args.update(executable = "recipe:angle_chromium_trybot")
+        builder_args.update(executable = "recipe:angle_monyhar_trybot")
     return try_builder(**builder_args)
 
-def chromium_swangle_linux_builder(*, name, **kwargs):
-    return chromium_swangle_builder(
+def monyhar_swangle_linux_builder(*, name, **kwargs):
+    return monyhar_swangle_builder(
         name = name,
         goma_backend = builders.goma.backend.RBE_PROD,
         os = builders.os.LINUX_BIONIC_REMOVE,
         **kwargs
     )
 
-def chromium_swangle_mac_builder(*, name, **kwargs):
-    return chromium_swangle_builder(
+def monyhar_swangle_mac_builder(*, name, **kwargs):
+    return monyhar_swangle_builder(
         name = name,
         cores = None,
         goma_backend = builders.goma.backend.RBE_PROD,
@@ -383,24 +383,24 @@ def chromium_swangle_mac_builder(*, name, **kwargs):
         **kwargs
     )
 
-def chromium_swangle_windows_builder(*, name, **kwargs):
-    return chromium_swangle_builder(
+def monyhar_swangle_windows_builder(*, name, **kwargs):
+    return monyhar_swangle_builder(
         name = name,
         goma_backend = builders.goma.backend.RBE_PROD,
         os = builders.os.WINDOWS_DEFAULT,
         **kwargs
     )
 
-def chromium_updater_builder(
+def monyhar_updater_builder(
         *,
         name,
-        executable = "recipe:chromium_trybot",
+        executable = "recipe:monyhar_trybot",
         goma_backend,
         os,
         **kwargs):
     return try_builder(
         name = name,
-        builder_group = "tryserver.chromium.updater",
+        builder_group = "tryserver.monyhar.updater",
         builderless = True,
         executable = executable,
         goma_backend = goma_backend,
@@ -408,8 +408,8 @@ def chromium_updater_builder(
         **kwargs
     )
 
-def chromium_updater_mac_builder(*, name, **kwargs):
-    return chromium_updater_builder(
+def monyhar_updater_mac_builder(*, name, **kwargs):
+    return monyhar_updater_builder(
         name = name,
         cores = None,
         goma_backend = builders.goma.backend.RBE_PROD,
@@ -417,15 +417,15 @@ def chromium_updater_mac_builder(*, name, **kwargs):
         **kwargs
     )
 
-def chromium_updater_win_builder(*, name, **kwargs):
-    return chromium_updater_builder(
+def monyhar_updater_win_builder(*, name, **kwargs):
+    return monyhar_updater_builder(
         name = name,
         goma_backend = builders.goma.backend.RBE_PROD,
         os = builders.os.WINDOWS_DEFAULT,
         **kwargs
     )
 
-def chromium_win_builder(
+def monyhar_win_builder(
         *,
         name,
         builderless = True,
@@ -434,7 +434,7 @@ def chromium_win_builder(
         **kwargs):
     return try_builder(
         name = name,
-        builder_group = "tryserver.chromium.win",
+        builder_group = "tryserver.monyhar.win",
         builderless = builderless,
         goma_backend = goma_backend,
         os = os,
@@ -444,15 +444,15 @@ def chromium_win_builder(
 def cipd_builder(*, name, **kwargs):
     return try_builder(
         name = name,
-        service_account = "chromium-cipd-try-builder@chops-service-accounts.iam.gserviceaccount.com",
+        service_account = "monyhar-cipd-try-builder@chops-service-accounts.iam.gserviceaccount.com",
         **kwargs
     )
 
 def cipd_3pp_builder(*, name, os, properties, **kwargs):
     return cipd_builder(
         name = name,
-        builder_group = "tryserver.chromium.packager",
-        executable = "recipe:chromium_3pp",
+        builder_group = "tryserver.monyhar.packager",
+        executable = "recipe:monyhar_3pp",
         os = os,
         properties = properties,
         **kwargs
@@ -463,42 +463,42 @@ def gpu_try_builder(*, name, builderless = False, execution_timeout = 6 * time.h
         name = name,
         builderless = builderless,
         execution_timeout = execution_timeout,
-        service_account = "chromium-try-gpu-builder@chops-service-accounts.iam.gserviceaccount.com",
+        service_account = "monyhar-try-gpu-builder@chops-service-accounts.iam.gserviceaccount.com",
         **kwargs
     )
 
-def gpu_chromium_android_builder(*, name, **kwargs):
+def gpu_monyhar_android_builder(*, name, **kwargs):
     return gpu_try_builder(
         name = name,
-        builder_group = "tryserver.chromium.android",
+        builder_group = "tryserver.monyhar.android",
         goma_backend = builders.goma.backend.RBE_PROD,
         os = builders.os.LINUX_BIONIC_REMOVE,
         **kwargs
     )
 
-def gpu_chromium_linux_builder(*, name, **kwargs):
+def gpu_monyhar_linux_builder(*, name, **kwargs):
     return gpu_try_builder(
         name = name,
-        builder_group = "tryserver.chromium.linux",
+        builder_group = "tryserver.monyhar.linux",
         goma_backend = builders.goma.backend.RBE_PROD,
         os = builders.os.LINUX_BIONIC_REMOVE,
         **kwargs
     )
 
-def gpu_chromium_mac_builder(*, name, **kwargs):
+def gpu_monyhar_mac_builder(*, name, **kwargs):
     return gpu_try_builder(
         name = name,
-        builder_group = "tryserver.chromium.mac",
+        builder_group = "tryserver.monyhar.mac",
         cores = None,
         goma_backend = builders.goma.backend.RBE_PROD,
         os = builders.os.MAC_ANY,
         **kwargs
     )
 
-def gpu_chromium_win_builder(*, name, os = builders.os.WINDOWS_ANY, **kwargs):
+def gpu_monyhar_win_builder(*, name, os = builders.os.WINDOWS_ANY, **kwargs):
     return gpu_try_builder(
         name = name,
-        builder_group = "tryserver.chromium.win",
+        builder_group = "tryserver.monyhar.win",
         goma_backend = builders.goma.backend.RBE_PROD,
         os = os,
         **kwargs
@@ -515,26 +515,26 @@ try_ = struct(
     # More specific builder wrapper functions
     blink_builder = blink_builder,
     blink_mac_builder = blink_mac_builder,
-    chromium_builder = chromium_builder,
-    chromium_android_builder = chromium_android_builder,
-    chromium_angle_builder = chromium_angle_builder,
-    chromium_angle_ios_builder = chromium_angle_ios_builder,
-    chromium_angle_mac_builder = chromium_angle_mac_builder,
-    chromium_chromiumos_builder = chromium_chromiumos_builder,
-    chromium_dawn_builder = chromium_dawn_builder,
-    chromium_linux_builder = chromium_linux_builder,
-    chromium_mac_builder = chromium_mac_builder,
-    chromium_mac_ios_builder = chromium_mac_ios_builder,
-    chromium_swangle_linux_builder = chromium_swangle_linux_builder,
-    chromium_swangle_mac_builder = chromium_swangle_mac_builder,
-    chromium_swangle_windows_builder = chromium_swangle_windows_builder,
-    chromium_updater_mac_builder = chromium_updater_mac_builder,
-    chromium_updater_win_builder = chromium_updater_win_builder,
-    chromium_win_builder = chromium_win_builder,
+    monyhar_builder = monyhar_builder,
+    monyhar_android_builder = monyhar_android_builder,
+    monyhar_angle_builder = monyhar_angle_builder,
+    monyhar_angle_ios_builder = monyhar_angle_ios_builder,
+    monyhar_angle_mac_builder = monyhar_angle_mac_builder,
+    monyhar_monyharos_builder = monyhar_monyharos_builder,
+    monyhar_dawn_builder = monyhar_dawn_builder,
+    monyhar_linux_builder = monyhar_linux_builder,
+    monyhar_mac_builder = monyhar_mac_builder,
+    monyhar_mac_ios_builder = monyhar_mac_ios_builder,
+    monyhar_swangle_linux_builder = monyhar_swangle_linux_builder,
+    monyhar_swangle_mac_builder = monyhar_swangle_mac_builder,
+    monyhar_swangle_windows_builder = monyhar_swangle_windows_builder,
+    monyhar_updater_mac_builder = monyhar_updater_mac_builder,
+    monyhar_updater_win_builder = monyhar_updater_win_builder,
+    monyhar_win_builder = monyhar_win_builder,
     cipd_3pp_builder = cipd_3pp_builder,
     cipd_builder = cipd_builder,
-    gpu_chromium_android_builder = gpu_chromium_android_builder,
-    gpu_chromium_linux_builder = gpu_chromium_linux_builder,
-    gpu_chromium_mac_builder = gpu_chromium_mac_builder,
-    gpu_chromium_win_builder = gpu_chromium_win_builder,
+    gpu_monyhar_android_builder = gpu_monyhar_android_builder,
+    gpu_monyhar_linux_builder = gpu_monyhar_linux_builder,
+    gpu_monyhar_mac_builder = gpu_monyhar_mac_builder,
+    gpu_monyhar_win_builder = gpu_monyhar_win_builder,
 )

@@ -23,7 +23,7 @@ def copy_file(source, destination):
 def main():
   parser = typ.ArgumentParser()
   parser.add_argument('--build-dir',
-                      help='Specifies chromium build directory.')
+                      help='Specifies monyhar build directory.')
   parser.add_argument('--target-gen-dir')
 
   runner = typ.Runner()

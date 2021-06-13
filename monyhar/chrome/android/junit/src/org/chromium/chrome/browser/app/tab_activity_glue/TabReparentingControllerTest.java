@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.app.tab_activity_glue;
+package org.monyhar.chrome.browser.app.tab_activity_glue;
 
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.times;
@@ -18,23 +18,23 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.UserDataHost;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.app.tab_activity_glue.TabReparentingController.Delegate;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabCreationState;
-import org.chromium.chrome.browser.tab.TabLaunchType;
-import org.chromium.chrome.browser.tabmodel.AsyncTabParams;
-import org.chromium.chrome.browser.tabmodel.AsyncTabParamsManager;
-import org.chromium.chrome.browser.tabmodel.AsyncTabParamsManagerFactory;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.tabmodel.TabReparentingParams;
-import org.chromium.chrome.test.util.browser.tabmodel.MockTabModel;
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.content_public.browser.NavigationController;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.url.GURL;
-import org.chromium.url.JUnitTestGURLs;
+import org.monyhar.base.UserDataHost;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.app.tab_activity_glue.TabReparentingController.Delegate;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabCreationState;
+import org.monyhar.chrome.browser.tab.TabLaunchType;
+import org.monyhar.chrome.browser.tabmodel.AsyncTabParams;
+import org.monyhar.chrome.browser.tabmodel.AsyncTabParamsManager;
+import org.monyhar.chrome.browser.tabmodel.AsyncTabParamsManagerFactory;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.tabmodel.TabReparentingParams;
+import org.monyhar.chrome.test.util.browser.tabmodel.MockTabModel;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.content_public.browser.NavigationController;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.url.GURL;
+import org.monyhar.url.JUnitTestGURLs;
 
 import java.util.HashMap;
 import java.util.Map;

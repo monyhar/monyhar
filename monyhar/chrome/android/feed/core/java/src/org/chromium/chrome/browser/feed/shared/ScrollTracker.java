@@ -1,12 +1,12 @@
 // Copyright 2019 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.chrome.browser.feed.shared;
+package org.monyhar.chrome.browser.feed.shared;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.task.PostTask;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 /**
  * Helper which is able to track a Scroll and aggregate them before sending the scroll events.

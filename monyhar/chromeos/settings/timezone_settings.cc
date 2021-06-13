@@ -213,7 +213,7 @@ static const char* kTimeZones[] = {
 };
 
 std::string GetTimezoneIDAsString() {
-  // Compare with chromiumos/src/platform/init/ui.conf which fixes certain
+  // Compare with monyharos/src/platform/init/ui.conf which fixes certain
   // incorrect states of the timezone symlink on startup. Thus errors occuring
   // here should be rather contrived.
 

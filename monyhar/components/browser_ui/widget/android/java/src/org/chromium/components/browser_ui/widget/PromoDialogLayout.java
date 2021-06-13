@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget;
+package org.monyhar.components.browser_ui.widget;
 
 import android.content.Context;
 import android.text.method.LinkMovementMethod;
@@ -17,7 +17,7 @@ import android.widget.TextView;
 import androidx.core.view.ViewCompat;
 import androidx.vectordrawable.graphics.drawable.VectorDrawableCompat;
 
-import org.chromium.components.browser_ui.widget.PromoDialog.DialogParams;
+import org.monyhar.components.browser_ui.widget.PromoDialog.DialogParams;
 
 /**
  * Lays out a promo dialog that is shown when Clank starts up.

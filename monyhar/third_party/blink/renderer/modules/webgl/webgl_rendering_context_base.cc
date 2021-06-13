@@ -32,7 +32,7 @@
 #include "base/feature_list.h"
 #include "base/numerics/checked_math.h"
 #include "build/build_config.h"
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "gpu/command_buffer/client/gles2_interface.h"
 #include "gpu/command_buffer/common/capabilities.h"
 #include "gpu/config/gpu_feature_info.h"
@@ -1094,7 +1094,7 @@ scoped_refptr<DrawingBuffer> WebGLRenderingContextBase::CreateDrawingBuffer(
   // being introduced into more areas of the code, we use the code path of
   // non-WebGLImageChromium for OffscreenCanvas.
   // See detailed discussion in crbug.com/649668.
-  DrawingBuffer::ChromiumImageUsage chromium_image_usage =
+  DrawingBuffer::ChromiumImageUsage monyhar_image_usage =
       Host()->IsOffscreenCanvas() ? DrawingBuffer::kDisallowChromiumImage
                                   : DrawingBuffer::kAllowChromiumImage;
 
@@ -1107,7 +1107,7 @@ scoped_refptr<DrawingBuffer> WebGLRenderingContextBase::CreateDrawingBuffer(
       std::move(context_provider), graphics_info, using_swap_chain, this,
       ClampedCanvasSize(), premultiplied_alpha, want_alpha_channel,
       want_depth_buffer, want_stencil_buffer, want_antialiasing, preserve,
-      web_gl_version, chromium_image_usage, Host()->FilterQuality(),
+      web_gl_version, monyhar_image_usage, Host()->FilterQuality(),
       CanvasRenderingContextColorParams(),
       PowerPreferenceToGpuPreference(attrs.power_preference));
 }
@@ -5975,7 +5975,7 @@ void WebGLRenderingContextBase::TexImageHelperMediaVideoFrame(
       caps.egl_image_external &&
       Extensions3DUtil::CopyTextureCHROMIUMNeedsESSL3(internalformat);
   const bool have_image_external_essl3 = caps.egl_image_external_essl3;
-  const bool use_copy_texture_chromium =
+  const bool use_copy_texture_monyhar =
       function_id == kTexImage2D && source_image_rect_is_default &&
       depth == 1 && GL_TEXTURE_2D == target &&
       (have_image_external_essl3 || !may_need_image_external_essl3) &&
@@ -5995,7 +5995,7 @@ void WebGLRenderingContextBase::TexImageHelperMediaVideoFrame(
   // Converting 16-bits formatted source texture to 8-bits formatted texture
   // will cause precision lost. So, uploading such video texture to half float
   // or float texture can not use GPU-GPU path.
-  if (use_copy_texture_chromium) {
+  if (use_copy_texture_monyhar) {
     DCHECK(Extensions3DUtil::CanUseCopyTextureCHROMIUM(target));
     DCHECK_EQ(xoffset, 0);
     DCHECK_EQ(yoffset, 0);

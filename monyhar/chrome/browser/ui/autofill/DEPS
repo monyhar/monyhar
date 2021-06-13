@@ -1,8 +1,8 @@
 include_rules = [
-  '+third_party/libaddressinput/chromium/addressinput_util.h',
-  '+third_party/libaddressinput/chromium/chrome_address_validator.h',
-  '+third_party/libaddressinput/chromium/chrome_metadata_source.h',
-  '+third_party/libaddressinput/chromium/chrome_storage_impl.h',
+  '+third_party/libaddressinput/monyhar/addressinput_util.h',
+  '+third_party/libaddressinput/monyhar/chrome_address_validator.h',
+  '+third_party/libaddressinput/monyhar/chrome_metadata_source.h',
+  '+third_party/libaddressinput/monyhar/chrome_storage_impl.h',
   '+third_party/libaddressinput/messages.h',
   '+third_party/libaddressinput/src/cpp/include/libaddressinput',
 ]

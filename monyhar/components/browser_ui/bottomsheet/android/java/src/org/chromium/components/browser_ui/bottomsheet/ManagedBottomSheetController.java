@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.bottomsheet;
+package org.monyhar.components.browser_ui.bottomsheet;
 
-import org.chromium.ui.util.AccessibilityUtil;
+import org.monyhar.ui.util.AccessibilityUtil;
 
 /**
  * An interface for the owning object to manage interaction between the bottom sheet and the rest

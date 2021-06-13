@@ -93,8 +93,8 @@ if (enable_libaom) {
     source_set("libaom_intrinsics_sse2") {
       # TODO(jianj): Align this with libvpx as this is not used there.
       check_includes = false
-      configs -= [ "//build/config/compiler:chromium_code" ]
-      configs += [ "//build/config/compiler:no_chromium_code" ]
+      configs -= [ "//build/config/compiler:monyhar_code" ]
+      configs += [ "//build/config/compiler:no_monyhar_code" ]
       configs += [ ":libaom_config" ]
       if (!is_win || is_clang) {
         cflags = [ "-msse2" ]
@@ -107,8 +107,8 @@ if (enable_libaom) {
 
     source_set("libaom_intrinsics_sse3") {
       check_includes = false
-      configs -= [ "//build/config/compiler:chromium_code" ]
-      configs += [ "//build/config/compiler:no_chromium_code" ]
+      configs -= [ "//build/config/compiler:monyhar_code" ]
+      configs += [ "//build/config/compiler:no_monyhar_code" ]
       configs += [ ":libaom_config" ]
       if (!is_win || is_clang) {
         cflags = [ "-msse3" ]
@@ -118,8 +118,8 @@ if (enable_libaom) {
 
     source_set("libaom_intrinsics_ssse3") {
       check_includes = false
-      configs -= [ "//build/config/compiler:chromium_code" ]
-      configs += [ "//build/config/compiler:no_chromium_code" ]
+      configs -= [ "//build/config/compiler:monyhar_code" ]
+      configs += [ "//build/config/compiler:no_monyhar_code" ]
       configs += [ ":libaom_config" ]
       if (!is_win || is_clang) {
         cflags = [ "-mssse3" ]
@@ -131,8 +131,8 @@ if (enable_libaom) {
 
     source_set("libaom_intrinsics_sse4_1") {
       check_includes = false
-      configs -= [ "//build/config/compiler:chromium_code" ]
-      configs += [ "//build/config/compiler:no_chromium_code" ]
+      configs -= [ "//build/config/compiler:monyhar_code" ]
+      configs += [ "//build/config/compiler:no_monyhar_code" ]
       configs += [ ":libaom_config" ]
       if (!is_win || is_clang) {
         cflags = [ "-msse4.1" ]
@@ -145,8 +145,8 @@ if (enable_libaom) {
 
     source_set("libaom_intrinsics_sse4_2") {
       check_includes = false
-      configs -= [ "//build/config/compiler:chromium_code" ]
-      configs += [ "//build/config/compiler:no_chromium_code" ]
+      configs -= [ "//build/config/compiler:monyhar_code" ]
+      configs += [ "//build/config/compiler:no_monyhar_code" ]
       configs += [ ":libaom_config" ]
       if (!is_win || is_clang) {
         cflags = [ "-msse4.2" ]
@@ -156,8 +156,8 @@ if (enable_libaom) {
 
     source_set("libaom_intrinsics_avx") {
       check_includes = false
-      configs -= [ "//build/config/compiler:chromium_code" ]
-      configs += [ "//build/config/compiler:no_chromium_code" ]
+      configs -= [ "//build/config/compiler:monyhar_code" ]
+      configs += [ "//build/config/compiler:no_monyhar_code" ]
       configs += [ ":libaom_config" ]
       if (is_win) {
         cflags = [ "/arch:AVX" ]
@@ -169,8 +169,8 @@ if (enable_libaom) {
 
     source_set("libaom_intrinsics_avx2") {
       check_includes = false
-      configs -= [ "//build/config/compiler:chromium_code" ]
-      configs += [ "//build/config/compiler:no_chromium_code" ]
+      configs -= [ "//build/config/compiler:monyhar_code" ]
+      configs += [ "//build/config/compiler:no_monyhar_code" ]
       configs += [ ":libaom_config" ]
       if (is_win) {
         cflags = [ "/arch:AVX2" ]
@@ -188,15 +188,15 @@ if (enable_libaom) {
       cpu_arch_full == "arm-neon-cpu-detect") {
     source_set("libaom_intrinsics_neon") {
       check_includes = false
-      configs -= [ "//build/config/compiler:chromium_code" ]
-      configs += [ "//build/config/compiler:no_chromium_code" ]
+      configs -= [ "//build/config/compiler:monyhar_code" ]
+      configs += [ "//build/config/compiler:no_monyhar_code" ]
       if (current_cpu == "arm") {
         configs -= [ "//build/config/compiler:compiler_arm_fpu" ]
         cflags = [ "-mfpu=neon" ]
       }
       configs += [ ":libaom_config" ]
 
-      # https://bugs.chromium.org/p/aomedia/issues/detail?id=2294
+      # https://bugs.monyhar.org/p/aomedia/issues/detail?id=2294
       sources =
           [ "//third_party/libaom/source/libaom/aom_ports/arm_cpudetect.c" ]
       sources += aom_av1_common_intrin_neon
@@ -211,8 +211,8 @@ if (enable_libaom) {
       configs -= [ "//build/config/compiler:default_optimization" ]
       configs += [ "//build/config/compiler:optimize_max" ]
     }
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     configs += [ ":libaom_config" ]
 
     sources = aom_av1_common_sources

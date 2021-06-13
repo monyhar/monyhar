@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr.util;
+package org.monyhar.chrome.browser.vr.util;
 
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.components.permissions.PermissionDialogController;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
-import org.chromium.ui.modaldialog.ModalDialogProperties;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.components.permissions.PermissionDialogController;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.ui.modaldialog.ModalDialogProperties;
 
 /**
  * Utility class for interacting with permission prompts outside of the VR Browser. For interaction

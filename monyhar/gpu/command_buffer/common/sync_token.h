@@ -14,7 +14,7 @@
 #include "gpu/command_buffer/common/constants.h"
 #include "gpu/gpu_export.h"
 
-// From glextchromium.h.
+// From glextmonyhar.h.
 #ifndef GL_SYNC_TOKEN_SIZE_CHROMIUM
 #define GL_SYNC_TOKEN_SIZE_CHROMIUM 24
 #endif

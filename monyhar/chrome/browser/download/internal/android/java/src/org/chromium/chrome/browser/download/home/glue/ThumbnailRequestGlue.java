@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.home.glue;
+package org.monyhar.chrome.browser.download.home.glue;
 
 import android.graphics.Bitmap;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.chrome.browser.thumbnail.generator.ThumbnailProvider;
-import org.chromium.chrome.browser.thumbnail.generator.ThumbnailProvider.ThumbnailRequest;
-import org.chromium.chrome.browser.thumbnail.generator.ThumbnailProviderImpl;
-import org.chromium.components.offline_items_collection.OfflineContentProvider;
-import org.chromium.components.offline_items_collection.OfflineItem;
-import org.chromium.components.offline_items_collection.OfflineItemVisuals;
-import org.chromium.components.offline_items_collection.VisualsCallback;
-import org.chromium.ui.display.DisplayAndroid;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.chrome.browser.thumbnail.generator.ThumbnailProvider;
+import org.monyhar.chrome.browser.thumbnail.generator.ThumbnailProvider.ThumbnailRequest;
+import org.monyhar.chrome.browser.thumbnail.generator.ThumbnailProviderImpl;
+import org.monyhar.components.offline_items_collection.OfflineContentProvider;
+import org.monyhar.components.offline_items_collection.OfflineItem;
+import org.monyhar.components.offline_items_collection.OfflineItemVisuals;
+import org.monyhar.components.offline_items_collection.VisualsCallback;
+import org.monyhar.ui.display.DisplayAndroid;
 
 /**
  * Glue class responsible for connecting the current downloads and {@link OfflineContentProvider}

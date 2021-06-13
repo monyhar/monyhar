@@ -6,7 +6,7 @@
 
 // parkable_string.h is a widely included header and its size impacts build
 // time. Try not to raise this limit unless necessary. See
-// https://chromium.googlesource.com/chromium/src/+/HEAD/docs/wmax_tokens.md
+// https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/wmax_tokens.md
 #pragma clang max_tokens_here 760000
 
 #include "base/allocator/partition_allocator/oom.h"

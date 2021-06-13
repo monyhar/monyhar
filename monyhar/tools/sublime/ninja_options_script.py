@@ -23,7 +23,7 @@ import pipes
 
 ycm_module_path = os.path.normpath(
     os.path.join(os.path.dirname(os.path.abspath(__file__)),
-    '../vim/chromium.ycm_extra_conf.py'))
+    '../vim/monyhar.ycm_extra_conf.py'))
 ycm_extra_conf = imp.load_source('ycm_extra_conf', ycm_module_path)
 
 def main():

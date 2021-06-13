@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.photo_picker;
+package org.monyhar.components.browser_ui.photo_picker;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -11,8 +11,8 @@ import android.text.TextUtils;
 
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.task.AsyncTask;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.task.AsyncTask;
 
 import java.util.ArrayList;
 import java.util.List;

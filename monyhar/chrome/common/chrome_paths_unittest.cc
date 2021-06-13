@@ -82,7 +82,7 @@ TEST(ChromePaths, DefaultUserDataDir) {
   // TODO(skobes): Test channel suffixes with $CHROME_VERSION_EXTRA.
   expected_branding = "google-chrome";
 #else
-  expected_branding = "chromium";
+  expected_branding = "monyhar";
 #endif
 
   base::FilePath user_data_dir;

@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.download.home.list;
+package org.monyhar.chrome.browser.download.home.list;
 
 import android.text.TextUtils;
 
-import org.chromium.components.offline_items_collection.OfflineItem;
+import org.monyhar.components.offline_items_collection.OfflineItem;
 
 import java.util.Collection;
 import java.util.HashSet;

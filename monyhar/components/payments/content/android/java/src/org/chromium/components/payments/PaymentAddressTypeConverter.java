@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.payments;
+package org.monyhar.components.payments;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.payments.mojom.PaymentAddress;
+import org.monyhar.payments.mojom.PaymentAddress;
 
 /**
- * A Utility class that converts org.chromium.components.payments.Address type to
- * org.chromium.payments.mojom.PaymentAddress and vice versa.
+ * A Utility class that converts org.monyhar.components.payments.Address type to
+ * org.monyhar.payments.mojom.PaymentAddress and vice versa.
  */
 public final class PaymentAddressTypeConverter {
     /**
-     * @param address The org.chromium.payments.mojom.PaymentAddress to be converted.
-     * @return The converted address with type org.chromium.components.payments.Address.
+     * @param address The org.monyhar.payments.mojom.PaymentAddress to be converted.
+     * @return The converted address with type org.monyhar.components.payments.Address.
      */
     @Nullable
     public static Address convertPaymentAddressFromMojo(PaymentAddress address) {
@@ -26,8 +26,8 @@ public final class PaymentAddressTypeConverter {
     }
 
     /**
-     * @param address The org.chromium.components.payments.Address address to be converted.
-     * @return The converted address with type org.chromium.payments.mojom.PaymentAddress.
+     * @param address The org.monyhar.components.payments.Address address to be converted.
+     * @return The converted address with type org.monyhar.payments.mojom.PaymentAddress.
      */
     @Nullable
     public static PaymentAddress convertAddressToMojoPaymentAddress(Address address) {

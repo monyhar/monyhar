@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar;
+package org.monyhar.chrome.browser.toolbar;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -16,8 +16,8 @@ import android.text.TextPaint;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.chrome.browser.theme.ThemeUtils;
-import org.chromium.components.browser_ui.widget.TintedDrawable;
+import org.monyhar.chrome.browser.theme.ThemeUtils;
+import org.monyhar.components.browser_ui.widget.TintedDrawable;
 
 import java.util.Locale;
 

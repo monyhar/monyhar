@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@16.0.0.cr0
-package: chromium/third_party/android_deps/libs/com_google_android_gms_play_services_cloud_messaging
+package: monyhar/third_party/android_deps/libs/com_google_android_gms_play_services_cloud_messaging
 description: "play-services-cloud-messaging"
 data:
 - file: play-services-cloud-messaging-16.0.0.aar

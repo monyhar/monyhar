@@ -43,7 +43,7 @@ public {{ 'static ' if not top_level }}final class {{enum|name}} {
 
     public static void validate(int value) {
         if (IS_EXTENSIBLE || isKnownValue(value)) return;
-        throw new org.chromium.mojo.bindings.DeserializationException("Invalid enum value.");
+        throw new org.monyhar.mojo.bindings.DeserializationException("Invalid enum value.");
     }
 
     public static int toKnownValue(int value) {

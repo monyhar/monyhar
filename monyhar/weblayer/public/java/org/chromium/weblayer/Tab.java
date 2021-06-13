@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer;
+package org.monyhar.weblayer;
 
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -16,19 +16,19 @@ import androidx.annotation.Nullable;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import org.chromium.weblayer_private.interfaces.APICallException;
-import org.chromium.weblayer_private.interfaces.IClientNavigation;
-import org.chromium.weblayer_private.interfaces.IContextMenuParams;
-import org.chromium.weblayer_private.interfaces.IErrorPageCallbackClient;
-import org.chromium.weblayer_private.interfaces.IFullscreenCallbackClient;
-import org.chromium.weblayer_private.interfaces.IGoogleAccountsCallbackClient;
-import org.chromium.weblayer_private.interfaces.IObjectWrapper;
-import org.chromium.weblayer_private.interfaces.ITab;
-import org.chromium.weblayer_private.interfaces.ITabClient;
-import org.chromium.weblayer_private.interfaces.IWebMessageCallbackClient;
-import org.chromium.weblayer_private.interfaces.IWebMessageReplyProxy;
-import org.chromium.weblayer_private.interfaces.ObjectWrapper;
-import org.chromium.weblayer_private.interfaces.StrictModeWorkaround;
+import org.monyhar.weblayer_private.interfaces.APICallException;
+import org.monyhar.weblayer_private.interfaces.IClientNavigation;
+import org.monyhar.weblayer_private.interfaces.IContextMenuParams;
+import org.monyhar.weblayer_private.interfaces.IErrorPageCallbackClient;
+import org.monyhar.weblayer_private.interfaces.IFullscreenCallbackClient;
+import org.monyhar.weblayer_private.interfaces.IGoogleAccountsCallbackClient;
+import org.monyhar.weblayer_private.interfaces.IObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.ITab;
+import org.monyhar.weblayer_private.interfaces.ITabClient;
+import org.monyhar.weblayer_private.interfaces.IWebMessageCallbackClient;
+import org.monyhar.weblayer_private.interfaces.IWebMessageReplyProxy;
+import org.monyhar.weblayer_private.interfaces.ObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.StrictModeWorkaround;
 
 import java.util.HashMap;
 import java.util.HashSet;

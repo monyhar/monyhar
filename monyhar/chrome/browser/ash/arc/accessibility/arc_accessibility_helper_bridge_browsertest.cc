@@ -106,8 +106,8 @@ IN_PROC_BROWSER_TEST_F(ArcAccessibilityHelperBridgeBrowserTest,
             fake_accessibility_helper_instance_->filter_type());
   EXPECT_FALSE(fake_accessibility_helper_instance_->explore_by_touch_enabled());
 
-  ArcTestWindow test_window_1 = MakeTestWindow("org.chromium.arc.1");
-  ArcTestWindow test_window_2 = MakeTestWindow("org.chromium.arc.2");
+  ArcTestWindow test_window_1 = MakeTestWindow("org.monyhar.arc.1");
+  ArcTestWindow test_window_2 = MakeTestWindow("org.monyhar.arc.2");
 
   wm::ActivationClient* activation_client =
       ash::Shell::Get()->activation_client();
@@ -158,8 +158,8 @@ IN_PROC_BROWSER_TEST_F(ArcAccessibilityHelperBridgeBrowserTest,
 
 IN_PROC_BROWSER_TEST_F(ArcAccessibilityHelperBridgeBrowserTest,
                        RequestTreeSyncOnWindowIdChange) {
-  ArcTestWindow test_window_1 = MakeTestWindow("org.chromium.arc.1");
-  ArcTestWindow test_window_2 = MakeTestWindow("org.chromium.arc.2");
+  ArcTestWindow test_window_1 = MakeTestWindow("org.monyhar.arc.1");
+  ArcTestWindow test_window_2 = MakeTestWindow("org.monyhar.arc.2");
 
   wm::ActivationClient* activation_client =
       ash::Shell::Get()->activation_client();

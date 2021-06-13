@@ -6,7 +6,7 @@ syntax = "proto2";
 
 package dom_distiller.test_sample.proto;
 option optimize_for = LITE_RUNTIME;
-option java_package = "org.chromium.distiller.test_sample.proto";
+option java_package = "org.monyhar.distiller.test_sample.proto";
 option java_outer_classname = "DomDistillerTestProtos";
 
 message TypeTest {

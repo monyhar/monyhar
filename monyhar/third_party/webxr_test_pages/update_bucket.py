@@ -26,13 +26,13 @@ INDEX_TEMPLATE = 'bucket_index.html'
 LATEST_TEMPLATE = 'bucket_latest.html'
 
 # Google Cloud storage bucket destination.
-BUCKET = 'gs://chromium-webxr-test'
+BUCKET = 'gs://monyhar-webxr-test'
 
 # URL templates used for creating the index page.
 LINK_OMAHAPROXY = ('https://storage.googleapis.com/'
-                   'chromium-find-releases-static/index.html#%s')
+                   'monyhar-find-releases-static/index.html#%s')
 LINK_CRREV = 'https://crrev.com/%s'
-LINK_CHROMIUMDASH = 'https://chromiumdash.appspot.com/commit/%s'
+LINK_CHROMIUMDASH = 'https://monyhardash.appspot.com/commit/%s'
 
 CR_POSITION_RE = re.compile(r'^Cr-Commit-Position:.*\#(\d+)')
 BUCKET_COPY_RE = re.compile(r'^r(\d+)')
@@ -139,7 +139,7 @@ def write_to_bucket(cr_position):
   check_and_fix_content_types(destination)
 
 def direct_publish_samples(source, dest_subfolder):
-  destination = 'gs://chromium-webxr-samples' + '/' + dest_subfolder
+  destination = 'gs://monyhar-webxr-samples' + '/' + dest_subfolder
   run_modify('gsutil.py', '-m', 'rsync', '-x', 'media', '-r', './' + source,
           destination)
 
@@ -178,7 +178,7 @@ def write_index():
     commit_hash = get_commit_from_cr_position(pos)
     if commit_hash:
       links.append({'href': LINK_CHROMIUMDASH % commit_hash,
-                    'anchor' : '[chromium dash]'})
+                    'anchor' : '[monyhar dash]'})
     items.append({'text': rev, 'links': links})
 
   template = jinja2.Template(open(INDEX_TEMPLATE).read())
@@ -310,7 +310,7 @@ content from failed uploads using the cloud console before retrying.
                             "bucket."))
   parser.add_argument('--direct-publish-samples-dest', default=None,
                       help=("Publish samples directly to this subfolder in the "
-                            "chromium-webxr-samples bucket."))
+                            "monyhar-webxr-samples bucket."))
 
   global g_flags
   g_flags = parser.parse_args()

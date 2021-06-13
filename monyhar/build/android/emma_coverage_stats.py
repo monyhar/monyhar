@@ -24,7 +24,7 @@ import re
 import sys
 from xml.etree import ElementTree
 
-import devil_chromium
+import devil_monyhar
 from devil.utils import run_tests_helper
 
 NOT_EXECUTABLE = -1
@@ -47,7 +47,7 @@ class _EmmaHtmlParser(object):
   Example HTML:
 
   Package links:
-    <a href="_files/1.html">org.chromium.chrome</a>
+    <a href="_files/1.html">org.monyhar.chrome</a>
     This is returned by the selector |XPATH_SELECT_PACKAGE_ELEMENTS|.
 
   Class links:
@@ -176,7 +176,7 @@ class _EmmaHtmlParser(object):
     package_link_elements = self._FindElements(
         self._index_path, self._XPATH_SELECT_PACKAGE_ELEMENTS)
     # Maps file path of package directory (EMMA generated) to package name.
-    # Example: emma_dir/f.html: org.chromium.chrome.
+    # Example: emma_dir/f.html: org.monyhar.chrome.
     package_links = {
       os.path.join(self._base_dir, link.attrib['HREF']): link.text
       for link in package_link_elements if 'HREF' in link.attrib
@@ -366,7 +366,7 @@ class _EmmaCoverageStats(object):
       A dict mapping Java source file paths to EMMA HTML file paths.
     """
     # Maps Java source file paths to package names.
-    # Example: /usr/code/file.java -> org.chromium.file.java.
+    # Example: /usr/code/file.java -> org.monyhar.file.java.
     source_to_package = {}
     for file_path in files:
       package = self.GetPackageNameFromFile(file_path)
@@ -377,7 +377,7 @@ class _EmmaCoverageStats(object):
                         "statement.", file_path)
 
     # Maps package names to EMMA report HTML files.
-    # Example: org.chromium.file.java -> out/coverage/1a.html.
+    # Example: org.monyhar.file.java -> out/coverage/1a.html.
     package_to_emma = self._emma_parser.GetPackageNameToEmmaFileDict()
     # Finally, we have a dict mapping Java file paths to EMMA report files.
     # Example: /usr/code/file.java -> out/coverage/1a.html.
@@ -471,7 +471,7 @@ def main():
                          help='Print verbose log information.')
   args = argparser.parse_args()
   run_tests_helper.SetLogLevel(args.verbose)
-  devil_chromium.Initialize()
+  devil_monyhar.Initialize()
   GenerateCoverageReport(args.lines_for_coverage_file, args.out, args.emma_dir)
 
 

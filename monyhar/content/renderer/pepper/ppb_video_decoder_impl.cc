@@ -42,7 +42,7 @@ media::VideoCodecProfile PPToMediaProfile(
   switch (pp_profile) {
     case PP_VIDEODECODER_H264PROFILE_NONE:
     // HACK: PPAPI contains a bogus "none" h264 profile that doesn't
-    // correspond to anything in h.264; but a number of released chromium
+    // correspond to anything in h.264; but a number of released monyhar
     // versions silently promoted this to Baseline profile, so we retain that
     // behavior here.  Fall through.
     case PP_VIDEODECODER_H264PROFILE_BASELINE:

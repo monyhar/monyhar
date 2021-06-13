@@ -10,7 +10,7 @@ enable unittesting of these assertions, we use this python script to
 invoke the compiler on a source file and assert that compilation fails.
 
 For more info, see:
-  http://dev.chromium.org/developers/testing/no-compile-tests
+  http://dev.monyhar.org/developers/testing/no-compile-tests
 """
 
 from __future__ import print_function

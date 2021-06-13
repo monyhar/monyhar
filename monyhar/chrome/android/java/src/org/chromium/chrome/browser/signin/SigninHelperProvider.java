@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.signin;
+package org.monyhar.chrome.browser.signin;
 
 import androidx.annotation.MainThread;
 
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.signin.services.IdentityServicesProvider;
-import org.chromium.chrome.browser.sync.SyncController;
-import org.chromium.chrome.browser.sync.SyncErrorNotifier;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.signin.services.IdentityServicesProvider;
+import org.monyhar.chrome.browser.sync.SyncController;
+import org.monyhar.chrome.browser.sync.SyncErrorNotifier;
 
 /**
  * This class is used to get a singleton instance of {@link SigninChecker}.

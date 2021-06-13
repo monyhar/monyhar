@@ -34,7 +34,7 @@ class FakeMBW(mb.MetaBuildWrapper):
 
     # Override vars for test portability.
     if win32:
-      self.chromium_src_dir = 'c:\\fake_src'
+      self.monyhar_src_dir = 'c:\\fake_src'
       self.default_config = 'c:\\fake_src\\tools\\mb\\mb_config.pyl'
 
       self.default_isolate_map = ('c:\\fake_src\\testing\\buildbot\\'
@@ -44,7 +44,7 @@ class FakeMBW(mb.MetaBuildWrapper):
       self.sep = '\\'
       self.cwd = 'c:\\fake_src\\out\\Default'
     else:
-      self.chromium_src_dir = '/fake_src'
+      self.monyhar_src_dir = '/fake_src'
       self.default_config = '/fake_src/tools/mb/mb_config.pyl'
       self.default_isolate_map = '/fake_src/testing/buildbot/gn_isolate_map.pyl'
       self.executable = '/usr/bin/python'
@@ -152,7 +152,7 @@ class FakeFile(object):
 TEST_CONFIG = """\
 {
   'builder_groups': {
-    'chromium': {},
+    'monyhar': {},
     'fake_builder_group': {
       'fake_builder': 'rel_bot',
       'fake_debug_builder': 'debug_goma',
@@ -206,7 +206,7 @@ TEST_BAD_CONFIG = """\
     'rel_bot_2': ['rel', 'bad_nested_config'],
   },
   'builder_groups': {
-    'chromium': {
+    'monyhar': {
       'a': 'rel_bot_1',
       'b': 'rel_bot_2',
     },
@@ -230,7 +230,7 @@ TEST_BAD_CONFIG = """\
 TEST_ARGS_FILE_TWICE_CONFIG = """\
 {
   'builder_groups': {
-    'chromium': {},
+    'monyhar': {},
     'fake_builder_group': {
       'fake_args_file_twice': 'args_file_twice',
     },
@@ -250,7 +250,7 @@ TEST_ARGS_FILE_TWICE_CONFIG = """\
 TEST_DUP_CONFIG = """\
 {
   'builder_groups': {
-    'chromium': {},
+    'monyhar': {},
     'fake_builder_group': {
       'fake_builder': 'some_config',
       'other_builder': 'some_other_config',
@@ -274,10 +274,10 @@ TRYSERVER_CONFIG = """\
     'not_a_tryserver': {
       'fake_builder': 'fake_config',
     },
-    'tryserver.chromium.linux': {
+    'tryserver.monyhar.linux': {
       'try_builder': 'fake_config',
     },
-    'tryserver.chromium.mac': {
+    'tryserver.monyhar.mac': {
       'try_builder2': 'fake_config',
     },
   },

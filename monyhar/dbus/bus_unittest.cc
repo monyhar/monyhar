@@ -77,22 +77,22 @@ TEST(BusTest, GetObjectProxy) {
   scoped_refptr<Bus> bus = new Bus(options);
 
   ObjectProxy* object_proxy1 =
-      bus->GetObjectProxy("org.chromium.TestService",
-                          ObjectPath("/org/chromium/TestObject"));
+      bus->GetObjectProxy("org.monyhar.TestService",
+                          ObjectPath("/org/monyhar/TestObject"));
   ASSERT_TRUE(object_proxy1);
 
   // This should return the same object.
   ObjectProxy* object_proxy2 =
-      bus->GetObjectProxy("org.chromium.TestService",
-                          ObjectPath("/org/chromium/TestObject"));
+      bus->GetObjectProxy("org.monyhar.TestService",
+                          ObjectPath("/org/monyhar/TestObject"));
   ASSERT_TRUE(object_proxy2);
   EXPECT_EQ(object_proxy1, object_proxy2);
 
   // This should not.
   ObjectProxy* object_proxy3 =
       bus->GetObjectProxy(
-          "org.chromium.TestService",
-          ObjectPath("/org/chromium/DifferentTestObject"));
+          "org.monyhar.TestService",
+          ObjectPath("/org/monyhar/DifferentTestObject"));
   ASSERT_TRUE(object_proxy3);
   EXPECT_NE(object_proxy1, object_proxy3);
 
@@ -105,16 +105,16 @@ TEST(BusTest, GetObjectProxyIgnoreUnknownService) {
 
   ObjectProxy* object_proxy1 =
       bus->GetObjectProxyWithOptions(
-          "org.chromium.TestService",
-          ObjectPath("/org/chromium/TestObject"),
+          "org.monyhar.TestService",
+          ObjectPath("/org/monyhar/TestObject"),
           ObjectProxy::IGNORE_SERVICE_UNKNOWN_ERRORS);
   ASSERT_TRUE(object_proxy1);
 
   // This should return the same object.
   ObjectProxy* object_proxy2 =
       bus->GetObjectProxyWithOptions(
-          "org.chromium.TestService",
-          ObjectPath("/org/chromium/TestObject"),
+          "org.monyhar.TestService",
+          ObjectPath("/org/monyhar/TestObject"),
           ObjectProxy::IGNORE_SERVICE_UNKNOWN_ERRORS);
   ASSERT_TRUE(object_proxy2);
   EXPECT_EQ(object_proxy1, object_proxy2);
@@ -122,8 +122,8 @@ TEST(BusTest, GetObjectProxyIgnoreUnknownService) {
   // This should not.
   ObjectProxy* object_proxy3 =
       bus->GetObjectProxyWithOptions(
-          "org.chromium.TestService",
-          ObjectPath("/org/chromium/DifferentTestObject"),
+          "org.monyhar.TestService",
+          ObjectPath("/org/monyhar/DifferentTestObject"),
           ObjectProxy::IGNORE_SERVICE_UNKNOWN_ERRORS);
   ASSERT_TRUE(object_proxy3);
   EXPECT_NE(object_proxy1, object_proxy3);
@@ -147,13 +147,13 @@ TEST(BusTest, RemoveObjectProxy) {
   ASSERT_FALSE(bus->shutdown_completed());
 
   // Try to remove a non existant object proxy should return false.
-  ASSERT_FALSE(bus->RemoveObjectProxy("org.chromium.TestService",
-                                      ObjectPath("/org/chromium/TestObject"),
+  ASSERT_FALSE(bus->RemoveObjectProxy("org.monyhar.TestService",
+                                      ObjectPath("/org/monyhar/TestObject"),
                                       base::DoNothing()));
 
   ObjectProxy* object_proxy1 =
-      bus->GetObjectProxy("org.chromium.TestService",
-                          ObjectPath("/org/chromium/TestObject"));
+      bus->GetObjectProxy("org.monyhar.TestService",
+                          ObjectPath("/org/monyhar/TestObject"));
   ASSERT_TRUE(object_proxy1);
 
   // Increment the reference count to the object proxy to avoid destroying it
@@ -163,15 +163,15 @@ TEST(BusTest, RemoveObjectProxy) {
   // Remove the object from the bus. This will invalidate any other usage of
   // object_proxy1 other than destroy it. We keep this object for a comparison
   // at a later time.
-  ASSERT_TRUE(bus->RemoveObjectProxy("org.chromium.TestService",
-                                     ObjectPath("/org/chromium/TestObject"),
+  ASSERT_TRUE(bus->RemoveObjectProxy("org.monyhar.TestService",
+                                     ObjectPath("/org/monyhar/TestObject"),
                                      base::DoNothing()));
 
   // This should return a different object because the first object was removed
   // from the bus, but not deleted from memory.
   ObjectProxy* object_proxy2 =
-      bus->GetObjectProxy("org.chromium.TestService",
-                          ObjectPath("/org/chromium/TestObject"));
+      bus->GetObjectProxy("org.monyhar.TestService",
+                          ObjectPath("/org/monyhar/TestObject"));
   ASSERT_TRUE(object_proxy2);
 
   // Compare the new object with the first object. The first object still exists
@@ -192,19 +192,19 @@ TEST(BusTest, GetExportedObject) {
   scoped_refptr<Bus> bus = new Bus(options);
 
   ExportedObject* object_proxy1 =
-      bus->GetExportedObject(ObjectPath("/org/chromium/TestObject"));
+      bus->GetExportedObject(ObjectPath("/org/monyhar/TestObject"));
   ASSERT_TRUE(object_proxy1);
 
   // This should return the same object.
   ExportedObject* object_proxy2 =
-      bus->GetExportedObject(ObjectPath("/org/chromium/TestObject"));
+      bus->GetExportedObject(ObjectPath("/org/monyhar/TestObject"));
   ASSERT_TRUE(object_proxy2);
   EXPECT_EQ(object_proxy1, object_proxy2);
 
   // This should not.
   ExportedObject* object_proxy3 =
       bus->GetExportedObject(
-          ObjectPath("/org/chromium/DifferentTestObject"));
+          ObjectPath("/org/monyhar/DifferentTestObject"));
   ASSERT_TRUE(object_proxy3);
   EXPECT_NE(object_proxy1, object_proxy3);
 
@@ -225,7 +225,7 @@ TEST(BusTest, UnregisterExportedObject) {
   ASSERT_FALSE(bus->shutdown_completed());
 
   ExportedObject* object_proxy1 =
-      bus->GetExportedObject(ObjectPath("/org/chromium/TestObject"));
+      bus->GetExportedObject(ObjectPath("/org/monyhar/TestObject"));
   ASSERT_TRUE(object_proxy1);
 
   // Increment the reference count to the object proxy to avoid destroying it
@@ -233,12 +233,12 @@ TEST(BusTest, UnregisterExportedObject) {
   // not freed from memory. See http://crbug.com/137846 for details.
   object_proxy1->AddRef();
 
-  bus->UnregisterExportedObject(ObjectPath("/org/chromium/TestObject"));
+  bus->UnregisterExportedObject(ObjectPath("/org/monyhar/TestObject"));
 
   // This should return a new object because the object_proxy1 is still in
   // alloc'ed memory.
   ExportedObject* object_proxy2 =
-      bus->GetExportedObject(ObjectPath("/org/chromium/TestObject"));
+      bus->GetExportedObject(ObjectPath("/org/monyhar/TestObject"));
   ASSERT_TRUE(object_proxy2);
   EXPECT_NE(object_proxy1, object_proxy2);
 
@@ -289,31 +289,31 @@ TEST(BusTest, DoubleAddAndRemoveMatch) {
 
   // Adds the same rule twice.
   bus->AddMatch(
-      "type='signal',interface='org.chromium.TestService',path='/'",
+      "type='signal',interface='org.monyhar.TestService',path='/'",
       error.get());
   ASSERT_FALSE(error.is_set());
 
   bus->AddMatch(
-      "type='signal',interface='org.chromium.TestService',path='/'",
+      "type='signal',interface='org.monyhar.TestService',path='/'",
       error.get());
   ASSERT_FALSE(error.is_set());
 
   // Removes the same rule twice.
   ASSERT_TRUE(bus->RemoveMatch(
-      "type='signal',interface='org.chromium.TestService',path='/'",
+      "type='signal',interface='org.monyhar.TestService',path='/'",
       error.get()));
   ASSERT_FALSE(error.is_set());
 
   // The rule should be still in the bus since it was removed only once.
   // A second removal shouldn't give an error.
   ASSERT_TRUE(bus->RemoveMatch(
-      "type='signal',interface='org.chromium.TestService',path='/'",
+      "type='signal',interface='org.monyhar.TestService',path='/'",
       error.get()));
   ASSERT_FALSE(error.is_set());
 
   // A third attemp to remove the same rule should fail.
   ASSERT_FALSE(bus->RemoveMatch(
-      "type='signal',interface='org.chromium.TestService',path='/'",
+      "type='signal',interface='org.monyhar.TestService',path='/'",
       error.get()));
 
   bus->ShutdownAndBlock();
@@ -335,9 +335,9 @@ TEST(BusTest, ListenForServiceOwnerChange) {
   Bus::ServiceOwnerChangeCallback callback1 =
       base::BindRepeating(&OnServiceOwnerChanged, &run_loop_state,
                           &service_owner1, &num_of_owner_changes1);
-  bus->ListenForServiceOwnerChange("org.chromium.TestService", callback1);
+  bus->ListenForServiceOwnerChange("org.monyhar.TestService", callback1);
   // This should be a no-op.
-  bus->ListenForServiceOwnerChange("org.chromium.TestService", callback1);
+  bus->ListenForServiceOwnerChange("org.monyhar.TestService", callback1);
   base::RunLoop().RunUntilIdle();
 
   // Nothing has happened yet. Check initial state.
@@ -345,7 +345,7 @@ TEST(BusTest, ListenForServiceOwnerChange) {
   EXPECT_EQ(0, num_of_owner_changes1);
 
   // Make an ownership change.
-  ASSERT_TRUE(bus->RequestOwnershipAndBlock("org.chromium.TestService",
+  ASSERT_TRUE(bus->RequestOwnershipAndBlock("org.monyhar.TestService",
                                             Bus::REQUIRE_PRIMARY));
   run_loop_state.Run(1);
 
@@ -353,7 +353,7 @@ TEST(BusTest, ListenForServiceOwnerChange) {
     // Get the current service owner and check to make sure the listener got
     // the right value.
     std::string current_service_owner =
-        bus->GetServiceOwnerAndBlock("org.chromium.TestService",
+        bus->GetServiceOwnerAndBlock("org.monyhar.TestService",
                                      Bus::REPORT_ERRORS);
     ASSERT_FALSE(current_service_owner.empty());
 
@@ -370,12 +370,12 @@ TEST(BusTest, ListenForServiceOwnerChange) {
   Bus::ServiceOwnerChangeCallback callback2 =
       base::BindRepeating(&OnServiceOwnerChanged, &run_loop_state,
                           &service_owner2, &num_of_owner_changes2);
-  bus->ListenForServiceOwnerChange("org.chromium.TestService", callback2);
+  bus->ListenForServiceOwnerChange("org.monyhar.TestService", callback2);
   base::RunLoop().RunUntilIdle();
 
   // Release the ownership and make sure the service owner listeners fire with
   // the right values and the right number of times.
-  ASSERT_TRUE(bus->ReleaseOwnership("org.chromium.TestService"));
+  ASSERT_TRUE(bus->ReleaseOwnership("org.monyhar.TestService"));
   run_loop_state.Run(2);
 
   EXPECT_TRUE(service_owner1.empty());
@@ -384,8 +384,8 @@ TEST(BusTest, ListenForServiceOwnerChange) {
   EXPECT_EQ(1, num_of_owner_changes2);
 
   // Unlisten so shutdown can proceed correctly.
-  bus->UnlistenForServiceOwnerChange("org.chromium.TestService", callback1);
-  bus->UnlistenForServiceOwnerChange("org.chromium.TestService", callback2);
+  bus->UnlistenForServiceOwnerChange("org.monyhar.TestService", callback1);
+  bus->UnlistenForServiceOwnerChange("org.monyhar.TestService", callback2);
   base::RunLoop().RunUntilIdle();
 
   // Shut down synchronously.

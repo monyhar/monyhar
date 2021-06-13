@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.modelutil;
+package org.monyhar.ui.modelutil;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -14,7 +14,7 @@ import androidx.annotation.StringRes;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.util.ObjectsCompat;
 
-import org.chromium.base.annotations.RemovableInRelease;
+import org.monyhar.base.annotations.RemovableInRelease;
 
 import java.util.ArrayList;
 import java.util.Collection;

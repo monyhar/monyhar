@@ -26,13 +26,13 @@
 #endif
 
 NSErrorDomain const CWVSyncErrorDomain =
-    @"org.chromium.chromewebview.SyncErrorDomain";
+    @"org.monyhar.chromewebview.SyncErrorDomain";
 NSErrorUserInfoKey const CWVSyncErrorDescriptionKey =
-    @"org.chromium.chromewebview.SyncErrorDescriptionKey";
+    @"org.monyhar.chromewebview.SyncErrorDescriptionKey";
 NSErrorUserInfoKey const CWVSyncErrorMessageKey =
-    @"org.chromium.chromewebview.SyncErrorMessageKey";
+    @"org.monyhar.chromewebview.SyncErrorMessageKey";
 NSErrorUserInfoKey const CWVSyncErrorIsTransientKey =
-    @"org.chromium.chromewebview.SyncErrorIsTransientKey";
+    @"org.monyhar.chromewebview.SyncErrorIsTransientKey";
 
 namespace {
 CWVSyncError CWVConvertGoogleServiceAuthErrorStateToCWVSyncError(

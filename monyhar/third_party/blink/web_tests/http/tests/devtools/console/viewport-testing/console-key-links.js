@@ -15,7 +15,7 @@
 
   await TestRunner.evaluateInPagePromise(`
     function fn1() {
-      console.error("Custom error with link www.chromium.org/linkInErrMsg");
+      console.error("Custom error with link www.monyhar.org/linkInErrMsg");
     }
 
     //# sourceURL=foo.js
@@ -23,7 +23,7 @@
 
   TestRunner.runTestSuite([
     async function testNavigatingLinks(next) {
-      await clearAndLog(`console.log("Before");console.log("Text around www.chromium.org/1a multiple links, www.chromium.org/1b");console.log("www.chromium.org/2");`, 3);
+      await clearAndLog(`console.log("Before");console.log("Text around www.monyhar.org/1a multiple links, www.monyhar.org/1b");console.log("www.monyhar.org/2");`, 3);
       await ConsoleTestRunner.waitForRemoteObjectsConsoleMessagesPromise();
 
       TestRunner.addResult(`Setting focus in prompt:`);

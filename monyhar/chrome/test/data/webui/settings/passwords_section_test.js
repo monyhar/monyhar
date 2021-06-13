@@ -699,7 +699,7 @@ suite('PasswordsSection', function() {
   // (passwordless) credentials. Does not test Copy button.
   test('verifyCopyAbsentForFederatedPasswordInMenu', function() {
     const passwordList = [
-      createPasswordEntry({federationText: 'with chromium.org'}),
+      createPasswordEntry({federationText: 'with monyhar.org'}),
     ];
 
     const passwordsSection = elementFactory.createPasswordsSection(
@@ -730,7 +730,7 @@ suite('PasswordsSection', function() {
   // (passwordless) credentials. Does not test Details and Edit button.
   test('verifyEditReplacedToDetailsForFederatedPasswordInMenu', function() {
     const passwordList = [
-      createPasswordEntry({federationText: 'with chromium.org'}),
+      createPasswordEntry({federationText: 'with monyhar.org'}),
     ];
     const passwordsSection = elementFactory.createPasswordsSection(
         passwordManager, passwordList, []);
@@ -749,7 +749,7 @@ suite('PasswordsSection', function() {
   test(
       'verifyDetailsForFederatedPasswordInMenu', function() {
         const passwordList = [
-          createPasswordEntry({federationText: 'with chromium.org'}),
+          createPasswordEntry({federationText: 'with monyhar.org'}),
         ];
         const passwordsSection = elementFactory.createPasswordsSection(
             passwordManager, passwordList, []);
@@ -1051,7 +1051,7 @@ suite('PasswordsSection', function() {
 
   test('verifyFederatedPassword', function() {
     const federationEntry = createMultiStorePasswordEntry(
-        {federationText: 'with chromium.org', username: 'bart', deviceId: 42});
+        {federationText: 'with monyhar.org', username: 'bart', deviceId: 42});
     const passwordDialog =
         elementFactory.createPasswordEditDialog(federationEntry);
 
@@ -1065,7 +1065,7 @@ suite('PasswordsSection', function() {
 
   test('verifyEditOrDetailsDialog', function() {
     const federationEntry = createMultiStorePasswordEntry(
-        {federationText: 'with chromium.org', username: 'bart', deviceId: 42});
+        {federationText: 'with monyhar.org', username: 'bart', deviceId: 42});
     const passwordDialogFederation =
         elementFactory.createPasswordEditDialog(federationEntry);
     detailsDialogPartsAreShownCorrectly(passwordDialogFederation);

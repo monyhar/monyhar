@@ -18,7 +18,7 @@
 #endif
 
 NSErrorDomain const CWVCreditCardVerifierErrorDomain =
-    @"org.chromium.chromewebview.CreditCardVerifierErrorDomain";
+    @"org.monyhar.chromewebview.CreditCardVerifierErrorDomain";
 NSErrorUserInfoKey const CWVCreditCardVerifierRetryAllowedKey =
     @"retry_allowed";
 

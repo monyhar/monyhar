@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.keyboard_accessory.data;
+package org.monyhar.chrome.browser.keyboard_accessory.data;
 
-import org.chromium.base.Callback;
-import org.chromium.base.annotations.CalledByNative;
+import org.monyhar.base.Callback;
+import org.monyhar.base.annotations.CalledByNative;
 
 /**
  * Represents an item (either selectable or not) presented on the UI, such as the username

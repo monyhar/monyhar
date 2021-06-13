@@ -79,7 +79,7 @@ def _GetResourceListFromString(resources_content):
   resources = [Resource(HashName(name), name, index) for name, index in
                _GetNameIndexPairsIter(resources_content)]
 
-  # Deduplicate resources. Some name-index pairs appear in both chromium_ and
+  # Deduplicate resources. Some name-index pairs appear in both monyhar_ and
   # google_chrome_ header files. Unless deduplicated here, collisions will be
   # raised in _CheckForHashCollisions.
   resources = list(set(resources))

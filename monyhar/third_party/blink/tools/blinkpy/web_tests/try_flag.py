@@ -22,9 +22,9 @@ BUILDER_CONFIGS = {
     'win7-rel': TestConfiguration('Win', '', 'release')
 }
 BUILDER_BUCKETS = {
-    'linux-rel': 'luci.chromium.try',
-    'mac-rel': 'luci.chromium.try',
-    'win7-rel': 'luci.chromium.try',
+    'linux-rel': 'luci.monyhar.try',
+    'mac-rel': 'luci.monyhar.try',
+    'win7-rel': 'luci.monyhar.try',
 }
 FLAG_FILE = 'additional-driver-flag.setting'
 

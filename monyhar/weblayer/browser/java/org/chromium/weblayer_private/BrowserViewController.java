@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -17,30 +17,30 @@ import android.widget.RelativeLayout;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.cc.input.BrowserControlsState;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetControllerFactory;
-import org.chromium.components.browser_ui.bottomsheet.BottomSheetObserver;
-import org.chromium.components.browser_ui.bottomsheet.EmptyBottomSheetObserver;
-import org.chromium.components.browser_ui.bottomsheet.ManagedBottomSheetController;
-import org.chromium.components.browser_ui.modaldialog.AppModalPresenter;
-import org.chromium.components.browser_ui.widget.InsetObserverView;
-import org.chromium.components.browser_ui.widget.scrim.ScrimCoordinator;
-import org.chromium.components.browser_ui.widget.scrim.ScrimCoordinator.SystemUiScrimDelegate;
-import org.chromium.components.content_capture.ContentCaptureConsumer;
-import org.chromium.components.content_capture.OnscreenContentProvider;
-import org.chromium.components.embedder_support.view.ContentView;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.KeyboardVisibilityDelegate;
-import org.chromium.ui.modaldialog.DialogDismissalCause;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.modaldialog.ModalDialogManager.ModalDialogType;
-import org.chromium.ui.modaldialog.ModalDialogProperties;
-import org.chromium.ui.modaldialog.SimpleModalDialogController;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.util.TokenHolder;
-import org.chromium.weblayer_private.interfaces.BrowserEmbeddabilityMode;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.cc.input.BrowserControlsState;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetControllerFactory;
+import org.monyhar.components.browser_ui.bottomsheet.BottomSheetObserver;
+import org.monyhar.components.browser_ui.bottomsheet.EmptyBottomSheetObserver;
+import org.monyhar.components.browser_ui.bottomsheet.ManagedBottomSheetController;
+import org.monyhar.components.browser_ui.modaldialog.AppModalPresenter;
+import org.monyhar.components.browser_ui.widget.InsetObserverView;
+import org.monyhar.components.browser_ui.widget.scrim.ScrimCoordinator;
+import org.monyhar.components.browser_ui.widget.scrim.ScrimCoordinator.SystemUiScrimDelegate;
+import org.monyhar.components.content_capture.ContentCaptureConsumer;
+import org.monyhar.components.content_capture.OnscreenContentProvider;
+import org.monyhar.components.embedder_support.view.ContentView;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.KeyboardVisibilityDelegate;
+import org.monyhar.ui.modaldialog.DialogDismissalCause;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.modaldialog.ModalDialogManager.ModalDialogType;
+import org.monyhar.ui.modaldialog.ModalDialogProperties;
+import org.monyhar.ui.modaldialog.SimpleModalDialogController;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.util.TokenHolder;
+import org.monyhar.weblayer_private.interfaces.BrowserEmbeddabilityMode;
 
 /**
  * BrowserViewController controls the set of Views needed to show the WebContents.

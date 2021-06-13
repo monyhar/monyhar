@@ -90,8 +90,8 @@ function getActiveSubmitElement_(form) {
 /**
  * A set of all the text categories of <input>'s type attribute.
  * This set is based on:
- *   https://cs.chromium.org/chromium/src/third_party/blink/renderer/core/html/forms/text_field_input_type.h
- *   https://cs.chromium.org/chromium/src/third_party/blink/renderer/core/html/forms/base_text_input_type.h
+ *   https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/core/html/forms/text_field_input_type.h
+ *   https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/core/html/forms/base_text_input_type.h
  * "password" is not in the map because it makes the <form> invalid.
  * @type {Set<string>}
  * @private
@@ -126,7 +126,7 @@ function isInDefaultState_(element) {
  * Looks for a suitable search text field in |form|. Returns undefined if |form|
  * is not a valid searchable <form>. The code is based on the function with same
  * name in:
- *   https://cs.chromium.org/chromium/src/third_party/blink/renderer/core/exported/web_searchable_form_data.cc
+ *   https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/core/exported/web_searchable_form_data.cc
  *
  * The criteria for a valid searchable <form>:
  *   1. Has no <textarea>;
@@ -170,7 +170,7 @@ function findSuitableSearchInputElement_(form) {
 /**
  * Generates a searchable URL from |form| if it's a valid searchable <form>.
  * The code is based on the function with same name in:
- *   https://cs.chromium.org/chromium/src/third_party/blink/renderer/core/exported/web_searchable_form_data.cc
+ *   https://cs.monyhar.org/monyhar/src/third_party/blink/renderer/core/exported/web_searchable_form_data.cc
  *
  * @param {Element} form The <form> element.
  * @return {string|undefined} The searchable URL, or undefined if |form| is not

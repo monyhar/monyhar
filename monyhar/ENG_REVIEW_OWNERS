@@ -1,12 +1,12 @@
 # Current list of eng reviewers mostly for the purpose of reviewing
 # addings of top-level and third-party directories.
 
-# NOTE: keep this in sync with lsc-owners-override@chromium.org owners
-creis@chromium.org
-haraken@chromium.org
-jam@chromium.org
-jochen@chromium.org
-pinkerton@chromium.org
-sky@chromium.org
-yfriedman@chromium.org
-# NOTE: keep this in sync with lsc-owners-override@chromium.org owners
+# NOTE: keep this in sync with lsc-owners-override@monyhar.org owners
+creis@monyhar.org
+haraken@monyhar.org
+jam@monyhar.org
+jochen@monyhar.org
+pinkerton@monyhar.org
+sky@monyhar.org
+yfriedman@monyhar.org
+# NOTE: keep this in sync with lsc-owners-override@monyhar.org owners

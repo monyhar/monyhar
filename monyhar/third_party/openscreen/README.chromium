@@ -1,6 +1,6 @@
 Name: Open Screen Protocol Library
 Short Name: openscreen
-URL: https://chromium.googlesource.com/openscreen
+URL: https://monyhar.googlesource.com/openscreen
 Version: 0
 Revision: 9499a256bc609e9efdf15a268fd047127870af41
 License: BSD
@@ -17,9 +17,9 @@ https://github.com/webscreens/openscreenprotocol/.
 Update with:
 git log --date=short --no-merges --format='%ad %ae %s' -- third_party/openscreen
 
-2019-10-21 mfoltz@chromium.org Update README.chromium
-2019-10-21 mfoltz@chromium.org Adds a README.md
-2019-09-30 efoo@chromium.org Add # COMPONENT: Internals>Cast>Providers as per suggested by mfoltz@
-2019-09-26 efoo@chromium.org Add Component: Blink>PresentationAPI
+2019-10-21 mfoltz@monyhar.org Update README.monyhar
+2019-10-21 mfoltz@monyhar.org Adds a README.md
+2019-09-30 efoo@monyhar.org Add # COMPONENT: Internals>Cast>Providers as per suggested by mfoltz@
+2019-09-26 efoo@monyhar.org Add Component: Blink>PresentationAPI
 
 

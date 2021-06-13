@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.user_data;
+package org.monyhar.chrome.browser.autofill_assistant.user_data;
 
 import android.app.Activity;
 import android.view.View;
@@ -10,27 +10,27 @@ import android.view.ViewGroup;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.browser.autofill.prefeditor.EditorDialog;
-import org.chromium.chrome.browser.autofill.settings.AddressEditor;
-import org.chromium.chrome.browser.autofill.settings.CardEditor;
-import org.chromium.chrome.browser.autofill_assistant.generic_ui.AssistantValue;
-import org.chromium.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataModel.AddressModel;
-import org.chromium.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataModel.ContactModel;
-import org.chromium.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataModel.LoginChoiceModel;
-import org.chromium.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataModel.PaymentInstrumentModel;
-import org.chromium.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantAdditionalSection.Delegate;
-import org.chromium.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantAdditionalSectionContainer;
-import org.chromium.chrome.browser.payments.ContactEditor;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.version.ChromeVersionInfo;
-import org.chromium.components.payments.BasicCardUtils;
-import org.chromium.components.payments.MethodStrings;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.payments.mojom.PaymentMethodData;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.browser.autofill.prefeditor.EditorDialog;
+import org.monyhar.chrome.browser.autofill.settings.AddressEditor;
+import org.monyhar.chrome.browser.autofill.settings.CardEditor;
+import org.monyhar.chrome.browser.autofill_assistant.generic_ui.AssistantValue;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataModel.AddressModel;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataModel.ContactModel;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataModel.LoginChoiceModel;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantCollectUserDataModel.PaymentInstrumentModel;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantAdditionalSection.Delegate;
+import org.monyhar.chrome.browser.autofill_assistant.user_data.additional_sections.AssistantAdditionalSectionContainer;
+import org.monyhar.chrome.browser.payments.ContactEditor;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.version.ChromeVersionInfo;
+import org.monyhar.components.payments.BasicCardUtils;
+import org.monyhar.components.payments.MethodStrings;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.payments.mojom.PaymentMethodData;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
 
 import java.util.ArrayList;
 import java.util.Collections;

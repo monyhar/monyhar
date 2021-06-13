@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private.interfaces;
+package org.monyhar.weblayer_private.interfaces;
 
-import org.chromium.weblayer_private.interfaces.IBrowserClient;
-import org.chromium.weblayer_private.interfaces.IObjectWrapper;
-import org.chromium.weblayer_private.interfaces.IProfile;
-import org.chromium.weblayer_private.interfaces.ITab;
-import org.chromium.weblayer_private.interfaces.IUrlBarController;
+import org.monyhar.weblayer_private.interfaces.IBrowserClient;
+import org.monyhar.weblayer_private.interfaces.IObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.IProfile;
+import org.monyhar.weblayer_private.interfaces.ITab;
+import org.monyhar.weblayer_private.interfaces.IUrlBarController;
 
 import java.util.List;
 

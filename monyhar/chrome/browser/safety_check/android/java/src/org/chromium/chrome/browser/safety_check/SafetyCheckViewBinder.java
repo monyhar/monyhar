@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.safety_check;
+package org.monyhar.chrome.browser.safety_check;
 
 import android.content.Context;
 import android.view.View;
@@ -10,11 +10,11 @@ import android.view.View;
 import androidx.annotation.VisibleForTesting;
 import androidx.preference.Preference;
 
-import org.chromium.chrome.browser.safety_check.SafetyCheckProperties.PasswordsState;
-import org.chromium.chrome.browser.safety_check.SafetyCheckProperties.SafeBrowsingState;
-import org.chromium.chrome.browser.safety_check.SafetyCheckProperties.UpdatesState;
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.chrome.browser.safety_check.SafetyCheckProperties.PasswordsState;
+import org.monyhar.chrome.browser.safety_check.SafetyCheckProperties.SafeBrowsingState;
+import org.monyhar.chrome.browser.safety_check.SafetyCheckProperties.UpdatesState;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 class SafetyCheckViewBinder {
     private static final String PASSWORDS_KEY = "passwords";

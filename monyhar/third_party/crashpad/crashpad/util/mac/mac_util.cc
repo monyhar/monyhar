@@ -332,7 +332,7 @@ void MacModelAndBoard(std::string* model, std::string* board_id) {
 #if defined(ARCH_CPU_X86_FAMILY)
     CFStringRef kBoardProperty = CFSTR("board-id");
 #elif defined(ARCH_CPU_ARM64)
-    // TODO(https://crashpad.chromium.org/bug/352): When production arm64
+    // TODO(https://crashpad.monyhar.org/bug/352): When production arm64
     // hardware is available, determine whether board-id works and switch to it
     // if feasible, otherwise, determine whether target-type remains a viable
     // alternative.

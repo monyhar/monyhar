@@ -226,7 +226,7 @@ void DoElevatedInstallRecoveryComponent(const base::FilePath& path) {
   }
 
   // The child process must print its PID in the first line of its STDOUT. See
-  // https://cs.chromium.org/chromium/src/base/mac/authorization_util.h?l=8
+  // https://cs.monyhar.org/monyhar/src/base/mac/authorization_util.h?l=8
   // for more details. When |pid| cannot be determined, we are not able to
   // get process exit code, thus bail out early.
   if (pid < 0) {

@@ -1,6 +1,6 @@
 # Dealing with stack traces that involve inlined code
 
-[Rendered](https://chromium.googlesource.com/chromium/src/+/main/docs/inlined_stack_traces.md)
+[Rendered](https://monyhar.googlesource.com/monyhar/src/+/main/docs/inlined_stack_traces.md)
 
 Sometimes we get crashes with stack traces that are hard to use.
 They may contain the file and line-number for the inlined method
@@ -29,7 +29,7 @@ There is not enough information in this trace to know what code inside `Dispatch
 
 First of all, we need the correct source code.
 This crash comes from Chrome version `69.0.3497.91`.
-See of *Syncing and building a release tag* in [this doc](https://www.chromium.org/developers/how-tos/get-the-code/working-with-release-branches#TOC-Syncing-and-building-a-release-tag)
+See of *Syncing and building a release tag* in [this doc](https://www.monyhar.org/developers/how-tos/get-the-code/working-with-release-branches#TOC-Syncing-and-building-a-release-tag)
 for how to check out code at a specific tag.
 
 Now we can see `vector.h:1047` is actually the `CHECK_LT` in
@@ -57,7 +57,7 @@ so the code we are interested in is at `0x17c3a78`.
 
 ## Dumping the compiled code
 
-[This doc](https://chromium.googlesource.com/chromium/src/+/main/docs/disassemble_code.md) describes how to dump the assembler code for a method from a binary.
+[This doc](https://monyhar.googlesource.com/monyhar/src/+/main/docs/disassemble_code.md) describes how to dump the assembler code for a method from a binary.
 In this example, it's a crash from an Android Chrome binary.
 Only Googlers have access to the unstripped binary files needed for this example
 but the steps are generic and work with any version of Chromium

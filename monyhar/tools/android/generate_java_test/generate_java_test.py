@@ -6,18 +6,18 @@
 This script helps to generate Java instrumentation tests and/or Unit test
 (robolectric) for new feature Other than that, it helps to add your source
 file (foo.java) and test files (footest.java) to gn (java_sources.gni)
-Also, it will generate OWNER file with your ldap@chromium.org if it doesn't exit
+Also, it will generate OWNER file with your ldap@monyhar.org if it doesn't exit
 
 Where to run?
 Anywhere in the repo as the tool can find the abstract paths.
 
 How to run? sample:
 If you are building the following example like
-"chrome/android/java/src/org/chromium/chrome/browser/foo/Foo.java"
+"chrome/android/java/src/org/monyhar/chrome/browser/foo/Foo.java"
 
 Use command:
 python generate_java_test.py --instrumentation --unittest --source \
-"chrome/android/java/src/org/chromium/chrome/browser/foo/Foo.java"
+"chrome/android/java/src/org/monyhar/chrome/browser/foo/Foo.java"
    -i, --instrumentation   generate instrumentation test file
    -u, --unittest          generate unittest file
    Default will generate both of them
@@ -54,8 +54,8 @@ package %s;
 
 import org.junit.runner.RunWith;
 
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.ui.test.util.DummyUiActivityTestCase;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.ui.test.util.DummyUiActivityTestCase;
 
 /** Instrumentation tests for {@link %s}. */
 @RunWith(ChromeJUnit4ClassRunner.class)
@@ -75,7 +75,7 @@ package %s;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
 
 /** Unit tests for {@link %s}. */
 @RunWith(BaseRobolectricTestRunner.class)
@@ -101,7 +101,7 @@ junittest_gni = os.path.join(
 HELP_MESSAGE = '''
 Wrong --source pattern! Please use the sample below
 generate_create_test.py --unittest --source \
-chrome/android/java/src/org/chromium/chrome/browser/foo/Foo.java
+chrome/android/java/src/org/monyhar/chrome/browser/foo/Foo.java
 '''
 
 
@@ -142,7 +142,7 @@ def GetPackageAndFile(source):
 #crbug/950783
   matchSource = re.match(
       "chrome\/android\/java\/src\/" +
-      "(org\/chromium\/chrome\/browser\/.*\/?)\/(.*)\.java", source)
+      "(org\/monyhar\/chrome\/browser\/.*\/?)\/(.*)\.java", source)
 
   if not matchSource:
     print(failmsg(HELP_MESSAGE))
@@ -291,7 +291,7 @@ def main():
       "--source",
       type=str,
       help="source of java code" +
-      "like chrome/android/java/src/org/chromium/chrome/browser/foo/Foo.java",
+      "like chrome/android/java/src/org/monyhar/chrome/browser/foo/Foo.java",
       required=True)
 
   args = parser.parse_args()
@@ -328,21 +328,21 @@ python generate_java_test.py -h
 python generate_java_test.py --instrumentation
 python generate_java_test.py --unittest
 python generate_java_test.py --instrumentation --unittest --source\
-"chrome/android/java/src/org/chromium/chrome/browser/foo/Foo.java"
+"chrome/android/java/src/org/monyhar/chrome/browser/foo/Foo.java"
 
 * good commands *
 python generate_java_test.py --instrumentation --unittest --source\
-"chrome/android/java/src/org/chromium/chrome/browser/foo/Foo.java"
+"chrome/android/java/src/org/monyhar/chrome/browser/foo/Foo.java"
 python generate_java_test.py --source\
-"chrome/android/java/src/org/chromium/chrome/browser/foo/Foo.java"
+"chrome/android/java/src/org/monyhar/chrome/browser/foo/Foo.java"
 python generate_java_test.py --unittest --source\
-"chrome/android/java/src/org/chromium/chrome/browser/foo/Foo.java"
+"chrome/android/java/src/org/monyhar/chrome/browser/foo/Foo.java"
 python generate_java_test.py --instrumentation --source\
-"chrome/android/java/src/org/chromium/chrome/browser/foo/Foo.java"
+"chrome/android/java/src/org/monyhar/chrome/browser/foo/Foo.java"
 
 * File exists - run twice *
 python generate_java_test.py --source\
-"chrome/android/java/src/org/chromium/chrome/browser/foo/Foo.java"
+"chrome/android/java/src/org/monyhar/chrome/browser/foo/Foo.java"
 python generate_java_test.py --source\
-"chrome/android/java/src/org/chromium/chrome/browser/foo/Foo.java"
+"chrome/android/java/src/org/monyhar/chrome/browser/foo/Foo.java"
 '''

@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr.rules;
+package org.monyhar.chrome.browser.vr.rules;
 
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.chrome.browser.vr.rules.XrActivityRestriction.SupportedActivity;
-import org.chromium.chrome.browser.vr.util.ArTestRuleUtils;
-import org.chromium.chrome.test.ChromeTabbedActivityTestRule;
+import org.monyhar.chrome.browser.vr.rules.XrActivityRestriction.SupportedActivity;
+import org.monyhar.chrome.browser.vr.util.ArTestRuleUtils;
+import org.monyhar.chrome.test.ChromeTabbedActivityTestRule;
 
 /**
  * AR extension of ChromeTabbedActivityTestRule. Applies ChromeTabbedActivityTestRule then opens up

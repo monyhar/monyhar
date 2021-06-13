@@ -386,7 +386,7 @@ class WPTMetadataBuilder(object):
         return test_name_part + variant
 
     def get_metadata_filename_and_contents(self,
-                                           chromium_test_name,
+                                           monyhar_test_name,
                                            test_status_bitmap=0):
         """Determines the metadata filename and contents for the specified test.
 
@@ -395,7 +395,7 @@ class WPTMetadataBuilder(object):
         contents of the metadata file will also differ for those two cases.
 
         Args:
-            chromium_test_name: A Chromium test name from the expectation file,
+            monyhar_test_name: A Chromium test name from the expectation file,
                 which starts with `external/wpt`.
             test_status_bitmap: An integer containing additional data about the
                 status, such as enumerating flaky statuses, or whether a test has
@@ -407,8 +407,8 @@ class WPTMetadataBuilder(object):
             test does not need a metadata file.
         """
         # Ignore expectations for non-WPT tests
-        if (not chromium_test_name
-                or not chromium_test_name.startswith('external/wpt')):
+        if (not monyhar_test_name
+                or not monyhar_test_name.startswith('external/wpt')):
             return None, None
 
         # Also ignore any test annotated to use checked-in metadata. By
@@ -416,19 +416,19 @@ class WPTMetadataBuilder(object):
         # be built by this code.
         if test_status_bitmap & USE_CHECKED_IN_METADATA:
             _log.debug("Using checked-in metadata for test %s" %
-                       chromium_test_name)
+                       monyhar_test_name)
             return None, None
 
         # Split the test name by directory. We omit the first 2 entries because
         # they are 'external' and 'wpt' and these don't exist in the WPT's test
         # names.
-        wpt_test_name_parts = chromium_test_name.split("/")[2:]
+        wpt_test_name_parts = monyhar_test_name.split("/")[2:]
         # The WPT test name differs from the Chromium test name in that the WPT
         # name omits `external/wpt`.
         wpt_test_name = "/".join(wpt_test_name_parts)
 
         # Check if this is a test file or a test directory
-        is_test_dir = chromium_test_name.endswith("/")
+        is_test_dir = monyhar_test_name.endswith("/")
         metadata_filename = None
         metadata_file_contents = None
         if is_test_dir:

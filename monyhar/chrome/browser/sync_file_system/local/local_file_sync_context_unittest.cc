@@ -50,7 +50,7 @@ namespace sync_file_system {
 
 namespace {
 const char kOrigin1[] = "http://example.com";
-const char kOrigin2[] = "http://chromium.org";
+const char kOrigin2[] = "http://monyhar.org";
 }
 
 class LocalFileSyncContextTest : public testing::Test {

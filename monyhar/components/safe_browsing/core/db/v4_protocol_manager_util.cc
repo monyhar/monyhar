@@ -128,7 +128,7 @@ PlatformType GetCurrentPlatformType() {
   // ANDROID_PLATFORM here.
   //
   // This should ideally never compile but it is getting compiled on Android.
-  // See: https://bugs.chromium.org/p/chromium/issues/detail?id=621647
+  // See: https://bugs.monyhar.org/p/monyhar/issues/detail?id=621647
   // TODO(vakh): Once that bug is fixed, this should be removed. If we leave
   // the platform_type empty, the server won't recognize the request and
   // return an error response which will pollute our UMA metrics.

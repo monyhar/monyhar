@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package com.android.webview.chromium;
+package com.android.webview.monyhar;
 
 import android.annotation.SuppressLint;
 import android.os.Build;
@@ -12,11 +12,11 @@ import android.webkit.WebSettings.PluginState;
 import android.webkit.WebSettings.RenderPriority;
 import android.webkit.WebSettings.ZoomDensity;
 
-import org.chromium.android_webview.AwSettings;
+import org.monyhar.android_webview.AwSettings;
 
 /**
  * Type adaptation layer between {@link android.webkit.WebSettings} and
- * {@link org.chromium.android_webview.AwSettings}.
+ * {@link org.monyhar.android_webview.AwSettings}.
  */
 @SuppressWarnings({"deprecation", "NoSynchronizedMethodCheck"})
 public class ContentSettingsAdapter extends android.webkit.WebSettings {

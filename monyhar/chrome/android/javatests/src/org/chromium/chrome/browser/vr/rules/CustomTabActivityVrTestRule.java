@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr.rules;
+package org.monyhar.chrome.browser.vr.rules;
 
 import android.support.test.InstrumentationRegistry;
 
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.base.CommandLine;
-import org.chromium.chrome.browser.customtabs.CustomTabActivityTestRule;
-import org.chromium.chrome.browser.customtabs.CustomTabsTestUtils;
-import org.chromium.chrome.browser.vr.TestVrShellDelegate;
-import org.chromium.chrome.browser.vr.rules.XrActivityRestriction.SupportedActivity;
-import org.chromium.chrome.browser.vr.util.VrTestRuleUtils;
+import org.monyhar.base.CommandLine;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivityTestRule;
+import org.monyhar.chrome.browser.customtabs.CustomTabsTestUtils;
+import org.monyhar.chrome.browser.vr.TestVrShellDelegate;
+import org.monyhar.chrome.browser.vr.rules.XrActivityRestriction.SupportedActivity;
+import org.monyhar.chrome.browser.vr.util.VrTestRuleUtils;
 
 /**
  * VR extension of CustomTabActivityTestRule. Applies CustomTabActivityTestRule then

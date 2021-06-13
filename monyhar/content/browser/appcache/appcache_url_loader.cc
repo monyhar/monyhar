@@ -232,7 +232,7 @@ void AppCacheURLLoader::OnResponseInfoLoaded(
   if (storage_->service()->storage() == storage_.get()) {
     // A resource that is expected to be in the appcache is missing.
     // If the 'check' fails, the corrupt appcache will be deleted.
-    // See http://code.google.com/p/chromium/issues/detail?id=50657
+    // See http://code.google.com/p/monyhar/issues/detail?id=50657
     storage_->service()->CheckAppCacheResponse(manifest_url_, cache_id_,
                                                entry_.response_id());
   }

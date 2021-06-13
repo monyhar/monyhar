@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_check;
+package org.monyhar.chrome.browser.password_check;
 
 import android.content.Context;
 import android.view.MenuItem;
@@ -10,16 +10,16 @@ import android.view.MenuItem;
 import androidx.annotation.VisibleForTesting;
 import androidx.lifecycle.LifecycleObserver;
 
-import org.chromium.chrome.browser.feedback.HelpAndFeedbackLauncher;
-import org.chromium.chrome.browser.password_check.helper.PasswordCheckChangePasswordHelper;
-import org.chromium.chrome.browser.password_check.helper.PasswordCheckIconHelper;
-import org.chromium.chrome.browser.password_check.internal.R;
-import org.chromium.chrome.browser.password_manager.settings.PasswordAccessReauthenticationHelper;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.browser_ui.settings.SettingsLauncher;
-import org.chromium.components.favicon.LargeIconBridge;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.chrome.browser.feedback.HelpAndFeedbackLauncher;
+import org.monyhar.chrome.browser.password_check.helper.PasswordCheckChangePasswordHelper;
+import org.monyhar.chrome.browser.password_check.helper.PasswordCheckIconHelper;
+import org.monyhar.chrome.browser.password_check.internal.R;
+import org.monyhar.chrome.browser.password_manager.settings.PasswordAccessReauthenticationHelper;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.browser_ui.settings.SettingsLauncher;
+import org.monyhar.components.favicon.LargeIconBridge;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
 
 /**
  * Creates the PasswordCheckComponentUi. This class is responsible for managing the UI for the check
@@ -93,7 +93,7 @@ class PasswordCheckCoordinator implements PasswordCheckComponentUi, LifecycleObs
         PasswordCheckIconHelper iconHelper = new PasswordCheckIconHelper(
                 new LargeIconBridge(Profile.getLastUsedRegularProfile()),
                 mFragmentView.getResources().getDimensionPixelSize(
-                        org.chromium.chrome.browser.ui.favicon.R.dimen.default_favicon_size));
+                        org.monyhar.chrome.browser.ui.favicon.R.dimen.default_favicon_size));
         mMediator = new PasswordCheckMediator(
                 changePasswordHelper, mReauthenticationHelper, mSettingsLauncher, iconHelper);
     }

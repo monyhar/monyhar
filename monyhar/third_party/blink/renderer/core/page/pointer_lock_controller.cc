@@ -250,7 +250,7 @@ DOMException* PointerLockController::ConvertResultToException(
       return MakeGarbageCollected<DOMException>(
           DOMExceptionCode::kUnknownError,
           "If you see this error we have a bug. Please report this bug to "
-          "chromium.");
+          "monyhar.");
   }
 }
 

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.permissions;
+package org.monyhar.components.permissions;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -11,10 +11,10 @@ import android.widget.TextView;
 
 import androidx.core.widget.TextViewCompat;
 
-import org.chromium.components.browser_ui.modaldialog.R;
-import org.chromium.ui.LayoutInflaterUtils;
-import org.chromium.ui.modaldialog.ModalDialogProperties;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.components.browser_ui.modaldialog.R;
+import org.monyhar.ui.LayoutInflaterUtils;
+import org.monyhar.ui.modaldialog.ModalDialogProperties;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * This class creates the model for permission dialog.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import android.view.InputDevice;
 import android.view.MotionEvent;
@@ -10,7 +10,7 @@ import android.view.MotionEvent.PointerCoords;
 import android.view.MotionEvent.PointerProperties;
 import android.view.View;
 
-import org.chromium.content_public.browser.MotionEventSynthesizer;
+import org.monyhar.content_public.browser.MotionEventSynthesizer;
 
 /**
  * Injects synthetic touch events. All the coordinates are of physical unit.

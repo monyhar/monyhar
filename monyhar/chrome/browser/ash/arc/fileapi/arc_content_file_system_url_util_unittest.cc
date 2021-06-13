@@ -24,7 +24,7 @@ TEST(ArcContentFileSystemUrlUtilTest, EncodeAndDecodeExternalFileUrl) {
     EXPECT_EQ(src, result);
   }
   {
-    GURL src("content://org.chromium.foo/bar/baz");
+    GURL src("content://org.monyhar.foo/bar/baz");
     GURL dest = ArcUrlToExternalFileUrl(src);
     EXPECT_TRUE(dest.is_valid());
     EXPECT_EQ(content::kExternalFileScheme, dest.scheme());
@@ -33,7 +33,7 @@ TEST(ArcContentFileSystemUrlUtilTest, EncodeAndDecodeExternalFileUrl) {
     EXPECT_EQ(src, result);
   }
   {
-    GURL src("content://org.chromium.foo/bar/%19%20%21");
+    GURL src("content://org.monyhar.foo/bar/%19%20%21");
     GURL dest = ArcUrlToExternalFileUrl(src);
     EXPECT_TRUE(dest.is_valid());
     EXPECT_EQ(content::kExternalFileScheme, dest.scheme());
@@ -42,7 +42,7 @@ TEST(ArcContentFileSystemUrlUtilTest, EncodeAndDecodeExternalFileUrl) {
     EXPECT_EQ(src, result);
   }
   {
-    GURL src("content://org.chromium.foo/!@#$%^&*()_+|~-=\\`[]{};':\"<>?,./");
+    GURL src("content://org.monyhar.foo/!@#$%^&*()_+|~-=\\`[]{};':\"<>?,./");
     GURL dest = ArcUrlToExternalFileUrl(src);
     EXPECT_TRUE(dest.is_valid());
     EXPECT_EQ(content::kExternalFileScheme, dest.scheme());
@@ -55,7 +55,7 @@ TEST(ArcContentFileSystemUrlUtilTest, EncodeAndDecodeExternalFileUrl) {
         0x307b,  // HIRAGANA_LETTER_HO
         0x3052,  // HIRAGANA_LETTER_GE
     };
-    GURL src("content://org.chromium.foo/" + base::UTF16ToUTF8(utf16_string));
+    GURL src("content://org.monyhar.foo/" + base::UTF16ToUTF8(utf16_string));
     GURL dest = ArcUrlToExternalFileUrl(src);
     EXPECT_TRUE(dest.is_valid());
     EXPECT_EQ(content::kExternalFileScheme, dest.scheme());
@@ -66,7 +66,7 @@ TEST(ArcContentFileSystemUrlUtilTest, EncodeAndDecodeExternalFileUrl) {
 }
 
 TEST(ArcContentFileSystemUrlUtilTest, FileSystemUrlToArcUrl) {
-  GURL arc_url("content://org.chromium.foo/bar/baz");
+  GURL arc_url("content://org.monyhar.foo/bar/baz");
 
   base::FilePath path =
       base::FilePath(kContentFileSystemMountPointPath)
@@ -80,7 +80,7 @@ TEST(ArcContentFileSystemUrlUtilTest, FileSystemUrlToArcUrl) {
 }
 
 TEST(ArcContentFileSystemUrlUtilTest, PathToArcUrl) {
-  GURL arc_url("content://org.chromium.foo/bar/baz");
+  GURL arc_url("content://org.monyhar.foo/bar/baz");
 
   base::FilePath path =
       base::FilePath(kContentFileSystemMountPointPath)

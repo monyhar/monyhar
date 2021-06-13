@@ -63,12 +63,12 @@ Use the following datatypes to represent origins:
 - Mojo: `url.mojom.Origin`
   (instead of `url.mojom.Url`).
   Remember to
-  [validate data](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/mojo.md#Validate-privilege_presuming-data-received-over-IPC)
+  [validate data](https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/security/mojo.md#Validate-privilege_presuming-data-received-over-IPC)
   received over IPC from untrustworthy processes
   or even better
-  [avoid sending origins](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/mojo.md#Do-not-send-unnecessary-or-privilege_presuming-data)
+  [avoid sending origins](https://monyhar.googlesource.com/monyhar/src/+/HEAD/docs/security/mojo.md#Do-not-send-unnecessary-or-privilege_presuming-data)
   in the first place.
-- Java: `org.chromium.url.Origin`
+- Java: `org.monyhar.url.Origin`
   (see also `url::Origin::FromJavaObject`
   and `url::Origin::CreateJavaObject`).
 

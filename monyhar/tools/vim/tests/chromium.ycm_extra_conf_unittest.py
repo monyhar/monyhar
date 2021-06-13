@@ -3,7 +3,7 @@
 # Copyright 2015 The Chromium Authors. All rights reserved.
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
-"""Tests for chromium.ycm_extra_conf.
+"""Tests for monyhar.ycm_extra_conf.
 
 These tests should be getting picked up by the PRESUBMIT.py in /tools/vim.
 Currently the tests only run on Linux and require 'ninja' to be available on
@@ -124,7 +124,7 @@ class Chromium_ycmExtraConfTest(unittest.TestCase):
     self.test_data_path = os.path.join(self.actual_chrome_root, 'tools', 'vim',
                                        'tests', 'data')
     self.ycm_extra_conf = imp.load_source('ycm_extra_conf',
-                                          'chromium.ycm_extra_conf.py')
+                                          'monyhar.ycm_extra_conf.py')
     self.test_root = tempfile.mkdtemp()
     self.SetUpFakeChromeTreeBelowPath()
 
@@ -377,7 +377,7 @@ class Chromium_ycmExtraConfTest(unittest.TestCase):
 
 
 if __name__ == '__main__':
-  if not os.path.isfile('chromium.ycm_extra_conf.py'):
+  if not os.path.isfile('monyhar.ycm_extra_conf.py'):
     print('The test must be run from src/tools/vim/ directory')
     sys.exit(1)
   unittest.main()

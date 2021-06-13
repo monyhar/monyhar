@@ -68,7 +68,7 @@ suite('RuntimeHostPermissions', function() {
     element.set('permissions.hostAccess', HostAccess.ON_SPECIFIC_SITES);
     element.set('permissions.hosts', [
       {host: 'https://example.com', granted: true},
-      {host: 'https://chromium.org', granted: true}
+      {host: 'https://monyhar.org', granted: true}
     ]);
     flush();
     expectEquals(HostAccess.ON_SPECIFIC_SITES, selectHostAccess.selected);
@@ -289,7 +289,7 @@ suite('RuntimeHostPermissions', function() {
       hasAllHosts: true,
       hosts: [
         {host: 'https://example.com', granted: true},
-        {host: 'https://chromium.org', granted: true},
+        {host: 'https://monyhar.org', granted: true},
         {host: '*://*.com/*', granted: false},
       ],
     };
@@ -315,7 +315,7 @@ suite('RuntimeHostPermissions', function() {
         1);
     return delegate.whenCalled('removeRuntimeHostPermission').then((args) => {
       expectEquals(ITEM_ID, args[0] /* id */);
-      expectEquals('https://chromium.org', args[1] /* site */);
+      expectEquals('https://monyhar.org', args[1] /* site */);
       expectFalse(actionMenu.open);
     });
   });
@@ -326,7 +326,7 @@ suite('RuntimeHostPermissions', function() {
       hasAllHosts: true,
       hosts: [
         {host: 'https://example.com', granted: true},
-        {host: 'https://chromium.org', granted: true},
+        {host: 'https://monyhar.org', granted: true},
         {host: '*://*.com/*', granted: false},
       ],
     };
@@ -347,6 +347,6 @@ suite('RuntimeHostPermissions', function() {
     assertTrue(!!dialog);
     expectTrue(dialog.$.dialog.open);
     expectFalse(dialog.updateHostAccess);
-    expectEquals('https://chromium.org', dialog.currentSite);
+    expectEquals('https://monyhar.org', dialog.currentSite);
   });
 });

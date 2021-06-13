@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Arc histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -23,14 +23,14 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.AbiMigration.BootTime" units="ms"
     expires_after="2021-10-10">
-  <owner>vraheja@chromium.org</owner>
+  <owner>vraheja@monyhar.org</owner>
   <owner>arc-core@google.com</owner>
   <summary>Time taken for ARC to boot during an Abi Migration event.</summary>
 </histogram>
 
 <histogram name="Arc.AbiMigration.DowngradeDelay" units="ms"
     expires_after="2021-10-10">
-  <owner>vraheja@chromium.org</owner>
+  <owner>vraheja@monyhar.org</owner>
   <owner>arc-core@google.com</owner>
   <summary>
     Time taken by ArcAbiMigrationService specifically to downgrade system
@@ -49,7 +49,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.AbiMigration.FailedAttempts" units="units"
     expires_after="2021-10-10">
-  <owner>vraheja@chromium.org</owner>
+  <owner>vraheja@monyhar.org</owner>
   <owner>arc-core@google.com</owner>
   <summary>
     Records the number of failed attempts in trying to perform Primary Abi
@@ -59,8 +59,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.AccessibilityWithTalkBack" enum="BooleanEnabled"
     expires_after="2021-11-07">
-  <owner>hirokisato@chromium.org</owner>
-  <owner>sarakato@chromium.org</owner>
+  <owner>hirokisato@monyhar.org</owner>
+  <owner>sarakato@monyhar.org</owner>
   <summary>
     Whether the ARC window is opened with TalkBack enabled or not. Counted when
     a user opens a window or toggles the feature. Checked only when the spoken
@@ -70,9 +70,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.AdaptiveIconLoad.FromArcAppIcon"
     enum="BooleanIsAdaptiveIcon" expires_after="2020-12-31">
-  <owner>dominickn@chromium.org</owner>
+  <owner>dominickn@monyhar.org</owner>
   <owner>lgcheng@google.com</owner>
-  <owner>nancylingwang@chromium.org</owner>
+  <owner>nancylingwang@monyhar.org</owner>
   <summary>
     The adaptive Arc app icons are loaded from ArcAppIcon. Recorded whether the
     icon is the adaptive icon when the icon is loaded.
@@ -81,9 +81,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.AdaptiveIconLoad.FromArcDefaultAppIcon"
     enum="BooleanIsAdaptiveIcon" expires_after="2020-12-31">
-  <owner>dominickn@chromium.org</owner>
+  <owner>dominickn@monyhar.org</owner>
   <owner>lgcheng@google.com</owner>
-  <owner>nancylingwang@chromium.org</owner>
+  <owner>nancylingwang@monyhar.org</owner>
   <summary>
     The adaptive Arc app icons are loaded from ArcAppIcon for default Arc apps.
     Recorded whether the icon is the adaptive icon when the icon is loaded.
@@ -92,9 +92,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.AdaptiveIconLoad.FromNonArcAppIcon"
     enum="BooleanIsAdaptiveIcon" expires_after="2020-12-31">
-  <owner>dominickn@chromium.org</owner>
+  <owner>dominickn@monyhar.org</owner>
   <owner>lgcheng@google.com</owner>
-  <owner>nancylingwang@chromium.org</owner>
+  <owner>nancylingwang@monyhar.org</owner>
   <summary>
     The adaptive Arc app icons are loaded from Non ArcAppIcon. Recorded whether
     the icon is the adaptive icon when the icon is loaded.
@@ -103,8 +103,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.AdbSideloadingEnablingScreen"
     enum="AdbSideloadingPromptEvent" expires_after="M96">
-  <owner>victorhsieh@chromium.org</owner>
-  <owner>tbuckley@chromium.org</owner>
+  <owner>victorhsieh@monyhar.org</owner>
+  <owner>tbuckley@monyhar.org</owner>
   <summary>
     Record user's choice or error during ADB sideloading opt-in UI after reboot.
   </summary>
@@ -147,8 +147,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.AppInstalledReason" enum="InstallationCounterReasonEnum"
     expires_after="2021-11-07">
-  <owner>robsc@chromium.org</owner>
-  <owner>napper@chromium.org</owner>
+  <owner>robsc@monyhar.org</owner>
+  <owner>napper@monyhar.org</owner>
   <summary>
     Record a reason when an arc application completes installation successfully,
     including policy based applications, default applications and user prompted
@@ -158,8 +158,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.AppListRecommendedImp.AllImpression" units="count"
     expires_after="2021-08-09">
-  <owner>robsc@chromium.org</owner>
-  <owner>napper@chromium.org</owner>
+  <owner>robsc@monyhar.org</owner>
+  <owner>napper@monyhar.org</owner>
   <summary>
     Record a count of an impression of FAR result. This is a count _any_ time
     it's shown, even for a millisecond.
@@ -168,8 +168,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.AppListRecommendedImp.CountedImpression" units="count"
     expires_after="2020-10-04">
-  <owner>robsc@chromium.org</owner>
-  <owner>napper@chromium.org</owner>
+  <owner>robsc@monyhar.org</owner>
+  <owner>napper@monyhar.org</owner>
   <summary>
     Record a count of an impression of FAR result. This is a count of heuristic
     real impressions: a new showing after a while, a longer showing, etc.
@@ -178,8 +178,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.AppShortcuts.BuildMenuTime" units="ms"
     expires_after="2021-08-09">
-  <owner>mmourgos@chromium.org</owner>
-  <owner>newcomer@chromium.org</owner>
+  <owner>mmourgos@monyhar.org</owner>
+  <owner>newcomer@monyhar.org</owner>
   <summary>
     Record the time to build ARC app shortcut items on menu model. We get the
     needed metadata from Android and decode icons in the utility process. It is
@@ -200,8 +200,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.AppUninstallReason" enum="UninstallCounterReasonEnum"
     expires_after="2021-11-21">
-  <owner>robsc@chromium.org</owner>
-  <owner>napper@chromium.org</owner>
+  <owner>robsc@monyhar.org</owner>
+  <owner>napper@monyhar.org</owner>
   <summary>
     Record a reason why an application was uninstalled when uninstall is
     completed.
@@ -362,7 +362,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Arc.CompanionLibraryApisCounter"
     enum="CompanionLibraryApisList" expires_after="2021-11-21">
   <owner>sstan@google.com</owner>
-  <owner>bartfab@chromium.org</owner>
+  <owner>bartfab@monyhar.org</owner>
   <owner>giovax@google.com</owner>
   <summary>
     Records the number of times ChromeOS Companion Library API called. Counter
@@ -427,7 +427,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.CupsPrinting.PageCount" units="units"
     expires_after="2020-10-04">
-  <owner>skau@chromium.org</owner>
+  <owner>skau@monyhar.org</owner>
   <owner>vkuzkokov@google.com</owner>
   <summary>
     The number of pages sent to a native printer by ARC. Reported for every
@@ -521,8 +521,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.ExternalStorage.MountedMediaVisibility"
     enum="BooleanEnabled" expires_after="2021-10-31">
-  <owner>fukino@chromium.org</owner>
-  <owner>yusukes@chromium.org</owner>
+  <owner>fukino@monyhar.org</owner>
+  <owner>yusukes@monyhar.org</owner>
   <summary>
     When a removable media is mounted, whether Android apps have full access to
     the media. Users can allow full access in Settings. Changing the preference
@@ -532,8 +532,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.ExternalStorage.SetVisible" enum="BooleanEnabled"
     expires_after="2021-09-01">
-  <owner>fukino@chromium.org</owner>
-  <owner>yusukes@chromium.org</owner>
+  <owner>fukino@monyhar.org</owner>
+  <owner>yusukes@monyhar.org</owner>
   <summary>
     When a user clicks a toggle switch in &quot;External storage
     preferences&quot; screen, where the new value is ENABLED or not.
@@ -623,8 +623,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Arc.ImeCount" units="units" expires_after="2021-10-01">
-  <owner>yhanada@chromium.org</owner>
-  <owner>tetsui@chromium.org</owner>
+  <owner>yhanada@monyhar.org</owner>
+  <owner>tetsui@monyhar.org</owner>
   <summary>
     The number of IME apps installed. Collected at startup and when an IME app
     is installed or uninstalled.
@@ -793,8 +793,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.PlayStoreSearch.DefaultResultClickLatency" units="ms"
     expires_after="2021-12-31">
-  <owner>jennyz@chromium.org</owner>
-  <owner>newcomer@chromium.org</owner>
+  <owner>jennyz@monyhar.org</owner>
+  <owner>newcomer@monyhar.org</owner>
   <summary>
     Time between a default play store result being activated by user pressing
     ENTER key and being displayed.
@@ -803,7 +803,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.PlayStoreSearch.QueryTime" units="ms"
     expires_after="2021-10-31">
-  <owner>hejq@chromium.org</owner>
+  <owner>hejq@monyhar.org</owner>
   <summary>
     Time between sending an Play Store app discovery request and the storing
     returned results.
@@ -812,8 +812,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.PlayStoreSearch.ResultClickLatency" units="ms"
     expires_after="2021-12-31">
-  <owner>jennyz@chromium.org</owner>
-  <owner>newcomer@chromium.org</owner>
+  <owner>jennyz@monyhar.org</owner>
+  <owner>newcomer@monyhar.org</owner>
   <summary>
     Time between a play store result being clicked and being displayed.
   </summary>
@@ -821,7 +821,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.PlayStoreSearch.ReturnedAppsTotal" units="apps"
     expires_after="2021-10-10">
-  <owner>hejq@chromium.org</owner>
+  <owner>hejq@monyhar.org</owner>
   <summary>
     The total number of returned apps of a Play Store app discovery query.
   </summary>
@@ -829,7 +829,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.PlayStoreSearch.ReturnedInstantApps" units="apps"
     expires_after="2020-06-28">
-  <owner>hejq@chromium.org</owner>
+  <owner>hejq@monyhar.org</owner>
   <summary>
     The number of returned instant apps of a Play Store app discovery query.
   </summary>
@@ -837,7 +837,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.PlayStoreSearch.ReturnedUninstalledApps" units="apps"
     expires_after="2020-06-28">
-  <owner>hejq@chromium.org</owner>
+  <owner>hejq@monyhar.org</owner>
   <summary>
     The number of returned uninstalled apps of a Play Store app discovery query.
   </summary>
@@ -857,7 +857,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.PrintPreview.PreviewEvent" enum="PrintPreviewHelperEvents"
     expires_after="2021-10-04">
-  <owner>bmgordon@chromium.org</owner>
+  <owner>bmgordon@monyhar.org</owner>
   <owner>project-bolton@google.com</owner>
   <summary>
     Print preview events for ARC. Recorded when specific print preview events
@@ -870,7 +870,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in May 2021 and merged into PrintPreview.RenderAndGeneratePDFTime.
   </obsolete>
-  <owner>bmgordon@chromium.org</owner>
+  <owner>bmgordon@monyhar.org</owner>
   <owner>project-bolton@google.com</owner>
   <summary>
     Time taken for ARC to render and generate a PDF for print preview. Includes
@@ -885,7 +885,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     Removed in May 2021 and merged into
     PrintPreview.RenderAndGeneratePDFTimeAvgPerPage.
   </obsolete>
-  <owner>bmgordon@chromium.org</owner>
+  <owner>bmgordon@monyhar.org</owner>
   <owner>project-bolton@google.com</owner>
   <summary>
     Time taken for ARC to render and generate a PDF for print preview divided by
@@ -896,7 +896,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.PrintPreview.RendererError" enum="PrintPreviewFailureType"
     expires_after="2021-10-04">
-  <owner>bmgordon@chromium.org</owner>
+  <owner>bmgordon@monyhar.org</owner>
   <owner>project-bolton@google.com</owner>
   <summary>
     Count how frequently a set of pre-defined print preview errors occur for
@@ -909,7 +909,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed in May 2021 and merged into PrintPreview.RenderToPDFTime.
   </obsolete>
-  <owner>bmgordon@chromium.org</owner>
+  <owner>bmgordon@monyhar.org</owner>
   <owner>project-bolton@google.com</owner>
   <summary>Time taken for ARC to render a PDF for print preview.</summary>
 </histogram>
@@ -1214,7 +1214,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.Supervision.Transition.Result"
     enum="ArcSupervisionTransitionResult" expires_after="2022-01-31">
-  <owner>giovax@chromium.org</owner>
+  <owner>giovax@monyhar.org</owner>
   <owner>arc-commercial@google.com</owner>
   <summary>
     The result (success or the type of failure) of ARC supervision transition
@@ -1224,7 +1224,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.Supervision.Transition.Screen.Success.TimeDelta"
     units="ms" expires_after="2022-01-31">
-  <owner>giovax@chromium.org</owner>
+  <owner>giovax@monyhar.org</owner>
   <owner>arc-commercial@google.com</owner>
   <summary>
     Elapsed time for a successful supervision transition, during which the
@@ -1234,7 +1234,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.Supervision.Transition.Screen.Successful"
     enum="BooleanSuccess" expires_after="2022-01-31">
-  <owner>giovax@chromium.org</owner>
+  <owner>giovax@monyhar.org</owner>
   <owner>arc-commercial@google.com</owner>
   <summary>
     Whether supervision transition screen exited due to a successful transition.
@@ -1286,10 +1286,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Arc.UserInteraction" enum="ArcUserInteraction"
     expires_after="2021-10-17">
-  <owner>jhorwich@chromium.org</owner>
-  <owner>elijahtaylor@chromium.org</owner>
+  <owner>jhorwich@monyhar.org</owner>
+  <owner>elijahtaylor@monyhar.org</owner>
   <owner>shihuis@google.com</owner>
-  <owner>maajid@chromium.org</owner>
+  <owner>maajid@monyhar.org</owner>
   <summary>
     Counts user interactions with ARC by type, such as ARC app launches via the
     shelf or launcher.

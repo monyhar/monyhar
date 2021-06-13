@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.webfeed;
+package org.monyhar.chrome.browser.feed.webfeed;
 
-import static org.chromium.chrome.browser.feed.webfeed.WebFeedDialogProperties.DETAILS;
-import static org.chromium.chrome.browser.feed.webfeed.WebFeedDialogProperties.ILLUSTRATION;
-import static org.chromium.chrome.browser.feed.webfeed.WebFeedDialogProperties.TITLE;
+import static org.monyhar.chrome.browser.feed.webfeed.WebFeedDialogProperties.DETAILS;
+import static org.monyhar.chrome.browser.feed.webfeed.WebFeedDialogProperties.ILLUSTRATION;
+import static org.monyhar.chrome.browser.feed.webfeed.WebFeedDialogProperties.TITLE;
 
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * Class responsible for binding the model and the view for the WebFeed dialog.

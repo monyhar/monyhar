@@ -4,7 +4,7 @@
      found in the LICENSE file. -->
 
 <view
-    class="org.chromium.chrome.browser.ntp.search.SearchBoxContainerView"
+    class="org.monyhar.chrome.browser.ntp.search.SearchBoxContainerView"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -41,7 +41,7 @@
             android:singleLine="true"
             android:hint="@string/search_or_type_web_address" />
 
-        <org.chromium.ui.widget.ChipView
+        <org.monyhar.ui.widget.ChipView
             android:id="@+id/query_tiles_chip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -53,18 +53,18 @@
     <!-- This is a short term solution to have 2 Lens buttons in this xml to
          support different position variants in experiment.
          TODO(b/182195615): only keep one Lens button after the experiment. -->
-    <org.chromium.ui.widget.ChromeImageView
+    <org.monyhar.ui.widget.ChromeImageView
         android:id="@+id/lens_camera_button_start"
         style="@style/LocationBarActionButton"
         android:contentDescription="@string/accessibility_btn_lens_camera"
         android:src="@drawable/lens_camera_icon"
         android:visibility="gone" />
-    <org.chromium.ui.widget.ChromeImageView
+    <org.monyhar.ui.widget.ChromeImageView
         android:id="@+id/voice_search_button"
         style="@style/LocationBarActionButton"
         android:contentDescription="@string/accessibility_toolbar_btn_mic"
         android:src="@drawable/btn_mic" />
-    <org.chromium.ui.widget.ChromeImageView
+    <org.monyhar.ui.widget.ChromeImageView
         android:id="@+id/lens_camera_button_end"
         style="@style/LocationBarActionButton"
         android:contentDescription="@string/accessibility_btn_lens_camera"

@@ -41,7 +41,7 @@ ScopedJavaLocalRef<jobjectArray> ToJavaUnguessableTokenArray(
     JNIEnv* env,
     const std::vector<base::UnguessableToken>& tokens) {
   ScopedJavaLocalRef<jclass> j_unguessable_token_class =
-      base::android::GetClass(env, "org/chromium/base/UnguessableToken");
+      base::android::GetClass(env, "org/monyhar/base/UnguessableToken");
   jobjectArray joa = env->NewObjectArray(
       tokens.size(), j_unguessable_token_class.obj(), nullptr);
   base::android::CheckException(env);

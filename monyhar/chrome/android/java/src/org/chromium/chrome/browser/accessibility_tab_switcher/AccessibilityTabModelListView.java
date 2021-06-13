@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.accessibility_tab_switcher;
+package org.monyhar.chrome.browser.accessibility_tab_switcher;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 /**
  * A {@link ListView} class that is responsible for providing a visual interpretation
- * of a {@link org.chromium.chrome.browser.tabmodel.TabModel}.
+ * of a {@link org.monyhar.chrome.browser.tabmodel.TabModel}.
  */
 public class AccessibilityTabModelListView extends ListView {
     private final AccessibilityTabModelAdapter mAdapter;

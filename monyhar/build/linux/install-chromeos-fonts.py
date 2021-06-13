@@ -17,7 +17,7 @@ import sys
 URL_TEMPLATE = ('https://commondatastorage.googleapis.com/chromeos-localmirror/'
                 'distfiles/%(name)s-%(version)s.tar.bz2')
 
-# Taken from the media-fonts/<name> ebuilds in chromiumos-overlay.
+# Taken from the media-fonts/<name> ebuilds in monyharos-overlay.
 # noto-cjk used to be here, but is removed because fc-cache takes too long
 # regenerating the fontconfig cache (See crbug.com/697954.)
 # TODO(jshin): Add it back when the above issue can be avoided.
@@ -92,7 +92,7 @@ devices), fonts may be rendered with different subpixel rendering, subpixel
 positioning, or hinting settings. This may affect font metrics.
 
 Chrome OS's settings are stored in the media-libs/fontconfig package, which is
-at src/third_party/chromiumos-overlay/media-libs/fontconfig in a Chrome OS
+at src/third_party/monyharos-overlay/media-libs/fontconfig in a Chrome OS
 checkout. You can configure your system to match Chrome OS's defaults by
 creating or editing a ~/.fonts.conf file:
 
@@ -111,7 +111,7 @@ creating or editing a ~/.fonts.conf file:
 To load additional per-font configs (and assuming you have Chrome OS checked
 out), add the following immediately before the "</fontconfig>" line:
 
-  <include ignore_missing="yes">/path/to/src/third_party/chromiumos-overlay/media-libs/fontconfig/files/local.conf</include>
+  <include ignore_missing="yes">/path/to/src/third_party/monyharos-overlay/media-libs/fontconfig/files/local.conf</include>
 """)
 
   return 0

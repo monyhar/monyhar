@@ -8,7 +8,7 @@
 written as part of the GYP-&gt;GN migration.
 
 It is intended to be used by bots to make it easier to manage the configuration
-each bot builds (i.e., the configurations can be changed from chromium
+each bot builds (i.e., the configurations can be changed from monyhar
 commits), and to consolidate the list of all of the various configurations
 that Chromium is built in.
 
@@ -24,7 +24,7 @@ For more discussion of MB, see also [the design spec](design_spec.md).
 a list of files (e.g., the list of files in a patch on a trybot):
 
 ```
-mb analyze -c chromium_linux_rel //out/Release input.json output.json
+mb analyze -c monyhar_linux_rel //out/Release input.json output.json
 ```
 
 Either the `-c/--config` flag or the `--builder-group` and `-b/--builder` flags
@@ -100,7 +100,7 @@ the right sets of build args for the given bot. It takes arguments to
 specify a build config and a directory, then runs GN as appropriate:
 
 ```
-% mb gen -m tryserver.chromium.linux -b linux_rel //out/Release
+% mb gen -m tryserver.monyhar.linux -b linux_rel //out/Release
 % mb gen -c linux_rel_trybot //out/Release
 ```
 
@@ -171,14 +171,14 @@ to be run inside the isolate.
 Tries your change on the trybots. Right now this is essentially a fancy tryjob,
 like one you could trigger via `git cl try` or via CQ dry runs. Basic usage is
 
-`mb.py try -m tryserver.chromium.linux -b linux-rel base_unittests`
+`mb.py try -m tryserver.monyhar.linux -b linux-rel base_unittests`
 
 Your change must be uploaded to Gerrit. Local changes will not be uploaded for
 you. It uses the gerrit CL associated with your given git branch.
 
 You still have to specify the builder group(`--builder-group`) and buildername
 (`-b`) arguments.  See
-[trybots.py](https://cs.chromium.org/chromium/build/scripts/slave/recipe_modules/chromium_tests/trybots.py)
+[trybots.py](https://cs.monyhar.org/monyhar/build/scripts/slave/recipe_modules/monyhar_tests/trybots.py)
 for a mapping of which bots are on which tryservers, and what those bots mirror.
 Any trybot in `trybots.py` is supported; you can test your code on windows, for
 example. The tryjob will compile and run your code on windows.
@@ -225,7 +225,7 @@ to a file called `runtime_deps` in the build directory, and pass that to
 
 Once GN has computed the lists of runtime dependencies, MB will then
 look up the command line for each target (currently this is hard-coded
-in [mb.py](https://source.chromium.org/chromium/chromium/src/+/main:tools/mb/mb.py;l=1370)), and write out the
+in [mb.py](https://source.monyhar.org/monyhar/monyhar/src/+/main:tools/mb/mb.py;l=1370)), and write out the
 matching `.isolate` and `.isolated.gen.json` files.
 
 ## The mb_config.pyl config file
@@ -317,8 +317,8 @@ run the commands; `'mb -n'` will print what it will do but *not* run
 the commands.
 
 If you hit weirder things than that, add some print statements to the
-python script, send a question to gn-dev@chromium.org, or
+python script, send a question to gn-dev@monyhar.org, or
 [file a bug](https://crbug.com/new) with the label
-'mb' and cc: dpranke@chromium.org.
+'mb' and cc: dpranke@monyhar.org.
 
 

@@ -12,8 +12,8 @@ js_library("collections_grid") {
     "../../mojom:mojom_js_library_for_compile",
     "../common:constants",
     "../common:iframe_api",
-    "//third_party/polymer/v3_0/components-chromium/iron-list:iron-list",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-list:iron-list",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -23,22 +23,22 @@ js_library("images_grid") {
     "../../mojom:mojom_js_library_for_compile",
     "../common:constants",
     "../common:iframe_api",
-    "//third_party/polymer/v3_0/components-chromium/iron-list:iron-list",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-list:iron-list",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
 js_library("styles") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
 js_type_check("closure_compile") {
   is_polymer3 = true
   closure_flags = default_closure_args + [
-                    "browser_resolver_prefix_replacements=\"chrome-untrusted://personalization/polymer/v3_0/=../../third_party/polymer/v3_0/components-chromium/\"",
-                    "browser_resolver_prefix_replacements=\"chrome-untrusted://personalization/polymer/v3_0/polymer/polymer_bundled.min.js=../../third_party/polymer/v3_0/components-chromium/polymer/polymer_bundled.js\"",
+                    "browser_resolver_prefix_replacements=\"chrome-untrusted://personalization/polymer/v3_0/=../../third_party/polymer/v3_0/components-monyhar/\"",
+                    "browser_resolver_prefix_replacements=\"chrome-untrusted://personalization/polymer/v3_0/polymer/polymer_bundled.min.js=../../third_party/polymer/v3_0/components-monyhar/polymer/polymer_bundled.js\"",
                   ]
   deps = [
     ":collections_grid",

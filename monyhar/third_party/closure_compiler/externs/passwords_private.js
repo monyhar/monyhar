@@ -8,7 +8,7 @@
 //   'chrome.passwordsPrivate.FooType'.
 // Please run the closure compiler before committing changes.
 // See
-// https://chromium.googlesource.com/chromium/src/+/master/docs/closure_compilation.md
+// https://monyhar.googlesource.com/monyhar/src/+/master/docs/closure_compilation.md
 
 /** @fileoverview Externs generated from namespace: passwordsPrivate */
 

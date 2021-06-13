@@ -174,11 +174,11 @@ if (is_component_build && use_gtk) {
 component("protobuf_lite") {
   sources = protobuf_lite_sources
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
 
-    # Must be after no_chromium_code for warning flags to be ordered
+    # Must be after no_monyhar_code for warning flags to be ordered
     # correctly.
     ":protobuf_warnings",
   ]
@@ -383,11 +383,11 @@ static_library("protobuf_full") {
     libs = [ "log" ]  # Used by src/google/protobuf/stubs/common.cc
   }
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
 
-    # Must be after no_chromium_code for warning flags to be ordered
+    # Must be after no_monyhar_code for warning flags to be ordered
     # correctly.
     ":protobuf_warnings",
   ]
@@ -588,11 +588,11 @@ if (current_toolchain == host_toolchain) {
       "src/google/protobuf/compiler/zip_writer.h",
     ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
     configs += [
-      "//build/config/compiler:no_chromium_code",
+      "//build/config/compiler:no_monyhar_code",
 
-      # Must be after no_chromium_code for warning flags to be ordered
+      # Must be after no_monyhar_code for warning flags to be ordered
       # correctly.
       ":protobuf_warnings",
       ":protoc_warnings",
@@ -612,8 +612,8 @@ if (current_toolchain == host_toolchain) {
   executable("protoc") {
     sources = [ "src/google/protobuf/compiler/main.cc" ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
 
     cflags = protobuf_lite_cflags
 

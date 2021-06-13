@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.subresource_filter;
+package org.monyhar.chrome.browser.subresource_filter;
 
-import org.chromium.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.CalledByNative;
 
 /**
  * Class which aids in publishing test rulesets for SubresourceFilter instrumentation tests.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.cma.backend.android;
+package org.monyhar.chromecast.cma.backend.android;
 
 import android.annotation.TargetApi;
 import android.content.BroadcastReceiver;
@@ -14,12 +14,12 @@ import android.os.Build;
 import android.util.SparseArray;
 import android.util.SparseIntArray;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chromecast.media.AudioContentType;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chromecast.media.AudioContentType;
 
 /**
  * Implements the java-side of the volume control logic running on Android when using CMA backend by

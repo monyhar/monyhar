@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill;
+package org.monyhar.chrome.browser.autofill;
 
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * Helper for detecting whether the device supports scanning credit cards and for scanning credit

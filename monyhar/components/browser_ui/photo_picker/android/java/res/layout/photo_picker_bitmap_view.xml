@@ -7,7 +7,7 @@
 
 <!-- Represents a single item in the Photo Picker. -->
 
-<view class="org.chromium.components.browser_ui.photo_picker.PickerBitmapView"
+<view class="org.monyhar.components.browser_ui.photo_picker.PickerBitmapView"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"

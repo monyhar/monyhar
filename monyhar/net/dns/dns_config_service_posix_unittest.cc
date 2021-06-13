@@ -71,10 +71,10 @@ void InitializeResState(res_state res) {
   res->retrans = 4;
   res->retry = 7;
 
-  const char kDnsrch[] = "chromium.org" "\0" "example.com";
+  const char kDnsrch[] = "monyhar.org" "\0" "example.com";
   memcpy(res->defdname, kDnsrch, sizeof(kDnsrch));
   res->dnsrch[0] = res->defdname;
-  res->dnsrch[1] = res->defdname + sizeof("chromium.org");
+  res->dnsrch[1] = res->defdname + sizeof("monyhar.org");
 
   for (unsigned i = 0; i < base::size(kNameserversIPv4) && i < MAXNS; ++i) {
     struct sockaddr_in sa;
@@ -121,7 +121,7 @@ void InitializeExpectedConfig(DnsConfig* config) {
   config->rotate = true;
   config->append_to_multi_label_name = true;
   config->search.clear();
-  config->search.push_back("chromium.org");
+  config->search.push_back("monyhar.org");
   config->search.push_back("example.com");
 
   config->nameservers.clear();
@@ -170,7 +170,7 @@ TEST(DnsConfigServicePosixTest, ConvertResStateToDnsConfig) {
 TEST(DnsConfigServicePosixTest, RejectEmptyNameserver) {
   struct __res_state res = {};
   res.options = RES_INIT | RES_RECURSE | RES_DEFNAMES | RES_DNSRCH;
-  const char kDnsrch[] = "chromium.org";
+  const char kDnsrch[] = "monyhar.org";
   memcpy(res.defdname, kDnsrch, sizeof(kDnsrch));
   res.dnsrch[0] = res.defdname;
 

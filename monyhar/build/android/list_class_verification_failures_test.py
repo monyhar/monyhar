@@ -6,7 +6,7 @@ import unittest
 
 import list_class_verification_failures as list_verification
 
-import devil_chromium  # pylint: disable=unused-import
+import devil_monyhar  # pylint: disable=unused-import
 from devil.android import device_errors
 from devil.android import device_utils
 from devil.android.ndk import abis

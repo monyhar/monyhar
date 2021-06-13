@@ -1,5 +1,5 @@
 monorail {
   component: "Fuchsia"
 }
-team_email: "cr-fuchsia@chromium.org"
+team_email: "cr-fuchsia@monyhar.org"
 os: FUCHSIA

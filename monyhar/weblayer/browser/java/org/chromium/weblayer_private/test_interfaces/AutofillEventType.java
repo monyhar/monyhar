@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private.test_interfaces;
+package org.monyhar.weblayer_private.test_interfaces;
 
 import androidx.annotation.IntDef;
 

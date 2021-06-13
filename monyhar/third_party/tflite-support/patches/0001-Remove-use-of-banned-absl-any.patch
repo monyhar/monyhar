@@ -1,5 +1,5 @@
 From 670dfffa386fd0ff28e66cfe1238af43b4e587ce Mon Sep 17 00:00:00 2001
-From: Daniel Rubery <drubery@chromium.org>
+From: Daniel Rubery <drubery@monyhar.org>
 Date: Thu, 6 May 2021 11:22:13 -0700
 Subject: [PATCH] Remove use of banned absl::any
 

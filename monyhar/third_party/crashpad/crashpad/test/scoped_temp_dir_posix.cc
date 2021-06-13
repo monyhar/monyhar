@@ -52,7 +52,7 @@ base::FilePath ScopedTempDir::CreateTemporaryDirectory() {
   if (dir[dir.size() - 1] != '/') {
     dir.append(1, '/');
   }
-  dir.append("org.chromium.crashpad.test.XXXXXX");
+  dir.append("org.monyhar.crashpad.test.XXXXXX");
 
   PCHECK(mkdtemp(&dir[0])) << "mkdtemp " << dir;
   return base::FilePath(dir);

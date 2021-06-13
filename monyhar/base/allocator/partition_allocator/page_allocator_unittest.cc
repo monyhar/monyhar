@@ -129,7 +129,7 @@ TEST(PartitionAllocPageAllocatorTest, AllocFailure) {
   EXPECT_FALSE(ReserveAddressSpace(EasyAllocSize()));
 }
 
-// TODO(crbug.com/765801): Test failed on chromium.win/Win10 Tests x64.
+// TODO(crbug.com/765801): Test failed on monyhar.win/Win10 Tests x64.
 #if defined(OS_WIN) && defined(ARCH_CPU_64_BITS)
 #define MAYBE_ReserveAddressSpace DISABLED_ReserveAddressSpace
 #else
@@ -454,7 +454,7 @@ TEST(PartitionAllocPageAllocatorTest, PageTagging) {
   for (const auto& region : regions) {
     if (region.start == reinterpret_cast<uintptr_t>(buffer)) {
       found = true;
-      EXPECT_EQ("[anon:chromium]", region.path);
+      EXPECT_EQ("[anon:monyhar]", region.path);
       break;
     }
   }

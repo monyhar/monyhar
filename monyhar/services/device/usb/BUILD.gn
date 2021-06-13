@@ -217,12 +217,12 @@ fuzzer_test("usb_string_read_fuzzer") {
 
 if (is_android) {
   java_sources_needing_jni = [
-    "android/java/src/org/chromium/device/usb/ChromeUsbConfiguration.java",
-    "android/java/src/org/chromium/device/usb/ChromeUsbConnection.java",
-    "android/java/src/org/chromium/device/usb/ChromeUsbDevice.java",
-    "android/java/src/org/chromium/device/usb/ChromeUsbEndpoint.java",
-    "android/java/src/org/chromium/device/usb/ChromeUsbInterface.java",
-    "android/java/src/org/chromium/device/usb/ChromeUsbService.java",
+    "android/java/src/org/monyhar/device/usb/ChromeUsbConfiguration.java",
+    "android/java/src/org/monyhar/device/usb/ChromeUsbConnection.java",
+    "android/java/src/org/monyhar/device/usb/ChromeUsbDevice.java",
+    "android/java/src/org/monyhar/device/usb/ChromeUsbEndpoint.java",
+    "android/java/src/org/monyhar/device/usb/ChromeUsbInterface.java",
+    "android/java/src/org/monyhar/device/usb/ChromeUsbService.java",
   ]
 
   generate_jni("jni_headers") {

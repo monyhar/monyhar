@@ -35,16 +35,16 @@
 // 2007-11-14 - Changed to use Crc from Lzma library instead of Bzip library
 //                --Rahul Kuchhal
 // 2009-03-31 - Change to use Streams.  Added lots of comments.
-//                --Stephen Adams <sra@chromium.org>
+//                --Stephen Adams <sra@monyhar.org>
 // 2010-05-26 - Use a paged array for V and I. The address space may be too
 //              fragmented for these big arrays to be contiguous.
-//                --Stephen Adams <sra@chromium.org>
+//                --Stephen Adams <sra@monyhar.org>
 // 2015-08-03 - Extract qsufsort portion to a separate file.
-//                --Samuel Huang <huangs@chromium.org>
+//                --Samuel Huang <huangs@monyhar.org>
 // 2015-08-12 - Interface change to search().
-//                --Samuel Huang <huangs@chromium.org>
+//                --Samuel Huang <huangs@monyhar.org>
 // 2016-07-29 - Replacing qsufsort with divsufsort.
-//                --Samuel Huang <huangs@chromium.org>
+//                --Samuel Huang <huangs@monyhar.org>
 
 // Copyright 2016 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be

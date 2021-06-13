@@ -1,7 +1,7 @@
 # Android WebView Resources
 
 This folder is responsible for managing WebView's application resources. Please
-also consult [general UI/localization information][1] for the chromium
+also consult [general UI/localization information][1] for the monyhar
 repository.
 
 ## Adding a WebView-specific string/resource
@@ -23,17 +23,17 @@ WebView builds only.
 The process is again similar to the [general instructions][1]. Use
 [`//android_webview/java/strings/android_webview_strings.grd`](/android_webview/java/strings/android_webview_strings.grd).
 A string `IDS_MY_STRING` can be accessed in Java with
-`org.chromium.android_webview.R.string.MY_STRING`.
+`org.monyhar.android_webview.R.string.MY_STRING`.
 
 Resources are added under
 [`//android_webview/java/res/`](/android_webview/java/res/). Similarly, a
 resource `drawable-xxxhdpi/ic_play_circle_outline_black_48dp.png` can be
 accessed in Java with
-`org.chromium.android_webview.R.drawable.ic_play_circle_outline_black_48dp`.
+`org.monyhar.android_webview.R.drawable.ic_play_circle_outline_black_48dp`.
 
 *** note
 **Note:** WebView-specific resources are prefixed by the
-`org.chromium.android_webview` package name.
+`org.monyhar.android_webview` package name.
 ***
 
 ## Shared/common resources
@@ -52,4 +52,4 @@ non-allowlisted resource triggers a `DCHECK` (in release builds, this usually
 inflates to empty content).
 ***
 
-[1]: http://www.chromium.org/developers/design-documents/ui-localization
+[1]: http://www.monyhar.org/developers/design-documents/ui-localization

@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.long_screenshots.bitmap_generation;
+package org.monyhar.chrome.browser.share.long_screenshots.bitmap_generation;
 
 import android.graphics.Rect;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.components.paint_preview.common.proto.PaintPreview.PaintPreviewProto;
-import org.chromium.components.paintpreview.browser.NativePaintPreviewServiceProvider;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.components.paint_preview.common.proto.PaintPreview.PaintPreviewProto;
+import org.monyhar.components.paintpreview.browser.NativePaintPreviewServiceProvider;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * The Java-side implementations of long_screenshots_tab_service.cc. The C++ side owns and controls

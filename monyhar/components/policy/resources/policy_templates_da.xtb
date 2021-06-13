@@ -99,7 +99,7 @@ Du kan få flere oplysninger om sikre kontekster på https://www.w3.org/TR/secur
 
       Hvis du angiver denne politik, anvender <ph name="PRODUCT_NAME" /> det medfølgende indeks, uanset om brugeren har angivet markeringen "--disk-cache-dir" eller ej. For ikke at miste data eller få uventede fejl bør denne politik ikke angives som en mængdes rodindeks eller som et indeks, der bruges til andre formål, da <ph name="PRODUCT_NAME" /> administrerer indholdet.
 
-      Gå til https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables for at se en liste over variabler, der kan bruges.
+      Gå til https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables for at se en liste over variabler, der kan bruges.
 
       Hvis denne politik ikke angives, anvendes standardcacheindekset, og brugeren vil kunne tilsidesætte det med kommandolinjemarkeringen "--disk-cache-dir".</translation>
 <translation id="113521240853905588">Konfigurerer de sprog, der kan bruges som foretrukne sprog af <ph name="PRODUCT_OS_NAME" />.
@@ -480,7 +480,7 @@ Hvis denne politik ikke er angivet, benyttes standardreglen, hvor ingen HTTP/2-f
 <translation id="1852294065645015766">Tillad automatisk afspilning af medier</translation>
 <translation id="1857152770025485173">Politikken forhindrer brugeren i at indlæse websider fra sortlistede webadresser. Sortlisten viser en liste over webadressemønstre, som angiver, hvilke webadresser der føjes til sortlisten.
 
-      Et webadressemønster skal formateres i overensstemmelse med https://www.chromium.org/administrators/url-blacklist-filter-format.
+      Et webadressemønster skal formateres i overensstemmelse med https://www.monyhar.org/administrators/url-blacklist-filter-format.
 
       Undtagelser kan defineres i politikken for hvidlistede webadresser. Der er en maksimumsgrænse på 1000 poster for disse politikker. Alle efterfølgende poster ignoreres.
 
@@ -517,7 +517,7 @@ Hvis kompatabilitet med en fejlbehæftet server skal opretholdes, kan denne poli
 
       Hvis den ikke konfigureres, deaktiveres rapportering af metrics og diagnosticeringsdata på ikke-administrerede enheder, mens det aktiveres på administrerede enheder.</translation>
 <translation id="1907431809333268751">Konfigurer listen over webadresser til virksomhedslogin (kun HTTP- og HTTPS-skemaer). Adgangskodens fingeraftryk registreres på disse webadresser og bruges til registrering af genbrug af adgangskoder.
-      For at <ph name="PRODUCT_NAME" /> kan registrere fingeraftryk for adgangskoder korrekt skal du sørge for, at dine loginsider følger retningslinjerne på https://www.chromium.org/developers/design-documents/create-amazing-password-forms.
+      For at <ph name="PRODUCT_NAME" /> kan registrere fingeraftryk for adgangskoder korrekt skal du sørge for, at dine loginsider følger retningslinjerne på https://www.monyhar.org/developers/design-documents/create-amazing-password-forms.
 
       Hvis denne indstilling er aktiveret, registrerer tjenesten til adgangskodebeskyttelse fingeraftryk for adgangskoder på disse webadresser med henblik på at registrere genbrug af adgangskoder.
       Hvis denne indstilling er deaktiveret eller ikke er angivet, registrerer tjenesten til adgangskodebeskyttelse kun fingeraftryk for adgangskoder på https://accounts.google.com.
@@ -812,7 +812,7 @@ Hvis kompatabilitet med en fejlbehæftet server skal opretholdes, kan denne poli
 
       Denne politik tillader, at certifikater til hostnames i de angivne webadresser ikke fremvises via Certifikatsgennemsigtighed. Dette tillader, at certifikater, der ellers ville være usikre, fordi de ikke blev fremvist korrekt offentligt, fortsat kan bruges. Det gør det dog sværere at registrere certifikater, der er udstedt ved en fejl, for disse hosts.
 
-      Et webadressemønster formateres i overensstemmelse med https://www.chromium.org/administrators/url-blacklist-filter-format. Da certifikater er gyldige for et givent hostname uafhængigt af ordningen, porten eller stien, er det dog kun hostnamedelen af webadressen, der tages i betragtning. Hosts for jokertegn understøttes ikke.
+      Et webadressemønster formateres i overensstemmelse med https://www.monyhar.org/administrators/url-blacklist-filter-format. Da certifikater er gyldige for et givent hostname uafhængigt af ordningen, porten eller stien, er det dog kun hostnamedelen af webadressen, der tages i betragtning. Hosts for jokertegn understøttes ikke.
 
       Hvis denne politik ikke angives, behandles certifikater, der skal fremvises via Certifikatsgennemsigtighed, som usikre, hvis de ikke fremvises i overensstemmelse med politikken for Certifikatsgennemsigtighed.</translation>
 <translation id="2488010520405124654">Aktivér meddelelse om netværkskonfiguration, når du er offline. 
@@ -1490,7 +1490,7 @@ Hvis kompatabilitet med en fejlbehæftet server skal opretholdes, kan denne poli
 
       Hvis du angiver denne politik, vil <ph name="PRODUCT_NAME" /> bruge den angivne mappe, uanset om brugeren har angivet en eller aktiveret flaget for at blive bedt om en downloadplacering hver gang.
 
-      Du kan se en liste over variabler, der kan anvendes, på http://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Du kan se en liste over variabler, der kan anvendes, på http://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Hvis denne politik ikke angives, anvendes standardmappen til downloads, og brugeren vil kunne ændre den.</translation>
 <translation id="3805659594028420438">Aktivér udvidelse af certifikater, der er bundet til TLS-domænet (udfaset)</translation>
@@ -1579,7 +1579,7 @@ Hvis kompatabilitet med en fejlbehæftet server skal opretholdes, kan denne poli
 
       Hvis du ikke angiver denne politik, bruger <ph name="PRODUCT_NAME" /> den sædvanlige standardmappe (platformspecifikt).
 
-      Se https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables for en liste over variabler, der kan bruges.</translation>
+      Se https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables for en liste over variabler, der kan bruges.</translation>
 <translation id="3911737181201537215">Denne politik påvirker ikke logføring udført af Android.</translation>
 <translation id="391531815696899618">Deaktiverer Google Drev-synkronisering i appen Filer i <ph name="PRODUCT_OS_NAME" />, når den er angivet til Sand. I dette tilfælde uploades der ingen data til Google Drev.
 
@@ -1780,7 +1780,7 @@ Hvis kompatabilitet med en fejlbehæftet server skal opretholdes, kan denne poli
 
       Hvis du konfigurerer denne politik, bruger <ph name="PRODUCT_NAME" /> den angivne mappe til at gemme roamingkopien af profilerne, hvis politikken <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> er aktiveret. Hvis politikken <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> er deaktiveret eller ikke er konfigureret, anvendes den gemte værdi i denne politik ikke.
 
-      Gå til https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables for at se en liste over variabler, der kan bruges.
+      Gå til https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables for at se en liste over variabler, der kan bruges.
 
       Hvis denne politik ikke er konfigureret, bruges standardstien for roamingprofiler.</translation>
 <translation id="4239720644496144453">Cachen bruges ikke til Android-apps. Hvis flere brugere installerer den samme Android-app, downloades den på ny for hver bruger.</translation>
@@ -1974,7 +1974,7 @@ Mens selve politikken understøttes på ovenstående platforme, kan den funktion
 
           Hvis denne politik ikke er angivet, anvendes standardgengivelsen på alle websites, sådan som det er angivet i politikken "ChromeFrameRendererSettings".
 
-          Du kan se eksempler på mønstre på https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Du kan se eksempler på mønstre på https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="467449052039111439">Åbn en liste over webadresser</translation>
 <translation id="4674871290487541952">Tillad usikre algoritmer i integritetstjek ved opdateringer og installationer af udvidelser</translation>
 <translation id="4680936297850947973">Udfaset i M68. Brug DefaultPopupsSetting i stedet.
@@ -2593,7 +2593,7 @@ Hvis denne politik slås fra eller indstilles til False (falsk), er udviklertils
 
       Hvis du angiver denne politik, vil <ph name="PRODUCT_FRAME_NAME" /> bruge den angivne mappe.
 
-      Du kan se en liste over variabler, der kan anvendes, på http://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Du kan se en liste over variabler, der kan anvendes, på http://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Hvis denne indstilling ikke angives, anvendes standardprofilmappen.</translation>
 <translation id="5826047473100157858">Angiver, om brugeren kan åbne sider i inkognitotilstand i <ph name="PRODUCT_NAME" />. Hvis "Aktiveret" er valgt, eller hvis politikken ikke angives, kan siderne åbnes i inkognitotilstand. Hvis "Deaktiveret" er valgt, kan sider ikke åbnes i inkognitotilstand. Hvis "Tvunget" er valgt, kan siderne kun åbnes i inkognitotilstand.</translation>
@@ -3157,7 +3157,7 @@ Hvis denne politik er angivet som sand eller ikke angives, aktiveres den smarte 
 
       Hvis du angiver denne politik, anvender <ph name="PRODUCT_NAME" /> det medfølgende indeks, uanset om brugeren har angivet markeringen "--user-data-dir" eller ej. For ikke at miste data eller få uventede fejl bør denne politik ikke angives som en mængdes rodindeks eller som et indeks, der bruges til andre formål, da <ph name="PRODUCT_NAME" /> administrerer indholdet.
 
-      Gå til https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables for at se en liste over variabler, der kan bruges.
+      Gå til https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables for at se en liste over variabler, der kan bruges.
 
       Hvis denne politik ikke angives, anvendes standardcacheindekset, og brugeren vil kunne tilsidesætte det med kommandolinjemarkeringen ""--disk-cache-dir".</translation>
 <translation id="7027785306666625591">Konfigurer strømstyring i <ph name="PRODUCT_OS_NAME" />.
@@ -3932,7 +3932,7 @@ Den anbefalede fremgangsmåde til konfiguration af politikker i Windows er via G
 
           Hvis denne politik ikke er angivet, anvendes standardgengivelsen på alle websites, sådan som det er angivet i politikken "ChromeFrameRendererSettings".
 
-          Se eksempler på mønstre på https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Se eksempler på mønstre på https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="8489964335640955763">PluginVm</translation>
 <translation id="8493645415242333585">Deaktiver lagring af browserhistorik</translation>
 <translation id="8499172469244085141">Standardindstillinger (brugere kan tilsidesætte)</translation>

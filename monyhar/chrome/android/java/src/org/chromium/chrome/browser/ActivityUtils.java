@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.app.Activity;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.SysUtils;
-import org.chromium.chrome.R;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.SysUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.base.WindowAndroid;
 
 /** Provides a set of utilities to help with working with Activities. */
 public final class ActivityUtils {

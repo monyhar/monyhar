@@ -1,7 +1,7 @@
 monorail {
   component: "Blink>FeaturePolicy"
 }
-team_email: "feature-control@chromium.org"
+team_email: "feature-control@monyhar.org"
 wpt {
   notify: YES
 }

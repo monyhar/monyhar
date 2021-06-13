@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.datareduction;
+package org.monyhar.chrome.browser.datareduction;
 
 import android.content.Context;
 
-import org.chromium.base.CommandLine;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.net.spdyproxy.DataReductionProxySettings;
-import org.chromium.components.browser_ui.util.ConversionUtils;
-import org.chromium.components.variations.VariationsAssociatedData;
+import org.monyhar.base.CommandLine;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.net.spdyproxy.DataReductionProxySettings;
+import org.monyhar.components.browser_ui.util.ConversionUtils;
+import org.monyhar.components.variations.VariationsAssociatedData;
 
 /**
  * The controller logic for the Data Reduction Proxy savings milestone promo that lets users of the

@@ -58,22 +58,22 @@ class ReadingListMediatorTest
                              favicon_base::FaviconRawBitmapResult()));
         });
 
-    no_title_entry_url_ = GURL("http://chromium.org/unread3");
+    no_title_entry_url_ = GURL("http://monyhar.org/unread3");
     // The first 3 have the same update time on purpose.
-    model_->AddEntry(GURL("http://chromium.org/unread1"), "unread1",
+    model_->AddEntry(GURL("http://monyhar.org/unread1"), "unread1",
                      reading_list::ADDED_VIA_CURRENT_APP);
-    model_->AddEntry(GURL("http://chromium.org/read1"), "read1",
+    model_->AddEntry(GURL("http://monyhar.org/read1"), "read1",
                      reading_list::ADDED_VIA_CURRENT_APP);
-    model_->SetReadStatus(GURL("http://chromium.org/read1"), true);
-    model_->AddEntry(GURL("http://chromium.org/unread2"), "unread2",
+    model_->SetReadStatus(GURL("http://monyhar.org/read1"), true);
+    model_->AddEntry(GURL("http://monyhar.org/unread2"), "unread2",
                      reading_list::ADDED_VIA_CURRENT_APP);
     clock_.Advance(base::TimeDelta::FromMilliseconds(10));
     model_->AddEntry(no_title_entry_url_, "",
                      reading_list::ADDED_VIA_CURRENT_APP);
     clock_.Advance(base::TimeDelta::FromMilliseconds(10));
-    model_->AddEntry(GURL("http://chromium.org/read2"), "read2",
+    model_->AddEntry(GURL("http://monyhar.org/read2"), "read2",
                      reading_list::ADDED_VIA_CURRENT_APP);
-    model_->SetReadStatus(GURL("http://chromium.org/read2"), true);
+    model_->SetReadStatus(GURL("http://monyhar.org/read2"), true);
     large_icon_service_.reset(new favicon::LargeIconServiceImpl(
         &mock_favicon_service_, /*image_fetcher=*/nullptr,
         /*desired_size_in_dip_for_server_requests=*/24,

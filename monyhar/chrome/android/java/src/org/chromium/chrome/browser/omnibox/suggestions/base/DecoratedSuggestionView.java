@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions.base;
+package org.monyhar.chrome.browser.omnibox.suggestions.base;
 
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import org.chromium.chrome.R;
-import org.chromium.components.browser_ui.widget.RoundedCornerImageView;
+import org.monyhar.chrome.R;
+import org.monyhar.components.browser_ui.widget.RoundedCornerImageView;
 
 /**
  * Container view for omnibox suggestions supplying icon decoration.

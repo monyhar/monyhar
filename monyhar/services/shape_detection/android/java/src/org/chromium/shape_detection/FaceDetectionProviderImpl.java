@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.shape_detection;
+package org.monyhar.shape_detection;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.gms.ChromiumPlayServicesAvailability;
-import org.chromium.mojo.bindings.InterfaceRequest;
-import org.chromium.mojo.system.MojoException;
-import org.chromium.shape_detection.mojom.FaceDetection;
-import org.chromium.shape_detection.mojom.FaceDetectionProvider;
-import org.chromium.shape_detection.mojom.FaceDetectorOptions;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.gms.ChromiumPlayServicesAvailability;
+import org.monyhar.mojo.bindings.InterfaceRequest;
+import org.monyhar.mojo.system.MojoException;
+import org.monyhar.shape_detection.mojom.FaceDetection;
+import org.monyhar.shape_detection.mojom.FaceDetectionProvider;
+import org.monyhar.shape_detection.mojom.FaceDetectorOptions;
 
 /**
  * Service provider to create FaceDetection services

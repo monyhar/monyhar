@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#include "chromecast/external_mojo/external_service_support/chromium_service.h"
+#include "chromecast/external_mojo/external_service_support/monyhar_service.h"
 
 #include <utility>
 
@@ -39,12 +39,12 @@ void OnStartCallback(
 ChromiumServiceWrapper::ChromiumServiceWrapper(
     ExternalConnector* connector,
     mojo::Remote<service_manager::mojom::Service> service_remote,
-    std::unique_ptr<service_manager::Service> chromium_service,
+    std::unique_ptr<service_manager::Service> monyhar_service,
     const std::string& service_name)
     : service_remote_(std::move(service_remote)),
-      chromium_service_(std::move(chromium_service)) {
+      monyhar_service_(std::move(monyhar_service)) {
   DCHECK(connector);
-  DCHECK(chromium_service_);
+  DCHECK(monyhar_service_);
 
   connector->RegisterService(service_name,
                              service_receiver_.BindNewPipeAndPassRemote());
@@ -55,7 +55,7 @@ ChromiumServiceWrapper::~ChromiumServiceWrapper() = default;
 void ChromiumServiceWrapper::OnBindInterface(
     const std::string& interface_name,
     mojo::ScopedMessagePipeHandle interface_pipe) {
-  chromium_service_->OnBindInterface(
+  monyhar_service_->OnBindInterface(
       service_manager::BindSourceInfo(
           service_manager::Identity("unique", base::Token::CreateRandom(),
                                     base::Token::CreateRandom(),

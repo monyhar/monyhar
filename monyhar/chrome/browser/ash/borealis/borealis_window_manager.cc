@@ -19,7 +19,7 @@
 namespace {
 
 // Borealis windows are created with app/startup ids beginning with this.
-const char kBorealisWindowPrefix[] = "org.chromium.borealis.";
+const char kBorealisWindowPrefix[] = "org.monyhar.borealis.";
 
 // Anonymous apps do not have a CrOS-standard app_id (i.e. one registered with
 // the GuestOsRegistryService), so to identify them we prepend this.
@@ -40,7 +40,7 @@ std::string WindowToAppId(Profile* profile, aura::Window* window) {
   // Crostini's so just spoof the relevant information and use theirs.
   std::string pretend_crostini_id(*GetWindowId(window));
   base::ReplaceFirstSubstringAfterOffset(
-      &pretend_crostini_id, 0, kBorealisWindowPrefix, "org.chromium.termina.");
+      &pretend_crostini_id, 0, kBorealisWindowPrefix, "org.monyhar.termina.");
   std::string crostini_equivalent_id =
       crostini::GetCrostiniShelfAppId(profile, &pretend_crostini_id, nullptr);
 

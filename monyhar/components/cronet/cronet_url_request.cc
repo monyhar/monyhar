@@ -279,7 +279,7 @@ void CronetURLRequest::NetworkTasks::Start(
     std::unique_ptr<net::UploadDataStream> upload) {
   DCHECK(context->IsOnNetworkThread());
   DCHECK_CALLED_ON_VALID_THREAD(network_thread_checker_);
-  VLOG(1) << "Starting chromium request: "
+  VLOG(1) << "Starting monyhar request: "
           << initial_url_.possibly_invalid_spec().c_str()
           << " priority: " << RequestPriorityToString(initial_priority_);
   url_request_ = context->GetURLRequestContext()->CreateRequest(
@@ -369,7 +369,7 @@ void CronetURLRequest::NetworkTasks::ReportError(net::URLRequest* request,
   net::NetErrorDetails net_error_details;
   url_request_->PopulateNetErrorDetails(&net_error_details);
   VLOG(1) << "Error " << net::ErrorToString(net_error)
-          << " on chromium request: " << initial_url_.possibly_invalid_spec();
+          << " on monyhar request: " << initial_url_.possibly_invalid_spec();
   MaybeReportMetrics();
   callback_->OnError(
       net_error, net_error_details.quic_connection_error,

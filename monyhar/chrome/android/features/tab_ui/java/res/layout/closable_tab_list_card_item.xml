@@ -3,7 +3,7 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
 <!-- TODO(crbug.com/1023557): Use ClosableTabGridView -->
-<org.chromium.ui.widget.ViewLookupCachingFrameLayout
+<org.monyhar.ui.widget.ViewLookupCachingFrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/closable_tab_list_card_item"
     android:layout_width="match_parent"
@@ -11,4 +11,4 @@
 
     <include layout="@layout/tab_list_card_item"/>
 
-</org.chromium.ui.widget.ViewLookupCachingFrameLayout>
+</org.monyhar.ui.widget.ViewLookupCachingFrameLayout>

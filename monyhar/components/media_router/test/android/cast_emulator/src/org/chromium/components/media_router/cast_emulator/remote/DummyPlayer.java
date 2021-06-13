@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.media_router.cast_emulator.remote;
+package org.monyhar.components.media_router.cast_emulator.remote;
 
 import android.content.Context;
 import android.media.MediaPlayer;
@@ -12,7 +12,7 @@ import android.os.SystemClock;
 import androidx.mediarouter.media.MediaItemStatus;
 import androidx.mediarouter.media.MediaRouter.RouteInfo;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 import java.io.IOException;
 

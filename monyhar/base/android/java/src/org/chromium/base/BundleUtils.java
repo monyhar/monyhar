@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base;
+package org.monyhar.base;
 
 import android.app.Application;
 import android.content.Context;
@@ -17,10 +17,10 @@ import androidx.collection.SimpleArrayMap;
 import dalvik.system.BaseDexClassLoader;
 import dalvik.system.PathClassLoader;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.compat.ApiHelperForO;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.build.BuildConfig;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.compat.ApiHelperForO;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.build.BuildConfig;
 
 import java.lang.reflect.Field;
 import java.util.Arrays;

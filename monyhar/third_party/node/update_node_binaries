@@ -52,7 +52,7 @@ update_unix() {
   sha1="$(sha1sum ${FOLDER}/node-${SUFFIX}.tar.gz | cut -d ' ' -f1)"
   echo "${sha1}" > "${FOLDER}/node-${SUFFIX}.tar.gz.sha1"
   echo "Please execute manually the following:"
-  echo "> gsutil.py cp ${FOLDER}/node-${SUFFIX}.tar.gz gs://chromium-nodejs/${NODE_VERSION:1}/${sha1}"
+  echo "> gsutil.py cp ${FOLDER}/node-${SUFFIX}.tar.gz gs://monyhar-nodejs/${NODE_VERSION:1}/${sha1}"
   echo "DONE updating for ${SUFFIX}."
 }
 
@@ -78,7 +78,7 @@ update_win() {
   sha1="$(sha1sum ${FOLDER}/node.exe | cut -d ' ' -f1)"
   echo "${sha1}" > "${FOLDER}/node.exe.sha1"
   echo "Please execute manually the following:"
-  echo "> gsutil.py cp ${FOLDER}/node.exe gs://chromium-nodejs/${NODE_VERSION:1}/${sha1}"
+  echo "> gsutil.py cp ${FOLDER}/node.exe gs://monyhar-nodejs/${NODE_VERSION:1}/${sha1}"
   echo "DONE updating Windows."
 }
 
@@ -91,4 +91,4 @@ update_unix "linux-x64" "linux"
 update_win
 
 # Update DEPS to point to the new Google Storage bucket subfolder.
-sed -i "s@\(chromium-nodejs/\)\([0-9\.]\)\+@\1${NODE_VERSION:1}@" ../../DEPS
+sed -i "s@\(monyhar-nodejs/\)\([0-9\.]\)\+@\1${NODE_VERSION:1}@" ../../DEPS

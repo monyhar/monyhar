@@ -486,17 +486,17 @@ TEST_F(MediaStreamRemoteVideoSourceTest, ReferenceTimeEqualsTimestampUs) {
 }
 
 TEST_F(MediaStreamRemoteVideoSourceTest, BaseTimeTicksAndRtcMicrosAreTheSame) {
-  base::TimeTicks first_chromium_timestamp = base::TimeTicks::Now();
+  base::TimeTicks first_monyhar_timestamp = base::TimeTicks::Now();
   base::TimeTicks webrtc_timestamp =
       base::TimeTicks() + base::TimeDelta::FromMicroseconds(rtc::TimeMicros());
-  base::TimeTicks second_chromium_timestamp = base::TimeTicks::Now();
+  base::TimeTicks second_monyhar_timestamp = base::TimeTicks::Now();
 
   // Test that the timestamps are correctly ordered, which they can only be if
   // the clocks are the same (assuming at least one of the clocks is functioning
   // correctly).
-  EXPECT_GE((webrtc_timestamp - first_chromium_timestamp).InMillisecondsF(),
+  EXPECT_GE((webrtc_timestamp - first_monyhar_timestamp).InMillisecondsF(),
             0.0f);
-  EXPECT_GE((second_chromium_timestamp - webrtc_timestamp).InMillisecondsF(),
+  EXPECT_GE((second_monyhar_timestamp - webrtc_timestamp).InMillisecondsF(),
             0.0f);
 }
 

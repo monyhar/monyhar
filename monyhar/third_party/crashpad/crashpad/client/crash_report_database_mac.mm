@@ -103,7 +103,7 @@ bool CreateOrEnsureDirectoryExists(const base::FilePath& path) {
 // have changed, and new_name determines whether the returned xattr name will be
 // the old name or its new equivalent.
 std::string XattrNameInternal(const base::StringPiece& name, bool new_name) {
-  return base::StringPrintf(new_name ? "org.chromium.crashpad.database.%s"
+  return base::StringPrintf(new_name ? "org.monyhar.crashpad.database.%s"
                                      : "com.googlecode.crashpad.%s",
                             name.data());
 }

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.test;
+package org.monyhar.net.test;
 
 import android.accounts.AbstractAccountAuthenticator;
 import android.accounts.Account;
@@ -14,11 +14,11 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeClassQualifiedName;
-import org.chromium.net.HttpNegotiateConstants;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeClassQualifiedName;
+import org.monyhar.net.HttpNegotiateConstants;
 
 import java.io.IOException;
 
@@ -28,7 +28,7 @@ import java.io.IOException;
  */
 @JNINamespace("net::android")
 public class DummySpnegoAuthenticator extends AbstractAccountAuthenticator {
-    private static final String ACCOUNT_TYPE = "org.chromium.test.DummySpnegoAuthenticator";
+    private static final String ACCOUNT_TYPE = "org.monyhar.test.DummySpnegoAuthenticator";
     private static final String ACCOUNT_NAME = "DummySpnegoAccount";
     private static int sResult;
     private static String sToken;

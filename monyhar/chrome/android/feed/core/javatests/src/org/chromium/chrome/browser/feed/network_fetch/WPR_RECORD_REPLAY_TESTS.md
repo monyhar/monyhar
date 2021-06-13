@@ -23,7 +23,7 @@ Here is an example.
 ```
 solutions = [
   {
-    "url": "https://chromium.googlesource.com/chromium/src.git",
+    "url": "https://monyhar.googlesource.com/monyhar/src.git",
     "managed": False,
     "name": "src",
     "custom_deps": {},
@@ -49,7 +49,7 @@ Here is an example.
     @Test
     @MediumTest
     @Feature({"FeedNewTabPage", "WPRRecordReplayTest", "RenderTest"})
-    @WPRArchiveConfigFilePath("chrome/android/feed/core/javatests/src/org/chromium/chrome/"
+    @WPRArchiveConfigFilePath("chrome/android/feed/core/javatests/src/org/monyhar/chrome/"
             + "browser/feed/network_fetch/test_data.json")
     public void
     launchNTP_withMultipleFeedCardsRendered() throws IOException, InterruptedException {

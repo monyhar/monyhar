@@ -40,10 +40,10 @@ func init() {
 
 func handler(w http.ResponseWriter, r *http.Request) {
 	const (
-		baseURL             = "https://chromium.googlesource.com/crashpad/crashpad/+/"
+		baseURL             = "https://monyhar.googlesource.com/crashpad/crashpad/+/"
 		masterBaseURL       = baseURL + "master/"
 		generatedDocBaseURL = baseURL + "doc/doc/generated/?format=TEXT"
-		bugBaseURL          = "https://bugs.chromium.org/p/crashpad/"
+		bugBaseURL          = "https://bugs.monyhar.org/p/crashpad/"
 	)
 
 	redirectMap := map[string]string{

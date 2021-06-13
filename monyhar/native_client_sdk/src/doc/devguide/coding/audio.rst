@@ -58,7 +58,7 @@ plays them using an audio device on the client computer.
 This mechanism is simple but low-level. If you want to play plain sound files in
 a web application, you may want to consider higher-level alternatives such as
 using the HTML ``<audio>`` tag, JavaScript, or the new `Web Audio API
-<http://chromium.googlecode.com/svn/trunk/samples/audio/index.html>`_.
+<http://monyhar.googlecode.com/svn/trunk/samples/audio/index.html>`_.
 
 The Pepper audio API is a good option for playing audio data if you want to do
 audio processing in your web application. You might use the audio API, for

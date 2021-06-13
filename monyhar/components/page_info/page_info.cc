@@ -50,7 +50,7 @@
 #include "components/security_interstitials/content/stateful_ssl_host_state_delegate.h"
 #include "components/signin/public/identity_manager/account_info.h"
 #include "components/ssl_errors/error_info.h"
-#include "components/strings/grit/components_chromium_strings.h"
+#include "components/strings/grit/components_monyhar_strings.h"
 #include "components/strings/grit/components_strings.h"
 #include "components/subresource_filter/core/browser/subresource_filter_features.h"
 #include "components/ukm/content/source_url_recorder.h"
@@ -81,7 +81,7 @@ namespace {
 
 // The list of content settings types to display on the Page Info UI. THE
 // ORDER OF THESE ITEMS IS IMPORTANT and comes from https://crbug.com/610358. To
-// propose changing it, email security-dev@chromium.org.
+// propose changing it, email security-dev@monyhar.org.
 ContentSettingsType kPermissionType[] = {
     ContentSettingsType::GEOLOCATION,
     ContentSettingsType::MEDIASTREAM_CAMERA,
@@ -259,7 +259,7 @@ void ReportAnyInsecureContent(
 
 // The list of chooser types that need to display entries in the Website
 // Settings UI. THE ORDER OF THESE ITEMS IS IMPORTANT. To propose changing it,
-// email security-dev@chromium.org.
+// email security-dev@monyhar.org.
 const PageInfo::ChooserUIInfo kChooserUIInfo[] = {
     {ContentSettingsType::USB_CHOOSER_DATA,
      IDS_PAGE_INFO_USB_DEVICE_SECONDARY_LABEL,

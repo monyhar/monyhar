@@ -44,7 +44,7 @@ namespace {
 using TestCompletionCallback =
     BrowsingDataHelperCallback<content::StorageUsageInfo>;
 
-const char kOrigin1[] = "http://www.chromium.org";
+const char kOrigin1[] = "http://www.monyhar.org";
 const char kOrigin2[] = "http://www.google.com";
 // This is only here to test that state for non-web-storage schemes is not
 // listed by the helper. Web storage schemes are http, https, file, ftp, ws,

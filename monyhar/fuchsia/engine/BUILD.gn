@@ -29,7 +29,7 @@ mojom("mojom") {
 fidl_library("fidl") {
   visibility = [ ":web_engine_core" ]
 
-  library_name = "chromium.internal"
+  library_name = "monyhar.internal"
 
   sources = [ "fidl/dev_tools.fidl" ]
 

@@ -149,7 +149,7 @@ HeadlessBrowserPolicyConnector::CreatePlatformProvider() {
 #if BUILDFLAG(GOOGLE_CHROME_BRANDING)
   base::FilePath config_dir_path(FILE_PATH_LITERAL("/etc/opt/chrome/policies"));
 #else
-  base::FilePath config_dir_path(FILE_PATH_LITERAL("/etc/chromium/policies"));
+  base::FilePath config_dir_path(FILE_PATH_LITERAL("/etc/monyhar/policies"));
 #endif
   std::unique_ptr<AsyncPolicyLoader> loader(new ConfigDirPolicyLoader(
       base::ThreadPool::CreateSequencedTaskRunner(

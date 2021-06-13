@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 //------------------------------------------------
-// Functions from libva used in chromium code.
+// Functions from libva used in monyhar code.
 //------------------------------------------------
 VAStatus vaBeginPicture(VADisplay dpy, VAContextID context, VASurfaceID render_target);
 const char *vaConfigAttribTypeStr(VAConfigAttribType configAttribType);

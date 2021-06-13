@@ -62,7 +62,7 @@ Any in-development feature can be added with no status, the only requirement is 
 
 * For a feature to be marked `status: "test"`, it must be in a sufficient state to permit internal testing.  For example, enabling it should not be known to easily cause crashes, leak memory, or otherwise significantly effect the reliability of bots.  Consideration should also be given to the potential for loss of test coverage of shipping behavior.  For example, if a feature causes a new code path to be taken instead of an existing one, it is possible that some valuable test coverage and regression protection could be lost by setting a feature to `status: "test"`.  Especially, using `status: "test"` for features that have substantially different code paths from the shipped product is strongly discouraged.  Consider using a [virtual test suite] or setting up a [flag-specific] [trybot (example)] when it's important to keep testing both old and new code paths.  [LayoutNG] and [BlinkGenPropertyTrees] are examples of features where we ensured test coverage of both new and old code paths until they were fully launched, without using `status: "test"`.  See the linked document/bug for how we achieved that.
 
-* For a feature to be marked `status: "experimental"`, it should be far enough along to permit testing by early adopter web developers.  Many chromium enthusiasts run with `--enable-experimental-web-platform-features`, and so promoting a feature to experimental status can be a good way to get early warning of any stability or compatibility problems.  If such problems are discovered (e.g. major websites being seriously broken when the feature is enabled), the feature should be demoted back to no status or `status: "test"` to avoid creating undue problems for such users.  It's notoriously difficult to diagnose a bug report from a user who neglects to mention that they have this flag enabled.  Often a feature will be set to experimental status long before it's implementation is complete, and while there is still substantial churn on the API design.  Features in this state are not expected to work completely, just do something of value which developers may want to provide feedback on.
+* For a feature to be marked `status: "experimental"`, it should be far enough along to permit testing by early adopter web developers.  Many monyhar enthusiasts run with `--enable-experimental-web-platform-features`, and so promoting a feature to experimental status can be a good way to get early warning of any stability or compatibility problems.  If such problems are discovered (e.g. major websites being seriously broken when the feature is enabled), the feature should be demoted back to no status or `status: "test"` to avoid creating undue problems for such users.  It's notoriously difficult to diagnose a bug report from a user who neglects to mention that they have this flag enabled.  Often a feature will be set to experimental status long before it's implementation is complete, and while there is still substantial churn on the API design.  Features in this state are not expected to work completely, just do something of value which developers may want to provide feedback on.
 
    **Note:** features set to "experimental" should **not** be expected to cause significant breakage of existing major sites. The primary use case is new APIs or features that are not expected to cause compat issues. If your feature could be reasonably expected to cause compat issues, please keep it marked no status or `status:"test"` [4], and instead use the Finch system, which is better suited to detect and disable such features in case of problems.
    
@@ -79,7 +79,7 @@ If a feature is not stable and no longer under active development, remove `statu
 In some cases, e.g. for finch expeirment, you may need to define a Chromium feature for a blink feature. Their relationship is
 defined in [content/child/runtime_features.cc]. See the [initialize blink features] doc for more details.
 
-**Note:** If a feature is implemented at both Chromium side and blink side, as the blink feature doesn't fully work by itself, we normally don't set the blink feature's status so that the Chromium feature can fully control the blink feature ([example][controlled by chromium feature]).
+**Note:** If a feature is implemented at both Chromium side and blink side, as the blink feature doesn't fully work by itself, we normally don't set the blink feature's status so that the Chromium feature can fully control the blink feature ([example][controlled by monyhar feature]).
 
 ### Runtime Enabled CSS Properties
 
@@ -184,24 +184,24 @@ When content_shell is run for web tests with `--stable-release-mode` flag, test-
 After applying most other feature settings, the features requested feature settings (comma-separated) are changed. "disable" is applied later (and takes precedence), regardless of the order the switches appear on the command line. These switches only affect Blink's state. Some features may need to be switched on in Chromium as well; in this case, a specific flag is required.
 
 **Announcement**
-https://groups.google.com/a/chromium.org/d/msg/blink-dev/JBakhu5J6Qs/re2LkfEslTAJ
+https://groups.google.com/a/monyhar.org/d/msg/blink-dev/JBakhu5J6Qs/re2LkfEslTAJ
 
 
-[web tests]: <https://chromium.googlesource.com/chromium/src/+/master/docs/testing/web_tests.md>
-[supportedPlatforms]: <https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/renderer/platform/runtime_enabled_features.json5#36>
-[cssProperties]: <https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/renderer/core/css/css_properties.json5>
-[virtual test suite]: <https://chromium.googlesource.com/chromium/src/+/master/docs/testing/web_tests.md#testing-runtime-flags>
-[flag-specific]: <https://chromium.googlesource.com/chromium/src/+/master/docs/testing/web_tests.md#testing-runtime-flags>
-[trybot (example)]: <https://chromium-review.googlesource.com/c/chromium/src/+/1850255>
+[web tests]: <https://monyhar.googlesource.com/monyhar/src/+/master/docs/testing/web_tests.md>
+[supportedPlatforms]: <https://monyhar.googlesource.com/monyhar/src/+/master/third_party/blink/renderer/platform/runtime_enabled_features.json5#36>
+[cssProperties]: <https://monyhar.googlesource.com/monyhar/src/+/master/third_party/blink/renderer/core/css/css_properties.json5>
+[virtual test suite]: <https://monyhar.googlesource.com/monyhar/src/+/master/docs/testing/web_tests.md#testing-runtime-flags>
+[flag-specific]: <https://monyhar.googlesource.com/monyhar/src/+/master/docs/testing/web_tests.md#testing-runtime-flags>
+[trybot (example)]: <https://monyhar-review.googlesource.com/c/monyhar/src/+/1850255>
 [LayoutNG]: <https://docs.google.com/document/d/17t6HjA5X8T5xq1LlKoLEGTn_MioGCdEPpijpJeLalK0/edit#heading=h.guvbepjyp0oj>
 [BlinkGenPropertyTrees]: <https://crbug.com/836884>
-[blink launch process]: <https://www.chromium.org/blink/launching-features>
-[Blink extended attribute]: <https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/renderer/bindings/IDLExtendedAttributes.md>
-[make_runtime_features.py]: <https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/renderer/build/scripts/make_runtime_features.py>
-[runtime_enabled_features.json5]: <https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/renderer/platform/runtime_enabled_features.json5>
-[make_internal_runtime_flags.py]: <https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/renderer/build/scripts/make_internal_runtime_flags.py>
-[code_generator_v8.py]: <https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/renderer/bindings/scripts/code_generator_v8.py>
-[virtual/stable]: <https://source.chromium.org/chromium/chromium/src/+/master:third_party/blink/web_tests/VirtualTestSuites;drc=9878f26d52d32871ed1c085444196e5453909eec;l=112>
-[content/child/runtime_features.cc]: <https://source.chromium.org/chromium/chromium/src/+/master:third_party/blink/common/features.cc>
-[initialize blink features]: <https://chromium.googlesource.com/chromium/src/+/master/docs/initialize_blink_features.md>
-[controlled by chromium feature]: <https://source.chromium.org/chromium/chromium/src/+/master:third_party/blink/renderer/platform/runtime_enabled_features.json5;drc=70bddadf50a14254072cf7ca0bcf83e4331a7d4f;l=833>
+[blink launch process]: <https://www.monyhar.org/blink/launching-features>
+[Blink extended attribute]: <https://monyhar.googlesource.com/monyhar/src/+/master/third_party/blink/renderer/bindings/IDLExtendedAttributes.md>
+[make_runtime_features.py]: <https://monyhar.googlesource.com/monyhar/src/+/master/third_party/blink/renderer/build/scripts/make_runtime_features.py>
+[runtime_enabled_features.json5]: <https://monyhar.googlesource.com/monyhar/src/+/master/third_party/blink/renderer/platform/runtime_enabled_features.json5>
+[make_internal_runtime_flags.py]: <https://monyhar.googlesource.com/monyhar/src/+/master/third_party/blink/renderer/build/scripts/make_internal_runtime_flags.py>
+[code_generator_v8.py]: <https://monyhar.googlesource.com/monyhar/src/+/master/third_party/blink/renderer/bindings/scripts/code_generator_v8.py>
+[virtual/stable]: <https://source.monyhar.org/monyhar/monyhar/src/+/master:third_party/blink/web_tests/VirtualTestSuites;drc=9878f26d52d32871ed1c085444196e5453909eec;l=112>
+[content/child/runtime_features.cc]: <https://source.monyhar.org/monyhar/monyhar/src/+/master:third_party/blink/common/features.cc>
+[initialize blink features]: <https://monyhar.googlesource.com/monyhar/src/+/master/docs/initialize_blink_features.md>
+[controlled by monyhar feature]: <https://source.monyhar.org/monyhar/monyhar/src/+/master:third_party/blink/renderer/platform/runtime_enabled_features.json5;drc=70bddadf50a14254072cf7ca0bcf83e4331a7d4f;l=833>

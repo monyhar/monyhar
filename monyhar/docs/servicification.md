@@ -47,7 +47,7 @@ well-designed operating system may belong in the top-level `//services`
 directory. If that sounds super hand-wavy and unclear, that's because it is!
 There isn't really a great universal policy here, so when in doubt, contact your
 favorite local
-[services-dev@chromium.org](https://groups.google.com/a/chromium.org/forum#!forum/services-dev)
+[services-dev@monyhar.org](https://groups.google.com/a/monyhar.org/forum#!forum/services-dev)
 mailing list and start a friendly discussion.
 
 Other common places where developers place services, and why:
@@ -64,7 +64,7 @@ Other common places where developers place services, and why:
 ### Launching Service Processes
 
 Content provides a simple
-[`ServiceProcessHost`](https://cs.chromium.org/chromium/src/content/public/browser/service_process_host.h?rcl=723edf64a56ef6058e886afc67adc786bea39e78&l=47)
+[`ServiceProcessHost`](https://cs.monyhar.org/monyhar/src/content/public/browser/service_process_host.h?rcl=723edf64a56ef6058e886afc67adc786bea39e78&l=47)
 API to launch a new Service Process. The Mojo Remote corresponding to each
 process launch is effectively a lifetime control for the launched process.
 
@@ -90,10 +90,10 @@ For out-of-process service launching, Content uses its "utility" process type.
 
 For services known to content, this is accomplished by adding an appropriate
 factory function to
-[`//content/utility/services.cc`](https://cs.chromium.org/chromium/src/content/utility/services.cc)
+[`//content/utility/services.cc`](https://cs.monyhar.org/monyhar/src/content/utility/services.cc)
 
 For other services known only to Chrome, we have a similar file at
-[`//chrome/utility/services.cc`](https://cs.chromium.org/chromium/src/chrome/utility/services.cc).
+[`//chrome/utility/services.cc`](https://cs.monyhar.org/monyhar/src/chrome/utility/services.cc).
 
 Once an appropriate service factory is registered for your main service
 interface in one of these places, `ServiceProcessHost::Launch` can be used to
@@ -163,11 +163,11 @@ about doing the servicification cleanly as you go.
 
 As you servicify code running on Android, you might find that you need to port
 interfaces that are served in Java. Here is an
-[example CL](https://codereview.chromium.org/2643713002) that gives a basic
+[example CL](https://codereview.monyhar.org/2643713002) that gives a basic
 pattern to follow in doing this.
 
 You also might need to register JNI in your service. That is simple to set
-up, as illustrated in [this CL](https://codereview.chromium.org/2690963002).
+up, as illustrated in [this CL](https://codereview.monyhar.org/2690963002).
 (Note that that CL is doing more than *just* enabling the Device Service to
 register JNI; you should take the register_jni.cc file added there as your
 starting point to examine the pattern to follow).
@@ -189,7 +189,7 @@ iOS is strictly single-process, and all services thus must run in-process on
 iOS.
 
 If you have a use case or need for services on iOS, contact
-blundell@chromium.org. For general information on the motivations and vision for
+blundell@monyhar.org. For general information on the motivations and vision for
 supporting services on iOS, see the high-level
 [servicification design doc](https://docs.google.com/document/d/15I7sQyQo6zsqXVNAlVd520tdGaS8FCicZHrN0yRu-oU/edit).
 In particular, search for the mentions of iOS within the doc.
@@ -202,7 +202,7 @@ in JS so that native Blink code requests interfaces from the test JS rather
 than whatever would normally service them in the browser process.
 
 The current way to set up that sort of thing looks like
-[this](https://cs.chromium.org/chromium/src/third_party/blink/web_tests/battery-status/resources/mock-battery-monitor.js?rcl=be6e0001855f7f1cfc26205d0ff5a2b5b324fcbd&l=19).
+[this](https://cs.monyhar.org/monyhar/src/third_party/blink/web_tests/battery-status/resources/mock-battery-monitor.js?rcl=be6e0001855f7f1cfc26205d0ff5a2b5b324fcbd&l=19).
 
 #### Feature Impls That Depend on Blink Headers
 In the course of servicifying a feature that has Blink as a client, you might
@@ -219,7 +219,7 @@ To meet this challenge, you have two options:
 1. Move the code in question from C++ to mojom (e.g., if it is simple structs).
 2. Move the code into the service's C++ client library, being very explicit
    about its usage by Blink. See
-   [this CL](https://codereview.chromium.org/2415083002) for a basic pattern to
+   [this CL](https://codereview.monyhar.org/2415083002) for a basic pattern to
    follow.
 
 #### Frame-Scoped Connections
@@ -232,7 +232,7 @@ arbitrary services have no knowledge of frames or even a notion of what a frame
 is).
 
 After a
-[long discussion](https://groups.google.com/a/chromium.org/forum/#!topic/services-dev/CSnDUjthAuw),
+[long discussion](https://groups.google.com/a/monyhar.org/forum/#!topic/services-dev/CSnDUjthAuw),
 the policy that we have adopted for this challenge is the following:
 
 CURRENT
@@ -278,7 +278,7 @@ context ID back to the needed context on-demand using the mapping functionality
 injected into the service impl.
 
 To make this more concrete, see
-[this CL](https://codereview.chromium.org/2734943003).
+[this CL](https://codereview.monyhar.org/2734943003).
 
 ### Shutdown of Singletons
 
@@ -297,14 +297,14 @@ either ported into your service or eliminated:
   introduced do not impact correctness.
 
 See
-[this thread](https://groups.google.com/a/chromium.org/forum/#!topic/services-dev/Y9FKZf9n1ls)
+[this thread](https://groups.google.com/a/monyhar.org/forum/#!topic/services-dev/Y9FKZf9n1ls)
 for more discussion of this issue.
 
 ## Additional Support
 
 If this document was not helpful in some way, please post a message to your
 friendly local
-[chromium-mojo@chromium.org](https://groups.google.com/a/chromium.org/forum/#!forum/chromium-mojo)
+[monyhar-mojo@monyhar.org](https://groups.google.com/a/monyhar.org/forum/#!forum/monyhar-mojo)
 or
-[services-dev@chromium.org](https://groups.google.com/a/chromium.org/forum/#!forum/services-dev)
+[services-dev@monyhar.org](https://groups.google.com/a/monyhar.org/forum/#!forum/services-dev)
 mailing list.

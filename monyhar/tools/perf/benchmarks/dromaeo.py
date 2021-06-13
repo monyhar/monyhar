@@ -10,9 +10,9 @@ from page_sets import dromaeo_pages
 
 
 @benchmark.Info(component='Blink>Bindings',
-                emails=['jbroman@chromium.org',
-                         'yukishiino@chromium.org',
-                         'haraken@chromium.org'])
+                emails=['jbroman@monyhar.org',
+                         'yukishiino@monyhar.org',
+                         'haraken@monyhar.org'])
 # pylint: disable=protected-access
 class DromaeoBenchmark(press._PressBenchmark):
 

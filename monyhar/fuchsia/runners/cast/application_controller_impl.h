@@ -12,16 +12,16 @@
 #include <lib/fidl/cpp/interface_request.h>
 
 #include "base/macros.h"
-#include "fuchsia/fidl/chromium/cast/cpp/fidl.h"
+#include "fuchsia/fidl/monyhar/cast/cpp/fidl.h"
 
-class ApplicationControllerImpl : public chromium::cast::ApplicationController {
+class ApplicationControllerImpl : public monyhar::cast::ApplicationController {
  public:
   ApplicationControllerImpl(fuchsia::web::Frame* frame,
-                            chromium::cast::ApplicationContext* context);
+                            monyhar::cast::ApplicationContext* context);
   ~ApplicationControllerImpl() final;
 
  protected:
-  // chromium::cast::ApplicationController implementation.
+  // monyhar::cast::ApplicationController implementation.
   void SetTouchInputEnabled(bool enable) final;
   void GetMediaPlayer(
       ::fidl::InterfaceRequest<fuchsia::media::sessions2::Player> request)
@@ -30,7 +30,7 @@ class ApplicationControllerImpl : public chromium::cast::ApplicationController {
   void GetPrivateMemorySize(GetPrivateMemorySizeCallback callback) override;
 
  private:
-  fidl::Binding<chromium::cast::ApplicationController> binding_;
+  fidl::Binding<monyhar::cast::ApplicationController> binding_;
   fuchsia::web::Frame* const frame_;
 
   DISALLOW_COPY_AND_ASSIGN(ApplicationControllerImpl);

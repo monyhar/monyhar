@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.pagecontroller.controllers.codelab;
+package org.monyhar.chrome.test.pagecontroller.controllers.codelab;
 
-import org.chromium.chrome.test.pagecontroller.controllers.PageController;
-import org.chromium.chrome.test.pagecontroller.utils.IUi2Locator;
+import org.monyhar.chrome.test.pagecontroller.controllers.PageController;
+import org.monyhar.chrome.test.pagecontroller.utils.IUi2Locator;
 
 // TODO: Implement page controller for MainSettings.java.  Read
 // documentation in the PageController class and refer to implemented Page
@@ -13,7 +13,7 @@ import org.chromium.chrome.test.pagecontroller.utils.IUi2Locator;
 
 /**
  * Settings Menu Page Controller for the Code Lab, representing
- * {@link org.chromium.chrome.browser.settings.MainSettings}.
+ * {@link org.monyhar.chrome.browser.settings.MainSettings}.
  */
 public class SettingsControllerForCodelab extends PageController {
     // TODO: Replace null with a an actual locator.  Hint, see

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox;
+package org.monyhar.chrome.browser.omnibox;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -23,7 +23,7 @@ import android.view.inputmethod.InputContentInfo;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 import java.util.Locale;
 import java.util.regex.Pattern;

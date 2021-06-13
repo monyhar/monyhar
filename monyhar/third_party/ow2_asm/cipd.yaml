@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:$(cat version.txt)
-package: chromium/third_party/ow2_asm
+package: monyhar/third_party/ow2_asm
 description: ow2_asm Java library
 data:
   - file: lib/asm.jar

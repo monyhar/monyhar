@@ -30,11 +30,11 @@ diff \Users\rogerta\Documents\Visual Studio 2017\Projects\7z.1514.orig\C\Util\Sf
 <           unsigned extPrice = FindItem(kExts, sizeof(kExts) / sizeof(kExts[0]), name + len - extLen, extLen);
 ---
 >           unsigned extPrice = FindItem(kExts, sizeof(kExts) / sizeof(kExts[0]), name + len2 - extLen, extLen);
-diff --git a/third_party/lzma_sdk/README.chromium b/third_party/lzma_sdk/README.chromium
+diff --git a/third_party/lzma_sdk/README.monyhar b/third_party/lzma_sdk/README.monyhar
 index 96fc788132b2..956b8d6c2fae 100644
---- a/third_party/lzma_sdk/README.chromium
-+++ b/third_party/lzma_sdk/README.chromium
-@@ -28,4 +28,5 @@ The patch in Util/SfxSetup/chromium.patch was applied so that:
+--- a/third_party/lzma_sdk/README.monyhar
++++ b/third_party/lzma_sdk/README.monyhar
+@@ -28,4 +28,5 @@ The patch in Util/SfxSetup/monyhar.patch was applied so that:
     C6246: Local declaration hides declaration of same name in outer scope.
  2/ Fix for includes file names, since the original code causes an include
     file violation during git cl presubmit.

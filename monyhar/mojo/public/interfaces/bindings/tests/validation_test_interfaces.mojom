@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 
-[JavaPackage="org.chromium.mojo.bindings.test.mojom.mojo"]
+[JavaPackage="org.monyhar.mojo.bindings.test.mojom.mojo"]
 module mojo.test;
 
 struct StructA {

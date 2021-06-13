@@ -302,7 +302,7 @@ base::TimeTicks EventLatencyTimeFromPerformanceCounter(UINT64 event_time) {
 gfx::Point EventLocationFromMSG(const MSG& native_event) {
   // This code may use GetCursorPos() to get a mouse location. This may
   // fail in certain situations (see
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=540840#c20 for
+  // https://bugs.monyhar.org/p/monyhar/issues/detail?id=540840#c20 for
   // details). To handle failure this code tracks the last known location so
   // that it can use a reasonable value should GetCursorPos() fail.
   static gfx::Point last_known_location;

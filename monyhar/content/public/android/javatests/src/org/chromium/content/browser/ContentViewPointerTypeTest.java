@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import android.graphics.Rect;
 import android.os.SystemClock;
@@ -15,16 +15,16 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.base.test.util.UrlUtils;
-import org.chromium.content_public.browser.test.ContentJUnit4ClassRunner;
-import org.chromium.content_public.browser.test.util.DOMUtils;
-import org.chromium.content_shell.ShellViewAndroidDelegate;
-import org.chromium.content_shell.ShellViewAndroidDelegate.OnCursorUpdateHelper;
-import org.chromium.content_shell_apk.ContentShellActivity;
-import org.chromium.content_shell_apk.ContentShellActivityTestRule;
-import org.chromium.ui.mojom.CursorType;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.base.test.util.UrlUtils;
+import org.monyhar.content_public.browser.test.ContentJUnit4ClassRunner;
+import org.monyhar.content_public.browser.test.util.DOMUtils;
+import org.monyhar.content_shell.ShellViewAndroidDelegate;
+import org.monyhar.content_shell.ShellViewAndroidDelegate.OnCursorUpdateHelper;
+import org.monyhar.content_shell_apk.ContentShellActivity;
+import org.monyhar.content_shell_apk.ContentShellActivityTestRule;
+import org.monyhar.ui.mojom.CursorType;
 
 /**
  * Tests that we can move mouse cursor and test cursor icon.

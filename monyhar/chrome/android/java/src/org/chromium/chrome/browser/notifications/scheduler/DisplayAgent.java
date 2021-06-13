@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.notifications.scheduler;
+package org.monyhar.chrome.browser.notifications.scheduler;
 
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
@@ -12,24 +12,24 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.Icon;
 import android.os.Build;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.init.BrowserParts;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
-import org.chromium.chrome.browser.init.EmptyBrowserParts;
-import org.chromium.chrome.browser.notifications.NotificationIntentInterceptor;
-import org.chromium.chrome.browser.notifications.NotificationUmaTracker;
-import org.chromium.chrome.browser.notifications.NotificationUmaTracker.SystemNotificationType;
-import org.chromium.chrome.browser.notifications.NotificationWrapperBuilderFactory;
-import org.chromium.chrome.browser.notifications.channels.ChromeChannelDefinitions.ChannelId;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxyImpl;
-import org.chromium.components.browser_ui.notifications.NotificationMetadata;
-import org.chromium.components.browser_ui.notifications.NotificationWrapper;
-import org.chromium.components.browser_ui.notifications.NotificationWrapperBuilder;
-import org.chromium.components.browser_ui.notifications.PendingIntentProvider;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.init.BrowserParts;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.chrome.browser.init.EmptyBrowserParts;
+import org.monyhar.chrome.browser.notifications.NotificationIntentInterceptor;
+import org.monyhar.chrome.browser.notifications.NotificationUmaTracker;
+import org.monyhar.chrome.browser.notifications.NotificationUmaTracker.SystemNotificationType;
+import org.monyhar.chrome.browser.notifications.NotificationWrapperBuilderFactory;
+import org.monyhar.chrome.browser.notifications.channels.ChromeChannelDefinitions.ChannelId;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxyImpl;
+import org.monyhar.components.browser_ui.notifications.NotificationMetadata;
+import org.monyhar.components.browser_ui.notifications.NotificationWrapper;
+import org.monyhar.components.browser_ui.notifications.NotificationWrapperBuilder;
+import org.monyhar.components.browser_ui.notifications.PendingIntentProvider;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -43,15 +43,15 @@ public class DisplayAgent {
     private static final int DISPLAY_AGENT_NOTIFICATION_ID = 0;
 
     private static final String EXTRA_INTENT_TYPE =
-            "org.chromium.chrome.browser.notifications.scheduler.EXTRA_INTENT_TYPE";
+            "org.monyhar.chrome.browser.notifications.scheduler.EXTRA_INTENT_TYPE";
     private static final String EXTRA_GUID =
-            "org.chromium.chrome.browser.notifications.scheduler.EXTRA_GUID";
+            "org.monyhar.chrome.browser.notifications.scheduler.EXTRA_GUID";
     private static final String EXTRA_ACTION_BUTTON_TYPE =
-            "org.chromium.chrome.browser.notifications.scheduler.EXTRA_ACTION_BUTTON_TYPE";
+            "org.monyhar.chrome.browser.notifications.scheduler.EXTRA_ACTION_BUTTON_TYPE";
     private static final String EXTRA_ACTION_BUTTON_ID =
-            "org.chromium.chrome.browser.notifications.scheduler.EXTRA_ACTION_BUTTON_ID";
+            "org.monyhar.chrome.browser.notifications.scheduler.EXTRA_ACTION_BUTTON_ID";
     private static final String EXTRA_SCHEDULER_CLIENT_TYPE =
-            "org.chromium.chrome.browser.notifications.scheduler.EXTRA_SCHEDULER_CLIENT_TYPE ";
+            "org.monyhar.chrome.browser.notifications.scheduler.EXTRA_SCHEDULER_CLIENT_TYPE ";
 
     /**
      * Contains icon info on the notification.

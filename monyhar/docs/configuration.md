@@ -135,10 +135,10 @@ You should add a setting if end-users might want to change this behavior. A
 decent litmus test for whether something should be a flag or a setting is: "will
 someone who can't read or write code want to change this?"
 
-[base-commandline]: https://cs.chromium.org/chromium/src/base/command_line.h?type=cs&l=98
-[base-feature]: https://cs.chromium.org/chromium/src/base/feature_list.h?sq=package:chromium&g=0&l=53
-[about-flags]: https://cs.chromium.org/chromium/src/chrome/browser/about_flags.cc
-[fieldtrial-config]: https://cs.chromium.org/chromium/src/testing/variations/fieldtrial_testing_config.json
-[flag-metadata]: https://cs.chromium.org/chromium/src/chrome/browser/flag-metadata.json
-[prefs]: https://www.chromium.org/developers/design-documents/preferences
-[profile-register]: https://cs.chromium.org/chromium/src/chrome/browser/profiles/profile.cc?type=cs&g=0&l=138
+[base-commandline]: https://cs.monyhar.org/monyhar/src/base/command_line.h?type=cs&l=98
+[base-feature]: https://cs.monyhar.org/monyhar/src/base/feature_list.h?sq=package:monyhar&g=0&l=53
+[about-flags]: https://cs.monyhar.org/monyhar/src/chrome/browser/about_flags.cc
+[fieldtrial-config]: https://cs.monyhar.org/monyhar/src/testing/variations/fieldtrial_testing_config.json
+[flag-metadata]: https://cs.monyhar.org/monyhar/src/chrome/browser/flag-metadata.json
+[prefs]: https://www.monyhar.org/developers/design-documents/preferences
+[profile-register]: https://cs.monyhar.org/monyhar/src/chrome/browser/profiles/profile.cc?type=cs&g=0&l=138

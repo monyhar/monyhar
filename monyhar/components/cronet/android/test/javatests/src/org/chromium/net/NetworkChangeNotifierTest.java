@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
 import static android.system.OsConstants.AF_INET6;
 import static android.system.OsConstants.SOCK_STREAM;
@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-import static org.chromium.net.CronetTestRule.assertContains;
+import static org.monyhar.net.CronetTestRule.assertContains;
 
 import android.annotation.TargetApi;
 import android.os.Build;
@@ -24,10 +24,10 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.Feature;
-import org.chromium.net.CronetTestRule.CronetTestFramework;
-import org.chromium.net.CronetTestRule.OnlyRunNativeCronet;
-import org.chromium.net.impl.CronetLibraryLoader;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.net.CronetTestRule.CronetTestFramework;
+import org.monyhar.net.CronetTestRule.OnlyRunNativeCronet;
+import org.monyhar.net.impl.CronetLibraryLoader;
 
 import java.io.FileDescriptor;
 import java.net.InetAddress;

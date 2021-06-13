@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@1.0.cr0
-package: chromium/third_party/android_deps/libs/com_google_guava_listenablefuture
+package: monyhar/third_party/android_deps/libs/com_google_guava_listenablefuture
 description: "Guava ListenableFuture only"
 data:
 - file: listenablefuture-1.0.jar

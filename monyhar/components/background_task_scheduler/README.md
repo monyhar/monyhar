@@ -71,7 +71,7 @@ there is no overlap between different tasks.
 The connection between `TaskIds` and the corresponding `BackgroundTask` classes is done by injecting
 a `BackgroundTaskFactory` class in `BackgroundTaskSchedulerFactory`. For the //chrome embedder
 (which is the only one needing the association), the `ChromeBackgroundTaskFactory` [implementation]
-(https://cs.chromium.org/chromium/src/chrome/android/java/src/org/chromium/chrome/browser
+(https://cs.monyhar.org/monyhar/src/chrome/android/java/src/org/monyhar/chrome/browser
 /background_task_scheduler/ChromeBackgroundTaskFactory.java) was created. Anyone that adds a new
 task id to `TaskIds` should add a case in this class to.
 
@@ -211,7 +211,7 @@ myTimingInfo.accept(visitor);
 Some of the tasks running in the background require native parts of the browser
 to be initialized. In order to simplify implementation of such tasks, we provide
 a base `NativeBackgroundTask`
-[implementation](https://cs.chromium.org/chromium/src/components/background_task_scheduler/android/java/src/org/chromium/components/background_task_scheduler/NativeBackgroundTask.java)
+[implementation](https://cs.monyhar.org/monyhar/src/components/background_task_scheduler/android/java/src/org/monyhar/components/background_task_scheduler/NativeBackgroundTask.java)
 in the browser layer. It requires extending classes to implement 4 methods:
 
  * `onStartTaskBeforeNativeLoaded(...)` where the background task can decide

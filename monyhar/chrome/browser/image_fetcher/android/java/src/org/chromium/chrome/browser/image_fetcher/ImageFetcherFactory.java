@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.image_fetcher;
+package org.monyhar.chrome.browser.image_fetcher;
 
-import org.chromium.base.DiscardableReferencePool;
-import org.chromium.chrome.browser.profiles.Profile;
+import org.monyhar.base.DiscardableReferencePool;
+import org.monyhar.chrome.browser.profiles.Profile;
 
 /**
  * Factory to provide the image fetcher best suited for the given config.

@@ -312,7 +312,7 @@ As described above, an application's manifest file must explicitly list all the
 executable code modules that the application directly depends on, including
 modules from the application itself (``.nexe`` and ``.so`` files), modules from
 the Native Client SDK (e.g., ``libppapi_cpp.so``), and perhaps also modules from
-`webports <https://chromium.googlesource.com/webports>`_ or from `middleware 
+`webports <https://monyhar.googlesource.com/webports>`_ or from `middleware 
 systems <../../community/middleware>`_ that the application uses. You must
 provide all of those modules as part of the application deployment process.
 

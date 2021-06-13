@@ -18,13 +18,13 @@ def RegisterAllBackends():
 
 def _IncludeDeps():
   """Imports all the project dependencies."""
-  chromium_dir = os.path.abspath(os.path.join(ROOT_DIR, os.pardir, os.pardir))
+  monyhar_dir = os.path.abspath(os.path.join(ROOT_DIR, os.pardir, os.pardir))
 
   sys.path += [
       ROOT_DIR,
 
       # Include all dependencies.
-      os.path.join(chromium_dir, 'build', 'android'),  # For pylib.
+      os.path.join(monyhar_dir, 'build', 'android'),  # For pylib.
   ]
 
 _IncludeDeps()

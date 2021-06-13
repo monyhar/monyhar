@@ -36,7 +36,7 @@ class _LeakDetectionBase(perf_benchmark.PerfBenchmark):
     pass
 
 
-@benchmark.Info(emails=['yuzus@chromium.org'])
+@benchmark.Info(emails=['yuzus@monyhar.org'])
 class MemoryLeakDetectionBenchmark(_LeakDetectionBase):
   page_set = page_sets.LeakDetectionStorySet
 

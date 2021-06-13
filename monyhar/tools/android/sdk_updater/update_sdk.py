@@ -199,7 +199,7 @@ def GetCipdPackagePath(pkg_yaml_file):
 
   There should one line in .yaml file, e.g.:
   "package: chrome_internal/third_party/android_sdk/internal/q/add-ons" or
-  "package: chromium/third_party/android_sdk/public/platforms"
+  "package: monyhar/third_party/android_sdk/public/platforms"
 
   Args:
     pkg_yaml_file: The yaml file to find CIPD package path.
@@ -270,7 +270,7 @@ def UploadSdkPackage(sdk_root, dry_run, service_url, package, yaml_file,
     output = subprocess.check_output(upload_sdk_cmd)
 
     # Need to match pattern to find new instance ID.
-    # e.g.: chromium/third_party/android_sdk/public/platforms:\
+    # e.g.: monyhar/third_party/android_sdk/public/platforms:\
     # Kg2t9p0YnQk8bldUv4VA3o156uPXLUfIFAmVZ-Gm5ewC
     pattern = re.compile(
         # Match the argument with "Instance: %s:" for cipd_package_path

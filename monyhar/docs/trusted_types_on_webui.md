@@ -207,14 +207,14 @@ source->DisableTrustedTypesCSP();
 ## How to add a test for Trusted Types on a WebUI page?
 
 You can add your WebUI page to [this list]
-(https://source.chromium.org/chromium/chromium/src/+/main:chrome/browser/ui/webui/chrome_url_data_manager_browsertest.cc;l=194;drc=de8ade0753244ff6d1ef20cb2a38fe292fe9ba0a) and it will check for
+(https://source.monyhar.org/monyhar/monyhar/src/+/main:chrome/browser/ui/webui/chrome_url_data_manager_browsertest.cc;l=194;drc=de8ade0753244ff6d1ef20cb2a38fe292fe9ba0a) and it will check for
 Trusted Types violations on your WebUI page.
 
 ## Sample CLs
 
 1. [Remove innerHTML usage in chrome://interstitials]
-(https://chromium-review.googlesource.com/c/chromium/src/+/2245937)
+(https://monyhar-review.googlesource.com/c/monyhar/src/+/2245937)
 2. [Trusted Type various WebUI]
-(https://chromium-review.googlesource.com/c/chromium/src/+/2236992)
+(https://monyhar-review.googlesource.com/c/monyhar/src/+/2236992)
 3. [Trusted Type WebRTC internals]
-(https://chromium-review.googlesource.com/c/chromium/src/+/2208950)
+(https://monyhar-review.googlesource.com/c/monyhar/src/+/2208950)

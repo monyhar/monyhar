@@ -240,7 +240,7 @@
       "use_libfuzzer": true
     }
   },
-  "win10_chromium_inverse_fieldtrials_x64_fyi_rel_ng": {
+  "win10_monyhar_inverse_fieldtrials_x64_fyi_rel_ng": {
     "gn_args": {
       "dcheck_always_on": true,
       "enable_resource_allowlist_generation": true,
@@ -253,7 +253,7 @@
       "use_goma": true
     }
   },
-  "win10_chromium_x64_dbg_ng": {
+  "win10_monyhar_x64_dbg_ng": {
     "gn_args": {
       "ffmpeg_branding": "Chrome",
       "is_component_build": true,
@@ -263,7 +263,7 @@
       "use_goma": true
     }
   },
-  "win10_chromium_x64_rel_ng": {
+  "win10_monyhar_x64_rel_ng": {
     "gn_args": {
       "coverage_instrumentation_input_file": "//.code-coverage/files_to_instrument.txt",
       "dcheck_always_on": true,
@@ -277,7 +277,7 @@
       "use_goma": true
     }
   },
-  "win10_chromium_x64_rel_ng_exp": {
+  "win10_monyhar_x64_rel_ng_exp": {
     "gn_args": {
       "dcheck_always_on": true,
       "is_component_build": false,
@@ -286,7 +286,7 @@
       "use_goma": true
     }
   },
-  "win10_chromium_x64_rel_ng_rts": {
+  "win10_monyhar_x64_rel_ng_rts": {
     "gn_args": {
       "coverage_instrumentation_input_file": "//.code-coverage/files_to_instrument.txt",
       "dcheck_always_on": true,
@@ -323,7 +323,7 @@
       "use_goma": true
     }
   },
-  "win_chromium_compile_dbg_ng": {
+  "win_monyhar_compile_dbg_ng": {
     "gn_args": {
       "ffmpeg_branding": "Chrome",
       "is_component_build": true,
@@ -334,7 +334,7 @@
       "use_goma": true
     }
   },
-  "win_chromium_compile_rel_ng": {
+  "win_monyhar_compile_rel_ng": {
     "gn_args": {
       "dcheck_always_on": true,
       "enable_resource_allowlist_generation": true,
@@ -347,7 +347,7 @@
       "use_goma": true
     }
   },
-  "win_chromium_dbg_ng": {
+  "win_monyhar_dbg_ng": {
     "gn_args": {
       "ffmpeg_branding": "Chrome",
       "is_component_build": true,
@@ -358,7 +358,7 @@
       "use_goma": true
     }
   },
-  "win_chromium_x64_rel_ng": {
+  "win_monyhar_x64_rel_ng": {
     "gn_args": {
       "dcheck_always_on": true,
       "ffmpeg_branding": "Chrome",

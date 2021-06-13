@@ -188,7 +188,7 @@ IN_PROC_BROWSER_TEST_F(NoBestEffortTasksTest, LoadExtensionAndSendMessages) {
   // extension permissions).
   ui_test_utils::NavigateToURL(
       browser(),
-      embedded_test_server()->GetURL("fake.chromium.org", "/empty.html"));
+      embedded_test_server()->GetURL("fake.monyhar.org", "/empty.html"));
 
   // Execute JavaScript in the test page, to send a ping message to the
   // extension and await the reply. The chrome.runtime.sendMessage() operation

@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.language.settings;
+package org.monyhar.chrome.browser.language.settings;
 
 import android.app.Activity;
 import android.content.res.Resources;
 
-import org.chromium.base.BuildInfo;
-import org.chromium.chrome.browser.language.AppLocaleUtils;
-import org.chromium.chrome.browser.language.R;
-import org.chromium.chrome.browser.ui.messages.snackbar.Snackbar;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager;
-import org.chromium.chrome.browser.ui.messages.snackbar.SnackbarManager.SnackbarController;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.chrome.browser.language.AppLocaleUtils;
+import org.monyhar.chrome.browser.language.R;
+import org.monyhar.chrome.browser.ui.messages.snackbar.Snackbar;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager;
+import org.monyhar.chrome.browser.ui.messages.snackbar.SnackbarManager.SnackbarController;
 
 /**
  * Helper class to manage the preferences UI when selecting an app language from LanguageSettings.

@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test.util;
+package org.monyhar.android_webview.test.util;
 
 import android.support.test.InstrumentationRegistry;
 
-import org.chromium.android_webview.AwQuotaManagerBridge;
-import org.chromium.base.test.util.CallbackHelper;
+import org.monyhar.android_webview.AwQuotaManagerBridge;
+import org.monyhar.base.test.util.CallbackHelper;
 
 /**
  * This class provides common methods for AwQuotaManagerBridge related tests

@@ -108,11 +108,11 @@ preferred for security-critical changes.
 
 ## IPC review is slow!
 
-Please reach out to <ipc-security-reviewers@chromium.org> (for public issues)
+Please reach out to <ipc-security-reviewers@monyhar.org> (for public issues)
 or <chrome-security-ipc@google.com> (for internal issues). Large and complex
 features can be difficult to evaluate on a change by change basis; reaching out
 can help provide IPC reviewers with better context on the security properties
 of the overall system, making it much easier to evaluate individual changes.
 
-[chrome-security-review]: https://www.chromium.org/Home/chromium-security/security-reviews
-[mojo-best-practices]: https://chromium.googlesource.com/chromium/src/+/main/docs/security/mojo.md
+[chrome-security-review]: https://www.monyhar.org/Home/monyhar-security/security-reviews
+[mojo-best-practices]: https://monyhar.googlesource.com/monyhar/src/+/main/docs/security/mojo.md

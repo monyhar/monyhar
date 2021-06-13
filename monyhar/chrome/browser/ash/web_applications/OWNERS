@@ -1,13 +1,13 @@
 file://chromeos/components/system_apps/PLATFORM_OWNERS
 
-tapted@chromium.org
+tapted@monyhar.org
 dstockwell@google.com
-bugsnash@chromium.org
+bugsnash@monyhar.org
 
 per-file chrome_camera_app*=file://chromeos/components/camera_app_ui/OWNERS
 per-file chrome_file_manager*=file://ash/content/file_manager/OWNERS
-per-file crosh*=joelhockey@chromium.org
+per-file crosh*=joelhockey@monyhar.org
 per-file file_manager*=file://ash/content/file_manager/OWNERS
-per-file terminal*=calamity@chromium.org
-per-file terminal*=joelhockey@chromium.org
-per-file eche*=dhnishi@chromium.org
+per-file terminal*=calamity@monyhar.org
+per-file terminal*=joelhockey@monyhar.org
+per-file eche*=dhnishi@monyhar.org

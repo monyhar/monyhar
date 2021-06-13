@@ -6,10 +6,10 @@ import("//build/config/android/rules.gni")
 
 android_library("service_manager_java") {
   sources = [
-    "src/org/chromium/services/service_manager/Connector.java",
-    "src/org/chromium/services/service_manager/InterfaceFactory.java",
-    "src/org/chromium/services/service_manager/InterfaceProvider.java",
-    "src/org/chromium/services/service_manager/InterfaceRegistry.java",
+    "src/org/monyhar/services/service_manager/Connector.java",
+    "src/org/monyhar/services/service_manager/InterfaceFactory.java",
+    "src/org/monyhar/services/service_manager/InterfaceProvider.java",
+    "src/org/monyhar/services/service_manager/InterfaceRegistry.java",
   ]
   deps = [
     "//base:base_java",

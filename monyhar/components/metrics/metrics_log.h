@@ -210,9 +210,9 @@ class MetricsLog {
                                  SystemProfileProto* system_profile);
 
   // Within the stability group, write attributes that need to be updated asap
-  // and can't be delayed until the user decides to restart chromium.
+  // and can't be delayed until the user decides to restart monyhar.
   // Delaying these stats would bias metrics away from happy long lived
-  // chromium processes (ones that don't crash, and keep on running).
+  // monyhar processes (ones that don't crash, and keep on running).
   void WriteRealtimeStabilityAttributes(base::TimeDelta incremental_uptime,
                                         base::TimeDelta uptime);
 

@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.minidump_uploader;
+package org.monyhar.components.minidump_uploader;
 
-import org.chromium.components.minidump_uploader.util.HttpURLConnectionFactory;
-import org.chromium.components.minidump_uploader.util.HttpURLConnectionFactoryImpl;
+import org.monyhar.components.minidump_uploader.util.HttpURLConnectionFactory;
+import org.monyhar.components.minidump_uploader.util.HttpURLConnectionFactoryImpl;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
@@ -184,7 +184,7 @@ public class MinidumpUploader {
             }
             // Note: The regex allows all alphanumeric characters, as well as dashes.
             // This matches the code that generates minidumps boundaries:
-            // https://chromium.googlesource.com/crashpad/crashpad/+/0c322ecc3f711c34fbf85b2cbe69f38b8dbccf05/util/net/http_multipart_builder.cc#36
+            // https://monyhar.googlesource.com/crashpad/crashpad/+/0c322ecc3f711c34fbf85b2cbe69f38b8dbccf05/util/net/http_multipart_builder.cc#36
             if (!boundary.matches("^[a-zA-Z0-9-]*$")) {
                 throw new RuntimeException("File has an illegal MIME boundary: " + boundary);
             }

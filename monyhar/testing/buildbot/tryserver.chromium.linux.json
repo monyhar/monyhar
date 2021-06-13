@@ -35,7 +35,7 @@
               "os": "Ubuntu-18.04"
             }
           ],
-          "service_account": "chromium-tester@chops-service-accounts.iam.gserviceaccount.com",
+          "service_account": "monyhar-tester@chops-service-accounts.iam.gserviceaccount.com",
           "shards": 12
         },
         "test_id_prefix": "ninja://:blink_web_tests/"
@@ -71,7 +71,7 @@
               "os": "Ubuntu-16.04"
             }
           ],
-          "service_account": "chromium-tester@chops-service-accounts.iam.gserviceaccount.com",
+          "service_account": "monyhar-tester@chops-service-accounts.iam.gserviceaccount.com",
           "shards": 12
         },
         "test_id_prefix": "ninja://:blink_web_tests/"

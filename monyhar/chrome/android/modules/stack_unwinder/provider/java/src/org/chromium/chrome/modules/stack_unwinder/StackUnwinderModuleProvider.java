@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.modules.stack_unwinder;
+package org.monyhar.chrome.modules.stack_unwinder;
 
-import org.chromium.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.CalledByNative;
 
 /** Installs and loads the stack unwinder module. */
 public class StackUnwinderModuleProvider {

@@ -7,6 +7,6 @@ include_rules = [
   "+chrome/test/android",
   "+components/browser_ui/styles/android",
   "+components/browser_ui/widget/android",
-  "+content/public/test/android/javatests/src/org/chromium/content_public/browser",
+  "+content/public/test/android/javatests/src/org/monyhar/content_public/browser",
   "+ui/android",
 ]

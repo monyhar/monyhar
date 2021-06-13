@@ -2,7 +2,7 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
-package: chromium/third_party/android_sdk/public/build-tools/29.0.2
+package: monyhar/third_party/android_sdk/public/build-tools/29.0.2
 description: build-tools Android SDK Build Tools
 root: ../../public/
 data:

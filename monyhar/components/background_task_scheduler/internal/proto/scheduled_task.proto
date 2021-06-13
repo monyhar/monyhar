@@ -8,7 +8,7 @@ option optimize_for = LITE_RUNTIME;
 
 package background_task_scheduler;
 
-option java_package = "org.chromium.components.background_task_scheduler.internal";
+option java_package = "org.monyhar.components.background_task_scheduler.internal";
 option java_outer_classname = "ScheduledTaskProto";
 
 message ScheduledTask {

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.payments;
+package org.monyhar.components.payments;
 
 import android.content.pm.PackageInfo;
 import android.content.pm.ResolveInfo;
@@ -10,11 +10,11 @@ import android.content.pm.Signature;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Log;
-import org.chromium.components.payments.PaymentManifestDownloader.ManifestDownloadCallback;
-import org.chromium.components.payments.PaymentManifestParser.ManifestParseCallback;
-import org.chromium.url.GURL;
-import org.chromium.url.Origin;
+import org.monyhar.base.Log;
+import org.monyhar.components.payments.PaymentManifestDownloader.ManifestDownloadCallback;
+import org.monyhar.components.payments.PaymentManifestParser.ManifestParseCallback;
+import org.monyhar.url.GURL;
+import org.monyhar.url.Origin;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

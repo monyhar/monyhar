@@ -2,7 +2,7 @@
 
 /* This file contains extensions to the base mocking from the WebPlatform tests
  * for interal tests. The main mocked objects are found in
- * ../external/wpt/resources/chromium/webxr-test.js. */
+ * ../external/wpt/resources/monyhar/webxr-test.js. */
 
 // XREnvironmentIntegrationProvider implementation
 MockRuntime.prototype.getSubmitFrameCount = function() {

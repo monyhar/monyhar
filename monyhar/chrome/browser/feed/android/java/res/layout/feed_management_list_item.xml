@@ -8,7 +8,7 @@ found in the LICENSE file.
 <!--  Each list item has a name in bold, explanation text beneath in
       smaller, grayer font, and a ">" at the right edge to bring up the
       next level of menu. -->
-<org.chromium.chrome.browser.feed.feedmanagement.FeedManagementItemView
+<org.monyhar.chrome.browser.feed.feedmanagement.FeedManagementItemView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
@@ -37,4 +37,4 @@ found in the LICENSE file.
 
     </RelativeLayout>
 
-</org.chromium.chrome.browser.feed.feedmanagement.FeedManagementItemView>
+</org.monyhar.chrome.browser.feed.feedmanagement.FeedManagementItemView>

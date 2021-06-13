@@ -10,8 +10,8 @@ Description:
 A gradle-specified repository for autorolled Android and java dependencies.
 
 Local Modifications:
-Everything directly here is chromium code, and third_party code lives under
-`libs`, where each library has its own README.chromium and LICENSE:
+Everything directly here is monyhar code, and third_party code lives under
+`libs`, where each library has its own README.monyhar and LICENSE:
 
 ```
 third_party/android_deps_autorolled
@@ -22,10 +22,10 @@ third_party/android_deps_autorolled
 │   ├── dependency_group_name_and_version
 │   │   ├── dependency_name_and_version.jar (third_party)
 │   │   ├── LICENSE (third_party)
-│   │   └── README.chromium (generated)
+│   │   └── README.monyhar (generated)
 │   └── other_dependency_group_name_and_version
 │       ├── other_dependency_name_and_version.jar (third_party)
 │       ├── LICENSE (third_party)
-│       └── README.chromium (generated)
-└── README.chromium (hand written)
+│       └── README.monyhar (generated)
+└── README.monyhar (hand written)
 ```

@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.TextMedium.Secondary"/>
     </LinearLayout>
-    <org.chromium.ui.widget.ChromeImageView
+    <org.monyhar.ui.widget.ChromeImageView
         android:id="@+id/decrease_button"
         android:layout_width="@dimen/autofill_assistant_minimum_touch_target_size"
         android:layout_height="@dimen/autofill_assistant_minimum_touch_target_size"
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textAppearance="@style/TextAppearance.TextLarge.Blue"/>
-    <org.chromium.ui.widget.ChromeImageView
+    <org.monyhar.ui.widget.ChromeImageView
         android:id="@+id/increase_button"
         android:layout_width="@dimen/autofill_assistant_minimum_touch_target_size"
         android:layout_height="@dimen/autofill_assistant_minimum_touch_target_size"

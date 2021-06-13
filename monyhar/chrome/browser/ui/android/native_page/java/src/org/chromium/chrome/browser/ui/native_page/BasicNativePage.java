@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui.native_page;
+package org.monyhar.chrome.browser.ui.native_page;
 
 import android.graphics.Rect;
 import android.view.View;
 import android.widget.FrameLayout.LayoutParams;
 
-import org.chromium.base.Callback;
-import org.chromium.base.supplier.DestroyableObservableSupplier;
-import org.chromium.components.browser_ui.styles.ChromeColors;
-import org.chromium.content_public.browser.LoadUrlParams;
+import org.monyhar.base.Callback;
+import org.monyhar.base.supplier.DestroyableObservableSupplier;
+import org.monyhar.components.browser_ui.styles.ChromeColors;
+import org.monyhar.content_public.browser.LoadUrlParams;
 
 /**
  * A basic implementation of a white {@link NativePage} that docks below the toolbar. This class

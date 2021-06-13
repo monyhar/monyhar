@@ -2,7 +2,7 @@
 
 ## Understanding builder results
 
-The [Flake portal](https://analysis.chromium.org/p/chromium/flake-portal/flakes)
+The [Flake portal](https://analysis.monyhar.org/p/monyhar/flake-portal/flakes)
 links to the flake occurrences of various tests on various bots. On the flake
 occurrences page for a specific test, clicking on any of the timestamps takes
 you to the bot run that flaked.
@@ -60,18 +60,18 @@ race conditions, where the test subject may early exit and miss a callback, or
 return faster than the test can start waiting for it (i.e. make sure event
 listeners are spawned before invoking the event). Make sure event listeners are
 for the proper event instead of a proxy (e.g. [Wait for the correct event in
-test](https://chromium.googlesource.com/chromium/src/+/6da09f7510e94d2aebbbed13b038d71c511d6cbc)).
+test](https://monyhar.googlesource.com/monyhar/src/+/6da09f7510e94d2aebbbed13b038d71c511d6cbc)).
 
 Consider possible bugs in the system or test infrastructure (e.g. [races in
-glibc](https://bugs.chromium.org/p/chromium/issues/detail?id=1010318)).
+glibc](https://bugs.monyhar.org/p/monyhar/issues/detail?id=1010318)).
 
 For browsertest flakes, consider possible inter-process issues, such as the
 renderer taking too long or returning something unexpected (e.g. [flaky
-RenderFrameHostImplBrowserTest](https://bugs.chromium.org/p/chromium/issues/detail?id=1120305)).
+RenderFrameHostImplBrowserTest](https://bugs.monyhar.org/p/monyhar/issues/detail?id=1120305)).
 
 For browsertest flakes that check EvalJs results, make sure test objects are not
 destroyed before JS may read their values (e.g. [flaky
-PaymentAppBrowserTest](https://chromium.googlesource.com/chromium/src/+/6089f3480c5036c73464661b3b1b6b82807b56a3)).
+PaymentAppBrowserTest](https://monyhar.googlesource.com/monyhar/src/+/6089f3480c5036c73464661b3b1b6b82807b56a3)).
 
 ## Preventing similar flakes
 

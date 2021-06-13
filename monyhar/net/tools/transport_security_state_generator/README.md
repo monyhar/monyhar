@@ -232,4 +232,4 @@ override the active preload list by calling
 ## See also
 
 * <https://hstspreload.org/>
-* <https://www.chromium.org/hsts>
+* <https://www.monyhar.org/hsts>

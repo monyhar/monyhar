@@ -94,7 +94,7 @@ std::string SystemSnapshotFuchsia::CPUVendor() const {
 void SystemSnapshotFuchsia::CPUFrequency(uint64_t* current_hz,
                                          uint64_t* max_hz) const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  // TODO(scottmg): https://crashpad.chromium.org/bug/196.
+  // TODO(scottmg): https://crashpad.monyhar.org/bug/196.
   *current_hz = 0;
   *max_hz = 0;
 }
@@ -164,7 +164,7 @@ void SystemSnapshotFuchsia::OSVersion(int* major,
                                       int* bugfix,
                                       std::string* build) const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  // TODO(scottmg): https://crashpad.chromium.org/bug/196. There's no version
+  // TODO(scottmg): https://crashpad.monyhar.org/bug/196. There's no version
   // available to be reported yet.
   *major = 0;
   *minor = 0;
@@ -179,7 +179,7 @@ std::string SystemSnapshotFuchsia::OSVersionFull() const {
 
 std::string SystemSnapshotFuchsia::MachineDescription() const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  // TODO(scottmg): https://crashpad.chromium.org/bug/196. Not yet available,
+  // TODO(scottmg): https://crashpad.monyhar.org/bug/196. Not yet available,
   // upstream ZX-1775.
   return std::string();
 }

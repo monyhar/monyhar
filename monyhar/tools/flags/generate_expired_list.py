@@ -26,7 +26,7 @@ import sys
 ROOT_PATH = os.path.join(os.path.dirname(__file__), '..', '..')
 
 
-def get_chromium_version():
+def get_monyhar_version():
   """Parses the Chromium version out of //chrome/VERSION."""
   with open(os.path.join(ROOT_PATH, 'chrome', 'VERSION'),
             encoding='utf-8') as f:
@@ -105,7 +105,7 @@ def gen_file_body(flags, mstone):
 
 def gen_expiry_file(program_name, metadata_name):
   output = gen_file_header(program_name, metadata_name)
-  output += gen_file_body(list_flags.load_metadata(), get_chromium_version())
+  output += gen_file_body(list_flags.load_metadata(), get_monyhar_version())
   output += gen_file_footer()
   return output
 

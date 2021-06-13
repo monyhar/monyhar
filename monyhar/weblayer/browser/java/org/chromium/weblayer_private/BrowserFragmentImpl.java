@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.app.Activity;
 import android.content.Context;
@@ -15,15 +15,15 @@ import android.view.ViewGroup;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.components.browser_ui.styles.R;
-import org.chromium.components.embedder_support.application.ClassLoaderContextWrapperFactory;
-import org.chromium.weblayer_private.interfaces.BrowserFragmentArgs;
-import org.chromium.weblayer_private.interfaces.IBrowser;
-import org.chromium.weblayer_private.interfaces.IBrowserFragment;
-import org.chromium.weblayer_private.interfaces.IRemoteFragment;
-import org.chromium.weblayer_private.interfaces.IRemoteFragmentClient;
-import org.chromium.weblayer_private.interfaces.StrictModeWorkaround;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.components.browser_ui.styles.R;
+import org.monyhar.components.embedder_support.application.ClassLoaderContextWrapperFactory;
+import org.monyhar.weblayer_private.interfaces.BrowserFragmentArgs;
+import org.monyhar.weblayer_private.interfaces.IBrowser;
+import org.monyhar.weblayer_private.interfaces.IBrowserFragment;
+import org.monyhar.weblayer_private.interfaces.IRemoteFragment;
+import org.monyhar.weblayer_private.interfaces.IRemoteFragmentClient;
+import org.monyhar.weblayer_private.interfaces.StrictModeWorkaround;
 
 /**
  * Implementation of RemoteFragmentImpl which forwards logic to BrowserImpl.

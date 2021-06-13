@@ -43,7 +43,7 @@ class FindBadBuildsIntegrationTest(unittest.TestCase):
                  running_time,
                  builder='linux-rel',
                  bucket='try',
-                 project='chromium'):
+                 project='monyhar'):
     """Generates a buildbucket dict representing a single build."""
     return {
         'id': str(bid),

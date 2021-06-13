@@ -5,7 +5,7 @@
 **Note that Sheriff-O-Matic currently doesn't work for the perf waterfall
 [crbug.com/984159](https://crbug.com/984159).
 Please use [Milo chrome.perf
-console](https://ci.chromium.org/p/chrome/g/chrome.perf/console) instead.**
+console](https://ci.monyhar.org/p/chrome/g/chrome.perf/console) instead.**
 
 ## Goal
 
@@ -13,21 +13,21 @@ The goal of the perf bot health sheriff rotation is to ensure that the benchmark
 
 ## Quick links
 
-* [How to determine what story is failing](https://chromium.googlesource.com/chromium/src/+/main/docs/speed/bot_health_sheriffing/what_test_is_failing.md)
-* [How to disable a story](https://chromium.googlesource.com/chromium/src/+/main/docs/speed/bot_health_sheriffing/how_to_disable_a_story.md)
-* [How to launch a functional bisect](https://chromium.googlesource.com/chromium/src/+/main/docs/speed/bot_health_sheriffing/how_to_launch_a_functional_bisect.md)
-* [How to snooze an alert](https://chromium.googlesource.com/chromium/src/+/main/docs/speed/bot_health_sheriffing/how_to_snooze_an_alert.md)
-* [How to access test logs](https://chromium.googlesource.com/chromium/src/+/main/docs/speed/bot_health_sheriffing/how_to_access_test_logs.md)
-* [How to handle a new problem](https://chromium.googlesource.com/chromium/src/+/main/docs/speed/bot_health_sheriffing/how_to_handle_a_new_problem.md)
-* [How to follow up on an alert](https://chromium.googlesource.com/chromium/src/+/main/docs/speed/bot_health_sheriffing/how_to_follow_up_on_an_alert.md)
-* [How to address duplicate alerts](https://chromium.googlesource.com/chromium/src/+/main/docs/speed/bot_health_sheriffing/how_to_address_duplicate_alerts.md)
-* [Glossary](https://chromium.googlesource.com/chromium/src/+/main/docs/speed/bot_health_sheriffing/glossary.md)
+* [How to determine what story is failing](https://monyhar.googlesource.com/monyhar/src/+/main/docs/speed/bot_health_sheriffing/what_test_is_failing.md)
+* [How to disable a story](https://monyhar.googlesource.com/monyhar/src/+/main/docs/speed/bot_health_sheriffing/how_to_disable_a_story.md)
+* [How to launch a functional bisect](https://monyhar.googlesource.com/monyhar/src/+/main/docs/speed/bot_health_sheriffing/how_to_launch_a_functional_bisect.md)
+* [How to snooze an alert](https://monyhar.googlesource.com/monyhar/src/+/main/docs/speed/bot_health_sheriffing/how_to_snooze_an_alert.md)
+* [How to access test logs](https://monyhar.googlesource.com/monyhar/src/+/main/docs/speed/bot_health_sheriffing/how_to_access_test_logs.md)
+* [How to handle a new problem](https://monyhar.googlesource.com/monyhar/src/+/main/docs/speed/bot_health_sheriffing/how_to_handle_a_new_problem.md)
+* [How to follow up on an alert](https://monyhar.googlesource.com/monyhar/src/+/main/docs/speed/bot_health_sheriffing/how_to_follow_up_on_an_alert.md)
+* [How to address duplicate alerts](https://monyhar.googlesource.com/monyhar/src/+/main/docs/speed/bot_health_sheriffing/how_to_address_duplicate_alerts.md)
+* [Glossary](https://monyhar.googlesource.com/monyhar/src/+/main/docs/speed/bot_health_sheriffing/glossary.md)
 
 [TOC]
 
 ## Vocabulary
 
-Definitions of various bot health related vocabulary can be found in our [glossary](https://chromium.googlesource.com/chromium/src/+/main/docs/speed/bot_health_sheriffing/glossary.md).
+Definitions of various bot health related vocabulary can be found in our [glossary](https://monyhar.googlesource.com/monyhar/src/+/main/docs/speed/bot_health_sheriffing/glossary.md).
 
 ## High-level responsibilities
 
@@ -44,7 +44,7 @@ The sheriff should *not* feel responsible for investigating hard problems. The v
 
 ## Workflow
 
-~~Incoming failures are shown in [Sheriff-o-matic](https://sheriff-o-matic.appspot.com/chromium.perf), which acts as a task management system for bot health sheriffs. Failures are divided into three groups on the dashboard:~~
+~~Incoming failures are shown in [Sheriff-o-matic](https://sheriff-o-matic.appspot.com/monyhar.perf), which acts as a task management system for bot health sheriffs. Failures are divided into three groups on the dashboard:~~
 
 * ~~**Infra failures** show general infrastructure problems that are affecting benchmarks.  Besides surfacing in Sheriff-o-matic, we also need to check for down bots in the lame duck pool.  Please file a ticket for any bots you see in [this list](https://chrome-swarming.appspot.com/botlist?c=id&c=os&c=task&c=status&c=os&c=task&c=status&c=pool&f=status%3Adead&f=pool%3Achrome.tests.perf&l=100&q=pool%3Achrome.tests.perf&s=id%3Aasc) or [this list for webview](https://chrome-swarming.appspot.com/botlist?c=id&c=os&c=task&c=status&c=os&c=task&c=status&c=pool&f=status%3Adead&f=pool%3Achrome.tests.perf-webview&l=100&q=pool%3Achrome.tests.perf&s=id%3Aasc) as they will not show up in Sheriff-o-matic.~~
 
@@ -61,7 +61,7 @@ The sheriff should *not* feel responsible for investigating hard problems. The v
 **Note that Sheriff-O-Matic currently doesn't work for the perf waterfall
 [crbug.com/984159](https://crbug.com/984159).
 Please use [Milo chrome.perf
-console](https://ci.chromium.org/p/chrome/g/chrome.perf/console) instead.**
+console](https://ci.monyhar.org/p/chrome/g/chrome.perf/console) instead.**
 
 ## How to address each alert
 
@@ -73,11 +73,11 @@ This category of alert should have a bug already linked with it. This link can b
 
 ![A link to a bug from a Sheriff-o-matic alert](images/som_alert_bug.png)
 
-Instructions can be found [here](https://chromium.googlesource.com/chromium/src/+/main/docs/speed/bot_health_sheriffing/how_to_follow_up_on_an_alert.md) on how to follow up with an existing alert.
+Instructions can be found [here](https://monyhar.googlesource.com/monyhar/src/+/main/docs/speed/bot_health_sheriffing/how_to_follow_up_on_an_alert.md) on how to follow up with an existing alert.
 
 ### Is this a new alert caused by the same root cause as an already-triaged alert?
 
-This category of alert won't have a bug linked with it yet. However, a bug *does* exist for the issue: it may be linked to another alert, but can otherwise be found [here](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=label:Performance-Sheriff-BotHealth&sort=pri&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified) under the Performance-Sheriff-BotHealth label in monorail. For example:
+This category of alert won't have a bug linked with it yet. However, a bug *does* exist for the issue: it may be linked to another alert, but can otherwise be found [here](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=label:Performance-Sheriff-BotHealth&sort=pri&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified) under the Performance-Sheriff-BotHealth label in monorail. For example:
 
 ![A link to an alert group in Sheriff-o-matic](images/som_first_alert.png)
 
@@ -89,13 +89,13 @@ are both in the list of current of alerts but represent the same failure.
 
 It can sometimes be tricky to differentiate between these alerts and ones caused by completely new problems, but sheriffs can always treat an alert as new and merge it with another later.
 
-Instructions can be found [here](https://chromium.googlesource.com/chromium/src/+/main/docs/speed/bot_health_sheriffing/how_to_address_duplicate_alerts.md) on how to handle a duplicate alert.
+Instructions can be found [here](https://monyhar.googlesource.com/monyhar/src/+/main/docs/speed/bot_health_sheriffing/how_to_address_duplicate_alerts.md) on how to handle a duplicate alert.
 
 ### Is this a new alert caused by a new problem?
 
 This category of alert doesn't yet have a bug associated with it. It's the most common category and requires the most expertise to handle.
 
-Instructions can be found [here](https://chromium.googlesource.com/chromium/src/+/main/docs/speed/bot_health_sheriffing/how_to_handle_a_new_problem.md) on how to handle an alert for a new problem.
+Instructions can be found [here](https://monyhar.googlesource.com/monyhar/src/+/main/docs/speed/bot_health_sheriffing/how_to_handle_a_new_problem.md) on how to handle an alert for a new problem.
 
 ## After your shift is over
 
@@ -115,7 +115,7 @@ Many breakages probably *aren't* good signs, though. If you have ideas on how to
 
 Yes! Sheriff-o-matic allows us to smoothly hand off responsibility between sheriffs and allows us to standardize sheriffing.
 
-If you find a problem with Sheriff-o-matic or have a feature request, file a bug [here](https://bugs.chromium.org/p/chromium/issues/entry?template=Build%20Infrastructure&components=Infra%3ESheriffing%3ESheriffOMatic&labels=Pri-2,Infra-DX&cc=seanmccullough@chromium.org,martiniss@chromium.org,zhangtiff@chromium.org&comment=Problem+with+Sheriff-o-Matic). The team is usually very responsive and, because of their work, the tool is getting better every day.
+If you find a problem with Sheriff-o-matic or have a feature request, file a bug [here](https://bugs.monyhar.org/p/monyhar/issues/entry?template=Build%20Infrastructure&components=Infra%3ESheriffing%3ESheriffOMatic&labels=Pri-2,Infra-DX&cc=seanmccullough@monyhar.org,martiniss@monyhar.org,zhangtiff@monyhar.org&comment=Problem+with+Sheriff-o-Matic). The team is usually very responsive and, because of their work, the tool is getting better every day.
 
 ### How can I tell if I've done a good job?
 

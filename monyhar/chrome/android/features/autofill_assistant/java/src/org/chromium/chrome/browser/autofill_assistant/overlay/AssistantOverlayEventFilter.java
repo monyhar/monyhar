@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.overlay;
+package org.monyhar.chrome.browser.autofill_assistant.overlay;
 
 import android.content.Context;
 import android.graphics.RectF;
@@ -12,7 +12,7 @@ import android.view.View;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.chrome.browser.browser_controls.BrowserControlsStateProvider;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsStateProvider;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

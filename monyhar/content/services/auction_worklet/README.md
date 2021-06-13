@@ -12,5 +12,5 @@ execution of downloaded code and these isolation requirements they're run in
 a separate process.  The Auction Worklet Service orchestrates and controls the
 execution of these auction worklets.  Before making changes to this service
 please thoroughly consult the
-[OWNERS](https://chromium.googlesource.com/chromium/src/+/main/content/services/auction_worklet/OWNERS)
+[OWNERS](https://monyhar.googlesource.com/monyhar/src/+/main/content/services/auction_worklet/OWNERS)
 to ensure changes do not violate the isolation requirements.

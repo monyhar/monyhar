@@ -4,8 +4,8 @@
 //
 // This file is auto-generated from
 // ui/gl/generate_bindings.py
-// It's formatted by clang-format using chromium coding style:
-//    clang-format -i -style=chromium filename
+// It's formatted by clang-format using monyhar coding style:
+//    clang-format -i -style=monyhar filename
 // DO NOT EDIT!
 
 #ifndef UI_GL_GL_STUB_AUTOGEN_H_

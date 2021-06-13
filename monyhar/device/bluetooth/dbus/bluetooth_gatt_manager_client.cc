@@ -18,9 +18,9 @@
 namespace bluez {
 
 const char BluetoothGattManagerClient::kNoResponseError[] =
-    "org.chromium.Error.NoResponse";
+    "org.monyhar.Error.NoResponse";
 const char BluetoothGattManagerClient::kUnknownGattManager[] =
-    "org.chromium.Error.UnknownGattManager";
+    "org.monyhar.Error.UnknownGattManager";
 
 namespace {
 

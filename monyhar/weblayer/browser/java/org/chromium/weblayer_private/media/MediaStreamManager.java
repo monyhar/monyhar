@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private.media;
+package org.monyhar.weblayer_private.media;
 
 import android.app.NotificationManager;
 import android.content.Context;
@@ -12,26 +12,26 @@ import android.os.RemoteException;
 import android.util.AndroidRuntimeException;
 import android.webkit.ValueCallback;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxy;
-import org.chromium.components.browser_ui.notifications.NotificationManagerProxyImpl;
-import org.chromium.components.browser_ui.notifications.NotificationMetadata;
-import org.chromium.components.browser_ui.notifications.NotificationWrapper;
-import org.chromium.components.browser_ui.notifications.PendingIntentProvider;
-import org.chromium.components.webrtc.MediaCaptureNotificationUtil;
-import org.chromium.components.webrtc.MediaCaptureNotificationUtil.MediaType;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.weblayer_private.IntentUtils;
-import org.chromium.weblayer_private.TabImpl;
-import org.chromium.weblayer_private.WebLayerImpl;
-import org.chromium.weblayer_private.WebLayerNotificationChannels;
-import org.chromium.weblayer_private.WebLayerNotificationWrapperBuilder;
-import org.chromium.weblayer_private.interfaces.IMediaCaptureCallbackClient;
-import org.chromium.weblayer_private.interfaces.ObjectWrapper;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxy;
+import org.monyhar.components.browser_ui.notifications.NotificationManagerProxyImpl;
+import org.monyhar.components.browser_ui.notifications.NotificationMetadata;
+import org.monyhar.components.browser_ui.notifications.NotificationWrapper;
+import org.monyhar.components.browser_ui.notifications.PendingIntentProvider;
+import org.monyhar.components.webrtc.MediaCaptureNotificationUtil;
+import org.monyhar.components.webrtc.MediaCaptureNotificationUtil.MediaType;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.weblayer_private.IntentUtils;
+import org.monyhar.weblayer_private.TabImpl;
+import org.monyhar.weblayer_private.WebLayerImpl;
+import org.monyhar.weblayer_private.WebLayerNotificationChannels;
+import org.monyhar.weblayer_private.WebLayerNotificationWrapperBuilder;
+import org.monyhar.weblayer_private.interfaces.IMediaCaptureCallbackClient;
+import org.monyhar.weblayer_private.interfaces.ObjectWrapper;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -43,7 +43,7 @@ import java.util.Set;
  */
 @JNINamespace("weblayer")
 public class MediaStreamManager {
-    private static final String WEBRTC_PREFIX = "org.chromium.weblayer.webrtc";
+    private static final String WEBRTC_PREFIX = "org.monyhar.weblayer.webrtc";
     private static final String AV_STREAM_TAG = WEBRTC_PREFIX + ".avstream";
 
     /**

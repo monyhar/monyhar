@@ -7,7 +7,7 @@
 #include "base/logging.h"
 #include "base/trace_event/trace_event.h"
 #include "components/viz/service/display/geometry_binding.h"
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "gpu/command_buffer/client/gles2_interface.h"
 #include "ui/gfx/color_transform.h"
 

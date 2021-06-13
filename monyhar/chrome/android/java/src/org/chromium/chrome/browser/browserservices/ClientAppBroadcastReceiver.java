@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices;
+package org.monyhar.chrome.browser.browserservices;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import org.chromium.base.Log;
-import org.chromium.chrome.browser.ChromeApplicationImpl;
-import org.chromium.chrome.browser.browserservices.permissiondelegation.PermissionUpdater;
-import org.chromium.chrome.browser.metrics.WebApkUma;
-import org.chromium.chrome.browser.version.ChromeVersionInfo;
-import org.chromium.components.embedder_support.util.Origin;
-import org.chromium.components.webapk.lib.common.WebApkConstants;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.browser.ChromeApplicationImpl;
+import org.monyhar.chrome.browser.browserservices.permissiondelegation.PermissionUpdater;
+import org.monyhar.chrome.browser.metrics.WebApkUma;
+import org.monyhar.chrome.browser.version.ChromeVersionInfo;
+import org.monyhar.components.embedder_support.util.Origin;
+import org.monyhar.components.webapk.lib.common.WebApkConstants;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -53,14 +53,14 @@ public class ClientAppBroadcastReceiver extends BroadcastReceiver {
      * command to trigger is:
      * adb shell am broadcast \
      *   -n com.google.android.apps.chrome/\
-     * org.chromium.chrome.browser.browserservices.ClientAppBroadcastReceiver \
-     *   -a org.chromium.chrome.browser.browserservices.ClientAppBroadcastReceiver.DEBUG \
+     * org.monyhar.chrome.browser.browserservices.ClientAppBroadcastReceiver \
+     *   -a org.monyhar.chrome.browser.browserservices.ClientAppBroadcastReceiver.DEBUG \
      *   --ei android.intent.extra.UID 23
      *
      * But replace 23 with the uid of a Trusted Web Activity Client app.
      */
     private static final String ACTION_DEBUG =
-            "org.chromium.chrome.browser.browserservices.ClientAppBroadcastReceiver.DEBUG";
+            "org.monyhar.chrome.browser.browserservices.ClientAppBroadcastReceiver.DEBUG";
 
     private static final Set<String> BROADCASTS = new HashSet<>(Arrays.asList(
             Intent.ACTION_PACKAGE_DATA_CLEARED,

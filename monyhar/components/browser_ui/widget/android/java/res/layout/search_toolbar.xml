@@ -27,7 +27,7 @@
         android:textAppearance="@style/TextAppearance.TextLarge.Primary"
         android:textColorHint="@color/search_box_hint"/>
 
-    <org.chromium.ui.widget.ChromeImageButton
+    <org.monyhar.ui.widget.ChromeImageButton
         android:id="@+id/clear_text_button"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"

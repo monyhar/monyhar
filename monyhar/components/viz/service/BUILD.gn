@@ -716,15 +716,15 @@ if (is_android) {
     ]
     annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
     sources = [
-      "java/src/org/chromium/components/viz/service/frame_sinks/ExternalBeginFrameSourceAndroid.java",
-      "java/src/org/chromium/components/viz/service/gl/ThrowUncaughtException.java",
+      "java/src/org/monyhar/components/viz/service/frame_sinks/ExternalBeginFrameSourceAndroid.java",
+      "java/src/org/monyhar/components/viz/service/gl/ThrowUncaughtException.java",
     ]
   }
 
   generate_jni("service_jni_headers") {
     sources = [
-      "java/src/org/chromium/components/viz/service/frame_sinks/ExternalBeginFrameSourceAndroid.java",
-      "java/src/org/chromium/components/viz/service/gl/ThrowUncaughtException.java",
+      "java/src/org/monyhar/components/viz/service/frame_sinks/ExternalBeginFrameSourceAndroid.java",
+      "java/src/org/monyhar/components/viz/service/gl/ThrowUncaughtException.java",
     ]
   }
 }

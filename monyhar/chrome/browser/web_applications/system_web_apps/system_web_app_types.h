@@ -26,7 +26,7 @@ enum class SystemAppType {
   // platform introduction (Google internal) at: http://go/system-web-apps.
   //
   // Source: //chromeos/components/sample_system_web_app_ui/
-  // Contact: dominicshulz@google.com, ortuno@chromium.org
+  // Contact: dominicshulz@google.com, ortuno@monyhar.org
   SAMPLE = 3,
 
   SETTINGS = 4,
@@ -60,7 +60,7 @@ enum class SystemAppType {
   // b/components/812312
   //
   // Source: //chromeos/components/demo_mode_app_ui/
-  // Contact: jacksontadie@google.com, drcrash@chromium.org
+  // Contact: jacksontadie@google.com, drcrash@monyhar.org
   DEMO_MODE = 18,
 
   // OS FEEDBACK is a SWA that provides step by step guides to submit a
@@ -83,12 +83,12 @@ enum class SystemAppType {
   //
   // 3. Add a comment above the enum entry in this file. It should include a
   //    description (what it does in one sentence), at least one email contact,
-  //    source location (if it's in chromium source tree), and other relevant
+  //    source location (if it's in monyhar source tree), and other relevant
   //    information.
   //
   //    Other relevant information should come in separate paragraphs after the
   //    description. This can be anything useful for triaging or routing bugs.
-  //    For example, your team doesn't use chromium's bug tracker, the App is
+  //    For example, your team doesn't use monyhar's bug tracker, the App is
   //    only available on certain devices.
   //
   //    Source location should point to where the App's WebUIController is

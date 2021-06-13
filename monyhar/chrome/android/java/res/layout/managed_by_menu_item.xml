@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:background="@color/divider_line_bg_color" />
 
-    <org.chromium.components.browser_ui.widget.text.TextViewWithCompoundDrawables
+    <org.monyhar.components.browser_ui.widget.text.TextViewWithCompoundDrawables
         android:id="@+id/menu_item_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

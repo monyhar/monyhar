@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar.load_progress;
+package org.monyhar.chrome.browser.toolbar.load_progress;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.base.MathUtils;
-import org.chromium.base.supplier.ObservableSupplier;
-import org.chromium.chrome.browser.tab.CurrentTabObserver;
-import org.chromium.chrome.browser.tab.EmptyTabObserver;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.toolbar.load_progress.LoadProgressProperties.CompletionState;
-import org.chromium.chrome.browser.ui.native_page.NativePage;
-import org.chromium.components.embedder_support.util.UrlUtilities;
-import org.chromium.content_public.browser.NavigationHandle;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.MathUtils;
+import org.monyhar.base.supplier.ObservableSupplier;
+import org.monyhar.chrome.browser.tab.CurrentTabObserver;
+import org.monyhar.chrome.browser.tab.EmptyTabObserver;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.toolbar.load_progress.LoadProgressProperties.CompletionState;
+import org.monyhar.chrome.browser.ui.native_page.NativePage;
+import org.monyhar.components.embedder_support.util.UrlUtilities;
+import org.monyhar.content_public.browser.NavigationHandle;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * Mediator for the load progress bar. Listens for changes to the loading state of the current tab

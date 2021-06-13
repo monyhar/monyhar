@@ -25,8 +25,8 @@ TEST(DnsConfigServiceWinTest, ParseSearchList) {
     const wchar_t* input;
     std::vector<std::string> expected;
   } cases[] = {
-      {L"chromium.org", {"chromium.org"}},
-      {L"chromium.org,org", {"chromium.org", "org"}},
+      {L"monyhar.org", {"monyhar.org"}},
+      {L"monyhar.org,org", {"monyhar.org", "org"}},
       // Empty suffixes terminate the list
       {L"crbug.com,com,,org", {"crbug.com", "com"}},
       // IDN are converted to punycode
@@ -120,21 +120,21 @@ TEST(DnsConfigServiceWinTest, ConvertAdapterAddresses) {
           { "2.0.0.2" } },
         { IF_TYPE_FASTETHER, IfOperStatusDormant, L"example.com",
           { "1.0.0.1" } },
-        { IF_TYPE_USB, IfOperStatusUp, L"chromium.org",
+        { IF_TYPE_USB, IfOperStatusUp, L"monyhar.org",
           { "10.0.0.10", "2001:FFFF::1111" } },
         { 0 },
       },
       { "10.0.0.10", "2001:FFFF::1111" },
-      "chromium.org",
+      "monyhar.org",
     },
     {  // Respect configured ports.
       {
-        { IF_TYPE_USB, IfOperStatusUp, L"chromium.org",
+        { IF_TYPE_USB, IfOperStatusUp, L"monyhar.org",
         { "10.0.0.10", "2001:FFFF::1111" }, { 1024, 24 } },
         { 0 },
       },
       { "10.0.0.10", "2001:FFFF::1111" },
-      "chromium.org",
+      "monyhar.org",
       { 1024, 24 },
     },
     {  // Use the preferred adapter (first in binding order) and filter
@@ -144,7 +144,7 @@ TEST(DnsConfigServiceWinTest, ConvertAdapterAddresses) {
           { "2.0.0.2" } },
         { IF_TYPE_FASTETHER, IfOperStatusUp, L"example.com",
           { "1.0.0.1", "fec0:0:0:ffff::2", "8.8.8.8" } },
-        { IF_TYPE_USB, IfOperStatusUp, L"chromium.org",
+        { IF_TYPE_USB, IfOperStatusUp, L"monyhar.org",
           { "10.0.0.10", "2001:FFFF::1111" } },
         { 0 },
       },
@@ -157,7 +157,7 @@ TEST(DnsConfigServiceWinTest, ConvertAdapterAddresses) {
           { "2.0.0.2" } },
         { IF_TYPE_FASTETHER, IfOperStatusDormant, L"example.com",
           { "1.0.0.1" } },
-        { IF_TYPE_USB, IfOperStatusUp, L"chromium.org" },
+        { IF_TYPE_USB, IfOperStatusUp, L"monyhar.org" },
         { 0 },
       },
     },

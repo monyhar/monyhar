@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.suggestions.tile;
+package org.monyhar.chrome.browser.suggestions.tile;
 
 import android.view.ViewGroup;
 
-import org.chromium.chrome.browser.suggestions.SiteSuggestion;
+import org.monyhar.chrome.browser.suggestions.SiteSuggestion;
 
 import java.util.List;
 /**

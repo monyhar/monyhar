@@ -36,7 +36,7 @@ const int kAliveTabsCountAtRendererTermination = 2;
 const int kExpiredTimesAddedCount = 2;
 
 // URL constants used by TabUsageRecorderBrowserAgentTest.
-const char kURL[] = "http://www.chromium.org";
+const char kURL[] = "http://www.monyhar.org";
 const char kNativeURL[] = "chrome://version";
 
 // Option to InsertFakeWebState() to create the WebState for a tab that is in

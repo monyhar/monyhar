@@ -6,12 +6,12 @@ import("//build/config/android/rules.gni")
 
 android_library("bootstrap_java") {
   sources = [
-    "java/org/chromium/incrementalinstall/BootstrapApplication.java",
-    "java/org/chromium/incrementalinstall/BootstrapInstrumentation.java",
-    "java/org/chromium/incrementalinstall/ClassLoaderPatcher.java",
-    "java/org/chromium/incrementalinstall/LockFile.java",
-    "java/org/chromium/incrementalinstall/Reflect.java",
-    "java/org/chromium/incrementalinstall/SecondInstrumentation.java",
+    "java/org/monyhar/incrementalinstall/BootstrapApplication.java",
+    "java/org/monyhar/incrementalinstall/BootstrapInstrumentation.java",
+    "java/org/monyhar/incrementalinstall/ClassLoaderPatcher.java",
+    "java/org/monyhar/incrementalinstall/LockFile.java",
+    "java/org/monyhar/incrementalinstall/Reflect.java",
+    "java/org/monyhar/incrementalinstall/SecondInstrumentation.java",
   ]
   jacoco_never_instrument = true
   no_build_hooks = true

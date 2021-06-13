@@ -41,7 +41,7 @@ PLY:
     http://www.dabeaz.com/ply/
 
 Design doc:
-http://www.chromium.org/developers/design-documents/idl-compiler#TOC-Front-end
+http://www.monyhar.org/developers/design-documents/idl-compiler#TOC-Front-end
 """
 
 # Disable check for line length and Member as Function due to how grammar rules

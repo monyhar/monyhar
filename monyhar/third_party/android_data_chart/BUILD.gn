@@ -15,14 +15,14 @@ android_resources("android_data_chart_java_resources") {
 
 android_library("android_data_chart_java") {
   sources = [
-    "java/src/org/chromium/third_party/android/datausagechart/ChartAxis.java",
-    "java/src/org/chromium/third_party/android/datausagechart/ChartDataUsageView.java",
-    "java/src/org/chromium/third_party/android/datausagechart/ChartNetworkSeriesView.java",
-    "java/src/org/chromium/third_party/android/datausagechart/ChartView.java",
-    "java/src/org/chromium/third_party/android/datausagechart/InvertedChartAxis.java",
-    "java/src/org/chromium/third_party/android/datausagechart/NetworkStats.java",
-    "java/src/org/chromium/third_party/android/datausagechart/NetworkStatsHistory.java",
+    "java/src/org/monyhar/third_party/android/datausagechart/ChartAxis.java",
+    "java/src/org/monyhar/third_party/android/datausagechart/ChartDataUsageView.java",
+    "java/src/org/monyhar/third_party/android/datausagechart/ChartNetworkSeriesView.java",
+    "java/src/org/monyhar/third_party/android/datausagechart/ChartView.java",
+    "java/src/org/monyhar/third_party/android/datausagechart/InvertedChartAxis.java",
+    "java/src/org/monyhar/third_party/android/datausagechart/NetworkStats.java",
+    "java/src/org/monyhar/third_party/android/datausagechart/NetworkStatsHistory.java",
   ]
   deps = [ ":android_data_chart_java_resources" ]
-  resources_package = "org.chromium.third_party.android"
+  resources_package = "org.monyhar.third_party.android"
 }

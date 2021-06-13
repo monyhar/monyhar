@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
-import static org.chromium.android_webview.test.OnlyRunIn.ProcessMode.SINGLE_PROCESS;
+import static org.monyhar.android_webview.test.OnlyRunIn.ProcessMode.SINGLE_PROCESS;
 
 import android.os.ParcelFileDescriptor;
 
@@ -16,11 +16,11 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.common.variations.VariationsUtils;
-import org.chromium.android_webview.services.VariationsSeedHolder;
-import org.chromium.android_webview.test.util.VariationsTestUtils;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.components.variations.firstrun.VariationsSeedFetcher.SeedInfo;
+import org.monyhar.android_webview.common.variations.VariationsUtils;
+import org.monyhar.android_webview.services.VariationsSeedHolder;
+import org.monyhar.android_webview.test.util.VariationsTestUtils;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.components.variations.firstrun.VariationsSeedFetcher.SeedInfo;
 
 import java.io.File;
 import java.io.FileNotFoundException;

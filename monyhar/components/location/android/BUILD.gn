@@ -17,7 +17,7 @@ android_library("location_java") {
     "//third_party/androidx:androidx_annotation_annotation_java",
     "//ui/android:ui_no_recycler_view_java",
   ]
-  sources = [ "java/src/org/chromium/components/location/LocationUtils.java" ]
+  sources = [ "java/src/org/monyhar/components/location/LocationUtils.java" ]
   srcjar_deps = [ ":location_settings_dialog_enums_java" ]
 }
 
@@ -28,13 +28,13 @@ android_library("settings_java") {
     "//ui/android:ui_no_recycler_view_java",
   ]
   sources =
-      [ "java/src/org/chromium/components/location/LocationSettings.java" ]
+      [ "java/src/org/monyhar/components/location/LocationSettings.java" ]
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
 }
 
 generate_jni("jni_headers") {
   sources =
-      [ "java/src/org/chromium/components/location/LocationSettings.java" ]
+      [ "java/src/org/monyhar/components/location/LocationSettings.java" ]
 }
 
 source_set("settings") {

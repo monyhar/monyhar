@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_browsertests_apk;
+package org.monyhar.weblayer_browsertests_apk;
 
 import android.net.Uri;
 import android.view.View;
@@ -14,19 +14,19 @@ import android.widget.RelativeLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.test.util.UrlUtils;
-import org.chromium.content_public.browser.BrowserStartupController;
-import org.chromium.native_test.NativeBrowserTest;
-import org.chromium.native_test.NativeBrowserTestActivity;
-import org.chromium.weblayer.Browser;
-import org.chromium.weblayer.NewTabCallback;
-import org.chromium.weblayer.NewTabType;
-import org.chromium.weblayer.Profile;
-import org.chromium.weblayer.Tab;
-import org.chromium.weblayer.TabCallback;
-import org.chromium.weblayer.TestWebLayer;
-import org.chromium.weblayer.WebLayer;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.test.util.UrlUtils;
+import org.monyhar.content_public.browser.BrowserStartupController;
+import org.monyhar.native_test.NativeBrowserTest;
+import org.monyhar.native_test.NativeBrowserTestActivity;
+import org.monyhar.weblayer.Browser;
+import org.monyhar.weblayer.NewTabCallback;
+import org.monyhar.weblayer.NewTabType;
+import org.monyhar.weblayer.Profile;
+import org.monyhar.weblayer.Tab;
+import org.monyhar.weblayer.TabCallback;
+import org.monyhar.weblayer.TestWebLayer;
+import org.monyhar.weblayer.WebLayer;
 
 import java.io.File;
 

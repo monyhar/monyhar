@@ -16,7 +16,7 @@
     app:columnCount="1"
     app:rowCount="2">
 
-    <org.chromium.components.browser_ui.widget.async_image.AsyncImageView
+    <org.monyhar.components.browser_ui.widget.async_image.AsyncImageView
         android:id="@+id/thumbnail"
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -32,7 +32,7 @@
         app:cornerRadiusTopEnd="@dimen/download_manager_thumbnail_corner_radius"
         app:roundedfillColor="@color/modern_grey_300"/>
 
-    <org.chromium.ui.widget.ChromeImageButton
+    <org.monyhar.ui.widget.ChromeImageButton
         android:id="@+id/action_button"
         app:layout_column="0"
         app:layout_row="0"
@@ -41,7 +41,7 @@
         android:clickable="false"
         style="@style/LargeMediaPlayButton"/>
 
-   <org.chromium.chrome.browser.download.home.view.SelectionView
+   <org.monyhar.chrome.browser.download.home.view.SelectionView
        android:id="@+id/selection"
        style="@style/DownloadItemSelectionView"
        app:layout_column="0"

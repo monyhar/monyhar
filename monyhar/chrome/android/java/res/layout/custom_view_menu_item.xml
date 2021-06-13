@@ -12,14 +12,14 @@
     android:gravity="center_vertical"
     android:orientation="horizontal" >
 
-    <org.chromium.components.browser_ui.widget.text.TextViewWithCompoundDrawables
+    <org.monyhar.components.browser_ui.widget.text.TextViewWithCompoundDrawables
         android:id="@+id/title"
         style="@style/AppMenuItemTextViewWithCompoundDrawables"
         android:layout_weight="1"
         android:layout_width="wrap_content"
         android:layout_height="match_parent" />
 
-    <org.chromium.ui.widget.ChromeImageView
+    <org.monyhar.ui.widget.ChromeImageView
         android:id="@+id/trailing_icon"
         android:layout_weight="0"
         android:layout_width="wrap_content"

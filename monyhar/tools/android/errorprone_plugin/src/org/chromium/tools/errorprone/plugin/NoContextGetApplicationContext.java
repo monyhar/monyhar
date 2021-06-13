@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.tools.errorprone.plugin;
+package org.monyhar.tools.errorprone.plugin;
 
 import static com.google.errorprone.matchers.Matchers.instanceMethod;
 
@@ -21,17 +21,17 @@ import com.sun.tools.javac.code.Type;
 /**
  * Checks for calls to getApplicationContext from {@link android.content.Context}.
  * These calls should be replaced with the static getApplicationContext method in
- * {@link org.chromium.base.ContextUtils}.
+ * {@link org.monyhar.base.ContextUtils}.
  */
 @AutoService(BugChecker.class)
 @BugPattern(name = "NoContextGetApplicationContext",
         summary = "Do not use Context#getApplicationContext",
         severity = BugPattern.SeverityLevel.ERROR, linkType = BugPattern.LinkType.CUSTOM,
-        link = "https://bugs.chromium.org/p/chromium/issues/detail?id=560466")
+        link = "https://bugs.monyhar.org/p/monyhar/issues/detail?id=560466")
 public class NoContextGetApplicationContext
         extends BugChecker implements BugChecker.MethodInvocationTreeMatcher {
     private static final String CONTEXT_CLASS_NAME = "android.content.Context";
-    private static final String CONTEXT_UTILS_CLASS_NAME = "org.chromium.base.ContextUtils";
+    private static final String CONTEXT_UTILS_CLASS_NAME = "org.monyhar.base.ContextUtils";
     private static final String METHOD_NAME = "getApplicationContext";
 
     private static final Supplier<Type> CONTEXT_UTILS_SUPPLIER =

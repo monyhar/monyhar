@@ -12,11 +12,11 @@ android_resources("java_resources") {
 }
 
 generate_jni("jni_headers") {
-  sources = [ "java/src/org/chromium/components/browser_ui/client_certificate/SSLClientCertificateRequest.java" ]
+  sources = [ "java/src/org/monyhar/components/browser_ui/client_certificate/SSLClientCertificateRequest.java" ]
 }
 
 android_library("java") {
-  sources = [ "java/src/org/chromium/components/browser_ui/client_certificate/SSLClientCertificateRequest.java" ]
+  sources = [ "java/src/org/monyhar/components/browser_ui/client_certificate/SSLClientCertificateRequest.java" ]
   deps = [
     ":java_resources",
     "//base:base_java",
@@ -26,7 +26,7 @@ android_library("java") {
     "//ui/android:ui_java",
   ]
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
-  resources_package = "org.chromium.components.browser_ui.client_certificate"
+  resources_package = "org.monyhar.components.browser_ui.client_certificate"
 }
 
 source_set("android") {
@@ -47,7 +47,7 @@ java_library("junit") {
   # Platform checks are broken for Robolectric. See https://crbug.com/1071638.
   bypass_platform_checks = true
   testonly = true
-  sources = [ "java/src/org/chromium/components/browser_ui/client_certificate/SSLClientCertificateRequestTest.java" ]
+  sources = [ "java/src/org/monyhar/components/browser_ui/client_certificate/SSLClientCertificateRequestTest.java" ]
   deps = [
     ":java",
     "//base:base_junit_test_support",

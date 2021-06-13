@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.util;
+package org.monyhar.chrome.test.util;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
@@ -15,10 +15,10 @@ import static org.hamcrest.core.IsNot.not;
 
 import androidx.annotation.IdRes;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.toolbar.LocationBarModel;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.toolbar.LocationBarModel;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * A utility class that contains methods generic to both the top toolbar and bottom toolbar,

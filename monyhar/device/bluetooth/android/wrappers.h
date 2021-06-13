@@ -11,7 +11,7 @@
 
 namespace device {
 
-// Bindings into Java methods in org.chromium.device.bluetooth.Wrappers classes:
+// Bindings into Java methods in org.monyhar.device.bluetooth.Wrappers classes:
 
 // Calls Java: BluetoothAdapterWrapper.createWithDefaultAdapter().
 DEVICE_BLUETOOTH_EXPORT base::android::ScopedJavaLocalRef<jobject>

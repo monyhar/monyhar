@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:$(cat version.txt)
-package: chromium/third_party/jacoco
+package: monyhar/third_party/jacoco
 description: Jacoco code coverage package
 data:
   - file: lib/jacocoagent.jar

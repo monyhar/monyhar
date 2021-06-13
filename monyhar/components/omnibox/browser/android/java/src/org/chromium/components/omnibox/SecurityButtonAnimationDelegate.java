@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.omnibox;
+package org.monyhar.components.omnibox;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;
@@ -12,8 +12,8 @@ import android.widget.ImageButton;
 
 import androidx.annotation.DimenRes;
 
-import org.chromium.components.browser_ui.widget.animation.CancelAwareAnimatorListener;
-import org.chromium.ui.interpolators.BakedBezierInterpolator;
+import org.monyhar.components.browser_ui.widget.animation.CancelAwareAnimatorListener;
+import org.monyhar.ui.interpolators.BakedBezierInterpolator;
 
 /**
  * Helper class to animate the security status icon.

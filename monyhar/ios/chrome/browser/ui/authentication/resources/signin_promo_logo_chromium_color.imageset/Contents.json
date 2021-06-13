@@ -3,17 +3,17 @@
         {
             "idiom": "universal",
             "scale": "1x",
-            "filename": "signin_promo_logo_chromium_color.png"
+            "filename": "signin_promo_logo_monyhar_color.png"
         },
         {
             "idiom": "universal",
             "scale": "2x",
-            "filename": "signin_promo_logo_chromium_color@2x.png"
+            "filename": "signin_promo_logo_monyhar_color@2x.png"
         },
         {
             "idiom": "universal",
             "scale": "3x",
-            "filename": "signin_promo_logo_chromium_color@3x.png"
+            "filename": "signin_promo_logo_monyhar_color@3x.png"
         }
     ],
     "info": {

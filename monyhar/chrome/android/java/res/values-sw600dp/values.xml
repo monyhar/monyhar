@@ -7,7 +7,7 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Full Screen Constants -->
     <!-- These constants were chosen empirically for their visually pleasant behavior.
-         Contact tedchoc@chromium.org or dtrainor@chromium.org for questions about
+         Contact tedchoc@monyhar.org or dtrainor@monyhar.org for questions about
          changing these values. -->
     <item name="top_controls_show_threshold" format="float" type="dimen">0.27</item>
     <item name="top_controls_hide_threshold" format="float" type="dimen">0.17</item>

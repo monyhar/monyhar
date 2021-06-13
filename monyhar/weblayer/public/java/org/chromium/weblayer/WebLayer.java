@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer;
+package org.monyhar.weblayer;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -25,20 +25,20 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.fragment.app.Fragment;
 
-import org.chromium.weblayer_private.interfaces.APICallException;
-import org.chromium.weblayer_private.interfaces.BrowserFragmentArgs;
-import org.chromium.weblayer_private.interfaces.IBrowserFragment;
-import org.chromium.weblayer_private.interfaces.IMediaRouteDialogFragment;
-import org.chromium.weblayer_private.interfaces.IProfile;
-import org.chromium.weblayer_private.interfaces.IRemoteFragmentClient;
-import org.chromium.weblayer_private.interfaces.ISettingsFragment;
-import org.chromium.weblayer_private.interfaces.ISiteSettingsFragment;
-import org.chromium.weblayer_private.interfaces.IWebLayer;
-import org.chromium.weblayer_private.interfaces.IWebLayerClient;
-import org.chromium.weblayer_private.interfaces.IWebLayerFactory;
-import org.chromium.weblayer_private.interfaces.ObjectWrapper;
-import org.chromium.weblayer_private.interfaces.StrictModeWorkaround;
-import org.chromium.weblayer_private.interfaces.WebLayerVersionConstants;
+import org.monyhar.weblayer_private.interfaces.APICallException;
+import org.monyhar.weblayer_private.interfaces.BrowserFragmentArgs;
+import org.monyhar.weblayer_private.interfaces.IBrowserFragment;
+import org.monyhar.weblayer_private.interfaces.IMediaRouteDialogFragment;
+import org.monyhar.weblayer_private.interfaces.IProfile;
+import org.monyhar.weblayer_private.interfaces.IRemoteFragmentClient;
+import org.monyhar.weblayer_private.interfaces.ISettingsFragment;
+import org.monyhar.weblayer_private.interfaces.ISiteSettingsFragment;
+import org.monyhar.weblayer_private.interfaces.IWebLayer;
+import org.monyhar.weblayer_private.interfaces.IWebLayerClient;
+import org.monyhar.weblayer_private.interfaces.IWebLayerFactory;
+import org.monyhar.weblayer_private.interfaces.ObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.StrictModeWorkaround;
+import org.monyhar.weblayer_private.interfaces.WebLayerVersionConstants;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -54,7 +54,7 @@ public class WebLayer {
     // current WebView implementation. This is only intended for testing, and does not enforce any
     // signature requirements on the implementation, nor does it use the production code path to
     // load the code. Do not set this in production APKs!
-    private static final String PACKAGE_MANIFEST_KEY = "org.chromium.weblayer.WebLayerPackage";
+    private static final String PACKAGE_MANIFEST_KEY = "org.monyhar.weblayer.WebLayerPackage";
 
     @SuppressWarnings("StaticFieldLeak")
     @Nullable
@@ -262,7 +262,7 @@ public class WebLayer {
             }
             try {
                 Class factoryClass = loadRemoteClass(
-                        mContext, "org.chromium.weblayer_private.WebLayerFactoryImpl");
+                        mContext, "org.monyhar.weblayer_private.WebLayerFactoryImpl");
                 long start = SystemClock.elapsedRealtime();
                 mFactory = IWebLayerFactory.Stub.asInterface(
                         (IBinder) factoryClass

@@ -112,7 +112,7 @@ group("bindings_core_v8_generated") {
   }
 }
 
-# IDL file lists; see: http://www.chromium.org/developers/web-idl-interfaces
+# IDL file lists; see: http://www.monyhar.org/developers/web-idl-interfaces
 # Interface IDL files: generate individual bindings (includes testing)
 idl_compiler("generate_bindings_core_v8_interfaces") {
   sources = core_definition_idl_files + core_testing_definition_idl_files +

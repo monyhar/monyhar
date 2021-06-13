@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
 import android.content.Context;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.supplier.Supplier;
+import org.monyhar.base.supplier.Supplier;
 
 import java.util.ArrayList;
 import java.util.List;

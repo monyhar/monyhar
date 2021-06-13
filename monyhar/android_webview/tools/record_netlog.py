@@ -6,7 +6,7 @@
 """Takes a netlog for the WebViews in a given application.
 
 Developer guide:
-https://chromium.googlesource.com/chromium/src/+/HEAD/android_webview/docs/net-debugging.md
+https://monyhar.googlesource.com/monyhar/src/+/HEAD/android_webview/docs/net-debugging.md
 """
 
 from __future__ import print_function
@@ -22,7 +22,7 @@ import time
 sys.path.append(
     os.path.join(
         os.path.dirname(__file__), os.pardir, os.pardir, 'build', 'android'))
-import devil_chromium
+import devil_monyhar
 from devil.android import device_errors
 from devil.android import flag_changer
 from devil.android import device_utils
@@ -61,7 +61,7 @@ Configures WebView to start recording a netlog. This script chooses a suitable
 netlog filename for the application, and will pull the netlog off the device
 when the user terminates the script (with ctrl-C). For a more complete usage
 guide, open your web browser to:
-https://chromium.googlesource.com/chromium/src/+/HEAD/android_webview/docs/net-debugging.md
+https://monyhar.googlesource.com/monyhar/src/+/HEAD/android_webview/docs/net-debugging.md
 """)
   parser.add_argument(
       '--package',
@@ -80,7 +80,7 @@ https://chromium.googlesource.com/chromium/src/+/HEAD/android_webview/docs/net-d
 
   args = parser.parse_args()
   logging_common.InitializeLogging(args)
-  devil_chromium.Initialize(adb_path=args.adb_path)
+  devil_monyhar.Initialize(adb_path=args.adb_path)
 
   # Only use a single device, for the sake of simplicity (of implementation and
   # user experience).
@@ -90,7 +90,7 @@ https://chromium.googlesource.com/chromium/src/+/HEAD/android_webview/docs/net-d
     raise device_errors.MultipleDevicesError(devices)
 
   if device.build_type == 'user':
-    device_setup_url = ('https://chromium.googlesource.com/chromium/src/+/HEAD/'
+    device_setup_url = ('https://monyhar.googlesource.com/monyhar/src/+/HEAD/'
                         'android_webview/docs/device-setup.md')
     raise RuntimeError('It appears your device is a "user" build. We only '
                        'support capturing netlog on userdebug/eng builds. See '

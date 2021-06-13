@@ -46,7 +46,7 @@ TEST_F(DispatchSourceMachTest, ReceiveAfterResume) {
   mach_port_t port = GetPort();
 
   bool __block did_receive = false;
-  DispatchSourceMach source("org.chromium.base.test.ReceiveAfterResume",
+  DispatchSourceMach source("org.monyhar.base.test.ReceiveAfterResume",
       port, ^{
           mach_msg_empty_rcv_t msg = {{0}};
           msg.header.msgh_size = sizeof(msg);
@@ -80,7 +80,7 @@ TEST_F(DispatchSourceMachTest, NoMessagesAfterDestruction) {
   int* __block count_ptr = count.get();
 
   std::unique_ptr<DispatchSourceMach> source(new DispatchSourceMach(
-      "org.chromium.base.test.NoMessagesAfterDestruction", port, ^{
+      "org.monyhar.base.test.NoMessagesAfterDestruction", port, ^{
         mach_msg_empty_rcv_t msg = {{0}};
         msg.header.msgh_size = sizeof(msg);
         msg.header.msgh_local_port = port;
@@ -91,7 +91,7 @@ TEST_F(DispatchSourceMachTest, NoMessagesAfterDestruction) {
   source->Resume();
 
   dispatch_queue_t queue =
-      dispatch_queue_create("org.chromium.base.test.MessageSend", NULL);
+      dispatch_queue_create("org.monyhar.base.test.MessageSend", NULL);
   dispatch_semaphore_t signal = dispatch_semaphore_create(0);
   for (int i = 0; i < 30; ++i) {
     dispatch_async(queue, ^{

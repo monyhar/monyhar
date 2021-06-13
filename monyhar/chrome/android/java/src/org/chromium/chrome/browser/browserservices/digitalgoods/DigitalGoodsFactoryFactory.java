@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browserservices.digitalgoods;
+package org.monyhar.chrome.browser.browserservices.digitalgoods;
 
-import org.chromium.content_public.browser.RenderFrameHost;
-import org.chromium.payments.mojom.DigitalGoodsFactory;
-import org.chromium.services.service_manager.InterfaceFactory;
+import org.monyhar.content_public.browser.RenderFrameHost;
+import org.monyhar.payments.mojom.DigitalGoodsFactory;
+import org.monyhar.services.service_manager.InterfaceFactory;
 
 /**
  * A factory to produce instances of the mojo {@link DigitalGoodsFactory} interface.

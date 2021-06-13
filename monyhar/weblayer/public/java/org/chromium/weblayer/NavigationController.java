@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer;
+package org.monyhar.weblayer;
 
 import android.net.Uri;
 import android.os.RemoteException;
@@ -10,16 +10,16 @@ import android.os.RemoteException;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.weblayer_private.interfaces.APICallException;
-import org.chromium.weblayer_private.interfaces.IClientNavigation;
-import org.chromium.weblayer_private.interfaces.IClientPage;
-import org.chromium.weblayer_private.interfaces.INavigateParams;
-import org.chromium.weblayer_private.interfaces.INavigation;
-import org.chromium.weblayer_private.interfaces.INavigationController;
-import org.chromium.weblayer_private.interfaces.INavigationControllerClient;
-import org.chromium.weblayer_private.interfaces.ITab;
-import org.chromium.weblayer_private.interfaces.ObjectWrapper;
-import org.chromium.weblayer_private.interfaces.StrictModeWorkaround;
+import org.monyhar.weblayer_private.interfaces.APICallException;
+import org.monyhar.weblayer_private.interfaces.IClientNavigation;
+import org.monyhar.weblayer_private.interfaces.IClientPage;
+import org.monyhar.weblayer_private.interfaces.INavigateParams;
+import org.monyhar.weblayer_private.interfaces.INavigation;
+import org.monyhar.weblayer_private.interfaces.INavigationController;
+import org.monyhar.weblayer_private.interfaces.INavigationControllerClient;
+import org.monyhar.weblayer_private.interfaces.ITab;
+import org.monyhar.weblayer_private.interfaces.ObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.StrictModeWorkaround;
 
 /**
  * Provides methods to control navigation, along with maintaining the current list of navigations.

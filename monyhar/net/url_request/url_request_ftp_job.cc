@@ -74,7 +74,7 @@ bool URLRequestFtpJob::GetMimeType(std::string* mime_type) const {
   }
 
   if (ftp_transaction_->GetResponseInfo()->is_directory_listing) {
-    *mime_type = "text/vnd.chromium.ftp-dir";
+    *mime_type = "text/vnd.monyhar.ftp-dir";
     return true;
   }
 

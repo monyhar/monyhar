@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.input;
+package org.monyhar.content.browser.input;
 
 import static org.mockito.Mockito.inOrder;
 import static org.mockito.Mockito.when;
@@ -25,9 +25,9 @@ import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowLog;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.content_public.browser.InputMethodManagerWrapper;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.content_public.browser.InputMethodManagerWrapper;
+import org.monyhar.ui.base.WindowAndroid;
 
 import java.lang.ref.WeakReference;
 

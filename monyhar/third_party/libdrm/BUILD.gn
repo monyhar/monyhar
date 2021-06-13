@@ -45,8 +45,8 @@ static_library("libdrm") {
     "src",
     "src/include",
   ]
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
   cflags = [
     # xf86drm.c uses readdir_r, which has been deprecated as of
     # glibc-2.24.  This causes a build error when using the Debian
@@ -78,7 +78,7 @@ executable("modetest") {
     "src/tests/modetest",
   ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
   deps = [ ":libdrm" ]
 }

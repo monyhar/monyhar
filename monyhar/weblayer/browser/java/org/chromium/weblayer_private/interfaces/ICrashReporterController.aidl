@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private.interfaces;
+package org.monyhar.weblayer_private.interfaces;
 
 import android.os.Bundle;
 
-import org.chromium.weblayer_private.interfaces.ICrashReporterControllerClient;
-import org.chromium.weblayer_private.interfaces.IObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.ICrashReporterControllerClient;
+import org.monyhar.weblayer_private.interfaces.IObjectWrapper;
 
 interface ICrashReporterController {
     void setClient(in ICrashReporterControllerClient client) = 0;

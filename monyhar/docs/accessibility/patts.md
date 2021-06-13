@@ -36,7 +36,7 @@ which can run several automated tests.
 ## Updating
 
 First, follow the public
-[Chromium OS Developer Guide](http://www.chromium.org/chromium-os/developer-guide) to check out the source.
+[Chromium OS Developer Guide](http://www.monyhar.org/monyhar-os/developer-guide) to check out the source.
 At a minimum you'll need to create a chroot and initialize the build for your board.
 You do not need to build everything from source.
 You do need to start the devserver.
@@ -52,7 +52,7 @@ Before you can make changes to PATTS, the first thing you need to run
 (from the chroot) is call cros_workon with two relevant ebuilds:
 
 ```
-cros_workon --board=$BOARD start chromiumos-assets
+cros_workon --board=$BOARD start monyharos-assets
 cros_workon --board=$BOARD start common-assets
 ```
 
@@ -101,7 +101,7 @@ To upload the change, use repo upload, something like this:
 
 ```
 git commit -a
-  Bug: chromium:12345
+  Bug: monyhar:12345
   Test: Write what you tested here
 repo upload .
 ```
@@ -123,10 +123,10 @@ installed as part of the extension.
 To update the ebuild, edit this file:
 
 ```
-/third_party/chromiumos-overlay/chromeos-base/common-assets/common-assets-9999.ebuild
+/third_party/monyharos-overlay/chromeos-base/common-assets/common-assets-9999.ebuild
 ```
 
-If you need to land changes to both common-assets and chromiumos-assets,
+If you need to land changes to both common-assets and monyharos-assets,
 upload the changes separately and then make them depend on one another
 using this syntax in the changelog:
 

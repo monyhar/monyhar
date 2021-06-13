@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.accessibility;
+package org.monyhar.content.browser.accessibility;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -36,23 +36,23 @@ import android.view.inputmethod.EditorInfo;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.UserData;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.content.browser.WindowEventObserver;
-import org.chromium.content.browser.WindowEventObserverManager;
-import org.chromium.content.browser.accessibility.AccessibilityDelegate.AccessibilityCoordinates;
-import org.chromium.content.browser.accessibility.captioning.CaptioningController;
-import org.chromium.content.browser.input.ImeAdapterImpl;
-import org.chromium.content.browser.webcontents.WebContentsImpl;
-import org.chromium.content.browser.webcontents.WebContentsImpl.UserDataFactory;
-import org.chromium.content_public.browser.AccessibilitySnapshotCallback;
-import org.chromium.content_public.browser.AccessibilitySnapshotNode;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.WebContentsAccessibility;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.UserData;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.content.browser.WindowEventObserver;
+import org.monyhar.content.browser.WindowEventObserverManager;
+import org.monyhar.content.browser.accessibility.AccessibilityDelegate.AccessibilityCoordinates;
+import org.monyhar.content.browser.accessibility.captioning.CaptioningController;
+import org.monyhar.content.browser.input.ImeAdapterImpl;
+import org.monyhar.content.browser.webcontents.WebContentsImpl;
+import org.monyhar.content.browser.webcontents.WebContentsImpl.UserDataFactory;
+import org.monyhar.content_public.browser.AccessibilitySnapshotCallback;
+import org.monyhar.content_public.browser.AccessibilitySnapshotNode;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.WebContentsAccessibility;
+import org.monyhar.ui.base.WindowAndroid;
 
 import java.util.ArrayList;
 import java.util.Calendar;

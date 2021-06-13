@@ -41,7 +41,7 @@ cache *reading* is safe.
 Input: An object of class IdlDefinitions, containing an IDL interface X
 Output: V8X.h and V8X.cpp
 
-Design doc: http://www.chromium.org/developers/design-documents/idl-compiler
+Design doc: http://www.monyhar.org/developers/design-documents/idl-compiler
 """
 
 import os

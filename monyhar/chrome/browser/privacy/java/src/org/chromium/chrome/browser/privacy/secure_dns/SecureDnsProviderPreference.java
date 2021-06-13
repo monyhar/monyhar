@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.privacy.secure_dns;
+package org.monyhar.chrome.browser.privacy.secure_dns;
 
 import android.content.Context;
 import android.text.Editable;
@@ -24,9 +24,9 @@ import androidx.preference.PreferenceViewHolder;
 
 import com.google.android.material.textfield.TextInputLayout;
 
-import org.chromium.chrome.browser.privacy.secure_dns.SecureDnsBridge.Entry;
-import org.chromium.components.browser_ui.widget.RadioButtonWithDescription;
-import org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionLayout;
+import org.monyhar.chrome.browser.privacy.secure_dns.SecureDnsBridge.Entry;
+import org.monyhar.components.browser_ui.widget.RadioButtonWithDescription;
+import org.monyhar.components.browser_ui.widget.RadioButtonWithDescriptionLayout;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -380,7 +380,7 @@ int32_t RTCVideoDecoderStreamAdapter::Decode(
 
   // Fall back to software decoding if there's no support for VP9 spatial
   // layers. See https://crbug.com/webrtc/9304.
-  // TODO(chromium:1187565): Update RTCVideoDecoderFactory::QueryCodecSupport()
+  // TODO(monyhar:1187565): Update RTCVideoDecoderFactory::QueryCodecSupport()
   // if RTCVideoDecoderStream is changed to handle SW decoding and not return
   // WEBRTC_VIDEO_CODEC_FALLBACK_SOFTWARE.
   if (video_codec_type_ == webrtc::kVideoCodecVP9 &&

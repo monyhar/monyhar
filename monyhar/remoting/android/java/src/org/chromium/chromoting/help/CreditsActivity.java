@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting.help;
+package org.monyhar.chromoting.help;
 
-import org.chromium.chromoting.R;
-import org.chromium.chromoting.WebViewActivity;
+import org.monyhar.chromoting.R;
+import org.monyhar.chromoting.WebViewActivity;
 
 /**
  * The Activity for showing the Credits screen.

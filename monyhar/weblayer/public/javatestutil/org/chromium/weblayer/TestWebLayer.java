@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer;
+package org.monyhar.weblayer;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
@@ -16,8 +16,8 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.weblayer_private.interfaces.ObjectWrapper;
-import org.chromium.weblayer_private.test_interfaces.ITestWebLayer;
+import org.monyhar.weblayer_private.interfaces.ObjectWrapper;
+import org.monyhar.weblayer_private.test_interfaces.ITestWebLayer;
 
 import java.util.ArrayList;
 import java.util.Set;
@@ -41,7 +41,7 @@ public final class TestWebLayer {
     private TestWebLayer(@NonNull Context appContext) {
         try {
             Class TestWebLayerClass = WebLayer.loadRemoteClass(
-                    appContext, "org.chromium.weblayer_private.test.TestWebLayerImpl");
+                    appContext, "org.monyhar.weblayer_private.test.TestWebLayerImpl");
             mITestWebLayer = ITestWebLayer.Stub.asInterface(
                     (IBinder) TestWebLayerClass.getMethod("create").invoke(null));
         } catch (PackageManager.NameNotFoundException | ReflectiveOperationException e) {

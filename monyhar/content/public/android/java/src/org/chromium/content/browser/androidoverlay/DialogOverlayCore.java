@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser.androidoverlay;
+package org.monyhar.content.browser.androidoverlay;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
@@ -14,9 +14,9 @@ import android.view.SurfaceHolder;
 import android.view.Window;
 import android.view.WindowManager;
 
-import org.chromium.base.Log;
-import org.chromium.gfx.mojom.Rect;
-import org.chromium.media.mojom.AndroidOverlayConfig;
+import org.monyhar.base.Log;
+import org.monyhar.gfx.mojom.Rect;
+import org.monyhar.media.mojom.AndroidOverlayConfig;
 
 /**
  * Core class for control of a single Dialog-based AndroidOverlay instance.  Everything runs on the

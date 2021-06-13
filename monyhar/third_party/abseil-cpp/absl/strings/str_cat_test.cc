@@ -441,7 +441,7 @@ TEST(StrCat, AvoidsMemcpyWithNullptr) {
 TEST(StrAppend, Death) {
   std::string s = "self";
   // on linux it's "assertion", on mac it's "Assertion",
-  // on chromiumos it's "Assertion ... failed".
+  // on monyharos it's "Assertion ... failed".
   ABSL_EXPECT_DEBUG_DEATH(absl::StrAppend(&s, s.c_str() + 1),
                           "ssertion.*failed");
   ABSL_EXPECT_DEBUG_DEATH(absl::StrAppend(&s, s), "ssertion.*failed");

@@ -919,7 +919,7 @@ TEST(StringNumberConversionsTest, HexEncode) {
 }
 
 // Test cases of known-bad strtod conversions that motivated the use of dmg_fp.
-// See https://bugs.chromium.org/p/chromium/issues/detail?id=593512.
+// See https://bugs.monyhar.org/p/monyhar/issues/detail?id=593512.
 TEST(StringNumberConversionsTest, StrtodFailures) {
   static const struct {
     const char* input;

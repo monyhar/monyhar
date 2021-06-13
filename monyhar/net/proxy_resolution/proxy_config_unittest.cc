@@ -572,8 +572,8 @@ TEST_F(ProxyConfigWebSocketTest, IgnoresFtpProxy) {
 
 TEST_F(ProxyConfigWebSocketTest, ObeysBypassRules) {
   ParseFromString("http=proxy:3128 ; https=sslproxy:3128");
-  rules_.bypass_rules.AddRuleFromString(".chromium.org");
-  Apply(GURL("wss://codereview.chromium.org/feed"));
+  rules_.bypass_rules.AddRuleFromString(".monyhar.org");
+  Apply(GURL("wss://codereview.monyhar.org/feed"));
   EXPECT_EQ("DIRECT", ToPacString());
 }
 

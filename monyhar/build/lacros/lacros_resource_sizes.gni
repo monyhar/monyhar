@@ -14,7 +14,7 @@ template("lacros_resource_sizes_test") {
 
     deps = [ "//build/lacros:lacros_resource_sizes_py" ]
     executable_args = [
-      "--chromium-output-directory",
+      "--monyhar-output-directory",
       "@WrappedPath(.)",
     ]
   }

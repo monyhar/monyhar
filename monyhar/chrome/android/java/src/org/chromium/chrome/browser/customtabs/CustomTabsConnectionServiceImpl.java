@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -13,9 +13,9 @@ import androidx.annotation.Nullable;
 import androidx.browser.customtabs.CustomTabsService;
 import androidx.browser.customtabs.CustomTabsSessionToken;
 
-import org.chromium.chrome.browser.firstrun.FirstRunFlowSequencer;
-import org.chromium.chrome.browser.init.ProcessInitializationHandler;
-import org.chromium.components.embedder_support.util.Origin;
+import org.monyhar.chrome.browser.firstrun.FirstRunFlowSequencer;
+import org.monyhar.chrome.browser.init.ProcessInitializationHandler;
+import org.monyhar.components.embedder_support.util.Origin;
 
 import java.util.List;
 

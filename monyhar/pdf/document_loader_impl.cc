@@ -174,7 +174,7 @@ void DocumentLoaderImpl::RequestData(uint32_t position, uint32_t size) {
   // PDFiumEngine::OnDocumentComplete() -> FPDFAvail_IsPageAvail after
   // document is complete.
   // We need this fix in PDFIum. Adding this as a work around.
-  // Bug: http://code.google.com/p/chromium/issues/detail?id=79996
+  // Bug: http://code.google.com/p/monyhar/issues/detail?id=79996
   // Test url:
   // http://www.icann.org/en/correspondence/holtzman-to-jeffrey-02mar11-en.pdf
   if (!loader_)

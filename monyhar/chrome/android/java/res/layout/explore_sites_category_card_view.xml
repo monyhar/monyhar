@@ -3,7 +3,7 @@
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
 
-<org.chromium.chrome.browser.explore_sites.ExploreSitesCategoryCardView
+<org.monyhar.chrome.browser.explore_sites.ExploreSitesCategoryCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -24,7 +24,7 @@
         android:minHeight="@dimen/explore_sites_category_title_height"
         tools:text="Category" />
 
-    <org.chromium.chrome.browser.suggestions.tile.TileGridLayout
+    <org.monyhar.chrome.browser.suggestions.tile.TileGridLayout
         android:id="@+id/category_sites"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,4 +34,4 @@
         android:columnOrderPreserved="true"
         android:paddingTop="@dimen/explore_sites_category_title_spacing" />
 
-</org.chromium.chrome.browser.explore_sites.ExploreSitesCategoryCardView>
+</org.monyhar.chrome.browser.explore_sites.ExploreSitesCategoryCardView>

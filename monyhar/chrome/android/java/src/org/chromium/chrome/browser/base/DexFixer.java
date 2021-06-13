@@ -1,7 +1,7 @@
 // Copyright 2020 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.chrome.browser.base;
+package org.monyhar.chrome.browser.base;
 
 import android.content.pm.ApplicationInfo;
 import android.os.Build;
@@ -15,20 +15,20 @@ import androidx.annotation.WorkerThread;
 
 import dalvik.system.DexFile;
 
-import org.chromium.base.BuildInfo;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.compat.ApiHelperForM;
-import org.chromium.base.compat.ApiHelperForO;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.task.PostTask;
-import org.chromium.base.task.TaskTraits;
-import org.chromium.build.BuildConfig;
-import org.chromium.build.NativeLibraries;
-import org.chromium.chrome.browser.DeferredStartupHandler;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.version.ChromeVersionInfo;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.compat.ApiHelperForM;
+import org.monyhar.base.compat.ApiHelperForO;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.base.task.TaskTraits;
+import org.monyhar.build.BuildConfig;
+import org.monyhar.build.NativeLibraries;
+import org.monyhar.chrome.browser.DeferredStartupHandler;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.version.ChromeVersionInfo;
 
 import java.io.File;
 import java.io.IOException;
@@ -105,7 +105,7 @@ public class DexFixer {
             return true;
         }
         // Skip the workaround on local builds to avoid affecting perf bots.
-        // https://bugs.chromium.org/p/chromium/issues/detail?id=1160070
+        // https://bugs.monyhar.org/p/monyhar/issues/detail?id=1160070
         if (ChromeVersionInfo.isLocalBuild() && ChromeVersionInfo.isOfficialBuild()) {
             return true;
         }
@@ -121,7 +121,7 @@ public class DexFixer {
         } else {
             isaName = is64Bit ? "x86_64" : "x86";
         }
-        // E.g. /data/app/org.chromium.chrome-qtmmjyN79ucfPKm0ZVZMHg==/base.apk
+        // E.g. /data/app/org.monyhar.chrome-qtmmjyN79ucfPKm0ZVZMHg==/base.apk
         File apkFile = new File(apkPath);
         String baseName = apkFile.getName();
         baseName = baseName.substring(0, baseName.lastIndexOf('.'));

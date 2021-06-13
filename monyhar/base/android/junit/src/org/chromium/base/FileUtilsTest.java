@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base;
+package org.monyhar.base;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -35,7 +35,7 @@ import org.robolectric.annotation.Config;
 import org.robolectric.annotation.Implementation;
 import org.robolectric.annotation.Implements;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -426,7 +426,7 @@ public class FileUtilsTest {
                 if (fileString.startsWith("/")) {
                     fileString = fileString.substring(1);
                 }
-                builder.scheme("content").authority("org.chromium.test");
+                builder.scheme("content").authority("org.monyhar.test");
                 for (String path : fileString.split("/")) {
                     builder.appendPath(path);
                 }
@@ -435,12 +435,12 @@ public class FileUtilsTest {
         });
 
         assertEquals(
-                "content://org.chromium.test/", FileUtils.getUriForFile(new File("/")).toString());
-        assertEquals("content://org.chromium.test/foo.bar",
+                "content://org.monyhar.test/", FileUtils.getUriForFile(new File("/")).toString());
+        assertEquals("content://org.monyhar.test/foo.bar",
                 FileUtils.getUriForFile(new File("/foo.bar")).toString());
-        assertEquals("content://org.chromium.test/path1/path2/filename.ext",
+        assertEquals("content://org.monyhar.test/path1/path2/filename.ext",
                 FileUtils.getUriForFile(new File("/path1/path2/filename.ext")).toString());
-        assertEquals("content://org.chromium.test/../../..",
+        assertEquals("content://org.monyhar.test/../../..",
                 FileUtils.getUriForFile(new File("/../../..")).toString());
     }
 
@@ -556,29 +556,29 @@ public class FileUtilsTest {
 
     @Test
     public void testQueryBitmapFromContentProvider() throws IOException {
-        // Set up "org.chromium.test" provider.
+        // Set up "org.monyhar.test" provider.
         ProviderInfo info = new ProviderInfo();
-        info.authority = "org.chromium.test";
+        info.authority = "org.monyhar.test";
         TestContentProvider contentProvider =
                 Robolectric.buildContentProvider(TestContentProvider.class).create(info).get();
 
         // Fake valid image. Expect success.
         File tempFile1 = temporaryFolder.newFile("temp1.png");
         markFileAsValidImage(tempFile1);
-        Uri validImageUri = Uri.parse("content://org.chromium.test/valid.png");
+        Uri validImageUri = Uri.parse("content://org.monyhar.test/valid.png");
         contentProvider.insertForTest(validImageUri.toString(), tempFile1.toString());
 
         // File exists, but not a valid image (empty). Expect failure.
         File tempFile2 = temporaryFolder.newFile("temp2.txt");
-        Uri invalidImageUri = Uri.parse("content://org.chromium.test/invalid.txt");
+        Uri invalidImageUri = Uri.parse("content://org.monyhar.test/invalid.txt");
         contentProvider.insertForTest(invalidImageUri.toString(), tempFile2.toString());
 
         // Uri exists, but file does not exist. Expect failure.
-        Uri bogusFileUri = Uri.parse("content://org.chromium.test/bogus-file.txt");
+        Uri bogusFileUri = Uri.parse("content://org.monyhar.test/bogus-file.txt");
         contentProvider.insertForTest(bogusFileUri.toString(), "bogus-to-trigger-file-not-found");
 
         // Uri does not exist.  Expect failure.
-        Uri nonExistentUri = Uri.parse("content://org.chromium.test/non-existent.txt");
+        Uri nonExistentUri = Uri.parse("content://org.monyhar.test/non-existent.txt");
 
         for (int i = 0; i < 2; ++i) {
             assertNotNull(FileUtils.queryBitmapFromContentProvider(mContext, validImageUri));

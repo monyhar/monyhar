@@ -23,7 +23,7 @@ class InputStream;
 class WebResourceResponse {
  public:
   // It is expected that |obj| is an instance of the Java-side
-  // org.chromium.components.embedder_support.util.WebResourceResponseInfo
+  // org.monyhar.components.embedder_support.util.WebResourceResponseInfo
   // class.
   explicit WebResourceResponse(const base::android::JavaRef<jobject>& obj);
   ~WebResourceResponse();

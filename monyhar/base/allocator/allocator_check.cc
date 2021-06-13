@@ -29,7 +29,7 @@ bool IsAllocatorInitialized() {
   return g_is_win_shim_layer_initialized;
 #elif (defined(OS_LINUX) || defined(OS_CHROMEOS)) && \
     BUILDFLAG(USE_TCMALLOC) && !defined(MEMORY_TOOL_REPLACES_ALLOCATOR)
-// From third_party/tcmalloc/chromium/src/gperftools/tcmalloc.h.
+// From third_party/tcmalloc/monyhar/src/gperftools/tcmalloc.h.
 // TODO(primiano): replace with an include once base can depend on allocator.
 #define TC_MALLOPT_IS_OVERRIDDEN_BY_TCMALLOC 0xbeef42
   return (mallopt(TC_MALLOPT_IS_OVERRIDDEN_BY_TCMALLOC, 0) ==

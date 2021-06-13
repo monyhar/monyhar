@@ -2,25 +2,25 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tasks.tab_management;
+package org.monyhar.chrome.browser.tasks.tab_management;
 
-import static org.chromium.chrome.browser.tasks.tab_management.TabGroupUiProperties.INITIAL_SCROLL_INDEX;
-import static org.chromium.chrome.browser.tasks.tab_management.TabGroupUiProperties.IS_MAIN_CONTENT_VISIBLE;
-import static org.chromium.chrome.browser.tasks.tab_management.TabGroupUiProperties.LEFT_BUTTON_CONTENT_DESCRIPTION;
-import static org.chromium.chrome.browser.tasks.tab_management.TabGroupUiProperties.LEFT_BUTTON_DRAWABLE_ID;
-import static org.chromium.chrome.browser.tasks.tab_management.TabGroupUiProperties.LEFT_BUTTON_ON_CLICK_LISTENER;
-import static org.chromium.chrome.browser.tasks.tab_management.TabGroupUiProperties.PRIMARY_COLOR;
-import static org.chromium.chrome.browser.tasks.tab_management.TabGroupUiProperties.RIGHT_BUTTON_CONTENT_DESCRIPTION;
-import static org.chromium.chrome.browser.tasks.tab_management.TabGroupUiProperties.RIGHT_BUTTON_ON_CLICK_LISTENER;
-import static org.chromium.chrome.browser.tasks.tab_management.TabGroupUiProperties.TINT;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabGroupUiProperties.INITIAL_SCROLL_INDEX;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabGroupUiProperties.IS_MAIN_CONTENT_VISIBLE;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabGroupUiProperties.LEFT_BUTTON_CONTENT_DESCRIPTION;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabGroupUiProperties.LEFT_BUTTON_DRAWABLE_ID;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabGroupUiProperties.LEFT_BUTTON_ON_CLICK_LISTENER;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabGroupUiProperties.PRIMARY_COLOR;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabGroupUiProperties.RIGHT_BUTTON_CONTENT_DESCRIPTION;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabGroupUiProperties.RIGHT_BUTTON_ON_CLICK_LISTENER;
+import static org.monyhar.chrome.browser.tasks.tab_management.TabGroupUiProperties.TINT;
 
 import android.view.View;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.ui.modelutil.PropertyKey;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyKey;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * ViewBinder for TabGroupUi component.

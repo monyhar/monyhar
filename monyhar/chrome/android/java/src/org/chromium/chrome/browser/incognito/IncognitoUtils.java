@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.incognito;
+package org.monyhar.chrome.browser.incognito;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -14,22 +14,22 @@ import android.util.Pair;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.customtabs.CustomTabIncognitoManager;
-import org.chromium.chrome.browser.profiles.OTRProfileID;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.profiles.ProfileKey;
-import org.chromium.chrome.browser.tab.TabStateFileManager;
-import org.chromium.chrome.browser.tabmodel.IncognitoTabHost;
-import org.chromium.chrome.browser.tabmodel.IncognitoTabHostRegistry;
-import org.chromium.chrome.browser.tabpersistence.TabStateDirectory;
-import org.chromium.chrome.browser.util.AndroidTaskUtils;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.customtabs.CustomTabIncognitoManager;
+import org.monyhar.chrome.browser.profiles.OTRProfileID;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.profiles.ProfileKey;
+import org.monyhar.chrome.browser.tab.TabStateFileManager;
+import org.monyhar.chrome.browser.tabmodel.IncognitoTabHost;
+import org.monyhar.chrome.browser.tabmodel.IncognitoTabHostRegistry;
+import org.monyhar.chrome.browser.tabpersistence.TabStateDirectory;
+import org.monyhar.chrome.browser.util.AndroidTaskUtils;
+import org.monyhar.ui.base.WindowAndroid;
 
 import java.io.File;
 import java.util.HashSet;

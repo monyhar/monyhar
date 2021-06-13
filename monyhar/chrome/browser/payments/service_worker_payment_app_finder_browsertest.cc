@@ -176,7 +176,7 @@ class ServiceWorkerPaymentAppFinderBrowserTest : public InProcessBrowserTest {
         larry_example_.GetURL("larry.example.com", "/"));
 
     ui_test_utils::NavigateToURL(browser(),
-                                 alicepay_.GetURL("chromium.org", "/"));
+                                 alicepay_.GetURL("monyhar.org", "/"));
 
     auto* finder = ServiceWorkerPaymentAppFinder::GetOrCreateForCurrentDocument(
         browser()->tab_strip_model()->GetActiveWebContents()->GetMainFrame());
@@ -191,7 +191,7 @@ class ServiceWorkerPaymentAppFinderBrowserTest : public InProcessBrowserTest {
 
     base::RunLoop run_loop;
     finder->GetAllPaymentApps(
-        url::Origin::Create(GURL("https://chromium.org")),
+        url::Origin::Create(GURL("https://monyhar.org")),
         WebDataServiceFactory::GetPaymentManifestWebDataForProfile(
             Profile::FromBrowserContext(context),
             ServiceAccessType::EXPLICIT_ACCESS),

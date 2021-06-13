@@ -595,7 +595,7 @@ void ShapeResultView::ComputePartInkBounds(
   // Get glyph bounds from Skia. It's a lot faster if we give it list of glyph
   // IDs rather than calling it for each glyph.
   // TODO(kojii): MacOS does not benefit from batching the Skia request due to
-  // https://bugs.chromium.org/p/skia/issues/detail?id=5328, and the cost to
+  // https://bugs.monyhar.org/p/skia/issues/detail?id=5328, and the cost to
   // prepare batching, which is normally much less than the benefit of
   // batching, is not ignorable unfortunately.
   auto glyph_offsets = part.GetGlyphOffsets<has_non_zero_glyph_offsets>();

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.privacy.settings;
+package org.monyhar.chrome.browser.privacy.settings;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -11,15 +11,15 @@ import android.net.NetworkInfo;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.CommandLine;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.device.DeviceClassManager;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.components.minidump_uploader.util.NetworkPermissionUtil;
-import org.chromium.content_public.browser.BrowserStartupController;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.device.DeviceClassManager;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.components.minidump_uploader.util.NetworkPermissionUtil;
+import org.monyhar.content_public.browser.BrowserStartupController;
 
 /**
  * Manages preferences related to privacy, metrics reporting, prerendering, and network prediction.

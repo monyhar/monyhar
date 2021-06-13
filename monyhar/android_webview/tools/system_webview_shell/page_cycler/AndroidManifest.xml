@@ -7,7 +7,7 @@
 
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.chromium.webview_shell.page_cycler"
+    package="org.monyhar.webview_shell.page_cycler"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -17,7 +17,7 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.READ_LOGS"/>
 
-    <instrumentation android:name="org.chromium.base.test.BaseChromiumAndroidJUnitRunner"
-        android:targetPackage="org.chromium.webview_shell"
-        android:label="Page cycler for org.chromium.webview_shell"/>
+    <instrumentation android:name="org.monyhar.base.test.BaseChromiumAndroidJUnitRunner"
+        android:targetPackage="org.monyhar.webview_shell"
+        android:label="Page cycler for org.monyhar.webview_shell"/>
 </manifest>

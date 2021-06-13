@@ -56,7 +56,7 @@ class LocalWPTTest(unittest.TestCase):
         local_wpt = LocalWPT(host, 'token')
         local_wpt.fetch()
 
-        local_wpt.create_branch_with_patch('chromium-export-decafbad',
+        local_wpt.create_branch_with_patch('monyhar-export-decafbad',
                                            'message', 'patch',
                                            'author <author@author.com>')
         self.assertEqual(
@@ -69,13 +69,13 @@ class LocalWPTTest(unittest.TestCase):
              ['git', 'config', 'user.email', DEFAULT_WPT_COMMITTER_EMAIL],
              ['git', 'reset', '--hard', 'HEAD'], ['git', 'clean', '-fdx'],
              ['git', 'checkout', 'origin/master'],
-             ['git', 'branch', '-D', 'chromium-export-decafbad'],
-             ['git', 'checkout', '-b', 'chromium-export-decafbad'],
+             ['git', 'branch', '-D', 'monyhar-export-decafbad'],
+             ['git', 'checkout', '-b', 'monyhar-export-decafbad'],
              ['git', 'apply', '-'], ['git', 'add', '.'],
              [
                  'git', 'commit', '--author', 'author <author@author.com>',
                  '-am', 'message'
-             ], ['git', 'push', 'origin', 'chromium-export-decafbad']])
+             ], ['git', 'push', 'origin', 'monyhar-export-decafbad']])
 
     def test_test_patch_success(self):
         host = MockHost()

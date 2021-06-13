@@ -13,7 +13,7 @@ prerequisite.
 The tested functionality is spread across these locations:
 ```
 third_party/android_crazy_linker
-base/android/java/src/org/chromium/base/library_loader
+base/android/java/src/org/monyhar/base/library_loader
 ```
 
 ## Running native tests

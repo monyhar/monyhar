@@ -155,9 +155,9 @@ if (is_android) {
 
   generate_jni("jni_headers") {
     sources = [
-      "android/java/src/org/chromium/components/dom_distiller/core/DistilledPagePrefs.java",
-      "android/java/src/org/chromium/components/dom_distiller/core/DomDistillerService.java",
-      "android/java/src/org/chromium/components/dom_distiller/core/DomDistillerUrlUtils.java",
+      "android/java/src/org/monyhar/components/dom_distiller/core/DistilledPagePrefs.java",
+      "android/java/src/org/monyhar/components/dom_distiller/core/DomDistillerService.java",
+      "android/java/src/org/monyhar/components/dom_distiller/core/DomDistillerUrlUtils.java",
     ]
   }
 

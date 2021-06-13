@@ -7,7 +7,7 @@
 #include <utility>
 
 #include "base/containers/flat_map.h"
-#include "mojo/public/cpp/bindings/tests/rect_chromium.h"
+#include "mojo/public/cpp/bindings/tests/rect_monyhar.h"
 #include "mojo/public/interfaces/bindings/tests/rect.mojom.h"
 #include "mojo/public/interfaces/bindings/tests/test_structs.mojom.h"
 #include "testing/gtest/include/gtest/gtest.h"

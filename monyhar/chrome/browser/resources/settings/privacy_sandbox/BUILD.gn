@@ -51,7 +51,7 @@ js_library("app") {
   deps = [
     ":privacy_sandbox_browser_proxy",
     "..:settings",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 

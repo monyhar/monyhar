@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.infobar;
+package org.monyhar.chrome.browser.infobar;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.components.infobars.InfoBar;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.components.infobars.InfoBar;
 
 /**
  * Provides JNI methods for the infobar to notify that the generated password was saved.

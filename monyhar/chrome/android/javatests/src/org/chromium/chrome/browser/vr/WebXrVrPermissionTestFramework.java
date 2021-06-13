@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr;
+package org.monyhar.chrome.browser.vr;
 
-import org.chromium.chrome.test.ChromeActivityTestRule;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.chrome.test.ChromeActivityTestRule;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * Extension class of WebXrVrTestFramework that allows explicitly specifying whether or not the

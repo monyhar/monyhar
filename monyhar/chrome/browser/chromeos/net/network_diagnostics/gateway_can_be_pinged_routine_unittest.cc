@@ -34,7 +34,7 @@ namespace network_diagnostics {
 namespace {
 
 // Fake ICMP output. For more details, see:
-// https://gerrit.chromium.org/gerrit/#/c/30310/2/src/helpers/icmp.cc.
+// https://gerrit.monyhar.org/gerrit/#/c/30310/2/src/helpers/icmp.cc.
 const char kFakeValidICMPOutput[] = R"(
     { "4.3.2.1":
       { "sent": 4,

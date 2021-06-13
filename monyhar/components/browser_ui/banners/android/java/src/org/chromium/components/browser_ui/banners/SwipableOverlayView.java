@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.banners;
+package org.monyhar.components.browser_ui.banners;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -19,17 +19,17 @@ import android.widget.FrameLayout;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.base.MathUtils;
-import org.chromium.content_public.browser.GestureListenerManager;
-import org.chromium.content_public.browser.GestureStateListenerWithScroll;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.MathUtils;
+import org.monyhar.content_public.browser.GestureListenerManager;
+import org.monyhar.content_public.browser.GestureStateListenerWithScroll;
+import org.monyhar.content_public.browser.WebContents;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 /**
  * View that slides up from the bottom of the page and slides away as the user scrolls the page.
- * Meant to be tacked onto the {@link org.chromium.content_public.browser.WebContents}'s view and
+ * Meant to be tacked onto the {@link org.monyhar.content_public.browser.WebContents}'s view and
  * alerted when either the page scroll position or viewport size changes.
  *
  * GENERAL BEHAVIOR

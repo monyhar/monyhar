@@ -100,7 +100,7 @@ class UpdateEngineClientImpl : public UpdateEngineClient {
     writer.AppendString("");  // app_version
     writer.AppendString("");  // omaha_url
     writer.AppendInt32(0);    // flags, default is 0 (interactive). See
-                              // org.chromium.UpdateEngineInterface.dbus-xml.
+                              // org.monyhar.UpdateEngineInterface.dbus-xml.
 
     VLOG(1) << "Requesting an update check";
     update_engine_proxy_->CallMethod(

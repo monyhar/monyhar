@@ -34,18 +34,18 @@ namespace arc {
 namespace {
 
 // URL which returns a file descriptor of a regular file.
-constexpr char kArcUrlFile[] = "content://org.chromium.foo/file";
+constexpr char kArcUrlFile[] = "content://org.monyhar.foo/file";
 
 // URL which returns a file descriptor of a pipe's read end.
-constexpr char kArcUrlPipe[] = "content://org.chromium.foo/pipe";
+constexpr char kArcUrlPipe[] = "content://org.monyhar.foo/pipe";
 
 // URL which returns a file descriptor of a regular file with unknown size.
 constexpr char kArcUrlFileUnknownSize[] =
-    "content://org.chromium.foo/file-unknown-size";
+    "content://org.monyhar.foo/file-unknown-size";
 
 // URL which returns a file descriptor of a pipe's read end with unknown size.
 constexpr char kArcUrlPipeUnknownSize[] =
-    "content://org.chromium.foo/pipe-unknown-size";
+    "content://org.monyhar.foo/pipe-unknown-size";
 
 constexpr char kData[] = "abcdefghijklmnopqrstuvwxyz";
 
@@ -186,14 +186,14 @@ TEST_F(ArcContentFileSystemFileStreamReaderTest,
 
 TEST_F(ArcContentFileSystemFileStreamReaderTest, ReadError) {
   ArcContentFileSystemFileStreamReader reader(
-      GURL("content://org.chromium.foo/error"), 0);
+      GURL("content://org.monyhar.foo/error"), 0);
   auto buffer = base::MakeRefCounted<net::IOBufferWithSize>(strlen(kData));
   EXPECT_FALSE(ReadData(&reader, buffer.get()));
 }
 
 TEST_F(ArcContentFileSystemFileStreamReaderTest, GetLengthError) {
   ArcContentFileSystemFileStreamReader reader(
-      GURL("content://org.chromium.foo/error"), 0);
+      GURL("content://org.monyhar.foo/error"), 0);
   net::TestInt64CompletionCallback callback;
   EXPECT_LT(callback.GetResult(reader.GetLength(callback.callback())), 0);
 }

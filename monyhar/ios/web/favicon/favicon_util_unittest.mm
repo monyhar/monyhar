@@ -39,7 +39,7 @@ TEST_F(FaviconUtilTest, ExtractFaviconURLMultipleFavicons) {
 
   std::vector<web::FaviconURL> urls;
   bool result = web::ExtractFaviconURL(favicons.get(),
-                                       GURL("http://chromium.org"), &urls);
+                                       GURL("http://monyhar.org"), &urls);
 
   EXPECT_TRUE(result);
   ASSERT_EQ(3U, urls.size());
@@ -144,11 +144,11 @@ TEST_F(FaviconUtilTest, ExtractFaviconURLNoFavicons) {
 
   std::vector<web::FaviconURL> urls;
   bool result = web::ExtractFaviconURL(favicons.get(),
-                                       GURL("http://chromium.org"), &urls);
+                                       GURL("http://monyhar.org"), &urls);
 
   EXPECT_TRUE(result);
   ASSERT_EQ(1U, urls.size());
-  EXPECT_EQ(GURL("http://chromium.org/favicon.ico"), urls[0].icon_url);
+  EXPECT_EQ(GURL("http://monyhar.org/favicon.ico"), urls[0].icon_url);
   EXPECT_EQ(web::FaviconURL::IconType::kFavicon, urls[0].icon_type);
   EXPECT_EQ(0U, urls[0].icon_sizes.size());
 }

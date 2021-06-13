@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.browser.test.util;
+package org.monyhar.content_public.browser.test.util;
 
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.content_public.browser.JavaScriptCallback;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.content_public.browser.JavaScriptCallback;
+import org.monyhar.content_public.browser.WebContents;
 
 import java.util.ArrayList;
 import java.util.Collections;

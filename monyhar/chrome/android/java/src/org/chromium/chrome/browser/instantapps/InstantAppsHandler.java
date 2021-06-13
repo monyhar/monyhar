@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.instantapps;
+package org.monyhar.chrome.browser.instantapps;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,19 +11,19 @@ import android.os.Build;
 import android.os.SystemClock;
 import android.provider.Browser;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.Log;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.AppHooks;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.ShortcutHelper;
-import org.chromium.chrome.browser.externalnav.ExternalNavigationDelegateImpl;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.url.GURL;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.AppHooks;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.ShortcutHelper;
+import org.monyhar.chrome.browser.externalnav.ExternalNavigationDelegateImpl;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.url.GURL;
 
 /** A launcher for Instant Apps. */
 public class InstantAppsHandler {
@@ -36,7 +36,7 @@ public class InstantAppsHandler {
             "android.support.customtabs.extra.EXTRA_ENABLE_INSTANT_APPS";
 
     private static final String INSTANT_APP_START_TIME_EXTRA =
-            "org.chromium.chrome.INSTANT_APP_START_TIME";
+            "org.monyhar.chrome.INSTANT_APP_START_TIME";
 
     // TODO(mariakhomenko): Use system once we roll to O SDK.
     private static final int FLAG_DO_NOT_LAUNCH = 0x00000200;

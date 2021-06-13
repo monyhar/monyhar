@@ -21,7 +21,7 @@
             android:orientation="vertical"
             android:clipToPadding="false" >
 
-            <org.chromium.chrome.browser.bookmarks.BookmarkTextInputLayout
+            <org.monyhar.chrome.browser.bookmarks.BookmarkTextInputLayout
                 android:id="@+id/folder_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
                     android:layout_height="wrap_content"
                     android:imeOptions="flagNoExtractUi"
                     android:inputType="textCapSentences|textAutoCorrect" />
-            </org.chromium.chrome.browser.bookmarks.BookmarkTextInputLayout>
+            </org.monyhar.chrome.browser.bookmarks.BookmarkTextInputLayout>
 
             <TextView
                 android:layout_width="wrap_content"

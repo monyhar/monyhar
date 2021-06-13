@@ -155,9 +155,9 @@ class PerfBenchmark(benchmark.Benchmark):
   @staticmethod
   def _GetPossibleBuildDirectories(chrome_src_dir, browser_type):
     possible_directories = path_module.GetBuildDirectories(chrome_src_dir)
-    # Special case "android-chromium" and "any" and check all
+    # Special case "android-monyhar" and "any" and check all
     # possible out directories.
-    if browser_type in ('android-chromium', 'any'):
+    if browser_type in ('android-monyhar', 'any'):
       return possible_directories
 
     # For all other browser types, just consider directories which match.
@@ -172,8 +172,8 @@ class PerfBenchmark(benchmark.Benchmark):
     incorrect directory, nothing should critically break.
 
     """
-    if finder_options.chromium_output_dir is not None:
-      return finder_options.chromium_output_dir
+    if finder_options.monyhar_output_dir is not None:
+      return finder_options.monyhar_output_dir
 
     possible_directories = itertools.chain(
         self._GetPossibleBuildDirectories(

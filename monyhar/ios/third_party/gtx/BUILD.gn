@@ -97,7 +97,7 @@ ios_framework_bundle("gtx") {
 
   configs -= [
     "//build/config/gcc:symbol_visibility_hidden",
-    "//build/config/compiler:chromium_code",
+    "//build/config/compiler:monyhar_code",
   ]
   configs += [
     "//build/config/compiler:enable_arc",

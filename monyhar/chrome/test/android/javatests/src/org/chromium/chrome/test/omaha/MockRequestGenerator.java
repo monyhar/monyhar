@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.test.omaha;
+package org.monyhar.chrome.test.omaha;
 
 import android.content.Context;
 
-import org.chromium.chrome.browser.omaha.RequestGenerator;
+import org.monyhar.chrome.browser.omaha.RequestGenerator;
 
 /** Mocks out the RequestGenerator for tests. */
 public class MockRequestGenerator extends RequestGenerator {
@@ -22,7 +22,7 @@ public class MockRequestGenerator extends RequestGenerator {
     private static final String CLIENT = "mock-client";
     private static final String DEVICE_ID = "some-arbitrary-device-id";
     private static final String LANGUAGE = "zz-ZZ";
-    private static final String ADDITIONAL_PARAMETERS = "chromium; manufacturer; model";
+    private static final String ADDITIONAL_PARAMETERS = "monyhar; manufacturer; model";
 
     private final boolean mIsOnTablet;
 

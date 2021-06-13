@@ -78,7 +78,7 @@ config("tcmalloc_flags") {
 if (use_allocator == "tcmalloc") {
   # tcmalloc currently won't compile on Android.
   source_set("tcmalloc") {
-    tcmalloc_dir = "//third_party/tcmalloc/chromium"
+    tcmalloc_dir = "//third_party/tcmalloc/monyhar"
 
     # Don't check tcmalloc's includes. These files include various files like
     # base/foo.h and they actually refer to tcmalloc's forked copy of base
@@ -206,9 +206,9 @@ if (use_allocator == "tcmalloc") {
       "$tcmalloc_dir/src",
     ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
     configs += [
-      "//build/config/compiler:no_chromium_code",
+      "//build/config/compiler:no_monyhar_code",
       ":tcmalloc_flags",
     ]
 

@@ -3300,7 +3300,7 @@ TEST_F(PartitionAllocDeathTest, CheckTriggered) {
 
 // Not on chromecast, since gtest considers extra output from itself as a test
 // failure:
-// https://ci.chromium.org/ui/p/chromium/builders/ci/Cast%20Audio%20Linux/98492/overview
+// https://ci.monyhar.org/ui/p/monyhar/builders/ci/Cast%20Audio%20Linux/98492/overview
 #if BUILDFLAG(USE_PARTITION_ALLOC_AS_MALLOC) &&              \
     defined(GTEST_HAS_DEATH_TEST) && !defined(OS_ANDROID) && \
     !BUILDFLAG(IS_CHROMECAST)

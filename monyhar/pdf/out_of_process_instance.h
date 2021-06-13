@@ -257,7 +257,7 @@ class OutOfProcessInstance : public PdfViewPluginBase,
   base::queue<PreviewPageInfo> preview_pages_info_;
 
   // Used to signal the browser about focus changes to trigger the OSK.
-  // TODO(abodenha@chromium.org) Implement full IME support in the plugin.
+  // TODO(abodenha@monyhar.org) Implement full IME support in the plugin.
   // http://crbug.com/132565
   std::unique_ptr<pp::TextInput_Dev> text_input_;
 

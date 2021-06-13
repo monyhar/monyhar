@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.browser;
+package org.monyhar.content_public.browser;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.content.browser.MediaSessionImpl;
-import org.chromium.services.media_session.MediaImage;
-import org.chromium.services.media_session.MediaMetadata;
-import org.chromium.services.media_session.MediaPosition;
+import org.monyhar.content.browser.MediaSessionImpl;
+import org.monyhar.services.media_session.MediaImage;
+import org.monyhar.services.media_session.MediaMetadata;
+import org.monyhar.services.media_session.MediaPosition;
 
 import java.util.List;
 import java.util.Set;

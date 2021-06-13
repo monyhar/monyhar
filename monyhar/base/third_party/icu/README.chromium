@@ -14,4 +14,4 @@ ICU macros should ICU be in use on the system. For the same reason, the
 functions and types have been put in the "base_icu" namespace.
 
 Note that this license file is marked as NOT_SHIPPED, since a more complete
-ICU license is included from //third_party/icu/README.chromium
+ICU license is included from //third_party/icu/README.monyhar

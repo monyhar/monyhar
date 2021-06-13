@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Tab histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to monyhar-metrics-reviews@google.com rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -68,8 +68,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.AgeUponRestoreFromColdStart" units="minutes"
     expires_after="M88">
-  <owner>dtrainor@chromium.org</owner>
-  <owner>yfriedman@chromium.org</owner>
+  <owner>dtrainor@monyhar.org</owner>
+  <owner>yfriedman@monyhar.org</owner>
   <summary>
     [Android] Age (time since the last display in previous sessions) of a tab
     being restored due to the first tab switch after the browser cold start,
@@ -82,7 +82,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.AndroidCrashUpload{AndroidCrashUploadTypes}"
     enum="BooleanSuccess" expires_after="M85">
-  <owner>wnwen@chromium.org</owner>
+  <owner>wnwen@monyhar.org</owner>
   <summary>
     [Android] Count of upload success/failures by crash type.
     {AndroidCrashUploadTypes}
@@ -102,7 +102,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.BackgroundLoadStatus" enum="TabBackgroundLoadStatus"
     expires_after="M77">
-  <owner>ppi@chromium.org</owner>
+  <owner>ppi@monyhar.org</owner>
   <summary>
     Mobile-specific metric: when a tab that was opened in background (via
     &quot;Open link in new tab&quot;) is switched to, we record whether the
@@ -112,7 +112,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Tab.Count.Guest" units="units" expires_after="2021-12-05">
-  <owner>rhalavati@chromium.org</owner>
+  <owner>rhalavati@monyhar.org</owner>
   <owner>chrome-privacy-core@google.com</owner>
   <summary>
     Number of open tabs in each guest window. Recorded once a new tab in a guest
@@ -125,7 +125,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Tab.Count.Incognito" units="units" expires_after="2021-12-05">
-  <owner>rhalavati@chromium.org</owner>
+  <owner>rhalavati@monyhar.org</owner>
   <owner>chrome-privacy-core@google.com</owner>
   <summary>
     Number of open tabs in each incognito window. Recorded once a new tab is
@@ -139,7 +139,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.ExternalApplicationOpened" enum="ExternalLauncherOption"
     expires_after="2021-10-31">
-  <owner>mrefaat@chromium.org</owner>
+  <owner>mrefaat@monyhar.org</owner>
   <owner>bling-team@google.com</owner>
   <summary>
     [iOS] Used on External App launcher Prompt to determine if the user clicked
@@ -152,7 +152,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Obsolete in M92. Replaced by IOS.MultiWindow.Configuration.
   </obsolete>
-  <owner>pkl@chromium.org</owner>
+  <owner>pkl@monyhar.org</owner>
   <summary>
     [iOS] Used on iOS 9+ iPad to report the usage of Compact or Regular
     horizontal size class. This is logged at startup and on each size class
@@ -161,8 +161,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Tab.NewTab" enum="NewTabType" expires_after="2021-11-21">
-  <owner>tbergquist@chromium.org</owner>
-  <owner>bsep@chromium.org</owner>
+  <owner>tbergquist@monyhar.org</owner>
+  <owner>bsep@monyhar.org</owner>
   <summary>
     Recorded when a new tab is opened. Tracks the method in which the tab was
     opened. Does not apply to opening existing links or searches in a new tab,
@@ -173,8 +173,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.NewTabOnload{TabNewTabOnload}" units="ms"
     expires_after="2021-03-07">
-  <owner>carlosk@chromium.org</owner>
-  <owner>harringtond@chromium.org</owner>
+  <owner>carlosk@monyhar.org</owner>
+  <owner>harringtond@monyhar.org</owner>
   <summary>
     The time for the new tab page to load. Only recorded on Android. Recorded
     only once per tab, i.e. excluding back/forward navigations.
@@ -216,7 +216,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Obsolete in M92. Wasn't being recorded correctly anyway.
   </obsolete>
-  <owner>pkl@chromium.org</owner>
+  <owner>pkl@monyhar.org</owner>
   <summary>
     [iOS] Used on iOS 9+ iPad to report the usage of Compact or Regular
     horizontal size class. Recorded on page load.
@@ -225,13 +225,13 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.PageLoadInPortrait" enum="DeviceOrientation"
     expires_after="M85">
-  <owner>marq@chromium.org</owner>
+  <owner>marq@monyhar.org</owner>
   <summary>[iOS] The orientation of the device. Recorded on page load.</summary>
 </histogram>
 
 <histogram name="Tab.PageLoadsSinceLastSwitchToEvictedTab" units="units"
     expires_after="M77">
-  <owner>dtrainor@chromium.org</owner>
+  <owner>dtrainor@monyhar.org</owner>
   <summary>
     [Android] The number of page loads since the last switch to an evicted tab
     on Android. This was sampled each time an evicted tab was reloaded.
@@ -239,8 +239,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Tab.PerceivedRestoreTime" units="ms" expires_after="M88">
-  <owner>dtrainor@chromium.org</owner>
-  <owner>yfriedman@chromium.org</owner>
+  <owner>dtrainor@monyhar.org</owner>
+  <owner>yfriedman@monyhar.org</owner>
   <summary>
     [Android] User-perceived load time for a successful tab restore, measured
     from the first time the user sees the tab being restored until the load
@@ -250,15 +250,15 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.Preview.CaptureType" enum="TabPreviewCaptureType"
     expires_after="M92">
-  <owner>dfried@chromium.org</owner>
-  <owner>collinbaker@chromium.org</owner>
+  <owner>dfried@monyhar.org</owner>
+  <owner>collinbaker@monyhar.org</owner>
   <summary>Records how a tab preview image was generated.</summary>
 </histogram>
 
 <histogram name="Tab.Preview.MemoryUsage.CompressedData.PerThumbnailKiB"
     units="KB" expires_after="2021-10-10">
-  <owner>dfried@chromium.org</owner>
-  <owner>collinbaker@chromium.org</owner>
+  <owner>dfried@monyhar.org</owner>
+  <owner>collinbaker@monyhar.org</owner>
   <summary>
     Memory used by compressed thumbnails. Recorded once per thumbnail every 5
     minutes.
@@ -267,8 +267,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.Preview.MemoryUsage.CompressedData.TotalKiB" units="KB"
     expires_after="2021-10-10">
-  <owner>dfried@chromium.org</owner>
-  <owner>collinbaker@chromium.org</owner>
+  <owner>dfried@monyhar.org</owner>
+  <owner>collinbaker@monyhar.org</owner>
   <summary>
     Memory used by compressed thumbnails. Recorded once every 5 minutes at the
     same time as Tab.Preview.MemoryUsage.CompressedData.PerThumbnailKiB. Each
@@ -278,8 +278,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.Preview.TimeToFirstUsableFrameAfterStartCapture"
     units="ms" expires_after="2021-10-10">
-  <owner>dfried@chromium.org</owner>
-  <owner>collinbaker@chromium.org</owner>
+  <owner>dfried@monyhar.org</owner>
+  <owner>collinbaker@monyhar.org</owner>
   <summary>
     When generating a preview for a background tab, this measures the time
     between requesting a video capture and receiving the first usable frame.
@@ -288,8 +288,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.Preview.TimeToNotifyObserversAfterCaptureReceived"
     units="microseconds" expires_after="2021-10-10">
-  <owner>dfried@chromium.org</owner>
-  <owner>collinbaker@chromium.org</owner>
+  <owner>dfried@monyhar.org</owner>
+  <owner>collinbaker@monyhar.org</owner>
   <summary>
     When generating a preview, a tab's contents are captured as an uncompressed
     image, compressed in the background, then sent to subscribers on the main
@@ -302,8 +302,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.Preview.TimeToStoreAfterFrameReceived"
     units="microseconds" expires_after="2021-10-10">
-  <owner>dfried@chromium.org</owner>
-  <owner>collinbaker@chromium.org</owner>
+  <owner>dfried@monyhar.org</owner>
+  <owner>collinbaker@monyhar.org</owner>
   <summary>
     When generating a preview for a background tab, this measures the time
     between receiving a frame and storing it as the current thumbnail.
@@ -314,8 +314,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.Preview.TimeToStoreAfterTabSwitch" units="ms"
     expires_after="2021-10-10">
-  <owner>dfried@chromium.org</owner>
-  <owner>collinbaker@chromium.org</owner>
+  <owner>dfried@monyhar.org</owner>
+  <owner>collinbaker@monyhar.org</owner>
   <summary>
     On tab switch, the visible content area is captured and stored as a
     thumbnail. This measures the time between requesting the capture and storing
@@ -325,8 +325,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.Preview.VideoCaptureDuration" units="ms"
     expires_after="2021-10-10">
-  <owner>dfried@chromium.org</owner>
-  <owner>collinbaker@chromium.org</owner>
+  <owner>dfried@monyhar.org</owner>
+  <owner>collinbaker@monyhar.org</owner>
   <summary>
     Measures the total time spent in video capture mode when generating a
     preview for a background tab. This is emitted at the end of each capture
@@ -336,8 +336,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.PullDownGesture" enum="PullDownGestureAction"
     expires_after="2020-01-15">
-  <owner>gambard@chromium.org</owner>
-  <owner>kkhorimoto@chromium.org</owner>
+  <owner>gambard@monyhar.org</owner>
+  <owner>kkhorimoto@monyhar.org</owner>
   <summary>
     Record the action executed when the user performs a pull down gesture. This
     feature is currently iOS only.
@@ -353,7 +353,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.RendererCrashStatus" enum="TabRendererCrashStatus"
     expires_after="M85">
-  <owner>tedchoc@chromium.org</owner>
+  <owner>tedchoc@monyhar.org</owner>
   <owner>clank-team@google.com</owner>
   <summary>
     [Android] The status of a tab and an application when a renderer crashes.
@@ -363,7 +363,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.RendererDetailedExitStatus"
     enum="ProcessDetailedExitStatus" expires_after="M85">
-  <owner>wnwen@chromium.org</owner>
+  <owner>wnwen@monyhar.org</owner>
   <summary>
     [Android] Breakdown of renderer exit status for renderers that have strong
     bindings. An extension of the counts in Tab.RendererExitStatus. Only
@@ -373,7 +373,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.RendererDetailedExitStatusUnbound"
     enum="ProcessDetailedExitStatus" expires_after="M85">
-  <owner>wnwen@chromium.org</owner>
+  <owner>wnwen@monyhar.org</owner>
   <summary>
     [Android] Breakdown of renderer exit status for renderers that do not have
     strong bindings. An extension of the counts in Tab.RendererExitStatus. Only
@@ -383,7 +383,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.RendererExitStatus" enum="TabRendererExitStatus"
     expires_after="M85">
-  <owner>wnwen@chromium.org</owner>
+  <owner>wnwen@monyhar.org</owner>
   <summary>
     [Android] The status of a renderer when the browser notices that the process
     has exited. Only recorded on Android.
@@ -392,7 +392,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.RendererTermination.AliveRenderersCount" units="renderers"
     expires_after="M77">
-  <owner>pkl@chromium.org</owner>
+  <owner>pkl@monyhar.org</owner>
   <summary>
     [iOS] A count of the number of alive renderers when a renderer termination
     occurs.
@@ -401,7 +401,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.RendererTermination.RecentlyAliveRenderersCount"
     units="renderers" expires_after="M77">
-  <owner>pkl@chromium.org</owner>
+  <owner>pkl@monyhar.org</owner>
   <summary>
     [iOS] The number of renderers which are either currently alive or recently
     terminated at the time of a renderer termination.
@@ -410,7 +410,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.RendererTermination.RecentlyReceivedMemoryWarning"
     enum="BooleanWarningReceived" expires_after="M77">
-  <owner>pkl@chromium.org</owner>
+  <owner>pkl@monyhar.org</owner>
   <summary>
     [iOS] Records whether a memory warning had recently been received before a
     renderer termination.
@@ -418,8 +418,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Tab.RestoreResult" enum="TabRestoreResult" expires_after="M88">
-  <owner>dtrainor@chromium.org</owner>
-  <owner>marq@chromium.org</owner>
+  <owner>dtrainor@monyhar.org</owner>
+  <owner>marq@monyhar.org</owner>
   <summary>
     [Android and iOS] When the browser restores a tab, whether the load was
     successful. Loads can fail for instance when there is no connectivity.
@@ -427,14 +427,14 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Tab.RestoreTime" units="ms" expires_after="M88">
-  <owner>dtrainor@chromium.org</owner>
-  <owner>marq@chromium.org</owner>
+  <owner>dtrainor@monyhar.org</owner>
+  <owner>marq@monyhar.org</owner>
   <summary>[Android and iOS] Load time for a successful tab restore.</summary>
 </histogram>
 
 <histogram name="Tab.RestoreUserPersistence" enum="TabRestoreUserAction"
     expires_after="M85">
-  <owner>dtrainor@chromium.org</owner>
+  <owner>dtrainor@monyhar.org</owner>
   <summary>
     [Android] When the browser restores a tab, whether the user waits for
     completion of the load or if the user gives up by switching to another tab
@@ -444,7 +444,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.Screenshot.Action" enum="TabScreenshotAction"
     expires_after="2021-10-24">
-  <owner>skare@chromium.org</owner>
+  <owner>skare@monyhar.org</owner>
   <summary>
     Records actions taken after one or more screenshots of a page were taken.
     This will not be recorded if Chromium is killed before leaving the page. If
@@ -456,7 +456,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.Screenshot.ScreenshotsPerPage" units="screenshots"
     expires_after="2021-10-25">
-  <owner>skare@chromium.org</owner>
+  <owner>skare@monyhar.org</owner>
   <summary>
     Records the number of screenshots taken of a specific page. It is recorded
     when the user navigates away from this page or the tab is destroyed. This
@@ -466,8 +466,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.StateAtRendererTermination" enum="TabForegroundState"
     expires_after="2021-11-07">
-  <owner>gambard@chromium.org</owner>
-  <owner>olivierrobin@chromium.org</owner>
+  <owner>gambard@monyhar.org</owner>
+  <owner>olivierrobin@monyhar.org</owner>
   <summary>
     The state (foreground/background) of a tab when its renderer is terminated.
   </summary>
@@ -475,7 +475,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.StatusWhenSwitchedBackToForeground" enum="TabStatus"
     expires_after="M85">
-  <owner>marq@chromium.org</owner>
+  <owner>marq@monyhar.org</owner>
   <summary>
     [Android and iOS] The status of a tab collected each time the user switches
     to it on mobile. That does not include tabs being created at the time the
@@ -484,7 +484,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Tab.SwitchedToForegroundAge" units="ms" expires_after="M85">
-  <owner>dtrainor@chromium.org</owner>
+  <owner>dtrainor@monyhar.org</owner>
   <summary>
     [Android] Age (in ms) when the tab was switched to foreground.
   </summary>
@@ -492,7 +492,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.TabUnder.ClickThroughPosition" enum="ListItemPosition"
     expires_after="M85">
-  <owner>csharrison@chromium.org</owner>
+  <owner>csharrison@monyhar.org</owner>
   <summary>
     The position of the URL in the framebust UI list (desktop only) when it is
     clicked. Note that this UI surface is shared with the framebusting
@@ -504,7 +504,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.TabUnder.PopupToTabUnderTime" units="ms"
     expires_after="M85">
-  <owner>csharrison@chromium.org</owner>
+  <owner>csharrison@monyhar.org</owner>
   <summary>
     Measures the time from when a tab opens a popup to when it performs a
     tab-under (i.e. navigates cross origin, in the background without a user
@@ -513,7 +513,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Tab.TabUnder.VisibleTime" units="ms" expires_after="M77">
-  <owner>csharrison@chromium.org</owner>
+  <owner>csharrison@monyhar.org</owner>
   <summary>
     Measures the total time a tab is visible after it navigates itself
     cross-origin in the background, without a user gesture. The tab must have
@@ -524,7 +524,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Tab.TabUnder.VisibleTimeBefore" units="ms" expires_after="M85">
-  <owner>csharrison@chromium.org</owner>
+  <owner>csharrison@monyhar.org</owner>
   <summary>
     Measures the total time a tab is visible before it navigates itself
     cross-origin in the background, without a user gesture. The tab must have
@@ -536,7 +536,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.TabUnderAction{OffTheRecordType}" enum="TabUnderAction"
     expires_after="M85">
-  <owner>csharrison@chromium.org</owner>
+  <owner>csharrison@monyhar.org</owner>
   <summary>
     Various actions related to the tab under intervention, logged during main
     frame navigation. {OffTheRecordType}
@@ -558,7 +558,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tab.TotalTabCount.BeforeLeavingApp" units="tabs"
     expires_after="M85">
-  <owner>tedchoc@chromium.org</owner>
+  <owner>tedchoc@monyhar.org</owner>
   <owner>clank-team@google.com</owner>
   <summary>
     [Android] The total count of tabs which were kept while Chrome process is in
@@ -572,7 +572,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     Removed 11/2020. Not actively used now that occlusion tracking is shipped to
     stable on Windows, Mac and ChromeOS.
   </obsolete>
-  <owner>fdoray@chromium.org</owner>
+  <owner>fdoray@monyhar.org</owner>
   <summary>
     Time spent by a tab in a given visibility state. Recorded when the
     visibility changes and when the tab is closed. {Visibility}
@@ -593,7 +593,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Tab.VisibleTime" units="ms" expires_after="M77">
-  <owner>csharrison@chromium.org</owner>
+  <owner>csharrison@monyhar.org</owner>
   <summary>
     Measures the total time a tab is visible. Measured at the WebContents layer
     so this metric does not attempt to account for things like session restore.
@@ -603,7 +603,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabGroups.CollapsedGroupCountPerLoad" units="groups"
     expires_after="2021-11-14">
-  <owner>cyan@chromium.org</owner>
+  <owner>cyan@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     The number of tabs groups that are collapsed in all browsers (counting
@@ -613,7 +613,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabGroups.CollapsedTabCount" units="tabs"
     expires_after="2021-09-12">
-  <owner>cyan@chromium.org</owner>
+  <owner>cyan@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     The number of tabs in a collapsed tab group in all browsers, reported every
@@ -623,7 +623,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabGroups.NonZeroUserGroupCountPerLoad" units="groups"
     expires_after="2021-09-12">
-  <owner>cyan@chromium.org</owner>
+  <owner>cyan@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     The number of (non-zero) tabs groups open in all browsers (counting app-mode
@@ -633,8 +633,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabGroups.SessionsPerGroup" units="sessions"
     expires_after="2021-10-10">
-  <owner>yusufo@chromium.org</owner>
-  <owner>wychen@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>wychen@monyhar.org</owner>
   <summary>
     This histogram records the number of sessions of a selected tab group
     whenever Chrome comes to the foreground, or switch tab in the tab switcher.
@@ -648,7 +648,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Replaced 04/2021 by TimeSpentCollapsed2.
   </obsolete>
-  <owner>cyan@chromium.org</owner>
+  <owner>cyan@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     The time a tab group spends in the collapsed state before the group is
@@ -658,7 +658,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabGroups.TimeSpentCollapsed2" units="seconds"
     expires_after="2021-09-12">
-  <owner>cyan@chromium.org</owner>
+  <owner>cyan@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     The time a tab group spends in the collapsed state before the group is
@@ -671,7 +671,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Replaced 04/2021 by TimeSpentExpanded2.
   </obsolete>
-  <owner>cyan@chromium.org</owner>
+  <owner>cyan@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     The time a tab group spends in the expanded state before the group is either
@@ -681,7 +681,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabGroups.TimeSpentExpanded2" units="seconds"
     expires_after="2021-09-12">
-  <owner>cyan@chromium.org</owner>
+  <owner>cyan@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     The time a tab group spends in the expanded state before the group is either
@@ -691,8 +691,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabGroups.UserCustomizedGroupCountPerLoad" units="groups"
     expires_after="2021-11-14">
-  <owner>connily@chromium.org</owner>
-  <owner>cyan@chromium.org</owner>
+  <owner>connily@monyhar.org</owner>
+  <owner>cyan@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     The number of tabs groups with a user-set name or color open in all browsers
@@ -702,8 +702,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabGroups.UserGroupCount" units="groups"
     expires_after="2021-10-10">
-  <owner>yusufo@chromium.org</owner>
-  <owner>wychen@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>wychen@monyhar.org</owner>
   <summary>
     This histogram records the number of tab groups whenever Chrome comes to the
     foreground.
@@ -712,8 +712,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabGroups.UserGroupCountPerLoad" units="groups"
     expires_after="2021-11-14">
-  <owner>connily@chromium.org</owner>
-  <owner>cyan@chromium.org</owner>
+  <owner>connily@monyhar.org</owner>
+  <owner>cyan@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     The number of tabs groups open in all browsers (counting app-mode windows)
@@ -723,8 +723,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabGroups.UserNamedGroupCount" units="groups"
     expires_after="2021-10-10">
-  <owner>yusufo@chromium.org</owner>
-  <owner>wychen@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>wychen@monyhar.org</owner>
   <summary>
     This histogram records the number of tab groups that have customized group
     name whenever Chrome comes to the foreground.
@@ -733,7 +733,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabHoverCards.LastTabHoverCardPreviewTime{TabCountMetrics}"
     units="units" expires_after="2021-10-01">
-  <owner>dfried@chromium.org</owner>
+  <owner>dfried@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     This histogram records the time the user sees a full hover card with preview
@@ -762,7 +762,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabHoverCards.LastTabHoverCardViewedTime{TabCountMetrics}"
     units="units" expires_after="2021-10-01">
-  <owner>dfried@chromium.org</owner>
+  <owner>dfried@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     This histogram records the time the user sees a full hover card on tab they
@@ -789,7 +789,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabHoverCards.TabHoverCardPreviewTime{TabCountMetrics}"
     units="units" expires_after="2021-10-01">
-  <owner>dfried@chromium.org</owner>
+  <owner>dfried@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     This histogram records the time the user sees a full hover card with preview
@@ -818,7 +818,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="TabHoverCards.TabHoverCardsSeenBeforeTabSelection{TabCountMetrics}"
     units="units" expires_after="2021-10-01">
-  <owner>dfried@chromium.org</owner>
+  <owner>dfried@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     This histogram records the number of tab hover cards seen between the last
@@ -843,7 +843,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabHoverCards.TabHoverCardViewedTime{TabCountMetrics}"
     units="units" expires_after="2021-10-01">
-  <owner>dfried@chromium.org</owner>
+  <owner>dfried@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     This histogram records the time the user sees a full hover card on any tab.
@@ -871,7 +871,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="TabHoverCards.TabPreviewsSeenBeforeTabSelection{TabCountMetrics}"
     units="units" expires_after="2021-10-01">
-  <owner>dfried@chromium.org</owner>
+  <owner>dfried@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     This histogram records the number of tab hover card previews seen between
@@ -897,7 +897,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabHoverCards.TimeSinceLastVisible" units="ms"
     expires_after="2021-10-01">
-  <owner>corising@chromium.org</owner>
+  <owner>corising@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     This histogram records the time between when a hover card was last hidden to
@@ -911,7 +911,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.BackgroundTabOpening.SwitchToTab"
     enum="TabLoadingState" expires_after="M79">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
   <summary>
     The loading state of a tab at the time the user switches to it during a
     background tab opening session (the duration of time from when the browser
@@ -927,7 +927,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.BackgroundTabOpening.TabCount" units="tabs"
     expires_after="M79">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
   <summary>
     The max number of background tabs pending or loading when opening background
     tabs. This is recorded at the end of the background tab opening session (the
@@ -940,7 +940,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.BackgroundTabOpening.TabLoadAutoStartedCount"
     units="tabs" expires_after="M79">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
   <summary>
     The number of background tabs whose loading was triggered by TabManager
     automatically when opening background tabs. This is recorded at the end of
@@ -953,7 +953,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.BackgroundTabOpening.TabLoadTimeout"
     enum="BooleanTimedOut" expires_after="M79">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
   <summary>
     Whether the tab load is timed out during background tab opening session (the
     duration of time from when the browser starts to open background tabs until
@@ -965,7 +965,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.BackgroundTabOpening.TabLoadUserInitiatedCount"
     units="tabs" expires_after="M79">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
   <summary>
     The number of background tabs whose loading was triggered by user action
     when opening background tabs. For example, when the user selects a
@@ -980,7 +980,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.BackgroundTabOpening.TabPausedCount" units="tabs"
     expires_after="M79">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
   <summary>
     The max number of background tabs paused to load due to memory pressure when
     opening background tabs. This is recorded at the end of the background tab
@@ -994,8 +994,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.Discarding.DiscardCount" units="Discards"
     expires_after="M100">
-  <owner>sebmarchand@chromium.org</owner>
-  <owner>catan-team@chromium.org</owner>
+  <owner>sebmarchand@monyhar.org</owner>
+  <owner>catan-team@monyhar.org</owner>
   <summary>
     Cumulative number of tabs discarded due to low memory conditions, recorded
     once per tab discard event. For example, a user who had 3 tabs discarded
@@ -1006,7 +1006,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.Discarding.DiscardedTabCouldFastShutdown"
     enum="BooleanTabDiscardFastShutdown" expires_after="M77">
-  <owner>oysteine@chromium.org</owner>
+  <owner>oysteine@monyhar.org</owner>
   <summary>
     Recorded for each discarding, indicates whether the discarded tab succeeded
     in doing a render process fast shutdown or not.
@@ -1015,7 +1015,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.Discarding.DiscardedTabCouldUnsafeFastShutdown"
     enum="BooleanTabDiscardFastShutdown" expires_after="M77">
-  <owner>oysteine@chromium.org</owner>
+  <owner>oysteine@monyhar.org</owner>
   <summary>
     Recorded for each discarding, allowing us to know whether the discarded tab
     succeeded an unsafe process shutdown (not invoking unload handlers).
@@ -1024,7 +1024,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.Discarding.DiscardedTabHasBeforeUnloadHandler"
     enum="Boolean" expires_after="M77">
-  <owner>georgesak@chromium.org</owner>
+  <owner>georgesak@monyhar.org</owner>
   <summary>
     Recorded for each discarding, allowing us to know whether the discarded tab
     had a before unload handler or not.
@@ -1033,8 +1033,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.Discarding.DiscardToReloadTime" units="ms"
     expires_after="M100">
-  <owner>sebmarchand@chromium.org</owner>
-  <owner>catan-team@chromium.org</owner>
+  <owner>sebmarchand@monyhar.org</owner>
+  <owner>catan-team@monyhar.org</owner>
   <summary>
     Elapsed time between a tab getting discarded to eventually being reloaded by
     the user.
@@ -1043,8 +1043,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.Discarding.InactiveToReloadTime" units="ms"
     expires_after="M100">
-  <owner>sebmarchand@chromium.org</owner>
-  <owner>catan-team@chromium.org</owner>
+  <owner>sebmarchand@monyhar.org</owner>
+  <owner>catan-team@monyhar.org</owner>
   <summary>
     Elapsed time between the time a tab switched from being active to inactive
     (that eventually gets discarded) until it gets reloaded.
@@ -1053,8 +1053,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.Discarding.ReloadCount" units="Reloads"
     expires_after="M100">
-  <owner>sebmarchand@chromium.org</owner>
-  <owner>catan-team@chromium.org</owner>
+  <owner>sebmarchand@monyhar.org</owner>
+  <owner>catan-team@monyhar.org</owner>
   <summary>
     Cumulative number of discarded tabs that have been reloaded by the user,
     recorded once per tab discard event. For example, a user who had 3 tabs
@@ -1065,8 +1065,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.Discarding.ReloadToCloseTime" units="ms"
     expires_after="M100">
-  <owner>sebmarchand@chromium.org</owner>
-  <owner>catan-team@chromium.org</owner>
+  <owner>sebmarchand@monyhar.org</owner>
+  <owner>catan-team@monyhar.org</owner>
   <summary>
     Elapsed time between the last time a discarded tab was reloaded and the time
     it gets closed.
@@ -1076,7 +1076,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="TabManager.Experimental.BackgroundTabOpening.CompressedPagesPerSecond"
     units="pages/s" expires_after="M79">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
   <summary>
     The number of pages compressed per second when opening background tabs. This
     is recorded at the end of the background tab opening session as an average
@@ -1093,7 +1093,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="TabManager.Experimental.BackgroundTabOpening.DecompressedPagesPerSecond"
     units="pages/s" expires_after="M79">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
   <summary>
     The number of pages decompressed per second when opening background tabs.
     This is recorded at the end of the background tab opening session as an
@@ -1109,7 +1109,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.Experimental.BackgroundTabOpening.SwapInPerSecond"
     units="swaps/s" expires_after="M79">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
   <summary>
     The number of swap-ins per second when opening background tabs. This is
     recorded at the end of the background tab opening session as an average over
@@ -1124,7 +1124,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.Experimental.BackgroundTabOpening.SwapOutPerSecond"
     units="swaps/s" expires_after="M79">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
   <summary>
     The number of swap-outs per second when opening background tabs. This is
     recorded at the end of the background tab opening session as an average over
@@ -1140,7 +1140,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="TabManager.Experimental.BackgroundTabOpening.TabSwitchLoadTime.UntilTabIsLoaded"
     units="ms" expires_after="M79">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
   <summary>
     The tab load time of a tab that is switched to during a background tab
     opening session (the duration of time from when the browser starts to open
@@ -1161,7 +1161,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="TabManager.Experimental.SessionRestore.CompressedPagesPerSecond"
     units="pages/s" expires_after="M79">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
   <summary>
     The number of pages compressed per second during session restore. Recorded
     at the end of session restore as an average over the entire period, defined
@@ -1179,7 +1179,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="TabManager.Experimental.SessionRestore.DecompressedPagesPerSecond"
     units="pages/s" expires_after="M79">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
   <summary>
     The number of pages decompressed per second during session restore. Recorded
     at the end of session restore as an average over the entire period, defined
@@ -1197,7 +1197,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="TabManager.Experimental.SessionRestore.ForegroundTab.FirstContentfulPaint"
     units="ms" expires_after="M79">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
   <summary>
     Elapsed time between the start of the loading and the first contentful paint
     of foreground tabs when the browser loads tabs in session restore.
@@ -1207,7 +1207,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="TabManager.Experimental.SessionRestore.ForegroundTab.FirstMeaningfulPaint"
     units="ms" expires_after="M79">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
   <summary>
     Elapsed time between the start of the loading and the first meaningful paint
     of foreground tabs when the browser loads tabs in session restore.
@@ -1217,7 +1217,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="TabManager.Experimental.SessionRestore.ForegroundTab.FirstPaint"
     units="ms" expires_after="M79">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
   <summary>
     Elapsed time between the start of the loading and the first paint of
     foreground tabs when the browser loads tabs in session restore.
@@ -1226,7 +1226,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.Experimental.SessionRestore.SwapInPerSecond"
     units="swaps/s" expires_after="M79">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
   <summary>
     The number of swap-ins per second during session restore. Recorded at the
     end of session restore as an average over the entire period, defined as the
@@ -1242,7 +1242,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.Experimental.SessionRestore.SwapOutPerSecond"
     units="swaps/s" expires_after="M79">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
   <summary>
     The number of swap-outs per second during session restore. Recorded at the
     end of session restore as an average over the entire period, defined as the
@@ -1259,7 +1259,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="TabManager.Experimental.SessionRestore.TabSwitchLoadTime.UntilTabIsLoaded"
     units="ms" expires_after="M79">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
   <summary>
     The tab load time of a tab that is switched to during a session restore. Tab
     load time is defined as the time between when the user switches to a
@@ -1280,8 +1280,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.Heuristics.FromBackgroundedToFirstFaviconUpdated"
     units="ms" expires_after="M85">
-  <owner>chrisha@chromium.org</owner>
-  <owner>lpy@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
+  <owner>lpy@monyhar.org</owner>
   <summary>
     Measures the time duration from when the tab is backgrounded to when its
     favicon is updated. The first-time set of favicon will be ignored; this
@@ -1293,8 +1293,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="TabManager.Heuristics.FromBackgroundedToFirstNonPersistentNotificationCreated"
     units="ms" expires_after="M78">
-  <owner>chrisha@chromium.org</owner>
-  <owner>lpy@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
+  <owner>lpy@monyhar.org</owner>
   <summary>
     Measures the time duration from when the tab is backgrounded to when a
     non-persistent notification is created. Only recorded when the tab is in the
@@ -1304,8 +1304,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.Heuristics.FromBackgroundedToFirstTitleUpdated"
     units="ms" expires_after="M77">
-  <owner>chrisha@chromium.org</owner>
-  <owner>lpy@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
+  <owner>lpy@monyhar.org</owner>
   <summary>
     Measures the time duration from when the tab is backgrounded to when its
     title is updated. The first-time set of title will be ignored; this metric
@@ -1316,7 +1316,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.SessionOverlap.BackgroundTabOpening"
     units="BooleanOverlap" expires_after="M79">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
   <summary>
     Whether background tab opening session is overlapped with other types of
     session, e.g., session restore. Background tab opening session is the
@@ -1329,7 +1329,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.SessionOverlap.SessionRestore"
     units="BooleanOverlap" expires_after="M77">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
   <summary>
     Whether session restore is overlapped with other types of session, e.g.,
     background tab opening. Session restore is the duration from the time when
@@ -1342,7 +1342,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.SessionRestore.SwitchToTab" enum="TabLoadingState"
     expires_after="M79">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@monyhar.org</owner>
   <summary>
     The loading state of a tab at the time the user switched to it during a
     session restore. The metric is only recorded when a tab is switched to from
@@ -1361,8 +1361,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.TabRanker.Result" enum="TabManagerTabRankerResult"
     expires_after="M85">
-  <owner>michaelpg@chromium.org</owner>
-  <owner>charleszhao@chromium.org</owner>
+  <owner>michaelpg@monyhar.org</owner>
+  <owner>charleszhao@monyhar.org</owner>
   <summary>
     Logged when calculating a tab reactivation score for a background tab. Any
     value other than &quot;none&quot; may indicate a bug in the inference code,
@@ -1373,7 +1373,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.TimeSinceGroupClosedUntilRestored" units="ms"
     expires_after="2021-07-13">
-  <owner>connily@chromium.org</owner>
+  <owner>connily@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     Duration between restoring a whole group (multiple tabs) when &quot;Reopen
@@ -1385,9 +1385,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.TimeSinceTabClosedUntilRestored" units="ms"
     expires_after="2021-11-14">
-  <owner>aebacanu@chromium.org</owner>
-  <owner>carlscab@chromium.org</owner>
-  <owner>sreejakshetty@chromium.org</owner>
+  <owner>aebacanu@monyhar.org</owner>
+  <owner>carlscab@monyhar.org</owner>
+  <owner>sreejakshetty@monyhar.org</owner>
   <summary>
     Duration between restoring a tab when &quot;Reopen Closed Tab&quot; button
     was clicked or any of Ctrl+Shift+T (on Linux/Windows/Chrome OS) and
@@ -1398,9 +1398,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabManager.TimeSinceWindowClosedUntilRestored" units="ms"
     expires_after="2021-07-13">
-  <owner>aebacanu@chromium.org</owner>
-  <owner>carlscab@chromium.org</owner>
-  <owner>sreejakshetty@chromium.org</owner>
+  <owner>aebacanu@monyhar.org</owner>
+  <owner>carlscab@monyhar.org</owner>
+  <owner>sreejakshetty@monyhar.org</owner>
   <summary>
     Duration between restoring a whole window (multiple tabs) when &quot;Reopen
     Closed Window&quot; button was clicked or any of Ctrl+Shift+T (on
@@ -1412,7 +1412,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabRestore.error_move_session_at_path_to_backup"
     enum="FoundationFileSystemError" expires_after="M77">
-  <owner>sky@chromium.org</owner>
+  <owner>sky@monyhar.org</owner>
   <summary>
     Error code returned by [moveItemAtPath:toPath:error:] when moving previous
     session file to backup file before restoring. 0 in case of success.
@@ -1421,7 +1421,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabRestore.error_remove_backup_at_path"
     enum="FoundationFileSystemError" expires_after="M77">
-  <owner>sky@chromium.org</owner>
+  <owner>sky@monyhar.org</owner>
   <summary>
     Error code returned by [removeItemAtPath:error:] when removing previous
     session backup file. 0 in case of success.
@@ -1430,7 +1430,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabRestore.error_remove_session_at_path"
     enum="FoundationFileSystemError" expires_after="M77">
-  <owner>sky@chromium.org</owner>
+  <owner>sky@monyhar.org</owner>
   <summary>
     Error code returned by [removeItemAtPath:error:] when removing previous
     session file. 0 in case of success.
@@ -1438,21 +1438,21 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Tabs.CountAtResume" units="tabs" expires_after="M92">
-  <owner>marq@chromium.org</owner>
+  <owner>marq@monyhar.org</owner>
   <summary>
     [iOS] The number of tabs open when the app comes out of the background.
   </summary>
 </histogram>
 
 <histogram name="Tabs.CountAtStartup" units="tabs" expires_after="2021-10-10">
-  <owner>marq@chromium.org</owner>
+  <owner>marq@monyhar.org</owner>
   <summary>[Android and iOS] The number of tabs open at cold launch.</summary>
 </histogram>
 
 <histogram name="Tabs.DesktopTabOffsetFromLeftOfSwitch" units="units"
     expires_after="2021-06-30">
-  <owner>connily@chromium.org</owner>
-  <owner>cyan@chromium.org</owner>
+  <owner>connily@monyhar.org</owner>
+  <owner>cyan@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     The tab index from the beginning of the tab strip when switching into a tab.
@@ -1461,8 +1461,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.DesktopTabOffsetFromRightOfSwitch" units="units"
     expires_after="2021-06-30">
-  <owner>connily@chromium.org</owner>
-  <owner>cyan@chromium.org</owner>
+  <owner>connily@monyhar.org</owner>
+  <owner>cyan@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     The tab index from the end of the tab strip when switching into a tab.
@@ -1471,8 +1471,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.DesktopTabOffsetOfSwitch" units="units"
     expires_after="2021-06-30">
-  <owner>connily@chromium.org</owner>
-  <owner>cyan@chromium.org</owner>
+  <owner>connily@monyhar.org</owner>
+  <owner>cyan@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     The offset between the tab currently selected tab and the newly selected
@@ -1488,7 +1488,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.FirstSwitchedToForegroundCreationRank" units="units"
     expires_after="M77">
-  <owner>pkotwicz@chromium.org</owner>
+  <owner>pkotwicz@monyhar.org</owner>
   <summary>
     Records the &quot;Tab Creation Rank&quot; for the first background tab which
     was switched to the foreground. The &quot;Tab Creation Rank&quot; is
@@ -1499,7 +1499,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.FirstSwitchedToForegroundCreationReverseRank"
     units="units" expires_after="M77">
-  <owner>pkotwicz@chromium.org</owner>
+  <owner>pkotwicz@monyhar.org</owner>
   <summary>
     Records the &quot;Reverse Tab Creation Rank&quot; for the first background
     background tab which was switched to the foreground. The &quot;Reverse Tab
@@ -1511,8 +1511,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.ForegroundTabAgeAtStartup" units="minutes"
     expires_after="M88">
-  <owner>dtrainor@chromium.org</owner>
-  <owner>yusufo@chromium.org</owner>
+  <owner>dtrainor@monyhar.org</owner>
+  <owner>yusufo@monyhar.org</owner>
   <summary>
     [Android] Age (time since the last display in previous sessions) of the
     foreground tab being restored on the browser cold start.
@@ -1524,14 +1524,14 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Removed 03/2021.
   </obsolete>
-  <owner>sebmarchand@chromium.org</owner>
-  <owner>catan-team@chromium.org</owner>
+  <owner>sebmarchand@monyhar.org</owner>
+  <owner>catan-team@monyhar.org</owner>
   <summary>Records the outcome of a tab freezing attempt.</summary>
 </histogram>
 
 <histogram name="Tabs.IndependentTabCountInSwitcher" units="tabs"
     expires_after="2020-07-31">
-  <owner>mattsimmons@chromium.org</owner>
+  <owner>mattsimmons@monyhar.org</owner>
   <owner>memex-team@google.com</owner>
   <summary>The number of entries/cards shown in the grid tab switcher.</summary>
   <details>
@@ -1544,8 +1544,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: https://crbug.com/966137 -->
 
-  <owner>sebmarchand@chromium.org</owner>
-  <owner>catan-team@chromium.org</owner>
+  <owner>sebmarchand@monyhar.org</owner>
+  <owner>catan-team@monyhar.org</owner>
   <summary>
     The maximum number of tabs that Chrome displays at the same time over the
     course of a day. Desktop only.
@@ -1561,8 +1561,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: https://crbug.com/966137 -->
 
-  <owner>sebmarchand@chromium.org</owner>
-  <owner>catan-team@chromium.org</owner>
+  <owner>sebmarchand@monyhar.org</owner>
+  <owner>catan-team@monyhar.org</owner>
   <summary>
     The maximum number of tabs per window that Chrome displays over the course
     of a day. Desktop Only.
@@ -1578,8 +1578,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: https://crbug.com/966137 -->
 
-  <owner>sebmarchand@chromium.org</owner>
-  <owner>catan-team@chromium.org</owner>
+  <owner>sebmarchand@monyhar.org</owner>
+  <owner>catan-team@monyhar.org</owner>
   <summary>
     The maximum number of windows existing at the same time over the course of a
     day. Desktop only.
@@ -1592,7 +1592,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Tabs.NTPCountAtResume" units="tabs" expires_after="M95">
-  <owner>gogerald@chromium.org</owner>
+  <owner>gogerald@monyhar.org</owner>
   <owner>nasims@google.com</owner>
   <summary>
     [iOS] The number of NTP tabs open when the app comes out of the background.
@@ -1600,7 +1600,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Tabs.NTPCountAtStartup" units="tabs" expires_after="M95">
-  <owner>gogerald@chromium.org</owner>
+  <owner>gogerald@monyhar.org</owner>
   <owner>nasims@google.com</owner>
   <summary>[iOS] The number of NTP tabs open at cold launch.</summary>
 </histogram>
@@ -1609,8 +1609,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: https://crbug.com/966137 -->
 
-  <owner>sebmarchand@chromium.org</owner>
-  <owner>catan-team@chromium.org</owner>
+  <owner>sebmarchand@monyhar.org</owner>
+  <owner>catan-team@monyhar.org</owner>
   <summary>
     The number of tabs total at resume from sleep/hibernate. This is being
     logged on all desktop platforms.
@@ -1620,10 +1620,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.PersistedTabData.Deserialize.Critical"
     enum="BooleanSuccess" expires_after="2022-02-07">
-  <owner>yusufo@chromium.org</owner>
-  <owner>nyquist@chromium.org</owner>
-  <owner>dtrainor@chromium.org</owner>
-  <owner>davidjm@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>nyquist@monyhar.org</owner>
+  <owner>dtrainor@monyhar.org</owner>
+  <owner>davidjm@monyhar.org</owner>
   <summary>
     CriticalPersistedTabData stores data pertinent to the running of the app
     such as tab id, parent id, web contents. This data is serialized and stored
@@ -1633,10 +1633,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.PersistedTabData.Serialize.Critical"
     enum="BooleanSuccess" expires_after="2022-02-07">
-  <owner>yusufo@chromium.org</owner>
-  <owner>nyquist@chromium.org</owner>
-  <owner>dtrainor@chromium.org</owner>
-  <owner>davidjm@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>nyquist@monyhar.org</owner>
+  <owner>dtrainor@monyhar.org</owner>
+  <owner>davidjm@monyhar.org</owner>
   <summary>
     CriticalPersistedTabData stores data pertinent to the running of the app
     such as tab id, parent id, web contents. This data is serialized and stored
@@ -1646,10 +1646,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.PersistedTabData.Storage.Delete.File"
     enum="BooleanSuccess" expires_after="2022-02-07">
-  <owner>yusufo@chromium.org</owner>
-  <owner>nyquist@chromium.org</owner>
-  <owner>dtrainor@chromium.org</owner>
-  <owner>davidjm@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>nyquist@monyhar.org</owner>
+  <owner>dtrainor@monyhar.org</owner>
+  <owner>davidjm@monyhar.org</owner>
   <summary>
     FilePersistedTabData storage stores serialized PersistedTabData (metadata
     persisted across restarts) in a file. This metric records if a delete was
@@ -1659,10 +1659,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.PersistedTabData.Storage.Exists.File"
     enum="BooleanSuccess" expires_after="2022-02-07">
-  <owner>yusufo@chromium.org</owner>
-  <owner>nyquist@chromium.org</owner>
-  <owner>dtrainor@chromium.org</owner>
-  <owner>davidjm@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>nyquist@monyhar.org</owner>
+  <owner>dtrainor@monyhar.org</owner>
+  <owner>davidjm@monyhar.org</owner>
   <summary>
     FilePersistedTabData storage stores serialized PersistedTabData (metadata
     persisted across restarts) in a file. This metric records if a delete
@@ -1672,10 +1672,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.PersistedTabData.Storage.LoadTime.File" units="ms"
     expires_after="2022-01-13">
-  <owner>yusufo@chromium.org</owner>
-  <owner>nyquist@chromium.org</owner>
-  <owner>dtrainor@chromium.org</owner>
-  <owner>davidjm@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>nyquist@monyhar.org</owner>
+  <owner>dtrainor@monyhar.org</owner>
+  <owner>davidjm@monyhar.org</owner>
   <summary>
     FilePersistedTabData storage stores serialized PersistedTabData (metadata
     persisted across restarts) in a file. This metric records how long it took
@@ -1685,10 +1685,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.PersistedTabData.Storage.Restore.File"
     enum="BooleanSuccess" expires_after="2021-12-05">
-  <owner>yusufo@chromium.org</owner>
-  <owner>nyquist@chromium.org</owner>
-  <owner>dtrainor@chromium.org</owner>
-  <owner>davidjm@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>nyquist@monyhar.org</owner>
+  <owner>dtrainor@monyhar.org</owner>
+  <owner>davidjm@monyhar.org</owner>
   <summary>
     FilePersistedTabData storage stores serialized PersistedTabData (metadata
     persisted across restarts) in a file. This metric records if a restore was
@@ -1698,10 +1698,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.PersistedTabData.Storage.Save.File" enum="BooleanSuccess"
     expires_after="2022-02-07">
-  <owner>yusufo@chromium.org</owner>
-  <owner>nyquist@chromium.org</owner>
-  <owner>dtrainor@chromium.org</owner>
-  <owner>davidjm@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>nyquist@monyhar.org</owner>
+  <owner>dtrainor@monyhar.org</owner>
+  <owner>davidjm@monyhar.org</owner>
   <summary>
     FilePersistedTabData storage stores serialized PersistedTabData (metadata
     persisted across restarts) in a file. This metric records if a save was
@@ -1712,10 +1712,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Tabs.PersistedTabData.Storage.Save.File.FirstStorageRequestType"
     enum="FileStorageRequestType" expires_after="2022-03-01">
-  <owner>yusufo@chromium.org</owner>
-  <owner>nyquist@chromium.org</owner>
-  <owner>dtrainor@chromium.org</owner>
-  <owner>davidjm@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>nyquist@monyhar.org</owner>
+  <owner>dtrainor@monyhar.org</owner>
+  <owner>davidjm@monyhar.org</owner>
   <summary>
     First storage request type in FilePersistedTabData. It would be expected
     that the first storage request will be a restore (as restoring the active
@@ -1725,10 +1725,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.PersistedTabData.Storage.SaveTime.File" units="ms"
     expires_after="2022-01-13">
-  <owner>yusufo@chromium.org</owner>
-  <owner>nyquist@chromium.org</owner>
-  <owner>dtrainor@chromium.org</owner>
-  <owner>davidjm@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>nyquist@monyhar.org</owner>
+  <owner>dtrainor@monyhar.org</owner>
+  <owner>davidjm@monyhar.org</owner>
   <summary>
     FilePersistedTabData storage stores serialized PersistedTabData (metadata
     persisted across restarts) in a file. This metric records how long it took
@@ -1738,8 +1738,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.SadTab.CrashCreated" units="tabs"
     expires_after="2021-12-05">
-  <owner>sonnyrao@chromium.org</owner>
-  <owner>jamescook@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
+  <owner>jamescook@monyhar.org</owner>
   <summary>
     Cumulative number of times a tab crashed with &quot;Aw, Snap!&quot;,
     recorded once per tab crash event. For example, a user who crashed 3 tabs
@@ -1752,8 +1752,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.SadTab.CrashDisplayed" units="tabs"
     expires_after="2021-12-05">
-  <owner>sonnyrao@chromium.org</owner>
-  <owner>jamescook@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
+  <owner>jamescook@monyhar.org</owner>
   <summary>
     Cumulative number of times a tab crashed with &quot;Aw, Snap!&quot; and the
     user saw the page, recorded once per tab crash event. For example, a user
@@ -1765,8 +1765,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.SadTab.Feedback.Event" enum="SadTabEvent"
     expires_after="2021-12-05">
-  <owner>sonnyrao@chromium.org</owner>
-  <owner>jamescook@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
+  <owner>jamescook@monyhar.org</owner>
   <summary>
     Counts of events from the style of sad tab which has a feedback button as
     its primary action. Currently, events include being displayed (actually
@@ -1776,8 +1776,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.SadTab.KillCreated" units="tabs"
     expires_after="2021-12-05">
-  <owner>sonnyrao@chromium.org</owner>
-  <owner>jamescook@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
+  <owner>jamescook@monyhar.org</owner>
   <summary>
     Cumulative number of times a tab was killed with a &quot;He's dead,
     Jim!&quot; page, which is usually due to the renderer being killed, recorded
@@ -1792,8 +1792,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.SadTab.KillCreated.OOM" units="tabs"
     expires_after="2021-12-05">
-  <owner>sonnyrao@chromium.org</owner>
-  <owner>jamescook@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
+  <owner>jamescook@monyhar.org</owner>
   <summary>
     Cumulative number of times a tab was killed with a &quot;He's dead,
     Jim!&quot; page due to the kernel out-of-memory killer, recorded once per
@@ -1807,8 +1807,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.SadTab.KillDisplayed" units="tabs"
     expires_after="2021-12-05">
-  <owner>sonnyrao@chromium.org</owner>
-  <owner>jamescook@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
+  <owner>jamescook@monyhar.org</owner>
   <summary>
     Cumulative number of times a tab was killed with a &quot;He's dead,
     Jim!&quot; page and the user saw the page, recorded once per tab kill event.
@@ -1820,8 +1820,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.SadTab.KillDisplayed.OOM" units="tabs"
     expires_after="2021-06-01">
-  <owner>sonnyrao@chromium.org</owner>
-  <owner>jamescook@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
+  <owner>jamescook@monyhar.org</owner>
   <summary>
     Cumulative number of times a tab was killed with a &quot;He's dead,
     Jim!&quot; page due to the kernel out-of-memory killer and the user saw the
@@ -1834,7 +1834,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.SadTab.OomCreated" units="tabs"
     expires_after="2020-06-01">
-  <owner>wfh@chromium.org</owner>
+  <owner>wfh@monyhar.org</owner>
   <summary>
     Cumulative number of times a tab crashed with &quot;Aw, Snap!&quot;,
     recorded once per tab oom event. For example, a user who ran out of memory
@@ -1847,7 +1847,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.SadTab.OomDisplayed" units="tabs"
     expires_after="2020-06-01">
-  <owner>wfh@chromium.org</owner>
+  <owner>wfh@monyhar.org</owner>
   <summary>
     Cumulative number of times a tab ran out of memory with &quot;Aw,
     Snap!&quot; and the user saw the page, recorded once per tab oom event. For
@@ -1859,8 +1859,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.SadTab.Reload.Event" enum="SadTabEvent"
     expires_after="2021-12-05">
-  <owner>sonnyrao@chromium.org</owner>
-  <owner>jamescook@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
+  <owner>jamescook@monyhar.org</owner>
   <summary>
     Counts of events from the style of sad tab which has a reload button as its
     primary action. Compare to Tabs.SadTab.Feedback.Event.
@@ -1869,8 +1869,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.SadTab.ReloadCount" units="tabs"
     expires_after="2021-06-01">
-  <owner>sonnyrao@chromium.org</owner>
-  <owner>jamescook@chromium.org</owner>
+  <owner>sonnyrao@monyhar.org</owner>
+  <owner>jamescook@monyhar.org</owner>
   <summary>
     The number of times a tab was reloaded because it was killed (usually by the
     kernel OOM killer) and the user clicked on it later, recorded once per
@@ -1883,10 +1883,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.SavedTabLoadTime.{SavedTabMethod}.{SavedTabLoadResult}"
     units="ms" expires_after="2021-08-26">
-  <owner>davidjm@chromium.org</owner>
-  <owner>nyquist@chromium.org</owner>
-  <owner>dtrainor@chromium.org</owner>
-  <owner>yusufo@chromium.org</owner>
+  <owner>davidjm@monyhar.org</owner>
+  <owner>nyquist@monyhar.org</owner>
+  <owner>dtrainor@monyhar.org</owner>
+  <owner>yusufo@monyhar.org</owner>
   <summary>
     Records load time of a Tab using {SavedTabMethod} storage and whether the
     {SavedTabLoadResult}
@@ -1904,7 +1904,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.ScrubbedInInterval.KeyPress" units="tabs"
     expires_after="2021-10-01">
-  <owner>corising@chromium.org</owner>
+  <owner>corising@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     This histogram records the number of tabs that are 'scrubbed' by key press
@@ -1916,7 +1916,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.ScrubbedInInterval.MousePress" units="tabs"
     expires_after="2021-10-01">
-  <owner>corising@chromium.org</owner>
+  <owner>corising@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     This histogram records the number of tabs that are 'scrubbed' by mouse press
@@ -1927,8 +1927,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Tabs.ScrubDistance" units="tabs" expires_after="2021-10-25">
-  <owner>afakhry@chromium.org</owner>
-  <owner>tclaiborne@chromium.org</owner>
+  <owner>afakhry@monyhar.org</owner>
+  <owner>tclaiborne@monyhar.org</owner>
   <summary>
     The distance a user multi-finger scrubbed to change tabs. Always positive
     (ignores left / right).
@@ -1936,8 +1936,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Tabs.ScrubDuration" units="ms" expires_after="2022-01-12">
-  <owner>afakhry@chromium.org</owner>
-  <owner>tclaiborne@chromium.org</owner>
+  <owner>afakhry@monyhar.org</owner>
+  <owner>tclaiborne@monyhar.org</owner>
   <summary>
     The duration a user spent doing multi-finger scrubbing to change tabs before
     a different tab than the currently active one was actually activated.
@@ -1946,9 +1946,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.ShoppingPersistedTabData.FoundBuyableProductAnnotation"
     enum="FoundBuyableProductAnnotation" expires_after="2021-12-05">
-  <owner>yusufo@chromium.org</owner>
-  <owner>ayman@chromium.org</owner>
-  <owner>davidjm@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>ayman@monyhar.org</owner>
+  <owner>davidjm@monyhar.org</owner>
   <summary>
     Records if we find a BuyableProductAnnotation in the response from our
     endpoint which provides page annotations to enrich the user experience. The
@@ -1959,8 +1959,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.Startup.TabCount.{TabType}" units="count"
     expires_after="2022-05-04">
-  <owner>davidjm@chromium.org</owner>
-  <owner>nyquist@chromium.org</owner>
+  <owner>davidjm@monyhar.org</owner>
+  <owner>nyquist@monyhar.org</owner>
   <summary>Records the number of {TabType} Tabs loaded on startup.</summary>
   <token key="TabType">
     <variant name="Incognito" summary="Incognito"/>
@@ -1970,8 +1970,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.StateTransfer.NumberOfOtherTabsActivatedBeforeMadeActive"
     units="tabs" expires_after="M77">
-  <owner>kouhei@chromium.org</owner>
-  <owner>tzik@chromium.org</owner>
+  <owner>kouhei@monyhar.org</owner>
+  <owner>tzik@monyhar.org</owner>
   <summary>
     Recorded once per tab activation. The number of tabs that were activated
     while the tab was inactive.
@@ -1985,8 +1985,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.StateTransfer.TabDistanceInactiveToActive" units="tabs"
     expires_after="M85">
-  <owner>kouhei@chromium.org</owner>
-  <owner>tzik@chromium.org</owner>
+  <owner>kouhei@monyhar.org</owner>
+  <owner>tzik@monyhar.org</owner>
   <summary>
     Number of tabs between the previously active tab and the new active tab.
   </summary>
@@ -1999,8 +1999,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.StateTransfer.Target" enum="TabStripState"
     expires_after="M85">
-  <owner>kouhei@chromium.org</owner>
-  <owner>tzik@chromium.org</owner>
+  <owner>kouhei@monyhar.org</owner>
+  <owner>tzik@monyhar.org</owner>
   <summary>
     The state to which a tab transitioned. Recorded when a tab transitions from
     the state in the histogram name to a new state.
@@ -2012,9 +2012,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.Suggestions.NumSuggestionsChanged{TabSuggestionType}"
     units="count" expires_after="2021-10-19">
-  <owner>yusufo@chromium.org</owner>
-  <owner>davidjm@chromium.org</owner>
-  <owner>meiliang@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>davidjm@monyhar.org</owner>
+  <owner>meiliang@monyhar.org</owner>
   <summary>
     The user is presented with recommendations on which Tabs they could take the
     suggested action. The user has the option to: 1) Remove a Tab from the
@@ -2046,8 +2046,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.SwitchFromCloseLatency{Tabs_SwitchLatency}" units="ms"
     expires_after="M88">
-  <owner>dtrainor@chromium.org</owner>
-  <owner>yusufo@chromium.org</owner>
+  <owner>dtrainor@monyhar.org</owner>
+  <owner>yusufo@monyhar.org</owner>
   <summary>
     [Android] Time between the event that closes a tab and the start of
     rendering. {Tabs_SwitchLatency}
@@ -2059,8 +2059,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.SwitchFromExitLatency{Tabs_SwitchLatency}" units="ms"
     expires_after="M88">
-  <owner>dtrainor@chromium.org</owner>
-  <owner>yusufo@chromium.org</owner>
+  <owner>dtrainor@monyhar.org</owner>
+  <owner>yusufo@monyhar.org</owner>
   <summary>
     [Android] Time between the event that exits an app and the start of
     rendering. {Tabs_SwitchLatency}
@@ -2072,8 +2072,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.SwitchFromNewLatency{Tabs_SwitchLatency}" units="ms"
     expires_after="M88">
-  <owner>dtrainor@chromium.org</owner>
-  <owner>yusufo@chromium.org</owner>
+  <owner>dtrainor@monyhar.org</owner>
+  <owner>yusufo@monyhar.org</owner>
   <summary>
     [Android] Time between the event that creates a tab and the start of
     rendering. {Tabs_SwitchLatency}
@@ -2085,8 +2085,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.SwitchFromUserLatency{Tabs_SwitchLatency}" units="ms"
     expires_after="M88">
-  <owner>dtrainor@chromium.org</owner>
-  <owner>yusufo@chromium.org</owner>
+  <owner>dtrainor@monyhar.org</owner>
+  <owner>yusufo@monyhar.org</owner>
   <summary>
     [Android] Time between the event that selects a tab and the start of
     rendering. {Tabs_SwitchLatency}
@@ -2107,8 +2107,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.TabCountInGroupPerLoad" units="tabs"
     expires_after="2021-09-19">
-  <owner>connily@chromium.org</owner>
-  <owner>cyan@chromium.org</owner>
+  <owner>connily@monyhar.org</owner>
+  <owner>cyan@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     The number of tabs in the current active group when a load completes.
@@ -2118,7 +2118,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.TabCountInSwitcher" units="tabs"
     expires_after="2020-07-31">
-  <owner>mattsimmons@chromium.org</owner>
+  <owner>mattsimmons@monyhar.org</owner>
   <owner>memex-team@google.com</owner>
   <summary>
     The number of tabs open when the grid tab switcher is shown.
@@ -2131,7 +2131,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.TabCountOnStartScreenShown" units="tabs"
     expires_after="2020-07-31">
-  <owner>mattsimmons@chromium.org</owner>
+  <owner>mattsimmons@monyhar.org</owner>
   <owner>memex-team@google.com</owner>
   <summary>
     The number of tabs open when the user is returned to the tab switcher on
@@ -2145,8 +2145,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.TabCountPerDomainPerLoad.{TotalTabCountBucket}"
     units="tabs" expires_after="2021-06-30">
-  <owner>connily@chromium.org</owner>
-  <owner>cyan@chromium.org</owner>
+  <owner>connily@monyhar.org</owner>
+  <owner>cyan@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     The number of tabs across all browsers (counting app-mode windows) with the
@@ -2173,7 +2173,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Tabs.TabCountPerLoad" units="tabs" expires_after="2021-12-05">
-  <owner>mpearson@chromium.org</owner>
+  <owner>mpearson@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <owner>sbirch@google.com</owner>
   <summary>
@@ -2190,7 +2190,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.TabCountPerWindow" units="tabs"
     expires_after="2021-12-05">
-  <owner>mpearson@chromium.org</owner>
+  <owner>mpearson@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     The number of tabs open per window (counting app-mode windows) when a load
@@ -2206,8 +2206,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: https://crbug.com/966137 -->
 
-  <owner>sebmarchand@chromium.org</owner>
-  <owner>catan-team@chromium.org</owner>
+  <owner>sebmarchand@monyhar.org</owner>
+  <owner>catan-team@monyhar.org</owner>
   <summary>
     Counts the number of tabs across all windows, reported every 5 minutes.
     Desktop only.
@@ -2217,7 +2217,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.TabOffsetOfSwitch{TabOffsetOfSwitchComponentList}"
     units="units" expires_after="M85">
-  <owner>yusufo@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
   <summary>
     How many tabs a user moved forward or backward in the Android tab switcher.
     {TabOffsetOfSwitchComponentList}
@@ -2250,8 +2250,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.TabSearch.CloseAction" enum="TabSearchCloseActions"
     expires_after="2021-11-21">
-  <owner>tluk@chromium.org</owner>
-  <owner>robliao@chromium.org</owner>
+  <owner>tluk@monyhar.org</owner>
+  <owner>robliao@monyhar.org</owner>
   <summary>
     Tab Search is a feature that allows users to better search for and switch to
     their desired tabs. The Tab Search UI is shown in a bubble anchored to an
@@ -2266,8 +2266,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.TabSearch.NumTabsClosedPerInstance" units="tabs"
     expires_after="2021-11-21">
-  <owner>tluk@chromium.org</owner>
-  <owner>robliao@chromium.org</owner>
+  <owner>tluk@monyhar.org</owner>
+  <owner>robliao@monyhar.org</owner>
   <summary>
     Tab Search is a feature that allows users to better search their browsers
     for their desired tabs and close any currently open tabs. This records the
@@ -2279,8 +2279,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.TabSearch.NumTabsOnOpen" units="tabs"
     expires_after="2021-11-21">
-  <owner>tluk@chromium.org</owner>
-  <owner>robliao@chromium.org</owner>
+  <owner>tluk@monyhar.org</owner>
+  <owner>robliao@monyhar.org</owner>
   <summary>
     Tab Search is a feature that allows users to better search their browsers
     for their desired tabs. It can be opened and closed. This records the number
@@ -2290,8 +2290,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.TabSearch.NumWindowsOnOpen" units="windows"
     expires_after="2021-11-21">
-  <owner>tluk@chromium.org</owner>
-  <owner>robliao@chromium.org</owner>
+  <owner>tluk@monyhar.org</owner>
+  <owner>robliao@monyhar.org</owner>
   <summary>
     Tab Search is a feature that allows users to better search their browsers
     for their desired tabs. It can be opened and closed. This records the number
@@ -2302,8 +2302,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.TabSearch.OpenAction" enum="TabSearchOpenActions"
     expires_after="2021-11-21">
-  <owner>tluk@chromium.org</owner>
-  <owner>robliao@chromium.org</owner>
+  <owner>tluk@monyhar.org</owner>
+  <owner>robliao@monyhar.org</owner>
   <summary>
     Tab Search is a feature that allows users to better search for and switch to
     their desired tabs. The Tab Search UI is shown in a bubble anchored to an
@@ -2317,10 +2317,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.TabSearch.PageHandlerConstructionDelay" units="ms"
     expires_after="2021-11-21">
-  <owner>tluk@chromium.org</owner>
-  <owner>robliao@chromium.org</owner>
-  <owner>yuhengh@chromium.org</owner>
-  <owner>romanarora@chromium.org</owner>
+  <owner>tluk@monyhar.org</owner>
+  <owner>robliao@monyhar.org</owner>
+  <owner>yuhengh@monyhar.org</owner>
+  <owner>romanarora@monyhar.org</owner>
   <summary>
     Tab Search is a feature that allows users to better search for and switch to
     their desired tabs. The Tab Search UI is shown in a bubble anchored to an
@@ -2336,10 +2336,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.TabSearch.WebUI.IndexOf{Action}TabIn{State}List"
     units="tabs" expires_after="2021-11-21">
-  <owner>tluk@chromium.org</owner>
-  <owner>robliao@chromium.org</owner>
-  <owner>yuhengh@chromium.org</owner>
-  <owner>romanarora@chromium.org</owner>
+  <owner>tluk@monyhar.org</owner>
+  <owner>robliao@monyhar.org</owner>
+  <owner>yuhengh@monyhar.org</owner>
+  <owner>romanarora@monyhar.org</owner>
   <summary>
     Tab Search is a feature that allows users to better search their browsers
     for their desired tabs and close any currently open tabs.
@@ -2362,8 +2362,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Deprecated as of 2021/02. Metric is no longer needed.
   </obsolete>
-  <owner>tluk@chromium.org</owner>
-  <owner>robliao@chromium.org</owner>
+  <owner>tluk@monyhar.org</owner>
+  <owner>robliao@monyhar.org</owner>
   <summary>
     Records the time taken to load the Tab Search WebUI and render (at least)
     the initial list of tabs. This is roughly equivalent to 'time to first
@@ -2373,8 +2373,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.TabSearch.WebUI.LoadCompletedTime" units="ms"
     expires_after="2021-11-21">
-  <owner>tluk@chromium.org</owner>
-  <owner>robliao@chromium.org</owner>
+  <owner>tluk@monyhar.org</owner>
+  <owner>robliao@monyhar.org</owner>
   <summary>
     The amount of time between the render frame host StartProvisionalLoad event
     and the render frame DocumentOnLoadCompleted event for the Tab Search WebUI
@@ -2384,8 +2384,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.TabSearch.WebUI.LoadDocumentTime" units="ms"
     expires_after="2021-11-21">
-  <owner>tluk@chromium.org</owner>
-  <owner>robliao@chromium.org</owner>
+  <owner>tluk@monyhar.org</owner>
+  <owner>robliao@monyhar.org</owner>
   <summary>
     The amount of time between the render frame host StartProvisionalLoad and
     DidFinishDocumentLoad events for the Tab Search WebUI page.
@@ -2394,9 +2394,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.TabSearch.WebUI.TabListDataReceived" units="ms"
     expires_after="2021-11-21">
-  <owner>tluk@chromium.org</owner>
-  <owner>robliao@chromium.org</owner>
-  <owner>yuhengh@chromium.org</owner>
+  <owner>tluk@monyhar.org</owner>
+  <owner>robliao@monyhar.org</owner>
+  <owner>yuhengh@monyhar.org</owner>
   <summary>
     The time taken for the WebUI in the renderer to receive the full list of
     tabs for the current user profile. This is measured as the time from when
@@ -2407,8 +2407,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.TabSearch.WebUI.TabSwitchAction"
     enum="TabSearchTabSwitchAction" expires_after="2021-11-21">
-  <owner>tluk@chromium.org</owner>
-  <owner>robliao@chromium.org</owner>
+  <owner>tluk@monyhar.org</owner>
+  <owner>robliao@monyhar.org</owner>
   <summary>
     Tab Search is a feature that allows users to better search their browsers
     for and switch to their desired tabs. This records whether the user used Tab
@@ -2422,8 +2422,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Deprecated as of 2020/11. The way the metric is emitted has changed.
   </obsolete>
-  <owner>tluk@chromium.org</owner>
-  <owner>robliao@chromium.org</owner>
+  <owner>tluk@monyhar.org</owner>
+  <owner>robliao@monyhar.org</owner>
   <summary>
     Tab Search is a feature that allows users to better search their browsers
     for their desired tabs. It can be opened and closed. This records the amount
@@ -2444,8 +2444,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.TabSearch.WindowDisplayedDuration3" units="ms"
     expires_after="2021-11-21">
-  <owner>tluk@chromium.org</owner>
-  <owner>robliao@chromium.org</owner>
+  <owner>tluk@monyhar.org</owner>
+  <owner>robliao@monyhar.org</owner>
   <summary>
     Tab Search is a feature that allows users to better search their browsers
     for their desired tabs. It can be opened and closed. This records the amount
@@ -2467,10 +2467,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.TabSearch.WindowTimeToShowCachedWebView" units="ms"
     expires_after="2021-11-21">
-  <owner>tluk@chromium.org</owner>
-  <owner>robliao@chromium.org</owner>
-  <owner>yuhengh@chromium.org</owner>
-  <owner>romanarora@chromium.org</owner>
+  <owner>tluk@monyhar.org</owner>
+  <owner>robliao@monyhar.org</owner>
+  <owner>yuhengh@monyhar.org</owner>
+  <owner>romanarora@monyhar.org</owner>
   <summary>
     Tab Search is a feature that allows users to better search for and switch to
     their desired tabs. The Tab Search UI is shown in a bubble anchored to an
@@ -2486,10 +2486,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.TabSearch.WindowTimeToShowUncachedWebView" units="ms"
     expires_after="2021-11-21">
-  <owner>tluk@chromium.org</owner>
-  <owner>robliao@chromium.org</owner>
-  <owner>yuhengh@chromium.org</owner>
-  <owner>romanarora@chromium.org</owner>
+  <owner>tluk@monyhar.org</owner>
+  <owner>robliao@monyhar.org</owner>
+  <owner>yuhengh@monyhar.org</owner>
+  <owner>romanarora@monyhar.org</owner>
   <summary>
     Tab Search is a feature that allows users to better search for and switch to
     their desired tabs. The Tab Search UI is shown in a bubble anchored to an
@@ -2504,27 +2504,27 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.TabsStatsDailyEventInterval"
     enum="DailyEventIntervalType" expires_after="M77">
-  <owner>sebmarchand@chromium.org</owner>
+  <owner>sebmarchand@monyhar.org</owner>
   <summary>
     Counts how often tab stats daily interval events were fired.
   </summary>
 </histogram>
 
 <histogram name="Tabs.TabState.LoadTime" units="ms" expires_after="2022-01-13">
-  <owner>yusufo@chromium.org</owner>
-  <owner>nyquist@chromium.org</owner>
-  <owner>dtrainor@chromium.org</owner>
-  <owner>davidjm@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>nyquist@monyhar.org</owner>
+  <owner>dtrainor@monyhar.org</owner>
+  <owner>davidjm@monyhar.org</owner>
   <summary>
     Time taken to load a TabState file in the event that it exists.
   </summary>
 </histogram>
 
 <histogram name="Tabs.TabState.SaveTime" units="ms" expires_after="2022-01-13">
-  <owner>yusufo@chromium.org</owner>
-  <owner>nyquist@chromium.org</owner>
-  <owner>dtrainor@chromium.org</owner>
-  <owner>davidjm@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>nyquist@monyhar.org</owner>
+  <owner>dtrainor@monyhar.org</owner>
+  <owner>davidjm@monyhar.org</owner>
   <summary>
     Time taken to save a TabState file in the event of a successful save.
   </summary>
@@ -2532,8 +2532,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.Tasks.AverageTabGroupSize" units="tabs"
     expires_after="M85">
-  <owner>yusufo@chromium.org</owner>
-  <owner>wychen@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>wychen@monyhar.org</owner>
   <summary>
     The average tab group size, average number of tabs in a group, on a cold
     start after all tabs are restored.
@@ -2542,8 +2542,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.Tasks.DuplicatedTab.DuplicatedTabCount" units="tabs"
     expires_after="2020-06-01">
-  <owner>yusufo@chromium.org</owner>
-  <owner>wychen@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>wychen@monyhar.org</owner>
   <summary>
     During tab restoration, a tab is considered as a duplicated tab when it has
     an identical url with another restored tab.
@@ -2557,8 +2557,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.Tasks.DuplicatedTab.DuplicatedTabRatio" units="%"
     expires_after="2020-06-01">
-  <owner>yusufo@chromium.org</owner>
-  <owner>wychen@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>wychen@monyhar.org</owner>
   <summary>
     During tab restoration, a tab is considered as a duplicated tab when it has
     an identical url with another restored tab.
@@ -2573,8 +2573,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Tabs.Tasks.HubAndSpokeNavigationUsage{HubAndSpokeNavigationUsageType}"
     units="spokes" expires_after="2020-06-01">
-  <owner>yusufo@chromium.org</owner>
-  <owner>wychen@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>wychen@monyhar.org</owner>
   <summary>
     The cumulative number of &quot;spokes&quot; from any &quot;hub&quot; page in
     every tab. A &quot;hub&quot; is any page that the user navigates away from,
@@ -2598,9 +2598,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.Tasks.TabCreated.Count{TabCreatedReason}" units="tabs"
     expires_after="2020-06-30">
-  <owner>yusufo@chromium.org</owner>
-  <owner>wychen@chromium.org</owner>
-  <owner>zea@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>wychen@monyhar.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>
     This recorded value is the number of currently open tabs that were created
     from a given source. This is recorded when entering the tab switcher mode.
@@ -2617,9 +2617,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.Tasks.TabCreated.Percent{TabCreatedReason}" units="%"
     expires_after="2020-06-30">
-  <owner>yusufo@chromium.org</owner>
-  <owner>wychen@chromium.org</owner>
-  <owner>zea@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>wychen@monyhar.org</owner>
+  <owner>zea@monyhar.org</owner>
   <summary>
     The recorded value is the percentage of the number of currently open tabs
     that are created from a given source, relative to the total number of
@@ -2636,16 +2636,16 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Tabs.Tasks.TabGroupCount" units="groups" expires_after="M85">
-  <owner>yusufo@chromium.org</owner>
-  <owner>wychen@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>wychen@monyhar.org</owner>
   <summary>
     The number of tab groups on a cold start after all tabs are restored.
   </summary>
 </histogram>
 
 <histogram name="Tabs.Tasks.TabGroupDensity" units="%" expires_after="M85">
-  <owner>yusufo@chromium.org</owner>
-  <owner>wychen@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>wychen@monyhar.org</owner>
   <summary>
     The tab group density, the ratio of the number of tab groups to the total
     number of tabs, on a cold start after all tabs are restored.
@@ -2653,8 +2653,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Tabs.Tasks.TabsInGroupCount" units="tabs" expires_after="M85">
-  <owner>yusufo@chromium.org</owner>
-  <owner>wychen@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>wychen@monyhar.org</owner>
   <summary>
     The number of tabs is belonging to a tab group on a cold start after all
     tabs are restored.
@@ -2662,8 +2662,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Tabs.Tasks.TabsInGroupRatio" units="%" expires_after="M85">
-  <owner>yusufo@chromium.org</owner>
-  <owner>wychen@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>wychen@monyhar.org</owner>
   <summary>
     The ratio of all tabs in tab groups to the total number of tabs on a cold
     start after all tabs are restored.
@@ -2672,7 +2672,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.TimeSinceLastView.OnTabClobber" units="seconds"
     expires_after="M82">
-  <owner>mattsimmons@chromium.org</owner>
+  <owner>mattsimmons@monyhar.org</owner>
   <owner>memex-team@google.com</owner>
   <summary>
     When a tab is revisited and subsequently the omnibox is focused within a
@@ -2684,7 +2684,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.TimeSinceLastView.OnTabClose" units="seconds"
     expires_after="M82">
-  <owner>mattsimmons@chromium.org</owner>
+  <owner>mattsimmons@monyhar.org</owner>
   <owner>memex-team@google.com</owner>
   <summary>
     When a tab is closed, this reports the amount of time in seconds that has
@@ -2694,7 +2694,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.TimeSinceLastView.OnTabView" units="seconds"
     expires_after="M82">
-  <owner>mattsimmons@chromium.org</owner>
+  <owner>mattsimmons@monyhar.org</owner>
   <owner>memex-team@google.com</owner>
   <summary>
     When a tab is revisited, this reports the amount of time in seconds that has
@@ -2705,8 +2705,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Tabs.UnusedAndClosedInInterval.Count{Tabs_TabUsageIntervalLength}"
     units="tabs" expires_after="M95">
-  <owner>sebmarchand@chromium.org</owner>
-  <owner>catan-team@chromium.org</owner>
+  <owner>sebmarchand@monyhar.org</owner>
+  <owner>catan-team@monyhar.org</owner>
   <summary>
     The number of tabs that haven't been interacted with, visible or audible
     over a given interval time, but which no longer exist at all at the end of
@@ -2724,8 +2724,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.UnusedInInterval.Count{Tabs_TabUsageIntervalLength}"
     units="tabs" expires_after="M95">
-  <owner>sebmarchand@chromium.org</owner>
-  <owner>catan-team@chromium.org</owner>
+  <owner>sebmarchand@monyhar.org</owner>
+  <owner>catan-team@monyhar.org</owner>
   <summary>
     The number of tabs that haven't been interacted with, visible or audible or
     visible during a given interval of time and still exist at the end of this
@@ -2744,8 +2744,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Tabs.UsedAndClosedInInterval.Count{Tabs_TabUsageIntervalLength}"
     units="tabs" expires_after="M95">
-  <owner>sebmarchand@chromium.org</owner>
-  <owner>catan-team@chromium.org</owner>
+  <owner>sebmarchand@monyhar.org</owner>
+  <owner>catan-team@monyhar.org</owner>
   <summary>
     The number of tabs that have been interacted with, visible or audible over a
     given interval of time, but which no longer exist at all at the end of this
@@ -2763,8 +2763,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Tabs.UsedInInterval.Count{Tabs_TabUsageIntervalLength}"
     units="tabs" expires_after="M95">
-  <owner>sebmarchand@chromium.org</owner>
-  <owner>catan-team@chromium.org</owner>
+  <owner>sebmarchand@monyhar.org</owner>
+  <owner>catan-team@monyhar.org</owner>
   <summary>
     The number of tabs that have been interacted with, visible or audible during
     a given interval of time, includes tabs that don't exist at the end of this
@@ -2784,8 +2784,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: https://crbug.com/966137 -->
 
-  <owner>sebmarchand@chromium.org</owner>
-  <owner>catan-team@chromium.org</owner>
+  <owner>sebmarchand@monyhar.org</owner>
+  <owner>catan-team@monyhar.org</owner>
   <summary>
     Counts the number of Chrome windows, reported every 5 minutes. Desktop only.
   </summary>
@@ -2793,7 +2793,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Tabs.WindowWidth" units="DIPs" expires_after="2021-10-25">
-  <owner>collinbaker@chromium.org</owner>
+  <owner>collinbaker@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     The width of each open browser window, in DIPs, reported every 5 minutes.
@@ -2806,7 +2806,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Obsolete in M93. Histogram data was not used.
   </obsolete>
-  <owner>collinbaker@chromium.org</owner>
+  <owner>collinbaker@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     Total time spent in each call of TabStrip::PaintChildren(). This comprises
@@ -2823,8 +2823,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabStrip.ReasonToShow" enum="TabStripReasonToShow"
     expires_after="2021-02-01">
-  <owner>yusufo@chromium.org</owner>
-  <owner>wychen@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>wychen@monyhar.org</owner>
   <summary>
     When conditional tab strip shows, records which kind of intentional
     tab-related action triggered it.
@@ -2836,7 +2836,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <obsolete>
     Obsolete in M93. Histogram data was not used.
   </obsolete>
-  <owner>collinbaker@chromium.org</owner>
+  <owner>collinbaker@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     Time spent painting a tab icon. This includes a page's favicon and loading
@@ -2846,9 +2846,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabStrip.Tab.{Framework}.ActivationAction"
     enum="TabActivationTypes" expires_after="2022-05-21">
-  <owner>yuhengh@chromium.org</owner>
-  <owner>tluk@chromium.org</owner>
-  <owner>romanarora@chromium.org</owner>
+  <owner>yuhengh@monyhar.org</owner>
+  <owner>tluk@monyhar.org</owner>
+  <owner>romanarora@monyhar.org</owner>
   <summary>
     Tab activation triggered by click or touch on a tab. This is used to measure
     tab activation count of tab strip vs WebUI tab strip.
@@ -2861,8 +2861,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabStrip.TabCountOnPageLoad" units="tabs"
     expires_after="2021-10-10">
-  <owner>yusufo@chromium.org</owner>
-  <owner>wychen@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>wychen@monyhar.org</owner>
   <summary>
     This histogram records the number of tabs within the group during page load.
 
@@ -2873,7 +2873,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabStrip.TimeToCreateNewTabFromPress" units="ms"
     expires_after="2021-11-14">
-  <owner>robliao@chromium.org</owner>
+  <owner>robliao@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     The amount of time from receiving a new tab button pressed to creating the
@@ -2882,8 +2882,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="TabStrip.TimeToSwitch" units="ms" expires_after="2021-11-14">
-  <owner>connily@chromium.org</owner>
-  <owner>cyan@chromium.org</owner>
+  <owner>connily@monyhar.org</owner>
+  <owner>cyan@monyhar.org</owner>
   <owner>chrome-desktop-ui-sea@google.com</owner>
   <summary>
     The amount of time from cursor entering the tabstrip to first click on a tab
@@ -2899,8 +2899,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="TabStrip.UserStatus" enum="TabStripUserStatus"
     expires_after="2021-12-05">
-  <owner>yusufo@chromium.org</owner>
-  <owner>wychen@chromium.org</owner>
+  <owner>yusufo@monyhar.org</owner>
+  <owner>wychen@monyhar.org</owner>
   <summary>
     A tab strip session starts when the last time Chrome comes to the foreground
     was more than an hour ago. At the beginning of a tab strip session, records

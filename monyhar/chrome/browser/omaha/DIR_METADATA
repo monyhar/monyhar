@@ -1,5 +1,5 @@
 monorail: {
   component: "Internals>Installer"
 }
-team_email: "chrome-updates-dev@chromium.org"
+team_email: "chrome-updates-dev@monyhar.org"
 os: ANDROID

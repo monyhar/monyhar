@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.omnibox;
+package org.monyhar.components.omnibox;
 
 import androidx.collection.ArraySet;
 
-import org.chromium.chrome.browser.omnibox.MatchClassificationStyle;
-import org.chromium.chrome.browser.omnibox.OmniboxSuggestionType;
-import org.chromium.components.query_tiles.QueryTile;
-import org.chromium.url.GURL;
+import org.monyhar.chrome.browser.omnibox.MatchClassificationStyle;
+import org.monyhar.chrome.browser.omnibox.OmniboxSuggestionType;
+import org.monyhar.components.query_tiles.QueryTile;
+import org.monyhar.url.GURL;
 
 import java.util.ArrayList;
 import java.util.List;

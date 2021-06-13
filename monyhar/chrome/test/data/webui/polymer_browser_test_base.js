@@ -53,7 +53,7 @@ Polymer2DeprecatedTest.prototype = {
     '//ui/webui/resources/js/promise_resolver.js',
     '//third_party/mocha/mocha.js',
     '//chrome/test/data/webui/mocha_adapter.js',
-    '//third_party/polymer/v1_0/components-chromium/iron-test-helpers/' +
+    '//third_party/polymer/v1_0/components-monyhar/iron-test-helpers/' +
         'mock-interactions.js',
   ],
 };

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tracing.settings;
+package org.monyhar.chrome.browser.tracing.settings;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -13,8 +13,8 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceScreen;
 
-import org.chromium.chrome.browser.tracing.TracingController;
-import org.chromium.components.browser_ui.settings.ChromeBaseCheckBoxPreference;
+import org.monyhar.chrome.browser.tracing.TracingController;
+import org.monyhar.components.browser_ui.settings.ChromeBaseCheckBoxPreference;
 
 import java.util.ArrayList;
 import java.util.Collections;

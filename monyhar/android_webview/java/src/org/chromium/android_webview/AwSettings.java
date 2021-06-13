@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview;
+package org.monyhar.android_webview;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -17,17 +17,17 @@ import android.webkit.WebSettings;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.android_webview.common.AwFeatures;
-import org.chromium.android_webview.safe_browsing.AwSafeBrowsingConfigHelper;
-import org.chromium.android_webview.settings.ForceDarkBehavior;
-import org.chromium.android_webview.settings.ForceDarkMode;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.android_webview.common.AwFeatures;
+import org.monyhar.android_webview.safe_browsing.AwSafeBrowsingConfigHelper;
+import org.monyhar.android_webview.settings.ForceDarkBehavior;
+import org.monyhar.android_webview.settings.ForceDarkMode;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.content_public.browser.WebContents;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

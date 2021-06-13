@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor;
+package org.monyhar.chrome.browser.compositor;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -10,23 +10,23 @@ import android.graphics.Bitmap;
 import android.text.TextUtils;
 import android.util.SparseArray;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.compositor.layouts.content.TitleBitmapFactory;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabFavicon;
-import org.chromium.chrome.browser.tabmodel.TabModelSelector;
-import org.chromium.chrome.browser.ui.favicon.FaviconHelper;
-import org.chromium.chrome.browser.ui.favicon.FaviconHelper.DefaultFaviconHelper;
-import org.chromium.chrome.browser.ui.favicon.FaviconHelper.FaviconImageCallback;
-import org.chromium.ui.base.LocalizationUtils;
-import org.chromium.ui.resources.ResourceManager;
-import org.chromium.ui.resources.dynamics.BitmapDynamicResource;
-import org.chromium.ui.resources.dynamics.DynamicResourceLoader;
-import org.chromium.url.GURL;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.compositor.layouts.content.TitleBitmapFactory;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.TabFavicon;
+import org.monyhar.chrome.browser.tabmodel.TabModelSelector;
+import org.monyhar.chrome.browser.ui.favicon.FaviconHelper;
+import org.monyhar.chrome.browser.ui.favicon.FaviconHelper.DefaultFaviconHelper;
+import org.monyhar.chrome.browser.ui.favicon.FaviconHelper.FaviconImageCallback;
+import org.monyhar.ui.base.LocalizationUtils;
+import org.monyhar.ui.resources.ResourceManager;
+import org.monyhar.ui.resources.dynamics.BitmapDynamicResource;
+import org.monyhar.ui.resources.dynamics.DynamicResourceLoader;
+import org.monyhar.url.GURL;
 
 /**
  * A version of the {@link LayerTitleCache} that builds native cc::Layer objects

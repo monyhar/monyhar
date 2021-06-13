@@ -5,12 +5,12 @@
 import("//build/config/android/rules.gni")
 
 generate_jni("jni_headers") {
-  sources = [ "java/src/org/chromium/components/gcm_driver/instance_id/InstanceIDBridge.java" ]
+  sources = [ "java/src/org/monyhar/components/gcm_driver/instance_id/InstanceIDBridge.java" ]
 }
 
 generate_jni("test_support_jni_headers") {
   testonly = true
-  sources = [ "javatests/src/org/chromium/components/gcm_driver/instance_id/FakeInstanceIDWithSubtype.java" ]
+  sources = [ "javatests/src/org/monyhar/components/gcm_driver/instance_id/FakeInstanceIDWithSubtype.java" ]
 }
 
 android_library("instance_id_driver_java") {
@@ -26,8 +26,8 @@ android_library("instance_id_driver_java") {
       [ "//components/gcm_driver/instance_id:instance_id_java_enums_srcjar" ]
 
   sources = [
-    "java/src/org/chromium/components/gcm_driver/instance_id/InstanceIDBridge.java",
-    "java/src/org/chromium/components/gcm_driver/instance_id/InstanceIDWithSubtype.java",
+    "java/src/org/monyhar/components/gcm_driver/instance_id/InstanceIDBridge.java",
+    "java/src/org/monyhar/components/gcm_driver/instance_id/InstanceIDWithSubtype.java",
   ]
 }
 
@@ -38,5 +38,5 @@ android_library("instance_id_driver_test_support_java") {
     "//base:base_java",
   ]
 
-  sources = [ "javatests/src/org/chromium/components/gcm_driver/instance_id/FakeInstanceIDWithSubtype.java" ]
+  sources = [ "javatests/src/org/monyhar/components/gcm_driver/instance_id/FakeInstanceIDWithSubtype.java" ]
 }

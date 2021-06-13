@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sync;
+package org.monyhar.chrome.browser.sync;
 
 import androidx.annotation.AnyThread;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.components.signin.base.GoogleServiceAuthError;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.components.signin.base.GoogleServiceAuthError;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /**
  * Fake some SyncService methods for testing.

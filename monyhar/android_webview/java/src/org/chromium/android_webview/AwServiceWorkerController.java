@@ -2,15 +2,15 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview;
+package org.monyhar.android_webview;
 
 import android.content.Context;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.android_webview.safe_browsing.AwSafeBrowsingConfigHelper;
-import org.chromium.base.annotations.DoNotInline;
-import org.chromium.components.embedder_support.util.WebResourceResponseInfo;
+import org.monyhar.android_webview.safe_browsing.AwSafeBrowsingConfigHelper;
+import org.monyhar.base.annotations.DoNotInline;
+import org.monyhar.components.embedder_support.util.WebResourceResponseInfo;
 
 /**
  * Manages clients and settings for Service Workers.

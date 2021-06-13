@@ -298,7 +298,7 @@ class PaintPreviewCompositorBeginCompositeTest
 
   base::ScopedTempDir temp_dir_;
 
-  GURL url_{"https://www.chromium.org"};
+  GURL url_{"https://www.monyhar.org"};
 
  private:
   PaintPreviewCompositorImpl compositor_{mojo::NullReceiver(), nullptr,
@@ -576,7 +576,7 @@ TEST(PaintPreviewCompositorTest, TestComposite) {
   ASSERT_TRUE(temp_dir.CreateUniqueTempDir());
   PaintPreviewCompositorImpl compositor(mojo::NullReceiver(), nullptr,
                                         base::BindOnce([]() {}));
-  GURL url("https://www.chromium.org");
+  GURL url("https://www.monyhar.org");
   const base::UnguessableToken kRootFrameID = base::UnguessableToken::Create();
   gfx::Size root_frame_scroll_extent(100, 200);
   PaintPreviewProto proto;
@@ -621,7 +621,7 @@ TEST(PaintPreviewCompositorTest, TestCompositeWithMemoryBuffer) {
   base::test::TaskEnvironment task_environment;
   PaintPreviewCompositorImpl compositor(mojo::NullReceiver(), nullptr,
                                         base::BindOnce([]() {}));
-  GURL url("https://www.chromium.org");
+  GURL url("https://www.monyhar.org");
   const base::UnguessableToken kRootFrameID = base::UnguessableToken::Create();
   gfx::Size root_frame_scroll_extent(100, 200);
   PaintPreviewProto proto;
@@ -694,7 +694,7 @@ TEST(PaintPreviewCompositorTest, TestCompositeMainFrameNoDependencies) {
   ASSERT_TRUE(temp_dir.CreateUniqueTempDir());
   PaintPreviewCompositorImpl compositor(mojo::NullReceiver(), nullptr,
                                         base::BindOnce([]() {}));
-  GURL url("https://www.chromium.org");
+  GURL url("https://www.monyhar.org");
   const base::UnguessableToken kRootFrameID = base::UnguessableToken::Create();
   gfx::Size root_frame_scroll_extent(100, 200);
   PaintPreviewProto proto;
@@ -735,7 +735,7 @@ TEST(PaintPreviewCompositorTest, TestCompositeMainFrameOneDependency) {
   ASSERT_TRUE(temp_dir.CreateUniqueTempDir());
   PaintPreviewCompositorImpl compositor(mojo::NullReceiver(), nullptr,
                                         base::BindOnce([]() {}));
-  GURL url("https://www.chromium.org");
+  GURL url("https://www.monyhar.org");
   const base::UnguessableToken kRootFrameID = base::UnguessableToken::Create();
   gfx::Size root_frame_scroll_extent(100, 200);
   const base::UnguessableToken kSubframe_0_ID =
@@ -792,7 +792,7 @@ TEST(PaintPreviewCompositorTest, TestCompositeMainFrameOneDependencyScrolled) {
   ASSERT_TRUE(temp_dir.CreateUniqueTempDir());
   PaintPreviewCompositorImpl compositor(mojo::NullReceiver(), nullptr,
                                         base::BindOnce([]() {}));
-  GURL url("https://www.chromium.org");
+  GURL url("https://www.monyhar.org");
   const base::UnguessableToken kRootFrameID = base::UnguessableToken::Create();
   gfx::Size root_frame_scroll_extent(100, 200);
   const base::UnguessableToken kSubframe_0_ID =
@@ -851,7 +851,7 @@ TEST(PaintPreviewCompositorTest,
   ASSERT_TRUE(temp_dir.CreateUniqueTempDir());
   PaintPreviewCompositorImpl compositor(mojo::NullReceiver(), nullptr,
                                         base::BindOnce([]() {}));
-  GURL url("https://www.chromium.org");
+  GURL url("https://www.monyhar.org");
   const base::UnguessableToken kRootFrameID = base::UnguessableToken::Create();
   gfx::Size root_frame_scroll_extent(110, 215);
   gfx::Size root_frame_scroll_offsets(10, 15);
@@ -914,7 +914,7 @@ TEST(PaintPreviewCompositorTest,
   ASSERT_TRUE(temp_dir.CreateUniqueTempDir());
   PaintPreviewCompositorImpl compositor(mojo::NullReceiver(), nullptr,
                                         base::BindOnce([]() {}));
-  GURL url("https://www.chromium.org");
+  GURL url("https://www.monyhar.org");
   const base::UnguessableToken kRootFrameID = base::UnguessableToken::Create();
   gfx::Size root_frame_scroll_extent(110, 215);
   gfx::Size root_frame_scroll_offsets(50, 20);

@@ -298,7 +298,7 @@ js_type_check("cr_elements_resources") {
 }
 
 js_library("cr_scrollable_behavior") {
-  deps = [ "//third_party/polymer/v1_0/components-chromium/iron-list:iron-list-extracted" ]
+  deps = [ "//third_party/polymer/v1_0/components-monyhar/iron-list:iron-list-extracted" ]
 }
 
 js_library("cr_container_shadow_behavior") {
@@ -307,7 +307,7 @@ js_library("cr_container_shadow_behavior") {
 
 js_library("mouse_hoverable_mixin") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -438,8 +438,8 @@ js_library("cr_scrollable_behavior.m") {
     "$root_gen_dir/ui/webui/resources/cr_elements/cr_scrollable_behavior.m.js",
   ]
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/iron-list:iron-list",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-list:iron-list",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   extra_deps = [ ":modulize" ]
 }

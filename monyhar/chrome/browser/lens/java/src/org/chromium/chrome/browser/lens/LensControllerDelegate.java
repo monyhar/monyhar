@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.lens;
+package org.monyhar.chrome.browser.lens;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -12,9 +12,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.contextmenu.ChipRenderParams;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.contextmenu.ChipRenderParams;
+import org.monyhar.ui.base.WindowAndroid;
 
 /**
  * Base class for defining methods where different behavior is required by downstream targets.

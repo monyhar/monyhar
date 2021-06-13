@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer;
+package org.monyhar.weblayer;
 
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -12,19 +12,19 @@ import android.webkit.ValueCallback;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.weblayer_private.interfaces.APICallException;
-import org.chromium.weblayer_private.interfaces.IBrowser;
-import org.chromium.weblayer_private.interfaces.IClientDownload;
-import org.chromium.weblayer_private.interfaces.IDownload;
-import org.chromium.weblayer_private.interfaces.IDownloadCallbackClient;
-import org.chromium.weblayer_private.interfaces.IGoogleAccountAccessTokenFetcherClient;
-import org.chromium.weblayer_private.interfaces.IObjectWrapper;
-import org.chromium.weblayer_private.interfaces.IOpenUrlCallbackClient;
-import org.chromium.weblayer_private.interfaces.IProfile;
-import org.chromium.weblayer_private.interfaces.IProfileClient;
-import org.chromium.weblayer_private.interfaces.IUserIdentityCallbackClient;
-import org.chromium.weblayer_private.interfaces.ObjectWrapper;
-import org.chromium.weblayer_private.interfaces.StrictModeWorkaround;
+import org.monyhar.weblayer_private.interfaces.APICallException;
+import org.monyhar.weblayer_private.interfaces.IBrowser;
+import org.monyhar.weblayer_private.interfaces.IClientDownload;
+import org.monyhar.weblayer_private.interfaces.IDownload;
+import org.monyhar.weblayer_private.interfaces.IDownloadCallbackClient;
+import org.monyhar.weblayer_private.interfaces.IGoogleAccountAccessTokenFetcherClient;
+import org.monyhar.weblayer_private.interfaces.IObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.IOpenUrlCallbackClient;
+import org.monyhar.weblayer_private.interfaces.IProfile;
+import org.monyhar.weblayer_private.interfaces.IProfileClient;
+import org.monyhar.weblayer_private.interfaces.IUserIdentityCallbackClient;
+import org.monyhar.weblayer_private.interfaces.ObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.StrictModeWorkaround;
 
 import java.io.File;
 import java.util.Collection;

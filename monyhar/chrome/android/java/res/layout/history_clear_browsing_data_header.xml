@@ -12,7 +12,7 @@
 
         <!-- Sets edge padding separately because android:padding doesn't override
              android:paddingStart. -->
-        <org.chromium.ui.widget.ButtonCompat
+        <org.monyhar.ui.widget.ButtonCompat
             android:id="@+id/clear_browsing_data_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

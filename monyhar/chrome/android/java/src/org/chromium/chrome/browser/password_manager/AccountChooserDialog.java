@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.password_manager;
+package org.monyhar.chrome.browser.password_manager;
 
 import android.app.Activity;
 import android.content.Context;
@@ -29,13 +29,13 @@ import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.content.res.AppCompatResources;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.R;
-import org.chromium.components.browser_ui.util.AvatarGenerator;
-import org.chromium.components.url_formatter.UrlFormatter;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.widget.Toast;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.R;
+import org.monyhar.components.browser_ui.util.AvatarGenerator;
+import org.monyhar.components.url_formatter.UrlFormatter;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.widget.Toast;
 
 /**
  *  A dialog offers the user the ability to choose credentials for authentication. User is

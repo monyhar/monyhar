@@ -2,7 +2,7 @@
 <!-- Copyright 2021 The Chromium Authors. All rights reserved.
      Use of this source code is governed by a BSD-style license that can be
      found in the LICENSE file. -->
-<org.chromium.components.browser_ui.widget.FadingEdgeScrollView
+<org.monyhar.components.browser_ui.widget.FadingEdgeScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -14,7 +14,7 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content">
 
-    <org.chromium.ui.widget.ChromeImageButton
+    <org.monyhar.ui.widget.ChromeImageButton
         android:id="@+id/edit_button"
         android:layout_width="48dp"
         android:layout_height="48dp"
@@ -37,7 +37,7 @@
         android:orientation="vertical"
         tools:ignore="RtlSymmetry">
 
-      <org.chromium.ui.widget.TextViewWithLeading
+      <org.monyhar.ui.widget.TextViewWithLeading
           android:id="@+id/address"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
@@ -61,4 +61,4 @@
           tools:text="+1 858 230 4000" />
     </LinearLayout>
   </RelativeLayout>
-</org.chromium.components.browser_ui.widget.FadingEdgeScrollView>
+</org.monyhar.components.browser_ui.widget.FadingEdgeScrollView>

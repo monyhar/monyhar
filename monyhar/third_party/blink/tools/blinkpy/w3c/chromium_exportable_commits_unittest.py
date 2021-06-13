@@ -7,9 +7,9 @@ import unittest
 from blinkpy.common.host_mock import MockHost
 from blinkpy.common.path_finder import RELATIVE_WEB_TESTS
 from blinkpy.common.system.executive_mock import mock_git_commands
-from blinkpy.w3c.chromium_commit import ChromiumCommit
-from blinkpy.w3c.chromium_commit_mock import MockChromiumCommit
-from blinkpy.w3c.chromium_exportable_commits import (
+from blinkpy.w3c.monyhar_commit import ChromiumCommit
+from blinkpy.w3c.monyhar_commit_mock import MockChromiumCommit
+from blinkpy.w3c.monyhar_exportable_commits import (
     _exportable_commits_since, get_commit_export_state, CommitExportState)
 from blinkpy.w3c.local_wpt_mock import MockLocalWPT
 from blinkpy.w3c.wpt_github import PullRequest

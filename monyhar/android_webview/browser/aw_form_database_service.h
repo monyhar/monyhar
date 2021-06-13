@@ -17,7 +17,7 @@ namespace android_webview {
 // Handles the database operations necessary to implement the autocomplete
 // functionality. This includes creating and initializing the components that
 // handle the database backend, and providing a synchronous interface when
-// needed (the chromium database components have an async. interface).
+// needed (the monyhar database components have an async. interface).
 class AwFormDatabaseService : public WebDataServiceConsumer {
  public:
   AwFormDatabaseService(const base::FilePath path);

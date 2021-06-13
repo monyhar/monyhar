@@ -1,4 +1,4 @@
 monorail {
   component: "Blink>Payments"
 }
-team_email: "payments-dev@chromium.org"
+team_email: "payments-dev@monyhar.org"

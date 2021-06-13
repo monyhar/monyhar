@@ -3,7 +3,7 @@
 <script src = "/resources/testharnessreport.js"></script>
 <script>
 promise_test(() => {
-    const SCRIPT = '/fetch/chromium/resources/close-worker-while-requesting.js';
+    const SCRIPT = '/fetch/monyhar/resources/close-worker-while-requesting.js';
     worker = new Worker(SCRIPT);
     return new Promise(resolve => {
         worker.onmessage = message => {

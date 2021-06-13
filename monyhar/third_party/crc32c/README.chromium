@@ -10,7 +10,7 @@ Description:
 CRC32C implementation with support for CPU-specific acceleration instructions
 
 Local Additions:
-* gn file for building in chromium
+* gn file for building in monyhar
 * Manually generated config/{android,mac,linux,win32,win64}/crc32c_config.h
   * Used the build commands in the README
   * Picked up the output in include/crc32c/crc32c_config.h

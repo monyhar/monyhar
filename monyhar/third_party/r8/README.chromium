@@ -23,7 +23,7 @@ Local Modifications:
 * Refer to commit descriptions within "3pp/patches" directory.
 * Added "playground" directory for quick "how does this optimize" tests.
 * Removed references to ConcurrentHashMap and TimeZone#getTimeZone in desugar_jdk_libs.json.
-* Added "java/src/org/chromium/build/CustomD8.java", custom_d8.jar, and BUILD.gn.
+* Added "java/src/org/monyhar/build/CustomD8.java", custom_d8.jar, and BUILD.gn.
   * Used in "build/android/gyp/dex.py" to enable desugar dependencies.
 
 Update Instructions:
@@ -36,12 +36,12 @@ cp out/Debug/obj/third_party/r8/custom_d8_java.javac.jar third_party/r8/custom_d
 
 * For a new version of r8:
   * Find the latest instance from:
-    https://chrome-infra-packages.appspot.com/p/chromium/third_party/r8/+/
+    https://chrome-infra-packages.appspot.com/p/monyhar/third_party/r8/+/
     * These instances are uploaded by the build bot:
-      https://ci.chromium.org/p/chromium/builders/ci/3pp-linux-amd64-packager
+      https://ci.monyhar.org/p/monyhar/builders/ci/3pp-linux-amd64-packager
       * The bot autoruns every 6 hours. Ping a trooper or a clank build core dev to
         trigger it if you need it sooner:
-        https://luci-scheduler.appspot.com/jobs/chromium/3pp-linux-amd64-packager
+        https://luci-scheduler.appspot.com/jobs/monyhar/3pp-linux-amd64-packager
   * Copy this instance ID to the r8 entry in //DEPS.
   * Update this file with the new version string for that instance and submit.
     * Use the version after the @ sign.
@@ -96,4 +96,4 @@ How to file bugs against R8:
 How to submit CLs to R8:
 * Request to be added to their allowlist in order to upload CLs.
 * After CLs are submitted, check the bots for build breakage.
-  * https://ci.chromium.org/p/r8/g/main_all/console
+  * https://ci.monyhar.org/p/r8/g/main_all/console

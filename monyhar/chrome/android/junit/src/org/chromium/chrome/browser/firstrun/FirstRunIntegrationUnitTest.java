@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.firstrun;
+package org.monyhar.chrome.browser.firstrun;
 
 import android.app.Activity;
 import android.app.PendingIntent;
@@ -31,19 +31,19 @@ import org.robolectric.annotation.Implementation;
 import org.robolectric.annotation.Implements;
 import org.robolectric.shadows.ShadowApplication;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.chrome.browser.document.ChromeLauncherActivity;
-import org.chromium.chrome.browser.init.BrowserParts;
-import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
-import org.chromium.chrome.browser.searchwidget.SearchActivity;
-import org.chromium.chrome.browser.webapps.WebApkIntentDataProviderFactory;
-import org.chromium.chrome.browser.webapps.WebappActivity;
-import org.chromium.chrome.browser.webapps.WebappLauncherActivity;
-import org.chromium.components.webapk.lib.client.WebApkValidator;
-import org.chromium.components.webapk.lib.common.WebApkMetaDataKeys;
-import org.chromium.webapk.lib.common.WebApkConstants;
-import org.chromium.webapk.test.WebApkTestHelper;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.chrome.browser.document.ChromeLauncherActivity;
+import org.monyhar.chrome.browser.init.BrowserParts;
+import org.monyhar.chrome.browser.init.ChromeBrowserInitializer;
+import org.monyhar.chrome.browser.searchwidget.SearchActivity;
+import org.monyhar.chrome.browser.webapps.WebApkIntentDataProviderFactory;
+import org.monyhar.chrome.browser.webapps.WebappActivity;
+import org.monyhar.chrome.browser.webapps.WebappLauncherActivity;
+import org.monyhar.components.webapk.lib.client.WebApkValidator;
+import org.monyhar.components.webapk.lib.common.WebApkMetaDataKeys;
+import org.monyhar.webapk.lib.common.WebApkConstants;
+import org.monyhar.webapk.test.WebApkTestHelper;
 
 /** JUnit tests for first run triggering code. */
 @RunWith(BaseRobolectricTestRunner.class)
@@ -198,7 +198,7 @@ public final class FirstRunIntegrationUnitTest {
      */
     @Test
     public void testFreRelaunchesWebApkNotWebApkActivity() {
-        String webApkPackageName = "org.chromium.webapk.name";
+        String webApkPackageName = "org.monyhar.webapk.name";
         String startUrl = "https://pwa.rocks/";
 
         Bundle bundle = new Bundle();

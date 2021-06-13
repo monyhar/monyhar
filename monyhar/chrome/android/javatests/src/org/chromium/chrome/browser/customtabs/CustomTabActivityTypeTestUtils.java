@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.customtabs;
+package org.monyhar.chrome.browser.customtabs;
 
 import android.content.Intent;
 import android.support.test.InstrumentationRegistry;
 
-import org.chromium.chrome.browser.ShortcutHelper;
-import org.chromium.chrome.browser.browserservices.TrustedWebActivityTestUtil;
-import org.chromium.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
-import org.chromium.chrome.browser.flags.ActivityType;
-import org.chromium.chrome.browser.webapps.WebApkActivityTestRule;
-import org.chromium.chrome.browser.webapps.WebappActivityTestRule;
-import org.chromium.chrome.test.ChromeActivityTestRule;
-import org.chromium.chrome.test.util.browser.webapps.WebApkIntentDataProviderBuilder;
+import org.monyhar.chrome.browser.ShortcutHelper;
+import org.monyhar.chrome.browser.browserservices.TrustedWebActivityTestUtil;
+import org.monyhar.chrome.browser.browserservices.intents.BrowserServicesIntentDataProvider;
+import org.monyhar.chrome.browser.flags.ActivityType;
+import org.monyhar.chrome.browser.webapps.WebApkActivityTestRule;
+import org.monyhar.chrome.browser.webapps.WebappActivityTestRule;
+import org.monyhar.chrome.test.ChromeActivityTestRule;
+import org.monyhar.chrome.test.util.browser.webapps.WebApkIntentDataProviderBuilder;
 
 import java.util.concurrent.TimeoutException;
 
@@ -64,7 +64,7 @@ public class CustomTabActivityTypeTestUtils {
 
     private static void launchWebApk(WebApkActivityTestRule activityTestRule, String url) {
         BrowserServicesIntentDataProvider intentDataProvider =
-                new WebApkIntentDataProviderBuilder("org.chromium.webapk.random", url).build();
+                new WebApkIntentDataProviderBuilder("org.monyhar.webapk.random", url).build();
         activityTestRule.startWebApkActivity(intentDataProvider);
     }
 

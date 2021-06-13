@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.media;
+package org.monyhar.media;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
@@ -15,8 +15,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.annotation.Config;
 
-import org.chromium.media.AudioTrackOutputStream.AudioBufferInfo;
-import org.chromium.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.media.AudioTrackOutputStream.AudioBufferInfo;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
 
 import java.nio.ByteBuffer;
 import java.util.ArrayList;

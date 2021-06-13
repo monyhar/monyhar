@@ -175,7 +175,7 @@ void WebTestWithWebState::LoadHtml(NSString* html, const GURL& url) {
 }
 
 void WebTestWithWebState::LoadHtml(NSString* html) {
-  GURL url("https://chromium.test/");
+  GURL url("https://monyhar.test/");
   LoadHtml(html, url);
 }
 

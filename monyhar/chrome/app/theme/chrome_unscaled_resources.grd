@@ -47,20 +47,20 @@
         </if>
       </if>
       <if expr="not _google_chrome">
-        <include name="IDR_PRODUCT_LOGO_64" file="chromium/product_logo_64.png" type="BINDATA" />
-        <include name="IDR_PRODUCT_LOGO_128" file="chromium/product_logo_128.png" type="BINDATA" />
-        <include name="IDR_PRODUCT_LOGO_256" file="chromium/product_logo_256.png" type="BINDATA" />
+        <include name="IDR_PRODUCT_LOGO_64" file="monyhar/product_logo_64.png" type="BINDATA" />
+        <include name="IDR_PRODUCT_LOGO_128" file="monyhar/product_logo_128.png" type="BINDATA" />
+        <include name="IDR_PRODUCT_LOGO_256" file="monyhar/product_logo_256.png" type="BINDATA" />
         <!-- NOTE: product_logo_*.* files beyond what's listed above are
              referenced by installer code; don't remove them unless you know
              what you're doing! -->
         <if expr="is_macosx">
-          <include name="IDR_STATUS_TRAY_ICON" file="chromium/product_logo_22_mono.png" type="BINDATA" />
+          <include name="IDR_STATUS_TRAY_ICON" file="monyhar/product_logo_22_mono.png" type="BINDATA" />
         </if>
         <if expr="chromeos">
-          <include name="IDR_CHROME_APP_ICON_32" file="chromium/chromeos/chrome_app_icon_32.png" type="BINDATA" />
-          <include name="IDR_CHROME_APP_ICON_192" file="chromium/chromeos/chrome_app_icon_192.png" type="BINDATA" />
-          <include name="IDR_WEBSTORE_APP_ICON_16" file="chromium/chromeos/webstore_app_icon_16.png" type="BINDATA" />
-          <include name="IDR_WEBSTORE_APP_ICON_128" file="chromium/chromeos/webstore_app_icon_128.png" type="BINDATA" />
+          <include name="IDR_CHROME_APP_ICON_32" file="monyhar/chromeos/chrome_app_icon_32.png" type="BINDATA" />
+          <include name="IDR_CHROME_APP_ICON_192" file="monyhar/chromeos/chrome_app_icon_192.png" type="BINDATA" />
+          <include name="IDR_WEBSTORE_APP_ICON_16" file="monyhar/chromeos/webstore_app_icon_16.png" type="BINDATA" />
+          <include name="IDR_WEBSTORE_APP_ICON_128" file="monyhar/chromeos/webstore_app_icon_128.png" type="BINDATA" />
         </if>
       </if>
       <if expr="is_win">
@@ -103,7 +103,7 @@
         <include name="IDR_APPS_FOLDER_OVERLAY_512" file="mac/apps_folder_overlay_512.png" type="BINDATA" />
       </if>
       <if expr="chromeos">
-        <include name="IDR_LOGO_CROSH" file="chromium/chromeos/crosh_app_icon_256.png" type="BINDATA" />
+        <include name="IDR_LOGO_CROSH" file="monyhar/chromeos/crosh_app_icon_256.png" type="BINDATA" />
         <!-- Borealis icons -->
         <include name="IDR_LOGO_BOREALIS_DEFAULT_192" file="borealis/logo_borealis_default_192.png" type="BINDATA" />
         <!-- Crostini icons -->

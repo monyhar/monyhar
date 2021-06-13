@@ -1025,7 +1025,7 @@ int HttpStreamParser::ParseResponseHeaders(int end_offset) {
       // Allow Shoutcast responses over HTTP, as it's somewhat common and relies
       // on HTTP/0.9 on weird ports to work.
       // See
-      // https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/qS63pYso4P0
+      // https://groups.google.com/a/monyhar.org/forum/#!topic/blink-dev/qS63pYso4P0
       if (read_buf_->offset() < 3 || scheme != "http" ||
           !base::LowerCaseEqualsASCII(
               base::StringPiece(read_buf_->StartOfBuffer(), 3), "icy")) {

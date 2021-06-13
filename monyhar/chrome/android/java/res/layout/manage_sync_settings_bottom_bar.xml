@@ -21,7 +21,7 @@
         android:orientation="horizontal"
         android:padding="16dp">
 
-        <org.chromium.ui.widget.ButtonCompat
+        <org.monyhar.ui.widget.ButtonCompat
             android:id="@+id/cancel_button"
             style="@style/TextButton"
             android:layout_width="wrap_content"
@@ -34,7 +34,7 @@
             android:layout_weight="1"
             android:visibility="invisible"/>
 
-        <org.chromium.ui.widget.ButtonCompat
+        <org.monyhar.ui.widget.ButtonCompat
             android:id="@+id/confirm_button"
             style="@style/FilledButton.Flat"
             android:layout_width="wrap_content"

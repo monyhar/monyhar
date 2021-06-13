@@ -35,7 +35,7 @@ enum class ServerPipeDirection {
 };
 
 // This function is copied from
-// https://cs.chromium.org/chromium/src/chrome/browser/safe_browsing/chrome_cleaner/chrome_prompt_channel_win.cc
+// https://cs.monyhar.org/monyhar/src/chrome/browser/safe_browsing/chrome_cleaner/chrome_prompt_channel_win.cc
 // to get the same behavior in tests as in Chrome.
 std::pair<ScopedHandle, ScopedHandle> CreateMessagePipe(
     ServerPipeDirection server_direction) {

@@ -58,7 +58,7 @@ _TEST_APK_LIBS = [
   (0x0500b000, 0x05078f38, 0x0006df38, 'libcc_paint.cr.so'),
   (0x05079000, 0x0507e734, 0x00005734, 'libcdm_manager.cr.so'),
   (0x0507f000, 0x06f4d744, 0x01ece744, 'libchrome.cr.so'),
-  (0x06f54000, 0x06feb830, 0x00097830, 'libchromium_sqlite3.cr.so'),
+  (0x06f54000, 0x06feb830, 0x00097830, 'libmonyhar_sqlite3.cr.so'),
   (0x06fec000, 0x0706f554, 0x00083554, 'libclient.cr.so'),
   (0x07070000, 0x0708da60, 0x0001da60, 'libcloud_policy_proto_generated_compile.cr.so'),
   (0x0708e000, 0x07121f28, 0x00093f28, 'libcodec.cr.so'),

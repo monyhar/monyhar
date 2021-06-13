@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.webview_shell;
+package org.monyhar.webview_shell;
 
 import android.app.Activity;
 import android.content.Context;
@@ -25,7 +25,7 @@ import androidx.webkit.WebViewClientCompat;
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 /**
  * A main activity to handle WPT requests.

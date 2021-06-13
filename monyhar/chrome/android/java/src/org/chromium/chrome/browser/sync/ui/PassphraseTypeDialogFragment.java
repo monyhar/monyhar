@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sync.ui;
+package org.monyhar.chrome.browser.sync.ui;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -27,15 +27,15 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.browser.customtabs.CustomTabsIntent;
 import androidx.fragment.app.DialogFragment;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.IntentUtils;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ChromeStringConstants;
-import org.chromium.components.sync.Passphrase;
-import org.chromium.components.sync.PassphraseType;
-import org.chromium.ui.text.SpanApplier;
-import org.chromium.ui.text.SpanApplier.SpanInfo;
-import org.chromium.ui.widget.TextViewWithClickableSpans;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ChromeStringConstants;
+import org.monyhar.components.sync.Passphrase;
+import org.monyhar.components.sync.PassphraseType;
+import org.monyhar.ui.text.SpanApplier;
+import org.monyhar.ui.text.SpanApplier.SpanInfo;
+import org.monyhar.ui.widget.TextViewWithClickableSpans;
 
 import java.util.List;
 

@@ -53,7 +53,7 @@ class PostProcessingPipelineImpl : public PostProcessingPipeline {
   void UpdatePlayoutChannel(int channel) override;
 
  private:
-  // Note: typedef is used to silence chromium-style mandatory constructor in
+  // Note: typedef is used to silence monyhar-style mandatory constructor in
   // structs.
   typedef struct {
     std::unique_ptr<AudioPostProcessor2> ptr;

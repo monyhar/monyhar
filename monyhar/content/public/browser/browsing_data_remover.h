@@ -132,7 +132,7 @@ class BrowsingDataRemover {
   // reorder the entries, as this enum is passed to UMA.
   // A Java counterpart will be generated for this enum so that it can be
   // logged on Android.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.browsing_data
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.browsing_data
   enum CookieOrCacheDeletionChoice {
     NEITHER_COOKIES_NOR_CACHE,
     ONLY_COOKIES,

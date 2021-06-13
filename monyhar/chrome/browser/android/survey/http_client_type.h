@@ -12,7 +12,7 @@ namespace survey {
 // Defines different types of consumers of SurveyHttpClient. Each consumer type
 // will have different network annotation. A Java counterpart will be generated
 // for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.survey
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.survey
 enum class HttpClientType {
   kSurvey = 0,
   kNotification = 1,

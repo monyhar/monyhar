@@ -48,7 +48,7 @@ source_set("jsoncpp") {
   }
 }
 
-if (build_with_chromium) {
+if (build_with_monyhar) {
   fuzzer_test("jsoncpp_fuzzer") {
     sources = [ "fuzzers/json_fuzzer.cc" ]
 

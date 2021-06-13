@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.promo;
+package org.monyhar.components.browser_ui.widget.promo;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,11 +12,11 @@ import androidx.annotation.IntDef;
 import androidx.annotation.LayoutRes;
 import androidx.annotation.Nullable;
 
-import org.chromium.components.browser_ui.widget.R;
-import org.chromium.components.browser_ui.widget.impression.ImpressionTracker;
-import org.chromium.components.browser_ui.widget.impression.OneShotImpressionListener;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.components.browser_ui.widget.R;
+import org.monyhar.components.browser_ui.widget.impression.ImpressionTracker;
+import org.monyhar.components.browser_ui.widget.impression.OneShotImpressionListener;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

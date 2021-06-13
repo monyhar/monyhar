@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test;
+package org.monyhar.android_webview.test;
 
-import static org.chromium.android_webview.test.AwActivityTestRule.WAIT_TIMEOUT_MS;
+import static org.monyhar.android_webview.test.AwActivityTestRule.WAIT_TIMEOUT_MS;
 
 import android.webkit.WebSettings;
 
@@ -16,10 +16,10 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.AwContents;
-import org.chromium.android_webview.WebviewErrorCode;
-import org.chromium.base.test.util.Feature;
-import org.chromium.content_public.browser.test.util.TestCallbackHelperContainer;
+import org.monyhar.android_webview.AwContents;
+import org.monyhar.android_webview.WebviewErrorCode;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.content_public.browser.test.util.TestCallbackHelperContainer;
 
 import java.util.concurrent.TimeUnit;
 

@@ -39,8 +39,8 @@ class MockTest : public testing::Test {
     // Create a mock proxy.
     mock_proxy_ = new MockObjectProxy(
         mock_bus_.get(),
-        "org.chromium.TestService",
-        ObjectPath("/org/chromium/TestObject"));
+        "org.monyhar.TestService",
+        ObjectPath("/org/monyhar/TestObject"));
 
     // Set an expectation so mock_proxy's CallMethodAndBlock() will use
     // CreateMockProxyResponse() to return responses.
@@ -60,8 +60,8 @@ class MockTest : public testing::Test {
     // Set an expectation so mock_bus's GetObjectProxy() for the given
     // service name and the object path will return mock_proxy_.
     EXPECT_CALL(*mock_bus_.get(),
-                GetObjectProxy("org.chromium.TestService",
-                               ObjectPath("/org/chromium/TestObject")))
+                GetObjectProxy("org.monyhar.TestService",
+                               ObjectPath("/org/monyhar/TestObject")))
         .WillOnce(Return(mock_proxy_.get()));
 
     // ShutdownAndBlock() will be called in TearDown().
@@ -93,7 +93,7 @@ class MockTest : public testing::Test {
   // CallMethodAndBlock() for |mock_proxy_|.
   std::unique_ptr<Response> CreateMockProxyResponse(MethodCall* method_call,
                                                     int timeout_ms) {
-    if (method_call->GetInterface() == "org.chromium.TestInterface" &&
+    if (method_call->GetInterface() == "org.monyhar.TestInterface" &&
         method_call->GetMember() == "Echo") {
       MessageReader reader(method_call);
       std::string text_message;
@@ -143,11 +143,11 @@ TEST_F(MockTest, CallMethodAndBlock) {
   const char kHello[] = "Hello";
   // Get an object proxy from the mock bus.
   ObjectProxy* proxy = mock_bus_->GetObjectProxy(
-      "org.chromium.TestService",
-      ObjectPath("/org/chromium/TestObject"));
+      "org.monyhar.TestService",
+      ObjectPath("/org/monyhar/TestObject"));
 
   // Create a method call.
-  MethodCall method_call("org.chromium.TestInterface", "Echo");
+  MethodCall method_call("org.monyhar.TestInterface", "Echo");
   MessageWriter writer(&method_call);
   writer.AppendString(kHello);
 
@@ -167,11 +167,11 @@ TEST_F(MockTest, CallMethodAndBlock) {
 TEST_F(MockTest, CallMethodAndBlockWithErrorDetails) {
   // Get an object proxy from the mock bus.
   ObjectProxy* proxy = mock_bus_->GetObjectProxy(
-      "org.chromium.TestService",
-      ObjectPath("/org/chromium/TestObject"));
+      "org.monyhar.TestService",
+      ObjectPath("/org/monyhar/TestObject"));
 
   // Create a method call.
-  MethodCall method_call("org.chromium.TestInterface", "Echo");
+  MethodCall method_call("org.monyhar.TestInterface", "Echo");
 
   ScopedDBusError error;
   // Call the method.
@@ -192,11 +192,11 @@ TEST_F(MockTest, CallMethod) {
 
   // Get an object proxy from the mock bus.
   ObjectProxy* proxy = mock_bus_->GetObjectProxy(
-      "org.chromium.TestService",
-      ObjectPath("/org/chromium/TestObject"));
+      "org.monyhar.TestService",
+      ObjectPath("/org/monyhar/TestObject"));
 
   // Create a method call.
-  MethodCall method_call("org.chromium.TestInterface", "Echo");
+  MethodCall method_call("org.monyhar.TestInterface", "Echo");
   MessageWriter writer(&method_call);
   writer.AppendString(kHello);
 

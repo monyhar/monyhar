@@ -12,11 +12,11 @@ java_library("junit") {
   testonly = true
 
   sources = [
-    "java/src/org/chromium/chrome/browser/page_annotations/BuyableProductPageAnnotationUnitTest.java",
-    "java/src/org/chromium/chrome/browser/page_annotations/PageAnnotationUtilsUnitTest.java",
-    "java/src/org/chromium/chrome/browser/page_annotations/PageAnnotationsServiceUnitTest.java",
-    "java/src/org/chromium/chrome/browser/page_annotations/PageAnnotationsTestUtils.java",
-    "java/src/org/chromium/chrome/browser/page_annotations/ProductPriceUpdatePageAnnotationUnitTest.java",
+    "java/src/org/monyhar/chrome/browser/page_annotations/BuyableProductPageAnnotationUnitTest.java",
+    "java/src/org/monyhar/chrome/browser/page_annotations/PageAnnotationUtilsUnitTest.java",
+    "java/src/org/monyhar/chrome/browser/page_annotations/PageAnnotationsServiceUnitTest.java",
+    "java/src/org/monyhar/chrome/browser/page_annotations/PageAnnotationsTestUtils.java",
+    "java/src/org/monyhar/chrome/browser/page_annotations/ProductPriceUpdatePageAnnotationUnitTest.java",
   ]
 
   deps = [
@@ -42,8 +42,8 @@ android_library("javatests") {
   testonly = true
 
   sources = [
-    "java/src/org/chromium/chrome/browser/page_annotations/PageAnnotationsServiceFactoryUnitTest.java",
-    "java/src/org/chromium/chrome/browser/page_annotations/PageAnnotationsServiceProxyUnitTest.java",
+    "java/src/org/monyhar/chrome/browser/page_annotations/PageAnnotationsServiceFactoryUnitTest.java",
+    "java/src/org/monyhar/chrome/browser/page_annotations/PageAnnotationsServiceProxyUnitTest.java",
   ]
 
   deps = [

@@ -14,7 +14,7 @@ namespace extensions {
 // =============================================================================
 //
 // ADDING NEW EXTENSIONS REQUIRES APPROVAL from Extensions Tech Lead:
-// rdevlin.cronin@chromium.org
+// rdevlin.cronin@monyhar.org
 //
 // The main acceptable use of extensions in the default Chrome experience (i.e.
 // not installed explicitly by the user) are to implement things like the

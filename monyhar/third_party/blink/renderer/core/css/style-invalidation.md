@@ -1,6 +1,6 @@
 # CSS Style Invalidation in Blink
 
-[Rendered](https://chromium.googlesource.com/chromium/src/+/HEAD/third_party/blink/renderer/core/css/style-invalidation.md)
+[Rendered](https://monyhar.googlesource.com/monyhar/src/+/HEAD/third_party/blink/renderer/core/css/style-invalidation.md)
 
 # About this document
 
@@ -82,10 +82,10 @@ DOM nodes have several bits of style-related state
 that control style invalidation and recalculation.
 These are accessed through:
 
-* [`Node::NeedsStyleInvalidation`](https://cs.chromium.org/?q=symbol:%5Eblink::Node::NeedsStyleInvalidation$)
-* [`Node::ChildNeedsStyleInvalidation`](https://cs.chromium.org/?q=symbol:%5Eblink::Node::ChildNeedsStyleInvalidation$)
-* [`Node::NeedsStyleRecalc`](https://cs.chromium.org/?q=symbol:%5Eblink::Node::NeedsStyleRecalc$)
-* [`Node::ChildNeedsStyleRecalc`](https://cs.chromium.org/?q=symbol:%5Eblink::Node::ChildNeedsStyleRecalc$)
+* [`Node::NeedsStyleInvalidation`](https://cs.monyhar.org/?q=symbol:%5Eblink::Node::NeedsStyleInvalidation$)
+* [`Node::ChildNeedsStyleInvalidation`](https://cs.monyhar.org/?q=symbol:%5Eblink::Node::ChildNeedsStyleInvalidation$)
+* [`Node::NeedsStyleRecalc`](https://cs.monyhar.org/?q=symbol:%5Eblink::Node::NeedsStyleRecalc$)
+* [`Node::ChildNeedsStyleRecalc`](https://cs.monyhar.org/?q=symbol:%5Eblink::Node::ChildNeedsStyleRecalc$)
 
 
 
@@ -105,7 +105,7 @@ The overview of style invalidation and recalculation is that
 
 * Style rules are compiled down to a collection of InvalidationSets
   and other data
-  in [`RuleFeatureSet`](https://cs.chromium.org/?q=symbol:%5Eblink::RuleFeatureSet$)
+  in [`RuleFeatureSet`](https://cs.monyhar.org/?q=symbol:%5Eblink::RuleFeatureSet$)
 * The following process is then applied continuously
   * Changes to the DOM cause nodes or subtrees to be immediately invalidated
     or to accumulate pending invalidations.
@@ -119,15 +119,15 @@ The overview of style invalidation and recalculation is that
 
 ## Building the RuleFeatureSet
 
-Each [`RuleSet`](https://cs.chromium.org/?q=symbol:%5Eblink::RuleSet$)
+Each [`RuleSet`](https://cs.monyhar.org/?q=symbol:%5Eblink::RuleSet$)
 produces its own
-[`RuleFeatureSet`](https://cs.chromium.org/?q=symbol:%5Eblink::RuleFeatureSet$)
-by calling [`CollectFeaturesFromRuleData`](https://cs.chromium.org/?q=symbol:%5Eblink::RuleFeatureSet::CollectFeaturesFromRuleData$)
-for each [`RuleData`](https://cs.chromium.org/?q=symbol:%5Eblink::RuleData$).
-These contain several indexed collections of [`InvalidationSet`](https://cs.chromium.org/?q=symbol:%5Eblink::InvalidationSet$)s
+[`RuleFeatureSet`](https://cs.monyhar.org/?q=symbol:%5Eblink::RuleFeatureSet$)
+by calling [`CollectFeaturesFromRuleData`](https://cs.monyhar.org/?q=symbol:%5Eblink::RuleFeatureSet::CollectFeaturesFromRuleData$)
+for each [`RuleData`](https://cs.monyhar.org/?q=symbol:%5Eblink::RuleData$).
+These contain several indexed collections of [`InvalidationSet`](https://cs.monyhar.org/?q=symbol:%5Eblink::InvalidationSet$)s
 and some miscellaneous properties.
 
-All of these are merged together to form a final [`RuleFeatureSet`](https://cs.chromium.org/?q=symbol:%5Eblink::RuleFeatureSet$)
+All of these are merged together to form a final [`RuleFeatureSet`](https://cs.monyhar.org/?q=symbol:%5Eblink::RuleFeatureSet$)
 which used for style purposes.
 
 
@@ -135,21 +135,21 @@ which used for style purposes.
 
 Changes in the DOM that require updates to styles
 may get turned into either immediate invalidations or pending invalidations.
-When a DOM change that could impact style occurs inside a [`Node`](https://cs.chromium.org/?q=symbol:%5Eblink::Node$)
+When a DOM change that could impact style occurs inside a [`Node`](https://cs.monyhar.org/?q=symbol:%5Eblink::Node$)
 (e.g. a change in class name)
-this leads to a call into [`StyleEngine`](https://cs.chromium.org/?q=symbol:%5Eblink::StyleEngine$)
-to record this style-impacting change via one of several [`FooChangedForElement`](https://cs.chromium.org/?q=symbol:%5Eblink::StyleEngine::.*ChangedForElement$) methods.
+this leads to a call into [`StyleEngine`](https://cs.monyhar.org/?q=symbol:%5Eblink::StyleEngine$)
+to record this style-impacting change via one of several [`FooChangedForElement`](https://cs.monyhar.org/?q=symbol:%5Eblink::StyleEngine::.*ChangedForElement$) methods.
 
 Depending on the type of change,
-[`StyleEngine`](https://cs.chromium.org/?q=symbol:%5Eblink::StyleEngine$) gathers the relevant [`InvalidationSet`](https://cs.chromium.org/?q=symbol:%5Eblink::InvalidationSet$)s
-and calls [`PendingInvalidations::ScheduleInvalidationSetsForNode`](https://cs.chromium.org/?q=symbol:%5Eblink::PendingInvalidations::ScheduleInvalidationSetsForNode$)
+[`StyleEngine`](https://cs.monyhar.org/?q=symbol:%5Eblink::StyleEngine$) gathers the relevant [`InvalidationSet`](https://cs.monyhar.org/?q=symbol:%5Eblink::InvalidationSet$)s
+and calls [`PendingInvalidations::ScheduleInvalidationSetsForNode`](https://cs.monyhar.org/?q=symbol:%5Eblink::PendingInvalidations::ScheduleInvalidationSetsForNode$)
 which will do one or both of
 
-* call [`Node::SetNeedsStyleInvalidation`](https://cs.chromium.org/?q=symbol:%5Eblink::Node::SetNeedsStyleInvalidation$)
+* call [`Node::SetNeedsStyleInvalidation`](https://cs.monyhar.org/?q=symbol:%5Eblink::Node::SetNeedsStyleInvalidation$)
   which ensures that the invalidation process will consider this node
   and add InvalidationSets for this node to the pending invalidation set map.
-* call [`Node::SetNeedsStyleRecalc`](https://cs.chromium.org/?q=symbol:%5Eblink::Node::SetNeedsStyleRecalc$)
-  with either [`kLocalStyleChange`](https://cs.chromium.org/?q=symbol:%5Eblink::StyleChangeType::kLocalStyleChange$) or [`kSubtreeStyleChange`](https://cs.chromium.org/?q=symbol:%5Eblink::StyleChangeType::kSubtreeStyleChange$)
+* call [`Node::SetNeedsStyleRecalc`](https://cs.monyhar.org/?q=symbol:%5Eblink::Node::SetNeedsStyleRecalc$)
+  with either [`kLocalStyleChange`](https://cs.monyhar.org/?q=symbol:%5Eblink::StyleChangeType::kLocalStyleChange$) or [`kSubtreeStyleChange`](https://cs.monyhar.org/?q=symbol:%5Eblink::StyleChangeType::kSubtreeStyleChange$)
 
 
 ## Pushing the pending invalidations
@@ -157,9 +157,9 @@ which will do one or both of
 When style is about to be read,
 the map of pending invalidations which has been built up
 needs to be pushed.
-For each [`ContainerNode`](https://cs.chromium.org/?q=symbol:%5Eblink::ContainerNode$) in the DOM tree
-we have 0 or more descendant [`InvalidationSet`](https://cs.chromium.org/?q=symbol:%5Eblink::InvalidationSet$) waiting to be applied.
-The invalidation process starts with a call to [`StyleInvalidator::Invalidate`](https://cs.chromium.org/?q=symbol:%5Eblink::StyleInvalidator::Invalidate$)
+For each [`ContainerNode`](https://cs.monyhar.org/?q=symbol:%5Eblink::ContainerNode$) in the DOM tree
+we have 0 or more descendant [`InvalidationSet`](https://cs.monyhar.org/?q=symbol:%5Eblink::InvalidationSet$) waiting to be applied.
+The invalidation process starts with a call to [`StyleInvalidator::Invalidate`](https://cs.monyhar.org/?q=symbol:%5Eblink::StyleInvalidator::Invalidate$)
 which recurses down the tree, depth first.
 Read the method's inline documentation to understand more about the process.
 

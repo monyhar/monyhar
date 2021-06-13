@@ -9,7 +9,7 @@
 
 #include "base/callback.h"
 #include "base/strings/string_piece.h"
-#include "fuchsia/fidl/chromium/cast/cpp/fidl.h"
+#include "fuchsia/fidl/monyhar/cast/cpp/fidl.h"
 
 // TODO(crbug.com/1082821): Remove unused methods here once the
 // Cast Streaming Receiver component has been implemented.
@@ -25,7 +25,7 @@ extern const char kCastStreamingMessagePortName[];
 
 // Returns true if |application_config| is a cast streaming application.
 bool IsAppConfigForCastStreaming(
-    const chromium::cast::ApplicationConfig& application_config);
+    const monyhar::cast::ApplicationConfig& application_config);
 
 // Modifies |params| to apply Cast Streaming-specific Context Params.
 void ApplyCastStreamingContextParams(fuchsia::web::CreateContextParams* params);

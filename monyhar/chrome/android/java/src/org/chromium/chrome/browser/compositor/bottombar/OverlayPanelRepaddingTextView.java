@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor.bottombar;
+package org.monyhar.chrome.browser.compositor.bottombar;
 
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.chromium.ui.resources.dynamics.DynamicResourceLoader;
+import org.monyhar.ui.resources.dynamics.DynamicResourceLoader;
 
 /**
  * Provides a TextView whose end padding can be adjusted between a short and long size.

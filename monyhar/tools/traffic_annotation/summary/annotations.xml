@@ -175,7 +175,7 @@ Refer to README.md for content description and update process.
  <item id="invalidation_service" added_in_milestone="62" hash_code="72354423" type="0" deprecated="2020-01-23" content_hash_code="78425687" file_path=""/>
  <item id="javascript_report_error" added_in_milestone="87" hash_code="109607776" type="0" content_hash_code="7229012" os_list="linux" file_path="chrome/browser/error_reporting/chrome_js_error_report_processor_nonchromeos.cc"/>
  <item id="kids_chrome_management_client_classify_url" added_in_milestone="77" hash_code="109987793" type="0" deprecated="2019-07-30" content_hash_code="112740597" file_path=""/>
- <item id="lib_address_input" added_in_milestone="62" hash_code="50816767" type="0" content_hash_code="57977576" os_list="linux,windows" file_path="third_party/libaddressinput/chromium/chrome_metadata_source.cc"/>
+ <item id="lib_address_input" added_in_milestone="62" hash_code="50816767" type="0" content_hash_code="57977576" os_list="linux,windows" file_path="third_party/libaddressinput/monyhar/chrome_metadata_source.cc"/>
  <item id="litepages_robots_rules" added_in_milestone="89" hash_code="50910588" type="0" content_hash_code="72567080" os_list="linux,windows" file_path="chrome/browser/subresource_redirect/origin_robots_rules.cc"/>
  <item id="load_autofill_gstatic_data" added_in_milestone="78" hash_code="119416099" type="0" content_hash_code="8433621" os_list="linux,windows" file_path="chrome/browser/autofill/autofill_gstatic_reader.cc"/>
  <item id="logo_service" added_in_milestone="73" hash_code="35473769" type="0" content_hash_code="20271299" os_list="linux,windows" file_path="components/search_provider_logos/logo_service_impl.cc"/>
@@ -269,9 +269,9 @@ Refer to README.md for content description and update process.
  <item id="qr_code_save" added_in_milestone="84" hash_code="87963126" type="0" content_hash_code="72717245" os_list="linux,windows" file_path="chrome/browser/ui/views/qrcode_generator/qrcode_generator_bubble.cc"/>
  <item id="query_tiles_fetcher" added_in_milestone="84" hash_code="10243490" type="0" content_hash_code="16824373" os_list="linux,windows" file_path="components/query_tiles/internal/tile_fetcher.cc"/>
  <item id="query_tiles_image_loader" added_in_milestone="83" hash_code="95103115" type="0" content_hash_code="75070538" os_list="linux,windows" file_path="components/query_tiles/internal/cached_image_loader.cc"/>
- <item id="quic_chromium_incoming_pending_session" added_in_milestone="73" hash_code="120830730" type="0" content_hash_code="52904665" os_list="linux,windows" file_path="net/quic/quic_chromium_client_session.cc"/>
- <item id="quic_chromium_incoming_session" added_in_milestone="66" hash_code="87635401" type="0" content_hash_code="78573093" os_list="linux,windows" file_path="net/quic/quic_chromium_client_session.cc"/>
- <item id="quic_chromium_packet_writer" added_in_milestone="66" hash_code="20153177" type="0" content_hash_code="29657765" os_list="linux,windows" file_path="net/quic/quic_chromium_packet_writer.cc"/>
+ <item id="quic_monyhar_incoming_pending_session" added_in_milestone="73" hash_code="120830730" type="0" content_hash_code="52904665" os_list="linux,windows" file_path="net/quic/quic_monyhar_client_session.cc"/>
+ <item id="quic_monyhar_incoming_session" added_in_milestone="66" hash_code="87635401" type="0" content_hash_code="78573093" os_list="linux,windows" file_path="net/quic/quic_monyhar_client_session.cc"/>
+ <item id="quic_monyhar_packet_writer" added_in_milestone="66" hash_code="20153177" type="0" content_hash_code="29657765" os_list="linux,windows" file_path="net/quic/quic_monyhar_packet_writer.cc"/>
  <item id="ranker_url_fetcher" added_in_milestone="62" hash_code="95682324" type="0" content_hash_code="45958626" os_list="linux,windows" file_path="components/assist_ranker/ranker_url_fetcher.cc"/>
  <item id="receive_messages_express" added_in_milestone="85" hash_code="29506140" type="0" deprecated="2020-09-21" content_hash_code="38581365" file_path=""/>
  <item id="refresh_token_annotation_request" added_in_milestone="62" hash_code="7433837" type="1" second_id="29188932" deprecated="2018-01-17" content_hash_code="137103383" file_path=""/>

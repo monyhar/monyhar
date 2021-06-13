@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.embedder_support.media;
+package org.monyhar.components.embedder_support.media;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 
-import org.chromium.content_public.browser.ContentVideoViewEmbedder;
+import org.monyhar.content_public.browser.ContentVideoViewEmbedder;
 
 /**
  * Uses an existing Activity to handle displaying video in full screen.

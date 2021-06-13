@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.offlinepages.indicator;
+package org.monyhar.chrome.browser.offlinepages.indicator;
 
 import android.app.Activity;
 import android.os.Handler;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.download.OfflineContentAvailabilityStatusProvider;
-import org.chromium.chrome.browser.status_indicator.StatusIndicatorCoordinator;
-import org.chromium.chrome.browser.toolbar.ToolbarManager;
-import org.chromium.chrome.browser.ui.appmenu.AppMenuHandler;
-import org.chromium.chrome.browser.user_education.IPHCommandBuilder;
-import org.chromium.chrome.browser.user_education.UserEducationHelper;
-import org.chromium.components.feature_engagement.FeatureConstants;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.download.OfflineContentAvailabilityStatusProvider;
+import org.monyhar.chrome.browser.status_indicator.StatusIndicatorCoordinator;
+import org.monyhar.chrome.browser.toolbar.ToolbarManager;
+import org.monyhar.chrome.browser.ui.appmenu.AppMenuHandler;
+import org.monyhar.chrome.browser.user_education.IPHCommandBuilder;
+import org.monyhar.chrome.browser.user_education.UserEducationHelper;
+import org.monyhar.components.feature_engagement.FeatureConstants;
 
 /**
  * Class that controls the showing of in-product help for the offline indicator. The in-product help

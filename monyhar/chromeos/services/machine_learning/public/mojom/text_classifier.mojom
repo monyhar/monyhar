@@ -18,7 +18,7 @@ module chromeos.machine_learning.mojom;
 
 // NOTE: The base directory for 'import' statements is expected to differ
 //       between Chromium and Chrome OS versions of this file.
-//       And for "time.mojom", on the chromium side, we have to use the version
+//       And for "time.mojom", on the monyhar side, we have to use the version
 //       under mojo folder, that is, "mojo/public/mojom/base/time.mojom".
 import "mojo/public/mojom/base/time.mojom";
 

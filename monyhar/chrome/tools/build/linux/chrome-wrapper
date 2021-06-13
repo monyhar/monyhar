@@ -7,7 +7,7 @@
 # Running Chromium via this script makes it possible to set Chromium as the
 # default browser directly out of a compile, without needing to package it.
 
-DESKTOP="chromium-devel"
+DESKTOP="monyhar-devel"
 TITLE="Chromium"
 
 usage() {

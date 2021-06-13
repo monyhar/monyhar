@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.privacy.secure_dns;
+package org.monyhar.chrome.browser.privacy.secure_dns;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.net.SecureDnsManagementMode;
-import org.chromium.net.SecureDnsMode;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.net.SecureDnsManagementMode;
+import org.monyhar.net.SecureDnsMode;
 
 import java.util.ArrayList;
 import java.util.List;

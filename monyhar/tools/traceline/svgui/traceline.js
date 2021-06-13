@@ -23,7 +23,7 @@
 //   - Loading indicator / debug console.
 //   - Better colors.
 //
-// Dean McNamee <deanm@chromium.org>
+// Dean McNamee <deanm@monyhar.org>
 
 // XML namespaces.
 var svgNS = 'http://www.w3.org/2000/svg';

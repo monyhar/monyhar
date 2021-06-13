@@ -2,13 +2,13 @@
 
 [Original google doc](https://docs.google.com/document/d/1yjzOWrPfFGviEd1nru3yzqxSHETC-zsEBSt9C8SvV-Q/edit)
 
-[Chinese](https://zhuanlan.zhihu.com/p/54601110) | [Korean](https://github.com/naver/whale-browser-developers/blob/master/translation/chromium/docs/how_cc_works.md)
+[Chinese](https://zhuanlan.zhihu.com/p/54601110) | [Korean](https://github.com/naver/whale-browser-developers/blob/master/translation/monyhar/docs/how_cc_works.md)
 
 [TOC]
 
 ## tl;dr
 
-[cc/](https://cs.chromium.org/chromium/src/cc/) is historically but inaccurately called the Chrome Compositor.
+[cc/](https://cs.monyhar.org/monyhar/src/cc/) is historically but inaccurately called the Chrome Compositor.
 It's neither "the" chrome compositor (of course we have many), nor a compositor at all any more.
 danakj suggests "content collator" as an alternative name.
 
@@ -158,7 +158,7 @@ Should eventually be deleted.
 
 A surface layer has a surface id, which refers to some other stream of compositor frames in the system.
 This is a way of having an indirection to other compositor frame producers.
-See also: [surface documentation](https://www.chromium.org/developers/design-documents/chromium-graphics/surfaces).
+See also: [surface documentation](https://www.monyhar.org/developers/design-documents/monyhar-graphics/surfaces).
 For example, Blink embeds references to out of process iframes via SurfaceLayer.
 
 ### SolidColorScrollbarLayer
@@ -362,11 +362,11 @@ A BSP tree is used to sort and intersect these against each other in the same 3d
 
 ## Glossary
 
-See: [cc/README.md](https://chromium.googlesource.com/chromium/src/+/main/cc/README.md#glossaries)
+See: [cc/README.md](https://monyhar.googlesource.com/monyhar/src/+/main/cc/README.md#glossaries)
 
 ## Other Resources
 
-For a list of presentations, videos, and design docs, see: [https://www.chromium.org/developers/design-documents/chromium-graphics](https://www.chromium.org/developers/design-documents/chromium-graphics)
+For a list of presentations, videos, and design docs, see: [https://www.monyhar.org/developers/design-documents/monyhar-graphics](https://www.monyhar.org/developers/design-documents/monyhar-graphics)
 
 ## Miscellaneous Corner Cases That Don’t Fit Anywhere Else, Sorry
 

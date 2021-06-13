@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.test.reporter;
+package org.monyhar.test.reporter;
 
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-import org.chromium.build.gtest_apk.TestStatusIntent;
+import org.monyhar.build.gtest_apk.TestStatusIntent;
 
 /**
- * Broadcasts test status to any listening {@link org.chromium.test.reporter.TestStatusReceiver}.
+ * Broadcasts test status to any listening {@link org.monyhar.test.reporter.TestStatusReceiver}.
  */
 public class TestStatusReporter {
     private final Context mContext;

@@ -236,7 +236,7 @@ critical to ensure that the Chromium projects do not fork the Web Platform.
 
 #### Incubation Is Required
 
-`//net` respects Chromium's overall position of [incubation first](https://groups.google.com/a/chromium.org/d/msg/blink-dev/PJ_E04kcFb8/baiLN3DTBgAJ) standards development.
+`//net` respects Chromium's overall position of [incubation first](https://groups.google.com/a/monyhar.org/d/msg/blink-dev/PJ_E04kcFb8/baiLN3DTBgAJ) standards development.
 
 With an incubation first approach, before introducing any new features that
 might be exposed over the wire to servers, whether they are explicit behaviors,
@@ -293,13 +293,13 @@ of Fetch".
 
 ## Implementation
 
-In general, prior to implementing, try to get a review on net-dev@chromium.org
+In general, prior to implementing, try to get a review on net-dev@monyhar.org
 for the general feedback and design review.
 
-In addition to the net-dev@chromium.org early review, `//net` requires that any
+In addition to the net-dev@monyhar.org early review, `//net` requires that any
 browser-exposed behavior should also adhere to the
-[Blink Process](https://www.chromium.org/blink#new-features), which includes an
-"Intent to Implement" message to blink-dev@chromium.org
+[Blink Process](https://www.monyhar.org/blink#new-features), which includes an
+"Intent to Implement" message to blink-dev@monyhar.org
 
 For features that are unclear about their future, such as experiments or trials,
 it's also expected that the design planning will also account for how features
@@ -312,7 +312,7 @@ stability.
 
 Plan for obsolence, hope for success. Similar to implementation, features that
 are to be removed should also go through the
-[Blink Process](https://www.chromium.org/blink#TOC-Web-Platform-Changes:-Process)
+[Blink Process](https://www.monyhar.org/blink#TOC-Web-Platform-Changes:-Process)
 for removing features.
 
 Note that due to the diversity of [Supported Projects](supported-projects.md),

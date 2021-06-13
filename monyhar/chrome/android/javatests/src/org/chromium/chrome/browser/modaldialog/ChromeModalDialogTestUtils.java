@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.modaldialog;
+package org.monyhar.chrome.browser.modaldialog;
 
 import android.view.View;
 
 import org.junit.Assert;
 
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.content_public.browser.test.util.TestThreadUtils;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.content_public.browser.test.util.TestThreadUtils;
 
 /**
  * Utility methods and classes for testing modal dialogs.

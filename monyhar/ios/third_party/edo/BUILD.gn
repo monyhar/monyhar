@@ -136,10 +136,10 @@ source_set("edo") {
 
   configs -= [
     "//build/config/gcc:symbol_visibility_hidden",
-    "//build/config/compiler:chromium_code",
+    "//build/config/compiler:monyhar_code",
   ]
   configs += [
-    "//build/config/compiler:no_chromium_code",
+    "//build/config/compiler:no_monyhar_code",
     "//build/config/compiler:enable_arc",
     "//build/config/gcc:symbol_visibility_default",
   ]

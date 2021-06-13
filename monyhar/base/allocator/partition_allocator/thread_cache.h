@@ -77,7 +77,7 @@ class BASE_EXPORT ThreadCacheRegistry {
   //   static local variables don't work (as they call into the uninitialized
   //   runtime). To sidestep that, we use a regular global variable in the .cc,
   //   which is fine as this object's constructor is constexpr.
-  // - Marked inline so that the chromium style plugin doesn't complain that a
+  // - Marked inline so that the monyhar style plugin doesn't complain that a
   //   "complex constructor" has an inline body. This warning is disabled when
   //   the constructor is explicitly marked "inline". Note that this is a false
   //   positive of the plugin, since constexpr implies inline.

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.toolbar.top;
+package org.monyhar.chrome.browser.toolbar.top;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -14,7 +14,7 @@ import android.util.Property;
 
 import androidx.appcompat.app.ActionBar;
 
-import org.chromium.chrome.browser.toolbar.R;
+import org.monyhar.chrome.browser.toolbar.R;
 
 /**
  * This class controls the how toolbar animates while the action mode bar is being shown. It also

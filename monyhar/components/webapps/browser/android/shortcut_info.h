@@ -62,8 +62,8 @@ struct ShortcutInfo {
   // append-only.
   // A Java counterpart will be generated for this enum.
   // Some enum values are duplicated in
-  // org.chromium.webapk.lib.common.WebApkConstants.
-  // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.webapps
+  // org.monyhar.webapk.lib.common.WebApkConstants.
+  // GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.webapps
   // GENERATED_JAVA_CLASS_NAME_OVERRIDE: ShortcutSource
   enum Source {
     SOURCE_UNKNOWN = 0,

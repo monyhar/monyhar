@@ -27,8 +27,8 @@ namespace chromeos {
 namespace {
 
 const char kDefaultCellularDevicePath[] = "stub_cellular_device";
-const char kTestEuiccBasePath[] = "/org/chromium/Hermes/Euicc/";
-const char kTestProfileBasePath[] = "/org/chromium/Hermes/Profile/";
+const char kTestEuiccBasePath[] = "/org/monyhar/Hermes/Euicc/";
+const char kTestProfileBasePath[] = "/org/monyhar/Hermes/Profile/";
 const char kTestBaseEid[] = "12345678901234567890123456789012";
 
 std::string CreateTestEuiccPath(int euicc_num) {

@@ -37,7 +37,7 @@ _PATCHES = ("000-have-mmap.patch",)
 def main():
   out_dir = os.path.dirname(os.path.realpath(__file__))
 
-  with open(os.path.join(out_dir, "README.chromium")) as readme_file:
+  with open(os.path.join(out_dir, "README.monyhar")) as readme_file:
     _VERSION_PREFIX = "Version: "
     for line in readme_file:
       if not line.startswith(_VERSION_PREFIX):

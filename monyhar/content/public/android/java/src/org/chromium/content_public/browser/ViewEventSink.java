@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.browser;
+package org.monyhar.content_public.browser;
 
 import android.content.res.Configuration;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 
-import org.chromium.content.browser.ViewEventSinkImpl;
+import org.monyhar.content.browser.ViewEventSinkImpl;
 
 /**
  * Interface for updating content with view events.

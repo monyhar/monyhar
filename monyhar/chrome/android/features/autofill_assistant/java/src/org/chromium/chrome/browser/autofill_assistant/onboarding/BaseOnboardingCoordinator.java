@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill_assistant.onboarding;
+package org.monyhar.chrome.browser.autofill_assistant.onboarding;
 
 import android.content.Context;
 import android.text.SpannableString;
@@ -14,20 +14,20 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.LocaleUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.autofill_assistant.R;
-import org.chromium.chrome.browser.autofill_assistant.AutofillAssistantMetrics;
-import org.chromium.chrome.browser.autofill_assistant.AutofillAssistantPreferencesUtil;
-import org.chromium.chrome.browser.autofill_assistant.metrics.OnBoarding;
-import org.chromium.chrome.browser.autofill_assistant.overlay.AssistantOverlayCoordinator;
-import org.chromium.chrome.browser.customtabs.CustomTabActivity;
-import org.chromium.components.embedder_support.util.UrlUtilitiesJni;
-import org.chromium.ui.text.NoUnderlineClickableSpan;
-import org.chromium.ui.text.SpanApplier;
+import org.monyhar.base.Callback;
+import org.monyhar.base.LocaleUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.autofill_assistant.R;
+import org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantMetrics;
+import org.monyhar.chrome.browser.autofill_assistant.AutofillAssistantPreferencesUtil;
+import org.monyhar.chrome.browser.autofill_assistant.metrics.OnBoarding;
+import org.monyhar.chrome.browser.autofill_assistant.overlay.AssistantOverlayCoordinator;
+import org.monyhar.chrome.browser.customtabs.CustomTabActivity;
+import org.monyhar.components.embedder_support.util.UrlUtilitiesJni;
+import org.monyhar.ui.text.NoUnderlineClickableSpan;
+import org.monyhar.ui.text.SpanApplier;
 
 import java.util.Arrays;
 import java.util.HashMap;

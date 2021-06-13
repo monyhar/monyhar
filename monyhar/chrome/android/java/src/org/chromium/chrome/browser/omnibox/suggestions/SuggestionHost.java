@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omnibox.suggestions;
+package org.monyhar.chrome.browser.omnibox.suggestions;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.components.omnibox.AutocompleteMatch;
-import org.chromium.url.GURL;
+import org.monyhar.components.omnibox.AutocompleteMatch;
+import org.monyhar.url.GURL;
 
 /** A mechanism for creating {@link SuggestionViewDelegate}s. */
 public interface SuggestionHost {

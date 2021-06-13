@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test.component_updater;
+package org.monyhar.android_webview.test.component_updater;
 
 import android.content.Intent;
 
@@ -15,17 +15,17 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.services.ComponentsProviderPathUtil;
-import org.chromium.android_webview.services.ComponentsProviderService;
-import org.chromium.android_webview.test.AwActivityTestRule;
-import org.chromium.android_webview.test.AwJUnit4ClassRunner;
-import org.chromium.android_webview.test.util.EmbeddedComponentLoaderFactory;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.FileUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.test.util.CallbackHelper;
-import org.chromium.components.component_updater.EmbeddedComponentLoader;
+import org.monyhar.android_webview.services.ComponentsProviderPathUtil;
+import org.monyhar.android_webview.services.ComponentsProviderService;
+import org.monyhar.android_webview.test.AwActivityTestRule;
+import org.monyhar.android_webview.test.AwJUnit4ClassRunner;
+import org.monyhar.android_webview.test.util.EmbeddedComponentLoaderFactory;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.FileUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.test.util.CallbackHelper;
+import org.monyhar.components.component_updater.EmbeddedComponentLoader;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;

@@ -8,9 +8,9 @@ import("//tools/grit/grit_rule.gni")
 
 android_library("browser_context_java") {
   sources = [
-    "java/src/org/chromium/components/embedder_support/browser_context/BrowserContextHandle.java",
-    "java/src/org/chromium/components/embedder_support/browser_context/PartitionResolver.java",
-    "java/src/org/chromium/components/embedder_support/browser_context/PartitionResolverSupplier.java",
+    "java/src/org/monyhar/components/embedder_support/browser_context/BrowserContextHandle.java",
+    "java/src/org/monyhar/components/embedder_support/browser_context/PartitionResolver.java",
+    "java/src/org/monyhar/components/embedder_support/browser_context/PartitionResolverSupplier.java",
   ]
   deps = [
     ":simple_factory_key_java",
@@ -20,16 +20,16 @@ android_library("browser_context_java") {
 }
 
 generate_jni("browser_context_jni_headers") {
-  sources = [ "java/src/org/chromium/components/embedder_support/browser_context/BrowserContextHandle.java" ]
+  sources = [ "java/src/org/monyhar/components/embedder_support/browser_context/BrowserContextHandle.java" ]
 }
 
 android_library("simple_factory_key_java") {
-  sources = [ "java/src/org/chromium/components/embedder_support/simple_factory_key/SimpleFactoryKeyHandle.java" ]
+  sources = [ "java/src/org/monyhar/components/embedder_support/simple_factory_key/SimpleFactoryKeyHandle.java" ]
   deps = [ "//base:base_java" ]
 }
 
 generate_jni("simple_factory_key_jni_headers") {
-  sources = [ "java/src/org/chromium/components/embedder_support/simple_factory_key/SimpleFactoryKeyHandle.java" ]
+  sources = [ "java/src/org/monyhar/components/embedder_support/simple_factory_key/SimpleFactoryKeyHandle.java" ]
 }
 
 static_library("browser_context") {
@@ -59,19 +59,19 @@ static_library("simple_factory_key") {
 android_library("application_java") {
   deps = [ "//base:base_java" ]
   sources = [
-    "java/src/org/chromium/components/embedder_support/application/ClassLoaderContextWrapperFactory.java",
-    "java/src/org/chromium/components/embedder_support/application/FirebaseConfig.java",
-    "java/src/org/chromium/components/embedder_support/application/FontPreloadingWorkaround.java",
+    "java/src/org/monyhar/components/embedder_support/application/ClassLoaderContextWrapperFactory.java",
+    "java/src/org/monyhar/components/embedder_support/application/FirebaseConfig.java",
+    "java/src/org/monyhar/components/embedder_support/application/FontPreloadingWorkaround.java",
   ]
 }
 
 android_library("util_java") {
   sources = [
-    "java/src/org/chromium/components/embedder_support/util/InputStreamUtil.java",
-    "java/src/org/chromium/components/embedder_support/util/Origin.java",
-    "java/src/org/chromium/components/embedder_support/util/UrlConstants.java",
-    "java/src/org/chromium/components/embedder_support/util/UrlUtilities.java",
-    "java/src/org/chromium/components/embedder_support/util/WebResourceResponseInfo.java",
+    "java/src/org/monyhar/components/embedder_support/util/InputStreamUtil.java",
+    "java/src/org/monyhar/components/embedder_support/util/Origin.java",
+    "java/src/org/monyhar/components/embedder_support/util/UrlConstants.java",
+    "java/src/org/monyhar/components/embedder_support/util/UrlUtilities.java",
+    "java/src/org/monyhar/components/embedder_support/util/WebResourceResponseInfo.java",
   ]
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
   deps = [
@@ -120,9 +120,9 @@ static_library("util") {
 
 generate_jni("util_jni_headers") {
   sources = [
-    "java/src/org/chromium/components/embedder_support/util/InputStreamUtil.java",
-    "java/src/org/chromium/components/embedder_support/util/UrlUtilities.java",
-    "java/src/org/chromium/components/embedder_support/util/WebResourceResponseInfo.java",
+    "java/src/org/monyhar/components/embedder_support/util/InputStreamUtil.java",
+    "java/src/org/monyhar/components/embedder_support/util/UrlUtilities.java",
+    "java/src/org/monyhar/components/embedder_support/util/WebResourceResponseInfo.java",
   ]
 }
 
@@ -151,7 +151,7 @@ android_library("content_view_java") {
     "//ui/android:ui_no_recycler_view_java",
   ]
   sources = [
-    "java/src/org/chromium/components/embedder_support/view/ContentView.java",
+    "java/src/org/monyhar/components/embedder_support/view/ContentView.java",
   ]
 }
 
@@ -162,11 +162,11 @@ android_library("view_java") {
     "//ui/android:ui_no_recycler_view_java",
   ]
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
-  sources = [ "java/src/org/chromium/components/embedder_support/view/ContentViewRenderView.java" ]
+  sources = [ "java/src/org/monyhar/components/embedder_support/view/ContentViewRenderView.java" ]
 }
 
 generate_jni("view_jni_headers") {
-  sources = [ "java/src/org/chromium/components/embedder_support/view/ContentViewRenderView.java" ]
+  sources = [ "java/src/org/monyhar/components/embedder_support/view/ContentViewRenderView.java" ]
 }
 
 java_strings_grd("web_contents_delegate_strings_grd") {
@@ -226,25 +226,25 @@ android_library("web_contents_delegate_java") {
     "//ui/android:ui_no_recycler_view_java",
     "//url:gurl_java",
   ]
-  resources_package = "org.chromium.components.embedder_support.delegate"
+  resources_package = "org.monyhar.components.embedder_support.delegate"
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
   sources = [
-    "java/src/org/chromium/components/embedder_support/delegate/ColorChooserAndroid.java",
-    "java/src/org/chromium/components/embedder_support/delegate/ColorPickerAdvanced.java",
-    "java/src/org/chromium/components/embedder_support/delegate/ColorPickerAdvancedComponent.java",
-    "java/src/org/chromium/components/embedder_support/delegate/ColorPickerDialog.java",
-    "java/src/org/chromium/components/embedder_support/delegate/ColorPickerSimple.java",
-    "java/src/org/chromium/components/embedder_support/delegate/ColorSuggestion.java",
-    "java/src/org/chromium/components/embedder_support/delegate/ColorSuggestionListAdapter.java",
-    "java/src/org/chromium/components/embedder_support/delegate/OnColorChangedListener.java",
-    "java/src/org/chromium/components/embedder_support/delegate/WebContentsDelegateAndroid.java",
+    "java/src/org/monyhar/components/embedder_support/delegate/ColorChooserAndroid.java",
+    "java/src/org/monyhar/components/embedder_support/delegate/ColorPickerAdvanced.java",
+    "java/src/org/monyhar/components/embedder_support/delegate/ColorPickerAdvancedComponent.java",
+    "java/src/org/monyhar/components/embedder_support/delegate/ColorPickerDialog.java",
+    "java/src/org/monyhar/components/embedder_support/delegate/ColorPickerSimple.java",
+    "java/src/org/monyhar/components/embedder_support/delegate/ColorSuggestion.java",
+    "java/src/org/monyhar/components/embedder_support/delegate/ColorSuggestionListAdapter.java",
+    "java/src/org/monyhar/components/embedder_support/delegate/OnColorChangedListener.java",
+    "java/src/org/monyhar/components/embedder_support/delegate/WebContentsDelegateAndroid.java",
   ]
 }
 
 generate_jni("web_contents_delegate_jni_headers") {
   sources = [
-    "java/src/org/chromium/components/embedder_support/delegate/ColorChooserAndroid.java",
-    "java/src/org/chromium/components/embedder_support/delegate/WebContentsDelegateAndroid.java",
+    "java/src/org/monyhar/components/embedder_support/delegate/ColorChooserAndroid.java",
+    "java/src/org/monyhar/components/embedder_support/delegate/WebContentsDelegateAndroid.java",
   ]
 }
 
@@ -263,7 +263,7 @@ static_library("context_menu") {
 }
 
 generate_jni("context_menu_jni_headers") {
-  sources = [ "java/src/org/chromium/components/embedder_support/contextmenu/ContextMenuParams.java" ]
+  sources = [ "java/src/org/monyhar/components/embedder_support/contextmenu/ContextMenuParams.java" ]
 }
 
 android_library("context_menu_java") {
@@ -276,7 +276,7 @@ android_library("context_menu_java") {
     "//url:gurl_java",
   ]
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
-  sources = [ "java/src/org/chromium/components/embedder_support/contextmenu/ContextMenuParams.java" ]
+  sources = [ "java/src/org/monyhar/components/embedder_support/contextmenu/ContextMenuParams.java" ]
 }
 
 android_library("native_java_unittests_java") {
@@ -286,23 +286,23 @@ android_library("native_java_unittests_java") {
     "//base:base_java",
     "//third_party/junit",
   ]
-  sources = [ "native_java_unittests/src/org/chromium/components/embedder_support/util/InputStreamUnittest.java" ]
+  sources = [ "native_java_unittests/src/org/monyhar/components/embedder_support/util/InputStreamUnittest.java" ]
 
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
 }
 
-# See https://bugs.chromium.org/p/chromium/issues/detail?id=908819 for why we
+# See https://bugs.monyhar.org/p/monyhar/issues/detail?id=908819 for why we
 # can't put 'java' in the name here.
 generate_jni("native_j_unittests_jni_headers") {
   testonly = true
-  sources = [ "native_java_unittests/src/org/chromium/components/embedder_support/util/InputStreamUnittest.java" ]
+  sources = [ "native_java_unittests/src/org/monyhar/components/embedder_support/util/InputStreamUnittest.java" ]
 }
 
 android_library("junit_test_support") {
   # Platform checks are broken for Robolectric. See https://crbug.com/1071638.
   bypass_platform_checks = true
   testonly = true
-  sources = [ "junit/src/org/chromium/components/embedder_support/util/ShadowUrlUtilities.java" ]
+  sources = [ "junit/src/org/monyhar/components/embedder_support/util/ShadowUrlUtilities.java" ]
   deps = [
     ":util_java",
     "//third_party/android_deps:robolectric_all_java",
@@ -314,7 +314,7 @@ java_library("components_embedder_support_junit_tests") {
   bypass_platform_checks = true
   testonly = true
   sources = [
-    "junit/src/org/chromium/components/embedder_support/util/OriginTest.java",
+    "junit/src/org/monyhar/components/embedder_support/util/OriginTest.java",
   ]
   deps = [
     ":util_java",
@@ -329,8 +329,8 @@ android_library("embedder_support_javatests") {
   testonly = true
 
   sources = [
-    "javatests/src/org/chromium/components/embedder_support/delegate/ColorPickerDialogRenderTest.java",
-    "javatests/src/org/chromium/components/embedder_support/util/UrlUtilitiesUnitTest.java",
+    "javatests/src/org/monyhar/components/embedder_support/delegate/ColorPickerDialogRenderTest.java",
+    "javatests/src/org/monyhar/components/embedder_support/util/UrlUtilitiesUnitTest.java",
   ]
   deps = [
     ":util_java",

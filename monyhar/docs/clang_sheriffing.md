@@ -7,7 +7,7 @@ compiler](updating_clang.md) (roll clang), it has to be tested so that we can be
 confident that it works in the configurations that Chromium cares about.
 
 We maintain a [waterfall of
-builders](https://ci.chromium.org/p/chromium/g/chromium.clang/console) that
+builders](https://ci.monyhar.org/p/monyhar/g/monyhar.clang/console) that
 continuously build fresh versions of Clang and use them to build and test
 Chromium. "Clang sheriffing" is the process of monitoring that waterfall,
 determining if any compile or test failures are due to an upstream compiler
@@ -15,23 +15,23 @@ change, filing bugs upstream, and often reverting bad changes in LLVM. This
 document describes some of the processes and techniques for doing that.
 
 Some may find the
-[sheriff-o-matic](https://sheriff-o-matic.appspot.com/chromium.clang)
+[sheriff-o-matic](https://sheriff-o-matic.appspot.com/monyhar.clang)
 view of the waterfall easier to work with.
 
 To keep others informed, [file a
-bug](https://bugs.chromium.org/p/chromium/issues/entry).
+bug](https://bugs.monyhar.org/p/monyhar/issues/entry).
 earlier rather than later for build breaks likely caused by changes in
 clang or the rest fo the toolchain. Make sure to set the component field to
 `Tools > LLVM`, which will include the entire Chrome toolchain (Lexan) team.
 
 At the beginning of your sheriff rotation, it may be
 useful to [search for recent bot
-breaks](https://bugs.chromium.org/p/chromium/issues/list?q=component%3ATools%3ELLVM&can=2&sort=-modified).
+breaks](https://bugs.monyhar.org/p/monyhar/issues/list?q=component%3ATools%3ELLVM&can=2&sort=-modified).
 We prefer searching like this to having sheriffs compose status email at the
 end of their week.
 
 In addition to the waterfall, make sure
-[dry run attempts at updating clang](https://chromium-review.googlesource.com/q/owner:thakis%2540chromium.org+%2522roll+clang%2522)
+[dry run attempts at updating clang](https://monyhar-review.googlesource.com/q/owner:thakis%2540monyhar.org+%2522roll+clang%2522)
 are green. As part of the Clang release process we run upstream LLVM tests.
 Ideally these tests are covered by upstream LLVM bots and breakages are
 quickly noticed and fixed by the original author of a breaking commit,
@@ -106,14 +106,14 @@ things:
    print something like
 
        processing heap_page-65b34d... compressing... uploading... done
-           gs://chrome-clang-crash-reports/v1/2019/08/27/chromium.clang-ToTMac-20955-heap_page-65b34d.tgz
+           gs://chrome-clang-crash-reports/v1/2019/08/27/monyhar.clang-ToTMac-20955-heap_page-65b34d.tgz
        removing heap_page-65b34d.sh
        removing heap_page-65b34d.cpp
 
    Use
-   `gsutil.py cp gs://chrome-clang-crash-reports/v1/2019/08/27/chromium.clang-ToTMac-20955-heap_page-65b34d.tgz .`
+   `gsutil.py cp gs://chrome-clang-crash-reports/v1/2019/08/27/monyhar.clang-ToTMac-20955-heap_page-65b34d.tgz .`
    to copy it to your local machine. Untar with
-   `tar xzf chromium.clang-ToTMac-20955-heap_page-65b34d.tgz` and change the
+   `tar xzf monyhar.clang-ToTMac-20955-heap_page-65b34d.tgz` and change the
    included shell script to point to a locally-built clang. Remove the
    `-Xclang -plugin` flags.  If you re-run the shell script, it should
    reproduce the crash.
@@ -155,9 +155,9 @@ a bug to do either fix or silence the new warning.
 
 If this is a completely new warning, disable it by adding `-Wno-NEW-WARNING` to
 [this list of disabled
-warnings](https://cs.chromium.org/chromium/src/build/config/compiler/BUILD.gn?l=1479)
+warnings](https://cs.monyhar.org/monyhar/src/build/config/compiler/BUILD.gn?l=1479)
 if `llvm_force_head_revision` is true. Here is [an
-example](https://chromium-review.googlesource.com/1251622). This will keep the
+example](https://monyhar-review.googlesource.com/1251622). This will keep the
 ToT bots green while you decide what to do.
 
 Sometimes, behavior changes and a pre-existing warning changes to warn on new
@@ -198,7 +198,7 @@ work on linker bugs without having to have a Chromium build environment.
 To use `ld.lld`'s `--reproduce` flag, follow these steps:
 
 1. Locally (build Chromium with a locally-built
-   clang)[https://chromium.googlesource.com/chromium/src.git/+/main/docs/clang.md#Using-a-custom-clang-binary]
+   clang)[https://monyhar.googlesource.com/monyhar/src.git/+/main/docs/clang.md#Using-a-custom-clang-binary]
 
 1. After reproducing the link error, build just the failing target with
    ninja's `-v -d keeprsp` flags added:
@@ -215,7 +215,7 @@ To use `ld.lld`'s `--reproduce` flag, follow these steps:
 
 1. Upload the .tar.gz to Google Drive. If you're signed in with your @google
    address, you won't be able to make a world-shareable link to it, so upload
-   it in a Window where you're signed in with your @chromium account.
+   it in a Window where you're signed in with your @monyhar account.
 
 1. File an LLVM bug linking to the file. Example: http://llvm.org/PR43241
 

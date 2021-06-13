@@ -4,12 +4,12 @@
     "tags": [
       {
         "buildername": "Mac Release (Intel)",
-        "builder_group": "chromium.gpu",
+        "builder_group": "monyhar.gpu",
         "os": "Mac-10.15.5"
       },
       {
         "buildername": "Mac Retina Release (AMD)",
-        "builder_group": "chromium.gpu",
+        "builder_group": "monyhar.gpu",
         "os": "Mac-10.14.6"
       }
     ]
@@ -19,7 +19,7 @@
     "tags": [
       {
         "buildername": "Win10 x64 Release (NVIDIA)",
-        "builder_group": "chromium.gpu",
+        "builder_group": "monyhar.gpu",
         "os": "Windows-10-18363"
       }
     ]
@@ -29,7 +29,7 @@
     "tags": [
       {
         "buildername": "Android FYI Release (Nexus 5X)",
-        "builder_group": "chromium.gpu.fyi",
+        "builder_group": "monyhar.gpu.fyi",
         "os": "Android"
       }
     ]

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.signin.ui;
+package org.monyhar.chrome.browser.signin.ui;
 
 import android.content.res.Resources;
 import android.view.View;
@@ -12,9 +12,9 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 
-import org.chromium.chrome.browser.consent_auditor.ConsentAuditorBridge;
-import org.chromium.chrome.browser.consent_auditor.ConsentAuditorFeature;
-import org.chromium.components.signin.base.CoreAccountId;
+import org.monyhar.chrome.browser.consent_auditor.ConsentAuditorBridge;
+import org.monyhar.chrome.browser.consent_auditor.ConsentAuditorFeature;
+import org.monyhar.components.signin.base.CoreAccountId;
 
 import java.util.ArrayList;
 import java.util.HashMap;

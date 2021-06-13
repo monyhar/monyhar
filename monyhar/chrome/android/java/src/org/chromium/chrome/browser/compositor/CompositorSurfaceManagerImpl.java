@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.compositor;
+package org.monyhar.chrome.browser.compositor;
 
 import android.content.Context;
 import android.graphics.PixelFormat;
@@ -14,7 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 /**
  * Manage multiple SurfaceViews for the compositor, so that transitions between

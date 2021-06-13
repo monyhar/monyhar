@@ -15,7 +15,7 @@ suite('HostPermissionsToggleList', function() {
   const ITEM_ID = 'a'.repeat(32);
   const EXAMPLE_COM = 'https://example.com/*';
   const GOOGLE_COM = 'https://google.com/*';
-  const CHROMIUM_ORG = 'https://chromium.org/*';
+  const CHROMIUM_ORG = 'https://monyhar.org/*';
 
   setup(function() {
     document.body.innerHTML = '';

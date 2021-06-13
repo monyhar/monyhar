@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.module_installer.util;
+package org.monyhar.components.module_installer.util;
 
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ThreadUtils;
-import org.chromium.components.module_installer.engine.EngineFactory;
-import org.chromium.components.module_installer.observer.ActivityObserver;
-import org.chromium.components.module_installer.observer.InstallerObserver;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.components.module_installer.engine.EngineFactory;
+import org.monyhar.components.module_installer.observer.ActivityObserver;
+import org.monyhar.components.module_installer.observer.InstallerObserver;
 
 /**
  * Initializes an activity observer responsible to listen to state changes in activities

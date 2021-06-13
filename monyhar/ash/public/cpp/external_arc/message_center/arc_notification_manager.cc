@@ -42,7 +42,7 @@ namespace ash {
 namespace {
 
 constexpr char kPlayStorePackageName[] = "com.android.vending";
-constexpr char kArcGmsPackageName[] = "com.chromium.arc.gms";
+constexpr char kArcGmsPackageName[] = "com.monyhar.arc.gms";
 constexpr char kManagedProvisioningPackageName[] =
     "com.android.managedprovisioning";
 

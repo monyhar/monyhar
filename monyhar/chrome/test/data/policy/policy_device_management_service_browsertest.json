@@ -1,7 +1,7 @@
 {
   "google/chromeos/user": {
     "mandatory": {
-      "HomepageLocation" : "http://www.chromium.org"
+      "HomepageLocation" : "http://www.monyhar.org"
     },
     "recommended": {
     }

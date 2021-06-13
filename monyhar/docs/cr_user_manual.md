@@ -34,7 +34,7 @@ active tree (`crcd`). I recommend you add the following lines to the end of your
 `~/.bashrc` (with a more correct path):
 
 ```shell
-CR_CLIENT_PATH="/path/to/chromium"
+CR_CLIENT_PATH="/path/to/monyhar"
 source ${CR_CLIENT_PATH}/src/tools/cr/cr-bash-helpers.sh
 ```
 
@@ -202,7 +202,7 @@ than broke, we want this tool to be very low friction for developers.
 ## Known issues
 
 You can see the full list of issues with
-[this](https://code.google.com/p/chromium/issues/list?can=2&q=label%3Atool-cr)
+[this](https://code.google.com/p/monyhar/issues/list?can=2&q=label%3Atool-cr)
 query, but here are the high level issues:
 
 *   **Only supports gtest** : You run tests using the run command, which tries
@@ -215,4 +215,4 @@ query, but here are the high level issues:
     ever completes the command, not any of the arguments
 
 [Report a bug]:
-https://code.google.com/p/chromium/issues/entry?comment=%3CDont%20forget%20to%20attach%20the%20command%20lines%20used%20with%20-v=4%20if%20possible%3E&pri=2&labels=OS-Android,tool-cr,Build-Tools,Type-Bug&owner=iancottrell@chromium.org&status=Assigned
+https://code.google.com/p/monyhar/issues/entry?comment=%3CDont%20forget%20to%20attach%20the%20command%20lines%20used%20with%20-v=4%20if%20possible%3E&pri=2&labels=OS-Android,tool-cr,Build-Tools,Type-Bug&owner=iancottrell@monyhar.org&status=Assigned

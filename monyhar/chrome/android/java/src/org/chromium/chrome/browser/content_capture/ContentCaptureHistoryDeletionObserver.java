@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.content_capture;
+package org.monyhar.chrome.browser.content_capture;
 
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.history.HistoryDeletionBridge;
-import org.chromium.chrome.browser.history.HistoryDeletionInfo;
-import org.chromium.components.content_capture.PlatformContentCaptureController;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.history.HistoryDeletionBridge;
+import org.monyhar.chrome.browser.history.HistoryDeletionInfo;
+import org.monyhar.components.content_capture.PlatformContentCaptureController;
 
 /** History deletion observer that calls ContentCapture methods. */
 public class ContentCaptureHistoryDeletionObserver implements HistoryDeletionBridge.Observer {

@@ -16,7 +16,7 @@
 #include "base/macros.h"
 #include "base/memory/ref_counted.h"
 #include "base/memory/weak_ptr.h"
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "gpu/command_buffer/client/gles2_interface_stub.h"
 #include "gpu/command_buffer/common/capabilities.h"
 #include "gpu/command_buffer/common/sync_token.h"
@@ -154,8 +154,8 @@ class TestGLES2Interface : public gpu::gles2::GLES2InterfaceStub {
   void set_supports_gpu_memory_buffer_format(gfx::BufferFormat format,
                                              bool support);
   // When set, MapBufferCHROMIUM will return NULL after this many times.
-  void set_times_map_buffer_chromium_succeeds(int times) {
-    times_map_buffer_chromium_succeeds_ = times;
+  void set_times_map_buffer_monyhar_succeeds(int times) {
+    times_map_buffer_monyhar_succeeds_ = times;
   }
 
   virtual GLuint NextTextureId();
@@ -208,7 +208,7 @@ class TestGLES2Interface : public gpu::gles2::GLES2InterfaceStub {
   int times_bind_texture_succeeds_ = -1;
   int times_end_query_succeeds_ = -1;
   bool context_lost_ = false;
-  int times_map_buffer_chromium_succeeds_ = -1;
+  int times_map_buffer_monyhar_succeeds_ = -1;
   base::OnceClosure context_lost_callback_;
   std::unordered_set<unsigned> used_textures_;
   unsigned next_program_id_ = 1000;

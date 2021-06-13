@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.crash;
+package org.monyhar.chrome.browser.crash;
 
 import android.annotation.SuppressLint;
 import android.app.ActivityManager;
@@ -13,15 +13,15 @@ import android.util.Log;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.BuildInfo;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.PiiElider;
-import org.chromium.base.StrictModeContext;
-import org.chromium.base.annotations.MainDex;
-import org.chromium.base.annotations.UsedByReflection;
-import org.chromium.chrome.browser.version.ChromeVersionInfo;
-import org.chromium.components.crash.CrashKeys;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.PiiElider;
+import org.monyhar.base.StrictModeContext;
+import org.monyhar.base.annotations.MainDex;
+import org.monyhar.base.annotations.UsedByReflection;
+import org.monyhar.chrome.browser.version.ChromeVersionInfo;
+import org.monyhar.components.crash.CrashKeys;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -60,7 +60,7 @@ public class PureJavaExceptionReporter implements PureJavaExceptionHandler.JavaE
     public static final String RESOURCES_VERSION = "resources_version";
 
     private static final String CRASH_DUMP_DIR = "Crash Reports";
-    private static final String FILE_PREFIX = "chromium-browser-minidump-";
+    private static final String FILE_PREFIX = "monyhar-browser-minidump-";
     private static final String FILE_SUFFIX = ".dmp";
     private static final String RN = "\r\n";
     private static final String FORM_DATA_MESSAGE = "Content-Disposition: form-data; name=\"";

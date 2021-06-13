@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.segmentation_platform;
+package org.monyhar.components.segmentation_platform;
 
 /**
  * Java side of the JNI bridge between SegmentationPlatformServiceImpl in Java

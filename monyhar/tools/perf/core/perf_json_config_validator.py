@@ -119,7 +119,7 @@ def _ValidateBrowserType(builder_name, test_config):
       raise ValueError('%s must use one of the following browsers: %s' %
                        (builder_name, ', '.join(_VALID_WEBVIEW_BROWSERS)))
   elif 'Android' in builder_name or 'android' in builder_name:
-    android_browsers = ('android-chromium', 'android-chrome',
+    android_browsers = ('android-monyhar', 'android-chrome',
                         'android-chrome-bundle', 'android-chrome-64-bundle',
                         'android-trichrome-bundle', 'exact')
     if browser_options.browser not in android_browsers:
@@ -205,13 +205,13 @@ def main(args):
   del args  # unused
   waterfall_file = os.path.join(
       path_util.GetChromiumSrcDir(), 'testing', 'buildbot',
-      'chromium.perf.json')
+      'monyhar.perf.json')
   fyi_waterfall_file = os.path.join(
       path_util.GetChromiumSrcDir(), 'testing', 'buildbot',
-      'chromium.perf.fyi.json')
+      'monyhar.perf.fyi.json')
   calibration_waterfall_file = os.path.join(path_util.GetChromiumSrcDir(),
                                             'testing', 'buildbot',
-                                            'chromium.perf.calibration.json')
+                                            'monyhar.perf.calibration.json')
 
   with open(fyi_waterfall_file) as f:
     ValidatePerfConfigFile(f, False)

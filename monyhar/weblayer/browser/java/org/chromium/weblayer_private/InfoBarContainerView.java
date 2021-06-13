@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -16,14 +16,14 @@ import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.MathUtils;
-import org.chromium.components.browser_ui.banners.SwipableOverlayView;
-import org.chromium.components.infobars.InfoBar;
-import org.chromium.components.infobars.InfoBarAnimationListener;
-import org.chromium.components.infobars.InfoBarContainerLayout;
-import org.chromium.components.infobars.InfoBarUiItem;
-import org.chromium.ui.display.DisplayAndroid;
-import org.chromium.ui.display.DisplayUtil;
+import org.monyhar.base.MathUtils;
+import org.monyhar.components.browser_ui.banners.SwipableOverlayView;
+import org.monyhar.components.infobars.InfoBar;
+import org.monyhar.components.infobars.InfoBarAnimationListener;
+import org.monyhar.components.infobars.InfoBarContainerLayout;
+import org.monyhar.components.infobars.InfoBarUiItem;
+import org.monyhar.ui.display.DisplayAndroid;
+import org.monyhar.ui.display.DisplayUtil;
 
 /**
  * The {@link View} for the {@link InfoBarContainer}.

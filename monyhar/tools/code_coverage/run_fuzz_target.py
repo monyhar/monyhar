@@ -103,7 +103,7 @@ def _ParseCommandArguments():
       required=True,
       help='Timeout value for running a single fuzz target.')
 
-  # Ignored. Used to comply with isolated script contract, see chromium_tests
+  # Ignored. Used to comply with isolated script contract, see monyhar_tests
   # and swarming recipe modules for more details.
   arg_parser.add_argument(
       '--isolated-script-test-output',

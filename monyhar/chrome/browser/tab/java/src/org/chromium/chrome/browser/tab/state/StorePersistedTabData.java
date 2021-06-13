@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab.state;
+package org.monyhar.chrome.browser.tab.state;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
@@ -12,13 +12,13 @@ import com.google.protobuf.InvalidProtocolBufferException;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import org.chromium.base.Callback;
-import org.chromium.base.Log;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.browser.endpoint_fetcher.EndpointFetcher;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.proto.StorePersistedTabData.StorePersistedTabDataProto;
+import org.monyhar.base.Callback;
+import org.monyhar.base.Log;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.browser.endpoint_fetcher.EndpointFetcher;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.tab.proto.StorePersistedTabData.StorePersistedTabDataProto;
 
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;

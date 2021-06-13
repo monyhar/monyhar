@@ -35,7 +35,7 @@ Please follow these steps to update libaom source code:
 
      git commit -a --amend
 
-3. Update 'Branch' in README.chromium if necessary.
+3. Update 'Branch' in README.monyhar if necessary.
 
 4. Upload the change to Gerrit:
 

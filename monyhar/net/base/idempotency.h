@@ -15,7 +15,7 @@ namespace net {
 // multiple times. It is only safe to enable the 0-RTT if it is known that
 // the request is idempotent.
 // A Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.net
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.net
 // GENERATED_JAVA_CLASS_NAME_OVERRIDE: Idempotency
 enum Idempotency {
   DEFAULT_IDEMPOTENCY = 0,

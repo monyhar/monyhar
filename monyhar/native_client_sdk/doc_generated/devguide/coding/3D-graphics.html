@@ -136,7 +136,7 @@ information about their graphics environment. Ask for the contents of the Chrome
 <p>It can be helpful to include information about known dubious drivers in your
 user documentation. This might help identify if a rogue driver is the cause of a
 problem. There are many sources of GPU driver blacklists. Two such lists can be
-found at the <a class="reference external" href="http://src.chromium.org/viewvc/chrome/trunk/deps/gpu/software_rendering_list/software_rendering_list.json">Chromium project</a>
+found at the <a class="reference external" href="http://src.monyhar.org/viewvc/chrome/trunk/deps/gpu/software_rendering_list/software_rendering_list.json">Chromium project</a>
 and <a class="reference external" href="http://www.khronos.org/webgl/wiki/BlacklistsAndWhitelists">Khronos</a>. You
 can use these lists to include information in your documentation that warns
 users about dangerous drivers.</p>
@@ -286,7 +286,7 @@ void MainLoop(void* foo, int bar) {
 </pre>
 <h2 id="managing-the-opengl-es-2-0-pipeline">Managing the OpenGL ES 2.0 pipeline</h2>
 <p>OpenGL ES 2.0 commands do not run in the Chrome or Native Client processes. They
-are passed into a FIFO queue in shared memory which is best understood as a <a class="reference external" href="http://www.chromium.org/developers/design-documents/gpu-command-buffer">GPU
+are passed into a FIFO queue in shared memory which is best understood as a <a class="reference external" href="http://www.monyhar.org/developers/design-documents/gpu-command-buffer">GPU
 command buffer</a>. The
 command buffer is shared by a dedicated GPU process. By using a separate GPU
 process, Chrome implements another layer of runtime security, vetting all OpenGL

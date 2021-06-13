@@ -30,7 +30,7 @@
         '../third_party/googletest/googlemock.gyp:googlemock',
         '../third_party/googletest/googletest.gyp:googletest',
         '../third_party/lss/lss.gyp:lss',
-        '../third_party/mini_chromium/mini_chromium.gyp:base',
+        '../third_party/mini_monyhar/mini_monyhar.gyp:base',
         '../third_party/zlib/zlib.gyp:zlib',
       ],
       'include_dirs': [
@@ -185,7 +185,7 @@
           'target_name': 'http_transport_test_server',
           'type': 'executable',
           'dependencies': [
-            '../third_party/mini_chromium/mini_chromium.gyp:base',
+            '../third_party/mini_monyhar/mini_monyhar.gyp:base',
             '../third_party/zlib/zlib.gyp:zlib',
             '../tools/tools.gyp:crashpad_tool_support',
             '../util/util.gyp:crashpad_util',

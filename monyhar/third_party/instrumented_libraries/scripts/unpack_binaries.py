@@ -17,7 +17,7 @@ def get_archive_name(archive_prefix):
   if release != supported_release:
     print('WARNING: unsupported distro. You need to run a Trusty Docker '
           'image. Please see '
-          'https://www.chromium.org/developers/testing/memorysanitizer/')
+          'https://www.monyhar.org/developers/testing/memorysanitizer/')
 
   return '%s-%s.tgz' % (archive_prefix, supported_release)
 

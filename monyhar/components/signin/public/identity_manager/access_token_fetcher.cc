@@ -135,7 +135,7 @@ void AccessTokenFetcher::VerifyScopeAccess() {
     DCHECK(!GetPrivilegedOAuth2Scopes().count(scope)) << base::StringPrintf(
         "You are attempting to access a privileged scope '%s' without the "
         "required access, please file a bug for access at "
-        "https://bugs.chromium.org/p/chromium/issues/"
+        "https://bugs.monyhar.org/p/monyhar/issues/"
         "list?q=component:Services>SignIn.",
         scope.c_str());
   }

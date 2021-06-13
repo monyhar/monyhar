@@ -227,7 +227,7 @@ void AndroidBatteryMetrics::OnPowerStateChange(bool on_battery_power) {
 void AndroidBatteryMetrics::UpdateMetricsEnabled() {
   DCHECK_CALLED_ON_VALID_SEQUENCE(sequence_checker_);
 
-  // We want to attribute battery drain to chromium while the embedding app is
+  // We want to attribute battery drain to monyhar while the embedding app is
   // visible. Battery drain will only be reflected in remaining battery capacity
   // when the device is not on a charger.
   bool should_be_enabled = app_visible_ && on_battery_power_;

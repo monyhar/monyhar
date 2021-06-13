@@ -79,8 +79,8 @@ IN_PROC_BROWSER_TEST_F(TwoClientWebAppsSyncTest, Basic) {
   WebApplicationInfo info;
   info.title = u"Test name";
   info.description = u"Test description";
-  info.start_url = GURL("http://www.chromium.org/path");
-  info.scope = GURL("http://www.chromium.org/");
+  info.start_url = GURL("http://www.monyhar.org/path");
+  info.scope = GURL("http://www.monyhar.org/");
   AppId app_id = apps_helper::InstallWebApp(GetProfile(0), info);
 
   EXPECT_EQ(WebAppInstallObserver(GetProfile(1)).AwaitNextInstall(), app_id);
@@ -95,7 +95,7 @@ IN_PROC_BROWSER_TEST_F(TwoClientWebAppsSyncTest, Basic) {
 IN_PROC_BROWSER_TEST_F(TwoClientWebAppsSyncTest, Minimal) {
   WebApplicationInfo info;
   info.title = u"Test name";
-  info.start_url = GURL("http://www.chromium.org/");
+  info.start_url = GURL("http://www.monyhar.org/");
   AppId app_id = apps_helper::InstallWebApp(GetProfile(0), info);
 
   EXPECT_EQ(WebAppInstallObserver(GetProfile(1)).AwaitNextInstall(), app_id);
@@ -109,7 +109,7 @@ IN_PROC_BROWSER_TEST_F(TwoClientWebAppsSyncTest, Minimal) {
 IN_PROC_BROWSER_TEST_F(TwoClientWebAppsSyncTest, ThemeColor) {
   WebApplicationInfo info;
   info.title = u"Test name";
-  info.start_url = GURL("http://www.chromium.org/");
+  info.start_url = GURL("http://www.monyhar.org/");
   info.theme_color = SK_ColorBLUE;
   AppId app_id = apps_helper::InstallWebApp(GetProfile(0), info);
   EXPECT_EQ(GetRegistrar(GetProfile(0)).GetAppThemeColor(app_id),
@@ -127,7 +127,7 @@ IN_PROC_BROWSER_TEST_F(TwoClientWebAppsSyncTest, ThemeColor) {
 IN_PROC_BROWSER_TEST_F(TwoClientWebAppsSyncTest, IsLocallyInstalled) {
   WebApplicationInfo info;
   info.title = u"Test name";
-  info.start_url = GURL("http://www.chromium.org/");
+  info.start_url = GURL("http://www.monyhar.org/");
   AppId app_id = apps_helper::InstallWebApp(GetProfile(0), info);
   EXPECT_TRUE(GetRegistrar(GetProfile(0)).IsLocallyInstalled(app_id));
 
@@ -146,8 +146,8 @@ IN_PROC_BROWSER_TEST_F(TwoClientWebAppsSyncTest, AppFieldsChangeDoesNotSync) {
   WebApplicationInfo info_a;
   info_a.title = u"Test name A";
   info_a.description = u"Description A";
-  info_a.start_url = GURL("http://www.chromium.org/path/to/start_url");
-  info_a.scope = GURL("http://www.chromium.org/path/to/");
+  info_a.start_url = GURL("http://www.monyhar.org/path/to/start_url");
+  info_a.scope = GURL("http://www.monyhar.org/path/to/");
   info_a.theme_color = SK_ColorBLUE;
   AppId app_id_a = apps_helper::InstallWebApp(GetProfile(0), info_a);
 
@@ -165,8 +165,8 @@ IN_PROC_BROWSER_TEST_F(TwoClientWebAppsSyncTest, AppFieldsChangeDoesNotSync) {
   WebApplicationInfo info_b;
   info_b.title = u"Test name B";
   info_b.description = u"Description B";
-  info_b.start_url = GURL("http://www.chromium.org/path/to/start_url");
-  info_b.scope = GURL("http://www.chromium.org/path/to/");
+  info_b.start_url = GURL("http://www.monyhar.org/path/to/start_url");
+  info_b.scope = GURL("http://www.monyhar.org/path/to/");
   info_b.theme_color = SK_ColorRED;
   AppId app_id_b = apps_helper::InstallWebApp(GetProfile(0), info_b);
   EXPECT_EQ(app_id_a, app_id_b);
@@ -181,7 +181,7 @@ IN_PROC_BROWSER_TEST_F(TwoClientWebAppsSyncTest, AppFieldsChangeDoesNotSync) {
   // sync has propagated to the other profile.
   WebApplicationInfo infoC;
   infoC.title = u"Different test name";
-  infoC.start_url = GURL("http://www.notchromium.org/");
+  infoC.start_url = GURL("http://www.notmonyhar.org/");
   AppId app_id_c = apps_helper::InstallWebApp(GetProfile(0), infoC);
   EXPECT_NE(app_id_a, app_id_c);
   EXPECT_EQ(WebAppInstallObserver(GetProfile(1)).AwaitNextInstall(), app_id_c);

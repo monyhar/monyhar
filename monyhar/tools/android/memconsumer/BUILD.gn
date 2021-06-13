@@ -16,8 +16,8 @@ android_apk("memconsumer_apk") {
   apk_name = "MemConsumer"
   android_manifest = "java/AndroidManifest.xml"
   sources = [
-    "java/src/org/chromium/memconsumer/MemConsumer.java",
-    "java/src/org/chromium/memconsumer/ResidentService.java",
+    "java/src/org/monyhar/memconsumer/MemConsumer.java",
+    "java/src/org/monyhar/memconsumer/ResidentService.java",
   ]
   shared_libraries = [ ":libmemconsumer" ]
 
@@ -33,6 +33,6 @@ shared_library("libmemconsumer") {
   libs = [ "log" ]
   configs -= [ "//build/config/android:hide_all_but_jni_onload" ]
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 }

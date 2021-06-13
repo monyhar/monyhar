@@ -29,7 +29,7 @@ int ChromeMain(int argc, const char** argv) {
   // the destructor runs on shutdown, which is important to avoid the profiler
   // thread's destruction racing with main thread destruction.
   // This is the same as
-  // https://source.chromium.org/chromium/chromium/src/+/main:chrome/app/chrome_main.cc?q=scoped_sampling_profiler
+  // https://source.monyhar.org/monyhar/monyhar/src/+/main:chrome/app/chrome_main.cc?q=scoped_sampling_profiler
   // The way it's currently implemented requires us to keep it, but from a
   // technical perspective it shouldn't be necessary. There's no need to
   // run the sampling profiler for test ash chrome.

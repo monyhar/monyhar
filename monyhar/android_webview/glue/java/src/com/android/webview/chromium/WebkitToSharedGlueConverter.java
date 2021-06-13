@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package com.android.webview.chromium;
+package com.android.webview.monyhar;
 
 import android.webkit.SafeBrowsingResponse;
 import android.webkit.ServiceWorkerWebSettings;
@@ -12,13 +12,13 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
-import org.chromium.android_webview.AwContentsClient.AwWebResourceError;
-import org.chromium.android_webview.AwContentsClient.AwWebResourceRequest;
-import org.chromium.android_webview.AwServiceWorkerSettings;
-import org.chromium.android_webview.AwSettings;
-import org.chromium.android_webview.safe_browsing.AwSafeBrowsingResponse;
-import org.chromium.base.Callback;
-import org.chromium.content_public.browser.MessagePort;
+import org.monyhar.android_webview.AwContentsClient.AwWebResourceError;
+import org.monyhar.android_webview.AwContentsClient.AwWebResourceRequest;
+import org.monyhar.android_webview.AwServiceWorkerSettings;
+import org.monyhar.android_webview.AwSettings;
+import org.monyhar.android_webview.safe_browsing.AwSafeBrowsingResponse;
+import org.monyhar.base.Callback;
+import org.monyhar.content_public.browser.MessagePort;
 
 /**
  * Class converting webkit objects to glue-objects shared between the webkit-glue and the support

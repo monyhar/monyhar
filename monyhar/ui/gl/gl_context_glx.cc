@@ -11,7 +11,7 @@
 #include "base/numerics/safe_conversions.h"
 #include "base/trace_event/trace_event.h"
 #include "ui/gfx/x/connection.h"
-#include "ui/gl/GL/glextchromium.h"
+#include "ui/gl/GL/glextmonyhar.h"
 #include "ui/gl/gl_bindings.h"
 #include "ui/gl/gl_implementation.h"
 #include "ui/gl/gl_surface_glx.h"

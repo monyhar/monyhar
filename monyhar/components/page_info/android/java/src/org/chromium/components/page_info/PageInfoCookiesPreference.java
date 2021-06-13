@@ -1,7 +1,7 @@
 // Copyright 2020 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.components.page_info;
+package org.monyhar.components.page_info;
 
 import android.app.Dialog;
 import android.os.Bundle;
@@ -10,14 +10,14 @@ import android.text.format.Formatter;
 import androidx.appcompat.app.AlertDialog;
 import androidx.preference.Preference;
 
-import org.chromium.base.Callback;
-import org.chromium.components.browser_ui.settings.ChromeImageViewPreference;
-import org.chromium.components.browser_ui.settings.ChromeSwitchPreference;
-import org.chromium.components.browser_ui.settings.SettingsUtils;
-import org.chromium.components.browser_ui.site_settings.SiteSettingsPreferenceFragment;
-import org.chromium.components.content_settings.CookieControlsStatus;
-import org.chromium.ui.text.NoUnderlineClickableSpan;
-import org.chromium.ui.text.SpanApplier;
+import org.monyhar.base.Callback;
+import org.monyhar.components.browser_ui.settings.ChromeImageViewPreference;
+import org.monyhar.components.browser_ui.settings.ChromeSwitchPreference;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.components.browser_ui.site_settings.SiteSettingsPreferenceFragment;
+import org.monyhar.components.content_settings.CookieControlsStatus;
+import org.monyhar.ui.text.NoUnderlineClickableSpan;
+import org.monyhar.ui.text.SpanApplier;
 
 /**
  * View showing a toggle and a description for third-party cookie blocking for a site.

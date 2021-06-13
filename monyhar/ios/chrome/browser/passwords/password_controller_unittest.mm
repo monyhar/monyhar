@@ -1324,8 +1324,8 @@ TEST_F(PasswordControllerTest, SendingToStoreDynamicallyAddedFormsOnFocus) {
   bool* p_get_logins_called = &get_logins_called;
 
   password_manager::PasswordFormDigest expected_form_digest(
-      password_manager::PasswordForm::Scheme::kHtml, "https://chromium.test/",
-      GURL("https://chromium.test/"));
+      password_manager::PasswordForm::Scheme::kHtml, "https://monyhar.test/",
+      GURL("https://monyhar.test/"));
   // TODO(crbug.com/949519): replace WillRepeatedly with WillOnce when the old
   // parser is gone.
   EXPECT_CALL(*store_, GetLogins(expected_form_digest, _))
@@ -1389,7 +1389,7 @@ TEST_F(PasswordControllerTest, TouchendAsSubmissionIndicator) {
       return form_manager_check != nullptr;
     }));
 
-    EXPECT_EQ("https://chromium.test/",
+    EXPECT_EQ("https://monyhar.test/",
               form_manager_to_save->GetPendingCredentials().signon_realm);
     EXPECT_EQ(u"user1",
               form_manager_to_save->GetPendingCredentials().username_value);
@@ -1427,7 +1427,7 @@ TEST_F(PasswordControllerTest, SavingFromSameOriginIframe) {
 
   LoadHtmlWithRendererInitiatedNavigation(
       SysUTF8ToNSString("<html><body>Success</body></html>"));
-  EXPECT_EQ("https://chromium.test/",
+  EXPECT_EQ("https://monyhar.test/",
             form_manager_to_save->GetPendingCredentials().signon_realm);
   EXPECT_EQ(u"user1",
             form_manager_to_save->GetPendingCredentials().username_value);
@@ -1702,7 +1702,7 @@ TEST_F(PasswordControllerTest, ShowingSavingPromptOnSuccessfulSubmission) {
   ASSERT_TRUE(WaitUntilConditionOrTimeout(kWaitForActionTimeout, ^bool() {
     return form_manager_check != nullptr;
   }));
-  EXPECT_EQ("https://chromium.test/",
+  EXPECT_EQ("https://monyhar.test/",
             form_manager_to_save->GetPendingCredentials().signon_realm);
   EXPECT_EQ(u"user1",
             form_manager_to_save->GetPendingCredentials().username_value);
@@ -1958,7 +1958,7 @@ TEST_F(PasswordControllerTest, DetectSubmissionOnRemovedForm) {
   ASSERT_TRUE(WaitUntilConditionOrTimeout(kWaitForActionTimeout, ^bool() {
     return form_manager_check != nullptr;
   }));
-  EXPECT_EQ("https://chromium.test/",
+  EXPECT_EQ("https://monyhar.test/",
             form_manager_to_save->GetPendingCredentials().signon_realm);
   EXPECT_EQ(u"user1",
             form_manager_to_save->GetPendingCredentials().username_value);
@@ -2042,7 +2042,7 @@ TEST_F(PasswordControllerTest, DetectSubmissionOnIFrameDetach) {
     return form_manager_check != nullptr;
   }));
 
-  EXPECT_EQ("https://chromium.test/",
+  EXPECT_EQ("https://monyhar.test/",
             form_manager_to_save->GetPendingCredentials().signon_realm);
   EXPECT_EQ(u"user1",
             form_manager_to_save->GetPendingCredentials().username_value);
@@ -2367,7 +2367,7 @@ TEST_F(PasswordControllerTest, DetectSubmissionOnFormReset) {
       password_manager::features::kDetectFormSubmissionOnFormClear);
 
   PasswordForm form(
-      CreatePasswordForm("https://chromium.test/", "user", "oldpw"));
+      CreatePasswordForm("https://monyhar.test/", "user", "oldpw"));
   EXPECT_CALL(*store_, GetLogins)
       .WillRepeatedly(WithArg<1>(InvokeConsumer(form)));
 
@@ -2417,7 +2417,7 @@ TEST_F(PasswordControllerTest, DetectSubmissionOnFormReset) {
   ASSERT_TRUE(WaitUntilConditionOrTimeout(kWaitForActionTimeout, ^bool() {
     return form_manager_check != nullptr;
   }));
-  EXPECT_EQ("https://chromium.test/",
+  EXPECT_EQ("https://monyhar.test/",
             form_manager_to_save->GetPendingCredentials().signon_realm);
   EXPECT_EQ(u"user",
             form_manager_to_save->GetPendingCredentials().username_value);
@@ -2438,7 +2438,7 @@ TEST_F(PasswordControllerTest, DetectSubmissionOnFormlessFieldsClearing) {
       password_manager::features::kDetectFormSubmissionOnFormClear);
 
   PasswordForm form(
-      CreatePasswordForm("https://chromium.test/", "user", "oldpw"));
+      CreatePasswordForm("https://monyhar.test/", "user", "oldpw"));
   EXPECT_CALL(*store_, GetLogins)
       .WillRepeatedly(WithArg<1>(InvokeConsumer(form)));
 
@@ -2486,7 +2486,7 @@ TEST_F(PasswordControllerTest, DetectSubmissionOnFormlessFieldsClearing) {
   ASSERT_TRUE(WaitUntilConditionOrTimeout(kWaitForActionTimeout, ^bool() {
     return form_manager_check != nullptr;
   }));
-  EXPECT_EQ("https://chromium.test/",
+  EXPECT_EQ("https://monyhar.test/",
             form_manager_to_save->GetPendingCredentials().signon_realm);
   EXPECT_EQ(u"user",
             form_manager_to_save->GetPendingCredentials().username_value);

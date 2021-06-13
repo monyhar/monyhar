@@ -639,7 +639,7 @@ TEST_F(MediaDevicesTest, SetCaptureHandleConfigCaptureWithPermittedOrigins) {
 
   CaptureHandleConfig input_config;
   input_config.setPermittedOrigins(
-      {"https://chromium.org", "ftp://chromium.org:1234"});
+      {"https://monyhar.org", "ftp://monyhar.org:1234"});
 
   // Expected output.
   auto expected_config = mojom::blink::CaptureHandleConfig::New();
@@ -647,8 +647,8 @@ TEST_F(MediaDevicesTest, SetCaptureHandleConfigCaptureWithPermittedOrigins) {
   expected_config->capture_handle = "";
   expected_config->all_origins_permitted = false;
   expected_config->permitted_origins = {
-      SecurityOrigin::CreateFromString("https://chromium.org"),
-      SecurityOrigin::CreateFromString("ftp://chromium.org:1234")};
+      SecurityOrigin::CreateFromString("https://monyhar.org"),
+      SecurityOrigin::CreateFromString("ftp://monyhar.org:1234")};
   dispatcher_host().ExpectSetCaptureHandleConfig(std::move(expected_config));
 
   media_devices->setCaptureHandleConfig(scope.GetScriptState(), &input_config,
@@ -665,7 +665,7 @@ TEST_F(MediaDevicesTest,
   auto* media_devices = GetMediaDevices(scope.GetWindow());
 
   CaptureHandleConfig input_config;
-  input_config.setPermittedOrigins({"*", "https://chromium.org"});
+  input_config.setPermittedOrigins({"*", "https://monyhar.org"});
 
   // Note: dispatcher_host().ExpectSetCaptureHandleConfig() not called.
 
@@ -685,7 +685,7 @@ TEST_F(MediaDevicesTest,
   auto* media_devices = GetMediaDevices(scope.GetWindow());
 
   CaptureHandleConfig input_config;
-  input_config.setPermittedOrigins({"https://chromium.org:99999"});  // Invalid.
+  input_config.setPermittedOrigins({"https://monyhar.org:99999"});  // Invalid.
 
   // Note: dispatcher_host().ExpectSetCaptureHandleConfig() not called.
 

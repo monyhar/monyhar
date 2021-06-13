@@ -133,8 +133,8 @@ The [android-binary-size] trybot fails when expectations do not match. The one
 exception is that arm64 native libs and assets expectations are checked by
 [android-pie-arm64-rel].
 
-[android-binary-size]: https://ci.chromium.org/p/chromium/builders/luci.chromium.try/android-binary-size
-[android-pie-arm64-rel]: https://ci.chromium.org/p/chromium/builders/luci.chromium.try/android-pie-arm64-rel
+[android-binary-size]: https://ci.monyhar.org/p/monyhar/builders/luci.monyhar.try/android-binary-size
+[android-pie-arm64-rel]: https://ci.monyhar.org/p/monyhar/builders/luci.monyhar.try/android-pie-arm64-rel
 
 ### Troubleshooting
 

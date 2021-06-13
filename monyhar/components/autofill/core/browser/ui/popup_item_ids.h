@@ -9,7 +9,7 @@
 
 namespace autofill {
 
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.autofill
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.autofill
 // GENERATED_JAVA_PREFIX_TO_STRIP: POPUP_
 enum PopupItemId {
   POPUP_ITEM_ID_AUTOCOMPLETE_ENTRY = 0,

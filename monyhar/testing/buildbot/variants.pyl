@@ -72,7 +72,7 @@
     'swarming': {
       'cipd_packages': [
         {
-          'cipd_package': 'chromium/testing/linux-ash-chromium/x86_64/ash.zip',
+          'cipd_package': 'monyhar/testing/linux-ash-monyhar/x86_64/ash.zip',
           'location': 'lacros_version_skew_tests_M92',
           'revision': 'version:92.0.4499.0',
         },
@@ -470,7 +470,7 @@
     'swarming': {
       'cipd_packages': [
         {
-          'cipd_package': 'chromium/testing/weblayer-x86',
+          'cipd_package': 'monyhar/testing/weblayer-x86',
           'location': 'weblayer_instrumentation_test_M92',
           'revision': 'version:92.0.4515.52',
         }
@@ -494,7 +494,7 @@
     'swarming': {
       'cipd_packages': [
         {
-          'cipd_package': 'chromium/testing/weblayer-x86',
+          'cipd_package': 'monyhar/testing/weblayer-x86',
           'location': 'weblayer_instrumentation_test_M91',
           'revision': 'version:91.0.4472.106',
         }
@@ -518,7 +518,7 @@
     'swarming': {
       'cipd_packages': [
         {
-          'cipd_package': 'chromium/testing/weblayer-x86',
+          'cipd_package': 'monyhar/testing/weblayer-x86',
           'location': 'weblayer_instrumentation_test_M90',
           'revision': 'version:90.0.4430.225',
         }
@@ -542,7 +542,7 @@
     'swarming': {
       'cipd_packages': [
         {
-          'cipd_package': 'chromium/testing/weblayer-x86',
+          'cipd_package': 'monyhar/testing/weblayer-x86',
           'location': 'weblayer_instrumentation_test_M92',
           'revision': 'version:92.0.4515.52',
         }
@@ -566,7 +566,7 @@
     'swarming': {
       'cipd_packages': [
         {
-          'cipd_package': 'chromium/testing/weblayer-x86',
+          'cipd_package': 'monyhar/testing/weblayer-x86',
           'location': 'weblayer_instrumentation_test_M91',
           'revision': 'version:91.0.4472.106',
         }
@@ -590,7 +590,7 @@
     'swarming': {
       'cipd_packages': [
         {
-          'cipd_package': 'chromium/testing/weblayer-x86',
+          'cipd_package': 'monyhar/testing/weblayer-x86',
           'location': 'weblayer_instrumentation_test_M90',
           'revision': 'version:90.0.4430.225',
         }
@@ -614,7 +614,7 @@
     'swarming': {
       'cipd_packages': [
         {
-          'cipd_package': 'chromium/testing/weblayer-x86',
+          'cipd_package': 'monyhar/testing/weblayer-x86',
           'location': 'weblayer_instrumentation_test_M92',
           'revision': 'version:92.0.4515.52',
         }
@@ -638,7 +638,7 @@
     'swarming': {
       'cipd_packages': [
         {
-          'cipd_package': 'chromium/testing/weblayer-x86',
+          'cipd_package': 'monyhar/testing/weblayer-x86',
           'location': 'weblayer_instrumentation_test_M91',
           'revision': 'version:91.0.4472.106',
         }
@@ -662,7 +662,7 @@
     'swarming': {
       'cipd_packages': [
         {
-          'cipd_package': 'chromium/testing/weblayer-x86',
+          'cipd_package': 'monyhar/testing/weblayer-x86',
           'location': 'weblayer_instrumentation_test_M90',
           'revision': 'version:90.0.4430.225',
         }

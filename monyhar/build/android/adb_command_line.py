@@ -11,7 +11,7 @@ import argparse
 import logging
 import sys
 
-import devil_chromium
+import devil_monyhar
 
 from devil.android import device_errors
 from devil.android import device_utils
@@ -53,7 +53,7 @@ Otherwise: Writes command-line file.
   logging_common.AddLoggingArguments(parser)
 
   args, remote_args = parser.parse_known_args()
-  devil_chromium.Initialize(adb_path=args.adb_path)
+  devil_monyhar.Initialize(adb_path=args.adb_path)
   logging_common.InitializeLogging(args)
 
   devices = device_utils.DeviceUtils.HealthyDevices(device_arg=args.devices,

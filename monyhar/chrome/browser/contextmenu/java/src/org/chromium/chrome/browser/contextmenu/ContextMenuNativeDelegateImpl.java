@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.contextmenu;
+package org.monyhar.chrome.browser.contextmenu;
 
 import android.graphics.Bitmap;
 import android.net.Uri;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.Callback;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.components.browser_ui.share.ShareImageFileUtils;
-import org.chromium.components.embedder_support.contextmenu.ContextMenuParams;
-import org.chromium.content_public.browser.RenderFrameHost;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.Callback;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.components.browser_ui.share.ShareImageFileUtils;
+import org.monyhar.components.embedder_support.contextmenu.ContextMenuParams;
+import org.monyhar.content_public.browser.RenderFrameHost;
+import org.monyhar.content_public.browser.WebContents;
 
 class ContextMenuNativeDelegateImpl implements ContextMenuNativeDelegate {
     private static final int MAX_SHARE_DIMEN_PX = 2048;

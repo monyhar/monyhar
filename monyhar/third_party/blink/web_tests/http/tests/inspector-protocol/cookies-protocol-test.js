@@ -175,9 +175,9 @@
                         {name: 'cookie3', value: 'secure', domain: 'localhost', path: '/', secure: true },
                         {name: 'cookie4', value: 'lax', domain: 'localhost', path: '/', sameSite: 'Lax' },
                         {name: 'cookie5', value: 'expires', domain: 'localhost', path: '/', expires: Date.now() + 1000 },
-                        {name: 'cookie6', value: '.domain', domain: '.chromium.org', path: '/path' },
-                        {name: 'cookie7', value: 'domain', domain: 'www.chromium.org', path: '/path' },
-                        {name: 'cookie8', value: 'url-based', url: 'https://www.chromium.org/foo' }]);
+                        {name: 'cookie6', value: '.domain', domain: '.monyhar.org', path: '/path' },
+                        {name: 'cookie7', value: 'domain', domain: 'www.monyhar.org', path: '/path' },
+                        {name: 'cookie8', value: 'url-based', url: 'https://www.monyhar.org/foo' }]);
     },
 
     deleteAllCookies,
@@ -189,32 +189,32 @@
     deleteAllCookies,
 
     async function deleteCookieByURL() {
-      await setCookies([{name: 'cookie1', value: '.domain', url: 'http://www.chromium.org/path' },
-                        {name: 'cookie2', value: '.domain', url: 'http://www.chromium.org/path', expires: Date.now() + 1000 }]);
-      await deleteCookie({url: 'http://www.chromium.org/path', name: 'cookie1'});
+      await setCookies([{name: 'cookie1', value: '.domain', url: 'http://www.monyhar.org/path' },
+                        {name: 'cookie2', value: '.domain', url: 'http://www.monyhar.org/path', expires: Date.now() + 1000 }]);
+      await deleteCookie({url: 'http://www.monyhar.org/path', name: 'cookie1'});
     },
 
     deleteAllCookies,
 
     async function deleteCookieByDomain() {
-      await setCookies([{name: 'cookie1', value: '.domain', domain: '.chromium.org', path: '/path' },
-                        {name: 'cookie2', value: '.domain', domain: '.chromium.org', path: '/path', expires: Date.now() + 1000 }]);
-      await deleteCookie({name: 'cookie1', domain: '.chromium.org'});
-      await deleteCookie({name: 'cookie2', domain: '.chromium.org'});
+      await setCookies([{name: 'cookie1', value: '.domain', domain: '.monyhar.org', path: '/path' },
+                        {name: 'cookie2', value: '.domain', domain: '.monyhar.org', path: '/path', expires: Date.now() + 1000 }]);
+      await deleteCookie({name: 'cookie1', domain: '.monyhar.org'});
+      await deleteCookie({name: 'cookie2', domain: '.monyhar.org'});
     },
 
     deleteAllCookies,
 
     async function deleteCookieByDomainAndPath() {
-      await setCookies([{name: 'cookie1', value: '.domain', domain: '.chromium.org', path: '/path' }]);
-      await deleteCookie({name: 'cookie1', domain: '.chromium.org', path: '/foo'});
-      await deleteCookie({name: 'cookie1', domain: '.chromium.org', path: '/path'});
+      await setCookies([{name: 'cookie1', value: '.domain', domain: '.monyhar.org', path: '/path' }]);
+      await deleteCookie({name: 'cookie1', domain: '.monyhar.org', path: '/foo'});
+      await deleteCookie({name: 'cookie1', domain: '.monyhar.org', path: '/path'});
     },
 
     deleteAllCookies,
 
     async function nonUnicodeCookie() {
-      await setCookies([{name: 'cookie1', value: 'привет', domain: '.chromium.org', path: '/path' }]);
+      await setCookies([{name: 'cookie1', value: 'привет', domain: '.monyhar.org', path: '/path' }]);
     },
 
     deleteAllCookies,

@@ -7,7 +7,7 @@ import("//remoting/remoting_options.gni")
 
 template("remoting_android_client_java_tmpl") {
   android_library(target_name) {
-    _sources_prefix = "//remoting/android/java/src/org/chromium/chromoting"
+    _sources_prefix = "//remoting/android/java/src/org/monyhar/chromoting"
     _sources = [
       "ActivityLifecycleListener.java",
       "AnimationJob.java",
@@ -96,7 +96,7 @@ template("remoting_android_client_java_tmpl") {
       "//ui/android:ui_utils_java",
     ]
 
-    resources_package = "org.chromium.chromoting"
+    resources_package = "org.monyhar.chromoting"
 
     annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
 

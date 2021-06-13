@@ -8,7 +8,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-<org.chromium.chrome.browser.compositor.CompositorViewHolder
+<org.monyhar.chrome.browser.compositor.CompositorViewHolder
             android:id="@+id/compositor_view_holder"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />

@@ -1251,7 +1251,7 @@ TEST(HostCacheTest, SerializeAndDeserialize_Hostname) {
 
   base::TimeDelta ttl = base::TimeDelta::FromSeconds(99);
   std::vector<HostPortPair> hostnames(
-      {HostPortPair("example.com", 95), HostPortPair("chromium.org", 122)});
+      {HostPortPair("example.com", 95), HostPortPair("monyhar.org", 122)});
   HostCache::Key key("example.com", DnsQueryType::A, 0, HostResolverSource::DNS,
                      NetworkIsolationKey());
   HostCache::Entry entry(OK, hostnames, HostCache::Entry::SOURCE_DNS, ttl);

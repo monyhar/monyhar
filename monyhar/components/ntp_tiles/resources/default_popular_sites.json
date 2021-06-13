@@ -1,18 +1,18 @@
 [
     {
-        "large_icon_url": "https://www.chromium.org/_/rsrc/1484148948583/apple-touch-icon.png",
+        "large_icon_url": "https://www.monyhar.org/_/rsrc/1484148948583/apple-touch-icon.png",
         "title": "The Chromium Projects `",
-        "url": "https://www.chromium.org/"
+        "url": "https://www.monyhar.org/"
     },
     {
-        "favicon_url": "https://codereview.chromium.org/static/favicon.ico",
+        "favicon_url": "https://codereview.monyhar.org/static/favicon.ico",
         "title": "Chromium Code Reviews",
-        "url": "https://codereview.chromium.org/"
+        "url": "https://codereview.monyhar.org/"
     },
     {
-        "large_icon_url": "https://www.chromium.org/_/rsrc/1484148948583/apple-touch-icon.png",
-        "title": "Git Repositories on chromium",
-        "url": "https://chromium.googlesource.com/"
+        "large_icon_url": "https://www.monyhar.org/_/rsrc/1484148948583/apple-touch-icon.png",
+        "title": "Git Repositories on monyhar",
+        "url": "https://monyhar.googlesource.com/"
     },
     {
         "large_icon_url": "https://developers.google.com/_static/9bce7b6017/images/touch-icon.png",
@@ -27,7 +27,7 @@
     {
         "large_icon_url": "https://assets-cdn.github.com/pinned-octocat.svg",
         "title": "Github Page of the Chromium Project",
-        "url": "https://github.com/chromium/"
+        "url": "https://github.com/monyhar/"
     },
     {
         "large_icon_url": "https://cdn2.iconfinder.com/data/icons/minimalism/512/Chromium.png",

@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@2.1.2.cr0
-package: chromium/third_party/android_deps/libs/org_pcollections_pcollections
+package: monyhar/third_party/android_deps/libs/org_pcollections_pcollections
 description: "PCollections"
 data:
 - file: pcollections-2.1.2.jar

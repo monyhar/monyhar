@@ -28,14 +28,14 @@ labeled as such (*Needs=Feedback* or *Needs=TestConfirmation*).
 ## Process
 
 * Every Monday, Wednesday and Friday, the triage engineer looks over [all
-  *Unconfirmed* and *Untriaged* omnibox bugs (without *Needs=Feedback*)](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=component%3AUI%3EBrowser%3EOmnibox+status%3AUnconfirmed%2CUntriaged+-component%3AUI%3EBrowser%3EOmnibox%3ESecurityIndicators+-Needs%3DFeedback&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
+  *Unconfirmed* and *Untriaged* omnibox bugs (without *Needs=Feedback*)](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=component%3AUI%3EBrowser%3EOmnibox+status%3AUnconfirmed%2CUntriaged+-component%3AUI%3EBrowser%3EOmnibox%3ESecurityIndicators+-Needs%3DFeedback&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
   and triages them.
 * Every week on Tuesday, the triage engineer looks over [all *Unconfirmed* and
   *Untriaged* bugs filed that aren’t categorized as omnibox yet have relevant
-  terms](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=omnibox+-component%3AUI%3EBrowser%3EOmnibox+status%3AUnconfirmed%2CUntriaged+-has%3Aowner+OR+%E2%80%9Comni+box%E2%80%9D+-component%3AUI%3EBrowser%3EOmnibox+status%3AUnconfirmed%2CUntriaged+-has%3Aowner+OR+omnibar+-component%3AUI%3EBrowser%3EOmnibox+status%3AUnconfirmed%2CUntriaged+-has%3Aowner+OR+%E2%80%9Comni+bar%E2%80%9D+-component%3AUI%3EBrowser%3EOmnibox+status%3AUnconfirmed%2CUntriaged+-has%3Aowner+OR+locationbar+-component%3AUI%3EBrowser%3EOmnibox+status%3AUnconfirmed%2CUntriaged+-has%3Aowner+OR+%E2%80%9Clocation+bar%E2%80%9D+-component%3AUI%3EBrowser%3EOmnibox+status%3AUnconfirmed%2CUntriaged+-has%3Aowner+OR+addressbar+-component%3AUI%3EBrowser%3EOmnibox+status%3AUnconfirmed%2CUntriaged+-has%3Aowner+OR+%E2%80%9Caddress+bar%E2%80%9D+-component%3AUI%3EBrowser%3EOmnibox+status%3AUnconfirmed%2CUntriaged+-has%3Aowner&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
+  terms](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=omnibox+-component%3AUI%3EBrowser%3EOmnibox+status%3AUnconfirmed%2CUntriaged+-has%3Aowner+OR+%E2%80%9Comni+box%E2%80%9D+-component%3AUI%3EBrowser%3EOmnibox+status%3AUnconfirmed%2CUntriaged+-has%3Aowner+OR+omnibar+-component%3AUI%3EBrowser%3EOmnibox+status%3AUnconfirmed%2CUntriaged+-has%3Aowner+OR+%E2%80%9Comni+bar%E2%80%9D+-component%3AUI%3EBrowser%3EOmnibox+status%3AUnconfirmed%2CUntriaged+-has%3Aowner+OR+locationbar+-component%3AUI%3EBrowser%3EOmnibox+status%3AUnconfirmed%2CUntriaged+-has%3Aowner+OR+%E2%80%9Clocation+bar%E2%80%9D+-component%3AUI%3EBrowser%3EOmnibox+status%3AUnconfirmed%2CUntriaged+-has%3Aowner+OR+addressbar+-component%3AUI%3EBrowser%3EOmnibox+status%3AUnconfirmed%2CUntriaged+-has%3Aowner+OR+%E2%80%9Caddress+bar%E2%80%9D+-component%3AUI%3EBrowser%3EOmnibox+status%3AUnconfirmed%2CUntriaged+-has%3Aowner&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
   to see if any should be moved to the omnibox component and triaged.  ([This
   scan can be limited to those filed in the last week, i.e., since the last
-  check.](https://bugs.chromium.org/p/chromium/issues/list?colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified&x=m&y=releaseblock&cells=ids&q=omnibox%20-component%3AUI>Browser>Omnibox%20status%3AUnconfirmed%2CUntriaged%20-has%3Aowner%20modified>today-14%20OR%20“omni%20box”%20-component%3AUI>Browser>Omnibox%20status%3AUnconfirmed%2CUntriaged%20-has%3Aowner%20modified>today-14%20OR%20omnibar%20-component%3AUI>Browser>Omnibox%20status%3AUnconfirmed%2CUntriaged%20-has%3Aowner%20modified>today-14%20OR%20“omni%20bar”%20-component%3AUI>Browser>Omnibox%20status%3AUnconfirmed%2CUntriaged%20-has%3Aowner%20modified>today-14%20OR%20locationbar%20-component%3AUI>Browser>Omnibox%20status%3AUnconfirmed%2CUntriaged%20-has%3Aowner%20modified>today-14%20OR%20“location%20bar”%20-component%3AUI>Browser>Omnibox%20status%3AUnconfirmed%2CUntriaged%20-has%3Aowner%20modified>today-14%20OR%20addressbar%20-component%3AUI>Browser>Omnibox%20status%3AUnconfirmed%2CUntriaged%20-has%3Aowner%20modified>today-14%20OR%20“address%20bar”%20-component%3AUI>Browser>Omnibox%20status%3AUnconfirmed%2CUntriaged%20-has%3Aowner%20modified>today-14&can=2))
+  check.](https://bugs.monyhar.org/p/monyhar/issues/list?colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified&x=m&y=releaseblock&cells=ids&q=omnibox%20-component%3AUI>Browser>Omnibox%20status%3AUnconfirmed%2CUntriaged%20-has%3Aowner%20modified>today-14%20OR%20“omni%20box”%20-component%3AUI>Browser>Omnibox%20status%3AUnconfirmed%2CUntriaged%20-has%3Aowner%20modified>today-14%20OR%20omnibar%20-component%3AUI>Browser>Omnibox%20status%3AUnconfirmed%2CUntriaged%20-has%3Aowner%20modified>today-14%20OR%20“omni%20bar”%20-component%3AUI>Browser>Omnibox%20status%3AUnconfirmed%2CUntriaged%20-has%3Aowner%20modified>today-14%20OR%20locationbar%20-component%3AUI>Browser>Omnibox%20status%3AUnconfirmed%2CUntriaged%20-has%3Aowner%20modified>today-14%20OR%20“location%20bar”%20-component%3AUI>Browser>Omnibox%20status%3AUnconfirmed%2CUntriaged%20-has%3Aowner%20modified>today-14%20OR%20addressbar%20-component%3AUI>Browser>Omnibox%20status%3AUnconfirmed%2CUntriaged%20-has%3Aowner%20modified>today-14%20OR%20“address%20bar”%20-component%3AUI>Browser>Omnibox%20status%3AUnconfirmed%2CUntriaged%20-has%3Aowner%20modified>today-14&can=2))
 * Every week on Thursday, the triage engineer looks over all alerts sent to
   [chrome-omnibox-team-alerts@](https://groups.google.com/a/google.com/forum/#!forum/chrome-omnibox-team-alerts)
   and, for each, either files a bug or replies to the message indicating why
@@ -44,7 +44,7 @@ labeled as such (*Needs=Feedback* or *Needs=TestConfirmation*).
   identified and an owner assigned (or closed.) More details available
   [below](#How-to-triage-alerts).
 * Every week on Thursday, the triage engineer should
-  look over [all bugs with *Needs=Feedback*](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=component%3AUI%3EBrowser%3EOmnibox+Needs%3DFeedback+&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
+  look over [all bugs with *Needs=Feedback*](https://bugs.monyhar.org/p/monyhar/issues/list?can=2&q=component%3AUI%3EBrowser%3EOmnibox+Needs%3DFeedback+&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
   and should take action on those that have been sitting for too long.
   * If there's been no feedback over a week since the label was added, ping the
     reporter (or whoever's being asked for feedback) and politely ask them to
@@ -56,7 +56,7 @@ Other team members are welcome to triage a bug if they see it before the the
 triage engineer.  The triager owner will cycle among team members by
 arrangement.
 
-## How to triage chromium bugs
+## How to triage monyhar bugs
 
 ### Purpose
 
@@ -108,7 +108,7 @@ taken:
   root cause as another bug and will certainly be fixed simultaneously.
 * *WontFix*: Anything working by design.  Also applies to old non-reproducible
   bugs or bugs lacking feedback per
-  [standard Chromium policies](http://www.chromium.org/getting-involved/bug-triage#TOC-Cleaning-up-old-bugs).
+  [standard Chromium policies](http://www.monyhar.org/getting-involved/bug-triage#TOC-Cleaning-up-old-bugs).
 * *Unconfirmed* or *Untriaged*:  These labels are generally only appropriate
   if you labeled the bug with *Needs-Feedback* or *Needs-TestConfirmation*,
   otherwise in effect you're kicking the can down the road to the next triage
@@ -117,7 +117,7 @@ taken:
 ### Priority
 
 Follow [standard Chromium
-policies](https://www.chromium.org/for-testers/bug-reporting-guidelines/triage-best-practices).
+policies](https://www.monyhar.org/for-testers/bug-reporting-guidelines/triage-best-practices).
 *Priority-2* represents wanted for this release but can be punted for a release.
 *Priority-3* are bugs not time sensitive.  There is an even-lower-priority
 state; see the *NextAction=01/07/2020* below.
@@ -291,7 +291,7 @@ Example request:
 ## Commonly referenced bugs
 
 * “I want the option to turn off inline autocomplete.” Dup against
-  [crbug/91378](https://bugs.chromium.org/p/chromium/issues/detail?id=91378).
+  [crbug/91378](https://bugs.monyhar.org/p/monyhar/issues/detail?id=91378).
 
   * Try to understand the motivation of the user making the request.  Please
   ask the user for examples, with chrome://omnibox detail (see above), of times
@@ -303,31 +303,31 @@ Example request:
   [this internal page](https://docs.google.com/document/d/140jmrHfC9BiNUbHEmUF4ajJ8Zpbc7qd5fjTBulH3I5g/edit#).
   Follow the guidelines there; generally ask about a message about profile
   corruption.  If so, the bug can be dupped against
-  [crbug/665253](https://bugs.chromium.org/p/chromium/issues/detail?id=665253)
+  [crbug/665253](https://bugs.monyhar.org/p/monyhar/issues/detail?id=665253)
 
   * … and no “Did you mean?” infobar appears.  This is likely prerendering; see
-  [crbug/247848](https://bugs.chromium.org/p/chromium/issues/detail?id=247848)
+  [crbug/247848](https://bugs.monyhar.org/p/monyhar/issues/detail?id=247848)
 
 * “I want to disable suggestions from appearing entirely”.  Try to find out
   why.  Quote freely from
-  [pkasting’s comment on this bug](https://bugs.chromium.org/p/chromium/issues/detail?id=702850#c16).
+  [pkasting’s comment on this bug](https://bugs.monyhar.org/p/monyhar/issues/detail?id=702850#c16).
 
 # References
 
-[General Chromium bug triage guidelines](http://www.chromium.org/getting-involved/bug-triage)
+[General Chromium bug triage guidelines](http://www.monyhar.org/getting-involved/bug-triage)
 
-[Omnibox bugs that we intend/hope to tackle this year](https://bugs.chromium.org/p/chromium/issues/list?can=1&q=component:UI%3EBrowser%3EOmnibox%20-component:UI%3EBrowser%3EOmnibox%3ESecurityIndicators%20status:Available,Assigned,Started%20NextAction%3C2018/1/1%20OR%20component:UI%3EBrowser%3EOmnibox%20-component:UI%3EBrowser%3EOmnibox%3ESecurityIndicators%20status:Available,Assigned,Started%20-has:NextAction%20&sort=pri&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified),
+[Omnibox bugs that we intend/hope to tackle this year](https://bugs.monyhar.org/p/monyhar/issues/list?can=1&q=component:UI%3EBrowser%3EOmnibox%20-component:UI%3EBrowser%3EOmnibox%3ESecurityIndicators%20status:Available,Assigned,Started%20NextAction%3C2018/1/1%20OR%20component:UI%3EBrowser%3EOmnibox%20-component:UI%3EBrowser%3EOmnibox%3ESecurityIndicators%20status:Available,Assigned,Started%20-has:NextAction%20&sort=pri&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified),
 broken down:
 
-* [User-facing](https://bugs.chromium.org/p/chromium/issues/list?can=1&q=component:UI%3EBrowser%3EOmnibox%20-component:UI%3EBrowser%3EOmnibox%3ESecurityIndicators%20status:Available,Assigned,Started%20-Hotlist=CodeHealth%20-Hotlist=Refactoring%20-component:Test%20NextAction%3C2018/1/1%20OR%20component:UI%3EBrowser%3EOmnibox%20-component:UI%3EBrowser%3EOmnibox%3ESecurityIndicators%20status:Available,Assigned,Started%20-Hotlist=CodeHealth%20-Hotlist=Refactoring%20-component:Test%20-has:NextAction&sort=pri&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified)
+* [User-facing](https://bugs.monyhar.org/p/monyhar/issues/list?can=1&q=component:UI%3EBrowser%3EOmnibox%20-component:UI%3EBrowser%3EOmnibox%3ESecurityIndicators%20status:Available,Assigned,Started%20-Hotlist=CodeHealth%20-Hotlist=Refactoring%20-component:Test%20NextAction%3C2018/1/1%20OR%20component:UI%3EBrowser%3EOmnibox%20-component:UI%3EBrowser%3EOmnibox%3ESecurityIndicators%20status:Available,Assigned,Started%20-Hotlist=CodeHealth%20-Hotlist=Refactoring%20-component:Test%20-has:NextAction&sort=pri&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified)
   (everything not tagged as one of the non-user-facing categories below).  Some
   of these can be further categorized: Performance, Polish, Enterprise, Answers
   in Suggest, Tab To Search, Zero Suggest.
 
 * Non user-facing, divided into these categories:
 
-  * [Code health](https://bugs.chromium.org/p/chromium/issues/list?can=1&q=component:UI%3EBrowser%3EOmnibox%20-component:UI%3EBrowser%3EOmnibox%3ESecurityIndicators%20status:Available,Assigned,Started%20NextAction%3C2018/1/1%20OR%20component:UI%3EBrowser%3EOmnibox%20-component:UI%3EBrowser%3EOmnibox%3ESecurityIndicators%20status:Available,Assigned,Started%20-has:NextAction%20&sort=pri&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified)
+  * [Code health](https://bugs.monyhar.org/p/monyhar/issues/list?can=1&q=component:UI%3EBrowser%3EOmnibox%20-component:UI%3EBrowser%3EOmnibox%3ESecurityIndicators%20status:Available,Assigned,Started%20NextAction%3C2018/1/1%20OR%20component:UI%3EBrowser%3EOmnibox%20-component:UI%3EBrowser%3EOmnibox%3ESecurityIndicators%20status:Available,Assigned,Started%20-has:NextAction%20&sort=pri&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified)
 
-  * [Refactoring](https://bugs.chromium.org/p/chromium/issues/list?can=1&q=component:UI%3EBrowser%3EOmnibox%20-component:UI%3EBrowser%3EOmnibox%3ESecurityIndicators%20status:Available,Assigned,Started%20Hotlist=Refactoring%20NextAction%3C2018/1/1%20OR%20component:UI%3EBrowser%3EOmnibox%20-component:UI%3EBrowser%3EOmnibox%3ESecurityIndicators%20status:Available,Assigned,Started%20Hotlist=Refactoring%20-has:NextAction&sort=pri&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified)
+  * [Refactoring](https://bugs.monyhar.org/p/monyhar/issues/list?can=1&q=component:UI%3EBrowser%3EOmnibox%20-component:UI%3EBrowser%3EOmnibox%3ESecurityIndicators%20status:Available,Assigned,Started%20Hotlist=Refactoring%20NextAction%3C2018/1/1%20OR%20component:UI%3EBrowser%3EOmnibox%20-component:UI%3EBrowser%3EOmnibox%3ESecurityIndicators%20status:Available,Assigned,Started%20Hotlist=Refactoring%20-has:NextAction&sort=pri&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified)
 
-  * [Testing](https://bugs.chromium.org/p/chromium/issues/list?can=1&q=component:UI%3EBrowser%3EOmnibox%20-component:UI%3EBrowser%3EOmnibox%3ESecurityIndicators%20status:Available,Assigned,Started%20component:Tests%20NextAction%3C2018/1/1%20OR%20component:UI%3EBrowser%3EOmnibox%20-component:UI%3EBrowser%3EOmnibox%3ESecurityIndicators%20status:Available,Assigned,Started%20component:Tests%20-has:NextAction&sort=pri&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified)
+  * [Testing](https://bugs.monyhar.org/p/monyhar/issues/list?can=1&q=component:UI%3EBrowser%3EOmnibox%20-component:UI%3EBrowser%3EOmnibox%3ESecurityIndicators%20status:Available,Assigned,Started%20component:Tests%20NextAction%3C2018/1/1%20OR%20component:UI%3EBrowser%3EOmnibox%20-component:UI%3EBrowser%3EOmnibox%3ESecurityIndicators%20status:Available,Assigned,Started%20component:Tests%20-has:NextAction&sort=pri&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified)

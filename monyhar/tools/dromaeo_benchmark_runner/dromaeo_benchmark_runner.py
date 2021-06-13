@@ -12,7 +12,7 @@ Prerequisites:
 1. Install Google Data APIs Python Client Library from
    http://code.google.com/p/gdata-python-client.
 2. Checkout Dromaeo benchmark from
-   http://src.chromium.org/svn/trunk/src/chrome/test/data/dromaeo and provide
+   http://src.monyhar.org/svn/trunk/src/chrome/test/data/dromaeo and provide
    local path to it in --dromaeo_home switch.
 3. Create a spreadsheet at http://docs.google.com and specify its name in
    --spreadsheet switch
@@ -27,10 +27,10 @@ Here mij is mean run/s in individual dromaeo test i during benchmark run j,
 eij is error in individual dromaeo test i during benchmark run j.
 
 Example usage:
-dromaeo_benchmark_runner.py -b "E:\chromium\src\chrome\Release\chrome.exe"
+dromaeo_benchmark_runner.py -b "E:\monyhar\src\chrome\Release\chrome.exe"
     -b "C:\Program Files (x86)\Safari\safari.exe"
     -b "C:\Program Files (x86)\Opera 10.50 pre-alpha\opera.exe" -n 1
-    -d "E:\chromium\src\chrome\test\data\dromaeo" -f dom -e example@gmail.com
+    -d "E:\monyhar\src\chrome\test\data\dromaeo" -f dom -e example@gmail.com
 
 """
 

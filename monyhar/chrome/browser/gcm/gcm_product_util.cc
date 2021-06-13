@@ -36,7 +36,7 @@ std::string GetProductCategoryForSubtypes(PrefService* prefs) {
     return product_category_for_subtypes;
 
   std::string product = ToLowerAlphaNum(PRODUCT_SHORTNAME_STRING);
-  std::string ns = product == "chromium" ? "org" : "com";
+  std::string ns = product == "monyhar" ? "org" : "com";
   std::string platform = ToLowerAlphaNum(version_info::GetOSType());
   product_category_for_subtypes = ns + '.' + product + '.' + platform;
 

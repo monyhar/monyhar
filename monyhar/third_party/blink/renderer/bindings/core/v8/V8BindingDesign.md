@@ -261,5 +261,5 @@ iframe.contentDocument.addEventListener("click",
 To make sure that a DOM wrapper is created in a correct context, you need to
 make sure that the current context must be set to the correct context
 whenever you call ToV8(). If you're not sure what context to use,
-ask haraken@chromium.org.
+ask haraken@monyhar.org.
 

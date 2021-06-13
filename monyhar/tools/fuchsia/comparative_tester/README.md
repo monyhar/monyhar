@@ -8,14 +8,14 @@ displaying it in an easily viewed form.
 
 ## Test Support
 The automated test building and launching should currently work for any test
-target within the base `chromium/src` directory. Work is also underway to
+target within the base `monyhar/src` directory. Work is also underway to
 support executing Catapult tests automatically, with the same stats collection
 capabilities.
 
 ## Usage
 The general usage pattern for these scripts is as follows:
 1. Check `target_spec.py`. Make sure that the output directories are where you
-      want them, and that you are running the chromium test targets that you're
+      want them, and that you are running the monyhar test targets that you're
       interested in collecting results from. Also check to make sure that the
       specifications for the Linux and Fuchsia devices are appropriate for your
       specific network and OS configuration.

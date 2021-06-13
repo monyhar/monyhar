@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget;
+package org.monyhar.components.browser_ui.widget;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -12,7 +12,7 @@ import android.view.DisplayCutout;
 import android.view.View;
 import android.view.WindowInsets;
 
-import org.chromium.base.ObserverList;
+import org.monyhar.base.ObserverList;
 
 /**
  * The purpose of this view is to store the system window insets (OSK, status bar) for

@@ -1,4 +1,4 @@
-Definitions of LUCI entities that test the chromium/src codebase.
+Definitions of LUCI entities that test the monyhar/src codebase.
 
 * ci.star - builders that do post-submit testing against the master branch
 * try.star, gpu.trystar, swangle.try.star - builders that do pre-submit testing

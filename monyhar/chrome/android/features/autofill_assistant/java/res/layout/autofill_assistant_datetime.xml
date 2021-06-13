@@ -8,21 +8,21 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <org.chromium.chrome.browser.autofill_assistant.user_data.AssistantVerticalExpander
+    <org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantVerticalExpander
         android:id="@+id/date_expander"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="0.5"
         android:layout_marginStart="@dimen/autofill_assistant_bottombar_horizontal_spacing"
         android:layout_marginEnd="@dimen/autofill_assistant_bottombar_horizontal_spacing">
-    </org.chromium.chrome.browser.autofill_assistant.user_data.AssistantVerticalExpander>
+    </org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantVerticalExpander>
 
-    <org.chromium.chrome.browser.autofill_assistant.user_data.AssistantVerticalExpander
+    <org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantVerticalExpander
         android:id="@+id/time_expander"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="0.5"
         android:layout_marginStart="@dimen/autofill_assistant_bottombar_horizontal_spacing"
         android:layout_marginEnd="@dimen/autofill_assistant_bottombar_horizontal_spacing">
-    </org.chromium.chrome.browser.autofill_assistant.user_data.AssistantVerticalExpander>
+    </org.monyhar.chrome.browser.autofill_assistant.user_data.AssistantVerticalExpander>
 </LinearLayout>

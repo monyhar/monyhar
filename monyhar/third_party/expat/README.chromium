@@ -25,7 +25,7 @@ Roll process:
   cd $CHROMIUM_SRC/third_party/expat
   patch -p3 < 0001-Do-not-claim-getrandom.patch
 
-  Then update the README.chromium and BUILD.gn as needed.
+  Then update the README.monyhar and BUILD.gn as needed.
   This can usually by handled by running roll-expat.sh from $CHROMIUM_SRC.
 
 Patches:

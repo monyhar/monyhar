@@ -100,7 +100,7 @@ void WebSocket::Connect(net::CompletionOnceCallback callback) {
 
   if (url_.host() == "localhost") {
     // Ensure that both localhost addresses are included.
-    // See https://bugs.chromium.org/p/chromedriver/issues/detail?id=3316.
+    // See https://bugs.monyhar.org/p/chromedriver/issues/detail?id=3316.
     // Put IPv4 address at front, followed by IPv6 address, since that is
     // the ordering used by DevTools.
     addresses.endpoints().insert(

@@ -4,7 +4,7 @@
 
 """Top-level presubmit script for memory_inspector.
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts for
+See http://dev.monyhar.org/developers/how-tos/depottools/presubmit-scripts for
 details on the presubmit API built into depot_tools.
 """
 

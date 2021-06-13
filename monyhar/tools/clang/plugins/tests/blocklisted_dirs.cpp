@@ -6,7 +6,7 @@ struct Base {
   virtual void foo();
 };
 
-#line 1 "/src/chromium/src/myheader.h"
+#line 1 "/src/monyhar/src/myheader.h"
 struct Derived : public Base {
   virtual void foo();  // Should warn about missing 'override'.
 };

@@ -26,6 +26,6 @@ When updating src/net/base/registry_controlled_domains/effective_tld_names.dat:
 7. Check in the updated effective_tld_names.dat, effective_tld_names.gperf
 
 Note that gperf is no longer used for effective_tld_names, but when building
-chromium the file effective_tld_names.gperf will be parsed by make_dafsa.py
+monyhar the file effective_tld_names.gperf will be parsed by make_dafsa.py
 to generate the file effective_tld_names-inc.cc, which is included in
 registry_controlled_domain.cc

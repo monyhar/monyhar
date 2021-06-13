@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.util;
+package org.monyhar.ui.util;
 
 import android.content.Context;
 import android.content.res.Configuration;
 import android.graphics.Color;
 
-import org.chromium.base.MathUtils;
+import org.monyhar.base.MathUtils;
 
 /**
  * Helper functions for working with colors.

@@ -5,7 +5,7 @@
 #include "third_party/blink/renderer/platform/graphics/gpu/webgpu_swap_buffer_provider.h"
 
 #include "build/build_config.h"
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "gpu/command_buffer/client/shared_image_interface.h"
 #include "gpu/command_buffer/client/webgpu_interface.h"
 #include "gpu/command_buffer/common/shared_image_usage.h"
@@ -45,7 +45,7 @@ WebGPUSwapBufferProvider::WebGPUSwapBufferProvider(
   layer_->SetBlendBackgroundColor(false);
   layer_->SetNearestNeighbor(false);
   layer_->SetFlipped(false);
-  // TODO(cwallez@chromium.org): These flags aren't taken into account when the
+  // TODO(cwallez@monyhar.org): These flags aren't taken into account when the
   // layer is promoted to an overlay. Make sure we have fallback / emulation
   // paths to keep the rendering correct in that cases.
   layer_->SetContentsOpaque(true);

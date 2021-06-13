@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.services;
+package org.monyhar.android_webview.services;
 
 import android.app.Service;
 import android.content.Context;
@@ -12,11 +12,11 @@ import android.os.IBinder;
 import android.os.ParcelFileDescriptor;
 import android.os.RemoteException;
 
-import org.chromium.android_webview.common.services.IVariationsSeedServer;
-import org.chromium.android_webview.common.services.IVariationsSeedServerCallback;
-import org.chromium.android_webview.common.variations.VariationsServiceMetricsHelper;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
+import org.monyhar.android_webview.common.services.IVariationsSeedServer;
+import org.monyhar.android_webview.common.services.IVariationsSeedServerCallback;
+import org.monyhar.android_webview.common.variations.VariationsServiceMetricsHelper;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
 
 /**
  * VariationsSeedServer is a bound service that shares the Variations seed with all the WebViews

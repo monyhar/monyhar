@@ -20,7 +20,7 @@ class Bus;
 namespace chromeos {
 
 // CryptohomeMiscClient is used to communicate with the
-// org.chromium.CryptohomeMisc interface within org.chromium.UserDataAuth
+// org.monyhar.CryptohomeMisc interface within org.monyhar.UserDataAuth
 // service exposed by cryptohomed. All method should be called from the origin
 // thread (UI thread) which initializes the DBusThreadManager instance.
 class COMPONENT_EXPORT(USERDATAAUTH_CLIENT) CryptohomeMiscClient {

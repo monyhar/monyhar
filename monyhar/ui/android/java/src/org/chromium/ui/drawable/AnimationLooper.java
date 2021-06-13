@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.drawable;
+package org.monyhar.ui.drawable;
 
 import android.graphics.drawable.Animatable;
 import android.graphics.drawable.Drawable;
@@ -15,8 +15,8 @@ import androidx.annotation.VisibleForTesting;
 import androidx.vectordrawable.graphics.drawable.Animatable2Compat;
 import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.compat.ApiHelperForO;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.compat.ApiHelperForO;
 
 /**
  * Encapsulates the logic to loop animated drawables from both Android Framework.

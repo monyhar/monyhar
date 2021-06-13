@@ -99,7 +99,7 @@
 
       Ako postavite to pravilo, taj će direktorij <ph name="PRODUCT_NAME" /> upotrebljavati bez obzira na to je li korisnik naveo oznaku "--disk-cache-dir". Kako bi se spriječio gubitak podataka ili druge neočekivane pogreške, pravilo se ne smije postaviti na korijenski direktorij ili direktorij jedinice koji se koristi u druge svrhe jer njegovim sadržajem upravlja <ph name="PRODUCT_NAME" />.
 
-      Na stranici https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables možete pronaći popis mogućih varijabli.
+      Na stranici https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables možete pronaći popis mogućih varijabli.
 
       Ako se pravilo ne postavi, koristit će se zadani direktorij predmemorije i korisnik će ga moći nadjačati oznakom naredbenog retka "--disk-cache-dir".</translation>
 <translation id="113521240853905588">Konfigurira jezike koje <ph name="PRODUCT_OS_NAME" /> može upotrebljavati kao preferirane.
@@ -483,7 +483,7 @@
 <translation id="1852294065645015766">Dopusti automatsku reprodukciju medija</translation>
 <translation id="1857152770025485173">Ovo pravilo korisnicima onemogućuje preuzimanje web-stranica s URL-ova koji se nalaze na popisu nedopuštenih. Na tom se popisu nalaze uzorci URL-ova koji određuju URL-ove koji neće biti dopušteni.
 
-      Uzorak URL-ova mora se oblikovati prema uputama na https://www.chromium.org/administrators/url-blacklist-filter-format.
+      Uzorak URL-ova mora se oblikovati prema uputama na https://www.monyhar.org/administrators/url-blacklist-filter-format.
 
       Iznimke se mogu definirati u pravilu za popis dopuštenih URL-ova. Ta su pravila ograničena na 1000 unosa, a daljnji će se unosi zanemariti.
 
@@ -520,7 +520,7 @@
 
       Ako se ne konfigurira, izvješća s mjernim podacima o upotrebi i dijagnostičkim podacima na neupravljanim će uređajima biti onemogućena, a na upravljanim omogućena.</translation>
 <translation id="1907431809333268751">Konfigurira popis URL-ova za prijavu u organizacijama (samo sheme HTTP i HTTPS). Na tim će se URL-ovima snimiti otisak prsta zaporke koji će se upotrebljavati za otkrivanje ponovne upotrebe zaporke.
-      Da bi <ph name="PRODUCT_NAME" /> pravilno snimao otiske prsta zaporke, vaše stranice za prijavu moraju slijediti smjernice na https://www.chromium.org/developers/design-documents/create-amazing-password-forms.
+      Da bi <ph name="PRODUCT_NAME" /> pravilno snimao otiske prsta zaporke, vaše stranice za prijavu moraju slijediti smjernice na https://www.monyhar.org/developers/design-documents/create-amazing-password-forms.
 
       Ako je ta postavka omogućena, usluga za zaštitu zaporke na tim će URL-ovima snimati otisak prsta zaporke u svrhu otkrivanja ponovne upotrebe zaporke.
       Ako se postavka onemogući ili ne postavi, usluga za zaštitu zaporke otisak prsta zaporke snimat će samo na stranici https://accounts.google.com.
@@ -818,7 +818,7 @@
 
       To pravilo omogućuje da se certifikati za nazive hostova na navedenim URL-ovima ne otkrivaju putem Transparentnosti certifikata. Tako se omogućuje nastavak upotrebe certifikata koji se inače ne bi smatrali pouzdanima jer nisu pravilno javno otkriveni, ali se otežava otkrivanje zloupotrijebljenih certifikata za te hostove.
 
-      Uzorak URL-ova oblikovan je u skladu s uputama na stranici https://www.chromium.org/administrators/url-blacklist-filter-format. No s obzirom da su certifikati važeći za dani naziv hosta neovisno o shemi, priključku ili putu, u obzir se uzima samo dio URL-a s nazivom hosta. Zamjenski znakovi nisu podržani.
+      Uzorak URL-ova oblikovan je u skladu s uputama na stranici https://www.monyhar.org/administrators/url-blacklist-filter-format. No s obzirom da su certifikati važeći za dani naziv hosta neovisno o shemi, priključku ili putu, u obzir se uzima samo dio URL-a s nazivom hosta. Zamjenski znakovi nisu podržani.
 
       Ako se to pravilo ne postavi, sa svim certifikatima koji se moraju otkriti putem Transparentnosti certifikata postupat će se kao da nisu pouzdani ako se ne otkriju u skladu s pravilom Transparentnost certifikata.</translation>
 <translation id="2488010520405124654">Omogući odzivnu poruku za konfiguraciju mreže tijekom izvanmrežnog rada.
@@ -1496,7 +1496,7 @@
 
       Ako postavite to pravilo, preglednik <ph name="PRODUCT_NAME" /> upotrebljavat će navedeni direktorij bez obzira je li ga je korisnik naveo ili je označio okvir da se mjesto preuzimanja treba svaki put ponovo navesti.
 
-      Popis varijabli koje se mogu upotrijebiti potražite na http://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Popis varijabli koje se mogu upotrijebiti potražite na http://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Ako se to pravilo ne postavi, upotrebljavat će se zadani direktorij za preuzimanja i korisnik će ga moći promijeniti.</translation>
 <translation id="3805659594028420438">Omogući proširenje TLS certifikata vezanih uz domenu (zastarjelo)</translation>
@@ -1585,7 +1585,7 @@
 
       Ako ne postavite to pravilo, <ph name="PRODUCT_NAME" /> upotrebljava svoj uobičajeni zadani direktorij (ovisno o platformi).
 
-      Popis varijabli koje se mogu upotrebljavati potražite na stranici https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.</translation>
+      Popis varijabli koje se mogu upotrebljavati potražite na stranici https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.</translation>
 <translation id="3911737181201537215">To pravilo nema utjecaja na Androidovo bilježenje u zapisnike.</translation>
 <translation id="391531815696899618">Onemogućuje sinkronizaciju Google diska u aplikaciji Datoteke za <ph name="PRODUCT_OS_NAME" /> kada je postavljeno na točno. U tom se slučaju nikakvi podaci ne prenose na Google disk.
 
@@ -1785,7 +1785,7 @@
 
       Ako postavite to pravilo, <ph name="PRODUCT_NAME" /> upotrebljavat će navedeni direktorij za spremanje roaming kopija profila ako je omogućeno pravilo <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" />. Ako se pravilo <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> onemogući ili ne postavi, vrijednost spremljena u tom pravilu neće se upotrebljavati.
 
-      Na stranici https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables možete pronaći popis varijabli koje se mogu koristiti.
+      Na stranici https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables možete pronaći popis varijabli koje se mogu koristiti.
 
       Ako se pravilo ne postavi, koristit će se zadani put roaming profila.</translation>
 <translation id="4239720644496144453">Za Android aplikacije ne upotrebljava se predmemorija. Ako više korisnika instalira istu Android aplikaciju, ta će se aplikacija preuzeti iznova za svakog korisnika.</translation>
@@ -1979,7 +1979,7 @@
 
           Ako se to pravilo ne postavi, zadani će se ispunjivač upotrebljavati za sve web-lokacije određene pravilom "ChromeFrameRendererSettings".
 
-          Primjere uzoraka pogledajte na https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Primjere uzoraka pogledajte na https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="467449052039111439">Otvori popis URL-ova</translation>
 <translation id="4674871290487541952">Dopusti nesigurne algoritme u provjerama integriteta za ažuriranja i instaliranja proširenja</translation>
 <translation id="4680936297850947973">Obustavljeno u verziji M68. Umjesto toga upotrijebite DefaultPopupsSetting.
@@ -2607,7 +2607,7 @@ otvorene kartice. Zato će se neke kartice možda i dalje ponašati u skladu s p
 
       Ako postavite to pravilo, <ph name="PRODUCT_FRAME_NAME" /> upotrebljavat će navedeni direktorij.
 
-      Popis varijabli koje se mogu upotrijebiti potražite na http://www.chromium.org/administrators/policy-list-3/user-data-directory-variables.
+      Popis varijabli koje se mogu upotrijebiti potražite na http://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables.
 
       Ako se ta postavka ne postavi, upotrebljavat će se zadani direktorij profila.</translation>
 <translation id="5826047473100157858">Određuje može li korisnik otvarati stranice u anonimnom načinu u proizvodu <ph name="PRODUCT_NAME" />. Ako je odabrano "Enabled" (omogućeno) ili pravilo nije postavljeno, stranice se mogu otvarati u anonimnom načinu. Ako je odabrano "Disabled" (onemogućeno), stranice se ne mogu otvarati u anonimnom načinu. Ako je odabrano "Forced" (prisilno), stranice se mogu otvarati SAMO u anonimnom načinu.</translation>
@@ -3170,7 +3170,7 @@ onemogućene. Korisnici će još uvijek moći ručno omogućiti SitePerProcess.
 
       Ako postavite to pravilo, taj će direktorij <ph name="PRODUCT_NAME" /> upotrebljavati bez obzira na to je li korisnik naveo oznaku "--user-data-dir". Kako bi se spriječio gubitak podataka ili druge neočekivane pogreške, pravilo se ne smije postaviti na korijenski direktorij ili direktorij jedinice koji se koristi u druge svrhe jer njegovim sadržajem upravlja <ph name="PRODUCT_NAME" />.
 
-      Na stranici https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables možete pronaći popis mogućih varijabli.
+      Na stranici https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables možete pronaći popis mogućih varijabli.
 
       Ako se pravilo ne postavi, koristit će se zadani put profila i korisnik će ga moći nadjačati oznakom naredbenog retka "--user-data-dir".</translation>
 <translation id="7027785306666625591">Konfigurirajte upravljanje napajanjem za <ph name="PRODUCT_OS_NAME" />.
@@ -3942,7 +3942,7 @@ Za sustav Windows preporučuje se konfiguriranje pravila putem GPO-a, iako se pr
 
           Ako se to pravilo ne postavi, zadani će se ispunjivač upotrebljavati za sve web-lokacije određene pravilom "ChromeFrameRendererSettings".
 
-          Primjere uzoraka pogledajte na https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          Primjere uzoraka pogledajte na https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="8489964335640955763">PluginVm</translation>
 <translation id="8493645415242333585">Onemogući pohranjivanje povijesti preglednika</translation>
 <translation id="8499172469244085141">Zadane postavke (korisnici ih mogu prebrisati)</translation>

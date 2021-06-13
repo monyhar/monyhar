@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import android.os.Build;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.content.browser.selection.AdditionalMenuItemProvider;
-import org.chromium.content.browser.selection.AdditionalMenuItemProviderImpl;
-import org.chromium.content.browser.selection.MagnifierAnimator;
-import org.chromium.content.browser.selection.MagnifierWrapperImpl;
-import org.chromium.content.browser.selection.SelectionInsertionHandleObserver;
-import org.chromium.content.browser.selection.SelectionPopupControllerImpl;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.content.browser.selection.AdditionalMenuItemProvider;
+import org.monyhar.content.browser.selection.AdditionalMenuItemProviderImpl;
+import org.monyhar.content.browser.selection.MagnifierAnimator;
+import org.monyhar.content.browser.selection.MagnifierWrapperImpl;
+import org.monyhar.content.browser.selection.SelectionInsertionHandleObserver;
+import org.monyhar.content.browser.selection.SelectionPopupControllerImpl;
 
 /**
  * A class factory for downstream injecting code to content layer.

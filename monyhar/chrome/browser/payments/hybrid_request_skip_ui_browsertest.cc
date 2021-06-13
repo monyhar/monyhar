@@ -131,14 +131,14 @@ IN_PROC_BROWSER_TEST_P(HybridRequestSkipUITest, EmailRequested_V1) {
   RunTest("buy({apiVersion: 1, requestEmail: true})",
           "{\"details\":{\"apiVersion\":1},\"shippingAddress\":null,"
           "\"shippingOption\":null,\"payerName\":null,\"payerEmail\":"
-          "\"paymentrequest@chromium.org\",\"payerPhone\":null}");
+          "\"paymentrequest@monyhar.org\",\"payerPhone\":null}");
 }
 
 IN_PROC_BROWSER_TEST_P(HybridRequestSkipUITest, EmailRequested_V2) {
   RunTest("buy({apiVersion: 2, requestEmail: true})",
           "{\"details\":{\"apiVersion\":2},\"shippingAddress\":null,"
           "\"shippingOption\":null,\"payerName\":null,\"payerEmail\":"
-          "\"paymentrequest@chromium.org\",\"payerPhone\":null}");
+          "\"paymentrequest@monyhar.org\",\"payerPhone\":null}");
 }
 
 IN_PROC_BROWSER_TEST_P(HybridRequestSkipUITest, NameRequested_V1) {
@@ -183,7 +183,7 @@ IN_PROC_BROWSER_TEST_P(HybridRequestSkipUITest, AllRequested_V1) {
       "\"recipient\":\"Browser "
       "Test\",\"phone\":\"\"},\"shippingOption\":\"free-shipping\","
       "\"payerName\":\"Browser "
-      "Test\",\"payerEmail\":\"paymentrequest@chromium.org\",\"payerPhone\":\"+"
+      "Test\",\"payerEmail\":\"paymentrequest@monyhar.org\",\"payerPhone\":\"+"
       "1 234-567-8900\"}");
 }
 
@@ -198,7 +198,7 @@ IN_PROC_BROWSER_TEST_P(HybridRequestSkipUITest, AllRequested_V2) {
       "\"postalCode\":\"12345\",\"sortingCode\":\"\",\"organization\":\"\","
       "\"recipient\":\"Browser "
       "Test\",\"phone\":\"\"},\"shippingOption\":\"free-shipping\","
-      "\"payerName\":\"BrowserTest\",\"payerEmail\":\"paymentrequest@chromium."
+      "\"payerName\":\"BrowserTest\",\"payerEmail\":\"paymentrequest@monyhar."
       "org\",\"payerPhone\":\"+1 234-567-8900\"}");
 }
 

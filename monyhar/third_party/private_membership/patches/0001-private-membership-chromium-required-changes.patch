@@ -1,7 +1,7 @@
 From e1c9aea9410c3ecc240d5c73049e957b9901fedd Mon Sep 17 00:00:00 2001
-From: amraboelkher <amraboelkher@chromium.org>
+From: amraboelkher <amraboelkher@monyhar.org>
 Date: Thu, 18 Mar 2021 23:44:08 +0100
-Subject: [PATCH] 0001-private-membership-chromium-required-changes.patch
+Subject: [PATCH] 0001-private-membership-monyhar-required-changes.patch
 
 ---
  src/internal/crypto_utils.h                   |  1 +

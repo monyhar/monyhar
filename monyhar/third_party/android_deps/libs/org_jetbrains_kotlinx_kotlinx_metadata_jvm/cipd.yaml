@@ -4,7 +4,7 @@
 
 # To create CIPD package run the following command.
 # cipd create --pkg-def cipd.yaml -tag version:2@0.1.0.cr0
-package: chromium/third_party/android_deps/libs/org_jetbrains_kotlinx_kotlinx_metadata_jvm
+package: monyhar/third_party/android_deps/libs/org_jetbrains_kotlinx_kotlinx_metadata_jvm
 description: "org.jetbrains.kotlinx:kotlinx-metadata-jvm"
 data:
 - file: kotlinx-metadata-jvm-0.1.0.jar

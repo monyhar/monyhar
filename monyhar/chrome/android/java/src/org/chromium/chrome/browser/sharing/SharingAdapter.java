@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sharing;
+package org.monyhar.chrome.browser.sharing;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -15,10 +15,10 @@ import android.widget.TextView;
 
 import androidx.appcompat.content.res.AppCompatResources;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.sharing.SharingServiceProxy.DeviceInfo;
-import org.chromium.components.sync.protocol.SharingSpecificFields;
-import org.chromium.ui.widget.ChromeImageView;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.sharing.SharingServiceProxy.DeviceInfo;
+import org.monyhar.components.sync.protocol.SharingSpecificFields;
+import org.monyhar.ui.widget.ChromeImageView;
 
 import java.util.ArrayList;
 import java.util.Calendar;

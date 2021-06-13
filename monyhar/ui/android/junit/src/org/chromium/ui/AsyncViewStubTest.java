@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui;
+package org.monyhar.ui;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -18,9 +18,9 @@ import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowLooper;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.ui.shadows.ShadowAsyncLayoutInflater;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.ui.shadows.ShadowAsyncLayoutInflater;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -32,10 +32,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class AsyncViewStubTest {
     private AsyncViewStub mAsyncViewStub;
     private final AtomicInteger mEventCount = new AtomicInteger();
-    private static final int MAIN_LAYOUT_RESOURCE_ID = org.chromium.test.ui.R.layout.main_view;
+    private static final int MAIN_LAYOUT_RESOURCE_ID = org.monyhar.test.ui.R.layout.main_view;
     private static final int INFLATE_LAYOUT_RESOURCE_ID =
-            org.chromium.test.ui.R.layout.inflated_view;
-    private static final int STUB_ID = org.chromium.test.ui.R.id.view_stub;
+            org.monyhar.test.ui.R.layout.inflated_view;
+    private static final int STUB_ID = org.monyhar.test.ui.R.id.view_stub;
 
     @Before
     public void setUp() {

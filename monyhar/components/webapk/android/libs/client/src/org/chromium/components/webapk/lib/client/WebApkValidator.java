@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.webapk.lib.client;
+package org.monyhar.components.webapk.lib.client;
 
-import static org.chromium.components.webapk.lib.common.WebApkConstants.WEBAPK_PACKAGE_PREFIX;
-import static org.chromium.components.webapk.lib.common.WebApkMetaDataKeys.SCOPE;
-import static org.chromium.components.webapk.lib.common.WebApkMetaDataKeys.START_URL;
-import static org.chromium.components.webapk.lib.common.WebApkMetaDataKeys.WEB_MANIFEST_URL;
+import static org.monyhar.components.webapk.lib.common.WebApkConstants.WEBAPK_PACKAGE_PREFIX;
+import static org.monyhar.components.webapk.lib.common.WebApkMetaDataKeys.SCOPE;
+import static org.monyhar.components.webapk.lib.common.WebApkMetaDataKeys.START_URL;
+import static org.monyhar.components.webapk.lib.common.WebApkMetaDataKeys.WEB_MANIFEST_URL;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -22,7 +22,7 @@ import android.text.TextUtils;
 import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;

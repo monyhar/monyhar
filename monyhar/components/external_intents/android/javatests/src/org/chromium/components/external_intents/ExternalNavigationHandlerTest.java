@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.external_intents;
+package org.monyhar.components.external_intents;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -40,24 +40,24 @@ import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 import org.mockito.quality.Strictness;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Function;
-import org.chromium.base.IntentUtils;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Batch;
-import org.chromium.components.external_intents.ExternalNavigationDelegate.IntentToAutofillAllowingAppResult;
-import org.chromium.components.external_intents.ExternalNavigationHandler.OverrideUrlLoadingAsyncActionType;
-import org.chromium.components.external_intents.ExternalNavigationHandler.OverrideUrlLoadingResult;
-import org.chromium.components.external_intents.ExternalNavigationHandler.OverrideUrlLoadingResultType;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.test.NativeLibraryTestUtils;
-import org.chromium.ui.base.PageTransition;
-import org.chromium.ui.base.WindowAndroid;
-import org.chromium.ui.test.util.DummyUiActivity;
-import org.chromium.url.GURL;
-import org.chromium.url.Origin;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Function;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.components.external_intents.ExternalNavigationDelegate.IntentToAutofillAllowingAppResult;
+import org.monyhar.components.external_intents.ExternalNavigationHandler.OverrideUrlLoadingAsyncActionType;
+import org.monyhar.components.external_intents.ExternalNavigationHandler.OverrideUrlLoadingResult;
+import org.monyhar.components.external_intents.ExternalNavigationHandler.OverrideUrlLoadingResultType;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.test.NativeLibraryTestUtils;
+import org.monyhar.ui.base.PageTransition;
+import org.monyhar.ui.base.WindowAndroid;
+import org.monyhar.ui.test.util.DummyUiActivity;
+import org.monyhar.url.GURL;
+import org.monyhar.url.Origin;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -123,13 +123,13 @@ public class ExternalNavigationHandlerTest {
             + ExternalNavigationHandler.EXTRA_MARKET_REFERRER + "=" + ENCODED_MARKET_REFERRER
             + ";end";
     private static final String INTENT_URL_FOR_CHROME_CUSTOM_TABS = "intent://example.com#Intent;"
-            + "package=org.chromium.chrome;"
+            + "package=org.monyhar.chrome;"
             + "action=android.intent.action.VIEW;"
             + "scheme=http;"
             + "S.android.support.customtabs.extra.SESSION=;"
             + "end;";
     private static final String INTENT_URL_FOR_CHROME = "intent://example.com#Intent;"
-            + "package=org.chromium.chrome;"
+            + "package=org.monyhar.chrome;"
             + "action=android.intent.action.VIEW;"
             + "scheme=http;"
             + "S." + ExternalNavigationHandler.EXTRA_BROWSER_FALLBACK_URL + "="
@@ -144,7 +144,7 @@ public class ExternalNavigationHandlerTest {
     private static final String TEXT_APP_2_PACKAGE_NAME = "text_app_2";
 
     private static final String WEBAPK_SCOPE = "https://www.template.com";
-    private static final String WEBAPK_PACKAGE_PREFIX = "org.chromium.webapk";
+    private static final String WEBAPK_PACKAGE_PREFIX = "org.monyhar.webapk";
     private static final String WEBAPK_PACKAGE_NAME = WEBAPK_PACKAGE_PREFIX + ".template";
     private static final String INVALID_WEBAPK_PACKAGE_NAME = WEBAPK_PACKAGE_PREFIX + ".invalid";
 
@@ -154,19 +154,19 @@ public class ExternalNavigationHandlerTest {
 
     private static final String AUTOFILL_ASSISTANT_INTENT_URL_WITH_FALLBACK =
             "intent://www.example.com#Intent;scheme=https;"
-            + "B.org.chromium.chrome.browser.autofill_assistant.ENABLED=true;"
+            + "B.org.monyhar.chrome.browser.autofill_assistant.ENABLED=true;"
             + "S." + ExternalNavigationHandler.EXTRA_BROWSER_FALLBACK_URL + "="
             + Uri.encode("https://www.example.com") + ";end";
 
     private static final String AUTOFILL_ASSISTANT_INTENT_URL_WITHOUT_FALLBACK =
             "intent://www.example.com#Intent;scheme=https;"
-            + "B.org.chromium.chrome.browser.autofill_assistant.ENABLED=true;"
+            + "B.org.monyhar.chrome.browser.autofill_assistant.ENABLED=true;"
             + "end;";
 
     private static final String AUTOFILL_ASSISTANT_INTENT_URL_WITH_SOMEAPP =
             "intent://someapp.com#Intent;scheme=https;"
-            + "B.org.chromium.chrome.browser.autofill_assistant.ENABLED=true;"
-            + "S.org.chromium.chrome.browser.autofill_assistant.ALLOW_APP=true;"
+            + "B.org.monyhar.chrome.browser.autofill_assistant.ENABLED=true;"
+            + "S.org.monyhar.chrome.browser.autofill_assistant.ALLOW_APP=true;"
             + "S." + ExternalNavigationHandler.EXTRA_BROWSER_FALLBACK_URL + "="
             + Uri.encode("https://someapp.com") + ";end";
 

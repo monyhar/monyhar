@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.safe_browsing.settings;
+package org.monyhar.chrome.browser.safe_browsing.settings;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,10 +12,10 @@ import android.view.MenuItem;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.vectordrawable.graphics.drawable.VectorDrawableCompat;
 
-import org.chromium.chrome.browser.feedback.FragmentHelpAndFeedbackLauncher;
-import org.chromium.chrome.browser.feedback.HelpAndFeedbackLauncher;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.components.browser_ui.settings.SettingsUtils;
+import org.monyhar.chrome.browser.feedback.FragmentHelpAndFeedbackLauncher;
+import org.monyhar.chrome.browser.feedback.HelpAndFeedbackLauncher;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.components.browser_ui.settings.SettingsUtils;
 
 /**
  * The base fragment class for Safe Browsing settings fragments.

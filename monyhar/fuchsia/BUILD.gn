@@ -7,7 +7,7 @@ assert(is_fuchsia)
 import("//third_party/fuchsia-sdk/sdk/build/fidl_library.gni")
 
 fidl_library("cast_fidl") {
-  library_name = "chromium.cast"
+  library_name = "monyhar.cast"
 
   sources = [
     "fidl/cast/api_bindings.fidl",

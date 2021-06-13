@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omaha;
+package org.monyhar.chrome.browser.omaha;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -21,27 +21,27 @@ import androidx.annotation.VisibleForTesting;
 
 import com.google.android.gms.common.GooglePlayServicesUtil;
 
-import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationStatus;
-import org.chromium.base.ApplicationStatus.ActivityStateListener;
-import org.chromium.base.BuildInfo;
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.ObserverList;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.base.task.AsyncTask;
-import org.chromium.base.task.AsyncTask.Status;
-import org.chromium.base.task.PostTask;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.omaha.inline.InlineUpdateController;
-import org.chromium.chrome.browser.omaha.inline.InlineUpdateControllerFactory;
-import org.chromium.chrome.browser.omaha.metrics.UpdateSuccessMetrics;
-import org.chromium.chrome.browser.omaha.metrics.UpdateSuccessMetrics.UpdateType;
-import org.chromium.chrome.browser.preferences.ChromePreferenceKeys;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.components.browser_ui.util.ConversionUtils;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.base.ActivityState;
+import org.monyhar.base.ApplicationStatus;
+import org.monyhar.base.ApplicationStatus.ActivityStateListener;
+import org.monyhar.base.BuildInfo;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.base.task.AsyncTask;
+import org.monyhar.base.task.AsyncTask.Status;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.omaha.inline.InlineUpdateController;
+import org.monyhar.chrome.browser.omaha.inline.InlineUpdateControllerFactory;
+import org.monyhar.chrome.browser.omaha.metrics.UpdateSuccessMetrics;
+import org.monyhar.chrome.browser.omaha.metrics.UpdateSuccessMetrics.UpdateType;
+import org.monyhar.chrome.browser.preferences.ChromePreferenceKeys;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.components.browser_ui.util.ConversionUtils;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
 
 import java.io.File;
 import java.lang.annotation.Retention;

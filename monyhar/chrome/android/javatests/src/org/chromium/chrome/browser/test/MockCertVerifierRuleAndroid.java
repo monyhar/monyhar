@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.test;
+package org.monyhar.chrome.browser.test;
 
 import org.junit.rules.ExternalResource;
 
-import org.chromium.content_public.browser.test.NativeLibraryTestUtils;
+import org.monyhar.content_public.browser.test.NativeLibraryTestUtils;
 
 /** JUnit test rule which enables tests to force certificate verification results. */
 public class MockCertVerifierRuleAndroid extends ExternalResource {

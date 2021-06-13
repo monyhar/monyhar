@@ -10,7 +10,7 @@ import("//build/toolchain/nacl_toolchain.gni")
 # rebuilt when a toolchain is updated.
 # Idea we could use the toolchain deps feature, but currently that feature is
 # bugged and does not trigger a rebuild.
-# https://code.google.com/p/chromium/issues/detail?id=431880
+# https://code.google.com/p/monyhar/issues/detail?id=431880
 # Calls to get the toolchain revision are relatively slow, so do them all in a
 # single batch to amortize python startup, etc.
 revisions = exec_script("//native_client/build/get_toolchain_revision.py",

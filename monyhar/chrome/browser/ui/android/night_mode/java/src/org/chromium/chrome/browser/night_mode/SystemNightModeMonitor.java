@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.night_mode;
+package org.monyhar.chrome.browser.night_mode;
 
 import android.content.res.Configuration;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.ObserverList;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.ObserverList;
 
 /**
  * Observes and keeps a record of the system night mode state (i.e. the night mode from

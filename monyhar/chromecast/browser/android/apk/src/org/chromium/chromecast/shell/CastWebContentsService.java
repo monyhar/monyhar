@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.shell;
+package org.monyhar.chromecast.shell;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -16,14 +16,14 @@ import android.os.IBinder;
 
 import androidx.core.app.NotificationCompat;
 
-import org.chromium.base.Function;
-import org.chromium.base.Log;
-import org.chromium.base.annotations.RemovableInRelease;
-import org.chromium.chromecast.base.Controller;
-import org.chromium.chromecast.base.Observable;
-import org.chromium.chromecast.base.Observers;
-import org.chromium.content.browser.MediaSessionImpl;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.base.Function;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.RemovableInRelease;
+import org.monyhar.chromecast.base.Controller;
+import org.monyhar.chromecast.base.Observable;
+import org.monyhar.chromecast.base.Observers;
+import org.monyhar.content.browser.MediaSessionImpl;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * Service for "displaying" a WebContents in CastShell.
@@ -36,7 +36,7 @@ public class CastWebContentsService extends Service {
     private static final boolean DEBUG = true;
     private static final int CAST_NOTIFICATION_ID = 100;
     private static final String NOTIFICATION_CHANNEL_ID =
-            "org.chromium.chromecast.shell.CastWebContentsService.channel";
+            "org.monyhar.chromecast.shell.CastWebContentsService.channel";
 
     private final Controller<Intent> mIntentState = new Controller<>();
     private final Observable<WebContents> mWebContentsState =

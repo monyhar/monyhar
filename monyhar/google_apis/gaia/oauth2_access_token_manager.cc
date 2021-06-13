@@ -303,7 +303,7 @@ void OAuth2AccessTokenManager::Fetcher::OnGetTokenSuccess(
   // Delegates may override this method to skip caching in some cases, but
   // we still inform all waiting Consumers of a successful token fetch below.
   // This is intentional -- some consumers may need the token for cleanup
-  // tasks. https://chromiumcodereview.appspot.com/11312124/
+  // tasks. https://monyharcodereview.appspot.com/11312124/
   oauth2_access_token_manager_->RegisterTokenResponse(client_id_, account_id_,
                                                       scopes_, token_response_);
   InformWaitingRequestsAndDelete();

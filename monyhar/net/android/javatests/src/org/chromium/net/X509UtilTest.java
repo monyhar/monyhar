@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net;
+package org.monyhar.net;
 
-import static org.chromium.net.test.util.CertTestUtil.CERTS_DIRECTORY;
+import static org.monyhar.net.test.util.CertTestUtil.CERTS_DIRECTORY;
 
 import androidx.test.filters.MediumTest;
 
@@ -13,9 +13,9 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.BaseJUnit4ClassRunner;
-import org.chromium.base.test.util.Batch;
-import org.chromium.net.test.util.CertTestUtil;
+import org.monyhar.base.test.BaseJUnit4ClassRunner;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.net.test.util.CertTestUtil;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -23,7 +23,7 @@ import java.security.GeneralSecurityException;
 import java.util.Arrays;
 
 /**
- * Tests for org.chromium.net.X509Util.
+ * Tests for org.monyhar.net.X509Util.
  */
 @RunWith(BaseJUnit4ClassRunner.class)
 @Batch(Batch.UNIT_TESTS)

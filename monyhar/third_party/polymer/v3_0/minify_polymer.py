@@ -17,7 +17,7 @@ import node_modules
 
 
 def main():
-  polymer_dir = os.path.join(_HERE_PATH, 'components-chromium', 'polymer')
+  polymer_dir = os.path.join(_HERE_PATH, 'components-monyhar', 'polymer')
 
   # Copy the top-level Polymer file that holds all dependencies. This file is
   # not distributed via NPM, it only exists within third_party/polymer
@@ -26,7 +26,7 @@ def main():
       os.path.join(polymer_dir, '..', '..', 'polymer.js'), polymer_dir);
 
   # Move the entire checkout to a temp location.
-  tmp_dir = os.path.join(_HERE_PATH, 'components-chromium', 'polymer_temp')
+  tmp_dir = os.path.join(_HERE_PATH, 'components-monyhar', 'polymer_temp')
   if os.path.exists(tmp_dir):
     shutil.rmtree(tmp_dir)
   shutil.move(polymer_dir, tmp_dir)
@@ -83,8 +83,8 @@ def main():
       shutil.copy(extern, externs_dir)
 
   finally:
-    # Delete component-chromium/shadycss since it ends up in the bundle.
-    shutil.rmtree(os.path.join(_HERE_PATH, 'components-chromium', 'shadycss'))
+    # Delete component-monyhar/shadycss since it ends up in the bundle.
+    shutil.rmtree(os.path.join(_HERE_PATH, 'components-monyhar', 'shadycss'))
     shutil.rmtree(tmp_dir)
 
 

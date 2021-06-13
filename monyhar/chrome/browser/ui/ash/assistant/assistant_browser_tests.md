@@ -87,7 +87,7 @@ fixture.
 The second part is achieved by running your tests through the wrapper script
 `chromeos/assistant/internal/test_support/run_with_access_token.py`.
 
-Start by opening a terminal in your `chromium/src` directory and then:
+Start by opening a terminal in your `monyhar/src` directory and then:
 
     # First compile the browser_tests target
     autoninja -C out/Default browser_tests

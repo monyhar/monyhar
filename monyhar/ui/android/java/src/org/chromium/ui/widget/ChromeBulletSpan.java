@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui.widget;
+package org.monyhar.ui.widget;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -10,7 +10,7 @@ import android.graphics.Paint;
 import android.text.Layout;
 import android.text.style.BulletSpan;
 
-import org.chromium.ui.R;
+import org.monyhar.ui.R;
 
 /**
  * A wrapper around Android's BulletSpan that provides default styling and adjusts the bullet

@@ -41,8 +41,8 @@ source_set("distributed_point_functions") {
   ]
 
   # Do not apply Chromium code rules to this third-party code.
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 
   public_configs = [ ":distributed_point_functions_includes" ]
 }

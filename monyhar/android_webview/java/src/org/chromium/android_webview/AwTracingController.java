@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview;
+package org.monyhar.android_webview;
 
 import android.text.TextUtils;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.TraceRecordMode;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
+import org.monyhar.base.TraceRecordMode;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -104,7 +104,7 @@ public class AwTracingController {
                 mNativeAwTracingController, AwTracingController.this);
     }
 
-    // Combines configuration bits into a category string usable by chromium.
+    // Combines configuration bits into a category string usable by monyhar.
     // Assumes that customIncludedCategories have been validated using isValid() method.
     private String constructCategoryFilterString(
             Collection<Integer> predefinedCategories, Collection<String> customIncludedCategories) {

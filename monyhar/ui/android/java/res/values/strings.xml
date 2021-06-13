@@ -10,7 +10,7 @@
     Android ui strings now live in
     ui/android/java/strings/android_ui_strings.grd
 
-    See http://www.chromium.org/developers/design-documents/ui-localization
+    See http://www.monyhar.org/developers/design-documents/ui-localization
 -->
 
 <resources/>

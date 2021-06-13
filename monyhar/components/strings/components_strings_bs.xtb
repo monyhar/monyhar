@@ -827,7 +827,7 @@ To će u suprotnom biti blokirano prema vašim postavkama privatnosti. Ovo će o
 <translation id="3986705137476756801">Isključite Automatske titlove za sada</translation>
 <translation id="3987405730340719549">Chrome je utvrdio da bi ova web lokacija mogla biti lažna ili obmanjujućeg sadržaja.
 
-    Ako smatrate da je ovo prikazano greškom, posjetite https://bugs.chromium.org/p/chromium/issues/entry?template=Safety+Tips+Appeals.</translation>
+    Ako smatrate da je ovo prikazano greškom, posjetite https://bugs.monyhar.org/p/monyhar/issues/entry?template=Safety+Tips+Appeals.</translation>
 <translation id="3987940399970879459">Manje od 1 MB</translation>
 <translation id="3990250421422698716">Odvajanje dokumenata</translation>
 <translation id="3996311196211510766">Web lokacija <ph name="ORIGIN" /> je zatražila da se izvorno pravilo
@@ -1341,7 +1341,7 @@ To će u suprotnom biti blokirano prema vašim postavkama privatnosti. Ovo će o
 <translation id="5851548754964597211">Lista kartica</translation>
 <translation id="5855253129151731373">Naziv hosta ove web lokacije je sličan domeni <ph name="LOOKALIKE_DOMAIN" />. Napadači ponekad oponašaju web lokacije uz male, teško uočljive izmjene naziva domene.
 
-    Ako smatrate da je ovo prikazano greškom, posjetite https://bugs.chromium.org/p/chromium/issues/entry?template=Safety+Tips+Appeals.</translation>
+    Ako smatrate da je ovo prikazano greškom, posjetite https://bugs.monyhar.org/p/monyhar/issues/entry?template=Safety+Tips+Appeals.</translation>
 <translation id="5860033963881614850">Isklj.</translation>
 <translation id="5862579898803147654">Slagač 8</translation>
 <translation id="5863847714970149516">Stranica koja slijedi može pokušati izvršiti naplatu</translation>

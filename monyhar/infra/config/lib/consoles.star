@@ -37,10 +37,10 @@ defaults = args.defaults(
 )
 
 def _console_view_ordering_graph_key(console_name):
-    return graph.key("@chromium", "", "console_view_ordering", console_name)
+    return graph.key("@monyhar", "", "console_view_ordering", console_name)
 
 def _overview_console_view_ordering_graph_key(console_name):
-    return graph.key("@chromium", "", "overview_console_view_ordering", console_name)
+    return graph.key("@monyhar", "", "overview_console_view_ordering", console_name)
 
 def _console_view_ordering_impl(ctx, *, console_name, ordering):
     key = _console_view_ordering_graph_key(console_name)
@@ -319,7 +319,7 @@ def console_view_entry(
         short_name = None):
     """Specifies the details of a console view entry.
 
-    See https://chromium.googlesource.com/infra/luci/luci-go/+/refs/heads/master/lucicfg/doc/README.md#luci.console_view_entry
+    See https://monyhar.googlesource.com/infra/luci/luci-go/+/refs/heads/master/lucicfg/doc/README.md#luci.console_view_entry
     for more details on the arguments.
 
     Args:
@@ -350,7 +350,7 @@ def console_view_entry(
     )
 
 def _sorted_list_view_graph_key(console_name):
-    return graph.key("@chromium", "", "sorted_list_view", console_name)
+    return graph.key("@monyhar", "", "sorted_list_view", console_name)
 
 def _get_list_view_key_fn(console_name):
     sorted_list_view = graph.node(_sorted_list_view_graph_key(console_name))

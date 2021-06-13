@@ -83,7 +83,7 @@ using testing::SizeIs;
 
 namespace predictors {
 
-const char kChromiumUrl[] = "http://chromium.org";
+const char kChromiumUrl[] = "http://monyhar.org";
 
 const char kHtmlSubresourcesPath[] = "/predictors/html_subresources.html";
 // The embedded test server runs on test.com.

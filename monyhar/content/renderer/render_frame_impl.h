@@ -902,7 +902,7 @@ class CONTENT_EXPORT RenderFrameImpl
   // that a load event should be dispatched, and nothing else.
   //
   // See also:
-  // - https://chromium-review.googlesource.com/c/chromium/src/+/804797
+  // - https://monyhar-review.googlesource.com/c/monyhar/src/+/804797
   // - https://github.com/whatwg/html/issues/3267
   void SynchronouslyCommitAboutBlankForBug778318(
       std::unique_ptr<blink::WebNavigationInfo> info);

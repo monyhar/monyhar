@@ -26,7 +26,7 @@
   static boolean DEBUG return false;
 }
 
-# File: ../../base/android/proguard/chromium_apk.flags
+# File: ../../base/android/proguard/monyhar_apk.flags
 # Copyright 2016 The Chromium Authors. All rights reserved.
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
@@ -138,7 +138,7 @@
   public boolean requiresSignIn();
 }
 
-# File: ../../base/android/proguard/chromium_code.flags
+# File: ../../base/android/proguard/monyhar_code.flags
 # Copyright 2016 The Chromium Authors. All rights reserved.
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
@@ -153,13 +153,13 @@
 # Keep the annotations, because if we don't, the ProGuard rules that use them
 # will not be respected. These classes then show up in our final dex, which we
 # do not want - see crbug.com/628226.
--keep @interface org.chromium.base.annotations.AccessedByNative
--keep @interface org.chromium.base.annotations.CalledByNative
--keep @interface org.chromium.base.annotations.CalledByNativeUnchecked
--keep @interface org.chromium.base.annotations.DoNotInline
--keep @interface org.chromium.base.annotations.RemovableInRelease
--keep @interface org.chromium.base.annotations.UsedByReflection
--keep @interface org.chromium.base.annotations.IdentifierNameString
+-keep @interface org.monyhar.base.annotations.AccessedByNative
+-keep @interface org.monyhar.base.annotations.CalledByNative
+-keep @interface org.monyhar.base.annotations.CalledByNativeUnchecked
+-keep @interface org.monyhar.base.annotations.DoNotInline
+-keep @interface org.monyhar.base.annotations.RemovableInRelease
+-keep @interface org.monyhar.base.annotations.UsedByReflection
+-keep @interface org.monyhar.base.annotations.IdentifierNameString
 
 # Android support library annotations will get converted to androidx ones
 # which we want to keep.
@@ -173,62 +173,62 @@
 }
 
 # Keeps for class level annotations.
--keep @org.chromium.base.annotations.UsedByReflection class ** {}
+-keep @org.monyhar.base.annotations.UsedByReflection class ** {}
 
 # Keeps for method level annotations.
 -keepclasseswithmembers class ** {
-  @org.chromium.base.annotations.AccessedByNative <fields>;
+  @org.monyhar.base.annotations.AccessedByNative <fields>;
 }
 -keepclasseswithmembers,includedescriptorclasses class ** {
-  @org.chromium.base.annotations.CalledByNative <methods>;
+  @org.monyhar.base.annotations.CalledByNative <methods>;
 }
 -keepclasseswithmembers,includedescriptorclasses class ** {
-  @org.chromium.base.annotations.CalledByNativeUnchecked <methods>;
+  @org.monyhar.base.annotations.CalledByNativeUnchecked <methods>;
 }
 -keepclasseswithmembers class ** {
-  @org.chromium.base.annotations.UsedByReflection <methods>;
+  @org.monyhar.base.annotations.UsedByReflection <methods>;
 }
 -keepclasseswithmembers class ** {
-  @org.chromium.base.annotations.UsedByReflection <fields>;
+  @org.monyhar.base.annotations.UsedByReflection <fields>;
 }
 # Even unused methods kept due to explicit jni registration:
 # https://crbug.com/688465.
--keepclasseswithmembers,includedescriptorclasses class !org.chromium.base.library_loader.**,** {
+-keepclasseswithmembers,includedescriptorclasses class !org.monyhar.base.library_loader.**,** {
   native <methods>;
 }
--keepclasseswithmembernames,includedescriptorclasses class org.chromium.base.library_loader.** {
+-keepclasseswithmembernames,includedescriptorclasses class org.monyhar.base.library_loader.** {
   native <methods>;
 }
 
 -assumenosideeffects class ** {
   # Remove @RemovableInRelease methods so long as return values are unused.
-  @org.chromium.base.annotations.RemovableInRelease <methods>;
+  @org.monyhar.base.annotations.RemovableInRelease <methods>;
   # Remove object @RemovableInRelease methods even when return value is used.
   # Note: * in return type does not match primitives.
-  @org.chromium.base.annotations.RemovableInRelease * *(...) return null;
+  @org.monyhar.base.annotations.RemovableInRelease * *(...) return null;
   # Remove boolean @RemovableInRelease methods even when return value is used.
-  @org.chromium.base.annotations.RemovableInRelease boolean *(...) return false;
+  @org.monyhar.base.annotations.RemovableInRelease boolean *(...) return false;
 }
 
 # Never inline classes, methods, or fields  with this annotation, but allow
 # shrinking and obfuscation.
 # Relevant to fields when they are needed to store strong refrences to objects
 # that are held as weak references by native code.
--if @org.chromium.base.annotations.DoNotInline class * {
+-if @org.monyhar.base.annotations.DoNotInline class * {
     *** *(...);
 }
 -keep,allowobfuscation class <1> {
     *** <2>(...);
 }
 -keepclassmembers,allowobfuscation class * {
-   @org.chromium.base.annotations.DoNotInline <methods>;
+   @org.monyhar.base.annotations.DoNotInline <methods>;
 }
 -keepclassmembers,allowobfuscation class * {
-   @org.chromium.base.annotations.DoNotInline <fields>;
+   @org.monyhar.base.annotations.DoNotInline <fields>;
 }
 
 # Keep all CREATOR fields within Parcelable that are kept.
--keepclassmembers class org.chromium.** implements android.os.Parcelable {
+-keepclassmembers class org.monyhar.** implements android.os.Parcelable {
   public static *** CREATOR;
 }
 
@@ -236,18 +236,18 @@
 # If we annotated all Parcelables that get put into Bundles other than
 # for saveInstanceState (e.g. PendingIntents), then we could actually keep the
 # names of just those ones. For now, we'll just keep them all.
--keepnames class org.chromium.** implements android.os.Parcelable {}
+-keepnames class org.monyhar.** implements android.os.Parcelable {}
 
 # Keep all enum values and valueOf methods. See
 # http://proguard.sourceforge.net/index.html#manual/examples.html
 # for the reason for this. Also, see http://crbug.com/248037.
--keepclassmembers enum org.chromium.** {
+-keepclassmembers enum org.monyhar.** {
     public static **[] values();
 }
 
 # Mark members annotated with IdentifierNameString as identifier name strings
 -identifiernamestring class * {
-    @org.chromium.base.annotations.IdentifierNameString *;
+    @org.monyhar.base.annotations.IdentifierNameString *;
 }
 
 # File: ../../build/android/dcheck_is_off.flags
@@ -257,16 +257,16 @@
 
 # Contains flags that are applied only when ENABLE_DCHECK=false.
 
--checkdiscard @org.chromium.base.annotations.CheckDiscard class ** {
+-checkdiscard @org.monyhar.base.annotations.CheckDiscard class ** {
   *;
 }
 -checkdiscard class ** {
-  @org.chromium.base.annotations.CheckDiscard *;
+  @org.monyhar.base.annotations.CheckDiscard *;
 }
 
 # Ensure @RemovableInRelease actually works.
 -checkdiscard class ** {
-  @org.chromium.base.annotations.RemovableInRelease *;
+  @org.monyhar.base.annotations.RemovableInRelease *;
 }
 
 # File: ../../chrome/android/proguard/main.flags
@@ -276,7 +276,7 @@
 
 # Every fragment must have an empty constructor, so it can be instantiated when
 # restoring its activity's state.
--keep public class org.chromium.** extends androidx.fragment.app.Fragment {
+-keep public class org.monyhar.** extends androidx.fragment.app.Fragment {
   public <init>();
 }
 
@@ -284,10 +284,10 @@
 # referenced, and we look up these services by appending a number onto the name
 # of the base class. Thus, we need to keep the base class name around so that
 # the child classes can be looked up.
--keep class org.chromium.content.app.SandboxedProcessService {
+-keep class org.monyhar.content.app.SandboxedProcessService {
   public <init>();
 }
--keep class org.chromium.content.app.PrivilegedProcessService {
+-keep class org.monyhar.content.app.PrivilegedProcessService {
   public <init>();
 }
 
@@ -332,11 +332,11 @@
 
 # Keep implementation classes needed for split compat. These will be accessed by
 # reflection.
--keep,allowobfuscation public class ** extends org.chromium.chrome.browser.base.SplitCompat*$Impl {
+-keep,allowobfuscation public class ** extends org.monyhar.chrome.browser.base.SplitCompat*$Impl {
   public <init>();
 }
 
-# File: ../../third_party/gvr-android-sdk/proguard-gvr-chromium.txt
+# File: ../../third_party/gvr-android-sdk/proguard-gvr-monyhar.txt
 -dontwarn com.google.common.logging.nano.Vr$**
 -dontwarn com.google.vr.**
 
@@ -383,9 +383,9 @@
 
 # We need to avoid obfuscating the support library boundary interface because
 # this API is shared with the Android Support Library.
-# Note that we only 'keep' the package org.chromium.support_lib_boundary itself,
+# Note that we only 'keep' the package org.monyhar.support_lib_boundary itself,
 # any sub-packages of that package can still be obfuscated.
--keep public class org.chromium.support_lib_boundary.* { public *; }
+-keep public class org.monyhar.support_lib_boundary.* { public *; }
 
 # File: ../../chrome/android/features/start_surface/internal/proguard.flags
 # Copyright 2019 The Chromium Authors. All rights reserved.
@@ -423,13 +423,13 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
--keepclassmembers class org.chromium.android_webview.AwPdfExporter {
+-keepclassmembers class org.monyhar.android_webview.AwPdfExporter {
     android.view.ViewGroup mContainerView;
 }
 
 # Keep the factory and its public members; it's the main entry point used by the
 # framework.
--keep class com.android.webview.chromium.WebViewChromiumFactoryProvider {
+-keep class com.android.webview.monyhar.WebViewChromiumFactoryProvider {
     public *;
 }
 
@@ -437,32 +437,32 @@
     *;
 }
 
--keep class com.android.webview.chromium.ContentSettingsAdapter {
+-keep class com.android.webview.monyhar.ContentSettingsAdapter {
     public *;
 }
 
--keep class com.android.webview.chromium.WebViewChromiumFactoryProviderFor* {
+-keep class com.android.webview.monyhar.WebViewChromiumFactoryProviderFor* {
     public *;
 }
 
--keep class com.android.webview.chromium.WebViewDatabaseAdapter {
+-keep class com.android.webview.monyhar.WebViewDatabaseAdapter {
   public *;
 }
 
 # This is the main entry point for APIs. It is kept to make developing with
 # unreleased Android easier.
--keep class com.android.webview.chromium.WebViewChromium {
+-keep class com.android.webview.monyhar.WebViewChromium {
   public *;
 }
 
 # Functor classes with native methods implemented in Android.
--keep class com.android.webview.chromium.DrawFunctor
--keep class com.android.webview.chromium.DrawGLFunctor
--keep class com.android.webview.chromium.GraphicsUtils
+-keep class com.android.webview.monyhar.DrawFunctor
+-keep class com.android.webview.monyhar.DrawGLFunctor
+-keep class com.android.webview.monyhar.GraphicsUtils
 
 # The lock file object must be kept explicitly to avoid it being optimized
 # away and the lock released by the object's finalizer.
--keep class org.chromium.android_webview.AwDataDirLock {
+-keep class org.monyhar.android_webview.AwDataDirLock {
     java.nio.channels.FileLock sExclusiveFileLock;
     java.io.RandomAccessFile sLockFile;
 }
@@ -880,73 +880,73 @@
 -ignorewarnings
 # THIS LINE WAS OMITTED
 -repackageclasses ''
--keep @interface org.chromium.base.annotations.VerifiesOnNMR1
--if @org.chromium.base.annotations.VerifiesOnNMR1 class * {
+-keep @interface org.monyhar.base.annotations.VerifiesOnNMR1
+-if @org.monyhar.base.annotations.VerifiesOnNMR1 class * {
     *** *(...);
 }
 -keep,allowobfuscation class <1> {
     *** <2>(...);
 }
 -keepclassmembers,allowobfuscation class ** {
-  @org.chromium.base.annotations.VerifiesOnNMR1 <methods>;
+  @org.monyhar.base.annotations.VerifiesOnNMR1 <methods>;
 }
--keep @interface org.chromium.base.annotations.VerifiesOnO
--if @org.chromium.base.annotations.VerifiesOnO class * {
+-keep @interface org.monyhar.base.annotations.VerifiesOnO
+-if @org.monyhar.base.annotations.VerifiesOnO class * {
     *** *(...);
 }
 -keep,allowobfuscation class <1> {
     *** <2>(...);
 }
 -keepclassmembers,allowobfuscation class ** {
-  @org.chromium.base.annotations.VerifiesOnO <methods>;
+  @org.monyhar.base.annotations.VerifiesOnO <methods>;
 }
--keep @interface org.chromium.base.annotations.VerifiesOnOMR1
--if @org.chromium.base.annotations.VerifiesOnOMR1 class * {
+-keep @interface org.monyhar.base.annotations.VerifiesOnOMR1
+-if @org.monyhar.base.annotations.VerifiesOnOMR1 class * {
     *** *(...);
 }
 -keep,allowobfuscation class <1> {
     *** <2>(...);
 }
 -keepclassmembers,allowobfuscation class ** {
-  @org.chromium.base.annotations.VerifiesOnOMR1 <methods>;
+  @org.monyhar.base.annotations.VerifiesOnOMR1 <methods>;
 }
--keep @interface org.chromium.base.annotations.VerifiesOnP
--if @org.chromium.base.annotations.VerifiesOnP class * {
+-keep @interface org.monyhar.base.annotations.VerifiesOnP
+-if @org.monyhar.base.annotations.VerifiesOnP class * {
     *** *(...);
 }
 -keep,allowobfuscation class <1> {
     *** <2>(...);
 }
 -keepclassmembers,allowobfuscation class ** {
-  @org.chromium.base.annotations.VerifiesOnP <methods>;
+  @org.monyhar.base.annotations.VerifiesOnP <methods>;
 }
--keep @interface org.chromium.base.annotations.VerifiesOnQ
--if @org.chromium.base.annotations.VerifiesOnQ class * {
+-keep @interface org.monyhar.base.annotations.VerifiesOnQ
+-if @org.monyhar.base.annotations.VerifiesOnQ class * {
     *** *(...);
 }
 -keep,allowobfuscation class <1> {
     *** <2>(...);
 }
 -keepclassmembers,allowobfuscation class ** {
-  @org.chromium.base.annotations.VerifiesOnQ <methods>;
+  @org.monyhar.base.annotations.VerifiesOnQ <methods>;
 }
--keep @interface org.chromium.base.annotations.VerifiesOnR
--if @org.chromium.base.annotations.VerifiesOnR class * {
+-keep @interface org.monyhar.base.annotations.VerifiesOnR
+-if @org.monyhar.base.annotations.VerifiesOnR class * {
     *** *(...);
 }
 -keep,allowobfuscation class <1> {
     *** <2>(...);
 }
 -keepclassmembers,allowobfuscation class ** {
-  @org.chromium.base.annotations.VerifiesOnR <methods>;
+  @org.monyhar.base.annotations.VerifiesOnR <methods>;
 }
--keep @interface org.chromium.base.annotations.VerifiesOnS
--if @org.chromium.base.annotations.VerifiesOnS class * {
+-keep @interface org.monyhar.base.annotations.VerifiesOnS
+-if @org.monyhar.base.annotations.VerifiesOnS class * {
     *** *(...);
 }
 -keep,allowobfuscation class <1> {
     *** <2>(...);
 }
 -keepclassmembers,allowobfuscation class ** {
-  @org.chromium.base.annotations.VerifiesOnS <methods>;
+  @org.monyhar.base.annotations.VerifiesOnS <methods>;
 }

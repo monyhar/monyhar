@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ntp.search;
+package org.monyhar.chrome.browser.ntp.search;
 
 import android.graphics.Bitmap;
 
-import org.chromium.base.Callback;
+import org.monyhar.base.Callback;
 
 /**
  * This class is responsible for reacting to events from the chip on the search box.

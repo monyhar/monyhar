@@ -19,16 +19,16 @@ have interfaces for both, e.g. `BluetoothAdapter` & `BluetoothDevice`.
 
 Chrome OS and Linux are supported via BlueZ, see `*_bluez` files.
 
-[Mojo](https://www.chromium.org/developers/design-documents/mojo)
+[Mojo](https://www.monyhar.org/developers/design-documents/mojo)
 interfaces in [public/mojom](public/mojom) have been started
 but are *not* ready for production use.
 
 
 ## Maintainer History
 
-Initial implementation OWNERS were youngki@chromium.org, keybuk@chromium.org,
-armansito@chromium.org, and rpaquay@chromium.org. They no longer contribute to
-chromium fulltime. They were responsible for support for Chrome OS Bluetooth
+Initial implementation OWNERS were youngki@monyhar.org, keybuk@monyhar.org,
+armansito@monyhar.org, and rpaquay@monyhar.org. They no longer contribute to
+monyhar fulltime. They were responsible for support for Chrome OS Bluetooth
 features and the Chrome Apps APIs:
 
 * [chrome.bluetooth](https://developer.chrome.com/apps/bluetooth)
@@ -62,16 +62,16 @@ See also the [Refactoring meta issue](https://crbug.com/580406).
 ## Android
 
 The android implementation requires crossing from C++ to Java using
-[__JNI__](https://www.chromium.org/developers/design-documents/android-jni).
+[__JNI__](https://www.monyhar.org/developers/design-documents/android-jni).
 
 Object ownership is rooted in the C++ classes, starting with the Adapter, which
 owns Devices, Services, etc. Java counter parts interface with the Android
 Bluetooth objects. E.g.
 
 For testing, the Android objects are __wrapped__ in:
-`android/java/src/org/chromium/device/bluetooth/Wrappers.java`. <br>
+`android/java/src/org/monyhar/device/bluetooth/Wrappers.java`. <br>
 and __fakes__ implemented in:
-`test/android/java/src/org/chromium/device/bluetooth/Fakes.java`.
+`test/android/java/src/org/monyhar/device/bluetooth/Fakes.java`.
 
 Thus:
 
@@ -93,7 +93,7 @@ Fake objects are controlled by `bluetooth_test_android.cc`.
 
 See also: [Class Diagram of Web Bluetooth through Bluetooth Android][Class]
 
-[Class]: https://sites.google.com/a/chromium.org/dev/developers/design-documents/bluetooth-design-docs/web-bluetooth-through-bluetooth-android-class-diagram
+[Class]: https://sites.google.com/a/monyhar.org/dev/developers/design-documents/bluetooth-design-docs/web-bluetooth-through-bluetooth-android-class-diagram
 
 
 ## Testing

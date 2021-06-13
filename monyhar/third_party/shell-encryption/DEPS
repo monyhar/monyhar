@@ -9,6 +9,6 @@ include_rules = [
   '+base/bind.h',
   '+base/test',
   # The lib will be able to use abseil, but without being imported directly in
-  # chromium.
+  # monyhar.
   '+absl',
 ]

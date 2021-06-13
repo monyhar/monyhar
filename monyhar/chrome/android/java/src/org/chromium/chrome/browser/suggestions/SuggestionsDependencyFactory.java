@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.suggestions;
+package org.monyhar.chrome.browser.suggestions;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.chrome.browser.offlinepages.OfflinePageBridge;
-import org.chromium.chrome.browser.profiles.Profile;
-import org.chromium.chrome.browser.suggestions.mostvisited.MostVisitedSites;
-import org.chromium.chrome.browser.suggestions.mostvisited.MostVisitedSitesBridge;
-import org.chromium.components.favicon.LargeIconBridge;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.chrome.browser.offlinepages.OfflinePageBridge;
+import org.monyhar.chrome.browser.profiles.Profile;
+import org.monyhar.chrome.browser.suggestions.mostvisited.MostVisitedSites;
+import org.monyhar.chrome.browser.suggestions.mostvisited.MostVisitedSitesBridge;
+import org.monyhar.components.favicon.LargeIconBridge;
 
 /**
  * Provides an injection mechanisms for dependencies of the suggestions package.

@@ -23,7 +23,7 @@ Read first: [binary_size_explainer.md](binary_size_explainer.md)
 [Compressed resources]: #Compressed-resources
 
 ### Size Optimization Help
-Feel free to email [binary-size@chromium.org](https://groups.google.com/a/chromium.org/forum/#!forum/binary-size).
+Feel free to email [binary-size@monyhar.org](https://groups.google.com/a/monyhar.org/forum/#!forum/binary-size).
 
 ### Compressed resources
 
@@ -43,8 +43,8 @@ and SVG files, when the `compress` attribute is not specified.
 * **Android**: Look at the SuperSize reports from the android-binary-size
     trybot to look for unexpected resources, or unreasonably large symbols.
 
-[Grit]: https://www.chromium.org/developers/tools-we-use-in-chromium/grit
-[webui_load_timer.cc]: https://cs.corp.google.com/eureka_internal/chromium/src/chrome/browser/ui/webui/webui_load_timer.cc
+[Grit]: https://www.monyhar.org/developers/tools-we-use-in-monyhar/grit
+[webui_load_timer.cc]: https://cs.corp.google.com/eureka_internal/monyhar/src/chrome/browser/ui/webui/webui_load_timer.cc
 
 ### Chrome binary size
 
@@ -94,13 +94,13 @@ There are two mechanisms for compressing Chrome l10n files.
              files.
      * See https://crbug.com/1023568 for details and an example CL.
 
-[chrome_repack_locales.gni]: https://cs.chromium.org/chromium/src/chrome/chrome_repack_locales.gni
+[chrome_repack_locales.gni]: https://cs.monyhar.org/monyhar/src/chrome/chrome_repack_locales.gni
 
 ### chromeos-assets
 
 *   Input methods, speech synthesis, and apps consume a great deal of disk space
     on the Chrome OS rootfs partition.
-*   These assets are not part of the chromium repository, however they do
+*   These assets are not part of the monyhar repository, however they do
     affect [rootfs size] on devices.
 *   Proposed additions or increases to chromeos-assets should go through the
     [Feature proposal process] and should consider using some form of
@@ -125,13 +125,13 @@ There are two mechanisms for compressing Chrome l10n files.
      stored as vectors.
      * The one exception is if the image will be used pre-Lollipop in a
        notification or application icon.
-   * For images used in native code: [VectorIcon](https://chromium.googlesource.com/chromium/src/+/HEAD/components/vector_icons/README.md).
+   * For images used in native code: [VectorIcon](https://monyhar.googlesource.com/monyhar/src/+/HEAD/components/vector_icons/README.md).
    * For Android drawables: [VectorDrawable](https://developer.android.com/guide/topics/graphics/vector-drawable-resources).
      * Convert from `.svg` online using https://inloop.github.io/svg2android/.
-     * Optimize vector drawables with [avocado](https://bugs.chromium.org/p/chromium/issues/detail?id=982302).
+     * Optimize vector drawables with [avocado](https://bugs.monyhar.org/p/monyhar/issues/detail?id=982302).
      * (Googlers): Find most icons as .svg at [go/icons](https://goto.google.com/icons).
  * Would **lossy** compression make sense (often true for large images)?
-   * If so, [use lossy webp](https://codereview.chromium.org/2615243002/).
+   * If so, [use lossy webp](https://codereview.monyhar.org/2615243002/).
    * And omit some densities (e.g. add only an xxhdpi version).
  * For lossless `.png` images, see how few unique colors you can use without a
    noticeable difference.
@@ -140,7 +140,7 @@ There are two mechanisms for compressing Chrome l10n files.
      * Requires trial and error for each number of unique colors.
      * Use one of the GUI tools linked from the website to do this easily.
  * Finally - Ensure .png files are fully optimized.
-   * Use [tools/resources/optimize-png-files.sh](https://cs.chromium.org/chromium/src/tools/resources/optimize-png-files.sh).
+   * Use [tools/resources/optimize-png-files.sh](https://cs.monyhar.org/monyhar/src/tools/resources/optimize-png-files.sh).
    * There is some [Googler-specific guidance](https://goto.google.com/clank/engineering/best-practices/adding-image-assets) as well.
 
 #### What Build-Time Image Optimizations are There?
@@ -250,8 +250,8 @@ Practical advice:
 [size-trybot]: /tools/binary_size/README.md#Binary-Size-Trybot-android_binary_size
 [diagnose_bloat]: /tools/binary_size/README.md#diagnose_bloat_py
 [relocations]: /docs/native_relocations.md
-[template_bloat_one]: https://bugs.chromium.org/p/chromium/issues/detail?id=716393
-[template_bloat_two]: https://chromium-review.googlesource.com/c/chromium/src/+/2639396
+[template_bloat_one]: https://bugs.monyhar.org/p/monyhar/issues/detail?id=716393
+[template_bloat_two]: https://monyhar-review.googlesource.com/c/monyhar/src/+/2639396
 [supersize-console]: /tools/binary_size/README.md#Usage_console
 [r8-playground]: /third_party/r8/playground
 
@@ -260,7 +260,7 @@ Practical advice:
  * Look through SuperSize symbols to see whether unwanted functionality
    is being pulled in.
    * Use ProGuard's [-whyareyoukeeping] to see why unwanted symbols are kept
-     (e.g. to [//base/android/proguard/chromium_apk.flags](/base/android/proguard/chromium_apk.flags)).
+     (e.g. to [//base/android/proguard/monyhar_apk.flags](/base/android/proguard/monyhar_apk.flags)).
    * Try adding [-assumenosideeffects] rules to strip out unwanted calls
      (equivalent to adding @RemovableInRelease annotations).
  * Consider removing all resources via `strip_resources = true`.
@@ -270,4 +270,4 @@ Practical advice:
 [-assumenosideeffects]: https://r8-docs.preemptive.com/#general-rules
 
 
-[Feature proposal process]: http://www.chromium.org/developers/new-features
+[Feature proposal process]: http://www.monyhar.org/developers/new-features

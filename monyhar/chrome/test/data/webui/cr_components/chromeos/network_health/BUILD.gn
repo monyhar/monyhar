@@ -8,7 +8,7 @@ import("//ui/webui/resources/tools/js_modulizer.gni")
 js_library("routine_group_test") {
   deps = [
     "../../..:chai_assert",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   externs_list = [ "$externs_path/mocha-2.5.js" ]
 }

@@ -339,7 +339,7 @@ void StackDumpSignalHandler(int signal, siginfo_t* info, void* void_context) {
         "CFI: Most likely a control flow integrity violation; for more "
         "information see:\n");
     PrintToStderr(
-        "https://www.chromium.org/developers/testing/control-flow-integrity\n");
+        "https://www.monyhar.org/developers/testing/control-flow-integrity\n");
   }
 #endif  // BUILDFLAG(CFI_ENFORCEMENT_TRAP)
 
@@ -428,7 +428,7 @@ void StackDumpSignalHandler(int signal, siginfo_t* info, void* void_context) {
   // For all operating systems but Linux we do not reraise the signal that
   // brought us here but terminate the process immediately.
   // Otherwise various tests break on different operating systems, see
-  // https://code.google.com/p/chromium/issues/detail?id=551681 amongst others.
+  // https://code.google.com/p/monyhar/issues/detail?id=551681 amongst others.
   PrintToStderr(
       "Calling _exit(EXIT_FAILURE). Core file will not be generated.\n");
   _exit(EXIT_FAILURE);
@@ -474,7 +474,7 @@ void WarmUpBacktrace() {
   // Example stack trace snippet (with tcmalloc):
   //
   // #8  0x0000000000a173b5 in tc_malloc
-  //             at ./third_party/tcmalloc/chromium/src/debugallocation.cc:1161
+  //             at ./third_party/tcmalloc/monyhar/src/debugallocation.cc:1161
   // #9  0x00007ffff7de7900 in _dl_map_object_deps at dl-deps.c:517
   // #10 0x00007ffff7ded8a9 in dl_open_worker at dl-open.c:262
   // #11 0x00007ffff7de9176 in _dl_catch_error at dl-error.c:178

@@ -85,7 +85,7 @@ function updateWebRtcTextLogsList(textLogsList, version) {
         template: 'Defect report from user',
         comment: commentLines.join('\n'),
       };
-      let href = 'http://code.google.com/p/chromium/issues/entry';
+      let href = 'http://code.google.com/p/monyhar/issues/entry';
       for (const param in params) {
         href = appendParam(href, param, params[param]);
       }

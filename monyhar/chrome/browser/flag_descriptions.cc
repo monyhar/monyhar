@@ -2082,7 +2082,7 @@ const char kReduceUserAgentName[] = "Reduce User-Agent request header";
 const char kReduceUserAgentDescription[] =
     "Reduce (formerly, \"freeze\") the amount of information available in "
     "the User-Agent request header. "
-    "See https://www.chromium.org/updates/ua-reduction for more info.";
+    "See https://www.monyhar.org/updates/ua-reduction for more info.";
 
 const char kRestrictGamepadAccessName[] = "Restrict gamepad access";
 const char kRestrictGamepadAccessDescription[] =

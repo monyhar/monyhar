@@ -8,7 +8,7 @@
 // cases are more dense than normal.
 
 // We must include Chromium headers before including the overrides header
-// since webrtc's logging.h file may conflict with chromium.
+// since webrtc's logging.h file may conflict with monyhar.
 #include "base/command_line.h"
 #include "base/files/file_util.h"
 #include "base/logging.h"

@@ -397,7 +397,7 @@ def _generate_suggested_java_package(build_gn_path: pathlib.Path) -> str:
   # internal, public or android subdirectories are not part of the Java package.
   while parts_for_package[-1] in ('internal', 'public', 'android'):
     parts_for_package = parts_for_package[:-1]
-  return f'org.chromium.{".".join(parts_for_package)}'
+  return f'org.monyhar.{".".join(parts_for_package)}'
 
 
 def _generate_library_content(build_gn_path: pathlib.Path,

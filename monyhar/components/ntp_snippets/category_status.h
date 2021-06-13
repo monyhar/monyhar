@@ -9,7 +9,7 @@ namespace ntp_snippets {
 
 // Represents the status of a category of content suggestions.
 // On Android builds, a Java counterpart will be generated for this enum.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.chrome.browser.ntp.snippets
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.chrome.browser.ntp.snippets
 enum class CategoryStatus {
   // The provider is still initializing and it is not yet determined whether
   // content suggestions will be available or not.

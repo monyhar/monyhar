@@ -15,7 +15,7 @@
 // console, which on the login screen may only be accessed via remote debugging.
 // For instructions, please refer to:
 // * https://chromedevtools.github.io/devtools-protocol/#remote
-// * https://www.chromium.org/developers/how-tos/run-chromium-with-flags#TOC-Setting-Flags-for-Chrome-OS
+// * https://www.monyhar.org/developers/how-tos/run-monyhar-with-flags#TOC-Setting-Flags-for-Chrome-OS
 
 
 // Raw contents of the DER-encoded X.509 certificate.

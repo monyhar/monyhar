@@ -39,7 +39,7 @@ TEST(RecordParsedTest, ParseSingleRecord) {
   record = RecordParsed::CreateFrom(&parser, base::Time());
   EXPECT_TRUE(record != nullptr);
 
-  ASSERT_EQ("codereview.chromium.org", record->name());
+  ASSERT_EQ("codereview.monyhar.org", record->name());
   ASSERT_EQ(dns_protocol::kTypeCNAME, record->type());
   ASSERT_EQ(dns_protocol::kClassIN, record->klass());
 

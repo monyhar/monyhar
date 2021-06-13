@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui.native_page;
+package org.monyhar.chrome.browser.ui.native_page;
 
 import android.net.Uri;
 import android.view.View;
@@ -10,8 +10,8 @@ import android.view.View;
 import androidx.annotation.ColorInt;
 import androidx.annotation.IntDef;
 
-import org.chromium.components.embedder_support.util.UrlConstants;
-import org.chromium.url.GURL;
+import org.monyhar.components.embedder_support.util.UrlConstants;
+import org.monyhar.url.GURL;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

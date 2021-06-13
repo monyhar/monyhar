@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.image_tiles;
+package org.monyhar.components.browser_ui.widget.image_tiles;
 
-import org.chromium.ui.modelutil.ListModel;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.ListModel;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * This model represents the data required to build a list UI around a set of {@link ImageTile}s.

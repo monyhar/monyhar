@@ -111,7 +111,7 @@
 
       If you set this policy, <ph name="PRODUCT_NAME" /> will use the provided directory regardless of whether the user has specified the '--disk-cache-dir' flag or not. To avoid data loss or other unexpected errors this policy should not be set to a volume's root directory or to a directory used for other purposes, because <ph name="PRODUCT_NAME" /> manages its contents.
 
-      See https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables for a list of variables that can be used.
+      See https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables for a list of variables that can be used.
 
       If this policy is left not set the default cache directory will be used and the user will be able to override it with the '--disk-cache-dir' command line flag.</translation>
 <translation id="113521240853905588">Configures the languages that can be used as the preferred languages by <ph name="PRODUCT_OS_NAME" />.
@@ -495,7 +495,7 @@
 <translation id="1852294065645015766">Allow media auto-play</translation>
 <translation id="1857152770025485173">This policy prevents the user from loading web pages from blacklisted URLs. The blacklist provides a list of URL patterns that specify which URLs will be blacklisted.
 
-      A URL pattern has to be formatted according to https://www.chromium.org/administrators/url-blacklist-filter-format.
+      A URL pattern has to be formatted according to https://www.monyhar.org/administrators/url-blacklist-filter-format.
 
       Exceptions can be defined in the URL whitelist policy. These policies are limited to 1,000 entries; subsequent entries will be ignored.
 
@@ -538,7 +538,7 @@
 
       If not configured, metrics and diagnostic data reporting will be disabled on unmanaged devices, and enabled on managed devices.</translation>
 <translation id="1907431809333268751">Configure the list of enterprise login URLs (HTTP and HTTPS schemes only). Fingerprint of password will be captured on these URLs and used for password reuse detection.
-      In order for <ph name="PRODUCT_NAME" /> to correctly capture password fingerprints, please make sure that your login pages follow the guidelines on https://www.chromium.org/developers/design-documents/create-amazing-password-forms.
+      In order for <ph name="PRODUCT_NAME" /> to correctly capture password fingerprints, please make sure that your login pages follow the guidelines on https://www.monyhar.org/developers/design-documents/create-amazing-password-forms.
 
       If this setting is enabled, then password protection service will capture fingerprint of password on these URLs for password reuse detection purpose.
       If this setting is disabled or not set, then password protection service will only capture password fingerprint on https://accounts.google.com.
@@ -837,7 +837,7 @@
 
       This policy allows certificates for the hostnames in the specified URLs to not be disclosed via Certificate Transparency. This allows certificates that would otherwise be untrusted, because they were not properly publicly disclosed, to continue to be used, but makes it harder to detect miss-isued certificates for those hosts.
 
-      A URL pattern is formatted according to https://www.chromium.org/administrators/url-blacklist-filter-format. However, because certificates are valid for a given hostname independent of the scheme, port or path, only the hostname portion of the URL is considered. Wildcard hosts are not supported.
+      A URL pattern is formatted according to https://www.monyhar.org/administrators/url-blacklist-filter-format. However, because certificates are valid for a given hostname independent of the scheme, port or path, only the hostname portion of the URL is considered. Wildcard hosts are not supported.
 
       If this policy is not set, any certificate that is required to be disclosed via Certificate Transparency will be treated as untrusted if it is not disclosed according to the Certificate Transparency policy.</translation>
 <translation id="2488010520405124654">Enable network configuration prompt when offline.
@@ -1531,7 +1531,7 @@
 
       If you set this policy, <ph name="PRODUCT_NAME" /> will use the provided directory regardless of whether the user has specified one or enabled the flag to be prompted for download location every time.
 
-      See https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables for a list of variables that can be used.
+      See https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables for a list of variables that can be used.
 
       If this policy is left not set the default download directory will be used and the user will be able to change it.</translation>
 <translation id="3805659594028420438">Enable TLS domain-bound certificates extension (deprecated)</translation>
@@ -1622,7 +1622,7 @@
 
       If you do not set this policy, <ph name="PRODUCT_NAME" /> will use its usual default directory (platform-specific).
 
-      See https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables for a list of variables that can be used.</translation>
+      See https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables for a list of variables that can be used.</translation>
 <translation id="3911737181201537215">This policy has no effect on the logging done by Android.</translation>
 <translation id="391531815696899618">Disables Google Drive syncing in the <ph name="PRODUCT_OS_NAME" /> Files app when set to True. In that case, no data is uploaded to Google Drive.
 
@@ -1825,7 +1825,7 @@
 
       If you set this policy, <ph name="PRODUCT_NAME" /> will use the provided directory to store the roaming copy of the profiles if the <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> policy has been enabled. If the <ph name="ROAMING_PROFILE_SUPPORT_ENABLED_POLICY_NAME" /> policy is disabled or left unset, the value stored in this policy is not used.
 
-      See https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables for a list of variables that can be used.
+      See https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables for a list of variables that can be used.
 
       If this policy is left not set, the default roaming profile path will be used.</translation>
 <translation id="4239720644496144453">The cache is not used for Android apps. If multiple users install the same Android app, it will be downloaded anew for each user.</translation>
@@ -2027,7 +2027,7 @@
 
           If this policy is not set the default renderer will be used for all sites as specified by the 'ChromeFrameRendererSettings' policy.
 
-          For example patterns see https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          For example patterns see https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="467449052039111439">Open a list of URLs</translation>
 <translation id="4674871290487541952">Allow insecure algorithms in integrity checks on extension updates and installations</translation>
 <translation id="4680936297850947973">Deprecated in M68. Use DefaultPopupsSetting instead.
@@ -2669,7 +2669,7 @@
 
       If you set this policy, <ph name="PRODUCT_FRAME_NAME" /> will use the provided directory.
 
-      See https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables for a list of variables that can be used.
+      See https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables for a list of variables that can be used.
 
       If this setting is left not set the default profile directory will be used.</translation>
 <translation id="5826047473100157858">Specifies whether the user may open pages in Incognito mode in <ph name="PRODUCT_NAME" />.
@@ -3246,7 +3246,7 @@
 
       If you set this policy, <ph name="PRODUCT_NAME" /> will use the provided directory regardless of whether the user has specified the '--user-data-dir' flag or not. To avoid data loss or other unexpected errors this policy should not be set to a volume's root directory or to a directory used for other purposes, because <ph name="PRODUCT_NAME" /> manages its contents.
 
-      See https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables for a list of variables that can be used.
+      See https://www.monyhar.org/administrators/policy-list-3/user-data-directory-variables for a list of variables that can be used.
 
       If this policy is left not set the default profile path will be used and the user will be able to override it with the '--user-data-dir' command line flag.</translation>
 <translation id="7027785306666625591">Configure power management in <ph name="PRODUCT_OS_NAME" />.
@@ -4042,7 +4042,7 @@ The recommended way to configure policy on Windows is via GPO, although provisio
 
           If this policy is not set the default renderer will be used for all sites as specified by the 'ChromeFrameRendererSettings' policy.
 
-          For example patterns see https://www.chromium.org/developers/how-tos/chrome-frame-getting-started.</translation>
+          For example patterns see https://www.monyhar.org/developers/how-tos/chrome-frame-getting-started.</translation>
 <translation id="8489964335640955763">PluginVm</translation>
 <translation id="8493645415242333585">Disable saving browser history</translation>
 <translation id="8499172469244085141">Default Settings (users can override)</translation>

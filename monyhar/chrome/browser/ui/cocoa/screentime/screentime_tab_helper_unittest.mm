@@ -55,13 +55,13 @@ TEST_F(ScreentimeTabHelperTest, OnlyOriginsAreReported) {
       helper->page_controller_for_testing());
 
   auto* tester = content::WebContentsTester::For(contents.get());
-  tester->NavigateAndCommit(GURL("https://www.chromium.org/abc"));
-  tester->NavigateAndCommit(GURL("https://test.chromium.org/def"));
+  tester->NavigateAndCommit(GURL("https://www.monyhar.org/abc"));
+  tester->NavigateAndCommit(GURL("https://test.monyhar.org/def"));
 
   EXPECT_EQ(controller->visited_urls_for_testing()[0],
-            GURL("https://www.chromium.org/"));
+            GURL("https://www.monyhar.org/"));
   EXPECT_EQ(controller->visited_urls_for_testing()[1],
-            GURL("https://test.chromium.org/"));
+            GURL("https://test.monyhar.org/"));
 }
 
 }  // namespace screentime

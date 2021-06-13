@@ -3,10 +3,10 @@
        this source code is governed by a BSD-style license that can be found
        in the LICENSE file. -->
   <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="org.chromium.android_webview.test">
-    <instrumentation android:name="org.chromium.base.test.BaseChromiumAndroidJUnitRunner"
-        android:targetPackage="org.chromium.android_webview.shell"
-        android:label="Tests for org.chromium.android_webview"/>
+      package="org.monyhar.android_webview.test">
+    <instrumentation android:name="org.monyhar.base.test.BaseChromiumAndroidJUnitRunner"
+        android:targetPackage="org.monyhar.android_webview.shell"
+        android:label="Tests for org.monyhar.android_webview"/>
     <uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
     <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
     <uses-permission android:name="android.permission.READ_LOGS"/>
@@ -16,7 +16,7 @@
          needed when building test cases. -->
     <application android:hardwareAccelerated="false">
         <uses-library android:name="android.test.runner" />
-        <activity android:name="org.chromium.test.broker.OnDeviceInstrumentationBroker"
+        <activity android:name="org.monyhar.test.broker.OnDeviceInstrumentationBroker"
             android:exported="true"/>
     </application>
 </manifest>

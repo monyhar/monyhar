@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.share.clipboard;
+package org.monyhar.chrome.browser.share.clipboard;
 
-import static org.chromium.chrome.browser.preferences.ChromePreferenceKeys.CLIPBOARD_SHARED_URI;
-import static org.chromium.chrome.browser.preferences.ChromePreferenceKeys.CLIPBOARD_SHARED_URI_TIMESTAMP;
+import static org.monyhar.chrome.browser.preferences.ChromePreferenceKeys.CLIPBOARD_SHARED_URI;
+import static org.monyhar.chrome.browser.preferences.ChromePreferenceKeys.CLIPBOARD_SHARED_URI_TIMESTAMP;
 
 import android.net.Uri;
 import android.text.TextUtils;
@@ -13,10 +13,10 @@ import android.text.TextUtils;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.components.browser_ui.share.ShareImageFileUtils;
-import org.chromium.ui.base.Clipboard;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.components.browser_ui.share.ShareImageFileUtils;
+import org.monyhar.ui.base.Clipboard;
 
 /**
  * Implementation class for {@link Clipboard.ImageFileProvider}.

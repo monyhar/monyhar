@@ -101,7 +101,7 @@ class FileSystemOperation {
   // return the metadata of the temporary file.
   //
   // |file_ref| is used to manage the lifetime of the returned
-  // snapshot file.  It can be set to let the chromium backend take
+  // snapshot file.  It can be set to let the monyhar backend take
   // care of the life time of the snapshot file.  Otherwise (if the returned
   // file does not require any handling) the implementation can just
   // return nullptr.  In a more complex case, the implementation can manage

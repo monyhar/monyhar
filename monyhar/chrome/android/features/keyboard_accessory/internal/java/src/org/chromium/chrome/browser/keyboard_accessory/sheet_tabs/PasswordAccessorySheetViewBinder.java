@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.keyboard_accessory.sheet_tabs;
+package org.monyhar.chrome.browser.keyboard_accessory.sheet_tabs;
 
-import static org.chromium.ui.base.LocalizationUtils.isLayoutRtl;
+import static org.monyhar.ui.base.LocalizationUtils.isLayoutRtl;
 
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -21,15 +21,15 @@ import androidx.annotation.Nullable;
 import androidx.core.view.ViewCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.chromium.chrome.browser.keyboard_accessory.R;
-import org.chromium.chrome.browser.keyboard_accessory.data.KeyboardAccessoryData;
-import org.chromium.chrome.browser.keyboard_accessory.data.KeyboardAccessoryData.FooterCommand;
-import org.chromium.chrome.browser.keyboard_accessory.data.UserInfoField;
-import org.chromium.chrome.browser.keyboard_accessory.helper.FaviconHelper;
-import org.chromium.chrome.browser.keyboard_accessory.sheet_tabs.AccessorySheetTabModel.AccessorySheetDataPiece;
-import org.chromium.chrome.browser.keyboard_accessory.sheet_tabs.AccessorySheetTabViewBinder.ElementViewHolder;
-import org.chromium.ui.HorizontalListDividerDrawable;
-import org.chromium.ui.modelutil.ListModel;
+import org.monyhar.chrome.browser.keyboard_accessory.R;
+import org.monyhar.chrome.browser.keyboard_accessory.data.KeyboardAccessoryData;
+import org.monyhar.chrome.browser.keyboard_accessory.data.KeyboardAccessoryData.FooterCommand;
+import org.monyhar.chrome.browser.keyboard_accessory.data.UserInfoField;
+import org.monyhar.chrome.browser.keyboard_accessory.helper.FaviconHelper;
+import org.monyhar.chrome.browser.keyboard_accessory.sheet_tabs.AccessorySheetTabModel.AccessorySheetDataPiece;
+import org.monyhar.chrome.browser.keyboard_accessory.sheet_tabs.AccessorySheetTabViewBinder.ElementViewHolder;
+import org.monyhar.ui.HorizontalListDividerDrawable;
+import org.monyhar.ui.modelutil.ListModel;
 
 /**
  * This stateless class provides methods to bind the items in a {@link ListModel <Item>}

@@ -4,8 +4,8 @@
 
 // This file is auto-generated from
 // gpu/command_buffer/build_gles2_cmd_buffer.py
-// It's formatted by clang-format using chromium coding style:
-//    clang-format -i -style=chromium filename
+// It's formatted by clang-format using monyhar coding style:
+//    clang-format -i -style=monyhar filename
 // DO NOT EDIT!
 
 #include "gpu/command_buffer/service/gles2_cmd_decoder_passthrough.h"
@@ -3684,7 +3684,7 @@ error::Error GLES2DecoderPassthroughImpl::HandleBlitFramebufferCHROMIUM(
   const volatile gles2::cmds::BlitFramebufferCHROMIUM& c =
       *static_cast<const volatile gles2::cmds::BlitFramebufferCHROMIUM*>(
           cmd_data);
-  if (!features().chromium_framebuffer_multisample) {
+  if (!features().monyhar_framebuffer_multisample) {
     return error::kUnknownCommand;
   }
 
@@ -3714,7 +3714,7 @@ GLES2DecoderPassthroughImpl::HandleRenderbufferStorageMultisampleCHROMIUM(
       *static_cast<
           const volatile gles2::cmds::RenderbufferStorageMultisampleCHROMIUM*>(
           cmd_data);
-  if (!features().chromium_framebuffer_multisample) {
+  if (!features().monyhar_framebuffer_multisample) {
     return error::kUnknownCommand;
   }
 
@@ -4573,7 +4573,7 @@ error::Error GLES2DecoderPassthroughImpl::HandleCoverageModulationCHROMIUM(
   const volatile gles2::cmds::CoverageModulationCHROMIUM& c =
       *static_cast<const volatile gles2::cmds::CoverageModulationCHROMIUM*>(
           cmd_data);
-  if (!features().chromium_framebuffer_mixed_samples) {
+  if (!features().monyhar_framebuffer_mixed_samples) {
     return error::kUnknownCommand;
   }
 
@@ -4667,7 +4667,7 @@ error::Error GLES2DecoderPassthroughImpl::HandleTexStorage2DImageCHROMIUM(
   const volatile gles2::cmds::TexStorage2DImageCHROMIUM& c =
       *static_cast<const volatile gles2::cmds::TexStorage2DImageCHROMIUM*>(
           cmd_data);
-  if (!features().chromium_texture_storage_image) {
+  if (!features().monyhar_texture_storage_image) {
     return error::kUnknownCommand;
   }
 

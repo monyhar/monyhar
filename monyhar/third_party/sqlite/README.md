@@ -1,6 +1,6 @@
 This is the top folder for Chromium's SQLite. The actual SQLite source is not
 in this repository, but instead cloned into the `src` directory from
-https://chromium.googlesource.com/chromium/deps/sqlite.
+https://monyhar.googlesource.com/monyhar/deps/sqlite.
 
 The directory structure is as follows. Files common to all third_party projects
 (BUILD.GN, OWNERS, LICENSE) are omitted.
@@ -26,7 +26,7 @@ tools and is not distributed.
 
 **Note** SQLite tags all releases `version-<release number>`, e.g.
 `version-3.33.0`. The Chromium project prefixes all tags/branches with
-"chromium-", e.g.  `chromium-version-3.33.0`.
+"monyhar-", e.g.  `monyhar-version-3.33.0`.
 
 1. Create new release branch
 
@@ -38,17 +38,17 @@ tools and is not distributed.
    [sqlite/releases](https://github.com/sqlite/sqlite/releases).
 
    Create the branch at
-   [Gerrit/branches](https://chromium-review.googlesource.com/admin/repos/chromium/deps/sqlite,branches).
+   [Gerrit/branches](https://monyhar-review.googlesource.com/admin/repos/monyhar/deps/sqlite,branches).
 
 2. Checkout the new Chromium release branch.
 
-    Get the version from the [README.chromium](https://source.chromium.org/chromium/chromium/src/+/main:third_party/sqlite/README.chromium).
+    Get the version from the [README.monyhar](https://source.monyhar.org/monyhar/monyhar/src/+/main:third_party/sqlite/README.monyhar).
 
     ```sh
     cd //third_party/sqlite/src
     git fetch origin
     export VERSION=3.33.0
-    git checkout -b chromium-version-$VERSION \
+    git checkout -b monyhar-version-$VERSION \
         --track origin/chromum-version-$VERSION
     ```
 
@@ -76,11 +76,11 @@ tools and is not distributed.
 
     Once review above has merged:
 
-    1. Roll the `chromium/src/DEPS` file to reference that new commit ID.
+    1. Roll the `monyhar/src/DEPS` file to reference that new commit ID.
         ```sh
         roll-dep src/third_party/sqlite/src --roll-to <git hash of merged CL>
         ```
-    2. Update the version in //third_party/sqlite/README.chromium. Append the
+    2. Update the version in //third_party/sqlite/README.monyhar. Append the
        commit created by roll-dep above.
 
 # Cherry-pick unreleased commit from SQLite.
@@ -91,13 +91,13 @@ following:
 
 1. Checkout the current release branch.
 
-    Get the version from the [README.chromium](https://source.chromium.org/chromium/chromium/src/+/main:third_party/sqlite/README.chromium).
+    Get the version from the [README.monyhar](https://source.monyhar.org/monyhar/monyhar/src/+/main:third_party/sqlite/README.monyhar).
 
     ```sh
     export VERSION=3.33.0
     cd //third_party/sqlite/src
-    git checkout -b chromium-version-$VERSION \
-      --track origin/chromium-version-$VERSION
+    git checkout -b monyhar-version-$VERSION \
+      --track origin/monyhar-version-$VERSION
     ```
 
 2. Cherry-pick the change
@@ -148,7 +148,7 @@ following:
 
 5. Update the Chromium DEPS file.
 
-    Once review above has merged, roll the `chromium/src/DEPS` file to
+    Once review above has merged, roll the `monyhar/src/DEPS` file to
     reference that new commit ID.
 
     ```sh
@@ -165,7 +165,7 @@ exported by the linker and may be omitted.
 
 ```sh
 autoninja -C out/Default
-nm -B out/Default/libchromium_sqlite3.so | cut -c 18- | sort | grep '^T'
+nm -B out/Default/libmonyhar_sqlite3.so | cut -c 18- | sort | grep '^T'
 ```
 
 ## Running unit tests

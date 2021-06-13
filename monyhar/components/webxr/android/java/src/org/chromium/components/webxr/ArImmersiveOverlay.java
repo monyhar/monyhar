@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.webxr;
+package org.monyhar.components.webxr;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -19,12 +19,12 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.base.Log;
-import org.chromium.content_public.browser.ScreenOrientationDelegate;
-import org.chromium.content_public.browser.ScreenOrientationProvider;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.content_public.browser.WebContentsObserver;
-import org.chromium.ui.display.DisplayAndroidManager;
+import org.monyhar.base.Log;
+import org.monyhar.content_public.browser.ScreenOrientationDelegate;
+import org.monyhar.content_public.browser.ScreenOrientationProvider;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.content_public.browser.WebContentsObserver;
+import org.monyhar.ui.display.DisplayAndroidManager;
 
 import java.util.HashMap;
 import java.util.Map;

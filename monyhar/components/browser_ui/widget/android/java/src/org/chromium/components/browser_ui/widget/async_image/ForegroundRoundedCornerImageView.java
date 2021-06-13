@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget.async_image;
+package org.monyhar.components.browser_ui.widget.async_image;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -12,9 +12,9 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageView;
 
-import org.chromium.components.browser_ui.widget.R;
-import org.chromium.components.browser_ui.widget.RoundedCornerImageView;
-import org.chromium.ui.UiUtils;
+import org.monyhar.components.browser_ui.widget.R;
+import org.monyhar.components.browser_ui.widget.RoundedCornerImageView;
+import org.monyhar.ui.UiUtils;
 
 /** Helper class that adds foreground drawable support to {@code RoundedCornerImageView}. */
 public class ForegroundRoundedCornerImageView extends RoundedCornerImageView {

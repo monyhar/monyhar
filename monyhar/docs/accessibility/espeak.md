@@ -43,17 +43,17 @@ There are two reasons we include eSpeak-NG in Chrome OS:
 
 The source code to the Chrome OS port of eSpeak-NG can be found here:
 
-  https://chromium.googlesource.com/chromiumos/third_party/espeak-ng
+  https://monyhar.googlesource.com/monyharos/third_party/espeak-ng
 
 All of the Chrome-specific changes are in the "chrome" branch. Clone
 the repository, switch to the "chrome" branch, and check out
-[README.chrome](https://chromium.googlesource.com/chromiumos/third_party/espeak-ng/+/chrome/README.chrome)
+[README.chrome](https://monyhar.googlesource.com/monyharos/third_party/espeak-ng/+/chrome/README.chrome)
 for build instructions.
 
 ## Releasing a new version of eSpeak for Chrome OS
 
 First, you should push any changes to the git repository:
-(https://chromium.googlesource.com/chromiumos/third_party/espeak-ng).
+(https://monyhar.googlesource.com/monyharos/third_party/espeak-ng).
 
 As eSpeak-NG is licensed under the GPL, Chrome OS should never include any
 changes to this project that haven't been committed to the Git repository first.
@@ -92,12 +92,12 @@ The next steps require that you have the full Chrome OS source code
 checked out and you're in your chroot. See the Chromium OS Developer Guide
 for instructions:
 
-https://chromium.googlesource.com/chromiumos/docs/+/main/developer_guide.md
+https://monyhar.googlesource.com/monyharos/docs/+/main/developer_guide.md
 
 
 espeak-ng is in this directory:
 ```
-src/third_party/chromiumos-overlay/app-accessibility/espeak-ng
+src/third_party/monyharos-overlay/app-accessibility/espeak-ng
 ```
 
 Rename the ebuild to match the version number of the tarball you uploaded.

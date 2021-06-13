@@ -24,7 +24,7 @@
 #include "components/viz/common/resources/platform_color.h"
 #include "components/viz/common/resources/resource_format.h"
 #include "components/viz/common/resources/resource_sizes.h"
-#include "gpu/GLES2/gl2extchromium.h"
+#include "gpu/GLES2/gl2extmonyhar.h"
 #include "gpu/command_buffer/client/context_support.h"
 #include "gpu/command_buffer/client/gpu_memory_buffer_manager.h"
 #include "gpu/command_buffer/client/raster_interface.h"
@@ -147,7 +147,7 @@ OneCopyRasterBufferProvider::OneCopyRasterBufferProvider(
     viz::ContextProvider* compositor_context_provider,
     viz::RasterContextProvider* worker_context_provider,
     gpu::GpuMemoryBufferManager* gpu_memory_buffer_manager,
-    int max_copy_texture_chromium_size,
+    int max_copy_texture_monyhar_size,
     bool use_partial_raster,
     bool use_gpu_memory_buffer_resources,
     int max_staging_buffer_usage_in_bytes,
@@ -156,9 +156,9 @@ OneCopyRasterBufferProvider::OneCopyRasterBufferProvider(
       worker_context_provider_(worker_context_provider),
       gpu_memory_buffer_manager_(gpu_memory_buffer_manager),
       max_bytes_per_copy_operation_(
-          max_copy_texture_chromium_size
+          max_copy_texture_monyhar_size
               ? std::min(kMaxBytesPerCopyOperation,
-                         max_copy_texture_chromium_size)
+                         max_copy_texture_monyhar_size)
               : kMaxBytesPerCopyOperation),
       use_partial_raster_(use_partial_raster),
       use_gpu_memory_buffer_resources_(use_gpu_memory_buffer_resources),

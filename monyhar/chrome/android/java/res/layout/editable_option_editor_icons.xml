@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.TextSmall.Secondary" />
 
-    <org.chromium.chrome.browser.autofill.prefeditor.ExpandableGridView
+    <org.monyhar.chrome.browser.autofill.prefeditor.ExpandableGridView
             android:id="@+id/icons_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

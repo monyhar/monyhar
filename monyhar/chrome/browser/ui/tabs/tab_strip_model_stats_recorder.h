@@ -23,7 +23,7 @@ class TabStripModelStatsRecorder : public TabStripModelObserver {
   // This should match {Current,Next}TabState defined in
   // tools/metrics/histograms/histograms.xml, and
   // constants in Chrome for Android implementation
-  // chrome/android/java/src/org/chromium/chrome/browser/tab/TabUma.java
+  // chrome/android/java/src/org/monyhar/chrome/browser/tab/TabUma.java
   enum class TabState {
     // Initial tab state.
     INITIAL = 0,

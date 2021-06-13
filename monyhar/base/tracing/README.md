@@ -8,7 +8,7 @@ recording and a more compact, efficient, and stable trace encoding.
 
 The Perfetto library itself lives in
 [AOSP](https://android.googlesource.com/platform/external/perfetto/) and is rolled in
-[/third_party/chrome/](https://cs.chromium.org/chromium/src/third_party/perfetto/). Progress is
+[/third_party/chrome/](https://cs.monyhar.org/monyhar/src/third_party/perfetto/). Progress is
 tracked on https://crbug.com/1006541.
 
 The code in this directory connects Chrome to Perfetto's [tracing

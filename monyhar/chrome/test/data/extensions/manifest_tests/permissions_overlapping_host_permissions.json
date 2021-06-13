@@ -9,6 +9,6 @@
   ],
   "optional_permissions": [
     "https://google.com/maps",
-    "*://chromium.org/*"
+    "*://monyhar.org/*"
   ]
 }

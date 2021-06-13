@@ -48,7 +48,7 @@ default_args = {
 
   # Changes some setup for the Crashpad build to set them to build against
   # Chromium's zlib, base, etc.
-  crashpad_dependencies = "chromium"
+  crashpad_dependencies = "monyhar"
 
   # Override ANGLE's Vulkan dependencies.
   angle_vulkan_headers_dir = "//third_party/vulkan-deps/vulkan-headers/src"

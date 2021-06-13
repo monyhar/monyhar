@@ -1,14 +1,14 @@
 file://extensions/OWNERS
 
 per-file *.gtestjs=*
-per-file automation_custom_bindings.js=aboxhall@chromium.org
-per-file automation_custom_bindings.js=dmazzoni@chromium.org
-per-file automation_custom_bindings.js=dtseng@chromium.org
-per-file automation_custom_bindings.js=nektar@chromium.org
+per-file automation_custom_bindings.js=aboxhall@monyhar.org
+per-file automation_custom_bindings.js=dmazzoni@monyhar.org
+per-file automation_custom_bindings.js=dtseng@monyhar.org
+per-file automation_custom_bindings.js=nektar@monyhar.org
 per-file chromeos_ime_service_bindings.js=file://chromeos/services/ime/OWNERS
-per-file enterprise_platform_keys*=emaxx@chromium.org
+per-file enterprise_platform_keys*=emaxx@monyhar.org
 per-file file_manager_private_custom_bindings.js=file://ui/file_manager/OWNERS
-per-file image_util.js=dewittj@chromium.org
+per-file image_util.js=dewittj@monyhar.org
 per-file media_galleries*.js=file://chrome/browser/media_galleries/OWNERS
 per-file media_router_bindings.js=file://chrome/browser/media/router/OWNERS
-per-file notifications_*.js=dewittj@chromium.org
+per-file notifications_*.js=dewittj@monyhar.org

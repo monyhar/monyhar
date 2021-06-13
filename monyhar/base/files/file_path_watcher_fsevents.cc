@@ -71,7 +71,7 @@ FilePath ResolvePath(const FilePath& path) {
 
 FilePathWatcherFSEvents::FilePathWatcherFSEvents()
     : queue_(dispatch_queue_create(
-          base::StringPrintf("org.chromium.base.FilePathWatcher.%p", this)
+          base::StringPrintf("org.monyhar.base.FilePathWatcher.%p", this)
               .c_str(),
           DISPATCH_QUEUE_SERIAL)) {}
 

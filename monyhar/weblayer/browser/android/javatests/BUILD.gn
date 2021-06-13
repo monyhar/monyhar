@@ -9,42 +9,42 @@ import("//build/config/android/rules.gni")
 android_library("weblayer_java_tests") {
   testonly = true
   sources = [
-    "src/org/chromium/weblayer/test/BrowserFragmentLifecycleTest.java",
-    "src/org/chromium/weblayer/test/BrowserTest.java",
-    "src/org/chromium/weblayer/test/CookieManagerTest.java",
-    "src/org/chromium/weblayer/test/CrashReporterTest.java",
-    "src/org/chromium/weblayer/test/DarkModeTest.java",
-    "src/org/chromium/weblayer/test/DataClearingTest.java",
-    "src/org/chromium/weblayer/test/DisplayCutoutTest.java",
-    "src/org/chromium/weblayer/test/DowngradeTest.java",
-    "src/org/chromium/weblayer/test/DownloadCallbackTest.java",
-    "src/org/chromium/weblayer/test/ErrorPageCallbackTest.java",
-    "src/org/chromium/weblayer/test/ExecuteScriptTest.java",
-    "src/org/chromium/weblayer/test/ExternalNavigationTest.java",
-    "src/org/chromium/weblayer/test/FaviconFetcherTest.java",
-    "src/org/chromium/weblayer/test/FindInPageTest.java",
-    "src/org/chromium/weblayer/test/FullscreenCallbackTest.java",
-    "src/org/chromium/weblayer/test/FullscreenSizeTest.java",
-    "src/org/chromium/weblayer/test/GoogleAccountsTest.java",
-    "src/org/chromium/weblayer/test/InputTypesTest.java",
-    "src/org/chromium/weblayer/test/MediaSessionTest.java",
-    "src/org/chromium/weblayer/test/NavigationTest.java",
-    "src/org/chromium/weblayer/test/NewTabCallbackTest.java",
-    "src/org/chromium/weblayer/test/OnTabRemovedTabListCallbackImpl.java",
-    "src/org/chromium/weblayer/test/PrerenderControllerTest.java",
-    "src/org/chromium/weblayer/test/ProfileTest.java",
-    "src/org/chromium/weblayer/test/RegisterExternalExperimentIdsTest.java",
-    "src/org/chromium/weblayer/test/RenderingTest.java",
-    "src/org/chromium/weblayer/test/ScrollOffsetCallbackTest.java",
-    "src/org/chromium/weblayer/test/SmokeTest.java",
-    "src/org/chromium/weblayer/test/TabCallbackTest.java",
-    "src/org/chromium/weblayer/test/TabListCallbackTest.java",
-    "src/org/chromium/weblayer/test/TabTest.java",
-    "src/org/chromium/weblayer/test/TopControlsTest.java",
-    "src/org/chromium/weblayer/test/WebLayerLoadingTest.java",
-    "src/org/chromium/weblayer/test/WebLayerTest.java",
-    "src/org/chromium/weblayer/test/WebMessageTest.java",
-    "src/org/chromium/weblayer/test/WebViewCompatibilityTest.java",
+    "src/org/monyhar/weblayer/test/BrowserFragmentLifecycleTest.java",
+    "src/org/monyhar/weblayer/test/BrowserTest.java",
+    "src/org/monyhar/weblayer/test/CookieManagerTest.java",
+    "src/org/monyhar/weblayer/test/CrashReporterTest.java",
+    "src/org/monyhar/weblayer/test/DarkModeTest.java",
+    "src/org/monyhar/weblayer/test/DataClearingTest.java",
+    "src/org/monyhar/weblayer/test/DisplayCutoutTest.java",
+    "src/org/monyhar/weblayer/test/DowngradeTest.java",
+    "src/org/monyhar/weblayer/test/DownloadCallbackTest.java",
+    "src/org/monyhar/weblayer/test/ErrorPageCallbackTest.java",
+    "src/org/monyhar/weblayer/test/ExecuteScriptTest.java",
+    "src/org/monyhar/weblayer/test/ExternalNavigationTest.java",
+    "src/org/monyhar/weblayer/test/FaviconFetcherTest.java",
+    "src/org/monyhar/weblayer/test/FindInPageTest.java",
+    "src/org/monyhar/weblayer/test/FullscreenCallbackTest.java",
+    "src/org/monyhar/weblayer/test/FullscreenSizeTest.java",
+    "src/org/monyhar/weblayer/test/GoogleAccountsTest.java",
+    "src/org/monyhar/weblayer/test/InputTypesTest.java",
+    "src/org/monyhar/weblayer/test/MediaSessionTest.java",
+    "src/org/monyhar/weblayer/test/NavigationTest.java",
+    "src/org/monyhar/weblayer/test/NewTabCallbackTest.java",
+    "src/org/monyhar/weblayer/test/OnTabRemovedTabListCallbackImpl.java",
+    "src/org/monyhar/weblayer/test/PrerenderControllerTest.java",
+    "src/org/monyhar/weblayer/test/ProfileTest.java",
+    "src/org/monyhar/weblayer/test/RegisterExternalExperimentIdsTest.java",
+    "src/org/monyhar/weblayer/test/RenderingTest.java",
+    "src/org/monyhar/weblayer/test/ScrollOffsetCallbackTest.java",
+    "src/org/monyhar/weblayer/test/SmokeTest.java",
+    "src/org/monyhar/weblayer/test/TabCallbackTest.java",
+    "src/org/monyhar/weblayer/test/TabListCallbackTest.java",
+    "src/org/monyhar/weblayer/test/TabTest.java",
+    "src/org/monyhar/weblayer/test/TopControlsTest.java",
+    "src/org/monyhar/weblayer/test/WebLayerLoadingTest.java",
+    "src/org/monyhar/weblayer/test/WebLayerTest.java",
+    "src/org/monyhar/weblayer/test/WebMessageTest.java",
+    "src/org/monyhar/weblayer/test/WebViewCompatibilityTest.java",
   ]
   deps = [
     ":weblayer_java_test_support",
@@ -74,26 +74,26 @@ android_library("weblayer_java_tests") {
 android_library("weblayer_private_java_tests") {
   testonly = true
   sources = [
-    "src/org/chromium/weblayer/test/AutofillTest.java",
-    "src/org/chromium/weblayer/test/BackgroundFetchTest.java",
-    "src/org/chromium/weblayer/test/BrowserControlsOffsetCallbackTest.java",
-    "src/org/chromium/weblayer/test/BrowserControlsTest.java",
-    "src/org/chromium/weblayer/test/ContentCaptureTest.java",
-    "src/org/chromium/weblayer/test/FullscreenCallbackPrivateTest.java",
-    "src/org/chromium/weblayer/test/GeolocationTest.java",
-    "src/org/chromium/weblayer/test/GoogleAccountAccessTokenFetcherTest.java",
-    "src/org/chromium/weblayer/test/InfoBarTest.java",
-    "src/org/chromium/weblayer/test/MediaCaptureTest.java",
-    "src/org/chromium/weblayer/test/MediaRouterTest.java",
-    "src/org/chromium/weblayer/test/NetworkChangeNotifierTest.java",
-    "src/org/chromium/weblayer/test/PageInfoTest.java",
-    "src/org/chromium/weblayer/test/PopupTest.java",
-    "src/org/chromium/weblayer/test/ResourceLoadingTest.java",
-    "src/org/chromium/weblayer/test/SiteSettingsTest.java",
-    "src/org/chromium/weblayer/test/TabPrivateTest.java",
-    "src/org/chromium/weblayer/test/TranslateTest.java",
-    "src/org/chromium/weblayer/test/UrlBarControllerTest.java",
-    "src/org/chromium/weblayer/test/WebAuthnTest.java",
+    "src/org/monyhar/weblayer/test/AutofillTest.java",
+    "src/org/monyhar/weblayer/test/BackgroundFetchTest.java",
+    "src/org/monyhar/weblayer/test/BrowserControlsOffsetCallbackTest.java",
+    "src/org/monyhar/weblayer/test/BrowserControlsTest.java",
+    "src/org/monyhar/weblayer/test/ContentCaptureTest.java",
+    "src/org/monyhar/weblayer/test/FullscreenCallbackPrivateTest.java",
+    "src/org/monyhar/weblayer/test/GeolocationTest.java",
+    "src/org/monyhar/weblayer/test/GoogleAccountAccessTokenFetcherTest.java",
+    "src/org/monyhar/weblayer/test/InfoBarTest.java",
+    "src/org/monyhar/weblayer/test/MediaCaptureTest.java",
+    "src/org/monyhar/weblayer/test/MediaRouterTest.java",
+    "src/org/monyhar/weblayer/test/NetworkChangeNotifierTest.java",
+    "src/org/monyhar/weblayer/test/PageInfoTest.java",
+    "src/org/monyhar/weblayer/test/PopupTest.java",
+    "src/org/monyhar/weblayer/test/ResourceLoadingTest.java",
+    "src/org/monyhar/weblayer/test/SiteSettingsTest.java",
+    "src/org/monyhar/weblayer/test/TabPrivateTest.java",
+    "src/org/monyhar/weblayer/test/TranslateTest.java",
+    "src/org/monyhar/weblayer/test/UrlBarControllerTest.java",
+    "src/org/monyhar/weblayer/test/WebAuthnTest.java",
   ]
   deps = [
     ":weblayer_java_private_test_support",
@@ -123,17 +123,17 @@ android_library("weblayer_private_java_tests") {
 android_library("weblayer_java_test_support") {
   testonly = true
   sources = [
-    "src/org/chromium/weblayer/test/BoundedCountDownLatch.java",
-    "src/org/chromium/weblayer/test/EventUtils.java",
-    "src/org/chromium/weblayer/test/InstrumentationActivityTestRule.java",
-    "src/org/chromium/weblayer/test/MinWebLayerVersion.java",
-    "src/org/chromium/weblayer/test/MinWebLayerVersionSkipCheck.java",
-    "src/org/chromium/weblayer/test/NavigationWaiter.java",
-    "src/org/chromium/weblayer/test/NewTabCallbackImpl.java",
-    "src/org/chromium/weblayer/test/ResourceUtil.java",
-    "src/org/chromium/weblayer/test/TestFullscreenCallback.java",
-    "src/org/chromium/weblayer/test/WebLayerActivityTestRule.java",
-    "src/org/chromium/weblayer/test/WebLayerJUnit4ClassRunner.java",
+    "src/org/monyhar/weblayer/test/BoundedCountDownLatch.java",
+    "src/org/monyhar/weblayer/test/EventUtils.java",
+    "src/org/monyhar/weblayer/test/InstrumentationActivityTestRule.java",
+    "src/org/monyhar/weblayer/test/MinWebLayerVersion.java",
+    "src/org/monyhar/weblayer/test/MinWebLayerVersionSkipCheck.java",
+    "src/org/monyhar/weblayer/test/NavigationWaiter.java",
+    "src/org/monyhar/weblayer/test/NewTabCallbackImpl.java",
+    "src/org/monyhar/weblayer/test/ResourceUtil.java",
+    "src/org/monyhar/weblayer/test/TestFullscreenCallback.java",
+    "src/org/monyhar/weblayer/test/WebLayerActivityTestRule.java",
+    "src/org/monyhar/weblayer/test/WebLayerJUnit4ClassRunner.java",
   ]
   deps = [
     "//base:base_java",
@@ -155,8 +155,8 @@ android_library("weblayer_java_test_support") {
 android_library("weblayer_java_private_test_support") {
   testonly = true
   sources = [
-    "src/org/chromium/weblayer/test/BrowserControlsHelper.java",
-    "src/org/chromium/weblayer/test/SettingsActivityTestRule.java",
+    "src/org/monyhar/weblayer/test/BrowserControlsHelper.java",
+    "src/org/monyhar/weblayer/test/SettingsActivityTestRule.java",
   ]
   deps = [
     ":weblayer_java_test_support",
@@ -247,7 +247,7 @@ weblayer_instrumentation("weblayer_private_instrumentation_test_apk") {
 #
 # Example usage, testing M80 tests and client against master implementation:
 #   autoninja -C out/Release weblayer_instrumentation_test_versions_apk
-#   cipd install --root /tmp/M80 chromium/testing/weblayer-x86 m80
+#   cipd install --root /tmp/M80 monyhar/testing/weblayer-x86 m80
 #   out/Release/bin/run_weblayer_instrumentation_tests_versions_apk \
 #       --test-runner-outdir out/Release
 #       --client-outdir /tmp/M80/out/Release
@@ -306,12 +306,12 @@ android_test_apk("weblayer_bundle_test_apk") {
   apk_name = "WebLayerBundleTest"
   android_manifest = "AndroidManifest_bundle.xml"
   sources = [
-    "src/org/chromium/weblayer/test/BundleLanguageTest.java",
+    "src/org/monyhar/weblayer/test/BundleLanguageTest.java",
 
     # This is run both in the bundle tests and the standard instrumentation
     # tests to make sure bundles don't do anything weird with WebLayer/WebView
     # compatibility.
-    "src/org/chromium/weblayer/test/WebViewCompatibilityTest.java",
+    "src/org/monyhar/weblayer/test/WebViewCompatibilityTest.java",
   ]
   deps = [
     ":weblayer_java_test_support",

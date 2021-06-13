@@ -19,7 +19,7 @@ Some design goals
     meant to be sent to the renderer. Only the browser should have access to
     them.
 
-See https://bugs.chromium.org/p/chromium/issues/detail?id=598073
+See https://bugs.monyhar.org/p/monyhar/issues/detail?id=598073
 
 See the design doc
 https://docs.google.com/document/d/1wAHLw9h7gGuqJNCgG1mP1BmLtCGfZ2pys-PdZQ1vg7M/edit?pref=2&pli=1#
@@ -32,7 +32,7 @@ https://docs.google.com/document/d/1wAHLw9h7gGuqJNCgG1mP1BmLtCGfZ2pys-PdZQ1vg7M/
 # Where does the network service run?
 
 > Note: For more background about this section, see also [Multi-process
-Architecture](https://www.chromium.org/developers/design-documents/multi-process-architecture)
+Architecture](https://www.monyhar.org/developers/design-documents/multi-process-architecture)
 for an overview of the processes in Chromium.
 
 The network service is designed as a [Mojo service](/docs/mojo_and_services.md)
@@ -45,7 +45,7 @@ The out-of-process configuration is preferred for isolation and stability, and
 is the default on most platforms. The in-process configuration is the default on
 Android because of some unresolved issues; see https://crbug.com/1049008.  It
 can also be useful for debugging; for example, it's used in Chromium's
-[`--single-process`](https://www.chromium.org/developers/design-documents/process-models)
+[`--single-process`](https://www.monyhar.org/developers/design-documents/process-models)
 mode.
 
 *In the out-of-process case*: The network service runs on the [IO
@@ -53,7 +53,7 @@ thread](/docs/threading_and_tasks.md) of the utility process (see this
 [comment][1] in `content/utility/services.cc` for why). The utility process
 houses only the network service, so there is nothing running on its main thread.
 
-[1]: https://source.chromium.org/chromium/chromium/src/+/main:content/utility/services.cc;l=197-198;drc=9b85cd82c52e13ed685dd74c726d91067bbd34d5
+[1]: https://source.monyhar.org/monyhar/monyhar/src/+/main:content/utility/services.cc;l=197-198;drc=9b85cd82c52e13ed685dd74c726d91067bbd34d5
 
 *In the in-process case*: The network service runs on its own dedicated thread
 in the browser process. Exception: on Chrome OS, it currently runs on the IO
@@ -99,7 +99,7 @@ run it out-of-process.
 # Buildbot
 
 The [Network Service
-Linux](https://ci.chromium.org/p/chromium/builders/ci/Network%20Service%20Linux)
+Linux](https://ci.monyhar.org/p/monyhar/builders/ci/Network%20Service%20Linux)
 buildbot runs browser tests with the network service in non-default but
 supported configurations. Ideally this bot would be on the CQ, but it is
 expensive and would affect CQ time, so it's on the main waterfall but not the

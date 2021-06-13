@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr;
+package org.monyhar.chrome.browser.vr;
 
 import android.animation.Animator;
 import android.animation.Animator.AnimatorListener;
@@ -17,15 +17,15 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.base.CollectionUtil;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.ChromeTabbedActivity;
-import org.chromium.components.page_info.VrHandler;
-import org.chromium.ui.display.DisplayAndroid;
-import org.chromium.ui.display.DisplayAndroidManager;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.base.CollectionUtil;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.ChromeTabbedActivity;
+import org.monyhar.components.page_info.VrHandler;
+import org.monyhar.ui.display.DisplayAndroid;
+import org.monyhar.ui.display.DisplayAndroidManager;
 
 import java.lang.reflect.Method;
 import java.util.Collections;

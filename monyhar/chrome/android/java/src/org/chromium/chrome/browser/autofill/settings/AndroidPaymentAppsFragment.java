@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.autofill.settings;
+package org.monyhar.chrome.browser.autofill.settings;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -17,10 +17,10 @@ import android.view.View;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceScreen;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.payments.ServiceWorkerPaymentAppBridge;
-import org.chromium.components.browser_ui.settings.TextMessagePreference;
-import org.chromium.components.payments.AndroidPaymentAppFactory;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.payments.ServiceWorkerPaymentAppBridge;
+import org.monyhar.components.browser_ui.settings.TextMessagePreference;
+import org.monyhar.components.payments.AndroidPaymentAppFactory;
 
 import java.util.Map;
 

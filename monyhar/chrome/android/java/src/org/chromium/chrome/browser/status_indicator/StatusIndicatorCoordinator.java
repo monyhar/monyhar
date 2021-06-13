@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.status_indicator;
+package org.monyhar.chrome.browser.status_indicator;
 
 import android.app.Activity;
 import android.graphics.drawable.Drawable;
@@ -12,15 +12,15 @@ import android.view.ViewStub;
 import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 
-import org.chromium.base.Callback;
-import org.chromium.base.supplier.Supplier;
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.browser_controls.BrowserControlsStateProvider;
-import org.chromium.components.browser_ui.widget.ViewResourceFrameLayout;
-import org.chromium.ui.modelutil.PropertyModel;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
-import org.chromium.ui.resources.ResourceManager;
-import org.chromium.ui.resources.dynamics.ViewResourceAdapter;
+import org.monyhar.base.Callback;
+import org.monyhar.base.supplier.Supplier;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.browser_controls.BrowserControlsStateProvider;
+import org.monyhar.components.browser_ui.widget.ViewResourceFrameLayout;
+import org.monyhar.ui.modelutil.PropertyModel;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.ui.resources.ResourceManager;
+import org.monyhar.ui.resources.dynamics.ViewResourceAdapter;
 
 /**
  * The coordinator for a status indicator that is positioned below the status bar and is persistent.

@@ -1,5 +1,5 @@
 From a2df3397d72987acaf6687a55e5ed58cd68b0158 Mon Sep 17 00:00:00 2001
-From: Mirko Bonadei <mbonadei@chromium.org>
+From: Mirko Bonadei <mbonadei@monyhar.org>
 Date: Fri, 17 Apr 2020 14:21:07 +0200
 Subject: [PATCH] Turn on hardened mode.
 

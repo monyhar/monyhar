@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer.test;
+package org.monyhar.weblayer.test;
 
-import static org.chromium.base.test.util.Restriction.RESTRICTION_TYPE_NON_LOW_END_DEVICE;
-import static org.chromium.content_public.browser.test.util.TestThreadUtils.runOnUiThreadBlocking;
+import static org.monyhar.base.test.util.Restriction.RESTRICTION_TYPE_NON_LOW_END_DEVICE;
+import static org.monyhar.content_public.browser.test.util.TestThreadUtils.runOnUiThreadBlocking;
 
 import android.support.test.InstrumentationRegistry;
 import android.view.View;
@@ -19,21 +19,21 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.DisabledTest;
-import org.chromium.base.test.util.Feature;
-import org.chromium.base.test.util.FlakyTest;
-import org.chromium.base.test.util.Restriction;
-import org.chromium.content_public.browser.test.util.ClickUtils;
-import org.chromium.content_public.browser.test.util.TestTouchUtils;
-import org.chromium.content_public.common.ContentSwitches;
-import org.chromium.ui.test.util.UiRestriction;
-import org.chromium.weblayer.Browser;
-import org.chromium.weblayer.Tab;
-import org.chromium.weblayer.TestWebLayer;
-import org.chromium.weblayer.shell.InstrumentationActivity;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.DisabledTest;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.base.test.util.FlakyTest;
+import org.monyhar.base.test.util.Restriction;
+import org.monyhar.content_public.browser.test.util.ClickUtils;
+import org.monyhar.content_public.browser.test.util.TestTouchUtils;
+import org.monyhar.content_public.common.ContentSwitches;
+import org.monyhar.ui.test.util.UiRestriction;
+import org.monyhar.weblayer.Browser;
+import org.monyhar.weblayer.Tab;
+import org.monyhar.weblayer.TestWebLayer;
+import org.monyhar.weblayer.shell.InstrumentationActivity;
 
 /**
  * Tests of the Presentation API.

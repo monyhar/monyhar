@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webapps.launchpad;
+package org.monyhar.chrome.browser.webapps.launchpad;
 
 import android.content.Context;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.components.embedder_support.util.Origin;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
+import org.monyhar.components.embedder_support.util.Origin;
+import org.monyhar.ui.modelutil.PropertyModelChangeProcessor;
 
 /**
  * Coordinator for displaying the selected app's site permission in the management menu.

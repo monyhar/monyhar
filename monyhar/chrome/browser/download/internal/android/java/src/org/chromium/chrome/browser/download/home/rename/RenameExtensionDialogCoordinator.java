@@ -1,18 +1,18 @@
 // Copyright 2019 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.chrome.browser.download.home.rename;
+package org.monyhar.chrome.browser.download.home.rename;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.widget.ScrollView;
 
-import org.chromium.base.Callback;
-import org.chromium.chrome.browser.download.internal.R;
-import org.chromium.ui.modaldialog.DialogDismissalCause;
-import org.chromium.ui.modaldialog.ModalDialogManager;
-import org.chromium.ui.modaldialog.ModalDialogProperties;
-import org.chromium.ui.modelutil.PropertyModel;
+import org.monyhar.base.Callback;
+import org.monyhar.chrome.browser.download.internal.R;
+import org.monyhar.ui.modaldialog.DialogDismissalCause;
+import org.monyhar.ui.modaldialog.ModalDialogManager;
+import org.monyhar.ui.modaldialog.ModalDialogProperties;
+import org.monyhar.ui.modelutil.PropertyModel;
 
 /**
  * The Coordinator for the Rename Extension Dialog. Manages UI objects like views and model, and

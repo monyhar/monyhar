@@ -104,7 +104,7 @@ interface GoogleTtsStream {
 //
 // Note: Espeak-ng is currently the only remote utilizing this interface. It is
 // a private component extension to CHrome OS. Its sources can be found here:
-// https://chromium.googlesource.com/chromiumos/third_party/espeak-ng
+// https://monyhar.googlesource.com/monyharos/third_party/espeak-ng
 interface PlaybackTtsStream {
   // Start playback of audio.
   Play()

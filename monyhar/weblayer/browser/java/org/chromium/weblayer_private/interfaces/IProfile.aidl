@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private.interfaces;
+package org.monyhar.weblayer_private.interfaces;
 
-import org.chromium.weblayer_private.interfaces.ICookieManager;
-import org.chromium.weblayer_private.interfaces.IDownloadCallbackClient;
-import org.chromium.weblayer_private.interfaces.IUserIdentityCallbackClient;
-import org.chromium.weblayer_private.interfaces.IGoogleAccountAccessTokenFetcherClient;
-import org.chromium.weblayer_private.interfaces.IObjectWrapper;
-import org.chromium.weblayer_private.interfaces.IOpenUrlCallbackClient;
-import org.chromium.weblayer_private.interfaces.IPrerenderController;
-import org.chromium.weblayer_private.interfaces.IProfileClient;
+import org.monyhar.weblayer_private.interfaces.ICookieManager;
+import org.monyhar.weblayer_private.interfaces.IDownloadCallbackClient;
+import org.monyhar.weblayer_private.interfaces.IUserIdentityCallbackClient;
+import org.monyhar.weblayer_private.interfaces.IGoogleAccountAccessTokenFetcherClient;
+import org.monyhar.weblayer_private.interfaces.IObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.IOpenUrlCallbackClient;
+import org.monyhar.weblayer_private.interfaces.IPrerenderController;
+import org.monyhar.weblayer_private.interfaces.IProfileClient;
 
 interface IProfile {
   void destroy() = 0;

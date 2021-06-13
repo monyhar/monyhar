@@ -301,7 +301,7 @@ TEST_F(MacUtilTest, TestRemoveQuarantineAttribute) {
   ASSERT_TRUE(temp_dir_.CreateUniqueTempDir());
   FilePath dummy_folder_path = temp_dir_.GetPath().Append("DummyFolder");
   ASSERT_TRUE(base::CreateDirectory(dummy_folder_path));
-  const char* quarantine_str = "0000;4b392bb2;Chromium;|org.chromium.Chromium";
+  const char* quarantine_str = "0000;4b392bb2;Chromium;|org.monyhar.Chromium";
   const char* file_path_str = dummy_folder_path.value().c_str();
   EXPECT_EQ(0, setxattr(file_path_str, "com.apple.quarantine",
       quarantine_str, strlen(quarantine_str), 0, 0));

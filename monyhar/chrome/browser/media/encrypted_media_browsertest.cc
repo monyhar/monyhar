@@ -49,7 +49,7 @@
 
 // Available key systems.
 const char kClearKeyKeySystem[] = "org.w3.clearkey";
-const char kExternalClearKeyKeySystem[] = "org.chromium.externalclearkey";
+const char kExternalClearKeyKeySystem[] = "org.monyhar.externalclearkey";
 
 #if BUILDFLAG(ENABLE_LIBRARY_CDMS)
 // Variants of External Clear Key key system to test different scenarios.
@@ -59,21 +59,21 @@ const char kExternalClearKeyKeySystem[] = "org.chromium.externalclearkey";
 // - AddExternalClearKey() in chrome_key_systems.cc
 // - CreateCdmInstance() in clear_key_cdm.cc
 const char kExternalClearKeyMessageTypeTestKeySystem[] =
-    "org.chromium.externalclearkey.messagetypetest";
+    "org.monyhar.externalclearkey.messagetypetest";
 const char kExternalClearKeyFileIOTestKeySystem[] =
-    "org.chromium.externalclearkey.fileiotest";
+    "org.monyhar.externalclearkey.fileiotest";
 const char kExternalClearKeyInitializeFailKeySystem[] =
-    "org.chromium.externalclearkey.initializefail";
+    "org.monyhar.externalclearkey.initializefail";
 const char kExternalClearKeyPlatformVerificationTestKeySystem[] =
-    "org.chromium.externalclearkey.platformverificationtest";
+    "org.monyhar.externalclearkey.platformverificationtest";
 const char kExternalClearKeyCrashKeySystem[] =
-    "org.chromium.externalclearkey.crash";
+    "org.monyhar.externalclearkey.crash";
 #if BUILDFLAG(ENABLE_CDM_HOST_VERIFICATION)
 const char kExternalClearKeyVerifyCdmHostTestKeySystem[] =
-    "org.chromium.externalclearkey.verifycdmhosttest";
+    "org.monyhar.externalclearkey.verifycdmhosttest";
 #endif  // BUILDFLAG(ENABLE_CDM_HOST_VERIFICATION)
 const char kExternalClearKeyStorageIdTestKeySystem[] =
-    "org.chromium.externalclearkey.storageidtest";
+    "org.monyhar.externalclearkey.storageidtest";
 #endif  // BUILDFLAG(ENABLE_LIBRARY_CDMS)
 
 // Sessions to load.
@@ -844,7 +844,7 @@ IN_PROC_BROWSER_TEST_P(ECKEncryptedMediaTest, LoadSessionAfterClose) {
 }
 
 const char kExternalClearKeyDecryptOnlyKeySystem[] =
-    "org.chromium.externalclearkey.decryptonly";
+    "org.monyhar.externalclearkey.decryptonly";
 
 IN_PROC_BROWSER_TEST_P(ECKEncryptedMediaTest, DecryptOnly_VideoAudio_WebM) {
   RunSimpleEncryptedMediaTest("bear-320x240-av_enc-av.webm",

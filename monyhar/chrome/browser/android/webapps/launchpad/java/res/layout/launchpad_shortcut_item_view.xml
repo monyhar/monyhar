@@ -11,12 +11,12 @@
     android:paddingEnd="16dp"
     android:orientation="horizontal">
 
-  <org.chromium.ui.widget.ChromeImageView
+  <org.monyhar.ui.widget.ChromeImageView
       android:id="@+id/shortcut_icon"
       style="@style/ListItemStartIcon"
       android:scaleType="centerInside" />
 
-  <org.chromium.ui.widget.TextViewWithLeading
+  <org.monyhar.ui.widget.TextViewWithLeading
       android:id="@+id/shortcut_name"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"

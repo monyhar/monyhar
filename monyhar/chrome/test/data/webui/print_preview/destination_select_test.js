@@ -26,7 +26,7 @@ suite(destination_select_test.suiteName, function() {
   let destinationSelect;
 
   /** @type {string} */
-  const account = 'foo@chromium.org';
+  const account = 'foo@monyhar.org';
 
   /** @type {!DestinationOrigin} */
   const cookieOrigin = DestinationOrigin.COOKIES;

@@ -1,5 +1,5 @@
 From bd38fe17b88d63245832978286f2fe12c9ed6de7 Mon Sep 17 00:00:00 2001
-From: Christopher Thompson <cthomp@chromium.org>
+From: Christopher Thompson <cthomp@monyhar.org>
 Date: Mon, 12 Nov 2018 09:47:32 -0800
 Subject: [PATCH] Add custom malloc with max limit to prevent OOM
 

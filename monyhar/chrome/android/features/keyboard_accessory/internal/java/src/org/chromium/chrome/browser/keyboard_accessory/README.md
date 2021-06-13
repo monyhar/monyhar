@@ -21,7 +21,7 @@ accessory sheet with fallback data and options.
 The sheet is located in the `sheet_component.*` and shows one of the fallback
 sheets as defined in `sheet_tabs.*`.
 The responsibility of the ManualFillingCoordinator is to integrate the active
-sub components with the rest of chromium (e.g. Infobars, popups, etc.) and
+sub components with the rest of monyhar (e.g. Infobars, popups, etc.) and
 ensure that they are perceived as extension or replacement of the keyboard.
 
 The `data.*` package provides helper classes that define the data format used by

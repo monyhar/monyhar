@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content.browser;
+package org.monyhar.content.browser;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
@@ -25,11 +25,11 @@ import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowLooper;
 
-import org.chromium.base.process_launcher.ChildConnectionAllocator;
-import org.chromium.base.process_launcher.ChildProcessConnection;
-import org.chromium.base.process_launcher.TestChildProcessConnection;
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.base.test.util.Feature;
+import org.monyhar.base.process_launcher.ChildConnectionAllocator;
+import org.monyhar.base.process_launcher.ChildProcessConnection;
+import org.monyhar.base.process_launcher.TestChildProcessConnection;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.base.test.util.Feature;
 
 /** Unit tests for the SpareChildConnection class. */
 @Config(manifest = Config.NONE)
@@ -40,7 +40,7 @@ public class SpareChildConnectionTest {
 
     // A connection allocator not used to create connections.
     private final ChildConnectionAllocator mWrongConnectionAllocator =
-            ChildConnectionAllocator.createFixedForTesting(null, "org.chromium.test",
+            ChildConnectionAllocator.createFixedForTesting(null, "org.monyhar.test",
                     "TestServiceName", 3 /* serviceCount */, false /* bindToCaller */,
                     false /* bindAsExternalService */, false /* useStrongBinding */);
 
@@ -88,7 +88,7 @@ public class SpareChildConnectionTest {
         LauncherThread.setCurrentThreadAsLauncherThread();
 
         mConnectionAllocator = ChildConnectionAllocator.createFixedForTesting(null,
-                "org.chromium.test.spare_connection", "TestServiceName", 5 /* serviceCount */,
+                "org.monyhar.test.spare_connection", "TestServiceName", 5 /* serviceCount */,
                 false /* bindToCaller */, false /* bindAsExternalService */,
                 false /* useStrongBinding */);
         mConnectionAllocator.setConnectionFactoryForTesting(mTestConnectionFactory);

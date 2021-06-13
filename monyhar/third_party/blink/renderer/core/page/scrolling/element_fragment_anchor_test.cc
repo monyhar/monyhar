@@ -39,7 +39,7 @@ class ElementFragmentAnchorTest : public SimTest {
 // Ensure that the focus event handler is run before the rAF callback. We'll
 // change the background color from a rAF set in the focus handler and make
 // sure the computed background color of that frame was changed. See:
-// https://groups.google.com/a/chromium.org/d/msg/blink-dev/5BJSTl-FMGY/JMtaKqGhBAAJ
+// https://groups.google.com/a/monyhar.org/d/msg/blink-dev/5BJSTl-FMGY/JMtaKqGhBAAJ
 TEST_F(ElementFragmentAnchorTest, FocusHandlerRunBeforeRaf) {
   SimRequest main_resource("https://example.com/test.html", "text/html");
   SimSubresourceRequest css_resource("https://example.com/sheet.css",

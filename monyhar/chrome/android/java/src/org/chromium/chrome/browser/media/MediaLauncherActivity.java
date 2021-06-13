@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.media;
+package org.monyhar.chrome.browser.media;
 
 import android.app.Activity;
 import android.content.ContentResolver;
@@ -13,10 +13,10 @@ import android.webkit.MimeTypeMap;
 
 import androidx.annotation.IntDef;
 
-import org.chromium.base.IntentUtils;
-import org.chromium.base.Log;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.chrome.browser.customtabs.CustomTabIntentDataProvider;
+import org.monyhar.base.IntentUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.chrome.browser.customtabs.CustomTabIntentDataProvider;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

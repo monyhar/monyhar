@@ -6,21 +6,21 @@ import("//build/config/android/rules.gni")
 
 android_library("java") {
   sources = [
-    "java/src/org/chromium/chrome/browser/webapps/launchpad/AppListCoordinator.java",
-    "java/src/org/chromium/chrome/browser/webapps/launchpad/AppListMediator.java",
-    "java/src/org/chromium/chrome/browser/webapps/launchpad/AppManagementMenuCoordinator.java",
-    "java/src/org/chromium/chrome/browser/webapps/launchpad/AppManagementMenuHeaderProperties.java",
-    "java/src/org/chromium/chrome/browser/webapps/launchpad/AppManagementMenuHeaderViewBinder.java",
-    "java/src/org/chromium/chrome/browser/webapps/launchpad/AppManagementMenuPermissionsCoordinator.java",
-    "java/src/org/chromium/chrome/browser/webapps/launchpad/AppManagementMenuPermissionsMediator.java",
-    "java/src/org/chromium/chrome/browser/webapps/launchpad/AppManagementMenuPermissionsProperties.java",
-    "java/src/org/chromium/chrome/browser/webapps/launchpad/AppManagementMenuPermissionsView.java",
-    "java/src/org/chromium/chrome/browser/webapps/launchpad/AppManagementMenuPermissionsViewBinder.java",
-    "java/src/org/chromium/chrome/browser/webapps/launchpad/LaunchpadCoordinator.java",
-    "java/src/org/chromium/chrome/browser/webapps/launchpad/LaunchpadItem.java",
-    "java/src/org/chromium/chrome/browser/webapps/launchpad/LaunchpadPage.java",
-    "java/src/org/chromium/chrome/browser/webapps/launchpad/ShortcutItemProperties.java",
-    "java/src/org/chromium/chrome/browser/webapps/launchpad/ShortcutItemViewBinder.java",
+    "java/src/org/monyhar/chrome/browser/webapps/launchpad/AppListCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/webapps/launchpad/AppListMediator.java",
+    "java/src/org/monyhar/chrome/browser/webapps/launchpad/AppManagementMenuCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/webapps/launchpad/AppManagementMenuHeaderProperties.java",
+    "java/src/org/monyhar/chrome/browser/webapps/launchpad/AppManagementMenuHeaderViewBinder.java",
+    "java/src/org/monyhar/chrome/browser/webapps/launchpad/AppManagementMenuPermissionsCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/webapps/launchpad/AppManagementMenuPermissionsMediator.java",
+    "java/src/org/monyhar/chrome/browser/webapps/launchpad/AppManagementMenuPermissionsProperties.java",
+    "java/src/org/monyhar/chrome/browser/webapps/launchpad/AppManagementMenuPermissionsView.java",
+    "java/src/org/monyhar/chrome/browser/webapps/launchpad/AppManagementMenuPermissionsViewBinder.java",
+    "java/src/org/monyhar/chrome/browser/webapps/launchpad/LaunchpadCoordinator.java",
+    "java/src/org/monyhar/chrome/browser/webapps/launchpad/LaunchpadItem.java",
+    "java/src/org/monyhar/chrome/browser/webapps/launchpad/LaunchpadPage.java",
+    "java/src/org/monyhar/chrome/browser/webapps/launchpad/ShortcutItemProperties.java",
+    "java/src/org/monyhar/chrome/browser/webapps/launchpad/ShortcutItemViewBinder.java",
   ]
 
   deps = [
@@ -41,7 +41,7 @@ android_library("java") {
     "//third_party/androidx:androidx_recyclerview_recyclerview_java",
     "//ui/android:ui_full_java",
   ]
-  resources_package = "org.chromium.chrome.browser.webapps.launchpad"
+  resources_package = "org.monyhar.chrome.browser.webapps.launchpad"
 }
 
 android_resources("java_resources") {
@@ -71,9 +71,9 @@ android_resources("java_resources") {
 android_library("javatests") {
   testonly = true
   sources = [
-    "java/src/org/chromium/chrome/browser/webapps/launchpad/LaunchpadActivityTest.java",
-    "java/src/org/chromium/chrome/browser/webapps/launchpad/LaunchpadPageTest.java",
-    "java/src/org/chromium/chrome/browser/webapps/launchpad/LaunchpadTestUtils.java",
+    "java/src/org/monyhar/chrome/browser/webapps/launchpad/LaunchpadActivityTest.java",
+    "java/src/org/monyhar/chrome/browser/webapps/launchpad/LaunchpadPageTest.java",
+    "java/src/org/monyhar/chrome/browser/webapps/launchpad/LaunchpadTestUtils.java",
   ]
 
   deps = [
@@ -111,9 +111,9 @@ android_library("junit_tests") {
   testonly = true
 
   sources = [
-    "java/src/org/chromium/chrome/browser/webapps/launchpad/AppManagementMenuCoordinatorTest.java",
-    "java/src/org/chromium/chrome/browser/webapps/launchpad/AppManagementMenuPermissionsCoordinatorTest.java",
-    "java/src/org/chromium/chrome/browser/webapps/launchpad/LaunchpadCoordinatorTest.java",
+    "java/src/org/monyhar/chrome/browser/webapps/launchpad/AppManagementMenuCoordinatorTest.java",
+    "java/src/org/monyhar/chrome/browser/webapps/launchpad/AppManagementMenuPermissionsCoordinatorTest.java",
+    "java/src/org/monyhar/chrome/browser/webapps/launchpad/LaunchpadCoordinatorTest.java",
   ]
 
   deps = [

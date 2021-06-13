@@ -31,6 +31,6 @@ static_library("symbolize") {
     defines += [ "PRINT_UNSYMBOLIZED_STACK_TRACES" ]
   }
 
-  configs -= [ "//build/config/compiler:chromium_code" ]
-  configs += [ "//build/config/compiler:no_chromium_code" ]
+  configs -= [ "//build/config/compiler:monyhar_code" ]
+  configs += [ "//build/config/compiler:no_monyhar_code" ]
 }

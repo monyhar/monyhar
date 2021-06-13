@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.theme;
+package org.monyhar.chrome.browser.theme;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -14,13 +14,13 @@ import androidx.annotation.ColorRes;
 import androidx.annotation.Nullable;
 import androidx.appcompat.content.res.AppCompatResources;
 
-import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.ui.native_page.NativePage;
-import org.chromium.components.browser_ui.styles.ChromeColors;
-import org.chromium.content_public.browser.RenderWidgetHostView;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.ui.util.ColorUtils;
+import org.monyhar.base.ApiCompatibilityUtils;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.chrome.browser.ui.native_page.NativePage;
+import org.monyhar.components.browser_ui.styles.ChromeColors;
+import org.monyhar.content_public.browser.RenderWidgetHostView;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.ui.util.ColorUtils;
 
 /**
  * Utility methods for theme colors.

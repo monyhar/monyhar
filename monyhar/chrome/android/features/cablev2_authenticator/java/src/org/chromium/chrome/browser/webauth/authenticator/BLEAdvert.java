@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.webauth.authenticator;
+package org.monyhar.chrome.browser.webauth.authenticator;
 
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.le.AdvertiseCallback;
@@ -11,8 +11,8 @@ import android.bluetooth.le.AdvertiseSettings;
 import android.bluetooth.le.BluetoothLeAdvertiser;
 import android.os.ParcelUuid;
 
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
 
 import java.io.Closeable;
 import java.nio.ByteBuffer;

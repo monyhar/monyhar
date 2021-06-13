@@ -259,7 +259,7 @@ void TabManager::DiscardTabFromMemoryPressure() {
   // Output a log with per-process memory usage and number of file descriptors,
   // as well as GPU memory details. Discard happens without waiting for the log
   // (https://crbug.com/850545) Per comment at
-  // https://crrev.com/c/chromium/src/+/1980282/3#message-d45cc354e7776d7e3d208e22dd2f6bbca3e9eae8,
+  // https://crrev.com/c/monyhar/src/+/1980282/3#message-d45cc354e7776d7e3d208e22dd2f6bbca3e9eae8,
   // this log is used to diagnose issues on ChromeOS. Do not output it on other
   // platforms since it is not used and data shows it can create IO thread hangs
   // (https://crbug.com/1040522).

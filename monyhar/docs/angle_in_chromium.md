@@ -4,7 +4,7 @@ In DEPS, comment out the part that looks like this.
 
 ```
 #  "src/third_party/angle":
-#    Var("chromium_git") + "/angle/angle.git@" + Var("angle_revision"),
+#    Var("monyhar_git") + "/angle/angle.git@" + Var("angle_revision"),
 ```
 
 Delete or rename third\_party/angle.
@@ -19,7 +19,7 @@ gclient sync -r CURRENT_REVISION
 Clone the ANGLE git repository.
 
 ```
-> git clone https://chromium.googlesource.com/angle/angle third_party/angle
+> git clone https://monyhar.googlesource.com/angle/angle third_party/angle
 > gclient runhooks
 ```
 

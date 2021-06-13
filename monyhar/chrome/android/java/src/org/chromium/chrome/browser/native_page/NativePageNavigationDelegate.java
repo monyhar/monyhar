@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.native_page;
+package org.monyhar.chrome.browser.native_page;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.chrome.browser.incognito.IncognitoUtils;
-import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.content_public.browser.LoadUrlParams;
+import org.monyhar.chrome.browser.incognito.IncognitoUtils;
+import org.monyhar.chrome.browser.tab.Tab;
+import org.monyhar.content_public.browser.LoadUrlParams;
 
 /**
  * Interface exposing to the common methods to navigate to content shown in native page UIs.

@@ -24,4 +24,4 @@ hops.
 The split of responsibilities between Blink and `content`
 (`content` is what registers `blink::WebCrypto` to the Blink Platform) is dated
 and could be simplified. See also
-[crbug.com/614385](https://bugs.chromium.org/p/chromium/issues/detail?id=614385).
+[crbug.com/614385](https://bugs.monyhar.org/p/monyhar/issues/detail?id=614385).

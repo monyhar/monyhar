@@ -29,12 +29,12 @@ The bisect service spits out a comment on the bug that looks like this:
 > **📍 Found significant differences after each of 2 commits.**<br>
 > https://pinpoint-dot-chromeperf.appspot.com/job/148a8d4e840000
 >
-> **Add smcgruer as an animations OWNER** by flackr@chromium.org<br>
-> https://chromium.googlesource.com/chromium/src/+/b091c264862d26ac12d932e84eef7bd5f674e62b
+> **Add smcgruer as an animations OWNER** by flackr@monyhar.org<br>
+> https://monyhar.googlesource.com/monyhar/src/+/b091c264862d26ac12d932e84eef7bd5f674e62b
 >
 > **Roll src/third_party/depot_tools/ 0f7b2007a..fd4ad2416 (1 commit)**
-> by depot-tools-roller@chromium.org<br>
-> https://chromium.googlesource.com/chromium/src/+/14fc99e3fd3614096caab7c7a8362edde8327a5d
+> by depot-tools-roller@monyhar.org<br>
+> https://monyhar.googlesource.com/monyhar/src/+/14fc99e3fd3614096caab7c7a8362edde8327a5d
 >
 > Understanding performance regressions:<br>
 > &nbsp;&nbsp;http://g.co/ChromePerformanceRegressions
@@ -52,7 +52,7 @@ page.
 
 Down the left you can see some details about the bisect configuration, including
 the benchmark (`loading.desktop`) and story (`Pantip`) that ran, the bot it ran
-on (`chromium-rel-mac11-pro`), and the metric that was measured
+on (`monyhar-rel-mac11-pro`), and the metric that was measured
 (`cpuTimeToFirstMeaningfulPaint`). If you're not familiar with the benchmark or
 metric, you can cc the
 [benchmark owner](https://docs.google.com/spreadsheets/d/1xaAo0_SU3iDfGdqDJZX_jRV0QtkufwHUKH3kQKF3YQs/edit#gid=0)
@@ -120,18 +120,18 @@ For most metrics, yes. Here are the steps:
 ### Wait, what's a trace?
 
 See the
-[documentation on tracing](https://www.chromium.org/developers/how-tos/trace-event-profiling-tool)
+[documentation on tracing](https://www.monyhar.org/developers/how-tos/trace-event-profiling-tool)
 to learn how to use traces to debug performance issues.
 
 ### Are there debugging tips specific to certain benchmarks?
 
-* [Memory](https://chromium.googlesource.com/chromium/src/+/main/docs/memory-infra/memory_benchmarks.md)
+* [Memory](https://monyhar.googlesource.com/monyhar/src/+/main/docs/memory-infra/memory_benchmarks.md)
 * [Android binary size](apk_size_regressions.md)
 * [Micro-benchmarks](microbenchmark_regressions.md)
 
 ### How do I profile?
 
-Here is the [documentation on CPU Profiling Chrome](https://chromium.googlesource.com/chromium/src/+/main/docs/profiling.md)
+Here is the [documentation on CPU Profiling Chrome](https://monyhar.googlesource.com/monyhar/src/+/main/docs/profiling.md)
 
 ## If you don't believe your CL could be the cause
 
@@ -165,7 +165,7 @@ Do the following:
     1. Click on the `All graphs for this bug` link in comment #1. It should
        look like this:
        `https://chromeperf.appspot.com/group_report?bug_id=XXXX`
-    2. Sign in to the dashboard with your chromium.org account in the upper
+    2. Sign in to the dashboard with your monyhar.org account in the upper
        right corner.
     3. Select a bot/test combo that looks like what the bisect bot originally
        caught. You might want to look through various regressions for a really
@@ -178,7 +178,7 @@ Do the following:
 
 Sometimes you are aware that your CL caused a performance regression, but you
 believe the CL should be landed as-is anyway. Chrome's
-[core principles](https://www.chromium.org/developers/core-principles) state:
+[core principles](https://www.monyhar.org/developers/core-principles) state:
 
 > If you make a change that regresses measured performance, you will be required to fix it or revert.
 
@@ -234,5 +234,5 @@ Here are some common justification scenarios:
 
 **In all cases,** make sure to cc the [benchmark owner](https://docs.google.com/spreadsheets/d/1xaAo0_SU3iDfGdqDJZX_jRV0QtkufwHUKH3kQKF3YQs/edit#gid=0)
 when writing a justification and WontFix-ing a bug. If you cannot come to an
-agreement with the benchmark owner, you can escalate to benhenry@chromium.org,
+agreement with the benchmark owner, you can escalate to benhenry@monyhar.org,
 the owner of speed releasing.

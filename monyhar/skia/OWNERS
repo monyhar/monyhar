@@ -1,12 +1,12 @@
 set noparent
-alokp@chromium.org
+alokp@monyhar.org
 borenet@google.com
 brianosman@google.com
 bsalomon@google.com
 bungeman@google.com
 djsollen@google.com
 egdaniel@google.com
-fmalita@chromium.org
+fmalita@monyhar.org
 jvanverth@google.com
 michaelludwig@google.com
 mtklein@google.com
@@ -14,8 +14,8 @@ reed@google.com
 rmistry@google.com
 robertphillips@google.com
 scroggo@google.com
-senorblanco@chromium.org
-thakis@chromium.org
+senorblanco@monyhar.org
+thakis@monyhar.org
 
 # For Fuchsia-specific changes:
 per-file *_fuchsia*=file://build/fuchsia/OWNERS

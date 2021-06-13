@@ -2,7 +2,7 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
-package: chromium/third_party/android_sdk/public/cmdline-tools
+package: monyhar/third_party/android_sdk/public/cmdline-tools
 description: Android SDK "cmdline-tools" package
 root: ../public/
 data:

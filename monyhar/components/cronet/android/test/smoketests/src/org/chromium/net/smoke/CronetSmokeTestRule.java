@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.net.smoke;
+package org.monyhar.net.smoke;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -12,12 +12,12 @@ import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
-import org.chromium.net.CronetEngine;
-import org.chromium.net.ExperimentalCronetEngine;
-import org.chromium.net.UrlResponseInfo;
+import org.monyhar.net.CronetEngine;
+import org.monyhar.net.ExperimentalCronetEngine;
+import org.monyhar.net.UrlResponseInfo;
 
 /**
- * Base test class. This class should not import any classes from the org.chromium.base package.
+ * Base test class. This class should not import any classes from the org.monyhar.base package.
  */
 public class CronetSmokeTestRule implements TestRule {
     /**
@@ -91,13 +91,13 @@ public class CronetSmokeTestRule implements TestRule {
 
     static void assertJavaEngine(CronetEngine engine) {
         Assert.assertNotNull(engine);
-        Assert.assertEquals("org.chromium.net.impl.JavaCronetEngine", engine.getClass().getName());
+        Assert.assertEquals("org.monyhar.net.impl.JavaCronetEngine", engine.getClass().getName());
     }
 
     static void assertNativeEngine(CronetEngine engine) {
         Assert.assertNotNull(engine);
         Assert.assertEquals(
-                "org.chromium.net.impl.CronetUrlRequestContext", engine.getClass().getName());
+                "org.monyhar.net.impl.CronetUrlRequestContext", engine.getClass().getName());
     }
 
     /**

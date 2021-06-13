@@ -750,7 +750,7 @@ IN_PROC_BROWSER_TEST_P(CrossSiteDocumentBlockingTest,
   fetch_result = std::string(TrimWhitespaceASCII(fetch_result, base::TRIM_ALL));
 
   // Verify that the response was not blocked.
-  EXPECT_EQ("runMe({ \"name\" : \"chromium\" });", fetch_result);
+  EXPECT_EQ("runMe({ \"name\" : \"monyhar\" });", fetch_result);
   InspectHistograms(histograms, kShouldBeAllowedWithoutSniffing,
                     "nosniff.html");
 }

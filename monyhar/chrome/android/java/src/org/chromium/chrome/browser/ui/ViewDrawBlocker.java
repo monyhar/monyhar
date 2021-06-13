@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.ui;
+package org.monyhar.chrome.browser.ui;
 
 import android.view.View;
 import android.view.ViewTreeObserver.OnPreDrawListener;
 
-import org.chromium.base.supplier.Supplier;
+import org.monyhar.base.supplier.Supplier;
 
 /**
  * Class that blocks a {@link View} from drawing until a condition is true.

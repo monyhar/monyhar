@@ -5,4 +5,4 @@
 # When multidex is enabled, need to keep the @MainDex annotation so that it
 # can be used to create the main dex list.
 -keepattributes *Annotations*
--keep @interface org.chromium.base.annotations.MainDex
+-keep @interface org.monyhar.base.annotations.MainDex

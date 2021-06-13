@@ -61,7 +61,7 @@ while enabling red eye reduction, if available, is not.
 
 These methods would not produce the same results as explained in
 [this issue comment](
-https://bugs.chromium.org/p/chromium/issues/detail?id=655107#c8):
+https://bugs.monyhar.org/p/monyhar/issues/detail?id=655107#c8):
 
 
 >  Let me reconstruct the conversion steps each image goes through in CrOs/Linux;
@@ -126,7 +126,7 @@ of modifying it can only be seen after taking a picture.
 Image Capture web tests are located in [web_tests/imagecapture],
 [web_tests/fast/imagecapture] and [web_tests/external/mediacapture-image].
 
-[web_tests/imagecapture]: https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/web_tests/imagecapture
-[web_tests/fast/imagecapture]: https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/web_tests/fast/imagecapture/
-[web_tests/external/mediacapture-image]: https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/web_tests/external/wpt/mediacapture-image/
+[web_tests/imagecapture]: https://monyhar.googlesource.com/monyhar/src/+/master/third_party/blink/web_tests/imagecapture
+[web_tests/fast/imagecapture]: https://monyhar.googlesource.com/monyhar/src/+/master/third_party/blink/web_tests/fast/imagecapture/
+[web_tests/external/mediacapture-image]: https://monyhar.googlesource.com/monyhar/src/+/master/third_party/blink/web_tests/external/wpt/mediacapture-image/
 

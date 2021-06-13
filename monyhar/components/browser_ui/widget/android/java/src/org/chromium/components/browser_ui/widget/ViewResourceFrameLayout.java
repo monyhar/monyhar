@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.browser_ui.widget;
+package org.monyhar.components.browser_ui.widget;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -11,12 +11,12 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewParent;
 
-import org.chromium.ui.resources.dynamics.ViewResourceAdapter;
-import org.chromium.ui.widget.OptimizedFrameLayout;
+import org.monyhar.ui.resources.dynamics.ViewResourceAdapter;
+import org.monyhar.ui.widget.OptimizedFrameLayout;
 
 /**
  * Extension to FrameLayout that handles tracking the necessary invalidates to generate
- * a corresponding {@link org.chromium.ui.resources.Resource} for use in the browser compositor.
+ * a corresponding {@link org.monyhar.ui.resources.Resource} for use in the browser compositor.
  */
 public class ViewResourceFrameLayout extends OptimizedFrameLayout {
     private ViewResourceAdapter mResourceAdapter;

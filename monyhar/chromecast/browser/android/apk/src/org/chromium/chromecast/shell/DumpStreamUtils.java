@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromecast.shell;
+package org.monyhar.chromecast.shell;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 import java.io.BufferedReader;
 import java.io.IOException;

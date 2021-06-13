@@ -79,7 +79,7 @@ blink::UserAgentBrandList GenerateBrandVersionList(
 
   blink::UserAgentBrandVersion greasey_bv = {
       maybe_greasey_brand.value_or(greasey_brand), "99"};
-  blink::UserAgentBrandVersion chromium_bv = {"Chromium", major_version};
+  blink::UserAgentBrandVersion monyhar_bv = {"Chromium", major_version};
 
   blink::UserAgentBrandList greased_brand_version_list(3);
 
@@ -87,11 +87,11 @@ blink::UserAgentBrandList GenerateBrandVersionList(
     blink::UserAgentBrandVersion brand_bv = {brand.value(), major_version};
 
     greased_brand_version_list[order[0]] = greasey_bv;
-    greased_brand_version_list[order[1]] = chromium_bv;
+    greased_brand_version_list[order[1]] = monyhar_bv;
     greased_brand_version_list[order[2]] = brand_bv;
   } else {
     greased_brand_version_list[seed % 2] = greasey_bv;
-    greased_brand_version_list[(seed + 1) % 2] = chromium_bv;
+    greased_brand_version_list[(seed + 1) % 2] = monyhar_bv;
 
     // If left, the last element would make a blank "" at the end of the header.
     greased_brand_version_list.pop_back();

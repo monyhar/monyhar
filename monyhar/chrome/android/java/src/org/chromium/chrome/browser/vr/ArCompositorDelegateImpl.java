@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.vr;
+package org.monyhar.chrome.browser.vr;
 
 import android.view.MotionEvent;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.chrome.R;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.compositor.CompositorView;
-import org.chromium.chrome.browser.compositor.CompositorViewHolder;
-import org.chromium.components.webxr.ArCompositorDelegate;
-import org.chromium.content_public.browser.WebContents;
+import org.monyhar.chrome.R;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.compositor.CompositorView;
+import org.monyhar.chrome.browser.compositor.CompositorViewHolder;
+import org.monyhar.components.webxr.ArCompositorDelegate;
+import org.monyhar.content_public.browser.WebContents;
 
 /**
  * Concrete, Chrome-specific implementation of ArCompositorDelegate interface.

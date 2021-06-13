@@ -10,7 +10,7 @@ python_library("monochrome_public_apk_checker") {
       "//chrome/android/monochrome/scripts/monochrome_python_tests.pydeps"
   data_deps = [
     "//android_webview:system_webview_apk",
-    "//build/android:devil_chromium_py",
+    "//build/android:devil_monyhar_py",
 
     # Depending on logdog_wrapper here is a hack to allow all isolated scripts
     # to be wrapped, otherwise some python dependencies are missing, since

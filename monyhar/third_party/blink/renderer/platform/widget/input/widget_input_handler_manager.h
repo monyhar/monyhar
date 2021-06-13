@@ -305,7 +305,7 @@ class PLATFORM_EXPORT WidgetInputHandlerManager final
   std::atomic<uint16_t> renderer_deferral_state_{0};
 
   // Allow input suppression to be disabled for tests and non-browser uses
-  // of chromium that do not wait for the first commit, or that may never
+  // of monyhar that do not wait for the first commit, or that may never
   // commit. Over time, tests should be fixed so they provide additional
   // coverage for input suppression: crbug.com/987626
   bool allow_pre_commit_input_ = false;

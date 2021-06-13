@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.tab;
+package org.monyhar.chrome.browser.tab;
 
 import android.content.Context;
 import android.text.SpannableString;
@@ -17,15 +17,15 @@ import android.widget.TextView;
 
 import androidx.annotation.VisibleForTesting;
 
-import org.chromium.base.UserData;
-import org.chromium.base.metrics.RecordHistogram;
-import org.chromium.components.ui_metrics.SadTabEvent;
-import org.chromium.content_public.browser.LoadUrlParams;
-import org.chromium.ui.text.NoUnderlineClickableSpan;
-import org.chromium.ui.text.SpanApplier;
-import org.chromium.ui.text.SpanApplier.SpanInfo;
-import org.chromium.ui.widget.ChromeBulletSpan;
-import org.chromium.url.GURL;
+import org.monyhar.base.UserData;
+import org.monyhar.base.metrics.RecordHistogram;
+import org.monyhar.components.ui_metrics.SadTabEvent;
+import org.monyhar.content_public.browser.LoadUrlParams;
+import org.monyhar.ui.text.NoUnderlineClickableSpan;
+import org.monyhar.ui.text.SpanApplier;
+import org.monyhar.ui.text.SpanApplier.SpanInfo;
+import org.monyhar.ui.widget.ChromeBulletSpan;
+import org.monyhar.url.GURL;
 
 /**
  * Represent the sad tab displayed in place of a crashed renderer. Instantiated on the first

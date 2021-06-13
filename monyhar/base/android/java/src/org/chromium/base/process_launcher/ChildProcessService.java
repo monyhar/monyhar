@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.base.process_launcher;
+package org.monyhar.base.process_launcher;
 
 import android.app.Service;
 import android.content.Context;
@@ -20,19 +20,19 @@ import android.os.SystemClock;
 import android.text.TextUtils;
 import android.util.SparseArray;
 
-import org.chromium.base.BaseSwitches;
-import org.chromium.base.CommandLine;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.EarlyTraceEvent;
-import org.chromium.base.Log;
-import org.chromium.base.MemoryPressureLevel;
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.MainDex;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.compat.ApiHelperForN;
-import org.chromium.base.memory.MemoryPressureMonitor;
-import org.chromium.base.metrics.RecordHistogram;
+import org.monyhar.base.BaseSwitches;
+import org.monyhar.base.CommandLine;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.EarlyTraceEvent;
+import org.monyhar.base.Log;
+import org.monyhar.base.MemoryPressureLevel;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.MainDex;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.compat.ApiHelperForN;
+import org.monyhar.base.memory.MemoryPressureMonitor;
+import org.monyhar.base.metrics.RecordHistogram;
 
 import java.util.List;
 
@@ -45,10 +45,10 @@ import javax.annotation.concurrent.GuardedBy;
  * one distinct process (i.e. one process per service number, up to limit of N).
  * The embedding application must declare these service instances in the application section
  * of its AndroidManifest.xml, first with some meta-data describing the services:
- *     <meta-data android:name="org.chromium.test_app.SERVICES_NAME"
- *           android:value="org.chromium.test_app.ProcessService"/>
+ *     <meta-data android:name="org.monyhar.test_app.SERVICES_NAME"
+ *           android:value="org.monyhar.test_app.ProcessService"/>
  * and then N entries of the form:
- *     <service android:name="org.chromium.test_app.ProcessServiceX"
+ *     <service android:name="org.monyhar.test_app.ProcessServiceX"
  *              android:process=":processX" />
  *
  * Q added bindIsolatedService which supports creating multiple instances from a single manifest

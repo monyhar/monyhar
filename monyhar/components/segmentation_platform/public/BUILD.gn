@@ -31,7 +31,7 @@ source_set("unit_tests") {
 
 if (is_android) {
   android_library("public_java") {
-    sources = [ "android/java/src/org/chromium/components/segmentation_platform/SegmentationPlatformService.java" ]
+    sources = [ "android/java/src/org/monyhar/components/segmentation_platform/SegmentationPlatformService.java" ]
 
     deps = [
       "//base:base_java",

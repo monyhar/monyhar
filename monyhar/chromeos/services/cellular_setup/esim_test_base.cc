@@ -26,7 +26,7 @@
 namespace chromeos {
 namespace cellular_setup {
 
-const char* ESimTestBase::kTestEuiccPath = "/org/chromium/Hermes/Euicc/0";
+const char* ESimTestBase::kTestEuiccPath = "/org/monyhar/Hermes/Euicc/0";
 const char* ESimTestBase::kTestEid = "12345678901234567890123456789012";
 
 ESimTestBase::ESimTestBase()

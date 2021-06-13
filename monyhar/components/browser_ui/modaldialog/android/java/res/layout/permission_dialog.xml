@@ -9,7 +9,7 @@
     android:gravity="start"
     style="@style/AlertDialogContent">
 
-    <org.chromium.components.browser_ui.widget.text.TextViewWithCompoundDrawables
+    <org.monyhar.components.browser_ui.widget.text.TextViewWithCompoundDrawables
         android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

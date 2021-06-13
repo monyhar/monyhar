@@ -786,14 +786,14 @@
       "use_goma": true
     }
   },
-  "linux_chromium_archive_rel_ng": {
+  "linux_monyhar_archive_rel_ng": {
     "gn_args": {
       "is_component_build": false,
       "is_debug": false,
       "use_goma": true
     }
   },
-  "linux_chromium_asan_rel_ng": {
+  "linux_monyhar_asan_rel_ng": {
     "gn_args": {
       "dcheck_always_on": true,
       "is_asan": true,
@@ -804,7 +804,7 @@
       "use_goma": true
     }
   },
-  "linux_chromium_cfi_rel_ng": {
+  "linux_monyhar_cfi_rel_ng": {
     "gn_args": {
       "dcheck_always_on": true,
       "is_cfi": true,
@@ -817,7 +817,7 @@
       "use_thin_lto": true
     }
   },
-  "linux_chromium_chromeos_asan_rel_ng": {
+  "linux_monyhar_chromeos_asan_rel_ng": {
     "gn_args": {
       "dcheck_always_on": true,
       "is_asan": true,
@@ -829,7 +829,7 @@
       "use_goma": true
     }
   },
-  "linux_chromium_chromeos_msan_rel_ng": {
+  "linux_monyhar_chromeos_msan_rel_ng": {
     "gn_args": {
       "is_component_build": false,
       "is_debug": false,
@@ -839,7 +839,7 @@
       "use_goma": true
     }
   },
-  "linux_chromium_clobber_deterministic": {
+  "linux_monyhar_clobber_deterministic": {
     "gn_args": {
       "dcheck_always_on": true,
       "is_component_build": false,
@@ -848,7 +848,7 @@
       "use_goma": true
     }
   },
-  "linux_chromium_clobber_rel_ng": {
+  "linux_monyhar_clobber_rel_ng": {
     "gn_args": {
       "dcheck_always_on": true,
       "is_component_build": false,
@@ -857,7 +857,7 @@
       "use_goma": true
     }
   },
-  "linux_chromium_compile_dbg_32_ng": {
+  "linux_monyhar_compile_dbg_32_ng": {
     "gn_args": {
       "is_component_build": true,
       "is_debug": true,
@@ -866,7 +866,7 @@
       "use_goma": true
     }
   },
-  "linux_chromium_compile_dbg_ng": {
+  "linux_monyhar_compile_dbg_ng": {
     "gn_args": {
       "is_component_build": true,
       "is_debug": true,
@@ -874,7 +874,7 @@
       "use_goma": true
     }
   },
-  "linux_chromium_compile_rel_ng": {
+  "linux_monyhar_compile_rel_ng": {
     "gn_args": {
       "dcheck_always_on": true,
       "is_component_build": false,
@@ -883,7 +883,7 @@
       "use_goma": true
     }
   },
-  "linux_chromium_dbg_ng": {
+  "linux_monyhar_dbg_ng": {
     "gn_args": {
       "ffmpeg_branding": "Chrome",
       "is_component_build": true,
@@ -893,7 +893,7 @@
       "use_goma": true
     }
   },
-  "linux_chromium_msan_rel_ng": {
+  "linux_monyhar_msan_rel_ng": {
     "gn_args": {
       "is_component_build": false,
       "is_debug": false,
@@ -902,7 +902,7 @@
       "use_goma": true
     }
   },
-  "linux_chromium_tsan_rel_ng": {
+  "linux_monyhar_tsan_rel_ng": {
     "gn_args": {
       "dcheck_always_on": true,
       "enable_nacl": false,
@@ -913,7 +913,7 @@
       "use_goma": true
     }
   },
-  "linux_chromium_tsan_rel_ng_bionic": {
+  "linux_monyhar_tsan_rel_ng_bionic": {
     "gn_args": {
       "dcheck_always_on": true,
       "enable_nacl": false,
@@ -924,7 +924,7 @@
       "use_goma": true
     }
   },
-  "linux_chromium_ubsan_rel_ng": {
+  "linux_monyhar_ubsan_rel_ng": {
     "gn_args": {
       "is_component_build": false,
       "is_debug": false,

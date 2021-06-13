@@ -18,7 +18,7 @@ also have a default `jar_excluded_patterns` set (more on that later):
 * `android_java_prebuilt()`
 
 All target names must end with "_java" so that the build system can distinguish
-them from non-java targets (or [other variations](https://cs.chromium.org/chromium/src/build/config/android/internal_rules.gni?rcl=ec2c17d7b4e424e060c3c7972842af87343526a1&l=20)).
+them from non-java targets (or [other variations](https://cs.monyhar.org/monyhar/src/build/config/android/internal_rules.gni?rcl=ec2c17d7b4e424e060c3c7972842af87343526a1&l=20)).
 
 Most targets produce two separate `.jar` files:
 * Device `.jar`: Used to produce `.dex.jar`, which is used on-device.
@@ -44,8 +44,8 @@ What are interface jars?:
 * Dependant targets use interface `.jar` files to skip having to be rebuilt
   when only private implementation details change.
 
-[//third_party/ijar]: /third_party/ijar/README.chromium
-[//third_party/turbine]: /third_party/turbine/README.chromium
+[//third_party/ijar]: /third_party/ijar/README.monyhar
+[//third_party/turbine]: /third_party/turbine/README.monyhar
 
 ### Step 2a: Compile with javac
 
@@ -110,7 +110,7 @@ This step happens only when targets that have `jar_excluded_patterns` or
 
 [JNI]: /base/android/jni_generator/README.md
 [Android Resources]: life_of_a_resource.md
-[apphooks]: /chrome/android/java/src/org/chromium/chrome/browser/AppHooksImpl.java
+[apphooks]: /chrome/android/java/src/org/monyhar/chrome/browser/AppHooksImpl.java
 
 ### Step 6: Per-Library Dexing
 
@@ -176,7 +176,7 @@ When `enable_proguard=true`:
   libraries directly in its own final dex such that the under-test apk's Java
   code is never used (because it is entirely shadowed by the test apk's dex).
   * We've found this configuration to be fragile, and are trying to [move away
-    from it](https://bugs.chromium.org/p/chromium/issues/detail?id=890452).
+    from it](https://bugs.monyhar.org/p/monyhar/issues/detail?id=890452).
 
 ### Difference in GEN_JNI.java
 * Calling native methods using [JNI glue] requires that a `GEN_JNI.java` class
@@ -223,15 +223,15 @@ We use several tools for static analysis.
 * Runs as part of normal compilation. Controlled by GN arg: `use_errorprone_java_compiler`.
 * Most useful check:
   * Enforcement of `@GuardedBy` annotations.
-* List of enabled / disabled checks exists [within javac.py](https://cs.chromium.org/chromium/src/build/android/gyp/javac.py?l=30)
+* List of enabled / disabled checks exists [within javac.py](https://cs.monyhar.org/monyhar/src/build/android/gyp/javac.py?l=30)
   * Many checks are currently disabled because there is work involved in fixing
     violations they introduce. Please help!
 * Custom checks for Chrome:
-  * [//tools/android/errorprone_plugin/src/org/chromium/tools/errorprone/plugin/](/tools/android/errorprone_plugin/src/org/chromium/tools/errorprone/plugin/)
+  * [//tools/android/errorprone_plugin/src/org/monyhar/tools/errorprone/plugin/](/tools/android/errorprone_plugin/src/org/monyhar/tools/errorprone/plugin/)
 * Use ErrorProne checks when you need something more sophisticated than pattern
   matching.
 * Checks run on the entire codebase, not only on changed lines.
-* Does not run when `chromium_code = false` (e.g. for //third_party).
+* Does not run when `monyhar_code = false` (e.g. for //third_party).
 
 ### [Android Lint](https://developer.android.com/studio/write/lint)
 * Runs as part of normal compilation. Controlled by GN arg: `disable_android_lint` 
@@ -243,7 +243,7 @@ We use several tools for static analysis.
   * [//build/android/lint/suppressions.xml](/build/android/lint/suppressions.xml)
 * Custom lint checks [are possible](lint_plugins), but we don't have any.
 * Checks run on the entire codebase, not only on changed lines.
-* Does not run when `chromium_code = false` (e.g. for //third_party).
+* Does not run when `monyhar_code = false` (e.g. for //third_party).
 
 [lint_plugins]: http://tools.android.com/tips/lint-custom-rules
 
@@ -270,7 +270,7 @@ We use several tools for static analysis.
   understands `@SuppressWarnings` annotations.
 * Checks run only on changed lines.
 
-[is ours]:  /tools/android/checkstyle/chromium-style-5.0.xml
+[is ours]:  /tools/android/checkstyle/monyhar-style-5.0.xml
 
 ### [clang-format](https://clang.llvm.org/docs/ClangFormat.html)
 * Formats `.java` files via `git cl format`.

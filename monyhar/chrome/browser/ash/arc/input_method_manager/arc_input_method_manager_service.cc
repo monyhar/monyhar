@@ -41,12 +41,12 @@ namespace {
 // to inside the container.
 // Please refer to ArcImeService for the implementation details.
 constexpr char kChromeOSIMEIdInArcContainer[] =
-    "org.chromium.arc.ime/.ArcInputMethodService";
+    "org.monyhar.arc.ime/.ArcInputMethodService";
 
 // The name of the proxy IME extension that is used when registering ARC IMEs to
 // InputMethodManager.
 constexpr char kArcIMEProxyExtensionName[] =
-    "org.chromium.arc.inputmethod.proxy";
+    "org.monyhar.arc.inputmethod.proxy";
 
 void SwitchImeToCallback(const std::string& ime_id,
                          const std::string& component_id,

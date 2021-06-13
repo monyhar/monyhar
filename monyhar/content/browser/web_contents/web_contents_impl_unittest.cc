@@ -2295,9 +2295,9 @@ TEST_F(WebContentsImplTestWithSiteIsolation, StartStopEventsBalance) {
   // navigation of subframes is only possible in --site-per-process mode within
   // unit tests.
   const GURL initial_url("about:blank");
-  const GURL main_url("http://www.chromium.org");
-  const GURL foo_url("http://foo.chromium.org");
-  const GURL bar_url("http://bar.chromium.org");
+  const GURL main_url("http://www.monyhar.org");
+  const GURL foo_url("http://foo.monyhar.org");
+  const GURL bar_url("http://bar.monyhar.org");
   TestRenderFrameHost* orig_rfh = main_test_rfh();
 
   // Use a WebContentsObserver to observe the behavior of the tab's spinner.
@@ -2380,7 +2380,7 @@ TEST_F(WebContentsImplTestWithSiteIsolation, StartStopEventsBalance) {
 // frame loads. Browser-initiated navigation of subframes is only possible in
 // --site-per-process mode within unit tests.
 TEST_F(WebContentsImplTestWithSiteIsolation, IsLoadingToDifferentDocument) {
-  const GURL main_url("http://www.chromium.org");
+  const GURL main_url("http://www.monyhar.org");
   TestRenderFrameHost* orig_rfh = main_test_rfh();
 
   // Navigate the main RenderFrame and commit. The frame should still be
@@ -2420,9 +2420,9 @@ TEST_F(WebContentsImplTestWithSiteIsolation, IsLoadingToDifferentDocument) {
 // navigation no longer kills the speculative RenderFrameHost. See
 // https://crbug.com/889039.
 TEST_F(WebContentsImplTest, DISABLED_NoEarlyStop) {
-  const GURL kUrl1("http://www.chromium.org");
+  const GURL kUrl1("http://www.monyhar.org");
   const GURL kUrl2("http://www.google.com");
-  const GURL kUrl3("http://www.chromium.org/foo");
+  const GURL kUrl3("http://www.monyhar.org/foo");
 
   contents()->NavigateAndCommit(kUrl1);
 

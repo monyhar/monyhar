@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
-import org.chromium.base.ObserverList;
-import org.chromium.base.annotations.CalledByNative;
+import org.monyhar.base.ObserverList;
+import org.monyhar.base.annotations.CalledByNative;
 
 /**
  * Watches for when Chrome is told to restart itself.

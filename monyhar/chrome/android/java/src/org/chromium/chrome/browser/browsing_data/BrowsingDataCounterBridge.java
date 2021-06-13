@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.browsing_data;
+package org.monyhar.chrome.browser.browsing_data;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.NativeMethods;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.NativeMethods;
 
 /**
  * Communicates between BrowsingDataCounter (C++ backend) and ClearBrowsingDataFragment (Java UI).
@@ -31,7 +31,7 @@ public class BrowsingDataCounterBridge {
      * @param callback A callback to call with the result when the counter finishes.
      * @param dataType The browsing data type to be counted (from the shared enum
      * @param prefType The type of preference that should be handled (Default, Basic or Advanced
-     *     from {@link org.chromium.chrome.browser.browsing_data.ClearBrowsingDataTab}).
+     *     from {@link org.monyhar.chrome.browser.browsing_data.ClearBrowsingDataTab}).
      */
     public BrowsingDataCounterBridge(
             BrowsingDataCounterCallback callback, int dataType, int prefType) {

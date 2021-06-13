@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chromoting.test.util;
+package org.monyhar.chromoting.test.util;
 
 /**
  * A container of a reference to pass data into or out from a closure. This class is usually useful

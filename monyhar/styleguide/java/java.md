@@ -1,16 +1,16 @@
 # Chromium Java style guide
 
 _For other languages, please see the [Chromium style
-guides](https://chromium.googlesource.com/chromium/src/+/main/styleguide/styleguide.md)._
+guides](https://monyhar.googlesource.com/monyhar/src/+/main/styleguide/styleguide.md)._
 
 Chromium follows the [Android Open Source style
 guide](http://source.android.com/source/code-style.html) unless an exception
 is listed below.
 
 You can propose changes to this style guide by sending an email to
-`java@chromium.org`. Ideally, the list will arrive at some consensus and you can
+`java@monyhar.org`. Ideally, the list will arrive at some consensus and you can
 request review for a change to this file. If there's no consensus,
-[`//styleguide/java/OWNERS`](https://chromium.googlesource.com/chromium/src/+/main/styleguide/java/OWNERS)
+[`//styleguide/java/OWNERS`](https://monyhar.googlesource.com/monyhar/src/+/main/styleguide/java/OWNERS)
 get to decide.
 
 [TOC]
@@ -75,7 +75,7 @@ try {
 ```
 
 ### Logging
-* Use `org.chromium.base.Log` instead of `android.util.Log`.
+* Use `org.monyhar.base.Log` instead of `android.util.Log`.
   * It provides `%s` support, and ensures log stripping works correctly.
 * Minimize the use of `Log.w()` and `Log.e()`.
   * Debug and Info log levels are stripped by ProGuard in release builds, and
@@ -90,11 +90,11 @@ Log.d(TAG, "There are %d cats", countCats());  // countCats() not stripped.
 ### Asserts
 The Chromium build system strips asserts in release builds (via ProGuard) and
 enables them in debug builds (or when `dcheck_always_on=true`) (via a [build
-step](https://codereview.chromium.org/2517203002)). You should use asserts in
+step](https://codereview.monyhar.org/2517203002)). You should use asserts in
 the [same
-scenarios](https://chromium.googlesource.com/chromium/src/+/main/styleguide/c++/c++.md#CHECK_DCHECK_and-NOTREACHED)
+scenarios](https://monyhar.googlesource.com/monyhar/src/+/main/styleguide/c++/c++.md#CHECK_DCHECK_and-NOTREACHED)
 where C++ DCHECK()s make sense. For multi-statement asserts, use
-`org.chromium.build.BuildConfig.ENABLE_ASSERTS` to guard your code (similar to
+`org.monyhar.build.BuildConfig.ENABLE_ASSERTS` to guard your code (similar to
 `#if DCHECK_IS_ON()` in C++).
 
 Example assert:
@@ -106,7 +106,7 @@ assert someCallWithoutSideEffects() : "assert description";
 Example use of `BuildConfig.ENABLE_ASSERTS`:
 
 ```java
-import org.chromium.build.BuildConfig;
+import org.monyhar.build.BuildConfig;
 
 ...
 
@@ -126,7 +126,7 @@ Custom finalizers:
 * causes additional garbage collector jank.
 
 Classes that need destructor logic should provide an explicit `destroy()`
-method. Use [LifetimeAssert](https://chromium.googlesource.com/chromium/src/+/main/base/android/java/src/org/chromium/base/LifetimeAssert.java)
+method. Use [LifetimeAssert](https://monyhar.googlesource.com/monyhar/src/+/main/base/android/java/src/org/monyhar/base/LifetimeAssert.java)
 to ensure in debug builds and tests that `destroy()` is called.
 
 ### AndroidX Annotations
@@ -165,7 +165,7 @@ Values of `Integer` type are also supported, which allows using a sentinel
 `null` if needed.
 
 [@IntDef annotation]: https://developer.android.com/studio/write/annotations#enum-annotations
-[Android lint]: https://chromium.googlesource.com/chromium/src/+/HEAD/build/android/docs/lint.md
+[Android lint]: https://monyhar.googlesource.com/monyhar/src/+/HEAD/build/android/docs/lint.md
 
 ## Tools
 
@@ -180,31 +180,31 @@ You can run `git cl format` to apply the automatic formatting.
 For automatically using the correct style, follow the guide to set up your
 favorite IDE:
 
-* [Android Studio](https://chromium.googlesource.com/chromium/src/+/main/docs/android_studio.md)
-* [Eclipse](https://chromium.googlesource.com/chromium/src/+/main/docs/eclipse.md)
+* [Android Studio](https://monyhar.googlesource.com/monyhar/src/+/main/docs/android_studio.md)
+* [Eclipse](https://monyhar.googlesource.com/monyhar/src/+/main/docs/eclipse.md)
 
 ### Checkstyle
 Checkstyle is automatically run by the build bots, and to ensure you do not have
 any surprises, you can also set up checkstyle locally using [this
-guide](https://sites.google.com/a/chromium.org/dev/developers/checkstyle).
+guide](https://sites.google.com/a/monyhar.org/dev/developers/checkstyle).
 
 ### Lint
 Lint is run as part of the build. For more information, see
-[here](https://chromium.googlesource.com/chromium/src/+/main/build/android/docs/lint.md).
+[here](https://monyhar.googlesource.com/monyhar/src/+/main/build/android/docs/lint.md).
 
 ## Style / Formatting
 
 ### File Headers
-* Use the same format as in the [C++ style guide](https://chromium.googlesource.com/chromium/src/+/main/styleguide/c++/c++.md#File-headers).
+* Use the same format as in the [C++ style guide](https://monyhar.googlesource.com/monyhar/src/+/main/styleguide/c++/c++.md#File-headers).
 
 ### TODOs
-* TODO should follow chromium convention. Examples:
+* TODO should follow monyhar convention. Examples:
   * `TODO(username): Some sentence here.`
   * `TODO(crbug.com/123456): Even better to use a bug for context.`
 
 ### Code formatting
 * Fields should not be explicitly initialized to default values (see
-  [here](https://groups.google.com/a/chromium.org/d/topic/chromium-dev/ylbLOvLs0bs/discussion)).
+  [here](https://groups.google.com/a/monyhar.org/d/topic/monyhar-dev/ylbLOvLs0bs/discussion)).
 
 ### Curly braces
 Conditional braces should be used, but are optional if the conditional and the
@@ -245,40 +245,40 @@ This is the order of the import groups:
 1. junit
 1. org
 1. com.google.android.apps.chrome
-1. org.chromium
+1. org.monyhar
 1. java
 1. javax
 
 ## Test-only Code
 Functions used only for testing should be restricted to test-only usages
-with the testing suffixes supported [PRESUMBIT.py](https://chromium.googlesource.com/chromium/src/+/main/PRESUBMIT.py).
+with the testing suffixes supported [PRESUMBIT.py](https://monyhar.googlesource.com/monyhar/src/+/main/PRESUBMIT.py).
 `ForTesting` is the conventional suffix although similar patterns, such as
 `ForTest`, are also accepted. These suffixes are checked at presubmit time
 to ensure the functions are called only by test files.
 
 ## Location
 "Top level directories" are defined as directories with a GN file, such as
-[//base](https://chromium.googlesource.com/chromium/src/+/main/base/)
+[//base](https://monyhar.googlesource.com/monyhar/src/+/main/base/)
 and
-[//content](https://chromium.googlesource.com/chromium/src/+/main/content/),
+[//content](https://monyhar.googlesource.com/monyhar/src/+/main/content/),
 Chromium Java should live in a directory named
 `<top level directory>/android/java`, with a package name
-`org.chromium.<top level directory>`.  Each top level directory's Java should
+`org.monyhar.<top level directory>`.  Each top level directory's Java should
 build into a distinct JAR that honors the abstraction specified in a native
-[checkdeps](https://chromium.googlesource.com/chromium/buildtools/+/main/checkdeps/checkdeps.py)
-(e.g. `org.chromium.base` does not import `org.chromium.content`).  The full
+[checkdeps](https://monyhar.googlesource.com/monyhar/buildtools/+/main/checkdeps/checkdeps.py)
+(e.g. `org.monyhar.base` does not import `org.monyhar.content`).  The full
 path of any java file should contain the complete package name.
 
 For example, top level directory `//base` might contain a file named
-`base/android/java/org/chromium/base/Class.java`. This would get compiled into a
-`chromium_base.jar` (final JAR name TBD).
+`base/android/java/org/monyhar/base/Class.java`. This would get compiled into a
+`monyhar_base.jar` (final JAR name TBD).
 
-`org.chromium.chrome.browser.foo.Class` would live in
-`chrome/android/java/org/chromium/chrome/browser/foo/Class.java`.
+`org.monyhar.chrome.browser.foo.Class` would live in
+`chrome/android/java/org/monyhar/chrome/browser/foo/Class.java`.
 
 New `<top level directory>/android` directories should have an `OWNERS` file
 much like
-[//base/android/OWNERS](https://chromium.googlesource.com/chromium/src/+/main/base/android/OWNERS).
+[//base/android/OWNERS](https://monyhar.googlesource.com/monyhar/src/+/main/base/android/OWNERS).
 
 ## Miscellany
 * Use UTF-8 file encodings and LF line endings.

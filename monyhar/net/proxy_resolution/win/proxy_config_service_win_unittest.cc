@@ -130,7 +130,7 @@ TEST(ProxyConfigServiceWinTest, SetFromIEConfig) {
           // how
           // Internet Explorer applies the settings. For more details on this
           // policy, see:
-          // http://code.google.com/p/chromium/issues/detail?id=55912#c2
+          // http://code.google.com/p/monyhar/issues/detail?id=55912#c2
           false,   // auto_detect
           GURL(),  // pac_url
           ProxyRulesExpectation::PerSchemeWithSocks(

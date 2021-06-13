@@ -30,7 +30,7 @@ js_library("personalization_app_test_utils") {
     "../..:chai_assert",
     "//chromeos/components/personalization_app/resources/trusted:mojo_interface_provider",
     "//chromeos/components/personalization_app/resources/trusted:personalization_actions",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
@@ -66,7 +66,7 @@ js_library("wallpaper_collections_element_test") {
     "../..:test_util.m",
     "//chromeos/components/personalization_app/resources/common:iframe_api",
     "//chromeos/components/personalization_app/resources/trusted:wallpaper_collections_element",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   externs_list = [ "$externs_path/mocha-2.5.js" ]
 }
@@ -79,7 +79,7 @@ js_library("wallpaper_images_element_test") {
     "../..:test_util.m",
     "//chromeos/components/personalization_app/resources/common:iframe_api",
     "//chromeos/components/personalization_app/resources/trusted:wallpaper_images_element",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
   externs_list = [ "$externs_path/mocha-2.5.js" ]
 }
@@ -92,6 +92,6 @@ js_library("wallpaper_selected_element_test") {
     "../..:chai_assert",
     "../..:test_util.m",
     "//chromeos/components/personalization_app/resources/trusted:wallpaper_selected_element",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }

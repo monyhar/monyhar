@@ -17,7 +17,7 @@ This library depends on
 
 Additional files, not in the original library:
   BUILD.gn
-  README.chromium
+  README.monyhar
   LICENSE # Taken from https://github.com/googlei18n/libphonenumber/
   phonenumber_api.h
 

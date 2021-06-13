@@ -17,7 +17,7 @@ class Bus;
 namespace chromeos {
 
 // OsInstallClient is used to communicate with the
-// org.chromium.OsInstallService system service. The browser uses this
+// org.monyhar.OsInstallService system service. The browser uses this
 // service to install the OS from a USB device to disk.
 class COMPONENT_EXPORT(OS_INSTALL) OsInstallClient {
  public:

@@ -4,7 +4,7 @@
 
 // Module containing entities for regression tests of the generator. Entities
 // must never be modified, instead new entity must be added to add new tests.
-[JavaPackage="org.chromium.mojo.bindings.test.mojom.regression_tests"]
+[JavaPackage="org.monyhar.mojo.bindings.test.mojom.regression_tests"]
 module regression_tests;
 
 interface CheckMethodWithEmptyResponse {

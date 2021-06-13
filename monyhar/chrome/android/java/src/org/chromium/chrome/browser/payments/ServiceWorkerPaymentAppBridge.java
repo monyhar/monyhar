@@ -2,24 +2,24 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.payments;
+package org.monyhar.chrome.browser.payments;
 
 import android.graphics.Bitmap;
 import android.util.Pair;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.ThreadUtils;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNIAdditionalImport;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.task.PostTask;
-import org.chromium.components.payments.PaymentApp;
-import org.chromium.components.payments.PaymentFeatureList;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.content_public.browser.WebContents;
-import org.chromium.payments.mojom.PaymentEventResponseType;
-import org.chromium.url.GURL;
+import org.monyhar.base.ThreadUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNIAdditionalImport;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.components.payments.PaymentApp;
+import org.monyhar.components.payments.PaymentFeatureList;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.content_public.browser.WebContents;
+import org.monyhar.payments.mojom.PaymentEventResponseType;
+import org.monyhar.url.GURL;
 
 import java.util.HashMap;
 import java.util.Map;

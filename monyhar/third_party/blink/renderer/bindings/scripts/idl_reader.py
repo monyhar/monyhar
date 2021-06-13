@@ -28,7 +28,7 @@
 """Read an IDL file or complete IDL interface, producing an IdlDefinitions object.
 
 Design doc:
-http://www.chromium.org/developers/design-documents/idl-compiler#TOC-Front-end
+http://www.monyhar.org/developers/design-documents/idl-compiler#TOC-Front-end
 """
 
 import os
@@ -138,7 +138,7 @@ IDL ATTRIBUTE ERROR in file:
 If you want to add a new IDL extended attribute, please add it to:
     %s
 and add an explanation to the Blink IDL documentation at:
-    http://www.chromium.org/blink/webidl/blink-idl-extended-attributes
+    http://www.monyhar.org/blink/webidl/blink-idl-extended-attributes
     """ % (idl_filename, str(error), EXTENDED_ATTRIBUTES_RELATIVE_PATH))
 
         return definitions

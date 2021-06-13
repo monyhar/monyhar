@@ -20,14 +20,14 @@ js_library("audio_player") {
     ":control_panel",
     ":track_info_panel",
     ":track_list",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
 js_library("control_panel") {
   deps = [
     ":repeat_button",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/file_manager/file_manager/foreground/elements:files_icon_button",
     "//ui/webui/resources/cr_elements/cr_slider:cr_slider.m",
     "//ui/webui/resources/js:assert.m",
@@ -36,23 +36,23 @@ js_library("control_panel") {
 
 js_library("track_info_panel") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/webui/resources/cr_elements/cr_button:cr_button.m",
   ]
 }
 
 js_library("track_list") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/paper-ripple:paper-ripple",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/paper-ripple:paper-ripple",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
   ]
 }
 
 js_library("repeat_button") {
   deps = [
-    "//third_party/polymer/v3_0/components-chromium/iron-behaviors:iron-button-state",
-    "//third_party/polymer/v3_0/components-chromium/iron-behaviors:iron-control-state",
-    "//third_party/polymer/v3_0/components-chromium/polymer:polymer_bundled",
+    "//third_party/polymer/v3_0/components-monyhar/iron-behaviors:iron-button-state",
+    "//third_party/polymer/v3_0/components-monyhar/iron-behaviors:iron-control-state",
+    "//third_party/polymer/v3_0/components-monyhar/polymer:polymer_bundled",
     "//ui/file_manager/file_manager/foreground/elements:files_toggle_ripple",
   ]
 }

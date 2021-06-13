@@ -51,7 +51,7 @@
         android:paddingTop="@dimen/context_menu_header_vertical_padding"
         android:paddingBottom="@dimen/context_menu_bottom_padding">
 
-        <org.chromium.ui.widget.TextViewWithLeading
+        <org.monyhar.ui.widget.TextViewWithLeading
             android:id="@+id/menu_header_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
             android:textAppearance="@style/TextAppearance.TextSmall.Primary"
             app:leading="@dimen/text_size_small_leading" />
 
-        <org.chromium.ui.widget.TextViewWithLeading
+        <org.monyhar.ui.widget.TextViewWithLeading
             android:id="@+id/menu_header_url"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -80,7 +80,7 @@
             android:paddingTop="4dp"
             android:visibility="gone">
 
-          <org.chromium.ui.widget.ChromeImageView
+          <org.monyhar.ui.widget.ChromeImageView
               android:id="@+id/performance_info_icon"
               android:layout_height="@dimen/text_size_small_leading"
               android:layout_width="@dimen/text_size_small_leading"
@@ -90,7 +90,7 @@
               app:srcCompat="@drawable/ic_checkmark_24dp"
               app:tint="@color/default_icon_color_blue" />
 
-          <org.chromium.ui.widget.TextViewWithLeading
+          <org.monyhar.ui.widget.TextViewWithLeading
               android:id="@+id/performance_info_text"
               android:text="@string/contextmenu_performance_info_fast"
               android:layout_width="wrap_content"

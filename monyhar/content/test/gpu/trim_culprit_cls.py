@@ -26,7 +26,7 @@ trim_culprit_cls.py \
   --start-revision 1cdf916d194215f1e4139f295e494fc1c1863c3c \
   --end-revision 9aa31419100be8d0f02708a500aaed7c33a53a10 \
   --trybot win_optional_gpu_tests_rel \
-  --project chromium-swarm
+  --project monyhar-swarm
 
 The --project argument can be any project you are associated with in the
 Google Cloud console https://console.cloud.google.com/ (see drop-down menu in
@@ -44,7 +44,7 @@ import subprocess
 # Schemas:
 # - go/buildbucket-bq and go/buildbucket-proto/build.proto
 # - go/luci/cq/bq and
-#   https://source.chromium.org/chromium/infra/infra/+/main:go/src/go.chromium.org/luci/cv/api/bigquery/v1/attempt.proto
+#   https://source.monyhar.org/monyhar/infra/infra/+/main:go/src/go.monyhar.org/luci/cv/api/bigquery/v1/attempt.proto
 #
 # Original author: maruel@
 # pylint: enable=line-too-long
@@ -57,10 +57,10 @@ WITH cq_builds AS (
     TIMESTAMP_DIFF(end_time, start_time, SECOND) AS duration,
     cl.change,
     cl.patchset
-  FROM `commit-queue.chromium.attempts` CROSS JOIN UNNEST(builds) AS build CROSS JOIN UNNEST(gerrit_changes) AS cl
+  FROM `commit-queue.monyhar.attempts` CROSS JOIN UNNEST(builds) AS build CROSS JOIN UNNEST(gerrit_changes) AS cl
   WHERE
-    cl.host = 'chromium-review.googlesource.com'
-    AND cl.project = 'chromium/src'
+    cl.host = 'monyhar-review.googlesource.com'
+    AND cl.project = 'monyhar/src'
     AND cl.change = {cl_number}
 ),
 
@@ -68,12 +68,12 @@ builds AS (
   SELECT
     patchset,
     bb.builder.project||'/'||bb.builder.bucket||'/'||bb.builder.builder AS builder,
-    'ci.chromium.org/b/'||bb.id AS url,
+    'ci.monyhar.org/b/'||bb.id AS url,
     cq.critical,
     bb.status,
     cq.start_time,
     duration
-  FROM cq_builds AS cq INNER JOIN `cr-buildbucket.chromium.builds` AS bb ON cq.id = bb.id
+  FROM cq_builds AS cq INNER JOIN `cr-buildbucket.monyhar.builds` AS bb ON cq.id = bb.id
   WHERE
     # Performance optimization.
     bb.create_time >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 30 DAY)
@@ -167,7 +167,7 @@ def FillTrybotRuns(blamelist, trybot, project):
       if largest_patchset != int(tryjob['patchset']):
         continue
       # 'builder' field is in the form project/bucket/builder, e.g.
-      # chromium/try/android-marshmallow-arm64-rel
+      # monyhar/try/android-marshmallow-arm64-rel
       if trybot == tryjob['builder'].split('/')[-1]:
         entry.ran_trybot = True
         break

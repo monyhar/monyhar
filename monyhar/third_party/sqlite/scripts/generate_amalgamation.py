@@ -29,7 +29,7 @@ _COMMON_CONFIGURATION_FLAGS_GNI_FILE = os.path.join(
     _SQLITE_ROOT_DIR, 'sqlite_common_configuration_flags.gni')
 
 _CHROMIUM_CONFIGURATION_FLAGS_GNI_FILE = os.path.join(
-    _SQLITE_ROOT_DIR, 'sqlite_chromium_configuration_flags.gni')
+    _SQLITE_ROOT_DIR, 'sqlite_monyhar_configuration_flags.gni')
 
 _DEV_CONFIGURATION_FLAGS_GNI_FILE = os.path.join(
     _SQLITE_ROOT_DIR, 'sqlite_dev_configuration_flags.gni')
@@ -44,7 +44,7 @@ _CONFIGURE_FOR_TESTING = False
 
 
 def get_amalgamation_dir(config_name):
-    if config_name == 'chromium':
+    if config_name == 'monyhar':
         return os.path.join(_SQLITE_SRC_DIR, 'amalgamation')
     elif config_name == 'dev':
         return os.path.join(_SQLITE_SRC_DIR, 'amalgamation_dev')
@@ -123,17 +123,17 @@ def _read_configuration_values(config_name):
     """Read the configuration flags and return them in an array.
 
 
-    |config_name| is one of "chromium" or "dev".
+    |config_name| is one of "monyhar" or "dev".
     """
     common_flags = _read_flags(_COMMON_CONFIGURATION_FLAGS_GNI_FILE,
                                'sqlite_common_configuration_flags')
-    chromium_flags = _read_flags(_CHROMIUM_CONFIGURATION_FLAGS_GNI_FILE,
-                                 'sqlite_chromium_configuration_flags')
+    monyhar_flags = _read_flags(_CHROMIUM_CONFIGURATION_FLAGS_GNI_FILE,
+                                 'sqlite_monyhar_configuration_flags')
     dev_flags = _read_flags(_DEV_CONFIGURATION_FLAGS_GNI_FILE,
                             'sqlite_dev_configuration_flags')
 
-    if config_name == 'chromium':
-        flags = common_flags + chromium_flags
+    if config_name == 'monyhar':
+        flags = common_flags + monyhar_flags
     elif config_name == 'dev':
         flags = common_flags + dev_flags
     else:
@@ -250,6 +250,6 @@ if __name__ == '__main__':
         _CONFIGURE_FOR_TESTING = True
         print('Running configure for testing.')
 
-    for config_name in ['chromium', 'dev']:
+    for config_name in ['monyhar', 'dev']:
         make_aggregate(config_name)
         extract_sqlite_api(config_name)

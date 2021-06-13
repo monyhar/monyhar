@@ -49,15 +49,15 @@ android_library("public_java") {
     "//third_party/androidx:androidx_vectordrawable_vectordrawable_java",
   ]
   sources = [
-    "java/src/org/chromium/chrome/browser/password_check/PasswordCheck.java",
-    "java/src/org/chromium/chrome/browser/password_check/PasswordCheckEditFragmentView.java",
-    "java/src/org/chromium/chrome/browser/password_check/PasswordCheckFragmentView.java",
-    "java/src/org/chromium/chrome/browser/password_check/PasswordCheckMetricsRecorder.java",
-    "java/src/org/chromium/chrome/browser/password_check/PasswordCheckReferrer.java",
-    "java/src/org/chromium/chrome/browser/password_check/PasswordCheckResolutionAction.java",
-    "java/src/org/chromium/chrome/browser/password_check/PasswordCheckUserAction.java",
+    "java/src/org/monyhar/chrome/browser/password_check/PasswordCheck.java",
+    "java/src/org/monyhar/chrome/browser/password_check/PasswordCheckEditFragmentView.java",
+    "java/src/org/monyhar/chrome/browser/password_check/PasswordCheckFragmentView.java",
+    "java/src/org/monyhar/chrome/browser/password_check/PasswordCheckMetricsRecorder.java",
+    "java/src/org/monyhar/chrome/browser/password_check/PasswordCheckReferrer.java",
+    "java/src/org/monyhar/chrome/browser/password_check/PasswordCheckResolutionAction.java",
+    "java/src/org/monyhar/chrome/browser/password_check/PasswordCheckUserAction.java",
   ]
-  resources_package = "org.chromium.chrome.browser.password_check"
+  resources_package = "org.monyhar.chrome.browser.password_check"
 }
 
 android_library("public_ui_java") {
@@ -66,15 +66,15 @@ android_library("public_ui_java") {
     "//url:gurl_java",
   ]
   sources = [
-    "java/src/org/chromium/chrome/browser/password_check/CompromisedCredential.java",
-    "java/src/org/chromium/chrome/browser/password_check/PasswordCheckComponentUi.java",
+    "java/src/org/monyhar/chrome/browser/password_check/CompromisedCredential.java",
+    "java/src/org/monyhar/chrome/browser/password_check/PasswordCheckComponentUi.java",
   ]
 }
 
 junit_binary("password_check_junit_tests") {
   testonly = true
 
-  sources = [ "junit/src/org/chromium/chrome/browser/password_check/PasswordCheckControllerTest.java" ]
+  sources = [ "junit/src/org/monyhar/chrome/browser/password_check/PasswordCheckControllerTest.java" ]
 
   deps = [
     ":public_ui_java",
@@ -104,9 +104,9 @@ android_library("test_java") {
   testonly = true
 
   sources = [
-    "javatests/src/org/chromium/chrome/browser/password_check/PasswordCheckEditViewTest.java",
-    "javatests/src/org/chromium/chrome/browser/password_check/PasswordCheckIntegrationTest.java",
-    "javatests/src/org/chromium/chrome/browser/password_check/PasswordCheckViewTest.java",
+    "javatests/src/org/monyhar/chrome/browser/password_check/PasswordCheckEditViewTest.java",
+    "javatests/src/org/monyhar/chrome/browser/password_check/PasswordCheckIntegrationTest.java",
+    "javatests/src/org/monyhar/chrome/browser/password_check/PasswordCheckViewTest.java",
   ]
 
   deps = [
@@ -151,8 +151,8 @@ android_library("test_java") {
 generate_jni("jni_headers") {
   visibility = [ "//chrome/browser" ]
   sources = [
-    "internal/java/src/org/chromium/chrome/browser/password_check/PasswordCheckBridge.java",
-    "java/src/org/chromium/chrome/browser/password_check/CompromisedCredential.java",
+    "internal/java/src/org/monyhar/chrome/browser/password_check/PasswordCheckBridge.java",
+    "java/src/org/monyhar/chrome/browser/password_check/CompromisedCredential.java",
   ]
 }
 

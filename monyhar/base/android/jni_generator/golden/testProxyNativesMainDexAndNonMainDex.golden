@@ -22,13 +22,13 @@
 
 // Step 2: Forward declarations (methods).
 
-JNI_GENERATOR_EXPORT void Java_org_chromium_base_natives_GEN_1JNI_test_1foo_1Bar_1foo(
+JNI_GENERATOR_EXPORT void Java_org_monyhar_base_natives_GEN_1JNI_test_1foo_1Bar_1foo(
     JNIEnv* env,
     jclass jcaller);
-JNI_GENERATOR_EXPORT void Java_org_chromium_base_natives_GEN_1JNI_test_1foo_1Bar_1bar(
+JNI_GENERATOR_EXPORT void Java_org_monyhar_base_natives_GEN_1JNI_test_1foo_1Bar_1bar(
     JNIEnv* env,
     jclass jcaller);
-JNI_GENERATOR_EXPORT void Java_org_chromium_base_natives_GEN_1JNI_test_1foo_1Foo_1thisismaindex(
+JNI_GENERATOR_EXPORT void Java_org_monyhar_base_natives_GEN_1JNI_test_1foo_1Foo_1thisismaindex(
     JNIEnv* env,
     jclass jcaller);
 
@@ -36,24 +36,24 @@ JNI_GENERATOR_EXPORT void Java_org_chromium_base_natives_GEN_1JNI_test_1foo_1Foo
 // Step 3: Method declarations.
 
 
-static const JNINativeMethod kMethods_org_chromium_base_natives_GEN_1JNI[] = {
+static const JNINativeMethod kMethods_org_monyhar_base_natives_GEN_1JNI[] = {
     { "test_foo_Bar_foo", "()V",
-        reinterpret_cast<void*>(Java_org_chromium_base_natives_GEN_1JNI_test_1foo_1Bar_1foo) },
+        reinterpret_cast<void*>(Java_org_monyhar_base_natives_GEN_1JNI_test_1foo_1Bar_1foo) },
     { "test_foo_Bar_bar", "()V",
-        reinterpret_cast<void*>(Java_org_chromium_base_natives_GEN_1JNI_test_1foo_1Bar_1bar) },
+        reinterpret_cast<void*>(Java_org_monyhar_base_natives_GEN_1JNI_test_1foo_1Bar_1bar) },
 
 };
 
 namespace {
 
-JNI_REGISTRATION_EXPORT bool RegisterNative_org_chromium_base_natives_GEN_1JNI(JNIEnv* env) {
-  const int number_of_methods = base::size(kMethods_org_chromium_base_natives_GEN_1JNI);
+JNI_REGISTRATION_EXPORT bool RegisterNative_org_monyhar_base_natives_GEN_1JNI(JNIEnv* env) {
+  const int number_of_methods = base::size(kMethods_org_monyhar_base_natives_GEN_1JNI);
 
   base::android::ScopedJavaLocalRef<jclass> native_clazz =
-      base::android::GetClass(env, "org/chromium/base/natives/GEN_JNI");
+      base::android::GetClass(env, "org/monyhar/base/natives/GEN_JNI");
   if (env->RegisterNatives(
       native_clazz.obj(),
-      kMethods_org_chromium_base_natives_GEN_1JNI,
+      kMethods_org_monyhar_base_natives_GEN_1JNI,
       number_of_methods) < 0) {
 
     jni_generator::HandleRegistrationError(env, native_clazz.obj(), __FILE__);
@@ -65,23 +65,23 @@ JNI_REGISTRATION_EXPORT bool RegisterNative_org_chromium_base_natives_GEN_1JNI(J
 
 }  // namespace
 
-static const JNINativeMethod kMethods_org_chromium_base_natives_GEN_1JNIMAIN_DEX[] = {
+static const JNINativeMethod kMethods_org_monyhar_base_natives_GEN_1JNIMAIN_DEX[] = {
     { "test_foo_Foo_thisismaindex", "()V",
-        reinterpret_cast<void*>(Java_org_chromium_base_natives_GEN_1JNI_test_1foo_1Foo_1thisismaindex)
+        reinterpret_cast<void*>(Java_org_monyhar_base_natives_GEN_1JNI_test_1foo_1Foo_1thisismaindex)
         },
 
 };
 
 namespace {
 
-JNI_REGISTRATION_EXPORT bool RegisterNative_org_chromium_base_natives_GEN_1JNIMAIN_DEX(JNIEnv* env) {
-  const int number_of_methods = base::size(kMethods_org_chromium_base_natives_GEN_1JNIMAIN_DEX);
+JNI_REGISTRATION_EXPORT bool RegisterNative_org_monyhar_base_natives_GEN_1JNIMAIN_DEX(JNIEnv* env) {
+  const int number_of_methods = base::size(kMethods_org_monyhar_base_natives_GEN_1JNIMAIN_DEX);
 
   base::android::ScopedJavaLocalRef<jclass> native_clazz =
-      base::android::GetClass(env, "org/chromium/base/natives/GEN_JNI");
+      base::android::GetClass(env, "org/monyhar/base/natives/GEN_JNI");
   if (env->RegisterNatives(
       native_clazz.obj(),
-      kMethods_org_chromium_base_natives_GEN_1JNIMAIN_DEX,
+      kMethods_org_monyhar_base_natives_GEN_1JNIMAIN_DEX,
       number_of_methods) < 0) {
 
     jni_generator::HandleRegistrationError(env, native_clazz.obj(), __FILE__);
@@ -100,7 +100,7 @@ namespace test {
 
 bool RegisterMainDexNatives(JNIEnv* env) {
   // Register natives in a proxy.
-  if (!RegisterNative_org_chromium_base_natives_GEN_1JNIMAIN_DEX(env)) {
+  if (!RegisterNative_org_monyhar_base_natives_GEN_1JNIMAIN_DEX(env)) {
     return false;
   }
 
@@ -110,7 +110,7 @@ bool RegisterMainDexNatives(JNIEnv* env) {
 
 bool RegisterNonMainDexNatives(JNIEnv* env) {
   // Register natives in a proxy.
-  if (!RegisterNative_org_chromium_base_natives_GEN_1JNI(env)) {
+  if (!RegisterNative_org_monyhar_base_natives_GEN_1JNI(env)) {
     return false;
   }
 

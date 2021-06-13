@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.test;
+package org.monyhar.chrome.browser.test;
 
 import static org.hamcrest.Matchers.isIn;
 import static org.junit.Assert.assertNotNull;
@@ -24,8 +24,8 @@ import org.json.JSONObject;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.version.ChromeVersionInfo;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.version.ChromeVersionInfo;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -97,7 +97,7 @@ import java.util.Map;
 @SuppressLint("SetWorldReadable")
 public class ScreenShooter extends TestWatcher {
     private static final String SCREENSHOT_DIR =
-            "org.chromium.base.test.util.Screenshooter.ScreenshotDir";
+            "org.monyhar.base.test.util.Screenshooter.ScreenshotDir";
     private static final String IMAGE_SUFFIX = ".png";
     private static final String JSON_SUFFIX = ".json";
 

@@ -223,7 +223,7 @@ const CGFloat kImageViewWidthHeight = 32;
 #if BUILDFLAG(GOOGLE_CHROME_BRANDING)
   logo = [UIImage imageNamed:@"signin_promo_logo_chrome_color"];
 #else
-  logo = [UIImage imageNamed:@"signin_promo_logo_chromium_color"];
+  logo = [UIImage imageNamed:@"signin_promo_logo_monyhar_color"];
 #endif  // BUILDFLAG(GOOGLE_CHROME_BRANDING)
   DCHECK(logo);
   _imageView.image = logo;

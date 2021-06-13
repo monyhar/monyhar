@@ -504,7 +504,7 @@ IN_PROC_BROWSER_TEST_F(SessionHistoryScrollAnchorTest,
   EXPECT_EQ("Default Title", GetTabTitle());
 }
 
-// http://code.google.com/p/chromium/issues/detail?id=56267
+// http://code.google.com/p/monyhar/issues/detail?id=56267
 IN_PROC_BROWSER_TEST_F(SessionHistoryTest, HistoryLength) {
   EXPECT_EQ(1, EvalJs(shell(), "history.length"));
   EXPECT_TRUE(

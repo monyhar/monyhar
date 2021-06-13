@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser;
+package org.monyhar.chrome.browser;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -12,8 +12,8 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Handler;
 
-import org.chromium.base.ContextUtils;
-import org.chromium.base.JavaExceptionReporter;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.JavaExceptionReporter;
 
 import java.lang.ref.WeakReference;
 

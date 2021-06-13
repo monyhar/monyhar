@@ -1,5 +1,5 @@
 include_rules = [
-  "+chrome/browser/profiles/android/java/src/org/chromium/chrome/browser/profiles/Profile.java",
+  "+chrome/browser/profiles/android/java/src/org/monyhar/chrome/browser/profiles/Profile.java",
 ]
 
 specific_include_rules = {

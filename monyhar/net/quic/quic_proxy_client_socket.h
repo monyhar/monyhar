@@ -12,8 +12,8 @@
 #include "net/base/completion_once_callback.h"
 #include "net/base/proxy_server.h"
 #include "net/http/proxy_client_socket.h"
-#include "net/quic/quic_chromium_client_session.h"
-#include "net/quic/quic_chromium_client_stream.h"
+#include "net/quic/quic_monyhar_client_session.h"
+#include "net/quic/quic_monyhar_client_stream.h"
 #include "net/spdy/spdy_read_queue.h"
 #include "net/traffic_annotation/network_traffic_annotation.h"
 

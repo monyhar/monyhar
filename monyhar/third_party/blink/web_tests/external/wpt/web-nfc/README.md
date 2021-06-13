@@ -22,7 +22,7 @@ The `WebNFCTest` interface is defined as:
 ```
 
 The Chromium implementation of the `WebNFCTest` interface is located in
-[nfc-mock.js](../resources/chromium/nfc-mock.js).
+[nfc-mock.js](../resources/monyhar/nfc-mock.js).
 
 Other browser vendors should provide their own implementations of
 the `WebNFCTest` interfaces.

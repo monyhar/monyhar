@@ -7,13 +7,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+    <org.monyhar.components.browser_ui.settings.ChromeSwitchPreference
         android:key="secure_dns_switch"
         android:persistent="false"
         android:title="@string/settings_secure_dns_title"
         android:summary="@string/settings_secure_dns_description" />
 
-    <org.chromium.chrome.browser.privacy.secure_dns.SecureDnsProviderPreference
+    <org.monyhar.chrome.browser.privacy.secure_dns.SecureDnsProviderPreference
         android:key="secure_dns_provider"
         app:allowDividerBelow="false" />
 

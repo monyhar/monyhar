@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.content_public.browser;
+package org.monyhar.content_public.browser;
 
 import android.util.Pair;
 
-import org.chromium.content.browser.JavascriptInjectorImpl;
+import org.monyhar.content.browser.JavascriptInjectorImpl;
 
 import java.lang.annotation.Annotation;
 import java.util.Map;

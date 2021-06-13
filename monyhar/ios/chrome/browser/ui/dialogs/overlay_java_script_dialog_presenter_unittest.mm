@@ -23,7 +23,7 @@ using java_script_dialog_overlays::JavaScriptDialogRequest;
 // Test fixture for OverlayJavaScriptDialogPresenter.
 class OverlayJavaScriptDialogPresenterTest : public PlatformTest {
  protected:
-  OverlayJavaScriptDialogPresenterTest() : url_("http://chromium.test") {}
+  OverlayJavaScriptDialogPresenterTest() : url_("http://monyhar.test") {}
 
   const GURL url_;
   web::FakeWebState web_state_;

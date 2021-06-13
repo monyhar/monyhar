@@ -2,20 +2,20 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.dependency_injection;
+package org.monyhar.chrome.browser.dependency_injection;
 
-import org.chromium.chrome.browser.AppHooksModule;
-import org.chromium.chrome.browser.browserservices.ClearDataDialogResultRecorder;
-import org.chromium.chrome.browser.browserservices.SessionDataHolder;
-import org.chromium.chrome.browser.browserservices.TrustedWebActivityClient;
-import org.chromium.chrome.browser.browserservices.permissiondelegation.PermissionUpdater;
-import org.chromium.chrome.browser.browserservices.permissiondelegation.TrustedWebActivityPermissionManager;
-import org.chromium.chrome.browser.customtabs.CustomTabsClientFileProcessor;
-import org.chromium.chrome.browser.customtabs.CustomTabsConnection;
-import org.chromium.chrome.browser.customtabs.dependency_injection.BaseCustomTabActivityComponent;
-import org.chromium.chrome.browser.customtabs.dependency_injection.BaseCustomTabActivityModule;
-import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
-import org.chromium.components.externalauth.ExternalAuthUtils;
+import org.monyhar.chrome.browser.AppHooksModule;
+import org.monyhar.chrome.browser.browserservices.ClearDataDialogResultRecorder;
+import org.monyhar.chrome.browser.browserservices.SessionDataHolder;
+import org.monyhar.chrome.browser.browserservices.TrustedWebActivityClient;
+import org.monyhar.chrome.browser.browserservices.permissiondelegation.PermissionUpdater;
+import org.monyhar.chrome.browser.browserservices.permissiondelegation.TrustedWebActivityPermissionManager;
+import org.monyhar.chrome.browser.customtabs.CustomTabsClientFileProcessor;
+import org.monyhar.chrome.browser.customtabs.CustomTabsConnection;
+import org.monyhar.chrome.browser.customtabs.dependency_injection.BaseCustomTabActivityComponent;
+import org.monyhar.chrome.browser.customtabs.dependency_injection.BaseCustomTabActivityModule;
+import org.monyhar.chrome.browser.preferences.SharedPreferencesManager;
+import org.monyhar.components.externalauth.ExternalAuthUtils;
 
 import javax.inject.Singleton;
 

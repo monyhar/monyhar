@@ -68,7 +68,7 @@ struct ContextualSearchContext {
 
   // Gets the encoding of the base page.  This is not very important, since
   // the surrounding text stored here in a std::u16string is implicitly encoded
-  // in UTF-16 (see http://www.chromium.org/developers/chromium-string-usage).
+  // in UTF-16 (see http://www.monyhar.org/developers/monyhar-string-usage).
   const std::string GetBasePageEncoding() const;
   void SetBasePageEncoding(const std::string& base_page_encoding);
 

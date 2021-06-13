@@ -9,7 +9,7 @@
 
 namespace content {
 
-// Before adding new chrome schemes please check with security@chromium.org.
+// Before adding new chrome schemes please check with security@monyhar.org.
 // There are security implications associated with introducing new schemes.
 const char kChromeDevToolsScheme[] = "devtools";
 const char kChromeErrorScheme[] = "chrome-error";

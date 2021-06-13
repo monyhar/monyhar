@@ -7,7 +7,7 @@
 
 // Status of the Cookie controls controller, used by CookieControlsIconView
 // and CookieControlsBubbleView.
-// GENERATED_JAVA_ENUM_PACKAGE: org.chromium.components.content_settings
+// GENERATED_JAVA_ENUM_PACKAGE: org.monyhar.components.content_settings
 // GENERATED_JAVA_CLASS_NAME_OVERRIDE: CookieControlsStatus
 enum class CookieControlsStatus {
   kUninitialized,

@@ -158,7 +158,7 @@ readonly GZ_SUFFIX='$gz'
 readonly XZ_SUFFIX='$xz'
 readonly PLAIN_SUFFIX='$raw'
 
-# Workaround for http://code.google.com/p/chromium/issues/detail?id=83180#c3
+# Workaround for http://code.google.com/p/monyhar/issues/detail?id=83180#c3
 # In bash 4.0, "declare VAR" no longer initializes VAR if not already set.
 : ${DIRDIFFER_EXCLUDE:=}
 : ${DIRDIFFER_NO_DIFF:=}

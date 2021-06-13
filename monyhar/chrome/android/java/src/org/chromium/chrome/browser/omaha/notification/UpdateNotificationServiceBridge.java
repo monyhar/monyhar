@@ -2,28 +2,28 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.omaha.notification;
+package org.monyhar.chrome.browser.omaha.notification;
 
-import static org.chromium.chrome.browser.omaha.UpdateConfigs.getUpdateNotificationTextBody;
-import static org.chromium.chrome.browser.omaha.UpdateConfigs.getUpdateNotificationTitle;
-import static org.chromium.chrome.browser.omaha.UpdateStatusProvider.UpdateState.INLINE_UPDATE_AVAILABLE;
-import static org.chromium.chrome.browser.omaha.UpdateStatusProvider.UpdateState.UPDATE_AVAILABLE;
+import static org.monyhar.chrome.browser.omaha.UpdateConfigs.getUpdateNotificationTextBody;
+import static org.monyhar.chrome.browser.omaha.UpdateConfigs.getUpdateNotificationTitle;
+import static org.monyhar.chrome.browser.omaha.UpdateStatusProvider.UpdateState.INLINE_UPDATE_AVAILABLE;
+import static org.monyhar.chrome.browser.omaha.UpdateStatusProvider.UpdateState.UPDATE_AVAILABLE;
 
 import android.content.Intent;
 
 import androidx.annotation.Nullable;
 
-import org.chromium.base.Callback;
-import org.chromium.base.ContextUtils;
-import org.chromium.base.Log;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.chrome.browser.flags.ChromeFeatureList;
-import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
-import org.chromium.chrome.browser.lifecycle.DestroyObserver;
-import org.chromium.chrome.browser.omaha.UpdateStatusProvider;
-import org.chromium.chrome.browser.omaha.UpdateStatusProvider.UpdateState;
+import org.monyhar.base.Callback;
+import org.monyhar.base.ContextUtils;
+import org.monyhar.base.Log;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.chrome.browser.flags.ChromeFeatureList;
+import org.monyhar.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+import org.monyhar.chrome.browser.lifecycle.DestroyObserver;
+import org.monyhar.chrome.browser.omaha.UpdateStatusProvider;
+import org.monyhar.chrome.browser.omaha.UpdateStatusProvider.UpdateState;
 
 /**
  * Class supports to build and to send update notification per certain duration if new Chrome

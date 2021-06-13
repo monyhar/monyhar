@@ -11,7 +11,7 @@
 
 namespace payments {
 
-// Describes an Android activity with org.chromium.intent.action.PAY intent
+// Describes an Android activity with org.monyhar.intent.action.PAY intent
 // filter. Documentation:
 // https://web.dev/android-payment-apps-overview/
 struct AndroidActivityDescription {
@@ -27,10 +27,10 @@ struct AndroidActivityDescription {
   std::string name;
 
   // The payment method identifier from the
-  // "org.chromium.default_payment_method_name" metadata value of this activity.
+  // "org.monyhar.default_payment_method_name" metadata value of this activity.
   // For example, "https://example.com/web-pay".
   //
-  // The metadata value of "org.chromium.payment_method_names" is not yet used
+  // The metadata value of "org.monyhar.payment_method_names" is not yet used
   // here, so it's omitted from the struct at this time.
   std::string default_payment_method;
 };
@@ -47,11 +47,11 @@ struct AndroidAppDescription {
   // The name of the Android package of this app, e.g., "com.example.app".
   std::string package;
 
-  // The list of activities with org.chromium.intent.action.PAY intent filters
+  // The list of activities with org.monyhar.intent.action.PAY intent filters
   // in this app.
   std::vector<std::unique_ptr<AndroidActivityDescription>> activities;
 
-  // The list of service names with org.chromium.intent.action.IS_READY_TO_PAY
+  // The list of service names with org.monyhar.intent.action.IS_READY_TO_PAY
   // intent filters in this app. For example,
   // ["com.example.app.IsReadyToPayService"].
   //

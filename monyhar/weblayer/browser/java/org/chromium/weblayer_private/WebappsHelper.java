@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.components.webapps.WebappsUtils;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.components.webapps.WebappsUtils;
 
 class WebappsHelper {
     private WebappsHelper() {}

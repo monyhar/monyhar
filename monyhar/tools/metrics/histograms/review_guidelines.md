@@ -17,15 +17,15 @@ During code review ensure the following -
     If this is a new one, check if there a similar one that already exists?
 
 *   Histogram owners match the
-    [histogram owners guidelines](https://chromium.googlesource.com/chromium/src/+/HEAD/tools/metrics/histograms/README.md#owners).
+    [histogram owners guidelines](https://monyhar.googlesource.com/monyhar/src/+/HEAD/tools/metrics/histograms/README.md#owners).
 
 *   If generating multiple histograms programmatically or defining common set of
     histogram, guide them to use
-    [histogram-suffixes](https://chromium.googlesource.com/chromium/src/tools/+/refs/heads/main/metrics/histograms/README.md#Histogram-Suffixes).
+    [histogram-suffixes](https://monyhar.googlesource.com/monyhar/src/tools/+/refs/heads/main/metrics/histograms/README.md#Histogram-Suffixes).
 
 *   Verify that expires_after is reasonable. CL author should be able to justify
     it. See guidance at on
-    [histogram-expiry](https://chromium.googlesource.com/chromium/src/+/HEAD/tools/metrics/histograms/README.md#Histogram-Expiry).
+    [histogram-expiry](https://monyhar.googlesource.com/monyhar/src/+/HEAD/tools/metrics/histograms/README.md#Histogram-Expiry).
 
 *   Summary section should describe what is measured, when is it recorded and
     when not. The summary should generally describe a single emission of sample
@@ -40,7 +40,7 @@ During code review ensure the following -
 #### Histogram is designed correctly.
 
 *   Verify that the histogram follows the
-    [UMA histogram design recommendation](https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md).
+    [UMA histogram design recommendation](https://monyhar.googlesource.com/monyhar/src.git/+/HEAD/tools/metrics/histograms/README.md).
     If issues are found please link to docs in your review comments to
     increase their visibility.
 
@@ -98,7 +98,7 @@ During code review ensure the following -
     also that additions to the enum should be synced to enums.xml.
 
     *   See the sample comment
-        [here](https://cs.chromium.org/chromium/src/base/metrics/histogram_macros.h?rcl=2c99f35f64380ba63c928787834661fbc1fa4234&l=46).
+        [here](https://cs.monyhar.org/monyhar/src/base/metrics/histogram_macros.h?rcl=2c99f35f64380ba63c928787834661fbc1fa4234&l=46).
         The comment should be identical or nearly so.
 
 *   If the histogram is logged via a macro (rather than a call to the function),
@@ -129,7 +129,7 @@ During code review ensure the following -
 ## UKMs
 
 *   UKM metrics are to be reviewed by UKM
-    [data privacy owners](https://cs.chromium.org/chromium/src/tools/metrics/ukm/PRIVACY_OWNERS).
+    [data privacy owners](https://cs.monyhar.org/monyhar/src/tools/metrics/ukm/PRIVACY_OWNERS).
 
 *   The metrics must follow the
     [data collection guideline](/analysis/uma/g3doc/ukm/ukm.md#adding-ukms).

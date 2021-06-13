@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.build.gtest_apk;
+package org.monyhar.build.gtest_apk;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -33,17 +33,17 @@ import java.util.concurrent.atomic.AtomicBoolean;
  */
 public class NativeTestInstrumentationTestRunner extends Instrumentation {
     private static final String EXTRA_NATIVE_TEST_ACTIVITY =
-            "org.chromium.native_test.NativeTestInstrumentationTestRunner.NativeTestActivity";
+            "org.monyhar.native_test.NativeTestInstrumentationTestRunner.NativeTestActivity";
     private static final String EXTRA_SHARD_NANO_TIMEOUT =
-            "org.chromium.native_test.NativeTestInstrumentationTestRunner.ShardNanoTimeout";
+            "org.monyhar.native_test.NativeTestInstrumentationTestRunner.ShardNanoTimeout";
     private static final String EXTRA_SHARD_SIZE_LIMIT =
-            "org.chromium.native_test.NativeTestInstrumentationTestRunner.ShardSizeLimit";
+            "org.monyhar.native_test.NativeTestInstrumentationTestRunner.ShardSizeLimit";
     private static final String EXTRA_STDOUT_FILE =
-            "org.chromium.native_test.NativeTestInstrumentationTestRunner.StdoutFile";
+            "org.monyhar.native_test.NativeTestInstrumentationTestRunner.StdoutFile";
     private static final String EXTRA_TEST_LIST_FILE =
-            "org.chromium.native_test.NativeTestInstrumentationTestRunner.TestList";
+            "org.monyhar.native_test.NativeTestInstrumentationTestRunner.TestList";
     private static final String EXTRA_TEST =
-            "org.chromium.native_test.NativeTestInstrumentationTestRunner.Test";
+            "org.monyhar.native_test.NativeTestInstrumentationTestRunner.Test";
 
     private static final String TAG = "NativeTest";
 
@@ -70,7 +70,7 @@ public class NativeTestInstrumentationTestRunner extends Instrumentation {
         mNativeTestActivity = arguments.getString(EXTRA_NATIVE_TEST_ACTIVITY);
         if (mNativeTestActivity == null) {
             Log.e(TAG,
-                    "Unable to find org.chromium.native_test.NativeUnitTestActivity extra on "
+                    "Unable to find org.monyhar.native_test.NativeUnitTestActivity extra on "
                             + "NativeTestInstrumentationTestRunner launch intent.");
             finish(Activity.RESULT_CANCELED, new Bundle());
             return;

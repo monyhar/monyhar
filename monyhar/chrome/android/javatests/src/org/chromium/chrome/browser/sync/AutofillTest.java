@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.sync;
+package org.monyhar.chrome.browser.sync;
 
 import android.util.Pair;
 
@@ -17,17 +17,17 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.base.test.util.CommandLineFlags;
-import org.chromium.base.test.util.Criteria;
-import org.chromium.base.test.util.CriteriaHelper;
-import org.chromium.base.test.util.CriteriaNotSatisfiedException;
-import org.chromium.base.test.util.Feature;
-import org.chromium.chrome.browser.flags.ChromeSwitches;
-import org.chromium.chrome.test.ChromeJUnit4ClassRunner;
-import org.chromium.chrome.test.util.browser.sync.SyncTestUtil;
-import org.chromium.components.sync.ModelType;
-import org.chromium.components.sync.protocol.AutofillProfileSpecifics;
-import org.chromium.components.sync.protocol.EntitySpecifics;
+import org.monyhar.base.test.util.CommandLineFlags;
+import org.monyhar.base.test.util.Criteria;
+import org.monyhar.base.test.util.CriteriaHelper;
+import org.monyhar.base.test.util.CriteriaNotSatisfiedException;
+import org.monyhar.base.test.util.Feature;
+import org.monyhar.chrome.browser.flags.ChromeSwitches;
+import org.monyhar.chrome.test.ChromeJUnit4ClassRunner;
+import org.monyhar.chrome.test.util.browser.sync.SyncTestUtil;
+import org.monyhar.components.sync.ModelType;
+import org.monyhar.components.sync.protocol.AutofillProfileSpecifics;
+import org.monyhar.components.sync.protocol.EntitySpecifics;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,7 +46,7 @@ public class AutofillTest {
     private static final String AUTOFILL_TYPE = "Autofill Profiles";
 
     private static final String GUID = "EDC609ED-7EEE-4F27-B00C-423242A9C44B";
-    private static final String ORIGIN = "https://www.chromium.org/";
+    private static final String ORIGIN = "https://www.monyhar.org/";
 
     private static final String STREET = "1600 Amphitheatre Pkwy";
     private static final String CITY = "Mountain View";

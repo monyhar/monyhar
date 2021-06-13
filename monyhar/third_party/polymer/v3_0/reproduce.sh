@@ -6,7 +6,7 @@
 
 # - Downloads all dependencies listed in package.json
 # - Makes Chromium specific modifications.
-# - Places the final output in components-chromium/
+# - Places the final output in components-monyhar/
 
 check_dep() {
   eval "$1" >/dev/null 2>&1
@@ -34,23 +34,23 @@ rsync -c --delete --delete-excluded -r -v --prune-empty-dirs \
     --exclude-from="rsync_exclude.txt" \
     "node_modules/@polymer/" \
     "node_modules/@webcomponents/" \
-    "components-chromium/"
+    "components-monyhar/"
 
 # Replace all occurrences of "@polymer/" with "../" or # "../../".
-find components-chromium/ -mindepth 2 -maxdepth 2 \
+find components-monyhar/ -mindepth 2 -maxdepth 2 \
   \( -name "*.js" -or -name "*.d.ts" \) \
   -exec sed -i 's/@polymer\//..\//g' {} +
-find components-chromium/ -mindepth 3 -maxdepth 3 \
+find components-monyhar/ -mindepth 3 -maxdepth 3 \
   \( -name "*.js" -or -name "*.d.ts" \) \
   -exec sed -i 's/@polymer\//..\/..\//g' {} +
 
 # Replace all occurrences of "@webcomponents/" with "../".
 #find . -name '*.js' -exec sed -i 's/@webcomponents\///g' {} +
-find components-chromium/polymer/ -mindepth 3 -maxdepth 3 -name '*.js' \
+find components-monyhar/polymer/ -mindepth 3 -maxdepth 3 -name '*.js' \
   -exec sed -i 's/@webcomponents\//..\/..\/..\//g' {} +
 
 # Apply additional chrome specific patches.
-patch -p1 --forward -r - < chromium.patch
+patch -p1 --forward -r - < monyhar.patch
 
 echo 'Minifying Polymer 3, since it comes non-minified from NPM.'
 python minify_polymer.py
@@ -60,24 +60,24 @@ echo 'Copying TypeScript .d.ts files to the final Polymer directory.'
 # include and exclude flags matters.
 rsync -c --delete -r -v --prune-empty-dirs \
     --include="*/" --include="*.d.ts" --exclude="*" \
-    "node_modules/@polymer/polymer/" "components-chromium/polymer/"
+    "node_modules/@polymer/polymer/" "components-monyhar/polymer/"
 
 echo 'Generating polymer.d.ts file for Polymer bundle.'
-cp polymer.js components-chromium/polymer/polymer.d.ts
+cp polymer.js components-monyhar/polymer/polymer.d.ts
 
 # Apply additional chrome specific patches for the .d.ts files.
-patch -p1 --forward -r - < chromium_dts.patch
+patch -p1 --forward -r - < monyhar_dts.patch
 
 echo 'Updating paper/iron elements to point to the minified file.'
 # Replace all paths that point to within polymer/ to point to the bundle.
-find components-chromium/ -name '*.js' -exec sed -i \
+find components-monyhar/ -name '*.js' -exec sed -i \
   's/\/polymer\/[a-zA-Z\/\.-]\+/\/polymer\/polymer_bundled.min.js/' {} +
 
 # Undo any changes in paper-ripple, since Chromium's implementation is a fork of
 # the original paper-ripple.
-git checkout -- components-chromium/paper-ripple/*
+git checkout -- components-monyhar/paper-ripple/*
 
-new=$(git status --porcelain components-chromium | grep '^??' | \
+new=$(git status --porcelain components-monyhar | grep '^??' | \
       cut -d' ' -f2 | egrep '\.(js|css)$' || true)
 
 if [[ ! -z "${new}" ]]; then
@@ -86,7 +86,7 @@ if [[ ! -z "${new}" ]]; then
   echo "${new}" | sed 's/^/  /'
 fi
 
-deleted=$(git status --porcelain components-chromium | grep '^.D' | \
+deleted=$(git status --porcelain components-monyhar | grep '^.D' | \
           sed 's/^.//' | cut -d' ' -f2 | egrep '\.(js|css)$' || true)
 
 if [[ ! -z "${deleted}" ]]; then
@@ -104,7 +104,7 @@ python ../v1_0/css_strip_prefixes.py --file_extension=js
 
 echo 'Generating -rgb versions of --google-* vars in paper-style/colors.js...'
 python ../v1_0/rgbify_hex_vars.py --filter-prefix=google --replace \
-    components-chromium/paper-styles/color.js
+    components-monyhar/paper-styles/color.js
 
 # TODO create components summary
 

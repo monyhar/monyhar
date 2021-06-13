@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.read_later;
+package org.monyhar.chrome.browser.read_later;
 
 import android.text.TextUtils;
 
-import org.chromium.components.embedder_support.util.UrlConstants;
+import org.monyhar.components.embedder_support.util.UrlConstants;
 
 /**
  * Utility functions for reading list feature.

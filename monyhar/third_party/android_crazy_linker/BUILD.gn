@@ -149,8 +149,8 @@ if (is_android) {
       }
 
       public_configs = [ ":crazy_config" ]
-      configs -= [ "//build/config/compiler:chromium_code" ]
-      configs += [ "//build/config/compiler:no_chromium_code" ]
+      configs -= [ "//build/config/compiler:monyhar_code" ]
+      configs += [ "//build/config/compiler:no_monyhar_code" ]
 
       # Disable orderfile instrumentation. Code in this target is in a different
       # .so, cannot call unexported instrumentation functions from another one
@@ -199,8 +199,8 @@ if (is_android) {
     # Required by crazy_linker_expected_unittest.cpp
     defines = [ "CRAZY_DEBUG=1" ]
 
-    configs -= [ "//build/config/compiler:chromium_code" ]
-    configs += [ "//build/config/compiler:no_chromium_code" ]
+    configs -= [ "//build/config/compiler:monyhar_code" ]
+    configs += [ "//build/config/compiler:no_monyhar_code" ]
     deps = [
       ":android_crazy_linker_for_unittests",
       "//testing/gtest",
@@ -230,8 +230,8 @@ if (is_android) {
       }
 
       # This is not Chromium code.
-      configs -= [ "//build/config/compiler:chromium_code" ]
-      configs += [ "//build/config/compiler:no_chromium_code" ]
+      configs -= [ "//build/config/compiler:monyhar_code" ]
+      configs += [ "//build/config/compiler:no_monyhar_code" ]
 
       # All libraries expects their symbols to be visible.
       if (is_android) {

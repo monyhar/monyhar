@@ -16,7 +16,7 @@
 #include "base/task/thread_pool/thread_pool_instance.h"
 #include "build/build_config.h"
 #include "mojo/core/embedder/embedder.h"
-#include "remoting/base/chromium_url_request.h"
+#include "remoting/base/monyhar_url_request.h"
 #include "remoting/base/directory_service_client.h"
 #include "remoting/base/oauth_token_getter_proxy.h"
 #include "remoting/base/telemetry_log_writer.h"

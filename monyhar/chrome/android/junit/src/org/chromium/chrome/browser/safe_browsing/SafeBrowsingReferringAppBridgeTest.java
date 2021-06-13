@@ -1,7 +1,7 @@
 // Copyright 2020 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-package org.chromium.chrome.browser.safe_browsing;
+package org.monyhar.chrome.browser.safe_browsing;
 
 import static org.mockito.Mockito.when;
 
@@ -21,12 +21,12 @@ import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
 import org.robolectric.util.ReflectionHelpers;
 
-import org.chromium.base.test.BaseRobolectricTestRunner;
-import org.chromium.chrome.browser.IntentHandler;
-import org.chromium.chrome.browser.app.ChromeActivity;
-import org.chromium.chrome.browser.safe_browsing.SafeBrowsingReferringAppBridge.ReferringAppInfo;
-import org.chromium.chrome.browser.safe_browsing.SafeBrowsingReferringAppBridge.ReferringAppInfo.ReferringAppSource;
-import org.chromium.ui.base.WindowAndroid;
+import org.monyhar.base.test.BaseRobolectricTestRunner;
+import org.monyhar.chrome.browser.IntentHandler;
+import org.monyhar.chrome.browser.app.ChromeActivity;
+import org.monyhar.chrome.browser.safe_browsing.SafeBrowsingReferringAppBridge.ReferringAppInfo;
+import org.monyhar.chrome.browser.safe_browsing.SafeBrowsingReferringAppBridge.ReferringAppInfo.ReferringAppSource;
+import org.monyhar.ui.base.WindowAndroid;
 
 import java.lang.ref.WeakReference;
 

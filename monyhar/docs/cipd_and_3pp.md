@@ -1,4 +1,4 @@
-# CIPD and 3pp for chromium dependencies
+# CIPD and 3pp for monyhar dependencies
 
 [TOC]
 
@@ -11,9 +11,9 @@
   specified in [DEPS] and updated via `gclient sync`.
 * You can [browse Chromium's CIPD repository][browse] online.
 
-[CIPD]: https://chromium.googlesource.com/infra/luci/luci-go/+/main/cipd/README.md
+[CIPD]: https://monyhar.googlesource.com/infra/luci/luci-go/+/main/cipd/README.md
 [DEPS]: /DEPS
-[browse]: https://chrome-infra-packages.appspot.com/p/chromium
+[browse]: https://chrome-infra-packages.appspot.com/p/monyhar
 
 ## What is 3pp?
 * 3pp stands for "Third Party Packages" which allows uniform cross-compiliation,
@@ -23,7 +23,7 @@
 * By specifying a 3pp package, you can define how to build certain artifacts and
   where to upload to CIPD. Then our packagers will do the rest for you.
 
-[support_3pp]: https://chromium.googlesource.com/infra/infra/+/main/recipes/README.recipes.md#recipe_modules-support_3pp
+[support_3pp]: https://monyhar.googlesource.com/infra/infra/+/main/recipes/README.recipes.md#recipe_modules-support_3pp
 
 ## Why use CIPD & 3pp?:
 
@@ -40,7 +40,7 @@
 You'll first want somewhere in the repository in which your dependency will
 live. For third-party dependencies, this should typically be a subdirectory
 of `//third_party`. You'll need to add the same set of things to that
-directory that you'd add for a non-CIPD dependency -- OWNERS, README.chromium,
+directory that you'd add for a non-CIPD dependency -- OWNERS, README.monyhar,
 etc.
 
 For example, if you want to add a package named `sample_cipd_dep`, you might
@@ -51,7 +51,7 @@ create the following:
     sample_cipd_dep/
       LICENSE
       OWNERS
-      README.chromium
+      README.monyhar
 ```
 
 For more on third-party dependencies, see [adding_to_third_party.md].
@@ -75,7 +75,7 @@ like the following.
     sample_cipd_dep/
       LICENSE
       OWNERS
-      README.chromium
+      README.monyhar
       3pp/
         3pp.pb  # REQUIRED
         bootstrap.py
@@ -96,9 +96,9 @@ into two main sections:
 * `upload`: contains some details on how the final result gets uploaded to CIPD.
    See [here][doc_upload] for more details.
 
-[`spec.proto`]: https://chromium.googlesource.com/infra/infra/+/main/recipes/recipe_modules/support_3pp/spec.proto
-[doc_create]: https://chromium.googlesource.com/infra/infra/+/main/recipes/README.recipes.md#creation-stages
-[doc_upload]: https://chromium.googlesource.com/infra/infra/+/main/recipes/README.recipes.md#upload
+[`spec.proto`]: https://monyhar.googlesource.com/infra/infra/+/main/recipes/recipe_modules/support_3pp/spec.proto
+[doc_create]: https://monyhar.googlesource.com/infra/infra/+/main/recipes/README.recipes.md#creation-stages
+[doc_upload]: https://monyhar.googlesource.com/infra/infra/+/main/recipes/README.recipes.md#upload
 
 Staying with the example from above, the file `sample_cipd_dep/3pp/3pp.pb` may
 be like the following:
@@ -190,7 +190,7 @@ may be like the following.
 > will be [copied to a different directory]. So commands in `install.sh` should
 > not refer to files that are outside of these directories.
 
-[copied to a different directory]: https://chromium.googlesource.com/infra/infra/+/53fd7d1eda2010009ed00fdc1a7b59fe5034ae0c/recipes/recipe_modules/support_3pp/source.py#246
+[copied to a different directory]: https://monyhar.googlesource.com/infra/infra/+/53fd7d1eda2010009ed00fdc1a7b59fe5034ae0c/recipes/recipe_modules/support_3pp/source.py#246
 
 ```
 #!/bin/bash
@@ -270,14 +270,14 @@ if __name__ == '__main__':
   main()
 ```
 
-### 3. Add "3pp" subdirectory to `chromium/src` repo
+### 3. Add "3pp" subdirectory to `monyhar/src` repo
 
 #### 3pp CQ builders (Presubmit)
 
 The following are the optional CQ builders to run the presubmit check for CLs
 that have the directory "3pp" in the patchset.
 
-* [3pp-linux-amd64-packager](https://ci.chromium.org/p/chromium/builders/try/3pp-linux-amd64-packager):
+* [3pp-linux-amd64-packager](https://ci.monyhar.org/p/monyhar/builders/try/3pp-linux-amd64-packager):
   For builds on the linux-amd64 platform or universal builds (e.g. to be used by
   all platforms)
 
@@ -287,7 +287,7 @@ Once the CLs pass the CQ and get landed, the following CI builders will
 periodically build all the 3pp packages that match the given platforms and
 upload any new results to CIPD.
 
-* [3pp-linux-amd64-packager](https://ci.chromium.org/p/chromium/builders/ci/3pp-linux-amd64-packager):
+* [3pp-linux-amd64-packager](https://ci.monyhar.org/p/monyhar/builders/ci/3pp-linux-amd64-packager):
   For builds on the linux-amd64 platform or universal builds (e.g. to be used by
   all platforms)
 
@@ -307,7 +307,7 @@ deps = {
     # but installing multiple package in a location is supported.
     'packages': [
       {
-        'package': 'chromium/third_party/sample_cipd_dep',
+        'package': 'monyhar/third_party/sample_cipd_dep',
         'version': 'TX7HeY1_1JLwFVx-xiETOpT8YK4W5CbyO26SpmaMA0IC',
       },
     ],
@@ -321,7 +321,7 @@ deps = {
 }
 ```
 
-This will result in CIPD package `chromium/third_party/sample_cipd_dep` at
+This will result in CIPD package `monyhar/third_party/sample_cipd_dep` at
 `TX7HeY1_1JLwFVx-xiETOpT8YK4W5CbyO26SpmaMA0IC` being installed in
 `src/third_party/sample_cipd_dep` (relative to the gclient root directory).
 
@@ -339,8 +339,8 @@ that create a cipd.yaml file by a GN template or a script, and upload it to CIPD
 by builders with custom recipes.
 
 Examples are:
-* [android-androidx-packager](https://ci.chromium.org/p/chromium/builders/ci/android-androidx-packager)
-* [android-sdk-packager](https://ci.chromium.org/p/chromium/builders/ci/android-sdk-packager)
+* [android-androidx-packager](https://ci.monyhar.org/p/monyhar/builders/ci/android-androidx-packager)
+* [android-sdk-packager](https://ci.monyhar.org/p/monyhar/builders/ci/android-sdk-packager)
 
 #### Generating cipd.yaml via GN Template:
 The `cipd_package_definition` template in [build/cipd/cipd.gni] can be used to
@@ -355,14 +355,14 @@ cipd_package_definition("my_cipd_package") {
   sources = [ "//path/to:test_binary_file" ]
 }
 ```
-[build/cipd/cipd.gni]: https://source.chromium.org/chromium/chromium/src/+/main:build/cipd/cipd.gni
+[build/cipd/cipd.gni]: https://source.monyhar.org/monyhar/monyhar/src/+/main:build/cipd/cipd.gni
 
 ### Permissions in CIPD
 
 You can check a package's ACLs with `cipd acl-list`:
 
 ```
-$ cipd acl-list chromium/third_party/sample_cipd_dep
+$ cipd acl-list monyhar/third_party/sample_cipd_dep
 ...
 ```
 
@@ -370,20 +370,20 @@ Permissions in CIPD are handled hierarchically. You can check entries higher
 in the package hierarchy with `cipd acl-list`, too:
 
 ```
-$ cipd acl-list chromium
+$ cipd acl-list monyhar
 ...
 ```
 
-By default, [cria/project-chromium-cipd-owners][cria] own all CIPD packages
-under `chromium/`. If you're adding a package, talk to one of them.
+By default, [cria/project-monyhar-cipd-owners][cria] own all CIPD packages
+under `monyhar/`. If you're adding a package, talk to one of them.
 
 To obtain write access to a new package, ask an owner to run:
 
 ```
-$ cipd acl-edit chromium/third_party/sample_cipd_dep -owner user:email@address.com
+$ cipd acl-edit monyhar/third_party/sample_cipd_dep -owner user:email@address.com
 ```
 
-[cria]: https://chrome-infra-auth.appspot.com/auth/groups/project-chromium-cipd-owners
+[cria]: https://chrome-infra-auth.appspot.com/auth/groups/project-monyhar-cipd-owners
 
 ## Troubleshooting
 

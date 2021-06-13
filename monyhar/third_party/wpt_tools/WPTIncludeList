@@ -255,7 +255,7 @@
 ./tools/wptrunner/wptrunner/executors/base.py
 ./tools/wptrunner/wptrunner/executors/pytestrunner/__init__.py
 ./tools/wptrunner/wptrunner/executors/pytestrunner/runner.py
-./tools/wptrunner/wptrunner/executors/executoredgechromium.py
+./tools/wptrunner/wptrunner/executors/executoredgemonyhar.py
 ./tools/wptrunner/wptrunner/executors/runner.js
 ./tools/wptrunner/wptrunner/executors/actions.py
 ./tools/wptrunner/wptrunner/executors/__init__.py
@@ -281,16 +281,16 @@
 ./tools/wptrunner/wptrunner/webdriver_server.py
 ./tools/wptrunner/wptrunner/products.py
 ./tools/wptrunner/wptrunner/expected.py
-./tools/wptrunner/wptrunner/formatters/chromium.py
+./tools/wptrunner/wptrunner/formatters/monyhar.py
 ./tools/wptrunner/wptrunner/formatters/__init__.py
 ./tools/wptrunner/wptrunner/formatters/wptscreenshot.py
 ./tools/wptrunner/wptrunner/formatters/wptreport.py
-./tools/wptrunner/wptrunner/formatters/tests/test_chromium.py
+./tools/wptrunner/wptrunner/formatters/tests/test_monyhar.py
 ./tools/wptrunner/wptrunner/manifestupdate.py
 ./tools/wptrunner/wptrunner/testharnessreport-servo.js
 ./tools/wptrunner/wptrunner/manifestexpected.py
 ./tools/wptrunner/wptrunner/stability.py
-./tools/wptrunner/wptrunner/browsers/edgechromium.py
+./tools/wptrunner/wptrunner/browsers/edgemonyhar.py
 ./tools/wptrunner/wptrunner/browsers/servodriver.py
 ./tools/wptrunner/wptrunner/browsers/ie.py
 ./tools/wptrunner/wptrunner/browsers/sauce.py
@@ -345,7 +345,7 @@
 ./tools/wptrunner/requirements_opera.txt
 ./tools/wptrunner/requirements_android_webview.txt
 ./tools/wptrunner/requirements_ie.txt
-./tools/wptrunner/requirements_edge_chromium.txt
+./tools/wptrunner/requirements_edge_monyhar.txt
 ./tools/wptrunner/requirements_chrome_ios.txt
 ./tools/wptrunner/requirements_webkit.txt
 ./tools/wptrunner/requirements_sauce.txt

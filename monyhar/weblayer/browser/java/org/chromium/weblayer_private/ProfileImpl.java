@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.weblayer_private;
+package org.monyhar.weblayer_private;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -12,30 +12,30 @@ import android.webkit.ValueCallback;
 
 import androidx.annotation.NonNull;
 
-import org.chromium.base.Callback;
-import org.chromium.base.CollectionUtil;
-import org.chromium.base.annotations.CalledByNative;
-import org.chromium.base.annotations.JNINamespace;
-import org.chromium.base.annotations.NativeMethods;
-import org.chromium.base.task.PostTask;
-import org.chromium.components.content_capture.PlatformContentCaptureController;
-import org.chromium.components.embedder_support.browser_context.BrowserContextHandle;
-import org.chromium.content_public.browser.UiThreadTaskTraits;
-import org.chromium.weblayer_private.interfaces.APICallException;
-import org.chromium.weblayer_private.interfaces.BrowsingDataType;
-import org.chromium.weblayer_private.interfaces.IBrowser;
-import org.chromium.weblayer_private.interfaces.ICookieManager;
-import org.chromium.weblayer_private.interfaces.IDownloadCallbackClient;
-import org.chromium.weblayer_private.interfaces.IGoogleAccountAccessTokenFetcherClient;
-import org.chromium.weblayer_private.interfaces.IObjectWrapper;
-import org.chromium.weblayer_private.interfaces.IOpenUrlCallbackClient;
-import org.chromium.weblayer_private.interfaces.IPrerenderController;
-import org.chromium.weblayer_private.interfaces.IProfile;
-import org.chromium.weblayer_private.interfaces.IProfileClient;
-import org.chromium.weblayer_private.interfaces.IUserIdentityCallbackClient;
-import org.chromium.weblayer_private.interfaces.ObjectWrapper;
-import org.chromium.weblayer_private.interfaces.SettingType;
-import org.chromium.weblayer_private.interfaces.StrictModeWorkaround;
+import org.monyhar.base.Callback;
+import org.monyhar.base.CollectionUtil;
+import org.monyhar.base.annotations.CalledByNative;
+import org.monyhar.base.annotations.JNINamespace;
+import org.monyhar.base.annotations.NativeMethods;
+import org.monyhar.base.task.PostTask;
+import org.monyhar.components.content_capture.PlatformContentCaptureController;
+import org.monyhar.components.embedder_support.browser_context.BrowserContextHandle;
+import org.monyhar.content_public.browser.UiThreadTaskTraits;
+import org.monyhar.weblayer_private.interfaces.APICallException;
+import org.monyhar.weblayer_private.interfaces.BrowsingDataType;
+import org.monyhar.weblayer_private.interfaces.IBrowser;
+import org.monyhar.weblayer_private.interfaces.ICookieManager;
+import org.monyhar.weblayer_private.interfaces.IDownloadCallbackClient;
+import org.monyhar.weblayer_private.interfaces.IGoogleAccountAccessTokenFetcherClient;
+import org.monyhar.weblayer_private.interfaces.IObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.IOpenUrlCallbackClient;
+import org.monyhar.weblayer_private.interfaces.IPrerenderController;
+import org.monyhar.weblayer_private.interfaces.IProfile;
+import org.monyhar.weblayer_private.interfaces.IProfileClient;
+import org.monyhar.weblayer_private.interfaces.IUserIdentityCallbackClient;
+import org.monyhar.weblayer_private.interfaces.ObjectWrapper;
+import org.monyhar.weblayer_private.interfaces.SettingType;
+import org.monyhar.weblayer_private.interfaces.StrictModeWorkaround;
 
 import java.util.ArrayList;
 import java.util.Arrays;

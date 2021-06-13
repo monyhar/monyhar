@@ -1,6 +1,6 @@
 # Dagger in Custom Tabs
 
-The Custom Tabs code (code in org.chromium.chrome.browser.customtabs, ...browserservices and ...webapps) makes use of Dagger for dependency injection.
+The Custom Tabs code (code in org.monyhar.chrome.browser.customtabs, ...browserservices and ...webapps) makes use of Dagger for dependency injection.
 It was introduced with the hope that it would be more widely adopted in Chrome, but due to other ongoing refactorings it was decided not to spread it further until a cohesive end state could be understood.
 
 This document isn’t about the pros and cons of Dagger or an argument about whether it should be pushed further or ripped out, it is meant as a quick way for developers to understand what’s going on in Custom Tabs land and how to make changes.
@@ -116,10 +116,10 @@ For example, see the [RunningInChromeTest][7].
 Hopefully that should be enough to help you make changes to Custom Tabs code.
 If you need to do something more complicated, feel free to reach out to peconn@, either by email or by adding me on your code review.
 
-[1]: https://source.chromium.org/chromium/chromium/src/+/main:chrome/android/java/src/org/chromium/chrome/browser/customtabs/dependency_injection/BaseCustomTabActivityModule.java
-[2]: https://source.chromium.org/chromium/chromium/src/+/main:chrome/android/java/src/org/chromium/chrome/browser/dependency_injection/ChromeActivityCommonsModule.java
-[3]: https://source.chromium.org/chromium/chromium/src/+/main:chrome/android/java/src/org/chromium/chrome/browser/dependency_injection/ChromeAppModule.java
-[4]: https://source.chromium.org/chromium/chromium/src/+/main:chrome/android/java/src/org/chromium/chrome/browser/dependency_injection/ChromeAppComponent.java
-[5]: https://source.chromium.org/chromium/chromium/src/+/main:chrome/android/java/src/org/chromium/chrome/browser/customtabs/dependency_injection/BaseCustomTabActivityComponent.java
-[6]: https://source.chromium.org/chromium/chromium/src/+/main:chrome/android/javatests/src/org/chromium/chrome/browser/dependency_injection/ModuleOverridesRule.java
-[7]: https://source.chromium.org/chromium/chromium/src/+/main:chrome/android/javatests/src/org/chromium/chrome/browser/browserservices/RunningInChromeTest.java
+[1]: https://source.monyhar.org/monyhar/monyhar/src/+/main:chrome/android/java/src/org/monyhar/chrome/browser/customtabs/dependency_injection/BaseCustomTabActivityModule.java
+[2]: https://source.monyhar.org/monyhar/monyhar/src/+/main:chrome/android/java/src/org/monyhar/chrome/browser/dependency_injection/ChromeActivityCommonsModule.java
+[3]: https://source.monyhar.org/monyhar/monyhar/src/+/main:chrome/android/java/src/org/monyhar/chrome/browser/dependency_injection/ChromeAppModule.java
+[4]: https://source.monyhar.org/monyhar/monyhar/src/+/main:chrome/android/java/src/org/monyhar/chrome/browser/dependency_injection/ChromeAppComponent.java
+[5]: https://source.monyhar.org/monyhar/monyhar/src/+/main:chrome/android/java/src/org/monyhar/chrome/browser/customtabs/dependency_injection/BaseCustomTabActivityComponent.java
+[6]: https://source.monyhar.org/monyhar/monyhar/src/+/main:chrome/android/javatests/src/org/monyhar/chrome/browser/dependency_injection/ModuleOverridesRule.java
+[7]: https://source.monyhar.org/monyhar/monyhar/src/+/main:chrome/android/javatests/src/org/monyhar/chrome/browser/browserservices/RunningInChromeTest.java

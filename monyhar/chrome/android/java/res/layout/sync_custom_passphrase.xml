@@ -11,7 +11,7 @@
     <LinearLayout
         android:orientation="vertical"
         style="@style/AlertDialogContent">
-        <org.chromium.components.browser_ui.widget.text.AlertDialogEditText
+        <org.monyhar.components.browser_ui.widget.text.AlertDialogEditText
             android:id="@+id/passphrase"
             android:hint="@string/sync_enter_custom_passphrase_hint"
             android:layout_width="match_parent"
@@ -19,7 +19,7 @@
             android:inputType="textPassword"
             android:singleLine="true"
             android:imeOptions="actionNext" />
-        <org.chromium.components.browser_ui.widget.text.AlertDialogEditText
+        <org.monyhar.components.browser_ui.widget.text.AlertDialogEditText
             android:id="@+id/confirm_passphrase"
             android:hint="@string/sync_enter_custom_passphrase_hint_confirm"
             android:layout_width="match_parent"
@@ -27,7 +27,7 @@
             android:inputType="textPassword"
             android:singleLine="true"
             android:imeOptions="actionDone" />
-        <org.chromium.ui.widget.TextViewWithClickableSpans
+        <org.monyhar.ui.widget.TextViewWithClickableSpans
             android:id="@+id/custom_passphrase_instructions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.feed.shared.ui;
+package org.monyhar.chrome.browser.feed.shared.ui;
 
 import static com.google.common.truth.Truth.assertThat;
 
@@ -19,8 +19,8 @@ import org.robolectric.Robolectric;
 import org.robolectric.annotation.Config;
 import org.robolectric.annotation.LooperMode;
 
-import org.chromium.chrome.R;
-import org.chromium.testing.local.LocalRobolectricTestRunner;
+import org.monyhar.chrome.R;
+import org.monyhar.testing.local.LocalRobolectricTestRunner;
 
 /** Tests for {@link MaterialSpinnerView}. */
 @RunWith(LocalRobolectricTestRunner.class)

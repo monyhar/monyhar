@@ -19,7 +19,7 @@ import zipfile
 
 sys.path.append(os.path.join(
     os.path.dirname(__file__), os.pardir, os.pardir, 'build', 'android'))
-import devil_chromium  # pylint: disable=unused-import
+import devil_monyhar  # pylint: disable=unused-import
 from devil.android import device_utils
 from devil.android.ndk import abis
 from devil.android.sdk import version_codes
@@ -401,7 +401,7 @@ def main():
 
   args, test_runner_args = parser.parse_known_args()
   logging_common.InitializeLogging(args)
-  devil_chromium.Initialize()
+  devil_monyhar.Initialize()
 
   test_runner_args.extend(ForwardArgsToTestRunner(args))
 

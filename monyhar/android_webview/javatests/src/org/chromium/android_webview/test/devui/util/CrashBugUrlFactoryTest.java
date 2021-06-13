@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.android_webview.test.devui.util;
+package org.monyhar.android_webview.test.devui.util;
 
 import static androidx.test.espresso.intent.matcher.IntentMatchers.hasAction;
 import static androidx.test.espresso.intent.matcher.IntentMatchers.hasData;
@@ -13,7 +13,7 @@ import static androidx.test.espresso.intent.matcher.UriMatchers.hasScheme;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import static org.chromium.android_webview.test.OnlyRunIn.ProcessMode.SINGLE_PROCESS;
+import static org.monyhar.android_webview.test.OnlyRunIn.ProcessMode.SINGLE_PROCESS;
 
 import android.content.Intent;
 import android.os.Build;
@@ -23,12 +23,12 @@ import androidx.test.filters.SmallTest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.chromium.android_webview.common.crash.CrashInfo;
-import org.chromium.android_webview.devui.util.CrashBugUrlFactory;
-import org.chromium.android_webview.test.AwJUnit4ClassRunner;
-import org.chromium.android_webview.test.OnlyRunIn;
-import org.chromium.base.test.util.Batch;
-import org.chromium.base.test.util.Feature;
+import org.monyhar.android_webview.common.crash.CrashInfo;
+import org.monyhar.android_webview.devui.util.CrashBugUrlFactory;
+import org.monyhar.android_webview.test.AwJUnit4ClassRunner;
+import org.monyhar.android_webview.test.OnlyRunIn;
+import org.monyhar.base.test.util.Batch;
+import org.monyhar.base.test.util.Feature;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -82,8 +82,8 @@ public class CrashBugUrlFactoryTest {
         Intent intent = new CrashBugUrlFactory(crashInfo).getReportIntent();
         assertThat(intent, hasAction(Intent.ACTION_VIEW));
         assertThat(intent, hasData(hasScheme("https")));
-        assertThat(intent, hasData(hasHost("bugs.chromium.org")));
-        assertThat(intent, hasData(hasPath("/p/chromium/issues/entry")));
+        assertThat(intent, hasData(hasHost("bugs.monyhar.org")));
+        assertThat(intent, hasData(hasPath("/p/monyhar/issues/entry")));
         assertThat(intent, hasData(hasParamWithValue("template", "Webview+Bugs")));
         assertThat(intent,
                 hasData(hasParamWithValue("labels",

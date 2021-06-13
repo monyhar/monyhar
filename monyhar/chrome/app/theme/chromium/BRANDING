@@ -5,6 +5,6 @@ PRODUCT_SHORTNAME=Chromium
 PRODUCT_INSTALLER_FULLNAME=Chromium Installer
 PRODUCT_INSTALLER_SHORTNAME=Chromium Installer
 COPYRIGHT=Copyright 2021 The Chromium Authors. All rights reserved.
-MAC_BUNDLE_ID=org.chromium.Chromium
+MAC_BUNDLE_ID=org.monyhar.Chromium
 MAC_CREATOR_CODE=Cr24
 MAC_TEAM_ID=

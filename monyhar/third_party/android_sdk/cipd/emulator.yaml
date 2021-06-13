@@ -2,7 +2,7 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
-package: chromium/third_party/android_sdk/public/emulator
+package: monyhar/third_party/android_sdk/public/emulator
 description: emulator Android SDK Emulator library
 root: ../public/
 data:

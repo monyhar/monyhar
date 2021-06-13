@@ -10,19 +10,19 @@
         android:key="web_assistance"
         android:title="@string/prefs_web_assistance_section_title">
 
-      <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+      <org.monyhar.components.browser_ui.settings.ChromeSwitchPreference
           android:key="autofill_assistant_switch"
           android:title="@string/prefs_autofill_assistant_get_help_title"
           android:summary="@string/prefs_autofill_assistant_get_help_summary"
           android:persistent="false"/>
 
-      <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+      <org.monyhar.components.browser_ui.settings.ChromeSwitchPreference
           android:key="proactive_help_switch"
           android:title="@string/prefs_autofill_assistant_proactive_help_title"
           android:summary="@string/prefs_autofill_assistant_proactive_help_summary"
           android:persistent="false"/>
 
-      <org.chromium.components.browser_ui.settings.TextMessagePreference
+      <org.monyhar.components.browser_ui.settings.TextMessagePreference
           android:key="google_services_settings_link"
           android:summary="@string/prefs_proactive_help_sync_link"
           app:allowDividerAbove="false"
@@ -33,7 +33,7 @@
         android:key="voice_assistance"
         android:title="@string/avs_setting_category_title"
         app:allowDividerBelow="false">
-        <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+        <org.monyhar.components.browser_ui.settings.ChromeSwitchPreference
             android:key="voice_assistance_enabled"
             android:title="@string/avs_setting_enabled_title"
             android:summary="@string/avs_setting_enabled_description"

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.components.media_router.cast_emulator.remote;
+package org.monyhar.components.media_router.cast_emulator.remote;
 
 import android.annotation.SuppressLint;
 import android.app.PendingIntent;
@@ -12,7 +12,7 @@ import android.net.Uri;
 import androidx.mediarouter.media.MediaItemStatus;
 import androidx.mediarouter.media.MediaSessionStatus;
 
-import org.chromium.base.Log;
+import org.monyhar.base.Log;
 
 /**
  * RemoteSessionManager emulates the session management of the playback of media items on

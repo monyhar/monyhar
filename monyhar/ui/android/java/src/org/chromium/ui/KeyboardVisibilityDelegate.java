@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.ui;
+package org.monyhar.ui;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -14,8 +14,8 @@ import android.view.View;
 import android.view.WindowInsets;
 import android.view.inputmethod.InputMethodManager;
 
-import org.chromium.base.Log;
-import org.chromium.base.ObserverList;
+import org.monyhar.base.Log;
+import org.monyhar.base.ObserverList;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -66,7 +66,7 @@ public class KeyboardVisibilityDelegate {
     }
 
     /**
-     * Prefer using {@link org.chromium.ui.base.WindowAndroid#getKeyboardDelegate()} over this
+     * Prefer using {@link org.monyhar.ui.base.WindowAndroid#getKeyboardDelegate()} over this
      * method. Both return a delegate which allows checking and influencing the keyboard state.
      * @return the global {@link KeyboardVisibilityDelegate}.
      */
@@ -227,7 +227,7 @@ public class KeyboardVisibilityDelegate {
     /**
      * Adds a listener that is updated of keyboard visibility changes. This works as a best guess.
      *
-     * @see org.chromium.ui.KeyboardVisibilityDelegate#isKeyboardShowing(Context, View)
+     * @see org.monyhar.ui.KeyboardVisibilityDelegate#isKeyboardShowing(Context, View)
      */
     public void addKeyboardVisibilityListener(KeyboardVisibilityListener listener) {
         if (mKeyboardVisibilityListeners.isEmpty()) {
